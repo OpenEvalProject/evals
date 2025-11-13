@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0168r3w48 Department of Neurobiology, School of Biological Sciences, University of California San Diego La Jolla United States
-2. https://ror.org/0168r3w48 Biomedical Sciences Graduate Program, School of Medicine, University of California San Diego La Jolla United States
-3. https://ror.org/0168r3w48 Department of Neurosciences, School of Medicine, University of California San Diego La Jolla United States
-4. https://ror.org/0168r3w48 Kavli Institute for Brain and Mind, University of California San Diego La Jolla United States
+1. Department of Neurobiology, School of Biological Sciences, University of California San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+2. Biomedical Sciences Graduate Program, School of Medicine, University of California San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+3. Department of Neurosciences, School of Medicine, University of California San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+4. Kavli Institute for Brain and Mind, University of California San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
 
 † Corresponding author
 
@@ -35,21 +35,61 @@ Here, we investigate the DLK-dependent molecular and cellular network in hippoca
 
 ## Results
 
-## DLK conditional knockout in differentiating and mature glutamatergic neurons does not alter gross morphology of hippocampus
+### DLK conditional knockout in differentiating and mature glutamatergic neurons does not alter gross morphology of hippocampus
 
 As a first step to define the roles of DLK in hippocampal glutamatergic neurons, we verified DLK expression (encoded by Map3k12) in hippocampal tissue by RNAscope analysis. We observed strong signals in the glutamatergic pyramidal cells and granule cells in P15 mice (Figure 1—figure supplement 1A), consistent with prior in situ data (Blouin et al., 1996; Lein et al., 2007; Mata et al., 1996). To selectively delete DLK in glutamatergic neurons, we generated Slc17a7Cre/+;Map3k12fl/fl mice (DLK(cKO)). Map3k12fl/fl have LoxP sites flanking the exon encoding the initiation ATG and the first 149 amino acids (Figure 1—figure supplement 1C; Chen et al., 2016; Li et al., 2021; Saikia et al., 2022). In hippocampus Slc17a7Cre (encoding VGLUT1) express Cre recombinase strongly in CA3 and in a subset of pyramidal neurons close to stratum oriens in CA1 at P4, with broad expression in both CA1 and CA3 by P14 (Harris et al., 2014). In dentate gyrus, expression of Slc17a7Cre begins in neurons nearer the molecular layer around P4, with expression spreading towards the polymorph layer gradually during the first two postnatal months. By western blot analysis of hippocampal protein extracts, we found that full-length DLK protein was significantly reduced in DLK(cKO) (Figure 1A and B). The DLK antibody also detected a protein product of lower molecular weight at much reduced levels (Figure 1—figure supplement 1B). As Map3k12 mRNA lacking the floxed exon was expressed (Figure 1—figure supplement 1C), this lower-molecular weight protein could be produced by using a downstream alternative start codon (Figure 1—figure supplement 1C1), but would lack the N-terminal palmitoylation motif and ATP-binding site that are essential for DLK activity (Holland et al., 2016; Huntwork-Rodriguez et al., 2013). These data provide validation for knockout of functional DLK protein in hippocampal glutamatergic neurons in DLK(cKO) mice.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig1-v1.jpg)
+
+**Figure 1.:** (A) Western blot of DLK and β-actin in protein extracts of hippocampal tissue of Slc17a7Cre/+;Map3k12fl/fl and Map3k12fl/fl littermate controls (age P60, each lane representing individual mice, N=3 mice/genotype). (B) Quantification of DLK protein level normalized to β-actin. Statistics: Unpaired t-test, *** p<0.001. Error bars represent SEM. (C) Confocal z-stack (max projection) images of NeuN immunostaining of coronal sections of the dorsal hippocampus in P15 and P60 mice of genotype indicated, respectively. Dashed boxes in CA1 pyramidal layers are enlarged below. Scale bar, 1000 μm in hippocampi; 100 μm in CA1 layer. (D) Quantification of CA1 pyramidal layer thickness. Each dot represents averaged thickness from 3 sections per mouse; N≥4 mice/genotype per timepoint. Statistics: Two-way ANOVA with Holm-Sidak multiple comparison test; ns, not significant. Error bars represent SEM. (E) Confocal z-stack (max projection) images of Tuj1 immunostaining of hippocampus CA1, CA3, and DG regions in control and Slc17a7Cre/+;Map3k12fl/fl mice (age P60). Dashed outlines mark ROI (region of interest) for fluorescence intensity quantification. Scale bar, 100 μm. (F, G, H) Tuj1 mean fluorescence intensity (MFI) after thresholding signals in dendritic regions in each hippocampal area. Each dot represents averaged intensity from 3 sections per mouse; N=4 control, 5 Slc17a7Cre/+;Map3k12fl/fl. Statistics: Unpaired t-test. ns, not significant. Error bars represent SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Confocal images of Map3k12 (DLK) and Slc17a7 (VGLUT1) RNAscope analysis in hippocampal glutamatergic neurons at P15. Scale bar 1000 μm, 10 μm zoomed ROI. (B) Western blot of DLK and β-actin from protein extracts of hippocampal tissue of genotype indicated (age P60, each lane representing individual mice, N=3 mice/genotype). Arrow points to faint band of lower molecular weight in DLK(cKO) that is visible only under longer exposure, which may represent N-terminal truncated DLK produced using an alternative start codon (see C1). (C) IGV visual representation of RiboTag reads of Map3k12 (DLK) in Slc17a7Cre/+ and Slc17a7Cre/+;Map3k12fl/fl, showing that mRNA for the floxed exon is reduced to ~1/3 level of control, while mRNA for other exons remained at a similar level as control. Dark blue illustration shows Map3k12 exon-intron structure, with pink triangles denoting loxP sites. Height of reads (y-axis) in gray or blue represents number of reads for the respective sequence. (C1) Enlarged view of the dashed box in C, corresponding to the floxed exon and exons encoding the kinase domain shown in orange with red marking ATP binding site and green marking DLK palmitoylation site. Start ATG shown in bold, and candidate downstream alternative start ATGs labeled with arrows. (D) Illustration of DLK overexpression transgene. (E,F) Confocal z-stack images of NeuN immunostaining and DAPI of coronal sections of dorsal hippocampus in mice of genotype indicated, with enlarged view of CA1, CA3, and DG (dashed boxes, respectively). ~1-year-old control and Slc17a7Cre/+;Map3k12fl/fl mice for (E); 44–46 weeks old, control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice for (F). Scale bar hippocampus 1000 μm, enlarged view 50 μm. (G, H, I) Quantification of cross-sectional area from CA1, CA3, or DG in dorsal hippocampus, respectively (as outlined in Figure 1—figure supplement 2A and C). Data points represent individual mice, averaged across 3 sections per mouse, N≥3 mice/genotype. Statistics: One way ANOVA with Dunnett’s multiple comparison test. ns, not significant; **** p<0.0001. Error bars represent SEM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Shown are lower magnification confocal images of NeuN staining of coronal sections of mice of genotype and age indicated. (A) ~1-year-old control and Slc17a7Cre/+;Map3k12fl/fl animals. (B) P10, P15, and P60 control and Slc17a7Cre/+;H11-DLK(iOE)/+ nimals. P60 tissue sections were stained at different time from those at P10, P15. (C) ~44–46 week old control and Slc17a7Cre/+;H11-DLK(iOE)/+ animals. Arrows point to cortical thinning and ventricle expansion observed in some animals. Scale bar: 1000 μm.
+
 The DLK(cKO) mice were indistinguishable from control littermate mice in behavior and appearance from birth to about one year of age. We examined tissue sections of hippocampus in P15 and P60 mice. Hippocampal sections stained with NeuN, a marker of neuronal nuclei (Mullen et al., 1992), showed no significant difference in overall position of neuronal soma or thickness of the CA1 pyramidal cell layer at either timepoint (Figure 1C and D). Neuronal morphology visualized by immunostaining with Tuj1, labeling neuron-specific β-III tubulin, also showed no detectable differences in the pattern and intensity of microtubules in DLK(cKO) mice, compared to control (Figure 1E–H). Gross morphology of hippocampus and surrounding tissues in 1-year-old DLK(cKO) mice was indistinguishable from controls (Figure 1—figure supplement 1E, G-I, Figure 1—figure supplement 2A). These results show that DLK does not have essential roles in post-mitotic hippocampal glutamatergic neuron maintenance.
 
-## Increasing expression levels of DLK leads to hippocampal neuron death, with dorsal CA1 neurons showing selective vulnerability
+### Increasing expression levels of DLK leads to hippocampal neuron death, with dorsal CA1 neurons showing selective vulnerability
 
 Several studies have reported that DLK protein levels increase under a variety of conditions, including optic nerve crush (Watkins et al., 2013), NGF withdrawal (~twofold; Huntwork-Rodriguez et al., 2013; Larhammar et al., 2017), and sciatic nerve injury (Larhammar et al., 2017). Induced human neurons show increased DLK abundance about ~fourfold in response to ApoE4 treatment (Huang et al., 2019). Increased expression of DLK can lead to its activation through dimerization and autophosphorylation (Nihalani et al., 2000). We thus asked how increased DLK signaling affects hippocampal glutamatergic neurons. We previously described a transgenic mouse, H11-DLK(iOE), which allows Cre-dependent DLK overexpression (Li et al., 2021). The DLK transgene is coexpressed with tdTomato through a T2A peptide (Figure 1—figure supplement 1D). By RNAscope analysis, compared to control, we observed increased Map3k12 mRNAs in glutamatergic neurons in CA1, CA3, and DG at P15 in Slc17a7 Cre/+;H11-DLK(iOE)/+ mice (referred to as DLK(iOE)) (Figure 2—figure supplement 1A and B). By immunostaining hippocampal sections with anti-DLK antibodies, we observed increased protein levels particularly in regions with pyramidal neuron dendrites in DLK(iOE), compared to control mice (Figure 2—figure supplement 1C–E). Additional analysis at the mRNA level (Supplementary file 2 WT vs DLK(iOE) DEGs) and at the protein level (Figure 4—figure supplement 1E) suggest that the increase in DLK abundance was around three times the control level. The localization patterns of DLK protein appeared to vary depending on region of hippocampus and age of animals in both control and DLK(iOE) mice (Figure 2—figure supplement 1C).
 
 DLK(iOE) mice were born normally, and developed noticeable progressive motor deficits around four months of age, which became worse by one year of age. We stained brain sections for NeuN at P10, P15, P60, and 1 year of age and observed a progressive reduction in brain size of these mice, compared to controls (Figure 1—figure supplement 2B and C). At P10, the dorsal hippocampus in DLK(iOE) was indistinguishable from control (Figure 2A, B, Figure 1—figure supplement 2B). By P15, the DLK(iOE) mice showed significant thinning of the CA1 pyramidal layer. We detected increased TUNEL staining signals in CA1 pyramidal layer, compared to control (Figure 2—figure supplement 3F and G). By P60, most CA1 pyramidal neurons were lost, while DG began to show thinning, which continued to worsen at 1 year of age (Figure 2A, B, Figure 1—figure supplement 1F, I, Figure 1—figure supplement 2B and C). In contrast, neurons in CA3 appeared less affected, even at 1 year of age (Figure 2A, Figure 1—figure supplement 1F, H, Figure 1—figure supplement 2C). Additionally, in P60, dorsal CA1 showed significantly fewer surviving neurons, while ventral CA1 pyramidal layer thickness appeared more similar to control than dorsal regions (Figure 2—figure supplement 2A and B). Neuronal death generally induces reactive astrogliosis. We stained for GFAP, a marker of astrocyte reactivity. We found increased GFAP staining in DLK(iOE), specifically in CA1 at P15, and at P60 in CA1 and DG, but not as strongly in CA3, compared to control mice (Figure 2—figure supplement 3A–D). We also stained for IBA1, a marker of microglia, and found that DLK(iOE) mice showed increased IBA1 staining around the CA1 region, compared to control mice (Figure 2—figure supplement 3E). Microglia appeared ramified in control mice and more reactive-looking in DLK(iOE) mice (Figure 2—figure supplement 3E). Together, these data reveal that dorsal CA1 neurons show vulnerability to elevated DLK expression, while CA3 neurons appear less vulnerable to DLK overexpression.
 
-## DLK dependent translated genes are enriched in synapse formation and function
+![Figure 2.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig2-v1.jpg)
+
+**Figure 2.:** (A) Confocal z-stack (max projection) images of NeuN immunostaining of coronal sections from dorsal hippocampus in P10, P15, and P60 mice of genotype indicated. Dashed boxes mark CA1 pyramidal layers enlarged below. P60 images shown under different settings compared to P10 and P15 due to older staining. Scale bar, 1,000 μm in hippocampi; 100 μm in CA1 layer. (B) Quantification of CA1 pyramidal layer thickness. Data points represent averaged measurement from 3 sections per mouse, N≥4 mice/genotype at each timepoint. Statistics: Two-way ANOVA with Holm-Sidak multiple comparison test. ns, not significant; *** p<0.001; **** p<0.0001. Error bars represent SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Confocal z-stack images of Slc17a7 and Map3k12 mRNAs at P15 in control and Slc17a7Cre/;H11-DLK(iOE)/+ mice. Scale bar: 1000 μm. Inset shows single slice image of CA1 neurons, with dashed line showing individual nuclei as used for quantification. Scale bar: 10 μm. (B) Quantification of RNAscope puncta shown as ratio of Map3k12 to Slc17a7 within individual CA1 neuron nuclei. Data points represent individual mice, averaged across 3 sections per mouse, ≥50 cells per genotype, N=5, 3 mice. Statistics: Mann-Whitney U test. ** p<0.01. Error bars represent SEM. (C) Confocal z-stack images of control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice immunostained for DLK protein (P15, P60,~1 year) or no primary or LZK antibody control (P15) Dashed boxes are enlarged to the right. Individual strata are labeled in CA1, CA3; stratum pyramidale (SP), stratum radiatum (SR), stratum oriens (SO), stratum lacunosum-moleculare (SLM), stratum lucidum (SL). Scale bar 500 μm in hippocampi, 100 μm in CA1 and CA3. (D, E) Quantification of DLK mean fluorescence intensity from all layers in CA1, CA3, and DG at P10 (D) and P15 (E). N=4 mice/genotype for each timepoint. Statistics: Unpaired t-test. ns, not significant; * p<0.05. Error bars represent SEM.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Confocal z-stack images of NeuN immunostaining in ventral hippocampus in control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice (P60). Dashed line regions are enlarged to the right, showing dorsal (posterior) CA1 neurons (top) with some thinning of pyramidal layer in mice with increased DLK, and ventral CA1 neurons (bottom) appearing similar between genotypes. Scale bar: 1000 μm in hippocampi; 100 μm in CA1 layer. (B) Quantification of pyramidal layer thickness across CA1, with CA1 dorsal (anterior) data from Figure 1B. Data points represent individual mice, averaged across 2–3 sections per mouse. Statistics: Unpaired t-test. ns, not significant; **** p<0.0001. Error bars represent SEM. (C) Confocal z-stack images of p-c-Jun immunostaining in dorsal and ventral hippocampus of mice of indicated genotype at P60. Dashed line regions are enlarged to the right. Scale bar: 1000 μm in hippocampi; 100 μm in CA1 layer.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Confocal z-stack imaging of GFAP immunostaining of hippocampus in mice of genotype indicated at P15 and P60, with enlarged view of the dashed boxes for CA1, CA3 shown below. Scale bar: 500 μm in hippocampi, 100 μm in CA1 and CA3. (B–D) Mean fluorescent intensity of GFAP in CA1, CA3, and DG regions (boxed area in A), respectively at P15. N=5, 4 mice, quantified from 3 sections per mouse. Statistics: Unpaired t-test. ns, not significant; * p<0.05. Error bars represent SEM. P15, P60 GFAP animals imaged under separate conditions due to staining at different times. (E) Confocal z-stack images of IBA1 immunostaining of hippocampus in mice of genotype indicated at P15 and P60. Boxed microglia for CA1 and CA3 are enlarged below. Scale bar 100 μm in CA1 and CA3 top, 10 μm in individual microglia bottom. (F) Confocal single-slice images showing TUNEL positive CA1 pyramidal neuron in P15 Slc17a7Cre/+;H11-DLK(iOE)/+ overlapping with tdTomato expressed from DLK(iOE) transgene and pyknotic nuclei (DAPI). Scale bar, 25 μm. (G) Quantification of TUNEL positive neurons in CA1 pyramidal layer in genotype indicated. Data points represent individual mice, averaged across 3 sections per mouse, N=4 mice. Statistics: Unpaired t-test. ** p<0.01. Error bars represent SEM.
+
+### DLK dependent translated genes are enriched in synapse formation and function
 
 To gain understanding of molecular changes associated with DLK expression levels in glutamatergic neurons, we next conducted translating ribosome profiling and RNA sequencing (RiboTag profiling) using Rpl22HA mice, which enables Cre-dependent expression of an HA tagged RPL22, a component of the ribosome, from its endogenous locus (Sanz et al., 2009). We generated Slc17a7Cre/+;H11-DLK(iOE)/+;Rpl22HA/+, Slc17a7Cre/+;Map3k12fl/fl;Rpl22HA/+, and their respective Slc17a7Cre/+;Rpl22HA/+ sibling controls. We made protein extracts from dissected hippocampi of P15 mice, a time point when some CA1 neuron degeneration induced by DLK overexpression was visible. We obtained affinity purified HA-immunoprecipitates with the associated actively translated RNAs (Figure 3—figure supplement 1A) (n=3 DLK(iOE)/3 WT, n=4 DLK(cKO)/4 WT) and verified purity of the isolated RNA samples by qRT-PCR (Figure 3—figure supplement 1B). We mapped >24 million deep sequencing reads per sample to approximately 14,000 genes. We found 260 genes that were differentially expressed and translated in DLK(iOE) neurons, including 114 up- and 146 down-regulated genes, compared to control (Figure 3A, using the cutoff of padj <0.05, Supplementary file 2 WT vs DLK(iOE) DEGs). 36 genes showed significant changes in DLK(cKO) neurons, including 12 up- and 24 down-regulated genes, compared to control (Figure 3B, padj <0.05, Supplementary file 1 WT vs DLK(cKO) DEGs). Among genes with statistically significant changes, 17 were detected in both DLK(cKO) and DLK(iOE) (Figure 3—figure supplement 1C), of which 13 were upregulated in DLK(iOE) and downregulated in DLK(cKO), and 3 were downregulated in DLK(iOE) and upregulated in DLK(cKO) (Figure 3—figure supplement 1D and E). The most significant differentially expressed genes included Jun, encoding the DLK downstream transcription factor c-Jun, Stmn4, encoding a member of the Stathmin tubulin-binding protein family, and Sh2d3c, encoding a SH2-domain cytoplasmic signaling protein (Dodelet et al., 1999; Vervoort et al., 2007). One gene, Slc25a17, a peroxisomal transporter for cofactors FAD, CoA, and others (Agrimi et al., 2012) and broadly implicated in oxidative stress, was upregulated in both DLK(cKO) and DLK(iOE), compared to control, though the relevance of this change may require further investigation. To systematically compare whether DLK regulates the translatome in a coordinated manner, we performed rank-rank hypergeometric overlap (RRHO) analysis (Plaisier et al., 2010) on the entire translated mRNAs detected in DLK(iOE) and DLK(cKO). We found that RRHO detected significant overlap in genes that were upregulated in DLK(iOE) and downregulated in DLK(cKO) as well as the reverse (Figure 3C), supporting a conclusion that expression of many of the same genes are dependent on DLK.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig3-v1.jpg)
+
+**Figure 3.:** (A) Volcano plot showing RiboTag analysis in Slc17a7Cre/+;H11-DLK(iOE)/+;Rpl22HA/+vs Slc17a7Cre/+;Rpl22HA/+ (age P15). 260 genes (red) show differential expression with adjusted p-values <0.05 in Slc17a7Cre/+;H11-DLK(iOE)/+, compared to control; names of genes with p<1E-10 are labeled. (B) Volcano plot showing RiboTag analysis in Slc17a7Cre/+;Map3k12fl/fl;Rpl22HA/+ vs Slc17a7Cre/+;Rpl22HA/+ (age P15). 36 genes (blue) show differential expression with adjusted p-values <0.05; names of genes with p<1E-10 are labeled. (C) Rank-rank hypergeometric overlap (RRHO) comparison of gene expression in DLK(cKO) and DLK(iOE) RiboTag datasets shows enrichment of similar genes when DLK is low or high, respectively. Color represents the -log transformed hypergeometric p-values (blue for weaker p-value, red for stronger p-value). (D, E) Gene ontology (GO) analysis of significantly up- or down-regulated genes in hippocampal glutamatergic neurons of DLK(iOE) mice compared to the control. Colors correspond to p-values; circle size represents fold enrichment for the GO term; X position shows # of genes significantly enriched in the GO term. (F) SynGO sunburst plot shows enrichment of 42 differentially expressed genes from hippocampal glutamatergic neurons of DLK(iOE) mice, with color corresponding to significance. (G, H) Pie charts show distribution of the 42 synaptic genes up- or down- regulated in DLK(iOE), respectively, in CA1, CA3, and DG in dorsal hippocampus, based on in situ data (P56) in the Allen Mouse Brain Atlas.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Western blot of HA-tagged Rpl22 immunoprecipitates. (B) qRT-PCR analysis of Slc17a7 (glutamatergic neurons), Wfs1 (CA1), Vgat (inhibitory neurons), Gfap (astrocytes) shows expression of transcripts for glutamatergic neurons and depletion of non-glutamatergic neuron transcripts. N=3 biological replicates, data shown as expression fold change for marker genes in immunoprecipitated glutamatergic neuron RNAs relative to whole hippocampal RNAs, normalized to Gapdh. (C) Venn diagram showing overlap of statistically significant differentially expressed genes by RiboTag analysis of glutamatergic neurons in DLK(cKO) and DLK(iOE). (D, E) Heatmaps of the differentially expressed genes in glutamatergic neurons in DLK(cKO) and DLK(iOE). Columns represent expression levels in individual mice; rows represent individual genes, and the right-hand labels the RiboTag dataset where a given gene shows statistical significance. Data were normalized by row, with color keys shown above the heatmap. (F, G, H, I) Pie charts show distribution of differentially expressed genes detected in DLK(iOE) or DLK(cKO) in hippocampal neurons, based on in situ data in the Allen Mouse Brain Atlas (P56 mice). (J) SynGO sunburst plot shows enrichment of 10 differentially expressed genes from hippocampal glutamatergic neurons of DLK(cKO) mice, with color corresponding to significance. (K, L) GSEA enrichment plots show distribution of CA1 or CA3 genes from higher expression in WT to higher expression in DLK(cKO). Entire list of translated genes is represented by red to blue spectrum, genes expressed higher in WT in red, genes expressed higher in DLK(cKO) in blue (Supplementary file 1. WT vs DLK(cKO) DEGs). Vertical black lines (middle) represent genes in the respective gene set and where each lies along the spectrum from genes higher in WT to genes higher in DLK(cKO). Gene set for (K) CA1 genes (enriched in CAMK2 vs GRIK4 neurons); (L) CA3 genes (enriched in GRIK4 vs CAMK2 neurons) (Supplementary file 3 CamK2 Grik4 enriched genes). Green line reflects running enrichment score (negative value representing CA1 genes tending to be more expressed in DLK(cKO)). Dashed box highlights region contributing to enrichment score. (K) Normalized enrichment score –1.89. False discovery rate q-value: 0.000; (L) Normalized enrichment score 1.42. False discovery rate q-value: 0.030.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A,B) Confocal z-stack images of c-Jun (A) and p-c-Jun (B) immunostaining in CA1, CA3, and DG in control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice (P10). Dashed lines in corresponding DAPI staining outline region used for quantification. Scale bar 50 μm. Graphs below image panels show quantification of MFI of c-Jun (A) or p-c-Jun nuclei above intensity threshold per 100 μm of pyramidal or granule cell layer (B). Data points represent individual mice. 3 sections per mouse, N=4,5 mice for (A); N=4,4 mice for (B). Statistics: Unpaired t-test. ns, not significant, * p<0.05, ** p<0.01. (C, D) Confocal z-stack images of c-Jun (C) and p-c-Jun (D) immunostaining in CA1, CA3, and DG in control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice (P15). Dashed lines in corresponding DAPI staining outline region used for quantification. Scale bar 50 μm. Graphs below image panels show quantification of MFI of c-Jun (C) or p-c-Jun nuclei above intensity threshold per 100 μm of pyramidal or granule cell layer (D). Data points represent individual mice. 3 sections per mouse, N=7,8 mice for (C); N=3,5 mice for (D). Statistics: Unpaired t-test. ns, not significant; * p<0.05; ** p<0.01; **** p<0.0001. (E) Confocal z-stack images of c-Jun (E) and p-c-Jun (F) immunostaining in CA1, CA3, and DG in control and Slc17a7Cre/+;Map3k12fl/fl mice (P60). Dashed lines in corresponding DAPI staining outline region used for quantification. Scale bar 50 μm. Graphs below image panels show quantification of mean fluorescence intensity (MFI) of c-Jun and p-c-Jun in pyramidal or granule cell layer of each region. Data points represent MFI of individual mice. 3 sections per mouse, N=4,4 mice for (E); N=6, 7 mice for (F). Statistics: Unpaired t-test. ns, not significant; * p<0.05. All error bars represent SEM.
 
 To gain understanding of DLK-dependent signaling network, we performed gene ontology (GO) analysis on the 260 genes differentially translated in DLK(iOE) neurons, as this dataset gave greater ability to detect significant GO terms than using the 36 genes differentially expressed in DLK(cKO). The genes upregulated in DLK(iOE) (114) had enrichment in GO terms related to apoptosis, cell migration, cell adhesion, and the extracellular matrix organization (Figure 3D), whereas the genes downregulated (146) had GO terms related to synaptic communication and ion transport (Figure 3E). Similar GO terms were also identified using the list of genes coordinately regulated by DLK, derived from our RRHO analysis. Among the genes upregulated in DLK(iOE), some were known to be involved in neurite outgrowth (Plat, Tspan7, Hap1), endocytosis or endosomal trafficking (Snx16, Ston2, Hap1), whereas the genes down-regulated in DLK(iOE) included ion channel subunits (Cacng8, Cacng3, Grin2b, Scn1a) and those in exocytosis and calcium related proteins (Doc2b, Hpca, Cadps2, Rab3c, Rph3a). A significant cluster of differentially expressed genes in DLK(iOE) included those that regulate AMPA receptors (Nptx1, Nptxr, Cnih3, Gpc4, Arc, Tspan7) and cell adhesion molecules (Nectin1, Flrt3, Pcdh8, Plxnd1). A further survey using SynGO, a curated resource for genes related to synapse formation and function (Koopmans et al., 2019), revealed 42 of 260 differentially expressed genes in DLK(iOE) showed significant enrichment in synaptic organization and postsynaptic receptor signaling processes (Figure 3F). Conversely, 10 of the 36 differentially expressed genes in DLK(cKO) were annotated to function in similar synaptic processes as in DLK(iOE) (Figure 3—figure supplement 1J). The bioinformatic analysis suggests that increased DLK expression can promote translation of genes related to neurite outgrowth and branching and reduce those related to the maturation and function of synapses.
 
@@ -57,49 +97,89 @@ The hippocampus is comprised of multiple glutamatergic neuron types with distinc
 
 Additionally, we compared our Slc17a7-RiboTag datasets with CamK2-RiboTag and Grik4-RiboTag datasets from 6-week-old wild type mice reported by Traunmüller et al., 2023; GSE209870. We defined a list of genes enriched in CamK2-expressing CA1 neurons relative to Grik4-expressing CA3 neurons (CA1 genes), and those enriched in Grik4-expressing CA3 neurons (CA3 genes) (Supplementary file 3). When compared with the entire list of Slc17a7-RiboTag profiling in our control and DLK(cKO), we found CA1 genes tended to be expressed more in DLK(cKO), compared to control (Figure 3—figure supplement 1K), while CA3 genes showed a slight enrichment in control though the trend was less significant and less clustered towards one genotype (Figure 3—figure supplement 1L). Moreover, many CA1 genes related to cell-type specification, such as Foxp1, Satb2, Wfs1, Gpr161, Adcy8, Ndst3, Chrna5, Ldb2, Ptpru, and Ntm, did not show significant downregulation when DLK was overexpressed. These observations imply that DLK likely specifically down-regulates CA1 genes both under normal conditions and when overexpressed, with a stronger effect on CA1 genes, compared to CA3 genes. Overall, the informatic analysis suggests that decreased expression of CA1 enriched genes may contribute to CA1 neuron vulnerability to elevated DLK, although it is also possible that the observed down-regulation of these genes is a secondary effect associated with CA1 neuron degeneration.
 
-## DLK regulates translation of JUN and STMN4
+### DLK regulates translation of JUN and STMN4
 
 The transcription factor c-Jun is a key downstream factor in DLK and JNK signaling (Hirai et al., 2006; Itoh et al., 2009; Welsbie et al., 2017). Our RiboTag analysis suggests that expression and translation of Jun mRNA to be significantly dependent on DLK expression levels (Figure 3A and B). To further test this observation, we performed immunostaining of hippocampal tissues using an antibody recognizing total c-Jun. In control mice, glutamatergic neurons in CA1 had low but detectable c-Jun immunostaining at P10 and P15, but reduced intensity at P60; those in CA3 showed an overall low level of c-Jun immunostaining at P10, P15, and P60; and those in DG showed a low level of c-Jun immunostaining at P10 and P15, and an increased intensity at P60 (Figure 3—figure supplement 2A, C and E). In DLK(iOE) mice at P10 when no discernable neuron degeneration was seen in any regions of hippocampus, only CA3 neurons showed a significant increase of immunostaining intensity of c-Jun, compared to control (Figure 3—figure supplement 2A). In P15 mice, we observed further increased immunostaining intensity of c-Jun in CA1, CA3, and DG, with the strongest increase (~fourfold) in CA1, compared to age-matched control mice (Figure 3—figure supplement 2C). The overall increased c-Jun staining is consistent with RiboTag analysis. We also analyzed DLK(cKO) mice at P60, and observed a trend for decreased c-Jun in CA3 (Figure 3—figure supplement 2E); the modest effects of DLK(cKO) on c-Jun proteins could be due to detection limitations for low levels of c-Jun. As phosphorylation of c-Jun (p-c-Jun) is known to reflect activation of DLK and JNK signaling (Hirai et al., 2006), we further investigated p-c-Jun levels in these mice. In control mice at P10, P15, only a few neuronal nuclei showed strong staining with p-c-Jun in CA1, CA3 and DG. In DLK(iOE) mice, we observed increased p-c-Jun-positive nuclei in CA1 at P10, and strong increase in CA1 (~tenfold), CA3 (~sixfold), and DG (~eightfold) at P15 (Figure 3—figure supplement 2B and D). The levels of p-c-Jun remained elevated in the surviving neurons in all three regions of DLK(iOE) mice at P60 (Figure 2—figure supplement 2C). In DLK(cKO) mice, p-c-Jun levels in CA3 showed a significant reduction, with the trend of reduced levels in CA1 and DG, compared to control mice (Figure 3—figure supplement 2F, P60). These results are consistent with a conclusion that translation of Jun mRNAs and phosphorylation of c-Jun show dependency on levels of DLK, with CA1 neurons showing higher dependence upon DLK overexpression.
 
 The Stathmin family of proteins is thought to regulate microtubules through sequestering tubulin dimers (Charbaut et al., 2001; Chauvin and Sobel, 2015). This family of proteins includes four genes, all of which were identified in our hippocampal glutamatergic neuron translatome (Figure 4—figure supplement 1A), and only Stmn4 showed significant up-regulation in DLK(iOE) and down-regulation in DLK(cKO), respectively (Figure 3A and B). We verified STMN4 protein expression by western blot analysis of hippocampal protein extracts. In control mice, we detected the levels of STMN4 to peak around P8 (Figure 4—figure supplement 1B, C, F and G). The abundance of STMN4 in DLK(cKO) and DLK(iOE) was subtly altered, which could be due to broad expression of STMN4 in hippocampus masking specific changes in glutamatergic neurons. We thus examined Stmn4 mRNAs in hippocampus by RNAscope. Stmn4 mRNAs were present in glutamatergic neurons across all regions of the hippocampus, with strongest expression in CA1 pyramidal neurons. While Stmn4 mRNA puncta number in these neurons was comparable between DLK(cKO) mice and control, in DLK(iOE) mice, glutamatergic neurons in CA1, CA3, and DG all showed upregulation of Stmn4, compared to control (Figure 4A–C, Figure 4—figure supplement 2A, C). These data support a role of DLK in modulating expression and translation of Stmn4.
 
-## Elevated DLK signaling may disrupt microtubule homeostasis in hippocampal CA1 neurons
+![Figure 4.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig4-v1.jpg)
+
+**Figure 4.:** (A) Confocal single-slice image of RNAscope analysis of Stmn4 and Slc17a7 mRNAs in hippocampal neurons. Dashed circle outlines single nuclei. Scale bar, 10 μm. (B, C) Quantification of the ratio of Stmn4 to Slc17a7 RNAscope puncta in same nuclei of CA1 and CA3 neurons, respectively. N=6,3,3 mice of respective genotypes, quantified from >50 cells per genotype from 4 sections per mouse. Statistics: One way ANOVA with Dunnett’s multiple comparison test, ns, not significant; * p<0.05; ** p<0.01. (D–F) Confocal z-stack (max projection) images of CA1 immunostained for Tuj1, tyrosinated tubulin, and acetylated tubulin, respectively, in control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice of P15. SR: stratum radiatum. (G, H) Normalized mean fluorescence intensity (MFI) of tyrosinated and acetylated tubulin, respectively, after thresholding signals in SR in CA1 (dashed outlines on images in E-F). N=9, 6 mice, 3 sections averaged per mouse in (G); N=6, 4 mice, 3 sections averaged per mouse in (H). (I–K) Confocal z-stack (max projection) images of immunostained CA1 sections for Tuj1, tyrosinated tubulin, and acetylated tubulin, respectively, in control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice of P60. (L, M) Normalized MFI of tyrosinated and acetylated tubulin, respectively, after thresholding signal in SR in CA1 (dashed outlines on images in J-K). N=9, 9 mice, 3 sections averaged per mouse in L; N=6, 6 mice, 3 sections averaged per mouse in M. (N–P) Confocal z-stack (max projection) images of immunostained CA1 sections for Tuj1, tyrosinated tubulin, and acetylated tubulin, respectively, in control and Slc17a7Cre/+;Map3k12fl/fl mice of P60. (Q, R) Normalized MFI for tyrosinated and acetylated tubulin, respectively, after thresholding signal in SR in CA1 (dashed outlines on images in O-P). N=5, 7 mice, 3 sections averaged per mouse in Q; N=6, 7 mice, 3 sections averaged per mouse in R. All tubulin images shown as maximum projection of z-stack. Scale bar, 10 μm. In I-J, arrows point to apical dendrites with elevated immunostaining signal; arrowheads point to thin neurites with elevated signal. Statistics in (G, H, L, M, Q, R): Unpaired t-test. ns, not significant; * p<0.05. All error bars represent SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) RiboTag analysis of Stathmin family members, shown as transcripts per million (TPM). Differential expression analysis significance shown (padj). ns, not significant; **** p<0.0001. Stmn2 and Stmn4 appear to have comparable reads, however, this includes reads in a retained intron in Stmn2, which increases the reference gene length used for the TPM calculation for Stmn2. The significance of this intron retention may need further study. (B, C) Western blots of protein extracts from hippocampal tissue from P1, P8, P15, P60, and ~1-year-old mice, blotted for DLK, Flag, STMN4, STMN2, and actin in Slc17a7Cre/+;Map3k12fl/fl (B) and Slc17a7Cre/+;H11-DLK(iOE)/+ (C), respectively. Larger molecular weight band of DLK in Slc17a7Cre/+;H11-DLK(iOE)/+ would match the predicted molecular weight of DLK-T2A-tdTomato if T2A-peptide induced ‘self-cleavage’ due to ribosomal skipping is ineffective (Figure 1—figure supplement 1D). (D, E) Relative DLK protein level normalized to actin and P1 control. N=3 mice/genotype. (F, G) Relative STMN4 protein level normalized to actin and P1 control. N=3 mice/genotype. Statistics: Two-way ANOVA with Sidak multiple comparisons test. ns, not significant; * p<0.05. All error bars represent SEM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A–D) Confocal single-slice images of Stmn4 and Slc17a7 RNAscope stained sections from (A, B) CA3 and (C, D) DG in DLK(iOE) (A, C) and DLK(cKO) (B, D) mice at P15. Scale bar 10 μm. (E) Confocal z-stack images of Tuj1 immunostaining in CA1, CA3, and DG of mice genotype indicated at P15. Scale bar 50 μm. (F) Confocal z-stack images of MAP2 immunostaining of CA1 pyramidal layer from control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice at P60. Arrows point to apical dendrites with elevated signal. Arrowheads point to thin neurites with elevated signal. Scale bar 10 μm. (G) Normalized MAP2 MFI after thresholding signal in SR (dashed outlines on images in F). N=9, 9 mice, 3 sections averaged per mouse. Statistics: Unpaired t-test. ns, not significant. Error bars represent SEM.
+
+### Elevated DLK signaling may disrupt microtubule homeostasis in hippocampal CA1 neurons
 
 Substantial studies from other types of neurons in mice and invertebrate animals have linked DLK signaling with the regulation of microtubule cytoskeleton (Asghari Adib et al., 2018; Jin and Zheng, 2019; Tedeschi and Bradke, 2013). To assess whether DLK affects microtubules in hippocampal glutamatergic neurons, we performed Tuj1 immunostaining. We did not detect obvious changes in DLK(cKO) when compared to controls at P60 (Figure 1E). In DLK(iOE) mice at P15, expression levels and patterns of neuronal microtubules in each region of hippocampus appeared similar to control (Figure 4D, Figure 4—figure supplement 2E), although we found the overall Tuj1 staining pattern at P15 to be less defined and consistent. By P60, many CA1 neurons died and the hippocampus exhibited thinning of all strata within CA1, and the Tuj1 staining pattern became less organized in parallel dendrites in the stratum radiatum (SR) region of CA1 (Figure 4I). Increased Tuj1 staining in thin branches extended in varied directions, with bright staining seen in the apical dendrites near the pyramidal neuron cell body.
 
 Several post-translational modifications of microtubules are thought to correlate with stable or dynamic state of microtubules. To explore whether DLK expression levels affected microtubule post-translational modifications, we performed immunostaining for acetylated tubulin, a modification generally associated with stable, longer-lived microtubules, and tyrosinated tubulin, a terminal amino acid that can be removed and is typically found on dynamic microtubules (Janke and Magiera, 2020). We detected no significant difference in the staining pattern and intensity of either tyrosinated tubulin or acetylated tubulin in DLK(cKO) mice, compared with age-matched control mice (Figure 4N–R). In DLK(iOE) mice at P15, both tubulin modifications showed no significant differences in pattern or intensity in CA1 SR, compared to age-matched control mice (Figure 4E–H), despite neuron death beginning in CA1. By P60, we observed increased staining intensity of acetylated tubulin and tyrosinated tubulin in the apical dendrites of surviving neurons in DLK(iOE) mice, particularly with tyrosinated tubulin staining revealing bright signals on small, thin branches (Figure 4J–M). To discern whether such microtubule modification changes were from neurons, we immunostained tissue sections with antibodies for MAP2, a neuron specific microtubule associated protein. We observed bright MAP2 signal in thin branches extending in varied directions in DLK(iOE) mice, compared to age-matched control mice (Figure 4—figure supplement 2F and G). Together this analysis suggests increased DLK expression may likely alter neuronal microtubule homeostasis and/or integrity.
 
-## Increasing DLK expression alters synapses in dorsal CA1
+### Increasing DLK expression alters synapses in dorsal CA1
 
 A theme revealed in our hippocampal glutamatergic neuron RiboTag profiling suggests that translation of synaptic proteins may depend on the expression levels of DLK. To evaluate this observation, we examined synapses in the hippocampus by immunostaining for Bassoon, a core protein in the presynaptic active zone, Vesicular Glutamate Transporter 1 (VGLUT1) for synaptic vesicles, and Homer1, a post-synaptic scaffolding protein. In control mice and DLK(cKO) at P60, Bassoon staining in stratum radiatum (SR) of dorsal CA1, where CA3 neurons synapse onto CA1 dendrites, showed discrete puncta that were mostly apposed to the postsynaptic marker Homer1, representing properly formed synapses (Figure 5A). We measured size and density by counting Bassoon and Homer1 puncta and the sites where Bassoon and Homer1 overlap, a proxy for synapses. We detected no significant difference in DLK(cKO), compared to control (Figure 5A–F). To assess effects of DLK overexpression on synapses, we immunostained hippocampal sections from both P10 and P15, with age-matched littermate controls. Quantification of Bassoon and Homer1 immunostaining revealed no significant differences in CA1 SR and CA3 SR and SL in P10 mice of DLK(iOE) and control (Figure 5—figure supplement 2A–F, Figure 5—figure supplement 3A–J). In P15, Bassoon density and size in CA1 SR were comparable in both mice (Figure 5G, H and K), while Homer1 density and size were reduced in DLK(iOE) (Figure 5G, I and L). Overall synapse number in CA1 SR was similar in DLK(iOE) and control mice (Figure 5J). Similar analysis on CA3 SR and SL detected no significant difference from control (Figure 5—figure supplement 3M–V). Staining of VGLUT1 protein showed less discrete puncta than those of Bassoon or Homer1, with small puncta and larger clusters of puncta close together (Figure 5—figure supplement 1A and D). In DLK(cKO) we observed a trend towards an increased number of VGLUT1 puncta (p=0.0653) with no change to puncta size (Figure 5—figure supplement 1A–C). In DLK(iOE) we observed fewer VGLUT1 puncta in SR, consistent with the analysis on Homer1 at P15, with no significant change to puncta size (Figure 5—figure supplement 1D–F). These data reveal that while conditional knockout of DLK may not have a strong effect on glutamatergic synapses, increased expression of DLK leads to mild alteration in the CA1 region at P15, correlating with the onset of CA1 neurodegeneration.
 
-## High levels of DLK cause short neurite formation in primary hippocampal neurons
+![Figure 5.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig5-v1.jpg)
+
+**Figure 5.:** (A) Confocal single-slice images of Bassoon and Homer1 immunostaining in CA1 stratum radiatum (SR) of control and Slc17a7Cre/+;Map3k12fl/fl mice of P60. (B, C) Quantification of Bassoon and Homer1 puncta density, respectively. (D) Quantification of co-localization of Bassoon and Homer1. (E, F) Quantification of Bassoon and Homer1 puncta size. Data points represent average values per mouse from 3 sections. N=7 control, and 8 Slc17a7Cre/+;Map3k12fl/fl mice. Statistics: unpaired t-test or Mann-Whitney U test if not passing normality. ns, not significant. (G) Confocal single-slice images of Bassoon and Homer1 immunostaining in CA1 SR of control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice of P15. (H–I) Quantification of Bassoon and Homer1 puncta density, respectively. (J) Quantification of co-localization of Bassoon and Homer1. (K, L) Quantification of Bassoon and Homer1 puncta size. Data points represent average values per mouse from 3 sections, N=9 control, and 6 Slc17a7Cre/+;H11-DLK(iOE)/+ mice. Statistics: unpaired t-test or Mann-Whitney U test if not passing normality. ns, not significant; ** p<0.01. Scale bars, 5 μm in panel images, and 1 μm in enlarged images. All error bars represent SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Confocal single-slice image of VGLUT1 immunostaining of CA1 SR in control and Slc17a7Cre/+;Map3k12fl/fl mice at P60. Scale bar 5 μm, inset scale bar 1 μm. (B, C) Quantification of VGLUT1 puncta density and size. Data points represent averages from individual mice across 3 sections per mouse. N=5 control, and 8 Slc17a7Cre/+;Map3k12fl/fl mice. (D) Confocal single-slice image of VGLUT1 immunostaining of CA1 SR in control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice at P15. Scale bar 5 μm, inset scale bar 1 μm. (E, F) Quantification of VGLUT1 puncta density (E) and size (F). Data points represent averages from individual mice across 3 sections per mouse, N=9 control, and 8 Slc17a7Cre/+;H11-DLK(iOE)/+ mice. Statistics: unpaired t-test. ns, not significant; * p<0.05. All error bars represent SEM.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Confocal single-slice images of Bassoon and Homer1 immunostaining in CA1 SR of control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice at P10. Scale bars, 5 μm in panel images, and 1 μm in enlarged images. (B, C) Quantification of Bassoon and Homer1 puncta density, respectively. (D) Quantification of synapses displaying co-localization of Bassoon and Homer1. (E, F) Quantification from control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice for (E) Bassoon puncta size, (F) Homer1 puncta size. Data points represent average values per mouse from 3 sections. N=4 control, and 7 Slc17a7Cre/+;H11-DLK(iOE)/+ mice. Statistics: unpaired t-test. ns, not significant. All error bars represent SEM.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Confocal single-slice images of Bassoon and Homer1 immunostaining in CA3 SR of control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice at P10. Scale bars, 5 μm in panel images, and 1 μm in enlarged images. (B, C) Quantification of Bassoon and Homer1 puncta density, respectively. (D) Quantification of synapses displaying co-localization of Bassoon and Homer1. (E, F) Quantification from control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice for (E) Bassoon puncta size, (F) Homer1 puncta size. Data points represent average values per mouse from 3 sections. N=4 control, and 7 Slc17a7Cre/+;H11-DLK(iOE)/+ mice. Statistics: unpaired t-test. ns, not significant. (G) Confocal single-slice images of Bassoon and Homer1 immunostaining in CA3 SL of control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice at P10. Scale bars, 5 μm in panel images, and 1 μm in enlarged images. (H, I) Quantification of Bassoon and Homer1 puncta density, respectively. (J) Quantification of synapses displaying co-localization of Bassoon and Homer1. (K, L) Quantification from control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice for (K) Bassoon puncta size, (L) Homer1 puncta size. Data points represent average values per mouse from 3 sections. N=4 control, and 7 Slc17a7Cre/+;H11-DLK(iOE)/+ mice. Statistics: unpaired t-test. ns, not significant. (M) Confocal single-slice images of Bassoon and Homer1 immunostaining in CA3 SR of control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice at P15. Scale bars, 5 μm in panel images, and 1 μm in enlarged images. (N, O) Quantification of Bassoon and Homer1 puncta density, respectively. (P) Quantification of synapses displaying co-localization of Bassoon and Homer1. (Q, R) Quantification from control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice for (Q) Bassoon puncta size, (R) Homer1 puncta size. Data points represent average values per mouse from 3 sections. N=9 control, and 6 Slc17a7Cre/+;H11-DLK(iOE)/+ mice. Statistics: unpaired t-test. ns, not significant. (S) Confocal single-slice images of Bassoon and Homer1 immunostaining in CA3 SL of control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice at P15. Scale bars, 5 μm in panel images, and 1 μm in enlarged images. (T, U) Quantification of Bassoon and Homer1 puncta density, respectively. (V) Quantification of synapses displaying co-localization of Bassoon and Homer1. (W, X) Quantification from control and Slc17a7Cre/+;H11-DLK(iOE)/+ mice for (W) Bassoon puncta size, (X) Homer1 puncta size. Data points represent average values per mouse from 3 sections. N=9 control, and 6 Slc17a7Cre/+;H11-DLK(iOE)/+ mice. Statistics: unpaired t-test. ns, not significant. All error bars represent SEM.
+
+### High levels of DLK cause short neurite formation in primary hippocampal neurons
 
 To gain better resolution on how DLK expression levels affect glutamatergic neuron morphology and synapses, we next turned to primary hippocampal cultures. To enable visualization of Slc17a7-positive neurons, we introduced a floxed Rosa26-tdTomato reporter (Madisen et al., 2010) into Slc17a7Cre/+, Slc17a7Cre/+;Map3k12fl/fl, and Slc17a7Cre/+;H11-DLK(iOE)/+ mice. We prepared primary hippocampal neurons from P1 pups of respective crosses (Materials and methods), so around 1⁄4 of glutamatergic (Slc17a7-Cre) neurons in the cultures had both tdTomato and the genotype of interest (Map3k12fl/fl, WT, or H11-DLK(iOE)/+). We did not notice an obvious effect of DLK(iOE) or DLK(cKO) on neuron density in cultures at DIV2. To assess neuronal type distribution in our cultures, we immunostained DIV14 neurons with antibodies for Satb2, as a CA1 marker (Nielsen et al., 2010), and Prox1, as a marker of DG neurons (Iwano et al., 2012). We did not observe significant differences in the proportion of cells labeled with each marker in DLK(cKO) or DLK(iOE) cultures (Figure 6—figure supplement 1E). These data are consistent with the idea that DLK signaling does not have a strong role in neuron-type specification both in vivo and in vitro.
 
 We verified DLK protein pattern and levels by immunostaining with DLK antibodies (Figure 6A). In DIV2 neurons from control mice, DLK was present in cell soma, likely reflecting Golgi apparatus localization as reported (Hirai et al., 2002), and showed a punctate pattern in neurites, particularly the axon growth cone regions. We also immunostained for STMN4 and observed a similar punctate localization in the cell soma, neurites, and growth cones (Figure 6A), in line with published data (Chauvin et al., 2008; Gavet et al., 2002). STMN4 puncta appeared to be non-overlapping with DLK (Figure 6—figure supplement 1B). In DIV2 neurons from DLK(cKO), STMN4 exhibited a similar punctate pattern, with intensity comparable to that in control neurons. In neurons from DLK(iOE), DLK levels were increased, and STMN4 levels were also increased (Spearman correlation r=0.7454) (Figure 6A and B), supporting our RiboTag analysis. Expression of another member of Stathmin, STMN2, is associated with DLK-dependent responses in DRG neurons (Summers et al., 2020; Thornburg-Suresh et al., 2023). Although our RiboTag analysis did not identify significant changes of Stmn2 (Figure 4—figure supplement 1A), we tested whether STMN2 protein levels could be altered in our cultured hippocampal neurons. In DIV2 control neurons STMN2 staining showed punctate localization in the perinuclear region (Gavet et al., 2002; Lutjens et al., 2000), along with punctate signals in neurites and growth cones, similar to STMN4. By co-immunostaining analysis of DLK and STMN2, we detected a positive correlation between DLK and STMN2 (Figure 6—figure supplement 1C and D, Spearman correlation r=0.4693), albeit to a moderate level in comparison to that of DLK and STMN4. These data suggest that in hippocampal glutamatergic neurons DLK has a stronger effect on STMN4 levels but may also regulate protein levels of STMN2.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig6-v1.jpg)
+
+**Figure 6.:** (A) Confocal images of DIV2 primary hippocampal glutamatergic neurons immunostained with DLK and STMN4. Neurons with indicated genotypes are labeled by tdTomato from Cre-dependent Rosa26-tdTomato, generated from hippocampi in P1 pups from the following crosses: for control: Slc17a7Cre/+ X Rosa26tdT/+; for DLK(cKO): Slc17a7Cre/+;Map3k12fl/fl X Map3k12fl/fl;Rosa26tdT/+; for DLK(iOE): H11-DLK(iOE)/H11-DLK(iOE) X Slc17a7 Cre/+;Rosa26tdT/+. Orange arrows point to some of the thin neurites from neurons overexpressing DLK. Red dashes outline enlarged view of neurites. Scale bar, 10 μm neuron, 1 μm enlarged view. (B) Graph shows positive correlation between STMN4 immunostaining, measured as integrated density (Area X MFI) in neuronal soma, to integrated density of DLK immunostaining. N≥3 cultures/genotype,≥60 cells/genotype. Spearman correlation r=0.7454. (C) Quantification of percentage of neurons with no, one, or more than one axon (defined by neurites longer than 90 μm) in each genotype. Number of neurons: 47 from 3 Slc17a7Cre (control) cultures, 49 from 3 DLK(cKO) cultures, 42 from 4 DLK(iOE) cultures. Statistics: Fisher’s exact test shows significance (p<0.0001) between genotype and number of axons. Pairwise comparisons with Fisher’s exact test: Axon formation in control vs DLK(cKO): p=0.1857. Formation of multiple axons in control vs DLK(cKO): p>0.9999. Axon formation in control vs DLK(iOE): p=0.0042. Formation of multiple axons in control vs DLK(iOE): p=0.0001. (D) Quantification of number of primary neurites, which include both branches and filopodia, per neuron. Number of neurons: 55 from 4 Slc17a7Cre (control) cultures, 70 from 4 DLK(cKO) cultures, 45 from 5 DLK(iOE) cultures. Statistics, Kruskal-Wallis test with Dunn’s multiple comparison test. **** p<0.0001. Error bars represent SEM. (E) Confocal z-stack images of tyrosinated tubulin immunostaining from DIV2 cultures of genotypes indicated, showing that filopodia structures (arrows) around the soma and axons of neurons with high expression of DLK have tyrosinated tubulin. (F) Confocal z-stack images of acetylated tubulin immunostaining from DIV2 cultures of genotypes indicated, showing that filopodia structures (arrows) around the soma and axons of neurons with high expression of DLK do not have acetylated tubulin. Asterisks indicate stable branches containing acetylated tubulin. Scale bar in E, F, 10 μm. Tyrosinated tubulin and acetylated tubulin staining shows saturated appearance to visualize staining in thin neurites.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Confocal z-stack images of neuron morphology at DIV2 from mice of genotype indicated, visualized by tdTomato from Rosa26-tdTomato. Neurons with indicated genotypes are labeled by tdTomato from Cre-dependent Rosa26-tdTomato generated from the following crosses: for control: Slc17a7Cre/+ X Rosa26tdT/+; for DLK(cKO): Slc17a7Cre/+;Map3k12fl/fl X Map3k12fl/fl;Rosa26tdT/+; for DLK(iOE): H11-DLK(iOE)/H11-DLK(iOE) X Slc17a7 Cre/+;Rosa26tdT/+. Red arrowheads point to long processes considered as axons. Scale bar 100 μm. (B) Co-immunostaining of DLK and STMN4 in DIV2 control cultured neuron growth cone shows non-overlapping puncta. (C) Confocal z-stack images of DLK and STMN2 co-immunostaining of DIV2 primary hippocampal neurons from genotypes indicated; neurons are labeled with tdTomato from Rosa26-tdTomato. Scale bar 10 μm. (D) Quantification of association between DLK level and STMN2 in cell soma. N=3 cultures/genotype, ≥45 cells/genotype. Spearman correlation r=0.4693. (E) Analysis of cell types in culture at DIV14 using Prox1 and Satb2 markers. Quantification from N=3 cultures/genotype, ≥200 cells/genotype. Statistics: Two-way ANOVA with Dunnett’s multiple comparison test. ns, not significant. Error bars represent SEM.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Confocal single-slice images of STMN2 and STMN4 immunostaining using two independent antibodies on control primary hippocampal neurons DIV3. Dashed boxes are enlarged below. Scale bar,10μm full cell, 1 μm enlarged region. Line scan below reflects normalized intensity, with asterisks reflecting overlapping peaks. (B) Western blots of protein extracts from P15 hippocampal tissue of genotype indicated for STMN2 and STMN4 antibodies. Lanes 1–3 are littermate controls (+) for lanes 4–6 Slc17a7Cre/+;H11-DLK(iOE)/+, referred to as ‘Tg’; and lanes 7–9 are littermate controls (+) for lanes 10–12 Slc17a7Cre/+;Map3k12fl/fl, referred to as ‘-’. (C) Quantification of STMN2 or STMN4 protein level normalized to actin. N=3 mice/genotype. Statistics: One way ANOVA with Sidak’s multiple comparison test. ns, not significant; * p<0.05. Error bars represent SEM.
+
 In hippocampal cultures at DIV2 neurites are actively growing and establish thicker branches, which form dendrites and axons (Dotti et al., 1988). In our control cultures at DIV2, the majority of tdTomato labeled neurons developed multiple neurites from the cell soma, with one neurite developing into an axon, defined here as a neurite longer than 90 µm (Figure 6—figure supplement 1A). Additionally, thin, often short, neurites were observed branching off from the cell soma, axons, dendrites, and growth cones. In DLK(cKO) cultures at DIV2, we observed a trend of more neurons without an axon (Figure 6C), though the differentiated axons appeared morphologically indistinguishable from control. The total number of neurites around the cell soma in DLK(cKO) neurons was significantly reduced, compared to control (Figure 6A and D). In DLK(iOE) cultures at DIV2, we observed a significant increase in the percentage of neurons without an axon and also neurons with multiple axons, compared to control cultures (Figure 6C, Figure 6—figure supplement 1A). Moreover, neurons expressing high levels of DLK protein displayed an increased number of neurites either around the cell soma as primary neurites or as secondary neurites, compared to control (Figure 6A and D). Such neurites were typically thin, and frequently appeared short, like filopodia. These thin neurites sometimes developed a rounded tip and showed beading appearance, resembling degeneration (Figure 6A and E). These data suggest a role for DLK in neurite formation and axon specification in cultured hippocampal glutamatergic neurons.
 
 We further analyzed microtubules in individual neurites of the DIV2 neurons. Control neurons exhibited staining for tyrosinated tubulin in differentiated axons and dendrites as well as filopodia and towards peripheral regions of growth cones (Figure 6E). Acetylated tubulin was present in differentiated axons and dendrites and in the central region of growth cones where stable microtubules were present (Figure 6F), and was absent from filopodia and microtubules in the peripheral regions of growth cones. The thin neurites in neurons expressing very high levels of DLK appeared to have thin bundles of microtubules, and these neurites generally were not associated with a growth cone or microtubules splaying apart at the end as was common in WT growth cones (Figure 6E). Neurites from neurons with high DLK expression also had tyrosinated tubulin, while acetylated tubulin was frequently absent (Figure 6E and F). Additionally, STMN4 was present in the thin neurites, especially in those with high levels of DLK (Figure 6A), suggesting the thin neurites may likely be dynamic in nature. These results suggest that in cultured hippocampal neurons high levels of DLK promotes formation of short, thin, dynamic branches.
 
-## Increased DLK expression alters synapses in primary hippocampal neurons
+### Increased DLK expression alters synapses in primary hippocampal neurons
 
 Our RiboTag data showed enrichment of synaptic genes in both DLK(cKO) and DLK(iOE) (Figure 3F, Figure 3—figure supplement 1J, Supplementary file 1 WT vs DLK(cKO) DEGs, Supplementary file 2 WT vs DLK(iOE) DEGs). Some of these genes function in cell adhesion, calcium signaling, and AMPA receptor expression, which may affect dendritic spine morphology and synaptic connections. Increased DLK levels led to reduced Homer1 density in hippocampal tissue (Figure 5I). To further investigate the effects of DLK on synapses, we immunostained the cultured hippocampal neurons at DIV14 with Bassoon. The control neurons showed discrete Bassoon puncta in axons (Figure 7A–C). DLK(cKO) neurons showed no significant change in Bassoon puncta size or density. In contrast, DLK(iOE) neurons showed abnormal Bassoon staining that was larger and irregular in shape (Figure 7A–C), suggesting that high levels of DLK disrupted presynaptic active zones.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/101173/elife-101173-fig7-v1.jpg)
 
-**Figure 7.:** (A) Confocal images of axons of DIV14 neurons of indicated genotype, co-stained with Bassoon and DLK. Neurons with indicated genotypes are labeled by tdTomato from Cre-dependent Rosa26-tdTomato generated from the following crosses: for control: Slc17a7 X Cre/+Rosa26; for DLK(cKO): tdT/+Slc17a7 X Cre/+;Map3k12fl/flMap3k12 for DLK(iOE): H11-DLK(iOE)/H11-DLK(iOE) X fl/fl;Rosa26tdT/+;Slc17a7 . Scale bar, 1 μm. (Cre/+;Rosa26tdT/+B) Quantification of bassoon puncta density. (C) Quantification of average bassoon puncta size from individual neurons. Number of neurons: 30 from 3 Slc17a7-cre (control) cultures, 41 from 3 DLK(cKO) cultures, 46 from 4 DLK(iOE) cultures. Statistics: One way ANOVA with Dunnett’s multiple comparison test. ns, not significant; * p<0.05. (D) Confocal z-stack images of DIV14 neurons of indicated genotype, labeled by Rosa26-tdTomato. Dashed boxes outline dendrites enlarged below for dendritic spines. Asterisks provide some examples of spine types; long thin with purple; thin with blue; mushroom with white; stubby with yellow. Scale bar, 10 μm top, 5 μm bottom. (E) Quantification of dendritic spine density. (F) Quantification of mushroom spine density. (G) Distribution of spine types. (E–G) Number of neurons: 35 from 3 Slc17a7-cre (control) cultures, 31 from 3 DLK(cKO) cultures, 31 from 3 DLK(iOE) cultures. Statistics: One way ANOVA with Dunnett’s multiple comparison test. * p<0.05; ** p<0.01. All error bars represent SEM.
+**Figure 7.:** (A) Confocal images of axons of DIV14 neurons of indicated genotype, co-stained with Bassoon and DLK. Neurons with indicated genotypes are labeled by tdTomato from Cre-dependent Rosa26-tdTomato generated from the following crosses: for control: Slc17a7Cre/+ X Rosa26tdT/+; for DLK(cKO): Slc17a7Cre/+;Map3k12fl/fl X Map3k12fl/fl;Rosa26tdT/+; for DLK(iOE): H11-DLK(iOE)/H11-DLK(iOE) X Slc17a7 Cre/+;Rosa26tdT/+. Scale bar, 1 μm. (B) Quantification of bassoon puncta density. (C) Quantification of average bassoon puncta size from individual neurons. Number of neurons: 30 from 3 Slc17a7-cre (control) cultures, 41 from 3 DLK(cKO) cultures, 46 from 4 DLK(iOE) cultures. Statistics: One way ANOVA with Dunnett’s multiple comparison test. ns, not significant; * p<0.05. (D) Confocal z-stack images of DIV14 neurons of indicated genotype, labeled by Rosa26-tdTomato. Dashed boxes outline dendrites enlarged below for dendritic spines. Asterisks provide some examples of spine types; long thin with purple; thin with blue; mushroom with white; stubby with yellow. Scale bar, 10 μm top, 5 μm bottom. (E) Quantification of dendritic spine density. (F) Quantification of mushroom spine density. (G) Distribution of spine types. (E–G) Number of neurons: 35 from 3 Slc17a7-cre (control) cultures, 31 from 3 DLK(cKO) cultures, 31 from 3 DLK(iOE) cultures. Statistics: One way ANOVA with Dunnett’s multiple comparison test. * p<0.05; ** p<0.01. All error bars represent SEM.
 
 Morphology of dendritic spines is associated with differences in maturity, with mushroom spines representing a more mature morphology than thin spines (Yoshihara et al., 2009). To assess how DLK expression levels affect dendritic spine morphology and frequency in cultured neurons, we evaluated both the density and type of dendritic spines formed at DIV14 on neurons with spines, visualized by tdTomato. We categorized spine morphology in different types, following previous studies (Risher et al., 2014). Neurons from DLK(cKO) showed spines at a higher density than control neurons, with significantly more mushroom spines (Figure 7D–G). In contrast, neurons from DLK(iOE) cultures had a reduced density of dendritic spines compared to control neurons (Figure 7D and E). DLK(iOE) neurons also formed spines that tended to be more immature, with significantly fewer mushroom spines and a higher percentage of thin spines (Figure 7D, F and G). These results reveal that expression levels of DLK appear to be inversely correlated with spine density and maturity.
 
 ## Discussion
 
-## Selective vulnerability of hippocampal glutamatergic neurons to increased DLK expression
+### Selective vulnerability of hippocampal glutamatergic neurons to increased DLK expression
 
 Under normal conditions, the abundance of endogenous DLK in many parts of the brain is generally kept at a low level. Elevated DLK signaling has been associated with traumatic injury and implicated in Alzheimer’s disease and other neurodegenerative conditions (Asghari Adib et al., 2018; Huang et al., 2017; Jin and Zheng, 2019; Le Pichon et al., 2017; Tedeschi and Bradke, 2013). Despite its broad expression, we know little about DLK’s role in the central nervous system. In this study, we combined conditional knockout and overexpression of DLK to uncover its roles in the hippocampal glutamatergic neurons. Our finding that conditional deletion of DLK in the glutamatergic neurons using Slc17a7Cre in late embryonic development does not cause discernable morphological defects is consistent with the previous reports that hippocampal neurons are largely normal in constitutive knockout of DLK (Hirai et al., 2006; Hirai et al., 2011). In contrast, induced overexpression of DLK, which leads to activation of JNK signaling evidenced by increased p-c-Jun, causes the glutamatergic neurons in dorsal CA1 and dentate gyrus to undergo pronounced death, while CA3 neurons appear less vulnerable even under chronic elevated DLK expression. The levels of DLK in our DLK(iOE) mice model appear comparable to those reported under traumatic injury and chronic stress. The pattern of DLK-induced neuronal death shares similarity to the differential vulnerability of CA1 and CA3 neurons reported in patients with Alzheimer’s disease (West et al., 1994), and animal models of oxidative stress (Wilde et al., 1997), ischemia (Smith et al., 1984), and glutamate excitotoxicity from NMDA (Vornov et al., 1991). The dorsal-ventral hippocampal neuron death pattern associated with increased expression of DLK is also similar to that observed in animal models of ischemia (Smith et al., 1984). Such regional differences of hippocampal neurons in response to insults or genetic manipulation may be attributed to multiple factors, such as the nature of the neural network (Viana da Silva et al., 2024), intrinsic differences between CA1 and CA3 neurons in their abilities to buffer calcium changes, mitochondrial stress, protein homeostasis, glutamate receptor distribution (Schmidt-Kastner, 2015), and as discussed further, the degree to which transcription factors, such as p-c-Jun or other AP1 factors, are activated under different conditions.
 
-## DLK-dependent cellular network exhibits commonality and cell-type specificity
+### DLK-dependent cellular network exhibits commonality and cell-type specificity
 
 DLK to JNK signaling is known to lead to transcriptional regulation. Several studies have used transcriptomic profiling to reveal DLK-dependent gene expression in different regions of the brain, such as cerebellum and forebrain, and in specific neuron types, such as DRG neurons and RGC neurons following axon injury or nerve growth factor withdrawal (Goodwani et al., 2020; Hu et al., 2019; Larhammar et al., 2017; Le Pichon et al., 2017; Shin et al., 2019; Watkins et al., 2013). One recent study reported RiboTag profiling of the DLK-dependent gene network in axotomized spinal cord motor neurons (Asghari Adib et al., 2024). In agreement with the overall findings from these studies, we find that loss of DLK in hippocampal glutamatergic neurons results in modest expression changes in a small number of genes, while overexpression of DLK leads to expression changes in a larger set of genes. Gene ontology analysis of our hippocampal glutamatergic neuron translatome reveals a similar set of terms as found in the other expression studies, including neuron differentiation, apoptosis, ion transport, and synaptic regulation.
 
@@ -107,39 +187,518 @@ Comparison of the translational targets of DLK in our study with these prior ana
 
 Our analysis of the spatial expression patterns of genes that showed association with DLK expression levels provides molecular insight to the differential vulnerability of hippocampal glutamatergic neurons under neurodegenerative conditions. We find that a select set of genes enriched in CA1 are up-regulated in DLK knockout and down-regulated upon DLK overexpression. The c-Jun transcription factor has a key role in hippocampal cell death responses as mutations preventing c-Jun phosphorylation led to decreased neuronal apoptosis in the hippocampus following treatment with kainic acid (Behrens et al., 1999). Basal levels of c-Jun and phosphorylated c-Jun in hippocampus are generally low (Goodwani et al., 2020; Pozniak et al., 2013). We find modest reductions in p-c-Jun in DLK(cKO) glutamatergic neurons, consistent with previous studies of the constitutive knockout of DLK (Hirai et al., 2006). In contrast, in DLK(iOE) neurons, translation of c-Jun and phosphorylation of c-Jun are increased, with CA1 neurons exhibiting higher increase than CA3 neurons. The c-Jun promoter has consensus AP1 sites, and c-Jun can regulate its own expression levels in cancer cell lines (Angel et al., 1988), NGF-deprived sympathetic neurons (Eilers et al., 1998) and kainic acid treated hippocampus (Mielke et al., 1999). While our data does not pinpoint the molecular changes explaining why CA3 would show less vulnerability to increased DLK, we may speculate that DLK(iOE) induced signal transduction amplification may differ in CA1 vs CA3. CA1 genes appear to be more strongly regulated than CA3 genes, consistent with our observation that increased c-Jun expression in CA1 is greater than that in CA3. Other parallel molecular factors may also contribute to resilience of CA3 neurons to DLK(iOE), such as HSP70 chaperones, different JNK isoforms, and phosphatases, some of which showed differential expression in our RiboTag analysis of DLK(iOE) vs WT (Supplementary file 2 WT vs DLK(iOE) DEGs). Together with other genes that show dependency on DLK, the DLK and Jun regulatory network contributes to the regional differences in hippocampal neuronal vulnerability under pathological conditions.
 
-## Conserved functions of DLK in regulating Stathmins
+### Conserved functions of DLK in regulating Stathmins
 
 Stathmins are tubulin binding proteins broadly expressed in many types of neurons. Several studies have reported that DLK can regulate the expression of different Stathmin isoforms in multiple neuron types under injury conditions (Asghari Adib et al., 2024; DeVault et al., 2024; Hu et al., 2019; Larhammar et al., 2017; Le Pichon et al., 2017; Shin et al., 2019). In the hippocampus Stmn2 is expressed at a higher level than Stmn4, with the relative ratios of Stmn4:Stmn2 in hippocampus much higher than in DRGs (Zeisel et al., 2018). We find that DLK can modulate expression and translation of Stmn4 in hippocampal neurons. ChIP-seq data for Jun from ENCODE (ENCSR000ERO) suggest a possible binding site in the promoter region of Stmn4 (The ENCODE Project Consortium, 2012; Luo et al., 2020). STMN4 expression in hippocampus peaks around P8, correlating to neurite outgrowth and synapse formation and pruning (Paolicelli et al., 2011). At the level of hippocampal tissue, loss of DLK causes no detectable changes to microtubules, while increased levels of DLK appear to alter microtubule homeostasis in dendrites, with generally increased levels of both stable and dynamic microtubule markers. The CA1 neurons in DLK(iOE) also show fewer parallel microtubule arrays of apical dendrites, with short branches extending in varied directions. Our results from primary hippocampal neurons support roles for DLK in both short neurite and axon formation, similar to observations in cortical neurons, where DLK contributes to stage specific regulation of microtubules (Hirai et al., 2011). In primary cortical neurons overexpression of STMN4 can increase neurite length and branching when an epigenetic cofactor regulating MT dynamics was knocked down (Tapias et al., 2021). We speculate that DLK-dependent regulation of STMN4 and other STMNs may have a critical role in the long-term cytoskeletal rearrangements for neuronal morphology and synapse formation or stability. Nonetheless, as Stmns have considerable redundancy in expression and function, changes in STMN4 alone are unlikely to be a major factor for the observed hippocampal regional neuron death.
 
-## Conserved roles of DLK in synapse formation and maintenance
+### Conserved roles of DLK in synapse formation and maintenance
 
 The in vivo functions of the DLK family of proteins were first revealed in studies of synapse formation in C. elegans and Drosophila (Collins et al., 2006; Nakata et al., 2005). Our hippocampal glutamatergic neuron translatomic data extends this function by revealing a strong theme of DLK-dependent network in synapse organization, adhesion molecules and regulation of trans-synaptic signaling, especially related to AMPA receptor expression and calcium signaling, such as Neuronal Pentraxin 1 and Neuronal Pentraxin Receptor Nptx1 and Nptxr (Gómez de San José et al., 2022). From our synapse analysis in culture, we find increased DLK alters pattern of presynaptic protein Bassoon, consistent with the findings on C. elegans and Drosophila synapses (Nakata et al., 2005; Collins et al., 2006). We also find DLK regulates dendritic spine morphology, with loss of DLK associated with a greater number of spines with more mature spine morphology, while increased DLK was associated with fewer and less mature spines. These results are similar to that observed in layer 2/3 cortical neurons where loss of DLK is associated with larger dendritic spines in developing neurons and higher density of spines when exposed to Aβ plaques, which lead to loss of nearby spines (Le Pichon et al., 2017; Pozniak et al., 2013). In CA1 dendritic regions, DLK overexpression reduced Homer1 density, suggesting synaptic defects may correlate with the onset of degeneration. In axotomized spinal cord motor neurons DLK induces activation of complement, leading to microglial pruning of synapses in injured motoneurons (Asghari Adib et al., 2024). These data support a conserved role of DLK in synapse formation and maintenance, through regulating the translation of genes involved in neuron outgrowth, synaptic adhesion, and synapse activity.
 
-## Limitation of our study
+### Limitation of our study
 
 We have investigated roles of DLK in hippocampal glutamatergic neuron development, synapse regulation, and neuron death processes. We infer that DLK-dependent expression and translation of CA1 enriched genes may likely play roles in regional vulnerability to increased DLK signaling. However, our RiboTag profiling was performed with whole hippocampus at time when CA1 death was noticeable. Our analysis of spatial expression patterns of DLK-dependent genes relies on available data from adult animals, which may not reflect the patterns at P15, or in response to altered DLK. We cannot rule out that some of the decreased expression of CA1 enriched genes in DLK(iOE) could be secondary due to neuronal death that could result in fewer CA1 neurons present in our mRNA samples. Our analysis also does not directly address why CA3 neurons are less vulnerable to increased DLK expression. Future studies using cell-type specific RiboTag profiling and other methods at a refined time window will be required to address how DLK-dependent signaling interacts with other networks underlying hippocampal regional neuron vulnerability to pathological insults. While we find evidence for apoptosis, other forms of cell death may also occur. Additional experiments will be needed to elucidate in vivo roles of STMN4 and its interaction with other STMNs. It is worth noting that a systematic analysis of gene networks in neuron types selectively vulnerable to Alzheimer’s disease has suggested processes related to axon plasticity and synaptic vesicle transmission, particularly with relation to microtubule dynamics, may be involved in the neuronal vulnerability (Roussarie et al., 2020). Combining gene profiling of specific cell types in hippocampus with advanced technology in function dissection will continue to provide clarification to roles of DLK in the central nervous system under normal and pathological conditions.
 
 ## Materials and methods
 
-## Experimental mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Conditional DLK knockout: Map3k12fl/fl</td>
+      <td>PMID:33475086; 27511108; 35361703</td>
+      <td></td>
+      <td>housed in UCSD vivarium</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Inducible DLK overexpression: H11-DLK(iOE)</td>
+      <td>PMID:33475086</td>
+      <td></td>
+      <td>housed in UCSD vivarium</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Slc17a7Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain #023527;RRID:IMSR_JAX:023527</td>
+      <td>B6;129S-Slc17a7tm1.1(cre)Hze/J</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rpl22HA</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain #029977;RRID:IMSR_JAX:029977</td>
+      <td>B6J.129(Cg)-Rpl22tm1.1Psam/SjJ</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26tdT</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain #007914;RRID:IMSR_JAX:007914</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Map3k12 antibody</td>
+      <td>Genetex</td>
+      <td>GTX124127;RRID:AB_11170703</td>
+      <td>IF (1:250) tissue, (1:1000) cells, WB (1:1000); Lot #40653</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-p-c-Jun (Ser73) (D47G9) antibody</td>
+      <td>Cell signaling</td>
+      <td>3270;RRID:AB_2129575</td>
+      <td>IF (1:200) tissue, Lot #5</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFAP antibody</td>
+      <td>Dako</td>
+      <td>Z0334;RRID:AB_10013382</td>
+      <td>IF: (1:500); Lot #20049469</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-IBA1</td>
+      <td>Wako</td>
+      <td>019–19741;RRID:AB_839504</td>
+      <td>IF: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-HA High Affinity</td>
+      <td>Roche</td>
+      <td>11867423001;RRID:AB_390918</td>
+      <td>IP (5 ug); Lot #47877600</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-HA (C29F4)</td>
+      <td>Cell Signaling</td>
+      <td>3724;RRID:AB_1549585</td>
+      <td>WB (1:1000); Lot #8</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-NeuN</td>
+      <td>Millipore</td>
+      <td>MAB377;RRID:AB_2298772</td>
+      <td>IF (1:200); Lot #3104227/3808682</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Tubb3 (Tuj1)</td>
+      <td>Biolegend</td>
+      <td>801202;RRID:AB_2313773</td>
+      <td>IF (1:1000) tissue, (1:5000) cells; Lot #B249869</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Tubb3</td>
+      <td>Sigma-Aldrich</td>
+      <td>T2200;RRID:AB_262133</td>
+      <td>IF (1:500) cells; Lot #21190649</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Acetyl-Tubulin (6-11b-1)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T7451;RRID:AB_609894</td>
+      <td>IF (1:500) tissue, (1:3000) cells; WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Stmn4</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-376936</td>
+      <td>IF (1:250) cells; WB (1:50); Lot # E3012</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Stmn4</td>
+      <td>Proteintech</td>
+      <td>12027–1-AP;RRID:AB_2197401</td>
+      <td>IF (1:400) cells; WB (1:1000); Lot#00005750</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Stmn2</td>
+      <td>R&amp;D Systems</td>
+      <td>MAB6930;RRID:AB_10972937</td>
+      <td>IF (1:1000) cells; WB (0.4 ng/mL); Lot#CFIL052310A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Stmn2</td>
+      <td>Proteintech</td>
+      <td>10586–1-AP;RRID:AB_2197283</td>
+      <td>IF (1:400) cells; WB (1:2000); Lot#00124321</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Tyrosinated Tubulin (TUB1A2)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9028;RRID:AB_261811</td>
+      <td>IF (1:1000) tissue, (1:5000) cells; WB (1:1000); Lot #22181017</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Vglut1</td>
+      <td>Synaptic Systems</td>
+      <td>135 302;RRID:AB_887877</td>
+      <td>IF (1:1000) tissue; Lot #1–53</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-c-Jun (60 A8)</td>
+      <td>Cell Signaling</td>
+      <td>9165;RRID:AB_2130165</td>
+      <td>IF (1:200) tissue, (1:1000) cells; Lot #11</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Bassoon (SAP7F407)</td>
+      <td>Novus</td>
+      <td>NB120-13249;RRID:AB_788125</td>
+      <td>IF (1:500) tissue, cells; Lot #06082117</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-MAP2</td>
+      <td>Abcam</td>
+      <td>Ab5392;RRID:AB_2138153</td>
+      <td>IF (1:5,000) cells; Lot #1012833–1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti-beta actin</td>
+      <td>ABclonal</td>
+      <td>AC004;RRID:AB_2737399</td>
+      <td>WB (1:5000); Lot #3500100012</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Flag M2</td>
+      <td>Sigma-Aldrich</td>
+      <td>F1804;RRID:AB_262044</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Homer1</td>
+      <td>Synaptic systems</td>
+      <td>160–003;RRID:AB_887730</td>
+      <td>IF (1:500) tissue</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Satb2</td>
+      <td>Abcam</td>
+      <td>Ab51502;RRID:AB_882455</td>
+      <td>IF (1:500) cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Prox1</td>
+      <td>R&amp;D Systems</td>
+      <td>AF2727;RRID:AB_2170716</td>
+      <td>IF (4 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Map3k13</td>
+      <td>Sigma-Aldrich</td>
+      <td>HPA016497;RRID:AB_10670027</td>
+      <td>IF (1:200) tissue</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexafluor488 goat anti mouse IGG (H+L)</td>
+      <td>Invitrogen</td>
+      <td>A11001;RRID:AB_2534069</td>
+      <td>IF (1:500) tissue, (1:2000) cells; Lot #745480</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexafluor488 donkey anti mouse IGG (H+L)</td>
+      <td>Invitrogen</td>
+      <td>A21202;RRID:AB_141607</td>
+      <td>IF (1:500) tissue, (1:2000) cells; Lot #2266877</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexafluor647 goat anti rabbit IGG (H+L)</td>
+      <td>Invitrogen</td>
+      <td>A21245;RRID:AB_2535813</td>
+      <td>IF (1:500) tissue, (1:2000) cells; Lot #2299231</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexafluor488 donkey anti rabbit IGG (H+L)</td>
+      <td>Invitrogen</td>
+      <td>A21206;RRID:AB_2535792</td>
+      <td>IF (1:500) tissue, (1:2000) cells; Lot #2376850</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexafluor647 goat anti mouse IGG (H+L)</td>
+      <td>Invitrogen</td>
+      <td>A21236;RRID:AB_2535805</td>
+      <td>IF (1:500) tissue, (1:2000) cells; Lot #2300995</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 goat anti chicken IgG (H+L)</td>
+      <td>Invitrogen</td>
+      <td>A21449;RRID:AB_2535866</td>
+      <td>IF (1:2000) cells; Lot #2079903</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit: ECL Anti-Rabbit lgG, HRP</td>
+      <td>Cytiva</td>
+      <td>NA934V;RRID:AB_772206</td>
+      <td>WB (1:5000); Lot #17624274</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse: ECL Anti-mouse lgG, HRP</td>
+      <td>Cytiva</td>
+      <td>NXA931V;RRID:AB_772209</td>
+      <td>WB (1:5000); Lot #17675041</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Stabilized goat anti-rabbit HRP conjugated</td>
+      <td>Pierce</td>
+      <td>1858415</td>
+      <td>WB (1:5000); Lot # HE104909</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe MAP3K12-C2</td>
+      <td>ACD</td>
+      <td>ACD:458151 C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Slc17a7-C3</td>
+      <td>ACD</td>
+      <td>ACD:416631 C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Gfap-C2</td>
+      <td>ACD</td>
+      <td>ACD:313211 C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Stmn4</td>
+      <td>ACD</td>
+      <td>ACD:537541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DeadEnd Fluorometric TUNEL System</td>
+      <td>Promega</td>
+      <td>G3250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAeasy Minikit</td>
+      <td>Qiagen</td>
+      <td>74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superscript III First Strand Synthesis System</td>
+      <td>Invitrogen</td>
+      <td>18080051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iQ Sybr Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>1708880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kits</td>
+      <td>Thermo Scientific</td>
+      <td>23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Fluorescent Multiplex Reagent kit</td>
+      <td>ACD</td>
+      <td>320850</td>
+      <td>Amp 4 Alt A-FL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma-Aldrich</td>
+      <td>C4859</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Galaxy</td>
+      <td>PMID:29790989</td>
+      <td>RRID:SCR_006281</td>
+      <td>https://usegalaxy.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>Babraham Bioinformatics</td>
+      <td>RRID:SCR_014583</td>
+      <td>https://github.com/s-andrews/FastQC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR aligner</td>
+      <td>PMID:23104886</td>
+      <td>RRID:SCR_004463</td>
+      <td>https://github.com/alexdobin/STAR</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FeatureCounts</td>
+      <td>PMID:24227677</td>
+      <td>RRID:SCR_012919</td>
+      <td>https://subread.sourceforge.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>Posit</td>
+      <td>RRID:SCR_000432</td>
+      <td>https://posit.co/download/rstudio-desktop/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2</td>
+      <td>Wickham, 2016</td>
+      <td>RRID:SCR_014601</td>
+      <td>https://ggplot2.tidyverse.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID</td>
+      <td>PMID:19131956</td>
+      <td>RRID:SCR_001881</td>
+      <td>https://david.ncifcrf.gov/home.jsp</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rank Rank Hypergeometric Overlap</td>
+      <td>PMID:20660011</td>
+      <td>RRID:SCR_014024</td>
+      <td>https://systems.crump.ucla.edu/rankrank/rankranksimple.php</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SynGO</td>
+      <td>PMID:31171447</td>
+      <td>RRID:SCR_017330</td>
+      <td>https://www.syngoportal.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GSEA</td>
+      <td>PMID:16199517</td>
+      <td>RRID:SCR_003199</td>
+      <td>https://www.gsea-msigdb.org/gsea/index.jsp</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://imagej.net/software/fiji/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td>http://www.graphpad.com</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein G Dynabeads</td>
+      <td>Invitrogen</td>
+      <td>10003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>B27</td>
+      <td>Gibco</td>
+      <td>17504–044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNAse inhibitor, murine</td>
+      <td>New England Biolabs</td>
+      <td>M0314</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental mice
 
 All animal protocols were approved by the Animal Care and Use Committee of the University of California San Diego. Map3k12fl (Map3k12fl/fl) allele was made by Dr. Lawrence B. Holzman (Univ. Penn) and reported in Chen et al., 2016; Li et al., 2021; Saikia et al., 2022. Map3k12 (H11-DLK(iOE)) transgene was described in Li et al., 2021. Slc17a7Cre allele (JAX stock #023527) was described in Harris et al., 2014. RiboTag allele (JAX stock #029977) was described in Sanz et al., 2009. ROSA26-loxP-STOP-loxP-tdTomato fl/fl reporter line (JAX stock #007914) was constructed in Madisen et al., 2010. Standard mating procedure was followed to generate Slc17a7Cre/+;Map3k12fl/fl and Slc17a7 Cre/+;H11-DLK(iOE)/+ experimental mice. Genotyping primers are in Supplementary file 4. Sibling control mice had either Slc17a7Cre/+ or Map3k12fl/fl or H11-DLK(iOE)/+ allele alone. All experiments used both male and female mice. Slc17a7 Cre dependent tdTomato expression from H11-DLK(iOE) transgene was observed in most or all CA3, many CA1 neurons, with limited number of DG neurons at P15, similar to the described Slc17a7 Cre reporter line (Harris et al., 2014), and was throughout all regions by P60. Slc17a7 Cre/+;H11-DLK(iOE)/+ mice around 4 months of age developed noticeable progressive motor deficits, which were likely unrelated to hippocampal glutamatergic neuron death, and were not studied further.
 
-## Western blotting
+### Western blotting
 
 Isolated hippocampal tissue was lysed in ice-cold RIPA buffer (50 mM Tris/HCl pH 7.4, 150 mM NaCl, 0.5% DOC, 0.1% SDS, 1% NP-40 freshly supplemented with protease inhibitor cocktail and 1 mM PMSF). Tissues were homogenized by Dounce homogenization using 30 passes pestle A and 30 passes pestle B. Samples were spun down at 13,000 x g for 10 min at 4 C. Supernatants were collected, and protein concentration was determined using the BCA assay (Thermo Fisher Scientific, 23227). Equal concentration of proteins (~10–20 ng) were run on NuPAGE 4–12% Bis-Tris Gel, 1.0 mm (Invitrogen, NP0322BOX) with 20X NuPAGE MES SDS Running Buffer (Invitrogen, NP0002). Protein samples were transferred by wet transfer to a PVDF membrane (0.2 μm, Bio-RAD, 1620177) by Mini Trans-Blot Cell at 100 mA for 1 hr at 4 °C. Membranes were blocked in 5% skim milk in TBST for 1 hr at room temperature, and then incubated with primary antibody in 3% BSA or 5% skim milk in TBST at 4 °C overnight. Membranes were washed 3x10 min in TBST and incubated with 1:5000 of the appropriate HRP-conjugated secondary antibody in 3% BSA in TBST at room temperature for 1 hr, then washed 3x10 min in TBST. Bands were detected using enhanced chemiluminescence (ECL) reagents (GE Healthcare, RPN2106) or Pico PLUS Chemiluminescent Substrate (Thermo Fisher Scientific, 34580) using a Licor Odyssey XF Imager. Molecular weight markers were PageRuler Plus Prestained Protein Ladder (Thermo Fisher Scientific, 26619) or Precision Plus Protein Ladder (Bio-Rad, 1610374).
 
 Quantification of western blot images was performed by measuring identical size regions from each band, subtracting the background signal, and normalizing to internal actin controls for each sample. Time course analysis was further normalized to P1 WT protein levels. All images shown had N=3 biological replicates.
 
-## STMN2/STMN4 antibody specificity
+### STMN2/STMN4 antibody specificity
 
 Given their highly similar protein size and sequences, we wanted to evaluate STMN2 and STMN4 antibody specificity. We used two antibodies for each. STMN2 antibodies were a mouse monoclonal anti-STMN2 (R&D Systems, MAB6930) and a rabbit polyclonal anti-STMN2 (Proteintech, 10586–1-AP). STMN4 antibodies were a mouse monoclonal anti-STMN4 (Santa Cruz, Sc-376936) and a rabbit polyclonal anti-STMN4 (Proteintech, 12027–1-AP). We tested the specificity of STMN2 and STMN4 antibodies by co-staining for STMN2 and STMN4, or with two separate STMN2 or STMN4 antibodies. In each case, antibody signal overlapped in the cell soma, presumably at the Golgi, as well as larger puncta elsewhere, with some overlapping small puncta, and some non-overlapping small puncta (Figure 6—figure supplement 1A). Overlapping and non-overlapping signal was also visualized by plotting intensity of signal along the neurite. By western blot STMN2 and STMN4 were highly similar at the protein MW and levels, though the STMN4 antibodies tested detected a larger MW band specific to STMN4, suggesting some specificity. The STMN2 antibodies also occasionally recognized a smaller MW band only recognized with the Proteintech STMN4 antibody but not the Santa Cruz STMN4 antibody (Figure 6—figure supplement 1B). Furthermore, while STMN4 protein levels increased relative to β-actin in mice with increased DLK, STMN2 protein levels did not show significant increases. These different expression patterns validated some degree of specificity with these antibodies. Based on our analysis, the STMN4 Santa Cruz antibody (Sc-376936) may be more specific to STMN4 than the STMN4 Proteintech antibody (12027–1-AP) though it appears less sensitive. The STMN2 antibodies showed strongest overlap of puncta and similar MW proteins, thus we were unable to detect differences in specificity. Whether the antibodies may also detect some of the same isoforms is not clear without further analysis.
 
-## Immunofluorescence of hippocampal tissues
+### Immunofluorescence of hippocampal tissues
 
 Mice were transcardially perfused with saline solution followed by 4% PFA in PBS. Brains were dissected and post-fixed overnight in 4% PFA at 4 °C, then washed with PBS and transferred to 30% sucrose in PBS for at least three days. Brains were mounted coronally for cryosectioning in OCT Compound (Fisher HealthCare, 4585) on dry ice. Sections were cut to 25 µm thickness, divided evenly among six wells, and stored in PBS with 0.01% sodium azide at 4 °C until staining. For immunostaining, free floating sections were washed 3 times in 0.2% Triton X-100 in PBS, blocked for 1 hr at room temperature in 5% donkey serum in 0.4% Triton X-100 in PBS, then incubated with primary antibodies in 2% donkey serum in 0.4% Triton X-100 in PBS overnight at 4 °C rocking. Following three washes with 0.2% Triton in PBS, sections were incubated with secondary antibodies in 2% donkey serum in 0.4% Triton X-100 in PBS for 1 hr at room temperature. Sections were again washed three times with 0.2% Triton X-100 in PBS, stained with DAPI for 10 min (14.3 mM in PBS) and washed three times in PBS before mounting on glass slides using Prolong Diamond Antifade Mountant. TUNEL staining was performed using the DeadEnd Fluorometric TUNEL System (Promega, G3250) with a modified protocol as described previously (Li et al., 2021).
 
-## Immunoprecipitation and isolation of ribosome associated mRNA
+### Immunoprecipitation and isolation of ribosome associated mRNA
 
 Immunoprecipitation of HA-tagged ribosomes was conducted following the protocol described in Sanz et al., 2019. Briefly, hippocampi from both hemispheres were dissected in ice cold PBS from mice of desired genotypes at postnatal day 15, and were stored at –80 °C before further processing. Frozen tissues were homogenized by Dounce homogenization using 30 passes pestle A and 30 passes pestle B in 1.5 mL homogenization buffer (50 mM Tris, pH 7.5, 1% NP-40, 100 mM KCl, 12 mM MgCl2, 100 μg/mL cycloheximide, cOmplete EDTA-free protease inhibitor cocktail (Roche), 1 mg/mL heparin, 200 U/mL RNasin, 1 mM DTT). Following centrifugation at 10,000 x g for 10 min at 4 °C, 5 µg anti-HA high affinity (Roche) were added to the supernatant and incubated 4 hours rotating end-over-end at 4 °C. The entire antibody-lysate solution was added to 400 µl Protein G Dynabeads per sample overnight rotating end-over-end at 4 °C. High salt buffer was prepared (50 mM Tris, pH 7.5, 1% NP-40, 300 mM KCl, 12 mM MgCl2, 100 µg/mL cycloheximide, 0.5 mM DTT), and beads were washed 3x10 min using a magnetic tube rack. During the final wash, samples were transferred to a new tube, and beads were eluted in 350 µl of RLT buffer (from the Qiagen RNAeasy Minikit) supplemented with 1% β-mercaptoethanol. RNA was extracted following manufacturer’s instructions in the RNAeasy Minikit (QIAGEN). RNA integrity was measured using an Agilent TapeStation conducted at the IGM Genomics Center, University of California, San Diego, La Jolla, CA. All RNA for sequencing had RIN ≥8.0, 28 S/18S≥1.0.
 
@@ -147,39 +706,39 @@ To confirm immunoprecipitation in RiboTag IP samples, 10% of IP sample was isola
 
 To ensure appropriate depletion of transcripts from non-Slc17a7 expressing cells, we performed qRT-PCR analysis on representative marker genes for cell types in immunoprecipitated glutamatergic neuron RNA relative to whole hippocampal RNA. Briefly, RNAs isolated from whole hippocampi and immuoprecipitated from glutamatergic neurons were reverse transcribed to cDNA using Superscript III First Strand Synthesis System (Invitrogen, cat#18080051) following the manufacturer’s protocol. 100 ng RNA/sample was reverse transcribed with random hexamers. iQ Sybr Green Supermix (Bio-Rad, #1708880) was used for qPCR, and mRNA levels of marker genes (Slc17a7 (glutamatergic neurons), Wfs1 (CA1 neurons), Gfap (Astrocytes), and Vgat (inhibitory neurons)) were normalized to Gapdh expression. Expression levels of qRT-PCR samples were analyzed using the CFX Real-Time PCR Detection System and CFX Manager Software (Bio-Rad). Relative enrichment of marker genes was evaluated using the comparative CT method. All samples were run in triplicate. Primers for Gapdh, Slc17a7, Wfs1, Gfap, and Vgat are from Furlanis et al., 2019; Supplementary file 4.
 
-## Sequencing
+### Sequencing
 
 Library preparation and sequencing for ribosome associated mRNAs were performed by the UCSD IGM Genomics Center using Illumina Stranded mRNA Prep. Sequencing was performed on NovaSeq S4 with PE100 reads.
 
-## Read mapping
+### Read mapping
 
 Following paired end RNA sequencing of isolated RNA, >24 million reads per sample were obtained (n=3DLK(iOE)/3 WT, n=4 DLK(cKO)/4 WT). The Galaxy platform was used for read mapping and differential expression analysis (Afgan et al., 2018). Read quality was checked using FastQC (version 0.11.8). Reads were mapped to the mouse reference genome (mm10) using STAR galaxy version 2.6.0b-1 with default settings (Dobin et al., 2013). Four DLK(cKO) and controls included 2 male and 2 female. For DLK (iOE), one female sample was removed from each genotype control and DLK (iOE) due to read mapping variability/read quality, resulting in N=3 per genotype (2 male/1 female). Mapped reads were assigned to genes using featureCounts version 1.6.3 (Liao et al., 2014). High Pearson correlation (r>0.99) was observed between all Slc17a7Cre/+;Map3k12fl/fl;Rpl22HA/+ or Slc17a7Cre/+;H11-DLK(iOE)/+;Rpl22HA/+ samples and their respective littermate controls. Differential gene expression analysis was conducted using DESeq2 galaxy version 2.11.40.2 (Love et al., 2014) with genotype, sex, and batch included as factors in the analysis. Generation of volcano plots was performed in RStudio version 1.2.1335 using the ggplot2 package version 3.3.5 (Wickham, 2016). Heatmaps were generated using the heatmap.2 function on Galaxy (Galaxy version 3.0.1) using normalized gene counts with a log2 transformation and scaling by row.
 
-## Gene ontology
+### Gene ontology
 
 Gene ontology analysis was performed using DAVID 2021 version (Huang et al., 2009; Sherman et al., 2022) on genes found to be differentially expressed with <0.05. For gene ontology and pathway analysis, background gene lists were generated by removing any gene with a base mean from DEseq2 normalization less than 1. Gfap was removed from GO and pathway analysis as a differentially expressed gene as it likely reflected a small amount of contamination from non-Slc17a7-positive cells. DAVID analysis was performed using default thresholds, and Benjamini corrected p-values are reported. GO terms displayed in figures were chosen from top terms reaching significance related to biological processes or cellular components (BP5, CC4 or CC5) categories after filtering terms for semantic similarity. For SynGO analysis, mouse genes detected as differentially expressed were converted to human IDs using the ID conversion tool, and analysis was performed using the brain expressed background gene list provided by SynGO (Koopmans et al., 2019; Version/release 20210225).
 
-## Rank rank hypergeometric overlap (RRHO) analysis for correlation of gene expression patterns
+### Rank rank hypergeometric overlap (RRHO) analysis for correlation of gene expression patterns
 
 We used Rank Rank Hypergeometric overlap (https://systems.crump.ucla.edu/rankrank/rankranksimple.php) to compare DLK(iOE) and DLK(cKO) translatome datasets (Plaisier et al., 2010). Input gene lists included 12740 genes which were expressed across all samples. For each gene, the -Log10Padj was multiplied by the sign of the fold change to obtain the metric used for ranking. Both DLK(iOE) and DLK(cKO) datasets were ranked in order to have increasing DLK along the x and y axis. RRHO was run using a step size of 100 genes. The Benjamini-Yekutieli corrected graph is shown.
 
-## Hippocampal spatial expression analysis
+### Hippocampal spatial expression analysis
 
 Comparison with gene expression databases: False color expression images from the Allen Mouse Brain Atlas were used for evaluating expression pattern, and numbers were assigned based on color in dorsal hippocampus (Red = 3, Yellow = 2, Blue/Green = 1, No = 0). When intensity varied across sections or intensity was in-between two categories, preference was given to depicting general patterns of relative expression over absolute signal. When in situ data was not available, or expression patterns were unclear, we used additional transcriptomic data to assess spatial expression (Habib et al., 2016; Zeisel et al., 2018), and values were chosen to reflect relative expression. Generally, the following scale was used for Habib et al., 2016 data through the Single Cell Portal: 0 if next to no signal, 1 if expression in some cells, but average was still zero, 2 if quartile 3 value in violin plot is >0, 3 if higher average signal, again values were chosen to reflect relative expression. Genes were categorized as enriched in a region/s if one or two regions show higher values than another region. If two regions show different expression levels but are two levels above third region, the gene is considered as enriched in both (i.e. CA1=2, CA3=3, DG = 0, considered as CA1, CA3 enriched). If only one level above other regions, the gene is enriched only in the region with strongest expression (i.e. CA1=3, CA3=2, DG = 1, considered as CA1 enriched). Most expressed elsewhere in hippocampus used when the strongest expression is found in another region/cell type, and other descriptions do not explain where most of the signal is.
 
 Comparison with CamK2-RiboTag and Grik4-RiboTag data: Gene set enrichment analysis (GSEA) (4.2.2) (Subramanian et al., 2005) was performed on Slc17a7-RiboTag expression data after filtering lowly expressed genes using normalized counts. Analysis was conducted using the parameters: 1000 permutations, no collapse gene set, and permutation type gene set, with all other settings as default. To define gene sets for CA1 or CA3 enriched genes, we analyzed RiboTag datasets (Traunmüller et al., 2023; GSE209870) in wild type 6-week-old CA1 and CA3 neurons, from CamK2-cre and Grik4-cre mice, respectively. We compared the CamK2-RiboTag dataset and Grik4-RiboTag dataset to identify genes which were enriched in CA1 compared to CA3 or vice versa, applying an expression filter (average of at least 50 reads/animal) to ensure genes enriched in a particular region were expressed. The top 100 genes enriched in CamK2-RiboTag relative to Grik4-RiboTag were considered ‘CA1 genes’. The top 100 genes enriched in Grik4-RiboTag relative to CamK2-RiboTag were considered ‘CA3 genes’. 82 out of 100 GRIK4 (CA3) and 83 out of 100 CAMK2 (CA1) enriched genes were expressed in both our WT and DLK(cKO) samples (Supplementary file 3 CamK2 Grik4 enriched genes).
 
-## RNAscope analysis
+### RNAscope analysis
 
 The RNAscope Fluorescent Multiplex Reagent kit (Amp 4 Alt A-FL, Cat. #320850) (Wang et al., 2012) with probes from Advanced Cell Diagnostics were used. The protocol was carried out under RNase-free conditions and following the manufacturer’s instructions. Mice were anesthetized with isoflurane prior to decapitation. Brains were dissected immediately and flash frozen in OCT at –80 °C. Fresh-frozen tissue was cryosectioned coronally to 20 µm, collected on glass slides (Superfrost Plus), and stored at –80 °C. Slides were fixed with 4% paraformaldehyde, dehydrated with 50% ethanol, 70% ethanol, and 2 x washes in 100% ethanol for 5 min each at RT, followed by incubation in Protease IV reagent for 30 min at 40 °C. Hybridization with target probes was performed at 40 °C for 2 hr in a humidified slide box in an incubator followed by wash and amplification steps according to the manufacturer’s protocol. Finally, tissue was counterstained with DAPI, and mounted with Prolong diamond antifade mountant. All target probes were multiplexed with probes for Slc17a7 to label glutamatergic neurons.
 
-## Primary hippocampal neuron cultures and immunostaining
+### Primary hippocampal neuron cultures and immunostaining
 
 Prior to preparing cultures, Poly-D-Lysine (Corning, Cat#354210) was coated on 12 mm glass coverslips (0.2 mg/mL) or six-well plates (0.05 mg/ml) for 2 days at 37 °C. Neurons with indicated genotypes were labeled by tdTomato from Cre-dependent Rosa26-tdTomato generated from the following crosses: for control: Slc17a7Cre/+ X Rosa26tdT/+; for DLK(cKO): Slc17a7Cre/+;Map3k12fl/fl X Map3k12fl/fl;Rosa26tdT/+; for DLK(iOE): H11-DLK(iOE)/H11-DLK(iOE) X Slc17a7 Cre/+;Rosa26tdT/+. Primary neurons were generated from hippocampi of P1 pups. Mice were rapidly decapitated, then brains were removed, placed into ice cold HBSS (calcium- and magnesium-free) supplemented with 10 mM HEPES for removal of meninges and dissection of hippocampi (Kaech and Banker, 2006). Dissected hippocampi were dissociated in HBSS with HEPES in 0.25% trypsin for 15 min at 37 °C, and were then washed 3 times with 5 ml of 20% Fetal bovine serum in HBSS. Dissociated cells from a litter were pooled into the same culture. Cells were triturated in Opti-MEM supplemented with 20 mM glucose by five passes with an unpolished glass pipette and five to ten passes using a fire polished glass pipette. Cells were counted using a hemocytometer, and 60,000 cells were plated per coverslip into a 24-well plate or 300,000 per well of a six-well dish. Cultures were kept in an incubator at 37 °C with 5% CO2. After 4 hr, plating media was replaced with prewarmed Neurobasal Medium supplemented with glutamine, penicillin/streptomycin, and B27. Cells were fixed after 48 hr (DIV2) or on DIV14 with prewarmed 4% PFA/4% sucrose in PBS for 20 min at room temperature followed by three washes with PBS. Media were changed carefully to minimize impacts to growth cone morphology.
 
 Staining of fixed neurons was performed in 24-well plates. Coverslips were incubated in 50 mM ammonium chloride for 10 min, followed by three washes PBS, 5 min 0.1% Triton X-100 in PBS, and blocking in 30 mg/ml Bovine serum albumin (BSA) in 0.1% Triton in PBS for 30 min. Coverslips were incubated in primary antibody diluted in 30 mg/ml BSA in 0.1% Triton in PBS according to antibody table for 90 min at room temperature followed by four washes in 0.1% Triton in PBS. Secondary antibodies were diluted in 30 mg/ml BSA in 0.1% Triton in PBS with 1% donkey serum according to antibody table, and incubated for 60 min at room temperature. Finally, coverslips were washed three times in 0.2% Triton in PBS, stained with DAPI, washed three times with PBS, and mounted using Prolong Diamond Antifade Mountant. For an unknown reason, co-immunostaining of DLK and tyrosinated tubulin led to a pattern of DLK staining different from the punctate appearance of DLK observed in other conditions. The typical appearance of DLK could still be observed in cells with high levels of DLK. This altered appearance was not observed during co-immunostaining of DLK and acetylated tubulin.
 
-## Confocal imaging and quantification
+### Confocal imaging and quantification
 
 Fluorescent images were acquired using a Zeiss LSM800 confocal microscope using a 10x, 20x, or 63x objective. All tissue sections and neurons within the same experiment were imaged under identical conditions. For brain tissue, three sections per mouse were imaged with a minimum of three mice per genotype for data analysis. Dorsal hippocampal images were taken from approximately bregma –1.5 mm to –2.3 mm. For image analysis, the quantification was performed blind to genotype or in an automated manner when possible. All image processing and analysis was performed using Fiji distribution of ImageJ unless otherwise specified (Schindelin et al., 2012).
 
@@ -205,6 +764,6 @@ Bassoon puncta in cell culture were quantified from 20 µm stretches of neurites
 
 Dendritic spines were quantified from a 20 µm countable and representative stretch of dendrite within 75 µm of the neuron soma from one of the three largest dendrites. Spine density was counted using tdTomato signal, and calculated by counting total dendritic spines divided by the traced length of dendrite. Spines were manually categorized following measurements in Risher et al., 2014. Filopodia (>2 µm) are not included in spine density counts. Spines were quantified from independent cultures per genotype with 8–16 neurons per culture.
 
-## Stastical analysis
+### Stastical analysis
 
 All statistical analysis shown in graphs was performed using GraphPad Prism 9.4.0. Points represent individual values, with bars reflecting mean values, and error bars plotting standard error of the mean (SEM).

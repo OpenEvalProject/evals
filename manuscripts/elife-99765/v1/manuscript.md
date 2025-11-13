@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00bvhmc43 Kinases, Protein Phosphorylation and Cancer Group, Structural Biology Programme, Spanish National Cancer Research Centre (CNIO) Madrid Spain
+1. Kinases, Protein Phosphorylation and Cancer Group, Structural Biology Programme, Spanish National Cancer Research Centre (CNIO) Madrid Spain ([ROR:00bvhmc43](https://ror.org/00bvhmc43))
 
 † Corresponding author
 

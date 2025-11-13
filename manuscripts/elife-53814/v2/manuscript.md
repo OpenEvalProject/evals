@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Mutations in the transcription factor FOXC2 are predominately associated with lymphedema. Herein, we demonstrate a key role for related factor FOXC1, in addition to FOXC2, in regulating cytoskeletal activity in lymphatic valves. FOXC1 is induced by laminar, but not oscillatory, shear and inducible, endothelial-specific deletion impaired postnatal lymphatic valve maturation in mice. However, deletion of Foxc2 induced valve degeneration, which is exacerbated in Foxc1; Foxc2 mutants. FOXC1 knockdown (KD) in human lymphatic endothelial cells increased focal adhesions and actin stress fibers whereas FOXC2 -KD increased focal adherens and disrupted cell junctions, mediated by increased ROCK activation. ROCK inhibition rescued cytoskeletal or junctional integrity changes induced by inactivation of FOXC1 and FOXC2 invitro and vivo respectively, but only ameliorated valve degeneration in Foxc2 mutants. These results identify both FOXC1 and FOXC2 as mediators of mechanotransduction in the postnatal lymphatic vasculature and posit cytoskeletal signaling as a therapeutic target in lymphatic pathologies.
+Mutations in the transcription factor FOXC2 are predominately associated with lymphedema. Herein, we demonstrate a key role for related factor FOXC1, in addition to FOXC2, in regulating cytoskeletal activity in lymphatic valves. FOXC1 is induced by laminar, but not oscillatory, shear and inducible, endothelial-specific deletion impaired postnatal lymphatic valve maturation in mice. However, deletion of Foxc2 induced valve degeneration, which is exacerbated in Foxc1; Foxc2 mutants. FOXC1 knockdown (KD) in human lymphatic endothelial cells increased focal adhesions and actin stress fibers whereas FOXC2-KD increased focal adherens and disrupted cell junctions, mediated by increased ROCK activation. ROCK inhibition rescued cytoskeletal or junctional integrity changes induced by inactivation of FOXC1 and FOXC2 invitro and vivo respectively, but only ameliorated valve degeneration in Foxc2 mutants. These results identify both FOXC1 and FOXC2 as mediators of mechanotransduction in the postnatal lymphatic vasculature and posit cytoskeletal signaling as a therapeutic target in lymphatic pathologies.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ Here, we report an essential role for FOXC1 during lymphatic valve maturation an
 
 ## Results
 
-## FOXC1 and FOXC2 are required for postnatal lymphatic valve maturation and maintenance
+### FOXC1 and FOXC2 are required for postnatal lymphatic valve maturation and maintenance
 
 Our group previously reported that FOXC1 and FOXC2 expression co-localizes with PROX1 in lymphatic valve-forming cells at E17 and later at P3 (Fatima et al., 2016). However, the expression pattern of FOXC1 in the mesenteric lymphatic collecting vessels and valves in adult mice remains unknown. We first characterized the expression pattern of FOXC1 and FOXC2 in mature valves of 4 week old adult mice to delineate possible differential or cooperative roles during valve maturation and maintenance. Immunostaining of mesentery tissue with FOXC1, FOXC2, and VEGFR3 antibodies identified colocalization of FOXC1 and FOXC2 within the nuclei of intraluminal valve leaflets while FOXC2 expression was more highly enriched in the valve sinuses and surrounding lymphangion compared to FOXC1 (Figure 1). Of note, FOXC1 expression was most highly enriched in cells located at the leading free-edge (Bazigou et al., 2009; Danussi et al., 2013; Bazigou and Makinen, 2013; Sabine et al., 2018) of the intraluminal side of valve leaflets exposed to pulsatile laminar shear stress (LSS) forces during valve opening/closure cycles (Sabine et al., 2016).
 
@@ -42,25 +42,77 @@ Our group previously reported that FOXC1 and FOXC2 expression co-localizes with 
 
 Previous work from our group has demonstrated the critical role for FOXC2 in postnatal lymphatic vascular function (Sabine et al., 2015) and we have also shown that EC-specific deletion of Foxc1 during murine embryonic development impairs lymphatic valve maturation (Fatima et al., 2016). However, the temporal regulatory role of FOXC1 transcriptional activity during valve development, maturation, and maintenance is not well understood. To investigate FOXC1 function in the early postnatal lymphatic vasculature and valve regions, we crossed conditional null Foxc1fl mice (Sasman et al., 2012) with Chd5-CreERT2 mice (Sörensen et al., 2009) to generate tamoxifen-inducible, EC-specific Foxc1 mutant (EC-Foxc1-KO) mice. Tamoxifen was administered from P1-P5 to induce Cre-mediated recombination and we confirmed deletion of Foxc1 via qPCR analysis of isolated CD31-positive cells from hearts of P6 individuals and by immunostaining of the mesenteric lymphatic vasculature with antibodies against FOXC1, FOXC2, and VEGFR-3 (Figure 2—figure supplement 1a,d,e). We next investigated whether lymphatic valve maturation and maintenance was affected in collecting vessels after induction of Cre-mediated recombination postnatally (Figure 2a–f,u,v). Quantification of regions with PROX1-high expression within lymphatic collecting vessels, indicative of valves, showed there was not a significant difference in total valve number in mice with inactivated Foxc1 compared to littermate controls at P6 (Figure 2u). As VE-Cadherin, coded by the Cdh5 gene, is also expressed in the blood vasculature, we immunostained the mesenteric vasculature with CD31 antibody and found no obvious changes associated with loss of Foxc1 (Figure 2a,b). Using EC-specific Foxc1 mutant mice generated from the Tek-Cre strain, our group previously reported that the proportion of lymphatic valves that had formed mature, v-shaped or semilunar bi-leaflet structures at P7 was significantly reduced in EC-specific Foxc1 mutant mice compared to littermate controls (Fatima et al., 2016). To investigate whether this result was recapitulated using the inducible Cdh5-Cre strain, we also performed immunostaining of mesentery tissue for expression of a marker of valve maturation, α9-integrin, which is a receptor that interacts with its extracellular matrix (ECM) protein ligand fibronectin-EIIIA to regulate the formation of the ECM core of valve leaflets (Bazigou et al., 2009) in addition to PROX1/CD31 immunostaining (Figure 2c – f). Quantification of the proportion of lymphatic valves that had formed mature, v-shaped or semilunar bi-leaflet structures showed a significant reduction in EC-Foxc1-KO mice (Figure 2v), thus recapitulating our previously reported results using the Tek-Cre strain. To verify that the phenotype we observed was not mediated by inactivation of Foxc1 within the blood vasculature, we next crossed conditional null Foxc1fl mice with Prox1-CreERT2 mice (Srinivasan et al., 2007) to generate inducible LEC-specific Foxc1 mutant (LEC-Foxc1-KO) mice and administered tamoxifen postnatally. PROX1 immunostaining showed no significant differences in total valve number of LEC-Foxc1-KO mice (Figure 2—figure supplement 2a,b,e). Additionally, immunostaining of PROX1 and FOXC1 showed enrichment of FOXC1 expression in intraluminal valve leaflets of littermate control mice (Figure 2—figure supplement 2c) whereas mature lymphatic valves were still observed in LEC-Foxc1-KO mice with reduced FOXC1 expression (Figure 2—figure supplement 2d). However, quantification of mature lymphatic valve structures demonstrated that LEC-Foxc1-KO mice had significantly less mature valves (Figure 2—figure supplement 2f), recapitulating the phenotype observed utilizing the Cdh5-CreERT2 strain (Figure 2). While similar phenotypes were observed between both Cdh5-CreERT2- and Tek-Cre- Foxc1 mutants, these data demonstrate that FOXC1 function is maintained during postnatal lymphatic valve maturation and maintenance as Tek-Cre is expressed embryonically as early as E7.5 (Braren et al., 2006).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig2-v2.jpg)
+
+**Figure 2.:** (a, b, g, h, m, n) Representative images of PROX1 and CD31 immunostained lymphatic collecting vessels in P6 littermate control (a, g, m) and EC-Foxc1-KO (b), EC-Foxc2-KO (h), and EC-Foxc1; Foxc2-DKO (n) individuals. White arrowheads denote PROX1-high valves. Scale bars are 500 μm. (c – f, i – l) Representative images of mature and immature lymphatic valves immunostained with PROX1 and CD31 or α9-integrin and VE-Cadherin in P6 littermate control (c, d, i, j) and EC-Foxc1-KO (e, f) or EC-Foxc2-KO individuals (k, l). Pink inserts denote single channel α9-integrin (white) images. Blue arrowhead denotes VE-Caderhin-positive intraluminal valve leaflet with markedly reduced α9-integrin expression in l. Scale bars are 25 μm. (o, p) Appearance of chylous ascites in the peritoneal cavity of a P6 EC-Foxc1; Foxc2-DKO mouse (p) compared to littermate control (o). Blue arrow heads indicate chylous effusion; scale bar equals 1 mm. (q – t) Representative images of PROX1 immunostained lymphatic collecting vessels in P6 littermate control (q, s) and EC-Foxc2-KO (r) or EC-Foxc1; Foxc2-DKO (t) individuals show degeneration of lymphatic valves in Foxc2 mutants and regression of collecting vessels into a primitive lymphatic architecture in EC-specific Foxc1 and Foxc2 mutants. Pink arrowheads denote degenerating PROX1-high expressing valve regions. Yellow arrowheads highlight looping and interconnections between branches of collecting vessels. Scale bar is equal to 200 μm. (u) Quantification of total lymphatic valve number (identified by PROX1-high expression) in lymphatic collecting vessels of P6 Control and EC-Foxc1-KO individuals. N = 7 for Control and N = 7 for EC-Foxc1-KO individuals, four collecting vessels analyzed per individual. (v) Percentage of mature and immature lymphatic valves normalized to total valves counted in P6 Control and EC-Foxc1-KO individuals. (w) Quantification of total lymphatic valve number in lymphatic collecting vessels of P6 Control and EC-Foxc2-KO individuals. N = 9 for Control and N = 9 for EC-Foxc2-KO individuals, four collecting vessels analyzed per individual. (x) Percentage of mature and immature lymphatic valves normalized to total valves counted in P6 Control and EC-Foxc2-KO individuals. (y) Quantification of total lymphatic valve number in lymphatic collecting vessels of P6 Control and EC-Foxc1; Foxc2-DKO individuals. N = 6 for Control and N = 6 for EC-Foxc1; Foxc2-DKO individuals, four collecting vessels analyzed per control individual and all lymphatic collecting vessels assessed per mutant individual. Data are presented as mean (± SD) and analyzed using Student’s t-test. NS denotes no significance. ** denotes p<0.01. *** denotes p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** qPCR analysis was performed on RNA extracted from CD31+ cardiac cells of P6 EC-Foxc1-KO (a), EC-Foxc2-KO (b), and EC-Foxc1; Foxc2-DKO (c) individuals and littermate controls. Data are shown as mean relative expression (± SD) normalized to WT littermate controls and analyzed using Student’s t-test. N = 11 for Foxc1 Control and N = 12 for EC-Foxc1-KO individuals, N = 14 for Foxc2 Control and N = 14 for EC-Foxc2-KO individuals, N = 12 for Foxc1; Foxc2 Control and N = 11 for EC-Foxc1; Foxc2-DKO individuals. *** denotes p<0.001. NS denotes no significance. (d – i) Representative images of FOXC1, FOXC2, and VEGFR-3 immunostained lymphatic collecting vessels from P6 littermate control (d, f, h) and EC-Foxc1-KO (e), EC-Foxc2-KO (g), and EC-Foxc1; Foxc2-DKO (i) individuals. a, arterioles covered by FOXC1-positive smooth muscle cells. Scale bars are 25 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a, b) Representative images of PROX1 and CD31 immunostained lymphatic collecting vessels in P6 Control (a) and LEC-Foxc1-KO (b) individuals administered 100 μg of Tamoxifen from P1-5. Scale bars are 500 μm. (c, d) Representative images of PROX1 and FOXC1 immunostained lymphatic collecting vessels in P6 Control (c) and LEC-Foxc1-KO (d) individuals administered 100 μg of Tamoxifen from P1-5. Scale bars are 20 μm. (e) Quantification of total lymphatic valve number in lymphatic collecting vessels of P6 Control and LEC-Foxc1-KO individuals. N = 7 for Control and N = 8 for LEC-Foxc1-KO individuals, four collecting vessels analyzed per individual. (f) Percentage of mature and immature lymphatic valves normalized to total valves counted in P6 Control and LEC-Foxc1-KO individuals. Data are presented as mean (± SD) and analyzed using Student’s t-test. *** denotes p<0.001. NS denotes no significance.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Representative, low and high-power images of P6 mesenteries immunostained with antibodies targeted towards α9-integrin and VE-Cadherin in Foxc2 Control (a, e), EC-Foxc2-KO (b, f), Foxc1; Foxc2 Control (c, g), and EC-Foxc1; Foxc2-DKO (d, h) individuals respectively. Yellow arrowheads highlight α9-integrin- positive lymphatic valves. Red arrowheads highlight α9-integrin- positive regressing lymphatic valves in Foxc2 mutants. Blue arrowheads denote lymphatic collecting vessels absent of α9-integrin positive valve expression in compound Foxc1; Foxc2 mutants. Scale bars are 200 µm in panels a – d and 25 μm in panels e – h.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a – d) Representative images of lymphatic collecting vessels immunostained with antibodies targeted to PROX1 and VE-Cadherin in a P6 EC-Foxc2-KO (b) and littermate control (a), and EC-Foxc1; Foxc2-DKO (d) and littermate control (c) individuals respectively. Scale bars are 25 μm. (e – h) Representative images of VE-Cadherin immunostaining in magnified fields denoted by boxed regions in (a – d) show discontinuous cell-cell junctions (blue arrowheads) observed in both EC-Foxc2-KO and EC-Foxc1; Foxc2-DKO mice and the presence of overlapping cell junctions (pink arrowheads) upon combined inactivation of Foxc1 and Foxc2 (h). (i, j) Representative images of PROX1 and cleaved caspase-3 antibody immunostained lymphatic collecting vessels from P6 littermate control (i), and EC-Foxc1; Foxc2-DKO (j) individuals. Boxed regions denote corresponding magnified z-section images from confocal maximum intensity projections represented in i) and j). Scale bars are 100 μm. (k) Quantitative analysis of the percentage of PROX1/cleaved caspase 3-positive LECs in 20X high-powered fields from mesentery collecting vessels of P6 Foxc1; Foxc2 Control and EC-Foxc1; Foxc2-DKO individuals. N = 27 fields from six individuals for Foxc1; Foxc2 Control and N = 34 fields from seven individuals for EC-Foxc1; Foxc2-DKO individuals. Data are presented as mean (± SD) and analyzed using Student’s t-test. **** denotes p<0.0001.
+
 Previously, our group reported inducible LEC-specific deletion of Foxc2 via Prox1-CreERT2 (Bazigou et al., 2011) at P4 was shown to significantly reduce total valve number in mesenteric lymphatic collecting vessels and a subset of Foxc2 mutants presented chylous ascites and chylothorax beginning as early as 3 days after tamoxifen treatment with eventual fully penetrant mortality (Sabine et al., 2015). To compare the roles of FOXC1 and FOXC2 in our model, we crossed Cdh5-CreERT2 mice with conditional null Foxc2fl mice to generate EC-specific Foxc2 mutant (EC-Foxc2-KO) mice and administered tamoxifen from P1-P5 with inactivation confirmed by qPCR in ECs isolated from P6 hearts and by immunostaining of the mesenteric lymphatic vasculature with antibodies against FOXC1, FOXC2, and VEGFR-3 (Figure 2—figure supplement 1b,f,g). Interestingly, while FOXC2 was strongly reduced in collecting vessels of EC-Foxc2-KO mice, we also observed a reduction in FOXC1 expression in collecting vessels, and particularly valve regions, compared to littermate controls (Figure 2—figure supplement 1f and g). Although chylous effusion was occasionally observed in mutant individuals at P6 (4/30; 13%), inactivation of Foxc2 beginning at P1 significantly reduced the total number of valves in mesenteric lymphatic collecting vessels (Figure 2g – l, q, r, w, x). However, no obvious changes were observed in the mesenteric blood vasculature of Foxc2 mutants by CD31 immunostaining (Figure 2g,h). Quantitative analysis also determined that the percentage of the total lymphatic valves with mature, intraluminal bi-leaflet structures was significantly reduced with inactivation of Foxc2 and many valve regions were characterized by collecting vessel constriction, indicative of regression of these structures (Figure 2i – l, x). Several of these valve regions were characterized by intraluminal leaflets shortened in length compared to littermate controls, yet a majority of valve regions were characterized by near complete degeneration of intraluminal valves (Figure 2i – l), similar to our group’s observations previously reported in LEC-Foxc2-KO mice (Sabine et al., 2015). Moreover, expression of α9−integrin was reduced in EC-Foxc2-KO mice compared to littermate controls (Figure 2j – l), indicating that the phenotype observed in EC-Foxc2-KO mice is also associated with impaired valve maturation processes. Thus, our results using a different endothelial-specific Cre strain further support the previously reported role for FOXC2 in postnatal lymphatic vascular function and highlight a more prominent role than FOXC1 in valve maintenance.
 
 Our group previously reported overlapping expression patterns of Foxc1 and Foxc2 in the embryonic murine cardiovascular system and key, cooperative functional roles during embryonic lymphangiogenesis (Kume et al., 1998; Winnier et al., 1999; Kume et al., 2001; Seo et al., 2006; Fatima et al., 2016). To assess the requirement and potential cooperative role of both transcription factors in postnatal lymphatic vascular function, we crossed conditional null Foxc1fl; Foxc2fl mice (Sasman et al., 2012) with Cdh5-CreERT2 mice to generate EC-specific Foxc1; Foxc2 mutant (EC-Foxc1; Foxc2-DKO) mice and administered tamoxifen from P1 to P5 with inactivation in compound mutant individuals verified by qPCR and immunostaining of the mesenteric lymphatic vasculature with antibodies against FOXC1, FOXC2, and VEGFR-3 (Figure 2—figure supplement 1c,h,i). At P6, a majority of compound EC-Foxc1; Foxc2 mutant mice (48/78, 61.5%) developed severe chylous ascites (Figure 2o,p) and chylothorax (data not shown). PROX1 immunostaining showed that PROX1-high expressing valve regions were nearly absent in compound mutants whereas CD31 immunostaining determined that the blood vasculature appeared normal (Figure 2m,n,y). Compared to littermate controls, lymphatic collecting vessel hierarchy of EC-Foxc1; Foxc2-DKO mutants was markedly abnormal, characterized by high numbers of interconnecting and inter-looping branches resembling a primitive lymphatic vascular plexus prior to valve differentiation, maturation, and remodeling (Figure 2s,t). Furthermore, direct comparison of lymphatic collecting vessel hierarchy of EC-Foxc1; Foxc2-DKO mice with EC-Foxc2-KO mice shows that combined deletion of Foxc1 and Foxc2 results in a synergistic response (Figure 2q–t). Our group previously reported that ectopic sprouting from degenerating valves was observed in LEC-Foxc2 mutant mice (Sabine et al., 2015), thus the markedly abnormal branching pattern observed in EC-Foxc1; Foxc2-DKO mice is likely a result of accelerated valve regression and ectopic sprouting from these regions to compensate drainage from areas of perturbed flow due to the near complete regression of valves. To verify that Foxc1 and Foxc2 inactivation did not simply reduce PROX1 expression in valve regions, we performed additional immunostaining of mesentery tissue for α9-integrin expression. Modest α9-integrin expression was detected in regressing valve leaflets of EC-specific Foxc2 mutants (Figure 2—figure supplement 3a,b,e,f), however expression was absent in collecting vessel branches of EC-Foxc1; Foxc2-KO mutant where valves are typically present (Figure 2—figure supplement 3c,d,g,h). Collectively, we demonstrate that both FOXC1 and FOXC2 are required for postnatal lymphatic vascular function. FOXC2 has a predominant role in maintaining LEC valve identity, however FOXC1 functions in a cooperative manner with FOXC2 to refine valve maturation processes.
 
-## Cell elongation and junctional integrity is markedly impaired in compound EC-specific Foxc1; Foxc2 mutants and is accompanied by increased apoptosis throughout lymphatic collecting vessels
+### Cell elongation and junctional integrity is markedly impaired in compound EC-specific Foxc1; Foxc2 mutants and is accompanied by increased apoptosis throughout lymphatic collecting vessels
 
 Collecting vessels of LEC-specific Foxc2 mutants were previously characterized by the presence of rounded LECs with discontinuous, ‘zig-zag’ like junctions as opposed to elongated cells with linear, ‘zipper-like’ junctions aligned with flow. Furthermore, increased apoptosis and inappropriate LEC proliferation was detected in degenerating valve LECs of Foxc2 mutants, which was associated with abnormal activation of TAZ signaling and impaired regulation of LEC quiescence and survival (Sabine et al., 2015). Linearized LEC junctions in collecting vessels help to minimize loss of lymph during its transport (Baluk et al., 2007) and disruption of LEC barrier integrity in LEC-Foxc2-KO mice contributed to leakage of lymph and the development of chylous ascites and chylothorax (Sabine et al., 2015). To first determine how inactivation of both Foxc1 and Foxc2 affects collecting vessel LEC junctional integrity, we immunostained mesenteric lymphatic vessels for PROX1 and VE-Cadherin expression (Figure 2—figure supplement 4a–h and Videos 1–4). As previously reported, LECs in wild-type mice were elongated, organized and aligned with the direction of flow, and had continuous cell-cell junctions (Figure 2—figure supplement 4a,c,e,g, Video 1, and Video 3) whereas EC-specific inactivation of Foxc2 resulted in a more rounded shape with disrupted endothelial junctions (Figure 2—figure supplement 4b,f, and Video 2). However, inactivation of both Foxc1 and Foxc2 severely impaired LEC organization as cells appeared more spherical in shape and were poorly elongated in alignment with flow (Figure 2—figure supplement 4d,h, and Video 4). Surprisingly, we not only observed the presence of discontinuous cell-cell junctions in compound Foxc1; Foxc2 mutant mice, but the distribution of VE-Cadherin at cell junctions was broader compared to littermate controls and Foxc2 mutants (Figure 2—figure supplement 4e – h, and Video 4), indicative of an increase in overlapping cell junctions. Because the presence of increased overlapping cell-cell junctions was observed in compound Foxc1; Foxc2 mutant mice, but not Foxc2 mutants, this suggests a separate role for FOXC1 and FOXC2 in regulation of LEC intercellular junctions.
+
+![Video 1.](https://cdn.elifesciences.org/articles/53814/elife-53814-video1.mp4.jpg)
+
+**Video 1.:** Three-dimensional reconstruction of a P6 Foxc2fl/fl control mouse administered tamoxifen from P1-P5, using Imaris ‘Surpass’ function. Mesenteric collecting vessels were immunostained with antibodies against VE-Cadherin (green).
+
+![Video 2.](https://cdn.elifesciences.org/articles/53814/elife-53814-video2.mp4.jpg)
+
+**Video 2.:** Three-dimensional reconstruction of a P6 EC-Foxc2-KO mouse administered tamoxifen from P1-P5, using Imaris ‘Surpass’ function. Mesenteric collecting vessels were immunostained with antibodies against VE-Cadherin (green). Blue arrows denote regions of discontinuous cell-cell junctions.
+
+![Video 3.](https://cdn.elifesciences.org/articles/53814/elife-53814-video3.mp4.jpg)
+
+**Video 3.:** Three-dimensional reconstruction of a P6 Foxc1fl/fl; Foxc2fl/fl control mouse administered tamoxifen from P1-P5, using Imaris ‘Surpass’ function. Mesenteric collecting vessels were immunostained with antibodies against VE-Cadherin (green).
+
+![Video 4.](https://cdn.elifesciences.org/articles/53814/elife-53814-video4.mp4.jpg)
+
+**Video 4.:** Three-dimensional reconstruction of a P6 EC-Foxc1; Foxc2-KO mouse administered tamoxifen from P1-P5, using Imaris ‘Surpass’ function. Mesenteric collecting vessels were immunostained with antibodies against VE-Cadherin (green). Blue arrows denote regions of discontinuous cell-cell junctions. Pink arrows denote regions of overlapping cell-cell junctions.
 
 Our group previously reported that active caspase 3-positive LECs were detected only in minor instances throughout collecting vessels of control mice, whereas apoptosis in LEC-specific Foxc2 mutants was more frequently detected and limited to degenerating valves (Sabine et al., 2015). To next investigate the extent and severity of apoptosis in EC-Foxc1; Foxc2-DKO mice, we additionally performed immunostaining of mesentery tissue with PROX1 and active caspase-3 antibodies. In contrast to what was previously reported in LEC-Foxc2-KO mice, a significantly greater number of apoptotic cell bodies were detected throughout the lymphatic collecting vessels of EC-Foxc1; Foxc2-DKO mice compared to littermate controls (Figure 2—figure supplement 4i–k). Of note, apoptotic bodies were more frequently observed in closer proximity to branched regions of the lymphatic collecting vessels (Figure 2—figure supplement 4j) potentially indicating areas of valve degeneration.
 
 Together, these data indicate that FOXC1 and FOXC2 have a complementary role in regulating lymphatic collecting vessel function as both transcription factors are required to maintain valve and LEC barrier integrity to properly transport lymph and limit leakage.
 
-## FOXC1 expression is induced by unidirectional laminar shear stress, but not by reciprocating shear stress, on the contrary to FOXC2
+### FOXC1 expression is induced by unidirectional laminar shear stress, but not by reciprocating shear stress, on the contrary to FOXC2
 
 Embryonic lymphatic valve formation in mouse embryos is initiated at the time of active lymphatic drainage (Sabine et al., 2012) and valves are primarily found at sites of vessel branching points and bifurcations where perturbed lymph flow is present (Kampmeier, 1928; Sabine et al., 2012). In vitro, OSS forces acting on LECs upregulate the expression of FOXC2 and GATA2 as well as induce the activation of NFATc1 (Kazenwadel et al., 2015; Sweet et al., 2015; Sabine et al., 2012; Sabine et al., 2015). In cultured human arterial ECs, exposure to LSS forces induced expression of both FOXC1 and FOXC2 (Chen et al., 2017). Furthermore, in vivo models of reduced shear stress in the blood vasculature of zebrafish showed reduced expression of foxc1a and foxc1b (orthologs of mammalian FOXC1 and FOXC2, respectively) compared to controls (Chen et al., 2017). To investigate how different shear stress stimuli affect FOXC1 and FOXC2 expression in LECs, we examined cells cultured under static, laminar, or oscillatory flow conditions. As previously observed, OSS strongly increased the expression of FOXC2 and the formation of overlapping cell-cell junctions (Sabine et al., 2012; Sabine et al., 2015). However, FOXC1 expression was slightly reduced compared to cells cultured under static conditions. In contrast, LSS upregulated both FOXC1 and FOXC2 expression as cells became aligned with unidirectional laminar flow (Figure 3). No correlation was observed between FOXC1 and FOXC2 expression under different shear stress conditions (Figure 3—figure supplement 1a–c). Therefore, mechanical stress induced by flow differentially regulates LEC FOXC1 and FOXC2 expression (Figure 3c). Thus, our in vitro data support our in vivo observations of differences in FOXC1 and FOXC2 expression pattern observed in valves due to exposure to both disturbed flow in valve sinuses and pulsatile laminar flow on the intraluminal side of leaflets, likely contributing to high expression of both FOXC1 and FOXC2 in cells located at the free edge of valve leaflets (Figure 1). Furthermore, the reduction of FOXC1 expression observed in collecting vessels of EC-Foxc2-KO mice in vivo (Figure 2—figure supplement 1g) is likely attributable to reduced flow as a result of perturbed barrier integrity and increased leakiness from lymphatic collecting vessels.
 
-## FOXC1 regulates actin cytoskeletal organization and cell-matrix adhesion
+![Figure 3.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig3-v2.jpg)
+
+**Figure 3.:** (a) Representative images of cultured LECs under static, OSS, or LSS show increased expression of FOXC1 when subjected to 24 hr to LSS, whereas FOXC2 is induced by both OSS and LSS. Immunostaining for β-catenin (red), FOXC1 (white, top panels), and FOXC2 (white, bottom panels). Nuclei are outlined with dashed blue lines. Arrowheads denote cells with strong nuclear expression of FOXC1 or FOXC2. Scale bars are 10 μm. (b) Corresponding quantification of FOXC1 or FOXC2 nuclear intensity per cell (100–200 cells were quantified per condition). Data are presented as violin plots with median values indicated by solid lines and are representative of 3 independent experiments. P-values were obtained using mixed-effects analysis. ***p<0.001, ****p<0.0001 to Static FOXC1 and ▪▪▪▪ p<0.0001 to Static FOXC2 . (c) Scheme summarizing the observed regulation of FOXC1 and FOXC2 by flow-mediated shear stress: cells under OSS have high levels of FOXC2, whereas cells under LSS have high levels of both FOXC1 and FOXC2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a–c) Relative FOXC1 and FOXC2 nuclear intensity was quantified per each cell and a linear regression analysis was applied with FOXC1 intensity on the x-axis and FOXC2 intensity on the y-axis for static (a), OSS (b), and LSS (c) assuming interaction with 0 for both axes. The correlation coefficient (R2) is indicated on each graph in association with the linear regression and shows absence of correlation. (d–e) Representative images of confluent LECs 2 days after transfection with control siRNA (upper) or two different target-specific siRNA (middle and lower) showing efficient knockdown in each case. Cells were immunostained for β-catenin (white) and FOXC2 (red) in (d) or FOXC1 (green) in (e). Scale bars are 30 µm.
+
+### FOXC1 regulates actin cytoskeletal organization and cell-matrix adhesion
 
 OSS acting on LECs induces the formation of thick cortical actin fibers and perinuclear F-actin stress fiber formation (Sabine et al., 2012; Sabine et al., 2015). Similarly, increased F-actin expression was detected in lymphatic valve forming cells in vivo (Sabine et al., 2012). However, FOXC2 knockdown in cultured LECs induced actomyosin contractility, which was potentiated by OSS leading to impaired cell-cell adhesion (Sabine et al., 2015). To investigate potential cytoskeletal signaling changes in the context of loss of FOXC1 with shear stress, LECs were transfected at subconfluency with scramble control or FOXC1 siRNAs, then seeded into fibronectin-coated flow chambers under static, LSS, or OSS conditions. FOXC1 knockdown resulted in impaired adhesion and reduced viability of LECs as the monolayer of cells re-seeded into flow chambers was characterized by several areas devoid of cells and cells were observed floating over the monolayer under static conditions, suggesting cells had been flushed away under LSS and OSS (Figure 4). Intriguingly, FOXC1 inactivation also resulted in a substantial increase of transverse actin stress fiber formation associated with increased phosphorylation of MLC2 (p-MLC2) (Figure 4a), indicative of increased actomyosin contractility. This was potentiated under both OSS and LSS, with cells also losing their ability to properly orient in the direction of LSS.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig4-v2.jpg)
+
+**Figure 4.:** (a) Representative images of Control and FOXC1-KD LECs cultured under static, OSS, or LSS show reduced viability and higher number of contractile stress fibers (cyan arrowhead). Immunostaining for VE-Cadherin (red), F-actin (green), p-MLC2 (white), and DNA (blue). Pink arrowheads denote areas devoid of cells in the endothelial monolayer. Pink inserts denote single-channel p-MLC2 (white) images. Scale bars are 30 μm. (b, c) Representative images of Control, FOXC1-KD, FOXC2-KD, and combined FOXC1-KD/FOXC2-KD LECs show higher number of contractile stress fibers (b, pink arrowhead) and focal adhesions (c, cyan arrowhead) upon FOXC1 knockdown. In comparison, FOXC2 knockdown rather induced focal adherens junctions (c, pink arrowhead). (b) Immunostaining for F-actin (red), p-MLC2 (green), and DNA (blue). Images on the right show a mask applied to visualize only double F-actin+/p-MLC2+ (white) stress fibers. Scale bars are 30 μm. (c) Immunostaining for F-actin (red), vinculin (green), and DNA (blue). Images on the right show a mask applied to visualize only double F-actin+/vinculin+ (white) adhesion sites. Scale bars are 30 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Representative images of Control, FOXC1-KD, FOXC2-KD, and combined FOXC1-KD/FOXC2-KD LECs show overlapping junctions (pink arrowhead) upon FOXC1 knockdown but disrupted junctions (cyan arrowhead) upon FOXC2 knockdown. Immunostaining for VE-Cadherin (white) and FOXC1 (red). Images on the right show a 4x zoom of the area delineated by the pink box. Scale bars are 50 μm. (b) Representative images of Control, FOXC1-KD, FOXC2-KD, and combined FOXC1-KD/FOXC2-KD LECs show overlapping junctions (pink arrowhead) upon FOXC1 knockdown but disrupted junctions (cyan arrowhead) upon combined FOXC1 and FOXC2 knockdown. Immunostaining for β-catenin (white) and DNA (blue). Images on the right show immunostaining for F-actin (red), DNA (blue) and a mask applied to visualize only double F-actin+/paxillin+ (green) adhesion sites. Yellow arrowheads denote increased focal adhesions. Red arrowheads denote increased focal adherens junctions at the cell cortex. Scale bars are 30 μm.
 
 Considering that FOXC1 knockdown in LECs impairs cell adhesion, we slightly modified our protocol: LECs were first seeded on fibronectin-coated surfaces, then transfected with scramble control, FOXC1, FOXC2, or combined FOXC1/FOXC2 (50%:50%) siRNAs and kept under static conditions for 2 days. Given that FOXC2 inactivation and exposure to OSS in LECs results in increased actomyosin contractility (Sabine et al., 2015), we investigated whether combined knockdown of FOXC1 and FOXC2 in LECs would result in a synergistic effect. FOXC1-KD LECs were characterized by strongly increased co-localization of p-MLC2 signal with abnormally accumulated transverse F-actin stress fibers compared to control and FOXC2-KD LECs with modest p-MLC2 signal co-localized mostly to the cortical actin ring (Figure 4b). Combined knockdown of FOXC1 and FOXC2 resulted in a similar phenotype to FOXC2-KD LECs (Figure 4b), suggesting a rate-limiting effect of FOXC1 in the control of actomyosin contractility.
 
@@ -68,49 +120,81 @@ As FOXC2 has been shown to be required to maintain continuous cell-cell junction
 
 Cell adhesion to ECM is controlled by focal adhesions, which are composed of protein complexes that link the actin cytoskeleton, and especially stress fibers, to the ECM and are critical for translating signals from the ECM environment (Parsons et al., 2010). Because FOXC1 knockdown impaired LEC attachment to fibronectin, we assessed the distribution of two main focal adhesion components, vinculin and paxillin, in FOXC1-KD, FOXC2-KD, and FOXC1/FOXC2-KD LECs to compare the role of FOXC1 and FOXC2 in regulating focal adhesions (Figure 4c and Figure 4—figure supplement 1b). Knockdown of FOXC1 mostly induced formation of vinculin-positive or paxillin-positive focal adhesions at the tip of actin stress fibers (Figure 4c and Figure 4—figure supplement 1b, respectively), whereas knockdown of FOXC2 mostly induced formation of vinculin-positive or paxillin-positive adherens junctions associated with the cortical actin ring (Figure 4c and Figure 4—figure supplement 1b, respectively). Interestingly, combined knockdown of FOXC1 and FOXC2 induced formation of both focal adhesions and adherens junctions in LECs (Figure 4c, Figure 4—figure supplement 1b). Collectively, our data demonstrate that FOXC1 and FOXC2 have separate, yet complementary, roles to regulate LEC cytoskeletal organization and contractility as FOXC1 controls focal adhesions and FOXC2 regulates adherens junctions.
 
-## FOXC1 and FOXC2 regulate LEC expression of negative RhoA signaling regulators PRICKLE1, ARHGAP21, and ARHGAP23
+### FOXC1 and FOXC2 regulate LEC expression of negative RhoA signaling regulators PRICKLE1, ARHGAP21, and ARHGAP23
 
 The RhoA-Rho-associated protein kinase (ROCK)-phosphorylated myosin light chain (pMLC) signaling pathway has been well established as a regulator of cytoskeletal contractility mechanisms (Ridley, 2001). Furthermore, perturbed RhoA/ROCK signaling activation has been demonstrated to be a negative regulator of blood endothelial tubulogenesis (Bowers et al., 2016) and barrier function (Spindler et al., 2010). Given the synergistic effect of combined inactivation of Foxc1 and Foxc2 on lymphatic valve maintenance and maturation in vivo and perturbed cytoskeletal organization upon FOXC1 and FOXC2 knockdown in vitro, we hypothesized that FOXC1 and FOXC2 transcription targets may converge to negatively regulate RhoA/ROCK activation in the context of mechanical stress. To identify potential negative regulators of RhoA/ROCK downstream of FOXC1 and FOXC2 transcription, we utilized RNA-seq data previously published from our LEC- Foxc1; Foxc2-DKO mice (Fatima et al., 2016). Recent evidence has shown that a signaling complex, consisting of the planar cell polarity (PCP) protein Prickle1 and the Rho GTPase activating proteins (GAPs) Arhgap21 and Arhgap23, functions to inhibit RhoA on the non-protrusive lateral membrane cortex allowing for dynamic cell morphology necessary for proper migration (Zhang et al., 2016). Our RNA-seq analysis (Fatima et al., 2016) revealed that mRNA expression of Prickle1, Arhgap21, and Arhgap23 was significantly downregulated in dermal LECs isolated from LEC- Foxc1; Foxc2-DKO mouse embryos (Figure 5a). Furthermore, our RNA-seq analysis showed a modest, yet significant reduction of RhoA, but other GAPs associated with regulation of RhoA, endothelial barrier function, and lumen maintenance (van Buul et al., 2014; Barry et al., 2016) were not differentially expressed with the exception of a significant increase in Arhgap18 expression and a modest reduction of Arhgap20 expression (Figure 5—figure supplement 1k). Because of the previous report demonstrating a physical interaction of Prickle1 and Arhgap21/23 complex (Zhang et al., 2016) and our observation that expression of all three genes was significantly downregulated in our RNA-seq analysis, we focused our attention on these potential downstream targets. Therefore, we performed in silico analysis to identify putative FOXC binding sites in the human PRICKLE1, ARHGAP21, and ARHGAP23 loci. First, the Hypergeometric Optimization of Motif EnRichment (HOMER) suite of tools (Heinz et al., 2010) was used to identify regions containing the conserved RYMAAYA FOX consensus binding sequence (Pierrou et al., 1994; De Val et al., 2008; Norrmén et al., 2009) in active areas of transcription identified with the Encyclopedia of DNA Elements (ENCODE) (2012) and the UCSC Human Genome Browser (Kent et al., 2002). Then, we utilized the Evolutionary Conserved Region (ECR) Browser (https://ecrbrowser.dcode.org) (Ovcharenko et al., 2004) tool to identify conserved binding regions between the mouse and human genomes. Several conserved and aligned putative FOX binding regions were identified in regions of the PRICKLE1 (Figure 5b,c), ARHGAP21, and ARHGAP23 (Figure 5—figure supplement 1a,b) loci. To identify direct interaction of FOXC1 and FOXC2 with these putative binding regions, human dermal LECs from juvenile foreskin (HDLECs) were cultured, and ChIP assays were performed using two specific antibodies for FOXC1 and one antibody for FOXC2 for regions identified in the PRICKLE1 (Figure 5d), ARHGAP21, and ARHGAP23 loci (Figure 5—figure supplement 1c,d). We found that binding of both FOXC1 and FOXC2 were significantly enriched in ECR-2, and −6 in PRICKLE1 whereas specific binding of FOXC1 was significantly enriched in ECR-5 and FOXC2 in ECR-1 (Figure 5e–j). Additionally, FOXC1 and FOXC2 binding was significantly enriched in ECR-1–1 of the ARHGAP21 locus and FOXC2 was significantly enriched in ECR-1–2 (Figure 5—figure supplement 1e–g). Finally, only FOXC2 binding was significantly enriched in ECR-1 of the ARHGAP23 locus (Figure 5—figure supplement 1h).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig5-v2.jpg)
+
+**Figure 5.:** (a) Reduced expression of Prickle1, Arhgap21, and Arhgap23 in Foxc1/c2-compound mutant LECs isolated from the dorsal skin at E15.5. Graph shows RPKM values from RNA-seq analysis. *** denotes p<0.001. (b, c) Putative FOX-binding sites in regions of the human PRICKLE1 locus as viewed on the UCSC genome browser (http://genome.ucsc.edu; Kent et al., 2002). Vertical lines on the ‘FOX sites’ track indicate putative FOX binding sites predicted using HOMER (see methods). Red boxes indicate evolutionary conserved regions (ECRs) containing FOX-binding sites between human and mouse genomes that are conserved and aligned. (d) ChIP showing specific binding of FOXC1 and FOXC2 to the consensus FOX-binding sites within ECRs 1, 2, 3, 4, 5, and six in PRICKLE1 in HDLECs. (e–j) ChIP assays were performed using antibodies against Foxc1, Foxc2, and normal goat IgG. The binding of FOXCs to candidate ECRs identified in b and c in the PRICKLE1 locus was determined with regular PCR and expressed as relative folds of input whose band intensity was normalized to 1. Data are presented as a scatter plot with median indicated in red. * denotes p<0.05, ** denotes p<0.01 as determined by Mann-Whitney two-tailed test. (k–p) Representative images of lymphatic valve regions in mesenteric collecting vessels immunostained with antibodies targeted to Prickle1 and PROX1 in P7 Foxc1 Control (k), EC-Foxc1-KO (l), Foxc2 Control (m), EC-Foxc2-KO, (n) Foxc1; Foxc2 control and (o) EC-Foxc1; Foxc2-DKO (p) mice show reduced Prickle1 expression in the valve leaflets and lymphangion of Foxc2 and compound Foxc1; Foxc2 mutants compared to littermate controls whereas Prickle1 is reduced primarily in leaflet-free-edge LECs, denoted by yellow asterisks, of Foxc1 mutants. Scale bars are 20 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a, b) Putative FOX-binding sites in regions of the human ARHGAP21 (a) and ARHGAP23 (b) loci as viewed on the UCSC genome browser (http://genome.ucsc.edu; Kent et al., 2002). Vertical lines on the ‘FOX sites’ track indicate putative FOX binding sites predicted using HOMER (see methods). Red boxes indicate ECRs containing FOX-binding sites between human and mouse genomes that are conserved and aligned. (c, d) ChIP showing specific binding of FOXC1 and FOXC2 to the consensus FOX-binding sites within ECRs in ARHGAP21 (c) and ARHGAP23 (d) in HDLECs. (e–h) ChIP assays were performed using antibodies against Foxc1, Foxc2, and normal goat IgG. The binding of FOXCs to candidate ECRs in the ARHGAP21 (e–g) and ARHGAP23 (h) loci was determined with regular PCR and expressed as relative folds of input whose band intensity was normalized to 1. Data are presented as a scatter plot with median indicated in red. * denotes p<0.05, ** denotes p<0.01 as determined by Mann-Whitney two-tailed test.(i) Lack of FOX-binding sites in a region of the human ICAM1 locus as viewed on the UCSC genome browser. Red arrowheads denote a ChIP negative control PCR amplified region of the ICAM1 promoter, which was predicted to not bind FOX transcription factors. (j) ChIP assays were performed from three replicates using antibodies against Foxc1, Foxc2, and normal goat IgG. PCR was performed using primers to a negative control region of the ICAM1 promoter (i). (k) Expression of RhoA, Rock1, Rock2, Arhgap5, Arhgap18, Arhgap19, Arhgap20, Arhgap29, and Arap3 in littermate Control and Foxc1/c2-compound mutant LECs isolated from the dorsal skin at E15.5. Graph shows RPKM values from RNA-seq analysis. * denotes p<0.05, *** denotes p<0.001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a–f) High magnification, representative images from two separate angles of three-dimensional reconstructions of PROX1 and Prickle1 immunostained collecting vessel generated from the same fields of P7 control individuals depicted in Figure 9C and Figure 9A as well as the P7 EC-Foxc1-KO individual depicted in Figure 9B. (g–i) Representative images of a single z-slice generated from the three-dimensional reconstructions depicted in panels (a–f). Yellow asterisks denote LECs located at the leaflet-free-edge. Blue arrowheads denote Prickle1 expression in leaflet-free-edge LECs. Yellow arrowheads denote areas of the valve buttress, which anchors leaflets to the vessel wall, where Prickle1 is expressed. Scale bars equal 10 μm.
 
 Although both FOXC1 antibodies recognize the same immunogen peptide, we observed notable differences in ChIP signals between the two antibodies. However, significant variations dependent on the antibody manufacturer have been previously noted for antibodies targeted to the same antigen in immunohistochemistry related work (Ramos-Vara, 2005). To validate our ChIP assays, we also performed a negative control experiment using primers to amplify a portion of the promoter region of ICAM1 that was not predicted to bind FOX transcription factors by in silico analysis (Figure 5—figure supplement 1i). ChIP analysis using the antibodies against FOXC1, FOXC2, and IgG for the ICAM1 region from three experimental replicates showed no band signals (Figure 5—figure supplement 1j) validating specificity of FOXC1 and FOXC2 binding to these loci in LECs. Thus, these results demonstrate that FOXC1 and FOXC2 have similar binding capacities for the PRICKLE1 and ARHGAP21 loci whereas FOXC2 shows specificity for the ARHGAP23 locus.
 
 To assess whether Prickle1 is regulated by FOXC1 and FOXC2 in lymphatic valves in vivo, we characterized its expression in lymphatic valves during postnatal development. Prickle1 expression was concentrated on the free edges of PROX1-high valve leaflets located at or near the valve buttress (Sabine et al., 2018) with modest expression detected in other leaflet cells (Figure 5k,m,o, Figure 5—figure supplement 2a–d,g,h, Video 5, and Video 6). Postnatal deletion of Foxc1 reduced Prickle1 expression within leaflet free-edge cells while other valve leaflet LECs retained modest expression (Figure 5l, Figure 5—figure supplement 2e,f,i and Video 7). In contrast, postnatal deletion of Foxc2 or both Foxc1 and Foxc2 resulted in a strong and broad reduction of Prickle1 within the lymphatic vasculature compared to littermate controls (Figure 5m–p). Collectively, these data show that PRICKLE1 is a novel target of FOXC transcription factors in valve forming LECs.
 
-## ROCK inhibition rescues hypercontractility of actin cytoskeleton in FOXC1-KD and FOXC2-KD LECs
+![Video 5.](https://cdn.elifesciences.org/articles/53814/elife-53814-video5.mp4.jpg)
+
+**Video 5.:** Three-dimensional reconstruction of a P7 Foxc1fl/fl control mouse administered tamoxifen from P1-P5, using Imaris ‘Surpass’ function. Mesenteric collecting vessels were immunostained with antibodies against Prox1 (red) and Prickle1 (white). Note Pricke1 is more highly expressed within LECs at the free-edges of valve leaflets and at the valve buttress.
+
+![Video 6.](https://cdn.elifesciences.org/articles/53814/elife-53814-video6.mp4.jpg)
+
+**Video 6.:** Three-dimensional reconstruction of a P7 Foxc2fl/fl control mouse administered tamoxifen from P1-P5, using Imaris ‘Surpass’ function. Mesenteric collecting vessels were immunostained with antibodies against Prox1 (red) and Prickle1 (white). Note Pricke1 is more highly expressed within LECs at the free-edges of valve leaflets and at the valve buttress of both Prox1-hi valve regions.
+
+![Video 7.](https://cdn.elifesciences.org/articles/53814/elife-53814-video7.mp4.jpg)
+
+**Video 7.:** Three-dimensional reconstruction of a P7 EC-Foxc1-KO mouse administered tamoxifen from P1-P5, using Imaris ‘Surpass’ function. Mesenteric collecting vessels were immunostained with antibodies against Prox1 (red) and Prickle1 (white). Note the reduction of Prickle1 expression within LECs at the leaflet free-edge compared to Videos 1 and 2, whereas Prickle1 expression is retained in the valve sinus regions.
+
+### ROCK inhibition rescues hypercontractility of actin cytoskeleton in FOXC1-KD and FOXC2-KD LECs
 
 To investigate whether ROCK signaling is activated in the absence of FOXC1 and FOXC2, LECs were transfected with scramble Control, FOXC1, or FOXC2 siRNAs under static conditions and treated with vehicle Control or the ROCK inhibitor Y-27632 (Figure 6). Immunostaining and quantification of F-actin and p-MLC2 demonstrated an increase in the F-actin and p-MLC2 area per cell with loss of FOXC1 and treatment with vehicle. However, inhibition of ROCK reduced F-actin and pMLC2 distribution to a similar level in Control LECs (Figure 6a,b). In contrast, loss of FOXC2 modestly increased F-actin and pMLC2 area per cell, but the increase in relative area per cell was greatly potentiated by OSS. However, similar to FOXC1 knockdown, changes in F-actin and p-MLC2 area were ameliorated by treatment with Y-27632 (Figure 6c,d). Together, this data demonstrate that key targets downstream of FOXC1 and FOXC2 transcription activity function in part to negatively regulate RhoA/ROCK activation in LECs.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig6-v2.jpg)
 
-**Figure 6.:** FOXC1-KD and FOXC2-KD LECs.(a) Representative images of cultured LECs transfected with scramble control siRNA or FOXC1 siRNA and treated with vehicle control or Y-27632 (10 µM). Treatment with Y-27632 ROCK inhibitor shows rescue of cytoskeletal changes induced by FOXC1 inactivation. Immunostaining of F-actin (red), p-MLC2 (green), and DNA (blue). Pink inserts denote the single-channel p-MLC2 (white) images. Scale bars are 20 µm. (b) Quantification of relative F-actin (left) and p-MLC2 (right) area per Control (dark grey bars) and FOXC1-KD (light grey bars) cells treated with vehicle Control (blue outline) or Y-27632 (red outline). (c) Representative images of Control and FOXC2-KD LECs cultured under static, OSS, or LSS, treated with vehicle Control or Y-27632 (10 µM). Treatment with Y-27632 ROCK inhibitor shows rescue of cytoskeletal changes induced by FOXC2 inactivation that are most prominent under OSS. Immunostaining for VE-Cadherin (red), F-actin (green), p-MLC2 (white), and DNA (blue). Pink inserts denote the single-channel p-MLC2 (white) images. Scale bars are 20 µm. (d) Quantification of relative F-actin (top) and p-MLC2 (bottom) area per Control (dark grey bars) and FOXC1-KD (light grey bars) cells treated with vehicle Control (blue outline) or Y-27632 (red outline).
+**Figure 6.:** (a) Representative images of cultured LECs transfected with scramble control siRNA or FOXC1 siRNA and treated with vehicle control or Y-27632 (10 µM). Treatment with Y-27632 ROCK inhibitor shows rescue of cytoskeletal changes induced by FOXC1 inactivation. Immunostaining of F-actin (red), p-MLC2 (green), and DNA (blue). Pink inserts denote the single-channel p-MLC2 (white) images. Scale bars are 20 µm. (b) Quantification of relative F-actin (left) and p-MLC2 (right) area per Control (dark grey bars) and FOXC1-KD (light grey bars) cells treated with vehicle Control (blue outline) or Y-27632 (red outline). (c) Representative images of Control and FOXC2-KD LECs cultured under static, OSS, or LSS, treated with vehicle Control or Y-27632 (10 µM). Treatment with Y-27632 ROCK inhibitor shows rescue of cytoskeletal changes induced by FOXC2 inactivation that are most prominent under OSS. Immunostaining for VE-Cadherin (red), F-actin (green), p-MLC2 (white), and DNA (blue). Pink inserts denote the single-channel p-MLC2 (white) images. Scale bars are 20 µm. (d) Quantification of relative F-actin (top) and p-MLC2 (bottom) area per Control (dark grey bars) and FOXC1-KD (light grey bars) cells treated with vehicle Control (blue outline) or Y-27632 (red outline).
 
-## Inhibition of ROCK is able to partially rescue lymphatic valve degeneration in EC-specific Foxc2 mutant mice but not compound Foxc1; Foxc2 mutant mice
+### Inhibition of ROCK is able to partially rescue lymphatic valve degeneration in EC-specific Foxc2 mutant mice but not compound Foxc1; Foxc2 mutant mice
 
 As ROCK inhibition rescued impaired cytoskeletal organization in FOXC1- and FOXC2-KD LECs, we assessed whether ROCK inhibition could rescue lymphatic valve degeneration observed in EC-Foxc2-KO and EC-Foxc1; Foxc2-DKO mice as LEC-specific deletion of Foxc1 and Foxc2 did not affect Rock1 and Rock2 expression (Figure 5—figure supplement 1k). Compared to P7 Foxc2 mutants administered DPBS, Foxc2 mutants administered Y-27632 concurrently with tamoxifen from P2 – P5 were able to retain a significantly higher total valve number, similar to totals quantified in littermate control mice injected with DPBS or Y-27632 (Figure 7a–d,i). However, the proportion of mature lymphatic valves present in Foxc2 mutants after ROCK inhibition was significantly lower compared to littermate controls treated with DPBS or Y-27632, but significantly increased compared to Foxc2 mutants administered DPBS (Figure 7j). In contrast, ROCK inhibition was not able to rescue near complete lymphatic valve degeneration in P7 EC-Foxc1; Foxc2-DKO mutants (Figure 7e–h,k).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig7-v2.jpg)
 
-**Figure 7.:** Foxc2 mutant mice but not compound Foxc1; Foxc2 mutant mice.(a–h) Representative images of lymphatic collecting vessels immunostained with PROX1 antibody in P7 littermate Control (a) and EC-Foxc2-KO (b), littermate Control (e) and EC-Foxc1; Foxc2-DKO (f) mice subcutaneously injected with DPBS vehicle or littermate Control (c) and EC-Foxc2-KO (d), littermate Control (g) and EC-Foxc1; Foxc2-DKO (h) mice subcutaneously injected with ROCK inhibitor Y-27632. Scale bars equal to 500 μm. (i, j) Quantification of total valve number (i) and percentage of mature valves (j) in littermate Control and EC-Foxc2-KO mice administered DPBS or Y-27632. N = 6 for Control DPBS, N = 6 for EC-Foxc2-KO DPBS, N = 9 for Control Y-27632, and N = 9 for EC-Foxc2-KO Y-27632. (k) Quantification of total valve number in littermate Control and EC-Foxc1; Foxc2-DKO mice administered DPBS or Y-27632. N = 5 for Control DPBS, N = 7 for EC-Foxc1; Foxc2-DKO DPBS, N = 8 for Control Y-27632, and N = 9 for EC-Foxc1; Foxc2-DKO Y-27632. P-values were obtained by One-way ANOVA with Tukey’s post test. Data are presented as mean (± SD). ** denotes p<0.01. *** denotes p<0.001. NS denotes no significance.
+**Figure 7.:** (a–h) Representative images of lymphatic collecting vessels immunostained with PROX1 antibody in P7 littermate Control (a) and EC-Foxc2-KO (b), littermate Control (e) and EC-Foxc1; Foxc2-DKO (f) mice subcutaneously injected with DPBS vehicle or littermate Control (c) and EC-Foxc2-KO (d), littermate Control (g) and EC-Foxc1; Foxc2-DKO (h) mice subcutaneously injected with ROCK inhibitor Y-27632. Scale bars equal to 500 μm. (i, j) Quantification of total valve number (i) and percentage of mature valves (j) in littermate Control and EC-Foxc2-KO mice administered DPBS or Y-27632. N = 6 for Control DPBS, N = 6 for EC-Foxc2-KO DPBS, N = 9 for Control Y-27632, and N = 9 for EC-Foxc2-KO Y-27632. (k) Quantification of total valve number in littermate Control and EC-Foxc1; Foxc2-DKO mice administered DPBS or Y-27632. N = 5 for Control DPBS, N = 7 for EC-Foxc1; Foxc2-DKO DPBS, N = 8 for Control Y-27632, and N = 9 for EC-Foxc1; Foxc2-DKO Y-27632. P-values were obtained by One-way ANOVA with Tukey’s post test. Data are presented as mean (± SD). ** denotes p<0.01. *** denotes p<0.001. NS denotes no significance.
 
-## Inhibition of ROCK improves LEC junctional integrity in collecting vessels of EC-Foxc2-KO and EC-Foxc1; Foxc2-DKO mice
+### Inhibition of ROCK improves LEC junctional integrity in collecting vessels of EC-Foxc2-KO and EC-Foxc1; Foxc2-DKO mice
 
 Although ROCK inhibition was not able to completely rescue the valve phenotypes associated with EC-Foxc2-KO nor EC-Foxc1; Foxc2-DKO mice, we assessed the effect of ROCK inhibition on LEC junctional integrity in collecting vessels of both mutant mouse lines as Y-27632 treatment rescued impaired LEC cytoskeletal organization in vitro. Immunostaining of VE-Cadherin in collecting vessels of P7 EC-Foxc2-KO and EC-Foxc1; Foxc2-DKO mutant mice treated with DPBS identified disrupted LEC cell-cell junctions (Figure 8a,b,e,f) similar to our observations in untreated mutant mice at P6 (Figure 2—figure supplement 4) contributing to loss of lymphatic vascular barrier function. However, ROCK inhibition in both EC-Foxc2-KO and EC-Foxc1; Foxc2-DKO mutant mice was able to in part restore continuous cell-cell ‘zipper-like’ junctions characteristic of lymphatic collecting vessels (Figure 8c,d,g,h), thus resulting in improved junction integrity. Collectively, our in vitro and in vivo data demonstrate that FOXC1 and FOXC2 function in part to negatively regulate perturbed activation of Rho/ROCK signaling in LECs downstream of shear stress-sensing mechanisms.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig8-v2.jpg)
 
-**Figure 8.:** Foxc2 and compound Foxc1; Foxc2 mutant mice.(a–h) High-magnification, representative images of lymphatic collecting vessels immunostained with VE-Cadherin antibody in P7 littermate Control (a) and EC-Foxc2-KO (b), littermate Control (e) and EC-Foxc1; Foxc2-DKO (f) mice subcutaneously injected with DPBS vehicle or littermate Control (c) and EC-Foxc2-KO (d), littermate Control (g) and EC-Foxc1; Foxc2-DKO (h) mice subcutaneously injected with ROCK inhibitor Y-27632. Scale bars are 20 µm. Red, dashed boxes highlight magnified regions shown inset. Scale bars equal to 5 μm. Gaps in LEC junctions are visible in EC-Foxc2-KO and EC-Foxc1; Foxc2-DKO mice administered DPBS (b, f) whereas inhibition of ROCK with Y-27632 is able to restore linear junctions in part (d, h). Blue arrowheads denote discontinuous LEC VE-Cadherin junctions.
+**Figure 8.:** (a–h) High-magnification, representative images of lymphatic collecting vessels immunostained with VE-Cadherin antibody in P7 littermate Control (a) and EC-Foxc2-KO (b), littermate Control (e) and EC-Foxc1; Foxc2-DKO (f) mice subcutaneously injected with DPBS vehicle or littermate Control (c) and EC-Foxc2-KO (d), littermate Control (g) and EC-Foxc1; Foxc2-DKO (h) mice subcutaneously injected with ROCK inhibitor Y-27632. Scale bars are 20 µm. Red, dashed boxes highlight magnified regions shown inset. Scale bars equal to 5 μm. Gaps in LEC junctions are visible in EC-Foxc2-KO and EC-Foxc1; Foxc2-DKO mice administered DPBS (b, f) whereas inhibition of ROCK with Y-27632 is able to restore linear junctions in part (d, h). Blue arrowheads denote discontinuous LEC VE-Cadherin junctions.
 
-## FOXC2 can functionally substitute for FOXC1 during lymphatic valve development, maintenance, and maturation
+### FOXC2 can functionally substitute for FOXC1 during lymphatic valve development, maintenance, and maturation
 
 Because the forkhead DNA binding domain is nearly identical between FOXC1 and FOXC2 and both transcription factors have cooperative roles in early cardiovascular development (Kume, 2009; Lam et al., 2013), we assessed whether FOXC2 could substitute for FOXC1 transcriptional activity in vivo in the context of lymphatic valve development, maintenance, and maturation. To do so, we generated mice that carry a Foxc2 knock-in (Foxc1c2) allele, in which the Foxc1 coding region has been replaced with the cDNA coding (from the start codon to the stop codon) for Foxc2 (Figure 9a – c). By breeding male and female Foxc1c2/+ mice, we were able to generate litters consisting of Foxc1+/+, Foxc1c2/+, and Foxc1c2/c2 mice for analysis. To verify the absence of FOXC1 expression within the lymphatic vessels of this model, we first performed co-immunostaining of mesentery tissue from P12 Foxc1+/+ and littermate Foxc1c2/c2 mice for FOXC1 and VEGFR-3 (Figure 9d and e), which confirmed the complete reduction of FOXC1 expression in lymphatic collecting vessels in homozygous Foxc2 knock-in mutant mice (Figure 9e). To further characterize changes in expression of FOXC1 and FOXC2 in both the blood and lymphatic vasculature, we also performed co-immunostaining for FOXC1, FOXC2, and VE-Cadherin in mesentery tissue of littermate P6 Foxc1+/+ controls and Foxc1c2/+ and Foxc1c2/c2 mutant mice (Figure 9f – k). Within lymphatic valves of mesentery collecting vessels, nuclear FOXC1 expression was strongly reduced in Foxc1c2/+ mutants compared to Foxc1+/+ controls. Furthermore, Foxc1c2/c2 mutants were absent of nuclear FOXC1 expression within LECs, although a non-specific, positive signal was detected in the membrane of valve leaflets of both Foxc1c2/+ and Foxc1c2/c2 mutant mice (Figure 9f – h). Additionally, co-immunostaining of FOXC1, FOXC2, and VE-Cadherin demonstrated loss of FOXC1 expression in the blood vasculature and smooth muscle cells associated with mesenteric arteries and subsequent gain of FOXC2 expression in Foxc1c2/+ and Foxc1c2/c2 mutants with no obvious changes observed in the blood vasculature morphology (Figure 9i – k). To investigate potential differences in valve morphogenesis, we also performed immunostaining of mesentery tissue for PROX1 and CD31 (Figure 9l – n). Quantification of PROX1-high valves revealed that total lymphatic valve number was not significantly changed, nor was valve maturation (Figure 9o and p). Collectively, these data demonstrate that FOXC2 is able to functionally substitute for FOXC1 transcription activity during lymphatic valve development and maturation.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig9-v2.jpg)
 
-**Figure 9.:** (a) Schematic representation of the targeting vector and targeted allele. The entire protein coding region of Foxc1 is replaced with that of Foxc2. ACN, self-excision cassette including Cre driven by the testis-specific promoter. (b) Southern blot analysis to detect double-resistant ES cell colonies using 5’ and 3’ probes. (c) PCR genotyping of F1 heterozygotes to detect the Foxc1 allele. (c2d, e) Representative images of lymphatic valves in mesenteric collecting vessels immunostained with antibodies targeted to FOXC1 and VEGFR-3 from P12 P6 Foxc1 (+/+d) and Foxc1 (c2/c2e) mice. Scale bars are 25 µm. (f – h) Representative images of lymphatic valves in mesenteric collecting vessels immunostained with antibodies targeted to FOXC1, FOXC2, and VE-Cadherin from P6 Foxc1 (+/+f), Foxc1 (c2/+g), and Foxc1 mice (c2/c2h). Scale bars are 50 μm. (i – k) Representative images of the mesenteric vasculature immunostained with antibodies targeted to PROX1 and CD31 in P6 Foxc1 (+/+i), Foxc1 (c2/+j), and Foxc1 mice (c2/c2k). Scale bars are 200 μm. (l – n) Representative images of P6 mesenteric vasculature from P6 Foxc1 (+/+l), Foxc1 (c2/+m), and Foxc1 mice (c2/c2n) immunostained with antibodies targeted to FOXC1, FOXC2, and VE-Cadherin show gradual loss of FOXC1 expression in the blood and lymphatic vasculature and smooth muscle cells and conversely the increase of FOXC2 expression in blood vasculature and smooth muscle. Scale bars are 200 μm. (o) Quantification of total lymphatic valve number in lymphatic collecting vessels of P6 Foxc1, and +/+, Foxc1c2/+Foxc1 individuals. N = 6 for c2/c2Foxc1 N = 8 for +/+,Foxc1, and N = 8 forc2/+Foxc1 individuals. (c2/c2p) Percentage of mature and immature lymphatic valves normalized to total valves counted in P6 Foxc1, and +/+, Foxc1c2/+Foxc1 individuals. Data are presented as mean (± SD) and analyzed using Student’s t-test. NS denotes no significance.c2/c2
+**Figure 9.:** (a) Schematic representation of the targeting vector and targeted allele. The entire protein coding region of Foxc1 is replaced with that of Foxc2. ACN, self-excision cassette including Cre driven by the testis-specific promoter. (b) Southern blot analysis to detect double-resistant ES cell colonies using 5’ and 3’ probes. (c) PCR genotyping of F1 heterozygotes to detect the Foxc1c2 allele. (d, e) Representative images of lymphatic valves in mesenteric collecting vessels immunostained with antibodies targeted to FOXC1 and VEGFR-3 from P12 P6 Foxc1+/+ (d) and Foxc1c2/c2 (e) mice. Scale bars are 25 µm. (f – h) Representative images of lymphatic valves in mesenteric collecting vessels immunostained with antibodies targeted to FOXC1, FOXC2, and VE-Cadherin from P6 Foxc1+/+ (f), Foxc1c2/+ (g), and Foxc1c2/c2 mice (h). Scale bars are 50 μm. (i – k) Representative images of the mesenteric vasculature immunostained with antibodies targeted to PROX1 and CD31 in P6 Foxc1+/+ (i), Foxc1c2/+ (j), and Foxc1c2/c2 mice (k). Scale bars are 200 μm. (l – n) Representative images of P6 mesenteric vasculature from P6 Foxc1+/+ (l), Foxc1c2/+ (m), and Foxc1c2/c2 mice (n) immunostained with antibodies targeted to FOXC1, FOXC2, and VE-Cadherin show gradual loss of FOXC1 expression in the blood and lymphatic vasculature and smooth muscle cells and conversely the increase of FOXC2 expression in blood vasculature and smooth muscle. Scale bars are 200 μm. (o) Quantification of total lymphatic valve number in lymphatic collecting vessels of P6 Foxc1+/+, Foxc1c2/+, and Foxc1c2/c2 individuals. N = 6 for Foxc1+/+, N = 8 for Foxc1c2/+, and N = 8 forFoxc1c2/c2 individuals. (p) Percentage of mature and immature lymphatic valves normalized to total valves counted in P6 Foxc1+/+, Foxc1c2/+, and Foxc1c2/c2 individuals. Data are presented as mean (± SD) and analyzed using Student’s t-test. NS denotes no significance.
 
 ## Discussion
 
 Mutations associated with the VEGF-C/VEGR3 signaling pathway, including changes in FOXC2, as well as key transcription factors involved in LEC specification, such as Sox-18 and GATA2, contribute to the development of primary lymphedema (Aspelund et al., 2016; Jiang et al., 2018). While recent advances have identified key genes associated with the development of lymphedema, the underlying genetic causes contributing to a majority of cases remains unknown (Mendola et al., 2013). In this study, we identify a critical role for FOXC1 during postnatal lymphatic development to regulate cytoskeletal organization in the lymphatic vasculature via regulation of RhoA/ROCK activation and focal adhesion formation. Importantly, we found that high FOXC1 expression is limited to LECs located at the free-edge of the luminal side of valve leaflets, which are exposed to laminar pulsatile shear, as opposed to FOXC2, which is strongly expressed throughout the valve sinuses exposed to reciprocating shear stress (Sabine et al., 2015; Sabine et al., 2016; Zawieja, 2009). Similarly, in vitro we demonstrate that LSS induces both FOXC1 and FOXC2 expression, whereas OSS only induces FOXC2. Our findings elucidate a key contribution of FOXC1, complementary to FOXC2, in regulating lymphatic valve maturation and maintenance (Figure 10) and provide additional insight into disease processes potentially associated with primary lymphedema.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig10-v2.jpg)
+
+**Figure 10.:** Collecting vessels in the postnatal lymphatic vasculature are characterized by the presence of a high number of intraluminal bi-leaflet valves. These regions are exposed to disturbed flow in the valve sinuses (2) which strongly induces the expression of FOXC2. In contrast, the intraluminal side of valve leaflets is exposed to pulsatile laminar shear (1), which induces FOXC1 in addition to FOXC2. In the absence of FOXC1 and FOXC2, the cytoskeleton undergoes remodeling events in which actomyosin contractility is strongly induced with focal adhesion dynamics perturbed by loss of FOXC1 and intercellular junctions perturbed by loss of FOXC2, ultimately leading to valve degeneration.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/53814/elife-53814-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Expression of focal adhesion regulatory genes Actn1, Itgb3, Src, Tln1, Tln2, Tns1, Tns3, and Vcl in littermate Control and Foxc1/c2-compound mutant LECs isolated from the dorsal skin at E15.5. Graph shows RPKM values from RNA-seq analysis. * denotes p<0.05, ** denotes p<0.01, and *** denotes p<0.001.
 
 By utilizing inducible, endothelial-specific loss-of-function genetic mouse models, we show that FOXC2 predominately regulates lymphatic valve maintenance and maturation in comparison to FOXC1. Interestingly, we observed a reduction of FOXC1 expression in collecting vessels of EC-Foxc2-KO mice, but no discernable differences in FOXC2 expression were observed in EC-Foxc1-KO mice (Figure 2—figure supplement 1). This reduction in FOXC1 expression is likely a result of perturbed flow in EC-Foxc2-KO mutants due to the degeneration of lymphatic valves, but the maintained expression of FOXC2 in lymphatic valves of EC-Foxc1-KO mice may partly explain the differences in severity of the phenotypes observed in Foxc2 mutants compared to Foxc1 mutants. However, loss of both Foxc1 and Foxc2 in vivo induces accelerated valve degeneration and vascular remodeling in lymphatic collecting vessels compared to loss of Foxc2 alone, leading to a rapid onset of chylous effusion from collecting vessels. In vitro, both FOXC1 and FOXC2 knockdown in LECs resulted in increased actomyosin contractility, which was potentiated by shear stress. However, increased contractility was associated with increased focal adhesion number in FOXC1-KD LECs but increased focal adherens junctions in FOXC2-KD LECs. RhoA/ROCK signaling has been demonstrated to regulate blood endothelial cell barrier function and permeability by controlling stress fiber formation and focal adhesion dynamics (Amano et al., 1997; Carbajal et al., 2000; Cerutti and Ridley, 2017; van Nieuw Amerongen et al., 2000; Wojciak-Stothard et al., 2001) and a role for the RhoA/ROCK/myocardin-related transcription factor A (MRTF-A) signaling axis was recently implicated in LEC endothelial-to-mesenchymal transition downstream of TGF-β signaling induction (Yoshimatsu et al., 2020). Given increased hypercontractility observed in both FOXC1- and FOXC2-KD LECs, we hypothesized that RhoA/ROCK signaling was abnormally activated and pharmacological inhibition of ROCK was then able to rescue their perturbed cytoskeletal organization. Recently, ROCK inhibition was shown to reduce chylomicron transport into mesenteric lymphatic vessels by inducing lacteal junction ‘zippering’ and was proposed as a potential therapeutic for metabolic dysfunction and obesity (Zhang et al., 2018). Similarly, we observed an improvement in the reduction of discontinuous cell-cell junctions in mesenteric collecting vessels of both EC-Foxc2-KO and EC-Foxc1; Foxc2-DKO mice with ROCK inhibition, but degeneration of lymphatic valves was only partially rescued in Foxc2 mutants. Because lymphatic valve regions were still absent in EC-Foxc1; Foxc2-DKO mutants, this suggests that loss of adhesion to the ECM resulting from inactivation of Foxc1 in addition to impaired cell-cell adherens junctions from inactivation of Foxc2 strongly reduces LEC valve identity and survivability, which cannot be overcome by inhibition of cytoskeletal reorganization alone. Thus, we propose that FOXC1, in addition to FOXC2, is a key mediator of mechanotransduction where both transcription factors serve distinct, but complementary roles to maintain lymphatic valve integrity by regulating cytoskeletal organization (Figure 10).
 
@@ -124,7 +208,7 @@ In conclusion, our findings identify a key role for FOXC1, in addition to FOXC2,
 
 ## Materials and methods
 
-## Animal models
+### Animal models
 
 Foxc1fl/fl, Foxc2fl/fl, Foxc1fl/fl; Foxc2fl/fl, Cdh5-CreERT2, and Prox1-CreERT2 mice were described previously (Sasman et al., 2012; Sörensen et al., 2009; Srinivasan et al., 2007). Tamoxifen dissolved in corn oil was orally administered (75 or 100 μg per neonate) from P1 to P5 using techniques as previously described (Butchbach et al., 2007) with slight modifications. In some experiments, mice were injected subcutaneously with DPBS (10 μL/g) or Y-27632 (Fisher, #12-541-0, 15 μg/g) 1 to 2 hr after administration of Tamoxifen from P2 to P5.
 
@@ -134,46 +218,341 @@ SalI-linearized targeting vector (100 μg) was then electroporated into TL1 ES c
 
 Genotyping of mice for use in analysis was performed by Transnetyx Inc (Cordova, TN) using real-time PCR.
 
-## Mouse tissue collection, staining procedures, and image acquisition
+### Mouse tissue collection, staining procedures, and image acquisition
 
 Dissection, immunostaining, and imaging of the lymphatic vasculature in mesentery tissue from 4 week old C57Bl6 mice for whole-mounts was performed as previously described (Sabine et al., 2018). Briefly, dissected mesentery tissue was fixed with 4% PFA, washed with PBS, followed by incubation with 10–20% sucrose solutions, then washed again in PBS before incubation with blocking buffer containing 0.5% BSA, 5% donkey serum, and 0.5% Triton X-100 in PBS, immunostained with primary antibodies at room temperature for 24 hr, washed with 0.5% Triton X-100 for 24 hr, followed with incubation with secondary antibodies for another 24 hr, washed again, rinsed with PBS and cleared for 2 days in 88% Histodenz (Sigma, D2158) in RIMS buffer, and eventually mounted in fresh Histodenz solution.
 
 The lymphatic collecting vessel vasculature of neonates was analyzed by whole mount immunostaining of mesentery tissue harvested from pups at the indicated time. Briefly, mesentery tissue was dissected from the intestinal tract, laid out in plastic dish and left until it was firmly attached. Following fixation with 2% PFA in PBS, tissues were washed with PBS, then permeabilized and blocked in PBS solution containing 0.5% BSA, 5% serum, 0.3% Triton X-100, and 0.1% Sodium Azide. Tissues permeabilized/incubated with blocking buffer were then incubated with primary antibodies listed in Table 1 overnight followed by washes prior to incubation with Alexa Fluor conjugated secondary antibodies and dyes listed in Table 1 overnight. After subsequent washes, samples were post-fixed in 4% PFA, washed in PBS, and flat mounted on slides in mounting medium. Whole-mount staining images are shown with the same orientation, i.e., with flow in the direction of bottom-to-top.
 
-## Imaging
+**Table 1.**
+ Antibodies and Dyes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Reactivity</th>
+      <th>Host Species</th>
+      <th>Origin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Primary antibodies</td>
+    </tr>
+    <tr>
+      <td>Active caspase 3</td>
+      <td>Human/Mouse</td>
+      <td>Rabbit</td>
+      <td>R and D AF835</td>
+    </tr>
+    <tr>
+      <td>α9-integrin</td>
+      <td>Mouse</td>
+      <td>Goat</td>
+      <td>R and D AF3827</td>
+    </tr>
+    <tr>
+      <td>CD31</td>
+      <td>Mouse</td>
+      <td>Rat</td>
+      <td>BD Pharmingen 553370</td>
+    </tr>
+    <tr>
+      <td>Foxc1</td>
+      <td>Human/Mouse/Rat</td>
+      <td>Rabbit</td>
+      <td>Cell Signaling 8758S</td>
+    </tr>
+    <tr>
+      <td>Foxc2</td>
+      <td>Mouse</td>
+      <td>Sheep</td>
+      <td>R and D AF6989</td>
+    </tr>
+    <tr>
+      <td>Foxc2</td>
+      <td>Human/mouse</td>
+      <td>Rat</td>
+      <td>Kind gift from Dr. N Miura (Miura et al., 1997, Genomics)</td>
+    </tr>
+    <tr>
+      <td>Paxillin</td>
+      <td>Human/mouse</td>
+      <td>Mouse</td>
+      <td>BD Transduction Clone 349–610051</td>
+    </tr>
+    <tr>
+      <td>Phospho-MLC2 (Thr18/Ser19)</td>
+      <td>Human</td>
+      <td>Rabbit</td>
+      <td>Cell Signaling #36745</td>
+    </tr>
+    <tr>
+      <td>Prox1</td>
+      <td>Human</td>
+      <td>Goat</td>
+      <td>R and D AF2727</td>
+    </tr>
+    <tr>
+      <td>Prickle1</td>
+      <td>Human</td>
+      <td>Rabbit</td>
+      <td>Thermo Fisher PA5-51570</td>
+    </tr>
+    <tr>
+      <td>VE-Cadherin</td>
+      <td>Mouse</td>
+      <td>Rat</td>
+      <td>BD Pharmingen 555289</td>
+    </tr>
+    <tr>
+      <td>VE-Cadherin</td>
+      <td>Human/Mouse</td>
+      <td>Goat</td>
+      <td>R and D AF1002</td>
+    </tr>
+    <tr>
+      <td>Vegfr3</td>
+      <td>Mouse</td>
+      <td>Goat</td>
+      <td>R and D AF743</td>
+    </tr>
+    <tr>
+      <td>Vinculin</td>
+      <td>Human</td>
+      <td>Mouse</td>
+      <td>Sigma – Clone hVIN-1 V9131</td>
+    </tr>
+    <tr>
+      <td colspan="4">Secondary Antibodies</td>
+    </tr>
+    <tr>
+      <td>Alexa 405-conjugated</td>
+      <td>Rat</td>
+      <td>Donkey</td>
+      <td>Abcam ab175670</td>
+    </tr>
+    <tr>
+      <td>Alexa 488-conjugated</td>
+      <td>Rabbit/Rat/Sheep Goat/Mouse</td>
+      <td>Donkey</td>
+      <td>Thermo Fisher</td>
+    </tr>
+    <tr>
+      <td>Alexa 555-conjugated</td>
+      <td>Goat/Mouse/Rabbit Rat</td>
+      <td>Donkey</td>
+      <td>Thermo Fisher</td>
+    </tr>
+    <tr>
+      <td>Alexa 568-conjugated</td>
+      <td>Goat/Rat</td>
+      <td>Goat/Donkey</td>
+      <td>Thermo Fisher</td>
+    </tr>
+    <tr>
+      <td>Alexa 647-conjugated</td>
+      <td>Goat/Mouse/Rabbit Rat</td>
+      <td>Donkey</td>
+      <td>Thermo Fisher</td>
+    </tr>
+    <tr>
+      <td colspan="4">Dyes</td>
+    </tr>
+    <tr>
+      <td>Hoechst 33342</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Thermo Fisher</td>
+    </tr>
+    <tr>
+      <td>Alexa 488-conjugated phalloidin</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Thermo Fisher</td>
+    </tr>
+    <tr>
+      <td>DAPI-containing Prolong Gold antifade reagent</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Thermo Fisher</td>
+    </tr>
+  </tbody>
+</table>
+
+### Imaging
 
 Imaging was performed using a Zeiss AxioVision fluorescence microscope and Zeiss Axiovision software, Zeiss LSM-510 Meta, LSM-800 and LSM 880 confocal microscopes and Zeiss Zen Blue acquisition software, or using a Nikon A1 Confocal Laser Microscope System NIS-Elements software. Images were processed with Imaris and Adobe Photoshop software. Imaris colocalization function was used to produce pictures showing p-MLC2 (Figure 4b), vinculin (Figure 4c) or paxillin (Figure 4—figure supplement 1b) staining that is associated with F-actin staining.
 
-## RNA isolation and qPCR analysis
+### RNA isolation and qPCR analysis
 
 Hearts from neonatal mice were digested in collagenase Type I solution (2 mg/mL) for 40 min at 37°C with gentle agitation. Cells were then filtered through a 70 μm cell strainer and the pellet was resuspended in Buffer 1 (PBS, 0.1% BSA, 2 mM EDTA, pH 7.4). The cell suspension was then incubated with magnetic Dynabeads (Invitrogen) pre-coated with CD31 antibody to isolate the endothelial cell population. After several washes with Buffer 1, RNA was extracted from endothelial cells using RNA STAT solution (Tel-Test) followed by phenol-chloroform treatment. Extracted RNA was subjected to DNAse I treatment and concentration was determined using a NanoDrop machine (Thermo Scientific). cDNA was synthesized using an iScript reverse transcriptase kit (Bio-Rad) according to the manufacturer’s instructions. Triplicates of cDNA samples for qPCR analysis were performed using a Fast qPCR machine (Applied Biosystems), Fast SYBR reaction mix (Applied Biosystems), and gene specific primer sets. Peptidylprolyl isomerase A (Ppia) or 18S was used as an internal standard for mRNA expression. Primer sequences are provided in Table 2.
 
-## Cell transfection and immunostaining
+**Table 2.**
+ Primers used for qPCR analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Foxc1</td>
+      <td>TTCTTGCGTTCAGAGACTCG</td>
+      <td>TCTTACAGGTGAGAGGCAAGG</td>
+    </tr>
+    <tr>
+      <td>Foxc2</td>
+      <td>AAAGCGCCCCTCTCTCAG</td>
+      <td>TCAAACTGAGCTGCGGATAA</td>
+    </tr>
+    <tr>
+      <td>Ppia</td>
+      <td>CAAATGCTGGACCAAACACA</td>
+      <td>TGCCATCCAGCCATTCAGTC</td>
+    </tr>
+    <tr>
+      <td>18S</td>
+      <td>GAAACTGCGAATGGCTCATTAAA</td>
+      <td>CCACAGTTATCCAAGTAGGAGAGGA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell transfection and immunostaining
 
 Culture of human intestinal LECs was performed as described previously (Sabine et al., 2015). LECs were fixed using 4% PFA in PBS, then permeabilized with 0.1% Triton X-100 followed by blocking with 5% donkey serum and incubation with primary and secondary antibodies listed in Table 1. Knockdown experiments were performed by transfecting cells with 40 nM siRNA using Lipofectamine RNAiMAX (Invitrogen). siRNAs are listed in Table 3. Knockdown efficiency was confirmed by immunostaining (Figure 3—figure supplement 1d,e). LECs were analyzed after 48 hr, or used 24 hr post-transfection for flow experiments. For rescue experiments, transfected LECs were treated with vehicle control or 10 µM Y-27632 (StemCell, 72304) diluted in PBS every 12 hr with analysis at 48 hr. No cell lines from commonly misidentified cell lines were used. Primary lymphatic endothelial cells were isolated and cultured as described in Norrmén et al., 2009. Cell identity was confirmed by staining for lymphatic endothelial cell marker PROX1. Cells are isolated and cultured in the presence of 30 µg/ml Gentamicin and 15 ng/ml Amphotericin B, cultured for maximally 10–12 passages and tested negative for mycoplasma contamination by DNA staining.
 
-## In vitro flow experiments
+**Table 3.**
+ List of siRNAs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Species</th>
+      <th>Company</th>
+      <th>Reference (Sequence)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control</td>
+      <td>Human</td>
+      <td>QIAGEN</td>
+      <td>AllStars Neg. Control siRNA-1027281</td>
+    </tr>
+    <tr>
+      <td>FOXC1</td>
+      <td>Human</td>
+      <td>Origene</td>
+      <td>SR320173 #1 -rGrArUrArArArArCrArCrUrArGrArArGrUrUrArCrCrUrATT #2 - rCrUrArGrUrCrCrArUrGrUrCrArArArUrUrUrUrArCrUrAAA</td>
+    </tr>
+    <tr>
+      <td>FOXC2</td>
+      <td>Human</td>
+      <td>Thermo Scientific (Dharmacon)</td>
+      <td>FISSH-000119 (AGGUGGUGAUCAAGAGCGAUU) FISSH-000321 (CAACGUGCGGGAGAUGUUCUU)</td>
+    </tr>
+  </tbody>
+</table>
+
+### In vitro flow experiments
 
 Flow experiments with cultured LECs were performed as described previously (Sabine et al., 2015). Briefly, LECs were seeded at confluence on slides (μ-Slide I0.8 Luer; Ibidi) coated with 40 µg/ml human fibronectin, cultured for 24 hr and then subjected to LSS (4 dyn/cm2), OSS (4 dyn/cm2 and flow direction change every 4 s) using Ibidi Pump system, or kept in static conditions for an additional 24 hr prior to fixation, immunostaining, and mounting using Ibidi Mounting Medium (ibidi GmbH).
 
-## Forkhead box C transcription factor binding prediction analysis
+### Forkhead box C transcription factor binding prediction analysis
 
 Putative FOX-binding sites were determined first by using the Hypergeometric Optimization of Motif EnRichment (HOMER) (Heinz et al., 2010) suite of tools to scan the entire Genome Reference Consortium Human Build 37 (GRCh37 or hg19) genome corresponding to the conserved RYMAAYA FOX transcription factor binding motif. The output file was then uploaded to the UCSC genome browser (Kent et al., 2002) to identify putative binding sites corresponding to transcriptionally active areas as indicated by histone modification, DNAse sensitivity, and additional transcription factor chromatin immunoprecipitation data as per work reported and summarized on the Encyclopedia of DNA Elements (ENCODE; https://genome.ucsc.edu/ENCODE/)(2012). Putative sites in the human genome were then searched against the mm10 mouse genome using the ECR Browser (https://ecrbrowser.dcode.org) (Ovcharenko et al., 2004) and rVista 2.0 tools to identify conserved and aligned putative binding sites between mouse and human sequences.
 
-## ChIP assay
+### ChIP assay
 
 Human dermal lymphatic endothelial Cells (HDLECs) from juvenile foreskin (Promo Cell, #C12216) (https://www.promocell.com/product/human-dermal-lymphatic-endothelial-cells-hdlec/) were cultured and used according to the manufacturer's protocol. The cells were cross-linked with 1% formaldehyde, followed by sonication. The sheared chromatin was immunoprecipitated with dynabeads (Invitrogen, #10004D) conjugated with anti-FOXC2 antibody (Abcam, ab5060), anti-FOXC1 antibodies (Origene, TA302875 and Abcam, ab5079), or control IgG (Thermo Fisher Scientific, # 02–6202). DNA extraction and PCR were performed as previously described (Fatima et al., 2016) with primers listed in Table 4 targeting identified evolutionary conserved regions (ECRs) containing putative binding site sequences shown underlined listed below. Images were acquired with a ChemiDoc Touch Imaging System (Bio-Rad) and band intensities were analyzed with Image Lab software.
 
-## Quantification
+**Table 4.**
+ Primers used for ChIP analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Evolutionary Conserved Region (ECR)</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PRICKLE1 ECR-1</td>
+      <td>ACACAAGGCGGTGCTCTAAT</td>
+      <td>CTTGTTTCAAATGGGTGCT</td>
+    </tr>
+    <tr>
+      <td>PRICKLE1 ECR-2</td>
+      <td>GCAAATGGCACATTTAAGCA</td>
+      <td>TGGCTCCTTTTCTTTGCTGT</td>
+    </tr>
+    <tr>
+      <td>PRICKLE1 ECR-3</td>
+      <td>AGGCAGACCCTTTTTGGAAT</td>
+      <td>GGAAGCTTGCAACTGTCTCC</td>
+    </tr>
+    <tr>
+      <td>PRICKLE1 ECR-4</td>
+      <td>GCAAGTGTGCAAACCCTTAAC</td>
+      <td>CAGCTGGAGCCTGAAGAAAG</td>
+    </tr>
+    <tr>
+      <td>PRICKLE1 ECR-5</td>
+      <td>CCACCAGACAGCAAGATGAA</td>
+      <td>TTGACCGTCCCCAACATTAT</td>
+    </tr>
+    <tr>
+      <td>PRICKLE1 ECR-6</td>
+      <td>TGCCTTGTTCATGGTCTCAG</td>
+      <td>AAGAAAAACAAACGGCATCG</td>
+    </tr>
+    <tr>
+      <td>ARHGAP21 ECR-1</td>
+      <td>GCTTGCTAGCCAAGGACAAG</td>
+      <td>CCTACCTGCAACCTGGTGAT</td>
+    </tr>
+    <tr>
+      <td>ARHGAP21 ECR-2</td>
+      <td>ATCACCAGGTTGCAGGTAGG</td>
+      <td>GGCAGAACTGTAGGTTTACATTTAG</td>
+    </tr>
+    <tr>
+      <td>ARHGAP21 ECR-3</td>
+      <td>TGTGGAAGGCCATTCTATGA</td>
+      <td>GTTTTGCAAAGGCTTCAACC</td>
+    </tr>
+    <tr>
+      <td>ARHGAP23 ECR-1</td>
+      <td>CCTCCCTGCTCCTAAGTTGA</td>
+      <td>CCAAGTCTTTCAGCCCTGTC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Quantification
 
 To identify lymphatic valves, mesentery tissue was stained with PROX1 antibody and areas of high expression were quantified as mature (visible leaflets) or immature (no visible leaflets) on four lymphatic collecting vessels per individual. Total number of valves were determined and percent of mature valves was normalized to the total counted per individual. For assessment of apoptosis in lymphatic collecting vessels, mesentery tissue was immunostained with PROX1 and active caspase-3 antibody and the percentage of PROX1/caspase 3-positive LECs was quantified from 20X high-power fields generated from confocal z-stacks using Fiji software to determine the total number of LECs per field using thresholded PROX1 immunostaining. Quantification was completed from three biological replicates.
 
 For in vitro quantifications, relative nuclear intensity levels were measured using Fiji software. Nuclei were considered as regions of interest from thresholded Hoechst staining pictures. FOXC1 or FOXC2 intensity was then measured in each nuclei using RawIntDen function. For quantification of F-actin and p-MLC2 area per cell, LECs were fist manually segmented and defined as individual regions of interest, then F-actin (or p-MLC2) staining was thresholded using similar parameters for all pictures and F-actin+ (or p-MLC2+) area was measured per each region of interest. Quantification was completed from three independent experiments.
 
-## Statistics
+### Statistics
 
 Statistical analysis for in vivo experiments was performed using GraphPad Prism v5 or v8. P values were obtained by performing a 2-tailed Student’s t test or one-way ANOVA and Tukey’s test. Data are presented as mean ± standard deviation of representative experiments from at least three biological replicates. For quantification of apoptosis in LECs of compound Foxc1; Foxc2 mutant mice, the ROUT method with Q set to 1% was used to identify outliers in the data set that were then excluded from statistical analysis using student’s t-test. P values less than 0.05 were considered statistically significant. Statistical analysis for in vitro experiments was performed using GraphPad Prism v8 to perform mixed-effects analysis and calculation of correlation coefficients. P values less than 0.05 were considered statistically significant for mixed-effects analysis.
 
-## Study approval
+### Study approval
 
 All procedures and animal studies were approved by Northwestern University’s IACUC or by the Animal Ethics Committee of Vaud, Switzerland.

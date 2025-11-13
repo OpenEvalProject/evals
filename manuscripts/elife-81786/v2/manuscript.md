@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Biophysics and Biophysical Chemistry, Johns Hopkins University School of Medicine Baltimore United States
-2. https://ror.org/00t9vx427 Department of Biophysics, University of Texas Southwestern Medical Center Dallas United States
+1. Department of Biophysics and Biophysical Chemistry, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Department of Biophysics, University of Texas Southwestern Medical Center Dallas United States ([ROR:00t9vx427](https://ror.org/00t9vx427))
 
 † Corresponding author
 
@@ -37,9 +37,29 @@ Here, we report that budding yeast topo II (ScTop2) and both human TOP2α (HsTOP
 
 ## Results
 
-## Budding yeast topo II forms higher-order collectives in solution
+### Budding yeast topo II forms higher-order collectives in solution
 
 Limited proteolysis studies (Austin et al., 1995), as well as primary sequence analysis using the disordered protein prediction algorithm IUPRed2A (Erdős and Dosztányi, 2020), indicate that the CTDs of eukaryotic topo IIs are long, intrinsically disordered regions (IDRs) (Figure 2A). IDRs have been shown to facilitate the self-assembly of macromolecules into liquid-like condensates through phase separation in a variety of protein systems (Banani et al., 2017; Lyon et al., 2021). Many proteins that undergo phase separation possess IDRs that exhibit low amino acid sequence complexity (Franzmann and Alberti, 2019; Uversky, 2017); exceptions include factors that support the initiation of DNA replication in metazoans, which have an IDR sequence complexity similar to that of folded proteins except for a lack of aromatic residues (Parker et al., 2021; Parker et al., 2019), and the Nephrin Intracellular Domain (NICD) (Pak et al., 2016). Analysis of the relative amino-acid composition of topo II CTDs shows that despite having relatively sparse sequence homology to each other (Figure 2—figure supplement 1), the elements generally have a high lysine content (≥15%), a moderately high amount of serine (~10%), aspartate, and glutamate (10%), and a very low percentage of each aromatic amino acid (<5%) (Figure 2). Despite these similarities, eukaryotic topo II CTDs can have different compositions of positively and negatively charged amino acids and varied isoelectric points (pI = 5.5–9.6) (Figure 2B). Overall, the compositional properties of the topo II CTDs are more similar to those of the eukaryotic replication initiators, as opposed to low-complexity sequences found in representative LLPS-forming proteins such as human FUS (Wang et al., 2018a) or DDX4 (Nott et al., 2015; Figure 2—figure supplement 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig2-v2.jpg)
+
+**Figure 2.:** (A) General schematic of eukaryotic topo II with color coded domains on right. Graphs show disorder tendency of primary sequence calculated by IUPred2A for budding yeast and human topo IIs. Values above 0.5 signify disorder. (B) Relative amino acid composition of various eukaryotic topo II CTDs with respective isoelectric points and relative breakdowns of amino acid composition and groups. (C) Representative images of ScTop2 at different concentrations under phase-separating conditions. The quasirandom plot quantifies puncta number across three different micrographs for each condition. The solid bar bisecting the plots corresponds to the geometric mean area for each set of data (quantified by the boxed number). (D, E) Representative images of (D) 1µM Cy3-ScTop2 and (E) 500nM Cy3-ScTop2 with and without DNA substrates or, in (E), with heparin. The concentration of Cy5-200 bp DNA and pSG483 in (D) is 50nM and 5nM, respectively. 50nM Cy5-200 bp in the absence of protein is shown as a negative control. Scale bar in (C), (D), and (E) is 5µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Sequence alignment of eukaryotic topo II CTDs from several representative organisms. Sequences used for each protein are as follows: DmTop2 (1191–1447), DrTop2β (1210–1618), XlTop2β (1207–1696), HsTOP2β (1209–1624), MmTop2β (1199–1612), DrTop2α (1185–1570), XlTop2α (1183–1579), HsTOP2α (1193–1531), MmTop2α (1190–1528), ScTop2 (1178–1428), SpTop2 (1217–1485). Sequence alignment and table was generated using the MSA package in R studio (Bodenhofer et al., 2015).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Heatmap displaying relative amino acid percentages of eukaryotic Topo II CTDs and different IDRs of proteins that drive LLPS in vitro. Sequences used for topo IIs are the same as Figure 2—figure supplement 1, others are DmCdt1 (1-294) (Parker et al., 2019), DmCdc6 (1-246) (Parker et al., 2019), HsFUS (1-211) (Wang et al., 2018a), HshnRNPA1 (186-320) (Molliex et al., 2015), CeLaf-1 (1-168) (Elbaum-Garfinkle et al., 2015), HsDDX4 (1-236) (Nott et al., 2015), HsCBX2 (40-496) (Tatavosian et al., 2019), HsMED1 (948–1574) (Sabari et al., 2018), HsBRD4 (674–1351) (Sabari et al., 2018).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Representative images of certain timepoints are shown above quantification. Scale bar is 5µm. Quasirandom plots show the distribution of puncta area at different timepoints. Quantification was performed as per Figure 2C.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Quasirandom plots show the distribution of puncta area. Experiments all contain 500nM ScTop2. Quantification was performed as per Figure 2C.
 
 Since the IDRs of eukaryotic topo IIs share compositional similarities with eukaryotic replication initiators, which undergo phase separation (Parker et al., 2019), we asked whether they could also form condensates in vitro. To address this question, we first focused on budding yeast topo II (ScTop2). We purified ScTop2, N-terminally labeled the protein with a Cy3 fluorophore, buffer exchanged the sample into high salt (600mM), and diluted the labeled protein to physiological salt concentrations (150mM) to induce phase separation. Potassium acetate (KOAc) was chosen as a salt for these and other subsequent experiments, as K+ is the predominant monovalent cation and acetate is a high abundance anion in both human and yeast cells (internal Na+ and Cl- concentrations are negligible in these systems) (Ince et al., 1987; Rimareva et al., 2017). After dilution, samples were imaged using fluorescence confocal microscopy (Figure 2C). At the lowest concentration of ScTop2 tested (50nM), no visible bodies were seen. However, at moderate protein concentrations (375nM), small circular fluorescent bodies became apparent. These bodies (referred to hereafter as ‘puncta’) grew in size and number as protein concentration increased. While conducting these experiments, we noted that the formation of puncta was time-dependent, with puncta appearing within 10min of mixing and plateauing in number and size after~60min (Figure 2—figure supplement 3A). To ensure we were operating under a relatively equilibrated regime, the subsequent experiments were analyzed 1.5hr after condensation was induced.
 
@@ -47,15 +67,39 @@ Because topo IIs are DNA-binding proteins, we next assessed whether the observed
 
 To further probe the mechanism by which DNA promotes condensation of topo II, we next conducted a concentration- and length-dependent titration of DNA against 500nM Cy3-ScTop2 and imaged the samples by fluorescence confocal microscopy (Figure 2E, Figure 2—figure supplement 4). The shortest DNA tested (50bp, roughly the binding site size of the catalytic region) did not increase the number nor the size of condensates at any concentration tested. By comparison, the 100bp, 200bp, and pSG483 DNA substrates all enhanced condensate formation at intermediate mass concentrations (5–20ng/µL). To determine whether the stimulation of condensation was dependent on DNA, a titration was also conducted with another polyanionic substrate, heparin. Interestingly, heparin failed to stimulate DNA condensation at the observed concentrations. Together, these findings establish that condensate formation by ScTop2 is aided by extended DNA segments and is not stimulated simply by the presence of a poly-anionic substrate.
 
-## ScTop2-DNA assemblies possess fluid-like characteristics
+### ScTop2-DNA assemblies possess fluid-like characteristics
 
 We next sought to determine whether puncta formed by ScTop2 display liquid-like properties. Nucleic-acid binding proteins that undergo phase separation tend to exhibit a biphasic response with respect to the relative concentration of DNA or RNA (Du and Chen, 2018; Maharana et al., 2018; Zhang et al., 2015): as a nucleic acid substrate is titrated against a fixed amount of protein, condensation is first promoted, but then as concentrations are increased further, the protein is solubilized and condensation is antagonized. To determine whether puncta formed by ScTop2 with DNA behave in this manner, varying concentrations of unlabeled pSG483 were mixed with different amounts of the Cy3-labeled protein (Figure 3A, Figure 3—figure supplement 1). At low DNA concentrations (5–10nM), the number and size of puncta increased relative to samples in the absence of DNA. By contrast, as the DNA concentration was increased further, puncta disappeared. Interestingly, at the intermediate concentrations of DNA tested (25 and 50nM), observed bodies took on elongated, fibril-like shapes for the plasmid substrate (Figure 2E); by comparison, puncta formed with short DNAs remained spherical. This size-dependent type of behavior has been previously seen with other DNA-binding proteins that undergo LLPS, such as HP1α (Keenen et al., 2021).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative images of assemblies formed during pairwise Cy3-ScTop2 and pSG483 concentration titrations. (B) Quantification of relative intensity recovered from puncta over 15min following photobleaching. For each condition, 10 different puncta were bleached across three different technical replicates. Data are fit to a mean-of-relative-intensity curve and shaded regions are the standard deviation of each sample. (C) Representative images of 1µM Cy3-ScTop2 and 5nM pSG843 time-lapses at specific time points to show fusion events between puncta. Scale bar in (A) is 5µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Quasirandom plots show the distribution of puncta area across different pairwise ScTop2 and pSG483 concentrations. Quantification was performed as per Figure 2C.
+
 One key attribute of true liquid-like (as opposed to gel-like) condensates is that molecules can freely diffuse inside the droplets, which themselves have an ability to coalesce into larger condensates. To test whether ScTop2 can freely diffuse inside the bodies seen in our micrographs, puncta were formed in the absence or presence of increasing concentrations of pSG483 and subjected to fluorescence recovery after photobleaching (FRAP) (Figure 3B). In reactions lacking DNA, the intensity of the Cy3-ScTop2 puncta did not recover following photobleaching, suggesting that these bodies possess more gel-like characteristics (Frey et al., 2006; Jawerth et al., 2020). By contrast, in the presence of 5nM unlabeled pSG483, a fraction of the Cy3-ScTop2 intensity (roughly one-third) had recovered by the same 15minute mark. As the pSG483 concentration increased, the mobile protein fraction inside the puncta appeared to decrease, with the fibrillar bodies (25–50nM DNA) showing somewhat less fluidity than the spherical droplets (5–10nM DNA). Time-lapse microscopy of puncta containing ScTop2 and 5nM pSG483 also revealed fusion events between puncta on the order of minutes (Figure 3C). Thus, while the smaller puncta formed by ScTop2 on its own are relatively static, the protein in both the spherical and fibrillar structures formed by ScTop2 in the presence of DNA is dynamic, exhibiting the defining attributes of condensates formed by LLPS.
 
-## Ionic coacervation by the CTD constitutes the multivalent interactions that drive LLPS by ScTop2
+### Ionic coacervation by the CTD constitutes the multivalent interactions that drive LLPS by ScTop2
 
 We next sought to determine whether the CTD of topo II, owing to its intrinsically disordered nature, is responsible for supporting LLPS. We purified both the S. cerevisiae enzyme lacking this region (ScTop2ΔCTD) and the ScTop2 CTD itself. Both proteins were N-terminally labeled with Cy3 and prepared in the same manner as wild type ScTop2 before imaging with confocal microscopy (Figure 4A). The Cy3-ScTop2ΔCTD construct did not form condensates in either the presence or absence of a 200bp Cy5-labeled DNA, even at protein concentrations as high as 1μM. By comparison, the Cy3-labeled CTD failed to form condensates in the absence of DNA but did form bodies in the presence of 50nM Cy5-labeled 200bp duplex at a lower salt concentration of 50mM KOAc (Figure 4A). Interestingly, several puncta formed with the CTD alone integrated DNA into only a portion of the bodies, as compared to the fully homogenous distribution of DNA seen with full-length ScTop2 (Figure 4A). The addition of PEG as a crowding agent also induced puncta formation by the CTD, but in a manner that did not require DNA, indicating that this region can weakly associate with itself (Figure 4—figure supplement 1). Overall, these findings demonstrate that the ScTop2 CTD is necessary for supporting LLPS by the full-length enzyme and that DNA can act as a scaffold to promote co-localization of the element.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative images of 1µM Cy3-ScTop2ΔCTD in 150mM KOAc and 1μM ScTop2CTD in 50mM KOAc mixed with and without 50nM Cy5-200 bp DNA. (B) Representative images of 500nM Cy3-ScTop2 mixed with varying concentrations of pSG483 in the presence of different buffer conditions. Control reaction has 150mM KAcetate. Salt concentrations represent the final values in solution. 1,6-hexanediol (1,6-HD) weight by volume percent was added to 150mM KAcetate solution. (C) Representative images of puncta/fibrils comparing phosphatase-treated and untreated ScTop2. (D) List of phosphorylated amino acids as identified by mass spectrometry analysis. (E) FRAP analysis of phosphatase-treated protein. (F) Quantification of mobile phase for Figures 2B and 3E Error bar is standard deviation for each condition. Two-Way ANOVA with bonferroni post hoc analysis was done on ten puncta per condition. ns is non-significant, **** means p<0.0001. Scale bars in (A), (B), and (C) are 5µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Representative images contain 1µM ScTop2 CTD mixed with varying concentrations of PEG3350 or PEG8000. Scale bars are 5µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Quasirandom plots showing the quantification of puncta formed by ScTop2 with varying concentrations of salt and 1,6-hexanediol added. (B) Activity assay with 5% and 10% 1,6-hexanediol added. (C) Representative images of various ScTop2CTD concentrations mixed with 50nM Cy5-200 bp DNA under different salt or 1,6-hexanediol concentrations. All 1,6-HD samples had 50mM KAcetate. Quantification was performed as per Figure 2C. Scale bars are 5µm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Quantification of puncta from control and lambda phosphatase-treated protein. Quantification was performed as per Figure 2C.
 
 The enrichment of charged amino acids in the ScTop2 CTD suggested that ionic interactions might play a particularly key role in facilitating LLPS. To test this assumption, 500nM Cy3-ScTop2 was titrated with varying concentrations of pSG483 across four different salt concentrations (Figure 4B, Figure 4—figure supplement 2). In the absence of DNA, the small puncta formed by ScTop2 alone at the control potassium acetate concentration (150mM) disappeared as soon as salt levels were increased to 200mM. By comparison, in the presence of pSG483, the large condensates seen at 150mM salt persisted until potassium acetate levels reached 400mM. Interestingly, the intermediate salt concentrations still supported solubilization of ScTop2 condensates by elevated levels of plasmid DNA. To determine whether aromatic contacts might contribute to promoting phase separation by ScTop2, we added 1,6-hexanediol (1,6-HD), an aliphatic alcohol frequently used to disrupt such interactions, to condensation reactions (Figure 4B, Figure 4—figure supplement 2). Interestingly, 1,6-HD strongly promoted the aggregation of ScTop2 into large, irregular bodies in both the presence and absence of DNA while also preventing the resolubilization of the bodies when pSG483 concentrations were increased. The addition of higher levels of 1,6-HD (e.g. 10%) also severely disrupted DNA supercoil relaxation by ScTop2 (Figure 4—figure supplement 2), indicating that the agent has a detrimental effect on the protein.
 
@@ -63,17 +107,33 @@ To isolate any effects that salt or 1,6-HD might have on the topo II catalytic c
 
 The propensity of IDRs to form condensates can be fine-tuned by post-translational modifications (Larson et al., 2017; Nott et al., 2015; Ryan et al., 2018; Wang et al., 2018b; Wang et al., 2014). Since topo II CTDs are modified by phosphorylation (Bedez et al., 2018; Cardenas et al., 1992), we asked whether phosphorylation status might impact the enzyme’s ability to undergo LLPS. To do this, ScTop2 was purified and treated with lambda phosphatase; the phosphatase and non-phosphatase treated proteins were then mixed with varying concentrations of pSG483 and imaged by fluorescence confocal microscopy (Figure 4C). In the absence of DNA, the phosphatase-treated and untreated (control) enzymes both had the same condensate-forming propensity. However, as pSG483 was first added (5nM), phosphatase treated ScTop2 produced a larger number of small puncta as compared to the smaller number of large droplets formed with the control reaction (Figure 4C, Figure 4—figure supplement 3). As pSG483 concentration was further increased (25nM), the phosphatase-treated sample produced more elongated fibrillar bodies than the control. At still higher DNA levels, puncta were no longer apparent, indicating that solubilization had occurred. Mass spectrometry analysis confirmed that the phosphatase stripped phosphates off from all amino acids in the CTD (Figure 4D). Reasoning that the observed difference in behavior between native and phosphatase-treated ScTop2 at lower DNA concentrations might be due to differences in the fluidic properties of the bodies formed by the dephosphorylated protein, we conducted FRAP studies of the puncta present in the phosphatase-treated reactions (Figure 4E). Similarly to the native phosphorylated samples, phosphatase- treated protein produced assemblies that failed to recover fluorescence intensity in the absence of DNA (Figure 4F). However, in contrast to the untreated protein, adding DNA did not increase the fluidity of the bodies formed by the phosphatase-treated protein. Thus, the phosphorylation status of ScTop2 does not control the ability of the protein to undergo LLPS but does change the physical behavior of the bodies that are formed when DNA is present.
 
-## ScTop2 LLPS promotes DNA catenation
+### ScTop2 LLPS promotes DNA catenation
 
 Phase separation in cells not only influences protein localization but can also modulate enzymatic activity (Banani et al., 2017; Lyon et al., 2021). To determine whether condensate formation might directly alter topo II catalytic function, we performed DNA supercoil relaxation assays under condensing and non-condensing conditions. ScTop2 was buffer exchanged and diluted into a buffer equivalent to that used for phase separation assays, but with the addition of 1mM magnesium acetate, which is required for activity (this concentration of Mg2+ has a negligible impact on phase separation (Figure 5—figure supplement 1A)). Protein and a fixed amount of pSG483 (25nM) were mixed and incubated at ambient temperature for 1.5hr to provide time for condensates to form. ATP was next added to start the assay; 5min later, reactions were stopped by the addition of EDTA, SDS and proteinase K, and analyzed by native agarose-gel electrophoresis. Before the addition of ATP, samples with Cy3-labeled ScTop2 were imaged to check for the presence of condensates in the buffers used for the assays. Two different salt concentrations and six different enzyme concentrations were assessed to correlate condensate formation with reaction efficiency and the types of products produced (Figure 5A). At 150mM KOAc and 100nM ScTop2, no condensates were apparent in images but supercoil relaxation had progressed to transform~80% of the starting substrate. By contrast, as protein concentration was increased, condensates became visible and pSG483 converted to a product that failed to enter the wells of the gel. When the salt concentration was elevated to 400mM, no condensates were visible at any enzyme concentration. Moreover, under these conditions, only relaxed DNA topoisomers were observed and no well-shifting was seen.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig5-v2.jpg)
+
+**Figure 5.:** (A) Activity assay at different ScTop2 concentrations with 25nM pSG483 and either 150mM or 400mM KAcetate. LLPS does not occur at the higher salt concentration. Confocal images were taken before the addition of ATP and with Cy3-labeled protein. ScTop2 concentration in the ‘no ATP’ reaction is 1μM. No ATP and no topoisomerase reactions are shown as negative controls. (B) Modified activity assay with 1μM ScTop2 and 25nM pSG483. Workflow is shown at right. (C) Activity assay performed with ScTop2ΔCTD and 25nM pSG483. Confocal images were taken before the addition of ATP. Controls are similar to (A). (D) Modified activity assay of different ScTop2ΔCTD concentrations with 25nM pSG483 where reactions were treated with restriction enzymes to linearize or nick reaction products. ‘–ATP’ samples show where supercoiled, linear, and nicked samples run on the gel. Workflow is shown at top. Scale bars in (A) and (C) are 5µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Magnesium does not affect LLPS by ScTop2. Quantification of puncta with varying concentrations of ScTop2 mixed with 25nM pSG483 in the presence and absence of 1mM magnesium. Quantification was performed as per Figure 2C. (B) Full length ScTop2 forms a small population of knots prior to promoting catenation. An activity assay of full length ScTop2 is shown in which DNA substrates were nicked to reveal knots formed by the enzyme. All lanes contain nicked DNA.
 
 The use of SDS and proteinase K as quenching agents disrupts any protein aggregates that might retard DNA mobility during native gel electrophoresis. As a result, the appearance of DNA that was unable to migrate into the gel under condensing conditions suggested that the topological state of the plasmid substrate had changed. Catenated DNA networks, such as those formed in the kinetoplasts of certain protists (Laurent and Steinert, 1970; Marini et al., 1980, Renger and Wolstenholme, 1972, Riou and Delain, 1969), represent one DNA species that is unable to be electrophoresed into an agarose gel matrix. To test whether the DNA products created by ScTop2 under condensate-forming conditions are catenanes, we attempted to unlink the catenated network using topo II or restriction enzymes that either linearize or singly nick pSG483 (Figure 5B). The activity assay protocol was modified such that after the addition of ATP under condensing conditions, either: (1) the buffer was adjusted to a higher salt concentration (400mM) to dissolve the condensates and the reaction was quenched, or (2) restriction enzymes with a single cutting or nicking site in the plasmid were added directly to condensates (formed in 150mM KOac) to facilitate DNA linearization. Electrophoresis of the products revealed that the addition of salt results in the disappearance of the well-shifted species and the appearance of relaxed plasmid topoisomers, including what appear to be subsets of relaxed dimeric and trimeric catenanes. By comparison, treating the samples with a nicking enzyme resulted in the retention of most of the well-shifted species, while treating the samples with a restriction enzyme that linearizes pSG483 caused the disappearance of the well-shifted species and the appearance of a single band in the gel (Figure 5B). Collectively, these observations establish that the well-shifted DNA species formed by ScTop2 in condensates is a network of interlinked (catenated) plasmids and that the catenation and decatenation activities of the enzyme can be directly controlled by phase separation.
 
 To further explore the switch in activity seen for ScTop2, assays were re-run at low (150mM) salt but now using the CTD-less construct, ScTop2ΔCTD, which does not phase separate (Figure 5C). Nearly complete supercoil relaxation was observed at 100nM of this enzyme but now as protein levels were increased, extensive DNA streaking was seen, forming not just high but also low molecular-weight products, particularly at the highest enzyme concentration tested. Previous studies of the topological products formed by DNA topoisomerases suggested that some of these products might correspond to knotted DNAs. To test this hypothesis, the products of reactions using 250nM, 500nM, and 1000nM ScTop2ΔCTD were either nicked (to remove any remaining supercoils) or linearized and then separated by gel electrophoresis (Figure 5D). At 250nM ScTop2ΔCTD, the major products were a nicked circle and a well-resolved ladder of bands visible below this species. As the protein concentration increased to 500 and 1000nM, the abundance of the nicked circle product decreased while bands in the lower part of the ladder became more pronounced (linearization of the products collapsed all species into a single band that co-migrated with the control linear band across all three samples). The pattern seen in the nicked samples is typical of that produced by DNA knotting reactions, in which each band corresponds to a different knot species with a characteristic number of crossovers or nodes (knots with more crossovers are more compact and hence migrate more quickly in the gel) (Figure 1; Hsieh, 1983; Liu et al., 1980; Wasserman and Cozzarelli, 1991). A repeat of the nicking experiment using full-length ScTop2 shows that this enzyme also forms knots, but that catenanes are again the principal product produced when condensation is permitted to occur (Figure 5—figure supplement 1B). Collectively, these data establish that the catalytic core of topo II is highly efficient at forming DNA knots at physiological enzyme concentrations, and that this activity can be routed into robust catenane production by the presence of the enzyme’s CTD.
 
-## Phase separation also occurs with human topo IIs to drive DNA catenation
+### Phase separation also occurs with human topo IIs to drive DNA catenation
 
 Although poorly conserved in terms of amino acid sequence order (Figure 2—figure supplement 1), the general composition of human topo II CTDs – charge-rich, aromatic-poor, a general lack of folded structure – parallels that of the ScTop2 CTD (Figure 2B). We therefore asked whether the two topo II isoforms encoded by humans, TOP2α and TOP2β, can also form condensates. Both enzymes were purified, N-terminally labeled with a Cy3 fluorophore, and imaged by confocal microscopy in the presence and absence of a Cy5-labeled 200bp DNA substrate (Figure 6A). TOP2α weakly formed spherical bodies on its own in the absence of DNA (at 1μM), whereas TOP2β produced larger puncta under the same conditions. When 50nM of a Cy5-200 bp DNA substrate was added, TOP2α showed a marked increase in LLPS; by comparison, puncta formation by TOP2β was only moderately enhanced at this higher DNA concentration, but the labeled oligonucleotide colocalized with the two proteins in both instances. Thus, as with ScTop2, human topo IIs also possess an ability to form condensates with DNA.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative images of 1µM Cy3-HsTOP2α and Cy3-HsTOP2β each with and without 50nM Cy5-200 bp DNA. (B, C) Confocal images of a pairwise titration of different Cy3-HsTOP2α and Cy3-HsTOP2β concentrations, respectively, with different concentrations of pSG483. (D, E) Activity assays at different HsTOP2α and HsTOP2β concentrations, respectively, with 25nM pSG483. Concentration of topo II in the ‘no ATP’ lane is 1µM. Confocal micrographs of puncta were taken with Cy3-labeled protein and before adding ATP. Scale bars in (A) and (B) are 5µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Quasirandomplots showing quantification of pairwise human (A) TOP2α and (B) TOP2β concentrations with varyingpSG483 concentrations. Quantification was performed as per Figure 2C.
 
 We next mapped out the phase response of TOP2α and TOP2β with respect to DNA and protein concentration using a plasmid substrate. TOP2α persistently showed a limited ability to form spherical puncta on its own, even at concentrations ≥250nM; these bodies were also substantially smaller than those of DNA-free ScTop2 (≤3 µm2 mean area) at the highest protein level tested (1µM) (Figure 6B, Figure 6—figure supplement 1A). By contrast, isolated TOP2β showed more spherical fluorescent bodies at lower protein concentrations (50–100nM), the size and number of which increased as protein concentration was increased until they reached an average dimension which exceeded that of DNA-free ScTop2 (Figure 6C, Figure 6—figure supplement 1B). For both proteins, the addition of pSG483 stimulated phase separation at low-to-moderate concentrations (more so for Top2α than Top2β) and resolubilized the condensates at higher levels. Collectively, these data show that while each of the eukaryotic TOP2s have slightly different condensate forming potential with respect to optimal protein and DNA concentration, they are all nonetheless capable of undergoing phase transitions in a manner stimulated by DNA (Figure 6—figure supplement 1. Figure 7). By contrast, isolated TOP2β showed more spherical fluorescent bodies at lower protein concentrations (50–100nM), the size and number of which increased as protein concentration was increased until they reached an average dimension which exceeded that of DNA-free ScTop2 (Figure 6C, Figure 6—figure supplement 1B). For both proteins, the addition of pSG483 stimulated phase separation at low-to-moderate concentrations (more so for Top2α than Top2β) and resolubilized the condensates at higher levels. Collectively, these data show that while each of the eukaryotic TOP2s have slightly different condensate forming potential with respect to optimal protein and DNA concentration, they are all nonetheless capable of undergoing phase transitions in a manner stimulated by DNA.
 
@@ -83,7 +143,7 @@ We next assessed the activities of TOP2α and TOP2β under conditions where cond
 
 During transcription, replication, and mitosis, discrete regions of DNA must be reversibly juxtaposed and separated in a highly controlled manner to support appropriate gene expression and cell division. Although type IIA topoisomerases regulate these topological transitions, how the enzymes selectively pass DNA strands to achieve desired outcomes (e.g. supercoil relaxation vs. decatenation) in an environment where duplex segments are densely packed is unknown. Here, we provide new insights into this question by showing that the catalytic core of eukaryotic topo II tends to form knots when acting on DNA at physiologic protein concentrations. We further show that at these same protein concentrations, the full-length protein – which bears an unstructured C-terminal element – efficiently forms phase-separated assemblies that locally concentrate DNA and promote DNA catenation.
 
-## Protein-DNA interactions drive LLPS by ScTop2
+### Protein-DNA interactions drive LLPS by ScTop2
 
 Many proteins that undergo phase separation possess intrinsically disordered regions (IDRs) that facilitate multivalent interactions between themselves and other macromolecules to drive condensation. Consistent with this trend, we found that the C-terminal IDR of budding yeast topo II is necessary to promote LLPS by the enzyme (Figure 4A). Interestingly, the CTDs of eukaryotic topo IIs in general display relatively sparse sequence conservation between one another (Figure 2—figure supplement 1), but they nonetheless share certain chemical features such as a high fraction of charged residues and low aromatic amino-acid composition (Figure 2B). We found that the isolated ScTop2 CTD was unable to form condensates on its own but could do so in the presence of DNA or a crowding agent such as PEG (Figure 4A, Figure 4—figure supplement 1). We also found that higher salt levels blocked this phase transition. This behavior indicates that the topo II CTD can interact with itself and that DNA can serve as a scaffold to further increase local protein concentration through coacervation, a well-studied phenomenon by which charged polymers associate with each other to form condensates (Aumiller and Keating, 2016; Banerjee et al., 2017; Pak et al., 2016).
 
@@ -91,7 +151,7 @@ Full-length ScTop2 also formed condensed bodies in the absence of DNA, as well a
 
 When DNA was present, the assemblies formed by full-length ScTop2 became larger and fluid. These bodies in turn could be dissolved either by increasing salt to non-physiological levels (400mM) or by increasing nucleic acid concentration (Figure 4B). The difference in salt and DNA sensitivities between the isolated ScTop2 CTD and the full-length enzyme is likely due to additional contacts with DNA that occur through the cleavage core of the enzyme (Dong and Berger, 2007) and the ATPase region (Laponogov et al., 2018). The type IIA topoisomerase cleavage core binds 20–30bp of DNA (Dong and Berger, 2007; Lee et al., 1989; Peng and Marians, 1995; Thomsen et al., 1990); given that larger DNA substrates are needed to promote LLPS (≥100bp) (Figure 2E), it is likely that DNA acts as a bridge to enhance condensation for native topo II as it does with the CTD alone. Collectively, our data indicate that multiple protein-DNA contacts, as well as protein-protein interactions between the CTDs, facilitate phase separation by ScTop2. Defining precisely how the topo II CTD and its amino acid composition helps manifest LLPS at a molecular level will require further investigation by mutagenesis and biophysical study.
 
-## The distribution of DNA products generated by topo II is controlled by local protein-DNA concentration and LLPS
+### The distribution of DNA products generated by topo II is controlled by local protein-DNA concentration and LLPS
 
 It is well established that at low (1–10nM) protein concentrations in vitro, eukaryotic topo II will generate steady-state distributions of DNA products roughly in accord with thermodynamic expectations for the concentration of DNA used in the reaction (Rybenkov et al., 1997): that is, supercoiled DNA will be relaxed, while catenated and knotted DNAs will be unlinked. However, when superphysiological amounts of topo II are used in such experiments (5–10µM [Padget et al., 2000]), it has been shown that circular DNAs can now become catenated (Hsieh, 1983), even if the concentration of the nucleic acid substrate is maintained at a relatively low level (e.g., 25–75µM•bp, a value 100- to 1000-fold lower than present in a human nucleus). The mechanism underlying this switch in activity, which drives a topological outcome against what would otherwise be expected for the thermodynamic equilibrium, has been unclear. DNA catenation with low levels of topo II can be induced in vitro by the addition of proteinaceous (Riou et al., 1985; Tse et al., 1984) or chemical (Krasnow and Cozzarelli, 1982) DNA condensing agents, which increase the close proximity of DNA strands to favor linking; the ability of moderate concentrations of enzyme to do the same implies that topo II can directly condense DNA strands, a concept validated here. Interestingly, the C-terminal domain of topo II has proven necessary for observing catenation in both the presence (Kawano et al., 2016) and absence (Shintomi and Hirano, 2021) of exogenous DNA condensing agents. We now show that this element is directly responsible for facilitating DNA and enzyme coalescence.
 
@@ -99,9 +159,17 @@ Our biochemical studies show that condensates formed by ScTop2 integrate DNA to 
 
 Why should elevated topo II levels lead to knotting and catenation? The Top2 core does not possess an inherent ability to distinguish crossovers within the same plasmid or between different plasmids. Despite this indiscriminate activity, a likely factor contributing to the ability of type II topoisomerases that lack an IDR to form knots, such as T4 topo II or ScTop2∆CTD, is the sharp DNA bend introduced by the cleavage region of the enzyme (Dong and Berger, 2007; Vologodskii et al., 2001; Figure 7A). At low protein concentrations, any given plasmid should have only a few enzymes bound at a time, which favors the binding and resolution of crossovers already present in the substrate, such as those arising from plectonemic supercoils (the affinity of topo II for supercoiled DNA is at least 10 fold greater than for relaxed substrates [Osheroff, 1986; Osheroff, 1987; Zechiedrich and Osheroff, 1990]). However, as the relative protein to DNA concentration increases, more DNA bends will be introduced by topo II binding, leading to increased compaction of the DNA and an increased likelihood of crossovers forming between different segments of the same plasmid (Figure 7B). When these crossovers are acted upon by another molecule of topo II, they will generate a knotted link. This model predicts that the density of knot crossovers should be proportional to the level of plasmid compaction facilitated by topo II, which is in turn dependent on the local relative ratio of topo II to DNA. Such a pattern is borne out by our data and of others (Figure 5D; Hsieh, 1983; Wasserman and Cozzarelli, 1991).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig7-v2.jpg)
+
+**Figure 7.:** (A) Low concentrations of topo II favor supercoil relaxation. Higher concentrations of topo II begin to compact DNA due to DNA bending by the cleavage core. (B) DNA compaction by topo II promotes knotting as crossovers transiently formed between loops within the same segment of DNA are acted upon on by the enzyme. (C) The topo II C-terminal domain aids in bridging together distal segments of DNA to favor the formation of inter-linked plasmids. (D) Schematic depicting how the relative distribution of topological species produced by topo II shifts as a function of protein concentration and depending on the presence or absence of the topo II CTD.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/81786/elife-81786-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Activity assay of with various ScTop2ΔCTD concentrations at low and high salt concentrations in the presence of 25nM pSG483. As the plasmid is not nicked in this assay, the knotted species are evident by the smearing in the low salt (150mM KOAc) reactions as protein concentration is increased.
+
 The formation of catenanes by full-length topo II is likely an extension of the DNA condensing behavior seen during LLPS, brought about by the ability of the C-terminal IDRs to create bridges between plasmid molecules that locally concentrate DNA and topo II. Here, DNA condensation will facilitate the formation of crossovers between two DNA molecules, such that the action of topo II will lead to plasmid interlinking and the formation of catenanes (Figure 7C). We note that CTD-less ScTop2 initially formed some catenated products in addition to knots at intermediate concentrations (250–500nM), but that the level of these products was relatively low compared to full-length topo II and that only knots were formed at the highest concentration of the CTD-less ScTop2 tested here (Figure 5D). We attribute this difference in behavior to the relative ability of topo II to pass strands between DNA loops formed within a plasmid as compared to between plasmids: as protein concentration increases, DNA will become sufficiently compacted such that strand passage in cis (forming knots) outcompetes passage in trans (forming catenanes) unless some mitigating factor is present to favor the formation of inter-DNA links (e.g., increasing local DNA concentration through condensation mediated by the topo II CTD). We note that at intermediate protein concentrations where condensate formation is inefficient (full-length topo II) or blocked (as when the CTD is missing), mixtures of knots, catenanes, and relaxed topoisomers also can be observed (e.g., Figure 5C), reflecting that the decision to form or dissolve links reflects an equilibrium balance between local enzyme/DNA concentration and the relative access to cis vs. trans crossovers (Figure 7D); however, as protein concentrations further increase, the presence of the topo II IDR strongly shifts this equilibrium toward catenation (when starting from supercoiled DNA), whereas its absence favors knotting. The observation that both knotting and catenation, but not supercoil relaxation, are abolished by high salt comports with this schema (Figure 4B, Figure 7—figure supplement 1): elevated ionic strength serves to both prevent the CTD from facilitating LLPS and weakens the primary interactions of DNA with the topo II catalytic core, antagonizing loop formation, and shifting enzyme activity toward favoring the passage of pre-existing crossovers, such as those found in plectonemically supercoiled substrates.
 
-## Implications of activity switching for topo II function in vivo
+### Implications of activity switching for topo II function in vivo
 
 Although type II topoisomerases are known for their ability to dissolve topological problems such as supercoils, knots, and catenanes, there is growing evidence that the enzymes may also selectively bring distant DNA segments in proximity to one another in cells. For example, topo II has been proposed to directly modulate DNA condensation, as depletion of the protein leads to perturbations in chromosomal structure (Bower et al., 2010; Gonzalez et al., 2011; Hirano and Mitchison, 1993; Nielsen et al., 2020; Sakaguchi and Kikuchi, 2004). Topo II has also been found to be enriched at centromeres of condensed mitotic chromosomes and has been proposed to play a role in creating or stabilizing catenanes between sister chromatids both within these elements and in other chromosomal loci prior to metaphase (Edgerton et al., 2016; Floridia et al., 2000; Rattner et al., 1996; Tavormina et al., 2002). More recently, work from the Hirano lab has shown that the X. laevis Top2α CTD helps guide the enzyme to mitotic chromosomes to promote DNA catenation and chromosomal maturation during mitosis (Shintomi and Hirano, 2021). Our observation that topo II uses its C-terminal IDR elements to promote self-association and form enriched regions of high local protein concentration that facilitate DNA entanglement provides a molecular rationale for this collection of findings.
 
@@ -113,19 +181,176 @@ Under condensate-forming conditions, each of the eukaryotic topo IIs tested here
 
 ## Methods
 
-## Cloning expression vectors
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ScTop2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from S. cerevisiae</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ScTop2ΔCTD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli, 1–1177</td>
+    </tr>
+    <tr>
+      <td>Peptide, Recombinant protein</td>
+      <td>ScTop2CTD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from S. cerevisiae, 1178–1428</td>
+    </tr>
+    <tr>
+      <td>Peptide, Recombinant protein</td>
+      <td>HsTOP2α</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from S. cerevisiae</td>
+    </tr>
+    <tr>
+      <td>Peptide, Recombinant protein</td>
+      <td>HsTOP2β</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from S. cerevisiae</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BamHI-HF</td>
+      <td>NEB</td>
+      <td>Cat#R3136T</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Nb.BbvCI</td>
+      <td>NEB</td>
+      <td>Cat#R0631S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>12URA-B (plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat#48304</td>
+      <td>Yeast Expression Vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>12URA-C (plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat#48305</td>
+      <td>Yeast Expression Vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>1B (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Modified version with Hisx14-SUMO tag.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUC57</td>
+      <td>Thermofisher Scientific</td>
+      <td>Cat##SD0171</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>50 bp-F</td>
+      <td>IDT</td>
+      <td>Oligo for annealing with R</td>
+      <td>CATGCATACACGAGCTGCACAAACGAGAGTGCTTGAACTGGACCTCTAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>50 bp-R</td>
+      <td>IDT</td>
+      <td>Oligo for annealing with R</td>
+      <td>ACTAGAGGTCCAGTTCAAGCACTCTCGTTTGTGCAGCTCGTGTATGCATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>100 bp-F</td>
+      <td>IDT</td>
+      <td>PCR Primer</td>
+      <td>AGTGTGATGGATATCTGCAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>100 bp-R</td>
+      <td>IDT</td>
+      <td>PCR Primer</td>
+      <td>TTTAAGCGGTGCTAGAGCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>200 bp-F</td>
+      <td>IDT</td>
+      <td>PCR Primer</td>
+      <td>GGGAAACCTGTCGTGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>200 bp-R</td>
+      <td>IDT</td>
+      <td>PCR Primer</td>
+      <td>ACATGTTCTTTCCTGCGTTATCCCC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyanine3 NHS-Ester</td>
+      <td>Lumiprobe</td>
+      <td>Cat#21020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyanine5 NHS-Ester</td>
+      <td>Lumiprobe</td>
+      <td>Cat#23020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heparin Sodium</td>
+      <td>Fisher Scientific</td>
+      <td>Cat#BP2425</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning expression vectors
 
 Full-length ScTop2, HsTOP2α, and HsTOP2β expression plasmids were cloned by PCR amplifying appropriate cDNAs with an N-terminal HRV 3 C tag. PCR amplified ScTop2 and HsTOP2α cDNAs were inserted into the 12URA-B (Addgene #48304) yeast expression vector while HsTOP2β was inserted into the 12URA-C (Addgene #48305) yeast expression vector using Ligation Independent Cloning (LIC). Both plasmids contain a galactose-inducible promoter for the expression of an N-term His6-TEV (12URA-B) or an N-term His6-MBP-TEV (12URA-C) protein. The ScTop2ΔCTD (1–1177) expression plasmid was cloned as above without the N-terminal HRV3C tag into the 12URA-B vector.
 
 The ScTop2CTD (1178–1428) expression plasmid was cloned by PCR amplification from full-length ScTop2 12URA-B vector followed by insertion into a modified 1-B (Addgene #29653) E. coli expression vector. This modified vector has an IPTG-inducible promoter for the expression proteins with an N-terminal His14-SUMO tag.
 
-## Protein expression
+### Protein expression
 
 Full-length Top2 expression plasmids and the ScTop2ΔCTD expression plasmid were transformed into BCY123 cells and plated on homemade SM+Ura- plates containing glucose. A total of 50 mL SM+Ura- starter cultures containing glucose were inoculated from these colonies and grown to saturation at 30 °C. Starter cultures were diluted 1:20 into 1 L intermediate cultures in SM+Ura- media supplemented with 2% sodium-DL-lactate and 1.5% glycerol and grown reach saturation at 30 °C. SM+Ura- with lactate/glycerol cultures then diluted 1:10 in 1 L YP expression media supplemented with 2% sodium-DL-lactate and 1.5% glycerol and grown at 30 °C to an OD600 of 1.3–1.5. Protein expression was induced by adding 2% w/v galactose for 6 hr at 30 °C. Cells were harvested by centrifugation and pellets were resuspended with 2 mL 1 mM EDTA, 250 mM NaCl per liter of culture. Resuspended yeast were frozen by dropwise addition into liquid nitrogen and cells were stored at –80 °C.
 
 The ScTop2 CTD expression vector was transformed into homemade BL21-DE3-pRIL chemically competent cells and plated on LB +Kanamycin plates. 50 mL starter cultures in 2xYT +Kan were inoculated from single colonies and grown at 37 °C until saturation. Starter cultures were next diluted 1:100 in 1 L LB +Kan media and grown at 37 °C to an OD600 of 0.5–0.6. Protein expression was induced by the addition of 0.5 mM IPTG and cultures were incubated 37 °C for 3 hr. Cells were harvested by centrifugation and pellets were washed with 20 mM Tris-HCl (pH 8.5), 500 mM KCl, 20 mM imidazole, and 10% glycerol. Washed pellets were flash frozen in liquid-nitrogen and stored at –80°C.
 
-## Protein purification
+### Protein purification
 
 For purification of full-length topo II and ScTop2ΔCTD purification from yeast, pellets were lysed by cryogenic grinding using the 6870 Freezer Mill (SPEX SamplePrep). Crushed cells were resuspended in 20 mM Tris-HCl (pH 8.5), 500 mM KCl, 20 mM imidazole, 10% glycerol, 0.5 mM TCEP, protease inhibitors (leupeptin, pepstatin, PMSF). Lysates were clarified by centrifugation at 15,000 rpm for 45 min in a JA 25.50 rotor and the supernatant filtered using 1.1 µm syringe filters (Thermo Scientific #722–2000). Filtered supernatant was loaded onto a HisTrap HP column (Cytiva #17524802), washed with 40 CV of resuspension buffer, then washed with 5 CV of resuspension buffer containing 150 mM KCl. Protein was eluted from the HisTrap column using resuspension buffer (containing 150 mM KCl and 200 mM imidazole) and captured directly on a HiTrap SP HP column (GE #17-1152-01). Protein was eluted from the HisTrap SP column using a 150–500 mM KCl gradient solution in 20 mM Tris-HCl (pH 8.5) and 10% glycerol. After elution, protein was concentrated in an Amicon Ultra-15 30 kDA centrifugal filter units (Millipore #UFC9030) and incubated overnight at 4 °C with His-tagged PreScission protease (purified in house, for full-length Top2s) or TEV protease (QB3 Macro Lab, for ScTop2ΔCTD). After cleavage, the protein was separated from uncleaved material and proteases by running cleavage reactions through a HisTrap column and collecting the flow through. Following concentration, cleaved protein was further purified by gel filtration using a Sephacryl S-400 column (GE Healthcare) with one of two buffers: (1) non-labeled protein was purified by gel filtration using buffer containing 20 mM Tris pH 7.9, 500 mM KCl, 10% glycerol, and 0.5 mM TCEP (after elution, this material was concentrated, flash frozen, and stored at –80 °C), or (2) N-terminally labeled protein was passed over a gel filtration column in a buffer containing 50 mM HEPES-KOH (pH 7.0), 500 mM KCl, and 10% glycerol. Phosphatase-treated protein was purified as per the labeled protein, except that during the PreScission cleavage step, protein was treated overnight with Lambda Protein Phosphatase (NEB #P0753S) at 4 °C.
 
@@ -133,7 +358,7 @@ After elution from the sizing column, protein destined for dye labeling was conc
 
 For purification of the ScTop2 CTD, E. coli cell pellets containing expressed protein were resuspended in 20 mM Tris-HCl (pH 8.5), 500 mM KCl, 20 mM imidazole, 10% glycerol, 0.5 mM TCEP, and protease inhibitors (leupeptin, pepstatin, PMSF). After resuspension, samples were sonicated, and the lysate was clarified and filtered as per the full-length proteins. Clarified supernatant was loaded onto HisTrap FF crude column (GE Healthcare #17-5286-01) and then washed with 40 CV of resuspension buffer. Protein was eluted from the nickel column directly onto an ion exchange protocol as detailed above, except that a HiTrap Q HP column (GE Healthcare #29-0513-25) was used. After elution from the Q column, protein was concentrated and incubated overnight at 4 °C with His-tagged SUMO protease purified in-house. After incubating overnight, the SUMO protease and uncleaved protein was removed by running the sample through a HisTrap FF crude column. Cleaved protein was concentrated in an Amicon Ultra-15 centrifugal filter units (30 kDA, Millipore #UFC9030) and passed through two subsequent gel filtration steps using a: (1) Hiload 16/60 Superdex 75 column (Cytiva #28989333) and (2) and Sephacryl S-300 column (GE Healthcare). Buffers used for this sizing step and subsequent labeling reactions were followed as for full-length proteins. The labeling reactions and flash freezing conditions were followed as for full-length topo IIs.
 
-## DNA substrate purification
+### DNA substrate purification
 
 For the 50 bp DNA substrate, reverse complement 50 bp oligos (5’-CATGCATACACGAGCTGCACAAACGAGAGTGCTTGAACTGGACCTCTAGT-3’ (‘top’) and 5’-ACTAGAGGTCCAGTTCAAGCACTCTCGTTTGTGCAGCTCGTGTATGCATG-3’ (‘bottom’)) were ordered from IDT. The 50 bp duplex was annealed by mixing equimolar ratios of both oligos, heating the sample at 95 °C, and cooling to ambient temperature over several hours. Annealed duplex was buffer exchanged into 50 mM HEPES-KOH (pH 7.5), flash frozen in liquid nitrogen, and stored at –20 °C. For 100 bp and 200 bp DNAs, duplexes were PCR amplified from pUC57 (ThermoFisher Scientific #SD0171), concentrated, and passed over an S-400 gel filtration column (GE Healthcare) with 50 mM HEPES-KOH (pH 7.9), 50 mM potassium acetate, and 1 mM DTT. Both duplexes were buffer exchanged into 50 mM HEPES-KOH (pH 7.5), flash frozen, and stored at –20 °C.
 
@@ -141,7 +366,7 @@ Cy5-labeled 200 bp DNA duplex was PCR amplified with the same oligonucleotide pr
 
 Supercoiled pSG483 was maxiprepped from XL1-Blue E. coli using NucleoBond Xtra Maxi columns (Macherey-Nagel) followed by isopropanol precipitation. The topology of supercoiled plasmid was assessed using native agarose gel electrophoresis. Plasmid DNA was diluted in 50 mM HEPES-KOH (pH 7.5), flash frozen, and stored at –20 °C.
 
-## Confocal microscopy, FRAP, and analysis
+### Confocal microscopy, FRAP, and analysis
 
 Proteins were buffer exchanged using Zeba Spin Desalting Column (7 kDa MWCO, Thermo Scientific #89890) into 50 mM HEPES-KOH (pH 7.5) and 600 mM KOAc. Protein was then concentrated using an Amicon Ultra-15 centrifugal filter units (30 kDA, Millipore #UFC9030). Protein concentration and label efficiency were calculated by measuring appropriate absorbances using a Nanodrop One spectrophotometer. Phase separation was induced by lowering the salt concentration of the reaction to 150 mM KOAc across two 1:1 serial dilutions and then incubated at ambient temperature for 1.5 hr. Samples then were loaded onto Nunc Lab-Tek II 8-well Chambered Coverglass (Thermo Scientific #155360) for 3.5 min before imaging with a Zeiss AxioObserver equipped with a LSM800 confocal module and GaAsP detectors using a 40 x/1.30 PlanNeofluar oil objective. Cy3 images were taken with a 561 solid-state laser line and Cy5 images were taken with a 639 diode laser line. For condensate fusion experiments, time-lapses were taken of the samples after placing on coverslip.
 
@@ -149,13 +374,13 @@ All micrographs were subjected to rolling background subtraction using ImageJ (S
 
 Fluorescence recovery after photo bleaching was performed using the imaging protocol and confocal microscope as detailed above. After placing samples on the coverslip, a 1.3 μm2 region was photobleached to between 30% and 50% intensity in each puncta and fluorescence recovery was monitored by time-lapse imaging. Puncta intensities and recovery were analyzed in the same manner as above using ImageJ (Schindelin et al., 2012). All subsequent data analysis was conducted in R studio (R Studio Team, 2015). Intensity values of photobleached regions were analyzed by putting them through background subtraction followed by correcting the intensities for fluorescence loss due to photobleaching of images. Relative fluorescence intensities are shown to emphasize the mobile fraction of proteins for each condition. To compare mobile phase between phosphatase and control samples, statistical analysis using Two-way ANOVA with Bonferroni post-hoc analysis was conducted in GraphPad Prism between the different conditions tested. Plots were generated using ggplot2 (Wickham, 2016).
 
-## Topoisomerase activity assays
+### Topoisomerase activity assays
 
 Proteins were buffer exchanged into buffer made of 50 mM HEPES pH 7.5, 600 mM KOAc, and 4 mM magnesium acetate. Protein and pSG483 were mixed such that the final solution contained 50 mM HEPES pH 7.5, 150 mM KOAc, 1 mM MgOAc, and 25 nM pSG483. Reactions were allowed to incubate for 1.5 hr to allow for condensates to form. Microscopy images were taken at the 90 minute mark with Cy3-labeled protein. After 90 min, 1 mM ATP was added and reactions were allowed to proceed for 5 min at ambient temperature. Reactions were stopped by the addition of 20 mM EDTA, 1% SDS, and 200 ng/µL Proteinase K. After Proteinase K addition, samples were incubated at 55 °C for 1 hr. DNA Gel Loading Dye (Thermo Scientific #R0611) was then added to each sample and loaded onto a 1.4% non-denaturing agarose gel. Gels were run for 18–20 hr at 25 V, stained with ethidium bromide, and imaged on ChemiDoc Touch Imaging System (Bio-Rad #1708370).
 
 Two different activity assays were performed, which differed only after the ATP addition step. For activity assays that utilized restriction enzymes, Cutsmart Buffer (NEB #B7204S) and BamHI-HF (NEB #R3136T, for linearization) or Nb.BbvCI (NEB #R0631S, for nicking) was added after a 5 min incubation period with ATP. Samples were then incubated at 37 °C for 1 hr, after which EDTA, SDS, and Proteinase K were added as per above. For the catenation/decatenation switch assay, the reaction buffer supplemented with ATP and salt were adjusted such that the final solution conditions were 50 mM HEPES-KOH (pH 7.5), 400 mM KOAc, 750 nM ScTop2, 18.75 nM pSG483, and 1 mM ATP. Sample was stopped after 5 min with EDTA, SDS, and Proteinase K. Samples were then analyzed using native agarose gel electrophoresis as described above.
 
-## Phosphorylation analysis by LC-MS/MS
+### Phosphorylation analysis by LC-MS/MS
 
 Two samples of native (untreated) ScTop2 and lambda phosphatase-treated ScTop2 were separated by SDS-PAGE using an 8–20% gradient gel. The gel was Coomassie stained and bands corresponding to purified protein were excised and sent to the Taplin Mass Spectrometry facility (Harvard) for analysis. The following analysis pipeline was used at the facility to investigate the phosphorylation status. Excised gel bands were cut into approximately 1 mm3 pieces. Samples were reduced with 1 mM DTT for 30 min at 60 °C and then alkylated with 5 mM iodoacetamide for 15 min in the dark at room temperature. Gel pieces were then subjected to a modified in-gel trypsin digestion procedure (Shevchenko et al., 1996). Gel pieces were washed and dehydrated with acetonitrile for 10 min, followed by removal of acetonitrile. Pieces were then completely dried in a speed-vac. Gel pieces were rehydrated with 50 mM ammonium bicarbonate containing 12.5 ng/µl modified sequencing-grade trypsin (Promega, Madison, WI) at 4 °C. Samples were then placed in a 37 °C room overnight. Peptides were later extracted by removing the ammonium bicarbonate solution, followed by one wash with a solution containing 50% acetonitrile and 1% formic acid. The extracts were then dried in a speed-vac (~1 hr). Samples were then stored at 4 °C until analysis.
 

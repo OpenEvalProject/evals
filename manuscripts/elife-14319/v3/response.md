@@ -77,9 +77,7 @@ Discussion: “The identification of a broad class of acyl-carnitines in hypoxic
 
 7) It seems that HIF induction (with increased VEGFA) has a great impact on metabolism. What the impact of VEGFA deficiency on metabolism? The authors may consider evaluating the key enzymatic profile in glycolysis and oxidative phosphorylation in the RPE/choroid complexes from Vegfa cKO mice; or use seahorse analysis to examine the OCR changes with anti-VEGF treatment in RPE cells.
 
-While Vegfa is significantly upregulated in Vhl mutant mice it is ablated in Vegfa mutants, but the metabolic phenotype is conserved in both lines. Therefore, Vegfa is unlikely to induce the metabolic defects, but we cannot rule out the possibility that the enhanced levels of Vegfa in the Vhl mutants may exacerbate the metabolic dysregulations. We performed mitochondrial profiling as suggested with Affilibercept (Eylea) and DMOG treated hRPE cells and observed no significant changes between control, DMOG treated, and DMOG/Eylea treated RPE cells (Author response image 1).10.7554/eLife.14319.028Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.14319.028
-
-DOI: http://dx.doi.org/10.7554/eLife.14319.028
+While Vegfa is significantly upregulated in Vhl mutant mice it is ablated in Vegfa mutants, but the metabolic phenotype is conserved in both lines. Therefore, Vegfa is unlikely to induce the metabolic defects, but we cannot rule out the possibility that the enhanced levels of Vegfa in the Vhl mutants may exacerbate the metabolic dysregulations. We performed mitochondrial profiling as suggested with Affilibercept (Eylea) and DMOG treated hRPE cells and observed no significant changes between control, DMOG treated, and DMOG/Eylea treated RPE cells (Author response image 1).10.7554/eLife.14319.028Author response image 1.
 
 8) HIF2a is suggested to play a key role in the metabolic switch. What are potential mechanisms for HIF2a regulation on the induction of glycolysis? Authors please comment.
 

@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05pmsvm27 Institute for Natural Resource Sciences, Zurich University of Applied Sciences Zurich Switzerland
+1. Institute for Natural Resource Sciences, Zurich University of Applied Sciences Zurich Switzerland ([ROR:05pmsvm27](https://ror.org/05pmsvm27))
 
 † Corresponding author
 

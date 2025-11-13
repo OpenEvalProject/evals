@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02e16g702 Institute for Genetic Medicine, Hokkaido University Sapporo Japan
+1. Institute for Genetic Medicine, Hokkaido University Sapporo Japan ([ROR:02e16g702](https://ror.org/02e16g702))
 2. Institute of Microbial Chemistry Tokyo Japan
-3. https://ror.org/057zh3y96 Department of Biochemistry and Molecular Biology, Graduate School of Medicine, The University of Tokyo Tokyo Japan
-4. https://ror.org/00krab219 Department of Molecular Oncology, Nippon Medical School, Institute for Advanced Medical Sciences Tokyo Japan
+3. Department of Biochemistry and Molecular Biology, Graduate School of Medicine, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+4. Department of Molecular Oncology, Nippon Medical School, Institute for Advanced Medical Sciences Tokyo Japan ([ROR:00krab219](https://ror.org/00krab219))
 
 † Corresponding author
 
@@ -31,31 +31,59 @@ This study predicted the structure of the ULK1–ATG13–FIP200 complex using th
 
 ## Results
 
-## Structural prediction of the ULK1–ATG13–FIP200 complex identifies FIP200-interacting residues in ATG13
+### Structural prediction of the ULK1–ATG13–FIP200 complex identifies FIP200-interacting residues in ATG13
 
 Previous studies reported that the C-terminal region of ULK1 and the C-terminal intrinsically disordered region of ATG13 bind to the N-terminal region of the FIP200 homodimer and that the stoichiometry of the ULK1–ATG13–FIP200 complex is 1:1:2 (Alers et al., 2011; Ganley et al., 2009; Hieke et al., 2015; Hosokawa et al., 2009; Jung et al., 2009; Papinski and Kraft, 2016; Shi et al., 2020; Wallot-Hieke et al., 2018). However, the structural details underlying the ULK complex assembly, particularly the role of the intrinsically disordered region of ATG13, remain elusive. To understand the mechanism of the ULK complex formation, we predicted the structure of the FIP200 [1–634 amino acids (aa)] dimer complexed with ATG13 (isoform c, 363–517 aa) and ULK1 (801–1050 aa) (underlined regions in Figure 1A) by AlphaFold2 with the AlphaFold-Multimer option, during which the appropriateness of the regions chosen for our predictions as interaction interfaces was further corroborated by AlphaFold2 models of full-length ATG13 with full-length ULK1 and of full-length ATG13 with the FIP200 (residues 1–634) dimer (Figure 1—figure supplement 1). Figure 1B depicts the predicted overall structure of the ULK1–ATG13–FIP200 complex, with flexible FIP200 loop regions that received low pLDDT scores omitted for clarity. The overall structure is consistent with the low-resolution cryo-EM model reported previously (Shi et al., 2020), including the C-shape of the FIP200 dimer and the binding of one molecule each of ATG13 and ULK1 to the FIP200 dimer, resulting in the 1:1:2 stoichiometry of the ULK1–ATG13–FIP200 complex. The two FIP200 molecules are named FIP200A and FIP200B, where FIP200A is the one close to ULK1. Extensive interactions were predicted between the four molecules, with a buried surface area of 3658 Å2 for FIP200A–FIP200B, 2195 Å2 for FIP200A–ATG13, 1966 Å2 for FIP200B–ATG13, 2140 Å2 for ATG13–ULK1, and 1681 Å2 for FIP200A–ULK1. No interaction was observed between FIP200B and ULK1. One ATG13 molecule binds to the FIP200 dimer through the interaction of residues 365–398 and 394–482 with FIP200B and FIP200A, respectively, resulting in a 1:2 stoichiometry of the ATG13–FIP200 complex.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig1-v2.jpg)
+
+**Figure 1.:** (A) Domain architecture of ULK1, ATG13, and FIP200. Regions used for the AlphaFold2 complex prediction are underlined. (B) Structure of the ULK1–ATG13–FIP200 core complex predicted by AlphaFold2. Flexible loop regions in FIP200 were removed from the figure for clarity. N and C indicate N- and C-terminal regions, respectively. (C) Close-up view of the interactions between ATG13 and FIP200. The bottom panels represent the surface model of FIP200 with the coloring based on the electrostatic potentials (blue and red indicate positive and negative potentials, respectively). (D) Isothermal titration calorimetry (ITC) results obtained by titration of MBP-ATG13 (363–517 aa) WT or FIP3A mutant into an FIP200 (1–634 aa) solution. (E) Effect of the ATG13 FIP3A mutation on the FIP200 interaction in vivo. ATG13 KO HeLa cells stably expressing FLAG-tagged ATG13 WT or FIP3A were immunoprecipitated with an anti-FLAG antibody and detected with anti-FIP200, anti-ULK1, and anti-FLAG antibodies. (F) Relative amounts of precipitated FIP200 in (E) were calculated. Solid bars indicate the means, and dots indicate the data from three independent experiments. Differences were statistically analyzed using Tukey’s multiple comparisons test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) AlphaFold2 model of the full-length ULK1–ATG13 complex. (B) AlphaFold2 model of the full-length ATG13 complexed with the homodimer of FIP200 (1–634). (C) Predicted aligned error (PAE) plot of (A) (left), (B) (middle), and (D) (right). (D) Structure of the ULK1–ATG13–FIP200 core complex with flexible loops. (E) The structure in (D), color-coded by pLDDT values. (F) Cryo-EM structures of the ULK1–ATG13–FIP200 core complex.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** SDS–PAGE of recombinant proteins used for isothermal titration calorimetry (ITC) and in vitro pull-down experiments. Protein bands were stained with Coomassie Brilliant Blue.
 
 We compared our AlphaFold2 prediction model with the cryo-EM structures reported as a preprint recently (Chen et al., 2023). For the ULK1–ATG13–FIP200 complex, PDB entries 8SOI, 8SRM, and 8SQZ have global resolutions of 4.2, 4.46, and 5.85 Å, respectively, and employ different ATG13 segments (residues 462–517, 450–517, and 363–517) (Figure 1—figure supplement 1F). Despite these differences, all three cryo-EM models contain only the MIM region of ATG13 (residues 462–517). The ULK1 and FIP200 regions used also vary slightly, but are essentially the same as those we used for our AlphaFold2 calculations. In every structure, FIP200 forms a C-shaped dimer whose overall architecture resembles our AlphaFold2 model. While the C-shape opening angle differs among the structures, this variation is consistent with reports that FIP200 can adopt multiple conformations (Shi et al., 2020). The mode of ULK1 binding to FIP200 is likewise fundamentally conserved (a detailed comparison is given below). The main difference among the three structures is their stoichiometry: ULK1:ATG13:FIP200 is 1:1:2 in 8SOI, whereas it is 2:2:2 in the other two entries. In our AlphaFold2 model, ATG13 residues 365–390 bind one FIP200 protomer, and residues 442–472 bind the equivalent region of the second protomer, accounting for an ATG13:FIP200 stoichiometry of 1:2. Consequently, a 2:2 stoichiometry is not inconsistent when only the MIM segment of ATG13 is present. Conversely, PDB 8SQZ uses the same ATG13 segment (residues 363–517) as our AlphaFold2 calculations yet displays an ATG13:FIP200 stoichiometry of 2:2. Because this stoichiometry is observed only after the complex has been mixed with PI3KC3-C1 (Chen et al., 2023), some additional regulatory mechanism by PI3KC1-C1 is presumably involved, although its details remain unclear.
 
 Previous studies using hydrogen–deuterium exchange coupled to mass spectrometry identified three regions (M1–M3) in ATG13 responsible for FIP200 binding (Shi et al., 2020). Among these sites, the side chain of Phe377 in M1 and Phe453 in M3 was deeply inserted into the hydrophobic pockets formed at the base of UBL domains (Figure 1C). Direct interaction between FIP200 (1–634) and Atg13 (363–517) was confirmed by isothermal titration calorimetry (ITC) with a KD value of 6.6 μM, which was severely attenuated by alanine substitution at these three phenylalanine sites (F377A, F394A, F453A; FIP3A) (Figure 1D, Figure 1—figure supplement 2). Furthermore, the ATG13FIP3A mutant expressed in ATG13 KO cells displayed a significantly reduced coprecipitation rate of the endogenous FIP200 (Figure 1E, F). These results confirm that ATG13 and FIP200 interact with each other via the residues predicted by AlphaFold2 in vitro and in vivo.
 
-## ULK1 and ATG13 interact via MIT–MIM interaction similar to yeast Atg1–Atg13
+### ULK1 and ATG13 interact via MIT–MIM interaction similar to yeast Atg1–Atg13
 
 Next, we focused on the interaction between ULK1 and ATG13. We previously determined the crystal structure of the yeast Atg1–Atg13 complex, which revealed that the tandem microtubule-interacting and transport (MIT) domains in Atg1 bind to the tandem MIT-interacting motifs (MIMs) of ATG13 (Figure 2A, right; Fujioka et al., 2014). The predicted structure of the ULK1–ATG13 complex (Figure 2A, left) was quite similar to that of the yeast Atg1–Atg13 complex and to the cryo-EM structures of the ULK1–ATG13 portion of the ULK1 core complex (Figure 2A, middle). The assembly is stabilized by two sets of the ULK1MIT1–ATG13MIM(C) and ULK1MIT2–ATG13MIM(N) interactions (Figure 2A). Phe470 of ATG13MIM(N) and Phe512 of ATG13MIM(C) were inserted into the hydrophobic pocket of ULK1MIT2 and ULK1MIT1, respectively (Figure 2B). Direct interaction between ULK1 (636–1050) and Atg13 (363–517) was confirmed by ITC with a KD value of 0.34 μM, which was severely attenuated by alanine substitution at these two phenylalanine sites (F470A, F512A; ULK2A) (Figure 2C, Figure 1—figure supplement 2). In ATG13 KO cells, the ULK1 expression level was significantly reduced, suggesting that the lack of ATG13 severely destabilized ULK1. This mirrors the ATG13-mediated stabilization of ATG101, another component of the ULK complex (Suzuki et al., 2015). The exogenous expression of ATG13WT, but not of the ATG13ULK2A mutant, rescued the endogenous ULK1 expression (Figure 2D, E), indicating that the ULK2A mutation in ATG13 attenuates the ATG13–ULK1 interaction in vivo. These observations confirm that, like the yeast Atg1–Atg13 interaction, the ULK1–ATG13 interaction is mediated by MIT–MIM contacts.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig2-v2.jpg)
 
-**Figure 2.:** (A) AlphaFold2 model of the ULK1–ATG13 moiety of the ULK1–ATG13–FIP200 core complex in Figure 1B (left), Cryo-EM structure of the ULK1–ATG13 moiety of the ULK1–ATG13–FIP200 core complex (PDB 8SOI), and crystal structure of the yeast Atg1–Atg13 complex (right, PDB 4P1N). (B) Close-up view of the interactions between ATG13MIM(N) and ULK1MIT2 and between ATG13MIM(C) and ULK1MIT1 (right). (C) Isothermal titration calorimetry (ITC) results obtained by titration of MBP-ULK1 (636–1050 aa) into a solution of WT or ULK2A mutant of MBP-ATG13 (363–517 aa). Due to weak binding, the KD value for the ULK2A mutant was not accurately determined. (D) Effect of the ATG13–FIP3A mutation on endogenous ULK1 levels in vivo. WT or ATG13 KO HeLa cells stably expressing FLAG-tagged ATG13 WT or ULK2A mutant were lysed, and indicated proteins were detected by immunoblotting using anti-FIP200, anti-ULK1, and anti-FLAG antibodies. (E) Relative amounts of ULK1 in (D) were normalized with β-actin and calculated. Solid bars indicate the means, and dots indicate the data from three independent experiments. Differences were statistically analyzed using Tukey’s multiple comparisons test.Figure 2—source data 1.Figure 2D.Figure 2—source data 2.Figure 2D.Figure 2—source data 3.Figure 2E.
+**Figure 2.:** (A) AlphaFold2 model of the ULK1–ATG13 moiety of the ULK1–ATG13–FIP200 core complex in Figure 1B (left), Cryo-EM structure of the ULK1–ATG13 moiety of the ULK1–ATG13–FIP200 core complex (PDB 8SOI), and crystal structure of the yeast Atg1–Atg13 complex (right, PDB 4P1N). (B) Close-up view of the interactions between ATG13MIM(N) and ULK1MIT2 and between ATG13MIM(C) and ULK1MIT1 (right). (C) Isothermal titration calorimetry (ITC) results obtained by titration of MBP-ULK1 (636–1050 aa) into a solution of WT or ULK2A mutant of MBP-ATG13 (363–517 aa). Due to weak binding, the KD value for the ULK2A mutant was not accurately determined. (D) Effect of the ATG13–FIP3A mutation on endogenous ULK1 levels in vivo. WT or ATG13 KO HeLa cells stably expressing FLAG-tagged ATG13 WT or ULK2A mutant were lysed, and indicated proteins were detected by immunoblotting using anti-FIP200, anti-ULK1, and anti-FLAG antibodies. (E) Relative amounts of ULK1 in (D) were normalized with β-actin and calculated. Solid bars indicate the means, and dots indicate the data from three independent experiments. Differences were statistically analyzed using Tukey’s multiple comparisons test.
 
-## Direct interaction between ULK1 and FIP200 is essential for autophagy
+### Direct interaction between ULK1 and FIP200 is essential for autophagy
 
 Although AlphaFold2 predicted the direct interaction between ULK1 and FIP200 over a reasonably large contact area (1681 Å2) and similar interaction was observed in cryo-EM structures (Figure 3A, B; Chen et al., 2023), a previous study reported that ULK1 required ATG13–ATG101 for FIP200 binding in vitro (Shi et al., 2020). ULK1MIT1 and ULK1MIT2 interact directly with FIP200, with the Leu967 of ULK1MIT1 and Phe997 of ULK1MIT2 inserted on the hydrophobic groove of FIP200 (Figure 3A, B). Although we failed to measure the affinity between ULK1 and FIP200 by ITC due to aggregation upon their mixing, an in vitro pull-down assay indicated that ULK1 directly interacted with FIP200, which was significantly attenuated by the FIP2A (L967A, F997A) mutation (Figure 3C, D). Consistently, the ULK1FIP2A mutant lost the interaction with FIP200 while partially retaining the interaction with ATG13 in cells (Figure 3E, F). We confirmed that the ULK1FIP2A mutant retains substantial affinity with ATG13 in vitro by ITC (Figure 3—figure supplement 1). These results confirm the direct ULK1–FIP200 interaction in vitro and in vivo. Our results establish the mode of the three independent interactions within the ULK complex, ATG13–FIP200, ATG13–ULK1, and ULK1–FIP200, operating both in vitro and in vivo.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig3-v2.jpg)
+
+**Figure 3.:** (A) Structure of the ULK1–FIP200 moiety of the ULK1–ATG13–FIP200 core complex in Figure 1B. The right panel represents the surface model of FIP200 with coloring based on the electrostatic potentials (blue and red indicate positive and negative potentials, respectively). Dotted squares indicate the regions displayed in (B). (B) Close-up view of the interactions between ULK1MIT1 and FIP200 (top) and between ULK1MIT2 and FIP200 (bottom). Left and right indicate AlphaFold2 and cryo-EM (PDB 8SOI) models. (C) In vitro pull-down assay between GST-ULK1 (636–1050 aa) WT or FIP2A mutant with MBP-FIP200 (1–634 aa). (D) Relative amounts of precipitated MBP-FIP200 in (C) were calculated. Solid bars indicate the means, and dots indicate the data from three independent experiments. Differences were statistically analyzed using Tukey’s multiple comparisons test. (E) Effect of the ULK1 FIP2A mutation on the FIP200 interaction in vivo. Ulk1,2 DKO mouse embryonic fibroblasts (MEFs) stably expressing FLAG-tagged ULK1 WT or FIP2A mutant were immunoprecipitated with an anti-FLAG antibody and detected with anti-FIP200, anti-ATG13, and anti-FLAG antibodies. (F) Relative amounts of precipitated FIP200 (left) and ATG13 (right) in (E) were calculated. Solid bars indicate the means, and dots indicate the data from three independent experiments. Differences were statistically analyzed using Tukey’s multiple comparisons test. (G) Halo-LC3 processing assay of ULK1 FIP2A-expressing cells. Ulk1,2 DKO MEFs stably expressing Halo-LC3 and FLAG-tagged ULK1 WT or FIP2A mutant were labeled for 15 min with 100 nm tetramethylrhodamine (TMR)-conjugated Halo ligand and incubated in starvation medium for 1 hr. Cell lysates were subjected to in-gel fluorescence detection. (H) Halo processing rate in (G). The band intensity of processed Halo and Halo-LC3 in each cell line was quantified, and the relative cleavage rate was calculated as FLAG-ULK1 WT-expressing cells as 1. Solid bars indicate the means, and dots indicate the data from three independent experiments. Data were statistically analyzed using Tukey’s multiple comparisons test. (I) Colocalization of FLAG-ULK1 WT or FIP2A mutant with FIP200. Ulk1,2 DKO MEFs stably expressing FLAG-tagged ULK1 WT or FIP2A mutant were immunostained with anti-FLAG and anti-FIP200 antibodies. Scale bar, 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** ITC results obtained by titration of MBP-ULK1 (636–1050 aa) FIP2A mutant into a solution of WT MBP-ATG13 (363–517 aa). Although the KD value for the ULK2A mutant was not determined precisely; these data indicate that the mutant retains substantial affinity for ATG13.
+
 To investigate the physiological importance of the ULK1–FIP200 interaction, we assessed autophagy flux using the Halo-LC3 processing assay (Rudinskiy et al., 2022; Yim et al., 2022). Ulk1,2 DKO mouse embryonic fibroblasts (MEFs) expressing FLAG-tagged wild-type ULK1 produce a stronger band of cleaved Halo than cells which do not express ULK1. The intensity of this cleaved Halo band corresponds to the amount of Halo-LC3 delivered to lysosomes in an autophagy-dependent manner. Ulk1,2 DKO MEFs expressing the ULK1FIP2A mutant had partially but significantly reduced processed Halo bands upon starvation compared to ULK1WT-expressing cells, confirming that the direct ULK1–FIP200 interaction is crucial, although partially, for autophagy activity (Figure 3G, H). This partial phenotype would be due to an indirect interaction between ULK1 and FIP200 via ATG13, which was supported by the observation that the ULK1FIP2A mutant colocalized with FIP200 in cells, although less efficiently than ULK1WT (Figure 3I).
 
-## Triadic ULK1–ATG13–FIP200 interactions are critical for autophagic flux
+### Triadic ULK1–ATG13–FIP200 interactions are critical for autophagic flux
 
 We compared the autophagic flux of impaired ATG13–ULK1 and ATG13–FIP200 interactions to confirm the hypothesis that indirect triadic complexes are functional for autophagy. We generated knock-in (KI) cell lines that included ATG13FIP3A, ATG13ULK2A, and ATG13FU5A (F377A, F394A, F453A, F470A, F512A; FU5A) followed by a 3xFLAG-tag in the genomic ATG13 locus of HeLa cells (Figure 4A, B). Since overexpressed ATG13-FLAG is more than 20-fold higher than its endogenous level, the mutation significance can be evaluated at more physiological expression levels using the KI cell lines (Figure 4—figure supplement 1A, B). The ATG13FIP3A and ATG13ULK2A KI cells displayed partial colocalization with FIP200, whereas the ATG13FU5A KI cells displayed scarce colocalization with FIP200 (Figure 4C). Next, we expressed Halo-LC3 in these KI cells and performed a Halo processing assay. Cleaved Halo was partially reduced in ATG13FIP3A and ATG13ULK2A KI cells compared to ATG13WT cells. In contrast, cleaved Halo in ATG13FU5A KI cells was almost equivalent to that in the knockout cells (Figure 4D, E). Note that ATG13WT KI cells show a ~25% reduction in cleaved Halo compared to WT HeLa cells, suggesting that FLAG-tag KI only partially affects autophagic flux. These results suggest that ATG13–ULK1 and ATG13–FIP200 bindings complement each other in autophagy function and that ULK1, ATG13, and FIP200 directly bind to each other to organize the robust ULK complex.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic representation of the CRISPR–Cas9-mediated KI strategy of ATG13 mutations with FLAG tag. The C-terminally FLAG-tagged coding sequence after exon 14 of ATG13 with or without FIP3A, ULK2A, or FU5A mutations were knocked in exon 14 of the Homo sapiens ATG13 locus. As the KI cassette expresses NeoR under the hPGK1 promoter, clones that were successfully knocked in were selected by G418. Cas9-gRNA-targeted sites in the exon 14 of H. sapiens ATG13 locus are displayed in dark blue. The homology arm for KI is presented in magenta, and the ATG13 CDS and mutations in red and cyan, respectively. NeoR is displayed in brown. Scale bar, 0.5 kilobase pair (kb). (B) Immunoblot of ATG13-FLAG KI cell lines. WT, ATG13 KO, and indicated KI HeLa cells were lysed, and indicated proteins were detected by immunoblotting using anti-FIP200, anti-ULK1, and anti-FLAG antibodies. (C) Colocalization of endogenous levels of ATG13-FLAG mutants with FIP200. Indicated KI cell lines were cultured in the starvation medium for 1 hr and immunostained with anti-FLAG and anti-FIP200 antibodies. Scale bar, 10 μm. (D) Halo-LC3 processing assay of ATG13-FLAG KI cell lines. WT, ATG13 KO and KI HeLa cell lines were labeled for 15 min with 100 nm tetramethylrhodamine (TMR)-conjugated Halo ligand and incubated in starvation medium for 1 hr. Cell lysates were subjected to in-gel fluorescence detection. (E) Halo processing rate in (D). The band intensity of processed Halo and Halo-LC3 in each cell line was quantified, and the relative cleavage rate was calculated as WT HeLa cells as 1. Solid bars indicate the means, and dots indicate the data from three independent experiments. Data were statistically analyzed using Tukey’s multiple comparisons test. (F) Schematic depiction of the difference between the mammalian ULK complex and the yeast Atg1 complex. Mammalian ATG13 binds to two FIP200s within the same FIP200 dimer, contributing to the stability of one ULK complex. Conversely, budding yeast Atg13 binds to two Atg17s within a different Atg17 dimer, allowing for endlessly repeated Atg13–Atg17 interactions. ATG101 in the ULK complex and Atg31-29 in the Atg1 complex are omitted for simplicity. ATG13/Atg13 is shown in yellow, ULK1/Atg1 in magenta, and FIP200/Atg17 in green. Black lines represent interactions.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Comparison of ATG13 expression level. WT, ATG13 KO stably expressing ATG13-FLAG, and ATG13-FLAG KI HeLa cells were lysed, and indicated proteins were detected by immunoblotting using anti-ATG13, anti-FIP200, anti-ULK1, and anti-β-actin antibodies. (B) Relative amounts of ATG13 in (A) were calculated as WT HeLa cells as 1. Solid bars indicate the means, and dots indicate the data from three independent experiments. Differences were statistically analyzed using Tukey’s multiple comparisons test. (C) Colocalization of ATG9A and FIP200 in ATG13-FLAG KI cells. Indicated KI cell lines expressing ATG9A-HA were cultured in the starvation medium for 1 hr and immunostained with anti-FLAG, anti-FIP200, and anti-p62 antibodies. Scale bar, 10 μm. (D) ULK1-dependent phosphorylation of ATG14 in ATG13-FLAG KI cell lines. WT, ATG13 KO and KI HeLa cell lines cultured in the starvation medium for 1 hr. Indicated proteins were detected by immunoblotting using anti-ATG14 phospho-S29, anti-ATG14, and anti-β-actin antibodies. (E) ATG14 phosphorylation rate in (D). The band intensity of p-ATG14 and ATG14 in each cell line was quantified, and the phosphorylation rate was calculated as WT HeLa cells as 1. Solid bars indicate the means, and dots indicate the data from three independent experiments. Data were statistically analyzed using Tukey’ s multiple comparisons test.
 
 Finally, we investigated how disrupting the ULK complex leads to impaired autophagy. One well-established function of the ULK complex is to recruit ATG9 vesicles (Ren et al., 2023). These vesicles serve as an upstream platform for the PI3KC3-C1, providing the substrate for phosphoinositide generation (Holzer et al., 2024). To clarify how our mutations impact this step, we starved ATG13 mutant KI cells and observed ATG9A localization. Unexpectedly, even in ATG13FU5A KI cells, where ATG13 is almost completely dissociated from the ULK complex, ATG9A still colocalized with FIP200 (Figure 4—figure supplement 1C). Since these puncta also overlapped with p62, it is likely that p62 bodies recruit both FIP200 and ATG9 vesicles (Hama et al., 2023). Therefore, it is apparently difficult to assess the autophagosome formation-associated recruitment of the ATG9 vesicles using the present KI cell lines. Another key function of the ULK complex is the ULK1-dependent phosphorylation of ATGs, and phosphorylation of ATG14 at Ser29 is known to be particularly critical (Park et al., 2016; Wold et al., 2016). In ATG13FIP3A and ATG13FU5A KI cells, ATG14 phosphorylation was significantly reduced, indicating decreased ULK1 activity (Figure 4—figure supplement 1D, E). Notably, in ATG13 KO cells, ATG14 phosphorylation became almost undetectable, though the underlying mechanism remains to be fully investigated. Altogether, these data point to reduced ULK1 activity as a key factor explaining the autophagy deficiency observed in ATG13FU5A KI cells.
 
@@ -71,60 +99,602 @@ In addition to Atg17, budding and fission yeasts have Atg11 as a closer homolog 
 
 ## Materials and methods
 
-## Structural prediction using AlphaFold2 with the AlphaFold-Multimer mode
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>ULK1</td>
+      <td>NCBI Reference Sequence</td>
+      <td>NM_003565.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>ATG13 (isoform c)</td>
+      <td>Hosokawa et al., 2009</td>
+      <td>NM_001142673.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>RB1CC1/FIP200 (isoform 2)</td>
+      <td>Hara et al., 2008</td>
+      <td>NM_001083617.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>ATG9A</td>
+      <td>Kishi-Itakura et al., 2014</td>
+      <td>NM_001077198.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>MAP1LC3B</td>
+      <td>Yim et al., 2022</td>
+      <td>NM_022867.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Escherichia coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>Novagen</td>
+      <td>69450</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>RIKEN</td>
+      <td>RCB2202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HeLa</td>
+      <td>RIKEN</td>
+      <td>RCB0007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Ulk1 Ulk2 DKO MEF</td>
+      <td>Cheong et al., 2011</td>
+      <td>Kindly provided by Craig B, Thompson</td>
+      <td>Established from C57BL/6 mice</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>ATG13 KO HeLa</td>
+      <td>Hama et al., 2023</td>
+      <td>WM1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>ATG13-3xFLAG KI HeLa</td>
+      <td>This study</td>
+      <td>13FWTKI14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>ATG13-3xFLAG FIP3A KI HeLa</td>
+      <td>This study</td>
+      <td>13FF3AKI12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>ATG13-3xFLAG ULK2A KI HeLa</td>
+      <td>This study</td>
+      <td>13FU2AKI12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>ATG13-3xFLAG FU5A KI HeLa</td>
+      <td>This study</td>
+      <td>13FFU5AKI24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-FIP200</td>
+      <td>Proteintech</td>
+      <td>17250-1-AP</td>
+      <td>1:1000 for WB, 1:500 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-ATG13</td>
+      <td>Cell Signaling Technology</td>
+      <td>#13273</td>
+      <td>1:1000 for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-ULK1</td>
+      <td>Cell Signaling Technology</td>
+      <td>#8054S</td>
+      <td>1:500 for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-ATG14 p-Ser29</td>
+      <td>Cell Signaling Technology</td>
+      <td>#92340</td>
+      <td>1:1000 for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-ATG14</td>
+      <td>Proteintech</td>
+      <td>24412-1-AP</td>
+      <td>1:1000 for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal anti-p62</td>
+      <td>PROGEN</td>
+      <td>GP62-C</td>
+      <td>1:500 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-FLAG</td>
+      <td>MBL</td>
+      <td>M185-7</td>
+      <td>1:1000 for WB, 1:500 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HA</td>
+      <td>MBL</td>
+      <td>M180-3</td>
+      <td>1:500 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-β-actin</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2228</td>
+      <td>1:10,000 for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated mouse monoclonal anti-DDDDK tag</td>
+      <td>MBL</td>
+      <td>M185-7</td>
+      <td>1:2000 for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated mouse monoclonal anti-rabbit IgG</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>111-035-144</td>
+      <td>1:10,000 for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated mouse monoclonal anti-mouse IgG</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>111-035-003</td>
+      <td>1:10,000 for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-conjugated polyclonal anti-mouse IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-11029</td>
+      <td>1:2000 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 555-conjugated polyclonal anti-rabbit IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-31572</td>
+      <td>1:2000 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647-conjugated polyclonal anti-pig IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-21450</td>
+      <td>1:2000 for IF</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET15b</td>
+      <td>Novagen</td>
+      <td>69661</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-1</td>
+      <td>Cytiva</td>
+      <td>28954648</td>
+      <td>Figure 3C</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET15b-MBP-ULK1 (636–1050 aa)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 2C</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET15b-MBP-ULK1FIP2A (636–1050 aa)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET15b-MBP-ATG13 (363–517 aa)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figures 1D, 2C, Figure 1—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET15b-MBP-ATG13FIP3A (363–517 aa)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 1D</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET15b-MBP-ATG13ULK2A (363–517 aa)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 2C</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET15b-MBP-FIP200 (1–634 aa)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figures 1D and 3C</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX6p-1-GST-ULK1 (636–1050 aa)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 3C</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX6p-1-GST-ULK1FIP2A (636–1050 aa)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 3C</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMRX-IP-3xFLAG-ULK1</td>
+      <td>This study</td>
+      <td>YHE134</td>
+      <td>Figure 3E, G</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMRX-IP-3xFLAG-ULK1FIP2A</td>
+      <td>This study</td>
+      <td>YHE141</td>
+      <td>Figure 3E, G</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMRX-IP-ATG13-3xFLAG</td>
+      <td>This study</td>
+      <td>YHE103</td>
+      <td>Figures 1D, 2D, Figure 4—figure supplement 1A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMRX-IP-ATG13FIP3A-3xFLAG</td>
+      <td>This study</td>
+      <td>YHE116</td>
+      <td>Figure 1D</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMRX-IP-ATG13ULK2A-3xFLAG</td>
+      <td>This study</td>
+      <td>YHE144</td>
+      <td>Figure 2D</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMRX-IP-ATG13FU5A-3xFLAG</td>
+      <td>This study</td>
+      <td>YHE180</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMRX-IP-ATG9A-3xHA</td>
+      <td>This study</td>
+      <td>YHE218</td>
+      <td>Figure 4—figure supplement 1C</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCG-gag-pol</td>
+      <td>Kindly provided by Teruhiko Yasui</td>
+      <td></td>
+      <td>For packaging retrovirus for stable gene expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCG-VSV-G</td>
+      <td>Kindly provided by Teruhiko Yasui</td>
+      <td></td>
+      <td>For packaging retrovirus for stable gene expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PX458-gATG13 exon14</td>
+      <td>This study</td>
+      <td>YHC49</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKnockIn</td>
+      <td>This study</td>
+      <td>YHC3</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKnockIn-ATG13 exon14-ATG13 (347–517 aa)–3xFLAG</td>
+      <td>This study</td>
+      <td>YHC50</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKnockIn-ATG13 exon14-ATG13FIP3A (347–517 aa)–3xFLAG</td>
+      <td>This study</td>
+      <td>YHC51</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKnockIn-ATG13 exon14-ATG13ULK2A (347–517 aa)–3xFLAG</td>
+      <td>This study</td>
+      <td>YHC52</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKnockIn-ATG13 exon14-ATG13FU5A (347–517 aa)–3xFLAG</td>
+      <td>This study</td>
+      <td>YHC53</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PrimeSTAR Max DNA Polymerase</td>
+      <td>Takara Bio</td>
+      <td>R045A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NEBuilder HiFi DNA Assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>E2621X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FuGENE HD</td>
+      <td>Promega</td>
+      <td>VPE2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HaloTag TMR Ligand</td>
+      <td>Promega</td>
+      <td>G8251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin</td>
+      <td>Sigma-Aldrich</td>
+      <td>D141</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polybrane</td>
+      <td>Sigma-Aldrich</td>
+      <td>H9268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>P8833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blasticidin</td>
+      <td>Fujifilm Wako Pure Chemical Corporation</td>
+      <td>022-18713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G-418</td>
+      <td>Fujifilm Wako Pure Chemical Corporation</td>
+      <td>074-06801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anti-FLAG M2 affinity gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4% paraformaldehyde</td>
+      <td>Fujifilm Wako Pure Chemical Corporation</td>
+      <td>163-20145</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amylose Resin High Flow</td>
+      <td>New England Biolabs</td>
+      <td>E8022L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bio-Scale Mini Bio-Gel P-6 desalting column</td>
+      <td>Bio-Rad Laboratories</td>
+      <td>7325304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>COSMOGEL GST-Accept</td>
+      <td>NACALAI TESQUE</td>
+      <td>09277-14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HiLoad 26/600 Superdex 200 pg</td>
+      <td>Cytiva</td>
+      <td>28989336</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>One Step CBB</td>
+      <td>BIO CRAFT</td>
+      <td>CBB-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold2 v2.3</td>
+      <td>Jumper et al., 2021</td>
+      <td></td>
+      <td>Structural prediction was done using AlphaFold2 v2.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MicroCal PEAQ-ITC analysis software</td>
+      <td>Malvern Panalytical Ltd</td>
+      <td></td>
+      <td>Integration and fitting of ITC were done using MicroCal PEAQ-ITC analysis software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji-ImageJ</td>
+      <td>https://imagej.net/Fiji/Downloads</td>
+      <td></td>
+      <td>Image analysis was done using Fiji-ImageJ and plugins</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td></td>
+      <td>Images were mounted using these softwares</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9</td>
+      <td>GraphPad Prism</td>
+      <td></td>
+      <td>Graphs and statistical tests were done using GraphPad Prism</td>
+    </tr>
+  </tbody>
+</table>
+
+### Structural prediction using AlphaFold2 with the AlphaFold-Multimer mode
 
 Structure was predicted using AlphaFold2 v2.3 installed on a local computer (Sunway Technology Co, Ltd) (Jumper et al., 2021). The predictions were run using the AlphaFold-Multimer mode (Evans et al., 2021), with five models and a single seed per model, and default multiple sequence alignment generation using the MMSeqs2 server (Mirdita et al., 2022; Mirdita et al., 2019). The unrelaxed predicted models were subjected to an Amber relaxation procedure, and the relaxed model with the highest confidence based on predicted LDDT scores was selected as the best model and used for figure preparation (Jumper et al., 2021). Structural figures were prepared using PyMOL (http://www.pymol.org/pymol). The model is available in ModelArchive (https://modelarchive.org/) with the accession code ma-jz53c.
 
-## Cell culture
+### Cell culture
 
 HeLa cells and MEFs were cultured in Dulbecco’s modified Eagle medium (DMEM) (043-30085; Fujifilm Wako Pure Chemical Corporation) supplemented with 10% fetal bovine serum (FBS) (172012; Sigma-Aldrich) in a 5% CO2 incubator at 37°C. Cells were washed twice with phosphate-buffered saline (PBS) and incubated in amino acid-free DMEM (048-33575; Fujifilm Wako Pure Chemical Corporation) without FBS for starvation. HeLa and HEK293T cells were authenticated and validated by STR profiling by RIKEN. ATG13 KO HeLa cells (Hama et al., 2023) and Ulk1 Ulk2 double knockout MEFs (Cheong et al., 2011) were described previously. Ulk1 Ulk2 double knockout MEFs were originally derived from C57BL/6 mouse embryos and provided by an external researcher. The mammalian cell lines were routinely confirmed to be free of mycoplasma contamination by fluorescence microscopy.
 
-## Plasmids for mammalian cells
+### Plasmids for mammalian cells
 
 Plasmids for stable expression were generated as follows: DNA fragments encoding human ULK1 (NM_003565.4), ATG13 (Hosokawa et al., 2009), and ATG9A (Itakura et al., 2012) were inserted into the retroviral plasmid pMRX-IP (puromycin-resistant marker) (Kitamura et al., 2003; Saitoh et al., 2003) with a 3 × FLAG or 3 × HA epitope tag. Site-directed mutagenesis was used to introduce ATG13FIP3A, ATG13ULK2A, ATG13FU5A, and ULK1FIP2A mutations. pMRXIB-HaloTag7-ratLC3B was described previously (Yim et al., 2022). Plasmids for ATG13 KI were generated as follows: sgRNAs targeting the exon 14 of ATG13 (5′-GGCCTCCCCTCACGATGTCT-3′) were inserted into the BpiI site of PX458 [pSpCas9(BB)-2A-GFP; Addgene #48138]. Donor plasmids for ATG13 KI were generated as follows: 500 base-pair (bp) and 682 bp homology arms were amplified from the genomic ATG13 locus around exon 14 and inserted to flank the KI cassettes (described in Figure 4A) in the donor plasmid (pKnockIn). The coding sequence of 3xFLAG-tagged ATG13 with or without FIP3A, ULK2A, or FU5A mutations was amplified from stable expression plasmids (described above) and inserted just behind the 5′ homology arm.
 
-## Stable expression in HeLa cells by retroviral infection
+### Stable expression in HeLa cells by retroviral infection
 
 HEK293T cells were transfected with the retroviral plasmid with pCG-gag-pol and pCG-VSV-G (a gift from Dr. T. Yasui, National Institutes of Biomedical Innovation, Health and Nutrition) using FuGENE HD (E2311; Promega) for 4 hr in Opti-MEM (31985-070; Gibco). After cell cultivation for 2 days in DMEM, the retrovirus-containing medium was harvested, filtered through a 0.45-µm filter unit (Ultrafree-MC; Millipore), and added to HeLa cells or MEFs with 8 μg/ml polybrene (H9268; Sigma-Aldrich). After 24 hr, 2 μg/ml puromycin (P8833; Sigma-Aldrich) or 2.5 μg/ml blasticidin (022-18713; Fujifilm Wako Pure Chemical Corporation) was used to select the stable transformants.
 
-## Plasmids for protein preparation
+### Plasmids for protein preparation
 
 To construct the expression plasmid encoding an N-terminal maltose-binding protein (MBP) followed by an HRV3C protease site, the genes were amplified by PCR and cloned into the pET15b vector. The genes were amplified by PCR and cloned into the pET15b-MBP vector for the plasmids encoding N-terminal MBP-tagged ULK1, ATG13, and FIP200. Similarly, for the plasmids encoding N-terminal glutathione S-transferase (GST)-tagged ULK1, the genes were amplified by PCR and cloned into the pGEX6p-1 vector. The NEBuilder HiFi DNA Assembly Master Mix (New England BioLabs) was used to assemble the PCR fragments. PCR-mediated site-directed mutagenesis was used to introduce the mutations that led to the specified amino acid substitutions. All constructs were sequenced to confirm their identities.
 
-## Protein expression and purification
+### Protein expression and purification
 
 E. coli BL21 (DE3) cells were used to express all recombinant proteins. After cell lysis, MBP-FIP200 (1–634) was purified by affinity chromatography using Amylose Resin High Flow (New England Biolabs). Next, MBP was cleaved with the human rhinovirus 3C protease. The eluates were then desalted with 20 mM Tris-HCl, pH 8.0, and 150 mM NaCl utilizing a Bio-Scale Mini Bio-Gel P-6 desalting column (Bio-Rad Laboratories). Subsequently, the cleaved MBP was removed by reapplying FIP200 (1–634) to an Amylose Resin High Flow column. For the pull-down assay, MBP-FIP200 (1–634) eluted from the amylose resin continued to be purified on a HiLoad 26/60 Superdex 200 PG column eluted with 20 mM Tris-HCl, pH 8.0, and 150 mM NaCl.
 
 Affinity chromatography with Amylose Resin High Flow (New England Biolabs) was used to purify the MBP-ATG13 (363–517) and MBP-ULK1 (636–1050) proteins. They were further purified on a HiLoad 26/60 Superdex 200 PG column and eluted with a buffer containing 20 mM Tris-HCl, pH 8.0, and 150 mM NaCl. Similarly, GST-ULK1 (636–1050) underwent initial purification using a GST-accept resin (Nacalai Tesque, 09277-14). This step was followed by further purification on a HiLoad 26/60 Superdex 200 PG column using the same elution buffer as above.
 
-## In vitro pull-down assay
+### In vitro pull-down assay
 
 Purified proteins were incubated with GST-accept beads (Nacalai Tesque) at 4°C for 30 min. The beads were washed three times with PBS, and proteins were eluted with 10 mM glutathione in 50 mM Tris-HCl (pH 8.0). SDS–PAGE was used to separate the samples, and protein bands were detected by One Step CBB (BIO CRAFT).
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 The binding of FIP200 (1–634) to MBP-ATG13 (363–517) and MBP-ATG13 (363–517) to MBP-ULK1 (636–1050) was measured by ITC, with a MICROCAL PEAQ-ITC calorimeter (Malvern) and stirring at 750 rpm at 25°C. All proteins were prepared in a solution of 20 mM Tris-HCl, pH 8.0, and 150 mM NaCl. The titration of MBP-ATG13 (363–517) with FIP200 (1–634) involved 18 injections of 2 μl of the MBP-ATG13 (363–517) solution (229 μM) at 150-s intervals into a sample cell containing 300 μl of FIP200 (1–634) (4 μM). The titration of MBP-ULK1 (636–1050) with MBP-ATG13 (363–517) involved 18 injections of 2 μl of the MBP-ULK1 (636–1050) WT at 232 μM or FIP2A mutant at 172 μM at 150-s intervals into a sample cell containing 300 μl of MBP-ATG13 (363–517) at 22.9 or 20.0 μM, respectively. The isotherm was integrated and fitted with the one-side-binding model of the Malvern MicroCal PEAQ-ITC analysis software. The error of each parameter indicates the fitting error.
 
-## Generation of KI cell lines
+### Generation of KI cell lines
 
 HeLa cells were transfected with the PX458-based plasmid expressing sgRNA for the ATG13 gene and donor plasmids using FuGENE HD (E2311; Promega). One day after transfection, the KI cells were selected with 1 mg/ml G418 for 14 days. After single clones were isolated, clones positive for the FLAG tag and negative for wild-type ATG13 were screened by immunoblotting.
 
-## Preparation of whole-cell lysates and immunoblotting
+### Preparation of whole-cell lysates and immunoblotting
 
 HeLa cells were lysed with 0.2% n-octyl-β-D-dodecyl maltoside in lysis buffer [50 mM Tris-HCl (pH 7.5), 150 mM NaCl, 1 mM EDTA, EDTA-free protease inhibitor cocktail (04080; Nacalai Tesque)] for 15 min on ice. After centrifugation at 20,000 × g for 15 min at 4°C, the supernatants were mixed with 20% volumes of 6 × SDS–PAGE sample buffer. The samples were subjected to SDS–PAGE and transferred to Immobilon-P PVDF membranes (IPVH00010; EMD Millipore). The primary antibodies used for immunoblotting were rabbit polyclonal antibodies against FIP200 (17250-1-AP; ProteinTech), ATG13 (13273; Cell Signaling), ULK1 (8054; Cell Signaling), ATG14 p-Ser29 (#92340; Cell Signaling), ATG14 (24412-1-AP; ProteinTech), and mouse monoclonal antibody against FLAG (F1804; Sigma-Aldrich) and β-actin (A2228; Sigma-Aldrich). Horseradish peroxidase (HRP)-conjugated anti-rabbit IgG (111-035-144; Jackson ImmunoResearch) was used as a secondary antibody. The HRP-conjugated mouse monoclonal antibody against DDDDK-tag (M185-7; MBL) was used for FLAG tag detection. Immobilon Western Chemiluminescent HRP Substrate (P90715; EMD Millipore) was used to visualize the signals detected by an image analyzer (ImageQuant LAS 4000; Cytiva). Fiji software (ImageJ; National Institutes of Health) was used to adjust contrast and brightness and quantify the signals (Schindelin et al., 2012).
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Cells were lysed with 1% 3-[(3-cholamidopropyl)-dimethylammonium]-1-propanesulfonate (CHAPS) in lysis buffer and centrifuged at 20,000 × g for 15 min. The supernatants were incubated with anti-FLAG M2 affinity gel (A2220; Sigma-Aldrich) for 1 hr at 4°C with gentle rotation. The beads were washed three times in washing buffer (20 mM Tris-HCl, pH 8.0, 150 mM NaCl, 1 mM EDTA, and 0.5% CHAPS), and the proteins were eluted with the SDS–PAGE sample buffer.
 
-## Immunostaining and fluorescence microscopy
+### Immunostaining and fluorescence microscopy
 
 Cells were grown on segmented cover glass (SCC-002; Matsunami Glass IND.), washed with PBS, and fixed with 4% paraformaldehyde (163-20145; Fujifilm Wako Pure Chemical Corporation) in PBS for 10 min. The cells were permeabilized with 50 µg/ml digitonin in PBS for 5 min and blocked with 3% BSA in PBS for 30 min. Primary antibodies in PBS and 3% BSA were added, and samples were incubated for 1 hr at room temperature. Cells were washed five times with PBS, incubated with secondary antibodies in PBS with 3% BSA for 1 hr at room temperature, and washed five times with PBS. Rabbit polyclonal antibodies against FIP200 (17250-1-AP; ProteinTech) and mouse monoclonal antibodies against FLAG (F1804; Sigma-Aldrich) HA (M180-3, MBL) and guinea pig antibody against p62 (GP62-C; PROGEN) were used as primary antibodies for immunostaining. Alexa Fluor 488-conjugated anti-mouse IgG (also cross-adsorbed to rabbit IgG and rat IgG) (A-11029; Thermo Fisher Scientific), Alexa Fluor 555-conjugated anti-rabbit IgG (also cross-adsorbed to mouse IgG) (A-31572; Thermo Fisher Scientific), and Alexa Fluor 647-conjugated anti-guinea pig (A21450; Thermo Fisher Scientific) were used as secondary antibodies. Cells were observed under a confocal microscope (ECLIPSE Ti2; Nikon).
 
-## Halo-LC3 processing assay
+### Halo-LC3 processing assay
 
 Cells were treated with 100 nM tetramethylrhodamine (TMR)-conjugated HaloTag ligand (G8251, Promega) for 15 min. After washing twice with PBS, cells were cultured in the starvation medium for 1 hr and lysed as described above. Proteins were separated by SDS–PAGE, and in-gel TMR fluorescence was detected using a fluorescent imaging system (Odyssey M; Li-COR).
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism 9 software (GraphPad Software) was used for statistical analyses. The statistical methods are described in each figure legend.

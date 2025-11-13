@@ -17,15 +17,15 @@
 
 ### Affiliations
 
-1. https://ror.org/04t0gwh46 Institut Curie, PSL Research University Paris France
-2. https://ror.org/02vjkv261 INSERM, U900 Paris France
-3. https://ror.org/04y8cs423 MINES ParisTech, PSL Research University, CBIO-Centre for Computational Biology Paris France
-4. https://ror.org/05sd8tv96 Barcelona Supercomputing Center (BSC), Plaça Eusebi Güell, 1-3 Barcelona Spain
-5. https://ror.org/04xfq0f34 Faculty of Medicine, Joint Research Centre for Computational Biomedicine (JRC-COMBINE), RWTH Aachen University Aachen Germany
-6. https://ror.org/01g9ty582 Semmelweis University, Faculty of Medicine, Department of Physiology Budapest Hungary
+1. Institut Curie, PSL Research University Paris France ([ROR:04t0gwh46](https://ror.org/04t0gwh46))
+2. INSERM, U900 Paris France ([ROR:02vjkv261](https://ror.org/02vjkv261))
+3. MINES ParisTech, PSL Research University, CBIO-Centre for Computational Biology Paris France ([ROR:04y8cs423](https://ror.org/04y8cs423))
+4. Barcelona Supercomputing Center (BSC), Plaça Eusebi Güell, 1-3 Barcelona Spain ([ROR:05sd8tv96](https://ror.org/05sd8tv96))
+5. Faculty of Medicine, Joint Research Centre for Computational Biomedicine (JRC-COMBINE), RWTH Aachen University Aachen Germany ([ROR:04xfq0f34](https://ror.org/04xfq0f34))
+6. Semmelweis University, Faculty of Medicine, Department of Physiology Budapest Hungary ([ROR:01g9ty582](https://ror.org/01g9ty582))
 7. Astridbio Technologies Ltd Szeged Hungary
-8. https://ror.org/0371hy230 ICREA, Pg. Lluís Companys 23 Barcelona Spain
-9. https://ror.org/038t36y30 Faculty of Medicine and Heidelberg University Hospital, Institute of Computational Biomedicine, Heidelberg University Heidelberg Germany
+8. ICREA, Pg. Lluís Companys 23 Barcelona Spain ([ROR:0371hy230](https://ror.org/0371hy230))
+9. Faculty of Medicine and Heidelberg University Hospital, Institute of Computational Biomedicine, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
 
 † Corresponding author
 
@@ -51,7 +51,7 @@ When summarising the biological knowledge into a network and translating it into
 
 ## Results
 
-## Prostate Boolean model construction
+### Prostate Boolean model construction
 
 A network of signalling pathways and genes relevant for prostate cancer progression was assembled to recapitulate the potential deregulations that lead to high-grade tumours. Dynamical properties were added onto this network to perform simulations, uncover therapeutic targets and explore drug combinations. The model was built upon a generic cancer Boolean model by Fumiã and Martins, 2013, which integrates major signalling pathways and their substantial cross-talks. The pathways include the regulation of cell death and proliferation in many tumours.
 
@@ -65,7 +65,7 @@ We defined six variables as output nodes that allow the integration of multiple 
 
 **Figure 2.:** Nodes (ellipses) represent biological entities, and arcs are positive (green) or negative (red) influences of one entity on another one. Orange rectangles correspond to inputs (from left to right: Epithelial Growth Factor (EGF), Fibroblast Growth Factor (FGF), Transforming Growth Factor beta (TGFbeta), Nutrients, Hypoxia, Acidosis, Androgen, fused_event, Tumour Necrosis Factor alpha (TNFalpha), SPOP, Carcinogen) and dark blue rectangles to outputs that represent biological phenotypes (from left to right: Proliferation, Migration, Invasion, Metastasis, Apoptosis, DNA_repair), the read-outs of the model. This network is available to be inspected as a Cytoscape file in the Supplementary file 1.
 
-## Prostate Boolean model simulation
+### Prostate Boolean model simulation
 
 The model can be considered as a model of healthy prostate cells when no mutants (or fused genes) are present. We refer to this model as the wild type model. These healthy cells mostly exhibit quiescence (neither proliferation nor apoptosis) in the absence of any input (Figure 3A). When Nutrients and growth factors (EGF or FGF) are present, Proliferation is activated (Figure 3B). Androgen is necessary for AR activation and helps in the activation of Proliferation, even though it is not necessary when Nutrients or growth factors are present. Cell death factors (such as Caspase 8 or 9) trigger Apoptosis in the absence of SPOP, while Hypoxia and Carcinogen facilitate apoptosis but are not necessary if cell death factors are present (Figure 3C).
 
@@ -77,9 +77,9 @@ In our model, the progression towards metastasis is described as a stepwise proc
 
 This prostate Boolean model was simulated stochastically using MaBoSS (Stoll et al., 2017; Stoll et al., 2012) and validated by recapitulating known phenotypes of prostate cells under physiological conditions (Figure 3 and Appendix 1, Sections 2.2 and 2.3, Appendix 1—figures 5–7). In particular, we tested that combinations of inputs lead to non-aberrant phenotypes such as growth factors leading to apoptosis in wild type conditions; we also verified that the cell cycle events occur in proper order: as CyclinD gets activated, RB1 is phosphorylated and turned OFF, allowing E2F1 to mediate the synthesis of CyclinB (see Supplementary file 2 for the jupyter notebook and the simulation of diverse cellular conditions).
 
-## Personalisation of the prostate Boolean model
+### Personalisation of the prostate Boolean model
 
-## Personalised TCGA prostate cancer patient Boolean models
+#### Personalised TCGA prostate cancer patient Boolean models
 
 We tailored the generic prostate Boolean model to a set of 488 TCGA prostate cancer patients (Appendix 1, Section 4, Appendix 1—figure 9) using our personalisation method (PROFILE) (Béal et al., 2019), constructing 488 individual Boolean models, one for each patient. Personalised models were built using three types of data: discrete data such as mutations and copy number alterations (CNA) and continuous data such as RNAseq data. For discrete data, the nodes corresponding to the mutations or the CNA were forced to 0 or 1 according to the effect of alterations, based on a priori knowledge (i.e. if the mutation was reported to be activating or inhibiting the gene’s activity). For continuous data, the personalisation method modifies the value for the transition rates of model variables and their initial conditions to influence the probability of some transitions. This corresponds, in a biologically meaningful way, to translating genetic mutations as lasting modifications making the gene independent of regulation, and to translating RNA expression levels as modulation of a signal but not changing the regulation rules (see Materials and methods and in Appendix 1, Section 4.1, Appendix 1—figures 10–14).
 
@@ -87,13 +87,246 @@ We assess the general behaviour of the individual patient-specific models by com
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig4-v2.jpg)
 
-**Figure 4.:** (A) Centroids of the Principal Component Analysis of the samples according to their Gleason grades (GG). The personalisation recipe used was mutations and copy number alterations (CNA) as discrete data and RNAseq as continuous data. Density plots of Proliferation (B) and Apoptosis (C) scores according to GG; each vignette corresponds to a specific sub-cohort with a given GG. Kruskal-Wallis rank sum test across GG is significant for Proliferation (p-value = 0.00207) and Apoptosis (p-value = 2.83E-6).Figure 4—source code 1.Figure 4.Processed datasets needed are Figure 4—source data 1 and Figure 4—source data 2 are located in the corresponding folder of the repository: here.Figure 4—source data 1.Figure 4B, C, with Figure 4—source code 1.Figure 4—source data 2.Figure 4A, with Figure 4—source code 1.
+**Figure 4.:** (A) Centroids of the Principal Component Analysis of the samples according to their Gleason grades (GG). The personalisation recipe used was mutations and copy number alterations (CNA) as discrete data and RNAseq as continuous data. Density plots of Proliferation (B) and Apoptosis (C) scores according to GG; each vignette corresponds to a specific sub-cohort with a given GG. Kruskal-Wallis rank sum test across GG is significant for Proliferation (p-value = 0.00207) and Apoptosis (p-value = 2.83E-6).
 
-## Personalised drug predictions of TCGA Boolean models
+### Personalised drug predictions of TCGA Boolean models
 
 Using the 488 TCGA patient-specific models, we looked in each patient for genes that, when inhibited, hamper Proliferation or promote Apoptosis in the model. We focused on these inhibitions as most drugs interfere with the protein activity related to these genes, even though our methodology allows us to study increased protein activity related to over-expression of genes as well (Béal et al., 2019; Montagud et al., 2019). Interestingly, we found several genes that were found as suitable points of intervention in most of the patients (MYC_MAX complex and SPOP were identified in more than 80% of the cases) (Appendix 1, Section 4.2, Appendix 1—figures 19 and 20), but others were specific to only some of the patients (MXI1 was identified in only 4 patients, 1% of the total, GLI in only 7% and WNT in 8% of patients). All the TCGA-specific personalised models can be found in Supplementary file 3, and the TCGA mutants and their phenotype scores can be found in Supplementary file 4.
 
 Furthermore, we explored the possibility of finding combinations of treatments that could reduce the Proliferation phenotype or increase the Apoptosis one. To lower the computational power need, we narrowed down the list of potential candidates to a set of selected genes that are targets of already-developed drugs relevant in cancer progression (Table 1) and analysed the simulations of the models with all the single and combined perturbations.
+
+**Table 1.**
+ List of selected nodes, their corresponding genes and drugs that were included in the drug analysis of the models tailored for TCGA patients and LNCaP cell line.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Node</th>
+      <th>Gene</th>
+      <th>Compound / Inhibitor name</th>
+      <th>Clinical stage</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">AKT</td>
+      <td rowspan="3">AKT1, AKT2, AKT3</td>
+      <td>PI-103</td>
+      <td>Preclinical</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>Enzastaurin</td>
+      <td>Phase 3</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>Archexin, Pictilisib</td>
+      <td>Phase 2</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td rowspan="2">AR</td>
+      <td rowspan="2">AR</td>
+      <td>Abiraterone,Enzalutamide, Formestane, Testosterone propionate</td>
+      <td>Approved</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>5alpha-androstan-3beta-ol</td>
+      <td>Preclinical</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>Caspase8</td>
+      <td>CASP8</td>
+      <td>Bardoxolone</td>
+      <td>Preclinical</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>cFLAR</td>
+      <td>CFLAR</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="3">EGFR</td>
+      <td rowspan="3">EGFR</td>
+      <td>Afatinib, Osimertinib, Neratinib, Erlotinib, Gefitinib</td>
+      <td>Approved</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>Varlitinib</td>
+      <td>Phase 3</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>Olmutinib, Pelitinib</td>
+      <td>Phase 2</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td rowspan="8">ERK</td>
+      <td rowspan="3">MAPK1</td>
+      <td>Isoprenaline</td>
+      <td>Approved</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>Perifosine</td>
+      <td>Phase 3</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>Turpentine, SB220025, Olomoucine, Phosphonothreonine</td>
+      <td>Preclinical</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td rowspan="3">MAPK3, MAPK1</td>
+      <td>Arsenic trioxide</td>
+      <td>Approved</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>Ulixertinib, Seliciclib</td>
+      <td>Phase 2</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>Purvalanol</td>
+      <td>Preclinical</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td rowspan="2">MAPK3</td>
+      <td>Sulindac, Cholecystokinin</td>
+      <td>Approved</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>5-iodotubercidin</td>
+      <td>Preclinical</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>GLUT1</td>
+      <td>SLC2A1</td>
+      <td>Resveratrol</td>
+      <td>Phase 4</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>HIF-1</td>
+      <td>HIF1A</td>
+      <td>CAY-10585</td>
+      <td>Preclinical</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td rowspan="3">HSPs</td>
+      <td rowspan="3">HSP90AA1, HSP90AB1, HSP90B1, HSPA1A, HSPA1B, HSPB1</td>
+      <td>Cladribine</td>
+      <td>Approved</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>17-DMAG</td>
+      <td>Phase 2</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>NMS-E973</td>
+      <td>Preclinical</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td rowspan="3">MEK1_2</td>
+      <td rowspan="3">MAP2K1, MAP2K2</td>
+      <td>Trametinib, Selumetinib</td>
+      <td>Approved</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>Perifosine</td>
+      <td>Phase 3</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>PD184352 (CI-1040)</td>
+      <td>Phase 2</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>MYC_MAX</td>
+      <td>complex of MYC and MAX</td>
+      <td>10058-F4 (for MAX)</td>
+      <td>Preclinical</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>p14ARF</td>
+      <td>CDKN2A</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PI3K</td>
+      <td rowspan="2">PIK3CA, PIK3CB, PIK3CG, PIK3CD, PIK3R1, PIK3R2, PIK3R3, PIK3R4, PIK3R5, PIK3R6, PIK3C2A, PIK3C2B, PIK3C2G, PIK3C3</td>
+      <td>PI-103</td>
+      <td>Preclinical</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>Pictilisib</td>
+      <td>Phase 2</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ROS</td>
+      <td>NOX1, NOX3, NOX4</td>
+      <td>Fostamatinib</td>
+      <td>Approved</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td rowspan="2">NOX2</td>
+      <td>Dextromethorphan</td>
+      <td>Approved</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>Tetrahydroisoquinolines (CHEMBL3733336, CHEMBL3347550, CHEMBL3347551)</td>
+      <td>Preclinical</td>
+      <td>ChEMBL</td>
+    </tr>
+    <tr>
+      <td>SPOP</td>
+      <td>SPOP</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TERT</td>
+      <td rowspan="2">TERT</td>
+      <td>Grn163l</td>
+      <td>Phase 2</td>
+      <td>Drug Bank</td>
+    </tr>
+    <tr>
+      <td>BIBR 1532</td>
+      <td>Preclinical</td>
+      <td>ChEMBL</td>
+    </tr>
+  </tbody>
+</table>
 
 We used the models to grade the effect that the combined treatments have in each one of the 488 TCGA patient-specific models’ phenotypes. This list of combinations of treatments can be used to compare the effects of drugs on each TCGA patient and allows us to propose some of them for individual patients and to suggest drugs suitable to groups of patients (Supplementary file 4). Indeed, the inactivation of some of the targeted genes had a greater effect in some patients than in others, suggesting the possibility for the design of personalised drug treatments. For instance, for the TCGA-EJ-5527 patient, the use of MYC_MAX complex inhibitor reduced Proliferation to 66%. For this patient, combining MYC_MAX with other inhibitors, such as AR or AKT, did not further reduce the Proliferation score (67% in these cases). Other patients have MYC_MAX as an interesting drug target, but the inhibition of this complex did not have such a dramatic effect on their Proliferation scores as in the case of TCGA-EJ-5527. Likewise, for the TCGA-H9-A6BX patient, the use of SPOP inhibitor increased Apoptosis by 87%, while the use of a combination of cFLAR and SPOP inhibitors further increased Apoptosis by 89%. For the rest of this section, we focus on the analysis of clinical groups rather than individuals.
 
@@ -101,7 +334,7 @@ Studying the decrease of Proliferation, we found that AKT is the top hit in Glea
 
 The work on patient data provided possible insights and suggested patient- and grade-specific potential targets. To validate our approach experimentally, we personalised the prostate model to different prostate cell lines, where we performed drug assays to confirm the predictions of the model.
 
-## Personalised drug predictions of LNCaP Boolean model
+### Personalised drug predictions of LNCaP Boolean model
 
 We applied the methodology for personalisation of the prostate model to eight prostate cell lines available in GDSC (Iorio et al., 2016): 22RV1, BPH-1, DU-145, NCI-H660, PC-3, PWR-1E, and VCaP (results in Appendix 1, Section 5 and are publicly available in Supplementary file 5). We decided to focus the validation on one cell line, LNCaP.
 
@@ -115,13 +348,13 @@ Additionally, these gradual inhibition analyses can be combined to study the int
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig5-v2.jpg)
 
-**Figure 5.:** A and C) and HSPs and PI3K (B and D) inhibition under EGF growth condition.Proliferation score variation (A) and Bliss Independence synergy score (C) with increased node activation of nodes ERK and MYC_MAX. Proliferation score variation (B) and Bliss Independence synergy score (D) with increased node activation of nodes HSPs and PI3K. Bliss Independence synergy score <1 is characteristic of drug synergy, grey colour means one of the drugs is absent and thus no synergy score is available.Figure 5—source code 1.Figure 5 from the main text and Appendix 1—figures 27, 34–39.Processed datasets needed is Figure 5—source data 1 and is located in the corresponding folder of the repository: here.Figure 5—source data 1.Figure 5 with Figure 5—source code 1.
+**Figure 5.:** Proliferation score variation (A) and Bliss Independence synergy score (C) with increased node activation of nodes ERK and MYC_MAX. Proliferation score variation (B) and Bliss Independence synergy score (D) with increased node activation of nodes HSPs and PI3K. Bliss Independence synergy score <1 is characteristic of drug synergy, grey colour means one of the drugs is absent and thus no synergy score is available.
 
 Lastly, drug synergies can be studied using Bliss Independence using the results from single and combined simulations with gradual inhibitions. This score compares the combined effect of two drugs with the effect of each one of them, with a synergy when the value of this score is lower than 1. We found that the combined inhibition of ERK and MYC_MAX nodes on the Proliferation score was synergistic (Figure 5C). Another synergistic pair is the combined gradual inhibition of HSPs and PI3K nodes that also affects the Proliferation score in a joint manner (Figure 5B), with some Bliss Independence synergy found (Figure 5D). A complete study on the Bliss Independence synergy of all the drugs considered in the present work on Proliferation and Apoptosis phenotypes can be found in Appendix 1, Section 7.3.2, Appendix 1—figures 38 and 39.
 
-## Experimental validation of predicted targets
+### Experimental validation of predicted targets
 
-## Drugs associated with the proposed targets
+#### Drugs associated with the proposed targets
 
 To identify drugs that could act as potential inhibitors of the genes identified with the Boolean model, we explored the drug-target associations in DrugBank (Wishart et al., 2018) and ChEMBL (Gaulton et al., 2017). We found drugs that targeted almost all genes corresponding to the nodes of interest in Table 1, except for cFLAR, p14ARF, and SPOP. However, we could not identify experimental cases where drugs targeting both members of the proposed combinations were available (Appendix 1, Section 7.1 and in Supplementary file 6). One possible explanation is that the combinations predicted by the model suggest, in some cases, to overexpress the potential target and most of the drugs available act as inhibitors of their targets.
 
@@ -129,11 +362,11 @@ Using the cell line-specific models, we tested if the LNCaP cell line was more s
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig6-v2.jpg)
 
-**Figure 6.:** GDSC z-score was obtained for all the drugs targeting genes included in the model for all the prostate cell lines in GDSC. Negative values mean that the cell line is more sensitive to the drug. Drugs included in Table 1 were highlighted. ‘Other targets’ are drugs targeting model-related genes that are not part of Table 1.Figure 6—source code 1.Figure 6.Processed datasets needed are Figure 6—source data 1 and Figure 6—source data 2 are located in the corresponding folder of the repository: here.Figure 6—source data 1.Figure 6 with Figure 6—source code 1.Figure 6—source data 2.Figure 6 with Figure 6—source code 1.
+**Figure 6.:** GDSC z-score was obtained for all the drugs targeting genes included in the model for all the prostate cell lines in GDSC. Negative values mean that the cell line is more sensitive to the drug. Drugs included in Table 1 were highlighted. ‘Other targets’ are drugs targeting model-related genes that are not part of Table 1.
 
 Overall, the drugs proposed through this analysis suggest the possibility to repurpose drugs that are used in treating other forms of cancer for prostate cancer and open the avenue for further experimental validations based on these suggestions.
 
-## Experimental validation of drugs in LNCaP
+### Experimental validation of drugs in LNCaP
 
 To validate the model predictions of the candidate drugs, we selected four drugs that target HSPs and PI3K and tested them in LNCaP cell line experiments by using endpoint cell viability measurement assays and real-time cell survival assays using the xCELLigence system (see Materials and methods). The drug selection was a compromise between the drugs identified by our analyses (Table 1) and their effect in diminishing LNCaP’s proliferation (see the previous section). In both assays, drugs that target HSP90AA1 and PI3K/AKT pathway genes retrieved from the model analyses were found to be effective against cell proliferation.
 
@@ -143,13 +376,13 @@ Notably, Hsp90 (NMS-E973,17-DMAG) and PI3K/AKT pathway (PI-103, Pictilisib) inhi
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig7-v2.jpg)
 
-**Figure 7.:** (A) Cell viability assay of LNCaP cell line response to 17-DMAG HSP90 inhibitor. (B) Cell viability assay of LNCaP cell line response to PI-103 PI3K/AKT pathway inhibitor. (C) Cell viability assay of LNCaP cell line response to NMS-E973 HSP90 inhibitor. (D) Cell viability assay of LNCaP cell line response to Pictilisib PI3K/AKT pathway inhibitor. Concentrations of drugs were selected to capture their drug-dose response curves. The concentrations for the NMS-E973 are different from the rest as this drug is more potent than the rest (see Materials and methods).Figure 7—source code 1.Figure 7.Processed datasets needed are Figure 7—source data 1 and 2 and are located in the corresponding folder of the repository: here.Figure 7—source data 1.Figure 7 with Figure 7—source code 1.Figure 7—source data 2.
+**Figure 7.:** (A) Cell viability assay of LNCaP cell line response to 17-DMAG HSP90 inhibitor. (B) Cell viability assay of LNCaP cell line response to PI-103 PI3K/AKT pathway inhibitor. (C) Cell viability assay of LNCaP cell line response to NMS-E973 HSP90 inhibitor. (D) Cell viability assay of LNCaP cell line response to Pictilisib PI3K/AKT pathway inhibitor. Concentrations of drugs were selected to capture their drug-dose response curves. The concentrations for the NMS-E973 are different from the rest as this drug is more potent than the rest (see Materials and methods).
 
 We studied the real-time response of LNCaP cell viability upon drug addition and saw that the LNCaP cell line is sensitive to Hsp90 and PI3K/AKT pathway inhibitors (Figures 8 and 9, respectively). Both Hsp90 inhibitors tested, 17-DMAG and NMS-E973, reduced the cell viability 12 hr after drug supplementation (Figure 8A for 17-DMAG and Figure 8B for NMS-E973), with 17-DMAG having a stronger effect and in a more clear concentration-dependent manner than NMS-E973 (Appendix 1, Section 8, Appendix 1—figure 40, panels B-D for 17-DMAG and panels F-H for NMS-E973).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig8-v2.jpg)
 
-**Figure 8.:** (A) Real-time cell electronic sensing (RT-CES) cytotoxicity assay of Hsp90 inhibitor, 17-DMAG, that uses the Cell Index as a measurement of the cell growth rate (see the Materials and methods section). The yellow dotted line represents the 17-DMAG addition. (B) RT-CES cytotoxicity assay of Hsp90 inhibitor, NMS-E973. The yellow dotted line represents the NMS-E973 addition.Figure 8—source data 1.Figures 8 and 9 with Figure 8—source code 1.Figure 8—source code 1.Figures 8 and 9 with Figure 8—source data 1.Processed dataset needed is Figure 8—source data 1 and is located in the corresponding folder of the repository: here.
+**Figure 8.:** (A) Real-time cell electronic sensing (RT-CES) cytotoxicity assay of Hsp90 inhibitor, 17-DMAG, that uses the Cell Index as a measurement of the cell growth rate (see the Materials and methods section). The yellow dotted line represents the 17-DMAG addition. (B) RT-CES cytotoxicity assay of Hsp90 inhibitor, NMS-E973. The yellow dotted line represents the NMS-E973 addition.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig9-v2.jpg)
 
@@ -183,7 +416,7 @@ The present work contributes to efforts aimed at using modelling (Eduati et al.,
 
 ## Materials and methods
 
-## Data acquisition
+### Data acquisition
 
 Publicly available data of 489 human prostate cancer patients from TCGA described in Hoadley et al., 2018 were used in the present work. We gathered mutations, CNA, RNA and clinical data from cBioPortal (https://www.cbioportal.org/study/summary?id=prad_tcga_pan_can_atlas_2018) for all of these samples resulting in 488 with complete omics datasets.
 
@@ -191,7 +424,7 @@ Publicly available data of cell lines used in the present work were obtained fro
 
 All these data were used to personalise Boolean models using our PROFILE method (Béal et al., 2019).
 
-## Prior knowledge network construction
+### Prior knowledge network construction
 
 Several sources were used in building this prostate Boolean model and, in particular, the model published by Fumiã and Martins, 2013. This model includes several signalling pathways such as the ones involving receptor tyrosine kinase (RTKs), phosphatidylinositol 3-kinase (PI3K)/AKT, WNT/β-Catenin, transforming growth factor-β (TGF-β)/Smads, cyclins, retinoblastoma protein (Rb), hypoxia-inducible transcription factor (HIF-1), p53 and ataxia-telangiectasia mutated (ATM)/ataxia-telangiectasia and Rad3-related (ATR) protein kinases. The model includes these pathways as well as the substantial cross-talks among them. For a complete description of the process of construction, see Appendix 1, Section 1.
 
@@ -203,7 +436,7 @@ We modelled the gene fusion with activation of ERG by the decoupling of ERG in a
 
 The network was further documented using up-to-date literature and was constructed using GINsim (Chaouiya et al., 2012), which allowed us to study its stable states and network properties.
 
-## Boolean model construction
+### Boolean model construction
 
 We converted the network to a Boolean model by defining a regulatory graph, where each node is associated with discrete levels of activity (0 or 1). Each edge represents a regulatory interaction between the source and target nodes and is labelled with a threshold and a sign (positive or negative). The model is completed by logical rules (or functions), which assign a target value to each node for each regulator level combination (Abou-Jaoudé et al., 2016; Chaouiya et al., 2012). The regulatory graph was constructed using GINsim software (Chaouiya et al., 2012) and then exported in a format readable by MaBoSS software (see below) in order to perform stochastic simulations on the Boolean model.
 
@@ -211,13 +444,13 @@ The final model has a total of 133 nodes and 449 edges (Supplementary file 1) an
 
 This model was deposited in the GINsim Database with identifier 252 (http://ginsim.org/model/signalling-prostate-cancer) and in BioModels (Malik-Sheriff et al., 2020) with identifier MODEL2106070001 (https://www.ebi.ac.uk/biomodels/MODEL2106070001). Supplementary file 1 is provided as a zipped folder with the model in several formats: MaBoSS, GINsim, SBML, as well as images of the networks and their annotations. An extensive description of the model construction can be found in the Appendix 1, Section 1.
 
-## Stochastic Boolean model simulation
+### Stochastic Boolean model simulation
 
 MaBoSS (Stoll et al., 2017; Stoll et al., 2012) is a C++ software for stochastically simulating continuous/discrete-time Markov processes defined on the state transition graph (STG) describing the dynamics of a Boolean model (for more details, see Abou-Jaoudé et al., 2016; Chaouiya et al., 2012). MaBoSS associates transition rates to each node’s activation and inhibition, enabling it to account for different time scales of the processes described by the model. Probabilities to reach a phenotype (to have value ON) are thus computed by simulating random walks on the probabilistic STG. Since a state in the STG can combine the activation of several phenotypic variables, not all phenotype probabilities are mutually exclusive (like the ones in Appendix 1, Section 6.1, Appendix 1—figure 28). Using MaBoSS, we can study an increase or decrease of a phenotype probability when the model variables are altered (nodes status, initial conditions and transition rates), which may correspond to the effect of particular genetic or environmental perturbation. In the present work, the use of MaBoSS was focused on the readouts of the model, but this can be done for any node of the model.
 
 MaBoSS applies Monte-Carlo kinetic algorithm (i.e. Gillespie algorithm) to the STG to produce time trajectories (Stoll et al., 2017; Stoll et al., 2012), so time evolution of probabilities are estimated once a set of initial conditions are defined and a maximum time is set to ensure that the simulations reach asymptotic solutions. Results are analysed in two ways: (1) the trajectories for particular model states (states of nodes) can be interpreted as the evolution of a cell population as a function of time and (2) asymptotic solutions can be represented as pie charts to illustrate the proportions of cells in particular model states. Stochastic simulations with MaBoSS have already been successfully applied to study several Boolean models (Calzone et al., 2010; Cohen et al., 2015; Remy et al., 2015). A description of the methods we have used for the simulation of the model can be found in the Appendix 1, Section 2.
 
-## Data tailoring the Boolean model
+### Data tailoring the Boolean model
 
 Logical models were tailored to a dataset using PROFILE to obtain personalised models that capture the particularities of a set of patients (Béal et al., 2019) and cell lines (Béal et al., 2021). Proteomics, transcriptomics, mutations and CNA data can be used to modify different variables of the MaBoSS framework, such as node activity status, transition rates and initial conditions. The resulting ensemble of models is a set of personalised variants of the original model that can show great phenotypic differences. Different recipes (use of a given data type to modify a given MaBoSS variable) can be tested to find the combination that better correlates to a given clinical or otherwise descriptive data. In the present case, TCGA patient-specific models were built using mutations, CNA and/or RNA expression data. After studying the effect of these recipes in the clustering of patients according to their Gleason grading (Appendix 1, Section 4.1, Appendix 1—figures 10–14), we chose to use mutations and CNA as discrete data and RNA expression as continuous data.
 
@@ -225,7 +458,7 @@ Likewise, we tried different personalisation recipes to personalise the GDSC pro
 
 More on PROFILE’s methodology can be found in its own work (Béal et al., 2019) and at its dedicated GitHub repository (https://github.com/sysbio-curie/PROFILE; Béal, 2022). A description of the methods we have used for the personalisation of the models can be found in the Appendix 1, Section 3. The analysis of the TCGA personalisations and their patient-specific drug treatments can be found in Appendix 1, Section 4. The analysis of the prostate cell lines personalisations can be found in Appendix 1, Section 5, with a special focus on the LNCaP cell line model analysis in Section 6.
 
-## High-throughput mutant analysis of Boolean models
+### High-throughput mutant analysis of Boolean models
 
 MaBoSS allows the study of knock-out or loss-of-function (node forced to 0) and gain-of-function (node forced to 1) mutants as genetic perturbations and of initial conditions as environmental perturbations. Phenotypes’ stabilities against perturbations can be studied and allow to determine driver mutations that promote phenotypic transitions (Montagud et al., 2019).
 
@@ -235,25 +468,37 @@ The 488 TCGA patient-specific models were studied in a similar way, but only per
 
 Additionally, the results of the LNCaP model’s double mutants were used to quantify the level of genetic interactions (epistasis or otherwise) (Drees et al., 2005) between two genetic perturbations (resulting from either the gain-of-function mutation of a gene or from its knock-out or loss-of-function mutation) with respect to wild type phenotypes’ probabilities (Calzone et al., 2015). The method was applied to the LNCaP model studying Proliferation and Apoptosis scores (Appendix 1, Section 7.3.2, Appendix 1—figures 34 and 35).
 
-This genetic interaction study uses the following equation for each gene pair, which is equation 2 in Calzone et al., 2015:(1)ϵϕ(A,B)=fϕAB−ψ(fϕA, fϕB)
+This genetic interaction study uses the following equation for each gene pair, which is equation 2 in Calzone et al., 2015:
 
-where fϕA and fϕB are phenotype ϕ fitness values of single gene defects, fϕAB is the phenotype ϕ fitness of the double mutant, and ψx,y is one of the four functions:(2)ψADD(x,y)=x+y (additive)ψLOG(x,y)=log2((2x−1)(2y−1)+1) (log)ψMLT(x,y)=x∗y (multiplicative)ψMIN(x,y)=min(x,y) (min)
+$$
+ϵ_{ϕ}(A,B)=f_{ϕ}^{AB}−ψ(f_{ϕ}^{A}, f_{ϕ}^{B})
+$$
 
-To choose the best definition of ψx,y , the Pearson correlation coefficient is computed between the fitness values observed in all double mutants and estimated by the null model (more information on Drees et al., 2005). Regarding the fϕX fitness value, to a given phenotype ϕ, fϕX<1 represents deleterious, fϕX>1 beneficial and fϕX≈1 neutral mutation.
+where $f_{ϕ}^{A}$ and $f_{ϕ}^{B}$ are phenotype $ϕ$ fitness values of single gene defects, $f_{ϕ}^{AB}$ is the phenotype $ϕ$ fitness of the double mutant, and $ψx,y$ is one of the four functions:
 
-## Drug simulations in Boolean models
+$$
+ψ^{ADD}(x,y)=x+y (additive)ψ^{LOG}(x,y)=log_{2}((2^{x}−1)(2^{y}−1)+1) (log)ψ^{MLT}(x,y)=x∗y (multiplicative)ψ^{MIN}(x,y)=min(x,y) (min)
+$$
+
+To choose the best definition of $ψx,y$ , the Pearson correlation coefficient is computed between the fitness values observed in all double mutants and estimated by the null model (more information on Drees et al., 2005). Regarding the $f_{ϕ}^{X}$ fitness value, to a given phenotype $ϕ$, $f_{ϕ}^{X}<1$ represents deleterious, $f_{ϕ}^{X}>1$ beneficial and $f_{ϕ}^{X}≈1$ neutral mutation.
+
+### Drug simulations in Boolean models
 
 Logical models can be used to simulate the effect of therapeutic interventions and predict the expected efficacy of candidate drugs on different genetic and environmental backgrounds by using our PROFILE_v2 methodology. MaBoSS can perform simulations changing the proportion of activated and inhibited status of a given node. This can be determined in the configuration file of each model (see, for instance, the ‘istate’ section of the CFG files in the Supplementary files 1; 3 and 5). For instance, out of 5,000 trajectories of the Gillespie algorithm, MaBoSS can simulate 70% of them with an activated AKT and 30% with an inhibited AKT node. The phenotypes’ probabilities for the 5000 trajectories are averaged, and these are considered to be representative of a model with a drug that inhibits 30% of the activity of AKT. The same applies for a combined drug inhibition: a simulation of 50% AKT activity and 50% PI3K will have 50% of them with an activated AKT and 50% with an activated PI3K. Combining them, this will lead to 25% of the trajectories with both AKT and PI3K active, 25% with both nodes inactive, 25% with AKT active and 25% with PI3K active.
 
 In the present work, the LNCaP model has been simulated with different levels of node activity, with 100% of node inhibition (proper knock-out), 80%, 60%, 40%, 20%, and 0% (no inhibition), under four different initial conditions, a nutrient-rich media that simulates RPMI Gibco media with DHT (androgen), with EGF, with both and with none. In terms of the model, the initial conditions are Nutrients is ON and Acidosis, Hypoxia, TGF beta, Carcinogen, and TNF alpha are set to OFF. EGF and Androgen values vary upon simulations. We simulated the inhibition of 17 nodes of interest. These were the 16 nodes from Table 1 with the addition of the fused AR-ERG (Appendix 1, Section 7.3.1, Appendix 1—figures 34 and 35) and their 136 pairwise combinations (Appendix 1, Section 7.3.2, Appendix 1—figures 36 and 37). As we used six different levels of activity for each node, the resulting Appendix 1—figures 36 and 37 comprise a total of 4,998 simulations for each phenotype (136 × 6 x 6 + 17 x 6).
 
-Drug synergies have been studied using Bliss Independence. The Combination Index was calculated with the following equation (Foucquier and Guedj, 2015):(3)CI=Ea+Eb-Ea*Eb/Eab
+Drug synergies have been studied using Bliss Independence. The Combination Index was calculated with the following equation (Foucquier and Guedj, 2015):
 
-where Ea and Eb is the efficiency of the single drug inhibitions and Eab is the inhibition resulting from the double drug simulations. A Combination Index (CI) below 1 represents synergy among drugs (Appendix 1, Section 7.3.2, Appendix 1—figures 36 and 37).
+$$
+CI=E_{a}+E_{b}-E_{a}*E_{b}/E_{ab}
+$$
+
+where $E_{a}$ and $E_{b}$ is the efficiency of the single drug inhibitions and $E_{ab}$ is the inhibition resulting from the double drug simulations. A Combination Index (CI) below 1 represents synergy among drugs (Appendix 1, Section 7.3.2, Appendix 1—figures 36 and 37).
 
 This methodology can be found in its own repository: https://github.com/ArnauMontagud/PROFILE_v2.
 
-## Identification of drugs associated with proposed targets
+### Identification of drugs associated with proposed targets
 
 To identify drugs that could act as potential inhibitors of the genes identified with our models (Table 1), we explored the drug-target associations in DrugBank (Wishart et al., 2018). For those genes with multiple drug-target links, only those drugs that are selective and known to have relevance in various forms of cancer are considered here.
 
@@ -261,21 +506,21 @@ In addition to DrugBank searches, we also conducted exhaustive searches in ChEMB
 
 We performed a target set enrichment analysis using the fgsea method (Korotkevich et al., 2016) from the piano R package (Väremo et al., 2013). We targeted pathway information from the GDSC1 and GDSC2 studies (Iorio et al., 2016) as target sets and performed the enrichment analysis on the normalised drug sensitivity profile of the LNCaP cell line. We normalised drug sensitivity across cell lines in the following way: cells were ranked from most sensitive to least sensitive (using ln(IC50) as the drug sensitivity metrics), and the rank was divided by the number of cell lines tested with the given drug. Thus, the most sensitive cell line has 0, while the most resistant cell line has 1 normalised sensitivity. This rank-based metric made it possible to analyse all drug sensitivities for a given cell line without drug-specific confounding factors, like mean IC50 of a given drug, etc. (Appendix 1, Sections 7.1 and 7.2).
 
-## Cell culture method
+### Cell culture method
 
 For the in vitro drug perturbation validations, we used the androgen-sensitive prostate adenocarcinoma cell line LNCaP purchased from American Type Culture Collection (ATCC, Manassas, WV, USA). ATCC found no Mycoplasma contamination and the cell line was identified using STR profiling. Cells were maintained in RPMI-1640 culture media (Gibco, Thermo Fisher Scientific, Waltham, MA, USA) containing 4.5 g/L glucose, 10% foetal bovine serum (FBS, Gibco), 1 X GlutaMAX (Gibco), 1% PenStrep antibiotics (Penicillin G sodium salt, and Streptomycin sulfate salt, Sigma-Aldrich, St. Louis, MI, USA). Cells were maintained in a humidified incubator at 37 °C with 5% CO2 (Sanyo, Osaka, Japan).
 
-## Drugs used in the cell culture experiments
+### Drugs used in the cell culture experiments
 
-We tested two drugs targeted at Hsp90 and two targeted at PI3K complex. 17-DMAG is an Hsp90 inhibitor with an IC50 of 62 nM in a cell-free assay (Pacey et al., 2011). NMS-E973 is an Hsp90 inhibitor with DC50 of <10 nM for Hsp90 binding (Fogliatto et al., 2013). Pictilisib is an inhibitor of PI3K α/δ with IC50 of 3.3 nM in cell-free assays (Zhan et al., 2017). PI-103 is a multi-targeted PI3K inhibitor for p110 α/β/δ/γ with IC50 of 2–3 nM in cell-free assays and less potent inhibitor to mTOR/DNA-PK with IC50 of 30 nM (Raynaud et al., 2009). All drugs were obtained from commercial vendors and added to the growth media to have concentrations of 2, 8, 32, 128, and 512 nM for NMS-E973 and 1, 5, 25, 125, and 625 nM for the rest of the drugs in the endpoint cell viability and of 3.3, 10, 30 µM for all the drugs in the RT-CES cytotoxicity assay.
+We tested two drugs targeted at Hsp90 and two targeted at PI3K complex. 17-DMAG is an Hsp90 inhibitor with an IC50 of 62 nM in a cell-free assay (Pacey et al., 2011). NMS-E973 is an Hsp90 inhibitor with DC50 of <10 nM for Hsp90 binding (Fogliatto et al., 2013). Pictilisib is an inhibitor of PI3K $\alpha/\delta$ with IC50 of 3.3 nM in cell-free assays (Zhan et al., 2017). PI-103 is a multi-targeted PI3K inhibitor for p110 $\alpha/\beta/\delta/\gamma$ with IC50 of 2–3 nM in cell-free assays and less potent inhibitor to mTOR/DNA-PK with IC50 of 30 nM (Raynaud et al., 2009). All drugs were obtained from commercial vendors and added to the growth media to have concentrations of 2, 8, 32, 128, and 512 nM for NMS-E973 and 1, 5, 25, 125, and 625 nM for the rest of the drugs in the endpoint cell viability and of 3.3, 10, 30 µM for all the drugs in the RT-CES cytotoxicity assay.
 
-## Endpoint cell viability measurements
+### Endpoint cell viability measurements
 
 In vitro toxicity of the selected inhibitors was determined using the viability of LNCaP cells, determined by the fluorescent resazurin (Sigma-Aldrich, Germany) assay as described previously (Szebeni et al., 2017). Briefly, the ∼10,000 LNCaP cells were seeded into 96-well plates (Corning Life Sciences, Tewksbury, MA, USA) in 100 µL RPMI media and incubated overnight. Test compounds were dissolved in dimethyl sulfoxide (DMSO, Sigma-Aldrich, Germany), and cells were treated with an increasing concentration of test compounds: 2, 8, 32, 128, and 512 nM for NMS-E973 and 1, 5, 25, 125, and 625 nM for the rest of the drugs. The highest applied DMSO content of the treated cells was 0.4%. Cell viability was determined after 48 hours of incubation. Resazurin reagent (Sigma–Aldrich, Budapest, Hungary) was added at a final concentration of 25 µg/mL. After 2 hr at 37 °C 5%, CO2 (Sanyo) fluorescence (530 nm excitation/580 nm emission) was recorded on a multimode microplate reader (Cytofluor4000, PerSeptive Biosystems, Framingham, MA, USA). Viability was calculated with relation to blank wells containing media without cells and to wells with untreated cells. Each treatment was repeated in two wells per plate during the experiments, except for the PI-103 treatment with 1 nM in which only one well was used.
 
 In these assays, a deviation of 10–15% for in vitro cellular assays is an acceptable variation as it is a fluorescent assay that detects the cellular metabolic activity of living cells. Thus, in our analyses, we consider changes above 1.00 to be the same value as the controls.
 
-## Real-time cell electronic sensing (RT-CES) cytotoxicity assay
+### Real-time cell electronic sensing (RT-CES) cytotoxicity assay
 
 A real-time cytotoxicity assay was performed as previously described (Ozsvári et al., 2010). Briefly, RT-CES 96-well E-plate (BioTech Hungary, Budapest, Hungary) was coated with gelatin solution (0.2% in PBS, phosphate buffer saline) for 20 min at 37 °C; then gelatin was washed twice with PBS solution. Growth media (50 µL) was then gently dispensed into each well of the 96-well E-plate for background readings by the RT-CES system prior to the addition of 50 µL of the cell suspension containing 2 × 104 LNCaP cells. Plates were kept at room temperature in a tissue culture hood for 30 min prior to insertion into the RT-CES device in the incubator to allow cells to settle. Cell growth was monitored overnight by measurements of electrical impedance every 15 min. The next day cells were co-treated with different drugs with concentrations of 3.3, 10 and 30 µM. Treated and control wells were dynamically monitored over 72 hr by measurements of electrical impedance every 5 min. Each treatment was repeated in two wells per plate during the experiments, except for the 3.3 µM ones in which only one well was used. Continuous recording of impedance in cells was used as a measurement of the cell growth rate and reflected by the Cell Index value (Solly et al., 2004).
 

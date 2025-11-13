@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 MRC Cognition and Brain Sciences Unit, University of Cambridge Cambridge United Kingdom
-2. https://ror.org/00g30e956 Institute of Computational Neuroscience, University Medical Center Eppendorf-Hamburg, Hamburg University, Hamburg Center of Neuroscience Hamburg Germany
-3. https://ror.org/01kg8sb98 Department of Psychological and Brain Sciences, Indiana University Bloomington United States
-4. https://ror.org/0387jng26 Department of Psychology, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
+1. MRC Cognition and Brain Sciences Unit, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. Institute of Computational Neuroscience, University Medical Center Eppendorf-Hamburg, Hamburg University, Hamburg Center of Neuroscience Hamburg Germany ([ROR:00g30e956](https://ror.org/00g30e956))
+3. Department of Psychological and Brain Sciences, Indiana University Bloomington United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
+4. Department of Psychology, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
 5. International Max Planck Research School on Cognitive Neuroimaging Barcelona Spain
-6. https://ror.org/04n0g0b29 Center for Brain and Cognition, Pompeu Fabra University Barcelona Spain
-7. https://ror.org/04n0g0b29 Department of Information and Communication Technologies, Pompeu Fabra University Barcelona Spain
-8. https://ror.org/01pxwe438 McConnell Brain Imaging Centre, Montréal Neurological Institute, McGill University Montréal Canada
-9. https://ror.org/05qwgg493 Department of Health Sciences, Boston University Boston United States
+6. Center for Brain and Cognition, Pompeu Fabra University Barcelona Spain ([ROR:04n0g0b29](https://ror.org/04n0g0b29))
+7. Department of Information and Communication Technologies, Pompeu Fabra University Barcelona Spain ([ROR:04n0g0b29](https://ror.org/04n0g0b29))
+8. McConnell Brain Imaging Centre, Montréal Neurological Institute, McGill University Montréal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+9. Department of Health Sciences, Boston University Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))
 
 † Corresponding author
 
@@ -53,11 +53,17 @@ To answer the first question, we used multi-perturbation Shapley value analysis 
 
 ## Results
 
-## Characterizing the state of optimal signal propagation
+### Characterizing the state of optimal signal propagation
 
 To elucidate the concept of OSP, we start with an intuitive example. Consider a scenario where an orchestra attempts to distribute funds raised from a performance. A proposal would be to divide the funds equally among all members, a strategy that leads to the ‘egalitarian value’ by which every musician is paid the same amount (Algaba et al., 2019b). However, considering discrepancies in the effort of individual players — ranging from ensemble players to soloists and a conductor — makes this strategy unfair for those who contributed more. Assuming that everyone is set to maximize their share, the egalitarian proposal is rejected, and counterproposals follow until the optimally fair solution is found that is proportional to the invested contribution of every player. One can see this iterative process as traversing a convex solution space with a fixed point, representing the optimal solution. Any other solution is either incorrect, e.g., the solution results in shares that add up to a different value rather than the raised fund, or suboptimal, meaning that a better solution exists which, given enough time, will be selected eventually. Note that, by definition, there cannot be two equally optimal solutions into which the payoff is divided, while it is possible for multiple players to receive the same share, as with the egalitarian strategy.
 
-This complexity mirrors the challenge we address in our study: accurately decomposing the activity profile of each target node by identifying the precise contribution of each source node. This problem and the space of all possible solutions for a network of three nodes is depicted in (Figure 2A and B). For every target node in a network of N nodes, the space of all possible solutions encompasses N dimensions, with the set of potential solutions having an arbitrarily complex structure. Consequently, finding the one optimal solution in this space requires a systematic and extensive exploration of different decomposition solutions. To address this issue, Shapley provided an axiomatic framework that finds the optimal solution (called the Shapley value, see Discussion about its distinction from SHAP values) using information from all possible ways the players can form coalitions (Shapley, 1997). This algorithm serves as an external authority that, instead of navigating the solution space using proposals and counterproposals, computes the contribution of each player by systematically removing them from the game and tracking the game outcome.
+This complexity mirrors the challenge we address in our study: accurately decomposing the activity profile of each target node by identifying the precise contribution of each source node. This problem and the space of all possible solutions for a network of three nodes is depicted in (Figure 2A and B). For every target node in a network of $N$ nodes, the space of all possible solutions encompasses $N$ dimensions, with the set of potential solutions having an arbitrarily complex structure. Consequently, finding the one optimal solution in this space requires a systematic and extensive exploration of different decomposition solutions. To address this issue, Shapley provided an axiomatic framework that finds the optimal solution (called the Shapley value, see Discussion about its distinction from SHAP values) using information from all possible ways the players can form coalitions (Shapley, 1997). This algorithm serves as an external authority that, instead of navigating the solution space using proposals and counterproposals, computes the contribution of each player by systematically removing them from the game and tracking the game outcome.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig2-v1.jpg)
+
+**Figure 2.:** (A) A simple toy network with two sources and one target, in which the sources have different amounts of influence on the target. (B) For this toy network, the space of all possible ways in which the activity of the target node can be decomposed into contributions from source nodes has two dimensions. There exists a subset of potential solutions where the activity of the target node is correctly decomposed, but the decomposition is not optimal. There exists one equilibrium point where the decomposition is correct and optimal. (C) For every game, that is, the simulation of a whole-brain computational model, MSA performs extensive multi-site lesioning analysis to uncover the influence of every node on every other node. For every target node, MSA lesions combinations of source nodes, track how the activity of the target node changes given each perturbation and, for all source nodes, computes the difference between two scenarios: one with the source node included in the lesion-set, and the other where the source node is not lesioned. The difference between these two cases defines the contribution of the source to that specific coalition/combination of sources. Averaged over all contributions, the time-varying contribution of each source is then inferred. Iterating over all nodes results in the ‘optimal influence’ landscape that can be decomposed into two components: Direct influences, where nodes influence their connected neighbors, and indirect influences, where nodes influence distant unconnected nodes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig2-figsupp1-v1.jpg)
 
 To do so, we used the approach of MSA (Fakhar, 2021; Keinan et al., 2004a) that applies exhaustive multi-site virtual lesioning across all combinations of source nodes while tracking the resultant changes in the target node, as illustrated in (Figure 2C) The approach is analogous to repeatedly performing the same musical piece while each time a subset of players is excluded, thereby discerning each individual’s contribution to the performed track (see, e.g. Fakhar et al., 2024c). For instance, the contribution of a cello player to the song is easily distinguished by taking the difference between two pieces, once with the cello player included and once without. By evaluating all possible combinations of players, higher-order interactions are then accounted for (e.g. contributions of the entire string ensemble), and thus the exact contribution of each player across all possible configurations is inferred (see section Game-theoretical Framework in Materials and Methods for more details). In essence, our framework reveals the unique itemized description of each player’s contribution to the overall outcome. This detailed analysis allows for a precise division of payoffs, ensuring that players have no incentive to deviate from their allocated share (Gul, 1989; Pérez-Castrillo and Wettstein, 2001). The resulting game-theoretical equilibrium state, here termed the optimal signal propagation state, represents the only fair allocation of nodal influence in which no better solution can be found. Note that the ‘equilibrium’ here refers to the unique point in the solution space of the division problem and not the neural space (See Discussion). The MSA begins by defining a ‘game.’ To derive OSP, this game is formulated as a model of dynamics, such as a network of interacting nodes. These can range from abstract epidemic and excitable models (Garcia et al., 2012; Messé et al., 2015a) to detailed spiking neural networks (Pronold et al., 2024) and to mean-field models of the whole brain dynamics, as chosen here (see below). The model should ideally be fitted to reflect real data dynamics, after which MSA systematically lesions all nodes to derive the OSP. Put together, the framework is general and model-agnostic in the sense that it accommodates a wide range of network models built on different empirical datasets, from human neuroimaging and electrophysiology to invertebrate calcium imaging and anything in between. In essence, the framework is not bounded to specific modeling paradigms, which then allows direct comparison among different models (e.g. see section Global Network Topology is More Influential Than Local Node Dynamics).
 
@@ -71,37 +77,81 @@ Figure 2 reveals that brain regions exert influence not only on their directly c
 
 Collectively, our findings in this section indicate that manipulating a single region can impact the global dynamics of the entire brain (also as shown by Grayson et al., 2016; Rabuffo et al., 2023; Young et al., 2000), extending beyond anatomically connected regions. As a result, a critical question arises: Which poly-synaptic signaling conceptualization most accurately encapsulates these observed indirect influences?
 
-## Optimal signaling via broadcasting over parallel pathways
+### Optimal signaling via broadcasting over parallel pathways
 
 To determine which model of signal propagation most accurately captures the indirect influence exerted by brain regions on one another, we explored a spectrum of communication models, spanning from routing strategies to diffusive processes (Seguin et al., 2023; Seguin et al., 2020). Routing strategies postulate that information travels predominantly along, or with respect to the shortest path. As introduced before, SPE is straightforward in its approach, focusing on the shortest path alone. Navigation Efficiency (NE), on the other hand, is a geometrically greedy routing model, aiming to minimize the physical distance to a target node at each step. Search Information (SI) quantifies the amount of information required for a random walker to find and navigate along the shortest path. Therefore, the more the required information, the more difficult the communication between two nodes is assumed to be. Conversely, at the opposite end of the spectrum lie diffusion processes that envision information cascades throughout the network. This could involve longer, even recurrent routes to the same nodes. The efficiency of signaling under these processes is then quantified by CO and DE. CO adopts a broadcasting strategy, whereby information spreads from the source and reaches the target through multiple pathways, while being subjected to exponential decay with each step. This decay inherently reduces the impact of longer pathways. DE, in contrast, does not incorporate attenuation, focusing instead on counting the steps a random walker takes from source to target. For detailed descriptions of these models, refer to the ‘Communication models’ section under Materials and methods.
 
 A simple pairwise Pearson’s correlation between OI and each CM matrix showed a large positive correlation between OI and CO (R2=0.88; all p-values in this work are strictly smaller than 0.0001 unless mentioned otherwise) and a large negative relationship with SI (R2=0.68) while other metrics such as SPE, NE, and DE exhibited nonlinear relationships with OI. This finding (Figure 4) suggests that, although all conceptualizations capture a degree of OI, the one assuming an attenuating diffusion dynamic for the signal propagation over multiple pathways most effectively mirrors OI. This result aligns with existing studies indicating CO’s efficacy in capturing the spread of electrical stimulation to unconnected nodes (Seguin et al., 2022a), predicting large-scale functional modules more accurately than SC (Seguin et al., 2022b), and determining the degree of compensation by other regions following perturbation (Betzel et al., 2016b).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig4-v1.jpg)
+
+**Figure 4.:** Pairwise Pearson’s correlation between each communication measure and optimal influences, to characterize the alignment with existing communication models. Communicability (r=0.94) and Search Information (r=−0.83) had the best alignment in this univariate setting.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig4-figsupp1-v1.jpg)
+
 However, we noticed that CO slightly underestimates the true influence of longer pathways. To address this limitation, three alternative approaches were explored: adjusting communicability with a scaling factor (scaled communicability; scaled CO) (Zamora-López et al., 2016), using a linear instead of exponential attenuation (Linear Attenuation Model; LAM), and employing the covariance structure of a spatial autoregressive model (SAR) that considers linear attenuation and regional co-fluctuation. Each of these models incorporates a single adjustable parameter: a scaling factor for scaled CO, an attenuation factor for LAM, and a degree of spatial influence for SAR. After fitting these parameters to replicate OI, we found that, except for SAR, the other two models failed to rectify the issue (as shown in Figure 5A). While scaled CO and LAM showed marginal improvements in variance explained (R²=0.89 and 0.9, respectively) compared to CO (R2=0.88), SAR achieved a near-perfect performance (R²=0.997). We then fitted SAR to CO instead of OI to evaluate to which extent CO captures the real degree of spatial influence. Varying the SAR parameter indicated that CO’s positioning on the spectrum is considerably skewed towards a steep attenuation (0.06), in contrast to OI’s more moderate rate of spatial decay (0.43). This finding supports our intuition that CO is overly strict with discounting longer pathways, since it assumes the signal to fade almost seven times faster than it actually does. It also indicates that a wide range of discount factors between 0.2 and 0.7 performs similarly well (Figure 5B), relaxing the need to search for an exact value (same applies to the scaling factor of CO and attenuation factor of LAM; see Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig5-v1.jpg)
+
+**Figure 5.:** (A) Difference between adjacency matrices of tunable models and OI that indicates where these models underestimate (red) and overestimate (blue) the influence of nodes on each other. (B) SAR obtains a correlation coefficient of r=0.99 by increasing the depth by which signals can travel, however, the plot on the bottom shows that a wide range of values from 0.2 to 0.7 can be chosen with a small degradation of fit. SAR: Spatial Auto-Regressive model, CO: Communicability, OI: Optimal Influence.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig5-figsupp1-v1.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig5-figsupp2-v1.jpg)
 
 We subsequently explored the depth of influence in terms of the number of hops, specifically addressing how far a signal travels before its causal impact substantially diminishes. To this end, we used a linear regression model, fitted it to results from progressively diffused signals in the network. Put simply, we iteratively predicted the OI starting from walks of zero length (no spread of influence) and incrementally considered longer walks, applying a monotonic discount to additional steps. The analysis, as depicted in (Figure 6A), demonstrated peak performance at the sixth step, achieving an R² of 0.75. This means that the summation of only the first six steps captures 75% of the variance in OI (also see Figure 6—figure supplement 1 for the result from an exponential discount instead of linear). Furthermore, a multivariate Lasso regularized linear regression model was trained on all walks simultaneously to identify a parsimonious combination that most effectively predicts OI (Figure 6B). Aligning with the result from the univariate model, walks of length five, six, and the eighth steps (excluding seventh) were contributing the most, allowing the model to predict OI with a high degree of accuracy (R²=0.96). These results imply that signal influence notably decreases after approximately eight processing steps, despite the network’s diameter being around ten steps, meaning that the information flow between the most distant nodes is heavily degraded (Figure 6B). While information from the initial eight steps is sufficient to explain 96% of the OI, the superior predictive performance of models such as SAR, LAM, and CO suggests that incorporating all possible paths yields additional, albeit small, information. Moreover, the real advantage of communication models lies in their relative simplicity compared to using a regularized multivariate model. Altogether, it is important to note that the longer processing pathways that are missed by CO, Scaled CO, and LAM still influence the target node, but based on comparing how much SAR gained in predictive performance, they account for about 5% of the whole communication dynamics. This finding provides a rough estimate of how much mismatch, and in which pathways, are expected when using CO, scaled CO, and LAM in human neuroimaging data. However, when these communication models were applied to mouse and macaque connectomes, a discrepancy in capturing OI in directed networks emerged (Figure 5—figure supplement 2). SAR marginally outperformed LAM and scaled CO in the mouse connectome (r=0.21, 0.18, 0.17, respectively) but showed significantly better performance in the macaque (r=0.92, 0.24, 0.23, respectively). The enhanced performance from mouse to macaque hints at the potential influence of network size, considering the macaque network comprises 29 nodes compared to the mouse’s 112. Nonetheless, the specific effects of network size, density, reciprocity, weight distribution, and normalization, as well as other global characteristics on modeling OI necessitate further systematic investigation using synthetic network models. This finding delineates the limitations of current CMs in accurately depicting optimal signal propagation in large, directed networks. However, the observed inverted U-shaped fitting curves of LAM and scaled CO (Figure 5—figure supplement 2) suggest a slower spatial decay in signal propagation than assumed by models like CO. In essence, despite the struggle of these models to precisely capture the optimal signal flow in larger directed networks, there is a consensus that the influence of regions extends further than traditionally postulated by communication models.
 
-In our final analysis of this section, we sought to determine if other communication models, despite their complex relationship with OI, could surpass CO in predicting it. Additionally, it is possible for more intuitive variables, such as the fiber length or Euclidean distance, to provide better predictive performance. To see if OI is better predicted using available variables, including CMs, another multivariate regularized linear regression model was employed (illustrated in Figure 6C). Excluding SAR, the model successfully explained 93% of the variance in OI using just three variables: LAM, CO, and SPE, with LAM making the most significant contribution. We then trained a set of models with the same variables but different attenuation factors of LAM and SAR to observe the dynamics of feature importance across different factors. To our surprise, at its optimal parameter value, SAR emerged as the predominant predictor, effectively simplifying the statistical model to a univariate format and once again perfectly predicting OI (as seen in Figure 6C). SAR maintained its dominance as the most critical variable over a range from 0.1 to 0.8, after which CO became more influential. This shift underscores the role of discounting the signal, elucidating why DE was the least effective model in our study. The reason is that, at around α=1 where no discount is considered, SAR converges to DE, rendering it uninformative, whereas LAM retains its distinctiveness, surpassing both CO and SAR. Averaged over all values of α shows that SAR was the most important feature, followed by CO and LAM (Figure 6D) which all follow broadcasting-like communication dynamics .
+![Figure 6.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig6-v1.jpg)
+
+**Figure 6.:** (A) Predictive power of a linear regression model trained on walks up to 15 broadcasting steps. (B) A regularized multivariate model trained on all steps shows a small set of steps to be sufficient to explain 96% of OI on average. Each dot represents one cross-validation trial (N=100). (C) Sets of regularized multivariate models were trained on network features at each degree of spatial influence for spatial autoregressive model (SAR) and linear attenuation model (LAM) to capture the impact of this parameter on the performance of the statistical model. The dashed line on the left shows a scenario when the degree of spatial influence is zero, effectively rendering SAR an identity matrix. The second dashed line indicates where the model performed the best, explaining 99% OI. (D) Bars represent the contribution of each feature to the model, averaged over degrees of influence. Error bars indicate the 95% confidence interval. OI: Optimal influence.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig6-figsupp1-v1.jpg)
+
+In our final analysis of this section, we sought to determine if other communication models, despite their complex relationship with OI, could surpass CO in predicting it. Additionally, it is possible for more intuitive variables, such as the fiber length or Euclidean distance, to provide better predictive performance. To see if OI is better predicted using available variables, including CMs, another multivariate regularized linear regression model was employed (illustrated in Figure 6C). Excluding SAR, the model successfully explained 93% of the variance in OI using just three variables: LAM, CO, and SPE, with LAM making the most significant contribution. We then trained a set of models with the same variables but different attenuation factors of LAM and SAR to observe the dynamics of feature importance across different factors. To our surprise, at its optimal parameter value, SAR emerged as the predominant predictor, effectively simplifying the statistical model to a univariate format and once again perfectly predicting OI (as seen in Figure 6C). SAR maintained its dominance as the most critical variable over a range from 0.1 to 0.8, after which CO became more influential. This shift underscores the role of discounting the signal, elucidating why DE was the least effective model in our study. The reason is that, at around $\alpha=1$ where no discount is considered, SAR converges to DE, rendering it uninformative, whereas LAM retains its distinctiveness, surpassing both CO and SAR. Averaged over all values of $\alpha$ shows that SAR was the most important feature, followed by CO and LAM (Figure 6D) which all follow broadcasting-like communication dynamics .
 
 Collectively, our findings indicate that optimal influence in brain networks requires signal propagation across multiple pathways, akin to a broadcasting approach. The influence diminishes with each processing step, but not as quickly as it is assumed by CO. Moreover, a simple statistical model, i.e., SAR, accurately predicts the network’s influence structure at the optimal signal propagation regime. Importantly, previous studies indicated that SAR performs as well as many other biophysically detailed NMMs in predicting the FC (Messé et al., 2014; Messé et al., 2015b). Interestingly, comparing the performance of multivariate models against simple CMs suggests that little is gained from additional variables and more computationally expensive predictive models.
 
 It is important to acknowledge that all CMs, including SAR, are predicated on a linear dynamic model, prioritizing simplicity over biophysical complexity. However, brain regions are argued to perform nonlinear operations, show oscillatory patterns of activity and show metastability by switching between multiple states to support cognition and behavior. Therefore, to affirm the notion of optimal communication in brain networks, it is essential to compare these findings with more realistic dynamics that capture such complex phenomena.
 
-## Global network topology is more influential than local node dynamics
+### Global network topology is more influential than local node dynamics
 
 Previous research has demonstrated that linear models of local dynamics are as effective, if not more so, as nonlinear models in capturing the macroscopic dynamics of the brain (Abdelnour et al., 2014; Messé et al., 2023; Messé et al., 2014; Nozari et al., 2024). This observation led us to hypothesize that optimal signal propagation in large-scale brain networks, as measured by fMRI-BOLD signal, might also be adequately represented by linear communication models. In other words, we hypothesized that optimal signal propagation should follow the same line of reasoning and be relatively consistent across different dynamical models. The equilibrium state in decomposing contributions should remain consistent across different dynamical models, irrespective of their complexity. This expectation would hold true unless the local dynamics — how regions process incoming signals — impose substantial constraints on information flow within the network.
 
 To evaluate this hypothesis, we incorporated two additional models into our analysis: one using a nonlinear tangent hyperbolic (Tanh) transfer function, contrasting it with the linear function used in the linear model, and the other one a well-established oscillatory NMM known as the Hopf/Stuart-Landau model, operating in its critical metastable regime (Deco et al., 2017). Pearson’s correlation conducted to compare these models with the linear model confirmed our hypothesis. As depicted in (Figure 7A), both the nonlinear and Hopf models showed high correlations with the linear model (R2=0.98 and 0.94, respectively). Furthermore, we investigated the influence of local dynamics on OI by contrasting a model fitted to FC with one that was not, hence producing dynamics that poorly resemble the FC. The resulting scatter plot of OI for these models, as shown in (Figure 7B), indicated another strong correlation (R2=0.93). Collectively, these findings suggest that the equilibrium state of optimal signal propagation does not substantially vary even when employing more complex dynamical models. The reason is that, as previously found Fakhar et al., 2024c, while nonlinear transformations significantly impact the time-varying structure of individual contributions, they do not alter the overall amplitude of them, which in this context, is viewed as the total amount of influence one node exerts over another. Scaling, on the other hand, that determines the magnitude of these contributions, is inherently governed by the structural connectome across all models. Consequently, the total influence of one node on another is predominantly dictated by network topology rather than the specific dynamical model employed. However, the time-resolved pattern of fluctuations is specified by the model, which here is simply neglected as a direct consequence of collapsing the temporal information (refer to Figure 7—figure supplement 1 for more details).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig7-v1.jpg)
+
+**Figure 7.:** (A) OI matrices for a linear and a nonlinear model show a near-perfect correlation. Moreover, a Hopf model also has a strong correlation with the linear model, indicating that a linear model of local dynamics represents the communication in brain networks under optimal influence (OI) as well as more complex node models (B) Scatter plot between two settings of the same linear model, one fitted to resting-state fMRI and the other using a random value for the global coupling parameter. The finding provides evidence for the greater role of network’s structure compared to nodal dynamics in shaping brain-wide optimal influence.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The part above shows how the amplitude of influence between two regions relates to the structural weight and the topological distance between them. The heatmaps in the middle represent the brain-wide incoming and outgoing influence on and from the posterior cingulate cortex (PCC). Together with the column-averaged time course of these influences, the middle plot suggests that PCC receives a diverse range of incoming influences but broadcasts the same message to the rest of the network. This is also apparent from the zoomed-in view of the heatmap at the bottom.
+
 In summary, our findings indicate that linear models of dynamics effectively capture the degree of influence regions exert on each other under the optimal signal propagation state. Findings from this section not only corroborate previous research suggesting that macroscopic dynamics of large-scale brain networks are well approximated by linear models, but also support the hypothesis posited in the preceding section. Together, these two aspects suggest that it is the structural connectivity that shapes the landscape of optimal signaling in brain networks, rather than the models of local dynamics, since OIs are remarkably similar irrespective of the biophysical complexity embedded in models of local dynamics. The equilibrium reached in this game-theoretical framework, as demonstrated, is accurately represented by simplified abstract models of signal propagation. Thus, not only do simple communication models such as SAR perform on a par with NMMs in predicting empirical FC, but also, they represent how information optimally flows in large-scale brain networks.
 
-## Rich-clubs harness parallel pathways to amplify their influence
+### Rich-clubs harness parallel pathways to amplify their influence
 
 It has been shown that a set of cortical hubs exerts a relatively large wiring cost to link with other distant regions, forming a rich-club organization (van den Heuvel and Sporns, 2011; Zamora-López et al., 2011; Zamora-López et al., 2010). Thus, these topologically central nodes are argued to be the backbone of information transfer across multiple distant specialized modules (Harriger et al., 2012; van den Heuvel et al., 2012). Previous works proposed that these connections play a crucial role in information processing by diversifying areal input-output connectivity (Betzel and Bassett, 2018), leading to a richer functional repertoire (Zamora-López et al., 2016), or integrating information from the whole brain (Goulas et al., 2015). Moreover, it was shown that the connections among adjacent regions are stronger than those among distant areas (Beul et al., 2018; Lynn et al., 2024). Empirical findings and modeling work have suggested an exponential distant rule by which the strength of connections decays exponentially with spatial distance (Ercsey-Ravasz et al., 2013; Markov et al., 2013). For instance, in our human connectome dataset, the correlation between structural weights and fiber lengths is –0.6 (See Figure 8—figure supplement 1). Together, these findings pose a question, if and how do rich-club regions keep their line of communication optimal given these relatively weak connection strengths of long-distance projections?
 
 To answer this question, we first investigated the relationship between the strength of connections between pairs of connected regions and the respective influence they assert on each other. Intuitively, the stronger a connection is, the greater its influence, leading to stronger communication between two regions. This relation has also been supported experimentally by comparing the effect of optogenetics stimulation of a region over its connected neighbors (Kim et al., 2023). Our result corroborated this finding and showed a strong correlation between the structural weight and the amount of influence nodes assert on their connected neighbors (r=0.95). However, several pair-wise interactions fall well above the regression line (Figure 8A), suggesting that some regions assert strong influence on others despite their weak connection weights (likewise noticeable in both mouse and macaque connectomes; Figure 8—figure supplement 2A). This ‘bump’ is also captured by SAR, LAM, and CO (Figure 8—figure supplement 2B), providing further evidence that these simple models can reproduce optimal information flow among connected regions. As (Figure 8B, C and D) shows, these connections mostly lie between regions located at the medial surface of the cortex, coinciding with rich-club regions (van den Heuvel et al., 2010; van den Heuvel and Sporns, 2011). We then computed the amount that each node influences other unconnected regions (Figure 8F) and found the same regions to be the most influential, providing more evidence that this influence is not related to the weak link itself, but the node’s overall connectivity. To test this hypothesis, we first computed several graph centrality measures, built both on the shortest-path and random walk signaling conceptualization. A Spearman’s rank correlation between how influential a node is and how central it is suggests two conclusions (Figure 8E): First, all centrality measures show a moderate to strong positive correlation with the amount of influence nodes assert over the rest of the network, directly and indirectly. Second, those with the largest indirect influence (indicated with red) always lie on the top-right of the data cloud, supporting the idea that they are topologically central. We further utilized null and synthetic networks to see if we can delineate the role of connection strength and connectivity pattern in signal propagation. Although less noticeable, the trend persisted when the network topology was shuffled while nodal strength was preserved. It also persisted when the weights were shuffled while the topology was held constant. The trend only disappeared when both topology and weights were allocated randomly in synthetic random networks (Figure 8—figure supplement 2C, D, and E).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig8-v1.jpg)
+
+**Figure 8.:** (A) Scatter plot of the influences of nodes on their connected neighbors (direct influence in Figure 2) versus the strength of the underlying connections. Despite the overall strong correlation between the total influence and the strength of structural connections, residuals (depicted by warm colors) reveal several weak connections with more influence than expected by their connection weights. (B) The position of weak connections with strong influence in the adjacency matrix. (C) The position of these connections in the structural brain network shows that they are mainly long-range connections among the hub regions of the cortex. (D) shows those hub regions. (E) The relationship between the influence of a region and its centrality, by four centrality measures (see Material and Methods, Graph-theoretical Measures). (F) The most indirectly influential nodes (indicated by red points in E) that can propagate information to distant and unconnected regions. DMPFC: Dorsomedial prefrontal cortex, PCC: Posterior cingulate cortex, ACC: Anterior cingulate cortex, SFC: Superior frontal cortex, SMA: Supplementary motor area, VLPFC: Ventrolateral prefrontal cortex.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig8-figsupp1-v1.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A) The relationship between structural weights and the influence of two connected regions in the mouse and macaque connectome supports the results from the human connectome. There exists many weak connections that exert more influence than expected from their connection weights (the ‘bump’) (B) Communication models capture the bump to different extent. (C) The bump is also apparent in the strength-preserved null model, although localized in weaker connections. (D) Two synthetic networks in which both the weights and the topology is randomized did not replicate the bump. (E) Topology-preserved weight-shuffled networks replicated the bump, however, as with C they are localized to weak connections, suggesting a complementary role for both weight distribution and topological features.
+
 We then compared the edge betweenness centrality of every connection with its strength, under both shortest-path and random walk conceptualization. Shortest-path edge-betweenness centrality (SPEBC) of a link, measures how many shortest paths in the network go through this specific connection, while random walk edge-betweenness centrality (RWEBC) counts the number of times a random walker traversed this link to move from a node to another. While the trend is missing when compared to the connection weight, it is apparent when compared to the influence, suggesting that the effect cannot be captured by how central individual links are given these two signaling strategies (Figure 9A and B). Together, these findings propose that neither connectivity nor weights alone are responsible for the emergence of efficient signal propagation between weakly connected nodes. But the signature of more influence compared to the underlying weight is only observed when central nodes are allocated with weak links.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig9-v1.jpg)
+
+**Figure 9.:** (A) Strength of individual connections versus their centrality in terms of shortest-path edge betweenness centrality. The lower panel shows the same relationship, but for the amount of influence a node has over its connected neighbor compared to the centrality of their connections. (B) Depicts the same information for the random walk (diffusive) model of information flow. In both A and B, this relationship is compared against a null model in which the structural connectivity is shuffled while preserving the strength of each node, i.e., the weighted sum of its connections.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/101780/elife-101780-fig9-figsupp1-v1.jpg)
 
 Lastly, to further investigate this phenomenon, we systematically changed the degree of spatial influence for a SAR model while calculating the spread of data along the second principal component (PC). The first PC captures the main direction of variability between the influence and connection strength, which is the observed strong relationship. However, the second PC captures how much data points are spread orthogonal to the main axis, indicating the amount of which weak links are influential. In other words, this metric measures the variability around the regression line, a small variability indicates a robust prediction of influence from the connection weight, showing their tight coupling. In contrast, large variability approximates how much communication between two nodes was independent of the connection strength, potentially relying on other parallel pathways (Figure 10). We found that a steep decay factor leads to low variability, as nodes could only influence their connected neighbors before the signal subsides. A shallower decay rate, on the other hand, resulted in more variability since the signal could traverse longer parallel pathways, echoing in the network and reach the target from multiple fronts (Figure 10). This finding provides further evidence for central nodes utilizing not only the direct path but other longer paths to compensate for the weak direct connection strength.
 
@@ -117,7 +167,7 @@ Altogether, results from this section propose a mechanism with which hub regions
 
 In this work, we explored the characteristics of brain communication in a state of optimal signal propagation. We employed a game-theoretical framework to uncover how nodes influence each other optimally, given a set of constraints. We defined these constraints as the network’s structural topology and its functional activity, which emerged from three increasingly complex large-scale brain models. These models ranged from a linear model, where the output of each node is the weighted sum of its inputs, via a nonlinear model, in which the node modifies the incoming signals using a Tanh function, to a Hopf model that, relative to the other two models, represents more biophysical realism, such as conductance delay, metastability, and oscillatory dynamics of the brain signals, at the cost of greater computational complexity. Our results indicate that the strength by which nodes influence each other depends less on the local node model and more on the global network structure, permitting us to apply a wide range of graph theoretical metrics that fundamentally relate to the linear model. For instance, comparing putative communication models, we found that the optimal signal propagation in brain networks is better captured by frameworks that conceptualize communication to follow a broadcasting strategy. This means that, although signals travel along multiple parallel pathways, they subside after each processing step and degrade after six to eight steps. Finally, we show that topologically central brain regions, such as precuneus, prefrontal cortex, and anterior cingulate cortex, amplify their influence over remote regions by harnessing such parallel pathways. These results have several implications and caveats that are discussed below.
 
-## Interpreting game-theoretical solutions for influence decomposition
+### Interpreting game-theoretical solutions for influence decomposition
 
 Here, we argue for developing normative formulations of brain signaling and network organization. This approach follows similar studies in synthetic brain networks, where a work also using game theory showed how nodes aiming at maximizing the network’s navigability while minimizing their wiring cost organize in structures similar to empirical brain networks (Gulyás et al., 2015). Interestingly, related work (Samoylenko et al., 2023) addressed the long-standing question of why six degrees of separation exist in social networks (Travers and Milgram, 1977). Using normative modeling provided by game theory, the authors found the reason to be a trade-off between a node’s aspiration to maximize its centrality, while minimizing its connection maintenance cost (Samoylenko et al., 2023). In the present work, we also found that the first eight steps of propagation are sufficient to reconstruct OI, with a peak on the sixth step.
 
@@ -133,7 +183,7 @@ Finally, our framework is model-agnostic, meaning that the game and its constrai
 
 In sum, it is crucial to define every step of the game carefully to avoid misinterpretations. It is also important to keep in mind the provided definitions for optimality, equilibrium and influence to avoid confusion in interpreting the results of the game-theoretical analysis.
 
-## Broadcasting as an optimal signaling strategy
+### Broadcasting as an optimal signaling strategy
 
 Many previous studies in network neuroscience have relied on a graph theoretical definition of efficiency that is based on the shortest path distance (Sporns, 2018). Here, we show that the underlying signal propagation dynamics in large-scale brain networks are likely to follow a broadcasting regime. This finding implies that broadcasting goes beyond signaling along the shortest path but does not downplay its role. In other words, we show that the shortest path is critical, but not the only path along which a signal traverses. The broadcasting mechanism also circumvents a major problem of the shortest path signaling concept, that nodes would have to find the shortest path to every other node in the network without access to global information on the network organization. By broadcasting, nodes simply transmit their signal via their outgoing connections in every direction. And since the signal degrades over every step, nodes topologically closest to the source receive the signal most strongly. Put differently, navigation along the shortest path emerges naturally and without a need for centralized routing strategies, simply because the closest node receives more signal compared to the farther ones. This line of reasoning is compatible with the result depicted in (Figure 8E) where closeness centrality predicted the influential nodes with such great accuracy compared to other centrality measures. Additionally, communication models, such as communicability, are thought to be energetically costlier than routing strategies, such as signaling exclusively along the shortest paths (Seguin et al., 2023). The reason for this argument is the fact that communicability accounts for paths of all length. However, as shown here, paths longer than seven steps are unlikely to be meaningfully contributing. Supporting this finding, Griffa and colleagues Griffa et al., 2023 used information theory and found that not only parallel communication is present in the human cortex, but also pathways longer than five steps are not as effective. These observations suggest that regions balance between robustness and energetic cost of signal transmission by using a handful of parallel pathways. Intriguingly, (Griffa et al., 2023) reported that the capacity for parallel communication is larger in the human cortex compared to macaque and mouse, proposing an evolutionary advantage for broadcasting over multiple pathways (Griffa et al., 2023). They also found that these pathways are more frequently placed between different functional modules, rather than within them, which aligns with our finding that hub regions harness parallel pathways to compensate for weak structural connections among them.
 
@@ -145,11 +195,11 @@ Interestingly, the broadcasting conceptualization is argued to be a better model
 
 Finally, we found that the rich-club organization of the human cortex is a major contributor to shaping brain-wide communication dynamics. An inspiring work using normative modeling suggested that hierarchies and rich-club organization are spandrels of modules and hubs (Rubinov, 2016). Spandrels are evolutionary features that evolve alongside adaptive phenotypes, while themselves serve no adaptive function. In other words, the rich-club organization is proposed to be the byproduct of modular organization while serving no adaptive function by itself (Gould and Lewontin, 1979). Our work provides evidence that, although the rich club organization could have emerged as a byproduct of modular organization, it might not be a purely ornamental spandrel, as the rich club regions represent the most influential regions of the brain (Figure 8). Previous works relating rich club regions to signaling also indicated an integrative role of these regions, which have longer temporal receptive fields compared to others, allowing them to integrate more information over time (Chaudhuri et al., 2015; Hasson et al., 2008). Interestingly, our results depicted in Figures 8 and 10 support this idea. We found that rich club regions integrate signals over longer and parallel structural pathways, enhancing their broadcasting capacity. Moreover, a recent empirical work identified disturbances in these regions and their broadcasting efficiency in patients suffering from disorders of consciousness (Panda et al., 2023). Put together, these findings suggest a causal functional role for the rich-club organization of the human cerebral cortex.
 
-## Role of network dynamics in optimal signaling
+### Role of network dynamics in optimal signaling
 
 Although our work suggests a greater role for the network’s structure in shaping the state of optimal signal propagation in the network compared to the specifics of the local node dynamics, this finding does not mean that the local dynamics are irrelevant. We believe that the inequality between the network’s structure and dynamics in determining signal flow arises from factors such as the assumed homogeneity of nodes in our network models. Here, nodes are assumed to be identical objects with identical features and dynamics. This assumption certainly does not apply in the brain, and a growing body of network models that incorporate regional differences aim at addressing this issue (Bazinet et al., 2023; Deco et al., 2021). As mentioned before, our framework is model agnostic, so it is also possible to interrogate networks with heterogeneous models of dynamics. For applying the present approach to heterogeneous networks, we hypothesize that, first, how nodes influence one another further decouples from the structure (Fakhar et al., 2022), and second, simple communication models fail to replicate the OI as well as they have done in this work. Thus, further work can shine light on the interplay between the network’s structure and its dynamics in shaping OI, since not only heterogeneous network models are biologically more plausible, but also, they can help to investigate how information optimally flows in networks where nodes respond differently to incoming signals.
 
-## Limitations and further directions
+### Limitations and further directions
 
 A conceptual note is that OI, as a normative framework, describes the landscape of communication dynamics if nodes maximize their influence. As in other game-theoretical models, this assumption might not fully hold. The derived landscape is a prediction that would need to be experimentally tested using in-vivo multi-site lesioning experiments, which is currently not feasible. However, recent work indirectly supports our findings by showing that propagation of electrical stimulation in the human cortex is well captured by communicability (Seguin et al., 2022a), which we found to have one of the largest correlations with OI. There are also technical limitations of our framework, specifically its computational cost, since one needs potentially to simulate millions of in-silico lesion combinations for each target node. For instance, in this work, we performed around half a billion lesion simulations for just one game, such as a linear model on the human connectome (see section Game-theoretical Framework in Material and Methods). Performing such an intensive analysis is not possible on a simple laptop. Therefore, due to its brute-force approach, our framework provides rigorous results at the expense of high computational effort, apart from the fact that it is yet to be used in-vivo (but see Zavaglia and Hilgetag, 2016).
 
@@ -165,11 +215,11 @@ Additionally, a dedicated user-friendly Python library to compute OI and some co
 
 All connectomes are available as a part of the Netneurotools library: https://github.com/netneurolab/netneurotools (copy archived at Bazinet et al., 2025).
 
-## Structural and functional connectomes
+### Structural and functional connectomes
 
 We analyzed three publicly available connectomes of human, macaque, and mouse to address differences in invasive versus non-invasive imaging modalities and reconstruction techniques.
 
-## Human connectome
+#### Human connectome
 
 Structural and functional connectivity datasets were acquired from a cohort of 70 healthy subjects at the Lausanne University Hospital in Switzerland, and the details are described elsewhere (Griffa et al., 2019; Shafiei et al., 2020; Shafiei et al., 2019). Briefly, the group comprised individuals with an average age of 28.8 y (standard deviation 9.1 y), including 27 females, and all were scanned using a 3 Tesla MRI machine. A deterministic streamline tractography was employed to create individual SC matrices from each participant’s diffusion spectrum imaging (DSI) data, which were recorded at five distinct levels of brain parcellation. However, here we have used only one with relatively high-resolution (219 cortical regions). The strength of each structural connection within these matrices was approximated by the density of fiber tracts.
 
@@ -179,134 +229,273 @@ Functional brain data were gathered from the same group of subjects through rest
 
 For the assessment of FC, the study calculated zero-lag Pearson correlation coefficients, which measured the functional relationships between pairs of brain regions in each individual’s rs-fMRI time series. Lastly, the group-average FC matrix was computed as the mean of these individual pairwise connectivity values, which includes negative values as well.
 
-## Macaque connectome
+#### Macaque connectome
 
 The connectivity matrix for the macaque was derived from retrograde tract-tracing experiments and is provided by Markov et al., 2013. These experiments involved the use of fluorescent tracers in a group of 28 macaque monkeys. The projections that were reconstructed from these experiments were mapped according to a division of 91 cortical areas. This division was based on a combination of histological examinations and atlas-based references. In each tract-tracing experiment, Markov and colleagues quantified the number of neurons that were labeled in each of these 91 areas. The count of labeled neurons was then adjusted by subtracting the number of neurons that were native to the site of tracer injection. The outcome of this process was a 29×91 matrix, which represents the connection weights extending from each injection site to other regions of the brain. Here, we focused on the subset of this matrix that describes the weighted and directed connections between 29 cortical areas, leading to a 29×29 SC matrix.
 
-## Mouse connectome
+#### Mouse connectome
 
 The connectivity matrix for the mouse was compiled using tract-tracing data openly accessible from the Allen Institute Mouse Brain Connectivity Atlas (Oh et al., 2014). Briefly, the process involved injecting anterograde recombinant adeno-associated viral tracers into designated areas within the right hemisphere of mouse brains. Three weeks following the injection, during which the viral tracer projections developed, the brains were extracted for reconstruction. These reconstructions were then standardized and aligned with the Allen Reference Atlas' common coordinate framework.
 
 Nodes in the network were identified based on a specialized parcellation derived from the Allen Developing Mouse Brain Atlas. This parcellation initially included 65 areas in each hemisphere, but 9 areas were excluded as they did not participate in any tract-tracing experiments. Consequently, the network that was analyzed constituted 112 regions (Rubinov et al., 2015). Edges represent axonal projections between different areas, and they were quantified as normalized connection densities. Specifically, this measure represents the number of connections per unit volume from a source area to a target area.
 
-## Large-scale computational models of the brain dynamics
+### Large-scale computational models of the brain dynamics
 
-In this work, we employed three models with increasing biological fidelity. The most abstract and simplistic model is the linear model, where the output of a node is a weighted sum of its inputs. The nonlinear model extends the linear model by applying a nonlinear transformation to the input (here,  tanh⁡(.)) And lastly, the neural mass model describes nodes as Stuart-Landau oscillators. Below are the details of each model.
+In this work, we employed three models with increasing biological fidelity. The most abstract and simplistic model is the linear model, where the output of a node is a weighted sum of its inputs. The nonlinear model extends the linear model by applying a nonlinear transformation to the input (here,  $tanh⁡(.)$) And lastly, the neural mass model describes nodes as Stuart-Landau oscillators. Below are the details of each model.
 
-## Linear and nonlinear models
+#### Linear and nonlinear models
 
-The linear model we used, also known as the multivariate Ornstein-Uhlenbeck process, follows the continuous dynamical system equations described in Fernández Galán, 2008.(1)τdxidt=−xi(t)+g∑j=1NWijxj(t)+σinξ
+The linear model we used, also known as the multivariate Ornstein-Uhlenbeck process, follows the continuous dynamical system equations described in Fernández Galán, 2008.
 
-Independent Gaussian noise ξ with mean zero and unit variance were presented to each node. Here, τ denotes the relaxation time of the node, which was set to 0.02. It should be noted that, in practice, the adjacency matrix is normalized to ensure that its largest eigenvalue |λmax|=1. Consequently, the practical decay rate aligns with the product of the relaxation time, τ, and the maximum eigenvalue, λmax. σin denotes the strength of the noise and was set to 0.05 in all experiments. Given the empirical functional connectivity matrices, we optimized the coupling parameter, g, to maximize correlation between empirical and simulated FCs. With our modeling setting, g=0.74 demonstrated the best fit, with a correlation of 0.23. The nonlinear model modifies the linear one simply by adding a nonlinear transformation and a larger input noise of 2 instead of 0.05 to go beyond the linear part of the function, leading to the equation below:(2)τdxidt=−xi(t)+tanh⁡(g∑j=1NWijxj(t)+σinξ)
+$$
+\tau\frac{dx_{i}}{dt}=−x_{i}(t)+g\sumj=1NW_{ij}x_{j}(t)+\sigma_{in}ξ
+$$
 
-## Neural mass model
+Independent Gaussian noise $ξ$ with mean zero and unit variance were presented to each node. Here, $\tau$ denotes the relaxation time of the node, which was set to 0.02. It should be noted that, in practice, the adjacency matrix is normalized to ensure that its largest eigenvalue $|\lambda_{max}|=1$. Consequently, the practical decay rate aligns with the product of the relaxation time, $\tau$, and the maximum eigenvalue, $\lambda_{max}$. $\sigma_{in}$ denotes the strength of the noise and was set to 0.05 in all experiments. Given the empirical functional connectivity matrices, we optimized the coupling parameter, $g$, to maximize correlation between empirical and simulated FCs. With our modeling setting, $g=0.74$ demonstrated the best fit, with a correlation of 0.23. The nonlinear model modifies the linear one simply by adding a nonlinear transformation and a larger input noise of 2 instead of 0.05 to go beyond the linear part of the function, leading to the equation below:
 
-Furthermore, we explored SC networks governed by Hopf/Stuart-Landau equations (Deco et al., 2017). This model, recognized as the canonical approach for examining the shift from noisy to oscillatory dynamics, elucidates the behavior of a nonlinear oscillating system near the Hopf bifurcation. In essence, the dynamics of each network node are captured by the following complex equation:(3)dzidt=(ai+jωi−|zi|2)zi+σinξi
+$$
+\tau\frac{dx_{i}}{dt}=−x_{i}(t)+tanh⁡(g\sumj=1NW_{ij}x_{j}(t)+\sigma_{in}ξ)
+$$
 
-Where zi=xi+jyi is a complex representation of the node state, with ξi(t) representing Gaussian noise characterized by a standard deviation σin=0.05. This system undergoes a supercritical bifurcation at ai=0, where it shifts from a stable fixed point (i.e. zi=0) to a limit cycle oscillation with frequency fi=ωi/2π .
+#### Neural mass model
 
-By decomposing the complex state into its Cartesian components and incorporating the influence of other nodes in the input of each node, we derived a set of coupled equations (Equation 4) to govern the entire brain dynamics. This formulation enables the representation of the influence of nodes on each other’s temporal state through a diffusive interaction, where g serves as a global coupling factor.(4)dxidt(ai−xi2−yi2)xi−ωiyi+g∑iWij(xj−xi)σinξidyidt(ai−xi2−yi2)yi+ωixi+g∑iWij(yj−yi)σinξi
+Furthermore, we explored SC networks governed by Hopf/Stuart-Landau equations (Deco et al., 2017). This model, recognized as the canonical approach for examining the shift from noisy to oscillatory dynamics, elucidates the behavior of a nonlinear oscillating system near the Hopf bifurcation. In essence, the dynamics of each network node are captured by the following complex equation:
 
-Similar to the other two models, the global dynamics of the network are influenced by model’s parameters. Here, we precisely tuned the global coupling, g and the bifurcation parameter, ai, to match the empirical FC. Setting g at 5.6 and ai=0.15 for all nodes, yields a correlation of 0.35. Other parameters, as detailed in the Neurolib library, remain unaltered as follows. The model features a diffusive coupling type, a signal velocity of 20.0 m/s, a global coupling strength set at 5.8, a 5.0 ms Ornstein-Uhlenbeck timescale, Ornstein-Uhlenbeck noise intensity fixed at 0.05 mV/ms/sqrt(ms), a mean value of Ornstein-Uhlenbeck process maintained at 0.0 mV/ms, a Hopf bifurcation parameter set to 0.15, and an oscillator frequency of 32 Hz. We collected state variables, X, representing signals acquired from various brain regions for subsequent analysis.
+$$
+\frac{dz_{i}}{dt}=(a_{i}+j\omega_{i}−|z_{i}|^{2})z_{i}+\sigma_{in}ξ_{i}
+$$
 
-## Game-theoretical framework
+Where $z_{i}=x_{i}+jy_{i}$ is a complex representation of the node state, with $ξ_{i}(t)$ representing Gaussian noise characterized by a standard deviation $\sigma_{in}=0.05$. This system undergoes a supercritical bifurcation at $a_{i}=0$, where it shifts from a stable fixed point (i.e. $z_{i}=0$) to a limit cycle oscillation with frequency $f_{i}=\omega_{i}/2\pi$ .
 
-MSA is built upon Shapley values, which quantify a player’s fair share of a collectively generated outcome (see Figure 2). Generally, Shapley values are calculated by adding a player to all possible coalitions and observing the value they bring to the coalition (Keinan et al., 2004b). Formally, the contribution of a player i to a coalition S is given by:Δi(S)=v(S∪{i})−v(S)
+By decomposing the complex state into its Cartesian components and incorporating the influence of other nodes in the input of each node, we derived a set of coupled equations (Equation 4) to govern the entire brain dynamics. This formulation enables the representation of the influence of nodes on each other’s temporal state through a diffusive interaction, where $g$ serves as a global coupling factor.
 
-Where Δi(S) represents the value of coalition S. The Shapley value γi is the average of these contributions across all permutations R of the player set:γi(N,v)=1n!∑R∈RΔi(Si(R))
+$$
+\frac{dx_{i}}{dt}(a_{i}−x_{i}^{2}−y_{i}^{2})x_{i}−\omega_{i}y_{i}+g\sumiW_{ij}(x_{j}−x_{i})\sigma_{in}ξ_{i}\frac{dy_{i}}{dt}(a_{i}−x_{i}^{2}−y_{i}^{2})y_{i}+\omega_{i}x_{i}+g\sumiW_{ij}(y_{j}−y_{i})\sigma_{in}ξ_{i}
+$$
 
-where R is the set of all permutations, and Si(R) is the coalition formed by ordering R up to player i . However, due to the computational complexity of calculating Shapley values for large sets, MSA relies on an unbiased estimator by sampling permutations. We employed a sample size m≪N!, generating N×m unique permutations for every target region, where N is the number of source regions.
+Similar to the other two models, the global dynamics of the network are influenced by model’s parameters. Here, we precisely tuned the global coupling, $g$ and the bifurcation parameter, $a_{i}$, to match the empirical FC. Setting $g$ at 5.6 and $a_{i}=0.15$ for all nodes, yields a correlation of 0.35. Other parameters, as detailed in the Neurolib library, remain unaltered as follows. The model features a diffusive coupling type, a signal velocity of 20.0 m/s, a global coupling strength set at 5.8, a 5.0 ms Ornstein-Uhlenbeck timescale, Ornstein-Uhlenbeck noise intensity fixed at 0.05 mV/ms/sqrt(ms), a mean value of Ornstein-Uhlenbeck process maintained at 0.0 mV/ms, a Hopf bifurcation parameter set to 0.15, and an oscillator frequency of 32 Hz. We collected state variables, $X$, representing signals acquired from various brain regions for subsequent analysis.
+
+### Game-theoretical framework
+
+MSA is built upon Shapley values, which quantify a player’s fair share of a collectively generated outcome (see Figure 2). Generally, Shapley values are calculated by adding a player to all possible coalitions and observing the value they bring to the coalition (Keinan et al., 2004b). Formally, the contribution of a player $i$ to a coalition $S$ is given by:
+
+$$
+Δ_{i}(S)=v(S∪{i})−v(S)
+$$
+
+Where $Δ_{i}(S)$ represents the value of coalition $S$. The Shapley value $\gamma_{i}$ is the average of these contributions across all permutations $R$ of the player set:
+
+$$
+\gamma_{i}(N,v)=\frac{1}{n!}\sumR\inRΔ_{i}(S_{i}(R))
+$$
+
+where $R$ is the set of all permutations, and $S_{i}(R)$ is the coalition formed by ordering $R$ up to player $i$ . However, due to the computational complexity of calculating Shapley values for large sets, MSA relies on an unbiased estimator by sampling permutations. We employed a sample size $m≪N!$, generating $N\timesm$ unique permutations for every target region, where $N$ is the number of source regions.
 
 In this work, we iterated this process over every node (target node) by systematically lesioning other nodes (source nodes) and tracking the time-resolved difference between when the sources were lesioned and when they were not. Lesioning was modeled by setting the incoming and outgoing connections of sources to zero. For every source node, we sampled m=1,000 permutations. However, we confirmed that the algorithm converged by comparing it against a larger sample size of m=10,000, which resulted in a correlation coefficient of 1.0 (Figure 2—figure supplement 1). We also ran the analysis for 10 repetitions and averaged the resulting influence matrices. The final matrix has a shape of (number of regions × number of regions × simulation time) that we reduced to a two-dimensional matrix (number of regions ×number of regions) by taking the variance of each influence profile. Altogether, each of the experiments on the human connectome resulted in roughly 480 million in-silico lesions (219 targets × 219 sources × 1,000 combination of lesions per source for each target ×10 trials). Due to the computational implausibility of the neural mass model, we ran the analysis only once instead of 10 repetitions, thus 48 million lesions. Together with all control analyses, the total number of in-silico lesions for the human connectome amounts to 7200 million:
 
 480 m for the linear model, 480 m for the nonlinear, 48 m for the Hopf, 480 m for the topology-shuffled null model, 480 m for the weight-shuffled null model, 4,800 m for the case where we used 10,000 lesion combinations per source for each target, and 480 m for a test case where the coupling was set to zero. All experiments were conducted on a high-performance computing facility provided by the Institute of Computational Neuroscience, University Hospital of Hamburg.
 
-## Communication models and measures
+### Communication models and measures
 
 In this section, we introduce the communication models and measures employed to analyze the dynamics of information flow within the studied network. The corresponding formulas and procedures for computation are presented in Table 1.
 
-The structural connectivity matrix W∈RN×N denotes the strength of pairwise connections between N brain regions. We define the connection length matrix L=1/W, where Lij is the travel cost between regions i and j. This conversion from connection weights to lengths is required for network communication models that optimize for minimal transmission cost of signals, e.g., shortest path efficiency.
+**Table 1.**
+ Communication models and measures.
 
-## Shortest path efficiency
 
-Shortest Path Efficiency measures the effectiveness of communication along the most direct route between two nodes in a network. Here, the Floyd-Warshall algorithm was employed to determine the sequence of regions Ωij={i,u,…,v,j} that minimizes the total transmission cost for signals traveling between regions i and j. This cost, denoted by Λij* is defined as the sum Liu+⋯+Lvj. Subsequently, the shortest path efficiency (SPE) between two regions is quantified as the reciprocal of the minimum transmission cost, expressed as SPEij=1/Λij* as detailed in Latora and Marchiori, 2001.
+<table>
+  <thead>
+    <tr>
+      <th>Models</th>
+      <th>Measures*</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shortest Path Efficiency Floyd-Warshall algorithm</td>
+      <td>SPE=1Λ∗ΛijΩ∗=Liu1+⋯+LukjΩij∗=minΩij={i,u1,…,uk,j}1Σl=1kwulul+1</td>
+      <td>Latora and Marchiori, 2001; Seguin et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Navigation Efficiency</td>
+      <td>NE=1ΛΛijΩ=Liu1+⋯+LukjLst=min(s,s+1)∈V‖Dst‖22</td>
+      <td>Seguin et al., 2020; Seguin et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Diffusion Efficiency</td>
+      <td>DE=ΣiΣj1tijN(N−1),i≠jtij=zjj−zijωj,i≠jZ=[zij]=(I−W^+ω^)−1W^=[w^ij],w^ij=WijΣu=1NWiuω=[ω1,…,ωN]T,ωW^T=λω.ω^=[ω,…,ω]</td>
+      <td>Goñi et al., 2013; Seguin et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Search Information</td>
+      <td>SI=−log2⁡(Π)ΠΩij=w^iu×⋯×w^ij</td>
+      <td>Seguin et al., 2019; Seguin et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Communicability</td>
+      <td>CO=[coij]coij=Σk=0∞(W^)ijkk!=eW^</td>
+      <td>Chen et al., 2022b; Estrada and Hatano, 2008</td>
+    </tr>
+    <tr>
+      <td>Scaled Communicability</td>
+      <td>SCO=[scoij]scoij=Σk=0∞(αW^)ijkk!=eαW^</td>
+      <td>Ghosh et al., 2023; Messé et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Linear Attenuation</td>
+      <td>LAM=(I−αW^)−1</td>
+      <td>Goñi et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Spatial Autoregressive</td>
+      <td>SAR=(I−αW^)−1(I−αW^)−T</td>
+      <td>Zamora-López et al., 2016</td>
+    </tr>
+  </tbody>
+</table>
 
-## Navigation efficiency
+_*Throughout the table, W∈RN×N is the adjacency matrix corresponding to a given graph, G=(V,E) with N vertices (nodes).Wij signifies the connection strength from vertex i to vertex j. Anatomical connections are indicated by Wij>0 for connected region pairs and Wij=0 for unconnected pairs. L denotes the matrix of path lengths, defined as the reciprocal of W, such that L=1W with Lij as the path length between two connected nodes, i and j. Further, Ωij={u1,u2,…,uk} is the sequence of nodes visited along the shortest path between nodes i and j. Given the spatial organization of nodes in empirical structural connectivity, Dst includes the Euclidean distance between source, s, and destination, t nodes in finding optimal paths. The term W^ signifies the normalized adjacency matrix, where each element w^ij is obtained by dividing the original connection strength, wij by the sum of all connection strengths in the corresponding row of the matrix W. I is the identity matrix, T stands for transposed inverse matrix, and α<1λmax where λmax is the spectral radius of the adjacency matrix, W.λ denotes the eigenvalues of a given matrix._
 
-Navigation within the network employs a greedy protocol that assumes signal transmission to minimize the inter-regional Euclidean distance. The process involves iterative progression from a source region  i to a target region j. At each step, the neighbor spatially closest to j is chosen as the next node in the path (Seguin et al., 2018). This sequence continues until the target is reached, marking successful navigation, or a previously visited node is encountered, indicating a failure in navigation. The cumulative length of a successful path is denoted by ΛijΛij=Liu+⋯+Lvj, where Ωij={i,u,…,v,j} represents the sequence of nodes traversed. If navigation fails, ΛijΛij is set to infinity. Navigation efficiency is thus defined as the reciprocal of the traversed path length.
+The structural connectivity matrix $W\inR^{N\timesN}$ denotes the strength of pairwise connections between $N$ brain regions. We define the connection length matrix $L=1/W$, where $L_{ij}$ is the travel cost between regions $i$ and $j$. This conversion from connection weights to lengths is required for network communication models that optimize for minimal transmission cost of signals, e.g., shortest path efficiency.
 
-## Diffusion efficiency
+#### Shortest path efficiency
 
-The Diffusion Efficiency (DE) model characterizes signaling through the lens of random walks. The computation of DE involves the utilization of the transition matrix, P within a Markov chain process unfolding on the connection weight matrix, W. Specifically, it considers the probability pij that a simple random walker at node i will advance to node j and the mean first passage time, tij which quantifies the expected number of intermediate regions visited in a random walk. To elaborate on the computation procedure, please refer to Table 1. Additionally, for a more in-depth theoretical understanding, consult references (Goñi et al., 2013; Zhou, 2003).
+Shortest Path Efficiency measures the effectiveness of communication along the most direct route between two nodes in a network. Here, the Floyd-Warshall algorithm was employed to determine the sequence of regions $Ω_{ij}={i,u,…,v,j}$ that minimizes the total transmission cost for signals traveling between regions $i$ and $j$. This cost, denoted by $Λ_{ij}^{*}$ is defined as the sum $L_{iu}+⋯+L_{vj}$. Subsequently, the shortest path efficiency (SPE) between two regions is quantified as the reciprocal of the minimum transmission cost, expressed as $SPE_{ij}=1/Λ_{ij}^{*}$ as detailed in Latora and Marchiori, 2001.
 
-## Search information
+#### Navigation efficiency
 
-Search information is a metric that evaluates the required amount of information to push a random walker towards the shortest path, thereby reflecting the accessibility of efficient communication routes under a diffusive model. Computing SI involves finding the above-mentioned shortest path, Ωωij between two regions, and the probability, Πij, that a random walker will accidentally traverse from region i to region j following this path. This probability is computed using the transition matrix, P within a Markov chain process unfolding on the connection weight matrix. Table 1 summarizes the computation procedure.
+Navigation within the network employs a greedy protocol that assumes signal transmission to minimize the inter-regional Euclidean distance. The process involves iterative progression from a source region $ i$ to a target region $j$. At each step, the neighbor spatially closest to $j$ is chosen as the next node in the path (Seguin et al., 2018). This sequence continues until the target is reached, marking successful navigation, or a previously visited node is encountered, indicating a failure in navigation. The cumulative length of a successful path is denoted by $Λ_{ij}Λ_{i}j=L_{iu}+⋯+L_{vj}$, where $Ω_{ij}={i,u,…,v,j}$ represents the sequence of nodes traversed. If navigation fails, $Λ_{ij}Λ_{ij}$ is set to infinity. Navigation efficiency is thus defined as the reciprocal of the traversed path length.
 
-## Communicability and scaled communicability
+#### Diffusion efficiency
 
-The measure of communicability between nodes, i and j, is expressed as the weighted sum of the overall pathways connecting them, where each walk’s contribution is weighted proportionally to the inverse of its length—signifying the number of connections traversed. In practice, before computing communicability, nonbinary connection weight matrices are commonly normalized. This normalization step is employed to diminish the impact of highly influential nodes with substantial strength. Refer to Table 1 for the computation procedure and references (Estrada and Hatano, 2008; Zamora-López and Gilson, 2024) for additional theoretical details. We also reported the scaled communicability measure, which introduces the modulating parameter, α to control the decay rate.
+The Diffusion Efficiency (DE) model characterizes signaling through the lens of random walks. The computation of DE involves the utilization of the transition matrix, $P$ within a Markov chain process unfolding on the connection weight matrix, $W$. Specifically, it considers the probability $p_{ij}$ that a simple random walker at node $i$ will advance to node $j$ and the mean first passage time, $t_{ij}$ which quantifies the expected number of intermediate regions visited in a random walk. To elaborate on the computation procedure, please refer to Table 1. Additionally, for a more in-depth theoretical understanding, consult references (Goñi et al., 2013; Zhou, 2003).
 
-## Linear attenuation model
+#### Search information
 
-The Linear attenuation model (LAM) follows the same line of reasoning as communicability, that information propagation can be represented as a weighted sum of all walks in the network. The difference lies in how walk-lengths are discounted. In contrast to communicability, where the sum of walks is estimated through the exponentiation of the adjacency matrix, Katz introduced an attenuation factor, α, to reduce the influence over every step monotonically. Katz proposed a closed-form expression, given by (I−αW)−1 (Katz, 1953). It is important to note that the convergence condition in this context is 0<α<1/λmax , where λmax represents the spectral radius of the adjacency matrix, W. Prior to computing LAM, the adjacency matrix undergoes a normalization process, similar to the one applied in the computation of communicability.
+Search information is a metric that evaluates the required amount of information to push a random walker towards the shortest path, thereby reflecting the accessibility of efficient communication routes under a diffusive model. Computing SI involves finding the above-mentioned shortest path, $Ω\omega_{ij}$ between two regions, and the probability, $Π_{ij}$, that a random walker will accidentally traverse from region $i$ to region $j$ following this path. This probability is computed using the transition matrix, $P$ within a Markov chain process unfolding on the connection weight matrix. Table 1 summarizes the computation procedure.
 
-## Spatial autoregressive model
+#### Communicability and scaled communicability
 
-Moreover, we incorporated the spatial autoregressive (SAR) model into our analysis. This model, characterized as a generic representation of diffuse processes on networks, is intricately linked to the distribution of paths within the network (Betzel and Bassett, 2018; Messé et al., 2014; Tononi et al., 1994; Zamora-López et al., 2016). In this model, the fluctuating signals at each node are interconnected through a system of structural equations, expressing each signal as a linear function of others. This interconnection is influenced by a global coupling strength factor denoted as α. Importantly, when the network experiences input noise, the SAR model predicts that each signal follows a multivariate normal distribution. This prediction is mathematically represented by the covariance matrix (I−αW⌢)−1(I−αW⌢)−T The term W^ denotes the normalized adjacency matrix, where each element wij^ is obtained by dividing the original connection strength, wij by the sum of all connection strengths in the corresponding row of the matrix W. Here, I is the identity matrix and -T stands for the transposed inverse matrix.
+The measure of communicability between nodes, $i$ and $j$, is expressed as the weighted sum of the overall pathways connecting them, where each walk’s contribution is weighted proportionally to the inverse of its length—signifying the number of connections traversed. In practice, before computing communicability, nonbinary connection weight matrices are commonly normalized. This normalization step is employed to diminish the impact of highly influential nodes with substantial strength. Refer to Table 1 for the computation procedure and references (Estrada and Hatano, 2008; Zamora-López and Gilson, 2024) for additional theoretical details. We also reported the scaled communicability measure, which introduces the modulating parameter, $\alpha$ to control the decay rate.
 
-## Null and simulated network models
+#### Linear attenuation model
+
+The Linear attenuation model (LAM) follows the same line of reasoning as communicability, that information propagation can be represented as a weighted sum of all walks in the network. The difference lies in how walk-lengths are discounted. In contrast to communicability, where the sum of walks is estimated through the exponentiation of the adjacency matrix, Katz introduced an attenuation factor, $\alpha$, to reduce the influence over every step monotonically. Katz proposed a closed-form expression, given by $(I−\alphaW)^{−1}$ (Katz, 1953). It is important to note that the convergence condition in this context is $0<\alpha<1/\lambda_{max}$ , where $\lambda_{max}$ represents the spectral radius of the adjacency matrix, $W$. Prior to computing LAM, the adjacency matrix undergoes a normalization process, similar to the one applied in the computation of communicability.
+
+#### Spatial autoregressive model
+
+Moreover, we incorporated the spatial autoregressive (SAR) model into our analysis. This model, characterized as a generic representation of diffuse processes on networks, is intricately linked to the distribution of paths within the network (Betzel and Bassett, 2018; Messé et al., 2014; Tononi et al., 1994; Zamora-López et al., 2016). In this model, the fluctuating signals at each node are interconnected through a system of structural equations, expressing each signal as a linear function of others. This interconnection is influenced by a global coupling strength factor denoted as $\alpha$. Importantly, when the network experiences input noise, the SAR model predicts that each signal follows a multivariate normal distribution. This prediction is mathematically represented by the covariance matrix $(I−\alphaW⌢)^{−1}(I−\alphaW⌢)^{−T}$ The term $W^$ denotes the normalized adjacency matrix, where each element $w_{ij}^$ is obtained by dividing the original connection strength, $w_{ij}$ by the sum of all connection strengths in the corresponding row of the matrix $W$. Here, $I$ is the identity matrix and $-T$ stands for the transposed inverse matrix.
+
+### Null and simulated network models
 
 We employed two simulated weighted networks and two null models as described below:
 
-## Erdős-Rényi model
+#### Erdős-Rényi model
 
-An Erdős-Rényi random graph, denoted as G(N,P), was generated with 100 nodes, where p=0.35 represents the probability that any two distinct nodes are connected by an edge. The graph was constructed by iterating over all possible pairs of nodes and connecting them with an edge with the probability p. This resulted in a binary adjacency matrix W where Wij is 1 if nodes i and j are connected and 0 otherwise. After generating the binary structure of the graph, weights were assigned to the edges by sampling from a log-normal distribution. The weight Wij for each edge in the graph was drawn from lnN(μ,σ2) where μ=1 and σ=0.5. The log-normal distribution was chosen for its property of providing a multiplicative effect, appropriate for modeling local dynamical systems coupled in a network.
+An Erdős-Rényi random graph, denoted as $G(N,P)$, was generated with 100 nodes, where $p=0.35$ represents the probability that any two distinct nodes are connected by an edge. The graph was constructed by iterating over all possible pairs of nodes and connecting them with an edge with the probability $p$. This resulted in a binary adjacency matrix $W$ where $W_{ij}$ is 1 if nodes $i$ and $j$ are connected and 0 otherwise. After generating the binary structure of the graph, weights were assigned to the edges by sampling from a log-normal distribution. The weight $W_{ij}$ for each edge in the graph was drawn from $lnN(\mu,\sigma^{2})$ where $\mu=1$ and $\sigma=0.5$. The log-normal distribution was chosen for its property of providing a multiplicative effect, appropriate for modeling local dynamical systems coupled in a network.
 
-## Barabási-Albert model
+#### Barabási-Albert model
 
-The Barabási-Albert model was used to generate synthetic scale-free networks through a preferential attachment mechanism. As with the Erdős-Rényi model, we generated a network with 100 nodes. Each new node added to the network creates  m=20 edges to existing nodes, with a preference for nodes that already have a higher degree, thus simulating the ‘rich get richer’ phenomenon and producing hubs in the network. In this Barabási-Albert model, the probability that a new node will be connected to a node i depends on the degree ki, according to the rule:Π(ki)=kiΣjki
+The Barabási-Albert model was used to generate synthetic scale-free networks through a preferential attachment mechanism. As with the Erdős-Rényi model, we generated a network with 100 nodes. Each new node added to the network creates $ m=20$ edges to existing nodes, with a preference for nodes that already have a higher degree, thus simulating the ‘rich get richer’ phenomenon and producing hubs in the network. In this Barabási-Albert model, the probability that a new node will be connected to a node $i$ depends on the degree $k_{i}$, according to the rule:
 
-Where Σjki is the sum of degrees of all existing nodes at the time of attachment. Similar to the Erdős-Rényi model, the edges of the resulting binary network were weighted by sampling from a log-normal distribution with parameters μ=1 and σ=0.5. Moreover, to model weakly connected hubs, all hubs in the network were fully connected with weights assigned from a separate log-normal distribution characterized by both mean and standard deviation equal to 0.1. This simulates the scenario where hubs have additional connections among themselves with relatively smaller weights, representing the observed weaker links of the rich-club in the brain.
+$$
+Π(k_{i})=\frac{k_{i}}{Σ_{j}k_{i}}
+$$
 
-## Topology-conserving null model
+Where $Σ_{j}k_{i}$ is the sum of degrees of all existing nodes at the time of attachment. Similar to the Erdős-Rényi model, the edges of the resulting binary network were weighted by sampling from a log-normal distribution with parameters $\mu=1$ and $\sigma=0.5$. Moreover, to model weakly connected hubs, all hubs in the network were fully connected with weights assigned from a separate log-normal distribution characterized by both mean and standard deviation equal to 0.1. This simulates the scenario where hubs have additional connections among themselves with relatively smaller weights, representing the observed weaker links of the rich-club in the brain.
+
+#### Topology-conserving null model
 
 To investigate the impact of connection strength on network dynamics while maintaining the underlying topology, a weight shuffling procedure was implemented. The adjacency matrix was kept unaltered to preserve the original connectivity pattern, while the weights were redistributed to randomize the strength of the connections. This process was defined as follows:
 
-## Weight-conserving null model
+#### Weight-conserving null model
 
 To study the impact of topology, we used a degree-, weight-, and strength-preserving model introduced by Rubinov and Sporns, 2011 in which the connectivity was shuffled while the total degree and strength of the nodes were preserved. We chose the default parameters provided by the BCTpy toolbox, however, the correlation between the strength sequence of pre- and post-rewired network was r=0.97 that implies a robust rewiring. As per Rubinov and Sporns, 2011, the rewiring algorithm consists of two steps:
 
-## Multivariate statistical model
+### Multivariate statistical model
 
 We conducted two sets of Lasso regularized multivariate regression models (Figure 6B and C). In one, we systematically explored the dynamics of feature importance in predicting the optimal signal propagation and using the other set, we investigated the number of steps needed to predict the optimal signal propagation.
 
-For the first set, we constructed a feature matrix X encompassing all communication measures, topological and geodesic distance measures, FC, structural weights, and fiber length between regions.
+For the first set, we constructed a feature matrix $X$ encompassing all communication measures, topological and geodesic distance measures, FC, structural weights, and fiber length between regions.
 
-A range of 50 α (see Table 1) values from 0 to 1, delineating the degree of spatial influence, was explored. For each α, the SAR and LAM models were computed and subsequently integrated into the feature matrix X. A total of 25 repetition runs were performed for each α, wherein the dataset was randomly partitioned into training and testing subsets of proportion 0.7–0.3 using a 10-folds cross validation approach. The training set was subjected to standard scaling before model fitting. The statistical model was assessed through the coefficient of determination R2 . The absolute values of the regression coefficients obtained from the model were normalized to sum to 100, reflecting the relative contribution of each feature to the model. These contributions were recorded for each α and averaged over all trials to ascertain the consistent predictors.
+A range of 50 $\alpha$ (see Table 1) values from 0 to 1, delineating the degree of spatial influence, was explored. For each $\alpha$, the SAR and LAM models were computed and subsequently integrated into the feature matrix $X$. A total of 25 repetition runs were performed for each $\alpha$, wherein the dataset was randomly partitioned into training and testing subsets of proportion 0.7–0.3 using a 10-folds cross validation approach. The training set was subjected to standard scaling before model fitting. The statistical model was assessed through the coefficient of determination $R^{2}$ . The absolute values of the regression coefficients obtained from the model were normalized to sum to 100, reflecting the relative contribution of each feature to the model. These contributions were recorded for each $\alpha$ and averaged over all trials to ascertain the consistent predictors.
 
 For the second set, a range of 15 steps were generated by first raising the structural connectivity matrix to the power of 0–15 and then discounting the longer paths according to the optimal discount factor of the LAM model α. For each step, 100 repetitions were performed following the same cross-validation, evaluation, and feature importance ranking introduced above.
 
-## Graph-theoretical measures
+### Graph-theoretical measures
 
 Several graph-theoretical measures were employed in this study that are summarized in Table 2 and briefly explained here.
 
-## Closeness centrality
+**Table 2.**
+ Graph-theoretical measures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Types</th>
+      <th>Measures*</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Closeness Centrality</td>
+      <td>CC(i)=N−1Σj=1,j≠iNdij</td>
+      <td>Oldham et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Eigenvector Centrality</td>
+      <td>CE(i)=|vi|,Wv=λv</td>
+      <td>Oldham et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Node Betweenness Centrality</td>
+      <td>CB(i)=Σs≠i≠tσst(i)σst</td>
+      <td>Oldham et al., 2019; Zuo et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Edge Betweenness Centrality</td>
+      <td>CBedge(e)=Σs≠tσst(e)σst</td>
+      <td>Oldham et al., 2019; Zuo et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Random Walk Centrality</td>
+      <td>T=D−A,Dii=Σj=1NWijVsti=Tis−TitIsti=12ΣjWij|Vsti−Vstj|CRW(i)=Σs&lt;tIsti12N(N−1)</td>
+      <td>Newman, 2005</td>
+    </tr>
+    <tr>
+      <td>Average Controllability</td>
+      <td>W=U∗TUM=(U∘U)Tv=diag(T)P=diag(1−vvT)P=[Pdiag,…,Pdiag]Cavg=∑(MP)</td>
+      <td>Gu et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Modal Controllability</td>
+      <td>W=U∗TUv=[v1,…,vN]=diag(T)CM(i)=Σj=1NUij2(1−vj2)</td>
+      <td>Gu et al., 2015</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Throughout the table, WϵRN×N is the adjacency matrix corresponding to a given graph, G=(V,E) with vertices (nodes) Wij signifies the connection strength from vertex i to vertex j Anatomical connections are indicated by Wij>0 for connected region pairs and for Wij=0 unconnected pairs. dst denotes the shortest path distance between s nodes and, t and σst is the total number of shortest paths from node s to node t and σst(i) is the number of those paths that pass through node i.In edge betweenness centrality, σst(e) stands for the number of those paths that pass through a given edge, e. Further, v refers to the left eigenvector associated with the eigenvalue of λ maximum modulus. In computing controllability measures, we used Schur decomposition to find the unitary matrix, U, and the upper triangular matrix, T, to express the adjacency matrix, W. Further, ∘ denotes element-wise multiplication, * represents the conjugate transpose, and diag(.) extracts the diagonal elements._
+
+#### Closeness centrality
 
 Closeness centrality is a measure reflecting the average shortest path length from a given node to all other nodes in the network. It quantifies how ‘close’ a node is to all other nodes, which can indicate the node’s efficiency in spreading information through the network. As with the SPE, the shortest path distance was calculated using the Floyd-Warshall algorithm.
 
-## Eigenvector centrality
+#### Eigenvector centrality
 
-Eigenvector centrality extends the concept of centrality by not only considering the number of connections a node has, but also the centrality of its neighbors (Oldham et al., 2019; Zuo et al., 2012). It assigns relative scores to all nodes in the network, based on the principle that connections to high-scoring nodes contribute more to the score of the node than equal connections to low-scoring nodes. As detailed in Table 2, this quantity at the site of i-th node is calculated as the i-th component of the eigenvector of the adjacency matrix.
+Eigenvector centrality extends the concept of centrality by not only considering the number of connections a node has, but also the centrality of its neighbors (Oldham et al., 2019; Zuo et al., 2012). It assigns relative scores to all nodes in the network, based on the principle that connections to high-scoring nodes contribute more to the score of the node than equal connections to low-scoring nodes. As detailed in Table 2, this quantity at the site of $i$-th node is calculated as the $i$-th component of the eigenvector of the adjacency matrix.
 
-## Shortest path node and edge betweenness centrality
+#### Shortest path node and edge betweenness centrality
 
 Shortest path betweenness centrality measures the extent to which a node lies on the shortest paths between other nodes in the network. It captures the influence of a node over the flow of information in the network by identifying nodes that frequently act as bridges along the shortest paths between other nodes (Freeman, 1977). Subsequently, the shortest path edge betweenness centrality quantifies the number of times an edge acts as a bridge along the shortest path between two nodes. It reflects the importance of an edge in facilitating communication within the network. To elaborate on the computation of these metrics, please refer to Table 2.
 
-## Random-walk node and edge betweenness centrality
+#### Random-walk node and edge betweenness centrality
 
 Random walk betweenness centrality, also known as current flow betweenness centrality, is also a measure that quantifies the node’s role in facilitating information flow in the network (Newman, 2005). However, unlike shortest path betweenness centrality, which only considers the shortest paths, random walk centrality is based on the probability that a random walk starting at a source node will pass through a given node before reaching the destination node. For detailed information on the computation of Random-walk Node and Edge Betweenness Centrality based on the current flow notion, refer to Table 2.
 
-## Average and modal controllability
+#### Average and modal controllability
 
-Average controllability measures the ability of a node to steer the system into many easy-to-reach states, given a discrete dynamical system. It is particularly useful in understanding the ease with which any state of the system can be reached from a given initial state. Similarly, modal controllability represents the ability of a node to steer the system into farther and hard-to-reach states. In computing the controllability measure, we used Schur decomposition to find the unitary matrix, U, and the upper triangular matrix, T, to express the adjacency matrix, W. The computation procedure is summarized in Table 2.
+Average controllability measures the ability of a node to steer the system into many easy-to-reach states, given a discrete dynamical system. It is particularly useful in understanding the ease with which any state of the system can be reached from a given initial state. Similarly, modal controllability represents the ability of a node to steer the system into farther and hard-to-reach states. In computing the controllability measure, we used Schur decomposition to find the unitary matrix, $U$, and the upper triangular matrix, $T$, to express the adjacency matrix, $W$. The computation procedure is summarized in Table 2.

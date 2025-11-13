@@ -13,18 +13,18 @@
 
 ### Affiliations
 
-1. https://ror.org/0387jng26 Otto Hahn Group Cognitive Neurogenetics, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
-2. https://ror.org/02nv7yv05 INM-7, FZ Jülich Jülich Germany
-3. https://ror.org/042aqky30 Clinical Psychology and Behavioral Neuroscience, Faculty of Psychology, Technische Universität Dresden Dresden Germany
-4. https://ror.org/0387jng26 Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
-5. https://ror.org/01pxwe438 Multimodal Imaging and Connectome Analysis Lab, McConnell Brain Imaging Centre, Montreal Neurological Institute and Hospital, McGill University Montreal Canada
-6. https://ror.org/01easw929 Department of Data Science, Inha University Incheon Republic of Korea
-7. https://ror.org/00y0zf565 Center for Neuroscience Imaging Research, Institute for Basic Science Suwon Republic of Korea
-8. https://ror.org/01bfgxw09 Center for the Developing Brain, Child Mind Institute New York United States
-9. https://ror.org/04q78tk20 Department of Biomedical Engineering, Sungkyunkwan University Suwon Republic of Korea
-10. https://ror.org/00fbnyb24 Department of Psychology, Wurzburg University Wurzburg Germany
-11. https://ror.org/0245cg223 Department of Psychosomatic Medicine and Psychotherapy, Medical Center – University of Freiburg, Faculty of Medicine, University of Freiburg Freiburg Germany
-12. https://ror.org/01hhn8329 Social Neuroscience Lab, Max Planck Society Berlin Germany
+1. Otto Hahn Group Cognitive Neurogenetics, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
+2. INM-7, FZ Jülich Jülich Germany ([ROR:02nv7yv05](https://ror.org/02nv7yv05))
+3. Clinical Psychology and Behavioral Neuroscience, Faculty of Psychology, Technische Universität Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))
+4. Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
+5. Multimodal Imaging and Connectome Analysis Lab, McConnell Brain Imaging Centre, Montreal Neurological Institute and Hospital, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+6. Department of Data Science, Inha University Incheon Republic of Korea ([ROR:01easw929](https://ror.org/01easw929))
+7. Center for Neuroscience Imaging Research, Institute for Basic Science Suwon Republic of Korea ([ROR:00y0zf565](https://ror.org/00y0zf565))
+8. Center for the Developing Brain, Child Mind Institute New York United States ([ROR:01bfgxw09](https://ror.org/01bfgxw09))
+9. Department of Biomedical Engineering, Sungkyunkwan University Suwon Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+10. Department of Psychology, Wurzburg University Wurzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))
+11. Department of Psychosomatic Medicine and Psychotherapy, Medical Center – University of Freiburg, Faculty of Medicine, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+12. Social Neuroscience Lab, Max Planck Society Berlin Germany ([ROR:01hhn8329](https://ror.org/01hhn8329))
 
 † Corresponding author
 
@@ -44,7 +44,7 @@ Here, we leverage the ReSource study dataset to assess whether the targeted trai
 
 ## Results
 
-## Embedding of socio-affective and -cognitive functions in cortical brain organization (Fig. 1)
+### Embedding of socio-affective and -cognitive functions in cortical brain organization (Fig. 1)
 
 Our work examined changes in brain function and microstructure following social and cognitive mental training. We analyzed resting-state functional MRI (fMRI) measures, myelin-sensitive quantitative T1 (qT1) relaxometry, and behavioral data from 332 adults studied in the ReSource Project (Singer et al., 2016). The preregistered trial (https://clinicaltrials.gov/ct2/show/NCT01833104) involved three 3 month long TMs: (i) Presence, targeting interoception and attention, (ii) Affect, targeting empathy and emotion, and (iii) Perspective, targeting ToM. To gain a system-level understanding of brain changes associated with each TM, we took a multi-level approach, combining cortex-wide exploratory analyses of changes in functional and microstructural organization, with an investigation of a-priori defined functional networks hypothesized to be targeted by each TM, behavioral prediction of behaviors implicated in each domain.
 
@@ -56,21 +56,185 @@ For a-priori functional localization, we selected meta-analytical functional net
 
 Gradients of each individual were Procrustes aligned to the mean functional connectome based on the human connectome project sample (Valk et al., 2022; Van Essen et al., 2013), and we calculated region-wise distances to the center of a coordinate system formed by the first three gradients G1, G2, and G3 for each individual [based on the Schaefer 400 parcellation (Schaefer et al., 2018)]. Such a gradient eccentricity measures captures intrinsic functional integration (low eccentricity) vs segregation (high eccentricity) in a single scalar value (Park et al., 2021a). Highest segregation was observed in visual and sensory-motor networks, while ventral attention and limbic networks were closest to the center of the space. Notably, the a-priori networks showed a unique embedding in 3D gradient space (F(5,394) 8.727, P<0.001), with Affect-associated networks being most integrated while and Perspective-networks were most segregated. Studying cortical microstructure, a marker of structural hierarchical organization, we observed patterns of high microstructural integrity (low qT1) in primary areas and low microstructural integrity (high qT1) in transmodal areas, similar to previous work (Paquola et al., 2019a; Burt et al., 2018). Evaluating a-priori network microstructural integrity, we found that compartment 5:12 showed unique microstructural loadings (F(5,394) >5.760, p<0.001), with the emotion meta-analytical network showing lowest microstructural integrity in deep compartments.
 
-## Mental training-specific change in functional organization (Fig. 2)
+### Mental training-specific change in functional organization (Fig. 2)
 
 We first tracked training-related longitudinal changes in functional organization using a holistic and cortex-wide approach through probing the combination of functional gradients 1–3 in functional eccentricity following the different ReSource TMs. Following, we investigated specificity of effects in terms of functional gradient and a-priori functional networks associated with the TMs. In the Resource study, participants were randomly assigned to two training cohorts (TC1, N=80; TC2, N=81), which each underwent a 9-month training consisting of three sequential TMs (i.e., Presence, Perspective, and Affect) and with weekly group sessions and daily exercises, completed via cell-phone and internet platforms (Figure 1, Tables 1–3, Materials and Methods and Supplementary Materials for details). TC1 and TC2 underwent the latter two TMs in different order (TC1: AffectPerspective; TC2 PerspectiveAffect) to serve as active control groups for each other (Figure 1A). Additionally, a matched test-retest control cohort did not undergo any training (RCC, N=90), but was followed with the same neuroimaging and behavioral measures as TC1 and TC2. All participants were measured at the end of each three-month TM (T1, T2, T3) using 3T MRI and behavioral measures that were identical to the baseline (T0) measures. There was furthermore an active control group (TC3; N=81), which completed three months of Affect training only. In our main analyses, we compared TMs against each other focusing on TMs completed by TC1 and TC2, that is Presence (T0→T1, TC1 and TC2), Affect (T1→T2, TC1 and T2→T3, TC2), Perspective T2→T3, TC1 and T1→T2, TC2 and supplementary investigations including also TC3 that only completed a socio-affective training and retest control cohorts.
 
+**Table 1.**
+ Participant inclusion in resting-state analysis and quantitative T1 analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Recruited (N, mean age, % female)</th>
+      <th>T0 (N)</th>
+      <th>T1 (N)</th>
+      <th>T2 (N)</th>
+      <th>T3 (N)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total (N=332)TC1 (N=80; 41.3; 58.8)TC2 (N=81; 41.2; 59.3)RCC (N=90; 40.0; 58.9)TC3 (N=81; 40.4; 60.5)</td>
+      <td>26869676567</td>
+      <td>25965596867</td>
+      <td>182576164</td>
+      <td>184556465</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Reason for missing data across the study duration.MR incidental findings are based on T0 radiological evaluations; participants who did not survive MRI quality control refers to movement and/or artefacts in the T1-weighted MRI; dropout details can be found in Singer et al., 2016; no MRT: due to illness / scheduling issues / discomfort in scanner; other: non-disclosed; functional MRI missing: no complete functional MRI; functional MRI quality:>0.3 mm movement (low quality in volume +surface).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reason for dropout(TC1, TC2, RCC)</th>
+      <th>T0</th>
+      <th>T1</th>
+      <th>T2</th>
+      <th>T3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Structural MR incidental findingStructural MRI quality controlDropoutMedical reasonsOtherFunctional MRI missing/QC qT1 missing</td>
+      <td>572141813</td>
+      <td>(5 based on T0)67 (2 based on T0)7 (1 based on T0)10147</td>
+      <td>(5 based on T0)47 (9 based on T01)7 (8 based on T01)7166</td>
+      <td>(5 based on T0)27 (16 based on T012)(15 based on T012)787</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Reason for missing data across the study duration.MR incidental findings are based on T0 radiological evaluations; participants who did not survive MRI quality control refers to movement and/or artefacts in the T1-weighted MRI; dropout details can be found in Singer et al., 2016; no MRT: due to illness / scheduling issues / discomfort in scanner; other: non-disclosed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reason for dropout (TC3)</th>
+      <th>T0</th>
+      <th>T1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MR incidental findingMRI quality controlDropoutMedical reasonsOtherFunctional MRI missing/QC qT1 missing</td>
+      <td>3001514</td>
+      <td>(3 based on T0)032330</td>
+    </tr>
+  </tbody>
+</table>
+
 We evaluated how cortical functional gradients would change following mental training using mixed-effects models (Dale et al., 1999). Excluding participants with missing functional or structural data, or excessive movement, the sample included 109 individuals for Presence, 104 individuals for Affect, 96 individuals for Perspective, 168 retest controls and 60 active controls (Affect) with functional and structural change scores. At the whole-cortex level, we observed marked gradient eccentricity changes following Presence and Perspective (Figure 2, descriptive statistics: Supplementary file 1a-e). Presence training resulted in increased eccentricity of bilateral temporal and right superior parietal areas (FDRq <0.05), indicative of increased segregation. Perspective training resulted in decreased eccentricity of right temporal regions, together with left insular cortices (FDRq <0.05). We observed no eccentricity change following Affect training. Post-hoc analysis indicated changes between Presence and Perspective were underlying eccentricity change were most marked in G2 (t=–4.647, p<0.001, d=−0.403), dissociating sensory-motor from visual systems, but not G1 (t=–1.495, p>0.05, d=−0.130) or G3 (t=–0.493, p>0.05, d=−0.043) gradient. Focussing on a-priori networks, in particular attention (t=2.842, p=0.005, d=0.247) and interoception (t=2.765, p=0.006, d=0.240) networks showed alterations in Presence-vs-Perspective, (Table 4, Figure 2 and Figure 2—figure supplement 1). Although effects varied, they were also observed after Global Signal Regression (GSR) control, in TC1 and TC2, and versus RCC (Supplementary file 1f-j). Evaluating gradient-specific alterations per a-priori network we observed a link between Presence versus Affect in the empathy-network along G2 (t=3.215, p<0.002; Supplementary file 1k-m, Figure 2—figure supplements 2–4). Findings were robust when controlling for previously reported cortical thickness change (Valk et al., 2017b), Supplementary file 1n. We did not find evidence for overall effects of training on functional eccentricity relative to RCC (Supplementary file 1o).
 
-## Overall training effects in microstructure as a function of cortical depth (Fig. 3)
+**Table 4.**
+ TM-specific changes in eccentricity per a priori networks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Presence (n=109) vs Perspective (n=96)</th>
+      <th>Presence (n=109) vs Affect (n=104)</th>
+      <th>Perspective (n=96)vs Affect (n=104)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Attention</td>
+      <td>t=2.842, p=0.005*, d=0.247</td>
+      <td>t=1.458, p&gt;0.05, d=0.127</td>
+      <td>t=−1.692, p&gt;0.05, d=−0.147</td>
+    </tr>
+    <tr>
+      <td>Interoception</td>
+      <td>t=2.765, p=0.006*, d=0.240</td>
+      <td>t=1.043, p&gt;0.05, d=0.091</td>
+      <td>t=−2.008, p=0.045, d=−0.174</td>
+    </tr>
+    <tr>
+      <td>Emotion</td>
+      <td>t=0.387, p&gt;0.05, d=0.035</td>
+      <td>t=−0.135, p&gt;0.05, d=−0.011</td>
+      <td>t=−0.552, p&gt;0.05, d=−0.048</td>
+    </tr>
+    <tr>
+      <td>Empathy</td>
+      <td>t=2.218, p=0.027, d=193</td>
+      <td>t=0.879, p&gt;0.05, d=0.076</td>
+      <td>t=−1.569, p&gt;0.05, d=−0.136</td>
+    </tr>
+    <tr>
+      <td>Theory of Mind</td>
+      <td>t=1.721, p&gt;0.05, d=0.149</td>
+      <td>t=1.324, p&gt;0.05, d=0.115</td>
+      <td>t=−0.601, p&gt;0.05, d=−0.052</td>
+    </tr>
+  </tbody>
+</table>
+
+_*signifies FDR corrected differences._
+
+![Figure 2.](https://cdn.elifesciences.org/articles/85188/elife-85188-fig2-v2.jpg)
+
+**Figure 2.:** (A) upper: T-maps of TM-specific changes in functional eccentricity; lower: TM-specific change in functional eccentricity, p<0.01, FDRq <0.05 outlined in black, below: alterations of eccentricity in the FDRq <0.05 regions, right: mean changes in FDRq <0.05 eccentricity regions as a function of G1-G2-G3; (B) A-priori network functional eccentricity change in networks that showed TM-specific change.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85188/elife-85188-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** X-axes depict days of training, y-axes change in functional eccentricity, colors reflect the TM (yellow = Presence; red = Affect; green = Perspective).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/85188/elife-85188-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Trends at p<0.01, FDRq <0.05 outlined in black.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/85188/elife-85188-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Trends at p<0.01, FDRq <0.05 outlined in black.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/85188/elife-85188-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Trends at p<0.01, FDRq <0.05 outlined in black.
+
+### Overall training effects in microstructure as a function of cortical depth (Fig. 3)
 
 Having established alterations in integration and segregation of a-priori networks, we evaluated the neurobiological relevance of these alterations. We investigated changes in cortical microstructure as a function of cortical depth, motivated by the idea that intrinsic functional changes may be anchored in microstructural plasticity that occurs in a depth-varying manner (Paquola et al., 2022). Overall, ReSource training led to decreased qT1 values, i.e. increased myelination, in both TC1 and TC2 relative to RCC over the nine months training time, in all a-priori functional networks in particular in deeper compartment microstructure, whereas RCC showed subtle increases of qT1, suggesting decreased myelination (Figure 3, Supplementary file 1p, Figure 3—figure supplement 1). Studying training-specific effects, we observed marked changes in cortical microstructure following 3-month-long mental training across domains (all FDRq <0.05). Presence showed marked increases in qT1 in posterior areas in superficial depth compartments, and marked decreases in qT1 in prefrontal and occipital regions that showed increased spatial extent as a function of cortical depth. Conversely, Affect resulted in extended decreases in qT1 in mid and deep depth compartments, in particular in bilateral frontal areas extending to parietal lobe, bilateral posterior cingulate, left fusiform gyrus and right insula. Perspective showed largely decreases in qT1 in superficial depths in parietal-temporal, precuneus, and sensory-motor areas, and an increase in qT1 in left prefrontal regions. Patterns were similar when comparing the TMs against each other, highlighting the differentiation between superficial and deep depth-varying changes between Perspective and Affect and medial prefrontal qT1 decrease following Presence relative to Perspective and Affect as well as Affect TC3 and RCC (in particular in case of TC1, Figure 3—figure supplement 2).
 
-## Corresponding changes in functional organization and intra-cortical microstructure (Fig. 4)
+![Figure 3.](https://cdn.elifesciences.org/articles/85188/elife-85188-fig3-v2.jpg)
+
+**Figure 3.:** (A). Change in cortical microstructure, per TM, red indicates positive change in qT1, blue negative change. FDRq <0.05 findings are outlined in black on top of t-values per parcel; (B) TM specific change in cortical microstructure. Red indicates positive change in qT1, blue negative change. FDRq <0.05 findings are outlined in black in combination with semi-transparent trends (p<0.01).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85188/elife-85188-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A). Left: Change in retest controls, right: Change in training versus retest controls, trends at p<0.01, FDRq <0.05 outlined in black. (B) Network-specific change in qT1 as a function of training cohort.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/85188/elife-85188-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A). First row: Left: Change in Presence TC1 vs retest controls, middle: change in Presence TC1 versus Affect TC3, right: Change in Affect TC3 versus retest controls; second row: Left: Change in Presence TC2 vs retest controls, right: change in Presence TC2 versus Affect TC3, trends at p<0.01, FDRq <0.05 outlined in black; (B) Network-specific change in qT1 as a function of training cohort in T0-T1.
+
+#### Corresponding changes in functional organization and intra-cortical microstructure (Fig. 4)
 
 Having shown alterations in functional and microstructural organization following social mental training, we evaluated corresponding changes in cortical microstructure. A multilevel approach was chosen. First, we evaluated whether the regions observed in functional reorganization in Presence versus Perspective would also show microstructural change. Second, we studied training-specific microstructural alterations in a-priori functional networks. Third, we evaluated the spatial correlation between functional and structural organization as a function of cortical depth. To do so, we sampled qT1 relaxometry values across 12 equidistant intracortical surfaces between the pial and the white matter (Paquola et al., 2019b; Figure 4). Regions with low mean qT1 were located in sensory-motor and visual regions, regions known to have a high myelin content (Dinse et al., 2015; Sanides and Hoffmann, 1969). On the other hand, regions with high mean qT1 and thus low myelin content were located in transmodal areas, as previously shown (Paquola et al., 2020). We then examined how intra-cortical microstructural organization mirrored observed changes in functional eccentricity in clusters showing differential change during Presence vs Perspective. We observed a correspondence (FDRq <0.05) between functional eccentricity and upper layer microstructural compartments (1st: t=3.167 p=0.002, d=0.275; 2nd compartment: t=2.911, p=0.004, d=0.253) in regions showing differences in eccentricity between Presence and Perspective. Following, assessing TM-specific effects in microstructure in a-priori task-based functional networks through comparing all TMs, we found all but the emotion network to show increases in qT1 of Presence versus Affect and Perspective in the upper compartments, extending to deeper compartments when comparing Presence and Affect (FDRq <0.05). Conversely, in deeper compartments, near the GM/WM boundary, we observed decreases of Affect relative to Perspective in interoception and emotion-related networks (descriptive statistics: Supplementary file 1q-u, Figure 4—figure supplement 1, Supplementary file 1v-x). Findings were largely consistent across the different training cohorts, yet weak relative to retest controls (Supplementary file 1y-zl, Figure 4—figure supplement 2). As for the functional change, findings were also observed when controlling for cortical thickness (Supplementary file 1: zm-zo), indicating that microstructural change goes above and beyond previously reported morphological change (Valk et al., 2017b). Exploring correspondence between functional and microstructural change within TMs, rather than by contrasting TMs, we observed a spatial correlation between functional change in eccentricity and G2 in upper and middle compartment microstructure in Presence and overall correspondence with G3 changes, correcting for spatial autocorrelation (pspin <0.05), whereas microstructural alterations in mid- and deeper compartments showed correspondence to eccentricity and G2 in Affect (pspin <0.05).
 
-## Functional eccentricity and intracortical microstructure predict social cognitive performance (Fig. 5)
+![Figure 4.](https://cdn.elifesciences.org/articles/85188/elife-85188-fig4-v2.jpg)
+
+**Figure 4.:** (A).TM-specific changes in cortical microstructure; qT1 in regions showing eccentricity change (y-axis: depth, x-axis: qT1 change); (B) Network-specific change in cortical microstructure as a function of depth, mean change per TM, pFDR <0.05 have black outline (y-axis: depth, x-axis: qT1 change). The boxes on the right of each plot display the statistics (t-values) of the respective difference between TM, with the contrast color coded as upper minus lower TM (defined by color); (C) Correspondence of functional versus microstructural change; i. Spatial correlation of mean alterations in each TM, black outline indicates pspin <0.05, as a function of cortical depth.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85188/elife-85188-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Yellow = Presence, Red = Affect, Green = Perspective, Blue = Retest Control. Changes are displayed as a function of days past baseline (MRI measurement points).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/85188/elife-85188-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Network specific changes in microstructure as a function of depth per training cohort/retest control cohort, and time point.
+
+#### Functional eccentricity and intracortical microstructure predict social cognitive performance (Fig. 5)
 
 Last, we evaluated whether alterations in cortical microstructure and function following mental training could predict behavioral changes in domains targeted by the TMs. To model changes in brain functional and structural organization, we focused on functional eccentricity, the three gradients, and microstructural depth divided in upper, mid, and deep compartments averaged within a-priori functional networks. Previous work has indicated TM specific behavioral changes in attention, compassion, and perspective-taking, as measure using a cued-flanker (attention) and the EmpaTom task (compassion and perspective-taking; Trautwein et al., 2020). Supervised learning (lasso regression, fivefold cross validation, 100 repetitions) with sequential feature selection (7 components, 20% of features) was utilized to predict behavioral change from the average functional gradient eccentricity, and G1-G3, as well as microstructure in superficial (1:4), middle (5:8), and deep (9:12) compartments in the five a-priori networks, resulting in 35 features to select from (Figure 5). We incorporated age and sex regression into the cross-validation model, to avoid leakage. Attention change predictions in Presence (N=85, TC1 and TC2) were most marked in attention network in microstructure at superficial depts and eccentricity (nMAE (mean ± SD): –0.037±0.003, out of sample r (mean ± SD): 0.325±0.308). Conversely, compassion change following Affect (N=100, TC1 and TC2) was predicted primarily through structural and functional reorganization of attention, interoception and emotion networks (MAE: –0.412±0.029, out of sample r: 0.284±0.279). Last, Theory of Mind change following Perspective (N=93, TC1 and TC2) predictions (nMAE: –0.081±0.006 out-of-sample r: 0.301±0.281) were most likely to occur in attention networks along G3 and microstructure of upper and middle compartments, as well as emotion related networks along G3. To further test our predictive models, we evaluated model performance on random test data, as well as non-domain behavioral scores. We found that in all cases, the domain-specific TM model performed best on test data of the respective TM (p<0.001).
 
@@ -94,74 +258,82 @@ In sum, combining a longitudinal mental training study with multi-modal imaging,
 
 ## Materials and methods
 
-## Experimental design
+### Experimental design
 
 The specifics on the experimental design are the similar to related works in the same sample (Valk et al., 2017b; Trautwein et al., 2020). They are provided again here for completeness.
 
-## Participants
+#### Participants
 
 A total of 332 healthy adults (197 women, mean ± SD = 40.7±9.2 years, 20–55 years), recruited in 2012–2014 participated in the study, see Table 1 for more details. More than 95% of our sample was Caucasian, with catchment areas balanced across two German municipalities (Berlin and Leipzig). Participant eligibility was determined through a multi-stage procedure that involved several screening and mental health questionnaires, together with a phone interview (for details, see Singer et al., 2016). Next, a face-to-face mental health diagnostic interview with a trained clinical psychologist was scheduled. The interview included a computer-assisted German version of the Structured Clinical Interview for DSM-IV Axis-I disorders, SCID-I DIA-X (Wittchen and Pfister, 1997) and a personal interview, SCID-II, for Axis-II disorders (Weissman et al., 1997; First et al., 1997). Participants were excluded if they fulfilled criteria for: (i) an Axis-I disorder within the past two years; (ii) Schizophrenia, psychotic disorders, bipolar disorder, substance dependency, or an Axis-II disorder at any time in their life. No participant had a history of neurological disorders or head trauma, based on an in-house self-report questionnaire used to screen all volunteers prior to imaging investigations. In addition, participants underwent a diagnostic radiological evaluation to rule out the presence of mass lesions (e.g., tumors, vascular malformations). All participants gave written informed consent and the study was approved by the Research Ethics Committees of the University of Leipzig (#376/12-ff) and Humboldt University in Berlin (#2013–02, 2013–29, 2014–10). The study was registered at ClinicalTrials.gov under the title ‘Plasticity of the Compassionate Brain’ (#NCT01833104). For details on recruitment and sample selection, see the full cohort and study descriptor (Singer et al., 2016).
 
-## Sample size estimation and group allocation
+#### Sample size estimation and group allocation
 
 Overall, 2595 people signed up for the ReSource study in winter 2012/2013. Of these individuals, 311 potential participants met all eligibility criteria. From the latter group, 198 were randomly selected as the final sample. Participants were selected from the larger pool of potential participants and assigned to cohorts using bootstrapping without replacement, creating cohorts that did not differ (omnibus test P<0.1) in demographics (age, gender, marital status, income, and IQ) or self-reported traits (depression, empathy, interoceptive awareness, stress level, compassion for self and others, alexithymia, general mental health, anxiety, agreeableness, conscientiousness, extraversion, neuroticism, and openness). Seven participants dropped out of the study after assignment but before data collection began, leaving 30 participants in RCC1, 80 in TC1, and 81 in TC2.
 
 A total of 2144 people applied for the second wave of the study in winter 2013/2014. Of these people, 248 potential participants met all the eligibility criteria. From the latter pool, 164 were then randomly selected as the final sample. Participants were selected from the larger pool of potential participants and assigned to cohorts using bootstrapping without replacement, creating cohorts that did not differ significantly (omnibus test, p>0.1) from the Winter 2012/2013 cohorts or from one another in demographics (age, gender, marital status, income, and IQ) or self-reported traits (depression, empathy, interoceptive awareness, stress level, compassion for self and others, alexithymia, general mental health, anxiety, agreeableness, conscientiousness, neuroticism, and openness). The control cohorts (RCC1, RCC2, and RCC1&2) were significantly lower in extraversion than TC3; participants in the control cohorts were also more likely to have children than participants in TC3. Twenty-three participants dropped out of the study after assignment but before data collection began, leaving 81 participants in TC3 and 60 in RCC2. See further (Singer et al., 2016).
 
-## Study design
+#### Study design
 
 Our study focused on two training groups: training cohort 1 (TC1, n=80 at enrolment) and training cohort 2 (TC2, n=81 at enrolment), as well as a retest control cohort (RCC) that was partly measured prior to (n=30 at enrolment) and partly after (n=60 at enrolment) TC1 and TC2. A third training cohort (TC3, n=81 at enrolment) underwent an independent training program, and was included as an additional active control for the Presence TM. Participants were selected from a larger pool of potential volunteers by bootstrapping without replacement, creating cohorts not differing significantly with respect to several demographic and self-report traits (Singer et al., 2016). Total training duration of TC1 and TC2 was 39 weeks (~nine months), divided into three TMs: Presence, Affect, and Perspective (see below, for details), each lasting for 13 weeks (Figure 1). TC3 only participated in one 13 week Affect training, and is only included in supplementary robustness analyses, so that the main analysis of functional plasticity focusses on TC1 and TC2. Our main cohorts of interest, TC1 and TC2, underwent Affect and Perspective TMs in different order to act as active control cohorts for each other. Specifically, TC1 underwent ‘Presence-Affect-Perspective’, whereas TC2 underwent ‘Presence-Perspective-Affect’. TC1, TC2, and RCC underwent four testing phases. The baseline-testing phase is called T0; testing phases at the end of the xth TM are called Tx (i.e., T1, T2, T3). In RCC, testing was carried out at similarly spaced intervals. The study had a slightly time-shifted design, where different groups started at different time points to simultaneously accommodate scanner and teacher availability. As we focused on training-related effects, we did not include analysis of a follow-up measurement T4 that was carried out 4, 5, or 10 months after the official training had ended. For details on training and practice set-up, timeline, and measures, see Singer et al., 2016.
 
-## Final sample
+#### Final sample
 
 We excluded individuals with missing structural and/or functional MRI data and/or a framewise-displacement of >0.3 mm (<5%) (Power et al., 2012). Further details of sample size per time-point and exclusion criteria are in Tables 1–3.
 
-## Neuroimaging acquisition and analysis
+### Neuroimaging acquisition and analysis
 
-## MRI acquisition
+#### MRI acquisition
 
 MRI data were acquired on a 3T Siemens Magnetom Verio (Siemens Healthcare, Erlangen, Germany) using a 32-channel head coil. We recorded task-free functional MRI using a T2*-weighted gradient 2D-EPI sequence (repetition time [TR]=2000ms, echo time [TE]=27ms, flip angle = 90°; 37 slices tilted at approximately 30° with 3 mm slice thickness, field of view [FOV]=210 × 210mm2, matrix = 70 × 70, 3×3 × 3 mm3 voxels, 1 mm gap; 210 volumes per session). We also acquired a T1-weighted 3D-MPRAGE sequence (176 sagittal slices, TR = 2300ms, TE = 2.98ms, inversion time [TI]=900ms, flip angle = 7°, FOV = 240 × 256 mm2, matrix = 240 × 256, 1×1 × 1 mm3 voxels). Throughout the duration of our longitudinal study, imaging hardware and console software (Syngo B17) were held constant. For qT1 mapping, we used the recently introduced 3D MP2RAGE sequence (Marques et al., 2010), which combines two MPRAGE datasets acquired at different inversion times to provide intrinsic bias field cancellation and estimation of T1 TR = 5000ms, TE = 2.89ms, TI = 700/2500ms, flip angle = 4/5°, FOV = 256 × 256 mm2, 1×1 × 1–mm3 voxels.
 
-## Task-free functional MRI analysis
+#### Task-free functional MRI analysis
 
 Processing was based on DPARSF/REST for Matlab [http://www.restfmri.net (Song et al., 2011)]. We discarded the first 5 volumes to ensure steady-state magnetization, performed slice-time correction, motion correction and realignment, and co-registered functional time series of a given subject to the corresponding T1-weighted MRI. Images underwent unified segmentation and registration to MNI152, followed by nuisance covariate regression to remove effects of average WM and CSF signal, as well as 6 motion parameters (3 translations, 3 rotations). We included a scrubbing (Power et al., 2012) that modelled time points with a frame-wise displacement of ≥0.5 mm, together with the preceding and subsequent time points as separate regressors during nuisance covariate correction. Volume-based timeseries were mapped to the fsaverage5 surface using bbregister.
 
-## Gradient construction
+#### Gradient construction
 
 In line with previous studies evaluating functional gradients (Paquola et al., 2019b; Margulies et al., 2016; de Wael et al., 2020; Hong et al., 2019; Bethlehem et al., 2020; Vos de Wael et al., 2018) the functional connectivity matrix was proportionally thresholded at 90% per row and converted into a normalised angle matrix using the BrainSpace toolbox for MATLAB (de Wael et al., 2020). Diffusion map embedding, a nonlinear manifold learning technique (Coifman et al., 2005), identified principal gradient components, explaining functional connectivity variance in descending order. In brief, the algorithm estimates a low-dimensional embedding from a high-dimensional affinity matrix. In this space, cortical regions that are strongly interconnected by either many suprathreshold edges or few very strong edges are closer together, whereas nodes with little or no functional connectivity are farther apart. The name of this approach, which belongs to the family of graph Laplacians, derives from the equivalence of the Euclidean distance between points in the embedded space and the diffusion distance between probability distributions centred at those points. It is controlled by the parameter α, which controls the influence of the density of sampling points on the manifold (α=0, maximal influence; α=1, no influence). Based on previous work (Margulies et al., 2016), α was set at 0.5, this retains the global relations between data points in the embedded space and has been suggested to be relatively robust to noise in the functional connectivity matrix. The diffusion time (t), which controls the scale of eigenvalues of the diffusion operator was set at t=0 (default). Individual embedding solutions were aligned to the group-level embedding based on the Human Connectome Project S1200 sample (Van Essen et al., 2013) via Procrustes rotations (de Wael et al., 2020). The Procrustes alignment enables comparison across individual embedding solutions, provided the original data is equivalent enough to produce comparable Euclidean spaces.
 
-## 3D gradient metric: eccentricity
+#### 3D gradient metric: eccentricity
 
 To construct the combined gradient, we computed the Euclidean distance to the individual center for gradient 1–3. Next, to evaluate change within and between individuals, we computed the difference between gradient scores between different time-points.
 
-## Processing of microstructural data
+### Processing of microstructural data
 
-The details on the processing are identical to previous work (Paquola et al., 2019b; Valk et al., 2022). We have provided the information here again for clarity. T1-weighted MRIs were processed using FreeSurfer (http://surfer.nmr.mgh.harvard.edu) version 5.1.0 to generate cortical surface models for measurements of cortical thickness and surface area. FreeSurfer has been validated against histological analysis (Rosas et al., 2002) and manual measurements (Kuperberg et al., 2003). We chose the most general cross-sectional image processing procedure to enable the longitudinal as well as cross-sectional study goals of the ReSource Project see for example (Valk et al., 2017a). Since data acquisition spanned more than 2 years, a non-specific imaging procedure enabled baseline data analysis before the completion of latter time points, without compromising comparability. Quantitative T1 maps were aligned and mapped to the T1-weighted MRI using a boundary-based registration (Greve and Fischl, 2009), by maximizing the intensity gradient across tissues boundaries and using the surfaces that separate brain structure and tissue types of the T1-weighted reference image, and the tissue intensity of the quantitative T1 map. Following we computed a dept-dependent microstructure proxy. Depth-dependent cortical microstructure analysis has a long tradition in neuroanatomy (Schleicher et al., 1999; Zilles et al., 2002), and depth-dependent shift in cellular and myelin characteristics have been shown to reflect architectural complexity (Zilles et al., 2002) and cortical hierarchy (Mesulam, 1998). We generated 12 equivolumetric surfaces between outer and inner cortical surfaces. The equivolumetric model adjusts for cortical folding by varying the Euclidean distance ρ between pairs of intracortical surfaces throughout the cortex to preserve the fractional volume between surfaces. ρ was calculated for each surface (Ochsner and Lieberman, 2001):ρ=1Aout−Ain⋅(−Ain+αAout2+(1−α)Ain2)
+The details on the processing are identical to previous work (Paquola et al., 2019b; Valk et al., 2022). We have provided the information here again for clarity. T1-weighted MRIs were processed using FreeSurfer (http://surfer.nmr.mgh.harvard.edu) version 5.1.0 to generate cortical surface models for measurements of cortical thickness and surface area. FreeSurfer has been validated against histological analysis (Rosas et al., 2002) and manual measurements (Kuperberg et al., 2003). We chose the most general cross-sectional image processing procedure to enable the longitudinal as well as cross-sectional study goals of the ReSource Project see for example (Valk et al., 2017a). Since data acquisition spanned more than 2 years, a non-specific imaging procedure enabled baseline data analysis before the completion of latter time points, without compromising comparability. Quantitative T1 maps were aligned and mapped to the T1-weighted MRI using a boundary-based registration (Greve and Fischl, 2009), by maximizing the intensity gradient across tissues boundaries and using the surfaces that separate brain structure and tissue types of the T1-weighted reference image, and the tissue intensity of the quantitative T1 map. Following we computed a dept-dependent microstructure proxy. Depth-dependent cortical microstructure analysis has a long tradition in neuroanatomy (Schleicher et al., 1999; Zilles et al., 2002), and depth-dependent shift in cellular and myelin characteristics have been shown to reflect architectural complexity (Zilles et al., 2002) and cortical hierarchy (Mesulam, 1998). We generated 12 equivolumetric surfaces between outer and inner cortical surfaces. The equivolumetric model adjusts for cortical folding by varying the Euclidean distance ρ between pairs of intracortical surfaces throughout the cortex to preserve the fractional volume between surfaces. ρ was calculated for each surface (Ochsner and Lieberman, 2001):
+
+$$
+ρ=\frac{1}{A_{out}−A_{in}}⋅(−A_{in}+\sqrt{\alphaA_{out}^{2}+(1−\alpha)A_{in}^{2}})
+$$
 
 in which α represents a fraction of the total volume of the segment accounted for by the surface, while Aout and Ain represents the surface area of outer and inner cortical surfaces, respectively. We systematically sampled qT1 values for each of the 20,484 linked vertices from the outer to the inner surface across the cortex. Following, we computed the average value of qT1 in each of the 400 parcels (Schaefer et al., 2018).
 
-## Meta-analytical a-priori networks
+### Meta-analytical a-priori networks
 
 We used the NeuroSynth meta-analytic database (http://www.neurosynth.org) (Yarkoni et al., 2011) to assess topic terms associated with the training (‘attention’, ‘interoception’, ‘emotion’, ‘empathy’, ‘Theory of Mind’).
 
-## Behavioral markers
+### Behavioral markers
 
 We assessed a battery of behavioral markers developed and adapted to target the main aims of the Presence, Perspective, and Affect TMs: selective attention, compassion, and ToM. Behavioral changes of these markers elicited by the different TMs are reported elsewhere (Trautwein et al., 2020). The measure for compassion was based on the EmpaToM task, a developed and validated naturalistic video paradigm in the current subjects (Kanske et al., 2015; Tholen et al., 2020). Videos showed people recounting autobiographical episodes that were either emotionally negative (e.g. loss of a loved one) or neutral (e.g. commuting to work), followed by Likert-scale ratings of experienced valence and compassion. Since the conceptual understanding of compassion might change due to the training, we ensured a consistent understanding by defining it prior to each measurement as experiencing feelings of care, warmth, and benevolence. Compassion was quantified as mean of compassion ratings across all experimental conditions. The EmpaToM task (Kanske et al., 2015) also allowed for measurement of ToM performance. After the ratings, multiple-choice questions requiring inference of mental states (thoughts, intentions, beliefs) of the person in the video or factual reasoning on the video’s content (control condition) were asked. Questions had three response options and only one correct answer, which had been validated during pre-study piloting (Kanske et al., 2015). Here, we calculated participants’ error rates during the ToM questions after the video, collapsed across neutral and negative conditions.
 
-## Statistical analysis
+### Statistical analysis
 
 Analysis was performed using SurfStat for Matlab (Worsley et al., 2009). We employed linear mixed-effects models, a flexible statistical technique that allows for inclusion of multiple measurements per subjects and irregular measurement intervals (Pinheiro and Bates, 2000). In all models, we controlled for age and sex, and random effect of subject. Inference was performed on subject-specific eccentricity/gradient change maps, Δeccentricity/gradient, which were generated by subtracting parcel-wise eccentricity/gradient maps of subsequent time points for a given participant. Main analysis contrasts the TMs in TC1 and TC2 against each other to account for possible training general effects whilst controlling for subject as random effect in the linear model, and age and sex. In follow-up analyses, we compared TMs against retest control cohorts, active control cohort (TC3), and for training cohorts independently.
 
-a) Assessing TM-specific change. To compare two TMs, we compared one TM against another (for example Affect versus Perspective). To compare a given TM against RCC, we estimated contrasts for TM change relative to RCC (Presence, Perspective, Affect).M=1+A+S+TM+random(Subject)+I
+a) Assessing TM-specific change. To compare two TMs, we compared one TM against another (for example Affect versus Perspective). To compare a given TM against RCC, we estimated contrasts for TM change relative to RCC (Presence, Perspective, Affect).
+
+$$
+M=1+A+S+TM+random(Subject)+I
+$$
 
 b) Correction for multiple comparisons. Findings were corrected for number of tests within the analysis step using FDR correction (Benjamini and Hochberg, 1995).
 
 Theoretically, the cross-over design of the study and the inclusion of number of scans since baseline as covariance controlled for test-retest effects on motion (as participants may become calmer in scanner after repeated sessions). Nevertheless, to control for outliers, we removed all individuals with >0.3 mm/degree movement (Power et al., 2012).
 
-## Behavioral prediction
+### Behavioral prediction
 
 We adopted a supervised framework with cross-validation to predict behavioral change based on change in functional and microstructural organization within five a-priori functional networks. We aimed at predicting attention, compassion, and perspective-taking (Figure 5). Before running our model, we regressed out age and sex from the brain markers within the cross-validation loop to avoid leakage. We utilized fivefold cross-validation separating training and test data and repeated this procedure 100 times with different sets of training and test data to avoid bias for separating subjects. Following we performed an elastic net cross-validation procedure with alphas varying from 0.0001 to 1, ratio 1.0, making it a lasso regression. We used sequential feature selection to determine the top 20% of features based on mean absolute error without cross validation. Linear regression for predicting behavioral scores was constructed using the selected features as independent variables within the training data (4/5 segments) and it was applied to the test data (1/5 segment) to predict their behavioral scores. The prediction accuracy was assessed by calculating Pearson’s correlation between the actual and predicted behavioral scores as well as their negative mean absolute error, nMAE. To further assess specificity of the behavioral prediction models, we evaluated Pearson’s correlation between actual and predicted scores based on randomized scores, as well as using the model to predict out-of-TM data (e.g. for attention in Presence; compassion in Affect and ToM in Perspective; for compassion in Affect, attention in Presence and ToM in Perspective; for ToM in Perspective; attention in Presence and compassion in Affect).
 
-## Data and code availability
+### Data and code availability
 
 In line with EU data regulations (General Data Protection Regulation, GDPR), we regret that data cannot be shared publicly because we did not obtain explicit participant agreement for data-sharing with third parties. Our work is based on personal data (age, sex, and neuroimaging data) that could be matched to individuals. The data is therefore pseudonominized rather than anonymized and falls under the GDPR. Data are available upon request (contact via valk@cbs.mpg.de). Summary data and analysis scripts (Matlab and python) to reproduce primary analyses and figures are publicly available on GitHub (https://github.com/CNG-LAB/social_function_structure_change), and raw data-plots are provided for network-level analyses. To construct gradients, we used the brainspace package, available at brainspace.readthedocs.io. To construct intra-cortical myelin profiles code is available at micapipe.readthedocs.io. Meta-analytical functional MRI maps are downloaded from neurosynth.org and available on GitHub.

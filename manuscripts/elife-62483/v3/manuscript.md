@@ -32,13 +32,29 @@ To test the hypothesis that selenium supplementation might confer MR-like benefi
 
 ## Results
 
-## Like MR, sodium selenite supplementation protects male and female mice against diet-induced obesity
+### Like MR, sodium selenite supplementation protects male and female mice against diet-induced obesity
 
 In order to determine whether, like MR and other healthspan-extending interventions, selenium supplementation might protect mice against diet-induced obesity, we fed three isocaloric synthetic diets to wild-type male C57BL/6J mice for a period of at least 16 weeks and assessed multiple parameters representative of their general body condition and metabolic health. Three so-called ‘high-fat’ diets were formulated so as to provide 57% of total calories from fat (as compared with 10% for a typical synthetic diet) and were as follows: (1) a normal control diet containing adequate methionine (0.86%; CF), (2) a methionine-restricted diet (0.12%; MR), and (3) an otherwise normal, methionine-replete diet, but containing 0.0073% sodium selenite (CF-SS). Amounts of selenium-containing compounds used for this and subsequent experiments were determined from pilot studies aimed at identifying minimal doses that still achieve high efficacy (not shown). To assess the extent of protection against diet-induced obesity, body mass and food consumption were recorded once per week until the end of the experiment (Figure 1A–C), at which time, animals were sacrificed and their overall body condition assessed (Figure 1D–F). After these measurements, inguinal and perigonadal fat pads were surgically resected and weighed (Figure 1G,H). Intact livers, which are susceptible to fat accumulation in animals fed a high-fat diet (Malloy et al., 2013), were also obtained and weighed (Figure 1I). Using this approach, we found that sodium selenite supplementation completely protected male mice against the dramatic weight gain observed for control-fed animals (Figure 1A,D). In fact, the protection against diet-induced obesity conferred by sodium selenite supplementation was essentially identical to that observed for methionine-restricted male mice (Figure 1A,D,G,H). In particular, both interventions resulted in a robust reduction in the accumulation of inguinal (MR, 82%; CF-SS, 83%) as well as perigonadal (MR, 78%; CF-SS, 80%) adipose tissue (Figure 1G,H). At the end of the experiment (16 weeks), the average total body mass of sodium selenite-supplemented animals was slightly higher than that of methionine-restricted animals (25.6 g vs 21.0 g; Figure 1A,D), although this difference was partly due to the greater lean body mass observed for sodium selenite-supplemented males as compared with methionine-restricted counterparts (13.8 g vs 12.4 g; Figure 1E). Put another way, the growth inhibitory effect known to be associated with MR (Ables et al., 2012; Miller et al., 2005; Orentreich et al., 1993) was somewhat less pronounced for sodium selenite supplementation. Furthermore, this lesser growth inhibition was consistent with measurements of the overall body length of the animals. That is, sodium selenite-supplemented male mice might have been somewhat longer than their methionine-restricted counterparts (9.52 cm vs 9.28 cm; Figure 1F). However, the observed difference is not quite statistically significant (p=0.07). Nevertheless, methionine-restricted and sodium selenite-supplemented animals were equally resistant to the accumulation of both inguinal and perigonadal adipose tissue (Figure 1G,H), even when differences in lean body mass were taken into account (Figure 1—figure supplement 1A,B). In addition, the smaller liver weights resulting from these two interventions were also nearly identical (0.63 g vs 0.68 g; Figure 1I, Figure 1—figure supplement 1C), suggesting that sodium selenite-supplemented male mice were, like their methionine-restricted littermates, protected against liver steatosis. To confirm that the observed differences in fat accumulation and body condition in sodium selenite-supplemented animals were due directly to the presence of the compound rather than a putative calorie reduction in the event that animals found the food unpalatable, we also assessed the rate of food consumption for all three diets. With respect to absolute food consumption, sodium selenite-containing food was consumed equivalently to the control diet (Figure 1B), whereas methionine-restricted food was consumed at a greater rate, consistent with previous findings. When normalized to body size, the consumption of sodium selenite-containing food was greater than that of the control diet, albeit somewhat less than that of methionine-restricted food (Figure 1C). Thus, male mice found sodium selenite-containing food to be just as palatable as the control diet and were not calorie-restricted. This confirms that the total protection against diet-induced obesity enjoyed by male mice was directly due to sodium selenite supplementation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62483/elife-62483-fig1-v3.jpg)
+
+**Figure 1.:** Comparisons over time of average values for (A) total body mass, (B) food consumption, and (C) food consumption normalized to total body mass for control-fed (CF; black circles), methionine-restricted (MR; red squares), and sodium selenite-supplemented (CF-SS; blue triangles) male mice. Average values at conclusion of the experiment (16.3 weeks) are also shown for (D) total body mass, (E) lean body mass, (F) body length, (G) mass of inguinal fat pads, (H) mass of perigonadal fat pads, and (I) liver mass for all feeding conditions. For all panels, bars denote standard error of the mean (SEM). For panels D–I, statistically significant differences (as compared with the corresponding CF values) are indicated (***p<0.001; ****p<0.0001). N = 8 for all groups.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62483/elife-62483-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Normalized values at conclusion of the experiments are shown for (A) mass of inguinal fat pads, (B) mass of perigonadal fat pads, and (C) liver mass for male mice that were control-fed (CF), methionine-restricted (MR), or sodium selenite-supplemented (CF-SS). Bars denote standard error of the mean (SEM). Statistically significant differences (as compared with the corresponding CF values) are indicated (**p<0.01; ****p<0.0001). N = 8 for all groups.
+
 To test whether female mice might benefit similarly from this intervention, a group of females was subjected to the same feeding regimens as described above for males. Measurements of body mass and food consumption were performed longitudinally (Figure 2A–C), determination of multiple metrics of body condition was performed at termination (Figure 2D–F), and assessment of adiposity was performed by weighing surgically resected fat pads and liver (Figure 2G–I). However, while the male mice used for these experiments were relatively young adults (2 months), we made use of older adult females (9 months) as our empirical observations (not shown) have demonstrated that young female mice remain relatively lean and metabolically unaffected by a high-fat synthetic diet. Using 9-month-old female mice for these studies, we found that females of this age dramatically increased in weight (Figure 2A,D) and readily accumulated adipose tissue (Figure 2G,H) when fed a high-fat diet. In contrast, MR ameliorated the diet-induced obesity of female mice (Figure 2A,D,G,H). To our knowledge, this is the first time that this has been reported for wild-type females. In any case, we were surprised to observe that not only does sodium selenite supplementation protect female mice against diet-induced obesity, it did so arguably more effectively than MR. Whereas all animals were weight-matched at the beginning of the study, sodium selenite-supplemented female mice not only had dramatically less body mass than control-fed littermates, but they were also marginally lighter than methionine-restricted animals throughout the experiment (Figure 2A). Furthermore, sodium selenite-supplemented animals demonstrated more robust decreases in both inguinal adiposity (81% less than controls) and perigonadal adiposity (80% less than controls) than did methionine-restricted littermates (53% and 56% less than controls, inguinal and perigonadal; Figure 2G,H, Figure 2—figure supplement 1A,B). Interestingly, and in contrast to the case for males, effects of MR and sodium selenite supplementation were similar with respect to lean body mass and body length (Figure 2E,F). This difference might be due to the fact that the female mice were older than the males (9 months old vs 2 months old) and nearly fully grown at the start of the intervention period. Alternatively, it is possible that sodium selenite supplementation has sex-specific effects on lean body mass, whereas MR does not. In any case, the efficacy of sodium selenite supplementation in protecting female mice against adipose accumulation is clear; and this effect may extend to fatty liver, as liver mass was lower in both methionine-restricted (24%) and sodium selenite-supplemented (25%) females as compared with obese control animals (Figure 2I, Figure 2—figure supplement 1C). As a point of interest, while the livers of methionine-restricted and sodium selenite-supplemented female mice were slightly larger than those of their male counterparts (~0.95 g vs ~ 0.65 g), this difference is likely due to the fact that these animals were older than their male counterparts (9 months old vs 2 months old), and thus, nearly fully grown. Finally, and similar to the case for males, the smaller body size and lower adiposity of sodium selenite-supplemented female mice were not due to reduced calorie intake, as their food consumption was at least equivalent to control-fed animals, whether normalized for body weight or not (Figure 2B,C). In total, these experiments clearly demonstrate that sodium selenite supplementation is sufficient to completely protect both male and female mice against diet-induced obesity.
 
-## Sodium selenite supplementation results in a variety of physiological, hormonal, and metabolic changes typically associated with MR
+![Figure 2.](https://cdn.elifesciences.org/articles/62483/elife-62483-fig2-v3.jpg)
+
+**Figure 2.:** Comparisons over time of average values for (A) total body mass, (B) food consumption, and (C) food consumption normalized to total body mass for control-fed (CF; black circles), methionine-restricted (MR; red squares), and sodium selenite-supplemented (CF-SS; blue triangles) female mice. Average values at conclusion of the experiment (16 weeks) are also shown for (D) total body mass, (E) lean body mass, (F) body length, (G) mass of inguinal fat pads, (H) mass of perigonadal fat pads, and (I) liver mass for all feeding conditions. For all panels, bars denote SEM. For panels D–I, statistically significant differences (as compared with the corresponding CF values) are indicated (*p<0.05; **p<0.01). N = 4 for all groups.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62483/elife-62483-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Normalized values at conclusion of the experiments are shown for (A) mass of inguinal fat pads, (B) mass of perigonadal fat pads, and (C) liver mass for female mice that were control-fed (CF), methionine-restricted (MR), or sodium selenite-supplemented (CF-SS). Bars denote standard error of the mean (SEM). Statistically significant differences (as compared with the corresponding CF values) are indicated (**p<0.01). N = 4 for all groups.
+
+### Sodium selenite supplementation results in a variety of physiological, hormonal, and metabolic changes typically associated with MR
 
 In order to (1) confirm that sodium selenite supplementation decreases plasma IGF-1 levels in C57BL/6J mice, and (2) test for additional similarities between this intervention and MR, we assessed multiple circulating analytes from male and female mice fed the control, methionine-restricted, and sodium selenite-supplemented diets. For this purpose, we obtained blood samples from animals at baseline (i.e., before initiation of the experimental diets), as well as after 4 weeks, 8 weeks, and 16 weeks on diet (with the last time-point representing the conclusion of the experiment). Plasma samples were analyzed by ELISAs to determine the concentrations of IGF-1, FGF-21, leptin, and adiponectin. These particular analytes were selected because they are not only affected by MR (and thus, constitute a subset of the ‘MR phenotype’) (Ables et al., 2012; Malloy et al., 2006), but have also been shown to be involved in the regulation of metabolism and/or healthspan. For example, circulating levels of the energy-regulating hormones adiponectin and leptin are increased and decreased, respectively, by MR, presumably due to the reduction of adiposity associated with this intervention (Ables et al., 2012; Elshorbagy et al., 2011; Malloy et al., 2006). In addition, the hepatokine FGF-21 is increased by MR and not only has roles in glucose metabolism (Kharitonenkov et al., 2005), but might also participate in the regulation of longevity via interaction with the IGF-1 receptor and its co-receptor β-Klotho (Kurosu et al., 2005; Liu et al., 2007). Also, as mentioned previously, plasma levels of the energy-regulating, anabolic hepatokine IGF-1 are reduced by MR in rodents (Ables et al., 2012; Malloy et al., 2006), and such reduction is apparently sufficient to confer extended healthspan (Brown-Borg et al., 2014). That said, we expected that IGF-1 levels should be reduced by sodium selenite supplementation based on results from studies in rats (Thorlacius-Ussing et al., 1987). Indeed, we found plasma IGF-1 levels to be dramatically reduced in male mice by both MR and sodium selenite supplementation (Figure 3A). At the conclusion of the experiment, IGF-1 levels were reduced by 53% (MR) and 37% (CF-SS), respectively, as compared with control values; similar reductions were seen at all time-points following initiation of feeding the experimental diets. Plasma levels of leptin followed a similar trend, with concentrations reduced equivalently by MR and sodium selenite supplementation at all time-points (Figure 3B). As an example, male mice that had been fed methionine-restricted and sodium selenite-supplemented diets for 16 weeks showed reductions in circulating leptin of 98% and 96%, respectively, as compared with controls. In contrast, MR-like changes in the plasma levels of adiponectin and FGF-21 were not apparent for sodium selenite-supplemented males. In other words, at all time-points assessed, the levels of adiponectin and FGF-21 in the plasma of sodium selenite-supplemented male mice did not show the increases typically observed for MR (Figure 3C,D) and were not significantly different from those of control animals. While these represent the first phenotypic differences that we observed for methionine-restricted and sodium selenite-supplemented animals, subsequent experiments revealed that FGF-21 is indeed responsive to sodium selenite, just not under all conditions. This is discussed in greater detail below. The final circulating analytes assessed for male mice were glucose and insulin, both of which were significantly reduced by MR and sodium selenite supplementation (Figure 3E,F). This finding suggests that the beneficial metabolic milieu conferred to male mice by selenium supplementation also includes improved glycemic control and is consistent with a previous report that selenium can regulate glucose metabolism and may be an ‘insulin mimetic’ (Stapleton, 2000).
 
@@ -48,7 +64,15 @@ In order to (1) confirm that sodium selenite supplementation decreases plasma IG
 
 With respect to female mice, the trend of them demonstrating a greater response to sodium selenite supplementation than to MR was maintained for many of the circulating analytes assayed. For example, IGF-1 levels were decreased by sodium selenite supplementation as compared with control animals and were lower even than those resulting from MR (Figure 4A). The most robust effect was observed at 8 weeks, when the concentration of IGF-1 was decreased by 65% as compared with controls. The reduction resulting from MR at the same time-point was only 33%. Similarly, leptin levels in female mice were reduced by both interventions (Figure 4B). At the terminal time-point, leptin levels were 87% (CF-SS) and 63% (MR) lower than control levels. Interestingly, both MR and sodium selenite supplementation resulted in increases of adiponectin and FGF-21 levels in female mice (Figure 4C,D). After consuming the diets for 8 weeks, animals demonstrated 34% (CF-SS) and 30% (MR) higher levels of adiponectin than control mice, as well as 40-fold (CF-SS) and 17-fold (MR) higher levels of FGF-21. In addition, sodium selenite-supplemented females also showed improved glycemic control, as both plasma glucose and plasma insulin levels were significantly reduced by this intervention at the 8-week and 16-week time-points (Figure 4E,F). Thus, by all tested metrics, sodium selenite was found to recapitulate phenotypes associated with MR when fed to female mice. In consideration of why this was not found to be the case for male mice, which did not demonstrate altered plasma adiponectin and FGF-21 levels upon sodium selenite supplementation, we explored whether the older age of the females used for these studies (9 months old vs 2 months old for males) might account for this difference. Toward this end, we fed both the control and sodium selenite-containing diets to older adult male mice (8 months old) and assessed body mass and food intake, as well as the plasma levels of FGF-21 and adiponectin (Figure 4—figure supplement 1). While these mice demonstrated both normal food consumption and the protection against diet-induced obesity (Figure 4—figure supplement 1A–C) described above for 2-month-old male mice, they also showed a 30-fold higher level of circulating FGF-21 as compared with control-fed littermates, and this after only 8 weeks on diet (Figure 4—figure supplement 1D). Therefore, it is both notable and apparent that the regulation of FGF-21 by sodium selenite supplementation is age-dependent. In contrast, adiponectin levels in male mice remained unaffected by this intervention, even in 8-month-old animals (Figure 4—figure supplement 1E). Thus, the latter finding suggests that selenium supplementation-dependent alterations in the plasma levels of adiponectin are sex-specific. In any case, taken together, our results indicate that sodium selenite supplementation produces most, if not all, of several MR-associated beneficial physiological changes in both male and female mice.
 
-## Sodium selenite supplementation reduces plasma IGF-1 levels without evidence of a reduction in GH levels
+![Figure 4.](https://cdn.elifesciences.org/articles/62483/elife-62483-fig4-v3.jpg)
+
+**Figure 4.:** Longitudinal comparisons of the plasma concentrations of (A) IGF-1, (B) leptin, (C) FGF-21, (D) adiponectin, (E) glucose, and (F) insulin for control-fed (CF), methionine-restricted (MR), and sodium selenite-supplemented (CF-SS) female mice. Bars denote SEM. Statistically significant differences (as compared with the corresponding CF values) are indicated (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001). N = 4 for all groups.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62483/elife-62483-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Comparisons over time of average values for (A) total body mass, (B) food consumption, and (C) food consumption normalized to total body mass for control-fed (CF; black circles) and sodium selenite-supplemented (CF-SS; blue triangles) adult male mice (8 months old). Also shown are the plasma concentrations of (D) FGF-21 and (E) adiponectin for control-fed and sodium selenite-supplemented male mice at the conclusion of the experiment (8 weeks). For all panels, bars denote SEM. For panel D, the difference depicted is statistically significant (****p<0.0001), whereas no change in FGF-21 levels was observed for young male mice (2 months old; see Figure 3). In addition, sodium selenite supplementation fails to produce a significant difference in the plasma levels of adiponectin in adult male mice (panel E). N = 3 for both groups.
+
+### Sodium selenite supplementation reduces plasma IGF-1 levels without evidence of a reduction in GH levels
 
 Even though, as hypothesized, we found that sodium selenite supplementation reduced circulating IGF-1 levels, it remained unknown whether or not this reduction was a consequence of reduced GH production. As mentioned above, selenium supplementation results in reduced GH release in rats, which in turns reduces the levels of circulating IGF-1 (Thorlacius-Ussing et al., 1987). To determine whether or not impairment of IGF-1 signaling in selenium-supplemented mice is associated with reduced GH, we measured the plasma GH levels of young male mice that had been fed the control and sodium selenite-containing diets for 16 weeks. As GH is normally released into the bloodstream from the anterior pituitary in a pulsatile fashion, we expected to detect relatively low concentrations of this hormone, but with a high degree of variance. Regardless, should selenium supplementation dramatically reduce either GH production or release, we considered it possible that we might detect an overall reduction in its average plasma levels as compared with those of controls. Although the values for GH levels (as well as their distributions) were as expected (Figure 5A), we did not detect a significant difference between samples from sodium selenite-supplemented animals and control-fed littermates. While this result suggested that the release of GH into the blood stream did not differ between groups, the possibility remained that sodium selenite supplementation might instead reduce the overall production of GH. To test this, we fed young adult (2-month-old) male mice either the control diet or one containing sodium selenite for 4 weeks. We then assessed the total production of GH by administering GH-releasing peptide 2 (GHRP-2) to mice by intraperitoneal injection 10 min prior to collecting blood samples, a technique similar to that used by Thorlacius-Ussing et al. to assess GH in rats. Of note, the interval selected (10 min) was informed by previous studies (Peroni et al., 2012) and intended to coincide with the maximum release of GH into the bloodstream. Using this approach, we found that circulating GH levels were approximately two orders of magnitude greater than those of mice not receiving GHRP-2 injections (Figure 5A,B), demonstrating the efficacy of this compound. Despite this, we remained unable to detect a significant difference between the levels of GH in sodium selenite-supplemented animals as compared with controls. Together, these data therefore suggest that the observed diminishment of circulating IGF-1 levels that results from sodium selenite supplementation occurs independently of effects on GH. This represents an obvious difference from the case in rats, wherein selenium supplementation produces an ~80% reduction in the levels of both GH and IGF-1 (Thorlacius-Ussing et al., 1987).
 
@@ -56,7 +80,7 @@ Even though, as hypothesized, we found that sodium selenite supplementation redu
 
 **Figure 5.:** Shown are comparisons of the plasma concentrations of GH in (A) male mice fed for 16 weeks with either the control diet (CF) or a diet containing sodium selenite (CF-SS) or (B) male mice fed these diets for 4 weeks and following injection with GH-releasing peptide 2 (GHRP-2) to achieve maximum circulating levels of GH. Bars denote SEM. There are no significant differences in GH levels between the two groups. For panel A, n = 8 for both groups. For panel B, n = 9 for both groups.
 
-## Selenium supplementation using an organoselenium compound also protects mice against diet-induced obesity
+### Selenium supplementation using an organoselenium compound also protects mice against diet-induced obesity
 
 Regardless of the nature of the mechanism by which IGF-1 levels are reduced by sodium selenite supplementation, it is clear that this intervention is highly effective in protecting against diet-induced obesity and conferring a multitude of additional MR-like healthspan benefits. However, for the purposes of providing dietary selenium, many studies have used organoselenium compounds rather than inorganic selenium-containing salts. For example, a large-scale clinical trial was performed to assess whether administration of selenomethionine to humans might protect against the development of prostate cancer (Klein et al., 2011; Lippman et al., 2009). To determine whether other sources of selenium might confer the benefits mentioned above, or whether this is a property unique to sodium selenite, we fed young adult (2-month-old) male mice an otherwise normal, methionine-replete high-fat diet containing 0.0037% selenomethionine (CF-SM) and assessed their body mass and food consumption over time (Figure 6A–C), as well as their body condition (Figure 6D–F) and adiposity (Figure 6G–I) at the end of the experiment. In addition, another group of males were fed a second diet containing a higher dose of selenomethionine (0.0073%; CF-SM 2×) and were similarly assessed. Overall, we found that the response to the selenomethionine-containing diets was similar to that of sodium selenite-containing diets, albeit somewhat less robust. For example, selenomethionine-supplemented male mice showed a dose-dependent protection against diet-induced obesity (Figure 6A,D,G,H), with less overall body mass than control-fed littermates (Figure 6A,D). As was the case for sodium selenite-supplemented animals, this difference was primarily due to lower adiposity, as we observed less inguinal and perigonadal adipose tissue in selenomethionine-supplemented male mice (Figure 6G,H). However, this effect did not extend to liver, as liver mass was not significantly different between experimental and control animals (Figure 6I). This intervention also differed somewhat from sodium selenite supplementation in that neither lean body mass nor overall length was found to be significantly different from control-fed male littermates (Figure 6E,F). As before, we confirmed that the moderate protection against diet-induced obesity observed was not due to CR, as animals ate the selenomethionine-containing diets comparably to the control diet (Figure 6B), and their food consumption was actually somewhat higher than that of control-fed animals, when normalized for body mass (Figure 6C).
 
@@ -70,7 +94,7 @@ To test the efficacy of selenomethionine supplementation in protecting against d
 
 **Figure 7.:** Comparisons over time of average values for (A) total body mass, (B) food consumption, and (C) food consumption normalized to total body mass for control-fed (CF; black circles) female mice, as well as mice fed the higher of two amounts of selenomethionine used for these studies (CF-SM 2×; dark blue triangles). Average values at conclusion of the experiment (16 weeks) are also shown for (D) total body mass, (E) lean body mass, (F) body length, (G) mass of inguinal fat pads, (H) mass of perigonadal fat pads, and (I) liver mass for all feeding conditions. For all panels, bars denote standard error of the mean (SEM). N = 4 for all groups.
 
-## The sodium selenite-containing diet is not toxic to mice
+### The sodium selenite-containing diet is not toxic to mice
 
 As the relative toxicity of selenium-containing compounds has been a subject of continual debate, there exists a significant body of work aimed at assessing the effects of selenium overnutrition (Barceloux and Barceloux, 1999; Schrauzer, 2000). The median lethal dose (LD50) of sodium selenite for mice is ~3.4 mg/kg of body weight, nearly half that of selenomethionine (~8.8 mg/kg), and the LD50 values for these compounds are similar for rats (Ammar and Couri, 1981; Klug et al., 1952; Shibata et al., 1992). However, these values were determined by intravenous injection of these compounds, rather than oral ingestion. A more recent study was performed that found the LD50 of orally ingested sodium selenite to be 21.2 mg/kg for mice (Wang et al., 2017). To formulate the selenium-containing diets used for our study, we performed titrations (0.00015–0.015%; not shown) to determine the highest concentrations of sodium selenite and selenomethionine that were palatable to mice, while also remaining well below the LD50 values for these compounds (after adjusting for food consumption and body weight). The concentrations selected were predicted to result in body weight-normalized selenium intakes roughly equivalent to that previously shown to decrease circulating IGF-1 levels in rats (Thorlacius-Ussing et al., 1987). At this level of supplementation, we have observed no ill effects of selenium in any of our experiments. In fact, at the time of writing, a cohort of animals has been fed the sodium selenite-containing diet continuously for 35 weeks and have remained healthy and without impairment. It was initially apparent to us that our dietary formulations were non-toxic when we observed that selenium-supplemented animals showed less adiposity than control-fed littermates (Figure 1G,H, Figure 2G,H), but similar lean body mass (or greater, in the case of males; Figure 1E, Figure 2E) compared with methionine-restricted controls. Furthermore, despite suggestions that selenium supplementation might increase the risk of insulin resistance and diabetes, we found that selenium-supplemented animals actually had improved glycemic control (Figure 3E,F, Figure 4E,F). Finally, repeated visual assessments of the overall physical condition of selenium-supplemented animals (i.e., low adiposity, good coat appearance, high activity levels and muscle mass, etc.) have also indicated a lack of toxicity, as these animals have consistently appeared healthier than not only control-fed littermates, but also methionine-restricted controls.
 
@@ -82,9 +106,17 @@ Nevertheless, we performed additional experiments to directly determine whether 
 
 Regarding a fourth different test of putative toxicity caused by selenium supplementation, dietary selenium is known to be important for the activity of the selenoprotein iodothyronine deiodinase, an enzyme that converts thyroxine (T4) into triiodothyronine (T3) (Bianco et al., 2002). Consequently, it has been suggested that selenium overnutrition may cause a form of subchronic toxicity marked by excessive T3 production and hyperthyroidism. We therefore measured the levels of free T3 in the plasma of mice fed either the sodium selenite-containing diet or the control diet for 25 weeks. We found no significant difference in T3 levels (Figure 8D). Taken together, the above observations indicate that the sodium selenite-containing diet used in the current study is not toxic to mice. Superficially, this might seem an unexpected finding, particularly in light of the work of Wang et al., who previously reported that supplementation with various selenium-containing compounds is causative of subchronic toxicity in mice (Wang et al., 2017). However, there are multiple possible explanations for the apparent discrepancy between these studies. First, rather than incorporating selenium-containing compounds into pelleted diets, as we have done, Wang et al. used daily oral gavage for administration of these compounds to mice. As a result, it is possible that the doses of sodium selenite ingested by mice in their experiments were effectively higher than similar doses in ours, owing to the sodium selenite having undergone oven-drying in our study. Second, the authors’ conclusion that long-term ingestion of sodium selenite is toxic was based primarily on the assumption that impairment of weight gain is indicative of toxicity. Indeed, in both studies, sodium selenite-supplemented animals were found to maintain a constant body mass over the course of the experiments (i.e., neither increasing nor decreasing), whereas the mass of control animals increased dramatically (Figure 1A, Figure 2A; Wang et al., 2017). However, it is critical to note that it is not an impairment of weight gain, per se, but rather a progressive loss of body mass that is usually (and more accurately) taken as evidence of subchronic toxicity. Even then, there are several well-characterized dietary and pharmacological interventions that reduce the body mass of obese animals, but are not considered to be toxic (e.g., MR, CR, intermittent fasting, ketogenic diet, rapamycin treatment, acarbose treatment, etc.) (Chang et al., 2009; Cooke et al., 2020; Goodrick et al., 1990; Harrison et al., 2019; Kennedy et al., 2007; Lees et al., 2017; Wang et al., 2018; Yu et al., 2018). Presumably, the reduction of IGF-1 signaling that occurs in response to all of these interventions represents the shared mechanism by which they both regulate body size and confer healthspan benefits to animals. Overall, our data are consistent with selenium supplementation operating similarly, by protecting mice against diet-induced obesity through reduced IGF-1 signaling, but with no evidence of toxicity.
 
-## Selenium supplementation extends the lifespan of yeast and requires both mitophagy and Alt1 transaminase activity
+### Selenium supplementation extends the lifespan of yeast and requires both mitophagy and Alt1 transaminase activity
 
 To develop a simple, genetically tractable model with which to explore the mechanistic basis of the benefits of selenium supplementation, we decided to make use of budding yeast. There are a number of assays that explore different aspects of cellular aging in yeast, including the chronological lifespan (CLS) assay, which assesses the period of time that non-dividing yeast remain viable and able to re-enter the cell cycle, as well as the replicative lifespan (RLS) assay, which measures the number of cell divisions that a newborn yeast cell can undergo (Fabrizio and Longo, 2003; Longo et al., 1996; Mortimer and Johnston, 1959; Müller et al., 1980). The former assay is intended to serve as a model of aging in quiescent eukaryotic cells, whereas the latter is used to assess how aging affects the proliferative capacity of mitotic cells. In previous work, we demonstrated that multiple interventions that produce the methionine-restricted state in yeast also dramatically extend CLS (Johnson and Johnson, 2014; Plummer and Johnson, 2019). A recent study also found that glucose restriction, which is known to extend RLS, does so by reducing the intracellular concentration of methionine (Zou et al., 2020). This finding is intriguing, particularly in light of unpublished studies from our laboratory (JKT; not shown) revealing that replicatively aged yeast show alterations in methionine metabolism. To determine whether selenium supplementation might, like MR, extend yeast lifespan, we assessed both the chronological and replicative lifespans of selenomethionine-supplemented yeast (Figure 9A,B). We found that aging wild-type yeast in selenomethionine-containing medium resulted in a 62% extension of maximum CLS (21 days vs 13 days; p=0.0164) as compared with yeast aged in control medium (Figure 9A). In addition, selenium supplementation also produced a dramatic extension of RLS, with median survival extended by nine generations (30%; p=0.00008) as compared with controls (Figure 9B). Together, these findings demonstrate that supplementing yeast medium with an organoselenium compound produces healthspan benefits detectable by not just one, but multiple assays of cellular aging.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/62483/elife-62483-fig9-v3.jpg)
+
+**Figure 9.:** Survival curves are shown for experiments assessing the effects of selenium supplementation on yeast chronological lifespan (A, C–E) and replicative lifespan (B). The presence of selenomethionine (SM) extends the chronological lifespan (A) and replicative lifespan (B) of wild-type yeast as compared with controls. Both the core mitophagy factor Atg32 (C) and the Alt1 transaminase (D) are required for the full extension of yeast chronological lifespan by selenium supplementation. In contrast, the Alt1 transaminase is dispensable for the extension of chronological lifespan by methionine restriction (E). Bars denote SEM.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/62483/elife-62483-fig9-figsupp1-v3.jpg)
+
+**Figure 9—figure supplement 1.:** Shown are the relative levels of HDAC activity present in wild-type yeast incubated with selenomethionine (SM), the HDAC inhibitors trichostatin A (TSA) and sodium butyrate (BUT), as well as untreated controls. Also shown are the levels of HDAC activity present in otherwise wild-type cells lacking the Alt1 transaminase, both in the absence (alt1Δ) and presence (alt1Δ + SM) of selenomethionine. Cells used for these analyses were harvested after either 5 hr or 72 hr of treatment, as indicated. At the latter time-point, selenium supplementation causes an approximately 50% reduction in HDAC activity as compared with untreated cells, and this decrease is dependent on the presence of Alt1. Bars denote SEM. Statistically significant differences (as compared with the corresponding control values) are indicated (*p<0.05). N = 2 for all groups.
 
 To gain insight into the mechanisms underlying the benefits of selenium supplementation to yeast lifespan, we explored the genetic determinants of selenomethionine-dependent CLS extension. Because we previously found the autophagic recycling of mitochondria (i.e., mitophagy) to be indispensable for the extension of CLS by MR (Plummer and Johnson, 2019), we considered the possibility that selenomethionine-dependent lifespan extension might also require this activity. To test this, we aged both wild-type yeast, as well as cells deleted for a gene encoding an essential mitophagy factor (Atg32), in both normal and selenomethionine-containing media. Atg32-deficient cells aged in selenomethionine-containing medium failed to demonstrate the extended longevity associated with this intervention (Figure 9C), instead producing a lifespan curve nearly identical to that of control cells. Moreover, this short lifespan was not due to any putative non-specific sickness associated with the loss of mitophagy, as Atg32-deficient cells aged in normal medium were not shorter-lived than control cells. Together, these finding indicate that, similar to the case for MR, mitophagy is required for the extension of CLS by selenium supplementation. We were also prompted by a 2009 study by Lee et al. to explore whether transaminase activity might be required for the extension of CLS by selenium supplementation. In the aforementioned study, the researchers found that certain organoselenium compounds (including selenomethionine) can be converted by transaminases to their corresponding α-keto acids (Lee et al., 2009). The authors then convincingly demonstrated that these compounds were potent histone deacetylase (HDAC) inhibitors, capable of promoting histone H3 acetylation status. In turn, the observed increase in H3ac likely altered gene expression in the cultured cells used for the study. To test the hypothesis that the benefits of selenomethionine to yeast might require the conversion of this compound to its α-keto acid (α-keto-γ-methylselenobutyrate; KMSB), we assessed the CLS of both wild-type yeast and cells deleted for the gene encoding the Alt1 transaminase, aged in both normal and selenomethionine-containing media. The results revealed that transaminase activity was required for the full extension of CLS by selenium supplementation (Figure 9D), as Alt1-deficient cells aged in selenomethionine-containing media demonstrated only a modest extension of CLS as compared with control cells (13 days vs 11 days; p=0.014). In addition, as above, the observed impairment of selenium supplementation-dependent CLS extension was not due to any potential non-specific sickness associated with loss of Alt1 transaminase activity, as Alt1-deficient cells aged in normal medium showed a lifespan identical to that of control cells. Finally, to determine whether Alt1 transaminase activity might be needed specifically for CLS extension by selenium supplementation, or if this activity might instead be required for the extended longevity of yeast in all settings, we tested whether Alt1 deficiency compromised the extended CLS of methionine-restricted cells. We found that the CLS of Alt1-deficient cells was no different from that of wild-type cells (Figure 9E), indicating that Alt1 transaminase activity is not required for CLS extension, per se, but specifically for the extension of CLS by selenium supplementation.
 
@@ -102,32 +134,196 @@ In the current study, we present a novel mechanism by which selenium supplementa
 
 ## Materials and methods
 
-## Animal care and feeding
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>ATG32</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000001408</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>ALT1</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>MET15</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IGF-1 Quantikine ELISA kit</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat. No:MG100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Adiponectin Quantikine ELISA kit</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat. No:MRP300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Leptin Quantikine ELISA kit</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat. No:MOB00B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FGF-21 ELISA kit</td>
+      <td>Millipore Corp.</td>
+      <td>Cat. No:EZRMFGF21-26K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GH ELISA kit</td>
+      <td>Millipore Corp.</td>
+      <td>Cat. No:EZRMGH-45K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Insulin ELISA kit</td>
+      <td>ALPCO Diagnostics</td>
+      <td>Cat. No:80-INSMS-E01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ALT activity assay kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No:MAK052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AST activity assay kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No:MAK055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Alkaline phosphatase detection kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No:APF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Free T3 AccuBind ELISA kit</td>
+      <td>Monobind, Inc</td>
+      <td>Cat. No:1325–300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HDAC assay kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No:CS1010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GHRP-2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No:SML2056</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium selenite</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No:71950</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Seleno-L-methionine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No:S3132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trichostatin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No:T1952</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium butyrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No:303410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 8.0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal care and feeding
 
 All animal studies were approved by the Institutional Animal Care and Use Committee (IACUC) of the Orentreich Foundation for the Advancement of Science, Inc (Permit Number: 0511 MB). C57BL/6J mice (Stock number 000664) were purchased from the Jackson Laboratories (Bar Harbor, ME) and housed in a conventional animal facility maintained at 20 ± 2°C, 50 ± 10% relative humidity, with a 12 hr/12 hr light/dark photoperiod. Food and water were provided ad libitum. Upon arrival, mice were acclimatized for up to 1 week and fed Purina Lab Chow 5001 (Ralston Purina, Co.; St. Louis, MO). At the initiation of feeding studies, mice were given one of five isocaloric (5.3 kcal/g) high-fat diets, comprising 12% kcal protein, 31% kcal carbohydrate, and 57% kcal fat (Research Diets; New Brunswick, NJ). In brief, these diets were formulated as follows, (1) 0.86% methionine (control), (2) 0.12% methionine (methionine-restricted), (3) 0.86% methionine + 0.0073% sodium selenite (sodium selenite-supplemented), (4) 0.86% methionine + 0.0037% selenomethionine (selenomethionine-supplemented), and (5) 0.86% methionine + 0.0073% selenomethionine (2× selenomethionine-supplemented). Full details concerning diet compositions are given in Supplementary file 1. Mice were randomly assigned to each of the diet groups such that each group had a similar average body mass (i.e., weight-matched). Once assigned, no animals (or samples resulting therefrom) were removed from the study. Body mass and food consumption were monitored once a week for the duration of the study. Prior to blood collection, animals were fasted for 4 hr to establish a physiological baseline. Blood was then collected from the retro-orbital plexus, processed using EDTA-K2-coated blood collection tubes (Milian Dutscher Group; Geneva, Switzerland), and the resulting plasma was frozen and stored at −80°C until used for analysis. A portion of each blood sample was used for blood glucose determination using an Abbott Freestyle Lite glucometer and glucose strips (Abbott Diabetes Care, Inc; Alameda, CA). At the end of each study, animals were fasted and bled, as described above, and then sacrificed. Inguinal and perigonadal fat pads, as well as liver, were harvested by surgical resection, weighed, flash frozen, and stored at −80°C.
 
 Measurements of lean body mass were performed, not including visceral mass, such that the values obtained represent the total fat-free musculoskeletal mass of the animals.
 
-## Blood chemical tests
+### Blood chemical tests
 
 Enzyme-linked immunosorbent assay (ELISA) kits were obtained commercially and used to measure plasma levels of IGF-1 (R&D Systems; Minneapolis, MN), adiponectin (R&D Systems), FGF-21 (Millipore Corp.; Billerica, MA), leptin (R&D Systems), growth hormone (Millipore Corp.), and insulin (ALPCO Diagnostics; Salem, NH). For studies exploring the putative toxicity of selenium-supplemented diets, enzyme activity assay kits were obtained commercially (Sigma-Aldrich; St. Louis, MO) and used to determine plasma levels of ALT, AST, and ALP. Free triiodothyronine (T3) levels were determined using a Free T3 AccuBind ELISA kit (Monobind, Inc; Lake Forest, CA). All tests were performed according to the manufacturers’ recommendations and measured using a Molecular Devices SpectraMax M5 Microplate Reader (Molecular Devices LLC; San Jose, CA). Two technical replicates were performed for each sample and the statistical significance of the resulting values determined by unpaired two-tailed t-tests using the software package Prism 8 (GraphPad Software; La Jolla, CA).
 
-## Total growth hormone measurements
+### Total growth hormone measurements
 
 To assess total GH production, mice were fasted for 4 hr prior to IP injection with 10 μg (200 μg/ml) of GH-releasing peptide 2 (GHRP-2) in sterile saline, which was obtained commercially (Sigma-Aldrich). Ten minutes after injection, blood samples were collected from the retro-orbital plexus and processed as described above. Using the resulting samples, plasma GH concentrations were determined by ELISA (Millipore Corp.), according to the manufacturer’s recommendations, and measured with a Molecular Devices SpectraMax M5 Microplate Reader (Molecular Devices LLC). Two technical replicates were performed for each sample and statistical significance was determined by unpaired two-tailed t-tests using Prism 8 (GraphPad Software).
 
-## Yeast strains
+### Yeast strains
 
 All experiments were performed using haploid strains derived from the BY4741/BY4742 background (his3Δ1, leu2Δ0, ura3Δ0) (Brachmann et al., 1998). Specifically, strains used were from the commercially available Yeast Knockout (YKO) Collection (GE Healthcare Dharmacon; Lafayette, CO). The YKO Collection comprises strains in which gene deletions of interest are marked by the KanMX drug resistance cassette (with the exception of met15Δ0, his3Δ1, leu2Δ0, lys2Δ0, and ura3Δ0).
 
-## Yeast chronological lifespan assays
+### Yeast chronological lifespan assays
 
 Chronological lifespan assays were performed as previously described (Johnson and Johnson, 2014), modified from the protocols of Longo et al., 1996. Briefly, cells were struck onto YPAD solid media from frozen stocks and allowed to grow at 30°C for 48 hr before colonies were inoculated into liquid synthetic complete (SC) medium. After an additional 48 hr of growth, aliquots were transferred into fresh SC medium at a concentration of ~2 × 105 cells/ml and grown at 30°C. Following 3 days of growth, after the diauxic shift, aliquots were removed at 48 hr intervals and their colony forming units (CFUs) assessed on YPAD agar plates (n = 4 for each condition). For each culture, the point at which the remaining CFUs were found to be less than 10% of maximal was considered the end of lifespan. This cut-off was selected in order to avoid the potential confound of the GASP (Growth Advantage in Stationary Phase) phenotype, which is marked by the cyclical growth and death of a small population of cells (Fabrizio and Longo, 2007). Chronological lifespan assays were performed using SC medium formulated as follows: 0.67% yeast nitrogen base without amino acids, 2% glucose, 0.45% casamino acids, 0.01% tryptophan, 0.008% adenine sulfate, and 0.009% uridine. For experiments assessing the chronological lifespan of selenium-supplemented yeast, selenomethionine was added to SC medium to a final concentration of 0.00045%, at a ~1:20 stoichiometric ratio of selenomethionine:methionine. To assess the significance of lifespan differences between strains, 10% survival values (in days) were computed and used to perform unpaired two-tailed t-tests in Prism 8 (GraphPad Software).
 
-## Yeast replicative lifespan assays
+### Yeast replicative lifespan assays
 
 Replicative lifespan of virgin mother cells was determined by micromanipulation as previously described with minor modifications (Kennedy et al., 1994). Media used were freshly made synthetically defined complete media plates (SDC) with and without supplementation of filter sterilized selenomethionine (final concentration of 0.00061%; 1:20 selenomethionine:methionine) to cooling media before pouring the plates. Plates were prepared 2 days before the lifespan experiment and allowed to dry. BY4742 were streaked from frozen stocks for single colonies on SDC agar plates, and individual colonies were suspended in sterile distilled water, spotted and allowed to dry on SDC plates ± selenomethionine supplementation (blinded to the selenomethionine content of the plates). Isolated cells’ first daughters were used as virgin mother cells. Mother cells were maintained at 30°C during the day and 12°C at night to impede division. Data represent three replicates of 34 mother cells for each media condition. p-value was calculated using the two-sided Mann–Whitney U-test.
 
-## Yeast histone deacetylase activity assays
+### Yeast histone deacetylase activity assays
 
 To assess the effects of selenium supplementation on yeast HDAC activity, cell extracts were generated for cells grown as described above for CLS experiments (in the presence or absence of selenomethionine), with the exception that cultures were harvested at either 5 hr or 72 hr post-inoculation of pre-cultures into fresh SC medium. To serve as positive controls, cell extracts were also generated for cells grown in the presence of trichostatin A (20 μM) or sodium butyrate (5 mM). Specifically, harvested cell pellets were resuspended in 160 μl of ice-cold Yeast Lysis Buffer, formulated as follows: 25 mM Tris-HCl (pH 7.4), 0.5 mM EDTA, 137 mM NaCl, and 10 mM 2-mercaptoethanol. 100 μl of pre-chilled acid-washed glass beads were then added to each cell suspension, and the resulting mixtures were disrupted at 4°C using a Digital Disruptor Genie (Scientific Industries, Inc; Bohemia, NY). Ten cycles of disruption were performed, each cycle alternating 2 min of bead-beating at 3,000 rpm with 2 min of cooling on ice. Glass bead/lysate mixtures were then clarified by centrifugation at 4°C for 15 min at 13,000 rpm, and the resulting supernatants transferred to fresh tubes and stored at −80°C for subsequent analyses. Using these samples, measurement of HDAC activity was performed with the commercially available Histone Deacetylase Assay kit (Sigma-Aldrich). The assay was performed according to the manufacturer’s recommendations and measured using a Molecular Devices SpectraMax M5 Microplate Reader (Molecular Devices LLC). Two technical replicates were performed for each sample and the statistical significance of the resulting values determined by unpaired two-tailed t-tests using the software package Prism 8 (GraphPad Software).

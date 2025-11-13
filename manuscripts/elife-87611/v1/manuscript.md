@@ -10,20 +10,28 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Department of Plant and Microbial Biology, Seed Lab, University of California, Berkeley Berkeley United States
-2. https://ror.org/05hs6h993 Department of Biochemistry and Molecular Biology, Parent Lab, Michigan State University East Lansing United States
+1. Department of Plant and Microbial Biology, Seed Lab, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. Department of Biochemistry and Molecular Biology, Parent Lab, Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
 
 † Corresponding author
 
 ## Abstract
 
-Phage satellites commonly remodel capsids they hijack from the phages they parasitize, but only a few mechanisms regulating the change in capsid size have been reported. Here, we investigated how a satellite from Vibrio cholerae , phage-inducible chromosomal island-like element (PLE), remodels the capsid it has been predicted to steal from the phage ICP1 (Netter et al., 2021). We identified that a PLE-encoded protein, TcaP, is both necessary and sufficient to form small capsids during ICP1 infection. Interestingly, we found that PLE is dependent on small capsids for efficient transduction of its genome, making it the first satellite to have this requirement. ICP1 isolates that escaped TcaP-mediated remodeling acquired substitutions in the coat protein, suggesting an interaction between these two proteins. With a procapsid-like particle (PLP) assembly platform in Escherichia coli , we demonstrated that TcaP is a bona fide scaffold that regulates the assembly of small capsids. Further, we studied the structure of PLE PLPs using cryogenic electron microscopy and found that TcaP is an external scaffold that is functionally and somewhat structurally similar to the external scaffold, Sid, encoded by the unrelated satellite P4 (Kizziah et al., 2020). Finally, we showed that TcaP is largely conserved across PLEs. Together, these data support a model in which TcaP directs the assembly of small capsids comprised of ICP1 coat proteins, which inhibits the complete packaging of the ICP1 genome and permits more efficient packaging of replicated PLE genomes.
+Phage satellites commonly remodel capsids they hijack from the phages they parasitize, but only a few mechanisms regulating the change in capsid size have been reported. Here, we investigated how a satellite from Vibrio cholerae, phage-inducible chromosomal island-like element (PLE), remodels the capsid it has been predicted to steal from the phage ICP1 (Netter et al., 2021). We identified that a PLE-encoded protein, TcaP, is both necessary and sufficient to form small capsids during ICP1 infection. Interestingly, we found that PLE is dependent on small capsids for efficient transduction of its genome, making it the first satellite to have this requirement. ICP1 isolates that escaped TcaP-mediated remodeling acquired substitutions in the coat protein, suggesting an interaction between these two proteins. With a procapsid-like particle (PLP) assembly platform in Escherichia coli, we demonstrated that TcaP is a bona fide scaffold that regulates the assembly of small capsids. Further, we studied the structure of PLE PLPs using cryogenic electron microscopy and found that TcaP is an external scaffold that is functionally and somewhat structurally similar to the external scaffold, Sid, encoded by the unrelated satellite P4 (Kizziah et al., 2020). Finally, we showed that TcaP is largely conserved across PLEs. Together, these data support a model in which TcaP directs the assembly of small capsids comprised of ICP1 coat proteins, which inhibits the complete packaging of the ICP1 genome and permits more efficient packaging of replicated PLE genomes.
 
 ## Introduction
 
 Like the parasitism of bacteria by the phages that infect them, phages are parasitized by mobile genetic elements termed phage satellites. Satellites continue to be discovered across bacterial species and, despite the independent evolution of these elements, common themes have emerged (reviewed in de Sousa et al., 2022). Universally, satellites are integrated genetic elements that are dependent on infection by a helper phage for their lifecycle. Helper phage infection triggers satellites’ genome excision and replication. Following genome replication, satellites parasitize the helper phages’ structural components and selectively package satellite genomes into proteinaceous shells comprised of coat proteins, called capsids (Christie and Dokland, 2012). The piracy of essential phage structural proteins affords the phage satellites the luxury of reducing their coding capacity and, therefore, their genome size. As such, satellites’ genomes can be packaged into smaller capsids compared to their helper phages. In all documented cases, the satellite encodes a strategy to direct the assembly of small capsids, a mechanism that excludes the complete packaging of the larger helper phage genome but permits the complete packaging of the smaller phage satellite genome (Shore et al., 1978; Damle et al., 2012; Hawkins et al., 2021; Alqurainy et al., 2022). After the attachment of tails, also pirated from the helper phage, the mature virions harboring the satellite genome are released from the cell. Here, they transduce and integrate the satellite genome into neighboring susceptible bacteria.
 
 Phage-inducible chromosomal island-like elements (PLEs) are satellites of the lytic Vibrio cholerae phage ICP1 (O’Hara et al., 2017). PLEs are one of four families of phage satellites that have been identified to date (de Sousa et al., 2022). In addition to their specificity to V. cholerae and unique complete inhibition of their helper phage, PLEs stand apart from other satellites in their genetic composition. They encode genes with similar functions, but without sequence identity, to those in other satellites. To date, 10 genetically distinct but related PLEs have been identified (Angermeyer et al., 2021), with PLE1 being the most well studied. PLEs, like other satellites, have a smaller genome (~18 kb) than the phage they parasitize, ICP1 (~125 kb), and are dependent on their helper for excision (McKitterick and Seed, 2018; Nguyen et al., 2022), replication (Barth et al., 2020), and virion production (Netter et al., 2021). PLE1 has been shown to produce virions with small ~50-nm-wide capsids (Figure 1A), while ICP1 produces virions with large ~80-nm-wide capsids (Figure 1B). Based on similarities to other capsid-remodeling satellites and the evidence that depletion of ICP1’s coat protein by CRISPRi during infection results in reduced PLE transduction (Netter et al., 2021), it is hypothesized that PLE capsids are comprised of ICP1 coat proteins. However, the mechanism that PLE1 uses to achieve this capsid remodeling has yet to be explored.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Representative transmission electron micrographs (TEMs) from three independent biological replicates show (A) PLE virions have small, ~50-nm-wide capsids and long contractile tails while. (B) ICP1 virions have large, ~80-nm-wide capsids and long contractile tails. Scale bars are 200 nm. (C, D) Representative TEMs of lysates produced from ICP1 infection of V. cholerae expressing (C) TcaP (ptcaP) or (D) an empty vector (pEV). Arrowheads show exemplary capsids and their sizes according to the legend. Scale bars are 200 nm. (E) Efficiency of plaquing of wild type ICP1 or escape phages harboring the substitution indicated in the coat protein on V. cholerae expressing TcaP relative to an empty vector control. Each dot represents a biological replicate, bars represent the mean, and error bars show the standard deviation. The dotted line indicates an efficiency of plaquing of 1 where the expression of TcaP is not inhibitory to plaque formation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Representative transmission electron micrographs (TEMs) show virion morphologies as indicated that were produced from ICP1 infection of V. cholerae expressing (A) a plasmid expressing tcaP (ptcaP) or (B) an empty vector (pEV). Scale bars are 500 or 200 nm, as indicated.
 
 As capsids for large double-stranded DNA viruses assemble through a stepwise pathway, remodeling must occur at the first stage, nucleation of the procapsid. Procapsids are the empty shell capsid precursors into which DNA is packaged (Steven et al., 2005). Procapsid size, referred to by a T number (which corresponds to the number of triangular structural units within a face of an icosahedron and largely represents the size of the capsid), and assembly are regulated by scaffolding proteins that guide coat proteins into their correct orientation around the pre-formed portal complex (King and Casjens, 1974; Dokland, 1999). These capsid scaffolds can either be separately encoded proteins or contained within a domain of the coat protein, as is seen in the phage HK97 (Prevelige et al., 1988; Duda et al., 1995). So, to alter the size of the capsids, satellites must regulate the size of the procapsid.
 
@@ -33,7 +41,7 @@ Here, we studied how PLE remodels the ICP1 capsid. We found a PLE-encoded protei
 
 ## Results
 
-## PLE encodes a single gene product, TcaP, that is necessary and sufficient to direct the assembly of small capsids
+### PLE encodes a single gene product, TcaP, that is necessary and sufficient to direct the assembly of small capsids
 
 Given the observation that PLE virions have smaller capsids than ICP1 virions (Figure 1A and B), we hypothesized that PLE encodes a single protein responsible for assembling these smaller capsids. The generation of small capsids would limit the amount of DNA that could be accommodated within the capsids and block the complete packaging of the larger ICP1 genome, reducing ICP1 plaquing. In line with this prediction, other satellites’ proteins that redirect capsid assembly are inhibitory to their helper phages for this reason (Shore et al., 1978; Damle et al., 2012; Carpena et al., 2016). Using this logic and PLE1 as the representative PLE, we identified one candidate PLE protein, TcaP (previously Orf17 (AGG09411.1)), as a putative capsid remodeling protein.
 
@@ -45,29 +53,69 @@ Expression of TcaP during ICP1 infection was sufficient to redirect capsid size,
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig2-v1.jpg)
 
-**Figure 2.:** (A–C) Representative transmission electron micrographs (TEMs) from three independent biological replicates of lysate from ICP1-infected strains of V. cholerae with wild type PLE or PLE∆tcaP, as indicated, carrying either the empty vector (EV) or a vector expressing TcaP (tcaP). Insets are enlarged regions of the images highlighting representative particles, and arrowheads indicate capsid types and sizes, as described in the legend. Scale bars are 100 nm. (D) Quantification of PLE genome transduction for the strain indicated represented as the transduction efficiency relative to wild type PLE with an empty vector (pEV). Each dot represents a biological replicate, bars represent the mean, and error bars show standard deviation. The dotted line indicates an efficiency of 100%.Figure 2—source data 1.Figure 2D.Figure 2—source data 2.Figure 1A–C.
+**Figure 2.:** (A–C) Representative transmission electron micrographs (TEMs) from three independent biological replicates of lysate from ICP1-infected strains of V. cholerae with wild type PLE or PLE∆tcaP, as indicated, carrying either the empty vector (EV) or a vector expressing TcaP (tcaP). Insets are enlarged regions of the images highlighting representative particles, and arrowheads indicate capsid types and sizes, as described in the legend. Scale bars are 100 nm. (D) Quantification of PLE genome transduction for the strain indicated represented as the transduction efficiency relative to wild type PLE with an empty vector (pEV). Each dot represents a biological replicate, bars represent the mean, and error bars show standard deviation. The dotted line indicates an efficiency of 100%.
 
 Next, we measured the transduction of PLE’s genome following ICP1 infection in PLE∆tcaP hosts using a previously described assay using an antibiotic resistance marker in PLE (O’Hara et al., 2017). Interestingly, in the absence of tcaP, PLE transduction was tenfold less efficient than wild type (Figure 2D). The defect in the transduction of the PLE∆tcaP strain was largely restored with ptcaP (Figure 2D). Together with the morphological data of transducing particles, these data suggest that TcaP-mediated capsid remodeling facilitates more efficient horizontal spread of the PLE genome to recipient V. cholerae. PLE is the first satellite to show dependency on small capsids for efficient transduction.
 
-## PLE-encoded TcaP is a bona fide capsid scaffold
+### PLE-encoded TcaP is a bona fide capsid scaffold
 
 Capsid scaffolding proteins are characteristically responsible for directly promoting the assembly of coat proteins and controlling capsid size (Dokland, 1999). TcaP expression results in the formation of small capsids during ICP1 infection (Figure 1C), which suggests that it has scaffolding activity. However, it is possible that TcaP does not act directly on the coat proteins as a scaffold, but rather interferes with ICP1’s capsid morphogenesis pathway in some way that decreases capsid size. To directly address if TcaP is a scaffold, we set up a heterologous PLP assembly platform in E. coli similar to those previously described (Spilman et al., 2012; Wang et al., 2006; Cerritelli and Studier, 1996). Briefly, we co-expressed ICP1’s coat and putative scaffolds from either ICP1 or PLE and monitored the production of PLPs. By adding a C-terminal six-histidine (6xHis) tag to the coat protein, we were able to purify coat-containing complexes by affinity chromatography, examine their protein content by SDS-PAGE/Coomassie staining, and their morphology by TEM. First, as a control, coat::6xHis (referred to as ‘coat’ for simplicity) was expressed and purified. The coat proteins eluted as complexes, but they were irregular in size and shape, often forming spirals (Figure 3A1, Figure 3—figure supplement 1), as is expected for coat proteins in the absence of scaffolds (Dokland, 1999). As a second control, we confirmed that ICP1’s putative scaffold could assemble coat proteins into uniform, ICP1-sized PLPs (Figure 3A2, Figure 3—figure supplement 1). The presence of scaffold in these PLPs was supported by SDS-PAGE analysis in which we observed a band corresponding to the predicted size of the scaffold (39.3 kDa), indicating, as expected, that the scaffold co-eluted with coat-containing complexes (Figure 3A2). Interestingly, two smaller bands of approximately 23 and 17 kDa also appeared in these samples. The size of these bands is consistent with the cleavage of the scaffold resulting in two fragments. As scaffolds are generally not a part of the mature capsid, they are removed from the procapsid by self-cleavage (Robertson et al., 1997; Chang et al., 2008) or cleavage by a protease (Duda et al., 2013; Huet et al., 2016). Indeed, in the presence of protease inhibitors during purification, these bands were not observed, but the same-sized particles were produced, suggesting that scaffold cleavage is not a prerequisite for assembly (Figure 3—figure supplement 2A). Analysis of ICP1 PLPs by mass spectrometry (LC-MS/MS) further supported the presence of ICP1’s putative scaffold (Supplementary file 2). Together, these data confirm the predicted role of ICP1’s scaffold and demonstrate that PLPs can be assembled and purified using this platform.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig3-v1.jpg)
+
+**Figure 3.:** Representative transmission electron micrographs (TEMs) and Coomassie stained SDS-PAGE analyses of resulting affinity-purified PLPs produced in the heterologous assembly platform in E. coli from 2 to 3 independent biological replicates following expression of (A) coatwild type or (B) coatR223H proteins encoded on plasmids as shown in the diagrams in the central panel (numbered 1–5). ICP1-encoded genes are shown in red and PLE-encoded genes are shown in blue. Bent arrow icons indicate Ptac promoters. Six-histidine (6xHis) represents the tag fused to the C-terminus of the coat. Protein standards are indicated by black tick marks and a subset are marked by their sizes in kDa as indicated (standard range: 250, 150, 100, 75, 50, 37, 35, 20, 15, 10 kDa). Protein bands of interest are indicated by colored tick marks and labels (see legend for calculated molecular weights and accession numbers of these proteins, complete gene and protein information is provided in the Key resources table). In the absence of protease inhibitors, ICP1’s scaffold appears to be cleaved and the resulting cleavage products are indicated by scaffold*. Protease inhibitors were included in all coatR223H purifications. TEM insets are enlarged sections of the images highlighting representative particles and arrowheads indicate capsid types and sizes, as described in the legend. Scale bars are 200 nm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Violin plots showing the diameter of procapsid-like particles assembled from proteins according to legend in E. coli. Each particle was measured across two axes, and the measurements were averaged, n = 50 for each particle type. Red represents ICP1-encoded proteins and blue represents phage-inducible chromosomal island-like element (PLE)-encoded proteins. (B) Violin plots showing the roundness of procapsid-like particles assembled from proteins according to legend in E. coli. Roundness was calculated by dividing the length by the width of each particle; thus, a value of 1 represents a perfectly round particle and higher values represent a greater asymmetry of the particle.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) (left) A diagram of the plasmid used in the heterologous PLP assembly platform in E. coli with ICP1-encoded genes show in red, PLE-encoded genes shown in blue. Bent arrow icons indicate Ptac promoters. Six-histidine (6xHis) represents the tag fused to the C-terminus of the coat. Coat variants used are indicated in (B). (A, B) (middle) Representative transmission electron micrographs (TEMs) of resulting purified PLPs produced either without (-) or with (+) protease inhibitors, as indicated. Particles of interest are indicated according to the legend. Scale bars are 200 nm. (Right) Representative Coomassie stained SDS-PAGE analyses of the steps of the affinity-purification process, Labels: L (ladder), S (supernatant [debris spin]), S* (supernatant [particle spin]), P (pellet [particle spin]), FT (flow through), W (wash), 150, 250, 350, 500 (mM imidazole); see ‘Methods’ for details. A subset of the protein standards are marked on the left with their sizes in kDa as indicated (standard: 200, 150, 100, 75, 50, 37, 35, 20, 15, 10 kDa). Protein bands of interest are indicated on the right of the gel (see legend for calculated molecular weights and accessions of these proteins). ICP1’s apparent scaffold cleavage products are indicated by scaffold*.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Representative Coomassie stained SDS-PAGE analyses of the steps of the affinity-purification process showing production of the decoration protein but no incorporation in the PLPs. Labels: UI (uninduced), I (induced), L (ladder), S (supernatant), FT (flow through), W (wash), 150, 250, 350, 500 (mM imidazole). See ‘Methods’ for details. A subset of the protein standards are marked on the left with their sizes in kDa as indicated (standard: 200, 150, 100, 75, 50, 37, 35, 20, 15, 10 kDa). Protein bands of interest are indicated on the right (see legend for calculated molecular weights and accession numbers of these proteins). ICP1’s apparent scaffold cleavage products are indicated by scaffold*.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** A diagram of the plasmid used in the heterologous PLP assembly platform in E. coli with ICP1-encoded genes shown in red and PLE-encoded genes shown in blue. Bent arrow icons indicate Ptac promoters. Six-histidine (6xHis) represents the tag fused to the C-terminus of the coat. The coat variant used is indicated. Representative Coomassie stained SDS-PAGE analyses of the steps of the affinity-purification process, Labels: L (ladder) S (supernatant [debris spin]), S* (supernatant [particle spin]), P (pellet [particle spin]), FT (flow through), W (wash), 150, 250, 350, 500 (mM imidazole), see ‘Methods’ for details. A subset of the protein standards are marked on the left with their sizes in kDa as indicated (standard: 200, 150, 100, 75, 50, 37, 35, 20, 15, 10 kDa). Protein bands of interest are indicated on the right (see legend for calculated molecular weights and accession numbers of these proteins). Representative transmission electron micrographs (TEMs) of resulting purified PLPs produced with corresponding plasmids as indicated. Boxes indicate regions that are enlarged on far right, and scale bars are 500 nm.
 
 Other known satellite systems have varying dependencies on the phage-encoded scaffold and/or additional satellite-encoded factors for the assembly of small procapsids (Damle et al., 2012; Chang et al., 2008; Marvik et al., 1994; Six, 1975). To test whether TcaP requires ICP1’s scaffold to produce small PLPs, we co-expressed coat with either just TcaP or with both TcaP and ICP1’s scaffold simultaneously. First, analysis of the stained SDS-PAGE gel following co-expression of coat and TcaP showed that TcaP bound to coat and was co-eluted (Figure 3A3). TEMs showed that TcaP was sufficient to assemble ICP1’s coat into PLPs that were homogenously PLE-sized (Figure 3A3, Figure 3—figure supplement 1). These data demonstrate that TcaP has scaffolding activity for ICP1’s coat protein and that it does not require additional factors to assemble small PLPs. Next, we constructed a plasmid expressing the scaffold and the coat as they occur natively in ICP1’s genome downstream of one of the promoters. Here, the gene gp123 is present between the scaffold and coat and predicted to encode for the decoration protein. The putative decoration protein was not expected to be incorporated into the PLPs as decoration proteins are typically added after genome packaging, and capsid expansion exposes their binding site, as has been shown for phage Lambda (Lander et al., 2012). In line with this, the stained gel of the resulting purified ICP1-sized PLPs indicated that while the ICP1 scaffold co-eluted with coat-containing complexes as expected, the decoration protein was produced but not incorporated into the assembled particles (Figure 3A4, Figure 3—figure supplement 1). Interestingly, when we co-expressed ICP1 coat, decoration, and scaffold along with TcaP, we did not observe any large particles, suggesting that TcaP is dominant over ICP1’s scaffold (Figure 3A5, Figure 3—figure supplement 1). SDS-PAGE analyses of particles produced in the presence of ICP1’s scaffold and TcaP confirmed the presence of TcaP as well as the phage-encoded scaffold and its cleavage products, suggesting that TcaP does not block the incorporation of ICP1’s scaffold into procapsids (Figure 3A5). This experiment was repeated in the presence of protease inhibitors which eliminated the ICP1 scaffold cleavage products but reproduced the small particle morphology (Figure 3—figure supplement 2B). Collectively, these data demonstrate scaffolding activity for both ICP1’s scaffold and PLE’s TcaP and show that TcaP can assemble small PLPs in the absence or presence of ICP1’s scaffold.
 
 Having observed that TcaP is sufficient to make small PLPs in the heterologous assembly platform as well as when expressed from a plasmid during ICP1 infection, we next tested coatR223H and coatE234K, the previously identified in vivo genetic escapes of TcaP activity (Figure 1E), in the assembly platform. The coatE234K variant was not assembly competent in our heterologous assembly platform (Figure 3—figure supplement 4), so we only continued with the coatR223H variant. As expected, in the absence of any scaffolding proteins, coatR223H formed similar spiral complexes as those observed with the wild type coat (Figure 3B1, Figure 3—figure supplement 1). These data demonstrate that the R223H substitution does not compromise the protein’s ability to bind to itself, nor does the substitution provide a means for the coat to form PLPs independent of a scaffold. Next, we expressed coatR223H with TcaP, anticipating we would observe the formation of large ICP1-sized PLPs because this substitution was sufficient for ICP1 to avoid TcaP’s inhibitory activity (Figure 1E). Unexpectedly, TcaP still directed the assembly of small PLPs comprised of coatR223H (Figure 3B3, Figure 3—figure supplement 1). However, TcaP was not robustly evident in the purified complexes as assessed by SDS-PAGE, and some particles were spirals, similar to those seen when the coat is expressed without a scaffold (Figure 3B3, Figure 3—figure supplement 1). These data suggest that TcaP’s scaffolding activity was partially compromised when the coat protein carried the R223H substitution. We hypothesized that with ICP1’s scaffold the coatR223H proteins could be assembled into ICP1-sized PLPs. Leveraging the dual expression from a single promoter (Figure 3A4), we confirmed that the ICP1 scaffold alone directed the assembly of ICP1-sized PLPs with coatR223H (Figure 3B4, Figure 3—figure supplement 1), but we observed a mix of PLE and ICP1-sized PLPs following addition of TcaP (Figure 3B5, Figure 3—figure supplement 1). We can attribute this phenotype to the substitution in the coat and not to the presence of protease inhibitors used during the purification as the addition of protease inhibitors during purification of the coatwild type co-expressed with the ICP1 scaffold and TcaP resulted in only small PLPs (Figure 3—figure supplement 2B). These data suggest that the R223H substitution in ICP1’s coat can only partially escape TcaP-mediated small capsid formation, but in vivo this level of escape is sufficient to allow for approximately equal levels of viable progeny production as is seen in the absence of TcaP.
 
-## Cryo-EM reveals TcaP is an external scaffold
+### Cryo-EM reveals TcaP is an external scaffold
 
 The data obtained from the assembly of PLPs in E. coli demonstrate that TcaP has scaffolding activity; however, these data do not distinguish between TcaP acting as an internal or an external scaffold. Therefore, we validated the protein content of PLE PLPs produced from co-expression of TcaP and coat by LC-MS/MS and subjected them to cryo-EM. As anticipated, LC-MS/MS confirmed PLE PLPs were comprised of coat and TcaP (Supplementary file 2). Representative micrographs from negatively stained samples (Figure 4A) and vitrified particles (Figure 4B) show a distinctly bumpy surface on the PLE PLPs, suggestive of external proteins. A total of 379,643 particles were used for icosahedral reconstruction of the PLE PLP particle, with a final resolution of 3.4 Å (Figure 4C, Figure 4—figure supplement 1). The external density of the PLPs corresponded to TcaP, demonstrating that it functions as an external scaffold. Internal density was assigned to coat proteins with a canonical HK97-like fold, which exist as pentamers and hexamers within the 48 nm, T = 4 icosahedral PLP. We used AlphaFold2 (Jumper et al., 2021) to predict the structures of the coat protein and TcaP, which were fitted into density from the cryo-EM and aided in modeling nearly all of the coat protein and approximately half of TcaP (residues 34–172) for which only a few side chains could be modeled. As expected, the A-domains of the coat proteins were centered in both pentamers and hexamers. TcaP dimers meet and form trimeric interactions at the threefold axes between hexamers. Broadly, the reconstruction of PLE PLPs shows TcaP functions as an external scaffold and provides context for how TcaP’s higher-order structure regulates the number of coat proteins that can be accommodated within the assembling PLP.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig4-v1.jpg)
+
+**Figure 4.:** (A, B) Representative micrographs from three independent biological replicates from (A) transmission electron and (B) cryo-electron microscopy of phage-inducible chromosomal island-like element (PLE) procapsid-like particle (PLPs) produced from co-expression of ICP1’s coat and PLE’s TcaP. Scale bars are 50 nm. (C) Isosurface reconstruction of PLE PLPs, resolved to 3.4 Å, colored radially (Å) as indicated in the legend. (D) Ribbon model of the solved structure for eight coat proteins, two from the adjacent pentamers (coatA tan) and six in a hexamer (coatB coral, coatC salmon, and coatD pink), and two partial TcaP proteins (TcaPA blue and TcaPB teal). Substituted residues in coat that escape TcaP-mediated remodeling are shown as balls and sticks (magenta for R223 and red for E234) and lie along the region of the hexamer where TcaP binds. Side chains that could not be fully resolved are modeled as alanines. (E) Details of the interactions between TcaP and the coat subunits. Residues in TcaP that contact coat are shown as sticks. For TcaP, the numbers, colored according to their chain, indicate the first and last residue within the region of contact. Distance measurements between residues are shown as dashed lines and measured in Å. Side chains that could not be fully resolved are modeled as alanines. (F) Ribbon model of the solved structure of the partial TcaP dimer, oriented as in panels (D) and (G). (G) Electrostatic potential surface representation of the coat with a ribbon diagram of TcaP show the negative pocket on coatC that is filled by the positively charged arginine from TcaP. Electrostatic potential is calculated using APBS and the coloring is from –5 kT/e (red) to +5 kT/e (blue).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** FSC curve for the icosahedral reconstruction of phage-inducible chromosomal island-like element (PLE) procapsid-like particles. The horizontal dashed line indicates the 0.143 threshold.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Top- and side views of the ribbon models of the solved structure of the phage-inducible chromosomal island-like element (PLE) (left) or P4 (right) (2, PDB 7JW1) procapsid-like particle showing eight coat proteins, two from the adjacent pentamers (tan) and six in a hexamer (two in coral, two in salmon, and two in pink), and two external scaffolding proteins TcaP (A) or Sid (B) (blue and teal). Note that only a fragment of TcaP is shown (34–172 of 298 residues) and side chains that could not be fully resolved are modeled as alanines. (B) Ribbon models of solved TcaP (left) and Sid (right) dimers. The structures are not similar enough to be aligned by MatchMaker in Chimera. (C) Ribbon models of solved TcaP (left) and Sid (right) dimers, colored according to secondary structure: helices (orange), beta sheets (purple).
 
 Further, the reconstruction reveals details of the residues that were substituted in phages that escape TcaP-mediated capsid remodeling (R223H and E234K). Both residues are found in the A-domain which is oriented near the center of the hexamer where TcaP binds (Figure 4D). The arginines at position 223 were clearly visible in the map. Due to the twofold symmetry in the hexamer, there are identical interactions between each half of the hexamer and the TcaP dimer. Importantly, there are three distinct interactions between TcaP and R223 (Figure 4E). First, R223 from coatD is in proximity to TcaP’s residues 87–93, while coatB has R223 positioned near TcaP’s residues 63–70, and R223 from coatC lies close to the second TcaP subunit. In this third interaction, the negatively charged aspartic acid at position 218 from the coat coordinates with the positive charges from the arginine residues from coat (R223) and TcaP (R133) and creates a salt bridge with residues measuring less than 4 Å apart. The electrostatics of the complex, with the TcaP dimer oriented as in Figure 4D and F, show TcaP’s R133 fitting into a negatively charged pocket on the coat (Figure 4G). The side chain for the other residue substituted in the escape phage, E234, could not be confidently modeled, but its localization within the capsid is outside of the TcaP binding region. The exact nature of E234 is not yet clear, but perhaps it has a role in stabilizing the A-domain. Together, these data support the conclusion that ICP1 escapes TcaP’s scaffolding activity by altering the coat to affect TcaP’s binding site.
 
 If ICP1 is under selective pressure to escape PLE-mediated capsid remodeling in nature, ICP1 isolates could be expected to harbor these coat substitutions. However, comparison of the coat alleles from 67 genetically distinct ICP1 isolates revealed no differences within the A-domain of the alleles. These data show that ICP1 does not naturally encode mutations in the A-domain that would escape TcaP-mediated capsid remodeling.
 
-## TcaP is conserved in PLEs
+### TcaP is conserved in PLEs
 
 Having established that PLE1’s TcaP acts as an alternative external scaffold that directs the assembly of ICP1’s coat protein into small capsids, we assessed the conservation of tcaP across genetically distinct PLEs. While PLE1 is the most well-studied PLE, there are nine additional PLEs that have been discovered to date (Angermeyer et al., 2021). Every PLE encodes a tcaP allele in the same locus, which encodes for proteins sharing 62–100% amino acid identity with TcaPPLE1 (Figure 5A, Figure 5—figure supplement 1A). Largely, the regions that contact coat proteins in the PLP are conserved (Figure 5—figure supplement 1C). The conservation of this protein in the 10 PLEs suggests that all PLEs share the TcaP-mediated capsid remodeling strategy.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig5-v1.jpg)
+
+**Figure 5.:** (A) Gene graphs of tcaP and its two neighboring genes, from the 10 known unique PLEs. PLE5’s tcaP, the shortest allele, is shown in light blue, while the other, full-length tcaP alleles are shown in dark blue, and the neighboring genes are shown in gray. Lower scale bar is in nucleotides. Boxes outline regions aligned in (B). (B) Alignment of the region encoding tcaP and their translated products from PLE1 and PLE5 from the boxed regions in panel (A). Nonidentical nucleotides and amino acids are shown in red on the PLE5 sequence, gaps are shown as dashes on either sequence, and stop codons are shown as asterisks. The gray box indicates an in-frame deletion. The blue boxes indicate the notable features of the tcaPPLE5 sequence: the 14-nucleotide deletion that results in the frameshift, the resulting early stop codon, and the ATG and M of the alternative, originally annotated start site, which restores the original reading frame. (C, D) Representative transmission electron micrographs (TEMs) from 2 to 3 independent biological replicates of lysate from ICP1-infected strains of PLE5(+) V. cholerae (C) with an empty vector (pEV), or (D) expressing tcaP from PLE1 (ptcaPPLE1). Scale bars are 100 nm. Arrowheads show capsids and their sizes according to the legend. (E) Efficiency of ICP1 plaquing on V. cholerae expressing tcaP from PLE1 (ptcaPPLE1) or tcaP from PLE5 (ptcaPPLE5) (from the originally annotated start site producing the truncated allele) compared to an empty vector (pEV). Each dot represents a biological replicate, bars represent the mean, and error bars show the standard deviation. The dotted line indicates an efficiency of plaquing of 1, where the expression of TcaP is not inhibitory to plaque formation. (F) Transduction efficiency of the strain indicated relative to PLE1 with an empty vector. Each dot represents a biological replicate, bars represent the mean, and error bars show standard deviation. The dotted line indicates an efficiency of 100%. (G) Alignment of the first nucleotides of the tcaP alleles from the PLE5 variants encoding the ‘ancestral’ (anc) sequences from before 1991, from 2016, or from 2017. The light blue box highlights the 14-nucleotide insertion in the PLE5 sequence from 2017.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87611/elife-87611-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Percent identity between TcaP proteins, calculated in CLC (V.20.0.4). The sequence from TcaP_PLE5_anc (sequences from before 1991) is translated from the second start site relative to TcaP_PLE1. (B) Percent identity between tcaP genes, calculated in CLC (V.20.0.4). The nucleotide sequences start relative to PLE1 for both PLE5 alleles. (C) An alignment of all TcaP protein sequences. Bar height and color indicate conservation. Blue shading indicates regions of TcaP_PLE1 that contact the coat proteins in the procapsid-like particle (PLP).
 
 Curiously, the most divergent tcaP allele, tcaPPLE5, is 237 nucleotides (~26%) shorter than tcaPPLE1 due to an apparent truncation of the N-terminal coding region. However, a nucleotide alignment of the tcaPPLE1 sequence with the tcaPPLE5 5′-UTR through the end of the coding sequence revealed two small deletions, one of which results in a frameshift and premature stop codon in the tcaPPLE5 allele (Figure 5A and B). The alternative start site downstream of the deletions would restore the original reading frame for tcaPPLE5 (Figure 5B). Given the conservation of full-length tcaP alleles in other PLEs, and the structural data highlighting interactions between the TcaPPLE1 with ICP1’s coat proteins, we assessed if the truncated TcaPPLE5 was functional to redirect ICP1 virion assembly.
 
@@ -99,35 +147,325 @@ PLE is a unique satellite and its helper phage ICP1 is also dissimilar from othe
 
 ## Materials and methods
 
-## Bacterial growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (V. cholerae)</td>
+      <td>ptcaPPLE1</td>
+      <td>This paper</td>
+      <td>CMB2</td>
+      <td>V. cholerae E7946 pKL06 PtacRiboE4-tcaP (PLE1); strepR1, cmR2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (V. cholerae)</td>
+      <td>pEV5</td>
+      <td>This paper</td>
+      <td>CMB3</td>
+      <td>V. cholerae E7946 pKL06 Ptac RiboE-Empty Vector; strepR, cmR</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (V. cholerae)</td>
+      <td>ptcaPPLE5</td>
+      <td>This paper</td>
+      <td>CMB41</td>
+      <td>V. cholerae E7946 pKL06 Ptac RiboE-tcaP (PLE5); strepR, cmR</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (V. cholerae)</td>
+      <td>PLE1∆tcaP pEV</td>
+      <td>This paper</td>
+      <td>CMB71</td>
+      <td>V. cholerae E7946 PLE1::kanR∆tcaP pKL06 PtacRiboE-EV; strepR, cmR, kanR3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (V. cholerae)</td>
+      <td>PLE1∆tcaP ptcaPPLE1</td>
+      <td>This paper</td>
+      <td>CMB73</td>
+      <td>V. cholerae E7946 PLE1::kanR∆tcaP pKL06 PtacRiboE-tcaP (PLE1); strepR, cmR, kanR</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Escherichia coli)</td>
+      <td>pcoat::6xHis, pEV</td>
+      <td>This paper</td>
+      <td>CMB548</td>
+      <td>E. coli BL21 pETDUET6 Ptac-gp122::6xHis, Ptac-EV</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pcoat::6xHis, ptcaP</td>
+      <td>This paper</td>
+      <td>CMB555</td>
+      <td>E. coli BL21 pETDUET Ptac-gp122::6xHis, Ptac-tcaP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pcoat::6xHis, pscaffold</td>
+      <td>This paper</td>
+      <td>CMB560</td>
+      <td>E. coli BL21 pETDUET Ptac-gp122::6xHis, Ptac-gp124</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pscaffold-decoration-coat::6xHis, ptcaP</td>
+      <td>This paper</td>
+      <td>CMB562</td>
+      <td>E. coli BL21 pETDUET Ptac-gp124-gp123-gp122::6xHis, Ptac-tcaP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pscaffold-decoration-coat::6xHis, pEV</td>
+      <td>This paper</td>
+      <td>CMB568</td>
+      <td>E. coli BL21 pETDUET Ptac-gp124-gp123-gp122::6xHis, Ptac-tcaP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (V. cholerae)</td>
+      <td>PLE1 pEV</td>
+      <td>This paper</td>
+      <td>CMB577</td>
+      <td>V. cholerae E7946 PLE1::kanR pKL06.2 PtacRiboE-EV; strepR, cmR, kanR3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (V. cholerae)</td>
+      <td>PLE5 pEV</td>
+      <td>This paper</td>
+      <td>CMB579</td>
+      <td>V. cholerae E7946 PLE5::kanR pKL06.2 PtacRiboE-EV; strepR, cmR, kanR3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (V. cholerae)</td>
+      <td>PLE5 ptcaP PLE1</td>
+      <td>This paper</td>
+      <td>CMB581</td>
+      <td>V. cholerae E7946 PLE5::kanR pKL06.2 PtacRiboE-tcaP(PLE1); strepR, cmR, kanR3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pscaffold-decoration-coat R223H::6xHis, pEV</td>
+      <td>This paper</td>
+      <td>CMB603</td>
+      <td>E. coli BL21 pETDUET Ptac-gp124-gp123-gp122R223H::6xHis, Ptac-EV</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pscaffold-decoration-coat R223H::6xHis, ptcaP</td>
+      <td>This paper</td>
+      <td>CMB604</td>
+      <td>E. coli BL21 pETDUET Ptac-gp124-gp123-gp122R223H::6xHis, Ptac-tcaP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pcoat R223H::6xHis, pEV</td>
+      <td>This paper</td>
+      <td>CMB605</td>
+      <td>E. coli BL21 pETDUET Ptac-gp122R223H::6xHis, Ptac-EV</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pcoatR223H::6xHis, ptcaP</td>
+      <td>This paper</td>
+      <td>CMB606</td>
+      <td>E. coli BL21 pETDUET Ptac-gp122R223H::6xHis, Ptac-tcaP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pcoat::6xHis, ptcaP; pcoat</td>
+      <td>This paper</td>
+      <td>CMB609</td>
+      <td>E. coli BL21 pETDUET Ptac-gp122::6xHis, Ptac-tcaP and pCDFDuet Ptac-gp122</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pcoat E234K::6xHis, pEV</td>
+      <td>This paper</td>
+      <td>CMB574</td>
+      <td>E. coli BL21 pETDUET Ptac-gp122E234K::6xHis, Ptac-EV</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pcoat E234K::6xHis, ptcaP</td>
+      <td>This paper</td>
+      <td>CMB575</td>
+      <td>E. coli BL21 pETDUET Ptac-gp122E234K::6xHis, Ptac-tcaP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pcoat E234K::6xHis, pscaffold</td>
+      <td>This paper</td>
+      <td>CMB576</td>
+      <td>E. coli BL21 pETDUET Ptac-gp122E234K::6xHis, Ptac-gp124</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (bacteriophage ICP1)</td>
+      <td>ICP1 wild type</td>
+      <td>McKitterick et al., 2019</td>
+      <td>KSΦ49</td>
+      <td>ICP1_2011_Dha_A ∆spacer 9 (accession: MH310933)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (bacteriophage ICP1)</td>
+      <td>ICP1 coat R223H</td>
+      <td>This paper</td>
+      <td>Phage 1, DDΦ78</td>
+      <td>ICP1_2011_Dha_A ∆spacer 9 Gp122R223H</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (bacteriophage ICP1)</td>
+      <td>ICP1 coat E234K</td>
+      <td>This paper</td>
+      <td>Phage 2, DDΦ79</td>
+      <td>ICP1_2011_Dha_A ∆spacer 9 Gp122E234K</td>
+    </tr>
+    <tr>
+      <td>Gene (bacteriophage ICP1) MH310933</td>
+      <td>gp122; coat</td>
+      <td>N/A</td>
+      <td>Locus tag: ICP12011A_121protein accession: AXY82215.1</td>
+      <td>Major capsid protein</td>
+    </tr>
+    <tr>
+      <td>Gene (bacteriophage ICP1) MH310933</td>
+      <td>gp123; decoration</td>
+      <td>N/A</td>
+      <td>Locus tag: ICP12011A_122protein accession: AXY82216.1</td>
+      <td>Capsid decoration protein</td>
+    </tr>
+    <tr>
+      <td>Gene (bacteriophage ICP1) MH310933</td>
+      <td>gp124; scaffold</td>
+      <td>N/A</td>
+      <td>Locus tag: ICP12011A_123protein accession: AXY82217.1</td>
+      <td>Capsid assembly scaffolding protein</td>
+    </tr>
+    <tr>
+      <td>Gene (V. cholerae) KC152960.1</td>
+      <td>orf17; tcaP (PLE1)</td>
+      <td>N/A</td>
+      <td>Locus tag: orf17 protein accession: AGG09411.1</td>
+      <td>Satellite external scaffolding protein</td>
+    </tr>
+    <tr>
+      <td>Gene (V. cholerae) CP001236.1</td>
+      <td>orf17; tcaP (PLE5_2008)</td>
+      <td>N/A</td>
+      <td>Locus tag: VC395_ A0477Protein accession: ACP11313.1</td>
+      <td>Satellite external scaffolding protein</td>
+    </tr>
+    <tr>
+      <td>Gene (V. cholerae) CP045718.1</td>
+      <td>orf17; tcaP (PLE5_2016)</td>
+      <td>N/A</td>
+      <td>Locus tag: GG844_ 03730Protein accession: QGF30303.1</td>
+      <td>Satellite external scaffolding protein</td>
+    </tr>
+    <tr>
+      <td>Gene (V. cholerae)Assembly: GCF_007050395.1</td>
+      <td>orf17; tcaP (PLE5_2017)</td>
+      <td>N/A</td>
+      <td>Locus tag: DM782_ RS18270Protein accession: WP_001912195.1</td>
+      <td>Satellite external scaffolding protein</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II DNA Library preparation kit</td>
+      <td>New England Biolabs</td>
+      <td>NEB #E7645, E7103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy blood and tissue DNA purification kit</td>
+      <td>QIAGEN</td>
+      <td>QIAGEN 69506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC</td>
+      <td>Punjani et al., 2017</td>
+      <td>cryoSPARC v4.0.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>Kimanius et al., 2021</td>
+      <td>RELION 4.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold2</td>
+      <td>Jumper et al., 2021</td>
+      <td>AlphaFold2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>Liebschner et al., 2019</td>
+      <td>Phenix</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley et al., 2010</td>
+      <td>COOT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pyem</td>
+      <td>Asarnow et al., 2019</td>
+      <td>Pyem</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial growth conditions
 
 V. cholerae and E. coli were propagated at 37°C on LB agar or in LB broth with aeration. Where needed, antibiotics were used at the following concentrations: streptomycin 100 µg/mL, kanamycin 75 µg/mL, spectinomycin 100 µg/mL, chloramphenicol 2.5 µg/mL (solid media) or 1.25 µg/mL (liquid media) for V. cholerae and 25 µg/mL for E. coli, and carbenicillin 50 µg/mL.
 
-## Strain construction
+### Strain construction
 
 V. cholerae carrying PLE1 marked with a kanamycin resistance cassette downstream of the last ORF (O’Hara et al., 2017) was made naturally competent and transformed with DNA fragments containing a spectinomycin resistance marker flanked by frt recombinase sites assembled to up and downstream regions of homology by splicing by overlap extension PCR as previously described (Dalia et al., 2014). Spectinomycin-resistant transformants were transformed with a plasmid carrying an FLP recombinase which was induced by 1 mM isopropyl-β-d-thiogalactopyranoside (IPTG) (Fischer BioReagents, 367-93-1) and 1.5 mM theophylline (Sigma, T1633-100G), allowing for the removal of the spectinomycin resistance cassette via recombination, resulting in an in-frame deletion. The strains were cured of the plasmid, and deletions were confirmed by PCR and Sanger sequencing.
 
 Plasmid constructs were assembled using Gibson Assembly and transformed into E. coli BL21 or mated into V. cholerae via E. coli S17. A list of strains used in this study can be found in the Key resources table. Plasmids in V. cholerae have a Ptac promoter downstream of a theophylline sensitive riboswitch. A list of oligos used in this study can be found in Supplementary file 3.
 
-## ICP1 plaque assays
+### ICP1 plaque assays
 
 Overnight cultures of V. cholerae were diluted to OD600 = 0.05 and grown in LB (supplemented with antibiotics where appropriate) with aeration at 37°C either directly to OD600 = 0.3 or to OD600 = 0.2 then induced with 1 mM IPTG and 1.5 mM theophylline for 20 min to reach OD600 = 0.3, then mixed with pre-diluted phage samples. Phage attachment was allowed for 7–10 min prior to plating in 0.5% molten top agar (supplemented with antibiotics and inducer where appropriate) followed by overnight incubation at 37°C. Resulting individual plaques were counted.
 
-## ICP1 mutant purification and whole-genome sequencing
+### ICP1 mutant purification and whole-genome sequencing
 
 V. cholerae carrying a plasmid encoding tcaP was used in a plaque assay as described above. As a control, ICP1_2011_Dha_A was used to infect V. cholerae expressing an empty vector. Plaques that formed on the tcaP-expressing strain were picked and purified on that strain two more times by plaque assay. High-titer phage stocks were prepared by sodium chloride (1 mM) polyethylene glycol 8000 (10%) precipitation or by centrifugation (26,000 × g for 90 min) and stored in STE (5 mM Tris pH 8.0, 100 mM NaCl, 1 mM EDTA). Prior to collecting genomic DNA (gDNA), phage stocks were treated with DNase for 30 min at 37°C to remove non-encapsidated DNA, then the enzyme was heat inactivated. gDNA was collected using a QIAGEN DNeasy blood and tissue DNA purification kit (QIAGEN, 69506) according to the manufacturer’s protocols and genomic libraries were prepared for Illumina sequencing using the NEBNext Ultra II DNA Library preparation kit (NEB #E7645, E7103) as described in the manufacturer’s protocols. Using an Illumina HiSeq4000 (University of California, Berkeley QB3 Core Facility), samples were sequenced by paired-end (2 × 150 bp). The genomes were assembled using SPAdes and analyzed using BreSeq (v0.33).
 
-## Virion production for TEM and/or transduction
+### Virion production for TEM and/or transduction
 
 50 mL cultures of V. cholerae strains carrying plasmids were grown and induced as described above. ICP1 was added at a multiplicity of infection (MOI) of 2.5 and cultures were incubated until lysis (30–90 min). 1 mL of lysate was used for transduction assays (see below). Remaining lysates were concentrated by centrifugation at 26,000 × g for 90 min, resuspended in Phage Buffer 2.0 (50 mM Tris–HCl, 100 mM NaCl, 10 mM MgSO4, 1 mM CaCl2) overnight, treated 1:1 with chloroform (Fisher Scientific, C606-1) for 15 min, and centrifuged at 5000 × g for 15 min. The aqueous layer was collected and 5 µL was applied to a grid for TEM.
 
 PLE transduction assays were carried out as previously described (Netter et al., 2021; O’Hara et al., 2017). Briefly, 1 mL of lysates from strains carrying PLE marked with a kanamycin resistance cassette downstream of the last ORF were treated with 10 µL chloroform, which was removed, along with bacterial debris, by centrifugation at 5000 × g for 15 min. The supernatant was collected and mixed 10:100 with a saturated overnight culture of spectinomycin resistant recipient V. cholerae cells (∆lacZ::specR) supplemented with 10 mM MgSO4 immediately prior to transduction. Recipients were incubated with lysates for 20 min at 37°C with shaking (220 rpm) and then serially tenfold diluted. The resulting dilutions were plated on LB agar plates supplemented with spectinomycin and kanamycin. A colony represents one PLE virion/transducing unit.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 For the preparation of grids, 5 µL samples were incubated on a copper mesh grid (Formvar/Carbon 300, Electron Microscopy Sciences) for 60 s, wicked, immediately washed with sterile ddH2O for 15 s, wicked, immediately stained with 1% uranyl acetate (Electron Microscopy Sciences, 22400-1) for 30 s, wicked and allowed to dry completely. Micrographs were collected with a FEI Tecnai-12 electron microscope operating at 120 kV.
 
-## Production and purification of PLPs
+### Production and purification of PLPs
 
 Using Gibson Cloning, the coat gene fused to 6xHis was inserted into the pETDUET vector or the untagged coat was cloned into pCDFDuet. Either the ICP1 or PLE scaffold proteins were similarly inserted via Gibson Assembly downstream of a second T7 promoter. In other variations of this plasmid, the genes were cloned with the intergenic sequences found in ICP1_2011_Dha_A. The pETDUET constructs were transformed into E. coli BL21 and grown on LB agar or in LB broth supplemented with carbenicillin (50 µg/mL). To reduce aggregation of PLE PLPs for cryo-EM, a pETDUET construct encoding gp122::6xhis and tcaP was co-transformed with a pCDFDuet construct expressing gp122 (untagged), grown on LB agar or in LB broth supplemented with carbenicillin (50 µg/mL) and streptomycin (100 µg/mL). For protein production, overnight cultures were diluted 1:100 in 0.5–1 L, grown to OD600 = 0.2–0.4, induced with 1 mM IPTG for 3–5 hr, and collected by centrifugation at 4000 × g for 20 min at 4°C. Pellets were then resuspended in 10% of the volume of Phage Purification Buffer (Phage Buffer 2.0 supplemented with 20 mM imidazole, 1 mM BME, and protease and phosphatase inhibitors [Cat# A32961/A32965, Pierce]), and frozen at –80°C. For protein purification, frozen samples were thawed, sonicated, and centrifuged at 12,000 × g for 60–90 min to remove membranes and debris. The particles were then pelleted at 26,000 × g for 90 min. The pellet was nutated overnight in Phage Purification Buffer, and the nutate was loaded onto a column packed with HisPur nickel-nitrilotriacetic acid (Ni-NTA) resin (Cat# PI88222, Thermo Scientific) pre-equilibrated with ice-cold Phage Purification Buffer. After two passes over the column, the flow-through was collected and the column was washed with wash buffer (Phage Buffer 2.0 supplemented with 50 mM imidazole, 1 mM BME, and 10% glycerol). Proteins were then eluted with one column volume of Elution Buffers 1–3 (Phage Buffer 2.0 supplemented with 1 mM BME and 10% glycerol and 150, 250, or 350 mM imidazole) and a final six column volume elution with Elution Buffer 4 (Phage Buffer 2.0 supplemented with 1 mM BME and 10% glycerol and 500 mM imidazole). For all experiments with coatR223H and the noted replicates of wild type coat, decoration, scaffold, and TcaP, protease and phosphatase inhibitors were added to all purification and elution buffers. Aliquots of the fractions were either boiled in Laemmli buffer and assessed by SDS-PAGE stained with Coomassie or applied to a grid and imaged by TEM.
 
@@ -135,7 +473,7 @@ Cesium chloride-based purification following affinity purification was carried o
 
 Size-exclusion purifications were carried out as follows. Lysates were prepared as described above and particles were pelleted and nutated in Phage Buffer 2.1 (same as Phage Buffer but with pH 7.4). The nutate was then spun at 12,000 × g for 10 min to remove aggregates then applied to an AKTA HiPrep 16/60 Sephacryl S-500 HR (Cat# 28935606, Cytiva) column and passed through at a flow rate of 0.5 mL/min. Protein content from elution peaks was assessed by SDS-PAGE/Coomassie, and samples containing PLE PLPs (elutions at 26–32 mL) were concentrated by centrifugation at 26,000 × g for 90 min, resuspended in ~100–500 µL Phage Buffer 2.0, and prepared for cryo-EM.
 
-## Cryo-EM sample preparation and data acquisition
+### Cryo-EM sample preparation and data acquisition
 
 Cryo-EM samples were prepared by applying 5 μL aliquots of purified PLE PLPs to R2/2 Quantifoil grids and R2/2 Quantifoil grids coated with 2 nm ultrathin Carbon (QUANTIFOIL) that had been glow discharged for 45 s in a Pelco Easiglow glow discharging unit. The samples were plunge frozen in liquid ethane using a Vitrobot Mark IV operated at 4°C and 100% humidity, with a blot force of 1 and 5 s of blotting time per grid. The grids were screened at RTSF Cryo-EM facility using a Talos Arctica equipped with a Falcon 3EC direct electron detector and Cryo-EM data were collected at Purdue Cryo-EM facility using a Titan Krios equipped with a K3 direct electron detector, and operating at 300 keV with a post-column GIF (20 eV slit width) under low-dose conditions. Micrographs were collected at 64,000× nominal magnification (0.664 Å/pixel) by recording 40 frames over 3.1 s for a total dose of 36.41 e-/Å2.
 
@@ -143,6 +481,6 @@ Data processing for icosahedral reconstruction of PLE procapsids was carried out
 
 AlphaFold2 (Jumper et al., 2021) was used to generate homology models for all modeled protein chains. Initial models were then docked into EM maps for further refinement. For TcaP, only residues 34–172 were modeled. Refinement was carried out using Phenix (Liebschner et al., 2019) and model adjustments were carried out in COOT (Emsley et al., 2010). Model parameters were monitored using Molprobity in Phenix, and the values are listed in Figure 4—source data 2.
 
-## Mass spectrometry
+### Mass spectrometry
 
 PLE and ICP1 PLPs subjected to mass spectrometry were further concentrated by trichloroacetic acid (TCA) precipitation, washed (10 mM HCl 90% acetone) three times, and air dried. The pellets were then resuspended in 100 mM Tris pH 8.5, 8 M urea, digested by trypsin, and analyzed by LC-MS/MS (Thermo LTQ XL linear ion trap mass spectrometer at the Vincent J. Coates Proteomics/Mass Spectrometry Laboratory at UC Berkeley). A sequence database containing E. coli proteins as well as ICP1 coat, scaffold, and decoration, as well as PLE TcaP, were used to compare the masses recorded and identify proteins in the sample.

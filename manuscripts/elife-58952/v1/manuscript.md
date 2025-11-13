@@ -13,7 +13,7 @@
 
 ## Abstract
 
-Astrocytes exhibit spatially-restricted near-membrane microdomain Ca 2+ transients in their fine processes. How these transients are generated and regulate brain function in vivo remains unclear. Here we show that Drosophila astrocytes exhibit spontaneous, activity-independent microdomain Ca 2+ transients in their fine processes. Astrocyte microdomain Ca 2+ transients are mediated by the TRP channel TrpML, stimulated by reactive oxygen species (ROS), and can be enhanced in frequency by the neurotransmitter tyramine via the TyrRII receptor. Interestingly, many astrocyte microdomain Ca 2+ transients are closely associated with tracheal elements, which dynamically extend filopodia throughout the central nervous system (CNS) to deliver O 2 and regulate gas exchange. Many astrocyte microdomain Ca 2+ transients are spatio-temporally correlated with the initiation of tracheal filopodial retraction. Loss of TrpML leads to increased tracheal filopodial numbers, growth, and increased CNS ROS. We propose that local ROS production can activate astrocyte microdomain Ca 2+ transients through TrpML, and that a subset of these microdomain transients promotes tracheal filopodial retraction and in turn modulate CNS gas exchange.
+Astrocytes exhibit spatially-restricted near-membrane microdomain Ca2+transients in their fine processes. How these transients are generated and regulate brain function in vivo remains unclear. Here we show that Drosophila astrocytes exhibit spontaneous, activity-independent microdomain Ca2+ transients in their fine processes. Astrocyte microdomain Ca2+ transients are mediated by the TRP channel TrpML, stimulated by reactive oxygen species (ROS), and can be enhanced in frequency by the neurotransmitter tyramine via the TyrRII receptor. Interestingly, many astrocyte microdomain Ca2+ transients are closely associated with tracheal elements, which dynamically extend filopodia throughout the central nervous system (CNS) to deliver O2 and regulate gas exchange. Many astrocyte microdomain Ca2+ transients are spatio-temporally correlated with the initiation of tracheal filopodial retraction. Loss of TrpML leads to increased tracheal filopodial numbers, growth, and increased CNS ROS. We propose that local ROS production can activate astrocyte microdomain Ca2+ transients through TrpML, and that a subset of these microdomain transients promotes tracheal filopodial retraction and in turn modulate CNS gas exchange.
 
 ## Introduction
 
@@ -25,15 +25,31 @@ In this study, we report that Drosophila astrocytes exhibit spontaneous, activit
 
 ## Results
 
-## Drosophila astrocytes exhibit microdomain Ca2+ transients
+### Drosophila astrocytes exhibit microdomain Ca2+ transients
 
 To monitor the near-membrane Ca2+ activity in astrocytes, we expressed myristoylated GCaMP5a (myr-GCaMP5a) in astrocytes using the astrocyte-specific alrm-Gal4 driver. We acutely dissected 3rd instar larval CNS and live-imaged myr-GCaMP5a signals in the ventral nerve cord (VNC) (Ma et al., 2016). We collected images at the midpoint of the neuropil along the dorsoventral axis for 6 min time windows (Figure 1A). We found that astrocyte microdomain Ca2+ transients exhibited diverse waveforms, with variable durations and frequencies (Figure 1A; Figure 1—video 1). The average full width at half maximum (FWHM) for these Ca2+ transients was 5.5 ± 2.26 (mean ± SD) seconds (Figure 1B). Microdomain Ca2+ transients frequently occurred at the same location, suggesting there are hotspots where microdomains repeatedly occur for a given astrocyte. The majority of foci exhibited 1–3 events during the 6 min imaging window (Figure 1C), and Ca2+ transients at different sites did not exhibit obvious synchrony with one another. We also observed microdomain Ca2+ transients of a similar rise-and-fall pattern, although with a slightly shorter duration (FWHM, 1.7 ± 0.08 s, mean ± SD) in the astrocytes of intact L1 (1st instar) larvae (Figure 1- Figure 1—figure supplement 1A and B; Figure 1—video 2), suggesting the microdomain Ca2+ transients in the acute CNS preparations we observed largely reflect in vivo astrocyte activity, although with some differences in duration. Blockade of action potential firing with tetrodotoxin did not alter astrocyte microdomain Ca2+ transients, although they were eliminated by removal of extracellular Ca2+ and were sensitive to the Ca2+ channel blocker lanthanum chloride (LaCl3) (Figure 1D), suggesting Ca2+ entry from extracellular space is essential for generation of astrocyte microdomain Ca2+ transients.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58952/elife-58952-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of larval CNS (white area, neuropil; gray, cortex). An imaging area showing membrane tethered myr-GCaMP5a (green) in astrocytes, in which microdomain Ca2+ transients during 6 min were maximally projected. Traces of 8 individual ROIs microdomains (right, a–h) are shown over the entire 6 min window. Pseudocolor grayscale of Ca2+ signals (bottom left), grayscale values ranging from 0 to 255 (scale bars, 20 µm). Representative time-lapse images (bottom right) of two indicated microdomain Ca2+ transients in 2 ROIs (1, 2). (B) Superimposed traces of individual microdomain Ca2+ transients and an average with its full width at half maximum (FWHM, mean ± SD). (C) Histogram showing the distribution of recurrent microdomain Ca2+ transients at same ROIs. (D) Responses of microdomain Ca2+ transients to tetrodotoxin, 0 extracellular Ca2+ and LaCl3 (n = 6, mean ± SEM, one-way ANOVA). (E) 2-color Ca2+ imaging in neighboring astrocytes. In presence of the flippase repo-FLP, myr-GCaMP5a expressing astrocytes switch to express myr-R-GECO1, resulting in 3 types of astrocytes: myr-GCaMP5a+ (green), myr-R-GECO1+ (red), expressing both indicators (orange) (scale bar, 20 µm). Quantification is from Ca2+ imaging of myr-GCaMP5a and myr-R-GECO1 that were exclusively expressed in adjacent astrocytes (n = 3, unpaired t-test). Time-lapse images and superimposed traces of representative microdomain Ca2+ transients at two juxtaposed ROIs between myr-GCaMP5a and myr-R-GECO1 expressing astrocytes. See source data Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58952/elife-58952-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Astrocytes expressing myr-GCaMP5a in the ventral nerve cord of 1st instar larvae. Traces of 8 representative microdomain Ca2+ transients. (B) Superimposed traces of individual microdomain Ca2+ transients and an average showing its full width at half maximum (FWHM, mean ± SD). (C) Schematic of inducing 2-color Ca2+ indicators mosaic expression in neighboring astrocytes (green, red, orange). (D) Two representative microdomain Ca2+ transients in dual-labeled myr-GCaMP5a/myr-R-GECO1 astrocytes. Note that both myr-GCaMP5a and myr-R-GECO1 exhibit similar dynamics in the same astrocyte.
+
 Astrocytes tile with one another and occupy unique spatial domains in the CNS. We sought to determine whether microdomain Ca2+ transients spanned astrocyte-astrocyte cell boundaries, or if they appeared only within the domain of single cells. We used a flippable construct expressing either QF or Gal4 under the control of the alrm promoter, along with two genetically encoded Ca2+ indicators: QUAS::myr-GCaMP5a and UAS::myr-R-GECO1 (Figure 1—figure supplement 1 - Figure 1C). To confirm both myr-GCaMP5a and myr-R-GECO1 behaved similarly, we first examined double-positive cells and found both can detect the same microdomain Ca2+ transients (Figure 1—figure supplement 1 - Figure 1D), and in cells exclusively expressing one of these two Ca2+ indicators there were no differences in the overall frequency of the microdomain Ca2+ events detected between these sensors (Figure 1E). We then identified cell boundaries between myr-GCaMP5a/myr-R-GECO1 single-labeled cells, and examined the dynamics of astrocyte microdomains across those boundaries. We observed coincident signaling with myr-GCaMP5a and myr-R-GECO1 (Figure 1E). These data indicate that individual astrocyte microdomain Ca2+ transients can span astrocyte-astrocyte borders. Our observations support the notion that astrocyte microdomain Ca2+ transients are regulated by extrinsic cues that can simultaneously stimulate two astrocytes, or that astrocyte-astrocyte communication/coupling is sufficient to coordinate very local Ca2+ signaling events across neighboring cells.
 
-## Astrocyte microdomain Ca2+ transients are enhanced by tyramine through TyrRII and mediated by TrpML
+### Astrocyte microdomain Ca2+ transients are enhanced by tyramine through TyrRII and mediated by TrpML
 
 To determine whether neurotransmitters were capable of modulating astrocyte microdomain Ca2+ transients, we bath applied several neurotransmitters and live-imaged astrocyte microdomain Ca2+ events. Application of glutamate, acetylcholine, GABA, or octopamine had no effect on the frequency of astrocyte microdomain Ca2+ transients (Figure 2A). In contrast, application of tyramine led to a significant increase in the frequency of these transients by ~40% (Figure 2B). We screened the known receptors for tyramine in Drosophila and found that astrocyte-specific depletion of TyrRII blocked the ability of tyramine to increase astrocyte microdomain Ca2+ transients. The spontaneous microdomain events were not dependent on the presence of tyramine or octopamine, as mutants that block the production of tyramine and octopamine (Tdc2RO54) or octopamine (TβhnM18) did not significantly alter the frequency of astrocyte microdomain Ca2+ transients, nor did mutations in Oct-TyrR, which we previously showed was essential for activation of whole-cell Ca2+ transients in astrocytes (Figure 2C). These data indicate that while astrocyte microdomain Ca2+ transients can be partially enhanced by tyramine through TyrRII, under basal conditions astrocytes do not require tyramine or octopamine for microdomain Ca2+ transient activity.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58952/elife-58952-fig2-v1.jpg)
+
+**Figure 2.:** (A) Responses of microdomain Ca2+ transients (frequency) to glutamate (Glu), acetylcholine (Ach), γ-aminobutyric acid (Gaba), tyramine (Tyr), octopamine (Oct) in presence of tetrodotoxin. (B) Effect of tyramine on Ca2+ transient frequency in genotypes indicated. Oct-TyrR mutants, and astrocyte-specific (alrm>) expression of RNAis to TyrR or TyrRII (in A and B, n = 6, mean ± SEM, paired t-test). (C) Quantification of microdomain Ca2+ transients in Tdc2RO54, TβhnM18 or Oct-TyrRhono mutants (n = 6, mean ± SEM, one-way ANOVA). (D) Maximally projected astrocyte microdomain Ca2+ transients during 6 min in control, trpml1 mutants, and astrocyte-specific trpmlRNAi (in pseudocolor, grayscale values ranging from 0 to 255. scale bar, 20 µm). Quantification of microdomain Ca2+ transients in mutants (loss-of-function mutations or astrocyte-specific RNAi driven by alrm-Gal4) of genes encoding TRP family ion channels (n = 6, mean ± SEM, one-way ANOVA). (E) trpml-myc expression in astrocytes rescues microdomain Ca2+ transients in trpml1 mutants (n = 6, mean ± SEM, one-way ANOVA). (F) Effect of tyramine treatment on controls and trpml1 mutants (n = 6, mean ± SEM, one-way ANOVA. within groups, paired t-test). Right panel, increase in transients by tyramine (subtracting the basal included) in control and trpml1 mutants. (G) Application of the antioxidant N-acetyl cysteine (NAC) or H2O2 to the larval CNS. (for F and G n = 6, mean ± SEM, across groups, one-way ANOVA; within groups, paired t-test; -, + indicate pre-, post-delivery). (H) H2O2 application to control and trpml mutants shows that H2O2-dependent increases require TrpML. See source data Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58952/elife-58952-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Quantification of microdomain Ca2+ transients in intact control and trpml1 mutant larvae at 1st instar stage (n = 6, mean ± SEM, t-test). (B) Average amplitude of microdomain Ca2+ transients in genotypes as indicated (n = 6, mean ± SEM, one-way ANOVA). (C) Tyramine- induced soma Ca2+ rise measured in GCaMP6s intensity (n = 70–73 cells from six larval CNS in each genotype, mean ± SEM, t-test). (D) Gross astrocyte morphology in control and trpml1. (E) trpml1 mutant larvae with trpml-myc expression in astrocytes survived to adulthood (n = 3, each n contains 20–40 larvae, mean ± SEM, t-test). (F) Double-labeling TrpML-MYC with a marker for cell membrane (mCD8-GFP) or lysosomes (GFP-Lamp1). Dash lines, cell bodies. Arrows, TrpML-MYC/GFP-Lamp1 colocalization. See source data Figure 2—source data 2.
 
 Whole-cell astrocyte transients are regulated by the TRP channel Water witch (Wtrw) (Ma et al., 2016), and astrocyte basal Ca2+ levels in mammals are modulated by TrpA1 (Shigetomi et al., 2013). The molecular pathways that generate astrocyte microdomain Ca2+ transients have not been identified. We speculated that astrocyte microdomain Ca2+ transients might be regulated by one or more of the 13 TRP channels encoded in the Drosophila genome. We screened these for potential roles in the regulation of astrocyte microdomain Ca2+ transients in animals bearing TRP channel mutations or astrocyte-specific RNAi targeting trp family genes. While knockout of 11 of these TRP channels had no effect, we found that microdomain Ca2+ events decreased by ~70% to 80% in trpml loss-of-function mutants, in both intact 1st instar larvae (Figure 2—figure supplement 1 - Figure 2A) and acute CNS preparations from 3rd instar larvae (Figure 2D; Figure 2—video 1). Astrocyte-specific knockdown of trpml also reduced microdomain Ca2+ events by ~60% (Figure 2D), and expressing a version of myc-tagged TrpML (trpml-myc) in astrocytes rescued decreased microdomains in trpml mutants (Figure 2E; Figure 2—figure supplement 1 - Figure 2D), arguing for a cell-autonomous role of TrpML in regulating astrocyte microdomain Ca2+ transients. Although application of tyramine still increased microdomain Ca2+ events in trpml1 mutants, the enhancement above the basal level of spontaneous microdomain Ca2+ transients was significantly reduced (Figure 2F), suggesting tyramine enhances microdomains in frequency at least in part via TrpML.
 
@@ -41,17 +57,33 @@ We next examined whether TrpML was essential for tyramine activated Ca2+ events 
 
 Previous work has shown that reactive oxygen species (ROS) can activate TrpML (Zhang et al., 2016), and astrocyte near-membrane Ca2+ events in mammals are sensitive to ROS (Agarwal et al., 2017). We therefore assayed the sensitivity of Drosophila astrocyte microdomain Ca2+ transients to ROS. We observed that bath application of the ROS generator hydrogen peroxide (H2O2) led to a TrpML-dependent increase in astrocyte microdomain Ca2+ events, while, reciprocally, addition of the antioxidant N-acetyl cysteine completely abolished them (Figure 2G and H; Figure 2—videos 2 and 3). These data indicate that astrocyte microdomain Ca2+ transients are mediated by TrpML and are highly sensitive to ROS. Furthermore, our observation that TrpML and Wtrw regulate only microdomain or whole-cell Ca2+ events, respectively, demonstrates that astrocyte microdomain Ca2+ transients and whole-cell changes in astrocyte Ca2+ are physiologically and genetically distinct signaling events, although adrenergic transmitters (tyramine in Drosophila and norepinephrine in mouse) may serve as factors to coordinate their activity.
 
-## Astrocyte microdomain Ca2+ transients are associated with trachea and precede tracheal filopodia retraction
+### Astrocyte microdomain Ca2+ transients are associated with trachea and precede tracheal filopodia retraction
 
 Mammalian astrocytes make intimate contacts with blood vessels by forming endfeet to allow for gas exchange, uptake of nutrients from blood, and maintenance of the blood brain barrier. Fine astrocyte processes in Drosophila infiltrate the CNS neuropil where they associate with neural processes, synapses, and tracheal elements (Freeman, 2015). Tracheal cells serve a similar function to mammalian blood vessels, and their development and morphogenesis are molecularly similar (Ghabrial et al., 2003). Trachea are an interconnected series of gas-filled tubes that penetrate insect tissues, and gas exchange occurs through tracheal cell–tissue interactions (Ghabrial et al., 2003). Interestingly, we observed that half of all astrocyte microdomain Ca2+ transients we recorded were closely associated with CNS tracheal elements (Figure 3A). In live preparations where trachea were labeled with myristoylated tdTomato (myr-tdTom) and either Lifeact-GFP to visualize actin or Tubulin-GFP to visualize microtubules, we observed that tracheal branches dynamically extended and retracted actin-rich protrusions that are characteristic of filopodia (Figure 3B), and only very few were stabilized by microtubules (Figure 3—figure supplement 1 - Figure 3A). These observations imply tracheal branches dynamically explore their surroundings in the CNS with filopodia.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58952/elife-58952-fig3-v1.jpg)
+
+**Figure 3.:** (A) Astrocyte microdomain Ca2+ transients (green) overlap with tracheal branches (red) (scale bar, 20 µm). (B) Tracheal branches extend and retract F-actin containing filopodia. Asterisks, myr-tdTomato labeled filopodia; Arrows, Lifeact-GFP labeled F-actin (scale bar, 10 µm). (C) Categorization of tracheal filopodia across the entire population (extension, retraction, extension and retraction, or stationary). w/Ca2+ indicates tracheal filopodia extended into an astrocyte microdomain Ca2+ transient; w/o Ca2+ indicates no visible astrocyte microdomain Ca2+ transient was observed. (D) Time-lapse images and superimposed traces (green trace, myr-GCaMP5a in astrocytes expressed as dF/F0; red trace, myr-tdTomato in tracheal filopodia expressed as length) of 3 pairs (p1, p2, p3) of tracheal filopodia and astrocyte microdomain Ca2+ transients (in pseudocolor, grayscale values ranging from 0 to 255. scale bar, 10 µm). Vertical dash lines, timepoints when tracheal filopodia enter astrocyte Ca2+ microdomains. Blue boxes, time windows astrocyte microdomain Ca2+ transients persist after tracheal filopodia enter. Note that prior to entering the astrocyte Ca2+ microdomain, tracheal filopodial extension is not coupled to increases in astrocyte Ca2+, but after entry, increased astrocyte Ca2+ is strongly correlated with tracheal filopodial retraction. (E) Temporal correlation between onset of filopodia retraction and timing of peak astrocyte microdomain Ca2+ transients in seconds (n = 61 filopodia from Extension and Retraction pool). (F) Time intervals between astrocyte microdomain Ca2+ transients and tracheal filopodial extension versus retraction. See source data Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58952/elife-58952-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Microtubules (aTub-GFP) were present in major tracheal branches and a few filopodia (arrow), but the majority of filopodia were unlabeled (asterisks). F-actin (Lifeact-GFP) was found to be present in all tracheal membrane protrusions (e.g. dash boxes). (B) Two more examples of the associated microdomain-tracheal filopodia retraction events. Note that tracheal filopodia (arrows) entered microdomains that reached their peak (dash lines). (C) Distribution of onset of filopodial extension or retraction events relative to astrocyte microdomain Ca2+ peaks. Compared to retraction onset, the onset of extension time is more broadly distributed relative to the peak astrocyte Ca2+ signal. (D) Tracheal dynamics do not correlate with astrocyte microdomain Ca2+ transients that occur at a distance. A circle with a 7.5 µm radius was drawn around filopodial tips, and we attempted to correlate the onset of tracheal extension or retraction with astrocyte Ca2+ signals. We found a lack of correlation. See source data Figure 3—figure supplement 1, Figure 3—source data 2.
 
 We classified tracheal filopodia into four categories according to different behavior they exhibited during imaging: extension (1.7%), retraction (20.7%), extension and retraction (75.3%), or stationary (2.3%) (Figure 3C). The vast majority of tracheal filopodia dynamically extended and retracted during the imaging window of 6 min. We noted that those that exhibited only retraction did so very early in the imaging window, which could indicate that we began our imaging after extension had been initiated, however we cannot exclude the possibility that our imaging approach biases tracheal dynamics more toward retraction (e.g. by our imaging procedure generating ROS).
 
 Based on their close association, we explored the potential relationship between tracheal filopodial dynamics and astrocyte microdomain Ca2+ transients. Interestingly, 52% of tracheal filopodial tips overlapped, at some point, with an astrocyte microdomain Ca2+ transient (Figure 3C). Overlap was defined as the tracheal filopodial tip falling within the maximum size of the domain of the astrocyte Ca2+ transient. Moreover, we observed that astrocyte microdomain Ca2+ transients preceded retraction events of tracheal filopodia within their domain. The onset of trachea filopodial retraction was tightly correlated with astrocyte microdomain Ca2+ peaks (R2 = 0.99, Figure 3D–F; Figure 3—figure supplement 1 – Figure 3B; Figure 3—video 1), with a latency time of 25.9 ± 2.18 s. In contrast, the intervals between trachea filopodial extension onset and astrocyte microdomain Ca2+ peaks were significantly larger (144.6 ± 11.65 s) and more broadly distributed (Figure 3—figure supplement 1 - Figure 3C). Correlations between astrocyte microdomains and any changes in tracheal filopodial dynamics were only observed when filopodia overlapped with astrocyte microdomain Ca2+ transients. For instance, we found no correlation between extension or retraction of filopodia and nearby non-overlapping astrocyte microdomain Ca2+ transients (‘bystanders’) within an circular area beginning 7.5 μm away from filapodial tips and extending outward (Figure 3—figure supplement 1 - Figure 3D). We noted that 46% of tracheal filopodia were not visibly associated with astrocyte microdomain Ca2+ transients. This argues that a large fraction of tracheal filopodia can extend and retract in the absence of local astrocyte microdomain Ca2+ signaling. However, we cannot exclude the possibility that astrocyte Ca2+ signaling above or below the plane of focus could be modulating the dynamics of these trachea. Together, these observations indicate that a large fraction of astrocyte microdomain Ca2+ transients are spatiotemporally correlated with the retraction of adjacent tracheal filopodia.
 
-## Blockade of astrocyte microdomain Ca2+ transients increases CNS ROS and trpml mutants exhibit increased tracheal growth
+### Blockade of astrocyte microdomain Ca2+ transients increases CNS ROS and trpml mutants exhibit increased tracheal growth
 
 Based on their spatiotemporal association, we speculated that astrocyte microdomain Ca2+ transients promote tracheal filopodial retraction in response to ROS through TrpML. This predicts that loss of these transients would increase tracheal filopodial growth. To block astrocyte microdomain Ca2+ transients we used trpml1 mutants and labeled tracheal membranes with myr-tdTom. We found in trpml1 mutants that the overall rate of filopodial extension over time was indeed increased, which resulted in an increase in maximum length of the tracheal filopodia (Figure 4A). The increased filopodial extension rate, but not the maximum length of the filopodia, was phenocopied by knocking down trpml selectively in either astrocytes, and to some extent in trachea (Figure 4—figure supplement 1 – Figure 4A), arguing that TrpML functions in both astrocytes and trachea to control tracheal filopodial growth. Filopodial retraction rates remained unchanged in trpml1 mutants, suggesting astrocyte TrpML signaling facilitates tracheal filopodial retraction by suppressing extension. Our model further predicts that stimulating an increased number of astrocyte microdomain Ca2+ transients should promote filopodial retraction. To test this idea we bath applied tyramine, which stimulates astrocyte microdomain Ca2+ transients. We found tyramine application led to an increase in the percentage of tracheal filopodial retracting versus extending (Figure 4B), further supporting the notion that astrocyte microdomains facilitate filopodial retraction.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58952/elife-58952-fig4-v1.jpg)
+
+**Figure 4.:** (A) Quantification of average filopodial retraction and extension rates, and maximal length of tracheal filopodia (n indicate the number of filopodia randomly selected from 6 to 8 larval CNS, mean ± SEM, t-test). (B) Comparison of changes in extension/retraction ratios after bath application of tyramine in control and trpml1 mutants (n = 6, mean ± SEM, one-way ANOVA across groups; within groups, paired t-test). (C) In control, one tracheal branch (labeled with btl >myr::tdTom, arrowhead) near the LON (Brp, blue) grows short filopodia (arrows) into the LON. In trpml1, two transverse tracheal branches grow near the LON, and they exhibit increases in filopodial extension into the LON (n = 20, mean ± SEM, t-test. scale bar, 10 µm). (D) Dihydroethidium (DHE) staining in indicated genotypes. ROS-oxidized DHE forms 2-hydroxyethidium (2-OH-E+) and ethidium (E+). Quantifications to right (n = 6, mean ± SEM, t-test. scale bar, 50 µm). NAC was added 5 min prior to DHE incubation. (E) Proposed model. Astrocyte microdomain Ca2+ transients are modulated by reactive oxygen species (ROS) and TrpML. Astrocyte Ca2+ signaling can facilitate filopodial retraction if a tracheal filopodium enters a microdomain. Cell cortex underlying membrane or lysosomal localization of TrpML regulates Ca2+ signaling in response to ROS, presumably due to increased O2 delivery, to generate astrocyte microdomain Ca2+ transients. Tyramine induces increased microdomain Ca2+ transients via TrpML. Loss of astrocyte microdomains resulted from trpml mutation leads to overgrown trachea including filopodia, and increased ROS. See source data Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58952/elife-58952-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantification of average filopodial retraction and extension rates, and maximal length of tracheal filopodia. Trachea is labeled using btl-LexA >LexAop-rCD2RFP (n = 37–69 filopodia randomly selected from six larval CNS in each genotype indicated, mean ± SEM, one-way ANOVA). (B) Tracheal autofluorescence when illuminated with 408 nm laser was used to trace individual branches sprouting from the uniquely identifiable pair of mpgTr (red arrows). The ventral nerve cords are outlined with red dash lines (n = 8–10, mean ± SEM, t-test). (C) Schematic of larval optic neuropil (LON). ap, astrocyte process; tb, tracheal branch; tf, tracheal filopodium. Representative confocal images of larval brains showing the position of LONs (dash boxes). Image represents an 8.1 µm z-projection, covering brain neuropil and LONs (blue) and associated tracheal branches/filopodia. LONs zoomed in Figure 4C. (D) Background fluorescence intensity in DHE staining (n = 6, mean ± SEM, one-way ANOVA). See source data Figure 4—figure supplement 1. Figure 4—source data 1.
 
 To quantify the longer term structural effect of loss of trpml (and astrocyte microdomain Ca2+ transients), we examined tracheal structure in larval CNS. We first counted the total number of protrusions from a pair of most posterior ganglion trachea (mpgTr) that innervate a few segments from A5 to A8/9 in the ventral nerve cord. We found that mpgTr in the ventral nerve cord in trpml1 mutants exhibited increased total length compared to those in control animals (Figure 4—figure supplement 1 - Figure 4B). We next examined a uniquely identifiable branch of the tracheal system in the larval optic neuropil (LON) (Sprecher et al., 2011). The LON is a simple tissue, composed of only a few dozen neurons and 1 ~ 2 tracheal branches that are surrounded by the processes from a single astrocyte (Figure 4—figure supplement 1 - Figure 4C). Compared to controls, we found that trpml1 mutants exhibited an approximate doubling of the number of tracheal branches, and also total filopodia in the LON (Figure 4C). Together these data indicate that TrpML restricts tracheal outgrowth through astrocyte microdomain Ca2+ transients.
 
@@ -75,15 +107,445 @@ Maintaining a healthy, spatiotemporally regulated normoxic environment to preven
 
 ## Materials and methods
 
-## Drosophila stocks and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpml1</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 28992</td>
+      <td>FlyBase symbol: w1118; Trpml1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpml2</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 42230</td>
+      <td>FlyBase symbol: w*; Trpml2/TM6B, Tb1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpmlJF01239</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 31294</td>
+      <td>FlyBase symbol: y1 v1; P{TRiP.JF01239}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tyrRJF01878</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 25857</td>
+      <td>FlyBase symbol: y1 v1; P{TRiP.JF01878}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tyrRIIJF02749</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 27670</td>
+      <td>FlyBase symbol: y1 v1; P{TRiP.JF02749}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpA11</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 36342</td>
+      <td>FlyBase symbol: TI{TI}TrpA11</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpm2</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 35527</td>
+      <td>FlyBase symbol: w*; TI{TI}Trpm2/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nompC3</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 42258</td>
+      <td>FlyBase symbol: nompC3 cn1 bw1/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trp1</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 5692</td>
+      <td>FlyBase symbol: trp1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpl302</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 31433</td>
+      <td>FlyBase symbol: cn1 trpl302 bw1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pkd21</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 24495</td>
+      <td>FlyBase symbol: w1118; Pkd21/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpγJF01244</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 31299</td>
+      <td>FlyBase symbol: y1 v1; P{TRiP.JF01244}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pyxJF01242</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 31297</td>
+      <td>FlyBase symbol: y1 v1; P{TRiP.JF01242}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>btl-Gal4</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 8807</td>
+      <td>FlyBase symbol: W*; P{GAL4-btl.S}2, P{UASp-Act5C.T:GFP}2/CyO, P{lacZ.w+}276. UASp-Act5C.T:GFP was replaced with 10XUAS-IVS-myr::tdTomato by recombination in this paper.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Lifeact-GFP</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 57326</td>
+      <td>FlyBase symbol: w*; P{UAS-Lifeact.GFP.W}3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASp-αTub-GFP</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 7373</td>
+      <td>FlyBase symbol: w*; P{UASp-GFPS65C-αTub84B}3/TM3, Sb1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>10XUAS-IVS-myr::tdTomato</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 32222</td>
+      <td>FlyBase symbol: w*; P{10XUAS-IVS-myr::tdTomato}attP40</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-trpml-myc</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 57372</td>
+      <td>FlyBase symbol: w*; P{UAS-Trpml.MYC}3, Trpml1/TM6B, Tb1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>5XUAS-trpml-GCaMP5g</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 80066</td>
+      <td>FlyBase symbol: y1 w*; PBac{5XUAS-Trpml::GCaMP5G}VK00033</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GFP-Lamp1</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC: 42714</td>
+      <td>FlyBase symbol: w*; P{UAS-GFP-LAMP}2; P{nSyb-GAL4.S}3/T(2;3)TSTL, CyO: TM6B, Tb1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Oct-TyrRhono</td>
+      <td>Kyoto Stock Center (DGRC)</td>
+      <td>BDSC: 109038</td>
+      <td>FlyBase symbol: w1118; P{lwB}Oct-TyrRhono</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>btl-LexA</td>
+      <td>Roy et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nompC4</td>
+      <td>Walker et al., 2000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>painless70</td>
+      <td>Im et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nan36a</td>
+      <td>Kim et al., 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wtrwex</td>
+      <td>Kim et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tdc2RO54</td>
+      <td>Cole et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TβhnM18</td>
+      <td>Monastirioti et al., 1996</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>alrm-Gal4</td>
+      <td>Doherty et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>alrm &gt; QF &gt; Gal4</td>
+      <td>Stork et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>repo-FLPase</td>
+      <td>Stork et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>alrm-LexA::GAD</td>
+      <td>Stork et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-myr::GCaMP5a</td>
+      <td>This paper</td>
+      <td></td>
+      <td>transgenic flies harboring UAS-myr::GCaMP5a</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-myr::R-GECO1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>transgenic flies harboring UAS-myr::R-GECO1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>QUAS-myr::GCaMP5a</td>
+      <td>This paper</td>
+      <td></td>
+      <td>transgenic flies harboring QUAS-myr::GCaMP5a</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>13XLexAop2-myr::GCaMP6s</td>
+      <td>This paper</td>
+      <td></td>
+      <td>transgenic flies harboring 13XLexAop2-myr::GCaMP6s</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Brp</td>
+      <td>DSHB</td>
+      <td>Cat# nc82</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-c-Myc</td>
+      <td>DSHB</td>
+      <td>Cat# 9E10</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tetrodotoxin</td>
+      <td>Tocris</td>
+      <td>Cat# 1078</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>lanthanum chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 211605</td>
+      <td>0.1 mM, 1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>acetylcholine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A6625</td>
+      <td>2.5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>γ-aminobutyric acid (GABA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2129</td>
+      <td>2.5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>glutamate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# G1626</td>
+      <td>2.5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tyramine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T90344</td>
+      <td>2.5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>octopamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# O0250</td>
+      <td>2.5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-acetyl cysteine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A7250</td>
+      <td>2.5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>hydrogen peroxide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# H1009</td>
+      <td>0.1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>halocarbon oil 27</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# H8773</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dihydroethidium (DHE)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 309800</td>
+      <td>30 µM</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST-myr::GCaMP5a</td>
+      <td>This paper</td>
+      <td>Fly germline transformation plasmid</td>
+      <td>GCaMP5a DNA with myristoylation sequence fused at the 5’ end</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQUAST-myr::GCaMP5a</td>
+      <td>This paper</td>
+      <td>Fly germline transformation plasmid</td>
+      <td>GCaMP5a DNA with myristoylation sequence fused at the 5’ end</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST-myr::R-GECO1</td>
+      <td>This paper</td>
+      <td>Fly germline transformation plasmid</td>
+      <td>R-GECO1 DNA with myristoylation sequence fused at the 5’ end</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJFRC19-13XLexAop2-IVS-myr::GCaMP6s</td>
+      <td>This paper</td>
+      <td>Fly germline transformation plasmid</td>
+      <td>GCaMP6s DNA with myristoylation sequence fused at the 5’ end</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity</td>
+      <td>PerkinElmer, Inc</td>
+      <td>http://www.perkinelmer.com/lab-products-and-services/cellular-imaging/performing-advanced-image-data-analysis.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Slidebook</td>
+      <td>Intelligent Imaging Innovations, Inc</td>
+      <td>https://www.intelligent-imaging.com/slidebook</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>https://fiji.sc/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 7</td>
+      <td>GraphPad software</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro</td>
+      <td>WaveMetrics, Inc</td>
+      <td>https://www.wavemetrics.com/products/igorpro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AQuA</td>
+      <td>Wang et al., 2019</td>
+      <td>https://github.com/yu-lab-vt/AQuA#fiji-plugin; Wang, 2019</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila stocks and husbandry
 
 All larvae/flies were cultured in cornmeal food at 25 ℃ under 12 hr/12 hr dark/light cycles. Female larvae were used for all experiments unless otherwise stated. The specific developmental stages studied in each experiment are indicated in the following Materials and method details. Drosophila strains used include: Bloomington stock center trpml1 (28992), trpml2 (42230), trpmlJF01239 (31294), tyrRJF01878 (25857), tyrRIIJF02749 (27670), trpA11 (36342), trpm2 (35527), nompC3 (42258), trp1 (5692), trpl302 (31433), pkd21 (24495), trpγJF01244 (31299), pyxJF01242 (31297), btl-Gal4 (8807), UAS-Lifeact-GFP (57326), UASp-αTub-GFP (7373), 10XUAS-IVS-myr::tdTomato (32222), UAS-trpml-myc (57372), UAS-GFP-Lamp1 (42714). Oct-TyrRhono (Nagaya et al., 2002), nompC4 (Walker et al., 2000), painless70 (Im et al., 2015), nan36a (Kim et al., 2003), wtrwex (Kim et al., 2010), Tdc2RO54 (Cole et al., 2005), TβhnM18 (Monastirioti et al., 1996), alrm-Gal4(Doherty et al., 2009), alrm >QF > Gal4, repo-FLPase, alrm-LexA::GAD (Stork et al., 2014), btl-LexA (Roy et al., 2014), 5XUAS-trpml-GCaMP5g (Wong et al., 2017). UAS-myr::GCaMP5a, UAS-myr::R-GECO1, QUAS-myr::GCaMP5a, 13XLexAop2-myr::GCaMP6s flies were generated in this study.
 
-## Constructs and transgenic flies
+### Constructs and transgenic flies
 
 The full-length ORFs of GCaMP5a, R-GECO1, GCaMP6s with an in-frame DNA fragment encoding the myristoylation signal peptide at 5’-end were cloned into vectors pUAST, pQUAST, pJFRC19 (harboring 13XLexAop2-IVS, referring to the plasmid Addgene Cat# 26224) to generate constructs pUAST-myr::GCaMP5a, pQUAST-myr::GCaMP5a, pUAST-myr::R-GECO1, pJFRC19-13XLexAop2-IVS-myr::GCaMP6s for injection. The transgenic flies were injected and recovered by Rainbow Transgenic Flies, Inc (California).
 
-## Ca2+ imaging and data analysis
+### Ca2+ imaging and data analysis
 
 Ca2+ imaging in intact larvae: the 1st instar larva expressing myr-GCaMP5a in astrocytes (25℃, 24–32 hr after egg laying) was sandwiched in 30 µl halocarbon oil 27 (Cat# H8773, Sigma-Aldrich) between a slide and a 22 × 22 mm coverslip (Cat# 1404–15, Globe Scientific Inc), then a 3 min time-lapse video was taken immediately on a spinning disk confocal microscope equipped with a 40X oil immersion objective.
 
@@ -93,18 +555,18 @@ The frequency (the number of microdomain Ca2+ transients per minute) of microdom
 
 For bath application of compounds, halfway through the 6 min imaging window (~3 min), 100 µl imaging buffer (1.2 mM Ca2+) containing drugs (2X final concentration) was directly applied onto the preparations, then imaging continued for another 3 min. The chemicals used for bath application experiments include: Tocris, tetrodotoxin (1 µM, Cat# 1078). Sigma-Aldrich, lanthanum chloride (LaCl3, Cat# 211605), acetylcholine (2.5 mM, Cat# A6625), γ-aminobutyric acid (GABA, 2.5 mM, Cat# A2129), glutamate (2.5 mM, Cat# G1626), tyramine (2.5 mM, Cat# T90344), octopamine (2.5 mM, Cat# O0250), N-acetyl cysteine (NAC, 2.5 mM, Cat# A7250), hydrogen peroxide (H2O2, 0.1 mM, Cat# H1009).
 
-## Immunostaining and tracheal branch tracing
+### Immunostaining and tracheal branch tracing
 
 The CNS dissected in PBS from 3rd instar larvae (larval density ~100, 25℃, 100–108 hr after egg laying) was immediately transferred in 4% formaldehyde for fixation for 20 min (for co-staining with tracheal filopodia, the dissection was performed in the imaging buffer with 0.3 mM Ca2+, and the CNS preparations were incubated in the imaging buffer with 1.2 mM Ca2+ for 10 min before 4% formaldehyde fixation). Washing in PBS for 3 × 10 min. Permeabilization in PBS + 0.3% Triton X-100 for 2 hr. Primary antibody (1:50 anti-Brp, DSHB, Cat# nc82 in PBS + 0.1% Triton X-100) incubation at 4 ℃ for ~72 hr. Secondary antibody incubation at room temperature for ~2 hr. Tracheal branches in ventral nerve cord were illuminated with 408 nm laser light and emitting autofluorescence was imaged. Each individual branch was then traced manually with Simple Neurite Tracer (Fiji).
 
-## Reactive oxygen species detection by DHE (dihydroethidium) staining
+### Reactive oxygen species detection by DHE (dihydroethidium) staining
 
 The CNS preparations from 3rd instar larvae (larval density ~100, 25℃, 100–108 hr after egg laying) were made exactly in the same way for Ca2+ imaging. Incubation in 100 µl imaging buffer (1.2 mM Ca2+) containing 30 µM DHE for 8 min before imaging (30 µm in z depth, starting from the very dorsal side, was taken). The puncta were automatically counted by the segmentation tool in Slidebook.
 
-## Statistics
+### Statistics
 
 All statistics were performed in Graphpad. No data were excluded for analyses. 2–3 replications were successfully performed for each experiment. Comparison between groups was tested by one-way ANOVA with Tukey’s post hoc tests, or unpaired t-test. Comparison within groups was tested by paired t-test. p<0.05 was considered statistically significant. *p<0.05, **p<0.01.
 
-## Data availability
+### Data availability
 
 Source data for Figure 1C–E; Figure 2A–H; Figure 3E and F; Figure 4A–D; Figure 2—figure supplement 1 – Figure 2A–C and E; Figure 3—figure supplement 1 – Figure 3D; Figure 4—figure supplement 1 - Figure 4A–B and D are included. Materials generated for this study will be freely available on request.

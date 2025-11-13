@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.35957.001 Trade-offs between protein stability and activity can restrict access to evolutionary trajectories, but widespread epistasis may facilitate indirect routes to adaptation. This may be enhanced by natural environmental variation, but in multicellular organisms this process is poorly understood. We investigated a paradoxical trajectory taken during the evolution of tetrapod dim-light vision, where in the rod visual pigment rhodopsin, E122 was fixed 350 million years ago, a residue associated with increased active-state (MII) stability but greatly diminished rod photosensitivity. Here, we demonstrate that high MII stability could have likely evolved without E122, but instead, selection appears to have entrenched E122 in tetrapods via epistatic interactions with nearby coevolving sites. In fishes by contrast, selection may have exploited these epistatic effects to explore alternative trajectories, but via indirect routes with low MII stability. Our results suggest that within tetrapods, E122 and high MII stability cannot be sacrificed—not even for improvements to rod photosensitivity.
+Trade-offs between protein stability and activity can restrict access to evolutionary trajectories, but widespread epistasis may facilitate indirect routes to adaptation. This may be enhanced by natural environmental variation, but in multicellular organisms this process is poorly understood. We investigated a paradoxical trajectory taken during the evolution of tetrapod dim-light vision, where in the rod visual pigment rhodopsin, E122 was fixed 350 million years ago, a residue associated with increased active-state (MII) stability but greatly diminished rod photosensitivity. Here, we demonstrate that high MII stability could have likely evolved without E122, but instead, selection appears to have entrenched E122 in tetrapods via epistatic interactions with nearby coevolving sites. In fishes by contrast, selection may have exploited these epistatic effects to explore alternative trajectories, but via indirect routes with low MII stability. Our results suggest that within tetrapods, E122 and high MII stability cannot be sacrificed—not even for improvements to rod photosensitivity.
 
 ## Introduction
 
@@ -29,21 +29,804 @@ Consistent with the overlapping mechanisms of RH1 spectral and non-spectral func
 
 Site 122 (Bos taurus RH1 numbering) is a molecular determinant of both the spectral and non-spectral functional properties of rhodopsin and the cone opsins (Hunt et al., 2001; Yue et al., 2017; Imai et al., 1997; Imai et al., 2007; Yokoyama et al., 1999). Intriguingly, vertebrate visual pigment families show differences in which amino acid variants predominate at this site (Figure 1A), with I122 strongly conserved in the most ancestrally diverging cone opsins such as the long-wave sensitive opsins (LWS) (Lamb et al., 2007), whereas in the most derived opsin group, the rhodopsins (RH1), E122 predominates (Figure 1B,C) (Imai et al., 1997; Lamb et al., 2007; Imai et al., 2007; Carleton et al., 2005). E122 is a key component of an important hydrogen-bonding network with H211 that is known to stabilize the MII active-conformation (Choe et al., 2011). This stability increase is so dramatic that E122 is considered a functional determinant distinguishing rhodopsin from cone opsins (Figure 1B) (Imai et al., 1997; Lamb et al., 2016; Kojima et al., 2014). Paradoxically, by conferring this increase in MII stability, the evolution of E122 likely involved a costly fitness trade-off that diminished tetrapod rod photosensitivity (Yue et al., 2017), which can affect visual performance in animals (Kojima et al., 2017; Aho et al., 1988). Indeed, it is possible to improve tetrapod rod photoreceptor sensitivity by decreasing rod dark noise in vivo by replacing E122 with a cone opsin amino acid variant (COV; Figure 1A) at site 122, such as Q122, which predominates in RH2 cone opsins (Yue et al., 2017; Lin et al., 2017). The strict conservation of E122 in all tetrapod rhodopsins (Figure 1C, Table 1, Supplementary file 1) therefore suggests that during the evolution of tetrapod dim-light vision, natural selection may have prioritized MII stability (Figure 1B,D) at the expense of rod sensitivity. This apparent evolutionary trade-off is perplexing given that the low spontaneous thermal activation of rhodopsin (and therefore rod dark noise) is a functional hallmark of rhodopsin divergence from the cone opsins (Kojima et al., 2017; Gozem et al., 2012; Kefalov et al., 2003; Lamb et al., 2016).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/35957/elife-35957-fig1-v1.jpg)
+
+**Figure 1.:** (A) Amino acid consensus residues at site 122 across vertebrate rod opsins (rhodopsin; RH1) and the cone opsins (long-wave (LWS), short-wave (SWS1 and SWS2) and middle-wave (RH2) sensitive). Modified from (Lamb et al., 2007). (B) Relative stability of the rod and cone opsin active-conformation (MII) in different vertebrates (Imai et al., 2005). (C) Schematic representation of naturally occurring cone opsin variants (COVs) and other amino acids across vertebrate RH1 (see Figure 1—figure supplements 1–2; Tables 1–2, Supplementary files 1–2). E122 is invariant in all Tetrapod RH1 genes sequenced to date. Natural deep-sea amino acid variants (Hunt et al., 2001; Yokoyama et al., 1999) are identified with an asterisk (*; Table 2). (D) Introduction of the ancestral cone opsin (LWS) variant I122 blue shifts tetrapod RH1 spectral absorbance and accelerates decay of the MII light-activated conformation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35957/elife-35957-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** All known tetrapod RH1 is conserved as E122. Asterisks indicate the presence of deep-dwelling species within a clade (Hunt et al., 2001; Yokoyama et al., 1999) (Table 2).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35957/elife-35957-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Tetrapods (green) and Teleost fishes (blue) along with outgroups (black) relationships were constructed according to species relationships (see Materials and methods).
+
+**Table 1.**
+ Variation at sites 119-122-123-124 in Tetrapods and Outgroup rh1.Sites with variation relative to the Vertebrate consensus (LEIA) are in bold and highlighted grey. Subterranean species are denoted (*).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Species</th>
+      <th>Accession</th>
+      <th>Common name</th>
+      <th>119</th>
+      <th>122</th>
+      <th>123</th>
+      <th>124</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Outgroups</td>
+      <td>Callorhinchus milii</td>
+      <td>XP_007888679</td>
+      <td>Elephant shark</td>
+      <td>L</td>
+      <td>E</td>
+      <td>I</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>Orectolobus ornatus</td>
+      <td>AFS63882</td>
+      <td>Ornate wobbegong</td>
+      <td>L</td>
+      <td>E</td>
+      <td>V</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <td>Latimeria chalumnae</td>
+      <td>XP_005997879</td>
+      <td>Coelacanth</td>
+      <td>L</td>
+      <td>Q</td>
+      <td>V</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Neoceratodus forsteri</td>
+      <td>ABS89278</td>
+      <td>Australian lungfish</td>
+      <td>F</td>
+      <td>I</td>
+      <td>I</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Mammals</td>
+      <td>Dasypus novemcinctus</td>
+      <td>XP_004477303</td>
+      <td>9-banded armadillo*</td>
+      <td>I</td>
+      <td>E</td>
+      <td>I</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Eptesicus fuscus</td>
+      <td>XP_008150514</td>
+      <td>Big brown bat</td>
+      <td>L</td>
+      <td>E</td>
+      <td>V</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Chrysochloris asiatica</td>
+      <td>XP_006868732</td>
+      <td>Cape golden mole*</td>
+      <td>M</td>
+      <td>E</td>
+      <td>I</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Sorex araneus</td>
+      <td>XP_004613289</td>
+      <td>Common Shrew*</td>
+      <td>L</td>
+      <td>E</td>
+      <td>V</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Tupaia chinensis</td>
+      <td>XP_006160726</td>
+      <td>Tree Shrew</td>
+      <td>L</td>
+      <td>E</td>
+      <td>V</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Ictidomys tridecemlineatus</td>
+      <td>XP_005333841</td>
+      <td>13-line ground squirrel</td>
+      <td>L</td>
+      <td>E</td>
+      <td>V</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Rattus norvegicus</td>
+      <td>NP_254276</td>
+      <td>brown rat</td>
+      <td>L</td>
+      <td>E</td>
+      <td>I</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>Sarcophilus harrisii</td>
+      <td>XP_003762497</td>
+      <td>Tasmanian devil</td>
+      <td>T</td>
+      <td>E</td>
+      <td>V</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Reptiles</td>
+      <td>Alligator mississippiensis</td>
+      <td>XM_006274155</td>
+      <td>American alligator</td>
+      <td>L</td>
+      <td>E</td>
+      <td>V</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Alligator sinensis</td>
+      <td>XP_006039462</td>
+      <td>Chinese alligator</td>
+      <td>L</td>
+      <td>E</td>
+      <td>V</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Anolis carolinensis</td>
+      <td>NP_001278316</td>
+      <td>Carolina anole</td>
+      <td>L</td>
+      <td>E</td>
+      <td>M</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>Python bivittatus</td>
+      <td>XP_007423324</td>
+      <td>Burmese python</td>
+      <td>L</td>
+      <td>E</td>
+      <td>M</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Amphibians</td>
+      <td>Ambystoma tigrinum</td>
+      <td>U36574</td>
+      <td>Tiger salamander</td>
+      <td>M</td>
+      <td>E</td>
+      <td>I</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Cynops pyrrhogaster</td>
+      <td>BAB55452</td>
+      <td>Jap. Fire belly newt</td>
+      <td>L</td>
+      <td>E</td>
+      <td>I</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>Xenopus tropicalis</td>
+      <td>NP_001090803</td>
+      <td>Western clawed frog</td>
+      <td>L</td>
+      <td>E</td>
+      <td>M</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Xenopus laevis</td>
+      <td>NP_001080517</td>
+      <td>African clawed frog</td>
+      <td>L</td>
+      <td>E</td>
+      <td>V</td>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+
 Why has tetrapod RH1 been constrained to this paradoxical compromise at site 122 for the last 350 million years? Interestingly, and in contrast to tetrapod rhodopsins, fish rhodopsins show variation at site 122, such as in the Coelacanth (Latimeria chalumnae), Lungfish (Neoceratodus forsteri), and deep-sea fish lineages, where COV (I, Q, M) and other residues at site 122 (V, D) are found (Figure 1C; Figure 1—figure supplement 1; Tables 1–2, Supplementary file 2) (Hunt et al., 2001; Yokoyama et al., 1999; Carleton et al., 2005). These substitutions have been shown to blue-shift λMAX by up to ~10 nm (Hunt et al., 2001; Yokoyama et al., 1999), and may improve dim-light sensitivity in poorly-lit aquatic environments (Yue et al., 2017). Strikingly, one of the largest freshwater groups—the Characiphysi (which includes piranhas, electric eels, and catfishes [Chen et al., 2013]) —has the COV I122 residue completely fixed (Figure 1—figure supplement 1, Supplementary file 3). In tetrapods by contrast, the red-shifting E122 mutation is strictly maintained, increasing MII stability (Imai et al., 1997) but greatly decreasing rod sensitivity (Yue et al., 2017). Why the strong constraints on high MII stability and E122 are relaxed only within certain aquatic visual ecologies, remains unknown.
+
+**Table 2.**
+ Fish rh1 with variation at site 122 do not necessarily have variation at coevolving sites 119, 123, and 124.Sites with variation relative to the Vertebrate consensus (LEIA) are in bold and highlighted grey.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Order</th>
+      <th>Species</th>
+      <th>Accession</th>
+      <th>Common name</th>
+      <th>119</th>
+      <th>122</th>
+      <th>123</th>
+      <th>124</th>
+      <th>Ecology notes from FishBase</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Lepisosteiformes</td>
+      <td>Lepisosteus oculatus</td>
+      <td>JN230969.1</td>
+      <td>spotted gar</td>
+      <td>L</td>
+      <td>M</td>
+      <td>I</td>
+      <td>S</td>
+      <td>Freshwater; brackish; demersal. (Ref. 2060)</td>
+    </tr>
+    <tr>
+      <td>Atractosteus tropicus</td>
+      <td>JN230970.1</td>
+      <td>Tropical Gar</td>
+      <td>L</td>
+      <td>M</td>
+      <td>L</td>
+      <td>S</td>
+      <td>Freshwater; demersal</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Osteoglossiformes</td>
+      <td>Mormyrops anguilloides</td>
+      <td>JN230973.1</td>
+      <td>Cornish Jack</td>
+      <td>T</td>
+      <td>I</td>
+      <td>I</td>
+      <td>A</td>
+      <td>Freshwater; demersal; potamodromous (Ref. 51243)</td>
+    </tr>
+    <tr>
+      <td>Osteoglossum bicirrhosum</td>
+      <td>KY026030.1</td>
+      <td>Silver arowana</td>
+      <td>T</td>
+      <td>I</td>
+      <td>I</td>
+      <td>A</td>
+      <td>Freshwater; benthopelagic</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Alepocephalifromes</td>
+      <td>Alepocephalus bicolor</td>
+      <td>JN230974.1</td>
+      <td>Bicolor slickhead</td>
+      <td>L</td>
+      <td>Q</td>
+      <td>I</td>
+      <td>A</td>
+      <td>Marine; bathydemersal; depth range 439–1080 m (Ref. 44023).</td>
+    </tr>
+    <tr>
+      <td>Bathytroctes microlepis</td>
+      <td>JN544540.1</td>
+      <td>Smallscale smooth-head</td>
+      <td>L</td>
+      <td>D</td>
+      <td>I</td>
+      <td>A</td>
+      <td>Marine; bathypelagic; depth range 0–4900 m (Ref. 58018)</td>
+    </tr>
+    <tr>
+      <td>Conocara salmoneum</td>
+      <td>JN412577.1</td>
+      <td>Salmon smooth-head</td>
+      <td>L</td>
+      <td>Q</td>
+      <td>I</td>
+      <td>A</td>
+      <td>Marine; bathypelagic; depth range 2400–4500 m (Ref. 40643)</td>
+    </tr>
+    <tr>
+      <td>Galaxiiformes</td>
+      <td>Galaxias maculatus</td>
+      <td>JN231000.1</td>
+      <td>Inanga</td>
+      <td>L</td>
+      <td>M</td>
+      <td>I</td>
+      <td>G</td>
+      <td>Marine; freshwater; brackish; benthopelagic; catadromous (Ref. 51243).</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Stomiatiformes</td>
+      <td>Argyropelecus aculeatus</td>
+      <td>JN412571.1</td>
+      <td>Lovely Hatchetfish</td>
+      <td>H</td>
+      <td>Q</td>
+      <td>I</td>
+      <td>A</td>
+      <td>Marine; bathypelagic; depth range 100–2056 m (Ref. 27311)</td>
+    </tr>
+    <tr>
+      <td>Vinciguerria nimbaria</td>
+      <td>JN412570.1</td>
+      <td>Oceanic lightfish</td>
+      <td>H</td>
+      <td>Q</td>
+      <td>V</td>
+      <td>A</td>
+      <td>Marine; bathypelagic; depth range 20–5000 m (Ref. 4470)</td>
+    </tr>
+    <tr>
+      <td>Ateleopodiformes</td>
+      <td>Ateleopus japonicus</td>
+      <td>KC442218.1</td>
+      <td>Pacific Jellynose Fish</td>
+      <td>L</td>
+      <td>M</td>
+      <td>I</td>
+      <td>S</td>
+      <td>Marine; bathydemersal; depth range 140–600 m (Ref. 44036).</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Myctophiformes</td>
+      <td>Benthosema suborbitale</td>
+      <td>JN412576.1</td>
+      <td>Smallfin lanternfish</td>
+      <td>H</td>
+      <td>Q</td>
+      <td>V</td>
+      <td>G</td>
+      <td>Marine; bathypelagic; oceanodromous; depth range 50–2500 m (Ref. 26165)</td>
+    </tr>
+    <tr>
+      <td>Lampanyctus alatus</td>
+      <td>JN412575.1</td>
+      <td>Winged lanternfish</td>
+      <td>H</td>
+      <td>Q</td>
+      <td>V</td>
+      <td>A</td>
+      <td>Marine; bathypelagic; oceanodromous; depth range 40–1500 m (Ref. 26165)</td>
+    </tr>
+    <tr>
+      <td>Neoscopelus microchir</td>
+      <td>KC442224.1</td>
+      <td>Shortfin neoscopelid</td>
+      <td>L</td>
+      <td>Q</td>
+      <td>I</td>
+      <td>A</td>
+      <td>Marine; bathypelagic; depth range 250–700 m (Ref. 4481)</td>
+    </tr>
+    <tr>
+      <td>Gadiiformes</td>
+      <td>Coryphaenoides guentheri</td>
+      <td>JN412578.1</td>
+      <td>Gunther’s grenadier</td>
+      <td>L</td>
+      <td>V</td>
+      <td>I</td>
+      <td>A</td>
+      <td>Marine; bathydemersal; depth range 831–2830 (Ref. 1371)</td>
+    </tr>
+    <tr>
+      <td>Beryciformes</td>
+      <td>Melamphaes suborbitalis</td>
+      <td>JN231006.1</td>
+      <td>Shoulderspine bigscale</td>
+      <td>L</td>
+      <td>Q</td>
+      <td>I</td>
+      <td>A</td>
+      <td>Marine; brackish; bathypelagic; depth range 500–1000 m (Ref. 31511).</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Holocentriformes</td>
+      <td>Holocentrus rufus</td>
+      <td>KC442230.1</td>
+      <td>Longspine squirrelfish</td>
+      <td>L</td>
+      <td>M</td>
+      <td>I</td>
+      <td>S</td>
+      <td>Marine; reef-associated; depth range 0–32 m (Ref. 3724).</td>
+    </tr>
+    <tr>
+      <td>Myripristis murdjan</td>
+      <td>KC442231.1</td>
+      <td>Pinecone soldierfish</td>
+      <td>L</td>
+      <td>M</td>
+      <td>I</td>
+      <td>G</td>
+      <td>Marine; reef-associated; depth range 1–50 m (Ref. 9710)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Scombriformes</td>
+      <td>Aphanopus carbo</td>
+      <td>EU637938.1</td>
+      <td>Black scabbardfish</td>
+      <td>H</td>
+      <td>Q</td>
+      <td>I</td>
+      <td>G</td>
+      <td>Marine; bathypelagic; oceanodromous (Ref 108735); 200–2300 m (Ref. 108733)</td>
+    </tr>
+    <tr>
+      <td>Cubiceps gracilis</td>
+      <td>EU637952.1</td>
+      <td>Driftfish</td>
+      <td>-</td>
+      <td>Q</td>
+      <td>I</td>
+      <td>A</td>
+      <td>Marine; pelagic-oceanic; oceanodromous (Ref. 51243);</td>
+    </tr>
+  </tbody>
+</table>
 
 In light of these ecological patterns, we questioned whether it was possible to synthesize an evolutionary alternative: a tetrapod RH1 that never lost COV at site 122 but still developed high MII stability. We reasoned that relative to tetrapods, the diversity and complexity of fish visual ecologies (Hunt et al., 2001; Hauser and Chang, 2017a) may have allowed selection the opportunity to explore the pleiotropic potential of site 122 through the evolution of novel structural interactions with nearby sites that could compensate for the destabilizing loss of the E122-H211 hydrogen bond. To identify these interactions, our goal was to use analyses of evolutionary rates to predict sites coevolving with site 122, and to investigate the functional consequences of coevolving sites with experimental site-directed mutagenesis studies. Ultimately, we used our analyses of natural variation as a guide to artificially engineer a tetrapod rhodopsin with increased MII stability, but within a non-E122 sequence background. We demonstrated that this synthetic alternative is possible, even if evolution did not proceed down this mechanistic trajectory toward a dim-light adapted visual pigment.
 
 ## Results
 
-## Phylogenetic identification of an intramolecular coevolutionary network
+### Phylogenetic identification of an intramolecular coevolutionary network
 
 To better understand the selection pressures that may be constraining E122 to fixation during tetrapod evolution, we constructed a large vertebrate rhodopsin phylogenetic dataset (Figure 1—figure supplements 1 and 2, Supplementary files 1–2) and investigated the evolutionary history of site 122 using ancestral reconstruction (Materials and methods). We found that E122 (codon GAA; Figure 2A) has been fixed in tetrapod RH1 since the most recent common ancestor ~350 million years ago (MYA) (Hedges et al., 2015), where it appears along the ancestral branch leading to tetrapods (Figure 2A; Table 3) following the diversification from lungfishes (I122, codon ATA, Figure 2A; Supplementary file 1) and the coelacanth (Q122, codon CAA, Figure 2A; Supplementary file 1). This transition period in vertebrate evolution is characterized by extensive morphological modifications for vision within terrestrial environments, and likely included large increases in environmental light irradiance (MacIver et al., 2017; Warrant and Johnsen, 2013). Apart from the lungfishes and coelacanth, the high conservation of E122 in tetrapods is also reflected in other vertebrate rhodopsins (Figure 1, Figure 1—figure supplement 1; Tables 1–2; Supplementary files 1–2), but there are important exceptions within certain lineages of teleost fishes, such as the Characiphysi. Within this group, the COV residue I122 was introduced likely through E122I (codon ATC; Figure 2A), where I122 is now completely fixed across the extant Characiphysi (Supplementary file 3).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/35957/elife-35957-fig2-v1.jpg)
+
+**Figure 2.:** (A) Extant and reconstructed codon variation at site 122 (Materials and methods). Despite a variety of residues at site 122 across the Coelacanth (Q122), Lungfish (I122; Ceratodontiformes), and Tetrapods (E122), GAA codons encoding for E122 are nevertheless predicted as the ancestral state with high posterior probabilities (shown in parentheses). E122 (GAA/GAG) is also likely to have been present in the last common ancestor of Cypriniformes and the Characiphysi, although with low posterior probabilities and therefore high uncertainty. I122 codon ATC is fixed in all Characiphysi rhodopsin to our knowledge (Supplementary file 3). Approximate divergence times are from (Hedges et al., 2015). (B) Mutual information (MI) analyses (MISTIC [Simonetti et al., 2013]) reveal all sites coevolving with site 122 are within 6 Å. Significance thresholds were determined by reference to the highest MI z-score from all sites across analyses of randomized datasets (n = 150; z-score cut-off = 21.6), as previously described (Ashenberg and Laub, 2013). (C) Sites within this radius displayed decreased amino acid variation in tetrapod and characiphysi RH1, where E122 and I122 are fixed, respectively (asterisks). (D) In tetrapods and characiphysi RH1, reduction in amino acid variation (relative to teleosts) at positions within the 6 Å radius were driven by increases in purifying selection on non-synonymous codons. Statistically significant gene-wide increases in purifying selection (*) between lineages were detected by likelihood ratio tests of alternative (Clade model C [Bielawski and Yang, 2004]) and null (M2a_REL [Weadick and Chang, 2012]) model analyses of codon substitution rates (dN/dS) ((p<0.001); Tables 3–5). Sites estimated to be under this increase in purifying selection (*) were those identified in the divergent site class of the CmC model analyses through a Bayes empirical Bayes analysis as previously described (Castiglione et al., 2017. Site-specific dN/dS estimates are from M8 analyses on phylogenetically pruned datasets (Tables 8–10; Figure 1—figure supplement 2; Figure 2—figure supplement 1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35957/elife-35957-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Relationships were constructed according to species relationships (see Materials and methods).
+
+**Table 3.**
+ Results of Clade Model C (CmC) analyses of vertebrate rh1 under various partitions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model and Foreground†</th>
+      <th rowspan="2">ΔAIC‡</th>
+      <th rowspan="2">lnL</th>
+      <th colspan="3">Parameters</th>
+      <th rowspan="2">Null</th>
+      <th rowspan="2">P [df]</th>
+    </tr>
+    <tr>
+      <th>ω0</th>
+      <th>ω1</th>
+      <th>ω2/ωd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M2a_rel</td>
+      <td>225.5</td>
+      <td>−47185.37</td>
+      <td>0.02 (69%)</td>
+      <td>1 (3%)</td>
+      <td>0.20 (28%)</td>
+      <td>N/A</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CmC_Tetrapod Branch</td>
+      <td>97.44</td>
+      <td>−47119.33</td>
+      <td>0.20 (28%)</td>
+      <td>1 (3%)</td>
+      <td>0.02 (69%) Tetra Br: 0.00</td>
+      <td>M2a_rel</td>
+      <td>0.000 [1]</td>
+    </tr>
+    <tr>
+      <td>CmC_Tetrapod</td>
+      <td>4.92</td>
+      <td>−47073.06</td>
+      <td>0.02 (67%)</td>
+      <td>1 (3%)</td>
+      <td>0.24 (30%) Tetra: 0.13</td>
+      <td>M2a_rel</td>
+      <td>0.000 [1]</td>
+    </tr>
+    <tr>
+      <td>CmC_Teleost</td>
+      <td>1.88</td>
+      <td>−47071.54</td>
+      <td>0.02 (67%)</td>
+      <td>1 (3%)</td>
+      <td>0.14 (30%) Teleost: 0.24</td>
+      <td>M2a_rel</td>
+      <td>0.000 [1]</td>
+    </tr>
+    <tr>
+      <td>CmC_Teleost vs Tetrapod</td>
+      <td>0*</td>
+      <td>−47069.60</td>
+      <td>0.02 (67%)</td>
+      <td>1 (3%)</td>
+      <td>0.17 (30%) Tetra: 0.13 Teleost: 0.24</td>
+      <td>M2a_rel</td>
+      <td>0.000 [2]</td>
+    </tr>
+  </tbody>
+</table>
+
+_†The foreground partition is listed after the underscore for the clade models and consists of either: the clade of Teleost fishes (Teleost); the clade Tetrapods (Tetrapod;Tetra) or branch leading to tetrapods (Tetrapod branch; Tetra Br); or the clades of both the teleost fishes and tetrapods as two separate foregrounds (Teleost vs Tetrapods). In any partitioning scheme, the entire clade was tested, and all non-foreground data are present in the background partition.‡All ΔAIC values are calculated from the lowest AIC model. The best fit is shown with an asterisk (*).ωd is the divergent site class, which has a separate value for the foreground and background partitions.¶Significant p-values (α ≤0.05) are bolded. Degrees of freedom are given in square brackets after the p-values.Abbreviations—lnL, ln Likelihood; p, p-value; AIC, Akaike information criterion._
 
 Since fishes (Teleosts), unlike tetrapods, display amino acid variation at site 122 (Figure 1C), we hypothesized that compensatory mutations may be coevolving with site 122 across fish RH1. To test this hypothesis, we investigated across the entire transmembrane domain of rhodopsin (residues 53–302) for evidence of sites coevolving with site 122 within an alignment of Teleost RH1 (Materials and methods; Supplementary file 2). Using phylogenetically corrected mutual information (MI) analyses (MISTIC; [(Simonetti et al., 2013]) with z-score cut-off determined by analyses of randomized datasets (Ashenberg and Laub, 2013), we found significant evidence of coevolution with site 122 at several RH1 positions, all of which clustered within 6 Å of E122 (Figure 2B) in the MII crystal structure (Choe et al., 2011. This is within the range at which intramolecular forces such as Van der Waals and hydrophobic interactions between amino acids are thought to occur (Ivankov et al., 2014). It is known, however, that there is a tendency of covariation analyses such as MI to identify coevolving sites proximal to each other, which may in turn overlook more distal coevolving sites potentially indirectly interacting with site 122 (Talavera et al., 2015). Nevertheless, sites detected within this 6 Å radius (sites 119, 123) have been previously found capable of functionally compensating for human pathogenic mutations (e.g. A164V) disrupting the MII-stabilizing E122-H211 interaction (Stojanovic et al., 2003), suggesting that natural variation at coevolving sites within this radius could compensate for the functional effects of COV at site 122.
 
 We therefore decided to focus our investigations on identifying natural compensatory mutations at sites within this 6 Å radius. Relative to Teleost RH1 (where site 122 varies), we found that sites within this radius displayed decreased amino acid variation in Tetrapod and Characiphysi RH1, where E122 and I122 are fixed, respectively (asterisks, Figure 2C). This observation is consistent with an intramolecular evolutionary process known as entrenchment (Pollock et al., 2012; Goldstein and Pollock, 2017; Shah et al., 2015), where functionally favourable amino acid residues compensating for an original mutation tend to become fixed, thus mutually entrenching favourable amino acids at each position within the coevolving network. We therefore reasoned that if residues at nearby positions are indeed compensatory, then these sites should display a relative decrease in amino acid variation specifically in those vertebrate lineages where an amino acid has been fixed at site 122-- such as E122 in tetrapods and I122 in the Characiphysi. Furthermore, we hypothesized that decreases in amino acid variation observed in these lineages would be driven by an increase in purifying selection on non-synonymous codons, ultimately reflecting the entrenchment of compensatory amino acid residues by natural selection.
 
 We therefore employed codon-based phylogenetic likelihood methods to test for a relative increase of purifying selection at RH1 sites within 6 Å of site 122, within Tetrapod vs Teleosts, as well as in Characiphysi vs other Teleosts (Yang, 2007) (Materials and methods). Using likelihood ratio tests of alternative (Clade model C [(Bielawski and Yang, 2004]) and null (M2a_REL ([Weadick and Chang, 2012)]) model analyses of codon substitution rates (dN/dS) across the RH1 coding-sequence, we identified statistically significant evidence of gene-wide increases in purifying selection within Tetrapods (Table 3) and Characiphysi (Table 5) relative to teleosts ((p<0.001)). Sites estimated to be under this increase in purifying selection were those identified in the CmC divergent site class through a Bayes empirical Bayes analysis as previously described (Castiglione et al., 2017). Consistent with the fixation of E122 and I122 in tetrapod and Characiphysi RH1, respectively (asterisks, Figure 2C), we detected a relative increase of purifying selection on site 122 codons in tetrapod and Characiphysi RH1 relative to that of teleosts (Figure 2D; Tables 3–5), suggesting that a corresponding increase of purifying selection may have occurred at putatively coevolving sites within the 6 Å radius (Pollock et al., 2012; Goldstein and Pollock, 2017; Shah et al., 2015). No evidence for this was detected at sites 126 and 211, the other members of the TM3-TM5 domain stabilizing the MII active-state (Table 4; [(Choe et al., 2011)]). Yet within this radius, we found significant evidence for a relative increase of purifying selection in tetrapods and the Characiphysi (relative to teleosts) at several RH1 sites (119, 124, 168; Figure 2D; Table 4), some of which (sites 119; 168) also displayed significant statistical evidence for covariation (MI) with site 122 in Teleost RH1 (Figure 2B vs. 2D; Table 4). Furthermore, one of these sites (119) also exceeded the significance threshold in our Bonferroni-corrected phylogenetic tests of correlated evolution with site 122 where p-values were calculated by performing Monte Carlo tests using data from simulations (Pagel, 1994) (Materials and methods; Table 4). Taken together, these results provide evidence that an increase in purifying selection on non-synonymous codons drove the reduction in amino acid variation at positions coevolving with site 122, and this likely accompanied the fixation of E122 and I122 in tetrapods and the Characiphysi, respectively.
+
+**Table 4.**
+ Analyses used to elucidate sites coevolving with site 122 in Vertebrate rhodopsins (rh1).In bold are the results of interest described in the main text, including: elevated dN/dS, long-term shifts in selection between teleosts and tetrapods, amino acid statistical covariation with site 122 in the teleost dataset, and phylogenetically correlated amino acid variation with site 122.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Site</th>
+      <th>Distance to site 122 (Å)*</th>
+      <th>Tetrapod M8 dN/dS†</th>
+      <th>Teleost M8 dN/dS†</th>
+      <th>Characiphysi M8 dN/dS†</th>
+      <th>Posterior probability of long-term shift in selection (tetrapod/characiphysi)‡</th>
+      <th>Z-score covariation§</th>
+      <th>Significant correlated evolution?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>118</td>
+      <td>5</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>−1.54</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>3.5</td>
+      <td>0.14</td>
+      <td>0.168</td>
+      <td>0.05</td>
+      <td>0.57/0.19</td>
+      <td>30.2</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>3.1</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>−1.91</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>N/A</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>−0.94</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>N/A</td>
+      <td>0.05</td>
+      <td>0.322</td>
+      <td>0.05</td>
+      <td>1.00/1.00</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>N/A</td>
+      <td>0.19</td>
+      <td>0.094</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>20.4</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>3.2</td>
+      <td>0.05</td>
+      <td>0.411</td>
+      <td>0.05</td>
+      <td>1.00/1.00</td>
+      <td>5.53</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>3.4</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>1.19</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>3.7</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>−1.60</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>4.9</td>
+      <td>0.05</td>
+      <td>0.065</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>27.1</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>160</td>
+      <td>5.1</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>3.90</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>4.2</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>7.88</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>167</td>
+      <td>3.8</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>−1.38</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>168</td>
+      <td>5.9</td>
+      <td>0.05</td>
+      <td>0.308</td>
+      <td>0.192</td>
+      <td>1.00/1.00</td>
+      <td>34.2</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>207</td>
+      <td>4.9</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>−1.21</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>211</td>
+      <td>2.7</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>−1.38</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>265</td>
+      <td>5.1</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.05</td>
+      <td>0.00/0.00</td>
+      <td>−1.44</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+_∗From structural analysis of distances between amino acids and site 122 within the MII crystal structure 3PQR (Choe et al., 2011).†Post mean dN/dS from M8 analyses described in Tables 8–10.‡Bayes empirical Bayes posterior probability of long-term shift in selection calculated in Clade model C (CmC) (Yang, 2007) analyses (CmC_Teleost vs Tetrapod/CmC_Characi clade) described in Tables 3 and 5, respectively.§Phylogenetically corrected MI z-scores (MISTIC; [Simonetti et al., 2013]) of covariation with site 122 from analyses on Teleost RH1 dataset. Values were considered significant if greater than the top absolute z-score (21.6) from all site-wise comparisons from all analyses of 150 randomized datasets, as described (Ashenberg and Laub, 2013).¶Tests of correlated evolution in amino acid variation (Pagel, 1994) between a given site and site 122. p-values were calculated by performing Monte Carlo tests using data from simulations (n > 1000) in MESQUITE (Maddison and Maddison, 2017). p-Values were subjected to a Bonferroni-correction to determine significance (p<0.002)._
+
+**Table 5.**
+ Results of Clade Model C (CmC) analyses of teleost rh1 under various partitions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model and Foreground†</th>
+      <th rowspan="2">ΔAIC‡</th>
+      <th rowspan="2">lnL</th>
+      <th colspan="3">Parameters</th>
+      <th rowspan="2">Null</th>
+      <th rowspan="2">P [df]</th>
+    </tr>
+    <tr>
+      <th>ω0</th>
+      <th>ω1</th>
+      <th>ω2/ωd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M2a_rel</td>
+      <td>17.1</td>
+      <td>−30987.99</td>
+      <td>0.01 (60%)</td>
+      <td>1 (5%)</td>
+      <td>0.19 (35%)</td>
+      <td>N/A</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CmC_Characi branch</td>
+      <td>19.05</td>
+      <td>−30986.96</td>
+      <td>0.01 (60%)</td>
+      <td>1 (5%)</td>
+      <td>0.19 (35%) Char Br: 0.20</td>
+      <td>M2a_rel</td>
+      <td>0.794 [1]</td>
+    </tr>
+    <tr>
+      <td>CmC_Characi clade</td>
+      <td>0*</td>
+      <td>−30977.43</td>
+      <td>0.00 (60%)</td>
+      <td>1 (5%)</td>
+      <td>0.20 (20%) Char Cl: 0.10</td>
+      <td>M2a_rel</td>
+      <td>0.000 [1]</td>
+    </tr>
+  </tbody>
+</table>
+
+_The foreground partition is listed after the underscore for the clade models and consists of either: the ancestral branch leading to the Characiphysi (Characi branch; Char Br) or the entire Characiphysi clade (Characi clade; Char Cl). In any partitioning scheme, the entire clade was tested, and all non-foreground data are present in the background partition.‡All ΔAIC values are calculated from the lowest AIC model. The best fit is bolded with an asterisk (*).§ωd is the divergent site class, which has a separate value for the foreground and background partitions.Significant p-values (α ≤0.05) are bolded. Degrees of freedom are given in square brackets after the p-values.Abbreviations—lnL, ln Likelihood; p, p-value; AIC, Akaike information criterion._
 
 Due to the consistency of these findings with coevolutionary entrenchment, we hypothesized that we could identify fixed residues within this 6 Å radius in Characiphysi RH1 that may be functionally compensatory for the ancient E122I mutation that occurred in the ancestral Characiphysi (Figure 2A). Of the RH1 sites displaying significant statistical evidence for covariation (MI) with site 122 in Teleost RH1 (Figure 2B; 119, 127, 168), as well as those displaying significant evidence for a relative increase of purifying selection in tetrapods and the Characiphysi (relative to teleosts; 119, 124, 168; Figure 2D; Table 4) only sites 119, 124 and 127 had fixed amino acid residues in Characiphysi RH1 relative to other Teleosts (asterisks, Figure 2C), suggesting this strict conservation pattern may reflect entrenchment due to the fixation of I122. In contrast, despite a statistically significant increase in purifying selection on non-synonymous codons relative to other Teleosts, site 168 nevertheless displayed amino acid variation in the Characiphysi (T/V168; Figure 2C, D), suggesting it may not necessarily play a functionally compensatory role for the ancient E122I mutation, especially since T vs. V168 may be reasonably expected to have biochemically and/or structurally dissimilar effects on this region of the rhodopsin TM3-TM5 microdomain (Choe et al., 2011). Conversely, although C127 has been fixed in Characiphysi RH1 relative to other Teleosts (asterisks, Figure 2C) and may therefore be functionally important, there was no increase in purifying selection on non-synonymous codons at site 127 relative to Teleosts (Figure 2D), suggesting that the fixation of C127 in Characiphysi RH1 may be a historical contingency that does not necessarily reflect intramolecular entrenchment by the ancient E122I mutation (Goldstein and Pollock, 2017. Although this same logic ostensibly applies to site 123, unlike C127—a residue shared with some tetrapods (Figure 2C; Supplementary files 1–3)—we observed a striking fixation of a rare amino acid residue in Characiphysi RH1 (N123, asterisks, Figure 2C) which is not, to our knowledge, observed within any vertebrate rhodopsin other than the Characiphysi where it is completely fixed (Tables 1–2, Supplementary files 1–3), and located between coevolving sites 119, 122 and 124 which are also fixed in the Characiphysi (Figures 2C; 3A). This unique natural variation is particularly interesting as site 123 has been previously found capable of functionally compensating for human pathogenic mutations (e.g. A164V) disrupting the MII-stabilizing E122-H211 interaction (Stojanovic et al., 2003).
 
@@ -53,19 +836,112 @@ Therefore, we decided to focus on sites 119, 123, and 124, two of which (119, 12
 
 **Figure 3.:** (A) Overview of tetrapod RH1 MII rhodopsin crystal structure (Choe et al., 2011 with coevolving sites. The green highlight and dashed line indicate the stabilizing hydrogen bond between E122-H211. (B) Reconstruction of residues at site 122 (Figure 2—figure supplement 1) and coevolving positions for ancestral characiphysi, tetrapod and outgroup rhodopsins indicates the entrenchment of two structural motifs centering around site 122 (Materials and methods). The LxxEIA (or LEIA) motif was also predicted as present within the ancestral Osteichthyes. Approximate divergence times are from (Hedges et al., 2015.
 
-## Experimental characterization of natural variation at coevolving sites
+### Experimental characterization of natural variation at coevolving sites
 
 We therefore tested the ability of coevolving sites 119, 123 and 124 to affect tetrapod rhodopsin function and the potential for natural variation at these sites to compensate for the destabilizing loss of the E122-H211 hydrogen bond. We conducted site-directed mutagenesis and in vitro expression of mutant rhodopsins using detergent micelles (Materials and methods). This was followed by in vitro functional characterization using spectroscopic absorbance- and fluorescence-based measurements of both λMAX and the stability of the active-state conformation (Figure 4; Figure 4—figure supplement 1; Table 6; Materials and methods), both of which can provide information on relative differences that exist within natural systems (Schafer et al., 2016; Van Eps et al., 2017; Schott et al., 2016a. Tetrapod RH1 with E122I (Figure 4A) and other FINS motif single substitutions to the coevolving sites (L119F, I123N, A124S; Figure 4B) displayed large shifts in rhodopsin λMAX and MII stability, with two single mutations (L119F, A124S) significantly increasing the stability of the active-conformation but producing opposite spectral tuning effects (Figure 4B; Table 6). Meanwhile, I123N destabilized the active-conformation almost as dramatically as E122I but produced no spectral tuning effect (Figure 4B; Table 6). This suggested that FINS substitutions at coevolving sites could functionally compensate for some of the pleiotropic effects of E122I on tetrapod rhodopsin.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/35957/elife-35957-fig4-v1.jpg)
+
+**Figure 4.:** The LEIA and FINS motifs are convergent solutions for high tetrapod RH1 active state (MII) stability but with different spectral absorbances. (A) The introduction of the ancestral cone opsin variant into tetrapod RH1 (E122I) blue-shifts rhodopsin absorbance λMAX and dramatically destabilizes the MII active-conformation (Figure 4—figure supplement 1; Table 6). Bar graphs show retinal release half-life values. (B) Substituting FINS motif residues into coevolving sites have varied effects on rhodopsin spectral tuning and the stability of the active-conformation. (C) Within the E122I background, FINS motif substitutions at coevolving sites have marked effects on spectral tuning, but no rescue effect on MII active-conformation stability. (D) Partial incorporation of the FINS motif within tetrapod rhodopsin produces further blue-shifting effects and has a significant but small stabilizing effect within the E122I background. (E) Full incorporation of the FINS motif into tetrapod RH1 maintains the absorbance blue-shift while fully rescuing the destabilizing effects of E122I on tetrapod RH1. Statistically significant differences in MII stability were calculated using two-tailed t-tests with unequal variance, with standard error reported in bar graphs (*p<0.05; **p<0.01; ***p<0.001). The number of biological replicates (i.e. separate elutions and/or purifications of rhodopsin) are described in Table 6.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35957/elife-35957-fig4-figsupp1-v1.jpg)
+
+**Table 6.**
+ Summary of spectroscopic assays on wild-type and mutant rhodopsins.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>119-122-123-124 motif</th>
+      <th>λMAX (nm)∗,†</th>
+      <th>Half-life of retinal release1,2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild-type Bovine rhodopsin</td>
+      <td>LEIA</td>
+      <td>498.2 ± 0.1 (4)</td>
+      <td>13.3 ± 0.6 (4)</td>
+    </tr>
+    <tr>
+      <td>L119F</td>
+      <td>FEIA</td>
+      <td>503.5 ± 0.8 (3)</td>
+      <td>17.4 ± 0.8 (3)</td>
+    </tr>
+    <tr>
+      <td>E122I</td>
+      <td>LIIA</td>
+      <td>495.4 ± 0.2 (4)</td>
+      <td>5.93 ± 0.6 (3)</td>
+    </tr>
+    <tr>
+      <td>I123N</td>
+      <td>LENA</td>
+      <td>498.0 ± 0.3 (3)</td>
+      <td>7.31 ± 0.9 (4)</td>
+    </tr>
+    <tr>
+      <td>A124S</td>
+      <td>LEIS</td>
+      <td>496.6 ± 0.2 (3)</td>
+      <td>23.5 ± 0.4 (3)</td>
+    </tr>
+    <tr>
+      <td>L119F/E122I</td>
+      <td>FIIA</td>
+      <td>496.6 ± 0.4 (3)</td>
+      <td>7.68 ± 0.3 (3)</td>
+    </tr>
+    <tr>
+      <td>E122I/I123N</td>
+      <td>LINA</td>
+      <td>494.8</td>
+      <td>6.47 ± 0.3 (3)</td>
+    </tr>
+    <tr>
+      <td>E122I/A124S</td>
+      <td>LIIS</td>
+      <td>492.5 ± 0.5 (3)</td>
+      <td>7.24 ± 0.2 (3)</td>
+    </tr>
+    <tr>
+      <td>L119F/E122I/A124S</td>
+      <td>FIIS</td>
+      <td>492.2 ± 0.1 (3)</td>
+      <td>9.40 ± 0.2 (3)</td>
+    </tr>
+    <tr>
+      <td>L119F/E122I/I123N/A124S</td>
+      <td>FINS</td>
+      <td>492.6 ± 0.3 (4)</td>
+      <td>15.7 ± 0.8 (3)</td>
+    </tr>
+  </tbody>
+</table>
+
+_∗Standard error is shown.†Number of biological replicates (i.e. separate elutions and/or purifications of rhodopsin) is shown in brackets._
 
 We created double and triple mutants representing partial replacements of the LEIA with the FINS motif, which tended to blue-shift λMAX (Figure 4C–D; Table 6). Yet, none of these intermediates were sufficient to restore WT-levels of MII stability within the COV I122 background (Figure 4C–D; Table 6). We therefore reasoned that the complete recapitulation of the FINS motif within tetrapod rhodopsin may be required for a full restoration of WT active-conformation stability. We found, incredibly, that the L119F/I123N/A124S triple mutation fully restored the MII stability of E122I tetrapod rhodopsin to WT levels, while even further blue-shifting λMAX relative to E122I (Figure 4E; Table 6). The LEIA and FINS motifs are therefore two configurations conferring convergent MII stabilities but different spectral sensitivities, with the blue-shifting I122-containing FINS motif likely also decreasing rod dark noise in vivo (Gozem et al., 2012; Yue et al., 2017).
 
 Our experiments demonstrate that N123, which is not, to our knowledge, observed within any vertebrate rhodopsin other than the Characiphysi (Tables 12, Supplementary files 1–3) is nevertheless required for a complete rescue of MII stability within the LWS COV I122 background, where it has opposite functional effects depending on E vs. I122 backgrounds (also known as sign-epistasis [Storz, 2016; Weinreich et al., 2006]) (Figure 4D–E; Figure 5). Structural analysis of a homology model of the MII active-state structure (Materials and methods; Figure 5—figure supplement 1) suggests the conformation of the FINS motif mediates a series of context-dependent structural rearrangements promoting novel interactions (F119 with W161; N123 with N78/T160; Figure 5—figure supplement 1) that can interact with existing GPCR hydrogen bond networks known to stabilize the MII active conformation (S124 with D83-S298- N302; Figure 5—figure supplement 1; [Choe et al., 2011]). These epistatic structural interactions produce correspondingly variable pleiotropic effects on RH1 spectral absorbance and MII stability (Figure 4), which were consistent with patterns of natural sequence variation at these positions across vertebrate rhodopsins. Using these patterns of naturally occurring sequence variation, we could successfully navigate a complex sequence-function landscape (Figure 5) to engineer the spectral and non-spectral functions of rhodopsin simultaneously.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/35957/elife-35957-fig5-v1.jpg)
+
+**Figure 5.:** Spectral absorbance (λMAX) and stability of the active-conformation (MII) of wild type and mutant tetrapod RH1 with E122 (green) and I122 (blue), respectively. The only natural intermediate between the wild-type tetrapod consensus motif (LEIA) and the wild-type Characiphysi motif (FINS) is ‘FIIA’ from Lungfish RH1. The mutation I123N has opposite effects on MII stability depending on background sequence (sign-epistasis), which may have closed the LEIA to FINS motif evolutionary trajectory (dashed line) for tetrapod RH1.Although reflecting a limited experimental dataset, these epistatic effects may have created indirect routes to the high MII stability of the FINS motif via intermediates with low MII stability.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35957/elife-35957-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Overview of a homology modeled mutant rhodopsin MII structure containing the FINS motif (Materials and methods) (Choe et al., 2011. F119 is membrane-facing (blue). (B) Zoom-in of F119 and buried-site N123, which may form novel hydrogen bonds with nearby conserved residues N78 and T160. These interactions may alter the conformation of residues near S124, as shown in (C) where D83, S298 and N302 participate in a hydrogen bond network stabilizing the active-conformation (Choe et al., 2011). Cascading structural alterations from F119, to N123 to S124 (green) may therefore increase active-conformation stability by integrating into existing stabilizing motifs, therefore compensating for the loss of the E122-H211 hydrogen bond (red).
+
 ## Discussion
 
 We questioned why E122, a residue that diminishes rod photosensitivity, was retained in the evolution of all tetrapod rod pigments. We investigated if it was possible to engineer a tetrapod RH1 with high active-state conformational stability without E122. We uncovered a natural solution—over 150 million years ago the ‘FINS’ motif originated within the rhodopsin of an ancestral population of the Characiphysi freshwater fish lineage. Although we explore here only a limited subsection of the total sequence-function space of tetrapod vs. Characiphysi RH1 (notably excluding sites 127 and 168 in our experimental analyses), this natural variation, nevertheless, inspired us to engineer a synthetic alternative that nature never produced: a tetrapod RH1 with high MII stability without E122, resulting in a blue-shifted pigment predicted to increase rod photosensitivity in vivo. These results, along with recent advances in molecular evolutionary theory, and studies of rhodopsin biochemistry, suggest a plausible model of why the FINS motif might have been the road less traveled in evolutionary history.
 
-## Physiological relevance of MII stability—a proposed role in photoprotection in the eye
+### Physiological relevance of MII stability—a proposed role in photoprotection in the eye
 
 Did a physiological advantage related to high MII stability drive the fixation of the LEIA and FINS motifs? Consistent with predictions of intramolecular coevolutionary theory (Talavera et al., 2015; Pollock et al., 2012; Shah et al., 2015), evolutionary trajectories from the LEIA to FINS motifs must pass through sub-optimal sequence-function intermediates which include variants associated with active-state instability and human rhodopsin disease phenotypes (e.g. A164V) (Stojanovic et al., 2003) (Figure 5). Similar to E122I, disease variants such as A164V are likely pathogenic through disruption of the E122-H211 hydrogen bond, which has been shown to stabilize the active-state conformation but can be affected indirectly through mutations at nearby sites 119 and 123 (Imai et al., 1997; Stojanovic et al., 2003; Morrow and Chang, 2015. Although correlations between dark-state stability and active-state (MII) stability have been recently postulated (Kojima et al., 2017), there exists substantial conformational differences in the TM3-TM5 region thought to stabilize both structures, including the reconfiguration of E122-H211 and E122-W126 hydrogen bonds upon light activation (Choe et al., 2011; Ahuja et al., 2009; Okada et al., 2004; Lin and Sakmar, 1996). While it is unclear if such structural differences exist within the cone opsins, the lack of E122 (e.g. Q122 in Rh2 (except the lamprey [(Lin et al., 2017; Davies et al., 2007)), I122 in LWS (Lamb et al., 2007; Carleton et al., 2005)) strongly suggests that natural selection has prioritized dark-state stability over MII stability within the cone opsins, which may be related to mitigating the high noise of cone photoreceptors, especially in red-shifted LWS (Gozem et al., 2012; Kefalov et al., 2003; Imai et al., 1997; Chen et al., 2012a; Kefalov et al., 2005). By contrast, in tetrapod rhodopsins, E122 predominates, increasing MII stability while red shifting spectral absorbance, and therefore also decreasing in vivo rod photosensitivity (Gozem et al., 2012; Yue et al., 2017). This suggests that selection has maintained E122, and therefore the stability of the MII active-conformation, for reasons distinct from those maintaining the stability of the dark-state conformation, which modulates rod photosensitivity.
 
@@ -77,7 +953,7 @@ Although multiple molecular mechanisms within the visual cycle appear to have ev
 
 While only detailed experimental investigations can determine the relationships between rhodopsin regeneration rates, atRAL-associated photodamage, and the recently expanded ensemble of spectrally identical MII conformational substates (Van Eps et al., 2017, a putative photoprotective role for the intrinsic stability of the rhodopsin MII active conformation would imply the presence of strong rhodopsin functional constraints in addition to those canonical constraints associated with rod photosensitivity. This model is consistent with the fact that high rod photosensitivity and susceptibility to photodamage appear to be a trade-off that accompanied the evolution of rhodopsin-mediated dim-light vision (Grimm et al., 2000; Williams and Howell, 198390,91. Indeed, a trade-off model of rhodopsin evolution may clarify why the experimental relevance of long MII decay still remains unclear, as the focus has been mostly on mutational effects to photosensitivity, rather than photodamage ( Kojima et al., 2014; Imai et al., 2007). Below, we outline a trade-off model of rhodopsin evolution, and describe in detail how it may help to unravel the paradoxical distribution of natural sequence variation at rhodopsin site 122.
 
-## Trade-offs between rhodopsin-mediated photosensitivity and photoprotection may explain the E122 paradox
+### Trade-offs between rhodopsin-mediated photosensitivity and photoprotection may explain the E122 paradox
 
 As discussed above, tetrapod susceptibility to photodamage is a necessary side-effect of rhodopsin-mediated dim-light vision (Grimm et al., 2000; ), yet it has been an often-overlooked possibility that the functional constraints governing rhodopsin evolution could have also been shaped by those associated with rhodopsin-mediated photodamage, which induces oxidative stress leading to retinal degenerative diseases via toxic atRAL (Tsybovsky and Palczewski, 2015; Sommer et al., 2014; Rózanowska and Sarna, 2005; Wenzel et al., 2005). By delaying both atRAL release and 11CR binding, high rhodopsin MII stability could provide an additional protective mechanism against rhodopsin-mediated photodamage outside the visual cycle—one which could be modulated parsimoniously in response to light conditions through mutations altering MII stability (Dungan and Chang, 2017; Gutierrez et al., 2018; Hauser et al., 2017b. Our model would therefore predict that the evolution of rhodopsin after divergence from the cone opsins involved unique functional specializations for both photosensitivity and photoprotection. These photodamage-related constraints associated with the evolution of dim-light vision may have been especially relevant within dim-light adapted animals with high levels of rhodopsin and an increased susceptibility to photodamage (Rózanowska and Sarna, 2005; Organisciak and Vaughan, 2010 where exposures to bright light flashes can dramatically increase toxic ATR accumulation levels, leading to photoreceptor degeneration (Saari et al., 1998; Chen et al., 2012b).
 
@@ -85,7 +961,7 @@ Interestingly, due to environmental differences, variation in the selective cons
 
 In tetrapods, none of these coevolutionary motifs include COV at site 122 (Tables 1, Supplementary files 1–2). This suggests that tetrapods have been confined to a local optimum (E122), which makes it tempting to speculate that this evolutionary constraint could only be maintained by the existence of a strongly detrimental pleiotropic effect, which we propose to be that of rhodopsin-mediated photodamage. Potential caveats to this theory include the existence of subterranean tetrapods maintaining E122 (Table 1)—a system where one might expect the putative photodamage-associated constraints on rhodopsin to relax, as may have occurred within a variety of deep-sea fishes (although it remains unclear if increases to photosensitivity would even be prioritized within these animals if the putative constraints on photoprotection were indeed relaxed (Partha et al., 2017)). Although speculative, our trade-off model of rhodopsin evolution, combined with fitness landscape theory (Hartl, 2014) could potentially explain why the evolutionary trajectories between the LEIA and FINS motifs have been traversed by some freshwater fishes, but never by a tetrapod lineage.
 
-## Exploring inferred fitness landscapes using natural variation
+### Exploring inferred fitness landscapes using natural variation
 
 Evolutionary pathways often include compensatory mutations (Talavera et al., 2015; Pollock et al., 2012; Shah et al., 2015; Tokuriki et al., 2008), where adaptive mutations are permitted by non-adaptive neutral mutations (Pál and Papp, 2017; Starr et al., 2017; Tarvin et al., 2017) (also known as ‘pre-adaptations’ [Pál and Papp, 2017], or ‘pre-adjustments’ [(Goldstein and Pollock, 2017)) and this contingency opens new evolutionary paths by accommodating the subsequent mutational perturbations to protein activity and/or stability (Tokuriki and Tawfik, 2009; Ivankov et al., 2014; DePristo et al., 2005). Similarly, we find that a triple mutation (L119F/I123N/A124S) would be required to functionally compensate for the detrimental effects of E122I on tetrapod rhodopsin active-conformation stability. Yet, one of these 'pre-adaptations' (I123N) is as destabilizing as E122I itself, and displays strong sign-epistasis (Figure 4), which may be sufficient to close the evolutionary trajectory leading from the LEIA to FINS motifs (Storz, 2016; Weinreich et al., 2005; Poelwijk et al., 2007). Accordingly, a wide variety of indirect evolutionary paths may cut through these valleys to access fitness peaks (Wu et al., 2016; Starr et al., 2017; Weinreich et al., 2006)—a scenario which has not been extensively characterized in protein systems evolving within natural environments (Pál and Papp, 2017; Hartl, 2014).
 
@@ -95,25 +971,498 @@ We therefore present a powerful integrative approach for the exploration of infe
 
 ## Materials and methods
 
-## Dataset assembly
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Bos taurus)</td>
+      <td>RH1(Rho)</td>
+      <td>N/A</td>
+      <td>Accession: M12689</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>Dr. David Hampson, University of Toronto</td>
+      <td></td>
+      <td>Authenticated by STR profiling</td>
+    </tr>
+    <tr>
+      <td>transfected construct</td>
+      <td>pIRES-hrGFP II</td>
+      <td>Stratagene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>1D4 monoclonal antibody</td>
+      <td>doi: 10.1007/978-1-4939-1034-2_1</td>
+      <td></td>
+      <td>fixed to Ultralink Resin (5mg 1D4:7mL Resin)</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Lipofectamine 2000</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Catalog Number: 11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ultralink Hydrazide Resin</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Catalog Number: 53149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>11-cis retinal</td>
+      <td>other</td>
+      <td></td>
+      <td>Dr. Rosalie Crouch, Medical University of South Carolina</td>
+    </tr>
+    <tr>
+      <td>sSoftware, algorithm</td>
+      <td>PAML 4.7</td>
+      <td>https://doi.org/10.1093/molbev/msm088</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sSoftware, algorithm</td>
+      <td>MISTIC</td>
+      <td>doi: 10.1093/nar/gkt427</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MODELLER</td>
+      <td>doi: 10.1002/cpbi.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Dataset assembly
 
 Rhodopsin-coding sequences (rh1) originating from Teleost fishes, Tetrapods, and other vertebrate outgroups (Supplementary file 1–3) were obtained from GenBank using BlastPhyMe (Schott et al., 2016b). Teleost fish rh1 sequences were sampled from all available phylogenetic orders denoted in Betancur et al., 2013. Tetrapod rh1 sequences were sampled from all major phylogenetic groupings (Figure 1—figure supplement 1) (Hedges et al., 2015; Foley et al., 2016; Prum et al., 2015; Amemiya et al., 2013, as described previously (Hauser et al., 2016). Rh1 alignments were generated using PRANK codon alignment (Löytynoja and Goldman, 2008. The final rh1 alignment encoded for rhodopsin amino acid residues 42 – 307 (bovine RH1 numbering), inclusively, where for mutual information analyses gaps were trimmed from the beginning and end of the alignment, resulting in a shorter alignment (residues 53– 302). In both instances, the alignments used for bioinformatic analysis encompassed the entire seven-transmembrane domain of rhodopsin. Using this alignment, we constructed three separate rh1 datasets for phylogenetic analysis: (1) Tetrapods (n = 86; Supplementary file 1); (2) Teleost fishes (n = 119; Supplementary file 2); (3) Vertebrate (n = 209) which included (1) and (2) in addition to outgroups. For each dataset, a species tree was constructed by reference to established relationships for Tetrapods (Hedges et al., 2015; Foley et al., 2016; Prum et al., 2015; Amemiya et al., 2013) and Teleosts (Betancur et al., 2013). The Vertebrate phylogeny was assembled by adding non-tetrapod Sarcopterygian outgroups to the Tetrapod phylogeny, combining this with the Teleost phylogeny, and then adding cartilaginous fish outgroups, all according to species relationships (Figure 1—figure supplement 2) (Betancur et al., 2013; Amemiya et al., 2013122,125. These phylogenies were used in subsequent computational analyses. We also constructed a Characiphysi rh1 dataset, representing wide phylogenetic sampling (Supplementary File 3), with an rh1 alignment encoding for residues 42– 307 as that described above, and where a species tree (Figure 2—figure supplement 1) was constructed by reference to established relationships (Chen et al., 2013 and references therein).
 
-## Analyses of intramolecular coevolution
+### Analyses of intramolecular coevolution
 
 We took a multifaceted approach toward detecting sites coevolving with site 122, corroborating our phylogenetic tests of evolutionary rates (dN/dS) (Yang, 2007) with phylogenetically corrected statistical tests of amino acid covariation (Simonetti et al., 2013), and phylogenetic analyses of correlated evolutionary patterns in amino acid substitutions (Pagel, 1994. We used these three approaches to search for evidence of coevolution between rhodopsin site 122 and sites within a 6 Å radius within the MII active-conformation crystal structure (Choe et al., 2011).
 
 We used codon models of molecular evolution from the PAML 4.7 software package (Yang, 2007) to identify evidence of increased purifying selection in rhodopsin-coding sequences (rh1). First, we estimated the evolutionary rates (dN/dS) within each rh1 dataset (Teleosts, Tetrapods, Vertebrates, Characiphysi) using the random sites models (M1, M2, M3, M7, M8) implemented in the CODEML program. This required pruning the outgroups from the Teleost and Tetrapod datasets. Site-specific evolutionary rates were obtained from M8, which was the best fitting model in each dataset as assessed by differences in Akaike information criterion (Tables 7–10). Next, we employed PAML Clade models (Bielawski and Yang, 2004 to explicitly test for long-term shifts in evolutionary rates (dN/dS) between foreground and background branches or clades within the rhodopsin datasets. In any partitioning scheme, all non-foreground data are present in the background partition. The foreground partition is listed after the underscore for the clade models (e.g. CmC_foreground). CmC analyses tested for long-term shifts in purifying selection between: tetrapod and teleost clades within the Vertebrate dataset (Table 3); the branch leading to the tetrapod clade within the Vertebrate dataset (Table 3); and the Characiphysi clade and the branch leading to the clade within the Teleost dataset (Table 5). M2aREL was used as the null model (Weadick and Chang, 2012). For all PAML models, multiple runs with different starting priors were carried out to check for the convergence of parameter estimates. Significant differences in model fits we determined by likelihood ratio-tests.
 
+**Table 7.**
+ Analyses of selection on Vertebrate rhodopsin (rh1) using PAML random sites models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model</th>
+      <th rowspan="2">lnL</th>
+      <th colspan="3">Parameters1</th>
+      <th rowspan="2">Null</th>
+      <th rowspan="2">P [df]2</th>
+      <th rowspan="2">Δ AIC§</th>
+    </tr>
+    <tr>
+      <th>ω0/p</th>
+      <th>ω1/q</th>
+      <th>ω2/ωp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M0</td>
+      <td>−49624.89</td>
+      <td>0.08</td>
+      <td>-</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>5516.80</td>
+    </tr>
+    <tr>
+      <td>M1a</td>
+      <td>−48355.44</td>
+      <td>0.05 (89%)</td>
+      <td>1.00 (11%)</td>
+      <td>-</td>
+      <td>M0</td>
+      <td>0.000 [1]</td>
+      <td>2979.91</td>
+    </tr>
+    <tr>
+      <td>M2a</td>
+      <td>−48355.44</td>
+      <td>0.05 (89%)</td>
+      <td>1.00 (3%)</td>
+      <td>1.00 (8%)</td>
+      <td>M1a</td>
+      <td>1 [2]</td>
+      <td>2983.91</td>
+    </tr>
+    <tr>
+      <td>M3</td>
+      <td>−47104.84</td>
+      <td>0.01 (58%)</td>
+      <td>0.11 (30%)</td>
+      <td>0.44 (12%)</td>
+      <td>M0</td>
+      <td>0.000 [4]</td>
+      <td>484.71</td>
+    </tr>
+    <tr>
+      <td>M7</td>
+      <td>−46906.24</td>
+      <td>0.24</td>
+      <td>1.19</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>81.51</td>
+    </tr>
+    <tr>
+      <td>M8a</td>
+      <td>−46864.60</td>
+      <td>0.32</td>
+      <td>3.10</td>
+      <td>1.00</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>0.230</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M8</td>
+      <td rowspan="2">−46863.49</td>
+      <td rowspan="2">0.32</td>
+      <td rowspan="2">2.94</td>
+      <td rowspan="2">1.14</td>
+      <td>M7</td>
+      <td>0.000 [2]</td>
+      <td rowspan="2">0*</td>
+    </tr>
+    <tr>
+      <td>M8a</td>
+      <td>0.135 [1]</td>
+    </tr>
+  </tbody>
+</table>
+
+_1ω values of each site class are shown are shown for model M0-M3 (ω0– ω2) with the proportion of each site class in parentheses. For M7 and M8, the shape parameters, p and q, which describe the beta distribution are listed instead. In addition, the ω value for the positively selected site class (ωp, with the proportion of sites in parentheses) is shown for M8.2Significant p-values (α ≤0.05) are bolded. Degrees of freedom are given in square brackets after the p-values.3#Model fits were assessed by Akaike information criterion differences to the best fitting model (asterisk).Abbreviations—lnL, ln Likelihood; p, p-value; N/A, not applicable._
+
+**Table 8.**
+ Analyses of selection on Teleost rhodopsin (rh1) using PAML random sites models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model</th>
+      <th rowspan="2">lnL</th>
+      <th colspan="3">Parameters1†</th>
+      <th rowspan="2">Null</th>
+      <th rowspan="2">P [df]†</th>
+      <th rowspan="2">Δ AIC§</th>
+    </tr>
+    <tr>
+      <th>ω0/p</th>
+      <th>ω1/q</th>
+      <th>ω2/ωp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M0</td>
+      <td>−32949.46</td>
+      <td>0.10</td>
+      <td>-</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>4489.79</td>
+    </tr>
+    <tr>
+      <td>M1a</td>
+      <td>−31605.10</td>
+      <td>0.05 (86%)</td>
+      <td>1.00 (14%)</td>
+      <td>-</td>
+      <td>M0</td>
+      <td>0.000 [1]</td>
+      <td>1803.10</td>
+    </tr>
+    <tr>
+      <td>M2a</td>
+      <td>−31605.10</td>
+      <td>0.05 (86%)</td>
+      <td>1.00 (10%)</td>
+      <td>1.00 (4%)</td>
+      <td>M1a</td>
+      <td>1 [2]</td>
+      <td>1807.10</td>
+    </tr>
+    <tr>
+      <td>M3</td>
+      <td>−30887.40</td>
+      <td>0.01 (58%)</td>
+      <td>0.13 (29%)</td>
+      <td>0.57 (13%)</td>
+      <td>M0</td>
+      <td>0.000 [4]</td>
+      <td>373.67</td>
+    </tr>
+    <tr>
+      <td>M8a</td>
+      <td>−30790.44</td>
+      <td>0.28</td>
+      <td>3.05</td>
+      <td>1.00</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>173.76</td>
+    </tr>
+    <tr>
+      <td>M7</td>
+      <td>−30767.11</td>
+      <td>0.19</td>
+      <td>0.68</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>127.10</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M8</td>
+      <td rowspan="2">−30702.57</td>
+      <td rowspan="2">0.25</td>
+      <td rowspan="2">1.62</td>
+      <td rowspan="2">1.92</td>
+      <td>M7</td>
+      <td>0.000 [2]</td>
+      <td rowspan="2">0*</td>
+    </tr>
+    <tr>
+      <td>M8a</td>
+      <td>0.000 [1]</td>
+    </tr>
+  </tbody>
+</table>
+
+_1ω values of each site class are shown are shown for model M0-M3 (ω0– ω2) with the proportion of each site class in parentheses. For M7 and M8, the shape parameters, p and q, which describe the beta distribution are listed instead. In addition, the ω value for the positively selected site class (ωp, with the proportion of sites in parentheses) is shown for M8.2Significant p-values (α ≤0.05) are bolded. Degrees of freedom are given in square brackets after the p-values.3#§Model fits were assessed by Akaike information criterion differences to the best fitting model (asterisk).Abbreviations—lnL, ln Likelihood; p, p-value; N/A, not applicable._
+
+**Table 9.**
+ Analyses of selection on Tetrapod rhodopsin (rh1) using PAML random sites models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model</th>
+      <th rowspan="2">lnL</th>
+      <th colspan="3">Parameters†</th>
+      <th rowspan="2">Null</th>
+      <th rowspan="2">P [df]‡</th>
+      <th rowspan="2">Δ AIC§</th>
+    </tr>
+    <tr>
+      <th>ω0/p</th>
+      <th>ω1/q</th>
+      <th>ω2/ωp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M0</td>
+      <td>−15541.64</td>
+      <td>0.05</td>
+      <td>-</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>1154.78</td>
+    </tr>
+    <tr>
+      <td>M1a</td>
+      <td>−15345.33</td>
+      <td>0.03 (93%)</td>
+      <td>1.00 (7%)</td>
+      <td>-</td>
+      <td>M0</td>
+      <td>[1]</td>
+      <td>764.17</td>
+    </tr>
+    <tr>
+      <td>M2a</td>
+      <td>−15345.33</td>
+      <td>0.03 (93%)</td>
+      <td>1.00 (0%)</td>
+      <td>1.00 (7%)</td>
+      <td>M1a</td>
+      <td>1 [2]</td>
+      <td>768.17</td>
+    </tr>
+    <tr>
+      <td>M3</td>
+      <td>−14981.40</td>
+      <td>0.00 (61%)</td>
+      <td>0.06 (28%)</td>
+      <td>0.29 (11%)</td>
+      <td>M0</td>
+      <td>0.000 [4]</td>
+      <td>42.31</td>
+    </tr>
+    <tr>
+      <td>M7</td>
+      <td>−14971.78</td>
+      <td>0.19</td>
+      <td>2.76</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>17.10</td>
+    </tr>
+    <tr>
+      <td>M8</td>
+      <td>−14961.25</td>
+      <td>0.20</td>
+      <td>3.55</td>
+      <td>1.00</td>
+      <td>M7</td>
+      <td>0.000 [2]</td>
+      <td>0*</td>
+    </tr>
+  </tbody>
+</table>
+
+_1ω values of each site class are shown are shown for model M0-M3 (ω0– ω2) with the proportion of each site class in parentheses. For M7 and M8, the shape parameters, p and q, which describe the beta distribution are listed instead. In addition, the ω value for the positively selected site class (ωp, with the proportion of sites in parentheses) is shown for M8.2Significant p-values (α ≤0.05) are bolded. Degrees of freedom are given in square brackets after the p-values.3#Model fits were assessed by Akaike information criterion differences to the best fitting model (bolded asterisk).Abbreviations—lnL, ln Likelihood; p, p-value; N/A, not applicable._
+
+**Table 10.**
+ Analyses of selection on Characiphysi rhodopsin (rh1) using PAML random sites models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model</th>
+      <th rowspan="2">lnL</th>
+      <th colspan="3">Parameters1</th>
+      <th rowspan="2">Null</th>
+      <th rowspan="2">P [df]2</th>
+      <th rowspan="2">Δ AIC§</th>
+    </tr>
+    <tr>
+      <th>ω0/p</th>
+      <th>ω1/q</th>
+      <th>ω2/ωp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M0</td>
+      <td>−10819.13</td>
+      <td>0.06</td>
+      <td>-</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>842.6</td>
+    </tr>
+    <tr>
+      <td>M1a</td>
+      <td>−10586.68</td>
+      <td>0.03 (91%)</td>
+      <td>1.00 (9%)</td>
+      <td>-</td>
+      <td>M0</td>
+      <td>0.000 [1]</td>
+      <td>379.73</td>
+    </tr>
+    <tr>
+      <td>M2a</td>
+      <td>−10586.68</td>
+      <td>0.03 (91%)</td>
+      <td>1.00 (9%)</td>
+      <td>9.07 (0%)</td>
+      <td>M1a</td>
+      <td>1 [(2</td>
+      <td>383.7</td>
+    </tr>
+    <tr>
+      <td>M3</td>
+      <td>−10403.20</td>
+      <td>0.00 (60%)</td>
+      <td>0.08 (29%)</td>
+      <td>0.40 (11%)</td>
+      <td>M0</td>
+      <td>0.000 4)</td>
+      <td>18.8</td>
+    </tr>
+    <tr>
+      <td>M7</td>
+      <td>−10401.45</td>
+      <td>0.17</td>
+      <td>1.77</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>9.27</td>
+    </tr>
+    <tr>
+      <td>M8a</td>
+      <td>−10395.82</td>
+      <td>0.18</td>
+      <td>2.27</td>
+      <td>1.00</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M8</td>
+      <td rowspan="2">−10394.82</td>
+      <td rowspan="2">0.18</td>
+      <td rowspan="2">2.22</td>
+      <td rowspan="2">1.50</td>
+      <td>M7</td>
+      <td>0.000 (2]</td>
+      <td rowspan="2">0*</td>
+    </tr>
+    <tr>
+      <td>M8a</td>
+      <td>0.136 [1]</td>
+    </tr>
+  </tbody>
+</table>
+
+_∗†ω values of each site class are shown are shown for model M0-M3 (ω0– ω2) with the proportion of each site class in parentheses. For M7 and M8, the shape parameters, p and q, which describe the beta distribution are listed instead. In addition, the ω value for the positively selected site class (ωp, with the proportion of sites in parentheses) is shown for M8.‡Significant p-values (α ≤0.05) are bolded. Degrees of freedom are given in square brackets after the p-values.Model fits were assessed by Akaike information criterion differences to the best fitting model (asterisk).Abbreviations—lnL, ln Likelihood; p, p-value; N/A, not applicable._
+
 Statistical tests of covariation (e.g. Mutual Information; MI) are an approximate measure for identifying coevolving sites in alignments of homologous protein families, but can have high false-positive rates due to sampling bias and random background effects (Ashenberg and Laub, 2013; Talavera et al., 2015), especially if there is a lack of phylogenetic correction (Simonetti et al., 2013; Dunn et al., 2008). Nevertheless, MI methods appear able to detect sites of functional importance that are close in proximity to each other (Ashenberg and Laub, 2013; Talavera et al., 2015). Given all these factors, we decided to employ MI analyses within our dataset only as a qualitative guide to provide additional insight into the putative coevolutionary dynamics within Vertebrate RH1, and to potentially corroborate our molecular evolution analyses since overlap between evolutionary rates and statistical covariation of amino acids has been described in detail (Talavera et al., 2015. Since MI is usually employed within large protein family datasets, rather than intrafamily comparisons (Ashenberg and Laub, 2013; Talavera et al., 2015) we subjected phylogenetically corrected MI z-scores (MISTIC; [(Simonetti et al., 2013)) to a significance threshold representing the top absolute z-score from all pairwise comparisons from across analyses of randomized datasets (n = 150), as previously described (Ashenberg and Laub, 2013. These MI calculations were conducted using MISTIC on the Teleost and Tetrapod RH1 amino acid alignments, separately, and phylogenetically corrected MI z-scores were reported for sites within a 6 Å radius of site 122 (Table 4).
 
 Lastly, to further corroborate our dN/dS analyses we investigated for evidence of correlated evolution between site 122 amino acid variation and variation at other sites within a 6 Å radius. This was done using an amino acid alignment of Teleost RH1 only; Tetrapod RH1 was not analyzed since site 122 is invariant. Consensus amino acid residues were determined for each site that fell within the 6 Å radius, where a consensus residue at a given position within a given taxa was represented as a ‘0’, whereas a natural variant was numbered as ‘1’. A phylogenetic method (Pagel, 1994) was then used to test for correlated evolution in amino acid variation between a given site within a 6 Å radius of site 122. The Teleost species phylogeny described above was used for these analyses within the MESQUITE software package (Maddison and Maddison, 2017, where p-values were calculated by performing Monte Carlo tests using data from simulations (n > 1000) as previously described (Pagel, 1994). Significance was determined using p-values subjected to a Bonferroni-correction for multiple testing (Table 4).
 
-## Ancestral reconstruction
+### Ancestral reconstruction
 
 To reconstruct the evolutionary history of sites 119, 122, 123 and 124 at the origin of both Tetrapods and the Characiphysi, we used the Vertebrate rh1 alignment and phylogeny described above. This dataset was then used to implement codon-based marginal ancestral sequence reconstructions using the PAML 4.7 software package (Yang, 2007). Ancestral sequences were chosen from the best-fitting random sites model, which was M8 (Table 7). The likelihood-based reconstruction uses branch lengths and relative substitution rates between nucleotides, followed by empirical Bayesian reconstruction of ancestral codon states at ancestral nodes, where uncertainty is measured as posterior probabilities (Yang, 2006. To identify ancestral codons at the ancestral nodes (Figure 2), we consulted the full posterior probability distribution from the marginal reconstruction, where the character with the highest posterior probability is the best reconstruction (Yang, 2006. We verified the complete conservation of F119/I122/N123/S124 in Characiphysi RH1 by reference to an expanded Characiphysi RH1 amino acid alignment we assembled using a wide phylogenetic sampling of publicly available rh1 sequences (Supplementary file 3).
 
-## Rhodopsin mutagenesis, expression and spectroscopic assays
+### Rhodopsin mutagenesis, expression and spectroscopic assays
 
 The complete coding sequence of bovine (Bos taurus) rhodopsin in the pJET1.2 cloning vector (ThermoFisher Scientfic), as described in a previous study was used here (Castiglione et al., 2017). Site-directed mutagenesis primers were designed to induce single amino acid substitutions via PCR (QuickChange II, Agilent). All sequences were verified using a 3730 DNA Analyzer (Applied Biosystems) at the Centre for Analysis of Genome Evolution and Function (CAGEF) at the University of Toronto. Wild type and mutant rhodopsin sequences were transferred to the pIRES-hrGFP II expression vector (Stratagene) for subsequent transient transfection of HEK293T cells (8 µg per 10 cm plate) using Lipofectamine 2000 (Invitrogen). HEK293T cells were obtained from David Hampson (University of Toronto), were authenticated by STR profiling (Centre for Applied Genomics, The Hospital for Sick Children) and tested negative for mycoplasma contamination. Media was changed after 24 hr, and cells were harvested 48 hr post-transfection. Cells were washed twice with harvesting buffer (PBS, 10 µg/mL aprotinin, 10 µg/mL leupeptin), and rhodopsins were regenerated for 2 hr in the dark with 5 µM 11-cis-retinal generously provided by Dr. Rosalie Crouch (Medical University of South Carolina). After regeneration the samples were incubated at 4°C in solubilisation buffer (50 mM Tris pH 6.8, 100 mM NaCl, 1 mM CaCl2, 1% dodecylmaltoside, 0.1 mM PMSF) for 2 hr and immunoaffinity purified overnight using the 1D4 monoclonal antibody coupled to the UltraLink Hydrazide Resin (ThermoFisher Scientific). Resin was washed three times with wash buffer 1 (50 mM Tris pH 7.0, 100 mM NaCl, 0.1% dodecylmaltoside) and twice using wash buffer 2 (50 mM sodium phosphate, 0.1% dodecylmaltoside; pH 7.0). Rhodopsins were eluted from the UltraLink resin using 5 mg/mL of a 1D4 peptide, consisting of the last nine amino acids of bovine rhodopsin (TETSQVAPA).
 
@@ -121,6 +1470,6 @@ The UV-visible absorption spectra of purified rhodopsin samples (Figure 4—figu
 
 Retinal release following rhodopsin photoactivation was monitored using a Cary Eclipse fluorescence spectrophotometer equipped with a Xenon flash lamp (Agilent), according to a protocol modified from previous studies (Schafer et al., 2016; Farrens and Khorana, 1995). Rhodopsin samples (0.1 – 0.2 μM) were bleached for 30 s at 20°C with a fiber optic lamp (Dolan-Jenner) using a filter to restrict wavelengths of light below 475 nm to minimize heat. Fluorescence measurements were recorded at 30 s intervals with a 2 s integration time, using an excitation wavelength of 295 nm (1.5 nm slit width) and an emission wavelength of 330 nm (10 nm slit width). There was no noticeable activation by the excitation beam prior to rhodopsin activation. This assay detected increasing fluorescence as a result of decreased quenching of intrinsic tryptophan fluorescence at W265 by the retinal chromophore (Farrens and Khorana, 1995, and is a reliable proxy for the tracking the decay of MII (Schafer et al., 2016). Data was fit to a three variable, first-order exponential equation (y = y0+a(1-e-bx)), and half-life values were calculated using the rate constant b (t1/2 = ln2/b). All curve fittings resulted in r2 values greater than 0.95. Differences in retinal release half-life values were statistically assessed using a two-tailed t test with unequal variance.
 
-## Homology modelling of L119F/E122I/I123N/A124S Metarhodopsin II
+### Homology modelling of L119F/E122I/I123N/A124S Metarhodopsin II
 
 To better evaluate the potential for natural variants at sites 119, 122, 123 and 124 to disrupt nearby structural motifs of rhodopsin, the L119F/E122I/I123N/A124S quadruple mutant structure was computationally estimated from the 3D structure of MII (PDB code: 3PQR) (Choe et al., 2011. A 3D structure of MII with all-trans-retinal bound was inferred via homology modelling by MODELLER (Sali and Blundell, 1993; Eswar et al., 2006133,134). Minimizing the MODELLER objective function generated 100 separate models, and the run with the lowest discrete optimized protein energy (DOPE) score was assessed (Shen and Sali, 2006), with reference to the next four best fitting models serving as validation of structural changes. For each estimated structure, ProCheck was used to verify the high probability of bond angle and length stereochemical conformations, as indicated by positive overall G-factor (Laskowski et al., 1993. Comparisons of each model’s total energy to that expected by random chance were examined using ProSA-web (Wiederstein and Sippl, 2007). Images of 3D structures were generated using the PyMOL molecular graphics system, version 1.3 (Schrödinger, LLC).

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-Epithelial cells possess intrinsic mechanisms to maintain an appropriate cell density for normal tissue morphogenesis and homeostasis. Defects in such mechanisms likely contribute to hyperplasia and cancer initiation. To identify genes that regulate the density-dependent proliferation of murine mammary epithelial cells, we developed a fluorescence-activated cell sorting assay based on fluorescence ubiquitination cell cycle indicator, which marks different stages of the cell cycle with distinct fluorophores. Using this powerful assay, we performed a genome-wide CRISPR/Cas9 knockout screen, selecting for cells that proliferate normally at low density but continue to divide at high density. Unexpectedly, one top hit was Traf3 , a negative regulator of NF-κB signaling that has never previously been linked to density-dependent proliferation. We demonstrate that loss of Traf3 specifically activates noncanonical NF-κB signaling. This in turn triggers an innate immune response and drives cell division independently of known density-dependent proliferation mechanisms, including YAP/TAZ signaling and cyclin-dependent kinase inhibitors, by blocking entry into quiescence.
+Epithelial cells possess intrinsic mechanisms to maintain an appropriate cell density for normal tissue morphogenesis and homeostasis. Defects in such mechanisms likely contribute to hyperplasia and cancer initiation. To identify genes that regulate the density-dependent proliferation of murine mammary epithelial cells, we developed a fluorescence-activated cell sorting assay based on fluorescence ubiquitination cell cycle indicator, which marks different stages of the cell cycle with distinct fluorophores. Using this powerful assay, we performed a genome-wide CRISPR/Cas9 knockout screen, selecting for cells that proliferate normally at low density but continue to divide at high density. Unexpectedly, one top hit was Traf3, a negative regulator of NF-κB signaling that has never previously been linked to density-dependent proliferation. We demonstrate that loss of Traf3 specifically activates noncanonical NF-κB signaling. This in turn triggers an innate immune response and drives cell division independently of known density-dependent proliferation mechanisms, including YAP/TAZ signaling and cyclin-dependent kinase inhibitors, by blocking entry into quiescence.
 
 ## Introduction
 
@@ -25,9 +25,21 @@ With the goal of discovering novel factors that regulate epithelial homeostasis,
 
 ## Results
 
-## A FUCCI-based screen for density-dependent cell cycle arrest
+### A FUCCI-based screen for density-dependent cell cycle arrest
 
 Our goal was to design a screen for the rapid and efficient selection of epithelial cells that continue to proliferate inappropriately at high cell density. For the screen, we needed to identify a cell line that retained epithelial features, including homeostatic density control. We chose the murine EpH4 mammary epithelial cell line for this screen, because EpH4 cells are highly polarized, form confluent epithelial sheets, and, most importantly, we confirmed that they efficiently arrest at high density. We also needed a tool to specifically identify and select cells that maintain proliferative activity at high density. To distinguish cycling from non-cycling cells, we established a stable EpH4 line that expresses ES-FUCCI, which labels cells in G1/G0 with mCherry and cells in S/G2/M with mCitrine (Figure 1A; Sladitschek and Neveu, 2015). As expected, the EpH4-FUCCI cells remain proliferative at 1 day post-confluency but very few cells cycle at high density, with only about 1% of cells expressing mCitrine at 4 days post-confluency (Figure 1B, Figure 1—figure supplement 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of fluorescence ubiquitination cell cycle indicator (FUCCI) color transitions through cell cycle. (B) EpH4-FUCCI stable cell line grown to 1 and 4 days post-confluency. (C) Whole-genome CRISPR Knock Out screening strategy. (D) Read count distribution for samples before sorting and after different rounds of sorting. Data are logit transformed (f(p) = log2(p/1 - p) where p is the proportion of a given sgRNA in the total number of sgRNAs in a sample). Color coding shows depleted sgRNAs in blue, enriched sgRNAs in red, and sgRNA with no enrichment in white. Gray shows lost sgRNAs. (E) Genes plotted based on their RRA enrichment score (third sorting). (F) List of genes with FDR below 0.25 and ≥3 sgRNAs enriched compared to control after third sort.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Accumulation of mCitrine+ cells after FACS rounds. (A) Sorting of EpH4-fluorescence ubiquitination cell cycle indicator (FUCCI) cells by fluorescenceactivated cell sorting (FACS). The number of mCitrine+ cells is increased by depletion of p27. (B) p27 mRNA level in p27 KD cells relative to scrambled control cells measured by qPCR. (C) Strategy for proof-of-principle experiments. (D) Enrichment of sh-p27 after first and second round of FACS, compared to sh-p27 content before FACS, measured by qPCR. Histogram shows mean ± 1 s.d. (n = 3 technical repeats). (E) Imaging of EpH4-FUCCI cells at 4 days post-confluency before sorting and after different rounds of FACS. (F) Gating for sorting EpH4-FUCCI cells by FACS. The number of mCitrine+ cells increases after each round of sorting.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic of PCR reactions aimed to amplify sgRNA containing fragments from gDNA (PCR1) and attach Illumina primers (PCR2) for NGS. (B) The agarose gel with DNA amplified from gDNA of control samples and samples after different rounds of sorting (PCR1). (C) An agarose gel with PCR2 products for the third sorting sample with different Illumina primer pairs shown as an example of PCR2 reaction products. (D) The number of lost sgRNA (zero counts) and Gini index in samples before sorting and after different rounds of sorting. (D’) Total number of reads, number of mapped reads, and the fraction of mapped reads in samples before sorting and after different rounds of sorting. (E), (E’) RRA score plots for samples after first and second sorts, respectively. (F), (F’) The list of genes with FDR below 0.25 and more or equal to three sgRNAs enriched compared to control after first and second sorts, respectively.
 
 We reasoned that the expression of any shRNA or sgRNA that disrupts expression of a gene involved in density-dependent arrest could be identified by employing FACS to enrich for green cells from an EpH4-FUCCI population grown to high density. To test this concept, we used a shRNA lentiviral construct to deplete the CKI p27, which is known to be associated with cell cycle arrest post-confluency (Yamashita et al., 2015). Quantitative PCR for the p27 transcript showed that ~60% of p27 mRNA was lost in cells expressing the p27 shRNA compared to EpH4-FUCCI cells expressing scrambled shRNA (Figure 1—figure supplement 1B). The p27-depleted cells display increased cell proliferation after 4 days post-confluency in contrast to cells expressing scrambled shRNA (Figure 1—figure supplement 1A). As a proof-of-principle experiment, we next mixed wild-type (WT) EpH4-FUCCI cells and sh-p27 EpH4-FUCCI cells at a 10:1 ratio (Figure 1—figure supplement 1C). The mixed cells were then plated at a cell density of 100,000 cells/cm2, such that they reached confluency 24 hr after seeding. We grew the mixture of cells for 4 days post-confluency and sorted mCitrine-positive (mCitrine+) cells by FACS. After sorting, we isolated genomic DNA (gDNA) and performed qPCR using primers against the puromycin gene, located in the lentiviral plasmid insert, to assess the fraction of p27-depleted cells in the cell mixture. We observed an average of 1.4× and 3.5× enrichment of the puromycin gene after the first and second rounds of sorting, respectively (Figure 1—figure supplement 1D). These data support the validity of our screen design.
 
@@ -35,7 +47,7 @@ Based on these encouraging results, we proceeded to developing an EpH4-FUCCI cel
 
 We used the MAGeCK program (Li et al., 2014) to map sequencing reads to the library (Figure 1E, Figure 1—figure supplement 2D and D’). Read count distribution was relatively uniform in the control (unsorted) sample, with depletion of those sgRNAs that target essential genes. After each round of selection, more sgRNAs were depleted, but a small portion of sgRNAs was highly enriched. We utilized the MAGeCK algorithm to find genes that were enriched after sorts compared to control. MAGeCK takes into account changes in the abundance of all sgRNAs targeting a single gene, measured by the robust ranking aggregation (RRA) score. The most enriched genes have the smallest RRA scores (Figure 1F, Figure 1—figure supplement 2E and E’). We selected genes with FDR below 0.25 and with three or more sgRNAs/gene selected (Figure 1G, Figure 1—figure supplement 2F and F’).
 
-## The CRISPR screen identifies a component of the Hippo pathway, a lymphocyte proliferation control factor, and NEDD8-conjugating E2 enzyme
+### The CRISPR screen identifies a component of the Hippo pathway, a lymphocyte proliferation control factor, and NEDD8-conjugating E2 enzyme
 
 Interestingly, the top enriched target was Nf2/Merlin, which is a known tumor suppressor gene and a regulator of Hippo signaling necessary for cell density control (Petrilli and Fernández-Valle, 2016). This hit, the sgRNAs for which were enriched by >1000× above the control abundance, strongly validated our screening strategy. Two unexpected hits were for the Traf3 and Ube2m (Ubс12) genes (Figure 1G), which have not previously been implicated in density-dependent cell cycle arrest.
 
@@ -47,17 +59,33 @@ A third hit from our screen was Ube2m (ubiquitin conjugating enzyme E2 M, also k
 
 To confirm that loss of our top candidates indeed results in over-proliferation at high density, we developed two new sgRNA CRISPR v2 plasmids per gene. The sgRNA sequences were different from those in the GeCKO library. We transduced EpH4 cells with these sgRNA lentiviruses and confirmed efficient KO of each gene by immunoblotting for NF2, TRAF3, and UBE2M (Figure 2A–C’). To test if loss of the target genes leads to a failure in cell cycle arrest at high density, we analyzed BrdU incorporation at 1 and 4 days post-confluency. BrdU was added to cells for 1 hr, then cells were fixed and stained. When cells had just reached a confluent state, we found that BrdU incorporation was similar for the non-targeted sgRNA control (NT) and each of the KO cell lines, but that at high density the KO cells incorporated more BrdU than did the NT control cells (Figure 2D). These differences were statistically significant at high density, as determined by cytometric analysis of BrdU+ cells (Figure 2E and F, Figure 2—figure supplement 1A). We also observed that all three KO cell lines formed multiple layers at high density, while control cells remained as a single, uniform layer (Figure 2G and H, Figure 2—figure supplement 1B). Together, these data demonstrate that our screen successfully identified genes that are essential for the restriction of proliferation at high cell density. Importantly, loss of these genes has no effect on the cell cycle at lower densities.
 
-## TRAF3 suppresses proliferation of mammary organoids, human mammary epithelial cells, and fibroblasts
+![Figure 2.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) Immunoblots of NT control and NF2 (A), TRAF3 (B), and UBE2M (C) KO EpH4 cells for NF2, TRAF3, and UBE2M, respectively. α-tubulin or GAPDH was used as a loading control. (A’–C’) Quantification of NF2 (A’), TRAF3 (B’), and UBE2M (C’) levels based on immunoblotting in (A–C). (A’C’) Histograms show mean ± 1 s.d. (n = 3). p-values were calculated by one-way ANOVA followed by Dunnett’s multiple comparisons test. (D) NT control, NF2, TRAF3, and UBE2M KO cells grown for 1 or 4 days post-confluency. BrdU was added for 1 hr, and then cells were fixed and stained for BrdU, with DAPI as a nuclear marker. (E and F) Cytometric analysis of NT control, NF2, TRAF3, and UBE2M KO cells stained for BrdU to assess proliferation at 1 or 4 DPC, respectively. n = 4 (E) and n = 6 (F), histograms show mean ± 1 s.d. p-values were calculated by one-way ANOVA followed by Dunnett’s multiple comparisons test. (G) Control and KO cells stained with Hoechst dye. Confocal images are depth color coded. The color code scale is shown below. (H) Five fields of view in four biological repeats were used to quantify the level of multilayering. Data shown as a SuperPlot (Lord et al., 2020). p-values were calculated by mixed model two-way ANOVA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Flow cytometry gating for cells stained for BrdU. (B) Control and KO cells stained by phalloidin and Hoechst. Top panel shows xz view. (C) Kaplan–Meier plots show overall survival in all lung and gastric cancer based on Traf3 expression level. Red and black curves reflect patients with high and low Traf3 expression, respectively.
+
+### TRAF3 suppresses proliferation of mammary organoids, human mammary epithelial cells, and fibroblasts
 
 Little is known about the function of TRAF3 in epithelial cells, and its role in density-dependent cell cycle arrest has not been previously investigated. Interestingly, however, genetic alterations in Traf3 occur in a variety of human epithelial cancers, though at a level of <6% (Zhu et al., 2018). Low Traf3 mRNA expression is also associated with significantly worse survival for lung and gastric cancer patients (Figure 2—figure supplement 1C; Nagy et al., 2018). Therefore, we focused on this gene for further analysis.
 
 To determine the generality of the phenotype induced by deletion of Traf3, we first asked if the effects are confined to the EpH4 mammary epithelial line or are also important in primary mammary tissue. To address this question, we used murine mammary organoids, which recapitulate many aspects of normal morphogenesis of the mammary gland (Pasic et al., 2011; Ewald et al., 2008). Mammary gland ductal fragments were isolated from WT C3H mice, transduced with lentivirus, and then grown as organoids in Matrigel culture, as described previously (Pasic et al., 2011; Figure 3A). As shown in Figure 3B, WT organoids form buds with hollow lumens, but organoids lacking TRAF3 formed multilayered buds with small or no detectable lumens. Additionally, staining for phospho-HISTONE H3 revealed a substantially higher mitotic index in organoids deleted for Traf3, compared to organoids transduced with a control sgRNA (Figure 3B and C), demonstrating that TRAF3 normally suppresses WT tissue overgrowth.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig3-v2.jpg)
+
+**Figure 3.:** (A) Primary mammary organoid experiment workflow. (B) Maximum intensity projection of NT and TRAF3 KO1 mammary organoids stained for phospho-HISTONE H3 (pH3), E-CADHERIN, and DNA (Hoechst). Bottom panel – single confocal plane of NT and TRAF3 KO1 organoids. (C) Quantifications of the number of pH3-positive cells per organoid; 5–10 organoids of comparable size were quantified per condition per repeat. Data shown as a SuperPlot (n = 3). p-values were calculated by mixed model two-way ANOVA.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunoblotting of NT and TRAF3 KO MCF10a cells for TRAF3. GAPDH was used as a loading control. (A’) Quantifications of TRAF3 levels based on western blots (A) Histogram shows mean ± 1 s.d. (n = 3). p-values were calculated by one-way ANOVA followed by Dunnett’s multiple comparisons test. (B) Cytometric analysis of NT control and TRAF3 KO MCF10a cells stained for BrdU to assess proliferation at 5 days post-confluency. Histogram shows mean ± 1 s.d.(n = 3). p-values were calculated by one-way ANOVA followed by Dunnett’s multiple comparisons test. (B’) NT control and TRAF3 KO MCF10a cells at 5 days post-confluency were treated and stained for BrdU and DAPI as nuclear marker. (C) Immunoblotting of NT and TRAF3 KO NIH 3T3 cells for TRAF3. Actin was used as a loading control. (C’) Quantifications of TRAF3 levels based on western blots (C) Histogram shows mean ± 1 s.d. (n = 3). p-values were calculated by Student’s t-test. (D) Cytometric analysis of NT control and TRAF3 KO NIH 3T3 cells stained for BrdU to assess proliferation at 4 days post-confluency. Histogram shows mean ± 1 s.d. (n = 3). p-values were calculated by Student’s t-test. (D’) NT control and TRAF3 KO NIH 3T3 cells at 4 days post-confluency were treated and stained for BrdU and DAPI as nuclear marker.
+
 To extend our analysis across species, we transduced the normal human mammary gland cell line MCF10A with sgRNAs designed to target human Traf3. Loss of the gene product was confirmed by immunoblotting (Figure 3—figure supplement 1A and A′). We assessed cell proliferation by immunofluorescence and cytometric analysis of BrdU incorporation as described above, and found that, similar to EpH4 cells, MCF10a TRAF3 KO cells, but not WT MCF10a cells, over-proliferate at high density (Figure 3—figure supplement 1B and B′).
 
 Finally, we determined if this role for TRAF3 is confined to epithelial cells by knocking out the gene in NIH 3T3 fibroblasts. Normally, these cells contact-inhibit at high density. CRISPR KO of Traf3 (confirmed by western blotting (Figure 3—figure supplement 1D and D’)) promoted cell proliferation at high density as measured by cytometric analysis of BrdU staining (Figure 3—figure supplement 1D and D’). These data suggest that loss of TRAF3 broadly interferes with cell cycle arrest including cells of epithelial and mesenchymal lineages.
 
-## Loss of TRAF3 activates noncanonical NF-κB signaling to promote over-proliferation
+### Loss of TRAF3 activates noncanonical NF-κB signaling to promote over-proliferation
 
 How does TRAF3 regulate proliferation? We hypothesized that TRAF3 might be involved in the same pathways as in blood cells, where it negatively regulates both the canonical and noncanonical NF-κB pathways (He et al., 2006; Ramakrishnan et al., 2004; Zarnegar et al., 2008; Sun, 2017). In the noncanonical pathway, TRAF3 constitutively promotes proteasomal degradation of MAP3K14 (NIK), a kinase that is essential for activation of the downstream signaling cascade. Ligand recruitment to an upstream receptor triggers TRAF3 poly-ubiquitinylation and degradation. As a result, NIK levels increase, and it phosphorylates its downstream target IKKα, which in turn phosphorylates NFKB2 (p100). Phosphorylated p100 is partially degraded to p52, which enters the nucleus in association with RELB and regulates the transcription of target genes (Sun, 2017).
 
@@ -73,7 +101,7 @@ If TRAF3 affects cell proliferation via the noncanonical NF-κB pathway, then de
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig5-v2.jpg)
 
-**Figure 5.:** (A) Noncanonical NF-κB pathway schematic. Proteins shown in bold were manipulated in this study. (B) Immunoblotting of NT and TRAF3 KO1 cells transduced with pLVTHM GFP NT or p100 sgRNAs. Blot was stained for p100/p52, TRAF3, and GAPDH (loading control). (B′) Quantifications of western blot (B). Histogram shows mean ± 1 s.d. (n = 3). p-values were calculated by Student’s t-test. (C) Cytometric analysis of NT and TRAF3 KO cells transduced with pLVTHM GFP NT or p100 sgRNAs. Graph shows mean ± s.d. (n = 4). p-values were calculated by one-way ANOVA followed by Tukey’s multiple comparisons test. (D) NT and TRAF3 KO1 cells transduced with pLVTHM GFP NT or p100 sgRNAs were treated with BrdU at 4 days post-confluency and immunostained for BrdU and DAPI. (E) Immunoblot of NT and TRAF3 KO1 cells transduced with NT, NIK KO1 or KO2. Blot was stained for NIK, TRAF3, and GAPDH (loading control). (E’) Quantifications of western blot (E). Histogram shows mean ± 1 s.d (n = 3). p-values were calculated by one-way ANOVA followed by Tukey’s multiple comparisons test. (F) Cytometric analysis of NT cells and TRAF3 KO1 cells transduced with control NT, NIK KO1 and KO2. Histogram shows mean ± 1 s.d. (n = 5). p-values were calculated by one-way ANOVA followed by Tukey’s multiple comparisons test. (G) NT and TRAF3 KO1 cells transduced with control NT, NIK KO1 and KO2 were treated with BrdU at 4 days post-confluency and immunostained for BrdU and DAPI. (H and I) Cytometric analysis of NT and TRAF3 KO cells treated with 7 µM BV6 at low (H) and high (I) density. Histogram shows mean ± 1 s.d. (n = 5 (H), n = 6 (I)). p-values were calculated by one-way ANOVA followed by Dunnett’s (H) or Tukey’s (I) multiple comparisons test. (J) Immunoblot of NT, TRAF3 KO1 (positive control), and NT cells expressing pWPI mScarlet NIK-ΔT3. Blot was stained for NIK and GAPDH (loading control). (K) Cytometric analysis of NT cells and NT pWPI mScarlet NIK-ΔT3 cells. Histogram shows mean ± 1 s.d. (n = 6). p-values were calculated by Student’s t-test. (L) NT and NT pWPI mScarlet NIK-ΔT3 cells were treated with BrdU at 4 days post-confluency and immunostained for BrdU and DAPI.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Noncanonical NF-κB pathway schematic. Proteins shown in bold were manipulated in this study. (B) Immunoblotting of NT and TRAF3 KO1 cells transduced with pLVTHM GFP NT or p100 sgRNAs. Blot was stained for p100/p52, TRAF3, and GAPDH (loading control). (B′) Quantifications of western blot (B). Histogram shows mean ± 1 s.d. (n = 3). p-values were calculated by Student’s t-test. (C) Cytometric analysis of NT and TRAF3 KO cells transduced with pLVTHM GFP NT or p100 sgRNAs. Graph shows mean ± s.d. (n = 4). p-values were calculated by one-way ANOVA followed by Tukey’s multiple comparisons test. (D) NT and TRAF3 KO1 cells transduced with pLVTHM GFP NT or p100 sgRNAs were treated with BrdU at 4 days post-confluency and immunostained for BrdU and DAPI. (E) Immunoblot of NT and TRAF3 KO1 cells transduced with NT, NIK KO1 or KO2. Blot was stained for NIK, TRAF3, and GAPDH (loading control). (E’) Quantifications of western blot (E). Histogram shows mean ± 1 s.d (n = 3). p-values were calculated by one-way ANOVA followed by Tukey’s multiple comparisons test. (F) Cytometric analysis of NT cells and TRAF3 KO1 cells transduced with control NT, NIK KO1 and KO2. Histogram shows mean ± 1 s.d. (n = 5). p-values were calculated by one-way ANOVA followed by Tukey’s multiple comparisons test. (G) NT and TRAF3 KO1 cells transduced with control NT, NIK KO1 and KO2 were treated with BrdU at 4 days post-confluency and immunostained for BrdU and DAPI. (H and I) Cytometric analysis of NT and TRAF3 KO cells treated with 7 µM BV6 at low (H) and high (I) density. Histogram shows mean ± 1 s.d. (n = 5 (H), n = 6 (I)). p-values were calculated by one-way ANOVA followed by Dunnett’s (H) or Tukey’s (I) multiple comparisons test. (J) Immunoblot of NT, TRAF3 KO1 (positive control), and NT cells expressing pWPI mScarlet NIK-ΔT3. Blot was stained for NIK and GAPDH (loading control). (K) Cytometric analysis of NT cells and NT pWPI mScarlet NIK-ΔT3 cells. Histogram shows mean ± 1 s.d. (n = 6). p-values were calculated by Student’s t-test. (L) NT and NT pWPI mScarlet NIK-ΔT3 cells were treated with BrdU at 4 days post-confluency and immunostained for BrdU and DAPI.
 
 As a further test, we knocked out the effector kinase NIK. Immunoblotting (Figure 5E and E’) revealed that, as expected, NIK is undetectable in NT control cells, but accumulates in TRAF3 KO cells. However, expression was lost in TRAF3/NIK double KO cells. Similar to p100 KO, deletion of NIK caused reduced proliferation in TRAF3 KO cells (Figure 5F and G).
 
@@ -83,37 +111,49 @@ We next asked if the noncanonical NF-κB pathway is sufficient to induce over-pr
 
 We conclude that TRAF3 normally suppresses proliferation at high cell density via inhibition of the noncanonical NF-κB pathway but does not impact proliferation at lower cell density. This pathway does not contribute to proliferation in WT EpH4 cells but is constitutively activated by loss of TRAF3. Activation of noncanonical NF-κB pathway downstream of TRAF3 is both necessary and sufficient for over-proliferation phenotype at high density.
 
-## Noncanonical NF-κB signaling activates an innate immune response
+### Noncanonical NF-κB signaling activates an innate immune response
 
 Our data show that the loss of TRAF3 results in increased levels of the transcription factor p52, which is necessary for over-proliferation. However, gene expression changes downstream of noncanonical NF-κB signaling have not been investigated in epithelia, nor is it known which genes are targets of p52 in epithelial cells. Therefore, to identify downstream effectors of TRAF3 and noncanonical NF-κB signaling, we performed genome-wide transcriptomics analysis on NT control cells, TRAF3 KO, and TRAF3/p100 double KO cells. For these studies, we used our EpH4-FUCCI mammary epithelial cell line, which was transduced with NT, Traf3, or Traf3 plus p100 sgRNA lentiviruses, and sorted for G1/G0 phase (mCherry+) cells (Figure 6A). This strategy eliminates indirect gene expression differences reflective of the larger fraction of cycling (mCitrine+) cells caused by loss of TRAF3 but will not remove constitutive changes in gene expression.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig6-v2.jpg)
 
-**Figure 6.:** (A) RNAseq experiment workflow. (B) Ingenuity Pathway Analysis (IPA) of RNAseq data showing significant upregulation of pathways related to infection response in TRAF3 KO cells compared to NT control (top, pink bars), and significant reduction of these pathways in TRAF3/p100 double KO cells compared to TRAF3 KO cells (bottom, blue bars). Notably, Hippo signaling and other pathways that regulate proliferation were unchanged. Threshold line is p<0.05. (C–H) Heatmaps comparing mRNA levels of antigen presentation (C), interferon (D), foreign RNA and DNA recognition (E) pathway components, adhesion molecules (F), NADPH-oxidase components (G), and chemokines and growth factors (H) between NT, TRAF3 KO1, and TRAF3/p100 double KO in two experimental repeats. NT, TRAF3 KO1, and TRAF3/p100 double KO are color coded with green, purple, and light blue, respectively. Data are presented as log2 of transcripts per million (TPM).Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) RNAseq experiment workflow. (B) Ingenuity Pathway Analysis (IPA) of RNAseq data showing significant upregulation of pathways related to infection response in TRAF3 KO cells compared to NT control (top, pink bars), and significant reduction of these pathways in TRAF3/p100 double KO cells compared to TRAF3 KO cells (bottom, blue bars). Notably, Hippo signaling and other pathways that regulate proliferation were unchanged. Threshold line is p<0.05. (C–H) Heatmaps comparing mRNA levels of antigen presentation (C), interferon (D), foreign RNA and DNA recognition (E) pathway components, adhesion molecules (F), NADPH-oxidase components (G), and chemokines and growth factors (H) between NT, TRAF3 KO1, and TRAF3/p100 double KO in two experimental repeats. NT, TRAF3 KO1, and TRAF3/p100 double KO are color coded with green, purple, and light blue, respectively. Data are presented as log2 of transcripts per million (TPM).
 
 Two biological replicates of each cell line were processed, and fastq files were analyzed using CLC Genomics Workbench and Ingenuity Pathway Analysis (IPA). Differential gene expression was filtered for greater than twofold differences, FDR < 0.05. Surprisingly, IPA did not detect any stimulation by TRAF3 KO of those signaling pathways classically involved in proliferation, including PI3K/AKT, JNK, TGF-β, WNT, and Hippo (Figure 6B). There was, however, a dramatic induction of innate immune response genes. Antigen presentation, interferon response genes, and genes responsible for foreign DNA and RNA recognition were strongly upregulated by deletion of TRAF3 (Figure 6B–E). Additionally, TRAF3 KO cells overexpress adhesion molecules Icam1 and Vcam1 that facilitate adhesion of recruited leukocytes (Figure 6F). Superoxide-producing NADPH-oxidase complex genes, which eliminate bacteria and fungi, were also induced (Figure 6G), as were several chemokines and growth factors (Figure 6H), but some genes that normally respond to pathogens, such as defensins, IL-8, and IL-17, were not affected.
 
 The comparison of TRAF3 KO and TRAF3/p100 double KO samples revealed that not all pathways activated by TRAF3 KO could be reversed by blocking noncanonical NF-κB signaling. We found that p100 KO partially reduces antigen presentation gene expression, the interferon response pathway, and foreign DNA and RNA recognition genes (Figure 6B–E), but differential gene expression of other pathways was not significantly changed. These data argue that antigen presentation, interferon pathways, and foreign DNA and RNA recognition genes are downstream targets of noncanonical NF-κB signaling in mammary epithelial cells. However, none of these pathways is likely to promote cell proliferation. Rather, the data suggest that noncanonical NF-κB signaling instead suppresses signals that normally would cause cell cycle exit.
 
-## Loss of TRAF3 does not affect YAP signaling
+### Loss of TRAF3 does not affect YAP signaling
 
 Hippo/YAP signaling is a key mechanism that prevents abnormal proliferation at high density. Therefore, we tested whether the response to deletion of TRAF3 is independent of this pathway. The transcriptional co-activator YAP, a downstream effector of Hippo, is nuclear at low cell density and promotes cell cycling, but becomes phosphorylated and is cytoplasmic at high density (Ma et al., 2019). Therefore, we asked if loss of TRAF3 induces YAP translocation to the nucleus. We immunostained control, NF2 KO cells (positive control) and TRAF3 KO cells with anti-YAP antibodies. In dense cultures, YAP was predominantly cytoplasmic in the NT control cells, but nuclear in NF2 KO cells, as expected. However, deletion of TRAF3 did not induce significant nuclear accumulation of YAP, as compared to the NT control (Figure 7A and B). Moreover, comparison of expression profiles for conserved YAP target genes (Cordenonsi et al., 2011) from our RNAseq data showed an absence of any significant induction for more than 90% of conserved YAP target genes in TRAF3 KO cells compared to the NT control (Figure 7C). We conclude, therefore, that TRAF3 loss promotes over-proliferation independently of YAP, a major regulator of cell density-dependent proliferation.
 
-## The TRAF3 KO cell over-proliferation phenotype is cell autonomous
+![Figure 7.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig7-v2.jpg)
+
+**Figure 7.:** (A) NT, NF2 KO1, and TRAF3 KO1 cells stained for YAP and DAPI. (B) Quantifications of nuclear to cytoplasmic YAP ratio in NT, NF2 KO1, and TRAF3 KO1 cells. Measurements were of at least 12 fields of view per condition per experimental replicate, and the average ratio was calculated. Data are presented as a SuperPlot (n = 3). p-values were calculated by mixed model two-way ANOVA. (C) Conserved YAP/TAZ gene signature expression in TRAF3 KO1 cells shown as fold differences between NT control and TRAF3 KO1. Dashed threshold line is based on 2× increase in gene expression.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) NT and TRAF3 KO1 cells labeled with GFP or mScarlet were mixed at a 1:1 ratio (NT GFP + NT mScarlet, NT GFP + TRAF3 KO1 mScarlet) and grown to 4 days post-confluency. Cells were stained for KI-67 and DAPI. (B) Quantifications of NT GFP cell proliferation in mixture with NT mScarlet or TRAF3 KO1 mScarlet. Proliferation was measured as percent of KI-67-positive cells to the total number of NT GFP cells. Data are presented as a SuperPlot (n = 3). p-value was calculated by mixed model two-way ANOVA.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Immunoblotting for p21 in sparse NT cells, dense NT, TRAF3 KO1, NT/p100 KO, and TRAF3/p100 double KO cells. GAPDH was used as a loading control. (B) Western blotting for p27 and p18 in sparse NT cells, dense NT, TRAF3 KO1, NT/p100 KO, and TRAF3/p100 double KO cells. GAPDH was used as a loading control. (C) Western blotting for p19 in sparse NT cells, dense NT, TRAF3 KO1, NT/p100 KO, and TRAF3/p100 double KO cells. GAPDH was used as a loading control. (A’–C’) Quantifications of the blots (A–C). n = 4 for blots (A and B). n = 3 for blot (C). Histograms show mean ± 1 s.d. p-values were calculated by one-way ANOVA followed by Dunnett’s multiple comparisons test.
+
+### The TRAF3 KO cell over-proliferation phenotype is cell autonomous
 
 Our RNAseq data showed that several secreted factors including chemokines and growth factors (Figure 6H) are induced by loss of TRAF3, and we hypothesized that these factors might be secreted and trigger over-proliferation at high density in neighboring cells. To test this possibility, we labeled NT control cells with GFP and, separately, control or TRAF3 KO cells with mScarlet, then mixed red and green cells (NT + TRAF3 KO, or NT + NT) at a 1:1 ratio, and after 4 days post-confluency stained them for the proliferation marker KI-67 and DAPI (Figure 7—figure supplement 1A). Cytokines released from the TRAF3 KO cells could then, in principle, stimulate proliferation of surrounding NT (GFP+) control cells. However, there was no significant difference in the fraction of KI-67+ cells between NT GFP cells mixed with NT mScarlet and NT GFP cells mixed with TRAF3 KO mScarlet cells (Figure 7—figure supplement 1B). These data strongly argue that the over-proliferation phenotype is cell autonomous and is not a consequence of secreted cytokines or other factors.
 
-## Loss of TRAF3 does not affect the levels of CKIs
+### Loss of TRAF3 does not affect the levels of CKIs
 
 The p27 CKI has been reported to inhibit density-dependent proliferation in response to changes in LGL1/2 expression (Yamashita et al., 2015). Moreover, we demonstrated that shRNA knockdown of p27 can promote cell proliferation in EpH4 cells (Figure 1B and C, Figure 1—figure supplement 1A and B). Therefore, we asked if the noncanonical NF-κB pathway suppresses CKI induction at high cell density. We immunoblotted for p27 and other CKIs including CDKN1A (p21), CDKN2C (p18), and CDKN2D (p19), in subconfluent and dense cultures (4 days post-confluency) of NT, NT/p100 KO, TRAF3 KO1, and TRAF3/p100 double KO cells (Figure 7—figure supplement 2A–C). p21 levels were low in cells at low density, but were high in all dense cultures, irrespective of TRAF3 or p100 expression. No significant changes in any of the other CKIs we tested were detected at low versus high cell density, or in the absence of TRAF3 or p100 (Figure 7—figure supplement 2A'–C'). These data argue that noncanonical NF-κB signaling overrides the ability of these CKIs to induce cell cycle arrest in EpH4 cells.
 
-## Loss of TRAF3 blocks cells from entering G0
+### Loss of TRAF3 blocks cells from entering G0
 
 It was previously shown that TRAF3 induces over-proliferation by triggering CYCLIN D1 expression (Demicco et al., 2005; Park et al., 2006; Rocha et al., 2003; Zhang et al., 2007; Cao et al., 2001). We analyzed CYCLIN D1 in dense TRAF3 KO cells compared to NT cells by immunofluorescence. Indeed, we observed a small increase in CYCLIN D1 levels in TRAF3 KO cells compared to control (Figure 8A and B).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/63603/elife-63603-fig8-v2.jpg)
 
-**Figure 8.:** (A) NT and TRAF3 KO1 cells stained for CYCLIN D1 and DAPI. (B) Quantifications of CYCLIN D1 positive cells in NT and TRAF3 KO cells. Data are presented as a SuperPlot (n = 3). p-value was calculated by mixed model two-way ANOVA. (C) NT and TRAF3 KO1 cells grown for 24 hr in regular media or media without FBS (starved) were treated with BrdU and analyzed by flow cytometry. (D) A schematic of DHB-mVenus and phospho-RB S807/811 localization at different phases of cell cycle. (E) NT and TRAF3 KO1 cells stably expressing DHB-mVenus were grown to 4 days post-confluency and stained for phospho-RB S807/811 and DAPI. (F) Quantifications of cells with non-nuclear DHB-mVenus localization. Data are presented as a SuperPlot (n = 4). p-value was calculated by mixed model two-way ANOVA. (G) Quantification of phospho-RB positive cells. Data are presented as a SuperPlot (n = 4). p-value was calculated by mixed model two-way ANOVA.Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A) NT and TRAF3 KO1 cells stained for CYCLIN D1 and DAPI. (B) Quantifications of CYCLIN D1 positive cells in NT and TRAF3 KO cells. Data are presented as a SuperPlot (n = 3). p-value was calculated by mixed model two-way ANOVA. (C) NT and TRAF3 KO1 cells grown for 24 hr in regular media or media without FBS (starved) were treated with BrdU and analyzed by flow cytometry. (D) A schematic of DHB-mVenus and phospho-RB S807/811 localization at different phases of cell cycle. (E) NT and TRAF3 KO1 cells stably expressing DHB-mVenus were grown to 4 days post-confluency and stained for phospho-RB S807/811 and DAPI. (F) Quantifications of cells with non-nuclear DHB-mVenus localization. Data are presented as a SuperPlot (n = 4). p-value was calculated by mixed model two-way ANOVA. (G) Quantification of phospho-RB positive cells. Data are presented as a SuperPlot (n = 4). p-value was calculated by mixed model two-way ANOVA.
 
 We hypothesized that loss of TRAF3 prevents cells from entering the G0 quiescent state. Through this mechanism loss of TRAF3 should give a proliferative advantage to cells not only at high density but also under other challenging conditions, such as starvation, that also promote entry into G0. To test this idea, we grew NT and TRAF3 KO cells in normal medium or medium devoid of FBS (Figure 8C). We observed no difference in proliferation between NT and TRAF3 KO cells in normal medium after 1 day post-confluency. However, starvation decreased proliferation in control cells but not in TRAF3 KO cells. These data suggest that loss of TRAF3 prevents cells from entering G0.
 
@@ -141,11 +181,434 @@ As discussed above, Traf3 is mutated, though at low frequency, in different canc
 
 ## Materials and methods
 
-## Whole-genome CRISPR KO screen
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>GeCKO v2 KO Pooled Library</td>
+      <td>Sanjana et al., 2014, PMID:25075903; Addgene</td>
+      <td>CAT: 1000000052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Scrambled control shRNA</td>
+      <td>Sigma MISSION shRNA library</td>
+      <td>CAT: SHC016-1EA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>The p27 shRNA</td>
+      <td>Sigma MISSION shRNA library</td>
+      <td>CAT: TRCN0000287390</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>p27-qPCR-FWD primer</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>TCAAACGTGAGAGTGTCTAACG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>p27-qPCR-REV primer</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CCGGGCCGAAGAGATTTCTG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Puromycin-qPCR-FWD primer</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CTGCAAGAACTCTTCCTCACG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Puromycin-qPCR-REV primer</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>GGGAACCGCTCAACTCGG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Control non-targeting (NT) sgRNA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>GCGAGGTATTCGGCTCCGCG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Nf2 sgRNA KO1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CGAGATGGAGTTCAACTGCG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Nf2 sgRNA KO2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>ATACTGCAGTCCAAAGAACC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Traf3 sgRNA KO1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>GTGCTCGTGCCGGAGCAAGG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Traf3 sgRNA KO2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>TGGCCCTTCAGGTCTACTGT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Ube2m sgRNA KO1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>GCGCAGCTCCGGATTCAGAA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Ube2m sgRNA KO2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>GAGTCGGCCGGCGGCACCAA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Nfkb2/p100 sgRNA KO1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CTGAGCGTGATAAATGACGT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Nfkb2/p100 sgRNA KO2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CTGTTCCACAATCACCAGAT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Map3k14/NIK sgRNA KO1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>TCAGAGCGCATTTTCATCGC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Map3k14/NIK sgRNA KO2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>GTCGAGGCAGTACCGGTCGC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>Traf3 sgRNA KO1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>AGATTCGCGACTACAAGCGG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>Traf3 sgRNA KO2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CCTCACATGTTTGCTCTCGC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>DHB-mVenus</td>
+      <td>Spencer et al., 2013, PMID:24075009; Addgene</td>
+      <td>CAT: 136461, RRID:Addgene_136461</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (synthetic)</td>
+      <td>ES-FUCCI</td>
+      <td>Sladitschek and Neveu, 2015, PMID:25909630; Addgene</td>
+      <td>CAT: 62451, RRID:Addgene_62451</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>pWPI mScarlet NIK-ΔT3</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Mouse NIK with deleted TRAF3 binding motif (amino acids 78–84) cloned into pWPI-mScarlet vector</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NF2/MERLIN (rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>CAT: 6995S, RRID:AB_10828709</td>
+      <td>(1:750), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRAF3 (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>CAT: sc-6933, RRID:AB_628390</td>
+      <td>(1:200), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-UBE2M (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>CAT: 14520–1-AP</td>
+      <td>(1:500), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NF-κB2 p100/p52 (rabbit polyclonal)</td>
+      <td>CST</td>
+      <td>CAT: 4882, RRID:AB_10695537</td>
+      <td>(1:750), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NIK (rabbit polyclonal)</td>
+      <td>CST</td>
+      <td>CAT: 4994S, RRID:AB_2297422</td>
+      <td>(1:500), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RELB (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>CAT: ab180127</td>
+      <td>(1:1000), WB; (1:300), IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NF-kappaB Pathway Sampler Kit Antibody</td>
+      <td>CST</td>
+      <td>CAT: 9936, RRID:AB_561197</td>
+      <td>(1:1000), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CDKN1B/p27 (rabbit polyclonal)</td>
+      <td>BD Transduction Laboratories</td>
+      <td>CAT: 610241, RRID:AB_610241</td>
+      <td>(1:1000), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p21 (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>CAT: ma5-14353, RRID:AB_10986834</td>
+      <td>(1:1000), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p19 (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>CAT: sc-1063, RRID:AB_2078865</td>
+      <td>(1:200), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p18 (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>CAT: sc-1064, RRID:AB_2078729</td>
+      <td>(1:200), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>CAT: 2118S, RRID:AB_561053</td>
+      <td>(1:2000), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT: T-9026, RRID:AB_477593</td>
+      <td>(1:4000), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-actin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT: A4700, RRID:AB_476730</td>
+      <td>(1:4000), WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BrdU antibodies (rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>CAT: ab6326, RRID:AB_305426</td>
+      <td>(1:800), IF, Flow</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-YAP (rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>CAT: NB110-58358, RRID:AB_922796</td>
+      <td>(1:200), IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-RB Ser807/811 (rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>CAT: 8516S, RRID:AB_11178658</td>
+      <td>(1:1000), IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CYCLIN D1 (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>CAT: MA5-11387, RRID:AB_10987096</td>
+      <td>(1:50), IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KI-67 (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>CAT: 18-0191Z, RRID:AB_86661</td>
+      <td>1:70, IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-HISTONE H3 (Ser10) (mouse monoclonal)</td>
+      <td>CST</td>
+      <td>CAT: 9706S, RRID:AB_331748</td>
+      <td>1:300, IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-E-CADHERIN (rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>CAT: 14-3249-80, RRID:AB_1210459</td>
+      <td>1:500, IF</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Hoechst 33342 Fluorescent dye</td>
+      <td>Life Technologies</td>
+      <td>CAT: 62249</td>
+      <td>1:1000, IF</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>DAPI Fluorescent dye</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT: 422801</td>
+      <td>1:500, IF</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>DRAQ5 Fluorescent dye</td>
+      <td>CST</td>
+      <td>CAT: 4084</td>
+      <td>1:1000, IF</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>EpH4</td>
+      <td>Dr. Jurgen Knoblich, Institute of Molecular Biotechnology, Vienna, Austria</td>
+      <td></td>
+      <td>Identity verified by RNAseq, DNA sequencing and immunofluorescent staining for epithelial markers</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF10a</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0598</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH 3T3</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>C3H/HeNCrl</td>
+      <td>Charles River Laboratories</td>
+      <td>CAT: CRL:025, RRID:IMSR_CRL:025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BV6</td>
+      <td>ApexBio</td>
+      <td>CAT: B4653</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CLC Genomics Workbench</td>
+      <td>QIAGEN</td>
+      <td>RRID:SCR_011853</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity Pathway Analysis (Qiagen)</td>
+      <td>QIAGEN</td>
+      <td>SCR_008653</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji is just ImageJ</td>
+      <td>N/A</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAGeCK software</td>
+      <td>Li et al., 2014, PMID:25476604</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Whole-genome CRISPR KO screen
 
 Mouse CRISPR GeCKO v2 Knockout Pooled Library (Shalem et al., 2014; Sanjana et al., 2014) was purchased from Addgene. The library was amplified according to the developer’s protocol (Shalem et al., 2014; Sanjana et al., 2014). Library lentiviruses were produced as described below. EpH4-FUCCI cells transduced with the library were grown for 10 days to allow time for gene-editing and depletion of the target proteins. The cells were then seeded at 100,000 cells/cm2 and cultured for 4 days, then trypsinized with 0.25% trypsin (Gibco) and 4 × 107 cells (about 300 cells per sgRNA) were sorted on a FACSAria III for mCitrine+ (proliferating) cells. This population was replated, expanded, and resorted for mCitrine+ cells. This process was repeated for a total of three sorts. Genomic DNA from 4 × 107 cells before sorting, and after the first, second, and third rounds of sorting was purified using Blood and Cell Culture DNA Midi Kit (Qiagen). The sgRNA sequences were PCR amplified (26 × 100 μl reactions) from genomic DNA (~260 μg) using adaptor primers developed by the Zhang laboratory. The products of the first PCR reactions were amplified again with Illumina index primers to add barcodes and Illumina adaptors. The products of this reaction were purified and sequenced on a Novaseq instrument. We utilized MAGeCK software (Li et al., 2014) to analyze the fastq files. A read count distribution graph was generated using RStudio.
 
-## Plasmid constructs and primers
+### Plasmid constructs and primers
 
 ES-FUCCI (plasmid # 62451; Sladitschek and Neveu, 2015) and DHB-mVenus (plasmid #136461; Spencer et al., 2013) were purchased from Addgene. The p27 shRNA clone TRCN0000287390 in pLKO1 was obtained from the Sigma MISSION shRNA library. p27 knockdown was tested by qPCR and compared to cells transduced with a scrambled non-targeting control shRNA (Figure 1—source data 1).
 
@@ -153,21 +616,21 @@ The sgRNAs used in this study are listed in the Key Resources Table. sgRNAs were
 
 Deletion of TRAF3 binding motif (amino acids 78–84) from wild-type NIK cDNA was performed by site-directed mutagenesis. NIK-ΔT3 cDNA was cloned into the pWPI mScarlet vector between BamHI and AscI sites.
 
-## Cell culture, lentiviral transductions, transfections, and chemicals
+### Cell culture, lentiviral transductions, transfections, and chemicals
 
 EpH4 cells were obtained from Dr. Jurgen Knoblich (Institute of Molecular Biotechnology, Vienna, Austria). HEK293T, MCF10a, and NIH 3T3 were obtained from the ATCC. Cells are routinely tested for mycoplasma contamination by Hoechst DNA staining, and all were found to be negative. EpH4, NIH 3T3, and HEK293T cells were cultured in DMEM (Gibco) supplemented with 10% fetal bovine serum (Atlanta Biologicals) and 1× penicillin/streptomycin (Life Technologies). MCF10a cells were cultured in DMEM/F12 media (Gibco) supplemented with 5% horse serum (Gibco), EGF 20 ng/ml (Sigma), hydrocortisone 0.5 mg/ml (Sigma), cholera toxin 100 ng/ml (MP Biomedicals), insulin 10 μg/ml (Sigma), and 1× penicillin/streptomycin (Life Technologies). EpH4 cells were seeded at 100,000 cells/cm2 and cultured for 1 or 4 days. MCF10a cells were seeded at 100,000 cells/cm2 and cultured for 5 days. Lentiviruses were produced by calcium phosphate transfection of HEK293T cells with lentivectors and lentiviral packaging vectors psPAX2 and pMD2.G. Lentiviruses were collected and concentrated 48 hr after transduction, utilizing Amicon centrifugal filter units. EpH4 and MCF10a cells were transduced by lentiviruses by shaking cells and viruses in suspension at 400 rpm, 37°C for 1 hr. Transduced cells were selected by puromycin (CRISPR v2 vectors) or FACS (pWPI mScarlet, pLVTHM GFP, and DHB-mVenus vectors). EpH4 cells used for mixing experiments were NT pWPI mScarlet, NT pLVTHM GFP, and Traf3 KO1 pWPI mScarlet. SMAC mimetic BV6 was purchased from ApexBio (B4653).
 
 To develop the EpH4 ES-FUCCI stable cell line we linearized the ES-FUCCI vector with AseI and transduced cells using Xfect (Clontech) according to the manufacturer’s protocol. Cells were selected with 300 µg/ml Hygromycin followed by FAC sorting of mCitrine+ and/or mCherry+ cells.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Cells were treated with 3 µg/ml BrdU (Sigma-Aldrich) for 1 hr, then washed in sterile PBS and trypsinized. Trypsin was blocked with complete medium plus 50 µg/ml DNase to reduce clumping of cells. Cells were pelleted, incubated in 5 mM EDTA in PBS on ice for 10 min, and fixed in 4% paraformaldehyde (PFA) for 15 min at room temperature. BrdU incorporation was detected after treatment with 2N HCl for 20 min at 37°C, washing with 1.5 M Na2B4O7, blocking in Western Blocking reagent (Roche), and staining with anti-BrdU antibodies (1:800, Abcam, ab6326). Cells were analyzed using a Fortessa flow cytometer and analyzed using FlowJo.
 
-## Immunoblotting
+### Immunoblotting
 
 Cells were lysed in buffer containing 0.1% Triton-X100, 20 mM HEPES (pH 7.4), 50 mM NaCl, and 2 mM EDTA supplemented with a protease inhibitor cocktail (Roche), Calyculin A, and PhosStop phosphatase inhibitors (Roche). Cell lysates were briefly sonicated and centrifuged at 16,100 g for 10 min. After centrifugation, the soluble fraction was boiled with SDS sample buffer for 5 min. Antibodies used for western blotting are listed in the Key Resources Table.
 
-## Immunofluorescence staining, image acquisition, and analysis
+### Immunofluorescence staining, image acquisition, and analysis
 
 Cells were grown on LabTek II chamber slides (Thermo Scientific) for the indicated times and fixed with 4% PFA at room temperature for 15 min. Cells were permeabilized with 0.2% Triton X-100, blocked in 1× Western Blocking Reagent (Roche), and labeled for IF imaging. Primary antibodies used for IF are listed in the Key Resources Table. Secondary labeling was performed using Alexa Fluor secondary antibodies (1:500-1:1000, Life Technologies). Samples were mounted using Fluoromount G (Electron Microscopy Sciences). Laser scanning confocal images were acquired using 20×/0.75 Plan Apo or 100×/1.40 Plan Apo oil immersion objectives on a Nikon A1R inverted confocal microscope (Nikon Instruments Inc). Epifluorescence images were acquired using an EVOS FL inverted microscope (Life Technologies). Fiji software was used for post-acquisition processing.
 
@@ -175,18 +638,18 @@ Fiji Temporal Color Code function (fire color scale) was used for depth color co
 
 Nuclear/cytoplasmic ratio of YAP was measured using the ImageJ Intensity Ratio Nuclei CytoplasmTool (RRID:SCR_018573; https://github.com/MontpellierRessourcesImagerie/imagej_macros_and_scripts/wiki/Intensity-Ratio-Nuclei-Cytoplasm-Tool).
 
-## Real-time qPCR
+### Real-time qPCR
 
 Total RNA was extracted with TRIzol (Life Technologies). cDNA was reverse transcribed using the SuperScript III First-Strand Synthesis System (Invitrogen). qPCR was performed with triplicate replicates on a BioRad CFX96 Thermocycler and analyzed using the ΔΔCt method. Expression levels were calculated relative to Gapdh. p27 levels were assessed using p27 primers. The primers are listed in the Key Resources Table. The enrichment of cells containing sh-p27 after FACS was assessed using puromycin resistance gene primers, because the Puro cassette was integrated into the cell genome together with the p27 shRNA.
 
-## RNA sequencing
+### RNA sequencing
 
 NT, TRAF3 KO1, and TRAF3/p100 double KO EpH4-FUCCI cells were sorted for non-proliferating cells (mCherry+) by FACS. RNA from NT, TRAF3 KO1, and TRAF3/p100 double KO cells from two experimental repeats was isolated using the RNeasy Mini Kit (Qiagen). RNA quality control was performed using a 2100 Bioanalyzer (Agilent Technologies). Samples had RNA integrity numbers in the range 8.1–9.3. Sequencing was performed using the NovaSeq 6000 Sequencing System (Illumina, San Diego, CA). Data were processed and analyzed with CLC Genomics Workbench and Ingenuity Pathway Analysis (Qiagen).
 
-## Mouse mammary gland organoids
+### Mouse mammary gland organoids
 
 Mammary glands were isolated from 8-week-old C3H mice as described previously (Pasic et al., 2011). Cells were then briefly treated with 0.25% trypsin and filtered through a 40 μm strainer. Primary mammary cells were transduced with lentiCRISPR v2 NT control and Traf3 KO1 and grown for 8 days in 50% Matrigel (Corning) supplemented with Organoid Growth Medium (DMEM/F12 (Gibco), 5 ng/ml EGF (Sigma), 3 ng/ml mFGF2 (R and D Systems), and 1× ITS (Millipore Sigma)). Then organoids were fixed with PFA and immunostained. All mouse experimental procedures were approved by Vanderbilt Institutional Animal Care and Use Committee; IACUC protocol number M1800045, Exp: 04/26/2021.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were tested for normality by Shapiro–Wilk test and then analyzed by Student’s t-test, one-way ANOVA, or mixed model two-way ANOVA statistical test using GraphPad Prism software. When using ANOVA, post hoc analysis was done using Tukey or Dunnett multiple comparison tests. All statistical analyses were considered significant at p<0.05. Data presented as SuperPlots (Lord et al., 2020) combine individual measurements (small dots color coded for each replicate), mean values for each replicate (large dots color coded for each replicate), and mean ± s.d.

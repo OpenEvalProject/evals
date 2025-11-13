@@ -21,19 +21,19 @@
 
 ### Affiliations
 
-1. https://ror.org/035t8zc32 The Research Foundation for Microbial Diseases of Osaka University Suita Japan
-2. https://ror.org/035t8zc32 Virus Vaccine Group, BIKEN Innovative Vaccine Research Alliance Laboratories, Institute for Open and Transdisciplinary Research Initiatives, Osaka University Suita Japan
-3. https://ror.org/035t8zc32 Department of Experimental Genome Research, Research Institute for Microbial Diseases, Osaka University Suita Japan
-4. https://ror.org/035t8zc32 Center for Advanced Modalities and DDS (CAMaD), Osaka University Suita Japan
-5. https://ror.org/035t8zc32 Center for Infectious Disease Education and Research (CiDER), Osaka University Suita Japan
-6. https://ror.org/046fm7598 Department of Infectious Diseases and Host Defense, Gunma University Graduate School of Medicine Maebashi Japan
-7. https://ror.org/035t8zc32 Virus Vaccine Group, BIKEN Innovative Vaccine Research Alliance Laboratories, Research institute for Microbial Diseases, Osaka University Suita Japan
+1. The Research Foundation for Microbial Diseases of Osaka University Suita Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+2. Virus Vaccine Group, BIKEN Innovative Vaccine Research Alliance Laboratories, Institute for Open and Transdisciplinary Research Initiatives, Osaka University Suita Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+3. Department of Experimental Genome Research, Research Institute for Microbial Diseases, Osaka University Suita Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+4. Center for Advanced Modalities and DDS (CAMaD), Osaka University Suita Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+5. Center for Infectious Disease Education and Research (CiDER), Osaka University Suita Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+6. Department of Infectious Diseases and Host Defense, Gunma University Graduate School of Medicine Maebashi Japan ([ROR:046fm7598](https://ror.org/046fm7598))
+7. Virus Vaccine Group, BIKEN Innovative Vaccine Research Alliance Laboratories, Research institute for Microbial Diseases, Osaka University Suita Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
 
 † Corresponding author
 
 ## Abstract
 
-mRNA vaccines against SARS-CoV-2 were rapidly developed and were effective during the pandemic. However, some limitations remain to be resolved, such as the short-lived induced immune response and certain adverse effects. Therefore, there is an urgent need to develop new vaccines that address these issues. While live-attenuated vaccines are a highly effective modality, they pose a risk of adverse effects, including virulence reversion. In the current study, we constructed a live-attenuated vaccine candidate, BK2102, combining naturally occurring virulence-attenuating mutations in the NSP14 , NSP1 , spike, and ORF7-8 coding regions. Intranasal inoculation with BK2102 induced humoral and cellular immune responses in Syrian hamsters without apparent tissue damage in the lungs, leading to protection against a SARS-CoV-2 D614G and an Omicron BA.5 strains. The neutralizing antibodies induced by BK2102 persisted for up to 364 days, which indicated that they confer long-term protection against infection. Furthermore, we confirmed the safety of BK2102 using transgenic (Tg) mice expressing human ACE2 (hACE2) that are highly susceptible to SARS-CoV-2. BK2102 did not kill the Tg mice, even when virus was administered at a dose of 10 6 plaque-forming units (PFUs), while 10 2 PFU of the D614G strain or an attenuated strain lacking the furin cleavage site of the spike was sufficient to kill mice. These results suggest that BK2102 is a promising live-vaccine candidate strain that confers long-term protection without significant virulence.
+mRNA vaccines against SARS-CoV-2 were rapidly developed and were effective during the pandemic. However, some limitations remain to be resolved, such as the short-lived induced immune response and certain adverse effects. Therefore, there is an urgent need to develop new vaccines that address these issues. While live-attenuated vaccines are a highly effective modality, they pose a risk of adverse effects, including virulence reversion. In the current study, we constructed a live-attenuated vaccine candidate, BK2102, combining naturally occurring virulence-attenuating mutations in the NSP14, NSP1, spike, and ORF7-8 coding regions. Intranasal inoculation with BK2102 induced humoral and cellular immune responses in Syrian hamsters without apparent tissue damage in the lungs, leading to protection against a SARS-CoV-2 D614G and an Omicron BA.5 strains. The neutralizing antibodies induced by BK2102 persisted for up to 364 days, which indicated that they confer long-term protection against infection. Furthermore, we confirmed the safety of BK2102 using transgenic (Tg) mice expressing human ACE2 (hACE2) that are highly susceptible to SARS-CoV-2. BK2102 did not kill the Tg mice, even when virus was administered at a dose of 106 plaque-forming units (PFUs), while 102 PFU of the D614G strain or an attenuated strain lacking the furin cleavage site of the spike was sufficient to kill mice. These results suggest that BK2102 is a promising live-vaccine candidate strain that confers long-term protection without significant virulence.
 
 ## Introduction
 
@@ -45,13 +45,41 @@ Various mechanisms leading to reduced pathogenicity of SARS-CoV-2 have been repo
 
 ## Results
 
-## Construction of the live-attenuated vaccine candidate strains
+### Construction of the live-attenuated vaccine candidate strains
 
 Several genomic alterations are involved in the attenuation of SARS-CoV-2. In this study, we focused on deletions at three different sites within the viral genome: FCS within the spike protein, NSP1, and ORF7-8 (Figure 1—figure supplement 1A). While loss of the FCS inhibits virus-cell fusion mediated by TMPRSS2 in lung cells, partial deletion of NSP1 has been shown to impair viral proliferation in vitro, and the lack of ORF8 has been associated with milder symptoms and disease outcomes (Johnson et al., 2021; Lin et al., 2021; Ueno et al., 2024; Young et al., 2020; Zinzula, 2021). We previously obtained SARS-CoV-2 TS strains showing diverse attenuated phenotypes and revealed that NSP3 L445F, NSP14 G248V, G416S, and A504V as well as NSP16 V67I were substitutions responsible for such phenotypes (Yoshida et al., 2022). Each substitution conferred some advantage for the development of an attenuated vaccine candidate with restricted proliferative capacity in deep regions of the body, such as lungs and brain. In addition, the presence of deletions is generally considered to confer a lower risk of reversion to a wild-type genotype compared to amino acid substitutions. To this end, we constructed three candidates by combining several of the above-described mutations to design a safe live-attenuated vaccine strain (Figure 1—figure supplement 1A). The three candidates were inoculated locally into hamsters via the nasal route to mimic a natural infection. The immunogenicity of candidates 1 and 3 was much greater than that of candidate 2 (Figure 1—figure supplement 1B). Candidate 1, which has three deletions in the viral genome and contains three TS-responsible substitutions in NSP14, induced neutralizing antibodies when inoculated at a dose of 103 plaque-forming unit (PFU). Candidate 2, which has TS-related substitutions in both NSP3 and NSP14 and three deletions, and Candidate 3, which has only two deletions, were speculated to be excessively attenuated or to have a higher risk of virulent reversion. Taking these observations into consideration, we selected Candidate 1 for the vaccine, hereafter referred to as BK2102. The growth dynamics of BK2102 was evaluated at 32°C and 37°C (Figure 1). It proliferated similarly to the wild-type B-1 strain at 32°C (Figure 1A), but the infectious virus titer was significantly lower compared to that of the wild-type B-1 strain 1 day post-infection at 37°C (Figure 1B). Therefore, BK2102 showed a severe TS phenotype but could be amplified by incubating infected cells at 32°C, which would also facilitate the manufacturing process.
 
-## BK2102 induced humoral and cellular immune responses
+![Figure 1.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig1-v1.jpg)
+
+**Figure 1.:** Vero cells were infected with the wild-type parent B-1 (D614G) or the BK2102 vaccine candidate strains at a multiplicity of infection (MOI) = 0.01, and virus titers in the supernatants were determined for samples harvested every day, after incubating at 32°C (A) or 37°C (B). Infectious virus titers were determined using the TCID50 method. Symbols indicate the average of three independent experiments, and error bars represent the SD. The limit of detection (LOD) was 2.05 log10 TCID50/mL, and for samples below the LOD, the mean value was calculated as 1 log10 TCID50/mL. The dotted line represents the assay’s LOD. Days post-infection are indicated on the x-axis. For statistical analysis, two-way ANOVA with Sidak’s multiple-comparison test was performed (ns, not significant; ****p<0.0001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Candidate vaccine constructs. ORF: open-reading frame; NSP: non-structural protein; FCS: furin cleavage site. (B) Immunogenicity of vaccine candidates in hamsters. Neutralizing antibody titers in the sera were measured 21 days post-inoculation. Symbols represent titers of individual animals (n=5), and the bars indicate the median. The limit of detection (LOD) was 24, and for samples below the LOD, the mean value was set to 23.
+
+### BK2102 induced humoral and cellular immune responses
 
 To evaluate immunogenicity, BK2102 was intranasally inoculated into Syrian hamsters (103 and 104 PFU/dose). Four weeks post-inoculation, spike-specific IgG was measured in the sera by ELISA (Figure 2A), and the endpoint titers of the 103 PFU- and the 104 PFU-dose groups were 106.2 and 106.1, respectively. Neutralizing antibodies (Figure 2B) against the D614G strain were detected in 9 of the 10 hamsters in each dose group, with titers ranging between 25 and 29 (Figure 2B, left). Cross-reactivity of the neutralizing antibodies against the delta variant was also detected in 9 of 10 hamsters (titer range: 25–28) (Figure 2B, middle) and 8 of 9 hamsters against gamma strain (Figure 2—figure supplement 4A), but that against the BA.5 variant was below the limit of detection in all hamsters (Figure 2B, right). Furthermore, we performed BK2102 immunization of cynomolgus monkeys at a dose of 107 PFU, and the serum neutralizing titer against the D614G strain was detected in two of the four monkeys (titer range: 24–28) (Figure 2—figure supplement 2A). Although a single dose did not raise neutralizing antibody titers in two of the four monkeys, three doses given at a 2-week interval induced neutralizing antibodies in all six monkeys (Figure 2—figure supplement 2B). The safety of BK2102 was also evaluated in these six monkeys, and no toxic effects were observed in any of the parameters assessed, including tissue damage, respiratory rate, functional observational battery (FOB), hematology, or fever (data not shown).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig2-v1.jpg)
+
+**Figure 2.:** (A) Hamsters were inoculated with 1 × 103 or 1 × 104 plaque-forming unit (PFU) of BK2102 intranasally, and the serum was collected 4 weeks after inoculation. Spike-specific IgG in the sera of BK2102-inoculated hamsters and mock-treated hamsters was detected by ELISA. Symbols depict data of individual hamsters (n=10), and bars correspond to the median value. The limit of dilution is indicated in the x-axis. (B) Neutralizing antibodies in the sera were induced in BK2102-inoculated hamsters. Neutralizing antibodies in the sera were measured at day 28 post-inoculation using the following authentic SARS-CoV-2 strains: wild-type D614G (left), Delta (middle), and BA.5 (right). Symbols represent titers of individual animals (n=10), and the bars indicate the median. The limit of detection (LOD) was 25, and for samples below the LOD, the mean value was set to 24. The dotted line represents the assay’s LOD. For statistical analysis, one-way ANOVA with Tukey’s multiple-comparison test was performed (ns, not significant; ***p<0.001; ****p<0.0001). (C) Neutralizing antibodies persist in hamsters for at least 364 days. The neutralizing antibody titer against the authentic D614G wild-type strain was measured periodically in the sera of hamsters inoculated with BK2102 (once or twice at 4-week intervals with 1 × 103 or 1 × 104 PFU) for about a year. Symbols represent the mean of 9–10 animals, and error bars represent the SD. The LOD was 24, and for samples below the LOD, the mean value was set to 23. The dotted line represents the assay’s LOD. For statistical analysis, two-way ANOVA with Tukey’s multiple-comparison test was performed (ns, not significant). (D, E) Evaluation of the cellular immune response in BK2102-inoculated hamsters. Splenocytes were collected 1 week post-inoculation with 1 × 104 PFU of BK2102 and were stimulated in vitro with spike or nucleocapsid peptide pools. IFN-γ (D) and IL-4 (E) in the supernatants were measured with commercially available ELISA kits (MABTECH AB and FineTest, respectively). Symbols depict data of individual hamsters (n=5), and bars indicate the median. For statistical analysis, one-way ANOVA with Tukey’s multiple-comparison test was performed (ns, not significant; *p<0.05; ***p<0.001). This experiment was conducted twice to ensure reproducibility. (F) Evaluation of IFN-γ-secreting cells. Four hamsters were inoculated with 1 × 104 PFU of BK2102 once and the splenocytes were collected a week later. Splenocytes were stimulated in vitro with spike or nucleocapsid peptide pools for 24 hr. IFN-γ-secreting splenocytes were quantified by ELISPOT. Symbols depict data of individual hamsters (n=4), and bars indicate the median. For statistical analysis, two-way ANOVA with Sidak’s multiple-comparison test was performed (ns, not significant; *p<0.05).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) An mRNA vaccine was administered to hamsters intramuscularly twice at 2-week intervals, and BK2102 was inoculated to another group of hamsters intranasally once or twice at 2-week intervals. Neutralizing antibodies in the sera were measured at day 28 post-first inoculation using authentic SARS-CoV-2 wild-type D614G strain. Symbols represent titers of individual animals (n=5), and the bars indicate the median. The limit of detection (LOD) was 23, and for samples below the LOD, the mean value was set to 22. The dotted line represents the assay’s LOD. For statistical analysis, one-way ANOVA with Tukey’s multiple-comparison test was performed (ns, not significant; *p<0.05; **p<0.01; ***p<0.001). (B) SARS-CoV-2 spike-specific IgA measured via ELISA of nasal wash from inoculated hamsters, 28 days post-first inoculation. Symbols represent titers of individual animals (n=4 or 5), and the bars indicate the median. To calculate the IgA titer, the dilution factor at an OD value of 0.1 was considered and corrected with the value of the standard serum included in each plate. For statistical analysis, one-way ANOVA with Tukey’s multiple-comparison test was performed (ns, not significant; *p<0.05; **p<0.01; ***p<0.001). (C) SARS-CoV-2 spike-specific total IgG and IgG subclasses (IgG1 and IgG2/3) were measured in the serum of inoculated hamsters, 28 days post-first inoculation via ELISA. Symbols depict data of individual hamsters (n=5), and bars correspond to the median value. (D) Recombinant SARS-CoV-2 Spike-protein mixed with an alum adjuvant was administered to hamsters intramuscularly twice at 2-week intervals, and BK2102 inoculated once to another group of hamsters intranasally. SARS-CoV-2 spike-specific total IgG and IgG subclasses (IgG1 and IgG2/3) were measured via ELISA of serum from inoculated hamsters, 28 days post-inoculation. Symbols depict data of individual hamsters (n=3), and bars correspond to the median value.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Immune response in monkeys. Neutralizing antibodies in the sera of monkeys inoculated with 107 plaque-forming unit (PFU) of BK2102 were measured at the indicated time points post-inoculation. The data for individual monkeys are shown (n=4). The LOD was 23, and for samples below the LOD, the mean value was set to 22. The dotted line represents the assay’s LOD. (B) Neutralizing antibodies in the sera were induced in BK2102-inoculated monkeys. Monkeys were inoculated with 107 PFU of BK2102 or the solvent, receiving three doses given at 2-week intervals. Neutralizing antibodies in the sera were measured at day 42 post-inoculation using luciferase-expressing pseudovirus carrying the SARS-CoV-2 Wuhan strain’s spike protein. Symbols represent titers of individual animals (n=6), and the bars indicate the median. The LOD was 23.8, and for samples below the LOD, the mean value was c set to 22. The dotted line represents the assay’s LOD. For statistical analysis, Mann–Whitney U test was performed (**p<0.01).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Results for individual hamsters in the group used in the experiment of Figure 2D are shown. Light–blue circles correspond to mice inoculated with 103 PFU, while dark–blue circles correspond to mice inoculated with 104 plaque-forming unit (PFU). Dotted lines depict one dose, and solid lines to two doses. ¶ Hamsters died due to aging, fighting, or mishandling.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Neutralizing antibodies in the sera were induced by BK2102-inoculated hamsters. Neutralizing antibodies in the sera were measured at day 28 post-inoculation using the following authentic SARS-CoV-2 strains: wild-type D614G (left) and gamma (right). Symbols represent titers of individual animals (n=4 or 5), and the bars indicate the median. The dotted line represents the assay’s limit of detection (LOD). For statistical analysis, one-way ANOVA with Tukey’s multiple-comparison test was performed (ns, not significant; ****p<0.0001). (B) Weight changes in vaccinated mice after the challenge with the gamma strain. Hamsters inoculated with BK2102 were challenged with 3×105 plaque-forming unit (PFU) of the gamma strain on day 28 post-inoculation. The symbols represent the average weight of the hamsters (n=4 or 5), and error bars indicate the mean SD. Two-way ANOVA with Tukey’s multiple-comparison test was performed for statistical analysis (****p<0.0001).
 
 A short-lived immune response has been reported for current mRNA vaccines against SARS-CoV-2. For example, a reduction in neutralizing antibodies was observed in humans after 6 months (Zhang et al., 2022). In hamsters, these were undetectable after 250 days (Machado et al., 2023). Therefore, we evaluated the persistence of the immune response induced by BK2102 using a hamster model. We measured neutralizing antibody titers for up to 364 days after inoculation with BK2102. The titer peaks were observed 28 days after the first inoculation and slightly decreased, but were maintained until 364 days post-inoculation with a dose of 103 or 104 PFU. For example, the neutralizing antibody titer in the sera of hamsters inoculated with 103 PFU was 28 at 28 days and 25 at 364 days post-inoculation. Also, 2 of the 10 hamsters inoculated at a dose of 103 PFU showed neutralizing antibody titers below the detection limit from the beginning, and those of another hamster in the same dose group began to decrease gradually from day 224 and fell below the detection limit on day 364 (Figure 2—figure supplement 3). However, the neutralizing antibody titers in hamsters inoculated with 104 PFU did not exhibit such a decrease during the evaluation period. Remarkably, a single dose of BK2102 was sufficient to induce long-lasting immunity, and there was no need for booster immunization 28 days after the first inoculation (Figure 2C).
 
@@ -59,9 +87,19 @@ Furthermore, we evaluated cellular immune responses following inoculation with B
 
 Moreover, a 10-μg-dose of a conventional mRNA vaccine prepared in-house, expressing spike protein of D614G strain of SARS-CoV-2, was intramuscularly injected into hamsters and compared to BK2102. Neutralizing antibody titers against the D614G strain showed no significant difference between the BK2102-inoculated group and the mRNA vaccine group (Figure 2—figure supplement 1A). Notably, under conditions that induced equal serum neutralizing antibody titers in hamsters, higher levels of spike-specific IgA in nasal wash samples were induced by BK2102 than by the conventional mRNA (Figure 2—figure supplement 1B). In addition, we qualitatively analyzed the spike-specific IgG subclasses (IgG1 and IgG2/3) in hamsters to evaluate the nature of the immune response induced by BK2102 (Figure 2—figure supplement 1C and D). When we inoculated BK2102 and our mRNA vaccine, total IgG antibodies were detected in both groups. IgG2/3 antibodies were detected in the sera of BK2102-inoculated hamsters, but we could not detect IgG1. On the other hand, mRNA-vaccinated hamsters showed both IgG subclasses (Figure 2—figure supplement 1C). As other studies have demonstrated that aluminum adjuvant preferentially induces a Th2 response (Marrack et al., 2009), we also administered recombinant spike protein with alum adjuvant as a control. The result was the same since BK2102-inoculated hamsters showed only production of IgG2/3 (Figure 2—figure supplement 1D). IL-4 production and the presence of IgG1 reflects a Th2 response, while IFN-γ production and IgG2/3 are indicative of a Th1 response in hamsters (Kushawaha et al., 2011; Ploquin et al., 2013). Our results therefore suggest that BK2102 mainly induced a Th1 immune response in hamsters.
 
-## BK2102 induced protective immunity against SARS-CoV-2 infection
+### BK2102 induced protective immunity against SARS-CoV-2 infection
 
 Next, we performed challenge experiments with the SARS-CoV-2 D614G strain, BA.5 or gamma variants in order to evaluate whether the immune responses induced by BK2102 would protect against infection. All hamsters inoculated with BK2102 did not lose weight, whereas the naïve hamsters lost approximately 10% of their total body weight on day 4 or 6 post-challenge with the D614G or gamma strains (Figure 3 and Figure 3—figure supplement 1, respectively). When challenged with the BA.5 variant, all hamsters pre-inoculated with a dose of 104 PFU of BK2102 and three of five hamsters pre-inoculated with a dose of 103 PFU did not lose weight. However, the rest of the animals in the 103 PFU dose group lost 5% of their total body weight, similarly to the naïve group (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) BK2102 protects hamsters against homologous and heterologous virus challenges. Hamsters that received a full vaccination protocol with the indicated doses of BK2102 were challenged with 3 × 105 plaque-forming unit (PFU) of wild-type D614G (A) or BA.5 (B) strains, and their body weight was monitored for 4 days. Body weight is expressed as a percentage of the initial weight. The symbols represent the average weight of the hamsters (n=5), and error bars indicate the mean SD. Two-way ANOVA with Tukey’s multiple-comparison test was performed for statistical analysis (**p<0.01; ****p<0.0001). (C, D, F, G) The infectious virus titer in the lungs and nasal wash specimens taken on day 4 post-challenge was measured via a plaque assay for the wild-type D614G strain (C, D) and for the BA.5 strain (F, G). Symbols represent titers of individual animals (n=5), and the bars indicate the median. The limit of detection (LOD) was 1.3 log10 PFU/g or PFU/mL, and for samples below the LOD, the mean value was calculated as 1.0 log10 PFU/g or PFU/mL. The dotted line represents the assay’s LOD. One-way ANOVA with Dunnett’s multiple-comparison test was performed for statistical analysis (ns, not significant; *p<0.05; **p<0.01; ***p<0.001). (E, H) Lung inflammation scores were determined via H&E staining of D614G- (E) and BA.5-challenged (H) hamsters. The percentage of the disrupted area in the entire visual field was classified as 0: not remarkable (<10%); 1: minimal (10–50%); and 2: mild (50–70%). Symbols depict data of individual animals (n=5), and the bars indicate the median. One-way ANOVA with Tukey’s multiple-comparison test was performed for statistical analysis (ns, not significant; *p<0.05). (I) Weight changes after the challenge assay 1 year post-inoculation with BK2102. Hamsters inoculated with BK2102 were challenged with the wild-type D614G strain at 3 × 105 PFU on 420 days. Nine-month-old elder hamsters were used as the naïve group. The symbols represent the average weight of the hamsters (n=4 or 5), and error bars indicate the mean SD. Two-way ANOVA with Tukey’s multiple-comparison test was performed for statistical analysis (****p<0.0001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Scheme of the onward transmission experiment. Hamsters that received the full vaccination protocol with the indicated doses of BK2102 and recombinant SARS-CoV-2 spike protein mixed with an alum adjuvant were challenged with the wild-type D614G strain. Vaccinated and infected animals were co-housed with naïve hamsters at 1 day post-infection. (B) Body weight was monitored for 6 days. Body weight is expressed as a percentage of the initial weight. The data for individual hamsters are shown (n=3).
 
 In addition to body weight change, we determined infectious virus titers in lung homogenates and nasal wash specimens 4 days-post infection with the D614G strain or the BA.5 variant. The number of infectious viruses was significantly lower in hamsters inoculated with BK2102 than in naïve hamsters after challenge with the D614G strain (Figure 3C and D). One hamster in the 103 PFU dose group showed detectable levels of infectious virus following D614G challenge (Figure 3C). This result was consistent with the undetectable levels of neutralizing antibodies in this animal (Figure 2B). The virus titer in the lung and nasal wash of one animal in the 103 PFU dose group was 6.4 log10 PFU/g and 3.8 log10 PFU/mL, respectively, and the mean virus titers in the naïve group was 6.1 log10 PFU/g and 3.7 log10 PFU/mL, respectively. Although the cross-reactivity of neutralizing antibodies against the BA.5 variant was below the limit of detection in all hamsters (Figure 2B, right), no infectious virus was detected following challenge with the BA.5 variant in most of the vaccinated animals (Figure 3F and G). The virus titer in the lung and nasal wash of one animal in 104 PFU dose group was 4.2 log10 PFU/g and 2.5 log10 PFU/mL, respectively, and the mean virus titers in the naïve group where virus was detected were 4.6 log10 PFU/g and 2.8 log10 PFU/mL, respectively. Lung tissue damage after the viral challenge was also evaluated in the hamsters. The inflammation score of hamsters inoculated with BK2102 was lower than that of naïve hamsters, regardless of the strain/variant used for the challenge (Figure 3E and H, respectively). These results suggest that the immune response induced by BK2102 confers protection against infection that is not limited to the SARS-CoV-2 D614G strain, but also includes the BA.5 variant.
 
@@ -69,15 +107,196 @@ Furthermore, to evaluate whether the protection conferred after a full vaccinati
 
 We then evaluated whether BK2102 could inhibit onward transmission, as a previous report of a live-attenuated vaccine generated through codon-pair deoptimization (sCPD9) had suggested that an effective immune response within the nasal cavity would likely prevent it (Nouailles et al., 2023). The naïve group, the spike protein-inoculated (intra-muscularly) group, and the BK2102 intranasal inoculation groups were challenged with the SARS-CoV-2 D614G strain and co-housed with another group of naïve hamsters 1 day later (Figure 3—figure supplement 2A). Naïve animals co-housed with hamsters in the naïve or intramuscularly spike-alum vaccined groups showed slight weight loss. However, no weight loss was observed in hamsters co-housed with the hamsters that had been intranasally inoculated with BK2102 (Figure 3—figure supplement 2B). Therefore, intranasal inoculation of the BK2102 live-attenuated vaccine effectively prevented onward transmission, in line with a previous report (Nouailles et al., 2023).
 
-## BK2102 caused localized tissue damage and conferred a low risk of transmission
+### BK2102 caused localized tissue damage and conferred a low risk of transmission
 
 Next, we evaluated the safety of BK2102 by assessing the tissue damage during acute infection. The lungs and whole heads of hamsters at day 3 post-infection were extracted and fixed with formalin (Figure 4A). We evaluated inflammation and detected viral antigens in the lungs and multiple-depth sections of the nasal cavity (Figure 4B and C and Figure 4—figure supplement 1). The D614G strain caused broad inflammation within the nasal cavity (from level 1 to 3) and lungs. Viral antigens were detected in the same areas, consistent with our previous report (Yoshida et al., 2022). However, in the BK2102-infected hamsters, viral antigens and weak-to-mild tissue damage were observed only in the anterior area of the nasal cavity, whereas no tissue damage or viral antigens were detected in the posterior area or lungs.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig4-v1.jpg)
+
+**Figure 4.:** (A) Scheme for the evaluation of tissue damage in acute infection with BK2102 in a hamster model. The wild-type D614G strain was used as a positive control. (B) Inflammation score of nasal cavity sections and lungs determined via H&E. The percentage of the disrupted area in the entire visual field was classified as 0: not remarkable (<10%); 1: minimal (10–50%); 2: mild (50–70%), respectively. The symbols depict data of individual hamsters (n=4), and the bars indicate the median. One-way ANOVA with Tukey’s multiple-comparison test was performed for statistical analysis (ns, not significant; ***p<0.001). (C) SARS-CoV-2 spike protein staining in the nasal cavity sections and lungs determined via immunohistochemistry using a SARS-CoV-2 spike RBD-specific antibody. The proportion of positive cells in the entire visual field was classified as 0: not remarkable (<10%); 1: minimal (10–50%); and 2: mild (50–70%), respectively. The symbols depict data of individual hamsters (n=4), and the bars indicate the median. One-way ANOVA with Tukey’s multiple-comparison test was performed for statistical analysis (ns, not significant; ***p<0.001; ****p<0.0001). (D) Scheme for the evaluation of BK2102 transmission via in vivo passage in hamsters. The TS-strain A50-18 was used as a positive control. (E) Ct values obtained for the RT-PCR performed using RNA extracted from the nasal wash specimens. This experiment was conducted three times to ensure reproducibility. The symbols depict data of individual hamsters (n=5), and the bars indicate the median.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** H&E staining of nasal cavity sections and lungs is shown for hamsters infected with the wild-type D614G strain or the BK2102 vaccine candidate. IHC results using a SARS-CoV-2 spike RBD-specific antibody are shown in for the same sections. Scale bar: 200 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The body weights of hamsters inoculated with the A50-18 TS and BK2102 strains obtained in the in vivo passage experiment detailed in Figure 4D are shown. Body weight is expressed as a percentage of the initial weight. The symbols represent the average weight of the hamsters (n=5), and error bars indicate the mean SD. For statistical analysis, two-way ANOVA with Holm–Sidak’s multiple-comparison test was performed (ns, not significant; **p<0.01; ***p<0.001; ****p<0.0001).
+
 The replication of BK2102 at the tip of the nasal cavity may facilitate transmission because infectious viruses are shed into the nasal fluid. In addition, virulent reversion may occur during replication in vivo. Therefore, we evaluated the risk of transmission and reversion to virulence by passaging in vivo using hamsters (Figure 4D). SARS-CoV-2 A50-18 is a previously isolated TS strain, in which substitutions within the NSP14 protein alone account for the TS phenotype, without the need for deletions, such as those in NSP1, spike, or other accessory proteins (Yoshida et al., 2022). The viral genome was detected in all nasal wash specimens from A50-18 strain-infected hamsters during primary infection, and an increase in this amount was observed in subsequently passaged samples (Figure 4E), which correlated with progressive weight loss (Figure 4—figure supplement 2). When we confirmed the sequence of the viruses detected in samples, we observed that the TS-responsible substitutions in NSP14 had reverted to the wild-type sequence (Table 1). The viral genome was detected in the nasal wash specimens from BK2102-infected hamsters during primary infection, but we could not detect it in the samples from subsequent hamsters, except for in one case in p-1 (Figure 4E). In this individual animal, the viral genome was not detected in the samples from later passages. No weight loss was observed in any of the primary or subsequently infected hamsters, and we did not detect changes to the wild-type sequence (Table 1, Figure 4—figure supplement 2). Overall, our results suggest that BK2102 is a safe live-attenuated vaccine candidate with a low risk of virulent reversion.
 
-## BK2102 showed a favorable safety profile in Tg mice
+**Table 1.**
+ Genetic variations of viruses passaged in vivo.Table 1—source data 1.AB1 files of sequence data for Table 1.Table 1—source data 2.Agarose gel electrophoresis pattern of PCR products corresponding to the amplification of the ORF7a-8.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="6">Mutations</th>
+    </tr>
+    <tr>
+      <th>ΔG359 - A382(NSP1)</th>
+      <th>G18782T(NSP14)</th>
+      <th>G19285A(NSP14)</th>
+      <th>C19550T(NSP14)</th>
+      <th>ΔA23598-G23624(Spike FCS)</th>
+      <th>ΔC27549-T28251(ORF7a-8)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">A50-18</td>
+      <td>N/A</td>
+      <td>G</td>
+      <td>G/A</td>
+      <td>T</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td>G/T</td>
+      <td>G/A</td>
+      <td>T</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td>G/T</td>
+      <td>G/A</td>
+      <td>T</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td>G/T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td>G/T</td>
+      <td>G/A</td>
+      <td>T</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="5">BK2102</td>
+      <td>○*</td>
+      <td>T</td>
+      <td>A</td>
+      <td>T</td>
+      <td>○*</td>
+      <td>○*</td>
+    </tr>
+    <tr>
+      <td>○*</td>
+      <td>T</td>
+      <td>A</td>
+      <td>T</td>
+      <td>○*</td>
+      <td>○*</td>
+    </tr>
+    <tr>
+      <td>○*</td>
+      <td>T</td>
+      <td>A</td>
+      <td>T</td>
+      <td>○*</td>
+      <td>○*</td>
+    </tr>
+    <tr>
+      <td>○*</td>
+      <td>T</td>
+      <td>A</td>
+      <td>T</td>
+      <td>○*</td>
+      <td>○*</td>
+    </tr>
+    <tr>
+      <td>○*</td>
+      <td>T</td>
+      <td>A</td>
+      <td>T</td>
+      <td>○*</td>
+      <td>○*</td>
+    </tr>
+  </tbody>
+</table>
+
+_N/A, not applicable.*Same sequence as the inoculated virus._
+
+### BK2102 showed a favorable safety profile in Tg mice
 
 hACE2 Tg mice are also used as animal models of SARS-CoV-2 infection (Asaka et al., 2021; Bao et al., 2020). We established a mouse line expressing hACE2 driven by the CAG promoter, and these mice were used to evaluate the safety of BK2102 live-attenuated vaccine candidate. hACE2 expression was detected not only in the respiratory tract, but also in various tissues such as the central nervous system, heart, skeletal muscle, digestive system (except the small intestine), spleen, and testis (Figure 5—figure supplement 1A). We evaluated the survival rates and body weight of Tg mice infected with various SARS-CoV-2 strains. All of the mice died after weight loss by infection with the D614G strain and even with the FCS deleted B-1 (B-1 ΔFCS) strain, previously established attenuated phenotype, within 6 days after receiving a dose of 102 PFU (Figure 5 and Figure 5—figure supplement 1). Meanwhile, a higher survival rate was observed in mice infected with the L50-33 and A50-18 strains, which were previously isolated TS and live-attenuated strains (Yoshida et al., 2022), even at a dose of 105 PFU. However, one mouse in each group infected with 104 and 105 PFU of the L50-33 strain died 10 days post-infection that is 4 days later than those in the D614G strain-infected group. This time lag before death was expected as the virus could have reverted during replication in vivo, being able to grow in deeper regions of the body. Thus, we evaluated the presence of infectious virus in the lungs and brains of mice that died following infection with the D614G, B-1 ΔFCS, and L50-33 strains. Infectious virus titers in the lungs were approximately 2.40–5.64 log10 PFU/g, while those in the brains were higher, at approximately 5.75–8.69 log10 PFU/g (Table 2). We noticed that mice exhibiting head nodding, intense running, jumping and repeated falling died despite a generally mild inflammation in the lungs at necropsy (data not shown). These results suggest that Tg mice were killed due to replication of SARS-CoV-2 in the brain rather than in the lungs. Sanger sequencing analysis of viruses in the lungs and brains of mice that died following infection with the L50-33 strain revealed that the 445F substitution in NSP3, responsible for the TS phenotype of this strain, had reverted to the wild-type amino acid leucine (TTT → TTG), which is the same in the D614G and B-1 ΔFCS strains (CTT, Table 2). These results suggest that the mice died due to viral proliferation in the brain, where a small virus population lost its temperature sensitivity, becoming virulent. This mouse is a highly susceptible model of SARS-CoV-2 virus infection able to detect a few TS revertant viruses. In contrast to L50-33 with the NSP3-based TS phenotype, A50-18, harboring three TS-responsible substitutions in NSP14, did not kill any mice. Moreover, in the case of BK2102, no mice died or lost weight following infection, even at a dose of 106 PFU (Figure 5 and Figure 5—figure supplement 1, respectively). Therefore, BK2102 is considered to have a low risk of virulent reversion, thus representing a suitable candidate for a safe live-attenuated vaccine.
+
+**Table 2.**
+ NSP3 genetic variations in viruses recovered from infected Tg mice.Table 2—source data 1.Virus titer for Table 2.Table 2—source data 2.AB1 files of sequence data for Table 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Virus titer(Log10 PFU/g)</th>
+      <th>TS substitution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>n</td>
+      <td>Brain</td>
+      <td>Lung</td>
+      <td>NSP3</td>
+    </tr>
+    <tr>
+      <td>D614G(102 PFU infected)</td>
+      <td>5</td>
+      <td>6.94 ± 0.44*</td>
+      <td>3.67 ± 0.26*</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>B-1 ΔFCS(102 PFU infected)</td>
+      <td>5</td>
+      <td>8.69 ± 0.33*</td>
+      <td>5.64 ± 0.62*</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>L50-33(104 PFU infected)</td>
+      <td>1</td>
+      <td>5.75</td>
+      <td>&lt;2.40</td>
+      <td>F445L(TTT → TTG)</td>
+    </tr>
+    <tr>
+      <td>L50-33(105 PFU infected)</td>
+      <td>1</td>
+      <td>7.24</td>
+      <td>2.40</td>
+      <td>F445L(TTT → TTG)</td>
+    </tr>
+  </tbody>
+</table>
+
+_N/A, not applicable.*Average ± SD._
+
+![Figure 5.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Survival rate of Tg mice infected with the wild-type D614G, B-1 ΔFCS, L50-33, and A50-18 TS strains (A) and BK2102 (B). The symbols represent the survival rate of the hamsters (n=4 or 5).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97532/elife-97532-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The expression of hACE2 in various tissues of Tg mice was detected via western blotting using an anti-human ACE2 antibody (ab15348). (B) The body weight of Tg mice infected with the wild-type D614G, B-1 ΔFCS, L50-33, and A50-18 TS strains. The symbols represent the average weight of each group, and error bars indicate the mean SD. Two-way ANOVA with Tukey’s multiple-comparison test was performed for statistical analysis (ns, not significant; ****p<0.0001). (C) The body weight of Tg mice inoculated with the BK2102. The symbols represent the average weight of each group (n=4 or 5), and error bars indicate the mean SD. Two-way ANOVA with Tukey’s multiple-comparison test was performed for statistical analysis (ns, not significant).
 
 ## Discussion
 
@@ -97,68 +316,284 @@ Our findings also indicated that the TS substitutions in BK2102 made it difficul
 
 ## Materials and methods
 
-## Cells and viruses
+### Cells and viruses
 
 Vero cells (Cat# CCL-81) were purchased from ATCC and maintained in D-MEM supplemented with 10% FBS, penicillin (100 U/mL), and streptomycin (0.1 mg/mL). Cells were confirmed for mycoplasma contamination using a e-Myco VALiD Mycoplasma PCR Detection Kit (iNtRON Biotechnology, Inc, 25239). VeroE6/TMPRSS2 cells (no. JCRB1819) were obtained from the Japanese Collection of Research Bioresources (JCRB) cell bank and cultured in D-MEM supplemented with 10% FBS, penicillin (100 U/mL), streptomycin (0.1 mg/mL), and G-418 (1 mg/mL). We previously constructed baby hamster kidney (BHK) cells constitutively expressing the human angiotensin-converting enzyme 2 (hACE2) (BHK/hACE2 cells) (Okamura et al., 2023), and these cells were maintained in MEM, supplemented with 10% FBS, penicillin-streptomycin, and puromycin (3 μg/mL). 293T-ACE2 cells were purchased from Abnova Corporation as COVID-19 Pseudovirus Neutralizing Antibody Assay kit (Cat# KA6152) and cultured in D-MEM supplemented with 10% FBS. The SARS-CoV-2 strains used in this study are listed in Table 3. The SARS-CoV-2 B-1 (D614G) strain was isolated from a clinical specimen, and TS derivative strains were obtained through random mutagenesis of this clinical isolate, as previously reported (Yoshida et al., 2022). SARS-CoV-2 delta and omicron variant were obtained from the Research Foundation for Microbial Diseases of Osaka University and the National Institute of Infectious Disease of Japan, respectively.
 
-## Construction of viruses through circular polymerase extension reaction (CPER)
+**Table 3.**
+ SARS-CoV-2 strains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Reagent or resource</th>
+      <th>Source</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">SARS-CoV-2: pre-alpha type, D614G, B-1 strain</td>
+      <td>Yoshida et al., 2022</td>
+      <td>NCBI: LC603286</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A50-18 strain</td>
+      <td>Yoshida et al., 2022</td>
+      <td>NCBI: LC603287</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>L50-33 strain</td>
+      <td>Yoshida et al., 2022</td>
+      <td>NCBI: LC603289</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>B-1 ΔFCS strain</td>
+      <td>Current study</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Candidate 1 (BK2102)</td>
+      <td>Current study</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Candidate 2</td>
+      <td>Current study</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Candidate 3</td>
+      <td>Current study</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="2">SARS-CoV-2: delta variant, BK325 strain</td>
+      <td>Research Foundation for Microbial Diseases of Osaka University</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="2">SARS-CoV-2: gamma variant, TY7-501 strain</td>
+      <td>National Institute of Infectious Diseases</td>
+      <td>GISAID ID:EPI_ISL_833366</td>
+    </tr>
+    <tr>
+      <td colspan="2">SARS-CoV-2: omicron variant, TY41-702 strain</td>
+      <td>National Institute of Infectious Diseases</td>
+      <td>GISAID ID: EPI_ISL_13241867</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_N/A, not applicable._
+
+### Construction of viruses through circular polymerase extension reaction (CPER)
 
 SARS-CoV-2 live-attenuated vaccine candidate strains and B-1 ΔFCS strain have genetic backgrounds similar to that of B-1 strain, in combination with following naturally occurring virulence-attenuating mutations. The mutations in the ORF7a-8, NSP3, NSP14, and NSP16 coding regions are the same as those in the genomes of TS virus strains (L50-33, A50-18, and H50-11), described in Yoshida et al., 2022. The mutations in the spike FCS (679NSPRRARSV687 → I) and the NSP1 (32GDSVEEVL39) are the same as those in the genomes of a laboratory strain described in Davidson et al., 2020 and of a clinical isolate (accession: LC521925), respectively.
 
 For construction of the strains, we used the CPER method, in which 11 PCR-generated cDNA fragments covering the viral full genome plus another DNA fragment with controlling sequences are stitched into a circular DNA that can produce viral genomic RNA upon introduction to cells (Okamura et al., 2023; Torii et al., 2021). Primers used to prepare PCR fragments are listed in Table 4. The PCR and CPER reaction were performed using PrimeSTAR GXL DNA polymerase (Takara Bio, Cat# R050A). The CPER product was transfected into BHK/hACE2 cells using Lipofectamine LTX (Thermo Fisher Scientific). The cells were incubated at 32°C in a CO2 incubator for 1 week. At this point, the supernatants were collected and transferred to six-well plates which had been pre-seeded with VeroE6/TMPRSS2 cells. The viruses contained in the supernatants of these cells were collected when cytopathic effects (CPEs) were clearly observed.
 
-## Virus titration
+**Table 4.**
+ Primer list.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer ID</th>
+      <th>Oligonucleotides</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F1_F</td>
+      <td>CTATATAAGCAGAGCTCGTTTAGTGAACCGTattaaaggtttataccttcccaggtaac</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F1_R</td>
+      <td>cagattcaacttgcatggcattgttagtagccttatttaaggctcctgc</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F2_F</td>
+      <td>gcaggagccttaaataaggctactaacaatgccatgcaagttgaatctg</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F2_R</td>
+      <td>ggtaggattttccactacttcttcagagactggttttagatcttcgcaggc</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F3_F</td>
+      <td>gcctgcgaagatctaaaaccagtctctgaagaagtagtggaaaatcctacc</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F3_R</td>
+      <td>ggtgcacagcgcagcttcttcaaaagtactaaagg</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F4_F</td>
+      <td>caccactaattcaacctattggtgctttggacatatcagcatctatagtagctggtgg</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F4_R</td>
+      <td>gtttaaaaacgattgtgcatcagctgactg</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F5_F</td>
+      <td>cacagtctgtaccgtctgcggtatgtggaaaggttatggctgtagttgtgatc</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F5_R</td>
+      <td>gcggtgtgtacatagcctcataaaactcaggttcccaataccttgaagtg</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F6_F</td>
+      <td>cacttcaaggtattgggaacctgagttttatgaggctatgtacacaccgc</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F6_R</td>
+      <td>catacaaactgccaccatcacaaccaggcaagttaaggttagatagcactctag</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F7_F</td>
+      <td>ctagagtgctatctaaccttaacttgcctggttgtgatggtggcagtttgtatg</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F7_R</td>
+      <td>ctagagactagtggcaataaaacaagaaaaacaaacattgttcgtttagttgttaac</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F8_F</td>
+      <td>gttaacaactaaacgaacaatgtttgtttttcttgttttattgccactagtctctag</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F8_R</td>
+      <td>gcagcaggatccacaagaacaacagcccttgagacaactacagcaactgg</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F9_F</td>
+      <td>ccagttgctgtagttgtctcaagggctgttgttcttgtggatcctgctgc</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F9_R</td>
+      <td>caatctccattggttgctcttcatc</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F10_F</td>
+      <td>gatgaagagcaaccaatggagattg</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>F10_R</td>
+      <td>GGAGATGCCATGCCGACCCtttttttttttttttttttttttttgtcattctcctaag</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Linker_F</td>
+      <td>cttaggagaatgacaaaaaaaaaaaaaaaaaaaaaaaaaGGGTCGGCATGGCATCTCC</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Linker_R</td>
+      <td>gttacctgggaaggtataaacctttaatACGGTTCACTAAACGAGCTCTGCTTATATAG</td>
+      <td>Torii et al., 2021</td>
+    </tr>
+    <tr>
+      <td>TS_F6_R</td>
+      <td>catacaaactgccacTatcacaaccaggcaagttaaggttagatagcactctag</td>
+      <td>Yoshida et al., 2022</td>
+    </tr>
+    <tr>
+      <td>TS_F7_F</td>
+      <td>ctagagtgctatctaaccttaacttgcctggttgtgatAgtggcagtttgtatg</td>
+      <td>Yoshida et al., 2022</td>
+    </tr>
+  </tbody>
+</table>
+
+### Virus titration
 
 The infectious titer of SARS-CoV-2 was determined based on the median tissue culture infectious dose (TCID50) or plaque formation assay (PFA). In order to obtain the TCID50, virus-containing samples were serially diluted with D-MEM supplemented with 2% FBS. 50 μL of each diluted sample were used to infect Vero cells in 96-well plates. The cells were fixed with 10% formalin after incubating at 32°C for 4 days and stained with crystal violet solution. The TCID50 was calculated using the Behrens–Karber method. For the calculation of PFU, 500 μL of the diluted samples were added to confluent Vero cells in six-well plates and incubated at 32°C for 3 hr to allow virus adsorption. The supernatant was removed, and the cells were washed with D-PBS. Subsequently, 2 mL of 1% SeaPlaque agarose dissolved in D-MEM and supplemented with 2% FBS were layered on the cells. The plates were incubated at 32°C in a CO2 incubator for 3 days, fixed with 10% formalin, and stained with crystal violet solution. Visible plaques were counted to calculate PFU.
 
-## Viral proliferation assay at various temperatures
+### Viral proliferation assay at various temperatures
 
 The SARS-CoV-2 B-1 (D614G) strain or vaccine candidate strain was used to infect Vero cells at a multiplicity of infection (MOI) of 0.01. Infected cells were cultured at 32°C or 37°C, and a part of the supernatant was collected daily and stored at –80°C. The viral titers of these samples were determined using the TCID50 assay described above. Each experiment was performed in triplicates.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Viral RNA was extracted from various samples using the IndiSpin Pathogen Kit (INDICAL BIOSCIENCE) following the manufacturer’s instructions. RNA was quantified using a DetectAmp SARS-CoV-2 RT-PCR kit (Sysmex). 50 µL of a 100-fold dilution of the extracted RNA were used to perform the reverse transcription and subsequent qPCR reactions in a 7500 Fast Real-time PCR System (Applied Biosystems). The reactions were performed in triplicate.
 
-## Neutralization assay
+### Neutralization assay
 
 The neutralizing activity of sera was evaluated using authentic SARS-CoV-2. 100 PFU of authentic virus were mixed with serially diluted serum samples and incubated at 37°C for 1 hr. The mixtures were then transferred to confluent Vero cells in 96-well plates. The infected cells were fixed with 10% formalin and stained with crystal violet solution after an incubation period of 3 days at 32°C. Neutralization titers were calculated as the inverse of the maximum dilution that prevented CPE formation. Additionally, neutralizing antibody titers against SARS-CoV-2 in the serum of monkeys that received three doses of BK2102 were quantified at day 42 with luciferase-expressing pseudovirus carrying the SARS-CoV-2 Wuhan strain spike (Abnova Corporation, Cat# KA6152). Serum samples were fourfold serially diluted and incubated at room temperature for 30 min with Spike-pseudovirus. Subsequently, the mixtures were added into wells containing 293T-ACE2 cells. The luciferase expression of the infected cells was detected with Luciferase Assay System (Promega) after an incubation of 46 hr at 37°C. NT50 neutralization titers were determined by a calibration curve with GraphPad prism.
 
-## ELISA
+### ELISA
 
 Half-well protein high-binding 96-well plates (Greiner) were coated with recombinant SARS-CoV-2 (D614G) spike or nucleocapsid proteins (SinoBiologicals) dissolved in PBS (50 ng/100 μL/well) and incubated at 4°C overnight. 1% BSA PBS was used as blocking solution, and 1% BSA PBS-T was used to dilute the sera, antibodies, and streptavidin. Antigen-specific IgG antibodies in hamster sera were detected using horseradish peroxidase (HRP)-labeled goat anti-Syrian hamster IgG H+L Ab (Abcam, Cat# ab6892, 1/30,000 dilution). Biotinylated anti-Syrian hamster IgG1 Ab (Southern Biotech, Cat# 1940-08, 1/100 dilution), IgG2/3 subclass Ab (Southern Biotech, Cat# 1935-08, 1/200,000 dilution), and IgA Ab (Brookwood Biomedical, Cat# 3003a, 1/100 dilution) were used and detected with HRP-labeled streptavidin (Abcam, Cat# ab7403, 1/10,000 dilution). TMB one-component substrate and stopping solutions (Thermodics) were used for the chromogenic reaction, and the optical density (OD) was measured at 450–650 nm with a microplate reader. Endpoint titers of IgG were calculated based on a calibration curve using a five-parameter, nonlinear curve fitting. Samples for which the endpoint titers could be calculated were defined as ‘positive’, and the mean was calculated using only the titer of positive samples.
 
-## ELISPOT assay
+### ELISPOT assay
 
 Hamster IFN-γ ELISPOT was performed using the ELISpot Flex: Hamster IFN-γ (ALP) (MABTECH, Cat# 3102-2A) kit according to the manufacturer’s instructions. MSIP plates (Millipore) were washed five times with sterile water, coated with Capture mAb (MTH21), and incubated overnight at 4 °C. Coated plates were washed five times with PBS, blocked for 30 min (at room temperature) with RPMI medium supplemented with 10% FBS and antibiotics. 250,000 splenocytes were seeded in each well and stimulated with SARS-CoV-2 spike or nucleocapsid peptide pools, consisting mainly of 15-mer sequences with 11-amino-acid (aa) overlaps (Miltenyi Biotec). Negative controls for non-stimulated cells were included in the test. After stimulation for a day at 37 °C, the spots were detected with the detection mAb (MTH29-biotin) and Streptavidin-ALP. After drying the plate, spots were counted using the ImmunoSpot S5 (Cellular Technology Limited). The average number of spots in the two negative control wells was subtracted from each well stimulated with peptide pools. The result was shown as the difference in spot-forming cells (SFC)/106 splenocytes between the negative control and the peptide pool stimulated wells.
 
-## mRNA and LNP production process
+### mRNA and LNP production process
 
 A codon-optimized mRNA encoding the SARS-CoV-2 (D614G) S protein was in vitro synthesized and purified following the procedure of Moderna Therapeutics’ mRNA-1273 as reference (Hassett et al., 2019). The mRNA was encapsulated using a NanoAssemblr Ignite nanoparticle formulation system. The sample was subsequently concentrated to 1 µg/100 µL/dose using Amicon Ultra 4-100K, and filtered through a 0.45 µm membrane for in vivo use.
 
-## Evaluation of immunogenicity in hamsters
+### Evaluation of immunogenicity in hamsters
 
 The animal experiments were carried out in accordance with the approved protocols corresponding Osaka University’s Review Committees (approval no. R02-10) and BIKEN’s Review Committees (approval no. ZAE240126-290125-01). Four-week-old male Syrian hamsters were purchased from Japan SLC Inc After a 1-week housing period, they were first anesthetized via inhalation with 3% isoflurane, followed by intraperitoneal anesthesia with a combination of medetomidine, midazolam, and butorphanol (0.3, 4, and 5 mg/kg, respectively). 1000 or 1×104 PFU of BK2102 were administered intranasally in a volume of 20 μL to confine administration to the upper respiratory tract. To evaluate the humoral immune response, blood samples were collected from the facial vein using a lancet (MEDIpoint), and neutralizing antibody titers in the sera were measured as described above. In addition, to evaluate mucosal immunity, nasal wash samples were collected through a plastic catheter using two separate washes of 1 mL of PBS. Only one animal inoculated BK2102 once was not used for IgA measurement because the nasal wash was contaminated with blood. To evaluate the cellular immune response, 1×104 PFU of BK2102-inoculated hamsters were euthanized 1 week post-inoculation, and spleens were collected. The spleens were mechanically crushed with the piston of a syringe and passed through a cell strainer (100 μm). Cell suspensions were treated with RBC lysis buffer (BioLegend) to remove red blood cells, as per the manufacturer’s instructions. The spleen cells were then suspended in RPMI medium supplemented with 10% FBS and antibiotics at a concentration of 1 × 106 cells/mL and stimulated by SARS-CoV-2 spike or nucleocapsid peptide pools, consisting mainly of 15-mer sequences with 11- aa overlaps (Miltenyi Biotec). Negative controls for non-stimulated cells were included in the test. Stimulated cells were incubated at 37°C for 1 day, and supernatants were collected and stored at –80°C until use. IFN-γ and IL-4 were quantified with commercially available ELISA kits (MABTECH AB, Cat# 3102-1H-6 and FineTest, Cat# EHA0001, respectively) following the manufacturer’s protocol. Furthermore, IFN-γ-producing cells were identified after a 22 hr stimulation culture with spike or nucleocapsid peptide pools, and analyzed by ELISpot Flex (MABTECH AB). We also performed a challenge assay to investigate whether these immune responses were effective in protecting against other variants. Four weeks post-inoculation with 1 × 103 PFU or 1 × 104 PFU of BK2102, 3 × 105 PFU of SARS-CoV-2 D614G strain, TY41-702 strain (Omicron variant BA.5) or gamma strain were used to challenge the hamsters through the intranasal route to target the lower respiratory tract. The weights of the hamsters were monitored daily, and they were euthanized 4 days after the challenge. Lungs were divided, cut into small pieces, and homogenized with a biomasher II device in 500 μL of D-MEM. Supernatants were collected as lung homogenates after centrifugation at 300 × g for 5 min at 4°C. Nasal wash specimens were obtained by flushing 1 mL of D-PBS into the nasal cavity from the trachea in the direction of the nose where it was collected. Infectious virus titers in these samples were evaluated using a PFA, as described above. To evaluate immune response persistence, hamsters inoculated with 1×103 PFU or 1×104 PFU of BK2102 were maintained for 364 days post-infection. Blood samples were collected from the facial vein using a lancet (MEDIpoint), and neutralizing antibody titers were measured. At 420 days after inoculation, a viral challenge assay was performed to evaluate whether the immunity contributing to infection protection was maintained. Hamsters were infected with 3 × 105 PFU of the SARS-CoV-2 D614G strain, and weight changes were monitored daily for 10 days post-infection.
 
-## Evaluation of immunogenicity in monkeys
+### Evaluation of immunogenicity in monkeys
 
 The animal experiments were in line with the Institutional Animal Care and Use Committee (IACUC) protocols of Hamri Co, Ltd. (#22-H115). Sixteen male and female cynomolgus monkeys, 2–3 years old, were purchased from Hamri Co, Ltd. After a 1-week acclimatization housing period, they were sedated with a mixture of ketamine (5 mg/kg) and xylazine (2 mg/kg) administered intramuscularly. Ten million PFU of BK2102 were inoculated intranasally in a volume of 1.6 mL. Four monkeys were inoculated with a single-dose of BK2102, and blood samples were collected at 0, 28, 35, and 42 days after inoculation from the radial vein, femoral vein, or abdominal vena cava using a syringe. Neutralizing antibody titers in the sera were measured as described above to evaluate the humoral immune response. Another 12 monkeys were inoculated with 1 × 107 PFU of BK2102 or the solvent, receiving three doses given at 2-week intervals. Blood samples were collected 42 days after the last inoculation, and neutralizing antibody titers in the sera were measured.
 
-## Evaluation of BK2102 pathogenicity in hamsters
+### Evaluation of BK2102 pathogenicity in hamsters
 
 The animal experiments were carried out in accordance with the approved protocols corresponding Osaka University’s Review Committees (approval no. R02-10) and BIKEN’s Review Committees (approval no. ZAE240126-290125-01). 4-week-old male Syrian hamsters were obtained from Japan SLC Co. Ltd. After acclimatization, 1 × 104 PFU of BK2102 or 1 × 104 PFU of the SARS-CoV-2 D614G strain were used for infection, as described above. These and naïve hamsters were euthanized 3 days post-infection. The heads and lungs were collected and fixed in 10% formalin. Sections of the head were prepared to expose different regions of the nasal cavity and were stained with H&E or an immunohistochemistry (IHC) staining kit (Abcam, Cat# ab64261) using a SARS-CoV-2 spike RBD-specific antibody (Sino Biological, Cat# 40592-T62). The damage score of each section was defined as 0: not remarkable (<10%); 1: minimal (10–50%); and 2: mild (50–70%).
 
-## In vivo passage of BK2102 in hamsters
+### In vivo passage of BK2102 in hamsters
 
 The animal experiments were carried out in accordance with the approved protocols corresponding Osaka University’s Review Committees (approval no. R02-10) and BIKEN’s Review Committees (approval no. ZAE240126-290125-01). 4-week-old male Syrian hamsters were obtained from Japan SLC Co. Ltd. After a 1-week acclimatization period, 1 × 105 PFU of BK2102 or A50-18 strain (a TS mutant isolated in a previous report) in a volume of 20 μL were used to infect the hamsters intranasally. The hamsters were observed daily, and their body weights were measured at 0 and 3 days post-infection. At this point, hamsters were euthanized, and nasal wash specimens were collected with 500 μL D-PBS. After filtration through 0.45 μm and 0.22 μm filters, 100 μL were used to infect a new group of naive hamsters. The passage of inoculum was repeated three times, and nasal wash samples were collected at every passage. The viral genome in these nasal wash samples was quantified via qPCR, as described above. Sanger sequencing was performed to analyze the mutations introduced to generate an attenuated phenotype.
 
-## Generation of human ACE2-transgenic mice
+### Generation of human ACE2-transgenic mice
 
 The animal experiments were carried out in accordance with the approved protocols corresponding Osaka University’s Review Committees (approval nos. R02-09 and R02-10) and BIKEN’s Review Committees (approval no. ZAE240126-290125-01). The transgene was prepared as described previously (Ikawa et al., 1995; Okabe et al., 1997). Briefly, the hACE2-coding sequence was amplified via PCR with the following primers: 5′-aatctagagccgccgccgccatgtcaagctcttcctggctccttc-3′ and 5′-aaactcgagctaaaaggaggtctgaacatcatca-3′, using human testis cDNA as the template. The XbaI and XhoI sites included in the PCR primers were used to introduce the amplified hACE2 cDNA into a pCAG1.1 expression vector (https://www.addgene.org/173685/) containing the chicken beta-actin promoter and cytomegalovirus enhancer, the beta-actin intron, and the rabbit globin poly-adenylation signal. The transgene fragment was excised using SacI and PacI and gel-purified. Transgenic mouse lines were generated by injecting purified transgene fragments into C57BL/6N×C57BL/6N fertilized eggs. A total of 350 DNA-injected eggs were transplanted into pseudopregnant mice, resulting in 32 newborn pups. Three of these were transgenic, and the first line was established as Tg (CAG-hACE2) 01Osb. The Tg mice were kept of a B6D2F1 background. Expression of hACE2 in each organ was confirmed via western blotting. Briefly, organ homogenates were prepared in radioimmunoprecipitation assay buffer containing a proteinase inhibitor cocktail (Thermo Scientific) using a bead mill homogenizer (Fischer Scientific). Protein concentrations were measured via BCA assay (Pierce), and 10 μg of protein were subjected to SDS-PAGE and subsequent western blotting. hACE2 was detected using a rabbit polyclonal antibody against hACE2 (Abcam, Cat# ab15348) with Can Get Signal solutions (TOYOBO).
 
-## Evaluation of safety in transgenic mice
+### Evaluation of safety in transgenic mice
 
 The animal experiments were carried out in accordance with the approved protocols corresponding Osaka University’s Review Committees (approval nos. R02-09 and R02-10) and BIKEN’s Review Committees (approval no. ZAE240126-290125-01). 7- to 9-week-old Tg mice were anesthetized via inhalation of 3% isoflurane, then receiving a combination of medetomidine, midazolam, and butorphanol (0.3, 4, and 5 mg/kg, respectively) intraperitoneally. Mice were infected with SARS-CoV-2 in a volume of 20 μL, and their weights were measured daily. Mice that reached humane endpoints, such as difficulty walking or rapid weight loss, were euthanized by bleeding under isoflurane anesthesia. The brain, olfactory bulbs, nasal turbines, and lungs were collected. Mice infected with live-attenuated strains that did not reach the humane endpoint were also euthanized 14 days post-infection.
 
-## Statistical analysis
+### Statistical analysis
 
 Two-way ANOVA, one-way ANOVA or Mann–Whitney U test was used to calculate statistical significance. These data were analyzed using GraphPad Prism 9.4.1 software. Statistical significance was set at a p-value<0.05.

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.38822.001 Predicting evolutionary change poses numerous challenges. Here we take advantage of the model bacterium Pseudomonas fluorescens in which the genotype-to-phenotype map determining evolution of the adaptive ‘wrinkly spreader’ (WS) type is known. We present mathematical descriptions of three necessary regulatory pathways and use these to predict both the rate at which each mutational route is used and the expected mutational targets. To test predictions, mutation rates and targets were determined for each pathway. Unanticipated mutational hotspots caused experimental observations to depart from predictions but additional data led to refined models. A mismatch was observed between the spectra of WS-causing mutations obtained with and without selection due to low fitness of previously undetected WS-causing mutations. Our findings contribute toward the development of mechanistic models for forecasting evolution, highlight current limitations, and draw attention to challenges in predicting locus-specific mutational biases and fitness effects.
+Predicting evolutionary change poses numerous challenges. Here we take advantage of the model bacterium Pseudomonas fluorescens in which the genotype-to-phenotype map determining evolution of the adaptive ‘wrinkly spreader’ (WS) type is known. We present mathematical descriptions of three necessary regulatory pathways and use these to predict both the rate at which each mutational route is used and the expected mutational targets. To test predictions, mutation rates and targets were determined for each pathway. Unanticipated mutational hotspots caused experimental observations to depart from predictions but additional data led to refined models. A mismatch was observed between the spectra of WS-causing mutations obtained with and without selection due to low fitness of previously undetected WS-causing mutations. Our findings contribute toward the development of mechanistic models for forecasting evolution, highlight current limitations, and draw attention to challenges in predicting locus-specific mutational biases and fitness effects.
 
 ## Introduction
 
@@ -44,7 +44,7 @@ Here we take a bacterial system in which the genetic pathways underpinning evolu
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig1-v1.jpg)
 
-**Figure 1.:** Pseudomonas fluorescens SBW25 wrinkly spreader model.(A) Selection for access to oxygen allows wrinkly spreader (WS) mutants to invade the ancestral smooth (SM) population in static microcosms. WS mutants form a mat at the air-liquid interface through increased expression of the main structural component, cellulose, encoded by the wss operon. Expression of cellulose is controlled by the second messenger c-di-GMP, which is produced by diguanylate cyclases (DGCs). Mutations in the wsp, aws and mws operons, that activate their respective DGCs (WspR, AwsR, MwsR), are the primary mutational pathways to WS. (B) When a reporter construct connecting expression of the wss operon to resistance to kanamycin is used under shaken non-selective conditions, WS mutants can be isolated without the biasing influence of natural selection. This allows estimation of the mutation rate to WS and an unbiased spectrum of mutations defining the mutational target. Fitness can then be assayed in competition with a common reference strain.
+**Figure 1.:** (A) Selection for access to oxygen allows wrinkly spreader (WS) mutants to invade the ancestral smooth (SM) population in static microcosms. WS mutants form a mat at the air-liquid interface through increased expression of the main structural component, cellulose, encoded by the wss operon. Expression of cellulose is controlled by the second messenger c-di-GMP, which is produced by diguanylate cyclases (DGCs). Mutations in the wsp, aws and mws operons, that activate their respective DGCs (WspR, AwsR, MwsR), are the primary mutational pathways to WS. (B) When a reporter construct connecting expression of the wss operon to resistance to kanamycin is used under shaken non-selective conditions, WS mutants can be isolated without the biasing influence of natural selection. This allows estimation of the mutation rate to WS and an unbiased spectrum of mutations defining the mutational target. Fitness can then be assayed in competition with a common reference strain.
 
 McDonald et al. (McDonald et al., 2009) showed that each time the tape of WS evolution is re-run mutations generating the adaptive type arise in one of three DGC-encoding pathways (Wsp, Aws, or Mws) (Figure 1A). Subsequent work revealed that when these three pathways are eliminated from the ancestral type evolution proceeds along multiple new pathways (Lind et al., 2015) resulting in WS types whose fitnesses are indistinguishable from those arising via mutations in Wsp, Aws, or Mws. Parallel evolution of WS involving preferential usage of the Wsp, Aws and Mws pathways is therefore not explained by selection: repeated use of Wsp, Aws and Mws stems from the fact that these pathways are subject to negative regulation and thus, relative to pathways subject to positive regulation, or requiring promoter-activating mutations, gene fusion events, or other rare mutations, present a large mutational target (Lind et al., 2015).
 
@@ -52,7 +52,7 @@ Given repeatability of WS evolution, knowledge of the Wsp/Aws/Mws pathways, plus
 
 ## Results
 
-## Obtaining an unbiased measure of pathway-specific mutation rates to WS
+### Obtaining an unbiased measure of pathway-specific mutation rates to WS
 
 Knowledge of the rate at which mutation generates WS types via each of the Wsp, Aws and Mws pathways — unbiased by the effects of selection — provides a benchmark against which the predictive power of null models can be appraised. To achieve such measures we firstly constructed a set of genotypes containing just one of the three focal pathways: PBR721 carries the Wsp pathway but is devoid of Aws and Mws, PBR713 carries the Aws pathway but is devoid of Wsp and Mws, while PBR712 harbours the Mws pathway but is devoid of Wsp and Aws. Into each of these genotypes a promoterless kanamycin resistance gene was incorporated immediately downstream of the promoter of the cellulose-encoding wss operon and transcriptionally fused to an otherwise unaffected wss operon (Figure 1B).
 
@@ -64,7 +64,7 @@ In the ancestral SM genotype the cellulose promoter is inactive in shaken King�
 
 The mutation rate was highest for the Aws pathway (6.5 × 10−9); approximately double that of Wsp (3.7 × 10−9) and an order of magnitude higher than that of the Mws pathway (0.74 × 10−9) (Figure 2). The rate at which WS mutants arose from the ancestral genotype in which the three pathways are intact (11.2 × 10−9) was approximately the sum of the rates for the three pathways (11.0 × 10−9) confirming that the Wsp, Aws and Mws pathways are the primary routes by which WS types evolve (Lind et al., 2015). That the Aws pathway has the greatest capacity to generate WS is surprising given the smaller target size (three genes and 2.3 kb compared to seven genes (8.4 kb) in the Wsp pathway).
 
-## The genotype-to-phenotype map underpinning WS evolution
+### The genotype-to-phenotype map underpinning WS evolution
 
 Much is known about the function and interactions among components of each of the three focal pathways. This knowledge allows development of models that capture the dynamic nature of each pathway and thus allow predictions as to the likelihood that evolution will precede via each of the three mutational routes. An unresolved issue is the extent to which these models match experimental findings. Following a brief description of each pathway we describe the models.
 
@@ -74,19 +74,35 @@ The 2.3 kb aws operon contains three genes transcribed from a single promoter (a
 
 The 3.9 kb mwsR gene (PFLU5329) is known as morA (PA4601) in Pseudomonas aeruginosa, and encodes a predicted membrane protein with both a DGC domain that produces c-di-GMP and a phosphodiesterase (PDE) domain that degrades c-di-GMP. Little is known of the molecular details determining its function, but both catalytic domains appear to be active (Phippen et al., 2014). Deletion of the PDE domain results in a WS phenotype with activity being dependent on a functional DGC domain (McDonald et al., 2009).
 
-## Development of mechanistic models predicting mutational routes to WS
+### Development of mechanistic models predicting mutational routes to WS
 
 If the specific effects of changing each nucleotide (and sets of nucleotides) were known then models for each pathway would not be required. Here, we show how knowledge of genetic architecture can be used to build models that predict the likelihood that mutations generating WS types will arise in a given pathway – and even in specific genes. In the following section we present four null models that incorporate increasing levels of information concerning the genotype-to-phenotype map. The goal of these models is two-fold: firstly to demonstrate that incorporation of knowledge of genetic architecture allows development of models with explanatory value and secondly, to define minimal necessary information for reliable forecasting. The results are summarised in Figure 3, which displays the experimental data from Figure 2 (Figure 3A), along with predictions from each of the null models.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig3-v1.jpg)
 
-**Figure 3.:** (A) Experimental data from Figure 2. (B) Null Model I: number of base pairs as proxy for mutational target size. (C) Null Model II: number of genes as a proxy for mutational target size. (D) Null Model III: function and interactions between components determine mutational target size. To indicate the range of possible states we consider the situation with enabling mutations only (left hand panel) and disabling mutations only (right hand panel). (E) Null Model IV: as per null Model III, but interactions have both pleiotropic and continuous effects. To indicate the range of possible states we consider the probability of disabling mutational effects (p) to be 10 times more common than enabling changes (dp), ep = 0.001, dp = 0.0001 (left hand panel) the probability of enabling mutational effects (ep) to be 10 times more common than disabling changes (ep), dp = 0.0001, dp = 0.001.e
+**Figure 3.:** (A) Experimental data from Figure 2. (B) Null Model I: number of base pairs as proxy for mutational target size. (C) Null Model II: number of genes as a proxy for mutational target size. (D) Null Model III: function and interactions between components determine mutational target size. To indicate the range of possible states we consider the situation with enabling mutations only (left hand panel) and disabling mutations only (right hand panel). (E) Null Model IV: as per null Model III, but interactions have both pleiotropic and continuous effects. To indicate the range of possible states we consider the probability of disabling mutational effects (pd) to be 10 times more common than enabling changes (pe), pd = 0.001, pe = 0.0001 (left hand panel) the probability of enabling mutational effects (pe) to be 10 times more common than disabling changes (pd), pd = 0.0001, pe = 0.001.
 
 Null Model I is intentionally naïve. It uses sequence length as a proxy for mutational target size, but ignores genetic organisation, function of predicted proteins and interaction among proteins. The model assumes that mutational target size is proportional to the number of nucleotides at a given locus and thus the probability that a given pathway is used to generate WS relative to another is simply the ratio of the probability of generating WS for the two focal pathways. For any one pathway the probability that a mutation generates WS is given by 1-(1-p)n, where p is the probability of a mutation at a nucleotide and n is the number of nucleotides in the pathway. If the mutation probability is low such that the expected number of mutations in a pathway is below 1, that is, np <<1 then the binomial approximation can be used: 1-(1-p)n = np. Thus the probability that evolution follows the Wsp pathway over the Aws pathway is: 8400 p1/ 2300 p2 = 3.65 p1/p2, where p1 and p2 are the mutation rates for each pathway. Assuming equivalency of mutation rate, p1 = p2, evolution is predicted to proceed via the Wsp pathway 3.65 times more often than via Aws, with evolution predicted to proceed via Mws 1.65 times more often than Aws. Comparison with experimental data shows a departure both in terms of the priority of pathways used by evolution and the frequency of pathway usage (Figure 3A versus 3B).
 
 Null Model II builds on Model I but only in a marginal sense. It recognises that nucleotides defining loci of interest are organised into genes, and therefore adopts gene number as a proxy for mutational target size. As above, the probability that a pathway is used is 1-(1-p)n = np, but in this instance n is the number of genes. Model II predicts that mutations in Wsp generate WS types 2.33 times more often than mutations in Aws, with mutations in Mws being 3-fold less likely to generate WS compared to mutations in Aws (Figure 3C). This marginal adjustment makes little difference to the fit between experimental data and predictions.
 
 Past work has shown the explanatory value of information that comes from knowledge of gene (protein) function and interactions (McDonald et al., 2009; Lind et al., 2015). These form the basis of Null Model III. The relevant functions and interactions are depicted in Figure 4 as reaction diagrams that reflect how changes in different interactions affect the production of WS types. Organizing interactions within each pathway according to reactions has the advantage that it allows for a standard mathematical description of the biochemical dynamics using differential equations (see Figure 4 and Figure 4—figure supplement 1 to 3,). An additional advantage is that such an approach allows ready incorporation of new experimental data including interaction type and interaction strength.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig4-v1.jpg)
+
+**Figure 4.:** Reaction diagrams show the interactions governing production of a wrinkly spreader in (A) Wsp, (B) Aws and (C) Mws pathways. The blue circles indicate molecular components, the red circles indicate reactions, and arrows indicate which molecular components are reactants and which are products. Full descriptions of the models including all reactions and the resulting systems of differential equations are found in Figure 4—figure supplement 1 for Wsp, Figure 4—figure supplement 2 for Aws and Figure 4—figure supplement 3 for Mws. The black edged circles are the reporter proteins, which is the activated forms of the diguanylate cyclases that directly determine whether a pathway generates a wrinkly spreader. Increased production of any reporter leads to increased c-di-GMP concentration causing increased cellulose production and thereby a wrinkly spreader.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Description of functional interactions (B) Description of molecular reaction (C) Differential equations describing the dynamics of the Wsp pathway.The activity of WspA is modulated by methylation, where it is activated by the CheR-like methyltransferase WspC (PFLU1221). The CheB-like methylesterase WspF (PFLU1224) functions as a negative regulator. Modulation of WspR activity through changes in oligomerization state and clustering is not explicitly included in the model (De et al., 2008; Huangyutitham et al., 2013), but can be interpreted as changes in the rate of WspR activation.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Description of functional interactions (B) Description of molecular reaction (C) Differential equations describing the dynamics of the Aws pathway. Release of AwsX mediated repression results in a conformational shift that in the model is represented as formation of an active dimer.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Description of functional interactions (B) Description of molecular reactions (C) Differential equations describing the dynamics of the Aws pathway.
 
 One immediate consequence of this approach is that production of WS types is described entirely through biochemical reactions. Knowing whether a WS-type is generated by a particular mutation amounts to determining which reaction rates are altered by the mutation and whether those changes affect the likelihood of producing WS types. This leads to an approach where mutations in components can be classified according to their effects on reaction rates: enabling mutations increase reaction rates, whereas disabling mutations decrease reaction rates.
 
@@ -98,11 +114,31 @@ Null Model IV takes a further step toward mechanistic accuracy by endowing inter
 
 To accommodate pleiotropic effects, null Model IV systematically considers all combinations of enabling and disabling changes to reaction rates and determines the likelihood that a WS type is generated. An example of one set of the possible mutations (mi) in Wsp is 1,–1, 0, 0, 0, 0 (an increase in r1, a decrease in r2, but no change in r3, r4, r5, or r6 (Figure 3A)). Since the Wsp pathway has six reaction rates this amounts to 36 or 729 total combinations. However, note that reaction 3 does not share any reactants or products with reactions 5 or 6. Thus, mutations such as 0, 0, 1, 0, 1, 0 or 0, 0, 1, 0, 0, 1 are not considered because they require mutations in two separate genetic components.
 
-To accommodate a range of effects null Model IV simulates enabling/disabling changes of different magnitudes and determines the resulting effect on the respective effector DGC (see Materials and methods). Briefly, the approach addresses the lack of information concerning biochemical reaction rates and molecular concentrations in the mathematical models describing WS-producing pathway dynamics. By repeatedly sampling from the space of all possible reaction rates, initial concentrations, and magnitudes of effects, this approach computes the probability that a particular set of mutations (mi), for example 1,–1, 0, 0, 0, 0, results in a wrinkly spreader. This probability is represented as the conditional probability P (WS |mi ∈ Wsp), which motivates a Bayesian formulation to compare the relative probability that the different pathways produce WS. To this end, the probability that a particular pathway will be used is decomposed into two terms: the probability that a particular set of mutations (mi) occurs in Wsp (or Aws, or Mws) represented as P (mi ∈ Wsp) and the probability that those mutations give rise to a wrinkly spreader represented as P (WS |mi ∈ Wsp) (or Aws, or Mws).(1)P(WS∩m∩Wsp)=∑iP(WS|mi∈Wsp)P(mi∈Wsp)
+To accommodate a range of effects null Model IV simulates enabling/disabling changes of different magnitudes and determines the resulting effect on the respective effector DGC (see Materials and methods). Briefly, the approach addresses the lack of information concerning biochemical reaction rates and molecular concentrations in the mathematical models describing WS-producing pathway dynamics. By repeatedly sampling from the space of all possible reaction rates, initial concentrations, and magnitudes of effects, this approach computes the probability that a particular set of mutations (mi), for example 1,–1, 0, 0, 0, 0, results in a wrinkly spreader. This probability is represented as the conditional probability P (WS |mi ∈ Wsp), which motivates a Bayesian formulation to compare the relative probability that the different pathways produce WS. To this end, the probability that a particular pathway will be used is decomposed into two terms: the probability that a particular set of mutations (mi) occurs in Wsp (or Aws, or Mws) represented as P (mi ∈ Wsp) and the probability that those mutations give rise to a wrinkly spreader represented as P (WS |mi ∈ Wsp) (or Aws, or Mws).
+
+$$
+P(WS∩m∩Wsp)=\sum_{i}P(WS|m_{i}\inWsp)P(m_{i}\inWsp)
+$$
 
 To estimate P (mi ∈ Wsp) we assume fixed probabilities of enabling and disabling changes and compute the product. Thus, the probability of mi = 1,–1, 0, 0, 0, 0 is pepd(1 − pe − pd)4, where pe is the probability of a mutation with an enabling effect and pd is the probability of a mutation with a disabling effect. Recognising the value of accommodating the possibility of localised mutational bias we note that pe and pd can be adjusted for the affected reactants. The second term, P (WS |mi ∈ Wsp), relies on our sampling methodology and describes the probability that a set of disabling/enabling changes of different magnitudes will yield a WS type (see Materials and methods).
 
 Despite the mechanistic advances incorporated into null Model IV the Wsp pathway is still predicted to be the pathway most commonly used by evolution. The extreme cases in which disabling mutations are more probable than enabling mutations (and vice versa) are shown in Figure 3E. The results of simulations for the full range of pd and pe values are shown in Figure 5. Figure 5A shows that the Wsp pathway is predicted to be the target of mutation 1.5–1.9 times more often than the Aws pathway while Figure 5B shows that the Mws pathway is predicted to be the target of mutation 0.4–0.5 times less often that the Aws pathway. While these results agree with the experimental data showing Mws to be least likely pathway to be followed, the predictions are at odds with the data showing WS types to be twice as likely to arise from mutation in Aws, versus Wsp. The causes of this discrepancy are accounted for in the next section ‘analysis of mutants reveals sources of mutational bias’.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig5-v1.jpg)
+
+**Figure 5.:** (A) Probability of Wsp relative to Aws. (B) Probability of Mws relative to Aws. (C) Probability of Mws relative to Wsp. The relative contributions of individual reactions rates are available in Figure 5—figure supplement 1 for Wsp and Figure 5—figure supplement 2 for Aws. Sensitivity analysis is shown in Figure 5—figure supplement 3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Proportion of WS mutants that are produced by changes to each reaction rates is dependent on the rates of enabling and enabling mutations. When the rate of disabling mutations is much higher than the rate of enabling mutations the majority of WS mutations in Wsp are produced by changes to r2 and r6.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Proportion of WS mutants that are produced by changes to each reaction rates is dependent on the rates of enabling and enabling mutations. When the rate of disabling mutations is much higher than the rate of enabling mutations the majority of WS mutations in Wsp are produced by changes to r3.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** To assess the effect of the chosen parameter (A) ranges on our results, we redid our sampling procedure for WSP for three different parameter regimes: (B) an expanded range for initial concentrations [0–100], (C) an expanded range for reaction rates 10 [-3,3], (D) a compressed range for mutational effect size 10 [-1,1]. We found that our qualitative results are robust to these changes.
 
 The Bayesian approach of null Model IV has additional utility: it allows prediction of genes likely to be affected by mutation. Predictions as to specific genetic targets come from appraisal of the relative importance of each reaction in terms of generating WS types (Figure 5—figure supplements 1 and 2). While it is recognised that a majority of WS mutations arise from defects in negative regulators of DGCs, such as WspF and AwsX (McDonald et al., 2009; Lind et al., 2015), further predictions are possible based on impacts of alterations in gene function on reaction rates. For example, with reference to the Wsp pathway (Figure 5—figure supplement 1), there are two reactions (2 and 6) that are affected by WspF function: r2 describes the rate of removal of methyl groups from the WspA signalling complex and r6 the rate at which WspF is activated by transfer of active phosphoryl groups from the WspE kinase. Loss-of-function (disabling) mutations being much more common than gain-of-function (enabling) mutations means that WspF, WspA and WspE are all likely targets. The null model predicts that in the area of parameter space in which Wsp is most likely compared to Aws, 45% of the time WS will be generated when the second reaction, r2, is altered (Figure 5—figure supplement 1). The same is true for reaction r6. Thus the presence of a negative regulator is predicted to extend the mutational target size well beyond the gene itself. This is also true for Aws, where r3 is the main contributor to the WS phenotype in the case where disabling change is more common than enabling change. Here mutations are predicted not only in the negative regulator AwsX, but also in the interacting region of the DGC AwsR (Figure 5—figure supplement 2).
 
@@ -110,39 +146,155 @@ Loss-of-function mutations in negative regulators and their interacting partners
 
 In summary, high rates of WS mutations are predicted for wspF, wspE, wspA, awsX and awsR with lower rates for wspC, wspR and awsO. Several of these predictions sit in accord with previous experimental observations, however, notable are predictions that evolution might also target wspA and wspR, two genes that have not previously been identified as mutational causes of WS types (McDonald et al., 2009).
 
-## Analysis of mutants reveals sources of mutational bias
+### Analysis of mutants reveals sources of mutational bias
 
 There are several reasons why predictions from the models might be out of kilter with experimental data on mutation rates. We firstly looked to the distribution of WS generating mutations among the 109 mutants collected during the course of the fluctuation assays. Of the 109 mutants, 105 harboured a mutation in wsp (46 mutants), aws (41 mutants) or mws (18 mutants) (Figure 6A, Figure 6—source data 1). The remaining four had mutations in previously described rare pathways (PFLU0085, PFLU0183), again confirming that these non-focal pathways produce just a fraction of the total set of WS mutants (Lind et al., 2015).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig6-v1.jpg)
 
-**Figure 6.:** (A) 105 independent mutations in the wsp (n = 46), aws (n = 41) and mws (n = 18) operons were identified. Numbers of independent mutants are shown in brackets. Full details on the mutations are available in Figure 5—source data 1. (B) Diversity of mutations with area proportional to mutation rate (Figure 2). Two mutations (AwsX ΔY77-Q87 and AwsR T27P) contribute 41% of all mutations to WS suggesting that these are mutational hot spots.10.7554/eLife.38822.015Figure 6—source data 1.
+**Figure 6.:** (A) 105 independent mutations in the wsp (n = 46), aws (n = 41) and mws (n = 18) operons were identified. Numbers of independent mutants are shown in brackets. Full details on the mutations are available in Figure 5—source data 1. (B) Diversity of mutations with area proportional to mutation rate (Figure 2). Two mutations (AwsX ΔY77-Q87 and AwsR T27P) contribute 41% of all mutations to WS suggesting that these are mutational hot spots.
 
 The distribution of mutations for each of the three pathways is indicative of bias. As shown in Figure 6B, almost 29% of all WS-causing mutations (adjusted for differences in mutation rates between the three pathways) were due to an identical 33 base pair in-frame deletion in awsX (Δt229-g261, ΔY77-Q87), while a further 13% were due to an identical mutation (79 a->c, T27P) in awsR. At least 41 different mutations in Aws lead to WS: if mutation rates were equal for these sites the probability of observing 20 identical mutations would be extremely small. In fact 10 million random samplings from the observed distribution of mutations failed to recover this bias. While the Wsp pathway also contains sites that were mutated more than once (six positions were mutated twice, one site three times and one five times), sources of mutational bias in Wsp were less evident than in Aws (Figure 6B).
 
-## Incorporating mutational bias into null models
+### Incorporating mutational bias into null models
 
 The mathematical models presented above assumed no mutational bias, but the null models can be modified to incorporate such bias. With focus on the AwsX hotspot, we show this for models II-IV.
 
-## Null Model II
+#### Null Model II
 
 The probability of a mutation at the hotspot is kp where k > 1 and p is the probability of a mutation in non-hotspot locations. The probability that a pathway is used is: kp + (1-kp)(1-(1-p) (n-1)) where kp is the probability of a mutation at the hotspot and (1-kp)(1-(1-p)(n-1)) is the probability there is no mutation at the hotspot, but that there is a mutation elsewhere in the pathway. Using the binomial approximation, the probability a given pathway is used is: kp + (1-kp)(n-1)p, which for Aws is kp+(1-kp)2p. Figure 7A shows that if the mutation rate at the hotspot increases 10-fold (k = 10.3) then Aws is used 1.8 times more often than Wsp. While this matches experimental data, the same 10-fold increase applied to Mws results in mismatch. Only with a reduced mutation rate at the same locus (k = 6.8) do predicted and observed data agree (Figure 7B).
 
-## Null Model III
+![Figure 7.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig7-v1.jpg)
 
-The mutational hotspot in the Aws pathway occurs in AwsX, which is involved in both an enabling and a disabling reaction. If the hotspot increases the rate of a disabling reaction by a factor k where k > 1, then the probability the pathway is used is:k pd+(1−k pd) (1−(1−pd)d(n−1)) + (1−k pd) (1−pd)d(n−1) (1−(1−pe)en),which is the sum of probabilities of the events the hotspot is used, the hotspot is not used but a disabling change occurs, and the hotspot is not used but only an enabling change occurs. Figure 7C shows that if k is between 4 and 5.3, then there is a good fit to experimental data. The actual value depends on the probabilities of enabling/disabling change and which reaction has the hotspot. For Mws the mutational hotspot must have a factor between 10 and 15 (Figure 7D).
+**Figure 7.:** Null Models II (A, B), III (C, D) and IV (E, F) can be revised to take into account the mutational hot spot in AwsX by including a mutation factor (k). Each plot (A-F) shows the predicted ratios of Wsp/Aws or Aws/Mws compared to the experimental results (dashed red line). For null models III and IV a range is shown that depends on the probabilities of enabling (pe) and disabling (pd) changes. (G) Comparison of experimental data (left) and revised predictions from null model IV (middle, right), incorporating a five-fold increase in pe and pd for r2 and r3 in the Aws differential equation system. Middle pie chart use pd = 0.001, pe = 0.0001 and right pie chart pd = 0.0001, pe = 0.001 to allow comparison to Figure 3F and G. (H) Null Model IV predicted probability of Wsp relative to Aws with a hotspot in AwsX that increases the mutation rate five-fold for pe and pd for r2 and r3 in the Aws system of differential equation (I) Null Model IV predicted probability of Aws relative to Mws with a hotspot in AwsX that increase the mutation rate five-fold for pe and pd for r2 and r3 in the Aws system of differential equation. Figure 7—figure supplement 1 shows the relative contribution of each reaction rate in the Aws network to the production of WS for the revised null model IV with a 5 times increase for pe and pd for r2 and r3.
 
-## Null Model IV
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Proportion of WS mutants that are produced by changes to each reaction rates is dependent on the rates of enabling and enabling mutations. When the rate of disabling mutations is much higher than the rate of enabling mutations the majority of WS mutations in Wsp are produced by changes to r3.
+
+#### Null Model III
+
+The mutational hotspot in the Aws pathway occurs in AwsX, which is involved in both an enabling and a disabling reaction. If the hotspot increases the rate of a disabling reaction by a factor k where k > 1, then the probability the pathway is used is:
+
+$$
+k p_{d}+(1−k p_{d}) (1−(1−p_{d})_{d}^{(n−1)}) + (1−k p_{d}) (1−p_{d})_{d}^{(n−1)} (1−(1−p_{e})_{e}^{n}),
+$$
+
+which is the sum of probabilities of the events the hotspot is used, the hotspot is not used but a disabling change occurs, and the hotspot is not used but only an enabling change occurs. Figure 7C shows that if k is between 4 and 5.3, then there is a good fit to experimental data. The actual value depends on the probabilities of enabling/disabling change and which reaction has the hotspot. For Mws the mutational hotspot must have a factor between 10 and 15 (Figure 7D).
+
+#### Null Model IV
 
 The mutational hotspot in awsX affects reaction rates r2 and r3 in the Aws system of differential equations (Figure 4B, Figure 4—figure supplement 2). If the mutation factor is between 3.3–5.6 for the Wsp/Aws comparison (Figure 7E) or 4.8–7.6 for the Mws/Aws comparison (Figure 7F), then predictions match observed data. Thus Model IV is the only one where the same five-fold change in the probability of enabling/disabling change predicts observed data for all three mutational pathways (Figure 7G). This model, updated with hotspot data, predicts that the Aws pathway is more likely to generate WS types than Wsp for all probability values (see Figure 7H). If disabling changes are more probable than enabling changes, then r3 dominates the predicted rate, whereas when enabling changes are more common r2 is the major contributor (Figure 7—figure supplement 1). Knowledge of the functional interaction between AwsX and AwsR allows interpretation of the likely effect of the hotspot mutations in AwsX and AwsR as disabling change in r3 (Table 1).
 
-## Analysis of mutants reveals mutational targets and effects
+**Table 1.**
+ Connection of mutational effects to reaction rates
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Mutation class</th>
+      <th>Proposed molecular effect</th>
+      <th>Proposed reaction rate effect</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WspA</td>
+      <td>Amino acidsubstitutions 352–420</td>
+      <td>Trimer-of-dimer formation, localisation of Wsp clusters,interaction with WspD</td>
+      <td>Increase r3</td>
+      <td>(O'Connor et al., 2012; Griswold et al., 2002 )</td>
+    </tr>
+    <tr>
+      <td>WspA</td>
+      <td>Deletions A281-A308</td>
+      <td>Disrupt demethylation by WspF</td>
+      <td>Decrease r2</td>
+      <td>(McDonald et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>WspC/D</td>
+      <td>Fusion of WspC and WspD</td>
+      <td>Increased methylation byWspC, blocking access of WspF</td>
+      <td>Increase r1, decrease r2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WspE</td>
+      <td>Response regulatory domain phosphorylation site</td>
+      <td>Disrupt phosphorylation of WspF</td>
+      <td>Decrease r6</td>
+      <td>Homology model</td>
+    </tr>
+    <tr>
+      <td>WspF</td>
+      <td>Any disabling mutation</td>
+      <td>Loss of negative regulation by WspF by demethylation of WspA</td>
+      <td>Decrease r2</td>
+      <td>(Bantinaki et al., 2007; McDonald et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>WspR</td>
+      <td>Amino acid substitutionsand small deletion inlinker region betweenresponse regulator and DGC domain</td>
+      <td>Constitutive activationof DGC withoutphosphorylation.Effects on subcellular clustering or multimeric state.</td>
+      <td>Increase r5</td>
+      <td>(Goymer et al., 2006; De et al., 2009; Huangyutitham et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>AwsX</td>
+      <td>In frame loss of function mutations</td>
+      <td>Loss of negative regulation of AwsR</td>
+      <td>Decrease r3</td>
+      <td>(Malone et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>AwsR</td>
+      <td>Amino acidsubstitutionstransmembranehelix, periplasmic domain</td>
+      <td>Disruption of interaction with AwsX</td>
+      <td>Decrease r3</td>
+      <td>(Malone et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>AwsR</td>
+      <td>Amino acid substitutionsHAMP linker domain</td>
+      <td>Changes in dimerization, packing of HAMP domainscausing constitutive activation</td>
+      <td>Increase r4</td>
+      <td>(Parkinson, 2010; Malone et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>AwsO</td>
+      <td>Amino acid substitutionsin between signal peptide and OmpA domain</td>
+      <td>Constitutive activation andsequestering of AwsX</td>
+      <td>Increase r2</td>
+      <td>(McDonald et al., 2009; Malone et al., 2012; Xu et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>MwsR</td>
+      <td>Amino acid substitutions and small in frame deletions in interfacebetween EAL and DGC domains</td>
+      <td>Changes to interdomain interaction or dimerization leading to constitutive activation of DGC function</td>
+      <td>Decrease r2, increase r1</td>
+      <td>Homology model, (McDonald et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>MwsR</td>
+      <td>Amino acid substitutionsnear DGC active site</td>
+      <td>Loss of feedback regulationor changes to interdomain interaction</td>
+      <td>Decrease r2, increase r1</td>
+      <td>Homology model, (McDonald et al., 2009)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Analysis of mutants reveals mutational targets and effects
 
 Null Model IV of the Wsp, Aws, and Mws pathways allow estimation of the relative probability that a WS is produced by enabling or disabling changes in a certain reaction rate. This means that in order to evaluate the success of our predictions, the 105 WS mutations must be connected to their likely effects on reaction rates. For some mutations this is straightforward. If a mutation completely disables the negative regulator WspF, this will reduce r2 and r6, thereby producing a wrinkly spreader. In other cases interpretations of likely effects are more difficult and requires knowledge of the molecular functions of the proteins and their interactions, which needs to be obtained from literature, bioinformatics and structural modelling. For example, mutations in WspA can potentially produce WS by disruption of the interaction with WspF (reducing r2), increase methylation by WspC (increasing r1), increase signalling rate (r3) or increase phosphorylation of WspE (r4). A summary of the interpretation of the molecular effects of mutations and how they are connected to reaction rates is available in Table 1 with a more detailed description in Appendix 1.
 
 Mutations were found in five genes in the Wsp pathway. The majority of the mutations were found in the negative regulator WspF or its interacting partners WspE and WspA. These mutations likely reduced reaction rates of r2 and r6 in accord with predictions of null Model IV. The remaining mutations in WspC and WspR were less common, in accord with predictions and likely due to increases in reaction rates r1 and r5, respectively. Results for the Aws pathway were also in line with predictions with the majority of the mutations arising in the negative regulator AwsX or the interacting part of AwsR (both decreasing r3), with rare mutations in AwsO and other parts of AwsR. For MwsR, loss-of-function mutations were expected primarily in the phosphodiesterase (PDE) domain, but mutations were found in both diguanylate cyclase (DGC) and PDE domains. A structural analysis revealed that mutations were clustered in the interface between the domains and unlikely to disrupt PDE function. These mutations most likely change the dynamics between the DGC and EAL domains in a way that increases production of c-di-GMP.
 
-## Differences of mutational spectra with and without selection
+### Differences of mutational spectra with and without selection
 
 The null models – and especially null Model IV – successfully predicted the mutational targets and explained mutation rates to WS when knowledge of mutational hot spots was included. To what degree can such knowledge allow prediction of the outcome of the original experimental evolution under selection (McDonald et al., 2009)? A comparison between the frequencies of mutations isolated here (without selection) with those isolated under selection, reveals several notable differences (Figure 8). The most obvious difference is in use of the Wsp pathway, which is most commonly used (15/24) under selection and yet produces WS types at a lower rate than the Aws pathway. Differences are also apparent in the spectrum of wsp mutations, with no wspA mutations being found under selection despite being the most commonly mutated gene without selection (15/46), and the previous failure to detect wspR mutants in a screen of 53 WS mutants (Goymer et al., 2006).
 
@@ -150,13 +302,13 @@ The null models – and especially null Model IV – successfully predicted the 
 
 **Figure 8.:** (A) The mutational spectrum observed under selection suggests underrepresentation of WspA and WspR compared to WspF and WspE. (B) Similar fitness effects of different Aws mutants lead to similar patterns regardless of selective conditions. However the frequency of all Aws mutants isolated under selection is much lower than expected from its high mutation rate. (C) The low number of MwsR mutants isolated does not allow an analysis of relative rates. Only within operon comparisons are valid for this figure as the mutants isolated without selection had double deletions of the other operons. Between operon mutation rates are available in Figure 2.
 
-## Fitness of WS types
+### Fitness of WS types
 
 The most obvious explanation for the differences in mutational spectra between WS isolated with or without selection (Figure 8) is that certain mutants have a lower fitness and thus their relative frequencies will be lower in the original evolution experiment (McDonald et al., 2009). We measured the fitness of representative WS types with mutations in each of the mutated genes (wspA, wspC/D, wspE, wspF, wspR, awsX, awsR, awsO, mwsR) in 1:1 competitions against a reference WspF ΔT226-G275 deletion mutant marked with GFP (Figure 9). This type of fitness data should be interpreted with caution because the fitness of WS mutants are frequency-dependent (Rainey and Travisano, 1998) and some WS mutants are superior in early phase attachment as opposed to growth at the air-liquid interface (Lind et al., 2015). Nevertheless, the competition experiments provide an estimate of fitness when several different WS mutants compete at the air-liquid interface (a likely situation given a ~ 10−8 mutation rate to WS and a final population size of >1010). The fitness data account for the over- or under-representation of some WS mutants when grown under selection (McDonald et al., 2009) compared to those uncovered without selection (as reported here).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/38822/elife-38822-fig9-v1.jpg)
 
-**Figure 9.:** Competitive fitness against a WspF ΔT226-G275 reference strain was measured for representative mutations in the Wsp, Aws, Mws pathways. Pairwise competitions were performed in quadruplicates and error bars represent ±one standard deviation. Full data, including statistical tests are available in Figure 9—source data 1.10.7554/eLife.38822.021Figure 9—source data 1.
+**Figure 9.:** Competitive fitness against a WspF ΔT226-G275 reference strain was measured for representative mutations in the Wsp, Aws, Mws pathways. Pairwise competitions were performed in quadruplicates and error bars represent ±one standard deviation. Full data, including statistical tests are available in Figure 9—source data 1.
 
 The three wspF mutants, the wspC-wspD fusion, and the wspE mutants have similar fitness (p>0.38, except for WspE K734E that has slightly higher fitness (p=0.027), two-tailed t-tests). In contrast, both wspA mutants are slightly less fit (p<0.0214, two-tailed t-test) and both wspR mutants are severely impaired (p<0.00007, two-tailed t-test) (Figure 9). This sits in accord with previous work in which mutations generating WS obtained with selection have been detected in wspF and wspE, but not wspA or wspR (Goymer et al., 2006; McDonald et al., 2009). All awsXRO mutants have similar lower fitness (p<10−6, two-tailed t-test) compared to the wspF reference strain (Figure 9), which explain why under selection these are found at lower frequencies compared to mutations in the wsp pathway (McDonald et al., 2009) despite a roughly two-fold higher mutation rate to WS.
 
@@ -182,27 +334,457 @@ Evolutionary forecasting is in its infancy. In the short term it is likely to be
 
 ## Materials and methods
 
-## Strains and media
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene</td>
+      <td>wspA; PFLU1219</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>wspB; PFLU1220</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>wspC; PFLU1221</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>wspD; PFLU1222</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>wspE; PFLU1223</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>wspF; PFLU1224</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>wspR; PFLU1225</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>awsX; PFLU5211, yfiR</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>awsR; PFLU5210, yfiN, tpbB</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>awsO; PFLU5209, yfiB</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>mwsR; PFLU5329, morA</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>wss; PFLU0300-PFL0309</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strainbackground</td>
+      <td>Pseudomonas fluorescens SBW25</td>
+      <td>PMID: 19432983;PMID: 8830243</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>PBR721; ∆aws ∆mws</td>
+      <td>PMID: 19704015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>PBR713; ∆wsp ∆mws</td>
+      <td>PMID: 19704015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>PBR712; ∆wsp ∆aws</td>
+      <td>PMID: 19704015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>WT with pMSC</td>
+      <td>PMID: 17377582</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>PBR721 with pMSC</td>
+      <td>This work</td>
+      <td></td>
+      <td>Wsp pathway with pMSC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>PBR713 with pMSC</td>
+      <td>This work</td>
+      <td></td>
+      <td>Aws pathway with pMSC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>PBR712 with pMSC</td>
+      <td>This work</td>
+      <td></td>
+      <td>Mws pathway with pMSC</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RecombinantDNA reagent</td>
+      <td>pMSC</td>
+      <td>PMID: 17377582</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mini-Tn7(Gm)PrrnB P1 gfp-a</td>
+      <td>PMID: 15186351</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1219_1294R</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>agacactgcggactggatct</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1219_UF</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>ttgcctgtggagcgttctat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1219_1130F</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>accaggtggtggtgaccat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1220_DR</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>gacgatcactgcttcgatca</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>wspD1r</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>gttgcgttccagggcgag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1221_DR</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>acttatcgccatggataccg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1221_UF</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>tggatcggtgtaaacgacct</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1223_1511F</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>atgacatcgtgcaactggaa</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1223_DR</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>caggtccatcaggatcaggt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1223_841F</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>cgcccaagtgttgtatgaca</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1223_DR</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>caggtccatcaggatcaggt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1224_160R</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>tccatcaccggcatgatca</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1224_DR</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>ttttcgtcggtcttgatgtc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1224_UF</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>aagccagtttccacgatgac</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1225_DR</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>gtgagggtacaccgagccta</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU1225_UF</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>tgccaaatgaacatgacctc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU5329_1888F</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>cgtggattgggtgttcaaga</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PFLU5329_3118R</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>cggttggtaatagagcacga</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>wspF-seqR</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>ataacggtcggcttgatacg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Aws11f</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>gctggttcagcttgatcgaaccc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Aws16r</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>atggatgctgccgatggttc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Aws7f</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>gcaaactcaccgcggatgag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Aor</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>cccgtcgattctccgtgcgc</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinantprotein</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemicalcompound, drug</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ma-Sandri-Sarkar MLE estimator</td>
+      <td>PMID: 19369502</td>
+      <td></td>
+      <td>www.keshavsingh.org/protocols/FALCOR.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Julia v1.0</td>
+      <td>https://julialang.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab 9.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phyre2</td>
+      <td>PMID: 25950237</td>
+      <td></td>
+      <td>http://www.sbg.bio.ic.ac.uk/phyre2</td>
+    </tr>
+    <tr>
+      <td>Software,algorithm</td>
+      <td>Geneious 7.1</td>
+      <td>https://www.geneious.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACSDiva 7.0</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and media
 
 The strains used in the study are all Pseudomonas fluorescens SBW25 (Silby et al., 2009) or derivatives thereof. The reporter construct (pMSC), used for isolation of WS mutants before selection, fused the Pwss promoter to a kanamycin resistance marker (nptII) (Fukami et al., 2007; McDonald et al., 2011). P. fluorescens strains with deletions of the wsp (PFLU1219-1225), aws (PFLU5209-5211) and mws (PFLU5329) operons were previously constructed as described by McDonald et al. (McDonald et al., 2011). All experiments used King’s medium B (KB) (King et al., 1954), solidified with 1.5% agar and incubation was at 28°C. All strains were stored in glycerol saline KB at −80°C.
 
-## Fluctuation tests and isolation of WS mutants before selection
+### Fluctuation tests and isolation of WS mutants before selection
 
 Strains with the pMSC reporter construct and either wild type genetic background or double deletions of aws/mws, wsp/mws or wsp/aws were used to estimate mutation rates to WS before selection. Overnight cultures were diluted to approximately 103 cfu/ml and 60 independent 110 μl cultures were grown for 16–19 hr (OD600 = 0.9–1.0) with shaking (200 rpm) in 96-well plates before plating on KB plates with 30 mg/l kanamycin. Viable counts were estimated by serial dilution and plating on KB agar. One randomly chosen colony per independent culture with WS colony morphology was restreaked once on KB agar. The assay was repeated at least four times for the double deletion mutants and twice for the wild type strain in order to obtain enough mutants to allow estimation of mutation rates. Mutations rates and confidence intervals were estimated using the Ma-Sandri-Sarkar Maximum Likelihood Estimator (Hall et al., 2009) available at www.keshavsingh.org/protocols/FALCOR.html. The mutation rates between the different strains were statistically evaluated using a t-test as previously described (Rosche and Foster, 2000), but this method has only been shown to be valid in cases where total population size is not significantly different for the strains used. In our assay this was not the case, as determined by ANOVA, and therefore the results of the statistical analysis should be interpreted with caution. As the estimated number of mutants per well was <0.5 for all strains, the biasing effect of differences in fitness between WS mutants is minimal.
 
-## Sequencing
+### Sequencing
 
 Mutations causing the WS phenotype were identified by Sanger sequencing of candidate genes in the remaining common pathway to WS, for example the wsp operon for the aws/mws deletion strain. In a few cases where no mutations were identified in the previously established WS target genes, we used genome sequencing (Illumina HiSeq, performed by Macrogen Korea).
 
-## Fitness assays
+### Fitness assays
 
 Competition assays were performed as previously described (Lind et al., 2015) by mixing the WS mutant 1:1 with a reference strain labelled with green fluorescent protein and measuring the ratio of each strain before and after static growth for 24 hr using flow cytometry (BD FACS Canto). We used a WspF ΔT226-G275 deletion mutant as the reference strain because WspF mutants are the most commonly found WS type when grown under selective conditions (McDonald et al., 2009) and the in frame deletion of 50 amino acids most likely represents a complete loss-of-function mutation with minimal polar effects on the downstream wspR. Selection coefficients per generation were calculated as s = [ln(R(t)/R(0))]/[t], as previously described (Dykhuizen, 1990) where R is the ratio of alternative WS mutant to WspF ΔT226-G275 GFP and t the number of generations. Viable counts on KB plates of initial and final populations were performed to calculate the number of generations. Stability of colony morphologies was confirmed and data from microcosms with >5% smooth colonies were excluded (two cases). Control competition experiments with isogenic WspF ΔT226-G275 reference strains with and without GFP were used to correct for the cost of the GFP marker. Control competitions were also used to determine the cost of the double deletions and the reporter construct relative to a wild type genetic background, for example an AwsX ΔY77-Q87 mutant in Δwsp/Δmws background with pMSC was competed with a GFP labeled AwsX ΔY77-Q87 mutant in wild type background. Competitions were performed in independently inoculated quadruplicates for each strain with the number of replicates based on previous work (Lind et al., 2015).
 
-## Homology models
+### Homology models
 
 Homology models of the structure of WspA, WspE, WspR, AwsR, AwsO and MwsR were made using Phyre2 in intensive mode (http://www.sbg.bio.ic.ac.uk/phyre2) (Kelley et al., 2015).
 
-## Probability estimation in the null model IV
+### Probability estimation in the null model IV
 
 The differential equation models describe the interactions between proteins in each of the three WS pathways. In order to solve the differential equations, two pieces of information are required: (i) the initial concentrations of the molecular species and (ii) the reaction rates. Although this information is unavailable a random-sampling approach was used to generate different random sets of initial concentrations and reaction rates. Each random set was used to establish a baseline of potential WS expression making it possible to evaluate whether a set of mutations results in a WS type. Effectively, this approach allows sampling of the probability distribution P (WS |mi ∈ Wsp) used in our Bayesian model.
 

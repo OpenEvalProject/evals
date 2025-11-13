@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00cvxb145 Department of Physiology and Biophysics, University of Washington Seattle United States
-2. https://ror.org/006w34k90 Howard Hughes Medical Institute Chevy Chase United States
-3. https://ror.org/00cvxb145 Department of Pharmacology, University of Washington Seattle United States
+1. Department of Physiology and Biophysics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+2. Howard Hughes Medical Institute Chevy Chase United States ([ROR:006w34k90](https://ror.org/006w34k90))
+3. Department of Pharmacology, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -35,7 +35,7 @@ Our work was structured around three main objectives: (1) to standardize the iso
 
 ## Results
 
-## Sympathetic motor neurons from old mice are healthy in culture
+### Sympathetic motor neurons from old mice are healthy in culture
 
 Our first goal was to assess the viability of neurons isolated from young adult and old mice. We isolated sympathetic motor neurons enzymatically from the left and right superior cervical ganglia (SCG) of young adults (12 weeks old) and old animals (115 weeks old, Figure 2A). The same enzymatic digestion was used for both ages. Single neurons exhibited no visible neurite growth before 18 hr (Figure 2B, left); however, after 72 hr in culture, both young and old sympathetic motor neurons showed evident neurite growth (Figure 2B, right). The mean diameter of the cell soma was found to be similar in young (19.7 ± 0.6 μm) and old (19.6 ± 0.6 μm) neurons after 24 and 72 hr in culture (Figure 2C). The dendritic arborization after 24 hr in culture was comparable between young (37 ± 2 μm2) and old (42 ± 3 μm2) neurons. However, after 72 hr in culture, the dendritic arborization in old neurons (105 ± 7 μm2) was more extensive compared to that of young neurons (74 ± 5 μm2) (Figure 2D). We continued the culture for 7 days and noted that the neurites grew until they contacted other neurons in the same dish. Furthermore, glial cells became apparent at this stage in cultures of young and old cells. The ability of neurons to regenerate neurites and contact each other was considered an indicator of viability and health. We ruled out the possibility that any functional differences between neurons from animals of different ages were due to potential damage to old neurons during the isolation and culture process. From now on, we report electrical measurements on neurons that had been incubated for approximately just 12–18 hr after isolation.
 
@@ -43,7 +43,7 @@ Our first goal was to assess the viability of neurons isolated from young adult 
 
 **Figure 2.:** (A) Diagram of the experimental approach: Sympathetic motor neurons were isolated from the superior cervical ganglia (SCG) of 12- and 115-week-old mice. The ganglia did not show morphological differences between ages. (B) Differential interference contrast images of sympathetic motor neurons in culture for 18 hr and 72 hr. Right images at 72 hr outline the dendritic area measured. w, weeks. (C) Comparison of soma diameter between neurons isolated from 12 or 115 weeks of age at two time points in culture. Orange circles showed single cells from 12-week-old mice while purple triangles show single cells from 115-week-old mice. (D) Comparison of the total dendritic area as a proxy for neurite regeneration in culture. Data points are from N = 3 animals, n = 38 cells, from 12 weeks old, and N = 3 animals, n = 39 cells, from 115 weeks old. Error bars represent SEM. p-Values are shown at the top of the graphs. Red values indicate p-values<0.05 while black values indicate p-values>0.05.
 
-## Old sympathetic motor neurons fire action potentials spontaneously
+### Old sympathetic motor neurons fire action potentials spontaneously
 
 To investigate whether aging alters the function of sympathetic motor neurons, we first compared the spontaneous activity and passive electrical properties of neurons isolated from mice at different ages: 12 weeks (young), 64 weeks (middle age), and 115 weeks (old). For reference, we also provide comparable human ages (Figure 3A). Spontaneous activity was recorded using the current clamp modality without applying any holding or current stimulus. Electrical access to the cell was obtained using the perforated patch technique (see ‘Materials and methods’ for details). Young neurons had a resting membrane potential (RMP) of –64 ± 1 mV and very little spontaneous activity, which aligns with the expected behavior of motor neurons that respond to presynaptic commands (Figure 3B and C). Only 3% exhibited spontaneous firing (Figure 3D). In contrast, middle-aged neurons showed an RMP of –58 ± 1 mV, and 37% of these neurons displayed spontaneous firing (Figure 3B–D). The depolarized RMP and the increased number of neurons spontaneously firing persisted in old neurons, where the RMP was –54 ± 1 mV and 58% of neurons exhibited spontaneous firing (Figure 3B–D). Despite the higher percentage of old neurons firing spontaneously compared to middle-aged neurons, the mean firing frequency in old neurons (60 ± 20 action potentials [APs]/min) was significantly lower than that observed in middle-aged neurons (177 ± 41 APs/min; Figure 3E).
 
@@ -53,7 +53,7 @@ To investigate whether aging alters the function of sympathetic motor neurons, w
 
 We measured the input resistance, another passive membrane property, in cells polarized to a potential of –65 mV by injecting a negative holding current that did not exceed –50 pA. Cells requiring larger holding currents were excluded. From the response to additional negative current pulses (−40 to 0 pA, Figure 3F), we calculated the input resistance (ΔV/injected current). At these membrane potentials, without activation of voltage-activated ion channels, the change in voltage is proportional to the injected current. Input resistance was not affected by age. Young adult neurons (0.8 ± 0.09 GΩ), middle-aged neurons (1.1 ± 0.06 GΩ), and old neurons (1.1 ± 0.11 GΩ) exhibited similar input resistance (Figure 3G). In conclusion, our findings suggest that aging leads to a gradual depolarization of the RMP without significant alteration of the input resistance.
 
-## Sympathetic motor neurons from old mice are more responsive to electrical stimulation
+### Sympathetic motor neurons from old mice are more responsive to electrical stimulation
 
 During sympathetic reflexes, the peripheral motor neurons increase their firing frequency in response to commands from the central sympathetic nuclei. These commands can be mimicked as direct electrical stimulation, as shown in Figure 4A. To test whether aging increases the sensitivity of sympathetic motor neurons to electrical stimulation, neurons were injected with 1 s current steps of amplitude ranging from 10 pA to 100 pA starting from a potential of –65 mV (‘0 pA current’) (Figure 4B). Young neurons exhibited a characteristic firing pattern demonstrated in the left panel of Figure 4C. With injections of 10 pA, no AP was elicited (red trace), and with a 40 pA stimulus lasting 1 s, only one AP was evoked (black trace), illustrating the phenomenon known as spike adaptation that is typical of young sympathetic motor neurons. In contrast, both middle-aged and old neurons displayed a different response. A 10 pA stimulus was sufficient to elicit APs in middle-aged and old neurons (Figure 4D and E), and in middle-aged neurons, the 40 pA stimulus induced the firing of eleven APs in a typical example (Figure 4D), and similarly, in old neurons, it led to the firing of 10 APs (Figure 4E).
 
@@ -63,7 +63,7 @@ During sympathetic reflexes, the peripheral motor neurons increase their firing 
 
 To assess the impact of age on the excitability of sympathetic motor neurons in a population sample, we compared stimulus–response curves, rheobase values (minimum current needed to elicit at least one AP), and the number of APs elicited with the maximum stimulus. Our results revealed that middle-aged and old neurons fired more APs with each stimulus (Figure 4F) than young neurons. Older neurons exhibited a reduced threshold for eliciting APs (64 weeks: 20 ± 2 pA; 115 weeks: 23 ± 5 pA) compared to young neurons (34 ± 4 pA, Figure 4G). Furthermore, older neurons fired more APs with a 100 pA current injection (64 weeks: 15 ± 1 APs; 115 weeks: 15 ± 2 APs) compared to young neurons (12 weeks: 7 ± 1 APs, Figure 4H). These findings support the concept that aging leads to increased excitability of sympathetic motor neurons.
 
-## Analysis of neuronal subpopulations
+### Analysis of neuronal subpopulations
 
 Sympathetic motor neurons display stereotyped distinct repetitive firing patterns, which classify them into three categories: tonic (class I), phasic (class II), and adapting (class III). (Malin and Nerbonne, 2000; Malin and Nerbonne, 2001; Springer et al., 2015; Kim et al., 2019). In our experiments, we classified cells based on their responses to a supra-threshold current injection (20 pA above their rheobase), ensuring that the firing response was not saturated. Representative traces of firing patterns from middle-aged neurons are illustrated in Figure 5A. The increased number of APs at maximal stimulus compared with 20 pA above the rheobase shows that the firing response was not saturated during classification (Figure 5B). In agreement with previous reports, subpopulations showed differences in frequency–stimulus curves (Figure 5C). Also, tonic cells have a more depolarized RMP (Figure 5D, left, tonic = –53 ± 2 mV, phasic = –61 ± 1 mV, adapting = –60 ± 2 mV), while adapting neurons have a lower input resistance (Figure 5D, right, tonic = 1.13 ± 0.08 GΩ, phasic = 1.16 ± 0.09 GΩ, adapting = 0.55 ± 0.18 GΩ). Tonic cells were also more spontaneously active (Figure 5D, middle). In general, the responses from the three neuronal subpopulations are consistent with previous reports.
 
@@ -79,7 +79,7 @@ Interestingly, aging leads to an increase in the number of spontaneous APs in ph
 
 We conclude that the changes observed when categorizing neuronal classes occur across the entire population. In addition, aging is associated with a shift in the proportion of neurons falling in each class. As a result, we hypothesized that the underlying age-related molecular mechanism is broadly shared among sympathetic motor neurons and plays a role in controlling the firing frequency.
 
-## Aging reduces KCNQ current
+### Aging reduces KCNQ current
 
 We next directed our attention to identifying molecular candidates underlying changes in membrane excitability. Sympathetic motor neurons express at least one voltage-gated sodium channel isoform (NaV1.7) (Toledo-Aral et al., 1997; Schofield et al., 2008) and several voltage-gated potassium channels (Dixon and McKinnon, 1996; Shi et al., 1997). Specifically, KV4, KV2, and KV7 (KCNQ) channels are crucial in controlling the RMP, rheobase, firing frequency, and spike adaptation (Malin and Nerbonne, 2000; Malin and Nerbonne, 2001; Liu and Bean, 2014). These channels are of particular interest as potential contributors to the age-related alterations in neuronal excitability that we observed.
 
@@ -87,11 +87,11 @@ Previous work by our group and others demonstrated that cholinergic stimulation 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/91663/elife-91663-fig6-v1.jpg)
 
-**Figure 6.:** (A) Recordings illustrating relevance of KCNQ current for controlling membrane potential and firing in sympathetic motor neurons. Top: voltage response to inhibition of KCNQ channels with 10 μM Oxo-M; bottom: normalized KCNQ current recording in response to oxo-M in the same cell after going whole cell. (B) Schematic representation of the hypothesis that aged cells show a reduced activity of KCNQ channels. (C) KCNQ current recordings from neurons isolated from mice of different ages (orange 12 weeks old, pink 64 weeks old, and purple 115 weeks old) in response to a voltage step (top). Inset shows an expanded view of the current tail. (D) Comparison of KCNQ current density between different ages. Data points are from N = 5 animals, n = 27 cells, from 12 weeks old, N = 8 animals, n = 62 cells, from 64 weeks old, and N = 5 animals, n = 24 cells, from 115 weeks old. (E) Comparison of capacitance between ages. (F) Blot stained for total and KCNQ2 protein collected from superior cervical ganglia from 12- and 115-week-old mice. (G) Comparison of fold change of KCNQ2 abundance relative to total protein between ages (n = 4 blots from different mice). (H–J) Linear correlation between RMP and KCNQ current density in 12-week-old (H), 64-week-old (I), and 115-week-old mice (J). (K) Comparison of the determination coefficient for the RMP and KCNQ current between ages. (L–N) Linear correlation between the number of action potentials (APs) at 100 pA and KCNQ current density in 12-week-old (L), 64-week-old (M), and 115-week-old mice (N). (O) Comparison of the determination coefficient for the maximum #AP and KCNQ current between ages. Data points are from N = 4 animals, n = 26 cells, from 12 weeks old, N = 6 animals, n = 58 cells, from 64 weeks old, and N = 4 animals, n = 24 cells, from 115 weeks old. Error bars represent SEM.Figure 6—source data 1.Figure 6F, indicating the relevant bands and comparisons.Figure 6—source data 2.Figure 6F.
+**Figure 6.:** (A) Recordings illustrating relevance of KCNQ current for controlling membrane potential and firing in sympathetic motor neurons. Top: voltage response to inhibition of KCNQ channels with 10 μM Oxo-M; bottom: normalized KCNQ current recording in response to oxo-M in the same cell after going whole cell. (B) Schematic representation of the hypothesis that aged cells show a reduced activity of KCNQ channels. (C) KCNQ current recordings from neurons isolated from mice of different ages (orange 12 weeks old, pink 64 weeks old, and purple 115 weeks old) in response to a voltage step (top). Inset shows an expanded view of the current tail. (D) Comparison of KCNQ current density between different ages. Data points are from N = 5 animals, n = 27 cells, from 12 weeks old, N = 8 animals, n = 62 cells, from 64 weeks old, and N = 5 animals, n = 24 cells, from 115 weeks old. (E) Comparison of capacitance between ages. (F) Blot stained for total and KCNQ2 protein collected from superior cervical ganglia from 12- and 115-week-old mice. (G) Comparison of fold change of KCNQ2 abundance relative to total protein between ages (n = 4 blots from different mice). (H–J) Linear correlation between RMP and KCNQ current density in 12-week-old (H), 64-week-old (I), and 115-week-old mice (J). (K) Comparison of the determination coefficient for the RMP and KCNQ current between ages. (L–N) Linear correlation between the number of action potentials (APs) at 100 pA and KCNQ current density in 12-week-old (L), 64-week-old (M), and 115-week-old mice (N). (O) Comparison of the determination coefficient for the maximum #AP and KCNQ current between ages. Data points are from N = 4 animals, n = 26 cells, from 12 weeks old, N = 6 animals, n = 58 cells, from 64 weeks old, and N = 4 animals, n = 24 cells, from 115 weeks old. Error bars represent SEM.
 
 To explore the hypothesis that a reduction in M current is responsible for the age-associated depolarization of the RMP, we compared these two parameters measured in the same cells. We observed a correlation between M current and RMP in young (coefficient of determination (r2) = 0.22, p-value for the correlation fit = 0.007, Figure 6H and K) and middle-aged neurons (r2 = 0.20, p-value for the correlation fit = 0.002, Figure 6I and K). In old neurons, the M current and RMP were no longer correlated (r2 = 0.05, p-value for the correlation fit = 0.1, Figure 6J and K). Figure 6K shows the decrease in the coefficient of determination (r2) with aging. Similarly, the M current amplitude also correlated well with the number of APs elicited at 100 pA in young and middle-aged neurons but not in old ones. The variance in M current amplitude explained 32% of the variation in the number of APs in young (r2 = 0.32, p-value for the correlation fit = 0.001, Figure 6L) and 24% in middle-aged neurons (r2 = 0.24, p-value for the correlation fit = 0.0001, Figure 6M). In old neurons, the variance in M current amplitude explained only 0.05% of the variation in the number of APs (r2 = 0.05, p-value for the correlation fit = 0.15, Figure 6N). Figure 6O shows the decrease in the coefficient of determination with aging for the number of APs. These analyses support the hypothesis that a reduction in M current alters the electrical properties, and in the case of old neurons, the marked decrease in M current compromises its role in maintaining the RMP and spontaneous firing.
 
-## Other voltage-gated sodium and potassium currents are not altered with aging
+### Other voltage-gated sodium and potassium currents are not altered with aging
 
 Loss of voltage-gated potassium channel function, including the current of KV2 and KV4, has also been invoked in aging and age-associated memory decline (Fenyves et al., 2021; Frazzini et al., 2016; Navarro-García et al., 2022; Sesti, 2016; Simkin et al., 2015; Yu et al., 2019). Therefore, we also looked for potential age-associated changes in other voltage-gated potassium currents. We used a recording solution designed to abolish sodium, calcium, and potassium currents mediated by both calcium-activated potassium channels (BK channels) and KCNQ channels. This recording solution contained 100 nM tetrodotoxin (TTX) to suppress voltage-gated sodium channels, 100 μM Cd2+ to inhibit calcium channels and 10 μM XE-991 to block KCNQ channels. Next, we compared the outward current density before and after application of a cocktail of 100 nM phiroxotoxin and 100 nM guangxitoxin to block KV4 and KV2 channels. Figure 7A and C shows representative traces and the comparison of the current density between young and old neurons. We did not observe significant differences in the potassium current insensitive to XE-991 between groups (young = 363 ± 20 pA/pF, old = 342 ± 30 pA/pF, Figure 7A and B) nor in the KV2 and KV4-sensitive currents (young = 157 ± 31 pA/pF, old = 110 ± 17 pA/pF, Figure 7C and D).
 
@@ -101,7 +101,7 @@ Loss of voltage-gated potassium channel function, including the current of KV2 a
 
 In nociceptive neurons, similar to sympathetic neurons, modulation of NaV1.7 channels has been linked to increased excitability (Akin et al., 2021; Dib-Hajj et al., 2013; Li et al., 2018). Additionally, exogenous expression of NaV1.7 channels in non-excitable cells induces cell senescence (Warnier et al., 2018), further highlighting a significant connection between aging and voltage-gated sodium channels. To investigate the hypothesis that aging might contribute to hyperexcitability through alterations in sodium currents in sympathetic motor neurons, we conducted experiments using 5 ms voltage steps in a low-sodium recording solution. We found that the sodium current density was similar in young (58.9 ± 5.4 pA/pF), middle-aged (59.0 ± 5.3 pA/pF), and old (50.1 ± 5.7 pA/pF) neurons (Figure 7E–G). In conclusion, our data indicate that aging does not alter the NaV and KV currents insensitive to XE-991 in sympathetic motor neurons.
 
-## Pharmacological inhibition of KCNQ channels mimics aged phenotype while pharmacological activation of KCNQ channels mimics young phenotype
+### Pharmacological inhibition of KCNQ channels mimics aged phenotype while pharmacological activation of KCNQ channels mimics young phenotype
 
 To further test the hypothesis that the decrease in M current is responsible for the hyperexcited state in old neurons, we used a pharmacological approach targeting KCNQ channels and assessed whether the age-dependent phenotype could be mimicked or reversed. To inhibit KCNQ channels, we used linopirdine at a concentration of 25 μM. Linopirdine inhibits both KCNQ2 and KCNQ3 channels with an IC50 of around 5 μM (Alexander et al., 2019), with an inhibition time constant of around 3 s at negative potentials (Greene et al., 2017). In the presence of linopirdine, the RMP of young neurons became less negative, from –64.3 ± 5.1 mV to –50.4 ± 5.1 mV on average. In five out of eight cases, neurons that were not firing started firing after washing linopirdine into the bath (Figure 8A and B).
 
@@ -115,13 +115,176 @@ Conversely, we used retigabine at a concentration of 10 μM to increase M curren
 
 This research investigates the cellular and molecular mechanisms underlying age-associated sympathetic overactivity. Our results support the idea that, alongside age-related central changes, the peripheral component of the sympathetic autonomic reflex is also affected by aging. Key findings are that aging influences the intrinsic membrane properties of sympathetic motor neurons in the following ways: (1) older motor neurons exhibit a more positive RMP and increased rheobase, (2) the percentage of motor neurons displaying spontaneous activity increases with age, (3) older motor neurons respond with higher firing rates to electrical stimulation, (4) older motor neurons show a predominant tonic firing subpopulation, (5) older neurons exhibit reduced M current, and (6) spontaneous activity in aged neurons can be reversed using pharmacological activation of KCNQ2/3 channels.
 
-## Age-related changes in neuronal excitability
+### Age-related changes in neuronal excitability
 
 The decline in nervous system function during healthy aging has been attributed to alterations in the intrinsic membrane properties of neurons and glial cells (Table 1). These changes in electrical behavior have been observed in various experimental models, ranging from simple organisms like Caenorhabditis elegans and Drosophila to more complex ones like rodents and monkeys. Notably, age-related hyperexcitability has emerged as a predominant characteristic in neurons across different brain regions (Table 1).
 
+**Table 1.**
+ Age-related changes in neuronal excitability.The table compares the changes in intrinsic properties and the underlying mechanisms. It also lists cell types, research models, and references.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Excitability</th>
+      <th>Intrinsic properties</th>
+      <th>Ion channel/mechanisms</th>
+      <th>Cell type</th>
+      <th>Research model</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Decrease</td>
+      <td>RMP-unaffectedInput resistance-unaffectedRheobase-increase</td>
+      <td>Decrease in cholinergic response</td>
+      <td>CA1 pyramidal neurons slices</td>
+      <td>Sprague– Dawley rats,3–4 vs 25–32 months old</td>
+      <td>Potier et al., 1992</td>
+    </tr>
+    <tr>
+      <td>Decrease</td>
+      <td>RMP-unaffectedInput resistance-unaffectedRheobase-increase</td>
+      <td>-</td>
+      <td>Neostriatal neurons slices</td>
+      <td>Fischer 344 rats,3–5 vs 24–26 months old</td>
+      <td>Cepeda et al., 1992</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>RMP-unaffectedInput resistance-unaffectedRheobase-unaffected</td>
+      <td>Decrease in cholinergic response</td>
+      <td>CA1, CA3 and fascia dentata</td>
+      <td>F-344 rats,3 weeks vs 9 months vs 24–27 months old</td>
+      <td>Shen and Barnes, 1996</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>Increase in L-type CaV channel activity</td>
+      <td>CA1 hippocampal neuronsZipper slices</td>
+      <td>F-344 rats,3–6 vs 12–14 vs 23–26 months old</td>
+      <td>Thibault and Landfield, 1996</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>Decrease in NMDA protein levels</td>
+      <td>CA1 and CA3 hippocampus</td>
+      <td>Sprague–Dawley rats3–9 vs 12–17 vs 18–24 vs 25–28 vs 29–31 months old</td>
+      <td>Wenk and Barnes, 2000</td>
+    </tr>
+    <tr>
+      <td>Unaffected</td>
+      <td>RMP-unaffectedInput resistance-increase</td>
+      <td>-</td>
+      <td>Dentate granule cells slices</td>
+      <td>Rhesus monkeys,11 vs 24 years old</td>
+      <td>Luebke and Rosene, 2003</td>
+    </tr>
+    <tr>
+      <td>Increase</td>
+      <td>RMP-unaffectedInput resistance-increaseRheobase-decrease</td>
+      <td>-</td>
+      <td>Layer 2/3 pyramidal neurons/ prefrontal cortex</td>
+      <td>Rhesus monkeys,8 vs 22 years old</td>
+      <td>Chang et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Decrease</td>
+      <td>-</td>
+      <td>Increase in cAMP signaling and KCNQ/HCN activity</td>
+      <td>Dorsolateral prefrontal cortical/DELAY neuron slices</td>
+      <td>Rhesus monkeys,7–9 vs 12–13 vs 17–21 years old</td>
+      <td>Wang et al., 2011</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>Decrease in KCNQ expression</td>
+      <td>RT-PCR-whole brain</td>
+      <td>Drosophila,5, 25, 40, 50, and 60 days of age</td>
+      <td>Cavaliere et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Increase</td>
+      <td>RMP-unaffectedInput resistance-increase</td>
+      <td></td>
+      <td>L3 pyramidal neurons/ lateral prefrontal cortexslices</td>
+      <td>Rhesus monkeys,8 vs 22 years old</td>
+      <td>Coskren et al., 2015</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>RMP-more negative Input resistance- decreases</td>
+      <td>Increase in inward and outward rectifier K+ currents</td>
+      <td>Microglia in striatum, neocortex and entorhinal cortexslices</td>
+      <td>C57BL6 mice,2–3 vs 19–24 months old</td>
+      <td>Schilling and Eder, 2015</td>
+    </tr>
+    <tr>
+      <td>Increase</td>
+      <td>RMP-unaffectedInput resistance-unaffected</td>
+      <td>Increase in KV4.2/KV4.3 expression</td>
+      <td>CA3 hippocampal neuronsSlices</td>
+      <td>F1 hybrid Fischer 344x Brown Norway rats,2–5 vs 29–32 months old</td>
+      <td>Simkin et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Increase</td>
+      <td>-</td>
+      <td>Decrease in BK current</td>
+      <td>Dorsal root ganglion neuron</td>
+      <td>Wistar male rats,3 and 18 months</td>
+      <td>Yu et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Increase</td>
+      <td>-</td>
+      <td>Increase in glutamate-gated chloride and L-type calcium channels function</td>
+      <td></td>
+      <td>Caenorhabditis elegans</td>
+      <td>Zullo et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Increase</td>
+      <td>RMP-unaffectedRheobase-decreases</td>
+      <td>Increase in Ih</td>
+      <td>L5 pyramidal neuronsSomatosensory cortexslices</td>
+      <td>Mice C57BL/6,2–6 vs 18–29 months old</td>
+      <td>Popescu et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Increase</td>
+      <td>RMP-unaffectedInput resistance-increaseRheobase-decrease</td>
+      <td>-</td>
+      <td>CA3 hippocampal interneurons</td>
+      <td>Sprague–Dawley,5 vs 24 months old</td>
+      <td>Griego and Galván, 2022</td>
+    </tr>
+    <tr>
+      <td>Increase</td>
+      <td>RMP-more positiveInput resistance-unaffectedRheobase-unaffected</td>
+      <td>Decrease in KCNQ2/3 current</td>
+      <td>hypocretin/orexin neurons Hypothalamus</td>
+      <td>C57BL/6J,2–3 vs 18 months old</td>
+      <td>Li et al., 2022</td>
+    </tr>
+    <tr>
+      <td>Increase</td>
+      <td>RMP-more positiveInput resistance-increasesRheobase-decreases</td>
+      <td>Increase in glial–neuronal coupling</td>
+      <td>Dorsal root ganglion</td>
+      <td>Balb/c mice,3 vs 12 vs 17 months old</td>
+      <td>Hanani et al., 2023</td>
+    </tr>
+  </tbody>
+</table>
+
 Research on this topic has emphasized the central nervous system. However, recent evidence suggests that aging also impacts the intrinsic properties of peripheral sensory neurons leading to hyperexcitability (Hanani et al., 2023). In line with this observation, our research reveals increased excitability in old sympathetic motor neurons. Collectively, these findings underscore that aging affects the intrinsic properties of peripheral neurons, challenging the notion that age-related changes are limited to the central nervous system. Hence, it is crucial to reconsider our understanding of aging-related sympathetic overactivity with a holistic perspective. Investigating how aging affects the intrinsic properties of sensory, central, and sympathetic motor neurons throughout a lifetime will be essential research to comprehend the underlying cause-and-effect mechanisms.
 
-## The molecular mechanism underlying the age-related excitability changes
+### The molecular mechanism underlying the age-related excitability changes
 
 The expression, distribution, regulation, and function of ion channels play a pivotal role in determining the intrinsic membrane properties of neurons. The mechanism underlying changes in age-associated excitability encompass alterations in cholinergic and glutamatergic responses and the function and expression of voltage-gated ion channels, such as CaV, KV, and HCN. In recent years, research on aging has revealed a significant impact of ion channels in the aging process. For example, repressing glutamate-gated chloride channels and L-type channels extends longevity in C. elegans (Zullo et al., 2019). Furthermore, inhibiting A-type K+ channels has shown the potential to revert the intrinsic excitability of aged CA3 pyramidal neurons to a young-like state in rats (Simkin et al., 2015).
 
@@ -129,7 +292,7 @@ Our data show a decrease in M current and suggest that it is a key mechanism beh
 
 In our study, we found a reduction in M current but an increase in KCNQ2 channel abundance; why? We speculate the increase in KCNQ2 abundance is a compensatory mechanism that does not achieve to restore the function of the cell. This experiment assessed total protein abundance, which includes synthesized protein in traffic and inserted at the plasma membrane. Our experiments did not investigate the abundance of KCNQ2/3 channels only in the plasma membrane. Multiple mechanisms, independent from increased synthesis, could underlie a reduction in M current including alterations in traffic, insertion, post-translational modifications, and cofactors of KCNQ2 or KCNQ3 channels. This mechanism remains elusive and open for exploration.
 
-## Limitations and conclusion
+### Limitations and conclusion
 
 We want to point out that linopirdine has been reported to affect other ionic currents besides M current (Lamas et al., 1997; Neacsu and Babes, 2010). Despite this limitation, the application of linopirdine to young sympathetic motor neurons led to depolarization and firing of APs.
 
@@ -139,30 +302,145 @@ In conclusion, this study demonstrates that aging directly impacts the intrinsic
 
 ## Materials and methods
 
-## Animal models
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6, males)</td>
+      <td>Mouse, wild type, young adult</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, C57BL/6, males)</td>
+      <td>Mouse, wild type, middle and old ages</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KCNQ2 (rabbit polyclonal)</td>
+      <td>ABCAM</td>
+      <td>Cat# ab22897; RRID:AB_775890</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG (H+L)-HRP (goat anti-rabbit polyclonal)</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1706515; RRID:AB_11125142</td>
+      <td>1:15,000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>XE-991</td>
+      <td>Alomone Labs</td>
+      <td>Cat# X-101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phrixotoxin-1</td>
+      <td>Alomone Labs</td>
+      <td>Cat# STP-700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Guangtoxin-1E</td>
+      <td>Alomone Labs</td>
+      <td>Cat# STG-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Retigabine dihydrochloride</td>
+      <td>Alomone Labs</td>
+      <td>Cat# D-23129</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin</td>
+      <td>Alomone Labs</td>
+      <td>Cat# T-550</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Linopirdine</td>
+      <td>Sigma</td>
+      <td>Cat# L-134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGOR Pro</td>
+      <td>WaveMetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td>RRID:SCR_016137</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal models
 
 Male C57BL/6 WT mice were purchased from the Jackson Laboratory (12 weeks, RRID:IMSR_JAX: 000664) or obtained from the NIA-NIH colony (ages 64 weeks and 115 weeks). All animals were kept in an animal facility with controlled conditions and were given standard chow and water ad libitum. The animal handling protocol was approved by the University of Washington Institutional Animal Care and Use Committee.
 
-## Sympathetic motor neuron cell culture
+### Sympathetic motor neuron cell culture
 
 Neurons from SCG were prepared by enzymatic digestion following a standardized protocol for rats (Vivas et al., 2014) but reducing the enzyme concentration in half. Isolated neurons were plated on poly-l-lysine (Cat# P1524-25MG, Sigma)-coated glass coverslips and incubated in 5% CO2 at 37°C in DMEM supplemented with 10% FBS and 0.2% penicillin/streptomycin.
 
-## Imaging of neurite growth
+### Imaging of neurite growth
 
 Cells were imaged in culture medium at 24 and 72 hr, and 1 week after isolation for neurites analysis. Images were taken using the bright field of an LSM 880 confocal microscope (Zeiss).
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Voltage responses were recorded using the perforated-patch configuration in the current-clamp mode, whereas M currents were recorded using the whole-cell configuration in voltage-clamp mode. We used an Axopatch 200B amplifier coupled with an Axon Digidata 1550B data acquisition board (Molecular Devices Electrophysiology) and HEKA EPC 9 amplifier (HEKA Elektronik) to acquire the electrical signals. Patch pipettes had a resistance of 2–4 MΩ. A liquid junction potential of 4 mV was calculated using the pCLAMP 10 software and not corrected while recording. Instead, Vrest reported in the ‘Results’ section was corrected during analysis. Voltage responses were sampled at 5 kHz, whereas currents were sampled at 2 kHz. For current recordings in voltage-clamp mode, cell capacitance was canceled, and series resistances of <10 MΩ were compensated by 70%. The voltage error due to any remaining series resistance is expected to be <4 mV. The bath solution (Ringer’s solution) contained 150 mM NaCl, 2.5 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 10 mM HEPES, and 8 mM glucose, adjusted to pH 7.4 with NaOH. The internal solution used to fill the whole-cell pipettes contained 175 mM KCl, 1 mM MgCl2, 5 mM HEPES, 0.1 mM K4BAPTA, 3 mM Na2ATP, and 0.1 mM Na3GTP, adjusted to pH 7.2 with KOH. For current-clamp recordings by perforated patch, 60 μM amphotericin B (Cat# A4888) was added to the pipette solution to facilitate electrical access to the cell. The bath solution was perfused at 2 ml/min, permitting solution exchange surrounding the recording cell with a time constant of 4 s. Sodium currents were recorded 2–8 hr after isolation using a low-sodium ringer.
 
-## Protein extraction and abundance determination
+### Protein extraction and abundance determination
 
 Protein from sympathetic ganglia was harvested in RIPA buffer (#89900, Thermo Scientific) with Complete, Mini, EDTA-free protease inhibitor cocktail (#11836170001, Roche) for 15 min at 4°C. Post-nuclear supernatant was isolated by centrifuging for 20 min at 13,600 × g at 4°C. Protein concentration was quantified on a plate reader using the Pierce BCA protein assay kit (#23225, Thermo Scientific). Gel lanes were loaded with 30 μg of total protein. Protein samples were resolved in 4–12% Bis-Tris gels under reducing conditions. Proteins were transferred onto nitrocellulose membranes (0.2 μm; #LC2000, Life Technologies) using the Mini-Bolt system (#A25977, Thermo Scientific). Membranes were blotted using rabbit anti-KCNQ2 (ab22897, Abcam, RRID:AB_775890, 1:500). Blotted bands were detected using HRP conjugated secondary antibodies goat anti-rabbit conjugated with HRP (#1706515, Bio-Rad, 1:15,000). ImageJ was used to calculate the fluorescence density of each band. The abundance of KCNQ2 was reported as normalized to total protein and relative to the abundance in tissue from young animals.
 
-## Reagents
+### Reagents
 
 XE-991 (Cat# X-101), phrixotoxin-1 (Cat# STP-700), guangtoxin-1E (Cat# STG-200), retigabine dihydrochloride (Cat# D-23129), and tetrodotoxin (T-550) were obtained from Alomone Labs. Linopirdine (Cat# L-134) was obtained from Sigma.
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 We used IGOR Pro (IGOR Software, WaveMetrics, RRID:SCR_000325), Excel (Microsoft), and Prism (GraphPad, RRID:SCR_002798) to analyze data. ImageJ (RRID:SCR_003070) was used to process images. Data were collected from independent experiments from at least three mice and are presented as mean ± SEM. The statistical analyses were performed using the parametric Student’s t-test when comparing two variables and an ordinary one-way ANOVA (Dunnett’s multiple comparisons test) when comparing three or more variables. GraphPad was used to calculate Pearson correlation coefficients using one-tail analysis. A non-parametric statistical test (Mann–Whitney Wilcoxon) was used to test for statistical significance between the percentage of firing and non-firing neurons. p-Values<0.05 indicate statistical significance. The number of cells used for each experiment is detailed in each figure legend.

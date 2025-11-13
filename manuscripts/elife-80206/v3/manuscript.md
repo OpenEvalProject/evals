@@ -19,9 +19,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01pbhra64 Neuroscience Institute, Morehouse School of Medicine Atlanta United States
-2. https://ror.org/0145znz58 Behavioral Biology Branch, Center for Military Psychiatry and Neuroscience, Walter Reed Army Institute of Research Silver Spring United States
-3. https://ror.org/046rm7j60 Department of Integrative Biology and Physiology, University of California, Los Angeles Los Angeles United States
+1. Neuroscience Institute, Morehouse School of Medicine Atlanta United States ([ROR:01pbhra64](https://ror.org/01pbhra64))
+2. Behavioral Biology Branch, Center for Military Psychiatry and Neuroscience, Walter Reed Army Institute of Research Silver Spring United States ([ROR:0145znz58](https://ror.org/0145znz58))
+3. Department of Integrative Biology and Physiology, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 
 † Corresponding author
 
@@ -39,13 +39,53 @@ To investigate these hypotheses, we used a well-established model of social conf
 
 We first looked to determine if sleep was necessary for resilience to social-defeat stress. One cohort of mice received daily bouts of social stress at the onset of darkness. In these mice, social interaction (measured by interaction ratio, see Materials and Methods for details) was assessed 1 day before and 1 day after social-defeat stress (Figure 1A). As expected (Krishnan et al., 2007), half of these mice were resilient (interaction ratio >1.1) to the effects of social-defeat stress (4 of 8 mice were resilient; Figure 1B and C; two susceptible—interaction ratio <1, two undefined—interaction ratio between 1.1 and 0.9). A second cohort of mice was sleep restricted (8 h; n.b. sleep restriction is synonymous with sleep deprivation. Animals unavoidably obtain small amounts of sleep during these sleep-limiting interventions; therefore, the term restriction may be more accurate) at light onset during the ten consecutive-days of social-defeat stress (Figure 1A). In contrast to the mice without sleep restriction, no sleep-restricted mice were resilient; furthermore, all sleep-restricted mice showed decreased social interaction after social-defeat stress (Figure 1B and C; five susceptible, two undefined – interaction ratio between 1.1 and 0.9). Differences in social interaction were not due to changes in ambulatory activity, as all treatment-groups showed similar levels of activity during the social-interaction testing (Figure 1E). The number of aggressive encounters across the social-defeat stress paradigm are shown in Figure 1—figure supplement 1. In a separate cohort of sleep-deprived mice we assessed fecal corticosterone to estimate stress levels (Figure 1D). These findings show that hypothalamic-pituitary adrenal axis stress-pathways are not significantly activated by sleep restriction (Figure 1B); However, this method assessed corticosterone over a 24 – hour period. It is possible that acute responses measured over a shorter period, and closer to the exact time of stress exposure, may differ. Collectively, these results demonstrate that sleep restriction increases susceptibility to social-defeat stress and provides evidence that sleep is necessary for resilience to social-defeat stress.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/80206/elife-80206-fig1-v3.jpg)
+
+**Figure 1.:** One cohort of mice received sleep restriction (8 hr, beginning at light onset) on each day of social-defeat stress; a second cohort (sleep replete) received only social-defeat stress (A; 10 days total, sleep restriction procedure outlined in Methods). As expected in the sleep replete cohort, roughly equal amounts of resilience and susceptibility occurred after social-defeat stress (B, C). In contrast, no mouse that underwent sleep restriction was resilient to social-defeat stress (B, C). Neither the stress response (D; indicated by fecal corticosterone) nor the distance moved during behavioral testing (E) was significantly altered by sleep deprivation. (B) Heatmaps showing the time and location of representative mice during 3-min social-avoidance test both before and after 10 days of social-defeat stress. (C) Interaction ratios calculated from the heatmaps in B; black circles—pre-stress, red box—susceptible, blue box—resilient, black box—undefined; social avoidance was expressed as an interaction ratio based on the time (t) spent interacting (near white box) with a caged, novel CD1 target mouse vs. an empty cage (interaction ratio = te / tf); sleep replete—Student’s paired t, t(7)=1.54, p=0.17; sleep restriction—Student’s paired t, t(6)=4.02, p=0.007; sleep replete—n=8, sleep restriction—n=7. (D) ANOVA, F(4,19)=1.12, p=0.37; n=8. (E) Student’s t, t(14)=0.74, p=0.47. Data points represent mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80206/elife-80206-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** The number of aggressive approaches was counted during each 5-min exposure to social-defeat stress and totaled for the entire 10-day period. Box and whiskers plots represent the median number of aggressive encounters, 25th to 75th percentiles and min/max values for cohorts of mice in Figures 1, 2 and 4. (A) Sleep replete and sleep restriction cohorts from Figure 1. (B) DREADD +and DREADD- cohorts from Figure 2. (C) All mice from Figure 4.
+
 To further investigate the role of sleep in resilience, we increased sleep amount using a novel method that avoids the use of somnogenic drugs (Figure 2A). Because sleep is initiated by GABAergic cells projecting from the preoptic area (POA), we used a designer-receptor exclusively activated by designer-drugs (DREADD) to activate these POA neurons. Four weeks after delivering DREADD to the POA by adeno-associated virus, clozapine-n-oxide (CNO) was used to activate the DREADD and increase sleep. This was validated in a separate cohort of mice at zeitgeber time 10 (ZT, ZT 12=lights off, Figure 2C), where a single injection of CNO increased non-rapid eye movement (NREM) sleep for approximately 6 hr. Single, daily injections (administered ZT 1–2) of CNO across the 10-day social-defeat paradigm enhanced total sleep by 79.3±12.5 (mean ± SEM) min per day over control mice, (Figure 2B) including 114.6±14.2 min per day of NREM sleep. Part of this NREM increase occurred at the expense of rapid eye movement (REM) sleep; REM sleep was reduced by 31.6±4.7 min per day. Mice expressing the active DREADD (increased sleep) had significantly increased interaction ratios (increased resilience) after social-defeat stress, when compared to CNO-treated control mice expressing EGFP (Figure 2E). Notably, all mice expressing active-DREADD (increased sleep) were resilient (interaction ratio >1.1), whereas only half of DREADD-control mice were resilient. These results provide evidence that increased sleep confers resilience and has a protective influence during exposure to social-defeat stress; supportin our hypothesis that sleep plays a determinative role in resilience to social-defeat stress.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80206/elife-80206-fig2-v3.jpg)
+
+**Figure 2.:** Adeno-associated viral vectors (AAV2) encoding either an excitatory (Gq) designer receptor exclusively activated by designer drugs (DREADD), or enhanced green fluorescent protein (EGFP) as a control, were delivered to the preoptic area (POA) by intracranial microinjections. After four weeks, i.p. injections of clozapine N-oxide (CNO) were used to activate receptors expressed in the POA (A). In a validation study, chemogenetic activation of the POA significantly increased NREM sleep for six hours (compared to undisturbed sleep on the previous day) following a single injection of the agonist CNO at zeitgeber time 10 (C; ZT 10, ZT12=lights off). A separate cohort of mice expressing DREADD, or EGFP control, was exposed to 10 days of social-defeat stress (ZT12–13) with single, daily, i.p. injection of CNO at lights on (ZT 1–2; A). NREM sleep was significantly increased by daily injections of CNO in mice expressing the excitatory DREADD, but not in mice expressing the control DREADD (B). No mouse expressing the excitatory DREADD was susceptible to the effects of social-defeat stress (E). Mice expressing the control construct displayed both susceptible and resilient behavior as expected (E). The distance moved during behavioral testing was not significantly affected by POA activation (D). (B) Repeated measures ANOVA: NREM main effect of CNO—F(1, 35)=83.37, p<0.0001; interaction effect—F(3, 35)=13.43, p<0.0001; REM main effect of CNO—F(1, 29)=72.92, p<0.0001; interaction effect—F(3, 29)=10.5, p<0.0001; *, p≤0.001, Holms Sidak’s multiple comparison; n=6, DREADD-; n=9 DREADD +. (C) Repeated measures ANOVA: main effect of CNO—F(1, 8)=12.82, p=0.008; interaction effect—F(5, 40)=8.04, p<0.0001; *, p≤0.001, Holms Sidak’s multiple comparison. (D) Student’s t, t(11)=1.82, p=0.087. (E) Student’s t, t(11)=2.157, p=0.027. Data points represent mean ± SEM; *=p 0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80206/elife-80206-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Verification of pAAV-hSyn-EGFP (control, not shown) or pAAV-hSyn-hM3D(Gq)-mCherry (excitatory DREADD) expression was performed in sections with nucleic-acid counter stain (DAPI). Representative photomicrographs are shown in A (red, mCherry; blue, DAPI). The outer boundary of labeled cell bodies for each mouse included in the study are illustrated in B. Locations are superimposed on representations of hypothalamic coronal sections (~150 µm spacing; OC, optic chiasm; 3 V, third ventricle; AC anterior commissure). Colors are to aid in differentiation and do not identify individual mice. All mice had both increased sleep over the 10 days (C) and labeling that overlapped a portion of the ventrolateral preoptic area (B, VLPO). (C) Box and whiskers replot of data in Figure 2B showing median, 25th to 75th percentiles and min/max values.
 
 We next looked for the differences in sleep amount and architecture between resilient and susceptible populations. Analysis of sleep before and after social-defeat stress revealed dramatic changes in post-defeat sleep, but only in resilient mice (Figure 3A, B and C). Both the REM and NREM sleep of resilient mice were increased throughout the active/dark period following defeat, when compared to baseline sleep (Figure 3C). These sleep changes after defeat included an increase in total sleep amount over the 24 hr period (Figure 3D) and a reorganization of sleep from typical baseline patterns. Indeed, most of the post-defeat changes in total-sleep occurred during the active/dark period (Figure 2D). Control mice exposed to novel cages over 10 days did not have this reorganization of REM and NREM sleep. Instead, control mice had a modest increase in NREM and REM sleep during the dark period (Figure 3—figure supplement 1), showing that the effect of a novel environment on sleep was minor. NREM slow-wave activity (power 0.5–4 Hz) and theta activity (6–10 Hz), were also altered in resilient mice (Figure 3E). NREM slow-wave activity is a standard measure of sleep-intensity. These differences in SWA reveal underlying differences in sleep regulation between resilient and susceptible populations of mice. Collectively, our data demonstrate that sleep is both increased and reorganized after social-defeat stress exclusively in resilient mice and suggest that differences in sleep regulation may underlie these sleep changes.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/80206/elife-80206-fig3-v3.jpg)
+
+**Figure 3.:** 24 hr sleep recordings were performed both before and following 10 days of social-defeat stress (A). Sleep in animals identified as resilient (B) was significantly reorganized (C) and increased (D) following social-defeat stress. This change in resilient mice included a significant decrease in total sleep during the light period and increased total sleep during the dark period (D). Animals identified as susceptible (B) showed little change in sleep architecture or amount (C, D). Sleep changes in resilient animals included a flattening of the normal curve in sleep intensity (E; NREM slow-wave activity, SWA: power density 0.5–4 Hz). This change was accompanied by changes in higher frequencies during NREM sleep; theta activity was increased during the day and decreased during the night (E). In contrast, no significant change in either NREM slow-wave or theta activity was observed in susceptible animals (E). (B) Left, representative heatmaps of social avoidance testing; warmer colors indicate increased time; T=caged mouse; right, interaction ratios, X indicates interaction ratios between 0.9 and 1.1 that were excluded from sleep analysis. (C) Resilient, repeated measures ANOVA: NREM: main effect of time—F(11, 88)=4.86, p=0.0001; main effect of day—F(1, 8)=11.71, p=0.009; interaction—F(11,88)=8.02, p=0.0001. REM: main effect of time—F(11, 88)=3.17, p=0.0012; main effect of day—F(1, 8)=0.95, p=0.358; interaction—F(11,88)=6.7, p=0.0001. Susceptible, repeated measures ANOVA: NREM main effect of time—F(11, 88)=8.581, p<0.0001; main effect of day—F(1, 8)=2.925, p=0.1256; interaction—F(11, 88)=1.429, p=0.1742; n=12. (D) Resilient, Student’s paired t: total sleep—t(5)=5.09, p=0.007; light—t(5)=14.62, p=0.0001; dark—t(5)=8.15, p=0.0012. (E) Resilient, SWA: main effect of time—F(11, 84)=4.482, p<0.0001; main effect of susceptibility—F(1, 8)=2.84, p=0.14; interaction—F (11, 84)=6.47, p=0.0001. NREM theta activity: main effect of time—F(11, 89)=1.97, p=0.042; main effect of susceptibility—F(1, 89)=5.04, p=0.027; interaction—F (11, 89)=4.39, p<0.0001. susceptible: main effect of time—F(11, 84)=6.31, p<0.0001; main effect of susceptibility—F(1, 8)=0.64, p=0.45; interaction—F (11, 83)=1.31, p=0.23; *, p≤0.05, Holms Sidak’s multiple comparison. Data points represent mean ± SEM except for B which presents median, 25th to 75th percentiles and min/max values.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80206/elife-80206-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** 24 hr sleep recordings were performed both before and following 10-daily exposures to a novel cage (A). This was done to control for the novel environment experienced during social-defeat stress. Total sleep was slightly increased after 10 daily exposures to a novel cage (B); however, no significant differences were detected in the light period or dark period separately. (B) Total sleep—Student’s t, t(9) = 2.65, p=0.026; light—Student’s t, t(9) = 0.493, p=0.643; dark—Student’s t, t(9) = 1.86, p=0.1; n=10; bars represent mean ± SEM *, p≤0.05.
+
 We also investigated whether sleep-regulatory differences underlie the sleep responses of resilient and susceptible mice. Sleep is homeostatically regulated, as NREM sleep amount and intensity (slow-wave activity, SWA) are proportional to the duration of prior wakefulness (Borbély et al., 1981; Dijk et al., 1987). A standard method for investigating this homeostatic process involves restricting sleep and then measuring the resulting changes in NREM amount and intensity. To investigate sleep-regulatory differences that may underlie resilience to social-defeat stress, we used a sleep restriction paradigm both before and after exposure to social-defeat stress (Figure 4A). Prior to social-defeat stress, mice later identified as susceptible showed increased sleep-recovery (Figure 4B, C, top row), and increased NREM SWA (Figure 3G), after 6-hr of sleep restriction; mice later identified as resilient did not show these changes. This difference was not caused by the amount of sleep lost, as both behavioral phenotypes lost similar amounts of NREM sleep during sleep restriction (Figure 4C, bottom row). In addition, the increased recovery-response in susceptible mice remained when NREM sleep was normalized for each mouse (to the amount of sleep lost over 6-hr and 18 hr of recovery; Figure 4C, bottom row). After exposure to social stress, the overall patterns in NREM-sleep and NREM SWA were similar to pre social-defeat stress values (Figure 4D and F, bottom row). Notably, NREM SWA in susceptible mice was greater than resilient mice, both before (i.e. under baseline conditions) and after exposure to social-defeat stress (Figure 4E & F, top row). Both behavioral phenotypes also showed equivalent increases in REM-sleep and total sleep (Figure 4D, top row). These findings demonstrate that sleep and sleep-regulatory changes in resilient mice are not simply caused by social-defeat stress, instead, differences in sleep regulation exist prior to social-defeat stress and predict resilience. Collectively, our findings suggest that pre-existing differences in sleep regulation determine the sleep-response to social-defeat stress; these sleep responses, in turn, determine resilience.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/80206/elife-80206-fig4-v3.jpg)
+
+**Figure 4.:** Sleep regulation involves a homeostatic process, as NREM sleep amount and intensity (slow-wave activity, SWA) are proportional to the duration of prior wakefulness. A standard method for investigating this sleep-regulatory process is restricting sleep and then measuring the resulting changes in NREM amount and intensity. Here, we used a six-hour sleep restriction paradigm both before and after 10 days of social-defeat stress to investigate the sleep-regulatory differences between resilient and susceptible mice (A). Prior to social-defeat stress exposure, mice later identified as susceptible showed increased sleep-recovery to six-hours of sleep restriction (B; C, top row) when compared to mice identified as resilient (B; C, top row). This pattern was present for both NREM and REM sleep (C, top row). Susceptible and resilient mice lost similar amounts of NREM and REM sleep during sleep-restriction (C, bottom row) and the increased recovery response for susceptible mice persisted when NREM sleep recovered was normalized to the amount of sleep lost (C, bottom). After social-defeat stress, susceptible animals continued to show increased NREM-sleep recovery, but not REM-sleep recovery (D, top row). Sleep intensity (NREM slow-wave activity, SWA) was higher in susceptible animals prior to social-defeat stress during both baseline and following sleep restriction (E, G). This increased sleep intensity in susceptible mice persisted and was more prominent after social-defeat stress (F, H). (B) X indicates interaction ratios between 0.9 and 1.1 that were excluded from sleep analysis. (C) Total sleep: repeated measures ANOVA main effect of time (MET)—F(8, 80)=53.78, p<0.0001; main effect of susceptibility (MES)—F(1, 10)=2.05, p=0.18; interaction (IST)—F (8, 80)=5.14, p<0.0001. NREM sleep, MET—F(8, 80)=50.75, p<0.0001; MES—F(1, 10)=1.92, p=0.19; IST—F (8, 80)=4.77, p<0.0001. REM sleep, MET—F(8, 80)=36.88, p<0.0001; MES—F(1, 10)=2.73, p=0.13; IST—F (8, 80)=3.32, p<0.0025. Sleep lost, Student’s paired t, NREM—t(7)=0.99, p=0.36; REM—t(7)=0.92, p=0.37. % recovered: MET—F(8, 80)=41.45, p<0.0001; MES—F(1, 10)=1.58, p=0.24; IST—F (8, 80)=3.27, p=0.0029. (D) NREM sleep: MET—F(8, 56)=49.2, p<0.0001; MES—F(1, 7)=3.96, p=0.049; IST—F (8, 56)=1.86, p=0.23. REM sleep: MET—F(8, 56)=24.58, p<0.0001; MES—F(1, 7)=0.02, p=0.87; IST—F (8, 56)=0.48, p=0.86. (E) Baseline, parietal: MES—F(1, 95)=4.21, p=0.043. (F) Frontal baseline: IST—F(11, 75)=2.13, p=0.028; frontal sleep restriction, IST—F(8, 63)=2.13, p=0.028; parietal sleep restriction, IST—F(8, 63)=2.84, p=0.009. *=p ≤ 0.05, Holms Sidak’s multiple comparison; n=13. Data points represent mean ± SEM with the exception of panel B which presents median, 25th to 75th percentiles and min/max values.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80206/elife-80206-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Sleep fragmentation was assessed from 24 hr recordings during undisturbed sleep and with a six-hour sleep restriction. Recordings were performed both before and after 10 days of social-defeat stress (See Figure 4A for experimental paradigm). Comparing undisturbed, baseline, sleep recordings revealed slightly longer NREM-bout duration in resilient animals both before and after social-defeat stress, but only in the 12 hr light period (A, top row). No other differences between resilient and susceptible mice were found during baseline or following 6 hr of sleep restriction (A, B). An overall increase in NREM bout number, stage shifts and brief arousals occurred in both resilient and susceptible animals after social-defeat stress. These increases were found when comparing the responses to 6 hr of sleep restriction (B) and were primarily the result of increases during the dark period (B). (A) Pre social-defeat stress—t(10)=1.87, p=0.046; post social-defeat stress—t(10)=2.52, p=0.03; bars represent mean ± SEM; *, p≤0.05 Student’s t; n=13. (B) ANOVA main effect of stress, 24 hr: bout-number—F(1, 18)=39.99, p<0.0001; main effect of stress, darks: bout number—F(1, 17)=14.43, p=0.0047; stage shifts—F(1, 17)=32.65, p<0.0001; brief arousals—F(1, 7)=30.82, p<0.0001.
+
 The ventromedial prefrontal cortex (vmPFC; prelimbic, PrL and infralimbic, IL cortex) is important in regulating stress resilience (Vialou et al., 2014) and is also sensitive to the effects of sleep restriction (Ehlen et al., 2013; Vyazovskiy et al., 2011). The technique used for our EEG recordings (epidural screw electrodes) does not provide optimal spatial resolution. To better investigate local differences in sleep, we used local field potential recordings (LFP) from electrodes deep in the vmPFC. When compared to susceptible mice, mice later identified as resilientshowed a significant increase in baseline LFP power density in the slow-wave range (≤5 Hz) before social-defeat stress (Figure 5A). This SWA in baseline NREM sleep was found at both major vmPFC subregions targeted by our LFP-electrodes. The difference was most prominent in the PrL cortex and also detected in the IL cortex. Notably, no power differences were found in our EEG recordings (although a trend may be present ≤2 Hz; Figure 5A, Figure 5—figure supplement 1). These findings suggest that local differences in NREM slow-wave activity, between susceptible and resilient mice, exist in the vmPFC before exposure to social stress and can predict resilience.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80206/elife-80206-fig5-v3.jpg)
+
+**Figure 5.:** Local field potential (LFP) in the vmPFC and epidural electroencephalographic recordings (EEG; A, top row; black bars on x-axis=p ≤ 0.05) were simultaneously obtained from mice before ten-days of social-defeat stress. Twenty-four hr LFP/EEG recordings were immediately followed by 6-hr sleep restriction as in Figure 4A. Sleep regulation involves a homeostatic process, as NREM sleep amount and intensity (slow-wave activity, SWA) are proportional to the duration of prior wakefulness. A standard method for investigating this sleep-regulatory process is restricting sleep and then measuring the resulting changes in NREM amount and intensity. Here, we used a 6-hr sleep restriction paradigm before (no post-defeat restriction) 10 days of social-defeat stress to investigate the sleep-regulatory differences between resilient and susceptible mice. NREM sleep intensity (power density >4 Hz) in both the prelimbic and infralimbic LFP were significantly higher in mice later identified as resilient (vs. susceptible mice; A, bottom row); notably, these differences in sleep intensity were not evident in the EEG (A, bottom row). After 6-hr of sleep restriction resilient animals recovered at a faster rate than susceptible animals. This recovery is observed in cumulative NREM slow-wave energy (delta band = 0.5–4 Hz; $energy=\sumi=1npower_{1}\timest_{1}$) and resilient mice took significantly less time to reach baseline levels (B). The incidence of 2–6 Hz waves in the waking EEG, a marker of sleep-pressure during waking, significantly increased in sleep restricted mice identified as resilient (D). This occurred in both LFP and EEG recordings and indicates a normal accumulation in sleep-pressure. Mice later identified as susceptible (C) did not show this increased wave-incidence, thus, indicating a lack of sleep-pressure accumulation. (A) Shaded areas are SEM; green boxes indicate sleep restriction; ANOVA; prelimbic interaction—F (294, 2950)=4.55, p<0.0001; infralimbic main effect of susceptibility—F (294, 2950)=4.22, p<0.0001; EEG, interaction effect—F (144, 1450)=0.9175, p=0.74; Holms Sidak’s multiple comparison; n=12. (B) Shaded area on x-axis shows light–dark cycle. Repeated measures ANOVA interaction effect—susceptible mice: infralimbic LFP F(17, 187)=11.13, p<0.0001; prelimbic LFP F(17, 187)=5.71, p<0.0001; EEG F(17, 187)=6.75, p<0.0001; resilient mice: infralimbic LFP F(17, 136)=3.71, p<0.0001; black bars on x-axis=p < 0.05, Holms Sidak’s multiple comparison. (C, D) Top rows—representative, raw EEG (black) and LFP (brown) recordings; middle rows—filtered EEG (black) and LFP (brown) signals (2–6 Hz) with threshold for counting identified (70th percentile, black line, see Materials and methods for details). (E, F) Lower plots—average wave-incidence for the 1 hr period immediately before and immediately after sleep restriction; Student’s paired t, *, p=0.03; ***, p=0.0008.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80206/elife-80206-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Simultaneous local-field potential (LFP)recordings in the ventromedial prefrontal cortex and electroencephalographic (EEG) recordings were obtained from mice before (A) and after (B) 10-days of social-defeat stress. REM power density before social-defeat stress was not significantly different between resilient (blue) and susceptible (red) mice (A; repeated measures ANOVA). After social-defeat stress, resilient animals had increased NREM power density over susceptible animals in frequencies ≤4 Hz for both LFP and EEG leads. Power in REM power density centered around 4–8 Hz also occurred in resilient animals after social-defeat stress, compared to susceptible (B). After 6-hr of sleep restriction, conducted before exposure to social-stress, susceptible animals accumulated significantly more NREM slow-wave energy (C; delta band = 0.5–4 Hz; $energy=\sumi=1npower_{1}\timest_{1}$). This increased NREM slow-wave energy was also observed in baseline recordings (Figure 5B) and likely indicates an overall increased need for sleep, both at baseline and after sleep restriction. To control for these overall differences, we also compared recovery to baseline within each phenotype (Figure 5), this comparison demonstrated that the recovery of NREM slow-wave energy took significantly less time to return to baseline levels in resilient mice (Figure 5). n=12. *=significant interaction effect, p<0.05, repeated measures ANOVA. Grey lines indicate SEM; Black bars on x-axis=p < 0.05, Holms Sidak’s multiple comparison test.
 
 Next, we looked at recovery responses to sleep restriction before exposure to social-defeat stress. Slow-wave energy was recovered in significantly less time for resilient animals, indicating a more efficient sleep-regulatory response (Figure 5B, Figure 5—figure supplement 1). Slow-wave energy returned to baseline levels immediately after sleep restriction in the PrL LFP and EEG of resilient mice, and within 2-hr in the IL LFP. Susceptible mice, in comparison, were not fully recovered for up to 8 hr (Figure 5B). We also examined the LFP during wake, both before and after sleep restriction. Low-frequency waveforms (2–6 Hz) increase in number and amplitude with sleep-pressure accumulation (Ehlen et al., 2013; Thomas et al., 2000). These waveforms are thought to represent local sleep-like events encroaching into wakefulness (i.e. sleepiness). Counting the occurrence of the largest amplitude 2–6 Hz waveforms (I2-6) revealed that I2–6, and thus waking sleep-pressure, was increased in resilient mice after sleep-restriction. Susceptible mice showed no significant change in I2–6 within the awake LFP (Figure 5C). To further assess local differences in the vmPFC, we calculated phase coherence between each LFP electrode and the global EEG. We found phase coherence below 8 Hz increased in resilient mice during all conditions including: baseline, recovery from sleep restriction and after social-defeat stress; however, this difference was only found in the IL cortex (Figure 6). Importantly, the 24 hr average of these coherence values, in slow-wave frequencies, was significantly and positively correlated with social interaction ratios for the IL cortex, but not for the PrL cortex (Figure 6B). Overall, this phase-coherence data indicates increased functional connectivity (i.e. a consistent phase-relationship evidenced by high phase-coherence) between the IL cortex and the overall EEG, in the frequency bands associate with sleep, is correlated with resilience. These LFP studies further support our conclusion that local differences in sleep-regulatory processes within the vmPFC exist before stress and predict resilience.
 
@@ -73,58 +113,192 @@ The present studies show that sleep is an active response to social stress that 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male)</td>
+      <td>C57BL/6 J</td>
+      <td>Jackson Labs, Bar Harbor, ME.</td>
+      <td>Stock #: 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male)</td>
+      <td>CD-1; retired breeders</td>
+      <td>Charles Rivers Laboratories, Willington, MA.</td>
+      <td>0022CD1</td>
+      <td>Used as aggressors in social defeat</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Control Vehicle, DREADD-, pAAV-hSyn-EGFP</td>
+      <td>Addgene, Watertown, MA.</td>
+      <td>Plasmid #50465</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Excitatory DREADD, DREADD +, pAAV-hSyn-hM3D(Gq)-mCherry</td>
+      <td>Addgene, Watertown, MA.</td>
+      <td>Plasmid #50474</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Corticosterone ELISA Kit</td>
+      <td>Cayman Chemical, Ann Arbor, MI.</td>
+      <td>Item No. 501320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine N Oxide; CNO</td>
+      <td>Hello Bio Princeton, NJ.</td>
+      <td>Cat# HB6149</td>
+      <td>Dosage: 2 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sirenia Acquisition</td>
+      <td>Pinnacle Technology Inc, Lawrence, KS.</td>
+      <td>Version 1.8.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sirenia Sleep</td>
+      <td>Pinnacle Technology Inc Lawrence, KS.</td>
+      <td>Version 1.8.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sleep Deprivation System</td>
+      <td>Pinnacle Technology Inc, Lawrence, KS.</td>
+      <td>Cat. #: 9000-K5-S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 8 software 64-bit</td>
+      <td>WaveMetrics, Inc, Lake Oswego, OR.</td>
+      <td>Version 8.04</td>
+      <td>FilterIIR, DSPPeriodogram and custom scripts.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm,</td>
+      <td>Noldus Ethovision XT</td>
+      <td>Noldus Information Technology, Leesburg, VA.</td>
+      <td>Version 14</td>
+      <td>Video tracking during social avoidance test.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software, San Deigo CA.</td>
+      <td>Version 7.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Prefabricated Electroencephalographic Implant; EEG; electromyograph; EMG</td>
+      <td>Pinnacle Technologies Inc, Lawrence, KS.</td>
+      <td>Cat. #: 8201-SS; 8431</td>
+      <td>Materials for surgery (Surgery: EEG and LFP electrodes section).</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Stainless steel screw electrodes</td>
+      <td>Pinnacle Technology Inc Lawrence, KS.</td>
+      <td>Cat. #: 8209, 8212, 8403</td>
+      <td>Materials for surgery(Surgery: EEG and LFP electrodes section).</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Silver Epoxy</td>
+      <td>Pinnacle Technology Inc Lawrence, KS.</td>
+      <td>Cat. #:8226</td>
+      <td>Materials for surgery(Surgery: EEG and LFP electrodes section).</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Male, C57BL/6 J mice (Jackson Laboratory, Bar Harbor, ME, USA; 000664) were seven-weeks old at the start of all studies. CD-1 retired male breeders (Charles Rivers, age 3–6 months upon arrival) were used as aggressors. All mice were singly housed on shaved, pine bedding upon arrival, maintained on a 12:12 L:D lighting cycle for the remainder of the study and randomly assigned to treatment groups. Food and water were available ad libitum. All procedures involving animals received prior approval from the Morehouse School of Medicine Institutional Animal Care and Use Committee (approved protocol 21–02).
 
-## Social defeat and social avoidance test
+### Social defeat and social avoidance test
 
 Mice were exposed to three daily, 5-min, social defeat sessions (separated by 5-min breaks) for 10 days (during the first 2 hr of the dark period; ZT 12–14). The C57BL/6 J mice to be defeated were placed into the home cage of a trained CD-1 mouse (aggressor). Each 5-min session was with a novel aggressor, and no defeated mouse encountered an aggressor more than twice over the 10 days of social-defeat stress. This social-defeat stress method varies from a popular protocol described by Golden et al., 2011 our method adds one additional five minute social-defeat session. Importantly, after defeat, animals in our study were returned to their home cage; they did not spend the remainder of each day in a divided cage with the aggressor as described in Golden et al., 2011. Training of aggressor mice was conducted on each of the 3 days prior to testing. Training consisted of the same three, five-minute sessions, but was performed with a C57BL/6 J training mouse not used in experiments. Only aggressor mice that displayed at least five incidences of aggression for 2 consecutive days were used in the study. Social defeat sessions were continuously monitored, and the mice were separated for 10 s if excessive aggression (>15 seconds of continuous aggression) was observed. No significant wounding occurred during any of our defeat sessions. Small bite wounds were found on occasion, and they were treated with betadine after the defeat sessions ended. Dim red light (<5 lux) was used for procedures performed during the mouse’s dark period. Novel cage controls were performed with the exact same procedures as social-defeat stress, but with the aggressor mouse moved to a holding cage.
 
-Social avoidance testing was conducted in a 30x30 cm arena with a caged (9X9 cm), novel, CD1 mouse positioned against the midpoint of one arena wall. Each mouse to be tested was placed in the arena for two consecutive sessions of 3 min. During the first session, the cage was empty; during the second session, the novel CD1 mouse was present. Position in the arena was monitored with video tracking (Noldus Ethovision XT, Leesburg, VA, USA). The arena was cleaned thoroughly between each test. Social interaction ratio, int, was calculated as:int=tfte
+Social avoidance testing was conducted in a 30x30 cm arena with a caged (9X9 cm), novel, CD1 mouse positioned against the midpoint of one arena wall. Each mouse to be tested was placed in the arena for two consecutive sessions of 3 min. During the first session, the cage was empty; during the second session, the novel CD1 mouse was present. Position in the arena was monitored with video tracking (Noldus Ethovision XT, Leesburg, VA, USA). The arena was cleaned thoroughly between each test. Social interaction ratio, int, was calculated as:
+
+$$
+int=\frac{t_{f}}{t_{e}}
+$$
 
 where te = time within 15 cm of the empty cage in the first session, tf = time within 15 cm of the caged, novel CD1 mouse in the second session; ratio >1.1 = resilient, ratio <0.9 = susceptible. Mice with interaction ratios between 0.9 and 1.1 (n=11) were excluded from analysis in the experiments of Figures 3—6 as follows: Figure 3, four mice excluded; Figure 4, four mice excluded; Figures 5 and 6, three mice excluded.
 
-## Sleep restriction
+### Sleep restriction
 
 Sleep restriction was accomplished by one of two methods and conducted for one of two durations, depending on the goals of the experiment. Sleep regulation involves a homeostatic process, as NREM sleep amount and intensity (slow-wave activity, SWA) are proportional to the duration of prior wakefulness. A standard method for investigating this sleep-regulatory process is restricting sleep and then measuring the resulting changes in NREM amount and intensity. We used a 6-hr sleep restriction paradigm before and after 10 days of social-defeat stress to investigate the sleep-regulatory differences between resilient and susceptible mice. In Figures 4—6, 6-hr sleep restriction was conducted once to monitor this sleep-regulatory process during the 18-hr period following sleep restriction. In Figure 1, sleep restriction was used as an intervention to reduce sleep during social-defeat stress and determine how this sleep restriction altered behavioral-responses to social stress. This sleep restriction was performed for the first 8 hr of the light phase (ZT 0–8) daily for each of the 10 days of social-defeat stress. Mice in this study were continuously monitored during this sleep restriction by trained observers.
 
 One of two methods of sleep restriction were used depending on the number of mice and duration of the study. Sleep restriction in Figure 3 was conducted by hand and performed by trained observers. Mice were kept awake during the first 6 hs of the light phase (ZT 0–6) once by gentle handling (introduction of novel objects into the cage, tapping on the cage and when necessary, delicate touching) and allowed an 18 hr recovery opportunity (ZT 6–0). In Figures 1, 5 and 6 sleep deprivation was accomplished using an automated system (Pinnacle Technology, Inc Lawrence, KS) which maintained wakefulness by means of a slowly rotating bar in the cage bottom. The bar direction was set to change randomly every 10–20 s. In Figures 5 and 6, mice were kept awake for the first 6 hs of the light phase (ZT 0–6) once and allowed an 18 hr recovery opportunity (ZT 6–24). In Figure 1, sleep restriction was used as an intervention to reduce sleep during social-defeat stress and was performed for the first 8 hr of the light phase (ZT 0–8) daily for each of the 10 days of social-defeat stress. Sleep restriction was always carried out in the home cage of the mouse and food and water were available ad libitum.
 
-## Corticosterone
+### Corticosterone
 
 Cages were changed 24 hr prior to each sample collection at ZT 12 (lights off). All feces from the cage were collected exactly 24 hr after this cage change and immediately frozen (–80 °C) until assay. Control samples were taken during the 24 hr period immediately preceding the first day of treatment. As second sample was taken 6 days later, during the 24 hr period that followed exposure to 5 consecutive days of social-defeat stress or 5 consecutive days of both social-defeat stress and sleep deprivation. Just prior to assay, the fecal sample was homogenized and 50 mg was removed for analysis. Sample preparation and analysis was done using the Cayman Corticosterone ELISA kit (Ann Arbor, Michigan), according to the kit -booklet instructions for extraction from feces and analysis. Each condition was run in duplicate, an average of these values was used in analysis.
 
-## Surgery: EEG and LFP electrodes
+### Surgery: EEG and LFP electrodes
 
 Electroencephalography (EEG): EEG and Electromyography (EMG) electrodes were implanted in isoflurane (1.5–3%) anesthetized mice. Carprofen was given post operatively for 2 days. A prefabricated head mount (Pinnacle Technology Inc, Lawrence, KS) was used to position three stainless-steel epidural screw electrodes. The first electrode (frontal—located over the frontal cortex) was placed 1.5 mm anterior to bregma and 1.5 mm lateral to the central suture, whereas the second two electrodes (interparietal—located over the visual cortex and common reference) were placed 2.5 mm posterior to bregma and 1.5 mm on either side of the central suture. The resulting two leads (frontal–interparietal and interparietal–interparietal) were referenced contralaterally. A fourth screw served as a ground. Electrical continuity between the screw electrode and head mount was aided by silver epoxy. EMG activity was monitored using stainless-steel Teflon-coated wires that were inserted bilaterally into the nuchal muscle. The head mount (integrated 2×3 pin socket array) was secured to the skull with dental acrylic. Mice were allowed to recover for at least 14 days before sleep recording.
 
 Local field potential (LFP): LFP, EEG and EMG electrodes were identical to the EEG surgery described above with the following exceptions. A custom-made implant, consisting of two unipolar tungsten electrodes permanently attached to a 2x4 pin socket (Pinnacle Technology Inc, Lawrence, KS), was lowered through a craniotomy with the aid of a stereotaxic apparatus (David Kopff Instruments, Tujunga, CA). The implant was positioned so that the electrodes tips were in the infralimbic (anterior posterior [AP]:+1.9, medial lateral [ML]: –0.4, dorsal ventral [DV]: –3.1; coordinates relative to bregma and midsagittal suture) and prelimbic (AP:+1.9, ML:+0.4, DV: 4.45) cortex. Four epidural, stainless-steel screw-electrodes (Pinnacle Technology Inc, Lawrence, KS) were then positioned on the skull as follows: one recording electrode and LFP reference were placed contralaterally over the frontal cortex, two electrodes over the cerebellum served as an EEG reference and ground. Wire leads attached to each screw were then soldered to output pins on the implant. The implant and leads were covered and secured with dental acrylic.
 
-## Excitatory DREADD
+### Excitatory DREADD
 
 Bilateral injections into the preoptic area (POA) were performed in isoflurane (1.5–3%) anesthetized mice. A 0.5 µl microliter syringe needle (Hamilton, Reno, NV) was positioned in the POA, through a craniotomy made in the skull, with the aid of a stereotaxic apparatus (AP:+0.20, ML:±0.55 DV: –5.65). 200 nl of adeno-associated virus 2 (AAV2) containing either control construct (pAAV-hSyn-EGFP; plasmid #50465; Addgene, Watertown, MA) or excitatory DREADD (pAAV-hSyn-hM3D(Gq)-mCherry; plasmid #50474; Addgene, Watertown, MA) was delivered to the POA at 1 nl/s using a motorized syringe pump (World Precision Instruments, Sarasota, FL). The syringe needle was left in place for 10 min before removal. Mice were given 14 days of recovery before EEG implant surgery. Carprofen was given post operatively for 2 days.
 
-## Clozapine N-Oxide (CNO)
+### Clozapine N-Oxide (CNO)
 
 Clozapine N-oxide dihydrochloride (CNO; 2 mg/kg; Cat# HB6149; HelloBio, Princeton, NJ) was diluted in in lactated ringers and delivered by intraperitoneal (IP) injections on each day of social defeat, where indicated (Figure 2A), between ZT1 and ZT2 (ZT12=lights off, early light phase). Mice expressing both control construct and excitatory DREADD received CNO. For validation studies (Figure 2C), single IP injections were delivered at ZT 10.
 
-## EEG/LFP recording/scoring
+### EEG/LFP recording/scoring
 
 One week after surgery, mice were moved to an open-top sleep-recording cage and connected to a lightweight tether attached to a low-resistance commutator mounted over the cage (Pinnacle Technologies, Lawrence KS). This enabled complete freedom of movement throughout the cage. Except for the recording tether, conditions in the recording chamber were identical to those in the home cage. Mice were allowed a minimum of seven additional days to acclimate to the tether and recording chamber. Data acquisition was performed on personal computers running Sirenia Acquisition software (Pinnacle Technologies). EEG signals were low-pass filtered with a 30 Hz cutoff and collected continuously at a sampling rate of 400 Hz. LFP signals, and EEG signals collected simultaneously with LFP, were low-pass filtered with a 1000 Hz cutoff and collected continuously at a sampling rate of 2 kHz. In most cases, sleep recordings were conducted in blocks of 8 mice including both treatments and controls. For classification of waveforms, these EEG signals were low-pass filtered offline at 30 Hz. After collection, all waveforms were classified by a trained observer (using both EEG leads and EMG; in 10 s. epochs) as wake (low-voltage, high-frequency EEG; high-amplitude EMG), NREM sleep (high-voltage, mixed-frequency EEG; low- amplitude EMG) or rapid eye movement (REM) sleep (low-voltage EEG with a predominance of theta activity [6–10 Hz]; very low amplitude EMG). In all studies, individuals performing sleep-stage classification were blind to the experimental conditions and behavioral phenotypes until final analysis. EEG epochs determined to have artifact (interference caused by scratching, movement, eating, or drinking) were excluded from analysis. Artifact comprised less than 5% of all recordings used for analysis.
 
-## Data analysis
+### Data analysis
 
 Wave incidence analysis has been described previously (Ehlen et al., 2013; Ehlen et al., 2015). Briefly, analysis was performed using custom written functions in IGOR Pro 8 (WaveMetrics Inc, Lake Oswego, OR). Raw EEG and LFP signals were band pass-filtered in the frequency range indicated using a Butterworth fourth-order band-pass filter (IGOR Pro routine FilterIIR; WaveMetrics Inc, Lake Oswego, OR). Peaks in the filtered data were detected as negative deflections between two zero crossings. The upper 30% of peak amplitudes that occurred in epochs identified as wake were then counted and expressed as peaks per minute (wave incidence). The wave incidence data were binned for graphing and statistical analysis.
 
-Power spectral analysis was accomplished by applying a fast Fourier transform (FFT, 0.1 Hz frequency resolution) to EEG or LFP recordings. Where indicated, spectral power within a frequency band was normalized to 24 hr baseline values for each animal or expressed as a percentage of total power (0.5–30 Hz) for each animal. Slow-wave energy, energy, was calculated using the 0.5–4 Hz (delta) frequency range as follows:energy=∑i=1npower1×t1
+Power spectral analysis was accomplished by applying a fast Fourier transform (FFT, 0.1 Hz frequency resolution) to EEG or LFP recordings. Where indicated, spectral power within a frequency band was normalized to 24 hr baseline values for each animal or expressed as a percentage of total power (0.5–30 Hz) for each animal. Slow-wave energy, energy, was calculated using the 0.5–4 Hz (delta) frequency range as follows:
 
-Phase coherence is calculated utilizing the Igor Pro DSPPeriodogram function which can calculate the degree of coherence between the input of two sources, in this case LFP and/or EEG records stored in the same EDF file and on the same time base. According to the Igor Pro literature, the coherence, coh, is given by:coh=∑i=0MF(xi)[F(yi)]∗∑i=0MF(xi)[F(xi)]∗∑i=0MF(yi)[F(yi)]∗
+$$
+energy=\sumi=1npower_{1}\timest_{1}
+$$
+
+Phase coherence is calculated utilizing the Igor Pro DSPPeriodogram function which can calculate the degree of coherence between the input of two sources, in this case LFP and/or EEG records stored in the same EDF file and on the same time base. According to the Igor Pro literature, the coherence, coh, is given by:
+
+$$
+coh=\frac{\sumi=0MF(x_{i})[F(y_{i})]^{∗}}{\sqrt{\sumi=0MF(x_{i})[F(x_{i})]^{∗}\sumi=0MF(y_{i})[F(y_{i})]^{∗}}}
+$$
 
 where F(xi) and F(yi) are the Fourier transforms of the first and second EEG or LFP data chunks, i, for the same time period. The complex conjugate of the Fourier transform is symbolized by the standard notation of [ ]*. The data were recorded at 2 kHz. The data in the coherence plot are analyzed in 10 min bins made from successive chunks (i) of 2 s each and averaged according to the above equation (M=300 times). Igor Pro also applied a Hanning window to the data to remove edge effects. Frequency data resolution was 0.5 Hz. After Fourier analysis, the real and imaginary parts of each point of coherence on the frequency spectrum, coh, were squared and summed to yield a real number values which is the power. This is displayed between 0.5 and 20 Hz (each column on the coherence plot in Figure 6).
 
 Sleep data were analyzed using one-way or two-way analysis of variance (ANOVA) with repeated-measures when appropriate. Student’s t was used where indicated and for all tests significance was defined as P<0.05. Post hoc analysis was conducted using the Holm-Sidak method which adjusts α to maintain the family-wise error-rate at 0.05. Sample sizes (biological replicates) for each experiment are indicated in the figure legends. An appropriate sample size of 6 was predicted with Type I error rate of 0.05 and Type II error rate of 0.2. Standard deviation and mean difference were estimated as 14.6 and 25 min, respectively, based on previous recordings of C57BL/6 J mice obtained in our lab.
 
-## Histology
+### Histology
 
 Under deep isoflurane anesthesia, mice were perfused transcardially with 50 mL of cold1M phosphate buffer saline (PBS) followed by 50 mL 0.4% paraformaldehyde (PFA). Brains were removed and post-fixed in 0.4% PFA for two days and then transferred to 1M PBS until sectioning. Coronal cryostat sections (25 µm) we transferred to glass slides and air dried. For LFP experiments, sections were stained with cresyl-violet and electrode locations were verified using light microscopy. Brain sections from DREADD experiments were mounted with DAPI-containing mounting medium (nucleic-acid counter-stain; Fluoromount-G, Invitrogen); the presence and location of DREADD expressing cells were verified with laser scanning confocal microscopy (Figure 2—figure supplement 1; LSM700, Carl Zeiss, White Plains NY). Excitation lasers were 405 nm (DAPI), 488 nm (EGFP), and 561 nm (mCherry).

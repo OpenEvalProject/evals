@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03prydq77 Systems Biology of Pain, Division of Pharmacology & Toxicology, Department of Pharmaceutical Sciences, Faculty of Life Sciences, University of Vienna Vienna Austria
+1. Systems Biology of Pain, Division of Pharmacology & Toxicology, Department of Pharmaceutical Sciences, Faculty of Life Sciences, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
 
 † Corresponding author
 
@@ -29,25 +29,51 @@ The goal of this work was to comprehensively catalog the protein setup of mouse 
 
 ## Results
 
-## DIA-PASEF allows deep and reproducible proteome profiling of mouse paw skin and sciatic nerves (SCN)
+### DIA-PASEF allows deep and reproducible proteome profiling of mouse paw skin and sciatic nerves (SCN)
 
 In this study, we analyzed 16 biological replicates of paw skin and SCN samples to compare the proteome between (1) two age groups, that is, 4-week-old adolescent mice and 14-week-old adult mice, and (2) males and females (Figure 1—figure supplement 1). To enable and optimize deep proteome profiling, we compared two label-free quantification strategies of MS-based quantitative proteomics. In particular, DDA-PASEF and DIA-PASEF. For each sample, we analyzed technical duplicates using a timsTOF Pro mass spectrometer (Bruker Daltonik). DDA or DDA-PASEF have been the methods of choice for most proteomics studies published so far (Aballo et al., 2021; Aebersold and Mann, 2016; Meyer, 2021). However, recent advances highlighted the superior performance of DIA-PASEF methods (Brunner et al., 2022; Meier et al., 2021), which we tested in our study side-by-side. Given the long acquisition time of approximately 20 days for all samples and replicates, we constantly monitored the performance of our MS setup in DIA-PASEF mode by using pooled skin peptides and SCN peptides as quality controls. Pearson’s correlation coefficients were calculated for all quality control runs (Figure 1A and B). The average correlations of quality controls were 0.98 and 0.99 for pooled skin and SCN samples, respectively, indicating highly consistent stability of the instrument setup. Usually, DIA data is searched against a peptide library constructed from data obtained via DDA of the same sample; therefore, only proteins present in the library can be identified and quantified (Ludwig et al., 2018). In contrast, DIA-NN, a recently developed program based on deep neural networks, extensively advanced DIA workflows with a library-free database search mode (Demichev et al., 2020). Thus, we compared DDA-PASEF data subjected to a standard MaxQuant search (Cox et al., 2014) with DIA-PASEF data subjected to DIA-NN library-free search. As shown in Figure 1C and D, protein identifications from DDA-PASEF were highly covered by DIA-PASEF experiments, and DIA-PASEF detected additional 4135 and 3926 protein groups in skin and SCN, respectively (Figure 1—source data 1 and 2). Besides comparing protein identifications (protein IDs: for the remainder of this article, we will refer to protein groups as protein IDs for the sake of simplicity), we also compared both acquisition modes with respect to reproducibility at the quantitative level. Notably, we observed smaller coefficients of variation (CVs) across all DIA-PASEF runs (Figure 1E and F), indicating higher reproducibility compared to DDA-PASEF. Taken together, DIA-PASEF exhibited superior performance and was therefore chosen for further analysis of skin and SCN samples.
 
-## Age-dependent protein abundance changes in mouse paw skin and SCN
+![Figure 1.](https://cdn.elifesciences.org/articles/81431/elife-81431-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Pearson’s correlations of technical controls of paw skin (blue) and SCN (green) acquired over 20 days on a timsTOF Pro. (C, D) Comparisons of identified protein groups (protein IDs) using DDA- and DIA-PASEF workflows in paw skin (C) and SCN (D). (E, F) Coefficient of variation (CV) distributions of quantitative proteomes using DDA- and DIA-PASEF in paw skin (E) and SCN (F) of 4-week and 14-week-old males (cyan) and females (magenta).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81431/elife-81431-fig1-figsupp1-v1.jpg)
+
+### Age-dependent protein abundance changes in mouse paw skin and SCN
 
 In paw skin, we quantified > 8600 protein IDs across experimental groups (Figure 2A, Figure 1—source data 1). Comparing this proteome dataset with the most comprehensive (human) skin proteome dataset (Dyring-Andersen et al., 2020) published so far, our skin proteome covered approximately 70% (Figure 2B). Importantly, in our study we analyzed whole-skin lysates without preanalytical sample fractionation (e.g., separation of different skin layers) (Dyring-Andersen et al., 2020). Note that the previously published skin proteome was obtained from human hairy skin, while we analyzed mouse glabrous skin known to exhibit several differences in skin structure (Gudjonsson et al., 2007). Nonetheless, we identified all 50 known keratins and 19 collagens. In addition to structural proteins, we also quantified 13 members of the interleukin (IL) family and 11 of the S100 family (Figure 2E), known to play essential roles in the context of inflammation and infection (Kozlyuk et al., 2019; Velazquez-Salinas et al., 2019). Their detection across all skin samples with only a few missing values (note that we did not impute any data; see ‘Materials and methods’ for details) further validates the high performance and reproducibility of our optimized workflow. In SCN, approx. 8400 protein IDs were quantified across experimental groups (Figure 2C, Figure 1—source data 2). SCN harbor myelinated axons, which are closely associated with glia cells such as Schwann cells. Remarkably, the myelin proteome was nearly completely covered in our SCN data (94%); 1014/1077 described myelin proteins (Siems et al., 2020; Figure 2D), without a priori myelin enrichment as required in previous studies (Siems et al., 2020). Among the 63 proteins of the myelin proteome, which were not covered in our dataset, were ATP synthases, histones, and septins (Figure 2—source data 1). Another indication as to the depth and high performance of our workflow is the fact that we robustly quantified multiple ion channels across SCN samples (Figure 2F, Figure 1—source data 2), such as Trpv1 and several voltage-gated sodium channels (e.g., Scn8a, Scn9a, Scn11a) – again without requiring preanalytical membrane preparations. These ion channel identifications further corroborate the high quality of our approach as ion channels are usually expressed at low abundance and are notoriously difficult to be detected by MS given their pronounced hydrophobicity (Samways, 2014).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/81431/elife-81431-fig2-v1.jpg)
+
+**Figure 2.:** (A) Venn diagram shows unique and shared protein IDs across age and sex groups of paw skin. (B) Comparison of the quantified paw skin proteome with previously reported sub-proteomes of human skin (Dyring-Andersen et al., 2020) indicates high coverage in our proteome data. (C) Venn diagram shows unique and shared protein IDs across age and sex groups of SCN. (D) Our SCN proteome dataset harbors 1014 myelin proteins, i.e. 94% of the previously reported myelin proteome (Siems et al., 2020). (E) Heatmaps show the expression of interleukin and S100 protein families across all paw skin samples. (F) Heatmap shows the expression of ion channel proteins quantified across all SCN samples. Color legends are coded based on log2-transformed protein intensities. (G, H) Principal component analysis (PCA) reveals age as a prominent variable in paw skin and SCN tissues.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81431/elife-81431-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The R package ‘Mfuzz’ (https://www.bioconductor.org/packages/release/bioc/html/Mfuzz.html) was used for analysis with nine clusters specified for calculation. Y-axis shows the standardized log2-transformed intensity. The color-coded membership value indicates how well one protein is represented by a certain cluster.
+
 We employed principal component analysis (PCA) to visualize proteome similarities and differences across age and sex groups. Importantly, we only considered those proteins that were robustly quantified in all samples (according to all our quality criteria; see ‘Materials and methods’ for details), resulting in 6086 protein IDs in the skin and 6065 protein IDs in SCN (Figure 2G and H, Figure 1—source data 1 and 2). Age groups were clearly segregated by the first and second components in skin and SCN samples, indicating that age is a prominent discriminator in our study and associated differences can be tackled by whole-proteome analysis. Furthermore, to elucidate changes in abundance profiles across all experimental groups, fuzzy C-means clustering analysis was performed based on the average intensity of any protein ID quantified (Figure 2—figure supplement 1). Among the nine clusters generated, most of the proteins showed strong age patterns, such as clusters 2 and 5 in skin, and clusters 4, 6, and 7 in SCN. On the contrary, several proteins exhibited different expression trends in age/sex groups. For instance, most proteins in cluster 6 of the skin proteome showed minor age-dependent changes in females, while their abundance was notably increased in 14-week males compared to 4-week males (Figure 2—figure supplement 1). Similar sex-specific changes were also observed in SCN represented by cluster 3. Taken together, the clustering analysis of the paw skin and SCN proteome reveals thus far unknown expression patterns dependent on the biological variables age and sex, that is, sex-specific and -overlapping age dependency, which may affect mouse (patho)physiology.
 
-## Diverse biological pathways exhibit age dependence intertwined with sex differences in paw skin
+### Diverse biological pathways exhibit age dependence intertwined with sex differences in paw skin
 
 To explore this age dependency further, we applied a fold change (FC) cut-off (absolute log2 FC ≥ 0.585, i.e., an absolute FC of 1.5) in addition to a significance cut-off (q-value ≤ 0.05) and found 234 and 94 differentially expressed proteins (DEPs) in female and male skin datasets, respectively (Figure 1—source data 1). As shown in Figure 3A, 46 DEPs were shared between sexes, while 188 and 48 DEPs were unique for female and male skin (Figure 1—source data 1). Gene Ontology Biological Process (GO-BP) analysis of 46 common DEPs resulted in three significantly enriched pathways (criteria: at least four DEPs/pathway, Bonferroni-adjusted p-value ≤ 0.05). DEPs annotated to enriched pathways were mapped back to quantitative proteomic data, and the agglomerated z-scores of the pathways are visualized in Figure 3B, revealing a marked age-dependent pattern. As expected, skin development-related pathways such as ‘protein hydroxylation’ and ‘collagen fibril organization’ were enriched in 4-week skin compared to 14 weeks. These pathways were reported to be implicated in skin stability during development (Rappu et al., 2019). Specifically, several proline/serine hydroxylases (e.g., P4ha2, P3h1, P4ha1) were highly expressed in 4-week skin together with members of collagens (Figure 3B). Performing GO-BP enrichment on DEPs from age-dependent comparisons in female versus male mice (Figure 3—figure supplement 1A and B) revealed interesting biological insights into sex-dependent differences. In male skin, pathways of ‘notch signaling’ and ‘extrinsic apoptotic signaling’ were significantly enriched at 4 weeks, while ‘actin-mediated cell contraction’ and ‘cellular component assembly involved in morphogenesis’ were enriched at 14 weeks (Figure 3C). In female skin, proteins annotated to multiple interconnected pathways were significantly enriched at 14 weeks compared to 4 weeks (Figure 3D, Figure 3—figure supplement 1A). Many of these have been shown to contribute to skin homeostasis (Hamanaka et al., 2013; Sreedhar et al., 2020) such as ‘plasma membrane organization’, ‘cotranslational protein targeting to membrane’, and ‘positive regulation of map kinase activity’ besides others like ‘positive regulation of axonogenesis’ and ‘glial cell development’ (Figure 3D, Figure 3—figure supplement 1A). In contrast, proteins annotated to ‘cellular response to heat’ showed a higher z-score in 4-week skin of females.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81431/elife-81431-fig3-v1.jpg)
+
+**Figure 3.:** (A) Venn diagram illustrates unique and shared differentially expressed proteins (DEPs; criteria: q-value ≤ 0.05, absolute log2 fold change [FC] ≥ 0.585, i.e., an absolute FC of 1.5) from age-dependent comparisons in female (magenta) and male (cyan) paw skin. (B) 46 common DEPs (A) are annotated to pathways related to skin development. The agglomerated z-score of each pathway is visualized in the heatmap. Common DEPs are annotated to three interconnected pathways. All proteins annotated here were highly expressed in 4-week paw skin (red filled circle). (C, D) Enriched interconnected pathways from age-dependent comparison in male (cyan) and female (magenta) mice. Red: higher expression at 4 weeks; blue: lower expression at 4 weeks. (E) Ligands and neuronal receptors found in skin cells (Wangzhou et al., 2021) are significantly regulated by age. Significance levels are indicated as ns, q-value > 0.05, *q-value ≤ 0.05, **q-value ≤ 0.01, ***q-value ≤ 0.001, and ****q-value ≤ 0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81431/elife-81431-fig3-figsupp1-v1.jpg)
+
 Keratinocytes are among the most abundant cell types in skin, followed by fibroblasts, endothelial cells, melanocytes, and subsets of resident innate and adaptive immune cells. In addition, sparsely distributed sensory nerve endings in the skin play significant roles for aspects of somatosensation, including the detection of different physical stimuli, whether they be innocuous or noxious. However, this cellular diversity cannot be separated on the experimental level when analyzing complex tissue lysates as in our study. Therefore, we assessed the depth of our profiling workflow across different cell types indirectly by applying a recently published resource on ligand–receptor interactions in 42 cell types, including sensory neurons of mouse dorsal root ganglia (DRG) (Wangzhou et al., 2021). We extracted ligand–receptor interactions found across skin cell types (Wangzhou et al., 2021) for comparison with our skin dataset. In total, 144 ligands and receptors of DRG were present in our skin dataset (Figure 3—source data 1), of which 12 were significantly regulated (q-value ≤ 0.05) when comparing 4-week to 14-week mice (Figure 3E). For example, the ligand Lamb1 was found to be more abundant in 4-week female skin. Lamb1 was reported to serve as an anchor point for end feet of radial glial cells and as a physical barrier to migrating neurons (Radmanesh et al., 2013). Three receptors of Lamb1, low-density lipoprotein receptor-related protein 1 (Lrp1), C-type mannose receptor 2 (Mrc2), and suppressor of tumorigenicity 14 protein homolog (St14), were also identified in our dataset (Figure 1—source data 1). Interestingly, Mrc2 showed age-dependent statistical significance with higher expression at 4 weeks of age. Taken together, our results generally raise awareness of pronounced age dependency of protein expression in naïve mice, which should be carefully considered when pooling wide-ranging age groups in mouse studies.
 
-## Prominent age and sex dependency of immune pathways and myelin proteins in SCN
+### Prominent age and sex dependency of immune pathways and myelin proteins in SCN
 
 In the SCN proteome, we observed similar age dependency as in paw skin. Differential expression analysis uncovered 929 DEPs and 1269 DEPs in age-dependent comparisons of female and male SCN (Figure 4A, Figure 1—source data 2), accounting for almost one-fifth of the here quantified SCN proteome. Pathway enrichment for 641 common DEPs (Figure 1—source data 2) and age-enriched DEPs in males versus females (for 4 weeks and 14 weeks, respectively) is given in Figure 4—figure supplement 1, spanning diverse categories from metabolic processes and translation to neuronal function and inflammatory/immune signaling. For example, among common DEPs, ‘vesicle localization’ had a higher z-score in 4-week SCN of both sexes, while pathways related to ‘neuron survival’, ‘neurotransmitter transport’, and ‘anterograde axonal transport’ were more pronounced in 14-week SCN of both sexes (Figure 4B). These processes appear to be interconnected via distinct DEPs (Figure 4B), suggesting crosstalk during development. For instance, superoxide dismutase (Sod1) was found to be less expressed in 4-week mice and represents a connecting hub of two pathways related to nervous system function (Figure 4B) in line with its implication in amyotrophic lateral sclerosis (ALS) (Pansarasa et al., 2018). Remarkably, 144 DEPs from age-dependent comparisons were associated with the ‘synapse’ as revealed by querying SynGO, a public reference for synapse research (Koopmans et al., 2019; Figure 4—source data 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81431/elife-81431-fig4-v1.jpg)
+
+**Figure 4.:** (A) Venn diagram illustrates unique and shared differentially expressed proteins (DEPs) (criteria: q-value ≤ 0.05, absolute log2 fold change [FC] ≥ 0.585, i.e., an absolute FC of 1.5) from age-dependent comparisons in female (magenta) and male (cyan) SCN. (B) Common DEPs are annotated to pathways related to neuronal function and inflammation. The agglomerated z-score of each pathway is visualized in the heatmap. Red: proteins more abundant at 4 weeks; blue: proteins less expressed at 4 weeks. (C) Eighteen ligands of neuronal receptors found in immune cells (Wangzhou et al., 2021) are significantly regulated by age. Significance levels are indicated as: ns, q-value > 0.05, *q-value ≤ 0.05, **q-value ≤ 0.01, ***q-value ≤ 0.001, and ****q-value ≤ 0.0001. (D) Log2 FC of previously reported myelin proteins (Siems et al., 2020) in our age-dependent SCN datasets. Red: higher expression at 4 weeks; blue: lower expression at 4 weeks; white: not significantly regulated.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81431/elife-81431-fig4-figsupp1-v1.jpg)
 
 Miscellaneous immune cell types are known to be present in the SCN, where they contribute to nerve health, damage, and repair, as well as to sensory phenomena of pain (Kalinski et al., 2020). Thus, we cross-referenced our data to the aforementioned ligand–receptor database (Wangzhou et al., 2021) and searched our SCN dataset for ligands of neuronal receptors known to be expressed in immune cells. Among the 56 immune cell ligands of neuronal receptors quantified in the SCN proteome, 19 showed age-dependent abundance changes in both sexes such as Agrin (Agrn), Thy-1 membrane glycoprotein (Thy1), and several collagens (Figure 4C, Figure 4—source data 2). Given their age-dependent abundance differences already in naïve mice, our results caution to adequately pool age groups when assessing immune signaling in mouse disease models as data might get skewed by underlying – and thus far unknown – age differences.
 
@@ -55,21 +81,29 @@ We also assessed ligands of neuron receptors Wangzhou et al., 2021 found in glia
 
 In this respect, it is noteworthy that 21/90 known myelin proteins within the myelin proteome (Siems et al., 2020; Figure 2D) were differentially regulated by age, including highly abundant structural myelin proteins such as myelin basic protein (Mbp) and myelin protein P0 (Mpz) (Figure 4D). In line with previous reports in mice and zebrafish (Siems et al., 2021), Mbp and Mpz were significantly enriched in both male and female 14-week SCN, reflecting myelin assembly and axonal development with age. Similarly, CD59A glycoprotein (Cd59a), a sparsely expressed myelin protein associated with protection against complement-mediated lysis (Zeis et al., 2016), was more abundant at adult age (Figure 4D) as described previously in mouse brains (Siems et al., 2021). This congruency with published data on both high- and low-abundant myelin proteins validates our datasets and highlights their quality and depth of profiling. Note, however, that some myelin DEPs appear to be specific for female (Bcas1, Ca2, Cadm4, Dynll1) or male (Itgb4) SCN in dependence on age – a fact that has not been investigated in previous studies, which mostly focused on male mice (Siems et al., 2021). Further investigation of these changes correlated with sex and age will likely help to better understand the molecular setup of myelin and, importantly, associated pathologies.
 
-## Sexual dimorphism in paw skin and SCN proteomes within distinct age groups
+### Sexual dimorphism in paw skin and SCN proteomes within distinct age groups
 
 In addition to thus far presented sex differences in age-dependent proteome changes, we then turned to specifically looking at sex dependency within one age group in our datasets, that is, we compared skin and SCN proteomes between male and female mice at 4 weeks and 14 weeks, respectively. While several studies have addressed sexual dimorphism in animal models, most previous reports relied on investigating differences of transcript abundance in paw skin and nerve tissues (Mecklenburg et al., 2020; Ray et al., 2019). In our proteome dataset, we observed 58 DEPs (in skin) and 33 DEPs (in SCN) in a sex-dependent manner within the same age group (Figure 5A and B, Figure 1—source data 1 and 2). These numbers are low compared to aforementioned prominent changes upon age (Figures 3A and 4A). Of note, sex-dependent DEPs differed by age. For example, sex-dependent changes were much less pronounced in 4-week compared to 14-week skin (Figure 5A) and SCN (Figure 5B) in line with our initial PCA (Figure 2G and H). Interestingly, we did not observe any sex-dependent DEPs at 4 weeks in SCN (Figure 5B, orange circle). However, it is worth mentioning that all here reported DEPs are highly dependent on the experimental and analytical conditions of our study, for example, the chosen analysis and cut-off criteria, which are outlined in detail in ‘materials and methods’. Nonetheless, PCA using only sex-dependent DEPs (Figure 1—source data 1 and 2) enabled effective discrimination between female and male samples (Figure 5C and D), suggesting that these DEPs might represent sex-specific protein signatures in mouse paw skin and SCN.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/81431/elife-81431-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Differentially expressed proteins (DEPs) of sex-dependent comparisons at 4 weeks and 14 weeks in paw skin (A) and SCN (B). Heatmaps show the normalized protein expression (averaged intensity) across age and sex groups. Venn diagram depicts sex-dependent DEPs at 4 weeks (orange; note that none were found in SCN) and 14 weeks (green). (C, D) Principal component analysis (PCA) using DEPs of sex-dependent comparisons (in contrast to PCA on all identified proteins illustrated in Figure 2G and H) reveals sex as an effective discriminator in paw skin and SCN tissues; females (magenta) and males (cyan). (E, F) Visualization of enriched pathways using sex-dependent DEPs at 4 weeks and 14 weeks. Red: higher expression in males; blue: lower expression in males; green: pathways enriched at 14 weeks in a sex-dependent manner.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81431/elife-81431-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Sex-dependent significance in the sciatic nerve (SCN) dataset of proteins previously reported to be sexually dimorphic in the transcriptome of human tibial nerves (Ray et al., 2019). (B) Sex-dependent significance in the paw skin dataset of proteins previously reported to be sexually dimorphic in the transcriptome of mouse hind paws (Mecklenburg et al., 2020). Significance levels are indicated as ns, q-value > 0.05, *q-value ≤ 0.05, **q-value ≤ 0.01, ***q ≤ 0.001, and ****q-value ≤ 0.0001.
 
 Overall, GO-BP analysis revealed that sex-dependent DEPs in skin and SCN could be annotated to few (owing to the low number of DEPs) but distinct pathways (Figure 5E and F). For example, ‘regulation of complement activation’ was significantly enriched in both skin and SCN in sex comparisons at 14 weeks (Figure 5E and F). The complement system is known to be crucially implicated in immunity, host defense, inflammation, and associated pathologies (Merle et al., 2015; Ray et al., 2019). Thus, revealing its sexual dimorphism provides a crucial guide for adequate experimental design in future studies, especially when using rodent disease models.
 
 Next, we compared our datasets with previously published literature on molecular sex differences. Unfortunately, we did not find any resource that assessed sex differences in mouse SCN. Therefore, we compared our SCN datasets with sex-associated genes found in human tibial nerve (Ray et al., 2019; Figure 5—source data 1). Among these 149 differentially expressed genes (DEGs), we quantified 31 proteins in our SCN dataset, of which only 20 were differentially regulated. However, these proteins rather exhibited age- and not sex-dependent differences in our mouse SCN data, potentially due to species differences (Ray et al., 2019; Figure 5—figure supplement 1A). A previous transcriptomics study on mouse hind paw skin revealed 123 DEGs comparing female with male mice aged 8–12 weeks (Mecklenburg et al., 2020). Among these 123 DEGs, we quantified 42 proteins in our skin dataset, of which 14 were sexually dimorphic at 4 weeks and/or 14 weeks (Figure 5—source data 2; Figure 5—figure supplement 1B) in line with published data (Mecklenburg et al., 2020). Reasons as to why we did not observe sex-dependent differences in the remaining 28 out of these 42 proteins could be manifold: starting with the broad age range used in the transcriptome study (Mecklenburg et al., 2020) to the known fact that transcript levels only show limited correspondence with protein expression levels (Liu et al., 2016; Maier et al., 2009; Reimegård et al., 2021). The latter highlights the importance of performing profiling studies on the proteome and integrate these data with other -omics approaches.
 
-## Multiple proteins associated with skin diseases and pain exhibit age and sex dependency
+### Multiple proteins associated with skin diseases and pain exhibit age and sex dependency
 
 In light of translational research, reverse translation of human data to mouse models of skin diseases is of high utility. Therefore, we compared our skin datasets with a list of top candidates (skin disease transcriptomic profiles, https://biohub.skinsciencefoundation.org/) found to be regulated in the skin of human patients suffering from skin diseases such as psoriasis, acne, atopic dermatitis, and rosacea. Intriguingly, our proteome results harbor 329 out of 907 disease genes, of which 27 proteins showed significant age and/or sex dependency across varied skin diseases (Figure 6A, Figure 6—source data 1). Fuzzy C-means clustering analysis of these 329 skin disease-related proteins revealed not only discrete abundance patterns among age and sex groups but also proteins with differential profiles when comparing all four experimental groups (Figure 6—source data 2). For example, proteins in cluster 6 showed higher abundance in 14-week male skin, whereas proteins in cluster 7 exhibited lower abundance in 4-week skin of both sexes compared to 14 weeks (Figure 6B). Discrete abundance patterns in dependence on age and sex were also observed on the level of individual proteins (examples are given in Figure 6C; full list detailed in Figure 6—source data 1). For example, collagen alpha-1(V) chain (Col5a1), collagen alpha-2(V) chain (Col5a2), and coiled-coil domain-containing protein 80 (Ccdc80) were less abundant at 14 weeks in both male and female samples and, in parallel, showed distinct sex differences. In contrast, indolethylamine N-methyltransferase (Inmt) and keratin type II cytoskeletal 6A (Krt6a) represent examples with higher levels in both sexes at 14 weeks. Others display prominent sex dependency such as transcription factor Sp1 (Sp1) and versican core protein (Vcan) being specifically regulated in female skin in an age-dependent manner (less abundant in 4-week female skin compared to 14 weeks; Figure 6—source data 1). Among skin diseases used here for comparison (Figure 6—source data 1), several are known to exhibit an autoimmune component such as alopecia areata, lichen plantus, lupus erythematosus, psoriasis, and vitiligo. Overall, autoimmune skin diseases are more prevalent in females. Thus, we specifically checked whether top gene signatures of aforementioned autoimmune-associated skin diseases are among the reported female-enriched proteome changes of our study (Figure 1—source data 1). Indeed, 11 proteins could be identified, of which 9 were differentially regulated by age only in females (Figure 6—source data 1, data sheet 3). For instance, transforming growth factor-beta-induced protein ig-h3 (Tgfbi) and transcription factor Sp1 (Sp1) were more abundant in 14-week female skin, but no significance was found in males. It is noteworthy that in our study we investigated hairless glabrous skin in mice. However, transcriptomic profiles of human skin diseases used for comparison are mostly derived from human hairy skin – a difference that needs to be taken into account when interpreting the presented comparisons between mouse and human skin. This is why we additionally selected transcriptomic studies on skin diseases affecting human glabrous skin, that is, palms and soles, such as handfoot psoriasis (Ahn et al., 2018), palmoplantar pustulosis (McCluskey et al., 2022), and vesicular hand eczema (Voorberg et al., 2021). Among top gene signatures presented in glabrous skin datasets (2498 DEGs), 928 proteins were quantified in our paw skin datasets and 96 of them showed age and/or sex dependency including several collagens (Figure 6—source data 3; examples are marked with ‘#’ in Figure 6C). Overall, our data suggest significant regulation of human skin disease profiles by age and sex in mice – knowledge of utmost significance for reverse translational studies on the skin.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/81431/elife-81431-fig6-v1.jpg)
 
-**Figure 6.:** (A) Venn diagram indicates the number of quantified protein IDs in paw skin (white) associated with various human skin diseases (light gray) upon comparison with a skin disease database (dark gray, https://biohub.skinsciencefoundation.org/). (B) Examples of fuzzy C-means clustering analysis of the 329 protein IDs associated with human skin diseases illustrate their relative expression in experimental groups (other clusters are detailed in Figure 6—source data 2). (C) Significantly expressed protein IDs associated with human skin diseases show age and/or sex dependency. Proteins marked with ‘#’ represent examples related to hand–foot psoriasis, palmoplantar pustulosis, and vesicular hand eczema. (D) Venn diagram indicates the number of quantified protein IDs in sciatic nerve (SCN) (white) associated with pain (light gray) upon comparison with known pain genes (dark gray). Pain-related genes were downloaded from publicly available pain gene databases: https://www.painresearchforum.org/, https://humanpaingeneticsdb.ca/hpgdb/, and http://paingeneticslab.ca/4105/06_02_pain_genetics_database.asp. (E) Examples of fuzzy C-means clustering analysis of the 245 protein IDs associated with pain illustrate their relative expression in experimental groups (other clusters are detailed in Figure 6—source data 2). (F) Significantly expressed protein IDs associated with pain show age and/or sex dependency. Significance levels in (C) and (F) are indicated as ns, q-value > 0.05, *q-value ≤ 0.05, **q-value ≤ 0.01, ***q-value ≤ 0.001, and ****q-value ≤ 0.0001.Figure 6—source data 1.https://biohub.skinsciencefoundation.org/), which we quantified in the paw skin proteome.Figure 6—source data 2.Figure 6—source data 3.Figure 6—source data 4.https://www.painresearchforum.org/, http://paingeneticslab.ca/4105/06_02_pain_genetics_database.asp, and https://humanpaingeneticsdb.ca/hpgdb/), which we quantified in the sciatic nerve (SCN) proteome.Figure 6—source data 5.Barry et al., 2018) quantified in the SCN proteome.
+**Figure 6.:** (A) Venn diagram indicates the number of quantified protein IDs in paw skin (white) associated with various human skin diseases (light gray) upon comparison with a skin disease database (dark gray, https://biohub.skinsciencefoundation.org/). (B) Examples of fuzzy C-means clustering analysis of the 329 protein IDs associated with human skin diseases illustrate their relative expression in experimental groups (other clusters are detailed in Figure 6—source data 2). (C) Significantly expressed protein IDs associated with human skin diseases show age and/or sex dependency. Proteins marked with ‘#’ represent examples related to hand–foot psoriasis, palmoplantar pustulosis, and vesicular hand eczema. (D) Venn diagram indicates the number of quantified protein IDs in sciatic nerve (SCN) (white) associated with pain (light gray) upon comparison with known pain genes (dark gray). Pain-related genes were downloaded from publicly available pain gene databases: https://www.painresearchforum.org/, https://humanpaingeneticsdb.ca/hpgdb/, and http://paingeneticslab.ca/4105/06_02_pain_genetics_database.asp. (E) Examples of fuzzy C-means clustering analysis of the 245 protein IDs associated with pain illustrate their relative expression in experimental groups (other clusters are detailed in Figure 6—source data 2). (F) Significantly expressed protein IDs associated with pain show age and/or sex dependency. Significance levels in (C) and (F) are indicated as ns, q-value > 0.05, *q-value ≤ 0.05, **q-value ≤ 0.01, ***q-value ≤ 0.001, and ****q-value ≤ 0.0001.
 
 The SCN is affected by various pathologies such as nerve injury and neuropathic pain (Chen et al., 2021; Hildreth et al., 2009). In this context, we assessed the presence of known pain-related genes in SCN datasets by comparison with three publicly available pain gene databases (https://www.painresearchforum.org/, http://paingeneticslab.ca/4105/06_02_pain_genetics_database.asp, and https://humanpaingeneticsdb.ca/hpgdb/). Among 841 pain genes, 245 were quantified in our SCN proteome (Figure 6D, Figure 6—source data 4 ). Similar to skin disease-related proteins, fuzzy C-means clustering analysis revealed distinct abundance profiles for these 245 pain-related proteins differing by age and/or sex (Figure 6E, Figure 6—source data 2). Intriguingly, 132 of these pain-related proteins displayed significant changes (q-value ≤ 0.05) by age and/or sex (Figure 6—source data 4), of which examples are given in Figure 6F. For instance, angiotensin I-converting enzyme (Ace) exhibits pronounced age and sex differences while its family member Ace2 only showed age differences (i.e., higher expression in adult mice). Ace2 has been described to be associated with increased risk of nonspecific orofacial symptoms in the OPPERA (Smith et al., 2013) prospective study, and Ace is linked to migraine and potentially higher frequency as well as susceptibility (Dandona et al., 2007). Generally, Ace plays an essential role in vascular physiology and inflammation within the renin–angiotensin system. The FK506 binding protein 51 (Fkbp5) also displayed significant age and sex differences, with its expression being lower in female adults but higher in male adults compared to 4-week mice. Fkbp5 is a glucocorticoid receptor co-chaperone, and its polymorphisms predict persistent musculoskeletal pain after traumatic stress exposure (Bortsov et al., 2013; Linnstaedt et al., 2018). Moreover, it is generally involved in the acute stress response linked to stress-related disorders in humans via the hypothalamic-pituitaryadrenal (HPA) axis (Häusl et al., 2021). Interestingly, variations in serpin peptidase inhibitor clade A member 6 (Serpina6), another pain gene with pronounced age differences and sex-opposite expression, are also associated with the HPA stress axis impacting the susceptibility to musculoskeletal pain (Holliday et al., 2010), the risk of cardiovascular disease, as well as gene expression in peripheral tissues (Crawford et al., 2021). These few examples highlight the importance of considering changes in the abundance of aforementioned proteins across ages and in both sexes for research on preclinical disease models. Therefore, our datasets represent a highly valuable and unique resource for biomedical studies. To further illustrate this utility, we have critically inspected our previous SCN datasets derived from the neuropathic pain model of nerve injury (spared nerve injury [SNI] model) in male adult mice (Barry et al., 2018). Indeed, several candidate proteins we previously reported (Barry et al., 2018) to be regulated upon SNI in adult males, for example, angiotensin-converting enzyme (Ace), apolipoprotein E (Apoe), complement C3 (C3), progranulin (Grn), epidermal growth factor receptor (Egfr), and voltage-dependent calcium channel subunit alpha-2/delta-1 (Cacna2d1), exhibited age-dependent abundance differences in males but not in females (Figure 6—source data 5) – a fact that has not been known before and might crucially affect SNI-induced pathology. Taken together, our data emphasize the essential need for male versus female as well as age-matched biomedical studies in parallel.
 
@@ -89,38 +123,216 @@ In conclusion, we present the most extensive proteome compendium of mouse skin a
 
 ## Materials and methods
 
-## Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>C57BL/6J</td>
+      <td>In-house bred</td>
+      <td></td>
+      <td>Wild type, female and male, 3-4 and 1415 weeks old</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetonitrile</td>
+      <td>Fisher Scientific</td>
+      <td>10001334</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formic acid</td>
+      <td>Fisher Scientific</td>
+      <td>15658430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>10× PBS</td>
+      <td>Fisher Scientific</td>
+      <td>11594516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris 1 M</td>
+      <td>Accugene/Avantor</td>
+      <td>733-1653</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycerol</td>
+      <td>Fisher Scientific</td>
+      <td>10021083</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dithiothreitol 1 M</td>
+      <td>Sigma-Aldrich</td>
+      <td>43816</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetone</td>
+      <td>Sigma-Aldrich</td>
+      <td>1000201000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>1117272500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Iodoacetamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>I1149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium bicarbonate</td>
+      <td>Sigma-Aldrich</td>
+      <td>09830-500G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Water MS grade</td>
+      <td>Sigma-Aldrich</td>
+      <td>1.15333.1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin/Lys-C</td>
+      <td>Promega</td>
+      <td>V5073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin</td>
+      <td>Serva</td>
+      <td>37283.01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sera-Mag SpeedBead beads</td>
+      <td>Cytiva</td>
+      <td>65152105050250,45152105050250</td>
+      <td>1:1 mix</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>cOmplete Protease Inhibitor Cocktail</td>
+      <td>Roche/Merck</td>
+      <td>58929700001</td>
+      <td>Mix of protease inhibitors</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein LoBind tube</td>
+      <td>Eppendorf</td>
+      <td>0030108116</td>
+      <td>Reagent tube</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Aurora Series UHPLC column</td>
+      <td>IonOpticks</td>
+      <td>AUR2-25075C18A-CSI</td>
+      <td>25 cm × 75 µm column</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Biopsy punch 4 mm</td>
+      <td>Kai Medical</td>
+      <td>48401</td>
+      <td>Skin biopsy punch</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant</td>
+      <td>Max Planck Institute of Biochemistry</td>
+      <td></td>
+      <td>Version 1.6.17.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DIA-NN</td>
+      <td>https://github.com/vdemichev/DiaNN</td>
+      <td>RRID:SCR_022865</td>
+      <td>Version 1.8.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+      <td>Version 4.1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mouse proteome database</td>
+      <td>UniProt</td>
+      <td>UP000000589</td>
+      <td>Downloaded on 2021-07-08, 17070 entries</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 All reagents were purchased from Sigma-Aldrich (St. Louis, MO) if not mentioned otherwise. Acetonitrile (ACN) and formic acid (FA) were purchased from Fisher Scientific (Hampton, New Hampshire; both FA and ACN were liquid chromatography-mass spectrometry [LC-MS] grade). LC-MS grade water from Sigma was used for all solutions.
 
-## Animals and tissue isolation
+### Animals and tissue isolation
 
 In-house bred C57BL/6J mice of both sexes were used. Housing and sacrificing of mice were carried out with approval of the Max Planck Institute for Multidisciplinary Sciences Institutional Animal Care and Use Committee (IACUC, see ‘Ethics statement’). All mice used in this study were group-housed in individually ventilated cages in a 12 hr light/dark cycle in the animal facility of the Max Planck Institute for Multidisciplinary Sciences with water and food ad libitum. Mice were sacrificed at ages 3-4 (referred to as 4-week-old mice) or 14-15 weeks (referred to as 14-week-old mice). Thus, the experiment consisted of four different conditions with four biological replicates each (4-week females, 4-week males, 14-week females, and 14-week males). After CO2 euthanization of mice, the SCN and paw skin were isolated. SCN was rinsed in ice-cold PBS before flash-freezing in liquid nitrogen. For the paw skin, a 4 mm punch biopsy (Kai Medical, Solingen, Germany) of the plantar aspect of the paw was taken, and the dermis and epidermis were separated from underlying tendons/muscle tissue under a microscope. The flash-frozen tissue was stored at 80°C until further use. For both skin and SCN, tissue from two mice of the same sex and age were pooled together as one biological replicate.
 
-## Protein extraction
+### Protein extraction
 
 For protein extraction, each SCN was cut into three pieces with a scalpel on a glass slide and transferred to a protein LoBind tube (Eppendorf, Hamburg, Germany) prefilled with 250 µL lysis buffer (100 mM Tris–HCl, 5% glycerol, 10 mM DTT, 2% SDS) and in presence of 1× cOmplete Protease Inhibitor Cocktail (Roche, Basel, Switzerland). Samples were then sonicated using Bioruptor Pico (Diagenode, Seraing, Belgium) for 15 cycles (30 s on and 30 s off, 4°C) at low frequency. After a short vortex, samples were further incubated at 70°C for 10 min with 1000 rpm agitation. Remaining tissue debris was removed after centrifugation at 10,000 × g for 5 min, and the supernatant was taken into a new tube. To remove lipids in the tissue lysates, 1250 µL (5× sample volume) of cold acetone was added, and the sample was placed at 20°C for 4 hr. With centrifugation at 14,000 × g for 30 min, acetone was removed, and proteins were collected at the bottom. The protein pellet was further washed with 1.5 mL cold ethanol (80% v/v) followed by 30 min centrifugation at 14,000 × g. The protein pellet was air-dried for 20 min at room temperature before the addition of 100 µL lysis buffer. A further incubation at 70°C for 10 min with 1000 rpm agitation was performed to solubilize all proteins. Protein concentrations were measured using NanoPhotometer N60 (Implen, Munich, Germany) at 280 nm, and 50 µg protein of each sample was taken for protein reduction (5 mM dithiothreitol [DTT], 30 min incubation at 60°C) and alkylation (20 mM iodoacetamide [IAA], 30 min at room temperature in the dark). The remaining IAA in the sample was quenched with addition of 5 mM DTT. Skin biopsies were cut into two pieces and homogenized in 350 µL lysis buffer with the help of a glass dounce. The homogenate was further solubilized by incubation at 70°C for 10 min with 1500 rpm agitation and sonification with the Bioruptor Pico (15 cycles, 30 s on and 30 s off, 4°C, low frequency). Removal of cell debris and subsequent steps were done as described for the SCN.
 
-## SP3-assisted protein digestion and peptide clean-up
+### SP3-assisted protein digestion and peptide clean-up
 
 For protein clean-up and digestion, a modified version of the single-pot, solid-phase-enhanced sample preparation (SP3) method from Hughes et al. was used (Hughes et al., 2019). Briefly, 10 µL of pre-mixed Sera-Mag SpeedBead beads (Cytiva, Marlborough, MA) were added into 50 µg protein sample. To initiate binding of proteins to the beads, one volume of absolute ethanol was added immediately, followed by incubation on a Thermomixer (Eppendorf) at 24°C for 5 min with 1000 rpm agitation. The supernatant was removed after 2 min resting on a magnetic rack, and the beads were rinsed three times with 500 μL of 80% ethanol. Rinsed beads were reconstituted in 50 μL digestion buffer (50 mM ammonium bicarbonate, pH 8). Protein digestion was performed with 2 μg of either sequencing grade trypsin (SCN samples) or trypsin/Lys-C (skin samples) for 18 hr at 37°C with 950 rpm agitation. After digestion, ACN was added to each sample to a final concentration of 95%. Mixtures were incubated for 8 min at room temperature and then placed on a magnetic rack for 2 min. The supernatant was discarded, and the beads were rinsed with 900 μL of 100% ACN. The rinsed beads were reconstituted either in 40 μL (SCN samples) or 20 μL (skin samples) LC-MS grade water to elute the peptides. Peptide concentration was measured in duplicate using NanoPhotometer N60 (Implen, München, Deutschland) at 205 nm. Peptide samples were acidified with FA to a final concentration of 0.1% and stored at -20°C until LC-MS/MS analysis.
 
-## LC-MS/MS
+### LC-MS/MS
 
 Nanoflow reversed-phase liquid chromatography (Nano-RPLC) was performed on a NanoElute system (Bruker Daltonik, Bremen, Germany). Then, 250 ng of peptides were separated with a 130 min gradient on a 25 cm × 75 µm column packed with 1.6 µm C18 particles (IonOpticks, Fitzroy, Australia). Mobile solvent A consisted of 2% ACN, 98% water, 0.1% FA, and mobile phase B of 100%, 0.1% FA. The flow rate was set to 400 nL/min for the first 2 min and the last 9 min of the gradient, while the rest of the gradient was set to 250 nL/min. The mobile phase B was linearly increased from 0 to 20% from 3 min to 110 min, flowed by a linear increase to 35% within 10 min and a steep increase to 85% in 0.5 min. Then, a flow rate of 400 nL/min at 85% was maintained for 9 min to elute all hydrophobic peptides. NanoElute LC was coupled with a hybrid TIMS quadrupole TOF mass spectrometer (timsTOF Pro, Bruker Daltonik) via a CaptiveSpray ion source. Each sample was analyzed in both DIA and DDA modes coupled with parallel accumulation serial fragmentation (PASEF) one after another in duplicate. The TIMS analyzer was operated in a 100% duty cycle with equal accumulation and ramp times of 100 ms each. Specifically, in DDA-PASEF mode (Meier et al., 2018), 10 PASEF scans were set per acquisition cycle with ion mobility range (1 /k0) from 0.6 to 1.6, and singly charged precursors were excluded. Dynamic exclusion was applied to precursors that reached a target intensity of 17,500 for 0.4 min. Ions with m/z between 100 and 1700 were recorded in the mass spectrum. In DIA-PASEF mode, precursors with m/z between 400 and 1200 were defined in 16 scans containing 32 ion mobility steps with an isolation window of 26 Th in each step with 1 Da overlapping for neighboring windows. The acquisition time of each DIA-PASEF scan was set to 100 ms, which led to a total cycle time of around 1.8 s (Meier et al., 2020). In both DDA and DIA-PASEF modes, the collision energy was ramped linearly from 59 eV at 1/k0 = 1.6–20 eV at 1/k0 = 0.6.
 
-## DDA-PASEF data processing
+### DDA-PASEF data processing
 
 All DDA data were analyzed with MaxQuant (version 1.6.17.0) and searched with Andromeda against Mus musculus database from UniProt containing 17,070 protein entries (downloaded on 2021-07-08). The minimal peptide length was set to six amino acids, and a maximum of three missed cleavages were allowed. The search included variable modifications of methionine oxidation and N-terminal acetylation, deamidation (N and Q), and fixed modification of carbamidomethyl on cysteine, and a maximum of three modifications per peptide were allowed. The ‘Match between run’ function was checked within 0.5 min retention time window and 0.05 ion mobility window. Mass tolerance for peptide precursor and fragments were set as 10 ppm and 20 ppm, respectively. The FDR was set to 0.01 at precursor level and protein level. Label-free quantification algorithm was used to quantify identified proteins with a minimum of one razor and unique peptide. The rest of the parameters were kept as default. Proteus, an R package (https://github.com/bartongroup/Proteus), was used for downstream analysis of MaxQuant output (Gierlinski et al., 2018).
 
-## DIA-PASEF data processing
+### DIA-PASEF data processing
 
 DIA-NN (Demichev et al., 2020) was used to process DIA-PASEF data in library-free mode with the same M. musculus proteome database to generate the predicted spectrum library. Trypsin/P was used for in silico digestion with an allowance of maximum three missed cleavages. A deep learning-based method was used to predict theoretical peptide spectra along with its retention time and ion mobility. Variable modifications on peptides were set to N-term methionine excision, methionine oxidation, and N-term acetylation, while carbamidomethylation on cysteine was a fixed modification. The maximum number of variable modifications on a peptide was set to 3. Peptide length for the search ranged from 5 to 52 amino acids. Aligned with the DIA-PASEF acquisition method, m/z ranges were specified as 400–1200 for precursors and 100–1700 for fragment ions. Both MS1 and MS2 mass accuracy were set to 10 ppm as recommended. Unique genes were used as protein inference in grouping. RT-dependent cross-run normalization and Robust LC (high accuracy) options were selected for quantification. The main report from the DIA-NN search was further processed with the R package, DiaNN (https://github.com/vdemichev/diann-rpackage; Demichev et al., 2020; Demichev, 2020) to extract the MaxLFQ (Cox et al., 2014) quantitative intensity of gene groups for all identified protein groups with q-value < 0.01 as criteria at precursor and gene group levels.
 
-## Visualization of proteomic data
+### Visualization of proteomic data
 
 Pearson’s correlation plots were created with corrplot package (https://github.com/taiyun/corrplot; Wei and Simko, 2022). Venn diagrams were plotted using VennDiagram (https://CRAN.R-project.org/package=VennDiagram; Chen, 2022), and area-proportional Venn diagrams were created with eulerr package (https://github.com/jolars/eulerr; Larsson, 2022). All box plots and bar plots used to visualize the proteomic data were created using ggplot2 package (https://github.com/tidyverse/ggplot2; Wickham et al., 2022). In addition, the package ggpubr (https://rpkgs.datanovia.com/ggpubr/; Kassambara, 2022) was used for significance tests in comparisons within box plots. PCA was performed with the factoextra package (https://rpkgs.datanovia.com/factoextra/index.html; Kassambara, 2020), and proteins that were quantified in all biological and technical replicates are considered for the analysis. Color-coded tables were prepared in Microsoft Excel 2019.
 
-## Differential expression analysis and protein function enrichment
+### Differential expression analysis and protein function enrichment
 
 Two samples (Skin_Ma4w-4 and SCN_Fe4w-1) were excluded from the following analysis due to significantly lower protein content than corresponding biological replicates. Only proteins quantified in ≥ 75% of replicates in each experimental group were submitted to differential expression analysis, resulting in 6983 protein IDs and 6827 protein IDs for paw skin and SCN proteomes, respectively. Technical duplicates of each biological sample were averaged. These quantitative data were imported into the R package, ProTIGY (https://github.com/broadinstitute/protigy; Krug et al., 2021), and log2-transformed, followed by normalization based on log2-mean intensity. Two-sample moderated t-test was used to test for statistical significance test of individual contrasts. Age-dependent comparisons (Fe = female; Ma = male): Skin_Fe4w versus Skin_Fe14w, Skin_Ma4w versus Skin_Ma14w, SCN_Fe4w versus SCN_Fe14w, and SCN_Ma4w versus SCN_Ma14w. Sex-dependent comparisons: Skin_Ma4w versus Skin_Fe4w, Skin_Ma14w versus Skin_Fe14w, SCN_Ma4w versus SCN_Fe4w, and SCN_Ma4w versus SCN_Fe4w. Proteins with the adjusted (Benjamini and Hochberg, for multiple testing) p-value ≤ 0.05 (hereafter referred to as the q-value) and the absolute log2 FC ≥ 0.585, that is, an absolute FC of 1.5, were considered as DEPs in each contrast. GO-BP enrichment and visualization of DEPs was performed using the pathfindR package (version 1.6.4, https://github.com/egeulgen/pathfindR; Ulgen, 2022) in R environment (Ulgen et al., 2019). In general, a threshold of ≥ 4 DEPs and adjusted p-value ≤ 0.05 (Bonferroni) was applied for significantly enriched pathways. Due to the low number of sex-dependent DEPs found in paw skin and SCN within one age group, a threshold of ≥ 3 DEPs and adjusted p-value ≤ 0.05 (Bonferroni) was applied for significantly enriched pathways in dependence of sex.

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.04585.001 Correlations in brain activity between two areas (functional connectivity) have been shown to relate to their underlying structural connections. We examine the possibility that functional connectivity also reflects short-term changes in synaptic efficacy. We demonstrate that paired transcranial magnetic stimulation (TMS) near ventral premotor cortex (PMv) and primary motor cortex (M1) with a short 8-ms inter-pulse interval evoking synchronous pre- and post-synaptic activity and which strengthens interregional connectivity between the two areas in a pattern consistent with Hebbian plasticity, leads to increased functional connectivity between PMv and M1 as measured with functional magnetic resonance imaging (fMRI). Moreover, we show that strengthening connectivity between these nodes has effects on a wider network of areas, such as decreasing coupling in a parallel motor programming stream. A control experiment revealed that identical TMS pulses at identical frequencies caused no change in fMRI-measured functional connectivity when the inter-pulse-interval was too long for Hebbian-like plasticity. DOI: http://dx.doi.org/10.7554/eLife.04585.001
+Correlations in brain activity between two areas (functional connectivity) have been shown to relate to their underlying structural connections. We examine the possibility that functional connectivity also reflects short-term changes in synaptic efficacy. We demonstrate that paired transcranial magnetic stimulation (TMS) near ventral premotor cortex (PMv) and primary motor cortex (M1) with a short 8-ms inter-pulse interval evoking synchronous pre- and post-synaptic activity and which strengthens interregional connectivity between the two areas in a pattern consistent with Hebbian plasticity, leads to increased functional connectivity between PMv and M1 as measured with functional magnetic resonance imaging (fMRI). Moreover, we show that strengthening connectivity between these nodes has effects on a wider network of areas, such as decreasing coupling in a parallel motor programming stream. A control experiment revealed that identical TMS pulses at identical frequencies caused no change in fMRI-measured functional connectivity when the inter-pulse-interval was too long for Hebbian-like plasticity.
 
 ## Introduction
 
@@ -30,11 +30,11 @@ Temporal correlations in activity between brain areas can be measured with funct
 
 Although changes in fMRI-based functional connectivity can be highly specific, their underlying biological mechanisms are less clear. It is thought that functional connectivity patterns are shaped largely by the relatively stable underlying skeleton of structural connections (O'Reilly et al., 2013). However, modifications in functional connectivity might also be influenced by changes in synaptic efficacy, for example through changes in the quantity of neurotransmitter release, changes in astrocytes or dendritic spine stabilization.
 
-Here, we aimed to elucidate the contribution of changes in short-term synaptic efficacy to fMRI-based functional connectivity. To this aim, we modulated synaptic efficacy in a specific corticocortical pathway using repetitive paired pulses of transcranial magnetic stimulation (TMS) with a brief inter-pulse interval (IPI; 8 ms) that evoked synchronous pre- and post-synaptic activity and monitored whether those changes were reflected in altered functional connectivity (Experiment 1) (
+Here, we aimed to elucidate the contribution of changes in short-term synaptic efficacy to fMRI-based functional connectivity. To this aim, we modulated synaptic efficacy in a specific corticocortical pathway using repetitive paired pulses of transcranial magnetic stimulation (TMS) with a brief inter-pulse interval (IPI; 8 ms) that evoked synchronous pre- and post-synaptic activity and monitored whether those changes were reflected in altered functional connectivity (Experiment 1) (Figure 1A). Several TMS protocols have been shown to induce changes in excitability in primary motor cortex (M1) using repetitive stimulation of M1 itself (Chen et al., 1997) or stimulation of premotor regions projecting to M1 (Munchau et al., 2002). These changes are often thought to reflect frequency-dependent potentiation of synaptic transmission. Furthermore, it has been shown that repetitive paired stimulation of an input into M1—such as the median nerve—and then of M1 itself can change M1 cortico-spinal excitability (Stefan et al., 2000; Wolters et al., 2003). These paired associative stimulation (PAS) protocols are based upon Hebbian principles of synaptic plasticity and appear to modify connectivity in a controlled manner. Investigations that applied paired-pulse TMS over interconnected sites—for example, homotopical M1 sites (Rizzo et al., 2009), M1 and the supplementary motor area (SMA) (Arai et al., 2011), and M1 and posterior parietal cortex (Koch et al., 2013)—demonstrated altered motor cortical excitability. Notably, the current protocol of repetitive paired-pulse TMS has been shown to induce a causal and directional change of influence of the first brain region (ventral premotor cortex: PMv) over the anatomically connected second region (M1) (Buch et al., 2011). This is important since it is such pathway-specific changes that occur in animal models of synaptic plasticity (Markram et al., 1997; Jackson et al., 2006) and these are argued to underlie the self-organization proposed to occur in mono-synaptically connected networks in response to regularly occurring input (Sussillo and Abbott, 2009).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/04585/elife-04585-fig1-v2.jpg)
 
-**Figure 1.:** (A) 90 paired pulses were applied over ventral frontal cortex near PMv and M1 (mean MNI coordinates [−56 19 19] and [−40 −18 59] respectively) at 0.1 Hz for 15 min. (B) Individual stimulation locations for 8 ms IPI (red) and 500 ms IPI (blue). (C) Participants performed visually guided grasping movements towards one of two objects (small or large; see inset) while lying supine in the MR scanner. The head coil was tilted forward by 30° to allow for direct line of sight of the objects to be grasped. A response button box was positioned on the upper leg. (D) Experimental design and setup for all experiments (for both 8 ms IPI and 500 ms IPI experiment). The order of resting-state and grasping task fMRI as well as of pre-TMS (baseline) and post-TMS sessions was counterbalanced.DOI: http://dx.doi.org/10.7554/eLife.04585.003
+**Figure 1.:** (A) 90 paired pulses were applied over ventral frontal cortex near PMv and M1 (mean MNI coordinates [−56 19 19] and [−40 −18 59] respectively) at 0.1 Hz for 15 min. (B) Individual stimulation locations for 8 ms IPI (red) and 500 ms IPI (blue). (C) Participants performed visually guided grasping movements towards one of two objects (small or large; see inset) while lying supine in the MR scanner. The head coil was tilted forward by 30° to allow for direct line of sight of the objects to be grasped. A response button box was positioned on the upper leg. (D) Experimental design and setup for all experiments (for both 8 ms IPI and 500 ms IPI experiment). The order of resting-state and grasping task fMRI as well as of pre-TMS (baseline) and post-TMS sessions was counterbalanced.
 
 PMv and M1 are a part of the so-called ‘dorsolateral circuit’ of areas composed of the anterior intraparietal (AIP) area, areas PF and PFG in the inferior parietal lobule, and PMv and M1 in the frontal lobes. During complex motor behaviour such as reaching and grasping this dorsolateral sensorimotor stream is complemented by a ‘dorsomedial circuit’ composed of dorsal premotor (PMd), medial intraparietal area (MIP), and posterior superior parietal cortex (pSPL) (Jeannerod et al., 1995; Wise et al., 1997; Tanne-Gariepy et al., 2002; Galletti et al., 2003; Brochier and Umiltà, 2007; Grafton, 2010; Turella and Lingnau, 2014).
 
@@ -68,63 +68,245 @@ For Experiment 2, each participant (N = 15) also underwent two fMRI scans both b
 
 Data from previous fMRI studies suggest that the two areas we are investigating, PMv and M1, increase their functional connectivity during performance of the task we use (Grol et al., 2007). Paired-pulse TMS affords simple, direct quantification of the causal influence of one node over another node in a given context (effective connectivity). It is known that PMv exerts an inhibitory physiological influence over M1 at rest but this turns into a facilitatory influence during grasping (Davare et al., 2008; Buch et al., 2010, 2011). To understand how such TMS-based indices of effective connectivity related to functional connectivity indices derived from fMRI, we conducted a follow-up experiment (Experiment 3). In Experiment 3, we formally tested the relationship between effective connectivity, as measured with TMS and EMG, and fMRI-derived connectivity indices in the PMv-M1 pathway during rest and during the grasping task (N = 10).
 
-## Experiment 1: paired stimulation of PMv and M1 at 8 ms IPI
+### Experiment 1: paired stimulation of PMv and M1 at 8 ms IPI
 
-## Changes in functional connectivity between the two stimulated areas
+#### Changes in functional connectivity between the two stimulated areas
 
-A qualitative sense of topographically distinct coupling patterns in the left hemisphere can be obtained by examining whole-brain co-activation maps, seeded in PMv, before and after repeated paired TMS during task performance (
+A qualitative sense of topographically distinct coupling patterns in the left hemisphere can be obtained by examining whole-brain co-activation maps, seeded in PMv, before and after repeated paired TMS during task performance (Figure 2A,B) and in the resting state (Figure 2D,E). In order to quantify TMS-induced changes in the relationship between left PMv and left M1, we examined the correlation between the fMRI-measured blood oxygen level dependent (BOLD) signal in the stimulated areas using the seed–based correlation analysis (SBCA) tool in the FMRIB Software Library (FSL, 56). Repeated paired TMS led to an increase in PMv-M1 BOLD functional connectivity while participants performed the task (paired t-test: t(13) = -2.59, p = 0.023; Figure 2C), while PMv-M1 BOLD coupling at rest was not modulated by the intervention (t(14) = -0.07, p = 0.94; Figure 2F).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/04585/elife-04585-fig2-v2.jpg)
 
-**Figure 2.:** Group correlation maps seeded from PMv (red circle) during the grasping task (N = 14) (A, B) and in the resting state (N = 15) (D, E) in the baseline (A, D) and post-TMS sessions (B, E) with a spatial extent threshold of Z > 2.3 and a significance threshold of p < 0.05. There was an increase in PMv-M1 coupling during grasping (C), but not in the resting state (F). The blue circle covers the M1 ROI from which correlation coefficients were extracted. Error bars represent 1 s.e.m.DOI: http://dx.doi.org/10.7554/eLife.04585.004
+**Figure 2.:** Group correlation maps seeded from PMv (red circle) during the grasping task (N = 14) (A, B) and in the resting state (N = 15) (D, E) in the baseline (A, D) and post-TMS sessions (B, E) with a spatial extent threshold of Z > 2.3 and a significance threshold of p < 0.05. There was an increase in PMv-M1 coupling during grasping (C), but not in the resting state (F). The blue circle covers the M1 ROI from which correlation coefficients were extracted. Error bars represent 1 s.e.m.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/04585/elife-04585-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Mean group regression coefficients for PMv-M1 connectivity during the grasping task at baseline and post-TMS (N = 14). There was an increase in PMv-M1 coupling during grasping (A). There was no change in PMv-M1 functional connectivity during rest as shown by mean group regression coefficients for PMv-M1 connectivity at rest (N = 15) (B). Error bars represent 1 s.e.m.DOI: http://dx.doi.org/10.7554/eLife.04585.005
+**Figure 2—figure supplement 1.:** Mean group regression coefficients for PMv-M1 connectivity during the grasping task at baseline and post-TMS (N = 14). There was an increase in PMv-M1 coupling during grasping (A). There was no change in PMv-M1 functional connectivity during rest as shown by mean group regression coefficients for PMv-M1 connectivity at rest (N = 15) (B). Error bars represent 1 s.e.m.
 
-## Changes in connectivity (psychophysiological interactions) between the two stimulated areas
+#### Changes in connectivity (psychophysiological interactions) between the two stimulated areas
 
 Using a psychophysiological interaction (PPI) analysis (Friston et al., 1997; O'Reilly et al., 2012), we confirmed that the responsiveness of M1 to input from PMv increases following paired TMS of the areas. Increases in connectivity between the stimulated areas (psychophysiological interactions) support the notion that PMv has a greater influence on M1 after repeated paired stimulation during performance of the prehension task (paired t-test: t(13) = −4.78, p = 0.0004; Figure 2—figure supplement 1A). PPI analysis of resting state fMRI data confirmed that the relationship between activity in PMv and M1 did not change in that condition following the plasticity-inducing TMS intervention (t(14) = 0.08, p = 0.93; Figure 2—figure supplement 1B).
 
-## Distinct patterns of reorganization in dorsolateral and dorsomedial sensorimotor circuits
+#### Distinct patterns of reorganization in dorsolateral and dorsomedial sensorimotor circuits
 
-In the following analysis, we examined the broader impact of repeated paired TMS of the PMv-M1 pathway on interactions within the dorsolateral (AIP-PMv-M1) and dorsomedial (pSPL-PMd-M1) sensorimotor circuits known to be active during this grasping task (
+In the following analysis, we examined the broader impact of repeated paired TMS of the PMv-M1 pathway on interactions within the dorsolateral (AIP-PMv-M1) and dorsomedial (pSPL-PMd-M1) sensorimotor circuits known to be active during this grasping task (Grol et al., 2007). Mean Montreal Neurological Institute (MNI) coordinates of regions of interest (ROIs) are displayed in Table 1. We used a partial correlation analysis approach; for example, when examining pairwise PMv-AIP coupling, we did so after partialling out effects in all other nodes in the circuits: M1, PMd, pSPL, and V3A. Functional coupling measured during grasping task performance confirmed that PMv-M1 coupling was increased following repeated stimulation of those areas (PMv-M1: t(13) = -3.72, p = 0.003). At rest, repeated paired TMS led to increased dorsolateral circuit coupling (AIP-PMv: t(14) = -2.50, p = 0.025; Figure 3), but decreased dorsomedial circuit coupling (PMd-pSPL: t(14) = 2.22, p = 0.04; PMd–M1: t(14) = 2.84, p = 0.013; Figure 3). In other words, functional connectivity increased in the extended sensorimotor circuit that includes both PMv and M1 as nodes. At the same time, connectivity decreased in one of the other major sensorimotor circuits that influences M1. Finally, functional connectivity involving area V3A, a relatively early visual area that links to both the dorsomedial and dorsolateral circuits, did not change following repeated paired TMS applied to the PMv-M1 pathway (V3A-AIP: t(14) = 0.51, p = 0.618; V3A-pSPL: t(14) = 1.45, p = 0.170).
+
+**Table 1.**
+ Regions of interest from which BOLD time series were extracted
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ROIs in MNI standard space</th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Left M1</td>
+      <td>−36</td>
+      <td>−24</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <td>Left PMv</td>
+      <td>−58</td>
+      <td>4</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Left PMd</td>
+      <td>−22</td>
+      <td>−4</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>Left AIP</td>
+      <td>−44</td>
+      <td>−42</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>Left pSPL</td>
+      <td>−22</td>
+      <td>−64</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>Left V3A</td>
+      <td>−26</td>
+      <td>−86</td>
+      <td>18</td>
+    </tr>
+  </tbody>
+</table>
+
+_6 mm diameter masks were created in Montreal Neurological Institute (MNI) space. Coordinates refer to MNI152_standard brain as provided by FSL. The ROI mask for M1 was based upon the meta-analysis of functional brain imaging data of motor control (Mayka et al., 2006). The PMv ROI location was then identified by finding the region in which BOLD activity was significantly correlated with activity in M1 at the group level, both during rest and during the grasping task. The peak resulting MNI coordinate [−58 4 30] was located in what is defined as PMv by Mayka et al. (2006) which had a centre-of-mass at [−52 4 24]; more specifically, it lies in the 6v/F5c subdivision of PMv identified by Neubert et al. (2014). The ROI masks for AIP, PMd, pSPL, and V3A were the same size, but were centred on the group peak activation average coordinates of an fMRI study that employed a similar visually guided grasping task and the same apparatus (Grol et al., 2007). Masks were registered to individual EPI space in a two-step process: the mask was transformed into individual, high-resolution structural space via non-linear registration (FSL FNIRT) and then into individual functional space via affine registration (FSL FLIRT; Jenkinson et al., 2002)._
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/04585/elife-04585-fig3-v2.jpg)
 
-**Figure 3.:** Partial correlation analysis of resting-state fMRI. There was a significant increase in coupling between other nodes (PMv-AIP) within the dorsolateral sensorimotor network that are linked to PMv and M1 over which repeated paired stimulation was applied (A). At the same time, there were significant decreases in functional connectivity within the dorsomedial sensorimotor network; between PMd and M1 (B) and PMd and pSPL (C). Error bars represent 1 s.e.m. (D and E) Schematic representation of mean group connectivity weights (grey lines) in baseline and post-TMS sessions. (D) All weights are standardised to the baseline partial connectivity of each connection. (E) Significant increments in PMv-AIP connectivity (red line) and decrements in PMd-M1 and PMd-pSPL connectivity (black lines) in the post-TMS session (N = 15).DOI: http://dx.doi.org/10.7554/eLife.04585.007
+**Figure 3.:** Partial correlation analysis of resting-state fMRI. There was a significant increase in coupling between other nodes (PMv-AIP) within the dorsolateral sensorimotor network that are linked to PMv and M1 over which repeated paired stimulation was applied (A). At the same time, there were significant decreases in functional connectivity within the dorsomedial sensorimotor network; between PMd and M1 (B) and PMd and pSPL (C). Error bars represent 1 s.e.m. (D and E) Schematic representation of mean group connectivity weights (grey lines) in baseline and post-TMS sessions. (D) All weights are standardised to the baseline partial connectivity of each connection. (E) Significant increments in PMv-AIP connectivity (red line) and decrements in PMd-M1 and PMd-pSPL connectivity (black lines) in the post-TMS session (N = 15).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/04585/elife-04585-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Multiple regression analysis (psychophysiological interaction analysis) of resting-state fMRI before and after TMS intervention (N = 15). There was a significant increase in coupling between nodes PMv-AIP within the dorsolateral visuomotor circuit, of which PMv was stimulated during repeated paired PMv-M1 stimulation (A). At the same time there was a significant decrease in functional connectivity between PMd-M1, a connection which is part of the dorsomedial sensorimotor circuit (B). For the other nodes of the dorsomedial stream, pSPL-PMd, there was tendency for a decrease in connectivity (C). Error bars represent 1 s.e.m. (D) All weights are standardised to the baseline partial connectivity of each connection (grey lines). (E) Significant increments in PMv-AIP connectivity (red line) and decrements in PMd-M1 connectivity (black line) - and a tendency for a decrease in PMd-pSPL connectivity (black line) - in the post-TMS session (N = 15).DOI: http://dx.doi.org/10.7554/eLife.04585.008
+**Figure 3—figure supplement 1.:** Multiple regression analysis (psychophysiological interaction analysis) of resting-state fMRI before and after TMS intervention (N = 15). There was a significant increase in coupling between nodes PMv-AIP within the dorsolateral visuomotor circuit, of which PMv was stimulated during repeated paired PMv-M1 stimulation (A). At the same time there was a significant decrease in functional connectivity between PMd-M1, a connection which is part of the dorsomedial sensorimotor circuit (B). For the other nodes of the dorsomedial stream, pSPL-PMd, there was tendency for a decrease in connectivity (C). Error bars represent 1 s.e.m. (D) All weights are standardised to the baseline partial connectivity of each connection (grey lines). (E) Significant increments in PMv-AIP connectivity (red line) and decrements in PMd-M1 connectivity (black line) - and a tendency for a decrease in PMd-pSPL connectivity (black line) - in the post-TMS session (N = 15).
 
-## Distinct patterns of reorganization in dorsolateral and dorsomedial sensorimotor circuits (multiple regression analysis)
+#### Distinct patterns of reorganization in dorsolateral and dorsomedial sensorimotor circuits (multiple regression analysis)
 
 Both the increase in inter-areal connectivity within the dorsolateral circuit and the parallel decrease in inter-areal connectivity within the dorsomedial circuit were corroborated with an additional analysis based on a multiple linear regression analysis with the same six sensorimotor network nodes (Table 1).
 
 The analysis corroborated the finding that M1 becomes more responsive to inputs from PMv during task performance following repeated stimulation of those areas in Experiment 1 (PMv-M1: t(13) = -2.53, p = 0.0064). Again, at rest responses between more distant network node pairs were shown to alter following application of the plasticity-inducing paired-pulse TMS protocol. Within the dorsolateral circuit, PMv became more responsive to inputs from AIP (AIP-PMv: t(14) = -2.55, p = 0.023; Figure 3—figure supplement 1A,D,E); this finding is in line with our results from the partial correlation analysis (Figure 3). The multiple regression analysis also confirmed the decreased interaction of PMd and M1 within the dorsomedial circuit (PMd–M1: t(14) = 2.84, p = 0.013; Figure 3—figure supplement 1B,D,E); the response of PMd to activity in pSPL showed a tendency to be decreased (PMd-pSPL: t(14) = 1.78, p = 0.097; Figure 3—figure supplement 1C,D,E).
 
-## Exploring reorganization in cortical networks
+#### Exploring reorganization in cortical networks
 
 SBCA, partial correlation analysis, and PPI are hypothesis-driven analyses focussing on changes in functional connectivity within specific nodes of the reaching-and-grasping network. To assess the possibility that dynamic changes might occur in other neural networks and to guard against any bias in our selection of ROIs, we performed an additional exploratory analysis that employed dual-regression (Filippini et al., 2009). Here, voxel-wise comparisons of functional connectivity were performed across the whole brain.
 
 First, functional networks were identified with independent components analysis (ICA) on the basis of their temporally correlated, low-frequency resting-state BOLD fluctuations. ICAs were conducted separately for fMRI data acquired during task performance and during resting state. Using the Laplace approximation for ICA dimensionality estimation, 15 and 22 large-scale spatial components—representing group-averaged neuronal networks—were extracted from the ‘baseline’ grasping task fMRI and from the ‘baseline’ resting-state fMRI of all participants, respectively. In the next stage of the analysis, two regressions were conducted: (1) the spatial regression extracted subject-specific time series for each group-averaged ICA component and (2) the temporal regression computed subject-specific weighted spatial maps for each group-averaged ICA component. During the last step, the weighted network masks were regressed back onto to the baseline and post-TMS fMRI time series in order to identify component networks in which BOLD correlations significantly changed following repeated paired PMv-M1 TMS.
 
-During performance of the grasping task, a significant increase in activation of the left intraparietal sulcus area AIP [−44 −40 46] and the adjacent supramarginal gyrus (SMG) [−62 −34 34] was observed following TMS (
+During performance of the grasping task, a significant increase in activation of the left intraparietal sulcus area AIP [−44 −40 46] and the adjacent supramarginal gyrus (SMG) [−62 −34 34] was observed following TMS (Figure 4A; blue regions, p = 0.012; t-statistic images were subjected to cluster-based thresholding and corrected for multiple comparisons for a one-sided t-test at t > 1.76 with alpha-level p ≤ 0.05). This means that AIP and SMG, after paired TMS and during grasping, showed significantly more co-activation with what has previously been called the ‘sensorimotor network’ (Smith et al., 2009; Power et al., 2011) (red-to-yellow region, Figure 4—figure supplement 1A), which includes much of motor and premotor cortex and interconnected regions of parietal cortex (Tomassini et al., 2007; Mars et al., 2011).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/04585/elife-04585-fig4-v2.jpg)
 
-**Figure 4.:** (A) AIP activity became significantly more coupled with the sensorimotor network (see Figure 4—figure supplement 1A). (B) At rest, pathway potentiation evoked coactivation of PMv [−56 −4 30] and a prefrontal region close to the site of stimulation (inferior frontal junction (IFJ) [−56 20 22]). These areas (blue) became specifically more coupled with a left-lateralised frontoparietal network (see Figure 4—figure supplement 1B). All effects (p < 0.05; N = 15).DOI: http://dx.doi.org/10.7554/eLife.04585.009
+**Figure 4.:** (A) AIP activity became significantly more coupled with the sensorimotor network (see Figure 4—figure supplement 1A). (B) At rest, pathway potentiation evoked coactivation of PMv [−56 −4 30] and a prefrontal region close to the site of stimulation (inferior frontal junction (IFJ) [−56 20 22]). These areas (blue) became specifically more coupled with a left-lateralised frontoparietal network (see Figure 4—figure supplement 1B). All effects (p < 0.05; N = 15).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/04585/elife-04585-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** A) and during rest (B).(A) Short-term potentiation of PMv-M1 connectivity led to increased coupling of the sensorimotor network (bilateral somatosensory, motor, and premotor areas; red-to-yellow) with left AIP [−44 −40 46] (blue) during grasping as demonstrated by a dual-regression analysis. (B) At rest, after TMS intervention, PMv [−56 −4 30] and a prefrontal region just anterior to it and close to the site of stimulation (inferior frontal junction (IFJ) [−56 20 22]) became more coupled with each other and a left-lateralised frontoparietal network (blue indicates areas of increased coupling, p < 0.05; N = 15).DOI: http://dx.doi.org/10.7554/eLife.04585.010
+**Figure 4—figure supplement 1.:** (A) Short-term potentiation of PMv-M1 connectivity led to increased coupling of the sensorimotor network (bilateral somatosensory, motor, and premotor areas; red-to-yellow) with left AIP [−44 −40 46] (blue) during grasping as demonstrated by a dual-regression analysis. (B) At rest, after TMS intervention, PMv [−56 −4 30] and a prefrontal region just anterior to it and close to the site of stimulation (inferior frontal junction (IFJ) [−56 20 22]) became more coupled with each other and a left-lateralised frontoparietal network (blue indicates areas of increased coupling, p < 0.05; N = 15).
 
 During rest, an analogous exploratory analysis revealed increased activity in IFJ, and adjacent areas 44d and PMv [−56 4 30] (Figure 4B; blue regions, p = 0.007; cluster-based thresholding and multiple comparison-correction for one-sided t-test at t > 1.76 with alpha-level p ≤ 0.05). The activity overlapped with the stimulation site of the anterior TMS coil which had been placed over the border between 6v and IFJ (Neubert et al., 2014) (Figure 1). The IFJ is a key prefrontal transitional region involved in high-level control of the motor system and interacts prominently with PMv, dorsolateral prefrontal cortex, and visual association areas in the occipitotemporal cortex (Neubert et al., 2014). Regions IFJ, area 44d, and PMv are part of a left-lateralised ‘frontoparietal network’ (red-to-yellow region, Figure 4—figure supplement 1B) and the results mean that they become more coupled with the rest of this network following repeated paired-pulse TMS.
 
-## Experiment 2: paired stimulation of PMv and M1 at 500 ms IPI
+### Experiment 2: paired stimulation of PMv and M1 at 500 ms IPI
 
-Since increased functional connectivity between two areas is difficult to distinguish from increased mean firing in the two areas, it is possible that the measured connectivity changes observed following repeated paired PMv-M1 TMS at 8 ms IPI in Experiment 1 could have been the result of an increase in activity in each of the stimulated areas instead of a induced change in functional connectivity (Chawla et al., 2000). In Experiment 2, we therefore applied identical numbers of pulses at identical frequencies over the identical brain regions, but we did so at 500 ms IPI. This interval is many times longer than the longest one at which PMv-M1 interactions have been observed (Davare et al., 2008; Neubert et al., 2010). While such a protocol ought to induce similar changes in each stimulated region, it should not result in their co-activation or in STDP. Using a higher-level analysis (mixed-model ANOVA) with between-subjects factor ‘PROTOCOL’, we directly contrasted the effects from Experiment 1 and Experiment 2 for each of the analyses conducted. We present the results in Table 2 and will go through the findings in the following order: (1) functional connectivity analysis between PMv-M1; (2) PPI analysis between PMv-M1; (3) partial correlation analysis between pairwise network nodes; (4) multiple regression PPI analysis between pairwise network nodes; and (5) dual-regression analysis.10.7554/eLife.04585.011Table 2.Summary of results from hypothesis-driven analyses conducted on 8 ms-IPI Experiment 1 and control Experiment 2 (IPI of 500 ms)DOI: http://dx.doi.org/10.7554/eLife.04585.011Expt 1 (IPI 8 ms)Expt 2 (IPI 500 ms)Expt 1 vs Expt 2PMv-M1AIP-PMvpSPL-PMdPMd-M1PMv-M1AIP-PMvpSPL-PMdPMd-M1PMv-M1AIP-PMvpSPL-PMdPMd-M1Functional connectivity (fc)graspt(13) = −2.59; p = 0.023*t(13) = 0.94; p = 0.36F(1,26) = 4.64; p = 0.041*restt(14) = −0.07; p = 0.94t(14) = 0.07; p = 0.95n.a.partial correlation fcgraspt(13) = −3.72; p = 0.003*n.s.n.s.n.s.t(13) = 1.00; p = 0.34n.s.n.s.n.s.F(1,26) = 7.76; p = 0.011*n.s.n.s.n.s.restt(14) = −0.07; p = 0.95t(14) = −2.50; p = 0.025*t(14) = 2.22; p = 0.04*t(14) = 2.84; p = 0.013*t(14) = −0.39; p = 0.70t(14) = 1.08; p = 0.30t(14) = −1.24; p = 0.24t(14) = 0.47; p = 0.65n.a.F(1,28) = 7.15; p = 0.012*F(1,28) = 5.29; p = 0.029*F(1,28) = 5.92; p = 0.08Psycho-physiological interaction (PPI)graspt(13) = −4.78; p = 0.0004*t(13) = 0.98; p = 0.35F(1,26) = 6.92; p = 0.014*restt(14) = 0.08; p = 0.93t(14) = 0.20; p = 0.85n.a.multiple regression PPIgraspt(13) = −2.53; p = 0.0064*n.s.n.s.n.s.t(13) = 1.18; p = 0.26n.s.n.s.n.s.F(1,26) = 7.47; p = 0.011*n.s.n.s.n.s.restn.a.t(14) = −2.55; p = 0.023*t(14) = 1.78; p = 0.097t(14) = 2.84; p = 0.013*n.a.t(14) = 0.41; p = 0.96t(14) = −1.18; p = 0.26t(14) = 0.01; p = 0.99n.a.F(1,28) = 5.74; p = 0.024*F(1,28) = 3.66; p = 0.066F(1,28) = 4.44; p = 0.044*Analyses were conducted on rest and task data. Moreover in order to show that specific effects relate to plasticity induction (8 ms IPI) several higher-level analyses contrasting Experiment 1 and 2 are presented. T-tests were conducted as two-tailed paired t-tests (within subjects). Mixed-model ANOVAs were conducted between experiments (across subjects). Detailed information on all analyses is provided in the ‘Materials and methods’ section. Asterisks indicate significant results, p < 0.05. Abbreviations: n.s. = non-significant.
+Since increased functional connectivity between two areas is difficult to distinguish from increased mean firing in the two areas, it is possible that the measured connectivity changes observed following repeated paired PMv-M1 TMS at 8 ms IPI in Experiment 1 could have been the result of an increase in activity in each of the stimulated areas instead of a induced change in functional connectivity (Chawla et al., 2000). In Experiment 2, we therefore applied identical numbers of pulses at identical frequencies over the identical brain regions, but we did so at 500 ms IPI. This interval is many times longer than the longest one at which PMv-M1 interactions have been observed (Davare et al., 2008; Neubert et al., 2010). While such a protocol ought to induce similar changes in each stimulated region, it should not result in their co-activation or in STDP. Using a higher-level analysis (mixed-model ANOVA) with between-subjects factor ‘PROTOCOL’, we directly contrasted the effects from Experiment 1 and Experiment 2 for each of the analyses conducted. We present the results in Table 2 and will go through the findings in the following order: (1) functional connectivity analysis between PMv-M1; (2) PPI analysis between PMv-M1; (3) partial correlation analysis between pairwise network nodes; (4) multiple regression PPI analysis between pairwise network nodes; and (5) dual-regression analysis.
+
+**Table 2.**
+ Summary of results from hypothesis-driven analyses conducted on 8 ms-IPI Experiment 1 and control Experiment 2 (IPI of 500 ms)
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th colspan="4">Expt 1 (IPI 8 ms)</th>
+      <th colspan="4">Expt 2 (IPI 500 ms)</th>
+      <th colspan="4">Expt 1 vs Expt 2</th>
+    </tr>
+    <tr>
+      <th>PMv-M1</th>
+      <th>AIP-PMv</th>
+      <th>pSPL-PMd</th>
+      <th>PMd-M1</th>
+      <th>PMv-M1</th>
+      <th>AIP-PMv</th>
+      <th>pSPL-PMd</th>
+      <th>PMd-M1</th>
+      <th>PMv-M1</th>
+      <th>AIP-PMv</th>
+      <th>pSPL-PMd</th>
+      <th>PMd-M1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Functional connectivity (fc)</td>
+      <td>grasp</td>
+      <td>t(13) = −2.59; p = 0.023*</td>
+      <td rowspan="2" colspan="3"></td>
+      <td>t(13) = 0.94; p = 0.36</td>
+      <td rowspan="2" colspan="3"></td>
+      <td>F(1,26) = 4.64; p = 0.041*</td>
+      <td rowspan="2" colspan="3"></td>
+    </tr>
+    <tr>
+      <td>rest</td>
+      <td>t(14) = −0.07; p = 0.94</td>
+      <td>t(14) = 0.07; p = 0.95</td>
+      <td>n.a.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">partial correlation fc</td>
+      <td>grasp</td>
+      <td>t(13) = −3.72; p = 0.003*</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>t(13) = 1.00; p = 0.34</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>F(1,26) = 7.76; p = 0.011*</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>rest</td>
+      <td>t(14) = −0.07; p = 0.95</td>
+      <td>t(14) = −2.50; p = 0.025*</td>
+      <td>t(14) = 2.22; p = 0.04*</td>
+      <td>t(14) = 2.84; p = 0.013*</td>
+      <td>t(14) = −0.39; p = 0.70</td>
+      <td>t(14) = 1.08; p = 0.30</td>
+      <td>t(14) = −1.24; p = 0.24</td>
+      <td>t(14) = 0.47; p = 0.65</td>
+      <td>n.a.</td>
+      <td>F(1,28) = 7.15; p = 0.012*</td>
+      <td>F(1,28) = 5.29; p = 0.029*</td>
+      <td>F(1,28) = 5.92; p = 0.08</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Psycho-physiological interaction (PPI)</td>
+      <td>grasp</td>
+      <td>t(13) = −4.78; p = 0.0004*</td>
+      <td rowspan="2" colspan="3"></td>
+      <td>t(13) = 0.98; p = 0.35</td>
+      <td rowspan="2" colspan="3"></td>
+      <td>F(1,26) = 6.92; p = 0.014*</td>
+      <td rowspan="2" colspan="3"></td>
+    </tr>
+    <tr>
+      <td>rest</td>
+      <td>t(14) = 0.08; p = 0.93</td>
+      <td>t(14) = 0.20; p = 0.85</td>
+      <td>n.a.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">multiple regression PPI</td>
+      <td>grasp</td>
+      <td>t(13) = −2.53; p = 0.0064*</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>t(13) = 1.18; p = 0.26</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>F(1,26) = 7.47; p = 0.011*</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>rest</td>
+      <td>n.a.</td>
+      <td>t(14) = −2.55; p = 0.023*</td>
+      <td>t(14) = 1.78; p = 0.097</td>
+      <td>t(14) = 2.84; p = 0.013*</td>
+      <td>n.a.</td>
+      <td>t(14) = 0.41; p = 0.96</td>
+      <td>t(14) = −1.18; p = 0.26</td>
+      <td>t(14) = 0.01; p = 0.99</td>
+      <td>n.a.</td>
+      <td>F(1,28) = 5.74; p = 0.024*</td>
+      <td>F(1,28) = 3.66; p = 0.066</td>
+      <td>F(1,28) = 4.44; p = 0.044*</td>
+    </tr>
+  </tbody>
+</table>
+
+_Analyses were conducted on rest and task data. Moreover in order to show that specific effects relate to plasticity induction (8 ms IPI) several higher-level analyses contrasting Experiment 1 and 2 are presented. T-tests were conducted as two-tailed paired t-tests (within subjects). Mixed-model ANOVAs were conducted between experiments (across subjects). Detailed information on all analyses is provided in the ‘Materials and methods’ section. Asterisks indicate significant results, p < 0.05. Abbreviations: n.s. = non-significant._
 
 A higher-level analysis of functional connectivity between PMv-M1 confirmed that PMv-M1 coupling was not changed during task performance following paired TMS with a 500 ms IPI; this is in contrast to significantly greater connectivity following paired TMS with an 8 ms IPI (mixed-model ANOVA: TIME by PROTOCOL interaction: F(1,26) = 4.64, p = 0.041; Experiment 2 during task: paired t-test: t(13) = 0.94, p = 0.36). At rest, functional connectivity was not changed in the PMv-M1 connection following either protocol (Experiment 2 at rest: paired t-test: t(14) = 0.07, p = 0.95). A higher-level PPI analysis of PMv-M1 connectivity supports the finding from the functional connectivity analysis (mixed-model ANOVA: TIME by PROTOCOL interaction during task: F(1,26) = 6.92, p = 0.014; Experiment 2 during task: paired t-test: t(13) = 0.98, p = 0.35). At rest, no changes in PMv-M1 connectivity were found either (Experiment 2 at rest: paired t-test: t(14) = 0.20, p = 0.85).
 
@@ -136,15 +318,15 @@ The lack of reorganisation within the dorsolateral and dorsomedial circuits in E
 
 Finally, employing a dual-regression analysis, we confirmed that it was only after 8 ms IPI TMS in Experiment 1 that the left frontoparietal network was found to be more coherently coupled with itself and co-active with PMv in the resting state, but not after 500 ms IPI TMS in Experiment 2 (mixed-model ANOVA: TIME by PROTOCOL interaction: p = 0.022). The fronto-parietal network did not significantly alter its coupling pattern in Experiment 2 (p = 0.446).
 
-## Experiment 3: comparison of connectivity measures: paired-pulse TMS-derived effective connectivity contrasted with fMRI-derived functional connectivity
+### Experiment 3: comparison of connectivity measures: paired-pulse TMS-derived effective connectivity contrasted with fMRI-derived functional connectivity
 
 In Experiment 3, we investigated how both TMS-based effective connectivity and fMRI-based functional connectivity indices relate to each other within the same subjects, focussing on the PMv-M1 pathway in ten of the subjects tested in Experiment 1. We measured the size of MEPs evoked by TMS of M1 alone and evoked by M1 TMS applied 8 ms after a PMv pulse. Such PMv TMS pulses are known to either augment or diminish the size of the MEP induced by M1 TMS depending on whether or not subjects are making grasping movements or are at rest, respectively (Davare et al., 2008; Buch et al., 2010, 2011). To quantify the influence of PMv over M1, we compared the MEPs induced by M1 stimulation alone with MEPs induced by M1 stimulation that was preceded by PMv-stimulation. A TMS-based index of effective connectivity between PMv and M1 was calculated as the ratio of the difference in MEP amplitudes evoked by paired-pulse TMS and single-pulse TMS divided by single-pulse-evoked MEP amplitudes. The PMv-M1 TMS ratio is positive when PMv TMS augments the size of M1 TMS-induced MEPs, but negative when PMv TMS diminishes M1 TMS MEP size. Moreover, the ratio was measured both while subjects were at rest and during the reaching task. In this way, the influence of PMv over M1 could be quantified for both cognitive states, and the direction (facilitatory or inhibitory) and magnitude of effective connectivity could then be compared to functional connectivity as measured with fMRI in Experiment 1.
 
-During task performance, the two connectivity measures (a TMS-based effective connectivity index and the fMRI-based functional connectivity measure) for the PMv-M1 pathway were positively correlated across subjects at baseline (Pearson's correlation coefficient: R = 0.74, p = 0.01) (
+During task performance, the two connectivity measures (a TMS-based effective connectivity index and the fMRI-based functional connectivity measure) for the PMv-M1 pathway were positively correlated across subjects at baseline (Pearson's correlation coefficient: R = 0.74, p = 0.01) (Figure 5A). A positive correlation indicates that the greater the facilitatory influence of PMv on M1 as measured with TMS, the greater the fMRI-derived functional connectivity. Furthermore, during task performance, paired-pulse TMS-derived effective connectivity was still significantly correlated with fMRI-derived connectivity after repeated paired 8 ms IPI TMS (R = 0.87, p = 0.0008) (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/04585/elife-04585-fig5-v2.jpg)
 
-**Figure 5.:** When subjects were making grasping movements, there was a significant correlation between functional connectivity (derived from partial-correlation analysis of fMRI) in the baseline (A) and post-TMS session (B) and the baseline effective connectivity measure derived from the paired pulse TMS MEP ratio at baseline. There was a significant negative correlation between functional connectivity in the post-TMS session and the baseline effective connectivity measure derived from the paired-pulse TMS MEP ratio at baseline (D). The correlation did not reach significance when the functional connectivity measure as well as the effective connectivity measure was taken from the baseline session (C).DOI: http://dx.doi.org/10.7554/eLife.04585.012
+**Figure 5.:** When subjects were making grasping movements, there was a significant correlation between functional connectivity (derived from partial-correlation analysis of fMRI) in the baseline (A) and post-TMS session (B) and the baseline effective connectivity measure derived from the paired pulse TMS MEP ratio at baseline. There was a significant negative correlation between functional connectivity in the post-TMS session and the baseline effective connectivity measure derived from the paired-pulse TMS MEP ratio at baseline (D). The correlation did not reach significance when the functional connectivity measure as well as the effective connectivity measure was taken from the baseline session (C).
 
 At rest, the correlation between the two measures was not significant at baseline (R = −0.21, p = 0.57) (Figure 5C). However, a significant correlation was observed between the baseline TMS-derived effective connectivity measure and the fMRI-derived functional connectivity measure following repeated paired 8 ms IPI TMS (R = −0.68, p = 0.03) (Figure 5D). Intriguingly, the correlation was negative which implies that when PMv had a stronger net inhibitory influence on M1 (as indexed by neurophysiological measurements), fMRI indicated stronger net positive functional connectivity between the two areas across participants. Finally, we note that baseline effective connectivity strength at rest (i.e., inhibitory) and during grasping (i.e., excitatory) were also negatively correlated across individuals (R = −0.63, p = 0.049).
 
@@ -176,11 +358,11 @@ From our experiments, we infer that functional connectivity is not only shaped b
 
 ## Materials and methods
 
-## Volunteers
+### Volunteers
 
 15 subjects (eight males) participated in Experiment 1; fifteen subjects (nine males) participated in Experiment 2. For Experiment 3, paired-pulse TMS data were obtained for 10 participants from Experiment 1 (five males). The overall mean age of all participants was 24 ± 4 years (mean ± SD). The study was approved by the local ethics committee and informed consent was obtained from all subjects.
 
-## Transcranial magnetic stimulation (TMS)
+### Transcranial magnetic stimulation (TMS)
 
 TMS was applied using two Magstim 200 stimulators each of which was connected to a 50 mm figure-8 coil. On a day prior to the day of the combined TMS-fMRI experiment, resting motor threshold (RMT) was determined for each participant for the left M1 ‘hot spot’, which is the scalp location where TMS evoked the largest MEP amplitude in right first dorsal interosseous (FDI) (Rossini et al., 1994) (mean ± SD: 40 ± 7% stimulator output). Electromyographic (EMG) activity in right FDI was recorded with bipolar surface Ag-AgCl electrode montages. Responses were bandpass filtered between 10 and 1000 Hz, with additional 50 Hz notch filtering, sampled at 5000 Hz, and recorded using a CED 1902 amplifier, a CEDmicro1401 Mk.II A/D converter, and PC running Spike2 (Cambridge Electronic Design).
 
@@ -192,21 +374,21 @@ Experiment 3 was conducted under two conditions. In the grasping condition, volu
 
 For TMS when at rest, volunteers still attended to cylinder illumination, as they had done during the motor task, but now they simply maintained a static hand posture. To control for the overall temporal distribution of the TMS pulses, ITIs for rest blocks were defined as the sum of the ITIs used in task blocks plus a reaction and movement time sample drawn from probability density functions for these variables (Buch et al., 2010 and 2011). ITIs were therefore variable (mean ± SD, 6.23 ± 0.07 s) but did not differ significantly across phases of each experiment.
 
-## FMRI acquisition
+### FMRI acquisition
 
 MRI data were acquired on a Siemens 3T Trio MRI scanner at the Oxford Centre for Clinical Magnetic Resonance Imaging (OCMR). For purposes of neuronavigation-guided TMS, all volunteers underwent high-resolution, T1-weighted structural MRI scans that included nose and ears. For each condition—resting state and grasping task—5 min of whole-brain T2*-weighted gradient echo planar images (EPIs) sensitive to BOLD were acquired (repetition time = 3.000 ms, echo time = 30 ms, flip angle = 87°, isotropic voxels of 3.0 mm, no slice gap, 45 slices in axial direction).
 
 Participants were instructed to keep their eyes closed during resting-state fMRI. During the grasping task, which was based on a previous study (Grol et al., 2007; Majdandzić et al., 2007), participants performed 66 reaching-and-grasping trials towards either a small or a large cube positioned in front of them. A new trial sequence was generated for every participant and for each session, with an inter-trial interval of 4295.5 ms–4795.5 ms (mean ± SD: 4545.5 ms ± 145.5 ms) which allowed every participant to complete the movement. Participants lay supine in the MR scanner with the eight-channel head coil tilted forward by 30° enabling them to perform a naturalistic visually guided reaching-and-grasping task in front of their bodies (Figure 1C). Participants were allowed to move their eyes in order to guide their movements. An optical response button box was placed on their right upper leg and served as a start-and-finish position. Reaction times and total movement times were recorded. With the aim of avoiding movement artefacts, the participant's upper arm lay on a wedge-shaped polyfoam cushion and was firmly, but comfortably strapped to the side of the participant's chest. This setup constrained rotation movements in the plane between the button box and the target objects. The head was supported with foam wedges. The participants had received extensive training in the reaching-and-grasping task at least one day prior to the first MRI acquisition outside the MRI scanner. The target object, which consisted of a large red cube and a small green cube (Figure 1C, inset), was held in place through an arc-shaped device positioned over each participant's hips. Participants had been instructed to grasp one of the two cubes, to slide it out of its supporting rail on a rectangular box, and to return it into the same supporting rail. On a given trial, either the large red or the small green cube was to be grasped. A red or green light-emitting diode (LED) in the middle of the rectangular box instructed the participant which cube to grasp. MRI-compatible switches on the device recorded the time at which the object was removed from the supporting rail and the time at which the object was returned into the supporting rail. Control of LEDs and recording of movement-related responses was performed with a computer running Presentation 15.0 (Neurobehavioral Systems, San Francisco, CA). TMS was applied outside the MRI scanner room. Participants walked to the MRI scanner and scanning commenced within 3 to 4 min. Note, previous neurophysiological experiments (Buch et al., 2011) suggest plasticity induction should last at least 1 hr with this protocol and that there were no differences in efficacy immediately after intervention in comparison to +30 min or +60 min post-intervention.
 
-## Image pre-processing
+### Image pre-processing
 
 FMRI data were pre-processed using tools from the FMRIB Software Library (FSL; www.fmrib.ox.ac.uk/fsl; Smith et al., 2004). Imaging volumes were registered to the individuals' structural scan using boundary-based registration (BBR) (Greve and Fischl, 2009) and to standard space using FMRIBs Linear Image Registration Tool (FLIRT) with 12° of freedom. Pre-processing involved: motion correction (McFLIRT), brain extraction (BET), spatial smoothing with a Gaussian 5 mm full-width at half-maximum (FWHM) kernel, and high-pass temporal filtering at 100 s.
 
-## Image pre-processing for dual-regression
+### Image pre-processing for dual-regression
 
 Individual subject independent-component analysis (ICA) fMRI analysis was carried out on baseline data of twelve Experiment 1 and eleven Experiment 2 data sets using Multivariate Exploratory Linear Optimized Decomposition into Independent Components (MELODIC) (Beckmann and Smith, 2005). Individual pre-statistical processing consisted of motion correction (McFLIRT), brain extraction (BET), spatial smoothing using a Gaussian kernel of full-width at half maximum (FWHM) of 5 mm, and high-pass temporal filtering. Imaging volumes were registered to the individuals' structural scan using boundary-based registration (BBR) (Greve and Fischl, 2009) and to standard space using FMRIBs Linear Image Registration Tool (FLIRT) with 12° of freedom. Pre-processed functional data were temporally concatenated across subjects.
 
-## Seed-based correlation analysis (SBCA)
+### Seed-based correlation analysis (SBCA)
 
 SBCA maps the functional connectivity of one ‘seed’ ROI across the entire brain in a voxel-wise manner on the basis of the correlation between the seed ROI's BOLD time series and the BOLD time series at each voxel in the rest of the brain (O'Reilly et al., 2010). We employed SBCA to assess if paTMS-based modulation of the PMv-M1 pathway dynamically altered the functional interactions of either of these two nodes with each other and/or with other nodes within the reaching and grasping network. We assessed the functional connectivity of a 6 mm diameter seed mask in left PMv with the whole brain (target mask) before and immediately after paTMS and contrasted PMv-M1 connectivity at baseline vs connectivity during post-TMS (for details about statistical analyses see below). The analyses of resting state and grasping task fMRI data were conducted independently. All analyses conducted for Experiment 1 and Experiment 2 were identical, which allowed us to directly contrast the effects in a higher-level analysis. For the first step of SBCA, statistical connectivity maps for every individual and for each of the four conditions (resting-state baseline/resting-state plasticity expression and task baseline/task plasticity expression) were created using the SBCA tool implemented in FSL (fsl sbca).
 
@@ -214,13 +396,13 @@ The time series for the left PMv seed mask was calculated. The SBCA model also a
 
 As the next step, we computed the average time series resulting from these statistical connectivity maps for the M1 ROI. We then compared time series correlations of PMv with M1 at baseline and during post-TMS. For statistical comparisons, we conducted a paired t-test, contrasting PMv-M1 interactions at baseline vs during post-TMS. Prior to statistical analysis, correlation coefficients were Fisher z-transformed. We also conducted a higher-level analysis, contrasting Experiment 1 with Experiment 2, using a mixed-model ANOVA with within-subject factors TIME (baseline / post-TMS) and between-subjects factor PROTOCOL (Experiment 1/Experiment 2). We used a significance level of p < 0.05. 15 participants contributed to the resting-state group z-score map (for both Experiment 1 and Experiment 2); 14 participants contributed to the grasping task group z-score map, since the data of one participant had to be removed due to excessive head movement during data acquisition (for both Experiment 1 and Experiment 2).
 
-## Partial correlation analysis
+### Partial correlation analysis
 
 To investigate changes in functional connectivity between pairs of grasping network nodes, we conducted a partial correlation analysis between the BOLD time series of directly connected nodes of the left hemisphere using Matlab R2013b (MathWorks). Partial correlation analysis generated correlations represent only correlations specific to the pair of cortical regions in question by regressing out the time series of all other network nodes under investigation. We focussed on pairs of regions thought to be monosynaptically connected (Matelli et al., 1986; Johnson et al., 1997; Wise et al., 1997; Matelli et al., 1998; Luppino et al., 1999; Geyer et al., 2000; Tanne-Gariepy et al., 2002; Dum and Strick, 2005; Rushworth et al., 2006; Grol et al., 2007; Tomassini et al., 2007; Mars et al., 2011; Sallet et al., 2013; Neubert et al., 2014): M1-PMv, PMv-AIP, AIP-V3A, M1-PMd, PMd-pSPL, and pSPL-V3A. Individual BOLD time series for each network node mask (6 mm diameter) were generated using a GLM-based design that incorporated regressors denoting potentially confounding factors such as variation in WM, GM, and CSF, and whole brain BOLD signal as implemented in FSL (fsl glm). Individual partial correlations were normalised using Fisher's z-transform.
 
 Analogous to statistical tests used in SBCA, we conducted paired t-tests contrasting pairwise interactions at baseline vs during post-TMS on Fisher z-transformed partial correlation coefficients (independently for Experiment 1 and Experiment 2). At a later stage, we also subjected Experiment 1 and Experiment 2 to a direct comparison by means of a mixed-model ANOVA with factors PROTOCOL (Experiment 1/Experiment 2; between-subjects factor) and TIME (baseline/post-TMS; within-subjects factor). We used a significance level of p < 0.05. Resting state and grasping task MRI data sets were analysed in an identical way, but were not compared directly due to a categorical difference in movement artefacts (movement artefacts were larger in the grasp task than in the resting-state MRI). The severity of movement artefacts required the removal of one grasping task data set for both Experiment 1 and Experiment 2.
 
-## Psychophysiological interaction (PPI) analysis
+### Psychophysiological interaction (PPI) analysis
 
 Psychophysiological interaction (PPI) analysis refers to the interaction between physiological activity and experimental context and thereby identifies brain areas (specifically, voxels) in which activity is more related to activity in a seed region of interest in a given experimental context. To test whether there is a change in the influence PMv (seed region) has on M1, the analysis tested for differences in the regression slope of activity in M1 on the activity in the seed region (PMv) under the experimental contexts of ‘baseline’ and ‘post-TMS’. The change in influence of PMv on M1 can also be understood as a change in responsiveness of M1 to input from PMv. PPI analysis requires an a priori hypothesis about directionality; from physiological models it is well established that PMv provides a major input into M1 (Dum and Strick, 2005). Directionality of the predominant information flow from PMv to M1 was also supported by a feed-forward model validated on fMRI data acquired during performance of a grasping task (Grol et al., 2007) and paired-pulse TMS studies (Davare et al., 2008; Buch et al., 2010).
 
@@ -228,11 +410,11 @@ To test the hypothesis that repeated paired-pulse TMS stimulation of PMv and M1 
 
 Analogous to statistical tests used in SBCA, we conducted paired t-tests contrasting pairwise interactions at baseline vs during post-TMS on regression coefficients (independently for Experiment 1 and Experiment 2). At a later stage, we also subjected Experiment 1 and Experiment 2 to a direct comparison by means of a mixed-model ANOVA with factors PROTOCOL (Experiment 1/Experiment 2; between-subjects factor) and TIME (baseline/post-TMS; within-subjects factor). We used a significance level of p < 0.05. Resting-state and grasping task MRI data sets were analysed in an identical way but were not compared directly due to a categorical difference in movement artefacts (movement artefacts were larger in the grasp task than in the resting-state MRI). The severity of movement artefacts required the removal of one grasping task data set for both the Experiment 1 and Experiment 2 condition.
 
-## Multiple linear regression psychophysiological interaction (PPI) analysis
+### Multiple linear regression psychophysiological interaction (PPI) analysis
 
 In analogy to a partial correlation analysis, we conducted a multiple linear regression analysis on the reaching-and-grasping network nodes (V3A, pSPL, PMd, AIP, PMv, and M1; for MNI coordinates see above in ‘Regions of interest [ROI]’) to understand the influence of one network node upon a specific other network node in terms of the interaction of activity in the remaining network nodes and the experimental context. Time series from the six seed masks (6 mm diameter) were generated as described above in ‘Psychophysiological interaction (PPI) analysis’. To analyse the influence of a given brain area upon another, the time series of all other brain areas of interest are entered as a regressor into the multiple linear regression analysis. Statistical tests on regression coefficients were conducted as described in ‘Psychophysiological interaction (PPI) analysis’.
 
-## Dual-regression analysis (spatial regression followed by temporal regression)
+### Dual-regression analysis (spatial regression followed by temporal regression)
 
 To understand if co-activation patterns in large-scale networks of functional connectivity change dynamically in response to plasticity induction, we investigated networks defined by their shared spontaneous low-frequency fluctuations (<0.1 Hz). Coherence within resting-state networks (RSNs) (Friston, 1994) and networks during task performance (Hampson et al., 2002) were analysed before and after paired pulse TMS intervention using a whole-brain corrected approach. Whereas SBCA and partial correlation analyses focused on nodes of the fronto-parietal grasping-network, this approach has the potential to identify any networks (defined as areas sharing BOLD signal temporal correlations) in which connectivity is changing as a result of the TMS intervention. This procedure was carried out completely separately for resting-state fMRI and fMRI during task performance. The approach proceeds in three stages.
 

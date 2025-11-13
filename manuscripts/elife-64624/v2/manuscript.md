@@ -35,7 +35,7 @@ Here, we report and describe the human ARL3GEF as a two-component factor compris
 
 ## Results and discussion
 
-## ARL3 is weakly activated by ARL13B under physiological GTP:GDP levels
+### ARL3 is weakly activated by ARL13B under physiological GTP:GDP levels
 
 GEFs generally reduce the binding affinities of small G-proteins to nucleotides, thereby allowing the fast replacement of the bound GDP with GTP, which is more abundant in cells. GEFs are known not to favour the binding to, and hence dissociation of, one nucleotide-bound form of their cognate GTPase over another (Goody, 2014). The physiological concentration of GTP is approximately 10 times that of GDP, although this ratio can vary depending on the cell type and status (Traut, 1994). For a G-protein with similar binding affinities to GDP and GTP, a 10-fold excess of GTP should result in 90% loading of GTP at equilibrium, assuming no GTP hydrolysis. However, in the case of ARL3, it is reported that the ARL3-binding affinity for GDP is 50 times that of the GTP analogue GppNHp (0.06 nM and 3 nM, respectively [Veltel et al., 2008]). This difference in affinity would nullify the 10-fold excess in GTP and would result in a majority of GDP-loaded ARL3 at equilibrium even in the presence of GEFs. ARL13B has been previously identified as a GEF for ARL3, although the mechanism has not been fully elucidated (Gotthardt et al., 2015). We hence set out to investigate the GEF activity of ARL13B using GDP and GTP nucleotides.
 
@@ -43,19 +43,19 @@ To investigate the binding of ARL3 to GTP versus GDP in the presence of ARL13B a
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64624/elife-64624-fig1-v2.jpg)
 
-**Figure 1.:** (A) 2 μM mantGDP was mixed with 2 μM ARL3GDP, 2 μM ARL13B18-278, and 40 μM unlabelled nucleotide (GDP, GTP, or GppNHp, as indicated). Fluorescence polarisation was measured following the addition of mantGDP to monitor the formation of ARL3mantGDP over time until the stabilisation of the measurements. The experiment was repeated three times and the average maximum polarisation obtained for each nucleotide is shown relative to that obtained with no excess unlabelled nucleotides added to the reaction. (B) Fluorescence polarisation measurements were used to monitor the nucleotide exchange of 2 μM ARL3mantGDP in the presence of 150 μM GppNHp (turquoise squares). The exchange was also observed with the addition of 10 μM ARL13B18-278 in the presence of 150 μM GDP (blue squares) and 150 μM GppNHp (black crosses). Excess unlabelled nucleotides were added to initiate the reaction and the measurements immediately started. The data was fitted using GraFit, and the corresponding exchange rates are listed to the left of the key.  Figure 1—source data 1.  Figure 1—source data 2.
+**Figure 1.:** (A) 2 μM mantGDP was mixed with 2 μM ARL3GDP, 2 μM ARL13B18-278, and 40 μM unlabelled nucleotide (GDP, GTP, or GppNHp, as indicated). Fluorescence polarisation was measured following the addition of mantGDP to monitor the formation of ARL3mantGDP over time until the stabilisation of the measurements. The experiment was repeated three times and the average maximum polarisation obtained for each nucleotide is shown relative to that obtained with no excess unlabelled nucleotides added to the reaction. (B) Fluorescence polarisation measurements were used to monitor the nucleotide exchange of 2 μM ARL3mantGDP in the presence of 150 μM GppNHp (turquoise squares). The exchange was also observed with the addition of 10 μM ARL13B18-278 in the presence of 150 μM GDP (blue squares) and 150 μM GppNHp (black crosses). Excess unlabelled nucleotides were added to initiate the reaction and the measurements immediately started. The data was fitted using GraFit, and the corresponding exchange rates are listed to the left of the key.
 
 The fraction of ARL3 bound to mantGDP is in line with the lower affinity of ARL3 to GTP or GppNHp compared to GDP. The binding of mantGDP in the presence of GTP (53% compared to that in absence of unlabelled nucleotides) is relatively less than that in the presence of GppNHp (83.7% compared to that in absence of unlabelled nucleotides) which reflects a mildly higher affinity of GTP toward ARL3 compared to its analogue GppNHp (Figure 1A). However, this difference in affinity between GTP and GppNHp may be due to the hydrolysis of GTP or the contamination of the GTP solution with GDP, which is common in commercial GTP preparations. Therefore, to further investigate the rate and extent of dissociation of GDP, we used excess unlabelled GDP or GppNHp in ARL3mantGDP exchange (Figure 1B). Under the conditions used, ARL13B was able to accelerate the dissociation of GDP approximately 8.5-times in the presence of unlabelled GDP and 25-times in the presence of GppNHp compared to the intrinsic rate with GDP alone. This is consistent with the higher activity of ARL13B in the presence of GTP compared to GDP (Gotthardt et al., 2015). GppNHp, as expected, was not able to completely displace GDP despite being in 75-fold excess (Figure 1B).
 
 We therefore conclude that, under physiological GTP:GDP concentrations and our experimental settings, ARL3 is weakly activated by ARL13B.
 
-## Lipid membranes do not release the ARL3 hasp
+### Lipid membranes do not release the ARL3 hasp
 
 ARF subfamily proteins are characterised by the presence of an interswitch toggle and an N- terminal extension, usually an amphipathic helix (Pasqualato et al., 2002). The interswitch toggle is located between switch I and switch II and undergoes a nucleotide-dependent movement, which, in the GDP-bound state, allows the retraction of the N-terminal extension on the surface of the protein. In the presence of membranes and upon binding to GTP, the interswitch toggle displaces the retracted N-terminus (Antonny et al., 1997; Goldberg, 1998). However, the displacement of the amphipathic helix is not possible in the absence of membranes; the helix therefore acts as a hasp, locking ARFs in the GDP-bound form. In line with this, ARFGEFs are not functional in the absence of membranes (Béraud-Dufour et al., 1999). Comparing the structures of GTP- and GDP-bound ARL3 shows that it undergoes similar conformational changes as in ARF proteins (Figure 2A). We thus wanted to investigate if the ARL3 amphipathic helix acts as a hasp to slow down GDP dissociation, and if this effect can be counteracted by the presence of membranes.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64624/elife-64624-fig2-v2.jpg)
 
-**Figure 2.:** (A) Structure superimposition of the N-terminal helices and the interswitch regions of ARL3GTP (green, PDB: 4ZI2) and ARL3GDP (grey, PDB: 1FZQ) shown in cartoon form. The conformational shift of the interswitch β-hairpin is indicated by the dashed black arrow. (B) Nucleotide exchange was monitored for 2 μM N-terminally truncated ARL3mantGDP (ARL3ΔN) mixed with 150 μM GppNHp in the presence (solid blue) and absence (dotted green) of 20 μM ARL13B18-278. Polarisation was measured after the addition of excess GppNHp. (C) Liposome-binding assay in which 2 μM GppNHp- and GDP-loaded ARL3 (top and bottom, respectively) was incubated with increasing concentrations of liposomes (200 nm; DOPC:DOPG:DPPC:DPPG:cholesterol). Following ultracentrifugation, samples of the pellet (P) and supernatant (S) were run on SDS-PAGE gels. %ARL3 relative to total was quantified for each band. Cosedimentation with 1 mM liposomes was carried out twice with similar results; a representative image of the get is shown here. (D) Relative fluorescence polarisation measurements of 2 μM ARL3mantGDP and 150 μM GppNHp in the absence (dotted green) and presence of 1 mM (solid red) and 3 mM (solid blue) liposomes(200 nm; DOPC:DOPG:DPPC:DPPG:cholesterol). Excess GppNHp was added to initiate the reaction and the measurements immediately started. (E) The same experiment as (B) was repeated with a mixture of 2 μM full-length ARL3, 150 μM GppNHp, and 3 mM liposomes (200 nm; DOPC:DOPG:DPPC:DPPG:cholesterol) in the presence (solid blue) and absence (dotted green) of 20 μM ARL13B18-278. (F) 2 μM untagged ARL3mantGDP was mixed with 150 μM GppNHp, and fluorescence polarisation was measured in the absence (dotted green) and presence (blue) of 20 μM ARL13B. Nucleotide exchange was also monitored (red) in the presence of 20 μM ARL13B18-278 and 3 mM of Ni-NTA liposomes (200 nm; DOGS-NTA:DOPC:DOPG:DPPC:DPPG:cholesterol). Excess GppNHp was added to initiate all reactions. (G) Liposome-binding assay where 2 μM ARL3GDP was mixed with 150 μM GppNHp and 20 μM 12xHis-ARL13B18-278 in the presence and absence of 3 mM Ni-NTA liposomes (200 nm; DOGS-NTA:DOPC:DOPG:DPPC:DPPG:cholesterol). Following ultracentrifugation, samples of the pellet (P) and supernatant (S) were run on SDS-PAGE gels, along with a sample of 12xHis-ARL13B18-278 for reference. Dashed lines indicate lanes cut for presentation.  Figure 2—source data 1.  Figure 2—source data 2.  Figure 2—source data 3.  Figure 2—source data 4.  Figure 2—source data 5.
+**Figure 2.:** (A) Structure superimposition of the N-terminal helices and the interswitch regions of ARL3GTP (green, PDB: 4ZI2) and ARL3GDP (grey, PDB: 1FZQ) shown in cartoon form. The conformational shift of the interswitch β-hairpin is indicated by the dashed black arrow. (B) Nucleotide exchange was monitored for 2 μM N-terminally truncated ARL3mantGDP (ARL3ΔN) mixed with 150 μM GppNHp in the presence (solid blue) and absence (dotted green) of 20 μM ARL13B18-278. Polarisation was measured after the addition of excess GppNHp. (C) Liposome-binding assay in which 2 μM GppNHp- and GDP-loaded ARL3 (top and bottom, respectively) was incubated with increasing concentrations of liposomes (200 nm; DOPC:DOPG:DPPC:DPPG:cholesterol). Following ultracentrifugation, samples of the pellet (P) and supernatant (S) were run on SDS-PAGE gels. %ARL3 relative to total was quantified for each band. Cosedimentation with 1 mM liposomes was carried out twice with similar results; a representative image of the get is shown here. (D) Relative fluorescence polarisation measurements of 2 μM ARL3mantGDP and 150 μM GppNHp in the absence (dotted green) and presence of 1 mM (solid red) and 3 mM (solid blue) liposomes(200 nm; DOPC:DOPG:DPPC:DPPG:cholesterol). Excess GppNHp was added to initiate the reaction and the measurements immediately started. (E) The same experiment as (B) was repeated with a mixture of 2 μM full-length ARL3, 150 μM GppNHp, and 3 mM liposomes (200 nm; DOPC:DOPG:DPPC:DPPG:cholesterol) in the presence (solid blue) and absence (dotted green) of 20 μM ARL13B18-278. (F) 2 μM untagged ARL3mantGDP was mixed with 150 μM GppNHp, and fluorescence polarisation was measured in the absence (dotted green) and presence (blue) of 20 μM ARL13B. Nucleotide exchange was also monitored (red) in the presence of 20 μM ARL13B18-278 and 3 mM of Ni-NTA liposomes (200 nm; DOGS-NTA:DOPC:DOPG:DPPC:DPPG:cholesterol). Excess GppNHp was added to initiate all reactions. (G) Liposome-binding assay where 2 μM ARL3GDP was mixed with 150 μM GppNHp and 20 μM 12xHis-ARL13B18-278 in the presence and absence of 3 mM Ni-NTA liposomes (200 nm; DOGS-NTA:DOPC:DOPG:DPPC:DPPG:cholesterol). Following ultracentrifugation, samples of the pellet (P) and supernatant (S) were run on SDS-PAGE gels, along with a sample of 12xHis-ARL13B18-278 for reference. Dashed lines indicate lanes cut for presentation.
 
 To test the impact of the N-terminal amphipathic on the nucleotide exchange, we used N-terminally truncated ARL317-182 (ARL3ΔN). In contrast to the full-length protein, ARL3ΔN undergoes significant nucleotide exchange upon the addition of ARL13B (Figure 2B). This supports the notion of the ARL3 amphipathic helix acting as a hasp, which inhibits ARL13B-mediated nucleotide exchange.
 
@@ -67,13 +67,13 @@ ARL13B itself is palmitoylated in cells (Cevik et al., 2010), and its interactio
 
 ARL13B-mediated nucleotide exchange of the full-length ARL3 may therefore require another non-lipid component to the reaction, which is likely to involve the release of the ARL3 N-terminus.
 
-## BART is a co-GEF for ARL13B-mediated ARL3 nucleotide exchange
+### BART is a co-GEF for ARL13B-mediated ARL3 nucleotide exchange
 
 We reasoned that the release of the ARL3 amphipathic helix may be carried out by one of its interactors. This protein would be involved in the guanine nucleotide exchange reaction and therefore must be able to bind to nucleotide-free ARL3 (Cherfils and Chardin, 1999). We thus investigated the ability of ARL3 interactors to bind to the GTPase in various nucleotide states. We performed pull-down assays using BART and GDI-like solubilising factors (represented by UNC119A); UNC119A shows strong specificity toward ARL3GppNHp as expected for an effector. Surprisingly, BART showed weak but consistent binding to nucleotide-free ARL3 (1:10 compared to ARL3GppNHp binding), identifying it as a potential GEF candidate (Figure 3A). This is further supported by the reported structure of the ARL3 homologue ARL2-GTP in complex with BART which shows BART-ARL2 N-terminal helix interaction (Zhang et al., 2009). Similar interactions were reported for the structure of ARL3 in complex with the related protein BART-like 1 (BARTL1) (Lokaj et al., 2015).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64624/elife-64624-fig3-v2.jpg)
 
-**Figure 3.:** (A) GST-tagged BART and UNC119A were used to pull down ARL3 (bound to GDP or GppNHp, as indicated) in the presence and absence of alkaline phosphatase (AP). Samples of the elutes and inputs were run on SDS-PAGE gels and visualised using Coomassie blue. Pulled down ARL3 was further confirmed by immunoblotting using anti-ARL3 antibodies (red), and was quantified relative to the respective GST-BART or GST-UNC119A bands (right). The pull-downs were repeated three times; a representative image of the obtained gels and western blots is shown here. (B) 2 μM ARL3mantGDP was mixed with 10 μM ARL13B18-278 and 150 μM GDP or GppNHp, and the nucleotide exchange was monitored in the presence and absence of 20 μM BART, as indicated. The first 1000s of the measurement following nucleotide addition are shown in greater detail. The data was fitted using GraFit, and the corresponding exchange rates are listed to the left of the key. (C) 2 μM ARL3mantGDP was mixed with 150 μM GppNHp, and subsequent nucleotide exchange was monitored with the addition of 20 μM ARL13B18-278 and increasing amounts of BART, as indicated. All reactions were initiated by the addition of excess GppNHp.The data was fitted using GraFit, and the corresponding exchange rates are listed (right). (D) 2 μM ARL3mantGDP was mixed with 150 μM GppNHp and 10 μM ARL13B18-278 and fluorescence polarisation was monitored over time in the absence (grey) and presence of 10 μM UNC119A (red), PDEδ (yellow), or BART (blue). (E) Superimposition of crystal structures of ARL3 (green, with switch regions, interswitch β-hairpin, and the N-terminal helix in light red, red, and dark green, respectively) in complex with ARL13B (grey, PDB: 5DI3), and BART (blue, PDB: 3DOE). As shown in the magnified area denoted by the black squares, only BART can bind both the N-terminal helix and the switch regions. (F) Nucleotide exchange of 2 μM ARL3ΔNmantGDP was monitored in the presence of 150 μM GppNHp (black circles), with the addition of 0.2 μM ARL13B18-278 (turquoise circles), and with the addition of 0.2 μM ARL13B18-278 and 20 μM BART (red circles). The data was fitted using GraFit, and the corresponding exchange rates are listed.  Figure 3—source data 1.  Figure 3—source data 2.  Figure 3—source data 3.  Figure 3—source data 4.  Figure 3—source data 5.
+**Figure 3.:** (A) GST-tagged BART and UNC119A were used to pull down ARL3 (bound to GDP or GppNHp, as indicated) in the presence and absence of alkaline phosphatase (AP). Samples of the elutes and inputs were run on SDS-PAGE gels and visualised using Coomassie blue. Pulled down ARL3 was further confirmed by immunoblotting using anti-ARL3 antibodies (red), and was quantified relative to the respective GST-BART or GST-UNC119A bands (right). The pull-downs were repeated three times; a representative image of the obtained gels and western blots is shown here. (B) 2 μM ARL3mantGDP was mixed with 10 μM ARL13B18-278 and 150 μM GDP or GppNHp, and the nucleotide exchange was monitored in the presence and absence of 20 μM BART, as indicated. The first 1000s of the measurement following nucleotide addition are shown in greater detail. The data was fitted using GraFit, and the corresponding exchange rates are listed to the left of the key. (C) 2 μM ARL3mantGDP was mixed with 150 μM GppNHp, and subsequent nucleotide exchange was monitored with the addition of 20 μM ARL13B18-278 and increasing amounts of BART, as indicated. All reactions were initiated by the addition of excess GppNHp.The data was fitted using GraFit, and the corresponding exchange rates are listed (right). (D) 2 μM ARL3mantGDP was mixed with 150 μM GppNHp and 10 μM ARL13B18-278 and fluorescence polarisation was monitored over time in the absence (grey) and presence of 10 μM UNC119A (red), PDEδ (yellow), or BART (blue). (E) Superimposition of crystal structures of ARL3 (green, with switch regions, interswitch β-hairpin, and the N-terminal helix in light red, red, and dark green, respectively) in complex with ARL13B (grey, PDB: 5DI3), and BART (blue, PDB: 3DOE). As shown in the magnified area denoted by the black squares, only BART can bind both the N-terminal helix and the switch regions. (F) Nucleotide exchange of 2 μM ARL3ΔNmantGDP was monitored in the presence of 150 μM GppNHp (black circles), with the addition of 0.2 μM ARL13B18-278 (turquoise circles), and with the addition of 0.2 μM ARL13B18-278 and 20 μM BART (red circles). The data was fitted using GraFit, and the corresponding exchange rates are listed.
 
 We therefore wanted to test the effect of BART on ARL3 activation; the addition of BART to the ARL13B-mediated reaction is twofold: a significant amount of mantGDP is displaced, and the ARL3 nucleotide exchange rate is markedly increased (Figure 3B). Titrating in BART to the ARL13B-mediated reaction resulted in a maximum increase of over 500-fold that of the intrinsic rate of GDP dissociation (Figure 3C).
 
@@ -83,25 +83,25 @@ In addition to the autoinhibition exerted by the N-terminal helix, ARL3GDP, simi
 
 The presence of BART is able to accelerate and increase the nucleotide exchange of ARL3mantGDP with unlabelled GDP, excluding the necessity of binding to the product, ARL3GTP, to accelerate the dissociation of the bound GDP (Figure 3B). To test the involvement of the BART interactions with the switches and the interswitch regions, BART was added to ARL13B-mediated nucleotide exchange of ARL3ΔNmantGDP. Despite the absence of the helix, BART is still able to accelerate the exchange, although a similar amount of ARL3ΔN is exchanged compared with ARL13B alone (Figure 3F). Therefore, BART carries out this novel mode of action as a co-GEF in the ARL13B-mediated reaction by releasing the two layers of autoinhibition.
 
-## ARL3 effectors facilitate BART turnover
+### ARL3 effectors facilitate BART turnover
 
 The high affinity of BART to ARL3GTP gives rise to the possibility of product inhibition of the former. Indeed, under multiple turnover conditions, where limiting concentrations of BART were added to the ARL13B-mediated reaction, this becomes evident. The presence of excess GppNHp resulted in rapid quenching of the reaction and a small amount of exchange, as the initial production of ARL3GTP leads to the formation of a complex with BART that inhibits the turnover of the reaction. On the other hand, presence of excess GDP did not result in the same inhibition, which is to be expected as BART would have low affinity to the produced ARL3GDP, and therefore no inhibition occurs (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/64624/elife-64624-fig4-v2.jpg)
 
-**Figure 4.:** (A) Nucleotide exchange of ARL3 was assayed in a multiple turnover experiment with a limiting addition of BART. Fluorescence polarisation was measured following nucleotide addition for a mixture of 20 μM ARL3mantGDP, 20 μM ARL13B, and 1 μM BART in the presence of either 150 μM GppNHp (red) or 150 μM GDP (blue). (B) Fluorescence polarisation was measured for a mixture of 5 μM ARL3mantGDP, 100 μM GppNHp, and 1 μM ARL13B18-278 (grey). The measurements were repeated in the presence of 5 μM UNC119A (yellow), 2 μM BART (blue), or a mixture of UNC119A and BART at the aforementioned concentrations (orange). All reactions were initiated by the addition of GppNHp. (C) SPR sensorgrams of ARL3GppNHp (640 nM) bound to immobilised GST-BART undergoing nine washing steps (black arrows) with either running buffer (red), or with 2 μM PDEδ (blue). The data was fitted to a single exponential equation using GraFit, and the fitted curves are shown on the right, along with the corresponding rate constants.  Figure 4—source data 1.  Figure 4—source data 2.  Figure 4—source data 3.
+**Figure 4.:** (A) Nucleotide exchange of ARL3 was assayed in a multiple turnover experiment with a limiting addition of BART. Fluorescence polarisation was measured following nucleotide addition for a mixture of 20 μM ARL3mantGDP, 20 μM ARL13B, and 1 μM BART in the presence of either 150 μM GppNHp (red) or 150 μM GDP (blue). (B) Fluorescence polarisation was measured for a mixture of 5 μM ARL3mantGDP, 100 μM GppNHp, and 1 μM ARL13B18-278 (grey). The measurements were repeated in the presence of 5 μM UNC119A (yellow), 2 μM BART (blue), or a mixture of UNC119A and BART at the aforementioned concentrations (orange). All reactions were initiated by the addition of GppNHp. (C) SPR sensorgrams of ARL3GppNHp (640 nM) bound to immobilised GST-BART undergoing nine washing steps (black arrows) with either running buffer (red), or with 2 μM PDEδ (blue). The data was fitted to a single exponential equation using GraFit, and the fitted curves are shown on the right, along with the corresponding rate constants.
 
 As other ARL3 effectors such as UNC119A and PDEδ also exhibit a comparably high affinity to ARL3GTP (Veltel et al., 2008), we hypothesised that product inhibition of BART can be relieved by the presence of ARL3 effectors which would displace BART from the ARL3GTP-bound complex. The addition of UNC119A in equal concentrations as ARL3 to a GEF assay with limiting amounts of ARL13B and BART resulted in greater ARL3 exchange compared to that obtained in the absence of UNC119A. This enhancement of the exchange was only observed when all three proteins, GEF, co-GEF, and effector, were added, confirming that UNC119A displaces BART from the ARL3-BART complex (Figure 4B).
 
 BART interacts with ARL3 via the switches and the N-terminal helix simultaneously (Figure 3E). It was shown that both interactions are essential for high-affinity interaction of BART with the ARL3 homologue ARL2 (Zhang et al., 2009). This raises the possibility of an avidity effect of the two binding sites. In this case, the inhibition of one binding/interacting site should increase the dissociation rate of BART from ARL3 due to loss of avidity. Since effectors should only compete for the switches, we wanted to test if their binding can accelerate the release, and therefore the recycling, of BART. We investigated the displacement of ARL3GppNHp from immobilised BART using surface plasmon resonance (SPR); as UNC119A exhibited unspecific binding to the used chip, the homologue PDEδ was used instead. Surprisingly, ARL3 was displaced twofold faster with the addition of the ARL3 effector PDEδ supporting the possibility that, ARL3 effectors not only displace BART from ARL3-BART but also accelerate its recycling (Figure 4C).
 
-## BART accesses the primary cilium and co-localises with ARL13B
+### BART accesses the primary cilium and co-localises with ARL13B
 
 BART has been reported to localise to the connecting cilia of mouse photoreceptors and has been implicated in ciliopathic disease (Davidson et al., 2013). However, given the exclusive ciliary localisation of ARL13B (Caspary et al., 2007), BART would need to have access to the ciliary compartment to act as a co-GEF in ARL3 nucleotide exchange. Indeed, live cell imaging of ciliated NIH/3T3 and RPE cells shows that BART can access the cilia and co-localise with ARL13B (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/64624/elife-64624-fig5-v2.jpg)
 
-**Figure 5.:** (A) Representative images of live NIH/3T3 (top) and RPE (bottom) cells transfected with pEGFP-C1(BART) and pmKate2-N(ARL13B) and serum starved for 24 hr. The images are maximum projections of three optical slices. Transfections and subsequent imaging was carried out at least two times. Scale bars, 5 μm; white arrows indicate cilia. (B) Fluorescence polarisation measurements of 2 μM ARL3mantGppNHp, 150 μM GppNHp, and 20 μM ARL13B18-278 in the absence (grey) and presence (orange) of 10 μM BART. GppNHp was added last to both reactions before starting measurements. (C) 2 μM ARL2mantGppNHp was mixed with 150 μM GDP, and the resultant nucleotide exchange following GDP addition was monitored in the absence (dotted green) and presence (blue) of 10 μM BART.  Figure 5—source data 1.  Figure 5—source data 2.
+**Figure 5.:** (A) Representative images of live NIH/3T3 (top) and RPE (bottom) cells transfected with pEGFP-C1(BART) and pmKate2-N(ARL13B) and serum starved for 24 hr. The images are maximum projections of three optical slices. Transfections and subsequent imaging was carried out at least two times. Scale bars, 5 μm; white arrows indicate cilia. (B) Fluorescence polarisation measurements of 2 μM ARL3mantGppNHp, 150 μM GppNHp, and 20 μM ARL13B18-278 in the absence (grey) and presence (orange) of 10 μM BART. GppNHp was added last to both reactions before starting measurements. (C) 2 μM ARL2mantGppNHp was mixed with 150 μM GDP, and the resultant nucleotide exchange following GDP addition was monitored in the absence (dotted green) and presence (blue) of 10 μM BART.
 
 BART binds to ARL3GTP and inhibits the dissociation of the otherwise relatively fast dissociating GTP (Figure 5B). ARL2 is a homologue of ARL3 that binds to GTP or GDP with relatively weak affinities (Veltel et al., 2008). Due to the weak binding affinities and the fast dissociation of the bound nucleotide, it has been proposed that ARL2 does not need a GEF and undergoes rapid nucleotide exchange on its own (Fansa and Wittinghofer, 2016). However, BART is able to bind to ARL2GTP and inhibit the dissociation of GTP (Figure 5C). We therefore propose that BART can maintain an active pool of ARL3GTP and ARL2GTP in the cell.
 
@@ -125,7 +125,194 @@ The finding of the co-GEF BART may provide clues to other unanswered questions o
 
 ## Materials and methods
 
-## Cloning, expression, and purification of proteins
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)CodonPlus (DE3)-RIL</td>
+      <td>Agilent Technologies</td>
+      <td>230245</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>hTERT-RPE (immortalised retinal pigmented epithelial cells; female)</td>
+      <td>ATCC</td>
+      <td>CRL-4000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH/3T3 (embryonic fibroblasts)</td>
+      <td>ATCC</td>
+      <td>CRL-1658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ARL3 (rabbit, polyclonal)</td>
+      <td>Proteintech</td>
+      <td>10961–1-AP</td>
+      <td>WB (3:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD anti-rabbit IgG (donkey)</td>
+      <td>Li-Cor</td>
+      <td>926–68073</td>
+      <td>WB(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET20b(12-His-ARL13B18-278)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>N-term. His-tagged ARL13B18-278 for bacterial expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET20b(ARL317-182)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>C-term. His-tagged ARL3ΔN for bacterial expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET20b(ARL3)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>C-term. His-tagged ARL3 for bacterial expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET20b(ARL3-thrombin-His-tag)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Untagged ARL3 for bacterial expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET20b(BART)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>C-term. His-tagged BART for bacterial expression; E. coli codon-optimised sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-4T-1(BART)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>N-term. GST-tagged BART for bacterial expression; E. coli codon-optimised</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-4T-1(UNC119A)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>N-term. GST-tagged UNC119A for bacterial expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET20b(UNC119A)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>C-term. His-tagged UNC119A for bacterial expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET20b(PDEδ)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>C-term. His-tagged PDEδ for bacterial expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGFP-C1(BART)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>N-term. GFP-tagged full-length BART for mammalian expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmKate2-N(ARL13B)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>C-term. mKate2-tagged full-length ARL13B for mammalian expression</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Thrombin</td>
+      <td>Sigma</td>
+      <td>T4648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GST capture kit</td>
+      <td>Cytiva</td>
+      <td>BR100223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mantGDP</td>
+      <td>BioLog Life Science Institute</td>
+      <td>M041-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mantGppNHp</td>
+      <td>Jena Bioscience</td>
+      <td>NU-207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GppNHp</td>
+      <td>Jena Bioscience</td>
+      <td>NU-401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GTP</td>
+      <td>Sigma</td>
+      <td>G8877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GDP</td>
+      <td>Sigma</td>
+      <td>G7127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraFit</td>
+      <td>Erathicus software</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Sources of all other chemicals/reagents used are listed in the relevant sections below._
+
+### Cloning, expression, and purification of proteins
 
 Full-length ARL3 and N-terminally truncated ARL317-182 (ARL3ΔN) were cloned into pET20b (Novagen) with C-terminal 6-His tags; site-directed mutagenesis was used to insert a thrombin site upstream of the His-tag in the full-length ARL3 construct. ARL13B18-278 was cloned into pET20b with an N-terminal 12-His tag. Full-length BART was codon-optimised (Integrated DNA Technologies) and cloned into pET20b with a C-terminal 12-His tag, as well as pGEX-4T-1 (GE Healthcare) with an N-terminal GST-tag. Full-length UNC119A and PDEδ were also cloned into pET20; UNC119A was also cloned into pGEX-4T-1. pET28(NMT1) was a gift from Jim Brannigan; NMT1 was purified as previously described (Padovani et al., 2013).
 
@@ -135,41 +322,41 @@ ARL3 proteins were purified as previously described (Kühnel et al., 2006). ARL1
 
 Cells expressing BART, UNC119A or PDEδ were lysed in a buffer comprising 25 mM Tris (pH 7.5), 300 mM NaCl, and 2 mM β-mercaptoethanol. His-tagged and GST-tagged proteins were purified using HisTrap HP and GSTrap HP columns (GE Healthcare), respectively. Proteins were then further purified using size exclusion chromatography and stored in a buffer containing 25 mM Tris (pH 7.5), 150 mM NaCl, and 2 mM DTT. For purification of BART, 5% glycerol was added to all buffers.
 
-## Antibodies and western blots
+### Antibodies and western blots
 
 Anti-ARL3 polyclonal antibody (Proteintech, 10961–1-AP) was used along with IRDye 680RD Donkey anti-Rabbit IgG secondary antibody (Li-Cor, 926–68073). Western blots were scanned using a Li-Cor Odyssey CLX imaging system.
 
-## Nucleotide exchange
+### Nucleotide exchange
 
 A total of 400 µM ARL3 was mixed with 2 mM GppNHp (Jena Bioscience Gmbh) and 69 U alkaline phosphatase (Roche), or with 2 mM GDP and 50 mM EDTA. For loading with mant-labelled GDP (BioLog Life Science) or GppNHp (Jena Bioscience Gmbh), ARL3 was mixed with the appropriate nucleotide at a ratio of 1:2 in the presence of 50 mM EDTA. All reactions were incubated overnight at 19°C. Reactions containing EDTA were stopped by the addition of 100 mM MgCl2. Excess unbound unlabelled or labelled nucleotides were removed using a Superdex 200 Increase column or a PD-10 de-salting column (GE Healthcare), respectively.
 
-## Myristoylation
+### Myristoylation
 
 Myristoylation of ARL3 was carried out in vitro using recombinant N-myristoyl transferase 1 (NMT1) and myristoyl-Coenzyme A (Sigma, M4414) as previously described (Padovani et al., 2013).
 
-## Pull-down assays
+### Pull-down assays
 
 Pull-down assays were typically done using 30 µg of GST-tagged BART and 30 µg ARL3 in a buffer containing 25 mM Tris (pH 7.5), 200 mM NaCl, and 2 mM DTT. Reactions were incubated for 30 min before addition to glutathione sepharose 4 FF beads (GE Healthcare, 17-5132-01) and incubated for a further 30 min. Beads were washed five times in buffer and proteins were then eluted by incubating the beads in buffer containing 20 mM glutathione for 10 min (Fisher Scientific, 11483074). All incubation steps were done at room temperature. The eluted proteins were run on SDS-PAGE and visualised using Coomassie blue.
 
-## Fluorescence polarisation-based GEF assays
+### Fluorescence polarisation-based GEF assays
 
 GEF reactions were performed in 25 mM Tris (pH 7.5), 150 mM NaCl, 5 mM MgCl2 and 2 mM DTT at room temperature. Fluorescence polarisation was measured using a Spark multimode microplate reader (Tecan) with excitation and emission wavelengths set at 366 nm and 450 nm, respectively. Typically, 2 µM ARL3mantGDP was mixed with 150 µM GppNHp and 20 µM ARL13B in the presence and absence of 20 µM BART (or as indicated in figure legends) and subsequent changes in fluorescence polarisation were monitored over time. Data analysis was carried out using GraFit (Erathicus Software).
 
-## Preparation of large unilamellar vesicles (LUVs)
+### Preparation of large unilamellar vesicles (LUVs)
 
 1,2-Dioleoyl-sn-glycero-3-phosphocholine (DOPC), 1,2-dipalmitoyl-sn-glycero-3-phosphocholine (DPPC), 1,2-dioleoyl-sn-glycero-3-[phospho-rac-(3-lysyl(1-glycerol))] (DOPG), 1,2-dipalmitoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (DPPG) and 1,2-dioleoyl-sn-glycero-3-{[N-5-amino-1- (carboxylpentyl)iminodiacetic acid]succinyl} (nickel salt) (DOGS-NTA-Ni2+) were purchased from Avanti Polar Lipids. Cholesterol was purchased from Sigma Aldrich.
 
 10:5:45:5:20 molar ratio of DOPC:DOPG:DPPC:DPPG:Cholesterol or 10:10:5:45:5:20 molar ratio of DOGS-NTA:DOPC:DOPG:DPPC:DPPG:Cholesterol lipid mixtures in chloroform were dried under N2 stream and rehydrated in a buffer containing 5 mM MgCl2, 150 mM NaCl, and 25 mM Tris⋅HCl (pH 7.5). The suspension was then subjected to ten cycles of freezing and thawing (at 65°C) and passed 20 times through a 200 nm filter (Whatman), using the Avanti Mini-Extruder (Avanti Polar Lipids), at 65°C.
 
-## Cosedimentation assays
+### Cosedimentation assays
 
 2 μM GppNHp- and GDP-loaded ARL3 was incubated with increasing concentrations of DOPC:DOPG:DPPC:DPPG:cholesterol liposomes for 30 min at room temperature in a buffer containing 20 mM Tris (pH 7.5), 150 mM NaCl, 5 mM MgCl2 and 2 mM DTT. Samples were then spun at 125 × 103 × g at 10°C for 1.5 hr in a TLA-100 rotor (Beckman Coulter). The supernatants were then transferred to new tubes and the pellets resuspended in the aforementioned buffer to an equivalent volume as the supernatants. Equal sample volumes of all pellets and supernatants were analysed by SDS-PAGE.
 
-## Surface plasmon resonance (SPR)
+### Surface plasmon resonance (SPR)
 
 SPR experiments were carried out on a Biacore 8K system (Cytiva) using a CM5 sensor chip (Cytiva), along with a GST capture kit (Cytiva) following manufacturer instructions. The system was maintained at 25°C, with a flow rate of 30 μL/min. GST or GST-BART was immobilised on the chip, giving a response of about 100 units. 640 nM ARL3GppNHp was then injected for 120 s, followed by nine injections of buffer (20 mM Tris (pH 7.5), 150 mM NaCl, 5 mM MgCl2, 0.02% triton X-100, and 2 mM DTT) or 2 μM PDEδ. The sensor chip was regenerated between cycles with two 30 s injections of 100 mM glycine (pH 2.0) followed by a wash step. The data was analysed using GraFit (Erathicus Software), in which exponential decay was fitted to a single exponential equation with an offset.
 
-## Cell line culture, transfection, and live-cell imaging
+### Cell line culture, transfection, and live-cell imaging
 
 NIH/3T3 and RPE cells (both lines newly purchased from ATCC and certified as mycoplasma-free) were grown in DMEM and DMEM:F12 media (Thermo Fisher Scientific), respectively, at 37°C and 5% CO2. Culture media was supplemented with 10% fetal bovine serum, 1% penicillin-streptomycin, and 2 mM L-glutamine (ThermoFisher Scientific). A total of 2 × 105 cells were seeded in six-well plates and grown to 75% confluency prior to transfection with lipofectamine 2000 reagent (ThermoFisher Scientific). Cells were then incubated for another 24 hr and transferred to eight well ibiTreated μ-Slides (Ibidi) with 2 × 105 cells/chamber. Following adhesion, cells were washed with PBS and serum starved in 0.5% serum-media until imaging 24 hr later.
 

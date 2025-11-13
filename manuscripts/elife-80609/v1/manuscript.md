@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0227qpa16 Clinical Biotechnology Centre, Cellular and Molecular Therapies, NHS Blood and Transplant Bristol United Kingdom
+1. Clinical Biotechnology Centre, Cellular and Molecular Therapies, NHS Blood and Transplant Bristol United Kingdom ([ROR:0227qpa16](https://ror.org/0227qpa16))
 
 † Corresponding author
 

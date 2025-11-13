@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03adhka07 Swiss Tropical and Public Health Institute Allschwil Switzerland
-2. https://ror.org/02s6k3f65 University of Basel Basel Switzerland
-3. https://ror.org/03svjbs84 Liverpool School of Tropical Medicine Liverpool United Kingdom
+1. Swiss Tropical and Public Health Institute Allschwil Switzerland ([ROR:03adhka07](https://ror.org/03adhka07))
+2. University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
+3. Liverpool School of Tropical Medicine Liverpool United Kingdom ([ROR:03svjbs84](https://ror.org/03svjbs84))
 
 † Corresponding author
 
@@ -36,7 +36,7 @@ In this study, we developed a disease model with an emulator-based approach to q
 
 ## Results
 
-## Development of drug resistance
+### Development of drug resistance
 
 We investigated the establishment and spread of drug-resistant genotypes by varying the degrees of resistance for three different treatment profiles. The first treatment profile considered was a monotherapy using a short-acting drug. The short-acting drug had a short half-life and a high killing efficacy typical of artemisinin derivatives (Figure 1A and B). Patients received a daily dose of the short-acting drug for 6 days (see Materials and methods). To mimic the mechanism of resistance to artemisinin derivatives, we assumed that genotypes resistant to the short-acting drug had lower maximum killing rates (Emax) than sensitive ones (Figure 1B) (see Materials and methods). We defined the degree of resistance to the short-acting drug as the relative decrease of the Emax of the resistant genotype compared with the sensitive one. The second treatment profile was also a monotherapy but with a long-acting drug. The long-acting drug had a longer half-life and a lower Emax than the short-acting drug, typical of partner drugs used for ACTs (such as mefloquine, piperaquine, and lumefantrine) (Figure 1A and B). Patients received a daily dose of the long-acting drug for 3 days (see Materials and methods). We assumed that genotypes resistant to the long-acting drug had higher half-maximal effective concentrations (EC50) than sensitive ones (Figure 1B) (see Materials and methods). We defined the degree of resistance to the long-acting drug as the relative increase of the EC50 of the resistant genotype compared with the sensitive genotype. Note that monotherapies for malaria are no longer recommended, but we investigated drivers of resistance under monotherapy to identify the determinants specific to each drug profile. The last treatment profile was a daily dose of a combination of the short-acting and the long-acting drugs for 3 days, simulating ACTs. In this case, we focused on resistance to the short-acting drug, as artemisinin is the shared compound of all ACTs and is of greater concern. Thus, the resistant and sensitive genotypes refer to sensitivity to the short-acting drug. We measured selection for resistance to the short-acting drug against a background of differing sensitivity to the long-acting partner drug, whose effectiveness was varied as described in Table 1. We assumed that the genotypes sensitive and resistant to the short-acting drug had identical sensitivities to the partner drug (i.e. there was no cross-resistance).
 
@@ -44,17 +44,136 @@ We investigated the establishment and spread of drug-resistant genotypes by vary
 
 **Figure 1.:** (A) Examples of the modelled within-host concentration (mg/l) of both the short- and long-acting drugs used as monotherapy. Here, patients received a daily dose of the short-acting drug for 6 days or a daily dose of the long-acting drug for 3 days. The grey shaded area represents an exemplar selection window (defined as the period of time post-treatment when drug concentration is sufficiently high to prevent reinfection by drug-sensitive infections but is sufficiently low to allow reinfection by drug-resistant infections). The short- and long-acting drugs used in combination (like ACTs) had the same respective profile as in monotherapy, but patients received a daily dosage of each drug over 3 days, as recommended by WHO for ACTs (WHO, 2021). (B) Illustrations of the modelled relationship between the concentration (log[mg/l]) and the killing effect (per day) of the short- and long-acting drugs on the resistant (brown dashed curve) and sensitive genotypes (solid blue curve). Compared with sensitive genotypes, resistant parasites had a reduced maximum killing rate (Emax) when resistant to the short-acting drug and an increased half-maximal effective concentration (EC50) when resistant to the long-acting drug. (C) Schematic of the modelling workflow: central plot, brown curve represents an exemplar frequency of the resistant genotype in infected humans. The purple area (right side) shows the steps for assessing the influence of factors on the rate of spread (selection coefficient) of a resistant genotype through global sensitivity analysis of an emulator trained on our model simulations (see Materials and methods). In brief: (i) randomly sampling combinations of parameters, (ii) assessing the rate of spread of the resistant genotype for each parameter combination, (iii) training an emulator to learn the relationship between the input (for the different drivers) and output (the rate of spread) with iterative improvements to fitting through adaptive sampling, (iv) performing the global sensitivity using the trained emulator. The global sensitivity analysis estimates both first-order indices of each factor (representing their influence on the rate of spread) and the 25th, 50th, and 75th quantiles of the estimated selection coefficient from the emulator across each parameter range. The orange area (left side) shows the steps to assess the relationship between the selection coefficient and the probability of establishment in different transmission settings (see Materials and methods). In brief: (v) selecting genotypes with different selection coefficients in each setting, (vi) assessing their probability of establishment, and (vii) visualising the relationship between the probability of establishment and the section coefficient in each setting. HGP: Heteroskedastic Gaussian Process.
 
+**Table 1.**
+ Potential drivers of the spread of drug resistance.List of factors and their parameter ranges investigated in the global sensitivity analyses of the spread of parasites resistant to each treatment profile. The parameter ranges were defined based on the literature as described in Materials and methods. Note that the parameter ranges of the short-acting drug captured the parameter values of typical artemisinin derivatives, and the parameter ranges of the long-acting drug captured the parameter values of partner drugs of artemisinin derivatives such as mefloquine, piperaquine, and lumefantrine. In addition, note that the ratio maximum drug concentration/half-maximal effective concentration (Cmax/EC50) is not a direct input of the model, but we varied this ratio by varying the EC50 of the sensitive genotype and the drug dosage (which impacted Cmax). We initially assessed the effect of Cmax and EC50 on the rate of spread independently; however, we found that the impact of the EC50 and the Cmax on the drug killing effect post-treatment depended on their ratio (see Materials and methods). A Latin hypercube sampling (LHS) algorithm was used to sample from the ranges of all parameters (Gramacy, 2007).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Component</th>
+      <th rowspan="2">Determinant</th>
+      <th rowspan="2">Definition</th>
+      <th colspan="2">Parameter range(References)</th>
+    </tr>
+    <tr>
+      <th>Short-acting drug</th>
+      <th>Long-acting drug</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Drug properties (PK/PD model)</td>
+      <td>Half-life</td>
+      <td>Time for the drug concentration to fall by 50% (days)</td>
+      <td>(0.035, 0.175)(Kay et al., 2013; Winter and Hastings, 2011)</td>
+      <td>(6, 22)(Charles et al., 2007; Staehli Hodel et al., 2013; Jullien et al., 2014; Karunajeewa et al., 2008; Maganda et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Emax</td>
+      <td>Maximum killing rate the drug can achieve (per day)</td>
+      <td>(27.5, 31.0) (Kay et al., 2013)</td>
+      <td>(3.45, 5.00)(Winter and Hastings, 2011)</td>
+    </tr>
+    <tr>
+      <td>Cmax/EC50</td>
+      <td>The ratio between the maximum drug concentration (Cmax) and the half-maximal effective concentrations (EC50) of the sensitive genotype. This calculated ratio captures the duration of the drug killing effect by capturing how high the Cmax is compared to the EC50</td>
+      <td>(55.0–312.0)(Kay et al., 2013; Winter and Hastings, 2011)</td>
+      <td>(5.1–21.7)(Kay et al., 2013; Winter and Hastings, 2011)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Parasite biology</td>
+      <td>Degree of resistance (PK/PD model)</td>
+      <td>For the short-acting drug: relative decrease of the Emax of the resistant genotype compared with the sensitive oneFor the long-acting drug: relative increase of the EC50 of the resistant genotype compared with the sensitive one (see Materials and methods)</td>
+      <td>(1, 50)</td>
+      <td>(1, 20)</td>
+    </tr>
+    <tr>
+      <td>Fitness cost</td>
+      <td>Relative reduction of the resistant genotype multiplication rate within the human host compared to the sensitive one</td>
+      <td colspan="2">(1.0, 1.1)(Kublin et al., 2003; Mita et al., 2003)</td>
+    </tr>
+    <tr>
+      <td>Transmission level</td>
+      <td>Entomological inoculation rate</td>
+      <td>Mean number of infective mosquito bites received by an individual during a year (inoculations per person per year)</td>
+      <td colspan="2">(5, 500)(Edwards et al., 2019a; Hay et al., 2000; Chaumeau et al., 2018; Edwards et al., 2019b; Yamba et al., 2020)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Health system</td>
+      <td>Level of access to treatment</td>
+      <td>The probability of symptomatic cases to receive treatment within two weeks from the onset of symptom onset (%)</td>
+      <td colspan="2">(10, 80)</td>
+    </tr>
+    <tr>
+      <td>Diagnostic detection limit</td>
+      <td>Parasite density for which the probability of having a positive diagnostic test is 50% (parasites/μl)</td>
+      <td colspan="2">(2, 50)(Kilian et al., 2000; Murray et al., 2008)</td>
+    </tr>
+  </tbody>
+</table>
+
+_PK/PD: pharmacokinetic-pharmacodynamics; Cmax: maximum drug concentration; EC50: half-maximal effective concentration._
+
 Our analysis had two steps. First, we quantified the impact of factors listed in Table 1 on the spread of drug-resistant parasites through global sensitivity analyses using an emulator trained on our model simulations (Figure 1C, purple area [right side], see Materials and methods). For each simulation, we tracked a drug-sensitive genotype and a drug-resistant genotype, and we estimated the rate of spread using the selection coefficient, which measures the rate at which the logit of the resistant genotype frequency increases each parasite generation (see Materials and methods, note that a selection coefficient below zero implies that resistance does not spread in the population) (Hastings et al., 2020). Then, we assessed the probability of establishment for a subset of resistant genotypes with known and positive selection coefficients to observe the relationship between selection coefficient and the probability of establishment in different settings (Figure 1C, orange area [left side], see Materials and methods). We could then extrapolate the probability of establishing any mutations with a known selection coefficient, which made the process more efficient since estimating the probability of establishment requires running many more stochastic realisations than estimating the selection coefficient due to the stochasticity of this step.
 
-## Key drivers of the spread of drug-resistant parasites
+### Key drivers of the spread of drug-resistant parasites
 
 Under monotherapy, access to treatment (the probability of symptomatic cases to receive treatment within 2 weeks from the onset of symptoms) and degree of resistance of a monotherapy were the main drivers of the spread of resistance (Figure 2A). For the short-acting and the long-acting drugs used as monotherapy, the selection coefficient increased with increasing access to treatment (Figure 2—figure supplement 1). In addition, higher degrees of resistance of the resistant genotype to the short-acting drug (relative decrease in the resistant genotype Emax compared with the sensitive one) and the long-acting drug (relative increase in the resistant genotype EC50 compared with the sensitive one) promoted the spread of parasites resistant to the short-acting and the long-acting drugs, respectively (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig2-v1.jpg)
+
+**Figure 2.:** (A) The first-order indices from our variance decomposition analysis indicate the level of importance of drug properties, fitness costs, degrees of resistance, transmission levels, access to treatment, and diagnostic limits in determining the spread of drug resistance. Indices are shown for each treatment profile in a non-seasonal setting with a population fully adherent to treatment. Selection coefficients are considered for the short-acting drug and the long-acting drug when each drug is used as monotherapy and for the short-acting drug when both drugs are used in combination. Definitions and ranges of parameters investigated are listed in Table 1. (B) Influence of factors on the selection coefficient of genotypes resistant to the short-acting drug in a population that used the short-acting and the long-acting drugs in combination. Curves and shaded areas represent the median and interquartile range of selection coefficients estimated during the global sensitivity analyses over the following parameter ranges: access to treatment (10–80%); the degree of resistance of the resistant genotype to the short-acting drug (1–50-fold reduction in Emax); and the degree of resistance of both sensitive and resistant genotypes to the long-acting drug (1–20-fold increase in EC50). A selection coefficient below zero implies that resistance does not spread in the population but is being lost due to its fitness costs. The transmission setting was non-seasonal and all treated individuals were fully adherent to treatment.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Lines represent medians and shaded areas represent interquartile ranges of the selection coefficients estimated during the global sensitivity analysis over the parameter range for levels of access to treatment (10–80%), the degree of resistance to the short-acting drug (1–50-fold decrease in Emax), and the degree of resistance to the long-acting drug (1–20-fold increase in EC50).
+
 When the short-acting and the long-acting drugs were used in combination in our model, we referred to the resistant and sensitive genotypes as the genotypes resistant and sensitive to the short-acting drug, respectively. However, both genotypes could have some degree of resistance to the long-acting drug. In this case, the most important driver of spread was the degree of resistance of both genotypes to the long-acting drug (Figure 2A). The median selection coefficient was below zero when both genotypes were susceptible to the long-acting drug (the minimum degree of resistance to the long-acting drug) (Figure 2B), indicating that using an efficient partner drug can limit the spread of artemisinin resistance. The spread of parasites resistant to the short-acting drug was accelerated when parasites were also resistant to the long-acting drug, highlighting that resistance to the long-acting drug can facilitate the spread of artemisinin resistance. We further illustrated with concrete examples (Appendix: section 1.1) how the spread of partial resistance to the short-acting drug accelerates with higher degrees of resistance to the long-acting drug. These results further confirmed that resistance to partner drugs facilitates the spread of resistance to artemisinin, highlighting the importance of combining artemisinin derivatives with an efficient partner drug.
 
-## Variation in the influence of factors across settings and degrees of resistance
+### Variation in the influence of factors across settings and degrees of resistance
 
 We compared the effects of drug properties and levels of fitness cost on estimated selection coefficients for a fixed set of degrees of resistance, levels of access to treatment, transmission intensities, seasonality patterns, and levels of adherence to treatment (percentage of treatment doses adhered by patients). Figure 3 summarises the impact of key factors influencing estimated selection coefficients in seasonal transmission settings with a population fully adherent to treatment (the impact of factors was similar across seasonality pattern and levels of adherence to treatment Figure 3—figure supplements 1–2). The impact of all factors in each setting is shown in Figure 3—figure supplements 1–2.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig3-v1.jpg)
+
+**Figure 3.:** The curves represent median selection coefficients over the parameter ranges of factors that were determined to have key influences on the rate of spread of drug-resistant genotypes in settings that had an entomological inoculation rate (EIR) of 5 (solid curves) or 500 (dashed curves) inoculations per person per year, and low (10%) or high (80%) levels of access to treatment. Selection coefficients illustrated the spread of parasites resistant to the short- and long-acting drugs when each drug was used as monotherapy and parasites resistant to the short-acting drug when both drugs were used in combination. For each treatment profile, results are shown for parasites with two different degrees of resistance; degree of resistance of 7 (low) and 18 (high) to the short-acting drug (Emax shift), 2.5 (low) and 10 (high) to the long-acting drug (EC50 shift), for the combination of the short-acting and the long-acting drugs, 7 (low) and 18 (high) to the short-acting drug and 10 to the long-acting drug. Results are illustrated for settings with a seasonality pattern of transmission and a population fully adherent to treatment. The impacts of all factors in all settings are shown in Figure 3—figure supplements 1–2. Parameter ranges are as follows: fitness cost (1.0–1.1); the half-life of the short-acting drug (0.035–0.175 days); the half-life of the long-acting drug (6–22 days); Cmax/EC50 ratio of the long-acting drug (5.1–21.7).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The curves represent median selection coefficients over the parameter ranges estimated in each setting that had high access to treatment (80%) and an entomological inoculation rate (EIR) of 5 (solid curves) or 500 (dashed curves) inoculations per person per year. Settings were varied in their seasonality pattern of transmission and level of adherence to treatment (67% [low] or 100% [high] of treatment doses adhered to by the population). For each treatment profile, results are shown for parasites with two different degrees of resistance; degree of resistance of 7 (low) and 18 (high) to the short-acting drug (Emax shift), 2.5 (low) and 10 (high) to the long-acting drug (EC50 shift), for the combination of the short-acting and the long-acting drugs, 7 (low) and 18 (high) to the short-acting drug and 10 to the long-acting drug. Parameter ranges are as follows: fitness cost (1.0–1.1); the short-acting drug half-life (0.035–0.175days); the long-acting drug half-life (6–22days); Cmax/EC50 ratio of the short-acting drug (55.0–312.0); Cmax/EC50 ratio of the long-acting drug at a high level of adherence to treatment (5.4–21.7) and at a low level of adherence (4.0–16.2).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The solid and dashed lines represent the median selection coefficients over the parameter ranges estimated in each setting that had low access to treatment (10%) and an entomological inoculation rate (EIR) of 5 (solid lines) or 500 (dashed lines) inoculations per person per year. Settings varied in their seasonality pattern and level of adherence to treatment (low = 67%and high = 100%). For each treatment profile, we show results for parasites with two different degrees of resistance; degree of resistance of 7 (low) and 18 (high) to the short-acting drug (Emax shift), 2.5 (low) and 10 (high) to the long-acting drug (EC50 shift), and with combination of the short-acting and the long-acting drugs, 7 (low) and 18 (high) to the short-acting drug and 10 to the long-acting drug. The parameter ranges were the following: fitness cost (1, 1.1); the short-acting drug half-life (0.035, 0.175) days; the long-acting drug half-life (6, 22) days; Cmax/EC50 ratio of the short-acting drug (55, 312); Cmax/EC50 ratio of the long-acting drug at a high level of adherence to treatment (5.4, 21.7); and at a low level of adherence (4.0, 16.2).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The first-order indices were assessed for parasites that had different degrees of resistance to the short-acting drug (low = 7and high = 18-fold decrease in Emax) in settings that differ in their levels of access to treatment (high = 10%and low = 80%), levels of transmission (5, 10, and 500 inoculations per person per year), transmission patterns (no seasonality and seasonality), and levels of adherence to treatment (low = 67% and high = 100%). The explored parameter ranges were the following: the fitness cost (1, 1.1); the half-life of the short-acting drug (0.035, 0.175) days; the ratio Cmax/EC50 of the short-acting drug (55, 312); the Emax of the short-acting drug (27.5, 31.0) per day; and the diagnostic detection limit (2, 50) parasites/µl.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The first-order indices were assessed for parasites that had different degrees of resistance to the long-acting drug (low = 2.5and high = 10-fold increase in EC50) in settings that differ in their levels of access to treatment (low = 10 % and high = 80%), levels of transmission (5, 10, and 500 inoculations per person per year), transmission patterns (no seasonality and seasonality), and levels of adherence to treatment (low = 67% and high = 100%). The explored parameter ranges were the following: the fitness cost (1, 1.1); the half-life of the long-acting drug (6, 22) days; the ratio Cmax/EC50 of the long-acting drug at a high level of adherence to treatment (5.4, 21.7) and at a low level of adherence to treatment (4.0, 16.2); the Emax of the long-acting drug (3.45, 5.00) per day; and the diagnostic detection limit (2, 50) parasites/µl.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** The first-order indices were assessed for parasites that had different degrees of resistance to the short-acting drug (low = 7and high = 18-fold decrease in Emax) in settings that differ in their levels of access to treatment (low = 10% and high = 80%), levels of transmission (5, 10, and 500 inoculations per person per year), transmission patterns (no seasonality and seasonality), and levels of adherence to treatment (low = 67% and high = 100%). The explored parameter ranges were the following: the fitness cost (1, 1.1); the half-life of the short-acting drug (0.035, 0.175) days; the half-life of the long-acting drug (6, 22) days; the ratio Cmax/EC50 of the short-acting drug (55, 312); the ratio Cmax/EC50 of the long-acting drug at a high level of adherence to treatment (5.4, 21.7) and at a low level of adherence to treatment (4.0, 16.2); the Emax of the short-acting drug (27.5, 31.0) per day; the Emax of the long-acting drug (3.45, 5) per day; and the diagnostic detection limit (2, 50) parasites/µl.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Selection coefficients of resistant genotypes were estimated for each treatment profile during the constrained sensitivity analysis assuming resistant parasites have a low degree of resistance (equal to 7 for the short-acting drug [Emax shift] and 2.5 for the long-acting drug [EC50 shift]), in settings with a high access to treatment (80%). The distributions are stratified by (A) the intensity of transmission (B) the seasonality pattern, and (C) the level of adherence to treatment in the settings.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** Selection coefficients of resistant genotypes were estimated for each treatment profile during the constrained sensitivity analysis assuming resistant genotypes have a high degree of resistance (equal to 18 for the short-acting drug [Emax shift] and 10 for the long-acting drug [EC50 shift]), in settings with high access to treatment (80%). Distributions were stratified by (A) intensity of transmission, (B) seasonality pattern, and (C) the level of adherence to treatment in the settings.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig3-figsupp8-v1.jpg)
+
+**Figure 3—figure supplement 8.:** The figure highlights the relationship between the transmission intensity (EIR) and the percentage of people that received treatment during a month (orange dots) and the percentage of infected people that received treatment during a month (blue dots). In this illustration, the level of access to treatment was equal to 80%, and the transmission was perennial. EIR: entomological inoculation rate.
+
+![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig3-figsupp9-v1.jpg)
+
+**Figure 3—figure supplement 9.:** The selection coefficients were estimated for each treatment profile during the constrained sensitivity analysis of the spread of resistant genotypes having a low degree of resistance (equal to 7 for the short-acting drug [Emax shift] and 2.5 for the long-acting drug [EC50 shift]), in settings with a low access to treatment (10%). The distributions are stratified by (A) the intensity of transmission, (B) the seasonality pattern, and (C) the level of adherence to treatment in the settings.
 
 Across settings with a low access to treatment, we found that fitness cost had the largest influence on the selection coefficient (Figure 3—figure supplements 3–5). The fitness cost of a resistant genotype was defined as the relative decrease in the resistant genotype multiplication rate within an untreated human host compared with the sensitive genotype. Consequently, high fitness costs prevented the spread of resistance (Figure 3, Figure 3—figure supplement 2). At a high level of access to treatment, the effect of fitness cost was reduced, and drug properties played a critical role in the spread of drug resistance, and their influence varied for each treatment profile as described below.
 
@@ -70,7 +189,7 @@ The influence of the transmission intensity (represented by entomological inocul
 
 However, for parasites with a low degree of resistance to the long-acting drug used in monotherapy, selection coefficients were higher in settings with a large EIR (Figure 3—figure supplement 6). This arises because the proportion of patients with low drug concentrations persisting from previous treatments increases at higher EIR where higher infection rates increase the overall usage of treatment (Figure 3—figure supplement 8). These low drug concentrations may fall within the selective window and hence drive the spread of parasites partially resistant to the long-acting drug. Note that this trend was only observed for settings with high access to treatment. In settings with low access to treatment, we observe similar trends as for parasites resistant to the short-acting drug (Figure 3—figure supplement 9) since here, the impact of the selection window was more negligible. These results highlight that the selection window of the long-acting drug can change the interplay between the transmission setting and the spread of drug resistance.
 
-## Probability of establishment of drug resistance and its key drivers
+### Probability of establishment of drug resistance and its key drivers
 
 Population genetic theory has shown that the probability of establishment of a mutation depends on two factors: (i) the size of its selection coefficient (i.e. establishment becomes more likely as the mutation becomes more advantageous) and (ii) the degree of heterogeneity in the number of parasite offspring. This occurs because higher heterogeneity increases stochastic fluctuations of allele number, so increases the chance that the mutation is lost despite its advantage (zur Wiesch et al., 2011; Hastings, 2004; Hastings et al., 2020; Hastings and Mackinnon, 1998). The probability of establishment can also be altered by temporal fluctuation in the population size or magnitude of the selection coefficient (Waxman, 2011). Both effects are likely to be present in seasonal settings of malaria transmission where population size fluctuates, and selection intensity may also change if the level of drug use fluctuates in response to the seasonality of transmission. We avoid these complications by investigating only non-seasonal settings, from which we selected 10 different resistant genotypes having a known selection coefficient and quantified their probability of establishment (see Materials and methods). By doing so, we evaluated the relationship between the selection coefficient and probability of establishment and assessed how this relationship varies across settings due to variation in the heterogeneity of parasite reproductive success.
 
@@ -78,7 +197,7 @@ As expected, the establishment of a mutation was more probable when its selectio
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/77634/elife-77634-fig4-v1.jpg)
 
-**Figure 4.:** Solid brown curves and blue dashed curves represent the relationship between the selection coefficient and the estimated probability of establishment of resistant parasites across settings that differ in transmission intensities (5 and 500 inoculations per person per year, respectively). The relationships are illustrated for parasites resistant to the short- and long-acting drugs when each drug was used as monotherapy and parasites resistant to the short-acting drug when both drugs were combined. The shaded area represents the 95% confidence intervals estimated as described in Materials and methods. The range of selection coefficients include higher values at a low entomological inoculation rate (EIR). For each setting, the level of access to treatment was specified as 80%, the population was assumed to be fully adherent to treatment (100%), and transmission was non-seasonal.Figure 4—source data 1.Figure 4.
+**Figure 4.:** Solid brown curves and blue dashed curves represent the relationship between the selection coefficient and the estimated probability of establishment of resistant parasites across settings that differ in transmission intensities (5 and 500 inoculations per person per year, respectively). The relationships are illustrated for parasites resistant to the short- and long-acting drugs when each drug was used as monotherapy and parasites resistant to the short-acting drug when both drugs were combined. The shaded area represents the 95% confidence intervals estimated as described in Materials and methods. The range of selection coefficients include higher values at a low entomological inoculation rate (EIR). For each setting, the level of access to treatment was specified as 80%, the population was assumed to be fully adherent to treatment (100%), and transmission was non-seasonal.
 
 ## Discussion
 
@@ -108,9 +227,9 @@ In summary, our results confirm that mutations conferring malaria drug resistanc
 
 ## Materials and methods
 
-## Simulation model and the parameterisation of treatment profiles and resistant genotypes
+### Simulation model and the parameterisation of treatment profiles and resistant genotypes
 
-## Overview of our OpenMalaria model
+#### Overview of our OpenMalaria model
 
 Our individual-based model, OpenMalaria, simulates the dynamics of P. falciparum in humans and links it to a periodically forced deterministic model of P. falciparum in mosquitoes (Chitnis et al., 2012; Smith et al., 2006a; Smith et al., 2008). The model structure and fitting are described in detail elsewhere (Smith et al., 2006a; Smith et al., 2008), including open-access code (https://github.com/SwissTPH/openmalaria) and documentation (https://github.com/SwissTPH/openmalaria/wiki), and a recently published manuscript provides a new calibration (Reiker et al., 2021). Here, we have summarised the main components of OpenMalaria and its latest developments in version 40.1, which enabled us to model the establishment and spread of drug-resistant parasites.
 
@@ -120,7 +239,7 @@ The case management component of OpenMalaria describes the use of treatment for 
 
 The entomological component of OpenMalaria simulates the mosquito vector feeding behaviours and tracks the infectious status of mosquitoes (Chitnis et al., 2012). The periodicity of this model allows seasonal patterns of transmission to be captured. The probability that a feeding mosquito becomes infected depends on the parasite density within bitten individuals (Ross et al., 2006a). No recombination is modelled between the different genotypes in the mosquitoes. The number of newly infected hosts depends on the simulated EIR of the vector model (Chitnis et al., 2012). The genotype of new infections is based on the genotype frequencies in humans from the previous five time steps (Ross et al., 2006a).
 
-## Parameterisation of the treatment profiles
+#### Parameterisation of the treatment profiles
 
 This study investigated factors influencing the establishment and spread of parasites resistant to three different treatment profiles.
 
@@ -130,7 +249,7 @@ The second treatment profile modelled was a long-acting drug administered as mon
 
 The last treatment profile was a combination of short- and long-acting drugs, simulating ACT. We tracked the concentration of each drug independently. We used the same models, parameter values and ranges for the two drugs as when both drugs were used as monotherapy. However, the treatment course involved a daily dose of both drugs for 3 days, as recommended by the WHO for most ACTs (WHO, 2021). In OpenMalaria, the killing effects of the two drugs were calculated independently and acted simultaneously on the parasites.
 
-## Parameterisation of the drug-resistant genotypes
+#### Parameterisation of the drug-resistant genotypes
 
 For each simulation, we tracked two genotypes, one drug-resistant and one drug-sensitive. We investigated the spread of resistant parasites with different degrees of resistance (Table 1). We modelled the phenotype of drug resistance and the degree of resistance differently for each drug profile.
 
@@ -140,54 +259,82 @@ Previous studies reported that parasites resistant to long-acting drugs typicall
 
 Considering short- and long-acting drugs in combination, the resistant genotype was resistant to the short-acting drug. But in the global sensitivity analysis, both the sensitive and resistant genotypes could have some degree of resistance to the long-acting drug. The decreased susceptibility to the long-acting drug was the same for both sensitive and resistant genotypes, meaning that we assumed the two genotypes differed only in one mutation, which conferred resistance to the short-acting drug. This assumption allowed us to ignore the effect of recombination in the mosquitoes. In effect, this assumed that the allele defining the degree of resistance to the long-acting drug was fixed in the population.
 
-## Approach to identify the key drivers of the spread of drug-resistant parasites
+### Approach to identify the key drivers of the spread of drug-resistant parasites
 
 Through global sensitivity analyses, we quantified how the factors in Table 1 influenced the spread of drug-resistant parasites for each treatment profile. First, we estimated the effect of each factor in a non-seasonal setting with a population fully adherent to treatment. Based on these results, we identified specific settings for further analysis, which used constrained sensitivity analyses to investigate the impact of varying drug properties and fitness costs in a fixed set of settings (i.e. in low and high transmission settings, with low and high treatment levels of monotherapy or combination therapy) and with a fixed degree of resistance. In these additional constrained sensitivity analyses, we also investigated the effect of drivers in seasonal transmission settings (based on the seasonality pattern of a setting in Tanzania [Maire et al., 2006b, Appendix 1—figure 2]) and where populations adhere to either 100 or 67% of treatment doses.
 
 Due to the number of factors investigated, each global sensitivity analysis required a large number of simulations (see details below) that is computationally infeasible for detailed individual-based models. Therefore, we trained an HGP (Binois and Gramacy, 2021) on a limited set of OpenMalaria simulations (3500–11,500 simulations). We then used the trained emulator to predict the output of OpenMalaria for a large number of simulations and used these outputs to perform the global sensitivity analysis (Figure 1C), adapting a similar approach to Golumbeanu et al., 2022 and Reiker et al., 2021. Our approach involved: (i) randomly sampling combinations of parameters; (ii) simulating and estimating the rate of spread of the resistant genotype for each parameter combination in OpenMalaria; (iii) training an HGP to learn the relationship between the input (for the different drivers) and output (the rate of spread) with iterative improvements to fitting through adaptive sampling; and (iv) performing a global sensitivity analysis based on the Sobol variance decomposition using the trained emulator (Kilian et al., 2000). Each step of the workflow is detailed below.
 
-## Random sample combinations of parameters
+#### Random sample combinations of parameters
 
 We randomly sampled 250 different parameter combinations from the parameter space shown in Table 1 using an LHS algorithm (Gramacy, 2007). The parameter ranges were defined as follows. We defined the ranges for the properties of the short-acting drug and the long-acting drug to include the typical parameter values of artemisinin derivatives and long-acting partner drugs, respectively (Kay et al., 2013; Winter and Hastings, 2011; Charles et al., 2007; Staehli Hodel et al., 2013; Jullien et al., 2014; Karunajeewa et al., 2008; Maganda et al., 2015). The range of the degree of resistance captured the spread of drug-resistant parasites, which vary from fully sensitive to having almost no drug sensitivity. The fitness costs were extracted from studies investigating the decline of chloroquine-resistant parasites after the drug pressure was removed (Kublin et al., 2003; Mita et al., 2003). The variation in annual EIR captured settings with low transmission to those with high transmission. The range of access to treatment captured settings with low to high level of access to treatment. The variation in the diagnostic detection limit captured the range of sensitivity of typical diagnostics used for malaria (such as rapid diagnostic test, microscopy, and PCR) (Kilian et al., 2000; Murray et al., 2008).
 
-## Simulate and estimate the rate of spread of the drug-resistant genotype
+#### Simulate and estimate the rate of spread of the drug-resistant genotype
 
 We quantified the rate of spread through the selection coefficient, a measure widely used in population genetics to assess the strength of selection on a genotype (Hastings et al., 2020). The selection coefficient is the rate at which the logit of the resistant genotype frequency increases each parasite generation and should be linear throughout the spread (Hastings et al., 2020). Population genetics theory often assumes an infinite population size to remove stochastic fluctuation of the allele frequency also called genetic drift (Hastings et al., 2020). However, in our model the parasite population size is finite, so stochastic fluctuations are present. Thus, we should avoid estimating the selection coefficient when there is a low frequency of the resistant genotype (from a small human population size, a low EIR, and a small initial frequency of the resistant genotype) because the resistant genotype may become extinct due to the stochastic fluctuation. In addition, the effects of genetic drift that occurs when a genotype is present at a low frequency may cause non-linearity during resistance spread which may obscure the estimation of the selection coefficient (Hastings et al., 2020).
 
-Following the approach described in Hastings et al., 2020, we assumed an initial percentage of infected humans carrying the resistant genotype of 50%. A high initial percentage minimises the impact of random fluctuation on our estimation, and the subsequent risk of extinction, without affecting our estimate because the selection coefficient was not frequency-dependent (Appendix 1—figure 3). We simulated the spread of resistant parasites in a human population of 100,000 individuals with an age structure typical of some countries in Africa (17.7% of people under 5 years of age) (Ekström et al., 2016). We ran each parameter combination on five stochastic realisations. The simulation started with a burn-in period of 100 years to reach the expected level of immunity in the population and an additional 30 years to reach EIR equilibrium (Appendix 1—figure 4). Both genotypes were sensitive to the drug during this period, so the percentage of infected humans carrying the resistant genotype remained stable. After the burn-in period, we introduced the fitness cost and the drug for which the resistant genotype had reduced sensitivity. We then estimated the selection coefficient, s, as,s=1tlnpt+11-pt+1-lnp11-p1 ⁡=112lnp131-p13-lnp11-p1 ,
+Following the approach described in Hastings et al., 2020, we assumed an initial percentage of infected humans carrying the resistant genotype of 50%. A high initial percentage minimises the impact of random fluctuation on our estimation, and the subsequent risk of extinction, without affecting our estimate because the selection coefficient was not frequency-dependent (Appendix 1—figure 3). We simulated the spread of resistant parasites in a human population of 100,000 individuals with an age structure typical of some countries in Africa (17.7% of people under 5 years of age) (Ekström et al., 2016). We ran each parameter combination on five stochastic realisations. The simulation started with a burn-in period of 100 years to reach the expected level of immunity in the population and an additional 30 years to reach EIR equilibrium (Appendix 1—figure 4). Both genotypes were sensitive to the drug during this period, so the percentage of infected humans carrying the resistant genotype remained stable. After the burn-in period, we introduced the fitness cost and the drug for which the resistant genotype had reduced sensitivity. We then estimated the selection coefficient, s, as,
+
+$$
+s=\frac{1}{t}ln\frac{pt+1}{1-pt+1}-ln\frac{p1}{1-p1} ⁡=\frac{1}{12}ln\frac{p13}{1-p13}-ln\frac{p1}{1-p1} ,
+$$
 
 where p(t) is the frequency of the resistant genotype in inoculations (the number of inoculations carrying the resistant genotype divided by the total number of inoculations resistant and sensitive genotypes), t is the number of parasite generations after introducing the new drug at t=0. We assumed that a parasite generation is 2 months (60 days) as in Hastings et al., 2020. We started the regression at one parasite generation after introducing the new drug (at 60 days). We stopped the regression 12 generations later, at 720 days, because, as shown in Hastings et al., 2020, it was computationally convenient and returned stable selection coefficient estimates. The regression was stopped sooner if the frequency of inoculations carrying the resistant genotype was higher than 90% or lower than 30% to prevent tracking a small number of a single genotype for which genetic drift is strong. In seasonal settings, the rate of spread of the resistant genotype varied throughout the year. Consequently, we estimated the selection coefficient using a moving average of the frequency of the resistant genotype in inoculations (Appendix 1—figure 5). This method prevented biasing the selection coefficient according to the period included in the regression.
 
-Once the selection coefficient was estimated, it could be converted to the number of parasite generations needed for the frequency of the resistant genotype in inoculations to increase from p(1) to p(t),t=1slnpt+11-pt+1-lnp11-p1 .
+Once the selection coefficient was estimated, it could be converted to the number of parasite generations needed for the frequency of the resistant genotype in inoculations to increase from p(1) to p(t),
+
+$$
+t=\frac{1}{s}ln\frac{pt+1}{1-pt+1}-ln\frac{p1}{1-p1} .
+$$
 
 We could then convert the number of parasite generations to time in years, a more relevant public health measure than the selection coefficient itself.
 
-## Train the emulator and improve its accuracy
+#### Train the emulator and improve its accuracy
 
 We randomly split our data into a training dataset containing 80% of simulations and a test dataset containing 20% of simulations. We trained the HGP on the training dataset using the function mleHetGPfrom the R package ‘hetGP’ (Binois and Gramacy, 2021). We chose to use HGP as it was successfully used in two previous studies that performed global sensitivity analyses of OpenMalaria (Reiker et al., 2021; Golumbeanu et al., 2022). In addition, Reiker et al., 2021 tested different emulators and found that HGP provided the best fit with a limited number of simulations (analysis not shown in the published study). To assess the accuracy of the emulator, for the test dataset we assessed the correlation coefficient and root mean squared error between selection coefficients estimated with the emulator and selection coefficients estimated using OpenMalaria. We iteratively improved the accuracy of our emulator through adaptive sampling. Adaptive sampling involved resampling 100 parameter combinations in the parameter space where we were less confident (higher variation) in the HGP prediction and repeating the entire process until the emulator had a satisfactory level of accuracy. The satisfactory level of accuracy was defined based on the correlation coefficient and the root means squared error between the estimated selection coefficient and expected selection coefficient for the test dataset (Appendix 1—figures 6–12).
 
-## Global sensitivity analysis
+#### Global sensitivity analysis
 
 Using the emulator, we undertook global sensitivity analyses using Sobol’s method (Sobol, 2001). This method attributed fractions of the selection coefficient variance to each input (Sobol, 2001). To do this, we first generated two random datasets with a sample size of 100,000 using an LHS algorithm (Gramacy, 2007) that sampled within the parameter ranges of Table 1. When then estimated selection coefficients for these datasets with the trained emulators. Note that without emulators, we would have to run these simulations in OpenMalaria, which would not have been feasible due to computational requirements. We then used the function soboljansen from the R package ‘sensitivity’ to perform the global sensitivity analysis with 150,000 bootstrap replicates and the two datasets (Cheng et al., 2021). With this function, we estimated first-order and total Sobol' indices simultaneously. The first-order indices represent contributions of each parameter’s main effect to the model output variance. The total effect represents the contribution of each parameter to the model output variance considering their interactions with other factors. We report only the first-order indices in the Results section because we did not observe many interactions between these factors. Some parameters supported the spread of resistance (increased the selection coefficient), whilst others hindered the spread (decreased the selection coefficient). To visualise the direction of the effect of each parameter, we calculated the 25th, 50th, and 75th quantiles of the estimated selection coefficient of the two random datasets over the corresponding parameter ranges.
 
-## Establishment of drug resistance
+### Establishment of drug resistance
 
 As explained in the Introduction, the establishment of resistant mutations is a stochastic process that depends on the selection coefficient of the mutation and the heterogeneity of parasites reproductive success in the setting, which in turn depends on the transmission level and the health system strength (zur Wiesch et al., 2011; Hastings, 2004; Hastings et al., 2020; Hastings and Mackinnon, 1998; Klein, 2014). Estimating the probability of establishment requires running many stochastic realisations due to the stochasticity of this step. To be more computationally efficient, we assessed the probability of establishment of a subset of 10 resistant genotypes with a known selection coefficient per setting and treatment profile. Based on the observed relationships between the selection coefficient and the probability of establishment for each treatment profile and setting, we could then extrapolate the probability of establishment of any mutations having a known selection coefficient.
 
 To estimate the probability of establishment, we modelled the emergence of resistant genotypes in a fully susceptible parasite population. We used the approach described in Hastings et al., 2020, in which resistant infections were imported into the population at a low rate. In OpenMalaria, imported infections have the same frequencies of genotypes as in initialisation, thus we cannot import only resistant infections. Therefore, to import resistant infections in a population infected only by sensitive parasites, we followed the step described below (Appendix 1—figure 13). We first defined a 50% frequency of resistant parasites in infected humans. The simulation started with a burn-in phase of 100 years, during which both genotypes were sensitive to treatment. This meant that the frequency of the resistant parasites was stable (at 50%). In the second phase, we introduced a drug to which resistant parasites were hypersensitive (the drug EC50 was 100 times lower in the resistant genotype than the sensitive one). The second phase ran for 100 years, and once complete, the parasite population was fully susceptible. In the third phase, we imported new infections at a rate low enough to ensure that the previously imported resistant genotype either established or went extinct before a new resistant infection was imported (Appendix 1: section 5.1). The third phase ran until the resistant genotype established (frequency of the resistant genotype in infected humans is equal to 50%).
 
-The probability of establishment, Pe, can be estimated based on the average number of resistant infections that are imported until the resistant genotype establishes, Ne, as follows (the probability of a successful event can be estimated as one divided by the mean number of independent trials required to achieve the first success [Dekking et al., 2005]),Pe=1Ne.
+The probability of establishment, Pe, can be estimated based on the average number of resistant infections that are imported until the resistant genotype establishes, Ne, as follows (the probability of a successful event can be estimated as one divided by the mean number of independent trials required to achieve the first success [Dekking et al., 2005]),
 
-We simulated 300 stochastic realisations, R, and estimated Pe, as,Pe=1Ne=1(∑j=1RNm,j)/R=R∑j=1RNm,j,
+$$
+P_{e}=\frac{1}{N_{e}}.
+$$
 
-where Nm,j is the number of imported resistant infections until the resistant genotype established in run j. Re-arranging the formula shows that Pe is equal to the number of resistant genotypes established in all stochastic realisations (this number is equal to R as only one resistant genotype established per stochastic realisation) divided by the total number of resistant infections imported into all stochastic realisations (includes resistant genotypes that became extinct and established). We estimated the 95% confined intervals of Pe (Wilson methods [Dekking et al., 2005]), as,Pe-1.96Pe1-Pe∑j=1RNm,j ,Pe+1.96Pe1-Pe∑j=1RNm,j.
+We simulated 300 stochastic realisations, R, and estimated Pe, as,
 
-Note that in each stochastic realisation, we estimated Nm, as,Nm=teNi,
+$$
+P_{e}=\frac{1}{N_{e}}=\frac{1}{(\sumj=1RN_{m,j})/R}=\frac{R}{\sumj=1RN_{m,j}},
+$$
 
-where te is defined as the last time that the number of infections with a resistant genotype was equal to zero, that is the time (in years) until the arrival of the imported resistant infection that led to the successful establishment of the resistant genotype. Ni is the number of imported resistant infections per year. Note that OpenMalaria specifies the number of imported infections, V, in numbers of imported infections per 1000 people per year, and half of the imported infections were sensitive. Thus, the number of imported resistant infections that occurred until one established can be estimated as,Nm=te(NV2(1000))=5teV,
+where Nm,j is the number of imported resistant infections until the resistant genotype established in run j. Re-arranging the formula shows that Pe is equal to the number of resistant genotypes established in all stochastic realisations (this number is equal to R as only one resistant genotype established per stochastic realisation) divided by the total number of resistant infections imported into all stochastic realisations (includes resistant genotypes that became extinct and established). We estimated the 95% confined intervals of Pe (Wilson methods [Dekking et al., 2005]), as,
+
+$$
+P_{e}-1.96\sqrt{\frac{P_{e}1-P_{e}}{\sumj=1RN_{m,j}}} ,P_{e}+1.96\sqrt{\frac{P_{e}1-P_{e}}{\sumj=1RN_{m,j}}}.
+$$
+
+Note that in each stochastic realisation, we estimated Nm, as,
+
+$$
+N_{m}=t_{e}N_{i},
+$$
+
+where te is defined as the last time that the number of infections with a resistant genotype was equal to zero, that is the time (in years) until the arrival of the imported resistant infection that led to the successful establishment of the resistant genotype. Ni is the number of imported resistant infections per year. Note that OpenMalaria specifies the number of imported infections, V, in numbers of imported infections per 1000 people per year, and half of the imported infections were sensitive. Thus, the number of imported resistant infections that occurred until one established can be estimated as,
+
+$$
+N_{m}=t_{e}(\frac{NV}{2(1000)})=5t_{e}V,
+$$
 
 where N is the human population size. We simulated a population size of 10,000 individuals to increase computational feasibility for the large number of simulations required for our extensive global sensitivity analyses. A larger population was unnecessary, as the population size does not influence the probability of establishment unless it is extremely small (Waxman, 2011). This was not the case in our simulation, which had a minimum of 3018 infections in the low transmission setting.
 
-## Data and software availability
+### Data and software availability
 
 We did not use individual participant-level data. Parameters values used in the model were informed from the literature as referred to in the main text or the Appendix. The source code for OpenMalaria was developed using the C++language and is available at https://github.com/SwissTPH/openmalaria (Thüring et al., 2022)and a documentation is available at https://github.com/SwissTPH/openmalaria/wiki. The analysis script was developed using the R software and is available at https://zenodo.org/badge/latestdoi/458217287. All data and codes used to produce the figures are available at https://zenodo.org/badge/latestdoi/458226427. In addition, the data used to produce the figure are included in the manuscript.

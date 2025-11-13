@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00b30xv10 Department of Biology, University of Pennsylvania Philadelphia United States
-2. https://ror.org/00b30xv10 Neuroscience Graduate Group, University of Pennsylvania Philadelphia United States
-3. https://ror.org/05gq02987 Department of Ecology, Evolution, and Organismal Biology, Brown University Providence United States
+1. Department of Biology, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+2. Neuroscience Graduate Group, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+3. Department of Ecology, Evolution, and Organismal Biology, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
 
 † Corresponding author
 

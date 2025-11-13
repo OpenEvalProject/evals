@@ -8,15 +8,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03yghzc09 Living Systems Institute, University of Exeter Exeter United Kingdom
-2. https://ror.org/038t36y30 Electron Microscopy Core Facility (EMCF), Heidelberg University Heidelberg Germany
-3. https://ror.org/038t36y30 Centre for Organismal Studies (COS), Heidelberg University Heidelberg Germany
+1. Living Systems Institute, University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))
+2. Electron Microscopy Core Facility (EMCF), Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+3. Centre for Organismal Studies (COS), Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
 
 † Corresponding author
 
 ## Abstract
 
-Hydrostatic pressure is a dominant environmental cue for vertically migrating marine organisms but the physiological mechanisms of responding to pressure changes remain unclear. Here, we uncovered the cellular and circuit bases of a barokinetic response in the planktonic larva of the marine annelid Platynereis dumerilii . Increased pressure induced a rapid, graded, and adapting upward swimming response due to the faster beating of cilia in the head multiciliary band. By calcium imaging, we found that brain ciliary photoreceptors showed a graded response to pressure changes. The photoreceptors in animals mutant for ciliary opsin-1 had a smaller sensory compartment and mutant larvae showed diminished pressure responses. The ciliary photoreceptors synaptically connect to the head multiciliary band via serotonergic motoneurons. Genetic inhibition of the serotonergic cells blocked pressure-dependent increases in ciliary beating. We conclude that ciliary photoreceptors function as pressure sensors and activate ciliary beating through serotonergic signalling during barokinesis.
+Hydrostatic pressure is a dominant environmental cue for vertically migrating marine organisms but the physiological mechanisms of responding to pressure changes remain unclear. Here, we uncovered the cellular and circuit bases of a barokinetic response in the planktonic larva of the marine annelid Platynereis dumerilii. Increased pressure induced a rapid, graded, and adapting upward swimming response due to the faster beating of cilia in the head multiciliary band. By calcium imaging, we found that brain ciliary photoreceptors showed a graded response to pressure changes. The photoreceptors in animals mutant for ciliary opsin-1 had a smaller sensory compartment and mutant larvae showed diminished pressure responses. The ciliary photoreceptors synaptically connect to the head multiciliary band via serotonergic motoneurons. Genetic inhibition of the serotonergic cells blocked pressure-dependent increases in ciliary beating. We conclude that ciliary photoreceptors function as pressure sensors and activate ciliary beating through serotonergic signalling during barokinesis.
 
 ## Introduction
 
@@ -26,15 +26,47 @@ To understand the behavioural and neuronal mechanisms of pressure responses in m
 
 ## Results
 
-## Platynereis larvae respond to changes in hydrostatic pressure
+### Platynereis larvae respond to changes in hydrostatic pressure
 
 To determine whether Platynereis larvae respond to changes in hydrostatic pressure, we developed a custom behavioural chamber with precise pressure control. We subjected larvae to step changes in pressure and recorded their behaviour under near-infrared illumination (Figure 1A; see Materials and methods). We used hydrocarbon-free compressed air to increase pressure in the chamber. We tested a range of pressure levels in randomized order from 3 to 1000 mbar (1 mbar equals to 1 cm water depth) (Figure 1—figure supplement 1A). We focused on 1- to 3-day-old larvae corresponding to the early and late trochophore and nectochaete stages. We used batches of >100 larvae for each experiment. Both 2- and 3-day-old larvae respond to pressure increase by swimming upwards faster and in straighter trajectories, as quantified by changes in average vertical displacement, swimming speed, the ratio of upward to downward trajectories (Figure 1B, C, Figure 1—figure supplement 1B–D; Video 1), and a straightness index (the net over total distance) (Figure 1—figure supplement 1E).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the behavioural setup used to stimulate larvae with controlled pressure levels. Vertical displacement of (B) 2-day-old and (C) 3-day-old larvae (insets) as a function of time relative to different step increases in pressure. Dashed line at 60 s indicates the end of stimulation. Each data point is the average of 2–12 (B) or 4–5 (C) batches of larvae. Maximum increase in relative vertical displacement of (D) 2-day-old and (E) 3-day-old larvae for each pressure level tested. Small filled circles represent individual data points, data points from the same batch are joined by lines. Larger open circles indicate the mean across all batches. (F) Vertical displacement of 3-day-old larvae acclimated for ca. 10 min to either ambient pressure (0 mb, left), 100 mb (centre), or 500 mb (right) prior to the experiment. Lines are coloured by set fractional increments in pressure. (G) Maximum increase in relative vertical displacement of 3-day-old larvae acclimated to 0, 100, or 500 mb. The data are fitted with a saturation curve. 5 (0, 100 mb) or 6 (500 mb) batches tested in F–G. (H) Maximum ciliary beat frequency (CBF) that single larvae reached in the 30 s prior (category Before), or during the first 30 s (Stimulus) of the indicated increase in pressure. N = 18–22 larvae. Data points for the same larva are joined by lines. One-tailed paired t-test with Bonferroni correction testing for an increase in CBF; p-values <0.05 are shown. Error bars in B, C, and F show the standard error of the mean. Data in D, E, and G were fitted with a third (D, E) or a second (G) order polynomial function. Figure 1—source data 1 (A, D), Figure 1—source data 2 (C, E), Figure 1—source data 3 (F, G), Figure 1—source data 4 (H).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Metrics of the pressure response in 2-day-old larvae (A–E) and 3-day-old larvae (F–J). Dashed line at 60 s in each plot indicates the end of stimulus. (A, F) Range of step increases in pressure applied to larvae. The step increases were applied in randomized order to each batch of larvae. (B, G) Change in mean speed relative to mean speed before stimulus. (C, H) Mean vertical movement. (D, I) Straightness index. The closer the value is to 1, the less tortuous the track is. (E, J) Upward track index. Defined as the number of upward tracks divided by the number of downward tracks. Colour-coded trajectories of 2-day-old (K, Video 2) and 3-day-old (L, Video 3) larvae prior and during a step increase in pressure. Trajectories to two different pressure levels are shown, a moderate (top row), and a high (bottom row) step increase. Each projection is 10 s long starting 10 s before stimulus (−10 s, left-most column) and ending in the 30 s after stimulus (30 s, right-most column). Each data point is the average of 2–12 (A–E) or 4–5 (F–J) batches. Error bars in A-J show the standard error of the mean. Colour code in B–E as in A and in G–J as in F. Figure 1—source data 1 (A–E), Figure 1—source data 2 (F–J).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A, B) One-day-old Platynereis larvae do not respond to small increases in pressure. (A) Range of step increases in pressure applied to 1-day-old larvae. (B) Average vertical displacement of 1-day-old larvae relative to stimulus onset. Each data point is the average of 1–4 batches. (C–E) Three-day-old Platynereis larvae respond to small changes in hydrostatic pressure applied with a column of water. (C) Schematic of the behavioural setup used to stimulate larvae with a column of water. The height of the column was varied at random between 10 and 200 cm, in 10 cm increments. 1 mb ≈ 1 cm. (D) Vertical displacement as a function of pressure onset. Vertical dashed line at 20 s indicates end of stimulus. (E) Maximum increase in vertical displacement as a function of pressure. Each data point in D and E is the average of up to 12 batches. Error bars in A , B, and D show the standard error of the mean. Data in B colour-coded as in A. Figure 1—source data 5 (A, B), Figure 1—source data 6 (D, E).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A–C) Response of 3-day-old larvae to a linear increase in pressure (N = 4–14 batches). (A) Average linear increase at five different rates (colour code in B) and the fitted curves for the time interval shown. (B) Mean change in vertical displacement at the five different rates of pressure increase shown in A as a function of time. (C) Maximum change in vertical displacement for each rate of pressure increase. Data fitted with either a linear (dashed line) or a second-degree polynomial function (solid line). (D) Average pressure changes applied for data shown in Figure 1F, G. (E, F) Average particle distribution (as a proxy of larval distribution) across the chamber (divided in 5 bins, as schematized in E) prior to pressure stimulus for each batch tested. (G) Mean change in vertical displacement upon release of pressure from 100 and 500 mb after testing the step increases in pressure shown in D. The mean pressure change applied is overlaid on the same plot. (H) Maximum decrease in relative vertical displacement after stimulus start for each set increment in pressure across the three acclimation conditions. The ‘release’ dataset consists of the trials shown in G. Dashed line at 60 s in D and G indicates the point of pressure release and increase, respectively. 5 (0, 100 mb) or 6 (500 mb) batches tested in D–H. Error bars in A, B, D and G show the standard error of the mean. Figure 1—source data 7 (A–C), Figure 1—source data 3 (D, F–H).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A, top) Schematic of the preparation used to quantify ciliary beat frequency (CBF). (A, bottom left) Snapshot of a glued 2-day-old larva in the pressure setup. (A, bottom right) Standard deviation projection of time-lapse recording to highlight ciliary band activity. (B) Average pressure levels measured during the experiments corresponding to data shown in Figure 1H. The step increases were applied in randomized order to each larva. Error bars show the standard error of the mean. (C) Maximum percentage change in CBF during the first 30 s of the stimulus period for each of the step increases in pressure tested. One-tailed unpaired t-test with Bonferroni correction. p-values <0.05 are shown. Data points from the same larva are joined by lines. N = 18–22 larvae. (D) Individual (thin traces) and mean (thick traces) CBF as a function of pressure level. Dashed line indicates end of pressure stimulus. Figure 1—source data 4 (B–D).
+
+![Video 1.](https://cdn.elifesciences.org/articles/94306/elife-94306-video1.mp4.jpg)
+
+**Video 1.:** Larvae were placed in a pressure vessel (100 mm height) and recorded in effective darkness (with 850 nm light) with a camera placed in front of the vessel (see Figure 1A). Larvae swim towards the top of the chamber as soon as pressure is increased. Blue traces (10 s long) delineate swimming trajectories.
+
 We used the maximal vertical displacement value (normalized to the mean displacement per trial prior to stimulus presentation) to compare the magnitude of responses as a function of pressure change. In both 2- and 3-day-old larvae, the responses were graded: higher pressure levels led to higher maximal vertical displacement (Figure 1D, E). Three-day-old larvae had a slightly lower sensitivity threshold (10–20 mbar) than 2-day-old larvae (20–30 mbar) and their response plateaued at lower pressure levels than that of 2-day-old larvae (Figure 1B–E). One-day-old larvae did not show a detectable response to even the largest pressure levels tested (Figure 1—figure supplement 2A, B). The straightness of trajectories also increased with increasing pressure changes. This was due to narrower helical swimming paths under pressure, visible in close-up videos (Video 2 and Video 3). Three-day-old larvae also showed a diving response upon the release of pressure (Figure 1B, C, F; Figure 1—figure supplement 1C, D). Two-day-old larvae stopped moving upwards when the stimulus ended, but did not show an active diving response to pressure OFF.
+
+![Video 2.](https://cdn.elifesciences.org/articles/94306/elife-94306-video2.mp4.jpg)
+
+**Video 2.:** Blue traces (each 4 s long) delineate swimming trajectories. The two videos are played at the same speed.
+
+![Video 3.](https://cdn.elifesciences.org/articles/94306/elife-94306-video3.mp4.jpg)
+
+**Video 3.:** Blue traces (each 4 s long) delineate swimming trajectories. The two videos are played at the same speed.
 
 To exclude the possibility that either the changes in the partial pressure of gases due to the use of compressed air, or the mechanical wave associated to the inflow of air caused the upward swimming behaviour, we also used a static column of water of different heights to change pressure levels (Figure 1—figure supplement 2C). We observed the same dependence of vertical displacement on the magnitude of pressure change in this setup (Figure 1—figure supplement 2D, E). Overall, our experiments uncovered a graded, saturable, and highly sensitive upward swimming ON response to increased pressure in Platynereis larvae and a diving OFF response (in 3-day-old larvae only).
 
-## Platynereis larvae respond to relative changes of pressure
+### Platynereis larvae respond to relative changes of pressure
 
 Larvae may either detect absolute pressure levels, relative changes, or the rate at which pressure changes (Morgan, 1984). To differentiate between these possibilities, we first exposed larvae to linear increases of pressure with rates between 0.05 and 2.6 mbar s−1 (Figure 1—figure supplement 3A). We used a second-degree polynomial function for rate categories 0.3–0.7 mbar s−1 (analysis of variance [ANOVA], p = 6.5e−3) and 0.9–1.3 mbar s−1 (ANOVA, p = 5.8e−8), as it described the relationship between vertical displacement and pressure more accurately than a simple linear model. The difference between a linear and a second-degree polynomial fit was not significant for rates >1.3 mbar s−1 (ANOVA, p ~ 0.1). These results suggest that larvae compensate for the increase in pressure by a corresponding increase in upward swimming when rates of pressure increase are sufficiently high.
 
@@ -42,41 +74,89 @@ The linear response to a gradual increase in pressure suggests that larvae detec
 
 Our experiments suggest that Platynereis larvae react to relative increases in pressure in a graded manner proportional to the magnitude of the increase. The response is adaptable and occurs at very different basal pressures (0 or 500 mbar—corresponding to surface or 5 m of water depth). This hints at a pressure-gauge mechanism to regulate swimming depth by compensating for vertical movements due to down-welling currents (Genin et al., 2005), sinking when cilia are arrested (Verasztó et al., 2017) or downward swimming (e.g. during UV avoidance; Verasztó et al., 2018).
 
-## Ciliary beat frequency increases with pressure
+### Ciliary beat frequency increases with pressure
 
 To understand the mechanism by which larvae regulate swimming in response to an increase in pressure, we analysed the effect of pressure on ciliary beating in the prototroch—the main ciliary band that propels swimming in 2- and 3-day-old Platynereis larvae. Individual 2-day-old larvae were tethered to a glass cuvette from the posterior end with a non-toxic glue previously used in Platynereis larvae (Bezares-Calderón et al., 2018). The cuvette was inserted into a custom-made pressure vessel placed under a microscope. We applied 60 s step increases in pressure in a randomized order and recorded ciliary beating in effective darkness (Figure 1—figure supplement 4A, B).
 
 The mean ciliary beat frequency (CBF) increased as soon as a step change in pressure was applied, with larger step changes showing more noticeable increases in beat frequency (Figure 1—figure supplement 4C, Video 4). The maximum ciliary beat frequency (max. CBF) during the stimulus period showed a statistically significant increase for all but the lowest pressure steps tested relative to the period before the onset of the stimulus (85 mb p = 0.046, 237.5 mb p = 2.08E−05, 556 mb p = 8.35E−07, 988 mb p = 7.8E−07; one-tailed paired t-test with Bonferroni correction testing for an increase in CBF; Figure 1H). The related relative measure of maximum percent change (max. ∆%CBF) also showed an increase under pressure (Figure 1—figure supplement 4D). Overall, these data suggest that rapid upward swimming under pressure is due to an increase in the beating frequency of prototroch cilia that is proportional to the change in pressure.
 
-## Brain ciliary photoreceptor cells show graded activation under increased pressure
+![Video 4.](https://cdn.elifesciences.org/articles/94306/elife-94306-video4.mp4.jpg)
+
+**Video 4.:** Note how ciliary beating speeds up soon after the step change in pressure (998 mb).
+
+### Brain ciliary photoreceptor cells show graded activation under increased pressure
 
 To identify the pressure-sensitive cells in Platynereis larvae, we developed an approach to couple imaging of neuronal activity with pressure increases (Figure 2A). We injected fertilized eggs with mRNA encoding the calcium indicator GCaMP6s (Chen et al., 2013)—an indirect reporter of neuronal activity—and embedded injected larvae in low-melting agarose. Mounted larvae were introduced into a custom-built microscopy chamber, where pressure could be increased using compressed air. To provide morphological landmarks and to correct for Z-shifts during imaging, we co-injected larvae with an mRNA encoding the membrane-tagged reporter palmitoylated tdTomato.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig2-v1.jpg)
+
+**Figure 2.:** (A) Ca2+ imaging preparation to analyse neuronal activation upon pressure stimulation. Left: side view of the three-dimensional (3D) model of the microscopy pressure chamber. Right: larvae embedded in agarose are placed on a round coverslip. An enclosure around the embedded larva serves to keep it under water. Bottom: the enclosed larva on the coverslip is inserted in the central hole of the chamber. A screwable lid secures the coverslip to the chamber and prevents air leaks. Pressure is increased with compressed air entering from one of the inlets. (B, top) Maximum intensity projection of a Z-stack acquired before (left) or during (right) the pressure stimulus of a 2-day-old larva expressing GCaMP6s. (B, bottom) Enlarged views of the corresponding regions highlighted with dashed squares in the top panels. Asterisks mark the position of cell nuclei of the four cells activated by pressure. (C) Still images of a ciliary photoreceptor cell (cPRC) acquired at different time points relative to increase in pressure (t = 0, Video 5). The time points are indicated on the upper left of each panel. Pressure level is also indicated. (D) Maximum intensity projection of a GCaMP6s Z-stack during raised pressure (white channel) and of a Z-stack of the same larva after immunofluorescence (IF) with NIT-GC2, a marker for cPRC cilia (Jokura et al., 2023), and for serotonin (cyan channel). Anterior view in B–D. (E) Mean ∆R/R in cPRC_l1 across different step increases in pressure as a function of time of stimulation. Dashed line at 60 s marks the end of stimulus. N = 8 larvae. Error bars show the standard error of the mean. (F) Max. ∆R/R in cPRC_l1 as a function of pressure level. Data points from the same larva are joined by lines. Regression line fitting the data is also shown. One-tailed unpaired t-test with Bonferroni correction testing for an increase in Max. ∆R/R with pressure. p-values <0.05 are shown. Figure 2—source data 1 (E, F).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Maximum intensity projections of 2-day-old larvae expressing GCaMP6s. Four larvae are shown. (Top panels for each larva) Projections acquired before (+0 mb) or during (+pressure) presentation of the stimulus. (Bottom panels for each larva) Close-up views of the regions highlighted with dashed squares in the top panels. White asteriks mark the position of cell nuclei of the four sensory cells activated by pressure (ciliary photoreceptor cells, cPRCs). Blue asterisk marks the position of the assymetric sensory cell SNd1_unp. Green asterisks mark the position of the putative NOS-expressing interneurons (INNOS). Pressure >500 mb in all samples shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Step pressure increases applied to 2-day-old larvae in the Ca2+ imaging pressure setup (see Figure 2A). The step increases were applied to each larva in a randomized order. (B) Mean ∆R/R in cPRC_r1, cPRC_l2, and cPRC_r2 as a function of time relative to pressure increase (t = 0). (C) Max. ∆R/R in in cPRC_r1, cPRC_l2, and cPRC_r2 as a function of pressure level. One-tailed unpaired t-test with Bonferroni correction testing for an increase in Max. ∆R/R with pressure. p-values <0.05 are shown. (D) ∆R/R in SNd1_unp upon 750 mb pressure increase. Thick line is the mean of individual measurements (thinner lines). (E) Individual ∆R/R measurements (thin lines) in the four cPRCs across different steps of pressure increase as a function of time of stimulation. Thicker line is the mean ∆R/R for each pressure level and cell. Dashed lines at 60 s in B–D mark the end of stimulus. N = 2–4 (cPRC_r1), 4–5 (cPRC_l2), 4 (cPRC_r2), 4 (SNd1_unp) cells in B–D. Error bars in A and B show the standard error of the mean. Figure 2—source data 1 (A–E).
 
 By imaging the entire larva before and during the pressure stimulus, we found a group of four cells in the dorsomedial brain that showed consistent increases in GCaMP6s fluorescence when pressure increased (Figure 2B; Figure 2—figure supplement 1). Time-lapse (TL) recordings of these cells revealed that they had prominent cilia, which become visible by the increase in GCaMP6s signal during pressure increase (Figure 2C, Figure 2—figure supplement 1, Video 1). The position, number, size, and morphology of these cells closely matched to that of the previously described brain ciliary photoreceptor cells (cPRCs) (Arendt et al., 2004; Tsukamoto et al., 2017; Verasztó et al., 2018). Immunostaining of the same larvae that were used for Ca2+ imaging with an antibody raised against NIT-GC2, a marker of cPRC cilia(Jokura et al., 2023), followed by image registration directly confirmed that the four cells activated under pressure were the cPRCs (Figure 2D).
 
 To characterize the response of cPRCs to pressure, we applied a randomized set of pressure increases (Figure 2—figure supplement 2A) to 2-day-old larvae expressing GCaMP6s while recording fluorescence changes in the four cPRCs. All four cPRCs responded to the pressure levels tested (Figure 2E; Figure 2—figure supplement 2B, C). The increase in GCaMP6s signal was observed in both the cell body and in the cilia of the cPRCs (Figure 2C, Video 5). This response—like that observed at the behavioural level—was graded and increased proportionally to the pressure change (Figure 2E, F; Figure 2—figure supplement 2B, C, E). The difference in the response between pressure levels was statistically significant for some of the cPRCs (Figure 2F; Figure 2—figure supplement 2C). The calcium signal also decreased rapidly after stimulus onset. Therefore, cPRCs may be able to directly encode the intensity of the stimulation in their activity, reflected in their internal Ca2+ levels, and adapt to pressure levels. Their unique sensory morphology and pressure-induced Ca2+ dynamics make the cPRCs candidate pressure receptors.
 
+![Video 5.](https://cdn.elifesciences.org/articles/94306/elife-94306-video5.mp4.jpg)
+
+**Video 5.:** The increase in GCaMP6s signal is noticeable both in the cell body (cb) and in the cilia. Some frames are shifted in XY due to sample movement.
+
 An additional unpaired sensory cell on the dorsal side was also activated in some of the trials (Figure 2—figure supplement 1, green asterisk). We refer to this cell here as SNd1_unp (by position and morphology it corresponds to the neurosecretory cell SNYFa+; Williams et al., 2017). At 750 mb, this cell responded by a transient but robust increase at stimulation onset, but ∆R/R dropped to basal values before the end of the stimulus, unlike the cPRC response (Figure 2—figure supplement 2D). SNd1_unp (SNYFa+) may also contribute to the pressure response, although it is less sensitive than cPRCs and has very few synapses (Williams et al., 2017).
 
 Another indirect observation that is consistent with cPRCs being the primary pressure receptors is that 1-day-old larvae that lack differentiated cPRCs (Fischer et al., 2010) do not respond to pressure (Figure 1—figure supplement 2A).
 
-## c-opsin-1 mutants have a reduced pressure response
+### c-opsin-1 mutants have a reduced pressure response
 
 cPRCs express ciliary-opsin-1 (c-ops-1), which forms a UV-absorbing photopigment (Arendt et al., 2004; Tsukamoto et al., 2017; Verasztó et al., 2018). Knocking out the c-ops-1 gene abolishes a UV-avoidance response in Platynereis larvae (Verasztó et al., 2018). As cPRCs respond to pressure increases, we tested whether c-ops-1 knockout mutants (c-ops-1∆8/∆8) also showed a defect in the pressure response.
 
 A range of step increases in pressure were applied to single batches of either wild-type (WT) or c-ops-1∆8/∆8 3-day-old larvae (Figure 3—figure supplement 1A). The assays were carried out in a smaller pressure vessel (height: ~4 cm), to allow consistent imaging of the fewer mutant larvae available. The swimming speed of c-ops-1∆8/∆8 mutant larvae was not significantly different from WT larvae (p = 0.118, unpaired Wilcoxon test for lower speed in mutants; Figure 3—figure supplement 1B). c-ops-1∆8/∆8 larvae responded in a graded manner to increases in pressure by upward swimming (Figure 3A; Figure 3—figure supplement 1C). However, their response was weaker than the response of age-matched WT larvae (Figure 3—figure supplement 1C). An ANOVA comparison showed that a model considering the genotype better explained the data than a model without this variable, for either a simple or a polynomial linear regression model (p-values = 9.98e−0⁷ and 9.92e−⁰⁶, respectively). Ciliary beating prior to pressure increase was not significantly different between c-ops-1∆8/∆8 and WT larvae (p = 0.835, unpaired Wilcoxon test for lower CBF in mutants; Figure 3—figure supplement 1D). Upon pressure increases, CBF in c-ops-1∆8/∆8 larvae showed a significant increase to the three highest pressure levels tested (237.5 mb p = 0.014, 556 mb p = 9.7E−05, 988 mb p = 6.35E−05; one-tailed paired t-test with Bonferroni correction testing for an increase in CBF; Figure 3B). c-ops-1∆8/∆8 larvae also showed significant increases in max. ∆%CBF as the pressure stimulus was increased (Figure 3—figure supplement 1E; compare to the WT data in Figure 3B), with no significant difference in the increase to WT larvae (Figure 3—figure supplement 1F). In summary, c-ops-1∆8/∆8 larvae can still respond to changes in pressure in a graded manner, but the response is weaker than in WT larvae, both at the population and at the single-larva levels. This indicates that c-opsin-1 is not directly required for the pressure response, but its absence leads to a weakened response to pressure.
 
-## c-opsin-1 mutants have defects in cPRC cilia
+![Figure 3.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig3-v1.jpg)
+
+**Figure 3.:** (A) Maximum change in vertical displacement of wild-type (WT) and c-ops-1∆8/∆8 3-day-old larvae for each pressure step-change tested. Data points from the same batch are joined by lines. Larger open circles indicate the mean value. Thicker solid lines show the regression model predictions. N = 7–9 (c-ops-1∆8/∆8), N = 8–10 (WT) batches. (B) Max. ciliary beat frequency (CBF) that individual c-ops-1∆8/∆8 larvae reached in the 30 s prior (Before), or during the first 30 s of the indicated increase in pressure (Stimulus). Data points for the same larva are joined by lines. One-tailed paired t-test with Bonferroni correction testing for an increase in CBF; all p-values are shown. N = 10–17 larvae. (C, D) cPRC ciliary volume measured for each pair of cPRC cilia on the left and right body sides in 2-day-old WT and c-ops-1∆8/∆8 larvae. Volumes were measured using the signal of the NIT-GC2 antibody (α-NIT-GC2). (C) Maximum intensity projections of IF stainings used for quantifying cPRC cilary volume. (D) cPRC ciliary volume distribution sorted by genotype and body side. One-tailed unpaired t-test with Bonferroni correction testing for a decrease in ciliary volume in mutant larvae. p-values <0.05 are shown. N = 9–10 (WT), 17–19 (c-ops-1∆8/∆8) larvae. (E) Morphology of cPRC cilia in 3-day-old WT (top row) and c-ops-1∆8/∆8 (bottom row) larvae reconstructed by serial-section electron microscopy (ssEM). Reconstructions of cPRC cilia are shown in the left-most panels. A representative micrograph of the ssEM data used for the reconstructions is shown in the adjacent panels. Dashed squares in these images mark the regions shown in the enlarged views to the right. Orange arrowheads point to cilia with more than one microtubule dublets. In the right-most panels, the branches of single cPRC cilia are coloured by its position relative to the basal body (bb): basal, internal, or terminal branches. The remaining cPRC cilia are coloured in grey. cb: cell body; n: nucleus. (F) Length of cPRC cilia of WT (N = 29 cilia) and c-ops-1∆8/∆8 (N = 32 cilia) larvae measured from ssEM volume reconstructions. Unpaired Wilcoxon test for larger branches in the WT larva: p = 0.076. (G) Length distribution of basal, internal and terminal branches for each genotype shown as a percentage of the total ciliary arbor length. One-tailed unpaired Wilcoxon test with Bonferroni correction for larger basal, internal, and terminal branches in the c-ops-1∆8/∆8 mutant: p = 0.0592, p = 1.26E-4, p = 6.29E-5, respectively. Figure 3—source data 1 (A), Figure 1—source data 4 (B), Figure 3—source data 2 (D).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mean pressure increase steps applied to 3-day-old wild-type (WT) or c-ops-1∆8/∆8 larvae. (B) Average swimming speed per batch of WT or c-ops-1∆8/∆8 larvae in the 10 s prior to pressure increase. One-tailed unpaired Wilcoxon test for a decrease in swimming speed in mutant larvae: p = 0.188. (C) Change in mean vertical displacement as a function of time of stimulation for each genotype and step increase in pressure. Individual data points are also plotted. Dashed lines at 60 s mark the end of stimulus. N = 7–9 (c-ops-1∆8/∆8) batches, N = 8–10 (WT) batches in A–C. (D) Mean ciliary beat frequency (CBF) for 2-day-old WT or c-ops-1∆8/∆8 larvae in the 30 s prior to stimulus onset. N = 29 (WT), 19 (c-ops-1∆8/∆8) larvae. One-tailed unpaired t-test testing for a decrease in CBF in mutant larvae: p = 0.786. (E) Maximum % change in CBF (% ∆CBF) upon pressure increase in 2-day-old c-ops-1∆8/∆8 larvae. One-tailed unpaired t-test with Bonferroni correction. p-values <0.05 are shown. N = 10–17 larvae. (F) Maximum percentage change in CBF during the first 30 s of the stimulus period in WT (N = 18–22 larvae) and in c-ops-1∆8/∆8 (N = 10–17 larvae) 2-day-old larvae. One-tailed unpaired t-test with Bonferroni correction (G) Max. intensity projections of ciliary photoreceptor cell (cPRC) cilia of 2-day-old WT and c-ops-1∆8/∆8 larvae used for quantifiying cPRC ciliary volume (see Figure 3D). Figure 3—source data 1 (A–C), Figure 1—source data 4 (D–F).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Ultrastucture of cPRC cilia in a wild type and a c-ops-1∆8/∆8 mutant larva. Rectangles highlight branches with two pairs of microtubule doublets shown in enlarged views on the right.
+
+### c-opsin-1 mutants have defects in cPRC cilia
 
 The reduced response of c-ops-1∆8/∆8 larvae to pressure may stem from morphological defects of the cPRC sensory cilia in these mutants. We used stainings with acetylated tubulin and NIT-GC2, an antibody specifically marking cPRC cilia (see Figure 2D) to measure the volume of the ciliary compartment in WT and c-ops-1∆8/∆8 larvae (Figure 3C; Figure 3—figure supplement 1G). Volumetric imaging in 2-day-old larvae stained with these antibodies revealed that the cPRC ciliary compartment in c-ops-1∆8/∆8 larvae was significantly smaller than in age-matched WT larvae (p = 0.044 and 0.018 for left and right ciliary compartments, one-tailed unpaired t-test with Bonferroni correction; Figure 3D). In some cases, cPRC ciliary compartments were drastically reduced, albeit never completely absent in all four cells (Figure 3—figure supplement 1F). A reduced ciliary compartment may underlie the weaker responses of c-ops-1∆8/∆8 larvae to pressure.
 
 To further investigate the morphological defects of cPRC sensory cilia in c-ops-1∆8/∆8 larvae, we reconstructed the cPRC ciliary structure of a mutant larva using volume electron microscopy. We compared this reconstruction to a volume EM dataset of cPRC cilia from a 3-day-old WT larva previously reported (Verasztó et al., 2018). The two WT cPRCs reconstructed have 14 to 15 ramified cilia tightly wrapped on themselves (Figure 3E, top row, Video 6). Branching occurs close to the basal body, soon after cilia protrude from the cell body. Most branches inherit an individual microtubule doublet. The 15 to 17 cilia of the two cPRCs reconstructed in a c-ops-1∆8/∆8 larva revealed a more sparsely packed structure (Figure 3E, bottom row; Figure 3—figure supplement 1A, Video 7). Mutant cilia are not significantly shorter than WT cPRC cilia (p = 0.076, Wilcoxon test for longer WT cilia, Figure 3F). However, we noticed when comparing cross-sections of each genotype that individual branches of mutant cPRC cilia often contained more than one microtubule doublet (arrowheads in Figure 3E; Figure 3—figure supplement 2A). This suggests that cPRC cilia of c-ops-1∆8/∆8 larvae have alterations in branching morphology. We indeed found that the terminal branches of cilia in the mutant are significantly shorter (p = 6.29E−05 Wilcoxon test for shorter branches in the mutant, Figure 3G, right-most plot), while internal branches are longer than those in the WT (p = 1.26E−04; Wilcoxon test for longer branches in the mutant, Figure 3G, middle plot). Basal branches also tended to be larger, but no statistically significance can be concluded (p = 0.06, Wilcoxon test for longer branches in the mutant, Figure 3G, left-most plot). This result supports the former observation that branching occurs more distally to the basal body in c-ops-1∆8/∆8 larvae. Longer internal branches in mutant cPRC cilia would also explain the presence of ciliary profiles with more than one microtubule doublet (Figure 3—figure supplement 2A).
 
+![Video 6.](https://cdn.elifesciences.org/articles/94306/elife-94306-video6.mp4.jpg)
+
+**Video 6.:** The branches of each cilium are coloured according to their position along the cilium: basal (pink), intermediate (green), or light blue (terminal). Basal bodies are shown as black spheres. The cell and nucleus of one of the cells are outlined (previously reconstructed in Verasztó et al., 2018).
+
+![Video 7.](https://cdn.elifesciences.org/articles/94306/elife-94306-video7.mp4.jpg)
+
+**Video 7.:** The branches of each cilium are coloured according to their position along the cilium: basal (pink), intermediate (green), or light blue (terminal). Basal bodies are shown as black spheres. The part of the cell body imaged in the volume is outlined.
+
 Overall, our physiological and genetic analyses suggest that the brain cPRCs act as graded and fast-adapting pressure receptors. In c-ops-1∆8/∆8 larvae, the ciliary compartment is smaller and shows morphological defects, revealing a genetic requirement for c-opsin-1 in the establishment of the sensory compartment and supporting the idea that the cPRC ciliary compartment is the site of pressure transduction.
 
-## Synaptic transmission from serotonergic ciliomotor neurons mediates pressure-induced increases in ciliary beating
+### Synaptic transmission from serotonergic ciliomotor neurons mediates pressure-induced increases in ciliary beating
 
 The complete synaptic wiring diagram of the cPRCs was previously reported from an electron microscopy volume of a 3-day-old larva (Figure 4A, B; Verasztó et al., 2018). The shortest neuronal path from cPRCs to the prototroch involves a feed-forward loop from the cPRCs to two types of postsynaptic interneurons: the INNOS and the INRGWa cells, expressing respectively Nitric Oxide Synthase (NOS) or the neuropeptide RGWamide (Figure 4B). INRGWa cells in turn synapse on a pair of head serotonergic ciliomotor neurons (Ser-h1). Ser-h1 cells directly innervate the prototroch ciliary band and synapse on the MC head cholinergic ciliomotor neuron (Figure 4B). Ser-h1 cells are thought to promote ciliary beating by directly releasing serotonin onto the ciliary band cells and indirectly by inhibiting the cholinergic MC neuron that is required to arrest ciliary beating (Verasztó et al., 2017).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig4-v1.jpg)
+
+**Figure 4.:** Volume EM reconstruction (A) of the cells in the ciliary photoreceptor cell (cPRC) synaptic circuit (B). cPRCs synpase in the middle of the brain on both INNOS and INRGWa neurons. INRGWa cells synapse on Ser-h1 neurons, which directly innervate the ciliary band and also target the MC cell. Only the cells in the shortest path to the prototroch are included. (C) Schematic of the gene constructs used to test the role of Ser-h1 in the pressure response. The TPHp::tdT construct drives expression of the reporter protein Palmi-tdTomato in Ser-h1 and other serotonergic neurons. It was used as a control. The TPHp::tdT-P2A-TeTxLC construct expresses Palmi-tdTomato and the synaptic blocker TeTxLC as a fusion that gets post-translationally self-cleaved by the P2A peptide. (D) Maximum intensity projections of a larva injected with the TPHp::tdT-P2A-TeTxLC construct and stained with α-HA. Ser-h1 was labelled in this animal. Anterior view. (E) Max. CBF that single larvae reached in the 30 s prior (Before), or during the first 30 s of the indicated increase in pressure (Stimulus). Data points for the same larva are joined by lines. Larvae were injected either with the control plasmid TPHp::tdT (top row, N = 14–16 larvae), or with the TPHp::tdT-P2A-TeTxLC plasmid (bottom row, N = 13–16 larvae). One-tailed paired t-test with Bonferroni correction testing for an increase in CBF; p-values <0.05 are shown. Figure 4—source data 1 (E).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94306/elife-94306-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Maximum percentage change in CBF during the first 30 s of the stimulus period in 2-day-old larvae injected with the control plasmid TPHp::tdT (N = 14–16 larvae), or with the TPHp::tdT-P2A-TeTxLC plasmid (N = 13–16 larvae). One-tailed unpaired t-test with Bonferroni correction. (B) Individual (thin traces) and mean (thick traces) CBF as a function of pressure level for larvae injected with the indicated plasmid construct. Dashed line indicates end of pressure stimulus. Figure 4—source data 1 (A, B).
 
 To directly test the involvement of the Ser-h1 cells in the pressure response, we used a genetic strategy to inhibit synaptic release from serotonergic neurons. We used transient transgenesis to drive the expression of the synaptic inhibitor tetanus-toxin light chain (TeTxLC) (Sweeney et al., 1995) under the promoter of tryptophan hydroxylase (TPH), a marker of serotonergic neurons (Verasztó et al., 2017). The TPH promoter labels the head Ser-h1 and other serotonergic cells including the Ser-tr1 trunk ciliomotor neurons. Of the cells labelled with this promoter, only Ser-h1 is postsynaptic to cPRCs and provides strong innervation to the prototroch cells and the MC cell (Verasztó et al., 2017).
 
@@ -104,23 +184,201 @@ cPRCs are part of an ancient neurosecretory centre with putative roles in circad
 
 ## Materials and methods
 
-## Animal culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Platynereis dumerilii)</td>
+      <td>Wild-type</td>
+      <td>Marine Invertebrate Culture Unit, University of Exeter</td>
+      <td>NCBITaxon:6359</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. dumerilii)</td>
+      <td>c-opsin1Δ8/Δ8 knockout</td>
+      <td>Verasztó et al., 2018</td>
+      <td>NCBITaxon:6359</td>
+      <td>Knockout generated by TALEN-induced gene editing</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mRNA)</td>
+      <td>GCaMP6s mRNA</td>
+      <td>Randel et al., 2014</td>
+      <td></td>
+      <td>1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mRNA)</td>
+      <td>3xHA-Palmi-tdTomato mRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>&lt;0.2 ng/µl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-Tubulin, Acetylated antibody produced in mouse</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T6793, RRID:AB_477585</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal NIT-GC2 antibody, produced in rabbit</td>
+      <td>Jokura et al., 2023</td>
+      <td>aNIT-GC2</td>
+      <td>5 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-5-HT, produced in rabit</td>
+      <td>ImmunoStar</td>
+      <td>Cat# 20080, RRID:AB_572263</td>
+      <td>2 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-HA antibody produced in mouse</td>
+      <td>Cell Signaling Technology</td>
+      <td>HA-Tag (6E2), Cat# 2367, RRID:AB_10691311</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-HA antibody produced in rabbit</td>
+      <td>Cell Signaling Technology</td>
+      <td>HA-Tag (C29F4) Cat #3724, RRID:AB_1549585</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 488 produced in rabbit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11008, RRID:AB_143165</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F(ab’)2-Goat anti-Mouse IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 546</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11018, RRID:AB_2534085</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGEmMACHINE T7ULTRA Transcription Kit</td>
+      <td>Ambion, Thermo Fisher Scientific</td>
+      <td>Cat# AM1345</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUC57-TPHp3xHA-Palmi-tdTomato-P2A-TeTxLC (plasmid)</td>
+      <td>This paper</td>
+      <td>pLB316</td>
+      <td>Injected at 250 ng/µl in water</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUC57-TPHp3xHA-Palmi-tdTomato (plasmid)</td>
+      <td>Verasztó et al., 2017</td>
+      <td>pLB253</td>
+      <td>Injected at 250 ng/µl in water</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUC57-T7-RPP2-3xHA-Palmi-tdTomato (plasmid)</td>
+      <td>This paper</td>
+      <td>pLB260</td>
+      <td>Injected at 250 ng/µl in water</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUC57-T7-RPP2-GCaMP6s (plasmid)</td>
+      <td>Randel et al., 2014</td>
+      <td>pLB112</td>
+      <td>Injected at 250 ng/µl in water</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEMTEZ-TeTxLC</td>
+      <td>Yu et al., 2004</td>
+      <td>Addgene plasmid # 32640, RRID:Addgene_32640</td>
+      <td>Richard Axel &amp; Joseph Gogos &amp; C. Ron Yu</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ficoll PM70</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F2878</td>
+      <td>−20%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde Aqueous Solution (Paraformaldehyde Aqueous Solution) EM Grade</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# 15710</td>
+      <td>−4%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Low-melting agarose</td>
+      <td>Hampton Research</td>
+      <td>LM AgaroseTM, Cat# HR8-092</td>
+      <td>(2.5–3%)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CATMAID</td>
+      <td>Saalfeld et al., 2009</td>
+      <td>RRID:SCR_006278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Wormglu</td>
+      <td>GluStitch Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal culture
 
 P. dumerilii worms were cultured in a laboratory facility following established protocols. Larvae were raised in 0.22-µm-filtered artificial sea water (fASW, Tropic Marin) at 37 ppm and kept at 18°C in a 16/8-hr light–dark cycle. The genotype of each batch made from crosses of c-ops-1 KO mutant (c-ops-1∆8/∆8) worms was confirmed using the primer set reported in Verasztó et al., 2018.
 
-## Behavioural assays
+### Behavioural assays
 
-## Design and assembly of pressure chambers
+#### Design and assembly of pressure chambers
 
-## Large pressure chamber
+##### Large pressure chamber
 
 The chamber’s construction was based on an early design by Lincoln and Gilchrist, 1970. In brief, it consisted of a central core of 110 mm (H) × 90 mm (W) × 20 mm (D) with window openings on the lateral, front, and bottom sides. Each of the openings had a 12-mm crevice to accept custom-made acrylic plastic windows (Theodor Schmid GmbH, Tübingen). The windows were fitted into the crevices each with 3 mm-thick silicon rubber gaskets and fastened with aluminum plates and screws on top of them. The central working dimensions of the fully assembled chamber are 100 mm × 70 mm × 10 mm (70 ml). A 10-mm diameter threaded opening was bored at the back of the chamber to which a shutoff valve was connected. The design was produced using Blender (blender.org) and translated to a proprietary CAD-based software (eMachineShop CAD, Version 1.82 (2013), Micro Logic Corp, USA; Blender file, EMS file). The chamber was made of anodized aluminum alloy 6061 T6 using CNC machining techniques (eMachineShop, USA). The final threading was made in a workshop (Hans Mast GmbH, Tübingen).
 
-## Small pressure chamber
+##### Small pressure chamber
 
 A small chamber was used for experiments with fewer larvae per batch. This chamber was also utilized for the ciliary dynamics experiments (see below). The design followed that of the big chamber, except that this chamber had acrylic windows on all sides. The central working dimensions of the fully assembled chamber are 40 mm × 30 mm × 10 mm (12 ml). It was machined in aluminum by the EMBL mechanical workshop in Heidelberg.
 
-## Behavioural experiments
+### Behavioural experiments
 
 A mix of age-matched batches of larvae from different crosses were added to the pressure chamber. The chamber was not filled completely to minimize water disturbances upon the addition of air. Bubbles adhered to the edges and walls of the chamber were removed with a plastic mixer. Behaviour was recorded in effective darkness with near-infrared LED stripes (850 nm, Cat#: 15412085A9000 Wurth Elektronik, Germany) placed on each side of the chamber. A CCD camera (DMK31BF03 or DMK41BF02, Imaging source, Germany) was placed in front of the chamber at a distance sufficient to capture the entire behavioural arena in the field of view. The camera was triggered in most experiments at 10 fps via TTL communication with an Arduino microcontroller (Arduino Uno R3, Arduino, Italy).
 
@@ -128,67 +386,106 @@ The chamber was connected to a compressed air tank (Zero Grade Air, Hydrocarbons
 
 To increase pressure using a column of water, a flexible hose filled with sea water was screwed to the pressure chamber pre-loaded with the larvae under water to avoid introducing air into the system. The hose had ball valves at both ends (Figure 1—figure supplement 2C). The valve closer to the chamber was closed after connecting the hose to the chamber. The hose was straightened to the desired height (an equivalence of 1 cm to 1 mb was assumed), and the upper valve was opened at this moment. To increase pressure inside the chamber the lower valve was opened. To release pressure the hose was lowered to the level of the chamber. Pressure levels between 10 and 100 mb with 10 mb increments were chosen and applied in a randomized order.
 
-## Stimulation protocol
+### Stimulation protocol
 
 The general protocol consisted of recording the vertical swimming behaviour of larvae for 10 s before pressure was increased as a step function of time. Pressure was held at a set value for a defined amount of time; stimulus duration was in most cases 60 s. A list of target pressure values or rates of pressure increase/decrease were applied to the same group of larvae in randomized order (List randomization, random.org). A resting period of 5–10 min was allowed between trials.
 
-## Data analysis
+### Data analysis
 
 Tracks of swimming larvae (in XY coordinates) were extracted from the recordings using a modified version of the script by Gühmann et al., 2015 (BatchBehaviourTrackExtraction.ijm). Each recording was split into 1-s fragments (in most cases 10 frames long), from which tracks spanning the full second were obtained with the MTracK2 plugin (Nico Stuurman) and formatted into a table using R (ReadMtrack2files.R).
 
 The track coordinates were used to calculate a range of metrics (script MeasuresTracks.R) according to the formulae in Table 1.
 
+**Table 1.**
+ Swimming metrics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Formula</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Average vertical displacement</td>
+      <td>∑j=1Tracks∑i=1Frames(Yji+1−Yji)Tracks×#Frames×Framerate×mmpx−1</td>
+    </tr>
+    <tr>
+      <td>Vertical movement</td>
+      <td>∑j=1Tracks(Yjfin.pos−Yjinit.pos)FramesjTracks×Framerate×mmpx−1</td>
+    </tr>
+    <tr>
+      <td>Average speed</td>
+      <td>∑j=1Tracks∑i=1Frames(Xji+1−Xji)2+(Yji+1−Yji)2Tracks×Frames×Framerate×mmpx−1</td>
+    </tr>
+    <tr>
+      <td>Average straightness vertical path</td>
+      <td>∑j=1Tracks∑i=1Frames(Yji+1−Yji)(Xji+1−Xji)2+(Yji+1−Yji)2Tracks×Frames</td>
+    </tr>
+    <tr>
+      <td>Straightness index</td>
+      <td>∑j=1Tracks(Xjfin.pos−Xjinit.pos)2+(Yjfin.pos−Yjinit.pos)2∑i=1Frames(Xji+1−Xji)2+(Yji+1−Yji)2/Tracks</td>
+    </tr>
+  </tbody>
+</table>
+
 A maximum of 400 tracks per file were analysed. Only data containing more than 50 tracks for single-batch experiments, or by 100 or more tracks for experiments using a mix of multiple batches were used for analysis.
 
-Where indicated, results were averaged across trials, and the value normalized relative to average displacement prior to stimulus onset. Maximal values were obtained from smoothed triangular averages (i.e. a single moving average calculated twice, each with a window size of 5). For the long-exposure experiments, the percent increase in pressure at a time point t was calculated as follows: %pressure,incrementt=(pressuret+1000)*100pressureprior+1000-100 assuming the ambient pressure was ~1000 mb.
+Where indicated, results were averaged across trials, and the value normalized relative to average displacement prior to stimulus onset. Maximal values were obtained from smoothed triangular averages (i.e. a single moving average calculated twice, each with a window size of 5). For the long-exposure experiments, the percent increase in pressure at a time point $t$ was calculated as follows: $%pressure,increment_{t}=\frac{(pressure_{t}+1000)*100}{pressure_{prior}+1000-100}$ assuming the ambient pressure was ~1000 mb.
 
 Larval distribution along the vertical axis of the pressure vessel was obtained by dividing the image into 5 bins of equal size and counting the number of particles (after thresholding) in each bin. The script ScriptParticleCounter.ijm was used for that purpose.
 
-## Ciliary dynamics experiments
+### Ciliary dynamics experiments
 
-## Behavioural setup
+#### Behavioural setup
 
 To measure the ciliary dynamics of the main ciliary band (prototroch), 2-day-old larvae were tethered from the posterior end to a glass cuvette (15 mm × 15 mm × 4 mm) with non-toxic glue (Wormglu, GluStitch Inc). The cuvette was inserted into a custom-made three-dimensional printer adaptor and fitted into an air-tight vessel (small chamber, see above). The vessel was connected to the Arduino-controlled system of solenoid valves and electronic transducer used for the batch experiments. For experiments with injected larvae, fluorescein and reporter signals were confirmed prior to the experiment, but after gluing the larva to the cuvette. Randomized step increases in pressure were applied with a resting interval of 10 min between trials. Larvae in the device were imaged with an AxioZoom V.16 (Carl Zeiss Microscopy, Germany) fitted with a ×2.3 objective under effective darkness (i.e. filtering the light from a CL9000 LED lamp with a long-pass filter, Cat# 435700-9025-000, Carl Zeiss Microscopy, Germany). Recordings were acquired at 200 Hz with an ORCA Flash 4.0 camera (C11440-22CU, Hamamatsu) using µManager (Edelstein et al., 2010).
 
-## CBF measurements
+#### CBF measurements
 
-Kymographs of the entire ciliary band obtained with an ImageJ macro (CBFrollingAvgSubKimoUnsup.ijm) were used to measure the CBF and the beating state across each trial. The CBF was calculated by adjusting a ridge wave to the wavelet transform of the signal using the ridge extraction mode (bandpass filter: 5–22 Hz) of the MODA numerical toolbox (Iatsenko et al., 2019; Iatsenko et al., 2016), implemented with a Matlab script (batchprocessKymographs.m). A Forward Fourier Transform (FFT) for each time unit was also calculated from the data with the ImageJ macro, but it was not adequate to capture the time-varying frequency in the data. Nonetheless, the FFTs provided an indirect way of identifying ciliary arrests. The following formula was used to measure CBF from the FFTs:CBF=FPS/R
+Kymographs of the entire ciliary band obtained with an ImageJ macro (CBFrollingAvgSubKimoUnsup.ijm) were used to measure the CBF and the beating state across each trial. The CBF was calculated by adjusting a ridge wave to the wavelet transform of the signal using the ridge extraction mode (bandpass filter: 5–22 Hz) of the MODA numerical toolbox (Iatsenko et al., 2019; Iatsenko et al., 2016), implemented with a Matlab script (batchprocessKymographs.m). A Forward Fourier Transform (FFT) for each time unit was also calculated from the data with the ImageJ macro, but it was not adequate to capture the time-varying frequency in the data. Nonetheless, the FFTs provided an indirect way of identifying ciliary arrests. The following formula was used to measure CBF from the FFTs:
+
+$$
+CBF=FPS/R
+$$
 
 where FPS is the recording rate and R is the radius value in the FFT power spectrum image. Ciliary arrests corresponded to R values smaller than 8 or greater than 17 (corresponding to CBF between 11.8 and 25 for 200 fps). An R script (CBFcalculation.R) code was used to integrate pressure logs of each trial and the CBFs measured from wavelet and Fourier transforms, as well as to record the beating state of the band for each second of each trial.
 
-The CBF extracted from the wavelet transforms were averaged using a triangular moving average. The maximum CBF (max. CBF) from these smoothed data obtained for each period (i.e. before, during and after stimulus) of each trial was used for measuring significant changes in CBF. The percentage change in max.CBF during the stimulus period, %∆CBF, was defined as follows: %ΔCBF=(CBF-meanCBFpriormeanCBFprior)×100 , where meanCBFprior is the average CBF (after applying the rolling average) before stimulus onset.
+The CBF extracted from the wavelet transforms were averaged using a triangular moving average. The maximum CBF (max. CBF) from these smoothed data obtained for each period (i.e. before, during and after stimulus) of each trial was used for measuring significant changes in CBF. The percentage change in max.CBF during the stimulus period, %∆CBF, was defined as follows: $%ΔCBF=(\frac{CBF-meanCBF_{prior}}{meanCBF_{prior}})\times100$ , where $meanCBF_{prior}$ is the average CBF (after applying the rolling average) before stimulus onset.
 
-## Calcium imaging
+### Calcium imaging
 
-## Imaging setup
+#### Imaging setup
 
 Two- or three-day-old larvae injected with a mix of GCaMP6s (~1 µg/µl) and Palmitoylated-tdTomato mRNA (<0.2 ng/µl; see Microinjection and generation of plasmid constructs and mRNA section) were embedded in ~2.7% low-melting agarose (Hampton Research, Cat# HR8-092) with an anterior to posterior orientation and placed on a ø25 mm coverslip (Epredia, Cat# CB00250RAC33MNZ0). A water-tight enclosure around the agarose pad was adhered with Vaseline Jelly to the coverslip. ~120 µl fASW were added to the enclosure to keep the larva under water during the experiment. The preparation was inserted in the central cavity of a custom-made acrylic chamber (STEP file and Mechanical drawing file) and firmly held with an aluminium disk (~3 mm thick) screwed into the chamber. A silicone gasket was used to reduce air leakages. The chamber’s pipeline was plugged into the compressed air system shown in Figure 1A to control pressure levels.
 
-## Image acquisition and analysis
+#### Image acquisition and analysis
 
 Z-stacks and TL recordings were acquired with an inverted Zeiss LSM880 confocal microscope with the 488 nm argon laser set at 1% intensity, and the He 543 laser at 0.5% with a ×40 water objective (421767-9971-790, Carl Zeiss Microscopy). Z-stacks of the entire larva were acquired immediately before, during and after increasing pressure to ~750 mb. TLs were acquired at ~4.85 Hz for 120 s. Randomized step increases in pressure were applied for 60 s after recording basal activity for 30 s. The change in focus in TL recordings induced by the increase in pressure was corrected by automatically shifting the recording plane to the predicted new focal plane as soon as pressure started increasing, followed by stabilization of the imaging plane with an infrared light-based system (DefiniteFocus2, Carl Zeiss Microscopy). The same procedure was applied when pressure was brought back to ambient levels.
 
 Z-stacks acquired before, during, and after stimulus were aligned with Fijiyama (Fernandez and Moisy, 2021) using the tdTomato signal as a reference. This strategy was also used to correlate cells in Z-stacks before and after immunostaining (but using isotropic deformation). X–Y shifts in TL recordings were corrected using descriptor-based series registration (Preibisch et al., 2010), followed by measurement of the signal intensity in user-defined Regions of Interest (ROIs) across the TL with an ImageJ script (ExtractionIntensityValsTomGC.ijm). A corrected change in fluorescence ∆R/R (Bezares-Calderón et al., 2018; Böhm et al., 2016) based on both the GCaMP6s and the tdTomato signals was used to quantify neuronal activity (implemented in GCaMP_TLanalysis.R).
 
-## Microinjection and generation of plasmid constructs and mRNA
+### Microinjection and generation of plasmid constructs and mRNA
 
 Platynereis embryos were microinjected with mRNA or plasmid constructs following a modified version of the original protocol (Ackermann et al., 2005). mRNA was synthesized with the mMESSAGE mMACHINE T7 Transcription Kit (Ambion, Cat# AM1344) and eluted in RNAse-free water. The plasmid used to synthesize GCaMP6s mRNA was previously reported (pLB112, pUC57-T7-RPP2-GCaMP6-RPP2 in Randel et al., 2014).The Palmitoylated tdTomato (Palmi-tdTom) construct (pUC57-T7-RPP2-Palmi-3xHA-tdTom-RPP2 or pLB260) used to syntesize Palmi-tdTom mRNA was generated by subcloning the Palmi-tdTom ORF (previously reported in Bezares-Calderón et al., 2018) into the same vector used for GCaMP6s mRNA production.
 
 The TPHp::Palmi-tdTomato-P2A-TeTxLC (pLB316) was generated by subcloning the TeTxLC ORF amplified from pGEMTEZ-TeTxLC into a plasmid encoding the fused Palmi-tdTomato and the P2A self-cleaving peptide sequence pLB243 or pUC57-T7-RPP2-tdTomato-P2A-GCaMP6 in Bezares-Calderón et al., 2018, followed by sub-cloning the entire ORF downstream of the TPHp sequence (Verasztó et al., 2017). This plasmid or the control plasmid TPHp::Palmi-tdTomato pLB253, previously described; Verasztó et al., 2017 were co-injected with 5 µg/ml dextran fluorescein (D1821) at 250 ng/µl in water. pGEMTEZ-TeTxLC was a gift from Richard Axel & Joseph Gogos & C. Ron Yu (Addgene plasmid # 32640; RRID:Addgene_32640).
 
-## Whole mount immunochemistry
+### Whole mount immunochemistry
 
 Whole mount immunostaining was carried out as previously described (Verasztó et al., 2017). Larvae were fixed in 4% formaldehyde made from a 16% stock (Electron Microscopy Sciences, Cat# 15710) diluted in Phosphate-Buffered Saline (PBS) (NaCl: 137 mM, KCl: 2.7 mM, Na2HPO4: 10 mM, KH2PO4: 1.8 mM) + 0.1% Tween for 15 min at room temperature (RT). Larvae used after Ca²+ imaging and for assessment of the cPRC cilia volume were incubated overnight at 4°C with a polyclonal rabbit NIT-GC2 antibody at 5 µg/ml, and in some cases combined with a rabbit anti-5HT (serotonin) at 2 µg/ml (ImmunoStar Cat# 20080, RRID:AB_572263). Depending on the aim of the staining, larvae were counterstained with either a mouse monoclonal anti-HA tag antibody (Cell Signaling Technology, HA-Tag (6E2), Cat #2367, RRID:AB_10691311) or with a mouse monoclonal anti-acetylated tubulin antibody (Sigma-Aldrich, Cat# T6793, RRID:AB_477585) at 1:250 dilution. Plasmid-injected larvae were also counterstained with the anti-acetylated tubulin antibody and with a rabbit monoclonal anti-HA tag antibody (Cell Signaling Technology, HA-Tag (C29F4) Cat# 3724, RRID:AB_1549585). Samples were incubated overnight at 4°C with 1:250 dilutions of the anti-rabbit Alexa Fluor 488 (Thermo Fisher Scientific, Cat# A-11008, RRID:AB_143165), anti-mouse F(ab) fragment Alexa Fluor 546 (Thermo Fisher Scientific, Cat# A-11018, RRID:AB_2534085) secondary antibodies, and stained with 500 ng/ml 4′,6-diamidino-2-phenylindole (DAPI) for 15 min at RT.
 
-## cPRCs morphology assessment
+### cPRCs morphology assessment
 
-## Light microscopy analysis
+#### Light microscopy analysis
 
 Z-stacks of larvae stained with the cPRC cilia antibody were acquired with equal acquisition settings and were processed with the ImageJ 3D Object Counter (Cordelires et al.) plugin through the VolumeCalc.ijm script. A threshold intensity that included the entire ciliary structure was manually adjusted for each scan, filtering out structures with less than 1000 voxels. The volumes thus obtained were imported and quantified in R (VolumecPRCanalysis.R).
 
-## Electron microscopy analysis
+### Electron microscopy analysis
 
-## Sample preparation
+#### Sample preparation
 
 c-ops-1∆8/∆8 larvae used for serial scanning electron microscopy (SEM) were mounted in 20% Ficoll PM70 (Sigma, Cat# F2878) and high-pressure frozen (HPM Live-µ, Labtech). Samples were then dehydrated by freeze substitution using a standard procedure (McDonald and Webb, 2011) with modifications of the fixation solution (1% osmium tetroxide + 0.5% uranyl acetate (UA) + 0.5% glutaraldehyde (GA) + 3% H2O). Fixed larvae were embedded in epoxy (EMBED 812/DMP-30, Cat# 14120, Electron Microscopy Sciences) and sectioned at ~70 nm using a microtome (UC7, Leica) equipped with a diamond knife (histo Jumbo 45° Cat# HI8592, DiATOME). Image acquisition was done by SEM (GeminiSEM 500, Zeiss) using an energy selective backscatter detector. Sections were elastically aligned with TrakEM2 (Cardona et al., 2012). cPRC cilia were reconstructed in CATMAID (Saalfeld et al., 2009).
 

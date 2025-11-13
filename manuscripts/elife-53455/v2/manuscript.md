@@ -27,7 +27,7 @@
 
 ## Abstract
 
-Sequential mannose trimming of N-glycan (Man 9 GlcNAc 2 -> Man 8 GlcNAc 2 -> Man 7 GlcNAc 2 ) facilitates endoplasmic reticulum-associated degradation of misfolded glycoproteins (gpERAD). Our gene knockout experiments in human HCT116 cells have revealed that EDEM2 is required for the first step. However, it was previously shown that purified EDEM2 exhibited no α1,2-mannosidase activity toward Man 9 GlcNAc 2 in vitro. Here, we found that EDEM2 was stably disulfide-bonded to TXNDC11, an endoplasmic reticulum protein containing five thioredoxin (Trx)-like domains. C558 present outside of the mannosidase homology domain of EDEM2 was linked to C692 in Trx5, which solely contains the CXXC motif in TXNDC11. This covalent bonding was essential for mannose trimming and subsequent gpERAD in HCT116 cells. Furthermore, EDEM2-TXNDC11 complex purified from transfected HCT116 cells converted Man 9 GlcNAc 2 to Man 8 GlcNAc 2 (isomerB) in vitro. Our results establish the role of EDEM2 as an initiator of gpERAD, and represent the first clear demonstration of in vitro mannosidase activity of EDEM family proteins.
+Sequential mannose trimming of N-glycan (Man9GlcNAc2 -> Man8GlcNAc2 -> Man7GlcNAc2) facilitates endoplasmic reticulum-associated degradation of misfolded glycoproteins (gpERAD). Our gene knockout experiments in human HCT116 cells have revealed that EDEM2 is required for the first step. However, it was previously shown that purified EDEM2 exhibited no α1,2-mannosidase activity toward Man9GlcNAc2 in vitro. Here, we found that EDEM2 was stably disulfide-bonded to TXNDC11, an endoplasmic reticulum protein containing five thioredoxin (Trx)-like domains. C558 present outside of the mannosidase homology domain of EDEM2 was linked to C692 in Trx5, which solely contains the CXXC motif in TXNDC11. This covalent bonding was essential for mannose trimming and subsequent gpERAD in HCT116 cells. Furthermore, EDEM2-TXNDC11 complex purified from transfected HCT116 cells converted Man9GlcNAc2 to Man8GlcNAc2(isomerB) in vitro. Our results establish the role of EDEM2 as an initiator of gpERAD, and represent the first clear demonstration of in vitro mannosidase activity of EDEM family proteins.
 
 ## Introduction
 
@@ -51,7 +51,7 @@ Here, we demonstrated that EDEM2 is stably disulfide bonded to TXNDC11 and that 
 
 ## Results
 
-## EDEM2 is disulfide-bonded to TXNDC11
+### EDEM2 is disulfide-bonded to TXNDC11
 
 Human EDEM2 contains a total of eight cysteine residues, among which four are localized in regions conserved with yeast Htm1p (Figure 1B, shown with black bars). We mutated each cysteine residue of EDEM2 to alanine and examined the resulting effect on degradation of the ERAD-Ls substrate mCD3-δ-ΔTM-HA containing three N-glycosylation sites (Bernasconi et al., 2010). mCD3-δ-ΔTM-HA migrated more slowly in EDEM2-KO cells than in WT cells due to the absence of the first mannose trimming activity (M9 -> M8B) in EDEM2-KO cells; as expected, this migration difference was lost after treatment with endoglycosidase H (EndoH) (Figure 1C). Introduction of 3x Flag-tagged WT EDEM2 into EDEM2-KO cells restored the mannose trimming activity, but introduction of three of the eight cysteine mutants (C65A, C408A and C558A) did not do so (Figure 1D), similarly to the catalytically inactive E117Q mutant of EDEM2 (Ninagawa et al., 2014). Cycloheximide chase experiments showed that mCD3-δ-ΔTM-HA was rapidly degraded in WT cells but not in EDEM2-KO cells. Introduction of WT EDEM2 but not the three cysteine mutants into EDEM2-KO cells restored this degradation activity (Figure 1E).
 
@@ -59,11 +59,19 @@ We noticed that EDEM2 was detected as both monomer and high molecular weight for
 
 It should be noted that TXNDC11 contains from its N-terminus a single transmembrane domain (TMD), five Trx-like domains, and a coiled coil domain, as well as ten potential N-glycosylation sites (Figure 2C) (Timms et al., 2016).
 
-## TXNDC11 knockout eliminates high molecular weight forms of EDEM2 required for gpERAD
+### TXNDC11 knockout eliminates high molecular weight forms of EDEM2 required for gpERAD
 
 We intended to knock out the TXNDC11 gene in HCT116 diploid cells using the CRISPR/Cas9-based Precise Integration into Target Chromosome (PITCh) method and targeted its exon one with the puromycin-resistant gene flanked by the left and right arms of the TXNDC11 gene as well as guide RNA target sites (Figure 3—figure supplement 1A). We analyzed 34 puromycin-resistant colonies by genomic PCR and found that two independent clones (KO#1 and KO#2) had an insertion whose size was comparable to that of the puromycin-resistant gene. However, sequencing of the genomic PCR products (see Figure 3—figure supplement 1D) indicated that Cas9 cleaved the targeting vector on only one side (upstream of the left arm in the case of KO#1 or downstream of the right arm in the case of KO#2), and therefore the whole targeting plasmid was integrated into the exon one in one allele of KO#1 or KO#2 cells. Interestingly, a fragment(s) of the targeting vector or Cas9-expressing vector was inserted into exon one in the other allele of KO#1 or KO#2 cells (Fr. A and B in KO#1; Fr. C in KO#2) (Figure 3—figure supplement 1B and C), which inactivated the expression of TXNDC11 at both mRNA and protein levels (Figure 3—figure supplement 1E and F).
 
 Quantitative RT-PCR showed that the level of EDEM2 mRNA was not significantly affected by TXNDC11 knockout (Figure 3Aa). The level of spliced XBP1 mRNA was also not affected (Figure 3Ab), indicating that TXNDC11-KO cells are not significantly ER-stressed. Importantly, immunoblotting showed that high molecular weight forms of EDEM2 were lost in both TXNDC11-KO#1 and -KO#2 cells, as we expected (Figure 3B). Introduction of 3x Flag-tagged TXNDC11 alone into TXNDC11-KO#1 cells produced monomer and probably aggregated TXNDC11, whereas simultaneous introduction of Myc-tagged EDEM2 and 3x Flag-tagged TXNDC11 produced a high molecular weight complex of EDEM2 and TXNDC11 (Figure 3C). High molecular weight forms of EDEM2 present in WT cells were more resistant to trypsin digestion than monomer EDEM2 present in TXNDC11-KO#1 cells (Figure 3D), indicative of their differential conformations in the presence or absence of the partner protein TXNDC11.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53455/elife-53455-fig3-v2.jpg)
+
+**Figure 3.:** (A) Quantitative RT-PCR was conducted to determine the levels of endogenous EDEM2 mRNA (a) using the two primer sets indicated as well as spliced XBP1 mRNA (b) relative to the level of GAPDH mRNA in WT and two TXNDC11-KO cells (n = 3). (B) Cell lysates were prepared from WT, EDEM2-KO, and two TXNDC11-KO cells, subjected to SDS-PAGE under reducing and non-reducing conditions, and analyzed by immunoblotting using anti-EDEM2 and anti-TXNDC11 antibodies. (C) Cell lysates were prepared from WT, EDEM2-KO, and TXNDC11-KO#1 cells expressing 3x Flag-tagged TXNDC11 or both 3x Flag-tagged TXNDC11 and Myc-tagged EDEM2 by transfection, subjected to SDS-PAGE under non-reducing conditions, and analyzed by immunoblotting using anti-EDEM2 and anti-TXNDC11 antibodies. (D) Cell lysates were prepared from WT and TXNDC11-KO#1 cells, treated with the indicated amount of trypsin at 4°C for 15 min, subjected to SDS-PAGE under reducing and non-reducing conditions, and analyzed by immunoblotting using anti-EDEM2 antibody. The band with open triangle denotes a non-specific protein which serves as a control for trypsin digestion. Quantified data are shown at the bottom.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53455/elife-53455-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Strategy of the CRISPR/Cas9-based PITCh method to target exon 1 of the TXNDC11 gene is shown. (B) Structures of the TXNDC11 locus in TXNDC11-KO#1 cells are schematically shown. (C) Structures of the TXNDC11 locus in TXNDC11-KO#2 cells are schematically shown. (D) Genomic PCR was carried out to confirm recombination. Primers for lanes 1, 2 and 3 are 753Fw and 1708Rv, TgFw and 1831Rv, and 730Fw and TgRv, respectively. (E) Total RNA was prepared from WT and two TXNDC11-KO cells, and subjected to RT-PCR to amplify cDNA corresponding to full length TXNDC11 and GM130. (F) Cell lysates were prepared from WT and two TXNDC11-KO cells, and analyzed by immunoblotting using anti-TXNDC11 and β-actin antibodies.
 
 Degradation of endogenous ATF6α, an ERAD-Lm substrate whose degradation is initiated by EDEM2-mediated first mannose trimming (Ninagawa et al., 2014), was markedly delayed in TXNDC11-KO#1 and -KO#2 cells, as in EDEM2-KO cells, compared with WT cells (Figure 4A). Similarly, degradation of mCD3-δ-ΔTM-HA was delayed in both TXNDC11-KO#1 and -KO#2 cells, compared with WT cells (Figure 4B), which was consistent with the migration position of mCD3-δ-ΔTM-HA in reducing SDS-PAGE (Figure 4C). N-glycan profiling revealed that oligosaccharide M9 was accumulated in TXNDC11-KO#1 and -KO#2 cells, as in the case of EDEM2-KO cells (Figure 4D and E); accumulation of Glc1Man9GlcNAc2 (GM9) was probably due to a subtle change in culture conditions, because GM9 was not accumulated in EDEM2-KO human HCT116 cells in our previous study (Ninagawa et al., 2014). Alternatively, it may be due to enhanced cellular re-glucosylation activity caused by blockage of mannose trimming from M9 to M8 (Molinari, 2007), because both GM9 and M9 were accumulated in EDEM2-KO chicken DT40 cells in our previous study (Ninagawa et al., 2014). Introduction of 3x Flag-tagged TXNDC11 (WT) into TXNDC11-KO#1 or -KO#2 cells restored mannose trimming activity, as expected (Figure 4C). These results clearly showed that high molecular weight forms of EDEM2 complexed with TXNDC11 but not monomer EDEM2 possess catalytic mannosidase activity. Hereafter, TXNDC11-KO#1 cells are used as TXNDC11-KO cells.
 
@@ -79,7 +87,7 @@ Immunoblotting showed that both endogenous and transfected (WT) TXNDC11 was cons
 
 Centrifugal fractionation after repeated freezing and thawing of cells indicated that the M58A mutant was a membrane protein like calnexin, whereas the M1A mutant was split into a calnexin-like membrane protein and a calreticulin-like soluble protein (Figure 5C). This suggests that the TMD acted as a relatively weak signal peptide for M1A. SignalP-5.0 (http://www.cbs.dtu.dk/services/SignalP/) predicted that the probability for functionality of the TMD as a signal peptide is between 0.6 and 0.7 and that the probability for its cleavage at the C-terminus of A87 is approximately 0.5 (Figure 5D). We thus constructed the ΔSP (lacking amino acids from A59 to A87, see Figure 2C) and A87F (having the probability for functionality of the TMD as a signal peptide and the probability for its cleavage are less than 0.4 and approximately 0.1, respectively, Figure 5D) mutants in the M1A mutant and introduced them into TXNDC11-KO cells separately. M1A-ΔSP was synthesized as an unglycosylated cytosolic protein, as expected (Figure 5E). M1A-A87F moved slightly slower than M1A before and after EndoH treatment during reducing SDS-PAGE (Figure 5E) and M1A-A87F was mostly a calnexin-like membrane protein (Figure 5F). We concluded that M1A becomes a soluble protein if it is cleaved by signal peptidase and that M1A uncleaved by chance remains as a M58A-like membrane protein.
 
-## EDEM2 stably disulfide-bonded to TXNDC11 has mannosidase activity
+### EDEM2 stably disulfide-bonded to TXNDC11 has mannosidase activity
 
 TXNDC11 contains a total of 24 cysteine residues (Figure 6A). To determine which cysteine residue of TXNDC11 is involved in disulfide-bonding with EDEM2, we mutated each cysteine to serine (except for C5 located at the N-terminal end) and transfected TXNDC11-KO cells together with Myc-tagged EDEM2. Analysis by immunoblotting after non-reducing SDS-PAGE revealed that high molecular weight forms were lost in cells expressing Myc-tagged EDEM2 and 3x Flag-tagged C692S mutant of TXNDC11 (Figure 6B). This observation was confirmed by immunoprecipitation in cells expressing WT or one of the three cysteine mutants of 3x Flag-tagged TXNDC11 (Figure 6C). The C692S mutant did not restore mannose trimming activity (Figure 6D) and therefore gpERAD functionality (Figure 6E) in TXNDC11-KO cells, in contrast to C137S or C695S mutant of TXNDC11.
 
@@ -113,48 +121,156 @@ In conclusion, the notion that EDEM2 catalyzes the first mannose trimming step a
 
 ## Materials and methods
 
-## Statistics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resources</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifier</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>colorectal carcinoma</td>
+      <td>ATCC</td>
+      <td>HCT116</td>
+      <td>Parental HCT116 cell line have been authenticated and all cell lines have been tested negative for mycoplasma.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p3xFlag-CMV-14</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-MycHis</td>
+      <td>ThermoFisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TXNDC11 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab188329</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EDEM2 (Rabbit polyclonal)</td>
+      <td>Novusbio</td>
+      <td>Cat#: NBP2-37921</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (Rabbit polyclonal)</td>
+      <td>Recenttec</td>
+      <td>Cat#: R4-TP1411100</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-calnexin (Rabbit polyclonal)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#: ADI-SPA-865</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PDI (Rabbit polyclonal)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#: ADI-SPA-890</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ERp72 (Rabbit polyclonal)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#: ADI-SPA-720</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-calreticulin (Rabbit polyclonal)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#: ADI-SPA-600</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Flag (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat#: F3165</td>
+      <td>WB (1:1000) IP (2.5 μl)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-actin (Mouse monoclonal)</td>
+      <td>Wako</td>
+      <td>Cat#: 017–24573</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human ATF6α (Rabbit polyclonal)</td>
+      <td>Haze et al., 1999</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistics
 
 Statistical analysis was conducted using Student's t-test, with probability expressed as *p<0.05 and **p<0.01 for all figures.
 
-## Construction of plasmids
+### Construction of plasmids
 
 Recombinant DNA techniques were performed according to standard procedures (Sambrook et al., 1989) and the integrity of all constructed plasmids was confirmed by extensive sequencing analyses. Site-directed mutagenesis was carried out using DpnI. A p3xFlag-CMV-14 expression vector (Sigma) and pcDNA3.1-MycHis expression vector (ThermoFisher) were used to express a protein (EDEM2 or TXNDC11) tagged with 3xFlag and c-Myc at the C-terminus, respectively. pCMV-SP-TAP-EDEM2 was constructed based on pCMV, pcDNA3.1-SP-2xProA-2xTEV-6xMyc and pCMV-EDEM2-3xFlag using an NEBuilder HiFi DNA Assembly Cloning Kit (New England Biolabs). SP denotes a signal peptide. The ERAD-Ls substrate mCD3-δ-ΔTM-HA was the kind gift of Maurizio Molinari at the Institute for Research in Biomedicine, Switzerland.
 
-## Cell culture, transfection and N-glycan profiling
+### Cell culture, transfection and N-glycan profiling
 
 HCT116 cells (ATCC CCL-247) were cultured in Dulbecco’s modified Eagle’s medium (glucose 4.5 g/liter) supplemented with 10% fetal bovine serum, 2 mM glutamine, and antibiotics (100 U/ml penicillin and 100 μg/ml streptomycin) at 37°C in a humidified 5% CO2/95% air atmosphere. Transfection was performed using mainly polyethylenimine max (Polyscience) and partly Lipofectamine 2000 (Invitrogen) according to the manufacturers’ instructions. Pyridylamination and structural identification of N-glycans of total cellular glycoproteins were performed as described previously (Horimoto et al., 2013; Ninagawa et al., 2014). EndoH was obtained from Calbiochem; cycloheximide from Sigma; MG132 from Peptide Institute; and trypsin and protease inhibitor cocktail from Nacalai Tesque. Trypsin digestion of cell lysates was carried out as described previously (Ninagawa et al., 2015).
 
-## Immunological techniques
+### Immunological techniques
 
 Immunoblotting analysis was carried out according to the standard procedure (Sambrook et al., 1989) as described previously (Ninagawa et al., 2011). Chemiluminescence obtained using Western Blotting Luminol Reagent (Santa Cruz Biotechnology) was detected using an LAS-3000mini LuminoImage analyzer (Fuji Film). Rabbit monoclonal anti-TXNDC11 antibody was obtained from Abcam. Rabbit polyclonal anti-EDEM2 antibody was obtained from Novusbio; and anti-HA from Recenttec. Rabbit polyclonal anti-calnexin, anti-PDI, and anti-ERp72, and anti-calreticulin antibodies were obtained from Enzo Life Sciences. Mouse monoclonal anti-Flag antibody was obtained from Sigma; and anti-β-actin from Wako. Anti-human ATF6α antibody was produced previously (Haze et al., 1999).
 
 Immunoprecipitation was performed using anti-Flag antibody and protein G-coupled Sepharose beads (GE Healthcare). Beads were washed with high salt buffer (50 mM Tris/Cl, pH 8.0, containing 1% NP-40 and 150 mM NaCl) twice, washed with PBS, and boiled in Laemmli's sample buffer.
 
-## CRISPR/Cas9-based PITCh system
+### CRISPR/Cas9-based PITCh system
 
 TXNDC11 gene knockout was carried out as previously described (Sakuma et al., 2016). Briefly, the oligonucleotides 5’-caccGCAGCGCGCAGCCGAGCGCCA-3’ and 5’-aaacTGGCGCTCGGCTGCGCGCTGC-3’ to express gRNA for cleavage of exon 1 of the TXNDC11 gene (lower case letters denote cohesive ends for ligation) were annealed and inserted into the BpiI site of pX330A-1x2 (Addgene). The BsaI fragment of pX330S-2-PITCh to express PITCh gRNA (Addgene) was inserted into the resulting vector to create pX330A-TXNDC11-PITCh1x2 (Figure 3—figure supplement 1A). The 5’ forward primer 5’-ccgcgttacatagcatcgtacgcgtacgtgtttggAGCTGCTCTGCGGGGCCGTG- ccggatccggcccgctagcacgtattta-3’ corresponding to the PITCh gRNA target site (5’-side lower case letters), the left arm of the TXNDC11 gene (upper case letters) and the vector sequence (3’-side lower case letters), as well as the 3’ reverse primer 5’-acgcgtacgtgtttggAGGAGCAGCGCGCAGCCGAGcgcgccttaagtcgacaag-3’ corresponding to the PITCh gRNA target site (5’-side lower case letters), the right arm of the TXNDC11 gene (upper case letters) and the vector sequence (3’-side lower case letters) were used to amplify the region containing the puromycin-resistant gene but not the EGFP gene in pCRIS-PITChv2-FBL followed by infusion reaction to create pCRIS-Puro (Figure 3—figure supplement 1A). HCT116 cells were transfected with pX330A-TXNDC11-PITCh1x2 and pCRIS-Puro using polyethylenimine max and screened for puromycin resistance.
 
-## Genomic PCR
+### Genomic PCR
 
 Homologous recombination in HCT116 cells was confirmed by genomic PCR using a pair of primers 753Fw and 1708Rv, 730Fw and 1831Rv, and TgFw and TgRv.
 
-## RT-PCR
+### RT-PCR
 
 Total RNA prepared from cultured cells (∼5 × 106 cells) by the acid guanidinium/phenol/chloroform method using ISOGEN (Nippon Gene) was converted to cDNA using Moloney murine leukemia virus reverse transcription (Invitrogen) and random primers. The full-length open reading frame of TXNDC11 and GM130 was amplified using PrimeSTAR HS DNA polymerase (Takara Bio) and a pair of primers, TXNDC11-Fw and TXNDC11-Rv, and GM130-Fw and GM130-Rv, respectively.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA extracted as above was subjected to quantitative RT-PCR analysis using the SYBR Green method (Applied Biosystems) and a pair of primers, namely 778Fw and 838Rv as well as 1036Fw and 1105Rv for EDEM2 mRNA, XBP1-Fw and XBP1-Rv: for spliced XBP1 mRNA, and GAPDH-Fw and GAPDH-Rv for GAPDH mRNA.
 
-## Repeated freezing and thawing
+### Repeated freezing and thawing
 
 TXNDC11-KO cells in 10 cm dishes were collected 16 hr after transfection in 1 ml of PBS containing protease inhibitor cocktail and MG132, and centrifuged at 5,000 rpm for 3 min. The pellets were re-suspended in 600 μl of PBS containing protease inhibitor cocktail and MG132, quickly frozen in liquid nitrogen, and then quickly thawed in a water bath at 37°C. This freezing and thawing cycle was repeated 10 times. After centrifugation at 1000 x g for 10 min, the supernatant was collected, subjected to further 5 cycles of freezing and thawing, and centrifuged at 1000 x g for 10 min. Half of the supernatant was used as total membrane fraction (T). The second half of the supernatant was centrifuged at 40,000 rpm for 30 min at 4°C to collect supernatant (S) and pellets (P).
 
-## Purification of EDEM2
+### Purification of EDEM2
 
 EDEM2-KO cells plated on 15 cm dishes were simultaneously transfected with TAP-EDEM2 and TXNDC11(M1A)−3xFlag. Forty eight hours later the cells were lysed in lysis buffer {50 mM MES, pH 7.5, containing 150 mM NaCl, 1% CHAPS, and EDTA-free protease inhibitor cocktail (Roche)}, and centrifuged at 9,500 g for 30 min at 4°C. The resulting supernatant was filtrated through a low protein binding syringe filter (Merck) and rotated for 8 hr at 4°C after the addition of IgG Sepharose beads (GE Health Care). The beads were collected by centrifugation at 3,000 rpm for 1 min at 4°C, washed twice briefly and then washed overnight with wash buffer (50 mM MES, pH7.5, containing 400 mM NaCl, 0.1% CHAPS and EDTA-free protease inhibitor cocktail). The beads were incubated with 200 U of AcTEV protease (Invitrogen) in TEV buffer (50 mM MES, pH7.5, containing 150 mM NaCl) for 24 hr at 4°C, and then centrifuged briefly. The resulting supernatant was concentrated using an Amicon Filter (10 kDa cut off, Millipore) by centrifugation at 4,000 g for 1 hr at 4°C. During concentration the buffer was changed to 50 mM MES, pH7.5, containing 150 mM NaCl and 5 mM CaCl2, by three additions to the filter.
 
-## In vitro mannosidase assay
+### In vitro mannosidase assay
 
 PA-labeled free oligosaccharides were purchased from Takara Bio. Approximately 90 ng of purified WT and C558A mutant of EDEM2 were incubated with 50 µM PA-M9 in a total volume of 45 μl of Assay buffer (50 mM MES, pH 7.5, containing 150 mM NaCl and 5 mM CaCl2) for 4 hr, 12 hr, or 24 hr at 37°C. The reaction was stopped by boiling for 5 min. The samples were evaporated, dissolved with 20 μl of 70% (v/v) acetonitrile, and analyzed using a TSK-gel Amide-80 column (Tosoh) for mannose contents. Identification of N-glycan structures was based on their elution positions on the column and their molecular mass values compared with those of PA-glycans in the GALAXY database (http://www.glycoanalysis.info/galaxy2/ENG/index.jsp) (Takahashi and Kato, 2003). The M8 peak from the WT sample was collected, evaporated, dissolved with 20 μl of water, and analyzed using a Shim-pack HRC-octadecyl silica column (Shimadzu) for isomer identification.

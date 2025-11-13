@@ -45,7 +45,7 @@
 
 ## Abstract
 
-Information on SARS-CoV-2 in representative community surveillance is limited, particularly cycle threshold (Ct) values (a proxy for viral load). We included all positive nose and throat swabs 26 April 2020 to 13 March 2021 from the UK’s national COVID-19 Infection Survey, tested by RT-PCR for the N, S, and ORF1ab genes. We investigated predictors of median Ct value using quantile regression. Of 3,312,159 nose and throat swabs, 27,902 (0.83%) were RT-PCR-positive, 10,317 (37%), 11,012 (40%), and 6550 (23%) for 3, 2, or 1 of the N, S, and ORF1ab genes, respectively, with median Ct = 29.2 (~215 copies/ml; IQR Ct = 21.9–32.8, 14–56,400 copies/ml). Independent predictors of lower Cts (i.e. higher viral load) included self-reported symptoms and more genes detected, with at most small effects of sex, ethnicity, and age. Single-gene positives almost invariably had Ct > 30, but Cts varied widely in triple-gene positives, including without symptoms. Population-level Cts changed over time, with declining Ct preceding increasing SARS-CoV-2 positivity. Of 6189 participants with IgG S-antibody tests post-first RT-PCR-positive, 4808 (78%) were ever antibody-positive; Cts were significantly higher in those remaining antibody negative. Marked variation in community SARS-CoV-2 Ct values suggests that they could be a useful epidemiological early-warning indicator. Department of Health and Social Care, National Institutes of Health Research, Huo Family Foundation, Medical Research Council UK; Wellcome Trust.
+Background:Information on SARS-CoV-2 in representative community surveillance is limited, particularly cycle threshold (Ct) values (a proxy for viral load).Methods:We included all positive nose and throat swabs 26 April 2020 to 13 March 2021 from the UK’s national COVID-19 Infection Survey, tested by RT-PCR for the N, S, and ORF1ab genes. We investigated predictors of median Ct value using quantile regression.Results:Of 3,312,159 nose and throat swabs, 27,902 (0.83%) were RT-PCR-positive, 10,317 (37%), 11,012 (40%), and 6550 (23%) for 3, 2, or 1 of the N, S, and ORF1ab genes, respectively, with median Ct = 29.2 (~215 copies/ml; IQR Ct = 21.9–32.8, 14–56,400 copies/ml). Independent predictors of lower Cts (i.e. higher viral load) included self-reported symptoms and more genes detected, with at most small effects of sex, ethnicity, and age. Single-gene positives almost invariably had Ct > 30, but Cts varied widely in triple-gene positives, including without symptoms. Population-level Cts changed over time, with declining Ct preceding increasing SARS-CoV-2 positivity. Of 6189 participants with IgG S-antibody tests post-first RT-PCR-positive, 4808 (78%) were ever antibody-positive; Cts were significantly higher in those remaining antibody negative.Conclusions:Marked variation in community SARS-CoV-2 Ct values suggests that they could be a useful epidemiological early-warning indicator.Funding:Department of Health and Social Care, National Institutes of Health Research, Huo Family Foundation, Medical Research Council UK; Wellcome Trust.
 
 ## Introduction
 
@@ -71,13 +71,125 @@ As the Ct distribution was skewed to the left, we assessed independent predictor
 
 ## Results
 
-## Number and percentage of positive swabs
+### Number and percentage of positive swabs
 
 From 26 April 2020 to 13 March 2021, 440,479 participants from 217,887 households in the COVID-19 Infection Survey had one or more RT-PCR results from nose and throat swabs (median eight results per participant [IQR 6–9, range 1–19]). Participants were recruited between April 2020 and March 2021 (Supplementary file 1). Of 3,312,159 RT-PCR test results, 27,902 (0.84%, 95% CI 0.83–0.85%) were positive, in 21,831 individuals from 16,214 households. Two thousand nine hundred and sixty-six (14%) of these individuals were positive at their first test in the study and 18,865 (86%) subsequently, after median five negative tests (IQR 3–6, range 1–14).
 
-## Viral characteristics
+### Viral characteristics
 
 Overall, 10,317 (37%), 11,012 (40%), and 6550 (23%) swabs were positive for three, two, or one of the three SARS-CoV-2 genes (N protein, S protein, and ORF1ab), respectively (Table 1; 23 positives with missing Ct and gene detection excluded from this and all subsequent analysis; samples with only the S-gene detected generally not called positive, see Materials and methods). The majority of two-gene positives (9513 [86%]) were ORF1ab+N positive from 16 November 2020 onwards, reflecting the emergence and expansion of B.1.1.7 (WHO Alpha) in the UK (Walker et al., 2021). B.1.1.7 leads to S-gene target failure (SGTF) and was estimated to account for 88% of SGTF from this time (Public Health England, 2020). Where multiple genes were detected, the Cts were highly correlated (Spearman rho = 0.98, p<0.0001). Taking the per-swab mean Ct across positive genes, the overall median Ct was 29.2 (IQR 21.9–32.8; range 9.2–38.7), reflecting the study’s surveillance design testing individuals in the community at fixed timepoints regardless of symptoms. Based on calibration data (Appendix 1—figure 1), this corresponds to a median viral load of ~215 copies/ml (IQR 14–56,400). Ct varied strongly by number of genes detected (Kruskal–Wallis p=0.0001), but not by their specific pattern after adjusting for number (p=0.08). There is no fixed Ct threshold for determining positivity (see Materials and methods); however, only 38 (0.1%) Ct values > 37 were recorded (five positive on ORF1ab+N).
+
+**Table 1.**
+ Genes detected in positive swabs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">All positives (N = 27,879)</th>
+      <th colspan="2">First positive per participant (N = 21,811)</th>
+    </tr>
+    <tr>
+      <th>Number of genes detected</th>
+      <th>N (%)</th>
+      <th>Median CT* (IQR) [range]</th>
+      <th>N (%)</th>
+      <th>Median CT* (IQR) [range]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>6550 (23%)</td>
+      <td>33.8 (32.9–34.7) [12.7–38.7]</td>
+      <td>5102 (23%)</td>
+      <td>33.9 (32.9–34.7) [12.7–38.7]</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1145 (4%)</td>
+      <td>32.3 (30.9–33.4) [10.3–37.2]</td>
+      <td>773 (4%)</td>
+      <td>32.3 (30.7–33.4) [10.3–37.2]</td>
+    </tr>
+    <tr>
+      <td>2: ORF1ab+N 16 Nov 2020 onwards</td>
+      <td>9867 (35%)</td>
+      <td>26.4 (19.4–31.1) [9.2–37.8]</td>
+      <td>8184 (38%)</td>
+      <td>25.3 (18.6–30.7) [9.2–37.8]</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>10,317 (37%)</td>
+      <td>25.3 (19.8–29.5) [9.3–36.8]</td>
+      <td>7752 (36%)</td>
+      <td>23.9 (18.8–28.8) [9.3–36.8]</td>
+    </tr>
+    <tr>
+      <td colspan="5">Genes detected</td>
+    </tr>
+    <tr>
+      <td>N only</td>
+      <td>4479 (13%)</td>
+      <td>33.9 (33.0–34.8) [26.1–38.7]</td>
+      <td>3419 (16%)</td>
+      <td>34.0 (33.1–34.8) [28.2–38.7]</td>
+    </tr>
+    <tr>
+      <td>ORF1ab only</td>
+      <td>2044 (7%)</td>
+      <td>33.6 (32.6–34.5) [16.8–38.3]</td>
+      <td>1656 (8%)</td>
+      <td>33.7 (32.7–34.6) [16.8–38.3]</td>
+    </tr>
+    <tr>
+      <td>S only†</td>
+      <td>27 (0.1%)</td>
+      <td>34.9 (33.5–36.1) [12.7–37.3]</td>
+      <td>27 (0.1%)</td>
+      <td>34.9 (33.5–36.1) [12.7–37.3]</td>
+    </tr>
+    <tr>
+      <td>N+ORF1ab: before 16 Nov 2020</td>
+      <td>731 (3%)</td>
+      <td>31.9 (30.3–32.9) [10.3–37.2]</td>
+      <td>497 (2%)</td>
+      <td>31.8 (29.7–33.0) [10.3–38.2]</td>
+    </tr>
+    <tr>
+      <td>N+ORF1ab: 16 Nov 2020 onwards</td>
+      <td>9867 (35%)</td>
+      <td>26.4 (19.4–31.1) [9.2–37.8]</td>
+      <td>8184 (38%)</td>
+      <td>23.9 (18.8–28.8) [9.3–36.8]</td>
+    </tr>
+    <tr>
+      <td>S+ORF1ab</td>
+      <td>190 (0.7%)</td>
+      <td>32.5 (31.2–33.5) [15.1–36.6]</td>
+      <td>138 (0.6%)</td>
+      <td>32.4 (31.0–33.6) [15.1–36.6]</td>
+    </tr>
+    <tr>
+      <td>N+S</td>
+      <td>224 (0.8%)</td>
+      <td>33.4 (32.5–34.2) [25.0–36.8]</td>
+      <td>138 (0.6%)</td>
+      <td>33.3 (32.4–34.3) [27.3–36.8]</td>
+    </tr>
+    <tr>
+      <td>N+S+ORF1ab</td>
+      <td>10,317 (37%)</td>
+      <td>25.3 (19.8–29.5) [9.3–36.8]</td>
+      <td>7752 (36%)</td>
+      <td>25.3 (18.6–30.7) [9.2–37.8]</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Taking the mean Ct per positive swab across positive gene targets (Spearman rho = 0.98 for each pair of genes where both positive, p<0.0001).†17/27 before mid-May only: after this samples positive for the S gene only were not called positive overall by the algorithm and therefore reflect likely recording errors.Note: excluding 23 positive results without Ct values or genes detected available. Comparing first vs subsequent positives per participant, exact p<0.0001 for both number of genes detected and specific genes detected._
 
 Of note, whilst single-gene positives almost invariably had Ct>30, with or without reported symptoms, triple-gene positives without reported symptoms had widely varying Ct, as did ORF1ab+N positives after 16 November 2020 (SGTF, compatible with B.1.1.7) (Figure 1). Ct values were slightly but significantly lower in other double-gene positives vs single-gene positives, with a small number of low Ct values in ORF1ab+N positives before 16 November 2020 likely reflecting early B.1.1.7 cases. Furthermore, whilst the percentage reporting symptoms increased linearly as Ct values dropped from 35 (~30% reporting symptoms around the positive test) to 28 (~60% reporting symptoms), below 28 the percentages reporting symptoms increased only slightly (to ~70% at Ct=10) (Figure 2).
 
@@ -89,31 +201,146 @@ Of note, whilst single-gene positives almost invariably had Ct>30, with or witho
 
 **Figure 2.:** Note: Points show the percentage of positive tests with each rounded Ct value reporting any symptoms or cough, fever, anosmia/ageusia at each test or around each test (see Materials and methods for symptoms collection and definitions). Ct values under 11 and over 36 grouped with 11 and 36, respectively.
 
-## Evidence supporting positive results
+### Evidence supporting positive results
 
 Combining information on Ct values, symptoms and pre-test probability of being positive, 21,329 (77%), 4741 (17%), and 1809 (6%) positive tests had ‘higher’, ‘moderate’, or ‘lower’ evidence supporting genuine presence of viral RNA (Table 2; definitions in Materials and methods). Even though ‘higher’ evidence was based only on number of genes detected (two or three), ‘higher’ evidence positives were more likely to be symptomatic than ‘moderate’ evidence positives (p<0.0001), but were similarly likely to have occupational risk factors (p=0.48). ‘Higher’ evidence positives were more likely to occur in households with other positives (p<0.0001).
 
-## Predictors of Ct values
+**Table 2.**
+ Evidence supporting positive test results indicating presence of virus and impact on other factors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Strength of evidence for true infection</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Higher</th>
+      <th>Moderate</th>
+      <th>Lower</th>
+      <th>p (exact)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number (col %) (N = 27,879)</td>
+      <td>21,329 (77%)</td>
+      <td>4741 (17%)</td>
+      <td>1809 (6%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Factors determining classification</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of genes detected (row %)</td>
+      <td>3: 10,317 (48%) 2: 11,012 (52%)</td>
+      <td>1: 4741 (100%)</td>
+      <td>1: 1809 (100%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CT, median</td>
+      <td>26.2</td>
+      <td>33.4</td>
+      <td>34.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CT, n (row %) &lt;34*</td>
+      <td>21,070 (98.8%)</td>
+      <td>3613 (76%)</td>
+      <td>0 (0%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Symptoms around test, n (row %)</td>
+      <td>12,466 (58%)</td>
+      <td>2243 (47%)</td>
+      <td>0 (0%)</td>
+      <td>&lt;0.0001 (exc lower)</td>
+    </tr>
+    <tr>
+      <td>Occupational risk†, n (row %)</td>
+      <td>1322 (6%)</td>
+      <td>307 (6%)</td>
+      <td>0 (0%)</td>
+      <td>0.48 (exc lower)</td>
+    </tr>
+    <tr>
+      <td>Other factors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cough, fever, anosmia, ageusia around test, n (row %)</td>
+      <td>9345 (44%)</td>
+      <td>1241 (26%)</td>
+      <td>0 (0%)</td>
+      <td>&lt;0.0001 (exc lower)</td>
+    </tr>
+    <tr>
+      <td>First positive test n (row %) (vs subsequent positive test)</td>
+      <td>16,709 (78%)</td>
+      <td>3508 (74%)</td>
+      <td>1594 (88%)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>First test in study, n (row %) (vs follow-up i.e. prior negative in study)</td>
+      <td>2281 (11%)</td>
+      <td>482 (10%)</td>
+      <td>199 (11%)</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>Any genome sequence obtained, confirming presence of virus‡</td>
+      <td>6,621/9,022 (73%)</td>
+      <td>544/2,315 (24%)</td>
+      <td>0/836 (0%)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Any other household member ever positive$</td>
+      <td>11,493/18,494 (62%)</td>
+      <td>1,513/4,004 (38%)</td>
+      <td>318/1,525 (21%)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Approximate 97.5th percentile of CT in higher evidence positives through 2 August 2020 when classification first applied.†Reported working in a patient-facing healthcare role/care/residential home.‡Any genome sequence obtained out of attempted (other positives not found or not yet attempted).$Denominator households with two or more study participants.Note: Classification arbitrarily determined on 2 August 2020 based on the number of genes detected, Ct values and pre-test probability (see Materials and methods)._
+
+### Predictors of Ct values
 
 In multivariable regression models, Ct values were independently lower (i.e. viral loads higher) with more genes detected (8.2 lower in triple-gene vs single-gene positives [95% CI 7.9–8.5]), if symptoms were reported around the test (2.0 lower [1.8–2.2]), at the first positive identified per participant (2.2 lower than subsequent positives [2.2–2.5]), and if the positive was not the participant’s first test in the study (0.6 lower [0.2–0.9]) (all p<0.0001; Supplementary file 2A; see Materials and methods for details of collection of symptoms). By far the strongest effect was associated with triple-gene positives. Men had slightly lower Ct values than women (0.3 lower [0.1–0.5] p=0.001), and there was marginal evidence of lower values in those reporting non-white ethnicity (0.3 lower [0–0.6] p=0.08). Compared with those not reporting symptoms, Ct values were lower in those reporting cough/fever/anosmia/ageusia (2.5 lower [2.3–2.8]) than other symptoms only (0.9 lower [0.7–1.2]; heterogeneity p<0.0001). Associations were similar for symptoms at the positive test. After adjusting for these factors, there was no evidence of independent effects of age (p=0.33) or deprivation (p=0.67, Supplementary file 2A). Even after adjusting for these factors, Ct values were 1.4 (1.2–1.6) lower in individuals where another household member was positive at any point in the study (p<0.0001; other effects similar).
 
 However, number of genes detected and symptoms are both potential mediators of effects of demographic factors (Appendix 1—figure 2). Excluding these potential mediators (number of genes detected, symptoms), Ct values remained independently lower (i.e. viral loads higher) at the first positive identified per participant, where the positive was not the participant’s first test in the study, and in men, but were also slightly lower with increasing deprivation (p=0.0005; Ct 1.0 lower in the most vs least deprived [95% CI 0.6–1.5]) and in younger adults (p=0.0001; those aged 17–24 1.0 lower [0.3–1.7] than those under 12, and 1.4 lower [0.8–2.0] than those aged 70+) (Supplementary file 2B). Results were similar adjusting for date of the positive test.
 
-## Temporal changes in Ct values, evidence, and symptomatic percentages
+### Temporal changes in Ct values, evidence, and symptomatic percentages
 
 There were strong effects of calendar time on the distribution of Ct values (Figure 3A,B), the percentages self-reporting symptoms, or cough/fever/anosmia/ageusia (Figure 3C), and strength of evidence supporting each positive result (Figure 3D; all p<0.0001). In particular, Ct values were markedly higher in July–August 2020 when population positivity rates were low, with correspondingly very low percentages with symptoms at/around positive tests, and more ‘lower’ evidence positives. Decreases in Ct values in late August/early September and December 2020 coincided with increases in percentages reporting symptoms and of ‘higher’ evidence positives, and, in England (Figure 3B), with initial rises in official estimates of positivity rates (Office for National Statistics, 2021) after very low rates in July/early August 2020, and with much stronger rises in December 2020 (expansion of B.1.1.7). Ct levels rose, and correspondingly percentages reporting symptoms and of ‘higher’ evidence positives declined, as positivity peaked during November 2020 and January 2021 lockdowns.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64683/elife-64683-fig3-v2.jpg)
 
-**Figure 3.:** A) and England (B) together with percentage positivity in England (B), and in self-reported symptoms (C) and evidence supporting positives (D).Note: Panel (A) shows the distribution of Ct values each week including all positives across the UK. Panel (B) is restricted to England shown together with the official estimates of positivity as reported by the Office for National Statistics (black line) and periods of national ‘stay-at-home’ restrictions (schools shut in dark grey, schools open in light gray). Panels (C) and (D) show the proportions reporting symptoms and with different levels of evidence supporting the positive test, respectively. Variation in the width of 95% CI reflects the increase in size of the survey from mid August (Supplementary file 1).
+**Figure 3.:** Note: Panel (A) shows the distribution of Ct values each week including all positives across the UK. Panel (B) is restricted to England shown together with the official estimates of positivity as reported by the Office for National Statistics (black line) and periods of national ‘stay-at-home’ restrictions (schools shut in dark grey, schools open in light gray). Panels (C) and (D) show the proportions reporting symptoms and with different levels of evidence supporting the positive test, respectively. Variation in the width of 95% CI reflects the increase in size of the survey from mid August (Supplementary file 1).
 
 However, even within ‘higher’ evidence positives, median Ct varied strongly over time being higher in July/early August 2020 and after November 2020 and January 2021 lockdowns (Figure 4A). ‘Lower’ evidence positives also formed a larger percentage of all tests during July/early August 2020, despite overall positivity rates being very low (e.g. 0.022% in the 3 weeks starting 20 July 2020; Figure 4B). However, interestingly, from September 2020, the percentage of ‘lower’ evidence positives increased proportionately with ‘moderate’ and ‘higher’ evidence positives (Figure 4B). The lowest non-zero observed rate of ‘low evidence’ positives was 0.005% (both in early June and late August), providing an upper bound on the rate of false-positives as defined by identifying virus when none present.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/64683/elife-64683-fig4-v2.jpg)
 
-**Figure 4.:** A) and percentage positive of all tests (B) by level of evidence and time.Note: Panel (A) shows median Ct values according to level of evidence and panel (B) percentage of all swab tests positive according to level of evidence over calendar time. The early part of the study is grouped into 3 week periods due to lower numbers of positives.
+**Figure 4.:** Note: Panel (A) shows median Ct values according to level of evidence and panel (B) percentage of all swab tests positive according to level of evidence over calendar time. The early part of the study is grouped into 3 week periods due to lower numbers of positives.
 
-## Relationship with serostatus
+### Relationship with serostatus
 
 One or more IgG S-antibody results were available for 6540 (30%) participants with positive swabs. Less than 5% of antibody tests taken >30 days before the first positive swab (not necessarily the onset of infection) were positive (Figure 5), rising to 12% in the 30 days before the first swab positive (likely reflecting late detection of infection), 47% in the following 14 days, and then 72–81% thereafter. Overall, of 6189 participants with one or more antibody tests after their first positive swab, 4808 (78%) were ever antibody-positive; with higher rates in those reporting symptoms around their first positive swab (2945/3315 [89%] vs 1863/2874 [65%] of those not reporting symptoms, p<0.0001). Median (IQR) Ct values were also significantly lower in those ever antibody-positive to date (24.9 [18.5–31.0] vs 33.0 [29.9–34.3] in those not antibody-positive, p<0.0001). Results were similar restricting to 1477 (24%) with a negative antibody result within [−120, +21] days of their first positive swab. A small number of participants appeared to have become infected despite antecedent high anti-spike antibody titres, one case in particular which had ‘higher evidence’ positive swab tests separated by four consecutive negative swabs with 65 days between positive swabs.
 

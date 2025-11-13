@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/020f3ap87 Department of Biochemistry & Cellular and Molecular Biology, University of Tennessee at Knoxville Knoxville United States
-2. https://ror.org/01an7q238 Department of Chemistry, University of California, Berkeley Berkeley United States
-3. https://ror.org/03v76x132 Department of Genetics, Yale University New Haven United States
-4. https://ror.org/03v76x132 Department of Microbial Pathogenesis, Yale University New Haven United States
-5. https://ror.org/02e7b5302 Institute for Digital Molecular Analytics and Science, Nanyang Technological University Singapore Singapore
+1. Department of Biochemistry & Cellular and Molecular Biology, University of Tennessee at Knoxville Knoxville United States ([ROR:020f3ap87](https://ror.org/020f3ap87))
+2. Department of Chemistry, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+3. Department of Genetics, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+4. Department of Microbial Pathogenesis, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+5. Institute for Digital Molecular Analytics and Science, Nanyang Technological University Singapore Singapore ([ROR:02e7b5302](https://ror.org/02e7b5302))
 
 † Corresponding author
 
@@ -35,7 +35,7 @@ Here, we have used a rational design approach to develop a peptide (PITCR) to ta
 
 ## Results
 
-## PITCR decreases phosphorylation of the ζ chain upon TCR activation
+### PITCR decreases phosphorylation of the ζ chain upon TCR activation
 
 We recently reported an approach to transform the isolated TM domains of human receptors into peptides that function as conditional TM sequences: they are highly soluble in water, while they have the ability to insert into the membrane in the TM orientation that allows the peptide to interact laterally with their natural binding partners (Alves et al., 2018). We applied this approach to the CD3ζ TM, to generate the PITCR peptide. To this end we introduced glutamic acid residues in positions which are not expected to hinder interactions with other TCR subunits, according to cryoEM structures of the TCR.
 
@@ -43,17 +43,49 @@ Biophysical experiments in synthetic lipid vesicles showed that the design for P
 
 The TCR at the surface of human Jurkat T cells is activated upon binding of the monoclonal antibody (mAb) OKT3, which has been widely applied to study T cell signaling (Lo et al., 2018; Lo et al., 2019). TCR activation is initiated by phosphorylation of tyrosine residues at the ITAMs of the ζ chain by Lck (lymphocyte-specific protein tyrosine kinase) (Figure 1A; Courtney et al., 2017). To investigate whether PITCR affected TCR activation, we treated Jurkat cells with PITCR before stimulation with OKT3. The immunoblot results revealed that PITCR reduced phosphorylation of the ζ chain at residues Y142 and Y83 after TCR activation (Figure 1B–C and Figure 1—figure supplement 2). These results suggest that PITCR reduces activation of the TCR.
 
-## Phosphorylation of TCR proximal signaling molecules is downregulated by PITCR
+![Figure 1.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cartoon that illustrates TCR proximal downstream signaling. The plasma membrane is shown as a horizontal bar, and phosphorylation sites are shown as yellow dots. ECD: extracellular domain; TMD: transmembrane domain; ICD: intracellular domain of TCR. (B) Jurkat cells were treated with PITCR, followed by stimulation with OKT3. Lysates were analyzed by immunoblot to detect TCR phosphorylation of ζ (pY142 and pY83). Total ζ levels were assessed and no change was observed. Data are representative of at least five independent experiments. (C) Quantification of phosphorylation at both tyrosine residues in the presence of OKT3, normalized to data in the absence of PITCR (based on data from Figure 1—figure supplement 2). Error bars are the SD. p-Values were calculated using a two-tailed Mann-Whitney test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Top, the partial amino acid sequence from human CD3ζ comprising a small segment of the extracellular domain, the transmembrane domain (underlined), and a small portion of intracellular domain. Middle, the amino acid sequence of peptide inhibitor of T cell receptor (PITCR) peptide. Bottom, the amino acid sequence of PITCRG41P. Introduced residues are highlighted in green. Residue numbers are labeled in human CD3ζ sequence. Circular dichroism spectra for PITCR and PITCRG41P in different conditions: 10 mM sodium phosphate buffer at pH 7.4 (B), and in the presence of vesicles of 16:0–18:1 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L-serine/1-palmitoyl-2-oleolyl-glycero-3-phosphocholine (POPS/POPC) (1/9) at pH 7.4 (C) and at pH 5.0. (D) Each spectrum is the mean of three independent experiments. (E) Representative circular dichroism pH titration curve of PITCR in the presence of 16:0–18:1 POPS/POPC (1/9) liposomes. Data are calculated by the difference of molar ellipticity ([θ]) between 222 and 260 nm. Data are representative of two independent experiments. pK CD is 5.87±0.03 (mean ± SD).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Band intensities were normalized to ζ (total). Each dot pair represents one independent experiment. p-Values were calculated using a two-tailed paired t-test.
+
+### Phosphorylation of TCR proximal signaling molecules is downregulated by PITCR
 
 Since PITCR inhibited TCR phosphorylation after activation, we sought to explore the effect of PITCR on TCR downstream signaling. TCR activation induces the recruitment of Zap70 (ζ chain-associated protein kinase 70) to the phosphorylated TCR, where it is itself phosphorylated by Lck (Figure 1A). The activated Zap70 then phosphorylates LAT (linker for activation of T cells) and SLP76 (SH2 domain containing leukocyte protein of 76 kDa), and as a result PLCγ1 (phospholipase C-γ1) is recruited and phosphorylated (Courtney et al., 2018; Lo et al., 2018; Lo and Weiss, 2021). In agreement with the hypothesis that PITCR inhibits TCR activation, in the presence of peptide we observed a statistically significant decrease in the phosphorylation of Zap70, LAT, SLP76, and PLCγ1 (Figure 2 and Figure 2—figure supplement 1). However, PITCR did not affect phosphorylation of Lck (Figure 2—figure supplement 2). Since basal phosphorylation of Zap70, LAT, SLP76, and PLCγ1 was observed in the absence of OKT3 (Figure 2A), the immunoblot results indicate that the effect of PITCR is specific to stimulation of the TCR. Our data therefore indicate that PITCR causes a robust inhibition of the proximal signaling cascade triggered by TCR activation.
 
-## PITCR reduces the intracellular calcium response
+![Figure 2.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig2-v1.jpg)
+
+**Figure 2.:** (A) Immunoblot analysis of lysates to detect phosphorylation of Zap70 (pY319 and pY493), LAT (pY132 and pY191), SLP76 (pY128), and PLCγ1 (pY783). Total protein levels of Zap70, LAT, and the housekeeping protein β-actin were assessed, revealing no changes. Data are representative of at least five independent experiments. (B) Quantification of phosphorylation in the presence of OKT3, normalized to data in the absence of PITCR (based on data from Figure 2—figure supplement 1). Error bars are the SD. p-Values were calculated using a two-tailed Mann-Whitney test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Zap70 (pY319) and Zap 70 (pY493) were normalized with Zap70 (total). LAT (pY132) and LAT (pY191) were normalized with LAT (total). SLP76 (pY128) and PLCγ1 (pY783) were normalized with β-actin. Each dot pair represents one independent experiment. All p-values except PLCγ1 (pY783) were calculated using a two-tailed paired t-test. p-Value for PLCγ1 (pY783) was calculated using a two-tailed Wilcoxon matched-pairs signed-rank test because the p-value for the F test to compare variance was 0.0494.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Immunoblot analysis of Lck (pY394 and pY505), Lck (total), and the housekeeping protein β-actin. Data are representative of four independent experiments. (B) and (C) show normalized quantifications of phosphorylation of tyrosine at the positions of 394 and 505 of Lck after TCR activation. Data in the presence of PITCR was normalized to data in the absence of PITCR in response to OKT3 activation. Error bars are the SD. p-Values were calculated using a two-tailed Mann-Whitney test. (D) and (E) show quantification of phosphorylation of Lck at pY394 and pY505 after the OKT3 stimulation. Band intensities were normalized to Lck (total). Each dot pair represents one independent experiment. p-Value was calculated using a two-tailed paired t-test.
+
+### PITCR reduces the intracellular calcium response
 
 After TCR activation, the active PLCγ1 hydrolyzes phosphatidyl inositol 4,5-bisphosphate to generate inositol trisphosphate (IP3) and diacylglycerol. Free IP3 diffuses across the cytoplasm and binds to the IP3 receptor at the endoplasmic reticulum (ER), causing the release of calcium from ER storage (Figure 1A; Courtney et al., 2018; Lewis, 2001; Trebak and Kinet, 2019). Based on our previous results, we reasoned that PITCR should inhibit the cytoplasmic calcium influx that follows TCR activation. We tested this idea with a kinetic analysis of intracellular calcium release using the calcium indicator Indo-1 (Lo et al., 2018).
 
 Consistent with our expectation, we observed that the calcium response after OKT3 stimulation was attenuated in the PITCR treatment group compared with control conditions (Figure 3A and D, Figure 3—figure supplement 1). We used as a negative control pHLIP (Scott et al., 2019; Scott et al., 2017), a different conditional TM peptide that is not expected to interact with membrane proteins (Alves et al., 2018). The dynamic calcium curve of the pHLIP-treated group was within the error of the control curve (Figure 3B and D). To further test the specificity of PITCR, we performed a mutation (replacing Gly41 for a Pro) in PITCR that is expected to form a helical kink and disrupt the TM helix. Control biophysical experiments indicated that the G41P mutation did not prevent the peptide to act as a conditional TM (Figure 1—figure supplement 1). We observed that PITCRG41P was unable to inhibit the calcium influx in response to OKT3 treatment (Figure 3C and D). These data indicate that PITCR specifically impaired the calcium response that occurs in Jurkat cells after TCR activation, in agreement with the observed decrease in phosphorylation of PLCγ1 (Figure 2A).
 
-## Inhibition of TCR activation by APCs
+![Figure 3.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig3-v1.jpg)
+
+**Figure 3.:** Jurkat cells were stained with the fluorescent dye Indo-1 AM, followed by treatment with PITCR (A), pHLIP as a negative control (B), or the variant PITCRG41P (C) and stimulated with OKT3. Ionomycin was applied as a positive calcium control. The Indo-1 ratio was calculated from fluorescence at 405 nm (calcium-bound) divided by 475 nm (calcium-free). Data are representative of three independent experiments. Each independent experiment includes at least four technical replicates. Error bars are the SEM. (D) Quantification of the maximum Indo-1 increase after OKT3 activation, normalized to no peptide treatment. Error bars are the SD. p-Values were calculated from a Kruskal-Wallis test with Dunn’s multiple comparisons test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Quantification of the magnitude of Indo-1 ratio between OKT3 peak and baseline. Each dot pair represents one independent experiment. Each independent experiment (n=3) includes at least four technical replicates. p-Values were calculated using two-tailed paired Student’s t-test.
+
+### Inhibition of TCR activation by APCs
 
 While the OKT3 mAb efficiently stimulates TCR signaling, we sought to test the effect of TCR in a more physiologically relevant TCR system, consisting of T cell stimulation by binding to pMHC in APCs (Lo et al., 2018). Similar to human cytotoxic CD8+ T cells, OT1+-TCR CD8+ Jurkat T cells (J.OT1.CD8) can recognize the ovalbumin (OVA) peptide presented by H-2Kb-MHC I on T2 APCs (T2Kb) (Figure 4A and B). TCR engagement results in increased levels of CD69, a T cell activation marker (Lo et al., 2018; Lo et al., 2019; Wolpert et al., 1997). We treated J.OT1.CD8 cells with PITCR followed by incubation with T2Kb cells pre-treated with a range of OVA concentrations and measured the CD69 expression using flow cytometry (Figure 4C and D). As expected, in the presence of high OVA concentrations we observed CD69 upregulation (Figure 4C). Our data showed that PITCR caused a significant reduction of CD69 levels in response to 1 μM OVA stimulation (Figure 4C and D). To further examine the specificity of PITCR, we again used pHLIP as a negative control, and we observed that pHLIP did not elicit significant changes. Our data therefore indicate that PITCR specifically impaired CD69 upregulation in J.OT1.CD8 cells in response to OVA stimulation. These results show that PITCR also achieves robust inhibition when TCR is activated by binding to pMHC presented by APC.
 
@@ -61,29 +93,77 @@ While the OKT3 mAb efficiently stimulates TCR signaling, we sought to test the e
 
 **Figure 4.:** (A) Cartoon showing T cell interaction with APC. (B) A live cell microscopy image that depicts engineered Jurkat-OT1+ TCR-CD8+ T cells interacting with T2Kb APC pre-incubated with the peptide antigen ovalbumin (OVA). (C) Jurkat-OT1+ TCR-CD8+ T cells were treated with PITCR or pHLIP (as a negative control), and then incubated with T2Kb cells at different concentrations of OVA, followed by CD69 flow cytometry analysis. The upregulation of CD69 is representative of four independent experiments. Each independent experiment includes two technical replicates. Error bars are the SD. (D) Quantification of CD69-positive cells at [OVA]=1 μM for PITCR (red) and negative control pHLIP (green). Each dot pair represents one independent experiment. p-Values were calculated from two-tailed paired t-test.
 
-## PITCR co-localizes with the TCR in Jurkat T cells
+### PITCR co-localizes with the TCR in Jurkat T cells
 
 Our results in Jurkat cells clearly show that PITCR reduces TCR activation. We sought next to determine if this was a specific effect that resulted from a direct interaction between the peptide and TCR. First, we performed co-localization experiments in Jurkat cells. To this end, we fluorescently labeled PITCR with dylight680 (PITCR680). We employed super-resolution confocal microscopy with lightning deconvolution to investigate PITCR680 co-localization with TCR, as detected with an anti-CD3 ɛ antibody. We observed that PITCR680 localized to some areas of the Jurkat cells, corresponding to the plasma membrane and intracellular organelles, probably endosomes (Figure 5A). In these two regions we observed co-localization between PITCR680 (magenta) and TCR (CD3ε, green) (Figure 5A). To better assess co-localization, we plotted graphic profile curves on regions of interest, which revealed clear overlap in some areas. To quantify the degree of co-localization, we calculated the Mander’s M1 coefficient, which showed a value of ~0.8 (Figure 5D). This result reveals that around 80% of PITCR680 signal overlaps with the TCR. We also observed robust co-localization using the Pearson’s correlation coefficient (r = ~0.4) (Figure 5—figure supplement 2; Costes et al., 2004). To further explore whether TCR activation influences co-localization, we stimulated PITCR680-treated Jurkat cells with OKT3. While co-localization results are not proof of interaction, they suggest that PITCR is able to bind to TCR before it is activated by OKT3.
 
-## Co-localization of PITCR with ligand-bound TCR in primary murine cells
+![Figure 5.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig5-v1.jpg)
+
+**Figure 5.:** (A) PITCR680 and CD3ɛ co-localization was studied in the presence and absence of OKT3. Scale bars = 10 μm. Representative areas with co-localization at the plasma membrane (top) and cytoplasm (bottom) were zoomed-in, where scale bars are 0.5 μm and 1 μm, respectively. Confocal images are representative of three independent experiments. (B) and (C) show graphic profile curves (dotted yellow lines) plotted across the zoom-in regions of interest (ROI) in +OKT3 and –OKT3, respectively. Magenta lines denote PITCR, and green lines denote CD3ɛ. Overlap indicates co-localization. (D) Quantification of co-localization by Mander’s coefficient (M1), corresponding to the fraction of PITCR that overlaps with CD3ɛ. Error bars indicate SD. p-Value was calculated from two-tailed unpaired t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) PITCR and CD3ɛ co-localization images and nuclear staining (DAPI) are shown. Confocal images are representative of three independent experiments. Scale bars = 10 μm. (B) Quantification of PITCR and CD3ɛ co-localization calculating Pearson’s r value. Each dot of panel B denotes one technical replicate from three independent experiments. N=19–21. Error bars indicate SD. p-Value was calculated using a two-tailed unpaired t-test. (C) Jurkat cells were treated with control followed by an anti-CD3ɛ immunofluorescent staining. Confocal images are representative of three independent experiments. Scale bars = 10 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A), PITCR conjugated with dylight680 (B), and PITCR conjugated with AZ555 (C). The theoretical MW of NEC-PITCR is 3812.31. The MW of dylight 680 and AZ555 are 972 Da and 969.12 Da, respectively.
+
+### Co-localization of PITCR with ligand-bound TCR in primary murine cells
 
 Primary murine CD4+ T cells provided an orthogonal method to assess co-localization of the peptide with TCR. Splenocytes from the TCR(AND) mice, hemizygous for H2k, were pulsed with 1 μM moth cytochrome c (MCC) peptide and cultured with the T cells for 2 days. The T cell blasts were treated with IL-2 from the day after harvest to the fifth day after harvest, at which point the cells were used in experiments. T cells in this state respond to antigen with single-molecule sensitivity. T cells treated with either PITCR or a vehicle control were stimulated by contact with supported bilayers functionalized with agonist pMHC (MCC peptide labeled with Atto647N) and the adhesion molecule ICAM-1 (Lin et al., 2019; McAffee et al., 2021). The primary mouse T cells activated normally upon treatment with PITCR as measured by NFAT translocation (Figure 6—figure supplement 1; Lin et al., 2019). We performed surface-selective imaging by total internal reflection fluorescence microscopy and immune synapse formation was imaged (Biswas and Groves, 2019; Grakoui et al., 1999; Mossman et al., 2005; Yu et al., 2012). TCR-pMHC complexes were selectively distinguished from free pMHC using an elongated image exposure time strategy (Lin et al., 2019; O’Donoghue et al., 2013; Pielak et al., 2017). We observed the c-SMAC (central supramolecular activation cluster) structure (Figure 6), as previously reported for activated T cells (Bromley et al., 2001; Grakoui et al., 1999). PITCR conjugated to AZDye 555 (PITCR555) could be detected in intracellular structures (Video 1), consistent with the confocal microscopy results. Additionally, a distinct population of plasma-membrane-bound peptide could be also observed in some cells (Figure 6). In these cases, PITCR exhibited c-SMAC localization together with TCR-pMHC complexes. Although the image resolution was insufficient to definitively confirm molecular binding between PITCR and the TCR-pMHC complex, their co-localization is suggestive of interaction. We note that PITCR is a partial TCR inhibitor, and thus is not expected to significantly block c-SMAC formation or activation in these primed mouse T cells due to their extreme sensitivity to antigen. Additionally, TM-TM interactions are often highly sensitive to mutations (He et al., 2017; Westerfield et al., 2021). Several TM residues in the CD3 subunits that according to our model interact with TCR are different in the murine and the human amino acid sequences. Therefore, we expect PITCR to be less efficient targeting the mouse TCR. In aggregate, the co-localization experiments support binding of PITCR to TCR in human Jurkat T cells and mouse primary T cells.
 
-## PITCR interacts with the TCR in Jurkat T cells
+![Figure 6.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig6-v1.jpg)
+
+**Figure 6.:** (A) Images of plasma-membrane-localized PITCR555 and TCR-pMHC complex in a representative T cell adhering to supported lipid bilayer functionalized with pMHC (19–23 molecules/µm2, 9% labeled with Atto-647N) and ICAM-1 (~20 molecules/µm2). TCR-pMHC complex was selectively visualized with a long exposure time (500 ms). PITCR exhibited localization at central supramolecular activation cluster (c-SMAC) together with the TCR-pMHC complex. (B) Vehicle control showed no signal at the PITCR channel. Panel labels correspond to those in A.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** AND-TCR primary murine CD4+ T cells expressing NFAT-mCherry reporter protein were stimulated by supported lipid bilayers functionalized with varied density of pMHC (moth cytochrome c [MCC] peptide 100% labeled with Atto-647N) and ICAM-1 (~20 molecules/µm2). Cells were defined as activated if the NFAT-mCherry signal in the nucleus was greater than the signal in the cytoplasm, as determined by epifluorescence imaging. The fraction of activated cells is indistinguishable between cells treated with or without PITCR at all pMHC densities. Error bars denote SEM.
+
+![Video 1.](https://cdn.elifesciences.org/articles/82861/elife-82861-video1.mp4.jpg)
+
+**Video 1.:** Left: RICM, center: PITCR555, right: pMHC. Cell footprint is shown as cyan line. Scale bar: 10 µm.
+
+### PITCR interacts with the TCR in Jurkat T cells
 
 We sought to determine if the observed co-localization indeed resulted from binding between PITCR and TCR. We developed a new assay to maintain the TCR complex of Jurkat cells in a native lipid environment, consisting of using the polymer diisobutylene maleic acid (DIBMA) to form native nanodiscs. On these samples we performed a co-immunoprecipitation (Co-IP) experiment using an anti-CD3ɛ antibody (UCHT1). We observed bands of TCRβ, CD3ɛ, and CD3ζ in the anti-CD3ɛ Co-IP lysates (Figure 7), indicating that TCR had been successfully immunoprecipitated after solubilization with DIBMA. When cells were incubated with PITCR680, we observed in the Co-IP samples a fluorescent band of molecular weight (~5 kDa) similar to that of PITCR680 (4.8 kDa) (Figure 7). To further explore whether TCR activation would affect binding of PITCR680 to the complex, we applied OKT3 as previously described. We observed the ~5 kDa fluorescent band as well. These results indicate that PITCR680 interacts with the TCR irrespective of activation by OKT3, in agreement with the co-localization results in Jurkat cells (Figure 5).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig7-v1.jpg)
 
-**Figure 7.:** Jurkat cells were treated with PITCR-680. TCR nanodiscs were immunoprecipitated with the monoclonal antibody (mAb) anti-CD3 (UCHT1 clone), or with IgG as a negative control. Fluorescent detection of PITCR-680 after co-immunoprecipitation (Co-IP) or run in the gel directly as a positive control (right side panel). Below are shown immunoblot analysis of Co-IP samples and whole lysates to probe CD3ɛ, TCRβ, and CD3ζ. β-Actin was a loading control. Data are representative of at least three independent experiments.Figure 7—source data 1.
+**Figure 7.:** Jurkat cells were treated with PITCR-680. TCR nanodiscs were immunoprecipitated with the monoclonal antibody (mAb) anti-CD3 (UCHT1 clone), or with IgG as a negative control. Fluorescent detection of PITCR-680 after co-immunoprecipitation (Co-IP) or run in the gel directly as a positive control (right side panel). Below are shown immunoblot analysis of Co-IP samples and whole lysates to probe CD3ɛ, TCRβ, and CD3ζ. β-Actin was a loading control. Data are representative of at least three independent experiments.
 
-## PITCR weakens the interaction of the ζ subunit with the rest of the complex after TCR activation
+### PITCR weakens the interaction of the ζ subunit with the rest of the complex after TCR activation
 
 We next sought to understand the mechanism by which PITCR partially inhibits TCR activation. It has been recently proposed that TCR activation involves a change in robustness of the TM helical bundle. This allosteric change can be detected by immunoprecipitation after solubilization in DDM, as a loose complex is less resistant to this detergent (Lanz et al., 2021; Prakaash et al., 2021). We optimized this assay for our experimental conditions and investigated the interaction between the ζ chain and rest of the TCR complex. We first examined the immunoprecipitated levels of CD3ɛ, CD3ζ, and TCRβ in the presence of DDM to evaluate the specificity and efficacy of the use of the anti-CD3ɛ antibody for our immunoprecipitation assay. We observed the targeted bands in the immunoblot results for anti-CD3ɛ-IP, and no bands in the negative control IgG-IP (Figure 8A). These results suggest that our protocol successfully IPs the TCR complex. Once we validated our method, we tested the effect of OKT3 stimulation and PITCR treatment. We observed that OKT3 increased the levels of CD3ζ when compared to both TCRβ2 and CD3ɛ (ζ /β2 and ζ /ɛ) (Figure 8). These results suggested a more robust ζζ interaction with the rest of complex in response to OKT3 stimulation. Based on this result, we reasoned that PITCR could act by reversing the changes in quaternary robustness that occur in the membrane region upon TCR activation. In agreement with our hypothesis, we observed that the ζ /β2 ratio was decreased when cells were incubated with PITCR and OKT3. However, ζ /ɛ did not change (Figure 8). Taken together, these results suggested that PITCR disrupts the allosteric changes in TM quaternary robustness that occur upon TCR activation.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig8-v1.jpg)
+
+**Figure 8.:** (A) Immunoblot analysis of immunoprecipitated samples and whole lysate samples solubilized with DDM. Data are representative of at least three independent experiments. (B) Quantification of ζ/β2 and ζ/ε after OKT3 stimulation. (C) ζ/β2 and ζ/ε in PITCR-treated OKT3 samples, normalized to OKT3 stimulation. The β2 subunit was studied since it is the most abundant β subunit at the plasma membrane. Error bars are SD. p-Values were calculated from two-tailed Mann-Whitney test.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) OKT3 stimulation, (B) OKT3 stimulation in the presence or absence of peptide inhibitor of T cell receptor (PITCR), and (C) PITCR incubation without stimulation. Error bars are SD. p-Values were calculated with a two-tailed Mann-Whitney test.
 
 How does PITCR bind to and inactivate TCR? To address this question, we employed AlphaFold-Multimer (AlFoM) (Evans et al., 2022) to predict the binding site of PITCR in the TCR complex. We first assessed if this artificial intelligence program generated robust predictions of the TCR. When we used AlFoM to predict the de novo structure of TCR, we found that it generated a structural model of the TCR that agrees closely (RMSD <1.3 Å) with the cryoEM structure (Dong et al., 2019; Figure 9—figure supplement 1), after the system was modified, as detailed in the Materials and methods section, to incorporate an experimental constraint, that is, homodimerization of the ζ chains.
 
 Once we optimized AlFoM for TCR, we generated an AlFoM prediction that included PITCR. In the model, PITCR binds to the TM region of TCR, where it interacts tightly with the two ζ chains (Figure 9). Interestingly, AlFoM predicted that PITCR induced a conformational change in both ζ chains (Figure 9B). Specifically, the CD3ζ that is closer to CD3εγ – z (εγ) − underwent a maximum displacement of ~8 Å, while ζ (εδ) was displaced a maximum of ~6 Å (Figure 9—source data 1). To evaluate if this effect was specific, we repeated AlFoM in the presence of the inactive PITCRG41P variant. While the control peptide was predicted to bind to a similar site in TCR, it adopted a different orientation and it did not cause the displacement of the ζ chains observed for PITCR (Figure 9B and Figure 9—source data 1). Furthermore, several PITCR residues within ~3 Å of a CD3ζ chain were not predicted to interact in the case of PITCRG41P (Figure 9—source data 1). When we applied AlFoM to a second negative control peptide, pHLIP (3–4), we observed similar results to PITCRG41P. pHLIP docked into a similar site in TCR, where it interacted weakly with the ζ chains without significantly affecting their position in TCR (Figure 9B). To further evaluate if the ζ chain conformational change was specific to PITCR, we also performed AlFoM with the TYPE7 peptide. TYPE7 is a pH-responsive TM peptide that it is not expected to interact with TCR, since it specifically binds to the TM region of the human EphA2 receptor, causing activation of this receptor tyrosine kinase (Alves et al., 2018). AlFoM predicted that TYPE7 localizes to a different face of the TCR TM helical bundle and causes minimal displacement of the zeta chains (Figure 9B). Taken together, our data present a plausible scenario for TCR interaction and inactivation whereby PITCR binds to the TM helices of the ζ subunits, causing a specific conformational change in the CD3ζ chains (Figure 9—figure supplement 2).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig9-v1.jpg)
+
+**Figure 9.:** (A) Side view of the model that shows the TCR bound to peptide inhibitor of TCR (PITCR) (red). The N-terminus of PITCR is at the top. TCR subunits are colored as shown in the legend. (B) Bottom (cytoplasmic) view of the isolated TCR is shown as a reference in the top left. The two zeta chains are labeled ZA -ζ(εδ)- and ZB -ζ(εγ)-. AlFoM models are shown for TCR in association with PITCR (rank 2) and the negative control peptides PITCRG41P (rank 2), pHLIP (rank 1), and TYPE7 (rank 1), all in red. The extracellular domains are shown semi-transparently. The leucine zipper appended to the ζ chains to constrain dimer formation (see methods) is not shown in A or B.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Side views are shown for experimentally determined structure of the human TCR (PDB 6JXR) and the highest ranked AlphaFold-Multimer prediction (rank 1). The extracellular domain is shown at the top. In the AlphaFold-Multimer model, we show in black a segment of the leucine zipper appended to the cytoplasmic termini of the zeta subunits to ensure dimer formation between these chains. The transmembrane (TM) helices are indicated. The color scheme for TCR subunits is shown at the bottom. (B) Overlay between the cryoEM structure (blue) and the prediction (red).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A) PITCR (red) and PITCRG41P (gray) peptide bound to TCR are shown in side view. Overlay between the TCR associated with PITCR (orange) and PITCRG41P (yellow) are shown. Zeta chains of the TCR associated with PITCR and PITCRG41P are shown in blue and purple, respectively. The same view with the rest of TCR invisible is shown to highlight the position of the zeta chains or peptides alone. (B) Bottom (cytoplasmic) view of the overlay in panel A, with the extracellular domains semi-transparent. The leucine zipper is not shown in A or B.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/82861/elife-82861-fig9-figsupp3-v1.jpg)
+
+**Figure 9—figure supplement 3.:** The best five models appear ranked, and the IDDT values for each residue are graphed for the systems used.
 
 ## Discussion
 
@@ -103,83 +183,252 @@ Taken together, we report the rational design of a membrane ligand that inhibits
 
 ## Materials and methods
 
-## Cell lines
+### Cell lines
 
 Human male leukemic Jurkat T cells (Clone E6-1, TIB-152) were obtained from the American Type Culture Collection (Manassas, VA, USA). Jurkat.OT1-TCRα-GFP-TCRβ.hCD8+ (J.OT1.hCD8+) cells and T2-Kb cells were kindly provided by Arthur Weiss (UCSF). Cell lines were maintained in RPMI 1640 (Gibco 11875119) supplemented with 10% fetal bovine serum (Gibco 10437028), 1% L-glutamine (Gibco 25030081), and 1% penicillin and streptomycin (Gibco 15140122) in a 37°C and 5% CO2 humid tissue culture incubator (Panasonic Healthcare, Wood Dale, IL, USA). The identity of Jurkat cells was authenticated using ATCC services. Mycoplasma contamination was ruled out by PCR (Abcam 289834).
 
-## Peptide synthesis
+### Peptide synthesis
 
 Peptides were synthesized by Thermo Fisher Scientific (Waltham, MA, USA) and were confirmed by matrix-assisted laser desorption ionization-time-of-flight (MALDI-TOF) mass spectrometry and reverse-phase high-performance liquid chromatography (HPLC). Purities of the peptides are over 95%. PITCR sequence: DPKLSYLLDGILFGYGVELTALFLEVGFSESAD.
 
-## Intracellular calcium assay
+### Intracellular calcium assay
 
 Jurkat-WT cells were washed twice with PBS and then stained with the calcium sensor dye Indo-1 AM (Invitrogen I1223), at 37°C and 5% CO2 for 30 min as described (Lo et al., 2018; Lo et al., 2019). The final concentration of Indo-1 AM was 1 µM. Stained Jurkat cells were washed twice with PBS and then were transferred to a 96-well flat-bottom black plate. PITCR was added and incubated at 37°C and 5% CO2 for 20 min. Next, the plate was transferred to a prewarmed (37°C) and 5% CO2 Cytation V plate reader (BioTeK, Winooski, VT, USA) and incubated for another 10 min. The final concentration of PITCR in the each well was 10 µM. The baseline for each well was recorded for the first 100 s, followed by auto-injection of anti-CD3 (OKT3 clone, Tonbo-70-0037). The final concentration of anti-CD3 was 1 µM. Ionomycin (Invitrogen I24222) was used as a positive control to prove that Jurkat cells respond to calcium influx. The fluorescent signal collected from Jurkat-WT cells without staining was subtracted from the signal collected from Indo-1 AM stained cells since Jurkat-WT cells have auto-fluorescent signals.
 
-## SDS-PAGE immunoblot analysis of proximal signal molecules of TCR-CD3, ζ-Y83, and ζ-Y142
+### SDS-PAGE immunoblot analysis of proximal signal molecules of TCR-CD3, ζ-Y83, and ζ-Y142
 
 Jurkat-WT cells were washed twice with PBS and treated with PITCR at 37°C and 5% CO2 for 30 min, followed by stimulation with anti-CD3 antibody (OKT3 clone) for 5 min. The final cell density was 5×106 cells/mL and the final concentration of PITCR was 10 µM. The final concentration of anti-CD3 was 1 µM. Cells were lysed in 1 % NP-40 lysis buffer (50 mM Tris-Cl pH 7.4, 150 mM sodium chloride, 2 mM PMSF, 5 mM EDTA, 0.25% sodium deoxycholate with proteinase inhibitors [Thermo Scientific A32955] and phosphatase inhibitors [Sigma-Aldrich P0044]) for 30 min on ice, followed by centrifugation of 16.2×103 × g, 30 min, 4°C. Supernatants were collected and detergent-compatible protein assay (Bio-Rad5000112) was performed to quantify the protein concentration of each sample. Equal amounts of protein samples were run in 10%, 12%, or 15% SDS-PAGE gels and transferred to 0.45 µm nitrocellulose membranes. Membranes were blocked with 3% bovine serum albumin (BSA) dissolved in TBS, followed by overnight incubation with primary antibodies at 4°C. IRDye 800CW or IRDye 680LT secondary antibodies were used to incubate the blots at the second day, followed by detection with an Odyssey Infrared Scanner (Li-Cor Biosciences, Lincoln, NE, USA). All primary antibodies were diluted in 5% BSA dissolved in 0.1% TBST except specific mentions and all secondary antibodies were diluted in 5% non-fat milk dissolved in 0.1% TBST unless mentioned otherwise.
 
-## Co-localization assay and analysis
+### Co-localization assay and analysis
 
 All steps were performed at room temperature (RT), unless noted otherwise. Jurkat-WT cells were washed once with PBS, resuspended in RMPI1640 phenol-red free media, and treated with dylight680 labeled PITCR (PITCR680) at 37°C and 5% CO2 for 15 min, followed by stimulation in presence or absence of anti-CD3 (OKT3 clone) for 5 min. The final concentration of anti-CD3 was 1 µM. The final cell density was 5×106 cells/mL and the final concentration of PITCR680 was 10 µM. PITCR680 treated cells were washed twice with cold PBS and resuspended in cold RPMI1640 phenol-red free media. 100 μL of cells were transferred to each chamber of μ-Slide 8 Well ibiTreat (ibidi80826) and rested for 10 min. Next, RPMI1640 phenol-red free media was removed gently. 150 μL cold fixing buffer (1.998% - formaldehyde and 0.2% - glutaraldehyde in filtered PBS) was added and incubated for 10 min. Fixed PITCR680 treated Jurkat cells were washed twice with cold DPBS/Modified (HycloneSH30264.01). 150 μL permeabilization buffer (0.1% Triton X100 in PBS) was incubated with the sample for another 15 min. Each chamber was washed with blocking buffer (5% goat serum in 0.01% PBST) twice. The sample was blocked 1 hr, followed by washing once with antibody dilution buffer (1% BSA in 0.01% PBST). The samples were incubated with 1:200 diluted anti-CD3ɛ (UCHT1 clone, sc-1179) primary antibody in the wet box at 4°C, overnight. On the second day, each chamber was washed twice with cold DPBS/Modified (HycloneSH30264.01). 1:200 diluted secondary antibody (Invitrogen A32723) was incubated with samples in a foil covered wet box for 1 hr, followed by washing twice with cold DPBS/Modified (HycloneSH30264.01). 1:1000 diluted DAPI (Thermo Scientific 62248) was stained with samples for 2 min, followed by washing once with cold DPBS/Modified. The samples were mounted with Vectashield (H-1000), followed by sealing the chambers with parafilm until imaging.
 
 Samples were imaged using a Leica SP8 White Light Laser Confocal Microscope (Leica, Wetzlar, Germany) equipped with a 63× oil immersion objective, zoom 5 through LAS X software. Z-stack scanning was applied, followed by a lightning deconvolution analysis. Each image was chosen from one time point at each Z-stack section. Graphic profile curves of the Region of Interest in Zoom-in images were analyzed using Image J RGB Profile Plot Plugin. The Mander’s M1 and Pearson’s r coefficients were calculated using Image J Just Another Colocalization Plugin (JACoP).
 
-## CD69 activation flow cytometry assay
+### CD69 activation flow cytometry assay
 
 2×106 cells/mL T2-Kb cells were washed twice with PBS and treated with a series of diluted OVA derived peptide (SIINFEKL) at 37°C and 5% CO2 for 1 hr. For this assay we used J.OT1.hCD8+ cells, which are engineered human Jurkat T cells, as described (Lo et al., 2018). 5×106 cells/mL J.OT1.hCD8+ cells were washed twice with PBS and treated with PITCR at 37°C and 5% CO2 for 30 min. PITCR-treated J.OT1.hCD8+ cells were added to OVA-treated T2-Kb cells and the ratio of these two cells was 1:1. Final concentration of PITCR was 10 µM. The incubation time was 3 hr. Next, anti-CD69 - Allophycocyanin (Biolegend 310910) and Isotype - Allophycocyanin (Biolegend 400122) were applied to stain the cells, respectively followed by LSRII Flow Cytometer (BD Bioscience, Franklin Lakes, NJ, USA) analysis. Data was quantified using FlowJo_v10.8.0 software.
 
-## Co-IP of TCR-CD3 complex and immunoblot analysis
+### Co-IP of TCR-CD3 complex and immunoblot analysis
 
 Jurkat-WT T cells were washed twice with PBS and treated with Dylight680 labeled PITCR at 37°C and 5% CO2 for 30 min, followed by stimulation with 1 µM anti-CD3 antibody (OKT3 clone). Cells were lysed in 2.5% DIBMA (AnatraceBMA101) lysis buffer 20 mM Tris-Cl pH 8.0, 137 mM NaCl, 2 mM EDTA, 1 mM PMSF, 5 mM iodoacetamide, 1 mM NaF, proteinase inhibitors (Promega G6521) and phosphatase inhibitors (Sigma-Aldrich P0044 and P5726) at 37°C for 2 hr followed by rotating at least 12 hr in the cold room (4°C). Lysates were ultracentrifuged 10,000 × g, 4°C, 45 min to get rid of debris, and the supernatants were collected and ultracentrifuged again 10,000 × g, 4°C, 1 hr. The protein concentrations were quantified using a detergent compatible protein assay. 40 µL whole lysates were saved to detect the TCR-CD3 complex. 1% BSA blocked protein G agarose (Thermo Scientific 20398) and anti-CD3ɛ (UCHT1 clone, sc-1179) were added to the rest of lysates. Samples were gently rotated at cold room (4°C) for 16 hr. Samples were centrifuged 5000 × g, 4°C, 3 min, followed by washing twice with cold wash buffer (20 mM Tris-Cl pH 8.0, 137 mM NaCl, 2 mM EDTA, 1 mM PMSF, 5 mM iodoacetamide, 1 mM NaF) and rinsing once with cold wash buffer. SDS sample buffer was applied to elute the captured protein followed by incubation at 95°C for 5 min.
 
 Equal amounts of whole lysate samples and captured protein samples were loaded in 15% SDS-PAGE glycine gels and transferred to 0.45 µm or 0.2 µm nitrocellulose membranes. 3% BSA was used to block the membranes, followed by incubation with primary antibodies: anti-TCRβ, anti-CD3ɛ and anti-CD3ζ (6B10.2 clone) overnight at 4°C. In the whole lysates’ group, the housekeeping protein β-actin was also probed. PITCR was directly detected using channel 700 nm of an Odyssey Infrared Scanner (Li-Cor Biosciences, Lincoln, NE, USA). The second day, same approaches were performed as described in SDS-PAGE immunoblot analysis of proximal signal molecules of TCR-CD3, ζ-Y83, and ζ-Y142.
 
-## Liposome preparation
+### Liposome preparation
 
 1-Palmitoyl-2-oleolyl-glycero-3-phosphocholine (POPC) and 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L-serine (POPS) were purchased from Avanti Polar Lipids, Alabaster, AL, USA. POPC and POPS were dissolved in cold chloroform and stocks prepared at 32.89 mM. POPS and POPC were mixed in a round-bottom test tube, dried together under a stream of argon gas, and placed in a vacuum overnight. The dried lipid film was rehydrated in 10 mM sodium phosphate buffer (pH 7.4), followed by extrusion with a Mini-Extruder (Avanti Polar Lipids, Alabaster, AL, USA) through a 0.1 µm Nuclepore Track-Etch membrane (Whatman, Maidstone, UK). The final large unilamellar vesicles (LUVs) stock concentration was 4 mM. LUVs contain 10% POPS and 90% POPC.
 
-## Circular dichroism
+### Circular dichroism
 
-Circular dichroism (CD) experiments were performed as described previously (Nguyen et al., 2015). Briefly, the secondary structure of PITCR in aqueous solution (10 mM sodium phosphate, pH 7.4) and liposomes (10% POPS and 90% POPC LUVs at pH 5.0 and pH 7.4, respectively) was determined in a Jasco J-815 spectropolarimeter at RT. The CD spectra were measured from 195 nm to 260 nm in a 2 mm path length quartz cuvette. The peptide to lipid molar ratio was 1: 200 and the final concentration of the peptide was 5 µM. To obtain the desired pH, the experimental samples were adjusted by adding either 100 mM sodium phosphate (pH 7.4) or 100 mM sodium acetate (pH 4.0). The appropriate liposome or buffer backgrounds were subtracted. Molar ellipticity was calculated with the following equation: θ=θ/10lcN-1 , where θ is the measured ellipticity in millidegree, l is the cell path length, c is the protein concentration, and N is the number of amino acids (N=33).
+Circular dichroism (CD) experiments were performed as described previously (Nguyen et al., 2015). Briefly, the secondary structure of PITCR in aqueous solution (10 mM sodium phosphate, pH 7.4) and liposomes (10% POPS and 90% POPC LUVs at pH 5.0 and pH 7.4, respectively) was determined in a Jasco J-815 spectropolarimeter at RT. The CD spectra were measured from 195 nm to 260 nm in a 2 mm path length quartz cuvette. The peptide to lipid molar ratio was 1: 200 and the final concentration of the peptide was 5 µM. To obtain the desired pH, the experimental samples were adjusted by adding either 100 mM sodium phosphate (pH 7.4) or 100 mM sodium acetate (pH 4.0). The appropriate liposome or buffer backgrounds were subtracted. Molar ellipticity was calculated with the following equation: $\theta=\theta/10lcN-1$ , where $\theta$ is the measured ellipticity in millidegree, $l$ is the cell path length, $c$ is the protein concentration, and $N$ is the number of amino acids (N=33).
 
-## pKCD determination assay
+### pKCD determination assay
 
-The apparent pKCD is defined as a pH midpoint, where half of the peptide changes its secondary structure in presence of liposomes (Scott et al., 2017). The liposome preparation (10% POPS and 90% POPC LUVs) was followed as described in liposome preparation. To reach a series of different desired pH values, the experimental samples were adjusted with either 100 mM sodium phosphate or 100 mM sodium acetate. The final pH was measured by a 2.5 mm bulb pH electrode (Microelectrodes, Bedford, NH, USA) after recording CD spectrum. The CD spectra were recorded from 220 nm to 262 nm. The appropriate liposome blanks were subtracted. The ellipticity values at 222 nm were subtracted from that at 262 nm. The subtracted ellipticity were plotted for a range of pH values. The pKCD was fitted in the following equation: Signal=[(Fa+Sa×pH)+(Fb+Sb×pH)×10[m×(pH−pK)]][1+10[m×(pH−pK)]], where Fa is the acidic baseline, Fb is the basic baseline, m is the slope of the transition, and pK is the midpoint of the curve.
+The apparent pKCD is defined as a pH midpoint, where half of the peptide changes its secondary structure in presence of liposomes (Scott et al., 2017). The liposome preparation (10% POPS and 90% POPC LUVs) was followed as described in liposome preparation. To reach a series of different desired pH values, the experimental samples were adjusted with either 100 mM sodium phosphate or 100 mM sodium acetate. The final pH was measured by a 2.5 mm bulb pH electrode (Microelectrodes, Bedford, NH, USA) after recording CD spectrum. The CD spectra were recorded from 220 nm to 262 nm. The appropriate liposome blanks were subtracted. The ellipticity values at 222 nm were subtracted from that at 262 nm. The subtracted ellipticity were plotted for a range of pH values. The pKCD was fitted in the following equation: $Signal=\frac{[(F_{a}+S_{a}\timespH)+(F_{b}+S_{b}\timespH)\times10^{[m\times(pH−pK)]}]}{[1+10^{[m\times(pH−pK)]}]}$, where $F_{a}$ is the acidic baseline, $F_{b}$ is the basic baseline, m is the slope of the transition, and pK is the midpoint of the curve.
 
-## Peptide conjugation
+### Peptide conjugation
 
 Cysteine was added to the N-terminal of PITCR, termed NEC-PITCR (sequence: ECDPKLSYLLDGILFGYGVELTALFLEVGFSESAD). NEC-PITCR was labeled with dylight680 maleimide (Thermo Scientific-46618) and AZDye 555 maleimide (Fluoroprobes-1168-1). Both dyes labeled peptides were purified using reverse phase HPLC purification to remove unconjugated dye. The molecular weight was confirmed by MALDI-TOF. After that, samples were aliquoted, lyophilized, and stored at –80°C.
 
-## MALDI-TOF mass spectrometry
+### MALDI-TOF mass spectrometry
 
 PITCR-associated peptides were dissolved in 1 mM sodium phosphate buffer (pH 7.4, filtered). The matrix α-cyano-4-hydroxycinnamic acid (TCI C1768) was dissolved in 75% HPLC-level acetonitrile coupled with 0.1% TFA and sonicated 15 min, RT. The dissolved samples were mixed with the dissolved matrix. After that, the mixed matrix samples were loaded onto the MSP target plate (Bruker, Billerica, MA, USA) drop by drop and dried using filtered air. The Bruker Microflex MALDI-TOF mass spectrometer (Bruker, Billerica, MA, USA) was calibrated with ProteoMass MALDI-MS calibration standards (Sigma-Aldrich I6279-5X1VL, I6154-5X1VL, C8857-5X1VL, and P2613-5X1VL). All PITCR-associated peptides were measured in a negative mode. The pHLIP was measured in a positive mode. Data were analyzed using FlexAnalysis software (Bruker, Billerica, MA, USA) and graphs were plotted using Origin 9.1 (research lab) software.
 
-## HPLC
+### HPLC
 
 All peptides were dissolved in 1 mM sodium phosphate buffer (pH 7.4, filtered). Dissolved peptides were injected into an Agilent 1200 series HPLC system (Agilent Technologies, Santa Clara, CA, USA). A semi-preparative Agilent Zorbax 300 SB-C18 column (P.N. 880995-202) was used to purify the PITCR-associated peptides. A stable-bond analytical Agilent Zorbax 300 SB-C18 column (P.N. 880995-902) was used to identify the purity of each peptide. The running procedure used a gradient (solvent A: 0.05% TFA HPLC-level water plus solvent B: 0.05% TFA HPLC-level acetonitrile) from 5% B to 100% B. PITCR-associated peptides were eluted around 80% B.
 
-## Immunoprecipitation and immunoblot analysis
+### Immunoprecipitation and immunoblot analysis
 
 Jurkat-WT T cells were washed twice with PBS and treated with PITCR at 37°C and 5% CO2 for 30 min, followed by stimulation with 1 µM anti-CD3 antibody (OKT3 clone). Cells were lysed in cold 0.5% dodecyl-β-D-maltopyranoside (DDM, VWR-97063-172) lysis buffer (20 mM Tris-Cl pH 8.0, 10 mM NaF, 166.67 mM NaCl, 20 mM iodoacetamide, Benzonase endonuclease 50 U/mL [Sigma-1016970001]), proteinase inhibitors (Thermo Scientific A32955), and phosphatase inhibitors (Sigma-Aldrich P0044 and P5726) for 30 min on ice, followed by centrifugation of 16.2×103 × g, 15 min, 4°C. Supernatants were collected and detergent compatible protein assay was performed to quantify the protein concentration of each sample. 30–50 µL whole lysates were saved to detect the TCR complex. Protein G agarose and anti-CD3ɛ (UCHT1 clone) were used as described in the methodology of Co-IP of TCR. Samples were continuously rotated at 4°C for 4 hr. Other steps follow the methodology of Co-IP of TCR, except the wash buffer (20 mM Tris-Cl pH 8.0, 10 mM NaF, 166.67 mM NaCl, 20 mM iodoacetamide, Benzonase endonuclease 50 U/mL, Sigma-1016970001) and the elution condition (70°C for 10 min). Immunoblot analysis was performed as described in the methodology of Co-IP of TCR.
 
-## Antibodies
+### Antibodies
 
-## TIRF imaging of AND-TCR T cells
+<table>
+  <thead>
+    <tr>
+      <th>Antibodies</th>
+      <th>Sources</th>
+      <th>Catalogue #</th>
+      <th>Dilutions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Zap70 (pY319)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2717</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Zap70 (pY493)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2704</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Zap70 (total)</td>
+      <td>Cell Signaling Technology</td>
+      <td>3165</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>LAT (pY191)</td>
+      <td>Cell Signaling Technology</td>
+      <td>3584 (discontinued)</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>LAT (pY132)</td>
+      <td>Abcam</td>
+      <td>ab4476</td>
+      <td>1:2000 (WB)</td>
+    </tr>
+    <tr>
+      <td>LAT total</td>
+      <td>Cell Signaling Technology</td>
+      <td>45533</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Lck (pY394)</td>
+      <td>R&amp;D systems</td>
+      <td>755103</td>
+      <td>1:2000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Lck (pY505)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2751</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Lck (total)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2984</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>β-Actin</td>
+      <td>Abcam</td>
+      <td>ab6276</td>
+      <td>1:5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>CD3ɛ (OKT3)</td>
+      <td>Tonbo Biosciences</td>
+      <td>70-0037</td>
+      <td>1:50 (stimulation)</td>
+    </tr>
+    <tr>
+      <td>CD3ɛ (UCHT1)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-1179</td>
+      <td>1: 200 (IF), IP (see methodology)</td>
+    </tr>
+    <tr>
+      <td>CD3ɛ (CD3-12)</td>
+      <td>Cell Signaling Technology</td>
+      <td>4443</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>ζ (6B10.2)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-1239</td>
+      <td>1:500 (WB)</td>
+    </tr>
+    <tr>
+      <td>ζ (pY142)</td>
+      <td>BD Biosciences</td>
+      <td>558402</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>ζ (pY83)</td>
+      <td>Abcam</td>
+      <td>ab68236</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>TCR β</td>
+      <td>Cell Signaling Technology</td>
+      <td>77046</td>
+      <td>1:2000 (WB)</td>
+    </tr>
+    <tr>
+      <td>SLP76 (pY128)</td>
+      <td>BD Biosciences</td>
+      <td>558367</td>
+      <td>1:2000 (WB)</td>
+    </tr>
+    <tr>
+      <td>PLCγ1 (pY783)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2821</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>Cell Signaling Technology</td>
+      <td>5415</td>
+      <td>IP (see methodology)</td>
+    </tr>
+    <tr>
+      <td>CD69-APC (FN50)</td>
+      <td>Biolegend</td>
+      <td>50-166-584</td>
+      <td>1:100 (Flowcytometry)</td>
+    </tr>
+    <tr>
+      <td>IgG-APC</td>
+      <td>Biolegend</td>
+      <td>50-168-838</td>
+      <td>Flowcytometry</td>
+    </tr>
+    <tr>
+      <td>Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor Plus 488</td>
+      <td>ThermoFisher Scientific(Invitrogen)</td>
+      <td>A32723</td>
+      <td>1: 200 (IF)</td>
+    </tr>
+    <tr>
+      <td>IRDye 800CW Goat anti-Rabbit IgG Secondary Antibody</td>
+      <td>LI-COR Bioscience</td>
+      <td>926-32211</td>
+      <td>1:5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>IRDye 800CW Goat anti-Mouse IgG Secondary Antibody</td>
+      <td>LI-COR Bioscience</td>
+      <td>926-32210</td>
+      <td>1:5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>IRDye 800CW Goat anti-Rat IgG Secondary Antibody</td>
+      <td>LI-COR Bioscience</td>
+      <td>925-32219</td>
+      <td>1:5000 (WB)</td>
+    </tr>
+  </tbody>
+</table>
+
+### TIRF imaging of AND-TCR T cells
 
 AND-TCR T cells were incubated with PITCR-AZDye555 by mixing 50 µL of a 100 µM solution in 10 mM sodium phosphate buffer pH 7.4 with 450 µL of 2.5 M cells/mL T cells in RVC medium with IL-2 (final concentration of 10 µM PITCR-AZDye555, 2.2 M cells/mL, 37°C, 30 min), rinsed by imaging buffer, then applied to the imaging chamber with SLB functionalized with ICAM-1 (~20 molecules/µm2) and pMHC (19–23 molecules/µm2, MCC peptide 9.1% labeled with Atto647N) at 37°C. The real-time images of just-adhering cells with RICM, TIRF at 561 nm excitation (50 ms exposure), and TIRF at 640 nm excitation (500 ms exposure) channels were recorded at the average frame rate of 1 frame per 4 s. After 15–30 min, the snapshots of the cells forming immune synapses were recorded with the same three channels. The experiment was performed with 5 cells (real-time) and about 50–100 cells (snapshots) from one mouse. The cells with dominant plasma-membrane-bound PITCR signal could be found only in snapshot measurements due to low population. The vehicle control was performed by treating the cells with phosphate buffer instead of PITCR-AZDye555 solution using the cells from the same mouse.
 
-## Reagents
+#### Reagents
 
 T cell culture medium: DMEM (Gibco, Thermo Fisher) with 10% FBS, 1 mM sodium pyruvate, 2 mM L-glutamine, 1x Corning nonessential amino acids (Fisher Scientific), 1x Corning MEM vitamin solution (Fisher Scientific), 0.67 mM L-arginine, 0.27 mM L-asparagine, 14 μM folic acid, 1x Corning penicillin/streptomycin (100 IU, 0.1 mg/mL respectively) (Fisher Scientific), 50 μM β-mercaptoethanol.
 
 Imaging buffer for TIRF experiment: 20 mM HEPES, 137 mM NaCl, 5 mM KCl, 1 mM MgCl2, 1.8 mM CaCl2, 0.1% wt/vol D-glucose, 0.1% wt/vol BSA, pH 7.4.
 
-## AND-TCR T cell culture
+#### AND-TCR T cell culture
 
 Primary AND-TCR T cells were prepared and cultured basically as previously described (Smith et al., 2011). T cells from the lymph nodes and spleens were harvested from (B10.Cg-Tg(TcrAND)53Hed/J) × (B10.BR-H2k2 H2-T18a/SgSnJ) hybrid mice (Jackson Laboratory) and kept in T cell culture medium (day 1). The cells were activated by 2 µM MCC peptide at day 1, then cultured with IL-2 after day 2. Cells were used at day 5 or 6 for imaging. All animal work was performed with prior approval by Lawrence Berkeley National Laboratory Animal Welfare and Research Committee under the approved protocol 177003.
 
-## pMHC and ICAM-1 preparation
+#### pMHC and ICAM-1 preparation
 
 ICAM-1 extracellular domain with His10 tag and MHC class II I-Ek with two His6 tags were expressed and purified as previously described (Nye and Groves, 2008).
 
@@ -187,11 +436,11 @@ Peptides for pMHC were prepared and loaded to MHC molecule as previously describ
 
 Excess amount of MCC and MCC-GGSC-Atto647N were separately loaded on MHC molecules in loading buffer (PBS acidified with citric acid to pH 4.5, 1% BSA) overnight at 37°C. Then mixed at a 10:1 molar ratio to achieve 9.1% labeling efficiency. The mixture was diluted-concentrated with TBS and 10 kDa MWCO filters (Spin-X UF, Corning, NY) for two times to remove excess peptides, then used for bilayer functionalization.
 
-## Supported lipid bilayer preparation
+#### Supported lipid bilayer preparation
 
 Small unilamellar vesicles with 98 mol% 1,2-dioleoyl-sn-glycero-3-phosphocholine (Avanti Polar Lipids) and 2 mol% 1,2-dioleoyl-sn-glycero-3-[(N-(5-amino-1-carboxypentyl)iminodiacetic acid)succinyl] nickel salt (Avanti Polar Lipids) were prepared by sonicating a 0.5 mg/mL lipid suspension in water followed by centrifugation (21,000 × g, 20 min, 4°C). Then, supported lipid bilayer (SLB) was prepared upon 25 mm #1.5 glass coverslip set into Attofluor cell chamber (Invitrogen, Thermo Fisher). Coverslips were cleaned by sonication in 1:1 water:2-propanol then etched with piranha solution (1:3 mixture of 30% H2O2 and sulfuric acid), rinsed by water and set into clean chambers. SLB was formed by adding 1:1 mixture of SUV solution and TBS into chambers and incubating for more than 30 min. SLB were rinsed with TBS then incubated with 10 mM NiCl2 in TBS for 5 min. Chambers were then incubated in imaging buffer for more than 30 min for blocking defects by BSA, then used for functionalization. ICAM-1 (~10 nM) and pMHC (concentration adjusted by determined densities) were added to chambers and incubated for 30 min, then rinsed by imaging buffer. The ICAM-1 density is estimated to be ~20 molecules/µm2 based on a previously reported estimate (Lin et al., 2019). pMHC labeled by Atto647N was imaged by TIRF to determine the molecular density. The density was determined by extrapolating the calibration curve of density-intensity relationship from lower densities where the molecular density can be directly determined by single molecule localization (below 0.5 molecules/µm2) using TrackMate (Tinevez et al., 2017).
 
-## TIRF microscopy and image processing
+#### TIRF microscopy and image processing
 
 TIRF microscopy was performed on a motorized inverted microscope (Nikon Eclipse Ti-E; Technical Instruments, Burlingame, CA, USA) with Lumen Dynamics X-Cite 120LED Fluorescence Illumination System (Excelitas Technologies, Waltham, MA, USA) and a motorized stage (MS-2000; Applied Scientific Instrumentation, Eugene, OR, USA). A laser launch with 561 nm and 640 nm diode lasers (Coherent OBIS, Santa Clara, CA, USA) was aligned into a custom-built fiber launch (Solamere Technology Group Inc, Salt Lake City, UT, USA). For TIRF imaging, laser excitation was illuminated through a four-band beam splitter (ZT405/488/561/640rpc) to the objective lens (NA 1.49, 100×, oil immersion, Apochromat TIRF, Nikon), then filtered through an emission filter (ET600/50M or ET700/75M). For RICM, LED excitation was illuminated through D546/10× excitation filter and 50/50 beam splitter. Emission was captured on an EM-CCD (iXon Ultra 897; Andor Inc, South Windsor, CT, USA). All optical filters were purchased from Chroma Technology Corp (Bellows Falls, VT, USA). The sample and objective lens were kept at 37°C with temperature controller system (CU-109, Live Cell Instrument, Republic of Korea). The equipment was controlled using the software MicroManager (Edelstein et al., 2010). Laser power and exposure time was set to 2 mW, 50 ms for 561 nm excitation and 1 mW, 500 ms for 640 nm excitation. The pixel size was 0.16 µm square and the field of view was 81.92 µm square (512×512 pixels).
 
@@ -199,16 +448,16 @@ Cell footprint was determined from RICM images with the following procedures. RI
 
 The background signal was measured using the chamber containing only imaging buffer and subtracted from TIRF images. The inhomogeneity of the TIRF illumination were corrected using the images from the solution of rhodamine B (561 nm excitation, from Sigma-Aldrich) and 3,3’-diethylthiadicarbocyanine iodide (640 nm excitation, from Sigma-Aldrich).
 
-## NFAT activation assay
+### NFAT activation assay
 
 To assay activation of AND-TCR primary murine CD4+ T cells, cells were transduced with a LAT-eGFP-P2A-NFAT-mCherry bicistronic construct on day 3 of primary cell culture as previously described (Smith et al., 2011). Cells were assayed on day 5. All animal work was performed with prior approval by Lawrence Berkeley National Laboratory Animal Welfare and Research Committee under the approved protocol 177003.
 
 For each imaging chamber, 2.5 million cells were resuspended to 5 million/mL in 450 µL imaging buffer and 50 µL of 100 µM unlabeled PITCR in 10 mM sodium phosphate buffer pH 7.4. Control samples were treated the same, with PITCR omitted. Cells were incubated for 30 min at 37°C and then directly added to SLBs functionalized with ICAM and pMHC in Attofluor chambers containing 500 µL imaging buffer equilibrated to 37°C. Cells interacted with the bilayer for 20 min before acquiring snapshots to analyze for NFAT activation state. Cells transduced with reporter proteins were identified using the LAT signal in the 488 TIRF channel to minimize bias in which cells were imaged and subsequently analyzed. Single sets of RICM, 488 TIRF, and 561 epifluorescence images were taken for at least 30 fields of view and at least 50 live cells 20–50 min after adding cells to the SLB. Three z-positions were acquired for 561 epifluorescence at 0, 3, and 6 µm above the TIRF plane in order to clearly resolve each cell’s nucleus and the distribution of NFAT-mCherry between the cytoplasm and nucleus. Only cells with substantial contact with the bilayer, as defined by the RICM footprint, were included in the analysis of the fraction of activated cells. Cells were defined as active if the NFAT-mCherry signal in the nucleus was equal to or greater than the signal in the cytoplasm, assessed manually, indicating that the NFAT-mCherry reporter protein was translocating to the nucleus. The fraction of activated cells was determined for each bilayer density and pre-treatment condition and error bars denote the standard error of the mean. The density of pMHC on each bilayer was determined before the addition of cells. Snapshots of pMHC in at least 20 fields of view were taken in the 640 TIRF channel at 20 mW power at the source and 20 ms exposure time. Particles were counted using TrackMate and density was determined as the particle count divided by the total area of all fields of view. A calibration curve relating density and intensity was used to measure the density of high-density bilayers for which single particles are not able to be resolved (~0.7 µm–2).
 
-## AlphaFold2-Multimer predictions
+### AlphaFold2-Multimer predictions
 
 Structures of the TCR with and without addition of peptide were predicted using AlphaFold2-Multimer. We installed LocalColabFold 1.5.1 (Mirdita et al., 2022), which uses AlphaFold v2.3.0, on a Yale Center for Research Computing Linux cluster (Evans et al., 2022). The random seed used was 0, and amber relaxation was enabled. Predictions of the TCR were generally consistent with the cryoEM structure of TCR, except for one of the CD3ζ chains, which detached from the complex as it lacked the stabilization that results from the native disulfide bond that connects the two ζ chains. In order to force the CD3ζ homodimer to adopt a physiologically relevant conformation, one chain of the Saccharomyces cerevisiae basic leucine zipper (bZIP) domain of GCN4 (amino acid sequence RMKQLEDKVEELLSKNYHLENEVARLKKLVGER) was appended immediately C-terminal to each CD3ζ TM domain, after residue Arg57 (UniProtKB #P20963). CD3ζ residues C-terminal to Arg57 were removed. Polyglycine linkers of two different lengths (four and ten) were used separately to connect the bZIP domains to CD3ζ with optimal alignment. Multiple ranks were created for each prediction, and the highest ranking structure where the peptide approaches the side of the TCR TM domains was selected for further analysis. The predicted IDDT scores for all structures are shown on Figure 9—figure supplement 3. Predicted structures were visualized using Mol* and distances between peptide side chain atoms and CD3ζ side chain or backbone atoms were calculated using the measurements tool (Sehnal et al., 2021). For displacement distances, the Mol* measurements tool was used to calculate the maximum distance between all corresponding residues in each model after superimposing the TCRα chains. ChimeraX was used to calculate root-mean-square deviation (RMSD) values (Pettersen et al., 2021). The matchmaker command was employed to align pairs of amino acids from corresponding chains and then calculate the RMSD based on the α-carbons. The TCRα chain was used as a consistent reference in RMSD alignments and calculations so that CD3ζ chains could be compared between no peptide and plus peptide structures.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses of experiments were performed using GraphPad Prism 9.4.0. p-Values are provided as exact values. 95% confidence level was used to determine statistically significance in all experiments and ns stands for not significant. All statistics correspond to biological replicates only and all n values reflect biological replicates. Detailed statistical analyses were illustrated in each result.

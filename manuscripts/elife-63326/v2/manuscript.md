@@ -37,9 +37,15 @@ While ATF4 is a major downstream effector of the ISR, evidence has emerged that 
 
 How the ATF4-dependent gene program compares between its adaptive role in the ISR and its activation as a downstream effector of mTORC1 signaling and whether ATF4 contributes to established or new functions of mTORC1 are unknown (Figure 1A). Here, we find that the mTORC1-ATF4 program represents a small subset of ATF4-dependent genes induced by ER stress and includes genes encoding the enzymes required for tRNA charging, NEAA synthesis, and amino acid uptake. Consistent with regulation of these enzymes by mTORC1 through ATF4, ATF4 contributes to the induction of protein synthesis downstream of mTORC1. We also find that mTORC1 signaling promotes glutathione synthesis through ATF4 and its specific regulation of the cystine transporter SLC7A11. Thus, ATF4 is an anabolic effector of mTORC1 signaling, necessary for both its canonical regulation of protein synthesis and its induced synthesis of glutathione, the most abundant antioxidant in cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the dual regulation of ATF4 and the unknowns addressed in this study. (B) Immunoblots of parallel lysates from RNA-seq experiment. Atf4+/+ and Atf4-/- mouse embryo fibroblasts were treated, as indicated, with insulin (500 nM, 16 hr) or rapamycin (20 nM, 30 min) prior to insulin (left) or with tunicamycin (2 μg/mL) for 4, 8, or 16 hr (right). Insulin response is quantified in Figure 1—figure supplement 1. (C) Venn diagram depicting number and overlap of mTORC1- and ISR-induced transcripts, including those increased with insulin (red), decreased relative to insulin with rapamycin (green), and increased with 4 hr tunicamycin (orange), and those dependent on ATF4 within these categories (purple), all with p-values <0.05. Only 61 ATF4-dependent genes overlap between those significantly induced by insulin in a rapamycin-sensitive manner and those induced by tunicamycin. Gene lists per category are provided in Figure 1—source data 1. (D) KEGG enrichment of the shared mTORC1- and ISR-induced ATF4 target genes. p-Values provided were false discovery rate corrected. (E) Plot of -log10p-values of 774 ATF4-dependent tunicamycin-induced genes. ATF4-dependent genes induced by both mTORC1 signaling and tunicamycin treatment (shared ISR and mTORC1) are shown in red. (F) The 61 ATF4-dependent genes induced by both mTORC1 (i.e., rapamycin-sensitive insulin stimulation) and tunicamycin treatment are shown ranked from left to right in order of greatest log2-fold change with insulin (red bars), with the corresponding tunicamycin-induced changes superimposed (white bars) (n = 4). Error bars depict 95% confidence intervals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig1-figsupp1-v2.jpg)
+
 ## Results
 
-## mTORC1 signaling activates a subset of ATF4-dependent genes also activated by the ISR
+### mTORC1 signaling activates a subset of ATF4-dependent genes also activated by the ISR
 
 To identify the ATF4-dependent gene targets downstream of mTORC1, we compared the insulin-induced, rapamycin-sensitive transcripts between wild-type MEFs and those with biallelic loss of ATF4 via CRISPR/Cas9 gene deletion (see Materials and methods). Consistent with our previous studies (Ben-Sahra et al., 2016), insulin stimulated an increase in ATF4 protein in MEFs, which was decreased with rapamycin (Figure 1B, Figure 1—figure supplement 1). In parallel, these cells were treated with a time course of tunicamycin, an inhibitor of N-glycosylation that potently induces ER stress and an increase in ATF4, to identify ATF4 gene targets downstream of the ISR. RNA-seq analysis revealed that 20% of transcripts (253 total) significantly upregulated upon insulin stimulation were significantly blocked in their induction with rapamycin treatment. Approximately 30% of these mTORC1-regulated genes (77 total) lost their insulin responsiveness with ATF4 deletion. In comparison, 36% of transcripts significantly induced with tunicamycin treatment at 4 hr were dependent on ATF4 (774 total). Importantly, the expression of just 61 genes was found to overlap between these two modes of ATF4 regulation, being ATF4 dependent in response to both mTORC1 activation and the ISR (Figure 1C, Figure 1—source data 1).
 
@@ -49,33 +55,73 @@ ATF4 is known to form heterodimers with other bZIP transcription factors to enga
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig2-v2.jpg)
 
-**Figure 2.:** (A) CiiiDER analysis comparing transcription factor-binding elements enriched in the promoters of the top 200 ATF4-dependent genes induced by tunicamycin but not insulin (ISR Only) versus the 61 ATF4-dependent genes induced by both mTORC1 signaling and tunicamycin (Shared ISR and mTORC1). Those sequence elements significantly enriched (p<0.01) are shown in blue or red. Data are provided in Figure 2—source data 1. (B) Cistrome analysis of genome-wide chromatin immunoprecipitation studies to identify transcription factors found to bind to the promoters of the ATF4-dependent genes shared in their regulation by mTORC1 and ISR. (C) qPCR analysis of the indicated transcripts in Tsc2-/-mouse embryo fibroblasts (MEFs) transfected with control siRNAs (siCT) or those targeting Atf4, C/EBPα, C/EBPβ, C/EBPδ, C/EBPγ. Expression relative to siCT for each gene is graphed as mean ± SEM from two independent experiments, each with three biological replicates (n = 6). (D) Immunoblots of cells treated as in (C). (E) qPCR analysis of the indicated transcripts in serum-deprived wild-type MEFs treated with insulin (500 nM, 16 hr) after 30 min pretreatment with vehicle or rapamycin (20 nM) following transfection with control siRNAs (siCT) or those targeting Atf4 or C/ebpγ. Expression relative to siCT for each gene is graphed as mean ± SEM from two independent experiments, each with three biological replicates (n = 6). *p<0.05, **p<0.01, ***p<0.001, ns = not significant. One-way analysis of variance with Holm–Sidak method for multiple comparisons was used to determine statistical significance for (C, E).  Figure 2—source data 1.Figure 2A.
+**Figure 2.:** (A) CiiiDER analysis comparing transcription factor-binding elements enriched in the promoters of the top 200 ATF4-dependent genes induced by tunicamycin but not insulin (ISR Only) versus the 61 ATF4-dependent genes induced by both mTORC1 signaling and tunicamycin (Shared ISR and mTORC1). Those sequence elements significantly enriched (p<0.01) are shown in blue or red. Data are provided in Figure 2—source data 1. (B) Cistrome analysis of genome-wide chromatin immunoprecipitation studies to identify transcription factors found to bind to the promoters of the ATF4-dependent genes shared in their regulation by mTORC1 and ISR. (C) qPCR analysis of the indicated transcripts in Tsc2-/-mouse embryo fibroblasts (MEFs) transfected with control siRNAs (siCT) or those targeting Atf4, C/EBPα, C/EBPβ, C/EBPδ, C/EBPγ. Expression relative to siCT for each gene is graphed as mean ± SEM from two independent experiments, each with three biological replicates (n = 6). (D) Immunoblots of cells treated as in (C). (E) qPCR analysis of the indicated transcripts in serum-deprived wild-type MEFs treated with insulin (500 nM, 16 hr) after 30 min pretreatment with vehicle or rapamycin (20 nM) following transfection with control siRNAs (siCT) or those targeting Atf4 or C/ebpγ. Expression relative to siCT for each gene is graphed as mean ± SEM from two independent experiments, each with three biological replicates (n = 6). *p<0.05, **p<0.01, ***p<0.001, ns = not significant. One-way analysis of variance with Holm–Sidak method for multiple comparisons was used to determine statistical significance for (C, E).
 
 As all members of the C/EBP family have the potential to heterodimerize with ATF4 and contribute to the induction of these gene targets (Newman and Keating, 2003), we first determined the effects of siRNA-mediated knockdown of individual isoforms, relative to ATF4 knockdown, on expression of three representative genes in Tsc2-/- MEFs, which exhibit growth factor-independent activation of mTORC1 signaling. This analysis revealed that knockdown of ATF4, C/EBPβ, C/EBPδ, or C/EBPγ each led to decreased transcript levels of the shared mTORC1 and ISR gene targets Slc7a5, Mthfd2, and Aars (Figure 2C). However, this analysis was complicated by the finding of substantial co-dependence for expression among these bZIP transcription factors, with knockdown of any one of the C/EBP family members or ATF4 significantly changing expression of at least one other family member. C/EBPδ knockdown, for instance, decreased expression of all genes measured, including ATF4, which was also reflected in loss of ATF4 protein (Figure 2C, D). It is worth noting that we were unable to identify reliable antibodies to specific C/EBP family members for use in MEFs. Among C/EBP family members, C/EBPγ has been found in other settings to regulate many of the genes revealed in our analysis to be induced through shared regulation of ATF4 (Huggins et al., 2015), and its knockdown significantly decreased expression of the three ATF4 target genes tested without effects on ATF4 protein levels (Figure 2C, D). Based on this finding, we knocked down ATF4 or C/EBPγ in wild-type MEFs and stimulated the cells with insulin in the presence or absence of rapamycin to determine whether C/EBPγ impacted the mTORC1 and ATF4-dependent regulation of these genes. Indeed, knockdown of C/EBPγ attenuated the insulin-induced expression of these genes, albeit to a lesser extent than ATF4 knockdown (Figure 2E). C/EBPγ knockdown also blocked the ability of insulin to increase ATF4 transcript levels, suggesting that following the induction of ATF4 mRNA translation downstream of mTORC1 (Ben-Sahra et al., 2016; Park et al., 2017), it stimulates its own expression via ATF4-C/EBPγ heterodimers. Thus, C/EBPγ and likely other ATF4-binding partners of the C/EBP family contribute to the induction of ATF4 gene targets following mTORC1-mediated activation of ATF4.
 
-## mTORC1 signaling induces genes involved in amino acid synthesis, transport, and tRNA charging through ATF4 activation
+### mTORC1 signaling induces genes involved in amino acid synthesis, transport, and tRNA charging through ATF4 activation
 
 To validate and expand the findings from the RNA-seq analysis, a NanoString codeset was designed to simultaneously quantify transcripts of genes involved in the enriched processes above (see Materials and methods). As positive and negative controls, respectively, we included the glycolytic targets of HIF1, established previously to be regulated downstream of mTORC1 (Düvel et al., 2010), and the mitochondrial tRNA synthetases, not believed to be regulated by ATF4. Using this codeset, we analyzed gene expression in three settings of mTORC1 activation: (1) wild-type MEFs stimulated with insulin in the presence or absence of rapamycin, (2) growth factor-independent activation of mTORC1 via genetic loss of the TSC protein complex in Tsc2-/- MEFs, and (3) Tsc2-/- MEFs with siRNA-mediated knockdown of ATF4 (Figure 3A, Figure 3—source data 1). ATF4 protein levels were robustly upregulated with either genetic or insulin-stimulated mTORC1 activation in these settings, with both rapamycin and ATF4-targeting siRNAs blocking this induction (Figure 3—figure supplement 1A). Interestingly, the majority of transcripts analyzed in the functional categories that encode enzymes of NEAA synthesis, one-carbon metabolism, amino acid transporters, and cytosolic aminoacyl tRNA synthetases (and Xpot) were increased with mTORC1 activation in a manner sensitive to both rapamycin and siRNA-mediated knockdown of ATF4. However, the HIF1 targets of glycolysis were mTORC1-regulated but independent of ATF4, and transcripts encoding the mitochondrial tRNA synthetases were reproducibly regulated by neither mTORC1- nor ATF4. We further confirmed the mTORC1- and ATF4-mediated regulation of a representative subset of these transcripts via qPCR (Figure 3B, C, Figure 3—figure supplement 1B). Consistent with previous studies (Ben-Sahra et al., 2016; Park et al., 2017), both ATF4 transcript and protein levels were induced by mTORC1 signaling in these settings (Figure 3B–E). Transcriptional changes in ATF4 gene targets were reflected in corresponding changes in the abundance of representative protein products, with varying degrees of rapamycin sensitivity, likely reflecting inherent differences in the turnover rates of these proteins (Figure 3D, E, Figure 3—figure supplement 1C, D). We next wanted to confirm that these mTORC1- and ATF4-induced changes were independent of the ISR. While we have shown previously that mTORC1 regulates ATF4 in a manner that is independent of eIF2α-S51 phosphorylation (Ben-Sahra et al., 2016), chronic activation of mTORC1 upon loss of TSC2 is known to cause a basal increase in ER stress and activation of the ISR (Ozcan et al., 2008). Therefore, we utilized MEFs with endogenous, homozygous knock-in of the Eif2a-S51A mutation (Eif2aA/A), which fail to induce ATF4 downstream of cellular stress (Figure 3—figure supplement 1E; Scheuner et al., 2001). Consistent with mTORC1-dependent, ISR-independent regulation, insulin increased ATF4 protein levels and expression of its gene targets involved in amino acid synthesis and one-carbon metabolism, amino acid transporters, and aminoacyl tRNA synthetases in a rapamycin-sensitive manner in these cells, as shown by NanoString analysis and confirmed for a subset of genes by qPCR (Figure 3F, G, Figure 3—figure supplement 1F). Notably, like insulin stimulation, genetic activation of mTORC1 via siRNA-mediated knockdown of Tsc2 in the eIF2αA/A MEFs also increased ATF4 protein levels, further confirming that this regulation can occur independent of the ISR (Figure 3H). Growth factor-independent activation of mTORC1 also occurs upon loss of the PTEN tumor suppressor, and rapamycin was found to decrease ATF4 protein levels and ATF4-dependent expression of representative gene targets in established PTEN-deficient prostate cancer cells, LNCaP and PC3 (Figure 3I–L, Figure 3—figure supplement 1G–J).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig3-v2.jpg)
+
+**Figure 3.:** (A) Row-normalized heatmaps of NanoString gene expression data are shown from (1) serum-deprived wild-type (WT) or Tsc2-/-mouse embryo fibroblasts (MEFs) treated (16 hr) with vehicle (Veh) or rapamycin (20 nM, Rap) (n = 2), (2) serum-deprived WT MEFs treated with insulin (500 nM, 16 hr, Ins) following 30 min pretreatment with vehicle or rapamycin (20 nM) (n = 2), and (3) WT and Tsc2-/- MEFs transfected with Atf4 siRNAs or non-targeting controls (siCT) and serum-deprived for 16 hr (n = 3). Genes are grouped by functional category and ranked in order of most significantly decreased with ATF4 knockdown for each group. Heatmap values are provided in Figure 3—source data 1, and effects on ATF4 protein levels and mTORC1 signaling for each condition are shown by immunoblot in Figure 3—figure supplement 1A. (B, C) qPCR analysis of the indicated transcripts in WT and Tsc2-/- MEFs (B) or WT MEFs stimulated with insulin in the presence or absence of rapamycin (C) as in (A). Expression relative to vehicle-treated, unstimulated WT cells is graphed as mean ± SEM from three independent experiments, each with three biological replicates (n = 9). Effects of ATF4 knockdown are shown in Figure 3—figure supplement 1B. (D, E) Representative immunoblots of Tsc2-/- MEFs treated with vehicle or rapamycin as in (A) or serum-deprived WT MEFs stimulated with insulin (500 nM, 24 hr) following 30 min pretreatment with vehicle or rapamycin (20 nM), with biological duplicates shown for each condition. Quantification provided in Figure 3—figure supplement 1C, D. (F) Row-normalized heatmaps of NanoString gene expression data for transcripts in the functional groups from (A) found to be significantly (p<0.05) induced in eIF2αA/A MEFs treated with insulin (500 nM, 16 hr) following 30 min pretreatment with vehicle or rapamycin (20 nM) (n = 2). Genes are ranked by category in order of most significantly increased with insulin for each group. The heatmap values are provided in Figure 3—source data 1. Immunoblots validating that these cells are defective in the integrated stress response and qPCR validation of representative genes are provided in Figure 3—figure supplement 1E, F. (G) Representative immunoblot of cells treated as in (F), with biological duplicates shown for each condition. (H) Representative immunoblot of eIF2αA/A MEFs transfected with siRNAs targeting Atf4, Tsc2, or non-targeting controls (CT) prior to serum starvation for 16 hr. (I, J) Representative immunoblot of serum-deprived LNCaP cells treated with vehicle or rapamycin (20 nM, 16 hr) (I) or Atf4 siRNAs versus non-targeting controls (siCT) (J), with biological duplicates shown for each. (K, L) qPCR analysis of the indicated transcripts in LNCaP cells serum-starved in the presence of vehicle or rapamycin (20 nM, 16 hr) (K) or transfected with ATF4 siRNAs or non-targeting controls (siCT) and serum-starved for 16 hr (L). Expression relative to vehicle-treated cells is graphed as mean ± SEM from two independent experiments, with three biological replicates each (n = 6). Immunoblots and qPCR analysis for PC3 cells treated as in (I–L) are provided in Figure 3—figure supplement 1G–J, and effects of c-Myc knockdown on representative gene targets are shown in Figure 3—figure supplement 1K, L. *p<0.05, **p<0.01, ***p<0.001, ns = not significant. One-way analysis of variance with Holm–Sidak method for multiple comparisons was used to determine statistical significance for (B, C). Unpaired two-tailed t-test was used to determine statistical significance for (F, K, L). (D, E, G, H, I, J) are representative of at least two independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative immunoblots corresponding to NanoString heatmaps depicted in Figure 3A, with biological duplicates shown. (B) qPCR analysis of the indicated transcripts in Tsc2-/-mouse embryo fibroblasts (MEFs) transfected with siRNAs as described in Figure 3A. Expression relative to non-targeting control (siCT) is graphed as mean ± SEM from three independent experiments, each with three biological replicates (n = 9). (C, D) Quantification of immunoblots shown in Figure 3D, E. (E) Representative immunoblot of eIF2αA/A MEFs treated with vehicle or tunicamycin (2 µg/mL, 4 hr). (F) qPCR analysis of the indicated transcripts in eIF2αA/A MEFs treated as described in Figure 3F. Expression relative to vehicle-treated, unstimulated cells is graphed as mean ± SEM from three independent experiments, each with three biological replicates (n = 9). (G, H) Representative immunoblots of serum-deprived PC3 cells treated with vehicle or rapamycin (20 nM, 16 hr) (G) or transfected with Atf4 siRNAs or non-targeting controls (siCT) prior to serum deprivation (16 hr) (H), with biological duplicates for each condition shown. (I, J) qPCR analysis of the indicated transcripts in cells treated as described in (G, H). (K) Representative immunoblots of Tsc2-/- MEFs transfected with control siRNAs (siCT) or those targeting Atf4 or c-Myc prior to 16 hr serum deprivation. (L) qPCR analysis of the indicated transcripts in cells transfected as described in (K). Expression relative to siCT transfected cells is graphed as mean ± SEM from two independent experiments, each with three biological replicates (n = 6). (A, E, G, H, K) are representative of at least two independent experiments. *p<0.05, **p<0.01, ***p<0.001, ns = not significant, calculated in (B, D, F, L) via one-way analysis of variance with Holm–Sidak method for multiple comparisons and (C, I, J) via unpaired two-tailed t-test.
 
 The transcription factor c-MYC can be activated downstream of mTORC1 in some settings and has previously been shown to regulate many of the same ATF4 target genes encoding the enzymes of amino acid synthesis and transport, as well as aminoacyl tRNA synthetases (Csibi et al., 2014; Stine et al., 2015; Wall et al., 2008; Zirin et al., 2019). A survey of expression for 11 of such genes in Tsc2-/- cells finds that the majority are not significantly affected by siRNA-mediated knockdown of c-MYC, whereas a few others are modestly but significantly decreased (e.g., Gars, Slc1a5, Psat1), albeit to a lesser degree than with siRNA-mediated knockdown of ATF4 (Figure 3—figure supplement 1K, L).
 
 To determine whether ATF4 activation is both necessary and sufficient for mTORC1-mediated regulation of these gene targets related to amino acid acquisition and utilization, we knocked out Atf4 using CRISPR/Cas9 in Tsc2-/- MEFs and confirmed biallelic disruption (Figure 4A). Protein levels of identified ATF4 targets were decreased in Tsc2-/- Atf4-/- MEFs and fully rescued with expression of wild-type ATF4 but not a DNA-binding domain mutant (ATF4DBD) (Figure 4B). As mTORC1 regulates ATF4 translation through a mechanism requiring its 5′-UTR (Ben-Sahra et al., 2016; Park et al., 2017), the stably rescued cell lines, which express an ATF4 cDNA lacking the 5′-UTR, exhibit protein expression of ATF4 and its encoded gene targets that are resistant to rapamycin (Figure 4C, Figure 4—figure supplement 1). The expression of select ATF4 target transcripts was markedly decreased in Tsc2-/- Atf4-/- MEFs to a similar extent to that measured in Atf4 wild-type cells treated with rapamycin (Figure 4D). These transcript levels were rescued with the expression of wild-type ATF4, but not ATF4DBD, in a manner that was completely or partially rapamycin resistant (Figure 4D). These collective data show that mTORC1 signaling drives the expression of genes involved in tRNA export and charging, amino acid uptake, and NEAA synthesis through its downstream regulation of the ATF4 transcription factor.
 
-## Activation of ATF4 contributes to the induction of protein synthesis downstream of mTORC1
+![Figure 4.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of ATF4 transcript, including upstream open reading frames (uORFs), coding sequence (CDS), and DNA-binding domain (DNABD), highlighting location of CRISPRn guides biallelic location of ATF4 mutations generated in Tsc2-/- mouse embryo fibroblasts (MEFs). (B, C) Representative immunoblots of serum-deprived Tsc2-/- (wild-type [WT]) MEFs or Tsc2-/- Atf4-/- MEFs with stable expression of cDNAs encoding GFP, ATF4 lacking its 5′-UTR, or a DNABD mutant (DBD) of this ATF4 left untreated (B) or treated with vehicle or rapamycin (20 nM, 16 hr) (C), with biological duplicates shown for each condition. Immunoblots of proteins encoded by ATF4 gene targets in these cells are provided in Figure 4—figure supplement 1. (D) qPCR analysis of the indicated transcripts from cells treated as in (C). Expression relative to WT vehicle-treated cells is graphed as the log2 mean ± SD from a representative experiment with three biological replicates (n = 3). *p<0.05, **p<0.01, ***p<0.001, ns = not significant, calculated via one-way analysis of variance with Holm–Sidak method for multiple comparisons. (B–D) are representative of at least two independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Representative immunoblots of serum-deprived Tsc2-/- mouse embryo fibroblasts (MEFs) (Atf4 wild-type) and Tsc2-/- Atf4-/- MEFs with stable expression of cDNAs encoding GFP, activating transcription factor 4 (ATF4) lacking its 5′-UTR, or a DNABD mutant (DBD) of this ATF4 treated with vehicle or rapamycin (20 nM, 16 hr), with biological duplicates for each condition shown.
+
+### Activation of ATF4 contributes to the induction of protein synthesis downstream of mTORC1
 
 mTORC1 induces protein synthesis through multiple downstream targets (Valvezan and Manning, 2019). Given that the major mTORC1-regulated ATF4 target genes identified above are involved in amino acid uptake, synthesis, and tRNA charging, we hypothesized that ATF4 induction through mTORC1 signaling might contribute to the canonical increase in protein synthesis upon mTORC1 activation. Relative rates of protein synthesis were measured via [35S]-methionine incorporation into newly synthesized proteins in Tsc2+/+ and Tsc2-/- cells treated with control siRNAs or Tsc2-/- cells treated with siRNAs targeting ATF4 or Rheb, the small GTPase target of TSC2 that is an essential upstream activator of mTORC1. siRNA-mediated knockdown of either ATF4 or Rheb substantially decreased ATF4 protein levels in Tsc2-/- cells (Figure 5A). Importantly, the elevated rate of protein synthesis in Tsc2-/- MEFs was decreased with ATF4 knockdown to a similar extent to that observed with Rheb knockdown (Figure 5A, B). No change in mTORC1 signaling or phosphorylation of eIF2α was observed with ATF4 knockdown in this setting (Figure 5—figure supplement 1A). Protein synthesis was also measured in the Tsc2-/- Atf4-/- cell lines described above. Notably, the cells lacking ATF4 exhibited increased uptake of [35S]-methionine relative to parental cells and those reconstituted with ATF4 (Figure 5—figure supplement 1B). Despite this unexplained difference in methionine uptake, Atf4 knockout cells exhibited a reduced rate of protein synthesis that was similar to the parental lines treated with rapamycin (Figure 5C, D). However, rapamycin treatment further reduced protein synthesis in the Atf4 knockout cells. Importantly, cells reconstituted with the rapamycin-resistant ATF4 cDNA exhibited rescued protein synthesis, surpassing that observed in cells with endogenous ATF4, but this enhanced protein synthesis was still significantly reduced with rapamycin. Like Tsc2-/- cells, wild-type cells cultured in the presence of growth factors exhibited reduced protein synthesis upon deletion of Atf4, again with a reduction similar to that from rapamycin treatment (Figure 5—figure supplement 1C, D). Together, these data suggest that ATF4 induction downstream of mTORC1 is necessary but not sufficient for mTORC1-regulated protein synthesis, consistent with the multiple mechanisms through which mTORC1 controls this key anabolic process.
 
-## mTORC1 regulates cystine uptake through ATF4
+![Figure 5.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig5-v2.jpg)
+
+**Figure 5.:** (A, B) Representative autoradiogram and immunoblot of wild-type (WT) and Tsc2-/- mouse embryo fibroblasts (MEFs) transfected with siRNAs targeting Atf4 or Rheb1 and Rhebl1 or non-targeting controls (siCT) and serum-deprived for 16 hr with a pulse label of [35S]-methionine for the final 20 min (A) and quantified in (B). Biological triplicates from a representative experiment are shown in (A). (B) is graphed as mean ± SEM from two independent experiments, each with three biological replicates (n = 6). Lack of effect of ATF4 knockdown on eIF2α phosphorylation is shown in Figure 5—figure supplement 1A. (C, D) Representative autoradiogram and immunoblot of serum-deprived Tsc2-/- MEFs (WT) or Tsc2-/- Atf4-/- MEFs with stable expression of cDNAs encoding GFP or ATF4 lacking its 5′-UTR treated with vehicle or rapamycin (20 nM, 16 hr) with a pulse label of [35S]-methionine for the final 20 min (C) and quantified in (D). Biological triplicates from a representative experiment are shown in (C). (D) is graphed as mean ± SEM from two independent experiments, each with three biological replicates (n = 6). Measurement of methionine uptake in these cells is provided in Figure 5—figure supplement 1B, and effects of ATF4 knockout on protein synthesis in growth factor-stimulated WT MEFs are shown in Figure 5—figure supplement 1C, D. (B,D) *p<0.05, **p<0.01, ***p<0.001, ns = not significant, calculated via one-way analysis of variance with Holm–Sidak method for multiple comparisons.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative immunoblots of Tsc2-/- mouse embryo fibroblasts (MEFs) transfected with Atf4, Rheb, or non-targeting control (siCT) siRNAs prior to serum starvation for 16 hr, with biological duplicates shown. Data is representative of at least three independent experiments. (B) Cellular methionine uptake in serum-deprived Tsc2-/- MEFs (Atf4 wild-type [WT]) andTsc2-/- Atf4-/- MEFs with stable expression of cDNAs encoding GFP or activating transcription factor 4 was assayed and graphed as mean ± SEM relative to WT cells with data from two independent experiments, with three biological replicates each (n = 6). (C, D) Representative autoradiogram and immunoblots of protein extracts from Atf4+/+ and Atf4-/- MEFs grown in the presence of serum and treated with vehicle (Veh) or rapamycin (20 nM, Rap, 16 hr) and pulse labeled with [35S]-methionine for the final 20 min, with biological duplicates from a representative experiment shown (C) and autoradiograms quantified and graphed as mean ± SEM from two independent experiments, each with two biological replicates (n = 4) (D). *p<0.05, **p<0.01, ***p<0.0001, ns = not significant, calculated for (B, D) via one-way analysis of variance with Holm–Sidak method for multiple comparisons.
+
+### mTORC1 regulates cystine uptake through ATF4
 
 Among the 61 shared mTORC1- and ISR-induced ATF4 gene targets identified, the cystine-glutamate antiporter Slc7a11 was the gene with the highest fold induction by RNA-seq analysis upon insulin treatment (Figure 1F). SLC7A11 (also known as xCT) associates with SLC3A2 (CD98) at the plasma membrane and serves as the primary transporter of cystine, the oxidized form of cysteine and predominant cysteine species in both plasma and cell culture media, whereas reduced cysteine is transported through neutral amino acid systems (Figure 6A; Bannai and Kitamura, 1980; Conrad and Sato, 2012). Transcript levels of Slc7a11 were sensitive to rapamycin in Tsc2-/- MEFs and greatly decreased with ATF4 knockout (Figure 6B). Upon reconstitution with rapamycin-resistant ATF4, expression of Slc7a11 was rescued and no longer sensitive to rapamycin, while the ATF4DBD mutant was unable to restore Slc7a11 transcript levels. A similar pattern of mTORC1- and ATF4-regulated expression was measured for Slc3a2 (Figure 6C). SLC7A11 protein, detected using an antibody validated with siRNA knockdown (Figure 6—figure supplement 1A), decreased in Tsc2-/- MEFs treated with mTOR inhibitors and were increased in wild-type MEFs stimulated with insulin in an mTOR-dependent manner (Figure 6D, E, Figure 6—figure supplement 1B, C). SLC7A11 transcript levels were also decreased with both ATF4 knockdown and rapamycin in the PTEN-deficient cancer cell lines LNCaP and PC3, although SLC7A11 expression was relatively more resistant to rapamycin in PC3 cells (Figure 6—figure supplement 1D, E). SLC7A11 protein levels likewise decreased in LNCaP and PC3 cells treated with mTOR inhibitors, without significant changes to the SLC3A2 gene product CD98 (Figure 6F, Figure 6—figure supplement 1F–H). These data confirm and extend the findings from RNA-seq and NanoString analyses (Figure 1F, Figure 3A, F) and demonstrate that ATF4 is both necessary and sufficient for the mTORC1-mediated induction of Slc7a11 expression.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of transporter xCT, encoded by Slc7a11, which heterodimerizes with SLC3A2 to serve as a cystine (Cys2)/glutamate anti-porter. Cystine is reduced to cysteine (Cys), which is essential for glutathione synthesis. Cysteine transport is mediated by neutral amino acid trasporters distinct from xCT. The targets of erastin and buthionine-sulfoximine, two compounds used in this study, are also depicted. (B, C) qPCR analysis of Slc7a11 (B) or Slc3a2 (C) in serum-deprived Tsc2-/- mouse embryo fibroblasts (MEFs) (wild-type [WT]) and Tsc2-/- Atf4-/- MEFs with stable expression of cDNAs encoding GFP (control), ATF4 lacking its 5′-UTR, or a DNABD mutant (DBD) of this ATF4 treated with vehicle or rapamycin (20 nM, 16 hr). Expression relative to WT vehicle-treated cells is graphed as the log2 mean ± SD from a representative experiment with three biological replicates (n = 3). (D–F) Representative immunoblots of serum-deprived Tsc2-/- MEFs (D), insulin-stimulated (500 nM, 24 hr) WT MEFs (E), or serum-deprived LNCaP cells (F) treated 24 hr (D, E) or 16 hr (F) with vehicle, rapamycin (20 nM), or Torin1 (250 nM), shown with biological duplicates. The SLC7A11 antibody is validated for use in MEFs in Figure 6—figure supplement 1A, corresponding immunoblots quantified in Figure 6—figure supplement 1B, C, F. Effects of ATF4 knockdown and rapamycin on SLC7A11 transcripts in LNCaP and PC3 cells are shown in Figure 6—figure supplement 1D, E, and corresponding immunoblots and protein quantification are provided in Figure 6—figure supplement 1G, H. (G, H) Representative growth curves of Tsc2-/- Atf4-/- MEFs with stable expression of GFP, ATF4, or ATF4DBD grown in 10% dialyzed fetal bovine serum (FBS) with Dulbecco’s Modified Eagle’s Medium (DMEM) (G) or DMEM supplemented with cysteine alone (Cys, 1 mM), nonessential amino acids (100 μM each) lacking cysteine (NEAA-Cys), or nonessential amino acids plus either cysteine (1 mM, NEAA+Cys), or cystine (0.5 mM, NEAA+Cys2) (H). Mean cell numbers ± SD relative to day 0 are graphed from three biological replicates (n = 3). (I) Cell death of Tsc2-/- Atf4-/- MEFs with stable expression of cDNAs encoding GFP, ATF4, or SLC7A11 cultured in DMEM with 10% dialyzed FBS was quantified by annexin V and propidium iodide (PI) staining after 72 hr and graphed as the mean percentage of total cells ± SD from three biological replicates (n = 3). (J) Cystine uptake in serum-deprived Tsc2-/- MEFs treated with vehicle, rapamycin (20 nM), or erastin (10 μM) for 16 hr is graphed as the mean ± SEM radiolabel incorporation from C14-cystine over the final 10 min relative to vehicle-treated cells from two independent experiments, with three biological replicates each (n = 6). The effect of mTOR inhibitors on cystine uptake in littermate-derived Rictor+/+ and Rictor-/- MEFs, and corresponding immunoblots, is shown in Figure 6—figure supplement 1I, J. (K) Cystine uptake in serum-deprived WT and Atf4-/- MEFs pretreated 30 min with vehicle or rapamycin (20 nM) prior to insulin stimulation (500 nM, 24 hr) or treated with erastin (10 μM, 30 min) was assayed and graphed as in (J) relative to vehicle-treated WT cells with data from three independent experiments, with three biological replicates each (n = 9). (L) Cystine uptake in serum-deprived Tsc2-/- MEFs (WT) andTsc2-/- Atf4-/- MEFs with stable expression of cDNAs encoding GFP or ATF4 treated with vehicle or rapamycin (20 nM) for 16 hr was assayed and graphed as in (J) relative to vehicle-treated WT cells with data from two independent experiments, with three biological replicates each (n = 6). (B–I) are representative of at least two independent experiments. *p<0.05, **p<0.01, ***p<0.001, ns = not significant, calculated in (B, C, I, J, K, L) via one-way analysis of variance with Holm–Sidak method for multiple comparisons and in (G, H) via unpaired two-tailed t-test. For (I), the sum of annexin V+/PI-, annexin V-/PI+, and annexin V+/PI+ populations were used for comparisons to the annexin V-/P- population.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative immunoblot of Tsc2-/- mouse embryo fibroblasts (MEFs) transfected with Slc7a11 or non-targeting control (siCT) siRNAs prior to serum starvation for 16 hr. (B, C) Quantification of representative immunoblots from Figure 6D, E. (D, E) qPCR analysis of SLC7A11 transcripts in serum-deprived LNCaP (D) or PC3 (E) cells either transfected with siRNAs targeting ATF4 or non-targeting controls (siCT) (left) or treated with vehicle or rapamycin (20 nM, 16 hr) (right). Expression relative to siCT or vehicle-treated cells is graphed as mean ± SEM from two independent experiments, each with three biological replicates (n = 6). (F) Quantification of representative immunoblots shown in Figure 6F. (G, H) Representative immunoblot of serum-deprived PC3 cells treated (16 hr) with vehicle, rapamycin (20 nM), or Torin1 (250 nM), shown with biological duplicates (G) and quantified in (H). (I, J) Cystine uptake in Rictor+/+ and Rictor-/- MEFs grown in full serum and treated with vehicle, rapamycin (20 nM, 24 hr), Torin1 (250 nM, 24 hr), or erastin (10 μM, 30 min) was assayed and graphed as in Figure 6J relative to vehicle-treated Rictor+/+ cells with data from two independent experiments, with three biological replicates each (n = 6). Representative immunoblots shown in (J). (A, G, J) are representative of two independent experiments. *p<0.05, **p<0.01, ***p<0.001, ns = not significant, calculated for (D, E) via unpaired two-tailed t-test and (B, C, F, H, I) via one-way analysis of variance with Holm–Sidak method for multiple comparisons.
 
 ATF4 is known to be important for the uptake and synthesis of NEAAs (Harding et al., 2003). In agreement with this, we observed that Tsc2-/- Atf4-/- cells fail to proliferate in Dulbecco’s Modified Eagle’s Medium (DMEM), which only contains a subset of NEAAs, while addback of wild-type ATF4, but not ATF4DBD, restored proliferation (Figure 6G). Supplementation of DMEM with a mixture of all NEAAs, including cysteine, allowed the Tsc2-/- Atf4-/- MEFs to proliferate at the same rate as the ATF4-reconstituted cells, while NEAAs lacking cysteine completely failed to support proliferation of these cells (Figure 6H). Furthermore, supplementation with excess reduced cysteine alone, but not equimolar concentrations of oxidized cysteine in the form of cystine, was able to significantly increase proliferation of the Tsc2-/- Atf4-/- MEFs, albeit to a lesser extent than NEAAs plus cysteine. The majority of these cells die after 72 hr in DMEM, and exogenous expression of either ATF4 or SLC7A11 restores their survival (Figure 6I). Taken together, these data indicate that a defect in the acquisition of cysteine, which normally occurs through SLC7A11-mediated uptake of cystine, underlies the inability of Tsc2-/- Atf4-/- cells to proliferate or survive in DMEM and suggest a key role for mTORC1 signaling in controlling cystine uptake through ATF4.
 
 To directly test whether mTORC1 influences cystine uptake, we employed both genetic (Tsc2 loss) and physiological (insulin stimulation) activation of mTORC1, measuring [14C]-cystine uptake in the presence or absence of rapamycin or the xCT inhibitor erastin (Figure 6A; Yang and Stockwell, 2008). Both rapamycin and erastin significantly decreased [14C]-cystine uptake into Tsc2-/- MEFs (Figure 6J). In wild-type MEFs, insulin stimulated an increase in cystine uptake that was inhibited with rapamycin, and this mTORC1-regulated cystine transport was completely lost with ATF4 knockout, reduced to levels of erastin-treated cells (Figure 6K). Additionally, Tsc2-/- Atf4-/- MEFs showed a decrease in cystine uptake when compared to parental Tsc2-/- MEFs, which could be rescued with re-expression of ATF4 (Figure 6L). However, cystine consumption in cells reconstituted with rapamycin-resistant ATF4 was still significantly sensitive to rapamycin treatment, suggesting the existence of additional, ATF4-independent mechanisms influencing the transport or cellular incorporation of cystine downstream of mTORC1. As mTORC2 has been previously suggested to directly regulate xCT (Gu et al., 2017), we utilized Rictor-/- MEFs, which lack mTORC2 activity, to determine whether mTORC2 was contributing to the decreased cystine uptake observed upon treatment with mTOR inhibitors. While Rictor-/- MEFs displayed increased uptake of cystine relative to their wild-type counterparts, cystine uptake, as well as ATF4 protein levels, was sensitive to rapamycin and Torin1 in both cell lines (Figure 6—figure supplement 1I, J). Thus, mTORC1 promotes cellular cystine uptake, at least in part, through the activation of ATF4 and induction of Slc7a11 expression, which supports cell proliferation and survival.
 
-## mTORC1 regulates glutathione levels through ATF4-mediated induction of Slc7a11
+### mTORC1 regulates glutathione levels through ATF4-mediated induction of Slc7a11
 
 Cysteine, generally acquired through cystine uptake and reduction, is an essential component of the tripeptide glutathione (Figure 6A), the most abundant antioxidant in cells (Meister, 1983). We hypothesized that the regulation of cystine uptake through mTORC1 and ATF4 might influence cellular glutathione content. Indeed, mTORC1 inhibition with rapamycin or Torin1 significantly decreased total glutathione levels in Tsc2-/- MEFs, albeit less than buthionine-sulfoximine (BSO), a direct inhibitor of glutathione synthesis (Figure 7A; Griffith and Meister, 1979). Similar to BSO treatment, mTOR inhibitors decreased both reduced (GSH) and oxidized (GSSG) forms of glutathione to the same degree, indicating effects on total glutathione abundance rather than its redox state (Figure 7—figure supplement 1A). Stable reconstitution of Tsc2-/- MEFs with TSC2 also decreased total glutathione levels (Figure 7B). To examine this response in vivo, we employed a mouse model of tuberous sclerosis complex involving xenograft tumors derived from the rat TSC2-/- tumor cell line ELT3 (Hodges et al., 2002). To avoid major differences in tumor size from the treatments, we treated tumor-bearing mice for just 5 days with either vehicle or rapamycin, prior to harvesting tumors for immunoblot analysis and metabolite profiling. Importantly, we found that rapamycin treatment strongly decreased ATF4 protein levels in these tumors with a concomitant decrease in glutathione levels, measured by LC-MS in tumor metabolite extracts (Figure 7C, D). An analysis of published metabolomics data (Tang et al., 2019) also revealed that rapamycin treatment significantly decreased glutathione levels in human TSC2-deficient angiomyolipoma cells (Figure 7—figure supplement 1B). Likewise, inhibition of mTORC1 signaling with rapamycin or Torin1 in LNCaP and PC3 cells resulted in a significant decrease in total glutathione levels, although the degree of decrease varied between the two cell lines (Figure 7E), perhaps reflecting the above finding that SLC7A11 expression is more resistant to mTOR inhibitors in PC3 cells (Figure 6—figure supplement 1D–H).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig7-v2.jpg)
+
+**Figure 7.:** (A) Total glutathione in serum-deprived Tsc2-/-mouse embryo fibroblasts (MEFs) treated with rapamycin (20 nM), Torin1 (250 nM), or buthionine-sulfoximine (BSO) (10 μM) for 16 hr is graphed as mean ± SEM relative to vehicle-treated cells from three independent experiments, each with three biological replicates (n = 9). Relative abundance of reduced (GSH) and oxidized (GSSG) glutathione from this experiment is shown in Figure 7—figure supplement 1A. (B) Relative total glutathione in serum-deprived Tsc2-/- MEFs with stable reconstitution of a cDNA encoding TSC2 or empty vector (EV) control is graphed as mean ± SD from a representative experiment with three biological replicates (n = 3). (C, D) Immunoblot (C) and relative glutathione levels measured by LC-MS/MS (D) from Tsc2-/- ELT3 xenograft tumors resected from mice treated for 5 days with vehicle or rapamycin (1 mg/kg on days 1, 3, and 5) (n = 3 mice/group). Relative glutathione levels from rapamycin-treated human TSC2-/- tumor cells are shown in Figure 7—figure supplement 1B. (E) Total glutathione in serum-deprived LNCaP (left) and PC3 (right) cells treated with vehicle, rapamycin (20 nM), Torin1 (250 nM), or BSO (50 μM) for 24 hr is graphed as mean ± SD relative to vehicle-treated cells from a representative experiment with three biological replicates (n = 3). (F) Total glutathione in serum-deprived Tsc2-/- MEFs (Atf4 wild-type [WT]) and Tsc2-/- Atf4-/- MEFs with stable expression of cDNAs encoding GFP (control), ATF4, ATF4DBD, or SLC7A11 grown in Dulbecco’s Modified Eagle’s Medium and supplemented, where indicated, with cysteine (1 mM, Cys) or cystine (0.5 mM, Cys2) is graphed as mean ± SD relative to WT cells from a representative experiment with three biological replicates (n = 3). Relative glutathione in these cells supplemented with nonessential amino acid with or without Cys, measured by LC-MS/MS, is shown in Figure 7—figure supplement 1C. (G) Total glutathione in serum-deprived Atf4+/+ and Atf4-/- MEFs pretreated 30 min with vehicle or rapamycin (20 nM) prior to insulin stimulation (500 nM, 24 hr) or treated with BSO (10 μM, 24 hr) is graphed as mean ± SEM relative to unstimulated Atf4+/+ cells from two independent experiments, with three biological replicates each (n = 6). (H) Total glutathione in serum-deprived Tsc2-/- MEFs (Atf4 WT) and Tsc2-/- Atf4-/- MEFs with stable expression of cDNAs encoding GFP, ATF4 lacking its 5′-UTR, or a DNABD mutant (DBD) of this ATF4 treated with vehicle or rapamycin (20 nM) for 16 hr is graphed as mean ± SD relative to vehicle-treated WT cells from a representative experiment with three biological replicates (n = 3). Effects of mTORC1 signaling and ATF4 on GCLC and GCLM transcript and protein levels are shown in Figure 7—figure supplement 1D–G. (B, E, F, H) are representative of at least two independent experiments. *p<0.05, **p<0.01, ***p<0.001, ns = not significant, calculated in (A, E, F, G, H) via one-way analysis of variance with Holm–Sidak method for multiple comparisons and in (B, D) via unpaired two-tailed t-test.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63326/elife-63326-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Relative GSH and GSSG levels in serum-deprived Tsc2-/-mouse embryo fibroblasts (MEFs) treated with rapamycin (20 nM,16 h), Torin1 (250 nM, 16 hr), or buthionine-sulfoximine (10 μM, 16 hr). GSH and GSSG levels relative to vehicle-treated cells are graphed as mean ± SEM from three independent experiments, with three biological replicates each (n = 9). (B) Total glutathione levels in human TSC2-/- angiomyolipoma cells treated with vehicle or rapamycin (20 nM, 24 hr) measured by LC-MS/MS (mean ± SD, n = 3). (C) Normalized peak area of reduced glutathione from LC-MS/MS analysis of serum-deprived Tsc2-/- Atf4-/- MEFs with addback of GFP or activating transcription factor 4 (ATF4) in the presence of supplemented cysteine (1 mM), nonessential amino acids without cysteine (100 µM each), or nonessential amino acids (1 mM cysteine or 100 µM) (mean ± SD, n = 3). (D, E) Transcript abundance of Gclc and Gclm in serum-deprived Tsc2-/- MEFs treated with vehicle or rapamycin (20 nM, 16 hr) (D) or transfected with siRNAs targeting Atf4 or non-targeting controls (siCT) (E). Expression relative to vehicle (D) or siCT(E) is graphed as mean ± SEM from two independent experiments, each with three biological replicates (n = 6). (F, G) Representative immunoblots of cells treated as in Figure 7G, H, except where indicated in (F), cells were treated with Torin1 (250 nM), with biological duplicates provided for each condition. (C, F, G) are representative of two independent experiments. *p<0.05, **p<0.01, ***p<0.001, ns = not significant calculated for (A, C) via one-way analysis of variance with Holm–Sidak method for multiple comparisons and unpaired two-tailed t-test for (B, D, E).
 
 To determine the role of ATF4 and SLC7A11-dependent cystine uptake in glutathione synthesis downstream of mTORC1 signaling, we compared Tsc2-/- MEFs with or without Atf4 knockout. Total glutathione levels were greatly decreased in Tsc2-/- Atf4-/- MEFs, and exogenous expression of ATF4 or SLC7A11, but not ATF4DBD, was able to restore glutathione levels to these cells (Figure 7F). Supplementation with all NEAAs or just cysteine, transported through neutral amino acid systems, but not equimolar concentrations of cystine, transported through SLC7A11, also rescued total glutathione levels, as measured by either enzymatic assay or LC-MS (Figure 7F, Figure 7—figure supplement 1C). Furthermore, insulin stimulated an increase in glutathione levels in wild-type MEFs in a manner completely sensitive to rapamycin, an effect ablated in Atf4 knockout cells, which had a very low abundance of glutathione (Figure 7G). Likewise, the rapamycin-sensitive nature of glutathione in Tsc2-/- MEFs was completely lost in Tsc2-/- Atf4-/- MEFs (Figure 7H). Glutathione levels were restored to these cells upon exogenous expression of ATF4, but not the ATF4DBD mutant. However, glutathione was still significantly reduced with rapamycin treatment in cells expressing the rapamycin-resistant ATF4, suggesting possible ATF4-independent mechanisms also contributing to this regulation (Lam et al., 2017). As one possible contributing factor, we found that the transcript encoding both the catalytic (GCLC) and regulatory (GCLM) subunits of glutamate-cysteine ligase, the first enzyme of glutathione synthesis, was sensitive rapamycin, in a manner unaffected by ATF4 knockdown (Figure 7—figure supplement 1D, E). We also found that GCLC and GCLM protein levels could be modestly induced by insulin through mTORC1 signaling in both wild-type and ATF4 knockout cells, but their protein abundance was unaffected by rapamycin in Tsc2-/- MEFs (Figure 7—figure supplement 1F, G). Thus, the mechanism underlying the apparent ATF4-independent effects of mTORC1 signaling on glutathione levels remains unknown. These collective data show that mTORC1 signaling induces glutathione synthesis, at least in part, through the activation of ATF4 and SLC7A11-dependent cystine uptake.
 
@@ -89,72 +135,802 @@ Our findings further support the addition of ATF4 to SREBP and HIF1, as nutrient
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>ELT3 tumor samples</td>
+      <td>PMID:29056426</td>
+      <td></td>
+      <td>Valvezan et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>WT and Tsc2-/- MEFs</td>
+      <td>PMID:14561707</td>
+      <td></td>
+      <td>David Kwiatkowski</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>EIF2aA/A MEFs</td>
+      <td>PMID:11430820</td>
+      <td></td>
+      <td>Randal Kaufman</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Rictor+/+ and Rictor-/- MEFs</td>
+      <td>PMID:17141160</td>
+      <td></td>
+      <td>D.A. Guertin and D.M. Sabatini</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>PC3</td>
+      <td>ATCC</td>
+      <td>CRL-1435 RRID:CVCL_0035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>LNCaP</td>
+      <td>ATCC</td>
+      <td>CRL-1740 RRID:CVCL_1379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Tsc2+/+ Atf4-/- MEFs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR-Cas9n generated – see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Tsc2-/- Atf4-/- MEFs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR-Cas9n generated – see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Aequorea victoria)</td>
+      <td>pTRIPZ-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>eGFP cDNA- expressing control plasmid – see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pTRIPZ-ATF4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Rapamycin-resistant ATF4 cDNA-expressing plasmid – see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pTRIPZ-ATF4DBD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ATF4 DNA-binding domain mutant cDNA-expressing plasmid – see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pTRIPZ-SLC7A11</td>
+      <td>This paper</td>
+      <td></td>
+      <td>SLC7A11 cDNA-expressing plasmid – see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human, mouse)</td>
+      <td>Non-targeting pool for siRNA experiments</td>
+      <td>GE Life Sciences/Dharmacon</td>
+      <td>D-001810-10-50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>siMyc</td>
+      <td>GE Life Sciences/Dharmacon</td>
+      <td>L-040813-00-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>siAtf4</td>
+      <td>GE Life Sciences/Dharmacon</td>
+      <td>L-042737-01-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>siRheb</td>
+      <td>GE Life Sciences/Dharmacon</td>
+      <td>L-057044-00-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>siRhebL1</td>
+      <td>GE Life Sciences/Dharmacon</td>
+      <td>L-056074-01-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>siTsc2</td>
+      <td>GE Life Sciences/Dharmacon</td>
+      <td>L-047050-00-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>siC/ebpα</td>
+      <td>GE Life Sciences/Dharmacon</td>
+      <td>L-040561-00-0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>siC/ebpβ</td>
+      <td>GE Life Sciences/Dharmacon</td>
+      <td>L-043110-00-0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>siC/ebpδ</td>
+      <td>GE Life Sciences/Dharmacon</td>
+      <td>L-060294-01-0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>siC/ebpγ</td>
+      <td>GE Life Sciences/Dharmacon</td>
+      <td>L-065627-00-0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siATF4</td>
+      <td>GE Life Sciences/Dharmacon</td>
+      <td>L-005125-00-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>qPCR primers</td>
+      <td>IDT</td>
+      <td></td>
+      <td>See table in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ATF4 (cDNA amplified from plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_21845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pspax2 (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pmd2.G (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSpCas9n(BB)−2A-GFP (PX461) (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_48140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIPZ (plasmid)</td>
+      <td>PMID:27088857</td>
+      <td></td>
+      <td>Alex Toker (Beth Israel Deaconess Medical Center)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP (cDNA amplified from plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_19319</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SLC7A11 (cDNA amplified from plasmid)</td>
+      <td>PMID:29259101</td>
+      <td></td>
+      <td>Alex Toker (Beth Israel Deaconess Medical Center)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBabe hygro IRES-TSC2</td>
+      <td>PMID:15150095</td>
+      <td></td>
+      <td>David Kwiatkowski (Brigham and Women’s Hospital)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>CRISPR-Cas9n guides for KO of ATF4</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CACCGGAGGTGGAGGGGCTATGCT; AAACAGCATAGCCCCTCCACCTCC; CACCGACAATCTGCCTTCTCCAGG; AAACCCTGGAGAAGGCAGATTGTC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Sequencing primers for Atf4-/- cell lines</td>
+      <td>IDT</td>
+      <td></td>
+      <td>TCGATGCTCTGTTTCGAATG; CTTCTTCCCCCTTGCCTTAC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Primers for site-directed mutagenesis</td>
+      <td>IDT</td>
+      <td></td>
+      <td>GCCTCCTGCTCAGCCGCCGCCGCCTCGAGGTACCCAGTGGCTGCTGTCTTGTTTTGCTCCATCT; AGATGGAGCAAAACAAGACAGCAGCCACTGGGTACCTCGAGGCGGCGGCGGCTGAGCAGGAGGC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KOD Xtreme Hot Start DNA Polymerase</td>
+      <td>Sigma-Aldrich</td>
+      <td>71975</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(P)-S6K1 T389 rabbit monoclonal</td>
+      <td>Cell Signaling Technologies (CST)</td>
+      <td>Cat #: 9234 RRID:AB_2269803</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ATF4 rabbit monoclonal</td>
+      <td>Cell Signaling Technologies (CST)</td>
+      <td>Cat #: 11815 RRID:AB_2616025</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eIF2α rabbit polyclonal</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #: 9722 RRID:AB_2230924</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P-eIF2α S51 rabbit polyclonal</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #: 9721 RRID:AB_330951</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>S6K1 rabbit monoclonal</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #: 2708 RRID:AB_390722</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD98 rabbit monoclonal</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #: 13180 RRID:AB_2687475</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PSAT1 rabbit polyclonal</td>
+      <td>Protein Tech</td>
+      <td>Cat #: 20180-1-AP RRID:AB_10665948</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MTHFD2 rabbit polyclonal</td>
+      <td>Protein Tech</td>
+      <td>Cat #: 12270–1-AP RRID:AB_2147525</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AARS rabbit polyclonal</td>
+      <td>Bethyl Antibodies</td>
+      <td>A303-475A-M</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GARS rabbit polyclonal</td>
+      <td>Bethyl Antibodies</td>
+      <td>A304-746A-M</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LARS rabbit polyclonal</td>
+      <td>Bethyl Antibodies</td>
+      <td>A304-316A-M</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>XPOT rabbit polyclonal</td>
+      <td>Aviva Biotechnologies</td>
+      <td>Cat #: ARP40711_P050 RRID:AB_2048757</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TSC2 rabbit monoclonal</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #: 4308 RRID:AB_10547134</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SLC7A11 rabbit monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat #: ab175186 RRID:AB_2722749</td>
+      <td>1:1000, 10 μL For immunoblots of WT and Tsc2-/- MEFs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SLC7A11 rabbit monoclonal</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #: 12691 RRID:AB_2687474</td>
+      <td>1:1000, 10 μL For immunoblots of PC3 and LNCaP cell lines</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GCLC rabbit monoclonal</td>
+      <td>Abcam</td>
+      <td>ab190685</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GCLM rabbit monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat#: ab126704 RRID:AB_11127439</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RICTOR rabbit monoclonal</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #: 9476 RRID:AB_10612959</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RHEB rabbit monoclonal</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #: 13879 RRID:AB_2721022</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>4EBP1 rabbit monoclonal</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #: 9644 RRID:AB_2097841</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>c-MYC rabbit polyclonal</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #: 9402 RRID:AB_2151827</td>
+      <td>1:1000, 10 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin mouse monoclonal</td>
+      <td>Sigma</td>
+      <td>Cat #: A5316 RRID:AB_476743</td>
+      <td>1:5000, 2 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-rabbit rabbit polyclonal</td>
+      <td>CST</td>
+      <td>Cat #: 7074 RRID:AB_2099233</td>
+      <td>1:5000, 2 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-mouse mouse polyclonal</td>
+      <td>CST</td>
+      <td>Cat #: 7076 RRID:AB_330924</td>
+      <td>1:5000, 2 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW Donkey anti-Rabbit IgG rabbit polyclonal</td>
+      <td>LI-COR</td>
+      <td>Cat #: 925–32213 RRID:AB_2715510</td>
+      <td>1:5000, 2 μL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW Donkey anti-Mouse IgG mouse polyclonal</td>
+      <td>LI-COR</td>
+      <td>Cat #: 926-32212 RRID:AB_621847</td>
+      <td>1:5000, 2 μL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline hydrochloride</td>
+      <td>Sigma</td>
+      <td>D3447</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>LC Laboratories</td>
+      <td>R5000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin</td>
+      <td>Alpha Diagnostic,</td>
+      <td>INSL 16 N-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tunicamycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>T7765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Torin1</td>
+      <td>Tocris</td>
+      <td>4247</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Erastin</td>
+      <td>Selleckchem</td>
+      <td>S7242</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Buthionine-sulfoximine (BSO)</td>
+      <td>Sigma</td>
+      <td>B2515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin B</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10687010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma</td>
+      <td>P8833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Staurosporine</td>
+      <td>Tocris</td>
+      <td>1285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cysteine</td>
+      <td>Sigma</td>
+      <td>C7477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cystine</td>
+      <td>Sigma</td>
+      <td>57579</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Mercaptoethanol</td>
+      <td>EMD Millipore</td>
+      <td>444203</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MEM Nonessential amino acids solution</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11140050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>35S-methionine</td>
+      <td>PerkinElmer</td>
+      <td>NEG009L005MC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-[1, 2, 1', 2'-14C]-Cystine</td>
+      <td>PerkinElmer</td>
+      <td>NEC854010UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FITC Annexin V Apoptosis Detection Kit I</td>
+      <td>BD</td>
+      <td>556547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GSH/GSSG-Glo Assay</td>
+      <td>Promega</td>
+      <td>V6611</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 MEFs and PC3 cells were maintained in DMEM (Corning/Cellgro, 10-017-CV) with 10% fetal bovine serum (FBS, Corning/Gibco). LNCaP cells were maintained in RPMI-1640 (Corning/Cellgro 10-040-CV) with 10% FBS. Tsc2-/- (p53-/-) MEFs and littermate-derived wild-type counterparts were provided by David Kwiatkowski (Brigham and Women’s Hospital, Boston, MA). eIF2αS/S (WT) and eIF2αA/A (S51A knock-in mutant) MEFs were provided by Randal Kaufman (Sanford-Burnham-Prebys Medical Discovery Institute, La Jolla, CA) and were not used above passage 3 (after received). Rictor+/+ and Rictor-/- MEFs were provided by D.A. Guertin and D.M. Sabatini (Whitehead Institute, Massachusetts Institute of Technology, Cambridge, MA). Cancer cell lines were obtained from ATCC. Atf4-/- MEF lines generated in this study were maintained in DMEM with 10% FBS, supplemented with 55 µM 2-mercaptoethanol (Thermo, 21985023), and 1X MEM NEAA mix (NEAA, final concentrations: 100 µM each of alanine, aspartate, asparagine, glutamate, glycine, proline, and serine; Thermo 11140050). In experiments with supplementation of excess cysteine, cells were plated in DMEM with 10% FBS, 1 mM cysteine, and, where indicated, 1X MEM NEAA mix.
 
-## siRNA knockdowns
+### siRNA knockdowns
 
 Cells were transfected with 20 nM of the indicated siRNAs using Opti-MEM (Thermo, 31985062) and RNAimax (Thermo, 13778150) according to the manufacturer’s protocol. siRNAs were from GE Life Sciences/Dharmacon: non-targeting pool (D-001810-10-50), Myc (L-040813-00-0010), Atf4 (mouse, L-042737-01-0020), Rheb (L-057044-00-0020), RhebL1 (L-056074-01-0020), Tsc2 (L-047050-00-0020), C/ebpα (L-040561-00-0005), C/ebpβ (L-043110-00-0005), C/ebpδ (L-060294-01-0005), C/ebpγ (L-065627-00-0005), and ATF4 (human, L-005125-00-0020). Forty-eight hours post transfection, cells were treated as indicated prior to lysis for immunoblotting, RNA extraction, or protein synthesis assays. For C/EBP isoform knockdown experiments, transfection of siRNAs was performed a second time, 24 hr after the first transfection. For protein synthesis assays involving siRNAs, transfection was also performed a second time, 24 hr after the first transfection, which was necessary to achieve sufficient knockdown of Rheb to reduce mTORC1 signaling.
 
-## Generation and validation of Atf4-/- and reconstituted cell lines
+### Generation and validation of Atf4-/- and reconstituted cell lines
 
 Tsc2+/+ (WT) and Tsc2-/- MEFs lacking Atf4 were generated by CRISPR-Cas9-mediated deletion using pSpCas9n(BB)−2A-GFP (PX461) vector (Addgene, 48140) according to the previously described protocol (Ran et al., 2013). The paired nickase guides were designed using E-CRISP (Heigwer et al., 2014) and targeted the sequences AGCATAGCCCCTCCACCTCC and GACAATCTGCCTTCTCCAGG in exon 2 of ATF4. Forty-eight hours post transfection, single GFP-positive cells were sorted into 96-well plates. Cells were cultured in DMEM with 10% FBS supplemented with 1X MEM NEAA and 55 µM 2-mercaptoethanol. Single cell clones were grown for immunoblot analysis, and those showing loss of ATF4 protein were selected for sequence analysis involving the isolation of genomic DNA (Qiagen, 69504), PCR amplification using KOD Xtreme Hot Start DNA Polymerase (Millipore, 71975), and the primers TCGATGCTCTGTTTCGAATG and CTTCTTCCCCCTTGCCTTAC flanking the targeted deletion site, with sequencing on an ABI3730xl DNA analyzer at the DNA Resource Core of Dana-Farber/Harvard Cancer Center (funded in part by NCI Cancer Center support grant 2P30CA006516-48). The mutations were identified using CRISP-ID software (Dehairs et al., 2016). For the final clones selected, the mutations generated in the WT MEFs include an out-of-frame 17-bp deletion starting at the codon encoding T237 and a large out-of-frame 73-bp deletion starting after the codon encoding G219, both resulting in premature STOP codons. The mutations generated in the Tsc2-/- MEFs include an out-of-frame 245-bp deletion starting at the codon encoding G190, resulting in a premature STOP codon after the D191 codon, and an in-frame deletion removing the sequences encoded between E210 and E284.
 
 For generation of Atf4 expression vectors, the murine Atf4 cDNA was amplified from the plasmid 21845 from Addgene (Harding et al., 2000). Restriction enzyme cloning with AgeI and ClaI was used to insert the Atf4-coding sequence (lacking the 5′ and 3′-UTR) into the pTRIPZ plasmid for doxycycline-inducible expression. The ATF4DBD mutant, in which amino acids 292–298 of the DNA-binding domain are changed from RYRQKKR to GYLEAAA (He et al., 2001; Lange et al., 2008), was generated by DpnI-mediated site-directed mutagenesis using KOD Xtreme Hot Start DNA Polymerase. The dox-inducible pTRIPZ and SLC7A11 plasmids were a gift from Alex Toker (Beth Israel Deaconess Medical Center, Boston, MA). cDNA expression was induced with 1 μg/mL of doxycycline (Sigma-Aldrich, D3447) for 12–24 hr before assays were conducted. GFP was inserted into pTRIPZ to produce the control vector. Lentivirus was generated in HEK293T cells transfected with pMD2.G and psPAX2 (Addgene, 12259 and 12260) and the given pTRIPZ constructs. Forty-eight hours post transfection, the virus-containing medium was used to infect the Atf4 knockout cells, which were selected with 8 μg/mL puromycin. TSC2 addback cell lines were generated by retroviral infection following transfection of PT67 cells with pBabe hygro IRES-EV or pBabe hygro IRES-TSC2. Cells were selected with 400 μg/mL hygromycin B (Thermo, 10687010).
 
-## RNA-sequencing
+### RNA-sequencing
 
 Wild-type and Atf4-/- MEFs were grown to 70% confluence in 6 cm plates and were serum-starved in the presence of 2-mercaptoethanol and 1X MEM NEAA mixture and treated with vehicle (DMSO) or 20 nM rapamycin (LC Laboratories, R5000) for 30 min prior to stimulation with vehicle (water) or 500 nM insulin (Alpha Diagnostic, INSL 16 N-5) for 16 hr or treated with vehicle (DMSO) or 2 μg/mL tunicamycin (Sigma-Aldrich, T7765) for 4, 8, or 16 hr. RNA was harvested with TRIzol according to the manufacturer’s protocol (Thermo, 15596018). All samples passed RNA quality control measured by NanoDrop 1000 Spectrophotometer (NanoDrop Technologies) and 2100 Bioanalyzer (Agilent Technologies). cDNA libraries were generated to produce 150-bp paired-end reads on an Illumina NovaSeq with read depth of 20 million paired reads per sample. Reads were aligned and annotated to the Ensembl Mus musculus GRCm38.p6 genome assembly using the align and featureCounts functions from the Rsubread package (2.0.1) in R (3.6.3) (Liao et al., 2019). Differential gene expression analysis was performed using the voom and eBayes functions from the EgdeR (3.28.1) and Limma (3.42.2) packages, respectively (Ritchie et al., 2015; Robinson et al., 2010). Transcripts found to be significantly induced by tunicamycin were further limited to those with a greater than 1.2-fold increase. The enrichKEGG function from the clusterProfiler package (3.14.3) was used to perform KEGG pathway over-representation tests (Yu et al., 2012). Gene set enrichment analysis was evaluated using GSEA software from the Broad Institute (Subramanian et al., 2005). Computations were run on the FASRC Cannon cluster, supported by the Faculty of Arts and Sciences Division of Science Research Computing Group at Harvard University. Pseudogenes and unannotated genes were excluded from Figure 1C and Figure 1—source data 1. The complete RNA-seq data can be found at GEO under the accession number GSE158605.
 
-## CiiiDER analysis
+### CiiiDER analysis
 
 CiiiDER software was downloaded from CiiiDER.org with the M. musculus GRCm38.94 genome files. Searches were run against the JASPAR transcription factor-binding profile database. Searches were run on promoter regions spanning +1500 to −500 bp from the predicted transcriptional start site using a site identification deficit threshold of 0.1. The background gene list (ISR only) comprised the 200 ATF4-dependent genes most significantly increased in expression upon tunicamycin treatment that were not in the list of 61 genes shared in their regulation by mTORC1 signaling and the ISR. Results of this analysis are included in Figure 2—source data 1.
 
-## Cistrome analysis
+### Cistrome analysis
 
 Each of the 61 shared mTORC1 and ISR genes was analyzed using the CistromeDB Toolkit (http://dbtoolkit.cistrome.org/) of existing genome-wide ChIP-seq data. A half-decay distance of 1 kb to the transcription start site was used. The top 20 transcription factors or chromatin regulators found in ChIP-seq experiments to bind to each gene were compiled, and the number of genes each factor bound to within the list of 61 was determined, with the top 9 regulators graphed, excluding the general factors EP300 and POL2RA.
 
-## Immunoblotting
+### Immunoblotting
 
 Cells were lysed in ice-cold Triton lysis buffer (40 mM HEPES pH 7.4, 120 mM NaCl, 1 mM EDTA, 1% Triton X-100, 10 mM sodium pyrophosphate, 10 mM glycerol 2-phosphate, 50 mM NaF, 0.5 mM sodium orthovanadate, 1 μM Microcystin-LR, and Sigma protease inhibitor cocktail P8340). For immunoblots on SLC7A11, cells were lysed in 1% SDS lysis buffer (10 mM Tris pH 7.4, 1 mM EDTA, 10 mM sodium pyrophosphate, 10 mM glycerol 2-phosphate, 50 mM NaF, 0.5 mM sodium orthovanadate, and Sigma protease inhibitor cocktail P8340). Samples were centrifuged at 20,000 × g for 10 min at 4°C, and protein concentration in the supernatant was determined by Bradford assay (Bio-Rad, 5000202) and normalized across samples. Proteins were separated by SDS-PAGE, transferred to nitrocellulose membranes, and immunoblotted with indicated antibody. Primary antibodies used were MTHFD2 (Protein Tech, 12270-1-AP), PSAT1 (Protein Tech 20180-1-AP), phospho (P)-S6K1 T389 (Cell Signaling Technologies [CST], 9234), ATF4 (CST, 11815), eIF2α (CST, 9722), P-eIF2α S51 (CST, 9721), S6K1 (CST, 2708), CD98 (CST, 13180), AARS (Bethyl Antibodies, A303-475A-M), GARS (Bethyl Antibodies, A304-746A-M), LARS (Bethyl Antibodies, A304-316A-M), XPOT (Aviva Biotechnologies, ARP40711_P050), TSC2 (CST, 4308), SLC7A11 (mouse, Abcam, ab175186), SLC7A11 (human, CST, 12691), GCLC (Abcam, ab190685), GCLM (Abcam, ab126704), RICTOR (CST, 9476), RHEB (CST, 13879), 4EBP1 (CST 9644), c-MYC (CST, 9402), and β-actin (Sigma-Aldrich, A5316); secondary antibodies used were IRDye 800CW Donkey anti-Mouse IgG (H + L) (LI-COR, 926-32212) and Donkey anti-Rabbit IgG (H + L) (LI-COR, 925–32213), and HRP-conjugated anti-mouse and anti-rabbit secondary antibodies from (CST, 7074 and 7076). Immunoblots of MTHFD2, PSAT1, AARS, GARS, LARS, and XPOT were imaged using Odyssey CLx Imaging System (LI-COR Biosciences). β-Actin was developed with Odyssey CLx Imaging System or enhanced chemiluminescence assay (ECL). All remaining immunoblots were developed using ECL. Immunoblots were quantified using the Odyssey CLx Imaging System and were normalized to β-actin. The ATF4 immunoblot corresponding to Figure 1B (Figure 1—figure supplement 1A) and the SLC7A11 immunoblots in Figure 6D, E (Figure 6—figure supplement 1B, C) was quantified using ImageJ and normalized to β-actin.
 
-## NanoString analysis
+### NanoString analysis
 
 RNA was harvested using TRIzol from cells at 70% confluence. All samples passed RNA quality control measured by NanoDrop 1000 Spectrophotometer. Parallel plates were lysed for immunoblots. The isolated RNA was analyzed using a custom NanoString probe library according to the manufacturer’s instructions (NanoString Technologies). Briefly, sample RNA was hybridized to RNA-probes at 65°C for 16 hr, excess probe was washed away, and an nCounter SPRINT was used to quantify specific mRNA molecules present in each sample. Direct mRNA counts were normalized to internal control genes, and mRNA expression was analyzed using nSOLVER software. Heatmaps were generated with Morpheus software from the Broad Institute (https://software.broadinstitute.org/morpheus). Transcripts with 100 counts or fewer, a value based off of negative control samples, were not included in our analyses. Results of this analysis are included in Figure 3—source data 1.
 
-## qPCR
+### qPCR
 
 For gene expression analysis, RNA was isolated with TRIzol according to the manufacturer’s protocol. All samples passed RNA quality control measured by NanoDrop 1000 Spectrophotometer. cDNA was generated with Superscript III First Strand Synthesis System for RT-PCR (Thermo, 18080051). Quantitative RT-PCR was performed with a CFX Connect Realtime PCR Detection System (Bio-Rad) using iTaq Universal SYBR Green Supermix (Bio-Rad, 1725125). Samples were quantified by the ∆∆CT method, normalized to β-actin (mouse samples) or RPLP0 (human samples) to quantify relative mRNA expression levels. qPCR primers:
 
-Atf4GATGGGTTCTCCAGCGACAAGCCGGAAAAGGCATCCTCCTTCPsat1GCTGTCGCCTTAGCACCATGGATCTCCAACAATACCGAGTGMthfd2TCCTTGTTGTCTGCGTTGGCCTTCATTTCGCACTGCCGCCSlc7a5GGACAAGGTGATGCGTCCAAGCCAACACAATGTTCCCCACAarsTTGCTATTCCCTCGGAGCACCTCCTCGGGAACCTTAGCTCGarsGGCAGAGGTCTCTGAGCTGGCACGATGGTCATAAGCTGCCarsGAGCAGGCTGCCGACTACATATAGCTACGCGTGCTGAGGNarsGAGCCGGCCTGTGTAAAGATGACCCAGCCAAACACCTTCAIarsTATTGCATCACCTCCAGACGCTGAACCATTCTGTTGCTGGGAGclcTGTACTCCACCCTCGTCACCCCTGCTGTCCCAAGGCTCGGclmTGGGCACAGGTAAAACCCAACTGGGCTTCAATGTCAGGGASlc7a11ATCTCCCCCAAGGGCATACTGCATAGGACAGGGCTCCAAASlc3a2TGATGAATGCACCCTTGTACTTGGCTCCCCAGTGAAAGTGGASlc1a5GTAAAATACCGCAATCCTGTATCCCGATAGCGAAGACCACCAGG XpotGCTTCAGGCTCAGATGCAGAAAAGCAAGGCGAACACTTGGc-MycAGAGCTCCTCGAGCTGTTTGTTCTCTTCCTCGTCGCAGATC/ebpαCAAGAACAGCAACGAGTACCGGTCACTGGTCAACTCCAGCACC/ebpβCGCCTTATAAACCTCCCGCTTGGCCACTTCCATGGGTCTAC/ebpδCGACTTCAGCGCCTACATTGACTAGCGACAGACCCCACACC/ebpγTCGGATCACATTGCTCTGATTTCTGTGCCTGAGTATGAATGACACTActinCACTGTCGAGTCGCGTCCTCATCCATGGCGAACTGGTGPSAT1AAAAACAATGGAGGTGCCGCGGCTCCACTGGACAAACGTAASNSTGGCTGCCTTTTATCAGGGGTCTGCCACCTTTCTAGCAGCMTHFD2GGCAGTTCGAAATGAAGCTGTTGCCAACCAGGATCACACTCASLC7A5GACTACGCCTACATGCTGGAAGCAGCAGCACGCAGAGAARSCCATTCAGAAGGGCACAGGTTATCCACGCCCTGTGTTGTCGARSGCCAGCAGGGAGATCTTGTGCCAGCTCCTTTGCTTCCAGAXPOTGACGCAGAGCGACTAGAGGTAAACATCTTCCCTATCACTCCATCSLC7A11AAGGTGCCACTGTTCATCCCATGTTCTGGTTATTTTCTCCGACARPLP0CCTCGTGGAAGTGACATCGTATCTGCTTGGAGCCCACATT
+<table>
+  <tbody>
+    <tr>
+      <td>Atf4</td>
+      <td>GATGGGTTCTCCAGCGACAAG</td>
+      <td>CCGGAAAAGGCATCCTCCTTC</td>
+    </tr>
+    <tr>
+      <td>Psat1</td>
+      <td>GCTGTCGCCTTAGCACCA</td>
+      <td>TGGATCTCCAACAATACCGAGTG</td>
+    </tr>
+    <tr>
+      <td>Mthfd2</td>
+      <td>TCCTTGTTGTCTGCGTTGGC</td>
+      <td>CTTCATTTCGCACTGCCGCC</td>
+    </tr>
+    <tr>
+      <td>Slc7a5</td>
+      <td>GGACAAGGTGATGCGTCCAA</td>
+      <td>GCCAACACAATGTTCCCCAC</td>
+    </tr>
+    <tr>
+      <td>Aars</td>
+      <td>TTGCTATTCCCTCGGAGCAC</td>
+      <td>CTCCTCGGGAACCTTAGCTC</td>
+    </tr>
+    <tr>
+      <td>Gars</td>
+      <td>GGCAGAGGTCTCTGAGCTG</td>
+      <td>GCACGATGGTCATAAGCTGC</td>
+    </tr>
+    <tr>
+      <td>Cars</td>
+      <td>GAGCAGGCTGCCGACTACA</td>
+      <td>TATAGCTACGCGTGCTGAGG</td>
+    </tr>
+    <tr>
+      <td>Nars</td>
+      <td>GAGCCGGCCTGTGTAAAGAT</td>
+      <td>GACCCAGCCAAACACCTTCA</td>
+    </tr>
+    <tr>
+      <td>Iars</td>
+      <td>TATTGCATCACCTCCAGACGC</td>
+      <td>TGAACCATTCTGTTGCTGGGA</td>
+    </tr>
+    <tr>
+      <td>Gclc</td>
+      <td>TGTACTCCACCCTCGTCACCC</td>
+      <td>CTGCTGTCCCAAGGCTCG</td>
+    </tr>
+    <tr>
+      <td>Gclm</td>
+      <td>TGGGCACAGGTAAAACCCAA</td>
+      <td>CTGGGCTTCAATGTCAGGGA</td>
+    </tr>
+    <tr>
+      <td>Slc7a11</td>
+      <td>ATCTCCCCCAAGGGCATACT</td>
+      <td>GCATAGGACAGGGCTCCAAA</td>
+    </tr>
+    <tr>
+      <td>Slc3a2</td>
+      <td>TGATGAATGCACCCTTGTACTTG</td>
+      <td>GCTCCCCAGTGAAAGTGGA</td>
+    </tr>
+    <tr>
+      <td>Slc1a5</td>
+      <td>GTAAAATACCGCAATCCTGTATCC</td>
+      <td>CGATAGCGAAGACCACCAGG</td>
+    </tr>
+    <tr>
+      <td>Xpot</td>
+      <td>GCTTCAGGCTCAGATGCAGA</td>
+      <td>AAAGCAAGGCGAACACTTGG</td>
+    </tr>
+    <tr>
+      <td>c-Myc</td>
+      <td>AGAGCTCCTCGAGCTGTTTG</td>
+      <td>TTCTCTTCCTCGTCGCAGAT</td>
+    </tr>
+    <tr>
+      <td>C/ebpα</td>
+      <td>CAAGAACAGCAACGAGTACCG</td>
+      <td>GTCACTGGTCAACTCCAGCAC</td>
+    </tr>
+    <tr>
+      <td>C/ebpβ</td>
+      <td>CGCCTTATAAACCTCCCGCT</td>
+      <td>TGGCCACTTCCATGGGTCTA</td>
+    </tr>
+    <tr>
+      <td>C/ebpδ</td>
+      <td>CGACTTCAGCGCCTACATTGA</td>
+      <td>CTAGCGACAGACCCCACAC</td>
+    </tr>
+    <tr>
+      <td>C/ebpγ</td>
+      <td>TCGGATCACATTGCTCTGATTTC</td>
+      <td>TGTGCCTGAGTATGAATGACACT</td>
+    </tr>
+    <tr>
+      <td>Actin</td>
+      <td>CACTGTCGAGTCGCGTCC</td>
+      <td>TCATCCATGGCGAACTGGTG</td>
+    </tr>
+    <tr>
+      <td>PSAT1</td>
+      <td>AAAAACAATGGAGGTGCCGC</td>
+      <td>GGCTCCACTGGACAAACGTA</td>
+    </tr>
+    <tr>
+      <td>ASNS</td>
+      <td>TGGCTGCCTTTTATCAGGGG</td>
+      <td>TCTGCCACCTTTCTAGCAGC</td>
+    </tr>
+    <tr>
+      <td>MTHFD2</td>
+      <td>GGCAGTTCGAAATGAAGCTGTT</td>
+      <td>GCCAACCAGGATCACACTCA</td>
+    </tr>
+    <tr>
+      <td>SLC7A5</td>
+      <td>GACTACGCCTACATGCTGGA</td>
+      <td>AGCAGCAGCACGCAGAG</td>
+    </tr>
+    <tr>
+      <td>AARS</td>
+      <td>CCATTCAGAAGGGCACAGGT</td>
+      <td>TATCCACGCCCTGTGTTGTC</td>
+    </tr>
+    <tr>
+      <td>GARS</td>
+      <td>GCCAGCAGGGAGATCTTGTG</td>
+      <td>CCAGCTCCTTTGCTTCCAGA</td>
+    </tr>
+    <tr>
+      <td>XPOT</td>
+      <td>GACGCAGAGCGACTAGAGG</td>
+      <td>TAAACATCTTCCCTATCACTCCATC</td>
+    </tr>
+    <tr>
+      <td>SLC7A11</td>
+      <td>AAGGTGCCACTGTTCATCCC</td>
+      <td>ATGTTCTGGTTATTTTCTCCGACA</td>
+    </tr>
+    <tr>
+      <td>RPLP0</td>
+      <td>CCTCGTGGAAGTGACATCGT</td>
+      <td>ATCTGCTTGGAGCCCACATT</td>
+    </tr>
+  </tbody>
+</table>
 
-## Protein synthesis assay
+### Protein synthesis assay
 
 Cells were cultured as indicated, washed twice with PBS, and changed to methionine/cystine/glutamine-free DMEM (Thermo, 21013024) supplemented with 0.5 mM L-cystine (Sigma, 57579) and L-glutamine (4 mM) with 50 μCi/mL 35S-methionine (PerkinElmer, NEG009L005MC) for 20 min. Cells were washed twice in ice-cold PBS and lysed in ice-cold Triton lysis buffer. Total protein concentrations were normalized following a Bradford assay, and normalized samples were separated by SDS-PAGE and transferred to nitrocellulose. 35S-methionine incorporation into protein was analyzed by autoradiography, and relative rates of protein synthesis were quantified using ImageJ Software (NIH) to quantify radiolabeled protein per lane for each sample. For isogenic Atf4-/- cell lines, exogenous cDNA expression was induced for 16 hr with 150 ng/mL doxycycline, and cells were treated as indicated in the presence of doxycycline (150 ng/mL) and 1X MEM NEAA mixture plus 1 mM cysteine (Sigma, C7477). Protein synthesis was assayed with 20 min labeling in the absence of NEAA and cysteine to avoid competition of 35S-methionine uptake with the supplemented amino acids.
 
-## Methionine and cystine uptake
+### Methionine and cystine uptake
 
 For methionine uptake assays, cells were cultured and labeled as described above for the protein synthesis assay, were washed three times in cold PBS, and lysed in Triton lysis buffer. For cystine uptake assays, cells were treated the same but labeled for the final 10 min with medium containing 0.1 µCi L-[1, 2, 1', 2'-14C]-Cystine (PerkinElmer, NEC854010UC) and washed three times in ice-cold PBS containing cold cystine (1 mM), prior to lysis in Triton lysis buffer. Whole-cell radiolabel incorporation was quantified with a Beckman LS6500 scintillation counter. Cells from identically treated parallel plates were counted using a Beckman Z1-Coulter Counter to normalize uptake measurements to cell number.
 
-## Proliferation assay
+### Proliferation assay
 
 To quantify cell proliferation, cells were plated in DMEM in 6-well plates in triplicate in the presence of 2-mercaptoethanol, 1X MEM NEAA mixture, 10% FBS, and doxycycline (1 μg/mL). Twenty-four hours after plating, cells were washed twice with PBS and media was changed to DMEM with 10% dialyzed FBS, doxycycline (1 μg/mL), and the amino acid supplements indicated for each experiment, with media refreshed daily. Starting on day 0, viable cells from triplicate wells corresponding to each condition or cell line were counted using a hemocytometer, excluding dead cells detected by trypan blue stain (Sigma-Aldrich, T8154).
 
-## Analysis of cell death
+### Analysis of cell death
 
 Cells were plated in DMEM in 6-well plates in triplicate in the presence of 2-mercaptoethanol, 1X MEM NEAA mixture, 10% FBS, and doxycycline (1 μg/mL). Twenty-four hours after plating, cells were washed twice with PBS and media was changed to DMEM with 10% dialyzed FBS and doxycycline (1 μg/mL). Seventy-two hours later, cells were detached with Accumax (Sigma-Aldrich, A7089) and washed twice with cold PBS on ice. Cells were stained with annexin V and propidium iodide (PI) according to the manufacturer’s instruction (BD, 556547). Samples were analyzed using an LSRFortessa (BD) flow cytometer, and the fractions of stained cells were quantified using FloJo 10.6, with Staurosporine (4 hr, 5 μM) (Tocris, 1285) used as a positive control for cell death and to help establish gating of the sorted cells.
 
-## Measurements of cellular and tumor glutathione
+### Measurements of cellular and tumor glutathione
 
 Cells were plated in 96-well plates at 5000 cells/well. Total glutathione, GSH, and GSSG levels were measured using the GSH/GSSG-Glo Assay (Promega, V6611) according to the manufacturer’s protocol. Total glutathione levels were normalized to cell number determined from parallel plates. BSO (Sigma, B2515) was used as a positive control to inhibit glutathione synthesis.
 
 For measurements via LC-MS/MS, metabolites were extracted from cells on dry ice using 80% methanol, and extracts were dried under nitrogen gas for metabolite profiling via selected reaction monitoring with polarity switching using a 5500 QTRAP mass spectrometer. Data were analyzed using MultiQuant 2.1.1 software (AB/SCIEX) to calculate the Q3 peak area. Normalized peak area of glutathione from human TSC2-/- angiomyolipoma (621-101) cells was determined from previously published data (Tang et al., 2019). For xenograft tumor studies, experimental details were provided previously (Valvezan et al., 2017). Briefly, mice bearing TSC2-/- ELT3 xenograft tumors were treated every other day for 5 days with vehicle or rapamycin (1 mg/kg on days 1, 3, and 5) and tumors were harvested for metabolite extraction, as above, 3 hr after the final treatment.
 
-## Statistics
+### Statistics
 
 For RNA-sequencing analysis, Benjamini–Hochberg false discovery rate (FDR)-adjusted p values were determined from empirical Bayes moderated t-statistics using the voom and eBayes functions from the limma package. Comparisons with FDR-adjusted p<0.05 were considered significant for the gene groups denoted compared to vehicle-treated controls. For KEGG enrichment, p values were FDR corrected. For CiiiDER transcription factor over-representation analysis, Fisher's exact test p values were used. Transcription factor binding elements with p<0.01 and test statistic >0 were considered over-represented in genes of interest. Unpaired two-tailed t-tests were used for NanoString analyses to calculate p values for rank ordering. All remaining statistical analyses were performed with Prism 8 software (GraphPad Software, La Jolla, CA). Statistical analyses for qPCR data with two treatment groups were determined by unpaired two-tailed t-test, while those with greater than two treatment groups were determined by one-way analysis of variance (ANOVA) with Holm–Sidak method for multiple comparisons. Statistical analyses for protein synthesis assays were determined by one-way ANOVA with Holm–Sidak method for multiple comparisons from values quantified with ImageJ software (US National Institutes of Health, Bethesda, MD). Statistical analyses for immunoblot quantification data with two treatment groups were determined by unpaired two-tailed t-test, while those with greater than two treatment groups were determined by one-way ANOVA with Holm–Sidak method for multiple comparisons. For proliferation assays, unpaired two-tailed t-test was used for comparisons to GFP-expressing cells. For cell death analysis, one-way ANOVA with Holm–Sidak method for multiple comparisons, summing the annexin V+/PI-, annexin V-/PI+, and annexin V+/PI+ populations for each conditions. For glutathione quantification of experiments with two conditions, an unpaired two-tailed t-test was performed. For remaining glutathione assays and all cystine and methionine uptake experiments, one-way ANOVA with Holm–Sidak method for multiple comparisons was used.
 
-## Source data
+### Source data
 
 The source data for the RNA-sequencing experiment can be found at GEO under the accession number GSE158605. The source data for Figure 1C can be found in Figure 1—source data 1. The source data for Figure 2A can be found in Figure 2—source data 1. The source data for NanoString heatmaps shown in Figure 3 can be found in Figure 3—source data 1.

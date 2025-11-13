@@ -13,13 +13,13 @@
 ### Affiliations
 
 1. Department of Biomedical Sciences, University of Pennsylvania School of Veterinary Medicine Philadelphia United States
-2. https://ror.org/005edt527 College of Life Sciences, Capital Normal University Beijing China
+2. College of Life Sciences, Capital Normal University Beijing China ([ROR:005edt527](https://ror.org/005edt527))
 
 † Corresponding author
 
 ## Abstract
 
-Meiotic progression requires coordinated assembly and disassembly of protein complexes involved in chromosome synapsis and meiotic recombination. Mouse TRIP13 and its ortholog Pch2 are instrumental in remodeling HORMA domain proteins. HORMAD proteins are associated with unsynapsed chromosome axes but depleted from the synaptonemal complex (SC) of synapsed homologs. Here we report that TRIP13 localizes to the synapsed SC in early pachytene spermatocytes and to telomeres throughout meiotic prophase I. Loss of TRIP13 leads to meiotic arrest and thus sterility in both sexes. Trip13 -null meiocytes exhibit abnormal persistence of HORMAD1 and HOMRAD2 on synapsed SC and chromosome asynapsis that preferentially affects XY and centromeric ends. These major phenotypes are consistent with reported phenotypes of Trip13 hypomorph alleles. Trip13 heterozygous mice exhibit meiotic defects that are less severe than the Trip13 -null mice, showing that TRIP13 is a dosage-sensitive regulator of meiosis. Localization of TRIP13 to the synapsed SC is independent of SC axial element proteins such as REC8 and SYCP2/SYCP3. Terminal FLAG-tagged TRIP13 proteins are functional and recapitulate the localization of native TRIP13 to SC and telomeres. Therefore, the evolutionarily conserved localization of TRIP13/Pch2 to the synapsed chromosomes provides an explanation for dissociation of HORMA domain proteins upon synapsis in diverse organisms.
+Meiotic progression requires coordinated assembly and disassembly of protein complexes involved in chromosome synapsis and meiotic recombination. Mouse TRIP13 and its ortholog Pch2 are instrumental in remodeling HORMA domain proteins. HORMAD proteins are associated with unsynapsed chromosome axes but depleted from the synaptonemal complex (SC) of synapsed homologs. Here we report that TRIP13 localizes to the synapsed SC in early pachytene spermatocytes and to telomeres throughout meiotic prophase I. Loss of TRIP13 leads to meiotic arrest and thus sterility in both sexes. Trip13-null meiocytes exhibit abnormal persistence of HORMAD1 and HOMRAD2 on synapsed SC and chromosome asynapsis that preferentially affects XY and centromeric ends. These major phenotypes are consistent with reported phenotypes of Trip13 hypomorph alleles. Trip13 heterozygous mice exhibit meiotic defects that are less severe than the Trip13-null mice, showing that TRIP13 is a dosage-sensitive regulator of meiosis. Localization of TRIP13 to the synapsed SC is independent of SC axial element proteins such as REC8 and SYCP2/SYCP3. Terminal FLAG-tagged TRIP13 proteins are functional and recapitulate the localization of native TRIP13 to SC and telomeres. Therefore, the evolutionarily conserved localization of TRIP13/Pch2 to the synapsed chromosomes provides an explanation for dissociation of HORMA domain proteins upon synapsis in diverse organisms.
 
 ## Introduction
 
@@ -35,39 +35,63 @@ Studies of mice with hypomorphic Trip13 mutations show that TRIP13 is required f
 
 ## Results
 
-## TRIP13 localizes to meiotic chromosomes in prophase I spermatocytes
+### TRIP13 localizes to meiotic chromosomes in prophase I spermatocytes
 
 We assessed the expression of TRIP13 in a panel of adult mouse tissues. TRIP13 was primarily expressed in testis but detected at low levels in ovary and liver (Figure 1A). In the testis, TRIP13 was prominent in the cytoplasm of primary spermatocytes, especially leptotene and zygotene cells (Figure 1B). Given the expression of TRIP13 in spermatocytes, we examined its localization on meiotic chromosomes by immunostaining of surface spread nuclei of prophase I spermatocytes (Figure 1C). Previously, TRIP13 was reported to localize to telomeres in spermatocytes (Gómez-H et al., 2019). Indeed, we found that TRIP13 localized to telomeres from leptotene to diplotene cells (Figure 1C). Strikingly, we found that, in addition to telomeres, TRIP13 localized to the SC in early pachytene spermatocytes but disappeared from the SC in the mid to late pachytene spermatocytes (Figure 1C). The SC consists of two lateral elements and one central element. The central region comprises the transverse filament protein SYCP1 and central element proteins, which appear upon synapsis. Given the novel localization of TRIP13 to the SC, we performed confocal immunofluorescent microscopy with super-resolution deconvolution to determine the location of TRIP13 within the SC. In contrast to the lateral element marker SYCP3, TRIP13 localized to the SC central region (Figure 1D). We examined the localization of TRIP13 in oocytes. TRIP13 localized strongly to meiotic telomeres in all stages of prophase I, but not as filaments on the SC (Figure 1—figure supplement 1). These findings are consistent with the genetic requirement of TRIP13 in meiosis in both sexes (Li and Schimenti, 2007; Roig et al., 2010).
 
-## Global loss of Trip13 causes meiotic arrest
+![Figure 1.](https://cdn.elifesciences.org/articles/92195/elife-92195-fig1-v1.jpg)
+
+**Figure 1.:** (A) Western blot analysis of TRIP13 in adult mouse tissues. Heart and skeletal muscle lack ACTB. (B) Immunofluorescence of TRIP13 in sections of 3-month-old wild type and Trip13-/- testes. Lep, leptotene; Zyg, zygotene; Pac, pachytene; eS, elongating spermatids; ES, elongated spermatids. (C) Immunofluorescence of TRIP13 in spread nuclei of spermatocytes from wild type P20 testes. (D) Super-resolution localization of TRIP13 to the central element (CE) but not lateral element (LE) of the synaptonemal complex at early pachytene stage. The enlarged view of the boxed chromosome is shown at the bottom.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92195/elife-92195-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Scale bars, 10 µm.
+
+### Global loss of Trip13 causes meiotic arrest
 
 Two previous studies utilizing two Trip13 hypomorphic (gene trap) alleles, one moderate and one severe, revealed a role for TRIP13 in meiotic recombination (Li and Schimenti, 2007; Roig et al., 2010). However, while the Trip13 moderate allele showed mostly intact chromosomal synapsis, the severe allele displayed chromosomal unsynapsis preferentially at chromosome ends (Li and Schimenti, 2007; Roig et al., 2010). Upon close examination, we also found unsynapsed ends in spermatocytes with the moderate Trip13 mutant (Guan et al., 2020). To rigorously ascertain the role of TRIP13 in meiosis, we generated Trip13-null mutants using frozen sperm from Trip13+/- males with a knockout allele from the International Mouse Phenotyping Consortium. The mouse Trip13 gene consists of 13 exons. This new Trip13 mutant allele harbors a deletion of a 24 kb region including all 13 exons and thus is expected to be null. We verified this deletion by PCR and sequencing. Interbreeding of Trip13+/- mice produced fewer Trip13-/- offspring than expected: Trip13+/+, 80; Trip13+/-, 220; Trip13-/-, 51 (χ2 = 27, p=0.0001). The body weight of 2–3-month-old males was not significantly different between wild type (24.3 ± 2.8 g, n = 5) and Trip13-/- mice (22.8 ± 1.7 g, n = 5, p=0.3, Student’s t-test). The Trip13-/- testis was much smaller than Trip13+/- testis (Figure 2A). Western blot analysis showed that TRIP13 was present in reduced abundance in Trip13+/- testis and not detected in Trip13-/- testis, demonstrating that this mutant allele is null (Figure 2B). The abundance of SYCP3, a component of the SC, was also reduced in Trip13-/- testis, suggesting a partial depletion of meiotic cells (Figure 2B). The testis weight of adult Trip13-/- males was reduced by 74% in comparison with the wild type males (Figure 2C). Adult Trip13-/- males lacked sperm in the epididymis (Figure 2D). Histological analysis showed that while spermatocytes in all stages of meiosis were present in adult Trip13+/+ and Trip13+/- testes, Trip13-/- testis displayed complete meiotic arrest, evidenced by the presence of early spermatocytes and a lack of secondary spermatocytes, round spermatids, and mature sperm (Figure 2E). Trip13-/- females were also sterile. The adult Trip13-/- ovary was very small and showed a complete loss of oocytes (Figure 2—figure supplement 1). These observations are similar to the meiotic arrest phenotype observed in the hypomorphic Trip13 mouse mutants (Li and Schimenti, 2007; Roig et al., 2010).
 
-## Defects in chromosomal synapsis in Trip13-deficient spermatocytes
+![Figure 2.](https://cdn.elifesciences.org/articles/92195/elife-92195-fig2-v1.jpg)
+
+**Figure 2.:** (A) Image of testes from 2- to 3-month-old mice. (B) Western blot analysis of TRIP13 in P21 testes. SYCP3 serves as a meiosis-specific marker. ACTB serves as a loading control. (C) Testis to body weight ratio of 2–3-month-old mice. n = 3 males. Statistics, one-way ANOVA. (D) Sperm count of 2–3-month-old Trip13+/+ and Trip13+/- males. n = 3 males. Statistics, one-way ANOVA. (E) Histological analysis of 2-month-old testes. Sertoli, Sertoli cell; Zyg, zygotene; Pa-like, pachytene-like; Dip, diplotene; eS, elongating spermatids.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92195/elife-92195-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Scale bars, 200 µm.
+
+### Defects in chromosomal synapsis in Trip13-deficient spermatocytes
 
 We investigated the effect of Trip13 deficiency on meiotic progression. The transverse filament/central element protein SYCP1 and the lateral element protein SYCP3 were used to determine the stage of prophase I spermatocytes. While the P20 wild type testis contained spermatocytes from leptotene through diplotene stages, about half of the Trip13-/- spermatocytes were in the early pachytene stage and no cells were found at later stages of prophase I, showing meiotic blockade at the early pachytene stage in Trip13-/- testes (Figure 3A). The early pachytene-like spermatocytes from Trip13-/- testes contained unsynapsed chromosomal ends (Figure 3B). Mouse centromeres are telocentric. Co-staining with the centromere marker CREST showed that 94% of unsynapsed ends were centromeric ends (Figure 4A). While XY chromosomes were synapsed at the pseudoautosomal regions and thus were connected in wild type and Trip13+/- pachytene spermatocytes, they were separate in Trip13-/- pachytene-like spermatocytes (Figure 3B and C). We found that SYCE1, a component of the SC central element, localized to the synapsed SC but not to unsynapsed regions in Trip13-/- pachytene-like cells (Figure 3C). Confocal microscopy with super-resolution deconvolution confirmed that many homologous chromosomes in Trip13-/- spermatocytes had split ends and some had regions of interstitial asynapsis (Figure 3D). We quantified these meiotic defects in spermatocytes: chromosomal asynapsis (Figure 3E), the number of asynapsed ends (Figure 3F), and the extent of XY asynapsis (Figure 3G). Previous studies also reported synaptic defects in spermatocytes from Trip13 hypomorph mutants (Li and Schimenti, 2007; Roig et al., 2010). Here we found that global loss of Trip13 caused similar defects in autosomal synapsis but a more severe defect in sex chromosome synapsis.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/92195/elife-92195-fig3-v1.jpg)
 
-**Figure 3.:** Trip13 is required for chromosomal synapsis in males.(A) Composition of prophase I spermatocytes in P20 testes. Three males per genotype were analyzed by nuclear spread analysis. Total number of spermatocytes counted: Trip13+/+, 1038 cells; Trip13+/-, 803 cells; Trip13-/-, 406 cells. (B) Immunofluorescence of SYCP1 and SYCP3 in spread nuclei of pachytene spermatocytes from P20 testes. (C) Immunofluorescence of SYCE1 and SYCP3 in spread nuclei of pachytene spermatocytes from P20 testes. (D) Super-resolution confocal microscopy of a Trip13-/- spermatocyte from P20 testis. Immunostaining was performed for SYCP1 and SYCP3. Arrowheads indicate end asynapsis. Arrow indicates interstitial asynapsis. (E) Percentage of early pachytene cells from P19-20 testes with asynapsed chromosomes across three genotypes. (F) Number of homologous chromosomes with end asynapsis per cell in P19-20 testes. (G) Percentage of early pachytene cells from P20 testes with asynapsed XY chromosomes per mouse. The p-values are indicated in graphs. Statistics (E–G), one-way ANOVA.
+**Figure 3.:** (A) Composition of prophase I spermatocytes in P20 testes. Three males per genotype were analyzed by nuclear spread analysis. Total number of spermatocytes counted: Trip13+/+, 1038 cells; Trip13+/-, 803 cells; Trip13-/-, 406 cells. (B) Immunofluorescence of SYCP1 and SYCP3 in spread nuclei of pachytene spermatocytes from P20 testes. (C) Immunofluorescence of SYCE1 and SYCP3 in spread nuclei of pachytene spermatocytes from P20 testes. (D) Super-resolution confocal microscopy of a Trip13-/- spermatocyte from P20 testis. Immunostaining was performed for SYCP1 and SYCP3. Arrowheads indicate end asynapsis. Arrow indicates interstitial asynapsis. (E) Percentage of early pachytene cells from P19-20 testes with asynapsed chromosomes across three genotypes. (F) Number of homologous chromosomes with end asynapsis per cell in P19-20 testes. (G) Percentage of early pachytene cells from P20 testes with asynapsed XY chromosomes per mouse. The p-values are indicated in graphs. Statistics (E–G), one-way ANOVA.
 
-## TRIP13 is a dosage-sensitive regulator of meiosis
+![Figure 4.](https://cdn.elifesciences.org/articles/92195/elife-92195-fig4-v1.jpg)
+
+**Figure 4.:** (A–D) Immunofluorescent analysis of centromere and telomere markers in Trip13+/+ and Trip13-/- pachytene spermatocytes: CREST (A), CENPC (B), TRF1 (C), and MAJIN (D). SYCP3 labels the lateral elements of the synaptonemal complex. Scale bars, 10 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92195/elife-92195-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Wild type, early pachytene; Trip13-/-, pachytene-like. REC114 foci are indicated by arrows. Scale bar, 10 μm.
+
+### TRIP13 is a dosage-sensitive regulator of meiosis
 
 Although Trip13+/- males were fertile, their testis weight and sperm count were significantly reduced in comparison with wild type (Figure 2C and D). The percentage of spermatocytes with defects in synapsis was higher in Trip13+/- males than wild type (Figure 3E). In addition, the percentage of spermatocytes with asynapsed XY chromosomes was significantly higher in Trip13+/- males than wild type (Figure 3G). As defects in synapsis can activate the meiotic checkpoint and thus apoptosis of affected spermatocytes, the increased synaptic defects likely caused the decrease in sperm output in Trip13+/- males. These results demonstrate that TRIP13 regulates meiosis in a dosage-dependent manner.
 
-## Telomere and centromere proteins localize normally in Trip13-deficient spermatocytes
+### Telomere and centromere proteins localize normally in Trip13-deficient spermatocytes
 
 TRIP13 localizes to telomeres and loss of TRIP13 causes peri-centromeric/telomeric asynapsis. Therefore, we asked whether telomere or centromere proteins were affected in Trip13-/- spermatocytes. Chromosome spreads were immunostained for two centromere markers, CREST and CENPC (Figure 4A and B). CENPC is essential for recruiting kinetochore proteins to the centromere (Klare et al., 2015; Kwon et al., 2007). CREST and CENPC still localized to centromeres in Trip13-/- spermatocytes. Because many Trip13-/- spermatocytes had split ends, two CREST or two CENPC foci were observed at the split ends. To assess the telomere, spermatocytes were immunostained for TRF1 and MAJIN (Figure 4C and D). In meiotic cells, telomeres contain canonical telomere proteins such as TRF1/TRF2 and a meiosis-specific complex (MAJIN, TERB1, TERB2, and SUN1) (Shibuya et al., 2015). TRF1 is a telomere protein expressed in both somatic and germ cells (Karlseder et al., 2003; Long et al., 2017; Shibuya et al., 2014). MAJIN is a component of the meiosis-specific telomere complex that is important for telomere attachment to the inner nuclear membrane (Shibuya et al., 2015). Both TRF1 and MAJIN localized to telomeres in Trip13-/- spermatocytes (Figure 4C and D). As expected, two TRF1 or two MAJIN foci were observed at split ends of chromosomes in Trip13-/- spermatocytes (Figure 4C and D). ANKRD31 and REC114 interact with each other and both localize to the pseudoautosomal region (PAR) of XY chromosomes in early pachytene spermatocytes to ensure XY recombination (Boekhout et al., 2019; Papanikos et al., 2019). In addition to two foci on autosomes, REC114 localized as one focus on the PAR in wild type pachytene spermatocytes. REC114 still formed foci (one per chromosome) on the unsynapsed X and Y chromosomes in Trip13-/- pachytene-like spermatocytes (Figure 4—figure supplement 1). Taken together, these results suggest that TRIP13 is not required for recruitment of these centromere or telomere proteins.
 
-## TRIP13 is required to evict HORMAD1 and HORMAD2 from synapsed autosomes
+### TRIP13 is required to evict HORMAD1 and HORMAD2 from synapsed autosomes
 
 In wild type meiotic cells, HORMAD1 and HORMAD2 localize to unsynapsed and desynapsed chromosomes (Fukuda et al., 2010; Kogo et al., 2012a; Shin et al., 2010; Wojtasz et al., 2012). Thus, HORMAD1 and HORMAD2 localized to the largely unsynapsed XY but not to synapsed autosomal SCs in wild type cells (Figure 5A and B). TRIP13 is essential for removing meiotic HORMADs from the chromosome axes, a function that is conserved in yeast, worms, and mammals (Wojtasz et al., 2009). We confirmed that HORMAD1 and HORMAD2 remained on the synapsed autosomes in Trip13-/- pachytene cells (Figure 5A and B). HORMAD1 and HORMAD2 localize to the interior of the lateral elements in the SC (Xu et al., 2019). Confocal microscopy with super-resolution deconvolution revealed that HORMAD1 and HORMAD2 localized to the lateral elements of the synapsed autosomes in Trip13-/- spermatocytes (Figure 5C and D). These results were consistent with accumulation of HORMAD1/2 in Trip13 hypomorphic mutant spermatocytes (Roig et al., 2010; Wojtasz et al., 2009). Our analysis of Trip13-null mutant confirmed that TRIP13 is essential for HORMAD1/2 removal from the synapsed SCs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/92195/elife-92195-fig5-v1.jpg)
 
-**Figure 5.:** Trip13-/- spermatocytes from juvenile (P19-21) mice.(A, B) Immunofluorescence of HORMAD1 (A) and HORMAD2 (B) in pachytene spermatocytes. (C, D) Super-resolution imaging of HORMAD1 and HORMAD2 in zygotene and pachytene spermatocytes. Enlarged views of the boxed chromosomes are shown below. Scale bars: 10 µm (A, B), 5 µm (C, D).
+**Figure 5.:** (A, B) Immunofluorescence of HORMAD1 (A) and HORMAD2 (B) in pachytene spermatocytes. (C, D) Super-resolution imaging of HORMAD1 and HORMAD2 in zygotene and pachytene spermatocytes. Enlarged views of the boxed chromosomes are shown below. Scale bars: 10 µm (A, B), 5 µm (C, D).
 
-## Localization of TRIP13 to SC is independent of axial element components
+### Localization of TRIP13 to SC is independent of axial element components
 
 TRIP13 localizes to the SC in early pachytene spermatocytes. We sought to address what proteins might recruit TRIP13 to the SC. We examined the role of HORMAD1, REC8, SYCP2, and SKP1 in TRIP13 localization in spermatocytes using respective knockout mice (Figure 6). We first examined the localization of TRIP13 in Hormad1-/- spermatocytes. Hormad1-/- spermatocytes exhibit limited synapsis (Daniel et al., 2011; Kogo et al., 2012b; Shin et al., 2010). In both wild type and Hormad1-/- cells, TRIP13 localized to the synapsed regions and to the telomeres (Figure 6A). This result shows that HORMAD1 is not required for localization of TRIP13 to the SC.
 
@@ -79,11 +103,133 @@ REC8, a meiosis-specific cohesin, promotes synapsis between homologs and inhibit
 
 Previous work has shown that SKP1, a key component of the SKP1, Cullin, F-box (SCF) complex E3 ligase, is important for HORMAD removal and chromosomal synapsis (Guan et al., 2020; Guan et al., 2022). SKP1 localizes to synapsed regions in meiotic germ cells and specifically to the lateral elements in the SC (Guan et al., 2020). We found that TRIP13 still localized to the synapsed regions in Skp1cKO (conditional knockout) spermatocytes (Figure 6D). Taken together, these results show that the SC localization of TRIP13 is independent of HORMAD1, REC8, SYCP2, SYCP3, and SKP1, which all localize to the SC lateral elements. Such a finding is consistent with the localization of TRIP13 to the SC central region (Figure 1D).
 
-## FLAG-tagged TRIP13 proteins are functional
+### FLAG-tagged TRIP13 proteins are functional
 
 In order to investigate the mechanism of TRIP13 recruitment to the SC, we generated 3×FLAG-TRIP13 (N-terminal tag) and TRIP13−3×FLAG (C-terminal tag) mice through the CRISPR/Cas9-medidated genome editing approach (Figure 7—figure supplement 1). Two different types of tagged mice were generated in case one fusion protein was not functional. Both alleles were transmitted through the germline of the founder mice. Western blot showed that TRIP13 existed in two isoforms in wild type (non-tagged) testis (Figure 7A). The major TRIP13 isoform was 50 kDa. The minor isoform was slightly larger than 50 kDa. Western blot analysis showed that the FLAG-tagged TRIP13 fusion proteins were present in both FLAG-tagged testes. Both FLAG-tagged TRIP13 fusion proteins also existed in two isoforms in the homozygous testes, suggesting that they corresponded to the two wild type isoforms. The 3×FLAG-TRIP13 proteins were apparently slightly larger, possibly due to the linker in the N-terminally tagged proteins. The nature and physiological significance of these two isoforms were not clear, but could be due to alternative splicing or post-translational modification. Immunofluorescence analysis using anti-FLAG antibody showed that the FLAG-tagged TRIP13 proteins, like wild type TRIP13, localized to both telomeres and SC in pachytene spermatocytes from both FLAG/FLAG homozygous testes (Figure 7B). Importantly, both N- and C-terminally tagged homozygous mice were fertile. These results demonstrate that both N- and C-terminal tagged TRIP13 proteins localize normally and are functional.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/92195/elife-92195-fig7-v1.jpg)
+
+**Figure 7.:** (A) Western blot analysis of tagged and untagged TRIP13 proteins in testes from P20 wild type (no tag), heterozygous-tagged, and homozygous-tagged males. (B) Immunofluorescence of FLAG-tagged TRIP13 in pachytene spermatocytes from P20 homozygous testes. N-terminal tag, 3×FLAG-Trip13; C-terminal tag, Trip13−3×FLAG. Scale bar, 10 μm. (C) A schematic illustration of TRIP13, SKP1, HORMAD1/2, and the synaptonemal complex. Relative locations of TRIP13 and SKP1 within the synaptonemal complex (SC) are depicted. HORAMD1/2 are retained in synapsed regions in Trip13-deficient or Skp1-deficient spermatocytes.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/92195/elife-92195-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Illustration of the Trip13 gene structure with the 3×FLAG tag at the N terminus. The guide RNA sequence is underlined in green. The single-strand DNA (ssDNA) oligo template (200 nt) contains the 3×FLAG-encoding sequence. The PAM site is underlined in purple. One base in the PAM site is mutated in the ssDNA oligo template to prevent cutting of the template strand (in purple). The position of 3×FLAG in-frame insertion is designated (^) and occurs just after the endogenous start codon. Filled bars, coding regions; Open bars, 5′ or 3′ UTRs. (B) Illustration of the Trip13 gene structure with the 3×FLAG tag at the C terminus. The PAM cut site and guide RNA were on the reverse strand, but for clarity, the forward strand sequence is shown. The 3×FLAG was inserted just before the endogenous stop codon.
+
 To identify TRIP13-associated proteins in testis, we performed immunoprecipitation (IP) using 3×FLAG-TRIP13, TRIP13−3×FLAG, and wild type (no tag) testicular protein extracts with anti-FLAG monoclonal antibody. The immunoprecipitated proteins were eluted with FLAG peptides and subjected to mass spectrometry for protein identification. As expected, TRIP13 had more peptides in tagged TRIP13 IP than wild type (Table 1). HORMAD2, a known TRIP13 substrate protein, was also enriched in tagged TRIP13 IP (Table 1). Intriguingly, a large number of RNA-binding proteins involved in RNA splicing were highly enriched in tagged TRIP13 IP: DDX46, PUF60, RBM25, RBM39, U2AF1, U2AF2, and SRSF11 (Table 1). The biological relevance of these RNA-binding proteins to TRIP13 function remains unknown. We cannot exclude the possibility that the identification of these RNA splicing factors could be immunoprecipitation artifacts.
+
+**Table 1.**
+ List of proteins from testis identified by co-immunoprecipitation and mass spectrometry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th colspan="3">Number of peptides in anti-FLAG IP</th>
+      <th>MW (kDa)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>3×FLAG-TRIP13 testis</td>
+      <td>TRIP13−3×FLAG testis</td>
+      <td>Wild type testis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TRIP13</td>
+      <td>28</td>
+      <td>36</td>
+      <td>4</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>HORMAD2</td>
+      <td>21</td>
+      <td>10</td>
+      <td>7</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>DDX46</td>
+      <td>32</td>
+      <td>6</td>
+      <td>0</td>
+      <td>117</td>
+    </tr>
+    <tr>
+      <td>PUF60</td>
+      <td>24</td>
+      <td>14</td>
+      <td>0</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>RBM25</td>
+      <td>19</td>
+      <td>3</td>
+      <td>2</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>RBM39</td>
+      <td>20</td>
+      <td>10</td>
+      <td>1</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>U2AF1</td>
+      <td>11</td>
+      <td>4</td>
+      <td>1</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>U2AF2</td>
+      <td>15</td>
+      <td>9</td>
+      <td>3</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>SRSF11</td>
+      <td>9</td>
+      <td>4</td>
+      <td>0</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>SPATA5</td>
+      <td>26</td>
+      <td>27</td>
+      <td>7</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>AP3D1</td>
+      <td>17</td>
+      <td>6</td>
+      <td>2</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <td>PRPF40A</td>
+      <td>16</td>
+      <td>3</td>
+      <td>0</td>
+      <td>108</td>
+    </tr>
+    <tr>
+      <td>UGP2</td>
+      <td>15</td>
+      <td>3</td>
+      <td>0</td>
+      <td>57</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -99,32 +245,328 @@ We find that TRIP13 is a dosage-dependent regulator of meiosis. The Trip13+/- mi
 
 ## Materials and methods
 
-## Materials availability statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Trip13</td>
+      <td>GenBank</td>
+      <td>Gene ID: 69716</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trip13tm1.1(KOMP)Vlcg/JMmucd</td>
+      <td>MMRCC</td>
+      <td>MMRRC_050223-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Hormad1 knockout</td>
+      <td>PMID:21079677; Shin et al., 2010</td>
+      <td></td>
+      <td>Rajkovic lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Sycp2 knockout</td>
+      <td>PMID:16717126; Yang et al., 2006</td>
+      <td></td>
+      <td>Wang lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rec8 knockout</td>
+      <td>PMID:32232159; Guan et al., 2020</td>
+      <td></td>
+      <td>Wang lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>3×FLAG-Trip13</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Wang Lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trip13-3×FLAG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Wang Lab</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ACTB (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# A5441, RRID:AB_476744</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-centromere (CREST) (human polyclonal)</td>
+      <td>Antibodies Incorporated</td>
+      <td>Cat# 15-234, RRID:AB_2687472</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SYCP1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab15090, RRID:AB_301636</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SYCP2 (guinea pig polyclonal)</td>
+      <td>PMID:16717126</td>
+      <td>Custom made</td>
+      <td>IF (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SYCP3 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab97672, RRID:AB_10678841</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SYCP3 (rabbit polyclonal)</td>
+      <td>ProteinTech Group</td>
+      <td>Cat# 23024-1-AP, RRID:AB_11232426</td>
+      <td>IF (1:500), WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HORMAD1 (rabbit polyclonal)</td>
+      <td>ProteinTech Group</td>
+      <td>Cat# 13917-1-AP, RRID:AB_2120844</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HORMAD2 (rabbit polyclonal)</td>
+      <td>PMID:19851446; Wojtasz et al., 2009</td>
+      <td>A gift from Toth lab</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-REC114 (rabbit polyclonal)</td>
+      <td>PMID:31003867; Boekhout et al., 2019</td>
+      <td>A gift from Keeney Lab</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-REC8 (rabbit polyclonal)</td>
+      <td>Custom made</td>
+      <td>A gift from Mengcheng Luo lab</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# F3165, RRID:AB_259529</td>
+      <td>IF (1:300), WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SKP1 (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 12248S, RRID:AB_2754993</td>
+      <td>IF (1:200), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRIP13 (rabbit polyclonal)</td>
+      <td>ProteinTech Group</td>
+      <td>Cat# 19602-1-AP</td>
+      <td>IF (1:150), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SYCE1 (rabbit polyclonal)</td>
+      <td>Custom made</td>
+      <td>A gift from Mengcheng Luo lab</td>
+      <td>IF (1:200), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SYCP1 (mouse monoclonal)</td>
+      <td>Custom made</td>
+      <td>A gift from Christer Hoog lab</td>
+      <td>IF (1:200), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CENP-C (rabbit polyclonal)</td>
+      <td>PMID:25533956; Kim et al., 2015</td>
+      <td>A gift from Y. Watanabe lab</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRF1 (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# T1948</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MAJIN (guinea pig polyclonal)</td>
+      <td>This paper</td>
+      <td>Custom made</td>
+      <td>IF (1:100)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials availability statement
 
 Newly created materials (3×FLAG-Trip13 and Trip13-3×FLAG mice) are freely available, subject to standard institutional material transfer agreement.
 
-## Mouse strains
+### Mouse strains
 
 The cryopreserved sperm from Trip13+/- males were obtained from the Mutant Mouse Resource and Research Center at UC Davis (Trip13tm1.1(KOMP)Vlcg/JMmucd, MMRRC_050223-UCD). Genotyping of wild type and knockout Trip13 alleles was performed by separate PCR reactions using tail genomic DNA. Other mutant mouse lines used in this study were previously generated: Hormad1, Sycp2, and Rec8 (Guan et al., 2020; Shin et al., 2010; Yang et al., 2006). Genotyping PCR primer sequences are listed in Table 2.
 
-## Generation of 3×FLAG-Trip13 and Trip13-3×FLAG knockin mouse strains
+**Table 2.**
+ Sequences of genotyping PCR primers, sgRNA, and ssDNA templates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotyping primers</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Allele</td>
+      <td>Forward</td>
+      <td>Reverse</td>
+      <td>Product (bp)</td>
+    </tr>
+    <tr>
+      <td>Trip13 WT</td>
+      <td>GCCCTTAGCCAAGGTGGAT</td>
+      <td>TCCTTGCACCCCTAATTGAC</td>
+      <td>645</td>
+    </tr>
+    <tr>
+      <td>Trip13 KO</td>
+      <td>ACTTGCTTTAAAAAACCTCCCACA</td>
+      <td>CAGAAAGCAACTGCTCCCTTCTAGC</td>
+      <td>731</td>
+    </tr>
+    <tr>
+      <td>Sycp2 WT</td>
+      <td>AGATGAGGGCATATCACCGA</td>
+      <td>TAAGCACACTCACCATCTCC</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td>Sycp2 KO</td>
+      <td>GCATGTTATCAACCTTATCCCT</td>
+      <td>CCTACCGGTGGATGTGGAATGTGTG</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Rec8 WT</td>
+      <td>AGCAGAGTCGAAGAAGGCCTCTTG</td>
+      <td>CAGATGGTGGCGAAGCAGCCTGT</td>
+      <td>426</td>
+    </tr>
+    <tr>
+      <td>Rec8 KO</td>
+      <td>AGCAGAGTCGAAGAAGGCCTCTTG</td>
+      <td>TTGCTCAGGGGAATTTGGGTC</td>
+      <td>212</td>
+    </tr>
+    <tr>
+      <td>Hormad1 WT</td>
+      <td>TCAAGACCAACCTGGGCTAC</td>
+      <td>CCATGTGGGTTGTAGGGAGT</td>
+      <td>196</td>
+    </tr>
+    <tr>
+      <td>Hormad1 KO</td>
+      <td>TCAAGACCAACCTGGGCTAC</td>
+      <td>GGGGAACTTCCTGACTAGGG</td>
+      <td>~400</td>
+    </tr>
+    <tr>
+      <td>3×FLAG-Trip13</td>
+      <td>CCTACATCGGAGAAGGCTGT</td>
+      <td>TTCATGTCAGGCTGTTCAGG</td>
+      <td>WT:348KI:426</td>
+    </tr>
+    <tr>
+      <td>Trip13-3×FLAG</td>
+      <td>GCCCCACTAAAGCACAAGTC</td>
+      <td>ACAGGCTTGAGTCAGGATGG</td>
+      <td>WT:405KI:471</td>
+    </tr>
+    <tr>
+      <td>Genome editing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Guide RNA</td>
+      <td colspan="2">HDR ssDNA</td>
+    </tr>
+    <tr>
+      <td>3×FLAG-Trip13</td>
+      <td>ATTCCCTCGGCTCCCGGCGG</td>
+      <td colspan="2">TCGGAGAAGGCTGTCGCACAGGGCGCAGGGAGGCGACCGCGGCCTCACTCCGGCGGCATTCCCTCGGCTCCCGGCGGCAGCGCCATGGGTGACTACAAAGACCATGACGGTGATTATAAAGATCATGACATCGATTACAAGGATGACGATGACAAGGGAAGCGGAGACGAGGCGGTGGGCGACCTGAAGCAAGCGCTTCC</td>
+    </tr>
+    <tr>
+      <td>Trip13-3×FLAG</td>
+      <td>AAGCCATAGATATGGATGTC</td>
+      <td colspan="2">AGGGTTTCCTCCAGGCCCTATCTCTGGCAGTGGACAAACAGTTTGAGGAGAAAAAGAAACTTTCAGCTTATGTTGACTACAAAGACCATGACGGTGATTATAAAGATCATGACATCGATTACAAGGATGACGATGACAAGTGATCCAAGACATCCATATCTATGGCTTTCAATGGACAAGTAGGAGGTGATACCGTCTAC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of 3×FLAG-Trip13 and Trip13-3×FLAG knockin mouse strains
 
 The 3×FLAG-knockin mouse strains were generated using the CRISPR-Cas9-mediated genome editing approach. To generate N-terminally tagged knockin mice, one single-guide RNA (sgRNA) was designed to target the first exon of the mouse Trip13 (Figure 7—figure supplement 1A). An ssDNA repair template was created using the sequence surrounding the start codon as 5′ and 3′ homology arms. The knockin template itself included the sequence for the 3×FLAG epitope and a three-residue linker sequence. The C-terminally tagged strain was generated similarly (Figure 7—figure supplement 1B). The guide RNA targeted exon 13 containing the stop codon. The ssDNA template contained the FLAG-encoding sequences and homology sequences flanking the insertion site. The sgRNA sequences and ssDNA template sequences are shown in Table 2.
 
 For the sgRNA, the oligo was phosphorylated, annealed, and cloned to PX330 plasmid (Addgene, Waterton, MA). After in vitro transcription with the MEGAshortscript T7 Kit (AM1354, Invitrogen) and purification with the MEGAclear Transcription Clean-Up Kit (AM1908, Invitrogen), a mixture of Cas9 mRNA (100 ng/µl; Trilink, Cat# L-7206 + 0.5 µl of the sgRNA [35 ng/µl] + 100 ng/ul of ssDNA template) was prepared and injected into zygotes. The injected zygotes were cultured in KSOM medium at 37°C in a 5% CO2 incubator until the two-cell stage. The two-cell embryos were transferred into oviducts of 0.5-day post-coitum pseudopregnant ICR foster mothers. Founder mice were bred to wild type mice to obtain germline transmission. The N-terminal 3×FLAG allele and the C-terminal 3×FLAG allele were PCR amplified and sequenced to confirm the insertion. PCR genotyping primers are listed in Table 2.
 
-## Production of anti-MAJIN antibodies
+### Production of anti-MAJIN antibodies
 
 The short isoform of mouse MAJIN (amino acids 1–124; XM_036161650.1 and XP_036017543.1) was expressed as a 6xHis-MAJIN recombinant protein in Escherichia coli using the pQE-30 vector. The recombinant protein was affinity purified with the Ni-NTA agarose. Two guinea pigs were immunized at Cocalico Biologicals Inc (Reamstown, PA), resulting in two antisera (UP-GP140 and UP-GP141). Both anti-sera were used for immunofluorescence of nuclear spreads of spermatocytes.
 
-## Histological, immunofluorescence, and surface nuclear spread analyses
+### Histological, immunofluorescence, and surface nuclear spread analyses
 
 For histology, testes or ovaries were fixed in Bouin’s solution at room temperature overnight, embedded with paraffin, and sectioned at 8 μm. Sections were stained with hematoxylin and eosin. For immunofluorescence analysis, testes were fixed in 4% paraformaldehyde (in 1× PBS) overnight at 4°C, dehydrated in 30% sucrose (in 1× PBS) overnight, and sectioned at 8 μm in a cryostat. Surface nuclear spread analysis was described before (Peters et al., 1997). Briefly, testicular tubules or ovarian tissues were soaked in hypotonic treatment buffer (30 mM Tris, 50 mM sucrose, 17 mM trisodium citrate dihydrate, 5 mM EDTA, 0.5 mM DTT, 1 mM PMSF). Then the cells were suspended in 100 mM sucrose and spread by physical disruption on PTFE printed slides that were previously soaked with paraformaldehyde solution containing Triton X-100 and sodium borate.
 
-## Imaging
+### Imaging
 
 Histological images were captured on the Leica DM5500B microscope with a DFC450 digital camera (Leica Microsystems, Wetzlar, Germany). Most immunolabeled chromosome spread images were taken on the Leica DM5500B microscope with an ORCA Flash4.0 digital monochrome camera (Hamamatsu Photonics, Bridgewater, NJ). Confocal microscopy of immunolabeled chromosome spreads was performed on a Leica SP5 II confocal (Leica Microsystems) with an ×100 (1.46 NA) oil immersion objective lens. Images were deconvolved with Huygens Essential deconvolution software (Scientific Volume Imaging B.V., Hilversum, Netherlands).
 
-## Western blot analysis
+### Western blot analysis
 
 Testes were homogenized in the lysis buffer (50 mM Tris-HCl, pH 8.0, 150 mM NaCl, 1% Triton X-100, 0.5% sodium deoxycholate, 5 mM MgCl2, and 1 mM DTT supplemented with 1 mM PMSF). 40 μg of protein samples were resolved by SDS-PAGE, transferred onto PDVF membranes, and immunoblotted with primary antibodies.

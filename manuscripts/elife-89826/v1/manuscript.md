@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/046ak2485 Institut für Chemie und Biochemie, Freie Universität Berlin Berlin Germany
-2. https://ror.org/04cdgtt98 Department of Molecular Neurobiology, German Cancer Research Cente Heidelberg Germany
-3. https://ror.org/02se0t636 Leibniz-IPHT Jena Jena Germany
+1. Institut für Chemie und Biochemie, Freie Universität Berlin Berlin Germany ([ROR:046ak2485](https://ror.org/046ak2485))
+2. Department of Molecular Neurobiology, German Cancer Research Cente Heidelberg Germany ([ROR:04cdgtt98](https://ror.org/04cdgtt98))
+3. Leibniz-IPHT Jena Jena Germany ([ROR:02se0t636](https://ror.org/02se0t636))
 
 † Corresponding author
 
@@ -31,9 +31,48 @@ Here, we propose an instrument filling the gap between the low-cost open-source 
 
 The result is a cost efficient and user-friendly high-resolution fluorescence microscope that is compatible with long-term live-cell imaging, single particle tracking and single molecule localization microscopy. All designs for the 3D parts, software and electronics are open-source (Table 1). We here describe microscope assembly, benchmarking and a number of high-resolution microscopy assays performed with our microscope.
 
+**Table 1.**
+ Github repositories for hardware, electronics and software.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Link:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>General openUC2</td>
+      <td>https://github.com/openUC2/UC2-GIT; copy archived at Diederich, 2024</td>
+    </tr>
+    <tr>
+      <td>Specific to this setup: UC.STORM</td>
+      <td>https://github.com/openUC2/UC2-STORM-and-Fluorescence, (openUC2, 2024b)</td>
+    </tr>
+    <tr>
+      <td>ImSwitch (UC2 specific)</td>
+      <td>https://github.com/openUC2/ImSwitch/. (openUC2, 2024c)</td>
+    </tr>
+    <tr>
+      <td>UC2-Rest</td>
+      <td>https://github.com/openUC2/UC2-REST, (openUC2, 2024a)</td>
+    </tr>
+    <tr>
+      <td>UC2-ESP32</td>
+      <td>https://github.com/youseetoo/uc2-esp32, (youseetoo, 2024)</td>
+    </tr>
+    <tr>
+      <td>UC2-ESP32 Firmware Flashintool (Online)</td>
+      <td>https://youseetoo.github.io/</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## Assembly of a high-resolution UC2 microscope
+### Assembly of a high-resolution UC2 microscope
 
 We aimed to generate a cost-effective, high-resolution widefield fluorescence microscope that allows us to perform a variety of common cell biological imaging experiments. These include standard high-resolution diffraction limited immunofluorescence imaging, long-term live-cell imaging, single particle tracking and super-resolution microscopy. To fulfill these criteria, we reasoned that our system should have: (i) excitation and detection powerful and sensitive enough for single molecule localization, thus requiring a laser and an appropriate detector. (ii) capability to operate inside an incubator for long-term live-cell imaging, thus requiring small size and automation. (iii) an intuitive and user-friendly GUI for maximal accessibility. Lastly, the entire system including the physical microscope, the electronics and the software must be open-source and be possible to assemble and operate with moderate technical know-how (Figure 1a). We reasoned that the quality of the objective is paramount to image quality, while most other optical parts of a light microscope can be mass-produced components. Furthermore, such a high-quality objective allows for the swift diagnosis of problems in the assembly of the optical path due to its high resolution and minimal chromatic and spatial aberrations. We decided to use an Olympus 1.49 NA oil objective, but any high-quality objective can be incorporated in our system, by adapting the objective mount to the requirements of the objectives’ manufacturer.
 
@@ -51,7 +90,7 @@ All steerable electronics could alternatively be controlled with a PS4 controlle
 
 The 638 nm Red Laser Module used for illumination induced a recurrent pattern in the detection path when imaging a coverslip homogeneously covered with fluorescent molecules. Spectrometric measurement of the excitation laser beam confirmed that our low-cost laser had minor bands in the wavelength range of 650–670 nm, which we could remove using an additional band pass excitation filter (ZET635/20 X). Our finding encouraged us in our approach to mix low-budget components with high quality optics. Focusing and positioning of the sample is done with commercial low-budget stages that offer great long-term stability. To render all three axes of movement computer controlled, we first motorized an x-y stage via torque transmission form the motor to the micrometer screws of the stage via timing belts. Secondly, we incorporated a motorized lead screw-driven (NEMA11, 50 mm, Amazon, 50€) z-stage holding the objective into the modular design of the microscope.
 
-## Imaging experiments
+### Imaging experiments
 
 We first used our microscope to image a sample of fixed mammalian cells stained against tubulin via immunofluorescence using AF647. When we imaged these cells with moderate laser intensity (35 W/cm2), beam expander and 50ms integration time, we found that cells were evenly illuminated (Figure 2a) and microtubules appeared as diffraction-limited lines inside cells (Figure 2b). To quantify flatness of illumination, we made use of a red auto-fluorescent benchmarking slide (Chroma). The measured fluorescence intensity was quite homogenous across the field of view, with variations of up to 25% of the maximal fluorescence intensity, excluding the bottom left and right corners (Figure 2c).
 
@@ -97,55 +136,55 @@ Besides the application in basic research, this cheap and easy to assemble setup
 
 ## Methods
 
-## Component fabrication
+### Component fabrication
 
 In the components list, a detailed table describes all the different pieces used for the microscope, including the price of each component. The CAD designs as well as further information about UC2 or setup building can be found on the Github repository (see Table 1). The XY-stage was a manual commercial model that was modified and motorized for the application. The Z stage was also commercially bought, but already manufactured with a motor. Both stages were chosen because of their low price and convenient use. Custom-made stage solutions to print and build can be found on the UC2 repository (Table 1). In the slicing software Prusa slicer, the original Prusa i3 MK3S & MK3S+printer was set. The parts were printed with the 0.15mm SPEED or 0.15 mm QUALITY settings. The two materials used in this project were the Prusament PLA (Polylactic Acid) and Prusament ABS (Acrylnitril-Butadien-Styrol) filaments (both from Prusa), which can both be selected in the slicing software ABS was used wherever heavy loads may deform the setup in the event of temperature gradients (e.g. objective mount). Materials were printed with PLA infill (20–40%) (Tprint = 215 °C; Tbed = 60 °C). Materials printed with ABS infill (20–40%) (Tprint = 255 °C; Tbed = 100 °C).
 
-## UC2 setup assembly
+### UC2 setup assembly
 
 In the UC2 system, optical components were mounted in standardized cubes. To make alignment possible over an optical excitation or emission path over several cubes distance, the components must experience a large enough degree of freedom within the cubes so they can be moved manually in angle and exact position, but low enough to keep components immobile over prolonged time periods. The challenge presented by tilted optics can on the one side be addressed during the design process; broader mounts/adapters are less prone to tilt due to higher contact surface with the cube. Once the optics were orthogonal to the light path, their position in relation to the optical axis was set manually with highest possible accuracy, using appropriate mounts. The fine adjustment was done with tiltable mirrors, as using translational mounts for every optical element would be complex to produce or costly. A helpful tool for adjustment was to position an aperture in the excitation pathway. The maximum of the laser spot was set to be in the center of the aperture hole and was adjusted using the mirror. The emission path was adapted in the same way, as imaging a fluorescent surface allows to position the maximal laser intensity spot on the center of the detector field of view (also with a mirror).
 
 The setup entails two imaging channels: the laser induced fluorescence (excitation path) and the LED top-light illumination (650 nm Star LED, Cree, 3 W, brightfield). The top-light light source is mechanically detangled from the stages to remain unaltered by sample motion. As the filter cube in the microscope is immobile, the top-light illumination requires either a high-power white LED or an LED that emits light in a wavelength range that is not blocked by the dichromatic mirror or the emission filter (in our case 650–660 nm).
 
-## Setup parts availability and price
+### Setup parts availability and price
 
 The different 3D printed parts, electronics and optics used in the assembly, the corresponding CAD files as well as an estimation of the price can be found in the corresponding Github repositories, as listed in Table 1. General information about the UC2 system can be found on the UC2 repository.
 
-## Image acquisition and control software
+### Image acquisition and control software
 
 For the microscopy control, acquisition and reconstruction software, we chose ImSwitch because its modular design adapts very well to the inherently modular nature of the cube-based optics platform. A novel firmware "UC2-ESP32" was developed, which is fully integrated into the python-based ImSwitch structure. Using a unified REST API-like interface, lasers, motors, LEDs, LED arrays and readout sensors can be controlled serially via WiFi and USB. To ensure wide distribution of this device adapter, we used a readily available hardware module that can control multiple stepper motors and easily adapt other hardware components such as the LEDs and lasers. An online-based flash tool loads the latest firmware onto the Wemos ESP32 D1 R32 in combination with the CNC Shield to create a fully functional microscopy control unit. Detailed documentation can be found in the online documentation (https://youseetoo.github.io/). A Python library ‘UC2-REST’ adapts the USB serial and integrates it into the ImSwitch software. In this project, the strengths of open-source were fully unleashed by extending the control and acquisition algorithm ImSwitch with an online SMLM reconstruction algorithm by Alsamsam et al., 2022. The user can select different parameters from the MicroEye framework to locate blinking events directly in the Napari viewer (Sofroniew et al., 2022) to directly track possible reconstruction or sample artefacts. The UC2-specific fork amongst other repositories can be found in Table 1.
 
-## Imaging modalities
+### Imaging modalities
 
-## Illumination
+#### Illumination
 
 The illumination is provided by the 638 nm Red Laser Module 500 mW Round Dot Focusable TTL 3050 (acquired on https://www.laserlands.net/). When implementing the telescope and beam homogenizer, the illumination density reaches up to 90 W/cm2 but could be tuned to any required value below that. In the focal point between both lenses a rotating piece of cling film diffuses the beam. The variance in the laser density over the field of view excluding the corners was measured with a fluorescent slide and is reproducibly lower than 25%.
 
 Additionally, for long term experiments, lacking fluorescence intensity can to an extent be compensated with longer detector exposure times. To perform SMLM that is dSTORM in our case, the telescope is removed to have maximal laser density. The total available power at the sample plane is 83 mW thus a laser density of around 520W/cm2. But since the laser spot is smaller than the FOV, sufficient laser density can be reached when only using a subset of the FOV (approximately a third of the FOV) can be used with sufficient laser power (over 970W/cm2) and a variation in laser intensity of about 25% of the laser intensity maximum.
 
-## Objectives and pixel sizes
+#### Objectives and pixel sizes
 
 For the widefield imaging, the room temperature live cell imaging, the single particle tracking as well as the dSTORM experiment, a 60 x Olympus 1.49NA oil immersion objective (UPLAPO60XOHR) is used. The setup optics have accordingly been chosen for maximal resolution thus matching the Nyquist sampling rate on the camera. The pixel-size is determined with a calibrated grid and a value of 104.1 nm is extrapolated. For the incubator measurements, a 20 x Olympus 0.6NA air (MXPLFLN20X) is used. The optics in the setup are not adjusted to this objective, resulting in a pixel-size of 319.4 nm.
 
-## Coverslip and cell seeding
+### Coverslip and cell seeding
 
-## Cell lines
+#### Cell lines
 
 CV-1 cells (Wild-type Cercopithecus aethiops kidney fibroblasts, ATCC CCL-70, mycoplasm free, verified), HeLa (human cervical canerepithelial cell line ATCC CCL-2, mycoplasm free, verified) and T98G (human glioblastoma multiforme cell, line ATCC CRL-1690, mycoplasm free, verified).
 
-## Coverslip preparation
+#### Coverslip preparation
 
 Metal holders were used in combination with circular coverslips (25 mm) which were first cleaned with a 2% Hellmanex solution for 10 min then cleaned in ethanol for 10 min and were finally placed in the plasma cleaner for 15 min after having dried. The eight-well sample-holders (Ibidi) were washed with 1 M KOH for 10 min then rinsed with H2O and dried.
 
-## Cell culture medium
+#### Cell culture medium
 
 Cell culture medium was on a phenol red free DMEM base with 1% GlutaMAX and 10% FBS.
 
-## Cell seeding
+#### Cell seeding
 
 Cells were detached from the cell culture dish with a 2 mM EDTA solution. A total of 30,000 cells were seeded on a 25 mm circular coverslip for dSTORM experiments and general wide-field imaging. For the live cell experiments, 55,000–80,000 cells were seeded onto 25 mm coverslips, alternatively 15,000–25,000 cells per well when using an eight-well chamber.
 
-## Microtubule staining
+### Microtubule staining
 
 CV-1 cells were first washed with 37 °C warm PEM buffer. The cells were fixed with warm PEM with 4% PFA, 0.05% GA and 0.1% TX100 for 20 min. After fixation, sample was quenched in 8 min with NH4Cl/PBS (50 mM) then washed three times with PEM buffer. The cells were then permeabilized with 0.3 % TX100 in PEM for 5 min and washed with PEM buffer. The sample was then blocked for 30 min in imageIT followed by 1 hr in a 4% HS, 1% BSA, 0.1 % TX100 PEM-based solution.
 
@@ -153,30 +192,30 @@ The sample was incubated overnight (12 hr) at 4 °C with a primary mouse anti al
 
 The sample was the post-fixated with a 4% PFA diluted in PEM solution, for 15 min. The cells were then quenched with a 50 mM NH4Cl solution diluted in PBS for 8 min. Finally, the cells was washed 3 times.
 
-## Single particle tracking
+### Single particle tracking
 
 Anti-GFP nanobodies (LaG-16 anti-GFP, own production according to Fabricius et al., 2018) were added to a biotin (α-Biotin-ω-(succinimidyl propionate)–24(ethylene glycol)) solution at double molar excess. After 1 hr of incubation on a shaker (300 rpm), the nanobody-biotin construct was purified by sequential filtration through three 7 kDa MWCO desalting columns.
 
 The biotin conjugated anti-GFP nanobodies were mixed in a 1–1 ratio with the streptavidin coated quantum dots and incubated for 10 min at room temperature. The solution was then diluted into 1 ml of live cell medium. The cells were then incubated at room temperature with this solution for 15 min. Afterwards the supernatant was removed and replaced with regular live cell-medium (Thermo Fischer).
 
-## SiR actin staining
+### SiR actin staining
 
 The CV-1 cells were washed in 37°C warm Medium (DMEM without phenol red +FBS + glutamax). Oneμ l of the original SiR Actin (Spirochrome, 100 nM) solution was diluted in 1 ml of 37°C warm Medium (DMEM without phenol red +10% FBS +1% glutamax). To this solution, 1μ l of verapamil was added. The sample medium was removed and exchanged with this solution. After 1 hr of incubation in the incubator, the sample was imaged in a live cell imaging solution (Invitrogen) for the following hours at room temperature.
 
-## Nucleic staining
+### Nucleic staining
 
 T98G cells were washed in 37 ° C prewarmed medium (DMEM without phenol red +10% FBS +1% glutamax). For staining, 1 μl of SYTO Red Fluorescent Nucleic Acid Stain (Invitrogen) was diluted in 1 ml of complete medium and incubated with the sample for 30 min at 37 ° C in the incubator, then imaged over prolonged time.
 
-## (d)STORM imaging
+### (d)STORM imaging
 
-## Imaging buffer
+#### Imaging buffer
 
 Imaging buffer was made of 150 mM Tris-HCl, 1.5% β- Mercaptoethanol, 0.5% (v/w) glucose, 0.25 mg/ml glucose oxidase and 20 µg/ml catalase (pH 8.8).
 
-## Image acquisition
+#### Image acquisition
 
 The 30,000 frames of the (d)STORM data set have been acquired with ImSwitch on the full camera chip (1456x1,088 px). The exposure time was 20ms, the gain was set to 20 (maximal value), the black-level and offset to 0 and no time delay was set between two frames. Laser power was set to 1024 (maximal value). Setup was positioned on a regular table with a layer of foam material to dump vibrations. The room was left during the measurement. The images were acquired within around 15 min and saved directly on the computer disc in a.hdf5 file format for time efficiency and data handling advantages.
 
-## Analysis and reconstruction:
+#### Analysis and reconstruction:
 
 The (d)STORM data-set was imported as a whole into ImageJ as a hdf5 file. Acquiring the full CMOS chip 30,000 times generated enormous datasets (95.6 Gb). To load the file, a Fiji plugin to load the stack as virtual stack was used. (N5, Saalfeld et al., 2022). The stack of images was then cropped to retain the region of interest, which has been positioned to match the region where sufficient laser density induces blinking of single molecules during the acquisition. The analysis was done using ThunderSTORM (Ovesný et al., 2014), a publicly available SMLM reconstruction plugin on ImageJ. The camera parameters mentioned in the image acquisition section were used for the analysis. Image filtering was done with a Difference-of-Gaussian filter σ1 = 1.1 px; σ2 = 1.7 px. The approximate localization of molecules was done using the local maximum method with default settings (std(Wave.F1) as peak intensity threshold and 8-neighborhood connectivity). Sub-pixel localization of molecules was done with the PSF: Integrated Gaussian (Fitting radius 3 px) and maximum likelihood fitting method (initial sigma 1.7 px). Reconstruction of localized the raw-data was visualized using the average shifted histograms method (Magnification: 25 x; lateral shifts: 3).

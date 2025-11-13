@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02h1nk258 Max Planck Institute for Brain Research Frankfurt am Main Germany
-2. https://ror.org/02kkvpp62 School of Life Sciences, Technical University of Munich Freising Germany
+1. Max Planck Institute for Brain Research Frankfurt am Main Germany ([ROR:02h1nk258](https://ror.org/02h1nk258))
+2. School of Life Sciences, Technical University of Munich Freising Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))
 
 † Corresponding author
 
@@ -30,7 +30,7 @@ To mechanistically investigate sequence generation from single spikes, we built 
 
 ## Results
 
-## Model of the turtle visual cortex with experimentally defined constraints
+### Model of the turtle visual cortex with experimentally defined constraints
 
 To explore the network mechanisms that might lead to the reliable activity propagation from single spikes, we built a recurrent network model with single-cell properties and connectivity constrained to previously obtained experimental measurements from the turtle visual cortex (Hemberger et al., 2019). The network model is composed of 100,000 neurons (93% excitatory and 7% inhibitory) equivalent, by neuronal density, to a 2 × 2 mm slab of turtle visual cortex (Figure 1A).
 
@@ -50,9 +50,17 @@ Neurons recorded in ex vivo conditions generate spontaneous action potentials on
 
 In summary, we built a model where we constrained single-neuron properties and connection strength distributions by biological data but otherwise assumed random connectivity. The model, which reproduces experimental cortical data, displays highly heterogeneous connectivity and provides a testbed to investigate the mechanistic underpinnings of sequence generation and propagation observed in the biological networks.
 
-## Single spikes trigger reliable sequential activity in a biologically constrained network model
+### Single spikes trigger reliable sequential activity in a biologically constrained network model
 
 Next, we examined if our biologically constrained model produces reliable sequential neuron activations triggered by a single spike in a randomly chosen pyramidal neuron. We first generated 300 random networks and randomly selected an excitatory neuron in each one (called trigger neuron). For each network, we generated 20 simulations under different levels of spontaneous activity, yielding a total of 6000 simulations (Figure 2—figure supplement 1A). In each simulation, we caused the trigger neuron to fire 100 action potentials at 400-ms intervals (each action potential defining a trial) and measured, in all the other neurons, the resulting firing rate modulation (∆FR, Figure 2A). To identify reliably activated model neurons, we performed a statistical test on the distribution of ∆FR, assuming a Poisson process of constant firing rate as the null distribution (Figure 2—figure supplement 1E). We call ‘followers’ those model neurons displaying statistically high ∆FR (p = 10−7, Figure 2B, see Methods, Definition of followers). We found followers in 94.6% of our 6000 simulations.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79928/elife-79928-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of the stimulation protocol in the model. One neuron (top) was driven to produce one action potential, and all other neurons in the network were tested for resulting changes in their firing rate. (B) Distribution of single-cell firing rate modulation (∆FR) for one representative simulation. Top: cumulative mass function of the null distribution. Dashed: threshold for follower classification (p = 10−7). Bottom: ∆FR for followers (yellow) and other neurons in the network (blue: exc, red: inh). ∆FR is normalized to the modulation of a perfect follower (exactly one spike per trial). (C) Left: sequence of spikes from followers in two consecutive trials in an example simulation. Y-axis: followers sorted by median spike time across all trials. Same sorting in both trials. Spikes from non-followers are not shown. Right: same for a different simulation with a higher mean firing rate (left: 0.017 spk/s, right: 0.051 spk/s). See Figure 2—figure supplement 1C for full rasters. (D) Normalized spike rank entropy of sequences with at least 10 followers (black: mean; gray: std), compared to shuffled sequences (red). (E) Left: spatial evolution of the center-of-mass of follower activations during the first 100 ms of the first sequence in (C). Trigger neuron in purple outline. Exc followers in blue outlines. Right: spatial location of excitatory followers pooled from all simulations, colored by local density (n = 117,427). All simulations are aligned so that the trigger neuron is in the center. Stippled square: size of the MEA used in experiments. (F) Number of followers detected for each simulation as a function of the mean level of activity in the network. Blue: exc; red: inh; thick line: moving average; gray dots: sequences in (C). (G) Probability of generating a minimum number of followers for excitatory and inhibitory populations in high- and low-activity simulations. Dots: experimental ex vivo estimates. (H) Statistics of excitatory- or inhibitory-follower activations by activity level. Left: distance from trigger neuron to farthest detected follower in each simulation (side: half-width of the model network; MEA: half-width of MEA used in experiments). Middle: delay to median spike time of the last activated follower in each simulation (trial: maximum detectable duration under protocol in A). Right: standard deviation of follower spike times, averaged over all followers in each simulation (rand: expected standard deviation of randomly distributed spike times). Boxes: median and [25th, 75th] percentiles.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79928/elife-79928-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Input–output curve of the model. Each dot corresponds to one simulation. Y-axis indicates the mean firing rate over all neurons in the simulation. X-axis and color indicate the mean and standard deviation of the random spontaneous current. Highlighted in blue and orange (s1, s2) are the simulations containing the sequences shown in Figure 2C. Highlighted in green (s3) is the simulation containing the sequence shown in (B). (B) Sequence of spikes in two trials of an example simulation with firing rates above in vivo estimates (green s3 in (A) 0.13 spk/s). Neurons are sorted by median spike time across all trials. Same sorting in both trials. Spikes from non-followers are not shown (see C). Purple: trigger spike. (C) Spike raster of the three simulations highlighted in (A). Each raster shows all spikes for all neurons in the network for 1 s in the middle of the simulation, containing two consecutive trials. Arrowheads indicate the initiation of a trial. Purple circles highlight injected spikes. Blue: exc; pink: inh. (D) Spatial distribution of population firing rates for three consecutive time bins in the middle of an example simulation (green s3 in A). Spikes are counted in a 2D grid of 1 μm. Counts are convolved with a 100-μm Gaussian filter and divided by the duration of the time bins (20 ms). Blue: exc. spikes. Pink: inh. spikes. (E) Distributions of mean firing rates per cell for the three simulations highlighted in A. Dashed lines indicate Poisson fits. Blue: exc; pink: inh.
 
 When ordering the followers in the model network by activation delay from the trigger neuron spike, we observed reliable spike sequences as seen in experiments (Figure 2C, Figure 2—figure supplement 1B). We used an entropy-based measure to quantify the variability of follower identity per rank in a sequence, and observed similar results as in the experiments, with follower ordering being most predictable in the first four ranks of the sequence (see Methods, Entropy of follower rank, Figure 2D). As observed in experiments, we found that sequences in our model evolve over space, spreading away from the trigger neuron (Figure 2E, left). Furthermore, around 18% of all followers in the model fall outside the frame used in the experimental recordings (defined by a 1.3 × 1.3 mm MEA, stippled line, Figure 2E, right), suggesting a possible underestimation of the number of followers and sequence length in the original experiments.
 
@@ -64,11 +72,19 @@ We saw that the sequences of activations of excitatory followers often last more
 
 In summary, our biologically constrained model produces repeatable firing sequences across groups of neurons in response to single spikes in randomly chosen excitatory neurons with properties very similar to those observed in ex vivo experiments (low firing rates) that constrained the model network. Our simulations further provide an experimentally testable prediction: that sequences may occur under in vivo levels of spontaneous firing rate in the turtle cortex. In these conditions of higher spontaneous activity, the activation sequences are mainly composed of excitatory followers, whereas inhibitory followers produce less reliable and temporally jittered responses.
 
-## Strong connections provide reliability of activity propagation while weak connections modulate it
+### Strong connections provide reliability of activity propagation while weak connections modulate it
 
 To better understand the mechanisms behind follower activation, we examined how spikes propagate through our model networks. We found that single strong sparse connections drive reliable excitatory responses, while convergent weak connections control the level of spontaneous network activity and drive inhibition.
 
 In a random subset of our 6000 simulations (n = 900), we searched for instances when an neuron spike successfully traversed a connection, that is, when the postsynaptic neuron fired within 100 ms of the presynaptic one. We call this successful activation of a connection a ‘spike transfer’ from the pre- to the postsynaptic neuron. We thus combined spikes with recurrent connectivity to produce a directed acyclic graph of all spike transfers for each simulation (Figure 3A). Note that we studied spike transfers among all connected neurons in the network, allowing us to characterize the connections that are most frequently traversed. Most excitatory-to-excitatory spike transfers in low-activity simulations show a delay from pre- to postsynaptic spike of 6–8 ms (Figure 3B), matching delays measured in turtle cortex (Hemberger et al., 2019). Interestingly, excitatory-to-inhibitory spike transfers display consistently shorter delays than their excitatory-to-excitatory counterparts, even at higher firing rates (Figure 3B, inset), possibly reflecting the more depolarized state of inhibitory neurons (Figure 1I).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79928/elife-79928-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic. Left: the recurrent network structure and spiking activity are combined to produce a directed graph of spike transfers. Right: motifs of spike transfers detected in this graph (conv: convergence). (B) Distribution of delays of excitatory-to-inhibitory (red) and excitatory-to-excitatory (blue) spike transfers. Average of all low-activity simulations ([0, 0.05] spk/s). Arrowheads: mode of each distribution. Inset: most common delay as a function of mean firing rate. (C) Number of motifs leading to an excitatory (blue) or inhibitory (red) neuron spike. Motifs defined in (A). Each dot represents the mean for all spikes in each simulation. Low-activity simulations. Boxes: median and [25th, 75th] percentiles. (D) Same as (C) for high-activity simulations. (E) Histograms of strengths of synapses leading to excitatory (blue) or inhibitory (red) neuron spikes. Insets: zoomed-in tails. Each line averages 25–100 simulations grouped in equal bins of mean firing rate (color bar). (F) Top: schematic of alternative network models and their truncated distribution of synaptic strengths. Bottom: number of detected excitatory followers per simulation (n = 2000 each). Boxes: median and [25th, 75th] percentiles. (G) Input–output curves for the full (purple) and strong-only (orange) models. (H) Difference between the number of followers detected in full and strong-only models under the same input. Brackets indicate regimes where the presence of weak connections increases (full >str) or decreases (full <str) the follower count. 2000 simulations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79928/elife-79928-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Input–output curves for the full (purple), strong-only (orange), and weak-only (blue) models. Note that the weak-only model produced firing rates only when driven with very strong depolarizations (rheobase current of a model neuron in isolation ~150 pA). (B) Number of followers as a function of firing rate for each model. (C) Probability of obtaining at least n followers for each model.
 
 To understand the connectivity structure underlying these spike transfers, we examined connectivity motifs in the graph (Figure 3C, D). The possible number of motifs increases with the number of neurons involved. Due to this combinatorial nature, we extracted only low-order motifs with depths of up to two spike transfers and involving ≤4 spikes. In low-activity simulations, we found that excitatory spikes are rarely triggered by convergence or fan motifs (Figure 3C, top, conv.), but they are rather the result of one-to-one spike transfers (Figure 3C, top, single). By contrast, we saw that spikes from inhibitory neurons result from more spike transfers, with a prevalence of convergence motifs (Figure 3C, bottom, conv.). Although spike transfers by convergence are more common in high-activity simulations for both excitatory and inhibitory populations (Figure 3D), the increase is greater for motifs leading to inhibitory spikes. Indeed, inhibitory spikes in high-activity simulations rarely involve single spike transfers (Figure 3D, bottom, single). This analysis reveals that different excitatory and inhibitory connectivity motifs underlie activity propagation in the networks.
 
@@ -82,7 +98,7 @@ Interestingly, the model containing only strong connections often produces an ex
 
 In summary, our model suggests that rare but strong and common but weak connections play different roles in the propagation of activity: the former promote reliable responses to single spikes, while the latter amplify spontaneous network activity and drive recurrent inhibition, effectively modulating the reliability of those responses.
 
-## Sequences are composed of sub-sequences that correspond to sub-networks of strong connections
+### Sequences are composed of sub-sequences that correspond to sub-networks of strong connections
 
 To better understand the regulation of sequential neuronal activations, we examined when and how sequences fail to propagate. We found that sequences could fail partially, with different sections of the same sequence failing to propagate independently of one another.
 
@@ -96,7 +112,7 @@ To further examine the potential interdependence of sub-network activation, we s
 
 In summary, we found that sequence decomposition based on coactivity reveals sub-networks of strongly connected followers. The few strong connections linking different sub-networks do not always reliably propagate activity. We predict that this apparent failure, in fact, adds flexibility, enabling the sub-networks to act as independent paths of propagation.
 
-## Sparse external input can halt or facilitate the propagation of activity
+### Sparse external input can halt or facilitate the propagation of activity
 
 We hypothesized that the connections between sub-networks could be critically important for sequence propagation. Indeed, the excitability and state of an entry point to a sub-network should affect sub-network activation, hence, we refer to these entry point neurons as ‘gates’. By injecting a single extra spike to these gates, we could control the activation of subsequences and thus the path of propagation of the sequence.
 
@@ -104,17 +120,33 @@ We first identified the gates for every sub-network of every simulation based on
 
 To evaluate how the excitability of gate neurons might affect propagation in the rest of the sub-network, we varied the amount of excitatory or inhibitory conductances they received. We again ran a random selection of our original simulations (n = 2000), but this time applying an additional spike from an external source to a randomly selected gate (Figure 5A). For the conductance of this external input, we chose the maximum value from either the excitatory or inhibitory synaptic conductance distribution (Figure 1D) while keeping the level of spontaneous activity in the rest of the network unchanged. We defined the level of activation of each sub-network (a) as the fraction of trials (out of 100) in which the sub-network is active and then computed the change of activation relative to control (a0) under the altered conductance state of the gate (∆a/a0, %) (Figure 5B). We found that external inputs to gate neurons are highly effective in controlling propagation through a sub-network: a single external inhibitory-input spike halves the probability of sub-network activation in 74% of the simulations and entirely halts its activation in 26% of the simulations. By contrast, a single external excitatory-input spike doubles baseline sub-network activation probability in 55% of the simulations (Figure 5B, Figure 5—figure supplement 1A).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/79928/elife-79928-fig5-v2.jpg)
+
+**Figure 5.:** (A) Voltage traces for six neurons in a sequence (network and colors as in Figure 4B) in two trials of simulations where the first neuron in the green sub-network receives a single excitatory (left,+I) or inhibitory (right, −I) input from an external source (arrows). (B) Fold change of sub-network activation above baseline (∆a/a0, %) for sub-networks randomly selected across all 6000 original simulations. The model gate neuron of each sub-network received an additional single input from an external source at the beginning of each trial. (C) Schematic of protocol and map of the fold change in activation (∆a/a0, %) for a sub-network when manipulating its gate (same network as Figure 4A). Arrow in schematic indicates stimulated gate. Solid outlines indicate combinations of strength and timing leading to halting (bottom, −50% ∆a/a0), facilitation (top right,+50% ∆a/a0), and adaptation (top left, −50% ∆a/a0). ∆t indicates the delay from trigger spike to external input. Dashed lines indicate the median spike time of the gate. (D) Same as (C) for a different sub-network. (E) Average map of the change in activation (∆a/a0, %, same as C) computed from 16 sub-networks of 8 different networks spanning 5–462 followers and 0.01–0.1 spk/s baseline firing rate (networks in C) and (Figure 5—figure supplement 1B). Maps were aligned relative to trigger spike as in (C) before averaging. Solid outlines indicate ±50% ∆a/a0. Color bar as in (C). (F) Same as (E) but maps were aligned to each gate median spike time (dashed line in C) before averaging. (G) Same as (C) for the orange sub-network when manipulating the green gate. (H) Same as (D) for the green sub-network when manipulating the orange gate.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79928/elife-79928-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Top: probability of an excitatory input onto a gate neuron producing at least an n-fold increase of activation probability on its respective sub-network. Bottom: same for inhibitory inputs. (B) Left column: graphs of strong connections between followers for seven networks with an increasing number of followers. Sub-networks are colored and labeled a and b. Circles indicate sub-network gates. Other columns: change of sub-network activation on sub-network a or b (test) as a function of external input strength and timing onto the gate of sub-network a or b (target). (C) Number of followers for all networks with at least two sub-networks. Arrowheads indicate networks in (B). (D) Left: average change of all maps of sub-network activation in two rightmost columns (B). Right: average but aligning all maps to the median spike time of their respective gate.
+
 To examine the effect of timing and strength of the external input on sub-network activation, we focused on the network in Figure 4A. We varied the sign (depolarizing vs. hyperpolarizing) and amplitude of the synaptic conductance of the external input to a gate neuron and its timing relative to trigger activation. We explored only conductances corresponding to single connections. We observed three different effects on the activation of the respective sub-network (∆a/a0, Figure 5C, D). First, an inhibitory input of any strength in a temporal window of ~100 ms can acutely reduce sub-network activation, often halting propagation. Second, an excitatory input of intermediate strength can facilitate propagation. The temporal window of facilitation is centered on the expected spike time of the gate neuron. Lastly, an excitatory input of large amplitude can impair propagation if it occurs much earlier than the activation of the trigger neuron. This sub-network behavior results from the single-cell adaptive properties indicated by experimental data (Hemberger et al., 2019): the external input, by triggering the gate and some of the neurons in its sub-network, activates adaptive currents and thus raises their threshold for subsequent activation by the trigger neuron. We found equivalent effects on simulated networks with number of followers and baseline firing rates spanning orders of magnitude (Figure 5—figure supplement 1B, C). Computing the average across all tested sub-networks, we conclude that halting is most effective in a narrower time window (relative to trigger activation) than facilitation (70 and 100 ms, respectively) (Figure 5E, left). When considered relative to the expected spike time of the gate, we observed that the temporal windows are wider (Figure 5F, right). Importantly, while the halting window appears to have a sharp temporal boundary determined by the expected spike time of the gate in the sequence, the facilitation window increase with increasing input amplitude.
 
 Finally, we examined how modulating the gate to one sub-network affects the activation of another (Figure 5G, H). Interestingly, this relationship between sub-networks is not symmetrical: in the single-network example, while orange sub-network activation is primarily independent of the state of the green sub-network (Figure 5G), gating of the orange sub-network unexpectedly facilitates green sub-network activation (Figure 5H), suggesting that the former typically exerts a net inhibitory influence on the latter. Indeed, strong excitatory inputs that might activate the orange sub-network early also reduce green sub-network activation (Figure 5H). More generally, we observed various complex interactions between pairs of sub-networks when examining other networks (Figure 5—figure supplement 1B, right). The sub-network interactions do not follow any particular trend (Figure 5—figure supplement 1C), suggesting that they depend on the particular realization of the random connectivity in the network.
 
 In sum, we identified gate neurons in different sub-networks whose activation is critical for the activation of the sub-network in a model based on the turtle cortex. External single spikes can control the state of gate neurons and thus halt or facilitate the activation of individual sub-networks. The effect of these spikes depends on their timing relative to the sequence trigger. Finally, the activation of a sub-network may influence other sub-networks via recurrent connectivity leading to complex and non-reciprocal interactions.
 
-## Sequences from multiple triggers reliably activate combinations of followers
+### Sequences from multiple triggers reliably activate combinations of followers
 
 To examine how sequences interact, we studied a new set of simulations where multiple-trigger neurons were activated simultaneously. We found that sequences from coactivated trigger neurons often interact, but they do so reliably, resulting in a combinatorial definition of followers.
 
 We first simulated 100 trials by inducing a single spike from each of 2000 randomly selected trigger neurons in a representative network (as in Figure 4A, though see Figure 6—figure supplement 1 for multiple network instantiations). Randomly pairing these trigger neurons, we estimated a very low probability that two excitatory neurons share followers (Figure 6A, B). Two triggers share at least 1 follower in only 3.12% of all tested pairs (n = 5000), and this probability drops to 0% for at least 11 followers.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/79928/elife-79928-fig6-v2.jpg)
+
+**Figure 6.:** (A) Left: schematic of follower classes as a function of trigger neuron (purple: follower to a; red: follower to b; blue: follower to both a and b). Right: example sequences produced by the activation of a or b. Followers are sorted by trigger class (left) and median spike time. Triggers do not share any followers (blue trigger class). (B) Number of followers for each trigger class in (A) for all random pairs of simulations (n = 5000). Boxes: median and [25th, 75th] percentiles. (C) Left: schematic of follower classes as a function of trigger: single-trigger neuron (a or b) or simultaneous coactivation (ab). Blue, purple, and red as in (A). Right: same trials as in (A), and a trial under coactivation. Followers are sorted by trigger class (left) and median spike time. Same follower sorting in all trials. (D) Number of followers presents under trigger coactivation as a function of the sum of followers for single triggers. Dashed line: diagonal. Solid line: linear fit with zero intercept. (E) Number of followers for each trigger class in (C) for all random pairs of triggers (n = 5000). (F) Median follower spike time for each trigger class in (C) after pooling followers from all simulations (5000 simulations; 532,208 followers). Lines indicate median. (G) Top: trigger neuron (purple), followers, strong connections between them (arrows), and other neurons in the network (dark blue). Follower colors as in Figure 4B. Bottom: sequences triggered under simultaneous coactivation of trigger (purple) and one additional contextual neuron that facilitates propagation in both sub-networks (left), only in the green sub-network (middle), or only in the orange sub-network (right). (H) Effect on green and orange sub-network activation (G top) when the trigger neuron is coactivated with each of 2000 randomly selected contextual neurons. Dashed lines indicate baseline activation of each sub-network. Neurons are colored by local density. Colored arrows correspond to sequences in (G).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79928/elife-79928-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Number of model followers presents under trigger coactivation as a function of the sum of followers for each trigger alone. Same as Figure 6D but with follower pairs pooled across 50 randomly picked networks (800 pairs per network). (B) Number of followers for each trigger class for all simulations. Same as Figure 6E but with follower pairs pooled as in (A). (C) Ratio of core and combination-specific followers for every pair of random triggers for the network in Figure 6. (D) Ratio of excitatory and inhibitory followers for each trigger class, pooling all followers from the network shown in Figure 6. (E) Ratio of random triggers for each one of the quadrants in Figure 6H. Bottom right: +g o; top left: −g+o; top right: exc; bottom left: inh.
 
 Next, we generated a new simulation for each randomly chosen pair of trigger neurons while activating both simultaneously (100 trials). Comparing the followers resulting from these double-trigger activations to the followers from single-trigger activations reveals sets of followers (Figure 6C): ones responsive to the activation of only one of the triggers (a), followers responsive to the activation of only the other trigger (b), and followers responsive to their coactivation (a&b).
 
@@ -128,7 +160,7 @@ Together, our results indicate that overlap of sequences initiated by different 
 
 We developed a model constrained by experimental data from the turtle visual cortex to investigate the effect of single spikes in recurrent networks with otherwise random connectivity. Our model produces reliable sequences from single spikes as experimentally measured ex vivo and predicts their existence in vivo in the turtle cortex, where firing rates are higher, with marked differences between excitatory and inhibitory neurons. We found that strong but rare connections form a substrate for reliable propagation in the network, while dense but weak connections can enhance or disrupt propagation. Our model reveals that sequences may be decomposed into multiple sub-sequences, each reflecting a sub-network of strongly connected followers, which emerge without any hand-tuning of network structures. We showed that activation of individual sub-sequences is sensitive to the state of a few gate neurons and can thus be controlled through ongoing recurrent activity or external inputs. We observed that different trigger neurons rarely share followers, but their sequences often interact, suggesting that downstream circuits may access the combined information from different sources. Indeed, the selectivity of followers to the combinatorial activation of multiple triggers suggests a mechanism that can produce a wide repertoire of activations while remaining reliable and specific. Finally, we found that the exact path of propagation is influenced by contextual activity provided by the activation of a small percentage of other neurons in the network. In summary, our biologically constrained model allows us to dissect the mechanisms behind the reliable and flexible propagation of single spikes, yielding insights and predictions into how cortical networks may transmit and combine streams of information.
 
-## Routing
+### Routing
 
 The sequences in our model represent a form of propagating activity. They are related to, but distinct from, previous frameworks: temporary breaking of excitatory/inhibitory balance, synfire chains, neuronal avalanches, and stochastic resonance.
 
@@ -146,7 +178,7 @@ In our model, a single spike could trigger multiple ones without runaway excitat
 
 Lastly, stochastic resonance is a phenomenon where noise can enhance the response of a system (Collins et al., 1995a). In particular, long-tailed distributions of strengths may create the opportunity for aperiodic stochastic resonance between weak and strong spike inputs (Collins et al., 1995b; Teramae et al., 2012). Indeed, our simulations with and without weak connections reveal narrow ranges of input where weak connections could increase or decrease reliability (Figure 3H). This global control mechanism contrasts with the selectivity of single sub-networks to the activation of a few neurons within the recurrent circuit (Figure 6H). As with criticality and synfire chains, our results suggest that some routing mechanisms might not be stochastic and operate at the population level, but rather that they are reliable and fine-grained.
 
-## Connectivity
+### Connectivity
 
 Our modeling results show that rare but strong connections are key to the generation of sequential activity from single spikes. Such sparse and strong connections are a common feature of brain connectivity. Indeed, long-tailed distributions of connection strengths are found in rat visual cortex (Song et al., 2005), mouse barrel and visual cortices (Cossell et al., 2015; Lefort et al., 2009), rat and guinea pig hippocampus (Ikegaya et al., 2013; Sayer et al., 1990), and human cortex (Shapson-Coe et al., 2021). Modeling and in vitro studies in hippocampus and cortex have suggested that sparse strong inputs substantially affect their postsynaptic partners and network dynamics (Franks and Isaacson, 2006; Ikegaya et al., 2013; Setareh et al., 2017). Furthermore, repeatable sequences of action potentials have also been reported in most of these mammalian cortical structures (Buzsáki and Tingley, 2018; Carrillo-Reid et al., 2015; Dechery and MacLean, 2017; Diba and Buzsáki, 2007; Dragoi and Tonegawa, 2011; Luczak et al., 2015; Luczak and Maclean, 2012; Vaz et al., 2020). Thus, could strong connections underlie cortical sequences more generally, and are sequences an ancient feature of cortical computation? We based our model on data from the turtle cortex, yet other species may introduce variations that might be relevant, including differences in operating firing rates or neuronal populations. For instance, the reliability of sequence propagation may depend on connectivity features we did not explore here, such as the presence of different connectivity motifs or differences in the distance-, layer-, and population-specific connection probabilities (Jiang et al., 2015; Song et al., 2005). Further modeling and experimental work on the cortical responses of diverse species will be needed to provide a comprehensive comparative perspective (Laurent, 2020).
 
@@ -154,7 +186,7 @@ Our study identified distinct roles for strong and weak connections, providing r
 
 Although we based many model parameters on experimental data from the turtle visual cortex (connection strengths, single-neuron properties, connection probabilities), our model has otherwise random connectivity. Consequently, our model displays a high degree of heterogeneity, with sub-networks emerging without fine-tuned connectivity, allowing us to make general predictions about sequence propagation and the impact of single spikes. However, other features of cortical organization, such as structured connectivity, neuronal diversity, and dendritic interactions, might affect activity propagation and routing. Indeed, certain nonrandom features may be expected in turtle cortical connectivity, such as axonal projection biases (Shein-Idelson et al., 2017), differences between apical and basal dendritic connectivity, gradients of connectivity across the cortical surface (Fournier et al., 2015), or plasticity-derived structures. Transcriptomic and morphological evidence suggests that turtle cortex contains diverse neuronal types, as seen in mammalian cortex (Nenadic et al., 2003; Tosches et al., 2018). Different neuronal types may play different roles in information routing. For instance, somatostatin- and parvalbumin-expressing neurons in mouse V1 may play different roles in controlling trial-to-trial reliability (Rikhye et al., 2021). Finally, our model represents neurons as single compartments, but complex input interactions and nonlinearities may occur at the level of dendritic arbors. For instance, synapses may cluster in short dendritic segments to effectively drive postsynaptic spiking (Kirchner and Gjorgjieva, 2021; Scholl et al., 2021); these inputs may be locally balanced by inhibition Iascone et al., 2020; and sequential activation within clusters may be particularly effective at triggering somatic spiking (Ishikawa and Ikegaya, 2020). The consequences of these aspects of cortical organization on information routing via strong connections remain to be explored.
 
-## Function
+### Function
 
 Evidence from rodents has often associated spiking sequences with memory or spatial tasks (Buzsáki and Tingley, 2018; Diba and Buzsáki, 2007; Dragoi and Tonegawa, 2011; Modi et al., 2014; Vaz et al., 2020) or reported sequences within the spontaneous or stimulus-evoked activity in sensory areas (Carrillo-Reid et al., 2015; Dechery and MacLean, 2017; Fellous et al., 2004; Luczak et al., 2015; Luczak and Maclean, 2012). More generally, spiking sequences have been proposed as parts of an information-coding scheme for communication within cortex (Luczak et al., 2015) or as content-free structures that can reference experiences distributed across multiple cortical modules (Buzsáki and Tingley, 2018). Although spking sequences were observed in the ex vivo turtle cortex, we predict the existence of sequences under in vivo levels of baseline activity. We propose that reliable routing of sequential activity might implement the visual tuning of cortical neurons. The dorsal cortex of turtles is a visual processing area that shows no clear retinotopy (Fournier et al., 2018) but displays stimulus-evoked wave patterns (Nenadic et al., 2003; Prechtl et al., 1997). Most neurons have receptive fields covering the entire visual field and display a wide range of orientation selectivity (Fournier et al., 2018). The presence of orientation tuning in the turtle cortex and our result that excitatory neurons are mainly activated via strong connections (Figure 3C–E) predict that like-tuned neurons should share strong connections. Interestingly, long-tailed distributions of connection strengths between L2/3 neurons of mouse V1 play a prominent role in orientation tuning in vivo (Cossell et al., 2015) (but see opposite evidence in ferret V1 Scholl et al., 2021). In mouse V1, stimulus presentation triggers broadly tuned depolarization via a majority of weak connections, while sparse strong connections determine orientation-selective responses (Cossell et al., 2015). This untuned depolarization via weak connections is consistent with our finding of activity regimes where weak connections can modulate the reliability of propagation (Figure 3H). Overall, the dual roles in routing played by weak and strong connectivity may have corresponding roles in what we describe as tuning. ‘Tuning’ is an operational term describing a slice of the recurrent pipeline of transformations linking stimulus to perception or behavior. Routing of spikes and tuning thus likely represent different ways of describing the same processes.
 
@@ -164,17 +196,104 @@ In conclusion, our results establish a mechanistic link between three elements c
 
 ## Methods
 
-## Neuron and synapse models
+### Neuron and synapse models
 
-We simulated neurons as adaptive exponential integrate-and-fire (see Table 1 for parameters) (Brette and Gerstner, 2005). We used the NEST model ‘aeif_cond_exp’ (see Methods, Simulations), which implements a conductance-based exponential integrate-and-fire neuron model where the membrane potential is given by:CdVdt=−gL(V−EL)+gLΔTexpV−VTΔT−ge(V−Ee)−gi(V−Ei)−w+Ieτwdwdt=a(V−EL)−w
+We simulated neurons as adaptive exponential integrate-and-fire (see Table 1 for parameters) (Brette and Gerstner, 2005). We used the NEST model ‘aeif_cond_exp’ (see Methods, Simulations), which implements a conductance-based exponential integrate-and-fire neuron model where the membrane potential is given by:
 
-At each firing time the variable w is increased by an amount, which accounts for spike-triggered adaptation. Inhibitory and excitatory synaptic conductances (gi and ge) are implemented as exponential decay kernels (see NEST documentation, Linssen et al., 2018).
+$$
+C\frac{dV}{dt}=−g_{L}(V−E_{L})+g_{L}Δ_{T}exp\frac{V−V_{T}}{Δ_{T}}−g_{e}(V−E_{e})−g_{i}(V−E_{i})−w+I_{e}\tau_{w}\frac{dw}{dt}=a(V−E_{L})−w
+$$
+
+**Table 1.**
+ Neuron and synapse model parameters.Asterisk (*) indicates parameters fitted from experimental data (Hemberger et al., 2019). Parameters of excitatory synaptic conductance are for a truncated lognormal distribution.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Excitatory reversal potential (Ee)</td>
+      <td>10 mV</td>
+    </tr>
+    <tr>
+      <td>Inhibitory reversal potential (Ei)</td>
+      <td>−75 mV</td>
+    </tr>
+    <tr>
+      <td>Synaptic conductance time constant*</td>
+      <td>1.103681 ms</td>
+    </tr>
+    <tr>
+      <td>Excitatory synaptic conductance (mean)*</td>
+      <td>3.73 nS</td>
+    </tr>
+    <tr>
+      <td>Excitatory synaptic conductance (std)*</td>
+      <td>6.51 nS</td>
+    </tr>
+    <tr>
+      <td>Excitatory synaptic conductance (max)*</td>
+      <td>67.8 nS</td>
+    </tr>
+    <tr>
+      <td>Leak reversal potential (EL)</td>
+      <td>−70.6 mV</td>
+    </tr>
+    <tr>
+      <td>Spike detection threshold</td>
+      <td>0 mV</td>
+    </tr>
+    <tr>
+      <td>Membrane reset potential</td>
+      <td>−60 mV</td>
+    </tr>
+    <tr>
+      <td>Spike initiation threshold (VT)</td>
+      <td>−50.4 mV</td>
+    </tr>
+    <tr>
+      <td>Membrane capacitance* (C)</td>
+      <td>239.8 pF</td>
+    </tr>
+    <tr>
+      <td>Leak conductance* (gL)</td>
+      <td>4.2 nS</td>
+    </tr>
+    <tr>
+      <td>Subthreshold adaptation (a)</td>
+      <td>4 nS</td>
+    </tr>
+    <tr>
+      <td>Spike-triggered adaptation (b)</td>
+      <td>80.5 pA</td>
+    </tr>
+    <tr>
+      <td>Adaptation time constant (τw)</td>
+      <td>144 ms</td>
+    </tr>
+    <tr>
+      <td>Slope factor (ΔT)</td>
+      <td>2 mV</td>
+    </tr>
+    <tr>
+      <td>Refractory period</td>
+      <td>2 ms</td>
+    </tr>
+  </tbody>
+</table>
+
+At each firing time the variable $w$ is increased by an amount, which accounts for spike-triggered adaptation. Inhibitory and excitatory synaptic conductances ($g_{i}$ and $g_{e}$) are implemented as exponential decay kernels (see NEST documentation, Linssen et al., 2018).
 
 To estimate membrane properties, we used least squares to match the output of our neuron model to the membrane potential of real neurons in whole-cell clamp under different levels of current injection (Hemberger et al., 2019). An example of the fit can be seen in Figure 1B. We first fit the model membrane leak conductance (resistance) using the steady state of the experimentally measured membrane potential after current injection. We then fit the model membrane capacitance (which determines the membrane time constant) using the experimentally measured potential immediately after the onset of current injection. We fitted all traces independently (n = 3886), and used the median of the distributions for all neurons in the model. Membrane parameters resulted in a rheobase current of 150 pA for a model neuron in isolation.
 
 We fitted synaptic time constants to rise times of EPSPs (n = 382) obtained in paired-patch recordings (same as Figure 1D; Hemberger et al., 2019) using least squares and used the median for our model synapses. We converted experimentally measured EPSP amplitudes (same n = 382) to synaptic conductances (Figure 1D) using least squares and fitted a lognormal distribution via maximum likelihood estimation. When drawing strengths from the resulting lognormal distribution, we discarded and re-sampled conductances higher than the maximum conductance of all fitted EPSP amplitudes (67.8 nS, 21 mV). Inhibitory synaptic conductances were drawn from the same truncated lognormal distribution and scaled up by 8, resulting in currents 2.5 times stronger and a maximum IPSP amplitude of −21 mV on an isolated model neuron that has been depolarized to 50 mV.
 
-## Network
+### Network
 
 Our network model consisted of 93,000 excitatory neurons and 7000 inhibitory neurons that were randomly assigned a location on a square of side 2000 μm.
 
@@ -182,7 +301,7 @@ Neurons were connected randomly. The probability of connection between two given
 
 All strengths and delays were assigned independently for each connection. Neurons did not have autapses.
 
-## Simulations
+### Simulations
 
 Simulations were run using NEST 2.16 (Linssen et al., 2018) with a time step of 0.1ms. Each simulation containing 100 trials took between 30 and 45 min on an Intel(R) Xeon(R) Gold 6152 CPU @ 2.10 GHz.
 
@@ -192,13 +311,13 @@ Certain mean input levels (μin) could lead to self-sustaining activity (Figure 
 
 We analyzed all 6000 original simulations to identify sequences of spikes (Figure 2) and sub-sequences (Figure 4). A random selection of 900 simulations was analyzed to extract connectivity motifs (Figure 3A–D). A random selection of 2000 simulations was re-run with truncated connectivity (Figure 3F–H). To study the effect of external spikes on sub-sequences (Figure 5A, B), we re-ran a random selection of 2000 simulations where the gate of one randomly chosen sub-network received an additional external spike. To study how external spike parameters affected sub-sequences (Figure 5C–H, Figure 5—figure supplement 1), we selected 8 simulations and re-ran each one between 1142 and 3655 times while varying external spike strength and timing. To study the effect of coactivation of multiple-trigger neurons (Figure 6), we selected a representative simulation (same as Figure 4A) and re-ran it 7000 times with new randomly chosen triggers (but same input parameters, μin, and σin). We repeated this analysis on another 50 randomly chosen simulations re-ran 800 times each (Figure 6—figure supplement 1).
 
-## Simulation firing rates
+### Simulation firing rates
 
 We focused on capturing the mean firing rates from ex vivo and in vivo spontaneous activity ([0, 0.05] and [0.02, 0.09] spk/s, Hemberger et al., 2019) because they provide a clear baseline of uncorrelated variability for new incoming spikes. To compute the mean firing rate of each simulation, we took the average during the baseline periods (100 ms before each spike injection). Our averages include all neurons (excitatory and inhibitory) equivalent to a 2 × 2 mm slab of tissue (Figure 1A). Since experimental estimates are limited to those high-rate neurons that can be accessed and spike sorted in extracellular recordings (Fournier et al., 2018; Hemberger et al., 2019), comparing them to our model is not trivial. Along those lines, most excitatory neurons in our model produced none-to-few spikes (Figure 2—figure supplement 1E), and excluding them increases mean rates 10-fold (to 0.22–1.04 spk/s).
 
 As well as low average firing rates, our model also produces fluctuations of higher instantaneous firing rates reminiscent of the waves observed experimentally (Prechtl et al., 1997; Shew et al., 2015; Figure 2—figure supplement 1C, D). Convolving spike trains in our simulations with a 250-ms Gaussian window yields peak instantaneous firing rates one order of magnitude higher than their average (maximum firing rate per neuron, averaged across all neurons, 0.53–1.36 exc. spk/s, 1.7–3.7 inh. spk/s), and comparable to those observed in vivo under visual stimulation (Fournier et al., 2018).
 
-## Definition of followers
+### Definition of followers
 
 Every 400 ms, for 100 trials, we set the voltage of the trigger model neuron above the spike detection threshold, generating an instantaneous spike (trials). For each trial, we defined a window before spike injection (100 ms) and a window after spike injection (300 ms). We computed the mean firing rate for all windows before and after spike injection for all other neurons in the network and defined the difference in firing rate before and after as the firing rate modulation of each neuron (∆FR). We normalized ∆FR by dividing it by that expected from a neuron that never spiked before spike injection and that spiked precisely once after spike injection.
 
@@ -206,38 +325,46 @@ We defined a null distribution for firing rate modulation (∆FR) as the differe
 
 A higher number of trials per simulation would have allowed a better estimation of ∆FR and the detection of extra followers. However, we found that 100 trials detected the most reliable followers while limiting simulation times (see Methods, Simulations) and keeping our protocol and predictions experimentally relevant.
 
-## Lognormal fit bootstrap
+### Lognormal fit bootstrap
 
 We generated 50,000 bootstrapped samples of the probability that a neuron had at least one strong excitatory-to-excitatory connection (Figure 1F). A connection was strong if it fell between 50.6 and 67.8 nS, corresponding, respectively, to the top 99.7% of the original fitted lognormal distribution (Figure 1D) and the maximum possible strength.
 
 The number of strong connections sij of a model neuron i in bootstrap step j follows a Binomial distribution B(ni, pj), where ni is the total number of connections of neuron i, and pj is the probability that a connection falls within the strong weight range. To estimate pj we sampled 122 times, with replacement, from a set of 122 experimentally obtained EPSP amplitudes and fitted a new truncated lognormal. Our model neurons received a variable number of connections ni (see Methods, Network), which was well described by a discretized Gaussian distribution N(μ = 745, σ = 27). For each bootstrapped step j, we thus generated 1000 values of ni, drew one sample sij of each B(ni, pj), and calculated the ratio of all sij bigger or equal to 1.
 
-## Entropy of follower rank
+### Entropy of follower rank
 
-To compare the reliability of the order of follower activation to that seen in experiments, we used the same entropy-based measure as used first in experiments (Hemberger et al., 2019; Figure 2D). For every trial, followers were ordered by the time of their first spike and we calculated the entropy of follower identity for each rank:Hk=−∑inpiklog2pik
+To compare the reliability of the order of follower activation to that seen in experiments, we used the same entropy-based measure as used first in experiments (Hemberger et al., 2019; Figure 2D). For every trial, followers were ordered by the time of their first spike and we calculated the entropy of follower identity for each rank:
 
-where n is the number of followers, pik is the frequency with which follower i fired in rank k. The entropy Hk was normalized by the entropy of a uniform distribution:Hu=−∑in1nlog21n
+$$
+H_{k}=−\suminp_{ik}log_{2}p_{ik}
+$$
 
-A value of Hk=0 indicates that the same neuron fired in the rank k in all trials. Note that that this measure is especially sensitive to activations or failures of single followers early in a trial since they affect the ranks of all subsequent followers in that same trial. Due to our exploration of different firing rate levels, we often observed sequence failure (Figure 4) and numbers of followers (Figure 2F) much higher than the number of trials (100), both factors that limited our capacity to estimate order entropy accurately. Consequently, we limited our estimates to simulations with at least as many trials as followers and to trials where at least 25% of followers were present.
+where n is the number of followers, $p_{ik}$ is the frequency with which follower $i$ fired in rank $k$. The entropy $H_{k}$ was normalized by the entropy of a uniform distribution:
 
-## Spatial center-of-mass
+$$
+H_{u}=−\sumin\frac{1}{n}log_{2}\frac{1}{n}
+$$
+
+A value of $H_{k}=0$ indicates that the same neuron fired in the rank $k$ in all trials. Note that that this measure is especially sensitive to activations or failures of single followers early in a trial since they affect the ranks of all subsequent followers in that same trial. Due to our exploration of different firing rate levels, we often observed sequence failure (Figure 4) and numbers of followers (Figure 2F) much higher than the number of trials (100), both factors that limited our capacity to estimate order entropy accurately. Consequently, we limited our estimates to simulations with at least as many trials as followers and to trials where at least 25% of followers were present.
+
+### Spatial center-of-mass
 
 To visualize the spatial propagation of sequences, we calculated the center-of-mass of follower activations over time similar to the experimental data (see Figure 5A in Hemberger et al., 2019). We took the average follower XY location for those followers activating in a sliding window of 5 ms. The resulting X and Y traces were smoothed over using a Gaussian window of 15 ms.
 
-## K-modes clustering
+### K-modes clustering
 
 For each simulation, we summarized the activity of each follower as a single vector of 100 binary entries representing the presence (at least one spike) or silence of that follower in each of the trials (100 trials per simulation). We then applied k-modes clustering on each simulation separately. K-modes clustering is an unsupervised method for assigning data samples to K clusters. It is similar to k-means clustering, but each cluster centroid is instead defined by the number of matching values between sample vectors and thus performs well for categorical (binary) data. Manual inspection suggested that followers were well clustered in groups of 5–10 neurons. Since we applied unsupervised clustering to 6000 simulations with very different numbers of followers each (see examples in Figure 6D), we took K = n/6 for each simulation, where n is the total number of followers detected in that simulation. The algorithm had access only to spiking activity and not to the connectivity between followers. We used the implementation provided in the python package k-modes (https://pypi.org/project/kmodes).
 
-## Graph visualization
+### Graph visualization
 
 All graphs of strong connections (Figures 4B–D—6G) were laid out using Graphviz dot and do not represent the spatial location of model neurons unless otherwise specified.
 
-## Electrophysiology
+### Electrophysiology
 
 All electrophysiological recordings used to fit the models were described in the original experimental study (Hemberger et al., 2019).
 
 Adaptation index was computed as the ratio of inter-spike-interval between the last two spikes and the interspike interval of the first two spikes in whole-cell patch current-clamp recordings under a constant current injection for 1 s. The current value was two to five times the current value that elicited a single spike for each particular neuron.
 
-## Data and software availability
+### Data and software availability
 
 All code used for model simulations and analysis has been deposited at https://github.com/comp-neural-circuits/tctx, (copy archived at swh:1:rev:4fcd1a195a64015e777e55f582e8df35c4913993; Riquelme, 2022). All experimental data have been previously published in Hemberger et al., 2019. Data used to fit the model parameters have been deposited in https://doi.org/10.6084/m9.figshare.19763017.v1.

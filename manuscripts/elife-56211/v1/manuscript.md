@@ -46,7 +46,377 @@ We assessed four patients (all right-handed males; mean age 58.25 years, SD ±2
 
 **Figure 1.:** (A) Two researchers were located in Room one which was adjacent to Room two where the participant slept. The participant was woken up at various times during their night’s sleep to report their thoughts in that moment. PSG recordings informed the decisions about when to awaken the participant to ensure sampling during non-rapid eye movement (NREM) and rapid eye movement (REM) sleep. We used a Bluetooth intercom system equipped with a camera for continuous visual monitoring and communication with the participant. (B) The number of total awakenings was not different between the patients (HPC) and control (CTL) participants. (C) There were also no significant group differences in the proportion of awakenings from NREM and REM sleep. (D) In contrast, the patients reported significantly fewer dreams than the control participants, expressed here as the total number of dreams divided by the total number of awakenings (+ / - 1 SEM; p=0.028). (E) The few dreams the patients had were significantly less rich in content compared to those of the control participants (n = 3 patients, as one patient had no dreams at all and was not included in this analysis; + / - 1 SEM; p=0.018). For other measures see Table 2.
 
+**Table 1.**
+ Demographic characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Age (years)</th>
+      <th>Chronicity (years)</th>
+      <th>LHPC volume (mm3)</th>
+      <th>RHPC volume (mm3)</th>
+      <th>LHPC % volume loss relative to CTLa</th>
+      <th>RHPC % volume loss relative to CTLa</th>
+      <th>WASI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CTL</td>
+      <td>59.20 (15.89)</td>
+      <td>n.a.</td>
+      <td>3173.18a (338.89)</td>
+      <td>3285.91a (300.81)</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>14.50 (2.37)</td>
+    </tr>
+    <tr>
+      <td>HPC1</td>
+      <td>61</td>
+      <td>6</td>
+      <td>2506</td>
+      <td>2803</td>
+      <td>−21.03%</td>
+      <td>−14.70%</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>HPC2</td>
+      <td>72</td>
+      <td>8</td>
+      <td>1736</td>
+      <td>1698</td>
+      <td>−45.29%</td>
+      <td>−48.32%</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>HPC3</td>
+      <td>72</td>
+      <td>11</td>
+      <td>2607</td>
+      <td>2755</td>
+      <td>−17.84%</td>
+      <td>−16.16%</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>HPC4</td>
+      <td>28</td>
+      <td>11</td>
+      <td>2819</td>
+      <td>2804</td>
+      <td>−11.16%</td>
+      <td>−14.67%</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
+
+_All patients (HPC1-4) and control participants (CTL) were right-handed males. Mean and standard deviation in parentheses are shown for control participants and individual data for the four patients. aThe control group consisted of eleven participants (mean age 55.64 years ± 16.47). LHPC = left hippocampus; RHPC = right hippocampus; n.a. = not applicable; WASI = Wechsler Abbreviated Scale of Intelligence (Wechsler, 1999) Matrix Reasoning subtest scaled score. See Supplementary file 1 and Supplementary file 2 for additional neuropsychological and sleep quality data of the participants._
+
 Table 2 shows the group summary data and the results of the between-group statistical analyses for each of the measures that are described below. While, for the sake of economy, we present the findings in terms of these group comparisons, given the small sample of these rare patients, caution should be exercised in interpreting the results. We, therefore, include the individual patient data in Tables 1 and 2 permitting the patients to be considered also as a series of case studies.
+
+**Table 2.**
+ Dream characteristics.Table 2—source data 1.This file contains the individual participant data for every dream-related measure that is summarised in Table 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>HPC</th>
+      <th>CTL</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th rowspan="2">HPC1</th>
+      <th rowspan="2">HPC2</th>
+      <th rowspan="2">HPC3</th>
+      <th rowspan="2">HPC4</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>M (SD)</th>
+      <th>M (SD)</th>
+      <th>U</th>
+      <th>ES</th>
+      <th>P-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>General analysesa</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of awakenings</td>
+      <td>6.75 (2.75)</td>
+      <td>6.90 (1.97)</td>
+      <td>18.5</td>
+      <td>0.11</td>
+      <td>0.829</td>
+      <td>10.00</td>
+      <td>4.00</td>
+      <td>5.00</td>
+      <td>8.00</td>
+    </tr>
+    <tr>
+      <td>Proportion of awakenings during NREM</td>
+      <td>0.73 (0.09)</td>
+      <td>0.67 (0.13)</td>
+      <td>14.0</td>
+      <td>0.47</td>
+      <td>0.383</td>
+      <td>0.80</td>
+      <td>0.75</td>
+      <td>0.60</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>Proportion of awakenings during REM</td>
+      <td>0.23 (0.17)</td>
+      <td>0.33 (0.13)</td>
+      <td>13.0</td>
+      <td>0.55</td>
+      <td>0.309</td>
+      <td>0.00c</td>
+      <td>0.25</td>
+      <td>0.40</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Number of probes per awakening</td>
+      <td>3.82 (1.75)</td>
+      <td>4.22 (1.13)</td>
+      <td>17.0</td>
+      <td>0.23</td>
+      <td>0.671</td>
+      <td>5.80</td>
+      <td>3.50</td>
+      <td>1.60</td>
+      <td>4.38</td>
+    </tr>
+    <tr>
+      <td>Dream frequency</td>
+      <td>0.23 (0.17)</td>
+      <td>0.67 (0.28)</td>
+      <td>4.5</td>
+      <td>1.45</td>
+      <td>0.028</td>
+      <td>0.40</td>
+      <td>0.25</td>
+      <td>0.00</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Proportion of dreams during NREM</td>
+      <td>0.38 (0.48)</td>
+      <td>0.52 (0.20)</td>
+      <td>14.5</td>
+      <td>0.43</td>
+      <td>0.415</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>Proportion of dreams during REM</td>
+      <td>0.38 (0.48)</td>
+      <td>0.48 (0.20)</td>
+      <td>16.0</td>
+      <td>0.31</td>
+      <td>0.555</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>Proportion of no dreams</td>
+      <td>0.65 (0.31)</td>
+      <td>0.21 (0.24)</td>
+      <td>4.0</td>
+      <td>1.52</td>
+      <td>0.022</td>
+      <td>0.60</td>
+      <td>0.75</td>
+      <td>1.00</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Proportion of blank dreams</td>
+      <td>0.13 (0.25)</td>
+      <td>0.12 (0.15)</td>
+      <td>15.5</td>
+      <td>0.35</td>
+      <td>0.496</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>Overall qualitative attributesb</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of informative words</td>
+      <td>43.17 (16.06)</td>
+      <td>95.55 (55.20)</td>
+      <td>7.0</td>
+      <td>0.81</td>
+      <td>0.176</td>
+      <td>55.50</td>
+      <td>25.00</td>
+      <td>.</td>
+      <td>49.00</td>
+    </tr>
+    <tr>
+      <td>Complexity</td>
+      <td>2.67 (0.58)</td>
+      <td>3.32 (0.70)</td>
+      <td>5.5</td>
+      <td>1.00</td>
+      <td>0.098</td>
+      <td>3.00</td>
+      <td>2.00</td>
+      <td>.</td>
+      <td>3.00</td>
+    </tr>
+    <tr>
+      <td>Vividness</td>
+      <td>3.10 (0.79)</td>
+      <td>3.88 (1.08)</td>
+      <td>7.5</td>
+      <td>0.75</td>
+      <td>0.203</td>
+      <td>2.80</td>
+      <td>4.00</td>
+      <td>.</td>
+      <td>2.50</td>
+    </tr>
+    <tr>
+      <td>Bizarreness</td>
+      <td>1.58 (1.01)</td>
+      <td>2.27 (0.95)</td>
+      <td>8.0</td>
+      <td>0.70</td>
+      <td>0.232</td>
+      <td>2.75</td>
+      <td>1.00</td>
+      <td>.</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Emotional valence</td>
+      <td>2.75 (0.25)</td>
+      <td>2.81 (0.22)</td>
+      <td>13.0</td>
+      <td>0.19</td>
+      <td>0.720</td>
+      <td>2.75</td>
+      <td>3.00</td>
+      <td>.</td>
+      <td>2.50</td>
+    </tr>
+    <tr>
+      <td>Proportion of self-references</td>
+      <td>0.84 (0.29)</td>
+      <td>0.90 (0.19)</td>
+      <td>15.0</td>
+      <td>0.00</td>
+      <td>1.000</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>.</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>Content characterizationb</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Internal (episodic) details</td>
+      <td>4.08 (1.47)</td>
+      <td>9.13 (3.56)</td>
+      <td>2.0</td>
+      <td>1.54</td>
+      <td>0.028</td>
+      <td>5.75</td>
+      <td>3.00</td>
+      <td>.</td>
+      <td>3.50</td>
+    </tr>
+    <tr>
+      <td>External (semantic/other) details</td>
+      <td>0.17 (0.29)</td>
+      <td>1.07 (1.60)</td>
+      <td>8.5</td>
+      <td>0.64</td>
+      <td>0.258</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>.</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>Content score</td>
+      <td>5.75 (0.90)</td>
+      <td>13.10 (6.49)</td>
+      <td>1.0</td>
+      <td>1.74</td>
+      <td>0.018</td>
+      <td>6.75</td>
+      <td>5.00</td>
+      <td>.</td>
+      <td>5.50</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_M = mean; SD = standard deviation; ES = effect size; HPC = hippocampal-damaged patients; CTL = control participants; NREM = non-rapid eye movement sleep; REM = rapid eye movement sleep; HPC1−4 = each individual hippocampal-damaged patient. P-values relate to between-group non-parametric Mann-Whitney U tests with significant differences depicted in bold. aAll patients included; means are per awakening. bHCP3, who had no dream reports at all, was excluded; means are per dream report. cFor HCP1, during 20% of his awakenings towards the end of the night, the EEG cap stopped functioning and so designation to NREM or REM sleep was not possible. Hence, it could be that this zero score for REM awakenings is an underestimate, given that REM is more common in the latter part of the night. Note that his dream reports from these awakenings were still included in the dream qualitative attributes and content analyses. See Table 2—source data 1 file for the data underpinning this table._
 
 The number of awakenings was not different between patients and control participants (Figure 1B). Furthermore, there were no significant group differences in the proportion of awakenings from NREM and REM sleep (Figure 1C). After an awakening, participants were instructed via a two-way intercom to describe everything that was going through their mind before they were woken up in that moment. They were occasionally probed (e.g. Can you tell me more about that?) to obtain further information (Materials and methods). The amount of probing did not differ between groups. Dream reports were subsequently transcribed for further analyses (Materials and methods; Figure 2).
 
@@ -80,7 +450,7 @@ In summary, while the functional role of dreaming is as yet unknown, we conclude
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 For all patients, hippocampal lesions resulted from leucine-rich glycine-inactivate-1 antibody-complex limbic encephalitis (LGI1-antibody-complex LE; Miller et al., 2017; Miller et al., 2020). This study was conducted a median of 9.5 years after hippocampal damage occurred (mean 9 years ± SD 2.45). Patients (HPC) and the dream control participants (CTL) were closely matched on a number of demographic factors: gender (all males), age (Table 1; MWU = 19.00, p=0.89, Cohen’s d = 0.08), body mass index (HPC mean 27.68 ± 2.51; CTL 25.79 ± 2.41; MWU = 14.00, p=0.40, Cohen’s d = 0.47) and general cognitive ability assessed with the Matrix Reasoning subtest of the Wechsler Abbreviated Scale of Intelligence (WASI; Wechsler, 1999; Table 1; MWU = 7.00, p=0.06, Cohen’s d = 1.13). Participants had no history of psychiatric disorders (e.g., depression, anxiety). Each participant gave written informed consent for participation in the study, for data analysis and for publication of the study results. ‘Materials and methods’ were approved by the University College London Research Ethics Committee.
 
@@ -94,7 +464,7 @@ As dreaming might be influenced by sleep quality (Schredl, 2009), we confirmed t
 
 In order to assess sleep-wake patterns, participants wore an Actiwatch 2 (Phillips Respironics Mini-Mitter) for seven consecutive days and nights on their non-dominant wrist. Light and activity data were collected in 30 s epochs and analyzed using the Philips Actiware 6.0.2 software package (Respironics Actiware 6.0.2). Data were scored based on available guidelines (Chow et al., 2016), with a medium sensitivity (40 activity cpm), with sleep onset occurring after an immobility period of 10 min, and rise time following an increase in activity level and in light level above 1.0 μW/cm2. Variables of interest were sleep efficiency (in percent), total sleep time (in minutes), sleep fragmentation index (an index of restlessness), night-to-night variability for sleep duration (Lemola et al., 2013), average bedtime and mean sleep midpoint (clock time halfway between bedtime and rise time).
 
-## Procedure
+### Procedure
 
 Participants slept in the same room on both nights. Two sleep researchers were located in a separate, nearby, room one of whom performed sleep staging in real time during online visualization of noise-reduced EEG recordings. An independent, registered sleep technologist, blind to participant group membership and the study aims, later off-line scored the PSG recordings to verify the sleep staging, in line with the revised American Academy of Sleep Medicine manual (Berry et al., 2015).
 
@@ -104,7 +474,7 @@ Once a decision to awaken a participant was made, after a 3 min period without s
 
 Participants were occasionally probed (e.g. Can you tell me more about that?) to obtain further information. Probing followed a structured protocol. This involved first asking participants to freely describe what was in their minds immediately after awakening. Whenever a participant’s response was not clear or only covered parts of the dream, the experimenter asked general follow-up questions, which could echo information already provided (e.g. ‘…It was a conversation happening in the locker room’. Can you give us any more specifics about the conversations or anything else that you recall?). Crucially, this probing never involved leading the participant, as can be observed in the examples provided in Figure 2. This approach is very similar to that of well-established tasks that assess autobiographical memory recall (Levine et al., 2002) and scene imagination ability (Hassabis et al., 2007) during wake, where probing in this manner is widely accepted.
 
-## Dream analyses
+### Dream analyses
 
 Transcriptions of dream reports were analysed by a researcher who was blind to participant group membership. Double scoring was performed on 20% of the data by a second researcher. We assessed across-experimenter agreement with inter-class correlation coefficients, with a two-way random effects model looking for absolute agreement, which indicated excellent agreement between the experimenters' scoring (range: 0.9–1.0).
 
@@ -114,10 +484,10 @@ We used two other scoring methods that are often employed for examining complex 
 
 A second method we employed, the Scene Construction Test (Hassabis et al., 2007), is usually used for scoring the content of imagined scenes. Here we focused on the content score, which comprises four subcomponents: Entities Present (objects or people); Spatial References (places or spatial relationships between entities); Sensory Descriptions (details that describe an entity); Thought/emotion/action (thoughts, emotional states, action descriptions). The content score is the sum of these subcomponents.
 
-## Sleep physiology
+### Sleep physiology
 
 All participants underwent PSG in their homes using a Brain Products system (GmbH, Gilching, Germany). The purpose of the PSG recording was to ensure that we awakened participants during both NREM and REM sleep, and in a similar manner for the patient and control groups. Two trained sleep researchers arrived at a participant’s home approximately three hours before the usual bedtime to set up for the PSG. Equipment was then removed by a researcher the following morning upon awakening. PSG was recorded using a 24-electrode cap (EasyCap; based on the international 10–20 system) including the following EEG channels: Fp1, Fp2, F3, F4, C3, C4, P3, P4, O1, O2, F7, F8, T7, T8, P7, P8, Fz, Cz, Pz, Oz, FT9, FT10 referenced to average mastoids (M1 and M2) (sampling rate = 500 Hz). This montage also included two bipolar electrooculogram channels (EOG), two electromyogram channels (EMG) and two electrocardiogram channels (ECG). Sleep staging was performed based on EOG, EMG and the following derivations: F3/M2, F4/M1, C3/M2, C4/M1, O1/M2, O2/M1.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed with SPSS 25.0 (IBM Corporation). Given that the data did not meet the assumptions of normality and homogeneity necessary for parametric statistics, between-group analyses were performed using non-parametric Mann-Whitney U tests. We also calculated the effect sizes using non-parametric Cohen’s d for all tests performed. In all analyses, the significance level was set at 0.05.

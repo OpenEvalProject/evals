@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00vpwhm04 Center for Excellence in Brain Science and Intelligence Technology, Institute of Neuroscience, Chinese Academy of Sciences Shanghai China
-2. https://ror.org/029819q61 Chinese Institute for Brain Research Beijing China
-3. https://ror.org/05qbk4x57 University of Chinese Academy of Sciences Beijing China
+1. Center for Excellence in Brain Science and Intelligence Technology, Institute of Neuroscience, Chinese Academy of Sciences Shanghai China ([ROR:00vpwhm04](https://ror.org/00vpwhm04))
+2. Chinese Institute for Brain Research Beijing China ([ROR:029819q61](https://ror.org/029819q61))
+3. University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
 
 † Corresponding author
 
@@ -29,29 +29,129 @@ To investigate the mixed selectivity and neural dynamics shaped by concurrent se
 
 ## Results
 
-## Mixed tuning of M1 single neurons during flexible manual interception task
+### Mixed tuning of M1 single neurons during flexible manual interception task
 
 Three monkeys (Macaca mulatta, C, G, and D, male, weight 7–10 kg) were trained to perform a delayed manual interception task (Figure 1A), which was modified from the task utilized in our recent studies (Li et al., 2022; Li et al., 2018). To initiate a trial, the monkey needed to hold the center dot of a standing touch screen for 600 ms. Then, a peripheral target appeared, either stationary or rotating around the center dot at a constant angular velocity. The monkey was required to wait during a randomized delay (400–800 ms) until the central dot turned dark (GO signal) and then to immediately reach to the target. Once the monkey touched the screen (Touch) again, the target stopped and another dot showed the touched location, in red for a successful interception or in blue for a failure. The error tolerance between the target and the touched location (reach endpoint) was 3 cm. There were five target-motion conditions, consisting of clockwise (CW) conditions - 240 °/s and –120 °/s, counterclockwise (CCW) conditions 120 °/s and 240 °/s, along with 0 °/s (static) condition. We define the magnitude and direction of the target’s velocity as TVmag (e.g. 0 °/s, 120 °/s, and 240 °/s) and TVdir (namely CCW and CW), respectively. These target-motion conditions were interleaved trial by trial, and the initial location of the target was random. The reach endpoints of a well-trained monkey distributed uniformly around the circle (Figure 1B, Rayleigh’s test: p=0.36; data from monkey C, 772 correct trials in one session). Because the reach direction was defined as the angle of the reach endpoint, for simplicity, we divided the circular space equally into eight sectors (45° per each) and grouped trials according to the eight reach directions and five target-motion conditions.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig1-v1.jpg)
+
+**Figure 1.:** (A) Task diagram. In each trial, the monkey first holds the center dot for 600ms (Hold), then a target appears (Target on), after 400–800ms delay the center dot turns dark (GO), immediately the monkey moves its hand to reach to the target (Touch). The movement time (from GO to Touch) is required to be within 800ms, otherwise the trial will be aborted. The feedback dot, which is presented at the touched location of the screen, will be in red for success or in blue for failure. (B) Distribution of touch endpoints. Left panel shows fifteen reaching-up example trials in five target-motion conditions, three trials in each condition. The squares mark the touch endpoints, while the circles and triangles are the target onset and stop location. The five target-motion conditions (–240°/s, - 120°/s, 0°/s, 120°/s, and 240°/s) are indicated in five colors (purple, blue, green, yellow, and red). Target onset location is randomly distributed. Right panel shows the touch endpoints of all trials, each point represents a trial, colored according to target-motion conditions. The distribution was uniform around the circle (monkey C 772 trials, Rayleigh’s test, p=0.36). (C) Implanted locations of microelectrode array in the motor cortex of the three well-trained monkeys. Neural data were recorded from the cortical regions contralateral to the used hand. AS, arcuate sulcus; CS, central sulcus. (D) Three example neurons with PD shift, gain modulation, and offset addition. The peri-stimulus time histograms (PSTH) show the activity of example neurons when monkeys reached to upper areas in five target-motion conditions. The solid lines represent the trial-averaged firing rates, the colored shadow represents the standard error. The gray shadow indicates the time window between MO-100 ms and MO +100ms. (E) The directional tuning curves of the three example neurons with PD shift, gain, and addition modulation around movement onset (MO ±100ms, adjusted R2: 0.70, 0.84, and 0.60). Dots and bars denote the average and standard error of firing rates, colored according to target-motion conditions.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The condition-averaged hand trajectory and touch endpoint distribution was averaged in five target-speed and eight reach-direction conditions (five colors) referred to target stopped location, including monkey C 2994 successful trials from four sessions. Hand trajectory was collected by optical camera (VICON Inc) with an infrared marker on the fingertip from GO to touching, and touch endpoint was collected by touchscreen. (B) The condition-averaged hand velocity was calculated from hand trajectory data (same in a), aligning to GO signal, with dots labelling GO (black), average movement onset (MO) and touch time (five color). Single-trial movement onset is defined as the moment of the first time rising to 5% of maximum hand velocity. The correlation coefficient of hand velocity profiles is 0.97±0.05, mean ± sd. of 40 conditions. (C) The trials distribution of peak hand velocity in five target-speed conditions (same in b). The peak hand velocity of static-speed condition were smaller than 120°/s and 240°/s conditions (ANOVA p-value of 0°/s vs. 120°/s, 120°/s vs. 240°/s were <10–6,<10–20). The hand velocity between CCW and CW had little difference (ANOVA p-value of CCW vs. CW was 0.45 within 120°/s and 10–4 within 240°/s). (D, E) The trials distribution in five target-speed conditions of reaction time and movement time (RT and MT, same sessions from monkey C). The temporal duration of static-speed condition were larger than 120°/s and 240°/s conditions (ANOVA p-value of 0°/s vs. 120°/s, 120°/s vs. 240°/s were <10–8 and<10–9 for RT, and <10–4 and<10–12 for MT). The duration between CCW and CW had little difference (ANOVA test). (F - G) The condition-averaged hand trajectory and velocity of monkey G 2559 successful trials from four sessions. (H - J) The trials distribution of peak hand velocity in five target-speed conditions, RT and MT (same sessions from monkey G, three starts mean ANOVA test p<0.01).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Each column respectively showed threes example neurons with PD shift, gain modulation and offset modulation from monkey C (this figure), monkey G (Figure 1—figure supplement 3), and monkey D (Figure 1—figure supplement 4). The radar subplots in the first row showed the neuronal reach-direction tuning curves in five target-speed conditions (red, yellow, green, blue, and purple, for CCW 120, 240°/s, static, CCW 120, and 240°/s) at movement onset (MO ± 0.1 s), and short lines outside of the tuning curves labeled preferred directions. The next eight rows showed raters and peristimulus time histograms (PSTH) of example neuron activity to eight reaching areas (labeling in left, collecting the trials with touch endpoints in 45°) in five-target-speed conditions aligned to MO.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig1-figsupp3-v1.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig1-figsupp4-v1.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) The example condition-averaged neuronal activity with eight reach directions and five target speeds, fitted by PD shift, gain, offset, and full models. Dots and bars showed the condition average neuronal activity. Tuning curves were fitting results labeled with adjusted R-square at the top right. (B) The comparison of fitting goodness among five models (above four and simple model only fits reach direction with cosine function). Each dot shows the adjusted R-square of a single neuron (monkey C, N=594; monkey D, N=178; monkey G, N=390; in blue, red and yellow, respectively). Black bars are the mean of adjusted R-square (N=1162, simple model: 0.34±0.25, gain model: 0.46±0.22, PD shift model: 0.47±0.24, Addition model: 0.41±0.26, full model: 0.55±0.24, mean ± sd.). The adjusted R-squares of the full model are obviously larger than other models (Wilcoxon signed rank test, one-tailed, p<0.01).
 
 We recorded neural data with Utah arrays from monkeys C, G, and D (implanted sites are shown in Figure 1C, and all datasets are listed in Supplementary file 1) and hand trajectories from monkeys C and G (Figure 1—figure supplement 1), during the interception task. The hand trajectory was launched to the final interception location. The temporal profiles of hand speed were unimodal bell-like curves and similar across target-motion conditions (correlation coefficients is 0.97±0.05 for monkey C and 0.99±0.02 for monkey G, mean ± sd).
 
 Notably, we found that neuronal directional tuning during peri-movement period (MO ± 100ms, MO for movement onset) was modulated by target motion, according to our statistical criteria, mainly in three ways: preferred direction (PD) shift, gain modulation, and offset addition (Table 1, Figure 1—figure supplements 2–4; see Materials and methods). We determined these modulations on the basis of the classical cosine tuning model (Georgopoulos et al., 1982) and several previous studies (Bremner and Andersen, 2012; Pesaran et al., 2010; Sergio et al., 2005). Specifically, PD-shift neurons had their PDs shifted in moving-target conditions compared to the static-target condition. As illustrated by the example neuron (Figure 1D, PD shift), whose PDs corresponding to CCW conditions (red and yellow) and CW conditions (blue and purple) exhibited obvious differences, TVdir rather than TVmag dominated this modulation. Gain-modulation neurons exhibited reach-direction tuning multiplied by target velocity: while their directionality remained invariant, the neuronal responses at PD differed across target-motion conditions. This modulation was dominated by TVdir as well. The turning curves of the example neuron (Figure 1D, Gain) had higher responses at PD in CW conditions (blue and purple) than in the others (green, yellow, and red), indicating a varying tuning depth for reach direction. Neurons with addition modulation underwent changes of offset activity induced by target velocity (both TVdir and TVmag). As shown by the example neuron (Figure 1D, Addition), this effect was roughly the same in all reach directions.
 
+**Table 1.**
+ Ratio of mixed selectivity neurons around movement onset.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Units across sessions</th>
+      <th>Gain (G)</th>
+      <th>PD shift (S)</th>
+      <th>Addition (A)</th>
+      <th>None</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monkey C,7 sessions, N=84.9 ± 15.9</td>
+      <td>46.9 ± 15.9%</td>
+      <td>79.0 ± 8.9%</td>
+      <td>61.9 ± 14.5%</td>
+      <td>6.5 ± 6.2%</td>
+    </tr>
+    <tr>
+      <td>Monkey G,4 sessions, N=97.5 ± 17.7</td>
+      <td>29.3 ± 4.9%</td>
+      <td>51.6 ± 29.1%</td>
+      <td>25.9 ± 8.3%</td>
+      <td>25.5 ± 15.8%</td>
+    </tr>
+    <tr>
+      <td>Monkey D,4 sessions, N=44.5 ± 7.5,</td>
+      <td>45.6 ± 13.8%</td>
+      <td>74.4 ± 8.8%</td>
+      <td>49.1 ± 9.1%</td>
+      <td>10.8 ± 5.4%</td>
+    </tr>
+    <tr>
+      <td>RNN,N=200, 100 models</td>
+      <td>46.5 ± 4.6%</td>
+      <td>40.7 ± 4.2%</td>
+      <td>57.9 ± 8.9%</td>
+      <td>14.2 ± 4.2%</td>
+    </tr>
+  </tbody>
+</table>
+
+_Single neurons were classified by modulation patterns (more details in Materials and methods). The first column shows the subject, the number of recording sessions, and the number of isolated units (mean ± sd.). Other columns show the ratio of units with any target-velocity modulations in all active units. ‘None’ means the units were not specifically tuned by either reach direction nor target velocity._
+
 The activity of these example neurons could be well described by PD shift, gain, and additive models (Figure 1E; see Materials and methods), respectively. Nevertheless, it was difficult to classify all neurons with mixed sensorimotor selectivity into one of these three groups exclusively, because many of them experienced a mixture of two or three of above modulations. We found that the adjusted R2 of a full model (0.55±0.24, mean ± sd.) can be higher than that of the PD shift (0.47±0.24), gain (0.46±0.22), additive (0.41±0.26), and simple models (only reach direction, 0.34±0.25) for three monkeys (1162 neurons, rank-sum test, one-tailed, p<0.01, Figure 1—figure supplement 5). These target-motion modulations on neuronal directionality suggested the participation of sensory signals in shaping neural dynamics during interception execution.
 
-## Coding of sensory and motor information in neural populations
+### Coding of sensory and motor information in neural populations
 
 To quantify target motion information embodied in neural response of the motor cortex, we performed a series of decoding analyses on the neural data from monkey C (n=95, 772 correct trials). To begin with, we trained a support vector machine (SVM) classifier for target-motion conditions (chance level: one in five) and another for reach directions (chance level: one in eight; see Materials and methods) on neural data. As Figure 2A shows, the decoding accuracy of target-motion condition increased quickly and peaked at over 70% around GO, while the decoding accuracy of reach direction climbed in an approximately linear manner and reached a plateau of about 80% before MO. These results were stable on the data of the other two monkeys and the pseudo-population of all three monkeys (Figure 2—figure supplement 1) and reconfirmed by the continuous decoding results with support vector regressions (Figure 2—figure supplement 2), suggesting that target motion information existed in M1 throughout almost the entire trial. According to the demixed PCA (dPCA; Kobak et al., 2016) results, the reach-direction components occupied high ranks; although the target-velocity components explained few variance, the interaction components were non-negligible (Figure 2—figure supplement 3). This implies that the target motion information was intertwined with reach-direction information, rather than being processed independently and in parallel.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig2-v1.jpg)
+
+**Figure 2.:** (A) The decoding accuracy (SVM with 10-fold cross-validation) of reach direction (black line) and target velocity (blue line) by population activity (monkey C, n=95, 772 trials), is aligned to target on (TO), GO, and movement onset (MO). The dash-dotted lines are chance level of decoding reach direction (black, one in eight) and target velocity (blue, one in five). The shaded area is the standard deviation of the decoding accuracy for 10 permutations. (B) The left panel shows the performance of reach-direction decoder (chance level: one in eight) transferred between different target-motion conditions. The SVM decoder was built on randomly selected 100 trials in training dataset and tested in another 100 trials from a dataset of different conditions (CCW vs. CW, 120 vs 240, static vs. motion). The distributions of decoding accuracy were from 1000 repetitions and compared with one tailed t-test (p<0.01, with three stars). The right panel shows the performance of target-velocity decoder (chance level: one in five) in different reach-direction conditions. The accuracy distribution was also obtained from 1000 repetitions. (C) The explained variance and representation of the principal components (PCs). The first row shows the explained variance of each PC (cumulatively over 70%). The second row shows the PCs’ fitting goodness (R2PCs) of reach direction and target velocity in four epochs. (D) Directional tuning curves of the PCs. Each row shows the directional tuning of one PC (the first three PCs in C) in four epochs. Each dot represents a trial, tuning curves are averaged in eight reach directions, and PDs of PCs are indicated by the short lines in the top of subplot by a weighted sum of response. The colors of the lines and dots mean the target-motion conditions, as the same as the legend on the left. The goodness of fitting reach direction (R2DirVel) for the single-trial PCs under single target-motion conditions is shown by mean ± sd. across conditions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) The temporal decoding accuracy (SVM with 10-fold cross-validation) of reach direction (black line) and target speed (blue line) by pseudo-population activity (merged Monkey C, D, G, and all monkeys), is aligned to target on (TO), GO, and movement onset (MO). The dash-dotted lines are chance level of decoding reach direction (black, one in eight) and target speed (blue, one in five). The shaded area is the standard deviation of the decoding accuracy for 10 repetitions. (E–H) The left panel shows the performance of reach-direction decoder (one in eight) transferred between different target-motion conditions. The SVM decoder was built on randomly selected 100 trials in training dataset and tested in another 100 trials from a dataset of different conditions (CCW vs. CW, static vs. motion, 120 vs 240). The distributions of decoding accuracy were from 1000 repetitions and compared with one tailed t-test (p<0.01, with three stars). The right panel shows the performance of target-speed decoder (one in five) in different reach-direction conditions. In this case, reach direction is grouped by eight equal sectors (each 45°), and for each condition 60 trials were randomly selected for training and testing. The accuracy distribution was also obtained by 1000 repetitions.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The decoding accuracy (support vector regression, SVR with 10-fold cross-validation) of reach direction (black line) and simultaneous target direction (blue line) on population activity (monkey C, n=95, 772 trials), is aligned to target on (TO), GO, and movement onset (MO). The dotted lines represent the chance level of decoding reach direction (black) and target direction (blue) using data with shuffled trial labels. The line and shaded area indicate the mean and standard error of the decoding accuracy for trials. (B) Results of unsupervised dimensionality reduction on the example dataset. Each subplot shows the directional tuning of one component at movement onset (PCAs are the same with Figure 2D). Each dot represents a trial, and tuning curves are averaged by eight reach directions and colored by target-motion conditions. The short lines at the top of the subplot show corresponding PDs by a weighted sum of response. (C) Decoders generalize between conditions in several epochs. The first row shows the performance of reach-direction decoder (chance level: one in eight) transferred between different target-motion conditions. The SVM decoder was built on randomly selected 100 trials in training dataset and tested in another 100 trials from a dataset of different conditions (CCW vs. CW, 120 vs 240, static vs. motion). The distributions of decoding accuracy were from 1000 repetitions and compared with one tailed t-test (p<0.01, with three stars). The second row shows the performance of target-speed decoder (chance level: one in five) in different reach-direction conditions. In this case, reach directions are grouped by eight equal sectors (each 45°), and for each condition 60 trials were randomly selected for training and another 60 (?) for testing. The accuracy distribution was also obtained from 1000 repetitions. (D) The neural states across epochs. In this plane spanned by the first two PCs, the dots represent the single-trial neural states in color corresponding to reach directions (first row) or target speed (second row). The explained variance is marked on the corresponding axes. The goodness of fitting ellipses (R2Ellipse) for the state dots is shown as mean ± sd across single target-motion conditions.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Neural data were merged by target-speed modulated units (N=480, K=600 trials, T=8, bin = 50 ms, from 6 sessions of monkey C) and were averaged into 40 conditions (NKT = [480,40,8]) to do dPCA (Kobak et al., 2016). The condition independent components are colored as reach direction, and the interaction components are colored as target-motion conditions. (B) Summary dPCA components variance for three monkeys merged datasets. (C) Neural states in ‘reach-direction subspace’, ‘target-velocity subspace’, and ‘interception subspace’. We used dPCA components with different features to construct three subspaces (same data in A, reach-direction space #3, #4, #5; target-velocity space #10, #15, #17; interaction space #6, #11, #12), and we projected trial-averaged data into these orthogonal subspaces using different colormaps. This approach allowed us to obtain a ‘potent subspace’ coding reach direction and a ‘null space’ for target velocity. The results showed that the reach-direction subspace effectively represented the reach direction. However, while the target-velocity subspace encoded the target velocity information, it still contained reach-direction clusters within each target-velocity condition, corroborating the results of the addition model in the main text (Figure 4). The interaction subspace revealed that multiple reach-direction rings were nested within each other, similar to the findings from the gain model (Figures 3 and 4). The interaction subspace also captured more variance than target-velocity subspace, consistent with our PCA results, suggesting the target-velocity modulation primarily coexists with reach-direction coding. Furthermore, we explored alternative methods to verify whether orthogonal subspaces could effectively separate the reach direction and target velocity. We could easily identify the reach-direction subspace, but its orthogonal subspace was relatively large, and the target-velocity information exhibited only small variance, making it difficult to isolate a subspace that purely encodes target velocity.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) The first three dimension of the condition-averaged neural trajectory (Monkey C, n=95, 40 conditions) in two periods. The neural data was N*KT (N for 95 neurons, K for 40 conditions combined with T=10 bins, bin length 50 ms, 40 conditions contain a combination of five target speeds and eight reach directions), and reduced neural dimension N to explain KT with PCA (explained variance of PC labeling in parentheses). Left column is delay period (TO to TO +500 ms, TO means target onset), with triangles and circles labeling condition-averaged TO and GO. Right column is peri-movement period (GO to GO +500 ms), with circles and squares labeling GO and movement onset (MO). The same neural trajectory is plotted in two colormaps with target-motion conditions (up row) and reach directions (down row). Black arrows mark the direction of temporal evolution. (B) The mean neural trajectory Euclidian distance of target-motion and reach-direction conditions, aligned to TO (left) and GO (right), respectively, with selected 8 PCs and 14 PCs respectively covering 90% of delay period and movement period data variance. The black bar above the subplot labels the obvious difference temporal bin between two distances (Kruskal-Wallis test, p<0.05). The shadow means the standard error. The black square is the condition-averaged MO. (C) The mean neural trajectory Euclidian distance with same data in B, comparing CCW vs. CW and 120 vs 240 conditions.
 
 Then, we performed another decoding analysis to probe the potential interaction between reach direction and target velocity during execution period. We trained a reach-direction decoder (chance level: one in eight) to check if the decoder of one certain target-motion condition could be transferred to other conditions (Figure 2B left). It turned out that the performance of the transferred decoder deteriorated more significantly for TVdir. (CCW vs. CW, mean ± sd. of accuracy 0.26±0.06), compared with that for TVmag (120 vs 240, 0.50±0.06, paired t-test, p<0.01) and for target’s state (static vs. motion 0.55±0.06, paired t-test, p<0.01). This result suggests that the coding of reach direction was rather sensitive to TVdir, but contained similarities for static and moving targets. We also compared the neural coding rules across different reach-direction conditions. We trained a target-velocity decoder (chance level: one in five), and similarly checked the transferred decoding accuracy (Figure 2B right). We observed that the target-velocity decoder was locked with reach direction, as the transferred decoding accuracy diminished with increasing difference of reach direction. These results qualitatively imply the interaction as that target velocities affected the reach-directional tuning, especially by TVdir. This target-motion effect was most obvious at the MO (Figure 2—figure supplement 2C).
 
 To explore how sensory information influences neural dynamics while preserving motor output, we performed PCA on the normalized population activity. We obtained the trial-averaged neural trajectories (five target velocities by eight reach directions, totally 40 conditions) after TO or after GO (Figure 2—figure supplement 4A). The distance between neural trajectories grouped by reach-direction conditions was larger than the distance grouped by target-motion conditions, especially after GO (Figure 2—figure supplement 4B), consistent with the dPCA results that M1 primarily encoded reach direction rather than target velocity. In addition, the distance of neural trajectories between CCW and CW was much larger than the distance between 120°/s and 240 °/s conditions, indicating that TVdir dominated the target-motion effect, agreeing with the decoding results (Figure 2—figure supplement 4C).
 
-However, these neural trajectories were not yet the ideal description, because they were shaped mostly by time. Therefore, to highlight the proposed target-motion effect on reach direction, we focused on four key time windows and snapshotted the neural trajectory as neural state to extract the coding rule at single-trial level and from a geometric view. Here, we define the ‘neural states’ as the projection of single-trial data during a specific time bin on principal components (PCs; Mante et al., 2013; Parthasarathy et al., 2017; Sun et al., 2022). At the MO, the first two PCs of the neural states explained the most variance ([24.8%, 13.8%]) and were most related to reach direction (the goodness of fitting reach direction, [Rpc12, Rpc22] = [0.82, 0.81], Figure 2C). While reach direction was represented by the first two PCs at GO and during movement execution, target velocity influenced the tuning pattern of the first three PCs in various ways (Figure 2D).
+However, these neural trajectories were not yet the ideal description, because they were shaped mostly by time. Therefore, to highlight the proposed target-motion effect on reach direction, we focused on four key time windows and snapshotted the neural trajectory as neural state to extract the coding rule at single-trial level and from a geometric view. Here, we define the ‘neural states’ as the projection of single-trial data during a specific time bin on principal components (PCs; Mante et al., 2013; Parthasarathy et al., 2017; Sun et al., 2022). At the MO, the first two PCs of the neural states explained the most variance ([24.8%, 13.8%]) and were most related to reach direction (the goodness of fitting reach direction, [$R_{pc1}^{2}$, $R_{pc2}^{2}$] = [0.82, 0.81], Figure 2C). While reach direction was represented by the first two PCs at GO and during movement execution, target velocity influenced the tuning pattern of the first three PCs in various ways (Figure 2D).
 
-## Orbital neural geometry in latent space
+### Orbital neural geometry in latent space
 
 We visualized the neural states in the low-dimensional space spanned by the above three PCs (Figure 2—figure supplement 2D). At the MO, the projections of the single-trial neural states onto the PC1-PC2 subspace distributed in reach-direction order, as reach direction was divided into eight sectors, there appeared to be eight reach-direction clusters (Figure 3A top and Figure 3B left). Interestingly, the neural states under each single target-motion condition formed ring-like structures and the fitted ellipses exhibited concentric shapes (the fitting goodness of ellipses, R2=0.92 ± 0.01, mean ± sd. across target-motion conditions; see Materials and methods). Moreover, these ellipses tilted in condition-dependent angles, which is particularly evident in the PC2-PC3 subspace (Figure 3A bottom and Figure 3B right). Note that here we performed a linear transformation on all resulting neural state points to make the ellipse of the static condition orthogonal to the z-axis for better visualization.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig3-v1.jpg)
+
+**Figure 3.:** (A) Three-dimensional neural state of M1 population activity obtained by PCA. Each point represents a single trial. The upper subplot is colored according to five target-motion conditions, while the bottom is in colors corresponding to eight reach directions. The explained variances of the first three PCs were 17.7%, 11.3%, and 5.9%. Neural data were from monkey C (N=480, merged six sessions), for each of the total 40 conditions, 15 trials were randomly sampled. (B) Fitted ellipses of neural states. The ellipses fitted in (A) are projected onto three two-dimensional subspaces, colored by target velocities (left column) or reach directions (right column). (C) The relation between the tiling angle and target velocity. The tilting angle is calculated between ellipses of the moving-target conditions and the static-target condition (0 °/s) in the range from –90° to 90°, CCW is defined as positive. Circles, squares, and triangles correspond to monkeys C (7 sessions), G (4 sessions), and D (4 sessions), respectively. The lines indicate the linear fitting between the tilting angle (θ) and target velocity (vel.), with solid line for monkey C (θ=0.23*vel.+4.2, R2=0.91), dashed line for monkey D (θ=0.26*vel.+4.3, R2=0.81), and dotted line for monkey G (θ=0.15*vel.-1.4, R2=0.89).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The neural state of movement onset (MO ± 50ms) from three-monkey selected neurons. Neural data was collected with target-speed modulated units (N) and random 15 trials in 40 conditions (K=600 trials) from each monkey several sessions (A–C) and all monkeys’ sessions (D). Merged neural data was to do PCA to get neural state. Each point represented the neural state of single trial projected in static condition subspace. Ellipses were fitted by neural states in five target-speed conditions. (E–H) The relative titling angle of ellipses from static condition (merged datasets), had a linear relationship with target speed. Five color dots were tilting angles of five-target-speed condition. (I–L) We calculated the titling angle for separative sessions, and got the consistent linear relationship between tilting angle and target speed. The titling angle of three monkeys also showed in Figure 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The peak hand velocity distribution with selected trials. We used 10~90% of peak hand velocity in static-speed condition as threshold to select trials. Solid lines are remaining-trial distribution (monkey C 2260/4132 trials) and dash lines are raw distribution in Figure 1—figure supplement 1. After filtering, there is no difference between five-speed conditions (ANOVA p-value of 0°/s vs. 120°/s, 0°/s vs. 240°/s, and 120°/s vs. 240°/s were 0.56, 0.14, and 0.26). (B) Adjusted neural state with filtered trials. We performed PCA to neural data of one example session with filter trials (random chose 100 trials for each target-speed condition by a filter of 10~90% of peak hand velocity in static-speed condition, K=500 trials) and selected units (target-speed modulated neuron, N=91), to get neural state. We repeated in each sessions of two monkeys, then neural states of target-speed conditions were fitted ellipses and calculated the tilting angles of ellipses. (C) Tilting angle between ellipses of adjusted neural state. The titling angles were highly correlated with target speed (black circles and blue triangle are four sessions of monkey C, and three sessions of monkey G). (D) The filtered hand-velocity distribution compared with raw distribution (dashed line, Figure 1—figure supplement 1H). (E) Adjusted neural state of one example session from monkey G. (F) The R2 distribution of single-unit gain model. The gain of target speed performed better than hand velocity, with fr = c0+a*(y+c1)*cos(x-b)+c2*y, fr was mean firing rate of MO ± 50ms, x for reach direction, y for target speed or hand velocity. The triangles labeled the mean R2 of two models.
 
 Next, we quantified the spatial features of these ellipses by calculating the tilting angles, which were defined as the angles between the normal vectors of the moving-target and static-target conditions. Strikingly, these tilting angles were linearly correlated with target velocity (both TVmag and TVdir), and the relationship was robust in nine datasets from three monkeys (Figure 3C, Figure 3—figure supplement 1).
 
@@ -59,7 +159,7 @@ To eliminate hand-speed effect, we resampled trials to construct a new dataset w
 
 Given these results, we propose that this orbital neural geometry epitomizes the sensorimotor dynamics of M1 at the population level. The sensory input can regularly modulate neural states in an orthogonal dimension (PC3), without interfering with motor generation (in PC1 and PC2).
 
-## Population neural geometry relies on neuronal tuning
+### Population neural geometry relies on neuronal tuning
 
 To test whether a group of single neurons with a certain type of mixed sensorimotor selectivity could exhibit the orbit neural geometry, three neuronal models were constructed based on the three fitting models described above (PD shift, gain, and addition, see Figure 1D, Figure 1—figure supplements 2–4). We ran a simulation with these representational neuronal models (Figure 4A). Here, each group consisted of 300 model neurons with their PDs uniformly distributed, and was solely modulated as PD-shift, gain, or addition (see Materials and methods). The resulting neural geometry of the three simulation groups showed distinct features (Figure 4B): The single-condition ellipses were inclined with target-motion-dependent angles in the PD-shift and gain groups, similar to the real neural data, but the ellipses in the addition group were layered in parallel. The reach-direction clusters in the first two PCs were conservative in the gain and addition group, but not in the PD-shift group. These results indicate that the neural states of the real data mainly resembled the geometry feature of the gain modulation group. Nonetheless, we found that a population with a uniform mixture of all three modulations was able to simulate the neural geometry as well (Figure 4C).
 
@@ -71,9 +171,17 @@ Comparing with the static-target condition, we calculated relative rotation angl
 
 These simulations suggest that the existence of PD-shift and additive modulation would not disrupt the neural geometry which is primarily driven by gain modulation; rather, it is possible that these three modulations support each other in a mixed population.
 
-## The recurrent neural network provides dynamic insights
+### The recurrent neural network provides dynamic insights
 
 To infer how such modulated subpopulations would interact with each other in a dynamical system, we trained 100 RNN models with random weight initialization (Figure 5A; see Methods). The inputs included motor intention, target location, and a GO signal. Motor intention was defined as an abstract motor command predicted to compensate for sensorimotor delays (Cui, 2016), and could be provided by the PPC (Andersen and Buneo, 2002; Andersen and Cui, 2009), here simplified as the interception location. The network was to generate hand velocity after MO. For a fixed validation set of 500 trials, these trained network models performed well (distance between the reach endpoint and the target was 0.0046±0.0027, a. u., mean ± sd., while the radius of target motion was 0.15).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig5-v1.jpg)
+
+**Figure 5.:** (A) Network architecture. The network inputs consist of motor intention, target location, and GO signal. The motor intention is the two-dimensional Cartesian coordinate of the interception location, and exists fixed during MO-50ms to MO; the target location is the two-dimensional Cartesian coordinate of the moving target, and appears time-varying during the whole trial; the GO-signal is a step function, jumping from 0 to 1 at GO. The RNN with 200 hidden units is expected to output hand velocity in two-dimensional Cartesian coordinates for accurate interception. (B) Three example nodes with PD-shift modulation, gain modulation, and additive modulation. Similar to Figure 1D. (C) Three-dimensional neural state of node activity obtained by PCA, colored according to target-motion conditions (top) and reach-direction conditions (Bottom). Similar to Figure 3A. (D) The tilting angle of ellipses. Similar to Figure 3D. The fitted line is θ=0.15*vel.+0.11, R2=0.96, across five target velocities. (E) The connectivity between different types of modulations. On the left is a boxplot representing the averaged absolute connection weight, across 100 models. S for PD-shift nodes, G for gain nodes, and A for additive nodes. On the right is a diagram of the connectivity, with linewidth representing the relative connection strength.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100064/elife-100064-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The decoding accuracy (SVM with 10-fold cross-validation) of reach direction (black line) and target speed (blue line) across 100 network models, is aligned to TO, GO, MO. The dash-dotted lines are chance level of decoding reach direction (black, one in eight) and target speed (blue, one in five). While the lines are the mean of the mean decoding accuracy across models, the shaded area is the standard deviation of the mean decoding accuracy across models. (B) The input weights. The weights from motor intention-x and motor intention-y were averaged as motor intention, so as target location-x and target location-y to target location. To get a relative tendency, we selected the only modulated nodes and normalized the weight by dividing the maximum (the max absolute weight from motor intention, target location, and GO-signal, respectively), for each model. For motor intention (weight >0), S>G = A; for target location, S<G = A (weight >0), S<A < G (weight <0); for GO-signal (weight <0), S>G = A. ‘=’ here defines no significance while ‘<’ means p<0.01. (C) The output weights. The outputs to x and y were averaged. Similar with B, we selected the only modulated nodes and normalized the weight by dividing the max absolute output weights, for each model. No matter whether weight >0, S<G = A (p<0.001).
 
 In these network models, we found three comparable features. First, from the decoding result, target motion information existed in nodes’ population dynamics shortly after TO (Figure 5—figure supplement 1A). Second, most of the activated nodes (for example, Figure 5B) could be classified into the above-mentioned three modulations by the same statistical standard as for the real neural data (Table 1). Third, the states reduced from node population activity were arranged in a way resembling the actual neural geometry at the MO (the fitting goodness of ellipses, R2=0.98 ± 0.05, mean ± sd.; Figure 5C). The tilting angles followed the same pattern as suggested by the actual results (Figure 5D). We then performed canonical component analysis (CCA) and Procrustes analysis (Supplementary file 2; see Materials and methods), the results also indicated the similarity between network dynamics and neural dynamics.
 
@@ -97,23 +205,23 @@ From a bigger view, how could the motor cortex cooperate with other brain region
 
 ## Materials and methods
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 All procedures have been approved by the Biomedical Research Ethics Committee of Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences, under permit number ER-SlBS-221603P. They comply with national and local laws and regulations in China and are in accordance with the Guide for Care and Use of Laboratory Animals of the Institute for Laboratory Animal Research (version 20160310). All surgery was performed under anesthesia, and every effort was made to minimize suffering. The details of the experimental procedures are as follows. Three adult male rhesus macaques (monkey C, D, and G, Macaca mulatta, 7–10 kg) were recruited in this study.
 
-## Task and behavior
+### Task and behavior
 
 The monkeys sat in primate chairs to perform the task. The stimuli were back-projected onto a vertical touch screen (Elo Touch system; sampling at 100 Hz, spatial resolution <0.1 mm) about 30 cm in front of the monkeys. The monkeys were trained to perform a flexible manual interception task in a dark room. The task paradigm was modified based on the visually guided reaching interception task in a previous study (Li et al., 2018). In the beginning, the monkey held the green central dot of a touch screen for 600ms to initiate a trial (Figure 1A). Then, a green target dot appeared at a random location, moving along a circular path with a radius of 15 cm around the central dot. The central dot turned dark as a GO cue after a random delay (400–800ms); then the monkey could intercept the target at any moment within 150–800ms after the GO cue. Once any peripheral location was touched, the target stopped. The tolerance range of the touch endpoint for correct trials was within 3 cm of the target. The monkey would be rewarded with juice after each correct trial. Conditions where targets moved clockwise (CW; –240 °/s, –120 °/s) or counterclockwise (CCW; 120 °/s, 240 °/s), as well as targets stayed stationary (0°/s), were pseudo-randomly interleaved trial by trial. Additional target velocities (–360 °/s, –180 °/s, 180 °/s, 360 °/s added) were introduced in subsequent sessions (Supplementary file 1). The single-trial MO is defined as the moment when hand velocity first rose to 5% of the maximum. Task control and behavior data acquisition were managed via MonkeyLogic v2.0 [https://monkeylogic.nimh.nih.gov/index.html] (Hwang et al., 2019).
 
-## Data collection
+### Data collection
 
 After the monkeys were adequately trained for the task (successful rate >90%), head-posts were implanted stereotaxically under anesthesia (induced by 10 mg/kg ketamine, then sustained by 2% Isoflurane). After a few weeks of recovery and adaptation, the monkeys were implanted with Utah microelectrode arrays (Blackrock Microsystems, Salt Lake City, UT) in M1 of the hemisphere contralateral to the handedness (Figure 1C and a 128-channel array for monkey C, 96-channel arrays for monkey G and D). The recording areas were identified by Magnetic Resonance Imaging (MRI) and cortical sulcus features. Neuronal activity was recorded via a Cerebus acquisition system (256-channel recording system Blackrock Microsystems), sampled at 30 kHz. We collected 85±16, 45±8, 98±18 well-isolated units from monkey C, G, and D across sessions, respectively (mean ± sd., more details in Supplementary file 1). Array-recorded raw data were sorted offline by Wave_clus (Quiroga et al., 2004). Hand trajectory was collected by optical camera (VICON Inc 100 Hz) with an infrared marker on the fingertip from GO to Touch, and touch endpoint was collected by touchscreen.
 
-## Peri-stimulus time histograms (PSTHs)
+### Peri-stimulus time histograms (PSTHs)
 
 The PSTHs and spike rasters of single neurons are shown in Figure 1D, Figure 1—figure supplements 2–4. All trials were classified into 40 conditions, eight reach-endpoint sectors by five target-motion conditions. Condition-averaged firing rates were calculated with 50 ms bins and smoothed with a Gaussian kernel (standard deviation = 20ms). The standard error of firing rates was estimated from the 10 bootstrap samples in the trials of corresponding condition.
 
-## Classification of neuronal tuning properties
+### Classification of neuronal tuning properties
 
 To depict target-motion modulation for single-neuron reach-direction tuning, we applied a series of statistical analyses for classification.
 
@@ -121,71 +229,119 @@ We first calculated three indices of each neuron for each target-motion conditio
 
 Then, we classified PD shift, gain, and addition groups (in Table 1). A neuron was classified as ‘PD shift’, if its PDs were significantly different between the moving-target conditions and the static-target condition Watson-Williams test in circular data, CircStat by Berens, 2009; as ‘gain’, if its tuning depths were significantly different between the moving-target conditions and the static-target condition (two-tailed Wilcoxon signed-rank test, p<0.05); as ‘offset’, if its offset activities were significantly different between the moving-target conditions and the static-target condition (two-tailed Wilcoxon signed-rank test, p<0.05).
 
-## Population decoding
+### Population decoding
 
-The population activity of the motor cortex was used to decode target motion and reach direction by SVM. Neuronal firing rate was soft-normalized asFRnorm.=FRrawFRmax−FRmin+5
+The population activity of the motor cortex was used to decode target motion and reach direction by SVM. Neuronal firing rate was soft-normalized as
+
+$$
+FR_{norm.}=\frac{FR_{raw}}{FR_{max}−FR_{min}+5}
+$$
 
 where raw firing rates were divided by the range of firing rates plus five (Churchland et al., 2012). We trained two SVM classifiers (MATLAB function ‘fitcecoc’, 10-fold cross-validation) to decode reach direction (chance level: one in eight) and target motion (chance level: one in five) of single trials in 100 ms window sliding with 50 ms step (Figure 2A). The temporal decoding was repeated ten times to obtain the mean and standard deviation of decoding accuracy.
 
 We tested the generalization of reach-direction and target-motion decoders (SVM, MATLAB function ‘fitcecoc’) in different conditions during execution period (MO ± 100ms, Figure 2B). The decoder predicted single-trial reach direction (one of the eight 45° sectors) or target motion (one of the five ones) across conditions based on normalized population activity. The reach-direction decoder (Figure 2B left), which was trained by trials in a certain set of target-motion conditions, was tested with trials from another set of target-motion conditions (CCW vs. CW, or 120 vs 240, or static vs. motion, 100 trials randomly selected without replacement from corresponding training-test datasets), and the training-test decoding was repeated 1000 times to compare the distribution of accuracy with paired t-test. The target-velocity decoder (Figure 2B right), which was trained by trials in a given reach-direction condition within 45°, was tested with trials from other reach-direction conditions.
 
-## Unsupervised dimensionality reduction
+### Unsupervised dimensionality reduction
 
-The population activity was stored in NKT datasets, where N, K, and T denote the neurons, trials, and time bins, respectively. For neural state, we averaged T dimension of neural activity in a 100 ms bin (for example, the two 50 ms bins around MO), and normalized neuronal firing rates by Z-score (MATLAB function ‘zscore’) to get a K x N dataset. After preprocessing, we used PCA (MATLAB function ‘pca’) to reduce the dimension from K x N to K x P (P is the number of PCs), and we fitted the PCs with reach direction (PC=a1∗cosθ+a2∗sinθ+c) and target velocity (PC=a11+e−a2vel.+c) in Figure 2. We also tried independent component analysis (ICA, MATLAB function ‘rica’), with similar results in Figure 2—figure supplement 2B. Neural states of single trials were colored according to target velocity or reach direction and fitted as three-dimensional (first three PCs, Figure 3) ellipses by MATLAB package ‘MatGeom’ (Legland, 2025). To show the relative position of ellipses in the best viewing angle, we used an isometric affine transformation to globally map all neural state points on new axes, while preserving the proportional relationships between points. After this linear transformation, the azimuth and elevation of ellipses changed slightly, but the tilting angle between ellipses remained constant (Figure 3). The tilting angles, rotation angles, and state shift were calculated between ellipses of the moving-target conditions and the static-target condition in each session, with CW defined as negative angles and CCW as positive angles. A set of tilting angles were obtained from corresponding conditions in one dataset, and a linear regression model was used to fit all ellipses angles (θ) and target velocities (vel.) in nine sessions. For neural trajectory, we averaged NKT to NCT (40 condition, five target velocities by eight reach directions) and reduced neural dimension N to explain concatenated C x T (40 conditions * 10 bins) with PCA. The neural trajectories of preparatory and peri-movement period (TO~+500ms, GO~+500ms) were shown in Figure 2—figure supplement 4 with Euclidian distance across conditions.
+The population activity was stored in NKT datasets, where N, K, and T denote the neurons, trials, and time bins, respectively. For neural state, we averaged T dimension of neural activity in a 100 ms bin (for example, the two 50 ms bins around MO), and normalized neuronal firing rates by Z-score (MATLAB function ‘zscore’) to get a K x N dataset. After preprocessing, we used PCA (MATLAB function ‘pca’) to reduce the dimension from K x N to K x P (P is the number of PCs), and we fitted the PCs with reach direction ($PC=a_{1}∗cos\theta+a_{2}∗sin\theta+c$) and target velocity ($PC=\frac{a_{1}}{1+e^{−a_{2}vel.}}+c$) in Figure 2. We also tried independent component analysis (ICA, MATLAB function ‘rica’), with similar results in Figure 2—figure supplement 2B. Neural states of single trials were colored according to target velocity or reach direction and fitted as three-dimensional (first three PCs, Figure 3) ellipses by MATLAB package ‘MatGeom’ (Legland, 2025). To show the relative position of ellipses in the best viewing angle, we used an isometric affine transformation to globally map all neural state points on new axes, while preserving the proportional relationships between points. After this linear transformation, the azimuth and elevation of ellipses changed slightly, but the tilting angle between ellipses remained constant (Figure 3). The tilting angles, rotation angles, and state shift were calculated between ellipses of the moving-target conditions and the static-target condition in each session, with CW defined as negative angles and CCW as positive angles. A set of tilting angles were obtained from corresponding conditions in one dataset, and a linear regression model was used to fit all ellipses angles (θ) and target velocities (vel.) in nine sessions. For neural trajectory, we averaged NKT to NCT (40 condition, five target velocities by eight reach directions) and reduced neural dimension N to explain concatenated C x T (40 conditions * 10 bins) with PCA. The neural trajectories of preparatory and peri-movement period (TO~+500ms, GO~+500ms) were shown in Figure 2—figure supplement 4 with Euclidian distance across conditions.
 
-## Fitting and simulating single-neuron activity
+### Fitting and simulating single-neuron activity
 
 We used PD shift, gain, offset, and full models to fit neuronal activity. Neurons are fitted by single-trial data. We introduced a special sigmoid function to fit the nonlinear target-motion effects because target-velocity direction (CCW vs. CW) has a stronger effect than target-velocity magnitude (120 vs 240; Churchland and Lisberger, 2001; Pouget and Sejnowski, 1997). The gain and additive models refer to hand-velocity gain studies (Amirikian and Georgopoulos, 2000; Inoue et al., 2018; Moran and Schwartz, 1999).
 
-In the gain model, the target-motion effect on the amplitude of cosine tuning is denoted as:FR=a11+e−a2vel.+c2∗cosθ−θpd+c1
+In the gain model, the target-motion effect on the amplitude of cosine tuning is denoted as:
 
-where FR is the firing rate at the movement onset (MO ± 100ms). θ and vel. are the reach direction and target velocity, respectively; θpd is the fitted preferred direction of the neuron; a1,a2,c1 are constants to be fitted.
+$$
+FR=\frac{a_{1}}{1+e^{−a_{2}vel.}}+c_{2}∗cos\theta−\theta_{pd}+c_{1}
+$$
 
-In the additive model, the target velocity adjusts the offset activity, as:FR=a1∗cosθ−θpd+a31+e−a2vel.+c1
+where $FR$ is the firing rate at the movement onset (MO ± 100ms). $\theta$ and vel. are the reach direction and target velocity, respectively; $\theta_{pd}$ is the fitted preferred direction of the neuron; $a_{1},a_{2},c_{1}$ are constants to be fitted.
 
-with similar symbols to the gain models, plus the new constant a3.
+In the additive model, the target velocity adjusts the offset activity, as:
 
-In the PD shift model, the target-motion effect on PDs is represented as:FR=a1∗cosθ−θpd+a31+e−a2vel.+c1
+$$
+FR=a_{1}∗cos\theta−\theta_{pd}+\frac{a_{3}}{1+e^{−a_{2}vel.}}+c_{1}
+$$
+
+with similar symbols to the gain models, plus the new constant $a_{3}$.
+
+In the PD shift model, the target-motion effect on PDs is represented as:
+
+$$
+FR=a_{1}∗cos\theta−\theta_{pd}+\frac{a_{3}}{1+e^{−a_{2}vel.}}+c_{1}
+$$
 
 with the similar symbols to the above models.
 
-The full model integrates all the three of the above effects:FR=a1∗cos(θ−θpd)+a21+e−a2(vel.)+a31+e−a2(vel.)∗cos(θ−θpd)+a4∗cos(θ−θpd−a51+e−a2(vel.))+c1
+The full model integrates all the three of the above effects:
 
-with constants a1,a2,a3,a4,a5.
+$$
+FR=a_{1}∗cos(\theta−\theta_{pd})+\frac{a_{2}}{1+e^{−a_{2}(vel.)}}+\frac{a_{3}}{1+e^{−a_{2}(vel.)}}∗cos(\theta−\theta_{pd})+a_{4}∗cos(\theta−\theta_{pd}−\frac{a_{5}}{1+e^{−a_{2}(vel.)}})+c_{1}
+$$
 
-We fitted neuronal activity with these four models (MATLAB ‘fit’ function), and compared the fitting goodness with adjusted R-squares (Radj.2=1−r2n−1n−p−1, where r is the original R-square, n is the trial number, and p is the degree of the polynomial).
+with constants $a_{1},a_{2},a_{3},a_{4},a_{5}$.
 
-Simulations with model neurons were based on three models to investigate the relationship between neuronal tuning (Figure 4A) and population neural geometry (Figure 4B). We first built three model neuron groups (each n=300) and performed PCA to obtain the neural state. Then, we repeated this in a mixed group, including 100 neurons in each of PD shift, gain and additive model (Figure 4C). Model neurons had three components: cosine-tuning for reach direction (θpd,n, PD uniformly distributed around the circle for each neuron n), Gaussian temporal profiles (t=1:200, σ=30, peak time tμ,n∈N100,10, the 100-th bin is the MO, random distribution for tμ,n of neurons), and distinct target-motion modulation for each group. We designed five target velocity values (vel.=1,2,3,4,5) and 64 reach directions (θ=360∗1:6464), for 320 trials in total (Michaels et al., 2016). The concrete expression of model neurons follows as below:
+We fitted neuronal activity with these four models (MATLAB ‘fit’ function), and compared the fitting goodness with adjusted R-squares ($R_{adj.}^{2}=\frac{1−r^{2}n−1}{n−p−1}$, where $r$ is the original R-square, $n$ is the trial number, and $p$ is the degree of the polynomial).
 
-The gain-model neuron:FRt,n,vel.,θ=e−(t−tμ,n)22∗302∗(11+e−gn(vel.−3)∗cos(θ−θpd,n)+1)
+Simulations with model neurons were based on three models to investigate the relationship between neuronal tuning (Figure 4A) and population neural geometry (Figure 4B). We first built three model neuron groups (each n=300) and performed PCA to obtain the neural state. Then, we repeated this in a mixed group, including 100 neurons in each of PD shift, gain and additive model (Figure 4C). Model neurons had three components: cosine-tuning for reach direction ($\theta_{pd,n}$, PD uniformly distributed around the circle for each neuron $n$), Gaussian temporal profiles ($t$=1:200, σ=30, peak time $t_{\mu,n}\inN100,10$, the 100-th bin is the MO, random distribution for $t_{\mu,n}$ of neurons), and distinct target-motion modulation for each group. We designed five target velocity values ($vel.=1,2,3,4,5$) and 64 reach directions ($\theta=\frac{360∗1:64}{64}$), for 320 trials in total (Michaels et al., 2016). The concrete expression of model neurons follows as below:
 
-here, gn is randomized within [0, 1] for different neurons, modulating the target-motion gain in a sigmoidal function.
+The gain-model neuron:
 
-The PD-shift model neuron:FRt,n,vel.,θ=e−(t−tμ,n)22∗302∗(cos(θ−θpd,n−901+e−sn(vel.−3))+1)
+$$
+FR_{t,n,vel.,\theta}=e^{\frac{−(t−t_{\mu,n})^{2}}{2∗30^{2}}}∗(\frac{1}{1+e^{−g_{n}(vel.−3)}}∗cos(\theta−\theta_{pd,n})+1)
+$$
 
-here,sn is a random value within [0, 1.5] for different neurons, and contributes to a sigmoidal function with target-motion shift on neuronal PD (θpd,n).
+here, $g_{n}$ is randomized within [0, 1] for different neurons, modulating the target-motion gain in a sigmoidal function.
 
-The additive model:FRt,n,vel.,θ=e−(t−tμ,n)22∗302∗(cos(θ−θpd,n)+11+e−gn(vel.−3)+1)
+The PD-shift model neuron:
 
-here, gn is also a random value within [0, 1] for different neurons, and adjusts the offset activity in a sigmoidal function with target-motion.
+$$
+FR_{t,n,vel.,\theta}=e^{\frac{−(t−t_{\mu,n})^{2}}{2∗30^{2}}}∗(cos(\theta−\theta_{pd,n}−\frac{90}{1+e^{−s_{n}(vel.−3)}})+1)
+$$
+
+here,$s_{n}$ is a random value within [0, 1.5] for different neurons, and contributes to a sigmoidal function with target-motion shift on neuronal PD ($\theta_{pd,n}$).
+
+The additive model:
+
+$$
+FR_{t,n,vel.,\theta}=e^{\frac{−(t−t_{\mu,n})^{2}}{2∗30^{2}}}∗(cos(\theta−\theta_{pd,n})+\frac{1}{1+e^{−g_{n}(vel.−3)}}+1)
+$$
+
+here, $g_{n}$ is also a random value within [0, 1] for different neurons, and adjusts the offset activity in a sigmoidal function with target-motion.
 
 The firing rates of three groups of model neurons (K x N x T, 320x300 x 200) were averaged at the MO (mean T = [50:150]) to get the K x N (320x200) dataset for PCA. As with the real neural data, we selected the first three PCs (K x C, 320x3) to derive the simulated neural state shown in Figure 4.
 
-## RNNs training
+### RNNs training
 
 For the inputs of RNNs, motor intention appears from MO-50 ms to MO, and is represented as constant variables in the form of two-dimensional Cartesian coordinates; target location is designed as time-varying two-dimensional Cartesian coordinates of the target throughout the entire trial; the GO-signal is a step function jumping from 0 to 1 at GO. Each RNN consists of 200 hidden units, and outputs hand velocity for accurate interception after the MO.
 
-The RNN nodes evolve according to a standard dynamic differential equation:τx˙=−x+Jr+Bu
+The RNN nodes evolve according to a standard dynamic differential equation:
 
-where τ is a time constant (here 50 ms), x is the activity, r is the firing rate, and u denotes the combined inputs. r can be calculated from x following:r={tanh(x),x>00,x≤0
+$$
+\taux˙=−x+Jr+Bu
+$$
 
-The connection matrix J of hidden layer was randomly initialized with a normal distribution (mean = 0, sigma = g/N, g=1.5, N=200), and the connection between inputs and hidden units, the matrix B, was initialized as all zero. The initial states were zero vectors. The output z is obtained byz=Wr
+where $\tau$ is a time constant (here 50 ms), x is the activity, $r$ is the firing rate, and $u$ denotes the combined inputs. $r$ can be calculated from $x$ following:
 
-where W is the read-out weight, and is expected to reproduce the desired hand velocity generated by bell-shaped physical equation (Kao et al., 2021). W was also initiated as zero matrix. The loss function is:E=e+αr1
+$$
+r={tanh(x),x>00,x\leq0
+$$
 
-where e is the mean squared error of z and training target. r1 is a regularity (Sussillo et al., 2015), denoting the magnitude of the nodes’ activity and calculated as activity squared summed across time. α=1e-7. The optimization was realized with optim.Adam() based on PyTorch, the learning rate was 0.001.
+The connection matrix $J$ of hidden layer was randomly initialized with a normal distribution (mean = 0, sigma = $g/\sqrt{N}$, g=1.5, N=200), and the connection between inputs and hidden units, the matrix $B$, was initialized as all zero. The initial states were zero vectors. The output $z$ is obtained by
 
-## RNNs analyses
+$$
+z=Wr
+$$
+
+where $W$ is the read-out weight, and is expected to reproduce the desired hand velocity generated by bell-shaped physical equation (Kao et al., 2021). $W$ was also initiated as zero matrix. The loss function is:
+
+$$
+E=e+\alphar_{1}
+$$
+
+where $e$ is the mean squared error of $z$ and training target. $r_{1}$ is a regularity (Sussillo et al., 2015), denoting the magnitude of the nodes’ activity and calculated as activity squared summed across time. $\alpha=1e-7$. The optimization was realized with optim.Adam() based on PyTorch, the learning rate was 0.001.
+
+### RNNs analyses
 
 The classification of modulation type on network nodes was finished with the same procedure for real data as above. The firing rates of nodes ([0, 1]) were used for all analyses.
 
@@ -193,12 +349,12 @@ For decoding, similar to Population decoding, two SVM classifiers (Python, SVC f
 
 We performed Canonical Component Analysis (CCA) and Procrustes analysis to validate the similarity between data and network dynamics. The data were around the TO or around the MO each in 2 seconds (±1 s, 50 ms x 40 bins). The RNN activity were collected between MO-200 ms and MO +120ms, considering the shortest movement time, and then averaged into 40 bins for comparison. First, we performed PCA (Python, PCA from sklearn.decomposition) on actual and model data to get the first 30 PCs (KT x N → KT x 30), respectively. Then, we used these two-dimensional matrices to compute their first ten canonical components with CCA (Python, CCA from sklearn.cross_decomposition). The Pearson correlation coefficients (Python, pearsonr from scipy.stats) were calculated between paired canonical components. The Procrustes disparity (Python, procrustes from scipy.spatial) were computed between pairs of data and network first 30 PCs.
 
-## RNNs experiments
+### RNNs experiments
 
 We performed ablation of nodes and manipulation of connection weights. In former, we selected the nodes from a certain type of modulation, and set all its connection weights to zero to simulate ‘ablation’. When manipulating the connection between certain types of modulations, the selected connection weight was adjusted to be 1.5 times the original. Both above perturbations were retained for the entire trial. The perturbed network was tested with the same validation set of 500 trials as for the intact network.
 
 We also constructed three alternative models to check the influence of input and weight initialization. The first one only receives motor intention and a GO-signal (GM); the second only receives target location and a Go-signal (GT); these two were initialized and trained as the main model. The third one was initialized with sparse connection (sparsity = 0.1); except for this, the input and the training were as the same as the main model. All involved modes shared the same validation set.
 
-## Software
+### Software
 
 We used the Python 3.11 (python.org) and MATLAB 2018b (The MathWorks, Inc).

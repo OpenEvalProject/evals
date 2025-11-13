@@ -28,9 +28,21 @@ Here, we use 4D live-imaging of filamentous actin to determine phasic behaviors 
 
 ## Results
 
-## Rapid formation and dissolution of apical actin cap structures
+### Rapid formation and dissolution of apical actin cap structures
 
 The apical actin caps in the early syncytial Drosophila embryo are highly active structures that undergo cyclic behaviors of formation and disassembly on relatively short time scales. As such, they represent a unique opportunity to unravel the mechanisms that guide formation of complex three-dimensional actin-based structures. As a starting point, we live-imaged wild-type actin caps by labeling filamentous actin with an actin-binding domain construct derived from moesin (mCh:MoeABD). This method of labeling has been used extensively in the Drosophila embryo and well-represents endogenous filamentous actin dynamics while avoiding problems that occur when fluorescent proteins are directly attached to actin or other labeling paradigms (such as Lifeact; Kiehart et al., 2000; Blankenship et al., 2006; Spracklen et al., 2014; Figure 1—figure supplement 1A–F). Actin cap formation was imaged through the four cycles that occur in the syncytial blastoderm (nuclear cycles 10–13), and actin growth behaviors were analyzed (Figure 1A, Figure 1—figure supplement 2A–G; Figure 1—source data 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig1-v2.jpg)
+
+**Figure 1.:** (A) Still images from live-imaging of apical F-actin dynamics (UAS:moeABD:mCherry, cycle 11) at t = 0, 20, 90, 180, 270, 360, 540 s. Scale bar = 5 μm. (B) WT actin cap area dynamics from cycle 11 (measured cap n = 15, from embryo N = 4). Cap areas are normalized to the size at t = 0 s. Four different phases are labeled (Exp.: Expansion; Stab.: Stabilization; Elong.: Elongation; and Frag.: Fragmentation phases). (C) WT actin cap expansion rate from 30 s rolling window (cycle 11, n = 15, N = 4). Inset has y-axis re-scaled to visualize changes after expansion. (D) WT actin cap area (μm2) from cycle 11 at t = 0, 60, 120, 180, 240, 300, 360, 420, 480, 540 s (n = 15, N = 4). (E) WT actin cap area change in different phases (cycle 11, n = 15, N = 4). The values are calculated by the cap area at the end point divided by the area at the beginning of each phase. (F) Average WT actin cap area expansion rate (μm2/s) in different phases (cycle 11, n = 15, N = 4). (G) Average WT actin cap intensity (A.U.) from cycle 11 at t = 0, 60, 120, 180, 240, 300, 360, 420, 480, 540 s (n = 12, N = 3). (H) WT actin cap heterogeneity dynamics from cycle 11 (n = 15, N = 4). The heterogeneity is measured as the intensity standard deviation normalized to the value at t = 0 s. (I) WT actin cap heterogeneity from cycle 11 at t = 0, 60, 120, 180, 240, 300, 360, 420, 480, 540 s (n = 15, N = 4).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative images from live-imaged mCh:MoesinABD (actin-binding domain of Moesin labeled with mCherry), live-imaged GFP:Act88F (Actin directly labeled with GFP) live-imaging, and fixed Phalloidin staining. Expansion (Exp.), stabilization (Stab.), elongation (Elong.), and fragmentation (Frag.) phases are shown. Scale bar = 5 μm. (B) Cap area comparison of mCh:MoeABD (n = 15, N = 4) and GFP:Act88F (n = 10, N = 3) at t = 0, 120, 180, 420, 540 s. ns: not significant. (C) Normalized cap area change of mCh:MoeABD (n = 15, N = 4) and GFP:Act88F (n = 10, N = 3) at 120 s. (D) Representative FRAP images from mCh:MoesinABD and GFP:Act88F at t = −1 s (1 s before photobleaching), 0 s (photobleaching), 12 s, and 32 s in cycle 11 caps during stabilization phase. Scale bar = 5 μm. (E, F) FRAP T50 and immobile fraction of different F-actin markers: mch:MoeABD (n = 6) and GFP:Act88F (n = 7) structures in cycle 11 caps at ~120 s.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Cycle 11 actin cap area dynamics (n = 15, N = 4) as the standard for analysis. n = 15, N = 4. Cap areas are normalized to the size at t = 0 s. Four different phases are labeled (Exp.: Expansion; Stab.: Stabilization; Elong.: Elongation; and Frag.: Fragmentation phases). (B–D) Cycle 10, cycle 12, and cycle 13 actin cap area dynamics. Cycle 10: n = 6, N = 2, measured every 15 s; cycle 12: n = 6, N = 2, measured every 20 s; cycle 13: n = 6, N = 2, measured every 25 s. Cap areas are normalized to t = 0 s at each cycle. (E–G) Examples of cycle 10, cycle 12, and cycle 13 caps during Expansion, Stabilization, Elongation, and Fragmentation phases. Scale bar = 5 µm.
 
 Our analysis shows that apical actin caps experience an initial period of rapid exponential growth (~6 fold growth, see Materials and methods). During this phase, the major increase in cap dimensions occurs in as little as 120 s (Figure 1A–C, Figure 1—figure supplement 2). This is followed by cap stabilization and cap elongation, which correlates with spindle duplication and separation (Figure 1A–C; Cao et al., 2010). Lastly, caps disassemble and then reform as small proto-caps around two central hubs to begin the next cycle of cap behaviors (Figure 1A,B, Figure 1—figure supplement 1A,B; Figure 1—figure supplement 2E–G). In each cycle, the cap dynamics share similar features, albeit with moderate differences (especially in the very short cycle 10) – as a result, we will focus on cycle 11 caps going forward (Figure 1—figure supplement 2A–G).
 
@@ -38,41 +50,177 @@ During the expansion phase, cycle 11 actin caps rapidly expand from small proto-
 
 The following stabilization phase lasts for ~60 s with caps largely maintaining their size. As the cell cycle continues, caps elongate and slightly increase in size (Figure 1A–F). However, cap intensities begin to decrease and heterogeneity within the cap drops by approximately one quarter of the maximum at the end of stabilization phase (Figure 1G–I). Interestingly, the morphology of the cap during elongation switches from round to an elongated doughnut-like structure and caps begin to lose intensity in internal actin populations (Figure 1A). As the cell cycle reaches mitosis and chromosomal segregation, the caps fragment and disassemble. Overall cap area begins to decline as F-actin gradually disbands leaving low-intensity gaps in the middle of the elongating figure and along cap edges (Figure 1A, Figure 1—figure supplement 1A). During actin cap disassembly, the average intensity of caps drops, as well as the measured heterogeneity (Figure 1G–I). These results demonstrate that the apical cap is a dynamic and complex F-actin structure, providing an interesting contextual model for the investigation of filamentous behaviors in vivo.
 
-## Diaphanous and Arp2/3 networks direct actin cap dynamics
+### Diaphanous and Arp2/3 networks direct actin cap dynamics
 
 After describing the filamentous actin dynamics above, we wanted to examine the major actin networks that drive these behaviors. The Formin Diaphanous and the Arp2/3 complex have been previously implicated in regulating actin nucleation at these syncytial stages (Stevenson et al., 2002; Zallen et al., 2002; Grosshans et al., 2005; Cao et al., 2010; Zhang et al., 2018). According to published studies, Diaphanous appears to be the major regulator of furrow-associated F-actin, while Arp2/3 has been implicated in apical actin formation (Grosshans et al., 2005; Cao et al., 2010; Zhang et al., 2018), although comprehensive time-lapse-based quantitation has been lacking. We therefore performed our own quantitative analysis of these protein’s function in the early syncytial stages. Consistent with previous results, disruption of Diaphanous function deeply affects furrow-associated actin (Figure 2—figure supplement 1). However, Diaphanous also shows a significant contribution to the early expansion of actin caps. Dia disrupted embryos have a ~ 35% reduction in cap area expansion, but a relatively mild 18% reduction in actin intensities and cap expansion rate (Figure 2A–H, Figure 2—source data 1). We then examined the contribution of the Arp2/3 complex to actin behaviors. By contrast to Diaphanous, when Arp2/3 function is compromised there is an almost complete absence of cap expansion and cap actin intensities are reduced to 47% of wild-type levels (Figure 2A–H). Interestingly, the remaining actin structure appear to be hollowed out and missing internal actin populations (Figure 2A,B). As recent evidence has shown that Arp2/3 and Formin networks can demonstrate a degree of interdependence (Suarez et al., 2015; Chan et al., 2019), we examined Diaphanous and Arp2/3 intensities when each network was disrupted. Although defective cap structures characteristic of the above described results were observed, disruption of Diaphanous function did not significantly affect Arp2/3 intensities (as judged by ArpC1:GFP), nor did Arp2/3 disruption affect anti-Diaphanous intensities in the remaining cap structures (anti-Diaphanous immunostaining; Figure 2—figure supplement 1B–E). These results show that Diaphanous and Arp2/3 both contribute to structuring apical actin caps, but that Arp2/3 is the major regulator of actin intensities and cap growth. The hollowed out internal cap structures as well as the failure in cap expansion also suggests a possible model in which Arp2/3 polymerizes F-actin internally, and the cap possesses a dispersion mechanism that flows F-actin filaments towards the edges so as to maintain consistent internal F-actin intensities.
 
-## Different ANRPs have distinct roles in building apical actin structures
+![Figure 2.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig2-v2.jpg)
+
+**Figure 2.:** (A) Still images from live-imaging of apical F-actin dynamics (UAS:moeABD:mCherry, cycle 11) from control, Dia shRNA and ArpC4 shRNA lines at t = 20, 90, 180, 360, 540 s. Four different phases are labeled (Exp.: Expansion; Stab.: Stabilization; Elong.: Elongation; and Frag.: Fragmentation phases). Scale bar = 5 μm. (B) Still images showing F-actin cap intensities by live-imaging (UAS:moeABD:mCherry, cycle 11) from control, Dia shRNA and ArpC4 shRNA lines at t = 120 s. First three panels are leveled and imaged equivalently, with the last panel optimized for visualization. Scale bar = 5 μm. (C) Actin cap area dynamics of control (black, n = 15, N = 4), Dia shRNA (grey, n = 10, N = 3) and ArpC4 shRNA (red, n = 11, N = 3) from cycle 11. Cap areas are normalized to the size at t = 0 s. (D) Actin cap area (μm2) of control (n = 15, N = 4), Dia shRNA (n = 10, N = 3), and ArpC4 shRNA (n = 11, N = 3) at t = 120 s in cycle 11. *: p<0.05, ***: p<0.0005. (E) Actin cap area change of control (n = 15, N = 4), Dia shRNA (n = 10, N = 3), and ArpC4 shRNA (n = 11, N = 3) from t = 120 s to t = 0 s in cycle 11. ***: p<0.0005. (F) Average intensity of apical cap structures of control (n = 12, N = 3), Dia shRNA (n = 10, N = 3), and ArpC4 shRNA (n = 11, N = 3) at t = 120 s in cycle 11. *: p<0.05, ***: p<0.0005. (G) Actin cap area expansion rate of control (n = 15, N = 4), Dia shRNA (n = 10, N = 3), and ArpC4 shRNA (n = 11, N = 3) from 0 to 120 s in cycle 11. *: p<0.05, ***: p<0.0005. (H) Actin cap heterogeneity (intensity standard deviation) of control (n = 15, N = 4), Dia shRNA (n = 10, N = 3), and ArpC4 shRNA (n = 11, N = 3) at t = 120 s in cycle 11. ns: not significant, ***: p<0.0005.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cycle 11 apical cap and furrow actin distributions in Control, Dia shRNA and ArpC4 shRNA embryos at t = 120 s. Scale bar = 5 μm. Cap (0.9 μm below apical most layer) and furrow level (3.9 μm below apical most layer). (B, C) ArpC1:GFP in Diaphanous shRNA (B) or anti-Diaphanous antibody staining in ArpC4 shRNA. (D, E) Mean intensity box-and-whisker plot of indicated signals. ns: not significant. n > 10 in group. Scale bar = 5 μm.
+
+### Different ANRPs have distinct roles in building apical actin structures
 
 Given the above rapid dynamics of cap formation and nucleator function, we wanted to identify how actin and/or nucleator regulatory proteins (ANRPs) are deployed to control actin activities spatiotemporally in the construction of cortical actin caps. Extensive work across a variety of systems has revealed a diverse array of actin regulatory proteins, many of which have also been implicated, to varying degrees, in controlling Arp2/3 activity or stability, although additional actin-related functions for these proteins exist (Siripala and Welch, 2007; Swaney and Li, 2016). Here we are focusing on seven of these families of proteins (DPod1, Coronin, Cortactin, Scar, Carmil, Wasp, and Wash) – each of these families is represented within the Drosophila genome by single orthologs (Figure 3A). Cortactin and Carmil have been shown to regulate Arp2/3 complex function as well as branch point stability (Cortactin) or filament capping (Carmil), and Scar/Wash/Wasp super-family proteins are known potent activators of Arp2/3 nucleation (Jung et al., 2001; Uruno et al., 2001; Weaver et al., 2001; Ammer and Weed, 2008; Pollitt and Insall, 2009). Scar has previously been suggested to be the most relevant member regulating Arp2/3 function in the early embryo, although this has not been tested systematically (Zallen et al., 2002; Levayer et al., 2011). Drosophila DPod1 contains WD40 domains and has similarity to Coronin-family proteins, which have been implicated in recruiting Arp2/3 complexes in the presence of preexisting actin filaments, as well as regulating cofilin function (Gandhi and Goode, 2008). Given the many associated functions of the ANRPs, we wanted to determine their baseline behaviors in regulating in vivo actin structures, and therefore analyzed actin cap dynamics in embryos compromised for each of these ANRPs (Figure 3B, Figure 3—source data 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematics of different ANRPs domain organization. Domains are collected from Flybase (Pfam/SMART) and UniProt. WD40: WD40 repeats; CC: coiled-coil domain; Hs1/Cortactin: Hs1/Cortactin repeats; SH3: SH3 domain; PRD: proline-rich domain; WCA: WH2/verprolin, cofilin, acidic domains; LRR: Leucine-rich repeats; PH: pleckstrin homology domain; LLR: Leucine-rich repeats; C-terminal: Carmil c-terminal domain; DUF: domains of unknown function. Domain size is not to scale. (B) Cycle 11 apical actin cap area dynamics in control, Arp2/3, and ANRP disrupted embryos: control (black, n = 15, N = 4), DPod1 shRNA (green, n = 11, N = 3), Coronin shRNA (blue, n = 9, N = 3), Cortactin shRNA (red, n = 12, N = 3), Scar shRNA (orange, n = 11, N = 3), Carmil shRNA (grey, n = 9, N = 3), and ArpC4 shRNA (magenta, n = 11, N = 3). Cap areas are normalized to the size at t = 0 s. (C, D, F, H, J, L) Still images from live-imaging of apical F-actin dynamics (UAS:moeABD:mCh, cycle 11) at t = 180, 270, 360 s, from control (C), DPod1 shRNA (D), Coronin shRNA (F), Cortactin shRNA (H), Scar shRNA (J), and Carmil shRNA (L) embryos. Images are identically leveled and imaged. Scale bar = 5 μm. (E, G, I, K, M) Apical actin cap area dynamics (cycle 11) in control (black, n = 15, N = 4), DPod1 shRNA (green, n = 11, N = 3), Coronin shRNA (blue, n = 9, N = 3), Cortactin shRNA (red, n = 12, N = 3), Scar shRNA (orange, n = 11, N = 3), Carmil shRNA (gray, n = 9, N = 3), and ArpC4 shRNA (magenta, n = 11, N = 3). Cap areas are normalized to the size at t = 0 s. (E’, G’, I’, K’, M’) Absolute actin cap areas (μm2) in control and ANRP-compromised embryos from cycle 11 at indicated time points. *: p<0.05. (E’’, G’’, I’’, K’’, M’’) Actin cap average intensity in control and ANRP-compromised embryos from cycle 11 at indicated time points. *: p<0.05. Bar graphs without * labeled in (E’–E’’, G’–G’’, I’–I’’, K’–K’’, M’–M’’) are not significant. (N) Still images of endogenous CRISPR Arp3:GFP behavior in control and actin regulator disrupted embryos at t = 120 s in cycle 11. Scale bar = 5 μm. (O) CRISPR Arp3:GFP intensity in control and different actin regulators functional disruption embryos at t = 120 s in cycle 11. control: n = 13, N = 3; ArpC4 shRNA: n = 18, N = 3; DPod1 shRNA: n = 34, N = 3; Coronin shRNA: n = 30, N = 3; Scar shRNA: n = 24, N = 3; Cortactin shRNA: n = 27, N = 3; Dia shRNA: n = 28, N = 3. ns: not significant, *: p<0.05, **: p<0.005; ***: p<0.0005.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B, C, D, D’, F, F’, H) Still images from live-imaging of apical F-actin dynamics in cycle 11 at t = 180, 270, 360 s, from control (A), DPod1 shRNA (B), Coronin shRNA (C), DPod1 shRNA 2 (D–D’), Coronin shRNA 2 (F–F’), and Cortactin shRNA 2 (H). Images of (B) and (C) are the same images from Figure 3D and F but leveled optimally for visualization. Images of (D’) and (F’) are optimized leveled from (D) and (F). Other images are identically imaged and leveled as (A). Scale bar = 5 μm. (E, G, I) Absolute actin cap areas (μm2) of cycle 11 in control (black, n = 15, N = 4); DPod1 shRNA (dark green, n = 11, N = 3), DPod1 shRNA 2 (light green, n = 10, N = 3); Coronin shRNA (dark blue, n = 9, N = 3), Coronin shRNA 2 (light blue, n = 12, N = 3); Cortactin shRNA (red, n = 12, N = 3), Cortactin shRNA 2 (orange, n = 11, N = 3), respectively. (E’, G’, I’) Actin cap average intensity in control and ANRP- compromised embryos from cycle 11 at indicated time points: control (black, n = 15, N = 4); DPod1 shRNA (dark green, n = 11, N = 3), DPod1 shRNA 2 (light green, n = 10, N = 3); Coronin shRNA (dark blue, n = 9, N = 3), Coronin shRNA 2 (light blue, n = 12, N = 3); Cortactin shRNA (red, n = 12, N = 3), Cortactin shRNA 2 (orange, n = 11, N = 3). (J, L) Still images from live-imaging of apical F-actin dynamics in cycle 11 at t = 180, 270, 360 s from Wasp shRNA (J), and Wash shRNA (L). Images are identically leveled and imaged as (A). Scale bar = 5 μm. (K, M) Apical actin cap area dynamics (cycle 11) in control (black, n = 15, N = 4), Wasp shRNA (grey, n = 11, N = 3), and Wash shRNA (grey, n = 9, N = 3), respectively. Cap areas are normalized to the size at t = 0 s. (K’, M’) Absolute actin cap areas (μm2) in control, Wasp, and Wash-compromised embryos from cycle 11 at indicated time points. (K’’, M’’) Actin cap average intensity in control and ANRP-compromised embryos from cycle 11 at indicated time points. *: p<0.05. Bar graphs without * labeled in (K’–K’’, M’–M’’) are not significant.
 
 Interestingly, these results identify distinct functions for Cortactin, DPod1, Coronin, and Scar in building F-actin caps (Figure 3D–K), while disrupting Carmil, Wasp, and Wash had little effect on caps (Figure 3L,M, Figure 3—figure supplement 1J–M). Compromising Coronin function causes an immediate defect in the expansion phase of cap formation (Figure 3G,G’), with actin intensities at ~70% of control levels (Figure 3C,F,G’’). By contrast, disrupting DPod1 function produces caps that expand at near wild-type levels and possess wild-type areas until they fail to maintain area size in the later stages of apical cap function (Figure 3E,E’). However, these embryos have dramatically reduced actin intensities throughout the cap area (Figure 3E’’). In embryos with compromised Cortactin function, there is a normal burst of actin expansion, but after ~120 s actin caps do not continue to grow and steadily diminish in size, suggesting a role for Cortactin in growth at the cap periphery (Figure 3H,I–I’’). Interestingly, F-actin intensities within the smaller cap are at higher levels than control embryos (Figure 3I’’). Disrupting Scar function produces actin caps that show an early depletion of F-actin intensities followed by a delayed expansion phase in which the caps cannot fully reach control cap areas (Figure 3J,K–K’’). The specificity and reproducibility of these phenotype was confirmed with second, independent shRNA lines (Figure 3—figure supplement 1).
 
 Given these effects on the size, shape, and intensity of apical actin caps, and our results demonstrating that the Arp2/3 complex is the major regulator of actin behaviors in the apical cortex, we next determined the degree to which Arp2/3 complex recruitment (as proxied by an endogenous CRISPR Arp3:GFP) to the apical cortex was compromised in these various backgrounds. Disrupting the Formin Diaphanous had no effect on Arp3:GFP localization at apical structures (Figure 3N,O). By contrast, disruption of ArpC4, one of the Arp2/3 complex subunits, almost completely abolishes apical Arp3:GFP localization and intensity (Figure 3N,O). Interestingly, DPod1, which had the deepest impact on overall F-actin intensities, also had the largest effect on Arp3:GFP localization, while Coronin, Scar, and Cortactin showed intermediate Arp3:GFP recruitment defects. Together, these results reveal distinct functions for individual ANRPs, with DPod1 being required for overall actin intensities, while Cortactin and Scar are necessary for cap expansion and maintenance. These results are also consistent with Coronin having an early function, possibly in the cap center, and Cortactin/Scar possessing a later function in controlling cap growth and maintenance of cap areas at the periphery. Coronin and Scar have both intensity (at early phases) and cap size functions, and Carmil, Wasp, and Wash have either minor or no contributions to cap dynamics.
 
-## Coronin directs Cortactin localization to the cap periphery
+### Coronin directs Cortactin localization to the cap periphery
 
 To examine the expression and localization of the ANRPs during cap formation, we first used qPCR to examine the relative mRNA levels of each ANRP in the early syncytium. These results show that Coronin, Cortactin, and DPod1 are highly expressed and Carmil and Wash are present at low levels during syncytial stages (Figure 4—figure supplement 1G). Dia, Wasp, and Scar have intermediate expression. To further investigate the localization of each regulator, we generated an ANRP toolkit of expression constructs. We first generated either N- or C-terminal UAS GFP expression transgenic constructs (and, in many cases, both N- and C- terminal; Table 1), and then followed up with either CRISPR/Cas9-mediated homologous recombination to knock-in GFP at endogenous loci or generated antibodies to examine endogenous localization. A CRISPR-generated GFP knock-in at the endogenous Arp3 locus shows a strong localization to the apical cap with little localization to furrows, consistent with our functional data (Figure 3N, Figure 4—figure supplement 1A). Neither UAS-driven Carmil nor Wasp localized to apical actin caps (Figure 4E, Figure 4—figure supplement 1E), again consistent with the above functional analysis indicating their disruption had little impact on apical cap dynamics. UAS-driven Coronin, Cortactin, Scar, and DPod1 all displayed varying degrees of localization to actin caps (Figure 4A–D, Figure 4—source data 1), with endogenous CRISPR constructs or antibody stains showing similar patterns (Figure 4—figure supplement 1B–D). One intriguing facet of these regulators’ localization, however, is that Coronin and Cortactin possessed a complementary localization in mature caps, with Cortactin enrichment occurring at the cap periphery, while Coronin possesses an enrichment in the cap interior (temporal overlays in Figure 4F–I). This is also consistent with our functional analysis, in which Cortactin was required for cap growth late in the expansion phase and during later size maintenance, while Coronin was required for early cap growth. The complementary localization also suggests a possible antagonism between Coronin and Cortactin. To examine this, we imaged GFP:Cortactin embryos when Coronin was disrupted. Remarkably, this revealed that, in the absence of Coronin function, Cortactin fails to transition to the cap periphery, indicating that Coronin contributes to the ability of Cortactin to localize to the cell periphery to direct actin growth and the maintenance of cap edges (Figure 4J,K).
 
-## Faster recovery of F-actin networks after ANRP disruption
+![Figure 4.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig4-v2.jpg)
+
+**Figure 4.:** (A–E) Coronin (UAS:Coronin:GFP), Cortactin (UAS:GFP:Cortactin), DPod1 (UAS:DPod1:GFP), Scar (UAS:Scar:GFP), and Carmil (UAS:Carmil:GFP) localization on apical cap structures at t = 20, 180, 270, and 360 s. Additional Cortactin CRISPR and DPod1 CRISPR allele and anti-Coronin immunostaining data in Fig. Supplement 4-1. Scale bar = 5 μm. (F–H) Cortactin transitions to actin periphery through Coronin antagonism during cap growth. Overlapped images from t = 360 s (magenta) to t = 180 s (green) from live-imaging. Coronin (F) and Cortactin (H) images are derived from live-imaging of UAS:Coronin:GFP (F) and CRISPR GFP:Cortactin (Fig S6B), respectively. Scale bar = 2 μm. (J) CRISPR GFP:Cortactin t = 180 s (green) and 360 s (magenta) overlapped images in Coronin shRNA disrupted embryo. Scale bar = 2 μm. (G, I, K) Intensity profiles from (F), (H), and (J) yellow lines, respectively. Distance = 0 μm indicates the center of apical cap structures.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Still images from live-imaging of apical CRISPR Arp3:GFP (A) and CRISPR GFP:Cortactin (B) in cycle 11 at t = 20, 180, 270, 360 s. Scale bar = 3 μm. (C) Still images from live-imaging of apical CRISPR GFP:DPod1 in cycles 11–13. Scale bar = 10 μm. (D) Anti-Coronin (peptide antibody) staining of OreR (WT) and Coronin shRNA embryos in cycle 11 with phalloidin staining and merged channels. (E, F) Still images from live-imaging of apical Wasp:GFP (E) and Wash:GFP (F) in cycle 11 at t = 20, 180, 270, 360 s. Scale bar = 3 μm. (G) Actin regulators expression level during syncytial cycles by qPCR. Sqh (Myosin II regulatory light chain, MRLC) as positive control, and Rh3 (Rhodopsin 3) as negative control. The data are normalized to Wasp. DPod1, Coronin, Dia, Wasp, Scar, and Carml are tested by two independent sets of primers.
+
+**Table 1.**
+ Arp2/3 and ANRPs toolkit.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>Vector</th>
+      <th>Chromosome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CRISPR Arp3:GFP</td>
+      <td>Endogeous</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>CRISPR GFP:Cortactin</td>
+      <td>Endogeous</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>CRISPR GFP:DPod1</td>
+      <td>Endogeous</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>UAS:GFP:Cortactin</td>
+      <td>pUAST</td>
+      <td>X, II, III</td>
+    </tr>
+    <tr>
+      <td>UAS:Cortactin:GFP</td>
+      <td>pUAST,pUASp</td>
+      <td>X, II, III</td>
+    </tr>
+    <tr>
+      <td>UAS:mCherry:Cortactin</td>
+      <td>pUASp</td>
+      <td>II, III</td>
+    </tr>
+    <tr>
+      <td>UAS:DPod1:GFP</td>
+      <td>pUAST</td>
+      <td>X, II, III</td>
+    </tr>
+    <tr>
+      <td>UAS:Coronin:GFP</td>
+      <td>pUAST</td>
+      <td>II, III</td>
+    </tr>
+    <tr>
+      <td>UAS:GFP:Carmil FL</td>
+      <td>pUAST</td>
+      <td>X, II, III</td>
+    </tr>
+    <tr>
+      <td>UAS:Carmil FL:GFP</td>
+      <td>pUAST</td>
+      <td>X, II, III</td>
+    </tr>
+    <tr>
+      <td>UAS:Scar:GFP</td>
+      <td>pUASp</td>
+      <td>II, III</td>
+    </tr>
+    <tr>
+      <td>UAS:mito:mCherry:Cortactin</td>
+      <td>pUASp</td>
+      <td>II, III</td>
+    </tr>
+    <tr>
+      <td>UAS:mito:mCherry:Coronin</td>
+      <td>pUASp</td>
+      <td>X, II, III</td>
+    </tr>
+    <tr>
+      <td>UAS:mito:mCherry:DPod1</td>
+      <td>pUASp</td>
+      <td>II, III</td>
+    </tr>
+    <tr>
+      <td>UAS:mito:mCherry:Scar</td>
+      <td>pUASp</td>
+      <td>II, III</td>
+    </tr>
+    <tr>
+      <td>UAS:mito:mCherry</td>
+      <td>pUASp</td>
+      <td>II, III</td>
+    </tr>
+  </tbody>
+</table>
+
+### Faster recovery of F-actin networks after ANRP disruption
 
 We next examined the dynamics of how actin networks in the early embryo form. To do so, we analyzed recovery rates after photobleaching. As a starting point, we measured recovery in cortical cap populations and in furrow-associated actin populations at ~120 s (when caps are approaching their early maximum in size) into cycle 11. These results revealed that actin is highly dynamic, with a half-time of recovery (T50) of only 8.2 s in the cap and a low immobile fraction of 17% (Figure 5A–D, Figure 5—source data 1). Furrow-associated actin is more stable with a T50 of 15.1 s (Figure 5C). These recovery rates are nearly identical when actin is directly labeled with GFP, again demonstrating that tracking actin cap behaviors with the MoeABD:GFP accurately reflects actin dynamics and that any on–off actin-binding rates by MoeABD:GFP are significantly slower than actin turnover rates (Figure 1—figure supplement 1D–F).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig5-v2.jpg)
+
+**Figure 5.:** (A) Still images from FRAP recovery of F-actin live-imaging (UAS:moeABD:mCh) in cycle 11 embryos at t = −1s (1 s before photobleaching), 0 s (photobleaching), 4 s, 8 s, 12 s, 24 s, and 32 s. Scale bar = 5 μm. (B) FRAP recovery dynamics in control apical actin cap at cycle 11. Intensity is normalized to the value at t = −1s. (C, D) FRAP T50 and immobile fraction of F-actin at apical cap (n = 6) and furrow (n = 3) structures in cycle 11. (E, F) FRAP T50 and immobile fraction of F-actin at apical cap structures from control (n = 13), ArpC4 shRNA (n = 14), and Dia shRNA (n = 9) in cycle 11 embryos showing faster actin recovery rates in ArpC4 and Dia shRNA embryos. ns: not significant, ***: p<0.005. (G) Schematic of Arp2/3 and Dia competition for limited G-actin pool.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) FRAP T50 and immobile fraction of F-actin in control and indicated actin regulator compromised embryos in cycle 11. ns: not significant, *: p<0.05, **: p<0.005, ***: p<0.0005. Control: n = 13; ArpC4 shRNA: n = 14; Dia shRNA: n = 9; DPod1 shRNA: n = 9; Cortactin shRNA: n = 8; Coronin shRNA: n = 8; Scar shRNA: n = 7 (C, D) FRAP T50 and immobile fraction of F-actin in control (n = 13), Latrunculin B (LatB) (n = 9), and Jasplakinolide (Jasp) injected embryos (n = 8), or performed in ArpC4 shRNA embryos (n = 9) and ArpC4 shRNA with Jasp injection (n = 8). (E) Individual FRAP representative examples in the indicated backgrounds. *: p<0.05, ***: p<0.0005.
 
 We then measured recovery rates when the two major actin nucleating factors in the early embryo, Arp2/3 and Diaphanous, are disrupted. Our expectation was that as these networks are essential for cap growth and actin intensities, we would observe a longer recovery time after photobleaching. Surprisingly, we found that actin recovery is much faster when either Arp2/3 or Diaphanous function is disrupted. Indeed, although actin intensities are much reduced, the half-time to recovery of these intensities is nearly twice as fast as in wild-type embryo (4.2 s and 4.1 s in ArpC4 and Diaphanous shRNA embryos, respectively; Figure 5E). To examine this further, we analyzed what would happen to recovery rates when more actin is bound into stable filaments and less G-actin is available. We therefore injected embryos with low levels of jasplakinolide to stabilize F-actin – under these conditions, recovery times increased (Figure 5—figure supplement 1C–D). Similarly, reducing the G-actin availability by low-dose Latrunculin B injection also slowed recovery times (Figure 5—figure supplement 1C–D). These results are intriguing, and at least two potential models could explain these behaviors: (1) the enhanced FRAP recovery times are driven by increased rates of nucleation and polymerization due to higher free G-actin pools or (2) higher FRAP recovery rates could be caused by increased actin turnover. Given that both Diaphanous and Arp2/3 complex function are deeply implicated in directing actin growth and nucleation, and the fact that they are chronically depleted in these experiments, we would suggest that these results support the first model and argues that these complexes are in a strong competition for a limited pool of available G-actin monomers. Consistent with this, FRAP analysis after disrupting Cofilin function (known as twinstar in Drosophila) did not significantly slow down FRAP recovery times (Figure 5—figure supplement 1A,B).
 
 Finally, we measured cap recovery rates when the individual ANRPs were disrupted. Similar to disrupting Arp2/3 or Dia function, compromising DPod1, Coronin, Cortactin, or Scar led to faster recovery times, although to varying degrees (Figure 5—figure supplement 1A–B,E). Interestingly, DPod1 disruption was almost comparable to disrupting Arp2/3 function in its effect on recovery times and immobile fractions. This is consistent with our data indicating that DPod1 has the strongest impact on F-actin intensities in the cap. By analogy to the above, this could also suggest that actin intensities in the various disrupted backgrounds appear to well-reflect the degree to which specific actin networks are the predominant G-actin utilizing networks in the embryo.
 
-## Nucleator recruitment strengths of ANRP regulators
+### Nucleator recruitment strengths of ANRP regulators
 
 As we have examined the localization and function of the different ANRPs in cortical cap formation, and as the Arp2/3 complex is the major regulator of new actin in the apical cortex, we wanted to test the strength of Arp2/3 recruitment by each ANRP in vivo. Although, as discussed above, the ANRPs have been implicated in several different mechanisms of actin-regulation, many of the ANRPs have been shown to either activate or stabilize Arp2/3 complex function (Uruno et al., 2001; Weaver et al., 2002; Uetrecht and Bear, 2006; Pollitt and Insall, 2009; Bhattacharya et al., 2016). We therefore adapted a mitochondrial-tagging assay (Shin et al., 2020) to recruit ANRPs to the mitochondria and then tested the degree to which Arp3 and F-actin become ectopically localized. Since DPod1, Cortactin, Coronin, and Scar had the strongest effects on actin cap formation, we fused each of these ANRPs to mCherry and an outer mitochondrial membrane mito-tag (Tom70-HA, 58 amino acids). Intriguingly, the mito-tagged ANRPs are each capable of recruiting Arp3:GFP, although an ANRP-less mito-tag control did not (Figure 6A–J, Figure 6—source data 1). Furthermore, they also appear able to activate Arp2/3 complex function, as filamentous actin is observed at the mito-tag puncta (Figure 6—figure supplement 1B–E). To measure the strength of recruitment, we quantified the colocalization percentage and relative Arp3:GFP intensity as normalized to mito-ANRP:mCherry intensity. Of the tested ANRPs, mito-DPod1 possessed the strongest colocalization and recruitment ability (Figure 6C–D). By contrast, Coronin had the lowest colocalization and recruitment ability, while Cortactin and Scar had intermediate Arp3-recruiting activities (Figure 6E–J). These results are consistent with our functional analysis, which indicated that DPod1 is most important for overall actin cap intensities and suggests that a high potency ANRP, DPod1, has been selected to drive overall actin levels, while Coronin, Cortactin, and Scar largely have a spatial function in driving cap expansion. These results also provide some insight on the ANRPs relative potencies, as Cortactin demonstrates a high percent of colocalization, but relatively low recruitment ability, while Scar has moderate Arp3 colocalization but high recruitment ability (Figure 6O, P). Although it was not possible to recover flies that had pair-wise mito-tag combinations of every mito-ANRP, we were able to analyze embryos that possessed both Coronin and Cortactin mito-tags, as well as embryos that had both DPod1 and Scar mito-tags. Intriguingly, the Arp3 localization and recruitment ability was very low in the double mito-Coro+mito-Cort, while Arp3 recruitment was very high in the double mito-DPod1+mito-Scar background (Figure 6O,P). This is again consistent with a potential inhibitory interaction between Coronin and Cortactin and with DPod1 and Scar being potent activators of Arp2/3 recruitment and activity.
 
-## ANRPs function in building cap properties essential for apical nuclear anchoring
+![Figure 6.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig6-v2.jpg)
+
+**Figure 6.:** (A, C, E, G, I, K, M) Images of CRISPR Arp3:GFP with mito-tagged mCherry control (A) or mCherry:ANRPs (C, E, G, I, K, M) in cells at stage 12. Scale bar = 3 μm. (B, D, F, H, J, L, N) Intensity line plots of CRISPR Arp3:GFP and different mito-ANRP measured from yellow dashed lines in (A, C, E, G, I, K, M). (O) Percent of Arp3:GFP-positive compartments that colocalize with mito-ANRP puncta. Mito-control tag (no ANRP): n = 150; N = 4; DPod1: n = 338, N = 6; Cortactin: n = 198, N = 3; Coronin: n = 80, N = 4; Scar: n = 74, N = 6; Coro + Cort: n = 28, N = 4; DPod1 + Scar: n = 282, N = 4. Similar data trends were observed after calculation of Pearson correlation coefficients with Mito-control tag (no ANRP): r = −0.036 ± 0.025; DPod1: r = 0.625 ± 0.033; Cortactin: r = 0.492 ± 0.039; Coronin: r = 0.234 ± 0.028; Scar: r = 0.313 ± 0.024; Coro + Cort: r = 0.0231 ± 0.012; DPod1 + Scar: r = 0.551 ± 0.020. Reported Pearson values are (mean) ± (standard error of mean). (P) Arp3 recruitment ability (normalized GFP:mCherry intensity ratio in Arp3:GFP-positive mito-ANRP compartments) by mito-tagged DPod1, Cortactin, Coronin, and Scar. DPod1: n = 26, N = 3; Cortactin: n = 29, N = 3; Coronin: n = 27, N = 4; Scar: n = 40, N = 3; Coro + Cort: n = 25, N = 4; DPod1 +Scar: n = 46, N = 5.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Still images of mitochondrial morphology from YFP:mito in stage 12 embryo. Scale bar = 1 μm. (B–E) Staining images of CRISPR Arp3:GFP (anti-GFP) with mito-tagged mCherry:ANRPs (anti-dsRed) and F-actin (Phalloidin) in cells at stage 12. (F) Control staining images of CRISPR Arp3:GFP (anti-GFP) with mCherry-tagged mitochondrial marker (anti-dsRed) and F-actin (Phalloidin) in cells at stage 12. Main merge panel is two-way merge between Arp3:GFP and mito:mCh, inset is three-way merge between all channels. Scale bar = 1 μm.
+
+### ANRPs function in building cap properties essential for apical nuclear anchoring
 
 Finally, we wanted to determine what the physiological impact of having cortical actin caps with different expansion rates, sizes, and intensities would be on development. As F-actin caps have been implicated in the apical anchorage and positioning of nuclei (Foe and Alberts, 1983; Sullivan et al., 1993; Blankenship and Wieschaus, 2001), we examined what the critical actin properties are that mediate nuclear anchorage against the substantial mitotic flows during division cycles. Loss of apical anchorage is readily apparent in Arp2/3 compromised embryos, with multiple nuclear fallout events being observed in a single cycle (Figure 7A, Figure 7—source data 1). In previous work, we have shown that a failure to properly segregate chromosomes led to aneuploid or polyploid nuclei and subsequent loss of apical nuclear positioning (Xie and Blankenship, 2018). However, here a different mechanism is at work, as we observed that nuclei that underwent apparently normal cell divisions still lost apical positioning in the Arp2/3 compromised background (Figure 7A). We therefore correlated nuclear fallout with cortical cap properties such as intensity and cap expansion rates in the various ANRP backgrounds. This analysis revealed that the key property for nuclear anchorage was the growth in cap areas (Figure 7B), while overall cap intensities had little correlation to nuclear fallout rates (Figure 7C). These data suggest that cortical actin cap expansion and organization, as mediated by Cortactin, Coronin, and Scar, are essential for nuclear positioning and the maintenance of apical nuclear-cortex attachment sites.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/63046/elife-63046-fig7-v2.jpg)
 
-**Figure 7.:** (A) Nuclei (marked by Histone:RFP) lose apical anchorage and fall into the embryonic interior in ArpC4 shRNA embryos during cycle 12 at t = 0 s, 90 s, 180 s, 270 s, and 540 s. Medial z-layer (−5 μm from apical most portion of embryo) indicates plane of normal nuclear positioning, and basal layer (−10 μm) images are shown. Asterisk, arrowhead, and arrow indicate individual falling-out nuclei. Scale bar = 5 μm. (B) Correlation of nuclear fallout rates to cap area expansion rates (t = 0–120 s) in indicated backgrounds (cycle 13 embryos). (C) Correlation of nuclear fallout rates to average actin cap intensities (t = 120 s) in indicated backgrounds (cycle 13 embryos). (B, C) Control (n > 12, N > 3), Dia shRNA (n = 10, N = 3), ArpC4 shRNA (n = 11, N = 3), DPod1 shRNA (n = 11, N = 3), Coronin shRNA (n = 9, N = 3), Cortactin shRNA (n = 12, N = 3), Scar shRNA (n = 11, N = 3), and Carmil shRNA (n = 9, N = 3). Dashed lines indicate linear regression fitting. P: Pearson’s correlation coefficient, R2: coefficient of determination.Figure 7—source data 1.
+**Figure 7.:** (A) Nuclei (marked by Histone:RFP) lose apical anchorage and fall into the embryonic interior in ArpC4 shRNA embryos during cycle 12 at t = 0 s, 90 s, 180 s, 270 s, and 540 s. Medial z-layer (−5 μm from apical most portion of embryo) indicates plane of normal nuclear positioning, and basal layer (−10 μm) images are shown. Asterisk, arrowhead, and arrow indicate individual falling-out nuclei. Scale bar = 5 μm. (B) Correlation of nuclear fallout rates to cap area expansion rates (t = 0–120 s) in indicated backgrounds (cycle 13 embryos). (C) Correlation of nuclear fallout rates to average actin cap intensities (t = 120 s) in indicated backgrounds (cycle 13 embryos). (B, C) Control (n > 12, N > 3), Dia shRNA (n = 10, N = 3), ArpC4 shRNA (n = 11, N = 3), DPod1 shRNA (n = 11, N = 3), Coronin shRNA (n = 9, N = 3), Cortactin shRNA (n = 12, N = 3), Scar shRNA (n = 11, N = 3), and Carmil shRNA (n = 9, N = 3). Dashed lines indicate linear regression fitting. P: Pearson’s correlation coefficient, R2: coefficient of determination.
 
 ## Discussion
 
@@ -88,40 +236,590 @@ Finally, although much of our focus has been on the ANRPs in terms of guiding F-
 
 ## Materials and methods
 
-## Fly stock and genetics
+### Fly stock and genetics
 
 All stocks were maintained at 25°C. Genotypes used in this study are listed in Tables 1 and 2. To generate endogenous GFP reporter constructs, the CRISPR/Cas9 system was used to knock-in an N-terminal (downstream of ATG site) or C-terminal (upstream of stop codon) GFP tag through the use of a donor construct with 1 kb or 1.5 kb homologous sequences flanking GFP. The homology donors were constructed in pBluescript SK(-). The upstream and downstream guide RNAs were designed in flyCRISPR (https://flycrispr.org/) and inserted into pU6-BbsI-chiRNA. Genomic PAM sites were pre-verified by DNA sequencing to avoid single-nucleotide polymorphisms present in different Drosophila lines. Donor constructs (500 ng/µL) and guide RNA constructs (100 ng/µL) were mixed and injected into nos-Cas9 expressing embryos (BestGene). Potential insertions were balanced, and flies were screened by genomic PCR (Platinum Taq DNA polymerase, Invitrogen) after genome extraction from larva or adults (E.Z.N.A insect DNA kit, Omega Biotek).
 
+**Table 2.**
+ Stocks and genetics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Stocks</th>
+      <th>Source</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>General stocks</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P[mat-tub-Gal4] mat67</td>
+      <td>D. St Johnston</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P[mat-tub-Gal4] mat15</td>
+      <td>D. St Johnston</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UAS:mCherry:MoesinABD</td>
+      <td>T. Millard</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Histone:RFP</td>
+      <td>BDSC</td>
+      <td>BDSC 23650 III; BDSC 23651 II</td>
+    </tr>
+    <tr>
+      <td>UAS:GFP:Act88F</td>
+      <td>BDSC</td>
+      <td>BDSC #9253</td>
+    </tr>
+    <tr>
+      <td>Wasp:sGFP</td>
+      <td>VDRC</td>
+      <td>VDRC #318474</td>
+    </tr>
+    <tr>
+      <td>Wash:GFP</td>
+      <td>BDSC</td>
+      <td>BDSC #81644</td>
+    </tr>
+    <tr>
+      <td>YFP:mito</td>
+      <td>BDSC</td>
+      <td>BDSC #7194</td>
+    </tr>
+    <tr>
+      <td>UAS:mCh:mitoOMM</td>
+      <td>BDSC</td>
+      <td>BDSC #66532, 66533</td>
+    </tr>
+    <tr>
+      <td>nos-Cas9</td>
+      <td>Bestgene</td>
+      <td>NIG-FLY #CAS-0001, CAS-0003</td>
+    </tr>
+    <tr>
+      <td>w1118</td>
+      <td>Bestgene</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>shRNA (Valium) lines</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ArpC4 shRNA</td>
+      <td>DRSC/TRiP</td>
+      <td>BDSC #41888</td>
+    </tr>
+    <tr>
+      <td>Dia shRNA</td>
+      <td>DRSC/TRiP</td>
+      <td>BDSC #35479</td>
+    </tr>
+    <tr>
+      <td>DPod1 shRNA</td>
+      <td>DRSC/TRiP</td>
+      <td>BDSC #41705</td>
+    </tr>
+    <tr>
+      <td>Coronin shRNA</td>
+      <td>DRSC/TRiP</td>
+      <td>BDSC #40841</td>
+    </tr>
+    <tr>
+      <td>Cortactin shRNA</td>
+      <td>DRSC/TRiP</td>
+      <td>BDSC #44425</td>
+    </tr>
+    <tr>
+      <td>Carmil shRNA</td>
+      <td>DRSC/TRiP</td>
+      <td>BDSC #41686</td>
+    </tr>
+    <tr>
+      <td>Scar shRNA</td>
+      <td>DRSC/TRiP</td>
+      <td>BDSC #51803</td>
+    </tr>
+    <tr>
+      <td>Wasp shRNA</td>
+      <td>DRSC/TRiP</td>
+      <td>BDSC #51802</td>
+    </tr>
+    <tr>
+      <td>Wash shRNA</td>
+      <td>DRSC/TRiP</td>
+      <td>BDSC #62866</td>
+    </tr>
+    <tr>
+      <td>Cofilin shRNA</td>
+      <td>DRSC/TRiP</td>
+      <td>BDSC #33670</td>
+    </tr>
+    <tr>
+      <td>DPod1 shRNA 2</td>
+      <td>VDRC/KK</td>
+      <td>VDRC #108886</td>
+    </tr>
+    <tr>
+      <td>Coronin shRNA 2</td>
+      <td>VDRC/KK</td>
+      <td>VDRC #109644</td>
+    </tr>
+    <tr>
+      <td>Cortactin shRNA 2</td>
+      <td>VDRC/KK</td>
+      <td>VDRC #105289</td>
+    </tr>
+  </tbody>
+</table>
+
 To generate UAS GFP-tagged fly stocks, N-terminal or C-terminal eGFP was inserted into pUASp or pUASt along with the coding sequence for a given gene. Mito-tagged constructs were made by inserting Tom70-HA (generous gift of S. Munro lab) at the N-terminus of mCh:ANRPs in pUASp. The constructs were injected into embryos (BestGene) for transgene recovery and balanced. UAS constructs were crossed to P[mat-tub-Gal4] mat67; P[mat-tub-Gal4] mat15 (mat 67; 15) maternal drivers for Gal4-driven expression. To knockdown gene function, shRNA lines were also crossed to mat-tub-Gal4 lines, and females were recovered from either mat-67-Gal4; mat-15-Gal4 double Gal4 lines for high shRNA expression or to individual mat-67-Gal4 or mat-15-Gal4 for moderate shRNA expression.
 
-## Microscopy and time-lapse imaging
+### Microscopy and time-lapse imaging
 
 Spinning-disk confocal microscopy was performed on a Zeiss/Solamere Technologies Group spinning-disk with a 63 × 1.4 NA objective lens (image stacks were acquired every 5 s and were composed of 15 z-layers with 0.3 μm z-steps), or Olympus Fluoview FV3000 confocal laser scanning microscope with 40× or 60× 1.35 NA objective lens (images acquired every 5 s at 12 ms/pixel exposure settings). Embryos were collected on yeasted apple juice agarose plates. After dechorionation in 50% bleach, embryos were transferred to an air-permeable membrane and mounted in Halocarbon 27 oil (Sigma). A coverslip was placed on embryos for live-imaging. For FRAP experiments, Olympus Fluoview FV3000 confocal laser scanning microscope with 40× or 60× 1.35 NA objective lens was used. Images were acquired every 1 s at 2 ms/pixel exposure settings. For drug injection, after dechorionation embryos were glued on a coverslip and dehydrated for 12–15 min, covered in Halocarbon oil 700 (Sigma). Jasplakinolide (20 µg/mL) and Latrunculin B (200 nM) were injected into embryos, followed by regular imaging protocol for FRAP and live-imaging. MicroManager 1.4, FIJI/ImageJ, and Olympus Fluoview software were used for image collection and analysis. All movies were acquired at 25°C.
 
-## Embryo fixation, antibodies, immunostaining, and imaging
+### Embryo fixation, antibodies, immunostaining, and imaging
 
 Dechorionated embryos were fixed at the interface of heptane and either 18.5% paraformaldehyde (Electron Microscopy Sciences) (Postner and Wieschaus, 1994) for 30 min for actin cap staining or 4% paraformaldehyde for 70 min for mito-tagged embryo staining, in 0.1 M sodium phosphate buffer (pH 7.4). The embryos were manually devitellinized and stained with rabbit anti-GFP (1:1000, Invitrogen) and/or anti-dsRed (1:500, Invitrogen). Alexa 546 or 647-phalloidin (1:200, Invitrogen), or secondary antibodies conjugated with Alexa 488 or 568 (Invitrogen), were used at 1:500. Coronin peptide antibody was used at 1:100 dilution. Coronin peptide antibody was generated by GenScript as peptide-KLH conjugation in New Zealand rabbits (sequence in Table 3). The affinity-purified antibody was used at 1:100 dilution (~10 μg/mL). Embryos were mounted in ProLong Gold (Life Technologies). Olympus Fluoview FV3000 confocal laser scanning microscopy was used for immunostained embryos imaging. Exposure settings of 8 or 12 ms/pixel were used for image acquisition.
 
-## Actin cap dynamics measurements
+**Table 3.**
+ Reagents.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Source</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibodies and dyes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-GFP</td>
+      <td>Invitrogen</td>
+      <td>A11122</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-dsRed</td>
+      <td>Clontech</td>
+      <td>632393</td>
+    </tr>
+    <tr>
+      <td>Alexa Fluor Goat anti rabbit 488</td>
+      <td>Invitrogen</td>
+      <td>A11034</td>
+    </tr>
+    <tr>
+      <td>Alexa Fluor Goat anti mouse 568</td>
+      <td>Invitrogen</td>
+      <td>A11031</td>
+    </tr>
+    <tr>
+      <td>Alexa 568-Phalloidin</td>
+      <td>Invitrogen</td>
+      <td>Cat# A12380</td>
+    </tr>
+    <tr>
+      <td>Alexa 647-Phalloidin</td>
+      <td>Invitrogen</td>
+      <td>Cat# A22287</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-Dia</td>
+      <td>Wasserman lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemicals and kits</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Halocarbon oil 27</td>
+      <td></td>
+      <td>Cat# H8773</td>
+    </tr>
+    <tr>
+      <td>Halocarbon oil 700</td>
+      <td></td>
+      <td>Cat# H8898</td>
+    </tr>
+    <tr>
+      <td>Paraformaldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# 15714</td>
+    </tr>
+    <tr>
+      <td>ProLong Gold</td>
+      <td>Invitrogen</td>
+      <td>Cat# P36931</td>
+    </tr>
+    <tr>
+      <td>Jasplakinolide</td>
+      <td>Santa Cruz Biotech</td>
+      <td>Cat# sc202191</td>
+    </tr>
+    <tr>
+      <td>Latrunculin B</td>
+      <td>Sigma</td>
+      <td>Cat# L5288</td>
+    </tr>
+    <tr>
+      <td>QIAShredder</td>
+      <td>QIAGEN</td>
+      <td>Cat# 79654</td>
+    </tr>
+    <tr>
+      <td>Quick-RNA MicroPrep</td>
+      <td>Zymo Research</td>
+      <td>Cat# R1050</td>
+    </tr>
+    <tr>
+      <td>QuantiTech Reverse Transcription Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 205310</td>
+    </tr>
+    <tr>
+      <td>QuantiTech SYBR Green RT-PCR</td>
+      <td>QIAGEN</td>
+      <td>Cat# 204141</td>
+    </tr>
+    <tr>
+      <td>Q5 site-directed mutagenesis EZNA insect DNA kit</td>
+      <td>NEB Omega Biotek</td>
+      <td>Cat# E0554S Cat# D0926-01</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>iQ5</td>
+      <td>Bio-Rad</td>
+      <td>bio-rad.com</td>
+    </tr>
+    <tr>
+      <td>FIJI/ImageJ</td>
+      <td>Schindelin et al., 2012</td>
+      <td>Fiji.sc</td>
+    </tr>
+    <tr>
+      <td>Micromanager 1.4</td>
+      <td>Edelstein et al., 2014</td>
+      <td>micro-manager.org</td>
+    </tr>
+    <tr>
+      <td>OriginPro</td>
+      <td>OriginLab</td>
+      <td>originlab.com</td>
+    </tr>
+    <tr>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>adobe.com</td>
+    </tr>
+    <tr>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>adobe.com</td>
+    </tr>
+    <tr>
+      <td>Peptides and oligonucleotides</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Coronin peptide for antibody</td>
+      <td>GenScript</td>
+      <td>CLPAKKAGNILNKPR</td>
+    </tr>
+    <tr>
+      <td>TOM70-HA</td>
+      <td>S. Munro lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>qPCR primers</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sqh(MRLC)</td>
+      <td>QuantiTect</td>
+      <td>Cat# QT00499065</td>
+    </tr>
+    <tr>
+      <td>Rh3</td>
+      <td>QuantiTect</td>
+      <td>Cat# QT00978481</td>
+    </tr>
+    <tr>
+      <td>DPod1 set1</td>
+      <td>QuantiTect</td>
+      <td>Cat# QT00499464</td>
+    </tr>
+    <tr>
+      <td>DPod1 set2</td>
+      <td>Eurofins</td>
+      <td>5′-TCCTCACCAAGAACCACTGC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-GTGGGTGGGAACAGATCGTC</td>
+    </tr>
+    <tr>
+      <td>Coronin set1</td>
+      <td>QuantiTect</td>
+      <td>Cat# QT00940737</td>
+    </tr>
+    <tr>
+      <td>Coronin set2</td>
+      <td>Eurofins</td>
+      <td>5′-ACAGGCTTCAACCGTAGCTC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-GAACATTACGCCGTTGGACG</td>
+    </tr>
+    <tr>
+      <td>Cortactin set1</td>
+      <td>QuantiTect</td>
+      <td>Cat# QT00979020</td>
+    </tr>
+    <tr>
+      <td>Cortactin set2</td>
+      <td>Eurofins</td>
+      <td>5′-TTCGGAGTGCAAGAGGATCG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-GCACTCCAAATTTGCCTCCG</td>
+    </tr>
+    <tr>
+      <td>Arp14D</td>
+      <td>QuantiTect</td>
+      <td>Cat# QT00923419</td>
+    </tr>
+    <tr>
+      <td>ArpC1(sop2)</td>
+      <td>QuantiTect</td>
+      <td>Cat# QT00936222</td>
+    </tr>
+    <tr>
+      <td>Dia set1</td>
+      <td>QuantiTect</td>
+      <td>Cat# QT00939477</td>
+    </tr>
+    <tr>
+      <td>Dia set2</td>
+      <td>Eurofins</td>
+      <td>5′-CAAATCGAAGGAGGAGCGACA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-CCCATTCTGCAGGTATTCCAC</td>
+    </tr>
+    <tr>
+      <td>Wasp set1</td>
+      <td>QuantiTect</td>
+      <td>Cat# QT00984641</td>
+    </tr>
+    <tr>
+      <td>Wasp set2</td>
+      <td>Eurofins</td>
+      <td>5′-ATGGCATGGAGGTGGTCAAG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-TTACGCGTCTCTATGGTGGC</td>
+    </tr>
+    <tr>
+      <td>Scar set1</td>
+      <td>QuantiTect</td>
+      <td>Cat# QT00934584</td>
+    </tr>
+    <tr>
+      <td>Scar set2</td>
+      <td>Eurofins</td>
+      <td>5′-ACGATCCATAGAACCCGTGC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-GGCGAATGATGTTCGTCAGC</td>
+    </tr>
+    <tr>
+      <td>Carmil set1</td>
+      <td>Eurofins</td>
+      <td>5′-CCACTGGTGGGTCGTAAGTC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-GGCATAGACGTCTCCTCAGC</td>
+    </tr>
+    <tr>
+      <td>Carmil set2</td>
+      <td>Eurofins</td>
+      <td>5′-GCTGAGGAGACGTCTATGCC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-ATAACACTACCCTCGCCTGC</td>
+    </tr>
+    <tr>
+      <td>Wash</td>
+      <td>Eurofins</td>
+      <td>5′-GCGTAGGAAGAGTGTGGGAC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-GTGATGGAATTGCGCTCGTC</td>
+    </tr>
+    <tr>
+      <td>Guide RNAs for CRISPR</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Arp3:GFP</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chiRNA1</td>
+      <td>Eurofins</td>
+      <td>5′-CTTCGCTATCAGGTGTGTCACACGA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-AAACTCGTGTGACACACCTGATAGC</td>
+    </tr>
+    <tr>
+      <td>chiRNA2</td>
+      <td>Eurofins</td>
+      <td>5′-CTTCGCCAGTTCAACCCCCTATCTA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-AAACTAGATAGGGGGTTGAACTGGC</td>
+    </tr>
+    <tr>
+      <td>GFP:Cortactin</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chiRNA1</td>
+      <td>Eurofins</td>
+      <td>5′-CTTCGGGGCCGACAAAGCCGGATC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-AAACGATCCGGCTTTGTCGGCCCC</td>
+    </tr>
+    <tr>
+      <td>chiRNA2</td>
+      <td>Eurofins</td>
+      <td>5′-CTTCGGTGGCCTGAATCTGGTGAC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-AAACGTCACCAGATTCAGGCCACC</td>
+    </tr>
+    <tr>
+      <td>GFP:DPod1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chiRNA1</td>
+      <td>Eurofins</td>
+      <td>5′-CTTCGAGCGACTGAGAGGGAGCCAC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-AAACGTGGCTCCCTCTCAGTCGCTC</td>
+    </tr>
+    <tr>
+      <td>chiRNA2</td>
+      <td>Eurofins</td>
+      <td>5′-CTTCGCGATGTTGTTACCGTACGTC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eurofins</td>
+      <td>5′-AAACGACGTACGGTAACAACATCGC</td>
+    </tr>
+    <tr>
+      <td>DPod1 mutated PAM sites in homologous constructs</td>
+      <td>This study</td>
+      <td>5′-CCACCGGACTAGTGACACTCGAC 5′-GCAGCGCACAACTGACACTCGAC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td rowspan="2">This study</td>
+      <td rowspan="2">5′-GTGGGCAGCTACCAGACGTACGG 5′-GTGGGCAGTTATCAAACCTATGG</td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Actin cap dynamics measurements
 
 Apical cap dynamics were measured by live-imaging embryos with the F-actin marker UAS:mCh:MoeABD. UAS:mCh:MoeABD displays very similar dynamics to directly labeled actin (Figure 1—figure supplement 1), suggesting that on/off rates of the moesin actin binding domain are much slower than actin assembly/disassembly rates, and mCh:MoeABD marks similar structures as phalloidin reveals (Figure 1—figure supplement 1; Blankenship et al., 2006). UAS:mCh:MoeABD has also been used extensively in Drosophila as an F-actin reporter (Kiehart et al., 2000; Blankenship et al., 2006; Spracklen et al., 2014). The measured apical cap region was determined by the region 0.9 μm (3 z-planes) below the apical most layer in which the embryo could be detected. The apical cap area was selected through manual segmentation based on the cap F-actin boundary after background subtraction. Area, average intensity (average intensity values of the measured pixels, and not summed intensities across the total cap), and standard deviation were quantified in FIJI/ImageJ. Normalization was used to reduce variability due to different initial absolute cap areas that occurs naturally in different embryos. To do so, cap measurement traces were aligned to the first time point of cap elongation phase when the centrosomes separate. Cap behaviors were then tracked backwards to the first moment that a new cap was clearly present (this is approximately t = −180 s from the alignment point at cycle 11), and cap area at this time was used as the initial t = 0 area. Cap areas were normalized to the cap size at cap initiation. This gave the most robust and reproducible measurements of changes in cap area.
 
-## Intensity measurements
+### Intensity measurements
 
 For Arp3:GFP intensity measurements, a circular region (7705 px2, ~207 μm2) was quantified in each cap with FIJI/ImageJ. For line intensity measurements, the intensity profiles were quantified in FIJI/ImageJ and smoothed by averaging three neighboring points.
 
-## FRAP intensity measurements
+### FRAP intensity measurements
 
 Photobleaching was performed on an Olympus Flouview FV3000 confocal laser scanning microscope with 60 × 1.35 NA objective lens as described above. Five hundred and sixty-one nanometer laser photobleaching of ROIs were drawn to encompass single individual caps, or specific regions of caps (center versus periphery), and ROI data was used for analysis of actin recovery rates. Each single cap FRAP was collected from a single embryo (multiple cap FRAP data were not acquired from a given embryo). Images were acquired every 1 s at 2 ms/pixel exposure settings for a total of 60–120 s. ImageJ was used for measuring cap total intensity from FRAP data. To minimize potential effects of focal plane or biological drift, two non-FRAP caps were measured and used for normalization. Normalized intensity = ((FRAPed cap intensity − background) * FRAPed cap area) / ((non-FRAPed cap intensity − background) * non-FRAPed cap area). To calculate the t50 and immobile fraction, we fitted the FRAP data to two-phase association in Graphpad Prism eight with SpanFast = (Plateau-Y0) (%Fast*0.01); SpanSlow = (Plateau-Y0) (100-%Fast*0.01); Y=Y0 + (SpanFast) (1-exp(-KFast*X)) + (SpanSlow) (1-exp(-KSlow*X)). X is time in seconds; Y is total cap intensity over time. Y0 is the cap total intensity immediately after FRAP (t = 0 s). We assumed that the fast half-time measurement indicates the fluorescence recovery by the surrounding G-actin pool addition and turnover, while the slow half-time was produced through the minor cap expansion and intensity increases during this short time period. Fast half-time measurements and fractions are reported as the measured t50 and immobile fractions. Immobile fractions = (Y-1− PlateauFast) / (Y-1− Y0). PlateauFast = 2 * SpanFast * (1-exp(-KFast*t50)) + Y0. Y-1 is the cap intensity 1 s before FRAP.
 
-## Real-time PCR
+### Real-time PCR
 
 shRNA lines were crossed to P[mat-tub-Gal4] mat67; P[mat-tub-Gal4] mat15. The F1 embryos were collected by standard protocol, shredded (QIAShredder, QIAGEN), and RNA extracted (Quick-RNA MicroPrep, Zymo Research). The RNA extracts were reverse transcribed (QuantiTech Reverse Transcription Kit, Invitrogen) and used for real-time PCR (QuantiTech SYBR Green RT-PCR, Invitrogen; Bio-Rad iQ5). The primers used for RT-PCR are listed in Table 3.
 
-## Statistics and repeatability
+### Statistics and repeatability
 
 A Shapiro-Wilk test was performed in OriginPro to test for statistical normality of data. Cap area, area change, expansion rate, intensity, heterogeneity, and heterogeneity change data were tested for statistical significance using Student’s t-test for all normal data. ns: p>0.05; *: p<0.05; **: p<0.005; ***: p<0.0005. Each cycle 11 cap was measured for ~110 time points (every 5 s), with all measurements being quantified from at least nine individual caps from a minimum of three embryos. n represents the total number of individual structures measured, and N represents the total embryos tested. For mito-tag colocalization, mitochondrial puncta greater than 8 µm2 were measured and puncta that shared a minimum of at least 10 pixels in common were determined as possessing colocalization. Pearson coefficient calculations were performed with ImageJ Coloc two plug-in using Costes threshold regression with PSF = 3.0 and Costes randomization = 10. Data for the 0–60 s periods of rapid expansion fits the following exponential function, Y = 1.642 * exp*(0.09733*X), with an R value of 0.9139 (as calculated in Graphpad Prism 8).
 
-## Image editing and figure preparation
+### Image editing and figure preparation
 
 Spinning-disk and laser scanning confocal microscopy images were edited by FIJI/ImageJ and Adobe Photoshop. Images were uniformly leveled for optimal channel appearance except where noted. Actin cap curves (average values and errors), bar graphs (average values and errors), box and whisker plots (boxes as 25–75% values, whiskers as minimal and maximal values, and lines in the boxes as median), and other graphs were made in OriginPro. Error bars are shown as S.E.M. Figures were prepared and labeled in Adobe Illustrator.

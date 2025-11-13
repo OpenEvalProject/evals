@@ -37,15 +37,23 @@ Here, we further investigate the unusual chromatin formed over S. pombe DNA resi
 
 ## Results
 
-## S. pombe DNA incorporated into a mouse chromosome adopts a distinct structure with less DNA per unit length
+### S. pombe DNA incorporated into a mouse chromosome adopts a distinct structure with less DNA per unit length
 
 The previously-described F1.1 cell line contains a large stable insertion of S. pombe DNA into a single chromosome in mouse C127 (ATCC CRL-1616) cells (Allshire et al., 1987). The region containing the integrated fission yeast DNA had a highly distinctive appearance in metaphase spreads (McManus et al., 1994). However, the nature of this unusual S. pombe DNA-associated chromosome structure and the mechanisms by which it was formed and differentiated from neighbouring mouse chromatin have not been investigated. Recent advances in both our understanding of mitotic chromosome structure and the methodologies used to analyse it now enhance our ability to examine such unusual structures and thereby provide new insight into the processes that govern mitotic chromosome structure.
 
 To confirm and extend earlier analysis, fluorescence in situ hybridisation (FISH) was performed on F1.1 metaphase spreads using a total S. pombe genomic DNA probe to decorate the insert. As was previously reported, the region of the mouse chromosome containing S. pombe DNA appeared distinct and exhibited reduced DNA staining intensity and a narrower chromosome arm width (Figure 1A). Quantification of the DNA and FISH signal intensities along the chromosome length showed a clear decrease in average DNA intensity coinciding with the peak of S. pombe DNA FISH signal (Figure 1B). This confirmed that the previously reported distinct Sp-DNA-associated structure exhibits decreased DNA per unit length of the chromosome compared to the flanking mouse chromatin. The mouse and S. pombe genomes have differing GC contents, with 42% for mouse and 36% for S. pombe (Wood et al., 2002, Waterston et al., 2002). To avoid any bias that might result from difference in base composition propidium iodide (PI) staining was used for all DNA intensity measurements rather DAPI, which preferentially binds to AT-rich DNA.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig1-v3.jpg)
+
+**Figure 1.:** (A) Metaphase spreads of mouse F1.1 chromosomes showing the distinct structure of the S. pombe DNA insert. Propidium iodide stained DNA (PI, red), S. pombe DNA FISH using probes from total S. pombe DNA (green – yellow arrows), centromeres (regions of brighter DNA staining - blue arrows). Scale bars: 1 μm. (B) Schematic representation and average chromosome profile of the F1.1 insert-bearing chromosome across several images (n = 16, Figure 1—source data 1). Signal intensities of PI DNA stain (red) and FISH signal (green) were measured along the length of the chromosomes and binned according to their position, from the centromere (0–5%) to the telomere (95–100%). Error bars represent ± standard error from the mean (SEM). Average DNA stain intensity was compared between the regions of 25–40% (endogenous mouse DNA) and 65–80% (S. pombe DNA corresponding to the highest FISH signal) by the KS test (**p<0.001). (C and D) Metaphase spreads of F1.1 cells either stained by immunofluorescence for histone H4 (C) or expressing tagged histone H2B-GFP (D) (red), with S. pombe DNA FISH (green) and DAPI-stained DNA (blue). S. pombe DNA (yellow arrows) and centromere (blue arrows) locations are indicated. Scale bars: 1 μm. (E and F) Average signal intensity profile of the F1.1 insert-bearing chromosome showing FISH and either anti-H4 (E, Figure 1—source data 2) or H2B-GFP (F, Figure 1—source data 3) across several images (n = 28, 27). Error bars represent ± SEM. Average histone levels were compared between the regions of endogenous mouse DNA and S. pombe DNA highlighted by FISH by the KS test (**p<0.001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Two-colour FISH of F1.1 metaphase spreads for S. pombe DNA (red, middle-right, yellow arrows), and mouse chromosome 10 (green, middle-left) with DAPI-stained DNA (blue, far left). (B) Metaphase spread of F1.1 probed with a mouse chromosome 10 paint only (green) with PI-stained DNA (red). The insert-bearing chromosome 10 is recognisable by a distinct region not highlighted by FISH, corresponding to the S. pombe DNA. Scale bars: 5 μm. (C,D) Enlarged images of the regions highlighted in B showing an S. pombe DNA insert-bearing (C) and non-insert bearing (D) copy of chromosome 10. (E,F) Average chromosome profile of the insert-bearing (E, Figure 1—figure supplement 1—source data 1) and homologous non-insert-bearing (F, Figure 1—figure supplement 1—source data 2) copies of chromosome 10 in F1.1 metaphase spreads across several images (n = 38). Error bars represent ± SEM. Average DNA stain intensity was compared between the regions of DNA at 35–50% and 65–80% (where the S. pombe DNA was detected on the insert-bearing chromosome) by the KS test (**p<0.001, n.s. = not significant).
+
 To allow more detailed analysis of the S. pombe DNA insert, whole genome sequencing was performed on F1.1 genomic DNA. Initial sequencing by standard next generation sequencing methods revealed that the S. pombe DNA was highly rearranged with respect to the S. pombe reference genome (assembly ASM294v2). Approximately 64% of the S. pombe genome was found to be present within the F1.1 genome, however the high level of rearrangement meant that no assembly could be made to determine the actual sequence of the inserted DNA. Ultra-long sequence reads obtained using nanopore technology allowed assembly of several large contigs of S. pombe sequence, including eight contigs greater than 500 kb and one of approximately 1.5 Mb consisting of 1.1 Mb of S. pombe DNA extending into 400 kb of adjacent mouse DNA. These results confirmed that the F1.1 insert is composed of rearranged S. pombe DNA in which 10 to 100 kb stretches (median length 20 kb) are contiguous with the S. pombe reference genome. In addition to providing sequence information crucial to further analysis, our findings suggest that chromatin introduced from yeast by spheroplast fusion is not protected from high levels of rearrangement upon entry into host mammalian cells.
 
-## Chromatin density is lower at the region of mouse chromosome 10 containing S. pombe DNA
+### Chromatin density is lower at the region of mouse chromosome 10 containing S. pombe DNA
 
 Both sequencing methods used detected hybrid reads containing both mouse and S. pombe DNA sequence and identified the same insertion site on mouse chromosome 10, approximately two-thirds down the length of the chromosome arm (GRCm38 Mm10:83,349,000), consistent with both the size of the insert-bearing mouse chromosome and the relative position of the Sp-DNA insert on that mouse chromosome arm (Figure 1A).
 
@@ -53,37 +61,85 @@ Two-colour FISH using a mouse chromosome 10 (Mm10) paint along with the total S.
 
 Despite the shorter nucleosome repeat length of chromatin in fission yeast cells (160 bp) compared to that in mammalian cells (185 bp), previous analysis had shown that the S. pombe DNA in F1.1 adopts the nucleosome repeat length typical of mouse cells (McManus et al., 1994). To assess the density of nucleosomal chromatin across the Sp-DNA insert independently of DNA staining immunolocalisation of histone H4 was performed on F1.1 chromosomes. Signal intensity measurements showed a clear drop in H4 signal across the Sp-DNA insert. A similar decrease in signal was observed across the Sp-DNA insert for ectopically expressed GFP-tagged H2B (Figure 1C–F). These analyses indicate that the Sp-DNA insert on mouse chromosome 10 of F1.1 cells adopts a distinctive structure in mitosis that is characterised by a decrease in the amount of chromatin per unit length compared to surrounding endogenous mouse chromatin.
 
-## S. pombe DNA integrated in mouse chromosome 10 is assembled in H3K9me3-heterochromatin
+### S. pombe DNA integrated in mouse chromosome 10 is assembled in H3K9me3-heterochromatin
 
 The contribution of histone modifications to mitotic chromosome structure is a factor that has long been proposed but is not well defined. A number of histone modifications are enriched in mitotic chromatin and chromatin isolated from mitotic cells has been shown to undergo a certain level of compaction even in the absence of condensins and topoisomerases, suggesting that certain modifications may contribute to mitotic chromatin compaction (Zhiteneva et al., 2017; Goto et al., 2002; McManus et al., 2006, Park et al., 2011). However, the mechanism by which this compaction may be achieved is unknown.
 
 To investigate the histone modifications present at the Sp-DNA insert in F1.1 cells we employed ChIP-qPCR with antibodies detecting H3K4me3, H3K9ac, H3K9me3, H3K27ac and H3K36me3. Expected enrichments of histone modifications associated with active chromatin, such as H3K4me3, H3K9ac, H3K27ac and H3K36me3 were detected on the mouse Actb gene and were low on the repressed Hoxc8 gene and mouse major satellite repeats. In contrast, levels of the heterochromatic H3K9me3 were high on mouse major satellite repeats but low on Actb. Active modifications were also enriched on the selected G418 resistance gene SV40-Neo, present within the Sp-DNA insert, consistent with its expression. Strikingly, all twelve S. pombe DNA sites examined within the Sp-DNA insert exhibited very high levels of H3K9me3 and low levels of H3K4me3, H3K9ac, H3K27ac and H3K36me3 relative to the mouse Actb. High levels of HP1α, which binds H3K9me3, were also detected at all locations tested within the F1.1 Sp-DNA insert (Figure 2A). The presence of both H3K9me3 and HP1α across the Sp-DNA insert suggests that a large domain of constitutive heterochromatin coats this foreign DNA.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig2-v3.jpg)
+
+**Figure 2.:** (A) ChIP-qPCR of F1.1 interphase cells for the repressive marks H3K9me3 and HP1α (top), activating histone methylation marks H3K4me3 and H3K36me3 (middle) and activating acetylation marks H3K9ac and H3K27ac (bottom) at 13 loci within the S. pombe insert and three mouse control loci. act - highly transcribed control gene Actb; Hox – Hoxc8 region of facultative heterochromatin; maSat - constitutively heterochromatic centromeric major satellite region. Data in Figure 2—source data 1. Error bars represent ± SEM of three independent repeats. Enrichments were normalised to positive control levels and compared to act by the t-test (*p<0.05, n.s. = not significant). (B,C) Immunofluorescence for H3K9me3 (B) or H3K27me3 (C) (red) on F1.1 metaphase spreads showing high H3K9me3 and low H3K27me3 over the S. pombe DNA insert as visualised by FISH (green), with DAPI-stained DNA (blue). S. pombe DNA (yellow arrows) and centromere (blue arrows) locations are indicated. Scale bars: 1 μm. (D,E) Average FISH and H3K9me3 (D Figure 2—source data 2) or H3K27me3 (E Figure 2—source data 3) signal intensity profiles of the insert-bearing chromosome of F1.1 across several images (n = 15, 14). Error bars represent ± SEM. H3K9me3 intensity levels were normalised to the 0–5% region of the chromosome, corresponding to the acrocentric mouse centromere. Average immunofluorescence intensity was compared between the regions of endogenous mouse DNA and S. pombe DNA highlighted by FISH by the KS test (**p<0.001). (F) CpG methylation levels at five S. pombe loci within the F1.1 insert as determined by bisulfite sequencing. Loci were sequenced in 3 to 6 replicates, with each replicate shown. Circles represent methylated (black) and unmethylated (white) CpGs, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** ChIP-qPCR for H3K9me3 in F1.1 (red) and C127 (blue) interphase cells at three S. pombe loci within the insert (for F1.1 only), two mouse control loci and eleven mouse loci that flank the S. pombe DNA insertion site at the indicated distance to left or right. act - highly transcribed negative control Actb gene; maSat - centromeric heterochromatin satellite positive control. Enrichments are normalised to maSat positive control levels. Data in Figure 2—figure supplement 1—source data 1. Error bars represent ± SEM of three independent repeats. Enrichment levels between F1.1 and C127 cells were compared by a t-test (*p<0.05, n.s. = not significant).
+
 This was supported by immunolocalisation, which showed a high intensity of H3K9me3 coinciding with the S. pombe DNA on metaphase spreads. In addition, H3K27me3 was low over the S. pombe DNA, demonstrating that the fission yeast DNA was assembled into constitutive H3K9me3-dependent heterochromatin rather than facultative H3K27me3-dependent heterochromatin (Figure 2B–E). Mammalian constitutive heterochromatin is also known to be highly methylated on CpG dinucleotides (Bannister and Kouzarides, 2011; Rose and Klose, 2014, Bogdanović and Veenstra, 2009). Consistent with methylation-sensitive restriction enzyme digestion (McManus et al., 1994), bisulphite sequencing demonstrated prevalent CpG DNA methylation within the Sp-DNA insert (Figure 2F). Additional H3K9me3 ChIP analysis demonstrated that this heterochromatin did not encroach on nearby mouse DNA flanking the site of Sp-DNA insertion, and is therefore confined to the foreign DNA (Figure 2—figure supplement 1). We conclude that constitutive heterochromatin coats the exogenous Sp-DNA insert on mouse chromosome 10.
 
-## A distinct heterochromatic structure frequently forms on S. pombe DNA integrated into mouse or human chromosomes
+### A distinct heterochromatic structure frequently forms on S. pombe DNA integrated into mouse or human chromosomes
 
 The formation of a distinct structure assembled into heterochromatin on S. pombe DNA inserted in mouse chromosome 10 might result from unique events associated with the specific integration site in F1.1 cells, the configuration of the inserted S. pombe DNA or the mouse C127 cell line. To exclude these possibilities, we fused spheroplasts of the same S. pombe strain harbouring the SV40-Neo G418 selectable marker with either mouse NIH3T3 cells or human HeLa cells as previously described (Allshire et al., 1987). Subsequent screening of resulting G418-resistant clones by FISH identified one HeLa (HeP-F3) and two NIH3T3 (NP-F1 and NP-F2) clones with large blocks of S. pombe DNA integrated at single chromosomal locations. In these three new cell lines, PI staining of mitotic chromosomes again revealed a less intensely stained region coincident with the resulting inserted S. pombe DNA (Figure 3A–F). The presence of an unusual mitotic chromosome structure on S. pombe DNA inserted in four independent fusion clones indicates that the formation of such entities was not a unique event confined to the original F1.1 isolate, the specific cell line used or its species of origin. Moreover, since mitotic chromosomes were examined from the new clones within 25 divisions of their formation these structures are not the consequence of prolonged propagation in cell culture, but must be formed soon after integration of the incoming foreign DNA into a host chromosome. ChIP-qPCR and immunolocalisation demonstrated that, as in F1.1 cells, H3K9me3 was strongly enriched on the Sp-DNA inserts in the new NP-F1, NP-F2 and HeP-F3 cell lines (Figure 3G–I and Figure 3—figure supplement 1). Taken together, these results suggest that, in addition to having a distinct mitotic structure, the S. pombe DNA has been assembled into H3K9me3-dependent heterochromatin in all four mammalian-S. pombe fusion hybrids.
 
-## Heterochromatin forms on incoming S. pombe chromatin that lacks pre-existing H3K9 methylation
+![Figure 3.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig3-v3.jpg)
+
+**Figure 3.:** (A–C) Metaphase spreads of NP-F1, NP-F2 and HeP-F3 cells showing the distinct structure over the inserted S. pombe DNA. PI-stained DNA (red), S. pombe DNA FISH (green – yellow arrows). Blue arrows indicate centromeres. Scale bar: 1 μm. (D–F) Average FISH and PI signal intensity profiles of the insert-bearing chromosomes in each cell line across several images (n = 37, 32 and 15, Figure 3—source datas 1–3). Error bars represent ± standard error from the mean (SEM). Average DNA stain intensity was compared between the regions of endogenous mammalian DNA and S. pombe DNA highlighted by FISH by the KS test (**p<0.001). (G–I) ChIP-qPCR for H3K9me3 in NP-F1 (G, Figure 3—source data 4), NP-F2 (H, Figure 3—source data 5) and HeP-F3 (I, Figure 3—source data 6) in interphase. qPCR was performed with primers used for analysis of F1.1 (see Figure 2) that were present in the retained S. pombe DNA. Mouse control regions were: negative control Actb gene – act; facultative heterochromatin region – Hox; centromeric heterochromatin major satellite positive control – maSat. Human control regions were: the highly transcribed negative control gene – GAPDH; human alpha satellite DNA positive control – Sat. Error bars represent ± SEM of three independent repeats. Enrichments were normalised to positive control levels and compared to the negative control by the t-test (*p<0.05, n.s. = not significant).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A,B) Immunofluorescence for H3K9me3 (red) on metaphase spreads of NP-F1 (A) and NP-F2 (B) with DAPI-stained DNA (blue) and S. pombe DNA FISH (green – yellow arrows). Blue arrows indicate centromeres. (C,D) Average FISH and H3K9me3 signal intensity profile of the insert-bearing chromosomes of NP-F1 (C, Figure 3—figure supplement 1—source data 1) and NP-F2 (D, Figure 3—figure supplement 1—source data 2) across several images (n = 31, 30). Error bars represent ± SEM. H3K9me3 intensity levels were normalised to the 0–5% region of the chromosome, corresponding to the acrocentric mouse centromere. Average H3K9me3 intensity was compared between the regions of endogenous mouse DNA and S. pombe DNA highlighted by FISH by the KS test (**p<0.001).
+
+### Heterochromatin forms on incoming S. pombe chromatin that lacks pre-existing H3K9 methylation
 
 The S. pombe genome contains blocks of H3K9 methylation at least every 4 Mbp: at the three centromeres, six telomeres and the mating type locus. The accumulation of high levels of H3K9me3 on S. pombe DNA inserted into mammalian chromosomes following spheroplast fusion in the F1.1, NP-F1, NP-F2 and HeP-F3 cell lines might result from these pre-existing blocks of H3K9 methylation in S. pombe acting as nucleation sites from which heterochromatin spreads over integrated S. pombe DNA. Alternatively, this heterochromatin may simply be a default state formed on large blocks of essentially inert foreign DNA. Clr4 is the only H3K9 methyltransferase encoded by the S. pombe genome. It is not essential for viability and yeast cells lacking Clr4 are devoid of H3K9me2/3 and heterochromatin (Nakayama et al., 2001). We therefore prepared spheroplasts from S. pombe cells lacking Clr4 (clr4Δ) and carrying the same SV40-Neo selectable marker, fused them with NIH3T3 cells and selected G418-resistant hybrids. The resulting cell line NP-clr4Δ-F4 was found to contain a single large S. pombe DNA insertion (Figure 4—figure supplement 1A) which exhibited reduced PI staining intensity on metaphase chromosomes (Figure 4A,B, Figure 4—figure supplement 1B). Surprisingly, ChIP and immunolocalisation showed that H3K9me3 heterochromatin had also been formed over the inserted S. pombe DNA even in this NP-clr4Δ-F4 cell line (Figure 4C–E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig4-v3.jpg)
+
+**Figure 4.:** (A) Metaphase spread of NP-clr4Δ-F4 showing the distinct structure over the S. pombe DNA insert, with PI-stained DNA (red) and S. pombe DNA FISH (green – yellow arrows). Blue arrows indicate the centromere. Scale bar: 1 μm. (B) Average FISH and DNA stain (PI) signal intensity profile of the insert-bearing chromosomes of NP-clr4Δ-F4 (n = 38, Figure 4—source data 1). Error bars represent ± SEM. Average DNA stain intensity was compared between a region of endogenous mouse DNA and S. pombe DNA highlighted by FISH by the KS test (**p<0.001). (C) Immunofluorescence for H3K9me3 (red) on a NP-clr4Δ-F4 metaphase spread with DAPI-stained DNA (blue) and S. pombe DNA FISH (green - yellow arrow). Blue arrows indicate the centromere. Scale bars: 1 μm. (D) Average FISH and H3K9me3 signal intensity profile along the NP-clr4Δ-F4 insert-bearing chromosome from several images (n = 19, Figure 4—source data 2). Error bars represent ± SEM. H3K9me3 intensity levels were normalised to the 0–5% region of the chromosome, corresponding to the acrocentric mouse centromere. Average H3K9me3 intensity was compared between the regions of endogenous mouse DNA and S. pombe DNA highlighted by FISH by the KS test (*p<0.01). (E) ChIP-qPCR on NP-clr4Δ-F4 interphase cells for H3K9me3 at several loci within the S. pombe insert and three mouse control loci. Negative control gene Actb - act, facultative heterochromatin - Hox, centromeric heterochromatn major satellite positive control – maSat. Data in Figure 4—source data 3. Error bars represent ± SEM of three independent repeats. Enrichments were normalised to maSat levels and compared to act by the t-test (*p<0.05, n.s. = not significant).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) FISH for S. pombe DNA on a NP-clr4Δ-F4 metaphase spread showing the single large insertion of S. pombe DNA (A) and close up images showing the distinct structure adopted over the inserted S. pombe DNA (B). PI-stained DNA (red), S. pombe DNA FISH (green - yellow arrows). Blue arrows in B indicate bright PI- stained centromeres. Scale bars: 5 μm (A) and 1 μm (B).
+
 We conclude that the establishment of heterochromatin on S. pombe DNA inserted into mammalian chromosomes following spheroplast fusion is not dependent on the pre-existing domain of H3K9 methylation on S. pombe chromosomes. Thus, unhalted spreading from such regions does not explain the formation of these extensive structures. It seems likely that heterochromatin formation is triggered de novo after delivery of S. pombe chromatin into mammalian cells.
 
-## Large S. pombe DNA insertions introduced as transfected naked DNA can form distinct heterochromatic structures in metaphase chromosomes
+### Large S. pombe DNA insertions introduced as transfected naked DNA can form distinct heterochromatic structures in metaphase chromosomes
 
 The above analyses exclude the possibility that the unusual mitotic chromosome structure formed on inserted S. pombe DNA is dependent on resident H3K9 methylation. However, it is possible that some other feature carried by incoming S. pombe chromatin, and retained on chromatin from clr4Δ cells, promotes heterochromatin formation. The calcium-phosphate precipitation DNA transfection method is known to allow the assembly of large ‘transgenomes’ which tend to integrate at single chromosomal locations in mammalian cells (Perucho et al., 1980; Scangos et al., 1981). Therefore, we used calcium-phosphate precipitation to transfect NIH3T3 cells with large amounts of S. pombe genomic DNA, free from all chromosomal proteins and prepared from cells carrying the SV2-Neo selectable marker. Resulting G418R transformants were screened by S. pombe DNA FISH. Six cell lines (NP-T1 to NP-T6) were isolated that contained large S. pombe insertions at a single chromosomal location (Figure 5A–F).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig5-v3.jpg)
+
+**Figure 5.:** (A–F) Metaphase spreads of S. pombe DNA insert-bearing chromosomes from S. pombe DNA transfected cell lines NP-T1, T2, T3, T4, T5 and T6. PI-stained DNA (red), S. pombe DNA FISH (green - yellow arrows), centromeres (blue arrows). Scale bars: 1 μm. (G–L) Average FISH and DNA stain (PI) signal intensity profiles along S. pombe DNA insert-bearing chromosomes of NP-T1 to NP-T6 (n = 33, 29, 34, 24, 30, 31, Figure 5—source datas 1–6). Error bars represent ± SEM. Average DNA stain intensity was compared between regions of endogenous mouse DNA and S. pombe DNA highlighted by FISH by the KS test (*p<0.01, **p<0.001, n.s. = not significant). (M–R) ChIP-qPCR on NP-T1 to NP-T6 interphase cells for H3K9me3 at several loci within the S. pombe insert and three mouse control loci. Negative control gene Actb - act, facultative heterochromatin - Hox, centromeric heterochromatin major satellite positive control – maSat. Data in Figure 5—source datas 7–12. Error bars represent ± SEM of three independent repeats. Enrichments were normalised to maSat levels and compared to Act (and maSat for NP-T1 and NP-T2) by the t-test (*p<0.05, n.s. = not significant).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C, G–I) Immunofluorescence for H3K9me3 (red) on NP-T1-to-T6 metaphase spreads, S. pombe DNA FISH (green - yellow arrows), DAPI-stained DNA (blue), centromeres (blue arrows). Scale bars: 1 μm. (D–F, J–L) Average FISH and H3K9me3 signal intensity profiles of the insert-bearing chromosomes of NP-T1-to-T6 across several images (n = 19, 29, 36, 25, 24, 29, Figure 5—figure supplement 1—source datas 1–6). Error bars represent ± SEM. H3K9me3 intensity levels were normalised to the 0–5% region of the chromosome, corresponding to the acrocentric mouse centromere. Average H3K9me3 intensity was compared between the regions of endogenous mouse DNA and S. pombe DNA highlighted by FISH by the KS test (*p<0.01, **<0.001, n.s. = not significant).
 
 Analysis of metaphase chromosomes containing S. pombe DNA insertions in these transformants revealed that their appearance varied considerably. In NP-T1 and NP-T2 there was no significant detectable difference in chromosome structure or PI intensity over the region containing S. pombe DNA compared to the rest of the chromosome arm (Figure 5A–B,G–H). On a proportion of chromosomes from NP-T3 a slightly different structure and noticeably decreased PI intensity was observed to coincide with the S. pombe DNA (Figure 5C), although this difference was only statistically significant when compared with one of the two control regions (Figure 5I). In contrast, NP-T4, NP-T5 and NP-T6 all displayed visibly distinct structures on the majority of mitotic chromosomes carrying S. pombe DNA, with NP-T6 exhibiting the most obvious distinct appearance (Figure 5D–F). PI intensity was found to decrease significantly over the chromosomal site of S. pombe DNA insertion in these three DNA transformants (Figure 5J–L).
 
 H3K9me3 levels at the inserted S. pombe DNA were similarly found to vary between these six cell lines and, strikingly, this variation correlated with the distinct appearance of the S. pombe DNA. NP-T1 and NP-T2 had relatively low H3K9me3 levels compared to the centromeric satellite positive control region (30–35% of the signal associated with the major satellite positive control) (Figure 5M,N), NP-T3 exhibited intermediate levels of H3K9me3 levels on its S. pombe DNA insert (67% of the major satellite signal) (Figure 5O) whereas considerably higher H3K9me3 levels were associated with the insertions in NP-T4, NP-T5 and NP-T6 (80–150% of the major satellite signal) (Figure 5P–R). Immunolocalisation confirmed the above variability: NP-T1 and NP-T2 showed no visible H3K9me3 signal over the inserted S. pombe DNA. A low but significant increase in H3K9me3 signal was detectable over the inserted DNA in NP-T3 and NP-T4, while obvious domains of H3K9me3 were observed over the S. pombe DNA in NP-T5 and NP-T6 (Figure 5—figure supplement 1). Thus, S. pombe DNA insertion events exhibiting the most evident and distinct structural appearance by PI staining are associated with the highest levels of H3K9 methylation. This association suggests that the assembly of heterochromatin on inserted S. pombe DNA is responsible for the distinct appearance.
 
-## Heterochromatinised S. pombe DNA forms smaller chromatin loops in mitosis
+### Heterochromatinised S. pombe DNA forms smaller chromatin loops in mitosis
 
 To determine how Sp-DNA insert-associated H3K9me3-heterochromatin might affect mitotic chromatin structure, we further examined the F1.1 cell line. While heterochromatin is generally thought to compact chromatin fibres in interphase, our analysis indicates the opposite: less chromatin per unit length is detected across the Sp-DNA insert on F1.1 mitotic chromosomes (Figure 1). A possible explanation is that chromatin fibre organisation, rather than fibre structure itself, is altered in these regions. Current models of mitotic chromosome organisation propose that the chromatin fibre is organised into consecutive loop arrays organised around a central scaffold as originally suggested by observations of extracted chromosomes (Paulson and Laemmli, 1977; Adolph et al., 1977; Earnshaw and Laemmli, 1983). These models are in part based upon Hi-C data which shows that in mitosis mammalian cells lose all Topologically Associating Domain (TAD) structures and chromosome compartments and show a uniform interaction pattern consisting of strong interactions along the diagonal that undergo a sharp drop-off over a longer range. This drop-off was most strikingly visualised by plotting contact probability over genomic distance in a P(s) curve (Naumova et al., 2013; Gibcus et al., 2018). Polymer simulations demonstrated these findings to be consistent with an organisation of chromatin into arrays of loops. Furthermore, the distance at which the drop-off in interaction frequency occurs, was shown to be indicative of the amount of chromatin per ‘layer’ of loop arrays. This is explained by the fact that within one layer contact between two loci is very likely as loops are tightly packed and in close proximity. Conversely, contact between two loci separated by a distance greater than one layer is highly restricted and thus unlikely to occur.
 
 To further investigate the organisation of chromatin within the Sp-DNA insert we therefore performed Hi-C on mitotic F1.1 cells. Consistent with previous results, F1.1 mitotic cells lose long-range interactions and present a uniform pattern of strong short-range interactions (Figure 6—figure supplement 1). We then compared the longest Sp-DNA contig assembled from our sequencing of F1.1 with a region of mouse DNA of the same size on chromosome 10 (Figure 6A,B). Both regions showed the expected mitotic Hi-C pattern but with different characteristics. While both regions showed strong short-range interactions along the diagonal, the strength of the interactions over the mouse DNA region decreased more gradually with distance within the range observed. Conversely, the Sp-DNA region showed a sharper drop-off in interaction frequency. To visualise this more clearly, we made P(s) curves for these two datasets, plotting the probability of contact as a function of genomic distance for all mouse and S. pombe regions on mitotic chromosomes (Figure 6C). For S. pombe regions we used our de novo assembled contigs from F1.1 sequencing as a reference. However, as few of these contigs are greater than several hundred kb in length, the plot became erratic at large genomic distances due to the paucity of longer contigs. We thus truncated the S. pombe interaction plot at 500 kb, the N50 of our dataset. Nevertheless, within the observable range the plot suggests a more rapid decline in interaction frequencies within the S. pombe DNA component. Both mouse and S. pombe regions show extremely similar interaction patterns at short range, with a gradual decrease in interaction as distance increases, up to approximately 150 kb. However, at a distance of 150 kb interactions within the S. pombe region show an abrupt drop while interactions within mouse chromosomal regions decline much more gradually. As explained above, this sharp decrease in contact probability is a clear indication that the Sp-DNA insert has less chromatin per layer on mitotic chromosomes than mouse chromosomal regions in the F1.1 cell line. This is both consistent with our microscopy results (Figure 1) and suggests that chromatin organisation is indeed altered within the Sp-DNA region.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig6-v3.jpg)
+
+**Figure 6.:** (A,B) Hi-C contact heatmaps for the longest contig containing S. pombe DNA and flanking mouse DNA from the F1.1 de novo genome assembly (B) and a contiguous region of mouse chromosome 10 of the same size (A). (C) Chromatin interactions as a function of genomic distance in F1.1 mitotic cells. Contact probability plotted for mouse sequences and S. pombe sequences mapped to the F1.1 de novo assembly. Arrow indicates drop in S. pombe interactions. (D,E) Immunofluorescence for SMC2 (D) or CAPH1 (E) on F1.1 metaphase spreads (red); S. pombe DNA FISH (green - yellow arrows), DAPI-stained DNA (blue), centromeres (blue arrows). Scale bars: 1 μm. (F,G) Average FISH and SMC2 (F, Figure 6—source data 1) or CAPH1 (G, Figure 6—source data 2) signal intensity profiles along the insert-bearing chromosome of F1.1 from several images (n = 15, 40). SMC2 and CAPH1 intensity levels were normalised to the 0–5% region of the chromosome, corresponding to the mouse centromere. (H,I) Normalisation of the SMC2 (H) and CAPH1 (I) profiles to DNA levels as measured by PI intensity. FISH intensities remain unaltered. Error bars represent ± SEM. Values were compared between a region of endogenous mouse DNA and the region of S. pombe DNA highlighted by FISH by the KS test (**p<0.001, n.s. = not significant).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Relative Hi-C contact probability heatmaps for the same region on mouse chromosome 10 in F1.1 cells in interphase (A) and mitosis (B).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** Predicted number of CTCF consensus motifs and GC content plotted across the S. pombe DNA present in the F1.1 genome and flanking mouse regions on chromosome 10. Window size is 3 kb.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/57212/elife-57212-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** (A,B) Normalisation of the overall condensin (SMC2, A) and condensin I (CAPH1, B) profiles to chromatin levels as measured by H2B-GFP fluorescence intensity across the F1.1 metaphase chromosome 10 bearing S. pombe DNA. FISH intensities remain unaltered. Error bars represent ± SEM. Intensity ratios were compared between a region of endogenous mouse DNA and the region of S. pombe DNA highlighted by FISH by the KS test (**p<0.001).
 
 To explore how chromatin might be altered over the Sp-DNA insert, and what form this alteration might take, we investigated the possible involvement of proteins known to influence chromatin architecture. First, because CTCF plays a key role in the formation of TADs in interphase in part through the regulation of the loop-extruding activity of cohesin (Dixon et al., 2012; Nora et al., 2017; Sanborn et al., 2015), we performed a search for CTCF consensus binding sites across the Sp-DNA insert and neighbouring mouse DNA (Figure 6—figure supplement 2). Our analysis demonstrates that the frequency of predicted CTCF binding sites is substantially less within the inserted S. pombe DNA, probably because CTCF-binding sites have a strong GC component. This lower frequency of predicted CTCF sites correlates with the decrease in the overall GC content of S. pombe DNA, thus the observed structure with smaller loops across inserted S. pombe DNA cannot be explained by a higher predicted frequency of CTCF sites within that DNA. Moreover, mounting evidence indicates that CTCF is not involved in the shaping of chromatin during mitosis (Oomen et al., 2019). We therefore conclude that CTCF binding density does not explain the altered chromatin organisation over the Sp-DNA insert on mitotic chromosomes.
 
@@ -95,7 +151,7 @@ These observations therefore suggest that, while DNA and histone levels are lowe
 
 ## Discussion
 
-## Heterochromatin is established over foreign S. pombe DNA in mammalian cells
+### Heterochromatin is established over foreign S. pombe DNA in mammalian cells
 
 Since its initial description, the presence of a large region of distinct mitotic chromosome structure in the F1.1 cell line has remained an interesting but largely unexplained observation (Allshire et al., 1987; McManus et al., 1994). By expanding this observation to other cell lines and even another mammalian species, we have shown that this variation in structure is not unique to the F1.1 cell line. This is in agreement with other studies that have reported similar narrow appearances on mitotic chromosomes of DNA inserted into mammalian cells from another yeast species, S. cerevisiae (Featherstone and Huxley, 1993; Nonet and Wahl, 1993).
 
@@ -105,7 +161,7 @@ However, it remains possible that the spreading of heterochromatin over the inse
 
 The surrounding mouse DNA is one potential source for heterochromatin spreading into the S. pombe DNA. However, this does not seem to be the case for the F1.1 cell line at least, in which the S. pombe DNA is inserted in an intergenic region in close proximity to two actively transcribed genes. Another possibility is that the cell reacts to the introduction of foreign DNA and proceeds to silence it in a manner analogous to its silencing of parasitic genetic elements by H3K9me3 (Mikkelsen et al., 2007; Timms et al., 2016; Cuellar et al., 2017). In this scenario, heterochromatin would spread from one or several small nucleating regions of heterochromatin within the insert. However, this cannot occur in all cases as some cell lines transfected with S. pombe DNA do not form heterochromatin (Figure 5G,H). Perhaps this merely reflects the stochastic nature of foreign DNA silencing, so that a small number of inserts might escape the silenced fate of the majority of others. This raises the possibility that cell lines such as NP-T1 and NP-T2 in which we did not observe high H3K9me3 over the S. pombe DNA might acquire it upon continued growth in culture, and that ‘intermediate’ cell lines such as NP-T3 which show moderate H3K9me3 levels and occasional distinct structures may represent a transitional stage, or at least reflect this stochasticity in its cell-to-cell variability.
 
-## Heterochromatin alters mitotic chromatin structure
+### Heterochromatin alters mitotic chromatin structure
 
 In all mammalian-S. pombe cell lines examined the presence of heterochromatin correlates with a distinct appearance of the S. pombe DNA region on metaphase chromosomes (Figure 5). Engineering the removal of H3K9me3 from those insertions on which it is present would be a more direct method of determining its influence on the chromosome structure in these cell lines. However, the challenge here lies in finding a method of doing so both selectively and without disrupting cellular function excessively. Several drugs exist which act to remove heterochromatic signals from chromatin, however their targets are frequently varied and they affect all heterochromatin, and sometimes even non-heterochromatic post-translational modifications, rendering conclusions as to their effect more difficult to ascribe to a single factor (Zheng et al., 2008; Tóth et al., 2004; Cherblanc et al., 2013). In addition such drugs, as well as most mutants which significantly affect heterochromatin, are also either lethal or hinder progress through the cell cycle, making analysis of mitotic features difficult. The establishment of a technique by which the H3K9me3 could be more selectively or unobtrusively removed from the Sp-DNA insert would therefore be a powerful tool to develop for future investigations.
 
@@ -115,7 +171,7 @@ This raises the question of whether heterochromatin is involved in the regulatio
 
 Further analyses in these and other species could perhaps determine with more certainty if certain structural properties are shared between the regions of H3K9me3 heterochromatin over S. pombe DNA and centromeric regions. It is possible that centromeres combine aspects of the smaller loop sizes we observe and increased compaction of the chromatin fibre. The effect of H3K9me3 on chromosome structure may be combined or in competition with others at centromeres, where a number of complex processes related to kinetochore function are at work (Verdaasdonk and Bloom, 2012). The influence of H3K9me3 heterochromatin on mitotic chromosome structure is thus potentially one of many factors that contributes to the distinct structure of centromeres in mitosis.
 
-## Increased loading of condensin on heterochromatin and smaller chromatin loop arrays
+### Increased loading of condensin on heterochromatin and smaller chromatin loop arrays
 
 While the role of H3K9me3-heterochromatin in compacting the 10 nm chromatin fibre in interphase is well known, its involvement in mitotic chromatin structure is less well explored. Histone modifications have been proposed to be a contributor to mitotic chromosome structure, potentially involved in the ‘compaction’ of chromatin by processes independent of the so-called ‘shaping’ action of organising proteins such as the condensin complexes (Zhiteneva et al., 2017). H3K9me3 in particular has been shown to increase during mitosis, and a role for it in chromosome compaction has been put forward (McManus et al., 2006, Park et al., 2011). However, the distinct structure presented here, characterised by a decreased rather than increased chromatin density, is at odds with the idea that heterochromatin is compacting the chromatin fibre and rather suggests a role for heterochromatin in the ‘shaping’ of chromatin by condensins. This is supported by our analysis of the structure, which points to an altered organisation of the S. pombe DNA into smaller loops of chromatin than the surrounding mouse chromatin (Figure 6). These results suggest a role for H3K9me3-heterochromatin in the regulation of condensin activity that leads to this altered organisation.
 
@@ -131,7 +187,269 @@ While we put forward this model as that which best explains our results, there a
 
 ## Materials and methods
 
-## Cell culture, fusion and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>C127 (female, mammary tumour)</td>
+      <td>ATCC</td>
+      <td>CRL-1804;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>F1.1</td>
+      <td>Allshire et al., 1987</td>
+      <td></td>
+      <td>Kept as cryopreserved stocks in the Allshire lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>NIH3T3</td>
+      <td>ATCC</td>
+      <td>CRL-1858</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>NP-F1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>NIH3T3-S. pombe fusion cell line. Aka NPA4. Available from Allshire lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>NP-F2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>NIH3T3-S. pombe fusion cell line. Aka NPF3-19. Available from Allshire lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>NP-T1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>NIH3T3-S. pombe DNA transfection cell line. Aka NPD3. Available from Allshire lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>NP-T2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>NIH3T3-S. pombe DNA transfection cell line. Aka NPD5. Available from Allshire lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>NP-T3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>NIH3T3-S. pombe DNA transfection cell line. Aka NPT-C606. Available from Allshire lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>NP-T4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>NIH3T3-S. pombe DNA transfection cell line. Aka CPT-C500. Available from Allshire lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>NP-T5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>NIH3T3-S. pombe DNA transfection cell line. Aka NPT-C480. Available from Allshire lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>NP-T6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>NIH3T3-S. pombe DNA transfection cell line. Aka NPT-C482. Available from Allshire lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>NP-clr4Δ-F4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>NIH3T3-S. pombe fusion cell line. Aka NPF-Clr-I. Available from Allshire lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HeP-F3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HeLa-S. pombe fusion cell line. Aka HeP3. Available from Allshire lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>FY43</td>
+      <td>Allshire et al., 1987</td>
+      <td></td>
+      <td>h-Int5(pUraSV2Neo) ade6-210 leu1-32 ura4-D18</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K9me3 (rabbit polyclonal)</td>
+      <td>Active Motif</td>
+      <td>39161; RRID:AB_2532132</td>
+      <td>ChIP(4 µg/mL) IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K4me3 (rabbit polyclonal)</td>
+      <td>Active Motif</td>
+      <td>39159; RRID:AB_2615077</td>
+      <td>ChIP(4 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K36me3 (rabbit polyclonal)</td>
+      <td>Active Motif</td>
+      <td>61101; RRID:AB_2615073</td>
+      <td>ChIP(4 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K9ac (rabbit polyclonal)</td>
+      <td>Active Motif</td>
+      <td>39137; RRID:AB_2561017</td>
+      <td>ChIP(4 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K27me3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab4729; RRID:AB_2118291</td>
+      <td>ChIP(4 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HP1alpha (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab77256; RRID:AB_1523784</td>
+      <td>ChIP(4 µg/mL) IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SMC2 (rabbit polyclonal)</td>
+      <td>Losada Lab</td>
+      <td></td>
+      <td>IF(1:1000); Obtained from Ana Losada</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SMC3 (rabbit polyclonal)</td>
+      <td>Losada Lab</td>
+      <td></td>
+      <td>IF(1:1000); Obtained from Ana Losada</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H4 (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>SAB4500312; RRID:AB_10743081</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CAPH1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab154105</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit-A594 (donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A21207; RRID:AB_141637</td>
+      <td>IF(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Avidin-FITC</td>
+      <td>Vector Labs</td>
+      <td>A-2001–5; RRID:AB_2336455</td>
+      <td>FISH(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated anti-Avidin (goat polyclonal)</td>
+      <td>Vector Labs</td>
+      <td>BA-0300-.5; RRID:AB_2336108</td>
+      <td>FISH(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Texas Red anti-sheep (rabbit polyclonal)</td>
+      <td>Vector Labs</td>
+      <td>TI-6000; RRID:AB_2336219</td>
+      <td>FISH(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rhodamin anti-dig (sheep polyclonal)</td>
+      <td>Roche</td>
+      <td>11207750910; RRID:AB_514501</td>
+      <td>FISH(1:20)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>H2B-GFP</td>
+      <td>Addgene</td>
+      <td>11680</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EpiTect Bisuflite kit</td>
+      <td>Qiagen</td>
+      <td>59104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LightCycler 480 SYBR Green Master Mix</td>
+      <td>Roche</td>
+      <td>04707516001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIMO</td>
+      <td>Grant et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HiCExplorer</td>
+      <td>Ramírez et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture, fusion and transfection
 
 C127, NIH3T3 and HeLa cells were from ATCC. All mouse and human cell lines were maintained in DMEM supplemented with 10% FBS and 100 U/mL Penicillin-Streptomycin and 400 µg/mL geneticin (Gibco, Carslbad, CA). Standard S. pombe culture methods were followed as described (Moreno et al., 1991). Cells were grown in YES at 32°C. For protoplasting of S. pombe a procedure modified from previously reported methods was used (Allshire et al., 1987; Flor-Parra et al., 2009). Briefly, S. pombe cells were harvested from log-phase cultures grown in YES. 1 × 109 cells were resuspended in 10 mL SP2 buffer (50 mM citrate-phosphate, 1.2 M Sorbitol, pH 5.6) containing 25 mg/mL Lallzyme (Lallemand, Rexdale, ON, Canada, supplied by Litmus Wines), then incubated at 36°C for approximately 45 min until 80–90% of cells were converted to spherical protoplasts (determined by phase contrast microscopy). Protoplasts were pelleted at 1600xg for 3 min, then gently resuspended in 5 mL wash buffer (1.2 M Sorbitol, 10 mM Tris-HCl pH 7.5) and re-pelleted a total of three times.
 
@@ -139,19 +457,19 @@ For fusion of protoplasts with mammalian cells, protoplasts were counted using a
 
 A plasmid expressing H2B-GFP was obtained from Addgene (plasmid #11680) and transfected using the Neon transfection system (Invitrogen, Carlsbad, CA) as per the manufacturer’s instructions, electroporating for two pulses at 1400V for 20 ms each. For the transfection of S. pombe DNA into mammalian cells, DNA was prepared using a Qiagen Blood and Cell Culture DNA Kit (Qiagen, Venlo, Netherlands). 15–20 µg DNA was added to 124 µL of 2M CaCl2 and the total volume brought to 1 mL. 1 mL 2xHBS (50 mM HEPES pH 7.05, 10 mM KCl, 12 mM dextrose, 280 mM NaCl, 1.5 mM Na2PO4) was then added drop-wise while aerating constantly. 1 mL of the final mix was added drop-wise to a 10 cm diameter plate with cells at 30–40% confluence, or relatively equivalent volumes to other sized plates.
 
-## FISH
+### FISH
 
 For FISH metaphase spreads were prepared from non-arrested cells collected by mitotic shake-off. Cells were centrifuged at 800xg for 8 min and resuspended drop by drop in 5 to 10 mL 100 mM KCl pre-warmed to 37°C, mixing continuously. Cells were then incubated at 37°C for 15 min, centrifuged again and resuspended in 5 to 10 mL fixing solution (3:1 mix of methanol: acetic acid) at −20°C. Cells were centrifuged and washed in fixing solution in the same way twice more and finally resuspended in an appropriate volume of fixing solution (depending on cell number). 10 µL of fixed cell suspension was dropped onto a glass slide from approximately 0.5 m and allowed to dry for 2 to 5 days before proceeding. Slides were then incubated in 2xSSC with 100 µg/mL RNase at 37°C for 1 hr then dehydrated through a series of 2 min washes in 70%, 90% and 100% ethanol and air dried. Slides were then denatured in 2xSSC, 70% formamide, pH 7.5 for 1.5–2 min at 70°C. Denaturation was rapidly stopped by dipping slides into 70% ethanol on ice, followed again by dehydration through 90% and 100% ethanol at room temperature and air drying. Biotin or digoxigenin labelled S. pombe gDNA probes made by nick translation were evaporated at 65°C in 70% ethanol and resuspended in hybridisation mix (2xSSC, 50% deionised formamide, 10% dextran sulfate, 1% Tween 20). 100–200 ng probe containing 5 µg sonicated salmon sperm DNA in 15 µL hybridisation mix was used per slide. Alternatively, mouse chromosome paint was used directly. Probes were denatured at 70°C for 5 min and snap-cooled on ice before being placed on the slide under a coverslip overnight at 37°C in a humidity chamber. The following day slides were washed four times for 3 min in 2xSSC at 45°C and four times for 3 min in 0.1xSSC at 60°C before a brief wash in 4xSSC, 0.1% Tween 20 at 37°C. Blocking was performed for 5 min in in 4xSSC, 5% milk powder. Slides were then incubated with the appropriate detection antibodies for 30 to 60 min in 4xSSC, 5% milk powder under a coverslip. After each antibody incubation slides were washed three times for 2 min in 4xSSC, 0.1% Tween 20 at 37°C. After all antibody incubations slides were mounted directly in mounting medium and sealed. Antibodies used for detection of biotinylated probes were Avidin-FITC (Vector Labs, Burlingame, CA, 1:500), biotinylated α-Avidin (Vector Labs, 1:100) and Avidin-FITC again; and for detection of DIG-labelled probes, rhodamine α-DIG Fab fragments (Roche 1:20) followed by Texas Red α-sheep antibody (Vector Labs, 1:100).
 
-## Immunolocalisation
+### Immunolocalisation
 
 Spreads that were used for immunolocalisation experiments were prepared using a Shandon Cytospin (Thermo Scientific, Waltham, MA). Cells collected by mitotic shake-off, centrifuged, washed in D-PBS (Gibco) and resuspended at 3 × 104 cells/mL in 100 mM KCl pre-warmed to 37°C. Cell suspensions were then incubated for 15 min at 37°C and 100 µL of cells were spun onto glass slides using a Cytospin centrifuge at 1,800 rpm for 10 min. The slides were then incubated in a coplin jar for 10 min at room temperature in KCM buffer (120 mM KCl, 20 mM NaCl, 10 mM Tris-HCl pH 8.0, 0.5 mM EDTA, 0.1% Triton X-100) before blocking in 1% BSA in KCM buffer for 30 min at 37°C. Slides were then incubated in primary and secondary antibodies in blocking solution for 30 min and 45 min respectively at 37°C. After each antibody incubation the slides were washed twice in KCM buffer for 5 min. The slides were then fixed in 4% PFA in KCM for 10 min at 37°C and washed briefly once in KCM and twice in water before mounting and sealing. Antibodies used were as follows: rabbit α-H3K9me3 (Active Motif, Carlsbad, CA #39161), rabbit α-SMC2 and α-SMC3 (from Ana Losada), rabbit α-H4 (Sigma-Aldrich, St Louis, MO, #SAB4500312), rabbit α-CAPH1 (Abcam, Cambridge, UK, #Ab154105), donkey α-rabbit Alexa594 (Invitrogen, #A21207). Slides were imaged and positions on the slide recorded before proceeding to FISH. FISH was carried out as indicated above, except that slides were denatured at 80°C for 20 min.
 
-## Microscopy
+### Microscopy
 
 Most microscope images were acquired on a DeltaVision Core system (Applied Precision, Issaquah, WA) with an Olympus UPlanSApo × 100 oil immersion objective and an LED light source. Camera (Photometrics Cool Snap HQ), shutter and stage were controlled through Softworx (Applied Precision). Other images were acquired on an Eclipse Ti2 (Nikon, Tokyo, Japan) using the NIS-Elements software for instrument control and image acquisition. Z-series were collected and subsequently projected into a single image using either Softworx or ImageJ software (National Institutes of Health, Bethesda, MD). For intensity measurements DeltaVision images were also deconvolved in Softworx. Intensity and chromosome length measurements were taken using ImageJ. Intensity measurements were then binned as a function of their relative position along the chromosome and averaged. Regions of the average chromosome profile with equal numbers of measurements were compared using the Kolmogorov-Smirnoff test. The regions to test corresponding to the site of S. pombe DNA were defined as collections of two to five contiguous bins centred on the bin with the highest FISH intensity value, and containing only those bins whose FISH intensity was equal to or greater than 70% of this maximum value. Control regions were then defined as a separate collection of contiguous bins of the same size as the test region and whose IF or DNA intensity values fell within one standard deviation of the overall mean of the dataset, thus excluding extreme regions such as the centromere. Wherever possible, two distant and non-overlapping control regions were selected.
 
-## ChIP-qPCR
+### ChIP-qPCR
 
 For ChIP, mammalian cells were grown to near confluence in tissue culture dishes before fixation in growth medium with 1% PFA for 10 min at room temperature. Fixation was stopped by addition of glycine to a final concentration of 125 mM for 5 min at room temperature before washing twice in ice cold PBS. Cells were then harvested in PBS by scraping and spun down at 800xg for 5 min at 4°C. The fixed cells were then washed once each in 5 mL Wash Buffer 1 (0.25% Triton X-100, 10 mM EDTA, 0.5 mM EGTA, 10 mM HEPES) and Wash Buffer 2 (200 mM NaCl, 10 mM EDTA, 0.5 mM EGTA, 10 mM HEPES), with a 10 min incubation step on ice after each resuspension.
 
@@ -161,14 +479,14 @@ Cells were then resuspended in between 0.3 and 0.6 mL of Lysis Buffer (1% SDS, 1
 
 DNA was then Phenol-Chloroform extracted and ethanol precipitated before RNase treatment in 0.25 µg/mL DNase-free RNase for 30 min at room temperature. DNA amounts were then determined by qPCR on a Light Cycler 480 using SYBRGreen qPCR master mix (Roche). Inputs were diluted 1:20 before qPCR. Enrichments were calculated as % of DNA immunoprecipitated relative to input at the locus in question, and normalised to a positive control locus. Normalised IPs were compared between loci using the Student’s t-test.
 
-## Bisulfite sequencing
+### Bisulfite sequencing
 
 Bisulfite conversion of mammalian genomic DNA was performed using the EpiTect Bisulfite kit (Qiagen). Selected targets of 200–300 bp were then amplified by Hot Start PCR using primers designed for converted DNA. PCR products were then gel extracted and cloned into a vector using the Strataclone PCR Cloning kit (Agilent, Santa Clara, CA) and Sanger sequenced using the BigDye Terminator Cycle sequencing kit (Applied Biosystems, Foster City, CA).
 
-## DNA sequencing, assembly and analysis
+### DNA sequencing, assembly and analysis
 
 High molecular weight F1.1 genomic DNA was sequenced on a PromethION flow cell (Oxford Nanopore) to generate ultra-long reads. Mean read length was approximately 7 kb with a N50 of 40 kb and the longest read reaching 300 kb in length. From this, the sequence of the S. pombe insert of F1.1 was assembled by minimap2 and miniasm (Li, 2016). The assembly was then polished using Illumina whole genome paired-end reads (Langmead and Salzberg, 2012; Li, 2011; Li et al., 2009). CTCF site prediction was performed using FIMO (Grant et al., 2011) with a value <0.0001. The CTCF motifs were based on position weight matrices downloaded from CTCFBSDB 2.0 (Bao et al., 2008; Ziebarth et al., 2013).
 
-## Hi-C
+### Hi-C
 
 F1.1 cells were synchronised for mitotic Hi-C by a thymidine block. Cells were arrested for 18 hr by the addition of 2 mM thymidine and collected by mitotic shake-off 5 and then 8 hr after release. Cells were fixed in 1% PFA and collected as for ChIP. Chromatin was collected and Hi-C libraries prepared as previously described (Naumova et al., 2013). Hi-C data were mapped to the mouse reference genome (GRCm38) and the S. pombe insert assembly using HiCExplorer (Ramírez et al., 2018) and distance decay plots were made using Cooltools.

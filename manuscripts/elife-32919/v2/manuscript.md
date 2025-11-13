@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.32919.001 NKG2D is an important immunoreceptor expressed on the surface of NK cells and some T cells. NKG2D recognizes a set of ligands typically expressed on infected or transformed cells, but recent studies have also documented NKG2D ligands on subsets of host non-tumor cells in tumor-bearing animals and humans. Here we show that in transplanted tumors and genetically engineered mouse cancer models, tumor-associated macrophages are induced to express the NKG2D ligand RAE-1δ. We find that a soluble factor produced by tumor cells is responsible for macrophage RAE-1δ induction, and we identify tumor-derived colony-stimulating factor-1 (CSF-1) as necessary and sufficient for macrophage RAE-1δ induction in vitro and in vivo. Furthermore, we show that induction of RAE-1δ on macrophages by CSF-1 requires PI3K p110α kinase signaling. Thus, production of CSF-1 by tumor cells leading to activation of PI3K p110α represents a novel cellular and molecular pathway mediating NKG2D ligand expression on tumor-associated macrophages.
+NKG2D is an important immunoreceptor expressed on the surface of NK cells and some T cells. NKG2D recognizes a set of ligands typically expressed on infected or transformed cells, but recent studies have also documented NKG2D ligands on subsets of host non-tumor cells in tumor-bearing animals and humans. Here we show that in transplanted tumors and genetically engineered mouse cancer models, tumor-associated macrophages are induced to express the NKG2D ligand RAE-1δ. We find that a soluble factor produced by tumor cells is responsible for macrophage RAE-1δ induction, and we identify tumor-derived colony-stimulating factor-1 (CSF-1) as necessary and sufficient for macrophage RAE-1δ induction in vitro and in vivo. Furthermore, we show that induction of RAE-1δ on macrophages by CSF-1 requires PI3K p110α kinase signaling. Thus, production of CSF-1 by tumor cells leading to activation of PI3K p110α represents a novel cellular and molecular pathway mediating NKG2D ligand expression on tumor-associated macrophages.
 
 ## Introduction
 
@@ -37,33 +37,124 @@ Here we show that the NKG2D ligand RAE-1δ is induced on tumor-associated macrop
 
 ## Results
 
-## RAE-1δ induction on tumor-associated macrophages
+### RAE-1δ induction on tumor-associated macrophages
 
 A limited number of studies have described NKG2D ligand expression on subsets of tumor-associated hematopoietic cells (Crane et al., 2014; Deng et al., 2015; Nausch et al., 2008). To further investigate this phenomenon, we used flow cytometry to analyze NKG2D ligands on hematopoietic cells infiltrating several transplant tumor models. First, WT C57BL/6 mice were injected subcutaneously with a high dose (1 × 106) of B16-BL6 melanoma cells, hereafter referred to as B16. Once established at approximately 1 cm in diameter (10–17 days post-injection), tumors were dissociated and stained with lineage markers and monoclonal antibodies for NKG2D ligands, including RAE-1δ, RAE-1ε, MULT1, or a polyclonal antibody that recognizes multiple H60 isoforms. As RAE-1 molecules are quite similar, we validated the specificity of the antibodies by staining B16 cells transduced with RAE-1δ or RAE-1ε with the antibodies targeting these ligands (Figure 1—figure supplement 2A), and we previously confirmed isoform-specific blocking by these antibodies (Thompson et al., 2017).
 
 Tumor-associated macrophages (hereafter called TAMs) are an important subset of myeloid cells identified as CD45-pos; CD11b-hi; Ly6G-neg; F4/80-hi (Figure 1—figure supplement 1A). Interestingly, TAMs in B16 tumors expressed RAE-1δ but not other NKG2D ligands (Figure 1A). In addition to strong expression on TAMs, RAE-1δ was weakly expressed on monocytes in B16 tumors (identified as CD45-pos; CD11b-hi; Ly6G-neg; F4/80-low; Ly6C-hi – gating strategy in Figure 1—figure supplement 3A) – but negligible on other hematopoietic cells (Figure 1B). Importantly, RAE-1δ staining on TAMs was completely absent in RAE-1-KO mice, which contain frameshift mutations in the genes encoding RAE-1δ and RAE-1ε, confirming the specificity of the RAE-1δ staining (Figure 1—figure supplement 1B). In contrast to robust TAM expression of RAE-1δ, splenic macrophages, peritoneal macrophages, and blood monocytes in mice bearing B16 tumors expressed little to no RAE-1δ (Figure 1—figure supplements 1C and 3B,C). These data indicate that macrophages within the B16 tumor microenvironment are induced to express the NKG2D ligand RAE-1δ. Expression of RAE-1δ in TAMs within B16 tumors was similar at various stages of tumor growth (Figure 1—figure supplement 2B). Gating strategies for blood monocytes and peritoneal macrophages are shown in Figure 1—figure supplement 3.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig1-v2.jpg)
+
+**Figure 1.:** (A) Established B16 S.C. tumors were dissociated and analyzed for NKG2D ligand expression on tumor-associated macrophages. (B) RAE-1δ expression (left) and MFI quantification (right) on the indicated cell types in B16 tumors. (C) RAE-1δ expression on TAMs in spontaneous KP sarcoma, but not in spontaneous TRAMP prostate adenocarcinoma or transferred RMA-S lymphoma. Data are representative of >3 independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Gating strategy to identify tumor-associated macrophages in B16 tumors. (B) Expression of RAE-1δ on TAMs in B16 S.C. tumors in WT and RAE-1-KO mice. (C) RAE-1δ expression on TAMs, splenic macrophages, blood monocytes, or peritoneal macrophages in WT mice with established B16 S.C. tumors. Data are representative of >3 independent experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) B16 cells transduced to stably express RAE-1δ or RAE-1ε were stained with biotinylated antibodies against RAE-1δ or RAE-1ε, followed by fluorophore-conjugated streptavidin. (B) Expression of RAE-1δ on TAMs in B16 S.C. tumors in WT mice at the indicated time after injection of 1 × 106 tumor cells. (C) Expression of RAE-1δ on TAMs in S.C. B16 and RMA-S tumors and autochthonous KP and TRAMP tumors. Data are compiled from several independent experiments.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Gating strategies for (A) monocytes in B16 tumors, (B) blood monocytes, and (C) peritoneal macrophages.
+
 In contrast to the findings with B16 tumors, RAE-1δ staining was negligible or very low on TAMs in similarly sized S.C. tumors generated by injection of the RMA-S T cell lymphoma cell line (5 × 106 cells injected) (Figure 1C). We next sought to analyze NKG2D ligands on tumor-associated cells in spontaneous tumor models. In the KP sarcoma model driven by lentiviral-Cre activation of oncogenic Kras and deletion of Trp53 (DuPage et al., 2009), TAMs in primary tumors expressed robust RAE-1δ (Figure 1C). In contrast, TAMs within primary TRAMP prostate tumors -- a spontaneous adenocarcinoma model driven by expression of SV40 T antigens (Greenberg et al., 1995) -- mostly lacked RAE-1δ (Figure 1C). Together, these data indicate that TAMs, but not other hematopoietic cells, are induced to express RAE-1δ in some transplant and spontaneous tumors (B16 tumors and primary KP sarcomas), but not in others (RMA-S tumors and primary TRAMP adenocarcinomas) (see Figure 1—figure supplement 2C for comparisons). Thus, tumor microenvironments are differentially capable of inducing NKG2D ligand expression by macrophages.
 
-## A tumor-derived soluble factor induces RAE-1δ on macrophages in vitro
+### A tumor-derived soluble factor induces RAE-1δ on macrophages in vitro
 
 To interrogate the mechanism of RAE-1δ induction on TAMs, we began by testing the hypothesis that a soluble factor released from tumor cells induces macrophage RAE-1δ. Resident macrophages were obtained from naïve WT mice by peritoneal lavage and cultured ex vivo with concentrated cell culture medium from B16 cells (diluted 1:1 with fresh medium) or similarly diluted concentrated fresh medium as a control. Macrophages cultured in the control medium showed little to no RAE-1δ expression, but culture with B16-conditioned medium led to a robust induction of cell surface RAE-1δ (Figure 2A). RAE-1δ was similarly induced by culture medium from a KP sarcoma cell line (Figure 2B). These results indicated that a soluble factor(s) produced by B16 tumor cells and KP sarcoma cells is sufficient to induce RAE-1δ on macrophages ex vivo.
 
-## CSF-1 is sufficient to induce macrophage RAE-1δ ex vivo
+![Figure 2.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig2-v2.jpg)
+
+**Figure 2.:** (A) Peritoneal wash cells were cultured with a 1:1 mixture of fresh medium plus 20X concentrated fresh medium or 20X concentrated B16 cell culture supernatants, and macrophage RAE-1δ was analyzed by flow cytometry 48 hr later. (B) Peritoneal wash cells were stimulated 48 hr ex vivo with a 1:1 mixture of fresh medium supplemented with fresh medium or conditioned medium from cultures of a KP sarcoma cell line generated from a primary KP sarcoma, and macrophage RAE-1δ was analyzed 48 hr later by flow cytometry. (C) Peritoneal wash cells were cultured with or without 10 ng/ml CSF-1, with the addition of control Ig or CSF-1R antibody (1 μg/ml), and macrophage RAE-1δ was analyzed 48 hr later by flow cytometry. (D) Peritoneal macrophage Raet1d mRNA 48 hr after stimulation with or without the addition of CSF-1 (10 ng/ml). (E) Peritoneal macrophage expression of the indicated NKG2D ligands 48 hr after stimulation with CSF-1 or control medium. Data are representative of >3 independent experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) CSF-R1 expression on peritoneal macrophages ex vivo. (B) RAE-1δ expression on peritoneal macrophages cultured 48 hr with the indicated concentration of CSF-1. (C) RAE-1δ expression on bone-marrow-derived-macrophages generated using 10 ng/ml CSF-1 or GMCSF. Data are representative of 2–3 independent experiments.
+
+### CSF-1 is sufficient to induce macrophage RAE-1δ ex vivo
 
 To identify soluble factors that induce RAE-1δ on macrophages, we stimulated peritoneal macrophages with a panel of recombinant cytokines known to ligate receptors expressed on macrophages (Table 1). Alone among the cytokines tested, recombinant colony-stimulating factor-1 (CSF-1), also known as macrophage colony-stimulating factor (MCSF), was sufficient to induce robust RAE-1δ expression on macrophages (Figure 2C). Macrophages express the CSF-1 receptor (CSF-1R) (Figure 2—figure supplement 1A), and macrophages cultured with recombinant CSF-1 along with blocking antibody against CSF-1R failed to induce RAE-1δ, establishing that the added cytokine acts through CSF-1R (Figure 2C). We performed qPCR on reverse-transcribed RNA from CSF-1-stimulated macrophages and found that recombinant CSF-1 caused upregulation of transcripts of the Raet1d gene, which encode RAE-RAE-1δ (Figure 2D). Stimulation with graded doses of CSF-1 showed that as little as 3 ng/ml was sufficient to induce detectable RAE-1δ in this system, with high induction levels seen at 10 ng/ml (Figure 2—figure supplement 1B). Interestingly, induction of other NKG2D ligands by CSF-1 was negligible (Figure 2E), indicating that CSF-1 upregulates RAE-1δ highly selectively. Macrophages can be derived from bone marrow cells in vitro using CSF-1 or GM-CSF. Consistent with our findings, macrophages derived from bone marrow cells via 7 days of culture with CSF-1 induced robust RAE-1δ, whereas parallel cultures in GM-CSF showed little to no RAE-1δ expression (Figure 2—figure supplement 1C)
 
-## CSF-1 is necessary for macrophage RAE-1δ induction by tumor cell supernatants ex vivo
+**Table 1.**
+ Cytokine stimulation of macrophages for RAE-1δ induction.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment</th>
+      <th>Macrophage RAE-1δ induction?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IL-1α</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>IL-1β</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>IL-4</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>IL-6</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>IL-12</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>IFNβ</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>IFNγ</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>TNFα</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>CSF1</td>
+      <td>+++</td>
+    </tr>
+  </tbody>
+</table>
+
+### CSF-1 is necessary for macrophage RAE-1δ induction by tumor cell supernatants ex vivo
 
 To further assess whether CSF-1 contributes to induction by tumor cells of RAE-1δ on macrophages, we analyzed CSF-1 secretion by B16 cells (in which TAMs express RAE-1δ – Figure 1A) and RMA-S cells (in which TAMs lack RAE-1δ – Figure 1C). As measured by ELISA of cell culture supernatants, B16 cells secreted substantial CSF-1, whereas RMA-S cells did not (Figure 3A). KP sarcoma cell lines also produced CSF-1, and much more robustly than did B16 cells (Figure 3—figure supplement 1A). We used ELISA to analyze CSF-1 protein levels in tumor microenvironments in vivo from mechanically dissociated S.C. tumors and found the concentrations of intratumoral CSF-1 were much greater in B16 tumors than in RMA-S tumors (Figure 3B). Furthermore, the level of CSF-1 within B16 tumors was substantially greater than serum CSF-1 levels in naïve or tumor-bearing mice (Figure 3—figure supplement 1B), consistent with previous reports describing steady-state CSF-1 levels in circulation (Menke et al., 2009).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig3-v2.jpg)
+
+**Figure 3.:** (A) The indicated numbers of B16 or RMA-S cells were seeded in 12-well plates, and CSF-1 levels in the supernatants were measured by ELISA 48 hr later. (B) Established B16 or RMA-S tumors were dissociated, and CSF-1 levels in dissociation supernatants were measured by ELISA; intra-tumoral concentrations were calculated using tumor volume measurements (total ng of CSF-1 divided by the tumor volume at time of harvest). (C) Peritoneal macrophage RAE-1δ expression 48 hr after culture with concentrated fresh medium, concentrated B16 conditioned medium plus control Ig (1 ug/ml), or concentrated B16 conditioned medium plus anti-CSF-1R (1 ug/ml). (D) Peritoneal macrophage RAE-1δ 48 hr after culture with fresh medium, KP conditioned medium plus control Ig, or KP conditioned medium plus anti-CSF-1R (1 ug/ml). Data are representative of >3 independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) CSF-1 concentrations in the indicated cell line culture supernatants. (B) CSF-1 concentrations in B16 tumors or serum of naïve or tumor-bearing mice. Data are representative of 2–3 independent experiments. Concentrations in tumors are depicted as total ng of CSF-1 per tumor dissociate divided by volume of tumor at time of harvesting.
+
 These observations suggested that tumor cell secretion of CSF-1 might contribute to macrophage RAE-1δ induction. To directly test this hypothesis in vitro, peritoneal macrophages were cultured with concentrated B16-conditioned medium in the presence of control Ig or anti-CSF-1R blocking antibody. We found that CSF-1R blockade completely abrogated macrophage RAE-1δ induction by B16-conditioned medium (Figure 3C). RAE-1δ induction by KP cell line-conditioned medium was also completely prevented by antibody blockade of CSF-1R (Figure 3D). Collectively, these data indicated that CSF-1 is sufficient to induce RAE-1δ on macrophages, and that CSF-1 is necessary for macrophage RAE-1δ induction by B16 and KP tumor cell supernatants in vitro.
 
-## Short-term blockade of CSF-1 or CSF-1R abrogates TAM RAE-1δ expression in vivo
+### Short-term blockade of CSF-1 or CSF-1R abrogates TAM RAE-1δ expression in vivo
 
 We sought to determine whether the CSF-1/CSF-1R axis controlled RAE-1δ expression on TAMs in vivo. Mice with established B16 tumors were treated with anti-CSF-1 or anti-CSF-1R, and RAE-1δ on TAMs was analyzed 48 hr post-treatment. Blockade of CSF-1 or CSF-1R each led to substantial reductions in RAE-1δ expression by TAMs (Figure 4A). As it has been shown that steady-state CSF-1 signaling is necessary for monocyte and macrophage survival in vivo, we injected tumor-bearing mice with CSF-1R antibody and monitored tumor-infiltrating macrophage numbers and RAE-1δ expression at various time points. Blockade of CSF-1R for 2 days had no impact on macrophage cell numbers but drastically reduced macrophage RAE-1δ expression, whereas treatments for 5 days or longer caused a major depletion in TAM numbers, associated with low RAE-1δ levels on the few remaining macrophages (Figure 4—figure supplement 1A). Similar to the findings with B16 tumors, a 2 day treatment with CSF-1R antibody resulted in a substantial reduction in RAE-1δ on TAMs in primary KP tumors without a significant reduction in TAM numbers, generalizing our findings to spontaneous tumors (Figure 4B and Figure 4—figure supplement 1B). Thus, antibody blockade of the CSF-1/CSF-1R axis suppresses RAE-1δ expression by TAMs in B16 S.C. tumors and autochthonous KP sarcomas.
 
-## Tumor-derived CSF-1 is required for RAE-1δ expression by TAMs in vivo
+![Figure 4.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig4-v2.jpg)
+
+**Figure 4.:** (A) Mice with established B16 tumors were injected i.p. with 200 ug of the indicated antibody, and RAE-1δ on TAMs was analyzed 48 hr later. (B) KP mice with established sarcomas were injected i.p. with 200 ug of the indicated antibody, and RAE-1δ on TAMs was analyzed 48 hr later. Statistical significance was determined using one-way ANOVA with Bonferroni post-tests (A) or a two-tailed unpaired Student’s t test (B). Data represent means ±SEM. Data are representative of >3 independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) RAE-1δ on TAMs in B16 tumors from mice given control Ig or anti-CSF-1R at days −1, 2, and 5 and harvested at the indicated time point. (B) TAMs as a percent of total live cells in B16 tumors from mice given control Ig or anti-CSF-1R for 48 hrs. Statistical significance was determined using one-way ANOVA with Bonferroni post-tests. Data are representative of 2 independent experiments.
+
+### Tumor-derived CSF-1 is required for RAE-1δ expression by TAMs in vivo
 
 To formally test whether tumor-derived CSF-1 was responsible for inducing TAM RAE-1δ, we used CRISPR/Cas9 to target the Csf1 open reading frame for deletion in B16 cells. B16 cells were transiently transfected with plasmids encoding Cas9 and two guide RNAs targeting loci immediately adjacent to the Csf1 ORF. Transfected cells were single-cell cloned, and clones were analyzed for CSF-1 secretion by ELISA. CSF-1-negative cells were injected into WT mice alongside parental B16 tumors, and established tumors were analyzed for RAE-1δ expression by TAMs. Mice were given a high dose (1 × 106 cells) to standardize tumor growth rates. Compared with control tumors, Csf1-KO B16 tumors showed markedly lower RAE-1δ expression by TAMs (Figure 5A). Mice injected with a second, independent Csf1-KO B16 clone also showed substantially reduced RAE-1δ expression by TAMs (Figure 5B). To control for off-target effects of Cas9, Csf1-KO B16 cells were stably transduced with control empty vector or a Csf1-expression vector, and injected into mice. Csf1-transduction completely reversed the KO phenotype, and restored RAE-1δ expression on TAMs (Figure 5C).
 
@@ -73,15 +164,31 @@ To formally test whether tumor-derived CSF-1 was responsible for inducing TAM RA
 
 Unlike B16 cells, RMA-S cells fail to secrete CSF-1 (Figure 3A) and also fail to induce significant RAE-1δ expression by TAMs (Figure 1C). In contrast, RMA-S cells stably transduced with a CSF-1-expression vector efficiently induced RAE-1δ expression by TAMs whereas transduction with empty vector had little or no effect (Figure 5D). Collectively, these data provide decisive evidence that production of CSF-1 by tumor cells in vivo drives RAE-1δ expression on tumor-associated macrophages.
 
-## PI3K p110α signals are required for macrophage RAE-1δ induction by CSF-1
+### PI3K p110α signals are required for macrophage RAE-1δ induction by CSF-1
 
 CSF-1 binds the CSF-1 receptor to initiate a variety of intracellular signaling pathways. PI3K is an important signaling molecule and a known target downstream of CSF-1R. PI3K signals have also been linked to induction of RAE-1 molecules in other contexts (Tokuyama et al., 2011), so we sought to determine whether PI3K activation by CSF-1 was involved in macrophage RAE-1δ induction. First, we analyzed activation of the PI3K pathway by intracellular flow cytometry for phosphorylated-S6, a known downstream target of PI3K signaling, in peritoneal macrophages stimulated with CSF-1. Indeed, macrophages showed robust S6 phosphorylation after CSF-1 stimulation (Figure 6—figure supplement 1A). There are four isoforms of the catalytic p110 unit of PI3K, denoted α, β, γ, and δ. We cultured macrophages with CSF-1 plus isoform-specific PI3K inhibitors and analyzed RAE-1δ induction. Interestingly, specific inhibition of PI3K p110α with two different chemical inhibitors (PI3Ka2i and PI-103) prevented CSF-1-induced RAE-1δ expression at low inhibitor concentrations, whereas inhibitors of p110 isoforms β, δ, and γ only inhibited RAE-1δ induction at high inhibitor concentrations, likely due to nonspecific inhibition or off-target effects (Figure 6A and B). The two PI3K p110α inhibitors also inhibited accumulation of Raet1d mRNA in CSF-1-treated macrophages (Figure 6C). These results indicate that PI3K p110α activity is required for induction of RAE-1δ gene expression by CSF-1.
 
-## Interactions of macrophage RAE-1δ with NKG2D and NK cells
+![Figure 6.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig6-v2.jpg)
+
+**Figure 6.:** (A) Peritoneal wash cells were stimulated with CSF-1 plus vehicle control or PI3Kα inhibitors at 3 μM, and macrophage RAE-1δ was analyzed at 24 hr. (B). Relative macrophage RAE-1δ MFI 24 hr after stimulation with CSF-1 plus the indicated concentrations of the indicated PI3K inhibitors. (C) Relative Raet1d mRNA levels 24 hr after macrophage stimulation with CSF-1 plus vehicle control or PI3Kα inhibitors at 3 μM. Statistical significance was determined using one-way ANOVA with Bonferroni post-tests. Data are representative of 3–4 independent experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Phospho-S6 staining (top) and MFI quantification (bottom) in macrophages stimulated with control medium or 10 ng/ml CSF-1 for the indicated times. Data are representative of 3 independent experiments.
+
+### Interactions of macrophage RAE-1δ with NKG2D and NK cells
 
 RAE-1 molecules ligate NKG2D to regulate NK cell activity. We sought to investigate the functional role of CSF-1-induced macrophage RAE-1δ using an in vitro co-culture system. Peritoneal macrophages from WT or RAE-1-KO mice were stimulated with CSF-1 for 48 hr, followed by co-culture with WT splenocytes for 18 hr. In parallel, WT splenocytes were co-cultured with B16 or B16-RAE-1δ cells for 18 hr to analyze the effect of tumor-expressed RAE-1δ vs. macrophage-expressed RAE-1δ. Following co-culture, NKG2D levels on NK cells were analyzed by flow cytometry as a measure of receptor engagement (because NKG2D is internalized from the cell surface upon engagement), or the co-cultured cells were subjected to 5 hr stimulation with platebound antibodies ligating the NK cell activating receptor NKp46, and NK cell degranulation and IFNγ expression were analyzed by flow cytometry.
 
 Co-culture of NK cells with CSF-1-induced macrophages expressing RAE-1 molecules efficiently downregulated NKG2D from the NK cell surface, whereas co-culture with RAE-1-KO macrophages had little to no effect on NKG2D levels (Figure 7A). Similarly, co-culture with RAE-1δ-expressing B16 cells led to NKG2D downregulation, whereas parental B16 cells had little to no effect (Figure 7B). Thus, CSF-1-induced RAE-1δ on macrophages is capable of binding and engaging NKG2D, leading to receptor internalization.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig7-v2.jpg)
+
+**Figure 7.:** (A) Peritoneal macrophages from WT or RAE-1-KO mice or were stimulated with 10 ng/ml CSF-1 for 48 hr and then co-cultured with WT splenocytes for 18 hr, and NKG2D levels were analyzed by flow cytometry. (B) B16 or B16-RAE-1δ cells were co-cultured with WT splenocytes for 18 hr, and NKG2D levels on NK cells were analyzed by flow cytometry. (C) WT splenocytes were co-cultured with CSF-1-stimulated WT or RAE-1-KO macrophages for 18 hr, followed by 5 hr stimulation with plate-bound antibody against the NK cell activating receptor NKp46, or control Ig, and NK cell IFNγ and degranulation were analyzed by flow cytometry. (D) WT splenocytes were co-cultured with B16 or B16-RAE-1δ cells for 18 hr, followed by 5 hr stimulation with plate-bound antibody against the NK cell activating receptor NKp46, and NK cell IFNγ and degranulation were analyzed by flow cytometry.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/32919/elife-32919-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) TAMs as a percentage of CD45 + cells in established B16 tumors in WT and RAE-1-KO mice. (B) RAE-1δ on TAMs in B16 tumors in WT and NKG2D-KO mice.
 
 NK cells co-cultured with RAE-1δ-expressing macrophages showed an augmented functional response in vitro to anti-NKp46 stimulation compared to NK cells co-cultured with RAE-1-KO macrophages (Figure 7C). Similarly, NK cells co-cultured with B16-RAE-1δ cells showed augmented functional responses compared with NK cells co-cultured with parental B16 cells (Figure 7D). These data indicate that, in this in vitro system, short-term interactions with CSF-1-stimulated macrophages expressing RAE-1δ had the effect of priming NK cells to respond better when stimulated through a distinct activating receptor. A recent report from our group explored the role of host RAE-1 molecules on NK cell function in vivo in greater detail, and is described in the discussion section.
 
@@ -105,7 +212,7 @@ Collectively, data here and in previous studies (Diefenbach et al., 2001; Guerra
 
 ## Materials and methods
 
-## Mice and in vivo procedures
+### Mice and in vivo procedures
 
 C57BL/6J mice were bred from mice obtained from The Jackson Laboratory (Bar Harbor, ME). RAE-1-KO mice were previously generated in our lab using CRISPR-Cas9 and guide RNAs targeting the open reading frames of the Raet1d and Raet1e genes, as described (Deng et al., 2015). KP mice contain an inducible activating mutation in the proto-oncogene Kras and an inducible deletion mutation in the tumor suppressor gene Trp53 (DuPage et al., 2009; DuPage et al., 2012) and were bred from mice obtained from The Jackson Laboratory. TRAMP mice contain a transgene expressing the SV40 large T and small T antigens under the rat probasin promoter (Gingrich et al., 1996). All mice were maintained at the University of California, Berkeley in accordance with guidelines from the Animal Care and Use Committee. Sex- and age-matched (8- to 12-week-old) mice were used for the experiments.
 
@@ -115,38 +222,38 @@ In some experiments, mice were given blocking antibody (200 ug/injection) agains
 
 Spleens were dissociated by mashing through a 70 uM filter into PBS. To dissociate tumors for flow cytometry, tumors were excised and minced using a sharp blade, and then incubated in complete medium with 3.5 mg/ml Collagenase D, 1 mg/ml Collagenase IV for 30 min at 37°C with rotation. Cells were then pipetted up and down rigorously 100 times to create a single cell suspension, with additional 10 min, 37°C incubations as needed.
 
-## CSF-1 ELISA
+### CSF-1 ELISA
 
 CSF-1 concentrations were analyzed by standard sandwich ELISA. The capture antibody (clone 5A1) was used at 1 ug/ml. Recombinant CSF-1 (Peprotech) was used as a standard. The detection antibody (biotinylated polyclonal anti-CSF-1, R and D systems cat # BAF416) was used at 0.5 ug/ml. Avidin-HRP and TMB substrate (ebioscience) were used for detection. To quantify CSF-1 levels in tumor microenvironments, tumors were dissociated as described above, and the supernatants from the dissociation were subjected to CSF-1 ELISA; intra-tumor concentrations were calculated according to measured tumor volumes calculated using the modified ellipsoid formula: V = 0.5 x [(length + width)/2]3, and the volume of dissociation supernatant.
 
-## RNA, cDNA and qPCR
+### RNA, cDNA and qPCR
 
 Total RNA was isolated from cells using the RNeasy kit (Qiagen, Hilden, Germany) and converted to cDNA using the iScript system (Bio-Rad, Hercules, CA) according to the manufacturer’s instructions. cDNA was subjected to real-time PCR using SsoFast EvaGreen supermix (Bio-Rad) in the presence of primers to amplify Raet1d mRNA, or the transcripts of the housekeeping genes β-actin and Rpl19, in a CFX96 RT-qPCR thermocycler (BioRad). Relative mRNA values for Raet1d were normalized to the levels of the housekeeping genes, using CFX96 software.
 
-## Cell culture
+### Cell culture
 
 All cell culture was performed in a humidified 37°C incubator at 5% CO2. Cells were cultured in DMEM or RPMI media (Life Technologies, Carlsbad, CA) supplemented with 5% fetal calf serum (Omega Scientific, Tarzana, CA), 0.2 mg/ml glutamine, 100 U/ml penicillin, 100 μg/ml streptomycin (Sigma–Aldrich, St. Louis, MO), 10 μg/ml gentamicin sulfate (Lonza, Basel, Switzerland), and 20 mM HEPES (Thermo Fisher Scientific, Waltham, MA). Cell lines were obtained from ATCC, authenticated by expression analyses for cell line-specific markers, and routinely tested negative for mycoplasma. For generation of bone marrow-derived macrophages, bone marrow cells were cultured in medium supplemented with 10 ng/ml CSF-1 or GMCSF for 7 days, with fresh medium added every two days.
 
-## Ex vivo peritoneal macrophage stimulation
+### Ex vivo peritoneal macrophage stimulation
 
 Cells were obtained by peritoneal lavage of C57BL/6 mice. Briefly, mice were euthanized and injected i.p. with 5 ml ice-cold PBS using a 24-gauge needle, and the peritoneal lavage fluid was then captured using the same syringe. Cells were washed in complete medium and cultured in 12- or 6-well non-TC-treated cell culture plates (Corning, Corning, NY) for 12–48 hr. In some experiments, medium was supplemented with recombinant cytokines (Peprotech, Rocky Hill, NJ) and/or blocking antibodies as indicated. In other experiments, medium was supplemented with conditioned medium from tumor cell lines, which was filtered through a 0.22 uM filter to remove cellular debris. B16-conditioned medium was concentrated 20X using a 10 kDa centrifugal filter unit (cat #UFC901008, Millipore-Sigma). After culture, cells were washed to remove suspension cells, and macrophages were lifted by vigorous pipetting of ice-cold PBS. Macrophages were identified as live F4/80 + cells by flow cytometry.
 
-## Flow cytometry and FACS
+### Flow cytometry and FACS
 
 For all flow cytometry experiments, single cell suspensions were generated and incubated for 20 min with supernatant from the 2.4G2 hybridoma to block FcγRII/III receptors, followed by incubation with fluorochrome- or biotin-conjugated specific antibodies for an additional 20 min. In some experiments, an additional incubation with fluorophore-conjugated streptavidin (Biolegend) was performed. For phospho-S6 staining, cells were cultured for the indicated time, and an equal volume of 37°C-prewarmed Cytofix solution (BD Biosciences) was added for 10 min at 37°C. Cells were then suspended in Perm Buffer III (BD Biosciences) for 30 min at 4°C, then washed with regular flow cytometry buffer before staining with anti-phospho-S6 and lineage markers. All flow cytometry samples were analyzed on a LSR Fortessa or LSR Fortessa X20 (BD Biosciences) and data were analyzed with FlowJo software (Tree Star Inc.). Dead cells were excluded from analysis using DAPI (Biolegend) or Live-Dead fixable dead cell stain kits (Molecular Probes) following the manufacturer’s instructions.
 
-## Antibodies
+### Antibodies
 
 We used the following antibodies: from Biolegend: anti-CD3ε (clone 145–2 C11), anti-CD11b (clone M1/70), anti-CD19 (clone 6D5), anti-NKp46 (clone 29A1.4), anti–NK1.1 (clone PK136), anti-Ter119 (clone TER-119), anti-Ly6G (clone 1A8), anti-Ly6C (clone HK1.4), anti-F4/80 (clone BM8) mouse IgG2b isotype control, and rat IgG2b isotype control; from eBioscience: anti-CD45.2 (clone 104), from R and D Systems: anti-RAE-1δ (clone 199205), anti-RAE-1ε (clone 205001), anti-MULT1 (clone 237104), polyclonal anti-H60 (cat # BAF1155); from BioXCell: anti-CSF-1R (clone AFS98), anti-CSF-1 (clone 5A1); from Cell Signaling: anti-phospho-S6 (clone D57.2.2E). For flow cytometry analysis of NKG2D ligands, antibodies were biotinylated in house using the EZ-Link-Sulfo-NHS-LC biotin kit (Thermo Fisher).
 
-## Csf1 knockout, complementation, and overexpression
+### Csf1 knockout, complementation, and overexpression
 
 Guide RNA sequences targeting the Csf1 open-reading frame were cloned into the Cas9-expression plasmid px330. Guide RNA sequences are as follows, with bold indicating the PAM: GACGACCAGGCGGCCCGCTTGGG and ATGGAATCCACGTGCAGGGTTGG. B16 cells were co-transfected with both px330 plasmids containing the guide RNAs targeting Csf1. Seven days after transfection, cells were single cell cloned. Clones were analyzed by ELISA for CSF-1, and two CSF-1-negative clones were selected for further experiments. To restore CSF-1 expression in B16-Csf1-KO cells or express Csf1 in RMA-S cells, we used an MSCV-IRES-Thy1.1 plasmid containing cDNA encoding secreted CSF-1, a kind gift from Dr. Richard Stanley (Albert Einstein College of Medicine). Thy1.1+cells were sorted by FACS, and CSF-1 production was confirmed by ELISA.
 
-## NK responsiveness assay
+### NK responsiveness assay
 
 To analyze the responsiveness of NK cells ex vivo, 96-well high-binding flat-bottom plates (Thermo Fisher) were coated overnight with PBS plus anti-NKp46 or control Ig at 5 ug/ml. Plates were washed three times with PBS before stimulation. Cells were cultured in the coated plates for 5 hr in the presence of Golgi-Stop and Golgi-Plug (1:1000 each) (BD Biosciences), 1000 U/ml human IL-2, and fluorophore-conjugated anti-CD107a (0.5 ug/ml) (Biolegend). After stimulation, cells were stained for extracellular markers to identify NK cells and then subjected to intracellular staining for IFN-γ, followed by flow cytometry analysis.
 
-## Statistics and sample size
+### Statistics and sample size
 
 All statistical analysis was conducted using Prism software (Graphpad, La Jolla, CA), as indicated in the figure legends. Statistical significance is indicated as follows: *p<0.05, **p<0.01, ***p<0.001. For most data sets, pilot experiments were performed with a small sample size (usually n = 3) to determine approximate experimental variances and effect magnitudes, and this information was used to determine sample sizes for subsequent experiments.

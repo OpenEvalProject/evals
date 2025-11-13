@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.34488.001 Assembly and/or insertion of a subset of mitochondrial outer membrane (MOM) proteins, including subunits of the main MOM translocase, require the fungi-specific Mim1/Mim2 complex. So far it was unclear which proteins accomplish this task in other eukaryotes. Here, we show by reciprocal complementation that the MOM protein pATOM36 of trypanosomes is a functional analogue of yeast Mim1/Mim2 complex, even though these proteins show neither sequence nor topological similarity. Expression of pATOM36 rescues almost all growth, mitochondrial biogenesis, and morphology defects in yeast cells lacking Mim1 and/or Mim2. Conversely, co-expression of Mim1 and Mim2 restores the assembly and/or insertion defects of MOM proteins in trypanosomes ablated for pATOM36. Mim1/Mim2 and pATOM36 form native-like complexes when heterologously expressed, indicating that additional proteins are not part of these structures. Our findings indicate that Mim1/Mim2 and pATOM36 are the products of convergent evolution and arose only after the ancestors of fungi and trypanosomatids diverged.
+Assembly and/or insertion of a subset of mitochondrial outer membrane (MOM) proteins, including subunits of the main MOM translocase, require the fungi-specific Mim1/Mim2 complex. So far it was unclear which proteins accomplish this task in other eukaryotes. Here, we show by reciprocal complementation that the MOM protein pATOM36 of trypanosomes is a functional analogue of yeast Mim1/Mim2 complex, even though these proteins show neither sequence nor topological similarity. Expression of pATOM36 rescues almost all growth, mitochondrial biogenesis, and morphology defects in yeast cells lacking Mim1 and/or Mim2. Conversely, co-expression of Mim1 and Mim2 restores the assembly and/or insertion defects of MOM proteins in trypanosomes ablated for pATOM36. Mim1/Mim2 and pATOM36 form native-like complexes when heterologously expressed, indicating that additional proteins are not part of these structures. Our findings indicate that Mim1/Mim2 and pATOM36 are the products of convergent evolution and arose only after the ancestors of fungi and trypanosomatids diverged.
 
 ## Introduction
 
@@ -36,19 +36,47 @@ Although pATOM36 and Mim1/2 do not share any sequence or topological similaritie
 
 ## Results
 
-## pATOM36 forms a native-like complex in yeast cells
+### pATOM36 forms a native-like complex in yeast cells
 
 To better understand the functional relation between yeast Mim1/2 and T. brucei pATOM36, we wanted to investigate whether the trypanosomal protein can complement the phenotypes observed in yeast cells lacking the MIM complex. To that aim, plasmids encoding for pATOM36 or its C-terminally 3xHA-tagged version (pATOM36-HA), as well as an empty plasmid (Ø) as a control, were transformed into wild type (WT), mim1Δ, mim2Δ or mim1Δ/mim2Δ cells. In T. brucei, pATOM36 is an integral MOM protein with the C-terminus exposed to the cytosol (Pusnik et al., 2012). Blue native (BN)-PAGE analysis has shown that the endogenous protein occurs in two groups of protein complexes of unknown composition with molecular weights of approximately 140–250 kDa and larger than 480 kDa (Käser et al., 2016; Pusnik et al., 2012).
 
 Initially, we verified that pATOM36-HA can be expressed in the aforementioned yeast strains (Figure 1—figure supplement 2). Next, we isolated mitochondria from either control or mim1Δ/mim2Δ cells harbouring pATOM36-HA. We observed that the C-terminally HA-tagged pATOM36, similar to the yeast import receptor Tom70, is accessible to added proteinase K in isolated mitochondria, whereas the matrix protein Hep1 was protected as would be expected for intact organelles (Figure 1A). Alkaline extraction of the isolated organelles showed that pATOM36, as Tom70 but unlike the soluble matrix protein Hep1, was detected in the pellet fraction indicating that it is an integral membrane protein (Figure 1A). Finally, a BN-PAGE analysis demonstrated that pATOM36 expressed in yeast forms complexes of similar size to the 140 and 250 kDa complexes observed in T. brucei mitochondria (Figure 1B). However, the higher molecular weight complex, which likely corresponds to a TAC subcomplex required for kDNA maintenance (Käser et al., 2016), was not detected. In summary, these results suggest that pATOM36 expressed in yeast cells behaves essentially identical to the endogenous protein: it is embedded into the MOM with its C-terminus facing the cytosol and it forms oligomeric complexes of ca. 140–250 kDa.
 
-## pATOM36 can replace the MIM complex in yeast
+![Figure 1.](https://cdn.elifesciences.org/articles/34488/elife-34488-fig1-v1.jpg)
+
+**Figure 1.:** (A) Mitochondria isolated from WT or mim1Δ/mim2Δ cells expressing pATOM36-HA were left intact or lysed with Triton X-100 (TX) before they were subjected to treatment with proteinase K (PK). Alternatively, other samples were subjected to alkaline extraction followed by separation by centrifugation to pellet (P) and supernatant (S) fractions. All samples were analysed by SDS-PAGE followed by immunodecoration with antibodies against the HA-epitope, the OM receptor protein Tom70, or the matrix soluble protein Hep1. (B) Mitochondria were isolated from yeast WT cells transformed with an empty plasmid (-) or from WT and mim1Δ/mim2Δ (ΔΔ) cells expressing pATOM36-HA (+). Isolated yeast organelles and mitochondria-enriched fraction from T. brucei (Tryp.) cells expressing pATOM36-HA were lysed with 1% digitonin. All samples were then subjected to BN-PAGE followed by immunodecoration with an antibody against the HA-tag. pATOM36-containing complexes are indicated with an asterisk.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34488/elife-34488-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Left panels: Schematic representation of the experimentally determined and predicted topologies of Mim1, Mim2 and pATOM36. The transmembrane segment (TMS) of Mim1 has been experimentally characterised (solid line), whereas those of Mim2 and pATOM36 are predicted by PolyPhobius with TOPCONS (dashed lines). The amino acid positions of the TMSs are illustrated and the protein sizes are in brackets. CYT, cytosol; OM, outer mitochondrial membrane; IMS, intermembrane space. Right panels: Multiple protein sequence alignments of Mim1, Mim2 and pATOM36. Verified and predicted TMSs are highlighted by solid and dashed lines, respectively. Conserved glycine residues are marked in green. scer, Saccharomyces cerevisiae; ncra, Neurospora crassa; spom, Schizosaccharomyces pombe; tbru, Trypanosoma brucei; lmaj, Leishmania major; tcru, Trypanosoma cruzi.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/34488/elife-34488-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Whole cell lysate of wild type (WT), mim1Δ (1Δ), mim2Δ (2Δ) and mim1Δmim2Δ (ΔΔ) cells transformed with either an empty plasmid (Ø) or a plasmid encoding for pATOM36-HA were obtained. The samples were analysed by SDS-PAGE and immunodecoration with the indicated antibodies.
+
+### pATOM36 can replace the MIM complex in yeast
 
 We next asked whether pATOM36 can rescue the growth defect on respiratory carbon sources of mim1Δ or mim2Δ cells. To that aim, plasmids encoding for pATOM36 or its HA-tagged version, as well as MIM1 or MIM2 and an empty plasmid (Ø) as a control, were transformed into wild type, mim1Δ and mim2Δ strains. The growth of the transformed cells was analysed by drop dilution assays on synthetic fermentative glucose-containing (SD-Leu) and respiratory glycerol-containing media (SG-Leu) at three different temperatures (15°C, 30°C and 37°C). Of note, the expression of pATOM36 and its HA-tagged version did not alter the growth of WT cells. Under all the tested conditions, pATOM36 and pATOM36-HA were able to rescue the growth defect caused by the absence of either Mim1 or Mim2 (Figure 2A). Of note, the rescue capacity of pATOM36 was similar to that of Mim1 or Mim2 in the corresponding deletion strains.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/34488/elife-34488-fig2-v1.jpg)
+
+**Figure 2.:** (A) The indicated strains transformed with an empty plasmid (Ø) or with a plasmid expressing pATOM36 or its HA-tagged variant were tested at three different temperatures by drop-dilution assay for growth on synthetic medium containing either glucose (SD-Leu) or glycerol (SG-Leu). For comparison, plasmid-encoded Mim1 or Mim2 were transformed into mim1Δ or mim2Δ cells, respectively. All dilutions are in fivefold increment. (B) Cells deleted for both MIM1 and MIM2 (mim1Δ/mim2Δ) were transformed with the empty plasmid (Ø) or a plasmid encoding either native pATOM36 or pATOM36-HA. Transformed cells were analysed by drop-dilution assay at the indicated temperatures on synthetic medium containing either glucose (SD-Leu) or glycerol (SG-Leu). All dilutions are in fivefold increment.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34488/elife-34488-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The indicated strains transformed with an empty plasmid (Ø), a plasmid expressing pATOM36, or its HA-tagged variant were tested at three different temperatures by drop-dilution assay for growth on rich media containing either glucose (YPD) or glycerol (YPG). All dilutions are in fivefold increment.
 
 These results suggest that pATOM36 is active in yeast cells but it remained unclear whether pATOM36 can function alone or if it requires one of the remaining Mim proteins. To address this question, we monitored the capacity of pATOM36 to rescue the growth retardation of the double deletion mim1Δ/mim2Δ cells. We observed that pATOM36 could functionally compensate for the absence of both Mim1 and Mim2, since it was able to rescue the growth defect on non-fermentable carbon sources, a condition which requires fully functional mitochondria (Figure 2B and Figure 2—figure supplement 1).
 
 The absence of Mim1 and/or Mim2 in yeast cells results in a variety of mitochondrial defects including reduction in the steady-state levels of Mim1/2 substrates like the outer membrane proteins Ugo1, Tom20 and Tom70 (Dimmer et al., 2012; Ishikawa et al., 2004; Popov-Celeketić et al., 2008; Waizenegger et al., 2005). We therefore monitored whether expression of pATOM36 restores the reduced levels of these MIM substrates. To that aim we isolated mitochondria from WT and mim1Δ/mim2Δ cells transformed with either an empty plasmid or a plasmid encoding pATOM36-HA and monitored the levels of the proteins by immunodecoration. The results indicate that, whereas expression of pATOM36-HA in WT cells did not alter the abundance of the tested proteins or did it only to a minor extent, it did restore the levels of Mim1/2 substrates Tom20 and Tom70 in mitochondria from the double deletion cells (Figure 3A and B). Interestingly, the effect of pATOM36 on the levels of Ugo1 was only marginal, suggesting that pATOM36 has preferences to certain MIM substrates.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/34488/elife-34488-fig3-v1.jpg)
+
+**Figure 3.:** (A) Mitochondria were isolated from WT or mim1Δ/mim2Δ cells transformed with either an empty plasmid (-) or with a plasmid encoding pATOM36-HA (+). The specified amounts were analysed by SDS-PAGE and immunodecoration with antibodies against either the indicated mitochondrial proteins or the HA-tag. (B) The intensity of the bands from three independent experiments such as those presented in (A) was monitored. The amounts of Tom70, Ugo1 and Tom20 in the various mitochondria samples are presented as mean percentage of their levels in control organelles (WT+ Ø). The levels of Fis1 were taken as loading control. Error bars represent ± SD. **p≤0.005, ***p≤0.0005. (C) Whole cell lysates were obtained from WT, mim1Δ (1Δ), mim2Δ (2Δ), or the double deletion mim1Δ/mim2Δ (ΔΔ) cells transformed with either an empty plasmid (Ø) or with a plasmid encoding pATOM36-HA. Samples were analysed by SDS-PAGE and immunodecoration with antibodies against the indicated mitochondrial proteins. The precursor form of mitochondrial Hsp60 is indicated with an arrowhead. (D) The mitochondria described in (A) were solubilised in a buffer containing 1% digitonin and then analysed by BN-PAGE followed by western blotting. The membranes were immunodecorated with antibodies against the TOM subunits, Tom40 (long and short exposures) and Tom22. The TOM complex is signposted. A Tom40-containing low molecular weight complex is indicated with an arrowhead. (E) Mim1 and pATOM36 interact directly with Tom70. Radiolabelled Mim1 or pATOM36 (input, I) were incubated with glutathione beads (-) or with beads that were pre-bound to recombinant GST alone or to GST fused to the cytosolic domain of Tom70 (GST-Tom70). After washing, bound material was eluated and proteins were analysed by SDS–PAGE followed by blotting onto a membrane, and detection with either autoradiography (upper panel) or Ponceau staining (lower panel).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/34488/elife-34488-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mitochondria isolated from wild type (WT) and mas37Δ (37Δ) cells transformed with either an empty plasmid (-) or a plasmid encoding for pATOM36-HA (+) were solubilised in 0.2% Triton X-100. Samples were analysed by BN-PAGE and immunodecoration with an antibody against Tob55. (B) Isolated mitochondria as in (A) were subjected to SDS-PAGE and immunodecoration with the indicated antibodies.
 
 A further phenotype of cells lacking Mim1/2 is the accumulation of mitochondrial precursor proteins due to hampered assembly of the TOM complex (Ishikawa et al., 2004; Mnaimneh et al., 2004; Waizenegger et al., 2005). To test whether pATOM36 is able to reverse this situation, we obtained whole cell lysates from the cells described above. As can be seen in Figure 3C, the presence of pATOM36-HA in the deletion strains completely eliminated the appearance of the precursor form of mitochondrial Hsp60. The presence of pATOM36-HA in the deletion cell lines resulted also in enhanced levels of Tom40 whereas the amounts of aconitase (Aco1) were not affected (Figure 3C).
 
@@ -68,29 +96,37 @@ Finally, we tested whether the trypanosomal protein is able to rescue the mitoch
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/34488/elife-34488-fig5-v1.jpg)
 
-**Figure 5.:** mim1Δ and mim2Δ cells expressing pATOM36 do not show altered mitochondrial morphology.(A) WT, mim1Δ, mim2Δ, and mim1Δ/mim2Δ cells harbouring mitochondria-targeted GFP (mito-GFP) were transformed with either an empty plasmid (Ø) as a control (left panels) or a plasmid encoding pATOM36 (right panels). Cells were analysed by fluorescence microscopy and representative images of the predominant morphology for each strain are shown. Scale bar, 5 µm. (B) Statistical analysis of the cells described in (A). Average values with standard deviation bars of three independent experiments with at least n = 100 cells in each experiment are shown.10.7554/eLife.34488.012Figure 5—source data 1.mim1Δ and mim2Δ cells expressing pATOM36 have normal mitochondrial morphologyOriginal data used for quantification in Figure 5B.
+**Figure 5.:** (A) WT, mim1Δ, mim2Δ, and mim1Δ/mim2Δ cells harbouring mitochondria-targeted GFP (mito-GFP) were transformed with either an empty plasmid (Ø) as a control (left panels) or a plasmid encoding pATOM36 (right panels). Cells were analysed by fluorescence microscopy and representative images of the predominant morphology for each strain are shown. Scale bar, 5 µm. (B) Statistical analysis of the cells described in (A). Average values with standard deviation bars of three independent experiments with at least n = 100 cells in each experiment are shown.
 
-## Mim1/2 form a native-like MIM complex in trypanosomes
+### Mim1/2 form a native-like MIM complex in trypanosomes
 
 Observing the rescue capacity of pATOM36 in yeast cells, we asked whether the functional similarity between Mim1/2 and pATOM36 allows the yeast proteins to replace the function pATOM36 has in the biogenesis of trypanosomal MOM proteins. To that end, we constructed a plasmid for the co-expression of myc-tagged Mim1 and HA-tagged Mim2 in T. brucei (Figure 6A). Next, this plasmid was introduced into a cell line allowing controlled ablation of pATOM36. In these cells, addition of tetracycline simultaneously initiates the RNAi-mediated degradation of the pATOM36 mRNA as well as the expression of the tagged Mim1 and Mim2.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/34488/elife-34488-fig6-v1.jpg)
 
-**Figure 6.:** T.brucei. (A) Schematic representation of the insert of the pLew100-based vector that allows tetracycline-inducible expression of C-terminally myc-tagged Mim1 and HA-tagged Mim2 in T. brucei. Pro prom, procyclin promotor; tet, tetracycline operator; pro sas, procycline splice acceptor site; tub igr, α- and β-tubulin intergenic region; ald polyA, 3'-UTR of the aldolase gene. (B) Top panels: immunoblot analysis of whole cells (Tot), soluble (Cyt) and digitonin-extracted mitochondria-enriched pellet (Mit) fractions of a tetracycline-inducible pATOM36-RNAi cell line expressing Mim1-myc and Mim2-HA. Duplicate blots were analysed for the expression of Mim1-myc (left panels) and Mim2-HA (right panels). ATOM40 and EF1a serve as mitochondrial and cytosolic markers, respectively. Bottom panels: Alkaline extraction of the mitochondria-enriched fraction (Mit) shown in the top panels. The pellet (P) and the supernatant (S) fractions corresponding to integral membrane and soluble proteins, respectively, were analysed by SDS-PAGE and immunodecoration. ATOM40 and CytC serve as markers for integral and peripheral membrane proteins, respectively. (C) Mitochondria-enriched fractions of the same cell line describe in (B) were left intact or lysed with Triton X-100 (TX) before they were subjected to treatment with proteinase K (PK). All samples were analysed by SDS-PAGE followed by immunodecoration with antibodies against myc and HA tags, the OM protein ATOM69, the IMS protein TbTim9, or the matrix protein mtHsp70. Note that mtHsp70 contains a folded core, which is protease resistant. A proteolytic fragment of Mim1 and Mim2 is indicated with an arrowhead. (D) Duplicate immunoblots from BN-PAGE analysis of mitochondria-enriched fractions of the same cell line describe in (B) were probed for Mim1-myc (left panels) and Mim2-HA (right panels). Sections of the coomassie-stained gels serve as loading control. (E) Immunoblots of a BN-PAGE analysis of mitochondria-enriched fractions of the T. brucei (T.b.) cell line simultaneously expressing myc-tagged Mim1 (Mim1-myc) and HA-tagged Mim2 (Mim2-HA) and isolated yeast (S.c.) mitochondria simultaneously expressing HA-tagged versions of Mim1 and Mim2. The immunoblots are probed with antibodies against HA- or myc-tag.
+**Figure 6.:** brucei. (A) Schematic representation of the insert of the pLew100-based vector that allows tetracycline-inducible expression of C-terminally myc-tagged Mim1 and HA-tagged Mim2 in T. brucei. Pro prom, procyclin promotor; tet, tetracycline operator; pro sas, procycline splice acceptor site; tub igr, α- and β-tubulin intergenic region; ald polyA, 3'-UTR of the aldolase gene. (B) Top panels: immunoblot analysis of whole cells (Tot), soluble (Cyt) and digitonin-extracted mitochondria-enriched pellet (Mit) fractions of a tetracycline-inducible pATOM36-RNAi cell line expressing Mim1-myc and Mim2-HA. Duplicate blots were analysed for the expression of Mim1-myc (left panels) and Mim2-HA (right panels). ATOM40 and EF1a serve as mitochondrial and cytosolic markers, respectively. Bottom panels: Alkaline extraction of the mitochondria-enriched fraction (Mit) shown in the top panels. The pellet (P) and the supernatant (S) fractions corresponding to integral membrane and soluble proteins, respectively, were analysed by SDS-PAGE and immunodecoration. ATOM40 and CytC serve as markers for integral and peripheral membrane proteins, respectively. (C) Mitochondria-enriched fractions of the same cell line describe in (B) were left intact or lysed with Triton X-100 (TX) before they were subjected to treatment with proteinase K (PK). All samples were analysed by SDS-PAGE followed by immunodecoration with antibodies against myc and HA tags, the OM protein ATOM69, the IMS protein TbTim9, or the matrix protein mtHsp70. Note that mtHsp70 contains a folded core, which is protease resistant. A proteolytic fragment of Mim1 and Mim2 is indicated with an arrowhead. (D) Duplicate immunoblots from BN-PAGE analysis of mitochondria-enriched fractions of the same cell line describe in (B) were probed for Mim1-myc (left panels) and Mim2-HA (right panels). Sections of the coomassie-stained gels serve as loading control. (E) Immunoblots of a BN-PAGE analysis of mitochondria-enriched fractions of the T. brucei (T.b.) cell line simultaneously expressing myc-tagged Mim1 (Mim1-myc) and HA-tagged Mim2 (Mim2-HA) and isolated yeast (S.c.) mitochondria simultaneously expressing HA-tagged versions of Mim1 and Mim2. The immunoblots are probed with antibodies against HA- or myc-tag.
 
 Subcellular fractionation of induced cells showed that both proteins are expressed and, like the mitochondrial marker protein ATOM40, they are exclusively localised in the mitochondrial fraction (Figure 6B, top panels). Alkaline extraction of the latter revealed that, as the endogenous proteins in yeast, both Mim1 and Mim2 are recovered in the pellet, together with the integral membrane protein ATOM40, whereas the soluble protein CytC was present in the supernatant (Figure 6B, lower panels). To monitor whether Mim1 and Mim2 are inserted into the membrane in their native orientation, mitochondria-enriched fractions were treated with proteinase K. This treatment resulted for both proteins in the formation of protease-resistant C-terminal fragments (Figure 6C). Thus, Mim1 and Mim2 acquired their native topology in T. brucei mitochondria with their N-terminus exposed to the cytosol and the C-terminus located in the IMS. Mim1 and Mim2 of yeast cells form a complex of approx. 200 kDa (Dimmer et al., 2012; Ishikawa et al., 2004; Waizenegger et al., 2005). BN-PAGE shows that similar complexes of ca. 230 kDa, which contain both Mim1-myc and Mim2-HA, could be detected in T. brucei (Figure 6D). Importantly, these complexes migrated similarly to complexes harbouring Mim1-HA and Mim2-HA of yeast mitochondria (Figure 6E). The slightly higher molecular weight than that observed for native complexes in yeast can be explained by the fact that both proteins are tagged. Thus, expression of Mim1 and Mim2 results in a native-like MIM complex in mitochondria from T. brucei.
 
-## The MIM complex can replace the protein biogenesis function of pATOM36 in T. brucei
+### The MIM complex can replace the protein biogenesis function of pATOM36 in T. brucei
 
 The next question we addressed was whether the MIM complex can take over the function of pATOM36. Ablation of pATOM36 has been shown to cause a growth arrest. Due to its dual function the lack of pATOM36 does not only interfere with the assembly and/or insertion of MOM proteins but it also prevents assembly of the TAC, which causes loss of the kDNA (Figure 7A) (Käser et al., 2016). Interestingly, introducing Mim1/2 into the pATOM36-depleted cells could not prevent the loss of kDNA but it did cause a milder growth phenotype (Figure 7A). When mitochondrial proteins from pATOM36-depleted cells expressing Mim1/2 were analysed, we observed that the steady-state levels of the ATOM complex subunits ATOM46, ATOM19, and ATOM14, all of which are greatly reduced in the absence of pATOM36, were restored (Figure 7B) (Käser et al., 2016). Furthermore, not only the abundance of the ATOM subunits was back to normal levels, but also the subunits were incorporated into the high-molecular-weight ATOM complexes. Of note, in the cell lines complemented by the MIM complex the ATOM subunit complexes were shifted to a slightly higher molecular weight (Figure 8A). Moreover, complementation of the ATOM40-containing complexes was somewhat incomplete, since the 200 kDa ATOM40 complexes that accumulate after ablation of pATOM36 were still visible (Figure 8A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/34488/elife-34488-fig7-v1.jpg)
 
-**Figure 7.:** T.brucei cells ablated for pATOM36. (A) Left panel: growth in the presence and absence of tetracycline (black and grey lines, respectively) and loss of kDNA (red line) in the presence of tetracycline of the pATOM36-RNAi parent cell line. Right panel: as in the left but the analysis was done for the pATOM36-RNAi cell line that co-expresses Mim1-myc and Mim2-HA. (B) Whole cell lysates from the cell lines as in (A) were obtained after the indicated time of induction. Proteins of these samples were analysed by SDS-PAGE and immunodecoration with the indicated antibodies. ATOM46, ATOM19 and ATOM14 are subunits of the ATOM complex. Cytosolic EF1a serves as a loading control.
+**Figure 7.:** brucei cells ablated for pATOM36. (A) Left panel: growth in the presence and absence of tetracycline (black and grey lines, respectively) and loss of kDNA (red line) in the presence of tetracycline of the pATOM36-RNAi parent cell line. Right panel: as in the left but the analysis was done for the pATOM36-RNAi cell line that co-expresses Mim1-myc and Mim2-HA. (B) Whole cell lysates from the cell lines as in (A) were obtained after the indicated time of induction. Proteins of these samples were analysed by SDS-PAGE and immunodecoration with the indicated antibodies. ATOM46, ATOM19 and ATOM14 are subunits of the ATOM complex. Cytosolic EF1a serves as a loading control.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/34488/elife-34488-fig8-v1.jpg)
+
+**Figure 8.:** (A) Mitochondria-enriched fractions from the cell lines as in Figure 7A were obtained after the indicated time of induction. Samples were analysed by BN-PAGE followed by immunodecoration with antibodies against the indicated subunits of the ATOM complex. The migration of the ATOM complex is signposted. Sections of the coomassie-stained gels serve as loading controls. Arrowhead indicates an ATOM40-containing lower molecular weight complex. (B) Left images: Immunofluorescence analyses of mitochondrial morphology in the pATOM36 RNAi cell line after 0 or 3 days of induction. Right images: as in the left panels but the analysis was performed with the RNAi cell line co-expressing Mim1-myc and Mim2-HA. ATOM40 is shown in green and DAPI-stained DNA is shown in blue. DIC, differential interference contrast. Scale bar, 5 µm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/34488/elife-34488-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Individual clones of a pATOM36-RNAi cell line transfected with plasmids encoding myc-tagged Mim1 and HA-tagged Mim2 were analysed by BN-PAGE and subsequent immunodecoration. Clones that primarily express either myc-tagged Mim1 (A) or HA-tagged Mim2 (B) were analysed. The BN-PAGE blots were probed with anti-ATOM40 (upper panel), anti-myc (middle panel), and anti-HA (bottom panel) antibodies. Days of tetracycline induction (+Tet (d)) are indicated. Bottom graphs: growth curve for the same clone as above analysed in the presence and absence of tetracycline. Days of induction with tetracycline (+Tet [d]) are indicated. Inset: whole cell lysates of the clones were analysed by SDS-PAGE and immunodecoration with the indicated antibodies.
 
 It has previously been described that ablation of pATOM36 in trypanosomes, reminiscent to deletion of the MIM complex in yeast, causes a condensation of the network-like structure of the trypanosomal mitochondrion (Bruggisser et al., 2017) (Figure 8B, left panel). The immunofluorescence analysis in the right panel of Figure 8B indicates that in the presence of the MIM complex also this phenotype is reversed and the wild type morphology of the mitochondrion is fully restored. Hence, similarly to the rescue capacity of pATOM36 in yeast cells, Mim1/2 can replace the function of endogenous pATOM36 in MOM protein biogenesis in trypanosomes.
 
-## Complementing the biogenesis function of pATOM36 requires both Mim1 and Mim2
+### Complementing the biogenesis function of pATOM36 requires both Mim1 and Mim2
 
 When we transfected the T. brucei pATOM36-RNAi cell line with distinct plasmids encoding myc-tagged Mim1 and HA-tagged Mim2 we obtained also clones that mainly expressed either Mim1-myc or Mim2-HA while the other Mim subunit was expressed only in residual amounts (Figure 8—figure supplement 1). In the cell line that mainly expresses Mim1-myc, the protein is found in a complex of approximately 440 kDa (Figure 8—figure supplement 1A, middle panel), whereas in the cell line preferentially expressing Mim2-HA this protein is present in a complex of approximately 230 kDa (Figure 8—figure supplement 1B, bottom panel). These complexes are of either higher (Mim1-myc) or similar molecular weights (Mim2-HA) to the one that is formed when both proteins are expressed in similar amounts (Figure 6D and E). Most importantly, both cell lines show a strong deficiency of ATOM complex assembly (Figure 8—figure supplement 1, top panels) and a growth arrest (Figure 8—figure supplement 1, bottom graphs) that are indistinguishable from the parent pATOM36-RNAi cell line (Figure 8A, left panels and Figure 7, left graph, respectively). This indicates that expression of Mim1 or Mim2 alone cannot complement for the protein biogenesis phenotype caused by the lack of pATOM36. Furthermore, these results suggest that successful complementation requires similar amounts of Mim1 and Mim2.
 
@@ -114,21 +150,409 @@ The successful complementation of the functions of the yeast MIM complex by tryp
 
 ## Materials and methods
 
-## Yeast strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>WT; W303α; MATα leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>mim1Δ; W303α; MATα leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15 MIM1::KanMX</td>
+      <td>DOI: 10.1242/jcs.103804</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>mim2Δ; W303α; MATα leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15 MIM2::HIS3</td>
+      <td>DOI: 10.1242/jcs.103804</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>mim1Δ mim2Δ; W303α; MATα leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15 MIM1::KanMX MIM2::HIS3</td>
+      <td>DOI: 10.1242/jcs.103804</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>WT; YPH499; MATa ura3-52 lys2-801_amber ade2-101_ochre trp1-Δ63 his3-Δ200 leu2-Δ1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>mas37Δ; YPH499; MATa ura3-52 lys2-801_amber ade2-101_ochre trp1-Δ63 his3-Δ200 leu2-Δ1 MAS37::HIS3</td>
+      <td>DOI: 10.1074/jbc.M411510200</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Trypanosoma brucei)</td>
+      <td>29–13, procyclic, pATOM36 RNAi</td>
+      <td>PMID: 22787278</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (S. cerevisiae)</td>
+      <td>pATOM36 RNAi + mim1-myc/mim2-HA (Figures 6, 7 and 8)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected constructs (S. cerevisiae)</td>
+      <td>pATOM36 RNAi + mim1-myc/mim2-HA (Figure 8—figure supplement 1)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (polyclonal rat)</td>
+      <td>Roche</td>
+      <td>11867423001; AB_390918</td>
+      <td>WB 1:15000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tom70 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Hep1 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ugo1 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tom20 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:1600</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Fis1 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Hsp60 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:100000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tom40 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Aco1 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:7000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tom22 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tob55 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Por1 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rat (HRP coupled goat)</td>
+      <td>Abcam</td>
+      <td>ab6845; AB_955449</td>
+      <td>WB 1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit (HRP coupled goat)</td>
+      <td>Bio-Rad</td>
+      <td>1721019; AB_11125143</td>
+      <td>WB 1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-myc (monoclonal mouse)</td>
+      <td>Invitrogen</td>
+      <td>132500</td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (monoclonal mouse)</td>
+      <td>Enzo Life Sciences AG</td>
+      <td>CO-MMS-101 R-1000</td>
+      <td>WB 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EF1a (monoclonal mouse)</td>
+      <td>Merck Millipore</td>
+      <td>05–235</td>
+      <td>WB 1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ATOM40 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:10000, IF 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CytC (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ATOM69 (polyclonal rabbit, affinity purified)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TbTim9 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:20</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mtHsp70 (mouse)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ATOM46 (polyclonal rabbit; affinity purified)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ATOM19 (mouse)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ATOM14 (polyclonal rabbit)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pATOM36 (polyclonal rabbit; affintiy purified)</td>
+      <td>N/A</td>
+      <td></td>
+      <td>WB 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Alexa488</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>IF 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IRDye 800CW</td>
+      <td>LI-COR Biosciences</td>
+      <td>P/N 925–32211</td>
+      <td>WB 1:20000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IRDye LT680</td>
+      <td>LI-COR Biosciences</td>
+      <td>P/N 925–68020; AB_2687826</td>
+      <td>WB 1:20000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse (HRP-coupled goat)</td>
+      <td>Sigma Aldrich</td>
+      <td>AP308P</td>
+      <td>WB 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit (HRP coupled goat)</td>
+      <td>Sigma Aldrich</td>
+      <td>AP307P</td>
+      <td>WB 1:5000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ø; pYX142 (plasmid)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pATOM36; pYX142-pATOM36 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>pATOM36 ORF was amplified from pFT33 and cloned in pYX142 between EcoRI and BamHI</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pATOM36-HA; pYX142-pATOM36-3HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>pATOM36 ORF was amplified from pFT33 and cloned in pYX142 between EcoRI and BamHI</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>35S-Mim1; pGEM4-Mim1-4M (plasmid)</td>
+      <td>DOI: 10.1038/sj.embor.7400318</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>35S-pATOM36; pGEM4-pATOM36 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>pATOM36 ORF was subcloned from pYX142-pATOM36 in pGEM4 with EcoRI and BamHI</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>35S-Tom20ext; pGEM4-Tom20ext (plasmid)</td>
+      <td>DOI: 10.1074/jbc.M410905200</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>35S-Tom20; pGEM3-Tom20 (plasmid)</td>
+      <td>DOI: 10.1074/jbc.M410905200</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>35S-Ugo1; pGEM4-Ugo1 (plasmid)</td>
+      <td>DOI: 10.1083/jcb.201102041</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>35S-Fis1; pGEM4-Fis1-TMC (plasmid)</td>
+      <td>DOI:10.1242/jcs.024034</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>35S-pSu9-DHFR; pGEM4-pSu9-DHFR (plasmid)</td>
+      <td>PMID: 2892669</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mito-GFP; pRS426-TPI-pSu9-eGFP (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>pSu9-eGFP was subcloned from pYX142-pSu9-GFP (Westermann B. and Neupert W. Yeast, 2000) to pRS426 with EcoRI and HindIII</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein GST</td>
+      <td>GST</td>
+      <td>DOI:10.1128/MCB.00227–13</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein GST-Tom70</td>
+      <td>GST-Tom70</td>
+      <td>DOI:10.1128/MCB.00227–13</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and growth conditions
 
 Yeast strains used in the study were isogenic to Saccharomyces cerevisiae strain W303α beside mas37Δ, which is isogenic to YPH499. Standard genetic techniques were used for growth and manipulation of yeast strains. Yeast cells were grown in synthetic medium S (0.67% [w/v] bacto-yeast nitrogen base without amino acids) with glucose (2% [w/v]), glycerol (3% [w/v]), or lactate (2% [w/v]) as carbon source. Transformation of yeast cells was performed by the lithium acetate method. Strains deleted for MIM1, MIM2 or both were previously described (Dimmer et al., 2012). For drop-dilution assay, cells were grown in a synthetic medium to an OD600 of 1.0 and diluted in fivefold increments followed by spotting 5 μl of the diluted cells on solid media.
 
-## Transgenic cell lines and growth of T. brucei
+### Transgenic cell lines and growth of T. brucei
 
 Transgenic procyclic cell lines are based on T. brucei 29–13 cells (Wirtz et al., 1999) and were grown at 27°C in SDM-79 medium supplemented with 10% FCS (v/v). The RNAi cell line targeting the open reading frame of pATOM36 (Tb927.7.5700, Q582I5) was previously described (Pusnik et al., 2012). For growth curves, tetracycline induced and uninduced cell lines were diluted to 2 × 106 cells/ml every 2 days and the cumulative cell number was calculated.
 
-## Recombinant DNA techniques
+### Recombinant DNA techniques
 
 pATOM36 and its 3xHA-tagged variant were cloned into the yeast expression plasmid pYX142-TPIpro using the EcoRI and BamHI cutting sites. For simultaneous and inducible expression of S.c. Mim1-myc and Mim2-HA in T. brucei, the appropriate cell line was transfected with a pLew100-based plasmid (Bochud-Allemann and Schneider, 2002; Wirtz et al., 1999). For optimal expression of the proteins, the ORFs were adapted to the codon usage of T. brucei according to Horn (2008). The intergenic region of the α- and β-tubulin genes was cloned in between the ORFs. The insert was synthesised by GenScript with flanking HindIII and BamHI sites for cloning into the pLew100 vector.
 
 For expression from distinct plasmids, the ORFs of MIM1 and MIM2 were amplified from yeast genomic DNA and cloned into pLew100-based expression vectors using HindIII and BamHI for MIM1 and HindIII and XbaI for MIM2.
 
-## Biochemical methods
+### Biochemical methods
 
 Protein samples for immunodecoration were analysed on 8, 12, 12.5, or 15% SDS-PAGE and subsequently transferred onto nitrocellulose membranes by semi-dry western blotting. Proteins were detected by incubating the membranes first with primary antibodies and then with either horseradish peroxidase-conjugates of goat anti-rabbit, goat anti-mouse or goat anti-rat secondary antibodies or with secondary antibodies coupled to fluorescent dye and usage of the LI-COR system.
 
@@ -140,14 +564,14 @@ GST-pulldown with radiolabelled proteins was performed as previously described (
 
 For mitochondria enriched fractions by digitonin extraction of T. brucei, the cells were incubated for 10 min on ice in 20 mM Tris-HCl pH 7.5, 0.6 M sorbitol, 2 mM EDTA containing 0.025% (w/v) digitonin. After centrifugation (6,800 g, 4°C), the resulting mitochondria enriched fraction was separated from the supernatant and subjected to SDS-PAGE. The mitochondria enriched pellets were also used for further experiments.
 
-## In vitro synthesis and mitochondrial import of radiolabelled proteins
+### In vitro synthesis and mitochondrial import of radiolabelled proteins
 
 In vitro transcription was performed with SP6 polymerase from either pGEM4 or pGEM3 plasmid encoding the gene of interest. Proteins were then in vitro translated from the acquired mRNA in the presence of 35S-methionine in rabbit reticulocyte lysate (Promega, Madison, WI, USA). Protein import was performed by adding 50 µg of isolated organelles to 100 µl of import buffer harboring 1 mM NADH and 2 mM ATP. Then, the translation reaction was added to the mitochondria solution and import of precursor proteins was performed at either 25°C for pSu9-DHFR, Tom20 and Ugo1 or at 2°C for Fis1 and Tom20ext. Import of Tom20, Fis1-TMC, and Ugo1 was monitored according to established assays (Ahting et al., 2005; Kemper et al., 2008; Papic et al., 2011).
 
-## Blue native gel electrophoresis (BN-PAGE)
+### Blue native gel electrophoresis (BN-PAGE)
 
 Assembly of native complexes was analysed by BN-PAGE. Mitochondria or mitochondria-enriched fractions were solubilised with buffer (1% digitonin or 0.2% TritonX-100, 20 mM Tris, 0.1 mM EDTA, 50 mM NaCl, 10% glycerol, pH 7.4) for 30 min at 4°C on an overhead shaker. After a clarifying spin (30,000xg, 15 min, 2°C), 10x sample buffer (5% [wt/vol] Coomassie brilliant blue G-250, 100 mM Bis-Tris, 500 mM 6-aminocaproic acid, pH 7.0) was added and the mixture was analysed by electrophoresis in a blue native gel containing either 6–14% or 8–13% gradient of acrylamide (Schägger et al., 1994). To analyse the assembly of radiolabelled Tom20 molecules, the organelles were solubilised with 0.2% digitonin. BN-PAGE was followed by either western blotting or autoradiography. The mixture NativeMark Unstained Protein Standard was used to monitor the migration of molecular weight marker proteins.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Fluorescence images of yeast cells were acquired with spinning disk microscope Zeiss Axio Examiner Z1 equipped with a CSU-X1 real-time confocal system (Visitron, Puchheim, Germany), VS-Laser system, and SPOT Flex CCD camera (Visitron Systems). Images were analysed with VisiView software (Visitron). Immunofluorescence images of T. brucei were acquired with a DFC360 FX monochrome camera (Leica Microsystrems, Nussloch, Germany) and a DMI6000B microscope (Leica Microsystems). Image analysis was done using LAS X software (Leica Microsystems), ImageJ, and Adobe Photoshop CS5.1 (Adobe).

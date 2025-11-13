@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.10528.001 Mechanisms of muscle atrophy are complex and their understanding might help finding therapeutic solutions for pathologies such as amyotrophic lateral sclerosis (ALS). We meta-analyzed transcriptomic experiments of muscles of ALS patients and mouse models, uncovering a p53 deregulation as common denominator. We then characterized the induction of several p53 family members (p53, p63, p73) and a correlation between the levels of p53 family target genes and the severity of muscle atrophy in ALS patients and mice. In particular, we observed increased p63 protein levels in the fibers of atrophic muscles via denervation-dependent and - independent mechanisms. At a functional level, we demonstrated that TAp63 and p53 transactivate the promoter and increased the expression of Trim63 (MuRF1), an effector of muscle atrophy. Altogether, these results suggest a novel function for p63 as a contributor to muscular atrophic processes via the regulation of multiple genes, including the muscle atrophy gene Trim63 . DOI: http://dx.doi.org/10.7554/eLife.10528.001
+Mechanisms of muscle atrophy are complex and their understanding might help finding therapeutic solutions for pathologies such as amyotrophic lateral sclerosis (ALS). We meta-analyzed transcriptomic experiments of muscles of ALS patients and mouse models, uncovering a p53 deregulation as common denominator. We then characterized the induction of several p53 family members (p53, p63, p73) and a correlation between the levels of p53 family target genes and the severity of muscle atrophy in ALS patients and mice. In particular, we observed increased p63 protein levels in the fibers of atrophic muscles via denervation-dependent and -independent mechanisms. At a functional level, we demonstrated that TAp63 and p53 transactivate the promoter and increased the expression of Trim63 (MuRF1), an effector of muscle atrophy. Altogether, these results suggest a novel function for p63 as a contributor to muscular atrophic processes via the regulation of multiple genes, including the muscle atrophy gene Trim63.
 
 ## Introduction
 
@@ -45,113 +45,308 @@ In this study, we investigated the regulation and the role of the transcription 
 
 ## Results
 
-## p53-target genes and p53 regulators are induced in atrophic muscles during ALS
+### p53-target genes and p53 regulators are induced in atrophic muscles during ALS
 
 To identify the molecular mechanisms involved in muscle atrophy during ALS we performed a meta-analysis using four independent microarray experiments deposited at the Array Express database (EMBL-EBI). Two experiments contained gene expression data for the muscle of ALS patients and control individuals (E-MEXP-3260; E-GEOD-41414, [Pradat et al., 2012; Bernardini et al., 2013]). One experiment contained gene expression data for muscles of SOD1(G86R) mice that represents an ALS model in which the onset of the pathology is at 105 days of age (E-TABM-195 [Gonzalez de Aguilar et al., 2008]). The last experiment contained gene expression data for muscles of SOD1(G93A) mice in which onset of the pathology occurs at 14 weeks of age (E-GEOD-16361, [Capitanio et al., 2012]). Beside the better pathophysiological relevance, data obtained from biopsies of ALS patients also provided a better representation of the diversity of the genetic anomalies observed in patients. In addition, patients were at various stage of the pathology, hence establishing a representative scale of muscle alterations. The panel of datasets we chose also included two different mouse models of ALS, allowing us to pinpoint common and specific deregulations. Importantly, the SOD1 mouse models are well characterized for their muscular phenotype alterations. In particular, it has already been established that SOD1 mutants present altered functions in muscles, in contrast to other mutated proteins linked to ALS (TARDBP, FUS etc) (Pansarasa et al., 2014).
 
-After standard normalization and statistical analyses, each experiment was independently subjected to gene ontology, signaling pathway, transcription factor, and miRNA analyses. Fold induction between control individuals and ALS individuals was set to twofold change and rawp value inferior to 0.05. We decided to focus on transcription factor deregulations. The bioinformatic analyses we performed pinpointed to only 7 transcription factors whose activity, indicated by coherent changes in expression of their target genes, was potentially deregulated in at least two out of four experiments (
+After standard normalization and statistical analyses, each experiment was independently subjected to gene ontology, signaling pathway, transcription factor, and miRNA analyses. Fold induction between control individuals and ALS individuals was set to twofold change and rawp value inferior to 0.05. We decided to focus on transcription factor deregulations. The bioinformatic analyses we performed pinpointed to only 7 transcription factors whose activity, indicated by coherent changes in expression of their target genes, was potentially deregulated in at least two out of four experiments (Figure 1A). The activity of one transcription factor, NfKB, appeared deregulated only in experiments done with the mouse models. Deregulation of STAT1 activity was identified in three experiments. Interestingly, the activity of only three transcription factors, MyoD, Myogenin and p53, was identified to be commonly deregulated in all four experiments that included biopsies from patients and animal models. MyoD and Myogenin are muscle specific transcription factors involved in muscle cell differentiation (Zanou and Gailly, 2013). P53 was the transcription factor with the highest number of deregulated genes (51 genes). Notably the p53 target genes CDKN1A, GADD45A and PMAIP1, among others, were found induced in all four experiments.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig1-v1.jpg)
 
-**Figure 1.:** (A) Representation of the number of deregulated target genes of the indicated transcription factors. Data were obtained using the indicated datasets from the Array Express database (EMBL-EBI) and quantification was carried out from AltAnalyze software analyses on transcription factor databanks (complete data in Supplementary file 2A,B,C,D. (B) mRNA levels from nine ALS patient deltoid muscles as by DNA microarray were correlated with the intensity of muscle injury. Expression data were generated using a murine gene profiling database deposited at ebi.ac.uk/arrayexpress (accession number E-MEXP-3260). In the corresponding study, muscle injury was estimated according to a composite score combining manual testing of strength of shoulder abductors and the degree of myofiber atrophy. This score ranges from 6 (normal strength and very low level of atrophy) to 1 (total paralysis and high level of atrophy). Each point represents an individual. Correlation coefficients (r) and p-values were determined by Spearman correlation test.DOI: http://dx.doi.org/10.7554/eLife.10528.003
+**Figure 1.:** (A) Representation of the number of deregulated target genes of the indicated transcription factors. Data were obtained using the indicated datasets from the Array Express database (EMBL-EBI) and quantification was carried out from AltAnalyze software analyses on transcription factor databanks (complete data in Supplementary file 2A,B,C,D. (B) mRNA levels from nine ALS patient deltoid muscles as by DNA microarray were correlated with the intensity of muscle injury. Expression data were generated using a murine gene profiling database deposited at ebi.ac.uk/arrayexpress (accession number E-MEXP-3260). In the corresponding study, muscle injury was estimated according to a composite score combining manual testing of strength of shoulder abductors and the degree of myofiber atrophy. This score ranges from 6 (normal strength and very low level of atrophy) to 1 (total paralysis and high level of atrophy). Each point represents an individual. Correlation coefficients (r) and p-values were determined by Spearman correlation test.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** Data were generated using a gene expression database deposited at ebi.ac.uk/arrayexpress (accession number E-TABM-195). Gastrocnemius muscle samples from male SOD1(G86R) mice with no symptoms (Healthy, at 75 days of age), altered hind limb extension reflexes (Preparalysis, at 90 days of age), and at the onset of hind limb paralysis (symptomatic mice, at about 105 days of age) were analyzed by DNA microarray. Denervated muscles were obtained from wild-type mice after 7 days of sciatic nerve axotomy. Non-transgenic male littermates served as controls. 3–4 animals were pooled per group, and each condition was done in duplicate. Values are expressed as means of normalized expression levels.DOI: http://dx.doi.org/10.7554/eLife.10528.004
+**Figure 1—figure supplement 1.:** Data were generated using a gene expression database deposited at ebi.ac.uk/arrayexpress (accession number E-TABM-195). Gastrocnemius muscle samples from male SOD1(G86R) mice with no symptoms (Healthy, at 75 days of age), altered hind limb extension reflexes (Preparalysis, at 90 days of age), and at the onset of hind limb paralysis (symptomatic mice, at about 105 days of age) were analyzed by DNA microarray. Denervated muscles were obtained from wild-type mice after 7 days of sciatic nerve axotomy. Non-transgenic male littermates served as controls. 3–4 animals were pooled per group, and each condition was done in duplicate. Values are expressed as means of normalized expression levels.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** Expression data were generated using a murine gene profiling database deposited at ebi.ac.uk/arrayexpress (accession number E-MEXP-3260). In the corresponding study, muscle injury was estimated according to a composite score combining manual testing of strength of shoulder abductors and the degree of myofiber atrophy. This score ranges from 6 (normal strength and very low level of atrophy) to 1 (total paralysis and high level of atrophy). Each point represents an individual. In this experiment, patients with high level of atrophy (L, score 1–3) and low degree of atrophy (E, score 4–6) were grouped.DOI: http://dx.doi.org/10.7554/eLife.10528.005
+**Figure 1—figure supplement 2.:** Expression data were generated using a murine gene profiling database deposited at ebi.ac.uk/arrayexpress (accession number E-MEXP-3260). In the corresponding study, muscle injury was estimated according to a composite score combining manual testing of strength of shoulder abductors and the degree of myofiber atrophy. This score ranges from 6 (normal strength and very low level of atrophy) to 1 (total paralysis and high level of atrophy). Each point represents an individual. In this experiment, patients with high level of atrophy (L, score 1–3) and low degree of atrophy (E, score 4–6) were grouped.
+
+**Table 1.**
+ Fold induction of p53-related genes in the ALS model SOD1 (G86R).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>Function</th>
+      <th>90 d.</th>
+      <th>105 d.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">p53-family target genes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cdkn1a (p21)</td>
+      <td>Cell cycle arrest</td>
+      <td>4</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Gadd45a</td>
+      <td>Cell cycle arrest</td>
+      <td>5,6</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Peg3</td>
+      <td>Apoptosis inducing</td>
+      <td>3</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Perp</td>
+      <td>Cell cycle arrest</td>
+      <td>4</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Pmaip1</td>
+      <td>Apoptosis effector</td>
+      <td>5</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Bax</td>
+      <td>Apoptosis effector</td>
+      <td>3</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Siva</td>
+      <td>Apoptosis inducing</td>
+      <td>3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Zmat3</td>
+      <td>Growth regulation</td>
+      <td>1,6</td>
+      <td>1,1</td>
+    </tr>
+    <tr>
+      <td>Eda2R</td>
+      <td>NF.Kb/JNK pathway</td>
+      <td>3,4</td>
+      <td>9,4</td>
+    </tr>
+    <tr>
+      <td>Tigar</td>
+      <td>Glucose metabolism</td>
+      <td>0,75</td>
+      <td>0,2</td>
+    </tr>
+    <tr>
+      <td>Sens1</td>
+      <td>ROS homeostasis</td>
+      <td>-</td>
+      <td>16,3</td>
+    </tr>
+    <tr>
+      <td>Sens2</td>
+      <td>ROS homeostasis</td>
+      <td>1,27</td>
+      <td>1,46</td>
+    </tr>
+    <tr>
+      <td>Sco2</td>
+      <td>Glucose metabolism</td>
+      <td>1,18</td>
+      <td>0,91</td>
+    </tr>
+    <tr>
+      <td>Ddit3 (Chop)</td>
+      <td>ER stress</td>
+      <td>1,14</td>
+      <td>0,35</td>
+    </tr>
+    <tr>
+      <td>Bip (Grp78)</td>
+      <td>ER stress</td>
+      <td>1,25</td>
+      <td>1,08</td>
+    </tr>
+    <tr>
+      <td>Xbp1</td>
+      <td>ER stress</td>
+      <td>2</td>
+      <td>2,51</td>
+    </tr>
+    <tr>
+      <td colspan="2">p53-family regulators</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mlf1</td>
+      <td>Cell cycle arrest/differentiation</td>
+      <td>0,9</td>
+      <td>0,2</td>
+    </tr>
+    <tr>
+      <td>Myf6</td>
+      <td>Differentiation</td>
+      <td>4</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Mdm2</td>
+      <td>p53 degradation</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Txn1</td>
+      <td>Oxidative stress response</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Id2</td>
+      <td>Inhibition of differentiation</td>
+      <td>2</td>
+      <td>3,1</td>
+    </tr>
+    <tr>
+      <td colspan="2">p53-family members</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P53</td>
+      <td></td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>TAp63</td>
+      <td></td>
+      <td>4</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>∆Np63</td>
+      <td></td>
+      <td>0,5</td>
+      <td>0,3</td>
+    </tr>
+    <tr>
+      <td>TAp73</td>
+      <td></td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>∆Np73</td>
+      <td></td>
+      <td>0,9</td>
+      <td>0,8</td>
+    </tr>
+    <tr>
+      <td colspan="4">Denervation/atrophy markers</td>
+    </tr>
+    <tr>
+      <td>Chrna1 (ACh Receptor alpha)</td>
+      <td>Neuromuscular junction</td>
+      <td>4,2</td>
+      <td>12,4</td>
+    </tr>
+  </tbody>
+</table>
 
 As one of the experiments using biopsies of ALS patients included a scale (von Haehling et al., 2010; Rothstein, 2009; Yamanaka et al., 2008; Boillée et al., 2006; Wong and Martin, 2010; Pansarasa et al., 2014) of muscle alteration, we analyzed whether the expression of some of these genes might correlate with the severity of the pathology. We found that CDKNA1, GADD45A and PMAIP1 expression correlated with the degree of the pathology of the muscle from ALS patients (Figure 1B).
 
 Besides the bioinformatic analysis on the deregulation of transcription factors, the signaling pathway analyses also indicated alterations in the p53 pathway characterized by deregulations in upstream regulators of p53, such as MDM2 and thioredoxin, and a p53 family member, P63 (Table 1, Figure 1B, Figure 1—figure supplement 1). In particular, the expression of P63 correlated with the severity of the pathology in muscles biopsies from ALS patients (Figure 1B).
 
-In order to validate the bioinformatic analyses we performed RT-qPCR experiments with RNA from muscle biopsies of an independent group of ALS patients. We confirmed that
+In order to validate the bioinformatic analyses we performed RT-qPCR experiments with RNA from muscle biopsies of an independent group of ALS patients. We confirmed that CDKN1A, GADD45A and PMAIP1 were induced in the muscle biopsies of ALS patients (Figure 2A,B,C). Similarly, we analyzed the expression of these genes using muscle samples of independent groups of SOD1(G86R) mice. Groups analyzed at 60 days and 75 days of age correspond to the asymptomatic stage, while 90 day-old groups correspond to an early or pre-symptomatic stage associated with established gene deregulations (von Grabowiecki et al., 2015). Finally, the symptomatic stage group (beginning after 105 days) is characterized by the onset of paralysis and marked muscle atrophy (Figure 2—figure supplement 1 Upregulation of the p53 target genes Gadd45a, Cdkn1a, Bax, Pmaip1 and Perp was observed at 90 days and further increased at 105 days in SOD1(G86R) mice (Figure 2D,E,F, Figure 2—figure supplement 2). In addition to these genes, we also analyzed by RT-qPCR the expression of additional p53 target genes and regulators of p53 by RT-qPCR (Table 1). In particular, the expression of p53 target genes involved in apoptosis (Pmaip1, Peg3 and Siva) was also induced.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig2-v1.jpg)
 
-**Figure 2.:** (A–C) RNA from muscle biopsies of control and ALS patients (n = 8, Neuromuscular Unit [BioBank of Skeletal Muscle, Nerve Tissue, DNA and cell lines]) was extracted and analyzed by RT-qPCR. Absolute levels are normalized against the average of the control group. (D–F) p53 family target genes mRNA levels were assayed in SOD1(G86R) mouse gastrocnemius muscle by RT-qPCR. Graphs are means of fold induction versus 60 days-old WT and of matching age (60, 75, 90, 105-days-old, n = 6) and experimental condition (wild-type, or SOD1(G86R)). *p<0.01 compared to control, as calculated by a one-way ANOVA test followed by a Tukey post-test.DOI: http://dx.doi.org/10.7554/eLife.10528.007
+**Figure 2.:** (A–C) RNA from muscle biopsies of control and ALS patients (n = 8, Neuromuscular Unit [BioBank of Skeletal Muscle, Nerve Tissue, DNA and cell lines]) was extracted and analyzed by RT-qPCR. Absolute levels are normalized against the average of the control group. (D–F) p53 family target genes mRNA levels were assayed in SOD1(G86R) mouse gastrocnemius muscle by RT-qPCR. Graphs are means of fold induction versus 60 days-old WT and of matching age (60, 75, 90, 105-days-old, n = 6) and experimental condition (wild-type, or SOD1(G86R)). *p<0.01 compared to control, as calculated by a one-way ANOVA test followed by a Tukey post-test.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Graph represents the weight (n = 5). *p<0.01 compared to control, as calculated by a one-way ANOVA test followed by a Tukey post-test. NS: non denervated, S: denerveted as assessed by acetylcholine alpha receptor (AchRα) expression.DOI: http://dx.doi.org/10.7554/eLife.10528.008
+**Figure 2—figure supplement 1.:** Graph represents the weight (n = 5). *p<0.01 compared to control, as calculated by a one-way ANOVA test followed by a Tukey post-test. NS: non denervated, S: denerveted as assessed by acetylcholine alpha receptor (AchRα) expression.
 
 p53 proteins have recently been linked to energy metabolism and endoplasmic reticulum (ER) stress pathway activation (Su et al., 2012; Ramadan et al., 2005; Zhu and Prives, 2009). Analysis of the expression of p53 family target genes implicated in several metabolic pathways (Tigar, sestrins, Sco2, Sirtuin1 or Prkaa1) (Su et al., 2012; Vousden and Ryan, 2009) or ER stress (Chop, Bip, or Xbp1) (Stavridi and Halazonetis, 2004), did not reveal coherent regulation in respect to disease progression (Table 1). For example, the expressions of Sesn2 and Tigar (Vousden and Ryan, 2009) were regulated in opposite directions during the progression of the disease. Therefore, our data suggest that the correlation between ALS progression and p53 function might mostly be due to cell growth arrest and cell death regulation.
 
 We also confirmed by RT-qPCR an upregulation of several upstream regulators of the p53 family, including Mdm2, Myf6, Mlf1, and Txn (Table 1) (Arrowsmith, 1999). Taken together, our results suggest that a p53-like pathway is activated in ALS muscles both in patients and the murine SOD1 ALS-models.
 
-## p53-family members are regulated in mouse skeletal muscles during ALS
+### p53-family members are regulated in mouse skeletal muscles during ALS
 
-As we observed in the muscle biopsies of ALS patients a correlation between p63 expression and the severity of the pathology, we investigated the expression levels of p53 family members in the muscles of SOD1(G86R) mice. Our analysis revealed an increased expression of TA isoforms of
+As we observed in the muscle biopsies of ALS patients a correlation between p63 expression and the severity of the pathology, we investigated the expression levels of p53 family members in the muscles of SOD1(G86R) mice. Our analysis revealed an increased expression of TA isoforms of Trp63 in SOD1(G86R) (Figure 3). Strikingly, the mRNA levels of TA isoforms of Trp63 were strongly induced towards the end of the disease (105 day), while the mRNA levels for ΔN isoforms of Trp63 were downregulated during the same time period. A similar tendency was observed for p53, TA and ∆N isoforms of p73, albeit at a lower magnitude. The expression of TA isoforms of Trp63 correlated with acetylcholine receptor alpha (Chrna1) expression, a molecular marker indicating the severity of muscular denervation. In addition, we analyzed the expression of two documented effectors of muscular atrophy, namely Fbxo32 (Atrogin-1) and Trim63 (MuRF1). These proteins are E3 ubiquitin ligases that target muscular proteins for degradation during muscular atrophy or remodeling (Murton et al., 2008). Importantly, the deregulation of Trp63 expression also correlated with the upregulation of these two markers. This is in accordance with our data from ALS patient muscle biopsies, whereby the expression of P63 also correlated with the degree of muscle pathology (Figure 1E).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig3-v1.jpg)
 
-**Figure 3.:** p53 family members, Chrna1 (Acetylcholine receptor subunit alpha) or muscle atrophy effectors Trim63 (MuRF1) and Fbxo32 (Atrogin1) mRNA levels were assayed in SOD1(G86R) mouse gastrocnemius muscle by RT-qPCR. Bars are means of fold induction versus ‘WT 60 days-old’ and of matching age (60, 75, 90, 105 days-old, n = 6) and experimental condition (WT or SOD1(G86R)). *p<0.01 compared to control, as calculated by a one-way ANOVA test followed by a Tukey post-test.DOI: http://dx.doi.org/10.7554/eLife.10528.009
+**Figure 3.:** p53 family members, Chrna1 (Acetylcholine receptor subunit alpha) or muscle atrophy effectors Trim63 (MuRF1) and Fbxo32 (Atrogin1) mRNA levels were assayed in SOD1(G86R) mouse gastrocnemius muscle by RT-qPCR. Bars are means of fold induction versus ‘WT 60 days-old’ and of matching age (60, 75, 90, 105 days-old, n = 6) and experimental condition (WT or SOD1(G86R)). *p<0.01 compared to control, as calculated by a one-way ANOVA test followed by a Tukey post-test.
 
-## p63 protein accumulates in muscle fibers during ALS
+### p63 protein accumulates in muscle fibers during ALS
 
-Based on the observed deregulation of
+Based on the observed deregulation of P63 expression in ALS patients and the stronger upregulation of TAp63 in SOD1(G86R) mice, we further analyzed p63 protein levels. Immunoblotting with a TAp63 isoforms specific antibody revealed a striking accumulation of p63 proteins in muscles of SOD1 (G86R) mice that correlated with the progression of the disease (Figure 4A). When probing with a ΔNp63 specific antibody, however, we did not observe any specific band. The use of a p63 antibody directed against all p63 isoforms confirmed an upregulation of p63 in muscles of SOD1(G86R) mice (Figure 4—figure supplement 1). Immunohistochemistry with the same antibody also revealed markedly increased immunoreactivity in the nuclei of muscle fibers of SOD1(G86R) (Figure 4B, Figure 4—figure supplement 3). In contrast, there was no significant increase in p73 staining (Figure 4—figure supplement 2). In this case, the apparent higher number of p73 positive nuclei appeared to be due to the atrophy of the muscle fibers, increasing the density of cells/nuclei. Similar experiments to detect expression of p53 did not yield a specific staining. However, we observed by western blot some slight increase in p53 protein levels in protein extract of muscle from SOD1(G86R) mice (Figure 4—figure supplement 1). Taken together, our data indicated a complex regulation of p53 family members during muscular atrophy, highlighted by significant increase of TAp63 messenger and protein expression levels in the skeletal muscles during ALS.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig4-v1.jpg)
 
-**Figure 4.:** (A) Proteins from muscles were immuno-precipitated with a p63 antibody and then separated on a 10% SDS PAGE gel. Western blot experiment was performed using an antibody against TAp63. Each experimental point is a pool of proteins from 6 animals. Graph represents quantification of the blot using ImageJ image analyzer software indicated a %/WT 60 day-old animals. (B) Gastrocnemius muscles from wild-type or symptomatic SOD1(G86R) (105 days) mice were cryodissected and probed for total p63 protein.DOI: http://dx.doi.org/10.7554/eLife.10528.010
+**Figure 4.:** (A) Proteins from muscles were immuno-precipitated with a p63 antibody and then separated on a 10% SDS PAGE gel. Western blot experiment was performed using an antibody against TAp63. Each experimental point is a pool of proteins from 6 animals. Graph represents quantification of the blot using ImageJ image analyzer software indicated a %/WT 60 day-old animals. (B) Gastrocnemius muscles from wild-type or symptomatic SOD1(G86R) (105 days) mice were cryodissected and probed for total p63 protein.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Proteins from muscles were immuno-precipitated with a p63 antibody and then separated on a 10% SDS PAGE gel. Western blot experiment was performed using an antibody against p63 total. Shows pools of proteins from 3 animals at 105d. TBP was used as loading control. (B) Proteins (40 µg) from muscles were separated on 10% SDS PAGE gel. Western blot probing was performed with p53 antibody (IC12, 1/2000, Cell Signaling, Danvers, MA) and True Blot (Rockland Immunochemicals, Pottstown, PA) secondary antibody avoiding Ig heavy chain recognition. Tubilin was used as loading control. Graph below shows% of induction relative to the mean of p53 expression level in WT animals normalised with tubulin.DOI: http://dx.doi.org/10.7554/eLife.10528.011
+**Figure 4—figure supplement 1.:** (A) Proteins from muscles were immuno-precipitated with a p63 antibody and then separated on a 10% SDS PAGE gel. Western blot experiment was performed using an antibody against p63 total. Shows pools of proteins from 3 animals at 105d. TBP was used as loading control. (B) Proteins (40 µg) from muscles were separated on 10% SDS PAGE gel. Western blot probing was performed with p53 antibody (IC12, 1/2000, Cell Signaling, Danvers, MA) and True Blot (Rockland Immunochemicals, Pottstown, PA) secondary antibody avoiding Ig heavy chain recognition. Tubilin was used as loading control. Graph below shows% of induction relative to the mean of p53 expression level in WT animals normalised with tubulin.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** Graph represents the number of fibers per surface unit as indicated (n = 5). *p<0.01 compared to control, as calculated by a one-way ANOVA test followed by a Tukey post-test.DOI: http://dx.doi.org/10.7554/eLife.10528.012
+**Figure 4—figure supplement 2.:** Graph represents the number of fibers per surface unit as indicated (n = 5). *p<0.01 compared to control, as calculated by a one-way ANOVA test followed by a Tukey post-test.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig4-figsupp3-v1.jpg)
 
-**Figure 4—figure supplement 3.:** DOI: http://dx.doi.org/10.7554/eLife.10528.013
+### Muscle denervation induces a p63 response
 
-## Muscle denervation induces a p63 response
-
-We then further investigated the possible cause of the deregulation of
+We then further investigated the possible cause of the deregulation of Trp63 expression. Several studies showed that the ALS etiology is complex and multifactorial, involving different cell types and molecular mechanisms. One established cause of muscular atrophy is motor neuron degeneration that leads to muscle denervation. However, it has also been shown that SOD1 mutants can also directly cause alteration in muscle cells such as SOD1 protein aggregates and mitochondrial abnormalities (Pansarasa et al., 2014). To verify the first hypothesis, we induced denervation in 80 day-old wild type and SOD1(G86R) mice by sciatic nerve crush, and gastrocnemius muscles were analyzed 7 days later. Our results showed that denervation upregulated TAp63 mRNA levels five- to sixfold in wild-type mice (Figure 5A). Concomitantly, ΔNp63 levels were downregulated 0.4-fold (Figure 5B). In SOD1(G86R) mice, nerve crush further accentuated changes in mRNA levels for TA and ∆N isoforms of Trp63. In addition, the TAp63 target genes Cdkn1a and Gadd45a were found strongly induced after nerve crush (Figure 5C,D). These results show that nerve injury leading to alteration of the motor axis seems to be sufficient to activate a TAp63 response.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig5-v1.jpg)
 
-**Figure 5.:** (A–D) WT and SOD1(G86R) mice (80 days of age) were anesthetized and the sciatic nerve crushed. Sham-operated contra limbs served as control (Ct). After 7 days, expression of TA isoforms of Trp63 (A, TAp63), ∆N isoforms of Trp63 (B, ∆Np63), Gadd45a (C) and Cdkn1a (D) was assayed by RT-qPCR (n = 6). Values were normalized to the value of sham-operated WT muscles/animals. Bars represent means (relative induction versus Ct) with standard deviation (n = 3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test. (E) C2C12 myoblasts were transfected with expression vectors for SOD1 variants (WT or G86R). mRNA from SOD1 transfected cells were analyzed by RT-qPCR for p63 and p63 target gene expression. Bars represent means (relative induction versus Ct) with standard deviation (n = 3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test. (F) Proteins were extracted from C2C12 myoblasts treated with compounds: FCCP, Tunicamycin (Tun), Etoposide (Eto), menadione (Men). Western blot analysis revealed TAp63 expression.DOI: http://dx.doi.org/10.7554/eLife.10528.014
+**Figure 5.:** (A–D) WT and SOD1(G86R) mice (80 days of age) were anesthetized and the sciatic nerve crushed. Sham-operated contra limbs served as control (Ct). After 7 days, expression of TA isoforms of Trp63 (A, TAp63), ∆N isoforms of Trp63 (B, ∆Np63), Gadd45a (C) and Cdkn1a (D) was assayed by RT-qPCR (n = 6). Values were normalized to the value of sham-operated WT muscles/animals. Bars represent means (relative induction versus Ct) with standard deviation (n = 3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test. (E) C2C12 myoblasts were transfected with expression vectors for SOD1 variants (WT or G86R). mRNA from SOD1 transfected cells were analyzed by RT-qPCR for p63 and p63 target gene expression. Bars represent means (relative induction versus Ct) with standard deviation (n = 3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test. (F) Proteins were extracted from C2C12 myoblasts treated with compounds: FCCP, Tunicamycin (Tun), Etoposide (Eto), menadione (Men). Western blot analysis revealed TAp63 expression.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** p63 and Mdm2 expression by SOD1 (G86R).(A) Protein were extracted from C2C12 myoblasts expressing WT or SOD1(G86R) after 5-days puromycin selection. Western blot analysis revealed TAp63, Bax or SOD1 expression. Actin was used as loading control. (B, C) C2C12 myoblasts were transfected with expression vectors for SOD1 variants (WT or G86R) or TAp63γ (2 concentrations, 1, 2) and luciferase reporter genes containing deletions of the promoter of the ΔN isoforms of P63 (-1584-+32 or -46/+32) or Mdm2 promoter. Bars represent means (relative induction versus Ct) with standard deviation (n = 3). Results are standardized with the 'minimal' promoter reporter gene -46/+32-luc. Ct = cells transfected with an empty vector. Bars represent means (relative induction versus Ct) with standard deviation (n = 3). *p<0.01.DOI: http://dx.doi.org/10.7554/eLife.10528.015
+**Figure 5—figure supplement 1.:** (A) Protein were extracted from C2C12 myoblasts expressing WT or SOD1(G86R) after 5-days puromycin selection. Western blot analysis revealed TAp63, Bax or SOD1 expression. Actin was used as loading control. (B, C) C2C12 myoblasts were transfected with expression vectors for SOD1 variants (WT or G86R) or TAp63γ (2 concentrations, 1, 2) and luciferase reporter genes containing deletions of the promoter of the ΔN isoforms of P63 (-1584-+32 or -46/+32) or Mdm2 promoter. Bars represent means (relative induction versus Ct) with standard deviation (n = 3). Results are standardized with the 'minimal' promoter reporter gene -46/+32-luc. Ct = cells transfected with an empty vector. Bars represent means (relative induction versus Ct) with standard deviation (n = 3). *p<0.01.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** (A) Quantification: Proteins were extracted from C2C12 myoblasts treated with compounds: FCCP, Tunicamycin (Tun), Etoposide (Eto), menadione (Men). Western blot analysis revealed TAp63 expression. Bars correspond to means with SD (n = 3). *p<0.01. (B) C2C12 myoblasts were transfected with expression vectors encoding transcription factors involved in the ER or mitochondrial stress pathway (CHOP, ATF6, ATF4, XBP1s). RNA levels for TA isoforms of Trp63, TA isoforms of P73 and P53 were followed by RT-qPCR. Bars represent means (relative induction versus Ct) with standard deviation (n = 3).*p<0.01.DOI: http://dx.doi.org/10.7554/eLife.10528.016
+**Figure 5—figure supplement 2.:** (A) Quantification: Proteins were extracted from C2C12 myoblasts treated with compounds: FCCP, Tunicamycin (Tun), Etoposide (Eto), menadione (Men). Western blot analysis revealed TAp63 expression. Bars correspond to means with SD (n = 3). *p<0.01. (B) C2C12 myoblasts were transfected with expression vectors encoding transcription factors involved in the ER or mitochondrial stress pathway (CHOP, ATF6, ATF4, XBP1s). RNA levels for TA isoforms of Trp63, TA isoforms of P73 and P53 were followed by RT-qPCR. Bars represent means (relative induction versus Ct) with standard deviation (n = 3).*p<0.01.
 
-## Mutated SOD1 is sufficient to induce the p63 response in myoblasts
+### Mutated SOD1 is sufficient to induce the p63 response in myoblasts
 
 Although it remains a challenge to reproduce in vitro the long-term development of ALS, we tried to assess the effect of the mutated SOD1 on muscle cells via an overexpression of SOD1(G86R) in the mouse myoblast cell line C2C12. Several target genes of the p53-family (Bax, Cdkn1a, Gadd45a) were induced upon overexpression of SOD1(G86R) (Figure 5E). Similarly TAp63 expression was increased at the mRNA level and the protein level (Figure 5E and Figure 5—figure supplement 1). In contrast, the mRNA levels as well as the promoter activity of △N isoforms of P63 were downregulated (Figure 5E, Figure 5—figure supplement 1) (Romano et al., 2006). However, we were not able to confirm this result on △Np63 at the protein level. We also tested for a possible cross-regulation of △Np63 expression by the increased expression of TAp63 observed in ALS. We observed that TAp63 represses the promoter activity of the △N isoforms of P63, while it expectedly induces the Mdm2 promoter (Figure 5—figure supplement 1). These results demonstrated that expression of SOD1(G86R) was sufficient to trigger a p53-like response similar to our in vivo observations in atrophic muscle tissues.
 
 We then investigated whether TAp63 could be induced by different stresses related to the cellular damages caused by SOD1 mutants. We used pharmacological inductors for oxidative stress (menadione) (Barber and Shaw, 2010), DNA damage (etoposide) (Aguirre et al., 2005), mitochondrial deregulation (FCCP) (Manfredi and Xu, 2005) and ER Stress (tunicamycin) (Hart, 2006; Nishitoh et al., 2008). Treated cells revealed an increase of TAp63 upon the four stresses (Figure 5F, Figure 5—figure supplement 2). Mitochondrial and ER stress triggers specific signaling pathways that involve a complex network of transcription factors such as ATF4, ATF6, XBP1 and CHOP (Senft and Ronai, 2015). Interestingly, overexpression of ATF4 and ATF6 induces the RNA level for TAp63 and TAp73 respectively, but not p53 (Figure 5—figure supplement 2). This result indicated that upregulation of TAp63 expression might be involved in the muscle cell response to diverse stresses including stresses related to SOD1 mutants.
 
-## TAp63 regulates Trim63 (MuRF1) expression, a specific muscle atrophy effector
+### TAp63 regulates Trim63 (MuRF1) expression, a specific muscle atrophy effector
 
-As the expression profile of the TA isoforms of
+As the expression profile of the TA isoforms of Trp63 correlated with the expression of the muscle atrophy effectors Fbxo32 and Trim63 (Figure 3), we hypothesized that TAp63 could regulate them directly. Bioinformatic analyses revealed the presence of several putative p63-binding sites in the promoter of Trim63 (Figure 6A). Therefore, we tested whether TAp63 could regulate Trim63 expression. Indeed, TAp63 overexpression in C2C12 cells strongly induced Trim63 mRNA levels (Figure 6B). Fbxo32 expression level was much less affected (data not shown). Note that under this condition p53 or p73 had less effect on Trim63 expression (Figure 6B). Under the same experimental conditions, other p63 target genes, Cdkn1a, Pmaip1, Casp1 and Prkaa1 were less induced (Figure 6C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig6-v1.jpg)
 
-**Figure 6.:** Trim63 and p53-family target genes.(A) Schematic representation of the Trim63 promoter indicating the location of putative p53/p63 binding sites. (B, C) C2C12 myoblasts were transfected (inserted panel: western blot) with various p53-family members (TAp63γ, ΔNp63γ, p53, TAp73β, ΔNp73β). Total C2C12 RNA was subjected to RT-qPCR after 10 hr or 24 hr of transfection and Trim63 (B) or p63 target (C, Cdkn1a, Pmaip1, Casp1, Prkaa1) expressions are shown relative to control-transfected cells. Bars are means of fold induction versus the control (Ct) with SD (n=3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test.DOI: http://dx.doi.org/10.7554/eLife.10528.017
+**Figure 6.:** (A) Schematic representation of the Trim63 promoter indicating the location of putative p53/p63 binding sites. (B, C) C2C12 myoblasts were transfected (inserted panel: western blot) with various p53-family members (TAp63γ, ΔNp63γ, p53, TAp73β, ΔNp73β). Total C2C12 RNA was subjected to RT-qPCR after 10 hr or 24 hr of transfection and Trim63 (B) or p63 target (C, Cdkn1a, Pmaip1, Casp1, Prkaa1) expressions are shown relative to control-transfected cells. Bars are means of fold induction versus the control (Ct) with SD (n=3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test.
 
-To further characterize the regulation of
+To further characterize the regulation of Trim63 by TAp63, we used luciferease reporter constructs containing progressive deletions of the Trim63 promoter. We found that p53 family members induced Trim63 promoter reporters that contained at least the fragment -500 bp to -1000 bp (Figure 7A and B) (Waddell et al., 2008). Interestingly, that fragment contains potential p63 binding sites with high probability scores, such as RE1/2 (-660/-690 bp). We then assessed the capacity of p63 to bind the Trim63 promoter on binding sites that have high probability scores. Chromatin immunoprecipitation experiments (ChIP) covering RE1/2 and RE4 binding sites showed that TAp63 proteins bound preferentially onto RE1/2 (Figure 7C). Similarly, ChIP experiments indicated that p73 and p53 bound to RE1/2 (Figure 7—figure supplement 1). However, p73 seemed also to bind RE4.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig7-v1.jpg)
 
-**Figure 7.:** Trim63 promoter by p63.(A, B) Trim63 promoter reporter constructs were co-transfected with pCDNA3 (Ct) or TAp63 into C2C12 cells and luciferase activity was assessed 16 hr later. pGL3 was used as a negative control. Bars correspond to means with SD (n = 3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test. (C) Chromatin immunoprecipitation assay was performed on the Trim63 promoter using RT-qPCR on RE1/2 and RE4 (see Figure 6A). Bars correspond to means with SD (n = 3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test. (D) Trim63 mRNA levels were assayed in C2C12 cells by RT-qPCR after TAp63 silencing by siRNA for 36 hr and after treatment with FCCP for 12 hr. Bars correspond to means with SD (n=3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test.DOI: http://dx.doi.org/10.7554/eLife.10528.018
+**Figure 7.:** (A, B) Trim63 promoter reporter constructs were co-transfected with pCDNA3 (Ct) or TAp63 into C2C12 cells and luciferase activity was assessed 16 hr later. pGL3 was used as a negative control. Bars correspond to means with SD (n = 3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test. (C) Chromatin immunoprecipitation assay was performed on the Trim63 promoter using RT-qPCR on RE1/2 and RE4 (see Figure 6A). Bars correspond to means with SD (n = 3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test. (D) Trim63 mRNA levels were assayed in C2C12 cells by RT-qPCR after TAp63 silencing by siRNA for 36 hr and after treatment with FCCP for 12 hr. Bars correspond to means with SD (n=3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig7-figsupp1-v1.jpg)
 
-**Figure 7—figure supplement 1.:** Trim63 by p53 and p73 proteins.(A) mRNA levels of Trim63 in C2C12 cells following transfection with siRNA control and siRNA directed against p73, p53 and a mix of siRNA against P53, and the TA isoforms of Trp63 and P73 (siMIX). Bars represent means (relative induction versus Ct) with standard deviation (n = 3). *p<0.01. (B) mRNA level for TA isoforms of Trp63, TA isoforms of P73 and P53 in C2C12 cells following transfection with siRNA control and siRNA directed against p63, p73, and p53. Bars represent means (relative induction versus Ct) with standard deviation (n = 3). *p<0.01. (C, D) Chromatin immunoprecipitation (ChIP) assay was performed on the Trim63 promoter using RT-qPCR on RE1/2 and RE4. p53 immunoprecipitation (C) was performed using p53 antibody IC12 (Cell Signalling), p73 immunoprecipitation was performed using p73 antibody IMG-259a (Imgenex). Bars correspond to means with SD (n = 3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test.DOI: http://dx.doi.org/10.7554/eLife.10528.019
+**Figure 7—figure supplement 1.:** (A) mRNA levels of Trim63 in C2C12 cells following transfection with siRNA control and siRNA directed against p73, p53 and a mix of siRNA against P53, and the TA isoforms of Trp63 and P73 (siMIX). Bars represent means (relative induction versus Ct) with standard deviation (n = 3). *p<0.01. (B) mRNA level for TA isoforms of Trp63, TA isoforms of P73 and P53 in C2C12 cells following transfection with siRNA control and siRNA directed against p63, p73, and p53. Bars represent means (relative induction versus Ct) with standard deviation (n = 3). *p<0.01. (C, D) Chromatin immunoprecipitation (ChIP) assay was performed on the Trim63 promoter using RT-qPCR on RE1/2 and RE4. p53 immunoprecipitation (C) was performed using p53 antibody IC12 (Cell Signalling), p73 immunoprecipitation was performed using p73 antibody IMG-259a (Imgenex). Bars correspond to means with SD (n = 3). *p<0.01 as calculated by a one-way ANOVA test followed by a Tukey post-test.
 
 ![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/10528/elife-10528-fig7-figsupp2-v1.jpg)
 
-**Figure 7—figure supplement 2.:** (A, B) C2C12 were transfected with a GFP expression vector and either TAp63γ or ΔNp63γ expression vectors. After 24 hr, cells were left untreated (Ct) or treated with FCCP (1 µM) or menadione (1 µM) for 24 hr. Cells were stained with Hoechst and examined with a fluorescence microscope (B). Above, GFP-positive control cells (untreated). Below, dead GFP-positive cell treated with FCCP. C2C12 cells were grown on coverslips coated with poly-ornithine in 24-wells plates. Cells were co-transfected with the indicated expression vectors (200 ng/well) and a GFP-expression vector (50 ng/well) as previously described (Broadley and Hartl, 2008). Cells were cultured for 18 hr with the indicated agents. Cells were subsequently washed with PBS and fixed with 4% paraformaldehyde for 15 min. After two washes, cells were incubated for 10 min with the Hoechst 33,342 staining agent (1 µg/ml, Sigma, Germany). GFP positive cells were then observed with an epi-fluorescent microscope (Zeiss, Germany) to assess the nucleus morphology. (C) C2C12 cells were transfected either with the ∆Np63γ expression vector or siRNA directed against the TA isoforms of Trp63. Cell survival was evaluated using MTT assay after 48 hr of treatment with the indicated drugs at 1 µM. *p<0.01 compared to control, as calculated by a one-way ANOVA test followed by a Tukey post-test.DOI: http://dx.doi.org/10.7554/eLife.10528.020
+**Figure 7—figure supplement 2.:** (A, B) C2C12 were transfected with a GFP expression vector and either TAp63γ or ΔNp63γ expression vectors. After 24 hr, cells were left untreated (Ct) or treated with FCCP (1 µM) or menadione (1 µM) for 24 hr. Cells were stained with Hoechst and examined with a fluorescence microscope (B). Above, GFP-positive control cells (untreated). Below, dead GFP-positive cell treated with FCCP. C2C12 cells were grown on coverslips coated with poly-ornithine in 24-wells plates. Cells were co-transfected with the indicated expression vectors (200 ng/well) and a GFP-expression vector (50 ng/well) as previously described (Broadley and Hartl, 2008). Cells were cultured for 18 hr with the indicated agents. Cells were subsequently washed with PBS and fixed with 4% paraformaldehyde for 15 min. After two washes, cells were incubated for 10 min with the Hoechst 33,342 staining agent (1 µg/ml, Sigma, Germany). GFP positive cells were then observed with an epi-fluorescent microscope (Zeiss, Germany) to assess the nucleus morphology. (C) C2C12 cells were transfected either with the ∆Np63γ expression vector or siRNA directed against the TA isoforms of Trp63. Cell survival was evaluated using MTT assay after 48 hr of treatment with the indicated drugs at 1 µM. *p<0.01 compared to control, as calculated by a one-way ANOVA test followed by a Tukey post-test.
 
 To assess the physiological importance of TAp63 in Trim63 expression we used TAp63-specific silencing RNA (siRNA). Transfection in C2C12 cells of TAp63siRNA diminished the expression of TAp63 at the protein and mRNA levels (Figure 7—figure supplement 1). TAp63 silencing or overexpression of ∆Np63 had a partial protective effect on C2C12 (Figure 7—figure supplement 2). Importantly, silencing of TAp63 reduced Trim63 mRNA levels in both basal state and following stress induced by FCCP (Figure 7D). SiRNA against p53 also diminished Trim63 RNA level, while siRNA against p73 had not significant effect (Figure 7—figure supplement 2). The combination of siRNA against TA isoforms of Trp63, TA isoforms of P73 and P53 diminished further Trim63 RNA level up to ~50%, but did not abolish it. Taken together, these results indicate a complex regulation of the Trim63 promoter, in which the direct binding of p63 and p53 correlates with the modification of gene expression in C2C12 muscular cells.
 
@@ -159,7 +354,7 @@ To assess the physiological importance of TAp63 in Trim63 expression we used TAp
 
 In this study, we developed a comprehensive approach combining biopsies from ALS patients, transgenic animal model of ALS and myoblastic cell lines to analyse the expression and the possible function of P63, a member of the p53 family, in muscle atrophy.
 
-## Regulation of p63 expression during muscular atrophy in ALS patients and in ALS murine models
+### Regulation of p63 expression during muscular atrophy in ALS patients and in ALS murine models
 
 Our results demonstrate that there is a complex p53-like response developed by the atrophic muscle during ALS progression. This assertion is first based on the bioinformatic signalling pathway analyses of 4 independent microarray experiments performed on muscle biopsies of ALS patients as well as two different mouse models of ALS. These analyses pointed out a deregulation of p53 as one of the only three transcription factors deregulated in all four experiments, and common between mouse and human patient samples. Moreover, detailed expression profile analyses of several p53 target genes (Cdkn1a, Gadd45a, Pmaip1) or the p53 family member, P63, showed that their expression correlated significantly with the severity of the pathology in humans. The signalling pathway analyses were confirmed with groups of individuals independent of those used for the microarrays and by additional experimental methods. RT-qPCR confirmed the induction of multiple target genes of the p53 family. In addition, expression analysis of p53 family members indicated that in ALS the P63 gene seems more likely to play a regulatory role as the TAp63 isoforms are strongly upregulated and localized in the nuclei of the fibers during the ALS pathology (Figures 1, 3, 4, 5, figure supplement 2, 3, 4, 7). Our observation that the deregulation of p63 and p63 target genes occurs in muscle of ALS patients that have not been selected for a particular genetic alteration indicates that these deregulations are likely to be a common feature in ALS, independently of whether it is SOD1 that is mutated or another gene. Additional experiments using other mouse models for TDP43 or FUS might confirm that. It was previously reported that p63 participates in muscle cell differentiation and metabolism, and contributes to cardiac muscle development (Cam et al., 2006; Martin et al., 2011; Rouleau et al., 2011; Su et al., 2012; Osada et al., 1998). Now, by combining biopsies from ALS patients and an animal model for ALS, the present study provides the first solid evidence that p63 might also participate in muscular atrophy.
 
@@ -169,7 +364,7 @@ The causes of p63 regulation during ALS muscle atrophy seemed complex and reflec
 
 Protein aggregates, mitochondrial stress and oxidative stress triggered selective complex stress pathways named ER stress (or UPR, unfolded response) or mitochondrial stressed pathways that utilize several common transcription factors as effectors, such as ATF4, ATF6, CHOP and XBP1 (Senft and Ronai, 2015; Broadley and Hartl, 2008; Lee, 2015; Michel et al., 2015). Therefore, we investigated whether these effectors could drive the expression of p53 family protein. We showed that some of these transcription factors, notably ATF4 and ATF6, were able to induce the RNA levels of TA isoforms of Trp63 and P73 in C2C12 cells (Figure 5—figure supplement 2). However, bioinformatic analyses did not reveal potential canonical binding sites for these transcription factors neither in promoters of TA isoforms of P63 nor P73, suggesting that the regulation might occur through indirect mechanisms that remain to be identified.
 
-## Function of the p53 response in muscular atrophy during ALS
+### Function of the p53 response in muscular atrophy during ALS
 
 Based on the literature, the p53 family could mediate different cellular outcomes in muscles and therefore on muscle pathology. p53/p63/p73 proteins have been linked to cell death, differentiation, metabolism, ER stress induction and ROS defence, which have all been reported during ALS (Hart, 2006; Barber and Shaw, 2010; Aguirre et al., 2005; Nishitoh et al., 2008; Manfredi and Xu, 2005). Our study revealed that the majority of the p53/p63/p73 target genes upregulated during ALS in the atrophic muscles are connected to cell death (Gadd45a, Peg3, Perp, Pmaip1, Bax, Siva, Eda2r, Wig1/Pag608) (Figure 1 and Table 1). Genes connected to other functions, such as ER stress (chop, bip, xbp1, scotin) or energy metabolism (Tigar, Sesn1, Sesn2, Sco2) seem to be less consistently regulated, as some are upregulated (Sesn1, Sesn2, Xbp1), while others are downregulated (Sco2, Tigar, Chop, Bip, see Table 1). Therefore, it seems more likely that p53 family members, notably TAp63, function in ALS is connected to muscular atrophy via control of muscle cell survival and catabolism. This hypothesis is further supported by three of our results.
 
@@ -179,34 +374,34 @@ ALS patients are currently diagnosed at a stage where denervation and muscular a
 
 ## Materials and methods
 
-## SOD1-G86R mice
+### SOD1-G86R mice
 
 SOD1(G86R) mice were genotyped as described in (Ripps et al., 1995). For surgery, 80-day-old FVB mice were anesthetized and both sciatic nerves were exposed at mid thigh level and crushing was performed (or not – CT) with a forceps during 20 s ~5 mm proximal to the trifurcation. Control animals used in the experiments were wild-type littermates. Randomization was performed based on body weight. Time course for animal pathology was performed based on a previous study on denervation and muscle atrophy (von Grabowiecki et al., 2015). Animal experiments were performed following the European guidelines and protocols validated by the local ethical committee.
 
-## Cell culture
+### Cell culture
 
 C2C12 cells were obtained from ATCC (ATCC CRL-1772) and grown in DMEM (Dulbecco's modified Eagle's medium; Life Technology, Carlsbad, CA) with 10% fetal bovine serum (Life Technology) at 37°C in a humidified atmosphere and 5% CO2. Mycoplasma contamination has been tested negatively using PlasmoTest (Invivogene, San Diego, CA). Differentiation of C2C12 cells was performed using 2% horse serum at 90% cell confluence.
 
-## Quantitative PCR
+### Quantitative PCR
 
 TRIzol (Invitrogen, Carlsbad, CA) was used to extract RNA. One µg of RNA was used for reverse transcription (iScript cDNA kit, Bio-Rad, France) and qPCR was carried out (iQ SYBR Green, Bio-Rad) (Supplementary file 1). Expression levels were normalized using either 18S, TBP or RPB1 as previously described (Vidimar et al., 2012).
 
-## Western blotting
+### Western blotting
 
 Cells or tissue were lysed with LB (125 mM Tris-HCl pH 6.7, NaCl 150 mM, NP40 0.5%, 10% glycerol). Proteins were denatured and deposited directly (75 μg of proteins) onto a SDS-PAGE gel, or they were precipitated (2 mg of proteins) with a p63 antibody and G Sepharose beads before separation. Western blotting was performed using antibodies raised against p53 (rabbit anti-p53, FL-393, Santa Cruz Biotechnology, Dallas, TX), p63 (mouse anti-p63, 4A4, Santa Cruz Biotechnology; p63, Abcam, France) or TAp63 (Biolegend, CA). Secondary antibodies (anti-rabbit, anti-mouse: Sigma, France) were incubated at 1:1000. Loading was controlled with actin (rabbit anti-β-actin, Sigma, 1:4000) or TBP (anti-TBP 1:1000, Santa Cruz Biotechnology) (Antoine et al., 1996).
 
-## Transfection and luciferase assays
+### Transfection and luciferase assays
 
 Cells were transfected by polyethylenimmine (PEI)-based or JetPrim (Polyplus, Strasbourg, France) as previously described (Gaiddon et al., 1999). For luciferase assays, cells were seeded in 24-well plates, and transfected with the indicated expression vectors (200 ng) and reporter constructs (250 ng) (Sohm et al., 1999). Luciferase activity was measured in each well 24 hr later and results were normalized with a CMV-driven reporter gene (Benosman et al., 2011). The -1584 ΔNp63 luc and -46 ΔNp63 luc constructs were previously described (Romano et al., 2006). The Trim63 luc constructs were previously described (Waddell et al., 2008). SiRNA tranfection was performed using 30 nM of siRNA and with RNAiMAX protocol as described by the provider (Life Technology). TAp63 siRNA sequences were covering the sequence: GAA CUU UGU GGA UGA ACC UCC GAA.
 
-## Chromatin immunoprecipitation (ChIP) assay
+### Chromatin immunoprecipitation (ChIP) assay
 
 ChIP assays were performed using the standard protocol from the Magna ChIP G kit (Millipore). C2C12 lysates were sonicated 12 times at 10% power. For each 1 million cells, 1 µg of antibody was used. p63 was immunoprecipitated with a mouse antibody raised against total p63 (4A4, Santa Cruz Biotechnology). Mouse-anti-RAB11A was used as negative control (Santa Cruz Biotechnology).
 
-## Microarrays analyses
+### Microarrays analyses
 
 ECL files from microarray experiments (E-MXP-3260; E-GEOD-41414; E-TABM-195; E-GEOD-16361) were obtained form the Array Express database (EMBL-EBI). Each experiment was first analyzed individually using AltAnalysis software (Emig et al., 2010). Deregulated gene were identified based on two fold change expression and t-test p-value <0.05. Deregulated genes were then analyzed by GO-Elite with Prune Ontology term using Z-score (cutoff 1.96, p-value 0.05) and Fisher's Exact Test for ORA (2000 permutations) for over-representation in selected biological processes in several resources: Gene Ontology, MPhenoOntology, Disease Ontology, GOSlim, PathwayCommons, KEGG, Transcription Factor Targets, miRNA Targets, Domains, BioMarkers, RVista Transcription Sites, DrugBank, BioGrid.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mouse gastrocnemius muscles were sampled, submersed in freezing medium (Tissue-Tek O.C.T compound, Sakura, Japan) and immediately frozen in a nitrogen-cooled isopentane bath. Muscles were sliced in transversal axis at 14 µm in a cryostat (Leica CM3050S, Leica, France) and placed on slides covered with 0.5% gelatine. The samples were then dried for 20 min on a hot plate and fixed in 4% paraformaldehyde for 10 min . After a 5 min wash with PBS, the samples were permeabilized with 3% Triton X-100 in PBS for 10 min, washed with TBS, incubated in 100 mM glycine in TBS for 20 min and finally washed again in PBS. The samples were incubated with mouse antibody raised against p63 (p63 clone 4A4, Santa Cruz Biotechnology) at 1:100 with 0.1% Triton X-100 in PBS (Triton buffer) overnight at room temperature. They were then washed three times with Triton buffer for 10 min and incubated with cyanine 3-coupled goat anti-mouse antibody (Jackson ImmunoResearch, West Grove, PA) at 1:1000, as well as with 1 µg/ml Hoechst 33,342 (Sigma, France), in Triton buffer at room temperature for 1 hr. After washing three times with Triton buffer, the slides were covered with mounting medium (Aqua-Poly/Mount, Polysciences, Warrington, PA) on glass slips and observed by confocal microscopy (Zeiss, Germany). Antibody specificity was verified with slides probed with only the secondary antibody.

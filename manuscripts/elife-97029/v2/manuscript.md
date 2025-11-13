@@ -13,16 +13,16 @@
 
 ### Affiliations
 
-1. https://ror.org/022fs9h90 Department of Biology, University of Fribourg Fribourg Switzerland
-2. https://ror.org/022fs9h90 Department of Endocrinology, Metabolism, and Cardiovascular System, Section of Medicine, University of Fribourg Fribourg Switzerland
-3. https://ror.org/01q9sj412 Zentrum für Experimentelle Neurologie, Department of Neurology, Inselspital, Bern University Hospital, University of Bern Bern Switzerland
-4. https://ror.org/02k7v4d05 Department of Biomedical Research, University of Bern Bern Switzerland
+1. Department of Biology, University of Fribourg Fribourg Switzerland ([ROR:022fs9h90](https://ror.org/022fs9h90))
+2. Department of Endocrinology, Metabolism, and Cardiovascular System, Section of Medicine, University of Fribourg Fribourg Switzerland ([ROR:022fs9h90](https://ror.org/022fs9h90))
+3. Zentrum für Experimentelle Neurologie, Department of Neurology, Inselspital, Bern University Hospital, University of Bern Bern Switzerland ([ROR:01q9sj412](https://ror.org/01q9sj412))
+4. Department of Biomedical Research, University of Bern Bern Switzerland ([ROR:02k7v4d05](https://ror.org/02k7v4d05))
 
 † Corresponding author
 
 ## Abstract
 
-The circadian clock enables organisms to synchronize biochemical and physiological processes over a 24 hr period. Natural changes in lighting conditions, as well as artificial disruptions like jet lag or shift work, can advance or delay the clock phase to align physiology with the environment. Within the suprachiasmatic nucleus (SCN) of the hypothalamus, circadian timekeeping and resetting rely on both membrane depolarization and intracellular second-messenger signaling. Voltage-gated calcium channels (VGCCs) facilitate calcium influx in both processes, activating intracellular signaling pathways that trigger Period ( Per ) gene expression. However, the precise mechanism by which these processes are concertedly gated remains unknown. Our study in mice demonstrates that cyclin-dependent kinase 5 (Cdk5) activity is modulated by light and regulates phase shifts of the circadian clock. We observed that knocking down Cdk5 in the SCN of mice affects phase delays but not phase advances. This is linked to uncontrolled calcium influx into SCN neurons and an unregulated protein kinase A (PKA)-calcium/calmodulin-dependent kinase (CaMK)-cAMP response element-binding protein (CREB) signaling pathway. Consequently, genes such as Per1 are not induced by light in the SCN of Cdk5 knock-down mice. Our experiments identified Cdk5 as a crucial light-modulated kinase that influences rapid clock phase adaptation. This finding elucidates how light responsiveness and clock phase coordination adapt activity onset to seasonal changes, jet lag, and shift work.
+The circadian clock enables organisms to synchronize biochemical and physiological processes over a 24 hr period. Natural changes in lighting conditions, as well as artificial disruptions like jet lag or shift work, can advance or delay the clock phase to align physiology with the environment. Within the suprachiasmatic nucleus (SCN) of the hypothalamus, circadian timekeeping and resetting rely on both membrane depolarization and intracellular second-messenger signaling. Voltage-gated calcium channels (VGCCs) facilitate calcium influx in both processes, activating intracellular signaling pathways that trigger Period (Per) gene expression. However, the precise mechanism by which these processes are concertedly gated remains unknown. Our study in mice demonstrates that cyclin-dependent kinase 5 (Cdk5) activity is modulated by light and regulates phase shifts of the circadian clock. We observed that knocking down Cdk5 in the SCN of mice affects phase delays but not phase advances. This is linked to uncontrolled calcium influx into SCN neurons and an unregulated protein kinase A (PKA)-calcium/calmodulin-dependent kinase (CaMK)-cAMP response element-binding protein (CREB) signaling pathway. Consequently, genes such as Per1 are not induced by light in the SCN of Cdk5 knock-down mice. Our experiments identified Cdk5 as a crucial light-modulated kinase that influences rapid clock phase adaptation. This finding elucidates how light responsiveness and clock phase coordination adapt activity onset to seasonal changes, jet lag, and shift work.
 
 ## Introduction
 
@@ -36,21 +36,45 @@ Cdk5 is a proline-directed serine/threonine kinase that forms a complex with its
 
 ## Results
 
-## Cdk5 knock-down in the SCN impairs light-induced phase delays
+### Cdk5 knock-down in the SCN impairs light-induced phase delays
 
 Light perceived during the dark period elicits changes in the clock phase (Daan and Pittendrigh, 1976). To test whether Cdk5 plays a role in this process, we knocked down Cdk5 in the SCN via stereotaxic application of adeno-associated viruses (AAVs). We injected an adenovirus expressing shRNA to silence Cdk5 (shCdk5) and, as a control, an adenovirus expressing a control shRNA (scr) into the SCN (Brenna et al., 2019). Consistent with our previous observations (Brenna et al., 2019), we found that silencing Cdk5 in the SCN reduced its expression in the SCN (Figure 1—figure supplement 1a) and the expression of PER2 (Figure 1—figure supplement 1b). Under constant darkness (DD) conditions, this knock-down of Cdk5 shortened the clock period in male mice, as assessed by wheel-running activity (Figure 1a and b, Figure 1—figure supplement 1c). This period was not influenced by light pulses (Figure 1—figure supplement 1d). However, the onset of activity was affected after releasing mice into constant darkness (DD). Light at zeitgeber time (ZT) 14 (where ZT0 is lights on and ZT12 is lights off) delayed the clock phase, whereas light at ZT22 advanced it in control (scr) animals, with light at ZT10 having no effect (Figure 1a and c, Aschoff type II protocol). The animals with silenced Cdk5 in the SCN (shCdk5) behaved similarly to controls (scr), except for ZT14. Light did not elicit a phase delay at this time, suggesting that Cdk5 plays a role in the phase delay mechanism. Similar results were obtained for female animals (Figure 1—figure supplement 1e–g).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/97029/elife-97029-fig1-v2.jpg)
+
+**Figure 1.:** (a) Examples of double-plotted wheel-running actograms of control (scr) and Cdk5 knock-down (shCdk5) male mice. Animals were kept under a 12 hr light/12 hr dark cycle (white and gray areas, respectively) (LD). After 8–10 days they received a 15 min light pulse at the indicated zeitgeber times (ZT) (yellow stars). After the light pulse animals were released into constant darkness (DD). This light pulse assessment is termed Aschoff type II. (b) Circadian period (τ) of shCdk5 mice (red) is significantly shorter compared to scr controls (blue). τ scr = 23.21 ± 0.08 hr, τ shCdk5=22.47 ± 0.09 hr. All values are mean ± SEM, unpaired t-test with Welch’s correction, n=6, ***p<0.001. (c) Quantification of phase shifts (φ) after a 15 min light pulse at ZT10, ZT14, and ZT22. The phase shift at ZT14 is strongly reduced in shCdk5 animals (red) compared to scr controls (blue). scr: φ ZT10: –1.93±1.43 min, φ ZT14: –105.24±1.54 min, φ ZT22: 34.30±2.97 min, shCdk5: φ ZT10: –2.60±1.72 min, φ ZT14: –11.80±2.81 min, φ ZT22: 35.88±5.68 min. All values are mean ± SEM, unpaired t-test with Welch’s correction, n=5–6, ****p<0.0001. (d) Examples of double-plotted wheel-running actograms of control (scr) and Cdk5 knock-down (shCdk5) mice. Animals were kept under DD. After 8–10 days they received a 15 min light pulse at the indicated circadian times (CT) (orange stars). This light pulse assessment is termed Aschoff type I. (e) Circadian period of shCdk5 mice (red) is significantly shorter compared to scr controls (blue). τ scr = 23.20±0.05 hr, τ shCdk5=22.48±0.09 hr. All values are mean ± SEM, unpaired t-test with Welch’s correction, n=5, ***p<0.001. (f) Quantification of phase shifts after a 15 min light pulse at CT10, CT14, and CT22. The phase shift at CT14 is strongly reduced in shCdk5 animals (red) compared to scr controls (blue). scr: φ ZT10: 0.12±3.31 min, φ ZT14: –121.52±8.18 min, φ ZT22: 48.40±3.43 min, shCdk5: φ ZT10: –1.68±2.78 min, φ ZT14: –46.60±5.84 min, φ ZT22: 54.16±3.19 min. All values are mean ± SEM, unpaired t-test with Welch’s correction, n=5, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97029/elife-97029-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Representative coronal sections (40 µm) of the suprachiasmatic nucleus (SCN) region after injection of adeno-associated viruses (AAVs) carrying either scrambled (scr) or shCdk5 shRNA. Slices were stained with DAPI to stain nuclei (blue), and anti-GFP (green) and anti-Cdk5 (red) antibodies. GFP shows those cells infected by the virus. Cdk5 was efficiently down-regulated in the SCN by shCdk5 but not by scr shRNA (red), which was as efficiently delivered as shCdk5 (green). Scale bar: 100 µm. (b) Same as (a) but stained with anti-PER2 (red). PER2 was efficiently down-regulated in the SCN by shCdk5 but not by scr shRNA, which was as efficiently delivered as shCdk5 (green). Scale bar: 30 µm. (c) Examples of double-plotted actograms of control (scr) and Cdk5 knock-down (shCdk5) animals (top panels). Mice were kept under a 12 hr light/12 hr dark cycle for 8–10 days before they were released into constant darkness (DD). In DD period was determined using χ2-periodogram analysis (bottom panels). (d) Period was determined after a light pulse at zeitgeber time (ZT) 10, ZT14, or ZT22. τ control ZT10: 23.26±0.09 hr, ZT14: 23.21±0.08 hr, ZT22: 23.21±0.08 hr; τ shCdk5 ZT10: 22.47±0.09 hr, ZT14: 22.59±0.1 hr, ZT22: 22.66±0.06 hr. Values are the mean ± SEM (n=6). Period was not significantly altered by the light pulse itself neither in control (scr) not in shCdk5 animals. Brown-Forsythe ANOVA test, p>0.05, n=6. (e) Examples of double-plotted wheel-running actograms of control (scr) and Cdk5 knock-down (shCdk5) female mice. Animals were kept under a 12 hr light/12 hr dark cycle (white and gray areas, respectively) (LD). After 10–12 days they received a 15 min light pulse at ZT14 (yellow stars). After the light pulse animals were released into constant darkness (DD). (f) Circadian period (τ) of female shCdk5 mice (red) is significantly shorter compared to female scr controls (blue). τ scr = 23.53±0.05 hr, τ shCdk5=22.95±0.08 hr. All values are mean ± SEM, Mann-Whitney test, n=5 scr, n=4–5, *p<0.02. (g) Quantification of phase shifts (φ) after a 15 min light pulse at ZT14. The phase shift at ZT14 is strongly reduced in shCdk5 animals (red) compared to scr controls (blue). scr: φ ZT14: –63.8±11.2 min, shCdk5: φ ZT14: –2.5±0.13 min. All values are mean ± SEM, unpaired t-test with Welch’s correction, n=4–5, **p<0.01.
+
 To corroborate our observations, we performed the same experiment in DD (Aschoff type I protocol). The shCdk5 animals displayed a shorter period compared to scr controls (Figure 1d and e), consistent with previous observations (Brenna et al., 2019). After determining each animal’s clock period, we administered light pulses of 15 min at circadian times (CT) 10, CT14, and CT22 for each animal (orange stars, Figure 1d). Light at CT10 had no effect on both the shCdk5 and scr control mice (Figure 1f). Light applied at CT14 promoted a phase delay in scr control mice. However, silencing of Cdk5 impaired the delay of the clock phase (Figure 1d and f), which is consistent with the observation at ZT14 (Figure 1a and c). Light at CT22 elicited normal phase advances in shCdk5 and scr controls (Figure 1d and f), similar to the light pulse applied at ZT22 (Figure 1a and c). From these experiments, we conclude that Cdk5 plays a role in delaying the clock phase in response to a light pulse in the early activity period of mice.
 
-## Cdk5 activity is modulated by light in the early night
+### Cdk5 activity is modulated by light in the early night
 
 Given that Cdk5 plays a significant role in the phase shift of the circadian clock, we investigated whether the light signal at ZT14 could affect the levels of Cdk5 and its co-activator p35 in the SCN. To this end, we collected SCN samples at ZT14 in the dark or after a 15 min light pulse and performed a western blot on total protein extracts. To ensure proper light induction, we measured the light-dependent phosphorylation of PKA (Figure 2a and b), CaMKII and CREB (Figure 2—figure supplement 1a–d). We confirmed that PKA, CaMKII, and CREB phosphorylation levels increased in response to light in the SCN (Figure 2a and b, Figure 2—figure supplement 1a–d). Interestingly, we observed that light could also increase the p35 protein level, although the levels of Cdk5 remained unaffected (Figure 2a and c). Given the increase in p35 levels due to light, we wondered whether this event would affect the kinase activity of the Cdk5/p35 complex. We performed an in vitro kinase assay using immunoprecipitated Cdk5 from SCN tissue collected from mice either not exposed to light or exposed to light at ZT14. We used the recombinant histone H1 as a substrate in the presence of radioactive ATP (Brenna et al., 2019). Surprisingly, our results indicated that Cdk5 kinase activity decreased in response to light (Figure 2d and e), suggesting that light may affect the interaction between Cdk5 and p35. To test this hypothesis, we performed a co-immunoprecipitation experiment using an antibody against Cdk5. Our results revealed that SCN extracts from mice that received a light pulse at ZT14 contained less p35 in a complex with Cdk5 (Figure 2f).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/97029/elife-97029-fig2-v2.jpg)
+
+**Figure 2.:** Immuno-western blotting (IB), immunoprecipitation (IP), and Cdk5 kinase activity assays from suprachiasmatic nucleus (SCN) tissue extracts harvested 30 min after light (+) and no light (-) given at zeitgeber time (ZT) 14. (a) Western blot depicting the amounts of phospho PKA (p-PKA), p35 co-activator, Cdk5, and tubulin (Tub, control) before and after light pulse at ZT14. (b) Quantification of p-PKA relative to tubulin. Values are the mean ± SEM. Unpaired t-test, n=3, *p<0.05. (c) Quantification of p35 co-activator of Cdk5. Values are the mean ± SEM. Unpaired t-test, n=3, ***p<0.001. (d) Cdk5 kinase activity assay. IP of SCN extracts with antibodies against Cdk5 showing the presence of Cdk5 (upper panel) and total protein with Coomassie blue staining (lower panel) as a control for the presence of H1. The middle panel depicts histone H1 phosphorylated by Cdk5, visualized as 32P-histone H1 (32P-H1). (e) Quantification of Cdk5 kinase activity relative to H1 levels. Values are the mean ± SEM. Unpaired t-test, n=3, ***p<0.001. (f) Co-immunoprecipitation of p35 with Cdk5 before and after a light pulse.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97029/elife-97029-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Western blot of suprachiasmatic nucleus (SCN) tissue extract at zeitgeber time (ZT) 14 with and without light pulse. The lower panel shows total CaMKII that was recognized by a polyclonal antibody. The upper panel shows increased levels of phosphorylated CaMKII (p-CaMKII) after light administration at ZT14. (b) Quantification of p-CaMKII relative to total CaMKII. Values are the mean ± SEM. Unpaired t-test, n=3, *p<0.05. (c) Western blot of suprachiasmatic nucleus (SCN) tissue extract at zeitgeber time (ZT) 14 with and without light pulse. The lower panel shows total CREB that was recognized by a polyclonal antibody. The upper panel shows increased levels of phosphorylated CREB (p-CREB-S133) after light administration at ZT14. (d) Quantification of p-CREB in relation to unphosphorylated CREB. Values are the mean ± SEM. Unpaired t-test, n=3, *p<0.05. (e) SDS-PAGE gel after immunoprecipitation of the SCN extracts (-/+ a light pulse) with anti-Cdk5 and anti-IgG, respectively.
+
 Taken together, the results support the hypothesis that light affects Cdk5 activity by interfering with the formation of the Cdk5/p35 complex. Interestingly, the light pulse at ZT14 might affect more than just Cdk5/p35 protein-protein interactions, potentially involving additional unknown proteins (Figure 2—figure supplement 1e).
 
-## Cdk5 impacts the CREB signaling pathway via CaMK
+### Cdk5 impacts the CREB signaling pathway via CaMK
 
 Deletion of a cAMP-responsive element (CRE) in the Per1 promoter blunted light-induced Per1 expression in the SCN at night (Ikegami et al., 2020). Because nocturnal light induces phosphorylation of CREB and phosphorylated CREB (p-CREB) can bind to CREs (Naruse et al., 2004; Travnickova-Bendova et al., 2002; Tischkau et al., 2003), we investigated whether Cdk5 participates in the pathway evoking the CREB phosphorylation at serine-133 (pSer-133), a site known to be involved in phase delays, and Per1 induction (Gau et al., 2002). Therefore, we performed immunohistochemical analysis using an antibody detecting phosphate on CREB at serine 133 (p-CREB-S133) (Figure 3a, Figure 3—figure supplement 1b, control Figure 3—figure supplement 1c). In the SCN of control animals (scr), we observed p-CREB-S133 in nuclei of neurons after the light was delivered at ZT14 but not in controls (Figure 3a, arrowheads). In contrast, p-CREB-S133 was already detected in nuclei before the light pulse in shCdk5 animals (Figure 3a, arrowheads), indicating that Cdk5 plays a role in gating the phosphorylation of CREB.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/97029/elife-97029-fig3-v2.jpg)
+
+**Figure 3.:** The cartoons on the left of each figure depict the CaMK pathway with the red rectangle indicating the visualization of a particular component. (a) Immunohistochemistry on the suprachiasmatic nucleus (SCN) of control (scr) and shCdk5 mice using an antibody recognizing phospho-serine 133 of CREB (p-CREB-S133) before and after a light pulse at zeitgeber time (ZT) 14. The red color shows p-CREB-S133 and the blue color represents DAPI-stained nuclei of SCN cells. Scale bar: 8 µm. The right panel shows the quantification of the p-CREB-S133 signal. Values are the mean ± SEM. Unpaired t-test with Welch’s correction, n=3, *p<0.05. (b) Immunohistochemistry on the SCN of control (scr) and shCdk5 mice using an antibody recognizing phosphorylated Thr286 Cam kinase II (p-CaMKII) before and after a light pulse at ZT14. The red color shows p-CaMKII and the blue color represents DAPI-stained nuclei of SCN cells. Scale bar: 8 µm. The right panel shows the quantification of the p-CaMKII signal. Values are the mean ± SEM. Unpaired t-test with Welch’s correction, n=3, *p<0.05. (c) Translocation of calmodulin (CAM) in response to a light pulse at ZT14 in SCN neurons of control (scr) and Cdk5 knock-down (shCdk5) animals. CAM (yellow) accumulates around the nuclei in scr controls. In shCdk5 SCN neurons, this accumulation around the nuclei is already seen before the light pulse which is clearly different from scr controls. Scale bar: 7 µm The right panel shows the quantification of CAM rings. Values are the mean ± SEM. Unpaired t-test with Welch’s correction, n=3, *p<0.05, **p<0.01. (d) Immunohistochemistry on the SCN of control (scr) and shCdk5 mice using an antibody recognizing phosphorylated Thr196-200 Cam kinase IV (p-CaMKIV) before and after a light pulse at ZT14. The red color shows p-CaMKIV and the blue color represents DAPI-stained nuclei of SCN cells. Scale bar: 5 µm. The right panel shows the quantification of the p-CaMKIV signal. Values are the mean ± SEM. Unpaired t-test with Welch’s correction, n=3, *p<0.05. (e) Immunohistochemistry on the SCN of control (scr) and shCdk5 mice using an antibody recognizing the calcium channel Cav3.1 before and after a light pulse at ZT14. The green color shows Cav3.1 and the blue color represents DAPI-stained nuclei of SCN cells. Scale bar: 5 µm. The right panel shows the relative Cav3.1 signal. Values are the mean ± SEM. Unpaired t-test with Welch’s correction, n=3, *p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97029/elife-97029-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Immunohistochemistry on the SCN of control (scr) and shCdk5 mice using an antibody recognizing total CREB before and after a light pulse at zeitgeber time (ZT) 14. The red color shows CREB and the blue color represents DAPI-stained nuclei of SCN cells. Scale bar: 250 µm. (b) Immunohistochemistry on the SCN of control (scr) and shCdk5 mice using an antibody recognizing phospho-serine 133 of CREB (p-CREB-S133) before and after a light pulse at ZT14. The red color shows p-CREB-S133 and the blue color represents DAPI-stained nuclei of SCN cells. Scale bar: 250 µm. (c) Left panel: Same as (a) but at higher magnification. Right panel: Quantification of total CREB in scr (blue) and shCdk5 (red) SCN. Values are the mean ± SEM. Unpaired t-test, n=3. Scale bar: 10 µm. (d) Left panel: Immunohistochemistry on the SCN depicting total CaMKII (red) and cell nuclei (blue). Right panel: Quantification of total CaMKII in scr (blue) and shCdk5 (red) SCN. Values are the mean ± SEM. Unpaired t-test, n=3. Scale bar: 10 µm. (e) Immunohistochemistry on the SCN depicting total CaMKIV (red) and cell nuclei (blue). Scale bar: 10 µm.
 
 The CREB/CRE transcriptional pathway has been shown to be activated by calcium/calmodulin-dependent kinase II (CaMKII) and mitogen-activated protein kinase (MAPK) (Sheng et al., 1991; Xing et al., 1996; Impey et al., 1998). Pharmacological inhibition of CaMKII but not of MAPK affected light-induced phase delays in hamsters (Yokota et al., 2001). Therefore, we tested whether phosphorylated CaMKII (p-CaMKII) is affected by the knock-down of Cdk5 in the SCN of mice. We observed that p-CaMKII presence (alpha isoform) in the cytoplasm of SCN cells increased after light at ZT14 compared to no light in control animals (Figure 3b, left panels). In shCdk5 SCN, however, p-CaMKII was already present before the light pulse in significantly higher levels than controls (Figure 3b, control Figure 3—figure supplement 1d). This result indicates that Cdk5 is gating the phosphorylation of CaMKII alpha.
 
@@ -60,17 +84,33 @@ Once delivered to the nucleus, Ca2+/CAM triggers a highly cooperative activation
 
 Calcium entry is regulated by channels, such as T-type VGCC, which are involved in phase delays (Kim et al., 2005). Previous reports show that Cdk5 directly or indirectly can phosphorylate Cav3.1 in vitro (Calderón-Rivera et al., 2015). Thus, we looked at the influence of light and Cdk5 on the T-type channel Cav3.1 using immunohistochemical staining. We observed that the level of Cav3.1 protein was significantly increased on the surface of SCN cells after the light pulse (Figure 3e, blue bars). This suggests that light inhibits internalization and degradation of this channel. Interestingly, in the Cdk5-depleted SCN cells, Cav3.1 staining was already high on the cell surface before the light signal (Figure 3e, red bars). We observed no difference in the Cav3.1 signal between SCN samples obtained from shCdk5 mice before and after the light pulse (Figure 3e, red bars), suggesting that Cdk5 may be directly or indirectly involved in the regulation of Cav3.1 localization. This is consistent with previously described effects of Cdk5 on the cellular localization of other receptors such as the D2 and TRPV1 receptors (Liu et al., 2019; Jeong et al., 2013).
 
-## Cdk5 modulates neuronal activity in response to light at ZT14
+### Cdk5 modulates neuronal activity in response to light at ZT14
 
 Neuronal activity in response to light at ZT14 requires calcium influx. At night, neuronal cell membranes are hyperpolarized, creating a Ca2+ gradient. A light stimulus at night promotes membrane depolarization and VGCC activation, which evokes a Ca2+ influx into SCN neurons, ultimately changing the phase of the circadian clock (Colwell, 2001; Irwin and Allen, 2007). Our results shown in Figure 3 indicate that Cdk5 regulates the gating between light and the CaMKII pathway, which relies on Ca2+ availability. Thus, we tested whether Cdk5 regulated the light-mediated Ca2+ influx into SCN neurons. To this end, we employed in vivo calcium imaging to assess changes in calcium levels in the SCN in freely moving mice after 15 min of a light pulse given at ZT14. First, we injected an AAV expressing the shCdk5 sequence into the SCN to silence Cdk5. This AAV co-expresses the calcium indicator GCaMP7 under the neuron-specific synapsin 1 promoter. As a control, we injected an AAV carrying a non-specific shRNA (scrambled sequence) instead of shCdk5 (see Methods). Consistent with our previous results, the construct expressing shCdk5 in the SCN produced a shortened free-running period in mice (Figure 4—figure supplement 1a–c). Animals injected with AAV were implanted with a chronic optical fiber placed above the SCN to allow for longitudinal imaging of GCaMP7 signals using fiber photometry. After habituation, ΔF/F0 (or the ratio of change in GCaMP7 fluorescence to the baseline fluorescence, see Methods) was recorded before and after light pulse delivery at ZT14 in both groups of mice (Figure 4a).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/97029/elife-97029-fig4-v2.jpg)
+
+**Figure 4.:** (a) Illustration of the chronic optic fiber implantation in the suprachiasmatic nucleus (SCN) for fiber photometry recording in freely moving mice (left). The animals were previously infected either with AAV9-hSyn1-chl[1x(shNS)]-jGCaMP7b-WPRE-SV40p(A)(scr) or AAV9-hSyn1-chl[mouse(shCdk5)]-jGCaMP7b-WPRE-SV40p(A)(shCdk5). The experimental timeline of one trial is shown on the right. White and dark boxes represent the light and dark phase, respectively. Fiber photometry recordings were done in the 5 min before the light pulse, during the light pulse, and 15 min after. The light pulse was 15 min long and was delivered at ZT14 (blue box; dashed lines between min 14–15 are not included in the analysis). (b) Mean traces ± SEM of cell activity (normalized ΔF/F0) of GCaMP7b-expressing SCN neurons (black: scr, red: shCdk5) 5 min before, 15 min during, and 15 min after the light pulse (±20 s) light pulse delivered at ZT14. N=15 trials, n=5 mice/red = shCdk5, N=12 trials, n=4 mice. (c) Bar plot showing the percentage of ΔF/F0 changes ± SEM 5 min before the light pulse, in the first and last 5 min during the light pulse and the first and last 5 min after the light pulse. 9–14 min of light pulse: scramble (black bar) 105.5±19.3 ΔF/F0 vs. shCdk5 (red bar) 74.7±17.2 ΔF/F0. 1–5 min after light pulse: scramble (black bar) 111.2±19.3 ΔF/F0 vs. shCdk5 (red bar) 81.0±17.8 ΔF/F0. Black = scr, N=15 trials, n=5 mice/red = shCdk5, N=12 trials, n=4 mice. Bar values represent the mean ± SEM. ***p<0.001; two-way ANOVA corrected with Bonferroni post hoc test. (d) Photomicrograph of the expression of GCaMP7b (green) in the SCN in both control (scr, left) and experimental (shCdk5, right) animals. The red hatched oval indicates the placement of the optic fiber. Blue: DAPI, green: GFP (produced by jGCaMPP7). Scale bar: 50 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97029/elife-97029-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Examples of double-plotted wheel-running actograms of control (scr) and Cdk5 knock-down (shCdk5) mice containing the reporter GCaMP7. Animals were kept under a 12 hr light/12 hr dark cycle (white and gray areas, respectively) (LD). After 6 days they were released into constant darkness (DD). (b) χ2-periodogram analysis showing circadian period (τ) for control GCaMP7 and shCdk5 GCaMP7 mice, τ scr = 23.9 hr, τ shCdk5=22.5 hr. (c) Quantification of circadian period (τ). τ scr = 23.78±0.08 hr, τ shCdk5=22.74±0.09 hr. All values are mean ± SEM, unpaired t-test with Welch’s correction, n=5–6, ***p<0.001. (d) Activity of SCN neurons expressing GCamP7b (normalized ΔF/F) in individual trials in the dark phase, 5 min before and 15 min after the 15 min (±20 s) light pulse delivered at ZT14. The 15th minute of the light recording has not been analyzed to homogenize the lightning time precisely. Black = scramble, N=15 trials, n=5 mice/red = shCdk5, N=12 trials, n=4 mice. (e) Bar plots showing the percentage of ΔF/F0 changes ± SEM (normalized to the 5 min before the light pulse) in the dark phase, 5 min (top) or 15 min (bottom) after the light pulse delivered at ZT14 and in the last 5 min of the light pulse (min 10–14). Black: scramble, N=15 trials, n=5 mice; red: shCdk5, N=12, trials, n=4 mice. ***p<0.001; two-way ANOVA corrected with Bonferroni post hoc test.
+
 We observed an increase in calcium activity in control mice (scramble) during the second half of the 15 min of the light pulse at ZT14, which was also sustained for over 15 min after the light pulse (Figure 4b, black trace). In contrast, the ΔF/F0 in shCdk5 mice during the second half and after the 15 min light pulse was significantly lower compared to the control animals (Figure 4b, red trace). This calcium activity was significantly decreased in shCdk5 mice during the last 5 min of the light pulse as compared to the baseline levels (see Methods; Figure 4c; Figure 4—figure supplement 1d). Finally, mice were sacrificed, and the GFP signal was assessed by immunostaining to verify virus expression in the SCN (Figure 4d). The outlined circle in red indicates where the fibers were located. Taken together, these results indicate that Cdk5 modulates Ca2+-mediated neuronal signaling.
 
-## Cdk5 regulates the DARPP32-PKA axis
+### Cdk5 regulates the DARPP32-PKA axis
 
 The cAMP-activated PKA signaling pathway, which leads to phosphorylation of CREB, plays a pivotal role in regulating phase delays in photic resetting (Gillette and Mitchell, 2002; Sterniczuk et al., 2014). Since the PKA signaling pathway can be induced in vivo (Ginty et al., 1993; Tischkau et al., 2000) and in vitro (Yagita and Okamura, 2000), we investigated whether Cdk5 could play a role in PKA-mediated CREB phosphorylation. To this end, we employed Förster resonance energy transfer (FRET), a widely used method to investigate molecular interactions between proteins such as CREB and CBP in living cells (Brenna et al., 2021; Friedrich et al., 2010).
 
 We transfected control (wt) and Cdk5 knock-out (Cdk5 ko) NIH 3T3 cell lines (Brenna et al., 2019) with ICAP (an indicator of CREB activation due to phosphorylation) and stimulated the cells with forskolin in the presence of Ca2+. The difference in phosphorylation before and after forskolin treatment of the CREB domain in the reporter decreases the FRET signal normally between 10 and 30 min, while no difference in phosphorylation brings the FRET signal back toward baseline. We observed that the FRET signal in control cells strongly decreased between 10 and 30 min after the stimulus compared to baseline (Figure 5a, blue trace, the first 5 min are ignored, because they represent the diffraction of the solvent DMSO). In contrast, the FRET signal in Cdk5 ko cells rose toward baseline after an initial decline in response to forskolin (Figure 5a, red trace). This indicated that Cdk5 is involved in the phosphorylation of CREB. Notably, the forskolin solvent DMSO can’t stimulate CREB phosphorylation on its own (Figure 5—figure supplement 1a).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/97029/elife-97029-fig5-v2.jpg)
+
+**Figure 5.:** (a) Top: Scheme of the forskolin-PKA-CREB signaling pathway. Bottom: Förster resonance energy transfer (FRET)/CFP signal ratio changes in response to forskolin treatment in NIH 3T3 cells transfected with either a scr control (blue) or shCdk5 (red) expression construct. Values are the mean ± SD. Two-way ANOVA revealed a significant difference between the curves, n=3, ****p<0.0001. (b) Top: Scheme of the forskolin-PKA-CREB signaling pathway and calcium signaling. Bottom: FRET/CFP signal ratio changes in response to forskolin treatment in NIH 3T3 cells with the addition of Ca2+ (blue), without the addition of Ca2+ (salmon colored), and with the addition of Ca2+ and EGTA (orange). Values are the mean ± SD. Two-way ANOVA revealed a significant difference between the gray and blue/orange curves, n=3, ****p<0.0001. (c) Scheme of CDK5-DARPP32-PKA pathway. (d) Immunohistochemistry on the suprachiasmatic nucleus (SCN) of control (scr) and shCdk5 mice using an antibody recognizing phosphorylated Thr-75 of DARPP32 (p-DARPP32) before and after a light pulse at zeitgeber time (ZT) 14. The red color shows p-DARPP32 and the blue color represents DAPI-stained nuclei of SCN cells. Scale bar: 10 µm. The right panel shows the quantification of the p-DARPP32 signal. Values are the mean ± SEM. Unpaired t-test with Welch’s correction, n=3, **p<0.01. (e) Immunohistochemistry on the SCN of control (scr) and shCdk5 mice using an antibody recognizing phosphorylated Thr-197 of PKA (p-PKA) before and after a light pulse at ZT14. The red color shows p-PKA and the blue color represents DAPI-stained nuclei of SCN cells. Scale bar: 20 µm. The right panel shows the quantification of the p-PKA signal. Values are the mean ± SEM. Unpaired t-test with Welch’s correction, n=3, *p<0.05, **p<0.01. (f) Immunohistochemistry on the SCN of control (scr) and shCdk5 mice using an antibody recognizing phosphorylated Thr-197 of PKA (p-PKA) and Cav3.1 before and after a light pulse at ZT14. The red color shows p-PKA, the green color Cav3.1, and the blue color represents DAPI-stained nuclei of SCN cells. The yellow color signifies the co-localization of PKA and Cav3.1. The stripes on the left and bottom of each micrograph show the z-stacks to confirm co-localization. Scale bar: 10 µm. The right panel shows the quantification of relative p-PKA/Cav3.1. Values are the mean ± SEM. Unpaired t-test with Welch’s correction, n=3, *p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97029/elife-97029-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Immunoprecipitation of cAMP response element-binding protein (CREB) and low magnification of suprachiasmatic nucleus (SCN) stained with p-DARPP32. (a) FRET/CFP signal ratio changes with DMSO treatment in NIH 3T3 cells transfected with either an scr control (red) or shCdk5 (blue) expression construct. Values are the mean ± SD. Two-way ANOVA revealed no difference between the curves, n=3. (b) Immunoprecipitation (IP) of CREB from SCN tissue at zeitgeber time (ZT) 14 before and after a light pulse. Immunoblot (IB) shows no interaction with p-PKA, IB: CREB loading control. (c) IP of CREB from SCN tissue at ZT14 before and after a light pulse. IB shows interaction with p-CaMKIV, IB: CREB loading control. (d) Immunohistochemistry on the SCN of control (scr) and shCdk5 mice using an antibody recognizing p-DARPP32 before and after a light pulse at ZT14. The red color shows p-DARPP32 and the blue color represents DAPI-stained nuclei of SCN cells. Scale bar: 250 µm. (e) Quantification of nuclear p-DARPP32 signal. Values are the mean ± SEM. Unpaired t-test with Welch’s correction, n=3, *p<0.05.
 
 Previous studies have described that Ca2+-mediated CREB transcription of target genes requires PKA activity (Impey et al., 1998). However, it is not clear whether there is a parallel (synergistic) relationship between PKA and Ca2+ signaling pathways or whether they are sequentially dependent on each other (Figure 5b, cartoon model). To address this question, we performed the following FRET experiment. NIH 3T3 cells were stimulated with forskolin in the presence of Ca2+ with EGTA (Ca2+ chelator) (Figure 5b, red line), without EGTA (Figure 5b, blue line) or completely depleted of Ca2+ (Figure 5b, orange line). We observed that under normal conditions the FRET signal decreased, comparable to the signal seen in Figure 5a, indicating higher Ser-133 KID phosphorylation compared to the baseline (Figure 5b, blue line). When we added EGTA (removing Ca2+), the FRET signal increased to the baseline level after forskolin treatment (Figure 5b, red line). The cells depleted of Ca2+ were also not responsive to the forskolin stimulus, as the FRET signal moved toward the baseline level within 30 min (Figure 5b, orange line). Together, our results indicate that CREB phosphorylation is modulated by Cdk5 via Ca2+ signaling, as suggested in Figure 3. Interestingly, PKA did not appear to directly phosphorylate CREB, as CREB did not pull down p-PKA in an immunoprecipitation experiment. In contrast, p-CaMKIV did interact with CREB (Figure 5—figure supplement 1b and c), suggesting that CREB is most likely phosphorylated by CaMKIV, which is probably indirectly regulated by PKA activity.
 
@@ -78,9 +118,17 @@ Next, we aimed to investigate what the possible pathway could be through which P
 
 Non-phosphorylated DARPP32 promotes PKA activity, characterized by phosphorylation at Thr-197 in the catalytic site of PKA (Yonemoto et al., 1993; Cauthron et al., 1998). Therefore, we asked whether decreased levels of p-DARPP32 after the light stimulus at ZT14 could inversely correlate with the phosphorylation state of PKA. We performed immunostaining on coronal brain sections containing the SCN using an antibody recognizing the phosphorylated Thr-197 of PKA. We observed that PKA phosphorylation significantly increased after the light pulse in the SCN tissue obtained from control (scr) mice (Figure 5e, right panel, blue bars). However, in SCN from shCdk5 mice, the phosphorylation level was already elevated before the light pulse compared to scr control (Figure 5e, left panels, top micrographs), and it was also sustained after the light pulse (Figure 5e, left panels, bottom micrographs, right panel, red bars). Our results indicate that Cdk5 gates PKA phosphorylation induced by the light pulse at ZT14. Many observations indicate that active PKA can stimulate the Ca2+ influx through Cav3 T-type voltage-gated channels, including Cav3.1 (Chemin et al., 2007; Harraz and Welsh, 2013). The molecular mechanism normally requires physical interaction between the channel and PKA, followed by phosphorylation, which influences the gating properties (Lory et al., 2020). Therefore, we performed a co-immunostaining in the same SCN sections collected before (Figure 3) to detect both Cav3.1 and phospho-PKA (the active form). We observed that the co-localization between Cav3.1 and phospho-PKA dramatically increased after the light pulse in the SCN tissue of control (scr) mice (Figure 5f, scr left panels yellow color, and blue bars in the right panel). Interestingly, the co-localization level of the two proteins was already high in the shCdk5 SCN tissue before the light pulse, compared to controls (Figure 5f scramble vs. shCdk5, left panel, top micrographs). The co-localization level between Cav3.1 and phospho-PKA in the shCdk5 tissues was not influenced by the light pulse (Figure 5f, right panel, red bars). Altogether our results suggest that Cdk5 gates the PKA-Cav3.1 interaction in response to the light signal at ZT14 in an indirect way via DARPP32.
 
-## Cdk5 affects light-induced gene expression
+### Cdk5 affects light-induced gene expression
 
 Light perceived in the dark period leads not only to phase shifts but also induces immediate early genes and certain clock genes in the SCN (Rusak et al., 1990; Albrecht et al., 1997; Shigeyoshi et al., 1997; Kornhauser et al., 1990; Honma et al., 2002). This process involves the PKA-CaMK-CREB signaling pathway (reviewed in Golombek and Rosenstein, 2010). Therefore, we investigated whether Cdk5 is involved in the signal transduction process to induce immediate early genes and clock genes in the SCN in response to light. To this end, we performed a time-course profile of light-induced genes and immediate early genes. We collected SCN from mice that received a nocturnal light pulse at ZT14 at different time points over 2 hr (Figure 6).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/97029/elife-97029-fig6-v2.jpg)
+
+**Figure 6.:** Relative mRNA values are represented as blue bars for scr control animals and as red bars for shCdk5 mice. The values were determined 0, 0.5, 1, and 2 hr after a light pulse (LP) given at zeitgeber time (ZT) 14. (a) Induction of Per1 mRNA expression by light with a maximum of 1 hr after light in scr control animals. In contrast, Per1 is not induced in shCdk5 SCN. Scr: 0 hr: 0.44±0.01, 0.5 hr: 0.65±0.12, 1 hr: 1.12±0.19, 2 hr: 0.44±0.01; shCdk5: 0 hr: 0.44±0.01, 0.5 hr: 0.44±0.01, 1 hr: 0.44±0.01, 2 hr: 0.77±0.18. Values are the mean ± SEM. Unpaired t-test, n=3, *p<0.05. (b) Per2 mRNA expression is not induced by light neither in scr controls nor in shCdk5 animals. Scr: 0 hr: 1.04±0.16, 0.5 hr: 0.95±0.10, 1 hr: 0.83±0.10, 2 hr: 0.96±0.07; shCdk5: 0 hr: 1.01±0.05, 0.5 hr: 1.07±0.10, 1 hr: 1.04±0.14, 2 hr: 1.04±0.12. Values are the mean ± SEM. Unpaired t-test, n=3. (c) Induction of Dec1 mRNA expression by light with a maximum at 1 hr after light in scr control animals. In contrast, Dec1 is not induced in shCdk5 SCN. Scr: 0 hr: 1.87±0.37, 0.5 hr: 3.32±0.75, 1 hr: 4.25±0.49, 2 hr: 3.13±0.34; shCdk5: 0 hr: 1.96±0.34, 0.5 hr: 2.13±0.51, 1 hr: 1.87±0.07, 2 hr: 2.32±0.40. Values are the mean ± SEM. Unpaired t-test, n=3, *p<0.05. (d) Dec2 mRNA expression is not induced by light neither in scr controls nor in shCdk5 animals. Scr: 0 hr: 1.93±0.29, 0.5 hr: 1.94±0.25, 1 hr: 1.75±0.49, 2 hr: 2.11±0.07; shCdk5: 0 hr: 1.94±0.23, 0.5 hr: 1.58±0.07, 1 hr: 1.61±0.25, 2 hr: 1.90±0.33. Values are the mean ± SEM. Unpaired t-test, n=3. (e) Bmal1 mRNA expression is not induced by light in the SCN of scr control and shCdk5 animals. Scr: 0 hr: 0.60±0.04, 0.5 hr: 0.69±0.06, 1 hr: 0.65±0.05, 2 hr: 0.81±0.12; shCdk5: 0 hr: 0.61±0.14, 0.5 hr: 0.61±0.12, 1 hr: 0.56±0.06, 2 hr: 0.71±0.15. Values are the mean ± SEM. Unpaired t-test, n=3. (f) eGFP mRNA expression is detected in the SCN of scr control and shCdk5 animals demonstrating proper injection of expression constructs (scr: ssAAV-9/2-hSyn1-chl[1x(shNS)]-EGFP-WPRE-SV40p(A), shCdk5: ssAAV-9/2-hSyn1-chl[mouse(shCdk5)]-EGFP-WPRE-SV40p(A)). Scr: 0 hr: 1.04±0.19, 0.5 hr: 1.23±0.22, 1 hr: 0.90±0.07, 2 hr: 1.34±0.34; shCdk5: 0 hr: 1.31±0.28, 0.5 hr: 1.04±0.13, 1 hr: 0.90±0.05, 2 hr: 1.15±0.06. Values are the mean ± SEM. Unpaired t-test, n=3. (g) Induction of Fos mRNA 0.5 hr after the light pulse in both scr controls and shCdk5 SCN. Scr: 0 hr: 0.77±0.07, 0.5 hr: 2.55±0.38, 1 hr: 0.64±0.25, 2 hr: 0.61±0.15; shCdk5: 0 hr: 0.95±0.08, 0.5 hr: 2.57±0.05, 1 hr: 0.68±0.04, 2 hr: 0.74±0.12. Values are the mean ± SEM. Unpaired t-test, n=3, *p<0.05, ***p<0.001. (h) Induction of Egr1 mRNA 0.5 hr after the light pulse in scr control but not shCdk5 SCN. Scr: 0 hr: 1.25±0.38, 0.5 hr: 2.71±0.19, 1 hr: 2.12±0.41, 2 hr: 1.26±0.13; shCdk5: 0 hr: 1.23±0.24, 0.5 hr: 1.77±0.13, 1 hr: 1.16±0.08, 2 hr: 1.18±0.06. Values are the mean ± SEM. Unpaired t-test, n=3, *p<0.05. (i) Sik1 mRNA expression is induced by light in the SCN of scr control but not shCdk5 animals. Scr: 0 hr: 0.29±0.07, 0.5 hr: 0.58±0.02, 1 hr: 0.27±0.14, 2 hr: 0.34±0.07; shCdk5: 0 hr: 0.22±0.03, 0.5 hr: 0.20±0.01, 1 hr: 0.19±0.02, 2 hr: 0.25±0.02. Values are the mean ± SEM. Unpaired t-test, n=3, *p<0.05, **p<0.01. (j) Gem mRNA expression is induced by light in the SCN of scr control but not shCdk5 animals. Scr: 0 hr: 0.70±0.07, 0.5 hr: 0.86±0.05, 1 hr: 1.38±0.11, 2 hr: 0.94±0.11; shCdk5: 0 hr: 1.05±0.24, 0.5 hr: 1.08±0.03, 1 hr: 1.13±0.07, 2 hr: 0.93±0.05. Values are the mean ± SEM. Unpaired t-test, n=3, *p<0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97029/elife-97029-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Vip mRNA expression is not induced by light in the SCN of scr control and shCdk5 animals. Scr: 0 hr: 1.92±0.39, 0.5 hr: 1.85±0.20, 1 hr: 1.51±0.19, 2 hr: 2.15±0.82; shCdk5: 0 hr: 2.51±0.40, 0.5 hr: 2.05±0.22, 1 hr: 1.59±0.17, 2 hr: 2.13±0.17. Values are the mean ± SEM. Unpaired t-test, n=3. (b) Relative mRNA values are represented as blue bars for scr control animals and as red bars for Per2Brdm1 mice. The values were determined 0 and 0.5 hr after a light pulse (LP) was given at zeitgeber time (ZT) 14. Induction of Per1 mRNA expression by light 0.5 hr after light in wt control animals. In contrast, Per1 is not induced in Per2Brdm1 SCN. wt: 0 hr: 0.93±0.07, 0.5 hr: 2.29±0.24; Per2Brdm1: 0 hr: 1.00±0.28, 0.5 hr: 0.98±0.11. Values are the mean ± SEM. Unpaired t-test, n=3, **p<0.01. (c) Induction of Dec1 mRNA expression 0.5 hr after light in wt control animals. In contrast, Dec1 is not induced in the Per2Brdm1 SCN. wt: 0 hr: 1.66±0.04, 0.5 hr: 3.35±0.14; Per2Brdm1: 0 hr: 1.72±0.05, 0.5 hr: 1.69±0.16. Values are the mean ± SEM. Unpaired t-test, n=3, **p<0.01. (d) Relative mRNA values are represented as blue bars for control wild-type (wt) cells and as red bars for Cdk5 knock-out (Cdk5 ko) cells. The values were determined 0, 0.5, 1, and 2 hr after forskolin treatment. Induction of Per1 mRNA expression is maximal 1 hr after forskolin treatment in wt cells, but not in Cdk5 ko cells. Wt: 0 hr: 1±0.36, 0.5 hr: 1.34±0.30, 1 hr: 5.48±0.81, 2 hr: 2.85±0.28; Cdk5 ko: 0 hr: 1±0.10, 0.5 hr: 1.03±0.17, 1 hr: 1.76±0.25, 2 hr: 2.02±0.35. Values are mean ± SD. Unpaired t-test, *p<0.05, **p<0.01, n=3. (e) Per2 mRNA expression is not induced neither in wt cells nor in Cdk5 ko cells. Wt: 0 hr: 1±0.10, 0.5 hr: 1.32±0.21, 1 hr: 1.07±0.14, 2 hr: 1.38±0.05; Cdk5 ko: 0 hr: 1±0.13, 0.5 hr: 1.15±0.13, 1 hr: 1.12±0.09, 2 hr: 1.23±0.06. Values are mean ± SD. Unpaired t-test, n=3. (f) Induction of Fos mRNA expression is maximal 0.5 hr after forskolin treatment in wt cells, and in Cdk5 ko cells. Wt: 0 hr: 1±0.21, 0.5 hr: 4.42±0.35, 1 hr: 1.53±0.49, 2 hr: 1.15±0.08; Cdk5 ko: 0 hr: 1±0.21, 0.5 hr: 4.12±0.71, 1 hr: 1.64±0.09, 2 hr: 1.15±0.32. Values are mean ± SD. Unpaired t-test, n=3.
 
 In agreement with previous studies, Per1 and Dec1 mRNA expression was induced by light, peaking at 1 hr after the stimulus. Conversely, Per2 and Dec2 mRNA expression was not affected by the light pulse at ZT14 (Figure 6a–d, blue bars) (Shigeyoshi et al., 1997; Honma et al., 2002; Olejniczak et al., 2021). Knock-down of Cdk5 abolished this light-driven Per1 and Dec1 gene induction (Figure 6a and c, red bars), indicating the involvement of Cdk5 in the light-driven activation process of these clock genes. As previously reported, expression of the clock gene Bmal1 was not light-inducible (Brenna et al., 2019; von Gall et al., 2003) and was not affected by shCdk5 (Figure 6e). The injection of the control scr and shCdk5 constructs was successful, as demonstrated by the expression of eGFP mRNA in the analyzed SCN (Figure 6f).
 
@@ -128,107 +176,273 @@ Based on this and our previous studies, we propose the following molecular model
 
 ## Methods
 
-## Animals and housing
+### Animals and housing
 
 All mice were housed with chow food (3432PX, Kliba-Nafag) and water ad libitum in transparent plastic cages (267 mm long, ×207 mm wide, ×140 mm high; Techniplast Makrolon type 2 1264C001) with a stainless steel wire lid (Techniplast 1264C116), kept in soundproof ventilated chambers at constant temperature (22 ± 2°C) and humidity (40–50%). All mice were entrained to a 12 hr LD cycle, and the time of day was expressed as ZT (ZT0 lights on, ZT12 lights off). Four-month-old 129/C57BL6 males were used for the experiments. Housing and experimental procedures were performed per the guidelines of the Schweizer Tierschutzgesetz, the declaration of Helsinki, and the ARRIVE guidelines. The state veterinarians of the Cantons of Fribourg and Bern approved the protocol (license numbers: 2021-19-FR; BE45/18; BE21/22).
 
-## Locomotor activity monitoring
+### Locomotor activity monitoring
 
 Locomotor activity parameters were analyzed by monitoring wheel-running activity, as described in Riedel et al., 2018, and calculated using the ClockLab software (Actimetrics). To analyze free-running rhythms, animals were entrained to LD 12:12 and released into constant darkness (DD). The internal period length was determined from a regression line drawn through the activity onsets of 10 days of stable rhythmicity under constant conditions, calculated using the respective inbuilt functions of the ClockLab software (Acquisition Version 3.208, Analysis Version 6.0.36). For better visualization of daily rhythms, locomotor activity records were double-plotted, which means that each day’s activity is plotted twice, to the right and below that of the previous day. For the analysis of light-induced resetting, we used Aschoff type II and I protocols (Jud et al., 2005). For type II, mice maintained in LD 12:12 were subjected to a 15 min light pulse (LP, 500 lux) at ZT10 (no phase shift), 14 (phase delay), and 22 (phase advance). Subsequently, they were released into DD for 10 days, and phase shift was measured. For type I, mice maintained in DD were subjected to a 15 min light pulse at CT 10, 14, or 22. A circadian hour equals 1/24 of the endogenous period (τ), calculated as follows: circadian hour = tau/24 hr. To calculate the CT hours corresponding the ZT, we followed these steps:
 
 The phase shift was determined by fitting a regression line through the activity onsets of at least 7 days under LD conditions before the light pulse and a second line through the activity onsets of at least 7 days under DD after the light pulse. The first 2 days after the administration of the light pulse were not considered for the calculation of the phase shift. The distance between the two regression lines determined the phase shift. Before starting any new protocol, mice were allowed to stabilize their circadian oscillator for 10 days. The corresponding figure legends indicate the number of animals used in the behavioral studies.
 
-## Light pulse and tissue isolation
+### Light pulse and tissue isolation
 
 Light pulse (LP, 500 lux) was given at ZT14, and mice were sacrificed at appropriate indicated times. Brains were collected, and SCN tissue was isolated for western blot or RT-qPCR use. For immunofluorescence experiments, mice were perfused with 4% PFA and cryoprotected in 30% sucrose. Tissue isolation at ZT14 without a light pulse was used as light induction negative control.
 
-## RNA extraction and cDNA synthesis
+### RNA extraction and cDNA synthesis
 
 Total RNA was extracted from confluent 6 cm Petri dishes or frozen SCN tissue using the Microspin RNA II kit (Machery & Nagel, Düren, Germany) according to the manufacturer’s instructions. 0.5 μg of total RNA was converted to single-strand cDNA in a total volume of 10 μL using the SuperScript IV VILO kit (Thermo Fisher Scientific, Waltham MA, USA) according to the manufacturer’s instructions. The samples were diluted to 200 μL with pure water. 5 μL of each sample was mixed with 7.5 μL of KAPA probe fast universal real-time PCR master mix (Merck, Darmstadt, Germany) and 2.5 μL of the indicated primer/probe combinations. For the subsequent real-time PCR, a Rotorgene 6000 machine was used (QIAGEN, Hilden, Germany) and analyzed with the propriety software.
 
-## qPCR primers
+### qPCR primers
 
-## Per1
+#### Per1
 
-## Per2
+#### Per2
 
-## Dec1
+#### Dec1
 
-## Dec2
+#### Dec2
 
-## Bmal1
+#### Bmal1
 
-## eGFP
+#### eGFP
 
-## Fos
+#### Fos
 
-## Egr1
+#### Egr1
 
-## Sik1
+#### Sik1
 
-## Gem
+#### Gem
 
-## Vip
+#### Vip
 
-## Tprkb (normalization probe for Tprkb)
+#### Tprkb (normalization probe for Tprkb)
 
-## Atp5h (normalization probe for Atp5h)
+#### Atp5h (normalization probe for Atp5h)
 
-## Sirt2 (normalization probe for Sirt2)
+#### Sirt2 (normalization probe for Sirt2)
 
-## Nono (normalization probe for Nono)
+#### Nono (normalization probe for Nono)
 
-## Immunofluorescence
+### Immunofluorescence
 
 SCN cryosections (40 µM) were placed in a 24-well plate, washed three times with 1× TBS (0.1 M Tris/0.15 M NaCl) and 2× SSC (0.3 M NaCl/0.03 M tri-Na-citrate pH 7). Antigen retrieval was performed with 2× SSC heating to 85°C for 30 min. Then, sections were washed twice in 2× SSC and three times in 1× TBS pH 7.5 before blocking them for 1.5 hr in 10% fetal bovine serum (Gibco)/0.1% Triton X-100/1× TBS at room temperature (RT). If the recipient species for some raised antibody was the mouse, we performed a Mouse on Mouse (MOM; Ab269452) blocking (2 hr) before 10% FBS to block endogenous mouse immunoglobulins in a mouse tissue section. After the blocking, the primary antibodies (Table 1), diluted in 1% FBS/0.1% Triton X-100/1× TBS, were added to the sections and incubated overnight at 4°C. The next day, sections were washed with 1× TBS and incubated with the appropriate fluorescent secondary antibodies diluted 1:500 in 1% FBS/0.1% Triton X-100/1× TBS for 3 hr at RT (Alexa Fluor 488-AffiniPure Donkey Anti-Rabbit IgG (H+L) no. 711-545-152, Lot: 132876, Alexa Fluor 647-AffiniPure Donkey Anti-Mouse IgG (H+L) no. 715-605-150, Lot: 131725, Alexa Fluor 647-AffiniPure Donkey Anti-Rabbit IgG (H+L) no. 711-602-152, Lot: 136317 and all from Jackson ImmunoResearch). Tissue sections were stained with DAPI (1:5000 in PBS; Roche) for 15 min. Finally, the tissue sections were rewashed twice in 1× TBS and mounted on glass microscope slides. Fluorescent images were taken using a confocal microscope (Leica TCS SP5), and pictures were taken with a magnification of ×63 with or without indicated additional zoom. Images were processed with the Leica Application Suite Advanced Fluorescence 2.7.3.9723. Immunostained sections were quantified using ImageJ version 1.49. Statistical analysis was performed on three animals per treatment.
 
-## AAV production and stereotaxic injections
+**Table 1.**
+ Antibodies used for the immunostainings.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Species</th>
+      <th>Company</th>
+      <th>Catalog number</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-Cdk5 clone 2H6</td>
+      <td>Mouse</td>
+      <td>Origene</td>
+      <td>CF500397</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Anti-GFP</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>ab6556</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Anti-Creb</td>
+      <td>Rabbit</td>
+      <td>Cell Signaling</td>
+      <td>D76D11</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Anti-Creb (pSer133)</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>Ab32096</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Anti-CaMKII</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>Ab52470</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Anti-CaMKII (pThr286)</td>
+      <td>Mouse</td>
+      <td>Invitrogen</td>
+      <td>MA1-047</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Anti-CaMKIV</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>Ab3557</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Anti-CaMKIV (pThr196/200)</td>
+      <td>Rabbit</td>
+      <td>Invitrogen</td>
+      <td>PA5-105011</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Anti-CaV3.1</td>
+      <td>Rabbit</td>
+      <td>Invitrogen</td>
+      <td>PA5-50635</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Anti-Calmodulin</td>
+      <td>Mouse</td>
+      <td>Invitrogen</td>
+      <td>MA3-917</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Anti-PKA (pT197)</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>Ab75991</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Anti-Darpp32 (pThr75)</td>
+      <td>Rabbit</td>
+      <td>Invitrogen</td>
+      <td>PA5-105037</td>
+      <td>1:100</td>
+    </tr>
+  </tbody>
+</table>
+
+### AAV production and stereotaxic injections
 
 Experiments were performed as previously described (Brenna et al., 2019). Stereotaxic injections were performed on 4- to 5-month-old mice under isoflurane anesthesia using a stereotaxic apparatus (Stoelting). The brain was exposed by craniotomy, and the Bregma was used as a reference point for all coordinates. AAVs were injected bilaterally into the SCN (Bregma: anterior-posterior [AP] − 0.40 mm; medial-lateral [ML] ±0.00 mm; dorsal-ventral (DV) – 5.7 mm, angle ±3°) using a hydraulic manipulator (Narishige: MO-10 one-axis oil hydraulic micromanipulator, http://products.narishige-group.com/group1/MO-10/electro/english.html) at a rate of 40 nL/min through a pulled glass pipette (Drummond, 10 µL glass micropipette; Cat. number: 5-000-1001-X10). The pipette was first raised 0.1 mm to allow the spread of the AAVs and later withdrawn 5 min after the end of the injection. After surgery, mice were allowed to recover for 2 weeks and entrained to LD 12:12 before behavior and molecular investigations. Based on health after surgery, sick animals were excluded. Virus injected animals that did not show shorter period were excluded (injection probably not correct).
 
 The injected viruses were:
 
-## Protein extraction from SCN tissue
+### Protein extraction from SCN tissue
 
 The protocol was a modified version of what was published before (Brenna et al., 2021). Isolated SCNs obtained from four different mice were pooled according to the indicated condition (either dark or 15 min after the light pulse). The pooled tissues were frozen in liquid N2 and resuspended in a brain-specific lysis buffer (50 mM Tris-HCl pH 7.4, 150 mM NaCl, 0.25% SDS, 0.25% sodium deoxycholate, 1 mM EDTA). They were homogenized using a pellet pestle, kept on ice for 30 min and vortexed for 30 s, followed by N2 freezing. Frozen samples were left to melt on ice. The samples were sonicated (10 s, 15% amplitude) and centrifuged for 20 min at 16,000×g at 4°C. The supernatant was collected in new tubes, and the pellet was discarded.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 The protocol was described before (Brenna et al., 2019). The protein extract was diluted with the appropriate lysis buffer in a final volume of 250 µL and immunoprecipitated using the indicated antibody (ratio 1:50). The reaction was kept at 4°C overnight on a rotary shaker. The day after, samples were captured with 50 µL of 50% (wt/vol) protein-A agarose beads (Roche), and the reaction was kept at 4°C for 3 hr on a rotary shaker. Before use, beads were washed thrice with the appropriate protein buffer and resuspended in the same buffer (50% wt/vol). The beads were collected by centrifugation and washed three times with NP-40 buffer (100 mM Tris-HCl pH 7.5, 150 mM NaCl, 2 mM EDTA, 0.1% NP-40). After the final wash, beads were resuspended in 2% SDS 10%, glycerol, 63 mM Tris-HCl pH 6.8, and proteins were eluted for 15 min at RT. Laemmli buffer was finally added, and samples were boiled for 5 min at 95°C and loaded onto 10% SDS-PAGE gels.
 
-## Western blot
+### Western blot
 
 Circa 40 µg of protein was loaded onto 10% SDS-PAGE gel and run at 100 V for 2 hr. Protein migration was followed by a semidry transfer (40 mA, 1 hr 30 s) using Hybond ECL nitrocellulose. We subsequently performed red Ponceau staining (0.1% of Ponceau S dye and 5%) on the membrane to confirm the successful transfer. The list of antibodies used in the paper is shown in Table 2. The membrane was washed with TBS 1×/Tween 0.1% and blocked with TBS 1×/BSA 5%/Tween 0.1% for 1 hr. After washing, the membrane was blotted with the appropriate primary antibodies overnight. The day after, membranes were washed three times with TBS 1×/Tween 0.1%, followed by secondary antibody immunoblotting for 1 hr at room temperature. The densitometric signal was digitally acquired with the Azure Biosystem.
 
-## In vitro kinase assay using immunoprecipitated Cdk5 from SCN
+**Table 2.**
+ Antibodies used for the western blots.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Species</th>
+      <th>Company</th>
+      <th>Catalog number</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-Cdk5</td>
+      <td>Rabbit</td>
+      <td>Cell Signaling</td>
+      <td>D1F7M</td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Anti-Creb</td>
+      <td>Rabbit</td>
+      <td>Cell Signaling</td>
+      <td>D76D11</td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Anti-Creb (pSer133)</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>Ab32096</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Anti-PKA (pT197)</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>Ab75991</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Anti-p35</td>
+      <td>Rabbit</td>
+      <td>Invitrogen</td>
+      <td>MA5-14834</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Anti-CaMKIV (pThr196/200)</td>
+      <td>Rabbit</td>
+      <td>Invitrogen</td>
+      <td>PA5-105011</td>
+      <td>1:1000</td>
+    </tr>
+  </tbody>
+</table>
+
+### In vitro kinase assay using immunoprecipitated Cdk5 from SCN
 
 The protocol is the same as before (Brenna et al., 2019). CDK5 was immunoprecipitated (4°C overnight with 2× Protein A agarose [Sigma-Aldrich]) from SCN samples at ZT14 in the dark or after a light pulse (LP, circa 500 lux) of 15 min. After immunoprecipitation, samples were diluted in a washing buffer and split into two halves. One-half of the IP was used for an in vitro kinase assay. Briefly, 1 µg of histone H1 (Sigma-Aldrich) was added to the immunoprecipitated CDK5. Assays were carried out in reaction buffer (30 mM HEPES, pH 7.2, 10 mM MgCl2, and 1 mM DTT) containing [γ-32P] ATP (10 Ci) at 30°C for 1 hr and then terminated by adding SDS sample buffer and boiling for 5 min. Samples were subjected to 15% SDS-PAGE, stained by Coomassie Brilliant Blue, and dried, and then phosphorylated histone H1 was detected by autoradiography. The other half of the IP was used for western blotting to determine the total CDK5 immunoprecipitated from the SCN samples. The following formula was used to quantify the kinase activity at each time point: ([32P] H1/total H1)/CDK5 IP protein.
 
-## Cell culture
+### Cell culture
 
 NIH3T3 wt and CRISPR/Cas9 Cdk5 ko (Brenna et al., 2019) mouse fibroblast cells (ATCCRCRL-1658) were maintained in Dulbecco’s modified Eagle’s medium (DMEM), containing 10% fetal calf serum and 100 U/mL penicillin-streptomycin at 37°C in a humidified atmosphere containing 5% CO2. For any experiment, cells were synchronized with forskolin (100 µM).
 
-## Surgical procedure for fiber photometry recordings
+### Surgical procedure for fiber photometry recordings
 
 Animals previously infected either with AAV9-hSyn1-chI[1x(shNS)]-jGCaMP7b-WPRE-SV40p(A) (scramble) or AAV9-hSyn1-chI[mouse(shCdk5)]-jGCaMP7b -WPRE-SV40p(A) (shCDK5) were injected with Metacam (Meloxicam, 5 mg/kg s.c.) for analgesia, then anesthetized with 1.5–2% isoflurane/O2 mix. Mice were placed in a Kopf digital stereotactic frame. Their body temperature was kept constant at 37°C via a feedback-coupled heating device (Panlab/Harvard Apparatus), and their eyes were covered with ointment (Bepanthen Augen- und Nasensalbe, Bayer). After the skin incision (formerly prepared aseptically), the skull bone was cleaned with saline to remove the remaining tissue. A small craniotomy to target the SCN was drilled into the skull (Micro-Drill from Harvard Apparatus with burrs of 0.7 mm diameter from Fine Science Tools), and the dura was carefully removed. An optical fiber implant (400 μm, 0.5 NA Core Multimode Optical Fiber, FT400ERT, inserted into ceramic ferrules, 2.5 mm OD; 440 μm ID, Thorlabs) was slowly implanted above the SCN to allow for imaging of GCaMP7b signals (AP: +0.40; ML: ±0.0; DV: –5.3; angle ±4°). One stainless steel screw was inserted into the skull over the cerebellum for stability purposes. The implant was then secured to the skull with dental cement (Paladur, Kulzer). After surgical procedures, mice were allowed to recover for 1 week and finally tethered with an optical patch cord.
 
-## Fiber photometry experimental design
+### Fiber photometry experimental design
 
 GCaMP7b was excited with a blue LED (Doric, LED driver, assembled with 470 nm) at 480 Hz, and emission was sampled at 2000 Hz with a photodetector (Doric, DFD_FPA_FC) through a fluorescence MiniCube (Doric, ilFMC6_IE(400-410)_E1(460–490)_F1(500–540)_E2(555–570)_F2(580–680)_S) and digitized with a national instruments USB-6002 DAQ device. Fiber photometry recordings were acquired using custom-written scripts in LabVIEW on a computer. All the recordings were started about 15 min before ZT14 to stabilize the fluorescent signal. For every trial at ZT14 a constant light pulse of 10,000 lux (Daylight Lamp) was manually turned on for 15 min (±20 s), and the recording was stopped 15 min after the light was switched off. To allow mice to restore their CT to the 12 hr LD cycle, the intertrial interval was at least 10 days. A patch cord was connected to the light source and the photometry system to align the light pulse to the photometry recording.
 
-## In vivo calcium imaging, data processing, and analysis
+### In vivo calcium imaging, data processing, and analysis
 
 The data were subdivided into control (scramble) and experimental (shCDK5) groups.
 
-The fluorescent signal was demodulated in the frequency band of 470–490 Hz at 10 Hz acquisition rate. Due to GCaMP7b variable photobleaching (i.e. the loss of fluorescence intensity as a function of light exposure), we filtered the demodulated signal using a three order Savitzky-Golay filter (every 100 s), and detrended it using a hug-line. We then calculated the ΔF/F0 as follows:ΔFF0=detrendedsignal−1stpercentile(detrendedsignal)99thpercentile(detrendedsignal)−1stpercentile(detrendedsignal)
+The fluorescent signal was demodulated in the frequency band of 470–490 Hz at 10 Hz acquisition rate. Due to GCaMP7b variable photobleaching (i.e. the loss of fluorescence intensity as a function of light exposure), we filtered the demodulated signal using a three order Savitzky-Golay filter (every 100 s), and detrended it using a hug-line. We then calculated the ΔF/F0 as follows:
+
+$$
+\frac{ΔF}{F_{0}}=\frac{detrendedsignal−1^{st}percentile(detrendedsignal)}{99^{th}percentile(detrendedsignal)−1^{st}percentile(detrendedsignal)}
+$$
 
 Finally, the ΔF/F0 was cut to the light pulse as follows: (a) 5 min before the light pulse, (b) 15 min during the light pulse, and (c) 15 min after the light. To exclude differences in the duration of the light pulse (±20 s), the period analyzed was of 14 min. All data processing was performed using custom-written MATLAB scripts.
 
-## Live FRET imaging
+### Live FRET imaging
 
 The protocol was performed as before (Brenna et al., 2021). The following plasmid was used for the project: ICAP-NLS Vector carrying (Brenna et al., 2021). Transfected NIH3T3 cells were starved for 4 hr with 0.5% FBS DMEM. Subsequently, cells were washed twice with 1× HBTS without CaCl2 and MgCl2 (25 mM HEPES, 119 mM NaCl, 6 g/L glucose, 5 mM KCl) and resuspended in the same buffer. NIH3T3 cells were imaged using an inverted epifluorescence microscope (Leica DMI6000B) with an HCX PL Fluotar 5×/0.15 CORR dry objective, a Leica DFC360FX CCD camera (1.4 M pixels, 20 fps), and EL6000 Light Source, and equipped with fast filter wheels for FRET imaging. Excitation filters for CFP and FRET: 427 nm (BP 427/10). Emission filters for CFP: 472 (BP 472/30) and FRET: 542 nm (BP 542/27). Dichroic mirror: RCY 440/520. One frame every 20 s was acquired for at least 90 cycles (0.05 Hz frequency), and the recording lasted at least 30 min. The baseline response in the presence of HBTS was recorded for 2 min and 40 s. At min 3:00, 100 µM forskolin, 2 mM CaCl2, and 2 mM MgCl2 were added to the cells. The time-lapse recordings were analyzed using LAS X software (Leica). Two regions of interest (ROI) were randomly selected for each cell, and 50 cells per plate were chosen randomly. A first ROI delimiting the background and a second ROI including the cell nucleus of NIH3T3 cell expressing NLS KIDKIX were used per cell. The ROI background values were subtracted from the ROI cell values for each channel. For baseline normalization, the FRET ratio R was expressed as a ΔR/R, where ΔR is R–R0, and R0 is the average of R over the last 120 s prior stimulus.
 
-## Statistical analysis
+### Statistical analysis
 
 Sample size determination was done using public G*Power software 3.1.9.7.
 

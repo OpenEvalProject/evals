@@ -9,7 +9,7 @@
 ### Affiliations
 
 1. FireCyte Therapeutics, Inc Boston United States
-2. https://ror.org/03vek6s52 Schepens Eye Research Institute of Mass. Eye and Ear, Department of Ophthalmology, Harvard Medical School Boston United States
+2. Schepens Eye Research Institute of Mass. Eye and Ear, Department of Ophthalmology, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 

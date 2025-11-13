@@ -10,13 +10,13 @@
 
 ### Affiliations
 
-1. https://ror.org/002pd6e78 Harvard Medical School and Wellman Center for Photomedicine, Massachusetts General Hospital Cambridge United States
-2. https://ror.org/042nb2s44 Harvard-MIT Health Sciences and Technology, Massachusetts Institute of Technology Cambridge United States
-3. https://ror.org/042nb2s44 Broad Institute of MIT and Harvard Cambridge United States
-4. https://ror.org/00tdyb139 Department of Systems Biology, Harvard Medical Schoo Boston United States
-5. https://ror.org/00q16t150 Department of Environmental Health, Harvard T. H. Chan School of Public Health Boston United States
-6. https://ror.org/002pd6e78 Center for Regenerative Medicine, Massachusetts General Hospital Boston United States
-7. https://ror.org/002pd6e78 Division of Pulmonary and Critical Care Medicine, Department of Medicine, Massachusetts General Hospital Boston United States
+1. Harvard Medical School and Wellman Center for Photomedicine, Massachusetts General Hospital Cambridge United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+2. Harvard-MIT Health Sciences and Technology, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+3. Broad Institute of MIT and Harvard Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+4. Department of Systems Biology, Harvard Medical Schoo Boston United States ([ROR:00tdyb139](https://ror.org/00tdyb139))
+5. Department of Environmental Health, Harvard T. H. Chan School of Public Health Boston United States ([ROR:00q16t150](https://ror.org/00q16t150))
+6. Center for Regenerative Medicine, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+7. Division of Pulmonary and Critical Care Medicine, Department of Medicine, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
 
 † Corresponding author
 
@@ -38,15 +38,63 @@ Our aim is to bridge the divide between two powerful methodologies - cell behavi
 
 We describe a novel approach to linking live tissue imaging with single-cell profiling (Figure 1a). In order to visualize the airway epithelium at high resolution over days, we explant a mouse trachea and secure it in a custom imaging platform without tissue submersion. This approach minimizes sample movement during imaging, maintains a constant supply of nutrients from below the explant, and preserves an air-liquid interface (ALI), which is required for the maintenance of the normal cellular architecture of the airway epithelium (You et al., 2002; Figure 1a and Figure 1—figure supplement 1a). This platform allows imaging of common and rare cell types in the airway epithelium at high resolution in their native environment (Figure 1—figure supplement 1b). The explant culture also allows an uninjured tracheal epithelium to survive with its native cellular anatomy for weeks with daily high-resolution imaging (Figure 1—figure supplement 1c).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76645/elife-76645-fig1-v2.jpg)
+
+**Figure 1.:** (A) Behavioral transcriptomics workflow, starting with imaging, followed by image analysis to characterize cellular behavior over different time frames, leading to single-cell applications. (B) Airway tissue (trachea) is explanted from a mouse and affixed to a custom platform for long-term air-liquid-interface (ALI) culture and imaging. The platform enables both time-lapse microscopy and downstream single-cell applications. (C) Imaging and image analysis of ciliary beating and mucociliary transport 1 μm spherical beads. (D) Intraepithelial dendritic cells (CD11cCre-MTMG) grow and retract dendrites in real time; scale bar = 5 μm (E) Selected snapshots of cell division during regeneration post-sulfur dioxide (SO2) injury. Epithelial cell divides along its long axis during regeneration (Hertwig’s rule); scale bar = 5 μm. (F) Long-term ALI culture enables imaging of tissue regeneration post-SO2 injury over >12 days. ALI culture enables regeneration of entire epithelial thickness; scale bar = 20 μm. Green = membrane GFP; red = nuclear-tdTomato.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76645/elife-76645-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Detailed schematic of air-liquid interface (ALI) platform for airway tissue imaging. The platform enables the imaging of multiple tissue explants at a time in a controlled environment maintaining ALI, temperature, humidity, and CO2 content. (B) Representative images of airway epithelial cells using different transgenic mouse models including fluorescent reporters for ciliated, club, basal, neuroendocrine, ionocyte, and dendritic cells. Green = cell type-specific GFP reporter; magenta = membrane-tdTomato. Scale bar = 10 μm. (C) Representative two-photon images of the same airway tissue explanted from a membrane-GFP/H2B-mCherry transgenic mouse at day 1 and day 14 in ALI culture. Scale bar = 10 μm. (D) Registration of live imaging with post-fixation-staining imaging using in silico tissue flattening followed by non-rigid 3D registration. Ciliated cells identified by live imaging were found to have low CCSP expression, while cells with high CCSP expression tended to have no cilia.
+
 Discernable cell behaviors have a broad time scale, ranging from milliseconds to days. Thus, we imaged a wide range of cellular behaviors, from rapid fluctuations of ciliary beating and directional mucociliary transport over milliseconds to wholescale regeneration of the airway epithelium, which occurs over days after the injury (Figure 1, c to f, ). Furthermore, this method allows single-cell level registration within tissues that are live-imaged and subsequently fixed and stained, which enables a unique comparison between live fluorescence cellular patterns and immunostains that describe cell identity and function (Figure 1—figure supplement 1d).
 
 Remarkably, this airway imaging platform faithfully recapitulates and captures cellular dynamics of epithelial regeneration from native basal stem cells after an extensive epithelial injury induced by sulfur dioxide (SO2) (Figure 1f and Figure 2—figure supplement 1). In the first 5 days, the basal cells divide, increasing cellular density and reforming the pseudostratified epithelium. In the next 5–10 days, the epithelium differentiates, leading to the restoration of the full epithelium, including the regeneration of ciliated cells. Complete regeneration requires an air-liquid interface (Figure 1f). Overall, this murine trachea explant ALI culture retains the nearly complete 3D organization and microenvironment of the basal progenitor cells and, therefore, offers a unique model to study organ physiology and regeneration outside of the body.
 
 Continuous time-lapse imaging of the airway epithelium for up to 80 hr after injury (Figure 2a and Figure 2—figure supplement 2a and Video 1) demonstrated changes in cellular architecture over time, including an increase in the average cellular density and epithelial thickness, without apparent phototoxicity (Figure 2—figure supplement 2a). Imaging of trachea explant controls from uninjured mice over 19 hr revealed no cellular displacement in the airway epithelium (Video 2). We examined cell movement using single-cell tracking following segmentation of cell nuclei and particle image velocimetry (PIV) of non-segmented images (Figure 2—figure supplement 2b,c). These analyses revealed a variety of regeneration cellular dynamics inaccessible without live imaging. For example, Hertwig’s Rule predicts that a cell division plane is perpendicular to the long axis of the cell during the preceding interphase (Minc and Piel, 2012). This was established in plants (Besson and Dumais, 2011) and developing simple model organisms (Aigouy et al., 2010; Concha and Adams, 1998; Tsou et al., 2003) but has never been probed in an adult regenerating tissue. We found that the long axis in most cells predicts the cell division axis, while the axis of cellular movement prior to cell division does not (Figure 1e and Figure 2—figure supplement 3a,b).
 
+![Video 1.](https://cdn.elifesciences.org/articles/76645/elife-76645-video1.mp4.jpg)
+
+**Video 1.:** The video was composed by stitching maximum intensity projections of the H2B-mCherry signal from three adjacent areas.
+
+![Video 2.](https://cdn.elifesciences.org/articles/76645/elife-76645-video2.mp4.jpg)
+
+**Video 2.:** The video is composed of maximum-intensity projections of the nuclear tdTomato signal from optical sectioning through the airway epithelium.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/76645/elife-76645-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental design: tracheas are explanted 24 hr post-sulfur dioxide (SO2) injury for continuous time-lapse imaging. (B) Two-photon imaging of trachea epithelium from membrane- GFP, KRT5-H2B-mCherry transgenic mouse. Top image is a stitch of three areas. Bottom image shows displacement vectors over 10 min computed using particle imaging velocimetry (PIV). Scale bar = 50 μm. (C) Computed speed of epithelial cells measured at different time points post-SO2 injury in 22 independent regions from a total of five mice at four different time points (mouse origin is color-coded). Box and whisker plots are superimposed. A two-way ANOVA was run to examine the effect of time post-SO2 injury and different mice on the mean speed determined by PIV. There were 22 ROIs analyzed from five mice over four time points. There was a significant interaction between time and the mean speed, F(2.219, 42.91) = 16.12, p<0.0001, but no significant difference between mouse and mean speed, F(4,17) = 2.193, p=0.113. A Tukey post-hoc test revealed significant pairwise differences between 26 and 50 hr, 26 and 62 hr, 38 and 50 hr, as well as 38 and 62 hr. **p<0.01. (D) Frequency distribution of injury-induced cell movements measured at 26- and 38 hr after injury identifies ‘mover’ and ‘non-mover’ regions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76645/elife-76645-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Quantification of cell density measured post-sulfur dioxide (SO2) injury using membrane-GFP/nuclear- tdTomato mice. Scale bar = 20 μm. n=5, error bars indicate the standard deviation. (B) Long-term imaging of tissue regeneration post-SO2 injury in a submerged culture condition. (C) Comparison of tissue regeneration between air-liquid interface (ALI) and submerged culture. Compared to submerged culture, ALI culture enables regeneration of the full epithelial thickness. Green = membrane GFP; red = nuclear tdTomato. Error bars indicate the 95% confidence intervals. ****p<0.0001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/76645/elife-76645-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Quantification of key parameters quantified by time-lapse imaging of the regenerating epithelium, including speed, epithelial thickness, and cell density. (B) Nuclear segmentation of epithelial cells from KRT5rtTA-H2BmCherry transgenic mouse. (C) Speed of moving cells from time-lapse microscopy computed by particle-imaging-velocimetry (PIV) and single-cell tracking of segmented nuclei. There is no significant difference in the computed speed using different methods.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/76645/elife-76645-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Quantification of cell division behaviors during regeneration. The axis of cell division was found to have minimal correlation (r=0.11) with local movement, (B) but a moderate correlation with the long axis of the cell (r=0.50). (C) Representative movement vectors computed from particle image velocimetry (PIV) analysis for a rapid ‘mover’ and a slow ‘non-mover’ region. (D) Cell movement vectors computed from PIV analysis were fit to a von Mises distribution to compute the circular variance. Box and whisker plots are superimposed. Fast-moving cells had a low circular variance (directional), while slow-moving cells had a high circular variance (no directional preference). ****p<0.0001.
+
 We also found a surprising degree of heterogeneity of collective cellular migration during regeneration throughout the injured airways. In regions that demonstrated rapid cellular movement after an injury, the movement peaked at 26–38 hr after SO2 injury and the speed declined significantly in most regions by 50 hr after injury (Figure 2c). There was a significant interaction between time and the mean speed, but no significant difference between the mouse and mean speed (Figure 2c). Variable migratory behavior of airway epithelial cells has been observed in cell culture models (Kim et al., 2020; Park et al., 2015) but not previously in an intact regenerating airway tissue. We found that the frequency distribution of cellular speed in different regions at 26–38 hr demonstrated large variability ranging from ‘non-mover’ regions (<1.5 μm/hr) to ‘mover’ regions (>4 μm/hr) (Figure 2d). Furthermore, videos with higher temporal resolution revealed that the cells with much slower movements in the ‘non-mover’ regions had no directional preference and oscillated in place, whereas the ‘mover’ regions with faster cellular movements were more uni-directional with packs of cells migrating in waves (Figure 2—figure supplement 3c,d and Video 3).
 
+![Video 3.](https://cdn.elifesciences.org/articles/76645/elife-76645-video3.mp4.jpg)
+
+**Video 3.:** The video was composed of single optical sections through the epithelium at 5 μm above the basement membrane (left) and through the mesenchyme at 5 μm below the basement membrane (right).
+
 Distinct subsets of cells have been theorized to contribute to the regeneration process (Pardo-Saganta et al., 2015; Tadokoro et al., 2014), but it is unclear whether these heterogeneous transcriptional cell states reflect gene expression stochasticity or correlate with unique cell behaviors. To determine the molecular signatures of cells with directional movement compared to regenerating non-moving cells, we marked epithelial regions by photoconversion using the Kaede transgenic mouse model, in which cells change from green to red after exposure to violet light (Tomura et al., 2008). We photoconverted cells at 24 hr after injury, imaged every 6 hr, screened for ‘movers’ with >50 μm displacement (>3 μm/hr) at 18 hr after photoconversion, and then isolated photoconverted epithelial cells by FACS for plate-based scRNA-seq (Figure 3a and Materials and methods). Dimensionality reduction revealed that cells from a ‘moving’ region (M) and a ‘non-moving’ (NM) region cluster separately (Figure 3b). Using unsupervised clustering and cell identity signatures (Methods, Figure 3—figure supplement 1), we found that nearly all the cells in the M region are basal cells, whereas the NM region contains basal and club cells (Figure 3c). We identified the differences in gene expression between the M basal cells and NM basal cells and identified gene signatures that are enriched (FDR <0.05, likelihood-ratio test) either in the M or the NM basal cells (Figure 3c and Figure 3—figure supplement 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/76645/elife-76645-fig3-v2.jpg)
+
+**Figure 3.:** (a) Experimental design: tracheas are explanted 24 hr post-sulfur dioxide (SO2) injury (24 hpi) for continuous time-lapse two-photon imaging. Distinct cellular phenotypes are observed and labeled by photo-conversion for subsequent isolation and transcriptional analysis by full-length single-cell RNA-sequencing. Scale bar = 100 μm (b) Unsupervised clustering of regenerating cells partitions mover and non-mover cell phenotypes. (c) Heatmap of transcriptional signatures of mover and non-mover cells.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76645/elife-76645-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A). Heatmap shows cell-cell correlation, Pearson’s R (color bar) between all 74cells in the dataset. Dendrogram (top) shows the assignment of cells to clusters (color legend). (B). Violin plots show the expression of basal cell marker Krt5 (left), club cell marker Scgb1a1 (center), and the number of genes detected per cell (right), which were used to interpret the clusters. The center cicle indicates the mean and the error bar indicates the 95% confidence interval.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76645/elife-76645-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Principal components analysis (PCA) scatter plot of 42 basal cells (points), showing that the distribution (top and side density histograms) of M and NM basal cells (color legend) is strongly associated with the first principal component. (B) Accuracy (y-axis) of a machine learning (k- nearest neighbor) classifier in distinguishing M from NM basal cells using the top n most differentially expressed genes (x-axis). The high accuracy indicates that M and NM clusters are well separated in transcriptional space.
 
 We hypothesized that the identified phenotypes are a common feature of injury-induced epithelial regeneration. We examined published data of an independent injury model (Plasschaert et al., 2018) and analyzed the prevalence of these signatures during repair after polidocanol injury. As predicted, the M basal cell signature is strongly enriched 24 hr post injury (hpi), declines at 48 hpi and 72 hpi, and returns to baseline at 1 week after injury (all p<10–16, Mann-Whitney U test, Figure 4a). Similarly, the NM signature is decreased at 24 hpi when cell migration is presumed to be active, increases at 48 hpi and 72 hpi when cell migration is presumed to be diminished, and returns to baseline at 1 week post-injury when regeneration is complete (Figure 4a). Furthermore, at 24 hpi we found that scoring basal cells using M and NM signatures segregated basal cells into two statistically distinct cell populations (Figure 4b), indicating that polidocanol regeneration is likely also characterized by these cell phenotypes. To test this possibility, we used unsupervised clustering (Methods) to define two groups of basal cells at 24 hpi and found that these two populations were indeed separately enriched for the M and NM basal cell signatures (Figure 4c), confirming the presence of distinct M and NM basal cells during polidocanol regeneration. Taken together, these findings suggest that distinct M and NM cell behaviors are conserved features of early epithelial regeneration and demonstrate that our live imaging-guided single-cell profiling approach can discover generalizable principles of tissue biology.
 
@@ -66,23 +114,23 @@ This report focuses on cellular behavior in response to injury in the airway epi
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 mT-mG (stock no. 007676), nT-nG (stock no. 023035), CAGs-LSL-rtTA3 (stock no. 029617), and Col1a1-tetO-H2B-mCherry (stock no. 014602), CD11cCre (stock no. 007567), and Ascl1nGFP (stock no 012881) mice were purchased from the Jackson Laboratory. Foxj1Cre (Zhang et al., 2007), KRT5rtTA (Diamond et al., 2000), B1EGFP (Miller et al., 2005), Foxj1CreER (Rawlins and Hogan, 2008), CC10CreER (Rawlins et al., 2009), and Kaede (Tomura et al., 2008) lines were previously described. A line of Membrane-GFP (mG) mice was generated by selecting GFP-positive pups of a Foxj1Cre-mTmG male parent (with mT to mG recombination in the sperm) and backcrossing to WT background to eliminate the Cre allele. The mG line without Cre was crossed to nT-nG to generate the ‘nT-mG’ strain. Mice were maintained in an Association for Assessment and Accreditation of Laboratory Animal Care-accredited animal facility at the Massachusetts General Hospital, and procedures were performed with Institutional Animal Care and Use Committee (IACUC)-approved protocols. Mice of all strains were housed in an environment with controlled temperature and humidity, on 12 hr light-dark cycles, and fed with regular rodent’s chow.
 
-## SO2 injury
+### SO2 injury
 
 SO2 injury model was performed as previously described (Kim et al., 2012; Pardo-Saganta et al., 2015). In brief, mice were exposed to 500  p.p.m. of SO2 for 3  hr 40  min and the trachea was collected 16–24 hr after injury for imaging and explant culture.
 
-## Tracheal explant and tissue ALI culture
+### Tracheal explant and tissue ALI culture
 
 Tracheas were dissected, cleared of connective tissue and adjacent organs, and opened longitudinally along the anterior tracheal wall. The tracheas were placed on ice in DMEM/F-12 Media with Primocin (InVivoGen) and 15 mM HEPES until culture. Trachea explants were then sutured onto a silicone o-ring and placed in a custom-made tissue culture dish over an inverted ALI insert secured in a 60 mm tissue culture dish by PDMS. This approach ensured stability during high-resolution imaging. The media contacted the explant from below through the ALI membrane. The dish was placed in a physiological live imaging chamber (CO2 and temperature-controlled, TokaiHit) on the stage of the two-photon microscope.
 
-## Physiological two-photon imaging
+### Physiological two-photon imaging
 
 Trachea explant imaging was performed on an Olympus FVMPE-RS multiphoton laser scanning microscope equipped with a MaiTai HPDS-O IR pulsed laser (900 nm for GFP and SHG) and INSIGHT X3-OL IR pulsed laser (1100 nm for tdTomato), using a 25 X water immersion lens (NA 1.05). Explants were imaged at time points as indicated in the Figures. For orthogonal view reconstruction, we scanned the trachea with 0.75 µm Z steps. To reimage the same trachea at high resolution at different time points, landmarks such as cartilage rings and vascularity patterns were used as fiducial marks. These fiducial marks were also used for 2D and 3D registration of different time points.
 
-## Image analysis
+### Image analysis
 
 4D images (x, y, z, t) were imported into MATLAB and/or ImageJ for image processing and analysis. Because the curvature of the tissue changes over time, we first normalized each 3D image to generate a flat basement membrane. As the SHG signal is maximal at the basement membrane, we computed the z height of the basement membrane across the image after applying a Gaussian blur (typical σ values: 10–25 μm in xy, 1–4 μm in z). This height was subtracted from the original 3D data to level the basement membrane. MATLAB code for flattening the 3D images is publicly available on Github at https://github.com/sheldonjjlase/matlab/, (copy archived at swh:1:rev:230ca1a3c03039ae553d88c3d3f1286404a34a85) (Kwok, 2022). Other image processing steps including brightness and contrast adjustments, background subtraction, photobleaching correction, pseudocoloring, 3D time-lapse registration, and stitching were performed using built-in functions in ImageJ.
 
@@ -92,29 +140,29 @@ To track individual cells over time-lapse imaging, images were imported into ila
 
 For the automated estimation of cell speed from time-lapse imaging, we performed automated particle imaging velocimetry (PIV). Image sequences were imported into MATLAB and analyzed using the PIVlab plugin (Thielicke and Stamhuis, 2014). A direct Fourier transforms correlation with multiple passes of sizes consisting of 24 μm, 16 μm, and 10 μm was used. This generated displacement vectors arranged in a grid with 10 μm spacing for each sequential pair of images. The average cell speed for each time-point was estimated by computing the average absolute displacement estimated by PIV in each (10 × 10) μm2 region divided by the time between images. To quantify the directionality of cell movement, we computed the circular variance of the displacement vectors generated by PIV analysis.
 
-## Kaede photoconversion
+### Kaede photoconversion
 
 Trachea from Kaede mice (Tomura et al., 2008) were explanted 20 hr after SO2 inhalation injury, sutured onto a silicone O-ring, and secured on an inverted ALI insert in media on ice, and placed on the imaging platform of a FV3000 Olympus Laser Scanning confocal microscope. Selected regions were outlined and photoconverted using the 405 nm laser for 2 min, while both disappearances of KaedeGreen and the appearance of KaedeRed were simultaneously visualized using the 488 nm and the 561 nm lasers, respectively.
 
 To identify regions of movement and no movement, we explanted Kaede tracheas 20 hr after SO2 injury, photoconverted distinct regions with a specific shape, and proceeded with timelapse live imaging, screening for regions with significant shape displacement over time (from epithelial movement) (Figure 3a). After defining whether a region moved or remained non-moving, we excised a trachea fragment, dissociated the fragment into single cells, and used flow-activated cell sorting (FACS) to isolate photoconverted (KaedeRed) epithelial cells. We then proceeded to single-cell RNA sequencing of cells isolated from moving and non-moving regions.
 
-## Cell dissociation and FACS
+### Cell dissociation and FACS
 
 Airway epithelial cells were dissociated using papain solution. Tracheal fragments with photoconverted regions were trimmed and incubated in papain dissociation solution and incubated at 37 °C for 2  hr. After incubation, dissociated tissues were passed through a cell strainer and centrifuged, and pelleted at 500 g for 5  min. Cell pellets were dispersed and incubated with Ovo-mucoid protease inhibitor (Worthington Biochemical, cat. no. LK003182) to inactivate residual papain activity by incubating on a rocker at 4 °C for 20  min. Cells were then pelleted and stained with EpCAM–BV421 (1:50; BD Bioscience, #563214) for 30  min in 2.5% FBS in PBS on ice. After washing, cells were sorted by fluorescence (antibody staining, Kaede-Green, and Kaede-Red) on a BD FACS Aria (BD Biosciences) using FACS Diva software, and analysis was performed using FlowJo (version 10) software.
 
 Single cells were sorted into each well of a 96-well PCR plate containing 5 μl buffer. After sorting, the plate was sealed with a Microseal F, centrifuged at 800 g for 1 min and immediately frozen on dry ice. Plates were stored at −80°C and submitted to a core facility for cDNA library generation, amplification, and sequencing.
 
-## Single-cell sequencing and sequence analysis
+### Single-cell sequencing and sequence analysis
 
 cDNA was generated from single cells in the 96-well plate using the SmartSeq v4 kits (Takara Bio) using 1/4th volume reactions dispensed using a Mantis dispenser (Formulatrix). Samples were amplified using 18 cycles of PCR. Resulting cDNA was then made into Illumina-compatible libraries using the Nextera XT kit (Illumina Inc). Libraries were sequenced on a NextSeq using a Mid Output 150 cycle kit (Illumina Inc) using 75 bp paired-end reads.
 
-## Pre-processing of plate-based scRNA-seq data
+### Pre-processing of plate-based scRNA-seq data
 
 BCL files were converted to merged, de-multiplexed FASTQ files using the Illumina Bcl2Fastq software package v.2.17.1.14. Paired-end reads were mapped to the UCSC mm10 mouse transcriptome using Bowtie (Langmead et al., 2009) with parameters ‘-q–phred33-quals -n 1 -e 99999999 l 25 -I 1 X 2000 a -m 15 S -p 6’, which allows alignment of sequences with one mismatch. Expression levels of genes were quantified as transcript-per-million (TPM) values by RSEM (Li and Dewey, 2011) v.1.2.3 in paired-end mode. For each cell, we determined the number of genes for which at least one read was mapped, and then excluded all cells with fewer than 1,000 or more than 10,000 detected genes, or less than 25% of reads mapping to the transcriptome.
 
 To identify variable genes a logistic regression was fit to the cellular detection fraction, using the total number of transcripts per cell as a predictor. Outliers from this curve are genes that are expressed in a lower fraction of cells than would be expected given the total number of transcripts mapping to that gene, that is, cell-type or state-specific genes. We used a threshold of deviance <−0.15, producing a set of 1910 variable genes.
 
-## Dimensionality reduction by PCA and t-SNE
+### Dimensionality reduction by PCA and t-SNE
 
 We restricted the expression matrix to the subsets of variable genes and high-quality cells noted above, and values were log2-transformed, and then centered and scaled before input to PCA, which was implemented using the R function ‘prcomp’ from the ‘stats’ package. After PCA, significant principal components were identified by inspection of the scree plot. Only scores from the first 20 PCs were used as the input to further analysis.
 
@@ -124,12 +172,12 @@ To identify cell types within the data, hierarchical clustering was used using t
 
 To identify the signature of moving vs non-moving basal cells (Figure 3c) we ran differential expression tests between cells in the Basal cluster between the two conditions (moving and non-moving), and selected genes that were differentially expressed (FDR <0.05). Differential expression tests were carried out using a two-part ‘hurdle’ model to control for both technical quality and mouse-to-mouse variation. This was implemented using the R package MAST (Finak et al., 2015), and p values for differential expression were computed using the likelihood-ratio test. Multiple hypothesis testing corrections was performed by controlling the false discovery rate using the R function ‘p.adjust.’.
 
-## Re-analysis of polidocanol injury dataset
+### Re-analysis of polidocanol injury dataset
 
 Previously published single-cell RNA sequencing data from mouse trachea injured using polidocanol (Plasschaert et al., 2018) was downloaded from the NCBI GEO (GSE102580). All available unique molecular identifier (UMI) counts tables from mice at 24, 48, 72, and 168 hr after injury along with uninjured controls were downloaded. Cell types were determined using the authors provided annotations. To determine the expression of migration-associated genes in the injury response, we scored the Basal cells for the set of genes (Figure 3c) both significantly up- (‘mover’) and down-regulated (‘non-mover’) (Figure 3d). Scoring cells was computed as described previously (Montoro et al., 2018). To obtain a score for a specific set of n genes in a given cell, a ‘background’ gene set was defined to control for differences in sequencing coverage and library complexity. The background gene set was selected for similarity to the genes of interest in terms of expression level. Specifically, the 10 n nearest neighbors in the 2D space defined by mean expression and detection frequency across all cells were selected. The signature score for that cell was then defined as the mean expression of the n signature genes in that cell, minus the mean expression of the 10 n background genes in that cell.
 
 Unsupervised cluster analysis of polidocanol-injured basal cells 24 hr after injury was computed using default settings in Seurat. Briefly, variable genes were selected using the method ‘vst,’ and then PCA was computed using only these genes. Shared-nearest neighbor (SNN)-based clustering was implemented using the ‘FindClusters’ function (resolution parameter = 0.25) using the first 25 principal components as input, resulting in two clusters (Figure 4b).
 
-## Statistical analysis
+### Statistical analysis
 
 Data were compared among groups using the Student’s t-test (unpaired, two-tailed) unless otherwise specified in the Figure legends. Analysis was performed with GraphPad Prism software (version 9.1.0).

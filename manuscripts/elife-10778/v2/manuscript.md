@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.10778.001 Information in a computer is quantified by the number of bits that can be stored and recovered. An important question about the brain is how much information can be stored at a synapse through synaptic plasticity, which depends on the history of probabilistic synaptic activity. The strong correlation between size and efficacy of a synapse allowed us to estimate the variability of synaptic plasticity. In an EM reconstruction of hippocampal neuropil we found single axons making two or more synaptic contacts onto the same dendrites, having shared histories of presynaptic and postsynaptic activity. The spine heads and neck diameters, but not neck lengths, of these pairs were nearly identical in size. We found that there is a minimum of 26 distinguishable synaptic strengths, corresponding to storing 4.7 bits of information at each synapse. Because of stochastic variability of synaptic activation the observed precision requires averaging activity over several minutes. DOI: http://dx.doi.org/10.7554/eLife.10778.001
+Information in a computer is quantified by the number of bits that can be stored and recovered. An important question about the brain is how much information can be stored at a synapse through synaptic plasticity, which depends on the history of probabilistic synaptic activity. The strong correlation between size and efficacy of a synapse allowed us to estimate the variability of synaptic plasticity. In an EM reconstruction of hippocampal neuropil we found single axons making two or more synaptic contacts onto the same dendrites, having shared histories of presynaptic and postsynaptic activity. The spine heads and neck diameters, but not neck lengths, of these pairs were nearly identical in size. We found that there is a minimum of 26 distinguishable synaptic strengths, corresponding to storing 4.7 bits of information at each synapse. Because of stochastic variability of synaptic activation the observed precision requires averaging activity over several minutes.
 
 ## Introduction
 
@@ -35,81 +35,114 @@ An ideal experiment to test for the precision of the changes in synaptic strengt
 
 ## Results
 
-In a 6 x 6 x 5 μm
+In a 6 x 6 x 5 μm3 complete 3DEM from the middle of stratum radiatum in hippocampal area CA1 (Mishchenko et al., 2010; Kinney et al., 2013; see Materials and Methods). We identified 449 synapses, 446 axons and 149 dendrites, which except for one identified branch point, are likely to originate from different neurons based on the size of the reconstructed volume and the obtuse branching angles of dendrites from these neurons (Ishizuka et al., 1995; Megı́as et al., 1997). We measured spine head volume and surface area, surface area of the postsynaptic density (PSD) adjacent to the presynaptic active zone, and spine neck volume, neck length and neck diameter at the 287 spines that were fully contained within the volume. We also quantified the number of vesicles at the 236 spines and presynaptic boutons that were fully contained within the volume. The strong correlations between these metrics, the skewed shape of the frequency histograms, and the number of synapses per unit of volume (Figures 1–3), are consistent with previous observations (Harris and Stevens, 1989; Schikorski and Stevens, 1997; Sorra et al., 2006; Bourne and Harris, 2011; Bourne et al., 2013; Bell et al., 2014). To reduce error, we averaged over multiple independent spine volume measurements for each spine (Figure 3—figure supplement 1). We determined that the relationship between PSD area and spine head volume did not differ significantly across different dendrites (Figure 1—figure supplement 1). The correlation between spine head area and spine head volume accounted for 99% of the variance, despite the wide range in spine head shapes and dimensions (Figure 1A), which suggests that the accuracy of our measurements matched the precision of the spine. We also measured spine neck length, diameter, and volume and found a weak trend between the neck diameter (Figure 1D) and spine head volume but no correlation between neck length (Figure 1E) and spine head volume, consistent with previous studies (Harris and Stevens, 1989; Tønnesen et al., 2014).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig1-v2.jpg)
 
-**Figure 1.:** Strong correlations were found between (A) Spine head area and spine head volume, (B) PSD area and spine head volume, and (C) Spine head area and PSD area. (D) Weak correlation was found between spine neck diameter and spine head volume. No correlation was found between (E) spine neck length and spine head volume and (F) spine neck diameter and spine neck length. Regression lines in red and error bars for each data point represent SEM based on multiple tracers who also edited each spine. Equations are based on the log-log distributions, with r2 values indicated, and n=287 complete spines.DOI: http://dx.doi.org/10.7554/eLife.10778.003
+**Figure 1.:** Strong correlations were found between (A) Spine head area and spine head volume, (B) PSD area and spine head volume, and (C) Spine head area and PSD area. (D) Weak correlation was found between spine neck diameter and spine head volume. No correlation was found between (E) spine neck length and spine head volume and (F) spine neck diameter and spine neck length. Regression lines in red and error bars for each data point represent SEM based on multiple tracers who also edited each spine. Equations are based on the log-log distributions, with r2 values indicated, and n=287 complete spines.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Nine individual dendrites all have similar slopes that are not significantly different showing the uniformity of this comparison across dendrites. Error bars, regression lines and equations as described in Figure 1. DOI: http://dx.doi.org/10.7554/eLife.10778.004
+**Figure 1—figure supplement 1.:** Nine individual dendrites all have similar slopes that are not significantly different showing the uniformity of this comparison across dendrites. Error bars, regression lines and equations as described in Figure 1.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig2-v2.jpg)
 
-**Figure 2.:** (A) All 31,377 presynaptic vesicles. (B) En face view of the 24 docked vesicles (gray spheres) viewed through an axon (green) onto the PSD (red) of example spine (yellow). (C) Number of docked vesicles is correlated strongly with both PSD area and (D) spine head volume, weakly with (E) neck diameter, but is not correlated with (F) spine neck length. Regression lines, SEM (from multiple tracers), and r2 are as in Figure 1 n = 236 complete axonal boutons, each associated with one of the 287 complete spines. One human tracer marked PSDs and vesicles, hence no SEM for these two metrics.DOI: http://dx.doi.org/10.7554/eLife.10778.005
+**Figure 2.:** (A) All 31,377 presynaptic vesicles. (B) En face view of the 24 docked vesicles (gray spheres) viewed through an axon (green) onto the PSD (red) of example spine (yellow). (C) Number of docked vesicles is correlated strongly with both PSD area and (D) spine head volume, weakly with (E) neck diameter, but is not correlated with (F) spine neck length. Regression lines, SEM (from multiple tracers), and r2 are as in Figure 1 n = 236 complete axonal boutons, each associated with one of the 287 complete spines. One human tracer marked PSDs and vesicles, hence no SEM for these two metrics.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig3-v2.jpg)
 
-**Figure 3.:** Distributions of (A) spine head volumes, (B) PSD areas, (C) docked vesicles, (D) spine neck volumes, (E) spine neck diameters, and (F) spine neck lengths are highly skewed with a long tail.DOI: http://dx.doi.org/10.7554/eLife.10778.006
+**Figure 3.:** Distributions of (A) spine head volumes, (B) PSD areas, (C) docked vesicles, (D) spine neck volumes, (E) spine neck diameters, and (F) spine neck lengths are highly skewed with a long tail.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Example segmentation of spine head (yellow), neck (gray), and PSD area (red). (B) Histogram of the measurement error across all spines measured. (C) Measurement error plotted against spine head volume.DOI: http://dx.doi.org/10.7554/eLife.10778.007
+**Figure 3—figure supplement 1.:** (A) Example segmentation of spine head (yellow), neck (gray), and PSD area (red). (B) Histogram of the measurement error across all spines measured. (C) Measurement error plotted against spine head volume.
 
-Next, we analyzed spine volumes according to their axonal connectivity and dendrite origin. Pairs of spines on the same dendrite that received input from the same axon (‘axon-coupled’), were of the same size and had nearly identical head volumes (
+Next, we analyzed spine volumes according to their axonal connectivity and dendrite origin. Pairs of spines on the same dendrite that received input from the same axon (‘axon-coupled’), were of the same size and had nearly identical head volumes (Figure 4). We compared this sample of 10 axon-coupled pairs on the same dendrite (Figure 4B, pairs a-j) to those identified on dendrites from the two additional animals (Bourne et al., 2013), for a total of 17 axon-coupled spine pairs. When plotted against one another, the paired head volumes were highly correlated with slope 0.91, and despite the small sample size, were highly significantly different from random pairings of spines (Figure 4C and Figure 4—figure supplement 1A, KS test p=0.0002). Similarly, there was a strong positive correlation between their paired neck diameters (Figure 4D), PSD areas (Figure 4E), and number of presynaptic docked vesicles (Figure 4F). These features of axon-coupled spines from the same dendrite spanned the distribution of the overall spine population (Figure 3). In contrast, the spine neck lengths (Figure 4G), and neck volumes (Figure 4—figure supplement 1B) of the pairs were not well-correlated indicating that regulation of neck length and neck volume are not important for synaptic strength.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig4-v2.jpg)
 
-**Figure 4.:** (A) Visualization of a pair of spines (gray necks) from the same dendrite (yellow) with synapses (red, indicated by white arrows) on the same axon (black stippling) with presynaptic vesicles (white spheres). (B) All axon-coupled same-dendrite spine pairs (colors as in A, pair c is elaborated in A). Strong correlations with slopes near 1 (dashed diagonal line) occur between paired (C) spine head volumes (slope = 0.91), (D) neck diameters (slope = 0.93), (E) PSD areas (slope = 0.74), and (F) docked vesicles (slope = 0.91); but not (G) spine neck lengths (slope = 0.48). Larger values from each pairing are plotted on the X axis. Regression lines (red) include the 10 a-j pairings (blue points) and 7 pairs from 2 additional animals (green points in (C)), but do not include triplet bouton pairings (k-m, gray points).DOI: http://dx.doi.org/10.7554/eLife.10778.008
+**Figure 4.:** (A) Visualization of a pair of spines (gray necks) from the same dendrite (yellow) with synapses (red, indicated by white arrows) on the same axon (black stippling) with presynaptic vesicles (white spheres). (B) All axon-coupled same-dendrite spine pairs (colors as in A, pair c is elaborated in A). Strong correlations with slopes near 1 (dashed diagonal line) occur between paired (C) spine head volumes (slope = 0.91), (D) neck diameters (slope = 0.93), (E) PSD areas (slope = 0.74), and (F) docked vesicles (slope = 0.91); but not (G) spine neck lengths (slope = 0.48). Larger values from each pairing are plotted on the X axis. Regression lines (red) include the 10 a-j pairings (blue points) and 7 pairs from 2 additional animals (green points in (C)), but do not include triplet bouton pairings (k-m, gray points).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Whole spine volumes of pairs of axon-coupled spines on the same dendrite are highly correlated and significantly different from random pairs (KS test p = 0.018). (B) Correlation of neck volumes of pairs of axon-coupled spines on the same dendrite are not significantly different from random pairs (KS test p = 0.74). Larger value in each pair is plotted on the X axis. Regression lines shown in red. Equations are based on regression of log-log distributions, with r2 values indicated.DOI: http://dx.doi.org/10.7554/eLife.10778.009
+**Figure 4—figure supplement 1.:** (A) Whole spine volumes of pairs of axon-coupled spines on the same dendrite are highly correlated and significantly different from random pairs (KS test p = 0.018). (B) Correlation of neck volumes of pairs of axon-coupled spines on the same dendrite are not significantly different from random pairs (KS test p = 0.74). Larger value in each pair is plotted on the X axis. Regression lines shown in red. Equations are based on regression of log-log distributions, with r2 values indicated.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Distributions represent random pairings of (A) spine head volumes, (B) PSD areas, (C) docked vesicles, (D) neck volumes, (E) neck diameters, and (F) neck lengths, from the population of complete spines in the reconstruction. Larger value in each pair is plotted on the X axis. Regression lines shown in red. Error bars for each data point are not shown for clarity. Equations are based on regression of log-log distributions, with r2 values indicated.DOI: http://dx.doi.org/10.7554/eLife.10778.010
+**Figure 4—figure supplement 2.:** Distributions represent random pairings of (A) spine head volumes, (B) PSD areas, (C) docked vesicles, (D) neck volumes, (E) neck diameters, and (F) neck lengths, from the population of complete spines in the reconstruction. Larger value in each pair is plotted on the X axis. Regression lines shown in red. Error bars for each data point are not shown for clarity. Equations are based on regression of log-log distributions, with r2 values indicated.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** Large white arrows indicate the red PSDs of the spine pairs, the edited necks are dark gray, and the axons are stippled black with vesicles inside. These illustrate how the axon weaves through the neuropil, synapses with two spines yet passes by others.DOI: http://dx.doi.org/10.7554/eLife.10778.011
+**Figure 4—figure supplement 3.:** Large white arrows indicate the red PSDs of the spine pairs, the edited necks are dark gray, and the axons are stippled black with vesicles inside. These illustrate how the axon weaves through the neuropil, synapses with two spines yet passes by others.
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig4-figsupp4-v2.jpg)
 
-**Figure 4—figure supplement 4.:** Figure 4—figure supplement 3.DOI: http://dx.doi.org/10.7554/eLife.10778.012
-
-The coupled triplet of synapses (
+The coupled triplet of synapses (Figure 4C, gray points ‘k, l, m’) are on three different spines along a single dendrite and receive synaptic input from a single multi-synaptic bouton. A larger central spine between two similar in size (Figure 4B, ‘k, l, m’) produces one same size pair (‘k’ ) and two different size pairs (‘ l’, ‘m’). This unusual configuration is probably driven by processes, such as competition for available resources, that differ from the other pairs (Sorra and Harris, 1993; Sorra et al., 1998). As one possibility, perhaps the the size of the larger postsynaptic spine was influenced by the larger size of the available pool of presynaptic vesicles in close proximity to its active zone. Excluding this triple synapse, the median value of the coefficient of variation of volume differences between pairs was CV = 0.083 and was as precise for small synapses as it was for large ones (Figure 5). This precision (i.e. low CV) suggests that accurately maintaining the size of every synapse, regardless of size and strength, could be important for the function, flexibility and computational power of the hippocampus.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig5-v2.jpg)
 
-**Figure 5.:** There is no significant correlation, which implies that paired small synapses are as precisely matched as paired large synapses.DOI: http://dx.doi.org/10.7554/eLife.10778.013
+**Figure 5.:** There is no significant correlation, which implies that paired small synapses are as precisely matched as paired large synapses.
 
-This near-identical size relationship does not hold for axon-coupled spines on different dendrites (
+This near-identical size relationship does not hold for axon-coupled spines on different dendrites (Figure 6B, CV = 0.39, n = 127, example Figure 6A), nor for non-axon-coupled spines on the same or different dendrites (Figures 6E,F, example Figure 6D) -- all cases which would have had different activation histories. The volumes of axon-coupled different-dendrite spines are no different from the volumes of random pairs when plotted against one another (KS test p=0.94, Figure 4—figure supplement 2A, and Figures 6B,C) and the distribution of their sizes was no different from the whole population (KS test p=0.41). The number of docked vesicles for pairs on different dendrites (Figure 6—figure supplement 1B) is not different from random pairings (KS test p=0.08), nor are the neck diameters (Figure 6—figure supplement 1C, KS test p=0.06), nor the neck lengths (Figure 6—figure supplement 1D, KS test p=0.75). The size difference of pairs of axon-coupled spines on the same or different dendrites shows a weak trend with separation distance along the axon or dendrite (Figure 6—figure supplement 2). The sizes of pairs of axon-coupled spines on the same or different dendrites is unaffected by proximity of glia processes to the synapses (Figure 7) (Ventura and Harris, 1999; Witcher et al., 2007), or location of mitochondria in the axon (Billups and Forsythe, 2002).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig6-v2.jpg)
 
-**Figure 6.:** (A) Representative visualization and (B) plot showing lack of correlation between spine head volumes of all pairs of axon-coupled spines on different dendrites (n=127). (C) Similarly, randomly associated pairs of spine head volumes were not correlated. (D) Representative visualization and plots show lack of correlation between spine head volumes from randomly selected pairs (n=127) of non-axon-coupled spines (E) on the same or (F) different dendrites. Color scheme and regression analyses as in Figure 4.DOI: http://dx.doi.org/10.7554/eLife.10778.014
+**Figure 6.:** (A) Representative visualization and (B) plot showing lack of correlation between spine head volumes of all pairs of axon-coupled spines on different dendrites (n=127). (C) Similarly, randomly associated pairs of spine head volumes were not correlated. (D) Representative visualization and plots show lack of correlation between spine head volumes from randomly selected pairs (n=127) of non-axon-coupled spines (E) on the same or (F) different dendrites. Color scheme and regression analyses as in Figure 4.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** There is no correlation between (A) PSD areas, (B) docked vesicles, (C) neck diameters, and (D) neck lengths, in pairs of axon-coupled spines on different dendrites.DOI: http://dx.doi.org/10.7554/eLife.10778.015
+**Figure 6—figure supplement 1.:** There is no correlation between (A) PSD areas, (B) docked vesicles, (C) neck diameters, and (D) neck lengths, in pairs of axon-coupled spines on different dendrites.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** Differences in spine head volumes plotted against: A) Distance along the axon for axon-coupled spines on the same dendrite; B) Distance along the axon for axon-coupled spines on different dendrites; C) Distance along the axon for randomly paired spines; D) Distance along the dendrite for axon-coupled spines on the same dendrite; E) Distance along the dendrite for axon-coupled spines on different dendrites; F) Distance along the dendrite for randomly paired spines.DOI: http://dx.doi.org/10.7554/eLife.10778.016
+**Figure 6—figure supplement 2.:** Differences in spine head volumes plotted against: A) Distance along the axon for axon-coupled spines on the same dendrite; B) Distance along the axon for axon-coupled spines on different dendrites; C) Distance along the axon for randomly paired spines; D) Distance along the dendrite for axon-coupled spines on the same dendrite; E) Distance along the dendrite for axon-coupled spines on different dendrites; F) Distance along the dendrite for randomly paired spines.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig7-v2.jpg)
 
-**Figure 7.:** Proximity of astrocytic glial processes is not significantly correlated with spine head volumes of axon coupled pairs. (A) Histogram of spine head volume for spines that contain a spinule that is engulfed within the glial process (‘ spinule’). (B) Representation of an engulfed spinule. (C) Histogram of spine head volume for spines that are surrounded by and making contact with a glial process (‘ensheathed’). (D) Representation of ‘ensheathed’ spine. (E) Histogram of spine head volume for spines that are proximal but not contacting a glial process (“‘ adjacent”’). (F) Representation of “‘adjacent”’ spine. (G) Histogram of spine head volume for spines that are distant from any glial process. (H) Representation of a spine “‘distant”’ from the glial process. The KS p value is shown on each inset and indicates that none of these distributions differ from the distribution for the whole population of spines.DOI: http://dx.doi.org/10.7554/eLife.10778.017
+**Figure 7.:** Proximity of astrocytic glial processes is not significantly correlated with spine head volumes of axon coupled pairs. (A) Histogram of spine head volume for spines that contain a spinule that is engulfed within the glial process (‘ spinule’). (B) Representation of an engulfed spinule. (C) Histogram of spine head volume for spines that are surrounded by and making contact with a glial process (‘ensheathed’). (D) Representation of ‘ensheathed’ spine. (E) Histogram of spine head volume for spines that are proximal but not contacting a glial process (“‘ adjacent”’). (F) Representation of “‘adjacent”’ spine. (G) Histogram of spine head volume for spines that are distant from any glial process. (H) Representation of a spine “‘distant”’ from the glial process. The KS p value is shown on each inset and indicates that none of these distributions differ from the distribution for the whole population of spines.
 
-We found that spine head volumes ranged in size over a factor of 60 from smallest to largest while the CV of any given size was 0.083 and was constant across the range of sizes. Measurements of these of 20 pairs allowed us to estimate the number of distinct spine sizes, and by extension synaptic strengths, that can be reliably distinguished across this range. Signal detection theory holds that at a Signal-to-Noise Ratio (SNR) of 1, a common detection threshold used in psychophysical experiments, an ideal observer can correctly detect whether a signal is higher or lower than some threshold 69% of the time (
+We found that spine head volumes ranged in size over a factor of 60 from smallest to largest while the CV of any given size was 0.083 and was constant across the range of sizes. Measurements of these of 20 pairs allowed us to estimate the number of distinct spine sizes, and by extension synaptic strengths, that can be reliably distinguished across this range. Signal detection theory holds that at a Signal-to-Noise Ratio (SNR) of 1, a common detection threshold used in psychophysical experiments, an ideal observer can correctly detect whether a signal is higher or lower than some threshold 69% of the time (Green and Swets, 1966; Schultz, 2007). Put another way, if random samples are drawn from two Gaussian distributions whose areas overlap by 31%, an ideal observer will correctly assign a given sample to the correct distribution 69% of the time. Using this logic, we found that ~26 different mean synaptic strengths could span the entire range, assuming CV = 0.083 for each strength level, and a 69% discrimination threshold (Figure 8, see Materials and methods). These 26 distinct strength levels can be represented with 4.7 bits of information (i.e. 24.7 ≈ 26) which means 4.7 bits of information that can be stored at each synapse as synaptic strength. At a discrimination threshold of 76% (corresponding to SNR = 2) there would be ~23 distinct strengths and 4.5 bits of information.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/10778/elife-10778-fig8-v2.jpg)
 
-**Figure 8.:** Over the factor of 60 range in spine head volumes from the data set there are 26 distinguishable intervals of spine sizes with a discrimination probability of 69% for each interval based on signal detection theory (Green and Swets, 1966; Schultz, 2007). The graph illustrates how distinct Gaussian distributions of spine sizes, each with a certain mean size and standard deviation, covers the entire range of spine head sizes on a log scale. The CV of each distribution is a constant value of 0.083 (Figure 5) and the intervals are spaced to achieve a total of 31% overlap with adjacent intervals giving a 69% discrimination threshold (see Materials and Methods). Note that the constant CV observed in the data set (Figure 5) means that the intervals appear uniform in width and spacing on a logarithmic scale. This is a form of non-uniform quantization which efficiently encodes the dynamic range of synaptic strengths at constant precision.DOI: http://dx.doi.org/10.7554/eLife.10778.018
+**Figure 8.:** Over the factor of 60 range in spine head volumes from the data set there are 26 distinguishable intervals of spine sizes with a discrimination probability of 69% for each interval based on signal detection theory (Green and Swets, 1966; Schultz, 2007). The graph illustrates how distinct Gaussian distributions of spine sizes, each with a certain mean size and standard deviation, covers the entire range of spine head sizes on a log scale. The CV of each distribution is a constant value of 0.083 (Figure 5) and the intervals are spaced to achieve a total of 31% overlap with adjacent intervals giving a 69% discrimination threshold (see Materials and Methods). Note that the constant CV observed in the data set (Figure 5) means that the intervals appear uniform in width and spacing on a logarithmic scale. This is a form of non-uniform quantization which efficiently encodes the dynamic range of synaptic strengths at constant precision.
 
-To explain the high precision observed in spine head volumes, we propose that time-window averaging smooths out fluctuations due to plasticity and other sources of variability including differences in the age of the synapses. To set a lower bound on averaging time, we chose to examine neurotransmitter release probability as a single source of variability. Let us first consider release caused by single action potentials, ignoring short-term plasticity. Release of this type can be analyzed using a binomial model in which n presynaptic action potentials, each with a probability pr of releasing one or more vesicles, leads to a mean number of releases μ = n*pr having variance σ2 = n*pr*(1−pr). The coefficient of variation around the mean is CV = σ/μ = sqrt [(1−pr)/(n*pr)] and can be compared with the measured values. Therefore, the number of spikes that are needed to reduce the variability to achieve a given CV is n=(1−pr)/(pr*CV2). Table 1 gives averaging time windows T = n/R, where R is spiking rate of the presynaptic axon, for representative values of pr and a range of spiking rates.10.7554/eLife.10778.019Table 1.Lower bounds on time window for averaging binomially distributed synaptic input to achieve CV = 0.083.DOI: http://dx.doi.org/10.7554/eLife.10778.019Release probability (pr) Presynaptic spikes (n) Averaging time (R = 1 Hz) Averaging time (R = 25 Hz) 0.1130621.8 min52.2 sec0.25819.68 min23.2 sec0.51452.42 min5.8 sec
+To explain the high precision observed in spine head volumes, we propose that time-window averaging smooths out fluctuations due to plasticity and other sources of variability including differences in the age of the synapses. To set a lower bound on averaging time, we chose to examine neurotransmitter release probability as a single source of variability. Let us first consider release caused by single action potentials, ignoring short-term plasticity. Release of this type can be analyzed using a binomial model in which n presynaptic action potentials, each with a probability pr of releasing one or more vesicles, leads to a mean number of releases μ = n*pr having variance σ2 = n*pr*(1−pr). The coefficient of variation around the mean is CV = σ/μ = sqrt [(1−pr)/(n*pr)] and can be compared with the measured values. Therefore, the number of spikes that are needed to reduce the variability to achieve a given CV is n=(1−pr)/(pr*CV2). Table 1 gives averaging time windows T = n/R, where R is spiking rate of the presynaptic axon, for representative values of pr and a range of spiking rates.
+
+**Table 1.**
+ Lower bounds on time window for averaging binomially distributed synaptic input to achieve CV = 0.083.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Release probability (pr)</th>
+      <th>Presynaptic spikes (n)</th>
+      <th>Averaging time (R = 1 Hz)</th>
+      <th>Averaging time (R = 25 Hz)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.1</td>
+      <td>1306</td>
+      <td>21.8 min</td>
+      <td>52.2 sec</td>
+    </tr>
+    <tr>
+      <td>0.2</td>
+      <td>581</td>
+      <td>9.68 min</td>
+      <td>23.2 sec</td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>145</td>
+      <td>2.42 min</td>
+      <td>5.8 sec</td>
+    </tr>
+  </tbody>
+</table>
 
 Accounting for other known sources of variability at dendritic spines would require even longer time windows. In particular, the impact of short-term plasticity during bursts of action potentials on the length of the time-window is complicated by the interplay of facilitation and depression. Synapses with a low initial pr (and corresponding long time-window in Table 1) exhibit marked facilitation and slowly depress during bursts (Kandaswamy et al., 2010; Nadkarni et al., 2010) which would shorten the time-window. But synapses with a high initial pr (and short time-window) only weakly facilitate, if at all, and quickly depress, which would lengthen the time-window.
 
@@ -135,7 +168,7 @@ We are just beginning to appreciate the level of precision with which synapses a
 
 ## Materials and methods
 
-## Reconstruction of neuropil
+### Reconstruction of neuropil
 
 Three separate 3DEM data sets were used in this study. Each of these data sets has been used for other purposes in prior studies. Images were obtained from serial thin sections in the middle of stratum radiatum of hippocampal area CA1 from three adult male rats (55–65 days old) (Mishchenko et al., 2010; Bourne et al., 2013). One set of images was used to make a dense model of 6 x 6 x 5 μm3 of hippocampal neuropil and processed as previously described in a study of the extracellular space (Kinney et al., 2013). In this data set, we identified 13 axon-coupled synaptic pairs on 11 dendrites (Figure 4—figure supplement 3 and Figure 4—figure supplement 4). The other two sets of images were part of a prior study (Bourne et al., 2013) in which subsets of dendrites and axons had been reconstructed. In this data set, we identified 7 axon-coupled synaptic pairs on 4 dendrites for a total of 20 axon-coupled dendrite-coupled spine pairs. To perform an accurate and robust geometric analysis of the dendrites, dendritic spines, axons, and glial processes, it was necessary to correct the reconstructed surface meshes for artifacts and make them into computational-quality meshes as described elsewhere (Kinney et al., 2013; Edwards et al., 2014).
 
@@ -143,7 +176,7 @@ The postsynaptic densities (PSDs) and presynaptic active zones (AZs) were identi
 
 The reconstructed neuropil models were then visualized and analyzed using Blender, a free, open-source tool for 3D computer graphics modeling (http://blender.org). A total of 449 synaptic contacts were found in the dense reconstructed volume of neuropil. We excluded a number of synapses from the analysis if they were partially clipped by the edge of the data set (142), or were shaft synapses (20) leaving 287 valid synapses on dendritic spines in the dense model. An additional 70 spines were excluded from the analysis of axon-coupled spines as the axon which contacted these spines did not contact any other spines within the reconstructed volume. Example visualizations of the spines and axons, generated using Blender, are shown in Figure 2A,B, Figure 3—figure supplement 1A, Figure 4A,B, Figure 4—figure supplement 3, Figure 4—figure supplement 4, Figure 6A,D, Figure 7B,D,F,H.
 
-## Segmentation of dendritic spines
+### Segmentation of dendritic spines
 
 Blender’s functionality is user-extensible via a Python interface for creating add-ons. We created a Python add-on for Blender that enabled the selection of the mesh triangles of the dendrite corresponding to the spine head and whole spine of each individual spine. Our add-on tagged each selected set of triangles with metadata for the spine name and geometric attributes of the head, whole spine, and neck as described below.
 
@@ -155,17 +188,17 @@ Areas were computed from the selected regions for spine head and whole spine. Ac
 
 Distances between spine heads along the axon were calculated as the Euclidean distance between the centroids of the PSD/AZ regions. Distances between whole spines along the dendritic shaft were calculated as the Euclidean distance between the spine necks to shaft junctions. Glial classification, mitochondria classification and shape classification were performed by hand using set criteria.
 
-## Estimation of measurement error of spine head volume
+### Estimation of measurement error of spine head volume
 
 Some error in the measurement of spine head volume is expected to occur in the human judgment required to segment the dendritic spines into whole spine, head, and neck. To estimate this error, the valid spines in the dense model were segmented and measured a total of four times per spine (twice each by two people). The standard error of the mean in spine head volume decreases with volume and is less than 5% for the majority of spines with a median error of about 1% (Figure 3—figure supplement 1). The head volumes in the other two data sets were only measured once.
 
-## Segmentation of synaptic vesicles and estimation of docked vesicles
+### Segmentation of synaptic vesicles and estimation of docked vesicles
 
 Synaptic vesicles in the presynaptic terminals, totaling 31,377 in number, were identified along with their 3D locations within the dense reconstruction. Of the 449 presynaptic terminals, we excluded 193 terminals from the analysis due to truncation at the edge of the volume, and 20 terminals at shaft synapses, leaving 236 valid terminals. A visualization of all the synaptic vesicles in the reconstruction is shown in Figure 2A.
 
 Positive identification of docked vesicles in these ssTEM data sets is problematic due to the thickness of the sections and density of the staining. To estimate docked vesicles, we counted the number of vesicles whose centers were located within 100 nm of the presynaptic membrane across from the postsynaptic density of a given spine. Of the 31,377 vesicles, 3437 were labeled as docked according to this criterion which yielded estimates in good agreement with previous estimates (Harris and Sultan, 1995; Schikorski and Stevens, 1997; Figures 2B–D). An en face view of the docked vesicles at one synapse is shown in Figure 2B.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analysis and plots were generated using Python 2.7 (http://python.org) with NumPy, SciPy, and Matplotlib. The distributions of spine head volume, spine head area, spine neck volume, PSD area, and AZ area were highly skewed with a long tail at larger values (Figure 1). Consequently, all regression analysis was performed using Pearson’s linear regression on the data after applying a log-normal transformation (r2 values shown in Figures 1–6).
 
@@ -173,29 +206,41 @@ The coefficient of variation (CV) of the population of spine pairings (Figures 4
 
 Population distributions were highly skewed making it necessary to make comparisons of distributions using non-parametric methods. We used the two-sample Kolmogorov-Smirnoff (KS) test to make these comparisons in Figures 4 and 6.
 
-## Estimation of number of distinguishable spine sizes and bits of precision in spine size
+### Estimation of number of distinguishable spine sizes and bits of precision in spine size
 
 To estimate the number of distinguishable spine sizes and corresponding bits of precision we calculated the number of distinct Gaussian distributions of spine sizes, each with a certain mean size and standard deviation that together would cover and span the entire range of spine head sizes seen in Figure 4A. Figure 5 demonstrates that it is reasonable to assume that the CV of each these sub-distributions is a constant value of 0.083. From this CV, the spacing between the mean values of each sub-distribution can be chosen to achieve a total of 31% overlap with adjacent sub-distributions giving a 69% discrimination threshold. A 69% discrimination threshold is commonly used in the field of psychophysics and corresponds to a Signal-to-Noise Ratio (SNR) of 1 (Green and Swets, 1966; Schultz, 2007).
 
 The 69% confidence interval, z, of a Gaussian distribution is given by:
 
-z = sqrt(2)*erf-1(0.69)
+$$
+z = sqrt(2)*erf^{-1}(0.69)
+$$
 
 The spacing, s, of adjacent intervals of mean, μ, is given by:
 
-s = μ*2*CV*z
+$$
+s = \mu*2*CV*z
+$$
 
 The number, N, of such distributions that would span the factor of 60 range of spine sizes is:
 
+$$
 N = log(60)/log(1+2*CV*z)
+$$
 
+$$
 N = 26.3
+$$
 
 The number of bits of precision implied by N distinguishable distributions is given by:
 
-bits = log2(N)
+$$
+bits = log_{2}(N)
+$$
 
+$$
 bits = 4.72
+$$
 
 Figure 8 shows that ~26 distinguishable distributions can cover the entire range of spine sizes, implying that there are ~4.7 bits of precision in the spine size.
 

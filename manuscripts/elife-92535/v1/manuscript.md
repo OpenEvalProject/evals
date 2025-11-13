@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0524sp257 School of Biological Sciences, University of Bristol Bristol United Kingdom
-2. https://ror.org/0431sk359 Marine Biological Association of the UK Plymouth, Devon United Kingdom
+1. School of Biological Sciences, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+2. Marine Biological Association of the UK Plymouth, Devon United Kingdom ([ROR:0431sk359](https://ror.org/0431sk359))
 
 † Corresponding author
 

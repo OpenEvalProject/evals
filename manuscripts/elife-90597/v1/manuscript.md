@@ -13,8 +13,8 @@
 ### Affiliations
 
 1. Center for Neural Informatics, Structures, & Plasticity, Krasnow Institute for Advanced Study, George Mason University Fairfax United States
-2. https://ror.org/02jqj7156 Bioengineering Department and Center for Neural Informatics, Structures, & Plasticity, College of Engineering and Computing, George Mason University Fairfax United States
-3. https://ror.org/02jqj7156 Interdisciplinary Program in Neuroscience, College of Science, George Mason University Fairfax United States
+2. Bioengineering Department and Center for Neural Informatics, Structures, & Plasticity, College of Engineering and Computing, George Mason University Fairfax United States ([ROR:02jqj7156](https://ror.org/02jqj7156))
+3. Interdisciplinary Program in Neuroscience, College of Science, George Mason University Fairfax United States ([ROR:02jqj7156](https://ror.org/02jqj7156))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ The following ‘Description of resource’ section begins with a concise, refer
 
 ## Description of resource
 
-## Characterizing properties of hippocampal neuron types
+### Characterizing properties of hippocampal neuron types
 
 Hippocampome.org v1.0 (Wheeler et al., 2015) established the morphological encoding of axonal and dendritic locations and the main neurotransmitter (glutamate or GABA) as the primary determinants of neuron types in the rodent hippocampal formation. For example, a Dentate Gyrus Basket cell (with name capitalized to indicate a formally defined neuron type) is a GABAergic cell with axon contained in the granular layer and dendrites spanning all dentate gyrus layers (Figure 1A1-4). In this framework, two neurons releasing the same neurotransmitter belong to different types if the axon or dendrites of only one of them invades any of the 26 layers across 6 subregions of the hippocampal formation (hippocampome.org/morphology). In other words, neurons of the same type share the same potential inputs, outputs, and excitatory vs. inhibitory function. These properties were initially supplemented with additional empirical evidence for molecular expression of major protein biomarkers (Figure 1A5; hippocampome.org/markers) and membrane biophysics (Figure 1A6-7; hippocampome.org/electrophysiology).
 
@@ -48,9 +48,85 @@ Hippocampome.org v1.0 (Wheeler et al., 2015) established the morphological encod
 
 Many neuronal properties and functionalities were progressively added in 12 subsequent releases (Table 1). The numerical sequencing of these Hippocampome.org versions depended on the order of peer-review and publication of the corresponding scientific reports. Here we will describe them instead in logical groupings. The first two updates enhanced the user functionality of the knowledge base. Specifically, v1.1 integrated a web-based interactive thesaurus mapping of synonyms and definitions (Hamilton et al., 2017a; hippocampome.org/find-term) to help disambiguate the many terminological inconsistencies in the neuroscience literature (Shepherd et al., 2019; Yuste et al., 2020). Release v1.2 introduced the capability to browse, search, and analyze the potential connectivity between neuron types (Rees et al., 2016; Hippocampome.org/connectivity) as derived from the compiled overlapping locations of all the presynaptic axons and postsynaptic dendrites. Transcriptomic information was greatly expanded in both v1.3 (Hamilton et al., 2017b), which incorporated in situ hybridization data from the Allen Brain Atlas (Lein et al., 2007), and v1.5 (White et al., 2020), which leveraged relational inferences interlinking the region-specific expression of two or more genes.
 
+**Table 1.**
+ Added knowledge and functioning in Hippocampome.org releases v1.1–12.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th>Contribution</th>
+      <th>Article</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>v1.1</td>
+      <td>definitions for terms and phrases relevant to Hippocampome.org</td>
+      <td>Hamilton et al., 2017a</td>
+    </tr>
+    <tr>
+      <td>v1.2</td>
+      <td>clickable connectivity matrixinteractive connectivity navigator Java appletsearching by connectivity</td>
+      <td>Rees et al., 2016</td>
+    </tr>
+    <tr>
+      <td>v1.3</td>
+      <td>downloadable list of ABA predictions of marker expressionsutility for viewing the effects of thresholds on ABA marker expression predictions</td>
+      <td>Hamilton et al., 2017b</td>
+    </tr>
+    <tr>
+      <td>v1.4</td>
+      <td>access to the synapse knowledge base</td>
+      <td>Moradi and Ascoli, 2020</td>
+    </tr>
+    <tr>
+      <td>v1.5</td>
+      <td>relational biomarker expression inferences</td>
+      <td>White et al., 2020</td>
+    </tr>
+    <tr>
+      <td>v1.6</td>
+      <td>firing pattern phenotypesclickable firing pattern matrixclickable firing pattern parameters matrixsearch by firing patternsearch by firing pattern parameter</td>
+      <td>Komendantov et al., 2019</td>
+    </tr>
+    <tr>
+      <td>v1.7</td>
+      <td>Izhikevich modelsclickable Izhikevich model parameters matrixdownloadable single-neuron parameter filesdownloadable single-neuron CARLSim4 simulation filesability to perform single-neuron simulations of the firing patterns</td>
+      <td>Venkadesh et al., 2019</td>
+    </tr>
+    <tr>
+      <td>v1.8</td>
+      <td>clickable/downloadable neurite lengths matrixclickable/downloadable somatic path distances matrixclickable/downloadable numbers of potential synapses matrixclickable/downloadable numbers of contacts matrixclickable/downloadable connection probabilities matrix</td>
+      <td>Tecuatl et al., 2021b</td>
+    </tr>
+    <tr>
+      <td>v1.9</td>
+      <td>clickable matrix for in vivo recordings</td>
+      <td>Sanchez-Aguilera et al., 2021</td>
+    </tr>
+    <tr>
+      <td>v1.10</td>
+      <td>Cognome knowledge base of spiking neural circuit functions and network simulations of the hippocampal formation</td>
+      <td>Sutton and Ascoli, 2021</td>
+    </tr>
+    <tr>
+      <td>v1.11</td>
+      <td>clickable matrix of neuron type census values for rat and mouse</td>
+      <td>Attili et al., 2022</td>
+    </tr>
+    <tr>
+      <td>v1.12</td>
+      <td>clickable/downloadable matrices of synaptic physiology parameter values (g, τd, τr, τf, U) for combinations of species, sex, age, temperature, and recording mode</td>
+      <td>Moradi et al., 2022</td>
+    </tr>
+  </tbody>
+</table>
+
 The quantifications of firing pattern phenotypes, such as rapid adapting spiking, transient stuttering, and persistent slow-wave bursting, in v1.6 (Komendantov et al., 2019; hippocampome.org/firing_patterns) were fitted by dynamical systems modeling (Izhikevich, 2003) in v1.7 (Venkadesh et al., 2019; hippocampome.org/Izhikevich). Although the above properties were largely measured from slice preparations, v1.9 made available measurements from in vivo recordings (Sanchez-Aguilera et al., 2021; hippocampome.org/in-vivo). Release v1.10 provided a compendium of cognitive functions linked to specific hippocampal neurons (Sutton and Ascoli, 2021; hippocampome.org/cognome), while the v1.11 neuron type census estimated the population counts for each neuron type (Attili et al., 2022; hippocampome.org/census). Finally, there are a set of properties pertaining not to individual neuron types but to synaptic connections between a pair of pre- and post-synaptic neuron types. In particular, v1.8 calculated the synaptic probabilities and the numbers of contacts per connected pair (Tecuatl et al., 2021b; hippocampome.org/syn_probabilities), and v1.4 data mined synaptic physiology (Moradi and Ascoli, 2020; hippocampome.org/synaptome), with conductance, time constant, and short-term plasticity values normalized by age, temperature, species, sex, and recording method in v1.12 (Moradi et al., 2022; hippocampome.org/synapse), leveraging machine learning and a phenomenological model (Tsodyks et al., 1998).
 
-## Expanding the catalog of neuron types and properties from Hippocampome.org v1.x to v2.0
+### Expanding the catalog of neuron types and properties from Hippocampome.org v1.x to v2.0
 
 The Hippocampome.org framework to classify neuron types and collate their properties allows agile content updates as new data are continuously reported in the peer-reviewed literature. For example, the description of a parvalbumin-positive dentate gyrus GABAergic interneuron with axon contained in the granular layer and dendrites invading the molecular layer but not the hilus (Vaden et al., 2020) supported the definition of a new neuron type (Figure 1B1-5), referred to in Hippocampome.org v2.0 as DG Basket GRALDEN (GRAnular Layer DENdrites) cell. Moreover, such an identification made it possible to unequivocally ascribe to this neuron type previously reported electrophysiological characteristics (Figure 1B6-7; Markwardt et al., 2011). Comprehensive literature mining following the same process expanded the Hippocampome.org v2.0 catalog with 56 new neuron types across 5 of the 6 subregions of the hippocampal formation (Figure 2), including axonal-dendritic morphological patterns (Figure 2A), molecular expression (Figure 2B), and membrane biophysics (Figure 2C).
 
@@ -64,7 +140,93 @@ Besides identifying new neuron types, the Hippocampome.org classification system
 
 **Figure 3.:** (A) Additions to the axonal projections (circled in green) for two v1.0 neuron types, based on information derived from Figure 2b in Deller et al., 1996. (B1) Biomarker expressions for the two CA1 Pyramidal sub-types added in Hippocampome.org v1.9 (Sanchez-Aguilera et al., 2021). (B2) Membrane biophysics values for the two sub-types. (B3) CA2 projects preferentially to the deep sublayer of CA1 (Kohara et al., 2014). More perisomatic parvalbumin-positive (PV+) GABAergic boutons are found at CA1 Deep Pyramidal cells (Valero et al., 2015). CA1 Superficial Pyramidal cells form more frequent connections to PV + CA1 Basket cells, and PV + CA1 Basket cells form significantly more perisomatic axon terminals on CA1 Deep Pyramidal cells (Lee et al., 2014). (C1) Additions to the firing pattern phenotypes of v1.0 neuron types. (C2a) Example of adapting spiking (ASP.) in a CA1 Oriens-Bistratified cell (adapted from Figure 4B in Craig and McBain, 2015). (C2b) Example of non-adapting spiking (NASP) in a CA3 Basket CCK + cell (adapted from Figure 3A in Szabadics and Soltesz, 2009). (C2c) Example of transient stuttering (TSTUT.) in a CA1 Radiatum Giant cell (reproduced from Figure 2Bb in Kirson and Yaari, 2000). (C2d) Example of transient stuttering followed by persistent stuttering (TSTUT.PSTUT) in a CA1 Interneuron Specific O-targeting QuadD (adapted from Figure 2D in Chamberland et al., 2010). (C2e) Example of silence preceded by transient stuttering (TSTUT.SLN) in a DG MOLAX cell (adapted from Figure S2c in Lee et al., 2016). (D) Synaptic probabilities for projecting connections and the corresponding number of contacts in brackets between the two CA3 Pyramidal neuron types and a selection of CA1 neuron types. Morphology abbreviations: see Figure 2. Marker abbreviations: CB: calbindin; Astn2: astrotactin 2; Dcn: decorin; Gpc3: glypican 3; Grp: gastrin releasing peptide; Htr2c: 5-hydroxytryptamine receptor 2 c; Ndst4: N-deacetylase and N-sulfotransferase 4; Nov: nephroblastoma overexpressed; Nr3c2: nuclear receptor subfamily 3 group C member 2; Nr4a1: nuclear receptor subfamily 4 group A member 1; Prss12: serine protease 12; Prss23: serine protease 23; Wfs1: wolframin ER transmembrane glycoprotein. Membrane biophysics abbreviations: see Figure 1.
 
-## Quantifying the content and impact of Hippocampome.org
+**Table 2.**
+ Probabilities of connection and number of contacts per connected pair from DG Granule cell to mossy fiber targets in CA3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Postsynaptic neuron type</th>
+      <th>Probability</th>
+      <th># contacts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CA3 Pyramidal</td>
+      <td>1.11E-04</td>
+      <td>1.08</td>
+    </tr>
+    <tr>
+      <td>CA3c Pyramidal</td>
+      <td>3.91E-04</td>
+      <td>1.31</td>
+    </tr>
+    <tr>
+      <td>CA3 Spiny Lucidum Dentate-Projecting</td>
+      <td>5.89E-04</td>
+      <td>1.69</td>
+    </tr>
+    <tr>
+      <td>CA3 Mossy Fiber-Associated ORDEN</td>
+      <td>4.44E-04</td>
+      <td>1.27</td>
+    </tr>
+    <tr>
+      <td>CA3 Basket</td>
+      <td>6.55E-04</td>
+      <td>1.50</td>
+    </tr>
+    <tr>
+      <td>CA3 Basket CCK+</td>
+      <td>2.14E-04</td>
+      <td>1.16</td>
+    </tr>
+    <tr>
+      <td>CA3 Ivy</td>
+      <td>3.35E-04</td>
+      <td>1.29</td>
+    </tr>
+    <tr>
+      <td>CA3 Mossy Fiber-Associated</td>
+      <td>3.78E-05</td>
+      <td>1.04</td>
+    </tr>
+    <tr>
+      <td>CA3 LMR-Targeting</td>
+      <td>1.31E-04</td>
+      <td>1.21</td>
+    </tr>
+    <tr>
+      <td>CA3 Lucidum ORAX</td>
+      <td>2.62E-04</td>
+      <td>1.19</td>
+    </tr>
+    <tr>
+      <td>CA3 Lucidum-Radiatum</td>
+      <td>3.25E-04</td>
+      <td>1.13</td>
+    </tr>
+    <tr>
+      <td>CA3 Axo-Axonic</td>
+      <td>7.56E-04</td>
+      <td>1.50</td>
+    </tr>
+    <tr>
+      <td>CA3 Bistratified</td>
+      <td>8.25E-04</td>
+      <td>1.45</td>
+    </tr>
+    <tr>
+      <td>CA3 QuadD-LM</td>
+      <td>2.91E-04</td>
+      <td>1.25</td>
+    </tr>
+  </tbody>
+</table>
+
+### Quantifying the content and impact of Hippocampome.org
 
 Over the course of subsequent releases, we have measured Hippocampome.org content using two metrics. The number of pieces of knowledge (PoK) tallies the distinct units of structured information, such as the statements that Dentate Gyrus Granule cell axons invade the hilus or that CA1 Basket cells express parvalbumin. The pieces of evidence (PoE) are specific excerpts of peer reviewed publications (portion of text, figure, or table) or database entries (e.g. from the Allen Brain Atlas) always linked to each PoK. Both PoK and PoE continued to grow with successive releases of Hippocampome.org (Figure 4A). Notably, the largest increases in PoK and PoE were related to synaptic properties (Moradi and Ascoli, 2020; Tecuatl et al., 2021b; Moradi et al., 2022). Specifically, the data underlying synaptic physiology and connection probabilities were supported by over 23,000 PoE and yielded a remarkable 500,000 PoK thanks to the normalized collection of signaling and short-term plasticity modeling parameters for multiple combinations of experimental conditions.
 
@@ -74,7 +236,106 @@ Over the course of subsequent releases, we have measured Hippocampome.org conten
 
 To assess community usage of Hippocampome.org, we tracked the number of citations of the original publication (Wheeler et al., 2015) and of the subsequent versions (Figure 4B), separating simple references from actual employment of information extracted from Hippocampome.org for secondary analyses (Table 3). At the time of this writing, year 2021 proved to be the most prolific citation-wise; however, more than a third of the releases (v1.8–12) appeared after 2021 and most PoK were added in 2022, so usage could potentially accelerate further in coming years. An early application of Hippocampome.org-sourced data used subthreshold biophysical measures, such as input resistance and membrane time constant, for multicompartmental models of signal integration and extracellular field generation (Gulyás et al., 2016). That study concluded that somatic and proximal dendritic intracellular recordings in pyramidal cells and calretinin-positive interneurons, in particular, do not capture a sizable portion of the synaptic inputs. As a recent usage example, another lab employed Hippocampome.org as the primary information resource for neuron types in DG, CA3, and CA1 (Schumm et al., 2022). They discovered that mild traumatic brain injury, in the form of alterations in spike-timing-dependent plasticity, may affect the broadband power in CA3 and CA1 and the phase coherence between CA3 and CA1.
 
-## From experimental data to biologically realistic computational models
+**Table 3.**
+ Examples of independent studies utilizing unique neuronal properties from Hippocampome.org v1.0.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Article</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gulyás et al., 2016</td>
+      <td>Lists of subthreshold physiological properties for multicompartmental modeling</td>
+    </tr>
+    <tr>
+      <td>Skene and Grant, 2016</td>
+      <td>Catalog of CA1 Interneuron types</td>
+    </tr>
+    <tr>
+      <td>Faghihi and Moustafa, 2017</td>
+      <td>Diversity of hippocampal neuron types and morphological neuronal features</td>
+    </tr>
+    <tr>
+      <td>Puighermanal et al., 2017</td>
+      <td>Biomarker expression in CA1 interneurons</td>
+    </tr>
+    <tr>
+      <td>Depannemaecker et al., 2020</td>
+      <td>Parameter values for a model of synaptic neurotransmission</td>
+    </tr>
+    <tr>
+      <td>Ecker et al., 2020</td>
+      <td>Evidence that CA1 interneurons express multiple overlapping chemical markers</td>
+    </tr>
+    <tr>
+      <td>Hunsberger and Mynlieff, 2020</td>
+      <td>Cell identification based on firing properties</td>
+    </tr>
+    <tr>
+      <td>Schumm et al., 2020</td>
+      <td>Directionality of connections in the hippocampus</td>
+    </tr>
+    <tr>
+      <td>Aery Jones et al., 2021</td>
+      <td>Local connectivity of CA1 PV + interneurons</td>
+    </tr>
+    <tr>
+      <td>Ciarpella et al., 2021</td>
+      <td>Lists of hippocampal genes</td>
+    </tr>
+    <tr>
+      <td>Luo et al., 2021</td>
+      <td>Confirmation of multiple hippocampal neuron types</td>
+    </tr>
+    <tr>
+      <td>Mehta et al., 2021</td>
+      <td>Connectome model inspired by entorhinal-CA1 circuit</td>
+    </tr>
+    <tr>
+      <td>Obafemi et al., 2021</td>
+      <td>Principal channels of information processing are DG Granule cells and CA1-3 Pyramidal cells</td>
+    </tr>
+    <tr>
+      <td>Sáray et al., 2021</td>
+      <td>Membrane biophysics values for CA1 Pyramidal cells</td>
+    </tr>
+    <tr>
+      <td>Smith et al., 2021</td>
+      <td>Omni-directionality of axons of CA1 Pyramidal cells</td>
+    </tr>
+    <tr>
+      <td>Venkadesh and Van Horn, 2021</td>
+      <td>Example of a brain region’s mesoscopic structural connectivity</td>
+    </tr>
+    <tr>
+      <td>Walker et al., 2021</td>
+      <td>Reference to morphological and molecular characteristics of hippocampal principal cells and interneurons</td>
+    </tr>
+    <tr>
+      <td>Wynne et al., 2021</td>
+      <td>Example brain region with a variety of cell types</td>
+    </tr>
+    <tr>
+      <td>Kopsick et al., 2023</td>
+      <td>Utilize accumulated knowledge as the basis for simulations</td>
+    </tr>
+    <tr>
+      <td>Schumm et al., 2022</td>
+      <td>Hippocampal morphology, biomarker expression, connectivity, and typing of neurons</td>
+    </tr>
+    <tr>
+      <td>Zagrean et al., 2022</td>
+      <td>Diversity of hippocampal neuronal types and their properties</td>
+    </tr>
+  </tbody>
+</table>
+
+### From experimental data to biologically realistic computational models
 
 Several key neural properties collated into Hippocampome.org have gradually transformed the site from an organized repository of hippocampal knowledge to a computational framework for launching real-scale neural network simulations. Specifically, building a data-driven circuit model of a neural system (such as the hippocampal formation or portion thereof) requires four essential quantities besides the full list of neuron types (Bahmer et al., 2023; DePasquale et al., 2023): (i) the number of neurons in each type; (ii) the input-output response function for each neuron type; (iii) the connection probability for each pair of interacting neuron types; and (iv) the unitary synaptic signals for each pair of connected neuron types (Figure 5). Of those quantities, (i) and (ii) are neuron type properties, while (iii) and (iv) are properties of directional connections, defined as a distinct pair of a presynaptic and a postsynaptic neuron type. Moreover, (i) and (iii) are structural features, while (ii) and (iv) are electrophysiological ones.
 
@@ -96,7 +357,7 @@ To facilitate construction of spiking neural network simulations, Hippocampome.o
 
 **Figure 7.:** (A) The user chooses which subset of the available neuron types to include in the generated downloadable parameter file. Neuron types can be selected (check boxes and gray highlights) either individually or by groupings, such as by subregion and/or by importance rank. (B) Representative user selection. (C) Downloadable neuron-level parameters. (D) Downloadable connection-level parameters.
 
-## Potential applications to connectomic analyses and spiking neural networks simulations
+### Potential applications to connectomic analyses and spiking neural networks simulations
 
 Hippocampome.org v2.0 enables the multiscale analysis of circuit connectivity (Figure 8). At the highest echelon are the connections between hippocampal subregions, which are comprised of the mesoscopic level potential connectivity between individual neuron types (Figure 8A). Expanding, for example, upon the 147 connections between the dentate gyrus and CA3 neuron types reveals all the connections every individual neuron type forms with the other neuron types within and across the subregions (Figure 8B). Zooming in onto a single neuron type each from the dentate gyrus and CA3, it is possible to quantify the efferent and afferent connections with other neuron types from throughout the hippocampal formation in terms of synaptic probabilities and number of neuronal partners (Figure 8C). Diving even deeper into the isolated connection between two neuron types, such as the mossy fiber contacts from Dentate Gyrus Granule cells to CA3 Basket cells, expands the connectivity analysis to several physiological factors affecting neuronal communication: the subcellular location of the synaptic contact (e.g. soma in stratum pyramidale and proximal dendrites in stratum lucidum), the transfer function (product of synaptic conductance and decay time constant), the in vivo firing rate of the presynaptic neuron type, and the relationship between input current and resulting output spiking frequency (F-I curve) of the post-synaptic neuron (Figure 8D).
 
@@ -130,26 +391,26 @@ Hippocampome.org is yet poised for the onset of an information deluge from curre
 
 ## Materials and methods
 
-## Hippocampome.org v2.0 vs. the legacy status of v1.12
+### Hippocampome.org v2.0 vs. the legacy status of v1.12
 
 With the release of v2.0 of Hippocampome.org upon publication of this article, v1.12 of the website will no longer be updated and will transition to legacy status (hippocampome.org/legacy_v1). In this way, users may avail themselves of the full benefits of the new content and functionality of v2.0, while maintaining access to reference content as published through v1.12. In the near term, neuron types new to v2.0 are tagged with an asterisk on the web site to differentiate them from v1.X types.
 
-## Linking neuron types to NeuroMorpho.Org morphological reconstructions
+### Linking neuron types to NeuroMorpho.Org morphological reconstructions
 
 Hippocampome.org neuron types are regularly linked to appropriately identified digital reconstructions of neuronal morphology from NeuroMorpho.Org (Ascoli et al., 2007). Identification of suitable reconstructions with individual neuron types depends on the correspondence of dendritic and axonal locations across hippocampal subregions and layers, as they appear in the reference publication. Alternatively, direct cell typing by the authors in the reference publication text is accepted as evidence for canonical (principal cell) types, such as CA1 Pyramidal cells or Dentate Gyrus Granule cells. Reconstructions are not linked to a neuron type if the experimental conditions are inconsistent with the inclusion criteria of Hippocampome.org, as in the case of cell cultures or embryonic development. Lack of either axonal or dendritic tracing also disqualifies reconstructions of non-canonical neurons from being linked.
 
-## Connections from DG Granule cells to CA3
+### Connections from DG Granule cells to CA3
 
 To compute estimates of connection probabilities and numbers of contacts per connected pair for the rat mossy fiber-CA3 circuit, we used previously calculated average convex hull volume (Tecuatl et al., 2021b) and several measurements from a seminal anatomical study (Acsády et al., 1998): DG Granule cell axonal length within CA3 (3,236 µm), inter-bouton distances for mossy boutons on Pyramidal cell targets in CA3c (162 µm) and in the rest of CA3 (284 µm), and inter-bouton distances for en-passant and filipodia boutons onto CA3 interneurons (67.4 µm, considering that 48 interneurons can be contacted by a single GC). Given that the mossy fibers innervate mainly CA3 SL, and due to the lack of information regarding the exact proportion of axons innervating CA3 SP, these calculations assume that GCs only innervate SL. The probabilities of connection and numbers of contacts per connected pair (Table 2) are estimated as previously described (Tecuatl et al., 2021a) utilizing the CA3 dendritic lengths reported in Hippocampome.org.
 
-## Connections from CA3 and CA3c Pyramidal cells to CA1
+### Connections from CA3 and CA3c Pyramidal cells to CA1
 
 To compute estimates of connection probabilities and numbers of contacts per connected pair for the rat Schaffer collaterals-CA1 circuit, we utilized previously reported values for the distinct axonal innervation patterns (Ropireddy et al., 2011; Sik et al., 1993; Wittner et al., 2007) in CA1 stratum radiatum (SR) and stratum oriens (SO) from CA3 Pyramidal cells (27.5% of total axonal length: 64% to SR, 15% to stratum pyramidale (SP), 21% to SO) and CA3c Pyramidal cells (64.1% of total axonal length: 94% to SR, 3% to SP, 3% to SO). In addition, we used the average inter-bouton distance reported for the Schaffer collaterals (Li et al., 1994) in SR (4.47 µm) and SO (5.8 µm). Total axonal length was measured with L-Measure (Scorcioni et al., 2008) from three NeuroMorpho.Org reconstructions for CA3c (NMO_00187, NMO_00191) and CA3b (NMO_00931). We extracted parcel-specific convex hull volumes from Janelia MouseLight (Winnubst et al., 2019) Pyramidal cell reconstructions (AA0304, AA0307, AA0420, AA0960, AA0997, AA0999, AA1548) mapped to the 2022 version of the Allen Institute Common Coordinate Framework (CCF). The probabilities of connection and number of contacts per connected pair were estimated as previously described (Tecuatl et al., 2021a) using CA1 dendritic lengths from Hippocampome.org. We used separate values for inter-bouton distances in CA1 SR for CA3c Pyramidal cells (5.5 µm: Wittner et al., 2007) and CA3 Pyramidal cells (3.7 µm: Shepherd et al., 2019; 4.4 µm: Li et al., 1994; 4.29 µm: Sik et al., 1993; averaged as 4.1 µm).
 
-## Constructing Hippocampome.org spiking neural simulations
+### Constructing Hippocampome.org spiking neural simulations
 
 Hippocampome.org utilizes CARLsim (Nageswaran et al., 2009) as its default simulation environment (https://sites.socsci.uci.edu/~jkrichma/CARLsim/). CARLsim is a graphics processing unit (GPU)-accelerated library of functions for simulating spiking neural networks based on Izhikevich neuron models (Izhikevich, 2003). We selected CARLsim due to this ability to run on collections of GPUs, as the power of a GPU supercomputer is needed to simulate the millions of neurons that comprise a full-scale spiking neural network simulation of the complete hippocampal formation. The current version is CARLsim 6 (Niedermeier et al., 2022), and the most up-to-date Hippocampome.org-optimized code base, including features not yet released in the main CARLsim version, can be found at hippocampome.org/CARLsim (Kopsick et al., 2023).
 
-## Web portal, database, and source code
+### Web portal, database, and source code
 
 Hippocampome.org runs on current versions of Chrome, Safari, and Edge web browsers, and it is deployed on a CentOS server running Apache. The website runs off of PHP from a MySQL database. The code for Hippocampome.org v2.0 is available open source at GitHub (copy archived at Wheeler et al., 2023). This includes all code for displaying the pages of the website, all scripts for importing spreadsheets into the database, code for using evolutionary algorithms to optimize Izhikevich model parameters, code for the graph theory analysis of the potential connectome, code for the implementation of the firing pattern classification algorithm, and code for analyzing network simulations in CARLsim.

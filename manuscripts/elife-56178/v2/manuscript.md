@@ -32,41 +32,182 @@ Thus far, structural studies of CHD4 have been limited to individual domains (Kw
 
 ## Results
 
-## Nucleosome-CHD4 complex structure
+### Nucleosome-CHD4 complex structure
 
 To investigate how the human chromatin remodeller CHD4 engages a nucleosome, we determined the structure of H. sapiens CHD4 bound to a Xenopus laevis nucleosome core particle in the presence of the ATP analogue AMP-PNP. We recombinantly expressed and purified full-length CHD4 and reconstituted a complex of CHD4 with a pre-assembled nucleosome core particle. The nucleosome comprised 145 base pairs (bp) of DNA, corresponding to the Widom 601 sequence (Lowary and Widom, 1998) with additional 4 and 30 bp of extranucleosomal DNA on the entry and exit side of the nucleosome, respectively. The nucleosome-CHD4 complex was purified by size exclusion chromatography (Figure 1—figure supplement 1).
 
 To determine the structure of the nucleosome-CHD4 complex, we collected single particle cryo-EM data on a Titan Krios (FEI) microscope equipped with a K2 direct electron detector (Gatan) (Materials and methods). We obtained a cryo-EM reconstruction of the nucleosome-CHD4 complex at an overall resolution of 3.1 Å (FSC 0.143 criterion) (Figure 1—figure supplements 2–4, Video 1). The nucleosome was resolved at a resolution of 3.0–4.5 Å, whereas CHD4 was resolved at 3.1–5.0 Å, depending on the protein region. The register of the DNA was unambiguously determined based on distinct densities for purine and pyrimidine nucleotides around the dyad (Figure 1—figure supplement 3h). Well-defined density was also obtained for AMP-PNP and a coordinated magnesium ion in the CHD4 active site (Figure 1—figure supplement 3i). The model was locally adjusted and real-space refined, leading to very good stereochemistry (Materials and methods) (Table 1).
 
-## CHD4 architecture
+**Table 1.**
+ Cryo-EM data collection, refinement and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Nucleosome-CHD4 complex (EMD-10058) (PDB 6RYR)</th>
+      <th colspan="2">Nucleosome-CHD42 complex (EMDB-10059) (PDB 6RYU)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>130,000</td>
+      <td colspan="2">130,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td colspan="2">300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>43–45</td>
+      <td colspan="2">43–45</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>0.25–4</td>
+      <td colspan="2">0.25–4</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.05</td>
+      <td colspan="2">1.05</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+      <td colspan="2">C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>650,599</td>
+      <td colspan="2">650,599</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>89,623</td>
+      <td colspan="2">40,233</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å) FSC threshold</td>
+      <td>3.1 0.143</td>
+      <td colspan="2">4.0 0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td>3.0–5</td>
+      <td colspan="2">3.7–8.3</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Initial models used (PDB code)</td>
+      <td>3LZ0, 5O9G, 2L75, 4O9I, 6Q3M</td>
+      <td colspan="2">3LZ0, 5O9G, 2L75, 4O9I, 6Q3M</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>−36</td>
+      <td>−86</td>
+    </tr>
+    <tr>
+      <td>Model composition Non-hydrogen atoms Protein residues Nucleotides Ligands</td>
+      <td>17,834 1463 298 4</td>
+      <td colspan="2">23,598 2180 298 8</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2) Protein Nucleotide Ligand</td>
+      <td>45.28 71.82 60.10</td>
+      <td colspan="2">95.29 112.27 125.7</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations Bond lengths (Å) Bond angles (°)</td>
+      <td>0.003 0.638</td>
+      <td colspan="2">0.005 1.028</td>
+    </tr>
+    <tr>
+      <td>Validation MolProbity score Clashscore Poor rotamers (%)</td>
+      <td>1.54 5.69 0.08</td>
+      <td colspan="2">1.92 6.52 1.64</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot Favored (%) Allowed (%) Disallowed (%)</td>
+      <td>96.50 3.50 0.0</td>
+      <td colspan="2">94.16 5.84 0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/56178/elife-56178-video1.mp4.jpg)
+
+### CHD4 architecture
 
 The CHD4 ATPase motor binds the nucleosome at SHL +2 (Figure 1, Figure 1—figure supplement 4f). Binding at this location has also been observed for the chromatin remodelers Chd1 (Farnung et al., 2017; Sundaramoorthy et al., 2018), Snf2 (Liu et al., 2017), and Swr1 (Willhoft et al., 2018). The ATPase motor is in a closed, post-translocated state with AMP-PNP bound in the active site. The same state and a similar conformation was observed for Chd1 when bound to ADP·BeF3 (Farnung et al., 2017; Sundaramoorthy et al., 2018; Sundaramoorthy et al., 2017). The double chromodomain is located at SHL +1 and contacts the nucleosomal DNA phosphate backbone via electrostatic interactions, in a fashion similar to that observed for S. cerevisiae Chd1 (Figure 1; Farnung et al., 2017; Nodelman et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56178/elife-56178-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic of domain architecture of CHD4. Domain borders are indicated. (b-d) Cartoon model viewed from the top (b), dyad (c), and side (d). Histones H2A, H2B, H3, H4, tracking strand, guide strand, CHD4 PHD finger 2, double chromodomain, ATPase lobe 1, and ATPase lobe 2 are colored in yellow, red, light blue, green, blue, cyan, pink, purple, orange, and forest green, respectively. Color code used throughout. The dyad axis is indicated as a black line or a black oval circle. Magnesium and zinc ions shown as pink and grey spheres, respectively. AMP-PNP shown in stick representation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56178/elife-56178-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Schematic of DNA construct to form nucleosome-CHD4 complex. Extranucleosomal DNA length, entry, and exit sides are indicated. (b) Formation of the nucleosome-CHD4 complex on a Superose 6 Increase 3.2/30 size exclusion chromatography column. Red and blue curve shows absorption at 260 nm and 280 nm milli absorption units, respectively. (c) SDS-PAGE gel with peak fraction containing the formed nucleosome-CHD4 complex.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56178/elife-56178-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Representative micrograph of data collection. The micrograph was denoised using Warp (Tegunov and Cramer, 2018). Scale bar with a length of 500 Å is shown. (b) 2D classes of single copy CHD4 bound to a nucleosome. Scale bar with a length of 200 Å is shown. (c) Classification tree employed to obtain cryo-EM density of CHD4 bound to a nucleosome. Particle numbers and class distribution percentages are indicated. Final reconstructions are highlighted.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56178/elife-56178-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Cartoon model of CHD4-nucleosome structure with corresponding post-processed Coulomb potential map shown in silver. (b) Nucleosomal DNA with Coulomb potential map. (c) Histone octamer with Coulomb potential map (d) Cartoon model of two copies of CHD4 engaged with the nucleosome and corresponding Coulomb potential map. (e) Representative density of histone residues. (f) Representative density of CHD4 residues. (g) Coulomb potential map of density near DNA at SHL +2. (h) DNA density around dyad axis with fitted DNA model. Base identities used to fit register and directionality are indicated on the left. N, R, and Y indicate any nucleotide, purine, or pyrimidine, respectively. Matching sequence provided on the right. (i) Active site density with fitted AMP-PNP and coordinated Mg2+ ion. (j) Density of C-terminal bridge helix. (k) Cartoon model of PHD finger 2 with corresponding local resolution filtered Coulomb potential map.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/56178/elife-56178-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) FSC curves. (b–c) Angular distribution plots. (d-e) Local resolution of CHD4 structures. Densities are colored according to resolution as indicated. (f) Procedure employed to test for mixture of CHD4 bound at SHL +2 and SHL −2. Density was only observed on one site of the NCP, indicating that CHD4 binds the NCP only at SHL +2.
+
 The PHD finger 2 of CHD4 is located near SHL +0.5 and the double chromodomain. This is consistent with NMR studies that predicted binding of this PHD finger close to the dyad axis and the H3 tail (Gatchalian et al., 2017). Additionally, we observe parts of the C-terminal bridge (Hauk et al., 2010), an amino acid segment that follows the ATPase lobes. Part of the C-terminal bridge docks against ATPase lobe 2 and extends toward the first ATPase lobe (Figure 1, Figure 1—figure supplement 3j). This region was not resolved in the nucleosome-Chd1 structures but was observed in a previously published crystal structure of auto-inhibited Chd1 (Hauk et al., 2010). Taken together, CHD4 and Chd1 share a core architecture that involves the ATPase motor and the double chromodomain but differ in their peripheral subfamily-specific protein features.
 
-## CHD4 does not detach exit side nucleosomal DNA
+### CHD4 does not detach exit side nucleosomal DNA
 
 In contrast to the nucleosome-Chd1 structure (Farnung et al., 2017), we did not observe unwrapping of nucleosomal DNA from the histone octamer on the second DNA gyre at SHL −6 and −7 (Figure 2a). To test whether this structural difference can be recapitulated biochemically in solution, we used a Förster Resonance Energy Transfer (FRET) assay to monitor putative DNA unwrapping activity by these two chromatin remodellers. The DNA 5’ ends of the nucleosome were labelled with Cy3 or Cy5 (Figure 2b). Using the doubly labeled nucleosome, FRET efficiencies were measured in the absence and presence of S. cerevisiae Chd1 (residues 1–1247) or full-length H. sapiens CHD4, and in the presence of AMP-PNP or ADP·BeF3.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56178/elife-56178-fig2-v2.jpg)
 
-**Figure 2.:** (a) CHD4 (left) does not possess a DNA-binding region and does not detach DNA from the second gyre. Chd1 (right) detaches DNA from SHL −7 to −5, stabilizes the detached DNA via its DNA-binding region, and introduces a ~ 60° bend with respect to the canonical DNA position observed in the nucleosome-CHD4 structure. (b) Schematic of experimental FRET setup. (c) Fluorescence emission spectra produced after excitation at 510 nm of Cy3/Cy5 labeled nucleosome in the presence of S. cerevisiae Chd1 (residues 1–1247) or H. sapiens CHD4 and AMP-PNP or ADP·BeF3 show unwrapping of nucleosomal DNA by Chd1 but not by CHD4.Figure 2—source data 1.Average and standard deviation data for Figure 2.
+**Figure 2.:** (a) CHD4 (left) does not possess a DNA-binding region and does not detach DNA from the second gyre. Chd1 (right) detaches DNA from SHL −7 to −5, stabilizes the detached DNA via its DNA-binding region, and introduces a ~ 60° bend with respect to the canonical DNA position observed in the nucleosome-CHD4 structure. (b) Schematic of experimental FRET setup. (c) Fluorescence emission spectra produced after excitation at 510 nm of Cy3/Cy5 labeled nucleosome in the presence of S. cerevisiae Chd1 (residues 1–1247) or H. sapiens CHD4 and AMP-PNP or ADP·BeF3 show unwrapping of nucleosomal DNA by Chd1 but not by CHD4.
 
 In these assays, Chd1 showed an increase in fluorescence emission of the donor and a reduction in the acceptor emission (Figure 2c). This indicated that the distance between the two DNA ends of the nucleosome increased upon Chd1 addition, and was consistent with the structurally observed DNA unwrapping of terminal DNA. In contrast, fluorescence emissions measured for the CHD4 sample did not differ from the nucleosome controls (Figure 2c), showing that CHD4 was unable to unwrap nucleosomal DNA both in the presence of AMP-PNP or ADP·BeF3.
 
 The major difference in DNA unwrapping between these two remodelers may be due to a lack of a DNA-binding region in CHD4, when compared to Chd1. Chd1 uses its DNA-binding region to interact extensively with terminal DNA on the exit side at SHL −7, and such contacts are absent in the nucleosome-CHD4 structure (Figure 2). It is likely that other CHD family members from subfamily II such as CHD3 and CHD5, which also lack a DNA-binding region, will also not induce unwrapping of terminal DNA.
 
-## CHD4-DNA interactions
+### CHD4-DNA interactions
 
 The high resolution of our nucleosome-CHD4 structure enables a detailed description of the interactions of the ATPase motor with nucleosomal DNA. CHD4 contacts the phosphate backbone of the tracking and guide strands via electrostatic interactions that are mediated by lysine and arginine residues (Figure 3). These interactions with the DNA phosphate backbone are formed by residues in the canonical ATPase motifs Ia, Ic, II, IV, IVa, V, and Va and by residues present in non-canonical motifs (e.g. Lys810) (Figure 3, Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56178/elife-56178-fig3-v2.jpg)
+
+**Figure 3.:** (a) CHD4 interacts extensively with nucleosomal DNA around SHL +2. ATPase lobe 1 and lobe 2 of CHD4 are shown. Guide and tracking strands are indicated. ATPase motifs are shown as colored spheres and labelled. (b) Schematic depiction of DNA interactions of the double chromodomain, ATPase lobe 1 and lobe 2. (c) Asn1010, Trp1148 and Arg1227 insert into the minor groove between DNA tracking and guide strand. The two conformations of the Arg1127 side chain are shown. Nucleic acids are shown as cartoons with their respective surfaces. (d) Detailed cartoon representation of DNA distortion at SHL +2. Canonical nucleosome (PDB code 3LZ0, grey), AMP-PNP bound NCP-CHD4 structure (this study, blue and cyan), and ADP bound nucleosome-Snf2 structure (PDB code 5Z3O, red and yellow) are shown. Phosphate atoms shown as spheres.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56178/elife-56178-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Sequence alignment of ATPase regions in H. sapiens CHD4 (706–1230), CHD5 (680–1204), CHD3 (716–1240), CHD1 (460–980), CHD2 (464–983), S. cerevisiae Chd1 (358-880), S. cerevisiae Isw1 (181-686), S. cerevisiae Snf2 (742–1268), H. sapiens CHD6 (443–967), CHD7 (950–1475), CHD9 (842–1367), and CHD8 (793–1318). Important elements and ATPase motifs are indicated. Sequence colored according to identity. Dark and light shades of blue indicate high and low conservation, respectively. Alignment generated with MAFFT (Katoh and Standley, 2013) and visualized using JalView (Waterhouse et al., 2009).
+
 We also observe that residues Asn1010, Arg1127, and Trp1148 insert into the DNA minor groove over a stretch of seven base pairs (Figure 3c). Asn1010 is not part of a canonical ATPase motif and inserts into the DNA minor groove around SHL +2.5. Arg1127 (motif V) is universally conserved in all CHD chromatin remodelers and inserts into the DNA minor groove at SHL +2. Our density is consistent with two alternative conformations of the Arg1127 side chain, with the guanidinium head group pointing either toward the tracking or the guide strand of DNA. Trp1148 is located in motif Va, inserts into the minor groove near the guide strand, and plays a critical role in coupling ATPase hydrolysis and DNA translocation (Liu et al., 2017). We further observe a contact between a positively charged loop in ATPase lobe 1 (residues 832–837) and the second DNA gyre at SHL −6. This loop is present in CHD3, CHD4, and CHD5, but not in Snf2 or ISWI remodelers (Figure 3—figure supplement 1).
 
-## CHD4 binding distorts DNA at SHL +2
+### CHD4 binding distorts DNA at SHL +2
 
 Comparison of our structure with a high-resolution X-ray structure of the free nucleosome (Vasudevan et al., 2010) reveals a conformational change in the DNA where the ATPase motor engages its DNA substrate (SHL +2) (Figure 3d). The high resolution of the nucleosome-CHD4 structure shows that ~5 DNA base pairs between SHL +1.5 and SHL +2.5 are pulled away from the octamer surface by up to 3 Å. This distortion does not include the previously observed ‘bulging’ or a ‘twist defect’ that is characterized by a 1 bp local underwinding of the DNA duplex and observed when the ATPase motor adopts the open/apo or ADP-bound states (Li et al., 2019). In contrast, the DNA distortion observed in our AMP-PNP-bound state is an intermediate between the bulged and the canonical DNA conformation (Figure 3d). Such an AMP-PNP-bound intermediate DNA state was predicted based on biochemical experiments (Winger et al., 2018). This observation demonstrates that the extent of DNA distortion at SHL +2 depends on the functional state of the ATPase motor and is consistent with the proposed twist defect propagation model of chromatin remodeling (Winger et al., 2018).
 
-## CHD4 binds the histone H4 tail
+### CHD4 binds the histone H4 tail
 
 As observed for S. cerevisiae Chd1 (Farnung et al., 2017), H. sapiens CHD4 contacts the histone H4 tail with its ATPase lobe 2. The H4 tail is located between ATPase lobe 2 and the nucleosomal DNA at SHL +1.5. The conformation of the H4 tail differs from that observed in structures of the free nucleosome where the tail makes inter-nucleosomal contacts with the ‘acidic patch’ of a neighboring nucleosome. It also differs from the H4 position observed in a higher order structure where the H4 tail extends over the DNA interface between two nucleosomes (Schalch et al., 2005). A loop in lobe 2 of the ATPase (CHD4 residues 1001–1006) replaces the H4 tail in this position, apparently inducing H4 positioning that allows ATPase lobe 2 binding (Figure 4a).
 
@@ -76,11 +217,11 @@ As observed for S. cerevisiae Chd1 (Farnung et al., 2017), H. sapiens CHD4 conta
 
 ATPase lobe 2 contains a highly acidic cavity formed by Asp1080, Glu1083, Asp1084, and Glu1087 (Figure 4a). This acidic cavity is conserved across all CHD family members. The basic side chain of the H4 histone tail residue Arg17 inserts into this acidic cavity (Figure 4a). Similar interactions with the H4 tail have also been reported for Snf2 and ISWI remodelers (Armache et al., 2019; Yan et al., 2019). The side chain of H4 Lys16 also points toward the acidic cavity and is positioned in close proximity to residues Asp1080 and Glu1083. Acetylation of H4 Lys16 is therefore predicted to weaken these charge-based interactions and to reduce the affinity of chromatin remodellers for the H4 tail. This was noted before (Yan et al., 2016) and is consistent with CHD4 activity in repressed regions that lack such H4 acetylation.
 
-## CHD4 interacts with histone H3
+### CHD4 interacts with histone H3
 
 The ATPase lobe 2 also contacts the core of histone H3 (alpha helix 1, Gln76 and Arg83) via CHD4 residues Asn1004 and Leu1009, respectively (Figure 4b). This contact is critical for chromatin remodeling. Deletion of the homologous region in Chd1 leads to abolishment of chromatin remodeling activity (Sundaramoorthy et al., 2018). However, it remains unclear if these contacts are required for proper substrate recognition and positioning or whether they are also necessary to generate the force required for DNA translocation. Low-pass filtering of our map further shows the H3 N-terminal tail trajectory, which extends to the double chromodomain (Figure 4c). The contact between the H3 tail and the double chromodomain could target CHD4 to nucleosomes methylated at Lys27 of H3 (Kuzmichev et al., 2002), a classical mark for gene repression.
 
-## Two CHD4 molecules can engage with the nucleosome
+### Two CHD4 molecules can engage with the nucleosome
 
 During 3D classification of our cryo-EM dataset we observed a distinct class of particles that showed two CHD4 molecules bound to the same nucleosome (Figure 5, Figure 1—figure supplements 2–4, Video 2). Refinement of this class of particles yielded a reconstruction at an overall resolution of 4.0 Å (FSC 0.143 criterion) (Table 1). A model of this nucleosome-CHD42 complex was obtained by docking the refined nucleosome-CHD4 model into the density and then placing another CHD4 molecule into the additional density observed on the opposite side. The resulting nucleosome-CHD42 complex structure shows pseudo-twofold symmetry with CHD4 molecules bound at SHL +2 and SHL −2 (Figure 5). The second CHD4 molecule uses its double chromodomain and PHD finger 2 to contact nucleosomal DNA at SHL +1 and +0.5, respectively. Binding of the second CHD4 molecule also did not lead to unwrapping of terminal DNA.
 
@@ -88,9 +229,11 @@ During 3D classification of our cryo-EM dataset we observed a distinct class of 
 
 **Figure 5.:** Cartoon model of the nucleosome-CHD42 structure viewed from the top (a), and dyad view (b).
 
+![Video 2.](https://cdn.elifesciences.org/articles/56178/elife-56178-video2.mp4.jpg)
+
 Binding of two chromatin remodellers to a single nucleosome was previously observed for S. cerevisiae Chd1 (Sundaramoorthy et al., 2018) and H. sapiens SNF2H (Armache et al., 2019). However, in contrast to the structure of the nucleosome-SNF2H2 complex, we do not observe a distortion in the histone octamer due to the presence of the chromatin remodellers. Binding of two remodeler molecules could allow for higher efficiency in positioning the nucleosome at a precise location but necessitates coordination of the remodellers. A possible mechanism for coordination could be that twist defects that are introduced by remodeler binding are propagated from the entry SHL 2 into the exit side SHL 2 (Brandani et al., 2018; Brandani and Takada, 2018). Presence of the twist defect at the second remodeler binding site could interfere with the translocation activity of the second remodeler (Sabantsev et al., 2019).
 
-## Cancer-related CHD4 mutations
+### Cancer-related CHD4 mutations
 
 Many studies have reported mutations in CHD4 that are related to human diseases, in particular cancer (Xia et al., 2017). Mutations involved in various cancer phenotypes have been observed in the PHD finger 2, the double chromodomain, and both lobes of the ATPase motor. To elucidate effects of such mutations on CHD4 activity, the Drosophila melanogaster CHD4 homologue Mi-2 has been used as a model protein for functional analysis (Kovač et al., 2018). CHD4 mutations have been found to fall in two categories. Whereas some mutations influence ATPase and DNA translocation activity (Arg1162, His1196, His1151 and Leu1215), other mutations seem to change protein stability (Leu912, and Cys464) or disrupt DNA binding (Val558 and Arg572).
 
@@ -100,7 +243,151 @@ To try and rationalize these findings, we mapped known CHD4 mutations on our hig
 
 **Figure 6.:** Missense mutations that occur in endometrial cancer (blue spheres) and Sifrim-Hitz-Weiss syndrome (yellow spheres) mapped onto the CHD4 structure. Residue numbering is indicated. Nucleosomal DNA at SHL +2 is shown in a semi-transparent cartoon representation.
 
-## Other disease-related CHD4 mutations
+**Table 2.**
+ CHD4 mutations in cancer and Sifrim-Hitz-Weiss syndrome.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mutated Residue</th>
+      <th>Location</th>
+      <th>Predicted effect based on structure</th>
+      <th>Biochemical observations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cancer</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cys464Tyr</td>
+      <td>PHD finger 2</td>
+      <td>Disruption of Zn2+ binding in PHD finger 2</td>
+      <td>Reduction in ATPase activity (Kovač et al., 2018)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Val558Phe</td>
+      <td>Double chromodomain</td>
+      <td></td>
+      <td>Reduced ATPase activity (Kovač et al., 2018)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Arg572Gln</td>
+      <td>Double chromodomain</td>
+      <td>Disruption of contact with tracking strand</td>
+      <td>Reduced DNA binding affinity, Loss of full remodeling activity and ATPase activity (Kovač et al., 2018)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Leu912Val</td>
+      <td>ATPase lobe 2</td>
+      <td>No prediction made</td>
+      <td>Reduction of ATPase activity (Kovač et al., 2018)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>His1151Arg</td>
+      <td>ATPase lobe 2</td>
+      <td>In close proximity to motif Va, might disrupt contact of Trp1148</td>
+      <td>Reduction of ATPase activity, abolishment of remodeling activity (Kovač et al., 2018)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Arg1162Gln</td>
+      <td>ATPase lobe 2, motif VI</td>
+      <td>Located in ATPase motif VI (arginine finger), Disruption of interaction with ATP</td>
+      <td>Reduction of ATPase activity (Kovač et al., 2018)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>His1196Tyr</td>
+      <td>ATPase lobe 2</td>
+      <td>Located in the C-terminal bridge region, Removes negative regulation</td>
+      <td>Speed of chromatin remodeling is increased and better nucleosome centering capability (Kovač et al., 2018)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Leu1215</td>
+      <td>ATPase lobe 2/C-terminal bridge</td>
+      <td>Not located in modeled region</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sifrim-Hitz-Weiss syndrome (Sifrim et al., 2016; Weiss et al., 2016)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cys467Tyr</td>
+      <td>PHD finger 2</td>
+      <td>Disruption of Zn2+ binding in PHD finger 2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ser851Tyr</td>
+      <td>ATPase lobe 1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gly1003Asp</td>
+      <td>ATPase lobe 2</td>
+      <td>Disruption of contact with H3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Arg1068His</td>
+      <td>ATPase lobe 2</td>
+      <td>Disruption of structural integrity of RecA fold</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Arg1127Gln</td>
+      <td>ATPase lobe 2</td>
+      <td>Disruption of contact with DNA minor groove, equivalent arginine residue in SMARCA4 is implicated in ‘Coffin Siris syndrome’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Trp1148Leu</td>
+      <td>ATPase lobe 2, motif Va</td>
+      <td>Disruption of contact with guide strand</td>
+      <td>Uncoupling of ATPase activity and chromatin remodeling (Liu et al., 2017)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Arg1173Leu</td>
+      <td></td>
+      <td>Destabilization</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Val1608Ile</td>
+      <td></td>
+      <td>Not located in modeled region</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Other disease-related CHD4 mutations
 
 De novo missense mutations in CHD4 are also associated with an intellectual disability syndrome with distinctive dysmorphisms (Sifrim et al., 2016; Weiss et al., 2016). Mutations observed in patients with this syndrome are located in PHD finger 2 (Cys467Tyr) and predominantly in ATPase lobe 2 (Ser851Tyr, Gly1003Asp, Arg1068His, Arg1127Gln, Trp1148Leu, Arg1173Leu, and Val1608Ile). We mapped the sites of these mutations onto our structure (Figure 6) and attempted to predict the effects of the mutations as far as possible (Table 2).
 
@@ -118,7 +405,7 @@ Our structure also maps causative disease mutations and helps to investigate how
 
 ## Materials and methods
 
-## Preparation of CHD4
+### Preparation of CHD4
 
 H. sapiens CHD4 (Uniprot Accession code Q14839-1) was amplified from human cDNA using the following ligation-independent cloning (LIC) compatible primer pair (Forward primer: 5’-TAC TTC CAA TCC AAT GCA ATG GCG TCG GGC CTG-3’, reverse primer: 5’-TTA TCC ACT TCC AAT GTT ATT ACT GCT GCT GGG CTA CCT G-3’). The PCR product containing CHD4 was cloned into a modified pFastBac vector (a gift from S. Gradia, UC Berkeley, vector 438 C, Addgene: 55220) via LIC. The CHD4 construct contains an N-terminal 6xHis tag, followed by an MBP tag, a 10x Asn linker sequence, and a tobacco etch virus protease cleavage site. All sequences were verified by Sanger sequencing.
 
@@ -126,19 +413,19 @@ The CHD4 plasmid (500 ng) was electroporated into DH10EMBacY cells (Geneva Biote
 
 H. sapiens CHD4 was purified at 4°C. Frozen cell pellets were thawed and lysed by sonication. Lysates were cleared by two centrifugation steps (18,000 g, 4°C, 30 min and 235,000 g, 4°C, 60 min). The supernatant containing CHD4 was filtered using 0.8 μm syringe filters (Millipore). The filtered sample was applied onto a GE HisTrap HP 5 ml (GE Healthcare), pre-equilibrated in lysis buffer. After sample application, the column was washed with 10 CV lysis buffer, 5 CV high-salt buffer (1 M NaCl, 20 mM Na·HEPES pH 7.4, 10% (v/v) glycerol, 1 mM DTT, 30 mM imidazole pH 8.0, 0.284 μg ml−1 leupeptin, 1.37 μg ml−1 pepstatin A, 0.17 mg ml−1 PMSF, 0.33 mg ml−1 benzamidine), and 5 CV lysis buffer. The protein was eluted with a gradient of 0–100% elution buffer (300 mM NaCl, 20 mM Na·HEPES pH 7.4, 10% (v/v) glycerol, 1 mM DTT, 500 mM imidazole pH 8.0, 0.284 μg ml−1 leupeptin, 1.37 μg ml−1 pepstatin A, 0.17 mg ml−1 PMSF, 0.33 mg ml−1 benzamidine). Peak fractions were pooled and dialysed for 16 hr against 600 ml dialysis buffer (300 mM NaCl, 20 mM Na·HEPES pH 7.4, 10% (v/v) glycerol, 1 mM DTT, 30 mM imidazole) in the presence of 2 mg His6-TEV protease. The dialysed sample was applied to a GE HisTrap HP 5 ml. The flow-through containing CHD4 was concentrated using an Amicon Millipore 15 ml 50,000 MWCO centrifugal concentrator. The concentrated CHD4 sample was applied to a GE S200 16/600 pg size exclusion column, pre-equilibrated in gel filtration buffer (300 mM NaCl, 20 mM Na·HEPES pH 7.4, 10% (v/v) glycerol, 1 mM DTT). Peak fractions were concentrated to ~40 μM, aliquoted, flash frozen, and stored at −80°C. Typical yields of H. sapiens CHD4 from 1.2 L of Hi5 insect cell culture are 2–4 mg.
 
-## Preparation of CHD1
+### Preparation of CHD1
 
 S. cerevisiae Chd1 (residues 1–1247) used for FRET assays was cloned, expressed, and purified similarly to the previously described strategy for full-length Chd1 (Farnung et al., 2017).
 
-## Nucleosome preparation
+### Nucleosome preparation
 
 Xenopus laevis histones were expressed and purified as described (Dyer et al., 2003; Farnung et al., 2017). DNA fragments for nucleosome reconstitution were generated by PCR essentially as described (Farnung et al., 2018). A vector containing the Widom 601 sequence was used as a template for PCR. Super-helical locations are assigned based on previous publications (Farnung et al., 2018; Farnung et al., 2017; Kujirai et al., 2018; Sundaramoorthy et al., 2018), assuming potential direction of transcription from negative to positive SHLs. Large-scale PCR reactions were performed with two PCR primers (Structural studies: forward primer: CC TGT TAT TCC TAG TAA TCA ATC AGT GCC TAT CGA TGT ATA TAT CTG ACA CGT GCC T, reverse primer: CCC CAT CAG AAT CCC GGT GCC G; FRET assay: forward primer:/5Cy3/CAA TCA GTG CCT ATC GAT GTA TAT ATC TGA CAC GTG CCT, reverse primer:/5Cy5/CCC CAT CAG AAT CCC GGT GCC G) at a scale of 25 mL. The DNA construct used for structural studies was designed based on previously reported constructs used for the study of CHD remodelers. Nucleosome core particle reconstitution was performed using the salt-gradient dialysis method (Dyer et al., 2003). Quantification of the reconstituted nucleosome was achieved by measuring absorbance at 280 nm. Molar extinction coefficients were determined for protein and nucleic acid components and were summed to yield a molar extinction coefficient for the reconstituted extended nucleosome.
 
-## Reconstitution of nucleosome-CHD4 complex
+### Reconstitution of nucleosome-CHD4 complex
 
 Reconstituted nucleosome core particles and CHD4 were mixed at a molar ratio of 1:2. AMP-PNP was added at a final concentration of 1 mM and the sample was incubated for 10 min on ice. After 10 min compensation buffer was added to a final buffer concentration of 30 mM NaCl, 3 mM MgCl2, 20 mM Na⋅HEPES pH 7.5, 4% (v/v) glycerol, 1 mM DTT. The sample was applied to a Superose 6 Increase 3.2/300 column equilibrated in gel filtration buffer (30 mM NaCl, 3 mM MgCl2, 20 mM Na⋅HEPES pH 7.5, 5% (v/v) glycerol, 1 mM DTT). The elution was fractionated in 50 µL fractions and peak fractions were analyzed by SDS-PAGE. Relevant fractions containing nucleosome core particle and CHD4 were selected and cross-linked with 0.1% (v/v) glutaraldehyde. The crosslinking reaction was performed for 10 min on ice and subsequently quenched for 10 min using a final concentration of 2 mM lysine and 8 mM aspartate. The sample was transferred to a Slide-A-Lyzer MINI Dialysis Unit 20,000 MWCO (Thermo Scientific), and dialysed for 4 hr against 600 ml dialysis buffer (30 mM NaCl, 3 mM MgCl2, 20 mM Na⋅HEPES pH 7.4, 20 mM Tris⋅HCl pH 7.5, 1 mM DTT). The sample was subsequently concentrated using a Vivaspin 500 ultrafiltration centrifugal concentrator (Sartorius) to a final concentration of ~200–300 µM.
 
-## Cryo-EM analysis and image processing
+### Cryo-EM analysis and image processing
 
 The nucleosome-CHD4 sample was applied to R2/2 gold grids (Quantifoil). The grids were glow-discharged for 100 s before sample application of 2 μl on each side of the grid. The sample was subsequently blotted for 8.5 s (Blot force 5) and vitrified by plunging into liquid ethane with a Vitrobot Mark IV (FEI Company) operated at 4°C and 100% humidity. Cryo-EM data were acquired on a Titan Krios transmission electron microscope (FEI/Thermo) operated at 300 keV, equipped with a K2 summit direct detector (Gatan) and a GIF Quantum energy filter. Automated data acquisition was carried out using FEI EPU software at a nominal magnification of 130,000 × in nanoprobe EF-TEM mode. Image stacks of 40 frames were collected in counting mode over 10 s. The dose rate was ~4.3–4.5 e− per Å2 per s for a total dose of ~43–45 e− Å−2. A total of 3904 image stacks were collected.
 
@@ -148,16 +435,16 @@ The nucleosome-CHD4 reconstruction was obtained from 89,623 particles with an ov
 
 The second round of 3D classification yielded a class with a nucleosome-CHD42 complex. The particles were subsequently classified and refined. The resulting reconstruction with 40,233 particles had an overall resolution of 4.0 Å (gold-standard Fourier shell correlation 0.143 criterion). The final map was sharpened with a B-factor of −86 Å2. Local resolution estimates for both structures were determined using the built-in RELION tool.
 
-## Model building
+### Model building
 
 Crystal structures of the X. laevis nucleosome with the Widom 601 sequence (Vasudevan et al., 2010) (PDB code 3LZ0) and the double chromodomain of CHD4 (PDB code 4O9I) were placed into the density of the nucleosome-CHD4 complex as rigid bodies using UCSF Chimera. The protein sequence of the ATPase motor of CHD4 (residues 706–1196) was ‘one-to-one threaded’ using the ATPase motor of S. cerevisiae Chd1 (PDB code 5O9G) as a template by employing Phyre2 (Kelley et al., 2015). The threaded model was placed into the density as a rigid body using UCSF Chimera (Goddard et al., 2018). Additional density belonging to helical extensions and loops present in the ATPase motor region were modeled de novo. The modeled sequence range 1405–1416 is assigned tentatively based on a previously published Chd1 crystal structure (PDB code 3MWY).
 
 The nucleosome structure, double chromodomain structure, and ATPase motor model were adjusted manually in COOT (version 0.9-pre) (Emsley et al., 2010). The structure of PHD finger 2 (Mansfield et al., 2011) was then manually placed into the remaining, weaker density next to the double chromodomain and rigid-body docked (Figure 1—figure supplement 3), assisted by PDB code 6Q3M. Additional structural elements such as the H4 tail, the C-terminal bridge and loop regions of CHD4 were built using COOT. AMP-PNP and a coordinated Mg2+ ion were placed into the corresponding density. AMP-PNP was derived from the monomer library in COOT. The high resolution of our reconstruction enabled us to model some DNA-interacting side chains in two alternative conformations. The complete model was real-space refined in PHENIX (Afonine et al., 2018) with global minimization, local rotamer fitting, morphing, and simulated annealing. To model the nucleosome-CHD42 complex, the CHD4 model was duplicated and the second copy was rigid body docked into the additional density using UCSF ChimeraX (Goddard et al., 2018). The resulting structure was real space refined in PHENIX with global minimization, local rotamer fitting, morphing, and simulated annealing.
 
-## Förster resonance energy transfer (FRET) assay
+### Förster resonance energy transfer (FRET) assay
 
 100 nM of NCP with Cy3 and Cy5 5’-terminal DNA ends was incubated with 300 nM S. cerevisiae Chd1 (residues 1–1247) or full-length CHD4 and 1 mM ADP·BeF3 or 1 mM AMP-PNP at final reaction conditions of 50 mM NaCl, 3 mM MgCl2, 20 mM Na⋅HEPES pH 7.4, 0.1 mg/mL BSA, 10% (v/v) glycerol, 1 mM DTT. To increase FRET efficiency, we used a DNA construct that is shortened by 18 bp on the DNA exit side compared to the construct used for the structural studies. The sample was subsequently incubated for 30 min and transferred to 384-well plates. The reaction was then monitored using a fluorescence emission scan from 520 to 740 nm in a Tecan infinite m1000 pro plate reader with an excitation wavelength of 510 nm. All reactions were performed in triplicates in independent experiments. Emission spectra were normalized by total emissions. Averages of the triplicates and corresponding standard deviations are reported. The results were plotted using Matplotlib.
 
-## Figure generation
+### Figure generation
 
 Figures were generated using PyMol (version 2.2.2) and UCSF ChimeraX.

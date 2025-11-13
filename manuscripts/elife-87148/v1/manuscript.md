@@ -15,14 +15,14 @@
 
 ### Affiliations
 
-1. https://ror.org/05dq2gs74 Department of Medicine, Vanderbilt University Medical Center Nashville United States
-2. https://ror.org/04a9tmd77 Department of Medicine, Icahn School of Medicine at Mount Sinai New York United States
-3. https://ror.org/012jban78 Department of Medicine, Medical University of South Carolina Charleston United States
-4. https://ror.org/046rm7j60 Department of Medicine, University of California, Los Angeles, Geffen School of Medicine Los Angeles United States
-5. https://ror.org/03v76x132 Department of Medicine, Yale University School of Medicine New Haven United States
-6. https://ror.org/00py81415 Department of Medicine, Duke University Medical Center Durham United States
-7. https://ror.org/002pd6e78 Department of Medicine, Massachusetts General Hospital Boston United States
-8. https://ror.org/02r109517 Department of Medicine, Weill Cornell Medicine New York United States
+1. Department of Medicine, Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
+2. Department of Medicine, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+3. Department of Medicine, Medical University of South Carolina Charleston United States ([ROR:012jban78](https://ror.org/012jban78))
+4. Department of Medicine, University of California, Los Angeles, Geffen School of Medicine Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+5. Department of Medicine, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+6. Department of Medicine, Duke University Medical Center Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+7. Department of Medicine, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+8. Department of Medicine, Weill Cornell Medicine New York United States ([ROR:02r109517](https://ror.org/02r109517))
 
 † Corresponding author
 
@@ -46,4 +46,4 @@ The growing complexities of clinical medicine and biomedical research have cloud
 
 We aim to provide prospective applicants with a clearer understanding of the complex environment surrounding PSTPs. For this purpose, we have compiled a concise list of essential questions summarizing the concepts discussed above. These questions will prove valuable for trainees during their residency interviews in a PSTP.
 
-## Specific questions applicants might consider asking during a PSTP interview
+### Specific questions applicants might consider asking during a PSTP interview

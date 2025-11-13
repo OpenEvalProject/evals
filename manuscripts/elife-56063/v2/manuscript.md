@@ -43,23 +43,67 @@ In this study, we sought to identify factors that regulate the timing of interne
 
 Cortical interneurons are generated from a distal source (primarily the MGE) and undergo long-distance migration to their final destination in the neocortex. In the embryonic mouse, this developmental process is rapid: interneurons are generated starting ~e11 and robustly migrate into the cortex by e15 (Figure 1A; Lavdas et al., 1999; Marín and Rubenstein, 2001). As a result, it is tempting to assume that newly born interneurons automatically transition to a migratory state. As a counterexample, however, in human fetal development interneuron migration into the cortex is highly protracted. Previous studies have found that postmitotic interneurons slowly transition to a migratory state to populate the neocortex over the course of many weeks (Arshad et al., 2016; Hansen et al., 2013; Ma et al., 2013). To confirm this, we examined interneurons in fetal cortical sections by immunohistochemistry for Dlx2 (an interneuron marker). Consistent with prior reports, we observed an increase in the density of Dlx2+ interneurons in the cortex over time (15 post-conception weeks [pcw] to 22 pcw) (Figure 1B, Figure 1—figure supplement 1A,B). We hypothesized that the discrepancy between human and mouse interneuron development may be due to an external cue delivered to the MGE to promote interneuron migration. We therefore examined the developing mouse MGE (from e10.5 to e15.5) by histology and observed a striking increase in vascularization of the MGE and the underlying mantle region during the time period when mouse interneuron migration initiates (Figure 1C,D; Daneman et al., 2009; Paredes et al., 2018). Similarly, we found that vascularization of human fetal MGE slowly increased with developmental age, with robust vascularization not occurring until after 20 pcw (Figure 1E, Figure 1—figure supplement 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig1-v2.jpg)
+
+**Figure 1.:** (A) Coronal sections of Dlx6aCre; Ai9 embryonic mouse telencephalon over developmental time. tdTomato + interneurons progressively migrate into the cortex between e12 and e16. Cortex indicated by arrowheads. (B) Dlx2 immunohistochemistry (red) in human fetal cortex shows weeks-long progression of cortical interneurons migrating into cortex. (C) Representative images of isolectin labeling (green). (D) Quantification of isolectin + blood vessel staining as a percentage of MGE area for embryos ages e10.5–e15.5. (E) CD31 immunohistochemistry in human MGE from various fetal ages. (F) Top row, coronal sections of e14.5 MGE. Blood vessels labeled with isolectin in wildtype control, Apcdd1 loss-of-function and Apcdd1 gain-of-function mutants. Bottom row, coronal sections of e14.5 embryonic brain labeled with calbindin to show migratory interneurons in isolectin in wildtype control, Apcdd1 loss-of-function and Apcdd1 gain-of-function mutants. (G, H) Quantification of isolectin + MGE vascularization; (G) isolectin + vessel labeling as a percentage of MGE surface area; (H) average vessel size in square microns. (I) Quantification of total interneurons migrating into cortex/20 μm section. Paired t-test, *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative immunostaining for Dlx2 (red) in coronal sections of human fetal brain at 15, 17, and 22 post-conception weeks (pcw). Red bar denotes marginal zone (MZ), orange bar denotes cortical plate (CP). (B) Quantification of Dlx2 + interneuron cell density/mm2. (c) Dlx2 cell density (/mm2) present in MZ and CP. (C) Transverse sections of human fetal medial ganglionic eminence (MGE) at 17, 19, and 24 pcw immunolabeled for CD31. Scale bar denotes 200 μm. (D) Adjacent 21 pcw section confirming tissue is MGE by Nkx2-1 immunohistochemistry (top), CD31 IHC (bottom).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic representation of MGE explant preparation. MGE is dissected from embryo and sectioned at 250 μm. (B) Interneuron migration in e11.5 MGE explants linear correlation with surface area of MGE explant. (C) e14.5 MGE explant cultured from Dlx6aCre; Ai9 embryo. Right, higher magnification of boxed region on left. Arrowheads show DAPI + cells that are tdTomato-negative. (D) Computer segmented DAPI+ nuclei prior to quantification. (E) Representative DAPI-labeled MGE explants from embryos ages e10.5–14.5.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Coronal sections of (top) e13.5 and (bottom) e15.5 mouse telencephalon labeled with in situ hybridization antisense probe for Apcdd1. Higher magnifications of red boxed regions shows subpallium and is consistent with endothelial cell expression of Apcdd1. Scale bar denotes 100 μm.
+
 To determine whether there is a causal relationship between MGE vascularization and interneuron migration, we examined Apcdd1 mutant mice (Mazzoni et al., 2017). Apcdd1, a negative regulator of Wnt/β-catenin signaling, is critical for CNS vascular development and blood-brain barrier maturation (Shimomura et al., 2010). We examined MGE vessel density and average vessel size in Apcdd1 GOF (an endothelial cell-specific transgenic gain-of-function) and LOF (whole animal null) mutants at e14.5 and found that, similar to the retina and cerebellum (Mazzoni et al., 2017), vascularization in the MGE is decreased in Apcdd1 GOF and increased in Apcdd1 LOF mice versus wildtype controls (Figure 1F–H). To confirm that a whole animal Apcdd1 null was appropriate for analysis, we performed in situ hybridization for Apcdd1 and found that its expression is confined to vasculature in the embryonic mouse brain (Figure 1—figure supplement 3). Importantly, fewer interneurons migrated into the cortex in Apcdd1 GOF mutants, in which vascularization was less extensive compared to wildtype controls. Conversely, a trend toward more calbindin + migrating interneurons were present in Apcdd1 LOF mutants (p=0.236, paired t-test) in which vessel size and density was greater (Figure 1I). These results suggest that the density of endothelial cells within neural tissue is a critical regulator of interneuron migration.
 
 In order to identify a mechanism by which this occurs, we used an MGE explant culture approach from mouse embryos to quantify the number of migrating neurons at various developmental stages (Figure 2A, Figure 1—figure supplement 2A–D). Given that the MGE is progressively vascularized from e10 to e15, we reasoned that MGE explant migration would increase with developmental age. We further reasoned that in early MGE explants that were not extensively vascularized, that mouse interneurons would be similarly immobile like human interneurons. To normalize for differences in MGE size at different ages, whole MGE tissue was dissected and sectioned at 250 μm. Then, the number of DAPI + migratory cells was normalized to the surface area of the MGE explant. Using this approach, we found a strong linear correlation between the number of migratory cells and MGE explant surface area (r2 = 0.6829) (Figure 1—figure supplement 2B). Further, we found that nearly all migratory DAPI + cells were interneurons using the Dlx6aCre driver line crossed to Ai9 in order to fate-map the migratory lineage (Monory et al., 2006; Figure 1—figure supplement 2C,D). Classic studies have shown that MGE explants at e14.5 and e15.5 exhibit robust interneuron migration within hours of initial plating (Bellion et al., 2005; Polleux et al., 2002; Wichterle et al., 1999). Consistently, we found that interneurons later timepoint MGE explants exhibited robust migration, whereas explants from earlier timepoints (e10.5–e12.5) had a limited capacity to migrate (Figure 2B, Figure 1—figure supplement 2E). One possibility is that interneurons possess an intrinsic timer such that, given sufficient time in culture, early timepoint explants would migrate to the same extent as older MGE explants. However, even when cultured for up to a week, early explants did not significantly migrate more after the first 48 hr (data not shown).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig2-v2.jpg)
 
-**Figure 2.:** (A) Schematic representation of MGE explant and organotypic slice preparation to assess interneuron migration in vitro. (B) Number of interneurons (normalized to MGE surface area) migrating from MGE explants from embryos ages e10.5–e15.5. (C) Number of interneurons (normalized to MGE surface area) migrating from e11.5 and e14.5 MGE explants with or without primary culture endothelial cell conditioned medium (p-EndoCM) or immortalized endothelial cell line conditioned medium (EndoCM). (D) Number of interneurons (normalized to MGE SA) migrating from e11.5 MGE explants treated with control, EndoCM, HEK 293 conditioned medium (HEK CM) or boiled EndoCM. (E) Representative images of DIV4 organotypic slice cultures without (control) or with EndoCM added. Right is higher magnification of boxed region on left. (F) Number of Dlx6aCre; Ai9 tdTomato + interneurons migrating into cortex over time in coronally section organotypic slice cultures (DIV 0–4) with or without EndoCM treatment. (G) Size fractionation of EndoCM assayed for normalized interneuron migration from e11.5 MGE explants. Paired t-test, *p<0.05; **p<0.01; ***p<0.001.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Schematic representation of MGE explant and organotypic slice preparation to assess interneuron migration in vitro. (B) Number of interneurons (normalized to MGE surface area) migrating from MGE explants from embryos ages e10.5–e15.5. (C) Number of interneurons (normalized to MGE surface area) migrating from e11.5 and e14.5 MGE explants with or without primary culture endothelial cell conditioned medium (p-EndoCM) or immortalized endothelial cell line conditioned medium (EndoCM). (D) Number of interneurons (normalized to MGE SA) migrating from e11.5 MGE explants treated with control, EndoCM, HEK 293 conditioned medium (HEK CM) or boiled EndoCM. (E) Representative images of DIV4 organotypic slice cultures without (control) or with EndoCM added. Right is higher magnification of boxed region on left. (F) Number of Dlx6aCre; Ai9 tdTomato + interneurons migrating into cortex over time in coronally section organotypic slice cultures (DIV 0–4) with or without EndoCM treatment. (G) Size fractionation of EndoCM assayed for normalized interneuron migration from e11.5 MGE explants. Paired t-test, *p<0.05; **p<0.01; ***p<0.001.
 
 Given the diffuse distribution of blood vessels in the MGE, the most likely mechanism is that endothelial cells produce a paracrine signal to induce interneuron migration. To test this directly, we prepared conditioned medium from primary cultures of embryonic brain ECs (primary culture endothelial cell conditioned medium [p-EndoCM]) and added it to e11.5 MGE explants. Consistent with our hypothesis, addition of p-EndoCM resulted in a robust increase in interneuron migration (Figure 2C). We found, however, that primary embryonic brain EC cultures introduced unwanted variability, and for subsequent experiments, we obtained EndoCM from an immortalized human EC line, HBEC5i (Wassmer et al., 2006). To further reduce inter-experimental variability, interneuron migration counts were normalized to within-experiment negative (untreated) controls. Hence, subsequent data is presented as fold-change in interneuron migration over controls. Similar to p-EndoCM, conditioned medium from HBEC-5i (EndoCM) also robustly increased e11.5 MGE explant migration (Figure 2C). Interestingly, e14.5 MGE migration was also significantly increased by EndoCM (Figure 2C). We next tested the effect of EndoCM on interneuron migration in an organotypic slice culture. Here, we used Dlx6aCre; Ai9 + e11.5 embryos in order to visualize interneurons as they migrate within a coronal slice of telencephalon from the MGE into the cortex (Figure 2A,E). As with MGE explants, EndoCM also significantly increased the rate and overall number of interneurons that migrated into the cortex (Figure 2F). As a negative control, we tested the biological activity of conditioned medium from HEK 293 cells (HEK CM). HEK CM did not increase MGE explant migration at either age (Figure 2D). Moreover, we found that pre-boiling EndoCM eliminated its biological activity, suggesting a protein source as a regulator of interneuron migration (Figure 2D). Finally, we size-fractionated EndoCM and found that biological activity was strongly reduced between 30 and 100 kDa (Figure 2G).
 
 In order to identify candidate proteins, we performed bulk RNA sequence analysis on HBEC5i and HEK cells. We screened the dataset for genes with the greatest differential expression, enriched in HBEC5i that produced proteins between 30 and 100 kDa, which were also secreted (Gene Ontology [GO] term: extracellular space) (Figure 3—figure supplement 1). After further curation to eliminate membrane-tethered molecules, we obtained a short list of 24 candidates (Supplementary file 1). We functionally tested a number of candidates, including VEGF-A (Barber et al., 2018) and follistatin; however, two proteins, SPARC and SerpinE1, exhibited the most robust biological activity in their ability to increase e11 MGE migration (Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) Parasaggital sections of e13.5 embryonic brain showing in situ hybridization signal for (A) SPARC* and (B) SerpinE1#. Insets for (a) and (b) are higher magnification or boxed regions showing medial ganglionic eminence (MGE) expression. (C) Western blots of HEK 293 conditioned medium (HEK CM) (three replicates) and EndoCM (four replicates) for SPARC and SerpinE1. (D) Quantification of western band intensity for SPARC (green) and SerpinE1 (blue) in HEK CM and EndoCM. (E) Quantification of normalized interneuron migration from MGE explants treated with SPARC (filled green), SerpinE1 (filled blue) compared with control (filled black). (F) Quantification of normalized interneuron migration from MGE explants treated with EndoCM (filled red), EndoCM and SPARC function-blocking antibody (unfilled green), EndoCM and SerpinE1 small molecule inhibitor (unfilled blue), and EndoCM with combination of SPARC function-blocking antibody and SerpinE1 small molecule inhibitor (unfilled gray). (G) Number of Dlx6aCre; Ai9 tdTomato + interneurons migrating into cortex over time in coronally section organotypic slice cultures (DIV 0–4) with or without EndoCM, SPARC or SerpinE1 treatment. (H) Similar organotypic slice culture experiments as in (G) with or without primary EndoCM (p-EndoCM), or p-EndoCM depleted with SPARC function-blocking antibody and SerpinE1 small molecule inhibitor, SK216. Paired t-test, *p<0.05; **p<0.01; ***p<0.001. * from Allen Brain Atlas (http://developingmouse.brain-map.org/); # from GenePaint (http://gp3.mpg.de).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Scatterplot of RNA-seq reads plotting log10(HEK 293) sample versus log10(HBEC5i) sample. Red dots are HBEC5i-enriched secreted factor hits. All other reads are gray dots. SerpinE1 circled in blue. SPARC circled in green.
 
 We examined the expression of SPARC and SerpinE1 in e14.5 MGE through publicly available expression databases (Allen Brain Atlas and GenePaint) and found that both were specifically expressed in the embryonic CNS vasculature (Figure 3A,B). We also confirmed by western blotting that SPARC and SerpinE1 were present in EndoCM at significantly higher levels compared to HEK292 CM (Figure 3C,D). We then added recombinant SPARC or SerpinE1 to MGE explants and found that cell migration was increased, in particular with SerpinE1 (Figure 3E). We then tested EndoCM in which SPARC and SerpinE1 activity were depleted. We used a function-blocking antibody for SPARC (Sweetwyne et al., 2004), whereas SerpinE1 activity was blocked with a small molecule inhibitor (SK216; Masuda et al., 2013). These reagents separately significantly reduced the capacity of EndoCM to increase e11.5 MGE migration (Figure 3F). However, inhibition of both SPARC and SerpinE1 does not reduce interneuron migration further, suggesting that the two molecules may act on intersecting pathways. Finally, we tested whether SPARC and SerpinE1 could increase interneuron migration in an organotypic slice over time. We found that both proteins significantly increased the rate and overall number of interneurons that migrated into the cortex over time (Figure 3G). Finally, we tested whether SPARC and SerpinE1 were active components in p-EndoCM. We found that p-EndoCM increased interneuron migration into the cortex in organotypic slice cultures over control and that the effect was abrogated by adding SPARC function-blocking antibody and SK216 to p-EndoCM (Figure 3H).
 
 Previous studies have demonstrated that hSC-interneurons migrate and mature at a slow rate, reminiscent of the protracted time frame of interneuron development in the human fetus (Arshad et al., 2016; Hansen et al., 2013; Ma et al., 2013). Given that SPARC and SerpinE1 elicit interneuron migration in e11.5 MGE explants and organotypic slice cultures, we tested whether these factors might similarly accelerate the developmental time frame for hSC-interneurons. Using a pan-tdTomato expressing human iPSC line (CAG-tdTomato knocked into AAVS1 locus), we achieved efficient differentiation to ventral telencephalic identity using established protocols (Bagley et al., 2017; Figure 4—figure supplement 1A). hSC-interneuron differentiation was confirmed using AAV Dlx5/6-GFP (Dimidschstein et al., 2016; Figure 4—figure supplement 1B). At day 35 of differentiation (DIFF 35), ventral telencephalic organoids were treated with either SPARC, SerpinE1, or both for 14 days. At DIFF 49, we tested for hSC-interneuron migration by dissociating either untreated or SPARC/SerpinE1-treated organoids. Here, we further divided the groups: one group continued to be exposed to SPARC and SerpinE1 and the other was left untreated (Figure 4—figure supplement 2A). We observed a significant increase in migratory distance in the group treated both before and afterward with SPARC and SerpinE1. Importantly, we observed an even greater biological effect when SPARC and Serpin were added to dissociated cells after pre-treatment (Figure 4—figure supplement 2C). Thus, in subsequent xenograft experiments, SPARC and SerpinE1 were added as a pre-treatment for 14 days and also added to the cells at the time of transplantation.
 
 Previous studies have xenografted hSC-interneurons into a more functionally relevant setting: neonatal mouse cortex. They found that functional maturation rate is prolonged, requiring ~7 months (Nicholas et al., 2013; Shao et al., 2019). We then tested the capacity of control and SPARC/SerpinE1-treated ventral organoids to integrate following xenotransplant into immune-compromised (NSG) mouse cortex. We first analyzed transplants 28 days post-engraftment. We confirmed that tdTomato + hSC interneurons were almost all Dlx2+ (Figure 4A) and also found that Combo-treated hSC-interneurons migrated significantly further than controls (Figure 4B,C). At 56 days post-transplantation, we traced and analyzed the morphologies of hSC-interneurons in 3D and found that they possessed longer processes and branched more extensively (Figure 4D, Figure 4—figure supplement 3).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig4-v2.jpg)
+
+**Figure 4.:** (A) Immunohistochemistry for Dlx2 (green), Dapi (blue), and tdTomato + hSC interneurons (red) near injection site 1 month post-transplant. (B) Representative images of coronal sections of host mouse cortex 1 month post-transplant of control untreated and SPARC/SerpinE1 pre-treated hSC-interneurons (asterisk denotes transplant site). Arrowheads show tdTomato + hSC interneurons migrating away from transplant site. (C) Quantification of migratory distance of hSC-interneurons from site of injection 1 month post-transplantation. (D) Quantification of hSC-interneuron morphology by average process length (left) and total number of neurite branches (right). (E–O) Whole-cell recordings of hSC-interneurons 2 months post-transplant. Untreated control (blue), SPARC and SerpinE1 pre-treated (red). (E) Representative traces of spontaneous AP firing. (F) Evoked firing upon square pulse depolarization. (G) Representative traces of spontaneous miniature EPSCs. (H) Step recordings of sodium current. (I–O) Quantitative measurements of (I) spontaneous mEPSC frequency (Hz), (J) AP threshold (mV) (p=0.0166), (K) sodium-to-potassium current ratio (p=0.0338), (L) resting membrane potential (p=0.12), (M) capacitance (p=0.067), (N) input resistance (p=0.0155), (O) tau (p=0.0239). Paired t-test, *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Time line for hSC differentiation to cortical interneuron fate. (B) Differentiation day (DIFF) 12 organoids sectioned at 16 μm are largely Oct4-negative and almost completely Pax6-positive, indicating successful neural differentiation. DIFF 25 organoids sectioned at 16 μm are FoxG1- and Nkx2-1-positive. DIFF 45 whole organoid labeled with AAV-Dlx5/6-eGFP shows efficient differentiation to interneuron cell fate.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Schematic of in vitro treatment groups for hSC-interneurons with SPARC and SerpinE1. (B) Example image of live tracking of hSC-interneurons plated as monolayer. (C) Quantification of hSC-interneuron treatment groups for total migratory distance over 48 hr. Paired t-test, *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Example of traced hSC-interneuron in cortex 2 months post-transplant. Primary neurite in red, secondary neurite in blue, tertiary neurite in yellow. (B, C) Representative traces of cell morphology for (B) untreated control and (C) SPARC/SerpinE1 pre-treated hSC-interneurons 2 months post-transplant. (D) Quantification of branch points in primary, secondary, and tertiary process for untreated control and SPARC/SerpinE1 pre-treated groups.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/56063/elife-56063-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Untreated control (blue) and pre-treated (red) hSC-interneurons measured for (A) sodium current (pico-amps), (B) maximum number of action potentials (APs) elicited by square pulse depolarization, (C) maximum AP depolarization (milli-volts), (D) sodium-to-potassium peak current/max AP depolarization, (E) AP risetime, (F) AP width at half maximum amplitude (milliseconds).
 
 Given the improvements in migration and morphology exhibited by treated hSC-interneurons, we tested their functional maturity by employing whole-cell recordings from tdTomato labeled transplanted cells in acute slices of frontal cortex 56 days post-transplant. Consistent with more mature neuronal function, recordings from treatment group neurons showed significantly reduced membrane input resistance, faster membrane time constants, more hyperpolarized action potential (AP) thresholds, and increased ratios of voltage-gated sodium currents versus voltage-gated potassium currents (Figure 4E–O). Additionally, other measures of neuronal maturity we tested appeared to collectively trend toward more mature functional phenotypes in the treatment group of neurons, albeit these were not statistically significant (Figure 4—figure supplement 4). Specifically, treated cells appear to have larger membrane capacitances (p=0.067), more hyperpolarized resting potentials (p=0.12), larger voltage-gated sodium currents (p=0.20), faster AP rise rates (p=0.21), narrower APs (p=0.22), and generated a greater number of APs (p=0.24) (Figure 4—figure supplement 4). Taken together, these electrophysiological profiles suggest that treated neurons may have an accelerated trajectory toward functional maturity.
 
@@ -83,55 +127,88 @@ Our findings demonstrate the utility of priming hSC-interneurons for transplanta
 
 ## Materials and methods
 
-## MGE explant migration assay
+### MGE explant migration assay
 
 Swiss Webster timed plugs were generated to obtain embryos ranging in age from e10.5 to e15.5. MGE was microdissected under sterile conditions into ice-cold Leibovitz’s L15 medium (Gibco). MGE tissue was then quickly embedded into low melt agarose (4%) in Leibovitz’s L15 medium (Gibco). Embedded blocks were sectioned at 250 μm using a vibratome (Leica VT1000). MGE slices were then individually transferred into four-well slides, then covered with 300 μL Matrigel (Corning) (1:1 dilution) in Neurobasal medium (Gibco). Slides were then transferred to 37°C incubator for 15 min to allow Matrigel to solidify. Then, 300 μL MGE medium containing Neurobasal medium, 2% B27, 1% N2, 1% Glutamax, and 1% penicillin/streptomycin was added on top of Matrigel. After 48 hr, MGE explants were fixed at room temperature in 4% paraformaldehyde/PBS for overnight and DAPI (2 ng/mL) was added to the chamber to label explants. Following one wash with PBS, MGE explants were imaged by confocal microscopy. Confocal images were analyzed using ImageJ plugin, a combination of background removing, cell counting, and maximum intensity in order to automatically segment and quantify DAPI + nuclei.
 
 The following reagents were added to MGE explants diluted in overlying Matrigel:
 
-ReagentWorking concentrationp-EndoCM1:1EndoCM1:1SPARC50 ng/mLSerpinE120 ng/mLSPARC function-blocking antibody (mab 303; Sweetwyne et al., 2004)1:5SK216 (Masuda et al., 2013)100 μM
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Working concentration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>p-EndoCM</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>EndoCM</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>SPARC</td>
+      <td>50 ng/mL</td>
+    </tr>
+    <tr>
+      <td>SerpinE1</td>
+      <td>20 ng/mL</td>
+    </tr>
+    <tr>
+      <td>SPARC function-blocking antibody (mab 303; Sweetwyne et al., 2004)</td>
+      <td>1:5</td>
+    </tr>
+    <tr>
+      <td>SK216 (Masuda et al., 2013)</td>
+      <td>100 μM</td>
+    </tr>
+  </tbody>
+</table>
 
 For untreated controls, the appropriate vehicle at the same volume was added to x medium. Vehicle for p-EndoCM and EndoCM: Neurobasal; vehicle for SPARC: water; vehicle for SerpinE1: PBS; vehicle for SPARC function-blocking antibody: PBS; vehicle for SK216: water. For controls comparing different treatment groups, vehicle control results were pooled.
 
-## Apcdd1 mouse mutants
+### Apcdd1 mouse mutants
 
 Apcdd1 LOF mutants were generated by crossing the Apcdd1 conditional allele (Turakainen et al., 2009) to the heat shock promoter Cre deleter line (Dietrich et al., 2000) to generate a whole animal null. The Apcdd1 GOF line was generated as described previously (Mazzoni et al., 2017) in which a transgenic mouse (TRE3-Apcdd1-IRES-mCherry) is crossed to Cadherin-5::tTa (Sun et al., 2005), which results in an endothelial cell-specific Apcdd1 GOF mutant. All mice share the same mixed 129 and C57BL/6J genetic background. We used mixed 129 and C57BL/6J mice as a wildtype control group for comparison.
 
-## Organotypic slice culture migration assay
+### Organotypic slice culture migration assay
 
 We employed a modified protocol previously described (Baffet et al., 2016). Briefly, Dlx6aCre; Ai9 e11.5 embryos were sac’d and whole brain was isolated by microdissection in aCSF medium bubbled with O2. Brains were embedded in low melt agarose (4%) in aCSF medium and sectioned by vibratome at a thickness of 250 μm. Sections were imaged live daily by confocal microscopy. Images were analyzed using ImageJ plugin trackMate in order to automatically segment and quantify migrating interneurons in cortex.
 
-## Cell lines
+### Cell lines
 
 Three cell lines were used in this study: two immortalized lines, HEK 293 and HBEC-5i, and one human iPSC line, NCRM1, which was modified by CRISPR to knock-in tdTomato into the AAVS1 locus. All lines were routinely tested for mycoplasma and certified as negative prior to use in experiments.
 
-## Derivation of conditioned medium
+### Derivation of conditioned medium
 
 Primary mouse BECs were purified from P7 wildtype brains as described (Daneman et al., 2010), plated on gelatin-coated T75 flask and grown to confluence in mouse endothelial cell media supplemented with growth factors (VEGF, EGF, FGF-2, insulin) and 10% FBS media (Cell Biologics; Catalog # M1168; Chicago, IL) as described (Mazzoni et al., 2017). To collect p-EndoCM, cells were rinsed with PBS and then medium was switched to Neurobasal and 1% Glutamax for 3 days. Supernatant was collected, centrifuged at 4000 × g for 15 min, and filtered to remove cells. Then medium was concentrated using a 3000 kDa MWCO Centricon column (Millipore). Concentrated medium was stored at −80°C until use. Similarly, HBEC-5i cells were maintained in DMEM/F12, 10% FBS, 40 μg/mL endothelial cell growth supplement medium, rinsed with PBS, and then switched to Neurobasal, 1% Glutamax medium for 3 days. EndoCM was similarly spun down, filtrated, and concentrated using 3000 kDa MWCO Centricon column (Millipore). Concentrated EndoCM was also stored at −80°C until use. For size fractionation experiments, 10, 50, and 100 kDa MWCO Centricon columns (Millipore) were used for media concentration. Control medium was unconditioned medium fractionated with 3000 kDa MWCO column. HEK 293 cells were maintained in DMEM, 10% FBS, 1% Glutamax medium and switched to Neurobasal, 1% Glutamax medium following PBS rinses to collect HEK CM. It was also concentrated using 3000 kDa MWCO Centricon columns.
 
-## RNA sequence analysis
+### RNA sequence analysis
 
 HBEC-5i and HEK 293 cells were switched over to Neurobasal, 1% Glutamax medium in the same manner as if EndoCM and HEK CM were to be collected. Three days later, cells were harvested in Trizol and RNA was purified using directZol miniPrep kit (Zymo). Samples were quality-controlled and sequenced at Novogene using Illumina HigSeq/MiSeq with a sequencing depth of 20 million reads. Sequence data was then analyzed using DAVID to identify high confidence differentially expressed hits of the appropriate molecular weight. These data were further screened by GO search term ‘extracellular space’ to identify secreted factors. Additional curation was performed to remove membrane-tethered proteins and pseudogenes in order to arrive at a short list of candidates (Supplementary file 1).
 
-## Immunohistochemistry and western blots
+### Immunohistochemistry and western blots
 
 Immunohistochemistry on Apcdd1 mutants were as described previously (McKenzie et al., 2019). E14.5 Apcdd1 mutant and wildtype control brains were cryosectioned at 16 μm and immunolabeled with Alexa488-tagged isolectin (1:100; Thermo Fisher Scientific); calbindin (1:1000; ImmunoStar). Sections were acquired as tiled maximum projection images for analysis using FIJI for blood vessel quantification and ImageJ plugin cell counting for segmentation and calbindin + cell counts. Western blot antibodies: Goat-anti-SPARC (1:1000; R&DSystems) and rabbit-anti-SerpinE1 (1:1000; Abcam) were used to detect EndoCM and HEK CM concentrated medium, both loaded with 20 μL. Xenograft 50 μm sections were immunolabeled with anti-Dlx2 (1:1000; Millipore).
 
-## Human fetal cortical tissue
+### Human fetal cortical tissue
 
 We obtained fetal tissue samples for research following induced termination of pregnancy for maternal indications. Sample collection followed the policies of the Columbia University Irving Medical Center Institutional Review Board. IRB waiver AAAS5541 was obtained for non-human subjects research, deemed medical waste.
 
-## Human stem cell differentiation
+### Human stem cell differentiation
 
 Parental human iPSC line (NCRM 1, NIH Common Fund Regenerative Medicine Program) was genetically altered by CRISPR-mediated targeting of AAVS1 locus to introduce floxed-stop CAG-boosted tdTomato donor DNA construct. EF1-alpha promotor-driven Cre recombinase was introduced episomally to generate pan-tdTomato + human iPSC line (pan-red line). The pan-red line was differentiated toward ventral telencephalic fate using and adaptation of previously described methods (Bagley et al., 2017; Xiang et al., 2017). In brief, pan-red hiPSCs were plated into ultra-low attachment u-bottom 96-well plates (9000 cells/well) in neural induction medium containing LDN-193189 (100 mM), SB431542 (10 mM), and XAV939 (10 mM) to form organoids for 10 days. From days 10 to 17, cells changed to neuronal differentiation medium containing N2 and B27 (Invitrogen) with IWP2 (2.5 μM) and SAG (100 nM). From day 18 onward, neuronal differentiation medium also contains BDNF (20 μg/mL), cAMP (125 mM), and ascorbic acid (200 μg/mL). At day 35, SPARC (50 ng/mL) and SerpinE1 (20 ng/mL) are added for 14 days. At day 49, organoids are gently dissociated in EDTA for 5 min, then Acutase 15 min at 37°C for downstream experiments (in vitro migration assays and xenotransplants).
 
-## Xenograft migration and morphology analysis
+### Xenograft migration and morphology analysis
 
 We performed stereotactic intracranial injections into the right frontal subcortical white matter (coordinates from bregma: 1.0 mm right – 1.0 mm front – 1.0 mm deep) of NRG (NOD.Cg-Rag1tm1MomIl2rgtm1Wjl/SzJ, Jackson Laboratories) mouse pups at P6–9 as previously described, adapted for mouse pups (Lei et al., 2011). We injected 12 P5/P6 NRG pups with control and 12 P5/P6 NRG pups with SPARC/SerpinE1-treated cells (~50,000 cells/injection). At 28 and 56 days post-injection, animals were sacrificed and brains were processed for analysis (below). All procedures were performed according to Columbia University IACUC protocol no. AC-AAAV0463.
 
 One month post-transplant, host cortex was sectioned by vibratome at 50 μm. Migratory distance was assessed by scoring tdTomato + cell linear distance from graft site. Two months post-transplant, 300 μm vibratome sections were imaged by confocal microscopy to visualize tdTomato + cell morphology. Processes were traced using ImageJ plugin NeuronJ to assess neurite length and degree of branching.
 
-## Acute brain slice preparation and electrophysiology
+### Acute brain slice preparation and electrophysiology
 
 A more complete description of acute brain slice preparation and basic electrophysiology methods has been previously described (Crabtree et al., 2016; Crabtree et al., 2017).
 
@@ -139,33 +216,33 @@ Briefly, mice were anesthetized with isoflurane, decapitated, and brains were re
 
 At the time of recording, slices were transferred to a submerged recording chamber and continuously perfused with standard aCSF (Crabtree et al., 2016). Whole-cell patch-clamp recordings were made using borosilicate glass pipettes (initial resistance, 2.0–5.5 MΩ). An internal solution was used that contained the following (in mM): KMeSO4 145, HEPES 10, NaCl 10, CaCl2 1, MgCl2 1, EGTA 10, Mg-ATP 5, and Na2GTP 0.5, pH 7.2 with KOH. Solution junction potentials were small and were not corrected.
 
-## Basic electrophysiology
+### Basic electrophysiology
 
 Recordings employed an Axon 700B MultiClamp amplifier, CV-7B headstage, and a Digidata 1440A data acquisition system. All signals were acquired at 10 kHz (100 µs). With the exception of spontaneous synaptic recordings (filtered at 2 kHz), all other signals were filtered at 10 kHz. Cells targeted for recording were identified by red fluorescence. Confirmation of correctly targeted recordings was further validated by observation of a significant reduction in red fluorescent signal in the recorded cell at the end of the recording likely resulting from ‘wash-out’ of the indicator protein via the recording pipette solution.
 
-## Current clamp recordings
+#### Current clamp recordings
 
 All cells were forced to −70 mV with a small negative current of variable amplitude. Bridge-balance mode was employed to minimize voltage errors and artifacts.
 
 Resting membrane potential was reported as the cell voltage in I = 0 mode observed shortly after whole-cell membrane rupture. The majority of cells were silent at rest leading to an uncomplicated reporting of Vrest. A minority of cells (typically more hyperpolarized cells), however, displayed spontaneous AP or AP-like events rendering Vrest measures somewhat ambiguous. In this subset, Vrest was estimated as the midpoint voltage between the AP threshold voltage and deepest hyperpolarization after the AP.
 
-## Membrane time constant
+#### Membrane time constant
 
 Using small hyperpolarizing current steps, the region of the voltage response from 5 ms after the start of the step to 205 ms within the step was fitted with a single exponential using the standard Clampfit Chebyshev method fitting routine. Accuracy of fits were further confirmed visually.
 
 APs were elicited in cells forced to −70 mV with small (2.5–5 pA), incremental current steps of 500 ms duration. Unless otherwise indicated, reported metrics assessed the first AP elicited from current step recordings.
 
-## AP width
+#### AP width
 
 The first AP elicited from current step recordings was used for analysis. AP widths were measured using the standard Clampfit analysis routine ‘half-width’, the AP width at half-height, and reported as AP width.
 
-## AP threshold
+#### AP threshold
 
 The first AP elicited from current step recordings was used for analysis. The voltage trace of this current step was converted to a time versus dV/dt plot and overlaid onto the original AP voltage trace. AP threshold was then determined visually as the first significant deviation of dV/dt from its baseline rate. All traces analyzed were assessed together in a single analysis session and all traces were displayed at the same time and dV/dt scale to avoid bias in threshold detection. A subset of traces were converted to ‘phase-plane’ plots (V versus dV/dt) to further validate threshold assignments.
 
 AP maximum rate of rise (dV/dt max) was determined using the standard Clampfit ‘maximum rise slope’ routine. As with other AP measures, the first AP elicited from current step recordings was used for analysis.
 
-## Voltage clamp recordings
+#### Voltage clamp recordings
 
 All cells were held at −70 mV unless otherwise noted. As cell resistances were high (typically ~1–2 GΩ), pipette series resistances were low (typically <10 MΩ), and maximal elicited currents were relatively small (typically 1–3 nA), series resistance compensation was not employed. The cell capacitance reported is that reported by the 700B amplifier which is the fast component which represents contributions from the soma and proximal process compartments.
 
@@ -173,6 +250,6 @@ Voltage-activated currents were elicited with incremental 100 ms voltage steps (
 
 Spontaneous synaptic transmission was recorded from cells held at −70 mV in the absence of TTX. A standard recording duration of 3 min was employed. The observed synaptic events are likely dominated by glutamatergic synaptic events as the reversal potential for GABA-A currents of our solution combination was ~−60 mV. The frequency of synaptic events was highly variable between cells with some cells ‘silent’ (or nearly so) while other cells had synaptic event frequencies in excess of 20 Hz. Due to the extreme variability in these synaptic event profiles, herein we present only exemplary traces of the synaptic activity we observed.
 
-## Statistics
+#### Statistics
 
 Electrophysiological parameters were compared with pairwise t-tests between conditions. t-Tests were one-tailed with a directional hypothesis of ‘more maturity’ of the metric in the treated group.

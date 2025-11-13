@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.16747.001 Listeners with normal hearing show considerable individual differences in speech understanding when competing speakers are present, as in a crowded restaurant. Here, we show that one source of this variance are individual differences in the ability to focus selective attention on a target stimulus in the presence of distractors. In 50 young normal-hearing listeners, the performance in tasks measuring auditory and visual selective attention was associated with sentence identification in the presence of spatially separated competing speakers. Together, the measures of selective attention explained a similar proportion of variance as the binaural sensitivity for the acoustic temporal fine structure. Working memory span, age, and audiometric thresholds showed no significant association with speech understanding. These results suggest that a reduced ability to focus attention on a target is one reason why some listeners with normal hearing sensitivity have difficulty communicating in situations with background noise. DOI: http://dx.doi.org/10.7554/eLife.16747.001
+Listeners with normal hearing show considerable individual differences in speech understanding when competing speakers are present, as in a crowded restaurant. Here, we show that one source of this variance are individual differences in the ability to focus selective attention on a target stimulus in the presence of distractors. In 50 young normal-hearing listeners, the performance in tasks measuring auditory and visual selective attention was associated with sentence identification in the presence of spatially separated competing speakers. Together, the measures of selective attention explained a similar proportion of variance as the binaural sensitivity for the acoustic temporal fine structure. Working memory span, age, and audiometric thresholds showed no significant association with speech understanding. These results suggest that a reduced ability to focus attention on a target is one reason why some listeners with normal hearing sensitivity have difficulty communicating in situations with background noise.
 
 ## Introduction
 
@@ -33,9 +33,503 @@ As additional cognitive measures, working memory capacity (e.g., Akeroyd, 2008; 
 
 ## Results
 
-To which extent did speech understanding in a cocktail-party situation depend on the capability of directing selective attention to a target in the presence of distractors, binaural sensitivity for the temporal fine structure (TFS), and other factors? To answer this question, a multiple linear regression analysis was conducted (the statistical details are described in Materials and methods). The criterion variable was the speech recognition score (SRS) defined as the proportion correct in the simulated cocktail-party listening task with two interfering speakers. We used a sentence identification task based on a German matrix test (Wagener et al., 1999a) and presented binaural simulations of an anechoic environment (see Materials and methods). The nine predictors were (1) the elevation of the intensity difference limen caused by the backward masker (DLelev), defined as the difference between the DL under masking and the DL in quiet, which measures the capability of directing auditory selective attention to a target (Oberfeld et al., 2014), (2) the amount of flanker interference in the flanker task (IntFlanker), which indexes visual selective attention, (3) the IPD threshold in the TFS-LF (Hopkins and Moore, 2010) test (TFSth), which measures binaural sensitivity for the temporal fine structure, (4) the pure-tone average threshold on the better ear (PTABE) at octave frequencies between 125 Hz and 4 kHz, (5) the average asymmetry in the hearing thresholds between left and right ear in the same frequency range (HLdiff), (6) the intensity-DL in quiet (DLquiet), which represents a suprathreshold measure of hearing ability that is not related to selective attention, (7) the response time in the neutral condition of the flanker task (RTneutral), which was included as a measure of processing speed (Salthouse, 2000), and (8) the proportion of correctly recalled consonants in the sentence span task (SSPcorr) that indexes working memory capacity. Finally, (9) the age of the participant was added as a predictor, as in previous studies (e.g., Neher et al., 2012), to investigate whether the observed inter-individual differences in cocktail-party listening are determined by other factors related to age. Note that due to the relatively large sample size it was not necessary to summarize the different predictors into a small number of factors as in some previous studies (Füllgrabe et al., 2014; Heinrich et al., 2015; Schoof and Rosen, 2014; van Rooij et al., 1989).10.7554/eLife.16747.002Table 1.Results of the multiple regression analysis. Criterion variable: speech recognition score (SRS; proportion correct) in the simulated cocktail-party listening task. Predictors: age, masker-induced elevation of the intensity difference limen (DLelev), the amount of flanker interference in the flanker task (IntFlanker), IPD threshold in the TFS-LF task (TFSth), pure-tone average thresholds on the better ear (PTABE), average asymmetry in the hearing thresholds between left and right ear (HLdiff), intensity-DL in quiet (DLquiet), response time in the neutral condition of the flanker task (RTneutral), and proportion of correctly recalled consonants in the working memory task (SSPcorr). All variables were z-standardized.DOI: http://dx.doi.org/10.7554/eLife.16747.002PredictorβSEtpGDWβLassoIntercept0.0680.0960.7100.4800.081Age0.1940.1101.7600.0860.020−DLelev−0.3470.1073.2400.0030.152−0.220IntFlanker−0.2330.1032.2700.0290.052−0.081TFSth−0.3830.1033.7300.0010.204−0.286PTABE0.1370.1021.3500.1860.016−HLdiff−0.0880.1060.8300.4130.007−DLquiet−0.0070.1140.0700.9480.021RTneutral−0.0370.1290.2800.7780.015−SSPcorr0.1930.1111.7400.0910.0850.089R2 =0.57 p<0.001R2 =0.44Note: N = 45. β: estimated ordinary least-squares (OLS) regression coefficient. SE: standard error of the estimate. t: t-statistic. Bold font indicates a β significantly different from 0 (p<0.05). GDW: general dominance weight. βLasso: regression coefficients for predictors selected by the Lasso procedure (model selection via four-fold cross-validation).
+To which extent did speech understanding in a cocktail-party situation depend on the capability of directing selective attention to a target in the presence of distractors, binaural sensitivity for the temporal fine structure (TFS), and other factors? To answer this question, a multiple linear regression analysis was conducted (the statistical details are described in Materials and methods). The criterion variable was the speech recognition score (SRS) defined as the proportion correct in the simulated cocktail-party listening task with two interfering speakers. We used a sentence identification task based on a German matrix test (Wagener et al., 1999a) and presented binaural simulations of an anechoic environment (see Materials and methods). The nine predictors were (1) the elevation of the intensity difference limen caused by the backward masker (DLelev), defined as the difference between the DL under masking and the DL in quiet, which measures the capability of directing auditory selective attention to a target (Oberfeld et al., 2014), (2) the amount of flanker interference in the flanker task (IntFlanker), which indexes visual selective attention, (3) the IPD threshold in the TFS-LF (Hopkins and Moore, 2010) test (TFSth), which measures binaural sensitivity for the temporal fine structure, (4) the pure-tone average threshold on the better ear (PTABE) at octave frequencies between 125 Hz and 4 kHz, (5) the average asymmetry in the hearing thresholds between left and right ear in the same frequency range (HLdiff), (6) the intensity-DL in quiet (DLquiet), which represents a suprathreshold measure of hearing ability that is not related to selective attention, (7) the response time in the neutral condition of the flanker task (RTneutral), which was included as a measure of processing speed (Salthouse, 2000), and (8) the proportion of correctly recalled consonants in the sentence span task (SSPcorr) that indexes working memory capacity. Finally, (9) the age of the participant was added as a predictor, as in previous studies (e.g., Neher et al., 2012), to investigate whether the observed inter-individual differences in cocktail-party listening are determined by other factors related to age. Note that due to the relatively large sample size it was not necessary to summarize the different predictors into a small number of factors as in some previous studies (Füllgrabe et al., 2014; Heinrich et al., 2015; Schoof and Rosen, 2014; van Rooij et al., 1989).
 
-The regression model showed a good fit, R2 = 0.57, p<0.001, N = 45. As can be seen in Table 1, the performance in the cocktail-party listening task was significantly negatively related to the intensity-DL elevation under backward masking. Thus, compatible with our hypotheses, participants who showed a better capability of focusing attention on the target sounds in the intensity discrimination task were less affected by the interfering speakers in the cocktail-party listening task. In the same line of reasoning, the significant negative regression coefficient for flanker interference shows that a high capability of directing visual selective attention corresponded to good performance on the cocktail-party listening task. The IPD threshold measured in the TFS-LF task was also significantly negatively related to the SRS. Thus, compatible with previous studies (e.g., Füllgrabe et al., 2014; Neher et al., 2011, 2012; Ruggles et al., 2012), listeners who showed high sensitivity for the TFS performed better in the spatial listening task. None of the remaining predictors showed a significant association with the performance in the spatial listening task. Notably, neither for age nor for working memory capacity did the regression coefficient differ significantly from 0.10.7554/eLife.16747.003Table 2.Pairwise Pearson partial correlation coefficients, controlling for age. N = 50. In each row, the upper numbers are the partial correlation coefficients (ρpartial), and the lower numbers are the p-values for the test of |ρpartial| > 0. The rightmost column shows Pearson correlation coefficients with age. Bold font: p<0.05. Italics: p<0.10.DOI: http://dx.doi.org/10.7554/eLife.16747.003DLelevIntFlankerTFSthPTABEHLdiffDLquietRTneutralSSPcorrSSQspeechSSQspatialSSQqualitiesAgeOLSAPcorr−0.374−0.149−0.3530.060−0.163−0.244−0.2320.3380.1210.0830.2300.0330.0080.3070.0130.6830.2630.0910.1090.0180.4070.5700.1120.819DLelev−0.0470.0380.030−0.083−0.0450.092−0.255−0.302−0.049−0.178−0.0450.7480.7930.8380.5700.7590.5290.0770.0350.7400.2200.754IntFlanker−0.081−0.018−0.234−0.032−0.094−0.112−0.141−0.098−0.1120.0450.5780.9030.1050.8260.5220.4440.3350.5010.4440.758TFSth0.034−0.0230.3990.312−0.177−0.149−0.314−0.3520.0270.8180.8730.0050.0290.2240.3060.0280.0130.852PTABE−0.292−0.083−0.010−0.0920.1360.0820.097−0.2480.0420.5720.9440.5310.3530.5770.5080.082HLdiff0.1950.0380.0870.2740.1980.1190.2270.1800.7950.5510.0570.1740.4160.113DLquiet0.383−0.115−0.008−0.118−0.1300.0820.0070.4310.9590.4200.3750.573RTneutral−0.198−0.087−0.135−0.0110.2170.1720.5520.3550.9400.129SSPcorr−0.0110.0810.053−0.3800.9400.5800.7200.006SSQspeech0.7070.7280.040<0.0001<0.00010.784SSQspatial0.7010.123<0.00010.393SSQqualities0.0580.692
+**Table 1.**
+ Results of the multiple regression analysis. Criterion variable: speech recognition score (SRS; proportion correct) in the simulated cocktail-party listening task. Predictors: age, masker-induced elevation of the intensity difference limen (DLelev), the amount of flanker interference in the flanker task (IntFlanker), IPD threshold in the TFS-LF task (TFSth), pure-tone average thresholds on the better ear (PTABE), average asymmetry in the hearing thresholds between left and right ear (HLdiff), intensity-DL in quiet (DLquiet), response time in the neutral condition of the flanker task (RTneutral), and proportion of correctly recalled consonants in the working memory task (SSPcorr). All variables were z-standardized.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Predictor</th>
+      <th>β</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+      <th>GDW</th>
+      <th>βLasso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>0.068</td>
+      <td>0.096</td>
+      <td>0.710</td>
+      <td>0.480</td>
+      <td></td>
+      <td>0.081</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.194</td>
+      <td>0.110</td>
+      <td>1.760</td>
+      <td>0.086</td>
+      <td>0.020</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>DLelev</td>
+      <td>−0.347</td>
+      <td>0.107</td>
+      <td>3.240</td>
+      <td>0.003</td>
+      <td>0.152</td>
+      <td>−0.220</td>
+    </tr>
+    <tr>
+      <td>IntFlanker</td>
+      <td>−0.233</td>
+      <td>0.103</td>
+      <td>2.270</td>
+      <td>0.029</td>
+      <td>0.052</td>
+      <td>−0.081</td>
+    </tr>
+    <tr>
+      <td>TFSth</td>
+      <td>−0.383</td>
+      <td>0.103</td>
+      <td>3.730</td>
+      <td>0.001</td>
+      <td>0.204</td>
+      <td>−0.286</td>
+    </tr>
+    <tr>
+      <td>PTABE</td>
+      <td>0.137</td>
+      <td>0.102</td>
+      <td>1.350</td>
+      <td>0.186</td>
+      <td>0.016</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>HLdiff</td>
+      <td>−0.088</td>
+      <td>0.106</td>
+      <td>0.830</td>
+      <td>0.413</td>
+      <td>0.007</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>DLquiet</td>
+      <td>−0.007</td>
+      <td>0.114</td>
+      <td>0.070</td>
+      <td>0.948</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>RTneutral</td>
+      <td>−0.037</td>
+      <td>0.129</td>
+      <td>0.280</td>
+      <td>0.778</td>
+      <td>0.015</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>SSPcorr</td>
+      <td>0.193</td>
+      <td>0.111</td>
+      <td>1.740</td>
+      <td>0.091</td>
+      <td>0.085</td>
+      <td>0.089</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>R2 =0.57 p&lt;0.001</td>
+      <td>R2 =0.44</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: N = 45. β: estimated ordinary least-squares (OLS) regression coefficient. SE: standard error of the estimate. t: t-statistic. Bold font indicates a β significantly different from 0 (p<0.05). GDW: general dominance weight. βLasso: regression coefficients for predictors selected by the Lasso procedure (model selection via four-fold cross-validation)._
+
+The regression model showed a good fit, R2 = 0.57, p<0.001, N = 45. As can be seen in Table 1, the performance in the cocktail-party listening task was significantly negatively related to the intensity-DL elevation under backward masking. Thus, compatible with our hypotheses, participants who showed a better capability of focusing attention on the target sounds in the intensity discrimination task were less affected by the interfering speakers in the cocktail-party listening task. In the same line of reasoning, the significant negative regression coefficient for flanker interference shows that a high capability of directing visual selective attention corresponded to good performance on the cocktail-party listening task. The IPD threshold measured in the TFS-LF task was also significantly negatively related to the SRS. Thus, compatible with previous studies (e.g., Füllgrabe et al., 2014; Neher et al., 2011, 2012; Ruggles et al., 2012), listeners who showed high sensitivity for the TFS performed better in the spatial listening task. None of the remaining predictors showed a significant association with the performance in the spatial listening task. Notably, neither for age nor for working memory capacity did the regression coefficient differ significantly from 0.
+
+**Table 2.**
+ Pairwise Pearson partial correlation coefficients, controlling for age. N = 50. In each row, the upper numbers are the partial correlation coefficients (ρpartial), and the lower numbers are the p-values for the test of |ρpartial| > 0. The rightmost column shows Pearson correlation coefficients with age. Bold font: p<0.05. Italics: p<0.10.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>DLelev</th>
+      <th>IntFlanker</th>
+      <th>TFSth</th>
+      <th>PTABE</th>
+      <th>HLdiff</th>
+      <th>DLquiet</th>
+      <th>RTneutral</th>
+      <th>SSPcorr</th>
+      <th>SSQspeech</th>
+      <th>SSQspatial</th>
+      <th>SSQqualities</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">OLSAPcorr</td>
+      <td>−0.374</td>
+      <td>−0.149</td>
+      <td>−0.353</td>
+      <td>0.060</td>
+      <td>−0.163</td>
+      <td>−0.244</td>
+      <td>−0.232</td>
+      <td>0.338</td>
+      <td>0.121</td>
+      <td>0.083</td>
+      <td>0.230</td>
+      <td>0.033</td>
+    </tr>
+    <tr>
+      <td>0.008</td>
+      <td>0.307</td>
+      <td>0.013</td>
+      <td>0.683</td>
+      <td>0.263</td>
+      <td>0.091</td>
+      <td>0.109</td>
+      <td>0.018</td>
+      <td>0.407</td>
+      <td>0.570</td>
+      <td>0.112</td>
+      <td>0.819</td>
+    </tr>
+    <tr>
+      <td rowspan="2">DLelev</td>
+      <td></td>
+      <td>−0.047</td>
+      <td>0.038</td>
+      <td>0.030</td>
+      <td>−0.083</td>
+      <td>−0.045</td>
+      <td>0.092</td>
+      <td>−0.255</td>
+      <td>−0.302</td>
+      <td>−0.049</td>
+      <td>−0.178</td>
+      <td>−0.045</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.748</td>
+      <td>0.793</td>
+      <td>0.838</td>
+      <td>0.570</td>
+      <td>0.759</td>
+      <td>0.529</td>
+      <td>0.077</td>
+      <td>0.035</td>
+      <td>0.740</td>
+      <td>0.220</td>
+      <td>0.754</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IntFlanker</td>
+      <td></td>
+      <td></td>
+      <td>−0.081</td>
+      <td>−0.018</td>
+      <td>−0.234</td>
+      <td>−0.032</td>
+      <td>−0.094</td>
+      <td>−0.112</td>
+      <td>−0.141</td>
+      <td>−0.098</td>
+      <td>−0.112</td>
+      <td>0.045</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0.578</td>
+      <td>0.903</td>
+      <td>0.105</td>
+      <td>0.826</td>
+      <td>0.522</td>
+      <td>0.444</td>
+      <td>0.335</td>
+      <td>0.501</td>
+      <td>0.444</td>
+      <td>0.758</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TFSth</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.034</td>
+      <td>−0.023</td>
+      <td>0.399</td>
+      <td>0.312</td>
+      <td>−0.177</td>
+      <td>−0.149</td>
+      <td>−0.314</td>
+      <td>−0.352</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.818</td>
+      <td>0.873</td>
+      <td>0.005</td>
+      <td>0.029</td>
+      <td>0.224</td>
+      <td>0.306</td>
+      <td>0.028</td>
+      <td>0.013</td>
+      <td>0.852</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PTABE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−0.292</td>
+      <td>−0.083</td>
+      <td>−0.010</td>
+      <td>−0.092</td>
+      <td>0.136</td>
+      <td>0.082</td>
+      <td>0.097</td>
+      <td>−0.248</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.042</td>
+      <td>0.572</td>
+      <td>0.944</td>
+      <td>0.531</td>
+      <td>0.353</td>
+      <td>0.577</td>
+      <td>0.508</td>
+      <td>0.082</td>
+    </tr>
+    <tr>
+      <td rowspan="2">HLdiff</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.195</td>
+      <td>0.038</td>
+      <td>0.087</td>
+      <td>0.274</td>
+      <td>0.198</td>
+      <td>0.119</td>
+      <td>0.227</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.180</td>
+      <td>0.795</td>
+      <td>0.551</td>
+      <td>0.057</td>
+      <td>0.174</td>
+      <td>0.416</td>
+      <td>0.113</td>
+    </tr>
+    <tr>
+      <td rowspan="2">DLquiet</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.383</td>
+      <td>−0.115</td>
+      <td>−0.008</td>
+      <td>−0.118</td>
+      <td>−0.130</td>
+      <td>0.082</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.007</td>
+      <td>0.431</td>
+      <td>0.959</td>
+      <td>0.420</td>
+      <td>0.375</td>
+      <td>0.573</td>
+    </tr>
+    <tr>
+      <td rowspan="2">RTneutral</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−0.198</td>
+      <td>−0.087</td>
+      <td>−0.135</td>
+      <td>−0.011</td>
+      <td>0.217</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.172</td>
+      <td>0.552</td>
+      <td>0.355</td>
+      <td>0.940</td>
+      <td>0.129</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SSPcorr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−0.011</td>
+      <td>0.081</td>
+      <td>0.053</td>
+      <td>−0.380</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.940</td>
+      <td>0.580</td>
+      <td>0.720</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SSQspeech</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.707</td>
+      <td>0.728</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.0001</td>
+      <td>0.784</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SSQspatial</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.701</td>
+      <td>0.123</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>0.393</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SSQqualities</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.058</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.692</td>
+    </tr>
+  </tbody>
+</table>
 
 What can be concluded about the relative importance of the different psychoacoustic and cognitive predictors for explaining individual differences in cocktail-party listening? In our data, the nine predictors were partly correlated (see Table 2). In such a case, it can be misleading to gauge the relative importance of the predictors by considering the squared standardized regression coefficients (cf. Tonidandel and LeBreton, 2011). For this reason, we used the 'dominance analysis' approach proposed by Budescu (1993); which was shown to be a useful measure of the relative importance of predictors in a regression model, both on theoretical grounds and in simulation studies (LeBreton et al., 2004; Thomas et al., 2014; Tonidandel and LeBreton, 2011). Dominance analysis provides a quantitative measure of relative importance by examining the change in the variance-accounted-for (ΔR2) resulting from adding a predictor to all possible regression models containing subsets of the predictors. For example, if there are three predictors (A, B, and C), then there are four possible subset models to which predictor C can be added (that is, models containing only the intercept term, intercept and predictor A, intercept and predictor B, and intercept and predictors A and B, respectively). A predictor’s general dominance weight (GDW; Azen and Budescu, 2003) is found by averaging the squared semipartial correlations across all of the possible subset models. This measure indexes a variable's contribution to the prediction of the dependent variable, by itself and in combination with the other predictors. The sum of the GDWs is the total proportion of variance explained by the regression model, R2.
 
@@ -45,7 +539,60 @@ To validate the conclusions based on dominance analysis, we used a second approa
 
 Finally, it is interesting to compare these multiple regression results to the pairwise partial correlation coefficients with the SRS, controlling for age (see Table 2). The predictors DLelev and TFSth showed a significantly negative partial correlation with the SRS, compatible with the results from ordinary least-squares (OLS) regression and the Lasso. As for the Lasso, the partial correlation coefficient for SSPcorr was also significant. It appears possible that the (moderate) correlations between SSPcorr and DLelev and age (see Table 2) increased the standard error of the regression coefficient for SSPcorr in the multiple regression analysis shown in Table 1. The opposite pattern occurred for IntFlanker. Here, the partial correlation coefficient for IntFlanker was not significant, unlike in the multiple regressions.
 
-The relation between the scores on the SSQ questionnaire (Gatehouse and Noble, 2004), representing self-reported hearing abilities in daily life, and the performance in the cocktail-party listening task was analyzed via linear multiple regression. The SRS was the criterion variable, and age and the three SSQ subscales (speech hearing: SSQspeech; spatial hearing: SSQspatial; other qualities: SSQqualities) were entered as predictors. Using the same criteria as for the regression analysis presented in Table 1 (see Materials and methods), three participants were excluded as outliers. The model explained only a small, non-significant portion of the variance, R2 = 0.137, p=0.17, N = 47. Only the regression coefficient for the 'Other qualities' scale was significant, showing a positive relation between this SSQ subscore and the SRS (see Table 3). Thus, persons reporting better hearing abilities on the SSQ 'Other qualities' scale tended to perform better in the spatial listening task. As seen in Table 2, the partial correlations controlling for age indicated a significant negative relation between the DL-elevation and SSQspeech, and between the IPD threshold in the TFS-LF test and SSQspatial and SSQqualities.10.7554/eLife.16747.004Table 3.Multiple regression analysis of the relation between the SSQ scores (Gatehouse and Noble, 2004) representing self-reported hearing abilities (predictors) and the speech recognition score in the simulated cocktail-party listening task (criterion). N = 47.DOI: http://dx.doi.org/10.7554/eLife.16747.004PredictorβSEtpIntercept−1.1500.9881.1600.251Age−0.0060.0340.1700.864SSQspeech0.0060.1160.0500.958SSQspatial−0.1600.1171.3600.181SSQqualities0.3210.1422.2500.030
+The relation between the scores on the SSQ questionnaire (Gatehouse and Noble, 2004), representing self-reported hearing abilities in daily life, and the performance in the cocktail-party listening task was analyzed via linear multiple regression. The SRS was the criterion variable, and age and the three SSQ subscales (speech hearing: SSQspeech; spatial hearing: SSQspatial; other qualities: SSQqualities) were entered as predictors. Using the same criteria as for the regression analysis presented in Table 1 (see Materials and methods), three participants were excluded as outliers. The model explained only a small, non-significant portion of the variance, R2 = 0.137, p=0.17, N = 47. Only the regression coefficient for the 'Other qualities' scale was significant, showing a positive relation between this SSQ subscore and the SRS (see Table 3). Thus, persons reporting better hearing abilities on the SSQ 'Other qualities' scale tended to perform better in the spatial listening task. As seen in Table 2, the partial correlations controlling for age indicated a significant negative relation between the DL-elevation and SSQspeech, and between the IPD threshold in the TFS-LF test and SSQspatial and SSQqualities.
+
+**Table 3.**
+ Multiple regression analysis of the relation between the SSQ scores (Gatehouse and Noble, 2004) representing self-reported hearing abilities (predictors) and the speech recognition score in the simulated cocktail-party listening task (criterion). N = 47.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Predictor</th>
+      <th>β</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>−1.150</td>
+      <td>0.988</td>
+      <td>1.160</td>
+      <td>0.251</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>−0.006</td>
+      <td>0.034</td>
+      <td>0.170</td>
+      <td>0.864</td>
+    </tr>
+    <tr>
+      <td>SSQspeech</td>
+      <td>0.006</td>
+      <td>0.116</td>
+      <td>0.050</td>
+      <td>0.958</td>
+    </tr>
+    <tr>
+      <td>SSQspatial</td>
+      <td>−0.160</td>
+      <td>0.117</td>
+      <td>1.360</td>
+      <td>0.181</td>
+    </tr>
+    <tr>
+      <td>SSQqualities</td>
+      <td>0.321</td>
+      <td>0.142</td>
+      <td>2.250</td>
+      <td>0.030</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -75,7 +622,7 @@ In conclusion, the individual ability to focus attention on a target stimulus in
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Fifty listeners with normal hearing participated in the experiment voluntarily. All listeners reported normal hearing and no history of hearing disorders, and normal or corrected-to-normal visually acuity. They had hearing thresholds better than 20 dB HL at octave frequencies between 125 Hz and 4 kHz (that is, in the frequency region most important for speech; Byrne et al., 1994), calculated on the basis of equivalent threshold sound pressure levels for the Sennheiser HDA 200 earphones (Han and Poulsen, 1998). The maximal asymmetry between left and right ear was 15 dB in the frequency range between 125 Hz and 4 kHz. In the high-frequency range, for all but one listener the hearing thresholds were also better than 20 dB HL at 6 and 8 kHz.
 
@@ -85,21 +632,21 @@ All participants were native speakers of German. Most of them were psychology st
 
 The participants (39 female, 11 male) ranged in age between 18 and 30 years (mean age 21.5 y, SD = 3.1 y). All held the German general qualification for university entrance (Abitur), and 44 of them were psychology students. Since very good grades in secondary school are required for admission in psychology at German universities, the group can be assumed to have relatively high test intelligence, although we did not conduct an intelligence test (Füllgrabe et al., 2014).
 
-## Apparatus
+### Apparatus
 
 The auditory stimuli were generated digitally, played back via an RME (Haimhausen, Germany) ADI/S digital-to-analog converter (fs = 44.1 kHz, 24-bit resolution), attenuated by a TDT (Alachua, FL) PA5 programmable attenuator, buffered by a TDT HB7 headphone buffer, and presented via Sennheiser (Wedemark, Germany) HDA 200 circumaural headphones calibrated according to IEC 318 (1970). The visual stimuli and task instructions were presented on a 17'' TFT computer monitor. The experiment was conducted in a double-walled sound-insulated chamber (IAC Acoustics Germany, Niederkrüchten). Responses were collected via a numeric keypad, a computer keyboard, or a mouse, depending on the task.
 
-## Tasks
+### Tasks
 
-## Audiometric thresholds
+#### Audiometric thresholds
 
-Detection thresholds were measured bilaterally using Békésy tracking (
+Detection thresholds were measured bilaterally using Békésy tracking (Békésy, 1947; Hartmann, 2005) with pulsed 270-ms pure tones including 10-ms cos2 on- and off-ramps. The starting frequency was 100 Hz. The frequency increased exponentially from tone to tone, at a rate of 1.4 octaves/minute. For each listener and ear, thresholds were computed as the average sound pressure level in a third-octave band around octave frequencies between 125 Hz and 4 kHz. The average hearing levels are shown in Figure 1. The individual better-ear pure tone average threshold (PTABE) at octave frequencies between 125 Hz and 4 kHz was entered as a predictor of cocktail-party listening in the regression analyses. In addition, the individual average bilateral asymmetry of the thresholds at the same octave frequencies (HLdiff) was included as a predictor, because asymmetric thresholds can affect binaural unmasking on the basis of ITD cues (Bronkhorst and Plomp, 1989).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/16747/elife-16747-fig1-v1.jpg)
 
-**Figure 1.:** N = 50).Left panel: left ear. Right panel: right ear. Error bars represent 95% confidence intervals.DOI: http://dx.doi.org/10.7554/eLife.16747.005
+**Figure 1.:** Left panel: left ear. Right panel: right ear. Error bars represent 95% confidence intervals.
 
-## Cocktail-party listening task
+#### Cocktail-party listening task
 
 As a measure of speech understanding in adverse listening conditions, we used a simulated cocktail-party listening task with two interfering speakers. The listeners performed a sentence identification task with the speech material of the Oldenburger Satztest (OLSA; HörTech gGmbH, Oldenburg), which is a German matrix test (Wagener et al., 1999a). The speech material consists of sentences with the syntactic structure name-verb-numeral-adjective-object (e.g., 'Peter kauft vier kleine Messer' – 'Peter buys four small knives'). The sentences were constructed by pseudo-randomly selecting one of ten alternatives for each word position. This results in syntactically correct but semantically unpredictable sentences, which makes it possible to use each sentence several times for the same listener. In total, 100 different sentences are available in the OLSA test. The sentences are produced by an adult male speaker and are optimized for similar intelligibility (Wagener et al., 1999b). The task was to identify the sentence produced by the target speaker. The matrix of 5 (word position) × 10 (alternatives) words constituting the sentence test was displayed on a computer monitor. On each trial, subjects were asked to select the five words they had just heard using a computer mouse. The selected words were displayed in a row below the matrix of test words. Initially, the selected words were displayed in black ink. After confirming their selection by clicking on an 'Accept' button, the participants received immediate feedback concerning the correctness of their selection of words. Correctly identified words were colored in green, and incorrect words were colored in red. This visual feedback was presented for 500 ms. The next trial then started automatically after a pause of 500 ms.
 
@@ -109,71 +656,73 @@ Each participant first received five trials without interfering speakers, to bec
 
 For each listener and each block of 50 trials collected in the sentence identification task with two interfering speakers, the proportion of correctly identified words for the target speaker was computed (speech recognition score; SRS). Because non-normally distributed measures can cause problems in regression/correlation analyses (e.g., Bishara and Hittner, 2012) and repeated-measures ANOVAs (e.g., Oberfeld and Franke, 2013), the proportions were arcsin-square-root transformed (Bartlett, 1936) to obtain a closer approximation to the normal distribution. The data were analyzed with a repeated-measures analysis of variance (rmANOVA), using the multivariate approach. Partial η2 is reported as a measure of association strength. The same type of rmANOVAs is used in all following analyses. An rmANOVA showed a significant effect of block, F(2, 48) = 47.34, p<0.001. The mean proportion of correct responses was considerably lower in the first block than in the two following blocks, compatible with data by Wagener et al. (1999c) who reported a sizeable practice effect in steady background noise. For this reason, the data from the first block were excluded from further analyses. An rmANOVA conducted on the data from blocks 2 and 3 still showed a significant while rather weak effect of block on the SRS, F(1, 49) = 4.54, p=0.038, Cohen (1988) dz = 0.30. The degree of agreement between the two measurements of the SRS (blocks 2 and 3) represents test-retest reliability and was assessed by an absolute agreement definition of the intraclass correlation in a two-way mixed-model (ICC(A,2) in the nomenclature of McGraw and Wong, 1996). The reliability was high, ICC(A,2) =0.934.
 
+Figure 2 shows a histogram of the average individual speech recognition score (proportion correct) in the simulated cocktail-party listening task (blocks 2 and 3). As expected, the listeners showed considerable variation in the SRS. The arcsin-sqrt transformed average individual proportion correct on blocks 2 and 3 (SRS) served as the measure of cocktail-party listening, and was used as the criterion variable in the regression analyses.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/16747/elife-16747-fig2-v1.jpg)
 
-**Figure 2.:** N = 50).This measure served as the criterion variable in the regression analyses. The mean (M) and the standard deviation (SD) are displayed.DOI: http://dx.doi.org/10.7554/eLife.16747.006
+**Figure 2.:** This measure served as the criterion variable in the regression analyses. The mean (M) and the standard deviation (SD) are displayed.
 
-## Auditory intensity discrimination under backward masking (auditory selective attention)
+#### Auditory intensity discrimination under backward masking (auditory selective attention)
 
-Intensity difference limens (DLs) in quiet and under backward masking were measured using a two-interval, two alternative forced-choice task and an adaptive procedure with a three down, one up rule (
+Intensity difference limens (DLs) in quiet and under backward masking were measured using a two-interval, two alternative forced-choice task and an adaptive procedure with a three down, one up rule (Levitt, 1971). The targets and the maskers were 1-kHz pure tones with a steady-state duration of 20 ms, presented to the right ear. The tones were gated on and off with 5-ms cosine-squared ramps. The standard level was 60 dB SPL. An intensity increment – that is, a pure tone of the same frequency, duration and temporal envelope – was added in-phase to the standard in one of the observation intervals (selected randomly). The level of the backward masker was 90 dB SPL. The silent interval between standard offset and masker onset was 50 ms (see Figure 3). This ISI value is in the range where the effects of backward and forward masking on speech identification were observed (Dirks and Bower, 1970). The temporal interval between the onsets of the two target tones (standard and standard-plus-increment) was 800 ms. The task was to select the interval containing the louder target tone (that is, the standard-plus-increment), and to ignore the maskers. Visual trial-by-trial feedback was provided. In the adaptive procedure, the initial level of the intensity increment, expressed in terms of 10 log10(△I/I), where △I is the intensity difference between the standard-plus-increment and the standard and I is the intensity of the standard, was 8 dB. For the in-quiet condition, the step size was 5 dB until the third reversal, and 2 dB for the remaining six reversals. In the backward-masking condition, four reversals were collected with the larger and eight reversals with the smaller step size. The arithmetic mean of 10 log10(△I/I) from the fourth (in quiet) or fifth reversal (backward masking) up to the last even-numbered reversal was taken as the difference limen corresponding to 79.4% correct. Adaptive tracks where the standard deviation of 10 log10(△I/I) at the counting reversals exceeded 7 dB were excluded from the data analysis, which affected 5 tracks (1% of the total of 470 tracks). After a brief practice block, two blocks were obtained in quiet, followed by three blocks under backward masking.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/16747/elife-16747-fig3-v1.jpg)
 
-**Figure 3.:** Green: target tones. Red: backward maskers ('distractors'). The standard (S) was a 1 kHz tone presented at 60 dB SPL. An intensity increment (I) was presented in either the first or the second interval, with equal a-priori probability. The task was to select the interval containing the louder target (that is, standard-plus-increment). The maskers were 1 kHz tones presented at 90 dB SPL. The same temporal configuration was used in the in-quiet condition, except that the maskers were not presented.DOI: http://dx.doi.org/10.7554/eLife.16747.007
+**Figure 3.:** Green: target tones. Red: backward maskers ('distractors'). The standard (S) was a 1 kHz tone presented at 60 dB SPL. An intensity increment (I) was presented in either the first or the second interval, with equal a-priori probability. The task was to select the interval containing the louder target (that is, standard-plus-increment). The maskers were 1 kHz tones presented at 90 dB SPL. The same temporal configuration was used in the in-quiet condition, except that the maskers were not presented.
 
 An rmANOVA with the within-subjects factor block (1, 2, 3) showed no significant effect of block on the DL under backward masking, F(2, 44) = 1.03, p=0.90. Thus, there was no significant practice effect, and therefore the average individual DL under backward masking (DLmasked) across the three blocks was computed. The reliability of the masked DL across the three measurements (blocks) was moderate, ICC(A,3) = 0.871.
 
 The average DL in quiet (DLquiet) was included as a predictor in the regression analyses, representing a suprathreshold measure of hearing ability that is not related to selective attention. The reliability of DLquiet across the two measurements (blocks) was ICC(A,2) = 0.660.
 
-We used the elevation of the intensity-DL caused by the backward masker as a measure of auditory selective attention, as in previous studies (
+We used the elevation of the intensity-DL caused by the backward masker as a measure of auditory selective attention, as in previous studies (Oberfeld et al., 2014). The DL-elevation denotes the difference between the DL under masking and the DL in quiet, DLelev = DLmasked − DLquiet. As Figure 4 shows, there was considerable variation in the individual DL-elevations under masking, as expected.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/16747/elife-16747-fig4-v1.jpg)
 
-**Figure 4.:** elev), defined as the difference between the DL under masking and the DL in quiet.Lower values represent a better capability of directing auditory selective attention to the target tones. N = 50.DOI: http://dx.doi.org/10.7554/eLife.16747.008
+**Figure 4.:** Lower values represent a better capability of directing auditory selective attention to the target tones. N = 50.
 
-## Binaural sensitivity for the temporal fine structure
+#### Binaural sensitivity for the temporal fine structure
 
-The binaural sensitivity to temporal fine structure information was measured as the smallest detectable interaural phase difference (IPD) of a sinusoidal carrier relative to an IPD of 0°, using the TFS-LF test proposed by
+The binaural sensitivity to temporal fine structure information was measured as the smallest detectable interaural phase difference (IPD) of a sinusoidal carrier relative to an IPD of 0°, using the TFS-LF test proposed by Hopkins and Moore (2010). In a two-interval task, four pure tones (500 Hz) were presented binaurally in each interval. In one of the intervals (selected randomly), the second and fourth tone were presented with an IPD greater than 0° between the right and left ear, while the IPD was 0° for the first and the third tone. If the listener is sensitive to the change in IPD, then the four tones are perceived as changing in lateralization. In the other interval, all tones were presented with an interaural phase difference of IPD = 0°, corresponding to no change in lateralization from tone to tone. All tones were presented at 30 dB SL with a steady-state duration of 300 ms and 50 ms cosine-squared on- and offset ramps, 20 ms pauses between the tones within an interval, and 200 ms silence between the two intervals. The task was to identify the interval which contained the tones with the phase shift and thus elicited the perception of a location change. Visual trial-by-trial feedback was provided. The initial phase shift was IPD =180° and was divided by a = (1.25)2 in case of three consecutive correct responses, or multiplied by a after an incorrect response (three down, one up rule). After the third reversal, the step size was reduced to a = 1.25. The experimental block ended when nine reversals had been collected or 70 trials had been presented. The geometric mean of the IPD at the last six reversals was taken as the IPD threshold. After a brief practice block, two threshold estimates were obtained. Adaptive tracks in which the SD of the log10- transformed values of the IPD at the counting reversals was higher than 0.3 or where less than 4 reversals had been collected were excluded from the analysis, which affected only 2 of the 100 tracks. The arithmetic mean of the IPD threshold obtained in the two blocks presenting the TFS-LF test was used as a predictor in the regression analyses (TFSth), representing sensitivity for the temporal fine structure. The reliability of TFSth across the two measurements (blocks) was ICC(A,2) = 0.682. Figure 5 shows the distribution of TFSth. As expected, there was considerable inter-individual variation of the binaural TFS sensitivity, compatible with previous reports of both monaural (Ruggles et al., 2011) and binaural TFS sensitivity (Füllgrabe, 2013; Ross et al., 2007).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/16747/elife-16747-fig5-v1.jpg)
 
-**Figure 5.:** th).Lower values represent better binaural sensitivity for the temporal fine structure. N = 50.DOI: http://dx.doi.org/10.7554/eLife.16747.009
+**Figure 5.:** Lower values represent better binaural sensitivity for the temporal fine structure. N = 50.
 
-## Flanker task (visual selective attention)
+#### Flanker task (visual selective attention)
 
-To measure spatial visual selective attention, a flanker task as established by
+To measure spatial visual selective attention, a flanker task as established by Eriksen and Eriksen (1974) was used, in a variant proposed by Kramer and Jacobson (1991). The participants' task was to decide whether a target line presented on a computer screen was dotted or dashed. The target line was presented in vertical orientation, on the center of the display. It was surrounded by other lines, the so-called flankers. In one condition (Figure 6, right column), the two vertical lines adjacent to the target line were associated with the incompatible response. If the target line was dashed, the distractor lines were dotted, and vice versa. In a control condition (Figure 6, left column), the adjacent distractor lines were solid, and thus not associated with one of the responses relevant for the target line, this is the neutral condition. The two flanker lines adjacent to the target line were either connected with the target line with horizontal solid lines (Figure 6, upper row), or they were connected with two additional, vertically oriented solid lines (Figure 6, lower row). In the former condition ('same object'), the target line and the distractor lines can be expected to be perceived as belonging to the same visual object (Kramer and Jacobson, 1991). In the latter condition ('different object'), the target line and the distractors should be grouped into separate objects. According to the concept of object-based attention (e.g., Kahneman et al., 1981), ignoring the flankers should be more difficult if the flankers and the target are perceived as belonging to the same object. To further emphasize the grouping, the target line and the adjacent flankers were presented in the same color in the same-object condition, and in different colors in the different-object condition. The colors blue and green were used, and the target line was equally often presented in blue and in green.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/16747/elife-16747-fig6-v1.jpg)
 
-**Figure 6.:** Kramer and Jacobson, 1991) used to measure spatial visual selective attention.The participants' task was to decide whether the central target line was dotted or dashed. In the neutral condition (left column), the neighboring flanker lines were solid and therefore not associated with a response. In the incompatible condition (right column), the flanker lines were associated with the incompatible response. The horizontal lines and the colors promoted the perceptual grouping of the target line and the flankers as either belonging to the same object (upper row), or into different objects (lower row).DOI: http://dx.doi.org/10.7554/eLife.16747.010
+**Figure 6.:** The participants' task was to decide whether the central target line was dotted or dashed. In the neutral condition (left column), the neighboring flanker lines were solid and therefore not associated with a response. In the incompatible condition (right column), the flanker lines were associated with the incompatible response. The horizontal lines and the colors promoted the perceptual grouping of the target line and the flankers as either belonging to the same object (upper row), or into different objects (lower row).
 
 The stimuli were presented on a CRT display (frame rate 85 Hz), with a viewing distance of 100 cm. The size of the vertical lines was 0.9° of visual angle (vertical) by 0.04° (horizontal). The horizontal separation between the lines was 0.25°. The trial started with a blank gray screen presented for 500 ms, followed by a fixation cross presented for 200 ms, after which the stimulus was presented. Participants responded by pressing two designated buttons on a numeric keypad, and received immediate visual feedback concerning the correctness of the response. They first received a practice block containing all of the 16 combinations of target type (dotted, dashed), distractor type (neutral, incompatible), object condition (same object, different object), and target color (blue, green). Then, three experimental blocks were presented. In each block, all of the 16 conditions were presented four times (64 trials/block), in random order.
 
 Response times (RTs) below 200 ms or above 3000 ms were excluded from the analysis, which affected less than 0.1% of the trials. For each subject, the average correct RT on neutral trials (RTneutral) was computed as a measure of processing speed (e.g., Salthouse, 1996). Because the asymmetric distribution of RTs can cause problems in regression/correlation analyses (e.g., Bishara and Hittner, 2012) and repeated-measures ANOVAs (e.g., Oberfeld and Franke, 2013), the RTs were log-transformed prior to all analyses. An rmANOVA on the RTs in the neutral condition showed marginally significant effect of block, F(2, 98) = 2.39, p=0.097. The mean RT was significantly higher in the first block than in blocks 2 and 3, representing a practice effect. For this reason, the data from block 1 were excluded from further analyses. The reliability across the two remaining blocks was high, ICC(A,2) = 0.920. The average RT on neutral trials in blocks 2 and 3 was used as a predictor (RTneutral).
 
-As a measure of
+As a measure of visual selective attention, we used the flanker interference, defined as the difference between (log-transformed) correct RTs in the incompatible condition and the neutral condition (IntFlanker = RTincompatible − RTneutral), averaged across the same-object and different-object condition and the two blocks (2 and 3). Lower values represent a better capability of directing visual selective attention to the target line (see Figure 7). The reliability of IntFlanker across the two measurements (blocks 2 and 3) was lower than desirable, ICC(A,2) = 0.596.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/16747/elife-16747-fig7-v1.jpg)
 
-**Figure 7.:** Flanker) in the visual attention task.Lower values represent a better capability of directing visual selective attention to the target line. N = 50.DOI: http://dx.doi.org/10.7554/eLife.16747.011
+**Figure 7.:** Lower values represent a better capability of directing visual selective attention to the target line. N = 50.
 
-## Sentence span task (working memory capacity)
+#### Sentence span task (working memory capacity)
 
 Working memory (WM) capacity was measured with a reading span test, originally proposed by Daneman and Carpenter (1980), which is one of the most established working memory span tasks (Conway et al., 2005). A computer version was used (Lewandowsky et al., 2010). On each trial, the participants saw an alternating sequence of sentences and consonants. The task was to judge the correctness of each sentence and to remember the following consonant for later serial recall. The sentences were taken from the 'easy' variant of the German version (WMC Multilingual, downloaded from http://www.psychologie.uzh.ch/fachrichtungen/allgpsy/Software.html). After a 1.5 s fixation cross, the first semantically correct (e.g., 'Every rabbit has fur.') or incorrect (e.g., 'Tomorrow is in the past.') sentence appeared centrally on the screen. The participants pressed one of two designated buttons on a computer keyboard to classify the sentence as correct or incorrect. On button press, the sentence disappeared and a single consonant was presented centrally for 1 s. After a 100-ms blank interval, the next sentence appeared. Depending on the list length, three to seven of these sentence-consonant sequences were presented. After the complete list had been presented, the participant was asked to type the remembered series of consonants into a response box displayed on the computer screen. The participants were required to type as many letters as were actually presented in the trial. They were informed that the order of letters mattered and were hence instructed to guess if necessary, rather than skip letters that they could not remember. No feedback was provided.
 
 Each participant received two trials for each of the five list lengths (3, 4, 5, 6, and 7), in random order. The proportion of consonants recalled correctly (that is, reproduced in the correct list position), averaged across the 10 lists, was computed for each subject (partial credit scoring; Conway et al., 2005). The reliability across the two presentations of each list length was acceptable, ICC(A,2) = 0.759. The arcsin-sqrt transformed proportion correct on the sentence span task (SSpcorr) was included as a predictor of cocktail-party listening in the regression analyses.
 
-## Self-reported hearing problems
+#### Self-reported hearing problems
 
 Self-reported hearing-related problems in daily life were assessed via the Speech, Spatial and Qualities of Hearing Scale (SSQ) by Gatehouse and Noble (2004); using the German version (Kießling et al., 2011). The Speech hearing subscale covers speech understanding in the presence of additional speakers (e.g., 'You are in conversation with one person in a room where there are many other people talking. Can you follow what the person you are talking to is saying?'), and is therefore directly relevant for our research question. The Spatial hearing subscale indexes the capability of locating static or moving sound sources (e.g., 'You are sitting around a table or at a meeting with several people. You can’t see everyone. Can you tell where any person is as soon as they start speaking?'). The Other qualities subscale addresses aspects of segregation of sounds, recognition, clarity/naturalness, and listening effort. The SSQ response scales range from 0 to 10, and 10 represents the highest self-rated hearing ability. The mean ratings (with SDs in parentheses) on the Speech hearing, Spatial hearing, and Other qualities scale were 7.16 (1.43), 6.95 (1.39), and 7.82 (1.18), respectively. The SSQ total score, which can range between 0 and 30, varied between 12.5 and 29.4 (M = 21.9, SD = 3.6). Thus, the participants showed considerable variation in their self-reported hearing abilities.
 
-## Procedure
+### Procedure
 
 Each participant was tested on all tasks. To minimize inter-individual variation due to different task orders, a fixed sequence of tasks was presented. After informed written consent and basic instructions, the experiment started with the measurement of audiometric thresholds, followed by intensity discrimination in quiet, intensity discrimination under backward masking, the cocktail-party listing task, the TFS-LF test, a questionnaire concerning demographic information, the flanker task, the sentence span task, and the SSQ questionnaire. Each task was preceded by detailed instructions and practice trials. The duration of the experimental session was approximately 3 hr, including several short breaks.
 
-## Regression analysis
+### Regression analysis
 
-Multiple linear regression was used to analyze the association between the psychoacoustic and cognitive predictors and the speech recognition score (SRS) in the cocktail-party listening task. As explained above, proportions (SRS and SSPcorr) were arcsin-sqrt transformed, and the response-time measures (RTneutral, IntFlanker) were based on log-transformed RTs. All variables were z-standardized. The nine predictors were entered simultaneously. Following the recommendations by Belsley et al. (1980); we analyzed the externally studentized residuals, and the DFFITS index proposed by Belsley et al. (1980) as a measure of the influence of an observation. Observations for which the absolute value of the externally studentized residual exceeded 1.96 or with an absolute DFFITS value exceeding 2p/N (where N = 50 is the number of subjects, and p=9 is the number of predictors) were defined as outliers. This resulted in the exclusion of 5 of the 50 subjects from the regression analysis. The maximum condition index (Belsley et al., 1980) was 2.49. Belsley et al. (1980) suggested that only condition indices of at least 30 indicate potential problems with multicollinearity. It should be noted that according to the Gauß-Markov theorem (Gauss, 1821) the estimates provided by the multiple regression analysis will remain unbiased in the presence of correlated predictors. However, multicollinearity could inflate the variance of the estimated regression coefficients (e.g., Greene, 2008), resulting in non-significant regression coefficients.
+Multiple linear regression was used to analyze the association between the psychoacoustic and cognitive predictors and the speech recognition score (SRS) in the cocktail-party listening task. As explained above, proportions (SRS and SSPcorr) were arcsin-sqrt transformed, and the response-time measures (RTneutral, IntFlanker) were based on log-transformed RTs. All variables were z-standardized. The nine predictors were entered simultaneously. Following the recommendations by Belsley et al. (1980); we analyzed the externally studentized residuals, and the DFFITS index proposed by Belsley et al. (1980) as a measure of the influence of an observation. Observations for which the absolute value of the externally studentized residual exceeded 1.96 or with an absolute DFFITS value exceeding $2\sqrt{p/N}$ (where N = 50 is the number of subjects, and p=9 is the number of predictors) were defined as outliers. This resulted in the exclusion of 5 of the 50 subjects from the regression analysis. The maximum condition index (Belsley et al., 1980) was 2.49. Belsley et al. (1980) suggested that only condition indices of at least 30 indicate potential problems with multicollinearity. It should be noted that according to the Gauß-Markov theorem (Gauss, 1821) the estimates provided by the multiple regression analysis will remain unbiased in the presence of correlated predictors. However, multicollinearity could inflate the variance of the estimated regression coefficients (e.g., Greene, 2008), resulting in non-significant regression coefficients.
 
 Q-Q plots of the residuals showed no systematic deviations from normality, and plots of the SRS as a function of the predictors showed no severe deviations from linearity. Thus, linear multiple regression was an appropriate method to assess the influence of the nine predictors on the speech recognition score, and to gauge their relative importance. Note that unlike most previous studies on factors influencing cocktail-party listening, our analyses did not focus on pairwise correlations, because only multiple regression provides valid information about the effects of multiple, partly correlated predictors (see Table 2).
 

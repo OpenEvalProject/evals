@@ -14,9 +14,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02v51f717 Peking-Tsinghua Center for Life Sciences, Academy for Advanced Interdisciplinary Studies, Peking University Beijing China
-2. https://ror.org/02v51f717 Center for Quantitative Biology, Academy for Advanced Interdisciplinary Studies, Peking University Beijing China
-3. https://ror.org/02v51f717 Beijing International Center for Mathematical Research, Center for Machine Learning Research, Peking University Beijing China
+1. Peking-Tsinghua Center for Life Sciences, Academy for Advanced Interdisciplinary Studies, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+2. Center for Quantitative Biology, Academy for Advanced Interdisciplinary Studies, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+3. Beijing International Center for Mathematical Research, Center for Machine Learning Research, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
 
 † Corresponding author
 
@@ -30,7 +30,7 @@ Waddington’s epigenetic landscape is a fundamental and profound conceptualizat
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig1-v1.jpg)
 
-**Figure 1.:** A) and signal (B) from a view of epigenetic landscape.(A–B) Valleys represent stable attractors. Cells (yellow balls) in stem cell fate (denoted as ‘S’, green well in landscape) differentiate into downstream fates, lineage X (denoted as ‘LX’, blue well), and lineage Y (denoted as ‘LY’, purple well). These abbreviations were used for following Figures 2—7.
+**Figure 1.:** (A–B) Valleys represent stable attractors. Cells (yellow balls) in stem cell fate (denoted as ‘S’, green well in landscape) differentiate into downstream fates, lineage X (denoted as ‘LX’, blue well), and lineage Y (denoted as ‘LY’, purple well). These abbreviations were used for following Figures 2—7.
 
 Under the noise-driven mode, the bias of cell fate decisions largely depends on the spontaneous heterogeneity of gene expressions in the cell population (Wheat et al., 2020; Kovary et al., 2018). Consequently, the initial cellular state predominantly impacts the direction of the fate decision. Chang et al., 2008 uncovered that hematopoietic stem cell (HSC) population possesses intrinsic and robust heterogeneity of Scal-1 expression (also known as Ly6a [van de Rijn et al., 1989]). Notably, populations with discrete expression levels of Scal-1 confer different propensities for downstream lineage commitment. Considering the signal-driven mode, cell fates are tightly steered by extrinsic signals (e.g., cytokines, chemical molecules, mechanical strength, and genetic operations) that reshape the landscape (Figure 1B). In this circumstance, the impact of the initial state on fate decisions is relevantly inconsequential. Additionally, due to the accessibility of signal manipulation, the signal-driven mode has been widely utilized for cell fate engineering (Xu et al., 2015; Del Vecchio et al., 2017), leading to in-vitro induction systems centered on induced pluripotent stem cells (iPSC) for obtaining desired cell types (Ng et al., 2021). Recently, researchers reported a ‘fate-decision abduction’ of erythroid-to-myeloid trans-differentiation induced by various types of cancer, which facilitates tumor escape from the individual’s immune system (Long et al., 2022). Collectively, driving forces couple the foundational and crucial features of fate decisions, serving as an essential basis for further decoding fate decisions and interpreting the development of organisms (Simon et al., 2018). By examining the two driving modes, we can gain a better understanding and characterization of cell fate decisions, including in-vivo cell differentiation, oncogenesis, and in-vitro reprogramming systems.
 
@@ -44,15 +44,25 @@ In this work, we integrated the fate-decision modes (noise-driven/signal-driven)
 
 ## Results
 
-## Section 1: Mathematical model of the CIS network with logic motifs
+### Section 1: Mathematical model of the CIS network with logic motifs
 
-Binary tree-like cell fate decisions are prevalent in biological systems (Zhou and Huang, 2011; Domcke and Shendure, 2023; Stadler et al., 2021; Macnair et al., 2019), orchestrated by a series of the CIS networks. Accordingly, we developed our ordinary differential equations (ODE) model based on this paradigmatic and representative topology (Equations 1 and 2; see ‘Materials and methods’ for details).(1)d[X]dt=r0x+r1k1[X]n1+r2k2[Y]n2+r3k3[X]n1[Y]n21+k1[X]n1+k2[Y]n2+k3[X]n1[Y]n2−d1[X](2)d[Y]dt=r0y+r4k4[Y]n2+r5k5[X]n1+r6k6[X]n1[Y]n21+k4[Y]n2+k5[X]n1+k6[X]n1[Y]n2−d2[Y]
+Binary tree-like cell fate decisions are prevalent in biological systems (Zhou and Huang, 2011; Domcke and Shendure, 2023; Stadler et al., 2021; Macnair et al., 2019), orchestrated by a series of the CIS networks. Accordingly, we developed our ordinary differential equations (ODE) model based on this paradigmatic and representative topology (Equations 1 and 2; see ‘Materials and methods’ for details).
+
+$$
+\frac{d[X]}{dt}=\frac{r_{0}^{x}+r_{1}k_{1}[X]^{n_{1}}+r_{2}k_{2}[Y]^{n_{2}}+r_{3}k_{3}[X]^{n_{1}}[Y]^{n_{2}}}{1+k_{1}[X]^{n_{1}}+k_{2}[Y]^{n_{2}}+k_{3}[X]^{n_{1}}[Y]^{n_{2}}}−d_{1}[X]
+$$
+
+
+
+$$
+\frac{d[Y]}{dt}=\frac{r_{0}^{y}+r_{4}k_{4}[Y]^{n_{2}}+r_{5}k_{5}[X]^{n_{1}}+r_{6}k_{6}[X]^{n_{1}}[Y]^{n_{2}}}{1+k_{4}[Y]^{n_{2}}+k_{5}[X]^{n_{1}}+k_{6}[X]^{n_{1}}[Y]^{n_{2}}}−d_{2}[Y]
+$$
 
 X and Y are TFs in the CIS network. n1 and n2 are the coefficients of molecular cooperation. k1-k3 in Equation 1 and k4-k6 in Equation 2 represent the relative probabilities for possible configurations of binding of TFs and CREs. (Figure 2A). d1 and d2 are degradation rates of X and Y, respectively. Here, we considered a total of four CRE’s configurations as shown in Figure 2A (i.e., TFs bind to the corresponding CREs or not, 22=4). Accordingly, depending on the transcription rates (i.e., r0x, r1, r2, r3 in Equation 1, similarly in Equation 2) of each configuration, we can model the dynamics of TFs in the Shea-Ackers formalism (Shea and Ackers, 1985; Olariu and Peterson, 2019).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig2-v1.jpg)
 
-**Figure 2.:** (A) A table listing the topologies with logic nodes, logic functions and Cis-regulatory elements (CRE) configurations in the CIS network incorporated AND-AND and OR-OR logic (denoted as AND-AND motif and OR-OR motif). X and Y are lineage-specifying transcription factors (TF). Xt+1 indicates the value of X at the next time step. X*, Y* represent activated forms of X and Y, respectively. The true or false signs denote whether gene X can be transcribed, respectively. These annotations were used for the following Figures 3—7. (B) State spaces of the AND-AND (top panel) and OR-OR (bottom panel) motifs in Boolean models. Updated rules of Boolean models are stated in Figure 2A. Rectangles indicate cell states. Green, blue, and purple represent S, LX, and LY, respectively. Solid arrows indicate transitions between states under corresponding Boolean models. Dotted arrows indicate forced transition imposed by external perturbations. (C) State spaces of the AND-AND (top panel) and OR-OR (bottom panel) motifs in ODE models. Dark and red lines represent nullclines of , dXdt=0, respectively. Stable steady states (SSS) are denoted as orange dots. Unstable steady states (USS) are denoted as white dots. Each axis represents the concentration of each transcription factor, which units are arbitrary. Blue, green, and purple areas in state spaces indicate attractor basins representing LX, S, and LY, respectively. Color of each point in state space was assigned by the attractors they finally enter according to the deterministic models (dYdt=0Equation 1, Equation 2). These annotations were used for the following Figures 3—7. (D) The solution landscape both for the AND-AND and OR-OR motifs. The crimson X-cross sign denotes the first-order saddle node. Blue, green, and purple circles indicate attractors. These annotations were used for the following Figures 3—7. (E–F) Simulation result of stochastic differential equation models of the AND-AND (E) and OR-OR (F) motifs. Other than adding a white noise, parameters were identical with those in (C). Initial values were set to the attractor representing S fate in Figure 2C top panel (E) and Figure 2C bottom panel (F). Noise levels of X (σ) and xY (σ) are both set to 0.14 in the AND-AND motif (yE), and 0.1 in the OR-OR motif (F). Stochastic simulation was preformed 3500 times, with each final state recorded as a dot on the plot. Color of heatmap corresponds to the density of points. Unit of concentration is arbitrary.
+**Figure 2.:** (A) A table listing the topologies with logic nodes, logic functions and Cis-regulatory elements (CRE) configurations in the CIS network incorporated AND-AND and OR-OR logic (denoted as AND-AND motif and OR-OR motif). X and Y are lineage-specifying transcription factors (TF). Xt+1 indicates the value of X at the next time step. X*, Y* represent activated forms of X and Y, respectively. The true or false signs denote whether gene X can be transcribed, respectively. These annotations were used for the following Figures 3—7. (B) State spaces of the AND-AND (top panel) and OR-OR (bottom panel) motifs in Boolean models. Updated rules of Boolean models are stated in Figure 2A. Rectangles indicate cell states. Green, blue, and purple represent S, LX, and LY, respectively. Solid arrows indicate transitions between states under corresponding Boolean models. Dotted arrows indicate forced transition imposed by external perturbations. (C) State spaces of the AND-AND (top panel) and OR-OR (bottom panel) motifs in ODE models. Dark and red lines represent nullclines of $\frac{dX}{dt}=0$, $\frac{dY}{dt}=0$, respectively. Stable steady states (SSS) are denoted as orange dots. Unstable steady states (USS) are denoted as white dots. Each axis represents the concentration of each transcription factor, which units are arbitrary. Blue, green, and purple areas in state spaces indicate attractor basins representing LX, S, and LY, respectively. Color of each point in state space was assigned by the attractors they finally enter according to the deterministic models (Equation 1, Equation 2). These annotations were used for the following Figures 3—7. (D) The solution landscape both for the AND-AND and OR-OR motifs. The crimson X-cross sign denotes the first-order saddle node. Blue, green, and purple circles indicate attractors. These annotations were used for the following Figures 3—7. (E–F) Simulation result of stochastic differential equation models of the AND-AND (E) and OR-OR (F) motifs. Other than adding a white noise, parameters were identical with those in (C). Initial values were set to the attractor representing S fate in Figure 2C top panel (E) and Figure 2C bottom panel (F). Noise levels of X (σx) and Y (σy) are both set to 0.14 in the AND-AND motif (E), and 0.1 in the OR-OR motif (F). Stochastic simulation was preformed 3500 times, with each final state recorded as a dot on the plot. Color of heatmap corresponds to the density of points. Unit of concentration is arbitrary.
 
 Thus, the distinct logic operations (AND/OR) of two inputs (e.g., activation by X itself and inhibition by Y) can be further implemented by assigning the corresponding profile of transcription rates in four configurations (Figure 2A). From the perspective of molecular biology, the regulatory logics embody the complicated nature of TF regulation that TFs function in a context-dependent manner. Considering the CIS network, when X and Y bind respective CREs concurrently, whether the expression of target gene is turned on or off depends on the different regulatory logics (specifically, off in the AND logic and on in the OR logic; Figure 2A). Notably, instead of exploring the different logics of one certain gene (Kittisopikul and Süel, 2010), we focus on different combinations of regulatory logics due to dynamics in cell fate decisions is generally orchestrated by GRNs with multiple TFs.
 
@@ -60,37 +70,87 @@ Benchmarking the Boolean models with different logic motifs (Figure 2B; see ‘M
 
 Evidently, the stem cell states exhibit different expression patterns between the two logic motifs. Stem cells in the AND-AND motif do not express X nor Y (Figure 2B top panel; expressed in low level in Figure 2C top panel), while in the OR-OR motif, stem cells express both lineage-specifying TFs (Figure 2B bottom panel; expressed in high level in Figure 2C bottom panel). The difference in the status of S attractors relates to the co-expression level of lineage-specifying TFs in stem cells in real biological systems (Loeffler and Schroeder, 2019; Palii et al., 2019). Intuitively, from the view of the Boolean model, stem cell state in the AND-AND motif ([0,0] state) needs to switch on lineage-specifying TFs to transit to downstream fates (Figure 2B top panel). Whereas in the OR-OR motif, fate transitions are subject to the switch-off of TF expression (Figure 2B bottom panel). Furthermore, we introduced the solution landscape method. Solution landscape is a pathway map consisting of all stationary points and their connections, which can describe different cell states and transfer paths of them (Yin et al., 2020; Yin et al., 2021). From the perspective of the solution landscape, two logic motifs possess akin geometric topologies in their steady-state adjacencies (Figure 2D): when there are three fates coexisting in the state space, S attractor resides in the middle of LX and LY as the possible pivot for fate transitions (Figure 2D). To investigate noise, we developed models with stochastic forms (see ‘Materials and methods’). Simulations display the primary distribution of cell populations, corresponding to SSSs in deterministic models (Figure 2E and F).
 
-## Section 2: Two logic motifs exhibit opposite bias of fate decisions under the noise-driven mode
+### Section 2: Two logic motifs exhibit opposite bias of fate decisions under the noise-driven mode
 
 We first investigated the difference between the AND-AND and OR-OR motifs under the noise-driven mode. Here, we assigned the stem cell state as the starting point in simulation. In biological systems, it is unlikely that the noise level of different genes is kept perfectly the same. Asymmetry of the noise levels was thus introduced. First, we set the noise level of TF X higher than that of Y (σx=0.18, σy=0.12). Under this asymmetric noise, we observed that stem cells shifted toward LX in the AND-AND motif (Figure 3A and B), but toward LY in the OR-OR motif (Figure 3C and D). From the perspective of the state space, such properties intuitively originate from the distinctive status of stem cell attractors in two logic motifs (Figure 2B and C). In the AND-AND motif, the stem cell state resides at the origin of coordinates. Thus, with increasing X’s noise level, the stem cell population crossed the boundary between S and LX basins with a rising probability (Figure 2C top panel). Consequently, the fate decision of the stem cell population manifests a bias toward LX. Likewise, in the OR-OR motif, the stem cell population has a higher probability of entering LY basin following an increase in X’s noise (Figure 2C bottom panel). Next, we simulated multiple sets of noise levels for X and Y. We quantified the distribution of cell types, which was determined by the basin in which the final state of each round of stochastic simulation ended up. We observed that stem cell population displays almost opposite differentiation preference under identical noise levels but distinct logic motifs (Figure 3E). Conversely, when two distinct logic motifs exhibiting the same fate-decision bias, cell populations need to employ opposite noise patterns (Figure 3E and F). Collectively, if two of the three (noise profile, logic motif, fate-decision bias) are accessible, the last is inferential.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig3-v1.jpg)
+
+**Figure 3.:** (A and C) Stochastic simulation in both the AND-AND and OR-OR motifs. σx is set to 0.18, and σy is 0.12. In both (A) and (C), initial values were identical with attractors of stem cell fate in Figure 2C (SSSs in green attractor basins). Simulation was preformed 1500 times, with each initial (A left and C left) and final (A right and C right) states recorded as a dot on the plot. (B and D) Time courses of the percentage of cells in different fates in stochastic simulation, under the AND-AND motif (B) and OR-OR motif (D). Fates of cells were assigned by their final states according to the basins of the deterministic models in Figure 2C. Unit of time is arbitrary. (E) Heatmaps showing the bias of cell fate decisions under different noise levels of X and Y. Color of heatmap indicates the extent of bias. Here, $bias=\frac{n_{LX}-n_{LY}}{n_{total}}$ . nLX, nLY represent number of LX, LY, respectively. ntotal represents the total number of cells (ntotal=1500). The method of assigning fate to cells is identical with Figure 3B and D. The red-marked cells correspond to the noise conditions simulated in (A) and (C). (F) Schematic illustration in that stem cell populations possessing the same bias of fate decisions need to have opposite noise patterns, according to whether they are in the AND-AND or OR-OR motif. The red and bold arrow indicates the bias of fate decisions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Stochastic simulation in the AND-AND motif. Initial values were identical with the attractor of LY fate in Figure 2C top panel (stable steady state, SSS in purple attractor basin). Simulation was preformed 1000 times, with each final state recorded as a dot on the plot. Top panel: Noise level of X (σx) is set to 0.03, 0.09, 0.15, from left to right, and σy is 0.03. Bottom panel: Noise level of Y (σy) is set to 0.03, 0.09, 0.15, from left to right, and σx is 0.03. Red arrow represents the direction of fate transitions of LY to S. Other than adding a white noise, parameters were identical with those in Figure 2C top panel. Color of heatmap corresponds to the density of points. (B) Stochastic simulation in the OR-OR motifs. Initial values were identical with attractor of LY fate in Figure 2C bottom panel (SSS in purple attractor basin). Simulation was preformed 1000 times, with each final state recorded as a dot on the plot. Top panel: Noise level of X (σx) is set to 0.03, 0.09, 0.15, from left to right, and σy is 0.03. Bottom panel: Noise level of Y (σy) is set to 0.03, 0.09, 0.15, from left to right, and σx is 0.03. Red arrow represents the direction of fate transitions of LY to S. Other than adding a white noise, parameters were identical with these in Figure 2C bottom panel.
+
 Next, we wondered whether noise could act as a driving force for reprogramming (e.g., from LY to S). We assigned LY state as the starting cell type in simulation. Apparently, in the AND-AND motif, transition of LY to S can be realized by increasing the noise level of TF Y (Figure 3—figure supplement 1A). Meanwhile, in the OR-OR motif, it is the increased noise level of X that can drive the transition from LY to S (Figure 3—figure supplement 1B), which is also intuitive by viewing the basin geometry of the state space (Figure 2C). These observations suggested that under the noise-driven mode, experimental reprogramming strategy need to take consideration of the regulatory logic (e.g., in reprogramming of LY to S, perturb the high expression TF of LY in the AND-AND motif, while in the OR-OR motif, perturb the low expression TF).
 
-## Section 3: Two logic motifs decide oppositely between differentiation and maintenance under the signal-driven mode
+### Section 3: Two logic motifs decide oppositely between differentiation and maintenance under the signal-driven mode
 
-In addition to noise, cell fate decisions can also be driven by signals, e.g., GM-CSF in hematopoiesis (Mojtahedi et al., 2016), CHIR99021 in chemically induced reprogramming (Zhao, 2019). The change conducted by signals corresponds to the distortions of the cell fate landscape. To simulate the signal-driven mode, we focused on the effect of parameters in the mathematical models on the system’s dynamical properties. To simulate models feasibly and orthogonally, we added parameters u (ux in Equation 3, uy in Equation 4) to Equations 1; 2:(3)d[X]dt=r0x+r1k1[X]n1+r2k2[Y]n2+r3k3[X]n1[Y]n21+k1[X]n1+k2[Y]n2+k3[X]n1[Y]n2−d1[X]+ux(4)d[Y]dt=r0y+r4k4[Y]n2+r5k5[X]n1+r6k6[X]n1[Y]n21+k4[Y]n2+k5[X]n1+k6[X]n1[Y]n2−d2[Y]+uy
+In addition to noise, cell fate decisions can also be driven by signals, e.g., GM-CSF in hematopoiesis (Mojtahedi et al., 2016), CHIR99021 in chemically induced reprogramming (Zhao, 2019). The change conducted by signals corresponds to the distortions of the cell fate landscape. To simulate the signal-driven mode, we focused on the effect of parameters in the mathematical models on the system’s dynamical properties. To simulate models feasibly and orthogonally, we added parameters u (ux in Equation 3, uy in Equation 4) to Equations 1; 2:
+
+$$
+\frac{d[X]}{dt}=\frac{r_{0}^{x}+r_{1}k_{1}[X]^{n_{1}}+r_{2}k_{2}[Y]^{n_{2}}+r_{3}k_{3}[X]^{n_{1}}[Y]^{n_{2}}}{1+k_{1}[X]^{n_{1}}+k_{2}[Y]^{n_{2}}+k_{3}[X]^{n_{1}}[Y]^{n_{2}}}−d_{1}[X]+u_{x}
+$$
+
+
+
+$$
+\frac{d[Y]}{dt}=\frac{r_{0}^{y}+r_{4}k_{4}[Y]^{n_{2}}+r_{5}k_{5}[X]^{n_{1}}+r_{6}k_{6}[X]^{n_{1}}[Y]^{n_{2}}}{1+k_{4}[Y]^{n_{2}}+k_{5}[X]^{n_{1}}+k_{6}[X]^{n_{1}}[Y]^{n_{2}}}−d_{2}[Y]+u_{y}
+$$
 
 The increase of u represents an elevation in the basal expression level of lineage-specifying TFs, reflecting an induction signal from the extracellular environment. From an experimental standpoint, this signal can be the induction of small molecules or overexpression by gene manipulations, such as the transfection of cells with expression vectors containing specific genes.
 
 We first explored the impact on the system when the two induction parameters are changed symmetrically (u=ux=uy). As the increase of u, the number of SSS in the AND-AND system decreases from three to two, where S attractor evaporates after a subcritical pitchfork bifurcation (Figure 4A and Figure 4—figure supplement 1A). Whereas in the OR-OR motif, after the increase of u, LX and LY attractors disappear with saddle-node bifurcations, respectively. Only the SSS representing stem cell fate is retained in the state space (Figure 4B). We then portrayed all the topology of the steady-state adjacency that accompanied the increase of u, from the perspective of the solution landscape. In the AND-AND motif, the attractor basin of LX and LY started to adjoin and occupied the vanishing S attractor basin together (Figure 4C and D). Accordingly, the stem cells cannot maintain themselves and decided to differentiate into either one of the lineages. Moreover, if the cell population possesses the same noise levels in both X and Y, then the fate decisions are unbiased (Figure 4—figure supplement 1B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig4-v1.jpg)
+
+**Figure 4.:** (A–B) Bifurcation diagrams for the AND-AND motif (A) and OR-OR motif (B) driven by parameter u (u=ux=uy) in the cross-inhibition with self activation (CIS) model. Stable steady states (SSS) and unstable steady states (USS) are denoted as solid dots and hollow dots, respectively. (C and F) Changes in the state spaces for the AND-AND motif (C) and OR-OR motif (F) with increasing parameter u, from top to down. (D and G) Changes in the solution landscape with increasing of u, in company with these in (C and F). The crimson X-cross sign and yellow triangle denote first-order and second-order saddle nodes, respectively. Relative energy is quantified by the geometric minimum action method (Vanden-Eijnden and Heymann, 2008), see ‘Materials and methods’. (E) The solution landscape with parameter u=0.0565 for the AND-AND motif from a view of three dimensions. It describes a hierarchical structure of the steady states. From top to bottom, it represents 2-saddle (yellow triangle), 1-saddles (crimson X-cross sign), and the attractors (green dot). The layer of 1-saddles is represented by a blue translucent plane, and the bottom layer is the flow field diagram. The connections from 2-saddle to 1-saddles are represented by red lines, and the connection from 1-saddles to the attractors are represented by blue lines. In the flow field diagram, the direction and color of the arrows correspond to the direction and size of the flow at that location. The corresponding positions of 2-saddle and 1-saddles in the flow field are marked with yellow and red dots, respectively, with black dashed lines indicating the corresponding relationship.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Bifurcation diagrams for the AND-AND motif (Figure 4A) driven by parameter u (u=ux=uy) in the cross-inhibition with self activation (CIS) model. Stable steady states (SSS) and unstable steady states (USS) are denoted as solid dots and hollow dots, respectively. (B) Stochastic simulation in the AND-AND motif. Initial values were identical with attractor of S fate in Figure 2C top panel (SSS in green attractor basin). Noise level of X (σx) and Y (σy) are both set to 0.06. Simulation was preformed 1000 times for each pseudo-time point, with each temporal state (from left to right) recorded as a dot on the plot. Model’s parameters were identical with those in Figure 4C fourth panel. (C) Schematic illustration of the ‘seesaw’ model (Shu et al., 2013) in two logic motifs under bidirectional induction. Red arrows represent the direction of fate transitions. Blue and purple arrows represent induction of X and Y, respectively. Gray hollow circles indicate remained cell states. Gray arrows represent fate transitions from S in bifurcation diagrams as increasing u.
+
 Notably, in the AND-AND motif, we observed a brief intermediated stage before S attractor disappears, where all three fates are directly interconnected (Figure 4C second panel and Figure 4D second panel and Figure 4E). To manifest the generality, we globally screened 6231 groups of parameter sets under the AND-AND motif, and this logic-dependent intermediated stage can be observed for 82.7% of them (see ‘Materials and methods’; Supplementary file 1), indicating little dependence on particular parameter setting (1.8% in the OR-OR motif). Unlike the indirect attractor adjacency structure mediated by S attractor (Figure 2D), the solution landscape with fully-connected structure facilitates transitions between any two pairs of fates. Furthermore, this transitory fully-connected stage is located between the fate-undetermined stage (Figure 4C top panel) and fate-determined stage (Figure 4C third panel), comparable to the initiation (or activation) stage before the lineage commitment in experimental observations (Brand and Morrissey, 2020; Zhang et al., 2018; Arinobu et al., 2007). Therefore, we suspected that the robust fully-connected stage in the AND-AND motif may correspond to a specific period in cell fate decisions.
 
 From the standpoint of reprogramming of differentiated cells back into progenitors, in the AND-AND motif, differentiated cells are more capable of maintaining their own fates during the symmetrical increase of the induction signals on both lineages (Figure 4A and C). Whereas in the OR-OR motif, the attractor basin of LX or LY is progressively occupied by the stem cell fate as ux and uy increase together (Figure 4F and G). In this scenario, the downstream fates are eventually reversed back to the undifferentiated state (Figure 4B and F). Namely, reprogramming engaged in the OR-OR motif can be accomplished by bi-directional induction of downstream antagonistic fates. In sum, we found that under symmetrical signal induction, the behavior of stem cells is subject to core GRN’s logic motifs. In the AND-AND motif, stem cells prefer to differentiate, while under the OR-OR motif, the stem cell population inclines to maintain its undifferentiated state.
 
-## Section 4: The trade-off between progression and accuracy of cell fate decisions under the signal-driven mode
+### Section 4: The trade-off between progression and accuracy of cell fate decisions under the signal-driven mode
 
 According to experimental observations, the majority of fate decisions exhibit lineage preference, also known as ‘symmetry breaking of fate decisions’ (Stanoev and Koseska, 2022; Pei et al., 2020; Psaila et al., 2020; Chen et al., 2018). Take the lineage choices in hematopoiesis as an example, Some HSCs prefer myeloid over lymphoid (Pei et al., 2020; de Haan and Lazare, 2018). This fate-decision bias also further shifts along with aging and infection (Zhang et al., 2018; Reya et al., 2001). In studying this preference in fate decisions, we broke the symmetry in the signal-driven models, by solely increasing ux while keeping uy=0 (Figure 5A). First, it is apparent that the fate decision will significantly steer toward LX along with the increase of ux, regardless of the logic motifs. Ultimately the state spaces contain only LX attractor when ux is sufficiently high (Figure 5B and C and Figure 5—figure supplement 1A). However, the changes in the state space and the solution landscape follow different routes for two logic motifs. In the AND-AND motif, S attractor basin disappears at first, leaving a state space with two differentiated fates (Figure 5D and E). Then the basin of LY attractor shrinks and finally disappears (Figure 5D and E). Whereas in the OR-OR motif, LY attractor disappears first. Then S attractor, with an enlarged basin, shares the state space with LX attractor. Finally, S attractor basin abruptly disappears by a saddle-node bifurcation (Figure 5F and G).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic illustration of S-to-LX cell fate decisions with X-inducing signals. The red and bold arrow indicates the direction of fate decisions. (B–C) Bifurcation diagrams for the AND-AND motif (B) and OR-OR motif (C) driven by parameter ux. (D and F) Changes in the state spaces for the AND-AND motif (D) and OR-OR motif (F) with increasing values of ux, from top to down. (E and G) Changes in the solution landscape with increasing of ux, in company with these in (D and F).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Phase portraits ux vs. uy for the AND-AND and OR-OR motifs. The numbers in separating regions indicate the number of SSS. The extent of red color is quantified by minus of [X] and [Y], which indicates the expression level of balance between X and Y genes. (B) Stochastic simulation in the AND-AND motif. Initial values were identical with attractor of S fate in Figure 2C top panel (SSS in green attractor basin). Noise level of X (σx) and Y (σy) are set to 0.05, 0.15, respectively. Simulation was preformed 1000 times for each pseudo-time point, with each temporal state (from left to right) recorded as a dot on the plot. Model’s parameters were identical with those in Figure 5D middle panel. (C–D) Distribution of SSSs under all parameter sets in two logic motifs. We collected parameter sets with three SSSs, where two USSs are remained by increasing ux (see ‘Materials and methods’). Minus of [X] and [Y] of each SSS is quantified to represent relative cell fate LX, S, LY. Dark lines are kernel density estimation of each distribution. The numbers in separating regions indicate the number of SSS. (E) Schematic illustration of PA trade-off. Left panel: the entire red latch of stem cell pool is undone, which indicates all the stem cells are engaged in differentiation with fate bias (the red bar between LX and LY). Right panel: the gate for differentiating into LY is inaccessible, which indicates stem cells ‘flow’ into LX exclusively. Style was inspired by Chen et al., 2018 and Goldberg et al., 2007.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–B) Stochastic simulation in the AND-AND (A) and OR-OR (B) motifs. Initial values were identical with attractor of LY fate in Figure 2C (SSSs in purple attractor basins). Noise level of X (σx) and Y (σy) are both set to 0.09. Simulation was preformed 1000 times, with each final state recorded as a dot on the plot. Parameter ux switched from 0 to 0.12 (0, 0.06, 0.12, from left to right). Other model’s parameters were identical with those in Figure 2C. (C–D) Schematic illustration of trajectories of reprogramming in the AND-AND (C) and OR-OR (D) motifs. Dark arrows indicate in vivo differentiation from stem cell population. Red arrows indicate trajectories of trans-differentiation under the induction of X.
 
 The distinct sequences of attractor basin disappearance as ux increasing can be viewed as a trade-off between progression and accuracy. In the AND-AND motif, the attractor basin of LX and LY adjoins (Figure 5D middle panel) when S attractor disappears due to the first saddle-node bifurcation (Figure 5B). Notwithstanding the bias of differentiation toward LX, the initial population still possesses the possibility of transiting into LY (Figure 5—figure supplement 1B). That is, in the AND-AND motif, as the increase of induction signal ux, the ‘gate’ for the stem cell renewal is closed first. Stem cells are immediately compelled to make fate decisions toward either LX or LY, with a bias toward LX but a nonignorable probability of entering LY. Albeit the accuracy of differentiation is, therefore, compromised, the overall progression of differentiation is ensured (i.e., all stem cells have to make the fate decisions downward. This causes the pool of stem cells to be exhausted rapidly). Whereas in the OR-OR motif, the antagonistic fate, LY, disappears first (Figure 5C). The attractor basin of S and LX are adjacent in the state space (Figure 5F). In this case, the orientation of the fate decisions is generally unambiguous since the stem cell population can only shift to LX, ensuring the accuracy of differentiation. Next, to check if the observed sequences of basin disappearance are artifacts of specific parameter choice, we randomly sampled parameter sets to check the sequence of attractor changes in their state spaces (6207 groups of the AND-AND motifs and 6634 groups of the OR-OR motifs; Supplementary file 1). We found that 96% AND-AND motifs and 70% OR-OR motifs exhibit the same sequence of attractor vanishment mentioned above (Figure 5—figure supplement 1C and D and D; see ‘Materials and methods’). These results of the global screen demonstrated that the sequence of attractor vanishment is robust to parameter settings. In sum, we proposed that logic motifs couple the trade-off between progression and accuracy as a general phenomenon in the signal-driven asymmetrical fate decisions (Figure 5—figure supplement 1E).
 
 Next, we examined the trans-differentiation from LY into LX by increasing ux. In the AND-AND motif, with the induction of X, LY directly transited into LX as the stem cell state disappears before LY (Figure 5D and Figure 5—figure supplement 2A). Intriguingly, for the OR-OR motif under the same induction, LY population first returned to the S state and then flows into LX (Figure 5F and Figure 5—figure supplement 2B). Namely, different logic motifs conduct distinct trajectories in response to identical induction in reprogramming. The AND-AND motif renders a one-step transition between downstream fates (Figure 5—figure supplement 2C). While in the OR-OR motif, it is a two-step transition mediated by the stem cell state (Figure 5—figure supplement 2D). This phenomenon suggests the observation that cells may be reprogrammed to distinct cell types depending on the induction dose (Zhao, 2019) is more realizable in the OR-OR motif. Integrated with the foregoing symmetrical induction, we recapitulated that in the OR-OR motif, the bi-directional induction or a unilateral induction from a counterpart (e.g., solely induced Y to realize reprogramming of LX to S) confer downstream cell fates to return to the undifferentiated state (Figure 4F and Figure 5F). Whereas in the AND-AND motif, it is substantially more difficult to achieve de-differentiation. This observation may explain why some cell types are not feasible to reprogram (Shi et al., 2017).
 
-## Section 5: The CIS network performs differently during hematopoiesis and embryogenesis
+### Section 5: The CIS network performs differently during hematopoiesis and embryogenesis
 
 In prior sections, we systematically investigated two logic motifs under the noise- and signal-driven modes in silico. With various combinations of logic motifs and driving forces, features about fate-decision behaviors were characterized by computational models. Next, we questioned whether observations in computation can be mapped into real biological systems. And how to discern different logic motifs and driving modes is a prerequisite for answering this question.
 
 To end this, we first evaluated the performance of different models, specifically in simulating the process of stem cells differentiating towards LX (Figure 6A). Under four models with different combinations of driving modes and logic motifs (Figure 6—figure supplement 1A and B), we assessed the expression level and expression variance (defined as the coefficient of variation) of TFs X and Y among the cell population over time in stochastic simulation. We observed that, under the same logic motifs, different driving modes change in the patterns of expression variance rather than expression levels (Figure 6B and C and Figure 6—figure supplement 1C and D). Overall, under the noise-driven differentiation from S to LX, the variance of expression exhibits a continuous and monotonic trend (Figure 6—figure supplement 1D) for both logic motifs. For different logic motifs, in the AND-AND motif, the expression variance of X (highly expressed in LX) declines (Figure 6—figure supplement 1D top panel). Whereas in the OR-OR motif, it is the expression variance of Y (low expressed in LX) displays a rising trend (Figure 6—figure supplement 1D bottom panel). Nevertheless, under the signal-driven mode, the expression variance increases and then decreases, exhibiting a non-monotonic transition due to signal-induced bifurcation. During S to LX differentiation, comparable to the noise-driven mode, it is the expression variance of TF X in the AND-AND motif and TF Y in the OR-OR motif display a nonmonotonic pattern.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic illustration of S differentiating into LX. We took fate transition labeled in light pink shade as an example in the following simulation. (B) Time courses on the coefficient of variation in expression levels of X and Y genes in silico during differentiation towards LX (ux switches from 0 to 0.08 from time point 1–9) in the AND-AND motif. Initial values were set to the attractors of stem cell fate in Figure 2C top panel (SSS in green attractor basin). σx and σy are both set to 0.07. Stochastic simulation was preformed 1000 times for each pseudo-time point. Unit of time is arbitrary. (C) Time courses on the coefficient of variation in expression levels of X and Y genes in silico during differentiation towards LX (ux switches from 0 to 0.24 from time point 1–9) in the OR-OR motif. Initial values were set to the attractors of stem cell fate in Figure 2C bottom panel (stable steady state, SSS in green attractor basin). σx and σy are both set to 0.05. Stochastic simulation was preformed 1000 times for each pseudo-time point. Unit of time is arbitrary. (D) Schematic illustration of distinctive cell fate decision patterns under the AND-AND and OR-OR motifs in the state space. Dark and red gradients represent the extent of ‘AND-AND’ and ‘OR-OR’ in the actual regulatory network, respectively. Each axis represents expression levels of the lineage-specifying transcription factors. Blue, green, and purple circles indicate the cell fates of LX, S, and LY, respectively. (E) Schematic illustration of Gata1-PU.1 circuit that dominates the primary fate decisions in hematopoiesis (CMP: Common myeloid progenitor; MEP: megakaryocyte-erythroid progenitor; GMP: Granulocyte-monocyte progenitor). (F) Measured coefficient of variation of expression levels of Gata1 and PU.1 changing over time during differentiation from CMPs to MEPs and GMPs. Expression levels were quantified via single-cell RT-qPCR (Mojtahedi et al., 2016). Error bars on points represent standard deviation (SD). For details of data processing, see ‘Materials and methods’. (G) Schematic illustration of the differentiation from mESCs in an induction system (Semrau et al., 2017). (H) Measured expression levels of Gbx2 and Tbx3 among cells in embryogenesis quantified via single-cell SMART-seq2 (Semrau et al., 2017). For details of data processing, see ‘Materials and methods’.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Simulation in two logic motifs under the noise-driven mode. Initial values were identical with attractor of S fate in Figure 2C (Stable steady states, SSSs in green attractor basins). Simulation was preformed 1000 times for each pseudo-time point, with each temporal state (from left to right) recorded as a dot on the plot. Top panel: Noise level of X (σx) is set to 0.21, and σy is 0.09. Bottom panel: Noise level of Y (σy) is set to 0.21, and σx is 0.09. Red arrow represents the direction of fate transitions of S to LX. Other than adding a white noise, parameters were identical with those in Figure 2C. (B) Simulation in two logic motifs under the signal-driven mode. Initial values were identical with attractor of S fate in Figure 2C (SSSs in green attractor basins). Top panel: Noise level of X (σx) and Y (σy) are both set to 0.06. Simulation was preformed 1000 times, with each final state recorded as a dot on the plot. Parameter ux switched from 0 to 0.09 (0, 0.045, 0.09, from left to right). Bottom panel: Noise level of X (σx) and Y (σy) are both set to 0.05. Simulation was preformed 1000 times, with each final state recorded as a dot on the plot. Parameter ux switched from 0 to 0.24 (0, 0.12, 0.24, from left to right). Red arrow represents the direction of fate transitions of S to LX. Other model’s parameters were identical with those in Figure 2C. (C) Time courses on the mean in expression levels of X and Y genes in silico during differentiation towards LX. Initial values were set to the attractors of S fate in Figure 2C (SSSs in green attractor basins). Simulation of the noise-driven mode in two logic motifs was identical with that in Figure 6—figure supplement 1A. Simulation of the signal-driven mode in two logic motifs was identical with that in Figure 6—figure supplement 1B (Parameter ux switched from 0 to 0.12 from time point 1–9 in the AND-AND motif). (D) Time courses on the coefficient of variation in expression levels of X and Y genes in silico during differentiation towards LX under the noise-driven mode. Initial values were set to the attractors of S fate in Figure 2C (SSSs in green attractor basins). Simulation of the noise-driven mode in two logic motifs was identical with that in Figure 6—figure supplement 1A.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–B) Measured mean of expression levels of Gata1 and PU.1 changing over time in the processes of differentiation from Common myeloid progenitors (CMP) to megakaryocyte-erythroid progenitors (MEP) and Granulocyte-monocyte progenitors (GMP). Expression levels were quantified via single-cell RT-qPCR (Mojtahedi et al., 2016). For details of data processing, see ‘Materials and methods. (C) Expression level of Gata1 and PU.1 among CMPs, MEPs, and GMPs quantified via single-molecule RNA fluorescent in situ hybridization (Wheat et al., 2020). (D) Heatmap of coefficient of variation of expression levels of 22 genes among cells in embryogenesis quantified via single-cell SMART-seq2 (Semrau et al., 2017). For details of data processing, see ‘Materials and methods’. (E) Time courses on the coefficient of variation in expression levels of X and Y genes in silico during differentiation under the noise-driven mode. Initial values were set to the attractors of S fate in Figure 2C (Stable steady states, SSSs in green attractor basins). Top panel: Noise level of X (σx) and Y (σy) are both set to 0.14. Bottom panel: Noise level of X (σx) and Y (σy) are both set to 0.1. Stochastic simulation was preformed 1000 times for each pseudo-time point.
 
 Such disparities between logic motifs originate from the location of S attractor (Figure 6D and Figure 2C). Although the target cell types are the same (LX), the AND-AND motif requests the expression of the TF X to be turned on, while the OR-OR motif requests the TF Y to be turned off. These key fate-transition genes, namely TF X in the AND-AND motif and TF Y in the OR-OR motif, both exhibit a sharp increase of variation in response to saddle-node bifurcation driven by ux induction (first saddle node in Figure 5B; second saddle node in Figure 5C). Overall, these computational results suggest that we may be able to distinguish the two driving modes according to the expression variance over time series, then logic motifs can be correspondingly assigned by the expression level of the genes in the target cell types. For instance, if the expression variance of the X gene exhibits a nonmonotonic pattern and X is highly expressed in target cell types, then this cell fate decision can be assigned as the signal-driven fate decision in an AND-AND-like motif.
 
@@ -98,9 +158,17 @@ To support our findings with real-world correspondence, we first focused on the 
 
 Another paradigmatic model of fate decision is the differentiation of embryonic stem cells (ESC). Semrau et al., 2017 found that under the retinoic acid (RA) exposure system in vitro, mouse embryonic stem cells (mESC) differentiated into two lineages: extraembryonic endoderm (XEN)-like and ectoderm-like. The investigators recapitulated that two clusters of TFs with the CIS topology determined this lineage specification (Figure 6G). We observed that the expression variance in most of these fate-decision TFs (16/22 73%) are gradually increasing during time, and 14% (3/22) of them exhibit nonmonotonic behavior (Figure 6—figure supplement 2D), suggesting the process is more likely driven by noise (Figure 6—figure supplement 2E). Furthermore, we focused on potential key regulators: Gbx2 and Tbx3, the two likely targets of RA that are crucial for this fate decision (Semrau et al., 2017). The expression variances over time of these two TFs are consistently increasing (Figure 6—figure supplement 2D). In addition, their initial expressions are at a high level, in agreement with that of the OR-OR motif (Figure 6D and H). In short, we proposed that the mESCs differentiation system under RA exposure performs in an OR-OR-like manner, and its differentiation is under the noise-driven mode in this experimental setting.
 
-## Section 6: The chemical-induced reprogramming of human erythroblasts (EB) to induced megakaryocytes (iMK) is the signal-driven fate decisions with an OR-OR-like motif
+### Section 6: The chemical-induced reprogramming of human erythroblasts (EB) to induced megakaryocytes (iMK) is the signal-driven fate decisions with an OR-OR-like motif
 
 The foregoing cell fate decisions initiate from pluripotent cells in mice (mESC, CMP) corresponding to a typical ‘downhill’ in Waddington’s metaphor. In 2006, Yamanaka et al. accomplished the reprogramming from mouse fibroblasts into iPSC state via the noted ‘OSKM’ factors, representing ‘uphill’ in Waddington’s metaphor (Shi et al., 2017; Hamazaki et al., 2017; Abdallah and Del Vecchio, 2019). Likewise, trans-differentiations from one lineage to another have been realized by overexpression or chemical inductions (Xu et al., 2015), whether they correspond to direct ‘trespassing’ of the ridge or an ‘up-and-down’ through the peak in Waddington landscape are still elusive. We then applied our models to reprogramming systems, with a primary focus on hematopoiesis. Qin et al., 2022 recently achieved the direct chemical reprogramming of EBs to iMKs using a four-small-molecule cocktail (Figure 7A). Investigators presented that EBs underwent an induced bipotent precursor for erythrocytes and MKs (iPEM) to finally desired iMKs. It is acknowledged that the FLI1-KLF1 circuit with the CIS topology dominates this fate-decision process (Orkin and Zon, 2008; Palii et al., 2019). To deduce the logic motif of the FLI1-KLF1 circuit, we quantified the expression patterns of FLI1 and KLF1 based on published single-cell RNA-seq data (Qin et al., 2022). We can observe the fate transition from the EB population (FLI1low, KLF1high) to the iMK population (FLI1high, KLF1low) (Figure 7B). According to their expression level, the cell populations can be primarily classified into three clusters. In addition, both FLI1 and KLF1 are highly expressed in the intermediate cell population suspected to be the progenitors of iMKs and EBs (Qin et al., 2022). Namely, the pattern of expression level is concordant with the OR-OR motif in our framework (Figure 6D).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic illustration of the differentiation from megakaryocyte-erythroid progenitors (MEPs) in vivo and in vitro.Red arrows represent the route of reprogramming (Qin et al., 2022) (B) Measured expression levels of KLF1 and FLI1 in reprogramming quantified via single-cell 10 X. For details of data processing, see ‘Materials and methods’. (C) Bifurcation diagrams for the OR-OR motif driven by parameter uy in the CIS model. (D) Fate transition representing reprogramming of EB to iMK in silico. Top panel: changes in the solution landscape with increasing of parameter uy, from left to right; Bottom panel: changes in the state spaces for the OR-OR motif with increasing values of uy, in company with these in top panel. Unit of concentration is arbitrary. (E) Left panel: coefficient of variation of expression levels of KLF1 and FLI1 changes in silico over time under given parameter (uy=0.11) in the OR-OR motif. Noise level of KLF1 (σx) and FLI1 (σy) are set to 0.087. Initial values were identical with LX attractor in Figure 2C bottom panel (stable steady state, SSS in blue attractor basin). Stochastic simulation was preformed 1000 times per round for each time point. We totally preformed three round simulations. Error bars on points represent standard deviation (SD); Right panel: measured coefficient of variation of expression levels of KLF1 and FLI1 changing over time in the processes from EBs to iMKs. Unit of time is arbitrary. (F) Identification of distinct temporal patterns of expression variance by fuzzy c-means clustering. The x-axis represents four time points, while the y-axis represents scaled CV (coefficient of variation) in each time point. Dark trend lines in the middle indicate the average of scaled CV over genes in cluster. (G) Enriched major Gene Ontology terms for clusters 5 and 10. (H) Regulatory network of transcription factors (TFs) in cluster 5 and 10. Circle size indicates the sum of in-degree and out-degree. Node colors indicate different Supermodules (adapted from Qin et al., 2022). Green and red edges indicate activation and inhibition, respectively. The light blue and light pink shades denote genes in clusters 5 and 10, respectively.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/88742/elife-88742-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Time courses on the mean in expression levels of KLF1 and FLI1 genes in silico during reprogramming of EBs to iMKs under the noise-driven (left) and signal-driven (right) modes. Initial values were set to the attractors of LX fate in Figure 2C bottom panel (SSS in blue attractor basin). Noise level of KLF1 (σx) and FLI1 (σy) are both set to 0.18 under the noise-driven mode. Stochastic simulation was preformed 1000 times for each pseudo-time point. Other than adding a white noise, parameters were identical with those in Figure 2C bottom panel. Simulation of the signal-driven mode was identical with that in Figure 7E left panel. (B) Coefficient of variation of expression levels of KLF1 and FLI1 changes in silico along by pseudo-time under the OR-OR motif. Simulation was identical with that in Figure 7—figure supplement 1 left panel. (C) Identification of distinct temporal patterns of expression variance by fuzzy c-means clustering. The x-axis represents four time points, while the y-axis represents scaled CV (coefficient of variation) in each time point. Dark trend lines in the middle indicate average of scaled CV over genes in cluster.
 
 Next, to investigate the driving force of this reprogramming system, we simulated the fate transition from EB (corresponding to LX, blue) to iMK (LY, purple) under both driving modes. Under the noise-driven mode, we assumed that the reprogramming system facilitated the noise levels of both TFs. For simplicity, the starting cell population (EBs) was assigned symmetrical high noise levels. While under the signal-driven mode, we assumed that the four-small-molecule cocktail upregulated the expression of FLI1 (highly expressed in iMKs). Then, we simulated the transition from EBs to iMKs by lifting the basal expression level of FLI1, corresponding to parameter uy in model (Figure 7C). The bifurcation diagrams indicate that the signal-driven fate transition is mediated by the iPEM state (Figure 7C). In particular, overexpression of FLI1 renders sequential saddle-node bifurcations. Thus, EBs are converted to iPEMs before steering toward the terminal iMK state (Figure 7C and D), which is consistent with the experiment’s findings.
 
@@ -130,117 +198,241 @@ Actual cell fate decisions are seldom purely unbiased. Under the asymmetrical si
 
 We classified three examples of cell fate decisions based on patterns of expression and expression variance. In hematopoiesis, we took fate choice between erythroid and myeloid as a paradigm, and assigned it an AND-AND-like motif under the signal-driven mode. In embryogenesis, we suggested the fate decision in RA exposure system is an OR-OR-like motif under the noise-driven mode. In reprogramming, the chemical-induced trans-differentiation is the signal-driven fate decisions incorporated an OR-OR-like motif. For simplicity and intuitiveness, we devised our model with two symmetrical combinations of regulatory logic (AND-AND/OR-OR). Albeit there are merely four types of cell fate decisions in consideration, our framework enables to be generalized and expanded to accommodate multi-node GRNs and complex logic combinations. Plenty of studies zoomed in one particular fate-decision events. However, from the standpoint of systems biology, we underlined that classification of fate decisions is a vital step for further investigation, as is the case for the typing of cells and tumors. Theoretically, appropriate classification of fate-decision systems enables the enrichment of common properties. So, accumulated knowledge can be inherited to new fate-decision cases. Taking reprogramming as an example, Zhao, 2019 recapitulated five kinds of trajectories in chemical-induced reprogramming. We suggested that the reprogramming trajectory is coupled with the logic motifs. On one hand, it is possible to answer why a certain reprogramming system exhibit a particular trajectory. On the other hand, it is possible to postulate achievable reprogramming according to the logic motifs of core GRNs (e.g., the AND-AND motif is more likely to enable direct conversion; model 4 mentioned in Zhao, 2019). Recently, synthetic biology has realized the insertion of the CIS network in mammalian cells (Zhu et al., 2022). One of the prerequisites for recapitulating the complex dynamics of fate transitions in synthetic biology is systematical understanding of the role of GRNs and driving forces in differentiation. And the logic motifs are the essential and indispensable elements in GRNs. Our work also provides a blueprint for designing logic motifs with particular functions. We are also interested in validating the conclusions drawn from our models in a synthetic biology system.
 
-## Limitation of this study
+### Limitation of this study
 
 Although our framework enables the investigation of more logic motifs, we chose two classical and symmetrical logic combinations for our analysis. Future work should involve more logic gates like XOR and explore asymmetrical logic motifs like AND-OR. The gene expression datasets analyzed here are only available for a limited number of time points. Though they meet the need for discerning trends, it is evident that the application to the datasets with more time points will yield clearer and less ambiguous changing trends to support the conclusions of this paper more generally. Notwithstanding the fact that the CIS network is prevalent in fate-decision programs, there are other topologies of networks that serve important roles in the cell-state transitions, like feed-forward loop, etc. The framework should further incorporate diverse network motifs in the future. In addition, for simplicity and intuition, we here considered signals as uncoupled and additive effects in ODE models, due to feasible mapping in real biological systems, such as ectopic overexpression.
 
 ## Materials and methods
 
-## Derivation of the CIS network
+### Derivation of the CIS network
 
-In GRN, each TFs is represented by a node and the edge between nodes represents the regulatory relationship. In our work, we considered a GRN comprised of 2 TFs (i.e., X, Y), formulated with 2 ODEs describing the change of each TF. Define ([X], [Y]) to be the concentration of TF X and Y, the ODE model is described as follows:(5){d[X]dt=HX([X],[Y])−dX[X]d[Y]dt=HY([X],[Y])−dY[X]
+In GRN, each TFs is represented by a node and the edge between nodes represents the regulatory relationship. In our work, we considered a GRN comprised of 2 TFs (i.e., X, Y), formulated with 2 ODEs describing the change of each TF. Define ([X], [Y]) to be the concentration of TF X and Y, the ODE model is described as follows:
+
+$$
+{\frac{d[X]}{dt}=H_{X}([X],[Y])−d_{X}[X]\frac{d[Y]}{dt}=H_{Y}([X],[Y])−d_{Y}[X]
+$$
 
 where HX([X], [Y]) is the production rate of TF X that combines the effects from both activators and suppressors of the X and dX is the decay rate from the X and Y, which integrate degradation and dilution.
 
 The exact form of HX([X], [Y]), HY([X], [Y]) are derived based on the simple GRN with nodes X and Y via a set of molecular interactions between these TFs themselves, genes that encode for them, and the mRNAs (Abdallah and Del Vecchio, 2019).
 
-TFs in a GRN act as multimers to implement regulatory interaction. In our model, we treated TFs X and Y as acting in their homo-multimer forms, Xn1 and Yn2, respectively (i.e., n1 TF X monomers reversibly form an activated homo-multimerized form Xn1 and n2 monomers of TF Y to reversibly form activated homo-multimer Yn2). Of note, n1 and n2 here are able to be further generalized beyond the number of binding elements (Nam et al., 2022; Santillán, 2008). The multimerization biochemical reaction of TFs X and Y can be represented as follows,(6)X+X+⋅⋅⋅+X⏟n1monomers⇌pxqxXn1,Y+Y+⋅⋅⋅+Y⏟n2monomers⇌pyqyYn2
+TFs in a GRN act as multimers to implement regulatory interaction. In our model, we treated TFs X and Y as acting in their homo-multimer forms, Xn1 and Yn2, respectively (i.e., n1 TF X monomers reversibly form an activated homo-multimerized form Xn1 and n2 monomers of TF Y to reversibly form activated homo-multimer Yn2). Of note, n1 and n2 here are able to be further generalized beyond the number of binding elements (Nam et al., 2022; Santillán, 2008). The multimerization biochemical reaction of TFs X and Y can be represented as follows,
 
-There are many diverse mechanisms of regulation (Lambert et al., 2018; Balsalobre and Drouin, 2022). For simplicity, our model considered transcriptional regulation as a major mechanism since it is feasibly characterized in experiments and can well represent the interaction between genes in Cross-Inhibition with Self-activation (CIS) network. To activate downstream transcription, TFs bind with their Cis-Regulatory Elements (CREs). We denoted DX for the no-bound CREs of TF X and DY for the TF Y in an independent manner. Here, we posited different TFs bind to exclusive, non-overlapping CREs to regulate target genes. Hence, there are totally eight binding patterns described as follows,(7)DX+Xn1⇌q1P1DXX,DX+Yn2⇌q2P2DXY,DY+Yn2⇌q4P4DYY,DY+Xn1⇌q3P3DYX,DXX+Yn2⇌q5P5DXXY,DXY+Xn1⇌q6P6DXXY,DYX+Yn2⇌q7P7DYYX,DYY+Xn1⇌q8P8DYYX.
+$$
+X+X+⋅⋅⋅+X⏟n_{1}monomers⇌p_{x}q_{x}X_{n_{1}},Y+Y+⋅⋅⋅+Y⏟n_{2}monomers⇌p_{y}q_{y}Y_{n_{2}}
+$$
 
-Next, we modeled the biochemical reactions of transcription and translation. Transcription is an elaborate process involving many steps, including initiation, elongation, and termination of an mRNA transcript. Likewise, translation includes peptide formation and elongation, followed by protein folding before function. However, to evaluate the behavior of GRN concisely, we treated transcription and translation as single-step reactions and then use lumped rates to encompass the time it takes for all steps in the elaborate machinery to complete (Abdallah and Del Vecchio, 2019). Hence, the transcription process can be represented as follows,(8)DXX→αx1mX+DXX,DYY→αy1mY+DYY,DX→αxmX+DX,DXY→αx2mX+DXY,DYX→αy2mY+DYX,DY→αymY+DY,DXXY→αx3mX+DXXY,DYYX→αy3mY+DYYX.
+There are many diverse mechanisms of regulation (Lambert et al., 2018; Balsalobre and Drouin, 2022). For simplicity, our model considered transcriptional regulation as a major mechanism since it is feasibly characterized in experiments and can well represent the interaction between genes in Cross-Inhibition with Self-activation (CIS) network. To activate downstream transcription, TFs bind with their Cis-Regulatory Elements (CREs). We denoted DX for the no-bound CREs of TF X and DY for the TF Y in an independent manner. Here, we posited different TFs bind to exclusive, non-overlapping CREs to regulate target genes. Hence, there are totally eight binding patterns described as follows,
+
+$$
+D_{X}+X_{n_{1}}⇌q_{1}P_{1}D_{XX},D_{X}+Y_{n_{2}}⇌q_{2}P_{2}D_{XY},D_{Y}+Y_{n_{2}}⇌q_{4}P_{4}D_{YY},D_{Y}+X_{n_{1}}⇌q_{3}P_{3}D_{YX},D_{XX}+Y_{n_{2}}⇌q_{5}P_{5}D_{XXY},D_{XY}+X_{n_{1}}⇌q_{6}P_{6}D_{XXY},D_{YX}+Y_{n_{2}}⇌q_{7}P_{7}D_{YYX},D_{YY}+X_{n_{1}}⇌q_{8}P_{8}D_{YYX}.
+$$
+
+Next, we modeled the biochemical reactions of transcription and translation. Transcription is an elaborate process involving many steps, including initiation, elongation, and termination of an mRNA transcript. Likewise, translation includes peptide formation and elongation, followed by protein folding before function. However, to evaluate the behavior of GRN concisely, we treated transcription and translation as single-step reactions and then use lumped rates to encompass the time it takes for all steps in the elaborate machinery to complete (Abdallah and Del Vecchio, 2019). Hence, the transcription process can be represented as follows,
+
+$$
+D_{XX}→\alpha_{x}^{1}m_{X}+D_{XX},D_{YY}→\alpha_{y}^{1}m_{Y}+D_{YY},D_{X}→\alpha_{x}m_{X}+D_{X},D_{XY}→\alpha_{x}^{2}m_{X}+D_{XY},D_{YX}→\alpha_{y}^{2}m_{Y}+D_{YX},D_{Y}→\alpha_{y}m_{Y}+D_{Y},D_{XXY}→\alpha_{x}^{3}m_{X}+D_{XXY},D_{YYX}→\alpha_{y}^{3}m_{Y}+D_{YYX}.
+$$
 
 Here, we distinguished the basal rate of transcription of a gene without activation or repression (termed as constitutive transcription). The basal transcription rate is shown in the left panel in Equation 8.
 
-Though we considered eight configurations, these ultimately led to two mRNA transcripts, mX and mY. Translation can also be represented by a one-step process from these transcripts to their protein products. The one-step translation biochemical reactions are described as follows,(9)mX→κxmX+X,mY→κymY+Y.
+Though we considered eight configurations, these ultimately led to two mRNA transcripts, mX and mY. Translation can also be represented by a one-step process from these transcripts to their protein products. The one-step translation biochemical reactions are described as follows,
 
-Next, we considered the decay of these proteins as well as their respective mRNA species. In general, these proteins and mRNA species will undergo decay to some extent which is a combination of both degradation and dilution.(10)X→δx∅,mX→ηx∅,X→β∅,Y→δy∅,mY→ηy∅,Y→β∅,
+$$
+m_{X}→κ_{x}m_{X}+X,m_{Y}→κ_{y}m_{Y}+Y.
+$$
 
-here, the left and middle panels represent the degradation of TFs X and Y as well as mRNA transcripts mX and mY. The right panel represents the dilution of TFs X and Y due to cell division. In general, the degradation rate γ can be determined using the following relations,(11)δ=ln2t12,η=ln2t12,β≈ln2tdoubling,
+Next, we considered the decay of these proteins as well as their respective mRNA species. In general, these proteins and mRNA species will undergo decay to some extent which is a combination of both degradation and dilution.
+
+$$
+X→\delta_{x}∅,m_{X}→η_{x}∅,X→\beta∅,Y→\delta_{y}∅,m_{Y}→η_{y}∅,Y→\beta∅,
+$$
+
+here, the left and middle panels represent the degradation of TFs X and Y as well as mRNA transcripts mX and mY. The right panel represents the dilution of TFs X and Y due to cell division. In general, the degradation rate γ can be determined using the following relations,
+
+$$
+\delta=\frac{ln2}{t_{\frac{1}{2}}},η=\frac{ln2}{t_{\frac{1}{2}}},\beta≈\frac{ln2}{t_{doubling}},
+$$
 
 where t1/2 represents the half-lives of each protein or mRNA transcript, tdoubling represents the cell division rate. For protein products X and Y, we used the notation d to illustrate the total rate of decay rather than two separate parameters in our model, i.e., d1 = δx + β, d2 = δy + β, respectively. In general, t1/2 and tdoubling are robust and stationary, thus we treated these paramaters as constant in our model, i.e., di = Const, for i = 1, 2.
 
-We have described the reactions that comprise the endogenous components of our GRN. In our work, fate decisions are classified into two modes, i.e., driven by the noise of intracellular gene expression or driven by extracellular signals. Under the noise-driven mode, a Gaussian white noise is added to the concentration of TFs to illustrate the random intracellular noise. Whereas if driven by signals, the expression of a gene will be affected by extracellular molecular cocktails, physical stimulation, etc. Therefore, we added the production rate of the TF’s mRNA from the ectopic DNA to generalize our model.(12)∅→uxmX,∅→uymY,
+We have described the reactions that comprise the endogenous components of our GRN. In our work, fate decisions are classified into two modes, i.e., driven by the noise of intracellular gene expression or driven by extracellular signals. Under the noise-driven mode, a Gaussian white noise is added to the concentration of TFs to illustrate the random intracellular noise. Whereas if driven by signals, the expression of a gene will be affected by extracellular molecular cocktails, physical stimulation, etc. Therefore, we added the production rate of the TF’s mRNA from the ectopic DNA to generalize our model.
 
-here ux, uy represent the additional mRNA species mX and mY via ectopic overexpression at rates ux and uy, respectively. The biochemical reactions take place on a faster timescale. This enables us to derive the change in concentration of species from a biochemical reaction based on the law of mass action. For example, for multimerization reaction of X in Equation 6, once equilibrium, we can get(13)X+X+⋅⋅⋅+X⏟n1monomers⇌pxqxXn1⇒px[X][X]⋅⋅⋅[X]⏟n1terms=px[X]n1=qx[Xn1]⇒Kx≜pxqx=[Xn1][X]n1.
+$$
+∅→u_{x}m_{X},∅→u_{y}m_{Y},
+$$
 
-Also, for TF X bind with its CRE DX, we can get(14)DX+Xn1⇌q1p1DXX⇒p1[DX][Xn1]=q1[DXX]⇒K1≜p1q1=[DXX][DX][Xn1],
+here ux, uy represent the additional mRNA species mX and mY via ectopic overexpression at rates ux and uy, respectively. The biochemical reactions take place on a faster timescale. This enables us to derive the change in concentration of species from a biochemical reaction based on the law of mass action. For example, for multimerization reaction of X in Equation 6, once equilibrium, we can get
 
-here, we define K1≜p1q1 as a constant, i.e., chemical equilibrium constant. Furthermore, we define K1≜p1q1,i=x,y,1,2,⋯,8 for biochemical reactions in Equation 6 and Equation 7, respectively.
+$$
+X+X+⋅⋅⋅+X⏟n_{1}monomers⇌p_{x}q_{x}X_{n_{1}}⇒p_{x}[X][X]⋅⋅⋅[X]⏟n_{1}terms=p_{x}[X]^{n_{1}}=q_{x}[X_{n_{1}}]⇒K_{x}≜\frac{p_{x}}{q_{x}}=\frac{[X_{n_{1}}]}{[X]^{n_{1}}}.
+$$
 
-Then, we constructed an ODE model for the GRN. For a given species S, the principle to get a single equation is as follows:(15)Change∈concentrationofS=d[S]dt=[S˙]=∑{allbiochemicalrecationratesinvolvingS}
+Also, for TF X bind with its CRE DX, we can get
 
-To explain how this principle assists us to build the ODE model, we took species mX as a running example. Summarizing all of these biochemical reaction rates involving mX we can get the change in concentration [mX],(16)[mX˙]=αx[DX]+αx1[DXX]+αx2[DXY]+αx3[DXXY]−ηx[mX]+ux.
+$$
+D_{X}+X_{n_{1}}⇌q_{1}p_{1}D_{XX}⇒p_{1}[D_{X}][X_{n_{1}}]=q_{1}[D_{XX}]⇒K_{1}≜\frac{p_{1}}{q_{1}}=\frac{[D_{XX}]}{[D_{X}][X_{n_{1}}]},
+$$
 
-Doing so for our biochemical reaction network yielded the equations of our ODE model,(17){{[X]˙=κx[mX]−d1[X][Y]˙=κy[mY]−d2[Y][mX]˙=αx[DX]+αx1[DXX]+αx2[DXY]+αx3[DXXY]−ηx[mX]+ux[mY]˙=αy[DY]+αx1[DYY]+αx2[DYX]+αx3[DYYX]−ηy[mY]+uy[DX]˙=−p1[Xn1][DX]+q1[DXX]−p2[Yn2][DX]+q2[DXY][DY]˙=−p4[Yn2][DY]+q4[DYY]−p3[Xn1][DY]+q3[DYX][DXX]˙=p1[DX][Xn1]−q1[DXX]−p5[DXX][Yn2]+q5[DXXY][DXY]˙=p2[DX][Yn2]−q2[DXY]−p6[DXY][Xn1]+q6[DXXY][DYX]˙=p3[DY][Xn1]−q3[DYX]+p7[DYX][Yn2]−q7[DYYX][DYY]˙=p3[DY][Yn2]−q4[DYY]+p8[DYY][Xn1]−q8[DYYX][DXXY]˙=p5[DXX][Yn2]−q5[DXXY]+p6[DXY][Xn1]−q6[DXXY][DYYX]˙=p7[DYX][Yn2]−q7[DYYX]+p8[DYY][Xn1]−q8[DYYX][Xn1]˙=px[X]n1−qx[Xn1]−p1[DX][Xn1]+q1[DXX]−p3[DY][Xn1]+q3[DYX]−p6[DXY][Xn1]+q6[DXXY]−p8[DYY][Xn1]+q8[DYYX][Yn2]˙=py[Y]n2−qy[Yn2]−p2[DX][Yn2]+q2[DXY]−p4[DY][Yn2]+q4[DYY]−p5[DXX][Yn2]+q5[DXXY]−p7[DYX][Yn2]+q7[DYYX]
+here, we define $K_{1}≜\frac{p_{1}}{q_{1}}$ as a constant, i.e., chemical equilibrium constant. Furthermore, we define $K_{1}≜\frac{p_{1}}{q_{1}},i=x,y,1,2,⋯,8$ for biochemical reactions in Equation 6 and Equation 7, respectively.
 
-The 14-dimension ODE model of the GRN contains overwhelming parameters that make it impractical to analyze for cell fate. To reduce the dimensionality of the model, we assumed the multimerization, DNA binding/unbinding and mRNA dynamic occurs sufficiently faster than protein production and decay, the temporal derivatives of the respective species can be set to 0, indicating that the species concentration reaches its quasi-steady state (Abdallah and Del Vecchio, 2019). Thus, we can get(18){[X˙]=κx[mX]−d1[X][Y˙]=κy[mY]−d2[Y][mX˙]=0=αx[DX]+αx1[DXX]+αx2[DXY]+αx3[DXXY]−ηx[mX]+ux[mY˙]=0=αy[DY]+αy1[DYY]+αy2[DYX]+αy3[DYYX]−ηy[mY]+uy.
+Then, we constructed an ODE model for the GRN. For a given species S, the principle to get a single equation is as follows:
 
-To better demonstrate the deviation of the model, we take TF X as a running example. Since GRN is symmetric, we can deviate TF Y’s equation in the same way. Once the biochemical reaction reaches its equilibrium, using the law of mass action we can get(19)[Xn1]=Kx[X]n1[DXX]=K1[DX][Xn1]=K1[DX][Xn1]=KxK1[DX][X]n1[DXY]=K1[DX][Yn2]=K1[DX][Yn2]=KyK2[DX][Y]n2[DXXY]=K5[DXX][Yn2]=K5[DXX][Yn2]=KxKyK1K5[DX][X]n1[Y]n2
+$$
+Change\inconcentrationofS=\frac{d[S]}{dt}=[S˙]=\sum{allbiochemicalrecationratesinvolvingS}
+$$
 
-Noticing that  mX˙ = 0 in Equation 18, the species [mX] can be represented by CRE terms,(20)[mX]=1ηx(αx[DX]+αx1[DXX]+αx2[DXY]+αx3[DXXY])+uxηx=1ηx(αx[DX]+αx1K1[DX][Xn1]+αx2K2[DX][Yn2]+αx3K1K5[DX][Xn1][Yn2])+uxηx=1ηx([DX]+αx1KxK1[DX][X]n1+αx2KyK2[DX][Y]n2+αx3KxKyK1K5[DX][X]n1[Y]n2)+uxηx
+To explain how this principle assists us to build the ODE model, we took species mX as a running example. Summarizing all of these biochemical reaction rates involving mX we can get the change in concentration [mX],
 
-In our well-stirred system, for TF X’s CREs, the conservation law holds, i.e., the total CRE concentration of X, as a constant, equals the sum of CRE concentration that is bound by X, by Y, and by X and Y. By employing so and combining with Equation 19 we can get a representation of [DX],(21)[DTX]=[DX]+[DXY]+[DXX]+[DXXY]⇒[DX]=[DTX](1+KxK1[X]n1+KyK2[Y]n2+KxKyK1K5[X]n1[Y]n2).
+$$
+[m_{X}˙]=\alpha_{x}[D_{X}]+\alpha_{x}^{1}[D_{XX}]+\alpha_{x}^{2}[D_{XY}]+\alpha_{x}^{3}[D_{XXY}]−η_{x}[m_{X}]+u_{x}.
+$$
 
-Substitute [DX] in Equation 20 with Equation 21, we can get(22)[mX]=1ηX[DX](αx+αx1KxK1[X]n1+αx2KyK2[Y]n2+αx3KxKyK1K5[X]n1[Y]n2)+uxηx=DTXηx(αx+αx1KxK1[X]n1+αx2KyK2[Y]n2+αx3KxKyK1K5[X]n1[Y]n2)(1+KxK1[X]n1+KyK2[Y]n2+KxKyK1K5[X]n1[Y]n2)+uxηx.
+Doing so for our biochemical reaction network yielded the equations of our ODE model,
 
-Then finally we reach to the point that the deviation of [X]. In Equation 18 we substituted [mX] with Equation 22, and got(23)[X]˙=κx[mX]−d1[X]=DTXκxηx(αx+αx1KxK1[X]n1+αx2KyK2[Y]n2+αx3KxKyK1K5[X]n1[Y]n2)(1+KxK1[X]n1+KyK2[Y]n2+KxKyK1K5[X]n1[Y]n2)+κxuxηx−d1[X]
+$$
+{{[X]˙=κ_{x}[m_{X}]−d_{1}[X][Y]˙=κ_{y}[m_{Y}]−d_{2}[Y][m_{X}]˙=\alpha_{x}[D_{X}]+\alpha_{x}^{1}[D_{XX}]+\alpha_{x}^{2}[D_{XY}]+\alpha_{x}^{3}[D_{XXY}]−η_{x}[m_{X}]+u_{x}[m_{Y}]˙=\alpha_{y}[D_{Y}]+\alpha_{x}^{1}[D_{YY}]+\alpha_{x}^{2}[D_{YX}]+\alpha_{x}^{3}[D_{YYX}]−η_{y}[m_{Y}]+u_{y}[D_{X}]˙=−p_{1}[X_{n_{1}}][D_{X}]+q_{1}[D_{XX}]−p_{2}[Y_{n_{2}}][D_{X}]+q_{2}[D_{XY}][D_{Y}]˙=−p_{4}[Y_{n_{2}}][D_{Y}]+q_{4}[D_{YY}]−p_{3}[X_{n_{1}}][D_{Y}]+q_{3}[D_{YX}][D_{XX}]˙=p_{1}[D_{X}][X_{n_{1}}]−q_{1}[D_{XX}]−p_{5}[D_{XX}][Y_{n_{2}}]+q_{5}[D_{XXY}][D_{XY}]˙=p_{2}[D_{X}][Y_{n_{2}}]−q_{2}[D_{XY}]−p_{6}[D_{XY}][X_{n_{1}}]+q_{6}[D_{XXY}][D_{YX}]˙=p_{3}[D_{Y}][X_{n_{1}}]−q_{3}[D_{YX}]+p_{7}[D_{YX}][Y_{n_{2}}]−q_{7}[D_{YYX}][D_{YY}]˙=p_{3}[D_{Y}][Y_{n_{2}}]−q_{4}[D_{YY}]+p_{8}[D_{YY}][X_{n_{1}}]−q_{8}[D_{YYX}][D_{XXY}]˙=p_{5}[D_{XX}][Y_{n_{2}}]−q_{5}[D_{XXY}]+p_{6}[D_{XY}][X_{n_{1}}]−q_{6}[D_{XXY}][D_{YYX}]˙=p_{7}[D_{YX}][Y_{n_{2}}]−q_{7}[D_{YYX}]+p_{8}[D_{YY}][X_{n_{1}}]−q_{8}[D_{YYX}][X_{n_{1}}]˙=p_{x}[X]^{n_{1}}−q_{x}[X_{n_{1}}]−p_{1}[D_{X}][X_{n_{1}}]+q_{1}[D_{XX}]−p_{3}[D_{Y}][X_{n_{1}}]+q_{3}[D_{YX}]−p_{6}[D_{XY}][X_{n_{1}}]+q_{6}[D_{XXY}]−p_{8}[D_{YY}][X_{n_{1}}]+q_{8}[D_{YYX}][Y_{n_{2}}]˙=p_{y}[Y]^{n_{2}}−q_{y}[Y_{n_{2}}]−p_{2}[D_{X}][Y_{n_{2}}]+q_{2}[D_{XY}]−p_{4}[D_{Y}][Y_{n_{2}}]+q_{4}[D_{YY}]−p_{5}[D_{XX}][Y_{n_{2}}]+q_{5}[D_{XXY}]−p_{7}[D_{YX}][Y_{n_{2}}]+q_{7}[D_{YYX}]
+$$
 
-here, we define γ0x=αxDTXκxηx,γ1=αx1DTXκxηx,γ2=αx2DTXκxηx,γ3=αx3DTXκxηx as relative protein generation rates, k1=K1Kx,k2=K2Ky,k3=KxKyK1K5 as the weight of each TF binding patterns, as ectopic DNA (to simplify the notation, we may drop the tilde of u~i,i=x,y), then we can get(24)[X˙]=r0x+r1k1[X]n1+r2k2[Y]n2+r3k3[X]n1[Y]n21+k1[X]n1+k2[Y]n2+k3[X]n1[Y]n2−d1[X]+ux,
+The 14-dimension ODE model of the GRN contains overwhelming parameters that make it impractical to analyze for cell fate. To reduce the dimensionality of the model, we assumed the multimerization, DNA binding/unbinding and mRNA dynamic occurs sufficiently faster than protein production and decay, the temporal derivatives of the respective species can be set to 0, indicating that the species concentration reaches its quasi-steady state (Abdallah and Del Vecchio, 2019). Thus, we can get
 
-Similarly, for TF Y, we can get(25)[Y]˙=DTYκyηy(αy+αy1KyK3[Y]n2+αy2KyK4[X]n1+αy3KxKyK3K7[X]n1[Y]n2)(1+KyK3[Y]n2+KyK4[X]n1+KxKyK3K7[X]n1[Y]n2)+κyuyηy−d2[Y]=r0y+r4k4[Y]n2+r5k5[X]n1+r6k6[X]n1[Y]n21+k4[Y]n2+k5[X]n1+k6[X]n1[Y]n2−d2[Y]+uy.
+$$
+{[X˙]=κ_{x}[m_{X}]−d_{1}[X][Y˙]=κ_{y}[m_{Y}]−d_{2}[Y][m_{X}˙]=0=\alpha_{x}[D_{X}]+\alpha_{x}^{1}[D_{XX}]+\alpha_{x}^{2}[D_{XY}]+\alpha_{x}^{3}[D_{XXY}]−η_{x}[m_{X}]+u_{x}[m_{Y}˙]=0=\alpha_{y}[D_{Y}]+\alpha_{y}^{1}[D_{YY}]+\alpha_{y}^{2}[D_{YX}]+\alpha_{y}^{3}[D_{YYX}]−η_{y}[m_{Y}]+u_{y}.
+$$
 
-Ultimately, by combining Equation 24 and Equation 25, we reduced our 14-dimension model to a 2-dimension dynamic system,(26){d[X]dt=r0x+r1k1[X]n1+r2k2[Y]n2+r3k3[X]n1[Y]n21+k1[X]n1+k2[Y]n2+k3[X]n1[Y]n2−d1[X]+uxd[Y]dt=r0y+r4k4[Y]n2+r5k5[X]n1+r6k6[X]n1[Y]n21+k4[Y]n2+k5[X]n1+k6[X]n1[Y]n2−d2[Y]+uy,
+To better demonstrate the deviation of the model, we take TF X as a running example. Since GRN is symmetric, we can deviate TF Y’s equation in the same way. Once the biochemical reaction reaches its equilibrium, using the law of mass action we can get
 
-## Stochastic simulations
+$$
+[X_{n_{1}}]=K_{x}[X]^{n_{1}}[D_{XX}]=K_{1}[D_{X}][X_{n_{1}}]=K_{1}[D_{X}][X_{n_{1}}]=K_{x}K_{1}[D_{X}][X]^{n_{1}}[D_{XY}]=K_{1}[D_{X}][Y_{n_{2}}]=K_{1}[D_{X}][Y_{n_{2}}]=K_{y}K_{2}[D_{X}][Y]^{n_{2}}[D_{XXY}]=K_{5}[D_{XX}][Y_{n_{2}}]=K_{5}[D_{XX}][Y_{n_{2}}]=K_{x}K_{y}K_{1}K_{5}[D_{X}][X]^{n_{1}}[Y]^{n_{2}}
+$$
 
-In Equation 22, parameters of the AND-AND motif (Figure 2C top panel) are: (r0x , r0y , r1, r2, r3, r4, r5, r6) = (0, 0, 0.95, 0, 0, 0.95, 0, 0), (k1, k2, k3, k4, k5, k6) = (1.5, 0.8, 1, 1.5, 0.8, 1) and (d1, d2) = (0.55, 0.55). Parameters of the OR-OR motif (Figure 2C bottom panel) are: (r0x , r0y , r1, r2, r3, r4, r5, r6) = (0.15, 0.15, 0.95, 0, 0.95, 0.95, 0, 0.95), (k1, k2, k3, k4, k5, k6) = (2.1, 1.7, 1.8, 2.1, 1.7, 1.8) and (d1, d2) = (0.55, 0.55). In both the AND-AND and OR-OR motifs, (n1, n2) = (2, 2). We simulated noise in the model using a Langevin equation (Foster et al., 2009):(27)dxi=Fi(x)dt+dWi,
+Noticing that  $m_{X}˙$ = 0 in Equation 18, the species [mX] can be represented by CRE terms,
 
-Where Fix is the deterministic function of Equation 22. Wi is a Wiener process which introduces additive noise with no dependence on the state x. We integrated the Wiener process over the interval which gives us ∆tξi and ξi is a Gaussian white noise with zero mean and given variance (σ2). Thus we can compute the new state of the dynamical systems using the Runge–Kutta method.
+$$
+[m_{X}]=\frac{1}{η_{x}}(\alpha_{x}[D_{X}]+\alpha_{x}^{1}[D_{XX}]+\alpha_{x}^{2}[D_{XY}]+\alpha_{x}^{3}[D_{XXY}])+\frac{u_{x}}{η_{x}}=\frac{1}{η_{x}}(\alpha_{x}[D_{X}]+\alpha_{x}^{1}K_{1}[D_{X}][X_{n_{1}}]+\alpha_{x}^{2}K_{2}[D_{X}][Y_{n_{2}}]+\alpha_{x}^{3}K_{1}K_{5}[D_{X}][X_{n_{1}}][Y_{n_{2}}])+\frac{u_{x}}{η_{x}}=\frac{1}{η_{x}}([D_{X}]+\alpha_{x}^{1}K_{x}K_{1}[D_{X}][X]^{n_{1}}+\alpha_{x}^{2}K_{y}K_{2}[D_{X}][Y]^{n_{2}}+\alpha_{x}^{3}K_{x}K_{y}K_{1}K_{5}[D_{X}][X]^{n_{1}}[Y]^{n_{2}})+\frac{u_{x}}{η_{x}}
+$$
 
-## Parameter screening
+In our well-stirred system, for TF X’s CREs, the conservation law holds, i.e., the total CRE concentration of X, as a constant, equals the sum of CRE concentration that is bound by X, by Y, and by X and Y. By employing so and combining with Equation 19 we can get a representation of [DX],
+
+$$
+\frac{[D_{TX}]=[D_{X}]+[D_{XY}]+[D_{XX}]+[D_{XXY}]⇒[D_{X}]=[D_{TX}]}{(1+K_{x}K_{1}[X]^{n_{1}}+K_{y}K_{2}[Y]^{n_{2}}+K_{x}K_{y}K_{1}K_{5}[X]^{n_{1}}[Y]^{n_{2}})}.
+$$
+
+Substitute [DX] in Equation 20 with Equation 21, we can get
+
+$$
+[m_{X}]=\frac{1}{η_{X}}[D_{X}](\alpha_{x}+\alpha_{x}^{1}K_{x}K_{1}[X]^{n_{1}}+\alpha_{x}^{2}K_{y}K_{2}[Y]^{n_{2}}+\alpha_{x}^{3}K_{x}K_{y}K_{1}K_{5}[X]^{n_{1}}[Y]^{n_{2}})+\frac{u_{x}}{η_{x}}=\frac{D_{TX}}{η_{x}}\frac{(\alpha_{x}+\alpha_{x}^{1}K_{x}K_{1}[X]^{n_{1}}+\alpha_{x}^{2}K_{y}K_{2}[Y]^{n_{2}}+\alpha_{x}^{3}K_{x}K_{y}K_{1}K_{5}[X]^{n_{1}}[Y]^{n_{2}})}{(1+K_{x}K_{1}[X]^{n_{1}}+K_{y}K_{2}[Y]^{n_{2}}+K_{x}K_{y}K_{1}K_{5}[X]^{n_{1}}[Y]^{n_{2}})}+\frac{u_{x}}{η_{x}}.
+$$
+
+Then finally we reach to the point that the deviation of [X]. In Equation 18 we substituted [mX] with Equation 22, and got
+
+$$
+[X]˙=κ_{x}[m_{X}]−d_{1}[X]=\frac{D_{TX}κ_{x}}{η_{x}}\frac{(\alpha_{x}+\alpha_{x}^{1}K_{x}K_{1}[X]^{n_{1}}+\alpha_{x}^{2}K_{y}K_{2}[Y]^{n_{2}}+\alpha_{x}^{3}K_{x}K_{y}K_{1}K_{5}[X]^{n_{1}}[Y]^{n_{2}})}{(1+K_{x}K_{1}[X]^{n_{1}}+K_{y}K_{2}[Y]^{n_{2}}+K_{x}K_{y}K_{1}K_{5}[X]^{n_{1}}[Y]^{n_{2}})}+\frac{κ_{x}u_{x}}{η_{x}}−d_{1}[X]
+$$
+
+here, we define $\gamma_{0}^{x}=\alpha_{x}\frac{D_{TX}κ_{x}}{η_{x}},\gamma_{1}=\alpha_{x}^{1}\frac{D_{TX}κ_{x}}{η_{x}},\gamma_{2}=\alpha_{x}^{2}\frac{D_{TX}κ_{x}}{η_{x}},\gamma_{3}=\alpha_{x}^{3}\frac{D_{TX}κ_{x}}{η_{x}}$ as relative protein generation rates, $k_{1}=K_{1}K_{x},k_{2}=K_{2}K_{y},k_{3}=K_{x}K_{y}K_{1}K_{5}$ as the weight of each TF binding patterns, as ectopic DNA (to simplify the notation, we may drop the tilde of $u~_{i},i=x,y$), then we can get
+
+$$
+[X˙]=\frac{r_{0}^{x}+r_{1}k_{1}[X]^{n_{1}}+r_{2}k_{2}[Y]^{n_{2}}+r_{3}k_{3}[X]^{n_{1}}[Y]^{n_{2}}}{1+k_{1}[X]^{n_{1}}+k_{2}[Y]^{n_{2}}+k_{3}[X]^{n_{1}}[Y]^{n_{2}}}−d_{1}[X]+u_{x},
+$$
+
+Similarly, for TF Y, we can get
+
+$$
+[Y]˙=\frac{D_{TY}κ_{y}}{η_{y}}\frac{(\alpha_{y}+\alpha_{y}^{1}K_{y}K_{3}[Y]^{n_{2}}+\alpha_{y}^{2}K_{y}K_{4}[X]^{n_{1}}+\alpha_{y}^{3}K_{x}K_{y}K_{3}K_{7}[X]^{n_{1}}[Y]^{n_{2}})}{(1+K_{y}K_{3}[Y]^{n_{2}}+K_{y}K_{4}[X]^{n_{1}}+K_{x}K_{y}K_{3}K_{7}[X]^{n_{1}}[Y]^{n_{2}})}+\frac{κ_{y}u_{y}}{η_{y}}−d_{2}[Y]=\frac{r_{0}^{y}+r_{4}k_{4}[Y]^{n_{2}}+r_{5}k_{5}[X]^{n_{1}}+r_{6}k_{6}[X]^{n_{1}}[Y]^{n_{2}}}{1+k_{4}[Y]^{n_{2}}+k_{5}[X]^{n_{1}}+k_{6}[X]^{n_{1}}[Y]^{n_{2}}}−d_{2}[Y]+u_{y}.
+$$
+
+Ultimately, by combining Equation 24 and Equation 25, we reduced our 14-dimension model to a 2-dimension dynamic system,
+
+$$
+{\frac{d[X]}{dt}=\frac{r_{0}^{x}+r_{1}k_{1}[X]^{n_{1}}+r_{2}k_{2}[Y]^{n_{2}}+r_{3}k_{3}[X]^{n_{1}}[Y]^{n_{2}}}{1+k_{1}[X]^{n_{1}}+k_{2}[Y]^{n_{2}}+k_{3}[X]^{n_{1}}[Y]^{n_{2}}}−d_{1}[X]+u_{x}\frac{d[Y]}{dt}=\frac{r_{0}^{y}+r_{4}k_{4}[Y]^{n_{2}}+r_{5}k_{5}[X]^{n_{1}}+r_{6}k_{6}[X]^{n_{1}}[Y]^{n_{2}}}{1+k_{4}[Y]^{n_{2}}+k_{5}[X]^{n_{1}}+k_{6}[X]^{n_{1}}[Y]^{n_{2}}}−d_{2}[Y]+u_{y},
+$$
+
+### Stochastic simulations
+
+In Equation 22, parameters of the AND-AND motif (Figure 2C top panel) are: ($r_{0}^{x}$ , $r_{0}^{y}$ , r1, r2, r3, r4, r5, r6) = (0, 0, 0.95, 0, 0, 0.95, 0, 0), (k1, k2, k3, k4, k5, k6) = (1.5, 0.8, 1, 1.5, 0.8, 1) and (d1, d2) = (0.55, 0.55). Parameters of the OR-OR motif (Figure 2C bottom panel) are: ($r_{0}^{x}$ , $r_{0}^{y}$ , r1, r2, r3, r4, r5, r6) = (0.15, 0.15, 0.95, 0, 0.95, 0.95, 0, 0.95), (k1, k2, k3, k4, k5, k6) = (2.1, 1.7, 1.8, 2.1, 1.7, 1.8) and (d1, d2) = (0.55, 0.55). In both the AND-AND and OR-OR motifs, (n1, n2) = (2, 2). We simulated noise in the model using a Langevin equation (Foster et al., 2009):
+
+$$
+dx_{i}=F_{i}(x)dt+dW_{i},
+$$
+
+Where $F_{i}x$ is the deterministic function of Equation 22. $W_{i}$ is a Wiener process which introduces additive noise with no dependence on the state x. We integrated the Wiener process over the interval which gives us $\sqrt{\Deltat}ξ_{i}$ and $ξ_{i}$ is a Gaussian white noise with zero mean and given variance (σ2). Thus we can compute the new state of the dynamical systems using the Runge–Kutta method.
+
+### Parameter screening
 
 We conducted global parameters screening of the fully connected stage and Progression-Accuracy trade-off in our models. First, to collect parameter sets with 3 SSSs, we used Latin hypercube sampling (LHS) to screen k-series parameters symmetrically (i.e., k1 = k4, k2 = k5, k3 = k6) ranging from 0.001 to 5 both in the AND-AND and OR-OR motifs. We ultimately collected 6,231 sets for the AND-AND motif and 6682 sets for the OR-OR motifs (Supplementary file 1).
 
 To analyze the sequence of vanishing SSSs. We further filtered parameter sets with 2 SSSs remained as increasing ux (6207 sets for the AND-AND motif; 6634 sets for the OR-OR motif). For each SSS, we quantified the Minus of [X] and [Y] (Figure 5—figure supplement 1C, D).
 
-## Saddle points and saddle dynamics
+### Saddle points and saddle dynamics
 
-Set an autonomous dynamical system (Yin et al., 2021)(28)x˙=F(x),x∈Rn
+Set an autonomous dynamical system (Yin et al., 2021)
 
-where F:Rn→Rn is a Crr⩾2 function, and a point x∗∈Rn is called a stationary point (or equilibrium solution) of Equation 28 if F(x∗)=0. Let Jx=∇Fx denote the Jacobian of Fx . For a stationary point x∗ , taking x=x∗+y in Equation 28, we have(29)y˙=J(x∗)y+O(∥y∥2),
+$$
+x˙=F(x),x\inR^{n}
+$$
 
-where ∥*∥ denotes the norm induced by the inner product. The associated linear system(30)y˙=J(x∗)y,
+where $F:R^{n}→R^{n} is a C^{r}r⩾2$ function, and a point $x^{∗}\inR^{n}$ is called a stationary point (or equilibrium solution) of Equation 28 if $F(x^{∗})=0$. Let $Jx=\nablaFx$ denote the Jacobian of $Fx$ . For a stationary point $x^{∗}$ , taking $x=x^{∗}+y$ in Equation 28, we have
 
-is used to determine the stability of x∗ . Depending on the eigenvalues of Jx with positive, negative, and zero real parts, we can define unstable, stable, and center manifolds of the Jacobian Jx spanned by the corresponding eigenvectors, as Wu(x∗),Ws(x∗)andWc(x∗) .
+$$
+y˙=J(x^{∗})y+O(∥y∥^{2}),
+$$
 
-From the primary decomposition theorem, Rn can be decomposed as a direct sum:(31)Rn=Wu(x)⊕Ws(x)⊕Wc(x),
+where $∥*∥$ denotes the norm induced by the inner product. The associated linear system
 
-A hyperbolic stationary point is called a saddle if Wu(x∗) and Ws(x∗) are nontrivial. The hyperbolic stationary point x∗ is called a sink (source) if all the eigenvalues of J(x∗) have negative (positive) real parts. The index of a stationary point x∗ is defined as the dimension of the unstable subspace Wu(x∗) .
+$$
+y˙=J(x^{∗})y,
+$$
 
-The HiOSD method (Yin et al., 2019) is designed for finding index-k saddles of an energy function Ex . For gradient systems, Fx=-∇Ex , and the Jacobian Jx=-∇2Ex=-Gx , where Gx denotes the Hessian of Ex . The k-saddle x∗ is a local maximum on the linear manifold x∗+Wu(x∗) and a local minimum on x∗+Ws(x∗) . So, the high-index saddle dynamics (HiSD) for a index k saddle (k-saddle) is a transformed gradient flow(32)x˙=−PWu(x)F(x)+(F(x)−PWu(x)F(x))=(I−2PWu(x))F(x),
+is used to determine the stability of $x^{∗}$ . Depending on the eigenvalues of $Jx$ with positive, negative, and zero real parts, we can define unstable, stable, and center manifolds of the Jacobian $Jx$ spanned by the corresponding eigenvectors, as $W^{u}(x^{∗}),W^{s}(x^{∗})andW^{c}(x^{∗})$ .
 
-where PV denotes the orthogonal projection operator on a finite-dimensional subspace V. Here, -PWuxFx is taken as an ascent direction on the subspace Wux and Fx-PWuxFx is a descent direction on the subspace Wsx . The subspace Wux=span{v1,…,vk } where vi is the unit eigenvector corresponding to the smallest i-th eigenvalues, which can be obtained by many methods such as minimize the Rayleigh quotients. According to the above the HiSD for a k-saddle (k-HiSD) is:(33){β−1x˙=(I−∑i=1k2vivi⊤)F(x),γ−1v˙i=−(I−vivi⊤−∑j=1i−12vjvj⊤)G(x)vi,i=1,2,…,k,
+From the primary decomposition theorem, $R^{n}$ can be decomposed as a direct sum:
 
-which coupled with the initial condition(34)x(0)=x(0)∈Rn,vi(0)=vi(0)∈Rn,s.t.⟨vj(0),vi(0)⟩=δij,i,j=1,…,k
+$$
+R^{n}=W^{u}(x)⊕W^{s}(x)⊕W^{c}(x),
+$$
 
-Where I is the identity operator and β, γ>0 are relaxation parameters.
+A hyperbolic stationary point is called a saddle if $W^{u}(x^{∗})$ and $W^{s}(x^{∗})$ are nontrivial. The hyperbolic stationary point $x^{∗}$ is called a sink (source) if all the eigenvalues of $J(x^{∗})$ have negative (positive) real parts. The index of a stationary point $x^{∗}$ is defined as the dimension of the unstable subspace $W^{u}(x^{∗})$ .
 
-Similarly, the GHiSD (Yin et al., 2021) for a k-saddle (k-GHiSD) of the dynamical system (28) has the following form:(35){x˙=(I−2∑j=1kvjvjT)F(x)v˙i=(I−viviT)J(x)vi−∑j=1i−1vjvjT(J(x)+JT(x))vi,i=1,…,k
+The HiOSD method (Yin et al., 2019) is designed for finding index-$k$ saddles of an energy function $Ex$ . For gradient systems, $Fx=-\nablaEx$ , and the Jacobian $Jx=-\nabla^{2}Ex=-Gx$ , where $Gx$ denotes the Hessian of $Ex$ . The $k$-saddle $x^{∗}$ is a local maximum on the linear manifold $x^{∗}+W^{u}(x^{∗})$ and a local minimum on $x^{∗}+W^{s}(x^{∗})$ . So, the high-index saddle dynamics (HiSD) for a index k saddle (k-saddle) is a transformed gradient flow
+
+$$
+x˙=−P_{W^{u}(x)}F(x)+(F(x)−P_{W^{u}(x)}F(x))=(I−2P_{W^{u}(x)})F(x),
+$$
+
+where $P_{V}$ denotes the orthogonal projection operator on a finite-dimensional subspace $V$. Here, $-P_{W^{u}x}Fx$ is taken as an ascent direction on the subspace $W^{u}x$ and $Fx-P_{W^{u}x}Fx$ is a descent direction on the subspace $W^{s}x$ . The subspace $W^{u}x=span{v_{1},…,v_{k}$ } where $v_{i}$ is the unit eigenvector corresponding to the smallest $i$-th eigenvalues, which can be obtained by many methods such as minimize the Rayleigh quotients. According to the above the HiSD for a k-saddle (k-HiSD) is:
+
+$$
+{\beta^{−1}x˙=(I−\sumi=1k2v_{i}v_{i}^{⊤})F(x),\gamma^{−1}v˙_{i}=−(I−v_{i}v_{i}^{⊤}−\sumj=1i−12v_{j}v_{j}^{⊤})G(x)v_{i},i=1,2,…,k,
+$$
+
+which coupled with the initial condition
+
+$$
+x(0)=x^{(0)}\inR^{n},v_{i}(0)=v_{i}^{(0)}\inR^{n},s.t.⟨v_{j}^{(0)},v_{i}^{(0)}⟩=\delta_{ij},i,j=1,…,k
+$$
+
+Where $I$ is the identity operator and β, γ>0 are relaxation parameters.
+
+Similarly, the GHiSD (Yin et al., 2021) for a k-saddle (k-GHiSD) of the dynamical system (28) has the following form:
+
+$$
+{x˙=(I−2\sumj=1kv_{j}v_{j}^{T})F(x)v˙_{i}=(I−v_{i}v_{i}^{T})J(x)v_{i}−\sumj=1i−1v_{j}v_{j}^{T}(J(x)+J^{T}(x))v_{i},i=1,…,k
+$$
 
 which coupled with the initial condition(34). The k-GHiSD can be accelerated by the Heavy Ball method.
 
-## Constructing the solution landscape
+### Constructing the solution landscape
 
-For a given set of parameters, we can use k-GHiSD to find each order saddle point of the dynamical system, and then construct the solution landscape of the system. The solution landscape is a pathway map consisting of all stationary points and their connections (Yin et al., 2020; Yin et al., 2022). Solution landscape is a new tool used to describe the dynamic behavior of stationary points in a dynamic system which can show the connection and transfer path between stationary points. In general, we can use the downward search algorithm and the upward search algorithm to construct the solution landscape, which starting from the k-saddle points and the stable points respectively. Because of the symmetry and other prior knowledge of the dynamic system used in our paper, The saddle points of the system tend to occur in the range of 0,xmax2 , where the xmax means the maximum coordinate of the stable point. We grid the range, select each grid point as the initial state, and find saddle points of corresponding order (k = 1,2) using k-GHiSD. Taking the saddle points found before as the initial states, we disturb its unstable directions to search other stationary points of lower index, establish the connection relationship between stationary points and finally construct the solution landscape. In addition, we use geometric minimum action method (gMAM) (Vanden-Eijnden and Heymann, 2008) to find the minimum action path between the stable points, use the obtained action to represent the stability of the stable points, and represent them at different heights in the solution landscape.
+For a given set of parameters, we can use k-GHiSD to find each order saddle point of the dynamical system, and then construct the solution landscape of the system. The solution landscape is a pathway map consisting of all stationary points and their connections (Yin et al., 2020; Yin et al., 2022). Solution landscape is a new tool used to describe the dynamic behavior of stationary points in a dynamic system which can show the connection and transfer path between stationary points. In general, we can use the downward search algorithm and the upward search algorithm to construct the solution landscape, which starting from the k-saddle points and the stable points respectively. Because of the symmetry and other prior knowledge of the dynamic system used in our paper, The saddle points of the system tend to occur in the range of $0,x_{max}^{2}$ , where the $x_{max}$ means the maximum coordinate of the stable point. We grid the range, select each grid point as the initial state, and find saddle points of corresponding order (k = 1,2) using k-GHiSD. Taking the saddle points found before as the initial states, we disturb its unstable directions to search other stationary points of lower index, establish the connection relationship between stationary points and finally construct the solution landscape. In addition, we use geometric minimum action method (gMAM) (Vanden-Eijnden and Heymann, 2008) to find the minimum action path between the stable points, use the obtained action to represent the stability of the stable points, and represent them at different heights in the solution landscape.
 
-## Screening the fully-connected stage
+### Screening the fully-connected stage
 
 As shown in the case of u = 0.0565 in Figure 4D, the fully connected stage (FCS) has three stable points and three 1-index saddle points to connect the stable points with each other. Therefore, we posited that finding a fully connected stage can be equivalent to finding three different 1-index saddle points in this system.
 
 First, build a set of parameters with three stable points. In two different logics, 10,000 sets of dynamic parameters are randomly generated respectively, and all stable points of the system corresponding to each set of parameters are found. If there are three stable points, the corresponding dynamic parameters are recorded as a new set of parameters for the subsequent search of 1-index saddle points.
 
-Second, finding the 1-index saddle points in a system with three stable points. According to the above results, we can find that saddle points tend to appear in the range of 0,xmax2 , where the xmax means the maximum coordinate of the stable point. So we can grid the range in the same process as before, and search 1-index saddle points with each grid point as the initial structure. In order to find the relevant saddle points as detailed as possible, denser grid points were used as the initial structure of the system without three 1-index saddle points to find the 1-index saddle points.
+Second, finding the 1-index saddle points in a system with three stable points. According to the above results, we can find that saddle points tend to appear in the range of $0,x_{max}^{2}$ , where the $x_{max}$ means the maximum coordinate of the stable point. So we can grid the range in the same process as before, and search 1-index saddle points with each grid point as the initial structure. In order to find the relevant saddle points as detailed as possible, denser grid points were used as the initial structure of the system without three 1-index saddle points to find the 1-index saddle points.
 
 Due to the calculation error of numerical calculation itself, the saddle points found by saddle point dynamics may have the following problems:
 
@@ -250,24 +442,49 @@ In addition, since there is also a parameter u representing the foreign signal i
 
 We, respectively, used the above algorithm to search for the fully connected solution landscape under two different logics and obtained the following results:
 
+<table>
+  <thead>
+    <tr>
+      <th>Logic</th>
+      <th># of 3 SSS</th>
+      <th># of FCS</th>
+      <th>Ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AND-AND</td>
+      <td>6231</td>
+      <td>5151</td>
+      <td>82.7%</td>
+    </tr>
+    <tr>
+      <td>OR-OR</td>
+      <td>6682</td>
+      <td>120</td>
+      <td>1.8%</td>
+    </tr>
+  </tbody>
+</table>
+
 It can be seen from the simulation results that the fully connected solution landscape can appear in most AND-AND motifs, but almost not in the OR-OR motifs. Due to the error of numerical calculation itself, the obtained results may have a certain deviation. In addition, in our search process, due to the limitation of computing resources and the complex nature of some systems, in order to take into account the majority of cases, some systems with full connectivity have not been found. Subsequent manual search found that the fully connected solution landscape is existed in some systems which not found under the AND-AND motifs previously (17.3%). Therefore, the obtained proportion can be further improved.
 
-## Data processing of single-cell data
+### Data processing of single-cell data
 
 There are totally four public datasets used in our work (related to Figure 6F and H and Figure 7 and Figure 6—figure supplement 2C). In mice’s hematopoiesis (Mojtahedi et al., 2016), expression of genes is quantified as 2LOD−Cq−1 (LOD: limit of detection; Cq-value is the cutoff of amplification signal in single-cell qPCR data). Thus, we can compute the coefficient of variation (CV) over time. In embryogenesis (Semrau et al., 2017), public dataset used in our work was generated by single-cell SMART-seq2 (GEO: GSE79578). We utilized preprocessed data to compute the CV over time. In reprogramming, public dataset was generated by 10 x Genomics (GEO: GSE207654). Counts Per Million (CPM) matrix are used to compute the CV. We assigned time points by the Leiden clustering algorithm with parameters consistent with the original paper (see methods in Qin et al., 2022).
 
-## Fuzzy C-means clustering
+### Fuzzy C-means clustering
 
 CV of 2000 high variable genes given by original paper (Qin et al., 2022) over four time points were computed. We filtered out 1677 genes by removing NA due to missing values. Noise of 1677 genes were then grouped into 12 clusters using the Mfuzz package in R with fuzzy c-means algorithm (Kumar and Futschik, 2007; Supplementary file 2).
 
-## GO enrichment analysis
+### GO enrichment analysis
 
 GO and pathway enrichment analyses were performed using Metascape (Zhou et al., 2019).
 
-## Integration of human TF-target interactions
+### Integration of human TF-target interactions
 
 A collection of 456,698 TF-target interactions for 1541 human TFs and their mode of regulation (MoR, activation or repression) were integrated by merging a built-in collection of human regulons from the DoRothEA R package (version 1.8.0) (Garcia-Alonso et al., 2019) and human TRRUST database (Han et al., 2018). To be specific, resource from DoRothEA includes 454,504 TF-target interactions for 1541 human TFs, retrieved from (1) literature-curated resources, (2) ChIP-seq binding data, (3) TFBS (TF binding sites) predictions, and (4) transcriptional regulatory interactions inferred from published gene expression profiles. Human TRRUST database is a manually curated database of transcriptional regulatory networks, whose current version contains 8427 TF-target regulatory relationships of 795 human TFs with annotation of MoR (activation, repression, or unknown). For our purpose, we excluded TF-target interactions with unknown MoR, yet 207 TF-target pairs still remained to show conflict MoRs in records from literature, according to TRRUST database. To integrate data from both resources, when a conflict occurred in TRRUST database, we retained the MoR recorded in DoRothEA resource for the same pair of TF-target, but omitted the conflict records if the TF-target pair was not included in DoRothEA resource. As for TF-target pairs without conflict MoRs in TRRUST database but shows conflicts across the two resources, records in TRRUST database were taken as more credible (Supplementary file 3).
 
-## Integration of human TF list
+### Integration of human TF list
 
 In addition to the 1541 human TFs we obtained from the collection of TF-target interactions mentioned earlier, 1639 human TFs reported by Lambert et al., 2018 and 1564 by Ng et al., 2021 were used as complements, ending up with a total of 2051 human TFs (Supplementary file 3).

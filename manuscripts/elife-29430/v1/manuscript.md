@@ -15,13 +15,21 @@
 
 ## Abstract
 
-10.7554/eLife.29430.001 BiP is the only Hsp70 chaperone in the endoplasmic reticulum (ER) and similar to other Hsp70s, its activity relies on nucleotide- and substrate-controllable docking and undocking of its nucleotide-binding domain (NBD) and substrate-binding domain (SBD). However, little is known of specific features of the BiP conformational landscape that tune BiP to its unique tasks and the ER environment. We present methyl NMR analysis of the BiP chaperone cycle that reveals surprising conformational heterogeneity of ATP-bound BiP that distinguishes BiP from its bacterial homologue DnaK. This unusual poise enables gradual post-translational regulation of the BiP chaperone cycle and its chaperone activity by subtle local perturbations at SBD allosteric ‘hotspots’. In particular, BiP inactivation by AMPylation of its SBD does not disturb Hsp70 inter-domain allostery and preserves BiP structure. Instead it relies on a redistribution of the BiP conformational ensemble and stabilization the domain-docked conformation in presence of ADP and ATP.
+BiP is the only Hsp70 chaperone in the endoplasmic reticulum (ER) and similar to other Hsp70s, its activity relies on nucleotide- and substrate-controllable docking and undocking of its nucleotide-binding domain (NBD) and substrate-binding domain (SBD). However, little is known of specific features of the BiP conformational landscape that tune BiP to its unique tasks and the ER environment. We present methyl NMR analysis of the BiP chaperone cycle that reveals surprising conformational heterogeneity of ATP-bound BiP that distinguishes BiP from its bacterial homologue DnaK. This unusual poise enables gradual post-translational regulation of the BiP chaperone cycle and its chaperone activity by subtle local perturbations at SBD allosteric ‘hotspots’. In particular, BiP inactivation by AMPylation of its SBD does not disturb Hsp70 inter-domain allostery and preserves BiP structure. Instead it relies on a redistribution of the BiP conformational ensemble and stabilization the domain-docked conformation in presence of ADP and ATP.
 
 ## Introduction
 
 The endoplasmic reticulum (ER) is an essential organelle in eukaryotic cells responsible for folding and maturation of the majority of secreted and membrane proteins. An immunoglobulin heavy-chain binding protein (BiP; also known as GRP78 and HSP5A) is the only Hsp70 chaperone in the ER. BiP binds to the majority of unfolded and misfolded proteins in this organelle to promote their folding and prevent aggregation (Araki and Nagata, 2011; Vincenz-Donnelly and Hipp, 2017).
 
 BiP belongs to the highly conserved Hsp70 chaperone family and shares about 60% of its sequence identity with E. coli Hsp70 (DnaK) and human cytosolic Hsp70s (Wang et al., 2017). BiP and other Hsp70s have identical domain organization (Behnke et al., 2015) (Figure 1): They consist of a C-terminal substrate-binding domain (SBD) and an N-terminal nucleotide-binding domain (NDB), which are attached by a highly conserved hydrophobic linker. The SBD, which in turn, is made of a β-sandwich domain (βSBD) and a α-helical lid (αLid), binds to unfolded protein substrates, while the NBD is an ATPase that regulates the affinity of substrate binding to the SBD by using energy from ATP hydrolysis (Mayer et al., 2001; Mayer, 2013).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig1-v1.jpg)
+
+**Figure 1.:** Ribbon representation of the structure of the ATP-bound BiP (PDB 5e84 [(Yang et al., 2015]), referred as the domain-docked conformation, and ADP-bound, which was modeled from the structures of the isolated NBD (PDB 5evz [Hughes et al., 2016]) and (D) SBD (PDB 5e85 [Yang et al., 2015]) and referred as the domain-undocked (U) conformation. The NBD (blue), βSBD (green), and αLid are highlighted by different colors and labeled.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The aligned sequences of the βSBD, including human HSP70s: BiP (GRP78 or HSPA5), HSP70 (HSPA1A or HSP72), HSPA2, HSC70 (HSPA8 or HSP73), HSPA9 (GRP75, Mortalin-2 or MTHSP70), and HSPA6; Hsp70s from eukaryotes: Stratiomys singularior (UniProt: B2CKI9), Plasmodiophora brassicae (UniProt: A0A0G4IKJ2) and Monodelphis domestica (UniProt: F6VP59); and bacterial Hsp70s: HscA and DnaK from Escherichia coli. Secondary structure elements are indicated above the protein sequence. The highly conserved residues are coloured in red, less conserved in orange, non-conserved in black. The positions of ‘soft mutations’ used in this study are indicated by green asterisks; the AMPylation site (Thr 518) is highlighted by a magenta asterisk.
 
 The majority of Hsp70 functions rely on their ability to cycle between several functional conformations (Mayer, 2013; Mayer and Kityk, 2015; Zuiderweg et al., 2013). Our mechanistic understanding of the Hsp70 functional cycle comes mainly from structural and dynamic characterization of bacterial Hsp70, DnaK. In DnaK, ATP binding favors a compact, domain-docked, linker-bound conformation, which has low ATPase activity (Zhuravleva et al., 2012; Kityk et al., 2012; Qi et al., 2013). Substrate binding to this state stabilizes a transient domain-undocked, linker-bound state, which has enhanced ATPase activity, efficient (fast) substrate binding and release kinetics, and low substrate affinity (Zhuravleva et al., 2012; Lai et al., 2017). ATP hydrolysis (converting ATP to ADP), results in stabilization of the domain-undocked, linker-unbound state, which has high substrate affinity, but very slow and inefficient substrate binding and release (Bertelsen et al., 2009a; Swain et al., 2007). In turn, ADP-to-ATP exchange converts the chaperone back to the transient ATP- and substrate-bound conformation that results in substrate release in the ATP-bound state so that the entire cycle can start again.
 
@@ -33,19 +41,123 @@ However, until now our ability to assess this hypothesis has been hampered by li
 
 ## Results
 
-## Construct design to ‘trap’ individual steps of the BiP allosteric cycle
+### Construct design to ‘trap’ individual steps of the BiP allosteric cycle
 
 To characterize individual steps of the BiP chaperone cycle, we used ITC to obtain thermodynamic fingerprints of nucleotide binding and induced conformational transitions, as well as methyl NMR to monitor conformational changes with atomistic details (Tugarinov and Kay, 2005; Ruschak and Kay, 2010; Rosenzweig and Kay, 2014). All of the experiments were performed using a well-established variant of wild-type (WT) BiP (referred as BiP* in this paper), in which Thr 229 was mutated to Gly to slow down protein ATPase activity (Wei et al., 1995). This substitution avoids complications for the ATP-bound BiP coming from sample heterogeneity upon ATP hydrolysis and allowed us to ‘trap’ BiP in the ATP-bound conformation. The T229G variant of BiP has been extensively characterized in the literature and retains WT-like conformational features (Wei et al., 1995; Wei and Hendershot, 1995). To monitor BiP conformational changes in the presence of different ligands and distinguish long-range conformational perturbations from local effects of ligand binding, we used the ‘divide-and-conquer’ approach (Ruschak and Kay, 2010; Gelis et al., 2007) that we had previously adopted for characterization of the E. coli BiP homolog DnaK (Zhuravleva et al., 2012). To ‘trap’ and characterize individual conformational transitions, we compared full-length (FL), two-domain BiP with its isolated nucleotide-binding domain (T229G variant, referred as NBD*). To elucidate the role of the linker in BiP conformational transitions, we compared the NBD* constructs with and without the interdomain linker (residues 1–417 and residues 1–413, respectively).
 
-## Thermodynamic features of the BiP allosteric cycle
+### Thermodynamic features of the BiP allosteric cycle
 
 Our ITC data (Table 1) showed that nucleotide binding to BiP occurred with weaker µM affinity than for DnaK and in general agreed with previous observations (Wei and Hendershot, 1995; Macias et al., 2011; Lamb et al., 2006). In our hands, ATP binding to BiP* was near 7-fold more preferable than ADP binding (Table 1). Interestingly, upon truncation of the interdomain linker and SBD, ATP affinity of the isolated NBD* decreased more than nine times as compared with FL BiP*. However, the truncation of the SBD only (i.e., without the linker truncation) results in a diminished effect (Table 1). Taken together, these observations suggested an important stabilizing role of domain communication and/or linker-NBD interactions for ATP binding.
 
+**Table 1.**
+ Thermodynamics of nucleotide binding for BiP and DnaK.ITC experiments for full-length (FL) BiP* and its two NBD constructs with and without the interdomain linker, NBD(1-413) and NBD(1-417), were repeated three times and the standard deviations for all parameters were less than 10%.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>ANP</th>
+      <th>Kd (µM)</th>
+      <th>∆G (kcal/mol)</th>
+      <th>∆H (kcal/mol)</th>
+      <th>-T∆S (kcal/mol)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">DnaK* FL</td>
+      <td>ATP</td>
+      <td>0.16</td>
+      <td>−9.3</td>
+      <td>9.0</td>
+      <td>−18.3</td>
+    </tr>
+    <tr>
+      <td>ADP</td>
+      <td>0.25</td>
+      <td>−9.0</td>
+      <td>−3.2</td>
+      <td>−5.8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">DnaK* NBD</td>
+      <td>ATP</td>
+      <td>0.61</td>
+      <td>−8.9</td>
+      <td>−4.1</td>
+      <td>−3.7</td>
+    </tr>
+    <tr>
+      <td>ADP</td>
+      <td>0.17</td>
+      <td>−9.2</td>
+      <td>−3.3</td>
+      <td>−6.0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">BiP* FL</td>
+      <td>ATP</td>
+      <td>0.80</td>
+      <td>−8.3</td>
+      <td>11.4</td>
+      <td>−19.7</td>
+    </tr>
+    <tr>
+      <td>ADP</td>
+      <td>5.73</td>
+      <td>−7.1</td>
+      <td>−7.4</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">BiP* NBD(1-413)</td>
+      <td>ATP</td>
+      <td>7.41</td>
+      <td>−7.0</td>
+      <td>12.3</td>
+      <td>−19.3</td>
+    </tr>
+    <tr>
+      <td>ADP</td>
+      <td>5.27</td>
+      <td>−7.2</td>
+      <td>−7.4</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">BiP* NBD(1-417)</td>
+      <td>ATP</td>
+      <td>1.15</td>
+      <td>−8.1</td>
+      <td>14.7</td>
+      <td>−22.3</td>
+    </tr>
+    <tr>
+      <td>ADP</td>
+      <td>3.94</td>
+      <td>−7.4</td>
+      <td>−6.4</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Thermodynamic parameters for ATPase deficient DnaK (DnaK*) and its NBD construct without the interdomain linker were taken from Taneva et al (Taneva et al., 2010)._
+
 ATP (but not ADP) binding to FL BiP* was entropically driven with the contribution from the entropy (-T∆S) to the binding energy of about −19–20 kcal/mol (Table 1). This favorable entropic contribution to the ATP binding energy has been previously observed for an ATPase deficient variant of DnaK (DnaKT199A) (Taneva et al., 2010) and has been predominantly associated with enhanced interdomain and intradomain SBD flexibility due to αLid dissociation from βSBD and destabilization of the βSBD structure (Zhuravleva et al., 2012; Zhuravleva and Gierasch, 2015). In turn, the entropic contribution into ATP binding energy was significantly smaller for the isolated DnaK NBD, while ATP binding had a similar enthalpy driven thermodynamic pattern as ADP binding (Taneva et al., 2010). On the contrary, ATP binding to the isolated BiP NBD* is predominantly entropically driven (Table 1), suggesting that ATP binding to BiP and DnaK has different effects on chaperone dynamics. In contrast to DnaK, ATP binding to BiP resulted in enhanced linker-induced intradomain flexibility in its NBD, while ATP binding to DnaK affected the entire protein.
 
-## Conformational features of the BiP allosteric cycle
+### Conformational features of the BiP allosteric cycle
 
 To obtain site-specific information about large changes in protein structure such as domain docking/undocking, we used methyl NMR (Rosenzweig and Kay, 2014; Manley and Loria, 2012) and introduced NMR-active methyl groups to all Ile-δ1 positions (Tugarinov et al., 2006). Consistent with DnaK, (Zhuravleva et al., 2012; Swain et al., 2007; Bertelsen et al., 2009b) in the absence of ATP (i.e., in the ADP-bound state), we observed almost no changes in methyl NMR peak positions between FL BiP* and its isolated NBD and SBD (Figure 2, left). This suggests that ADP-bound BiP lacks domain communication, the two BiP domains behave independently, and the protein adopts the domain-undocked conformation (Figure 1, left).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig2-v1.jpg)
+
+**Figure 2.:** The isoleucine region of methyl-TROSY spectra of ADP-bound (left) and ATP-bound (right) BiP* (the full-length ATPase deficient T229G BiP construct, in black) overlaid with the spectra of corresponding nucleotide-bound state of isolated NBD* (the ATPase deficient NBD construct without the interdomain linker, residues 1–413, in red) and isolated SBD (in green). (Grey box, right) Blowup of the representative region of methyl-TROSY spectra of ATP-bound BiP*, showing three non-overlapping peak doublets, used to calculate the populations domain-docked (D) and -undocked (U) conformations. The U/D assignments details can be found in Materials and methods; briefly, FL BiP* peaks (black) that overlapping with peaks from the NBD*(1-413) spectrum (blue), were assigned to the domain-undocked conformation (labeled ‘U’; that is, for the corresponding conformation the isoleucine chemical environment is very similar in the FL protein and isolated NBD); the second peak from each doublet was assigned to the domain-docked conformation (labeled ‘D’, that is, for the corresponding conformation the isoleucine chemical environment in the FL protein is significantly different from the chemical environment in the isolated NBD).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The isoleucine region of methyl-TROSY spectra of BiP* (the full-length ATPase deficient T229G BiP construct, in black) overlaid with the spectra of corresponding nucleotide-bound state of NBD* (the ATPase deficient NBD construct without the interdomain linker, residues 1–413, in blue), including ADP-bound, ADP- and P2 (a model substrate peptide HTFPAVL [Marcinowski et al., 2011b])-bound, ATP-bound and ATP- and P2-bound.
 
 ATP binding to FL BiP* drastically affected the methyl peak pattern and the resulting NMR spectrum possessed two sets of peaks with near identical peak intensities (Figure 2, right), suggesting that two BiP conformations, interconverting on the slow NMR time-scale, co-existed in solution. When the spectrum of ATP-bound FL BiP* was overlaid with the spectrum of the ATP-bound isolated NBD* (residues 1–413) and isolated SBD, peaks from the isolated NBD and SBD spectra were almost perfectly overlapping with one set of FL peaks. This set of peaks in the FL BiP spectrum was assigned to the ATP-bound domain-undocked (U) conformation. The second set of FL peaks had distinct chemical shifts from those observed in the spectra of the isolated NBD and SBD. This set of peaks was assigned to the ATP-bound domain-docked (D) conformation. To obtain populations of the domain-docked and -undocked BiP conformations, three representative non-overlapping NBD peak doublets were selected (Figure 2, grey box) and then the ratio of U and D peak intensities was calculated for each doublet (Materials and methods for details). This analysis revealed that in the presence of ATP, only ~53 ± 7% of BiP molecules adopt the domain-docked conformation, while the rest of the protein is domain-undocked.
 
@@ -59,19 +171,73 @@ Similar to DnaK, (Zhuravleva et al., 2012) binding of the model peptide substrat
 
 Taking together, our NMR analysis suggests that despite structural similarity to DnaK, BiP has unique thermodynamic and kinetic features of its chaperone conformational landscape, apparently implied by a cumulative effect of amino acid sequence variations between these two Hsp70s (Figure 1—figure supplement 1).
 
-## Allosteric regulation of the BiP conformational ensemble
+### Allosteric regulation of the BiP conformational ensemble
 
 Next, we examined whether the BiP conformational equilibrium can be controlled allosterically. We introduced several ‘soft’ amino acid substitutions along the Hsp70 inter-domain allosteric network (Zhuravleva et al., 2012) connecting the substrate-binding site with the NBD-SBD interdomain interface (Figure 4A). We mutated Val461, located near the substrate-binding site, to Phe; Ile526, located at the central hub for the βSBD allosteric network – the β5/β7/β8 hydrophobic core, to Val; Ile437, located near the βSBD-NBD interface, to Val; and Ile538, located at the βSBD-αLid and αLid-NBD interfaces, to Val. Methyl NMR revealed that in the presence of ATP all of these ‘soft’ mutations affected the equilibrium between the domain-docked and -undocked conformations, as reported by redistribution of intensities for peaks corresponding to these conformations (Figure 4B, Figure 4—source data 1). Remarkably, the ‘soft’ mutations enables both gradual stabilization and destabilization of the domain-docked conformation (Figure 4B). Indeed, the V461F (Figure 4—figure supplements 1 and 2) and I526V (Figure 4—figure supplement 4) substitutions favors domain docking, while the I437V (Figure 4—figure supplement 3) and I538V (Figure 4—figure supplement 5) substitutions stabilizes the domain-undocked conformation. Moreover, even in the absence of ATP, the domain-docked conformation is significantly populated for BiP*-V461F (~49%) and BiP*-I526V (~35%) (Figure 4C, Figure 4—figure supplement 4, and Figure 4—source data 1), suggesting that ATP binding is not an essential step for domain docking.
 
-## Regulation of the BiP conformational ensemble by AMPylation
+![Figure 4.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig4-v1.jpg)
+
+**Figure 4.:** (A) Ribbon representation of the domain-docked conformations (PDB 5e84 [Yang et al., 2015]). Four ‘soft’ mutations are shown as red spheres. The AMPylation site (Thr 518) is shown in green. (B) Populations of the domain-docked conformation calculated from methyl-TROSY spectra of ATP-bound BiP* ‘soft’ mutants, V461F, I526V, I437V and I538V, using methyl peak intensities of the domain-docked and -undocked conformations. Error bars show SDs from the means for three peak doublets (Materials and methods, Figure 4—figure supplements 1–5 and Figure 4—source data 1). (C) Blowup of the representative region of the methyl-TROSY spectrum of ADP-bound BiP*-V461F (black) overlaid (left) with the spectrum of ADP-bound NBD*(1-413) (red). (Right) For each FL BiP* doublet, the peak overlapping with the ADP-bound NBD* peak is labeled as U* (ADP-bound, domain-undocked) and the second peak is labeled as D (ADP-bound, domain-docked).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Peaks in the spectra of FL BiP* were assigned to the domain-undocked (U) conformation when they were overlapped with peaks in the spectrum of the isolated NBD*(1-413) in the corresponding nucleotide state (ADP or ATP-bound). When two sets of peaks were observed in the NMR methyl spectra of ATP-bound FL BiP*, the second peak with distinct chemical shifts from those observed for the isolated NBD*(1-413), was assigned to the domain-docked conformation (D). The three representative peak doublets used to calculate the population of the domain-docked conformation (Figure 4—source data 1) were labeled as P1 (an unassigned NBD Ile peak), P2 (Ile145) and P3 (Ile371).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Peaks in the spectra of the FL protein were assigned to the domain-undocked (U) conformation when they were overlapped with peaks in the spectrum of the isolated NBD*(1-413) in the corresponding nucleotide state (ADP or ATP-bound). When two sets of peaks were observed in the NMR methyl spectra of the FL protein, the second peak with distinct chemical shifts from those observed for the isolated NBD*(1-413), was assigned to the domain-docked conformation (D). The three representative peak doublets used to calculate the population of the domain-docked conformation (Figure 4—source data 1) were labeled as P1 (an unassigned NBD Ile peak), P2 (Ile145) and P3 (Ile371).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Peaks in the spectra of the FL protein were assigned to the domain-undocked (U) conformation when they were overlapped with peaks in the spectrum of the isolated NBD*(1-413) in the corresponding nucleotide state (ADP or ATP-bound). When two sets of peaks were observed in the NMR methyl spectra of the FL protein, the second peak with distinct chemical shifts from those observed for the isolated NBD*(1-413), was assigned to the domain-docked conformation (D). The three representative peak doublets used to calculate the population of the domain-docked conformation (Figure 4—source data 1) were labeled as P1 (an unassigned NBD Ile peak), P2 (Ile145) and P3 (Ile371).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Peaks in the spectra of the FL protein were assigned to the domain-undocked (U) conformation when they were overlapped with peaks in the spectrum of the isolated NBD*(1-413) in the corresponding nucleotide state (ADP or ATP-bound). When two sets of peaks were observed in the NMR methyl spectra of the FL protein, the second peak with distinct chemical shifts from those observed for the isolated NBD*(1-413), was assigned to the domain-docked conformation (D). The three representative peak doublets used to calculate the population of the domain-docked conformation (Figure 4—source data 1) were labeled as P1 (an unassigned NBD Ile peak), P2 (Ile145) and P3 (Ile371).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** Peaks in the spectra of the FL protein were assigned to the domain-undocked (U) conformation when they were overlapped with peaks in the spectrum of the isolated NBD*(1-413) in the corresponding nucleotide state (ADP or ATP-bound). When two sets of peaks were observed in the NMR methyl spectra of the FL protein, the second peak with distinct chemical shifts from those observed for the isolated NBD*(1-413), was assigned to the domain-docked conformation (D). The three representative peak doublets used to calculate the population of the domain-docked conformation (Figure 4—source data 1) were labeled as P1 (an unassigned NBD Ile peak), P2 (Ile145) and P3 (Ile371).
+
+### Regulation of the BiP conformational ensemble by AMPylation
 
 Would allosteric ‘tunability’ of the BiP conformation equilibrium provide a plausible explanation of how BiP is post-translationally regulated in cells? To test this hypothesis, we examined how the post-translational modification of BiP by AMPylation onto Thr518 (Preissler et al., 2015) affects the BiP conformational cycle.
 
 The AMPylation site Thr518 is located on the loop L7,8 of the βSBD that connects allosterically important strands β7 and β8 (Figure 4A), an allosteric region that controls βSBD conformation in DnaK (Zhuravleva and Gierasch, 2015). In particular, perturbations in the loop L7,8 and strands β7 and β8 regulate opening of the substrate-binding site and flexibility of the substrate-binding loops. In line with the previous observations for DnaK, the I526V substitution in strand β8 also affects the BiP conformational ensemble and partially stabilizes the domain-docked conformation even in the absence of ATP (Figure 4B and Figure 4—source data 1). Next, to examine whether AMPylation of Thr518 and the I526V substitution control BiP through the same allosteric mechanism, we calculated the populations of the domain-docked and -undocked conformations for AMPylated and non-AMPylated BiP* bound to ATP and ADP (Figure 5A). Our results suggested that AMPylation of the loop L7,8 has a similar effect as the I526V substitution in the strand β8 and the V461F substitution in the substrate-binding site: It shifts the BiP conformational equilibrium toward the domain-docked conformation in the presence of ATP (68% of the docked conformation), but also significantly stabilizes the domain docking in the absence of ATP (64% of the docked conformation, Figure 5—figure supplement 1 and Figure 5—source data 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig5-v1.jpg)
+
+**Figure 5.:** (A) Populations of the domain-docked conformation for AMPylated and non-AMPylated BiP* and its V461F variant in the presence of ATP and ADP, calculated using methyl peak intensities of the domain-docked and -undocked conformations. Error bars show SDs from the means for three peak doublets (Materials and methods, Figure 5—figure supplements 1–2 and Figure 5—source data 1). (B) The thermodynamic linkage between domain docking and nucleotide binding: Plot of the experimental free energy of ATP (red dots) and ADP (black dots) binding against the experimental free energy of domain docking for BiP* and its non-AMPylated and AMPylated V461F variant. For each construct, the free energy of nucleotide binding was obtained from the ITC data and the free energy of domain docking was calculated from NMR peak intensities (see Figure 5—source data 2 and Materials and methods for details). The red (for ATP) and black (for ADP) curves show the theoretical plots of the free energy of ATP (red) and ADP (black) binding against the free energy of domain docking under assumption that BiP co-exists as an ensemble of the domain-undocked and -docked conformations (see Materials and methods).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Peaks in the spectra of the FL protein were assigned to the domain-undocked (U) conformation when they were overlapped with peaks in the spectrum of the isolated NBD*(1-413) in the corresponding nucleotide state (ADP or ATP-bound). When two sets of peaks were observed in the NMR methyl spectra of the FL protein, the second peak with distinct chemical shifts from those observed for the isolated NBD*(1-413), was assigned to the domain-docked conformation (D). The three representative peak doublets used to calculate the population of the domain-docked conformation (Figure 5—source data 1) were labeled as P1 (an unassigned NBD Ile peak), P2 (Ile145) and P3 (Ile371).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Peaks in the spectra of the FL protein were assigned to the domain-undocked (U) conformation when they were overlapped with peaks in the spectrum of the isolated NBD*(1-413) in the corresponding nucleotide state (ADP or ATP-bound). When two sets of peaks were observed in the NMR methyl spectra of the FL protein, the second peak with distinct chemical shifts from those observed for the isolated NBD*(1-413), was assigned to the domain-docked conformation (D). The three representative peak doublets used to calculate the population of the domain-docked conformation (Figure 5—source data 1) were labeled as P1 (an unassigned NBD Ile peak), P2 (Ile145) and P3 (Ile371).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig5-figsupp3-v1.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Blowups of the representative regions of the TROSY spectra highlighting local chemical shift perturbations between ADP- and ATP-bound states.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** Experiments were performed at 25°C using 20–80 μM protein in the cell and 0.1–0.4 mM ADP (or ATP) injected from the syringe. The top panels show raw data and the bottom panels show integrated normalized data.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** Experiments were performed at 25°C using 30 μM protein in the cell and 0.25–0.35 mM ADP (or ATP) injected from the syringe. Top panels show raw data, and bottom panels show integrated normalized data.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/29430/elife-29430-fig5-figsupp7-v1.jpg)
+
+**Figure 5—figure supplement 7.:** Molecular mass difference of ~330 Da as reported before (Preissler et al., 2015) corresponds to modification by AMPlation. An additional peak at ±180 Da corresponds to α-N-Glucosylation of the His-tag.
+
 It has been recently demonstrated that AMPylation efficiency depended on BiP conformation (Preissler et al., 2015). Indeed, in our hands, AMPylation of WT BiP* was incomplete (~60%, Figure 5—figure supplement 7). To achieve sample homogeneity, we also performed the experiments on the V461F BiP* variant, which made AMPyaltion near 100% efficient (Figure 5—figure supplement 7). While, as discussed above, the V461F substitution itself considerably favores domain docking in the presence (~67%) and in the absence (~49%) of ATP, its AMPylation further stabilizes the domain-docked conformation (Figure 5A, Figure 5—figure supplement 2 and Figure 5—source data 1). As a result, AMPylated BiP*-V461F predominantly (>80%) adopts the domain-docked conformation in the presence of either ATP or ADP (Figure 5A). Remarkably, no chemical shift differences were observed in methyl NMR spectra for the peaks corresponding to the BiP domain-docked conformation, regardless either the BiP* or its V461F variant were ATP-bound and non-AMPylated, ATP-bound and AMPylated or ADP-bound and AMPylated. Moreover, then the domain-docked conformation became predominantly populated for the AMPylated V461F variant, the methyl spectra of ADP-bound and ATP-bound conformation were almost identical (Figure 5—figure supplement 3), while only a few minor (local) chemical shift perturbations were observed in amide NMR spectra (Figure 5—figure supplement 4). These results are in excellent agreement with the biochemical and structural study of AMPylated BiP, where linker-specific proteolysis and X-ray crystallography was used to demonstrate that, in the absence of ATP, AMPylation stabilizes the structurally same domain-docked BiP conformation that is normally observed upon ATP binding (Preissler et al., 2017).
 
-## Post-translational fine-tuning of the BiP conformational equilibrium provides the precise thermodynamic control of nucleotide binding
+### Post-translational fine-tuning of the BiP conformational equilibrium provides the precise thermodynamic control of nucleotide binding
 
 To examine how perturbations of the domain-docked/undocked equilibrium affects thermodynamics of nucleotide binding, we plotted the free energy of ATP and ADP binding versus the free energy difference between the domain-docked and -undocked conformations (the free energy of docking) for the BiP* (Table 1, Figure 5—figure supplement 5) and its AMPylated and non-AMPylated V461F variant (Figure 5—figure supplement 6, Figure 5—source data 2). Our results demonstrate that stabilization of the domain-docked conformation gradually increases the ADP and ATP binding energy (Figure 5B). This correlation between the free energies of domain docking and nucleotide binding can be quantitatively rationalized by considering kinetics and thermodynamics of the multistep ATP-induced conformational transitions in the BiP molecule. The simplest model, in which the BiP co-exists as an ensemble of two thermodynamically distinct states, was suitable to fit the experimental data (Figure 5B). In this model the observed binding constant is equal to a population-weighted sum of the nucleotide binding constants for the domain-docked and -undocked conformations. The best agreement with the experimental data was achieved when ATP (ADP) binding constants were 800 nM (7 μM) and 1 nM (1.5 μM) for the domain-undocked and –docked states, respectively (Figure 5B).
 
@@ -99,7 +265,7 @@ While mounting evidence suggests that BiP activity is linked to neurodegenerativ
 
 ## Materials and methods
 
-## Expression and purification of FL BIP and its NBD
+### Expression and purification of FL BIP and its NBD
 
 The hamster BiP with a non-cleavable N-terminal 6x-His-tag was cloned into the pET28a vector. The N-terminal His-tagged BiP construct has been extensively characterized in the literature and the His-tag does not perturb BiP function (Wei and Hendershot, 1995). We designed three constructs, each containing the T229G mutation, including full-length (FL) BiP(1-641), NBD(1-413), comprising NBD only and NBD(1-417), comprising NBD and four conserved residues from the interdomain linker. The ‘soft’ mutants I437V, V461F, I526V, and I538V were constructed to perturb key allosteric sites. The I145V and I371V mutants were also constructed to assign two peak doublets that were used to calculate populations of the domain-docked and –undocked conformations (see below).
 
@@ -109,7 +275,7 @@ Expression of 2H, 15N, Ileδ1-[ 13CH3]-labeled samples were performed according 
 
 Thawed cells were incubated for 30 min on ice with 0.5 ml lysozyme (50 mg/ml, Sigma-Aldrich, UK), 0.1 ml DNaseI (10 mg/ml, Sigma-Aldrich) and Protease Inhibitor Cocktail (Roche). After sonication, lysates were spun down at 20000 rpm for 45 min and filtered to remove cell debris. Supernatants were loaded onto a HisTrap HP nickel column (GE Healthcare) pre-equilibrated with the binding buffer (20 mM HEPES, 400 mM NaCl, pH 8.0). Following a wash step with the binding buffer containing 40 mM imidazole, bound protein was eluted by 500 mM imidazole. Collected fractions were extensively dialysed against the final buffer (20 mM HEPES, 100 mM KCl, 5 mM MgCl2, pH 7.6), flash frozen in liquid nitrogen and stored at −80°C. Protein concentrations were measured using UV absorbance at 280 nm. The purity of the samples were characterized using the SDS-PAGE gel and by measuring the A260/A280 ratio. The theoretical molar extinction coefficients of (28880 M−1 cm−1 for FL BIP, 17420 M−1 cm−1 for isolated NBD) were used for all calculations. Additionally, protein concentrations were measured using the Bradford protein assay (Bio-Rad) with bovine serum albumin as a standard.
 
-## Expression and purification of the BiP SBD
+### Expression and purification of the BiP SBD
 
 The BiP SBD was obtained from the 2H, 15N, Ileδ1-[ 13CH3]-labeled FL BiP using the BiP-linker specific protease SubA. 400 μl of 80 μM BiP was incubated for 4 hr at 30°C with 100 μl of 0.1 mg/ml SubA in the presence of 5 mM ATP. SBD was purified using one-step Ni-NTA affinity purification, dialyzed against the final buffer (20 mM HEPES, 100 mM KCl, 5 mM MgCl2, pH 7.6) and concentrated to 20 μM.
 
@@ -117,36 +283,54 @@ SubA was expressed and purified using a standard protocol from Prof David Ron’
 
 Thawed cells were incubated for 30 min on ice with 0.5 ml lysozyme (50 mg/ml, Sigma-Aldrich), 0.1 ml DNaseI (10 mg/ml, Sigma-Aldrich) and Protease Inhibitor Cocktail (Roche). After sonication, lysates were spun down at 20000 rpm for 45 min and filtered to remove cell debris. Supernatants were loaded onto a HisTrap HP nickel column (GE Healthcare) pre-equilibrated with the binding buffer (50 mM HEPES, 300 mM NaCl, 2 M urea, 5% glycerol, pH 7.4). A gradual refolding of the protein was performed on-column using a linear urea gradient from 2M to 0M. Then, the protein was eluted using a linear imidazole gradient from 10 to 500 mM. Finally, the protein sample was dialysed against 50 mM HEPES, 300 mM NaCl, and 5% glycerol (pH 7.4).
 
-## NMR experiments
+### NMR experiments
 
 To obtain fingerprints of the conformational states of the BiP functional cycle, isolated BiP NBD* constructs (residues 1–413 and residues 1–417) and FL BiP* constructs were expressed in isotopically labeled media as described above. NMR acquisitions were carried out in the NMR buffer (20 mM HEPES, 100 mM KCl, 5 or 40 mM MgCl2, pH 7.6) in the presence 5 or 40 mM of ADP or ATP (no significant differences were observed in NMR spectra for different nucleotide and MgCl2 concentrations) A BEST version (Lescop et al., 2007; Schulte-Herbrüggen and Sorensen, 2000) of amide transverse relaxation optimized spectroscopy (TROSY) (Pervushin et al., 1997) pulse sequence was used to record amide NMR spectra and a band-selective optimized-flip-angle short-transient experiment (Schanda and Brutscher, 2005) (2D 1H-13C SOFAST-HMQC) was used for methyl NMR (Tugarinov et al., 2003). All measurements were recorded at 25°C at 750, 900 and 950 MHz Bruker spectrometer equipped with a Bruker TCI triple-resonance cryogenically cooled probes. Data was processed with NMRPipe (Delaglio et al., 1995) and analyzed with CcpNmr Analysis software packages (Vranken et al., 2005; Skinner et al., 2016).
 
-## Analysis of populations of the domain-docked and domain-undocked conformations
+### Analysis of populations of the domain-docked and domain-undocked conformations
 
 To assign peaks corresponded to domain-docked and domain-undocked conformations, the spectra of FL BiP constructs were overlaid with the spectra of the corresponding nucleotide-binding state of the isolated NBD*(1-413) and SBD. If we observed almost no changes in methyl NMR peak positions between the FL construct and the isolated NBD* and SBD (e.g., for ADP-bound BiP*, Figure 2, Figure 4—figure supplement 1), we assumed that there is no interdomain communication in the FL protein and all peaks in the FL spectrum were assigned to the domain-undocked (U) conformation. If two sets of peaks were observed in the NMR spectrum of a FL construct (e.g., for ATP-bound BiP, Figure 2 and Figure 4—figure supplement 1); for each peak doublet, the peak that overlapped s perfectly with the corresponding peak from the spectrum of the isolated NBD was assigned to the domain-undocked (U) conformation. The second peak from the FL doublet that had distinct chemical shifts from the corresponding isolated NBD peak was assigned to the domain-docked (D) conformation.
 
 To calculate the populations of the domain-docked and -undocked conformations from spectra of FL BiP*, we used methyl peak intensities of three non-overlapping peak doublets (shown in Figure 2, grey). Individual peaks in each doublet correspond to the domain-docked and -undocked conformations. The conformation for each peak was assigned by overlapping the spectra of FL BiP* with the spectra of isolated NBD*(1-413) as described above. We further assigned two peak doublets using the I145V and I371V single-point mutants. Both residues are located away from the nucleotide-binding site: Ile 145 is located near the NBD-αLid interface and directly reports on domain docking, while Ile 371 is located near the interface between NBD subdomains IIA and IIB, and thus reports on long-range conformational transitions in the NBD. Peak intensities were obtained using the parabolic method implemented in CcpNmr (Vranken et al., 2005; Skinner et al., 2016). The population of the domain docking conformation was calculated as: pD = ID/(ID +IU)x100%. Errors were calculated as standard deviations (SDs) from the means for three peak doublets.
 
-## Isothermal Titration Calorimetry
+### Isothermal Titration Calorimetry
 
-All ITC experiments were performed on BiP* and its variants using MicroCal ITC200 system. The protein solution was dialyzed overnight against the ITC buffer (20 mM HEPES, 100 mM KCl, 5 mM MgCl2, pH 7.6). The final protein concentrations were between 20–80 μM and the stock nucleotide concentrations varied between 0.1–0.4 mM. All measurements were carried out at 25°C. For each protein construct measurements were repeated at least three times; ΔH and Kd values were obtained for each repeat using the non-linear least square curve-fitting algorithm implemented in MicroCal Origin (OriginLab, Northampton, MA). The ΔH and Kd values were averaged out over all repeats and the corresponding TΔS and ΔG values were calculated using the following equitations:ΔG=RTLnKd−TΔS=ΔG−ΔH,
+All ITC experiments were performed on BiP* and its variants using MicroCal ITC200 system. The protein solution was dialyzed overnight against the ITC buffer (20 mM HEPES, 100 mM KCl, 5 mM MgCl2, pH 7.6). The final protein concentrations were between 20–80 μM and the stock nucleotide concentrations varied between 0.1–0.4 mM. All measurements were carried out at 25°C. For each protein construct measurements were repeated at least three times; ΔH and Kd values were obtained for each repeat using the non-linear least square curve-fitting algorithm implemented in MicroCal Origin (OriginLab, Northampton, MA). The ΔH and Kd values were averaged out over all repeats and the corresponding TΔS and ΔG values were calculated using the following equitations:
+
+$$
+ΔG=RTLnK_{d}
+$$
+
+
+
+$$
+−TΔS=ΔG−ΔH,
+$$
 
 where R is the ideal gas constant and T is the temperature (298 K).
 
-## Analysis of the thermodynamic linkage between domain docking and nucleotide binding
+### Analysis of the thermodynamic linkage between domain docking and nucleotide binding
 
-For each construct, the free energy of nucleotide (ATP or ADP) binding was obtained from the ITC data using the following equation: ΔG(binding)/RT= Ln(Kd), where Kd is an ADP or ATP binding constant, R is the ideal gas constant, and T is the temperature in K. Populations of the domain-undocked and -docked conformations obtained from NMR spectra, were used to calculate the free energy of domain docking using the following equation: ΔG(docking)/RT= −Ln(pD/(1−pD)), where pD and 1-pD are populations of the domain-docked and -undocked conformations, respectively (Figure 5—source data 2).
+For each construct, the free energy of nucleotide (ATP or ADP) binding was obtained from the ITC data using the following equation: $ΔG(binding)/RT= Ln(K_{d})$, where Kd is an ADP or ATP binding constant, R is the ideal gas constant, and T is the temperature in K. Populations of the domain-undocked and -docked conformations obtained from NMR spectra, were used to calculate the free energy of domain docking using the following equation: $ΔG(docking)/RT= −Ln(p_{D}/(1−p_{D}))$, where pD and 1-pD are populations of the domain-docked and -undocked conformations, respectively (Figure 5—source data 2).
 
-To obtain theoretical plot of free energy of nucleotide (ADP or ATP) binding, ΔG(binding)/RT, against the free energy of docking, ΔG(docking)/RT, we assumed that the protein co-exists in solution as an ensemble of two conformations, domain-docked and -undocked, and both conformations can bind to the corresponding nucleotide with different affinities. Thus, the free energy of nucleotide binding can be calculated using the following equation:ΔG(binding)/RT =Ln(pDKdD+pUKdU)
+To obtain theoretical plot of free energy of nucleotide (ADP or ATP) binding, $ΔG(binding)/RT$, against the free energy of docking, $ΔG(docking)/RT$, we assumed that the protein co-exists in solution as an ensemble of two conformations, domain-docked and -undocked, and both conformations can bind to the corresponding nucleotide with different affinities. Thus, the free energy of nucleotide binding can be calculated using the following equation:
 
-where KdU and KdD are the ADP or ATP binding constants of the ‘pure’ 100%-populated domain-docked and -undocked conformations, respectively; and pD and pU = 1 pD are the populations of the domain-docked and -undocked conformations, respectively. The free energy of docking were calculated:ΔG(docking)/RT= −Ln(pD/(1−pD))
+$$
+ΔG(binding)/RT =Ln(p_{D}K_{d}^{D}+p_{U}K_{d}^{U})
+$$
+
+where $K_{d}^{U}$ and $K_{d}^{D}$ are the ADP or ATP binding constants of the ‘pure’ 100%-populated domain-docked and -undocked conformations, respectively; and pD and pU = 1 pD are the populations of the domain-docked and -undocked conformations, respectively. The free energy of docking were calculated:
+
+$$
+ΔG(docking)/RT= −Ln(p_{D}/(1−p_{D}))
+$$
 
 where pD and pU = 1–pD are the populations of the domain-docked and –undocked conformations, respectively.
 
-## AMPylation
+### AMPylation
 
 The AMPylation protocol was adopted from Preissler et al (Preissler et al., 2015).500 μL of 100 μM purified BiP* or BiP*-V461F were subjected to buffer exchange (25 mM HEPES-KOH pH 7.4, 100 mM KCl, 10 mM MgCl2, 1 mM CaCl2, 0.1% (v/v) Triton X-100) using NAP-5 columns (GE Healthcare) and AMPyltaed for 8 hr at 30°C with bacterially expressed GST-FICD-E234G at ratio 1:100 in the presence of 3 mM ATP. Next, AMPylated protein was subjected to the standard purification protocol described above. AMPylation, was validated by mass spectrometry.
 
-## Liquid chromatography-mass spectrometry
+### Liquid chromatography-mass spectrometry
 
 The mass analysis was performed by LC-MS using an M-class ACQUITY UPLC (Waters UK, Manchester, UK) interfaced to a Synapt G2S Q-IMT-TOF mass spectrometer (Waters UK, Manchester, UK). 1 µL of 5 µM sample was loaded onto a MassPREP protein desalting column (Waters UK, Manchester, UK) washed with 10% solvent B (0.1% formic acid in acetonitrile) in solvent A (0.1% formic acid in water) for 5 min at 25 µL min−1. After valve switching, the bound protein was eluted by a wash of 95% solvent B in A for 3 min before re-equilibration at 10% solvent B in A ready for the next injection. The column eluent was directed in to the mass spectrometer via a Z-spray electrospray source. The MS was operated in positive TOF mode using a capillary voltage of 3kV, sample cone of 40V and source offset of 80V. Backing pressure was 7.9 mbar and trap bias 2V. The source temperature was 80°C and desolvation was 150°C. Argon was used as the buffer gas at a pressure of 9.1 × 10−3 mbar in the trap and transfer regions of the TriWave device. Mass calibration was performed by a separate injection of [Glu]-fibrinopeptide b at a concentration of 250 fmol µl−1 in MS/MS mode and a CID voltage (trap region) of 28V. Data processing was performed using the MassLynx v4.1 suite of software (Waters UK, Manchester, UK) supplied with the mass spectrometer.

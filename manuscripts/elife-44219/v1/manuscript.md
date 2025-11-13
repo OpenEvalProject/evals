@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.44219.001 Autophagy defects are implicated in multiple late-onset neurodegenerative diseases including Amyotrophic Lateral Sclerosis (ALS) and Alzheimer’s, Huntington’s, and Parkinson’s diseases. Since aging is the most common shared risk factor in neurodegeneration, we assessed rates of autophagy in mammalian neurons during aging. We identified a significant decrease in the rate of constitutive autophagosome biogenesis during aging and observed pronounced morphological defects in autophagosomes in neurons from aged mice. While early stages of autophagosome formation were unaffected, we detected the frequent production of stalled LC3B-negative isolation membranes in neurons from aged mice. These stalled structures recruited the majority of the autophagy machinery, but failed to develop into LC3B-positive autophagosomes. Importantly, ectopically expressing WIPI2B effectively restored autophagosome biogenesis in aged neurons. This rescue is dependent on the phosphorylation state of WIPI2B at the isolation membrane, suggesting a novel therapeutic target in age-associated neurodegeneration.
+Autophagy defects are implicated in multiple late-onset neurodegenerative diseases including Amyotrophic Lateral Sclerosis (ALS) and Alzheimer’s, Huntington’s, and Parkinson’s diseases. Since aging is the most common shared risk factor in neurodegeneration, we assessed rates of autophagy in mammalian neurons during aging. We identified a significant decrease in the rate of constitutive autophagosome biogenesis during aging and observed pronounced morphological defects in autophagosomes in neurons from aged mice. While early stages of autophagosome formation were unaffected, we detected the frequent production of stalled LC3B-negative isolation membranes in neurons from aged mice. These stalled structures recruited the majority of the autophagy machinery, but failed to develop into LC3B-positive autophagosomes. Importantly, ectopically expressing WIPI2B effectively restored autophagosome biogenesis in aged neurons. This rescue is dependent on the phosphorylation state of WIPI2B at the isolation membrane, suggesting a novel therapeutic target in age-associated neurodegeneration.
 
 ## Introduction
 
@@ -35,21 +35,29 @@ Here, we examine how autophagy is altered with age in primary neurons from mice.
 
 ## Results
 
-## Autophagosome biogenesis at the axon terminal decreases with age
+### Autophagosome biogenesis at the axon terminal decreases with age
 
 Since impaired autophagy has been implicated in the pathogenesis of neurodegeneration and age is the most relevant risk factor for neurodegenerative disease, we used the GFP-LC3B probe to assess how biogenesis rates change with age in primary DRG neurons dissected from mice of four different ages: 1-month-old young mice, 3-month-old young adult mice, 16–17 month-old aged mice, and 24-month-old advanced aged mice. We produced robust cultures of DRG neurons harvested from mice aged from 1 to 24 months; neurons harvested from all ages extended long neurites, and we did not detect significant loss of viability with age (data not shown). We used live-cell spinning disk fluorescence microscopy to examine autophagosome biogenesis at the axon tips of DRG neurons in culture with high spatial and temporal specificity.
 
 We identified autophagosome biogenesis events as the formation of discrete GFP-LC3B puncta visible above the background cytoplasmic GFP-LC3B signal (Figure 1A). These puncta enlarged over approximately three minutes to form a 1 μm autophagosome. Strikingly, we found that the rate of autophagosome biogenesis significantly decreased with age, corresponding to a 53% decrease in autophagosome biogenesis in aged neurons compared to neurons from young adult mice. Furthermore, the decrease was even more pronounced in neurons from advanced aged mice (Figure 1B). These data indicate that the rate of autophagosome biogenesis, as detected by the generation of GFP-LC3B-positive puncta, decreases in axon terminals with increasing age.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig1-v1.jpg)
+
+**Figure 1.:** (A) Time series of GFP-LC3B in the distal axon of a DRG neuron from a young adult mouse. Green and white arrowheads each follow one autophagosome biogenesis event. Retrograde is to the right. Scale bar, 2 μm. (B) Quantification of the rate of autophagic vesicle (AV) biogenesis (assayed by GFP-LC3B puncta formation per minute) in DRG neurons from young (one mo, light green), young adult (three mo, green), aged (16–17 mo, dark green), and advanced aged (24 mo, very dark green) mice (mean ± SEM; n ≥ 54 neurons from three biological replicates). ***p<0.0005; ****p<0.0001 by one-way ANOVA test with Tukey’s multiple comparisons test. (C–E) Representative electron micrographs of autophagosomes in DRG distal tips from young adult mice. AVs are composed of a continuous double membrane enclosing engulfed cytoplasm. Scale bars, 200 nm. (F–H) Representative electron micrographs of autophagosomes in DRG distal tips from aged mice. AVs contain multiple, ruffled double membranes (G, H). Scale bars, 200 nm. (I–J) Electron micrographs of autophagosomes in the presynaptic compartment of neuromuscular junctions (NMJs) from young adult (I) and aged (J) mice. Scale bars, 100 nm. Arrowheads indicate multilamellar membranes in DRGs and NMJs.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Electron micrographs of DRG distal tips from young adult (A) or aged (B) mice. Scale bars, 200 nm. (C–E) Representative electron micrographs of autophagosomes in DRG axonal distal tips from young adult mice. Scale bars, 200 nm. (F–M) Representative electron micrographs of autophagosomes in DRG axonal distal tips from aged mice. Scale bars, 200 nm. (N) Representative electron micrograph of an autophagosome in a NMJ from an aged mouse. Scale bar, 200 nm. (O–P) Lower magnification electron micrographs of Figure 1I and J of autophagosomes in the presynaptic compartment of NMJs from young adult (O) and aged (P) mice. Dashed boxes indicate corresponding magnified regions in Figure 1I–1J. Scale bar in O, 500 nm; in P, 2 μm.
+
 In subsequent experiments, we focused on 16–17 month-old aged mice, given the significant decrease in the rate of autophagosome biogenesis observed at this time point relative to young adult mice and the relevance of this time point to the age of onset for age-associated neurodegenerative diseases such as ALS and AD.
 
-## Morphological differences are common in neuronal autophagosomes of aged mice
+### Morphological differences are common in neuronal autophagosomes of aged mice
 
 To further characterize changes in autophagic vesicle (AV) biogenesis in neurons during aging, we used transmission electron microscopy to compare the ultrastructure of AVs at axon terminals of neurons from young adult and aged mice. We observed stereotypical double-membrane structures with heterogeneous contents in the axonal tips of neurons from young adult mice (Figure 1C–E, Figure 1—figure supplement 1A and C–E). However, in neurons from aged mice we more frequently observed aberrant AVs with a multilamellar (onion skin-like) structure (Figure 1F–H, Figure 1—figure supplement 1B and F–M). Quantitative analysis indicated that only 34.0% of AVs (n = 153 AVs) observed in the distal tips of neurons from 16 to 17 month-old mice were morphologically normal, significantly different than the 80.4% of AVs judged to be morphologically normal in the axon tips of neurons from young adult mice (n = 56 AVs; p<0.0001 by unpaired two-tailed Fisher’s exact test). The aberrant morphology of AVs observed in aged mice suggested misregulated membrane extension during AV biogenesis, consistent with previous observations that failure to lipidate LC3 at isolation membranes prevented closure and inhibited the degradation of the inner autophagosome membrane (Tsuboyama et al., 2016). Furthermore, these aberrant AVs were reminiscent of AVs previously observed in aged rodents (Majeed, 1993; Majeed, 1992) and in cortical biopsy specimens from patients with Alzheimer’s disease (Nixon et al., 2005).
 
 We next queried whether we could detect these age-related morphological differences in intact neuronal tissues, focusing on the prominent synapses that form between motor neurons and muscle at the neuromuscular junction (NMJ). We used NMJs from young adult and aged mice to assess any age-related changes in autophagosomes in vivo. Again, we observed stereotypical double-membrane structures with heterogeneous contents in neurons from young mice (Figure 1I, Figure 1—figure supplement 1O). As we observed in DRG neurons in culture, we identified multilamellar structures in NMJs from aged mice in vivo (Figure 1J, Figure 1—figure supplement 1N and P).
 
-## Pronounced stalling of autophagosome biogenesis is observed in aged neurons
+### Pronounced stalling of autophagosome biogenesis is observed in aged neurons
 
 Autophagosome biogenesis can be divided into stages: initiation/induction, nucleation, elongation, and membrane closure (Figure 2A). The initiation complex, including ATG13 and ULK1/ATG1, induces autophagosome biogenesis by phosphorylating other autophagy components (Feng et al., 2014; Kamada et al., 2000; Reggiori et al., 2004). The nucleation complex, including VPS34 and ATG14, generates phosphatidylinositol 3-phosphate (PI3P) at the site of autophagosome biogenesis (Kihara et al., 2001; Obara et al., 2006). Subsequently, the elongation complex, composed of two conjugation complexes, including ATG5, ATG12, and ATG16L1, is required to conjugate phosphatidylethanolamine (PE) to LC3 to yield LC3-II (Tanida et al., 2004). LC3-II is recruited to autophagosomes as the isolation membrane elongates during biogenesis and remains associated with autophagosomes until degradation of the internalized components. ATG9, a six-pass transmembrane protein, is thought to shuttle to the growing membrane with donor membrane (Koyama-Honda et al., 2013; Orsi et al., 2012; Sekito et al., 2009; Suzuki et al., 2015; Yamamoto et al., 2012; Young et al., 2006). The ATG2 and WIPI4 complex is thought to work in concert with ATG9 to tether and provide lipids to the growing membrane (Chowdhury et al., 2018; Gómez-Sánchez et al., 2018; Osawa et al., 2019; Valverde et al., 2019; Wang et al., 2001). Finally, the limiting membrane closes and fuses with itself to generate the unique double-membrane organelle. The autophagosome then undergoes retrograde transport along microtubules and subsequent fusion with lysosomes to degrade engulfed contents (Figure 2A) (Xie and Klionsky, 2007).
 
@@ -61,35 +69,115 @@ The observed decrease in the rate of autophagosome biogenesis that we measured b
 
 Next we used dual-color live cell imaging to compare assembly dynamics in neurons from young adult and aged mice co-expressing GFP-LC3B and initiation component mCh-ATG13. We observed ‘productive’ biogenesis events in neurons from aged mice (Figure 3A, Video 1), very similar to those previously described in neurons from young adult (4–6 month-old) mice (Maday and Holzbaur, 2014). Quantitative analysis of the change in fluorescence intensity over time (Figure 3C) indicated that mCh-ATG13 transiently localizes to these puncta for 100 to 150 s; subsequent recruitment of GFP-LC3B to a mCh-ATG13-positive punctum coincided with a loss in mCh-ATG13 signal intensity.
 
+![Video 1.](https://cdn.elifesciences.org/articles/44219/elife-44219-video1.mp4.jpg)
+
+**Video 1.:** GFP-LC3B and mCh-ATG13 in the distal neurite of a DRG neuron from an aged mouse depicting a productive autophagosome biogenesis event. In the merge movie (bottom), yellow arrowheads denote colocalization of ATG13 and LC3B; green arrowheads denote a LC3B-positive punctum from which ATG13 has dissociated; solid arrowheads track one punctum, hollow arrowheads follow a second punctum. Retrograde is to the right. Scale bar, 2 μm. Playback at five frames per second. Movie stills are shown in Figure 3A.
+
 Frequently, however, dual labeling of autophagosome biogenesis in neurons from aged mice revealed ‘stalled’ events, in which mCh-ATG13 puncta formed and were stably maintained for at least 5 min of a 10 min video; we observed that these stalled events also failed to recruit GFP-LC3B within the imaging window (Figure 3B and D and Video 2). In neurons from young adult mice, greater than 75% of observed events were productive AVs (Figure 3E). In striking contrast, we found that stalled events dominated in neurons from aged mice, representing greater than 75% of total events in aged neurons (Figure 3E).
+
+![Video 2.](https://cdn.elifesciences.org/articles/44219/elife-44219-video2.mp4.jpg)
+
+**Video 2.:** GFP-LC3B and mCh-ATG13 in the distal neurite of a DRG neuron from an aged mouse depicting a stalled autophagosome biogenesis event. In the merge movie (bottom), red arrowheads denote lack of colocalization between ATG13 and LC3B; solid arrowheads track one punctum, hollow arrowheads follow a second punctum. Retrograde is to the right. Scale bar, 2 μm. Playback at five frames per second. Movie stills are shown in Figure 3B.
 
 We observed a similar distinction between productive and stalled events when we compared the recruitment kinetics of GFP-LC3B with elongation complex component mCh-ATG5 (Figure 3F–G; Videos 3,4). In neurons from aged mice, we observed stereotypical AV kinetics, in which the transient recruitment of mCh-ATG5 over approximately 100 s is followed by a steady increase in GFP-LC3B intensity (Figure 3H), similar to our observations with mCh-ATG13. Again, productive events predominated (>70% of total events) in neurons from young adult mice, while stalled events predominated (~80% of total events) in neurons from aged mice (Figure 3I–J). While these stalled events did not go on to produce GFP-LC3B-positive autophagosomes, stalled AVs remained dynamic within the confines of the axon tip rather than remaining tethered in place (Figure 3B and G, Video 2,4). Furthermore, both stalled and productive AVs could be found within the same axonal tip in neurons from both young adult and aged mice (Figure 3—figure supplement 1, Videos 5 and 6). These data suggest that aging does not impair the initial steps of autophagosome biogenesis. However, there is a striking block in LC3B recruitment downstream from the recruitment of both ATG13 and ATG5 that occurs infrequently in neurons from young adult mice, but predominates in neurons from aged mice.
 
-## Stalled AVs recruit autophagosome biogenesis components
+![Video 3.](https://cdn.elifesciences.org/articles/44219/elife-44219-video3.mp4.jpg)
+
+**Video 3.:** GFP-LC3B, mCh-ATG5, and SNAP-ATG9 in the distal neurite of a DRG neuron from an aged mouse depicting a productive autophagosome biogenesis event. In the merge movie (bottom), yellow arrowheads denote colocalization of ATG5 and LC3B without ATG9; green arrowheads denote a LC3B-positive punctum from which ATG5 has dissociated. Retrograde is to the right. Scale bar, 2 μm. Playback at five frames per second. Movie stills are shown in Figure 3F.
+
+![Video 4.](https://cdn.elifesciences.org/articles/44219/elife-44219-video4.mp4.jpg)
+
+**Video 4.:** GFP-LC3B, mCh-ATG5, and SNAP-ATG9 in the distal neurite of a DRG neuron from an aged mouse depicting a stalled autophagosome biogenesis event. In the merge movie (bottom), magenta arrowheads denote colocalization between ATG5 and ATG9 without LC3B. Retrograde is to the right. Scale bar, 2 μm. Playback at five frames per second. Movie stills are shown in Figure 3G.
+
+![Video 5.](https://cdn.elifesciences.org/articles/44219/elife-44219-video5.mp4.jpg)
+
+**Video 5.:** GFP-LC3B, mCh-ATG13, and SNAP-ATG9 in the distal neurite of a DRG neuron from a young adult mouse depicting both productive (solid arrowhead, solid arrow) and stalled (outlined arrowhead) autophagosome biogenesis events. In the merge movie (bottom), arrowhead color denotes colocalization state of indicated punctum. Retrograde is to the right. Scale bar, 2 μm. Playback at five frames per second. Movie stills are shown in Figure 3—figure supplement 1A.
+
+![Video 6.](https://cdn.elifesciences.org/articles/44219/elife-44219-video6.mp4.jpg)
+
+**Video 6.:** GFP-LC3B and mCh-ATG5 in the distal neurite of a DRG neuron from an aged mouse depicting both productive (solid arrowhead) and stalled (outlined arrowhead) autophagosome biogenesis events. In the merge movie (bottom), arrowhead color denotes colocalization state of indicated punctum. Retrograde is to the right. Scale bar, 2 μm. Playback at five frames per second. Movie stills are shown in Figure 3—figure supplement 1B.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig3-v1.jpg)
+
+**Figure 3.:** (A–B) Time series of merge micrographs of mCh-ATG13 and GFP-LC3B from live cell imaging of the distal neurite of DRGs from aged mice depicting a productive (A) or a stalled (B) autophagosome biogenesis event. Yellow arrowheads denote colocalization of mCh-ATG13 and GFP-LC3B; green arrowheads denote a GFP-LC3B-positive punctum from which mCh-ATG13 has dissociated; red arrowheads denote mCh-ATG13-positive puncta that fail to recruit GFP-LC3B; solid arrowheads track one punctum, hollow arrowheads follow a second punctum. Magnified views of denoted puncta are shown below full micrograph; border color represents channel or colocalization state in merge. Retrograde is to the right. Scale bars, 2 μm. (C–D) Individual intensity profiles were averaged to improve signal-to-noise of mCh-ATG13 (red) and GFP-LC3B (green) for productive (C) and stalled (D) AVs (mean ± SEM; n ≥ 5 biogenesis events from five neurons from three biological replicates). (E) Quantification of the proportion of total mCh-ATG13-positive AV biogenesis events (both productive and stalled events) in DRG neurons from young adult (light gray) and aged (dark gray) mice (mean ± 95% confidence interval; n ≥ 62 AVs from three biological replicates for each condition). ****p<0.0001 by Fisher’s exact test. (F–G) Time series of merge micrographs of mCh-ATG5 and GFP-LC3B in the distal neurite of DRGs from aged mice depicting a productive (F) or stalled (G) autophagosome biogenesis event. Arrowheads point to puncta magnified below micrograph; colors denote channel or colocalization state in merge. Scale bars, 2 μm. (H–J) Mean intensity profiles of mCh-ATG5 (red) and GFP-LC3B (green) for productive (H) and stalled (I) AVs (mean ± SEM; n = 5 productive biogenesis events from five neurons or n = 4 stalled biogenesis events from four neurons from three biological replicates). Vertical dashed line in (C and H) indicates the half-maximum of GFP-LC3B intensity, which was used to align the traces. (J) Quantification of the proportion of total mCh-ATG5-positive AV biogenesis events (both productive and stalled events) in DRG neurons from young adult and aged mice (mean ± 95% confidence interval; n ≥ 62 AVs from three biological replicates for each condition). ****p<0.0001 by Fisher’s exact test. See also Videos 1–6.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Time series of GFP-LC3B, mCh-ATG13, and SNAP-ATG9 in the distal neurite of a DRG neuron from a young adult mouse depicting a productive autophagosome biogenesis event (solid arrowhead, #2) and a stalled biogenesis event (outlined arrowhead, #1). (B) Time series of GFP-LC3B and mCh-ATG5 in the distal neurite of a DRG neuron from an aged mouse depicting a productive autophagosome biogenesis event (solid arrowhead, #2) and a stalled biogenesis event (outlined arrowhead, #1). Magnified views of denoted puncta are shown below full micrograph; border color represents channel or colocalization state in merge. Retrograde is to the right. Scale bars, 2 μm.
+
+### Stalled AVs recruit autophagosome biogenesis components
 
 To further characterize stalled events in neurons from aged mice, we asked if other autophagy components colocalize with stalled AVs. ATG9 is the only multi-pass transmembrane protein in the core autophagy machinery (Lang et al., 2000; Noda et al., 2000; Young et al., 2006) and is thought to transit to the growing isolation membrane with donor membranes (Sekito et al., 2009; Suzuki et al., 2015; Yamamoto et al., 2012; Young et al., 2006). Normally, ATG9 is only transiently associated with the developing autophagosome (Koyama-Honda et al., 2013; Orsi et al., 2012). We used multi-color live-cell imaging to assess colocalization between autophagy components in neurons from young adult or aged mice co-expressing fluorescently labeled LC3B, ATG9, and ATG13 or ATG5 (Figure 4A). As expected, we did not observe significant colocalization of SNAP-ATG9 with productive autophagosome biogenesis events in neurons from either young or aged mice (Figure 4B and D). However, we did observe the robust and persistent colocalization of SNAP-ATG9 with mCh-ATG13 or mCh-ATG5 in the majority of stalled events in neurons from aged mice (Figure 4A,C and D, Video 4,7). Further, we noted persistent SNAP-ATG9 colocalization with the very rare stalled events seen in neurons from young adult mice (Figure 4D). These data suggest that ATG9 may only transiently associate with productive biogenesis events, whereas the majority of stalled AVs aberrantly accumulate or retain ATG9.
+
+![Video 7.](https://cdn.elifesciences.org/articles/44219/elife-44219-video7.mp4.jpg)
+
+**Video 7.:** GFP-LC3B, mCh-ATG13, and SNAP-ATG9 in the distal neurite of a DRG neuron from an aged mouse depicting a stalled autophagosome biogenesis event. In the merge movie (bottom), arrowhead color denotes colocalization state of the punctum. Retrograde is to the right. Scale bar, 2 μm. Playback at five frames per second. Movie stills are shown in Figure 4A.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig4-v1.jpg)
+
+**Figure 4.:** (A) Time series of live imaging of mCh-ATG13, SNAP-ATG9, and GFP-LC3B in the distal neurite of a DRG neuron from an aged mouse depicting a stalled AV. Magenta arrowheads indicate colocalization between mCh-ATG13 and SNAP-ATG9 without GFP-LC3B. Magnified views of denoted puncta are shown below full micrograph; border color represents channel or colocalization state in merge. Retrograde is to the right. Scale bar, 2 μm. (B–C) Mean intensity profiles of mCh-ATG13 (red), SNAP-ATG9 (blue), and GFP-LC3B (green) for productive (B) and stalled (C) AVs in DRG distal tips from aged mice (mean ± SEM; n = 5 biogenesis events from five neurons from three biological replicates for each graph). Vertical dashed line in (B) indicates the half-maximum of GFP-LC3B intensity, which was used to align the traces. (D) Quantification of the percentage of AVs that have SNAP-ATG9 associated in the distal neurites of DRGs from young adult and aged mice (mean ± 95% confidence interval; n ≥ 17 for each age group). ****p<0.0001 by two-tailed Fisher’s exact test. (E–F) Maximal projection micrographs of NMJs from young adult (three mo) and aged mice (16–17 mo). In panel (E), NMJs were stained with α-Bungarotoxin-tetramethylrhodamine (Btx) to stain the endplate, anti-SV2 together with anti-neurofilament H (both in blue) to visualize the presynaptic motor neuron, and anti-LC3B to visualize AVs at the synapse. In panel (F), NMJs from young and aged mice were stained with the presynaptic markers SV2 and neurofilmament H (together in blue), as well as antibodies to ATG9 (red) and ATG13 (green). Dashed boxes indicate magnified insets; line scans of ATG9 (red) and ATG13 (green) intensities at the indicated puncta are also shown. Scale bars, 10 μm. Arrowheads denote LC3B AVs (E) or the colocalization state of ATG13 with ATG9 at AVs (F). (G–I) Quantification of micrographs of NMJs from young adult (gray) and aged (dark gray) mice stained with Btx, anti-SV2, anti-neurofilament H, anti-ATG13, and anti-ATG9. (G) Quantification of stalled AVs, defined as colocalization of ATG13 and ATG9 at puncta, in the NMJ motor axon terminal. (H) Quantification of ATG13 puncta that do not have colocalized ATG9 in the NMJ motor axon terminal. (I) Quantification of the fraction of stalled AVs out of the total ATG13-positive puncta in the NMJ motor axon terminal. In G-I, mean ± SEM; n ≥ 62 motor axon terminals for each age from three biological replicates. ****p<0.0001, ns = 0.3443 by Mann-Whitney t tests. See also Videos 3,4,7.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Individual channels of maximal projection micrographs of NMJs from young adult (three mo) and aged mice (16–17 mo) shown in Figure 4E–F. (A–B), NMJs were stained with α- Btx to stain the endplate, anti-SV2 together with anti-neurofilament H (NFH) (both in blue) to visualize the presynaptic motor neuron, and anti-LC3B to visualize AVs at the synapse. (C–D), NMJs from young and aged mice were stained with the anti-SV2 and anti-NFH (together in blue), as well as anti- ATG9 and anti-ATG13. Scale bars, 10 μm. Arrowheads denote LC3B AVs (A–B) or the colocalization state of ATG13 with ATG9 at AVs (C–D). Merge micrographs are the same as in Figure 4E–F.
 
 We next sought evidence for a similar stalling of autophagosome biogenesis in vivo. As above, we used NMJs to examine AVs in intact tissues. We identified LC3-positive AVs at these synapses in muscle tissue dissected from both young adult and aged mice (Figure 4E). We used ATG9 colocalization with either ATG13 or ATG5 as a marker for stalled events in fixed tissue. In NMJs from young adult mice, we observed ATG13 puncta within the presynaptic compartment, but those puncta did not colocalize with ATG9 (Figure 4F, left). In contrast, in NMJs from aged mice, we observed the colocalization of ATG13 with ATG9, indicating the persistence of stalled AV formation within the presynaptic compartment in vivo (Figure 4F, right). We then quantified the number of stalled AVs in the NMJ motor axon terminal. While we observed stalled AVs (using ATG9 colocalization with ATG13 as a stalled AV marker) only rarely in motor axon terminals from young adult mice, NMJ axon terminals from aged mice consistently contained several stalled AVs (Figure 4G). In contrast, we did not detect a change with age in the number of ATG13-positive puncta that did not co-recruit ATG9 (Figure 4H). Thus, the fraction of stalled AVs to total ATG13-positive puncta significantly increased with age (Figure 4I). These data suggest that our observations of stalled events in cultured primary DRG neurons from aged mice can also be seen in other neuronal types in vivo.
 
 Since LC3B is not recruited to stalled AVs, we asked whether this defect was due to a failure to recruit the elongation stage constituents required for LC3B lipidation. Using multi-color immunocytochemistry, we examined the localization of endogenous elongation stage components ATG12, ATG7, ATG16L1, and ATG3. We used colocalization of endogenous ATG9 with ATG5 to identify stalled AVs in fixed neurons from aged mice. We observed that the lipidation machinery was successfully recruited to stalled AVs (Figure 5A–E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig5-v1.jpg)
+
+**Figure 5.:** (A–E) Representative maximal projection micrographs of the distal neurites of fixed DRG neurons from aged mice. Stalled AVs are identified by colocalization of anti-ATG5 (green) and anti-ATG9 (blue). Antibodies to other autophagy components are visualized in red: ATG13 (A) or elongation complex components ATG12 (B), ATG7 (C), ATG16L1 (D), and ATG3 (E). Arrowheads denote colocalization state of AVs (stalled, filled arrowheads). Borders of magnifications of indicated puncta denote channel or colocalization state in merge. (F–I) Time series (channels merged) of Halo-ATG5, mAtg8s (mCh-GABARAP in F, mCh-GABARAPL2/GATE16 in G, mCh-GABARAPL1/GEC1 in H, and mScarlet-LC3A in I), and GFP-LC3B in the distal neurite of DRG neurons from aged mice depicting stalled AVs. Arrowheads denote colocalization of mAtg8s with stalled AVs. Magnified views of denoted puncta are shown below full micrograph; border color represents channel or colocalization state in merge. Time is indicated as time since stalled AV was first visible. (J) Quantification of the fraction of stalled AVs co-recruiting each LC3/GABARAP family member when individually overexpressed in DRGs from aged mice (mean ± SEM; n ≥ 10 stalled AVs in three biological replicates for each mAtg8). ***p<0.001; ****p<0.0001 by two-tailed Fisher’s exact test. Scale bars, 2 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–D) Representative maximal projection immunocytochemistry micrographs of ATG5 and ATG9 with mAtg8 homologs GABARAPs (A), GABARAP (B), GABARAPL1/GEC1 (C), and GABARAPL2/GATE-16 (D) in the distal neurites of DRG neurons from aged mice. (E) Quantification of the fraction of stalled events that are LC3B-positive in DRG neurons from aged mice with control or overexpression of individual mAtg8s (mean ± 95% confidence interval; n ≥ 10 AVs from three biological replicates). ***p=0.0002, ns >0.05 by Fisher’s exact test. (F–H) Representative maximal projection immunocytochemistry micrographs of ATG5 and ATG9 with WIPI1 (F), WIPI2 (G), and phospho-WIPI2 (H). Arrowheads denote colocalization state of AVs. Magnified views of denoted puncta are shown below full micrograph; border color represents channel or colocalization state in merge. Scale bar, 2 μm for all panels.
+
 Given the lack of LC3B recruitment to stalled AVs harboring intact lipidation machinery, we asked whether other LC3B homologs could be recruited to stalled AVs in aged mice. There are multiple orthologs of yeast Atg8 expressed in mammals (mAtg8s), including LC3A, LC3B, LC3C, γ-aminobutyric acid receptor-associated protein (GABARAP), GABARAP-Like 1 (GABARAPL1/GEC1), and GABARAPL2/GATE16 (Schaaf et al., 2016). Mice do not appear to have a gene encoding LC3C, but may express a LC3 isoform related to human LC3C (Liu et al., 2017). Both immunocytochemistry (Figure 5—figure supplement 1A–D) and live cell imaging (Figure 5F–I) revealed that LC3A, GABARAP, GABARAPL1/GEC1, and GABARAPL2/GATE16 can each associate with stalled AVs in neurons from aged mice, with each mCherry-mAtg8 colocalizing with persistent Halo-ATG5 puncta (Figure 5J). These data indicate that the deficit in LC3B recruitment to stalled AVs in neurons from aged mice is specific and that the recruitment of other mAtg8s is not sufficient to convert stalled AVs into productive AVs in neurons from aged mice. These observations are consistent with a growing literature indicating that mAtg8s are not fully functionally redundant (Nguyen et al., 2016).
 
 Also using live-cell imaging, we asked if ectopic expression of the mAtg8s altered the assembly kinetics of AVs in neurons from aged mice. Surprisingly, we found that overexpression of mScarlet-LC3A, but not other mAtg8s, caused GFP-LC3B recruitment to 84.2% of stalled AVs (persistent Halo-ATG5 puncta), significantly different from control neurons (Figure 5—figure supplement 1E; p=0.0002; 21.1% of stalled AVs in control). However, this induced recruitment of GFP-LC3B to stalled AVs did not resolve the stalled event (data not shown), further implying that while the failure to recruit LC3B is a hallmark of stalled AV events, it is not the principal defect involved.
 
-## Overexpression of WIPI2 restores the rate of autophagosome biogenesis in neurons from aged mice
+### Overexpression of WIPI2 restores the rate of autophagosome biogenesis in neurons from aged mice
 
 PROPPINs (β-propellers that bind phosphoinositides) are essential PI3P effectors in autophagy and are conserved from yeast to humans (Michell et al., 2006; Polson et al., 2010; Proikas-Cezanne et al., 2004). In mammals, there are four PROPPINs, termed WD-repeat protein interacting with phosphoinositides (WIPI1 through WIPI4) (Polson et al., 2010; Proikas-Cezanne et al., 2004). WIPI1 and WIPI2 are closely related and orthologs of yeast Atg18, while WIPI3 and WIPI4 form a separate paralogous group (Behrends et al., 2010; Polson et al., 2010; Proikas-Cezanne et al., 2004). WIPI1, the first family member to be identified to have a role in autophagy, is recruited to autophagosomal membranes upon autophagy induction (Gaugel et al., 2012; Itakura and Mizushima, 2010; Proikas-Cezanne et al., 2007; Proikas-Cezanne et al., 2004; Vergne et al., 2009). WIPI2 links PI3P production by the autophagy nucleation complex to LC3 interaction with the isolation membrane as WIPI2 binds to both PI3P and ATG16L1 (Figure 6A) (Dooley et al., 2014; Lamb et al., 2013; Polson et al., 2010). Thus, we hypothesized that alterations in WIPI2 function may result in lower levels of LC3B recruitment and deleteriously affect productive biogenesis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic of WIPI1A and WIPI2B proteins, depicting the PI3P-interaction domains (FRRG), the ATG16L1-binding domain in WIPI2B (R108), and the phosphorylation site in WIPI2B (S395). Point mutations to disrupt these interactions are indicated in the relevant domains (FRRG → FTTG, R108 → E, or S395 → E or A). (B) Immunoblot of DRG lysates treated with indicated siRNA, collected after 2 days in vitro. Total protein was used as a loading control; normalization factor is indicated below blot as a percentage. (C) Quantification of the rate of AV initiation (mCh-ATG5 puncta) in DRG neurons from young adult mice with control or WIPI2 siRNA or WIPI2 siRNA with indicated RNAi-resistant Halo-WIPI2B or SNAP-WIPI1A constructs (mean ± SEM; n ≥ 15 neurons from three biological replicates for each siRNA condition). ns (not significant) p>0.05 by Kruskal-Wallis ANOVA test with Dunn’s multiple comparisons test. (D) Quantification of the rate of AV biogenesis (GFP-LC3B puncta) in DRG neurons from young adult mice with control or WIPI2 siRNA or WIPI2 siRNA with indicated RNAi-resistant Halo-WIPI2B or SNAP-WIPI1A constructs (mean ± SEM; n ≥ 15 neurons from three biological replicates for each siRNA condition). ns p>0.05; ****p<0.0001 by Kruskal-Wallis ANOVA test with Dunn’s multiple comparisons test. (E) Time series of merged micrographs of GFP-LC3B, mCh-ATG5, and Halo-WIPI2B WT in the distal neurite of a DRG neuron from an aged mouse depicting a productive autophagosome biogenesis event. Arrowheads indicate colocalization state on the isolation membrane; solid arrowhead follows one punctum, while outlined arrowhead indicates a different AV biogenesis event. Magnified views of denoted puncta are shown below full micrograph; border color represents channel or colocalization state in merge. Retrograde is to the right. Scale bar, 2 μm. (F) Quantification of the rate of AV initiation (mCh-ATG5 puncta) in DRG neurons from aged mice with or without overexpression of the indicated Halo-WIPI2B construct (mean ± SEM; n ≥ 17 neurons from three biological replicates for each condition). ns p>0.05 by Kruskal-Wallis ANOVA test with Dunn’s multiple comparisons test. (G) Quantification of the rate of AV biogenesis (marked with GFP-LC3B) in DRG neurons from aged mice with or without overexpression of the indicated Halo-WIPI2B construct (mean ± SEM; n ≥ 17 neurons from three biological replicates for each condition). ****p<0.0001; ns p>0.05 by Kruskal-Wallis ANOVA test with Dunn’s multiple comparisons test. (H) Mean intensity profiles of mCh-ATG5 (red), Halo-WIPI2B WT (blue), and GFP-LC3B (green) for productive AVs (mean ± SEM; n = 6 biogenesis events from five neurons from three biological replicates). Vertical dashed line indicates the half-maximum of GFP-LC3B intensity, which was used to align the traces.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Quantitative real-time PCR of autophagosome biogenesis components in brain from aged versus young adult mice (n = 4 biological replicates for each age). The fold-change in target gene expression level (ΔΔCt) was determined by normalization to two separate reference genes, phosphoglycerate kinase 1 (Pgk1) (A) and ribosomal protein, large P0 (Rplp0) (B). The official mouse Wipi3 gene name is Wdr45b; the official mouse Wipi4 gene name is Wdr45; and the official mouse Lc3b gene name is Map1lc3b. (C) Immunoblots of brain or DRG lysates from young, young adult, aged, and advanced mice (n = 3 biological replicates shown for each age). Total protein was used as a loading control (normalization factor indicated below each blot as a percentage). Equal total protein was loaded in each lane for each lysate type (40 μg per lane for brain, 30 μg per lane for DRG). (D–E) Quantification of immunoblots for brain (D) and DRG (E) lysates, normalized first to total protein, then to one mo levels (n = 6 biological replicates for each age, 3 male and three female mice). *p<0.05 between indicated groups by one-way ANOVA with Tukey’s post-hoc analysis; all other groups within one target and lysate type are not significantly different by one-way ANOVA with Tukey’s post-hoc analysis.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Immunoblots of brain or DRG lysates from young, young adult, aged, and advanced aged mice (n = 3 biological replicates shown for each age, blots were repeated on another set of 3 biological replicates for each age). Total protein was used as a loading control (normalization factor indicated below each blot as a percentage). Equal total protein was loaded in each lane for each lysate type (40 μg per lane for brain, 30 μg per lane for DRG).
 
 First we confirmed the importance of WIPI2 in autophagosome biogenesis in primary neurons. Depletion of WIPI2 by RNAi (Figure 6B) did not alter rates of AV initiation (determined by mCh-ATG5 puncta generation) (Figure 6C), but led to a significant deficit in autophagosome biogenesis, which was fully restored by expression of an RNAi-resistant human Halo-WIPI2B construct (Figure 6D). WIPI2 binds PI3P via a conserved FRRG motif (Baskaran et al., 2012; Dove et al., 2004; Gaugel et al., 2012; Jeffries et al., 2004; Krick et al., 2006; Proikas-Cezanne et al., 2007; Proikas-Cezanne et al., 2004; Watanabe et al., 2012). This interaction can be abolished by mutating the positively charged arginine residues in the motif to uncharged threonine residues (FTTG) (Figure 6A) (Dooley et al., 2014). Overexpression of Halo-WIPI2B(FTTG) was unable to rescue the deficit, consistent with a key role for phosphoinositide signaling in autophagosome biogenesis (Figure 6D). WIPI2B also interacts with ATG16L1, an essential component of the LC3 conjugation complex. The interaction between WIPI2B and ATG16L1 can be abrogated by switching a positively charged arginine to a negatively charged glutamate (R108E) in WIPI2B (Dooley et al., 2014). Ectopic expression of Halo-WIPI2B(R108E) in WIPI2-depleted neurons from young adult mice did not affect rates of AV initiation but did not rescue the deficit in the rates of formation of GFP-LC3B-positive autophagosomes (Figure 6C–D). Furthermore, overexpression of the WIPI2 paralog SNAP-WIPI1A was also unable to compensate for the loss of WIPI2 in young adult neurons (Figure 6D). These data confirm that WIPI2, including its known functional domains, is required in autophagosome biogenesis in DRG neurons.
 
 Next, we ectopically expressed Halo-tagged WIPI2B in neurons from aged mice. Halo-WIPI2B colocalized with the early autophagosome marker mCh-ATG5 in neurons (Figure 6E, Video 8) and did not affect rates of AV initiation (Figure 6F). Strikingly, ectopic WIPI2B expression increased rates of autophagosome biogenesis in neurons from aged mice from 0.21 AVs per minute to 0.47 AVs per minute (Figure 6G), a rate similar to that observed in neurons from young adult mice (Figure 1B). Furthermore, overexpression of WIPI2B did not alter the kinetics of productive AV biogenesis (Figure 6H). In contrast to wild type WIPI2B, expression of WIPI2B constructs with targeted mutations in either the PI3P or ATG6L1 binding motifs did not restore autophagosome biogenesis in neurons from aged mice (Figure 6F–G). These data suggest that overexpression of WIPI2B in neurons from aged mice restores autophagosome biogenesis and that this rescue requires both the PI3P-binding and ATG16L1-binding functions of WIPI2B.
 
-## WIPI2B phosphorylation is a molecular switch regulating autophagosome biogenesis
+![Video 8.](https://cdn.elifesciences.org/articles/44219/elife-44219-video8.mp4.jpg)
+
+**Video 8.:** GFP-LC3B, mCh-ATG13, and Halo-WIPI2B in the distal neurite of DRGs from aged mice depicting a productive autophagosome biogenesis event. In the merge movie (bottom), arrowhead color denotes colocalization state of the punctum. Retrograde is to the right. Scale bar, 2 μm. Playback at five frames per second. Movie stills are shown in Figure 6E.
+
+### WIPI2B phosphorylation is a molecular switch regulating autophagosome biogenesis
 
 Given that ectopically expressing WIPI2B in neurons from aged mice rescues rates of autophagosome biogenesis, we initially hypothesized that WIPI2 levels decrease in neuronal tissues with age. However, we observed no significant deficits in WIPI2 expression levels at the level of RNA or protein, or those of any of the WIPI family members with age in either whole brain lysates or DRG lysates (Figure 6—figure supplement 1). We also observed no significant changes in expression levels of several other autophagy components (ULK1, P-ULK1, ATG14, P-ATG14, Beclin1, ATG3, ATG5, ATG7, ATG10, ATG16L1, LC3B, LC3A, GABARAP, GABARAPL1, GABARAPL2, p62, WIPI3, and WIPI4) with age in whole brain or DRG lysates (Figure 6—figure supplement 1A and B, Figure 6—figure supplement 2). Additionally, using immunocytochemistry on fixed DRG neurons from aged mice, we observed endogenous WIPI1 and WIPI2 localized to stalled AVs (Figure 5—figure supplement 1F–G). These results indicate that the decrease in autophagosome biogenesis with age is not due to an age-related loss of WIPI2 or its paralogs and that endogenous WIPIs can be recruited to stalled AVs in neurons from aged mice.
 
 Next we looked to post-translational modification of WIPI2. WIPI2B is known to be phosphorylated at serine 395 (S413 in WIPI2A) (Hsu et al., 2011; Wan et al., 2018), although the mechanistic effects of this phosphorylation have not been fully explored. We used two independent phosphorylation-sensitive antibodies (Figure 7—figure supplement 1A,C and D) to confirm that phosphorylated WIPI2 is found in neuronal tissues (Figure 7A). Additionally, we confirmed that we could detect phospho-WIPI2 on AVs in DRG distal neurites by immunocytochemistry (Figure 7B, Figure 5—figure supplement 1H). Our data (Figure 7—figure supplement 1B) agreed with a previous report (Wan et al., 2018) that phosphorylation of WIPI2B at serine 395 does not affect its ability to bind to PI3P or Atg16L1. Next, we asked how WIPI2 phosphorylation affects autophagosome biogenesis. We ectopically expressed a RNAi-resistant nonphosphorylatable construct, Halo-WIPI2B(S395A), or a RNAi-resistant phospho-mimetic construct, Halo-WIPI2B(S395E), in WIPI2-depleted neurons from young adult mice. Similar to our previous results, overexpression of Halo-WIPI2B constructs did not affect rates of AV initiation (Figure 7C). We found that the phospho-dead construct, Halo-WIPI2B(S395A), rescued rates of autophagosome biogenesis similar to the wild type Halo-WIPI2B construct. In contrast, overexpression of the phospho-mimetic construct, Halo-WIPI2B(S395E), did not restore rates of autophagosome biogenesis in WIPI2-depleted neurons from young adult mice (Figure 7D). When we expressed these constructs in neurons from aged mice, we obtained similar results; the phospho-dead construct, Halo-WIPI2B(S395A), restored the rate of autophagosome biogenesis in neurons from aged mice, while the phospho-mimetic construct, Halo-WIPI2B(S395E), did not (Figure 7E). We did not detect differences in the levels of overexpression for the different Halo-WIPI2B constructs or changes in overexpression of ectopic Halo-WIPI2B constructs with age (Figure 7—figure supplement 1E). These data suggest that WIPI2 must be dephosphorylated to enable productive AV biogenesis.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig7-v1.jpg)
+
+**Figure 7.:** (A) Immunoblot of whole brain or DRG lysates from aged mice demonstrates p-WIPI2 can be detected with two different phospho-WIPI2 antibodies. (B) Representative maximal projection immunocytochemistry micrograph of LC3B and phospho-WIPI2 in the distal tip of a DRG neuron from a young adult mouse. Arrowheads indicate colocalization state on the AV; solid arrowhead indicates puncta with both proteins, while outlined arrowhead designates a different AV with no phospho-WIPI2 colocalized with LC3B. Borders of magnifications of indicated puncta denote channel or colocalization state in merge. Scale bar, 2 μm. (C) Quantification of the rate of AV initiation (mCh-ATG5 puncta) in DRG neurons from young adult mice with WIPI2 siRNA or WIPI2 siRNA with indicated RNAi-resistant Halo-WIPI2B constructs (mean ± SEM; n ≥ 17 neurons from three biological replicates for each siRNA condition). ns (not significant) p>0.05 by Kruskal-Wallis ANOVA test with Dunn’s multiple comparisons test. (D) Quantification of the rate of AV biogenesis (GFP-LC3B puncta) in DRG neurons from young adult mice with WIPI2 siRNA or WIPI2 siRNA with indicated RNAi-resistant Halo-WIPI2B constructs (mean ± SEM; n ≥ 17 neurons from three biological replicates for each siRNA condition). ns (not significant) p>0.05; ***p=0.0001; ****p<0.0001 by Kruskal-Wallis ANOVA test with Dunn’s multiple comparisons test. (E) Quantification of the rate of AV biogenesis (marked with GFP-LC3B) in DRG neurons from aged mice with or without overexpression of the indicated Halo-WIPI2B construct (mean ± SEM; n ≥ 23 neurons from three biological replicates for each condition). ****p<0.0001; ns (not significant) p>0.05 by Kruskal-Wallis ANOVA test with Dunn’s multiple comparisons test. Horizontal dashed line indicates rate of AV biogenesis in neurons from young adult mice. (F) Quantification of AV area change with or without recruitment of Halo-WIPI2B(S395E) (mean ± SEM; n ≥ 24 AVs from 14 neurons from three biological replicates). ****p<0.0001 by Mann-Whitney test. (G) Individual AV area profiles were averaged to improve signal-to-noise of GFP-LC3B puncta that were positive (blue) or negative (black) for Halo-WIPI2B(S395E) (mean ± SEM; n ≥ 25 AVs from ≥17 neurons from three biological replicates). (H) Time series of merge micrographs of GFP-LC3B, mCh-ATG13, and Halo-WIPI2B(S395A) in the distal neurite of a DRG neuron from an aged mouse. (I–J) Time series of merged micrographs of GFP-LC3B, mCh-ATG13, and Halo-WIPI2B(S395E) in the distal neurite of DRG neurons from aged mice depicting AVs that fail to recruit Halo-WIPI2B(S395E) and fail to grow (I) and AVs that do recruit Halo-WIPI2B(S395E) and increase in area (J) during the imaging window. Arrowheads indicate colocalization state on the isolation membrane; solid arrowhead follows one punctum, while outlined arrowhead indicates a second AV. Magnified views of denoted puncta are shown below full micrograph; border color represents channel or colocalization state in merge. Retrograde is to the right. Scale bars, 2 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) WIPI2 CRISPR KO HEK293A cells were transiently transfected with WIPI2B-HA WT or WIPI2B-HA S395A in combination with either empty vector or myc-ULK1 WT. The cells were lysed and subsequently subjected to lambda phosphatase treatment. Sodium orthovanadate was used as a phosphatase inhibitor in control samples. The samples were analyzed by western blot. Vinculin was used as a loading control. (B) GFP-WIPI2 or GFP-WIPI1A constructs were pulled down using GFP-Trap beads from HEK293 cells expressing GFP-WIPI2B WT, GFP-WIPI2B(S395A), GFP-WIPI2B(S395E), GFP-WIPI2A, or GFP-WIPI1A. ATG16L1 was detected by immunoblotting. (C) HeLa-M cells were transiently transfected with Halo-WIPI2B WT, Halo-WIPI2B(S395A), or Halo-WIPI2B(S395E). The cell lysates were analyzed by western blot. (D) HeLa-M cells were transiently transfected with Halo-WIPI2B WT, Halo-WIPI2B(S395A), or Halo-WIPI2B(S395E). Halo-WIPI2B constructs were pulled down using anti-Halo and detected by immunoblotting.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/44219/elife-44219-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Full panels of micrographs depicted in Figure 7I. Time series of micrographs of GFP-LC3B, mCh-ATG13, and Halo-WIPI2B(S395E) in the distal neurite of DRG neurons from aged mice depicting AVs that fail to recruit Halo-WIPI2B(S395E) and fail to grow during the imaging window. Arrowheads indicate colocalization state on the isolation membrane; solid arrowhead follows one punctum, while outlined arrowhead indicates a second AV. Retrograde is to the right. Scale bars, 2 μm.
 
 These results led us to hypothesize that levels of phosphorylated WIPI2 increase with age in neuronal tissues. However, just as we saw with total WIPI2 levels, we did not see an overall change in phosphorylated WIPI2 protein with age in either whole brain or DRG lysates (Figure 6—figure supplement 1C–E). These results suggest that WIPI2 may be found in its phosphorylated form throughout the cytosol and only transiently dephosphorylated at the isolation membrane, masking any functional age-related change in WIPI2 phosphorylation in bulk assays. This hypothesis is consistent with our data indicating that stalled and productive AVs occur in the same axonal tip (Figure 3—figure supplement 1, Video 6), suggesting that AV stalling results from a highly localized defect.
 
@@ -133,23 +221,663 @@ Misregulation of autophagy has been implicated in many neurodegenerative disease
 
 ## Materials and methods
 
-## Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>GFP-LC3B</td>
+      <td>RIKEN BioResource Center in Japan; PMID: 14699058</td>
+      <td>RRID:IMSR_RBRC00806</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Cat # 000664; RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>Gibco (ThermoFisher)</td>
+      <td>Cat # R70507</td>
+      <td>Authenticated by STR profiling; tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HeLa-M</td>
+      <td>A. Peden (Cambridge Institute for Medical Research)</td>
+      <td></td>
+      <td>Authenticated by STR profiling; tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>mCherry-ATG13</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Subcloned from RRID:Addgene_22875</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>mCherry-ATG5</td>
+      <td>Addgene; PMID:16645637</td>
+      <td>RRID:Addgene_13095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>Halo-ATG5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Subcloned from RRID:Addgene_13095</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>SNAP-ATG9</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Subcloned from RRID:Addgene_60609</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>Halo-ATG9</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Subcloned from RRID:Addgene_60609</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>SNAP-WIPI1A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Subcloned from RRID:Addgene_38272</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Halo-DFCP1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Subcloned from RRID:Addgene_38269</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>mScarlet-LC3A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Subcloned from RRID:Addgene_73946</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>mCherry-GABARAP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Subcloned from RRID:Addgene_73948</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>mCherry-GEC1(GABARAPL1)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Subcloned from RRID:Addgene_73945</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>mCherry-GATE16(GABARAPL2)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Subcloned from RRID:Addgene_73518</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>SNAP-WIPI2B WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Subcloned from GFP-WIPI2B, PMID: 24954904</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>Halo-WIPI2B WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Subcloned from GFP-WIPI2B, PMID: 24954904</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>SNAP-WIPI2B (FTTG)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Generated via quick change from SNAP-WIPI2B WT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>Halo-WIPI2B (FTTG)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Generated via quick change from Halo-WIPI2B WT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>SNAP-WIPI2B (R108E)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Generated via quick change from SNAP-WIPI2B WT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>Halo-WIPI2B (R108E)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Generated via quick change from Halo-WIPI2B WT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>SNAP-WIPI2B (S395A)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Generated via quick change from SNAP-WIPI2B WT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>Halo-WIPI2B (S395A)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Generated via quick change from Halo-WIPI2B WT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>SNAP-WIPI2B (S395E)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Generated via quick change from SNAP-WIPI2B WT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>Halo-WIPI2B (S395E)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Generated via quick change from Halo-WIPI2B WT</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Actin, Mouse Polyclonal</td>
+      <td>EMD Millipore</td>
+      <td>Cat # MAB1501; RRID:AB_2223041</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG10, Rabbit Polyclonal</td>
+      <td>Novus</td>
+      <td>Cat # NBP2-38524</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG12, Rabbit Polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab155589</td>
+      <td>ICC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG13, Rabbit Polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab105392; RRID:AB_10892365</td>
+      <td>ICC (1:50), IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG14, Rabbit Monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 96752; RRID:AB_2737056</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG16L1, Rabbit Monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab187671</td>
+      <td>WB (1:1000), ICC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG3, Rabbit Monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab108251; RRID:AB_10865145</td>
+      <td>WB (1:3000), ICC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG5, Rabbit Monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab108327; RRID:AB_2650499</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG5-Alexa647, Rabbit Monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab206715</td>
+      <td>ICC (1:50 ON)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG7, Rabbit Monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab133528; RRID:AB_2532126</td>
+      <td>WB (1:1000), ICC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG9, Armenian Hamster Monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab187823</td>
+      <td>ICC (1:100), IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG9-Alexa488, Rabbit Monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab206252</td>
+      <td>ICC (1:50 ON)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Beclin1 (BECN1), Mouse Monoclonal</td>
+      <td>Santa Cruz</td>
+      <td>Cat # sc-48341; RRID:AB_626745</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GABARAP, Rabbit Monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 13733; RRID:AB_2798306</td>
+      <td>WB (1:1000), ICC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH, Mouse Monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab9484; RRID:AB_307274</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GABARAPL1 (GEC1), Rabbit Monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 26632; RRID:AB_2798928</td>
+      <td>WB (1:1000), ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GABARAPL2 (GATE16), Rabbit Polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab137511</td>
+      <td>ICC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GABARAPL2 (GATE16), Rabbit Monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 14256; RRID:AB_2798436</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GABARAPs, Rabbit Monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab109364; RRID:AB_10861928</td>
+      <td>ICC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Halo, Mouse Monoclonal</td>
+      <td>Promega</td>
+      <td>Cat # G9211</td>
+      <td>WB (1:500), IP (3 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP90, Rabbit Monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 4877; RRID:AB_2233307</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LC3, Rabbit Polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab48394; RRID:AB_881433</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LC3A, Rabbit Monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 4599; RRID:AB_10548192</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LC3B, Mouse Monoclonal</td>
+      <td>Santa Cruz</td>
+      <td>Cat # sc-376404; RRID:AB_11150489</td>
+      <td>WB (1:100), ICC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MEK1/2, Rabbit Monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 8727; RRID:AB_10829473</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NFH, Chicken Polyclonal</td>
+      <td>Aves</td>
+      <td>Cat # NFH; RRID:AB_2313552</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p62, Mouse Monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab56416; RRID:AB_945626</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-ATG14(S29), Rabbit Polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 13155; RRID:AB_2798133</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-ULK1(S757), Rabbit Polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 6888; RRID:AB_10829226</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-WIPI2(S395), Rabbit Polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 13571; RRID:AB_2798259</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-WIPI2(S395), Rabbit Polyclonal</td>
+      <td>This paper</td>
+      <td># STO 316PB2</td>
+      <td>WB (1:500), ICC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SV2, Mouse Monoclonal</td>
+      <td>Developmental Studies Hybridoma Bank, University of Iowa</td>
+      <td>Cat # SV2; RRID:AB_2315387</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ULK1, Rabbit Monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 8054; RRID:AB_11178668</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V-type H + ATPase, Rabbit Polyclonal</td>
+      <td>Synaptic Systems</td>
+      <td>Cat # 109–002; RRID:AB_887696</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-WIPI1, Rabbit Polyclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat # PA5-34973; RRID:AB_2552322</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-WIPI2, Mouse Monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab105459; RRID:AB_10860881</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-WIPI3, Mouse IgM Monoclonal</td>
+      <td>Santa Cruz</td>
+      <td>Cat # sc-514194</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-WIPI4, Rabbit Polyclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat # PA5-71803; RRID:AB_2717657</td>
+      <td>WB (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Chicken IgY-AlexaFluor405, Goat Polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab175674</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG-AlexaFluor405, Goat Polyclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat # A31553; RRID:AB_221604</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Armenian Hamster-AlexaFluor647, Goat Polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab173004; RRID:AB_2732023</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit-AlexaFluor488,Goat Polyclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat # A11034; RRID:AB_2576217</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Armenian Hamster-AlexaFluor488, Goat Polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab173003</td>
+      <td>ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG-AlexaFluor546, Donkey Polyclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat # A10040; RRID:AB_2534016</td>
+      <td>ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG-AlexaFluor546, Donkey Polyclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat # A10036; RRID:AB_2534012</td>
+      <td>ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG-AlexaFluor647, Donkey Polyclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat # A31573; RRID:AB_2536183</td>
+      <td>ICC (1:200), IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG-IRDye 800CW, Donkey Polyclonal</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat # 926–32213; RRID:AB_621848</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG-IRDye 800CW, Donkey Polyclonal</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat # 926–32212; RRID:AB_621847</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgM-IRDye 800CW, Goat Polyclonal</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat # 926–32280</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG-IRDye 680RD, Donkey Polyclonal</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat # 926–68073; RRID:AB_10954442</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG Light Chain-AlexaFluor680, Goat Polyclonal</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat # 115-625-174; RRID:AB_2338937</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ON-TARGET plus SMARTpool Mouse Wipi2 siRNA</td>
+      <td>Dharmacon</td>
+      <td>Cat # L-057690–01</td>
+      <td>Proprietary sequence</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ON-TARGET plus non-targeting siRNA</td>
+      <td>Dharmacon</td>
+      <td>Cat # D-001810–01</td>
+      <td>Proprietary sequence</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNAP-Cell 647-SiR</td>
+      <td>New England Biolabs</td>
+      <td>Cat # S9102S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNAP-Cell TMR-Star</td>
+      <td>New England Biolabs</td>
+      <td>Cat # S9105S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNAP-Cell 430</td>
+      <td>New England Biolabs</td>
+      <td>Cat # S9109S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HaloTag TMR</td>
+      <td>Promega</td>
+      <td>Cat # G8251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>silicon-rhodamine-Halo</td>
+      <td>K. Johnsson, École Polytechnique Federale de Lausanne</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JF646-Halo</td>
+      <td>Luke Lavis, Janelia Farms (HHMI)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>α-Bungarotoxin-tetramethylrhodamine</td>
+      <td>Sigma</td>
+      <td>T0195</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity</td>
+      <td>PerkinElmer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>PMID: 22743772</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 6, Prism 8</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator CS4</td>
+      <td>Adobe Systems</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 GFP-LC3B transgenic mice (strain: B6.Cg-Tg(CAG-EGFP/LC3)53Nmi/NmiRbrc) were generated by N. Mizushima (Tokyo Medical and Dental University, Tokyo, Japan; Mizushima et al., 2004) and obtained from RIKEN BioResource Center in Japan. These mice were bred with C57BL/6J mice obtained from The Jackson Laboratory. Hemizygous and wild type littermates were used in experiments. Constructs used include: mCherry-ATG13 (subcloned from Addgene 22875), mCherry-ATG5 (Addgene 13095), Halo-ATG5 (subcloned from Addgene 13095), SNAP-ATG9 and Halo-ATG9 (subcloned from Addgene 60609), SNAP-WIPI1A (subcloned from Addgene 38272), Halo-DFCP1 (subcloned from Addgene 38269), mSarlet-LC3A (subcloned from Addgene 73946), mCherry-GABARAP (subcloned from Addgene 73948), mCherry-GEC1 (GABARAPL1, subcloned from Addgene 73945), and mCherry-GATE16 (GABARAPL2, subcloned from Addgene 73518). SNAP-WIPI2B and Halo-WIPI2B were subcloned from GFP-WIPI2B (Dooley et al., 2014). SNAP- and Halo- WIPI2B(FTTG), WIPI2B(R108E), WIPI2B(S395A), and WIPI2B(S395E) were generated via quick change and subcloned into original plasmids. The SNAP backbone was originally obtained from New England Biolabs (NEB), and the Halo backbone was originally obtained from Promega.
 
-## Primary neuron culture
+### Primary neuron culture
 
 DRG neurons were isolated as previously described (Perlson et al., 2009) and cultured in F-12 Ham’s media (Invitrogen) with 10% heat-inactivated fetal bovine serum, 100 U/mL penicillin, and 100 μg/mL streptomycin. For live-cell microscopy, DRGs were isolated from P21-28 (young), P90-120 (young adult), P480-540 (aged), or P730-760 (advanced aged) mice and plated on glass-bottomed dishes (MatTek Corporation) and maintained for 2 days at 37°C in a 5% CO2 incubator. Prior to plating, neurons were transfected with a maximum of 0.6 μg total plasmid DNA using a Nucleofector (Lonza) using the manufacturer’s instructions. Relevant siRNA was co-transfected with plasmid DNA (25 pmol ON-TARGET plus SMARTpool Wipi2 siRNA, L-057690–01 from Dharmacon). For imaging experiments with siRNA, control neurons were transfected with 30 pmol Cy5-labeled non-targeting siRNA (Dharmacon) per dish and experimental neurons were co-transfected with 5 pmol Cy5-labeled non-targeting siRNA (Dharmacon) to identify which neurons received siRNA. For biochemistry siRNA experiments, control neurons were transfected with 25 pmol ON-TARGET plus non-targeting siRNA (D-001810–01 from Dharmacon). Microscopy was performed in low fluorescence nutrient media (Hibernate A, BrainBits) supplemented with 2% B27 and 2 mM GlutaMAX. For nucleofected constructs that yielded Halo- or SNAP-tagged proteins, DRG neurons were incubated with 100 nM of the appropriate Halo or SNAP ligand (SNAP-Cell 647-SiR, SNAP-Cell TMR-Star, or SNAP-Cell 430 from NEB; HaloTag TMR Ligand from Promega, silicon-rhodamine-Halo ligand from K. Johnsson, École Polytechnique Federale de Lausanne, Lausanne, Switzerland, or JF646-Halo ligand from Luke Levis, Janelia Farms, HHMI) for at least 30 min at 37°C in a 5% CO2 incubator. After incubation, DRGs were washed three times with complete equilibrated F-12 media, with the final wash remaining on the DRGs for at least 15 min at 37°C in a 5% CO2 incubator.
 
 Mice of either sex within the indicated postnatal range (1 month, 3 months, 16–17 months or 24 months) were euthanized prior to dissection. All animal protocols were approved by the Institutional Animal Care and Use Committee at the University of Pennsylvania.
 
-## Live-Cell imaging and image analysis
+### Live-Cell imaging and image analysis
 
 Microscopy was performed on a spinning-disk confocal (UltraVIEW VoX; PerkinElmer) microscope (Eclipse Ti; Nikon) with an Apochromat 100x, 1.49 NA oil immersion objective (Nikon) at 37°C in an environmental chamber. The Perfect Focus System was used to maintain Z position during time-lapse acquisition. Digital micrographs were acquired with an EM charge-coupled device camera (C9100; Hammamatsu Photonics) using Volocity software (PerkinElmer). Time-lapse videos were acquired for 10 min with a frame every 3 s to capture autophagosome biogenesis. Multiple channels were acquired consecutively, with the green (488 nm) channel captured first, followed by red (561 nm), far-red (640 nm), and blue (405 nm). DRGs were selected for imaging based on morphological criteria and low expression of transfected constructs. To minimize artifacts from overexpression, neurons within a narrow range of low fluorescence intensity were chosen for imaging, ensuring the analyzed neurons expressed low levels of the ectopic tagged proteins.
 
 Time-lapse micrographs were analyzed with FIJI (Schindelin et al., 2012). ‘Stalled’ biogenesis events were defined as mCherry-ATG13, mCherry-ATG5, or Halo-ATG5 puncta that remained visible for at least 5 min. ‘Productive’ biogenesis events were defined as mCherry-ATG13, mCherry-ATG5, or Halo-ATG5 puncta that persisted for less than 5 min and recruited GFP-LC3B.
 
-## Biochemistry
+### Biochemistry
 
 Brains or DRGs of non-transgenic mice were dissected and subsequently homogenized and lysed. Brains were homogenized individually in RIPA buffer [50 mM NaPO4, 150 mM NaCl, 1% Triton X-100, 0.5% deoxycholate, 0.1% SDS, 1x complete protease inhibitor mixture (Roche), and 1x Halt protease and phosphatase inhibitor cocktail (Thermo)]. DRGs were homogenized in RIPA buffer with a 1.5 mL pestle. Homogenized samples were lysed for 30 min on ice. For the siRNA and overexpression controls, isolated DRGs were plated at 120,000 neurons per 35 mm dish as described above for 2 DIV. For the Halo-WIPI2B overexpression controls, where indicated, neurons were treated with 100 nM BaflomycinA1 (BafA) for 4 hr prior to lysis. Neurons were washed with PBS (50 mM NaPO4, 150 mM NaCl, pH 7.4) and then lysed as above.
 
@@ -159,15 +887,15 @@ All western blots were analyzed with Image Studio (Li-Cor). Total protein was us
 
 For brain lysate cytosolic and membrane fractions, brains were dissected from non-transgenic mice and subsequently homogenized and lysed. Brains were homogenized individually in Motility Assay Buffer (MAB) [10 mM PIPES, 50 mM K-Acetate, 4 mM MgCl2, 1 mM EGTA, 2 mM PMSF, 210 μM leupeptin, 1.5 μM pepstatin-A, 52.8 μM N-p-Tosyl-L-arginine methyl ester, 20 mM DTT, and 1x Halt protease and phosphatase inhibitor cocktail (Thermo)]. The homogenate was spun at 17,000 x g for 30 min at 4°C. The resultant supernatant was then spun 95,000 x g for 20 min at 4°C. The supernatant was the cytosolic fraction, and the pellet was resuspended in an equal volume of MAB.
 
-## Cell culture and immunoprecipitation
+### Cell culture and immunoprecipitation
 
 HeLa-M (A. Peden, Cambridge Institute for Medical Research) and HEK293 (ThermoFisher, R70507) cells were cultured in complete medium (DMEM supplemented with 10 fetal bovine serum and 2 mM GlutaMAX). Lipofectamine 2000 (Invitrogen) and FuGENE (Promega) were used to transiently transfect HEK293 and HeLa-M cells, respectively. Immunoprecipitation was performed 24 hr after transfection. Cells were permeabilized with TNTE buffer (20 mM Tris HCl, pH 7.5, 150 mM NaCl, 1% triton TX-100, 5 mM EDTA, and 1X Halt Phosphatase and Protease Inhibitor, ThermoFisher). The HeLa-M lysates were immunoprecipitated with 3 μg mouse monoclonal Anti-Halo (Promega, G9211) and Dynabeads Protein G (Invitrogen). The immunoprecipitated sample was cleaved from the Dynabeads by boiling in Orange Protein Loading Buffer (Li-Cor). GFP-labeled proteins ectopically expressed in HEK293 cells were immunoprecipitated with GFP-Trap beads. The HEK293 cells were routinely tested for mycoplasma and authenticated by STR (short tandem repeat) profiling by The Francis Crick Cell Services. HEK293 cells were used because they are of human origin, fast growing, easy to transfect, and express ectopic proteins without high toxicity. The HeLa cells were routinely tested for mycoplasma using the MycoAlert detection kit (Lonza, LT07) and authenticated by STR profiling using the GenePrint 10 system (Promega, B9510) at the University of Pennsylvania Perelman School of Medicine DNA Sequencing Facility.
 
-## Quantitative Real-Time PCR (qPCR) cDNA isolation from whole brain
+### Quantitative Real-Time PCR (qPCR) cDNA isolation from whole brain
 
 Whole brains were collected from euthanized non-transgenic 3-month-old or 16–17 month-old mice and immediately frozen at −80°C. Brains were homogenized in 2 mL TRIzol reagent (ThermoFisher Scientific, 15596018). 2 mL TRIzol reagent and 800 μL chloroform were added after homogenization. Solution was vortexed for 15 s, incubated at room temperature for 5 min, and centrifuged at 12,000 x g for 15 min at 4°C. Clear aqueous phase was mixed with one volume of 200 proof ethanol. Mixture was transferred to Zymo Quick-RNA miniprep kit (Zymo Research, R1057). Total RNA was immediately transferred to Polytract mRNA Isolation System III (Promega, Z5310) to isolate mRNA. Isolated mRNA was immediately transformed into cDNA using M-MuLV Reverse Transcriptase (New England Biolabs (NEB), M0253L; other NEB reagents: S1330S, M0314S). Nucleic acid concentration and purity was monitored throughout isolation.
 
-## qPCR
+### qPCR
 
 10 ng total cDNA was added to a 50 μL qPCR reaction with Luna Universal qPCR Master Mix (NEB, M3003G). Each biological sample was loaded in triplicate into qPCR plate. All biological samples for each gene tested were loaded into a single qPCR plate (Phenix Research Products, MPC-3425 and LMT-RT2), with a reference gene loaded into the same qPCR plate. All primers were initially identified through Primer Bank (https://pga.mgh.harvard.edu/primerbank/index.html) (Spandidos et al., 2010; Spandidos et al., 2008; Wang, 2003; Wang et al., 2012). Primers were optimized to have melting temperatures at 62°C and tested to ensure appropriate dynamic range. Final qPCR primers used were:
 
@@ -213,21 +941,21 @@ Atg2a Rev (5’-CTGGATGCAGCTGTGTCACGATGG).
 
 qPCR was performed on a QuantStudio 3 Real-Time PCR System (ThermoFisher Scientific) controlled by QuantStudio Design and Analysis Software (ThermoFisher Scientific). Normalized target gene expression level is 2^ΔΔCt for each gene relative to the indicated reference gene.
 
-## Immunofluorescence
+### Immunofluorescence
 
-## Immunocytochemistry
+#### Immunocytochemistry
 
 DRGs were isolated, plated, and cultured as described above. At 2 DIV, DRGs were fixed in pre-warmed 4% paraformaldehyde (Affymetrix) with 4% sucrose in PBS for 8 min at room temperature. Neurons were washed twice with 1X PBS, then incubated in ice-cold 100% methanol at −20°C for 8 min. Neurons were washed twice with 1X PBS, then incubated in detergent-free Cell Block (1X PBS with 1% BSA and 5% normal goat serum) for one hour at room temperature. DRGs were then incubated in Cell Block containing primary antibodies for one hour at room temperature. After three 5-min washes in 1X PBS, DRGs were incubated in Cell Block containing secondary antibodies for one hour at room temperature. For primary antibodies conjugated to fluorophores, DRGs were incubated in Cell Block containing conjugated primary antibodies overnight at 4°C. DRGs were washed three additional times in 1X PBS, then once with ddH2O. DRGs were then mounted in Prolong Gold, cured overnight in the dark at room temperature, and assessed by spinning disk confocal microscopy. See Table for antibodies used.
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 Extensor digitorum longus (EDL) muscles were dissected from 3-month-old or 16–17 month old non-transgenic mice. EDL muscles were subsequently immersion-fixed in 2% paraformaldehyde (Affymetrix) for 12 min at room temperature. After three washes in 1X PBS, EDL muscles were incubated in 10 μg/mL α-Bungarotoxin-tetramethylrhodamine (TMR-α-Btx, Sigma T0195) for 15 min at room temperature. After three 10-min washes in 1X PBS, EDL muscles were incubated in ice-cold 100% methanol for 5 min at −20°C. EDL muscles were rinsed in 1X PBS, followed by three 10-min washes in 1X PBS. EDL muscles were then incubated in detergent-free Block (1X PBS with 2% BSA) for 2 hours at room temperature. EDLs were then incubated in primary antibodies in detergent-free block overnight at room temperature. After three 10-min washes in detergent-free Block, EDLs were incubated in secondary antibodies in detergent-free Block for four hours at room temperature. EDLs were washed three times for 10 min per wash in 1X PBS. EDLs were mounted in VectaShield (Vector Labs) and assessed by spinning disk confocal microscopy. See Table for antibodies used.
 
-## Electron microscopy
+### Electron microscopy
 
 DRGs from non-transgenic mice were isolated as above and plated as spot cultures on glass-bottomed dishes (MatTek Corporation) and maintained for 2 days at 37°C in a 5% CO2 incubator. DRGs were fixed with 2.5% glutaraldehyde, 2.0% paraformaldehyde in 0.1M sodium cacodylate buffer, pH 7.4, overnight at 4°C. For NMJs, non-transgenic mice were euthanized and subsequently perfused with 2.5% glutaraldehyde, 2.0% paraformaldehyde in 1X PBS. EDL muscles were dissected and post-fixed in 2.5% glutaraldehyde, 2.0% paraformaldehyde in 1X PBS overnight at 4°C. EDL muscles were further post-fixed in 2.5% glutaraldehyde, 2.0% paraformaldehyde in 0.1M sodium cacodylate buffer, pH 7.4. Fixed DRGs and NMJs were then transferred to the Electron Microscopy Resource Laboratory at the University of Pennsylvania, where all subsequent steps were performed. After subsequent buffer washes, the samples were post-fixed in 2.0% osmium tetroxide for 1 hr at room temperature and then washed again in buffer, followed by dH2O. After dehydration through a graded ethanol series, the tissue was infiltrated and embedded in EMbed-812 (Electron Microscopy Sciences, Fort Washington, PA). Thin sections were stained with lead citrate and examined with a JEOL 1010 electron microscope fitted with a Hamamatsu digital camera and AMT Advantage image capture software. Regions between DRG cell body densities with maximum neurite invasion were chosen for imaging.
 
-## Additional methods
+### Additional methods
 
 All image analysis was performed on raw data. Images were prepared in FIJI (Schindelin et al., 2012); contrast and brightness were adjusted equally to all images within a series. Figures were assembled in Adobe Illustrator. Prism 6 (GraphPad) was used to plot graphs and perform statistical tests. Prism 8 (GraphPad) was used to plot graphs and perform statistical tests for Figure 4G–I. Statistical tests are indicated in the text and figure legends.
 

@@ -39,7 +39,7 @@
 
 ## Abstract
 
-10.7554/eLife.44423.001 In amyotrophic lateral sclerosis (ALS) spinal motor neurons (SpMN) progressively degenerate while a subset of cranial motor neurons (CrMN) are spared until late stages of the disease. Using a rapid and efficient protocol to differentiate mouse embryonic stem cells (ESC) to SpMNs and CrMNs, we now report that ESC-derived CrMNs accumulate less human (h)SOD1 and insoluble p62 than SpMNs over time. ESC-derived CrMNs have higher proteasome activity to degrade misfolded proteins and are intrinsically more resistant to chemically-induced proteostatic stress than SpMNs. Chemical and genetic activation of the proteasome rescues SpMN sensitivity to proteostatic stress. In agreement, the hSOD1 G93A mouse model reveals that ALS-resistant CrMNs accumulate less insoluble hSOD1 and p62-containing inclusions than SpMNs. Primary-derived ALS-resistant CrMNs are also more resistant than SpMNs to proteostatic stress. Thus, an ESC-based platform has identified a superior capacity to maintain a healthy proteome as a possible mechanism to resist ALS-induced neurodegeneration.
+In amyotrophic lateral sclerosis (ALS) spinal motor neurons (SpMN) progressively degenerate while a subset of cranial motor neurons (CrMN) are spared until late stages of the disease. Using a rapid and efficient protocol to differentiate mouse embryonic stem cells (ESC) to SpMNs and CrMNs, we now report that ESC-derived CrMNs accumulate less human (h)SOD1 and insoluble p62 than SpMNs over time. ESC-derived CrMNs have higher proteasome activity to degrade misfolded proteins and are intrinsically more resistant to chemically-induced proteostatic stress than SpMNs. Chemical and genetic activation of the proteasome rescues SpMN sensitivity to proteostatic stress. In agreement, the hSOD1 G93A mouse model reveals that ALS-resistant CrMNs accumulate less insoluble hSOD1 and p62-containing inclusions than SpMNs. Primary-derived ALS-resistant CrMNs are also more resistant than SpMNs to proteostatic stress. Thus, an ESC-based platform has identified a superior capacity to maintain a healthy proteome as a possible mechanism to resist ALS-induced neurodegeneration.
 
 ## Introduction
 
@@ -57,17 +57,25 @@ In this work we employed SpMN and CrMN direct programming strategies to investig
 
 ## Results
 
-## Reduced hSOD1 accumulation in ALS-resistant motor neurons
+### Reduced hSOD1 accumulation in ALS-resistant motor neurons
 
 To investigate if the ALS-resistant CrMNs maintain a healthier proteome than SpMNs, we compared aggregation of misfolded hSOD1 within these populations in the SOD1 G93A mouse model. To reduce variability from perfusion and staining artifacts, we compared oculomotor/trochlear motor neurons (O/TrMNs) and lumbar SpMNs from segments 4–5 (L4-5) within the same mice. Samples were immunostained with an antibody that specifically recognizes human misfolded SOD1 protein (C4F6) (Urushitani et al., 2007; Bosco et al., 2010) and an antibody against choline acetyltransferase (ChAT) to identify motor neurons in postnatal day 100 (P100) SOD1 G93A mice.
 
 Interestingly, we found that a third of all SpMNs (34 ± 4.2% [mean ± SEM]; 195 motor neurons from three mice) contain aggregates of misfolded hSOD1 while, by contrast, we were unable to detect any aggregation within O/TrMNs (328 motor neurons from three mice) (Figure 1A and B). Additionally, O/TrMNs exhibited strikingly lower overall levels of misfolded hSOD1 compared to SpMNs, necessitating imaging under 5–10 times higher confocal laser intensity. Imaging the SpMNs at the same intensity produced an image with fully saturated motor neurons (Figure 1—figure supplement 1A). This result is consistent with the recent observation of little or no aggregation in eye-innervating CrMNs in the G85R SOD1YFP mice (Thomas et al., 2018). These data suggest that ALS-resistant CrMNs might be more capable than SpMNs of clearing misfolded hSOD1 and thus mitigating ALS-induced proteostatic stress. To further investigate this possibility, we sought to establish culture and differentiation conditions for CrMNs and SpMNs to model and understand the intrinsic mechanisms that contribute to motor neurons’ differential ability to resist ALS-induced stress.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44423/elife-44423-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative images of oculomotor neurons and lumber 4–5 SpMNs from P100 hSOD1 G93A mice. Motor neurons were stained by ChAT antibody in red. hSOD1 aggregates were present in SpMNs and stained by misfolded hSOD1 antibody in green. Confocal laser intensity used for imaging misfolded human SOD1 was 2% in oculomotor neurons and 0.2% in lumber SpMNs (laser intensity for ChAT imaging was same for both motor neuron types). hSOD1 staining in lumber SpMNs with 2% laser intensity is available in Figure 1—figure supplement 1 (A). (B) Quantification of percentage of cells containing hSOD1 aggregates in oculomotor neurons and SpMNs from hSOD1 G93A mice (n = 3 animals, m = 40 ~ 100, mean ± SD). (C) Schematic diagram of isolation of primary motor neurons from E11.5 IslMN:GFP-positive mouse embryos. Primary motor neurons were dissected, dissociated and isolated using fluorescence-activated cell sorting (FACS). (D) Experimental outline of primary motor neuron survival assay: the number of living cells was measured on days 2, 7 and 14 in vitro (DIV). Primary O/TrMNs survived better than primary SpMNs (n = 4, mean ± SEM). (E) Differentiation scheme of ESCs to motor neurons: isogenic iNIP and iNIL ESCs were differentiated into iCrMNs and iSpMNs, respectively, by direct programming. (F) Experimental outline of ESC to motor neuron differentiation followed by survival assay. (G) iCrMNs survived better than iSpMNs (n = 7–8, mean ± SEM). (H) tSNE plot of single cell RNA sequencing data of Day 2–7 ESC-derived motor neurons and DIV seven primary motor neurons. Same plot labeled by cluster is shown in Figure 1—figure supplement 1 (B). (I) All samples were plotted by PC2 that represents CrMN versus SpMN fates. n = biological replicates; m = number of cells quantified per replicate; statistical analysis was performed by student’s t-test, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44423/elife-44423-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative images of lumber 4–5 SpMNs from P100 hSOD1 G93A mice, stained by misfolded hSOD1 antibody and imaged with confocal laser strengths reflecting the 0.2% laser intensity used to image SpMNs and the same field at the 2.0% laser intensity used to image O/TrMNs. hSOD1 staining of SpMNs imaged with 2% laser strength was highly saturated. (B) Clustering of Day 2–7 ESC-derived motor neurons and DIV seven primary motor neurons by tSNE plot. (C) All samples were plotted by PC1 that represents in vitro versus in vivo origin. (D) CrMN and SpMN fate markers are respectively enriched in ESC-derived iCrMNs and iSpMNs. ESC-derived and primary CrMNs and SpMNs all express motor neuron marker Isl1. CrMN fate markers Phox2a and Phox2b are enriched in iCrMNs and primary O/TrMNs, while SpMN fate markers Lhx3 and Mnx1/Hb9 are enriched in iSpMNs and primary SpMNs.
+
 Since culture conditions to maintain motor neurons were developed for SpMNs, we wanted to establish conditions that will support both SpMNs and CrMNs derived from mouse embryos and ESCs. Maintaining differentiated SpMNs in vitro requires trophic support that is normally provided by co-culture with other cells, typically glia. However, the presence of other cell types in the culture complicates the investigation of cell-autonomous neuronal properties because treatments might act on supporting cells that then affect neuronal physiology. Mixed cultures also complicate and, in some cases, preclude the use of bulk measurements such as RNA sequencing and western blot. Therefore, to study the intrinsic properties of motor neurons, we first established a mono-culture condition that supported both primary CrMNs and SpMNs in vitro.
 
 Primary oculomotor and trochlear motor neurons (O/TrMNs) were dissected and dissociated from embryonic day 11.5 (E11.5) IslMN:GFP transgenic mice (Lewcock et al., 2007), isolated using fluorescence-activated cell sorting (FACS), and plated into 96-well plates (Figure 1C). Survival of primary O/TrMNs and SpMNs was measured on days 7 and 14 in vitro (DIV) and compared to DIV 2 (Figure 1D). With the optimized supplement cocktail [10 ng/mL GDNF, 10 ng/mL BDNF, 10 ng/mL CNTF, 100 μM 3-isobutyl-1-methylxanthine (IBMX) and 10 μM Forskolin], 88% of primary O/TrMNs and 72% of primary SpMNs survived on DIV 7 (Figure 1D). On DIV 14, 71% of primary O/TrMNs and only 42% of primary SpMNs survived. While O/TrMNs resist significantly better the stress associated with tissue dissociation, sorting and culture conditions when compared to SpMNs, both motor neuron types survive without additional cellular support.
 
-## Rapid and efficient ESC-based platform to study differential ALS sensitivity between CrMNs and SpMNs
+### Rapid and efficient ESC-based platform to study differential ALS sensitivity between CrMNs and SpMNs
 
 The O/TrMN is a small population without known unique markers that would allow the isolation of large cell quantities for biochemical studies. To overcome the difficulty of obtaining large numbers of these ALS-resistant motor neurons and to investigate possible cellular features associated with restricting SOD1 protein accumulation and enabling ALS resistance, we adopted an ESC differentiation approach. Direct programming by forced expression of transcription factors NIP (Neurogenin2-Isl1-Phox2a) and NIL (Neurogenin2-Isl1-Lhx3) (Mazzoni et al., 2013) efficiently generates large numbers of iCrMNs and iSpMNs from mouse ESCs respectively (Figure 1E).
 
@@ -79,15 +87,31 @@ Principle component analysis (PCA) suggests that PC1 separated in vitro versus i
 
 Having established differentiation and culture conditions to maintain iCrMNs and iSpMNs, we next sought to test if iCrMNs and iSpMNs reacted differently to the expression of proteins associated with familial ALS. Inspired by the finding that over-expression of mutant hSOD1 induces ALS-like symptoms in mouse (Gurney et al., 1994; Wong et al., 1995), we generated mouse ESC lines expressing high levels of wild type (WT) hSOD1, and hSOD1 with A4V or G93A mutations, both of which are genetic causes of familial ALS (Rosen, 1993; Gurney et al., 1994; Kiskinis et al., 2014). Clones with similar expression levels of the three hSOD1 variants were selected. From these transgenic clones, we derived isogenic inducible-NIP and -NIL (iNIP and iNIL) ESC lines (Mazzoni et al., 2013), which were then differentiated into iCrMN and iSpMNs respectively (Figure 2A,B). iNIP and iNIL ESCs expressed hSOD1 variants at very similar levels (Figure 2C,D and Figure 2—figure supplement 1A). Day 2 iCrMNs and iSpMNs also contained comparable amounts of hSOD1 (Figure 2E,F and Figure 1—figure supplement 1BC). Notably, hSOD1 transgenic expression did not affect neuronal differentiation efficiency and the hSOD1 transgenes were not silenced in iCrMNs or iSpMNs after differentiation (Figure 2G–I).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/44423/elife-44423-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic diagram of generation of ESC-derived motor neurons expressing hSOD1 transgenes: transgenic ESC lines expressing wild type (WT), A4V or G93A hSOD1 were first constructed; from these, isogenic iNIP and iNIL ESC lines were derived and then differentiated into motor neurons by direct programming. (B) Experimental outline: motor neurons were differentiated and quantified by immunocytochemistry on Day 2. Expression of hSOD1 was quantified by western blot in ESCs and Day two neurons. (C) Western blot analysis of ESCs using SOD1 antibody that recognizes both endogenous mouse SOD1 (mSOD1) and exogenous hSOD1 with HA tag. (D) Quantification of the hSOD1 expression between iNIL and iNIP ESCs (n = 3, mean ± SD). (E) Western blot analysis of Day two neurons using SOD1 antibody. iCr: iCrMN; iSp: iSpMN. (F) Quantification of the hSOD1 expression between iSpMNs and iCrMNs (n = 3, mean ± SD). Quantifications of the fold change between exogenous hSOD1 versus endogenous mSOD1 expression in ESCs and neurons are available in Figure 2—figure supplement 1. (G) Representative images of Day two neurons for quantification. All cells were stained by DAPI and neurons were stained by pan-neuronal marker TUBB3. hSOD1 proteins were stained by HA antibody. (H) Quantification of percentage of TUBB3+ cells on Day 2 (n = 3, m =~ 100, mean ± SD). (I) Quantification of percentage of hSOD1-HA+ cells in TUBB3+ neurons on Day 2 (n = 3, m =~ 100, mean ± SD). n = biological replicates; m = number of cells quantified per replicate. β-actin was used as a loading control for normalization in (D) and (F). The dash line represents y = 1. Statistical analysis was performed in log-transformed data by student’s t-test, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44423/elife-44423-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Quantification of the fold change between exogenous hSOD1 versus endogenous mSOD1 expression by western blot using SOD1 antibody in iNIL and iNIP ESCs (n = 3, mean ± SD). (B) Quantification of the fold change between exogenous hSOD1 versus endogenous mSOD1 expression by western blot using SOD1 antibody in Day 2 iCrMNs and iSpMNs (n = 3, mean ± SD). n = biological replicates; statistical analysis was performed in log-transformed data by student’s t-test, *p<0.05, **p<0.01, ***p<0.001.
+
 In summary, we established a rapid and scalable motor neuron differentiation and culture platform that allowed mono-culture of both primary and ESC-derived CrMNs and SpMNs in vitro with excellent short-term survival. iCrMNs and iSpMNs recapitulated the differential survival of primary motor neurons under the same culture conditions, suggesting that ESC-derived motor neurons have the potential to represent intrinsic properties of their counterparts in vivo.
 
-## iCrMNs accumulate less hSOD1 mutant proteins over time than iSpMNs
+### iCrMNs accumulate less hSOD1 mutant proteins over time than iSpMNs
 
 We next investigated whether ESC-derived iCrMNs and iSpMNs would accumulate hSOD1 in vitro by monitoring hSOD1 protein accumulation on Day two and Day 15 by western blot (Figure 3A). Soluble hSOD1 can be extracted by lysing the cells with a detergent-based lysis buffer (RIPA), while misfolded and aggregated hSOD1 tend to remain insoluble. However, insoluble hSOD1 can be solubilized from the remaining precipitate using urea (Kiskinis et al., 2014). As a result, the RIPA fraction is enriched with soluble hSOD1 while the urea fraction is enriched with insoluble hSOD1 aggregates. Mirroring what has been observed in ALS patients and mice with hSOD1 mutations (Da Cruz et al., 2017), over-expressed hSOD1 mutant proteins accumulated in ESC-derived iSpMNs over time (Figure 3B,C). While iCrMNs maintained similar levels of soluble hSOD1 mutant proteins from Day two to Day 15, iSpMNs accumulated over two times more soluble hSOD1 A4V and G93A by Day 15 compared to Day 2 (Figure 3B,C). Moreover, iSpMNs also accumulated ~3 times more insoluble hSOD1 A4V and G93A than iCrMNs on Day 15 (Figure 3B,D). Thus, iCrMNs accumulated less mutant hSOD1 than iSpMNs over time (Figure 3B,D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/44423/elife-44423-fig3-v2.jpg)
+
+**Figure 3.:** (A) Experimental outline: motor neurons were differentiated and the level of hSOD1 was quantified by western blot on Day two and Day 15. (B) Western blot analysis of Day two and Day 15 iCrMNs and iSpMNs using HA antibody. Accumulation of hSOD1 proteins is shown in the soluble (RIPA) and insoluble (urea) fractions. iCr: iCrMN; iSp: iSpMN. (C) Quantification of soluble hSOD1 level between Day 15 and Day two neurons (n = 4, mean ± SD). (D) Quantification of hSOD1 accumulation between iSpMNs and iCrMNs on Day two and Day 15 (n = 4, mean ± SD). β-actin in the soluble fraction was used as a loading control for normalization in (C) and (D). The dash line represents y = 1. n = biological replicates; statistical analysis was performed in log-transformed data by student’s t-test, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44423/elife-44423-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Polysome profiles of Day 0 hSOD1 A4V iCrMNs (A) and iSpMNs (B). (C) The ratios between polysome-associated hSOD1 A4V mRNA and whole hSOD1 A4V mRNA are similar between iCrMNs and iSpMNs, normalized by ribosomal protein RPL19. Two biological replicates are shown with three technical replicates each (mean ± SEM). Statistical analysis was performed in log-transformed data by student’s t-test, *p<0.05, **p<0.01, ***p<0.001.
+
 The differential accumulation of hSOD1 proteins between iCrMNs and iSpMNs was not secondary to cell-specific silencing or upregulation of the transgene as both the hSOD1 A4V and hSOD1 G93A transgenes were expressed at similar levels between iCrMNs and iSpMNs on Day 7, measured by RT-qPCR. The relative expression of hSOD1 A4V compared to beta-actin was 1.17 ± 0.66 in iCrMNs and 1.08 ± 0.38 in iSpMNs (iCrMNs versus iSpMNs p=0.84 by Student’s t-test, n = 3) and the relative expression of hSOD1 G93A compared to beta-actin was 3.29 ± 0.44 in iCrMNs and 3.51 ± 0.56 in iSpMNs (iCrMNs versus iSpMNs p=0.64 by Student’s t-test, n = 3). The translation efficiency of hSOD1 was also similar between iCrMNs and iSpMNs as measured by polysome profiling (Figure 3—figure supplement 1). Therefore, it is likely that iCrMNs have a cell-autonomous mechanism to restrain the accumulation of hSOD1 mutant proteins, and perhaps other misfolded proteins.
 
-## Proteasomal degradation reduces mutant hSOD1 accumulation in iCrMNs
+### Proteasomal degradation reduces mutant hSOD1 accumulation in iCrMNs
 
 The ubiquitin-proteasome system is the prime mechanism to degrade soluble proteins, and involves two discrete and successive steps: covalent modification of the target protein with ubiquitin and subsequent degradation of the tagged protein in the catalytic 20S core of the 26S proteasome (Dantuma and Bott, 2014). To investigate if iCrMNs and iSpMNs use the proteasome pathway differentially to degrade hSOD1 mutant proteins, we compromised the proteasome pathway and measured the amount of hSOD1 accumulation. To avoid pleiotropic toxic effects, we applied a milder treatment of proteasome inhibitor MG-132 than used in previous reports that tested the proteasomal degradation of SOD1 and TDP-43 (Kiskinis et al., 2014; Scotter et al., 2014). Specifically, we treated Day 4 hSOD1 expressing neurons with DMSO (vehicle control) or 100 nM MG-132 for 18 hr. 100 nM of MG-132 reduced proteasome activity by ~30% in both iCrMNs (68.27 ± 10.30% compared to DMSO) and iSpMNs (67.63 ± 9.49% compared to DMSO, iCrMNs versus iSpMNs p=0.47 by Student’s t-test, n = 3). The proteasome activity was measured as the hydrolysis rate of N-succinyl-Leu-Leu-Val-Tyr-7-amido-4-methylcoumarin (Suc-LLVY-AMC) (Meng et al., 1999).
 
@@ -97,7 +121,7 @@ We then compared soluble and insoluble hSOD1 accumulation in the DMSO and MG-132
 
 **Figure 4.:** (A) Experimental outline: motor neurons were differentiated and treated with DMSO or 100 nM MG-132 for 18 hr on Day four followed by western blot analysis on Day 5. (B) Western blot analysis of Day 5 DMSO or MG-132 treated iCrMNs and iSpMNs using HA antibody. Accumulation of hSOD1 proteins is shown in the soluble (RIPA) and insoluble (urea) fractions. iCr, iCrMN; iSp, iSpMN. (C) Quantification of hSOD1 accumulation between MG-132 and DMSO treated neurons (n = 3, mean ± SD). β-actin in the soluble fraction was used as a loading control for normalization. The dashed line represents equal accumulation, y = 1. n = biological replicates; statistical analysis was performed in log-transformed data by Two-way ANOVA and student’s t-test, *p<0.05, **p<0.01, ***p<0.001.
 
-## iCrMNs rely on proteasome function to reduce the accumulation of insoluble protein aggregates
+### iCrMNs rely on proteasome function to reduce the accumulation of insoluble protein aggregates
 
 CrMN resistance to ALS neurodegeneration is not limited to SOD1-linked ALS. It is conceivable that iCrMNs rely more on the proteasome pathway to prevent the accumulation not just of hSOD1, but of insoluble proteins in general. Proteins to be degraded by the proteasome are tagged by ubiquitin, so we next investigated whether reducing proteasome activity would result in widespread accumulation of ubiquitinated proteins in addition to accumulation of mutant hSOD1. To this end, we again treated iCrMNs and iSpMNs with MG-132 and DMSO, but probed the western blot with an anti-ubiquitin antibody (Figure 5A). Following MG-132 treatment, there was a visible increase in ubiquitinated proteins in both iCrMNs and iSpMNs that appeared as a smear of bands in both the soluble and insoluble fractions (Figure 5B). Mirroring the response of hSOD1 mutant proteins, there was significantly greater accumulation of insoluble ubiquitinated proteins in MG-132 treated iCrMNs compared to iSpMNs (Figure 5C). This response to MG-132 treatment was universal across WT, A4V and G93A hSOD1 expressing neurons (13–18 fold and 3–5 fold more ubiquitinated proteins in iCrMNs and iSpMNs respectively). Therefore, we conclude that there is an intrinsic difference between iCrMNs and iSpMNs in their use of the ubiquitin proteasome system to degrade misfolded proteins that would otherwise contribute to insoluble protein aggregates. p62 is a ubiquitin-binding protein and a common component of ubiquitinated inclusions in degenerating SpMNs of ALS patients and mouse models (Seibenhener et al., 2004; Liu et al., 2016; Mizuno et al., 2006; Gal et al., 2007). We investigated if there was concomitant accumulation of p62 with the dramatic increase of insoluble ubiquitinated proteins in MG-132 treated iCrMNs. The mild reduction of proteasome activity resulted in accumulation of more soluble and insoluble p62 proteins in both iCrMNs and iSpMNs, with iSpMNs and iCrMNs accumulating 2–3 fold and 6–10 fold more insoluble p62 protein respectively (Figure 5D,E). Therefore, similar to the response behavior of ubiquitinated proteins, iCrMNs accumulated significantly more insoluble p62 proteins than iSpMNs after MG-132 treatment (Figure 5D,E).
 
@@ -107,7 +131,7 @@ CrMN resistance to ALS neurodegeneration is not limited to SOD1-linked ALS. It i
 
 Overall, a 30% reduction of proteasome activity induced greater accumulation in iCrMNs than in iSpMNs of insoluble hSOD1 mutant proteins, of insoluble ubiquitinated proteins, and of the insoluble ubiquitin-binding protein p62. These results suggest that iCrMNs are, in general, more efficient at proteasomal degradation of misfolded proteins than iSpMNs.
 
-## ESC- and embryonically-derived ALS resistant CrMNs contain fewer p62 protein aggregates than SpMNs
+### ESC- and embryonically-derived ALS resistant CrMNs contain fewer p62 protein aggregates than SpMNs
 
 Efficient proteasomal degradation of misfolded proteins in iCrMNs suggests a higher capability of maintaining protein homeostasis. Thus, we hypothesized that iCrMNs would accumulate less p62 in the insoluble fraction than iSpMNs over time. To test this hypothesis, we quantified the soluble and insoluble p62 levels in Day 15 iCrMNs and iSpMNs by western blot (Figure 6A). While both iCrMNs and iSpMNs accumulate p62 in insoluble aggregates, iSpMNs expressing mutant hSOD1 accumulated significantly more insoluble p62 than iCrMNs (Figure 6B,C). Since p62 aggregation is an indicator of ubiquitinated inclusions, this result additionally supports the concept that iCrMNs are better at maintaining protein homeostasis in culture.
 
@@ -119,9 +143,21 @@ The differential p62 accumulation in ESC-derived motor neurons suggests that ALS
 
 We then asked if the differential accumulation of p62-containing protein aggregates, a typical cytopathological feature of ALS patients and mouse models, could be explained by a differential use of the proteasome degradation pathway similar to what we observed by western blot. To that end, we quantified p62 positive cytoplasmic protein aggregates via immunocytochemistry in DMSO or MG-132 treated iCrMNs and iSpMNs expressing mutant hSOD1 on Day 5 (Figure 6A). Consistent with in vivo observations, more iSpMNs (~15%) exhibited p62-positive cytoplasmic aggregates than did iCrMNs (~5%) (Figure 6F). Interestingly, inhibition of the proteasome by MG-132 treatment had a greater effect on iCrMNs, nearly 50% of which contained p62 aggregates, compared to ~30% of iSpMNs (Figure 6F). These data suggest that CrMNs use the proteasome pathway more efficiently than SpMNs to prevent the accumulation of p62-containing insoluble aggregates.
 
-## iCrMNs are more resistant than iSpMNs to proteostatic stress
+### iCrMNs are more resistant than iSpMNs to proteostatic stress
 
 During ALS progression, SpMNs are under proteostatic stress that triggers the unfolded protein response (UPR) (Atkin et al., 2008; Matus et al., 2013; Hetz and Mollereau, 2014). Our results suggest that iCrMNs are intrinsically better than iSpMNs at coping with misfolded proteins and, thus, at maintaining a healthier proteome. We hypothesized that under generalized proteostatic stress, iCrMN’s ability to better maintain proteostasis would result in increased survival when compared to iSpMNs. To test if iCrMNs are intrinsically more resistant than iSpMNs to proteostatic stress, we compared the survival of non-transgenic iCrMNs and iSpMNs when treated with two well-described proteostatic stressors, tunicamycin and cyclopiazonic acid (CPA) (Merlie et al., 1982; Seidler et al., 1989) (Figure 7A). Tunicamycin and CPA induce misfolded proteins by different mechanisms. Tunicamycin inhibits N-linked glycosylation and thus affects trans-membrane and secreted proteins. CPA blocks sarco/endoplasmic reticulum Ca2+-ATPase (SERCA), the Ca2+-pump in endoplasmic reticulum (ER) membrane that helps to maintain Ca2+ balance and ER homeostasis, and thus has a broader effect. Notably, CPA was reported to accelerate the degeneration of SpMNs expressing hSOD1 G93A mutant, suggesting that CPA treatment may reveal ALS-relevant differential vulnerability between iCrMNs and iSpMNs (Thams et al., 2019).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/44423/elife-44423-fig7-v2.jpg)
+
+**Figure 7.:** (A) Experimental outline: motor neurons were differentiated and treated with DMSO or drugs from Day two to Day five and the number of living cells were measured on Day five for survival assay. (B) iCrMNs were more resistant than iSpMNs to tunicamycin treatment (n = 3–6, mean ± SEM). (C) iCrMNs were more resistant than iSpMNs to CPA treatment (n = 4–5, mean ± SEM). The UPR response induced by CPA treatment is shown in Figure 7—figure supplement 1. (D) iCrMNs were more resistant than iSpMNs to thapsigargin treatment (n = 7–8, mean ± SEM). (E) iCrMNs and iSpMNs were equally sensitive to brefeldin A treatment (n = 7–8, mean ± SEM). n = biological replicates; statistical analysis was performed by student’s t-test, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44423/elife-44423-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** iSpMNs showed higher induction of sXbp1, Grp78 and ATF4 than iCrMNs. ERAD-associated gene Hrd1 was induced at similar level between iCrMNs and iSpMNs (n = 4, mean ± SD). n = biological replicates; statistical analysis was performed in log-transformed data by student’s t-test, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/44423/elife-44423-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Western blot analysis of Day 5 DMSO or CPA treated iCrMNs and iSpMNs using HA antibody. Accumulation of hSOD1 A4V is shown in the soluble (RIPA) and insoluble (urea) fractions. iCr, iCrMN; iSp, iSpMN. (B) Quantification of hSOD1 accumulation between CPA and DMSO treated neurons. (C) Quantification of hSOD1 accumulation between iSpMNs and iCrMNs. n = 4, mean ± SD. β-actin in the soluble fraction was used as a loading control for normalization. The dashed line represents equal accumulation, y = 1. n = biological replicates; statistical analysis was performed in log-transformed data by student’s t-test, *p<0.05, **p<0.01, ***p<0.001.
 
 Survival experiments revealed that iCrMNs are more resistant to tunicamycin than iSpMNs. While 100 ng/ml tunicamycin affected both cell types nearly equally (88 ± 4% survival for iCrMNs and 83 ± 5% for iSpMNs, respectively), 150 ng/ml tunicamycin was significantly more toxic to iSpMNs than to iCrMNs (65 ± 6% survival for iCrMNs and 47 ± 3% for iSpMNs, respectively) (Figure 7B). iCrMNs were consistently more resistant to tunicamycin up through the highest concentration tested (300 ng/mL), at which close to 50% (49% ± 5%) of iCrMNs survived compared to only about 10% (11% ± 1%) of iSpMNs.
 
@@ -139,15 +175,15 @@ Primary ALS-resistant CrMNs are more resistant than primary SpMNs to proteostati
 
 Combining the results from hSOD1 G93A mice and primary motor neuron cultures, these data confirm our hypothesis generated from ESC-derived motor neurons that ALS-resistant CrMNs are more resistant to proteostatic stress than SpMNs. It also highlights the predictive value of this ESC-based in vitro platform for the study of cell-autonomous properties that contribute to the cell specific differential vulnerability to ALS. Moreover, these in vitro and in vivo studies jointly support an intrinsic difference between ALS-resistant CrMNs and ALS-vulnerable SpMNs, one that facilitates CrMNs to degrade misfolded proteins more efficiently than SpMNs. This ability allows CrMNs to accumulate fewer protein aggregates and to better resist ALS neurodegeneration.
 
-## iCrMNs contain more proteasome 20S core subunit proteins and have a higher proteasome activity than iSpMNs
+### iCrMNs contain more proteasome 20S core subunit proteins and have a higher proteasome activity than iSpMNs
 
 To investigate the possible molecular underpinnings behind the superior ability of iCrMNs to utilize the proteasome pathway to degrade misfolding proteins, we performed an unbiased proteomic study on Day two non-transgenic iCrMNs and iSpMNs (Figure 9A). Among the differences, we noted that iCrMNs contain higher levels of all 20S core subunits of the proteasome than iSpMNs (Figure 9B). Interestingly, these differences are not found among regulatory subunits of the proteasome (Figure 9B). Of note, RNA-seq experiments did not reveal this difference, which seems to be due to post-transcriptional mechanisms. While this result points to a possible mechanism, the upregulation of core proteasome proteins may not be enough to confer iCrMNs with higher proteasome activity. Thus, we sought to directly measure proteasome activity in intact iSpMNs versus iCrMNs. iCrMNs and iSpMNs were treated with Suc-LLVY-AMC that fluoresces when cleaved by the chymotrypsin-like activity of the 20S proteasome. The proteasome activity was represented by the hydrolysis rate of Suc-LLVY-AMC. Non-transgenic iCrMNs had a higher proteasome activity than iSpMNs at Day 2 and 5 in culture (Figure 9C). Together, these results suggest that iCrMN have a higher capacity to degrade misfolding proteins and prevent the accumulation of insoluble aggregates because they have a higher proteasome activity than iSpMNs.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/44423/elife-44423-fig9-v2.jpg)
 
-**Figure 9.:** (A) Experimental outline: mass spectrometry was performed in Day two neurons and proteasome activity tests were performed in Day two and Day five living neurons. (B) Unbiased mass spectrometry revealed that iCrMNs contain higher levels of all proteasome 20S core subunits but not 19S regulatory subunits (n = 2). Proteomic data are available in Figure 9—source data 1. (C) iCrMNs have a higher proteasome activity than iSpMNs measured by hydrolysis rate of Suc-LLVY-AMC in living cells (n = 6, mean ± SEM). n = biological replicates; statistical analysis was performed in log-transformed data by student’s t-test, *p<0.05, **p<0.01, ***p<0.001.10.7554/eLife.44423.016Figure 9—source data 1.
+**Figure 9.:** (A) Experimental outline: mass spectrometry was performed in Day two neurons and proteasome activity tests were performed in Day two and Day five living neurons. (B) Unbiased mass spectrometry revealed that iCrMNs contain higher levels of all proteasome 20S core subunits but not 19S regulatory subunits (n = 2). Proteomic data are available in Figure 9—source data 1. (C) iCrMNs have a higher proteasome activity than iSpMNs measured by hydrolysis rate of Suc-LLVY-AMC in living cells (n = 6, mean ± SEM). n = biological replicates; statistical analysis was performed in log-transformed data by student’s t-test, *p<0.05, **p<0.01, ***p<0.001.
 
-## Chemical and genetic proteasome activation rescues iSpMN sensitivity to proteostatic stress
+### Chemical and genetic proteasome activation rescues iSpMN sensitivity to proteostatic stress
 
 The ultimate goal of comparing two types of neurons with a differential sensitivity to ALS was to first identify an intrinsic feature that varied between the neuronal subtypes and to then modify the feature so as to confer resistance upon ALS-sensitive neurons. iCrMNs are more resistant to proteostatic stress and seem to take better advantage of the proteasome pathway to degrade misfolding proteins. Thus, we hypothesized that enhancing proteasome activity would improve iSpMN’s ability to cope with proteostatic stress. To test this hypothesis, we investigated if the p38 MAPK inhibitor PD169316, which had been shown to enhance proteasome activity in primary mouse neurons (Leestemaker et al., 2017), could modify iCrMN’s and iSpMN’s ability to survive CPA-induced proteostatic stress.
 
@@ -179,7 +215,325 @@ The pathogenic mechanisms behind ALS remain obscure. This, in part, is due to th
 
 ## Materials and methods
 
-## ESC lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>129S1/C57BL/6J IslMN:GFP</td>
+      <td>PMID: 18031680</td>
+      <td>MGI: J:132726</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX: 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6.Cg-Tg(SOD1*G93A)1Gur/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX: 004435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>iNIL ESC line</td>
+      <td>This paper; PMID: 23872598</td>
+      <td></td>
+      <td>Cell line maintained in Mazzoni lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>iNIP ESC line</td>
+      <td>This paper; PMID: 23872598</td>
+      <td></td>
+      <td>Cell line maintained in Mazzoni lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>hSOD1 WT #8 iNIL ESC line</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in Mazzoni lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>hSOD1 WT #8 iNIP ESC line</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in Mazzoni lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>hSOD1 A4V #15 iNIL ESC line</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in Mazzoni lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>hSOD1 A4V #15 iNIP ESC line</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in Mazzoni lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>hSOD1 G93A #14 iNIL ESC line</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in Mazzoni lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>hSOD1 G93A #14 iNIP ESC line</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in Mazzoni lab</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tubb3 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat. #801201; RRID:AB_2313773</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Islet1 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #ab109517; RRID:AB_10866454</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #ab9110; RRID:AB_307019</td>
+      <td>(1:1000 for ICC; 1:5000 for WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SQSTM1/p62 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #ab56416; RRID:AB_945626</td>
+      <td>(1:500 for ICC; 1:5000 for WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ChAT (goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat. #AB144P; RRID:AB_2079751</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOD1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #ab16831; RRID:AB_302535</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ubiquitin (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #3936; RRID:AB_331292</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-actin (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #sc-47778; RRID:AB_2714189</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>LIF</td>
+      <td>Fisher</td>
+      <td>Cat. #ESG1107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GDNF</td>
+      <td>PeproTech</td>
+      <td>Cat. #450–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BDNF</td>
+      <td>PeproTech</td>
+      <td>Cat. #450–02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CNTF</td>
+      <td>PeproTech</td>
+      <td>Cat. #450–13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Suc-LLVY-AMC</td>
+      <td>Enzo Lifesciences</td>
+      <td>Cat. #BML-P802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning Kit</td>
+      <td>Clontech</td>
+      <td>Cat. #639647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse ES Cell Nucleofector Kit</td>
+      <td>Lonza</td>
+      <td>Cat. #VVPH-1001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat. #74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR99021</td>
+      <td>BioVision</td>
+      <td>Cat. #1991</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD0325901</td>
+      <td>Sigma</td>
+      <td>Cat. #PZ0162</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Forskolin</td>
+      <td>Fisher</td>
+      <td>Cat. #BP2520-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isobutylmethylxanthine (IBMX)</td>
+      <td>Tocris</td>
+      <td>Cat. #2845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Fluoro-2′-deoxyuridine</td>
+      <td>Sigma</td>
+      <td>Cat. #F0503</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uridine</td>
+      <td>Sigma</td>
+      <td>Cat. #U3003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma</td>
+      <td>Cat. # D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyclopiazonic acid (CPA)</td>
+      <td>Sigma</td>
+      <td>Cat. #C1530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tunicamycin</td>
+      <td>Sigma</td>
+      <td>Cat. #T7765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thapsigargin</td>
+      <td>Sigma</td>
+      <td>Cat. #586005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brefeldin A</td>
+      <td>Sigma</td>
+      <td>Cat. #B7651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG-132</td>
+      <td>Sigma</td>
+      <td>Cat. #474790</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD169316</td>
+      <td>Sigma</td>
+      <td>Cat. #P9248</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat version 3.0</td>
+      <td>PMID: 25867923; 29608179</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer 2.2</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluorescein diacetate</td>
+      <td>Sigma</td>
+      <td>Cat. #F7378</td>
+      <td>Used as cell viability stain</td>
+    </tr>
+  </tbody>
+</table>
+
+### ESC lines
 
 The inducible mouse ESC lines were generated based on the inducible cassette exchange (ICE) system (Iacovino et al., 2011). Transcription factor cassettes NIL (Ngn2-Isl1-Lhx3) and NIP (Ngn2-Isl1-Phox2a) were used to program spinal and cranial motor neurons respectively as previously described (Mazzoni et al., 2013) but with different cloning methods. Ngn2-Isl1-Lhx3 and Ngn2-Isl1-Phox2a coding sequences (linked by 2A peptide sequences) were cloned from previous plasmids (Mazzoni et al., 2013) and directly inserted into the p2lox-V5 plasmid using In-Fusion HD Cloning Kit by homologous recombination (Clontech, 639647). In the generated p2lox-NIL-V5 and p2lox-NIP-V5 plasmids, Lhx3 and Phox2a in the NIL and NIP cassettes were tagged by V5-His double epitope. Phusion High-Fidelity polymerase (Thermo Fisher, F531S) was used during PCR amplification.
 
@@ -189,17 +543,17 @@ To obtain isogenic iNIL and iNIP lines with same hSOD1 transgenes, A17 iCre huma
 
 All mouse ESC lines were cultured in 2-inhibitor based medium (Advanced DMEM/F12:Neurobasal (1:1) medium (Thermo Fisher, 12634028, 10888022) supplemented with 2.5% ESC-grade Tet-negative fetal bovine serum (vol/vol, VWR 35–075-CV), 1X N2 (Thermo Fisher, 17502–048), 1X B27 (Thermo Fisher, 17504–044), 2 mM L-glutamine (Thermo Fisher, 25030081), 0.1 mM β-mercaptoethanol (Thermo Fisher, 21985–023), 1000 U/ml leukemia inhibitory factor (Fisher, ESG1107), 3 μM CHIR99021 (Biovision, 1991) and 1 μM PD0325901 (Sigma, PZ0162-5MG), and maintained at 37°C, 8% CO2.
 
-## ESC-derived motor neurons
+### ESC-derived motor neurons
 
 To differentiate ESCs into motor neurons, ESCs were trypsinized (Thermo Fisher, 25300–120) and seeded as single cells at 25,000 cells/ml in ANDFK medium (Advanced DMEM/F12: Neurobasal (1:1) Medium (Thermo Fisher, 12634028, 10888022), 10% Knockout SR (vol/vol) (Thermo Fisher, 10828–028), 2 mM l-glutamine (Thermo Fisher, 25030081), and 0.1 mM 2-mercaptoethanol (Thermo Fisher, 21985–023)) to initiate formation of embryoid bodies (EBs) (Day −4) in the suspension culture using 10 cm untreated dishes (Fisher, 08-772-32) and maintained at 37°C, 5% CO2. Medium was changed 2 days later (Day −2) with addition of 3 μg/mL Doxycycline (Sigma D9891) to induce the transcription factors NIL and NIP. The EBs treated with Doxycycline for 2 days were dissociated by 0.05% Trypsin-EDTA (Thermo Fisher, 25300–120) on Day 0. The dissociated neurons were plated with a density of 60,000/mL in 24-well plates (Fisher, 142475) for survival assay or 1 million/mL in a 10 cm dish (Fisher, 12-567-650) for Western Blot. The plates are coated by 0.001% poly-D-lysine (Sigma P0899-10MG) overnight and washed with sterile water twice.
 
 All ESC-derived motor neurons were grown in motor neuron medium (Neurobasal medium (Thermo Fisher, 10888022) supplemented with 2% fetal bovine serum (vol/vol, VWR 35–075-CV), 1X B27 (Thermo Fisher, 17504–044), 0.5 mM L-glutamine (Thermo Fisher, 25030081), 0.01 mM β-mercaptoethanol (Thermo Fisher, 21985–023), 10 ng/mL GDNF (PeproTech 450–10), 10 ng/mL BDNF (PeproTech 450–02), 10 ng/mL CNTF (PeproTech 450–13), 10 μM Forskolin (Fisher BP2520-5) and 100 μM Isobutylmethylxanthine (IBMX) (Tocris 2845)), and maintained at 37°C, 5% CO2. 3 μg/mL doxycycline (Sigma D9891) was used to maintain transcription factor expression. 4 μM 5-Fluoro-2′-deoxyuridine (Sigma F0503) and 4 μM uridine (Sigma U3003) were used to kill proliferating cells that failed in motor neuron programming.
 
-## Animals
+### Animals
 
 129S1/C57BL/6J IslMN:GFP mice (MGI: J:132726) were used for visualization and isolation of IslMN:GFP labeled embryonic motor neurons. p62 and SOD1 staining in lumbar spinal cord and oculomotor neurons was performed on tissue from first generation crosses of C57BL/6J females and SOD1G93A transgenic male mice [C57BL/6J, 000664; B6.Cg-Tg(SOD1*G93A)1Gur/J, 004435, Jackson Laboratory]. All experiments utilizing laboratory animals were performed in accordance with NIH guidelines for the care and use of laboratory animals, and with approval of the Institutional Animal Care and Use Committees of Boston Children’s Hospital and Columbia University.
 
-## Primary motor neurons
+### Primary motor neurons
 
 To dissect primary motor neurons, E11.5 IslMN:GFP-positive embryos were harvested in ice-cold phosphate buffered saline (PBS; Thermo Fisher Scientific, 10010–023), and individually stored on ice in 24-well plates (Olympus Plastics brand manufactured by Genesee Scientific, San Diego, CA, USA, 25–107) filled with 2 ml Hibernate-E low fluorescence (BrainBits, LLC., Springfield, IL, USA, HELF) supplemented with 1X B27 (Thermo Fisher Scientific, 17504–044). Four regions were microdissected for each experiment: oculomotor/trochlear neurons (O/TrMNs); spinal motor neurons (SpMNs) from the cervical-lumbar spinal cord; GFP-positive control facial motor neurons; GFP-negative control extremities. Embryos were microdissected in ice-cold Hanks’ Balanced Salt Solution (HBSS; Thermo Fisher Scientific, 14175–095) using fine forceps (Roboz Surgical Instrument Co, Inc, Gaithersburg, MD, USA, RS-5015) and a micro knife (Roboz, RS-6272) under a fluorescence dissecting microscope (Nikon, Tokyo, Japan, SMZ18 and SMZ1500). Dissected samples were then individually collected in 1.7 ml microcentrifuge tubes containing 500 µl of Hibernate-E (BrainBits, HE) supplemented with 1X B27, 2% Horse serum (Thermo Fisher Scientific, 26050–070), 1X GlutaMAX (Thermo Fisher Scientific, 35050–061), and 100 U/ml penicillin-streptomycin (Thermo Fisher Scientific, 15140–122) and stored on ice until dissociation step. Total dissection time per experiment was typically 4–5 hr.
 
@@ -209,49 +563,49 @@ To purify primary motor neurons by fluorescent-activated cell sorting (FACS), si
 
 96-well plates (Greiner Bio-One International, Kremsmünster, Austria, 655090) were coated with 20 µg/ml poly D-lysine (EMD Millipore, Burlington, MA, USA, A-003-E) in PBS overnight at 37°C. Wells were washed ×3 with sterilized water, then coated with 10 µg/ml laminin (Thermo Fisher Scientific, 23017–015) in PBS overnight at 37°C. FACS-isolated primary O/TrMNs and SpMNs were plated at densities of 1000 and 2,000 cells per well, respectively, in coated 96-well plates and cultured in neurobasal medium (Thermo Fisher Scientific, 12348–017) supplemented with 1X B27, 2% Horse serum, 1X GlutaMAX, 100 U/ml penicillin-streptomycin, 50 µM 2-mercaptoethanol (Sigma-Aldrich, M6250), 10 µM Forskolin (Thermo Fisher Scientific, BP25205), 100 µM IBMX (Tocris Cookson, Bristol, United Kingdom, 2845), and 10 ng/ml of BDNF, CNTF, and GDNF (ProSpec-Tany TechnoGene, Ltd., Rehovot, Israel, CYT-207, CY-272, and CYT-305, respectively). Half of the medium was refreshed every 5 days.
 
-## Immunocytochemistry and imaging
+### Immunocytochemistry and imaging
 
 For all media changes and staining steps, 100 µl of original medium was left to avoid detaching cultured cells. To compensate for this additional volume, we added an equal volume of double concentrated paraformaldehyde, permeabilizing solution, blocking solution, and primary and secondary antibody solution. Cells were fixed with 37°C 4% paraformaldehyde (Electron Microscopy Sciences, Hatfield, PA, USA, 15710)/sucrose (Sigma-Aldrich, S8501) in PBS for 30 min. Cells were washed with PBS ×3 and incubated for 5 min in permeabilizing solution [PBS containing 0.2% Triton X (Sigma-Aldrich)]. After additional PBS washes ×3, cells were incubated for 1 hr in blocking solution [PBS containing 5% bovine serum albumin (Sigma-Aldrich, A4503) and 0.05% Tween (Sigma-Aldrich, P1379)]. Subsequently, cells were incubated with primary antibodies for 1 hr at room temperature or overnight at 4°C, washed in PBS ×3, incubated with fluorescence-conjugated secondary antibodies for 1 hr at room temperature or overnight at 4°C, washed in PBS ×3, and nuclei were counterstained with 4′,6-diamidino-2-phenylinodole (DAPI; Thermo Fisher Scientific, D1306). Cells were then rinsed in PBS ×2 and in filtered water ×3. Cell counting was performed and representative images were captured with a Nikon Perfect Focus Eclipse Ti live cell fluorescence microscope using Elements software (Nikon) and 10X (for acquiring images) and 20X (for counting cells) objectives. Samples were imaged and processed to achieve maximum signal intensity without saturated pixels.
 
-## Antibodies and reagents
+### Antibodies and reagents
 
 Reagents used in the western blot and survival assays: cyclopiazonic acid (CPA; Sigma, C1530-5MG), tunicamycin (Sigma, T7765), thapsigargin (Sigma, 586005), brefeldin A (Sigma, B7651), MG-132 (Sigma, 474790), PD169316 (Sigma, P9248) and dimethyl sulfoxide (DMSO; Sigma, D2650).
 
-## Primary antibodies used for immunocytochemistry (ICC)
+#### Primary antibodies used for immunocytochemistry (ICC)
 
 mouse monoclonal antibody to neuronal class III β-tubulin (Tuj1, 1:500; BioLegend, MMS-); rabbit monoclonal antibody to Islet1 (1:200; Abcam, ab109517); rabbit polyclonal antibody to HA tag (1:1000; Abcam, ab9110); mouse monoclonal antibody to SQSTM1/p62 (1:500; Abcam, ab56416) and goat polyclonal anti-ChAT (1:100; AB144P, Millipore).
 
-## Secondary fluorescence-conjugated antibodies for ICC
+#### Secondary fluorescence-conjugated antibodies for ICC
 
 Alexa Fluor 488-, 562- or 594-conjugated goat anti-mouse IgG (1:400 or 1:1000; Thermo Fisher Scientific, Inc, Waltham, MA, USA, A-11001); 488- or 594-conjugated goat anti-rabbit IgG (1:400 or 1:1000; Thermo Fisher Scientific, A-11072); for mouse tissue section: donkey anti-mouse and anti-goat secondary antibodies (1.5 μg/mL; Jackson ImmunoResearch).
 
-## Primary antibodies used for western blot
+#### Primary antibodies used for western blot
 
 rabbit polyclonal antibody to HA tag (1:5000; Abcam, ab9110); mouse monoclonal antibody to SQSTM1/p62 (1:5000; Abcam, ab56416); rabbit polyclonal antibody to Superoxide Dismutase 1 (SOD1) (1:1000; Abcam, ab16831); mouse monoclonal antibody to ubiquitin (1:5000; CST, #3936); mouse monoclonal antibody to beta-actin (1:5000; Santa Cruz, sc-47778).
 
-## Secondary antibodies used for Western blot
+#### Secondary antibodies used for Western blot
 
 HRP-conjugated mouse and rabbit secondary antibodies (Amersham ECL Western Blotting Detection Reagent, VWR, 95038–560).
 
-## Survival assay of ESC-derived motor neurons
+### Survival assay of ESC-derived motor neurons
 
 Neurons were washed with 1X HBSS (Thermo Fisher, 14025092) and viable cells were stained by 0.1 μg/mL fluorescein diacetate (Sigma, F7378) and tile-imaged (~0.3 cm2) by Nikon fluorescent microscope at 10X. The number of living cells was counted by the spot detection function of Nikon software. Each biological replicate had at least three technical replicates and the average was used for analysis.
 
-## Western blot assays
+### Western blot assays
 
 Cells were lysed in RIPA buffer (Sigma, R0278) with protease inhibitors (Sigma, 11697498001) for 30 min on ice. After centrifuge at 14,000 g for 15 min at 4°C, the supernatant was collected as soluble fraction and the pellet was solubilized using 8M urea with 2% SDS and 50 mM pH7.6 Tris-HCl buffer as insoluble fraction. 5–15 μg protein sample from soluble fractions and equivalent volumes of insoluble fractions were separated by 8–16% SDS-PAGE (Bio-Rad, 456–1105) and transferred to PVDF membranes (Thermo Fisher, 88518). The membrane was blocked with 5% Bovine Serum Albumin (Sigma, A9647) for 1 hr at room temperature, incubated with primary antibodies overnight at 4°C, washed in TBST X3, incubated with HRP-conjugated mouse and rabbit secondary antibodies (Amersham ECL Western Blotting Detection Reagent, VWR, 95038–560) for 1 hr at room temperature, washed in TBST X3 and then developed using ECL Western Blotting Detection System (Fisher Scientific, RPN2108) and X-ray films (Thermo Fisher, 34091).
 
-## RNA preparation and RT-qPCR
+### RNA preparation and RT-qPCR
 
 RNA was extracted using QIAGEN RNeasy kit following manufacturer’s instructions. For quantitative PCR analysis, cDNA was synthesized using SuperScript III (Invitrogen), amplified using Maxima SYBR green brilliant PCR amplification kit (Thermo Scientific) and quantified using a CFX 96 Touch Biorad qPCR thermocycler (Biorad). One independent differentiation was considered to be a biological replicate (n = 1).
 
-## Proteasome activity test
+### Proteasome activity test
 
 For quantifying MG-132 effect on proteasome activity, cell lysates were collected from Day 4 neurons with 6 hr treatment of 100 nM MG-132. The measurement was carried out in a total volume of 100 μL in 96 well plates with 50 μM Suc-LLVY-AMC (BML-P802, Enzo Lifesciences) in assay buffer (25 mM HEPES, 0.5 mM EDTA, 0.05% NP-40 Tergitol and 0.01% SDS) using 5, 15 and 25 μg of protein supernatant. The chymotrypsin-like activity of proteasome was determined by increase in AMC fluorescence per minute per μg of protein supernatant and compared between MG-132 and DMSO treated samples. Fluorescence was measured every 10 min for 120 min at 37°C using a Tecan M200 Microplate Reader (Tecan; λex/em = 380/460 nm).
 
 For measuring proteasome activity in living cells with DMSO or PD169316 treatment, cells were plated in 96 well plates, washed and added assay buffer (20 mM Tris, 5 mM MgCl2, 1 mM DTT, 1 mM ATP, pH = 7.4) containing 100 μM Suc-LLVY-AMC in a total volume of 150 μL. Cell density was subsequently measured for normalization. The chymotrypsin-like activity of proteasome was determined by increase in AMC fluorescence per minute per cell and compared between PD169316 and DMSO treated samples or between iCrMNs and iSpMNs. Fluorescence was measured every 5 min for 50 min at 37°C using a Tecan Spark Microplate Reader (Tecan; λex/em = 380/460 nm).
 
-## Proteomics analysis by mass spectrometry
+### Proteomics analysis by mass spectrometry
 
 We collected two different types (iSpMNs and iCrMNs) of neuronal cells form two different time points (0 hr and 12 hr) at day2. For proteomics analysis, we processed cells from two different biological replicates. We resuspended cell pellets in 200 μL ice-cold 0.1% Rapigest in 50 mM TEAB containing 1:100 protease inhibitor cocktail. The cells were then sonicated with probe sonicator for 2 × 30 s with amplitude 5. The samples were returned to ice for 20 s between sonication intervals. It was then reduced in 15 mM DTT at 55°C for 45 min, and alkylated in 55 mM iodoacetamide in the dark at room temperature for 30 min. Finally, we used 1:20 (w/w) μg of mass spectrometry grade trypsin (Sigma Aldrich) to digest the proteins into peptides at 37°C overnight. We performed Hypersep (Thermo Fisher Scientific) cleanup and the purified peptides were vacuum dried using Vacufuge Plus (Eppendorf).
 
@@ -263,15 +617,15 @@ We used an EASY-nLC 1200 coupled on-line to a Q Exactive HF spectrometer (both T
 
 We used Proteome Discoverer 2.2 (Thermo Fisher Scientific) with its integrated search engine Sequest HT to analyze our raw files acquired from the mass spectrometer. Data were searched against the mouse sequence file (Mus_musculusgrcm38.p6) downloaded from the ENSEMBL database. All sample fractions of two individual sets were grouped by setting up study factor design section of proteome discoverer. We set up the quantification using the parameters given for each TMT isotopes in certificate of analysis. The mass tolerance of MS/MS spectra were set to 20 ppm with a posterior global FDR of 1% based on the reverse sequence of the mouse FASTA file. In addition, MS/MS data were searched by Andromeda for potential common mass spectrometry contaminants. Trypsin/P specificity was used to perform database searches, allowing two missed cleavages. Carbamidomethylation of cysteine residues and 10-plex TMT modifications on Lys and N-terminal amines were considered as a fixed modification, while oxidation of methionines and N-terminal acetylation were considered as variable modifications. TMT quantification was performed at MS2 level with default mass tolerance and other parameters. We then used the reporter ion intensities as estimates for protein abundance. A total of ~8700 protein groups were identified. Protein groups with no measurement among either replicate were then removed, as well as those identified by only one peptide in either replicate. After filtering, for each protein the geometric mean was calculated across all samples within one stress and the intensities were divided by this mean. The median of these ratios over all proteins was used as a size factor to account for differences in global sequence coverage between samples, similar to library size normalization for RNA sequencing and foot printing experiments. Surrogate variables were estimated and removed via linear modeling (SVA) to remove batch effects (Leek and Storey, 2007).
 
-## Viral production and infection of motor neurons
+### Viral production and infection of motor neurons
 
 Lentiviral vectors were constructed expressing either LacZ or PSMB5 under the control of a constitutive CMV promoter, followed by an IRES sequence and GFP to permit identification of positively infected cells. The viral vectors were packaged using 2nd generation packaging plasmids transfected into HEK-293T cells using polyethylenimine. Viruses were collected from HEK-293T media 3 days after transfection and filtered. ESC-derived motor neurons were then infected on Day one after dissociation with equal volumes of either LacZ or PSMB5 expressing viruses. Viral medium was changed after 16 hr and neurons were then treated with DMSO or 30 µM CPA on Day four and fixed and imaged on Day seven to measure survival. Survival was measured as a ratio of infected (GFP-positive) over total (DAPI-positive) cells and plotted as the ratio of CPA over DMSO, normalized to control LacZ infected iSpMNs.
 
-## Polysome profile analysis
+### Polysome profile analysis
 
 Polysome profiling was performed as described previously by Gandin et al. (2014). Briefly, 48h-doxycycline-treated embryonic bodies from both iCrMNs and iSpMNs were incubated in the presence of 100 μg/mL cycloheximide for 10 min at 37°C followed by centrifugation at 700 rpm for 3 min to pellet the embryonic bodies. We incubated the embryonic bodies further with cold PBS containing 100 μg/mL cycloheximide on ice for 5 min. Following removal of the PBS, 450 μL of hypotonic buffer (5 mM Tris-HCl [pH 7.5], 2.5 mM MgCl2, 1.5 mM KCl, 1x protease inhibitor cocktail [EDTA-free], 100 μg/mL cycloheximide, 1 μM DTT, 100 units of RNase inhibitor and 0.5% Triton X-100) was added and transferred to a pre-chilled Eppendorf tube. After 5 min of incubation on ice, the lysate was centrifuged at 16,000 x g for 7 min at 4°C and the supernatant (~400 µL) was transferred to a new pre-chilled 1.5 mL tube. A total of 250 μg of RNA was overlaid on a 5–50% sucrose gradient (buffered in 50 mM Tris-HCl [pH 7.0], 10 mM MgCl2, 25 mM KCl, 100 μg/mL cycloheximide) and sedimented by ultracentrifugation for 120 min at 222,228 x g (36,000 rpm) in a Beckman SW41Ti rotor at 4°C. During sucrose gradient analysis, absorbance was monitored at 254 nm while ~900 μL fractions were collected using a Brandel density gradient fractionation system. RNA from polysome fractions were pooled and extracted using RNA TRIzol method and purified through RNeasy mini kit (Qiagen, Cat. #74104).
 
-## Single-cell RNA sequencing and data availability
+### Single-cell RNA sequencing and data availability
 
 ESC-derived iCrMNs and iSpMNs cultured for 2, 5 and 7 days were dissociated with 0.05% trypsin and returned to culture media with supplements plus 0.1 μg/mL fluorescein diacetate to stain living cells. Single viable cells were sorted using Fluorescence Activated Cell Sorting (Becton Dickinson FACSAria II) to single wells of 96-well fully-skirted Eppendorf PCR plates in 5 uL 1X Buffer TCL (QIAGEN, 1070498) (without 2-Mercaptoethanol), covered, spun at 2600 rpm for 1 min, frozen on dry ice, and stored at −80°C. For each time point, the same plate was filled in the first four rows with iCrMNs and last four rows with iSpMNs. Primary O/TrMNs and SpMNs cultured for 7 days were individually patched and their cytoplasmic contents extracted and added into 96-well plates containing pre-frozen TCL buffer. In all plates, positions H1/H2 contained 50 control cells. While the iCrMNs/iSpMNs and primary O/TrMNs/SpMNs were collected at different institutions, the library preparations and sequencing were all performed according to the same protocol in the same locations.
 
@@ -283,14 +637,14 @@ Single cell analysis was performed principally with Seurat version 3.0 (Satija e
 
 The single cell RNA sequencing raw FASTQ files used in this study are deposited in the National Center for Biotechnology Information’s Gene Expression Omnibus (GEO), accession GSE130938.
 
-## Survival assay in primary motor neurons
+### Survival assay in primary motor neurons
 
 Neurons were analyzed by immunofluorescence labeling with the neuronal marker Tuj1 and the motor neuron marker Islet1, and nuclei were counterstained with DAPI. Neuronal cell body death was assessed from pyknotic nuclear morphology and the presence of membrane swelling in the cell body. Neuronal processes that showed signs of beading and swelling were classified as degenerating processes. Cells with neither cell body death nor degenerating processes were counted as viable neurons (Tuj1+) or motor neurons (Tuj1+, Isl1+). Survival ratios in the experiments adding endoplasmic reticulum (ER) stressors or the proteasome inhibitor MG132 were calculated as the number of healthy viable cells in the drug treated well divided by the number of viable cells in the vehicle (DMSO) only well. All viable cells in each well of the 96-well plate were manually counted under the microscope by one counter (JYL). Random samples were re-counted by a second counter (RF). Cell counts differed by an average of 5 cells/well (<1.6% of the total cells).
 
-## Animal tissue collection, Immunofluorescence Staining and Imaging
+### Animal tissue collection, Immunofluorescence Staining and Imaging
 
 SOD1G93A mutant mice and their non-transgenic littermates (first generation cross only) were deeply anesthetized using Avertin (tribromoethanol, Sigma) and fixed by transcardial perfusion with 4% paraformaldehyde (from 32% stock, 15714, Electron Microscopy Sciences) in phosphate-buffered saline (PBS) pH 7.4 (70011, Thermo Fisher). Three mice at postnatal days 100 ± 3 were used for hSOD1 aggregate staining. Three mice at postnatal days 66, 66 and 97 were used for p62 aggregate staining. The CNS was removed and fixed overnight in the same solution noted above. Whole brain and lumbar segments 4 and 5 were dissected, embedded in 4% (w/v) agar and sectioned on a vibratomb (Leica VT1000 S). 100 μm transverse spinal cord sections and sagittal whole brain sections were cut. Sections were blocked overnight in PBS with 10% donkey serum (D9553, Sigma) and 0.4% Triton X-100 (T8787, Sigma). Sections then were incubated at room temperature for two days in the above blocking buffer with primary antibodies [goat polyclonal anti-ChAT (1:100; AB144P, Millipore) and mouse monoclonal anti-SQSTM1/p62 (1:500; ab56416, Abcam) or mouse monoclonal anti-misfolded human SOD1 (1:250; MM-0072–02, MédiMabs]. After the primary incubation, six washes (>30 min each) in PBS with 0.4% Triton were followed by a one-day incubation at room temperature in the above wash buffer with donkey anti-mouse and anti-goat secondary antibodies (1.5 μg/mL; Jackson ImmunoResearch). After six more washes (as stated above), sections were mounted on microscope slides in Fluoromount G (OB100, ThermoFisher) using 100 μm spacers and allowed to set for >12 hr. Staining was visualized by confocal microscopy (Zeiss LSM 800).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 The quantitative data are expressed as mean ± SEM or mean ± SD of at least 3 (indicated in the figure legends, when the number was more than 3) independent experiments. The only exceptions are the polysome profiling experiment and the mass spectrometry experiment, which have two biological replicates. Statistical analysis was performed using ANOVA and student’s t test for data that are normally distributed or log-transformed after normality and variance homogeneity tests. Values of p<0.05 were considered statistically significant.

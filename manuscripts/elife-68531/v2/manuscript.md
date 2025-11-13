@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03taz7m60 Signal and Image Processing Institute, University of Southern California Los Angeles United States
-2. https://ror.org/03xjacd83 Epilepsy Center, Cleveland Clinic Neurological Institute Cleveland United States
+1. Signal and Image Processing Institute, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+2. Epilepsy Center, Cleveland Clinic Neurological Institute Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
 
 † Corresponding author
 
@@ -27,7 +27,7 @@ These oscillations have been analyzed for their value in SOZ localization (Höll
 
 In this paper, we analyzed SEEG recordings of cortical and subcortical regions. In SEEG, the EZ not only takes into account the earliest ictal EEG change, it emphasizes an anatomo-electro-clinical analysis (Kahane et al., 2006). This concept incorporates both the anatomic region that initiates the epileptic discharge as well as the ‘primary organization’ (Talairach and Bancaud, 1966) that leads to the manifestation of the clinical seizure itself (Wyllie et al., 2015). The gold standard method of confirming EZ localization is based on whether seizure freedom has been achieved by resection or ablation. The actual ground truth for the EZ location is unknown since in many cases the resection volumes may extend well beyond the EZ. In recent work, the EZ has been considered as part of a network (Jehi, 2018). These epileptogenic networks in focal epilepsy have been invoked in explaining the underlying pathogenesis of epilepsy, seizure initiation, ictal propagation, and disease progression as well as various associated comorbidities (Nair et al., 2004). This perspective is utilized in our work to analyze seizures in the context of a distributed network of interacting regions that include the EZ. Because of the importance of HFOs in epilepsy and SOZ localization, we construct synchronization networks in the 80–200 Hz range, to be in line with similar studies (Höller et al., 2015; Schindler et al., 2010). Fast rhythmic bursting neurons, which have the highest tendency to initiate seizures, are largely responsible for generating ultra-fast oscillations or ripples (80–200 Hz) (Timofeev and Steriade, 2004). We hypothesize that during seizures, the EZ has an abnormal and unique pattern of connectivity with other brain areas.
 
-Graph analysis provides a mathematical framework for the quantification of brain connectivity (Bullmore and Sporns, 2009). Brain networks may be represented as a graph, G=(V, E), in which nodes (V) characterize anatomical regions or electrodes, and edges (E) reflect structural or functional connections among them. Traditionally, brain connectivity in each time sample (layer) of dynamic networks has been evaluated independently, via single graph analysis. However, multilayer analysis allows us to model the entire data with a single super-graph, in which individual graphs for each time-sample are linked. Assuming there are T single graphs (time-samples) with N nodes in each, the super-graph has NT nodes. The multilayer structure has considerable methodological advantages over single-layer analysis (Betzel and Bassett, 2017). First, the interlayer coupling between neighboring time points in this model allows us to incorporate the continuity in neural dynamics. Second, by tuning the coupling parameter, processes with different timescales can be distinguished. Third, the extracted measures on these networks are less susceptible to noise in the data or spurious connectivity. Additionally, there exist several neurological rationales for employing a multilayer approach in seizure analysis. First, the concept of dynamic network reconfiguration has been studied in brain networks (Bassett et al., 2011; Braun et al., 2015). Previous research has shown state transitions during seizures, either through brain connectivity analysis (Burns et al., 2014) or microelectrode recordings (Smith et al., 2016). Multilayer networks have the capability to delineate these transitions and identify network reconfiguration (Mucha et al., 2010). Second, electrophysiological signals are highly non-stationary during ictal periods. As a result, traditional analysis of time-varying networks based on isolated graphs would be affected by instantaneous fluctuations rather than the underlying spatiotemporal networks. Third, seizure propagation is one of the key elements of ictal activity. Recent work has indicated the importance of multilayer modeling of complex systems when encountering spreading processes (De Domenico et al., 2016).
+Graph analysis provides a mathematical framework for the quantification of brain connectivity (Bullmore and Sporns, 2009). Brain networks may be represented as a graph, $G=(V, E)$, in which nodes ($V$) characterize anatomical regions or electrodes, and edges ($E$) reflect structural or functional connections among them. Traditionally, brain connectivity in each time sample (layer) of dynamic networks has been evaluated independently, via single graph analysis. However, multilayer analysis allows us to model the entire data with a single super-graph, in which individual graphs for each time-sample are linked. Assuming there are T single graphs (time-samples) with N nodes in each, the super-graph has NT nodes. The multilayer structure has considerable methodological advantages over single-layer analysis (Betzel and Bassett, 2017). First, the interlayer coupling between neighboring time points in this model allows us to incorporate the continuity in neural dynamics. Second, by tuning the coupling parameter, processes with different timescales can be distinguished. Third, the extracted measures on these networks are less susceptible to noise in the data or spurious connectivity. Additionally, there exist several neurological rationales for employing a multilayer approach in seizure analysis. First, the concept of dynamic network reconfiguration has been studied in brain networks (Bassett et al., 2011; Braun et al., 2015). Previous research has shown state transitions during seizures, either through brain connectivity analysis (Burns et al., 2014) or microelectrode recordings (Smith et al., 2016). Multilayer networks have the capability to delineate these transitions and identify network reconfiguration (Mucha et al., 2010). Second, electrophysiological signals are highly non-stationary during ictal periods. As a result, traditional analysis of time-varying networks based on isolated graphs would be affected by instantaneous fluctuations rather than the underlying spatiotemporal networks. Third, seizure propagation is one of the key elements of ictal activity. Recent work has indicated the importance of multilayer modeling of complex systems when encountering spreading processes (De Domenico et al., 2016).
 
 Consequently, we modeled spatiotemporal high-frequency connectivity using multilayer networks. We explore the question of whether the EZ can be identified by unsupervised clustering of nodes (representing SEEG contacts) in the feature space of these multilayer networks. Our connectivity-based EZ identification results show reasonable consistency with a previous approach (described as the fingerprint of the EZ) (Grinenko et al., 2018; Li et al., 2020) which uses three ictal features for EZ localization, namely: low-voltage fast activity (LFD), preictal spiking, and suppression of lower frequencies.
 
@@ -35,7 +35,7 @@ Understanding the connectivity dynamics of EZ and surrounding areas with the res
 
 ## Results
 
-## Multilayer modeling of ictal networks discerns the EZ
+### Multilayer modeling of ictal networks discerns the EZ
 
 SEEG data were recorded using implanted intracranial electrodes in 16 patients who underwent resective surgery and were seizure-free for at least 12 months post-resection (Table 1). We studied the dynamics of brain connectivity during seizures via multilayer networks (Mucha et al., 2010) which captures continuity in neural interactions during the ictal period. A schematic of a multilayer network with inter and intralayer edges is depicted in Figure 1. SEEG contacts were defined as graph vertices while the lagged-coherence (Pascual-Marqui, 2007) was used to define edge strength in each layer as a measure of the macroscopic HFS (see Methods). We investigated two broad bands of HFOs: 80–140 Hz and 140–200 Hz, similar to related studies (Arnulfo et al., 2020; Weiss et al., 2013). Several studies have applied phase-based connectivity metrics on broad-band high-frequency oscillations. For instance, (Zweiphenning et al., 2016) computed the phase lag index (PLI) in two high-frequency bands: ripple (80–250 Hz) and fast ripple (250–500 Hz). Another study used PLI to compute brain connectivity in broad band 80–250 Hz (Nissen et al., 2016). Last, Burns et al., 2014 used coherence to investigate ictal networks in gamma (25–90 Hz) band.
 
@@ -43,15 +43,265 @@ SEEG data were recorded using implanted intracranial electrodes in 16 patients w
 
 **Figure 1.:** Four consecutive layers (time-points) of a simulated network with intralayer (solid lines) and interlayer (dashed lines) edges. Nodes in each layer represent the set of stereoelectroencephalography (SEEG) contacts and are colored and categorized into two clusters (red and blue). Interlayer edges (couplings) were included between the same contacts at adjacent time points. The diameter of each node represents the relative value of mlEVC, in which larger nodes are the more connected nodes and smaller nodes are more isolated.
 
+**Table 1.**
+ Clinical characteristics of patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Age (years)</th>
+      <th>ED (years)</th>
+      <th>MRI lesion</th>
+      <th>Resection/ablation details</th>
+      <th>Surgical pathology</th>
+      <th>Follow-up(months)</th>
+      <th>Anatomical location of the EZ</th>
+      <th>Number of nodes in the network</th>
+      <th>Number of nodes inside the resection area</th>
+      <th>Duration of seizures (seconds)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>43</td>
+      <td>37</td>
+      <td>FCD, insular/frontal operculum</td>
+      <td>Anterior insular/ frontal operculum</td>
+      <td>FCD type 2B</td>
+      <td>13</td>
+      <td>Insular/frontal operculum</td>
+      <td>88</td>
+      <td>11</td>
+      <td>(41, 39, 39)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>33</td>
+      <td>17</td>
+      <td>Hippocampal sclerosis</td>
+      <td>Anterior temporal lobe</td>
+      <td>Hippocampal sclerosis</td>
+      <td>48</td>
+      <td>Temporal</td>
+      <td>79</td>
+      <td>22</td>
+      <td>(147, 150, 141)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>17</td>
+      <td>8</td>
+      <td>Negative</td>
+      <td>Laser ablation, superior frontal gyrus</td>
+      <td>No pathology</td>
+      <td>19</td>
+      <td>Frontal</td>
+      <td>71</td>
+      <td>5</td>
+      <td>(25, 24, 25)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>16</td>
+      <td>1</td>
+      <td>Benign neoplasm, posterior para-hippocampal gyrus</td>
+      <td>Posterior para- hippocampus gyrus and neoplasm</td>
+      <td>Low grade glial/ glioneuronal neoplasm</td>
+      <td>39</td>
+      <td>Basal posterior temporal</td>
+      <td>48</td>
+      <td>8</td>
+      <td>(55, 115, 140)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>46</td>
+      <td>41</td>
+      <td>FCD, mesial frontal</td>
+      <td>Prefrontal lobe</td>
+      <td>Non-specific</td>
+      <td>38</td>
+      <td>Frontal</td>
+      <td>88</td>
+      <td>32</td>
+      <td>(100, N/D, N/D)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>5</td>
+      <td>1</td>
+      <td>Negative</td>
+      <td>Superior frontal gyrus, superior frontal sulcus, frontal pole</td>
+      <td>FCD type 2B</td>
+      <td>21</td>
+      <td>Superior frontal gyrus/superior frontal sulcus</td>
+      <td>73</td>
+      <td>33</td>
+      <td>(14, 15, 15)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>63</td>
+      <td>14</td>
+      <td>Negative</td>
+      <td>Orbitofrontal</td>
+      <td>FCD type 1</td>
+      <td>44</td>
+      <td>Orbitofrontal/ pars orbitalis</td>
+      <td>105</td>
+      <td>19</td>
+      <td>(61, 267, 62)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>33</td>
+      <td>19</td>
+      <td>Gliotic postoperative changes</td>
+      <td>Anterior temporal lobe</td>
+      <td>FCD type 1B</td>
+      <td>40</td>
+      <td>Temporal</td>
+      <td>99</td>
+      <td>46</td>
+      <td>(85, 64, 81)</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>21</td>
+      <td>11</td>
+      <td>Negative</td>
+      <td>Occipital lobe</td>
+      <td>Gray matter heterotopia,FCD type 1B</td>
+      <td>12</td>
+      <td>Cuneus</td>
+      <td>123</td>
+      <td>57</td>
+      <td>(106, 98)</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>32</td>
+      <td>27</td>
+      <td>FCD, precentral gyrus</td>
+      <td>Precentral gyrus</td>
+      <td>Non-conclusive</td>
+      <td>77</td>
+      <td>Precentral gyrus</td>
+      <td>82</td>
+      <td>13</td>
+      <td>(26, 78, 12)</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>22</td>
+      <td>3</td>
+      <td>FCD, superior frontal sulcus</td>
+      <td>Superior and middle frontal gyri, anterior cingulate</td>
+      <td>FCD type 2B</td>
+      <td>78</td>
+      <td>Frontal</td>
+      <td>58</td>
+      <td>31</td>
+      <td>(18, 25, 31)</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>19</td>
+      <td>18</td>
+      <td>Negative</td>
+      <td>Middle frontal gyrus</td>
+      <td>FCD type 1</td>
+      <td>48</td>
+      <td>Inferior frontal sulcus/middle frontal gyrus</td>
+      <td>41</td>
+      <td>26</td>
+      <td>(36, 36, 35)</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>30</td>
+      <td>18</td>
+      <td>Negative</td>
+      <td>Frontal operculum</td>
+      <td>FCD type 2B</td>
+      <td>47</td>
+      <td>Frontal operculum/ subcentral region</td>
+      <td>70</td>
+      <td>10</td>
+      <td>(49, 21, 78)</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>20</td>
+      <td>11</td>
+      <td>Negative</td>
+      <td>Frontal lobe</td>
+      <td>FCD type 1</td>
+      <td>82</td>
+      <td>Superior frontal gyrus/superior frontal sulcus</td>
+      <td>99</td>
+      <td>32</td>
+      <td>(65, 86, 86)</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>65</td>
+      <td>25</td>
+      <td>Negative</td>
+      <td>Anterior temporal lobe</td>
+      <td>FCD type 1 C</td>
+      <td>39</td>
+      <td>Temporal</td>
+      <td>139</td>
+      <td>23</td>
+      <td>(56, 65, 142)</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>65</td>
+      <td>9</td>
+      <td>Negative</td>
+      <td>Anterior temporal lobe</td>
+      <td>FCD type 1 C</td>
+      <td>36</td>
+      <td>Temporal</td>
+      <td>90</td>
+      <td>35</td>
+      <td>(55, 63, 59)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Follow-up information is current as of July 2017.ED: epilepsy duration, FCD: focal cortical dysplasia, N/D: Not defined._
+
 As discussed in the introduction, we aimed to model ictal brain connectivity by multilayer networks. Additionally, we were interested in quantifying network dynamics using centrality metrics (Rubinov and Sporns, 2010). Among those measures, eigenvector centrality (EVC), a rank-based metric that assesses the importance of each node in the network (Bonacich, 1972), has been employed in studying seizures (Burns et al., 2014). Mathematically, the leading eigenvector of the adjacency (connectivity) matrix has been assigned as the EVC of the graph when there is one clique (component) in the matrix (Bonacich, 1972). However, in our multilayer model of time-varying brain connectivity, a single vector cannot explain the complex structure of the spatiotemporal networks. Therefore, we introduced a new measure called mlEVC that incorporates the top T eigenvectors of the adjacency matrix of the super-graph (see Methods). This allows us to evaluate patterns of nodal centrality and identify regions with similar connectivity characteristics to the rest of the graph. Further, because mlEVC is a function of the interlayer coupling parameter (c), we can explore neural processes at different timescales by varying c. The mlEVC represents the prominence of a node in multiplex networks evolving over time (Figure 1). Nodes with high connectivity over time and space in the multilayer network display larger values in mlEVC than isolated vertices. Figure 2b displays this measure for one seizure of patient 17.
 
-## Algorithm for predicting EZ using mlEVC
+![Figure 2.](https://cdn.elifesciences.org/articles/68531/elife-68531-fig2-v2.jpg)
 
-We hypothesize that the EZ can be identified as the set of nodes in the graph that exhibit a characteristic and distinct pattern of connectivity to other areas during the seizure. To explore this question, we first quantized the mlEVC of each seizure into three levels based on percentile thresholding (d). The top d/2-portion of elements was assigned a value of ‘1,’ the bottom d/2-portion a value of ‘–1,’ and the remainder a value of ‘0.’ For each subject, quantized measures of mlEVC for two high-frequency bands and all seizures were concatenated to a single matrix with dimension N by Ttot (twice the total number of sample points) (see Methods). We applied the singular value decomposition (SVD) to the concatenated matrix and used the left singular vectors (ui∈RN) to identify nodes (SEEG channels) with similar features. As an illustration, Figure 2c depicts u1 , u2, and u3 for patient 17.
+**Figure 2.:** (a) Stereoelectroencephalography (SEEG) signals during the ictal period. The red signals are a sample of contacts inside the EZ as identified by our method, and the blue signals depict non-EZ contacts outside the resection zone. (b) The mlEVC during the ictal period. Each row represents a channel (contact). Contacts are categorized and organized into two groups: resected and non-resected as indicated on the right. They are also categorized into two groups based on the proposed clustering algorithm: target and non-target. The blue elements of mlEVC describe the isolated nodes of the super-graph (brain network) while red values describe highly connected contacts. (c) The first three left singular vectors of the mlEVC. The mlEVC spectra of different seizures were first quantized and concatenated before performing singular value decomposition. The red nodes are those identified as predicted EZ based on unsupervised clustering.
 
-Next, we applied an unsupervised clustering algorithm using the ui vectors to detect a target cluster that represents the EZ. Following our initial hypothesis, the target cluster should portray a dense and distinctive set of nodes in the feature space with a significant distance from nodes in the non-target group (Figure 2c). We describe the clustering algorithm in detail in the method section. Briefly, we designed a data-driven framework to cluster nodes into two groups using an agglomerative hierarchical clustering technique (function linkage in MATLAB). This process was performed for different combinations of ui as features of the clustering algorithm and a range of values for c and d, resulting in 440 clustering runs. We weighted each run using a performance function (Halkidi et al., 2001) that examines the tightness of the target cluster and its separation from other nodes. Finally, using the weighted sum of performance metrics for all runs, SEEG contacts were divided into two groups; target and non-target.
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68531/elife-68531-fig2-figsupp1-v2.jpg)
 
-## Assessing the accuracy of the prediction algorithm
+**Figure 2—figure supplement 1.:** The predicted EZ (red circles) was computed as described in Methods. Blue squares show non-resected contacts and green triangles indicate the resected electrodes. The axes are the top three left singular vectors of multilayer eigenvector centrality (mlEVC), i.e.$u_{1},u_{2}$, and $u_{3}$ (See Methods). For illustration purposes, we show projections with respect to the singular vectors for the parameter set (c,d) for which the prediction of EZ (binary labeling) was closest to the assumed ground truth (resection information).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68531/elife-68531-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Channels inside the black rectangle represent those within the resected volume as in Figure 2 in the main body of the paper. The distinction between resected and non-resected regions is lost in the phase-randomized data.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/68531/elife-68531-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/68531/elife-68531-fig2-figsupp4-v2.jpg)
+
+### Algorithm for predicting EZ using mlEVC
+
+We hypothesize that the EZ can be identified as the set of nodes in the graph that exhibit a characteristic and distinct pattern of connectivity to other areas during the seizure. To explore this question, we first quantized the mlEVC of each seizure into three levels based on percentile thresholding (d). The top d/2-portion of elements was assigned a value of ‘1,’ the bottom d/2-portion a value of ‘–1,’ and the remainder a value of ‘0.’ For each subject, quantized measures of mlEVC for two high-frequency bands and all seizures were concatenated to a single matrix with dimension N by Ttot (twice the total number of sample points) (see Methods). We applied the singular value decomposition (SVD) to the concatenated matrix and used the left singular vectors ($u_{i}\inR^{N}$) to identify nodes (SEEG channels) with similar features. As an illustration, Figure 2c depicts $u_{1}$ , $u_{2}$, and $u_{3}$ for patient 17.
+
+Next, we applied an unsupervised clustering algorithm using the $u_{i}$ vectors to detect a target cluster that represents the EZ. Following our initial hypothesis, the target cluster should portray a dense and distinctive set of nodes in the feature space with a significant distance from nodes in the non-target group (Figure 2c). We describe the clustering algorithm in detail in the method section. Briefly, we designed a data-driven framework to cluster nodes into two groups using an agglomerative hierarchical clustering technique (function linkage in MATLAB). This process was performed for different combinations of $u_{i}$ as features of the clustering algorithm and a range of values for c and d, resulting in 440 clustering runs. We weighted each run using a performance function (Halkidi et al., 2001) that examines the tightness of the target cluster and its separation from other nodes. Finally, using the weighted sum of performance metrics for all runs, SEEG contacts were divided into two groups; target and non-target.
+
+### Assessing the accuracy of the prediction algorithm
 
 By comparing the clustering results with information about which contacts were included in the resected volume (Figure 2b), we defined three categories: ‘EZ,’ ‘resected non-EZ,’ and ‘non-resected.’ The EZ included the nodes in the target cluster, resected non-EZ consists of nodes in the non-target cluster removed during surgery, and non-resected comprises the rest of the nodes, which were neither resected nor clustered in the target group (Figure 2—figure supplement 1). Ideally, the predicted EZ or target cluster should only contain nodes in the resected area for these participants since all patients were seizure-free after surgery. However, the clustering algorithm and proposed technique are not flawless so there are a small number of electrodes outside the resection region selected as EZ, i.e., false positives.
 
@@ -59,7 +309,7 @@ Our approach identified electrodes inside the resected volume as EZ for 88% of p
 
 It was striking that for most of the patients, the EZ was distinguishable based on the singular vectors of mlEVC (Figure 2—figure supplement 1). Consistent with other studies, we found out that possibly only a portion of the resected area is responsible for epileptogenicity. Figure 2b captures the discrepancies between the EZ, resected non-EZ, and non-resected areas. Furthermore, it distinctly displays various brain states (phases) during the ictal period. Nodes experience isolated and fully connected phases with respect to the rest of the network. These results confirm the importance of the entire ictal period for EZ identification. For the rest of the paper, we utilize the categorization of nodes introduced above with the following small modifications: removing false positives from the EZ groups (defined as those contacts lying outside the resected volume) and discarding patients 8 and 11 in whom we were unable to observe any unique pattern of connectivity in electrodes inside the resected area.
 
-## Evaluating the validity of the proposed method
+### Evaluating the validity of the proposed method
 
 To explore the validity of our approach, we constructed a null model by also computing the mlEVC from phase-randomized SEEG signals (Prichard and Theiler, 1994). In Figure 2—figure supplement 2, we show typical results of the mlEVC measures calculated from the original time-series and phase-randomized data for a single subject. These results show significant differences between original and randomized data in which the characteristic patterns of brain connectivity both in resected and non-resected areas are lost when signals are phase-randomized. We performed this analysis for different patients and seizures with similar findings.
 
@@ -69,23 +319,39 @@ Furthermore, we examined the effect of multilayer modeling and adjusting the cou
 
 Figure 2—figure supplement 4 presents the changes in super-graph eigenvalues by adjusting the coupling parameter. For c≤1, there is a falloff when the number of eigenvalues (ne) meets the number of layers (T), indicating a super-adjacency matrix with effective rank T. This is an expected result since the coupling is relatively small. When c increases, the eigenvalues become larger, and their corresponding eigenvectors would comprise several neighboring layers. Although the rate of decline in the magnitude of eigenvalues accelerates as c increases, falloff can be detected when ne ≤2 T. By increasing the coupling value, the super-adjacency matrix transforms from a block diagonal matrix with an effective rank T, to a matrix with major non-diagonal blocks and an effective rank far greater than T. In the computation of mlEVC, we considered the top T eigenvectors for all coupling parameters to avoid erroneous assumptions about the rank of super-graphs.
 
-## Seizures evolve with divergent network topologies
+### Seizures evolve with divergent network topologies
 
 In our multilayer modeling of epileptogenic networks, the left singular vectors of mlEVC were used to cluster nodes into two categories, predicted EZ and non-EZ. Here, the associated right singular vectors were employed to display seizure evolution. In clinical epileptology, stereotypy in seizures is defined as similarities in both seizure semiology and ictal EEG recordings over repeated seizures (Schevon et al., 2012). Multiunit recordings have shown that stereotypical firing patterns occur when micro-electrodes are implanted in recruited areas (Schevon et al., 2012). To evaluate stereotypy in this study, we clustered ictal dynamics into different states using the four features from a pool of six-dimensional feature vectors, including the top three right singular vectors of mlEVC split into the two high-frequency bands (see Methods).
 
 Figure 3 compares different seizures for patient 16. Quantized mlEVC are depicted in Figure 3b with corresponding state changes in part c. Results indicate that ictal brain activity evolves through diverse phases during different seizures. In the first seizure, the EZ is mostly isolated with respect to the other nodes and ictal activity advances through three states (E, D, A). In contrast, the EZ exhibits strong connectivity in the second seizure while the centrality measure passes through four states (C, B, D, F). Figure 3d illustrates the ictal dynamics using the four selected features extracted from the top three right singular vectors of mlEVC in two frequency bands (see Methods). In this case, seizure one evolves quite differently from seizures two and three whose traces share similar ictal dynamics.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/68531/elife-68531-fig3-v2.jpg)
+
+**Figure 3.:** (a) Time series of a channel inside the predicted epileptogenic zone (EZ) for two different seizures (onset to termination). (b) The low-rank estimation of quantized multilayer eigenvector centrality (mlEVC) plots (80–140 Hz). For a clearer representation, only channels in predicted EZ and resected non-EZ are depicted. (c) State transitions during seizures. The time vector is adjusted based on the seizure onset (t=0 s) (d) Evolution of seizures in the feature space. Capital letters show the center of each brain state. The space and states are created by four features ($v-_{a}, v-_{b}, v-_{c}$ , and $v-_{d}$) extracted from the right singular vectors of mlEVC in the two high-frequency bands (see Methods – Here, only two features are illustrated). Comparing three ictal periods, we see that the brain can exhibit a different seizure evolution – here between seizure one and seizures two and three.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68531/elife-68531-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Seizure evolution and brain states were extracted using the right singular vectors of multilayer eigenvector centrality (mlEVC) (see Methods). Capital letters show the center of each state. $v-_{a}, v-_{b}, v-_{c}$, and $v-_{d}$ are the best features extracted from singular vectors to cluster seizure evolution into brain states. (a) Patient 3. The $v-_{a}-v-_{b}$ plot portrays states that are unique for seizures one and two, but not observed in seizure three. (b) Patient 9. All recorded seizures are scattered in the same places. (c) Patient 15. The $v-_{c}-v-_{d}$ plot depicts a distinctive area for seizure one, which was not traversed in two other reordered seizures.
+
 The same analysis was performed for all patients and results for several of these participants are shown in Figure 3—figure supplement 1. We observed that stereotypy, here considered as similar state transitions among all recorded seizures, does not necessarily occur, especially at high frequencies. In fact, the brain experiences divergent topologies, which might be the result of dissimilar EEG recordings. While previous studies suggested stereotypy in focal firing (Schevon et al., 2012) and brain connectivity (Burns et al., 2014), our multilayer analysis of epileptogenic networks does not imply stereotypy in macroscopic HFS. Our findings confirm the necessity of collecting adequate seizures and large-scale recordings for a better understanding of seizure evolution.
 
-## EZ desynchronization occurs in the ictal period
+### EZ desynchronization occurs in the ictal period
 
 We were interested in exploring the fundamental question of how HFS changes throughout the seizures. To do this, three synchrony measures were computed. The first measure, EZ-nR, quantifies the synchrony between EZ and non-resected (nR) areas. The second metric, RnEZ-nR, computes the connectivity of resected nonEZ and nR. Lastly, we computed interactions between non-resected regions, labeled nR-nR. Figure 4a presents the dynamics of these measures during the ictal period. Collectively, 39 seizures and two frequency bands were analyzed. Seizures with different durations were resampled/rescaled to a zero to one interval, where zero indicates the onset and one indicates the termination time. In general, among the three measures, EZ-nR exhibited a substantial decline in synchrony during early and mid-seizure while widespread synchronization occurred during seizure termination (Figure 4a). Based on this observation, we compared the HFS in three time periods: pre-ictal, mid-seizure, and post-ictal (Figure 4a). Data for all seizures were extracted for statistical analysis in RStudio (Rstudio Team, 2018). To handle possible outliers, the paired percentile bootstrap with a one-step M-estimator (Wilcox, 2011) was employed and p-values were computed for pairwise comparison between and within the three measures at each of the three periods, corrected using Hochberg’s algorithm (B=104 number of bootstraps, J=18 tests, see Methods). All tests and their corresponding corrected p-values can be found in Figure 4—source data 1 .
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68531/elife-68531-fig4-v2.jpg)
+
+**Figure 4.:** (a) Time-varying high-frequency synchrony values for three defined measures. The ictal period is normalized to a zero to one scale. The solid lines represent the median and shaded plots display the normalized median absolute deviation (MAD), based on 104 bootstrap tests. The gray rectangles display the periods of special interest. Note that EZ-nR connectivity drops substantially towards mid-seizure and increases to match nR-nR and RnEZ-nR at seizure termination and post-ictally. (b) Connectivity measures in pre-ictal, mid-seizure, and post-ictal. To give a pairwise visual comparison, we subtracted the average synchrony between all pairs of contacts in the pre-ictal interval from nine connectivity measures. The centers of error bars show the median of all seizures in two frequency bands and lines depict the MAD. Scatter circles exhibit the actual values (n=78 for each group). To handle possible outliers, the paired percentile bootstrap with a one-step M-estimator was employed and p-values were computed for pairwise comparison between and within the three measures at each of the three periods, corrected using Hochberg’s algorithm (B=104 number of bootstraps, J=18 tests, see Methods). Asterisks display corrected p-values; *p<0.05, **p<0.01, ***p<0.001. Only the mid-seizure interval shows significant differences between EZ-nR and other measures. All measures are considerably higher in post-ictal than their corresponding values in the mid-seizure and pre-ictal periods. EZ-nR drops significantly in mid-seizure from pre-ictal.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68531/elife-68531-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The center of each error bar indicates the median of all seizures (n=39) in two high-frequency bands (80–140 Hz and 140–200 Hz) and solid lines depict the scaled median absolute deviation. Scatter circles indicate the actual values (n=78 for each group). Visually, the epileptogenic zone (EZ) is strongly desynchronized with resected non-EZ.
 
 Figure 4b presents the extracted connectivity values for the above measures in selected periods. To give a pairwise visual comparison, we subtracted the average synchrony between all pairs of contacts in the pre-ictal interval from nine connectivity measures (Figure 4b). Unsurprisingly, there was no difference between measures in the pre-ictal period (p≈1 for all pairwise comparisons). In mid-seizure, EZ-nR was significantly smaller than RnEZ-nR (p=0.0108) and nR-nR (p<10–4), indicating that the EZ is maximally desynchronized from the rest of the brain. Early-onset and late-ictal HFOs have been considered biomarkers for seizure onset zone identification (Weiss et al., 2013), with the latter found to be a more reliable metric (Modur et al., 2011). Our EZ localization technique considers both features. The substantial decrease in EZ connectivity with the entire network in mid-seizure might be the result of these pathological HFOs in the EZ. At a smaller scale, EZ-nR desynchronization could be the result of heterogeneous neuronal spiking activity during seizures (Truccolo et al., 2011). Microelectrode recordings of the ictal core presented a dramatic rise in the Fano factor, a statistical measure of spiking desynchronization (variance of spiking divided by the mean), in the early and mid-phases of seizures (Schevon et al., 2012; Truccolo et al., 2011). Theoretical modeling of neuronal assemblies has shown that asynchrony is necessary to maintain a high firing rate (Gutkin et al., 2001). We further studied the variations of each measure among different periods. Between pre-ictal and mid-seizure, EZ-nR connectivity declined considerably (p≈0.002), followed by a marginally significant fall for RnEZ-nR (p=0.056). In contrast, all measures were substantially elevated during seizure termination and the post-ictal period in comparison to mid-seizure and pre-ictal intervals (p<10–4 for all tests). This observation is well aligned with other studies, suggesting a widespread synchronization during seizure termination (Kramer and Cash, 2012), especially in the range 80–200 Hz (Schindler et al., 2010).
 
 We do not include the connectivity between the EZ and RnEZ in Figure 4 for the following reason. The three measures we do compute are all relative to the non-resected region which we know to definitely be outside the EZ. Within the resection, there is some ambiguity as to which contacts are within EZ and which are not. Second, a measure between EZ and RnEZ would be more susceptible to noise as the number of RnEZ electrodes is typically much smaller than the number in the non-resected region so that establishing statistical significance is difficult. Nevertheless, this measure is computed for the interested reader in Figure 4—figure supplement 1. It can be perceived by visual inspection that EZ-RnEZ has a pattern similar to EZ-nR, suggesting again that the EZ is functionally disconnected from surrounding areas up to mid-seizure (Warren et al., 2010).
 
-## The EZ becomes isolated by aging and the duration of epilepsy
+### The EZ becomes isolated by aging and the duration of epilepsy
 
 Although the EZ exhibited a general pattern of desynchronization, it was not the case for all patients. In mid-seizure, several participants showed larger EZ-nR values when compared with the average connectivity in the entire network. This observation is expected since patients have dissimilar seizure types, etiology, and electrode implantations. Consequently, we postulated that a patient’s demographics might explain differences in EZ connectivity with the rest of the brain. Patients’ age and duration of epilepsy were assessed as predictors for the EZ-nR synchrony in the middle of seizures. For each seizure and patient, the average synchrony between all pairs of contacts in mid-seizure was subtracted from the EZ-nR to reduce inter-subject and inter-seizure variabilities. We constructed a three-dimensional vector consisting of EZ-nR connectivity for each seizure (n=39) along with the corresponding age and duration of epilepsy. We utilized a robust regression estimator based on bootstrap sampling and the Theil-Sen algorithm (Wilcox, 2011). The correlation between patients’ age and normalized EZ synchronization is shown in Figure 5a. Results indicate a strong negative association, suggesting the EZ becomes increasingly desynchronized with age (p<10–4, r = − 0.414). Similarly, we observed a reduction in connectivity between the EZ and non-resected areas with a longer duration of epilepsy (Figure 5b, p=0.032, r = − 0.229).
 
@@ -95,7 +361,7 @@ Although the EZ exhibited a general pattern of desynchronization, it was not the
 
 These findings suggest possible variables that can modify the epileptogenic networks (van Diessen et al., 2013a). Recently, interictal ECoG recordings of patients with temporal lobe epilepsy (TLE) have shown a negative correlation between TLE duration and overall PLI at low frequencies (van Dellen et al., 2009). A resting-state fMRI study also found a negative correlation between epilepsy duration and functional connectivity between two contralateral ROIs in the inferior frontal gyrus (Liao et al., 2010). However, our findings delineate the correlation in a specific pathological pathway among patients with medically intractable focal epilepsy with different SEEG electrode implantations. A decrease in functional connectivity with age might also be observed in a control group. However, the fact that we normalize by subtracting the overall synchronization in each patient from EZ-nR values weakens the influence of that factor in our findings.
 
-## Expansive connectivity in low-frequency emerges before seizure termination
+### Expansive connectivity in low-frequency emerges before seizure termination
 
 Low-frequency brain signals (3–50 Hz) are mainly shaped by rhythmic synaptic currents (Schevon et al., 2012), which in many cases traverse to other regions. These traveling waves are involved in different sensory processes and brain states (Muller et al., 2018; Smith et al., 2016). In epilepsy, ictal discharges exhibit this activity during seizures. Recently, two scenarios have been proposed for seizure spread and termination (Martinet et al., 2017). The first theory postulates that ictal discharges emerge from a fixed cortical source in EZ, while the second hypothesis asserts that the moving ictal wavefront generates traveling waves (Smith et al., 2016). This process dominates when the ictal wavefront recruits the seizure core and penumbra, i.e., the area around the core in which low-voltage signals spread, roughly during the mid-seizure period. These scenarios have contradictory explanations for how seizure termination occurs. The fixed source theory assumes inactivation of a small region would end the seizure while the active wavefront requires a mechanism that affects an expansive area.
 
@@ -103,9 +369,9 @@ We analyzed connectivity in low-frequency during seizures. Brain networks were c
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/68531/elife-68531-fig6-v2.jpg)
 
-**Figure 6.:** (a) Time-varying low-frequency connectivity values for three defined measures. The ictal period is normalized to a zero to one scale. The solid lines represent the median and shaded plots display the normalized median absolute deviation (MAD) based on 104 bootstrap tests. The gray rectangles display the periods of special interest. EZ-nR connectivity drops in early seizure and a widespread brain connectivity occurs in the pre-termination period. (b) Connectivity measures in pre-ictal, early-seizure, and pre-termination. To give a pairwise visual comparison, we subtracted the average synchrony between all pairs of contacts in the pre-ictal interval from nine connectivity measures. The centers of error bars show the median of all seizures in two frequency bands and lines depict the MAD. Scatter circles exhibit the actual values (n=39 for each group). To handle possible outliers, the paired percentile bootstrap with a one-step M-estimator was employed and p-values were computed for pairwise comparison between and within the three measures at each of the three periods, corrected using Hochberg’s algorithm (B=104 number of bootstraps, J=18 tests, see Methods). Asterisks display corrected p-values; *p<0.05, **p<0.01, ***p<0.001. Only the early-seizure interval shows significant differences between EZ-nR and the two other measures. All measures are considerably higher in pre-termination than their corresponding values in early-seizure and pre-ictal periods.Figure 6—source data 1.Post-hoc tests on network measures in low-frequency. p-values smaller than 0.05 are bolded.
+**Figure 6.:** (a) Time-varying low-frequency connectivity values for three defined measures. The ictal period is normalized to a zero to one scale. The solid lines represent the median and shaded plots display the normalized median absolute deviation (MAD) based on 104 bootstrap tests. The gray rectangles display the periods of special interest. EZ-nR connectivity drops in early seizure and a widespread brain connectivity occurs in the pre-termination period. (b) Connectivity measures in pre-ictal, early-seizure, and pre-termination. To give a pairwise visual comparison, we subtracted the average synchrony between all pairs of contacts in the pre-ictal interval from nine connectivity measures. The centers of error bars show the median of all seizures in two frequency bands and lines depict the MAD. Scatter circles exhibit the actual values (n=39 for each group). To handle possible outliers, the paired percentile bootstrap with a one-step M-estimator was employed and p-values were computed for pairwise comparison between and within the three measures at each of the three periods, corrected using Hochberg’s algorithm (B=104 number of bootstraps, J=18 tests, see Methods). Asterisks display corrected p-values; *p<0.05, **p<0.01, ***p<0.001. Only the early-seizure interval shows significant differences between EZ-nR and the two other measures. All measures are considerably higher in pre-termination than their corresponding values in early-seizure and pre-ictal periods.
 
-## Pre-termination connectivity predicts post-ictal synchronization
+### Pre-termination connectivity predicts post-ictal synchronization
 
 It has been hypothesized that the brain manifests hysteresis between the two states before and after termination (Kramer et al., 2012). In other words, the post-ictal state is dependent on pre-termination. Consequently, we were interested to examine how the brain changes between these two states. Pre-termination connectivity in low-frequency and post-termination synchrony in high-frequency were among the distinctive features of the results presented above. To test the hypothesis of possible dependency, we computed overall brain connectivity for these two measures. Figure 7 illustrates the correlation between pre-termination and post-ictal intervals. Each point in the graph belongs to one seizure in which the two values for two high-frequency bands are averaged. There is a strong association between the two states (p<0.02, r=0.452, n=34) after removing outliers using the projection method and the MAD-median rule (Wilcox, 2011), supporting the existence of hysteresis in the system. In other words, the brain state in the post-ictal period can be predicted using its condition in pre-termination.
 
@@ -133,7 +399,7 @@ It is important to remember that the recording techniques, signal processing app
 
 Employing the bipolar montage and a robust measure of synchrony, helped us to eliminate the effect of volume conduction and muscle artifacts (see Methods). In contrast, classic measures like coherence strikingly increase spurious connectivity. Additionally, our findings do not simply reflect the distance among the electrodes. We normalized the synchronization matrices with respect to the pre-ictal period based on an element-wise approach, previously suggested in Burns et al., 2014. This process reduces the chance of distance alone affecting the value of connectivity.
 
-## Limitations and Considerations
+### Limitations and Considerations
 
 We should point out that cross-validation was not performed in this study for several reasons. First, resection labels were not used as part of the prediction algorithm, and the same performance function and ranges of coupling and thresholding values were applied to all subjects. Second, as shown in this manuscript and similar works, parameters such as coupling or active frequency bands are patient-specific. By using cross-validation, we would have to fix these parameters based on a subset of patients, which may not be ideal as the actual range of these parameters could differ from the training dataset. While this study was primarily conducted to propose the multilayer network methodology during seizures, a more rigorous investigation is necessary to evaluate the broader validity of our algorithm. Future research could use data from different clinical centers to assess the generalizability of the proposed technique and identify optimal parameters.
 
@@ -141,56 +407,92 @@ Filtering and subsequent analysis of HFOs should be performed with extra caution
 
 ## Materials and methods
 
-## Patients and recordings
+### Patients and recordings
 
 This retrospective study was approved by the institutional review board at the Cleveland Clinic. Single pulse electrical stimulation-induced cortico-cortical evoked potentials are collected as a part of the routine clinical care of patients undergoing SEEG at Cleveland Clinic. The ictal data is also collected during the presurgical SEEG evaluation. The full procedure for participant selection and data recording is described in our previous work (Grinenko et al., 2018). Briefly, we selected 16 patients who underwent SEEG implantation in the Epilepsy Center at Cleveland Clinic. SEEG placement (Gonzalez-Martinez et al., 2014) used multi-lead depth electrodes (AdTech, Integra, or PMT). Post-implanted 3D computed tomography (CT) images were aligned to T1-weighted MRI for anatomical localization of electrode leads. Patients were monitored for up to two weeks and their seizures were recorded by the Nihon Kohden EEG system with a sampling rate of 500 Hz (before 2012) or 1000 Hz (after 2012). After a thorough evaluation, the identified EZ was resected or ablated. The contacts (electrode leads) inside the resection or ablated region were determined by coregistration of the post-implant CT to a post-resection MRI 1–6 months after surgery. Based on follow-up information, all patients were determined to be seizure-free (Table 1).
 
 We preprocessed SEEG signals before further analyses. First, we constructed bipolar channels by subtracting unipolar signals recorded from each pair of adjacent contacts. For analysis, we included bipolar channels only if both contacts were inside gray matter. Next, any DC offset was removed from each bipolar channel. Thereafter, using the Brainstorm software (Tadel et al., 2011), bipolar EEG signals were bandpass filtered in the 3–200 Hz range and notch filtered at 60, 120, and 180 Hz. Bandpass filtering was performed using a Kaiser-window linear phase FIR filter of order 7252 (for a sample rate of 1000 Hz), using the fir1 MATLAB function. We compensated for filter-induced delay by shifting the filtered sequence, resulting in a zero-delay filter. The notch filtering used an IIR filter of order 6 with a 3dB bandwidth of 1 Hz around the notch frequencies. We used the filtfilt function in MATLAB to compensate for group delay. The resulting preprocessed data were employed in all analyses in this paper. When analyzing low-frequency and high-frequency brain connectivity, we bandpass the preprocessed data using the same filter type (Kaiser-window linear phase FIR filter) with different ranges and orders.
 
-## High-frequency ictal networks
+### High-frequency ictal networks
 
 The time-varying brain networks were computed in two frequency bands, 80–140 Hz, and 140–200 Hz. Briefly, we first applied the Hilbert transform to compute analytical signals in each frequency band. Dynamic connectivity matrices were calculated using pair-wise lagged-coherence (Pascual-Marqui, 2007) between signals in 2.5 s windows with 80% overlaps. Here, the term ‘synchrony’ is employed interchangeably with brain connectivity in high-frequency. Lagged-coherence removes spurious coherence values caused by volume conduction. As a result, we have time-varying N×N networks in two frequency bands for each seizure, in which N denotes the number of bipolar channels. Network calculation was performed using Brainstorm (Tadel et al., 2011). The connectivity matrices were z-scored with respect to the pre-ictal period and their values were mapped into the interval (0 1) using an exponential transform (Burns et al., 2014). Assuming a total of T overlapping 2.5 s windows during a seizure, in which T depends on the length of the seizure and window parameters, results in a three-dimensional (N×N×T) matrix or network for each frequency band.
 
-## mlEVC and its decomposition
+### mlEVC and its decomposition
 
-We constructed an NT ×NT super-adjacency (connectivity) matrix A with coupling effects between layers (Kivela et al., 2014). The diagonal N×N blocks were the adjacency matrices at different time points. Off-diagonal terms were identity matrices multiplied by a coupling parameter c, in which c∈{1, 2,…, 10, 15}. Matrix A is irreducible for any c>0. The weighted identity blocks represent ordinal interlayer links between nodes corresponding to a particular contact (neighboring time points). One can consider the leading eigenvector of matrix A (φ1∈RNT) as the EVC of this super-graph (Solá et al., 2013). However, in our work, this vector was focused on a few adjacent layers and did not visually capture the centrality across all layers. This is because of the time-varying nature of ictal networks and the relatively weak coupling across time in our model. Historically, the EVC is defined as a weighted sum of all eigenvectors of the matrix but simplified to the leading eigenvector for matrices with one clique (Bonacich, 1972). In our model of time-varying brain connectivity, this simplification does not hold because of the time-varying nature of connectivity during the seizure that is embodied in the super-adjacency matrix. We, therefore, defined a mlEVC that combines the eigenvectors corresponding to the largest eigenvalues. As discussed in the results section, we chose T eigenvectors irrespective of the coupling parameter. In our observations, the eigenvectors φ1, …, φT were each restricted to significant values across a few layers only. The Perron-Frobenius theorem asserts the positivity of σ1 (the largest eigenvalue) and φ1 but the elements of other eigenvectors can be non-positive (φi≼0 for 2≤i≤T). Since EVC is a measure of ranking between nodes, we considered the absolute values for all vectors. To extract the mlEVC for matrix A, the T largest eigenvalues were multiplied by their corresponding eigenvectors and the absolute values of the results summed,mlEVC=σ1φ1+σ2φ2+…+σTφT
+We constructed an NT ×NT super-adjacency (connectivity) matrix $A$ with coupling effects between layers (Kivela et al., 2014). The diagonal N×N blocks were the adjacency matrices at different time points. Off-diagonal terms were identity matrices multiplied by a coupling parameter c, in which $c\in{1, 2,…, 10, 15}$. Matrix $A$ is irreducible for any c>0. The weighted identity blocks represent ordinal interlayer links between nodes corresponding to a particular contact (neighboring time points). One can consider the leading eigenvector of matrix $A$ ($\phi_{1}\inR^{NT}$) as the EVC of this super-graph (Solá et al., 2013). However, in our work, this vector was focused on a few adjacent layers and did not visually capture the centrality across all layers. This is because of the time-varying nature of ictal networks and the relatively weak coupling across time in our model. Historically, the EVC is defined as a weighted sum of all eigenvectors of the matrix but simplified to the leading eigenvector for matrices with one clique (Bonacich, 1972). In our model of time-varying brain connectivity, this simplification does not hold because of the time-varying nature of connectivity during the seizure that is embodied in the super-adjacency matrix. We, therefore, defined a mlEVC that combines the eigenvectors corresponding to the largest eigenvalues. As discussed in the results section, we chose T eigenvectors irrespective of the coupling parameter. In our observations, the eigenvectors $\phi_{1}, …, \phi_{T}$ were each restricted to significant values across a few layers only. The Perron-Frobenius theorem asserts the positivity of $\sigma_{1}$ (the largest eigenvalue) and $\phi_{1}$ but the elements of other eigenvectors can be non-positive ($\phi_{i}≼0 for 2\leqi\leqT$). Since EVC is a measure of ranking between nodes, we considered the absolute values for all vectors. To extract the mlEVC for matrix $A$, the T largest eigenvalues were multiplied by their corresponding eigenvectors and the absolute values of the results summed,
 
-This vector was then reshaped to an N×T matrix, representing the variation in each node’s centrality over time, which we refer to as the mlEVC. In the case where c=0, mlEVC represents the concatenated EVC of the adjacency matrices computed separately for each time point. Elements with the smallest or highest values show isolated or strongly connected instances in time, respectively. Since EVC provides a connectivity ranking among nodes, the mlEVC of each seizure was quantized based on a percentile thresholding (d). The top d/2-portion of elements was assigned a value of ‘1,’ the bottom d/2-portion a value of ‘–1,’ and the remainder a value of ‘0.’ We concatenated the quantized mlEVC matrices into an N×Ttot matrix, in which Ttot= ∑s=1I∑f=12Tsf , where Tsf denotes the number of samples in the network for the sth seizure and fth frequency band. This matrix contains the centrality measure for I ictal periods in two frequency bands. The singular value decomposition (SVD) was applied to this matrix to find the left and right singular vectors : ui∈RN and vi∈RTtot . The left singular vectors summarize each node’s characteristics across all seizures in the context of centrality.
+$$
+mlEVC=\sigma_{1}\phi_{1}+\sigma_{2}\phi_{2}+…+\sigma_{T}\phi_{T}
+$$
 
-## Unsupervised clustering for EZ identification
+This vector was then reshaped to an N×T matrix, representing the variation in each node’s centrality over time, which we refer to as the mlEVC. In the case where c=0, mlEVC represents the concatenated EVC of the adjacency matrices computed separately for each time point. Elements with the smallest or highest values show isolated or strongly connected instances in time, respectively. Since EVC provides a connectivity ranking among nodes, the mlEVC of each seizure was quantized based on a percentile thresholding (d). The top d/2-portion of elements was assigned a value of ‘1,’ the bottom d/2-portion a value of ‘–1,’ and the remainder a value of ‘0.’ We concatenated the quantized mlEVC matrices into an $N\timesT_{tot}$ matrix, in which $T_{tot}= \sums=1I\sum_{f=1}^{2}T_{sf}$ , where Tsf denotes the number of samples in the network for the sth seizure and fth frequency band. This matrix contains the centrality measure for I ictal periods in two frequency bands. The singular value decomposition (SVD) was applied to this matrix to find the left and right singular vectors $: u_{i}\inR^{N}$ and $v_{i}\inR^{T_{tot}}$ . The left singular vectors summarize each node’s characteristics across all seizures in the context of centrality.
 
-To identify candidate contacts for the EZ, weighted consensus clustering (Kiselev et al., 2017; Li and Ding, 2008) was employed, using combinations of the first four left singular vectors. These vectors were z-scored and used as features in a hierarchical clustering algorithm. This approach clusters the nodes in a bottom-up agglomerative fashion. Based on our hypothesis, the EZ should have a distinctive pattern of connectivity and therefore centrality. Our goal is, therefore, to find a dense target cluster of nodes (X=1) whose feature vectors have a significant distance from the centroid of the feature vectors of the other nodes (Y=0). As a result, we trace the dendrogram to the last step where the final two groups merge. For a fixed coupling and threshold, c and d, respectively, feature vectors were selected from a pool of normalized singular vectors, consisting of the five combinations:K={{u1,u2},{u1,u3},{u2,u3},{u1,u2,u3},{u1,u2,u3,u4}}
+### Unsupervised clustering for EZ identification
 
-For each combination, κr∈K, r={1,…,5}, the feature vectors of dimensions 2–4 were integrated into the MATLAB hierarchical clustering function linkage (centroid with Euclidean distance). Nodes were divided into two groups before the last linkage. We assigned a binary label ‘1’ to nodes in the smaller cluster (presumptive target X) and ‘0’ to other channels (presumptive Y). Since hierarchical clustering is prone to outliers, we went one step back in the dendrogram if the minor cluster consisted of less than 5% of the nodes. In other words, we divided the nodes into three groups and selected the second minor group as the presumptive target.
+To identify candidate contacts for the EZ, weighted consensus clustering (Kiselev et al., 2017; Li and Ding, 2008) was employed, using combinations of the first four left singular vectors. These vectors were z-scored and used as features in a hierarchical clustering algorithm. This approach clusters the nodes in a bottom-up agglomerative fashion. Based on our hypothesis, the EZ should have a distinctive pattern of connectivity and therefore centrality. Our goal is, therefore, to find a dense target cluster of nodes (X=1) whose feature vectors have a significant distance from the centroid of the feature vectors of the other nodes (Y=0). As a result, we trace the dendrogram to the last step where the final two groups merge. For a fixed coupling and threshold, c and d, respectively, feature vectors were selected from a pool of normalized singular vectors, consisting of the five combinations:
 
-Ideally, we would like to see a tight target cluster that is well separated. Consequently, one can evaluate a clustering technique by computing the quotient (Halkidi et al., 2001),perf(r)=sep(r)comp(r)
+$$
+K={{u_{1},u_{2}},{u_{1},u_{3}},{u_{2},u_{3}},{u_{1},u_{2},u_{3}},{u_{1},u_{2},u_{3},u_{4}}}
+$$
 
-where the separation index for the rth combination is defined as the Euclidean distance:sep(r)=‖Y¯r−X¯r‖22
+For each combination, $κ_{r}\inK, r={1,…,5}$, the feature vectors of dimensions 2–4 were integrated into the MATLAB hierarchical clustering function linkage (centroid with Euclidean distance). Nodes were divided into two groups before the last linkage. We assigned a binary label ‘1’ to nodes in the smaller cluster (presumptive target X) and ‘0’ to other channels (presumptive Y). Since hierarchical clustering is prone to outliers, we went one step back in the dendrogram if the minor cluster consisted of less than 5% of the nodes. In other words, we divided the nodes into three groups and selected the second minor group as the presumptive target.
 
-where X¯r and Y¯r are the centroids of target and not-target clusters. Compactness is defined as the product of two measures of intra-cluster distance in the target group,comp(r)= (1M∑i∑j>i‖xir−xjr‖2)(maxi ‖xir−X¯r‖2)
+Ideally, we would like to see a tight target cluster that is well separated. Consequently, one can evaluate a clustering technique by computing the quotient (Halkidi et al., 2001),
 
-in which xir is the feature vector of the ith point in the target cluster and M is the total number of pairs. The first term calculates distances between all nodes and the second term finds the farthest distance of a point from the center of the cluster.
+$$
+perf(r)=\frac{sep(r)}{comp(r)}
+$$
 
-We combined the hierarchical clustering results for all sets of feature vectors. The vector w∈RN is calculated as the probability that each node is a candidate for EZ,w= 1∑r=1nperf(r)∑r=1nperf(r)lr
+where the separation index for the rth combination is defined as the Euclidean distance:
 
-where lr∈RN is the hierarchical labeling result for the rth case. The parameter n≤5 is defined as the number of feature vector sets that lead to clustering where comp(r)≠0 which in turn requires a minimum of two contacts in the EZ cluster. Since we need a EZ vs non-EZ label for each node, the vector w was binarized using a threshold θ=n-1n . For the specific case n=1, θ=0.5. We constructed the binary vector l∈RN by thresholding w,li={1               wi>θ0         otherwise
+$$
+sep(r)=‖Y¯_{r}−X¯_{r}‖_{2}^{2}
+$$
 
-We repeated the above procedure for a range of parameter values: c∈{1, 2,…, 10, 15} and d∈{0.1, 0.2,…, 0.8}. The final consensus vector w∈RN was then computed to represent the overall chance of a node being in the target (EZ) cluster asw=∑c∑dperf(c,d)lcd
+where $X¯_{r}$ and $Y¯_{r}$ are the centroids of target and not-target clusters. Compactness is defined as the product of two measures of intra-cluster distance in the target group,
 
-The vector w is continuous where larger values indicate increasingly likely candidates for the EZ. We applied k-means clustering (k=3) on vector w and took the cluster with the largest average value as the final target (EZ) group of contacts. Note that in Figure 2 and Figure 2—figure supplement 1 we use a single fixed c and d for illustration purposes.
+$$
+comp(r)= (\frac{1}{M}\sumi\sumj>i‖x_{ir}−x_{jr}‖_{2})(max_{i} ‖x_{ir}−X¯_{r}‖_{2})
+$$
 
-## Brain states
+in which $x_{ir}$ is the feature vector of the ith point in the target cluster and M is the total number of pairs. The first term calculates distances between all nodes and the second term finds the farthest distance of a point from the center of the cluster.
 
-The seizure evolution is captured by the right singular vectors (vi∈RTtot). To preprocess the data, the singular vectors were separated into distinct seizures and frequency bands. For each vector, the MATLAB outlier removal function hampel was then used to remove outliers, with 15 neighboring points and three scaled median absolute deviations (1.4826 × MAD). These vectors were then reconcatenated in two frequency bands (v∼if∈RTtot/2) where Ttot was defined as two times the length of seizures. We then applied K-means clustering, separately for each possible combination of four drawn from the six vectors corresponding to the first three pre-processed singular vectors in each of the two frequency bands. In other words, selecting from the following set,S={v∼11,v∼12,v∼21,v∼22,v∼31,v∼32}
+We combined the hierarchical clustering results for all sets of feature vectors. The vector $w\inR^{N}$ is calculated as the probability that each node is a candidate for EZ,
 
-We repeated the analysis for different numbers of clusters and used the MATLAB silhouette function to determine the optimal number of clusters and best set of vectors. This metric compares the distance of each point with other points in its cluster to the distances to other clusters. The clustering with the highest Silhouette value was selected to construct the transition matrices and find the transitions among brain states (clusters) shown in Figure 3 and Figure 3—figure supplement 1. The final four selected vectors from S were denoted v-a, v-b, v-c , and v-d .
+$$
+w= \frac{1}{\sumr=1nperf(r)}\sumr=1nperf(r)l_{r}
+$$
 
-## Statistical analysis of functional connectivity in high-frequency
+where $l_{r}\inR^{N}$ is the hierarchical labeling result for the rth case. The parameter n≤5 is defined as the number of feature vector sets that lead to clustering where $comp(r)\neq0$ which in turn requires a minimum of two contacts in the EZ cluster. Since we need a EZ vs non-EZ label for each node, the vector $w$ was binarized using a threshold $\theta=\frac{n-1}{n}$ . For the specific case n=1, $\theta=0.5.$ We constructed the binary vector $l\inR^{N}$ by thresholding $w$,
+
+$$
+l_{i}={1               w_{i}>\theta0         otherwise
+$$
+
+We repeated the above procedure for a range of parameter values: $c\in{1, 2,…, 10, 15}$ and $d\in{0.1, 0.2,…, 0.8}$. The final consensus vector $w\inR^{N}$ was then computed to represent the overall chance of a node being in the target (EZ) cluster as
+
+$$
+w=\sumc\sumdperf(c,d)l_{cd}
+$$
+
+The vector $w$ is continuous where larger values indicate increasingly likely candidates for the EZ. We applied k-means clustering (k=3) on vector $w$ and took the cluster with the largest average value as the final target (EZ) group of contacts. Note that in Figure 2 and Figure 2—figure supplement 1 we use a single fixed c and d for illustration purposes.
+
+### Brain states
+
+The seizure evolution is captured by the right singular vectors ($v_{i}\inR^{T_{tot}}$). To preprocess the data, the singular vectors were separated into distinct seizures and frequency bands. For each vector, the MATLAB outlier removal function hampel was then used to remove outliers, with 15 neighboring points and three scaled median absolute deviations (1.4826 × MAD). These vectors were then reconcatenated in two frequency bands ($v∼_{if}\inR^{T_{tot}/2}$) where $T_{tot}$ was defined as two times the length of seizures. We then applied K-means clustering, separately for each possible combination of four drawn from the six vectors corresponding to the first three pre-processed singular vectors in each of the two frequency bands. In other words, selecting from the following set,
+
+$$
+S={v∼_{11},v∼_{12},v∼_{21},v∼_{22},v∼_{31},v∼_{32}}
+$$
+
+We repeated the analysis for different numbers of clusters and used the MATLAB silhouette function to determine the optimal number of clusters and best set of vectors. This metric compares the distance of each point with other points in its cluster to the distances to other clusters. The clustering with the highest Silhouette value was selected to construct the transition matrices and find the transitions among brain states (clusters) shown in Figure 3 and Figure 3—figure supplement 1. The final four selected vectors from $S$ were denoted $v-_{a}, v-_{b}, v-_{c}$ , and $v-_{d}$ .
+
+### Statistical analysis of functional connectivity in high-frequency
 
 To quantify brain dynamics, time-varying connectivity measures were constructed for each seizure and frequency band, based on the connectivity between brain regions as follows: EZ-nR, RnEZ-nR, and nR-nR, where EZ, RnEZ, and nR represent respectively predicted EZ (identified using the methodology described above), resection region not in the EZ, and non-resected areas. Each measure was defined by averaging all connectivity values between nodes in the two regions. As a result, we have three synchrony time-series vectors for each seizure/patient/frequency (s/p/f) at 2 samples/s.
 
 We examined these time series over three sub-intervals: pre-ictal (−0.3,–0.1) L, mid-seizure (0.3, 0.5)L, and post-ictal (1, 1.2)L. For each synchrony measure, we computed the average value of connectivity in these intervals, resulting in nine values for each s/p/f (39 seizures in total and two frequency bands). We employed a robust percentile bootstrap test (Wilcox, 2011) with a one-step M-estimator to perform statistical tests for pairwise comparison between and within the three measures at each of the three periods (function rmmcppb in WRS2 package (Wilcox, 2011) for R). Computed p-values were corrected using Hochberg FDR correction for J=18 comparisons. The results are shown in Figure 4 and Figure 4—source data 1 . The EZ-nR connectivity in the mid-seizure was the most remarkable characteristic of the ictal period. Consequently, we used this to explore how the feature changes among patients. For each participant, we averaged the value of EZ-nR among all seizures. We then performed robust regression of these values using bootstrap sampling and the Theil-Sen algorithm (Wilcox, 2011) against both patient age and duration of epilepsy as shown in Figure 5.
 
-## Low-frequency propagation networks
+### Low-frequency propagation networks
 
 Data was filtered in the range of 3–50 Hz. Propagation networks were computed using the PLI over a moving window with a 2.5 s length and 90% overlap. Connectivity matrices were computed from normalized PLI values using element-wise z-scoring with respect to the pre-ictal period and their values were mapped into the interval (0 1) using an exponential transform (Burns et al., 2014). We used the previously defined measures, EZ-nR, RnEZ-nR, and nR-nR, to explore interactions among brain regions at these lower frequencies. An analogous analysis to the last section was performed except the selected time intervals were pre-ictal (−0.3,–0.1) L, early-seizure (0,0.2)L, and pre-termination (0.8,1)L. These results are presented in Figure 6 and Figure 6—source data 1.

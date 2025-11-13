@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.45909.001 RecQ helicases promote genomic stability through their unique ability to suppress illegitimate recombination and resolve recombination intermediates. These DNA structure-specific activities of RecQ helicases are mediated by the helicase-and-RNAseD like C-terminal (HRDC) domain, via unknown mechanisms. Here, employing single-molecule magnetic tweezers and rapid kinetic approaches we establish that the HRDC domain stabilizes intrinsic, sequence-dependent, pauses of the core helicase (lacking the HRDC) in a DNA geometry-dependent manner. We elucidate the core unwinding mechanism in which the unwinding rate depends on the stability of the duplex DNA leading to transient sequence-dependent pauses. We further demonstrate a non-linear amplification of these transient pauses by the controlled binding of the HRDC domain. The resulting DNA sequence- and geometry-dependent pausing may underlie a homology sensing mechanism that allows rapid disruption of unstable (illegitimate) and stabilization of stable (legitimate) DNA strand invasions, which suggests an intrinsic mechanism of recombination quality control by RecQ helicases.
+RecQ helicases promote genomic stability through their unique ability to suppress illegitimate recombination and resolve recombination intermediates. These DNA structure-specific activities of RecQ helicases are mediated by the helicase-and-RNAseD like C-terminal (HRDC) domain, via unknown mechanisms. Here, employing single-molecule magnetic tweezers and rapid kinetic approaches we establish that the HRDC domain stabilizes intrinsic, sequence-dependent, pauses of the core helicase (lacking the HRDC) in a DNA geometry-dependent manner. We elucidate the core unwinding mechanism in which the unwinding rate depends on the stability of the duplex DNA leading to transient sequence-dependent pauses. We further demonstrate a non-linear amplification of these transient pauses by the controlled binding of the HRDC domain. The resulting DNA sequence- and geometry-dependent pausing may underlie a homology sensing mechanism that allows rapid disruption of unstable (illegitimate) and stabilization of stable (legitimate) DNA strand invasions, which suggests an intrinsic mechanism of recombination quality control by RecQ helicases.
 
 ## Introduction
 
@@ -31,35 +31,63 @@ To test this theory, we set out to determine the origin of HRDC-mediated pausing
 
 ## Results
 
-## RecQ pause positions are strongly correlated with DNA sequence
+### RecQ pause positions are strongly correlated with DNA sequence
 
 Single-molecule measurements of RecQ helicase unwinding activity were performed with 174- or 584-base pair DNA hairpins using an MT apparatus (Figure 1A). DNA hairpin substrates were attached to the flow-cell surface and to a 1- or 2.8 µm magnetic bead via a 1.1 kbp double-stranded DNA handle and 60-nucleotides of single-stranded poly-dT, respectively (Figure 1A). Measurements with the DNA hairpin were performed at a constant force of 8 pN under which the hairpin did not open spontaneously. In the presence of RecQ helicase (20–100 pM), unwinding activity was monitored in real-time by tracking the three-dimensional position of a tethered bead at 60 or 200 Hz. Trajectories of the bead extension as a function of time were analyzed by fitting with a T-test based step finding algorithm to obtain the mean unwinding rate, the ‘step’ unwinding rate between pauses, the pause positions, and the pause durations (Harami et al., 2017; Seol et al., 2016).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig1-v2.jpg)
 
-**Figure 1.:** (A) Cartoon representation of the experimental scheme (not to scale). The 3′ biotinylated end of the single-stranded poly-dT segment (blue) is attached to a streptavidin-coated 1- or 2.8 µm magnetic bead (brown sphere), whereas the 5′ digoxigenin-labeled double-stranded handle (black line) is attached via anti-digoxigenin (red square) to the surface of the flow-cell. Small magnets above the flow-cell apply a constant upwards force on the magnetic bead. RecQ (purple and green RecA- like domains, yellow zinc binding and winged helix domain, orange HRDC domain) binds at the base of the hairpin (blue helix) and unwinds it, which results in the increase in the extension of the bead. (B) Individual unwinding events of RecQWT and RecQ-dH. Unwound DNA indicates the amount of DNA hairpin opened by RecQ in base pairs. The ends of unwinding events are indicated by a yellow pointer. Pause locations identified from T-test fitting are indicated as solid red lines. Additional RecQ-dH unwinding traces are displayed to show the range of average unwinding rates (gray lines; note that only the region from the beginning to the maximum unwound positions are plotted).10.7554/eLife.45909.004Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Cartoon representation of the experimental scheme (not to scale). The 3′ biotinylated end of the single-stranded poly-dT segment (blue) is attached to a streptavidin-coated 1- or 2.8 µm magnetic bead (brown sphere), whereas the 5′ digoxigenin-labeled double-stranded handle (black line) is attached via anti-digoxigenin (red square) to the surface of the flow-cell. Small magnets above the flow-cell apply a constant upwards force on the magnetic bead. RecQ (purple and green RecA- like domains, yellow zinc binding and winged helix domain, orange HRDC domain) binds at the base of the hairpin (blue helix) and unwinds it, which results in the increase in the extension of the bead. (B) Individual unwinding events of RecQWT and RecQ-dH. Unwound DNA indicates the amount of DNA hairpin opened by RecQ in base pairs. The ends of unwinding events are indicated by a yellow pointer. Pause locations identified from T-test fitting are indicated as solid red lines. Additional RecQ-dH unwinding traces are displayed to show the range of average unwinding rates (gray lines; note that only the region from the beginning to the maximum unwound positions are plotted).
 
 As described previously (Harami et al., 2017), frequent pausing and strand-switching by WT RecQ (RecQWT) is caused by the HRDC as the HRDC deletion mutant (RecQ-dH) shows significantly less pausing during DNA hairpin unwinding (Figure 1B). Pausing is attributed to transient binding of the HRDC domain to the displaced single-stranded DNA behind RecQ. Since both the displaced and the translocation strands of ssDNA are under tension in the hairpin substrate, binding of the HRDC to the displaced strand will prevent forward motion of the helicase. HRDC binding to either duplex DNA ahead of the helicase, or to the translocation strand of ssDNA behind the helicase, are ruled out by the lack of pauses during the unwinding of a ‘gapped’ DNA substrate in which the displaced strand is not constrained (Harami et al., 2017). Given the mechanical origin of the pausing associated with transient binding of the HRDC, the pause positions would be expected to be random, dependent on the stochastic kinetics of the interaction between HRDC and the displaced ssDNA.
 
 Interestingly, the dwell-time histogram as a function of position for RecQWT unwinding traces exhibits peaks at distinct positions along the hairpin (Figure 2A; top). The peaks in the dwell-time histogram of unwinding traces arise from long and/or frequent pauses at specific positions during DNA hairpin unwinding by RecQ helicase (Figure 2—figure supplement 1). To identify the sequence context of the pauses, the extension change associated with DNA hairpin opening was converted to base-pairs via the worm-like chain (WLC) model of DNA (Manosas et al., 2010). Each unwound base pair resulted in the increase of the molecular extension by two ssDNA nucleotides, which at an applied force of 8 pN corresponds to ~0.8 nm assuming a 1 nm persistence length and a 0.65 nm inter-phosphate distance. With this conversion factor, the extension change for the fully open hairpin was 174 bp, consistent with the actual DNA hairpin size (174 bp). To determine if pausing is related to DNA base-pair energy, we compared the unwinding dwell time histogram (Figure 2A; top) with the DNA base-pair stability calculated by performing a running average (6 bp window) of the exponential of the DNA base-pair energy for the 174 bp DNA hairpin sequence based on the nearest neighbor base-pair energy model (Patten et al., 1984; SantaLucia, 1998; Huguet et al., 2010). We found that the peak locations of pausing and duplex stability were highly correlated (Figure 2A; bottom). The exact locations of peaks were identified by globally fitting the dwell-time histogram and the exponential of the average DNA melting energy with the sums of Gaussian distributions (Figure 2—figure supplement 2). The relationship between pausing during unwinding and the peaks in the dwell-time histogram is explained in Figure 2—figure supplement 2B (top). Consistent with this observation, pause positions from the dwell time histogram of RecQWT were linearly correlated with peak positions from the DNA base-pair energy profile (Figure 2B; top) with a slope of 0.99 ± 0.03, linear correlation coefficient (Pearson’s r) of 0.97, and χ2 = 0.85, indicating a strong linear correlation. The sequence around the peak positions (±4 bp) contained a high percentage of GC (~70%), consistent with the finding that the pause positions are related to the duplex stability of the DNA. This finding raises the question of how HRDC-dependent pausing is correlated with DNA base-pair melting despite the fact that the HRDC itself does not play a role in unwinding DNA or exhibit sequence-specific ssDNA binding. We hypothesized that the HRDC may amplify or stabilize transient pauses associated with RecQ core domain (RecQ-dH) encountering regions of increased duplex stability (high GC content).
 
-## Sequence-dependent pausing originates from sequence-dependent unwinding kinetics
+![Figure 2.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig2-v2.jpg)
+
+**Figure 2.:** (A) An example trace (top), and dwell-time histogram of RecQWT174 bp hairpin unwinding trajectories (red line) plotted with the exponential of the DNA base-pair melting energy averaged over a 6 bp running window (black line) of the 174 bp DNA hairpin (bottom). The gray bars correspond to peaks in the dwell time histogram associated with RecQ pausing. (B) Linear regression analysis of pause positions of RecQwt (top) and of RecQ-dH (bottom) plotted as function of the peak positions of DNA base-pair stability. The pause positions plotted as a function of energy peak positions were fit with straight lines returning fit values: slope of 0.99 ± 0.03, linear correlation coefficient (Pearson’s r) of 0.97, and χ2 = 0.85 (top); a slope of 0.96 ± 0.06, Pearson’s r = 0.95, and χ2 = 1.1 (bottom). The error bars correspond to the standard error of the mean (SEM).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Example traces show long pauses with repetitive rezipping and unwinding of short stretches (<10 bp) around 55 bp, 90 bp, and 120 bp resulting in multiple peaks in the corresponding histograms.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The peak locations in the calculated sequence-dependent pause probability (proportional to the exponential of the DNA hairpin melting energy averaged over 6 bp) and the experimental position dwell-time histogram as a function of hairpin sequence were identified by fitting with a sum of Gaussians. (A) The relative pause probability (blue dots) was globally fitted with a multi-peak Gaussian function (black line). The labeled individual Gaussian peaks are shown below (red lines). (B) Top: The relationship between pausing during unwinding and the peaks in the dwell-time histogram. Bottom: The 1 bp bin width dwell-time histogram (red dots) of RecQwt unwinding traces was fitted with a multi-peak Gaussian function (black line) and individual Gaussian peaks are shown below (red lines). The zero peak corresponds to the base-line extension when the hairpin is fully closed. (C) The 1 bp bin width dwell-time histogram (green dots) for RecQ-dH unwinding traces with the multi-Gaussian fit shown in black and the individual Gaussian peaks in red below.
+
+### Sequence-dependent pausing originates from sequence-dependent unwinding kinetics
 
 To test this hypothesis, we determined if the transient pausing positions of RecQ-dH correlated with the peaks in the DNA base-pair stability curve (Figure 2B). The pause positions for RecQ-dH were obtained from dwell time histograms following the same procedure used for RecQWT (Figure 2—figure supplement 2C) and plotted as a function of the peak positions of DNA base-pair stability (Figure 2B). The pause positions of RecQ-dH were linearly correlated with the duplex stability peaks, returning a slope of 0.96 ± 0.06, Pearson’s r = 0.95, and χ2 = 1.1. Moreover, the pause positions of RecQ-dH are statistically identical to those of RecQWT, confirming that HRDC-dependent pausing likely originates from stabilization of sequence-dependent unwinding kinetics of RecQ helicase. Sequence-dependent pausing by RecQ-dH reveals important mechanistic insights into the unwinding and translocation mechanism. If the enzyme unwinds one base pair per each kinetic step, the largest energy difference for a single base-pair opening (G/C vs A/T) is ~2.0 kBT so the pause duration ratio of G/C to A/T will be a maximum of ~7 fold. However, the roughly 20-fold difference in the time the enzyme requires to unwind DNA at the longest pause duration sites in comparison to the average unwinding rate, suggests that more than a single base pair is being opened by the enzyme during each kinetic step. Following this simple analysis, we suggest that pausing is governed by a combination of the DNA base-pair stability and the number of base pairs melted by the helicase during each kinetic step. During processive unwinding, this melting step is the rate limiting step that determines the unwinding rate and pause durations.
 
-## Simulation of unwinding mechanism of RecQ reveals multi-base pair kinetic step
+### Simulation of unwinding mechanism of RecQ reveals multi-base pair kinetic step
 
 To distinguish among possible models for the unwinding mechanism of RecQ-dH based on its pausing behavior, we simulated unwinding trajectories comprising a series of pauses and translocations (Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig3-v2.jpg)
+
+**Figure 3.:** (A) Example simulated 174 bp DNA hairpin unwinding traces (1 bp melt and step (orange line), 1 bp melt and 5 bp step (red line), and 2 bp melt and step (green line)) overlaid with an example RecQ-dH unwinding trace (black line). Unwinding traces were simulated using Equations 1 and 2. The overall unwinding events are composed of pauses of lifetime (τp) due to melting of the base-pairs, followed by a rapid translocation step in time (τt). τp was calculated based on the sequence stability using nearest neighbor energy parameters (Patten et al., 1984; SantaLucia, 1998; Huguet et al., 2010). The total duration was adjusted to match the mean unwinding rate of RecQ-dH. (B) Pause times plotted as a function of the unwound hairpin for the three example models (with the same marker and line colors) in panel (A). Pause times and positions were obtained by analyzing simulated unwinding traces (100 traces for each condition) using T-test analysis and averaging pause times over a 5 bp window. The experimental pause lifetimes of RecQ-dH are shown in the black solid line. (C) Reduced χ2 (χν2) measure of the correspondence between measured and simulated pause durations as a function of pause position plotted as a function of the kinetic step size for three kinetic stepping models (see main text): 1 bp melt and step (orange filled circles), 1 bp melt and n bp step (red filled circles), and n bp melt and step (green filled circles). χν2 for 1 bp melt and step is significantly larger than the minima of the other two models. The χν2 is minimized for n = 2 bp for the n-bp melt and step model whereas χν2 is minimized for n = 5 bp for the 1 bp melt and n bp step model. (D) Na+ dependent unwinding rates of RecQ-dH (black filled circles and dashed line) and predictions of the two kinetic models with the kinetic step-size, n, that minimizes χν2 for each model: 1 bp melt and 5 bp step (red filled circles and dashed line), and 2 bp melt and step (green filled circles and dashed line). The error bars correspond to the standard error of the mean (SEM).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Measured RecQ-dH unwinding traces compared with simulated traces of 10 different pausing models (see main text).
+
 Based on previous studies of helicases (Manosas et al., 2010; Cheng et al., 2007; Neuman et al., 2005; Cheng et al., 2011; Lin et al., 2017; Myong et al., 2007), we considered two scenarios for RecQ-dH unwinding with an n-bp kinetic step size: either the enzyme unwinds n base-pairs simultaneously then rapidly translocates along the unwound DNA (simultaneous melting model), or it sequentially unwinds n base-pairs then releases the newly melted ssDNA (delayed release model) (Figure 3A). We exclusively simulated RecQ-dH unwinding and pausing kinetics rather than RecQWT due to the significantly more complex behavior of the RecQWT unwinding trajectories (Figure 1B).
 
-In the simultaneous melting model, the pause duration, τ is related to the sum of n base-pair energies at the position of the ith kinetic step,(1)τp(i)= ARecQexp⁡∑s=1nG1bpi-1+s
+In the simultaneous melting model, the pause duration, τ is related to the sum of n base-pair energies at the position of the ith kinetic step,
 
-Here G1bp is the free energy required for 1 base-pair melting at the ith position calculated using the nearest-neighbor energy parameters (Patten et al., 1984; SantaLucia, 1998; Huguet et al., 2010), s is a step index ranging from 1 to n, and ARecQ is a pre-factor used to adjust the simulation to give the same average unwinding (46 nt/s) and translocation rate (~100 nt/s) as the RecQ-dH construct (Manosas et al., 2010). In the delayed release model,τpi is the sum of the pause times associated with melting each of n base pairs at the ith kinetic step,(2)τp(i)=∑s=1nARecQexp⁡(G1bp((i−1)+s))
+$$
+\tau_{p}(i)=A_{RecQ}exp⁡\sums=1nG_{1bp}i-1+s
+$$
+
+Here G1bp is the free energy required for 1 base-pair melting at the ith position calculated using the nearest-neighbor energy parameters (Patten et al., 1984; SantaLucia, 1998; Huguet et al., 2010), s is a step index ranging from 1 to n, and ARecQ is a pre-factor used to adjust the simulation to give the same average unwinding (46 nt/s) and translocation rate (~100 nt/s) as the RecQ-dH construct (Manosas et al., 2010). In the delayed release model,$\tau_{p}i$ is the sum of the pause times associated with melting each of n base pairs at the ith kinetic step,
+
+$$
+\tau_{p}(i)=\sums=1nA_{RecQ}exp⁡(G_{1bp}((i−1)+s))
+$$
 
 Stochastic simulations of both models were run with different step-sizes, n. For each value of n, the pre-factor ARecQ was adjusted to match the measured average rate of RecQ-dH, and the single-strand DNA translocation rate was 100 bp/s (Manosas et al., 2010; Bagchi et al., 2018). Simulated unwinding traces were generated for different kinetic step-sizes for the two different models (100 traces per each condition, example traces are shown in Figure 3—figure supplement 1). Simulated traces were analyzed with a T-test based step finding algorithm with the same parameters used for experimental data analysis. Pause durations were binned over 5 bp intervals for simulation and experimental traces and the mean pause duration for each bin was calculated (Figure 3B). Simulation results were compared with experimental data for RecQ-dH by calculating the reduced χ2 (χν2) between the simulated and experimental traces (Figure 3C). For the delayed release model, χν2 reached a minimum around 5 bp (χν2 = 0.9x10−1), lower than the minimum for simultaneous melting model that reached a minimum at 2 bp (χν2 = 1.4x10−1). This suggests that a delayed release scenario may describe the unwinding mechanism of core RecQ. To confirm this finding, we investigated how the RecQ-dH unwinding rate was affected by Na+ concentration and compared the results with the two unwinding models. As DNA base-pair melting energy increases with Na+ concentration (SantaLucia, 1998; Huguet et al., 2010), the average unwinding rate predicted by the simultaneous melting model should decrease more rapidly than that predicted by the delayed release model (Figure 3D). We varied the Na+ concentration from 25 to 500 mM while maintaining Mg2+ at 5 mM under otherwise identical buffer conditions. The unwinding rate of RecQ-dH decreased with increasing Na+ concentration. The relative decrease in unwinding rate was much better described by the delayed release model with a 5 bp kinetic step. than the simultaneous 2 bp DNA melting model (Figure 3D). The small deviation between the delayed release model and the measured Na+ concentration dependence of the unwinding rate suggests that although the duplex unwinding remains the rate-limiting step, the Na+ concentration effects other aspects of unwinding such as protein-DNA interactions, which are beyond the scope of the simple model. Thus, to further test and confirm the delayed release unwinding model, we performed two additional experiments as explained below.
 
-## Unwinding kinetics of forked DNA substrates in ensemble rapid kinetic experiments support the delayed release model
+### Unwinding kinetics of forked DNA substrates in ensemble rapid kinetic experiments support the delayed release model
 
 The significant DNA sequence dependence of the RecQ-catalyzed DNA unwinding rate and pausing characteristics detected in MT single-molecule experiments should be reflected in ensemble unwinding kinetic measurements, which are suitable for the determination of the kinetic step size and the macroscopic dsDNA unwinding rate (Lucius et al., 2003). In these experiments unwinding kinetics are monitored via the appearance of fully unwound reaction products. Thus, ensemble unwinding experiments complement MT experiments, in which individual unwinding steps are monitored. Importantly, these techniques together should allow determination of the microscopic unwinding mechanism of RecQ helicase constructs based on the proposed base-pair energy dependent unwinding models.
 
@@ -67,25 +95,73 @@ To test this idea, we performed single-turnover unwinding kinetic experiments in
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig4-v2.jpg)
 
-**Figure 4.:** (A) Electrophoretogram of a single-turnover unwinding experiment. Preincubation of fluorescein-labeled forked duplex DNA (30 nM, gc36) with RecQ-dH (100 nM) was followed by rapid mixing with ATP (3 mM) plus excess ssDNA trap strand (3 µM) (final post-mixing concentrations). Reactions were stopped by the addition of EDTA (40 mM) and loading dye at different time points (0–150 s, cf. panel B) using a quenched-flow instrument or by manual mixing. Amounts of DNA species (forked duplex and ssDNA, depicted by cartoons) labeled with fluorescein (asterisk) were detected by a fluorescence imager. “– “denotes a 150 s control reaction in which ATP was absent. (B) Single-turnover unwinding kinetics of forked DNA substrates with GC contents of 36% (light gray), 48% (gray) and 79% (black) of RecQ-dH and RecQWT. Error bars represent SEM calculated from three experiments. Solid lines show fits based on: the n-step model at n = 5 for both helicase constructs (see scheme on panel C); simultaneous model (Equation 1 and panel C) at n = 4 for RecQ-dH and n = 5 for RecQWT; and delayed release model (Equation. and panel C) at n = 4 for RecQ-dH and n = 5 for RecQWT. (C) Common scheme for the modified n-step and derived simultaneous melting and delayed release models. In the models, unwinding starts from the ssDNA-dsDNA junction. Of all DNA-RecQ complexes (D.R), only a fraction (fP, D.Rp, lower row) unwinds the dsDNA segment in a single run, consisting of n consecutive irreversible kinetic steps (k(1)…k(). In the n)n-step model, the rate constant of each unwinding kinetic step is identical (k(1) = k(). In contrast to this, in the simultaneous melting and delayed release models, the rate constant of each unwinding kinetic step depends on the base pair energy of the dsDNA segment to be unwound (segment length according to kinetic step size), as described in n)Equation 1 and 2, respectively. A fraction of DNA bound helicase molecules (fN, D.RN, upper row) is unable to successfully unwind DNA due to the limited processivity of the enzyme and/or more complex unwinding patterns. After dissociating from the DNA substrate, these enzyme molecules can rebind to the substrate at rate constant krebind and start a new unwinding run (D.R). (D–E) Determined χv2 values from fitting the (D) n-step model for RecQ-dH (filled circles) and RecQWT (open circles) or (E) fitting the simultaneous melting (green) and delayed release models (red) for the indicated helicase construct. Other determined parameters are listed in Supplementary file 1 Table S2.10.7554/eLife.45909.013Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Electrophoretogram of a single-turnover unwinding experiment. Preincubation of fluorescein-labeled forked duplex DNA (30 nM, gc36) with RecQ-dH (100 nM) was followed by rapid mixing with ATP (3 mM) plus excess ssDNA trap strand (3 µM) (final post-mixing concentrations). Reactions were stopped by the addition of EDTA (40 mM) and loading dye at different time points (0–150 s, cf. panel B) using a quenched-flow instrument or by manual mixing. Amounts of DNA species (forked duplex and ssDNA, depicted by cartoons) labeled with fluorescein (asterisk) were detected by a fluorescence imager. “– “denotes a 150 s control reaction in which ATP was absent. (B) Single-turnover unwinding kinetics of forked DNA substrates with GC contents of 36% (light gray), 48% (gray) and 79% (black) of RecQ-dH and RecQWT. Error bars represent SEM calculated from three experiments. Solid lines show fits based on: the n-step model at n = 5 for both helicase constructs (see scheme on panel C); simultaneous model (Equation 1 and panel C) at n = 4 for RecQ-dH and n = 5 for RecQWT; and delayed release model (Equation. and panel C) at n = 4 for RecQ-dH and n = 5 for RecQWT. (C) Common scheme for the modified n-step and derived simultaneous melting and delayed release models. In the models, unwinding starts from the ssDNA-dsDNA junction. Of all DNA-RecQ complexes (D.R), only a fraction (fP, D.Rp, lower row) unwinds the dsDNA segment in a single run, consisting of n consecutive irreversible kinetic steps (k(1)…k(n)). In the n-step model, the rate constant of each unwinding kinetic step is identical (k(1) = k(n)). In contrast to this, in the simultaneous melting and delayed release models, the rate constant of each unwinding kinetic step depends on the base pair energy of the dsDNA segment to be unwound (segment length according to kinetic step size), as described in Equation 1 and 2, respectively. A fraction of DNA bound helicase molecules (fN, D.RN, upper row) is unable to successfully unwind DNA due to the limited processivity of the enzyme and/or more complex unwinding patterns. After dissociating from the DNA substrate, these enzyme molecules can rebind to the substrate at rate constant krebind and start a new unwinding run (D.R). (D–E) Determined χv2 values from fitting the (D) n-step model for RecQ-dH (filled circles) and RecQWT (open circles) or (E) fitting the simultaneous melting (green) and delayed release models (red) for the indicated helicase construct. Other determined parameters are listed in Supplementary file 1 Table S2.
 
 Using a modified version of the n-step model (Figure 4C), global fitting of the unwinding kinetics of the gc36, gc48 and gc79 substrates using an integer series of n ranging from 1 to 7 revealed smallest χv2 values for an apparent kinetic step size of 5 bp for both RecQ and RecQ-dH (Figure 4B–D) with all DNA substrates, similar to that suggested by our MT results (Figure 3A–B) and by previous findings (Lin et al., 2017; Harami et al., 2015). However, the n-step model does not consider the sequence dependence of the rates of elementary unwinding steps, precluding the distinction between different microscopic mechanisms producing the same kinetic step size. Therefore, we used the same physical framework as described for the MT experiments (Equations 1 and 2) and performed global kinetic fitting to all transients of a given helicase construct (RecQWT or RecQ-dH) unwinding the different forked DNA substrates, based on the DNA sequence-dependent simultaneous melting and delayed release unwinding models (Figure 4B–C). For both models, fitting was done using an integer series of n ranging from 1 to 7. In agreement with the results of the MT analysis (Figure 3C), the smallest χv2 value was obtained for the delayed release model with a kinetic step size of 4 bp for RecQ-dH and 5 bp for RecQWT (Figure 4B and C, other parameters are listed in Supplementary file 1 Table S2).
 
-## Direct measurement of 5 bp kinetic step size and time-dependent release of ssDNA
+### Direct measurement of 5 bp kinetic step size and time-dependent release of ssDNA
 
 If RecQ-dH takes a certain kinetic step size, it could in principle be directly observed in the single-molecule unwinding traces. However, the enzyme unwinds DNA too rapidly at high ATP concentrations for steps to be routinely and accurately detected, given the spatial resolution limits of the measurement. Under our experimental conditions, the average baseline noise was ~14 nm at 200 Hz data collection rate. Thus, in order to observe, for example, a 4 bp step (i.e. a 3 nm change in DNA extension), the average pause duration should be >300 ms or the unwinding rate should be less than 13 bp/s (~3 fold slower than 42 bp/s). We tried three different conditions to decrease the unwinding rate of RecQ: lowering the ATP concentration (Figure 5—figure supplement 1) and including non-hydrolysable ATP analogues, ATPγS or AMP-PNP, in the assay (Figure 5—figure supplement 2). We found that decreasing the ATP concentration (sufficiently lowering the unwinding rate) resulted in frequent and extensive enzyme backsliding (observable as rapid partial rezipping of the hairpin during an unwinding event), which complicates kinetic step size measurements (Figure 5—figure supplement 1). AMP-PNP showed extremely slow dissociation kinetics from RecQ-dH that were inappropriate for unwinding assays (Figure 5—figure supplement 2). On the other hand, ATPγS, showed a comparable binding affinity to ATP with a significantly shorter binding time (~1 s) than AMP-PNP (Figure 5—figure supplement 2). In addition, ATPγS binding transiently locks RecQ in the strong DNA-binding ATP bound state without backsliding, leading to long duration pauses that effectively increased the spatial resolution by permitting longer averaging times (Figure 5A). We measured the unwinding activity of RecQ-dH at different fractions of ATPγS (0.05–0.5 mM) while keeping the total combined concentration of ATP and ATPγS constant at 1 mM. The unwinding rate decreased with increasing ATPγS fraction (Figure 5A). We reason that when the concentration of ATPγS is such that it is bound at least once per kinetic step, then the predominant physical step-size measured in the hairpin unwinding trajectories will correspond to the kinetic step-size. Step-sizes were estimated with two different step finding algorithms: a step finding program originally developed by Kerssemakers and coworkers (Kerssemakers et al., 2006) and the T-test based step finding analysis (Seol et al., 2016). To determine the average kinetic step-size for each condition, the estimated step-sizes were histogrammed and fit with Gaussian distributions (Figure 5B and C). We found that the estimated step size of RecQ-dH from both step-finding algorithms were comparable, converging from ~8 bp at a low ATPγS fraction to 5 bp at higher ATPγS fractions, suggesting that the average kinetic step size of RecQ-dH is 5 bp [T-test: 5.3 ± 0.1 (center); 3.0 ± 0.6 (Standard Deviation); Kerssemakers: 5.2 ± 0.1(center); 2.1 ± 0.1 (Standard Deviation), errors correspond to the standard deviations from Gaussian fitting]. The broad step-size distribution could reflect the stochastic nature of ssDNA release by RecQ. Also, it is likely that the two ssDNA strands are released asynchronously by RecQ. In line with this, we occasionally observed a 2.5 bp kinetic step at 500 µM ATPγS, and the step-size distribution at lower ATPγS fractions included peaks at 7.5, 10, and 12.5 bp, consistent with a fundamental step-size of 2.5 bp corresponding to the release of one ssDNA strand of 5 nt (Figure 5—figure supplement 3).
 
-## Tight mechano-chemical coupling of ATP-dependent unwinding by RecQ
+![Figure 5.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig5-v2.jpg)
 
-The prolonged pause state due to ATPγS binding instead of ATP at the cleft between two RecA domains of RecQ enabled us to probe the mechano-chemical coupling, C, of RecQ helicase that is a measure of the number of ATP hydrolyzed per kinetic step. For C = m/n (m ATP hydrolysis per n kinetic step size), the average number of bound ATPγS, l, can be estimated based on the binomial probability distribution.(2)l=∑i=0mim!im-i!Pi1-Pm-i(3)P=kATPγS[ATPγS]kATPATP+kATPγS[ATPγS]
+**Figure 5.:** (A) Example traces of hairpin unwinding by RecQ-dH with increasing concentration of ATPγS while maintaining the combined concentration of ATP and ATPγS at 1 mM. (B) Step-size distributions were obtained by analyzing unwinding traces collected at each ATPγS concentration with either T-test or Kerssemakers (KM) step analysis algorithms (see main text). (C) The mean step-size obtained by fitting the distributions in panel (B) with Gaussians plotted as a function of ATPγS concentration. The average step sizes from both the T-test and Kerssemakers (KM) analysis converge to 5 bp with increasing ATPγS concentration. Inset: An example trace with 5 bp steps (red line) and the T-test fit (blue line). (D) Global fitting of the mean pause duration (green solid triangles) and average unwinding rate (red solid circles) as a function of ATPγS concentration, using Equations 4 and 5, reveal a tight mechano-chemical coupling ratio of C = 1.0 ± 0.2 bp/ATP.
 
-P is the probability of ATPγS binding per each cycle. kATP is the ATP on-rate, kATPγS is the ATPγS on-rate, and [ATPγS] and [ATP] are the concentrations of ATPγS and ATP, respectively. The hydrolysis rate of ATPγS by RecQ in the presence of excess dT45 was measured by monitoring thiophosphate production (Saran et al., 2006) and estimated to be < 0.2/s (Appendix 1 and Figure 5—figure supplement 1). This is significantly slower than the measured pause escape rate (2.8 ± 0.1/s) at 500 µM ATPγS, suggesting that koffATPγS is much faster than the rate of ATPγS hydrolysis. Thus, we could simplify the mean pause duration per kinetic step, τ and the mean unwinding rate, v as,(4)τ=l/kATPγSoff+1/kstep(5)v=nτ
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Unwinding traces at four different ATP concentrations. At lower ATP concentrations, events of rapid backward transitions (‘off’) followed by a short pause (off-state) and resumption of unwinding occur more frequently, suggesting an ATP-dependent DNA binding stability and entry into an off-pathway weak DNA-binding state of the enzyme. (B) Global fitting of unwinding rates (v), off-state duration (τoff), and off-state probability (Poff) as function of ATP concentration based on the ATP binding and DNA melting scheme (Scheme A in the Appendix 1). See Supplementary file 1 Table S3 for the fitting parameters.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** In comparison to ATPγS, increasing AMPPNP concentration from 100 to 500 µM, with a constant total concentration of ATP and analog of 1 mM, does not gradually slow down the unwinding of RecQ but increases the frequency of very long pauses. These results suggest that AMPPNP is bound significantly less frequently than ATP but it is stably bound for a long time (>5 s) once incorporated by RecQ-dH. In contrast, ATPγS appears to be bound relatively frequently at higher concentrations, but the resulting pauses in unwinding are significantly shorter than the pauses induced by AMPPNP binding.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig5-figsupp3-v2.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** The pauses in the unwinding trajectories in the presence of ATPγS could arise from slow hydrolysis of ATPγS, from slow release of ATPγS, or a combination of both hydrolysis and release. Hydrolysis of ATPγS by RecQ-dH produces thiophosphate, which can be detected with a Malachite green assay (Saran et al., 2006). To determine the origin of the ATPγS-induced pauses, we measured the production of thiophosphate (blue circles) by 20 nM RecQ with saturating concentration of ssDNA (200 nM dT54 DNA) in 1 mM ATPγS. We fitted the linear portion of the data with a line (black line, slope = 10.8 ± 0.9 ATPγS·hr−1) and normalized the slope of the line by the enzyme concentration to obtain a rate of 0.15 ± 0.01 ATPγS·s−1 per RecQ-dH (cf. the markedly higher dT54-activated RecQ ATPase activity measured earlier: 86 ± 2 ATP·s−1 per RecQ-dH; Harami et al., 2015). The slow rate of hydrolysis suggests that the vast majority of ATPγS-induced pauses correspond to slow release of ATPγS, which is faster than the hydrolysis rate.
+
+### Tight mechano-chemical coupling of ATP-dependent unwinding by RecQ
+
+The prolonged pause state due to ATPγS binding instead of ATP at the cleft between two RecA domains of RecQ enabled us to probe the mechano-chemical coupling, C, of RecQ helicase that is a measure of the number of ATP hydrolyzed per kinetic step. For C = m/n (m ATP hydrolysis per n kinetic step size), the average number of bound ATPγS, l, can be estimated based on the binomial probability distribution.
+
+$$
+l=\sumi=0mi\frac{m!}{im-i!}P^{i}1-P^{m-i}
+$$
+
+
+
+$$
+P=\frac{k_{ATP\gammaS}[ATP\gammaS]}{k_{ATP}ATP+k_{ATP\gammaS}[ATP\gammaS]}
+$$
+
+P is the probability of ATPγS binding per each cycle. kATP is the ATP on-rate, kATPγS is the ATPγS on-rate, and [ATPγS] and [ATP] are the concentrations of ATPγS and ATP, respectively. The hydrolysis rate of ATPγS by RecQ in the presence of excess dT45 was measured by monitoring thiophosphate production (Saran et al., 2006) and estimated to be < 0.2/s (Appendix 1 and Figure 5—figure supplement 1). This is significantly slower than the measured pause escape rate (2.8 ± 0.1/s) at 500 µM ATPγS, suggesting that koffATPγS is much faster than the rate of ATPγS hydrolysis. Thus, we could simplify the mean pause duration per kinetic step, τ and the mean unwinding rate, $v$ as,
+
+$$
+\tau=l/k_{ATP\gammaS}^{off}+1/k_{step}
+$$
+
+
+
+$$
+v=\frac{n}{\tau}
+$$
 
 where kstep is the mean kinetic stepping rate without ATPγS. We obtained the average pause durations for different fractions of ATPγS from 5 to 50 % and globally fitted the pause durations and the average unwinding rates as a function of ATPγS concentration with Eq. 4 and 5 respectively (Figure 5D). From this global fitting, we found that C = 1.0 ± 0.2 bp/ATP, kATP/ kATPγS = 1.2 ± 0.2, and 1/koffATPγS = 0.4 ± 0.1 s suggesting a tight mechano-chemical coupling in agreement with previous ensemble measurements (Harami et al., 2015; Sarlós et al., 2012). We note that rebinding of ATPγS was not taken into account for simplicity in Equations 2 and 3, which is reasonable as ATPγS concentration is lower than ATP except for 50% ATPγS, and because the relative on rate (kATP[ATP] vs kATPγS[ATPγS]) of ATPγS is lower than that of ATP. To ensure that this simplification is reasonable, we simulated how many ATPγS molecules are bound instead of ATP per base pair based on the fitting parameter, kATP/kATPγS = 1.2 at 50% ATPγS. We found that the average is less than one ATPγS per base pair at this condition indicating that repetitive ATPγS binding at the same site is rare.
 
-## Multi-step HRDC dependent pausing kinetics results in a non-linear amplification of intrinsic sequence-dependent pausing
+### Multi-step HRDC dependent pausing kinetics results in a non-linear amplification of intrinsic sequence-dependent pausing
 
 The sequence-dependent unwinding mechanism of RecQ consisting of a 5 bp kinetic step results in transient pauses that are further stabilized by the HRDC, which results in the long-lived sequence-dependent pausing of RecQWT (Figure 2). In addition to the sequence dependence, HRDC-dependent pausing exhibits two interesting features: occasional repetitive rezipping and unwinding (shuttling) around the pause position and significantly prolonged pausing durations for certain pausing positions (Figure 2 and Figure 2—figure supplement 1). It appears that HRDC-binding triggers this shuttling behavior in which 5–10 bp are repetitively unwound and rezipped at the relatively long-lived (>0.14 s) intrinsic pause positions. Shuttling activity repeats until RecQ passes the sequence-dependent roadblock. This complex shuttling behavior was significantly enhanced at those regions where long pauses of RecQ-dH are clustered, such as at 55, 90, and 120 bps (Figure 2—figure supplement 1) resulting in the apparent high dwell probabilities at these sites (Figure 2A). Since these positions also exhibit the highest base-pair stabilities (Figure 2A), the average dwell time of RecQWT is strongly correlated with the base-pair stability. Indeed, the average dwell times for RecQWT are highly non-linearly correlated with the base-pair stability (Figure 6A). In contrast, the dwell-times for RecQ-dH scale linearly and much less dramatically with the base-pair stability (Figure 6A), indicating that the HRDC-stabilized pausing can be described as a non-linear amplifier of the intrinsic sequence-dependent unwinding kinetics. We found that a simple kinetic competition model in which HRDC binding is in kinetic competition with the forward motion of the helicase (Appendix 1) cannot reproduce the dramatic changes in pause probability observed for RecQWT hairpin unwinding (Figure 6—figure supplement 1). In line with this, the pausing duration distribution for RecQwt is better described by a double rather than single exponential distribution (Figure 6—figure supplement 1B). Both pause lifetimes (1.8 ± 0.3 s and 0.4 ± 0.1 s) are longer than the average pause duration (0.14 ± 0.03 s, see SI) for the core RecQ (RecQ-dH), indicating that there are multiple HRDC-dependent pause states.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig6-v2.jpg)
+
+**Figure 6.:** (A) The average dwell times of RecQWT and RecQ-dH plotted as a function of the exponential of the average base-pair energy over a 10 bp window. The non-linearity of RecQWT dwell time data was analyzed with a power law function (y = A·xP solid line). The fit returned A = 7 ± 0.9 (x10−4) and Power = 17.2 ± 3.2 (Errors indicate standard deviations of fitting parameters). (B) Dwell-time histograms of RecQ unwinding the 174 bp DNA hairpin with zero mismatches, that is perfect homology, one mismatch (90 bp), two mismatches (90 and 104 bp), and three mismatches (90, 104, and 124 bp). The prominent peak around 90 bp (green shaded region) shown in the dwell time histogram of the intact DNA unwinding by RecQWT was significantly reduced in the hairpin with a single mismatch and the additional peak around 120 bp (blue shaded region) was further suppressed by the third mismatch at 124 bp. The mismatch sites are indicated as arrows. (C) Model for D-loop homology discrimination via HRDC-mediated non-linear amplification of sequence-dependent pausing by RecQ. At regions of low GC content (upper row), RecQ rapidly unwinds duplex DNA and the HRDC remains in a weak binding ssDNA mode (light green HRDC). At regions of high GC content (lower row), RecQ pauses and the HRDC can switch to a strong ssDNA binding mode (orange HRDC). The subsequent binding of the HRDC to the displaced ssDNA (red HRDC) results in stabilization of the GC-induced pauses. As ssDNA is under tension or otherwise constrained, this interaction effectively hinders the movement of the RecQ core, resulting in short-range (5–10 bp) repetitive unwinding and annealing of DNA. (D) HRDC-dependent pausing regulates D-loop disruption in a homology dependent manner. RecQ can quickly unwind an invading strand of short or only partially homologous DNA, whereas HRDC-dependent pausing slows down unwinding and prevents disruption of an invading strand with an extended homology.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Top: Comparison between the dwell time histograms of RecQWT (red circles, 5 bp binning) and the simulation (black circles, 5 bp binning) based on a simple kinetic competition model. The pause durations of RecQWT for less than 30 bp of unwound duplex (brown shaded region) were not analyzed since long and frequent shuttling activity was difficult to determine from the step finding analysis in this region. Middle: Schematic of the kinetic competition model for HRDC-stabilization of sequence-dependent pauses. HRDC-dependent pausing occurs via kinetic competition between the stepping rate (kstep(i)) and rate of entering into a pause state (kHP), of duration 1/k-HP. Bottom: The rates were estimated from analysis of the pausing around the region of 40 bp opening of the hairpin Pause duration histograms of RecQ-dH and RecQWT with single exponential fits (left). The pauses around 40 bp exceeding 0.4 s, that were not observed in RecQ-dH, show repetitive rezipping and unwinding (black arrows) by RecQWT (right; middle and bottom). There was no apparent shuttling at short pauses less than ~0.4 s (right; top). (B) Pause duration distribution of RecQWT from T-test analysis fit with single and double exponential functions. The single exponential fit provides an average pause time of 1.1 ± 0.1 s with χ2 = 67.1; the double exponential fit yields two different time constants: 1.8 ± 0.3 s and 0.4 ± 0.1 s with χ2 = 40.3. Note: both of these pause durations are longer than the average pause duration (0.14 ± 0.03 s, see above) for the core RecQ (RecQ-dH), indicating that there are multiple HRDC-dependent pause states.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig6-figsupp2-v2.jpg)
 
 To test the proposal that base-pair stability-dependent RecQWT pausing underlies a potential mechanism of homology sensing, we investigated the effect of introducing single mismatches at high probability pause sites. We tested hairpin substrates containing 1, 2, or three single mismatches: (i) a mismatch introduced at 90 bp, (ii) mismatches introduced at 90 bp and 104 bp and (ii) mismatches introduced at 90 bp, 104 bp, and 124 bp. All mismatches were generated by changing G to T on the displaced strand (detailed sequence information is in Appendix 1). We found that pausing of RecQWT around the 90 bp unwound hairpin position was significantly reduced compared to intact 174 bp hairpin when a mismatch was present at 90 bp and additional mismatch at 124 bp further suppressed pausing around 120 bp (Figure 6B and Figure 6—figure supplement 2). The effect of mismatches on pausing of RecQWT can be clearly demonstrated by comparing the dwell-time histograms of three DNA substrates (Figure 6B). The prominent peaks in the dwell time histogram of the intact hairpin DNA were diminished one by one with the introduction of mismatches at the corresponding positions confirming the correlation between pausing and homology (Figure 6B and Figure 6—figure supplement 2).
 
@@ -95,11 +171,11 @@ RecQ helicases are well-established as critical enzymes that contribute to genom
 
 Our study reveals how the unwinding mechanism of the core RecQ helicase, for example RecQ-dH, directly impacts HRDC-dependent pausing and the subsequent control of biological functions mediated by HRDC- dependent helicase activities. We were able to elucidate the coupling between ATP hydrolysis and the unusual kinetics of DNA unwinding by varying the ATP and ATPγS concentrations. We find that RecQ hydrolyzes 5 ATP molecules during a 5 bp kinetic unwinding step that concludes with asynchronous release of two five nt ssDNA segments on average (Figures 3–5). Furthermore, ATP binding likely stimulates RecQ binding to and melting of DNA duplex prior to hydrolysis (Figure 5—figure supplement 1).
 
-## Sequence-dependent unwinding mechanism
+### Sequence-dependent unwinding mechanism
 
 The fundamental activity of helicases is the unwinding of duplex nucleic acids. In general, the unwinding mechanism has been classified as either passive or active depending on the degree to which the enzyme ‘actively’ destabilizes the duplex rather than ‘passively’ waiting for a thermal fluctuation to expose ssDNA (Betterton and Jülicher, 2005; Lohman et al., 2008). For a purely passive helicase, the enzyme does not provide external work to destabilize duplex DNA and translocates only when ssDNA is exposed by thermal fluctuations. On the other hand, an active helicase is actively involved in disrupting the DNA duplex, and in principle, is less sensitive to base-pair energy or sequence. In previous single molecule experiments, E. coli RecQ helicase was identified as an active helicase based on the minimal force and DNA sequence dependence of duplex unwinding (Manosas et al., 2010). In that study, following theoretical work by Betterton et al (Betterton and Jülicher, 2005), RecQ unwinding was modeled as one base-pair melting followed by 1–2 bases translocation. However, we found that the pause durations were generally longer than would be expected for melting of 1 base pair when we compared our results with simulations. We considered two different scenarios: RecQ either destabilizes multiple base-pairs (≥2 bp) during each kinetic step similar to NS3 helicase (Cheng et al., 2007) or delays releasing of multiple unwound base-pairs similar to speculative models suggested in previous studies (Cheng et al., 2011; Lin et al., 2017; Myong et al., 2007; Ma et al., 2018). However, the minimal dependence of the unwinding rate on Na+ concentration in addition to the sequence-dependent pauses cannot be explained by multi-base-pair melting. Rather, we found that an alternative scenario in which RecQ delays the release of nascent single-strand DNA (delayed release) was a better fit to the pause duration and Na+-dependent unwinding rate data, though the associated kinetic step size (number of bp unwound prior to release) was not uniquely constrained by the pause duration or Na+-dependent unwinding rate measurements (Figure 3). This finding is consistent with previous studies revealing ‘asynchronous’ release of nascent ssDNA (Lin et al., 2017; Ma et al., 2018). Nonetheless, the mechanism of delayed release of newly melted nucleotides remains unclear. Previous results suggest that a putative electrostatic interaction between newly melted ssDNA and RecQ sequesters several nucleotides of ssDNA. We consider a similar possibility in which RecQ releases the nascent ssDNA only when the accumulated torsion or tension on bound ssDNA is high enough to disrupt the interaction (Myong et al., 2007).
 
-## RecQ takes 5-base kinetic steps and unwinds one base-pair per ATP hydrolysis
+### RecQ takes 5-base kinetic steps and unwinds one base-pair per ATP hydrolysis
 
 We further refined the delayed release model by directly measuring a 5 bp kinetic step size for DNA unwinding using ATPγS, which sufficiently slows down the unwinding rate without inducing the frequent back-sliding observed at reduced ATP concentrations (Figure 5 and Figure 5—figure supplement 1)). Recent single molecule fluorescent studies showed 2–4 bp kinetic step (Lin et al., 2017; Ma et al., 2018). This smaller and more random nature of the kinetic step size is likely due to the low ATP concentration (2–5 µM), at which ATP binding likely becomes the dominant rate-limiting step slower than or on the same order as the intrinsic off-rate of the nascent DNA. Consistent with this model, the study found a correlation between the ATP concentration and the measured kinetic step size.
 
@@ -107,7 +183,7 @@ The mechano-chemical coupling and kinetic analysis of ssDNA translocation of Rec
 
 Whereas we establish that pausing arises from the stability of DNA duplex, recent work by Voter et. al suggests an alternative mechanism for sequence-dependent pausing. In their work, they identify a ‘Guanine binding pocket’ located in the helicase domain that specifically interacts with guanine bases to destabilize G-quadruplex structures. It is possible that these interactions could also slow down the unwinding rate at clusters of guanine bases in the translocation strand by inducing short pauses (Voter et al., 2018). However, the translocation sequence at the strong pause locations of our DNA hairpin is mixture of G and C bases, suggesting that the pauses we observed originate from the duplex stability. Nevertheless, we cannot entirely rule out the possibility that these specific guanine interactions contribute slightly to the pausing of RecQ core over and above the dominant effect of DNA duplex stability.
 
-## HRDC amplifies weak sequence-dependent pauses during unwinding of RecQ core in a DNA substrate geometry-dependent manner
+### HRDC amplifies weak sequence-dependent pauses during unwinding of RecQ core in a DNA substrate geometry-dependent manner
 
 One of the essential aspects of RecQ is that it processes diverse, non-canonical, DNA substrates in which the HRDC plays an important role in modulating substrate-specific unwinding of RecQ. It has been shown that the HRDC regulates the binding orientation of RecQ core to promote disruption of D-loop structures, early homologous recombination intermediates (Harami et al., 2017). However, it was not clear how it can regulate unwinding of RecQ to selectively disrupt illegitimate or non-homologous invading DNA strands since the HRDC presumably cannot directly sense DNA sequence homology (Harami et al., 2017). Our present study reveals that the HRDC-ssDNA interactions are strongly coupled to DNA sequence-dependent pausing of the RecQ helicase core: ssDNA binding by the HRDC is not random but occurs at DNA sequences where the helicase core pauses due to the high duplex stability (Figure 2). On the other hand, either a low homology (base-pair mismatches) or low duplex stability (low GC regions) strongly reduces RecQ pausing (Figures 2 and 6B and Figure 6—figure supplement 2). Importantly, this feature can support discrimination between legitimate and illegitimate recombination events by RecQ helicases, in accordance with the increased illegitimate recombination frequencies detected in vivo upon compromising RecQ HRDC function (Harami et al., 2017; Wang et al., 2016). Recombination events proceed through the formation of a displacement loop (D-loop) flanked by genomic DNA, which, due to the limited mobility of these large DNA domains, mimics the hairpin geometry of the magnetic tweezers experiments in which the displaced DNA strand is constrained (Figure 6C and D). Previously we showed that the HRDC both targets RecQ to D-loop intermediates and orients the enzyme in a configuration favoring D-loop disruption (Harami et al., 2017). The results obtained here provide a mechanistic basis for the subsequent discrimination between legitimate and illegitimate recombination based on the length and stability of the D-loop structure. RecQ-catalyzed unwinding of long and stable D-loops will be frequently interrupted by HRDC-stabilized pauses that drastically decrease the average unwinding rate. This slow average unwinding rate potentially permits the initiation of down-stream recombination processes associated with DNA synthesis resulting in extension and further stabilization of the D-loop. Conversely, RecQ unwinding of short and/or unstable D-loops will proceed rapidly (60–80 bp/s) resulting in the efficient disruption of the D-loop before it can be further extended. Our study reveals that the strategic location of the HRDC relative to the core domain, combined with sequence-dependent DNA unwinding, enable RecQ helicase to control pausing and shuttling in a substrate-dependent manner and expand its biological activity beyond simple duplex DNA unwinding. Whereas this study focused exclusively on E. coli RecQ, the homology sensing mechanism we propose is potentially applicable to the suppression of illegitimate, or so called ‘homeologous recombination’ by BLM (Wang et al., 2016).
 
@@ -117,22 +193,144 @@ In this study, we focused on elucidating the sequence-dependent unwinding and pa
 
 ## Materials and methods
 
-## DNA substrate preparation
+**Key resources table**
 
-## DNA hairpin substrates
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species)or resource</th>
+      <th>Designation</th>
+      <th>Source/reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>ER2566</td>
+      <td>New England Biolabs</td>
+      <td>NEB Cat. #: E4130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>Modified pTXB vector</td>
+      <td>PMID: 26067769</td>
+      <td></td>
+      <td>Transformation and expression of RecQ constructs</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>pKZ1</td>
+      <td>PMID: 28069956</td>
+      <td></td>
+      <td>Template for hairpin DNA substrate</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-digoxigenin (Sheep Polyclonal)</td>
+      <td>Roche</td>
+      <td>Roche Cat# 11333089001, RRID:AB_514496</td>
+      <td>Reconstituted in 1x Phosphate buffered saline (0.6 µg)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IMPACT purification system</td>
+      <td>New England Biolabs</td>
+      <td>NEB Cat. #: E6901S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PCR DNA purification kit</td>
+      <td>Qiagen</td>
+      <td>Qiagen Cat. #: 28104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Streptavidin coated magnetic beads (ø: 1 and 2.8 µm)</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen Cat. #: 65602 and 65305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Phusion high-fidelity DNA polymerase</td>
+      <td>New England Biolabs</td>
+      <td>NEB Cat. #: M0530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>T4 DNA ligase</td>
+      <td>Promega</td>
+      <td>Promega Cat. #: M1801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Nt.BbvcI</td>
+      <td>New England Biolabs</td>
+      <td>NEB Cat. #: R0632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BsaI-HF</td>
+      <td>New England Biolabs</td>
+      <td>NEB Cat. #: R3535</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabVIEW, Instrument control software</td>
+      <td>National Instruments</td>
+      <td>NI Cat. #: 776678–35</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor pro 7, Data analysis</td>
+      <td>Wavemetrics PMID: 28069956</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB, Data analysis</td>
+      <td>MathWorks PMID: 16799566</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KinTek Global Kinetic Explorer 4.0, Data analysis</td>
+      <td>KinTek</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### DNA substrate preparation
+
+#### DNA hairpin substrates
 
 Generation of the 174 bp DNA hairpin was previously described in detail (Harami et al., 2017). The 584 bp DNA hairpin was prepared by ligation of a 500 bp DNA hairpin with ~1.0 kb DNA handle. The 1.0 kb DNA handle was generated first by PCR of pKZ1, which contains two BbvcI sites spaced by 37 bp, between 4550 and 258 using one primer (258 position) containing a BsaI digestion site and the other primer (4550 position) labeled with 5´-digoxygenin. PCR products were digested by BsaI and gapped with Nt. BbvcI following the same method to generate the handle of the 174 bp DNA hairpin. 3´ biotin-labeled poly dT with a 33 bp region complementary to the gapped region of the 1 kb DNA handle was ligated to the 37-nt gapped region of 1 kb DNA handle. The 500 bp DNA hairpin was generated by PCR of Lambda DNA (NEB) between 23104 and 23608 and both ends were digested by BsaI. The final product was made by ligation of the 1 kb DNA handle with 3´ biotin-labeled poly dT, 500 bp DNA hairpin, and 12 bp DNA with a loop of 4 dT nucleotides to form the hairpin from the PCR product.
 
 174 bp DNA hairpin with 1, 2, or 3 specific mismatch mutations (90 bp; 90 and 104 bps; 90, 104, 124 bps on the displacing strand) were generated by first cutting the PCR product for the 174 bp hairpin with NheI, yielding a 5´CTAG overhang. In order to prevent 100 bp fragments from NheI digestion to religate back to the DNA handle, the digested DNA band was extracted from an agarose gel. The two complementary oligos (88 nucleotides; Appendix 1) were annealed by incubation at 94°C for 5 min and then subsequent cooling to 4°C at a rate of −1 °C/s. The final product was made by ligation of the NheI-digested PCR product with 3´ biotin-labeled poly dT, 84 bp annealed DNA with differential four nt-overhangs, and 12 bp DNA with a loop of 4 dT nucleotides to form the hairpin.
 
-## Enzyme preparation
+### Enzyme preparation
 
 The production of RecQWT and RecQ-dH were previously described in detail (Seol et al., 2016).
 
-## Ensemble kinetic measurements
+### Ensemble kinetic measurements
 
 Forked DNA substrates (described in Supplementary file 1 Table S1) were generated and single-turnover unwinding experiments were performed as in ref (Harami et al., 2015). Global fitting kinetic analysis was performed using KinTek Global Kinetic Explorer 4.0.
 
-## Single-molecule measurements and data analysis
+### Single-molecule measurements and data analysis
 
 The magnetic tweezers and the experimental set-up were previously described (Seol and Neuman, 2011). A mixture of DNA hairpin (3 pmol) and anti-digoxigenin (0.5 µg) was incubated in phosphate buffered solution (PBS, pH 7.5) for 20 min and introduced into the sample chamber, which was incubated overnight at 4°C. The sample chamber was washed with 1 ml of wash buffer (WB, 1X PBS, 0.02 % v/v Tween-20, and 0.3 % w/v BSA) to remove unbound DNA molecules and 40 µl of magnetic beads (MyOne, Invitrogen) were introduced to form DNA hairpin tethers. Correct DNA hairpins were identified by the sharp DNA extension change upon DNA hairpin unfolding under high force (~19 pN). Upon finding a proper DNA substrate, the chamber was washed with 200 µl of RecQ buffer (30 mM Tris pH 8, 50 mM NaCl, 5 mM MgCl2, 0.3 % w/v BSA, 0.04 % v/v Tween-20, 1 mM DTT, and 1 mM ATP). After washing, RecQ was added at a concentration of 20–100 pM in 200 µl RecQ buffer. DNA unwinding measurements were done by tracking a DNA tethered magnetic bead in real-time with custom written routines in Labview. During the measurement, a 1 µm polystyrene stuck bead was tracked to correct sample cell drift by adjusting the sample cell position using 3-D piezo stage (Physik Instrumente) to compensate for the drift. The unwinding traces were analyzed with a custom-written T-test based algorithm in Igor Pro 6 (Wavemetrics) and the Kerssemakers step finding program in MatLab (Seol et al., 2016; Kerssemakers et al., 2006; Carter and Cross, 2005).

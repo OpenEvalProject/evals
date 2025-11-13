@@ -26,15 +26,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01fpnj063 Department of Microbiology, College of Medicine, The Catholic University of Korea Seoul Republic of Korea
-2. https://ror.org/01fpnj063 Department of Biomedicine and Health Sciences, Graduate School, The Catholic University of Korea Seoul Republic of Korea
-3. https://ror.org/04q78tk20 Division of Haematology-Oncology, Department of Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea
-4. https://ror.org/04q78tk20 Department of Thoracic and Cardiovascular Surgery, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea
-5. https://ror.org/04q78tk20 Division of Pulmonary and Critical Care Medicine, Department of Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea
-6. https://ror.org/04q78tk20 Research Institute for Future Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea
-7. https://ror.org/04q78tk20 Department of Neurosurgery, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea
-8. https://ror.org/05apxxy63 Department of Bio and Brain Engineering, KAIST Daejeon Republic of Korea
-9. https://ror.org/01fpnj063 Precision Medicine Research Center, College of Medicine, The Catholic University of Korea Seoul Republic of Korea
+1. Department of Microbiology, College of Medicine, The Catholic University of Korea Seoul Republic of Korea ([ROR:01fpnj063](https://ror.org/01fpnj063))
+2. Department of Biomedicine and Health Sciences, Graduate School, The Catholic University of Korea Seoul Republic of Korea ([ROR:01fpnj063](https://ror.org/01fpnj063))
+3. Division of Haematology-Oncology, Department of Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+4. Department of Thoracic and Cardiovascular Surgery, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+5. Division of Pulmonary and Critical Care Medicine, Department of Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+6. Research Institute for Future Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+7. Department of Neurosurgery, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+8. Department of Bio and Brain Engineering, KAIST Daejeon Republic of Korea ([ROR:05apxxy63](https://ror.org/05apxxy63))
+9. Precision Medicine Research Center, College of Medicine, The Catholic University of Korea Seoul Republic of Korea ([ROR:01fpnj063](https://ror.org/01fpnj063))
 
 † Corresponding author
 
@@ -52,17 +52,102 @@ ICI treatment modifies systemic immune responses, which can be monitored by alte
 
 ## Results
 
-## Variability and features of the lung cancer samples
+### Variability and features of the lung cancer samples
 
 We conducted single-cell RNA sequencing (scRNA-seq) on 33 lung cancer samples from 26 patients treated with ICIs between August 2017 and December 2019 to understand how cellular dynamics in lung cancer affect treatment sensitivity to PD-(L)1 inhibitors, used alone or in combination (Figure 1a and Supplementary file 1). Immune checkpoint therapy provides clinical benefit in advanced metastatic NSCLC across different treatment lines (Ruiz-Patiño et al., 2020). Notably, our samples have been collected from various tissue sites. In the scRNA-seq analysis, all specimens were used for the cell-type profiling in an unbiased manner. For the evaluation of clinical outcomes, only refined 14 core samples from 11 patients were used to minimize sample specific variations. Exclusion criteria from the core group encompass samples with treatment applied as adjuvant therapy, acquired after ICI treatment, no tumor content, non-evaluable for the clinical response, or histology other than NSCLC such as nuclear protein in testis (NUT) and small cell lung cancer (Table 1 and Figure 1a). Of the 11 core patients, 8 had adenocarcinoma and 3 had squamous cell carcinoma (SQ). Clinical outcomes of ICI were partial response (PR) in four patients, stable disease (SD) in two patients, and progressive disease (PD) in five patients. Patients were classified as responders (PR) and non-responders (SD and PD) according to ICI response.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/98366/elife-98366-fig1-v1.jpg)
+
+**Figure 1.:** (a) Workflow of sample collection and single-cell analysis of lung cancer patients treated with ICI. (b) Uniform Manifold Approximation and Projection (UMAP) plot of 96,505 single cells from 33 samples acquired from 26 advanced lung cancer patients, colored by clusters. AMB cells, ambiguous cells. (c) Dot plot of mean expression of canonical marker genes for cell lineages. (d) Proportions of the cell lineages in non-small cell lung cancer (NSCLC) tissue from core patients shown by individual samples aligned with clinical data. Labels for origins indicate LN, metastatic lymph node; Lung, tumor lung; PE, malignant pleural effusion; Liver, metastatic liver. (e) Box plot of the percentage of cell lineages in responder and non-responder groups. Label represents p-value calculated via two-tailed Student’s t-test. Each box represents the median and the interquartile range (IQR, the range between the 25th and 75th percentile), whiskers indicate the 1.5 times of IQR.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98366/elife-98366-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Uniform Manifold Approximation and Projection (UMAP) plot of 162,651 single cells (left) and 74,071T/NK cells (right) from 43 samples acquired from 33 LUAD patients, colored by clusters (top) and tissue origins (bottom). AMB cells, ambiguous cells. (b) Dot plot of mean expression of selected marker genes in each cell cluster of 162,651 cells from 43 samples acquired from 33 LUAD patients. (c) UMAP plot of T/NK cells, colored by expression of T, NK, CD4+ T, and CD8+ T cell marker genes (top). Dot plot of mean expression of selected CD4+ (bottom left) and CD8+ (bottom right) T cell marker genes in each cell cluster. (d, e) Proportions of the cell lineages (d) and T cell subsets (e) in LUAD tissue from 43 specimens shown by individual samples aligned with clinical data. Cur, current smoker; Ex, ex-smoker; Never, never smoker; ADC, adenocarcinoma; nLung, normal lung; tLung, early-stage tumor lung; tL/B, advanced-stage tumor lung; mLN, lymph node metastases; nLN, normal lymph node. (f) Biplot of principal component analysis (PCA) for cell lineage (left) and T/NK cell subset (right) proportions. (g) Euclidean distance map of centroids between groups of samples based on their tissue of origin in the PC1 and PC3 plot in f.
+
+**Table 1.**
+ Clinical overview of non-small cell lung cancer (NSCLC) patients treated with immune checkpoint inhibitor (ICI).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Immunotherapy</th>
+      <th>Targets</th>
+      <th>No. of samples</th>
+      <th>No. of patients</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pembrolizumab</td>
+      <td>PD-1</td>
+      <td>9</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Atezolizumab</td>
+      <td>PD-L1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Nivolumab</td>
+      <td>PD-1</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Vibostolimab+Pembrolizumab</td>
+      <td>TIGIT+PD-1</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RECIST</td>
+      <td>Description</td>
+      <td>No. of samples</td>
+      <td>No. of patients</td>
+    </tr>
+    <tr>
+      <td>PR</td>
+      <td>Partial response</td>
+      <td>5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>Stable disease</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>PD</td>
+      <td>Progressive disease</td>
+      <td>6</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
 Due to the diversity of sample collection sites, our data may be influenced by varied immune cell composition at different sample collection sites. Therefore, we analyzed immune and stromal cell subsets across early-stage (tLung) and late-stage (tL/B) lung tumors, and metastatic lymph nodes (mLN), comparing them to normal lung (nLung) and lymph node (nLN) tissues. This analysis was conducted on public scRNA-seq data from 43 samples from 33 lung adenocarcinoma (LUAD) patients (Kim et al., 2020; Figure 1—figure supplement 1a–c). Although there were differences in tissue-specific resident populations, we found that the immune cell profiles, especially T/NK cells of mLN, were similar to those of primary tumor tissues (Figure 1—figure supplement 1d–g).
 
-## Classification of immune cell subset in lung cancer
+### Classification of immune cell subset in lung cancer
 
 Global cell-type profiling (Figure 1b and c and Supplementary file 2) illustrates the cellular composition of each sample as epithelial/tumor cells, fibroblasts, endothelial cells, T/natural killer (NK) cells, B/plasma cells, myeloid immune cells, and mast cells. Individual samples show variations in epithelial/tumor content as well as in immune cell composition (Figure 1d and e).
 
 For further analysis of immune cell subtypes, we applied sequential subclustering on global immune cell clusters. As scRNA-seq shows limited performance in separating CD4+ and CD8+ T cell subsets, antibody-derived tag (ADT) information (Stoeckius et al., 2017) was used to complement the transcriptome data and to predict CD4+ T cells, CD8+ T cells, and NK cells (Figure 2a). Finally, 14 CD4+ and 14 CD8+ T cell subclusters were identified excluding <5% ambiguous cells (Figure 2b and c and Supplementary file 2). In the CD4+ T cell compartment, naïve-like T cells (TN, CD4_cluster0) and central memory T cells (TCM, CD4_cluster1) expressing SELL, TCF7, LEF1, and CCR7 genes or tissue-resident memory T cells (TRM, CD4_clusters3, 5, 6) expressing NR4A1, MYADM, and PTGER4 genes were abundant in most samples. Regulatory T cells (Tregs, CD4_cluster2) with FOXP3, CTLA4, ICOS, and BATF expression were also abundant, which has been demonstrated as tumor-specific alterations in the tissue microenvironment (Kim et al., 2020; Guo et al., 2018; Gueguen et al., 2021). In the CD8+ T cell compartment, effector memory T cells (TEM), effector T cells (TEFF), effector memory CD45RA positive cells (TEMRA) (CD8_clusters0, 2, 3, 8) expressing PRF1 and IFNG were dominant over TN/TCM (CD8_clusters4, 5) types. Exhausted T cells (TEX, CD8_clusters1, 12) expressed multiple checkpoint genes (HAVCR2 and PDCD1) along with high levels of PRF1, IFNG, CXCR3, and CXCL13. Co-expression of cytotoxic effectors and checkpoint molecules in TEX clusters indicates that cluster populations may retain functional capacity as cytotoxic TEFF (Groom and Luster, 2011). Further, clonotype analysis of T cell receptor (TCR) supported the T cell subset classification demonstrating higher clonal expansion in the CD8+ T cell compartment than that in CD4+ T cells, with the highest levels within the TEX subclass (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/98366/elife-98366-fig2-v1.jpg)
+
+**Figure 2.:** (a) Prediction strategy to classify CD4+, CD8+ T, and natural killer (NK) cells by applying antibody-derived tag (ADT) data from lung cancer. (b) Uniform Manifold Approximation and Projection (UMAP) plot of CD4+ and CD8+ T cells, colored by clusters. (c) Dot plot of mean expression of selected CD4+ (left) and CD8+ (right) T cell marker genes in each cell cluster. (d) Box plot of the percentage of CD4+ and CD8+ T cell types within total CD4+ plus CD8+ cells for sample groups representing responses to immune checkpoint inhibitor (ICI). Label represents p-value calculated via two-tailed Student’s t-test. Each box represents the median and the interquartile range (IQR), whiskers indicate the 1.5 times of IQR. (e) Association of T cell functional features with clonal expansion. Dot size depicts the relative clone size of each cell, which is divided by the total number of CD4+ and CD8+ T cells, respectively. Color indicates the cell lineage. (f) Comparisons of proportional changes in cell subtypes along ICI responses within each immune cell lineage. The quantitative values shown on the axis represent the mean difference in % cell proportions between sample groups. Dot size and color represent –log (p-value) for responder vs. non-responder and non-progressive disease (PD) vs. PD, respectively. The lower left quadrant shows cell types overrepresented in the poor responder groups, while the upper right quadrant indicates cell types overrepresented in the better responder groups. p-Value, two-tailed Student’s t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98366/elife-98366-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Uniform Manifold Approximation and Projection (UMAP) plot of CD4+ and CD8+ T cells, colored by clone types (single to hyperexpanded). (b) Proportions of clone types of CD4+ (left) and CD8+ (right) T cells in individual samples aligned with clinical data. (c) Association of T cell functional features with clonal expansion in individual samples. Dot size depicts the clone size of each cell and color indicates the cell lineage.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/98366/elife-98366-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Uniform Manifold Approximation and Projection (UMAP) plot of NK, B, and myeloid cells, colored by clusters. (b) Dot plot of mean expression of selected marker genes in each cell cluster of NK, B, and myeloid cells. (c) UMAP plot of B cells, colored by clone types (single to hyperexpanded). Clone distribution of clonotype 16 in B cells (inset). (d) Proportions of clone types of B cells in individual samples aligned with clinical data.
 
 NK cells can be subclassified as CD56bright, transitional, active, and mature types (Yang et al., 2019; Figure 2—figure supplement 2a and b and Supplementary file 2). Active NK cells expressed the highest level of PRF1, TNF, and IFNG, reflecting a cytotoxic effector function.
 
@@ -72,11 +157,11 @@ Myeloid cells were composed of monocytes, dendritic cells, and a large number of
 
 Overall immune cell composition is comparable to those reported in previous studies (Kim et al., 2020; Guo et al., 2018; Gueguen et al., 2021).
 
-## Immune cell landscape fostering the ICI response
+### Immune cell landscape fostering the ICI response
 
 In global cell-type profiling (Figure 1b and c), abundance in T, NK, or myeloid cell types shows no difference between responders and non-responders (Figure 1d and e). Nonetheless, as specific differentiation features within the cell types may influence the response to ICI treatment, we compared the response groups using the proportion of subclusters within CD4+ T, CD8+ T, NK, B/plasma, and myeloid cells. After subclustering (Figure 2b and Figure 2—figure supplement 2a), three subsets of CD4+ T cells, i.e., Treg, TRM, and CD4+ T helper 17 (TH17), were significantly (p<0.01) overrepresented in the non-responder group (Figure 2d). In contrast, among CD8+ T cell populations, TEM subsets demonstrated a modest level of association with the patients who responded well against PD (Figure 2d, p=0.06). TCR clonotype analysis supported the cellular dynamics such that clonal expansion was more prominent in cytotoxic CD8+ T cells over CD4+ Tregs in the responder group (Figure 2e and Figure 2—figure supplement 1c). Overall landscape in each cell type (Figure 2f) suggests that CD4+ Treg and TRM as well as follicular B cells may interfere with the ICI response, whereas CD8+ T cell activation (TEM, TEMRA/TEFF, and TEX), mature NK cells, and CXCL10+ Mo-Mac cells support the ICI response. The balance between separate immune cell types informs immune regulatory axes that may be targeted to favor the activation of tumor-reactive immunity.
 
-## Systemic evaluation of the immune microenvironment associated with ICI response
+### Systemic evaluation of the immune microenvironment associated with ICI response
 
 Next, we evaluated the immune microenvironment as an entity by using all immune cells as a denominator in the subtype proportions. In this setting, we used diverse clinical group comparisons and identified the immune cell blocks separated by clinical outcomes (Figure 3a). The immune cell blocks overrepresented in the non-responder groups consisted of CD4+ Treg, follicular B cells, and CD4+ TH17/TRM/T helper 1 (TH1)-like cells. In the immune cell blocks of the responder groups, CD8+ TEM cells showed the strongest enrichment along with the other CD8+ TEX/TEMRA/TEFF/mitochondria (MT) high cells as well as CXCL10+ Mo-Mac. Despite the immune footprints of the ICI responders, extensive variations among individual patients (Figure 3b) hamper patient stratification solely based on the immune profiles.
 
@@ -84,11 +169,35 @@ Next, we evaluated the immune microenvironment as an entity by using all immune 
 
 **Figure 3.:** (a) Heat map with unsupervised hierarchical clustering (left) and depicting significance (right) of proportional changes in cell subtypes within total immune cells. Proportional changes were compared for multiple ICI response groups. Color represents the –log (p-value) determined using two-tailed Student’s t-test. (b) Distribution map for each cell type across individual samples aligned with clinical data. Color represents Ro/e score calculated using the chi-square test.
 
-## Tumor cell signatures associated with ICI response
+### Tumor cell signatures associated with ICI response
 
 We investigated the associations between genomic characteristics in tumor and ICI response. The constraints of mutation analysis with 10x chromium data complicated the direct correlation between tumor mutation burden and ICI outcome. Rather, we assessed copy number alterations (CNA) indirectly, via chromosomal gene expression patterns. These analyses revealed a moderate correlation between low levels of CNA, including both gain and loss of heterozygosity, and positive responses to ICI (Figure 4—figure supplement 1). This finding is consistent with the result from previous genetic association studies (Liu et al., 2019).
 
 To assess gene expression characteristics of tumors influencing ICI response, we separated malignant tumor cell clusters from normal epithelial cell types (Figure 4—figure supplement 2). Subsequent differentially expressed gene (DEG) analysis (Figure 4a and Supplementary file 3) identified genes in poor response groups linked to the regulation of cell death, cell motility, and cell activation (Figure 4—figure supplement 3 and Supplementary file 4). The DEGs were refined later by combinations of various tumor signatures separating responder and non-responder groups (Supplementary file 5).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98366/elife-98366-fig4-v1.jpg)
+
+**Figure 4.:** (a) Volcano plot of expression difference for responder vs. non-responder, partial response (PR) vs. progressive disease (PD), and PR vs. stable disease (SD) in 12,975 malignant cells from 11 core patients. The log fold change indicates the difference in the mean expression level for each gene. The significance level was determined using two-tailed Wilcoxon rank sum test. (b) Relative sum of loadings for all non-negative matrix factorization (NMF) factors contributed to malignant cells from 11 core patients across Response Evaluation Criteria in Solid Tumor (RECIST), tissue origins, and cancer subtypes, respectively. (c) Selection of RECIST-enriched NMF programs. (d) Enrichment of NMF programs for RECIST groups. Color represents the z-transformed odds ratio. (e) Expression map of RECIST-specific scINSIGHT modules across individual samples aligned with clinical data. Color represents the z-transformed mean expression of genes contributing to each module. (f) Enrichment of RECIST-specific gene modules for RECIST groups. Color represents the z-transformed odds ratio. (g) Hierarchical clustering of pairwise similarities between tumor signatures. INT and UNION, intersection and union of differentially expressed genes (DEGs) for responder vs. non-responder, PR vs. PD, and PR vs. SD in (a). (h) Functional categories and (i) transcription factors of the selected tumor signatures, analyzed by Metascape.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98366/elife-98366-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Percent map of single-cell CNA events in individual samples aligned with clinical data. The copy number variation (CNV) signals of epithelial cells inferred from single-cell RNA sequencing (scRNA-seq) were calculated using inferCNV R package. Color represents the percentage of the gain (left) and loss of heterozygosity (LOH) (right) events in individual cells from each sample. (b) Comparison of % regions showing high perturbation (>90%) of CNA events between responder and non-responder. Label represents p-value calculated via two-tailed Student’s t-test. Each box represents the median and the interquartile range (IQR), whiskers indicate the 1.5 times of IQR.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98366/elife-98366-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Uniform Manifold Approximation and Projection (UMAP) plot of 31,519 epithelial cells from 26 patients, projected without batch correction, colored by clusters (left) and samples (right). (b) UMAP projection as shown in a, colored by malignant cell classification predicted using CopyKAT (left) and inferCNV (right) R packages. (c) Comparisons of malignant cell classification between CopyKAT and inferCNV in each individual sample.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/98366/elife-98366-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Enrichment map of significant Gene Ontology (GO) terms for each single-cell DEG signature associated with response to ICI. Color and size indicate the adjusted p-value (padj) and the normalized enrichment score (NES) calculated using fgsea R package, respectively.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/98366/elife-98366-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (a) Unsupervised principal component analysis (PCA) projections of 12,975 malignant cells from PC1 to PC10, colored by Response Evaluation Criteria in Solid Tumor (RECIST), cancer subtypes, and smoking status. (b) Dot plot of top 60 (30 genes with + and – scores) genes that contributed to each PC. (c) Enrichment map of significant Gene Ontology (GO) terms for each PC signature. Color and size indicate the adjusted p-value (padj) and the normalized enrichment score (NES) calculated using fgsea R package, respectively.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/98366/elife-98366-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (a) Comparison of mean expression difference for each PC signature along ICI responses. Dot size and color represent –log (p-value) for responder vs. non-responder and partial response (PR) vs. progressive disease (PD), respectively. p-Value, two-tailed Student’s t-test. (b) Receiver operating characteristic (ROC) analysis of PC signatures to classify responder and non-responder. p-Value, two-tailed Wilcoxon rank sum test. (c) Heat map of relative expression of PC signatures across individual samples aligned with clinical data. Mean expression of each PC signature in each sample is scaled by z-transform and visualized in the range from –2.5 to 2.5. INT and UNION, intersection and union of differentially expressed genes (DEGs) for responder vs. non-responder, PR vs. PD, and PR vs. stable disease (SD) in Figure 4a. (d) Box plot of mean expression of PC2.neg, PC7.neg, and PC9.neg genes in Riaz et al.’s and Van Allen al.’s melanoma ICI cohorts. Label represents p-value for comparisons of each group to complete response (CR), calculated using two-tailed Student’s t-test. Each box represents the median and the IQR, and whiskers indicate the 1.5 times of IQR.
 
 Next, to explore the existence of gene programs and modules influencing the ICI response, we applied factorization using non-negative matrix factorization (NMF) and scINSIGHT (Qian et al., 2022). Among 30 factors from NMF across all malignant cells, we identified factors showing high loadings for a specific Response Evaluation Criteria in Solid Tumor (RECIST) group as NMF programs p1~4 (Figure 4b and c). There were clear distinction among RECIST groups according to the gene expression levels associated with these NMF programs (Figure 4d and Supplementary file 5). To identify gene modules consistent across different patients, we examined RECIST-specific modules though scINSIGHT analysis (Qian et al., 2022; Figure 4e). Unfortunately, we found that contributions to these gene modules varied significantly among patients. To mitigate this variability, we adjusted the RECIST-specific modules by combining genes from the original modules (Supplementary file 5). The refined gene modules showed a specific gene expression pattern for each RECIST group, similar to the NMF programs (Figure 4f). Overall, both genes and their functional categories segregated depending on the selection techniques used (Figure 4g and h). However, transcription factors governing the signatures derived from DEG, NMF, and scINSIGHT analyses consistently delineated between responders and non-responders (Figure 4i). Responder-specific gene signatures showed associations with the transcription factors Regulatory Factor X Associated Ankyrin Containing Protein (RFXANK), Regulatory Factor X Associated Protein (RFXAP), and Regulatory Factor X5 (RFX5). This RFX protein complex has emerged as a positive biomarker for the immune response in diverse cancer types (Lapuente-Santana et al., 2021). Non-responder-specific gene signatures were regulated by Activator Of Transcription 3 (STAT3) and Nuclear Factor Kappa B Subunit 1 (NFKB1), known to play roles in PD-L1 regulation and T cell activation in cancer (Betzler et al., 2020).
 
@@ -96,7 +205,375 @@ We also adopted principal component analysis (PCA) to isolate correlated gene si
 
 These tumor cell signatures were specifically linked to elucidating the ICI response, but did not demonstrate any prognostic value for LUAD or lung squamous cell carcinoma (LUSC) in the The Cancer Genome Atlas (TCGA) RNA sequencing data (Table 2).
 
-## Combination of tumor signatures and immune cell dynamics classify ICI response
+**Table 2.**
+ Multivariate overall survival analysis of tumor signature genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">TCGA LUAD</th>
+      <th colspan="4">TCGA LUSC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>HR</td>
+      <td>Lower CI</td>
+      <td>Upper CI</td>
+      <td>p-Value</td>
+      <td>HR</td>
+      <td>Lower CI</td>
+      <td>Upper CI</td>
+      <td>p-Value</td>
+    </tr>
+    <tr>
+      <td>NMF.p1</td>
+      <td>0.89</td>
+      <td>0.53</td>
+      <td>1.48</td>
+      <td>0.64</td>
+      <td>0.92</td>
+      <td>0.66</td>
+      <td>1.27</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td>NMF.p2</td>
+      <td>0.87</td>
+      <td>0.53</td>
+      <td>1.43</td>
+      <td>0.59</td>
+      <td>0.93</td>
+      <td>0.67</td>
+      <td>1.28</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>NMF.p3</td>
+      <td>0.76</td>
+      <td>0.49</td>
+      <td>1.21</td>
+      <td>0.25</td>
+      <td>1.06</td>
+      <td>0.76</td>
+      <td>1.49</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>NMF.p4</td>
+      <td>1.00</td>
+      <td>0.64</td>
+      <td>1.55</td>
+      <td>0.98</td>
+      <td>1.00</td>
+      <td>0.70</td>
+      <td>1.44</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>scINSIGHT.PR.m</td>
+      <td>0.97</td>
+      <td>0.63</td>
+      <td>1.51</td>
+      <td>0.90</td>
+      <td>0.87</td>
+      <td>0.62</td>
+      <td>1.23</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>scINSIGHT.SD.m</td>
+      <td>0.81</td>
+      <td>0.53</td>
+      <td>1.23</td>
+      <td>0.32</td>
+      <td>0.94</td>
+      <td>0.67</td>
+      <td>1.33</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>scINSIGHT.PD.m</td>
+      <td>0.89</td>
+      <td>0.57</td>
+      <td>1.40</td>
+      <td>0.62</td>
+      <td>0.87</td>
+      <td>0.62</td>
+      <td>1.24</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>PC1.pos</td>
+      <td>0.48</td>
+      <td>0.27</td>
+      <td>0.84</td>
+      <td>0.01</td>
+      <td>0.78</td>
+      <td>0.55</td>
+      <td>1.12</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>PC1.neg</td>
+      <td>0.98</td>
+      <td>0.65</td>
+      <td>1.48</td>
+      <td>0.92</td>
+      <td>0.72</td>
+      <td>0.49</td>
+      <td>1.06</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>PC2.pos</td>
+      <td>0.87</td>
+      <td>0.55</td>
+      <td>1.36</td>
+      <td>0.53</td>
+      <td>0.98</td>
+      <td>0.69</td>
+      <td>1.40</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>PC2.neg</td>
+      <td>0.82</td>
+      <td>0.53</td>
+      <td>1.25</td>
+      <td>0.35</td>
+      <td>0.90</td>
+      <td>0.63</td>
+      <td>1.27</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>PC3.pos</td>
+      <td>1.14</td>
+      <td>0.68</td>
+      <td>1.90</td>
+      <td>0.63</td>
+      <td>0.87</td>
+      <td>0.63</td>
+      <td>1.19</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>PC3.neg</td>
+      <td>0.86</td>
+      <td>0.55</td>
+      <td>1.35</td>
+      <td>0.52</td>
+      <td>0.79</td>
+      <td>0.54</td>
+      <td>1.16</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>PC4.pos</td>
+      <td>0.88</td>
+      <td>0.54</td>
+      <td>1.42</td>
+      <td>0.59</td>
+      <td>0.66</td>
+      <td>0.46</td>
+      <td>0.95</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>PC4.neg</td>
+      <td>1.10</td>
+      <td>0.75</td>
+      <td>1.62</td>
+      <td>0.62</td>
+      <td>0.97</td>
+      <td>0.69</td>
+      <td>1.35</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td>PC5.pos</td>
+      <td>1.09</td>
+      <td>0.71</td>
+      <td>1.68</td>
+      <td>0.68</td>
+      <td>0.76</td>
+      <td>0.53</td>
+      <td>1.10</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>PC5.neg</td>
+      <td>1.01</td>
+      <td>0.69</td>
+      <td>1.50</td>
+      <td>0.95</td>
+      <td>1.03</td>
+      <td>0.71</td>
+      <td>1.49</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <td>PC6.pos</td>
+      <td>0.77</td>
+      <td>0.45</td>
+      <td>1.29</td>
+      <td>0.32</td>
+      <td>1.09</td>
+      <td>0.79</td>
+      <td>1.51</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td>PC6.neg</td>
+      <td>0.68</td>
+      <td>0.41</td>
+      <td>1.13</td>
+      <td>0.13</td>
+      <td>0.81</td>
+      <td>0.58</td>
+      <td>1.13</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>PC7.pos</td>
+      <td>1.10</td>
+      <td>0.71</td>
+      <td>1.72</td>
+      <td>0.67</td>
+      <td>0.75</td>
+      <td>0.51</td>
+      <td>1.10</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>PC7.neg</td>
+      <td>0.88</td>
+      <td>0.58</td>
+      <td>1.33</td>
+      <td>0.53</td>
+      <td>0.77</td>
+      <td>0.55</td>
+      <td>1.09</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>PC8.pos</td>
+      <td>0.77</td>
+      <td>0.50</td>
+      <td>1.18</td>
+      <td>0.23</td>
+      <td>1.01</td>
+      <td>0.72</td>
+      <td>1.43</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>PC8.neg</td>
+      <td>1.00</td>
+      <td>0.65</td>
+      <td>1.52</td>
+      <td>0.99</td>
+      <td>0.95</td>
+      <td>0.66</td>
+      <td>1.37</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>PC9.pos</td>
+      <td>0.91</td>
+      <td>0.60</td>
+      <td>1.38</td>
+      <td>0.66</td>
+      <td>1.02</td>
+      <td>0.73</td>
+      <td>1.43</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>PC9.neg</td>
+      <td>1.11</td>
+      <td>0.73</td>
+      <td>1.68</td>
+      <td>0.63</td>
+      <td>1.02</td>
+      <td>0.72</td>
+      <td>1.45</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>PC10.pos</td>
+      <td>1.13</td>
+      <td>0.76</td>
+      <td>1.68</td>
+      <td>0.55</td>
+      <td>1.28</td>
+      <td>0.88</td>
+      <td>1.86</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>PC10.neg</td>
+      <td>0.93</td>
+      <td>0.59</td>
+      <td>1.46</td>
+      <td>0.75</td>
+      <td>0.93</td>
+      <td>0.65</td>
+      <td>1.35</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td>INT.up</td>
+      <td>0.82</td>
+      <td>0.53</td>
+      <td>1.26</td>
+      <td>0.37</td>
+      <td>1.00</td>
+      <td>0.71</td>
+      <td>1.42</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>UNION.up</td>
+      <td>0.80</td>
+      <td>0.52</td>
+      <td>1.21</td>
+      <td>0.28</td>
+      <td>0.77</td>
+      <td>0.53</td>
+      <td>1.13</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>INT.down</td>
+      <td>0.84</td>
+      <td>0.56</td>
+      <td>1.24</td>
+      <td>0.37</td>
+      <td>1.07</td>
+      <td>0.73</td>
+      <td>1.57</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>UNION.down</td>
+      <td>0.67</td>
+      <td>0.42</td>
+      <td>1.06</td>
+      <td>0.08</td>
+      <td>0.75</td>
+      <td>0.52</td>
+      <td>1.07</td>
+      <td>0.11</td>
+    </tr>
+  </tbody>
+</table>
+
+### Combination of tumor signatures and immune cell dynamics classify ICI response
 
 Immune cell dynamics or tumor signature alone has a limited capacity to profile the therapeutic outcome of PD-(L)1 inhibitor alone or in combination (Figure 5a). Similar to the immune cell blocks and tumor signatures that were overrepresented in the poor response group, each of CD4+ Treg, CD4+ TH17, PC7.neg, INT.down, and UNION.down was significantly associated with ICI response in univariate regression analysis (Figure 5b). PC7.neg denotes genes negatively correlated with PC7, a principal component (PC) extracted from PCA that distinguishes tumor cells in poor response groups. INT.down and UNION.down represent the intersection (INT) and union (UNION) of downregulated genes in the responder group, respectively. The variation in ICI response was not affected by clinical variables of tissue origin, cancer subtype, pathological stage, and smoking status. When we performed a combined analysis of the top tumor-immune features to classify response, the discriminative power (area under the curve [AUC]) was improved to over 95% (Figure 5c). Overall, features of the non-responders, especially CD4+ Treg, B/plasma cells, INT.down, and UNION.down, showed a higher estimate than those of responders. These non-responder features suggest heterogeneous mechanisms of resistance conferred by tumor and immune regulatory axes.
 
@@ -120,15 +597,15 @@ Our study has limitations. Primarily, most samples were obtained from metastatic
 
 ## Materials and methods
 
-## Human specimens
+### Human specimens
 
 This study was approved by the Institutional Review Board (IRB) of Samsung Medical Center (IRB no. 2010-04-039-052). Informed written consent was obtained from all patients enrolled in the study. The study participants included 26 patients diagnosed with lung cancer (Supplementary file 1). The study population (n=26) has been treated with the investigator’s choice either as a clinical trial (n=5) or as standard clinical practice (n=21). Regardless of the treatment selection, the specimens were prospectively collected based on the study protocol. A total of 33 samples were collected and immediately transferred on ice for tissue preparation. Metastatic lymph nodes, metastatic liver tissues, and lung/bronchus tumor tissues from patients with lung cancer were collected using endobronchial ultrasound bronchoscopy, neck lymph node ultrasound and biopsy, liver biopsy, and percutaneous transthoracic cutting needle biopsy. Tumors, normal lungs, normal lymph nodes, and normal brain tissues were obtained during resection surgery. Pleural fluid was collected from patients with malignant pleural effusion.
 
-## Clinical outcomes
+### Clinical outcomes
 
 The clinical outcomes of ICI were evaluated based on the RECIST 1.1 (Eisenhauer et al., 2009). In this study, we described non-responders as patients with an SD or a PD. Responders were considered as patients with a PR. None of the patients showed a complete response.
 
-## Sample preparation
+### Sample preparation
 
 Single-cell isolation was performed differently depending on the samples. (1) Biopsy samples and nLN were chopped into 2–4 mm pieces and dissociated in an enzyme solution containing collagenase/hyaluronidase (STEMCELL Technologies, Vancouver, Canada) and DNase I, RNase-Free (lyophilized) (QIAGEN, Hilden, Germany) at 37°C for 1 hr. Tissue pieces were re-mixed by gentle pipetting at 20 min intervals during incubation. (2) Tumor and nLung dissociation was performed using a tumor dissociation kit (Miltenyi Biotech, Germany) following the manufacturer’s instructions. Briefly, tissue was cut into 2–4 mm pieces and transferred to a C tube containing the enzyme mix (enzymes H, R, and A in RPMI1640 medium). The GentleMACS programs h_tumor_01, h_tumor_02, and h_tumor_02 were run with two 30 min incubations on a MACSmix tube rotator at 37°C. (3) Brain tissue was chopped into 2–4 mm pieces and incubated in an enzyme solution (collagenase [Gibco, Waltham, MA, USA], DNase I [Roche, Basel, Switzerland], and Dispase I [Gibco] in DMEM) at 37°C for 1 hr. Tissue pieces were re-mixed by gentle pipetting at 15 min intervals during incubation. (4) Pleural fluids were transferred to a 50 ml tube, and the cells were spun down at 300×g.
 
@@ -136,80 +613,80 @@ Each cell suspension was transferred to a new 50 ml (15 ml for biopsy samples) t
 
 For samples subjected to multiplexing, dissociated cells were cryopreserved in CELLBANKER1 (Zenogen, Fukushima, Japan) and thawed for pooling.
 
-## scRNA-seq and read processing
+### scRNA-seq and read processing
 
 Single-cell suspensions were loaded into a Chromium system (10x Genomics, Pleasanton, CA, USA). Following the manufacturer’s instructions, 3’ scRNA-seq libraries for the 14 samples were generated using Chromium Single Cell 3′ v2 Reagent Kits. The 3’ library preparation for EBUS_119 used Chromium Single Cell 3′ v3 Reagent Kits. The 5’ scRNA-seq libraries for 12 individual and 2 pooled samples were generated using Chromium Single Cell 5′ v2 Reagent Kit. Libraries were then sequenced on an Illumina HiSeq 2500 for 3’ scRNA-seq and an Illumina NovaSeq 6000 for 5’ scRNA-seq. Sequencing reads were mapped to the GRCh38 human reference genome using Cell Ranger toolkit (v5.0.0).
 
-## SNP genotyping array
+### SNP genotyping array
 
 Genomic DNA was extracted from the peripheral blood of six patients and subjected to sample multiplexing (DNeasy Blood & Tissue Kit, QIAGEN). The 766,221 single nucleotide polymorphisms (SNPs) were genotyped using Illumina Global Screening Array MG v2, following the manufacturer’s instructions. Normalized signal intensity and genotype were processed using Illumina’s GenomeStudio v.2 software.
 
-## Demultiplexing of pooled samples
+### Demultiplexing of pooled samples
 
 The individuals in sample multiplexing were assigned by a software tool freemuxlet, which is an extension of demuxlet v2 (Kang et al., 2018; https://github.com/statgen/popscle, Zhang and Kang, 2021). First, the popscle tool dsc-pileup was run with the bam file generated by Cell Ranger toolkit and reference vcf file. The reference was assembled after a lift-over process with GRCh38 from 1000 Genomes Project phase 1 data and the variant allele frequency in East Asian >0.01 were discarded. Next, freemuxlet was used to determine the sample identity with default parameters. The individuals were matched based on the similarity between freemuxlet-annotated genotypes and SNP array-detected genotypes.
 
-## Acquisition of scRNA-seq data from LUAD patients
+### Acquisition of scRNA-seq data from LUAD patients
 
 We obtained raw 3’ scRNA-seq from 43 specimens acquired from 33 LUAD patients including early-stage (tLung) and late-stage (tL/B) lung tumor tissues, mLN, nLung, and nLN (Kim et al., 2020). Sequencing reads were mapped to the GRCh38 human reference genome using Cell Ranger toolkit (v5.0.0).
 
-## scRNA-seq data analysis
+### scRNA-seq data analysis
 
 The raw gene-cell-barcode matrix from Cell Ranger pipeline was processed using Seurat v3.2.2 R package (Stuart et al., 2019). Cells were selected using two quality criteria: mitochondrial genes (<20%) and gene count (>200). Cell multiplets predicted by Scrublet (Wolock et al., 2019) were filtered out. From the filtered cells, the unique molecular identifier (UMI) count matrix was log-normalized and scaled by z-transform while regressing out the effects of cell-cycle variations for subsequent analysis. For batch correction, we used Harmony v1.0 R package (Korsunsky et al., 2019) interfacing with Seurat as the RunHarmony function. A total of 2000 variably expressed genes were selected using FindVariableFeatures with a parameter selection.method=“vst”. A subset of PCs was selected based on ElbowPlot function. Uniform Manifold Approximation and Projection (UMAP) for dimension reduction and cell clustering was performed using RunUMAP, FindNeighbors, and FindClusters functions with the selected PCs and resolutions (advanced lung cancer patients [total cells, 33 PCs and resolution = 0.3; CD4+ T cells, 28 PCs and resolution = 0.9; CD8+ T cells, 28 PCs and resolution = 0.9; NK cells, 26 PCs and resolution = 0.3; B/plasma cells, 28 PCs and resolution = 0.3; myeloid cells, 30 PCs and resolution = 1.2], LUAD patients [total cells, 23 PCs and resolution = 0.3; T/NK cells, 24 PCs and resolution = 0.9]). We applied the FindAllMarkers function to identify DEGs for each cell cluster. Significance was determined using Wilcoxon rank sum test. Genes were selected according to the following statistical thresholds; log fold change >0.25, p-value<0.01, adjusted p-value (Bonferroni correction)<0.01, and percentage of cells (pct) >0.25. Cell identity was determined by comparing the expression of known marker genes and DEGs for each cluster.
 
-## PCA using the proportion of cell lineages and T/NK cell subsets
+### PCA using the proportion of cell lineages and T/NK cell subsets
 
 PCA was performed for the % proportion of cell lineages and T/NK cell subsets in individual LUAD samples using prcomp function of stats v3.6.3 R package. For total cells, the percentages of immune and stromal cells were calculated except for epithelial, cycling, and AMB (ambiguous) cells. For T/NK cells, unknown cells annotated as MT high and AMB cells were excluded.
 
-## In silico classification of CD4+ T, CD8+ T, and NK cells
+### In silico classification of CD4+ T, CD8+ T, and NK cells
 
 We characterized CD4+ T, CD8+ T, and NK cell populations by combined analysis of gene and protein expression using Cellular Indexing of Transcriptomes and Epitopes by Sequencing data from primary tumor and normal lungs. Among the cells in clusters annotated as T/NK cells, we identified CD3-expressing cells with CD3D or CD3E or CD3G>0 at the RNA level. CD4 and CD8 positive cells were then identified with a cutoff at 55th percentile of ADT level. NK cells were identified based on the RNA expression level of NK cell markers (XCL1, NCAM1, KLRD1, and KLRF1) in CD3 negative cells. The gene expression matrix with cell identity of CD4 positive, CD8 positive, and NK was applied as reference data for supervised cell-type classification using getFeatureSpace and trainModel functions of scPred v1.9.0 R package (Alquicira-Hernandez et al., 2019). Finally, we classified T/NK cells in Figure 1b into CD4+ T, CD8+ T, and NK cells using scPred scPredict function.
 
-## Analysis of TCR/BCR repertoires in CD4+ T, CD8+ T, and B/plasma cells
+### Analysis of TCR/BCR repertoires in CD4+ T, CD8+ T, and B/plasma cells
 
 The data derived from Cell Ranger pipeline for TCR and BCR sequencing data were processed using scRepertoire v1.2.0 R package (Borcherding et al., 2020) in R v4.1.1. We selected contigs that generated alpha-beta chain pairs for TCR and heavy-light chain pairs for BCR for subsequent analysis. We called clonotypes based on V(D)JC genes and CDR3 nucleotide sequence with the parameter clonecall=“gene+nt”. The set of clone types was classified by total frequency using the parameter cloneTypes defined as Single = 1, Small = 5, Medium = 10, Large = 20, and Hyperexpanded = Inf.
 
-## Scoring of T cell functional features
+### Scoring of T cell functional features
 
 Scores for T cell functional features were calculated as the mean expression of regulatory (ICOS, FOXP3, IKZF2, LAYN, TNFRSF18, CTLA4, IL21R, BATF, CCR8, IL2RA, and TNFRSF4) and cytotoxic (CX3CR1, PRF1, GZMA, GZMB, GZMH, GNLY, KLRG1, and NKG7) genes at the log-normalized level.
 
-## Identification of malignant cells based on inferred CNV from scRNA-seq data
+### Identification of malignant cells based on inferred CNV from scRNA-seq data
 
 Two computational tools, inferCNV v1.2.1 (RRID:SCR_021140, https://github.com/broadinstitute/inferCNV) and CopyKAT v1.0.5 R packages (Gao et al., 2021), were used to infer genomic copy numbers from scRNA-seq. In a run with inferCNV, the UMI count matrix of each tumor sample was loaded into inferCNV CreateInfercnvObject function along with cell lineage annotations. The reference (normal) cells were selected as cells annotated with T/NK, B/plasma, myeloid, and mast cells. We maintained the proportion of epithelial cells below 20% in each tumor sample using the expression profiles of the nLung and nLN. Inferred copy number variation (CNV) signals were analyzed using inferCNV run function using the parameters: cutoff = 0.1, denoise = TRUE, HMM = TRUE, and HMM_type="i6". The signals were then summarized as standard deviations (s.d.) for all windows and the correlation between the CNV in each cell and the mean of the top 5% cells (Puram et al., 2017). Cancer cells showing CNV perturbation (>0.03 s.d. or >0.3 CNV correlation) were classified as malignant cells, otherwise as non-malignant cells. The UMI count matrix of each tumor sample was loaded into CopyKAT copykat function along with cell lineage annotations using the following parameters: ngene.chr=3, KS.cut=0.05, and norm.cell.names. Cancer cells predicted as aneuploid cells by CopyKAT were classified as malignant cells. Finally, we identified malignant cells, which are cancer cells classified as malignant cells in either inferCNV or CopyKAT.
 
-## Single-cell DEGs between response groups in malignant cells
+### Single-cell DEGs between response groups in malignant cells
 
 A total of 12,975 malignant cells were used to identify DEGs in pairwise comparisons according to responder versus non-responder, PR versus PD, and PR versus SD. Differential expression levels were calculated using Seurat FindMarkers function with the Wilcoxon rank sum test. Genes were selected according to the following statistical thresholds: log fold change >0.25, p-value<0.01, adjusted p-value (Bonferroni correction)<0.01, and pct>0.25. We reconstructed DEGs as four groups: INT.up, INT.down, UNION,up, and UNION.down, based on with the INT and UNION of up- or downregulated genes for pairwise comparisons between responder versus non-responder, PR versus PD, and PR versus SD. INT.up and INT.down represent the intersection of up- and downregulated genes in the responder group, respectively. UNION.up and UNION.down represent the union of up- and downregulated genes in the responder group, respectively.
 
-## NMF programs of the malignant cells
+### NMF programs of the malignant cells
 
 The UMI count matrix for malignant cells was loaded into nmf function of RcppML v0.5.6 R package. A NMF model was learned with a rank of 30 using all genes. For each of the 30 NMF factors, the top-ranked 50 genes in the NMF score were defined as signatures. RECIST-enriched NMF program consisted of selected factors based on their relative sum of loadings. We aggregated and redefined gene signatures of factors included in each NMF program. The uniqueness of each NMF program for RECIST groups was evaluated as an odds ratio using fisher.test function of stats v3.6.3 R package. Annotations of NMF programs were assigned using Metascape (Zhou et al., 2019).
 
-## RECIST-specific gene modules in malignant cells
+### RECIST-specific gene modules in malignant cells
 
 The RECIST-specific gene modules were analyzed with a matrix factorization named scINSIGHT (Qian et al., 2022) using log-normalized count and 2000 highly variable genes for each sample. For each module, we selected the 100 genes with the highest coefficients. Combinations of the top 100 genes for modules specific to each RECIST group were defined as module genes. The uniqueness of each module for RECIST groups was evaluated as an odds ratio using fisher.test function of stats v3.6.3 R package. Annotations of gene modules were assigned using Metascape (Zhou et al., 2019).
 
-## PC signatures of the malignant cells
+### PC signatures of the malignant cells
 
 The UMI count matrix for malignant cells was log-normalized and scaled by z-transform while regressing out the effects of cell-cycle variations for PCA. A total of 2000 variably expressed genes selected using FindVariableFeatures with selection.method=“vst” were used for PCA. PCs were calculated by Seurat RunPCA function. PC signatures were selected for 30 genes with + (pos) and – (neg) scores that highly contributed to each PC from PC1 to PC10.
 
-## Functional category analysis
+### Functional category analysis
 
 Functional categories representing the enriched gene expression in comparisons for responder vs. non-responder, PR vs. PD, and PR vs. SD as well as in the PCs were identified using fgsea v1.12.0 (Korotkevich et al., 2019) R package with parameters: minSize = 10, maxSize = 600, and nperm = 10,000. Gene sets for Gene Ontology (GO) Biological Process were collected from the MSigDB database using msigdbr v7.1.1 R package (Liberzon et al., 2011; Subramanian et al., 2005). The gene list was ranked by the log fold change for each comparison and feature loadings for each PC. Significant GO terms were selected after collapsing redundant terms using fgsea collapsePathways function with a statistical threshold for Benjamini-Hochberg adjusted p-value<0.05.
 
-## Multivariate overall survival analysis of tumor signatures
+### Multivariate overall survival analysis of tumor signatures
 
 To evaluate the prognostic potential of tumor signatures, RNA-seq data from LUAD and LUSC samples were retrieved from TCGA data portal (https://portal.gdc.cancer.gov/; Grossman et al., 2016). The dataset comprised of 533 primary tumors from TCGA LUAD and 502 primary tumors from TCGA LUSC. Gene expression levels were quantified as (log2 FPKM-UQ+1), where FPKM-UQ represents the upper quartile fragments per kilobase per million mapped reads for each sample.
 
 Clinical variables were first categorized, including age (below and above median age), gender (male and female), pathological stage (I/II and III/IV), distant metastasis (M0 and M1), and nodal status (N0 and Ns). Samples were then classified into high and low groups based on the upper quantile of the mean expression for each tumor signature group. Multivariate survival analysis was conducted using the analyse_multivariate function of the survivalAnalysis R package.
 
-## Evaluation of discriminative power of identifying responders for tumor signatures and combinatorial indexes
+### Evaluation of discriminative power of identifying responders for tumor signatures and combinatorial indexes
 
 Classification models of responders and non-responders for PC signatures and combinatorial indexes between tumor and/or immune cells were generated based on in-sample performance and tested by receiver operating characteristic (ROC) curve. Relative numbers between the observed and expected cells (Ro/e) for each sample were obtained from the chi-square test (Guo et al., 2018). To describe the separability, AUC was calculated using ROC function of Epi v2.44 R package with Ro/e scores as input. Significance was calculated by Wilcoxon rank sum test and confirmed by adjusting with the Benjamini-Hochberg correction.
 
-## Univariate regression analysis for ICI response
+### Univariate regression analysis for ICI response
 
 Univariate regression was performed using the lm function of stats v3.6.3 with Ro/e scores for each sample as input. We evaluated the relationship between the target variable ICI response, classified as responders and non-responders, and one predictor variable of immune cell types, tumor signatures, and clinical factors such as tissue origin, cancer subtype, pathological stage, and smoking status. The significance of predictor was calculated using Anova function of car v3.0-9 R package.
 
-## Validation of PC signatures in melanoma cohorts
+### Validation of PC signatures in melanoma cohorts
 
 We used Riaz et al., 2017, and Van Allen et al., 2015, RNA-seq data from melanoma patients receiving PD-1 and CTLA-4 immune checkpoint therapy to assess expressional changes of PC signatures along RECIST. The mean expression of each PC signature in each RECIST group was calculated as the log2 normalized level.

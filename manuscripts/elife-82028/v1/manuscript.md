@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/046865y68 Department of Life Sciences, Hanyang University Seoul Republic of Korea
-2. https://ror.org/046865y68 Research Institute for Natural Science, Hanyang University Seoul Republic of Korea
-3. https://ror.org/046865y68 Hanyang Institute of Bioscience and Biotechnology, Hanyang University Seoul Republic of Korea
+1. Department of Life Sciences, Hanyang University Seoul Republic of Korea ([ROR:046865y68](https://ror.org/046865y68))
+2. Research Institute for Natural Science, Hanyang University Seoul Republic of Korea ([ROR:046865y68](https://ror.org/046865y68))
+3. Hanyang Institute of Bioscience and Biotechnology, Hanyang University Seoul Republic of Korea ([ROR:046865y68](https://ror.org/046865y68))
 
 † Corresponding author
 

@@ -35,7 +35,7 @@
 
 ## Abstract
 
-10.7554/eLife.42693.001 The gastrointestinal tract is abundantly colonized by microbes, yet the translocation of oral species to the intestine is considered a rare aberrant event, and a hallmark of disease. By studying salivary and fecal microbial strain populations of 310 species in 470 individuals from five countries, we found that transmission to, and subsequent colonization of, the large intestine by oral microbes is common and extensive among healthy individuals. We found evidence for a vast majority of oral species to be transferable, with increased levels of transmission in colorectal cancer and rheumatoid arthritis patients and, more generally, for species described as opportunistic pathogens. This establishes the oral cavity as an endogenous reservoir for gut microbial strains, and oral-fecal transmission as an important process that shapes the gastrointestinal microbiome in health and disease.
+The gastrointestinal tract is abundantly colonized by microbes, yet the translocation of oral species to the intestine is considered a rare aberrant event, and a hallmark of disease. By studying salivary and fecal microbial strain populations of 310 species in 470 individuals from five countries, we found that transmission to, and subsequent colonization of, the large intestine by oral microbes is common and extensive among healthy individuals. We found evidence for a vast majority of oral species to be transferable, with increased levels of transmission in colorectal cancer and rheumatoid arthritis patients and, more generally, for species described as opportunistic pathogens. This establishes the oral cavity as an endogenous reservoir for gut microbial strains, and oral-fecal transmission as an important process that shapes the gastrointestinal microbiome in health and disease.
 
 ## Introduction
 
@@ -49,7 +49,39 @@ This suggests that the presence of oral commensals in the gut is a rare, aberran
 
 To test this hypothesis, we assembled and analyzed a dataset of 753 public and 182 newly sequenced saliva and stool metagenomes from 470 healthy and diseased individuals (diagnosed with rheumatoid arthritis, colorectal cancer or type-1 diabetes) from Fiji (Brito et al., 2016), China (Zhang et al., 2015), Luxembourg (Heintz-Buschart et al., 2016), France (Zeller et al., 2014), and Germany (Voigt et al., 2015) (see Materials and methods, Figure 1, and Supplementary file 1). For these samples we profiled 310 prevalent species, accounting for 99% of classifiable microbial abundance in both saliva and stool (see Materials and methods and Supplementary file 2). We reasoned that if transmission between the oral and gut microenvironments is frequent, we would expect salivary and fecal microbial populations to be more similar within an individual than between individuals. Conversely, under a strong barrier model with restricted transmission, intra- and inter-individual similarities would be equivalent.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/42693/elife-42693-fig1-v2.jpg)
+
+**Figure 1.:** (A) Oral-fecal transmission scores were calculated from salivary and fecal microbial SNV profiles. (B) Cohort and dataset overview. For longitudinal cohorts (DE-CTR, CN-RA and LU-T1D), both the total number of samples and the number of individuals are shown, as well as the number of individuals considered in time-series analyses. (C) Salivary and fecal microbial loads allow the calculation of physiologically expected levels of ‘passive’ microbial transmission (i.e., by ingestion, without growth). (D) The longitudinal coupling of microbial SNVs between salivary and fecal samples was used to infer transmission directionality and oral-fecal transmission rates (see Materials and methods).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42693/elife-42693-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Relative to physiologically expected levels of ‘passive’ transmission (see Figure 1C), all tested species with paired observations (in saliva and stool of the same individual) showed a fecal enrichment by several orders of magnitude. The fecal enrichment (x axis) is shown on a log2 scale, so values approximate the effective number of cell divisions (without cell deaths) necessary to account for observed fecal levels based on matched oral samples. The left plot shows enrichment purely based on relative salivary and fecal abundance. On the right, the average oral and fecal depths of uniquely mapping reads is used as a reference, normalised by genome size.
+
 We found that at species level, community composition was consistent with distinct populations occupying the oral and intestinal microenvironments. By prevalence across subjects, the 310 profiled species fell into three categories (Figure 2A): 44% were predominantly fecal (observed in ≥10% of fecal, but <10% of saliva samples), including core members of the gut microbiome, such as Clostridium sp., Ruminococcus sp. and Bacteroides sp.; 16% of species were predominantly oral. Although the remaining 125 (40%) species were prevalent in ≥10% of saliva and stool samples, their relative abundances differed greatly between the two habitats. The overall oral and fecal microbiome compositions appeared independent of each other (between-subject Bray-Curtis dissimilarities per site, ρPearson=-0.03), and the compositional overlap between mouth and gut of the same subject was not found to be significantly different when compared to a between-subject background (Wilcoxon test, Bray-Curtis dissimilarities, p=0.46).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/42693/elife-42693-fig2-v2.jpg)
+
+**Figure 2.:** (A) Among 310 tested species, 125 were prevalent in both the mouth and gut across subjects. (B) 77% of these formed coherent strain populations between both habitats, when viewed across all tested subjects (‘frequent’ transmitters) or at least in some (‘occasional’ transmitters), as evidenced by oral-fecal transmission scores based on intra-individual SNV overlap against an inter-individual background (see Materials and methods). (C) Oral-to-fecal transmission rates, as inferred from longitudinal coupling of oral and gut SNVs (see Materials and methods), exceeded background levels for transmitted taxa, even at conservative lower estimates. (D) On average, transmissible taxa accounted for a large fraction of classifiable microbial abundance in both the oral cavity and gut. (E) Oral-fecal transmissibility was largely a clade-wise trait at genus or family ranks, but common across bacterial phyla.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42693/elife-42693-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** A maximum likelihood phylogenetic tree of the species tested in this study (see Supplementary file 2 and Materials and methods). Annotations, from inside to outside (colour scales as in the main text): fecal species prevalence (fraction of individuals in which the species was detectable in feces); oral prevalence; average transmission score across subjects (see Figure 2C); transmitter category (see Figure 2); fraction of individuals in which the observed transmission score exceeded median background transmission scores. The visualization was generated using iTol (Letunic and Bork, 2016). Scalable, interactive versions of the full tree and per-phylum subtrees are available online (http://itol.embl.de/shared_projects.cgi; password-less login ‘tsbschm’).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/42693/elife-42693-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Spearman correlations of oral-fecal transmission scores (see Materials and methods) with putative technical covariates per taxon across subjects. On average, horizontal (breadth) and vertical (depth) genome mapping coverage did not correlate with transmission scores for transmitting taxa when viewed across subjects, and were anti-correlated for non-transmitting taxa (i.e., deeper coverage reinforced the negative signal for these taxa). In line with this, the total number of observed SNV positions in each site anti-correlated with transmission scores for non-transmitters, and mildly correlated for transmitters. Taxon relative abundance of transmitters in stool tended to correlate positively with transmission scores; arguably, this is a biological rather than a technical effect, as higher transmission rates coincide with higher fecal abundance of transmitted taxa. The same applies to intra-individually shared genome coverage which is likewise expected to coincide with oral-fecal strain overlap.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/42693/elife-42693-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** SNV overlap per taxon and intra-individual time series, normalised as a standard Z score across an inter-individual background. Median Z scores are highlighted.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/42693/elife-42693-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The longitudinal coupling of oral and fecal SNVs was assessed from longitudinal source-sink sample triplets (see Materials and methods, Figure 1D). The heatmaps show data on oral-to-fecal (left, blue) and fecal-to-oral (right, orange) coupling. Taxa (y axis) are sorted by transmission category analogous to Figure 2 (top to bottom, frequent transmitters, occasional transmitters, non-transmitters, predominantly oral, predominantly fecal); subjects (x axis) are sorted left to right by decreasing evidence for oral-fecal coupling. Colors indicate (significant) positive odds ratios for oral-to-fecal (blue) and fecal-to-oral (orange) coupling, negative odds ratios (grey), or missing/insufficient data (white). Frequent transmitters generally showed indications of oral-to-fecal coupling, but not vice versa. For the remaining taxa, the trend was similar, but less pronounced.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/42693/elife-42693-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** To be considered in our study, a species had to meet three criteria in at least 10% of all considered samples: relative abundance >10−6; average vertical genome coverage (depth) ≥0.25 x; horizontal genome coverage (breadth) ≥5%. The panels show the number of taxa meeting the (A) depth and (B) breadth criterion alone, as a function of coverage. The chosen cutoffs and final number of taxa considered (310) are indicated.
 
 However, to accurately establish and quantify microbial transmission, it is necessary to track populations at the resolution of strains rather than species, as demonstrated previously in fecal microbiota transplantation (Li et al., 2016) or seeding of the infant microbiome (Asnicar et al., 2017); Korpela et al., 2018). We therefore profiled microbial single nucleotide variants (SNVs) across metagenomes, as a proxy for strain populations (Li et al., 2016). We formulated a transmission score for each species per subject, based on the likelihood that the observed intra-individual SNV overlap was generated by an inter-individual background model (see Materials and methods). Of the 125 species prevalent in both mouth and gut, 77% showed evidence of oral-fecal transmission. Out of these, 74 species (59%) showed significantly higher intra-individual SNV similarity across all subjects compared to cohort-wide background SNV frequencies (Benjamini-Hochberg-corrected Wilcoxon tests on transmission scores, p<0.05, see Materials and methods; Figure 2B, Figure 2—figure supplement 1, Supplementary file 2). This suggests that they form coherent strain populations along the GIT in most subjects, subject to frequent oral-fecal microbial transmission. Strains of Streptococcus, Veillonella, Actinomyces and Haemophilus, among other core oral taxa, fell into this category. An additional 22 species (18%) showed evidence of at least occasional transmission, with individually significant oral-fecal SNV overlap in some, but not across all subjects, as did 18 species that were generally prevalent in either the mouth or the gut (but not both). All 21 members of the Prevotella genus, an important clade of the gut microbiome, were among these occasionally transmitted species. The remaining 29 (23%) species, which were prevalent in both sites, did not show signs of transmission under the strict thresholds we applied.
 
@@ -61,11 +93,27 @@ Oral-fecal transmissibility, as a trait, generally aligned with phylogenetic cla
 
 Viewed across individuals, we found that seeding of the gut microbiome from the oral cavity was extensive, with high levels of variation (Figure 3A). On average, potentially transmissible species (i.e., frequent and occasional transmitters) accounted for 75% of classifiable microbes in saliva, ranging up to 99% in some subjects. However, not all of these were detectable in the matched fecal samples, and oral-fecal strain overlap was generally incomplete. We therefore quantified the fraction of realized transmission based on paired observations of species and intra-individual SNV overlap (see Materials and methods). With these criteria, on average 35% of classifiable salivary microbes were transmitted strains that could be traced from mouth to gut within subjects. Similarly, on average 45% (range 2–95%) of classifiable fecal microbes were potential transmitters. These included common fecal species (e.g., Prevotella copri) that were detectable in a subset of salivary samples and showed only occasional transmission. Nevertheless, on average only 2% of classifiable fecal microbes could be confidently ascribed to transmitted strains, ranging to >30% in some subjects.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/42693/elife-42693-fig3-v2.jpg)
+
+**Figure 3.:** (A) Potentially transmissible species on average accounted for 75% and 45% of known microbes in salivary and fecal samples, respectively. Among these, realised transmitters were defined as strains that could be traced within subjects with confidence (given detection limits, see Materials and methods). (B) Tests for the association of transmission levels in mouth and gut to subject-level covariates (ANOVA, relative sum of squares), to each other (ρSpearman), with oral and fecal community richness (ρSpearman), and with oral and fecal community composition (distance-based redundancy analysis on Bray-Curtis dissimilarities, blocked by cohort, relative sum of squares).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42693/elife-42693-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Models were trained from oral and gut microbiome features to classify subjects into ‘high’ and ‘low’ transmission individuals (see Materials and methods). Model interpretation plots show the median relative model weight (barplots on the left) of the top selected features, the robustness (the number of cross-validation folds in which the respective feature had a non-zero weight; percentages next to the barplot), and the feature z-scores across samples, ordered by group and classification score (heatmap and annotations below). Plots are shown for models trained on the salivary microbiome, predicting the saliva transmission group (a) and the stool transmission group (b); trained on the stool microbiome, predicting the saliva transmission group (c) and the stool transmission group (d); and trained on the stool microbiome after exclusion of frequently transmitting species, predicting the saliva transmission group (e) and the stool transmission group (f). (g) Receiver operating characteristics (ROC) curves for the three models shown in (a, c, e). (h) ROC curves for the three models shown in (b, d, f).
+
 Between-subject variation in the relative abundance of transmitted oral and fecal microbes was found to be independent of subject sex, age and body mass index, although moderate differences were observed between study cohorts (ANOVA, p=0.002; Figure 3B; Supplementary file 3). Levels of transmitted microbial abundance in mouth and gut were found to correlate with each other (ρSpearman=0.48) and with fecal species richness, but salivary transmitted abundance negatively correlated with oral species richness. This is in line with the observation that core oral species are transmissible, with higher richness implying the increased presence of non-transmitted taxa. Conversely, transmission would add species to a mostly non-transmissible core community in the gut.
 
 Although there was no overall association to community composition, levels of transmission correlated with oral or fecal abundances of individual genera (Supplementary file 3). To test whether specific oral and gut microbiome features were predictive of transmission, we categorized individuals based on total transmitted abundance in saliva and stool as ‘high’ or ‘low’ transmission individuals (Materials and methods). We found that models based on salivary species abundances were mildly predictive of both oral (AUC = 0.738) and fecal (AUC = 0.642) transmission levels (Supplementary file 4, Figure 3—figure supplement 1). Gut species models, in contrast, were very strong predictors of transmission in both mouth (AUC = 0.951) and gut (AUC = 0.971). This signal was largely driven by the enrichment of transmitting species in stool (Supplementary file 4), but surprisingly robust to an elimination of all detected transmitters from the model (AUC = 0.835 for the stool transmission group), again implying that the true extent of oral-intestinal transmission may indeed exceed our conservative estimates. Fusobacterium nucleatum subsp. animalis and nucleatum stood out among non-trivial gut markers enriched in high-transmission individuals, in line with existing hypotheses that Fusobacterium nucleatum subspecies may enable synergistic colonization of oral bacteria in the gut, in association with certain diseases (see for example Flynn et al., 2016).
 
 In general, the fecal enrichment of specific oral microbes has repeatedly been associated with various diseases (Zeller et al., 2014; Zhang et al., 2015). However, due to insufficient taxonomic resolution, oral provenance has so far remained impossible to distinguish from an influx of closely related but distinct strains from the environment. We therefore defined a list of disease states with putative links to oral-fecal transmission and annotated known associations in the literature to all species in our dataset (Figure 4A; Supplementary file 2). Transmission scores were significantly increased for known opportunistic pathogens (ANOVA, p=0.016), causative agents of dental caries (p=10−9), and plaque-dwelling bacteria (p=0.002). Likewise, species associated with periodontitis showed increased evidence for transmission (p=0.002), though this signal was mostly due to mildly periodontic species, while core drivers, such as Tannerella forsythia, Treponema denticola and Porphyromonas gingivalis (Socransky et al., 1998), showed little or no indication of oral-fecal transmission. Endocarditis-associated species showed significantly increased transmission scores upon phylogenetic regression (p=0.007), mostly driven by Haemophilus, Aggregatibacter and viridans Streptococci. This overall elevated transmissibility of taxa known to colonize ectopically in various habitats across the body (i.e., opportunistic pathogens), in particular via the bloodstream and associated with inflammation (i.e., endocarditis- or periodontitis-associated species (Hajishengallis, 2015)), may provide first cues to possible mechanisms of oral-fecal transmission.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/42693/elife-42693-fig4-v2.jpg)
+
+**Figure 4.:** (A) Species known to be associated with various diseases showed increased oral-fecal transmission scores (pANOVA, sequential ANOVA including additional phenotypes), even upon phylogenetic generalized least squares regression (pPGLS, see Materials and methods and Supplementary file 2). (B) Oral-fecal transmission scores tested in colorectal cancer and rheumatoid arthritis cases against controls for specific sets of species (sequential ANOVA, blocked by taxon and subject covariates). Individual data points represent Cohen’s d effect sizes (difference in means, normalised by pooled standard deviation) for individual taxa across subjects.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/42693/elife-42693-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Transmission scores in cases and controls are shown for a list of species previously (Zeller et al., 2014) reported to be fecally enriched in colorectal cancer.
 
 Our dataset included metagenomes from case-control studies for rheumatoid arthritis (RA, (Zhang et al., 2015)), colorectal cancer (CRC, (Zeller et al., 2014)) and type-1 diabetes (T1D, (Heintz-Buschart et al., 2016)), totaling 299 individuals, including 172 with salivary and fecal samples. Treatment-naïve CRC patients, sampled before colonoscopy, showed increased transmission scores across all taxa (average per-taxon Cohen’s d = 0.27; ANOVA p=10−23; Figure 4B), as well as for transmitted taxa only (d = 0.23; p=10−10). The effect was even more pronounced for species previously described (Zeller et al., 2014) to be enriched in the feces of CRC patients (d = 0.33; p=10−4; Figure 4—figure supplement 1), including Fusobacterium nucleatum spp., Parvimonas micra and Peptostreptococcus stomatis. These findings are in line with a recent report that the oral and fecal microbiome are linked in the context of CRC (Felmer et al., 2018), and support the hypothesis (Flynn et al., 2016) that CRC-associated species are sourced intra-individually from the oral cavity.
 
@@ -79,13 +127,13 @@ While our findings are observational and do not reveal oral-intestinal transmiss
 
 ## Materials and methods
 
-## Metagenomic datasets
+### Metagenomic datasets
 
 Publicly available raw sequence data was downloaded from the European Nucleotide Archive (ENA) for the FJ-CTR (FijiCOMP, project accession PRJNA217052) (Brito et al., 2016) and CN-RA (PRJEB6997) (Zhang et al., 2015) cohorts. Sample metadata was parsed from ENA and the respective study publications.
 
 For the LU-T1D (PRJNA289586) (Heintz-Buschart et al., 2016) cohort, newly generated salivary and fecal metagenomes were added under the existing project accession. For the FR-CRC (ERP005534) (Zeller et al., 2014) and DE-CTR (ERP009422) (Voigt et al., 2015) cohorts, newly generated metagenomes were uploaded under project accession PRJEB28422 (samples ERS2692266-ERS2692323).
 
-## Sample collection
+### Sample collection
 
 German healthy controls (DE-CTR). Salivary samples were collected at home before dental hygiene and breakfast in the early morning. Donors collected 2–3 ml of saliva and immediately mixed with 15 ml of RNAlater (Sigma-Aldrich). Samples were transported to the laboratory on ice or dry ice and stored at −80C until further processing.
 
@@ -93,17 +141,17 @@ French colorectal cancer cohort (FR-CRC). Subject recruitment and cohort charact
 
 Luxembourg type-1 diabetes cohort (LU-T1D). Donors collected 2–3 ml of saliva at home before dental hygiene and breakfast in the early morning. Samples were immediately frozen on dry ice, transported to the laboratory and stored at −80C until further processing.
 
-## DNA extraction
+### DNA extraction
 
 DE-CTR and FR-CRC. After thawing on ice, 1–2 ml of each sample were centrifuged directly (FR-CRC) or after dilution in RNALater (DE-CTR). Cell pellets were washed 3x in sterile Dulbecco’s PBS (PAA Laboratories) and DNA was extracted using the using the GNOME DNA Isolation Kit (MP Biomedicals). Briefly, cell pellets were lysed using a multi-step process of chemical cell lysis/denaturation, bead-beating and enzymatic digestion as described previously (Zeller et al., 2014). DE-CTR samples were processed in duplicates, with one replicate being enriched for microbial DNA using the NEBNext Microbiome DNA Enrichment Kit (NEB, Ipswich, USA) following the manufacturer’s instructions.
 
 LU-T1D. After thawing on ice, two 500 µl aliquots of each sample were centrifuged. Cell pellets were frozen in liquid nitrogen and lysed by cryo-milling and chemical lysis in RLT buffer (QIAGEN). Cell debris was passed through QiaShredder columns (QIAGEN), before DNA was isolated using the QIAGEN AllPrep kit according to the manufacturer’s instructions, as described previously (Heintz-Buschart et al., 2016).
 
-## Metagenomic sequencing
+### Metagenomic sequencing
 
 Libraries for salivary samples of the French and German cohorts were prepared using the NEBNext Ultra DNA Library Prep kit (New England Biolabs, Ipswich) using a dual barcoding system, and sequenced at 125 bp paired-end on an Illumina HiSeq 2000. For the additional LU-T1D samples, libraries were likewise prepared using a dual barcoding system, and sequenced at 150 bp paired-end on Illumina HiSeq 4000 and Illumina NextSeq 500 machines.
 
-## Metagenomic sequence processing
+### Metagenomic sequence processing
 
 Raw reads were quality trimmed and filtered against the human genome issue 19 to exclude host sequences using MOCAT2, as described previously (Kultima et al., 2016). For taxonomic profiling, reads were mapped against a database of 10 universal marker genes for 1753 species-level genome clusters (specI clusters, (Mende et al., 2013)), using NGless (Coelho et al., 2018). A maximum likelihood-approximate phylogenetic tree (with the JTT model, (Jones et al., 1992)) for representative genomes of the same 1753 clusters was inferred based on protein sequences of 40 near-universal marker genes (Mende et al., 2013) using the ETE3 toolkit (Huerta-Cepas et al., 2016), with default parameters for ClustalOmega (Sievers et al., 2011) and FastTree2 (Price et al., 2010).
 
@@ -111,51 +159,89 @@ Metagenomic reads were mapped at 97% sequence identity (across at least 45nt) ag
 
 Two cohorts (CN-RA (Zhang et al., 2015) and DE-CTR (Voigt et al., 2015)) contained technical replicates for several salivary samples; these were pooled after the read mapping step.
 
-## Taxa filtering and annotation
+### Taxa filtering and annotation
 
 The dataset was filtered to include taxa satisfying the following criteria in ≥10% of samples (see Figure 2—figure supplement 5 for details): horizontal coverage (breadth) of ≥0.05; average vertical coverage (depth) ≥0.25; specI cluster relative abundance of ≥10−6. These criteria excluded taxa representing 0.8 ± 1.2% of gut and 1.2 ± 1.9% of oral total mapped abundance. For the remaining 310 taxa, general phenotypes (Gram stain, sporulation, motility, oxygen requirement, among others) were annotated using the PATRIC database (accessed Dec 2015) (Wattam et al., 2017), and missing values were amended manually. Host and disease association phenotypes (including opportunistic pathogenicity and periodontitis association) were annotated manually, based on published literature and the MicrobeWiki website (https://microbewiki.kenyon.edu/index.php/MicrobeWiki, accessed June 2017).
 
 Per taxon summary statistics and annotated metadata are available from Supplementary file 2.
 
-## Identification of microbial Single Nucleotide Variants
+### Identification of microbial Single Nucleotide Variants
 
 Microbial Single Nucleotide Variants (SNVs) were called using metaSNV (Costea et al., 2017). Each potential SNV required support by at least two non-reference sequencing reads (relative to the specI cluster representative genomes (Mende et al., 2013)) at a base call quality of Phred ≥ 20. The resulting sets of raw SNVs per taxon were filtered differentially for the various downstream analyses, as detailed below.
 
-## Detection of Intra-Individual microbial transmission
+### Detection of Intra-Individual microbial transmission
 
-To distinguish intra-individual microbial transmission from random drift, we calculated a transmission score (ST) per subject and microbial taxon. In short, ST quantifies how much the similarity between oral and gut SNV profiles within an individual deviates from an inter-individual background. To calculate ST, we first filtered the set of informative SNVs (all SNVs at a given genome position) by applying the following criteria: (i) observation (read coverage ≥1) at focal position in ≥10 oral and ≥10 gut samples; (ii) SNV observation in ≥1 oral and ≥1 gut sample. Next, we calculated the global background incidence of each allele across oral (foral) and gut (fgut) samples. From these, we calculated the background probabilities for each of the four possible cases in paired oral and gut observations: any given allele i could either be present in both samples (p1,1), absent in both samples (p0,0), or present in one but absent in the other sample (p1,0 and p0,1):p1,1(i)=foral(i)∗fgut(i)p0,1(i)=(1−foral(i))∗(1−fgut(i))p1,0(i)=foral(i)∗(1−fgut(i))p0,1(i)=(1−foral(i))∗fgut(i)
+To distinguish intra-individual microbial transmission from random drift, we calculated a transmission score (ST) per subject and microbial taxon. In short, ST quantifies how much the similarity between oral and gut SNV profiles within an individual deviates from an inter-individual background. To calculate ST, we first filtered the set of informative SNVs (all SNVs at a given genome position) by applying the following criteria: (i) observation (read coverage ≥1) at focal position in ≥10 oral and ≥10 gut samples; (ii) SNV observation in ≥1 oral and ≥1 gut sample. Next, we calculated the global background incidence of each allele across oral (foral) and gut (fgut) samples. From these, we calculated the background probabilities for each of the four possible cases in paired oral and gut observations: any given allele i could either be present in both samples (p1,1), absent in both samples (p0,0), or present in one but absent in the other sample (p1,0 and p0,1):
 
-For every permuted oral-gut pair of samples, we then calculated the raw summed log-likelihood of the observed SNV profile overlap (Lobs) across all alleles with shared coverage:Lobs=(∑i1,1log(p1,1(i))+∑j0,0log(p0,0(j)))-(∑k1,0log(p1,0(k))+∑l0,1log(p0,1(l)))
+$$
+p_{1,1}(i)=f_{oral}(i)^{∗}f_{gut}(i)
+$$
 
-In other words, Lobs quantifies how likely the observed average allele profile agreement between two samples is, given the respective background allele incidence frequencies. Similarly, we computed the log-likelihood of the least likely agreement case (Lmin) per allele:Lmin=∑imin(log(p1,1(i)),log(p0,0(i)))
 
-From these values, we calculated a raw probability score (Praw) for the observed allele agreement between a given pair of oral and gut samples:praw=Lobs/Lmin
+
+$$
+p_{0,1}(i)=(1−f_{oral}(i))^{∗}(1−f_{gut}(i))
+$$
+
+
+
+$$
+p_{1,0}(i)=f_{oral}(i)^{∗}(1−f_{gut}(i))
+$$
+
+
+
+$$
+p_{0,1}(i)=(1−f_{oral}(i))^{∗}f_{gut}(i)
+$$
+
+For every permuted oral-gut pair of samples, we then calculated the raw summed log-likelihood of the observed SNV profile overlap (Lobs) across all alleles with shared coverage:
+
+$$
+L_{obs}=(\sum_{i}^{1,1}log(p_{1,1}(i))+\sum_{j}^{0,0}log(p_{0,0}(j)))-(\sum_{k}^{1,0}log(p_{1,0}(k))+\sum_{l}^{0,1}log(p_{0,1}(l)))
+$$
+
+In other words, Lobs quantifies how likely the observed average allele profile agreement between two samples is, given the respective background allele incidence frequencies. Similarly, we computed the log-likelihood of the least likely agreement case (Lmin) per allele:
+
+$$
+L_{min}=\sum_{i}^{}min(log(p_{1,1}(i)),log(p_{0,0}(i)))
+$$
+
+From these values, we calculated a raw probability score (Praw) for the observed allele agreement between a given pair of oral and gut samples:
+
+$$
+p_{raw}=L_{obs}/L_{min}
+$$
 
 Praw scales the likelihood of the observed agreement by the likelihood of the theoretically most extreme cases of agreement across all observed alleles. In particular, the shared observation of very rare alleles (very low foral and fgut) has a strong impact on Praw, whereas the shared observation of very common variants is downweighted.
 
-We computed Praw for all pairwise permutations of oral and gut samples in the dataset with observations (reads) at ≥20 matching positions. We defined the transmission score ST(t, s) for taxon t in subject s as a standard Z score of the intra-individual (within subject) observation against an inter-individual (between subjects) background:ST=(Praw(s)−μraw)/σraw
+We computed Praw for all pairwise permutations of oral and gut samples in the dataset with observations (reads) at ≥20 matching positions. We defined the transmission score ST(t, s) for taxon t in subject s as a standard Z score of the intra-individual (within subject) observation against an inter-individual (between subjects) background:
+
+$$
+S_{T}=(P_{raw}(s)−\mu_{raw})/\sigma_{raw}
+$$
 
 We tested for potential effects of the choice of background observations by calculating ST against (i) a global background of all pairwise inter-individual oral-gut comparisons, across all cohorts; (ii) a cohort-specific background per subject; (iii) a global background, but taking only subject-specific comparisons into account (the focal subject’s oral sample vs all gut samples, and vice versa); (iv) a within-cohort subject-specific background. Oral-gut comparisons for the same individual across different timepoints, within families (information available for LU and CN cohorts) and within village (for the Fijian cohort) were excluded from the background sets. Although smaller background sets (iii and iv) provided generally noisier scores, overall trends between these backgrounds were very consistent; in particular, cohort-specific vs global backgrounds did not impact trends in our findings (data not shown). All results discussed in the main text therefore refer to scores against a cohort-specific background (ii).
 
-## Quantification of Intra-Individual microbial transmission
+### Quantification of Intra-Individual microbial transmission
 
 To quantify oral-gut transmission per individual, we defined a set of potentially transmissible species to include both frequently and occasionally transmitting species. Frequent transmitters encompassed a set of 74 species for which intra-individual transmission scores ST across subjects were significantly higher than inter-individual background (Benjamini-Hochberg-adjusted one-sided Wilcoxon p<0.05). Occasional transmitters did not satisfy this global criterion, but showed significant evidence for oral-fecal strain overlap in at least one individual (Benjamini-Hochberg-adjusted Z test p<0.05).
 
 To quantify the transmitted microbial abundance per individual, we adjusted the observed relative oral and fecal abundance of each given species by oral-fecal SNV overlap. In other words, the potentially transmissible abundance in the oral cavity was defined as the total abundance of potentially transmitting species, and the realized transmitted abundance was defined to include only species for which overlapping strain populations could be confidently traced within individuals. This included frequent transmitters that were observable (above detection limits) in matched oral-fecal sample pairs, and occasional transmitters satisfying the additional criterion that significant transmission scores were required in the focal individual for (i.e., an occasional transmitter such as Prevotella denticola would only be considered in individuals in which it showed significant transmission scores). For these species, relative oral and fecal abundances were adjusted for total strain population overlap, estimated as the Jaccard overlap of SNVs observed in the oral cavity and gut of the focal individual.
 
-## Longitudinal coupling of oral and fecal SNV profiles
+### Longitudinal coupling of oral and fecal SNV profiles
 
 Longitudinal data (2–3 timepoints, see Supplementary file 1) was available for 46 individuals from three cohorts (Heintz-Buschart et al., 2016; Voigt et al., 2015; Zhang et al., 2015). To quantify site-specific temporal stability of strain populations, we contrasted within-subject SNV profile similarity over time to between-subject similarities.
 
 Moreover, we tested the longitudinal coupling of strain populations between a putative source site (e.g., oral cavity) and sink site (e.g., gut). For this, we required shared observations (read coverage ≥1) for at least 100 SNV positions across three samples (see Figure 1): (i) source site at the initial time point (t0); (ii) sink site at t0; (iii) sink site at a later time point t1. We defined source SNVs as present in sample (i), and newly gained sink SNVs as present in sample (iii) but not (ii), and performed Fisher’s exact tests (followed by Benjamini-Hochberg correction) to test for associations between these SNV sets. In other words, we tested for the association of strain populations present in the source site at t0 with strains newly gained in the sink site over time, by proxy of SNV profiles. We considered two sites to be longitudinally coupled in the source - > sink direction if the tested odds ratio was >1 at a (corrected) p≤0.05. Significant odds ratios < 1 indicated unconnected sites in the tested directionality. Tests were performed independently for oral-to-gut (oral as source, gut as sink) and gut-to-oral coupling, per each taxon.
 
-## Quantification of Oral-Fecal transmission rates
+### Quantification of Oral-Fecal transmission rates
 
 Longitudinal data was also leveraged to estimate oral-fecal transmission rates, here defined as the fraction of fecal strain turnover attributable to the corresponding salivary sample. For each subject and taxon, the absolute fecal strain turnover was quantified as described above, as the difference in SNV profiles between fecal samples at t0 and t1 (samples ii and iii in the previous section). Though sampling intervals ranged from 1 week to >1 year, they were relatively consistent within cohorts (see Supplementary file 1). Transmission rates were then quantified as the fraction of fecal alleles gained between t0 and t1 that were also observed in the paired oral sample at t0. Arguably, this provides a conservative lower estimate: oral-fecal transmission could account for both newly gained fecal alleles and for the enhanced stability of existing alleles in the fecal strain population due to a constantly exerted dispersal pressure. However, since the latter effect cannot reliably be quantified from sparse longitudinal metagenomic data, the transmission rates reported in the main text only encompass the former (newly gained alleles).
 
 To test whether transmission rates per taxon were statistically significant across subjects, we compared observed rates to two distinct randomized backgrounds: by shuffling fecal samples at t1 within cohorts, subject-specific longitudinal background sets on fecal strain turnover were generated; shuffling oral samples at t0 provided subject-specific coupled backgrounds. For each taxon and subject, we Z-transformed observed transmission rates against either of these subject-specific backgrounds; the resulting standard scores (in unit standard deviations) are reported in Figure 2C.
 
-## Diversity, Community Composition and Statistical Analyses
+### Diversity, Community Composition and Statistical Analyses
 
 Per-sample community richness was calculated from the average of 100 rarefactions to normalised marker gene-based abundances of 1000. Between-sample community compositional similarities were computed as Bray-Curtis and TINA indices, as described previously (Schmidt et al., 2017). Distance-based Redundancy Analyses to associate community composition to levels of oral-fecal transmission were performed using the R package vegan (Oksanen et al., 2015).
 
@@ -167,6 +253,6 @@ To test for links between microbiome composition and the amount of transmitted a
 
 All statistical analyses were performed in R. Analysis code is available online (see below).
 
-## Data and analysis code availability
+### Data and analysis code availability
 
 All generated raw sequence data has been uploaded to the European Nucleotide Archive under the project accessions PRJEB28422 (French CRC, (Zeller et al., 2014) and German German healthy controls, (Voigt et al., 2015)) and PRJNA289586 (Luxembourg T1D, (Heintz-Buschart et al., 2016)). Sample metadata is available from Supplementary file 1. Processed data (taxonomic profiles, taxa annotations, etc.) and full analysis code are available via a gitlab repository (https://git.embl.de/tschmidt/oral-fecal-transmission-public; copy archived at https://github.com/elifesciences-publications/oral-fecal-transmission-public-).

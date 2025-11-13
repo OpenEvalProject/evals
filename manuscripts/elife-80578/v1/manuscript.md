@@ -12,15 +12,15 @@
 
 ### Affiliations
 
-1. https://ror.org/05n3x4p02 Department of Dermatology, Medical University of Vienna Vienna Austria
-2. https://ror.org/05n3x4p02 Center for Pathophysiology, Infectiology and Immunology, Medical University of Vienna Vienna Austria
-3. https://ror.org/05n3x4p02 Department of Plastic and Reconstructive Surgery, Medical University of Vienna Vienna Austria
+1. Department of Dermatology, Medical University of Vienna Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))
+2. Center for Pathophysiology, Infectiology and Immunology, Medical University of Vienna Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))
+3. Department of Plastic and Reconstructive Surgery, Medical University of Vienna Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))
 
 † Corresponding author
 
 ## Abstract
 
-Skin is an active immune organ where professional antigen-presenting cells such as epidermal Langerhans cells (LCs) link innate and adaptive immune responses. While Reticulon 1A (RTN1A) was recently identified in LCs and dendritic cells in cutaneous and lymphoid tissues of humans and mice, its function is still unclear. Here, we studied the involvement of this protein in cytoskeletal remodeling and immune responses toward pathogens by stimulation of Toll-like receptors (TLRs) in resident LCs (rLCs) and emigrated LCs (eLCs) in human epidermis ex vivo and in a transgenic THP-1 RTN1A + cell line. Hampering RTN1A functionality through an inhibitory antibody induced significant dendrite retraction of rLCs and inhibited their emigration. Similarly, expression of RTN1A in THP-1 cells significantly altered their morphology, enhanced aggregation potential, and inhibited the Ca 2+ flux. Differentiated THP-1 RTN1A + macrophages exhibited long cell protrusions and a larger cell body size in comparison to wild-type cells. Further, stimulation of epidermal sheets with bacterial lipoproteins (TLR1/2 and TLR2 agonists) and single-stranded RNA (TLR7 agonist) resulted in the formation of substantial clusters of rLCs and a significant decrease of RTN1A expression in eLCs. Together, our data indicate involvement of RTN1A in dendrite dynamics and structural plasticity of primary LCs. Moreover, we discovered a relation between activation of TLRs, clustering of LCs, and downregulation of RTN1A within the epidermis, thus indicating an important role of RTN1A in LC residency and maintaining tissue homeostasis.
+Skin is an active immune organ where professional antigen-presenting cells such as epidermal Langerhans cells (LCs) link innate and adaptive immune responses. While Reticulon 1A (RTN1A) was recently identified in LCs and dendritic cells in cutaneous and lymphoid tissues of humans and mice, its function is still unclear. Here, we studied the involvement of this protein in cytoskeletal remodeling and immune responses toward pathogens by stimulation of Toll-like receptors (TLRs) in resident LCs (rLCs) and emigrated LCs (eLCs) in human epidermis ex vivo and in a transgenic THP-1 RTN1A+ cell line. Hampering RTN1A functionality through an inhibitory antibody induced significant dendrite retraction of rLCs and inhibited their emigration. Similarly, expression of RTN1A in THP-1 cells significantly altered their morphology, enhanced aggregation potential, and inhibited the Ca2+ flux. Differentiated THP-1 RTN1A+ macrophages exhibited long cell protrusions and a larger cell body size in comparison to wild-type cells. Further, stimulation of epidermal sheets with bacterial lipoproteins (TLR1/2 and TLR2 agonists) and single-stranded RNA (TLR7 agonist) resulted in the formation of substantial clusters of rLCs and a significant decrease of RTN1A expression in eLCs. Together, our data indicate involvement of RTN1A in dendrite dynamics and structural plasticity of primary LCs. Moreover, we discovered a relation between activation of TLRs, clustering of LCs, and downregulation of RTN1A within the epidermis, thus indicating an important role of RTN1A in LC residency and maintaining tissue homeostasis.
 
 ## Introduction
 
@@ -30,9 +30,17 @@ The endoplasmic reticulum (ER)-associated protein Reticulon 1A (RTN1A) was recen
 
 ## Results
 
-## RTN1A is involved in the dynamic of dendrite retraction in LCs
+### RTN1A is involved in the dynamic of dendrite retraction in LCs
 
 In the first set of experiments we studied morphological changes in rLCs upon hampering RTN1A functionality with an α-RTN1A ab in human epidermal sheets ex vivo (Figure 1A). Incubation of dermatomed skin with the enzyme dispase II dissociated the basement membrane, thus enabling separation of the epidermis from the dermis and consequently exposure of epidermal cells to abs. The untagged α-RTN1A ab was detected with a fluorescently labeled secondary ab in the cell body and in the dendrites of rLCs already after only 3 hr, more pronounced at 6 hr and most prominent in the majority of rLCs at 24 hr of cultivation, while the isotype signal was substantially weaker (6 hr) or undetectable (3 and 24 hr) (Figure 1B and C). A prominent roundish morphology of rLCs was observed after 24 hr of incubation with the α-RTN1A abs in comparison to isotype-treated epidermis. rLCs captured the α-RTN1A ab (Figure 1C, yellow arrows). Notably, not all rLCs did so (Figure 1C, white arrows). Indeed, not all rLCs and eLCs express RTN1A to which the ab could have bound during the culture period. The frequency of RTN1A expression was determined in freshly isolated rLCs and eLCs by flow cytometry (Figure 1—figure supplement 1A). Around 80% of CD1a+CD207+ rLCs and eLCs express RTN1A (Figure 1—figure supplement 1A). Gating of RTN1A+ cells according to LC marker expression revealed that ~70% and ~80% of rLCs co-express CD207 and CD1a, respectively (Figure 1—figure supplement 1B). A similar observation was found for eLCs (~70% of RTN1A+ eLCs co-express CD207 or CD1a; Figure 1—figure supplement 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/80578/elife-80578-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental workflow demonstrating the cultivation of human epidermal sheets with an α-RTN1A antibody (ab) and the isotype for indicated time points and subsequent analysis strategies. (B–C) Representative immunofluorescence (IF) images of isotype- and α-RTN1A-treated epidermal sheets at indicated time points stained for CD207 (green), a secondary ab (red) to visualize the uptake of the isotype and α-RTN1A ab by rLCs and nuclear counterstaining with 4′,6-diamidino-2-phenylindole (DAPI) (blue). Zoom-ins of the boxed areas are also shown as 3D projections underneath. RTN1A+ rLCs: yellow arrows, RTN1A- rLCs: white arrows. n=3, scale bar: 20 μm. (D) Representative IF images showing RTN1A, CD207, vimentin, and DAPI staining in untreated (UT), isotype- and α-RTN1A-treated human epidermal sheets after 24 hr of cultivation. Co-localization of RTN1A with vimentin: pinkish arrows, rLCs with partially retracted dendrites: white arrows. n=4, scale bar: 20 μm. (E, F) Enumeration, percentage, and distribution of dendritic and roundish rLCs in epidermal sheets upon 24 hr of culture and indicated treatment. (E) Data are shown as standard error of the mean (SEM) from four fields of view (FOVs) of four donors and were analyzed using two-way ANOVA with Tukey’s multiple-comparison test. (F) Data represent mean of four donors. *p≤0.05, **p≤0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80578/elife-80578-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A.) Percentage of total Reticulon 1A+ (RTN1A+) resident Langerhans cells (rLCs) and emigrated LCs (eLCs), analyzed with flow cytometry. Viable rLCs and eLCs were gated for CD1a and CD207. Data shown as standard error of the mean (SEM), each dot represents one donor. rLCs: n=4, eLCs = n = 5. (B, C) Frequency of RTN1A expression in LCs. Representative dot blots showing flow cytometry analysis of (B) freshly isolated rLCs and (C) eLCs, stained for CD207, CD1a, and RTN1A. Quantification of the percentage of double-positive LCs s shown. Data shown as standard error of the mean (SEM), each dot represents one donor. CD207: n=2–4, CD1a: n=5.
 
 For further analysis of rLCs in this experimental setup, we employed markers such as the C-type lectin receptor CD207 (can be localized in the plasma membrane and intracellularly) (Hunger et al., 2004), RTN1A (distributed in the ER) and vimentin to label intermediate filaments (major component of the cytoskeleton) (Mahrle et al., 1983). Images of untreated (UT) epidermal sheets cultured for 24 hr showed co-localization of RTN1A with vimentin in the cell body and in the most distant tips of dendrites with dot-like RTN1A accumulations (Figure 1D, pinkish arrows), whereas CD207 expression was detected at lower intensity and mainly the cell body (Figure 1D). We also captured cells with halfway-retracted dendrites most likely representing migratory LCs (Figure 1D, white arrows). Upon 24 hr of incubation with α-RTN1A abs, rLCs revealed a consistent and recurrent reduction of dendricity in comparison to isotype-treated and UT epidermal sheets (Figure 1D). Enumeration of dendritic and roundish rLCs within epidermal biopsy punches after 24 hr of incubation with or without abs showed a significant decrease in the number (Figure 1E) and percentage (UT: 71.47; isotype: 63.52; α-RTN1A ab: 39.74; Figure 1F) of dendritic rLCs after blocking of RTN1A in comparison to controls. This observation correlates with a significant increase of roundish rLCs (UT: 28.53; isotype: 36.48; α-RTN1A ab: 60.26; Figure 1F).
 
@@ -42,7 +50,7 @@ Next, we compared morphological changes in rLCs in UT, isotype, and α-RTN1A ab-
 
 **Figure 2.:** (A) 3D projections of epidermal sheets upon 24 hr of culture, indicated treatment, and vimentin (VIM) staining (left panel). Shown are single rLC 3D trajectories based on intermediate filament expression (right panel). Scale bar: 10 μm. (B, C) Evaluation of the average rLC branch lengths and Sholl analysis of rLC dendricity upon 24 hr of culture and indicated treatments. Four fields of view (FOVs) were evaluated of four donors and data analyzed using two-way ANOVA with Tukey‘s multiple-comparison test, ns = not significant. *p≤0.05, ****p≤0.0001.
 
-## Despite dendrite retraction, rLCs with blocked RTN1A function remain in the epidermis
+### Despite dendrite retraction, rLCs with blocked RTN1A function remain in the epidermis
 
 To evaluate whether blocking of RTN1A with the inhibitory ab affects LC emigration from epidermal sheets, we analyzed the number of eLCs at selected time points. We found a significant decrease in the migration potential of LCs in culture wells containing α-RTN1A ab-treated compared to isotype-treated epidermal sheets after 24 hr of cultivation (Figure 3A). Similar to rLCs (Figure 1B and C), ab uptake was also detected in eLCs at all investigated time points, with a tendency of a more pronounced though not significantly higher signal of RTN1A ab compared to the isotype (Figure 3B). We assume that LCs carried the α-RTN1A/isotype abs after detachment from the epidermis. However, it is also conceivable that some eLCs have taken up abs in the medium after the emigration (Figure 3B). Next, we analyzed typical LC markers in eLCs (Figure 3C) such as CD1a, a microbial lipid-presenting molecule (Kim et al., 2016; Van Rhijn et al., 2015; Hunger et al., 2004), as well as CD207. We found that the CD1a expression level (mean fluorescence intensity [MFI]), but not the percentage of CD1a+ eLCs, was significantly reduced after α-RTN1A ab treatment, whereas CD207 expression was unchanged. The migratory and mature phenotype of LCs is distinguishable by increased expression levels of CCR7 and co-stimulatory molecules such as CD86 (Förster et al., 2008). Here, the inhibition of RTN1A caused a significant increase in the percentage and expression intensity of CCR7, and a decrease of CD86 in comparison to controls. These results suggest that inhibition of RTN1A endorse acquisition of the migratory phenotype by LCs, along with preventing the maturation of some LCs. To better understand the mechanism involved in rLC morphology changes after blocking RTN1A functionality and LC migration, we comparatively measured the presence of key adhesion molecules in culture supernatants after 24 hr. The adhesion molecule CD44 can stimulate intracellular calcium mobilization, and actin- (Wang et al., 1999) and vimentin-mediated cytoskeleton remodeling (Päll et al., 2011). PECAM-1 (Hu et al., 2016) plays a role in endothelial cell-cell adhesion (Dasgupta et al., 2009) and NCAM promotes neuron-neuron adhesion and neurite outgrowth (Frese et al., 2017). ALCAM facilitates attachment of DCs to endothelial cells (Iolyeva et al., 2013) and migration of other endothelial cells (Ikeda and Quertermous, 2004), EpCAM regulates LC adhesion and foster their migration (Gaiser et al., 2012; Eisenwort et al., 2011). L-selectin is a calcium-dependent lectin expressed by leukocytes and mediates cell adhesion by binding to neighboring cells (Bernimoulin et al., 2003; Wedepohl et al., 2017). Treatment of epidermal sheets with the α-RTN1A ab for 24 hr significantly decreased the concentrations of CD44, PECAM-1, NCAM, ALCAM, and EpCAM but not L-selectin in culture supernatants in comparison with controls (Figure 3D). This assay cannot be used to assign a selected molecule to a particular cell type. These data suggest that the detachment of rLCs from the tissue was hampered.
 
@@ -50,17 +58,49 @@ To evaluate whether blocking of RTN1A with the inhibitory ab affects LC emigrati
 
 **Figure 3.:** (A, B) Enumeration and ab uptake of pre-gated CD207+CD1a+ eLCs, collected from culture wells with epidermal sheets at indicated time points and analyzed via flow cytometry. (A) Data are presented as standard error of the mean (SEM) from triplicates of three donors. Ordinary one-way ANOVA with Tukey’s multi-comparison test was used. *p≤0.05. (B) Data from triplicates, including three donors, are shown as mean fold change to untreated (UT) eLCs. (C) Marker expression profile of pre-gated CD207+ eLCs upon 24 hr of culture, treatment, and flow cytometry analysis. Data shown represent mean ± SEM of three donors and were analyzed using two-way ANOVA Tukey’s multi-comparison test. *p≤0.05. (D) Adhesion molecule concentrations in supernatants of cultivated epidermal sheets with indicated 24 hr treatments and subsequent LEGENDplex bead array measurement. Data are shown as SEM from duplicates of four donors and were analyzed using two-way ANOVA with Tukey’s multiple-comparison test. *p≤0.05, **p≤0.01.
 
-## Expression of RTN1A substantially changes the cell size of myeloid cells
+### Expression of RTN1A substantially changes the cell size of myeloid cells
 
 Next, we assessed the involvement of RTN1A in cytoskeletal remodeling by determining shape and morphology changes upon expression of human RTN1A in the RTN1A- monocyte-like cell line THP-1 (Figure 4A). After confirming protein expression by flow cytometry, THP-1 RTN1A+ cells and THP-1 wild-type (wt) cells were used for further experiments (Figure 4A). THP-1 RTN1A+ cell morphology was considerably altered compared to THP-1 wt cells as they were significantly smaller in size and had markedly more condensed intermediate filament structures as visualized by vimentin staining (Figure 4B, C and Figure 4—figure supplement 1A). To assess a potential cross-talk between RTN1A and the cytoskeleton, THP-1 RTN1A+ cells were cultivated on fibronectin and imaged to analyze co-localization of RTN1A with vimentin and F-actin in three-cell compartments (bottom, middle, and top) (Figure 4D; Figure 4—figure supplement 1B). We found a significant overlap between RTN1A and vimentin at the bottom and top of the cell (Figure 4D, E), whereas there was less co-localization with F-actin in the same cell compartments (Figure 4D, E). In the middle part of the cell, RTN1A showed similar co-localization levels with F-actin and vimentin (Figure 4D, E). As during cultivation THP-1 wt and THP-1 RTN1A+ cells showed different growth dynamics, we subsequently evaluated their proliferation rate and cell growth. Indeed, THP-1 RTN1A+ cells displayed a significantly lower proliferation rate, CFSE dye dilution, and cell number compared with THP-1 wt control (Figure 4F). The involvement of RTN1A in determination of morphological features such as cell size and dendricity was further studied in differentiated adherent THP-1 RTN1A- wt Mφs and THP-1 RTN1A+ Mφs (Figure 5A, B). Expression of RTN1A in THP-1 Mφs resulted in altered morphology with significantly larger cell bodies and substantially longer cell protrusions when compared with THP-1 wt Mφs (Figure 5B–D). Alike in undifferentiated THP-1 cells (Figure 4D, E), RTN1A significantly co-localized with vimentin and to a lesser extent with F-actin (Figure 5E).
 
-## RTN1A inhibits calcium flux and regulates cell adhesion in myeloid cells
+![Figure 4.](https://cdn.elifesciences.org/articles/80578/elife-80578-fig4-v1.jpg)
+
+**Figure 4.:** (A) Workflow for the generation of THP-1 RTN1A+ cells and their comparative analysis with THP-1 wild-type (wt) cells. (B) Representative immunofluorescence (IF) images of THP-1 wt and THP-1 RTN1A+ cells on adhesion slides stained for RTN1A, vimentin (VIM), and nuclei (4′,6-diamidino-2-phenylindole [DAPI]). n=4; scale bar: 10 μm. (C) Comparative evaluation of the cell area revealed substantial divergences between THP-1 wt and THP-1 RTN1A+ cells. Data are shown as standard error of the mean (SEM) from four fields of view (FOVs; n=4) and were analyzed using unpaired, two-tailed Student’s t test. ****p≤0.0001. (D, E) Representative IF images and quantification using Manders’ coefficient of RTN1A co-localization with filamentous proteins in a THP-1 RTN1A+ cell within three-cell compartments: bottom, middle, and top of the cell (right panel). Scale bar: 10 μm. Data are shown as SEM (10 cells/4 FOVs; n=2), and analyzed using two-way ANOVA with Tukey‘s multiple-comparison test. *p≤0.05, ****p≤0.0001. (F) Evaluation of the cell number and proliferation rate of THP-1 wt and THP-1 RTN1A+ cells within the time period indicated. Data presented as SEM were analyzed with two-way ANOVA, Sidak’s multiple-comparison test (n=3). *p<0.05, **p≤0.01, ***p≤0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80578/elife-80578-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative immunofluorescence (IF) images of THP-1 wild-type (wt) and THP-1 Reticulon 1A+ (RTN1A+) cells on adhesion slides stained with vimentin (VIM) and demonstrated as LUT-fire. THP-1 RTN1A+ cells display markedly more condensed intermediate filament structures in comparison to THP-1 wt cells. Scale bar: 10 μm. (B) Representative IF image of THP-1 RTN1A+ cells stained for RTN1A, F-actin, VIM, and nuclei. Image is shown as montage of Z-stack slices.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80578/elife-80578-fig5-v1.jpg)
+
+**Figure 5.:** (A) Workflow for the differentiation and comparative analysis of THP-1 RTN1A+ Mφs and THP-1 wild-type (wt) Mφs. (B) Representative bright-field (BF) and immunofluorescence images (IF; co-staining with RTN1A, F-actin, vimentin [VIM], and 4′,6-diamidino-2-phenylindole [DAPI]) of THP-1 wt Mφs and THP-1 RTN1A+ Mφs. Scale bar: BF: 31 and IF: 10 μm, n=4. (C, D) Comparative analysis of cell body size and average length of cell protrusions of differentiated THP-1 wt Mφs and THP-1 RTN1A+ Mφs. Data were analyzed using unpaired, two-tailed Student’s t test, n=4. ****p≤0.0001. (E) Comparative co-localization between RTN1A, F-actin, and VIM using Manders’ coefficient. Data shown are standard error of the mean (SEM), n=4. ****p≤0.0001. (F) Representative BF image of THP-1 wt and THP-1 RTN1A+ cells forming aggregates during culture. Scale bar: 100 µm. (G) Enumeration of THP-1 wt and THP-1 RTN1A+ cell aggregates. Data are demonstrated as SEM from four fields of view per passage and analyzed using unpaired, two-tailed Student’s t test, n=6. (H) Adhesion molecule concentrations in supernatants after 48 hr of THP-1 wt and THP-1 RTN1A+ cell cultivation, measured in duplicates with LEGENDplex bead array. Data are shown as SEM from three different passages and were analyzed using unpaired, two-tailed Student’s t test. *p≤0.05. (I, J) Ratiomeric analysis of early and late phase calcium flux in THP-1 wt and THP-1 RTN1A+ cells using Fura-3 calcium indicator, ionomycin (n=5), and thapsigargin (n=4). Unpaired two-tailed t test was used for the response to both ionomycin and thapsigargin. ****p≤0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80578/elife-80578-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The size of cellular aggregates was defined based on their area (small ~312.5 µm2 and big ~637.6 µm2). n=6.
+
+### RTN1A inhibits calcium flux and regulates cell adhesion in myeloid cells
 
 We discovered that THP-1 RTN1A+ cells display an increased capacity in cellular aggregate formation compared with THP-1 wt cells (Figure 5F and G and Figure 5—figure supplement 1). In line with this observation, we analyzed cell culture supernatants for the presence of adhesion molecules. We found increased NCAM and PECAM-1 and significantly decreased ALCAM concentrations in supernatants of THP-1 RTN1A+ in comparison to THP-1 wt cells (Figure 5H). The ER is an important calcium ion store and proper calcium levels are crucial for maintaining balanced cell functions (Vandecaetsbeek et al., 2011; Shibaki et al., 1995). Calcium ions (Ca2+) are a versatile second messenger involved in signal transduction and controlling activity of adhesion molecules, such as CD44, L-selectin (Ivetic et al., 2019; Berridge et al., 2003). To analyze whether an altered calcium homeostasis in THP-1 RTN1A+ cells promotes the enhanced aggregation capacity, we comparatively monitored Ca2+ flux in THP-1 wt and THP-1 RTN1A+ cells using ratiomeric calcium flux measurement (Wendt et al., 2015) with the Ca2+ indicator Fura-3 red. Calcium ionophores such as ionomycin are binding calcium ions (Liu, 1978), which induces opening calcium stores and reaugmenting of [Ca+]I (Kao et al., 2010). Both the early and late response to ionomycin in THP-1 RTN1A+ cells was significantly lower in comparison to the calcium flux in THP-1 wt cells (Figure 5I). Next, we tested whether RTN1A plays a role in differently induced Ca2+ mobilization from the ER and therefore applied thapsigargin (Liu, 1978). This compound inhibits sarcoplasmic reticulum/ER Ca2+-ATPase (SERCA) channels, resulting in a clearly distinguishable depletion of intracellular Ca2+ stores in the early phase and subsequent activation and opening of plasma membrane calcium channels in the late phase. Cell stimulation with thapsigargin caused significantly lower Ca2+ efflux from the ER store in the early and late phase of the measurement in THP-1 RTN1A+ cells (Figure 5J). The results show that RTN1A has an inhibitory effect on the Ca2+ efflux from ER in comparison to THP-1 wt cells and most likely results in a decreased Ca2+ influx through the plasma membrane. Together, our data suggest that RTN1A expression may induce a feedback regulatory mechanism to counteract elevated cell adhesion and further highlights a potential role of RTN1A in fine-tuning cell activation and adhesion. These results comply with a previous finding of the inhibitory effect of RTN1A on calcium release and therefor calcium flux in nerve cells (Kaya et al., 2013) and suggest its involvement in myeloid cell adhesion via regulation of integrin activation (Sjaastad et al., 1996).
 
-## Stimulation of TLR1/2, TLR2, and TLR7 significantly diminishes RTN1A expression levels in eLCs and induce rLC clustering
+### Stimulation of TLR1/2, TLR2, and TLR7 significantly diminishes RTN1A expression levels in eLCs and induce rLC clustering
 
 We next explored whether a relation exists between RTN1A and the activation of LCs via TLR agonists, thus mimicking inflammatory conditions in ex vivo human skin. This was of great interest as it may reflect the everyday life of human skin which is constantly exposed to myriad environmental assailants. Incubation of epidermal explants with selected extra- and intracellular TLR agonists and subsequent analysis of eLCs by flow cytometry (Figure 6A and Figure 6—figure supplement 1A) revealed that both the percentage of RTN1A+ eLCs and RTN1A expression intensity in eLCs were significantly diminished after activation with the agonists TLR1/2 (Pam3CSK4), TLR2 (Listeria monocytogenes), and TLR7 (imiquimod, polyadenylic:polyuridylic acid (poly(A:U)), but not to agonists of TLR2/6 [mycoplasma salivarium] and TLR3 [low and high molecular weight polyinosinic:polycytidylic acid, LMW and HMW poly(I:C)]) (Figure 6B–D). Of note, the downregulation of RTN1A in eLCs was transient, since we observed a tendency for recovery of RTN1A protein expression upon 48 hr of cultivation (Figure 6E). Next, we examined whether eLCs diminish RTN1A expression during the activation process. In cultures with UT epidermal sheets, we observed a small percentage of activated eLCs (Figure 6—figure supplement 1B, C). This is in line with previous observations that some rLCs can be activated after enzymatic separation and cultivation (Pearton et al., 2010). Epidermal sheets cultured with TLR1/2, TLR2/6, and TLR3/7 agonists and analysis of pre-gated RTN1A+ eLCs revealed an upregulation of CD83 and CD86 in comparison to the UT control (Figure 6—figure supplement 1B, C). Of note, TLR1/2 stimulation significantly enhanced the percentage of activated CD83+CD86+ eLCs (Figure 6—figure supplement 1B, C). These data provide evidence that the decreased RTN1A expression correlates with the activation status of LCs and implies an active communication between TLRs and RTN1A. Next, the expression and distribution of RTN1A, CD86, and CD83 were examined in/on rLCs in epidermal sheets after cultivation with selected extra- and intracellular TLR agonists. Stimulation with TLR1/2, TLR2, and TLR7 agonists induced the formation of rLC clusters and were repeatedly detected in the convex epidermal areas (Figure 7A, inserts). The big and small rLC clusters exhibited diminished dendrites and a roundish morphology (Figure 7B). Furthermore, we observed low co-localization between activation markers (cell membrane) and RTN1A (ER) in the single, activated, and dendritic rLCs (Figure 7B). In contrast, upon stimulation of epidermal sheets with TLR2/6 and TLR3 (LMW and HMW p(I:C)) agonists, the morphology of rLCs was unaltered and comparable to the UT control. The expression intensity of RTN1A in rLCs was slightly but not significantly reduced upon stimulation with all TLR agonists in comparison to the UT control (Figure 7C). Significant upregulation of CD83/CD86 was observed after TLR7 stimulation (Figure 7D). Further analysis of clusters formed by rLCs upon TLR1/2 and TLR7 stimulation of epidermal sheets revealed that they were not proliferating (Figure 7—figure supplement 1A). They simultaneously acquired a migratory phenotype and upregulated either MMP-9 (Ratzinger et al., 2002) or CCR7 or co-expressed both markers (Figure 7E, yellow arrow: MMP-9/CCR7, red arrow: MMP-9, and turquoise arrow: CCR7). Stimulation of TLRs activates signaling cascades inducing proinflammatory response such as secretion of cyto- and chemokines (Wang et al., 1999). Accordingly, we have assessed epidermal sheet culture supernatants and detected low IL-6 levels with exception of a significant increase after stimulation with TLR3/7 poly(A:U). IL-8 and TNF-α concentrations were significantly elevated after stimulation with TLR3-HMW, and TLR3-LMW agonists, respectively. Of note, MCP-1 levels were significantly reduced after stimulation with TLR2 and TLR3/7 poly(A:U) agonists in comparison to UT control (Figure 7F). In contrast, IL-10, IL-23 concentrations were slightly but not significantly elevated in comparison to IL-6 and IL-8 (Figure 7—figure supplement 1B, C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/80578/elife-80578-fig6-v1.jpg)
+
+**Figure 6.:** (A) Graphical presentation for the stimulation of epidermal sheets with TLR agonists and analysis. (B) Representative FACS blots of RTN1A expression in pre-gated eLCs upon stimulation of epidermal sheets with TLR1/2 (Pam3CSK4), TLR2 (Listeria monocytogenes), TLR2/6 (mycoplasma salivarium), TLR7 (imiquimod), TLR3/7 [polyadenylic:polyuridylic acid (poly(A:U))], and TLR3 [low and high molecular weight polyinosinic:polycytidylic acid (LMW and HMW poly(I:C))] for 24 hr. (C, D) The percentage and geometric mean fluorescence intensity (gMFI) of RTN1A in eLCs are shown as standard error of the mean (SEM) of triplicates, and analyzed using two-way ANOVA with Tukey‘s multiple-comparison test. *p≤0.05, **p≤0.01, ***p≤0.001. Some p values were not significant (ns), yet indicative of a trend for the reduction of RTN1A expression intensity. (E) Recovery of the RTN1A protein expression (% of RTN1A+ eLCs) after 48 hr of cultivation with indicated TLR agonists. Data shown represent mean ± SEM of triplicates from three donors.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80578/elife-80578-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Gating strategy for emigrated Langerhans cells (eLCs) as analyzed with flow cytometry. (B, C) Reticulon 1A (RTN1A) distribution within TLR-activated eLCs and their quantification. Data shown represent mean ± standard error of the mean (SEM) of triplicates from four donors. Data set was analyzed using two-way ANOVA, Dunnett’s multiple-comparison test. *p≤0.05.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/80578/elife-80578-fig7-v1.jpg)
+
+**Figure 7.:** (A) Representative immunofluorescence (IF) images of untreated (control) and indicated TLR-treated epidermal sheets upon 24 hr of culture stained with Reticulon 1A (RTN1A) (red), CD83, CD86 (green), and 4′,6-diamidino-2-phenylindole (DAPI) (blue). n=5, scale bar: 20 μm. (B) 3D projection of rLCs in an epidermal sheet after incubation with a TLR7 agonist for 24 hr (A). rLCs form big (arrow) and small (asterisk) clusters yet were also visible as single activated dendritic rLCs (hashtag). (C, D) Expression intensity of indicated markers in rLCs upon culture and treatment. Data are shown as standard error of the mean (SEM) representing four fields of view of five donors, analyzed with two-way ANOVA Tukey’s multiple-comparison test. *p≤0.05,***p≤0.001. (E) Representative IF images of untreated (control) and TLR-stimulated epidermal sheets stained for MMP-9, CCR-7, and 4′,6-diamidino-2-phenylindole (DAPI). n=2, scale bar: 20 μm. (F) Inflammatory cyto- and chemokine concentrations in supernatants of epidermal sheet cultures after 24 hr, measured in duplicates with LEGENDplex bead array. Data are shown as SEM of four donors and analyzed using two-way ANOVA with Durrett’s multiple-comparison test. *p≤0.05, **p≤0.01.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/80578/elife-80578-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representative immunofluorescence images of epidermal sheets after 24 hr of cultivation only or treatment with TLR 1/2, and TLR7 agonists. Epidermal sheets were stained for Ki67 (green) and nuclei (blue). n=2, scale bar: 20 μm. (B,C) Inflammatory cyto- and chemokines concentration measured in supernatants of epidermal sheet cultures after 24 hr, with LEGENDplex bead array. Data are shown as SEM from four donors and analyzed using two-way ANOVA with Durrett’s multiple-comparison test and were not significant.
 
 ## Discussion
 
@@ -78,68 +118,383 @@ In conclusion, as summarized in Figure 8, we demonstrated the importance of RTN1
 
 ## Materials and methods
 
-## Processing of human skin
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>RTN1A</td>
+      <td>NM_0211369, Eurofins (this paper)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>THP-1</td>
+      <td>ATCC</td>
+      <td>TIB-202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pHR‐SIN‐BX‐IRES‐Emerald</td>
+      <td>Paster et al., 2013</td>
+      <td></td>
+      <td>Lentiviral construct totransfect the THP-1 cell line and express RTN1A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-RTN1A (clone: mon162), unconjugated (Mouse monoclonal)</td>
+      <td>abcam</td>
+      <td>ab9274</td>
+      <td>IF staining –0.2 µg/ml; cultivation of epidermal sheets –5 µg/ml/</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-RTN1A (clone: mon162), unconjugated (Mouse monoclonal)</td>
+      <td>Novus Biologicals, Biotechne</td>
+      <td>NBP1-97677</td>
+      <td>IF staining –0.2 µg/ml; cultivation of epidermal sheets –5 µg/ml/</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-RTN1A-APC (clone: mon161, Mouse monoclonal)</td>
+      <td>Novus Biologicals, Biotechne</td>
+      <td>NBP1-97678AF647</td>
+      <td>FACS analysis – 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG1 [15-6E10A7] - Isotype control, unconjugated (Mouse monoclonal)</td>
+      <td>abcam</td>
+      <td>ab170190</td>
+      <td>IF staining –0.2 µg/ml; cultivation of epidermal sheets –5 µg/ml/</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-CD207-FITC (clone 929F3.01, Rat monoclonal)</td>
+      <td>Dendritics</td>
+      <td>Cat:DDX0362</td>
+      <td>IF staining – 0.25 µg/ml. 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-CD207, unconjugated (Rabbit monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>HPA011216</td>
+      <td>IF staining – 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Human CD207-PE (clone DCGM4, Mouse)</td>
+      <td>Beckman Coulter</td>
+      <td>PN IM3577</td>
+      <td>FACS analysis – 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Human HLA-DR-PE (Mouse)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat. 347401</td>
+      <td>FACS analysis – 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Human CD1a-PE (Mouse)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat. 555807</td>
+      <td>FACS analysis – 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Human CD83-FITC (Mouse)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat. 556910</td>
+      <td>FACS analysis, IF staining – 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Human CD86-FITC (Mouse)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat. 555657</td>
+      <td>FACS analysis, IF staining – 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-CCR7-APC</td>
+      <td>Miltenyi Biotech</td>
+      <td>5171113456</td>
+      <td>FACS analysis, IF staining – 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Recombinant α-Vimentin-FITC (clone REA409)</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-116-508</td>
+      <td>IF staining – 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Recombinant FITC isotype control</td>
+      <td>Miltenyi Biotech</td>
+      <td>130-113-449</td>
+      <td>IF staining – 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F(ab')2-Goat anti-Rabbit IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td>Life Technologies</td>
+      <td>REF A-11070</td>
+      <td>IF staining – 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F(ab')2-Goat anti-Mouse IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 546</td>
+      <td>Invitrogen, Thermo Fisher Scientific</td>
+      <td>REF A-11018</td>
+      <td>IF staining – 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Flour 647F(ab´)2 fragment of goat α-rabbit IgG (H+L)</td>
+      <td>Invitrogen, Thermo Fisher Scientific</td>
+      <td>REF A-21246</td>
+      <td>IF staining – 1:500</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human TLR kit</td>
+      <td>InvitroGen</td>
+      <td>Cat. tlrl-kit1hw</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LEGENDplex Human inflammatory Panel 1 (13-plex) w/VbP</td>
+      <td>Biolegend</td>
+      <td>Cat. 740809</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LEGENDplex Human Adhesion Molecule Panel (13-plex) w/VbP</td>
+      <td>Biolegend</td>
+      <td>Cat. 740946</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thapsigargin</td>
+      <td>Invitrogen, Thermo Fisher Scientific</td>
+      <td>T7458</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism v8.0.1</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo v10.6.1</td>
+      <td>BD (Becton, Dickinson &amp; Company)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji: ImageJ</td>
+      <td>Schindelin et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImarisViewer 9.8</td>
+      <td>Oxford Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator CS7</td>
+      <td>Adobe Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 647 Phalloidin</td>
+      <td>Invitrogen</td>
+      <td>REF A-22287</td>
+      <td>IF staining – 1:500</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fixable Viability Dye eFluor 450</td>
+      <td>eBioscience</td>
+      <td>Cat. 65-0863-18</td>
+      <td>FACS analysis – 1:1000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI (4′,6-diamidino-2-phenylindole dihydrochloride)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. D9542</td>
+      <td>IF staining – 1:5000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dispase II (neutral protease, grade II)</td>
+      <td>Roche Diagnostics</td>
+      <td>04942078001</td>
+      <td>1.2 U/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProLong Gold antifade reagent</td>
+      <td>InvitroGen</td>
+      <td>Cat. P36934</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>IC Fixation Buffer</td>
+      <td>eBioscience</td>
+      <td>Cat. 00-8222-49</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Permeabilization Buffer (×10)</td>
+      <td>eBioscience</td>
+      <td>Cat. 00-8333-56</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phorbol 12-myristate 13-acetate (PMA), PKC activator</td>
+      <td>Abcam</td>
+      <td>Ab120297</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fura Red, AM, cell permeant</td>
+      <td>Invitrogen, Thermo Fisher Scientific</td>
+      <td>F3020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellTrace CFSE Cell Proliferation Kit, for flow cytometry</td>
+      <td>Invitrogen, Thermo Fisher Scientific</td>
+      <td>C34554</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ionomycin- Calcium ionophore – NFAT Activator</td>
+      <td>InvivoGen</td>
+      <td>inh-ion</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fibronectin Solution Human</td>
+      <td>PromoCell</td>
+      <td>Cat. C-43060</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Processing of human skin
 
 Experiments were performed within 1–2 hr after surgery. Skin was dermatomed (Aesculap) to 600 µm thickness, then incubated with 1.2 U/ml dispase II (Roche Diagnostics) in Roswell Park Memorial Institute 1640 medium (RPMI; Gibco, Thermo Fisher Scientific) with 1% penicillin/streptomycin (P/S; Gibco, Thermo Fisher Scientific) overnight (ON) at 4°C. After washing with phosphate buffered saline (PBS; Gibco, Thermo Fisher Scientific), epidermis was separated from the dermis. Epidermal punches with a diameter of 6 mm were obtained and used for the following experiments. The rLCs were isolated and purified as described previously (Tajpara et al., 2018).
 
-## Cultivation of epidermal explants with TLR agonists and staining
+### Cultivation of epidermal explants with TLR agonists and staining
 
 Epidermal punch biopsies (6 mm diameter) in triplicates for each condition were floated on RPMI medium supplemented with 10% fetal bovine serum (FBS, Gibco), 1% P/S, and human TLR agonists (InvitroGen) in 96-well round bottom plates. The following TLR agonists were used: TLR1/2 (Pam3CSK4x3 HCl; 1 µg/ml), TLR2 (heat-killed L. monocytogenes; 108 cells/ml), TLR3/7 ((poly(A:U)); 25 µg/ml), TLR3 (LMW and HMW poly(I:C); both at 0.8 µg/ml), TLR6/2 (mycoplasma salivarium, FSL-1, Pam2CGDPKHPKSF; 2.5 µg/ml) and TLR7 (imiquimod; 2.5 µg/ml). After 24 and 48 hr, epidermal sheets were collected, fixed with acetone (Merck) for 10 min at room temperature (RT), incubated with FITC-conjugated α-CD83 and α-CD86 abs, as well as with a primary mouse α-RTN1A ab (mon162, abcam) ON at 4°C. All abs were diluted in 2% bovine serum albumin (Gibco, Thermo Fisher Scientific) in PBS. Subsequently, sheets were incubated with an AF647-labeled α-mouse secondary ab (Thermo Fisher Scientific) for 1 hr at RT and counterstained with 4′,6-diamidino-2-phenylindole (DAPI; Sigma-Aldrich) for 1 min. After PBS washing, sheets were mounted (ProLong Gold antifade reagent, Invitrogen) with the stratum corneum facing the slide and imaged. At the same time points cultivation medium was harvested and stored at –80°C for further analyses and eLCs were processed and analyzed as described below.
 
-## Cultivation of epidermal explants with an α-RTN1A ab
+### Cultivation of epidermal explants with an α-RTN1A ab
 
 Epidermal punch biopsies (6 mm diameter) in triplicates were floated on medium containing either a mouse α-RTN1A ab (mon162, abcam) or the respective isotype control ab (IgG1, abcam) (5 µg/ml/each) in 96-well round bottom plates at 37°C, 5% CO2. Sheets were collected at 3, 6, and 24 hr, fixed with acetone and stained with a secondary α-mouse cross-absorbed F(ab’) ab fragment conjugated with AF546 (Thermo Fisher Scientific) and a FITC-labeled α-CD207 (Dendritics) to identify LCs. In some experiments, 24 hr cultured epidermal sheets were stained with a FITC-labeled α-vimentin, primary rat α-CD207 (Sigma-Aldrich) and mouse α-RTN1A abs (mon162, abcam) ON at 4°C, followed by α-mouse and α-rat secondary abs and counterstaining with DAPI. 3D projections have been created with ImarisViewer (v.9.8). The contrast and brightness of representative images (Figure 1B–C) remained unaltered, to highlight the detection level of the abs taken up by rLCs. All abs and reagents used in this study are listed in Key resources table.
 
-## Generation of an RTN1A expressing THP-1 cell line
+### Generation of an RTN1A expressing THP-1 cell line
 
 Human RTN1A (NM_0211369) was gene synthesized (Eurofins), cloned into the lentiviral expression vector pHR‐SIN‐BX‐IRES‐Emerald (Paster et al., 2013) and expressed in the THP-1 cell line (ATCC TIB-202). Following puromycin selection, stable RTN1A protein expression was tested by flow cytometry (α-RTN1A-APC labeled ab, mon161, Novus Biologicals, Biotechne). Furthermore, the authenticity of the THP-1 cell line was confirmed by flow cytometry using a panel of abs to monocytic markers and to HLA-A2. Cell lines were tested for absence of mycoplasma, using a reporter system described recently (Battin et al., 2017).
 
-## Differentiation of THP-1 wt and THP-1 RTN1A+ cells toward Mφs
+### Differentiation of THP-1 wt and THP-1 RTN1A+ cells toward Mφs
 
 THP-1 wt and THP-1 RTN1A+ cells were seeded on cover slips in a 24-well plate (2.5×104 cells/well) and polarized toward Mφs for 72 hr with 50 ng/ml phorbol 12-myristate 13-acetate (Abcam) in RPMI medium and supplements as described previously (Pinto et al., 2021).
 
-## Immunofluorescence staining of THP-1 cells and THP-1 Mφs
+### Immunofluorescence staining of THP-1 cells and THP-1 Mφs
 
 THP-1 wt and THP-1 RTN1A+ cells (both seeded at 2×104) on adhesion slides (Marienfeld) were fixed with acetone for 10 min at RT, stained with α-vimentin and α-RTN1A abs and mounted. For co-localization assays, THP-1 RTN1A+ cells were seeded in eight-well chamber slides (2×104/well, ibidi), coated with 0.1 ng/ml of fibronectin (PromoCell). After 24 hr the cells were washed, fixed with 4% formaldehyde (SAV Liquid Production) for 10 min at RT, and permeabilized with 0.1% Triton X-100 (Sigma-Aldrich) in PBS for 10 min at 4°C. These samples were stained additionally with phalloidin-AF647 probe (F-actin, Invitrogen) for 1 hr at RT. Mφs differentiated on cover slips were fixed and processed as described above for THP-1 RTN1A+ cells on coated slides.
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 A confocal laser scanning microscope (Olympus, FLUOVIEW-FV 3000, equipped with OBIS lasers: 405, 488, 561, 640 nm and ×20, ×40, or ×60 UPlanXApo objectives) and Olympus FV31S-SW software were used in this study. Images were acquired with ×20 objective as Z-stack from four fields of view (FOVs) per epidermal sheet from four different donors and analyzed using ImageJ Fiji software (Schindelin et al., 2012). The measurement of the integrated density from the region of interest (ROI) was based on Z-projections with max intensity of manually thresholded images (analogue parameters were used for all analyzed images). Between 100 and 200 ROIs (rLCs) were analyzed per four FOVs.
 
-## Evaluation of the morphology and dendricity of rLCs and THP-1 Mφs
+### Evaluation of the morphology and dendricity of rLCs and THP-1 Mφs
 
 The enumeration of roundish (none or one dendrite) and dendritic (two or more dendrites) rLCs per 0.04 mm2 in epidermal sheets was based on vimentin staining and performed using ImageJ Fiji. Sixty to 300 cells were analyzed per FOV. The average length of rLC dendrites and the distance of dendrites from the middle of the cell body was analyzed and quantified using simple neurite tracer (SNT) and Sholl analysis plugin in ImageJ Fiji (Longair et al., 2011; Ferreira et al., 2014). ×60 objective was used for representative images in Figure 2A. The length of cell protrusions in Mp0 was also quantified using SNT (10–40 cells/FOV from four FOVs).
 
-## Analysis of THP-1 and THP-1 Mφ cell areas and co-localization of RTN1A with cytoskeleton structures
+### Analysis of THP-1 and THP-1 Mφ cell areas and co-localization of RTN1A with cytoskeleton structures
 
 To estimate the full size of the cell body of vimentin- and F-actin-stained Mφs on adhesion slides, vimentin and F-actin channels were merged, thresholded, and the ROI area analyzed and quantified using ImageJ Fiji. To assess co-localization of RTN1A with vimentin and F-actin in THP-1 RTN1A+ cells and THP-1 Mφs, we used Manders’ coefficient analysis with RTN1A as M1 and vimentin/F-actin as M2. Single Z-stack slices from the bottom, middle, and the top of 10 cells/FOV from four FOVs were analyzed.
 
-## Flow cytometry analysis of eLCs
+### Flow cytometry analysis of eLCs
 
-## Enumeration of eLCs
+#### Enumeration of eLCs
 
 Cultivation periods and treatments were performed as described above (cultivation of epidermal explants with an α-RTN1A ab) in 96-well round bottom plates. Epidermal explants (6 mm in diameter/1 explant per well in triplicates per condition and time point) were removed and cells in the culture medium were collected from wells (Figure 3A and B). Cells were washed with PBS (Gibco, Thermo Fisher Scientific), stained with fixable viability dye and an ab cocktail for LC surface markers (FITC-conjugated CD207 [Beckman Coulter], CD1a [BD Pharmingen]), subsequently fixed, permeabilized, and stained with a secondary α-mouse cross-absorbed F(ab’) ab fragment conjugated with AF546 (Thermo Fisher Scientific) for the detection of primary abs. Samples were acquired using FACS Verse (BD Biosciences) and BD Suite software (v1.0.5.3841, BD Biosciences). Viable CD207+CD1a+ eLCs were enumerated (Figure 3A) and the signal of the primary ab measured and shown as MFI of AF546 (Thermo Fisher Scientific) (Figure 3B).
 
-## Analysis of the eLC phenotype after 24 hr of culture
+#### Analysis of the eLC phenotype after 24 hr of culture
 
 Cells were processed as described in the previous paragraph and then stained with abs directed against CD1a (BD Pharmingen), CD207 (Beckman Coulter), CCR7 (Miltenyi Biotec), and CD86 (BD Pharmingen). Next, cells were fixed, permeabilized, and stained intracellularly with an APC-conjugated α-RTN1A ab (mon161, Novus Biologicals, Biotechne). The samples were acquired using FACS Verse (BD Biosciences) and BD Suite software (v1.0.5.3841, BD Biosciences). For evaluation, only pre-gated viable CD207+ eLCs were used. Further, doublets and dead cells were excluded. Data was analyzed using the FlowJo software (v10.0.7r2, BD Biosciences). Mean percentages of positive cells and MFI values from triplicates including five donors were analyzed using GraphPad Prism (v8.0.1) (Figure 3C).
 
-## Measurement of adhesion molecules, cytokines, and chemokines in epidermal explant and cell culture supernatants
+### Measurement of adhesion molecules, cytokines, and chemokines in epidermal explant and cell culture supernatants
 
 LEGENDplex Human Adhesion Molecule Panel (13-plex) w/VbP LEGENDplex (Biolegend) and human inflammatory panel 1 (13-plex) w/VbP (Biolegend) was used to analyze supernatants from epidermal sheet and cell culture. The assay was carried out according to the manufacturer’s instruction. Data analysis was performed using LegendPlex v8.0 software (BioLegend).
 
-## Comparative evaluation of cell aggregate formation by THP-1 wt and THP-1 RTN1A+ cells
+### Comparative evaluation of cell aggregate formation by THP-1 wt and THP-1 RTN1A+ cells
 
 Images of THP-1 wt and THP-1 RTN1A+ cells in cultures were taken with the ZOE fluorescence cell imager (Bio-Rad), and the numbers of cellular aggregates per 0.7 mm2 from four FOVs have been quantified using ImageJ Fiji (Figure 5G). For enumeration of small and big clusters, an average area of 312.5 and 637.6 µm2 were chosen, respectively (Figure 4—figure supplement 1).
 
-## Measurement of cell proliferation and cell number
+### Measurement of cell proliferation and cell number
 
 CellTrace CFSE cell proliferation dye (Invitrogen) was used according to the manufacturer’s instructions. Briefly, THP-1 wt and RTN1A+ cells were incubated with CFSE (5 µM) for 20 min at 37°C, washed and seeded in a 24-well plate (2×104 cells for each condition). Cells were collected at 0, 24, 48 and 72 hr and acquired with FACS Verse. In parallel, the cell number was assessed at the same time points with Trypan blue solution (Sigma) and Neubauer chamber (BRAND).
 
-## Measurement of calcium flux in THP-1 wt and THP-1 RTN1A+ cells
+### Measurement of calcium flux in THP-1 wt and THP-1 RTN1A+ cells
 
-Ratiometric calcium flux experiments with Fura Red (Invitrogen) were performed similar to a previously described method (Wendt et al., 2015). Briefly, 1×106 THP-1 wt and RTN1A+ cells were washed, resuspended in 100 μl medium containing 1 μM Fura Red and incubated 30 min at 37°C. Cells were washed once with medium, resuspended in 1 ml medium, and incubated for another 30 min at 37°C. Thereafter, cells were rested on ice until data acquisition at a FACSAria III flow cytometer (BD Bioscience). For the measurement of intracellular calcium flux, 300 μl Fura Red-loaded cells were transferred to FACS tube, pre-warmed for 5 min at 37°C and the baseline response was recorded for 30 s. After adding with 1 μg/ml ionomycin (InvivoGen) or thapsigargin (Invitrogen), cell responses were recorded for 5 min to analyze changes in calcium mobilization. Fura Red was excited using a violet laser (405 nm) and a green laser (561 nm) and changes in emission were detected with a 635LP, 660/20 BP and a 655LP, 795/40 BP filter set, respectively. The ratiometric ‘Fura Red Ratio’ over time was calculated using the Kinetics tool in FlowJo software version 9.3.3 (Tree Star Inc) as follows:Fura Red Ratio= increase of 405 nm induced emissiondecrease of 561 nm induced emission
+Ratiometric calcium flux experiments with Fura Red (Invitrogen) were performed similar to a previously described method (Wendt et al., 2015). Briefly, 1×106 THP-1 wt and RTN1A+ cells were washed, resuspended in 100 μl medium containing 1 μM Fura Red and incubated 30 min at 37°C. Cells were washed once with medium, resuspended in 1 ml medium, and incubated for another 30 min at 37°C. Thereafter, cells were rested on ice until data acquisition at a FACSAria III flow cytometer (BD Bioscience). For the measurement of intracellular calcium flux, 300 μl Fura Red-loaded cells were transferred to FACS tube, pre-warmed for 5 min at 37°C and the baseline response was recorded for 30 s. After adding with 1 μg/ml ionomycin (InvivoGen) or thapsigargin (Invitrogen), cell responses were recorded for 5 min to analyze changes in calcium mobilization. Fura Red was excited using a violet laser (405 nm) and a green laser (561 nm) and changes in emission were detected with a 635LP, 660/20 BP and a 655LP, 795/40 BP filter set, respectively. The ratiometric ‘Fura Red Ratio’ over time was calculated using the Kinetics tool in FlowJo software version 9.3.3 (Tree Star Inc) as follows:
 
-## Statistical analysis
+$$
+Fura Red Ratio= \frac{increase of 405 nm induced emission}{decrease of 561 nm induced emission}
+$$
+
+### Statistical analysis
 
 Statistical analysis of the data has been performed using GraphPad Prism (v8.0.1) software. The number of technical and biological replicates have been implicated in respective method sections and figure legends. The statistical tests were adapted to the experimental design: for comparison of two samples (Student’s t test), for higher number of samples with replicates (two-way ANOVA with Tukey’s or Durrett’s multiple-comparison test). In some figures p values were displayed to indicate a tendency, despite lacking significance. Asterisks indicate significant p values; ns – not significant, p≥0.05, *p≤0.05, **p≤0.01, ***p≤0.001, and ****p≤0.0001.

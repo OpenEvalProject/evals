@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.05849.001 The roundworm Caenorhabditis elegans has risen to the status of a top model organism for biological research in the last fifty years. Among laboratory animals, this tiny nematode is one of the simplest and easiest organisms to handle. And its life outside the laboratory is beginning to be unveiled. Like other model organisms, C. elegans has a boom-and-bust lifestyle. It feasts on ephemeral bacterial blooms in decomposing fruits and stems. After resource depletion, its young larvae enter a migratory diapause stage, called the dauer. Organisms known to be associated with C. elegans include migration vectors (such as snails, slugs and isopods) and pathogens (such as microsporidia, fungi, bacteria and viruses). By deepening our understanding of the natural history of C. elegans , we establish a broader context and improved tools for studying its biology. DOI: http://dx.doi.org/10.7554/eLife.05849.001
+The roundworm Caenorhabditis elegans has risen to the status of a top model organism for biological research in the last fifty years. Among laboratory animals, this tiny nematode is one of the simplest and easiest organisms to handle. And its life outside the laboratory is beginning to be unveiled. Like other model organisms, C. elegans has a boom-and-bust lifestyle. It feasts on ephemeral bacterial blooms in decomposing fruits and stems. After resource depletion, its young larvae enter a migratory diapause stage, called the dauer. Organisms known to be associated with C. elegans include migration vectors (such as snails, slugs and isopods) and pathogens (such as microsporidia, fungi, bacteria and viruses). By deepening our understanding of the natural history of C. elegans, we establish a broader context and improved tools for studying its biology.
 
 ## Introduction
 
@@ -26,25 +26,27 @@ For a century, the only information available on the natural history of C. elega
 
 ## A rotting habitat and a boom-and-bust life cycle
 
+C. elegans is found worldwide, predominantly in humid temperate areas (Figures 1 and 2A-D) (Kiontke et al., 2011; Andersen et al., 2012). This species was originally isolated in rich soil or compost (Hodgkin and Doniach, 1997), where it is mostly found in a non-feeding stage called the dauer (Barrière and Félix, 2005a, 2007). More recently, feeding and reproducing stages of C. elegans have been found in decomposing plant material, such as fruits and thick herbaceous stems (Figure 2E–G) (Félix and Duveau, 2012). These rotting substrates in their late stages of decomposition provide abundant bacterial food for the nematode. Like other model organisms, C. elegans is thus partially associated with human activity (cultivated fruits and stems, compost), but the species is also commonly found on stems and fruits in wilder settings, such as woods (Félix and Duveau, 2012). New types of habitat and geographical locations may still be discovered.
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/05849/elife-05849-fig1-v1.jpg)
 
-**Figure 1.:** C. elegans.Green shading highlights areas where C. elegans has been repeatedly collected. Green dots mark islands or locations where C. elegans has been collected at least once. Yellow squares represent areas where many Caenorhabditis species have been sampled and where C. elegans is present but rare (often found at altitude). Red shading highlights where C. elegans has never been collected despite the intensive sampling of many other Caenorhabditis species. Pink shading highlights where C. elegans has not been collected, despite the sampling of several other Caenorhabditis species. White represents areas that have never been sampled for C. elegans or very rarely. The distribution is inferred from published data (Abdul Kader and Côté, 1996; Barrière and Félix, 2005a, 2005b, 2007; Dolgin et al., 2008; Wang et al., 2010; Kiontke et al., 2011; Andersen et al., 2012; Félix and Duveau, 2012; Dey et al., 2013; Félix et al., 2013), WormBase, and our lab collection (http://www.justbio.com/worms/index.php).DOI: http://dx.doi.org/10.7554/eLife.05849.002
+**Figure 1.:** Green shading highlights areas where C. elegans has been repeatedly collected. Green dots mark islands or locations where C. elegans has been collected at least once. Yellow squares represent areas where many Caenorhabditis species have been sampled and where C. elegans is present but rare (often found at altitude). Red shading highlights where C. elegans has never been collected despite the intensive sampling of many other Caenorhabditis species. Pink shading highlights where C. elegans has not been collected, despite the sampling of several other Caenorhabditis species. White represents areas that have never been sampled for C. elegans or very rarely. The distribution is inferred from published data (Abdul Kader and Côté, 1996; Barrière and Félix, 2005a, 2005b, 2007; Dolgin et al., 2008; Wang et al., 2010; Kiontke et al., 2011; Andersen et al., 2012; Félix and Duveau, 2012; Dey et al., 2013; Félix et al., 2013), WormBase, and our lab collection (http://www.justbio.com/worms/index.php).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/05849/elife-05849-fig2-v1.jpg)
 
-**Figure 2.:** C. elegans at different scales.(A–D) Landscapes that correspond to the macroscale C. elegans habitat; all are relatively humid areas where C. elegans has been found: (A) wet shrubland; (B) urban garden; (C) riverbank; and (D) fruit trees. (E–G) Bacteria-rich decomposing vegetal substrates, corresponding to the microscale C. elegans habitat: (E) Arum stem; (F) oranges and (G) plums. (H) Detail of a rotting apple at the stage where C. elegans proliferates. Springtails (white) and a mite are examples of animals that share the bacteria-rich habitat of C. elegans and that are potential carriers and/or predators (see also Table 1). (I) C. elegans nematodes on an E. coli lawn, just coming out of a rotten fruit. (J) Scanning electron micrograph of C. elegans infected with the fungus Drechmeria coniospora. Image credits: Marie-Anne Félix.DOI: http://dx.doi.org/10.7554/eLife.05849.003
+**Figure 2.:** (A–D) Landscapes that correspond to the macroscale C. elegans habitat; all are relatively humid areas where C. elegans has been found: (A) wet shrubland; (B) urban garden; (C) riverbank; and (D) fruit trees. (E–G) Bacteria-rich decomposing vegetal substrates, corresponding to the microscale C. elegans habitat: (E) Arum stem; (F) oranges and (G) plums. (H) Detail of a rotting apple at the stage where C. elegans proliferates. Springtails (white) and a mite are examples of animals that share the bacteria-rich habitat of C. elegans and that are potential carriers and/or predators (see also Table 1). (I) C. elegans nematodes on an E. coli lawn, just coming out of a rotten fruit. (J) Scanning electron micrograph of C. elegans infected with the fungus Drechmeria coniospora. Image credits: Marie-Anne Félix.
 
-Two alternative life cycles have been described in the laboratory for
+Two alternative life cycles have been described in the laboratory for C. elegans, depending on environmental conditions. If well fed, newly hatched individuals pass through four larval stages (L1, L2, L3, L4) and reach the adult stage after 3 days. Under stressful conditions (such as crowding, limited food supply, and heat stress), individuals can shift during the L1 stage to an alternative developmental route and enter a predauer stage (L2d), followed by the non-feeding diapause stage called dauer (an alternative L3 stage) (Figure 3). Dauer larvae are resistant to various stresses and can survive for several months without food. Upon their return to more favorable conditions, dauer larvae feed again and resume development.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/05849/elife-05849-fig3-v1.jpg)
 
-**Figure 3.:** C. elegans lifecycle in the wild.In bacteria-rich habitats (beige), the C. elegans life cycle begins with an embryonic (E) stage, followed by four larval (L1-L4) stages, and ends with an adult stage (Ad). Most animals are self-fertilizing hermaphrodites; males are rare and breeding with males therefore uncommon. Under suboptimal conditions (such as crowding and starvation), L1 larvae can enter a predauer stage (L2d) followed by the diapause stage (dauer). When better conditions arise, dauers develop into postdauer L3 larvae and re-enter the lifecycle at the L4 stage.DOI: http://dx.doi.org/10.7554/eLife.05849.004
+**Figure 3.:** In bacteria-rich habitats (beige), the C. elegans life cycle begins with an embryonic (E) stage, followed by four larval (L1-L4) stages, and ends with an adult stage (Ad). Most animals are self-fertilizing hermaphrodites; males are rare and breeding with males therefore uncommon. Under suboptimal conditions (such as crowding and starvation), L1 larvae can enter a predauer stage (L2d) followed by the diapause stage (dauer). When better conditions arise, dauers develop into postdauer L3 larvae and re-enter the lifecycle at the L4 stage.
 
-Population demographic surveys at the local scale in orchards and woods indicate that
+Population demographic surveys at the local scale in orchards and woods indicate that C. elegans has a boom-and-bust lifestyle (Félix and Duveau, 2012). C. elegans metapopulations evolve in a fluctuating environment where optimal habitats are randomly distributed in space and time (Figure 4A). A cycle of colonization of a food source likely begins when one to several dauer larvae discover a fruit or stem, exit the dauer stage and seed a growing population of up to 104 feeding nematodes at different life-cycle stages (Figure 3). Some moderate-sized populations found in rotting fruits and stems do not contain any dauer larvae, but larger ones always include only adults, L1, L2d and dauers (Félix and Duveau, 2012). As a food source runs low, dauers may leave it to explore the neighboring environment for new islands of resources. Most of them will fail.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/05849/elife-05849-fig4-v1.jpg)
 
-**Figure 4.:** C. elegans population dynamics in a natural habitat.(A) A schematic of C. elegans population dynamics in an orchard. Population growth on a given apple has not been monitored to date and so is inferred here from data in (Félix and Duveau, 2012), based on many time points in an orchard and single time points on a given fruit. The fruits are shown at three time points (t) in identical positions on each panel, with t0 the first and t2 the last timepoint. Fruit colors indicate the degree of fruit decomposition, from early stages (yellow) to brown and dark grey (later stages), until disappearance (light grey). The number of feeding (F) and non-feeding dauer (d) individuals are indicated in color, with different colors representing different genotypes. Ø represents no colonization of a fruit by C. elegans. Arrows indicate dauer migration. How often different fruits or stems are colonized by several genotypes remains to be tested (Barrière and Félix, 2007; Andersen et al., 2012). (B–C) Actual population dynamics at the scale of a compost heap, from Barrière and Félix (2007). (B) In the first (Franconville) example, three main genotypes, G1, G2 and G3, persist in the heap at similar frequencies over the time period shown. In the second example (Le Perreux-sur-Marne), a single genotype, G4, was present, became extinct, then two new genotypes, G5 and G6, founded a new population. G4 reappeared in September, while G8 and G9 (not shown) disappeared. Genotypes were characterized using microsatellite markers.DOI: http://dx.doi.org/10.7554/eLife.05849.005
+**Figure 4.:** (A) A schematic of C. elegans population dynamics in an orchard. Population growth on a given apple has not been monitored to date and so is inferred here from data in (Félix and Duveau, 2012), based on many time points in an orchard and single time points on a given fruit. The fruits are shown at three time points (t) in identical positions on each panel, with t0 the first and t2 the last timepoint. Fruit colors indicate the degree of fruit decomposition, from early stages (yellow) to brown and dark grey (later stages), until disappearance (light grey). The number of feeding (F) and non-feeding dauer (d) individuals are indicated in color, with different colors representing different genotypes. Ø represents no colonization of a fruit by C. elegans. Arrows indicate dauer migration. How often different fruits or stems are colonized by several genotypes remains to be tested (Barrière and Félix, 2007; Andersen et al., 2012). (B–C) Actual population dynamics at the scale of a compost heap, from Barrière and Félix (2007). (B) In the first (Franconville) example, three main genotypes, G1, G2 and G3, persist in the heap at similar frequencies over the time period shown. In the second example (Le Perreux-sur-Marne), a single genotype, G4, was present, became extinct, then two new genotypes, G5 and G6, founded a new population. G4 reappeared in September, while G8 and G9 (not shown) disappeared. Genotypes were characterized using microsatellite markers.
 
 Developmental regulation and the behavior of dauer larvae are central to the C. elegans lifestyle. Dauer larvae display active locomotion and a specific behavior called nictation, where they stand on their tail and wave their body in the air. Remarkably, dauers may also congregate to form a column and nictate as a group (Félix and Duveau, 2012) (see the video; http://www.wormatlas.org/dauer/behavior/Images/DBehaviorVID4.mov). These behaviors are thought to help dauers to find passing invertebrate hosts that they can use for their dispersal, such as isopods, snails and slugs. Together, dauer physiology and behavior suggest that this developmental stage plays a key role in C. elegans' stress resistance, long-distance dispersal, and possibly its overwintering capacity.
 
@@ -66,7 +68,132 @@ C. elegans has evolved selfing from an ancestor that reproduced through females 
 
 ## Position in the food chain
 
-C. elegans shares its microhabitat with arthropods and with other microorganisms (bacteria and fungi) and invertebrates (Table 1), including other nematodes such as Oscheius, Pristionchus, Panagrellus and other Caenorhabditis species, such as Caenorhabditis briggsae (Kiontke et al., 2011; Félix and Duveau, 2012). If not with E. coli, it is noteworthy that C. elegans shares its rotting fruit habitat with two other top model organisms, Drosophila melanogaster and Saccharomyces cerevisiae (Fay and Benavides, 2005; Diezmann and Dietrich, 2009; Schacherer et al., 2009; Charron et al., 2014). A specific association is actually found between another Caenorhabditis species and another Drosophila species: this nematode species, C. drosophilae, feeds on rotting cactus in desert areas and its dauer juveniles use a local Drosophila species as a vector to move between cacti (Kiontke, 1997).10.7554/eLife.05849.008Table 1.The biotic environment of C. elegansDOI: http://dx.doi.org/10.7554/eLife.05849.008Groups of organismsExamplesReferencesParasitesFungiDrechmeria coniosporia, Harposporium sp.Jansson et al., 1985; Couillault et al., 2004; Félix and Duveau, 2012MicrosporidiaNematocida parisiiTroemel et al., 2008ss(+) RNA virusOrsay virusFélix et al, 2011BacteriaSerratia marcescensPradel et al., 2007*Elizabethkingia sp.Félix and Duveau, 2012Leucobacter spp.Hodgkin et al., 2013FoodOthersFélix and Duveau, 2012FungiYeastsFélix and Duveau, 2012Other unicellular eukaryotes?Félix and Duveau, 2012Other nematodesRhabditidaeCaenorhabditis briggsaeFélix and Duveau, 2012Oscheius, Rhabditis, Mesorhabditis spp.Félix and Duveau, 2012; Barrière and Félix, 2014PanagrolaimidaePanagrolaimus and Panagrellus spp.Félix and Duveau, 2012; Barrière and Félix, 2014AphelenchsFungi-eatingFélix and Duveau, 2012; Barrière and Félix, 2014DiplogastridsPristionchus spp.Félix and Duveau, 2012; Barrière and Félix, 2014PredatorsFungiTrapping fungiMaguire et al., 2011*ArthropodsCollembola?Lee and Widden, 1996; Félix and Duveau, 2012VectorsMites such as Sancassania sp.Félix and Braendle, 2010; Félix and Duveau, 2012Other arthropodsSudhaus and Kühne, 1989; Sudhaus and Kiontke, 1996; Kiontke and Sudhaus, 2006MollusksSnails, slugsSudhaus and Kiontke, 1996; Barrière and Félix, 2005b; Caswell-Chen et al., 2005; Barrière and Félix, 2007; Félix and Duveau, 2012Some organisms may act as both food and pathogen, or as both vector and predator. Other nematodes may be competitors for food but also predators. The predatory relationships are inferred from the co-occurrence of the two species in the wild, from laboratory predation assays, and, in the case of mites and fungi, by observation on the laboratory isolation plate; specific studies would be needed to observe them directly in a natural setting.*and our unpublished observations.
+C. elegans shares its microhabitat with arthropods and with other microorganisms (bacteria and fungi) and invertebrates (Table 1), including other nematodes such as Oscheius, Pristionchus, Panagrellus and other Caenorhabditis species, such as Caenorhabditis briggsae (Kiontke et al., 2011; Félix and Duveau, 2012). If not with E. coli, it is noteworthy that C. elegans shares its rotting fruit habitat with two other top model organisms, Drosophila melanogaster and Saccharomyces cerevisiae (Fay and Benavides, 2005; Diezmann and Dietrich, 2009; Schacherer et al., 2009; Charron et al., 2014). A specific association is actually found between another Caenorhabditis species and another Drosophila species: this nematode species, C. drosophilae, feeds on rotting cactus in desert areas and its dauer juveniles use a local Drosophila species as a vector to move between cacti (Kiontke, 1997).
+
+**Table 1.**
+ The biotic environment of C. elegans
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Groups of organisms</th>
+      <th>Examples</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Parasites</td>
+      <td rowspan="3"></td>
+      <td>Fungi</td>
+      <td>Drechmeria coniosporia, Harposporium sp.</td>
+      <td>Jansson et al., 1985; Couillault et al., 2004; Félix and Duveau, 2012</td>
+    </tr>
+    <tr>
+      <td>Microsporidia</td>
+      <td>Nematocida parisii</td>
+      <td>Troemel et al., 2008</td>
+    </tr>
+    <tr>
+      <td>ss(+) RNA virus</td>
+      <td>Orsay virus</td>
+      <td>Félix et al, 2011</td>
+    </tr>
+    <tr>
+      <td rowspan="3"></td>
+      <td rowspan="3">Bacteria</td>
+      <td>Serratia marcescens</td>
+      <td>Pradel et al., 2007*</td>
+    </tr>
+    <tr>
+      <td>Elizabethkingia sp.</td>
+      <td>Félix and Duveau, 2012</td>
+    </tr>
+    <tr>
+      <td>Leucobacter spp.</td>
+      <td>Hodgkin et al., 2013</td>
+    </tr>
+    <tr>
+      <td rowspan="3"></td>
+      <td rowspan="3">Food</td>
+      <td></td>
+      <td>Others</td>
+      <td>Félix and Duveau, 2012</td>
+    </tr>
+    <tr>
+      <td>Fungi</td>
+      <td>Yeasts</td>
+      <td>Félix and Duveau, 2012</td>
+    </tr>
+    <tr>
+      <td>Other unicellular eukaryotes?</td>
+      <td></td>
+      <td>Félix and Duveau, 2012</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Other nematodes</td>
+      <td rowspan="4"></td>
+      <td rowspan="2">Rhabditidae</td>
+      <td>Caenorhabditis briggsae</td>
+      <td>Félix and Duveau, 2012</td>
+    </tr>
+    <tr>
+      <td>Oscheius, Rhabditis, Mesorhabditis spp.</td>
+      <td>Félix and Duveau, 2012; Barrière and Félix, 2014</td>
+    </tr>
+    <tr>
+      <td>Panagrolaimidae</td>
+      <td>Panagrolaimus and Panagrellus spp.</td>
+      <td>Félix and Duveau, 2012; Barrière and Félix, 2014</td>
+    </tr>
+    <tr>
+      <td>Aphelenchs</td>
+      <td>Fungi-eating</td>
+      <td>Félix and Duveau, 2012; Barrière and Félix, 2014</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Diplogastrids</td>
+      <td>Pristionchus spp.</td>
+      <td>Félix and Duveau, 2012; Barrière and Félix, 2014</td>
+    </tr>
+    <tr>
+      <td rowspan="2"></td>
+      <td rowspan="2">Predators</td>
+      <td>Fungi</td>
+      <td>Trapping fungi</td>
+      <td>Maguire et al., 2011*</td>
+    </tr>
+    <tr>
+      <td>Arthropods</td>
+      <td>Collembola?</td>
+      <td>Lee and Widden, 1996; Félix and Duveau, 2012</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Vectors</td>
+      <td></td>
+      <td></td>
+      <td>Mites such as Sancassania sp.</td>
+      <td>Félix and Braendle, 2010; Félix and Duveau, 2012</td>
+    </tr>
+    <tr>
+      <td rowspan="2"></td>
+      <td></td>
+      <td>Other arthropods</td>
+      <td>Sudhaus and Kühne, 1989; Sudhaus and Kiontke, 1996; Kiontke and Sudhaus, 2006</td>
+    </tr>
+    <tr>
+      <td>Mollusks</td>
+      <td>Snails, slugs</td>
+      <td>Sudhaus and Kiontke, 1996; Barrière and Félix, 2005b; Caswell-Chen et al., 2005; Barrière and Félix, 2007; Félix and Duveau, 2012</td>
+    </tr>
+  </tbody>
+</table>
+
+_Some organisms may act as both food and pathogen, or as both vector and predator. Other nematodes may be competitors for food but also predators. The predatory relationships are inferred from the co-occurrence of the two species in the wild, from laboratory predation assays, and, in the case of mites and fungi, by observation on the laboratory isolation plate; specific studies would be needed to observe them directly in a natural setting.*and our unpublished observations._
 
 The C. elegans diet mainly consists of bacteria and small eukaryotes (Félix and Braendle, 2010; Félix and Duveau, 2012), but has not been further characterized. The trophic interaction between the nematode and its prey is not univocal: as C. elegans adults grow old, they can serve as food to the same microorganisms.
 

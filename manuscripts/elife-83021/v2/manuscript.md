@@ -16,10 +16,10 @@
 
 ### Affiliations
 
-1. https://ror.org/036xhtv26 Univ Rennes, CNRS, IGDR (Institut de Génétique et Développement de Rennes) - UMR 6290, F-35000 Rennes France
-2. https://ror.org/02ttsq026 Department of Molecular, Cellular and Developmental Biology, University of Colorado Boulder Boulder United States
-3. https://ror.org/03eh3y714 Laboratory of Biomolecular Research, Division of Biology and Chemistry, Paul Scherrer Institute Villigen Switzerland
-4. https://ror.org/02s6k3f65 University of Basel, Biozentrum Basel Switzerland
+1. Univ Rennes, CNRS, IGDR (Institut de Génétique et Développement de Rennes) - UMR 6290, F-35000 Rennes France ([ROR:036xhtv26](https://ror.org/036xhtv26))
+2. Department of Molecular, Cellular and Developmental Biology, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
+3. Laboratory of Biomolecular Research, Division of Biology and Chemistry, Paul Scherrer Institute Villigen Switzerland ([ROR:03eh3y714](https://ror.org/03eh3y714))
+4. University of Basel, Biozentrum Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
 
 † Corresponding author
 
@@ -43,19 +43,146 @@ To gain a deeper understanding of microtubule lattice organization in vitro and 
 
 Microtubules were self-assembled in vitro from purified porcine brain tubulin in the presence of 1 mM GTP (Figure 2—figure supplement 1A) and kinesin-motor domains were added at the polymerization plateau right before vitrification of the specimen grids into liquid ethane (Figure 2—figure supplement 1B). Cryo-electron tomograms were acquired preferentially using a dual-axis strategy (Guesdon et al., 2013) so that all microtubules could be analyzed independently of their orientation with respect to the tilt axes (Figure 2—figure supplement 1C, Figure 2—video 1). The low magnifications used, between ×25,000 and ×29,000, allowed us to record long stretches of the microtubules, ~1–2 µm in length, to optimize the STA strategy along individual fibers.
 
-## The number and location of seams vary within individual microtubules assembled from purified tubulin
+### The number and location of seams vary within individual microtubules assembled from purified tubulin
 
 We first processed entire microtubules present in the tomograms using an STA approach that retrieves small sub-volumes of ~50 nm3 in size at every kinesin-motor domain position (Zabeo et al., 2018; i.e., every ~8 nm; Figure 2—figure supplement 2A). The resulting 3D volumes clearly revealed the protofilament number and the organization of the kinesin-motor domains around the microtubule lattice (Figure 2, Figure 2—video 2). To model the underlying αβ-tubulin heterodimer lattice, we placed yellow spheres onto kinesin densities and cyan spheres in between. While the cyan and yellow spheres are not strictly placed on top of the α- and β-subunits, respectively (Figure 1C), this simplified modeling allowed us to describe their underlying organization within microtubules (Figure 2B and C). In agreement with previous studies performed on Taxol-stabilized microtubules (Debs et al., 2020; des Georges et al., 2008; Howes et al., 2017; Kikkawa et al., 1994; Sosa et al., 1997), we found that microtubules assembled in vitro from purified tubulin in the presence of GTP contained one to several A-lattice seams (Figure 3). However, we could frequently observe protofilaments with a much thinner appearance where the kinesin-motor domain periodicity was partly or completely lost (Figure 3A and B, Figure 3—video 1). We hypothesized that the appearance of such aberrant protofilaments resulted from the averaging of regions containing kinesin-motor domain densities with regions out of register. To explore this idea, we divided the model and motive list used to calculate the full volumes into shorter segments of ~125–180 nm in length and generated new volumes for these segments (Figure 3B and C, Figure 2—figure supplement 2B). Using this SSTA approach, we could identify regions where the seam number and/or location varied within individual microtubules. In the example shown in Figure 3B, the segment S1 contains five seams while S3 and S4 contain three seams. S2 still displays two aberrant protofilaments, indicating that the change in seam number occurred in this region. To confirm this hypothesis, we extracted the corresponding region in the raw tomogram that was further filtered by thresholding intensities in Fourier space to increase the signal-to-noise ratio (Figure 4A). Comparison between the kinesin-motor domain patterns in the sub-tomogram averages of segments S1 to S3 with the filtered S2 region confirmed that this latter constitutes a transition zone where the seam number changes from 5 to 3. Line plots along the registered protofilaments (Figure 4B) shows that the kinesin-motor domain periodicity becomes out of phase after the transition in the aberrant protofilaments, implying an offset of at least one monomer (or an odd number) before and after the transition, and hence the presence of holes within the microtubule lattice (Figure 4C). Analysis of 24 microtubules taken on 4 tomograms, representing 195 segments of ~160 nm length (i.e., 2664 lateral interactions), allowed us to characterize 119 lattice-type transitions with an average frequency of 3.69 µm–1 (Table 1), but with a high heterogeneity. Some microtubules showed no or little lattice-type transitions (e.g., MT3 and MT4, Figure 2—figure supplement 3; MT16, MT21, and MT23, Figure 2—figure supplement 4), while others were heavily dislocated, with a lattice-type transition frequency as high as ~15 µm–1 (e.g., MT13 and MT14, Figure 2—figure supplement 4).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig2-v2.jpg)
+
+**Figure 2.:** (A) Sub-tomogram average of a 1390.4 nm long 14_3 microtubule assembled in vitro from purified tubulin and decorated with kinesin-motor domains (Figure 2—figure supplement 3 MT3, Figure 2—video 2). The panel displays four views turned by 90° with respect to the longitudinal axis of the microtubule. Yellow spheres have been placed onto the kinesin-motor domain densities and cyan spheres in between them. They follow the left-handed, three-start helix of the microtubule lattice. The seam shows up as a change in color from yellow to cyan. (B) Symbolic representation of the microtubule lattice. The top view of the microtubule in (A) is turned by 45° around the X-axis, and the density is masked to reveal the organization of the tubulin subunits in one turn of the three-start helix. The helix is unrolled and represented as longitudinal bars that correspond to the organization of the αβ-subunits in microtubule segments. (C) 3D model of the underlying tubulin dimer lattice. The stars (*) indicate the same protofilament in (A–C).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Microtubule assembly at 40 µM tubulin in BRB80, 1 mM GTP, 35°C. Variation of optical density (ΔOD) at 350 nm versus time (min). A cooling step was performed at the end of the experiment to assess the presence of aggregates evidenced by the value of the baseline at 4°C. Samples for cryo-electron microscopy were prepared after ~1 hr of polymerization. (B) Decoration of microtubules assembled in vitro from purified tubulin with kinesin-motor domains. Kinesin decoration is performed right before vitrification of the sample into liquid ethane. (C) Dual-axis cryo-electron tomography. Left: the dual-axis area is delimited by plain lines; arrows indicate the two tilt axes. Right top: enlargement of the dotted region in the overall view that encompass the single and dual axes regions of the tomogram. A microtubule oriented close to the perpendicular of the first tilt axis spans the two regions (Figure 2—video 1). Right middle: average of 50 slices along the microtubule in the single-axis area. The microtubule is severely elongated in the Z direction. Right bottom: the same microtubule visualized in the dual-axis area. Individual protofilaments are clearly individualized. (D) Decoration of microtubules assembled in Xenopus egg cytoplasmic extracts. Microtubule asters are deposited on one side of the grid, which is subsequently blotted from the opposite side.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) STA. (1) A first model is created by placing model points onto individual protofilaments (small cyan circles) and at the microtubule center (large green circles). (2) A second model is extrapolated from the previous one with points spaced every ~8 nm along the microtubule. (3) Sub-volumes (dark squares) are extracted at every point position and aligned by cross-correlation using PEET. (4) The rotational search around the microtubule axis is restricted to about half the angular separation between protofilaments (left). The resulting average is displayed in isosurface rendering in IMOD (right). (B) SSTA. The model and motive list used to calculate the whole tomogram of the microtubule is split into shorter segments of equal dimensions and sub-tomograms are calculated for each segment (S1 to S7). The segment size is limited by the signal-to-noise ratio present in the tomograms (typically ~160 nm with our current data).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** 24 microtubules (31.7 µm in total length) were analyzed on four tomograms acquired on two independent samples. Number of microtubule segments: 195; number of lateral interactions: 2663 (A type: 460; B type: 2091; ND: 112); lattice-type transitions: 119; protofilament/helical-start (N/S) number transitions: 3.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig3-v2.jpg)
+
+**Figure 3.:** (A) Average of a 1327.2-nm-long 13_3 microtubule displaying two aberrant protofilaments (*) and two adjacent seams (arrows in the –30° view). Red spheres have been placed on top of the aberrant protofilaments. (B) Segmented sub-tomogram averaging of the microtubule in (A). The microtubule has been divided into four segments of 331.8 nm in length, and sub-tomogram averages have been calculated for each segment (S1 to S4). The two aberrant protofilaments in (A) are well resolved in S1, S3, and S4, while they still display an aberrant shape in S2. The lattice organization of these protofilaments must be offset by at least one tubulin subunit between S1 and S3. Hence, S2 constitutes a transition zone where kinesin-motor domain densities and absence of densities have been averaged. (C) Flat representation of the lattice organization within segments S1 to S4. S1 contains five seams while S3 and S4 contain three seams (arrows). Two lattice-type (LT) transitions occur between S1 and S3, and S4 contains an aberrant protofilament (Figure 3—video 1). A finer segmentation of the microtubule at 165.9 nm revealed an additional lattice-type transition in this region (Figure 2—figure supplement 3 MT5, between segments S5 and S7).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig4-v2.jpg)
 
 **Figure 4.:** (A) SSTA: slices through the sub-tomogram averages of segments S1 to S3 in Figure 3B (left). The contrast has been inverted with respect to the original tomogram to represent protein densities as white. Yellow open circles have been placed on kinesin-motor domain densities, cyan open circles in between them, and red open circles on aberrant densities in S2. S2 filtered: slice through the filtered tomogram of the S2 region (right). The change in lattice seam number from S1 to S3 is clearly visualized in the S2 region. (B) Protofilaments 1–4 in (A) have been extracted from the filtered image and put into register (Registered, left). They remain in phase (bottom dotted line) until the densities in protofilaments 3 and 4 becomes fuzzy (vertical red lines). After these transition zones, the kinesin-motor domain periodicity in protofilaments 3 and 4 becomes out of phase with respect to that in protofilaments 1 and 2 (upper dotted lines). These changes in kinesin-motor domain periodicity are confirmed in the line plots of the protofilaments (right). While the kinesin-motor domain periodicity in protofilaments 1 and 2 remain perfectly in phase (upper graph), it becomes out of phase for protofilaments 3 and 4 after the transition zones (middle and bottom graphs). (C) Schematic representation of the αβ-tubulin heterodimer organization in segments S1 to S3. The transition from five seams in S1 to three seams in S3 requires an offset of at least one monomer (red stars) in the protofilaments 3 and 4 of S2, although larger holes of an odd number of subunits could be present. Black dotted lines highlight the seams in each segment.
 
-## Lattice-type transitions involve the formation of holes within microtubules
+**Table 1.**
+ Characterization of microtubule lattice structure by cryo-electron tomography and segmented sub-tomogram averaging.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Assembly conditions</th>
+      <th>GTP</th>
+      <th>GMPCPP</th>
+      <th>Xenopus DMSO</th>
+      <th>Xenopus RanQ69L</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tomograms</td>
+      <td>4</td>
+      <td>6</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Samples</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Microtubules</td>
+      <td>24</td>
+      <td>31</td>
+      <td>64</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Total length (µm)</td>
+      <td>31.7</td>
+      <td>35.1</td>
+      <td>67.4</td>
+      <td>19.9</td>
+    </tr>
+    <tr>
+      <td>Segments</td>
+      <td>195</td>
+      <td>238</td>
+      <td>419</td>
+      <td>86</td>
+    </tr>
+    <tr>
+      <td>Lateral interactions</td>
+      <td>2663</td>
+      <td>3236</td>
+      <td>5446</td>
+      <td>1118</td>
+    </tr>
+    <tr>
+      <td>A-type</td>
+      <td>460</td>
+      <td>261</td>
+      <td>415</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <td>B-type</td>
+      <td>2091</td>
+      <td>2937</td>
+      <td>5025</td>
+      <td>1018</td>
+    </tr>
+    <tr>
+      <td>ND</td>
+      <td>112</td>
+      <td>38</td>
+      <td>6</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Lattice-type transitions</td>
+      <td>119</td>
+      <td>37</td>
+      <td>6</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Frequency (µm–1)</td>
+      <td>3.69 ± 4.20</td>
+      <td>1.25 ± 1.41</td>
+      <td>0.09 ± 0.30</td>
+      <td>0.10 ± 0.29</td>
+    </tr>
+  </tbody>
+</table>
+
+### Lattice-type transitions involve the formation of holes within microtubules
 
 Direct visualization of holes within microtubules self-assembled at a tubulin concentration of 40 µM in the presence of GTP was hampered by the high background generated by free tubulin in solution. In addition, the low magnification used to analyze long stretches of the microtubules was at the detriment of resolution. To improve the quality of the raw cryo-electron tomograms, we used GMPCPP to assemble microtubules at a lower tubulin concentration (10 µM) and acquired single-axis tilt series at a magnification of ×50,000. SSTA was performed on kinesin-motor domains decorated GMPCPP-microtubules suitably oriented with respect to the tilt axis in order to localize transition regions and to visualize corresponding holes in their lattice. The microtubule shown in Figure 5A transitioned from 1 to 3 seams as demonstrated by SSTA. Visualization of the microtubule in the raw tomogram reveals a transition from a B- to an A-lattice organization in the three protofilaments located at its lower surface (Figure 5B), as assessed by the diffraction patterns of the corresponding regions, and after filtration of the equatorial and 8 nm–1 layer lines. Enlargement of the central region (Figure 5C) shows a hole of one subunit’s size in the middle protofilament (2) that accounts for the change in lattice organization at this location. In addition, the first protofilament (1) displays a gap of one dimer’s size, although we cannot exclude that this results from an absence of kinesin-motor domain. Analysis of 31 GMPCPP-microtubules taken on six tomograms, representing 338 segments of ~150 nm in length (i.e., 3236 lateral interactions), and using the same strategy as in the presence of GTP (Figure 5—figure supplements 1 and 2) revealed a transition frequency of 1.25 µm–1 (Table 1), that is, approximately threefold lower than microtubules assembled in the presence of GTP. However, since we used different tubulin concentrations, that is, 10 µM and 40 µM in the presence of GMPCPP and GTP, respectively, we cannot exclude a concentration-dependent effect on the lattice-type transition frequency.
 
-## Methodological artifacts limit the visualization of holes within microtubules in raw cryo-electron tomograms
+![Figure 5.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig5-v2.jpg)
+
+**Figure 5.:** (A) Sub-tomogram average segments before (S1) and after (S2) a lattice-type transition in a GMPCPP-microtubule. For each segment, the isosurface of the full volume (left) and a slice through the sub-tomogram average (right) are displayed. The contrast has been inverted to represent protein density as white. S1 and S2 contain 1 and 3 seams, respectively. (B) Z-projection of 20 slices at the surface of the microtubule that encompasses S1 and S2 (top) with their associated Fourier transforms (middle) and filtered versions of the corresponding regions after selection of the equatorial and 8 nm–1 layer lines (bottom). The three protofilaments in S1 and S2 are organized according to a B- and an A-lattice, respectively. (C) Enlarged central region of the microtubule in (B). Yellow open circles have been placed on the kinesin densities (left), showing a gap of one subunit in protofilament 2, and possibly of a dimer in protofilament 1, although an absence of kinesin-motor domain at this location cannot be excluded. Tubulin heterodimers have been placed at the corresponding location (right) to highlight their change in organization at the transition region.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** 31 microtubules (35.1 µm in total length) was analyzed on six tomograms acquired on two independent samples. Number of microtubule segments: 238; number of lateral interactions: 3236 (A type: 261;B type: 2937; ND: 38); lattice type (LT) transitions: 37; protofilament/helical-start (N/S) number transitions: 12.
+
+### Methodological artifacts limit the visualization of holes within microtubules in raw cryo-electron tomograms
 
 During this study, we found strong limitations to the observation of holes within microtubules in raw tomograms. First, the transition regions had to be located at the top or bottom surface of the microtubule with respect to the electron beam since edges were severely smoothed due to the lack of data at high angle that elongate densities in this direction (Figure 6A and B). This artifact is inherent to electron tomography, limiting the search of holes within microtubules in raw tomograms. A second severe artifact commonly encountered, especially in thin ice layers, was denaturation of kinesin heads at the air–water interface (Figure 6C and D). This artifact shows up as a diminution of the kinesin-motor domain density, whose periodical arrangement can only be recovered after SSTA (Figure 6D). This analysis clearly showed that SSTA remains compulsory to localize changes in lattice-type organization within individual microtubules, and thus visualize the corresponding holes in regions suitably oriented with respect to the tilt axis and not in interaction with the air–water interfaces.
 
@@ -63,15 +190,104 @@ During this study, we found strong limitations to the observation of holes withi
 
 **Figure 6.:** (A) Microtubule embedded in an ~140-nm-thick ice layer (top left). Longitudinal sections (averages of 20 slices, right) were performed at the top (1), bottom (2), left (3), and right (4) of the microtubule at positions indicated by white dotted lines in the enlarged view of the microtubule (middle left, average of 50 slices). Kinesin-motor domain densities can be individualized on the top (1) and bottom (2) sections, but not on the edges of the microtubules (3, 4) due to the elongation of densities in Z as a consequence of missing data at high angle. The Fourier transforms of the corresponding segments (bottom) show that the 8 nm–1 periodicity of the kinesin-motor domains remains present in all views. (B) Sub-tomogram average of the microtubule in (A) over 18 kinesin-motor domain repeats. Sections (left) and isosurfaces (right) of the microtubule are displayed in correspondence to the longitudinal sections in (A). The kinesin-motor domain position is clearly observed on the top (1) and bottom (2) surfaces, and can be recovered on the microtubule edges after segmented sub-tomogram averaging (SSTA) (3, 4). (C) Microtubule in the same tomogram as in (A) interacting with the air–water interface (top left). Kinesin-motor domain densities can be well discerned on the longitudinal sections (right) of the top surface facing the solution (1), but are almost indiscernible on the bottom surface that interacts with the air–water interface (2) and on the edges (3, 4). Fourier transforms (bottom) of the corresponding segments show that the periodicity of the kinesin-motor domains is still present, even on the damaged surface (2). (D) Sub-tomogram average of the microtubule in (C) over 18 kinesin-motor domain repeats. SSTA allows recovery of the kinesin-motor domain densities in all surfaces, including the one that interacts with the air–water interface (2).
 
-## Lattice-type transitions occur in a cytoplasmic environment
+### Lattice-type transitions occur in a cytoplasmic environment
 
 Next, we wondered whether the formation of holes was an intrinsic property of tubulin polymerization and whether such microtubule lattice defects were also present in a cellular context. Decorating microtubules with kinesin-motor domains in cells remains challenging since it involves removing of the cell membrane with detergents, adding kinesin-motor domains, and obtaining specimens thin enough to be analyzed by electron microscopy (Kikkawa et al., 1994; McIntosh et al., 2009). To overcome these difficulties and allow the analysis of a large data set of cytoplasmic microtubules, we took advantage of the open cellular system constituted by metaphase-arrested Xenopus egg cytoplasmic extracts (Gibeaux and Heald, 2019). Microtubule assembly was triggered using either DMSO (Sawin and Mitchison, 1994) or a constitutively active form of Ran (RanQ69L, Carazo-Salas et al., 1999) to control for possible effects of DMSO. Cryo-fluorescence microscopy was initially used to optimize the density of microtubule asters onto electron-microscope grids (Figure 7A). For structural analysis, no fluorescent tubulin was added to cytoplasmic extracts and kinesin-motor domains were added right before vitrification (Figure 2—figure supplement 1D). Specimens were imaged using dual-axis cryo-electron tomography (Figure 7B and C, Figure 7—video 1) followed by SSTA. A total of 64 microtubules taken on five tomograms were analyzed in the Xenopus-DMSO data set (i.e., 419 segments from which we characterized 5446 lateral interactions), and 15 microtubules taken on one tomogram for the Xenopus Ran-data set (i.e., 86 segments from which we characterized 1118 lateral interactions) (Table 1).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig7-v2.jpg)
+
+**Figure 7.:** (A) Cryo-fluorescence images of microtubules assembled in a cytoplasmic extract prepared from Xenopus eggs. Microtubules assembled in the presence of rhodamine-tubulin and plunge-frozen on an EM grid were imaged using fluorescence microscopy at liquid nitrogen temperature. Left: ×10 objective; right: ×50 objective. The white dashed square on the ×10 image indicates the field of view of the ×50 image. (B) Average of 30 slices in Z through a cryo-electron tomogram. The thin layer of cytoplasm spans a 2 µm diameter hole of the carbon film. The main visible features are ribosomes, vesicles, yolk granules, and microtubules decorated by kinesin-motor domains. (C) Top: enlargement of the dotted rectangular region in (B) (Figure 7—video 1). Bottom: Fourier transform of the top image showing strong layer lines at 8 nm–1 corresponding to the kinesin-motor domain repeat along the microtubules.
+
 The vast majority of the microtubule segments were organized according to 13 protofilaments, three-start helices in a B-lattice configuration with one single seam (Figure 8A, Figure 8—figure supplements 1–4, Table 1). Yet, lattice-type transitions were observed in six cases over the 64 microtubules analyzed in the DMSO sample (MT2, MT5, MT14, MT18, MT28, and MT56; Figure 8—figure supplements 1–4). Similarly, two lattice-type transitions were observed over 15 microtubules analyzed in the Ran sample (MT4 and MT10; Figure 8—figure supplement 5), showing that the presence of lattice-type transitions was independent of the method used to trigger microtubule aster formation. The transition lattice-type frequencies were ~0.1 µm–1 (Table 1), that is, at least one order of magnitude less than with microtubules assembled from purified tubulin in the presence of GMPCPP and GTP. Strikingly, these transitions systematically involved a lateral offset of the seam by one protofilament (Figure 8B, Figure 8—video 1). In addition, variations in protofilament and helix-start numbers were also observed such as 12_2, 12_3, 13_4, and 14_3 microtubule-lattice regions, but uniquely in the Xenopus-DMSO sample (Figure 9A–D, Figure 9—video 1, Figure 10A, Table 2). Of note, the 12_2 and 13_4 microtubules showed a local dislocation in between two protofilaments, which is likely a response to the excessive protofilament skewing present in these microtubules (Chrétien and Fuller, 2000). The 12_2 microtubule contained two seams (Figure 9A), while the 13_4 microtubules had no seam (Figure 9C), and hence were fully helical at the tubulin dimer level (MT7 and MT8, Figure 8—figure supplement 1). Microtubules with protofilament numbers different than 13 were not observed in the Xenopus-Ran sample (Figure 8—figure supplement 5, Figure 10B, Table 2). Hence, we cannot exclude the possibility that DMSO induced the formation of these microtubules in Xenopus egg cytoplasmic extracts, and it remains to be determined whether they also occur in intact Xenopus eggs.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig8-v2.jpg)
+
+**Figure 8.:** (A) Sub-tomogram averages of five 400.5-nm-long segments of a 13_3 microtubule (top). S4 contains an aberrant protofilament (*), and the seam (arrow) moves laterally to the left by one protofilament from S3 to S5. The microtubule has been segmented into eleven 178-nm-long segments (bottom, Figure 8—figure supplement 1: MT2). Only S7 to S10 are shown, corresponding to a region that encompass S3 to S5 in the 310.8 nm segmentation (Figure 8—video 1). The lattice-type transition occurs from S8 to S9, and no aberrant protofilament is observed in this finer segmentation. (B) 3D models of the tubulin lattice before (top), during (middle), and after (bottom) the transition. The lateral offset in seam position requires a longitudinal offset of a minimum of one tubulin subunit to account for the lattice-type transition observed in (A).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig8-figsupp1-v2.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig8-figsupp2-v2.jpg)
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig8-figsupp3-v2.jpg)
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** 64 microtubules (67.4 µm in total length) were analyzed on five tomograms acquired on one sample. Number of microtubule segments: 419; number of lateral interactions: 5446 (A type: 415; B type: 5025; ND: 6); lattice-type (LT) transitions: 6; protofilament/helical-start (N/S) number transitions: 6. Red arrows indicate LT transitions in MT2, MT5, MT14, MT18, MT28, and MT56.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig8-figsupp5-v2.jpg)
+
+**Figure 8—figure supplement 5.:** 15 microtubules (19.9 µm in total length) were analyzed on one tomogram acquired on one sample. Number of microtubule segments: 86; number of lateral interactions: 1118 (A type: 84; B type: 1018; ND: 16); lattice-type (LT) transitions: 2. Red arrows indicate LT transitions in MT4 and MT10.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig9-v2.jpg)
+
+**Figure 9.:** (A) 12_2 microtubule with two seams (Figure 8—figure supplement 1: MT9). (B) 12_3 microtubule with a unique seam. This microtubule transitioned to a 13_3 configuration (Figure 8—figure supplement 4: MT62). (C) 13_4 microtubule with no seam. This microtubule transitioned to a 13_3 configuration (Figure 8—figure supplement 1: MT7). (D) 14_3 microtubule with one seam. This microtubule transitioned to a 13_3 configuration (Figure 8—figure supplement 2 MT32).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig10-v2.jpg)
 
 **Figure 10.:** (A) Percentage of lattice types. (B) Percentage of protofilament (N) and helix-start (S) numbers. (C) Percentage of seam number. (D) Lattice-type transition frequency. Microtubules assembled in Xenopus egg cytoplasmic extracts in the presence of 5% DMSO (Xen-DMSO) and RanQ69L (Xen-Ran) were compared using the Wilcoxon–Mann–Whitney rank-sum test. Tub-GTP: microtubules assembled at 40 µM tubulin concentration in the presence of 1 mM GTP. Tub-GMPCPP: microtubules assembled at 10 µM tubulin concentration in the presence of 0.1 mM GMPCPP.
+
+**Table 2.**
+ Protofilament (N) and helix-start number (S).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>N_S</th>
+      <th>12_2</th>
+      <th>12_3</th>
+      <th>13_3</th>
+      <th>13_4</th>
+      <th>14_3</th>
+      <th>15_3</th>
+      <th>15_4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GTP (%)</td>
+      <td>-</td>
+      <td>1.00</td>
+      <td>32.99</td>
+      <td>-</td>
+      <td>64.97</td>
+      <td>1.04</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>GMPCPP (%)</td>
+      <td>-</td>
+      <td>1.88</td>
+      <td>39.65</td>
+      <td>-</td>
+      <td>56.76</td>
+      <td>-</td>
+      <td>1.71</td>
+    </tr>
+    <tr>
+      <td>Xen. DMSO (%)</td>
+      <td>1.11</td>
+      <td>0.21</td>
+      <td>95.97</td>
+      <td>1.78</td>
+      <td>0.93</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Xen. RanQ69L (%)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>100</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_Xen.: Xenopus._
 
 ## Discussion
 
@@ -79,9 +295,13 @@ Here, we used a segmented sub-tomogram strategy to reveal changes in lattice typ
 
 Changes in lattice types along individual microtubules could result from an imperfect annealing of shorter microtubules, a process known to occur in vitro (Rothwell et al., 1986). Yet, the lattice-type transition frequency observed with purified tubulin would necessitate annealing of very short segments, sometimes a few tens to hundreds of nm in length. The average lattice-type transition frequency observed in cytoplasmic extracts could be compatible with annealing of microtubules a few µm in length. However, the fact that these transitions involved systematically a lateral seam offset of only one protofilament suggests a firm regulatory mechanism. Hence, a more plausible explanation is that these lattice discontinuities are formed during microtubule assembly (Figure 11, Figure 11—video 1). At present, classical models of microtubule elongation hypothesize that tubulin engages either uniquely longitudinal interactions (Figure 11A, step 1), or both longitudinal and lateral interactions with the growing tip of microtubules (Figure 11A, step 2). A purely longitudinal elongation process (McIntosh et al., 2018) can hardly explain how microtubules can vary in terms of protofilament and/or helix start numbers as well as in lattice types, and thus how holes can arise during assembly. Conversely, to account for the presence of holes of one to a few subunits in size, it is sufficient to consider that tubulin can engage lateral interactions without longitudinal ones (Figure 11A, step 3). Gaps of an odd number of tubulin subunits will induce lattice-type transitions (Figure 11A, steps 4–5), while those of an even number will induce no changes (Figure 11B). Hence, since both types of events are likely to occur, we may underestimate the presence of holes within microtubules. In addition, a finer sampling of the microtubule lattice with shorter segments could also reveal a higher hole frequency. Formation of lateral contacts without longitudinal ones at the seam region can also explain how the seam can vary in position by one protofilament (Figure 11C) since this only requires that a tubulin dimer engages homotypic lateral interactions at the seam region (Figure 11C, step 2). This event will also leave a gap of an odd number of subunits within the microtubule lattice (Figure 11C, steps 3–4).
 
+![Figure 11.](https://cdn.elifesciences.org/articles/83021/elife-83021-fig11-v2.jpg)
+
+**Figure 11.:** (A) Formation of multiple seams; red dots indicate new interactions. (1) Unique longitudinal interaction. (2) Combined lateral and longitudinal interactions. (3) Unique lateral interaction between one α-tubulin subunit of an incoming tubulin dimer and a β-tubulin subunit at the tip of the growing microtubule. (4–5) Incorporation of a hole within the microtubule lattice. Two A-lattice seams have been formed (arrows). (B) Incorporation of a tubulin dimer gap without change in lattice type organization. (1) Homotypic lateral interaction of an incoming tubulin dimer without longitudinal interaction. (2–5) Incorporation of a tubulin dimer gap inside the microtubule lattice. (C) Lateral offset of the seam by one protofilament during elongation. (1) Unique longitudinal interaction. (2) Homotypic interaction of an incoming dimer at the seam region without longitudinal contact. (3–4) Incorporation of a lattice-type transition inside the microtubule lattice. The seam has moved laterally by one protofilament (4), a situation systematically encountered in cytoplasmic extract microtubules.
+
 Our current view of microtubules organized according to a perfect pseudo-helical B-lattice interrupted by a single A-lattice seam must be reconsidered. This is definitely the case for microtubules assembled from purified tubulin and has profound consequences for the interpretation of biochemical, biophysical, and structural results. For instance, 3D reconstruction studies will have to take into account the heterogeneity of the microtubule lattice to reach higher resolution (Debs et al., 2020). The lattice organization of cytoplasmic extract microtubules is more in agreement with the B-lattice, single-seam model. However, exceptions are also observed such as changes in protofilament and/or helix start numbers, as well as in the location of seams within individual microtubules. Therefore, our results suggest that the formation of heterogeneous microtubule lattices is an intrinsic property of tubulin polymerization, which is firmly regulated in cells. One key regulatory factor could be the γ-tubulin ring complex (γTuRC), which imposes the 13 protofilament organization to a nascent microtubule (Böhler et al., 2021). But how this structure is preserved during microtubule elongation remains unclear, especially if one considers a two-dimensional assembly process where the lattice can vary in terms of protofilament number, helix-start number, or lattice type during elongation. Proteins of the end-binding (EB) family are other good candidates that could play a key role in regulating microtubule structure during assembly in cells. They interact with the tip of growing microtubules and bind in between protofilaments that are organized according to a B-lattice Maurer et al., 2012; they thus may favor the formation of homotypic lateral interactions during assembly. In addition, EBs have been shown to induce the formation of 13 protofilaments, three-start helix microtubules (Manka and Moores, 2018; Vitre et al., 2008), which could also be forced to adopt a preferential B-lattice-type organization. Conversely, microtubule polymerases like XMAP215, which act at growing microtubule ends (Brouhard et al., 2008), may favor lattice heterogeneities (Farmer et al., 2021). It remains to be determined whether the concerted action of different microtubule growing-end binding proteins regulate microtubule structure and dynamics in cells (Akhmanova and Steinmetz, 2008).
 
-## Ideas and speculation
+### Ideas and speculation
 
 Microtubules alternate stochastically between growing and shrinking states, an unusual behavior termed dynamic instability that was discovered some 38 years ago (Mitchison and Kirschner, 1984). Although it is exquisitely regulated in cells by a myriad of microtubule-associated proteins (Cleary and Hancock, 2021), it is also an intrinsic property of microtubules assembled from purified tubulin, demonstrating that it is intimately tied to tubulin assembly properties (Brouhard, 2015).
 
@@ -91,25 +311,119 @@ The formation of lattice defects during microtubule polymerization must impose e
 
 ## Materials and methods
 
-## Protein purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta 2(DE3)</td>
+      <td>Merck</td>
+      <td>Cat# 71397-3</td>
+      <td>Thermo-competent cells, used for kinesin-motor domain purification</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>One Shot BL21(DE3)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# C6000-03</td>
+      <td>Used for the purification of GTPase-deficient mutant RanQ69L</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KIF5B</td>
+      <td>Steinmetz laboratory (PSI Villigen, Switzerland)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RanQ69L</td>
+      <td>Heald laboratory (UC Berkley, USA)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Tubulin-Rhodamine</td>
+      <td>Cytoskeleton, Inc.</td>
+      <td>Cat# TL590M</td>
+      <td>Rhodamine labeled porcine brain tubulin</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chorulon 1500</td>
+      <td>MSD Animal Health</td>
+      <td>GTIN: 08713184057587</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (https://imagej.net/)</td>
+      <td>RRID:SCR_003070</td>
+      <td>v1.53</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KaleidaGraph software</td>
+      <td>KaleidaGraph (https://www.synergy.com)</td>
+      <td>RRID:SCR_014980</td>
+      <td>v5.01</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera software</td>
+      <td>UCSF Chimera (https://www.cgl.ucsf.edu/chimera/)</td>
+      <td>RRID:SCR_004097</td>
+      <td>v1.14</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMOD software</td>
+      <td>IMOD (https://bio3d.colorado.edu/imod/)</td>
+      <td>RRID:SCR_003297</td>
+      <td>v4.12.19</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PEET software</td>
+      <td>PEET (https://bio3d.colorado.edu/PEET/)</td>
+      <td></td>
+      <td>v1.16.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein purification
 
 Tubulin was isolated from porcine brain by two cycles of assembly disassembly (Castoldi and Popov, 2003), followed by a final cycle in the absence of free GTP (Ashford and Hyman, 2006). Tubulin was obtained in BRB80 (80 mM K-Pipes, 1 mM EGTA, 1 mM MgCl2, pH 6.8 with KOH) and stored at –80°C before use.
 
 The cDNA fragment encoding for the human Kif5B motor domain (residues 1–349) was cloned into the pET-based bacterial vector PSTCm1 (Olieric et al., 2010). The protein was expressed in Rosetta2 Escherichia coli cells. Cells were grown at 37°C in LB media supplemented with 50 μg/ml kanamycin and 30 μg/ml chloramphenicol to an OD600 of 0.4–0.6. Temperature was reduced to 20°C, the protein production was induced 20 min later with 0.5 mM isopropy-1-thio-β-galactopyranoside (IPTG), and incubation was continued overnight under agitation. The cells were harvested by centrifugation for 15 min at 4000 × g and the cell pellets were resuspended in lysis buffer (50 mM HEPES, pH 8.0, supplemented with 10 mM imidazole, 10% glycerol, 0.1 mM ADP, 2 mM beta-mercaptoethanol, and one cOmplete EDTA free proteases inhibitor cocktail tablet per 50 ml buffer). The cells were lysed on ice per ultrasonication and lysate clearing was performed by centrifugation, 30 min at 24,000 × g. The resultant supernatant was filtered using a 0.45 µm filter and the protein was subsequently purified by IMAC on a 5 ml HP HisTrap column (GE Healthcare) according to the manufacturer’s information. The eluted protein from this affinity step was concentrated and further purified by gel filtration on a HiLoad 16/600 Superdex 200 pg column (GE Healthcare) equilibrated in 20 mM Tris–HCl, pH 7.5, supplemented with 150 mM NaCl, 0.1 mM ADP, and 2 mM DTT. The homogeneity of the recombinant Kif5B motor domain was assessed by SDS-PAGE. Fractions were concentrated, aliquoted, flash-frozen into liquid nitrogen, and stored at –80°C.
 
-## Animals
+### Animals
 
 All animal experimentation in this study was performed according to our animal use protocol APAFiS #26858-2020072110205978 approved by the Animal Use Ethic Committee (#7, Rennes, France) and the French Ministry of Higher Education, Research and Innovation. Mature Xenopus laevis female frogs were obtained from the CRB Xénope (Rennes, France) and ovulated with no harm to the animals with at least a 6-month rest interval between ovulations.
 
-## Xenopus egg cytoplasmic extracts
+### Xenopus egg cytoplasmic extracts
 
 Cytostatic factor-arrested (CSF) egg extracts were prepared from freshly laid eggs of X. laevis as previously described (Good and Heald, 2018; Murray, 1991). Briefly, eggs arrested in metaphase of meiosis II were collected, dejellied, and fractionated by centrifugation. The cytoplasmic layer was isolated, supplemented with 10 mg/ml each of the protease inhibitors leupeptin, pepstatin, and chymostatin (LPC), 20 mM cytochalasin B, and a creatine phosphate and ATP energy regeneration mix. Vitrification of the samples for cryo-electron microscopy was performed the same day as the egg extract preparation.
 
-## Cryo-fluorescence microscopy
+### Cryo-fluorescence microscopy
 
 To determine the optimal density of microtubule structures assembled from Xenopus egg cytoplasmic extracts cryo-fixed on electron microscopy grids suitable for cryo-electron tomography acquisitions, we used cryo-fluorescence microscopy. Egg extracts were supplemented with 40 ng/µg rhodamine-tubulin (Cytoskeleton Inc, TL590M-B) before microtubule assembly was conducted by addition of 5% DMSO and incubation at 23°C, for 30–45 min. Reactions were then extemporaneously diluted 1:10, 1:50, or 1:100 in 1× BRB80 buffer for vitrification on an electron microscopy grid. Frozen grids were imaged within a Linkam CMS196M cryo-correlative microscopy stage mounted on an Olympus BX51 microscope equipped with a Lumencor SOLA SE U-nIR light source, UPLFLN10×/0.30 and LMPLFLN50×/0.50 objectives, and a Photometrics Prime-BSI sCMOS Back Illuminated camera. Images were acquired using the µManager acquisition software v1.4 (Edelstein et al., 2014).
 
-## Cryo-electron tomography
+### Cryo-electron tomography
 
 Microtubules were assembled from purified porcine brain tubulin at 40 µM in BRB80, 1 mM GTP, or at 10 µM in BRB80, 0.1 mM GMPCPP, for about 1 hr at 35°C. Kif5B was diluted at a final concentration of 2.5 mg/ml in BRB80, 0.1 mM ATP, 1 mM GTP, and 60 nM mix-matrix capped gold nanoparticles (Duchesne et al., 2008; Guesdon et al., 2016) and prewarmed at 35°C. First, 3 µl of the microtubule sample was deposited at the surface of a glow-discharged holey carbon grid (Quantifoil R2/2, Cu200) in the temperature (35°C) and humidity-controlled atmosphere (~95 %) of an automatic plunge-freezer (EM GP, Leica). Then, 3 µl of the prewarmed kinesin-motor domain suspension was added to the grid onto the sample, incubated for 30 s, and blotted manually. An additional 3 µl of the prewarmed kinesin-motor domain suspension was added to the grid, blotted with the EM GP for 2 s using Whatman grade 1 filter paper and plunged into liquid ethane.
 
@@ -119,10 +433,10 @@ For dual-axis cryo-electron tomography, specimen grids were transferred to a rot
 
 For single-axis cryo-electron tomography, specimen grids were transferred to a dual-grid cryo-transfer holder model 205 (Simple Origin). Data were acquired on a 4K × 4k CMOS camera (XF416, TVIPS) in binning mode 1 and at a nominal magnification of ×50,000 (electron dose ~2.5 é/Å2), providing a final pixel size of 0.21 nm. Typically, 40 images were taken in an angular range of ~±60° starting from 0° or using a symmetric electron dose scheme (Hagen et al., 2017). To localize holes within microtubules by SSTA, tomograms were subsequently binned by 4 to provide a final pixel size of 0.83 nm.
 
-## Sub-tomogram averaging
+### Sub-tomogram averaging
 
 Sub-tomogram averages were calculated using the procedure described online (available here). Briefly, a first model was created by following individual protofilaments in cross section using the slicer tool in IMOD. Usually, ~50 electronic slices were averaged to reinforce the contrast. A second model was next extrapolated from the first one to mark the microtubule center at the same point positions. Then, a third model was calculated from the previous ones with points spaced every ~8 nm, and a motive list containing Euler angles of each sub-volume with respect to the chosen reference was created. Sub-volumes of ~40 pixels3 were extracted at each point position using the graphical user interface of the PEET program (Nicastro et al., 2006). Inner and outer cylindrical masks were used to isolate the microtubule wall densities. Registration of the microtubule sub-volumes was performed by cross-correlation, limiting rotational angular searches around the microtubule axis to about half the angular separation between protofilaments. Other angles were set to take into account variations of microtubule curvature in the X, Y, and Z directions. SSTA was performed using a new routine (splitIntoNsegments) implemented into the PEET program version 1.14.1. This routine splits the initial model and motive list into N segments of equal size and creates sub-directories for each segment. Sub-tomogram averages are calculated for each segment using the original sub-tomogram average parameters of the whole microtubule as a template.
 
-## Image analysis and model building
+### Image analysis and model building
 
 Sub-tomogram averages were inspected using the isosurface panel of IMOD. Four scattered models were created. Model 1 was used to mark the kinesin-motor domain densities (yellow spheres), model 2 to mark the absence of densities (cyan spheres), model 3 aberrant densities (red spheres), and model 4 the microtubule center. Spheres from model 1–3 were placed along the S-start lateral helices. The fourth last model was enlarged to cross the kinesin-motor domain densities in order to place the other spheres at a same radius. The number of protofilaments and the different lateral contacts (A, B, and undefined lateral contacts) were retrieved from these models.

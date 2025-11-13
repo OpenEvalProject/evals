@@ -34,37 +34,65 @@ In the fission yeast Schizosaccharomyces pombe, a model organism that is evoluti
 
 ## Results
 
-## Identification of genes required for starvation-induced degradation of mitochondria in fission yeast
+### Identification of genes required for starvation-induced degradation of mitochondria in fission yeast
 
 To investigate autophagic degradation of mitochondria in fission yeast, we used C-terminal mRFP-tagged Tuf1, which is a protein in the mitochondrial matrix (Chiron et al., 2005). As fluorescent proteins, such as RFP and GFP, are relatively resistant to vacuolar proteases, autophagic degradation can be assayed by the production of free fluorescent proteins that are processed from their tagged proteins (Meiling-Wesse et al., 2002). In cells expressing Tuf1-mRFP, free mRFP was observed during nitrogen starvation (Figure 1—figure supplement 1A). The production of free mRFP was dependent on the core autophagy protein Atg1 and the vacuolar protease Isp6 (Figure 1—figure supplement 1A), confirming that Tuf1 was translocated to the vacuole and degraded by autophagy.
 
 Fission yeast does not contain any proteins that are orthologous to budding yeast Atg32 or mammalian mitophagy receptors. The Fun14 protein coded by SPAC29A4.17c belongs to the Fun14 family, which includes the mammalian mitophagy receptor FUNDC1. However, Fun14 was found to be dispensable for mitochondrial degradation by autophagy (Figure 1—figure supplement 1B). To identify genes involved in autophagic degradation of mitochondria in fission yeast, we used the Bioneer knockout library (Kim et al., 2010) and screened for mutants defective in Tuf1-mRFP processing. Currently, we obtained two such mutants that have not been reported to be involved in autophagy-related processes. One mutant has a deletion in the gene of unknown function, SPAC14C4.01c, and the other in the tom70+ gene, which encodes a highly conserved protein that is involved in mitochondrial protein import (Baker et al., 2007). We named the SPAC14C4.01c gene atg43 according to the unified nomenclature for autophagy-related genes. Processing of Tuf1-mRFP was completely defective in the atg43 deletion mutant, whereas a slight signal of free mRFP was detected in the tom70 deletion mutant (Figure 1A). The deletion allele of atg43+ (named atg43-1) was PCR-amplified from the Bioneer strain and transferred to strains expressing GFP-tagged Sdh2, Tom70, and Mic60, which are mitochondrial matrix, outer membrane, and inner membrane proteins, respectively. As in the case of Tuf1-mRFP, the processing of these proteins upon nitrogen starvation was impaired in the atg43-1 mutant (Figure 1B and Figure 1—figure supplement 1C and D), indicating that the mutant is defective in degradation of various compartments of the mitochondria.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61245/elife-61245-fig1-v1.jpg)
+
+**Figure 1.:** (A, D) The indicated strains expressing Tuf1-mRFP were grown in EMM and shifted to the same medium without a nitrogen source (EMM–N). Cells were collected at the indicated time points after nitrogen starvation was initiated. Tuf1-mRFP processing was monitored by immunoblotting. Lower panel, long exposure (LE). (B) The indicated strains expressing Sdh2-GFP were collected at the indicated time points after shifting to nitrogen starvation medium. The processing of Sdh2-GFP was monitored by immunoblotting. (C) Schematic representation of the atg43-1 allele. The protein-coding region is depicted by a gray arrow. The nucleotide region that is deleted by the replacement with the kanMX4 gene (black arrow) is shown. (E, G) The indicated strains were grown in EMM, and their serial dilutions were spotted onto solid YES medium for the growth assay. (F) The protein-coding region of the atg43+ gene was cloned into an integration vector to express atg43+ under the control of the moderate adh31 promoter. The atg43-1 mutants integrated with the atg43+ gene (atg43+) or an empty vector (vector), as well as a wild-type strain, were collected at the indicated time points after induction of nitrogen starvation and were subsequently subjected to immunoblotting. (H–J) The indicated strains expressing GFP-Atg8, Pgk1-GFP, or Yop1-GFP were collected at the indicated time points after induction of nitrogen starvation. Degradation of each substrate was monitored by immunoblotting. Histone H3 was used as a loading control (LC) for immunoblotting.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61245/elife-61245-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) The processing of tagged mitochondrial proteins depends on mitochondrial degradation by autophagy. Wild-type and the indicated mutant cells, which express Tuf1-mRFP (A and B), Tom70-GFP (C), or Mic60-GFP (D), were grown in EMM and shifted to EMM–N for nitrogen starvation. Cells were collected at the indicated time points after induction of nitrogen starvation, followed by immunoblotting. Histone H3 was used as a loading control (LC). (E) Autophagy does not affect vegetative growth. The indicated strains were grown in EMM, and their serial dilutions were spotted onto solid YES medium for the growth assay. (F–I) Atg43 and Tom70 are mitophagy-specific proteins. Wild-type and the indicated mutant cells expressing Tdh1-mRFP (F), GFP-Atg8 (G), Pgk1-GFP (H), or Yop1-GFP (I) were grown in EMM and shifted to EMM–N for nitrogen starvation. Cells were collected at the indicated time points after induction of nitrogen starvation and were used for immunoblotting.
+
 As a large part of the atg43+ gene remains in the atg43-1 allele (Figure 1C), we constructed mutants that lacked the whole protein-coding region of atg43+ (atg43Δ) using gene targeting. We confirmed that the atg43Δ mutant is defective in Tuf1-mRFP processing upon nitrogen starvation (Figure 1D). Remarkably, atg43Δ cells exhibited a growth defect, whereas atg43-1 cells grew nearly normally (Figure 1E). Since autophagy-defective mutants are proficient in cell growth (Figure 1—figure supplement 1E), likely, a process besides mitochondrial degradation is also defective in the atg43Δ mutant.
 
 To examine whether the atg43+ gene product (Atg43) is responsible for the observed phenotypes, we cloned the protein-coding region of the atg43+ gene under a moderate constitutive promoter (Padh31) and integrated it at an ectopic genomic locus. Expression of Atg43 restored the processing of Tuf1-mRFP in atg43-1 cells (Figure 1F). We used an antibody raised against the N-terminal 150 amino acid (aa) region of Atg43 and detected proteins of the same size in both wild-type cells and the atg43-1 cells that had ectopic expression of Atg43 (Figure 1F). These findings suggest that Atg43 is responsible for mitochondrial degradation. We also confirmed that expression of Atg43 restores cell growth in the atg43Δ mutant (Figure 1G). Collectively, these data suggest that Atg43 has dual functions, one in the autophagic degradation of mitochondria and the other in a cellular process that affects cell growth. Hereafter, we used atg43-1 as a separation-of-function mutant predominantly defective in mitochondrial degradation.
 
-## Autophagic degradation of mitochondria occurs selectively in fission yeast
+### Autophagic degradation of mitochondria occurs selectively in fission yeast
 
 To determine whether Atg43 is required for autophagic degradation of substrates other than mitochondria, bulk autophagic activity was assessed by measurement of GFP-Atg8 processing (Mukaiyama et al., 2010). The atg43-1 mutant produced free GFP (Figure 1H), suggesting that bulk autophagy is normal. This was confirmed by assessing the processing of GFP-tagged cytoplasmic proteins, Pgk1 (Figure 1I) and Tdh1 (Figure 1—figure supplement 1F). Next, to determine whether Atg43 is involved in the degradation of another organelle, we examined degradation of the endoplasmic reticulum (ER) by monitoring a GFP-tagged ER membrane protein, Yop1 (Zhang et al., 2010). In the atg43-1 mutant, Yop1-GFP processing was detected (Figure 1J). These findings suggest that Atg43 is specific to mitochondrial degradation, indicating that mitochondria are selectively degraded Atg43-dependently. We also confirmed that bulk and ER autophagy occur in the absence of Tom70 (Figure 1—figure supplement 1G–I), indicating that Tom70 is also a mitochondria-specific factor. Thus, we hereafter refer to the selective autophagic degradation of mitochondria in fission yeast as mitophagy.
 
-## Atg43 is a transmembrane protein anchored to the MOM
+### Atg43 is a transmembrane protein anchored to the MOM
 
 Atg43 is conserved among Schizosaccharomyces species (Figure 2—figure supplement 1A), and Atg43-like sequences are present in fungi, but the homology is limited to the C-terminal region (Figure 2—figure supplement 1B). We could not identify proteins orthologous to Atg43 in S. cerevisiae or mammals.
 
 Immunoblotting of Atg43 in S. pombe detected a signal larger than the predicted size of 27 kDa (Figure 1F). Upon nitrogen starvation, Atg43 protein levels were increased (Figure 2A and B). Under nutrient-rich conditions, target of rapamycin complex 1 (TORC1) suppresses autophagy through phosphorylation of the core autophagy proteins (Noda, 2017). We inactivated TORC1 using a temperature-sensitive mutant of the Tor2 kinase subunit of TORC1 (tor2-13) (Uritani et al., 2006). At the non-permissive temperature for tor2-13, Atg43 levels increased (Figure 2C) and mitophagy took place (Figure 2—figure supplement 2A), suggesting that Atg43 expression and mitophagy are regulated by TORC1 signaling. In cells constitutively expressing Atg43 under the adh31 (Figure 1F) or nmt1 (Figure 2—figure supplement 2B) promoter, nitrogen starvation was required for mitophagy induction, indicating that Atg43 expression is not sufficient to induce mitophagy. In cells defective in autophagy, Atg43 accumulated during nitrogen starvation (Figure 2D), suggesting that Atg43 is efficiently degraded by autophagy. We further confirmed autophagy-dependent degradation of Atg43 using a GFP processing assay (Figure 2E). Thus, we identified that Atg43 is upregulated during the initiation of autophagy and is degraded as autophagy proceeds.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/61245/elife-61245-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) Wild-type cells were grown in EMM and shifted to EMM–N for nitrogen starvation. Cells were collected at the indicated time points after shifting to nitrogen starvation medium and were then subjected to immunoblotting. (C) The indicated strains were grown in EMM at 26°C. The temperature was then shifted to 37°C to inactivate TORC1. Cells were collected at the indicated time points after the temperature shift and were used for immunoblotting. (D, E) The indicated strains were collected at the indicated time points after shifting to nitrogen starvation medium and were used for immunoblotting. (F) Cells expressing GFP-Atg43 and Tuf1-mRFP were grown in EMM (+N) or cultured in EMM–N for 12 hr (–N) for microscopy. A magnified view of the indicated area is shown in the right panel. Scale bars represent 5 µm. BF, bright-field image. (G) Fractionation was conducted using cells expressing Tuf1-mRFP. The total cell homogenate (total) was fractionated by centrifugation to obtain a mitochondria-enriched pellet (mit) and supernatant (sup). Tuf1-mRFP and actin were detected as markers of the mitochondria and cytosol, respectively. (H) A mitochondrial fraction was prepared from cells expressing Tom70-GFP, Mic60-FLAG, and Tuf1-mRFP, treated with (+) or without (–) proteinase K, under different conditions. Hypo-osmotic swelling resulted in rupture of the MOM and the detergent Triton X-100 lysed mitochondria. Tom70-GFP, Mic60-FLAG, and Tuf1-mRFP were detected as markers of the mitochondrial outer membrane, inner membrane, and matrix, respectively. (I) The mitochondrial fraction (mit) was prepared from cells expressing Tom70-GFP, treated with sodium carbonate, and separated into the soluble supernatant (sup) and membrane pellet (pellet) by centrifugation. Tom70-GFP and Atp2 were detected as markers for integral and peripheral membrane proteins, respectively. (J) The mitochondrial fraction was prepared from cells expressing N-terminal or C-terminal FLAG-tagged Atg43 (FLAG-Atg43 or Atg43-FLAG, respectively), followed by treatment with (+) or without (–) proteinase K. The Triton X-100 detergent lysed mitochondria. The proteinase-resistant band is indicated by the arrowhead. Histone H3 was used as a loading control (LC) for immunoblotting.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61245/elife-61245-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A multiple sequence alignment of Atg43 proteins in the Schizosaccharomyces species. The alignment was produced using ClustalW and modified manually. The N-terminal AIM is indicated. (B) Alignment of fungal sequences similar to the C-terminal region of Atg43. The alignment was produced using ClustalW and modified manually. The predicted C-terminal transmembrane domain is indicated.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61245/elife-61245-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The indicated strains were grown in EMM and the temperature was shifted to 37°C to inactivate TORC1. Cells were collected at the indicated time points after the temperature shift and were used for immunoblotting. (B) Wild-type cells and cells expressing Atg43 under the thiamine-repressible nmt1 promoter were grown in EMM containing thiamine for moderate expression. Cells were collected at the indicated time points after shifting to nitrogen starvation medium and were used for immunoblotting. Histone H3 was used as a loading control (LC). (C) Schematic representation of the structure of Atg43. The region conserved among fungi is highlighted in blue. A C-terminal predicted transmembrane domain (TM) is indicated. (D) Cells expressing the C-terminal 80 aa of Atg43 (C80) tagged with FLAG at the N-terminus (FLAG-C80) or C-terminus (C80-FLAG) were grown in YES. The mitochondrial fraction was prepared and treated with (+) or without (–) proteinase K. The detergent Triton X-100 lysed mitochondria. The proteinase-resistant band is indicated by an arrowhead.
+
 To determine the subcellular localization of Atg43, we assessed cells expressing GFP-tagged Atg43. Atg43 was detected on mitochondria that were labeled with Tuf1-mRFP under both nitrogen-rich and starvation conditions (Figure 2F). Mitochondrial localization of Atg43 was further confirmed after fractionation of cell homogenates, where Atg43 was detected in the mitochondria-enriched fraction, along with Tuf1-mRFP (Figure 2G). We subsequently treated the mitochondria-enriched fraction with proteinase K. In contrast to Mic60 and Tuf1, markers of the mitochondrial inner membrane and matrix, respectively, Atg43 was digested without hypo-osmotic swelling or Triton X-100 lysis, similarly to Tom70 (Figure 2H). This suggests that Atg43 is localized to the MOM. Using the HMMTOP prediction method (Tusnády and Simon, 2001), we identified that Atg43 is predicted to contain a transmembrane domain at its C-terminus (Figure 2—figure supplement 1B). After centrifugation of the alkaline-treated mitochondrial fraction, Atg43 was detected in the pellet along with Tom70, an integral MOM protein, whereas the peripheral inner membrane protein, Atp2, was detected in the supernatant (Figure 2I). Therefore, Atg43 is likely to be an integral membrane protein. To determine the membrane topology, the mitochondria-enriched fraction prepared from cells expressing N-terminal or C-terminal FLAG-tagged Atg43 was treated with proteinase K. Anti-FLAG immunoblotting detected a detergent-sensitive signal of 10 to 17 kDa for C-terminal-tagged but not for N-terminal-tagged Atg43 (Figure 2J). A similar result was obtained in cells expressing the C-terminal 80 aa region of Atg43 that contains the predicted transmembrane domain (Figure 2—figure supplement 2C and D). These data support the hypothesis that the C-terminus of Atg43 is protected inside mitochondria. Thus, we propose that Atg43 is a transmembrane protein localized to the MOM with its N-terminus facing the cytosol.
 
-## Atg43 harbors an AIM in its cytosolic region that is essential for mitophagy
+### Atg43 harbors an AIM in its cytosolic region that is essential for mitophagy
 
 To identify the functional regions in Atg43, we prepared cells that expressed an N-terminal truncated form of Atg43 (Figure 3A) and tested their ability to perform mitophagy. Although the 20 aa N-terminal region was dispensable for mitophagy, mitophagy was completely abolished in cells expressing Atg43 lacking the 40 aa N-terminal region (Figure 3B), suggesting that aa 21–40 of Atg43 contain a factor required for mitophagy. This region harbors Y28ELI31, an AIM/LIR (W/F/Y-x-x-L/I/V) sequence, which is conserved among selective autophagy receptor/adaptor proteins. To determine the role of the AIM in mitophagy, we assessed mitophagy in cells expressing AIM-mutated Atg43 (A28ELA31, ΔAIM) and found that these cells were defective in mitophagy (Figure 3C). Next, we investigated the interaction between the cytosolic region of Atg43 and Atg8 using a yeast two-hybrid assay. The 184 aa at the N-terminal of Atg43 and aa 1–40 of Atg43 resulted in a positive signal with Atg8 (Figure 3D). By contrast, the AIM-mutated aa 1–40 and 1–184 of Atg43 did not exhibit a positive signal (Figure 3E). Furthermore, interaction between Atg8 and Atg43 was confirmed by immunoprecipitation (Figure 3F), and the detected interaction was dependent on the AIM (Figure 3G). Taken together, these data indicate that Atg43 can interact with Atg8 AIM-dependently. Interaction of Atg43 with another core autophagy protein, Atg11 was also examined by immunoprecipitation, and unlike Atg8, Atg11 did not efficiently co-precipitate Atg43 (Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61245/elife-61245-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic representation of N-terminal deleted forms of Atg43. The region conserved among fungi is highlighted in blue. The N-terminal AIM and C-terminal predicted transmembrane domain (TM) are indicated. (B) Wild-type cells and strains expressing FLAG-tagged Atg43, with or without N-terminal truncation, under the thiamine-repressible nmt1 promoter, were grown in EMM containing thiamine for moderate expression. Cells were collected at the indicated time points after shifting to nitrogen starvation medium and were subsequently used for immunoblotting. (C) Cells expressing wild-type and AIM-mutated (ΔAIM) Atg43 from the native gene locus were collected at the indicated time points after shifting to nitrogen starvation medium and subjected to immunoblotting. (D, E) A yeast two-hybrid assay between activation domain (AD)-fused Atg8 and DNA-binding domain (BD)-fused Atg43 fragments, without or with mutations in the N-terminal AIM (ΔAIM). (F, G) Crude cell lysates (input) were prepared from cells with (+) or without (–) expression of GFP-fused Atg8 and FLAG-tagged Atg43 or AIM-mutated Atg43 (ΔAIM). Anti-GFP immunoprecipitants (IP: GFP) were analyzed by immunoblotting. Cells were collected 12 hr after shifting to nitrogen starvation medium and were subjected to immunoprecipitation. (H) Cells expressing wild-type and deleted forms of Atg43 from the native gene locus were collected at the indicated time points after shifting to nitrogen starvation medium and were subsequently used for immunoblotting. (I) The indicated strains were grown in EMM, and their serial dilutions were spotted onto solid YES medium for the growth assay. (J, K) Cells expressing N-terminal truncated forms of Atg43 tagged with GFP were grown in EMM for microscopy. Tuf1-mRFP was detected as a mitochondrial marker. Scale bars represent 5 µm. BF, bright-field image. Histone H3 was used as a loading control (LC) for immunoblotting.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61245/elife-61245-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunoprecipitation experiments were conducted using crude cell lysates (input) prepared from FLAG-Atg43-expressing cells with co-expression of the indicated proteins. Cells were collected 12 hr after induction of nitrogen starvation and subjected to immunoprecipitation. (B) The atg43-1 allele was chromosomally tagged with FLAG (atg43-1:FLAG) and the expressed protein was detected by immunoblotting in parallel with the untagged atg43-1 (atg43-1) and tagged wild-type (atg43:FLAG) strains. Histone H3 was used as a loading control (LC). (C) Fractionation was conducted using atg43-1:FLAG cells. The cell homogenate was fractionated by centrifugation to obtain a mitochondria-enriched pellet (mit) and supernatant (sup). Tuf1-mRFP and actin were detected as markers of the mitochondria and cytosol, respectively.
 
 We also monitored the mitophagy ability of strains expressing Atg43 that lacks the central region (Figure 3A). Mitophagy still occurred in cells expressing Atg43 with deletion in aa 41–80, 81–120, and 121–164 (Figure 3H), suggesting that aa 41–164 of Atg43 are not essential for mitophagy.
 
 Besides mitophagy, cell growth was assessed with the N-terminal truncated Atg43 mutants. Cells expressing Atg43 that lacks the 164 N-terminal aa grew normally (Figure 3I). By contrast, when the N-terminal truncation reached the conserved region (aa 165–184), cell growth was impaired (Figure 3I), indicating that aa 165–184 of Atg43 contain a factor that is necessary for normal cell growth. We also assessed mitochondrial localization and found that with deletion of the N-terminal 164 and 184 aa, mitochondrial localization was retained (Figure 3J and K). Taken together, these findings suggest that aa 21–40 of Atg43, which contain an AIM, are necessary for mitophagy, but dispensable for normal cell growth and mitochondrial localization of Atg43. These data are consistent with that the atg43-1 mutation predominantly affects mitophagy. The atg43-1 allele lacks the part coding for the AIM-containing region but retains the part coding for the C-terminal region of Atg43 (Figure 1C). Indeed, the atg43-1 mutant expressed a truncated form of Atg43 that was enriched in mitochondria (Figure 3—figure supplement 1B and C).
 
-## The primary role of Atg43 in mitophagy is to anchor the AIM to mitochondria
+### The primary role of Atg43 in mitophagy is to anchor the AIM to mitochondria
 
 To investigate the role of the conserved C-terminal region of Atg43, cells expressing Atg43 lacking the C-terminal region were assessed (Figure 4A). Atg43 lacking the 20 C-terminal aa exhibited only a partial defect in mitophagy, whereas Atg43 with a truncation of the 60 C-terminal aa was defective in mitophagy (Figure 4B). The 60 C-terminal aa were also necessary for normal cell growth (Figure 4C). We also examined the subcellular localization of the truncation mutants. Atg43 lacking the 20 C-terminal aa remained localized to mitochondria, whereas Atg43 lacking the 60 C-terminal aa had diffuse localization in the cytoplasm (Figure 4D). Collectively, these results suggest that aa 185–224 of Atg43, which contain the predicted transmembrane domain, are necessary for mitophagy, normal cell growth, and mitochondrial localization of Atg43.
 
@@ -78,9 +106,17 @@ Next, we aimed to determine whether the 60 aa C-terminal region of Atg43 has an
 
 We have thus far identified that aa 21–40 and 185–224 of Atg43 are necessary for mitophagy and mitochondrial localization, respectively. Next, we investigated whether these regions are sufficient for mitophagy and mitochondrial localization, respectively. Microscopy of GFP-tagged aa 185–224 of Atg43 revealed that this region is sufficient for mitochondrial localization (Figure 4G). Artificial tethering of aa 21–40 of Atg43 to mitochondria using the interaction between GFP and GBP-fused Fis1 restored mitophagy in Atg43-deficient cells (Figure 4H), suggesting that mitochondrial anchoring of the 20 aa region containing AIM is sufficient for mitophagy. Notably, artificial loading of Atg8 to mitochondria also rescued mitophagy (Figure 4H). Therefore, we propose that a major role of Atg43 in the mitophagy process is to tether Atg8 to mitochondria through direct interaction with Atg8 via the AIM region.
 
-## The MIM complex facilitates mitophagy through the loading of Atg43 to the MOM
+### The MIM complex facilitates mitophagy through the loading of Atg43 to the MOM
 
 To identify proteins that physically interact with the conserved C-terminal region of Atg43, cells expressing a FLAG-tagged version of the 80 C-terminal aa of Atg43 (aa 165–244) were subjected to anti-FLAG affinity purification. The resulting immunoprecipitants were analyzed using mass spectrometry and the Mim2 protein was identified (Figure 5—figure supplement 1A). The interaction between full-length Atg43 and Mim2 was confirmed using reciprocal immunoprecipitation experiments (Figure 5A and Figure 5—figure supplement 1B). In budding yeast, Mim2 is a component of the mitochondrial import machinery (MIM) complex, which consists of Mim1 and Mim2 (Dimmer et al., 2012; Stefan Dimmer and Rapaport, 2010). Reciprocal immunoprecipitation experiments revealed that Mim2 also interacts with Mim1 in fission yeast (Figure 5—figure supplement 1C and D), suggesting that the MIM complex is conserved. We further confirmed the interaction between Atg43 and Mim1 using reciprocal immunoprecipitation experiments (Figure 5B and Figure 5—figure supplement 1E). Taken together, these data indicate that Atg43 interacts with the MIM complex.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/61245/elife-61245-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Crude cell lysates (input) were prepared from cells co-expressing GFP-fused Mim2 or Mim1 with (+) or without (–) FLAG-tagged Atg43. Anti-FLAG immunoprecipitants (IP: FLAG) were analyzed by immunoblotting. (C, E) The indicated strains co-expressing GFP-Atg43 and Tuf1-mRFP were grown in EMM for microscopy. (D) The indicated strains expressing Tuf1-mRFP were collected at the indicated time points after shifting to nitrogen starvation medium and were used for immunoblotting. (F) The indicated strains co-expressing a GFP-fused C-terminal truncated form of Atg43 (Atg43ΔC60-GFP) and Tuf1-mRFP were grown in EMM for microscopy. (G) Wild-type, mim1Δ, mim2Δ, and tom70Δ cells co-expressing GBP-fused Fis1 and GFP-fused Atg43 lacking the 60 C-terminal aa (Atg43ΔC60-GFP) were collected at the indicated time points after shifting to nitrogen starvation medium. Cells were then used for immunoblotting. Histone H3 was used as a loading control (LC) for immunoblotting. Scale bars represent 5 µm. BF, bright-field image.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61245/elife-61245-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Identification of Mim2 as an Atg43-binding protein. Mass spectrometric analysis of proteins co-purified with the 80 C-terminal aa of Atg43 with a FLAG tag was conducted. Wild-type cells expressing untagged Atg43 were used as a negative control. The value (score) represents the relative protein abundance as expressed by spectral abundance factor (SAF). Mim2 was identified along with 37 peptide-spectrum matches, at a targeted false discovery rate (FDR) of 1.0% at the peptide level. (B–E) Atg43 interacts with the MIM complex. Immunoprecipitation experiments were conducted using crude cell lysates (input) prepared from cells with (+) or without (–) expression of the indicated proteins. Anti-FLAG (IP: FLAG) and anti-GFP (IP: GFP) immunoprecipitants were analyzed by immunoblotting. (F) The indicated strains were grown in EMM, and their serial dilutions were spotted onto solid YES medium for the growth assay. (G) Atg43 is unstable in the absence of the MIM complex. The indicated strains co-expressing Tom70-GFP and Tuf1-mRFP were grown in EMM for immunoblotting. Histone H3 was used as a loading control (LC). (H, I) Mitochondrial localization of Tom70 requires the MIM complex but does not require Atg43. The indicated strains co-expressing GFP-tagged Tom70 with Tuf1-mRFP were grown in EMM for microscopy. (J, K) Mitochondrial localization of the MIM complex is independent of Atg43 and Tom70. The indicated strains co-expressing Tuf1-mRFP with GFP-tagged Mim1 (J) or Mim2 (K) were grown in EMM for microscopy. Scale bars denote 5 µm. BF, bright-field image.
 
 To examine whether the MIM complex is involved in the function of Atg43, we analyzed the mim1Δ and mim2Δ mutants. The mim1Δ and mim2Δ mutants exhibited a sever growth defect (Figure 5—figure supplement 1F). As Mim1 and Mim2 are thought to be involved in the insertion of transmembrane proteins into the MOM, we then assessed the mitochondrial localization of Atg43. In the absence of Mim1 or Mim2, the GFP-Atg43 signal at the mitochondria was severely decreased (Figure 5C). We also found that Atg43 was undetectable by immunoblotting in the mim1Δ and mim2Δ mutants (Figure 5—figure supplement 1G), indicating that Atg43 becomes unstable in these mutants. These findings suggest that stable localization of Atg43 to the MOM is highly dependent on the MIM complex. This raises the possibility that the MIM complex assists Atg43 through facilitating its mitochondrial localization. Consistent with this, mitophagy was impaired in the mim1Δ and mim2Δ mutants (Figure 5D).
 
@@ -88,15 +124,23 @@ As Tom70, another mitochondrial import factor, was also identified as a protein 
 
 We thus hypothesized that the primary role of the MIM complex in mitophagy is to facilitate the integration of Atg43 to the MOM. To test this hypothesis, we made use of the artificial tethering of GFP-tagged Atg43 to mitochondria by GBP-fused Fis1. In budding yeast, mitochondrial integration of Fis1 is independent of the MIM complex and Tom70 (Dimmer et al., 2012; Kemper et al., 2008). As expected, when Atg43ΔC60-GFP was co-expressed with GBP-Fis1, it was observed on mitochondria in the absence of Mim1, Mim2, or Tom70 (Figure 5F) and mitophagy took place upon nitrogen starvation (Figure 5G). This indicates that artificial tethering of Atg43 to mitochondria can override the requirement of the mitochondrial import factors for mitophagy. Thus, the MIM complex is likely to promote mitophagy through facilitation of the MOM integration of Atg43. Moreover, Tom70 may contribute to mitophagy possibly through the biogenesis of functional Atg43 on the MOM (see Discussion).
 
-## Interaction between Atg43 and the MIM complex is important for normal cell growth but dispensable for mitophagy
+### Interaction between Atg43 and the MIM complex is important for normal cell growth but dispensable for mitophagy
 
 Although the MIM complex contributes to the mitochondrial import of both Atg43 and Tom70, its interaction with Atg43 appeared much stronger than that with Tom70. First, Mim2 was efficiently co-immunoprecipitated with Atg43 and Mim1 but not with Tom70 (Figure 6—figure supplement 1A). Second, Atg43 was efficiently co-immunoprecipitated with Mim1 and Mim2 but not with Tom70 (Figure 6—figure supplement 1B). Third, in the absence of the MIM complex, the Tom70 protein was partially reduced, whereas Atg43 was undetectable (Figure 5—figure supplement 1G). These findings suggest that Atg43 forms a complex with the Mim proteins.
 
 We constructed Atg43 deletion mutants to identify the region required for binding to the MIM complex (Figure 6A). While full-length and the 80 C-terminal aa (aa 165–244) of Atg43 interacted with Mim2, deletion of aa 165–184 impaired this interaction (Figure 6B). These findings indicate that aa 165–184 of Atg43 are important for its binding to the MIM complex. Truncation of the 60 C-terminal aa of Atg43, which contain the predicted transmembrane domain, also resulted in the loss of interaction with Mim2 (Figure 6C and D), suggesting that the mitochondrial localization of Atg43 is a prerequisite for this interaction.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/61245/elife-61245-fig6-v1.jpg)
+
+**Figure 6.:** (A, C) Schematic representation of deleted forms of Atg43. The region conserved among fungi is highlighted in blue. The C-terminal predicted transmembrane domain (TM) is also indicated. (B, D) Crude cell lysates (input) were prepared from cells co-expressing GFP-fused Mim2 and FLAG-tagged Atg43 with or without deletion. Anti-FLAG immunoprecipitants (IP: FLAG) were analyzed by immunoblotting. (E) Schematic representation of the C-terminal region of Atg43. (F) Schematic model describing the loading and function of Atg43 on the MOM.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61245/elife-61245-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) Immunoprecipitation experiments were conducted using crude cell lysates (input) prepared from cells with (+) or without (–) expression of the indicated proteins. Anti-FLAG (IP: FLAG) and anti-GFP (IP: GFP) immunoprecipitants were analyzed by immunoblotting.
+
 Although aa 165–184 of Atg43 are required for the interaction with the MIM complex (Figure 6B and D), this region is not essential for mitochondrial localization of Atg43 (Figures 3K, 4D and 6E) or mitophagy (Figures 4B and 6E). However, aa 165–184 of Atg43 are important for normal cell growth (Figures 3I, 4C and 6E). Taken together, these results suggest that the interaction between Atg43 and the MIM complex takes place after the MIM complex-mediated mitochondrial loading of Atg43 (Figure 6F). We propose that this interaction is important for the mitophagy-independent role of Atg43.
 
-## Atg43-deficient cells can be used as a model of mitophagy-defective cells
+### Atg43-deficient cells can be used as a model of mitophagy-defective cells
 
 Since atg43-1 and AIM-mutated atg43 cells predominantly exhibit a defect in mitophagy, we used the atg43-1 and atg43ΔAIM mutants as models of mitophagy deficiency to examine the physiological roles of mitophagy. The atg7Δ mutant was also used as a model of autophagy deficiency. We first examined cell viability during nitrogen starvation with or without mitophagy/autophagy. Although the atg43-1, atg43ΔAIM, and atg7Δ mutants were viable on nutrient-rich medium 5 days after induction of nitrogen starvation, they exhibited reduced viability at 18 days (Figure 7A). This suggests that mitophagy is important for maintaining growth ability during long-term nitrogen starvation. Notably, atg43-1 and atg43ΔAIM cells exhibited a severer growth defect than the atg7Δ mutant at 18 days (Figure 7A), raising possibilities that imbalance between cytosolic and mitochondrial protein stabilities has an impact on cellular integrity and that a cytosolic factor(s) that compensates the mitophagy defect is degraded by bulk autophagy.
 
@@ -124,38 +168,1175 @@ Mitophagy is thought to play a key role in the quality and quantity control of m
 
 ## Materials and methods
 
-## Fission yeast strains and general techniques
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>972</td>
+      <td>Laboratory stock</td>
+      <td>ATCC24843</td>
+      <td>Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>CA101</td>
+      <td>Laboratory stock</td>
+      <td></td>
+      <td>h- leu1-32 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>CA103</td>
+      <td>Laboratory stock</td>
+      <td></td>
+      <td>h- ura4-D18 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>MM72-1D</td>
+      <td>NBPR (https://yeast.nig.ac.jp/yeast/)</td>
+      <td>FY7652</td>
+      <td>h- leu1-32 ura4-D18 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP407</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1079</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 atg43-1::kanMX4 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1669</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 tom70Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP669</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 sdh2-mEGFP::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3834</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 sdh2-mEGFP::nat atg43-1::kanMX4 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1013</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg43-1::kanMX4 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1057</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 atg43Δ::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3353</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 atg43-1::kanMX4 pNATZA31 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1941</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 atg43-1::kanMX4 pNATZA31-atg43 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3473</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg43Δ::kan pNATZA31 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP2705</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg43Δ::kan pNATZA31-atg43 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP183</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 GFP-atg8::ura4 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP991</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 GFP-atg8::ura4 atg43-1::kanMX4 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP743</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- pgk1-mEGFP::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP989</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- pgk1-mEGFP::hph atg43-1::kanMX4 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP671</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 yop1-mEGFP::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP987</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 yop1-mEGFP::nat atg43-1::kanMX4 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP25</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- sdh2-mEFGP::kan tuf1-mRFP::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP137</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- sdh2-mEFGP::kan tuf1-mRFP::hph atg1Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP145</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- sdh2-mEFGP::kan tuf1-mRFP::hph isp6Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1273</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- tom70-mEGFP::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>CA1258</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- tuf1-mRFP::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP78</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- tuf1-mRFP::kan fun14Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1321</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- tom70-mEGFP::hph atg43-1::kanMX4 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3475</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- mic60-mEGFP::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3477</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- mic60-mEGFP::nat atg43-1::kanMX4 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP209</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg1Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP271</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- isp6Δ::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP667</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tdh1-mRFP::ura4 sdh2-mEGFP::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP985</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tdh1-mRFP::ura4 sdh2-mEGFP::nat atg43-1::kanMX4 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1677</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 GFP-atg8::ura4 tom70Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1675</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- pgk1-mEGFP::kan tom70Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1679</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 yop1-mEGFP::nat tom70Δ::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>CA9659</td>
+      <td>DOI:10.1111/j.1365–2443.2006.01025.x</td>
+      <td></td>
+      <td>h+ ura4-D18 tor2-13::ura4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1539</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg7Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1071</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P81nmt:GFP-atg43 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3237</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P81nmt:GFP-atg43 atg7Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3177</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- tom70-mEGFP::hph mic60-FLAG::kan tuf1-mRFP::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1097</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- hph::P3nmt1:FLAG-atg43 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1717</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- kan::P3nmt1:atg43-FLAG::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP2633</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- hph::P3nmt1:FLAG-atg43(C80) Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3593</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- kan::P3nmt1:atg43(C80)-FLAG::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>CA12620</td>
+      <td>This study</td>
+      <td></td>
+      <td>h+ ura4-D18 tor2-13::ura4 tuf1-mRFP::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1399</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P3nmt1:atg43 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1101</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P3nmt1:FLAG-atg43 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3205</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P3nmt1:FLAG-atg43ΔN20 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3317</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P3nmt1:FLAG-atg43ΔN40 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3651</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 atg43ΔAIM::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3979</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- hph::P3nmt1:FLAG-atg43 kan::P3nmt1:GFP-atg8 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3981</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- hph::P3nmt1:FLAG-atg43ΔAIM kan::P3nmt1:GFP-atg8 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP2721</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 sdh2-mEGFP::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3291</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 sdh2-mEGFP::hph atg43ΔN41-80::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3293</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 sdh2-mEGFP::hph atg43ΔN81-120::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3307</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 sdh2-mEGFP::hph atg43ΔN121-164::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3289</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg43ΔN164::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3315</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg43ΔN184::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1107</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg43Δ::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3261</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 pNATZA31-atg43(C80) hph::P81nmt1:GFP-atg43ΔN164 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP4041</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- hph::P3nmt1:FLAG-atg43 pNATZA1-GFP Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3983</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- hph::P3nmt1:FLAG-atg43 pNATZA1-GFP-atg8 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP4263</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- hph::P3nmt1:FLAG-atg43 pNATZA1-GFP-atg11 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP4265</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- hph::P3nmt1:FLAG-atg43 pNATZA1-atg11-GFP Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1461</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg43-1::kanMX4-FLAG::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1021</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg43-FLAG::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP4289</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- tuf1-mRFP::nat atg43-1::kanMX4-FLAG::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3263</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 pNATZA31-atg43(C80) hph::P81nmt1:GFP-atg43ΔN184 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3223</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 sdh2-mEGFP::hph pNATZA31-atg43(C80) Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3241</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 sdh2-mEGFP::hph pNATZA31-atg43(C80) atg43ΔC20::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3253</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 sdh2-mEGFP::hph pNATZA31-atg43(C80) atg43ΔC60::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3305</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 sdh2-mEGFP::hph pNATZA31-atg43(C80) atg43ΔC61-80::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP2419</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg43ΔC20::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3287</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg43ΔC60::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3363</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg43ΔC61-80::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3225</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P81nmt:GFP-atg43 pNATZA31-atg43(C80) Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3255</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P81nmt:GFP-atg43ΔC20::kan pNATZA31-atg43(C80) Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3259</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P81nmt:GFP-atg43ΔC60::kan pNATZA31-atg43(C80) Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3343</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P81nmt:GFP-atg43ΔC61-80::kan pNATZA31-atg43(C80) Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3559</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- leu1-32 ura4-D18 tuf1-mRFP::ura4 pNATZA31-atg43(C80)::leu1MX4 atg43ΔC60-mEGFP::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3529</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- leu1-32 ura4-D18 tuf1-mRFP::ura4 pNATZA31-atg43(C80)::leu1MX4 kan::P3nmt1:GBP-fis1 atg43ΔC60-mEGFP::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3453</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- leu1-32 ura4-D18 tuf1-mRFP::ura4 pNATZA31-atg43(C80)::leu1MX4 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3557</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- leu1-32 ura4-D18 tuf1-mRFP::ura4 pNATZA31-atg43(C80)::leu1MX4 kan::P3nmt1:GBP-fis1 atg43ΔC60::hph Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3803</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 atg43-1::kanMX4 hph::P3nmt1:GBP-fis1 pNATZA1-GFP Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3793</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 atg43-1::kanMX4 hph::P3nmt1:GBP-fis1pNATZA1-GFP-atg43(N21-40) Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3785</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 atg43-1::kanMX4 hph::P3nmt1:GBP-fis1 pNATZA1-GFP-atg8 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3165</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- kan::P3nmt1:GFP-mim2 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3163</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- kan::P3nmt1:GFP-mim2 hph::P3nmt1:FLAG-atg43 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3215</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- kan::P3nmt1:GFP-mim1 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3213</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- kan::P3nmt1:GFP-mim1 hph::P3nmt1:FLAG-atg43 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3247</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P81nmt:GFP-atg43 mim1Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3173</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P81nmt:GFP-atg43 mim2Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3283</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 mim1Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3271</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 mim2Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1779</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 hph::P81nmt:GFP-atg43 tom70Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3565</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- leu1-32 ura4-D18 tuf1-mRFP::ura4 pNATZA31-atg43(C80)::leu1MX4 kan::P3nmt1:GBP-fis1 atg43ΔC60-mEGFP::hph mim1Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3567</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- leu1-32 ura4-D18 tuf1-mRFP::ura4 pNATZA31-atg43(C80)::leu1MX4 kan::P3nmt1:GBP-fis1 atg43ΔC60-mEGFP::hph mim2Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3569</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- leu1-32 ura4-D18 tuf1-mRFP::ura4 pNATZA31-atg43(C80)::leu1MX4 kan::P3nmt1:GBP-fis1 atg43ΔC60-mEGFP::hph tom70Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3217</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- kan::P3nmt1:GFP-mim2hph::P3nmt1:FLAG-mim1 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3761</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- mim1Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3763</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- mim2Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3161</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 tom70-mEGFP::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3459</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 tom70-mEGFP::kan mim1Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3455</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 tom70-mEGFP::kan mim2Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3479</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 kan::P3nmt1:GFP-mim1 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3523</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 kan::P3nmt1:GFP-mim1 atg43Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3563</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 kan::P3nmt1:GFP-mim1tom70Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3175</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 kan::P3nmt1:GFP-mim2 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3525</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 kan::P3nmt1:GFP-mim2 atg43Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3561</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- ura4-D18 tuf1-mRFP::ura4 kan::P3nmt1:GFP-mim2 tom70Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3485</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- kan::P3nmt1:GFP-mim2 pNATZA31-atg43(C80) hph::P3nmt1:FLAG-atg43 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3487</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- kan::P3nmt1:GFP-mim2 pNATZA31-atg43(C80) hph::P3nmt1:FLAG-atg43ΔN164 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3489</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- kan::P3nmt1:GFP-mim2 pNATZA31-atg43(C80) hph::P3nmt1:FLAG-atg43ΔN184 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3601</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- leu1-32 hph::P3nmt1:GFP-mim2 pNATZA31-atg43(C80) leu1MX4::P3nmt1:FLAG-atg43ΔC61-80::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3617</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- leu1-32 hph::P3nmt1:GFP-mim2 pNATZA31-atg43(C80) leu1MX4::P3nmt1:FLAG-atg43ΔC20::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3603</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- leu1-32 hph::P3nmt1:GFP-mim2 pNATZA31-atg43(C80) leu1MX4::P3nmt1:FLAG-atg43ΔC60::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3201</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- tom70-FLAG::hph kan::P3nmt1:GFP-mim2 Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3233</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- hph::P3nmt1:FLAG-atg43 tom70-mEGFP::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3649</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- atg43ΔAIM::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>MKY1</td>
+      <td>NBPR (https://yeast.nig.ac.jp/yeast/)</td>
+      <td>FY7455</td>
+      <td>h+ leu1-32 ura4 his7 lys1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP3481</td>
+      <td>This study</td>
+      <td></td>
+      <td>h+ leu1-32 ura4 his7 lys1 atg7Δ::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP4259</td>
+      <td>This study</td>
+      <td></td>
+      <td>h+ leu1-32 ura4 his7 lys1 atg43ΔAIM::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP1559</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- isp6Δ::hph atg7Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP4255</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- isp6Δ::hph atg43ΔAIM::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP10</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- sdh2-mEFGP::kan Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP4271</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- sdh2-mEFGP::kan atg7Δ::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>TFSP4273</td>
+      <td>This study</td>
+      <td></td>
+      <td>h- sdh2-mEFGP::kan atg43ΔAIM::nat Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP (Rabbit polyclonal)</td>
+      <td>MBL</td>
+      <td>Cat# PM005, RRID:AB_591279</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Mouse monoclonal)</td>
+      <td>Takara Bio</td>
+      <td>Cat# 632380, RRID:AB_10013427</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-histone H3 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab1791, RRID:AB_302613</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# F1804, RRID:AB_262044</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DDDDK (Rabbit polyclonal)</td>
+      <td>MBL</td>
+      <td>Cat# PM020, RRID:AB_591224</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Atp2 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab128743, RRID:AB_2810299</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Actin (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab8224, RRID:AB_449644</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG (Goat polyclonal, Peroxidase conjugated)</td>
+      <td>Merck Millipore</td>
+      <td>Cat# AP124P, RRID:AB_90456</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG (Goat polyclonal, Peroxidase conjugated)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 111-035-003, RRID:AB_2313567</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-guineapig IgG (Goat polyclonal, Peroxidase conjugated)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 106-035-003, RRID:AB_2337402</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG beads</td>
+      <td>Sigma</td>
+      <td>Cat# M8823, RRID:AB_2637089</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP beads</td>
+      <td>Chromotek</td>
+      <td>Cat# gtma, RRID:AB_2631358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Atg43 (Guineapig polyclonal)</td>
+      <td>This study</td>
+      <td></td>
+      <td>WB (1:4000) Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFA6a-leu1MX4 (plasmid)</td>
+      <td>NBPR</td>
+      <td>FYP2892</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJQW#600 (plasmid)</td>
+      <td>NBPR</td>
+      <td>FYP3955</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNATZA1 (plasmid)</td>
+      <td>NBPR</td>
+      <td>FYP2874</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNATZA31 (plasmid)</td>
+      <td>NBPR</td>
+      <td>FYP2879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNATZA31-atg43 (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNATZA31-atg43(C80) (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNATZA1-GFP (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNATZA1-GFP-atg8 (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNATZA1-GFP-atg11 (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNATZA1-atg11-GFP (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNATZA1-GFP-atg43(N21-40) (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Stocked in T. Kanki lab.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EzWestLumi One</td>
+      <td>Atto</td>
+      <td>WSE-7110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EzWestLumi plus</td>
+      <td>Atto</td>
+      <td>WSE-7120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Clarity Max Western ECL Substrate</td>
+      <td>Bio-Rad</td>
+      <td>1705062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Red CMXRos</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>M7512</td>
+      <td>(250 nM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mito SOX Red</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>M36008</td>
+      <td>(5 µM)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Lab</td>
+      <td>Bio-Rad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaMorph 7</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fission yeast strains and general techniques
 
 The S. pombe strains used in this study are listed in Key Resources Table. The standard growth media and genetic manipulations for S. pombe were conducted as described previously (Bähler et al., 1998; Chia et al., 2017). The S. pombe integration vectors (pNATZA1 and pNATZA31) were obtained from the National Bio-Resource Project (NBRP). Cells were grown in complete YES medium (0.5% yeast extract and 3% glucose, supplemented with 225 mg/L of adenine, uracil, leucine, and histidine) and synthetic minimal EMM medium (Formedium). For respiration medium, YE glycerol (0.5% yeast extract and 3% glycerol) was used. For nitrogen starvation experiments, cells exponentially growing in EMM were pelleted by centrifugation, washed, and resuspended in EMM lacking ammonium chloride (EMM–N) (Formedium). Cells were grown at 30°C unless otherwise indicated. At least two biological replicates were performed for each experiment.
 
-## Genetic screen for mitophagy-defective mutants
+### Genetic screen for mitophagy-defective mutants
 
 The haploid S. pombe deletion mutant library was purchased from Bioneer. Each mutant was transformed with a fragment coding Tuf1-mRFP (tuf1-mRFP::nat) and selected for nourseothricin resistance. The transformants were grown in YES, shifted to EMM–N, cultured overnight, and immunoblotted for mRFP. To generate the atg43-1 allele, the deletion cassette and flanking regions were amplified from the Bioneer atg43 deletion strain using the primer pair, 5′-GTA ATG GTG CTT GGT TAC CAG CAA C-3′ and 5′-GCT TGT ATT CCA AAA GCA CCA TGC TC-3′.
 
-## Spot test
+### Spot test
 
 For spot test analysis, liquid cell cultures were adjusted to cell density of OD600 1.0. Serial dilutions of the cells were spotted onto solid YES or YE glycerol media. Images were captured using the Bio-Rad Chemi Doc XRS imaging system and Image Lab software (Bio-Rad).
 
-## Yeast two-hybrid assay
+### Yeast two-hybrid assay
 
 Appropriate DNA fragments were cloned into pGBDU-C1 and pGAD-C1 vectors (James et al., 1996). The S. cerevisiae strain PJ69-4A (James et al., 1996) was used as a host and the transformants were spotted onto solid SD media lacking leucine and uracil for maintenance of the plasmids, and media lacking adenine for the interaction test.
 
-## Immunoblotting
+### Immunoblotting
 
 Cells were fixed in 10% trichloroacetic acid, and crude cell lysates were prepared by breaking with glass beads in a buffer containing 8 M urea, 5% SDS, 40 mM Tris-HCl (pH 6.8), 0.1 mM EDTA, and 2-mercaptoethanol. Proteins were separated on a polyacrylamide gel and transferred onto a polyvinylidene difluoride membrane (Merck-Millipore). Signals were detected with horseradish peroxidase-conjugated secondary antibodies and visualized by ECL (Bio-Rad or Atto). Image data were acquired using the Bio-Rad Chemi Doc XRS imaging system and Image Lab software (Bio-Rad).
 
-## Cell fractionation
+### Cell fractionation
 
 For cell fractionation, cells exponentially growing in YES were pelleted and resuspended in a buffer containing 0.1 M Tris-HCl (pH 9.3) and 10 mM dithiothreitol. After incubation at 30°C for 30 min, cells were harvested and resuspended in sorbitol buffer (1.2 M sorbitol and 20 mM potassium phosphate buffer, pH 7.5). Spheroplasts were prepared by treatment with Zymolyase-100T (Nacalai Tesque) and lysing enzymes from Trichoderma harzianum (Sigma). Spheroplasts were pelleted, rinsed in sorbitol buffer, resuspended in homogenization buffer (0.6 M sorbitol, 20 mM HEPES-KOH, pH 7.4), and homogenized using a glass homogenizer. Cell debris was removed by centrifugation at 1000 g for 10 min, and the mitochondria-rich fraction was collected by centrifugation at 6500 g for 10 min.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 For immunoprecipitation, cells were collected by centrifugation and disrupted in lysis buffer (50 mM Tris-HCl [pH 7.4], 150 mM NaCl, 0.5% or 1% NP-40, 10% glycerol, 1 mM phenylmethylsulfonyl fluoride, and complete protease inhibitors [Roche]), with glass beads using Micro Smash MS-100 (Tomy). Anti-FLAG M2 beads (Sigma) and GFP-Trap beads (Chromotek) were used to immunoprecipitate FLAG- and GFP-tagged proteins, respectively.
 
-## Microscopy
+### Microscopy
 
 Fluorescence microscopic analysis was conducted using the IX73 microscopy system (Olympus). Images were captured with the cooled charge-coupled device camera EXi Blue (QImaging) and processed using MetaMorph software (Molecular Devices) and Adobe Photoshop (Adobe Systems). At least 200 cells were analyzed in each condition.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Proteins co-purified with the 80 aa C-terminal region of Atg43 tagged with FLAG were analyzed by mass spectrometry using a nano-flow LC (Eksigent nanoLC 415) coupled with tandem mass spectrometer (TripleTOF 5600+, Sciex). Cells grown in YES were subjected to cell fractionation. Anti-FLAG immunoprecipitation was conducted for the mitochondrial fraction. Immunoprecipitants were subjected to tube-gel digestion with trypsin after reduction and alkylation using dithiothreitol and iodoacetamide, respectively, and then subjected to mass spectrometric analysis. Protein identification was conducted using the Mascot search engine (version 2.6) against the reference database of S. pombe (strain 972/ATCC 24843, SwissProt, downloaded April 3, 2018).

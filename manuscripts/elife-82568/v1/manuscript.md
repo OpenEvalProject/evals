@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01y2jtd41 Department of Neuroscience, University of Wisconsin-Madison Madison United States
-2. https://ror.org/006w34k90 Howard Hughes Medical Institute Madison United States
+1. Department of Neuroscience, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+2. Howard Hughes Medical Institute Madison United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
@@ -35,25 +35,69 @@ We reiterate that the low rate of SV protein egress from the soma, once neurons 
 
 ## Results
 
-## Using RUSH to study egress of SV proteins from the soma of cultured neurons
+### Using RUSH to study egress of SV proteins from the soma of cultured neurons
 
 We took advantage of the retention using selective hooks (RUSH) system to study the sorting itinerary of newly synthesized SV proteins (Figure 1A; Boncompain et al., 2012). In the RUSH system, proteins of interest are retained in the ER and released upon addition of the small molecule, biotin. The ability to synchronize protein release from the ER makes it possible to observe their trek to their target destination. In our experiments, retention of the SV proteins, SYT1 and SYB2, was accomplished by appending a streptavidin-binding peptide (SBP) to the intravesicular end of each protein; translocation of the amino-terminus of SYT1 into the ER was aided by the addition of a pre-prolactin leader sequence (Figure 1A and B). The tagged proteins bind to the co-expressed streptavidin ”hook”, which is localized to the ER by a retention signal (Lys·Asp·Glu·Leu; KDEL), thus retaining them. The addition of biotin displaces the SBP and allows natural egress to occur. Each cargo also includes a HaloTag that was used for visualization.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig1-v1.jpg)
+
+**Figure 1.:** (A) A cartoon of RUSH; pre- and post-biotin conditions are shown. (B) Schematic of the streptavidin hook, and SYT1 and SYB2 reporter RUSH constructs: BiP, a signal peptide that drives translocation into the ER; FLAG, provides a means to detect each construct; SBP, streptavidin-binding peptide; Ppl, a pre-prolactin leader sequence to translocate the SBP into the endoplasmic reticulum (ER). In all cases the reporter is a HaloTag. (C) Representative super-resolution fluorescent live-cell MAX projection images from rat neurons at 15 days in vitro (DIV). Images of SYT1 reporter immediately after biotin addition with enlarged insets to detail the time course of release. Inset scale bar is 10 µm in panels (C–D). Since SYT1 and SYB2 behaved similarly, only SYT1 images are shown in panels (C–F). (D) Image of a neuron, 30 min after biotin addition, expressing the streptavidin hook, SYT1 reporter, and ER-targeted GFP (GFP-KDEL). Live-cell labeling with an anti-pan-neurofascin antibody was used to identify the axon initial segment (AIS; arrow); dendrites were identified by morphology and because they lacked an AIS. SYT1 was labeled with JF549 HaloTag ligand, and kymographs of this reporter, along with GFP-KDEL, were generated from the regions indicated by dashed boxes (20 µm long). Kymographs from a proximal dendrite (E) and proximal axon (F) are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Super-resolution, fixed-cell optical sections of 15 days in vitro (DIV) rat hippocampal neurons expressing the SYT1 reporter and endoplasmic reticulum (ER)-targeted GFP (GFP-KDEL), detailing the movement of the SYT1 reporter from the ER to the Golgi after biotin addition (0, 10, 20, and 30 min), as indicated. Scale bars represent 10 µm. (E, F) Quantification of overlap between the SYT1 reporter and ER (GFP-KDEL) or cis-Golgi (α-GM130 antibody) markers, respectively, over time; the median is indicated. A two-way ANOVA (p<0.0001) and subsequent Šídák’s multiple comparisons test was run to compare the Pearson’s coefficient between timepoints for the ER: p0 min vs. 10 min=0.99, p0 min vs. 20 min >0.99, p0 min vs. 30 min=0.98, p10 min vs. 20 min=0.97, p10 min vs. 30 min=0.80, p20 min vs. 30 min >0.99, and cis-Golgi: p0 min vs. 10 min=0.90, p0 min vs. 20 min=0.41, p0 min vs. 30 min=0.047, p10 min vs. 20 min=0.97, p10 min vs. 30 min=0.44, p20 min vs. 30 min=0.94.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Super-resolution, fixed-cell optical section of 14 days in vitro (DIV) rat hippocampal neurons expressing the SYB2 reporter and endoplasmic reticulum (ER)-targeted GFP (GFP-KDEL), indicating that the SYB2 reporter is retained in the ER prior to biotin addition. Scale bars represent 10 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Super-resolution, fixed-cell optical sections of 15 days in vitro (DIV) rat hippocampal neurons expressing the SYT1 reporter, as visualized by the JF549 HaloTag ligand, and stained for α-synaptophysin (α-SYP) to confirm proper targeting to synapses. (B) Same as panel (A), but for the SYB2 reporter. Note that all neurons were stained for SYP, but only a few cells expressed the SYT1 or SYB2 reporter. Arrows denote colocalization. Scale bars represent 5 µm. (C) A Mander’s coefficient was calculated for native SYT1 (α-SYT1) or transduced SYT1 reporter, as visualized by the JF549 HaloTag ligand, overlapping with native SYP (α-SYP). A Kruskal-Wallis test (p=0.0043) and subsequent Dunn’s multiple comparisons test were conducted to compare the localization of the transduced reporter at various concentrations to that of the native protein (p0.1x SYT1 rep = 0.44, p1x SYT1 rep = 0.53, p10x SYT1 rep = 0.30). (D) Same as panel (C), but for SYB2. A one-way ANOVA (p=0.0083) and subsequent Dunnett’s multiple comparisons post-test were conducted comparing the localization of the transduced reporter to the native protein (p0.1x SYB2 rep = 0.99, p1x SYB2 rep = 0.17, p10x SYB2 rep = 0.013). In all cases, error bars represent the mean with 95% confidence intervals.
 
 It is known that overexpression can cause SV proteins to mislocalize to other compartments, especially the PM (Pennuto et al., 2003). To mitigate this confound, the viruses used to express SYT1 and SYB2 were carefully titrated to achieve a sparse transduction such that only a select few neurons were expressing minimal levels of the tagged protein. To further ensure low levels of expression, cells that had lower than average fluorescence (as compared to other transduced cells on the coverslip) were selected for imaging. Within this low-expression paradigm, live-cell imaging and immunocytochemistry (ICC) confirmed the localization of the SV reporter proteins within the ER prior to biotin-triggered release, and then with the Golgi and eventual endpoint targeting to synapses following release (Figure 1C, Figure 1—figure supplements 1–3).
 
 With the temporal control afforded by this assay, we can designate an exact starting position and time of release in the cell, and record trafficking events immediately upon exit from the Golgi, approximately 20–30 min after biotin addition. This is a key point, because without defining a start time and location of release, we cannot know if SV cargoes were trafficked through dendrites on their way to axons. To definitively identify axons, we used an extracellular pan-neurofascin antibody to label the axon initial segment of live neurons (Figure 1D). We also expressed an ER-targeted GFP (GFP-KDEL) to determine whether transport vesicles were post-ER organelles, as indicated by the absence of this marker (Figure 1D). Upon release of ER-tethered SYT1, we observed little to no transport activity in proximal dendrites (defined as the first 20 µm of the neurite) as shown by the lack of diagonal lines in the kymograph (Figure 1E); however, there was noticeable movement of tagged SYT1 as it began to egress from the soma directly into axons in an anterograde direction, as represented in the kymograph by diagonal lines with a negative slope (Figure 1F). These initial findings contradict the idea of SV proteins being trafficked with low selectivity into axons and dendrites (Bentley and Banker, 2016; Nabb and Bentley, 2022; Sampo et al., 2003), and thus warranted a deeper examination. We highlight that the majority of anterograde-moving vesicles observed in proximal axons did not contain the co-expressed ER-targeted GFP (Figure 1F), confirming that these are post-ER organelles. In contrast, the stationary SYT1 signal in proximal dendrites colocalized with ER-targeted GFP (Figure 1E), indicating the observed signal is protein in the ER, rather than post-Golgi transport vesicles. Taken together, the lack of movement in proximal dendrites, and the robust anterograde trafficking in axons, suggest the existence of a selective and specific pathway that sorts SYT1 to presynaptic boutons.
 
-## A direct and selective axonal transport pathway for SYT1 and SYB2
+### A direct and selective axonal transport pathway for SYT1 and SYB2
 
 To explore this seemingly novel SV protein trafficking pathway, we expanded our experiments to include a second SV protein, SYB2, and to analyze transport in both proximal and distal regions of both axons and dendrites. Proximal regions were defined as the first 20 µm of a neurite as it emerges from the cell body. Distal regions were defined as a secondary branching of a dendrite or, for axons, a distance of ~150 µm from the soma, which is beyond the axon initial segment (Figure 2A). The distal regions were imaged approximately 5 min after the proximal regions to allow time for transport vesicles to make their way farther down neurites (at an average transport rate of 1 µm/s, each transport vesicle has the potential to travel ~300 µm from the soma during this time period). With these selection criteria, transport was quantitatively assessed by generating and analyzing kymographs of post-Golgi vesicles carrying the SV protein of interest (Figure 2—figure supplement 1). As was first seen in Figure 1, we again observed robust transport of the SYT1 reporter in proximal axons and extended these observations to distal axons; proximal and distal dendrites had little to no detectable trafficking of SYT1-containing transport vesicles (Figure 2B–D, Figure 2—figure supplement 2A). This trend was also observed for the SYB2 reporter, allowing us to generalize our findings to topologically distinct SV proteins that are transported by different kinesin motors (Figure 2E–G, Figure 2—figure supplement 2B). Furthermore, all neurites were observed for the exact same duration, so the volume of transport activity in each region can be directly compared, further supporting the idea that there is minimal transport of SV proteins in dendrites. Of the transport vesicles observed, both SYT1 and SYB2 reporters were preferentially transported in the anterograde direction in axons (Figure 2H and I). Again, few, if any, puncta were observed in dendrites (Figure 2J and K). We note that SYB2 was transported more slowly in the proximal axon, which encompasses the AIS, as compared to the distal axon; SYT1 transport did not slow down in the AIS (Figure 2—figure supplement 3; Song et al., 2009). These data confirm a general trafficking pathway that—in contrast to previous models (Nabb and Bentley, 2022; Sampo et al., 2003)—does not include significant flux through dendrites. Rather, our findings establish a transport pathway that selectively and specifically routes SV proteins to axons.
 
-## A direct and selective transport pathway for dendritic cargo
+![Figure 2.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig2-v1.jpg)
+
+**Figure 2.:** (A) Illustration outlining the proximal and distal regions that were imaged for each neuron. (B) Representative kymographs from the proximal dendrite of 14–16 days in vitro (DIV) rat hippocampal neurons after release of the tethered SYT1 reporter, revealing an absence of SYT1-bearing mobile organelles. For panels (B–G), all data were quantified and plotted immediately below the kymographs; the number of cells and transport vesicles are also indicated. (C, D) Representative kymographs from proximal and distal axons showing robust movement of the released SYT1 reporter, suggesting a direct axonal trafficking pathway. (E–G) Same as for panels (B–D) but using neurons expressing the SYB2 reporter. Displacement of transport vesicles containing the SYT1 (H) or SYB2 reporters (I) is plotted in the anterograde (positive) or retrograde (negative) direction with respect to the soma; arrowheads indicate median values. Both synaptic vesicle (SV) proteins are primarily trafficked in the anterograde direction. Mean values and descriptive statistics are found in Figure 2—source data 1A. (J) Flux of the SYT1-bearing transport vesicles, in the indicated compartments, are plotted as floating bars (min to max), line indicates median value. Data were collected from seven cells. A one-way ANOVA with multiple comparisons was run; p-values were as follows: proximal axon vs. distal axon = 0.56; proximal axon vs. proximal dendrite = 0.0021; proximal axon vs. distal dendrite = 0.0047; distal axon vs. proximal dendrite = 0.046; distal axon vs. distal dendrite = 0.091; proximal dendrite vs. distal dendrite = 0.99. (K) Same as panel (J), but for the SYB2 reporter. Data were collected from seven cells. Statistical tests were run as in panel (J) and p-values were as follows: proximal axon vs. distal axon = 0.998; proximal axon vs. proximal dendrite = 0.058; proximal axon vs. distal dendrite = 0.013; distal axon vs. proximal dendrite = 0.018; distal axon vs. distal dendrite = 0.0088; proximal dendrite vs. distal dendrite = 0.907. Mean values and descriptive statistics are found in Figure 2—source data 1B.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A representative kymograph of the SYT1 reporter in proximal axons. The SYT1 channel, visualized by HaloTag and the JF549 ligand, and the endoplasmic reticulum (ER)-targeted GFP (GFP-KDEL) channel, are shown. (B) Tracks from the SYT1 and GFP-KDEL kymographs in panel (A) are shown. (C) The movement of vesicles harboring the SYT1 reporter were analyzed; vesicles that also carried GFP-KDEL were excluded.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Few vesicles were observed in distal dendrites, despite the fact that the total number of cells, time, and distance observed was the same as for axons, where robust transport activity was detected.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The speed of anterograde-moving transport vesicles carrying the SYB2 (A) or SYT1 (B) reporters in both proximal and distal axons, where the proximal axon includes the axon initial segment. SYB2 transport was significantly slower in the proximal (0.26±0.2 µm/s) as compared to the distal axon (0.52±0.3 µm/s) (p=0.0091); SYT1 transport speed was the same in both regions (0.49±0.4 µm/s vs. 0.85±0.9 µm/s; p=0.28). (C) Within the proximal axon, SYB2-carrying transport vesicles moved more slowly (p=0.0041) than SYT1 vesicles. No differences in speed were observed between the two reporters in distal axons (p=0.77) (D). When transport speeds in proximal and distal axons were pooled for each reporter, SYB2 vesicles were transported more slowly than SYT1 vesicles (p=0.032). (E). All data sets were analyzed using the Mann-Whitney test and plotted as the mean with 95% confidence intervals.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) A schematic of the bicistronic pIRES vector that was used to express the transferrin receptor (TfR) reporter and endoplasmic reticulum (ER)-targeted streptavidin hook in the same cell: STIM1 SP, signal peptide from STIM1 to translocate the streptavidin into the ER; IRES, an internal ribosome entry site to allow cap-independent translation of the hook and reporter. EGFP was used to visualize TfR. (B) An illustration outlining proximal and distal axons, and proximal and distal dendrites that were imaged for analysis. These proximal and distal regions follow the same definitions described for Figure 2. (C) The number of TfR-bearing transport vesicles observed in a cell per minute in each region was plotted as floating bars (min to max; line indicates median value) for proximal axons (1.50±1.6 puncta), distal axons (0.667±0.82 puncta), proximal dendrites (6.33±3.5 puncta), and distal dendrites (5.67±2.3 puncta). Data were collected from six cells from five litters. A one-way ANOVA with multiple comparisons was run, and p-values were as follows: proximal axon vs. distal axon = 0.79; proximal axon vs. proximal dendrite = 0.0064; proximal axon vs. distal dendrite = 0.015; distal axon vs. proximal dendrite = 0.0022; distal axon vs. distal dendrite = 0.0060; proximal dendrite vs. distal dendrite = 0.79. All kymographs were 20 µm in length. (D) Representative kymographs from rat hippocampal neurons (14–16 days in vitro [DIV]), after release of the tethered TfR reporter, for each compartment are shown, with these data quantified and plotted immediately below. The number of cells and transport vesicles are also indicated. Kymographs, and the corresponding displacement graphs, from proximal and distal dendrites demonstrate transport of the TfR reporter; in contrast, axons lacked TfR transport. (E) Displacement of transport vesicles containing the TfR reporter were plotted in the anterograde (positive) or retrograde (negative) direction with respect to the soma for each neurite; arrowheads indicate median values. (F) A kymograph of the proximal axon where a white dashed box indicates the pre-axonal exclusion zone (PAEZ). Below, the total number of transport vesicles that remained in the PAEZ (1.00±0 puncta) or passed into the AIS (2.33±1.5 puncta) are plotted for each cell; means are indicated. Cells that lack of transport vesicles within the given region are represented by closed black circles within the gray box at 0 on the y-axis.
+
+### A direct and selective transport pathway for dendritic cargo
 
 To increase rigor, we conducted control experiments to determine whether our assay can, in fact, accurately identify dendritic transport. For this, we chose the transferrin receptor (TfR), a protein localized to dendrites (Burack et al., 2000; Li et al., 2016a; West et al., 1997a; Farías et al., 2015), and expressed it in cells with a bicistronic hook-reporter RUSH plasmid (Figure 2—figure supplement 4A; Chen et al., 2017). Using the same criteria as Figure 2 to select proximal and distal regions (Figure 2—figure supplement 4B), we observed that TfR was overwhelmingly trafficked to dendrites without passing through axons (Figure 2—figure supplement 4C–F), even when purposefully overexpressed. Indeed, there was some difficulty visualizing this construct, so it was expressed at higher levels. We note that there was a moderate population of non-moving TfR puncta observed in our experiments. We also note that the TfR reporter was subject to minor leakage, so some initial egress was missed. Hence, the non-moving puncta may represent the steady-state accumulation of this protein at its normal destination. Regardless, the majority of transport vesicles were found to be present in dendrites. These results demonstrate that this assay can, indeed, reveal dendritic targeting, as reported previously (Farías et al., 2015). This observation further validates our findings of direct and specific transport of SYT1 and SYB2 to axons.
 
-## The direct and selective transport of SV proteins is obscured by overexpression
+### The direct and selective transport of SV proteins is obscured by overexpression
 
 As stated in the Introduction, the expression levels of SV proteins can affect their localization; namely, overexpression results in the spillover of these proteins into other compartments, including the PM (Marks et al., 1996; Pennuto et al., 2003). Additionally, catch-and-release assays can cause mislocalization by overwhelming the early secretory pathway upon the bulk release of protein (Adams et al., 2019). Indeed, in agreement with previous studies, when we drastically overexpressed SYT1 via transfection, it spilled over into dendrites and “coated” the PM of all neurites; it also caused the growth of filopodia-like structures in the somatodendritic domain (Figure 3A; Feany et al., 1993b).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig3-v1.jpg)
+
+**Figure 3.:** (A) A super-resolution MAX-projection image of 15 days in vitro (DIV) rat neurons expressing SYT1-HaloTag at high levels, as evidenced by the localization of SYT1-HaloTag in both axons and dendrites, along with the formation of filopodia-like structures in the somatodendritic compartment. The construct is visualized with JF549 HaloTag ligand. The boxed regions were expanded to show that the overexpressed protein accumulates on both the dendritic (i) and axonal (ii) plasma membrane (PM). Scale bar is 5 µm. (B) Graphs comparing the fluorescence intensity of the α-SYT1 antibody at synapses with or without tagged SYT1 reporter at low, intermediate, and high expression levels. We note that here, “x” represents the titer of virus (see Figure 3—figure supplement 1 for comparison of wild type (WT) vs. transduced protein) where 1x is slightly less than endogenous levels; average relative expression levels are shown in panels (B) and (C). Data were plotted as median with 95% confidence intervals and Mann-Whitney tests were run comparing native protein to native and tagged protein for each virus dose (p-value0.1x = 0.36, p-value1x = 0.20, p-value10x = 0.0004). Average relative expression levels are included on the graph. (C) The same as panel (B) but comparing the fluorescence intensity of SYB2 with and without expression of the SYB2 reporter. Data were analyzed as in panel (B) (p-value0.1x = 0.79, p-value1x = 0.17, p-value10x = <0.0001). Data from panels (B) and (C) represent 40 synapses per condition, collected from four total fields of view from two different litters. Mean values and descriptive statistics are found in Figure 3—source data 1. (D) MAX-projection images of 14–16 DIV rat neurons expressing the SYT1 reporter showing the transduction coverage achieved with each viral dose. Scale bar represents 150 µm. Images were adjusted individually, with linear brightness and contrast, to the brightest area of the image to aid in visualization. (E) The same as panel (D), but for the SYB2 reporter. Super-resolution optical sections of the SYT1 (F) and SYB2 (G) reporters at low, intermediate, and high expression levels, in axons and dendrites, demonstrate that as expression levels increase, SV proteins spillover into dendrites. Scale bar represents 2.5 µm. Corresponding axon and dendrite images, at each expression level, were adjusted with the same linear brightness and contrast settings.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) An immunoblot of 15 days in vitro (DIV) rat neurons expressing the SYT1 reporter at low, intermediate, and high levels using virus. Probing with an α-SYT1 antibody reveals that at the 10x viral dose, the exogenously expressed SYT1 reporter is present at much higher levels than the endogenous protein, confirming high expression. (B) Likewise, an immunoblot of rat neurons expressing the SYB2 reporter at various levels was probed with an α-SYB2 antibody to reveal the degree of overexpression compared to the native protein. Lower expression levels of SYT1 and SYB2 escaped detection due to the sparse transduction.
 
 To formally address these concerns, we examined the effects of overexpression of the SYT1 and SYB2 reporters. We repeated the minimal expression paradigm used above (0.1x viral titer), and compared the subcellular distributions of these reporters when expressed at intermediate (1x viral titer) and high (10x viral titer) levels. Western blot analysis confirmed the overexpression of each protein, as compared to their endogenous counterparts (Figure 3—figure supplement 1); at lower virus titers, drastically fewer cells were transduced, so the exogenously expressed proteins escaped detection. We employed a quantitative ICC approach where the fluorescence intensity of antibodies against SYT1 or SYB2 were compared at synapses containing tagged and native protein, or just native protein. This analysis revealed that the low, intermediate, and high expression levels resulted in 1.14-, 1.22-, and 2.48-fold increases over the wild type (WT) SYT1 levels at the synapse, respectively, and 0.93-, 1.17-, and 1.87-fold changes for SYB2 (Figure 3B and C). In addition to changes in expression at individual synapses, increasing virus titer also resulted in increased transduction coverage (Figure 3D and E).
 
@@ -61,9 +105,17 @@ In addition to the relatively modest overexpression observed at individual synap
 
 The spillover of exogenously expressed SV proteins into dendrites at high, and even intermediate expression levels, at steady state (Figure 3A, F and G) is likely due to indiscriminate transport when expression levels are not carefully controlled. Therefore, it is imperative to use a low-expression paradigm to study the native trafficking pathway utilized by these proteins. Indeed, a mere doubling of endogenous protein at synapses corresponded with the widespread mistargeting of SV proteins to dendrites and the PM. We note that a similar trend of protein mislocalization at high expression levels was observed using a transfection approach (Figure 3A); only when we ‘diluted’ the plasmid of interest, by mixing and co-transfecting it with a dummy plasmid, were we able to minimize overexpression artifacts (note: this approach was used in Figure 5, discussed below). Simply reducing the total amount of the plasmid of interest for transfection was not sufficient to mitigate the rampant mistargeting. Taken together, these data demonstrate the extent to which overexpression can cause SV proteins to be mistargeted, at moderately low levels of overexpression, to ultimately obscure their native transport pathway. Additionally, these results help to reconcile the discrepancies between the current study and previous studies reporting the trafficking of proteins, like SYB2, in both axons and dendrites (Nabb and Bentley, 2022; Sampo et al., 2003).
 
-## Molecular determinants that underlie the polarized transport of SYT1 to axons
+### Molecular determinants that underlie the polarized transport of SYT1 to axons
 
 Next, we sought to uncover how SYT1 is selectively sorted to axons. Although sorting motifs are not yet defined for this protein, it is both palmitoylated (Chapman et al., 1996; Heindel et al., 2003) and glycosylated (Perin et al., 1991), and both modifications have been proposed to play roles in its trafficking (Kang et al., 2004; Han et al., 2004; Atiya-Nasagi et al., 2005; but see also Kwon and Chapman, 2012). We addressed this idea in our transport assay by mutating all five putative palmitoylation sites, and all three glycosylation sites, of SYT1 to prevent these modifications (Figure 4A). Hereafter, this mutant is referred to as the SYT1 palmitoylation/glycosylation mutant, or SYT1-PGM. In parallel, we assessed the role of the tandem C2-domains of SYT1, which sense Ca2+ and interact with a variety of effectors, in targeting this SV protein to nerve terminals. We note that deletion of both C2-domains caused the truncated protein to be marooned on the PM (Courtney et al., 2019). However, how this deletion mutant, termed SYT1ΔC2AB, is sorted and transported remained unknown, so we characterized it using the RUSH assay (Figure 4A). These experiments were conducted in a SYT1 knockout background to avoid potential homomeric interactions with endogenous SYT1 (Brose et al., 1992; Courtney et al., 2021; Perin et al., 1991), wherein mutant protein could “piggyback” onto the native protein in the secretory pathway and obscure potential transport defects associated with the mutant protein (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig4-v1.jpg)
+
+**Figure 4.:** (A) Illustration of retention using selective hooks (RUSH) reporters used for these experiments: wild type (WT) SYT1 reporter, the SYT1 palmitoylation and glycosylation mutant (SYT1-PGM), and SYT1 truncated after position 140 (SYT1ΔC2AB). Each construct has a HaloTag for visualization. (B) ICC confirms the knockout of endogenous SYT1. For WT and knockout conditions, identical laser and gain settings were used. Scale bar represents 20 µm. (C–E) The endpoint localization of WT SYT1, SYT1-PGM, and SYT1ΔC2AB was visualized by labeling the appended HaloTag with JF549. The boxed regions were expanded and are shown below each panel to better reveal the localization of each construct in axons (i) and dendrites (ii), as compared to the α-SYP ICC signals. Note that all neurons were immunostained for SYP, but only a handful of cells expressed each SYT1 construct. ICC images were adjusted to the brightest area of the image to aid in visualization. All settings were kept consistent between corresponding axon/dendrite insets for a given cell and condition, and all images (B–E) were adjusted with linear brightness and contrast. Representative kymographs from proximal axons showing robust anterograde movement of the released SYT1 (F), SYT1-PGM (G), and SYT1ΔC2AB (H) reporters as compared to dendrites, demonstrating selective trafficking of WT and SYT1-PGM, but not SYT1∆C2AB, to axons. (I) The number of transport vesicles was plotted for each construct as the mean with 95% CI. A one-way ANOVA was run (p=0.0008), and a Šídák’s multiple comparisons test was used to compare transport in axons and dendrites of all three RUSH reporters. Significant differences in axonal vs. dendritic transport were observed for WT SYT1 (p=0.0097) and SYT-PGM (p=0.036), indicating polarized trafficking. In contrast, the transport of SYT1∆C2AB was not significantly polarized (p=0.49). A complete list of multiple comparisons results can be found in Figure 4—source data 1. Data were collected for 10 cells (SYT1), 8 cells (SYT1-PGM), or 11 cells (SYT1ΔC2AB), from four litters. Mean values and descriptive statistics are found in Figure 4—source data 2. (J) The movement of each transport vesicle categorized as anterograde, retrograde, retrograde with pause/reverse, anterograde with pause/reverse, stationary (1<5 µm), or stationary (<1 µm) and plotted as a fraction of the total number of transport vesicles observed for each compartment, for each construct. The total number of (n) transport vesicles from (N) cells are indicated. Exact fractions can be found in Figure 4—source data 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Illustration of the SYT1ΔC2AB reporter (ΔC2AB), inserted into the plasma membrane (PM), with its HaloTag exposed to the extracellular space. The reporter construct is incubated with JF549i non-permeant HaloTag ligand, shown in cyan, to selectively label tagged protein at the PM. (B) Representative live-cell MAX projection of 16 days in vitro (DIV) mouse hippocampal neurons expressing the SYT1 ΔC2AB reporter, as visualized by JF549i HaloTag ligand, confirmed that the truncated protein is present on the PM. Scale bar represents 20 µm.
 
 Consistent with the experiments above (Figure 1, Figure 2, and Figure 1—figure supplement 3), the endpoint targeting of each reporter construct was established at low expression levels. The full-length SYT1 reporter was included as a positive control and was correctly targeted to synapses, as confirmed by its colocalization with the synaptic marker, synaptophysin (SYP) (Figure 4C). The SYT1-PGM construct accumulated in the soma as well as the axonal compartment, where it was colocalized with SYP; it was virtually undetectable in dendrites, similar to our findings using the WT SYT1 reporter (Figure 4D). The truncated SYT1 protein, SYT1ΔC2AB, was present throughout axons, likely on the PM (Figure 4—figure supplement 1; Courtney et al., 2019), and was also observed in the somatodendritic compartment, indicating mistargeting of the protein (Figure 4E).
 
@@ -71,11 +123,23 @@ Next, we studied the transport of the PGM and ∆C2AB mutants using the RUSH sys
 
 In knockout neurons, the WT SYT1 reporter was—again—trafficked in a polarized manner to axons (Figure 4F and I). In contrast to previous studies (Han et al., 2004; Kang et al., 2004; Atiya-Nasagi et al., 2005), but consistent with our findings under steady state, SYT1-PGM was selectively trafficked to axons, consistent with our observations of the WT protein (Figure 4G and I). Conversely, the SYT1ΔC2AB construct entered axons and dendrites at similar rates, with a non-significant trend toward preferential entrance into axons (p=0.49) (Figure 4H and I). Interestingly, the C2AB deletion mutant resulted in increased dendritic transport as compared to the WT protein, while axonal transport remained unchanged, indicating these domains might play a role in targeting SYT1 to different subsets of transport vesicles with distinct destinations. Next, the movements of each transport vesicle in axons and dendrites, for each of the three constructs, were quantified (Figure 4J and Figure 4—source data 3). For all three constructs, the majority of transport vesicles proceeded in an anterograde direction in axons. In dendrites, the majority of mobile puncta carrying SYT1 and SYT1ΔC2AB moved in a retrograde direction, though a considerable fraction of SYT1ΔC2AB vesicles were stationary. These mobile vesicles either represent protein that is moving from the dendritic ER to toward the soma, or are transport vesicles that egressed prior to imaging and are moving in a retrograde direction at the time the imaging was conducted. Interestingly, SYT1-PGM overwhelmingly moved in an anterograde direction in dendrites under the non-equilibrium conditions of these experiments. However, the total number of transport vesicles carrying SYT1 and SYT1-PGM in dendrites was relatively low, so the observed differences should be interpreted with caution. Taken together, these experiments reveal that the tandem C2-domains play a role in the proper targeting of SYT1. In contrast, palmitoylation and glycosylation were dispensable for selective targeting of SYT1 to axons.
 
-## Transport vesicles deliver SV proteins to the presynaptic PM, creating a depot for SV biogenesis
+### Transport vesicles deliver SV proteins to the presynaptic PM, creating a depot for SV biogenesis
 
 Finally, we sought to visualize the immediate destination of newly delivered SV proteins after they are sorted to axons. Previous studies have established that SVs are assembled at the presynapse (Buckley et al., 2000; Nakata et al., 1998; Okada et al., 1995; West et al., 1997b), but how they are first generated in that compartment remains unknown. It has long been hypothesized that SV proteins, prior to their incorporation onto nascent SVs, are first delivered to the presynaptic PM as the final destination of their maiden voyage to synapses (Buckley et al., 2000; Feany and Buckley, 1993a; Hannah et al., 1999; Régnier-Vigouroux et al., 1991). However, this idea stems from experiments done in PC12 cells and CHO fibroblasts, which do not contain SVs. Since some SYT1 and SYB2 molecules are present on the PM at steady state (Sankaranarayanan and Ryan, 2000), and overexpressed protein also accumulates on the PM (Figure 3), it is reasonable to postulate that SV precursors are initially trafficked through the PM of mammalian neurons as a necessary part of their life cycle.
 
 We addressed this longstanding question by developing a novel HaloTag labeling approach to conduct pulse-chase experiments using permeant and non-permeant Janelia Fluor (JF) HaloTag ligands (HTL) (Grimm et al., 2015). To assess whether these SV proteins are delivered directly to the presynaptic PM, we appended a HaloTag to the intravesicular terminus of SYT1 and SYB2 (termed HaloTag-SYT1 and SYB2-HaloTag) so that the tag is exposed to the outside of the cell when the SV protein is incorporated into the PM (Figure 5A). These constructs were sparsely co-transfected with an SYP-GFP fusion protein to mark synapses. The ratios of SYT1, or SYB2, to the SYP plasmid in these co-transfection experiments were determined experimentally so that the HaloTagged protein could be visualized, but was minimally expressed via concurrent dilution with the SYP plasmid. Immediately after co-transfection, neurons were grown with or without JF549i, a non-permeant fluorescent HTL, in the culture media. Impermeability of the ligand, under our experimental conditions, was confirmed empirically (Figure 5—figure supplement 1). This HTL labeled any copies of tagged SYT1 or SYB2 that passed through the PM (Xie et al., 2017). If SYT1 and SYB2 were delivered to a presynaptic sorting compartment, rather than the PM, they would not be labeled with the non-permeant HTL (Figure 5B). After 6 days the degree of labeling with JF549i was assessed via imaging. Then, the neurons were challenged using a permeant ligand, JF549, which has nearly the same structure, and fluorescence properties, as JF549i. Subsequent incubation with the permeant HTL labeled, and hence revealed, any remaining unlabeled protein that did not pass through the PM. This labeling scheme is illustrated in Figure 5B and C.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig5-v1.jpg)
+
+**Figure 5.:** (A) Illustration of a generic integral membrane protein (representing SYT1 and SYB2) with a luminal HaloTag to allow for selective labeling at the PM. (B) Schematic of the HaloTag ligand (HTL) labeling protocol, shown within a nerve terminal, with the non-permeant ligand incubation step to label surface protein. If SYT1 and SYB2 are first delivered to an internal sorting compartment (i), rather than the PM (ii) prior to SV or SV-intermediate formation, they will not pass through the PM and so will not be labeled by the non-permeant ligand (green). Incubation with permeant ligand labels the remaining tagged protein and the resulting change in fluorescence denotes the efficiency of PM delivery. The signal from labeling with the non-permeant ligand was referred to as Finitial, where the unlabeled control coverslips still yielded a small background signal, producing a reproducible non-zero value that allowed us to calculate ratios. The subsequent signal after labeling with permeant ligand was called Ffinal. This labeling step included unbound ligand which, while weak and diffuse, results in a slight increase in the background signal. To counteract this, ROIs were drawn to include only the fluorescence intensity within the synapse. (C) Timeline for the transfection and labeling protocols. Briefly, cultured rat hippocampal neurons were transduced with TeTx-LC virus on 5 days in vitro (DIV) and then co-transfected on 9 DIV with HaloTag-SYT1 or SYB2-HaloTag, and SYP-GFP; the GFP construct was included to mark synapses and ‘dilute’ the HaloTag plasmid to achieve lower expression levels. Half of the coverslips were incubated in non-permeant HTL (JF549i) immediately after co-transfection to label any tagged protein that was delivered to the PM. Six days later (15 DIV) neurons were rinsed, imaged, and incubated with permeant ligand (JF549), to label any remaining tagged protein, and imaged again. (D) Immunoblot of cells transduced with a virus expressing TeTx-LC, resulting in the cleavage of endogenous SYB2 and the inhibition of SV recycling. We note that the SYB2 fusion protein used in these experiments harbored two point mutations to render it resistant to TeTx-LC (see Methods). Blots were probed for endogenous SYB2, SYT1, and SYP, with a TCE loading control. The normalized (Ffinal/Finitial) change in fluorescence intensity of the SYT1 (E) and SYB2 (F) fusion proteins upon adding permeant fluorescent ligand to cells grown with or without non-permeant ligand for 6 days; mean values with 95% CI are plotted to the right of each scatter plot. Data were analyzed with unpaired t-tests for both proteins; p-values = <0.0001. Panel (E) contains data from 156 synapses cultured in the presence of JF549i, and 136 synapses grown in the absence of this HTL. Data for both groups were from 8 fields of view from 4 different litters. Panel (F) contains data from 107 synapses cultured in the presence of JF549i, and 79 synapses grown in the absence of this HTL. Data for both groups were from five fields of view from three different litters. Mean values and descriptive statistics for SYT1 and SYB2 can be found in Figure 5—source data 1. Panels (G, H) are representative images of SYP-GFP to mark synapses (dashed circles), and the corresponding HaloTag-SYT1 signals under the indicated conditions; in the bottom panels the JF549 ligand was not washed away, resulting in a higher background. For all conditions, identical laser and gain settings were used. Any linear brightness and contrast adjustments were applied to all conditions. (I, J) Same as panels (G) and (H), but for SYB2-HaloTag.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Illustration of SYT1 with a C-terminal HaloTag and (B) the time course of ligand addition during the pulse-chase assay. By appending the HaloTag to the cytoplasmic domain, the tag is not exposed to the extracellular milieu, and should not be labeled with non-permeant JF549i ligand. (C) Timeline for transfecting and labeling neurons. This scheme is the same as the experiment conducted in Figure 5, but with the HaloTag oriented inside the cell when SYT1 is on the plasma membrane (PM). (D) Plots of the change in fluorescence (Ffinal/Finitial) upon adding a permeant fluorescent ligand for cells grown with or without non-permeant ligand for 6 or 8 days. Median values, with 95% CI, are shown. These values were: 6 days with (27.87, [24.37, 30.79]) and without JF549i (27.11, [23.42, 30.37]), or 8 days with (39.40, [28.87, 50.64]) and without JF549i (28.27, [24.41, 40.95]). A Mann-Whitney test was run for both 6- (p=0.26) and 8-day (p=0.89) incubation conditions. No difference in Ffinal/Finitial between cultures grown with and without the non-permeant ligand was observed. Thus, incubation with the JF549i ligand did not result in any significant labeling of the cytoplasmic HaloTag and is non-permeant under these experimental conditions. Data were collected as follows, with synapse, fields of view, and number of litters listed in order: 6-day incubation with JF549i: 125, 3, 1; 6-day incubation without JF549i: 68, 4, 1; 8-day incubation with JF549i: 60, 3, 1; 8-day incubation without JF549i: 51, 3, 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82568/elife-82568-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Miniature EPSC frequency in 14–16 days in vitro (DIV) cultured mouse hippocampal neurons with (0.19±0.11 Hz) and without (3.9±2.0 Hz) virus that expresses TeTx-LC. Spontaneous release was disrupted in cultures expressing TeTx-LC (p<0.0001), consistent with the SYB2 KO (Schoch et al., 2001). Data were analyzed with a Mann-Whitney test and plotted as median with 95% CI. Data were recorded from one litter and 12 cells per condition. (B) Representative traces from wild type (WT) cells (top trace) and cells expressing TeTx-LC (bottom trace).
 
 Synaptic activity in our cultures, and hence the recycling of SVs, could contribute to SV proteins passing through the PM. To minimize this potential confound, the light chain of tetanus toxin (TeTx-LC) was co-expressed, using lentivirus, to cleave endogenous SYB2 and inhibit synaptic activity and SV recycling (Figure 5D; Figure 5—figure supplement 2; Bao et al., 2018; Schiavo et al., 1992). The tagged SYB2 construct was mutated at residues 76 and 77 (Q76V and F77W) to make it resistant to this toxin (Schiavo et al., 1992). Cleavage of endogenous SYB2 by TeTx-LC did not affect the expression of other canonical SV proteins (Figure 5D).
 
@@ -99,80 +163,196 @@ A key issue moving forward is to understand the cargo selection process that und
 
 ## Methods
 
-## Cell culture
+### Cell culture
 
 Hippocampal neurons were dissected from pre-natal Sprague-Dawley rats on E18 (Envigo), or post-natal SYT1 conditional knockout floxed mice (Quadros et al., 2017) on P0-P1. Hippocampal tissue was maintained in chilled hibernate A media (BrainBits, HA) during dissection. After dissection, hippocampi were incubated in 0.25% trypsin (Corning, 25-053 CI) for 30 min at 37°C, triturated in Dulbecco’s Modified Eagle Medium (DMEM) (Thermo Fisher Scientific, 11965-118) supplemented with 10% fetal bovine serum (Atlanta Biological, S11550H) plus penicillin-streptomycin (Thermo Fisher Scientific, MT-30-001 CI), to dissociate tissue. Rat neurons were plated on 18 mm coverslips Warner instruments, 64-0734 (CS-18R17) that had been coated with poly-D-lysine (Thermo Fisher Scientific, ICN10269491) for 1 hr at room temperature, at a density of 125,000 cells per coverslip, in supplemented DMEM. Mouse hippocampal neurons were also plated on 18 mm coverslips, but these were coated in poly-D-lysine and mouse laminin (Thermo Fisher Scientific, 23017015) for 2 hr at 37°C. For both rat and mouse neurons, once the cells had settled (<1 hr) DMEM was exchanged for Neurobasal-A Media (NBM) (Thermo Fisher Scientific, 10888-022) supplemented with N21-MAX Media Supplement (R&D Systems, AR008) (Chen et al., 2008), Glutamax (2 mM Gibco, 35050061), and penicillin-streptomycin. Additional supplemented NBM was added every 3–4 days to maintain the health of the cultures.
 
-## Constructs
+### Constructs
 
 For the WT SYT1 (UniProt accession no. P21707) RUSH reporter, a pre-prolactin leader sequence and SBP were appended to the N-terminus, and a HaloTag (Promega, G7711) was fused to the C-terminus, of the SYT1 cDNA (Figure 1B). Each of these moieties, in this and all other constructs, were attached via a flexible GS(GSS)4 linker. For the palmitoylation and glycosylation mutant form of the SYT1 reporter, the palmitoylation sites of SYT1, C74, C75, C77, C79, and C82 were substituted with Ala residues, and the glycosylation sites of SYT1, T15/T16, and N24 were substituted with Ala and Gln residues, respectively, using site-directed mutagenesis (Agilent Technologies, 210518). The truncated form of the SYT1 reporter, SYT1ΔC2AB (a.a. 1–140), was generated in the same manner as the full-length protein, except that the HaloTag was placed at the N-terminus of the SYT1 coding sequence. For the SYB2 (UniProt accession no. P63045) RUSH reporter, the HaloTag and SBP were appended to the C-terminus. For all SYT1 and SYB2 RUSH reporters, the HaloTag and the SBP were added in distinct positions to avoid steric interference between the SBP and the streptavidin hook. The streptavidin hook with an ER retention signal (Lys·Asp·Glu·Leu; KDEL) was made as a separate construct by sub-cloning it from Str-KDEL_neomycin, a gift from F Perez (Paris, France) (Addgene plasmid #65306; RRID:Addgene_65306) (Boncompain et al., 2012), into a pFUGW transfer plasmid (gift from D Baltimore [Pasadena, CA]; Addgene plasmid #14883; http://n2t.net/addgene:14883; RRID:Addgene_14883) (Lois et al., 2002). A FLAG tag (DYKDDDDK) was added to the C-terminus of all RUSH reporter constructs, immediately prior to the stop codon, to compare expression levels between co-expressed proteins. The TfR construct was kindly provided by J Bonifacino (Bethesda, MD) (Chen et al., 2017).
 
 For the pulse-chase studies, a non-RUSH HaloTag-SYT1 construct was generated using the same pre-prolactin leader sequence as above, but now followed by a HaloTag at the N-terminus of SYT1; for control experiments, the HaloTag was instead placed at the C-terminus. A non-RUSH SYB2-HaloTag construct was generated by appending a HaloTag to the C-terminus of the protein; the SYB2 cDNA harbored Q76V and F77W mutations to make it resistant to TeTx-LC. The TeTx-LC construct was subcloned from pGEMTEZ-TeTxLC, a gift from R Axel, J Gogos, and CR Yu (Addgene plasmid # 32640; http://n2t.net/addgene:32640; RRID:Addgene_32640) (Yu et al., 2004) into a pFUGW transfer plasmid (Lois et al., 2002). To mark synapses, a SYP GFP fusion protein (SYP-GFP), with the same flexible GS(GSS)4 linker between the C-terminus of SYP and the GFP moiety, was used. All constructs were generated by overlap extension PCR and subcloned into the backbone using in-fusion cloning (Takara Bio, 638911). Constructs were sequenced fully, and all maxi-preps were re-sequenced prior to use.
 
-## Constructs used in this study
+### Constructs used in this study
 
-## Lentivirus production and use
+### Lentivirus production and use
 
 Relevant constructs were subcloned into a pFUGW transfer plasmid. To make lentiviral expression neuron-specific, the ubiquitin promoter was replaced with a human synapsin I promoter (Kügler et al., 2003). Lentiviral particles were generated via calcium phosphate co-transfection of HEK293T cells (ATCC, CRL-3216; RRID:CVCL_0063) at 30–40% confluency with the pFUGW transfer plasmid and the packaging plasmids, pCD/NL-BH*DDD and pLTR-G. Plasmids pCD/NL-BH*DDD (Addgene plasmid #17531; http://n2t.net/addgene:17531; RRID:Addgene_17531) (Zhang et al., 2004) and pLTR-G (Addgene plasmid #17532; http://n2t.net/addgene:17532; RRID:Addgene_17532) (Reiser et al., 1996) were gifts from J Reiser (Bethesda, MD). HEK293T cells were tested for mycoplasma contamination using the Universal Mycoplasma Detection Kit (ATCC; 30-1012K), validated using Short Tandem Repeat profiling by ATCC (ATCC; 135-XV), and maintained in DMEM supplemented with 10% FBS and penicillin-streptomycin. The supernatant was collected 48 hr after transfection, filtered with a 0.45 mm PVDF filter to remove cells and debris, and concentrated by ultracentrifugation at 110,000 × g for 2 hr. Viral particles were re-suspended in Ca2+/Mg2+-free phosphate-buffered saline (PBS), aliquoted, and stored at –80°C (Kutner et al., 2009).
 
 For pulse-chase experiments, neurons were transduced with virus expressing TeTx-LC on 5 days in vitro (DIV). For RUSH release experiments, neurons were transduced with the streptavidin hook virus on 8 DIV and transduced with a reporter virus on 9 DIV. In Figure 1 and Figure 2, a virus that expressed GFP with a ‘KDEL’ retention signal on the C terminus to label ER was also transduced on 9 DIV. Cells were imaged on 14–16 DIV. Lentivirus was titrated based on fluorescence and coverage unless otherwise stated in the text.
 
-## Transfection
+### Transfection
 
 For HaloTag pulse-chase experiments, neurons were cultured in 12-well cell culture plates (Genesee Scientific; 25-106) and co-transfected with SYP-GFP and SYT1-HaloTag, HaloTag-SYT1, or SYB2-HaloTag, on 9 DIV using Lipofectamine LTX Reagent with PLUS Reagent (Thermo Fisher Scientific, 15338-100). Briefly, DNA plasmids were diluted in 25 µl Opti-MEM I Reduced Serum Medium (Gibco; 31985062), then 0.25 µl PLUS reagent was added. Separately, 1 µl LTX Reagent was diluted in 25 µl of Opti-MEM I. The DNA-PLUS reagent mixture was added dropwise to the LTX reagent mixture, then added to culture media in each well.
 
-## JF dye usage
+### JF dye usage
 
 HTL-conjugated JF dyes were graciously provided by L Lavis (Ashburn, VA). We made use of JF549 and JF549i. For protein localization of the RUSH constructs, cultures were incubated with 100 nM JF549 for 30–60 min at 37°C then rinsed twice prior to imaging. For concurrent ICC experiments, the JF dye JF549 was added to the secondary antibody mix and incubated at 25°C for 1 hr.
 
 For the live-cell HaloTag pulse-chase labeling experiments, cultures were incubated with 1 nM JF549i for 6 days at 37°C, rinsed twice, and imaged. Incubation with JF549i for up to 8 days showed no detectable nonspecific uptake of this dye or crossing of the PM. JF549 was added to the coverslip at a final concentration of 100 nM during imaging.
 
-## Live-cell imaging
+### Live-cell imaging
 
 Prior to imaging, RUSH reporter proteins were labeled with JF549 HTL (Janelia Farms) and, for rat neurons, anti-pan-neurofascin antibody (UC Davis/NIH NeuroMab Facility, A12/18; RRID:AB_2877334) for 60 min. Coverslips were rinsed twice with warmed PBS and returned to conditioned NBM. Coverslips were incubated with IgG2α Alexa Fluor 647 secondary (Thermo Fisher Scientific, A-21241; RRID:AB_2535810) for 15–30 min to label the anti-pan-neurofascin primary antibody. Coverslips were rinsed twice with warmed PBS and imaged in standard extracellular fluid (ECF) imaging solution (140 mM NaCl, 5 mM KCl, 2 mM CaCl2, 2 mM MgCl2, 5.5 mM glucose, 20 mM HEPES [pH 7.3] in PBS) at 37°C. The reporter proteins were released from the ER-localized streptavidin “hook” with the addition of 40 µM biotin (Sigma-Aldrich, B4639-100MG) to the coverslip. Biotin was diluted in 200 µl of ECF imaging solution and added to 800 µl of media in the imaging chamber for a final concentration of 40 µM. Videos were acquired ~20–30 min after biotin addition at 1 frame per second with a Zeiss 880 Airyscan LSM microscope and 63× objective using Fast Airyscan mode. All images were processed with automatic Airyscan deconvolution settings. Temperature, CO2, and humidity were controlled using an Oko-lab incubation system.
 
-## Kymograph generation and analysis
+### Kymograph generation and analysis
 
 Kymographs (20 µm) were generated from 60 s RUSH movies from the soma-out direction using ZEN blue software 3.0 (ZEISS; Oberkochen, Germany), and were analyzed manually in Fiji (Schindelin et al., 2012). Directionality, as well as distance and time parameters, was recorded for each vesicle movement identified in the kymographs. For all figures, kymograph lines with a negative slope represent anterograde transport, and those with a positive slope indicate retrograde transport. The researcher was blinded to the kymographs analyzed in Figure 4.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Dissociated cultures were fixed with 4% paraformaldehyde, permeabilized with 0.2% saponin, blocked (0.04% saponin, 10% goat serum, and 1% BSA in PBS), and then immunostained at 4°C (0.1% BSA and 0.04% saponin in PBS) overnight. The following morning, coverslips were rinsed three times for 5 min intervals with PBS and incubated with secondary antibodies (0.1% BSA and.04% saponin in PBS) for 1 hr. Then coverslips were rinsed three times for 5 min intervals with PBS and mounted on microscope slides (Thermo Fisher Scientific, 22-178277) using ProLong Glass Antifade Mountant (Thermo Fisher Scientific, P36980) or ProLong Glass Antifade with Mountant with NucBlue Stain (Thermo Fisher Scientific, P36981).
 
-## Colocalization analysis
+### Colocalization analysis
 
 Pearson’s correlation coefficients and Mander’s coefficients were calculated using Fiji for ImageJ and Just Another Colocalization Plugin (JaCoP) (Schindelin et al., 2012; Bolte and Cordelières, 2006). Briefly, neurons were cultured, fixed and stained as described in the ICC methods, and imaged. Colocalization coefficients were measured for single optical sections.
 
-## Expression level analysis
+### Expression level analysis
 
 Hippocampal cultures were transduced with varying amounts of HaloTagged reporter virus on 9 DIV. On 14–16 DIV, cells were fixed and incubated with the JF549 HTL to label the reporter. Untransduced control cultures, and cultures expressing the SYT1 and SYB2 reporters, were stained with α-SYT1 and α-SYB2 antibodies; as an internal control, all samples were also stained with an α-SYP antibody. The ICC protocol is detailed above, and the antibodies are detailed in the table shown under the Antibodies section, below.
 
 With this paradigm, the SYT1 and SYB2 antibodies detect both the native and the tagged proteins such that the fluorescence difference at each synapse, indicating differences in protein quantity, can be compared. To this end, within the same field of view, ROIs of consistent size were used to measure the fluorescence intensity of the α-SYT1 or α-SYB2 signals at synapses with and without expression of the reporter protein (visualized with the JF549 HTL). These values were normalized to the fluorescence intensity of the ROIs in the α-SYP channel to control for variation in synapse size and intensity. Average relative expression levels were calculated by dividing the normalized fluorescence intensity of the α-SYT1 or α-SYB2 channel in synapses that had both the endogenous and tagged proteins, by the values obtained from synapses expressing only the native proteins.
 
-## Protein immunoblots
+### Protein immunoblots
 
 Neuronal cell lysates were collected from dissociated neuronal cultures with 150 µl lysis buffer 2% SDS, 1% Triton X-100, and 10 mM EDTA in PBS, plus (1:200) 250 mM PMSF, and (1:500) 1 mg/ml aprotinin, leupeptin, and pepstatin A protease inhibitors. Samples were boiled at 100°C for 5 min after the addition of 50 µl of sample buffer (DTT, glycerol, and bromophenol blue) and 20 µl of lysates were run on 13.5% acrylamide gels with 10% 2,2,2,-trichloroethanol (TCE) (Sigma-Aldrich; T54801-100G). After protein separation by SDS-PAGE, the TCE was activated by UV light (300 nm) and the cross-linked proteins were imaged with a ChemiDoc MP Imaging System (Bio-Rad Laboratories) as a loading control (Ladner et al., 2004). SDS-PAGE gels were transferred to a PVDF membrane (Immobilon-FL; EMD Millipore) for 30 min per gel at a constant 240 mA, then blocked with 5% nonfat milk protein in Tris-buffered saline plus 1% Tween 20 (TBST) for 30 min. PVDF membranes were incubated in primary antibody, diluted in 1% milk in TBST, overnight at 4°C. The next day the membrane was rinsed and incubated with a secondary antibody, also diluted in 1% milk in TBST, for 1 hr, then washed three times for a total of 15 min. All washes were done with TBST. Immunoblots were imaged using Luminata Forte Western HRP substrate (EMD Millipore; ELLUF0100) and a ChemiDoc MP Imaging System (Bio-Rad Laboratories). Bands were analyzed by densitometry and contrast was linearly adjusted for publication using Fiji (Schindelin et al., 2012).
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Whole-cell voltage-clamp recordings of cultured mouse hippocampal neurons (14–16 DIV) were performed at room temperature in ECF along with an internal pipette solution containing (in mM): 130 potassium gluconate, 10 HEPES, pH 7.4, 1 EGTA, 2 ATP, 0.3 GTP, 5 phosphocreatine. Recordings were performed using a MultiClamp 700B amplifier and Digidata 1550B digitizer (Molecular Devices, San Jose, CA) under the control of Clampex 10 software (Molecular Devices). AMPAR-mediated miniature excitatory post-synaptic (mEPSC) currents were pharmacologically isolated by including gabazine (50 μM) (Tocris Bioscience, Bristol, UK), D-AP5 (50 μM) (Tocris), and tetrodotoxin (1 μM) (Tocris) in the bath solution. QX 314 chloride (5mM) (Tocris) was included in the pipette solutions for all recordings. Neurons were held at –70 mV in all experiments without correction for liquid junction potentials. Recordings were discarded if series resistance rose above 15 MΩ; 180 s of data were recorded for each neuron. mEPSCs were quantified for each recording using a template-matching algorithm in Clampfit (Molecular Devices).
 
-## Statistics
+### Statistics
 
 Exact values from experiments and analyses, including the number of data points (n) and number of trials, are included in the figures or are listed in the figure legends. Analyses were performed using GraphPad Prism 9.20 (GraphPad Software Inc). Normality was assessed by histograms of data and QQ plots; if normal, parametric statistical methods were used, if not, nonparametric methods were used for analysis. For all figures, *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, ****p ≤ 0.0001; ns indicates p>0.05.
 
-## Antibodies
+### Antibodies
 
-## Primary antibodies
+#### Primary antibodies
 
-## Secondary antibodies
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Source</th>
+      <th>Identifier</th>
+      <th>Concentration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-SYT1 (48)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# mAB 48 (asv 48)RRID:AB_2199314</td>
+      <td>ICC (1:500)IB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Anti-SYB2/VAMP2(69.1)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 104211RRID:AB_2619758</td>
+      <td>ICC (1:500)IB (1:1K)</td>
+    </tr>
+    <tr>
+      <td>Anti-GM130</td>
+      <td>BD Transduction Laboratories</td>
+      <td>Cat# 610822RRID:AB_398142</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Anti-pan-neurofascin(extracellular) antibody (A112/18)</td>
+      <td>NeuroMab</td>
+      <td>Cat# 75–172RRID:AB_2282826</td>
+      <td>ICC (1:1K)</td>
+    </tr>
+    <tr>
+      <td>Anti-SYP</td>
+      <td>Cedarlane Labs</td>
+      <td>Cat# 101004(SY)RRID:AB_1210382</td>
+      <td>ICC (1:500)IB (1:1K)</td>
+    </tr>
+    <tr>
+      <td>Anti-MAP2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# AB5543RRID:AB_571049</td>
+      <td>ICC (1:250)</td>
+    </tr>
+  </tbody>
+</table>
 
-## Resource availability
+#### Secondary antibodies
 
-## Lead contact
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Source</th>
+      <th>Identifier</th>
+      <th>Concentration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Goat anti-Mouse IgG2α-Alexa Fluor 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A21241RRID:AB_2535810</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Goat anti-Mouse IgG2β-Alexa Fluor 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A21242RRID:AB_2535810</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Goat anti-Guinea Pig IgG-Alexa Fluor 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A21450RRID:AB_2735091</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Goat anti-Mouse IgG2β-Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A21141 RRID:AB_2535778</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Goat anti-MouseIgG1-Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A21121 RRID:AB_2535764</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Goat anti-ChickenIgG-Alexa Fluor 405</td>
+      <td>Abcam</td>
+      <td>Cat# ab175675RRID:AB_2810980</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Goat anti-MouseIgG-HRP</td>
+      <td>Bio-Rad Laboratories</td>
+      <td>Cat# 1706516RRID:AB_11125547</td>
+      <td>IB (1:10K)</td>
+    </tr>
+    <tr>
+      <td>Goat anti-MouseIgG2β-HRP</td>
+      <td>Bio-Rad Laboratories</td>
+      <td>Cat# M32407RRID:AB_2536647</td>
+      <td>IB (1:10K)</td>
+    </tr>
+    <tr>
+      <td>Goat anti-Guinea Pig IgG-HRP</td>
+      <td>Abcam</td>
+      <td>Cat# ab6908RRID:AB_955425</td>
+      <td>IB (1:10K)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Resource availability
+
+#### Lead contact
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Dr Edwin Chapman (chapman@wisc.edu).
 
-## Materials availability
+#### Materials availability
 
 All unique/stable reagents generated in this study are available from the Lead Contact with a completed Materials Transfer Agreement.

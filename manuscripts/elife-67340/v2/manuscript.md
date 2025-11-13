@@ -45,25 +45,119 @@ Our study reveals strong evidence that increasing temperature associated with lo
 
 To evaluate abiotic constraints on parasite replication and growth (i.e. direct effects), shifting host community structure (i.e. mediation; Baron and Kenny, 1986), and modification of the trait-competence relationship (i.e. moderation; Baron and Kenny, 1986) as mechanisms through which environmental gradients can influence disease risk, we surveyed 220, 0.5 m-diameter vegetation communities (i.e. small plots), that were established in four meadows along a 1101 m elevational gradient as part of the Calanda Biodiversity Observatory (CBO) in 2019 in order to investigate biotic and abiotic drivers of species interactions (Figure 2; Supplementary file 1a).
 
-## Association between elevation and environmental factors
+![Figure 2.](https://cdn.elifesciences.org/articles/67340/elife-67340-fig2-v2.jpg)
+
+**Figure 2.:** (A) Study meadows and sites on mount Calanda. Photo: Federal Office of Topography SwissTopo 2020, editing: Mikko Jalo (B) Example of the arrangement of large and small plots within a site. (C) The study meadows on mount Calanda. Photo and editing: Mikko Jalo.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67340/elife-67340-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The vegetation survey was carried out in small plots that were marked with a central stick and delineated by a 50 cm-diameter hula hoop. The disease survey was carried out by (B) placing 20 grill sicks through a 50 cm-diameter hula hoop covered with canvas containing 20 evenly spaced holes and (C) surveying the plant most touching each grill stick for foliar disease symptoms. (D) Air temperature, soil surface temperature, soil temperature, and soil moisture were recorded in 15 min intervals using TOMST-4 data loggers that were placed in the central large plot of each site. Photos: Mikko Jalo.
+
+### Association between elevation and environmental factors
 
 The elevational gradient captured by the CBO allows us to explore associations among abiotic factors and biodiversity while minimizing other confounding factors like day length, geology, and biogeographic history (Halbritter et al., 2018). We assessed the association between elevation and environmental conditions by fitting linear models. Mean soil, soil surface, and air temperature strongly and consistently decreased with increasing elevation (p < 0.001, R2 = 0.88; p < 0.001, R2 = 0.86; p < 0.001, R2 = 0.89; respectively), while mean soil moisture was uncorrelated with elevation (p = 0.72, R2 = 0.006). The mean soil surface temperature at sites located in the highest elevation meadow (1576 m–1749 m) was, on average, 4.67 °C lower than sites located in the lowest elevation meadow (648 m–766 m). The altitudinal temperature lapse rate along the elevational gradient was –0.57 °C/100 m.
 
-## Effect of environmental conditions on host community structure
+### Effect of environmental conditions on host community structure
 
 In total, 188 host taxa were observed across the 220 small plots of the CBO. The communities consisted mostly of perennial herbs such as Salvia pratensis and Helianthemum nummularium, and were dominated by grasses that tolerate grazing such as Dactylis glomerata, Lolium perenne, and Phleum pratense. The most abundant species was Brachypodium pinnatum. An herbarium specimen of each taxon encountered is deposited at the University of Zürich. We assessed the relationship between abiotic conditions and species richness by fitting linear mixed models with large plots, sites, and meadows as nested random intercepts. Species richness in the small plots varied from 7 to 30 species (median 20), was uncorrelated with soil moisture (p = 0.98) and increased as elevation increased and soil surface temperature declined (p = 0.005; Marginal R2 = 0.10; Conditional R2 = 0.75), with median species richness roughly 16% higher in plots located at the highest elevation meadow, characterized by the coolest environmental temperatures, compared to the lowest elevation meadow, which was characterized by the warmest environmental temperatures (Supplementary file 1b). These effects were qualitatively similar when we included air temperature and elevation in place of soil-surface temperature, though the relationship became nonsignificant when we replaced soil-surface temperature with soil temperature in the model (p = 0.15; Supplementary file 1b).
 
 We performed confirmatory factor analysis to assign six foliar functional traits associated with the worldwide leaf economics spectrum to a single axis representing host pace-of-life. One trait, photosynthetic rate, loaded particularly poorly on this axis (factor loading 0.036), and was therefore excluded from the latent factor. This resulted in a single factor, explaining 62% of the variance in specific leaf area, 51% of the variance in leaf chlorophyll content, 25% of the variance in leaf nitrogen, 10% of the variance in leaf phosphorus, and 2% of the variance in leaf lifespan (χ² (df = 5) = 4.24, p = 0.52; CFI = 1.019; Figure 3—figure supplement 1). Consistent with resource-acquisition and allocation tradeoffs (Díaz et al., 2016; Reich, 2014; Wright et al., 2004), higher values of host pace-of-life were associated with increases in specific leaf area, leaf chlorophyll content, leaf nitrogen, and leaf phosphorus, and with shorter leaf lifespans. We then used each species’ unique score on this pace-of-life factor to quantify the community-weighted mean host pace-of-life (hereafter community pace-of-life) for each small plot. We assessed the relationship between abiotic conditions and community pace-of-life by fitting linear mixed models with large plots, sites, and meadows as nested random intercepts. Although host community pace-of-life was unrelated to soil moisture (p = 0.13), host community pace-of-life declined with reduced soil-surface temperature associated with higher elevation (p = 0.010; Marginal R2 = 0.11; Conditional R2 = 0.83; Supplementary file 1b; Figure 3—figure supplement 2), consistent with expectations regarding shifting host community structure (Descombes et al., 2017; Hulshof et al., 2013; but see Pellissier et al., 2018). These effects were qualitatively similar when we included soil temperature or air temperature in place of soil-surface temperature in the model, though the effect became marginally nonsignificant when we replaced temperature with elevation in the model (p = 0.066; Supplementary file 1b; Figure 3—figure supplement 2).
 
-## Model testing effects of environmental conditions, community structure, and their interaction on disease
+### Model testing effects of environmental conditions, community structure, and their interaction on disease
 
 We tested whether the relationship between host community structure (i.e. host species richness and host community pace-of-life) and disease would change as a function of environmental conditions by fitting a linear mixed model with square-root transformed community parasite load (e.g. Halliday et al., 2019, Halliday et al., 2017; Mitchell et al., 2002) as the response. Soil-surface temperature, soil moisture, host community species richness, pace-of-life, and pairwise interactions between both measures of community structure and each abiotic variable were treated as fixed effects, with large plots, sites, and meadows as nested random intercepts. All variables that were treated as fixed effects in the model were centered so that the mean value of each variable was used as the reference value for interpreting the other variables' independent effects. This mixed model of disease revealed several independent and interactive effects of host community structure and environmental conditions on disease risk (Marginal R2 = 0.227; Conditional R2 = 0.497; RMSE = 0.292; LOOCV RMSE = 0.311; Table 1). Consistent with the hypothesis that host pace-of-life can determine host community competence, communities that were dominated by hosts with fast-paced life-history strategies exhibited the most disease, but this effect declined as elevation increased and temperature declined (temperature × pace-of-life: p < 0.001). This weakening effect of host community pace-of-life as soil-surface temperature declined is consistent with the hypothesis that abiotic conditions can alter which traits favor parasite transmission through the relationship between host competence and disease risk (Figure 3). These results therefore provide field evidence that an environmental gradient can alter the effect of host community structure on disease risk.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67340/elife-67340-fig3-v2.jpg)
+
+**Figure 3.:** Model estimated effects of soil-surface temperature on the slope of the relationship between host community pace-of-life and (square-root-transformed) parasite community load (i.e. the interactive effect of host community pace-of-life and soil-surface temperature on disease, which represents a changing trait-competence relationship), estimated from the raw (i.e. unstandardized) coefficients of the linear mixed model testing effects of environmental conditions, community structure, and their interaction on disease. The rug along the x‐axis shows the distribution of the empirical data. Communities that experience the highest soil-surface temperatures (i.e. located at the lowest elevation) exhibit the strongest positive relationship between host pace-of-life and disease. That positive relationship weakens as temperature declines, and below mean-soil surface temperatures of 17.5 C (i.e. above 1000 m), there is no relationship between host pace-of-life and disease.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67340/elife-67340-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Increasing values of host-pace-of life are associated with increases in specific leaf area, leaf chlorophyll content, leaf nitrogen, and leaf phosphorus, and with shorter leaf lifespans. Taxa with the highest local abundance tended to exhibit intermediate life-history strategies, while taxa exhibiting extreme life-history strategies tended to be locally rare.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67340/elife-67340-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Species richness generally declined with increasing temperatures associated with lower elevation. Host community pace-of-life generally increased with higher temperatures associated with lower elevation. Relationship between soil moisture and either host richness or pace-of-life were not supported by statistical models.
+
+**Table 1.**
+ Results of type II analysis of deviance test on the mixed model of disease, testing whether each factor influenced square-root transformed community parasite load.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Predictor</th>
+      <th>Estimate</th>
+      <th>Chisq</th>
+      <th>Df</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Soil-surface Temperature</td>
+      <td>0.044</td>
+      <td>7.4236</td>
+      <td>1</td>
+      <td>0.0064</td>
+    </tr>
+    <tr>
+      <td>Soil Moisture</td>
+      <td>–0.254</td>
+      <td>0.1390</td>
+      <td>1</td>
+      <td>0.7092</td>
+    </tr>
+    <tr>
+      <td>Host Richness</td>
+      <td>–0.009</td>
+      <td>5.3325</td>
+      <td>1</td>
+      <td>0.0209</td>
+    </tr>
+    <tr>
+      <td>Host Pace-of-Life</td>
+      <td>0.133</td>
+      <td>1.6970</td>
+      <td>1</td>
+      <td>0.1926</td>
+    </tr>
+    <tr>
+      <td>Temperature × Richness</td>
+      <td>0.004</td>
+      <td>2.6551</td>
+      <td>1</td>
+      <td>0.1032</td>
+    </tr>
+    <tr>
+      <td>Temperature × Pace-of-Life</td>
+      <td>0.118</td>
+      <td>11.2498</td>
+      <td>1</td>
+      <td>0.0008</td>
+    </tr>
+    <tr>
+      <td>Moisture × Richness</td>
+      <td>–0.288</td>
+      <td>2.7677</td>
+      <td>1</td>
+      <td>0.0962</td>
+    </tr>
+    <tr>
+      <td>Moisture × Pace-of-Life</td>
+      <td>–2.037</td>
+      <td>0.5647</td>
+      <td>1</td>
+      <td>0.4524</td>
+    </tr>
+  </tbody>
+</table>
 
 The model also revealed significant independent effects of host community structure and abiotic conditions on disease risk. Specifically, the model revealed evidence supporting the dilution effect hypothesis: increasing species richness was associated with a reduction in disease (p = 0.021), and this effect was independent of soil-surface temperature (temperature × richness: p = 0.10). Community parasite load was also positively associated with increasing soil-surface temperature (p = 0.006), consistent with the hypothesis that environmental gradients can alter parasite growth and reproduction via abiotic constraints. These effects were qualitatively similar when we included soil temperature, air temperature, or elevation in place of soil-surface temperature in the model (Supplementary file 1c).
 
 In contrast with results involving soil-surface temperature, there was no statistically significant linear relationship between soil moisture and disease (p = 0.71), nor was there a significant interaction between soil moisture and host richness (p = 0.10) or community-weighted mean pace-of-life (p = 0.45) on disease. Because soil moisture was unrelated to elevation, pace-of-life, species richness, and disease in our models, this factor was omitted from further analyses.
 
-## Structural equation model comparing direct and indirect effects of environmental conditions on disease
+### Structural equation model comparing direct and indirect effects of environmental conditions on disease
 
 Together, models of host community species richness and pace-of-life showed that declining temperature associated with increasing elevation could determine changes in host community structure, and the model of disease showed that host community structure and temperature could independently and interactively influence disease. To explore the relative influence of these direct and indirect effects on disease risk, we next constructed a structural equation model. Our data were well fit by this model (Fisher’s C = 4.111; p-value = 0.662; 6 degrees of freedom, Supplementary file 1d; Figure 4). The model leverages the strong, negative effect of elevation on soil-surface temperature (standardized path coefficient = –0.91, R2 = 0.85) to compare three separate pathways through which increasing temperature can increase disease: First, increasing temperature increased community parasite load directly (standardized path coefficient = 0.24). Second, increasing temperature increased community parasite load indirectly by reducing host species richness (i.e. via mediation; product of standardized path coefficients = 0.045). Third, increasing temperature increased community parasite load indirectly by simultaneously increasing host community pace-of-life (i.e. via mediation; mean-centered standardized path coefficient = 0.39) and strengthening the relationship between host pace-of-life and disease risk (i.e. via moderation; mean-centered standardized path coefficient = 0.18; Figure 4). Together these results highlight the pressing need to consider host community context in predicting how shifting environmental gradients will alter disease risk.
 
@@ -89,35 +183,39 @@ Together, the results of this study highlight the need to consider host communit
 
 ## Materials and methods
 
-## Study system
+### Study system
 
 The Calanda Biodiversity Observatory (CBO) consists of four publicly owned meadows located along a 1101 m elevational gradient (648 m to 1749 m) below tree-line on the south-eastern slope of Mount Calanda (46°53′59.5″N 9°28′02.5″E) in the canton of Graubünden (Figure 2). The mean annual temperature at 550 m altitude is 10°C and the mean annual precipitation is 849 mm (MeteoSwiss, 2020), with temperature declining and precipitation increasing as elevation increases (e.g. in 2013 and 2014, mean temp and precipitation at 1400 m were 7°C and 1169 mm, respectively; Alexander et al., 2015). The soil in the area is generally calcareous and has low water retention (Alexander et al., 2015; Eggenberg and Möhl, 2013). The four CBO meadows are variable in size (roughly 8–40 Ha), and separated by forests and at least 500 m elevation. Meadows are maintained through grazing and mowing, a typical form of land use in the Swiss Alps (Bätzing, 2015), and cover collinean (< 800 m) mountain (800 m–1500 m) and subalpine (1500–2200 m) vegetation zones (Eggenberg and Möhl, 2013; Ozenda, 1985). The CBO meadows are grazed by cattle twice per year as the cattle are moved between low and high altitudes.
 
 Increasing elevation is associated with changes in a variety of abiotic conditions, including a reduction in temperature. Temperature decreases approximately 0.4–0.7 °C for each 100 m increase in elevation because of lower air pressure in high elevations, a phenomenon known as the altitudinal temperature lapse rate (Barry, 2008). The altitudinal temperature lapse rate varies among years and even days, usually being lower in winters and during nights. Typical altitudinal temperature lapse rates in the Alps vary from –0.54°C/100 m to –0.58°C/100 m (Rolland, 2003).
 
-## Study design
+### Study design
 
 The CBO consists of a nested set of observational units (Figure 2). Each meadow contains 4–7, .25 ha sites (n = 22 sites). Sites were selected to maximize coverage over each meadow, avoiding roads that would cross the sites and large trees, shrubs and rocks that could create a forest- or shrub-type habitat that differs from grassland, and were placed sufficiently far from forest edges so that they were not shaded by the forest canopy. Each site is 50 m x 50 m and contains a grid of nine evenly spaced, 4 m2 large-plots, with the exception of one site (I3), which is 100 m x 25 m and contains 10 large plots due to its shape. Altogether, there are 199 large plots. In each site, large plots are arranged in a grid with the center of each plot separated by at least 20 m distance from its nearest neighbor. The location of the grid was randomized within each site and always located at least 2 m from the site edge. Each large plot is subdivided into four, 1 m2 subplots (n = 796). At each site, five large plots were selected to contain an intensively surveyed module (ISM), which consisted of two 50 cm-diameter, round small plots, placed in opposite subplots (n = 110 ISMs consisting of 220 small plots). These intensively surveyed small plots are the smallest unit of observation used in this study (Figure 2).
 
-## Quantification of host community structure
+### Quantification of host community structure
 
 In July 2019, we recorded the identity and visually quantified the percent cover of all plant taxa in each small plot (n = 220). Vegetation surveys entailed the same two researchers searching within the subplot area for all vascular plants present in the subplot, before jointly estimating the total percent cover of each species (Halbritter et al., 2020). Plant individuals that were growing outside the small plot, but whose foliage extended into the small plot, were included in this survey. Plant taxa were identified with the help of plant identification literature (Eggenberg et al., 2018; Eggenberg and Möhl, 2013; Lauber et al., 2018). The survey started at the lowest elevation and continued higher in order to survey the meadows approximately at the same phase of the growing season in relation to one another. The survey was initiated at least 4 days after cows had grazed each meadow (Supplementary file 1a).
 
-We evaluated changes in two components of host community structure to evaluate indirect effects of environmental conditions on disease: host species richness and community-weighted mean host pace-of-life. These two components of host community structure commonly respond to changing environmental conditions (Descombes et al., 2017; Hulshof et al., 2013), and represent important characteristics of host communities that influence disease risk (Joseph et al., 2013; Liu et al., 2018; Liu et al., 2017). We quantified community-weighted mean host pace-of-life using the TRY database (Kattge et al., 2020). We first extracted six traits for every host taxon in the database (plant photosynthetic rate, leaf chlorophyll content, leaf lifespan, leaf nitrogen content, leaf phosphorus content, and specific leaf area), omitting tree seedlings, which are functionally dissimilar from the more dominant herbaceous taxa, and taxa that could not be identified to host genus, which together, never accounted for more than 7% cover in a plot (mean = 0.04%). Unknown taxa that could be identified to the genus level were assigned genus-level estimates for each host trait, by taking the mean of the trait value for all members of that genus that had been observed on Mount Calanda during extensive vegetation surveys (Supplementary file 1e). We then performed full-information maximum-likelihood factor analysis to produce a single axis representing covariation in the functional traits associated with host pace-of-life using the umxEFA function in r-package umx (Bates et al., 2019). This approach allows each host taxon to be assigned a value for host pace-of-life, even if that taxon is missing some values for individual functional traits. Finally, we calculated a single value for each small plot (n = 220) using the community-weighted mean of host pace-of-life (hereafter community pace-of-life). The community weighted mean (CWM) was calculated as:CWM=∑i=1Nsppixi
+We evaluated changes in two components of host community structure to evaluate indirect effects of environmental conditions on disease: host species richness and community-weighted mean host pace-of-life. These two components of host community structure commonly respond to changing environmental conditions (Descombes et al., 2017; Hulshof et al., 2013), and represent important characteristics of host communities that influence disease risk (Joseph et al., 2013; Liu et al., 2018; Liu et al., 2017). We quantified community-weighted mean host pace-of-life using the TRY database (Kattge et al., 2020). We first extracted six traits for every host taxon in the database (plant photosynthetic rate, leaf chlorophyll content, leaf lifespan, leaf nitrogen content, leaf phosphorus content, and specific leaf area), omitting tree seedlings, which are functionally dissimilar from the more dominant herbaceous taxa, and taxa that could not be identified to host genus, which together, never accounted for more than 7% cover in a plot (mean = 0.04%). Unknown taxa that could be identified to the genus level were assigned genus-level estimates for each host trait, by taking the mean of the trait value for all members of that genus that had been observed on Mount Calanda during extensive vegetation surveys (Supplementary file 1e). We then performed full-information maximum-likelihood factor analysis to produce a single axis representing covariation in the functional traits associated with host pace-of-life using the umxEFA function in r-package umx (Bates et al., 2019). This approach allows each host taxon to be assigned a value for host pace-of-life, even if that taxon is missing some values for individual functional traits. Finally, we calculated a single value for each small plot (n = 220) using the community-weighted mean of host pace-of-life (hereafter community pace-of-life). The community weighted mean (CWM) was calculated as:
+
+$$
+CWM=\sumi=1Nspp_{i}x_{i}
+$$
 
 where Nsp is the number of taxa within a plot with a pace-of-life trait value in the dataset, pi is the relative abundanceof taxon, i, in the plot (i.e. the absolute vegetative cover of taxon, i, divided by the total absolute cover of all taxa in the plot), and xi is the host pace-of-life value for taxon, i.
 
-## Quantification of disease
+### Quantification of disease
 
 A survey of foliar disease symptoms was carried out in August 2019 by estimating the percent of leaf area damaged by foliar fungal parasites on up to five leaves of twenty randomly selected host individuals per small plot (n = 18,203 leaves on 4400 host individuals across 220 small plots). The disease survey was conducted by placing a grid of 20 equally spaced grill sticks into the ground, with each stick having a distance of 10 cm to its nearest neighbor (Figure 2—figure supplement 1). The 20 plant individuals that were most touching the sticks were then identified, and the five oldest non-senescing leaves on each plant were visually surveyed for foliar disease symptoms following the plant pathogen and invertebrate herbivory protocol in Halbritter et al., 2020. The survey was carried out on leaves, because symptoms are highly visible and easily grouped into parasite types on leaves. On each leaf, we estimated the leaf area (%) that was covered by disease symptoms. Some plant individuals had fewer than five leaves, so fewer than five leaves were surveyed on those plants. Unlike the vegetation survey, the disease survey was not conducted in elevational order due to logistical constrains related to site accessibility. Small plots were surveyed between 29 July and 19 August 2019 (Supplementary file 1a), which we observed to be time of peak plant biomass in this system.
 
 Disease was assessed for each small plot using community parasite load, calculated as the mean leaf area damaged by all parasites on a host, multiplied by the relative abundance of that host species from the July vegetation survey, and then summed across all hosts in the plot (Halliday et al., 2019, Halliday et al., 2017; e.g., Mitchell et al., 2002).
 
-## Quantification of environmental conditions
+### Quantification of environmental conditions
 
 Soil temperature (6 cm below the soil surface), soil surface temperature, air temperature (12 cm above the soil surface), and soil volumetric moisture content were recorded at 15 minute intervals for 22–37 days (average 31 days) in the central large plot of each site (n = 22) using a TOMST-4 datalogger (Wild et al., 2019). The total duration of measurement varied because some of the dataloggers had to be moved earlier or temporarily because of mowing or grazing activities (Supplementary file 1a).
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed in R version 3.5.2 (R Development Core Team, 2015). We assessed the association between elevation and environmental conditions by fitting linear models with the lm function. All other analyses consisted of fitting linear mixed models with an identity link and Gaussian likelihoods using the lme function in the nlme package (Pinheiro et al., 2016). In order to meet assumptions of normality and homoscedasticity, we square-root transformed community parasite load and added an identity variance structure (varIdent function) for each site, which based on visual inspection of residuals of each model, exhibited considerable heteroscedasticity (Pinheiro et al., 2016; Zuur et al., 2009). Each model included large plots, sites, and meadows as nested random intercepts to account for non-independence among observations due to the sampling design of the CBO. Full equations and parameters for these models are available on Github (https://github.com/fhalliday/Calanda19/tree/Calanda19_disease_submission; Halliday, 2021; copy archived at swh:1:rev:86ce01777c396840455fd67a3ff5cd8420e8df21).
 

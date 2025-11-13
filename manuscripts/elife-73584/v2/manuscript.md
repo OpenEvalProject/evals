@@ -65,22 +65,22 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Johns Hopkins Bloomberg School of Public Health, Johns Hopkins University Baltimore United States
-2. https://ror.org/03vek6s52 Harvard University Cambridge, Massachusetts United States
-3. https://ror.org/029pp9z10 Johns Hopkins University Applied Physics Laboratory Laurel United States
-4. https://ror.org/04p491231 Pennsylvania State University University Park United States
-5. https://ror.org/0130frc33 University of North Carolina at Chapel Hill Chapel Hill United States
-6. https://ror.org/01an3r305 University of Pittsburgh Pittsburgh United States
-7. https://ror.org/02s376052 École polytechnique fédérale de Lausanne Lausanne Switzerland
-8. https://ror.org/04s5mat29 University of Victoria Victoria Canada
-9. https://ror.org/04t5xt781 Northeastern University Boston United States
-10. https://ror.org/03taz7m60 University of Southern California Los Angeles United States
-11. https://ror.org/0153tk833 University of Virginia Charlottesville United States
-12. https://ror.org/04dawnj30 University of North Carolina at Charlotte Charlotte United States
-13. https://ror.org/00hj8s172 Columbia University New York United States
+1. Johns Hopkins Bloomberg School of Public Health, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Harvard University Cambridge, Massachusetts United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+3. Johns Hopkins University Applied Physics Laboratory Laurel United States ([ROR:029pp9z10](https://ror.org/029pp9z10))
+4. Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))
+5. University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+6. University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+7. École polytechnique fédérale de Lausanne Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
+8. University of Victoria Victoria Canada ([ROR:04s5mat29](https://ror.org/04s5mat29))
+9. Northeastern University Boston United States ([ROR:04t5xt781](https://ror.org/04t5xt781))
+10. University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+11. University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+12. University of North Carolina at Charlotte Charlotte United States ([ROR:04dawnj30](https://ror.org/04dawnj30))
+13. Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 14. CDC COVID-19 Response Team Atlanta United States
-15. https://ror.org/035a68863 United States Geological Survey Laurel United States
-16. https://ror.org/01cwqze88 Fogarty International Center, National Institutes of Health Bethesda United States
+15. United States Geological Survey Laurel United States ([ROR:035a68863](https://ror.org/035a68863))
+16. Fogarty International Center, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
 
 † Corresponding author
 
@@ -99,6 +99,22 @@ Here, we detail results from the seventh round of projections, in which increase
 ## Results
 
 In the two scenarios with high Delta variant transmissibility (60% more transmissible than Alpha), we projected a national wave of cases to continue to grow over the summer and peak in mid- to late September 2021. In the scenario that assumes lower vaccination coverage among eligible individuals (70%) and higher variant transmissibility (the most pessimistic scenario), this resurgence was projected to peak at 414,000 weekly cases (95% projection interval (PI): 140,000–1,525,000) and 5900 weekly deaths (95% PI: 900–30,000) nationally. Overall, this scenario projected 7,554,000 (95% PI: 3,294,000–28,399,000) cumulative cases and 96,000 (95% PI: 27,000–476,000) cumulative deaths during July 4, 2021–Jan 1, 2022 (Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/73584/elife-73584-fig1-v2.jpg)
+
+**Figure 1.:** (A) Hospitalizations (B) and deaths (C) under four scenarios representing different levels of vaccination and Delta variant transmissibility increase — United States, October, 2020–December, 2021.Projections are ensemble estimates of 9 models projecting four 6-month scenarios with 95% prediction intervals (the grey shading encompasses the prediction intervals from all four scenarios). Projections used empirical data from up to July 3, 2021, to calibrate models (black filled dots). The vertical lines indicate the beginning of each projection, with only data available prior to that point used to fit the projections. Observations available after the projection start are displayed as open dots.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73584/elife-73584-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Solid color lines and shaded areas represent median projections and 95% prediction intervals of reported cases for the entire US from each of the 9 models for each of the four scenarios. Projections used empirical data from up to July 3, 2021, to calibrate models (black filled dots). The vertical lines indicate the beginning of each projection, with only data available prior to that point used to fit the projections. Observations available after the projection start are displayed as open dots.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73584/elife-73584-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Solid color lines and shaded areas represent median projections and 95% prediction intervals of reported hospitalizations for the entire US from each of the 9 models for each of the four scenarios. Projections used empirical data from up to July 3, 2021, to calibrate models (black filled dots). The vertical lines indicate the beginning of each projection, with only data available prior to that point used to fit the projections. Observations available after the projection start are displayed as open dots.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73584/elife-73584-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Solid color lines and shaded areas represent median projections and 95% prediction intervals of reported deaths for the entire US from each of the 9 models for each of the four scenarios. Projections used empirical data from up to July 3, 2021, to calibrate models (black filled dots). The vertical lines indicate the beginning of each projection, with only data available prior to that point used to fit the projections. Observations available after the projection start are displayed as open dots.
 
 With higher variant transmissibility, increasing national vaccination coverage was projected to temper the fall wave slightly and cause it to drop more quickly, but not prevent it. With an increase in national vaccine coverage to 80% by January 1, 2022, the ensemble projected 65,000 (16%) fewer cases and 1300 (21%) fewer deaths per week at the peak, and 1,525,000 (20%) and 21,000 (22%) fewer cumulative cases and deaths, respectively, during July 4, 2021–January 1, 2022, when compared to the scenario where vaccination saturated at 70% nationally (Figure 1).
 
@@ -128,13 +144,41 @@ The impact of the resurgence on severe disease and mortality was expected to var
 
 The findings in this report are subject to several limitations. First, considerable uncertainty is inherent to long-term projections. This has been repeatedly illustrated throughout the COVID-19 pandemic, with rapid changes in behavior, deployment of vaccines and boosters, and the emergence of novel variants, each of which has the capacity to drastically shift the epidemic trajectories. Uncertainty may arise from three main sources: specification of the scenarios (for example, uncertainty in transmissibility); errors in the structure or assumptions of individual models given a specific scenario (for example, variations in assumptions about vaccination uptake); and inaccurate calibration based on incomplete or biased data (for example, reporting backlogs). None of the four scenarios considered here were likely to precisely reflect the future reality over a 6-month period. As a case in point the emergence of the Omicron variant in December 2021, at the end of our projection period, could not have been predicted when scenarios were designed in June 2021 (Borchering et al., 2021). Similarly, a resurgence in Delta variant incidence was observed in mid-fall 2021, possibly due to changes in behavior and waning immunity, and is not captured in scenarios or model projections. Further, for a given scenario, there is notable variation among individual model projections with regard to both the timing and the magnitude of the resurgence (Figure 1—figure supplements 1–3). Variation likely reflects differences in model structure, projected vaccine coverage, projected variant growth, and importance of seasonal effects. Some of these variations reflect true scientific uncertainty, making ensemble projections particularly useful to integrate uncertainty between and within individual models. In addition, these scenarios do not specify considerations of Delta infecting previously immune individuals due to moderate antigenic changes, the waning of existing immunity, increases in NPIs, or vaccination among children aged <12 years starting in November 2021, all of which were expected to be important drivers of dynamics in the subsequent months. In the same vein, model estimates are dependent on assumptions about vaccine hesitancy, which are informed in part by large-scale surveys of vaccine sentiments (Carnegie Mellon University Delphi Group, 2021; Estimates of Vaccine Hesitancy for COVID-19, 2021). These surveys may underestimate vaccine hesitancy, as coverage estimates among survey respondents are substantially higher than measured among the overall US population. Additionally, there are limitations to individual component models, although these concerns are tempered by analyzing ensembles of the nine different models. Overall, a full evaluation of our projections and sources of uncertainty is particularly difficult in a scenario context and is beyond the scope of this paper. However, it is worth noting that in this particular round of projection, the relationship between projection accuracy and time horizon is not straightforward (e.g. refer to Figure 1 for a visual assessment of coverage).
 
-## Conclusions
+### Conclusions
 
 The emergence and introduction of more transmissible SARS-CoV-2 variants like the Delta variant was projected to lead to a substantial resurgence of COVID-19 in the US, which was observed in every state across the country. The high variant transmissibility scenarios, which more accurately represented the characteristics of the Delta variant, both in transmissibility and in current case trajectories, projected a significant national resurgence with substantial variation in magnitude across states. Resurgences were expected to be more pronounced in low-vaccination jurisdictions. The projections indicated that even with substantial vaccination coverage, the increased transmissibility of new variants like Delta can continue to challenge our ability to control this pandemic. Renewed efforts to increase vaccination coverage are critical to limiting transmission and disease, particularly in states with low natural immunity and lower current vaccination, in addition to re-instituting control measures like indoor masking when needed. Projections of Delta resurgence presented in this paper were made publicly available in early July 2021 (COVID-19 Scenario Modeling Hub, 2020), 2 months ahead of the peak of the Delta wave, providing actionable results. There is a trade-off between releasing projections in a timely manner to guide decisions, and projection accuracy and uncertainty that improve with incorporation of recent information. While these projections dramatically underestimated the magnitude of the Delta resurgence, demonstrating the challenges to predict this continually evolving pandemic, they did provide value in projecting the timing and emphasizing the importance of vaccination. Multi-model ensemble efforts such as the COVID-19 Scenario Modeling Hub are particularly well-suited to provide disease projections to inform the pandemic response under changing epidemiological and behavioral situations.
 
 ## Materials and methods
 
 The COVID-19 Scenario Modeling Hub (COVID-19 Scenario Modeling Hub, 2020) convened nine modeling teams in an open call to provide six-month (July 3, 2021-January 1, 2022) COVID-19 projections in the US using data available through July 3, 2021. Each team developed a model to project weekly reported cases, hospitalizations, and deaths, both nationally and by jurisdiction (50 states and the District of Columbia), for four different epidemiological scenarios. Models were calibrated against data from the Johns Hopkins Center for Systems Science and Engineering Coronavirus Resource Center and federal databases (Coronavirus Resource Center, 2020; US Department of Health and Human Services, 2020). The four scenarios included low and high vaccination hesitancy levels, assuming national vaccination coverage saturation at 80% and 70%, respectively, based on hesitancy surveys (Table 1) (Carnegie Mellon University Delphi Group, 2021; Estimates of Vaccine Hesitancy for COVID-19, 2021). Participating teams accounted for vaccination rates by state, age, and risk-groups (for example, older adults and health care workers). Specified vaccine efficacy levels were constant across the scenarios and were based on protection against clinical disease in randomized clinical trials and effectiveness studies; parameters for effectiveness against infection, transmission, and progression to severe outcomes (for example, death) were left to be specified by each team (COVID-19 Scenario Modeling Hub, 2020). When the scenarios were designed in late June 2021, little information was available on vaccine efficacy specific to the Delta variant and on waning immunity. For details on individual model assumptions, see Supplementary file 1.
+
+**Table 1.**
+ COVID-19 projection scenarios* — United States, July 4, 2021–January 1, 2022.Scenarios defined for projection of COVID-19 cases, hospitalizations, and deaths for the sixth round of projections through the COVID-19 Scenario Modeling Hub§.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Low impact variant;(low transmissibility increase)</th>
+      <th>High impact variant;(high transmissibility increase)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>High vaccination;(low hesitancy)</td>
+      <td>Vaccination:Coverage saturates at 80% nationally among the vaccine-eligible population* by December 31, 2021†VE is 50%/90% for Pfizer/Moderna against currently circulating variants (1st /2nd dose) and 60% for J&amp;J (1 dose)J&amp;J no longer used†*Variant:40% increased transmissibility as compared with Alpha for Delta variant. Initial prevalence estimated at state-level by teams.</td>
+      <td>Vaccination:Coverage saturates at 80% nationally among the vaccine-eligible population* by December 31, 2021†VE is 35%/85% for Pfizer/Moderna against currently circulating variants (1st /2nd dose) and 60% for J&amp;J (1 dose)J&amp;J no longer used†*Variant:60% increased transmissibility as compared with Alpha for Delta variant. Initial prevalence estimated at state-level by teams.</td>
+    </tr>
+    <tr>
+      <td>Low vaccination;(high hesitancy)</td>
+      <td>Vaccination:Coverage saturates at 70% nationally among the vaccine-eligible population* by December 31, 2021†VE is 50%/90% for Pfizer/Moderna against currently circulating variants (1st /2nd dose) and 60% for J&amp;J (1 dose)J&amp;J no longer used†*Variant:40% increased transmissibility as compared with Alpha for Delta variant. Initial prevalence estimated at state-level by teams.</td>
+      <td>Vaccination:Coverage saturates at 70% nationally among the vaccine-eligible population* by December 31, 2021†VE is 35%/85% for Pfizer/Moderna against currently circulating variants (1st /2nd dose) and 60% for J&amp;J (1 dose)J&amp;J no longer used ‡Variant:60% increased transmissibility as compared with Alpha for Delta variant. Initial prevalence estimated at state-level by teams.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The Vaccine-eligible population is presumed to be individuals aged 12 years and older through the end of the projection period.†Vaccine hesitancy expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are National reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scales) and/or age groups are at the discretion of the modeling team (COVID-19 Scenario Modeling Hub, 2020). The high vaccination 80% saturation is defined using the current estimates from the Delphi group (updated from Round 6) (Carnegie Mellon University Delphi Group, 2021). The low saturation estimate of 70% is the lowest county-level estimate from the US Census Bureau’s Pulse Survey from May 26-June 7, 2021 data (Estimates of Vaccine Hesitancy for COVID-19, 2021).‡To simplify the models and future projections of vaccine administration, it was assumed continued administration of the Johnson & Johnson (J&J) vaccine would not occur on or after the projection date (after July 4, 2021) due to the limited amount administered previously in the US (as of August 4, 2021 approximately 4 million doses delivered since April 13, 2021 compared to 153 million for Pfizer and Moderna) (Centers for Disease Control and Prevention, 2021b).§COVID-19 Scenario Modeling Hub: https://covid19scenariomodelinghub.org/._
 
 Scenarios assumed one of two levels of increased transmissibility for the Delta variant: 40% (low) or 60% (high) more transmissible than the Alpha variant. Increases in new variant prevalence over time were determined by each modeling team and were estimated at the state level.
 

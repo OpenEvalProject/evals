@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.40578.001 Fatigue due to physical exertion is a ubiquitous phenomenon in everyday life and especially common in a range of neurological diseases. While the effect of fatigue on limiting skill execution are well known, its influence on learning new skills is unclear. This is of particular interest as it is common practice to train athletes, musicians or perform rehabilitation exercises up to and beyond a point of fatigue. In a series of experiments, we describe how muscle fatigue, defined as degradation of maximum force after exertion, impairs motor-skill learning beyond its effects on task execution. The negative effects on learning are evidenced by impaired task acquisition on subsequent practice days even in the absence of fatigue. Further, we found that this effect is in part mediated centrally and can be alleviated by altering motor cortex function. Thus, the common practice of training while, or beyond, fatigue levels should be carefully reconsidered, since this affects overall long-term skill learning.
+Fatigue due to physical exertion is a ubiquitous phenomenon in everyday life and especially common in a range of neurological diseases. While the effect of fatigue on limiting skill execution are well known, its influence on learning new skills is unclear. This is of particular interest as it is common practice to train athletes, musicians or perform rehabilitation exercises up to and beyond a point of fatigue. In a series of experiments, we describe how muscle fatigue, defined as degradation of maximum force after exertion, impairs motor-skill learning beyond its effects on task execution. The negative effects on learning are evidenced by impaired task acquisition on subsequent practice days even in the absence of fatigue. Further, we found that this effect is in part mediated centrally and can be alleviated by altering motor cortex function. Thus, the common practice of training while, or beyond, fatigue levels should be carefully reconsidered, since this affects overall long-term skill learning.
 
 ## Introduction
 
@@ -41,7 +41,7 @@ Altogether, our results provide the first evidence that motor fatigue has a doma
 
 ## Results
 
-## Muscle fatigue has lasting effects on acquisition of force-control demanding motor skill
+### Muscle fatigue has lasting effects on acquisition of force-control demanding motor skill
 
 In the first experiment, we assessed how muscle fatigue influenced skill learning over multiple days. 38 participants trained in a force-control demanding, isometric pinch task for two days; see Figure 1. While all subjects were instructed to perform an isometric pinch contraction prior to four bouts of training on Day 1, a subset of participants (Fatigue group (FTG), N = 20) performed the contractions until experiencing muscle fatigue (~60% decrement of maximal voluntary contraction. MVC was measured in Newton and monitored by surface electromyographic (EMG) signal). A control group (NoFTG, N = 18) contracted the same muscle group at ~5% of MVC over a matched period of time without experiencing force decline. On Day 2 both groups performed the skill task without the induction of fatigue. Skill learning was indexed by a measure that quantifies shifts in the relationship between movement time and accuracy rate (Reis et al., 2009). As the relationship between learning rate and skill measure appeared linear, a regression line was fit separately for each day and group. Here the slope of the regression line represents the learning rate (see Materials and methods).
 
@@ -61,7 +61,7 @@ To assess, how much practice the FTG took to reach similar performance levels as
 
 Since learning in the FTG was impaired even in the non-fatigued state on Day 2, these results indicate that learning under fatigue conditions has a long-lasting detrimental effect on skill acquisition.
 
-## Fatigue affects performance even in the untrained, non-fatigued effector
+### Fatigue affects performance even in the untrained, non-fatigued effector
 
 Because execution under fatigue is impaired, it is conceivable that this performance confounder masked skill learning. Assessing the transfer of learning to the uninstructed, unfatigued hand provides a unique way to circumvent this challenge. Generalization of motor skills across hands has previously been well characterized, where skill training with one hand results in improved performance in the untrained hand (Camus et al., 2009; Perez et al., 2007). Thus, in experiment 2, we measured skill execution in the left hand of a new group of 20 participants before and after training with their right fatigued (FTGTRANSFER, N = 10) or non-fatigued hand (NoFTGTRANSFER, N = 10).
 
@@ -75,7 +75,7 @@ Based on the work of Tolman and Honzik (Tolman and Honzik, 1930) differences in 
 
 Importantly, the poor performance in the untrained hand suggests that fatigue impairs central motor-skill learning mechanisms beyond any potential adverse effect within the fatigued effector.
 
-## Long-lasting detrimental effects of fatigue on learning are centrally mediated
+### Long-lasting detrimental effects of fatigue on learning are centrally mediated
 
 To determine whether the effect of fatigue on learning is centrally mediated, we interfered with primary motor cortex processes thought to be involved in skill retention in a new group of participants (Galea et al., 2011; Muellbacher et al., 2002; Reis et al., 2009; Richardson et al., 2006). To this end, in experiment 3 we used disruptive rTMS (repetitive transcranial magnetic stimulation) over the primary motor cortex (M1) after task training on Day 1 (FTGM1, N = 15) (Cantarero et al., 2013a; Huang et al., 2010). To control for potential non-specific effects of rTMS, we also tested a fatigued and a non-fatigued group with TMS applied over the parietal interhemispheric fissure (Pz, according to 10–20 system; FTGSHAM, N = 15 and NoFTGSHAM, N = 10).
 
@@ -87,7 +87,7 @@ The permutation test showed that learning rates of both fatigued groups were sma
 
 Together, these results show that disruption of M1 function after training diminished the detrimental effects of fatigue on motor-skill learning. This indicates that the long-lasting effects of fatigue on learning are at least partly centrally mediated and linked to motor memory formation.
 
-## Fatigue does not impair a sequence learning task
+### Fatigue does not impair a sequence learning task
 
 To determine whether the observed muscle fatigue effects are specific to tasks with high motor control demand (e.g., accurate force control to complete the sequence) vs. a task with more cognitive demands, we performed an additional control. Here, 18 healthy participants performed a 10-element, finger sequence task by simply pressing the correct key on a computer keyboard after being fatigued (FTGSEQUENCE, N = 9) or not (NoFTGSEQUENCE, N = 9) as done in the prior experiments (for visualization of the study design the Materials and methods and Appendix 1). We found that fatigue prior to the sequence learning did not result in different performance compared to the non-fatigued control group on Day 1 or Day 2. Both groups had less errors in block 4 than block one in both days, with no group difference on either day (Day 1: block: F(3,16) = 4.474, p=0.021; group: (F(1,16) = 0.329, p=0.574), block*group: (F(3,16) = 1.458, p=0.79; Day 2: block: F(3,16) = 5.363, p=0.034; group: (F(1,16) = 0.535, p=0.475), block*group: (F(3,16) = 2.603, p=0.126). The same was true for movement times. Participants decreased their times from block one to block four, but there was no group differences (Day 1: block: F(3,16) = 146.34, p<0.001; group: (F(1,16) = 0.498, p=0.49), block*group: (F(3,16) = 0.169, p=0.972; Day 2: block: F(3,16) = 11.31, p=0.004; group: (F(1,16) = 1.106, p=0.309), block*group: (F(3,16) = 4.192, p=0.057; Figure 5).
 
@@ -97,7 +97,7 @@ To determine whether the observed muscle fatigue effects are specific to tasks w
 
 These results indicate that the detrimental effects of muscle fatigue on learning are specific to skill tasks that required fine force-control, but not in more cognitive-demanding tasks.
 
-## Fatigue in the absence of training does not impair learning on a subsequent day
+### Fatigue in the absence of training does not impair learning on a subsequent day
 
 To ensure that the results from the previous experiments were not due to prolonged physical manifestations of fatigue on Day 2, we fatigued a new group of participants on Day 1 but did not expose them to the pinch force task until the second day (FTGSKILL-DAY2, N = 5). On Day 2, this group showed similar learning rates when compared to the control group on Day 1 (mean slope FTGSKILL-DAY2 0.049; p=0.50; see Appendix 1).
 
@@ -115,61 +115,61 @@ The persistent limited skill acquisition following training under fatigue may be
 
 In our understanding, the observed result cannot be explained by context specificity. It has been argued that, because fatigue leads to changes in the pattern and intensity of muscle activation as well as to changes in sensory feedback, what has been learned under fatigue can only show limited transfer to performance in the unfatigued state and vice versa (Barnett et al., 1973; Janet, 2012). While limited transfer can explain an initially lower performance of the fatigued group on Day 2, it cannot account for the lower learning rates throughout Day 2 and sustained effect on performance up to Day 3.
 
-## Conclusion
+### Conclusion
 
 We tested motor learning of a skill task under conditions of fatigue. We found that learning in a fatigued state results in detrimental effects on overall task acquisition. These phenomena are present above and beyond the deleterious consequences of fatigue on performance and appears to be domain-specific, and at least in part, centrally mediated. The deleterious fatigue effect was of such a magnitude that took participants twice as much time to reach the level of performance of individuals who learned the task de novo in non-fatigue conditions. These observations need to be carefully considered when designing training protocols such as in sports or musical performance as well as for rehabilitation programs. While conditions of fatigue during sports or performing arts can occur by chance or by overachieving attitudes, rehabilitation programs are particularly at risk because patients with neurological conditions such as those following stroke or multiple sclerosis frequently experience fatigue.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 A total of 121 healthy participants were recruited from two centers (Johns Hopkins University and University College London). None of the participants suffered from any neurological or psychiatric disorder, nor were they taking any centrally-acting prescribed medication. The experiments were approved by the respective ethics boards at Johns Hopkins School of Medicine Institutional Review Board and the North West London Research Ethics Committee in accordance with the Declaration of Helsinki and written informed consent as well as consent to publish was obtained from all participants (ethics board number 00077792). For the first experiment, the sample size was chosen in line with previously reported effect sizes in motor-skill learning studies (Cantarero et al., 2013a; Cantarero et al., 2013b; Reis et al., 2009).
 
-## Motor task
+### Motor task
 
 For each experiment, participants were seated in front of a computer monitor and given a force transducer to hold between the thumb and index fingers of their dominant hand. During each trial, participants were instructed to produce isometric pinch presses at different force levels to control the motion of a cursor displayed on the screen. Increasing force resulted in the cursor moving horizontally to the right. Participants were instructed to increase and decrease their pinching force to navigate the cursor through the following sequence: start-gate1-start-gate2-start-gate3-start-gate4-start-end; see Figure 6. The cursor movement followed logarithmic transduction of the applied pinch force as described in previous studies (Reis et al., 2009). This task has been widely used to study skill learning (e.g., Reis et al., 2009; Cantarero et al., 2013a). It involves two components of learning, speed and accuracy, which we could explore independently (see also Data Analysis and Appendix 1). While the chosen task allows for detailed behavioral assessment of changes underlying learning, due to differences in muscle strengths across fingers involved in the task, the behavioral assessment is potentially less suited to analyze independent mechanisms of peripheral and central fatigue within the hand muscles involved.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/40578/elife-40578-fig6-v2.jpg)
 
-## Sequence learning task
+### Sequence learning task
 
 Participants were seated in front of a computer screen and presented with a horizontal display of five square stimuli (‘G’, ‘H’,’ J’, ‘B’ or ‘N’) with one highlighted in green. Subjects were instructed to press as fast as possible the corresponding computer key on a desktop keyboard with their index finger. The next element of the sequence was only presented after the correct key response. If an incorrect key response was pressed, the sequence was paused and only resumed once the appropriate key response was made. Each sequence trial started with the presentation of a ‘go’ cue. Participants were exposed to the same 10-element sequence on each trial and had to perform 30 trials in total to complete one of four blocks.
 
-## Design
+### Design
 
-## Experiment 1: Determining the effect of fatigue on temporal aspects of motor-skill learning
+#### Experiment 1: Determining the effect of fatigue on temporal aspects of motor-skill learning
 
 38 participants (23 women, mean age 22.2, ±2 years, all right-handed) were recruited and randomly assigned to one of two groups, a fatigued group (FTG, N = 20) and a non-fatigue group (NoFTG, N = 18). All participants underwent ~45 min testing sessions on two or four consecutive days; see Figure 6. Sessions took place between 9 a.m. and 6 p.m. and were separated by 24 hr (±1 hr). Morning and afternoon sessions were counterbalanced between groups and subjects performed both sessions at similar times. Each day, both groups performed the isometric pinching task (see motor task) for four blocks of 30 trials each. At the start and the end of each experimentation sessions, participants in both groups were asked to press the force transducer with their maximum force for 5 s in order to assess the maximum voluntary contraction (MVC). On Day 1, the FTG was instructed to sustain MVC until the produced force dropped to the level of the upper limit for gate 2, the target that requires the largest force production. Thus, the induction of fatigue always stayed above the force level needed for task execution. Time to fatigue was 68.91, SD 32.23 s on average. To counterbalance the amount of time of the fatigue induction, the non-fatigue group was asked to sustain 5% of their MVC over a matched period of time. On Day 2, the design was identical for both groups: assessment of MVC at the start and end of the session, with four blocks of skill task without a break in between. To determine how long fatigue influenced motor-skill learning, a subgroup (N = 24, FTG and NoFTG both N = 12) participated in two extra days of experimentation. The design in Days 3 and 4 was identical to Day 2 for both groups, see Figure 6.
 
-## Experiment 2: Determining the effects of fatigue on motor-skill learning measured by transfer of skill
+#### Experiment 2: Determining the effects of fatigue on motor-skill learning measured by transfer of skill
 
 To investigate motor-skill learning within one session while avoiding the execution confounder, we assessed inter-manual skill transfer in the unfatigued, untrained left hand after participants trained with the right hand with or without fatigue. 20 participants were recruited to take part in experiment 2 (17 women, mean age 20.1 ± 3.0 years, all right-handed). Participants were again randomly assigned to either a fatigued or a non-fatigued group (FTGTRANSFER, N = 10; NoFTGTRANSFER, N = 10) and tested in a single session. The task design was identical to the first day in experiment 1. Additionally, at the beginning and end of the session, participants completed one block of 15 trials with their unfatigued left hand; for visualization of the study design see Appendix 1—figure 3.
 
-## Experiment 3: Testing whether the effects of fatigue on learning are centrally mediated
+#### Experiment 3: Testing whether the effects of fatigue on learning are centrally mediated
 
 In experiment 3, a new group of 40 healthy participants was recruited (15 women, mean age 23.5 ± 2.9 years, four left-handed, one ambidextrous) and randomly assigned to one of three groups: a non-fatigue group (NoFTGSHAM, N = 10), or one of two Fatigue groups (FTGSHAM, N = 15 or FTGM1, N = 15). The overall study design for all three groups was similar to experiment 1; for visualization of the study design see Appendix 1—figure 4. In addition, at the end of Day 1, participants received depotentiation TMS (DePo) either over their registered ‘M1 hot-spot’ (FTGM1; see also TMS section) or a control location (FTGSHAM and NoFTGSHAM). The depotentiation stimulation is a shorter form of continuous theta burst stimulation with TMS which has been shown to reverse potentiating plasticity (Huang et al., 2010; Huang et al., 2005; Huang et al., 2008) and disrupt skill retention (Cantarero et al., 2013a). DePo stimulation was administered in a double-blind fashion. A researcher not involved in the behavioral portion of the study delivered the stimulation, while those conducting the behavioral training were blinded to the stimulation location and protocol.
 
-## TMS
+### TMS
 
 Transcranial magnetic stimulation (TMS) was administered with a figure-eight coil (wing diameter = 70 mm) connected to a Magstim 200 stimulator (Magstim, UK). Using TMS, We located the ‘hot-spot’ of the abductor pollicis brevis muscle in the task-relevant hand at rest according to standardized procedures (Chen et al., 2008; Rossini et al., 1994). The stimulus intensity that elicited a motor evoked potential (MEP) with a peak-to-peak amplitude of approximately 1 mV was established (Stimulus intensity 1 mV, S1mV) to assess corticomotor excitability. Then 18 MEPs were recorded using the same intensity before the task, directly after the task, and after depotentiation on Day 1 as well as before and after the task at Day 2. The parameters for depotentiation were based on previous reports (Cantarero et al., 2013a; Huang et al., 2010), consisted of bursts of three pulses at 50 Hz repeated at 200 ms intervals at an intensity of 70% of the rMT for 10 s. Using the 10–20 electroencephalogram coordinate system, Pz was used as a control stimulation location (SHAM stimulation). Stereotactic neuronavigation (BrainSight, Rogue Research, Montreal, Quebec, Canada) was used to track coil position within sessions. EMG activity from the abductor pollicis brevis muscle was recorded using surface electrodes taped in a belly-tendon orientation. Data were recorded with an AMT-8 (Bortec Biomedical Ltd; sampling rate 5000 Hz, amplification 1000x, band-pass filtering 10–1000 Hz) and saved for offline analysis.
 
-## Experiment 4: Determining the effects of fatigue on a sequence learning task
+#### Experiment 4: Determining the effects of fatigue on a sequence learning task
 
 Learning the motor-skill task in experiment 1–3 involves the acquisition of knowledge of a logarithmic force-distance sensorimotor map as well as learning to produce the correct sequence of forces to reach the different targets (Spampinato and Celnik, 2017). To further understand if muscle fatigue influences both of these aspects of skill learning, we added a 10-element sequence task that is cognitively challenging, but has minimal force demands. 18 participants (11 women, mean age 27.5 ± 9.1 years, all right-handed) were randomly assigned to a fatigued or a non-fatigued group (FTGSEQUENCE, N = 9; NoFTGSEQUENCE, N = 9). The experimental set-up was identical to Experiment 1, but instead of the pinch force skill task, both groups trained on the 10-element sequence task after fatigue or the control isometric contraction; for visualization of the study design see Appendix 1—figure 5.
 
-## Data analysis
+### Data analysis
 
 For analysis of MVC see Appendix 1.
 
-## Analyzing movement time/Error rate
+### Analyzing movement time/Error rate
 
 For each trial in the skill task, movement time and error rate were recorded: movement time was defined as the duration from movement onset (forced controlled cursor leaving start position) to reaching the end gate. Error rate was defined as the percentage of trials per block in which participants under- or overshot at least one of the five targets. For the skill learning task, movement time was defined as the duration between the first and the 10th correct key press. Error rate was defined as the percentage of trials per block (number of errorless sequences per block).
 
-## All experiments
+### All experiments
 
 Movement time and error rate were compared using rmANOVA with the within-subject factor ‘block’ (four levels: b1, b2, b3 and b4) and the between-subject factor ‘group’ (Exp. 1 and 2: two levels, Exp. 3: three levels) for each single day (see Appendix 1).
 
-## Analyzing motor skill
+### Analyzing motor skill
 
 To quantify motor performance, we calculated a skill measure, composed of movement time and error rate. As done in prior studies, the skill measure was calculated as: a=(1- error rate)/ [error rate (ln(movement time)b)], where b is 5.424 as predefined for this particular task in prior studies (Reis et al., 2009; Cantarero et al., 2013b; Mawase et al., 2017; Spampinato and Celnik, 2017).
 

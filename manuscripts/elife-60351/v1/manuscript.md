@@ -37,13 +37,73 @@ Defective HH pathway function may be a final common mechanism for all classical 
 
 ## Results
 
-## The window of sensitivity to EtOH-induced HPE coincides with Nodal signaling
+### The window of sensitivity to EtOH-induced HPE coincides with Nodal signaling
 
 All studies were performed with mice on a 129S6 background and are referred to only by genotype unless otherwise noted. Our model uses one-hour timed mating of Cdon+/- mice, allowing rigorous identification of a window of sensitivity for EtOH’s teratogenic effects. The standard EtOH treatment regimen involves one dose at E7.0 and a second dose four hours later. This results in a full range of HPE phenotypes in Cdon-/- mice with overall penetrance of ~75% (Hong and Krauss, 2012). The protocol is analogous to the original regimen developed to model fetal alcohol spectrum disorders in C57BL/6J mice, wherein ~ 19% developed HPE phenotypes (Aoto et al., 2008; Sulik et al., 1981). HPE phenotypes were not induced in wild type C57BL/6J mice when EtOH was administered at E6.5 or E7.5 (Aoto et al., 2008). We have shown that EtOH is ineffective in Cdon-/- mice when administered at E8.0 (Hong and Krauss, 2012). To further refine the temporal window of sensitivity, we assessed the ability of EtOH to induce HPE in Cdon-/- animals when administered at E7.25 and E7.5, with embryos examined for external HPE phenotypes at E14.0. EtOH was effective at E7.25, but not at E7.5 (Table 1 and Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/60351/elife-60351-fig1-v1.jpg)
 
-**Figure 1.:** Cdon Embryos.-/-Frontal views of E14.0 embryos. Treatment of Cdon embryos with EtOH at E7.25, but not E7.5, results in HPE (see -/-Table 1 for quantification). The Cdonembryo treated with EtOH at E7.25 displays a fused upper lip and single nostril (black arrow), whereas the -/-Cdonembryo treated with EtOH at E7.5 does not and resembles the saline control (red arrow).-/-
+**Figure 1.:** Frontal views of E14.0 embryos. Treatment of Cdon-/- embryos with EtOH at E7.25, but not E7.5, results in HPE (see Table 1 for quantification). The Cdon-/-embryo treated with EtOH at E7.25 displays a fused upper lip and single nostril (black arrow), whereas the Cdon-/-embryo treated with EtOH at E7.5 does not and resembles the saline control (red arrow).
+
+**Table 1.**
+ Time course of EtOH-Induced HPE in Cdon-/- Embryos
+
+
+<table>
+  <thead>
+    <tr>
+      <th>EtOH treatment:</th>
+      <th colspan="4">E7.25</th>
+      <th colspan="2">E7.5</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="2">Saline</th>
+      <th colspan="2">EtOH</th>
+      <th colspan="2">EtOH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Phenotype*</td>
+      <td>Cdon+/-</td>
+      <td>Cdon-/-</td>
+      <td>Cdon+/-</td>
+      <td>Cdon-/-</td>
+      <td>Cdon+/-</td>
+      <td>Cdon-/-</td>
+    </tr>
+    <tr>
+      <td>Fused upper lip</td>
+      <td>0/17</td>
+      <td>2/14</td>
+      <td>0/21</td>
+      <td>13/24**</td>
+      <td>0/13</td>
+      <td>0/22</td>
+    </tr>
+    <tr>
+      <td>Single nostril</td>
+      <td>0/17</td>
+      <td>0/14</td>
+      <td>0/21</td>
+      <td>5/24</td>
+      <td>0/13</td>
+      <td>0/22</td>
+    </tr>
+    <tr>
+      <td>Proboscis</td>
+      <td>0/17</td>
+      <td>0/14</td>
+      <td>0/21</td>
+      <td>2/24</td>
+      <td>0/13</td>
+      <td>0/22</td>
+    </tr>
+  </tbody>
+</table>
+
+_* All embryos with HPE had fused upper lip, a fraction of these showed single nostril and proboscis.**p=0.0165 by Fisher’s two-tailed exact test, when compared to EtOH-treated Cdon+/- embryos._
 
 EtOH itself is the HPE-inducing teratogen in this system (Hong and Krauss, 2017). The developmental processes directly perturbed by EtOH must therefore occur: 1) during the sensitive time window; and 2) prior to EtOH clearance, even if defects in midline development occur later. When administered at E7.0, maternal blood EtOH levels peaked at E7.25 and were no longer detectable by ~E7.75 (Hong and Krauss, 2012). Critically, EtOH is no longer effective at E7.5, a time reported to be prior to SHH expression and function in prechordal plate-mediated rostroventral midline patterning (Echelard et al., 1993; McMahon et al., 2003). These results argue that EtOH targets processes other than, or in addition to, HH signaling in Cdon-/- mice. Consistent with this conclusion, the time of peak sensitivity to HPE induced by the direct SMO inhibitor, Vismodegib, was E7.5, 6–12 hr later than for EtOH (Heyne et al., 2015).
 
@@ -51,9 +111,9 @@ Both the window of sensitivity to EtOH and peak EtOH levels overlap with inducti
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/60351/elife-60351-fig2-v1.jpg)
 
-**Figure 2.:** Lefty2 at the Primitive Streak Stage of EtOH-Treated Cdon Embryos.-/-Whole mount in situ hybridization analyses of Lefty2 in embryos of the indicated genotype and treatment harvested at E7.25. Lefty2 expression was decreased specifically in EtOH-treated Cdon embryos. Numbers of embryos with similar results: -/-Cdon (saline) = 6; +/-Cdon (EtOH) = 4; +/-Cdon (saline) = 9; -/-Cdon (EtOH) = 9. Scale Bar, 200 μm.-/-
+**Figure 2.:** Whole mount in situ hybridization analyses of Lefty2 in embryos of the indicated genotype and treatment harvested at E7.25. Lefty2 expression was decreased specifically in EtOH-treated Cdon-/- embryos. Numbers of embryos with similar results: Cdon+/- (saline) = 6; Cdon+/- (EtOH) = 4; Cdon-/- (saline) = 9; Cdon-/- (EtOH) = 9. Scale Bar, 200 μm.
 
-## Cdon interacts genetically with Nodal pathway components
+### Cdon interacts genetically with Nodal pathway components
 
 Mice with mutations resulting in complete loss of Nodal signaling gastrulate abnormally and die early in development, but hypomorphic pathway mutants display a range of HPE phenotypes (Andersson et al., 2006; Chu et al., 2005; Lowe et al., 2001; Nomura and Li, 1998; Schier, 2009; Shen, 2007; Song et al., 1999). To further probe the linkage between CDON and regulation of Nodal signaling, we assessed whether Cdon interacted genetically with Tdgf1 and Lefty2, direct positive and negative regulators of the Nodal pathway, respectively. When analyzed at E10,~14% of Cdon-/- embryos treated with EtOH had alobar HPE and cyclopia, dying in utero by E11 (Hong and Krauss, 2012; Hong and Krauss, 2013). When studied at E14,~70% of such embryos displayed lobar HPE and a range of craniofacial midline phenotypes, including fused upper lip and single nostril (Hong and Krauss, 2012; Hong and Krauss, 2013). To address genetic interactions between Cdon and Nodal pathway regulators, we took advantage of the high penetrance of phenotypes at E14 and analyzed embryos at this stage for these unambiguous, easily scored phenotypes.
 
@@ -61,33 +121,125 @@ Targeted mutations in Tdgf1 and Lefty2 (Ding et al., 1998; Meno et al., 1999) we
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/60351/elife-60351-fig3-v1.jpg)
 
-**Figure 3.:** Tdgf1 Heterozygosity Enhances EtOH-Induced HPE in Cdon Embryos.-/-Frontal views of E14.0 embryos. Removal of one copy of Tdgf1 enhanced the response of Cdon embryos to a dose of 2.9 g/kg EtOH (see -/-Table 2 for quantification). The EtOH-treated Cdon embryo displays a fused upper lip (arrow).-/-;Tdgf1+/-
+**Figure 3.:** Frontal views of E14.0 embryos. Removal of one copy of Tdgf1 enhanced the response of Cdon-/- embryos to a dose of 2.9 g/kg EtOH (see Table 2 for quantification). The EtOH-treated Cdon-/-;Tdgf1+/- embryo displays a fused upper lip (arrow).
+
+**Table 2.**
+ Tdgf1 Heterozygosity Enhances EtOH-Induced HPE in Cdon-/- Embryos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment</th>
+      <th colspan="4">Genotype (# embryos with HPE/total (%))*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="2">Cdon+/-;Tdgf1+/-</td>
+      <td>Cdon-/-;Tdgf1+/+</td>
+      <td>Cdon-/-;Tdgf1+/-</td>
+    </tr>
+    <tr>
+      <td>Saline</td>
+      <td colspan="2">0/23 (0%)</td>
+      <td>0/11 (0%)</td>
+      <td>2/27 (7.4%)</td>
+    </tr>
+    <tr>
+      <td>EtOH (2.9 g/kg)</td>
+      <td colspan="2">1/48 (2.1%)</td>
+      <td>9/32 (28.1%)</td>
+      <td>31/56 (55.4%)**</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Crosses between the following genotypes were used to generate the genotypes scored above:Cdon+/-;Tdgf1+/- x Cdon+/-;Tdgf1+/-.Cdon+/-;Tdgf1+/- x Cdo-+/-;Tdgf1+/-.Cdon+/- x Cdon+/-;Tdgf1+/-.Cdon+/- x Cdon-/-;Tdgf1+/-.Cdon-/- x Cdon+/-;Tdgf1+/-.No HPE was found in offspring genotypes other than those shown.** p=0.014 by Fisher's two-tailed exact test, when compared to EtOH-treated Cdon-/-; Tdgf1 +/+ embryos._
 
 Nodal-/- and Lefty2-/- embryos have opposite defects in gastrulation and display dosage-dependent genetic interactions, with Lefty2 functioning as a negative regulator of the pathway (Meno et al., 1999). To test for phenotypic suppression in EtOH-induced HPE, we used the standard dose of EtOH (3.48 g/kg) for these analyses, as it results in high penetrance. All embryos with HPE at E14 display a fused upper lip, while only some show the more severe single nostril phenotype. Approximately 70% of EtOH-treated Cdon-/-;Lefty2+/+ embryos had a fused upper lip, similar to our previous findings (Hong and Krauss, 2012; Hong and Krauss, 2013), whereas 54% of Cdon-/-;Lefty2+/- embryos did, revealing a trend toward overall reduction of HPE frequency (p=0.14). However, while 21% of EtOH-treated Cdon-/-;Lefty2+/+ embryos had a single nostril, only 6% of Cdon-/-;Lefty2+/- embryos did (p=0.04) (Table 3 and Figure 4 ). Again, EtOH-treated mice of other genotypes and saline-treated control mice did not display HPE. Therefore, removal of one copy of Lefty2 rescued a more severe form of HPE associated with EtOH treatment. Taken together, these studies revealed that the Nodal signaling components Tdgf1 and Lefty2 act as heterozygous enhancer and suppressor genes, respectively, of EtOH-induced HPE in Cdon-/- embryos.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/60351/elife-60351-fig4-v1.jpg)
 
-**Figure 4.:** Lefty2 Heterozygosity Suppresses EtOH-Induced HPE in Cdon Embryos.-/-Frontal views of E14.0 embryos. Removal of one copy of Lefty2 suppressed formation of single nostril in Cdon embryos in response to a dose of 3.48 g/kg EtOH (see -/-Table 3 for quantification). The EtOH-treated Cdon embryo displays a fused upper lip and single nostril (black arrow), whereas the EtOH-treated -/-Cdon embryo has a fused upper lip and two nostrils (red arrow).-/-;Lefty2+/-
+**Figure 4.:** Frontal views of E14.0 embryos. Removal of one copy of Lefty2 suppressed formation of single nostril in Cdon-/- embryos in response to a dose of 3.48 g/kg EtOH (see Table 3 for quantification). The EtOH-treated Cdon-/- embryo displays a fused upper lip and single nostril (black arrow), whereas the EtOH-treated Cdon-/-;Lefty2+/- embryo has a fused upper lip and two nostrils (red arrow).
 
-## EtOH inhibits Activin/Nodal signaling in mEpiSCs
+**Table 3.**
+ Lefty2 Heterozygosity Supresses EtOH-Induced HPE in Cdon-/- Embryos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment</th>
+      <th colspan="4">Genotype (# affected/total (%))*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="2">Total HPE</td>
+      <td colspan="2">Single nostril</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cdon-/-;Lefty2+/+</td>
+      <td>Cdon-/-;Lefty2+/-</td>
+      <td>Cdon-/-;Lefty2+/+</td>
+      <td>Cdon-/-;Lefty2+/-</td>
+    </tr>
+    <tr>
+      <td>Saline</td>
+      <td>1/12 (8.3%)</td>
+      <td>0/10 (0%)</td>
+      <td>0/12 (0%)</td>
+      <td>0/10 (0%)</td>
+    </tr>
+    <tr>
+      <td>EtOH (3.48 g/kg)</td>
+      <td>33/47 (70.2%)</td>
+      <td>26/48 (54.2%)</td>
+      <td>10/47 (21.3%)</td>
+      <td>3/48 (6.3%)**</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Crosses between the following genotypes were used to generate the genotypes scored above:Cdon+/-;Lefty2+/- x Cdon+/-;Lefty2+/-.Cdon+/-;Lefty2+/- x Cdo-+/-;Lefty2+/-.Cdon+/- x Cdon+/-;Lefty2+/-.Cdon+/- x Cdo-/-;Lefty2+/-.Cdon-/- x Cdon+/-;Lefty2+/-.No HPE was found in offspring genotypes other than those shown.**p=0.04 by Fisher's two-tailed exact test, when compared to EtOH-treated Cdon-/-;Lefty2+/+ embryos with a single nostril._
+
+### EtOH inhibits Activin/Nodal signaling in mEpiSCs
 
 The APS is a small, transiently existing cell population, making it hard to study directly. Cultured mEpiSCs have transcriptional and functional properties resembling APS cells (Kojima et al., 2014; Tsakiridis et al., 2014), making them a tractable in vitro surrogate model. mEpiSCs rely on FGF2 and Activin/Nodal signaling for maintenance as self-renewing, pluripotent stem cells (Brons et al., 2007; Vallier et al., 2009). Activin A and Nodal use the same receptor and signaling mechanism, except that Nodal, but not Activin A, requires the co-receptor TDGF1. Therefore, we evaluated the effects of EtOH on Activin/Nodal signaling in mEpiSCs.
 
 A direct readout of Nodal signaling activity is receptor-mediated phosphorylation of SMAD2 at its C-terminus (Robertson, 2014; Schier, 2009; Shen, 2007). We assessed C-terminally phosphorylated SMAD2 (p-SMAD2C) and total SMAD2 levels in the mEpiSC line, EpiSC9 (Najm et al., 2011), after treatment with EtOH for 6 hr. A relatively short treatment duration was chosen because: 1) the in vivo model is an acute exposure regimen; 2) the window of sensitivity to EtOH-induced HPE is <12 hr; and 3) high EtOH levels last only about 10 hr in pregnant females (Hong and Krauss, 2012). EtOH dose-dependently diminished p-SMAD2C levels in mEpiSCs, without altering total SMAD2 levels (Figure 5A,B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/60351/elife-60351-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative western blot of mEpiSCs treated with the indicated doses of EtOH for 6 hr. GAPDH was used as a loading control. (B) Densitometric quantification of p-SMAD2C levels, relative to total Smad2; p-JNK1 levels, relative to total JNK1; and p-SMAD2L levels, relative to total SMAD2, with the indicated doses of EtOH. N = 3 experiments with two biological replicates (as shown in (A)) in each experiment. (C) qRT-PCR analysis of Nanog, Nodal, Pou5f1, and Sox2 expression in mEpiSCs treated with the indicated doses of EtOH for 6 hr. Expression was normalized to Gapdh expression. N = 3 experiments with two biological replicates in each experiment. Values for (B) and (C) are means ± SEM, *p<0.05, **p<0.01, ***p,0.001 by Student’s t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60351/elife-60351-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** qRT-PCR analysis of Lefty1, Lefty2, Hoxa1, Six1, and Gbx2 expression in mEpiSCs treated with the indicated doses of EtOH for 6 hr. Expression was normalized to Gapdh expression. N = 3 experiments with two biological replicates in each experiment. Values are means ± SEM, *p<0.05, **p<0.01, ***p,0.001 by Student’s t-test.
+
 EtOH stimulates activation of the MAP kinase, JNK, in specific cell types (McAlhany et al., 2000; Ren et al., 2017). SMAD2 is phosphorylated in its linker region by MAP kinases (Massague, 2003; Rezaei et al., 2012), usually leading to inhibition of SMAD2 function (Grimm and Gurdon, 2002; Kretzschmar et al., 1999; Lessard et al., 2018). We therefore assessed total and phosphorylated (activated) forms of JNK1 MAP kinase in EtOH-treated mEpiSCs. EtOH dose-dependently increased phospho-JNK1 (T183/Y185) levels (p-JNK1; Figure 5A,B). Consistent with EtOH-induced p-JNK1 activation, phosphorylation of the SMAD2 linker region (p-SMAD2L) also occurred in an EtOH dose-dependent manner, with production of p-JNK1 and p-SMAD2L correlating well (Figure 5A,B).
 
 Human embryonic stem cells (hESCs) resemble mEpiSCs (Pauklin and Vallier, 2015). Treatment of hESC or mEpiSC cultures with the ALK4 inhibitor, SB43152, led to reduction of Activin/Nodal target gene expression and, eventually, induction of early markers of neuroectoderm differentiation (Chng et al., 2010; Li et al., 2015; Liu et al., 2018; Vallier et al., 2009). These studies generally used time courses of days to weeks, but Vallier et al. assessed expression of five Activin/Nodal target and/or pluripotency-related genes in hESCs treated with SB43152 for 6 hr, the same amount of time we treated mEpiSCs with EtOH. Levels of Nanog, Nodal, and LeftyA mRNA were reduced by SB43152, whereas levels of Pou5f1 (also called Oct4) and Sox2 underwent little or no change (Vallier et al., 2009). We assessed expression of these five genes in mEpiSCs treated with EtOH for 6 hr (Figure 5C). Similar to SB43152-treated hESCs, EtOH-treated mEpiSCs displayed significantly reduced levels of Nanog and Nodal mRNAs, while Pou5f1 and Sox2 mRNA levels were largely unchanged. Expression of the additional SB43152-inhibitable mEpiSC markers Fgf5 and T (Liu et al., 2018) were also reduced by EtOH treatment (Figure 5C). In contrast, EtOH did not alter levels of Lefty1 or Lefty2 in mEpiSC cultures (Figure 5—figure supplement 1). As these are known Activin/Nodal target genes, this result might be related to differences in SB43152 vs. EtOH treatment, or differences in half-lives of these mRNAs in human vs. mouse cultures. Therefore, acute EtOH treatment of mEpiSCs resulted in an inhibitory SMAD2 phosphorylation pattern and changes in gene expression similar to those induced by a direct Activin/Nodal pathway inhibitor. Induction of neuroectoderm-specific genes (e.g., Hoxa1, Six1, and Gbx2) was observed in hESCs treated with SB43152 for 2–6 days (Chng et al., 2010; Vallier et al., 2009). After 6 hr of EtOH treatment, we found a varied response, with Hoxa1 levels strongly induced, Six1 expression displaying a biphasic dose-response, and Gbx2 levels reduced (Figure 5—figure supplement 1).
 
-## Cdon and Lrp2 genetically interact in mice to generate phenotypes resembling Nodal pathway hypomorphs, and both bind to TDGF1
+### Cdon and Lrp2 genetically interact in mice to generate phenotypes resembling Nodal pathway hypomorphs, and both bind to TDGF1
 
 Our findings argue that CDON plays an earlier role in development than its known function as a SHH co-receptor. The need for EtOH exposure to reveal this role suggests that CDON’s effects in primitive streak embryos may be redundant with other factors. The HH co-receptors BOC and GAS1 are not likely to be such factors, as Cdon;Boc;Gas1 triple knockout mice had a phenotype that is close to a complete loss of embryonic HH pathway function, but not Nodal pathway-like phenotypes (Allen et al., 2011). LRP2 is an endocytic and auxiliary receptor for multiple morphogenetic ligands and receptors (Willnow and Christ, 2017). Lrp2-/- mice have HPE of variable penetrance and severity (Christ et al., 2012; Spoelgen et al., 2005; Willnow and Christ, 2017; Willnow et al., 2012). We therefore constructed mice with mutations in Cdon and Lrp2. Some Cdon;Lrp2 double mutants at E11.5 had a severe truncation of anterior head and face structures, a phenotype neither single mutant displayed (Figure 6A). Double-mutant embryos studied at several stages displayed a range of phenotypes, including milder craniofacial truncation and strong HPE (Figure 6B,C). Of 30 Cdon;Lrp2 double mutants scored between 20 and 37 somites, 24 (80%) had HPE and 6 (20%) displayed anterior truncations. Loss of anterior head structure is a more severe phenotype than that seen even in Smo mutants, which lack all HH signaling (Zhang et al., 2001). These phenotypes – anterior truncations and HPE – are similar to those observed in mice with partial loss of Nodal pathway function (e.g., hypomorphic Nodal and Tdgf1 mutants, and Nodal+/-;Smad2+/- mutants, each have phenotypes that include truncation of anterior head structures and severe HPE) (Andersson et al., 2006; Chu et al., 2005; Lowe et al., 2001; Nomura and Li, 1998; Song et al., 1999). The Cdon/Lrp2 genetic interaction is specific and selective: the Cdon paralog Boc is not expressed in primitive streak-stage embryos (Mulieri et al., 2002; Zhang et al., 2001), and Boc mutant mice do not synergize with Lrp2 mutants (unpublished results), nor are they sensitive to EtOH-induced HPE (Hong and Krauss, 2012).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/60351/elife-60351-fig6-v1.jpg)
 
-**Figure 6.:** Cdon and Lrp2 Interact Genetically to Produce HPE and Anterior Truncations in Mice.(A) Whole mount E11.5 embryos of the indicated genotype. Note the loss of anterior head structures in the Cdon embryo (arrow). (-/-;Lrp2-/-B) E18.5 embryos of the indicated genotype in whole mount and alizarin red/alcian blue-stained skeleton preparations. Note the craniofacial truncation in the Cdon embryos (arrows). (-/-;Lrp2-/-C) Whole mount P0 Cdon embryo showing severe HPE.-/-;Lrp2-/-
+**Figure 6.:** (A) Whole mount E11.5 embryos of the indicated genotype. Note the loss of anterior head structures in the Cdon-/-;Lrp2-/- embryo (arrow). (B) E18.5 embryos of the indicated genotype in whole mount and alizarin red/alcian blue-stained skeleton preparations. Note the craniofacial truncation in the Cdon-/-;Lrp2-/- embryos (arrows). (C) Whole mount P0 Cdon-/-;Lrp2-/- embryo showing severe HPE.
 
 CDON is a multifunctional co-receptor and promotes HH-independent signaling when associated with various other receptors and cell adhesion molecules. In addition to binding HH ligands and PTCH1, CDON interacts with and influences signaling by classical cadherins; the Netrin receptor, Neogenin; and the WNT co-receptor, LRP6 (Bae et al., 2011; Bae et al., 2009; Izzi et al., 2011; Jeong et al., 2014; Kang et al., 2003; Kang et al., 2004; Lu and Krauss, 2010; Tenzen et al., 2006). We hypothesized that CDON might work similarly in Nodal signaling. To address this possibility, we assessed whether CDON binds to Nodal receptor components. A secreted CDON ectodomain fused in-frame at its carboxy terminus with the IgG Fc region (CDON-Fc) was expressed in HEK293T cells with individual ectodomains of the Nodal receptor (ActRIIA, ActRIIB, ALK4, and TDGF1) fused in-frame at their carboxy termini with alkaline phosphatase (AP). As positive and negative controls, SHH-N-AP and CD164-AP were used, respectively (SHH-N is the active portion of SHH, CD164 is a cell surface sialomucin) (Kang et al., 2002; Tenzen et al., 2006). The use of secreted ectodomains reduces the possibility that unknown, cell surface-bound factors promote binding or contribute directly to the complex. Conditioned medium was collected, and equivalent amounts of AP fusion proteins from conditioned media were pulled down and blotted for captured CDON-Fc. Conversely, equivalent levels of Fc were pulled down, and associated AP activity was quantified. Similar results were obtained in each pull-down: CDON-Fc interacted efficiently with TDGF1-AP, similar to the interaction between CDON-Fc and SHH-N-AP (Figure 7A,B). CDON-Fc did not bind to the negative control CD164-AP, and it interacted only weakly with the AP-tagged versions of ALK4, ActRIIA, and ActRIIB (Figure 7A,B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/60351/elife-60351-fig7-v1.jpg)
+
+**Figure 7.:** (A) The indicated AP-tagged proteins were co-expressed with CDON-Fc, and equivalent amounts of AP proteins in conditioned medium (CM) were pulled down. Levels of CDON-Fc in CM and in the pull down were detected by western blot. (B) CDON-Fc was pulled down from CM derived from transfections as in (A), the amount of CDON-Fc from various CM normalized, and associated AP enzyme activity quantified, N = ≥4 for (A) and (B). (C) Schematic of full length LRP2 and recombinant mini-receptor variants used. Each mini-receptor spans one of the four repetitive modules of the extracellular receptor domain and was expressed either as soluble ectodomain fragments fused to IgG Fc (designated sR1- sR4) or as a membrane-bound mini-receptor fused to the authentic transmembrane and intracellular domains of LRP2 (designated R1- R4). Soluble ectodomain fragments sR1 – sR4 were studied in panel (D), whereas mini-receptors R1 – R4 were used in Figure 7—figure supplement 1 . Amino acid numbers next to the full-length receptor polypeptide indicate the extent of individual receptor domains. (D) The indicated Fc-tagged proteins were pulled down from CM derived from transfections as in (A), the amount of Fc-tagged protein from various CM normalized, and associated AP enzyme activity quantified, N = 3. Values for (B) and (D) are means ± SEM, *p<0.05, **p<0.01 by Student’s t-test.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/60351/elife-60351-fig7-figsupp1-v1.jpg)
 
 As CDON and LRP2 interacted genetically to produce Nodal hypomorph-like phenotypes, we asked whether LRP2, like CDON, binds to TDGF1. The extracellular region of LRP2 harbors four repetitive modules, each comprising a cluster of complement-type repeats followed by EGF-type repeats and β-propellers. Each module is likely capable of independently binding ligands, as shown for the related receptor, LRP1 (Croy et al., 2003). LRP2 is a huge polypeptide of 4660 amino acids, making it difficult to express in vitro. Therefore, we constructed a series of soluble ‘mini-receptors’ (designated sR1, sR2, sR3, and sR4) spanning virtually the entire ectodomain in four non-overlapping pieces, each fused in-frame at their carboxy termini to the IgG Fc region (see Figure 7C). Each soluble ectodomain segment and TDGF1-AP were expressed in HEK293T cells and assessed for their ability to bind to each other. LRP2 binds SHH-N (Christ et al., 2012; McCarthy et al., 2002), so this ligand was used again as a positive control, with CD164-AP serving as a presumptive negative control. Each soluble LRP2 mini-receptor ectodomain (i.e., sR1 to sR4) pulled down SHH-N-AP, revealing that LRP2 harbors multiple SHH-N binding sites (Figure 7D). These results were confirmed by expressing each ectodomain segment joined with the native LRP2 transmembrane and cytoplasmic domains (mini-receptors R1, R2, R3, and R4; Figure 7C) in NIH3T3 cells. These cultures were incubated with recombinant SHH-N-GST fusion proteins for 2 hr, followed by immunoprecipitation with anti-LRP2 antibody recognizing all mini-receptors and western blotting with antibodies to LRP2 or GST. Again, all four mini-receptors pulled down SHH-N, whereas no pulldown of SHH-N was seen in control transfectants lacking LRP2 mini-receptors (Figure 7—figure supplement 1). Finally, we assessed LRP2 binding to TDGF1 with the soluble ectodomain binding assay. Similar to its multivalent interaction with SHH-N, the soluble LRP2 ectodomain segments sR3 and sR4 pulled down TDGF1-AP (Figure 7D). Soluble LRP2 ectodomain segments sR1 and sR2 also pulled down TDGF1-AP, but greater variability in the interaction was observed, leading to p>0.05 (p=0.14 and p=0.06, respectively). The efficiency of LRP2 mini-receptor ectodomains to bind SHH-N-AP and TDGF1-AP was similar to that of CDON-Fc (Figure 7D).
 
@@ -107,21 +259,472 @@ Our findings offer insight into how Cdon mutation synergizes with fetal alcohol 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Cdon-</td>
+      <td>MGI</td>
+      <td>MGI:1926387</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Cripto-</td>
+      <td>MGI</td>
+      <td>MGI:98658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Lefty2-</td>
+      <td>MGI</td>
+      <td>MGI:2443573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Lrp2-</td>
+      <td>MGI</td>
+      <td>MGI:95794</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>EpiSC9</td>
+      <td>Najm et al., 2011</td>
+      <td></td>
+      <td>Huang et al., 2017 Kojima et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Smad2 (Rabbit mAB)</td>
+      <td>Cell Signaling</td>
+      <td>#5339</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-Smad2C (Rabbit mAB)</td>
+      <td>Cell Signaling</td>
+      <td>#3108</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-Smad2L (Rabbit mAB)</td>
+      <td>Cell Signaling</td>
+      <td>#3104</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-JNK (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>#9252</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-JNK (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>#9251</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Gapdh (Mouse mAB)</td>
+      <td>Cell Signaling</td>
+      <td>#97166</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DIG AP conjugated</td>
+      <td>Roche</td>
+      <td>11093274910</td>
+      <td>WM in situ (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LRP2 (Goat)</td>
+      <td>Willnow et al., 1996</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SHH-N-AP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD164-AP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ActRIIA-AP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ALK4-AP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Cripto-AP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LRP2 sR1-Fc (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LRP2 sR2-Fc (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LRP2 sR3-Fc (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LRP2 sR4-Fc (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Cdon-Fc (plasmid)</td>
+      <td>Kang et al., 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human Plasma Fibronectin purified protein</td>
+      <td>MilliporeSigma</td>
+      <td>FC010</td>
+      <td>10 μg/ml/cm2</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Activin A</td>
+      <td>R and D Systems</td>
+      <td>338-AC</td>
+      <td>20 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FGF2</td>
+      <td>R and D Systems</td>
+      <td>234-FSE</td>
+      <td>12 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IgG Fc (human)</td>
+      <td>Jackson Laboratories</td>
+      <td>009-000-008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Protein G-agarose beads</td>
+      <td>Roche</td>
+      <td>11243233001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Anti-AP-conjugated agarose beads</td>
+      <td>Sigma</td>
+      <td>A2080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AP yellow liquid substrate</td>
+      <td>Sigma</td>
+      <td>P7998</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BM Purple</td>
+      <td>Roche</td>
+      <td>11442074001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DIG-labeling kit</td>
+      <td>Roche</td>
+      <td>11277073910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Effectene transfection reagent</td>
+      <td>Qiagen</td>
+      <td>301425</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA easy mini kit</td>
+      <td>Qiagen</td>
+      <td>74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superscript III First strand synthesis system</td>
+      <td>Invitrogen</td>
+      <td>18080051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iQ SyBR Green Supermix</td>
+      <td>BioRad</td>
+      <td>1708882</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>Prism 8 for MacOS ver 8.4.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_F</td>
+      <td>Invitrogen Dong et al., 2008</td>
+      <td>PCR primers</td>
+      <td>AACGACCCCTTCATTGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_R</td>
+      <td>Invitrogen; Dong et al., 2008</td>
+      <td>PCR primers</td>
+      <td>TCCACGACATACTCAGCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fgf5_F</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>GCTGTGTCTCAGGGGATTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fgf5_R</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>CACTCTCGGCCTGTCTTTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gbx2_F</td>
+      <td>Invitrogen; Harvard Primer Bank 133892275c2</td>
+      <td>PCR primers</td>
+      <td>GCAACTTCGACAAAGCCGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gbx2_R</td>
+      <td>Invitrogen; Harvard Primer Bank 133892275c2</td>
+      <td>PCR primers</td>
+      <td>CCTTGCCCTTCGGGTCATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hoxa1_F</td>
+      <td>Invitrogen; Matt et al., 2005</td>
+      <td>PCR primers</td>
+      <td>CGCACAATGTTCTGATGTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hoxa1_R</td>
+      <td>Invitrogen; Matt et al., 2005</td>
+      <td>PCR primers</td>
+      <td>TGCAAGCTTCATGACAGAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lefty1_F</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>AACCGCACTGCCCTTAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lefty1_R</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>CGCGAAACGAACCAACTTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lefty2_F</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>CAGCCAGAATTTTCGAGAGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lefty2_R</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>CAGTGCGATTGGAGCCATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nanog_F</td>
+      <td>Invitrogen; Chng et al., 2010</td>
+      <td>PCR primers</td>
+      <td>GGACTTTCTGCAGCCTTACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nanog_R</td>
+      <td>Invitrogen; Chng et al., 2010</td>
+      <td>PCR primers</td>
+      <td>GCTTCCAAATTCACCTCCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nodal_F</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>CCTGGAGCGCATTTGGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nodal_R</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>ACTTTCTGCTCGACTGGACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pou5f1_F</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>AGTTGGCGTGGAGACTTTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pou5f1_R</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>CAGGGCTTTCATGTCCTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Six1_F</td>
+      <td>Invitrogen; Chng et al., 2010</td>
+      <td>PCR primers</td>
+      <td>TTAAGAACCGGAGGCAAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Six1_R</td>
+      <td>Invitrogen; Chng et al., 2010</td>
+      <td>PCR primers</td>
+      <td>GGGGGTGAGAACTCCTCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sox2_F</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>GCGGAGTGGAAACTTTTGTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sox2_R</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>CGGGAAGCGTGTACTTATCCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>T_F</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>CTCGGATTCACATCGTGAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>T_R</td>
+      <td>Invitrogen; Liu et al., 2018</td>
+      <td>PCR primers</td>
+      <td>AAGGCTTTAGCAAATGGGTTGTA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal procedures were conducted in accordance with institutional guidelines for the care and use of laboratory animals as approved by the Institutional Animal Care and Use Committee (IACUC) of the Icahn School of Medicine at Mount Sinai and according to Max-Delbruck-Center guidelines following approval by local authorities (X9007/17). B6.129P2-Lefty2tm1Hmd mice were provided by Hiroshi Hamada. Tdgf1 mutant mice (Cripto-LacZ mice) were provided by Michael Shen. Both strains were transferred onto the 129S6/SvEvTac (129S6) background with the Taconic Speed Congenic Program, by backcrossing and mapping with the 1450 SNP array. Mice used for these experiments were estimated to be over 98% 129S6/SvEvTac background. These lines were crossed with Cdon+/tm1Rsk (Cdon+/-) mice on the 129S6 background (Cole and Krauss, 2003; Hong and Krauss, 2012) to generate 129S6.Cdon+/-;Lefty2+/- and 129S6.Cdon+/-Tdgf1+/- double mutant mice. Because Cdon and Tdgf1 are both located on chromosome 9, Cdon+/-;Tdgf1+/- mice were crossed with wild type mice and offspring screened for those that carried a recombinant chromosome 9 carrying both Cdon and Tdgf1 mutant alleles. Offspring of intercrosses of these mice were further crossed (see Tables 2 and 3 for details) and pregnant females treated with EtOH or saline as a control (Hong and Krauss, 2012). Briefly, two- to three-month old mice were mated for one hour in the dark and plugged females were collected. The time of the plug was designated as embryonic day (E) 0.0. Pregnant female mice were injected intraperitoneally twice with 15 μl per g body weight of solution of 30% EtOH in saline (3.48 g/kg) at E7.0 and again 4 hr later. For window-of-sensitivity experiments, pregnant females were treated similarly, except the initial dose was given at E7.25 or E7.5. For studies involving Cdon;Tdgf1 mutants, a lower dose of ethanol (25% EtOH in saline, 2.9 g/kg) was used. Saline injections were used as controls throughout.
 
 Mice with targeted gene disruption of Lrp2 (Lrp2tm1Her) have been described (Willnow et al., 1996). Lrp2+/tm1Her (Lrp2+/-) mice were kept on the C57BL/6N genetic background and crossed with Cdon+/- mice on the C57BL/6N genetic background. Offspring were further intercrossed, and Lrp2+/-;Cdon+/- mice were subjected to timed mating to collect embryos at the depicted embryonic day. Neither Cdon-/- mice nor Lrp2-/- mice on the C57BL/6N display anterior truncation phenotypes.
 
-## Whole mount in situ hybridization
+### Whole mount in situ hybridization
 
 Whole mount RNA in situ hybridization was performed according to standard protocols (Hong and Krauss, 2012). Briefly, embryos were dissected out and fixed in 4% paraformaldehyde in phosphate-buffered saline (PBS), dehydrated through a graded methanol series, and stored at −20°C. Rehydrated embryos were treated with 10 μg/ml proteinase K (Qiagen) in PBS, 0.1% Tween-20 (PBST) according to stage. Embryos were rinsed with PBST, post-fixed and hybridized with digoxygenin (DIG)-labeled probe in hybridization mix (50% formamide, 1.3x SSC pH 5.0, 5 mM EDTA, 50 μg/ml yeast tRNA, 100 μg/ml heparin, 0.2% Tween-20, and 0.5% CHAPS) overnight at 65°C. They were washed, blocked with 2% Roche blocking reagent, 20% heat-inactivated lamb serum in Tris-buffered saline with 0.1% Tween-20 (TBST) and incubated with alkaline phosphate-conjugated anti-DIG antibody (1:2000, Roche) in blocking buffer overnight at 4°C. After washing with TBST and NTMT (100 mM NaCl, 100 mM Tris pH9.5, 50 mM MgCl2, and 0.1% Tween-20), embryos were stained with BM Purple AP substrate (Roche) in the dark. Stained embryos were cleared in 80% glycerol and photographed with a Jenoptik ProgRes C3 camera attached to Nikon SMZ 1500 stereomicroscope. Captured images were assembled by Helicon Focus software (Helicon Soft).
 
-## Mouse epiblast stem cell culture and western blot and qRT-PCR analysis
+### Mouse epiblast stem cell culture and western blot and qRT-PCR analysis
 
 Mouse epiblast stem cells (EpiSC9 cells) were obtained from Jianlong Wang, authenticated by robust expression of pluripotency markers, and confirmed to be negative for mycoplasma infection. EpiSC9 cells were cultured as described (Huang et al., 2017). Briefly, cells were cultured on 0.1% fibronectin-coated plates (MilliporeSigma, 10 μg/ml/cm2) in N2B27 media supplemented with 20 ng/ml Activin A (R and D Systems) and 12 ng/ml Fgf2 (R and D Systems). Media were changed daily. EpiScs were treated with EtOH for six hours in fresh EpiSC media with supplements. For protein analysis, cells were harvested with RIPA buffer plus protease inhibitor (Sigma) and phosphatase inhibitor (Sigma). Western blotting was as described (Bae et al., 2009). Images were scanned and quantified using ImageJ software. Statistical significance was calculated using Student’s t-test and a cutoff of p<0.05. Primary antibodies used for western blot: SMAD2 (Cell Signaling #5339), p-SMAD2C (Cell Signaling #3108), p-SMAD2L (Cell Signaling #3104), JNK (Cell Signaling #9252), p-JNK (Cell Signaling #9251), and GAPDH (Cell Signaling #97166). For mRNA analysis, total RNA was extracted from EpiSCs using the RNAeasy kit (Quiagen). Reverse transcription and cDNA production were performed with Superscript III first strand synthesis system (Invitrogen). qPCR was performed using iQ SyBR green supermix (BioRad) on an iCycler iQ5 (BioRad). Gene expression levels were normalized to Gapdh.
 
-## Protein-protein interactions
+### Protein-protein interactions
 
 Expression vectors encoding soluble, tagged forms of CDON, SHH-N, CD164, ActRIIA, ActRIIB, ALK4, TDGF1, and LRP2, and LRP2 mini-receptors that encoded the LRP2 transmembrane and intracellular domains, were constructed by standard methods; details are available on request. HEK293T cells were obtained from ATCC, confirmed to be negative for mycoplasma infection, and cultured in DMEM with 10% FBS and 1x Penicillin/Streptomycin. HEK293T cells in 10 cm dishes were transfected with a total of either 2 or 3 μg of plasmid vectors using Effectene reagent (Qiagen). Media were changed to 2% FBS two days after transfection. Conditioned media were harvested five days afterwards. Soluble fusion proteins in conditioned media were quantified by dot blotting with human IgG Fc protein (Jackson ImmunoResearch Laboratories) as a standard, and by alkaline phosphatase (AP) enzyme activity using AP yellow liquid substrate (Sigma). For analysis of CDON-Fc interactions with soluble AP-tagged proteins, the factors were coexpressed in HEK293T cells. For Fc pull down and AP activity assays with CDON-Fc, soluble fusion proteins were incubated with protein G agarose beads (Roche) for 2 hr at 4°C. For analysis of soluble LRP2-Fc mini-receptors interactions with soluble AP-tagged proteins, LRP2 sR1-sR4 and the AP-tagged counterparts were generated separately in individual transfections and CM mixed together. Pull down complexes were washed five times with ice-cold HNTG buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.1% Triton X-100, 10% glycerol). Endogenous AP was inactivated by heat inactivation. AP activity in pull-down complexes was measured using AP yellow liquid substrate (Sigma). For AP pull down followed by western blot analysis, soluble fusion proteins were incubated with anti-AP conjugated agarose beads (Sigma) overnight at 4°C. Pull-down complexes were washed five times with HNTG buffer, eluted from the beads by boiling, and separated by SDS-PAGE. Antibodies used for western blot were HRP conjugated with goat anti-human Fc.
 

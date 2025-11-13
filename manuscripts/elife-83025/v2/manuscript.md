@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05m7pjf47 School of Electrical and Electronic Engineering and UCD Centre for Biomedical Engineering, University College Dublin Dublin Ireland
-2. https://ror.org/01a77tt86 Department of Statistics, University of Warwick Warwick United Kingdom
-3. https://ror.org/02tyrky19 Trinity College Institute of Neuroscience and School of Psychology, Trinity College Dublin Dublin Ireland
+1. School of Electrical and Electronic Engineering and UCD Centre for Biomedical Engineering, University College Dublin Dublin Ireland ([ROR:05m7pjf47](https://ror.org/05m7pjf47))
+2. Department of Statistics, University of Warwick Warwick United Kingdom ([ROR:01a77tt86](https://ror.org/01a77tt86))
+3. Trinity College Institute of Neuroscience and School of Psychology, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
 
 † Corresponding author
 
@@ -29,29 +29,157 @@ Our findings indicate that observers can adjust their decision-making policy bas
 
 ## Results
 
-## Behavioural signatures of contextual adjustments
+### Behavioural signatures of contextual adjustments
 
-We analysed the data of 14 participants that continuously monitored a cloud of randomly moving dots for unpredictable, intermittent targets defined by coherent upward motion. Within each block, the difficulty context was set to be fixed with (1) only weak targets, (2) only strong targets, or (3) mixed with both randomly occurring weak and strong targets. The mixed context was included to control for differences due to target motion coherence itself as distinct from context (see Figure 1A). As expected, participants detected targets more accurately and faster when the targets were strong for both the fixed and mixed context (Figure 1B; main effect of motion coherence on hit rates in generalised mixed regression model (GMM), χ2(1)=8.5, p<0.001, and reaction time (RT) in repeated-measures ANOVA (rANOVA), F(1, 13)=371.8, p<0.001). Additionally, participants were faster in the mixed context than the fixed ones (main effect of difficulty context on RT in rANOVA, F(1, 13)=21.3, p<0.001).
+We analysed the data of 14 participants that continuously monitored a cloud of randomly moving dots for unpredictable, intermittent targets defined by coherent upward motion. Within each block, the difficulty context was set to be fixed with (1) only weak targets, (2) only strong targets, or (3) mixed with both randomly occurring weak and strong targets. The mixed context was included to control for differences due to target motion coherence itself as distinct from context (see Figure 1A). As expected, participants detected targets more accurately and faster when the targets were strong for both the fixed and mixed context (Figure 1B; main effect of motion coherence on hit rates in generalised mixed regression model (GMM), $χ^{2}$(1)=8.5, p<0.001, and reaction time (RT) in repeated-measures ANOVA (rANOVA), F(1, 13)=371.8, p<0.001). Additionally, participants were faster in the mixed context than the fixed ones (main effect of difficulty context on RT in rANOVA, F(1, 13)=21.3, p<0.001).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig1-v2.jpg)
 
-**Figure 1.:** (A) Participants continuously monitored a cloud of moving dots to detect targets defined by a step change to coherent upward motion for 1 s. The inter-target interval (ITI) duration varied between 2, 4, 6, and 8 s. In each block of 24 targets, participants would perform a weak fixed context condition (step increase of 25%), a strong fixed context condition (step increase of 70%), or a mixed context condition (25% and 70% equally likely). (B) Reaction time (RT) cumulative quantile probability functions and the proportions of a 2 s ITI period containing a false alarm as a function of difficulty context (dots in cumulative quantile probability and false alarm plots). Each plot includes simulated data from a fitted leaky accumulator model with bound adjustment (solid lines in cumulative quantile probability plot and bars in the false alarm plot). (C) Schematic representation of the leaky accumulator model with adjustable bound parameters. Noisy evidence, which steps up during targets, is accumulated () until it reaches a context-dependent bound. Leaky accumulation is represented as a convolution with an exponential decay kernel. The degree of leakage is a free parameter but constrained to be equal (not adjusted) across contexts. When the target evidence is weak, a more liberal (lower) bound needs to be set to avoid misses; this comes however at the cost of more false alarms (example indicated in red). (y⁢(t)D) Bound parameter values estimated by the best fitting bound-adjustment model. All figures represent a sample size of N = 14. Error bars represent the 95% confidence interval. p-Values resulting from the GMM are indicated by the asterisks; *p<0.05, **p<0.01, and ***p<0.001.
+**Figure 1.:** (A) Participants continuously monitored a cloud of moving dots to detect targets defined by a step change to coherent upward motion for 1 s. The inter-target interval (ITI) duration varied between 2, 4, 6, and 8 s. In each block of 24 targets, participants would perform a weak fixed context condition (step increase of 25%), a strong fixed context condition (step increase of 70%), or a mixed context condition (25% and 70% equally likely). (B) Reaction time (RT) cumulative quantile probability functions and the proportions of a 2 s ITI period containing a false alarm as a function of difficulty context (dots in cumulative quantile probability and false alarm plots). Each plot includes simulated data from a fitted leaky accumulator model with bound adjustment (solid lines in cumulative quantile probability plot and bars in the false alarm plot). (C) Schematic representation of the leaky accumulator model with adjustable bound parameters. Noisy evidence, which steps up during targets, is accumulated ($y⁢(t)$) until it reaches a context-dependent bound. Leaky accumulation is represented as a convolution with an exponential decay kernel. The degree of leakage is a free parameter but constrained to be equal (not adjusted) across contexts. When the target evidence is weak, a more liberal (lower) bound needs to be set to avoid misses; this comes however at the cost of more false alarms (example indicated in red). (D) Bound parameter values estimated by the best fitting bound-adjustment model. All figures represent a sample size of N = 14. Error bars represent the 95% confidence interval. p-Values resulting from the GMM are indicated by the asterisks; *p<0.05, **p<0.01, and ***p<0.001.
 
-False alarm rates demonstrate a qualitative signature of contextual adaptations, with approximately zero in the strong context, higher false alarms rates in the weak context probability of 0.09 per 2 s ITI period, and intermediate rates in the mixed context (probability of 0.04 per 2 s ITI period; Figure 1B; GMM, χ2(1)=5.7, p<0.001 and χ2(1)=5.5, p<0.001, respectively). In accumulator models of decision making, these patterns can be captured by setting a higher bound when the task is easy, to avoid false alarms while still detecting all targets (see Figure 1C). Confirming this, a leaky accumulator model with a higher bound for the strong context (Figure 1D and Table 1 for all the fitted parameters) was able to accurately reproduce behavioural data, particularly the important context-dependent false alarm pattern (see bars of the false alarm plot in Figure 1B; G2=16).
+False alarm rates demonstrate a qualitative signature of contextual adaptations, with approximately zero in the strong context, higher false alarms rates in the weak context probability of 0.09 per 2 s ITI period, and intermediate rates in the mixed context (probability of 0.04 per 2 s ITI period; Figure 1B; GMM, $χ^{2}$(1)=5.7, p<0.001 and $χ^{2}$(1)=5.5, p<0.001, respectively). In accumulator models of decision making, these patterns can be captured by setting a higher bound when the task is easy, to avoid false alarms while still detecting all targets (see Figure 1C). Confirming this, a leaky accumulator model with a higher bound for the strong context (Figure 1D and Table 1 for all the fitted parameters) was able to accurately reproduce behavioural data, particularly the important context-dependent false alarm pattern (see bars of the false alarm plot in Figure 1B; G2=16).
 
-## EEG signatures of decision formation: adjustments across contexts
+**Table 1.**
+ Parameter values estimated for the leaky accumulator model with adjustable bound fit to behaviour alone, and for the neurally informed models featuring leak adjustment and criterion adjustment. ’Noise’ refers to the standard deviation (σ) for the Gaussian sensory evidence noise. ’Bound’ refers to the threshold set on the decision variable for triggering a response. ’Leak’ refers to the proportion of the current cumulative evidence total that leaks away on the following sample (note a 16.7 ms time step is used). No leak was fitted for the criterion-adjustment model. ‘Tnd’ refers to the non-decision time in ms. ‘Drift’ refers to drift rate, corresponding to the mean of the sensory evidence during targets. The goodness-of-fit metric, G2, is listed for each model. Note that, if comparing parameter values between models directly, it must be taken into account that whereas the bound-adjustment model set a scaling parameter of noise σ = 0.1 and allowed bounds to vary freely with respect to this. In contrast, the neurally constrained models were scaled directly by the normalised urgency signals relative to the ultimate action-triggering bound taken to be equal to 1. These fixed parameters are indicated in red.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Noise</th>
+      <th colspan="3">Variable parameters</th>
+      <th></th>
+      <th></th>
+      <th>Tnd</th>
+      <th colspan="4">Drift</th>
+      <th>G2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Bound-adjustment</td>
+      <td rowspan="3">0.1</td>
+      <td colspan="3">Bound</td>
+      <td rowspan="3"></td>
+      <td>Leak</td>
+      <td rowspan="3">238</td>
+      <td rowspan="2">W</td>
+      <td rowspan="2">S</td>
+      <td rowspan="2">MW</td>
+      <td rowspan="2">MS</td>
+      <td rowspan="3">16</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>S</td>
+      <td>M</td>
+      <td rowspan="2">0.14</td>
+    </tr>
+    <tr>
+      <td>0.58</td>
+      <td>0.85</td>
+      <td>0.63</td>
+      <td>0.05</td>
+      <td>0.14</td>
+      <td>0.05</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Leak-adjustment</td>
+      <td rowspan="3">0.05</td>
+      <td colspan="3">Leak</td>
+      <td rowspan="3"></td>
+      <td>Bound</td>
+      <td rowspan="3">238</td>
+      <td rowspan="2">W</td>
+      <td rowspan="2">S</td>
+      <td rowspan="2">MW</td>
+      <td rowspan="2">MS</td>
+      <td rowspan="3">23</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>S</td>
+      <td>M</td>
+      <td rowspan="2">1</td>
+    </tr>
+    <tr>
+      <td>0.02</td>
+      <td>0.08</td>
+      <td>0.04</td>
+      <td>0.02</td>
+      <td>0.06</td>
+      <td>0.03</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Criterion-adjustment</td>
+      <td rowspan="3">0.07</td>
+      <td colspan="3">Criterion</td>
+      <td rowspan="3"></td>
+      <td rowspan="3">1</td>
+      <td rowspan="3">230</td>
+      <td rowspan="2">W</td>
+      <td rowspan="2">S</td>
+      <td rowspan="2">MW</td>
+      <td rowspan="2">MS</td>
+      <td rowspan="3">16</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>S</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>0.02</td>
+      <td>0.06</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.10</td>
+      <td>0.04</td>
+      <td>0.09</td>
+    </tr>
+  </tbody>
+</table>
+
+### EEG signatures of decision formation: adjustments across contexts
 
 To test for electrophysiological evidence for the putative bound adjustment, we examined two signals known to reflect the dynamics of decision formation: decreases in beta frequency band activity (15–30 Hz) over motor cortex contralateral to the movement, reflecting motor preparation (see Figure 2A), and the CPP, reflecting motor-independent evidence accumulation (see Figure 2D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig2-v2.jpg)
+
+**Figure 2.:** (A) Beta amplitude (15–30 Hz) over the motor cortex, aligned to the target (left) and to the response (right), averaged for each condition and expressed as a difference relative to the corresponding pre-response level taken to reflect motor execution threshold (i.e. threshold level is indicated by zero). To ensure that the beta rebound effect following false alarms (see Figure 2—figure supplement 1) could not artificially drive the differences in excursion across conditions, targets occurring within 1.2 s of a false alarm were excluded from these data. The scalp topography shows the distribution of the difference between weak and strong targets in the baseline amplitude (again relative to the motor execution threshold; blue corresponds with more negative amplitude for strong relative to weak motion coherence). This highlights that the difference in beta excursion in the fixed strong relative to fixed weak context is maximal over the motor cortex. (B) The average beta excursion (i.e. difference of pre-target beta amplitude minus pre-response beta amplitude), plotted for three equal-size reaction time (RT) bins per condition. Smaller beta excursion predicts faster RTs as found in previous studies linking beta to a motor-level decision variable. (C) Grand-average beta excursion for all conditions, reflecting the neural index of bound settings. These show an obvious qualitative difference to the bound parameter values estimated in the behavioural data fit of the leaky accumulator model with adjustable bound in Figure 1D. (D) Centro-parietal positivity (CPP) signals averaged for each condition, target-locked (left) and response-locked (right). The topography of the indicated pre-response time window shows the cluster of electrodes used for plotting average waveforms. (E) Average pre-response CPP amplitude for each condition. All figures represent a sample size of N = 14. Error bars represent the 95% confidence interval. p-Values resulting from the GMM are indicated by the asterisks; *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Note, false alarm waveforms of the strong context could not be plotted as there were close to zero false alarms in this condition. Despite a common baseline correction to the pre-response level for hits, the level reached just prior to a false alarm aligned to that of the hits indicating that offset levels did not differ during inter-target interval (ITI) from during targets.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Target-locked N2 waveform and (B) N2 amplitude around 300 ms after target onset, plotted as a function of reaction time (RT) for each condition. There are main effects of both target motion coherence ($χ^{2}$(1)=4.7, p=0.006), with lower N2 for strong targets as well as in the mixed condition. Furthermore, there is a main effect of RT ($χ^{2}$(1)=–2.6, p=0.002), where faster RTs have lower N2s. All figures represent a sample size of N = 14. Error bars represent the 95% confidence interval. (C) The scalp topography shows the distribution of the difference between mixed and fixed contexts. Blue would correspond with more negative amplitude in the mixed relative to fixed context.
+
 It has long been established that beta oscillatory activity over motor cortical EEG sites gradually decreases in amplitude as participants prepare to make a movement with their contralateral limb (Donoghue et al., 1998; Pfurtscheller et al., 1996). More recently, several replicating findings further indicate that this beta-indexed motor preparation signal reflects a build-to-threshold decision variable driven by a combination of evidence accumulation and urgency. First, it builds at an evidence-dependent rate during decision formation and reaches a stereotyped threshold level at the time of motor execution (Kelly et al., 2021; O’Connell et al., 2012). Second, fluctuations in pre-target beta activity have been shown to predict trial-to-trial behavioural variability in the way accumulator starting point variability does in models (de Lange et al., 2013; Donner et al., 2009; Gould et al., 2012). Third, pre-target beta is systematically shifted closer to its pre-response threshold level under conditions of speed emphasis (Murphy et al., 2016; Steinemann et al., 2018; Kelly et al., 2021). Fourth, in scenarios where evidence onset is anticipated, beta starts building towards its threshold even before evidence onsets. This is consistent with a dynamic urgency component and aligns with other behavioural and electrophysiological markers of dynamic urgency observed in the similar scenarios (Kelly et al., 2021; Corbett et al., 2023).
 
-In line with this body of previous research, we took the amplitude reached by beta 80 ms prior to response (allowing for motor execution delays) to correspond to the threshold level required to trigger a response in a given condition. This way, the level in the pre-target baseline period can be taken to represent the decision variable starting point at the time of evidence onset. Thus, the difference between these two, known as the ‘excursion’, indexes the change in motor preparation required to commit to a detection decision and thus indexes bound settings in a given context (Heitz and Schall, 2012; Kelly et al., 2021, see below for separate analysis of baseline and pre-response amplitudes). First, to support the use of beta activity to reflect the motor-level decision variable in this dataset, we confirmed that it built up more steeply during higher coherence targets (Figure 2A; GMM, χ2(1)=–2.8, p=0.004), and that faster RTs within a given condition were associated with the signal starting relatively closer to pre-response threshold (Figure 2B; GMM, χ2(1)=2.6, p=0.008). Additionally, we found that the beta amplitude prior to a false alarm closely matched to the amplitude reached prior a true target detection, verifying the assumption that this threshold level is applied consistently within each block (see Figure 2—figure supplement 1). Turning then to context-dependent adjustments, we found that difficulty context (fixed vs. mixed) and motion coherence (weak vs. strong) had a significant interactive effect on beta excursion (Figure 2C; GMM, χ2(1)=2.8, p=0.006). Contrary to the prediction of the bound-adjustment model (Figure 1D), this was driven by a pattern whereby beta excursion was smaller, not larger, in the strong context relative to other conditions, indicative of a lower decision bound (weak vs. strong in fixed condition: χ2(1)=–2.3, p=0.02; strong fixed vs. strong mixed: χ2(1)=2.1, p=0.03).
+In line with this body of previous research, we took the amplitude reached by beta 80 ms prior to response (allowing for motor execution delays) to correspond to the threshold level required to trigger a response in a given condition. This way, the level in the pre-target baseline period can be taken to represent the decision variable starting point at the time of evidence onset. Thus, the difference between these two, known as the ‘excursion’, indexes the change in motor preparation required to commit to a detection decision and thus indexes bound settings in a given context (Heitz and Schall, 2012; Kelly et al., 2021, see below for separate analysis of baseline and pre-response amplitudes). First, to support the use of beta activity to reflect the motor-level decision variable in this dataset, we confirmed that it built up more steeply during higher coherence targets (Figure 2A; GMM, $χ^{2}$(1)=–2.8, p=0.004), and that faster RTs within a given condition were associated with the signal starting relatively closer to pre-response threshold (Figure 2B; GMM, $χ^{2}$(1)=2.6, p=0.008). Additionally, we found that the beta amplitude prior to a false alarm closely matched to the amplitude reached prior a true target detection, verifying the assumption that this threshold level is applied consistently within each block (see Figure 2—figure supplement 1). Turning then to context-dependent adjustments, we found that difficulty context (fixed vs. mixed) and motion coherence (weak vs. strong) had a significant interactive effect on beta excursion (Figure 2C; GMM, $χ^{2}$(1)=2.8, p=0.006). Contrary to the prediction of the bound-adjustment model (Figure 1D), this was driven by a pattern whereby beta excursion was smaller, not larger, in the strong context relative to other conditions, indicative of a lower decision bound (weak vs. strong in fixed condition: $χ^{2}$(1)=–2.3, p=0.02; strong fixed vs. strong mixed: $χ^{2}$(1)=2.1, p=0.03).
 
-More recently, another signature of decision formation has been characterised – the CPP – which, like beta, builds at an evidence-dependent rate to a peak around the time of decision commitment and response (O’Connell et al., 2012; Kelly and O’Connell, 2013). This signal, unlike beta, builds even in the absence of motor requirements, but does not undergo baseline shifts according to speed/accuracy emphasis (Steinemann et al., 2018). The current working hypothesis is thus that the CPP reflects pure cumulative evidence which feeds into motor-level decision variable alongside other evidence-independent signal components such as urgency. In support of this scheme, simulations of pure cumulative evidence build-up have been shown to match empirical CPP waveforms in their dynamics and pre-response amplitude patterns across conditions and RTs (Afacan-Seref et al., 2018; Kelly et al., 2021; Twomey et al., 2015). Here, a hypothetical higher bound setting in the strong context would predict that more cumulative evidence is required before reaching the movement execution threshold, and hence a higher CPP amplitude. More specifically, a true contextual adjustment effect should give rise to a CPP amplitude difference in the strong relative to weak context over and above any difference between high and low coherence targets in the mixed context. This, however, was not observed in the empirical pre-response CPP, where only a significant motion coherence effect was found (GMM: χ2(1)=5, p<0.001; Figure 2D and E). Tracing the waveforms beyond the pre-response measurement window shows that the CPP tends to climb higher for the mixed strong than fixed strong condition, if anything (Figure 2D). The electrophysiological data are therefore inconsistent with the bound-adjustment model. This raises the question of whether an alternative mechanism can explain the behavioural markers of policy adjustment while also producing the observed dynamics in neural decision signals.
+More recently, another signature of decision formation has been characterised – the CPP – which, like beta, builds at an evidence-dependent rate to a peak around the time of decision commitment and response (O’Connell et al., 2012; Kelly and O’Connell, 2013). This signal, unlike beta, builds even in the absence of motor requirements, but does not undergo baseline shifts according to speed/accuracy emphasis (Steinemann et al., 2018). The current working hypothesis is thus that the CPP reflects pure cumulative evidence which feeds into motor-level decision variable alongside other evidence-independent signal components such as urgency. In support of this scheme, simulations of pure cumulative evidence build-up have been shown to match empirical CPP waveforms in their dynamics and pre-response amplitude patterns across conditions and RTs (Afacan-Seref et al., 2018; Kelly et al., 2021; Twomey et al., 2015). Here, a hypothetical higher bound setting in the strong context would predict that more cumulative evidence is required before reaching the movement execution threshold, and hence a higher CPP amplitude. More specifically, a true contextual adjustment effect should give rise to a CPP amplitude difference in the strong relative to weak context over and above any difference between high and low coherence targets in the mixed context. This, however, was not observed in the empirical pre-response CPP, where only a significant motion coherence effect was found (GMM: $χ^{2}$(1)=5, p<0.001; Figure 2D and E). Tracing the waveforms beyond the pre-response measurement window shows that the CPP tends to climb higher for the mixed strong than fixed strong condition, if anything (Figure 2D). The electrophysiological data are therefore inconsistent with the bound-adjustment model. This raises the question of whether an alternative mechanism can explain the behavioural markers of policy adjustment while also producing the observed dynamics in neural decision signals.
 
-## Alternative neurally informed models
+### Alternative neurally informed models
 
 Following a recent approach (Kelly et al., 2021), we constructed models whose decision-bound settings were constrained to match the observed beta excursion measurements. We use beta activity as it best corresponds to the motor-level decision variable which is ultimately subjected to a threshold. After fitting to behaviour, we then examined whether key dynamical features of evidence accumulation predicted by the models matched those of the observed CPP time courses in a further validation step. To determine the beta activity-based model constraints, it was important to first characterise the dynamics of motor preparation during the ITI more fully. Beta waveforms during the full ITIs showed that in addition to the static shift towards the motor execution threshold in the strong context, there was a strong tendency for beta to decrease over the course of the ITI in all contexts (Figure 3A, lower). This increasing trend in beta mirrored a tendency for false alarm rate to increase during the ITI (Figure 3A, upper). In keeping with our recent work (Corbett et al., 2021; Kelly et al., 2021), we assumed that beta-indexed motor preparation is driven by the sum of evidence accumulation and evidence-independent urgency (Churchland et al., 2008; O’Connell et al., 2018), and reasoned that since evidence is zero mean during the ITI, beta dynamics can be taken to index urgency alone during that period. Accordingly, we took the grand-average beta amplitude waveform during the 8 s ITI and baseline-corrected these relative to the motor execution threshold indexed by average pre-responses in a given context. These traces were normalised and flipped so that 1 corresponded to the motor execution threshold level and 0 to the lowest level of motor preparation during the ITI. To this waveform a second-order polynomial was fitted to capture the smooth urgency trend relative to threshold (see Materials and methods for more details). This signal was added to the output of the continuous evidence accumulation and the resultant decision variable was subjected to the ultimate, constant decision threshold (see Figure 3B and C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig3-v2.jpg)
+
+**Figure 3.:** (A) Motor preparation throughout the inter-target interval (ITI), showing a dynamic urgency trend. The proportion of false alarms (per 1 s period) increases throughout the ITI (upper; four ITIs superimposed). This corresponds to an increase in motor preparation throughout the ITI reflected in decreasing beta amplitude (lower). Beta amplitude is plotted for the 8 s ITI relative to the corresponding pre-response level taken to reflect motor execution threshold. After normalisation, beta amplitude is used to model urgency ($u⁢(t)$) through the ITI generating the observed increase in false alarms. Model evaluation for the neurally informed (B) leak-adjustment and (C) sensory criterion-adjustment model comparing empirical and predicted reaction time (RT) cumulative quantile probability distributions and false alarm rates (per 2 s ITI period). Above are model schematics illustrating the different mechanisms of continuous accumulation and context-dependent adjustment. In (B) the leak-adjustment model, evidence is referenced to the centre of the noise distribution (C0, equal to zero) and accumulated ($y⁢(t)$) with a leak. Leak is represented in the time constant of a convolution kernel and is free to change across contexts. Meanwhile in (C) the criterion-adjustment model, evidence is referenced to a criterion ‘zero’ so that is adjustable across contexts ($C_{W}$, $C_{S}$, and $C_{M}$ with two shown for illustration) and fed to a non-leaky accumulator with a lower reflecting bound at zero to preclude negative accumulation. All figures represent the empircical data of N = 14. Error bars represent the 95% confidence interval.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** As a control, the neurally informed model fitting procedure was adjusted so that the temporal profile of dynamic urgency during the inter-target interval (ITI) was fixed and the static urgency offset between conditions was governed by two additional free parameters (here referred to as $S⁢h⁢i⁢f⁢t$). In this way, the predicted motor-level decision variable is more precisely linked to the sum of cumulative evidence plus urgency, and not just the urgency component. This is important in the criterion-adjustment model where due to the reflecting lower bound cumulative evidence ($y⁢(t)$) asymptotes to different levels depending on criterion settings. This leads to the misestimation of the predicted motor-level decision variable in that case, and thus breaking its linking proposition with beta excursion. Specifically, behaviour and beta excursion data were fit simultaneously by minimising G2+beta penalty. This beta penalty term was added to the cost function to quantify the divergence between the real and simulated pre-target beta excursion summed across condition, for example $p⁢e⁢n⁢a⁢l⁢t⁢y=w*(o⁢b⁢s⁢e⁢r⁢v⁢e⁢d⁢B⁢e⁢t⁢a-s⁢i⁢m⁢u⁢l⁢a⁢t⁢e⁢d⁢B⁢e⁢t⁢a)^{2}$ with $w=1000$ as a scaling factor. The dynamic urgency throughout the ITI was anchored to the mixed condition, while the static $S⁢h⁢i⁢f⁢t⁢s$ for the other conditions ($S_{W}$ and $S_{S}$) are fitted for the neurally informed (A) leak-adjustment and (B) sensory criterion-adjustment model. Above are the revised model schematics illustrating the mechanism of adding free $S⁢h⁢i⁢f⁢t$ parameters to determine urgency offsets $u⁢(t)$. All figures represent the empircical data of N = 14. Error bars represent the 95%
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Simulated single-trial example of the motor-level decision variable $(y⁢(t)+u⁢(t))$ during the inter-target interval (ITI).This example illustrates how, in the weak context, despite the decision variable lying at a tonically lower level due to the lower urgency, the lower sensory criterion in this case causes short-term bursts of cumulative noise to occur more often, leading to increased false alarms.
 
 Using these constraints, we explored other possible mechanisms of continuous accumulation and context-dependent adjustment. Since, contrary to expectations, the offsets in beta waveforms during the ITI would on their own predict increased false alarms in the fixed strong condition, there must be another adjustment applied elsewhere to counteract this. First, we considered that the same leaky accumulation mechanism as the bound-adjustment model may be at play but with the adjustment across contexts being applied to leak rather than bound (Figure 3B). Here, a more forgetful (higher leak) integration would reduce the risk of false alarms driven by noise (Glaze et al., 2015; Murphy et al., 2021; Ossmy et al., 2013) in a way similar to an increased bound, and thus presents an alternative means of setting a conservative policy. Second, we considered that, alternatively, a context-dependent evidence criterion could be set at each momentary evidence sample serving as a ‘zero’ reference placed between noise and signal evidence distributions, similar to the ‘drift criterion’ principle proposed by Ratcliff, 1985; Ratcliff et al., 1999; Ratcliff and Tuerlinckx, 2002. This criterion is distinct in meaning to that of signal detection theory (SDT) in that it does not on its own define the ultimate decision rule to categorise signal versus noise, but rather serves as a reference subtracted from the evidence so that only evidence samples substantially above the noise would be positively accumulated towards the decision bound, while noise alone would conversely tend to count negatively. To prevent runaway negative accumulation in this model, we adopt a reflecting lower bound at zero in the accumulator process (Usher and McClelland, 2001). Thus, this last model has two major distinctions: it assumes that an adjustable criterion is set directly on the momentary evidence in addition to the adjustable decision bound on the cumulative evidence (here linked directly to beta excursion), and involves a different form of information loss than leak which nevertheless has a similar effect of reducing risk of false alarms due to noise (see Figure 3C). False alarms in this model can be prevented by setting a higher evidence criterion, that is creating a stricter reference point distinguishing target evidence samples from noise.
 
@@ -59,17 +187,106 @@ While both neurally informed models mimic the behavioural patterns well (see Fig
 
 In the above neurally constrained model fits, we assumed that the cumulative evidence component of motor preparation is negligible during the ITI so that beta excursion directly constrains the urgency component only. A potential issue with this arises from the fact that the accumulator operates continuously in our models: whereas the zero-mean noise in the ITI would accumulate to an average level of zero in the leaky accumulation model, the lower reflecting bound in the criterion-adjustment model would cause a positive asymptotic value of the average evidence accumulation during the ITI which scales inversely with criterion. This would predict highest tonic activity in the weak context as it has the lowest criterion, so it does not constitute a viable alternative explanation the observed lowest beta offset in the weak context. Nevertheless, it highlights a likely inaccuracy in the model’s estimation of the degree of adjustment of criterion and urgency offsets. We therefore carried out a revised model fitting procedure in which urgency offsets were not set directly by beta excursion, but rather free to vary in order to reproduce the observed static shifts in the beta excursion across contexts simultaneously with the behavioural data (see detailed explanation in Figure 3—figure supplement 1). The behavioural fits still favoured the criterion-adjustment model (G2+penalty = 24) over the leak-adjustment model (G2+penalty = 33; see Table 2), and as expected, estimated even larger urgency offsets to compensate for the asymptotic evidence accumulation levels.
 
+**Table 2.**
+ Parameter values estimated for neurally informed models fitting behaviour and beta excursion simultaneously (see Figure 3—figure supplement 1). Neurally informed models were revised to directly constrain the temporal profile of the urgency signal during the inter-target interval (ITI) in the mixed condition only. Two free additional parameters were added for the additive offsets (’shift’) in urgency for the weak and strong context condition relative to the mixed context. Additionally, goodness-of-fit metrics are reported as G2+beta penalty.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Noise</th>
+      <th colspan="3">Variable parameters</th>
+      <th>Tnd</th>
+      <th colspan="4">Drift</th>
+      <th></th>
+      <th colspan="2">Shift</th>
+      <th>G2 + Penalty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Leak-adjustment</td>
+      <td rowspan="3">0.05</td>
+      <td colspan="3">Leak</td>
+      <td rowspan="3">238</td>
+      <td rowspan="2">W</td>
+      <td rowspan="2">S</td>
+      <td rowspan="2">MW</td>
+      <td rowspan="2">MS</td>
+      <td rowspan="3"></td>
+      <td rowspan="2">W</td>
+      <td rowspan="2">S</td>
+      <td rowspan="3">33</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>S</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>0.03</td>
+      <td>0.08</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.07</td>
+      <td>0.03</td>
+      <td>0.07</td>
+      <td>0.02</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Criterion-adjustment</td>
+      <td rowspan="3">0.09</td>
+      <td colspan="3">Criterion</td>
+      <td rowspan="3">248</td>
+      <td rowspan="2">W</td>
+      <td rowspan="2">S</td>
+      <td rowspan="2">MW</td>
+      <td rowspan="2">MS</td>
+      <td rowspan="3"></td>
+      <td rowspan="2">W</td>
+      <td rowspan="2">S</td>
+      <td rowspan="3">16</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>S</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>0.02</td>
+      <td>0.10</td>
+      <td>0.014</td>
+      <td>0.04</td>
+      <td>0.14</td>
+      <td>0.05</td>
+      <td>0.10</td>
+      <td>–0.14</td>
+      <td>0.06</td>
+    </tr>
+  </tbody>
+</table>
+
 To provide further model validation, the empirical CPP was compared against the simulated evidence accumulation time courses of the different models. In the case of the neurally informed models, predicted signatures of bound settings (e.g. cumulative evidence at response) are not informative for validation because they are forced to equal the observed beta excursions by design (see Discussion for comparison of the observed CPP pre-response amplitudes with observed beta excursions). Instead, for the comparison of these two models, respectively featuring leaky accumulation and criterion-referenced, non-leaky accumulation, the stimulus-locked dynamics of accumulator build-up rate (i.e. first derivative) are particularly informative. While a leaky accumulator would be expected to begin to decline in its steepness immediately as it starts to build, a non-leaky accumulator would be expected to rise linearly with a steady slope for a certain amount of time. To test this and compare the models, we analysed the slope profile of the observed and simulated accumulation waveforms. We focused on the strong conditions which will be the most diagnostic in this regard because the strong evidence onset produces a high, robust initial slope, as well as a sharp and relatively invariant CPP build-up onset which best approximates the onset invariance assumed in the models. The fixed strong and, to a lesser degree, the mixed conditions also had stronger predicted degrees of leakage, so that any leak-induced drop in slope should be most apparent against EEG noise. By comparison, the weak conditions have a much less clear onset time presumably due to greater variability in build-up onset timing not accounted for in the model. We found that the empirical CPP slope time course plateaued in the strong conditions indicating a linear build-up profile (Figure 4A), whereas the simulated time course of the leaky accumulator models indeed showed a steep drop-off in temporal slope after an initial peak (Figure 4B/C). Meanwhile, the criterion-adjustment model with non-leaky accumulation showed a plateau in the slope similar to the empirical CPP (Figure 4D). To capture this key feature quantitatively, we computed the percentage drop in slope in the first 100 ms relative to its initial peak. For the fixed strong condition the empirical slope dropped by 5% (bootstrap CI95% = [–5% 16%]), while the criterion-adjustment model predicted a drop of 6%, and the leak-adjustment model a drop of 27.5%, the latter falling outside the empirical bootstrapped 95% CI. Similarly, in the mixed strong condition the empirical slope dropped by 1.5% (bootstrap CI95% = [–9.5% 13%]), compared to 3% predicted by the criterion-adjustment model and 17% predicted by the leak-adjustment model.
 
-## Baseline and pre-response beta amplitudes and their relationship with RT
+![Figure 4.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig4-v2.jpg)
 
-The above analysis of the beta excursion showed that participants began their decision process with a smaller distance to the motor execution threshold in the strong context than for the other conditions (Figure 2A). The dynamics of beta amplitude relative to the action-triggering threshold were the key element for constraining the models as these amplitudes dictate the criterion amount of cumulative evidence required to trigger a response. However, to help interpret these changes in terms of context-related differences in psychological state, it is also of interest to separately examine variations in absolute pre-target and pre-response beta amplitudes across and within conditions. At first blush the smaller excursion in the strong context appears consistent with participants being tonically more prepared to make a movement, which seems counter-intuitive for a task condition that is by far the easiest. However, pre-target beta amplitude was actually found to be higher, reflecting lower baseline motor preparation in the strong context than both the weak and mixed context (see Figure 5A, left and Figure 5B, GMM, χ2(1)=2.3, p=0.02 and χ2(1)=2.4, p=0.02, respectively). Meanwhile, pre-response beta amplitude was also significantly higher for the strong context, but to an even greater degree than at baseline (see Figure 5A, right and Figure 5C, GMM, χ2(1)=3, p=0.003). Thus, compared to the mixed and weak contexts, the much easier strong context appeared to have lower tonic levels of preparation, but also a disproportionately more liberal threshold level, resulting in the smaller beta excursion overall.
+**Figure 4.:** (A) Empirical average target-locked centro-parietal positivity (CPP) signals (upper row) for each condition as well as their first derivative (lower row). This can be compared to the simulated accumulator process, $y$, for (B) the bound-adjustment model, and the neurally informed (C) leak-adjustment and (D) criterion-adjustment models. The build-up rate of the CPP does not immediately begin to fall steeply in the way predicted by the leaky accumulator model. In these simulations, CPP is simulated as the cumulative evidence without direct urgency influence (Kelly et al., 2021). Without loss of generality for the behavioural responses, we assumed that after reaching commitment, there is a delay of 80 ms before the CPP stops accumulating and over 416 ms falls linearly back to zero, implemented identically in all contexts and in both models. This was based on observed post-response dynamics in the real CPP.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Empirical average response-locked CPP waveforms (upper row) for each condition as well as the average pre-response CPP (lower row). Figure represent the empircical data of N = 14. Error bars represent the 95%. These are compared to the simulated accumulator process, $y$ for the (B) bound-adjustment, (C) leak-adjustment, and (D) criterion-adjustment models. All three models predict an interaction in pre-response cumulative evidence levels (see lower rows), but whereas the bound-adjustment model predicts the fixed strong condition to stand out as the highest, the neurally informed models, by design, predict cumulative evidence levels that mirror the decision bounds estimated from empirically observed beta excursion, where the fixed strong condition is instead the lowest.
+
+### Baseline and pre-response beta amplitudes and their relationship with RT
+
+The above analysis of the beta excursion showed that participants began their decision process with a smaller distance to the motor execution threshold in the strong context than for the other conditions (Figure 2A). The dynamics of beta amplitude relative to the action-triggering threshold were the key element for constraining the models as these amplitudes dictate the criterion amount of cumulative evidence required to trigger a response. However, to help interpret these changes in terms of context-related differences in psychological state, it is also of interest to separately examine variations in absolute pre-target and pre-response beta amplitudes across and within conditions. At first blush the smaller excursion in the strong context appears consistent with participants being tonically more prepared to make a movement, which seems counter-intuitive for a task condition that is by far the easiest. However, pre-target beta amplitude was actually found to be higher, reflecting lower baseline motor preparation in the strong context than both the weak and mixed context (see Figure 5A, left and Figure 5B, GMM, $χ^{2}$(1)=2.3, p=0.02 and $χ^{2}$(1)=2.4, p=0.02, respectively). Meanwhile, pre-response beta amplitude was also significantly higher for the strong context, but to an even greater degree than at baseline (see Figure 5A, right and Figure 5C, GMM, $χ^{2}$(1)=3, p=0.003). Thus, compared to the mixed and weak contexts, the much easier strong context appeared to have lower tonic levels of preparation, but also a disproportionately more liberal threshold level, resulting in the smaller beta excursion overall.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/83025/elife-83025-fig5-v2.jpg)
 
 **Figure 5.:** (A) Beta amplitude (15–30 Hz) over the motor cortex without any baseline or threshold subtraction, aligned to the target (left) and to the response (right), averaged for each condition. Additionally, a visual representation of excursion is shown with the red lines. Scalp topographies show the distribution of the difference between strong targets in the mixed and fixed condition, more red indicating higher activity in the fixed condition. (B) Baseline beta activity and (C) pre-response beta plotted for each condition and three equal-size reaction time (RT) bins. Error bars for all plots represent the 95% confidence interval.
 
-We also examined variation of pre-target beta amplitude as a function of RT. As stated above, beta excursion was larger on trials with longer RTs. Interestingly, examining the baseline and pre-response amplitudes separately indicated that this RT relationship was driven by a correlation with beta amplitude in the baseline for the mixed and weak conditions (as seen previously, for example Steinemann et al., 2018), whereas it was driven by a correlation with pre-response amplitude in the strong context. This was indicated by a significant interaction between context, motion coherence, and RT for both baseline beta (GMM, χ2(1)=–0.43, p=0.004) and pre-response beta (GMM, χ2(1)=–0.3, p=0.007). Post hoc tests showed that baseline beta significantly varied with RT for both weak conditions (both weak conditions p<0.02) and the mixed strong conditions (GMM, χ2(1)=–0.32, p<0.001), but not fixed strong (Figure 5B; GMM, χ2(1)=–0.009, p=0.93). In contrast, pre-response beta predicts RT in only the fixed strong condition (Figure 5C; GMM, χ2(1)=2.5, p=0.02 vs. weak: p>0.75 and mixed strong: χ2(1)=–0.05, p=0.52). Thus, while excursion predicted RT in all conditions, this relationship with RT was expressed differently in the absolute baseline and pre-response levels in the fixed strong context, potential reasons for which are discussed below.
+We also examined variation of pre-target beta amplitude as a function of RT. As stated above, beta excursion was larger on trials with longer RTs. Interestingly, examining the baseline and pre-response amplitudes separately indicated that this RT relationship was driven by a correlation with beta amplitude in the baseline for the mixed and weak conditions (as seen previously, for example Steinemann et al., 2018), whereas it was driven by a correlation with pre-response amplitude in the strong context. This was indicated by a significant interaction between context, motion coherence, and RT for both baseline beta (GMM, $χ^{2}$(1)=–0.43, p=0.004) and pre-response beta (GMM, $χ^{2}$(1)=–0.3, p=0.007). Post hoc tests showed that baseline beta significantly varied with RT for both weak conditions (both weak conditions p<0.02) and the mixed strong conditions (GMM, $χ^{2}$(1)=–0.32, p<0.001), but not fixed strong (Figure 5B; GMM, $χ^{2}$(1)=–0.009, p=0.93). In contrast, pre-response beta predicts RT in only the fixed strong condition (Figure 5C; GMM, $χ^{2}$(1)=2.5, p=0.02 vs. weak: p>0.75 and mixed strong: $χ^{2}$(1)=–0.05, p=0.52). Thus, while excursion predicted RT in all conditions, this relationship with RT was expressed differently in the absolute baseline and pre-response levels in the fixed strong context, potential reasons for which are discussed below.
 
 ## Discussion
 
@@ -89,35 +306,35 @@ In conclusion, while previous studies of decision policy adjustments for other p
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Fourteen participants (aged 21–60 years; eight female) were recruited at University College Dublin. Two participants were left-handed, all participants had normal or corrected-to-normal visual acuity, and had no previously diagnosed psychiatric disorders, epilepsy or suffered from any head injury resulting in loss of consciousness. All participants gave written consent prior to their participation and were compensated for their time with €25. The UCD Human Research Ethics Committee for Life Sciences approved all experimental procedures in accordance with the Declaration of Helsinki (LS-16-76-Craddock).
 
-## Experimental procedure
+### Experimental procedure
 
 Participants performed the task in a dark room, while seated 57 cm from the monitor. All stimuli were presented on a black background on a 21-inch CRT monitor operating at 60 Hz refresh rate (1280×960 pixels). Stimuli were generated using custom-made software in MatlabR2016 (Mathworks, Inc, Natick, MA, USA) utilising Psychtoolbox (Brainard, 1997; Kleiner et al., 2007; Pelli, 1997).
 
-## Experimental task: RDM
+#### Experimental task: RDM
 
 Participants performed a continuous detection version of the random dot motion (RDM) task (Hanks et al., 2006; Roitman and Shadlen, 2002; Ditterich, 2006; Shadlen and Newsome, 1996). In this task, they were asked to continuously monitor a cloud of white, randomly moving dots for intermittent targets defined as a step change from random to coherent upwards dot motion lasting for 1 s (see Figure 1A). During periods of incoherent motion (0% motion coherence), all dots were randomly displaced to a new location throughout the patch on each frame. Coherent dot motion was accomplished by displaying a certain percentage of randomly selected dots in a direction relative to their previous location within each frame. The ITI, in which motion coherence was held at 0%, was pseudo-randomly varied among four possibilities: 2, 4, 6, or 8 s. This ITI variability created temporal uncertainty to ensure continuous engagement in the detection task. Three target-strength contexts were run in separate blocks: in the ‘weak evidence context’ all targets had 25% coherence; in the ‘strong evidence context’ all targets were 70%; and both coherence levels could appear with equal likelihood in a ‘mixed context’. Participants were asked to respond to coherent upwards motion by clicking a mouse button with the index finger of their dominant hand. Each participant performed 12 blocks each consisting of 24 targets. Three blocks of each of the ‘fixed’ (single-coherence targets) contexts (‘strong’ or ‘weak’) were first run in an order counterbalanced across participants. The ‘mixed’ target coherence context was originally designed as a control condition to verify bound invariance across target strengths within a single context, and thus all participants performed six ‘mixed’ blocks at the end of the experimental session.
 
 Prior to the experiment, participants completed four training blocks, each consisting of six targets with decreasing levels of coherence (90%, 70%, 45%, 25%). In the last training block, participants would practise the mixed context condition (25% and 70%). Feedback of the participant’s performance was presented in text at the end of each block (numbers of hits, misses, and false alarms). The RDM pattern consists of a patch of 150 white, randomly moving dots (dot size: 4 pixels, dot speed of 3.33 deg/s) centrally presented in an aperture of 8 degree diameter. Dots were flickering on and off at a rate of 15 Hz. While this flicker was included as standard at the time to measure steady-state visual evoked potentials (see also Kelly and O’Connell, 2013), these potentials do not reflect sensory evidence for the decision (which is instead the motion coherence) and therefore were not analysed here.
 
-## Data analysis
+### Data analysis
 
-## Behavioural analysis
+#### Behavioural analysis
 
 All trials were sorted and analysed according to the four conditions of fixed weak, fixed strong, mixed weak, and mixed strong. RT was calculated in milliseconds (ms) relative to the evidence (i.e. coherent dot motion) onset. Hits were defined as trials in which a response was made between 200 ms after target onset up to 650 ms after target offset. It was assumed that responses with RT faster than 200 ms were false alarms as it is too soon for them to be informed by the sensory evidence from the target. Meanwhile, late responses made up to 650 ms after target offset were defined as hits because this was the point where the post-target response probability returned to the level of false alarm rate during the ITI. Conversely, false alarms were defined as responses in the period from 650 ms after target offset to 200 ms after the following target onset. False alarm rate was calculated as the proportion of 2 s periods of ITI time in which such a false alarm response was made. We chose this ‘per 2 s’ scaling as it is the shortest ITI but note that no results are dependent on this choice of scaling, as it merely sets the units of measurement. In one exception, to look at the distribution through the ITI (Figure 3A, upper), we computed the proportion of false alarms per 1 s for each context.
 
 Effects of the different conditions on RT were statistically analysed using a repeated-measures ANOVA (rANOVA) that organised the four conditions into two binary factors of difficulty context (fixed vs. mixed), and coherence (25% vs 70%), and with the additional factor of ITI duration preceding a given target (2, 4, 6, or 8 s). GMM were used to analyse hit rate and false alarms rate, which allows statistical testing of proportions and bounded variables. A logit link function was used for hit rates as they are binomially distributed. False alarm rates were analysed as a function of context (weak, strong, and mixed contexts). A log-link function is used for the false alarm rates as participants had unbounded opportunities to make false alarms within each ITI, yielding a Poisson distribution. For all models, intercepts and slopes were added as random effects.
 
-## EEG acquisition and preprocessing
+#### EEG acquisition and preprocessing
 
 Continuous EEG was recorded from 128 scalp electrodes using a BioSemi system with a sample rate of 512 Hz. All data were analysed in Matlab R2018a utilising EEGLAB routines (Delorme and Makeig, 2004). Eye movements were recorded with four electro-oculogram (EOG) electrodes, two above and below the left eye and two at the outer canthus of each for vertical (vEOG) and horizontal (hEOG) eye movements and blinks. EEG data were low-pass filtered by convolution with a 137-tap hanning windowed sinc function to give a 3 dB corner frequency of 37 Hz with strong attenuation at the mains frequency (50 Hz; Kelly et al., 2021; Widmann et al., 2015). Noisy channels were automatically detected using the PREP pipeline (Bigdely-Shamlo et al., 2015) and interpolated using spherical spline interpolation. Initially, large target epochs were extracted using a window capturing the preceding ITI (up to 650 ms after the previous target offset) to 1 s after the current target offset, and shorter target epochs were further extracted from these.
 
 Target trials were rejected if the absolute difference between the vEOG or hEOG electrodes exceeded 200 μV during –100 ms before target onset up to 100 ms after response or if 10% of the electrodes exceeded 100 μV in the target epoch. If less than 10% of the electrodes exceeded 80 μV on a given trial, then these electrodes were interpolated using a spherical spline interpolation. One participant was excluded due to excessive trial rejection (>70% in each condition) due to a mix of blinking, eye movements, and EEG artefacts. After artefact rejection, the data were subjected to a current source density (CSD) transformation utilising the CSD toolbox in MatlabR2018a (Kayser and Tenke, 2006; Kayser, 2009).
 
-## Decision signal analysis
+#### Decision signal analysis
 
 We analysed two neurophysiological signals previously established to reflect decision formation. First, motor preparation was measured via effector-selective spectral amplitude decreases in the beta (15–30 Hz) frequency range. We omitted the 15 Hz frequency bin to avoid contamination of motor preparation signals by the 15 Hz steady-state visually evoked potentials (SSVEP) evoked by the on-off flicker of the dots at the same frequency. Second, we analysed the CPP, a motor-independent signal exhibiting evidence accumulation dynamics (O’Connell et al., 2012; Kelly and O’Connell, 2013). To measure beta amplitude, we computed a short time Fourier transform by applying a Fourier transform in a sliding window of 266 ms (four full cycles of the SSVEP) in steps of 10 ms, and then extracted amplitude in the 15–30 Hz frequency range for the electrode at standard sensorimotor sites C3 and C4, for participants that responded with right and left hand, respectively.
 
@@ -127,38 +344,60 @@ To determine whether the neural signals show signs of decision-bound adjustment,
 
 In our framework we assume that beta reflects the combination of evidence accumulation and urgency components. As the noise during the ITI is zero mean, we assumed any beta dynamics or effects in the ITI mainly reflected the operation of urgency. Thus, in order to create a standardised urgency signal to constrain computational decision models (see below), we took the grand-average beta amplitude for each context in the pre-response amplitude (−67 to –33 ms) as the threshold level for that context and subtracted it from the beta signals measured during the ITI. Then, we took the longest ITI (8 s) and fitted a second-order polynomial to capture the smooth urgency trend, ignoring any residual noise. The smooth urgency function was then normalised by dividing it by the maximum value during the ITI in any context, and finally it was inverted (urgency = 1-urgency). In this way, 0 corresponds to the lowest motor preparation level measured during the ITI in the grand-average beta signals of any context and 1 corresponds to the threshold level for triggering a response. During the targets, evidence accumulation adds to urgency and therefore beta cannot be used to isolate the dynamics of urgency on its own. For the sake of parsimony, we simply assumed that during targets following 2, 4, or 6 s ITIs, urgency continued on its trajectory measured from 8 s ITIs. For targets following 8 s ITIs, we assumed that urgency held steady at its pre-target level, based on the fact that beta tended to saturate during the ITI.
 
-## Computational models
+#### Computational models
 
-We fitted three alternative models to the behavioural data: a leaky accumulator model with context-dependent bound (henceforth the bound-adjustment model) and two neurally constrained models with urgency quantified directly from beta signals as above, and featuring either leaky accumulation with context-dependent leak (henceforth the leak-adjustment model) or non-leaky accumulation of evidence cast relative to a sensory criterion with a lower reflecting decision bound at zero (henceforth the criterion-adjustment model). All three models follow a basic leaky accumulator model equation (Ossmy et al., 2013):(1)y(t)=y(t−dt)∗(1−Leak)+x(t)∗Drift+ξ
+We fitted three alternative models to the behavioural data: a leaky accumulator model with context-dependent bound (henceforth the bound-adjustment model) and two neurally constrained models with urgency quantified directly from beta signals as above, and featuring either leaky accumulation with context-dependent leak (henceforth the leak-adjustment model) or non-leaky accumulation of evidence cast relative to a sensory criterion with a lower reflecting decision bound at zero (henceforth the criterion-adjustment model). All three models follow a basic leaky accumulator model equation (Ossmy et al., 2013):
 
-where y⁢(t) is the accumulator output, x⁢(t) is a binary representation of target presence throughout the block (set to 1 during targets and 0 otherwise), which is scaled by drift rate ‘Drift’ according to the strength of the evidence for a given target and with added Gaussian noise, ξs=N(0,σs), altogether representing the noisy sensory evidence through the block. As indicated in the equation, the L⁢e⁢a⁢k parameter sets the degree to which the previous accumulator value (y⁢(t-d⁢t)) is scaled down relative to the incoming evidence. Time step size d⁢t was set to correspond to the refresh rate of the monitor (60 Hz or 16.67 ms). When the accumulator level (y⁢(t)) exceeded the decision bound (θ), it was then set to zero for a post-response pause of 1 s, on the assumption that subjects are unlikely to resume accumulation immediately after responding given the range of ITIs.
+$$
+y(t)=y(t−dt)∗(1−Leak)+x(t)∗Drift+ξ
+$$
+
+where $y⁢(t)$ is the accumulator output, $x⁢(t)$ is a binary representation of target presence throughout the block (set to 1 during targets and 0 otherwise), which is scaled by drift rate ‘Drift’ according to the strength of the evidence for a given target and with added Gaussian noise, $ξ_{s}=N(0,\sigma_{s})$, altogether representing the noisy sensory evidence through the block. As indicated in the equation, the $L⁢e⁢a⁢k$ parameter sets the degree to which the previous accumulator value ($y⁢(t-d⁢t)$) is scaled down relative to the incoming evidence. Time step size $d⁢t$ was set to correspond to the refresh rate of the monitor (60 Hz or 16.67 ms). When the accumulator level ($y⁢(t)$) exceeded the decision bound ($\theta$), it was then set to zero for a post-response pause of 1 s, on the assumption that subjects are unlikely to resume accumulation immediately after responding given the range of ITIs.
 
 Additionally, a non-decision time accounting for the delay between samples of evidence appearing on the screen and registering as increments to the accumulation process was estimated as a free parameter, while post-commitment delays associated with motor execution were fixed at 80 ms based on a typical motor time estimated for mouse-button presses (O’Connell et al., 2012; Steinemann et al., 2018; Kelly et al., 2021). The apportioning of non-decision delays to before or after the accumulation to bound process does not generally impact the fitting of behavioural models, but we applied this fixed motor time here to be consistent with the measurement time window used for CPP amplitude. For the purposes of comparing the simulated and observed CPPs, rather than setting y=0 immediately upon threshold crossing, we allowed the simulated accumulator to continue accumulating for 80 ms beyond the point of decision commitment, after which the accumulator linearly decreased back to 0 over a period of 400 ms, mimicking the overshoot and fall of the empirical CPP after the response time. Note that model fits to behaviour are unaffected by the inclusion of this post-decision ramp-down. Further, to ensure that comparison of real and simulated CPP time courses would be minimally influenced by any misestimation of such time-shifts, we took measurements relative to the signal onset time in that analysis.
 
-## Bound-adjustment model
+##### Bound-adjustment model
 
-A leaky integrator model (Figure 1C), where the decision bound was free to vary across the three contexts (weak, strong, and mixed), was fitted only to the behavioural data. This model was predicted a priori to best explain the decision process adaptations. This model fixed the momentary sensory noise parameter at a value of 0.1 (σs=0.1), and included three free decision-bound parameters – one for each context (θc⁢o⁢n⁢t⁢e⁢x⁢t), one leak parameter, commonly applied to all conditions, one non-decision time parameter, and one for four drift rate parameters (see below), making a total of six or nine free parameters.
+A leaky integrator model (Figure 1C), where the decision bound was free to vary across the three contexts (weak, strong, and mixed), was fitted only to the behavioural data. This model was predicted a priori to best explain the decision process adaptations. This model fixed the momentary sensory noise parameter at a value of 0.1 ($\sigma_{s}$=0.1), and included three free decision-bound parameters – one for each context ($\theta_{c⁢o⁢n⁢t⁢e⁢x⁢t}$), one leak parameter, commonly applied to all conditions, one non-decision time parameter, and one for four drift rate parameters (see below), making a total of six or nine free parameters.
 
-## Neurally constrained leak-adjustment model
+##### Neurally constrained leak-adjustment model
 
-Using the same leaky accumulator mechanism as above, this model (Figure 3B) instead had three leak parameters (L⁢e⁢a⁢kc⁢o⁢n⁢t⁢e⁢x⁢t) so that leak was free to vary across the contexts (weak, strong, and mixed). Here, the decision bound was fixed to 1 and additionally the sensory noise parameter (σs) was a free parameter since the decision variable is now scaled by the normalised bound. Here, the sum y⁢(t)+u⁢(t) was computed as the motor-level decision variable and subjected to the fixed decision bound to determine responses (with the non-decision time implemented as in the previous model), where u⁢(t) is the urgency function measured from observed beta signals during the ITI as detailed above in Decision signal analysis. This resulted in six free parameters for the minimal model with one free D⁢r⁢i⁢f⁢t rate parameter, and nine for the expanded model with four free D⁢r⁢i⁢f⁢t rates.
+Using the same leaky accumulator mechanism as above, this model (Figure 3B) instead had three leak parameters ($L⁢e⁢a⁢k_{c⁢o⁢n⁢t⁢e⁢x⁢t}$) so that leak was free to vary across the contexts (weak, strong, and mixed). Here, the decision bound was fixed to 1 and additionally the sensory noise parameter ($\sigma_{s}$) was a free parameter since the decision variable is now scaled by the normalised bound. Here, the sum $y⁢(t)+u⁢(t)$ was computed as the motor-level decision variable and subjected to the fixed decision bound to determine responses (with the non-decision time implemented as in the previous model), where $u⁢(t)$ is the urgency function measured from observed beta signals during the ITI as detailed above in Decision signal analysis. This resulted in six free parameters for the minimal model with one free $D⁢r⁢i⁢f⁢t$ rate parameter, and nine for the expanded model with four free $D⁢r⁢i⁢f⁢t$ rates.
 
-## Neurally constrained criterion-adjustment model
+##### Neurally constrained criterion-adjustment model
 
-In a second neurally constrained model (Figure 3C), we considered a non-leaky accumulation of evidence that is recast as a quantity relative to a sensory-level criterion (as distinct from a C⁢r⁢i⁢t⁢e⁢r⁢i⁢o⁢n set on cumulative evidence in the decision variable, which we refer to as a ‘decision bound’), with the additional setting of a lower reflecting bound at zero on the accumulator, according to:(2)t=max(0,y(t−dt))+(x(t)∗Drift+ξs−Ccontext)
+In a second neurally constrained model (Figure 3C), we considered a non-leaky accumulation of evidence that is recast as a quantity relative to a sensory-level criterion (as distinct from a $C⁢r⁢i⁢t⁢e⁢r⁢i⁢o⁢n$ set on cumulative evidence in the decision variable, which we refer to as a ‘decision bound’), with the additional setting of a lower reflecting bound at zero on the accumulator, according to:
 
-Here, sensory criterion (Ccontext) was free to vary across the three contexts (weak, strong, and mixed). The fixed bound, constrained urgency, and free noise parameter are exactly as in the neurally constrained leak-adjustment model above. Again, the most minimal model with a single free drift rate parameter thus has a total of six free parameters (including one non-decision time as usual), and nine free parameters for the version with four free D⁢r⁢i⁢f⁢t rates.
+$$
+t=max(0,y(t−dt))+(x(t)∗Drift+ξ_{s}−C_{context})
+$$
 
-## Behavioural model fitting
+Here, sensory criterion ($C_{context}$) was free to vary across the three contexts (weak, strong, and mixed). The fixed bound, constrained urgency, and free noise parameter are exactly as in the neurally constrained leak-adjustment model above. Again, the most minimal model with a single free drift rate parameter thus has a total of six free parameters (including one non-decision time as usual), and nine free parameters for the version with four free $D⁢r⁢i⁢f⁢t$ rates.
 
-These models were each fitted to a total of 32 behavioural data points, comprised of the proportion of all targets with a hit in six RT bins defined by the 0.1, 0.3, 0.5, 0.7, and 0.9 RT quantiles or with no response (misses) across the four target conditions, and the false alarm rate measured as a proportion of every 2 s segment of the ITIs before the targets of each condition (see above and Figure 1B). The models were fitted using Monte Carlo simulations of the decision process to generate simulated behavioural responses, which were compared to the observed data using the χ2-based statistic G2:(3)G2=2(∑i=14ni∑j=18pijlog⁡pijπij)
+### Behavioural model fitting
 
-Here, ni is the number of valid trials, pi⁢j and πi⁢j are the observed and the simulated proportion, respectively, for condition i in RT bin j.G2 statistic was minimised with a bounded Nelder-Mead SIMPLEX algorithm (Nelder and Mead, 1965; fminsearchbnd in Matlab).
+These models were each fitted to a total of 32 behavioural data points, comprised of the proportion of all targets with a hit in six RT bins defined by the 0.1, 0.3, 0.5, 0.7, and 0.9 RT quantiles or with no response (misses) across the four target conditions, and the false alarm rate measured as a proportion of every 2 s segment of the ITIs before the targets of each condition (see above and Figure 1B). The models were fitted using Monte Carlo simulations of the decision process to generate simulated behavioural responses, which were compared to the observed data using the $χ^{2}$-based statistic $G^{2}$:
 
-Similar to Corbett et al., 2021, the models were fitted in several stages: In the first stage, a minimal model was fitted that included all relevant free parameters for that model (see above) but only one free drift rate parameter for the weak coherence, which was then linearly scaled for the strong conditions according to relative coherence (70/25). In this initial broad search, about 4500 trials were simulated per model evaluation in separate SIMPLEX fits for 1000 different initial ‘guess’ parameter vectors. These initial guess vectors were made by sampling from a uniform distribution spanning a reasonable range along each parameter dimension, so that the guess vectors together comprehensively covered a large parameter space in which to find a global minimum. In a second refinement stage, about 20,000 trials were simulated in each model evaluation in separate SIMPLEX fits starting from the 30 best estimated parameter vectors arising from the first step, with lower tolerance criteria for termination or convergence. This second step tended to improve the G2 only slightly, typically by about 2%.
+$$
+G^{2}=2(\sumi=14n_{i}\sumj=18p_{ij}log⁡\frac{p_{ij}}{\pi_{ij}})
+$$
+
+Here, ni is the number of valid trials, $p_{i⁢j}$ and $\pi_{i⁢j}$ are the observed and the simulated proportion, respectively, for condition $i$ in RT bin $j.G^{2}$ statistic was minimised with a bounded Nelder-Mead SIMPLEX algorithm (Nelder and Mead, 1965; $fminsearchbnd$ in Matlab).
+
+Similar to Corbett et al., 2021, the models were fitted in several stages: In the first stage, a minimal model was fitted that included all relevant free parameters for that model (see above) but only one free drift rate parameter for the weak coherence, which was then linearly scaled for the strong conditions according to relative coherence (70/25). In this initial broad search, about 4500 trials were simulated per model evaluation in separate SIMPLEX fits for 1000 different initial ‘guess’ parameter vectors. These initial guess vectors were made by sampling from a uniform distribution spanning a reasonable range along each parameter dimension, so that the guess vectors together comprehensively covered a large parameter space in which to find a global minimum. In a second refinement stage, about 20,000 trials were simulated in each model evaluation in separate SIMPLEX fits starting from the 30 best estimated parameter vectors arising from the first step, with lower tolerance criteria for termination or convergence. This second step tended to improve the $G^{2}$ only slightly, typically by about 2%.
 
 Last, we ran a similar refinement step for model versions that now had four separate free drift rate parameters, to allow capturing any modulation of evidence accumulation quality due to either practice (as the participants always performed the mixed condition last) or context itself (e.g. drift rate may depend on how often strong targets arise in a given context). Using the 30 best refined parameters, we produced 200 new initial parameter vectors by adding random Gaussian jitter of a standard deviation of 1.1 times the mean of each of the refined parameters and 1.15 times of the mean for the drift rate parameters. Again about 20,000 trials were simulated in each model evaluation for this last step.
 
-To confirm that the added complexity of four free drift rates was warranted over a single free drift rate parameter within each model, we computed the Akaike’s (AIC) and Bayes information on criterion (BIC), to penalise for the complexity of the models, for example number of free parameters (f).(4)AIC=G2+2f(5)BIC=G2+flog⁡(∑i=14ni)
+To confirm that the added complexity of four free drift rates was warranted over a single free drift rate parameter within each model, we computed the Akaike’s (AIC) and Bayes information on criterion (BIC), to penalise for the complexity of the models, for example number of free parameters ($f$).
 
-The principal comparisons in the study were across the three models with the same number of free parameters in any comparison, only differing in accumulation and/or adjustment mechanisms. Therefore, these models were simply compared using G2 itself.
+$$
+AIC=G^{2}+2f
+$$
+
+
+
+$$
+BIC=G^{2}+flog⁡(\sumi=14n_{i})
+$$
+
+The principal comparisons in the study were across the three models with the same number of free parameters in any comparison, only differing in accumulation and/or adjustment mechanisms. Therefore, these models were simply compared using $G^{2}$ itself.

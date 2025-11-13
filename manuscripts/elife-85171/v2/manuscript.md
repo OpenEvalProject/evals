@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0155zta11 Department of Microbiology and Molecular Genetics, University of Vermont Larner College of Medicine Burlington United States
-2. https://ror.org/0155zta11 Department of Molecular Physiology and Biophysics, University of Vermont Larner College of Medicine Burlington United States
+1. Department of Microbiology and Molecular Genetics, University of Vermont Larner College of Medicine Burlington United States ([ROR:0155zta11](https://ror.org/0155zta11))
+2. Department of Molecular Physiology and Biophysics, University of Vermont Larner College of Medicine Burlington United States ([ROR:0155zta11](https://ror.org/0155zta11))
 
 † Corresponding author
 
@@ -34,45 +34,157 @@ Although abundant evidence supports the importance of TgMyoA and other component
 
 ## Results
 
-## Development of a quantitative 3D traction force mapping assay
+### Development of a quantitative 3D traction force mapping assay
 
 As a first step toward visualizing the forces exerted by parasites moving in 3D, we used a bead displacement assay in the well-established Matrigel extracellular matrix model (Leung et al., 2014; Whitelaw et al., 2017; Gras et al., 2017). Fluorescent microspheres embedded within the Matrigel were pulled towards a moving parasite from nearby anterior, posterior, and lateral locations within the matrix, and these microspheres returned to their original positions after the parasite had passed (Figure 1B, Videos 1 and 2). These results demonstrate that the parasite does indeed exert a detectable force on the surrounding matrix. Unexpectedly, we also noted constrictions in the body of the fluorescent parasite as it moved (Video 2). These constrictions were even more apparent by brightfield microscopy (Figure 1C, Video 3). Each constriction formed at the apical end of the parasite and remained stationary relative to the matrix as the parasite moved through, reminiscent of the ‘moving junction’ through which the parasite penetrates during host cell invasion (discussed further below).
 
+![Video 1.](https://cdn.elifesciences.org/articles/85171/elife-85171-video1.mp4.jpg)
+
+**Video 1.:** Scale bar = 5 µm, time is shown in hr:min:sec. Single frames from this video are shown in Figure 1B.
+
+![Video 2.](https://cdn.elifesciences.org/articles/85171/elife-85171-video2.mp4.jpg)
+
+**Video 2.:** Scale bar = 5 µm, time is shown in hr:min:sec.
+
+![Video 3.](https://cdn.elifesciences.org/articles/85171/elife-85171-video3.mp4.jpg)
+
+**Video 3.:** Scale bar = 5 µm, time is shown in hr:min:sec. Single frames from this video are shown in Figure 1C.
+
 To develop a more quantitative force mapping assay and explore the relationship between the constrictions and matrix deformation, we used Alexa-Fluor 647-conjugated fibrinogen (Owen et al., 2017) to generate a fluorescent 3D fibrin matrix (Figure 2A and Video 4). The use of a fluorescent matrix enabled mapping of matrix displacements at all spatial points in our imaged volume rather than at the limited number of discrete positions offered by fluorescent microspheres. Parasite motility in matrices generated using 2.25 mg/ml fibrinogen was indistinguishable from that observed in Matrigel (Figure 2B and Figure 2—figure supplement 1). Visual comparison of successive image volumes confirmed that parasites moving through fluorescent fibrin also deform the matrix (Figure 2C and Video 5) and undergo constrictions (see below) similar to those observed in Matrigel.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig2-v2.jpg)
+
+**Figure 2.:** (A) Confocal imaging of a 2.25 mg/ml fluorescent fibrin gel. A maximum fluorescence intensity projection of 51 z-slices captured 0.25 µm apart is shown; scale bar = 10 µm. (B) Maximum fluorescence intensity projections showing the trajectories of tdTomato-expressing wildtype parasites moving in 3D in Matrigel (top) vs. fibrin (bottom). See Figure 2—figure supplement 1 for quantitative comparison of the motility parameters in the two matrices. Scale bar = 40 µm. (C) A parasite moving in a 1.3 mg/ml fluorescent fibrin matrix (see Video 5) visibly deforms the matrix, as evident from the non-coincident fluorescence signals in the highlighted area at the time points indicated (merge). Scale bar = 10 µm, timestamps in seconds.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Comparison of the maximum and mean speeds of parasites in 2.25 mg/ml fibrin vs. Matrigel. (B) Comparison of the proportion of parasites moving in 2.25 mg/ml fibrin vs. Matrigel. Horizontal bars indicate mean (± SD) from three independent biological replicates, each consisting of three technical replicates (Matrigel n=853, Fibrin n=913 parasites total). p>0.05 for each pairwise Matrigel vs. fibrin comparison, Student’s two-tailed t-test.
+
+![Video 4.](https://cdn.elifesciences.org/articles/85171/elife-85171-video4.mp4.jpg)
+
+**Video 4.:** 51 x-y slices captured 0.25 µm apart in z were reassembled into the volumetric view shown. Dimensions of the imaged volume are shown at bottom left. See Figure 2A for maximum intensity projection of these data.
+
+![Video 5.](https://cdn.elifesciences.org/articles/85171/elife-85171-video5.mp4.jpg)
+
+**Video 5.:** Scale bar = 10 µm, time is shown in hr:min:s. Single frames from this video are shown in Figure 2C.
 
 To calculate and map the deformations of the fluorescent fibrin matrix, we used the Fast Iterative Digital Volume Correlation (FIDVC) algorithm developed by Christian Franck’s group (Patel et al., 2018) to iteratively determine the 3D fibrin displacement fields between consecutive volumetric image stacks in our time series (BarKochba et al., 2015). Each image volume is divided into 16,807 subvolumes (49 x 49 x 7 subvolumes in x, y, z). The algorithm compares the voxel intensity pattern between corresponding subvolumes at two consecutive time points, calculating one 3D displacement vector per subvolume. The data can be displayed as a map for the entire imaging volume or for any 2D plane (x-y, x-z, or y-z; see Video 6). Most of the 2D images below show the displacement maps in the x-y plane on one of the seven z subvolume levels.
 
+![Video 6.](https://cdn.elifesciences.org/articles/85171/elife-85171-video6.mp4.jpg)
+
+**Video 6.:** Length of arrows indicating displacement magnitude are multiplied 10-fold for display. The parasite is outlined on each z plane with red circles. Single frames from this video displaying projections onto the x-y, x-z and y-z planes are shown in Figure 4—figure supplement 1.
+
 To filter out background noise and identify displacements caused by the parasite, we calculated displacement vectors during periods when no parasites were moving within our imaging volume and used these to establish a displacement detection threshold for each dataset (see Figure 3 and Methods for details). Using this approach, the limit of detection for 3D displacement magnitudes in the system ranges from 42 to 46 nm; a similar 3D displacement detection threshold (43–46 nm) was observed in samples containing no parasites (see Figure 6E below), validating the approach. When analyzing data in the x-y plane only, the background cutoff was calculated using the x-y displacement magnitudes (rather than the x-y-z displacement magnitudes); this lowered the displacement detection threshold to 28–31 nm.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig3-v2.jpg)
+
+**Figure 3.:** (A) A fluorescent fibrin matrix containing wild-type parasites was imaged over 96 seconds (60 successive image volumes). FIDVC was then used to calculate the 16,807 3D fibrin displacement vectors between pairs of successive time points. The magnitudes of the 16,807 x-y displacement vectors are plotted for each of the 59 pairwise time point comparisons. This dataset contained a single moving parasite, which moved during the first part of the time course but not at the end, as indicated. For each time course, the two consecutive time points that gave the lowest mean x-y displacement vector magnitude were used to set the background threshold for that dataset: any displacements less than three standard deviations (3SD) above this mean were considered background noise. (B) Expanded view of the 16,807 datapoints from the two time point comparisons shown in purple and green in panel A. Arrow indicates the 3SD background threshold; all points above this threshold are colored blue in panels A and B. The moving parasite caused little deformation of the matrix above background between time points 6 and 7 and a greater amount of deformation between time points 7 and 8. (C) Displacement vectors with magnitudes greater than the 3SD background threshold for the two highlighted time point comparisons were mapped back onto the imaging volume; the cluster of displacement vectors evident in the time points 7–8 comparison corresponds to the position of the single moving parasite in the volume.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The viscoelastic properties of the fibrin matrix were measured by laser trapping of 0.91 µm styrene beads. (A) The laser trap position at 1 Hz (top panel) and the resulting force as measured by the laser trap (bottom) show a primarily in-phase force response. Data from a single bead are shown. (B) The laser trap position and output force at 1–20 Hz were used to calculate the elastic and viscous properties of the matrix; these frequencies were chosen to encompass the approximate speed of a moving parasite. Cumulative data from three independent experiments are shown; n=36 beads analyzed. Bars indicate mean (± SD).
 
 In order to translate matrix displacements into the magnitude of forces generated by the parasite, we determined the viscoelasticity of the fibrin matrix using laser trapping (see Methods). The fibrin gel behaves as a predominantly elastic matrix (Figure 3—figure supplement 1) with an elastic modulus of 15.6 pN/µm and a viscous modulus of 0.09 pN*s/µm. The minimal detectable force magnitude in this system is therefore 0.66–0.72 pN in 3D and 0.45–0.49 pN in the x-y plane.
 
-## Parasite constrictions are tightly linked to periodic bursts of matrix deformation and motility
+### Parasite constrictions are tightly linked to periodic bursts of matrix deformation and motility
 
 With this system for 3D traction force mapping in hand, we analyzed the pattern and directionality of forces produced by wild-type parasites as they moved through the fibrin matrix. Plotting fibrin displacement as x-y maps showed that the matrix deforms in toward the parasite from all x-y directions at discrete, periodic time points along the trajectory, before relaxing back to its initial position (e.g., Figure 4A–D and Videos 7 and 8). Viewing the data as projections along each axis demonstrates that the matrix is simultaneously pulled in toward the parasite in all three dimensions (Video 6 and Figure 4—figure supplement 1). In approximately 50% of cases, inward deformation occurred between two consecutive image volumes (1.6 seconds apart) and was followed in the next image volume by relaxation (e.g., Figure 4A–C). In most other cases, the inward deformation was held through multiple time points before relaxing (Figure 4—figure supplement 2). During periods of motility when the matrix was not being pulled inward or relaxing outward, little deformation of the matrix above background was detectable (e.g. Figure 4C, leftmost and rightmost panels). This observation suggests either that the parasite pulls on the matrix only during some portions of its trajectory or that the parasite produces both strong and weak deformations, and the weak deformations – which could be continuous – are below our level of detection.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig4-v2.jpg)
+
+**Figure 4.:** (A) Sequential time series images, in a single z-plane, of a tdTomato-expressing parasite moving in fibrin (boxed). Scale bar = 10 µm, timestamps in seconds. (B) Force maps from the corresponding z subvolume plane of the data shown in panel A; each map depicts the motions of the fluorescent fibrin matrix between the two consecutive time points, as indicated by the brackets. Arrow length (multiplied 24-fold for display) indicates the magnitude of matrix displacement and arrow color the directionality (see color wheel). See Video 7 for the entire time series. (C) Zoomed images showing the force maps from the boxed region of panel B, after background subtraction (see text), overlaid on the parasite images from panel A. Length of arrows indicating displacement magnitude are multiplied 15-fold for display. Note inward displacement of the matrix in the second overlay image, outward displacement (relaxation) of the matrix in the third image, and no detectable displacement vectors in the fourth image even though the parasite continues to move. (D) Zoomed overlays of the force maps (background subtracted) and images of a moving parasite from a second dataset. The inwardly displaced matrix in this example did not relax back to its original position within the time frame of the experiment. Arrow lengths indicating displacement magnitude are multiplied 15-fold for display. See Video 8 for the entire time series. Scale bars in panels C and D=5 µm. Empty red arrowheads indicate position of the constriction.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Matrix displacement vectors from all subvolumes (49 (x) x 49 (y) x 7 (z)) in the image volume were calculated by FIDVC and projected onto the x-y, x-z and y-z planes, as indicated (axis labels are in µm). Length of arrows indicate displacement magnitude and are multiplied 10-fold for display. The data correspond to the parasite shown in the second panel of Figure 4C and frame 2 of Video 7. The moving parasite is outlined on each z slice with red circles, and the position of the constriction is indicated by either an empty arrowhead (x–y) or a black dot (y–z).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The number of consecutive frames in which: the matrix displaced in towards the parasite (pull); no further matrix displacement was observed (hold); and the matrix moved away from the parasite towards its original position (release) are indicated. n=9 parasites, 25 constrictions.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Empty red arrowheads indicate position of the constriction and white arrows the direction of parasite travel. Length of black arrows indicating displacement magnitude are multiplied 15-fold for display. Scale bars = 5 µm.
+
+![Video 7.](https://cdn.elifesciences.org/articles/85171/elife-85171-video7.mp4.jpg)
+
+**Video 7.:** Arrow size corresponds to relative displacement magnitude and arrow color to displacement direction as described in Figure 4.
+
+![Video 8.](https://cdn.elifesciences.org/articles/85171/elife-85171-video8.mp4.jpg)
+
+**Video 8.:** Arrow size corresponds to relative displacement magnitude and arrow color to displacement direction as described in Figure 4.
 
 When the displacement maps were overlaid onto the images of the moving parasites, it was immediately apparent that the timing of each large matrix deformation coincided with the presence of a parasite constriction and that the displacement vectors pointed primarily in towards the constriction (Figure 4C and D; additional examples are shown in Figure 4—figure supplement 3). The fact that the displacements were directed inwards rather than away from the parasite indicates that the pinching of the parasite membrane results from pulling forces generated by the parasite rather than the parasite squeezing through a narrow pore within the matrix, which would push the matrix away. When a constriction persisted over multiple time points, the fibrin continued to deform into the constriction and/or to hold the deformation over those same time points as the parasite passed through (e.g. Figure 4D).
 
 The time it took a parasite to move completely through a constriction ranged from 1.6 to 56.2 seconds (average 6.8±5.2 seconds, measured in brightfield; n=99 parasites, 188 constrictions) with the longer times due to a stall in forward progression of a constricting parasite. The time between one constriction finishing and another beginning was also variable (Figure 5A). In 46% of the cases, the end of one constriction was followed immediately by the beginning of another, while in 14% of the cases a second constriction would start before the first constriction finished (Figure 5A and B and Video 9). The speed of the parasite’s forward motion changed as it moved through the constriction, increasing once the constriction passed the halfway point on the parasite’s longitudinal axis (Figure 5—figure supplement 1; n=20 parasites, 24 constrictions). Most importantly, all parasites that move at least one body length undergo a constriction and the total trajectory length is directly proportional to the number of constrictions observed (Figure 5C), strongly suggesting that the parasite-generated forces that create the constriction play an important role in forward movement.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig5-v2.jpg)
+
+**Figure 5.:** (A) The time interval between constrictions during motility of individual parasites (n=99 parasites, 188 constrictions). A negative time interval (black bars) corresponds to the presence of two constrictions in the same parasite for the indicated amount of time. Green bars denote back-to-back constrictions and grey bars denote a delay between constrictions for the indicated amounts of time. For 27% of the constrictions (not plotted), no subsequent constriction occurred within the time frame of the experiment. (B) Example of a parasite with two concurrent constrictions; see Video 9 for entire time series. Brightfield images; scale bar = 5 µm; timestamps in seconds. (C) Number of constrictions observed vs. distance traveled, expressed in terms of binned parasite body lengths (i.e. multiples of 7 µm). (D) Width of individual moving parasites, measured at the halfway point along their longitudinal axis, either before the halfway point reached the constriction (‘Pre-constriction’) or as the halfway point was passing through the constriction (‘At constriction’). Data from two independent biological replicates were combined; n=15 parasites, 19 constrictions. (E) Dimensions of the nucleus (determined by Hoechst 33342 staining) in individual parasites during time points when the nucleus was located either ahead of or behind the constriction (‘Not in constriction’) vs. passing through the constriction (‘In constriction’). Nuclear length and width are defined as the nuclear diameters parallel and perpendicular to the long axis of the parasite, respectively. Data from two independent biological replicates were combined; n=9 parasites, 21 constrictions. In panels D and E, bars indicate mean (± SD); samples were compared by Student’s two-tailed t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The number of time points when the constriction was present either anterior or posterior to the midway point along the parasite’s longitudinal axis were determined. Only parasites that progressed through one complete anterior-to-posterior constriction and neither stopped partway nor initiated a second constriction while the original constriction was present were analyzed. Data from two independent biological replicates were combined; n=20 parasites, 24 constrictions. It takes a constriction on average longer (i.e. more time points) to progress from the anterior tip of the parasite to the midway point along the parasite surface than it does from the midway point to the posterior end. Bars indicate mean ± standard deviation; the data were compared by Student’s two-tailed t-test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The top panels show the anti-TgSAG1 fluorescent signal; red empty arrowhead marks the location of the constriction. Middle panels show the Hoechst 33342-stained nucleus, which stays in focus throughout the time series. Bottom panels show the merged images (red = anti-TgSAG1, blue = Hoechst 33342). Scale bar = 5 µm; timestamps in seconds. See Video 10 for the entire time series. All moving parasites examined (n=9) deposited trails containing anti-SAG1 in the Matrigel.
+
+![Video 9.](https://cdn.elifesciences.org/articles/85171/elife-85171-video9.mp4.jpg)
+
+**Video 9.:** Scale bar = 5 µm, time is shown in hr:min:s. Single frames from time points 0:1:51.23 – 0:1:55.43 of this video are shown in Figure 5B.
+
 The much reduced width of a constricting parasite (2.6±0.4 µm vs. 1.4±0.2 µm at the midway point along the parasite's longitudinal axis before and during a constriction, respectively; Figure 5D, n=15 parasites, 19 constrictions) led us to question whether the constriction presents a physical obstacle to the forward motion of the nucleus (normal nuclear diameter measured by DNA staining = 2.0 ± 0.3 µm). In parasites labeled with both a fluorescent DNA stain and a fluorescently labeled antibody against the major surface protein, TgSAG1 (to visualize the constriction), the normally round parasite nucleus did indeed become thinner and more elongate as it passed through the constriction and regained its round shape once it was through (Figure 5E). The ratio of the nuclear dimensions perpendicular and parallel to the long axis of the parasite was 0.93±0.08 in a non-constricting parasite and 0.50±0.06 as the nucleus passed through a constriction (n=9 parasites, 21 constrictions).
 
 Interestingly, the distribution of the fluorescent anti-TgSAG1 antibody on the parasite surface changed as the parasite moved: much of the fluorescent signal appeared to be ‘swept’ from anterior to posterior at the constriction as the parasite moved through (Figure 5—figure supplement 2 and Video 10). The redistributed antibody was ultimately shed and deposited behind the moving parasite in the form of a fluorescent helical trail within the Matrigel (Figure 5—figure supplement 2 and Video 10).
 
-## Parasites that do not generate constrictions do not detectably deform the matrix
+![Video 10.](https://cdn.elifesciences.org/articles/85171/elife-85171-video10.mp4.jpg)
+
+**Video 10.:** Scale bar = 5 µm, time is shown in hr:min:s. Note the helical trail of shed fluorescent antibody behind the moving parasite. Single frames from this video are shown in Figure 5—figure supplement 2.
+
+### Parasites that do not generate constrictions do not detectably deform the matrix
 
 Since TgMyoA is thought to play a central role in force production during parasite motility (Figure 1A), we conducted force mapping experiments using a parasite line lacking TgMyoA (Egarter et al., 2014). As previously reported (Whitelaw et al., 2017), these parasites are much less motile in 3D than wild-type parasites: only 18 of 769 TgMyoA knockout parasites examined (2%) moved one body length or more during a 302-second time course, compared to 99 of 278 wild-type parasites (36%). Of the 18 TgMyoA knockout parasites that moved at least one body length (e.g. Figure 6A), none showed clear constrictions at a fixed point within the matrix like those seen in wild-type parasites. The pattern of movement was also different from wild-type parasites; rather than moving along smooth helical trajectories, the TgMyoA knockout parasites moved in tightly twisting arcs or in a stair-like pattern consisting of right-angled turns associated with a sharp bend in the body of the parasite (Figure 6A and Video 11). In stark contrast to the wild-type parasites, we also saw no evidence by traction force mapping of a ring of inward-directed forces produced by the TgMyoA knockout parasites. In fact, we did not detect any displacement of the matrix above background noise by these parasites (compare Figure 6B to Figure 6D and E; see also Figure 6—figure supplement 1, n=16 parasites), suggesting that any forces produced by the moving knockout parasites are below the limit of detection in our traction force assay.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig6-v2.jpg)
+
+**Figure 6.:** (A) Brightfield images showing TgMyoA knockout and TgMIC2 knockout parasites moving within a Matrigel matrix without a detectable constriction. A wild-type parasite undergoing a typical constriction is shown for comparison. The TgMyoA knockout parasite makes right-angled ‘stairstep’ turn, and the TgMIC2 knockout parasite moves erratically in a tightly twisting arc. Scale bar = 5 µm, timestamps in seconds. See Videos 11 and 12 for the entire time series for the TgMyoA and TgMIC2 knockout parasites. (B–E) As in Figure 3A, the plots show the magnitudes of the 16,807 fibrin x-y displacement vectors between each pair of successive image volumes generated in experiments using: (B) TgMyoA knockout parasites; (C) TgMIC2 knockout parasites; (D) wild-type parasites; and (E) no added parasites (fibrin only). Periods during the 96-second time course when parasites were moving are indicated. For each time course, the two consecutive time points that gave the lowest mean displacement magnitude were used to set the background threshold: any displacements less than three standard deviations (3SD) above this mean were considered noise for that dataset. Examples of the force maps surrounding motile TgMyoA and TgMIC2 knockout parasites are shown in Figure 6—figure supplements 1 and 2, respectively.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Sequential fluorescence images in a single z-plane of a moving TgMyoA knockout parasite stained with Hoechst 33342 (to label the parasite nucleus), (B) the corresponding force maps, and (C) the zoomed images showing the force maps from panel B (boxed region), with background subtraction, overlaid on the parasite images from panel A. A red crosshair placed at a fixed position in the images in panel (C) illustrates movement of the parasite. The highlighted parasite continued to move for another 24 seconds; no signal above background was seen on the force maps at any time along its trajectory. Length of arrows indicating displacement magnitude are multiplied 24-fold in (B) and 15-fold in (C) for display. Scale bar = 5 µm, timestamps in seconds.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Sequential fluorescence images in a single z-plane of a moving TgMIC2 knockout parasite expressing YFP, (B) the corresponding force maps, and (C) the zoomed images showing the force maps from panel B (boxed region), with background subtraction, overlaid on the parasite images from panel A. A red crosshair placed at a fixed position in the images in panel C illustrates movement of the parasite. The highlighted parasite continued to move for another 18 seconds; no signal above background was seen on the force maps at any time along its trajectory. Length of arrows indicating displacement magnitude are multiplied 24-fold in panel C and 15-fold in panel D for display. Scale bars = 10 µm (panel A), 5 µm (panel C); timestamps in seconds.
+
+![Video 11.](https://cdn.elifesciences.org/articles/85171/elife-85171-video11.mp4.jpg)
+
+**Video 11.:** Scale bar = 5 µm, time is shown in hr:min:sec. Single frames from this video are shown in Figure 6A.
+
 We also tested whether the surface adhesin, TgMIC2, plays a role in generating the constriction-associated inward forces on the matrix. The motility defect in parasites lacking TgMIC2 (Gras et al., 2017) is less severe than the defect in parasites lacking TgMyoA, with 36 of 297 TgMIC2 knockout parasites (12%) capable of moving more than one body length (see also Gras et al., 2017; Huynh and Carruthers, 2006). However, these parasites often moved in an erratic, stop and start pattern, bending sharply and moving in tightly twisting arcs (Figure 6A and Video 12). The TgMIC2 knockout parasites also failed to form constrictions and did not detectably deform the fibrin matrix (Figure 6C, n=36 parasites, Figure 6—figure supplement 2, n=18 parasites) despite being able to move at maximum speeds similar to wild-type parasites (Gras et al., 2017). Taken together, these data confirm that motility is significantly altered, but not completely eliminated, in parasites lacking TgMyoA or TgMIC2. Furthermore, the data demonstrate that both proteins are required to produce the constrictions and the constriction-associated inward forces on the matrix observed during the motility of wild-type parasites.
 
-## TgMIC2-deficient parasites move less directionally
+![Video 12.](https://cdn.elifesciences.org/articles/85171/elife-85171-video12.mp4.jpg)
+
+**Video 12.:** Scale bar = 5 µm, time is shown in hr:min:s. Single frames from this video are shown in Figure 6A.
+
+### TgMIC2-deficient parasites move less directionally
 
 The larger number of TgMIC2 knockout parasites capable of long runs of motility (compared to the TgMyoA knockouts) enabled us to analyze their phenotype in greater detail. The nuclei of parasites lacking TgMIC2 did not change shape as they moved in 3D (Figure 7A and Figure 7—figure supplement 1A), providing further evidence that these parasites do not undergo the constrictions seen in wild-type parasites. Given their apparent propensity for tight turns, we also quantified the ability of the TgMIC2 knockout parasites to move directionally, by comparing displacement distance (first to last point) to total trajectory length. While parasites with and without TgMIC2 traveled along trajectories of similar mean length (38±9 µm vs. 42±8 µm, respectively), parasites lacking TgMIC2 moved approximately half as far from their starting point as wild-type parasites (Figure 7B and Figure 7—figure supplement 1B). These data suggest that the circumferential zone of attachment to the matrix, which requires TgMIC2, functions to convert meandering motility into more linear, directed forward progression.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig7-v2.jpg)
+
+**Figure 7.:** (A) Representative plots of nuclear shape (ratio of the nuclear diameters perpendicular vs. parallel to the long axis of the parasite) in one wildtype and one TgMIC2 knockout parasite (black circles and green squares, respectively), as the parasites moved over time. The wild-type parasite underwent multiple concurrent constrictions along its trajectory. For the combined data from multiple parasites, see Figure 7—figure supplement 1A. (B) Ratio of parasite displacement (D) to trajectory length (L) for wildtype (n=1399) and TgMIC2 knockout (n=165) parasites (black circles and green squares, respectively). The calculated means (± SD) are from three independent biological replicates, each consisting of three technical replicates (see Figure 7—figure supplement 1B). In panels A and B, ‘WT’ refers to the TgMIC2 LoxP parasites (Gras et al., 2017) before treatment with rapamycin to excise MIC2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/85171/elife-85171-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Ratio of nuclear diameter perpendicular (width) vs. parallel (length) to the long axis of the parasite in moving wild-type (WT) and TgMIC2 knockout (MIC2 KO) parasites, over time. For each parasite line, data from two independent biological replicates were combined; n=9 parasites (WT) and n=10 parasites (MIC2 KO). For the WT parasites, triangles indicate time points when the nucleus was passing through a constriction and circles when the nucleus was not passing through a constriction. (B) Ratio of parasite displacement to trajectory length for WT and MIC2 KO parasites. The horizontal bars indicate means (+/-SD) from three independent biological replicates, each consisting of 3 technical replicates; n=1,399 total trajectories (WT) and n=165 total trajectories (MIC2 KO). The individual data points are plotted in Figure 7B. The data were compared by Student’s two-tailed t-test. Note that in panels D and E, “WT” refers to the TgMIC2 LoxP parasites (Gras et al., 2017) before treatment with rapamycin to excise MIC2.
 
 ## Discussion
 
 The linear motor model of apicomplexan motility predicts that a parasite moves by pulling continuously on the matrix in an anterior-to-posterior direction along the length of the parasite. It was, therefore, unexpected that the predominant forces revealed by our 3D traction force mapping assay were instead periodic and highly localized, pointing inwards from all directions towards a circumferential location on the parasite surface. This annular band of parasite-generated, inward-directed force forms at a fixed position within the matrix and creates a visible constriction at the parasite periphery. The constriction passes from the anterior to the posterior end of the parasite as the parasite moves forward. Typically, when the constriction reaches the parasite’s posterior end a new constriction forms at the apical end and the cycle repeats. These results suggest that the moving parasite periodically assembles ring-shaped zones of tight attachment to the matrix, which deform the matrix and serve as stationary platforms that the parasite propels itself through, one body length at a time.
 
-## Attachment to the substrate, force generation, and motility in 2D vs. 3D
+### Attachment to the substrate, force generation, and motility in 2D vs. 3D
 
 Both malaria sporozoites and T. gondii tachyzoites are capable of moving in circles on 2D surfaces. The pioneering work of Munter, Frischknecht and colleagues combined traction force mapping with reflection interference contrast microscopy (RICM) during the 2D circular gliding of malaria sporozoites (Münter et al., 2009). They concluded that the parasite adheres to the substrate at its apical and posterior ends; each of these adhesion sites produces stalling forces parallel to the long axis of the parasite, and disengagement of the adhesion sites drives forward motion. Traction forces perpendicular to the direction of movement were also detected at the center of the parasite but these were interpreted as nonspecific and nonproductive. The apical and posterior adhesion sites were shown to move forward with the parasite, rather than remaining stationary with respect to the substrate.
 
@@ -82,7 +194,7 @@ When these previous studies of T. gondii 2D motility are combined with the 3D re
 
 Munera Lopez et al., 2022 also recently noted that tachyzoites undergo constrictions as they move through Matrigel. These authors ascribed the constrictions to the parasite having to squeeze through small pores in the matrix. Our force mapping results and the regularity with which the constrictions form at the apical end of the parasite argue strongly that the constrictions do not result from the parasite pushing its way through pores, but rather from parasite-generated pulling forces on the matrix. Annular constrictions that remain stationary relative to the surrounding environment have also previously been reported along the length of Plasmodium ookinetes as they move through peritrophic membrane and microvillar network of the mosquito midgut (Freyvogel, 1966; Vlachou et al., 2004; Zieler and Dvorak, 2000), suggesting that parasite-generated circular zones of attachment to the environment may be a conserved feature of apicomplexan motility in 3D.
 
-## 3D motility and invasion: variations on a theme
+### 3D motility and invasion: variations on a theme
 
 During the invasion of host cells by T. gondii and other apicomplexan parasites, proteins secreted from the parasite’s apical organelles assemble a ring-shaped zone of tight attachment between the membranes of the two cells. This ‘moving junction’ does not in fact move: it is anchored to the host cytoskeleton and is hypothesized to provide a fixed platform against which the parasite exerts force (Alexander et al., 2005; Besteiro et al., 2011; Dubremetz, 1998; Lebrun et al., 2005; Porchet-Hennere and Torpier, 1983; Aikawa et al., 1978). Parasite surface adhesins, which are engaged with the junction via their extracellular domains, are thought to be translocated by MyoA in an anterior-to-posterior direction, pushing the parasite through the junction and into the host cell. The body of the parasite narrows dramatically as it passes through the moving junction, bearing a striking resemblance to the constrictions we report here during 3D motility.
 
@@ -94,7 +206,7 @@ As a parasite invades a host cell, antibodies are ‘shaved’ off the parasite 
 
 The numerous parallels between invasion and 3D motility noted here suggest that the two processes may be more mechanistically similar than previously recognized, with implications for our understanding of each. For example, our data suggest that 3D motility can be best described as the parasite undergoing sequential invasion-like events through circular zones of attachment to the matrix; during invasion the parasite only needs to move a single body length to penetrate into the host cell, but during motility the parasite can string multiple constriction events together to move multiple body lengths (Figure 5C). The data also raise the possibility that the characteristic constriction of the parasite seen at the moving junction during invasion does not reflect the parasite being squeezed as it pushes itself through the small diameter opening into the host cell, as is commonly thought (e.g. Herm-Götz et al., 2002; Mordue et al., 1999), but rather the parasite attaching to and pulling on the host cell plasma membrane as it penetrates.
 
-## The linear motor model
+### The linear motor model
 
 The data presented here with wild-type parasites are at least partially consistent with the linear motor model of motility, in which: (a) actin polymerization is nucleated at the apical tip of the parasite by formin1 (Tosetti et al., 2019); (b) TgMyoA translocates the actin filaments in an anterior-to- posterior direction along the length of the parasite; and (c) binding of the rearward flowing actin filaments to transmembrane adhesins (Jacot et al., 2016), whose extracellular domains are attached to the substrate, drives the forward motion of the parasite (Figure 1A). While anterior-to-posterior actin flux may occur along the entire length of the parasite periphery (Hueschen et al., 2022; Quadt et al., 2016; Stadler et al., 2017), we propose a modification to the linear motor model in which force is generated, in whole or in part, by the rearward translocation of the subset of actin filaments that are coupled to adhesins at the circular ring of attachment. We were unable to detect any anterior-to-posterior bias in the force vectors at the constriction, which would be expected if the parasite pulls against this zone of attachment in order to move forward. These forces may be below our limit of detection (~0.72 pN). Alternatively, compression of the fibrin immediately adjacent to the constriction might increase the local elastic modulus of the matrix, making it more difficult to see proximal displacements because of a local increase in the displacement detection threshold. Because the fibrin gel behaves primarily as an elastic matrix (Figure 3—figure supplement 1), the relationship between acceleration and force is complex and we cannot calculate with any confidence how much total matrix displacement / force would be required to achieve a given parasite velocity and relate this to the displacement detection threshold of the assay.
 
@@ -104,42 +216,148 @@ The lack of a motility-associated constriction in TgMyoA-deficient parasites cou
 
 If the coupling of actin flow to the circular zone of attachment is important for forward motion, how do the parasites lacking TgMIC2 that move do so at near normal speeds (Gras et al., 2017) in the absence of constrictions? First, it is possible that both the wild-type and mutant parasites generate small forces distributed over their entire surface (in addition to larger forces that may be generated at the constriction in wildtype), which are collectively sufficient to drive motility but individually below our level of detection. Alternatively, the loss of TgMyoA or TgMIC2 might lead to compensatory changes in the expression of other genes with overlapping or redundant function (Meissner et al., 2013; Frénal and Soldati-Favre, 2015; Lamarque et al., 2014). The TgMIC2 KO parasites do in fact show changes in the expression of several other microneme and motility-associated proteins (Gras et al., 2017). Finally, it is possible that parasites lacking TgMyoA and/or TgMIC2 use a motility mechanism that is entirely different from that of wild-type parasites (e.g., Egarter et al., 2014; Gras et al., 2019) and does not involve a constriction but is nevertheless capable of supporting motility and sustaining the parasite’s lytic cycle. By analogy with observations from animal cells (Lämmermann et al., 2008), parasites might use different mechanisms for motility in different situations such as squeezing through tight junctions (Barragan et al., 2005) vs. migrating through loose interstitial tissues. If the motility of the mutants is driven by a different mechanism than that of wild-type parasites, higher sensitivity 3D traction force mapping may reveal informative differences in their pattern of force generation.
 
-## A guidance system for motility?
+### A guidance system for motility?
 
 The forward motion of the TgMIC2 knockout parasites, which lack the circular attachment zone, is significantly more disorganized than the motility of wild-type parasites. The mutant parasites can still generate relatively long trajectories, but the trajectories take them less far from their starting point than wild-type parasites. As discussed above, attachment to the matrix via a circular ring of adhesion likely contributes to the rotational twisting of the parasite as it moves forward and thereby to the helicity of the parasite’s trajectory. Extensive studies of the helical swimming behavior of bacteria have shown that a curved cell shape and helical trajectory are a particularly efficient way for small cells to move through viscous media (Berg and Turner, 1979; Ferrero and Lee, 1988; Hazell et al., 1986; Kaiser and Doetsch, 1975; Kimsey and Spielman, 1990). Engagement of T. gondii with the extracellular matrix through a circular band of adhesion may therefore not only create a fixed platform for the parasite to pull against and move forward; it may also function as part of a guidance system to help the parasite move efficiently through the various environments it encounters as it disseminates through the tissues of the unfortunate organisms it infects.
 
 ## Methods
 
-## Parasite and cell culture
+### Parasite and cell culture
 
 Parasites (RH strain, unless otherwise noted) were propagated by serial passage in human foreskin fibroblasts (HFFs; American Type Culture Collection #CCD-1112sk). HFFs were grown to confluence in Dulbecco’s Modified Eagle’s Medium (DMEM) (Life Technologies, Carlsbad, CA) containing 10% (vol/vol) heat-inactivated fetal bovine serum (FBS) (Life Technologies, Carlsbad, CA), 10 mM HEPES pH 7, and 100 units/ml penicillin and 100 µg/ml streptomycin, as previously described (Roos et al., 1994). Prior to infection with T. gondii, the medium was changed to DMEM supplemented with 10 mM HEPES pH 7, 100 units/ml penicillin and 100 µg/ml streptomycin, and 1% (vol/vol) FBS. TgMIC2 knockout parasites (Gras et al., 2017) and parasites conditionally depleted of TgMyoA (Egarter et al., 2014) were generously provided by Dr. Markus Meissner; the identity of these lines was authenticated by western blot to confirm the absence of the relevant proteins. HFFs and all parasite lines were tested periodically for Myocoplasma contamination.
 
-## Pitta chamber assembly
+### Pitta chamber assembly
 
 22×22 coverglasses were washed with Alconox detergent, rinsed with tap water, deionized water, and ethanol (100%), and air dried. Two strips of double-sided tape (Scotch 3 M, St. Paul, MN) were placed 3 mm apart on a glass slide, and the coverglass was placed on top of the tape and pressed firmly to ensure a complete seal. The flow cell volume was approximately 10 µl.
 
-## Matrigel matrix
+### Matrigel matrix
 
 Pitta chambers containing parasites embedded in polymerized Matrigel were prepared as previously described (Leung et al., 2014). Briefly, parasites were harvested from infected HFFs via syringe release and passed through a 3 µm Nucleopore filter (Whatman, Piscataway NJ). Parasites were pelleted and resuspended at in Live Cell Imaging Solution (LCIS) buffer. For fluorescence imaging, the LCIS contained 0.5 mg/ml Hoechst 33342 (Thermo Scientific, Waltham, MA) and/or a 1:20 dilution of Alexa546-conjugated anti-TgSAG1 (see Table 1). Fluorescent anti-TgSAG1 (100 µg) was prepared using the Alexa Fluor 546 Antibody Labeling Kit (Thermo Scientific, Waltham, MA) as per the manufacturer’s instructions. Parasites were incubated with the Hoechst 33342 (10 min) and/or anti-TgSAG1(15 min) at room temperature, then mixed with Matrigel and LCIS on ice in a 1:3:3 (vol/vol/vol) ratio and immediately added to a Pitta chamber. The Pitta chamber was incubated for three minutes at 35 °C in a custom-build heated microscope enclosure (UVM Instrumentation and Model Facility, Burlington, VT) before imaging.
 
-## Fibrin matrix
+**Table 1.**
+ Imaging parameters for the different experiments described.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experiment</th>
+      <th>Objective</th>
+      <th>Fluorochrome(Excitation/emission wavelengths)</th>
+      <th>Image spacing in z</th>
+      <th>Exposure time per image</th>
+      <th>Number of Image stacks</th>
+      <th>Total time</th>
+      <th>Volume(x, y, z)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Microspheres (Matrigel)</td>
+      <td rowspan="2">60×</td>
+      <td>DragonGreen(490/507–530 nm)</td>
+      <td rowspan="2">41 slices, 1 µm apart</td>
+      <td rowspan="2">16ms</td>
+      <td rowspan="2">60</td>
+      <td rowspan="2">64 s</td>
+      <td rowspan="2">225.3 µm × 84.5 µm×40 µm</td>
+    </tr>
+    <tr>
+      <td>tdTomato parasites (550/579–608 nm)</td>
+    </tr>
+    <tr>
+      <td>Fibrin vs Matrigel and TgMIC2 KO directionality</td>
+      <td>20×</td>
+      <td>Hoechst 33342(385/420–449 nm)</td>
+      <td>41 x1 µm</td>
+      <td>16ms</td>
+      <td>120</td>
+      <td>80 s</td>
+      <td>665.6 µm × 249.6 µm×40 µm</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Force Mapping, WT (Fibrin)</td>
+      <td rowspan="2">60×</td>
+      <td>tdTomato parasites(550/579–608 nm)</td>
+      <td rowspan="2">50x0.5 µm</td>
+      <td rowspan="2">16ms</td>
+      <td rowspan="2">60</td>
+      <td rowspan="2">96 s</td>
+      <td rowspan="2">225.3 µm × 84.5 µm×24.5 µm</td>
+    </tr>
+    <tr>
+      <td>Fibrin (635/666–723 nm)</td>
+    </tr>
+    <tr>
+      <td>WT, TgMyoA KO, TgMIC2 KO; Brightfield(Matrigel, fibrin)</td>
+      <td>60×</td>
+      <td>N/A: Brightfield</td>
+      <td>21 x1 µm</td>
+      <td>40ms</td>
+      <td>360</td>
+      <td>302 s</td>
+      <td>225.3 µm × 225.3 µm×20 µm</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Nuclear size vs constriction(Matrigel)</td>
+      <td rowspan="2">20×</td>
+      <td>Hoechst 33342(385/420–449 nm)</td>
+      <td rowspan="2">41 x1 µm</td>
+      <td rowspan="2">16ms</td>
+      <td rowspan="2">60</td>
+      <td rowspan="2">80 s</td>
+      <td rowspan="2">665.6 µm × 249.6 µm×40 µm</td>
+    </tr>
+    <tr>
+      <td>Anti-SAG1 Alexa 548 (550/579–608 nm)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TgMyoA KO Force Map(Fibrin)</td>
+      <td rowspan="2">60×</td>
+      <td>Hoechst 33342(385/420–449 nm)</td>
+      <td rowspan="2">50x0.5 µm</td>
+      <td rowspan="2">16ms</td>
+      <td rowspan="2">60</td>
+      <td rowspan="2">96 s</td>
+      <td rowspan="2">225.3 µm × 84.5 µm×24.5 µm</td>
+    </tr>
+    <tr>
+      <td>Fibrin (635/666–723 nm)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TgMIC2 KO Force Map(Fibrin)</td>
+      <td rowspan="2">60×</td>
+      <td>YFP cytosol (490/507–530 nm)</td>
+      <td rowspan="2">50x0.5 µm</td>
+      <td rowspan="2">16ms</td>
+      <td rowspan="2">60</td>
+      <td rowspan="2">96 s</td>
+      <td rowspan="2">225.3 µm × 84.5 µm×24.5 µm</td>
+    </tr>
+    <tr>
+      <td>Fibrin (635/666–723 nm)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fibrin matrix
 
 Unlabeled and Alexa-Fluor 647-labeled fibrinogen (both from Thermo Scientific, Waltham, MA) were each dissolved in 0.1 M sodium bicarbonate (pH 8.3)–15 mg/ml. Aliquots of 50 µl were flash frozen and stored at –80 C until use. Fibrin gels (Owen et al., 2017) containing parasites were prepared in Pitta chambers as follows. The parasite culture medium was replaced with LCIS buffer before harvesting via syringe release and filtering. A total of 500 µl of the parasite suspension were pelleted and resuspended in LCIS buffer to achieve a higher parasite concentration. Parasites were mixed with fibrinogen (final fibrinogen concentration of 2.25, 4.5, or 9 mg/ml). LCIS buffer containing thrombin (Sigma, Burlington, MA) and FBS was added to the parasite-fibrinogen suspension for final concentrations of 1.5x108 parasites per ml, 1 unit/ml of thrombin, and 10% FBS. The mixture was immediately pipetted into a Pitta chamber and allowed to polymerize at room temperature for three minutes before mounting on the microscope and imaging.
 
 A Nikon A1R-ER point-scanning confocal microscope was used to visualize the porosity of the fluorescent fibrin matrix (Figure 2A and Video 4), Using Galvano scanning, image (1024×1,024 pixel) stacks were captured with 60×Apo (0.1 µm/pixel, NA 1.49 l) objective with 0.25 µm spacing over 25 µm. The LUNV laser was used at wavelength 633 nm and the pinhole size was 28.10 µm.
 
-## Image acquisition
+### Image acquisition
 
 All other imaging was done on a Nikon Eclipse TE300 widefield epifluorescence microscope (Nikon Instruments, Melville, NY) equipped with a NanoScanZ piezo Z stage insert (Prior Scientific, Rockland, MA). See Table 1 for details of the imaging setup. Time-lapse video stacks were collected with an iXON Life 888 EMCCD camera (Andor Technology, Belfast, Ireland) using NIS Elements software v.5.11 (Nikon Instruments, Melville, NY). Fluorescently labeled parasites were imaged using a pE-4000 LED illuminator (CoolLED, Andover England) and a 89402 Quad filter (Chroma, Bellows Falls, VT). Stacks consisting of individual images (1024 pixel ×384 pixel) captured 0.5–1 µm apart in z, covering a total of 10–40 µm, were collected using either a 20×PlanApo λ (0.65 pixel/µm, NA 0.75) or 60×PlanApo λ (0.22 pixel/µm, NA 1.4) objective as described in Table 1. The same volume was successively imaged 60–360 times over the course of 64–302 seconds. The camera was set to trigger mode, no binning, readout speed of 35 MHz, conversion gain of 3.8 x, and EM gain setting of 300.
 
-## Tracking parasite motility
+### Tracking parasite motility
 
 Datasets were analyzed in Imaris ×64 v. 9.2.0 (Bitplane AG, Zurich, Switzerland). Fluorescently labeled parasite nuclei were tracked using the ImarisTrack module within a 1018 pixel ×380 pixel region of interest to prevent artifacts from tracking objects near the border. Spot detection used an estimated spot diameter of 3.0×3.0 × 6.0 µm (x, y, z). A maximum distance of 6.0 µm and a maximum gap size of 2 frames were applied to the tracking algorithm. Tracks with durations under 10 seconds or displacements of less than 2 µm were discarded to avoid tracking artifacts and parasites moving by Brownian motion, respectively (Leung et al., 2014). Accurate tracking was confirmed by visual inspection of parasite movements superimposed on their calculated trajectories. All 3D trajectory analysis was done using data from three biological replicates, each consisting of three technical replicates. Student’s t-tests were used to determine statistical significance between samples.
 
-## Fibrin deformation with FIDVC
+### Fibrin deformation with FIDVC
 
 The Fast Iterative Digital Volume Correlation (FIDVC) algorithm was used to calculate 3D fibrin displacements (BarKochba et al., 2015) by comparing two consecutive image volumes. The image volumes were cropped to 384×384 pixels (x,y)×48 slices (z) before running FIDVC. The initial interrogation window size was set to 32×32 × 32 and the program was run incrementally. The displacements arrows were plotted using a combination of previously described MATLAB code for 2D quiver color-coding for directionality (Owen et al., 2017) and custom MATLAB code (see accompanying source code file). To determine the displacement detection threshold, we calculated the mean magnitude of the 16,807 displacement vectors for each time point comparison in each dataset. The displacement detection threshold for that dataset was set as three standard deviations above the lowest of these mean values.
 
-## Rheology
+### Rheology
 
-A Lumicks C-Trap laser trap was used to determine the viscoelasticity of the fibrin. First, the power density spectrum (PDS) was calculated with 0.91 µm styrene beads in a flow cell. The beads were embedded in a fibrin gel, and a bead was captured in the laser trap. The flow cell was oscillated on the stage in the y dimension at different frequencies (1, 5, 10, 20, 50, 100 Hz), each for 5 s, at a fixed amplitude of 100 nm. The trap position and force in the y dimension were captured at 78 kHz. The elastic (in-phase) and viscous (out-of-phase) moduli were calculated using the bead’s force trace. The data were analyzed in R studio. A sliding two-sided window filter, size 78, was applied to both traces. The position signal was fitted with the function position=A*sin⁡t*f-phase using nonlinear least-squares with fit parameters for amplitude (A), frequency (f), and phase. The force readout was fit with the function force=B*sin⁡t*f-phase+C*cos⁡t*f-phase using nonlinear least-squares with fitting parameters B and C, where B is the in-phase (elastic) component of the force. The C fit parameter divided by the velocity of the trap equals the viscous modulus.
+A Lumicks C-Trap laser trap was used to determine the viscoelasticity of the fibrin. First, the power density spectrum (PDS) was calculated with 0.91 µm styrene beads in a flow cell. The beads were embedded in a fibrin gel, and a bead was captured in the laser trap. The flow cell was oscillated on the stage in the y dimension at different frequencies (1, 5, 10, 20, 50, 100 Hz), each for 5 s, at a fixed amplitude of 100 nm. The trap position and force in the y dimension were captured at 78 kHz. The elastic (in-phase) and viscous (out-of-phase) moduli were calculated using the bead’s force trace. The data were analyzed in R studio. A sliding two-sided window filter, size 78, was applied to both traces. The position signal was fitted with the function $position=A*sin⁡t*f-phase$ using nonlinear least-squares with fit parameters for amplitude (A), frequency (f), and phase. The force readout was fit with the function $force=B*sin⁡t*f-phase+C*cos⁡t*f-phase$ using nonlinear least-squares with fitting parameters B and C, where B is the in-phase (elastic) component of the force. The C fit parameter divided by the velocity of the trap equals the viscous modulus.

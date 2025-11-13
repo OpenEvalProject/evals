@@ -15,17 +15,17 @@
 
 ### Affiliations
 
-1. https://ror.org/016gb1631 Synthetic and Systems Biology Unit, Biological Research Center Szeged Hungary
-2. https://ror.org/00b30xv10 Department of Biology, University of Pennsylvania Philadelphia United States
-3. https://ror.org/00rs6vg23 College of Food, Agricultural, and Environmental Sciences, Department of Plant Pathology, Ohio State University Columbus United States
-4. https://ror.org/01394d192 Institute of Horticultural Science, Department of Vegetable and Mushroom Growing, Hungarian University of Agriculture and Life Sciences Budapest Hungary
-5. https://ror.org/01jsq2704 Department of Plant Anatomy, Institute of Biology, Eötvös Loránd University Budapest Hungary
+1. Synthetic and Systems Biology Unit, Biological Research Center Szeged Hungary ([ROR:016gb1631](https://ror.org/016gb1631))
+2. Department of Biology, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+3. College of Food, Agricultural, and Environmental Sciences, Department of Plant Pathology, Ohio State University Columbus United States ([ROR:00rs6vg23](https://ror.org/00rs6vg23))
+4. Institute of Horticultural Science, Department of Vegetable and Mushroom Growing, Hungarian University of Agriculture and Life Sciences Budapest Hungary ([ROR:01394d192](https://ror.org/01394d192))
+5. Department of Plant Anatomy, Institute of Biology, Eötvös Loránd University Budapest Hungary ([ROR:01jsq2704](https://ror.org/01jsq2704))
 
 † Corresponding author
 
 ## Abstract
 
-Multicellularity has been one of the most important innovations in the history of life. The role of gene regulatory changes in driving transitions to multicellularity is being increasingly recognized; however, factors influencing gene expression patterns are poorly known in many clades. Here, we compared the developmental transcriptomes of complex multicellular fruiting bodies of eight Agaricomycetes and Cryptococcus neoformans , a closely related human pathogen with a simple morphology. In-depth analysis in Pleurotus ostreatus revealed that allele-specific expression, natural antisense transcripts, and developmental gene expression, but not RNA editing or a ‘developmental hourglass,’ act in concert to shape its transcriptome during fruiting body development. We found that transcriptional patterns of genes strongly depend on their evolutionary ages. Young genes showed more developmental and allele-specific expression variation, possibly because of weaker evolutionary constraint, suggestive of nonadaptive expression variance in fruiting bodies. These results prompted us to define a set of conserved genes specifically regulated only during complex morphogenesis by excluding young genes and accounting for deeply conserved ones shared with species showing simple sexual development. Analysis of the resulting gene set revealed evolutionary and functional associations with complex multicellularity, which allowed us to speculate they are involved in complex multicellular morphogenesis of mushroom fruiting bodies.
+Multicellularity has been one of the most important innovations in the history of life. The role of gene regulatory changes in driving transitions to multicellularity is being increasingly recognized; however, factors influencing gene expression patterns are poorly known in many clades. Here, we compared the developmental transcriptomes of complex multicellular fruiting bodies of eight Agaricomycetes and Cryptococcus neoformans, a closely related human pathogen with a simple morphology. In-depth analysis in Pleurotus ostreatus revealed that allele-specific expression, natural antisense transcripts, and developmental gene expression, but not RNA editing or a ‘developmental hourglass,’ act in concert to shape its transcriptome during fruiting body development. We found that transcriptional patterns of genes strongly depend on their evolutionary ages. Young genes showed more developmental and allele-specific expression variation, possibly because of weaker evolutionary constraint, suggestive of nonadaptive expression variance in fruiting bodies. These results prompted us to define a set of conserved genes specifically regulated only during complex morphogenesis by excluding young genes and accounting for deeply conserved ones shared with species showing simple sexual development. Analysis of the resulting gene set revealed evolutionary and functional associations with complex multicellularity, which allowed us to speculate they are involved in complex multicellular morphogenesis of mushroom fruiting bodies.
 
 ## Introduction
 
@@ -39,11 +39,31 @@ One of the main goals of this study was to systematically tease apart the compon
 
 ## Results and discussion
 
-## Overview of new RNA-seq data
+### Overview of new RNA-seq data
 
 We present highly resolved developmental transcriptome data for P. ostreatus (oyster mushroom), one of the three most widely cultured species worldwide (Zhu et al., 2019), as well as for Pterula gracilis, a closely related species with a simple fruiting body morphology (Figure 1). In P. ostreatus, we sampled six developmental stages and up to four tissue types within a stage, whereas in Pt. gracilis, tissues could not be separated; therefore, we sampled four developmental stages (Figure 1—figure supplements 1 and 2). Strand-specific RNA-seq yielded 15.9–34.0 million reads per sample (Dryad: Table D1). Multidimensional scaling of the normalized transcriptome data accurately identified sample groups with biological replicates being tightly positioned together (Figure 1—figure supplement 3). Fruiting body samples were grouped in two main groups, the early (primordia and young fruiting bodies) and mature fruiting bodies, irrespective of the tissue types. For uniformity in downstream analyses, we reanalyzed data from former studies (Almási et al., 2019; Gehrmann et al., 2018; Ke et al., 2020; Krizsán et al., 2019; Liu et al., 2018; Sipos et al., 2017), yielding data for eight species in the order Agaricales (Figure 1), which comprises a single origin of complex fruiting body morphologies (Marisol et al., 2020; Varga et al., 2019). P. ostreatus and Pt. gracilis had 4294 and 474 developmentally expressed genes (≥4 fold change [FC]), respectively. Pleurotus has a similar number of developmentally expressed genes to those reported earlier for other mushroom-forming fungi, while Pt. gracilis has fewer, possibly due to its simple morphology (Almási et al., 2019; Krizsán et al., 2019; Sipos et al., 2017; Figure 1—figure supplement 4). To validate the relevance of developmentally expressed genes, we collected experimentally validated, fruiting-related genes from P. ostreatus and the model species Coprinopsis cinerea. For these genes, 92.3% of the P. ostreatus orthologs showed developmental expression (at FC > 2) in our dataset (Supplementary file 1), indicating that our approach captures CM-related genes with high sensitivity.
 
-## Developmentally expressed genes, natural antisense transcripts, and gene age distribution
+![Figure 1.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig1-v2.jpg)
+
+**Figure 1.:** Numbers in circles next to nodes represent gene ages used in phylostratigraphic analyses of Pleurotus ostreatus. Nodes are numbered from 1 to 20 from the root of the tree to the tip harboring P. ostreatus. The first emergence of complex multicellularity in this lineage is shown with red, according to Merényi et al., 2020. The scale bar represents 0.2 expected change per site. Fruiting bodies of P. ostreatus (upper) and Pterula gracilis (lower) are shown in the box. ‘Hym,’ Hymenochaetales.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) VM: vegetative mycelium; (b) P1: stage 1 primordium; (c) P3: stage 3 primordium; (d) YFB: young fruiting body; (e) FB: fruiting body; (f) dashed areas and black arrows show different tissue types S: stipe; C: cap trama; D: dedifferentiated tissue of cap trama; L: lamellae; and V: cuticle. Bars represent 1 mm in (a) and (b), 5 mm in (c) and (d) while 1 cm in (e–g).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) VM: vegetative mycelium; (b) P: primordium; (c) YFB: young fruiting body; (d) FB: fruiting body; bars represent 1 mm in (b) and (c), 5 mm in (d) while 1 cm in (a).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Normalized transcriptome data accurately identified sample groups with biological replicates being tightly positioned together. VM: vegetative mycelium; P1: stage 1 primordium; P3: stage 3 primordium; YFB: young fruiting body, FB: fruiting body; H: cap (entire); C: cap trama (only the inner part, without lamellae or skin); L: lamellae; S: stipe; V: cuticle; and D: dedifferentiated tissue of cap.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** NDR: not developmentally expressed; >DR2: developmentally expressed with at least twofold change; > DR4: developmentally expressed with at least fourfold change.
+
+### Developmentally expressed genes, natural antisense transcripts, and gene age distribution
 
 Developmentally expressed genes displayed limited physical clustering in the genomes (Appendix 1, Dryad: Table D2), which is different from some key genes involved in animal and plant pattern formation (Meyerowitz, 2002). Notably, some of the developmental gene ‘hotspots’ overlapped with putative natural product biosynthetic gene clusters, a well-known group of clustered genes in fungal genomes (Keller, 2019).
 
@@ -55,7 +75,7 @@ To understand the composition of developmental transcriptomes, we sorted all pro
 
 **Figure 2.:** * represents significant differences p-value<0.05 (Fisher’s exact test with Benjamini–Hochberg correction). Gene age was calculated based on orthogroup membership (the presence of clear orthologs across species). For each species, nodes along the node path were numbered in ascending order on the species tree from root to tip starting with the value 1 (see Figure 1 for an example); node numbers were then used as the gene age values.
 
-## Developmental hourglass
+### Developmental hourglass
 
 To examine how young genes contribute to the CM transcriptome, we calculated transcriptome age indices (TAIs) for each developmental stage in each species. TAI calculations weigh phylostratigraphic patterns by expression level, thus providing a weighted view of the contribution of young and old genes to the transcriptome. This way, TAIs link gene ages to the developmental hourglass concept, which has been proposed to explain the incorporation of genetic novelty into the developmental programs of CM eukaryotes (Domazet-Lošo and Tautz, 2010; Drost et al., 2017), including fungi (Cheng et al., 2015). The hourglass concept posits that evolutionarily older genes are expressed at mid-development (Domazet-Lošo and Tautz, 2010) while the alternative ‘early conservation’ model implies that old genes are expressed early in development (Piasecka et al., 2013). Fungi do not display developmental transitions (e.g., phylotypic stage, mid-developmental transition) similar to those of metazoans, but they have a complex developmental program, and it has been proposed that the hourglass phenomenon would arise in any species with a sufficiently complex development (Domazet-Lošo et al., 2017). In fungi, the emergence of fruiting body primordia on vegetative mycelia comprises the largest developmental transition; dimensions change from fractal-like in mycelia to 3D in fruiting bodies, which necessitates turning on several traits for CM (Nagy et al., 2018). Accordingly, the largest transcriptomic reprogramming (e.g., in terms of differentially or developmentally expressed genes) was reported for this transition (Krizsán et al., 2019; Sipos et al., 2017; Muraguchi et al., 2015).
 
@@ -67,7 +87,7 @@ To test if a developmental hourglass can be found in fungi, we analyzed the tran
 
 Overall, we interpret these results as evidence for neither the hourglass nor the early conservation models being applicable to mushroom development. Complex multicellular fruiting bodies of fungi, to our best knowledge, do not undergo the key developmental transitions (e.g., phylotypic stage, mid-developmental transition) like animal embryos do (Virágh et al., 2021). Rather, they follow unique developmental programs, which are discussed in the second half of the article.
 
-## Allele-specific expression, but not RNA editing, is abundant in fruiting bodies of P. ostreatus
+### Allele-specific expression, but not RNA editing, is abundant in fruiting bodies of P. ostreatus
 
 ASE and RNA editing are two processes that can shape the transcriptome by altering abundances and sequences of transcripts, respectively. Both have recently been reported in CM fungi (Gehrmann et al., 2018; Zhu et al., 2014), but how widespread they are and how they contribute to fruiting body development is poorly known. We chose P. ostreatus to analyze the contributions of ASE and RNA editing because both parental genomes have been sequenced (Alfaro et al., 2016; Riley et al., 2014) and sufficiently differ from each other to classify single-nucleotide variants either as ASE (variants differing from one parental genome) or RNA editing (variants differing from both parental genomes).
 
@@ -75,31 +95,75 @@ Overall, 2,244,348 variants served as input to the ASE analysis and were used to
 
 At the scale of the entire genome or scaffolds, the two parental genomes expressed almost equally (Figure 4—figure supplement 2), whereas at the gene level 7793 (74,8%) of the 10,419 expressed genes were assigned as equally expressed genes (EE genes) in all stages and tissue types and 2626 genes (25.2%) were biased toward the same nucleus in all biological replicates of at least one stage or tissue (referred to as ASE genes, Figure 4). Of these, 1560 genes showed 2 < FC < 4 fold expression imbalance (hereafter referred to as S2 genes; 15%) and 1066 showed over fourfold difference (S4 genes; 10.2%) between the two nuclei in at least one stage (averaged across replicates, Dryad: Table D4). In comparison, in A. bisporus ASE was reported for 411 genes (~4% of the genome), perhaps due to fewer SNPs between parental nuclei (Gehrmann et al., 2018).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig4-v2.jpg)
+
+**Figure 4.:** Expression of PC15 relative to the sum of PC15 and PC9 (AS ratio) was visualized in a heatmap for genes that showed at least twofold allele-specific expression (ASE) in at least one stage. Thresholds that we used to define S2 and S4 gene sets are marked in the color key. VM: vegetative mycelium; P1: stage 1 primordium; P3: stage 3 primordium; YFB: young fruiting body; FB: fruiting body; H: cap (entire); C: cap trama; L: lamellae; S: stipe; V: cuticle; D: dedifferentiated tissue of cap.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Replicates of stages clustered together, and therefore allele-specific expression showed a development- and tissue-specific pattern. VM: vegetative mycelium; P1: stage 1 primordium; P3: stage 3 primordium; YFB: young fruiting body, FB: fruiting body; H: cap (entire); C: cap trama (only the inner part, without lamellae or skin); L: lamellae; S: stipe; V: cuticle; D: dedifferentiated tissue of cap.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) The nuclear read ratio (NRR, the contribution of nuclei to the total expression) across stages and tissues. (b) Chromosomal read ratio (CRR, the contribution of nuclei to the expression of scaffolds) across stages and tissues. Red dots represent the biological replicates separately. A slight dominance of PC9 was observable (mean NRR across samples 0.97; max difference 12.5%). Values smaller than one mean the dominance of the PC9 nucleus over PC15 while the opposite marks the dominance of PC15. VM: vegetative mycelium; P1: stage 1 primordium; P3: stage 3 primordium; YFB: young fruiting body, FB: fruiting body; H: cap (entire); C: cap trama (only the inner part, without lamellae or skin); L: lamellae; S: stipe; V: cuticle; D: dedifferentiated tissue of cap.
+
 Enrichment analysis based on InterPro (IPR) domains and Gene Ontology (GO) terms of ASE genes highlighted a significant overrepresentation of 83 IPR and 45 GO terms, respectively (Supplementary file 2a–d), several of which are associated with genes known to be involved in fruiting body formation (Krizsán et al., 2019), such as hydrophobins, glycoside hydrolase families, aquaporins, and fungal-type protein kinases (Supplementary file 2a–d). For example, we detected ASE in hydrophobin genes (Figure 5a), which are one of the most studied fruiting body-related gene families (Bayry et al., 2012). Both the fungal-type cell wall GO term (GO:0009277) and the hydrophobin-related (IPR001338) terms were significantly overrepresented among genes with ASE. Of the 27 hydrophobins of P. ostreatus, 21 showed developmental regulation (FC > 2), of which 14 showed ASE (FC > 2). Mycotoxin biosynthetic process (GO:0043386) was also enriched in both the GO and IPR analyses (Figure 5b). Pleurotus has 16 genes in the UstYa-like mycotoxin biosynthesis protein family (probably involved in dikaritin production; Vogt and Künzler, 2019), of which 6 were developmentally expressed (FC > 4), and all of these showed ASE, while only 1 of the remaining 10 genes showed ASE. These examples highlighted how ASE can generate expression variance in developmentally expressed genes and thus potentially influence fruiting-related gene expression.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig5-v2.jpg)
 
-**Figure 5.:** Pleurotus ostreatus.Expression level (log2 transformed fragments per kilobase of transcript per million mapped reads [FPKM]) from the two nuclei are colored with blue (PC9) and red (PC15). P. ostreatus gene- and protein IDs (PleosPC15_2) are displayed in each plot as a title. (a) Hydrophobin; (b) UstYa-like mycotoxin biosynthesis protein genes. Differences in the upstream gene regions are shown under the plots. VM: vegetative mycelium; P1: stage 1 primordium; P3: stage 3 primordium; YFB: young fruiting body, FB: fruiting body; H: cap (entire); C: cap trama; L: lamellae; S: stipe; V: cuticle; D dedifferentiated tissue of cap.
+**Figure 5.:** Expression level (log2 transformed fragments per kilobase of transcript per million mapped reads [FPKM]) from the two nuclei are colored with blue (PC9) and red (PC15). P. ostreatus gene- and protein IDs (PleosPC15_2) are displayed in each plot as a title. (a) Hydrophobin; (b) UstYa-like mycotoxin biosynthesis protein genes. Differences in the upstream gene regions are shown under the plots. VM: vegetative mycelium; P1: stage 1 primordium; P3: stage 3 primordium; YFB: young fruiting body, FB: fruiting body; H: cap (entire); C: cap trama; L: lamellae; S: stipe; V: cuticle; D dedifferentiated tissue of cap.
 
 Adenosine-to-inosine (A-to-I) RNA editing is another source of single-nucleotide variants in the transcriptome that was recently described in CM fungi (Zhu et al., 2014; Liu et al., 2017; Bian et al., 2019; Teichert, 2020). In contrast to ASE, however, our analyses did not yield considerable signal for A-to-I editing in P. ostreatus (Appendix 3, Dryad: Table D5). In fact, most candidate sites turned out to be likely sequencing errors or hallmarks of polyadenylation sites (see Appendix 3 for details), indicating that RNA editing is probably not associated with fruiting body development in this species.
 
-## Allele-specific expression is enriched in young genes
+### Allele-specific expression is enriched in young genes
 
 We next asked what mechanisms could give rise to ASE. Gehrmann et al., 2018 found that DNA methylation can explain at most 10% of ASE, which is consistent with the negligible role of gene body methylation in fungi (Montanini et al., 2014), suggesting other mechanisms. Following reports of divergent cis-regulatory alleles causing allelic gene expression imbalance (Gaur et al., 2013; Chen et al., 2016; Cowles et al., 2002; McManus et al., 2010; Wang et al., 2017), we hypothesized that ASE may arise from cis-regulatory divergence between nuclei of P. ostreatus. The dikaryotic stage of fungi, in which two haploid nuclei coexist in the same cellular compartment, represents a compatible environment for ASE to arise. Indeed, upstream 1 kb regions, which presumably contain cis-regulatory elements, of S2 and S4 genes are significantly more different (Kruskal–Wallis with Nemenyi post hoc test p<2e–16) between the two parents than upstream regions of EE genes (Figure 6a). This raises the possibility that divergent cis-regulatory elements in the same trans-regulatory cellular environment cause differential binding of transcription factors, resulting in biased transcript accumulation from the two nuclei. Amino acid sequences of S4 and S2 genes are also significantly more different between the two parents (Kruskal–Wallis test with Nemenyi post hoc test p<2.2e–16; Figure 6—figure supplement 1a) than those of EE genes. Together, these observations indicate that ASE in P. ostreatus may arise from the divergence of cis-regulatory alleles, possibly in fast-evolving genes. Analysis of selection strength based on dN/dS ratios indicated higher dN/dS and thus weaker selection among ASE than among EE genes (Kruskal–Wallis test with Nemenyi post hoc test p=2.0e–10 and 1.6e–5; Figure 6b, Figure 6—figure supplement 1b), suggesting that ASE is enriched in genes that are released from selection constraints.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig6-v2.jpg)
+
+**Figure 6.:** (a) Percent sequence identity between the 1 kb upstream regions of PC15 and PC9 genes. (b) dN/dS distribution for ASE (ASE with twofold change [S2] and ASE with fourfold change [S4]) and equally expressed (EE) genes under the free model in CodeML.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Maximum likelihood amino acid distances between PC15 and PC9 proteins (model = WAG). (b) dN/dS distribution for the three gene groups under the M0 model in CodeML. S2 and S4: genes with ASE at least in one stage with two- (S2) or fourfold change (S4). Lines and p-values (<1e-3) represent the pairwise comparison of Nemenyi post hoc test of the Kruskal–Wallis test.
+
 A well-known group of genes under relaxed selection are evolutionarily young genes; that is, those that duplicated or arose via de novo gene birth recently. Therefore, we tested whether ASE is correlated with relative gene age in our dataset. ASE genes were strongly and significantly overrepresented in the youngest gene ages (Fisher’s exact test p=1.1e–12–2.4e–68), with a clear trend (Figure 7/a, Mann–Kendall test p=2.5e–6) of increasing ASE incidence toward young genes. At the same time, ASE is significantly underrepresented in the oldest age categories (gene age 1–4: p=1.2e–2–7.8e–103, Fisher’s exact test, Figure 7a). These observations are consistent with young genes tolerating allelic expression imbalance better than conserved ones, possibly due to relaxed constraint (Dong et al., 2011; Gu et al., 2005; Kondrashov et al., 2002).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig7-v2.jpg)
+
+**Figure 7.:** The proportion of ASE shows a significant tendency toward higher values (Mann–Kendall statistics) across gene ages in the case of (a) all genes and (b) developmentally expressed genes (fold change [FC] > 4). The horizontal red line represents the ratio of all ASE/equally expressed (EE) genes, while significant differences from the background (Fisher’s exact test p-value<0.001) are shown with green (overrepresentation) and blue (underrepresentation). The size of circles represents the number of proteins (log10 transformed).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Bars represent the proportions of gene numbers relative to the total gene number of a group (equally expressed [EE], ASE with twofold change [S2], or ASE with fourfold change [S4]). NDR: non-developmentally expressed gene; DR: developmentally expressed gene.
 
 If genes under weak selection can tolerate expression variation, and developmental expression is considered an adaptively or neutrally arising expression variation, then ASE genes and developmentally expressed genes should overlap to some extent. Indeed, half of the ASE genes (S4: 52.7%; and S2: 49.1%) were also developmentally expressed (FC > 4), significantly more than in EE genes (31.8%, Fisher’s exact test p=8.2e–58). We observed that as we move toward younger genes the proportion of developmentally expressed ASE genes increases compared to non-ASE genes (Figure 7b, Figure 7—figure supplement 1). The strongest overrepresentation of ASE genes can be observed among developmentally expressed genes that arose in the genus Pleurotus (gene age 19–20, pS4/EE=3.0e–20-9.52e–14, Fisher’s exact test).
 
 Taken together, the above observations allow us to speculate that ASE is, to a large extent, likely arising as a neutral phenomenon. Accordingly, we see two implications on the interpretation of fruiting body transcriptome data. First, it is possible that some of the developmental variation generated by ASE can prove adaptive at small evolutionary scales, which may manifest as between-strain differences within a species. Alternatively, ASE may be tolerated in genes with limited or species-specific functions, in which case it may have no or weak phenotypic impact on CM fruiting bodies. The overlap of ASE and developmentally expressed genes further suggests that developmentally expression in young genes can partially be neutrally arising expression variance as well.
 
-## Comparative transcriptomics defines core developmentally expressed genes in the Basidiomycota
+### Comparative transcriptomics defines core developmentally expressed genes in the Basidiomycota
 
 We have shown that the high number of young developmentally expressed genes could be either the result of neutral transcriptional variation and/or might be responsible for species specific functions. Therefore, we hereafter focus on conserved developmentally expressed genes to characterize core functions and gene families associated with the development of CM fruiting bodies.
 
 Fruiting bodies encompass multiple processes, including sexual spore formation, defense, and tissue differentiation, among others, but only some of these are relevant from the perspective of the origin of CM. To identify core fruiting-related genes that participate in the sculpting of fruiting bodies in Agaricomycetes in general, young and/or species-specific genes and genes with species-specific developmental expression need to be eliminated from the transcriptomes. To remove young genes, we first looked for sets of 1-to-1 orthologs across the examined species, hereafter called ‘orthogroups’ (one gene per species), which show developmentally dynamic expression in most species (FC > 2/4, see Materials and methods). This yielded 1781 orthogroups, considered hereafter as conserved developmental orthogroups.
 
 To distinguish genes related to basic sexual processes (sporulation, meiosis) from those restricted to CM fruiting bodies, we reanalyzed transcriptome data for sexual sporulation and basidium development of C. neoformans (Liu et al., 2018). This species is closely related to the Agaricomycetes and has a simple, non-CM development, so we used it here as a minimal model of sexual development (Figure 8a). Of the 1781 conserved orthogroups, 913 and 868 were developmentally expressed both in C. neoformans and CM species and only in CM species (Figure 8b, Supplementary file 3a–c), and are referred to as shared and CM-specific orthogroups, respectively. Of the 868 CM-specific orthogroups, 754 were completely missing in C. neoformans, whereas 114 were present but not developmentally expressed (Figure 8b, Supplementary file 3c). The 754 orthogroups might be missing from C. neoformans because they evolved later (in Agaricomycetes) or because they were lost during the reductive evolution of this species. Shared orthogroups included highly conserved gene functions, such as mitosis/meiosis, general transcription factors, or ribosomal proteins, whereas CM-specific orthogroups contained more genes encoding sequence-specific transcription factors, cell wall remodeling, oxylipin biosynthesis, protein ubiquitination (F-box, BTB/POZ, and RING zinc finger domain proteins), as well as functionally unclassified proteins (Figure 8c, Figure 8—figure supplement 1, Supplementary file 3b).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig8-v2.jpg)
+
+**Figure 8.:** (a) Schematic representation of complex multicellular and simple development and the use of C. neoformans as a minimal model of sexual development in the Basidiomycota. (b) Distribution of genes and their developmental expression across the nine species. Dark and light green refers to genes with developmental regulation at fold change > 4 and 2, respectively, whereas white and black denote nondevelopmentally expressed and missing genes, respectively. Dendrogram was inferred in a hierarchical clustering based on expression categories. Gene Ontology (GO) enrichment for (c) CM-specific and (d) shared orthogroups. KS means the p-value of Kolmogorov–Smirnov test implemented in the R package ‘topGO.’ On panels (c) and (d), cutoff lines (dashed line) are drawn at enrichment scores corresponding to p=0.05, p=0.01, and p=0.001 (from left to right). GO terms are ordered by Kolmogorov–Smirnov p-values. See also Supplementary file 5a and b for GO enrichment details.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Number of conserved orthogroups in different functional categories.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** VM: vegetative mycelium; P1: stage 1 primordium; P3: stage 3 primordium; YFB: young fruiting body, FB: fruiting body; H: cap (entire); C: cap trama (only the inner part, without lamellae or skin); L: lamellae; S: stipe; V: cuticle; D: dedifferentiated tissue of cap; A: annulus. For stage details, see Supplementary file 4c.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/71348/elife-71348-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** VM: vegetative mycelium; P1: stage 1 primordium; P3: stage 3 primordium; YFB: young fruiting body; ‘B: fruiting body; H: cap (entire); C: cap trama (only the inner part, without lamellae or skin); L: lamellae; S: stipe; V: cuticle; D: dedifferentiated tissue of cap; A: annulus. For stage details, see Supplementary file 4c.
 
 Cell division-related (DNA replication, meiosis, mitosis, DNA repair, etc.) and ribosomal protein encoding genes comprised the most frequent annotations in shared orthogroups (Figure 8d, Figure 8—figure supplement 1). Meiosis happens in basidia in both C. neoformans and fruiting body forming fungi and associated genes showed clear peaks in their expression (Figure 8—figure supplement 2). C. neoformans showed a single peak in meiotic/mitotic gene expression, whereas CM fungi showed two peaks, one corresponding to meiosis in gills and another to intense cell division (mitosis) in primordia. Ribosomal protein gene expression, as a proxy for the activity of protein synthesis, has been widely associated with cell growth and proliferation (Jorgensen et al., 2002; Kraakman et al., 1993). Ribosomal proteins showed an early peak in all species, while in CM species a second peak was also observed, coincident with meiosis and spore production in gills, suggesting increased protein synthesis (Figure 8—figure supplement 3). We infer that in CM species the first ribosomal gene expression peak corresponds to an early, proliferative phase of development followed by the transition to growth by cell expansion (Krizsán et al., 2019), which gives the final shape and size of fruiting bodies before spore release.
 
@@ -113,7 +177,7 @@ CM-specific orthogroups showed a phylostratigraphic enrichment in early mushroom
 
 **Figure 9.:** CM-specific orthogroups are significantly enriched in the most recent common ancestors of lineages in which the first complex structures emerged (see also Figure 1). Y-axis represents relative gene age (for definition of gene ages, see Dryad: Figure D1). X-axis displays the odds ratio of the enrichment of developmentally expressed orthogroups relative to all orthogroups in a given age category based on Fisher’s exact test. If the odds ratio exceeds 1 (red dotted line), developmentally expressed orthogroups are overrepresented in that gene age. Significant (FDR p<0.05) overrepresentation is indicated by blue. The size of circles corresponds to the FDR-corrected p-value of Fisher’s exact test.
 
-## Conclusions
+### Conclusions
 
 In this study, we analyzed developmental transcriptomes of complex multicellular fungi in the Agaricomycetes using a comparative dataset that included the first well-resolved developmental gene expression profiling data for P. ostreatus (oyster mushroom), the second most widely cultured mushroom species worldwide (Grimm and Wösten, 2018; Royse et al., 2017). We detected evidence for widespread developmental expression of genes, ASE imbalance between parental monokaryons, NATs, but not for RNA editing or the developmental hourglass. We found that the detected phenomena affect genes of various evolutionary ages and speeds to different extents. For example, developmental expression and ASE were most pronounced among evolutionarily young genes. On the other hand, NATs showed no conservation across species, suggesting that they evolve at a high rate. These observations allow us to speculate that the complex interplay of these processes in the transcriptome may provide multiple gears for transcriptome evolution that probably facilitates the incorporation of evolutionary innovations into fruiting body development of Agaricomycetes.
 
@@ -125,7 +189,38 @@ As in the case of ASE, young genes might display more expression variance and no
 
 ## Materials and methods
 
-## Growth condition, sampling, and RNA-sequencing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Pleurotus ostreatus)</td>
+      <td>N001</td>
+      <td>CETC</td>
+      <td>CECT-20600</td>
+      <td>Wild-type dikaryotic strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pterula gracilis)</td>
+      <td>CBS 309.79</td>
+      <td>CBS</td>
+      <td>CBS 309.79</td>
+      <td>Wild-type dikaryotic strain</td>
+    </tr>
+  </tbody>
+</table>
+
+### Growth condition, sampling, and RNA-sequencing
 
 For fruiting the dikaryotic strain N001 (CECT-20600) of P. ostreatus (recently interpreted as P. cf. floridanus; Li et al., 2019), we first prepared spawn by inoculating sterilized rye and incubating for 10 days. Pasteurized straw-based commercial oyster compost (95 vol%) and the colonized spawn (5 vol%) were mixed gently, and 3 kg were filled into polyethylene bags. Bags were incubated in the dark at 27°C and 85–90% relative humidity for 17 days. Next, the bags were transferred to the growing room for fruiting at 18–19°C, relative humidity 80–85%, and 8/16 hr light/dark period (with approximately 1200 lux light intensity). We sampled vegetative mycelium (VM), six developmental stages, and five tissue types, each in three biological replicates as explained in Figure 1—figure supplement 1. VM was collected from the sawdust culture. We defined stage 1 primordia (P1) as the globose-triangular hyphae-covered structures without clearly recognizable differentiation; stage 2 (P2) primordia were defined as the first time point when caps were recognizable as pointed tips. Stage 3 primordia (P3) had a clearly differentiated and pigmented cap and an appearing fracture below the cap. The young fruiting body (YFB) stage was defined as the time point when the lamellae are clearly recognizable below the cap, and the diameter of the cap is less than 2 cm. Finally, in the mature fruiting body stage (FB) lamellae are fully developed and meiosis/sporulation have started, and the cap expands (>5 cm). In the case of stage 1 and 2 primordia (P1 and P2), the whole tissue was collected containing both stipe and cap initials. In the stage 3 primordium (P3) and the YFB stages, stipes and caps were sampled separately. We divided mature fruiting bodies (FBs) into stipe (S), cap trama (C), cap cuticle (V), and gills (L). We defined cap (H) as the whole upper part of the fruiting body (in P3 and YFB) while cap trama (C) refers to just the inner part of cap without lamellae or cuticle (in FB) (see Figure 1—figure supplement 1). The last stage we sampled was the dedifferentiated cap trama (D), a dissection from inner cap tissue that was inoculated for 24 hr on a sterile PDA-agar plate until the emergence of new hyphae. Tissue from 3 to 8 individual fruiting bodies was pooled for each replicate of each sample type.
 
@@ -133,15 +228,15 @@ Pt. gracilis CBS 309.79 was inoculated onto Malt Extract Agar plates with cellop
 
 Three biological replicates of each sample type were stored at –80°C until RNA extraction. Tissue samples were homogenized with micropestles using liquid N2, and RNA was extracted by using the Quick-RNA Miniprep Kit (Zymo Research) according to the manufacturer’s instructions. Strand-specific cDNA libraries were constructed from poly(A)-captured RNA using the Illumina TruSeq Stranded RNA-Seq library preparation kit and sequenced on the Illumina HiSeq 4000/x platform in PE 2 × 150 format with 40 million reads per sample at OmegaBioservices (USA).
 
-## Bioinformatic analyses of RNA-seq data
+### Bioinformatic analyses of RNA-seq data
 
 New data for P. ostreatus and Pt. gracilis was reanalyzed together with previously published transcriptomes of seven Basidiomycota species (Supplementary file 4). To remove adaptors, ambiguous nucleotides, and any low-quality read end parts, reads were trimmed using bbduk.sh and overlapping read pairs were merged with bbmerge.sh tools (part of BBMap/BBTools; http://sourceforge.net/projects/bbmap/) with the following parameters: qtrim = rl trimq = 25 minlen = 40. A two-pass STAR alignment (Veeneman et al., 2016) was performed against reference genomes with the same parameters as in our previous study (Krizsán et al., 2019; FPKM_calc.R) except that the maximal intron length was reduced to 3000 nt. Read count data was normalized using EdgeR (Robinson et al., 2010) as in our previous study (Krizsán et al., 2019). Expression levels were calculated as fragments per kilobase of transcript per million mapped reads (FPKM). Samples, such as FBCL and FBS of C. cinerea from Krizsán et al., 2019, and stage 2 primordia (P2) of P. ostreatus, were excluded from our analysis to avoid the signs of fruiting body autolysis and for quality reasons, respectively. Raw RNA-seq reads have been deposited to NCBI’s GEO archive (GSE176181).
 
-## Identification of developmentally expressed genes
+### Identification of developmentally expressed genes
 
 Developmentally expressed genes were defined as genes that show at least twofold or fourfold change in expression between any two fruiting body stages or tissue types and that show an expression level FPKM > 4, as detailed in Krizsán et al., 2019. The gene was excluded if the maximum expression was detected in the VM.
 
-## Species tree and relative gene age estimation
+### Species tree and relative gene age estimation
 
 Protein sequences of 109 whole genomes (Supplementary file 4a) across Basidiomycota and Ascomycota (as outgroup) were downloaded from the JGI genome portal (September 2019; Grigoriev et al., 2014; Nordberg et al., 2014). All-vs-all similarity search was carried out with MMseqs2 (Steinegger and Söding, 2017) using three iterations and setting sensitivity to 5.7, max-seqs to 20,000, e-profile to 1e-4, a preliminary coverage cutoff to 0.2, and an e-value cutoff to 0.001. Then, an asymmetrical coverage filtering was performed where we required ≥0.2 pairwise alignment coverage from the longer protein and ≥0.8 from the shorter one, with the aim to omit aspecific hits while retaining gene fragments (covercutter.R). Then, Markov clustering with an inflation parameter 2.0 was performed using the ratio of ‘number of identical matches’ (Nident) and ‘query sequence length’ (qlen) as weight in the matrix. After clustering, we removed contaminating proteins from gene families following the logic of Richter et al., 2018.
 
@@ -151,21 +246,21 @@ For gene tree reconstructions, gene families that contained at least four protei
 
 Orthogroups were used to assign relative gene ages (hereafter: gene age), following standard phylostratigraphic definitions (Domazet-Loso et al., 2007): as the species tree node to which the MRCA of species represented in the orthogroup mapped. Enrichment of gene sets in gene age categories were analyzed with Fisher’s exact test (R core team 2020).
 
-## Transcriptome age index
+### Transcriptome age index
 
-TAI for each developmental stage of the nine investigated species was computed as described previously (Domazet-Lošo and Tautz, 2010) with slight modifications using the following formula: TAI=∑i=1nRAiei∑i=1nei , where RAi represents the relative age of gene i, ei is the log2 FPKM value of gene i at the given stage, and n is the total number of genes. If available, tissue-specific expression values were averaged for each developmental stage. The TAI values of the investigated developmental stages were computed for each replicate, then averaged.
+TAI for each developmental stage of the nine investigated species was computed as described previously (Domazet-Lošo and Tautz, 2010) with slight modifications using the following formula: $TAI=\frac{\sum_{i=1}^{n}RA_{i}e_{i}}{\sum_{i=1}^{n}e_{i}}$ , where RAi represents the relative age of gene i, ei is the log2 FPKM value of gene i at the given stage, and n is the total number of genes. If available, tissue-specific expression values were averaged for each developmental stage. The TAI values of the investigated developmental stages were computed for each replicate, then averaged.
 
-## Orthology based on reciprocal best hits
+### Orthology based on reciprocal best hits
 
 To characterize the conservation of developmental genes, we defined single-copy orthologs from the nine species based on reciprocal best hits between proteins. This strategy was stricter than the abovementioned orthogroup definition and was required to obtain functionally highly similar protein sets for comparing developmentally expressed genes. Proteins of each species were searched against the proteomes of other eight species using the RBH module of MMseqs2 with an e-value cutoff of 1e-5. To remove spurious reciprocal best hits, we excluded a protein from the RBH group if its bit score was at least three times lower than the mean bit score of other hits of that query (self-hit excluded) and it shared <50% of its hits with those of the query (RBH_MMSeq.R). The orthogroups (one gene per species) obtained this way comprised considerably more focused gene sets than the approach used in Krizsán et al., 2019.
 
 Orthogroups, which show developmentally dynamic expression with FC > 2 in at least four species, and with proportion ≥ 0.5, are considered hereafter as conserved developmental orthogroups. These conserved developmental orthogroups were also separated by the expression of Cryptococcus genes. We considered an orthogroup as ‘shared orthogroup’ if the Cryptococcus ortholog showed at least FC > 2 developmental expression, while we considered it as ‘CM-specific’ if the Cryptococcus ortholog was missing or did not show developmental regulation.
 
-## Annotation of genes and gene families
+### Annotation of genes and gene families
 
 We detected conserved domains in proteins using InterProScan-5.47–82.0 (Jones et al., 2014, IPRsimpcomp.R). Enrichment analysis on IPR domains was performed with Fisher’s exact test (R Development Core Team, 2020), while enrichment analysis on GO categories was carried out using the R package topGO 2.44.0 (Alexa and Rahnenfuhrer, 2016). Proteins were further characterized by the best bidirectional hits to proteins of the model organisms S. cerevisiae (Engel et al., 2014), Schizosaccharomyces pombe (Wood et al., 2012), Neurospora crassa (Galagan et al., 2003), and A. nidulans (Cerqueira et al., 2014).
 
-## RNA editing and allele-specific expression
+### RNA editing and allele-specific expression
 
 To estimate the importance of RNA editing and ASE during fruiting body formation of P. ostreatus, we evaluated mismatches in Illumina reads according to their potential origin (RNA editing, ASE, noise). A custom pipeline (Figure 10) was constructed to first classify mismatches either as candidates for ‘RNA editing’' or ‘allele-specific.’ Then, these mismatches were analyzed further in more specialized pipelines. First, we hard trimmed 10–10 nucleotides (nt) from both the 3′ and 5′ end of already quality trimmed reads to decrease the impact of sequencing errors during variant calling. A two-round STAR alignment was performed against both parental genomes (PC15 and PC9) as references, with the abovementioned parameters. Variants were identified with find_edit.awk script excluding bases with a Phred quality value below 30. Nucleotides differing the same way from both parental alleles were considered technical errors (caused by PCR amplification, sequencing, or alignment), somatic mutations, or RNA editing. Therefore, such mismatches were transferred to the RNA editing-specific pipeline. In contrast, variants that differed only from one of the parental genomes were attributed to ASE. The first part of the pipeline yielded the lists of variants that were further analyzed either in the RNA editing-specific pipeline or in ASE pipeline, as follows.
 
@@ -177,7 +272,7 @@ The RNA editing pipeline is detailed in Appendix 3 and Figure 10.
 
 In the ASE pipeline (Figure 10), only previously assigned candidate allele-specific SNPs were considered. All reads were assigned to the parental genome to which it exhibited a smaller Hamming distance (Hd = number of SNPs). We assigned a read as indecisive if (i) Hd > 1 from both reference genomes, (ii) Hd > 15 from any of the reference genomes (too divergent read), or (iii) if the Hd was equal to both parental genomes. FPKM values were calculated as described above.
 
-To describe the relative expression between the two parental nuclei (AS ratio), the number of PC15 reads was divided by the sum of parental-specific reads (PC15 + PC9) for each gene (g) in each sample (s): AS=PC15gsPC15gs+PC9gs . An AS ratio close to 1 means dominant expression from the PC15 nucleus, whereas an AS ratio close to 0 means dominant expression from the PC9 nucleus. An AS ratio ~0.5 indicates equal expression from both nuclei. AS ratios were considered equal (set to 0.5) if (i) the expression was too low (FPKM < 2), (ii) the number of decisive reads was <16, and (iii) the proportion of indecisive reads was greater than 80%. We calculated two further measures, chromosome read ratio (CRR) and nuclear read ratio (NRR) introduced by Gehrmann et al., 2018, which represent the FPKM values of PC15 nucleus divided by the FPKM values of PC9 summed over chromosomes, and over all genes, respectively.
+To describe the relative expression between the two parental nuclei (AS ratio), the number of PC15 reads was divided by the sum of parental-specific reads (PC15 + PC9) for each gene (g) in each sample (s): $AS=\frac{PC15_{gs}}{PC15_{gs}+PC9_{gs}}$ . An AS ratio close to 1 means dominant expression from the PC15 nucleus, whereas an AS ratio close to 0 means dominant expression from the PC9 nucleus. An AS ratio ~0.5 indicates equal expression from both nuclei. AS ratios were considered equal (set to 0.5) if (i) the expression was too low (FPKM < 2), (ii) the number of decisive reads was <16, and (iii) the proportion of indecisive reads was greater than 80%. We calculated two further measures, chromosome read ratio (CRR) and nuclear read ratio (NRR) introduced by Gehrmann et al., 2018, which represent the FPKM values of PC15 nucleus divided by the FPKM values of PC9 summed over chromosomes, and over all genes, respectively.
 
 We identified genes with twofold (S2) and fourfold (S4) shifted expression between the two nuclei at AS cutoff values of AS < 0.31 or AS > 0.68 (corresponding to 5% quantile of all AS ratio values) and AS < 0.2 or AS > 0.8, respectively. For passing through, these filters and geometric means of replicates had to reach the upper limits (0.68 or 0.8) for PC15-specific ASE or less than lower limits (0.31 or 0.2) for PC9-specific ASE.
 

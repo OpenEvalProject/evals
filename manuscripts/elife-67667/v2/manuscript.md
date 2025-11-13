@@ -22,29 +22,29 @@
 
 ### Affiliations
 
-1. https://ror.org/02385fa51 Microbial Genomics and Bioinformatics Research G, Max Planck Institute for Marine Microbiology Bremen Germany
-2. https://ror.org/02yrs2n53 Jacobs University Bremen Bremen Germany
-3. https://ror.org/024mw5h28 Department of Medicine, University of Chicago Chicago United States
-4. https://ror.org/05ect0289 Department of Marine Biology and Oceanography, Institut de Ciències del Mar (CSIC) Barcelona Spain
-5. https://ror.org/03m2x1q45 Department of Environmental Science, University of Arizona Tucson United States
-6. https://ror.org/032e6b942 Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Alfred Wegener Institute Bremerhaven Germany
-7. https://ror.org/019pzjm43 Center for Advanced Studies of Blanes CEAB-CSIC, Spanish Council for Research Blanes Spain
-8. https://ror.org/00xc55v17 Génomique Métabolique, Genoscope, Institut François Jacob, CEA, CNRS, Univ Evry, Université Paris-Saclay Evry France
-9. https://ror.org/01q3tbs38 Red Sea Research Centre and Computational Bioscience Research Center, King Abdullah University of Science and Technology Thuwal Saudi Arabia
-10. https://ror.org/046dg4z72 Josephine Bay Paul Center, Marine Biological Laboratory Woods Hole United States
-11. https://ror.org/02catss52 European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus Hinxton United Kingdom
-12. https://ror.org/035b05819 Section for Evolutionary Genomics, The GLOBE Institute, University of Copenhagen Copenhagen Denmark
-13. https://ror.org/04h9pn542 School of Biological Sciences, Seoul National University Seoul Republic of Korea
-14. https://ror.org/04h9pn542 Institute of Molecular Biology and Genetics, Seoul National University Seoul Republic of Korea
-15. https://ror.org/04ers2y35 University of Bremen and Life Sciences and Chemistry Bremen Germany
+1. Microbial Genomics and Bioinformatics Research G, Max Planck Institute for Marine Microbiology Bremen Germany ([ROR:02385fa51](https://ror.org/02385fa51))
+2. Jacobs University Bremen Bremen Germany ([ROR:02yrs2n53](https://ror.org/02yrs2n53))
+3. Department of Medicine, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+4. Department of Marine Biology and Oceanography, Institut de Ciències del Mar (CSIC) Barcelona Spain ([ROR:05ect0289](https://ror.org/05ect0289))
+5. Department of Environmental Science, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+6. Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Alfred Wegener Institute Bremerhaven Germany ([ROR:032e6b942](https://ror.org/032e6b942))
+7. Center for Advanced Studies of Blanes CEAB-CSIC, Spanish Council for Research Blanes Spain ([ROR:019pzjm43](https://ror.org/019pzjm43))
+8. Génomique Métabolique, Genoscope, Institut François Jacob, CEA, CNRS, Univ Evry, Université Paris-Saclay Evry France ([ROR:00xc55v17](https://ror.org/00xc55v17))
+9. Red Sea Research Centre and Computational Bioscience Research Center, King Abdullah University of Science and Technology Thuwal Saudi Arabia ([ROR:01q3tbs38](https://ror.org/01q3tbs38))
+10. Josephine Bay Paul Center, Marine Biological Laboratory Woods Hole United States ([ROR:046dg4z72](https://ror.org/046dg4z72))
+11. European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus Hinxton United Kingdom ([ROR:02catss52](https://ror.org/02catss52))
+12. Section for Evolutionary Genomics, The GLOBE Institute, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
+13. School of Biological Sciences, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+14. Institute of Molecular Biology and Genetics, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+15. University of Bremen and Life Sciences and Chemistry Bremen Germany ([ROR:04ers2y35](https://ror.org/04ers2y35))
 16. Computing Center, Helmholtz Center for Polar and Marine Research Bremerhaven Germany
-17. https://ror.org/035b05819 Lundbeck Foundation GeoGenetics Centre, GLOBE Institute, University of Copenhagen Copenhagen Denmark
+17. Lundbeck Foundation GeoGenetics Centre, GLOBE Institute, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
 
 † Corresponding author
 
 ## Abstract
 
-Genes of unknown function are among the biggest challenges in molecular biology, especially in microbial systems, where 40–60% of the predicted genes are unknown. Despite previous attempts, systematic approaches to include the unknown fraction into analytical workflows are still lacking. Here, we present a conceptual framework, its translation into the computational workflow AGNOSTOS and a demonstration on how we can bridge the known-unknown gap in genomes and metagenomes. By analyzing 415,971,742 genes predicted from 1749 metagenomes and 28,941 bacterial and archaeal genomes, we quantify the extent of the unknown fraction, its diversity, and its relevance across multiple organisms and environments. The unknown sequence space is exceptionally diverse, phylogenetically more conserved than the known fraction and predominantly taxonomically restricted at the species level. From the 71 M genes identified to be of unknown function, we compiled a collection of 283,874 lineage-specific genes of unknown function for Cand . Patescibacteria (also known as Candidate Phyla Radiation, CPR), which provides a significant resource to expand our understanding of their unusual biology. Finally, by identifying a target gene of unknown function for antibiotic resistance, we demonstrate how we can enable the generation of hypotheses that can be used to augment experimental data.
+Genes of unknown function are among the biggest challenges in molecular biology, especially in microbial systems, where 40–60% of the predicted genes are unknown. Despite previous attempts, systematic approaches to include the unknown fraction into analytical workflows are still lacking. Here, we present a conceptual framework, its translation into the computational workflow AGNOSTOS and a demonstration on how we can bridge the known-unknown gap in genomes and metagenomes. By analyzing 415,971,742 genes predicted from 1749 metagenomes and 28,941 bacterial and archaeal genomes, we quantify the extent of the unknown fraction, its diversity, and its relevance across multiple organisms and environments. The unknown sequence space is exceptionally diverse, phylogenetically more conserved than the known fraction and predominantly taxonomically restricted at the species level. From the 71 M genes identified to be of unknown function, we compiled a collection of 283,874 lineage-specific genes of unknown function for Cand. Patescibacteria (also known as Candidate Phyla Radiation, CPR), which provides a significant resource to expand our understanding of their unusual biology. Finally, by identifying a target gene of unknown function for antibiotic resistance, we demonstrate how we can enable the generation of hypotheses that can be used to augment experimental data.
 
 ## Introduction
 
@@ -60,7 +60,7 @@ The application of our approach to 415,971,742 genes predicted from 1749 metagen
 
 ## Results
 
-## AGNOSTOS, a computational workflow to unify the known and the unknown sequence space
+### AGNOSTOS, a computational workflow to unify the known and the unknown sequence space
 
 Driven by the concepts defined in the conceptual framework, we developed AGNOSTOS, a computational workflow that infers, validates, refines, and classifies groups of homologous genes or gene clusters (GCs) in the four proposed categories (Figure 1A; Figure 1B; Appendix 1—figure 1). AGNOSTOS produces GCs with a highly conserved intra-homogeneous structure (Figure 1B), both in terms of sequence similarity and domain architecture homogeneity; it exhausts any existing homology to known genes and provides a proper delimitation of the unknown genes before classifying each GC in one of the four categories (Materials and methods). In the last step, we decorate each GC with a rich collection of contextual data compiled from different sources or generated by analyzing the GC contents in different contexts (Figure 1A). For each GC, we also offer several products that can be used for analytical purposes like improved representative sequences, consensus sequences, sequence profiles for MMseqs2 (Steinegger and Söding, 2017) and HHblits (Steinegger et al., 2019a), or the GC members as a sequence similarity network (Methods). To complement the collection, we also provide a subset of what we define as high-quality GCs. The defining criteria are (1) the representative is a complete gene and (2) more than one-third of genes within a GC are complete genes.
 
@@ -74,7 +74,7 @@ Additionally, AGNOSTOS identified a subset of 203,217 high-quality GCs (Appendix
 
 As part of the workflow, each GC is complemented with a rich set of information, as shown in Figure 1A (Supplementary file 2A; Appendix 6).
 
-## Beyond the twilight zone with AGNOSTOS, communities of gene clusters
+### Beyond the twilight zone with AGNOSTOS, communities of gene clusters
 
 To find relationships between gene clusters, we implemented in AGNOSTOS a method to group them in gene cluster communities (GCCs) (Figure 2A) using remote homologies. As we are dealing with the unknown, we identified GCCs independently in each category. AGNOSTOS uses the gene clusters from category K as a reference to automatically identify the best parameters for the clustering of the gene cluster homology network (Materials and methods; Figure 2B; Appendix 7) and applies the learnt parameters to the other categories. The grouping reduced the final collection of GCs by 87%, producing 673,601 GCCs (Materials and methods; Figure 2B; Appendix 7).
 
@@ -88,7 +88,7 @@ We identified 64 GCs (12,184 genes) and 3 GCCs (Appendix 7) containing genes cla
 
 For the ribosomal proteins, the results were not so satisfactory. We identified 1843 GCs (781,579 genes) and 98 GCCs. The number of GCCs is larger than the expected number of ribosomal protein families (16) used for validation. When we used high-quality GCs (Appendix 7), we got closer to the expected number of GCCs (Figure 2D). With this subset, we identified 26 GCCs and 145 GCs (1687 genes). The cross-validation of our method against the approach used in Méheust et al., 2019 (Appendix 7) confirms the intrinsic complexity of analyzing metagenomic data. Both approaches showed a high agreement in the GCCs identified (Appendix 7—table 2). Still, our method inferred fewer GCCs for each of the ribosomal protein families (Appendix 7—figure 4), coping better with the complexities of a metagenomic setup, such as incomplete genes (Appendix 1—table 5).
 
-## AGNOSTOS uncovers a smaller yet highly diverse unknown sequence space
+### AGNOSTOS uncovers a smaller yet highly diverse unknown sequence space
 
 Among our primary design goals in developing AGNOSTOS is to unearth ecological and evolutionary information while unifying the known and unknown sequence space of genomes and metagenomes. One can use AGNOSTOS GCs and GCCs as analogs to operational protein families (Schloss and Handelsman, 2008) with the benefits of using high-quality gene clusters and remote homology searches.
 
@@ -106,7 +106,7 @@ Next, we wanted to know how much of the sequence space we integrated with AGNOST
 
 One indirect consequence of our approach is that we can provide a detailed view of the sequence space at the amino acid level. We estimated the number of amino acids belonging to the known (K and KWP combined) or unknown (GU and EU combined) sequence space, and how many of these amino acids are contained in a Pfam domain. From the 90,128,659,316 amino acids analyzed, most of the amino acids in metagenomes (74%) and genomes (80%) are in the known sequence space (Figure 3D; Supplementary file 1B) while only 22% in metagenomes and 15% in genomes are part of the unknowns. In both cases, approximately 40% of the amino acids in the known sequence space were part of a Pfam domain (Figure 3D; Supplementary file 1B). While this result is expected based on the large number of genes present in the known space (Figure 3A), what is surprising is the low proportion of amino acids (2%) corresponding to DUF Pfam domains in genomes and metagenomes (Figure 3D). If we use as reference the proportions of amino acids observed in the known sequence space, we can hypothesize that there are still many DUFs to be unearthed. With AGNOSTOS and its thorough validation and characterization of the genomic and environmental unknowns, we provide the basic building blocks (gene clusters’ multiple sequence alignments) to identify conserved regions that might become new potential DUFs.
 
-## The unknown sequence space has a limited ecological distribution in human and marine environments
+### The unknown sequence space has a limited ecological distribution in human and marine environments
 
 Although the role of the unknown fraction in the environment is still a mystery, the large number of gene counts and abundance observed underlines its inherent ecological relevance (Figure 4A). In some metagenomes, the genomic unknown fraction can account for more than 40% of the total gene abundance observed (Figure 4A). The environmental unknown fraction is also relevant in several samples, where singleton GCs are the majority (Figure 4A). We identified two metagenomes with an unusual composition in terms of environmental unknown singletons. The marine metagenome corresponds to a sample from Lake Faro (OSD42), a meromictic saline with a unique extreme environment where Archaea plays an important role (La Cono et al., 2013). The HMP metagenome (SRS143565) that corresponds to a human sample from the right cubital fossa from a healthy female subject. To understand this unusual composition, we should perform further analyses to discard potential technical artifacts like sample contamination.
 
@@ -118,7 +118,7 @@ The ratio between the unknown and known GCs is useful to reveal which metagenome
 
 We performed a large-scale analysis to investigate the occurrence patterns of the GCs in the environment by analyzing their abundance and distribution breadth. The narrow distribution of the unknown fraction (Figure 4D) suggests that these GCs might provide a selective advantage and be necessary to adapt to specific environmental conditions. But the pool of broadly distributed environmental unknowns is the most exciting result. We identified traces of potential ubiquitous organisms left uncharacterized by traditional approaches, as more than 80% of these GCs cannot be associated with a metagenome-assembled genome (MAG) (Appendix 1—table 6, Appendix 10).
 
-## The genomic unknown sequence space is lineage-specific
+### The genomic unknown sequence space is lineage-specific
 
 With the inclusion of the genomes from GTDB_r86, we have access to a phylogenomic framework that can be used to assess how taxonomically restricted is a GC within a lineage, hereafter referred to as lineage-specific genes (Johnson, 2018; Mendler et al., 2019) and how conserved (phylogenetic conservation) a GC is across the different clades in the GTDB_r86 phylogenomic tree (Martiny et al., 2013). We identified 781,814 lineage-specific GCs and 464,923 phylogenetically conserved (p < 0.05) GCs in Bacteria (Supplementary file 1D; Appendix 11 for Archaea). The number of lineage-specific GCs increases with the Relative Evolutionary Distance (Parks et al., 2018, Figure 5A) and differences between the known and the unknown fraction start to be evident at the family level resulting in 4 X more unknown lineage-specific GCs at the species level. In general terms, the unknown GCs are more phylogenetically conserved (GCs shared among members of deep clades) than the known (Figure 5B, p < 0.0001), revealing the importance of the genome’s uncharacterized fraction. However, the lineage-specific unknown GCs are less phylogenetically conserved (Figure 5B) than the known, agreeing with the large number of lineage-specific GCs observed at genus and species level (Figure 5A).
 
@@ -132,7 +132,7 @@ After unveiling the potential relevance of the GCs of unknown function in bacter
 
 One of the strengths of AGNOSTOS is the possibility of bridging genomic and metagenomic data and simultaneously unifying the known and unknown sequence space. We further demonstrated this by integrating the new Ocean Microbial Reference Gene Catalog (Salazar et al., 2019, OM-RGC v2) into our database. We assigned 26,170,875 genes to known GCs, 11,422,975 to genomic unknowns, 8,661,221 to environmental unknown and 520,083 were discarded. From the 11,422,975 genes classified as genomic unknowns, we could associate 3,261,741 to a GTDB_r86 genome and we identified 113,175 as lineage-specific. The alluvial plot in Figure 5E depicts the new organization of the OM-RGC v2 after being integrated into our framework and how we can provide context to the two original types of unknowns in the OM-RGC (those annotated as category S in eggNOG [Huerta-Cepas et al., 2019] and those without known homologs in the eggNOG database [Salazar et al., 2019]) that can lead to potential experimental targets at the organism level to complement the metatranscriptomic approach proposed by Salazar et al., 2019.
 
-## A structured sequence space augments the interpretation of experimental data
+### A structured sequence space augments the interpretation of experimental data
 
 We selected one of the experimental conditions tested in Price et al., 2018 to demonstrate the potential of our approach to augment experimental data. We compared the fitness values in plain rich medium with added Spectinomycin dihydrochloride pentahydrate to the fitness in plain rich medium (LB) in Pseudomonas fluorescens FW300-N2C3 (Figure 6A). This antibiotic inhibits protein synthesis and elongation by binding to the bacterial 30 S ribosomal subunit and interferes with the peptidyl tRNA translocation. We identified the gene with locus id AO356_08590 that presents a strong phenotype (fitness = –3.1; t = –9.1) and has no known function. This gene belongs to the genomic unknown GC GU_19737823. We can track this GC into the environment and explore the occurrence in the different samples we have in our database. As expected, the GC is mostly found in non-human metagenomes (Figure 6B) as Pseudomonas are common inhabitants of soil and water environments (Heffernan et al., 2009). However, finding this GC also in human-related samples is very interesting due to the potential association of P. fluorescens and human disease where Crohn’s disease patients develop serum antibodies to this microbe (Scales et al., 2014). We can add another layer of information to the selected GC by looking at the associated remote homologs in the GCC GU_c_21103 (Figure 6C). We identified all the genes in the GTDB_r86 genomes that belong to the GCC GU_c_21103 (Supplementary file 1E) and explored their genomic neighborhoods. All members from GU_c_21103 are constrained to the class Gammaproteobacteria, and interestingly GU_19737823 is mostly exclusive to the order Pseudomonadales. The gene order in the different genomes analyzed is highly conserved, finding GU_19737823 after the rpsF::rpsR operon and before rpll. rpsF and rpsR encode for 30 S ribosomal proteins, the prime target of spectinomycin. The combination of the experimental evidence and the associated data inferred by our approach provides strong support to generate the hypothesis that the gene AO356_08590 might be involved in the resistance to Spectinomycin.
 
@@ -160,31 +160,188 @@ The results presented here prove that the integration and the analysis of the un
 
 ## Materials and methods
 
-## Genomic and metagenomic dataset
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Snakemake</td>
+      <td>Snakemake</td>
+      <td>RRID: SCR_003475</td>
+      <td>Workflow manager</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prodigal</td>
+      <td>Prodigal</td>
+      <td>RRID: SCR_021246</td>
+      <td>Gene prediction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MMseqs2</td>
+      <td>MMseqs2</td>
+      <td>RRID: SCR_010277</td>
+      <td>Sequence clustering and search</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HHMER</td>
+      <td>HMMER</td>
+      <td>RRID: SCR_005305</td>
+      <td>Sequence-Profile search</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HHblits</td>
+      <td>HHblits</td>
+      <td>RRID: SCR_010277</td>
+      <td>Profile-Profile search</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PARASAIL</td>
+      <td>PARASAIL</td>
+      <td>RRID:SCR_021805</td>
+      <td>Sequence alignment</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FAMSA</td>
+      <td>FAMSA</td>
+      <td>RRID:SCR_021804</td>
+      <td>Sequence alignment</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LEON-BIS</td>
+      <td>LEON-BIS</td>
+      <td>RRID:SCR_021803</td>
+      <td>Sequence alignment evaluation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OD-SEQ</td>
+      <td>OD-SEQ</td>
+      <td></td>
+      <td>Sequence alignment http://www.bioinf.ucd.ie/download/od-seq.tar.gz</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SEQKIT</td>
+      <td>SEQKIT</td>
+      <td>RRID: SCR_018926</td>
+      <td>Fasta file manipulation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R</td>
+      <td>RRID: SCR_002394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HH-SUITE</td>
+      <td>HH-SUITE</td>
+      <td>RRID: SCR_016133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RAXML</td>
+      <td>RAXML</td>
+      <td>RRID: SCR_006086</td>
+      <td>Phylogeny</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PPLACER</td>
+      <td>PPLACER</td>
+      <td>RRID: SCR_004737</td>
+      <td>Phylogeny</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PAPARA</td>
+      <td>PAPARA</td>
+      <td></td>
+      <td>Sequence alignment https://cme.hits.org/exelixis/resource/download/software/papara_nt-2.5-static_x86_64.tar.gz</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Anvi’o</td>
+      <td>Anvi’o</td>
+      <td>RRID:SCR_021802</td>
+      <td>Omics analysis and visualization https://merenlab.org/software/anvio</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BWA mapper</td>
+      <td>BWA mapper</td>
+      <td>RRID: SCR_010910</td>
+      <td>Sequence alignment</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEDTOOLS</td>
+      <td>BEDTOOLS</td>
+      <td>RRID: SCR_006646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PhageBoost</td>
+      <td>PhageBoost</td>
+      <td></td>
+      <td>https://github.com/ku-cbd/PhageBoost</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EGGNOG-mapper</td>
+      <td>EGGNOG-mapper</td>
+      <td>RRID: SCR_021165</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Genomic and metagenomic dataset
 
 We used a set of 583 marine metagenomes from four of the major metagenomic surveys of the ocean microbiome: Tara Oceans expedition (TARA) (Sunagawa et al., 2015), Malaspina expedition (Duarte, 2015), Ocean Sampling Day (OSD) (Kopf et al., 2015), and Global Ocean Sampling Expedition (GOS) (Rusch et al., 2007). We complemented this set with 1246 metagenomes obtained from the Human Microbiome Project (HMP) phase I and II (Lloyd-Price et al., 2017). We used the assemblies provided by TARA, Malaspina, OSD and HMP projects and the long Sanger reads from GOS (Sanger et al., 1977). A total of 156 M (156,422,969) contigs and 12.8 M long-reads were collected (Appendix 1—table 5).
 
 For the genomic dataset, we used the 28,941 prokaryotic genomes (27,372 bacterial and 1569 archaeal) from the Genome Taxonomy Database (Parks et al., 2018) (GTDB) Release 03-RS86 (19th August 2018).
 
-## Computational workflow development
+### Computational workflow development
 
 We implemented a computation workflow based on Snakemake (Köster, 2018) for the easy processing of large datasets in a reproducible manner. The workflow provides three different strategies to analyze the data. The module DB-creation creates the gene cluster database, validates and partitions the gene clusters (GCs) in the main functional categories. The module DB-update allows the integration of new sequences (either at the contig or predicted gene level) in the existing gene cluster database. In addition, the workflow has a profile-search function to quickly screen samples using the gene cluster PSSM profiles in the database.
 
-## Metagenomic and genomic gene prediction
+### Metagenomic and genomic gene prediction
 
 We used Prodigal (v2.6.3) (Hyatt et al., 2010) in metagenomic mode to predict the genes from the metagenomic dataset. For the genomic dataset, we used the gene predictions provided by Annotree (Mendler et al., 2019), since they were obtained, consistently, with Prodigal v2.6.3. We identified potential spurious genes using the AntiFam database (Eberhardt et al., 2012). Furthermore, we screened for ‘shadow’ genes using the procedure described in Yooseph et al., 2008.
 
-## PFAM annotation
+### PFAM annotation
 
 We annotated the predicted genes using the hmmsearch program from the HMMER package (version: 3.1b2) (Finn et al., 2011) in combination with the Pfam database v31 (Finn et al., 2016). We kept the matches exceeding the internal gathering threshold and presenting an independent e-value <1e-5 and coverage >0.4. In addition, we considered multi-domain annotations, and we removed overlapping annotations when the overlap is larger than 50%, keeping the ones with the smaller e-value.
 
-## Determination of the gene clusters
+### Determination of the gene clusters
 
 We clustered the metagenomic predicted genes using the cascaded-clustering workflow of the MMseqs2 software (Steinegger and Söding, 2018) (“--cov-mode 0 c 0.8 --min-seq-id 0.3”). We discarded from downstream analyses the singletons and clusters with a size below a threshold identified after applying a modification of the broken-stick model (Macarthur, 1957). We randomly split the number of gene clusters into p subsets, where p is defined by the proportion of outlier genes per gene cluster. The subsets are then sorted by decreasing size. We iterated over all subsets averaging the results over all iterations. The broken stick model generates the outlier gene proportions, which would occur by chance alone, that is, the distribution of outlier gene proportions if there were no structure in the data.
 
 We integrated the genomic data into the metagenomic cluster database using the “DB-update” module of the workflow. This module uses the clusterupdate module of MMseqs2 (Steinegger and Söding, 2017), with the same parameters used for the metagenomic clustering.
 
-## Quality-screening of gene clusters
+### Quality-screening of gene clusters
 
 We examined the GCs to ensure their high intra-cluster homogeneity. We applied two methodologies to validate their cluster sequence composition and functional annotation homogeneity. We identified non-homologous sequences inside each cluster combining the identification of a new cluster representative sequence via a sequence similarity network (SSN) analysis, and the investigation of intra-cluster multiple sequence alignments (MSAs), given the new representative. Initially, we generated an SSN for each cluster, using the semi-global alignment methods implemented in PARASAIL (Daily, 2016) (version 2.1.5). We trimmed the SSN using a filtering algorithm (Chafee et al., 2018; Žure et al., 2017) that removes edges while maintaining the network structural integrity and obtaining the smallest connected graph formed by a single component. Finally, the new cluster representative was identified as the most central node of the trimmed SSN by the eigenvector centrality algorithm, as implemented in igraph (Csardi and Nepusz, 2006). After this step, we built a multiple sequence alignment for each cluster using FAMSA (Deorowicz et al., 2016) (version 1.1). Then, we screened each cluster-MSA for non-homologous sequences to the new cluster representative. Owing to computational limitations, we used two different approaches to evaluate the cluster-MSAs. We used LEON-BIS (Vanhoutreve et al., 2016) for the clusters with a size ranging from 10 to 1000 genes and OD-SEQ (Jehl et al., 2015) for the clusters with more than 1000 genes. In the end, we applied a broken-stick model (Macarthur, 1957) to determine the threshold to discard a cluster.
 
@@ -192,7 +349,7 @@ The predicted genes can have multi-domain annotations in different orders, there
 
 After the validation, we refined the gene cluster database removing the clusters identified to be discarded and the clusters containing ≥30% shadow genes. Lastly, we removed the single shadow, spurious and non-homologous genes from the remaining clusters (Appendix 3).
 
-## Remote homology classification of gene clusters
+### Remote homology classification of gene clusters
 
 To partition the validated GCs into the four main categories, we processed the set of GCs containing Pfam annotated genes and the set of not annotated GCs separately. For the annotated GCs, we inferred a consensus protein domain architecture (DA) (an ordered combination of protein domains) for each annotated gene cluster. To identify each gene cluster consensus DA, we created directed acyclic graphs connecting the Pfam domains based on their topological order on the genes using igraph (Csardi and Nepusz, 2006). We collapsed the repetitions of the same domain. Then we used the gene completeness as a positive-weighting value for the selection of the cluster consensus DA. Within this step, we divided the GCs into ‘Knowns’ (Known) if annotated to at least one Pfam domains of known function (DKFs) and ‘Genomic unknowns’ (GU) if annotated entirely to Pfam domains of unknown function (DUFs).
 
@@ -200,11 +357,11 @@ We aligned the sequences of the non-annotated GCs with FAMSA (Deorowicz et al., 
 
 In addition, we developed some conservative measures to control the trade-off between specificity and sensitivity for the remote homology searches such as (1) a modification of the algorithm described in Hingamp et al., 2013 to get a confident group of homologs to determine if a query protein is known or unknown by a quorum majority voting approach (Appendix 4); (2) strict parameters in terms of iterations, bidirectional coverage and probability thresholds for the HHblits alignments to minimize the inclusion of non-homologous sequences; and (3) avoid providing annotations for our gene clusters, as we believe that annotation should be a careful process done on a smaller scale and with experimental context.
 
-## Gene cluster remote homology refinement
+### Gene cluster remote homology refinement
 
 We refined the Environmental Unknown GCs to ensure the lack of any characterization by searching for remote homologies in the Uniclust database (release 30_2017_10) using the HMM/HMM alignment method HHblits (Remmert et al., 2011). We created the HMM profiles with the hhmake program from the HH-SUITE (Steinegger et al., 2019a). We only accepted those hits with an HHblits-probability ≥90% and we re-classified them following the same majority vote approach as previously described. The clusters with no hits remained as the refined set of EUs. We applied a similar refinement approach to the KWP clusters to identify GCs with remote homologies to Pfam protein domains. The KWP HMM profiles were searched against the Pfam HH-SUITE database (version 31), using HHblits. We accepted hits with a probability ≥90% and a target coverage >60% and removed overlapping domains as described earlier. We moved the KWP with remote homologies to known Pfams to the Known set, and those showing remote homologies to Pfam DUFs to the GUs. The clusters with no hits remained as the refined set of KWP.
 
-## Gene cluster characterization
+### Gene cluster characterization
 
 We used the MMseqs2 taxonomy module (commit: b43de8b7559a3b45c8e5e9e02cb3023dd339231a) in combination with the UniProtKB (release of January 2018) (The UniProt Consortium, 2018) to retrieve the taxonomic ids of all genes in a gene cluster. The taxonomy module implements the 2bLCA (Hingamp et al., 2013) to compute the lowest common ancestor of query sequence. We used the following parameters “-e 1e-05 –cov-mode 0 c 0.6” for the search. To retrieve the taxonomic lineages, we used the R package CHNOSZ (Dick, 2008).
 
@@ -214,54 +371,54 @@ We measured the intra-cluster taxonomic and functional admixture by applying the
 
 In addition to the taxonomic and functional annotations, we evaluated the clusters’ level of darkness and disorder using the Dark Proteome Database (DPD) (Perdigão et al., 2017) as reference. We searched the cluster genes against the DPD, applying the MMseqs2 search program (Steinegger and Söding, 2017) with “-e 1e-20 --cov-mode 0 -c 0.6”. For each cluster, we then retrieved the mean and the median level of darkness, based on the gene DPD annotations.
 
-## High-quality clusters
+### High-quality clusters
 
 We defined a subset of high-quality clusters based on the completeness of the cluster genes and their representatives. We identified the minimum required percentage of complete genes per cluster by a broken-stick model (Macarthur, 1957) applied to the percentage distribution. Then, we selected the GCs found above the threshold and with a complete representative.
 
-## A set of non-redundant domain architectures
+### A set of non-redundant domain architectures
 
 We estimated the number of potential domain architectures present in the Known GCs considering the large proportion of fragmented genes in the metagenomic dataset and that could inflate the number of potential domain architectures. To identify fragments of larger domain architecture, we considered their topological order in the genes. To reduce the number of comparisons, we calculated the pairwise string cosine distance (q-gram = 3) between domain architectures and discarded the pairs that were too divergent (cosine distance ≥0.9). We collapsed a fragmented domain architecture to the larger one when it contained less than 75% of complete genes.
 
-## Inference of gene cluster communities
+### Inference of gene cluster communities
 
 We aggregated distant homologous GCs into GCCs. The community inference approach combined an all-vs-all HMM gene cluster comparison with Markov Cluster Algorithm (MCL) (van Dongen and Abreu-Goodger, 2012) community identification. We started performing the inference on the Known GCs to use the Pfam DAs as constraints. We aligned the gene cluster HMMs using HHblits (Remmert et al., 2011) (-n 2 -Z 10000000 -B 10000000 -e 1) and we built a homology graph using the cluster pairs with probability ≥50% and bidirectional coverage >60%. We used the ratio between HHblits-bitscore and aligned-columns as the edge weights (Appendix 7). We used MCL (van Dongen and Abreu-Goodger, 2012) (v. 12–068) to identify the communities present in the graph. We developed an iterative method to determine the optimal MCL inflation parameter that tries to maximize the relationship of five intra-/inter-community properties: (1) the proportion of MCL communities with one single DA, based on the consensus DAs of the cluster members; (2) the ratio of MCL communities with more than one cluster; (3) the proportion of MCL communities with a PFAM clan entropy equal to 0; (4) the intra-community HHblits-score/Aligned-columns score (normalized by the maximum value); and (5) the number of MCL communities, which should, in the end, reflect the number of non-redundant DAs. We iterated through values ranging from 1.2 to 3.0, with incremental steps of 0.1. During the inference process, some of the GCs became orphans in the graph. We applied a three-step approach to assigning a community membership to these GCs. First, we used less stringent conditions (probability ≥50% and coverage ≥ 40%) to find homologs in the already existing GCCs. Then, we ran a second iteration to find secondary relationships between the newly assigned GCs and the missing ones. Lastly, we created new communities with the remaining GCs. We repeated the whole process with the other categories (KWP, GU and EU), applying the optimal inflation value found for the Known (2.2 for metagenomic and 2.5 for genomic data).
 
-## Validation of gene cluster communities
+### Validation of gene cluster communities
 
 We tested the biological significance of the GCCs using the phylogeny of proteorhodopsin (Boeuf et al., 2015) (PR). We used the proteorhodopsin HMM profiles (Olson et al., 2018) to screen the marine metagenomic datasets using hmmsearch (version 3.1b2) (Finn et al., 2011). We kept the hits with a coverage >0.4 and e-value ≤ 1e-5. We removed identical duplicates from the sequences assigned to PR with CD-HIT (Li and Godzik, 2006) (v4.6) and cleaned from sequences with less than 100 amino acids. To place the identified PR sequences into the MicRhode (Boeuf et al., 2015) PR tree first, we optimized the initial tree parameters and branch lengths with RAxML (v8.2.12) (Stamatakis, 2014). We used PaPaRA (v2.5) (Berger and Stamatakis, 2012) to incrementally align the query PR sequences against the MicRhode PR reference alignment and pplacer (Matsen et al., 2010) (v1.1.alpha19-0-g807f6f3) to place the sequences into the tree. Finally, we assigned the query PR sequences to the MicRhode PR Superclusters based on the phylogenetic placement. We further investigated the GCs annotated as viral (196 genes, 14 GC) comparing them to the six newly discovered viral PRs (Needham et al., 2019) using Parasail (Daily, 2016) (-a sg_stats_scan_sse2_128_16 t 8 c 1 x). As an additional evaluation, we investigated the distributions of standard GCCs and HQ GCCs within ribosomal protein families. We obtained the ribosomal proteins used for the analysis combining the set of 16 ribosomal proteins from Méheust et al., 2019 and those contained in the collection of bacterial single-copy genes of anvi’o (Eren et al., 2021). Also, for the ribosomal proteins, we compared the outcome of our method to the one proposed by Méheust et al., 2019 (Appendix 7).
 
-## Metagenomic sample selection for downstream analyses
+### Metagenomic sample selection for downstream analyses
 
 For the subsequent ecological analyses, we selected those metagenomes with a number of genes larger or equal to the first quartile of the distribution of all the metagenomic gene counts. (Supplementary file 1F).
 
-## Gene cluster abundance profiles in genomes and metagenomes
+### Gene cluster abundance profiles in genomes and metagenomes
 
 We estimated abundance profiles for the metagenomic cluster categories using the read coverage to each predicted gene as a proxy for abundance. We calculated the coverage by mapping the reads against the assembly contigs using the bwa-mem algorithm from BWA mapper (Li and Durbin, 2010). Then, we used BEDTOOLS (Quinlan and Hall, 2010), to find the intersection of the gene coordinates to the assemblies, and normalize the per-base coverage by the length of the gene. We calculated the cluster abundance in a sample as the sum of the cluster gene abundances in that sample, and the cluster category abundance in a sample as the sum of the cluster abundances. We obtained the proportions of the different gene cluster categories applying a total-sum-scaling normalization. For the genomic abundance profiles, we used the number of genes in the genomes and normalized by the total gene counts per genome.
 
-## Rate of genomic and metagenomic gene clusters accumulation
+### Rate of genomic and metagenomic gene clusters accumulation
 
 We calculated the cumulative number of known and unknown GCs as a function of the number of metagenomes and genomes. For each metagenome count, we generated 1000 random sets, and we calculated the number of GCs and GCCs recovered. For this analysis, we used 1246 HMP metagenomes and 358 marine metagenomes (242 from TARA and 116 from Malaspina). We repeated the same procedure for the genomic dataset. We removed the singletons from the metagenomic dataset with an abundance smaller than the mode abundance of the singletons that got reclassified as good-quality clusters after integrating the GTDB data to minimize the impact of potential spurious singletons. To complement those analyses, we evaluated the coverage of our dataset by searching seven different state-of-the-art databases against our set of metagenomic GC HMM profiles (Appendix 9).
 
-## Occurrence of gene clusters in the environment
+### Occurrence of gene clusters in the environment
 
 We used 1264 metagenomes from the TARA Oceans, MALASPINA Expedition, OSD2014 and HMP-I/II to explore the properties of the unknown sequence space in the environment. We applied the Levins Niche Breadth (NB) index (Levins, 1966) to investigate the GCs and GCCs environmental distributions. We removed the GCs and cluster communities with a mean relative abundance <1e-5. We followed a divide-and-conquer strategy to avoid the computational burden of generating the null-models to test the significance of the distributions owing to the large number of metagenomes and GCs. First, we grouped similar samples based on the gene cluster content using the Bray-Curtis dissimilarity (Bray and Curtis, 1957) in combination with the Dynamic Tree Cut (Langfelder et al., 2008) R package. We created 100 random datasets picking up one random sample from each group. For each of the 100 random datasets, we created 100 random abundance matrices using the nullmodel function of the quasiswap count method (Miklós and Podani, 2004). Then we calculated the observed NB and obtained the 2.5% and 97.5% quantiles based on the randomized sets. We compared the observed and quantile values for each gene cluster and defined it to have a Narrow distribution when the observed was smaller than the 2.5% quantile and to have a Broad distribution when it was larger than the 97.5% quantile. Otherwise, we classified the cluster as Non-significant (Salazar et al., 2015). We used a majority voting approach to get a consensus distribution classification based on the ten random datasets.
 
-## Identification of prophages in genomic sequences
+### Identification of prophages in genomic sequences
 
 We used PhageBoost (Sirén et al., 2021) to find gene regions in the microbial genomes that result in high viral signals against the overall genome signal. We set the following thresholds to consider a region prophage: minimum of 10 genes, maximum 5 gaps, single-gene probability threshold 0.9. We further smoothed the predictions using Parzen rolling windows of 20 periods and looked at the smoothed probability distribution across the genome. We disregarded regions that had a summed smoothed probability less than 0.5, and those regions that did differ from the overall population of the genes in a genome by using Kruskal–Wallis rank test (p-value 0.001).
 
-## Lineage-specific gene clusters
+### Lineage-specific gene clusters
 
 We used the F1-score developed for AnnoTree (Mendler et al., 2019) to identify the lineage-specific GCs and to which rank they are specific. Following similar criteria to the ones used in Mendler et al., 2019, we considered a gene cluster to be lineage-specific if it is present in less than half of all genomes and at least 2 with F1-score > 0.95.
 
-## Phylogenetic conservation of gene clusters
+### Phylogenetic conservation of gene clusters
 
 We calculated the phylogenetic conservation (τD) of each gene cluster using the consenTRAIT (Martiny et al., 2013) function implemented in the R package castor (Martiny et al., 2013). We used a paired Wilcoxon rank-sum test to compare the average τD values for lineage-specific and non-specific GCs.
 
-## Evaluation of the OM-RGC V2 uncharacterized fraction
+### Evaluation of the OM-RGC V2 uncharacterized fraction
 
 We integrated the 46,775,154 genes from the second version of the TARA Ocean Microbial Reference Gene Catalog (OM-RGC v2) (Salazar et al., 2019) into our cluster database using the same procedure as for the genomic data. We evaluated the uncharacterized fraction and the genes classified into the eggNOG (Huerta-Cepas et al., 2019) category S within the context of our database.
 
-## Augmenting RB-TnSeq experimental Data
+### Augmenting RB-TnSeq experimental Data
 
 We searched the 129,477 bacterial genes associated with mutant phenotypes from Price et al., 2018 against our gene cluster profiles. We kept the hits with e-value ≤1e-20 and a query coverage >60%. Then we filtered the results to keep the hits within 90% of the Log(best-e-value), and we used a majority vote function to retrieve the consensus category for each hit. Lastly, we selected the best-hits based on the smallest e-value and the largest query and target coverage values. We used the fitness values from the RB-TnSeq experiments from Price et al. to identify genes of unknown function that are important for fitness under certain experimental conditions.

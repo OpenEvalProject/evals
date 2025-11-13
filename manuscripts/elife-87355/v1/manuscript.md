@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0006swh35 The First Affiliated Hospital of Xiamen University‐ICMRS Collaborating Center for Skeletal Stem Cell, State Key Laboratory of Cellular Stress Biology, Faculty of Medicine and Life Sciences, Xiamen University Xiamen China
-2. https://ror.org/00mcjh785 Fujian Provincial Key Laboratory of Organ and Tissue Regeneration, School of Medicine, Xiamen University Xiamen China
+1. The First Affiliated Hospital of Xiamen University‐ICMRS Collaborating Center for Skeletal Stem Cell, State Key Laboratory of Cellular Stress Biology, Faculty of Medicine and Life Sciences, Xiamen University Xiamen China ([ROR:0006swh35](https://ror.org/0006swh35))
+2. Fujian Provincial Key Laboratory of Organ and Tissue Regeneration, School of Medicine, Xiamen University Xiamen China ([ROR:00mcjh785](https://ror.org/00mcjh785))
 
 † Corresponding author
 

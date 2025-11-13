@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02pttbw34 Department of Pediatrics, Division of Infectious Diseases, and Stem Cells and Regenerative Medicine Center, Baylor College of Medicine and Texas Children’s Hospital Houston United States
-2. https://ror.org/02pttbw34 Program in Cancer and Cell Biology, Graduate School of Biomedical Sciences, Baylor College of Medicine Houston United States
-3. https://ror.org/02y72wh86 Department of Biomedical and Molecular Sciences, Queen’s University Kingston Canada
-4. https://ror.org/02pttbw34 Program in Immunology and Microbiology, Graduate School of Biomedical Sciences, Baylor College of Medicine Houston United States
+1. Department of Pediatrics, Division of Infectious Diseases, and Stem Cells and Regenerative Medicine Center, Baylor College of Medicine and Texas Children’s Hospital Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+2. Program in Cancer and Cell Biology, Graduate School of Biomedical Sciences, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+3. Department of Biomedical and Molecular Sciences, Queen’s University Kingston Canada ([ROR:02y72wh86](https://ror.org/02y72wh86))
+4. Program in Immunology and Microbiology, Graduate School of Biomedical Sciences, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
 
 † Corresponding author
 
@@ -28,6 +28,114 @@ Human and murine studies reveal that innate immune cells are able to mount enhan
 In humans, trained immunity after BCG vaccination was found to last for over 1 year in circulating monocytes (Kleinnijenhuis et al., 2014). These long-term effects were surprising since circulating monocytes have a half-life of only a few days in humans and mice (Patel et al., 2017; Teh et al., 2019). As circulating innate immune cells lack self-renewal capacity and are primarily short-lived, investigators have turned to hematopoietic stem and progenitor cells (HSPCs), the long-lived and self-renewing progenitors of innate immune cells (see Box 1), as the potential reservoir for trained immunity (Orkin and Zon, 2008). Possessing both multilineage differentiation potential and self-renewal capacity, HSPCs are known to respond to environmental cues such as inflammation triggered by infection, diet, or aging (King and Goodell, 2011; Takizawa et al., 2012; Pietras, 2017; Ding et al., 2021). Indeed, HSPCs express Toll-like receptors and other pathogen-associated molecular pattern recognition and cytokine receptors that equip them to detect and respond to inflammatory stimuli. Upon detection of external stressors, HSPCs undergo emergency myelopoiesis, thereby directly contributing to the immune response (Cao et al., 2024).
 
 The potential for HSPCs to serve as a memory reservoir for trained immunity has been described in both murine (Kaufmann et al., 2018; Mills et al., 2024; Mitroulis et al., 2018; Khan et al., 2020; Kain et al., 2023; Zhu et al., 2024; Kalafati et al., 2020; de Laval et al., 2020; Table 1) and human studies (Cirovic et al., 2020; Cheong et al., 2023; Sun et al., 2024). Experiments in which memory phenotypes were transferred via HSPCs from trained donors into irradiated recipients have demonstrated the sufficiency of reprogrammed HSPCs to generate innate immune memory in circulating immune cells (Kaufmann et al., 2018; Mitroulis et al., 2018; Khan et al., 2020; Kain et al., 2023; de Laval et al., 2020). Long-term reprogramming has been observed in mouse studies of hemozoin-dependent Plasmodium infection (Zhu et al., 2024) and in longitudinal studies in humans trained with BCG vaccination (Cirovic et al., 2020; Sun et al., 2024) or long COVID (Cheong et al., 2023). Notably, innate immune memory has also been observed in non-immune cells, such as epidermal stem cells (Naik and Fuchs, 2022; Larsen et al., 2020a) and embryonic fibroblasts (Kamada et al., 2018). Like immune cells, these structural cells exhibit heightened transcriptional responses following an initial training period of inflammatory exposure and recovery. A common theme is that cells harboring ‘memory’ must either be self-renewing, long-lived, or both. At the very least, these cells must be able to survive the initial insult for the reprogramming to persist.
+
+**Table 1.**
+ Hematopoietic stem and progenitor cell (HSPC) populations mediating trained immunity phenotypes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell type</th>
+      <th>TI experimental endpoint</th>
+      <th>Inducing stimulus</th>
+      <th>TI phenotype</th>
+      <th>Citations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Whole bone marrow</td>
+      <td>20 weeks</td>
+      <td>BCG</td>
+      <td>Protection from M. tb infection</td>
+      <td>Kaufmann et al., 2018</td>
+    </tr>
+    <tr>
+      <td>1 year</td>
+      <td>M. tb</td>
+      <td>Susceptibility to M. tb</td>
+      <td>Khan et al., 2020</td>
+    </tr>
+    <tr>
+      <td rowspan="2">cKit enriched</td>
+      <td rowspan="2">16 weeks to &gt;1 year</td>
+      <td>M. avium</td>
+      <td rowspan="2">Cross protection</td>
+      <td rowspan="2">Kain et al., 2023</td>
+    </tr>
+    <tr>
+      <td>H1N1</td>
+    </tr>
+    <tr>
+      <td>LSK</td>
+      <td>13 weeks and secondary transplant</td>
+      <td>LPS</td>
+      <td>Protection from P. aeruginosa</td>
+      <td>de Laval et al., 2020</td>
+    </tr>
+    <tr>
+      <td rowspan="3">LT-HSC</td>
+      <td>13 weeks and secondary transplant</td>
+      <td>LPS</td>
+      <td>Protection from P. aeruginosa</td>
+      <td>de Laval et al., 2020</td>
+    </tr>
+    <tr>
+      <td>8 months</td>
+      <td>Fasciola hepatica excretory–secretory products (FHES)</td>
+      <td>Reduced susceptibility to induction of EAE</td>
+      <td>Cunningham et al., 2021</td>
+    </tr>
+    <tr>
+      <td>1 year</td>
+      <td>M. tb</td>
+      <td>Inhibit trained immunity</td>
+      <td>Khan et al., 2020</td>
+    </tr>
+    <tr>
+      <td rowspan="4">ST-HSC/MPP3</td>
+      <td rowspan="4">4 weeks</td>
+      <td>BCG</td>
+      <td>↑ ST-HSC, MPP3</td>
+      <td>Kaufmann et al., 2018</td>
+    </tr>
+    <tr>
+      <td>M. tb</td>
+      <td>↓ ST-HSC, MPP3</td>
+      <td>Khan et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Heme</td>
+      <td>↑ ST-HSC, MPP3</td>
+      <td>Jentho et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Western diet</td>
+      <td>↓ MPPs</td>
+      <td>Christ et al., 2018</td>
+    </tr>
+    <tr>
+      <td rowspan="3">GMPs</td>
+      <td>1 week</td>
+      <td>β-Glucan</td>
+      <td>Anti-tumor immunity</td>
+      <td>Kalafati et al., 2020</td>
+    </tr>
+    <tr>
+      <td>1 year</td>
+      <td>COVID</td>
+      <td>Long-term inflammation</td>
+      <td>Cheong et al., 2023</td>
+    </tr>
+    <tr>
+      <td>12 weeks</td>
+      <td>Sepsis</td>
+      <td>Post-sepsis immunosuppression</td>
+      <td>Bomans et al., 2018</td>
+    </tr>
+  </tbody>
+</table>
 
 The mechanism by which HSPCs encode memory is the subject of intense investigation. Recent studies indicate two key findings: (1) inflammatory responses by HSPCs in the bone marrow are highly heterogeneous (Kain et al., 2023; Arts et al., 2018) and (2) epigenetic changes in response to infection affect HSPC quiescence and differentiation (Sun et al., 2024; de Laval et al., 2020; Hormaechea-Agulla et al., 2021). These observations raise the potential that inflammatory stimuli can affect innate immune function via selective activation, involving proliferation and differentiation, and epigenetic reprogramming of HSPC subsets, thereby influencing lineage fate determination and reshaping immune cell populations (Johansson et al., 2023).
 
@@ -47,11 +155,11 @@ Methods to study HSC function have been developed over several decades. HSC tran
 
 **Figure 2.:** Murine transplant studies have been used to determine engraftment capacity of hematopoietic cells. Whole bone marrow (black line) can be transplanted into irradiated recipients to fully reestablish the hematopoietic system. Myeloid cells such as neutrophils and macrophages are the first to develop in the first few weeks post-transplantation, followed by lymphoid cells (Pietras et al., 2015; Ogonek et al., 2016). Hematopoietic stem cells (HSCs) are considered the main contributors to the long-term engraftment observed in hematopoietic transplant models. A single HSC (blue) can reconstitute the mouse hematopoietic system and can be serially transplanted for continued long-term hematopoiesis (Pietras et al., 2015; Oguro et al., 2013; Spangrude et al., 1988). Unlike HSCs and whole bone marrow, myeloid-biased downstream progenitors, such as multipotent progenitors (MPPs) (red), have been reported to sustain multilineage hematopoiesis for 4 weeks before their exhaustion and disappearance (Pietras et al., 2015; Oguro et al., 2013). The persistence of granulocyte–monocyte progenitors (GMPs) alone is even shorter compared to MPP3s (labeled in dashed green) (Pietras et al., 2015; Säwen et al., 2018). Of note, barcoding studies have shown much longer multilineage hematopoiesis from MPPs and GMPs in native, non-transplant conditions (Shaban et al., 2025).
 
-## Investigating central trained immunity in transplantation settings
+### Investigating central trained immunity in transplantation settings
 
 In the first study to investigate the role of HSPCs in central trained immunity, we showed that reprogrammed HSPCs provide improved, non-specific host immunity to recipient mice. Specifically, transplant of whole bone marrow from BCG iv-vaccinated mice provided immunity against subsequent Mycobacterium tuberculosis (M. tb) challenge 14 weeks post-transplant (Kaufmann et al., 2018). Further refinement of transplant studies, such as transplanting lineage-negative, cKit+, Sca1+ cells (de Laval et al., 2020) or cKit-enriched cells (Kain et al., 2023) primarily composed of HSPCs, provided further evidence that primary transplant of trained HSPCs can improve host immunity in subsequent challenges. In studies using the related bacterium M. avium as the training agent, we found that similar host protection could persist for 1 year post-primary transplant (Kain et al., 2023). Importantly, studies have utilized both mycobacteria and LPS as training agents, suggesting diverse molecular avenues for training (de Laval et al., 2020; Kaufmann et al., 2022). Trained immunity-mediated host protection was also replicated in the setting of Rag1-deficient mice, indicating independence from the adaptive immune system (Quintin et al., 2012). We showed that M. avium training could confer cross-protective immunity against an antigenically distinct H1N1 influenza challenge, reinforcing the concept that trained immunity protection is not attributable to an adaptive immune response (Kain et al., 2023). Multiple studies support this finding (Kaufmann et al., 2022; Ciarlo et al., 2020; Khan et al., 2025).
 
-## Secondary transplantation to enhance stringency of HSC memory studies
+### Secondary transplantation to enhance stringency of HSC memory studies
 
 Serial transplantation is the most stringent functional test of HSC memory capacity, as it requires stem cells to self-renew and generate trilineage hematopoiesis across two or more rounds of transplantation. Serial transplantation of BCG-trained whole bone marrow over a 42-week time period conferred innate immune memory, while a maladaptive memory phenotype induced by M. tb likewise was transferred in this transplant model (Khan et al., 2020). Secondary transplantation of LPS-stimulated LSK cells 12 weeks apart showed that trained HSCs mediated decreased bacterial burden and increased survival in secondary recipients that had been challenged with lethal doses of P. aeruginosa (de Laval et al., 2020). These secondary transplant experiments, because they require two rounds of flow cytometric purification of HSPCs, significantly reduce the chance that trained immunity phenotypes are due to transmission of the original pathogen to recipient animals or due to transfer of long-lived adaptive immune cells. Altogether, these studies provide strong evidence that reprogramming of HSPCs results in robust and durable innate immune memory in murine models. However, more direct evidence of HSC involvement in trained immunity is needed, as very few studies to date have utilized direct transplant of purified HSCs, and LSK populations used for multiple studies include numerous progenitors other than HSCs (de Laval et al., 2020).
 
@@ -73,7 +181,7 @@ In contrast, maladaptive induction of innate immune memory with M. tb has been s
 
 Collectively, these findings using non-transplant models highlight that ST-HSCs and MPPs may play a significant role in innate immune memory conservation and amplification.
 
-## Innate immune memory conservation in granulocyte–monocyte progenitors
+### Innate immune memory conservation in granulocyte–monocyte progenitors
 
 While the focus of central trained immunity research has been on HSCs and MPPs, strong evidence supports a downstream role of granulocyte–monocyte progenitors (GMPs) in central trained immunity. As mentioned above, central trained immunity can lead to a heterogeneity of responders and non-responders within the host (Verma et al., 2017; Kain et al., 2023), and cellular expansion can be limited to specific subsets of progenitors including MPP3s and GMPs (Kaufmann et al., 2018; Kalafati et al., 2020; Cheong et al., 2023; Christ et al., 2018; Kain et al., 2023; Arts et al., 2018).
 

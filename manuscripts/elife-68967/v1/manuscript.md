@@ -36,25 +36,79 @@ Here, utilizing a multimodal cell typing approach, we sought to understand the e
 
 ## Results
 
-## scRNA-seq reveals discrete excitatory neuron subtypes within the claustrum
+### scRNA-seq reveals discrete excitatory neuron subtypes within the claustrum
 
 We began by using single-cell RNA sequencing (scRNA-seq) to understand the transcriptomic organization of the claustrum. From claustral microdissections from four mice, we manually harvested 1112 cells based on a combination of unbiased blind selection of cells and selection of specific labeled projections (to either the lateral entorhinal cortex [LEC] or retrosplenial cortex [RSC]; see Materials and methods). After library preparation, sequencing, and filtering, we retained a total of 1011 excitatory neurons for analysis (n = 478 cells blindly selected; n = 286 and 247 cells projecting to the LEC and RSC, respectively).
 
 We initially examined this dataset agnostic to any projection-specific information. Combining UMAP nonlinear dimensionality reduction (McInnes et al., 2018) with Louvain graph-based clustering (Stuart et al., 2019) revealed that cells broadly conformed to three transcriptomically separated clusters (Figure 1A; also seen in t-SNE: Figure 1—figure supplement 1A). These clusters were all associated with expression of excitatory neuronal markers (Figure 1B) and were found across the anterior-posterior axis and across animals (Figure 1—figure supplement 1B,C). In seeking to assign transcriptomic phenotypes to these cells, we noted one cluster (‘Cluster 1’) was enriched for the claustrum marker gene Synpr (Binks et al., 2019; Wang et al., 2017). This cluster and a second cluster (‘Cluster 2’) exhibited enriched expression of other claustrum marker genes (e.g., Gnb4) relative to the third cluster (‘Cluster 3’) (Figure 1C), with Cluster 2 also showing uniquely expressed marker genes (e.g., Slc30a3; Figure 1D). Conversely, Cluster 3 was enriched for markers of excitatory cortical populations (e.g., the layer 6b marker Ctgf and the layer 6a marker Sla) (Tasic et al., 2016; Tasic et al., 2018), suggesting a cortical phenotype (Figure 1C). Each cluster also exhibited enriched expression of many other genes associated with neuronal function (Figure 1E), suggesting structural and functional heterogeneity between these three clusters (for full lists of differentially expressed genes, see Supplementary files 1–3).
 
-## Comparison to other scRNA-seq data
+![Figure 1.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig1-v1.jpg)
+
+**Figure 1.:** (A) UMAP dimensionality reduction of single-cell transcriptomes. Points denote individual cells, with coloring denoting cluster identity obtained by graph-based clustering. (B) Violin plots illustrating expression of control marker genes, with accompanying values denoting normalized and log-transformed count value associated with right tick mark. (C) As in (B), but for known marker genes of claustrum neurons and layer 6 cortical neurons. (D) As in (B), but for the novel Cluster 2 marker gene Slc30a3. (E) Heatmap illustrating expression of genes associated with neuronal functionality that are enriched or depleted in a cell-type-specific fashion.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) t-SNE dimensionality reduction of scRNA-seq dataset, illustrating separation of clusters. Cells are colored according to cluster identity as in Figure 1. (B) Cells colored according to location of slice (anterior vs. posterior), depicted in UMAP space. Anterior and posterior cells occupy identical clusters. (C) Cells colored according to animal, depicted in UMAP space, illustrating clustering of cells across animals.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) scRNA-seq analysis, integrating the new (‘Erwin’) dataset with published data from Zeisel et al., 2018 and Saunders et al., 2018 (‘Zeisel’ and ‘Saunders,’ respectively). Cells in the integrated dataset are depicted in UMAP embedding and colored according to source dataset. Insets provide expansion of cell types enriched in the Erwin dataset. (B) Expression of Synpr in the integrated dataset, helping to illustrate cells associated with Cluster 1 in Erwin dataset. Color map and units reflects scaled expression across integrated datasets (dimensionless). (C) As in (B), but for Nnat, illustrating cells associated with Cluster 2 in Erwin dataset.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Clusters of neurons obtained at a relatively fine clustering resolution, encompassing Nnat-expressing claustrum shell neurons from Erwin dataset, as well as similar neurons from published Saunders and Zeisel datasets. (B) As in (A), but colored according to dataset of origin. Inset illustrates the number of cells from each dataset on a per-cluster basis. Expression presented in scaled (dimensionless) units. (C) Expression of Nnat across the clusters in (A). (D) As in (C), but expression illustrated by dataset of origin rather than cluster. (E, F) As in (C, D), but for Pcp4.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Chromogenic in situ hybridization showing Pcp4 expression in a coronal section of the mouse brain. Scale bar: 500 µm. (B, C) Expansion of the regions highlighted in (A). Note that Pcp4 exhibits near-ubiquitous expression across the deep cortical layers (e.g., S1), which sharply decreases upon emergence of the claustrum. Data in (A–C) from Allen Mouse Brain Atlas (Lein et al., 2007). Scale bars: 100 µm. (D) Single-cell RNA sequencing data from V1 further supporting strong, ubiquitous expression of Pcp4 across deep cortical layers. Data from Tasic et al., 2016 with cluster identities and associated analysis conducted via the Broad Institute Single Cell Portal (https://singlecell.broadinstitute.org/single_cell), with results presented in reads per kilobase per million mapped reads (RPKM). (E–H) As in (A–D), but for Nnat.
+
+### Comparison to other scRNA-seq data
 
 To understand our results in the context of other published scRNA-seq data, we next integrated our dataset with existing large-scale datasets that potentially included the claustrum (Saunders et al., 2018; Zeisel et al., 2018). Consistent with the three clusters identified within our dataset, our dataset largely conformed to three distinct locations within the broader cell-type landscape when incorporating published data (Figure 1—figure supplement 2A,B). In particular, Cluster 1 cells occupied an isolated group of Synpr-expressing cells, whereas Cluster 2 cells coarsely occupied a distinct location nearby other datasets, but were also enriched for specific marker genes like Nnat (Figure 1—figure supplement 2C). In agreement with Cluster 2 being non-cortical, these Nnat-expressing Cluster 2 cells were also depleted in Pcp4 expression (Figure 1—figure supplement 3), a gene strongly expressed in deep cortical layers (but with exception of layer 6 intratelencephalic excitatory neurons: Watakabe et al., 2012; Figure 1—figure supplement 4). In collection, this work shows that our scRNA-seq data recapitulates previously described cell types and further suggests new marker genes and specializations that may have been underresolved in previous studies.
 
-## Two types of excitatory claustral neurons exist in a core-shell arrangement
+### Two types of excitatory claustral neurons exist in a core-shell arrangement
 
 As the spatial cell-type-specific organization of the claustrum remains uncertain, we next sought to map our scRNA-seq-identified cell types in a spatial context. To do this, we used multiplexed fluorescent in situ hybridization (mFISH) (Wang et al., 2012), allowing us to map 12 RNA targets at a single-molecule and single-cell resolution (Sullivan et al., 2020). We selected genes that allowed us to grossly identify excitatory neurons (Slc17a7, Slc17a6), cortical markers (Ctgf, Pcp4), classical claustrum markers (Synpr, Lxn, Gnb4), and putative subtype-specific markers from our scRNA-seq dataset (Cdh9, Slc30a3, Gfra1, Nnat, Spon1) (overview of genes in scRNA-seq: Figure 2—figure supplement 1).
 
 We used mFISH to spatially register expression of these 12 genes across anterior, intermediate, and posterior sections of the claustrum (Figure 2A; expansions: Figure 2—figure supplement 2; Video 1; n = 18,957 excitatory neurons from n = 5 animals analyzed). In doing so, we identified a claustrum population with a relatively central core-like location that exhibited expression of Synpr, and a surrounding shell-like population exhibiting expression of Nnat (Figure 2B–D). This organization was present across the anterior-posterior axis (Figure 2—figure supplement 3) as well as across animals (Figure 2—figure supplement 4), and recapitulated gene-expression properties predicted from scRNA-seq (Figure 2—figure supplement 5). Adjacent to these populations were other neuronal subtypes enriched for markers of cortical cells, including a cluster with spatial and transcriptional properties of deep layer 6 cells (i.e., a Ctgf-expressing cluster in the deepest cortical layer). Collectively, these results illustrated that claustrum excitatory neuron subtypes are transcriptionally distinct from neighboring cortical neurons and form a core-shell spatial organization.
 
-## Claustrum excitatory subpopulations co-vary with projection target
+![Video 1.](https://cdn.elifesciences.org/articles/68967/elife-68967-video1.mp4.jpg)
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig2-v1.jpg)
+
+**Figure 2.:** (A) Overview of anterior (left), intermediate (middle), and posterior (right) sections of the claustrum. Inset shows expansion of anterior section. Probe list provided at bottom middle, with atlas schematics denoting coronal section locations at bottom right, as well as imaged regions and claustrum definition of atlas (brown). Scale bars: overview: 200 µm; expansion: 20 µm. Atlas schematic adapted from Franklin and Paxinos, 2013. (B) UMAP-based nonlinear dimensionality reduction for Slc17a7-expressing cells (putative excitatory neurons) segmented from (A) and colored according to Leiden cluster identity. (C) Expression of example marker genes for core claustrum (Synpr), shell claustrum (Nnat), and layer 6 neurons (Ctgf). (D) Excitatory neurons from (B) plotted in spatial coordinates. Purple and green clusters respectively occupy the claustrum core and shell. Red neurons occupy deep layer 6 cortex, whereas yellow and pink clusters occupy other cortical regions. Scale bar: 200 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) scRNA-seq expression profiles of excitatory neuronal markers Slc17a7 and Slc17a6. Expression depicted in UMAP embedding, plotted as counts per million with color scale provided. (B) As in (A), but for previously known claustral marker genes. (C) As in (A), but for cortical marker genes. (D) As in (A), but for genes identified in this study that were enriched or depleted in a cluster-specific manner.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Overview of signals associated with the 12 genes targeted by mFISH. Scale bar: 500 μm. (B) For each gene, expansions of the areas shown in (A). Scale bar: 50 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Expression of Synpr (green), Nnat (red), and Ctgf (blue) in anterior sections, as well as three-color overlay. Scale bar: 500 μm. (B, C) As in (A), but for intermediate (B) and posterior (C) sections. (D) Expression of Synpr, Nnat, and Ctgf in UMAP embedding pooling across all shown sections. Scale bars, illustrating percent area covered (PAC), are provided at bottom for each column.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Cellular phenotyping across relatively anterior (left), intermediate (middle), and posterior (right) sections for a replicate animal, with cells colored according to cluster identity as in Figure 2. (B–D) As in (A), but for other replicate animals. Scale bar: 500 µm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Top row: box plots illustrating expression of core-associated marker genes in scRNA-seq and mFISH datasets for core and shell clusters. Middle row: as in top row, but for shell-associated marker genes. Bottom row: as in top row, but for genes similarly expressed in scRNA-seq core and shell datasets.
+
+### Claustrum excitatory subpopulations co-vary with projection target
 
 Does this differential marker gene expression and spatial patterning correspond to distinct claustral projections? To answer this question, we next considered projections to the RSC and LEC, two claustral projections that exhibit minimal overlap (two-color retrograde viral injections: Figure 3A; see also Marriott et al., 2020). We first examined our scRNA-seq dataset with respect to projection targets, where a subset of RSC- and LEC-projecting cells were specifically targeted by retrograde labeling and manual harvesting (Figure 3B). Strikingly, 85% (204/241) of RSC-projecting claustrum cells mapped onto the Synpr-expressing class, whereas 84% (238/282) of LEC-projecting claustrum cells mapped onto the Nnat-expressing class (Figure 3C). Similarly, applying mFISH to retrograde-labeled cells provided complementary evidence that Synpr and Nnat were respectively enriched in RSC-projecting and LEC-projecting cells (representative section: Figure 3D–H; all projection cells: Figure 3I, Figure 3—figure supplement 1), and illustrated that RSC- and LEC-projecting cells were enriched in distinct claustral subtypes (216/259 = 83% of RSC-projecting claustral cells were found in core cluster and 276/324 = 85% of LEC-projecting claustral cells were found in shell cluster, n = 4 and n = 2 animals, respectively, Figure 3J). Thus, distinct excitatory claustrum projection neurons were coherently separable by marker genes, local spatial organization, and long-range projection targets.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig3-v1.jpg)
+
+**Figure 3.:** (A) Projections to the retrosplenial cortex (RSC; magenta) and lateral entorhinal cortex (LEC; green) emanate from different spatial locations. Atlas schematic denotes coronal section location, adapted from Franklin and Paxinos, 2013. Scale bar: 200 µm. (B) Left: UMAP visualization of scRNA-seq claustrum transcriptomes, with coloring of individual cells corresponding to their associated projection. Labels denote cluster phenotypes and example marker genes. (C) Counts of RSC-projecting and LEC-projecting cells according to scRNA-seq core and shell phenotypes. (D) Representative multiplexed fluorescent in situ hybridization (mFISH) of intermediate claustrum section, including circuit mapping of long-range projections to the RSC (magenta) and LEC (green). Scale bars: overview: 200 µm; expansion: 20 µm. (E) Cellular segmentation and cluster identification based upon gene expression detected via mFISH, for section shown in (D). (F) UMAP dimensionality reduction of mFISH-characterized cells in (D), colored according to cluster identity as in (E). Putative phenotypes of clusters, based upon marker gene expression, are provided in inset. (G) Locations of neurons projecting to the RSC (magenta), LEC (green), or both (yellow), for section shown in (D). Scale bar: 200 µm. (H) As in (G), but with projections shown in UMAP embedding. (I) mFISH-derived expression of Synpr and Nnat in cells that project to either the RSC (magenta) or LEC (green). Results depict all projection-labeled cells across all sections and animals. (J) As in (C), but for mFISH core and shell phenotypes across all sections and animals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Box plots illustrating expression of genes in mFISH dataset according to projections to either the RSC or LEC. Plots grouped according to scRNA-seq-derived expression profiles.
 
 ## Discussion
 
@@ -68,13 +122,156 @@ Collectively, our results will allow subtype-specific claustral function to be a
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cdh9 ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>443221-T1</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ctgf ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>314541-T2</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Slc17a6 ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>319171-T3</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lxn ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>585801-T4</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Slc30a3 ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>496291-T5</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gfra1 ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>431781-T6</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Spon1 ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>492671-T7</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gnb4 ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>460951-T8</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nnat ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>432631-T9</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Synpr ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>500961-T10</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pcp4 ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>402311-T11</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Slc17a7 ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>416631-T12</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org</td>
+      <td>SCR_001905</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>https://satijalab.org/seurat/</td>
+      <td>SCR_007322</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://imagej.net/Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>rAAV2-retro-CAG-GFP</td>
+      <td>Janelia Viral Core</td>
+      <td>-</td>
+      <td>scRNA-seq</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>pAAV-CAG-GFP</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_37825</td>
+      <td>mFISH</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>pAAV-CAG-tdTomato</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_59462</td>
+      <td>mFISH</td>
+    </tr>
+  </tbody>
+</table>
+
 All procedures were approved by the University of British Columbia Animal Care Committee (protocol A18-0267), the University of Alberta Health Science Laboratory Animal Services Animal Care and Use Committee (protocol AUP2711), and the Janelia Institutional Animal Care and Use Committee (protocol 17-159).
 
-## Retrograde tracer injections
+### Retrograde tracer injections
 
 Mature C57BL/6 mice of either sex were used for injections, and randomly assigned retrograde injection locations and tracers. Mice were administered carprofen via ad libitum water 24 hr prior to surgery and for 72 hr after surgery to achieve a dose of 5 mg/kg. For surgery, mice were initially anesthetized using 4% isoflurane and maintained with 1.0–2.5% isoflurane. Mice were secured in a stereotaxic frame, with body temperature maintained through an electric heating pad set at 37°C, and lubricant was applied to eyes to prevent drying. Local anesthetic (bupivacaine) was applied locally under the scalp, and an incision along midline was made to access bregma and all injection sites. Craniotomies were marked and manually drilled using a 400 µm dental drill bit according to stereotaxic coordinates. Pulled pipettes (10–20 µm in diameter) were back filled with mineral oil and loaded with virus or tracers. All injections were made using pressure injection, with 200 nL of retrograde tracer (Tervo et al., 2016) being injected. The skin was sutured after completing all injections and sealed. After allowing for sufficient time for retrograde labeling, mice were subsequently sacrificed for either histology, RNA sequencing, or mFISH processing, as described below.
 
-## Single-cell RNA sequencing data acquisition and analysis
+### Single-cell RNA sequencing data acquisition and analysis
 
 We used a manual capture approach to harvest cells from n = 4 mature male C57BL/6 mice. To facilitate microdissection of the claustrum, fluorescent tracers were used to delineate and grossly microdissect the claustrum from horizontal sections. In one animal, retrograde rAAV2-retro-CAG-GFP (Tervo et al., 2016) was injected into the anterior cingulate cortex to facilitate gross microdissection of the claustrum (Jackson et al., 2018), but not used to select for individual cells (i.e., GFP expression was used to microdissect the claustrum but cells were picked blind relative to GFP expression). In this animal, cells from separate anterior and posterior sections were obtained, allowing analysis of potential anterior vs. posterior differences in claustrum gene expression (Figure 1—figure supplement 1B). To build the projection-specific dataset, for the remaining three mice, green and red retrobeads were respectively injected into the LEC and RSC, with this labeling used for gross microdissection as well as to select a subset of projection-specific cells for RNA-seq.
 
@@ -88,7 +285,7 @@ Computational analysis was performed in R (RRID:SCR_001905; R Development Core T
 
 To integrate and compare our scRNA-seq data to previously published data, we downloaded data from two previous studies that broadly sampled cortical cells in the mouse brain (Saunders et al., 2018; Zeisel et al., 2018). From Saunders et al., 2018, we downloaded frontal cortex data from F_GRCm38.81.P60Cortex_noRep5_FRONTALonly.raw.dge.txt.gz (from http://dropviz.org) and used a threshold of 16,000 transcripts/cell to extract 2877 total cells. After screening against cells that lacked Snap25 and/or Slc17a7 expression, 2842 putative excitatory neurons were retained for analysis (genes expressed/cell: 4.8 ± 0.6 thousand, mean ± SD; transcripts/cell: 16.5 ± 5.0 thousand, mean ± SD). We used a similar number of cells from Zeisel et al., 2018, obtained from l6_r4_telencephalon_projecting_excitatory_neurons.loom (from http://mousebrain.org/loomfiles_level_L6.html): 3151 cells were obtained using a threshold for 7500 transcripts/cell, with 3141 cells retained after requiring Snap25 and Slc17a7 expression (genes expressed/cell: 3.7 ± 0.4 thousand, mean ± SD; transcripts/cell: 9.6 ± 2.0 thousand, mean ± SD). Integration of these published datasets with our dataset was done in Seurat v3 (Stuart et al., 2019) by creating a Seurat object incorporating all datasets, and then using SplitObject() to split according to original dataset, allowing each dataset to independently undergo normalization and variable feature selection (handled identically to our data). Integration anchors were subsequently identified (via FindIntegrationAnchors()) and used for integration (via IntegrateData()), using 30 dimensions. From here, integrated data underwent scaling, dimensionality reduction, and clustering identically to the method used for our data, with clustering resolution = 2.5 to facilitate comparison between fine clusters associated with the claustrum shell. Statistical significance for adjusted p-values is denoted as follows: ns: p≥0.05; *p<0.05, **p<0.01, ***p<0.001.
 
-## mFISH data acquisition and analysis
+### mFISH data acquisition and analysis
 
 Custom probes for mFISH were purchased from Advanced Cell Diagnostics and were as follows: Cdh9 (443221-T1), Ctgf (314541-T2), Slc17a6 (319171-T3), Lxn (585801-T4), Slc30a3 (496291-T5), Gfra1 (431781-T6), Spon1 (492671-T7), Gnb4 (460951-T8), Nnat (432631-T9), Synpr (500961-T10), Pcp4 (402311-T11), and Slc17a7 (416631-T12). mFISH was generally performed as previously implemented (Sullivan et al., 2020). Briefly, mature male mice were randomly selected for mFISH and were deeply anesthetized with isoflurane and perfused with phosphate buffered saline (PBS) followed by 4% paraformaldehyde (PFA) in PBS. Brains were dissected and post-fixed in 4% PFA for 2–4 hr. Brain sections (20 µm) were made using a cryostat tissue slicer and mounted on glass slides. Slides were subsequently stored at –80°C until use. For use, the tissue underwent pretreatment and antigen retrieval per the User Manual for Fixed Frozen Tissue (Advanced Cell Diagnostics). All 12 probes with unique tails (T1–T12) were hybridized to the tissue, amplified, and the tissue counterstained with DAPI. Using cleavable fluorophores with unique tails (T1–T12), probes were visualized four at a time via an iterative process of imaging, decoverslipping, fluorophore cleaving, and adding the next four targeted fluorophores. mFISH performed on tissue with viral tracing was first counterstained with DAPI, coverslipped with ProLongGold antifade mounting medium, then imaged. The tissue was decoverslipped by soaking in 4× SSC. Following this, standard mFISH protocol was followed, with the antigen retrieval step quenching all endogenous viral fluorescent protein signal and DAPI signal.
 

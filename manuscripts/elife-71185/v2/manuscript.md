@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Despite mounting evidence that the mammalian retina is exceptionally reliant on proper NAD + homeostasis for health and function, the specific roles of subcellular NAD + pools in retinal development, maintenance, and disease remain obscure. Here, we show that deletion of the nuclear-localized NAD + synthase nicotinamide mononucleotide adenylyltransferase-1 (NMNAT1) in the developing murine retina causes early and severe degeneration of photoreceptors and select inner retinal neurons via multiple distinct cell death pathways. This severe phenotype is associated with disruptions to retinal central carbon metabolism, purine nucleotide synthesis, and amino acid pathways. Furthermore, transcriptomic and immunostaining approaches reveal dysregulation of a collection of photoreceptor and synapse-specific genes in NMNAT1 knockout retinas prior to detectable morphological or metabolic alterations. Collectively, our study reveals previously unrecognized complexity in NMNAT1-associated retinal degeneration and suggests a yet-undescribed role for NMNAT1 in gene regulation during photoreceptor terminal differentiation.
+Despite mounting evidence that the mammalian retina is exceptionally reliant on proper NAD+ homeostasis for health and function, the specific roles of subcellular NAD+ pools in retinal development, maintenance, and disease remain obscure. Here, we show that deletion of the nuclear-localized NAD+ synthase nicotinamide mononucleotide adenylyltransferase-1 (NMNAT1) in the developing murine retina causes early and severe degeneration of photoreceptors and select inner retinal neurons via multiple distinct cell death pathways. This severe phenotype is associated with disruptions to retinal central carbon metabolism, purine nucleotide synthesis, and amino acid pathways. Furthermore, transcriptomic and immunostaining approaches reveal dysregulation of a collection of photoreceptor and synapse-specific genes in NMNAT1 knockout retinas prior to detectable morphological or metabolic alterations. Collectively, our study reveals previously unrecognized complexity in NMNAT1-associated retinal degeneration and suggests a yet-undescribed role for NMNAT1 in gene regulation during photoreceptor terminal differentiation.
 
 ## Introduction
 
@@ -32,21 +32,61 @@ In this study, we investigate the roles of NMNAT1-mediated NAD+ metabolism in th
 
 ## Results
 
-## Generation and validation of NMNAT1 conditional knockout mouse model
+### Generation and validation of NMNAT1 conditional knockout mouse model
 
 To establish a retina-specific NMNAT1 knockout model, we crossed mice homozygous for a loxP-targeted Nmnat1 locus (Nmnat1flox/flox) with transgenic mice expressing Cre recombinase under a Six3 promoter (Nmnat1wt/wt;Six3-Cre), which is expressed throughout the retina at embryonic day 9.5 (E9.5) and shows robust activity by E12.5 (Furuta et al., 2000). After several crosses, mice inheriting Six3-Cre and a floxed Nmnat1 locus (Nmnat1flox/flox;Six3-Cre, hereafter referred to as ‘knockouts’) exhibit Cre-mediated excision of the first two exons of Nmnat1—which contain important substrate binding domains—in the embryonic retina (Figure 1A). We determined that retinal Nmnat1 expression in postnatal day 4 (P4) knockout mice was reduced by 75.6% (95% CI 56.1–95.0%) compared to littermate controls (Figure 1B), a reduction consistent with a previously reported NMNAT1 retinal knockout model (Sasaki et al., 2020b). We further verified that retinal NMNAT1 protein levels were drastically reduced in P0 knockout mice using a custom-made polyclonal antibody against NMNAT1 (Figure 1C and Figure 1—figure supplement 1). Finally, we confirmed that embryonic Six3-Cre expression alone does not cause gross retinal abnormalities by staining for several well-characterized cell type markers in mature Nmnat1wt/wt; Six3-Cre retinas and littermate controls (Figure 2—figure supplement 1; markers discussed below).
 
-## Early-onset and severe morphological defects in the NMNAT1-null retina
+![Figure 1.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic depicting retina-specific Six3-Cre mediated excision of a segment of the Nmnat1 gene. (B) Relative Nmnat1 expression in retina from P4 knockout (-/-) and littermate control (+/+) mice as assessed by RT-qPCR (grey bars represent mean, significance determined using Mann-Whitney U test, n = 3 biological replicates). (C) Representative western blot showing levels of NMNAT1 and β-tubulin loading control in retinal lysate from P0 knockout and control mice. (D–G) Representative H&E-stained retinal cross sections from knockout and control mice at indicated ages. (H–J) Spider plots depicting mean retinal thickness at P0, P4, and P10. Data are represented as mean ± SD. *p < 0.05 using Student’s t-test, n = 3 biological replicates per age. Scale bars, 30 μm. Abbreviations: LP, loxP site; E1-4, exon 1–4; P, postnatal day; GCL, ganglion cell layer; NBL, neuroblastic layer; IPL, inner plexiform layer; OPL, outer plexiform layer; INL, inner nuclear layer; ONL, outer nuclear layer; IS/OS, photoreceptor inner segment/outer segment layer.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) western blot of lysate of HEK293T cells transiently transfected with FLAG-tagged NMNAT1 demonstrating specificity of NMNAT1 antibody. (B) Western blot from Figure 1C, with dotted line indicating crop area. Arrowheads denote bands corresponding to NMNAT1.
+
+### Early-onset and severe morphological defects in the NMNAT1-null retina
 
 As a first step toward characterizing the effects of NMNAT1 ablation on the retina, we performed retinal histology using hematoxylin and eosin (H&E) staining. H&E-stained retinal cross sections from P0 knockout and control mice reveal no obvious morphological differences (Figure 1D and H); however, by P4, knockout retina are markedly thinner than controls and exhibit disrupted lamination and evidence of large-scale cell death in the inner and outer nuclear layers (Figure 1E). Degeneration is most severe in the central retina, with a ~45% reduction in central retinal thickness (but unaffected peripheral retinal thickness) in P4 knockout mice (Figure 1I). By P10, knockouts show a ~62% reduction in central retinal thickness and ~27% reduction in peripheral retinal thickness compared to controls (Figure 1J). Degeneration of the entire inner and outer nuclear layers is nearly complete by P30 (Figure 1G), while remaining inner retinal structures persist until approximately P60 (data not shown). Proper segregation of inner and outer retinal neurons appears disrupted in P4 knockouts, but this segregation is established in P10 knockouts despite severe degeneration (Figure 1F). Interestingly, formation of the outer plexiform layer (containing photoreceptor and bipolar neuron synaptic structures) appears disrupted in P4 and P10 knockout retinas (Figure 1E and F).
 
-## NMNAT1 loss affects survival of major inner retinal neurons
+### NMNAT1 loss affects survival of major inner retinal neurons
 
 Histological examination suggests severe photoreceptor degeneration in NMNAT1 knockout retinas but also indicates loss of specific inner retinal neuron populations. To further characterize these effects, we quantified populations of several major inner retinal cell types in our knockout by staining retinal sections with well-characterized antibody markers: retinal ganglion cells were identified by labelling for brain-specific homeobox/POU domain protein 3A (BRN3A), amacrine cells by labeling for calretinin (CALR), horizontal cells by labeling for calbindin (CALB), and bipolar cells by labeling for Ceh-10 homeodomain-containing homolog (CHX10) (Key Resources Table). With the exception of calbindin, we performed this analysis at P4 and P10—representing early and late stages of degeneration, respectively—revealing an interesting cell-type-dependent sensitivity to NMNAT1 loss (Figure 2). At both tested ages, relative numbers of retinal ganglion cells are not significantly different between knockout and control retinas (Figure 2A–D and M), while numbers of amacrine cells are unchanged at P4 but reduced by ~51% (95% CI 36–65%) in P10 knockout retinas (Figure 2E–H and O). Numbers of bipolar cells are similarly unchanged at P4 but reduced by ~75% (95% CI 62–85%) in P10 knockout retinas (Figure 2I–L and P). In P0 knockout retinas—an age at which ganglion, amacrine, and bipolar cell numbers are unchanged (data not shown)—horizontal cell counts are reduced by ~36% (95% CI 18–53%) (Figure 2N), and this trend persists in P4 knockout retinas (Figure 2A–B and N). These results identify retinal bipolar, horizontal, and amacrine neurons as targets of NMNAT1-associated pathology and suggest that horizontal and bipolar neurons are more sensitive to NMNAT1 loss than amacrine neurons. Interestingly, while retinal ganglion cells do eventually degenerate at timepoints past P30 (data not shown), they appear largely agnostic to NMNAT1 loss in the young postnatal retina.
 
-## Loss of NMNAT1 impairs photoreceptor terminal differentiation
+![Figure 2.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig2-v2.jpg)
+
+**Figure 2.:** Representative retinal sections from knockout (-/-) and floxed littermate control (+/+) mice at the indicated ages labeled with antibodies against BRN3A (A-D, green), Calbindin (CALB) (A–B, magenta) Calretinin (CALR) (E–H), and CHX10 (I–L). Quantification of BRN3A (M), CALB, (N), CALR (O), and CHX10-positive cells (P) are shown. In (O), only CALR-positive cells on the outer side of the IPL (layer indicated by white arrowheads) were counted. Data is represented as mean ± SD. n = 3 biological replicates for all panels; significance determined using Student’s t-test. Scale bars, 30 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Representative retinal sections from P65 wild-type (Nmnat1wt/wt) and Six3-Cre expressing (Nmnat1wt/wt;Six3-Cre) mice labeled with antibodies against calretinin (CALR) and BRN3A (A–B), recoverin (RCVRN) and rhodopsin (RHO) (C–D), synaptophysin (SYPH) (E,F), or CHX10 (G,H). Corresponding zoom panels are indicated with dotted rectangles. n = 3 biological replicates for all panels. Scale bars, 30 μm. Abbreviations: P, postnatal day; GCL, ganglion cell layer; IPL, inner plexiform layer; OPL, outer plexiform layer; INL, inner nuclear layer; ONL, outer nuclear layer; IS/OS, photoreceptor inner segment/outer segment layer.
+
+### Loss of NMNAT1 impairs photoreceptor terminal differentiation
 
 Turning our attention to photoreceptors, we repeated the above approach with antibodies against the photoreceptor markers recoverin (anti-RCVRN) and rhodopsin (anti-RHO). While anti-RCVRN cleanly labels developing photoreceptor somas in P4 and P10 control retinas (Figure 3H, Figure 3—figure supplement 1F), we observe a complete lack of recoverin expression in knockout retinas at both ages (Figure 3I, Figure 3—figure supplement 1G). Barring a small amount of non-specific staining likely originating from the secondary antibody (Figure 3—figure supplement 1D,E), rhodopsin expression at P4 and P10 showed an identical trend to that of recoverin (Figure 3J and K, Figure 3—figure supplement 1H,I).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig3-v2.jpg)
+
+**Figure 3.:** Representative retinal sections from knockout (-/-) and floxed littermate control (+/+) mice at the indicated ages labelled with antibodies against OTX2 (A–D), Phosducin (PDC) and peanut agglutinin (PNA) (E, F), M-opsin (OPN1MW) and PNA (G, H), recoverin (RCVRN) (H,I) or rhodopsin (RHO) (J, K). (L) Comparison of differentially expressed genes in E18.5 and P4 knockout retinas as assessed by RNA-sequencing. (M) GSEA of differentially expressed genes identified in E18.5 and P4 knockout retinas. (N, O) Relative expression of indicated genes in P4 and E18.5 knockout retinas as assessed by RNA-sequencing. n = 3 biological replicates for all panels, except (N), where n = 5 biological replicates. Corresponding zoom panels are indicated with dotted rectangles. Scale bars, 30 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Representative retinal sections from P0 knockout (-/-) and control (+/+) mice labelled with an antibody against phospho-histone H3 (PHH3). (C) Quantification of PHH3-positive nuclei. (D–E) Representative retinal sections from P4 knockout (-/-) and control (+/+) mice labelled with anti-mouse 488 secondary antibody. Representative retinal sections from P10 knockout and control mice labelled with antibodies against recoverin (RCVRN) (F,G) and rhodopsin (RHO) (H,I) are also shown. (J) RT-qPCR validation of indicated genes in P4 RNA-sequencing dataset. Corresponding zoom panels are indicated with dotted rectangles. Scale bars, 30 μm. Data is represented as mean ± SD. significance determined using Student’s t-test. n = 3 biological replicates for all panels (n = 5 biological replicates for RNA-seq data in (J)).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Schematic depicting RNA-sequencing experimental approach for P4 knockout and control retinas. (B) Donut chart representing relative proportions of differentially upregulated and downregulated genes in P4 knockout retinas. (C) Results of pathway overrepresentation analysis of differentially expressed genes in P4 knockout retinas. n = 5 biological replicates.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Schematic depicting RNA-sequencing experimental approach for E18.5 knockout and control retinas. (B) Donut chart representing relative proportions of differentially upregulated and downregulated genes in E18.5 knockout retinas. (C) Results of pathway overrepresentation analysis of differentially expressed genes in E18.5 knockout retinas. n = 4 biological replicates (one outlier removed from knockout group).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Relative expression of indicated bipolar cell (A,D), amacrine and horizontal cell (B,E) and ganglion cell (C,F) genes in E18.5 (A–C) or P4 (D–F) knockout retinas as assessed by RNA-sequencing. Data are represented as mean ± SD. n = 3 biological replicates for (A–C), n = 5 biological replicates for (D–F).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Representative hematoxylin and eosin (H&E)-stained retinal cross-sections from P4 knockout (B, B’) and control (A, A’) mice. Relative expression of indicated synaptic genes in P4 (C) and E18.5 (D) knockout retinas as assessed by RNA-sequencing are also shown. (E–H) Representative retinal sections from knockout (-/-) and floxed littermate control (+/+) mice at the indicated ages labelled with antibodies against synaptophysin (SYPH). Data are represented as mean ± SD. n = 5 biological replicates for (C), n = 3 biological replicates for (D,E–H). Corresponding zoom panels are indicated with dotted rectangles. Scale bars, 30 μm.
 
 Intrigued by the magnitude of recoverin and rhodopsin loss and hypothesizing defects in the expression of other retinal proteins in our knockout, we comprehensively profiled the transcriptomes of knockout and control retinas at two timepoints— pre-degeneration (E18.5) and during degeneration (P4) and using RNA-sequencing. At P4, this analysis reveals 2976 differentially expressed genes in NMNAT1 knockout retinas (Figure 3—figure supplement 2B), several of which we validated using RT-qPCR (Figure 3—figure supplement 1J). Consistent with the lack of recoverin and rhodopsin staining at this age, gene set enrichment analysis (GSEA) of P4 differentially expressed genes (DEGs) reveals several large, highly-overrepresented clusters of downregulated photoreceptor-related genes including both recoverin and rhodopsin (Figure 3—figure supplement 2C). Strikingly, among 815 DEGs in E18.5 knockout retinas, a similar cluster of downregulated genes associated with visual perception and the photoreceptor outer segment was observed (Figure 3—figure supplement 3B,C). Combining both RNA-sequencing datasets reveals a group of 365 DEGs in knockout retinas common to both timepoints (Figure 3L). Importantly, GSEA on this gene set reveals highly overrepresented clusters of photoreceptor and synapse associated genes (Figure 3M), and further analysis identifies a core set of 21 photoreceptor-associated genes which are significantly downregulated in E18.5 and P4 NMNAT1 knockout retinas (Figure 3N and O). Notably, this set includes rod-specific (e.g. Gngt1), cone-specific (e.g. Opn1sw, Cnga3) and photoreceptor-specific (e.g. Prph2, Rcvrn, Aipl1) genes of diverse function, many of which have important roles in photoreceptor development and function. Consistent with a specific transcriptional effect on photoreceptors, we confirmed that expression of several well-known ganglion cell, amacrine/horizontal cell, and bipolar cell-specific genes was largely unchanged in NMNAT1 knockout retinas at either tested age (Figure 3—figure supplement 4).
 
@@ -56,9 +96,21 @@ Due to the extent of photoreceptor-specific transcript and protein alterations i
 
 Beyond affecting photoreceptor-specific gene expression, we also note downregulation of 6 synapse-associated genes (Stx3, Syngr1, Cln3, Scamp5, and Sv2b) in both E18.5 and P4 knockout retinas (Figure 3—figure supplement 5C,D), consistent with disruptions to outer plexiform layer formation in P4 knockout retinas on histology and on staining with the synapse marker synaptophysin (anti-SYPH) (Figure 3—figure supplement 5).
 
-## Loss of NMNAT1 during retinal development triggers multiple cell death pathways
+### Loss of NMNAT1 during retinal development triggers multiple cell death pathways
 
 As NMNAT1 deficiency drastically impairs the postnatal survival of photoreceptor, bipolar, horizontal, and amacrine retinal neurons, we sought to determine the mechanisms by which these cells degenerate. To this aim, we began by staining retinal sections with an antibody against activated caspase-3 (AC3). While P0 knockout retinas show little AC3 staining compared to controls—consistent with grossly normal retinal morphology at this age—P4 knockout retinas show robust AC3 immunoreactivity in the inner and outer nuclear layers (Figure 4A–D). As expected, most AC3-immunoreactive (AC3+) cells display nuclear chromatin condensation (‘pyknosis’) characteristic of dying cells; however, staining also revealed a population of pyknotic nuclei not immunoreactive to AC3 (AC3-) (Figure 4A’–D’, arrows). Interestingly, these pyknotic, AC3- nuclei were sparsely present in P0 and P4 control retinas (Figure 4A and C) and to a larger extent in P0 and P4 knockout retinas (Figure 4B and D). Quantification (Figure 4E) reveals a general trend of cell death consistent with our histology and cell-marker investigations: nuclear pyknosis is slightly elevated in P0 knockout retinas compared to controls, peaks at P4 where we observe robust retinal degeneration, and is virtually absent by P10, by which time the majority of outer and inner nuclei in the knockout are lost (Figure 1F). Interestingly, we observe roughly equal amounts of AC3+ and AC3- pyknotic cells in P0 knockout retinas, whereas by P4 AC3- pyknotic cells constitute ~30% of pyknotic cells in knockout retinas (Figure 4E). In addition to being present at all tested ages and following the same general trend as AC3+ pyknotic cells, AC3- pyknotic cells often appear in distinct clusters (Figure 4D'), distinguishable from the more evenly dispersed AC3+ pyknotic cells. These results suggest the activation of at least two distinct cell death pathways in NMNAT1 knockout retinas between P0 and P4.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Representative retinal sections from knockout (-/-) and floxed littermate control (+/+) mice at the indicated ages labelled with an antibody against active Caspase-3 (AC3). Corresponding zoom panels are indicated with dotted rectangles. Arrows denote pyknotic, AC3-negative nuclei. (E) Quantification of pyknotic nuclei in sections from knockout and control mice at the indicated ages, grouped by presence (AC3+) or absence (AC3-) of active Caspase-3 labeling. Relative expression of several apoptotic (F), pyroptotic (G), and necroptotic (H) genes in P4 knockout retinas as assessed by RNA-sequencing. (I) Relative expression of Sarm1 in P4 knockout and control retinas as assessed by RNA-sequencing. (J) Relative abundance of cyclic-ADP-ribose (cADPR) in P4 knockout and control retinas as measured by mass spectrometry (grey bars represent means). Data are represented as mean ± SD. Significance determined using unpaired t-tests for (E) and (J) or DESeq2 for (F–I) (see Materials and methods). n = 3 biological replicates per condition for (A–E), n = 5 biological replicates for (F–I), n = 6 biological replicates (one outlier removed) for (J). Scale bars, 30 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Relative expression of several apoptotic (A), pyroptotic (B), and necroptotic (C) genes in E18.5 knockout retinas as assessed by RNA-sequencing. (D) Relative expression of Sarm1 in E18.5 knockout and control retinas as assessed by RNA-sequencing. (E) relative abundance of cyclic-ADP-ribose (cADPR) in E18.5 knockout and control retinas as measured by mass spectrometry (grey bars represent means). (F) Western blot of retinal lysate from P4 knockout and control retinas stained with an antibody against gasdermin D (GSDMD) and tubulin loading control. Data are represented as mean ± SD. n = 5 biological replicates for (A–D), n = 3 biological replicates for (E). Significance determined using DeSeq2 (see Materials and methods) (A–D) or Student’s t-test (E).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Heatmaps depicting log-scaled expression (relative to average of control samples) of genes related to apoptosis (A,B), necroptosis (C), ferroptosis (D), and pyroptosis (E) in P4 knockout and control retina as assessed by RNA-sequencing. Asterisks depict statistical significance as determined using DESeq2 (see Materials and methods). n = 5 biological replicates.
 
 To more comprehensively characterize NMNAT1-associated cell death and identify possible caspase 3-independent cell death pathways in our knockout, we leveraged the E18.5 and P4 RNA-sequencing datasets mentioned above. This allowed us to systematically assay the expression of a collection of genes associated with several major cell death pathways (Figure 4—figure supplement 2). Consistent with AC3 staining, we observe deregulation of a collection of apoptosis-related genes in P4 knockout retina, including significant increases in Noxa and Fas, two pro-apoptotic genes previously associated with cell death in NMNAT1-deficient retinas (Kuribayashi et al., 2018; Figure 4F). Notably, two of these genes—Noxa and Chop—are also significantly deregulated at E18.5, prior to significant retinal degeneration (Figure 4—figure supplement 1A).
 
@@ -66,19 +118,31 @@ In addition to transcriptional signatures of apoptosis, we identified upregulati
 
 Recently, photoreceptor cell death in a postnatally induced global NMNAT1 knockout mouse was shown to depend heavily on the activity of the pro-degenerative axonal protein SARM1 (Sasaki et al., 2020b). Reasoning SARM1 as the culprit behind the caspase 3-independent cell death in our model, we checked Sarm1 expression in our RNA-seq data and assayed SARM1 activity by measuring levels of its catalytic product cyclic ADP-ribose (cADPR) using targeted mass spectrometry in P4 and E18.5 NMNAT1 knockout and control retinas. Surprisingly, we found no significant changes in SARM1 expression (Figure 4I, Figure 4—figure supplement 1D) or activity (Figure 4J, Figure 4—figure supplement 1E) at either tested age. Overall, these data reveal that activation of multiple cell death pathways underlies the early and severe degeneration observed in NMNAT1 knockout retinas, and suggest pyroptosis, necroptosis and apoptosis as potential drivers of this degeneration.
 
-## Global metabolic alterations in NMNAT1-deficient retinas
+### Global metabolic alterations in NMNAT1-deficient retinas
 
 To identify possible mechanisms for the severe and cell-type-specific retinal degeneration in our model, we next sought to characterize global metabolic consequences of embryonic NMNAT1 deletion in the retina. To this end, we used targeted liquid chromatography-tandem mass spectrometry (LC-MS/MS) to quantify levels of ~112 cellular metabolites spanning many essential biochemical pathways in NMNAT1 knockout and control retinas at pre- and post-degenerative timepoints matching that of our RNA-sequencing analyses (E18.5 and P4). While LC-MS/MS analysis revealed no significant changes in E18.5 knockout retinas compared to controls, analysis at P4 revealed significantly altered levels of 39 metabolites in knockout retinas (Figure 5, Figure 5—figure supplement 1). Metabolite set enrichment analysis (MSEA) of altered metabolites identifies potential disruption of several diverse biochemical pathways including amino acid metabolism, glycolysis/gluconeogenesis, nicotinate and nicotinamide metabolism, and purine metabolism (Figure 5B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic illustrating metabolomics experimental approach. (B) Results of metabolite set enrichment analysis (MSEA) on significantly changed metabolites in P4 knockout retinas. (C) Relative abundance of NAD+ pathway metabolites in P4 knockout retinas as assessed by mass spectrometry. (D) Schematic illustrating the major mammalian NAD+ synthesis pathways colored according to metabolite changes in (C); NMNAT1-catalyzed steps are indicated with asterisks. (E) Relative abundance of glycolysis, TCA cycle, and creatine metabolites in P4 knockout retinas as assessed by mass spectrometry. (F) Schematic depicting abbreviated glycolysis/TCA cycle pathway colored according to metabolite changes in (E); aldolase-catalyzed step is indicated by a single asterisk, while GAPDH-catalyzed step is marked with a double asterisk. (G) Heatmap of log-transformed relative expression of a set of glycolysis/TCA cycle genes in P4 knockout (-/-) and control retinas (+/+) as assessed by RNA-sequencing. (H) Relative abundance of pentose-phosphate pathway (PPP) metabolites in P4 knockout retinas as assessed by mass spectrometry. Data are represented as mean ± SD. n = 6 biological replicates for (B,C,E,H), n = 5 biological replicates for (G). Statistical significance in panels (C), (E), and (H) is denoted according to the boxed legend.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Relative abundance of indicated carnitine species in P4 knockout retinas as assessed by mass spectrometry. (B) Relative expression of Aldh8a1 and Ogdhl in E18.5 knockout retinas as measured by RNA-sequencing. Principal component analysis (PCA) of E18.5 (C) and P4 (D) metabolomics data reveals expected clustering by genotype. Data are represented as mean ± SD. n = 6 biological replicates for (A), n = 5 biological replicates for (B).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/71185/elife-71185-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Relative abundance of indicated nucleotide metabolites in P4 knockout retinas as assessed by mass spectrometry. (B) Relative abundance of indicated amino acid metabolites in P4 knockout retinas as assessed by mass spectrometry. Data are represented as mean ± SD. n = 6 biological replicates.
+
 NMNAT1 knockout retinas show specific metabolic disruptions to NAD+ biosynthesis pathways. At P4, knockouts show a ~40% reduction of total retinal NAD+ levels and levels of nicotinic acid adenine dinucleotide (NaAD), the other catalytic product of NMNAT1 (Figure 5C and D). Levels of the downstream metabolites NADP and nicotinamide (NAM) were decreased by ~25% and ~55%, respectively, while levels of NADH were slightly decreased (p > 0.05) (Figure 5C). As expected, we observed significant accumulation of NAD+ precursors nicotinamide riboside (NR) and nicotinamide mononucleotide (NMN) in P4 knockout retinas (Figure 5C); however, we observed no significant changes in levels of tryptophan, the starting point for de novo NAD+ synthesis, at this age (Figure 5C and D).
 
-## Retinal NMNAT1 loss causes disruption of central carbon metabolism
+### Retinal NMNAT1 loss causes disruption of central carbon metabolism
 
 Interestingly, the set of significantly altered metabolites in P4 knockout retinas is enriched for metabolites associated with glycolysis, gluconeogenesis, and the Warburg effect (Figure 5B). Closer examination of these pathways reveals large relative increases in levels of the upstream glycolytic metabolites glucose, glucose 6-phosphate (G6P) and fructose 1,6-bisphosphate (F16BP), as well as significant decreases in levels of dihydroxyacetone phosphate (DHAP) and glucose 3-phosphate (G3P) (Figure 5E and F), strongly suggesting a disruption to glucose utilization. Consistent with such an effect, levels of the TCA cycle intermediates alpha-ketoglutarate (a-KG) and succinate are decreased by ~30% in P4 knockout retinas (Figure 5E and F). Further in line with disruptions to downstream mitochondrial metabolism, we observe reduction of several acylcarnitine species at this age as well (Figure 5—figure supplement 1A). Although we observe decreased levels of the ATP-recycling metabolites phosphocreatine and creatine at P4, retinal ATP levels at this age are slightly but not significantly reduced (p = 0.5) (Figure 5E).
 
 To further investigate possible glycolytic disruptions in P4 knockout retinas, we assayed the expression of a collection of glycolysis and TCA cycle enzymes in P4 knockout and control retinas using our RNA-sequencing dataset. Indeed, this analysis reveals broad transcriptional changes in 16 glycolytic and 4 TCA cycle enzymes in P4 knockout retinas (Figure 5G). Notably, two of these changes—upregulation of the aldehyde dehydrogenase Aldh8a1 and downregulation of the TCA cycle enzyme Ogdhl—are also present in RNA-sequencing results from the pre-degenerative (E18.5) timepoint (Figure 5—figure supplement 1B). Finally, consistent with disruption of glycolytic flux and reduced NADP levels in knockout retinas, mass spectrometry suggests possible disruption of the pentose phosphate pathway (PPP) evidenced by decreased levels of erythritol at this age (Figure 5H).
 
-## NMNAT1 loss disrupts retinal purine metabolism and a subset of amino acids
+### NMNAT1 loss disrupts retinal purine metabolism and a subset of amino acids
 
 As MSEA also indicated possible disruptions of purine metabolism and several amino acid pathways in P4 NMNAT1 knockout retinas (Figure 5B), we closely examined levels of a collection of metabolites representing most major nucleotide and amino acid metabolites in P4 knockout and control retinas (Figure 5—figure supplement 2). Interestingly, while levels of the pyrimidine nucleotide derivatives uracil, UDP, and cytidine were unchanged at this age, levels of the purine nucleotide precursor xanthine, guanine, and GMP were increased by ~150%, ~147%, and ~58%, respectively (Figure 5—figure supplement 2A). The sole affected pyrimidine nucleotide was cytosine, which showed an impressive ~352% increase in P4 knockout retinas as compared to controls (Figure 5—figure supplement 2A). In addition to defects in purine metabolism, we observe significant changes in a subset of 10 amino acids and amino acid derivatives in P4 knockout retinas including acetyl-asparagine and acetyl-lysine (Figure 5—figure supplement 2B).
 
@@ -86,7 +150,7 @@ Overall, these metabolomics results suggest specific disruptions to central carb
 
 ## Discussion
 
-## NMNAT1-deficiency is associated with early and severe retinal degeneration involving multiple cell types
+### NMNAT1-deficiency is associated with early and severe retinal degeneration involving multiple cell types
 
 In this study, we demonstrate that retinal NMNAT1 deficiency in mice leads to severe degeneration of photoreceptor, bipolar, horizontal, and amacrine neurons soon after birth. In general, this phenotype is consistent with several recent studies reporting partial or complete ablation of retinal NMNAT1, which report gross retinal degeneration beginning within the first postnatal week and largely complete by one month of age (Wang et al., 2017; Eblimit et al., 2018). While the present study describes a relatively rapid timeline of NMNAT1-associated retinal degeneration, it furthers the characterization of this phenotype in two important ways: first, by assessing the survival of specific retinal neuron subtypes, and second, by systematically examining retinal cell death pathways triggered by NMNAT1 deletion.
 
@@ -94,7 +158,7 @@ Examination of specific cell types in NMNAT1 knockout retinas reveals that, whil
 
 While we were unable to successfully determine retinal NMNAT1 distribution using our polyclonal NMNAT1 antibody, previously published results showing RT-qPCR of Nmnat levels in flow-sorted rod photoreceptors suggest that NMNAT1 is the predominantly expressed NMNAT enzyme in rod photoreceptors (Kuribayashi et al., 2018). Combined with our data confirming a lack of transcriptional upregulation of Nmnat2 or Nmnat3 in NMNAT1 knockout retinas (Figure 3—figure supplement 1), one possible explanation for the cell-type-specific degeneration we observe is that relatively higher levels of NMNAT2/3 in inner retinal neurons can partially compensate for the NAD+ deficit caused by loss of NMNAT1. Recent results in a mutant NMNAT1 mouse model indicating relative depletion of NAD+ in the retina but not other tissues (Greenwald et al., 2021) are perhaps consistent with such a hypothesis. Overall, our results demonstrate that NMNAT1 deficiency during retinal development affects multiple cell types beyond photoreceptors and suggest retinal cell-type-specific requirements of NAD+ metabolism to be further investigated.
 
-## NMNAT1-deficient retinas activate multiple cell death pathways
+### NMNAT1-deficient retinas activate multiple cell death pathways
 
 Previous reports of cell death in NMNAT1-deficient retinas center on two potentially contrasting mechanisms: the aforementioned ex vivo study outlined a role for Noxa and Fas-associated, caspase-3 dependent apoptosis in NMNAT1-deficient explants (Kuribayashi et al., 2018), while a recent study found the death of mature photoreceptors after global NMNAT1 deletion to be solely dependent on the presumed non-apoptotic NADase SARM1 (Sasaki et al., 2020b). Using histological and comprehensive transcriptomic approaches, we demonstrate involvement of caspase-3 associated apoptosis in NMNAT1 knockout retinas characterized by an early and sustained upregulation of Noxa and deregulation of several other apoptosis-pathway genes. We extend these results by showing histological evidence of a distinct, caspase-3-independent cell death pathway which constitutes a significant portion of observed cell death and closely follows caspase-3-dependent apoptosis throughout the timepoints tested in our model.
 
@@ -104,7 +168,7 @@ Our transcriptomics results indicate dysregulation of several pyroptosis and nec
 
 In sum, we show that retinal NMNAT1 loss activates multiple cell death pathways, which contextualizes the degeneration of multiple cell types in our model and may explain the severity of NMNAT1-associated retinal degeneration in this study and others. Although the model presented here differs in important ways from NMNAT1-mutant LCA animal models, it does recapitulate some aspects of NMNAT1-linked LCA including particularly severe central retinal defects (Kumaran et al., 2017). As recent studies have discovered noncoding mutations, copy number variations, and exon duplications in NMNAT1 causing severe reduction of NMNAT1 expression in patients with ocular and extra-ocular pathologies (Coppieters et al., 2015; Bedoni et al., 2020), understanding the mechanisms of retinal degeneration in an NMNAT1 knockout model is of potential clinical significance.
 
-## Retinal NMNAT1 loss causes diverse metabolic disruptions
+### Retinal NMNAT1 loss causes diverse metabolic disruptions
 
 Several recent studies examine levels of select metabolites in mature NMNAT1-deficient retinas (Sasaki et al., 2020b), or more broadly examine tissue metabolomes after perturbation of the NMN-synthesizing enzyme NAMPT (Lin et al., 2016; Oakey et al., 2018; Lundt et al., 2021), but to date there have been no comprehensive metabolomic studies on NMNAT1-deficient tissues. Our metabolomics results approximate that NMNAT1 synthesizes ~40% of the total retinal NAD+ pool, which is generally consistent with a previous model (Sasaki et al., 2020b). In addition, our results strongly suggest that—via specific disruptions to central carbon, nucleotide, and amino acid metabolism—depletion of NAD+ synthesized in the nucleus disrupts multiple non-nuclear metabolic pathways in the retina. Whether these observations reflect a direct export of nuclear NAD+ to cytosolic and mitochondrial retinal compartments versus an indirect effect on cytosolic and mitochondrial cellular processes (by way of NAD+-dependent gene regulation, for instance) is a topic for further study.
 
@@ -114,7 +178,7 @@ Retinal neurons—and retinal photoreceptors in particular—are relatively uniq
 
 In addition to glycolytic impairment, we detect specific defects in purine nucleotide and amino acid metabolic pathways in NMNAT1 knockout retinas. As a particularly proliferative tissue, the retina is thought to be highly reliant on adequate nucleotide and amino acid pools to support transcription and translation of cell-specific machinery (Etingof, 2001; Ng et al., 2015). Some of the metabolic changes which we observe—for instance, accumulation of the purine precursor xanthine and the amino acid aspartate—appear to be more widely associated with NAD+ insufficiency or retinal degeneration (Du et al., 2014; Lin et al., 2016; Oakey et al., 2018). On the other hand, we also identify a collection of metabolic changes in these pathways which are not reported in NAMPT-deficient retinas (Lin et al., 2016), potentially explaining differences in retinal phenotypes between these two models.
 
-## A potential role for NMNAT1 in photoreceptor terminal differentiation
+### A potential role for NMNAT1 in photoreceptor terminal differentiation
 
 The tightly coordinated and stereotypical differentiation of retinal neuron subtypes from a common progenitor pool has been extensively studied—complementing classical birth-dating studies, recent investigations have begun to explore the massive epigenetic regulation necessary for the development of the mammalian retina (Swaroop et al., 2010; Aldiri et al., 2017; Raeisossadati et al., 2021). One of the most surprising findings of the present study is an early and sustained transcriptional downregulation of a subset of photoreceptor- and synapse-specific genes in NMNAT1 knockout retinas. Beyond these transcriptional disruptions, we show near complete absence of several crucial rod and cone-specific proteins in P4 knockout retinas, as well as early and sustained mis-expression of OTX2—a crucial differentiation factor—in the absence of NMNAT1. While NMNAT1 has previously been implicated in gene regulation through direct interaction with SIRT1 and PARP1 at gene promoters (Zhang et al., 2012; Song et al., 2013) and retinal NMNAT1 knockdown was shown to influence apoptotic gene expression by potentially modulating histone acetylation (Kuribayashi et al., 2018), no in vivo role for NMNAT1 in retinal developmental gene regulation has yet been described.
 
@@ -124,48 +188,303 @@ In conclusion, this study presents a comprehensive evaluation of NMNAT1-associat
 
 ## Materials and methods
 
-## Animal model generation, husbandry, and genotyping
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Nmnat1</td>
+      <td></td>
+      <td>MGI:1913704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse, male and female)</td>
+      <td>Nmnat1fl/fl</td>
+      <td>Conforti et al., 2011</td>
+      <td></td>
+      <td>Nmnat1 gene exons 1 and 2 floxed</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse, male and female)</td>
+      <td>Six3-Cre</td>
+      <td>Christiansen et al., 2011</td>
+      <td></td>
+      <td>Expresses Cre in developing eye bud (~E12.5)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo- sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>FLAG-NMNAT1</td>
+      <td>Genscript</td>
+      <td>Cat# OMu17664D</td>
+      <td>FLAG-tagged mouse NMNAT1 construct</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>FLAG-NMNAT2</td>
+      <td>Genscript</td>
+      <td>Cat# OMu16562D</td>
+      <td>FLAG-tagged mouse NMNAT2 construct</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NMNAT1 (rabbit polyclonal)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>WB (1:1000)See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta tubulin (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# T5201,RRID: AB_609915</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# F1804,RRID: AB_262044</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BRN3A (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#: sc-8429,RRID: AB_626765</td>
+      <td>IF (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-calretinin (rabbit polyclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# AB5054RRID: AB_2068506 (discontinued)</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CHX10 (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-365519,RRID: AB_10842442</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-recoverin (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# AB5585, RRID: AB_2253622</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rhodopsin (4D2) (mouse monoclonal)</td>
+      <td>R.Molday, Univ. British Columbia</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-synaptophysin (rabbit monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# MA5-14532, RRID: AB_10983675</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-active caspase 3 (rabbit polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# AF835, RRID: AB_2243952</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-OTX2 (rabbit polyclonal)</td>
+      <td>ProteinTech</td>
+      <td>Cat# 13497–1-AP, RRID: AB_2157176</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho histone H3 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 9701, RRID: AB_331535</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phosducin (sheep polyclonal)</td>
+      <td>Sokolov et al., 2004</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-M opsin (rabbit polyclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# AB5045, RRID: AB_177456</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-calbindin (mouse monoclonal)</td>
+      <td>Swant</td>
+      <td>Cat# 300, RRID: AB_10000347</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa Fluor- 568 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11011, RRID: AB_143157</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa Fluor- 488 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11001, RRID: AB_2534069</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa Fluor 680 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-21076, RRID: AB_2535736</td>
+      <td>WB (1:50,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse DyLight 800</td>
+      <td>Invitrogen</td>
+      <td>Cat# SA5-10176, RRID: AB_2556756</td>
+      <td>WB (1:50,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fluorescein Avidin D</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# A-2001–5</td>
+      <td>IF (1:500)For visualizing biotinylated PNA stain (below)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Biotinylated peanut agglutinin (PNA)</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# B-1075–5</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4′,6-diamidino-2-phenylindole (DAPI)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# D1306, RRID: AB_2629482</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td></td>
+      <td>RRID:SCR_014583</td>
+      <td>https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bbduk</td>
+      <td></td>
+      <td>RRID:SCR_016969</td>
+      <td>http://sourceforge.net/projects/bbmap/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISAT2 2.1.0</td>
+      <td>Kim et al., 2015</td>
+      <td>RRID:SCR_015530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StringTie 1.3.6</td>
+      <td>Pertea et al., 2015; Pertea et al., 2016</td>
+      <td>RRID:SCR_016323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeSeq2 R Package</td>
+      <td>Love et al., 2014</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal model generation, husbandry, and genotyping
 
 Nmnat1fl/fl mice described previously (Conforti et al., 2011) were thoroughly backcrossed with wild-type 129/SV-E mice (Charles River Laboratories, Wilmington, MA) prior to analyses. Conditional knockout mice were generated by crossing Nmnat1fl/fl mice with transgenic mice expressing Cre recombinase under a Six3 promoter (Six3-Cre) (Christiansen et al., 2011). Crosses yielded heterozygous Nmnatfl/wt and Nmnatfl/wt;Six3-Cre offspring, which were further crossed with Nmnat1fl/fl mice to yield conditional knockout (Nmnatfl/fl;Six3-Cre) and littermate control (Nmnat1fl/fl) mice at approximately Mendelian ratios. Experimental animals were periodically backcrossed with wild-type 129/SV-E mice to maintain genetic integrity. Animals were maintained under standard 12 hr light/dark cycles with food and water provided ad libitum. All experimental procedures involving animals were approved by the Institutional Animal Care and Use Committee (IACUC) of West Virginia University.
 
 Animals were genotyped using polymerase chain reaction (PCR) of genomic DNA from ear punch biopsies. Primer sequences for detection of Six3-Cre transgene and Nmnat1 5’ and 3’ loxP sites are listed in the Key Resources Table, and primers were added to the PCR reaction at a final concentration of 0.75 µM. The thermocycling conditions were 95 °C for 2 min, 35 cycles of 95 °C for 30 s, 58 °C for 30 s, 72 °C for 45 s, and a final extension step of 72 °C for 5 min.
 
-## NMNAT1 antibody generation
+### NMNAT1 antibody generation
 
 A rabbit polyclonal antibody against amino acids 111–133 of mouse NMNAT1 (sequence CSYPQSSPALEKPGRKRKWADQK) was generated by Pacific Immunology Corp. (Pacific Immunology, Ramona, CA). The affinity-purified antibody was confirmed to recognize NMNAT1 in cell culture and retinal lysate (Figure 1—figure supplement 1), and did not recognize overexpressed FLAG-NMNAT2 (data not shown).
 
-## Mammalian cell culture and transfection
+### Mammalian cell culture and transfection
 
 HEK293T cells were maintained in 1:1 DMEM/F-12 culture media (Thermo Fisher Scientific, Waltham, MA) in a sterile incubator at 37 °C and 5% CO2. Transient transfection of FLAG-NMNAT1 and FLAG-NMNAT2 constructs was performed at ~60% confluence using TransIT-LT1 transfection reagent (Mirus Bio, Madison, WI) according to manufacturer’s instructions. Cells were harvested 48 hr after transfection on ice with 1X Hank’s balanced salt solution (HBSS) (Thermo Fisher Scientific) and cell pellets were processed for western blotting as described below. As these cells were used only briefly for antibody validation purposes, we were unable to authenticate the identity of these cells.
 
-## Retinal histology and thickness quantification
+### Retinal histology and thickness quantification
 
 To evaluate gross retinal histology, mice at the indicated ages were sacrificed and their eyes were gently removed into 1 ml Excalibur’s Alcoholic z-fix (Excalibur Pathology Inc, Norman, OK). Subsequent fixation, paraffin embedding, sectioning, and hematoxylin and eosin (H&E) staining were performed by Excalibur Pathology. H&E-stained sections were imaged on a Nikon Eclipse Ti microscope with DS-Ri2 camera (Nikon Instruments, Melville, NY). Retinal thickness was measured using Nikon NIS-Elements software at four equidistant points along the outer retinal edge to either side of the optic nerve, where retinal thickness is defined as the length of a line orthogonal to the outer retinal edge and terminating at the inner retinal edge. Thickness was quantified using six technical replicates per animal and three biological replicates per genotype.
 
-## Western blotting
+### Western blotting
 
 For determination of protein levels by western blot, retinas were homogenized in cold lysis buffer (1 X phosphate-buffered saline pH 7.4 (Thermo Fisher Scientific), Pierce protease inhibitor, EDTA-free (Thermo), Calbiochem phosphatase inhibitor cocktail (EMD Biosciences, La Jolla, CA)) using a Microson ultrasonic cell disruptor. Protein concentration was determined using a Nanodrop ND-1000 spectrophotometer (Thermo Fisher Scientific), after which Laemmli sample buffer was added to a final concentration of 1X (2% SDS, 0.05 M Tris-HCl pH 6.8, 10% glycerol, 1%beta-mercaptoethanol, 2 mM dithiothreitol (DTT), 0.001% bromphenol blue) and samples were boiled for 5 min. Equal amounts of protein were separated on anykD mini-PROTEAN TGX polyacrylamide gels (Bio-Rad, Hercules, CA) and transferred to an Immobilon-FL PVDF membrane (Millipore, Burlington, MA). Membranes were blocked with Odyssey blocking buffer (LI-COR Biosciences, Lincoln, NE) for 1 hr at room temperature and incubated with primary antibodies diluted in 50/50 blocking buffer/1 X PBST (1 X PBS + 0.1% Tween-20) at 4 °C overnight on a bidirectional rotator. A list of primary antibodies, sources, and dilutions can be found in the Key Resources Table. Following primary antibody incubations, membranes were washed in 1 X PBST and incubated with goat anti-rabbit Alexa Fluor 680 and/or goat anti-mouse DyLight 800 secondary antibodies (Thermo Fisher Scientific) for 1 hr at room temperature. Membranes were subsequently washed in 1 X PBST and imaged using an Odyssey Infrared Imaging System (LI-COR Biosciences).
 
-## Quantitative reverse transcriptase-PCR (RT-qPCR)
+### Quantitative reverse transcriptase-PCR (RT-qPCR)
 
 To determine relative gene expression using RT-qPCR, retinas were collected and total RNA was isolated as described below. cDNA was synthesized with a RevertAid cDNA Synthesis Kit (Thermo Fisher Scientific) per manufacturer instructions, starting with 1 µg total RNA/sample and using random hexamer primers. Primers for targets of interest were designed using NCBI Primer-BLAST (https://www.ncbi.nlm.nih.gov/tools/primer-blast/) to straddle at least one intron of length >500 bp. qPCR reactions were performed using Brilliant II SYBR Green qPCR master mix with low ROX (Agilent Technologies, Cedar Creek, TX) and monitored on a Stratagene Mx3000P cycler (Agilent Technologies). Prior to use, primers were validated (by examining melt curves and agarose gel electrophoresis) to amplify single products of expected size. Three technical replicates per target per animal were performed, and averages from three animals per genotype are reported. All expression values were normalized to the geometric average of three housekeeping genes (Hmbs, Ppia, and Ywhaz). Primer sequences are included in Supplementary file 1.
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 After euthanasia, eyes were gently removed, punctured, and immersed in 4% paraformaldehyde fixative (4% paraformaldehyde in 1 X PBS) (Electron Microscopy Sciences, Hatfield, PA) for 15 min, after which the cornea was removed and the eye was fixed for an additional 45 min at room temperature with gentle agitation. Subsequently, eyes were washed in 1 X PBS and incubated in a dehydration solution (20% sucrose in 1 X PBS) for at least 12 hr at 4 °C. After dehydration, samples were incubated in a 1:1 mixture of 20% sucrose and Tissue-Tek O.C.T. compound (Sakura Finetek, Torrance, CA) for at least 1 hr before being transferred to 100% O.C.T. and flash frozen. 16 µm sections were cut using a Leica CM1850 cryostat (Leica Biosystems, Nussloch, Germany) and mounted on Superfrost Plus slides (Fisher Scientific). For immunofluorescent staining, retinal sections were briefly rinsed with 1 X PBS and incubated in blocking buffer (10% normal goat serum, 0.5% Triton X-100, 0.05% sodium azide in 1 X PBS) for 1 hr at room temperature. Following blocking, sections were incubated with the indicated primary antibodies (diluted in buffer containing 5% normal goat serum, 0.5% Triton X-100, 0.05% sodium azide in 1 X PBS) overnight at 4 °C. The next day, sections were washed with 1 X PBST and incubated with DAPI nuclear stain (Thermo Fisher Scientific), goat anti-rabbit Alexa Fluor-568 and/or goat anti-mouse Alexa Fluor-488 (Thermo Fisher Scientific) secondary antibodies for 1 hr at room temperature. For antibody information and dilutions, see the Key Resources Table. Finally, sections were washed, cover-slipped with Prolong Gold antifade reagent (Thermo Fisher Scientific), and imaged on a Nikon Eclipse Ti laser scanning confocal microscope with C2 camera (Nikon Instruments). Experimental and control sections were imaged using identical laser intensity and exposure settings. All fluorescent images represent maximum intensity z-projections generated using ImageJ with the Bio-Formats plugin (https://imagej.net/Bio-Formats).
 
-## Retinal cell type and caspase-positive cell quantification
+### Retinal cell type and caspase-positive cell quantification
 
 To estimate numbers of pyknotic and caspase-3 positive/negative cells in retinas of knockout and control mice, pyknotic nuclei were manually counted in 212.27 × 212.27 µm2 regions of maximum intensity projection fluorescent images from the central retina. Once these pyknotic nuclei were identified, the number also labeled with active-Caspase-3 were manually counted. Counts from two technical replicates per animal were averaged, and averages from three animals per genotype are reported. Counts of retinal cell subtypes were estimated by manually counting marker-positive cells in 318.2 × 318.2 µm2 regions of central retina, averaged between two technical replicates per animal and three animals per genotype. All counts were obtained using ImageJ. For antibody information, refer to the Key Resources Table.
 
-## Retinal RNA extraction, sequencing, and analysis
+### Retinal RNA extraction, sequencing, and analysis
 
 Following euthanasia and eye enucleation, retinae were quickly dissected and transferred into ultra-sterile microcentrifuge tubes containing a small amount of Trizol reagent (Thermo Fisher Scientific), and flash frozen on dry ice. Total RNA was extracted by homogenizing thawed samples with a handheld homogenizer and incubating for 5 min at room temperature. 20 µl chloroform was added to each sample, samples were briefly vortexed, incubated at room temperature for 4 min, and spun at 12,000 rpm for 10 min at 4 °C. The aqueous layers were removed to separate tubes containing 50 µl isopropanol and incubated at room temperature for 10 min with occasional agitation. Finally, samples were again spun at 12,000 rpm for 10 min at 4 °C, supernatants were removed, and pellets were washed three times with 75% ethanol, dried, and resuspended in DEPC-treated water. Whole-transcriptome sequencing was performed by Macrogen Corp. (Macrogen USA, Rockville, MD) using an Illumina TruSeq Stranded mRNA Library Prep Kit on a NovaSeq6000 S4 to a depth of 100 M total reads per sample. Read quality was verified using FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) and adapters were trimmed using the Bbduk utility of the BBTools package (http://sourceforge.net/projects/bbmap/). Read alignment was performed using HISAT2 2.1.0 (Kim et al., 2015) and transcripts were assembled and quantified using StringTie 1.3.6 (Pertea et al., 2015; Pertea et al., 2016). Differentially expressed genes were identified using the DESeq2 R package (Love et al., 2014).
 
-## Targeted steady-state metabolomics using LC-MS/MS
+### Targeted steady-state metabolomics using LC-MS/MS
 
 Following euthanasia and eye enucleation, retinae were quickly dissected into Hank’s Balanced Salt Solution (HBSS) and flash frozen on liquid nitrogen. Metabolites were extracted according to previously described protocols (Grenell et al., 2019; Yam et al., 2019). Metabolite extracts were analyzed by a Shimadzu LC Nexera X2 UHPLC coupled with a QTRAP 5500 LC-MS/MS (AB Sciex). An ACQUITY UPLC BEH Amide analytic column (2.1 × 50 mm, 1.7 μm) (Waters Corp., Milford, MA) was used for chromatographic separation. The mobile phase was (A) water with 10 mM ammonium acetate (pH 8.9) and (B) acetonitrile/water (95/5) with 10 mM ammonium acetate (pH 8.2) (All solvents were LC–MS Optima grade from Fisher Scientific). The total run time was 11 min with a flow rate of 0.5 ml/min and an injection volume of 5 μl. The gradient elution was 95–61% B in 6 min, 61–44% B at 8 min, 61–27% B at 8.2 min, and 27–95% B at 9 min. The column was equilibrated with 95% B at the end of each run. The source and collision gas was N2. The ion source conditions in positive and negative mode were: curtain gas (CUR) = 25 psi, collision gas (CAD) = high, ion spray voltage (IS) = 3800/–3800 volts, temperature (TEM) = 500 °C, ion source gas 1 (GS1) = 50 psi, and ion source gas 2 (GS2) = 40 psi. Each metabolite was tuned with standards for optimal transitions. D4-nicotinamide (Cambridge Isotope Laboratories, Tewksbury, MA) was used as an internal standard. The extracted MRM peaks were integrated using MultiQuant 3.0.3 software (AB Sciex, Concord, ON, CA). Additional metabolite parameters are available in Supplementary file 1.
 
-## Statistical analyses
+### Statistical analyses
 
 Sample number (n) is defined as number of animals per genotype. Specific statistical tests and sample sizes are indicated in figure legends and/or in the Transparent Reporting Form. Where applicable, p-value adjustments for multiple comparisons were performed and indicated, and reported as ‘q’ values. Across all figures, statistical significance is defined as p < 0.05 (or q < 0.05, where applicable). Experimenters were not blinded to treatments.

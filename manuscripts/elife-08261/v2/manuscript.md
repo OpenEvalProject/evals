@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.08261.001 Whole-organism chemical screening can circumvent bottlenecks that impede drug discovery. However, in vivo screens have not attained throughput capacities possible with in vitro assays. We therefore developed a method enabling in vivo high-throughput screening (HTS) in zebrafish, termed a utomated r eporter q uantification i n v ivo (ARQiv). In this study, ARQiv was combined with robotics to fully actualize whole-organism HTS (ARQiv-HTS). In a primary screen, this platform quantified cell-specific fluorescent reporters in >500,000 transgenic zebrafish larvae to identify FDA-approved (Federal Drug Administration) drugs that increased the number of insulin-producing β cells in the pancreas. 24 drugs were confirmed as inducers of endocrine differentiation and/or stimulators of β-cell proliferation. Further, we discovered novel roles for NF-κB signaling in regulating endocrine differentiation and for serotonergic signaling in selectively stimulating β-cell proliferation. These studies demonstrate the power of ARQiv-HTS for drug discovery and provide unique insights into signaling pathways controlling β-cell mass, potential therapeutic targets for treating diabetes. DOI: http://dx.doi.org/10.7554/eLife.08261.001
+Whole-organism chemical screening can circumvent bottlenecks that impede drug discovery. However, in vivo screens have not attained throughput capacities possible with in vitro assays. We therefore developed a method enabling in vivo high-throughput screening (HTS) in zebrafish, termed automated reporter quantification in vivo (ARQiv). In this study, ARQiv was combined with robotics to fully actualize whole-organism HTS (ARQiv-HTS). In a primary screen, this platform quantified cell-specific fluorescent reporters in >500,000 transgenic zebrafish larvae to identify FDA-approved (Federal Drug Administration) drugs that increased the number of insulin-producing β cells in the pancreas. 24 drugs were confirmed as inducers of endocrine differentiation and/or stimulators of β-cell proliferation. Further, we discovered novel roles for NF-κB signaling in regulating endocrine differentiation and for serotonergic signaling in selectively stimulating β-cell proliferation. These studies demonstrate the power of ARQiv-HTS for drug discovery and provide unique insights into signaling pathways controlling β-cell mass, potential therapeutic targets for treating diabetes.
 
 ## Introduction
 
@@ -45,105 +45,544 @@ Here, we have combined ARQiv with a custom-designed robotics system to enable th
 
 ## Results
 
-## Establishing an HTS-compatible ARQiv assay
+### Establishing an HTS-compatible ARQiv assay
 
-Our first goal was to develop a HTS-compatible reporter-based assay for identifying compounds that increase pancreatic β-cell mass in vivo. Toward that end, we established a dual-reporter transgenic line,
+Our first goal was to develop a HTS-compatible reporter-based assay for identifying compounds that increase pancreatic β-cell mass in vivo. Toward that end, we established a dual-reporter transgenic line, Tg(ins:PhiYFP-2a-nsfB, sst2:tagRFP)lmc01 (β/δ-reporter) in which the insulin (ins) promoter drives expression of a yellow fluorescent protein (PhiYFP) in β cells, and the somatostatin 2 (sst2) promoter drives a red fluorescent protein (TagRFP) in adjacent δ cells (Figure 1A,B; (Walker et al., 2012). We reasoned that the β/δ-reporter line would allow us to detect compounds affecting endocrine differentiation and/or proliferation of β cells or their progenitors since both would cause an increase in YFP reporter signal (Figure 1C). Expressing RFP in δ cells secondarily could facilitate identification of compounds that selectively increased β-cell mass (>YFP only) vs expansion of endocrine tissue in general (>YFP and >RFP). We tested whether a chemical inhibitor of γ-secretase (DAPT), an enzyme necessary for Notch signaling, could serve as a positive control. Prior studies had shown that inhibition of Notch signaling promoted precocious 2° islet formation and thereby increased insulin reporter activity (Parsons et al., 2009). We therefore adapted a protocol used to manually screen for precocious 2° islet formation at 5 dpf (Rovira et al., 2011) to the task of detecting increased β-cell numbers (>YFP fluorescence) via ARQiv.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig1-v2.jpg)
 
-**Figure 1.:** (A) Transgenic line used for the primary screen, Tg(ins:PhiYFP-2a-nsfB, sst2:tagRFP)lmc01 (β/δ reporter; Walker et al., 2012), the insulin promoter drives YFP-expression in β cells (yellow), the somatostatin 2 promoter drives RFP expression in neighboring δ cells (red). Photomicrograph of the anterior region of a 7 dpf larva shows YFP and RFP labeling of the principal islet (arrow). (B) Confocal z-projection of the principal islet in a β/δ-reporter fish (scale bar: 10 µM), YFP labeling β cells (yellow) and RFP labeling δ cells (red)—note, apparent ‘orange’ co-labeling is an artifact of z-projection in 2D format. (C) Illustration of two potential mechanisms by which drug exposures could lead to increased β-cell mass: (1) enhanced endocrine differentiation, indicated by secondary (2°) islet formation (left path) and (2) increased β-cell proliferation, indicated by supernumerary β cell numbers in the principal islet (right path) in the absence of effects on endocrine differentiation—that is, no effect on 2° islet formation. (D) Schematic of the ARQiv-HTS screening process: Day 0, mass breeding produced 5000–10,000 eggs per day; Day 2 (evening), JHDL compounds were serially diluted into drug plates; Day 3, the COPAS-XL (Union Biometrica) was used to dispense individual 3 dpf larvae into single wells of drug plates, and plates were then maintained under standard conditions for 4 days; Day 7, larvae were anesthetized and reporters quantified by automated reporter quantification in vivo (ARQiv). (E) β/δ-reporter larvae were exposed to 0.1% DMSO (negative control) or the γ-secretase/Notch inhibitor DAPT (positive control) at six different concentrations from 3 to 7 dpf. ARQiv was then used to measure fluorescent signals from β cells (yellow line, left y-axis) and δ cells (red line, right y-axis). The DAPT to DMSO ratio (DAPT/DMSO) was used to indicate signal strength for each fluorophore independently, as per the primary screen. The β-cell data show a non-monotonic dose response (yellow dashed line, polynomial curve fit), with maximal signal observed at 25–50 μM DAPT. The δ-cell data show a similar trend (red dashed line, polynomial curve fit), but with approximately fourfold lower signal strength due to higher autofluorescent background in the RFP emission range.DOI: http://dx.doi.org/10.7554/eLife.08261.003
+**Figure 1.:** (A) Transgenic line used for the primary screen, Tg(ins:PhiYFP-2a-nsfB, sst2:tagRFP)lmc01 (β/δ reporter; Walker et al., 2012), the insulin promoter drives YFP-expression in β cells (yellow), the somatostatin 2 promoter drives RFP expression in neighboring δ cells (red). Photomicrograph of the anterior region of a 7 dpf larva shows YFP and RFP labeling of the principal islet (arrow). (B) Confocal z-projection of the principal islet in a β/δ-reporter fish (scale bar: 10 µM), YFP labeling β cells (yellow) and RFP labeling δ cells (red)—note, apparent ‘orange’ co-labeling is an artifact of z-projection in 2D format. (C) Illustration of two potential mechanisms by which drug exposures could lead to increased β-cell mass: (1) enhanced endocrine differentiation, indicated by secondary (2°) islet formation (left path) and (2) increased β-cell proliferation, indicated by supernumerary β cell numbers in the principal islet (right path) in the absence of effects on endocrine differentiation—that is, no effect on 2° islet formation. (D) Schematic of the ARQiv-HTS screening process: Day 0, mass breeding produced 5000–10,000 eggs per day; Day 2 (evening), JHDL compounds were serially diluted into drug plates; Day 3, the COPAS-XL (Union Biometrica) was used to dispense individual 3 dpf larvae into single wells of drug plates, and plates were then maintained under standard conditions for 4 days; Day 7, larvae were anesthetized and reporters quantified by automated reporter quantification in vivo (ARQiv). (E) β/δ-reporter larvae were exposed to 0.1% DMSO (negative control) or the γ-secretase/Notch inhibitor DAPT (positive control) at six different concentrations from 3 to 7 dpf. ARQiv was then used to measure fluorescent signals from β cells (yellow line, left y-axis) and δ cells (red line, right y-axis). The DAPT to DMSO ratio (DAPT/DMSO) was used to indicate signal strength for each fluorophore independently, as per the primary screen. The β-cell data show a non-monotonic dose response (yellow dashed line, polynomial curve fit), with maximal signal observed at 25–50 μM DAPT. The δ-cell data show a similar trend (red dashed line, polynomial curve fit), but with approximately fourfold lower signal strength due to higher autofluorescent background in the RFP emission range.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Robotics-integrated ARQiv-HTS system (all units Hudson Robotics unless otherwise indicated). (1) Micro10× liquid handlers, (2) SOLO automated pipettor, (3) COPAS-XL (Complex Object Parametric Analyzer and Sorter, Union Biometrica), (4) TECAN Infinite M1000 PRO plate reader, (5) PlateCrane EX robotic arm, (6) Plate stacks (arrows), and (7) Barcode scanner (Zebra Technologies). (B) Table summarizing the function of each robotics unit. (C) Schematic of reiterative screening process, every ∼1-hr cycle 12 plates were scanned (thus, 1152 larvae): one negative control plate (0.1% DMSO), ten drug plates and one positive control plate (titration of DAPT, as per Figure 1E). In this manner, each set of ten drug plates was bounded by control plates that were used to calculate assay and compound effectiveness. On screening days, the PlateCrane EX (5) transferred plates from holding stacks (6), to an anesthetic treatment holding location (administered by Micro10×), then to the plate reader for scanning (4), and finally to return stacks (6). Real-time data analysis (MATLAB and/or R) was used to flag ‘hit call’ plates for initial visual follow-up, as described in the text.DOI: http://dx.doi.org/10.7554/eLife.08261.004
+**Figure 1—figure supplement 1.:** (A) Robotics-integrated ARQiv-HTS system (all units Hudson Robotics unless otherwise indicated). (1) Micro10× liquid handlers, (2) SOLO automated pipettor, (3) COPAS-XL (Complex Object Parametric Analyzer and Sorter, Union Biometrica), (4) TECAN Infinite M1000 PRO plate reader, (5) PlateCrane EX robotic arm, (6) Plate stacks (arrows), and (7) Barcode scanner (Zebra Technologies). (B) Table summarizing the function of each robotics unit. (C) Schematic of reiterative screening process, every ∼1-hr cycle 12 plates were scanned (thus, 1152 larvae): one negative control plate (0.1% DMSO), ten drug plates and one positive control plate (titration of DAPT, as per Figure 1E). In this manner, each set of ten drug plates was bounded by control plates that were used to calculate assay and compound effectiveness. On screening days, the PlateCrane EX (5) transferred plates from holding stacks (6), to an anesthetic treatment holding location (administered by Micro10×), then to the plate reader for scanning (4), and finally to return stacks (6). Real-time data analysis (MATLAB and/or R) was used to flag ‘hit call’ plates for initial visual follow-up, as described in the text.
 
 To determine an optimal dosage, DAPT was titrated across a twofold dilution series (from 200 µM to 6.25 µM) and used to treat β/δ-reporter larvae for 2, 3, and 4 days starting at 3 dpf. Reporter signals induced by DAPT treatment were compared to vehicle only negative controls (0.1% DMSO). This analysis determined that a 4-day exposure (3–7 dpf; Figure 1D) achieved reporter signal levels necessary for HTS. The data also validated the utility of DAPT as a positive control for inducing increased YFP signal (maximal DAPT/DMSO ratio of >5.5) and to a lesser extent for RFP (maximal DAPT/DMSO ratio of >1.25, see Figure 1E). Dose-response curves show concentration-dependent effects for both cell types, with maximal responses at 25–50 μM.
 
 To assess assay quality, establish appropriate sample sizes, and set ‘hit’ call criteria, we used statistical methods developed for HTS that account for increased signal variability attending in vivo assays (see ‘Materials and methods’, and [White et al., 2015]). To generate large data sets for this analysis, 192 individual positive (DAPT) and negative (DMSO) control assays were performed. Strictly standardized mean difference (SSMD) calculations were used to determine assay quality, set a hit call cut-off, and as a means of comparing effect size across compounds (Zhang, 2011). This analysis determined that our assay was of high enough quality to pursue HTS (robust SSMD* score of 1.67). The sample size calculation (Ellis, 2010; Grissom and Kim, 2011), using power and significance values minimizing false-call rates (99.9% and p = 0.001, respectively), determined that a sample number of 14 was sufficient to detect a 50% effect size (i.e., half as potent as the DAPT positive control). However, to account for occasional automation errors, and in keeping with 96-well plate layouts, we elected to screen 16 larvae per compound concentration. Due to greater background autofluorescence in the RFP emission range, a sample size of 16 was predicted to be insufficient for detecting a 50% effect size on δ cells. Thus, we limited the use of RFP data to a simple comparison between YFP and RFP dose-responses, rather than as a ratiometric standard. Bootstrapping (random sampling with replacement) of the positive and negative control data sets at a sample size of 16 resulted in a predicted SSMD score of 1.3 for an effect size of 50% relative to the positive control. Accordingly, we set the SSMD ‘hit’ selection cut-off at ≥1.3.
 
-## Primary screen: ARQiv assay
+### Primary screen: ARQiv assay
 
 After defining the sample size and hit criterion, we initiated a full-scale screen of the JHDL (Chong et al., 2006b, 2006c) using the ARQiv-HTS system (Figure 1—figure supplement 1A,B). The JHDL is a collection of 3348 compounds, comprised largely of drugs approved for use in humans (Shim and Liu, 2014). Screening the JHDL served three purposes: (1) tested the value of whole-organism qHTS by screening the same library as our prior manual screening effort (Rovira et al., 2011), (2) provided an enriched number of biologically active compounds with defined mechanisms of action, and (3) facilitated the identification of existing drugs as potential new treatments for diabetes. Moreover, drug repurposing has the potential to fast track delivery of new therapeutics to the clinic (Shim and Liu, 2014).
 
-Custom-designed mass breeding units were used to maximize egg production (
+Custom-designed mass breeding units were used to maximize egg production (White et al., 2015). The number of viable eggs on day 1 established the number of drugs to be tested per session. The evening of day 2, robotic plate and liquid handling systems (Hudson Robotics) were used to titrate all JHDL compounds across a twofold dilution series from 4 μM to 125 nM in 0.1% DMSO, thus, testing a total of six different concentrations (Figure 1D) per qHTS principles (Inglese et al., 2006). At a sample size of 16 per condition, this equated to each drug being arrayed across an entire 96-well plate. DAPT and DMSO control plates bracketed each subset of 10 drug plates (Figure 1—figure supplement 1C). On day 3, the COPAS-XL system (Complex Object Parametric Analyzer and Sorter, Union Biometrica) was used to automate dispensing of individual 3 dpf β/δ-reporter larvae into single wells of 96-well plates containing pre-diluted drug solutions; all plates were then incubated under standard conditions. After a 4-day treatment regimen, 7 dpf larvae were anesthetized and fluorescent reporter levels were quantified by ARQiv (Figure 1D). We developed an R script for processing and plotting ARQiv data in near real-time to flag plates containing potential hit compounds. This was done to facilitate immediate visual follow-up of larvae in potential hit plates using standard microscopy to eliminate false positives, such as increased autofluorescence due to toxicity, and as an initial assessment of effects on 2° islet formation. Three graphical outputs were plotted: (1) standard box plots, Drug over DMSO (Drug/DMSO) signal ratios to reveal dose-responses and variability, (2) SSMD hit scores, as a means of comparing effect size and to flag compounds of interest (those in which at least one concentration achieved an SSMD ≥1.3), and (3) heat maps, to guide initial visual follow-ups to assess 2° islet formation (Figure 2A–C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig2-v2.jpg)
 
-**Figure 2.:** (A–C) Example of MATLAB/R-generated real-time data plots provided for each drug plate; note, data for YFP are shown; however, plots were provided for both fluorophores. (A) Boxplots of Drug to DMSO signal ratio (Drug/DMSO) provided dose–response and variance data. (B) Strictly standardized mean difference (SSMD) scores were used to rank compounds according to relative strength; black line shows the 1.3 cut-off used to implicate compounds of interest (i.e., ‘hit calls’). (C) Heat maps facilitated same day visual evaluation of each hit call plate. (D) Screening process—drug discovery results: the numbers of compounds tested, implicated (Hits I and II), and validated (Leads I and II) are listed at each stage. In addition, hit calls that were eliminated from further analysis due to being either fluorescent (29 compounds) or toxic (19 compounds), and others which remain to be further evaluated (131 compounds), are indicated by diagonal dashed arrows. (E) Screening process—assays utilized: schematic showing primary and secondary screening processes. In keeping with the high-throughput screening (HTS) practice of confirming implicated compounds in ‘orthogonal’ assays, different transgenic reporter lines were used for the following (progressing from the top): (1) the primary screen and initial 2° islet evaluation (β/δ-reporter), (2) validating effects on endocrine differentiation (pan-endocrine GFP reporters), and (3) validating of effects on β-cell proliferation (β-cell nuclear reporters).DOI: http://dx.doi.org/10.7554/eLife.08261.005
+**Figure 2.:** (A–C) Example of MATLAB/R-generated real-time data plots provided for each drug plate; note, data for YFP are shown; however, plots were provided for both fluorophores. (A) Boxplots of Drug to DMSO signal ratio (Drug/DMSO) provided dose–response and variance data. (B) Strictly standardized mean difference (SSMD) scores were used to rank compounds according to relative strength; black line shows the 1.3 cut-off used to implicate compounds of interest (i.e., ‘hit calls’). (C) Heat maps facilitated same day visual evaluation of each hit call plate. (D) Screening process—drug discovery results: the numbers of compounds tested, implicated (Hits I and II), and validated (Leads I and II) are listed at each stage. In addition, hit calls that were eliminated from further analysis due to being either fluorescent (29 compounds) or toxic (19 compounds), and others which remain to be further evaluated (131 compounds), are indicated by diagonal dashed arrows. (E) Screening process—assays utilized: schematic showing primary and secondary screening processes. In keeping with the high-throughput screening (HTS) practice of confirming implicated compounds in ‘orthogonal’ assays, different transgenic reporter lines were used for the following (progressing from the top): (1) the primary screen and initial 2° islet evaluation (β/δ-reporter), (2) validating effects on endocrine differentiation (pan-endocrine GFP reporters), and (3) validating of effects on β-cell proliferation (β-cell nuclear reporters).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** o islet formation in live β/δ-reporter larvae after drug treatment.(A, B) Representative in vivo confocal images—brightfield and fluorescence images merged—of pancreata in β/δ-reporter larvae following treatment with 0.1% DMSO (A) or a representative Hit I drug (B, Beta-estradiol) from 3 to 7 dpf. White arrows indicate 2° islets in the tail of the pancreas. Scale bar = 25 µm. (C) Percentages of larvae having 2° islets following treatment from 3 to 7 dpf with the indicated control of Hit I compounds at optimal concentrations. n > 20. negative control: 0.1% DMSO. Positive control: RO2949097 (5 μM).DOI: http://dx.doi.org/10.7554/eLife.08261.006
+**Figure 2—figure supplement 1.:** (A, B) Representative in vivo confocal images—brightfield and fluorescence images merged—of pancreata in β/δ-reporter larvae following treatment with 0.1% DMSO (A) or a representative Hit I drug (B, Beta-estradiol) from 3 to 7 dpf. White arrows indicate 2° islets in the tail of the pancreas. Scale bar = 25 µm. (C) Percentages of larvae having 2° islets following treatment from 3 to 7 dpf with the indicated control of Hit I compounds at optimal concentrations. n > 20. negative control: 0.1% DMSO. Positive control: RO2949097 (5 μM).
 
 After screening more than 500,000 β/δ-reporter larvae, 225 compounds (6.7%) produced an SSMD ≥1.3 and were designated as ‘hit calls’ (Figure 2D). Corresponding plates underwent an initial visual assessment. 29 hit call compounds proved to be autofluorescent, another 19 negatively impacted fish viability and/or morphology. These 48 compounds were designated as false positives and eliminated from further evaluation (Figure 2D). The remaining 177 hit call plates were further examined for evidence of enhanced 2° islet formation (Parsons et al., 2009; Rovira et al., 2011). Increased 2° islet formation was observed in 23 plates (Figure 2D, ‘Hit I’ subset; Figure 2—figure supplement 1, Supplementary file 1). These 23 Hit I compounds were deemed most relevant for secondary validation assays involving a more direct test of endocrine differentiation effects, precocious 2° islet induction (Parsons et al., 2009; Rovira et al., 2011). The other 154 hit call plates displayed no preliminary evidence of enhanced 2° islet formation. To account for other mechanisms that could result in elevated insulin reporter activity, we examined a second group of 23 strongly implicated drugs (SSMD values ≥1.75, Figure 2D, ‘Hit II’ subset) for evidence of increased β-cell numbers in the absence of differentiation effects (Figure 2E; Supplementary file 1). A residual 131 compounds await further evaluation (Supplementary file 2). The majority of the 46 Hit I and Hit II compounds underwent a series of ‘validation assays’ to confirm effects on endocrine differentiation and/or β-cell proliferation. In keeping with common HTS practices, secondary assays were performed with complementary toolsets rather than the β/δ-reporter line used in the primary screen in order to independently confirm the findings of the primary screen.
 
-## Validation assay I: endocrine differentiation
+### Validation assay I: endocrine differentiation
 
 In preliminary visual evaluations to assess endocrine differentiation effects in larvae within hit call plates, considerable variability was noted. Typically, additional 2° islets were observed only in a subset of treated larvae among a given hit call condition (Figure 2—figure supplement 1C). This is likely due to the β/δ-reporter being less than ideal for detecting endocrine differentiation effects; reporters are linked to late-stage differentiation of β and δ cells, which are only just beginning to appear in 2° islets at 7 dpf (Parsons et al., 2009). The requirement of a 4-day chemical exposure to observe expression differences in the β/δ-reporter line via ARQiv reflects this issue. Conversely, we have shown that transgenic lines labeling early endocrine progenitors are useful for identifying compounds that induce endocrine differentiation as early as 5 dpf (Rovira et al., 2011). Therefore, in keeping with the practice of using ‘orthogonal’ assays to confirm the activity of compounds implicated in primary screens (Thorne et al., 2010), we tested Hit I compounds in transgenic backgrounds better suited to visualizing 2° islets. In particular, we used the pan-endocrine reporter line, Tg(neurod:EGFP)nl1 (Obholzer et al., 2008; Dalgin and Ward, 2011), to confirm the efficacy of ‘Hit I’ drugs for inducing early endocrine differentiation. In this line, GFP is expressed in nascent endocrine cells, permitting the detection of ‘precocious’ 2° islet formation at 5 dpf after 2-day drug exposures, akin to our previous manual screen (Rovira et al., 2011).
 
-A subset of Hit I compounds (20 of 23) was tested accordingly. An alternative Notch pathway inhibitor, RO4929097 (5 μM, Selleck Chemicals;
+A subset of Hit I compounds (20 of 23) was tested accordingly. An alternative Notch pathway inhibitor, RO4929097 (5 μM, Selleck Chemicals; Luistro et al., 2009), was used as the positive control. Our prior studies had shown that RO4929097 functions equivalently to DAPT for this assay (Huang et al., 2014). Transgenic larvae were treated from 3 to 5 dpf with compounds across an expanded concentration range (0.5–25 μM) to account for differences with the primary assay (e.g., transgenic line used, timing and duration of compound treatment) and/or differences between compound lots. Following treatments, larvae were fixed at 5 dpf and processed for imaging by confocal microscopy. As GFP expression is widespread throughout the endoderm in the neurod:EGFP line, pancreata of treated fish were micro-dissected. High-resolution imaging afforded an increased sensitivity in scoring the induction of 2° islets (Figure 3A,B). Of the 20 Hit I drugs tested, 11 were validated as inducers of endocrine differentiation (55%; Figure 3C, Figure 3—figure supplement 1). The confirmed hits were reclassified as the ‘Lead I’ drugs (Figure 2D; Table 1). Equivalent tests using a second pan-endocrine transgenic line, Tg(pax6b:GFP)ulg515 (Delporte et al., 2008), confirmed the same 11 drugs as leads (Figure 3—figure supplement 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig3-v2.jpg)
 
-**Figure 3.:** (A, B) Representative confocal images—brightfield and fluorescence images merged—of dissected pancreata (dashed lines) from neurod:EGFP transgenic larvae treated from 3 to 5 dpf with 0.1% DMSO (A) or a Hit I drug (B, example shown is parthenolide). Early endocrine cells are labeled with GFP (green) allowing precocious formation of 2° islets (white arrows) to be visualized following drug exposures. (C) The number of precocious 2° islets was quantified following treatment with the indicated Hit I compounds from 3 to 5 dpf. Results obtained with the optimal concentration were plotted relative to negative (0.1% DMSO) and positive controls (RO2949097, 5 μM). Of 20 Hit I compounds tested, 11 were confirmed as Lead I drugs for inducing endocrine differentiation (optimal concentrations for validated leads are shown in parentheses). Arrows indicate drugs that inhibit NF-κB signaling. Scale bar, 25 μm. Error bars, standard error. All p-values were calculated using Dunnett's test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. n = 5–10 larvae per condition, experiment was repeated 3 times per compound.DOI: http://dx.doi.org/10.7554/eLife.08261.007
+**Figure 3.:** (A, B) Representative confocal images—brightfield and fluorescence images merged—of dissected pancreata (dashed lines) from neurod:EGFP transgenic larvae treated from 3 to 5 dpf with 0.1% DMSO (A) or a Hit I drug (B, example shown is parthenolide). Early endocrine cells are labeled with GFP (green) allowing precocious formation of 2° islets (white arrows) to be visualized following drug exposures. (C) The number of precocious 2° islets was quantified following treatment with the indicated Hit I compounds from 3 to 5 dpf. Results obtained with the optimal concentration were plotted relative to negative (0.1% DMSO) and positive controls (RO2949097, 5 μM). Of 20 Hit I compounds tested, 11 were confirmed as Lead I drugs for inducing endocrine differentiation (optimal concentrations for validated leads are shown in parentheses). Arrows indicate drugs that inhibit NF-κB signaling. Scale bar, 25 μm. Error bars, standard error. All p-values were calculated using Dunnett's test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. n = 5–10 larvae per condition, experiment was repeated 3 times per compound.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** neurod reporter).Precocious 2° islet assays were performed as per Figure 3. (A–J) Representative confocal images—brightfield and fluorescence images merged—of dissected pancreata (dashed lines) from neurod:EGFP transgenic larvae treated with indicated Lead I compounds (at optimal concentrations) from 3 to 5 dpf: (A) Thioctic acid (5 μM); (B) N-acetylmuramic acid (12.5 μM); (C) Maprotiline (5 μM); (D) β-estradiol (12.5 μM); (E) Biperiden HCl (12.5 μM); (F) Benzamidine (20 μM); (G) Dexetimide (1 μM); (H) Oxacillin (5 μM); (I) Dimethindene (S, +) maleate (1 μM); (J) Methylthiouracil (12.5 μM). Secondary islets are indicated by arrows. Scale bar, 25 μm.DOI: http://dx.doi.org/10.7554/eLife.08261.008
+**Figure 3—figure supplement 1.:** Precocious 2° islet assays were performed as per Figure 3. (A–J) Representative confocal images—brightfield and fluorescence images merged—of dissected pancreata (dashed lines) from neurod:EGFP transgenic larvae treated with indicated Lead I compounds (at optimal concentrations) from 3 to 5 dpf: (A) Thioctic acid (5 μM); (B) N-acetylmuramic acid (12.5 μM); (C) Maprotiline (5 μM); (D) β-estradiol (12.5 μM); (E) Biperiden HCl (12.5 μM); (F) Benzamidine (20 μM); (G) Dexetimide (1 μM); (H) Oxacillin (5 μM); (I) Dimethindene (S, +) maleate (1 μM); (J) Methylthiouracil (12.5 μM). Secondary islets are indicated by arrows. Scale bar, 25 μm.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** pax6b reporter).Precocious 2° islet assays were performed as per Figure 3. (A–L) Representative confocal images—brightfield and fluorescence images merged—of dissected pancreata (dashed lines) from pax6b:EGFP transgenic larvae treated with indicated Lead I compounds (at optimal concentrations) from 3 to 5 dpf: (A) Thioctic acid (5 μM); (B) N-acetylmuramic acid (12.5 μM); (C) Maprotiline (5 μM); (D) β-estradiol (12.5 μM); (E) Biperiden HCl (12.5 μM); (F) Benzamidine (20 μM); (G) Dexetimide (1 μM); (H) Oxacillin (5 μM); (I) Dimethindene (S, +) maleate (1 μM); (J) Parthenolide (5 μM); (K) Methylthiouracil (12.5 μM). Secondary islets are indicated by arrows. (M) The number of precocious 2° islets was quantified following treatment with the indicated Hit I compounds from 3 to 5 dpf. Results obtained with the optimal concentration were plotted relative to negative (0.1% DMSO) and positive controls (RO2949097, 5 μM). The same 11 Lead I compounds validated with the neurod:GFP reporter line (Figure 3, Figure 3—figure supplement 1, Table 1) showed significant results—albeit producing fewer numbers of 2° islets than the neurod:EGFP line. Scale bar, 25 μm. All p-values were calculated using Dunnett's test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. n = 5–10 larvae per condition, experiment was repeated 3 times per compound.DOI: http://dx.doi.org/10.7554/eLife.08261.009
+**Figure 3—figure supplement 2.:** Precocious 2° islet assays were performed as per Figure 3. (A–L) Representative confocal images—brightfield and fluorescence images merged—of dissected pancreata (dashed lines) from pax6b:EGFP transgenic larvae treated with indicated Lead I compounds (at optimal concentrations) from 3 to 5 dpf: (A) Thioctic acid (5 μM); (B) N-acetylmuramic acid (12.5 μM); (C) Maprotiline (5 μM); (D) β-estradiol (12.5 μM); (E) Biperiden HCl (12.5 μM); (F) Benzamidine (20 μM); (G) Dexetimide (1 μM); (H) Oxacillin (5 μM); (I) Dimethindene (S, +) maleate (1 μM); (J) Parthenolide (5 μM); (K) Methylthiouracil (12.5 μM). Secondary islets are indicated by arrows. (M) The number of precocious 2° islets was quantified following treatment with the indicated Hit I compounds from 3 to 5 dpf. Results obtained with the optimal concentration were plotted relative to negative (0.1% DMSO) and positive controls (RO2949097, 5 μM). The same 11 Lead I compounds validated with the neurod:GFP reporter line (Figure 3, Figure 3—figure supplement 1, Table 1) showed significant results—albeit producing fewer numbers of 2° islets than the neurod:EGFP line. Scale bar, 25 μm. All p-values were calculated using Dunnett's test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. n = 5–10 larvae per condition, experiment was repeated 3 times per compound.
 
-## Validation assay II: quantification of β-cell number
+**Table 1.**
+ Lead I drugs: inducers of endocrine differentiation
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Drug name</th>
+      <th>&gt;2° islet #</th>
+      <th>ARQiv (µM)*</th>
+      <th>&gt;2° islet (µM)*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>N-Acetylmuramic acid</td>
+      <td>+++</td>
+      <td>0.5</td>
+      <td>12.5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Methylthiouracil</td>
+      <td>++</td>
+      <td>0.25</td>
+      <td>12.5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Dimethindene (S, +) maleate</td>
+      <td>++</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Thioctic acid</td>
+      <td>+</td>
+      <td>0.5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Biperiden HCl</td>
+      <td>+</td>
+      <td>1</td>
+      <td>12.5</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Parthenolide</td>
+      <td>+</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Maprotiline</td>
+      <td>+</td>
+      <td>0.5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Estradiol diacetate → Beta-estradiol</td>
+      <td>+</td>
+      <td>1</td>
+      <td>12.5</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Oxacillin</td>
+      <td>+</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Benzamidine</td>
+      <td>+</td>
+      <td>0.125</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Dexetimide</td>
+      <td>+</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Decitabine</td>
+      <td>−</td>
+      <td>0.5</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>N-Acetylaspartic acid</td>
+      <td>−</td>
+      <td>4</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Nevirapine</td>
+      <td>−</td>
+      <td>0.25</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Ethynodiol diacetate</td>
+      <td>−</td>
+      <td>0.25</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Vitamin K3</td>
+      <td>−</td>
+      <td>0.25</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Fosphenytoin sodium</td>
+      <td>−</td>
+      <td>0.25</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Thiram</td>
+      <td>−</td>
+      <td>0.5</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>BOC-S-acetaminomethyl-L-cysteine→N-Acetyl-L-cysteine</td>
+      <td>−</td>
+      <td>0.5</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Tretinoin</td>
+      <td>−</td>
+      <td>0.25</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Iodine</td>
+      <td>nd</td>
+      <td>0.25</td>
+      <td>nd</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Bayberry wax</td>
+      <td>nd</td>
+      <td>0.25</td>
+      <td>nd</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>1,5-Bis (succinimidooxycarbonyloxy) pentane</td>
+      <td>nd</td>
+      <td>0.5</td>
+      <td>nd</td>
+    </tr>
+  </tbody>
+</table>
+
+_The 23 Hit I drugs are listed. 20 were tested for induction of endocrine differentiation, that is, precocious 2° islet formation. Compounds are ordered according to the results of the validation screen, 11 drugs were confirmed as leads (++ = p < 0.01′; + = p < 0.05), 9 failed (−). *optimal response concentration for the ARQiv and validation screens. n/a: not applicable; nd: not determined, n = 5–10 larvae per condition, experiment repeated 3 times._
+
+### Validation assay II: quantification of β-cell number
 
 Of the original ARQiv Calls, 154 compounds showed no preliminary evidence of enhanced 2° islet formation. However, many of these drugs had high SSMD scores suggesting substantial biological significance. We hypothesized that increased β-cell mass in the principal islet would also have been reported as increased insulin reporter activity (YFP) during the primary screen. Furthermore, any increase in β-cell mass in the absence of effects on endocrine differentiation would suggest a capacity to induce β-cell proliferation (Figures 1C, 2D,E). Discovery of drugs promoting β-cell proliferation would have obvious implications for treating diabetic conditions associated with β-cell paucity.
 
-To prioritize which drugs to screen for increases in β-cell number within the principal islet, we chose a threshold SSMD score of 1.75, denoted as the Hit II subset (
+To prioritize which drugs to screen for increases in β-cell number within the principal islet, we chose a threshold SSMD score of 1.75, denoted as the Hit II subset (Figure 2D). Of 23 drugs that met this criterion, we were able to perform validation assays on 19. We also included the 9 Hit I drugs that failed to induce 2° islet formation, and two validated Hit I compounds with an SSMD >1.75; thus, a total of 30 compounds (Figure 2D). In β/δ-reporter transgenic fish, YFP is expressed in β-cell cytoplasm, making it difficult to count cell numbers accurately, (Figure 1B). To facilitate detailed quantification of β-cell numbers, we turned to a transgenic line in which GFP is expressed in β-cell nuclei, Tg(ins:hmgb1-EGFP)jh10 (Wang et al., 2011). All compounds were tested as per the treatment regimen established for Validation assay I. The data showed that 15 compounds (50%) caused a significant increase in β-cell number at the optimal tested concentration (Figure 4A). Hits confirmed for the ability to stimulate increased β-cell numbers in the absence of effects on differentiation were reclassified as ‘Lead II’ drugs (Figure 4A; Table 2).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig4-v2.jpg)
 
-**Figure 4.:** (A) Quantification of β-cell numbers following incubation of ins:hmgb1-EGFP transgenic larvae from 3 to 5 dpf in one of 30 Hit compounds, 0.1% DMSO, or the Notch inhibitor RO4929097 (5 µM). 15 compounds were confirmed as Lead II drugs for increasing β-cell numbers. Arrows indicate drugs that enhance serotonin signaling. (B, C) ARQiv screen data for paroxetine: box plots of β cells (B) and δ cells (C) suggest a β cell-specific effect—that is, a dose–response in YFP but not RFP signal (dashed line, single polynomial curve fit). (D) Numbers of δ cells (red bars) and β cells (green bars) were quantified following treatment with paroxetine, 0.1% DMSO, or RO4929097. Increased β-cell numbers were seen following paroxetine and RO4929097 treatments. However, only RO4929097 increased both β and δ cells. (E) Ratio of the number of β cells to δ cells, which confirms that the number of β cells increases following paroxetine treatment relative to δ cells, suggesting cell-type selective effects. Error bars, standard error. n = 5–10 larvae per condition, experiment was repeated 2–3 times per compound. (F–H) Representative z-projection confocal images of the principal islets in dissected pancreata (post-paraformaldehyde fixation) fromTg(ins:hmgb1-EGFP; β/δ-reporter ) triple transgenic lines treated with DMSO (F), paroxetine (G), or RO4929097 (H). Shown are EGFP+ β-cell nuclei (green) and TagRFP+ δ cells (red); note, PhiYFP in the β/δ-reporter line does not withstand fixation, allowing ‘clean’ labeling of β-cell nuclei with EGFP. In addition, apparent overlap between the β-cell and δ-cell markers (i.e., occasional ‘yellow’ cells) is an artifact of z-projection images shown in 2D format. For clarity, the inset panels show a single z-slice image of partial islet showing no co-localization of cell type specific reporters. All p-values were calculated using Dunnett's test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. N.S., non-significant. Scale bar, 10 μm.DOI: http://dx.doi.org/10.7554/eLife.08261.011
+**Figure 4.:** (A) Quantification of β-cell numbers following incubation of ins:hmgb1-EGFP transgenic larvae from 3 to 5 dpf in one of 30 Hit compounds, 0.1% DMSO, or the Notch inhibitor RO4929097 (5 µM). 15 compounds were confirmed as Lead II drugs for increasing β-cell numbers. Arrows indicate drugs that enhance serotonin signaling. (B, C) ARQiv screen data for paroxetine: box plots of β cells (B) and δ cells (C) suggest a β cell-specific effect—that is, a dose–response in YFP but not RFP signal (dashed line, single polynomial curve fit). (D) Numbers of δ cells (red bars) and β cells (green bars) were quantified following treatment with paroxetine, 0.1% DMSO, or RO4929097. Increased β-cell numbers were seen following paroxetine and RO4929097 treatments. However, only RO4929097 increased both β and δ cells. (E) Ratio of the number of β cells to δ cells, which confirms that the number of β cells increases following paroxetine treatment relative to δ cells, suggesting cell-type selective effects. Error bars, standard error. n = 5–10 larvae per condition, experiment was repeated 2–3 times per compound. (F–H) Representative z-projection confocal images of the principal islets in dissected pancreata (post-paraformaldehyde fixation) fromTg(ins:hmgb1-EGFP; β/δ-reporter ) triple transgenic lines treated with DMSO (F), paroxetine (G), or RO4929097 (H). Shown are EGFP+ β-cell nuclei (green) and TagRFP+ δ cells (red); note, PhiYFP in the β/δ-reporter line does not withstand fixation, allowing ‘clean’ labeling of β-cell nuclei with EGFP. In addition, apparent overlap between the β-cell and δ-cell markers (i.e., occasional ‘yellow’ cells) is an artifact of z-projection images shown in 2D format. For clarity, the inset panels show a single z-slice image of partial islet showing no co-localization of cell type specific reporters. All p-values were calculated using Dunnett's test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. N.S., non-significant. Scale bar, 10 μm.
 
-## Selective stimulation of β-cell proliferation
+**Table 2.**
+ Lead II drugs: increased β-cell number
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Drug name</th>
+      <th>&gt; β-cell #</th>
+      <th>ARQiv (µM)*</th>
+      <th>&gt; β-cell (µM)*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Promethazine HCl</td>
+      <td>++++</td>
+      <td>0.125</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Paroxetine HCl</td>
+      <td>++++</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Biperiden HCl</td>
+      <td>++++</td>
+      <td>1</td>
+      <td>12.5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Decitabine</td>
+      <td>++++</td>
+      <td>0.5</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Amitriptyline</td>
+      <td>++++</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>N-Acetylaspartic acid</td>
+      <td>++++</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Nevirapine</td>
+      <td>++++</td>
+      <td>0.25</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Tretinoin</td>
+      <td>++++</td>
+      <td>0.25</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Ethynodiol diacetate</td>
+      <td>+++</td>
+      <td>0.25</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Pasiniazid</td>
+      <td>++</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>NCS-382</td>
+      <td>++</td>
+      <td>0.25</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Amcinonide</td>
+      <td>+</td>
+      <td>0.25</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Thioctic acid</td>
+      <td>+</td>
+      <td>0.5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Promazine HCl</td>
+      <td>+</td>
+      <td>4</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>D-Gluconic acid calcium salt</td>
+      <td>+</td>
+      <td>2</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Benzalkonium chloride</td>
+      <td>−</td>
+      <td>2</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Chloroacetoxyquinoline</td>
+      <td>−</td>
+      <td>0.125</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Acyclovir</td>
+      <td>−</td>
+      <td>2</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Diphenhydramine</td>
+      <td>−</td>
+      <td>0.5</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Reserpine</td>
+      <td>−</td>
+      <td>2</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Resorcinol monoacetate</td>
+      <td>−</td>
+      <td>2</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Khellin</td>
+      <td>−</td>
+      <td>2</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Butenafine HCl</td>
+      <td>−</td>
+      <td>0.5</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Phenothrin</td>
+      <td>−</td>
+      <td>0.25</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Nomifensin maleate</td>
+      <td>−</td>
+      <td>2</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Ethopropazine HCl</td>
+      <td>−</td>
+      <td>1</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Fosphenytoin sodium</td>
+      <td>−</td>
+      <td>0.25</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Thiram</td>
+      <td>−</td>
+      <td>0.5</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Vitamin K3</td>
+      <td>−</td>
+      <td>0.25</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>BOC-S-acetaminomethyl-L-cysteine → N-Acetyl-L-cysteine**</td>
+      <td>−</td>
+      <td>0.5</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>RIAA 94</td>
+      <td>nd</td>
+      <td>0.5</td>
+      <td>nd</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Trientine</td>
+      <td>nd</td>
+      <td>1</td>
+      <td>nd</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Beta propiolactone</td>
+      <td>nd</td>
+      <td>2</td>
+      <td>nd</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Emodic acid</td>
+      <td>nd</td>
+      <td>0.5</td>
+      <td>nd</td>
+    </tr>
+  </tbody>
+</table>
+
+_All 23 Hit II drugs (non-shaded), as well as 2 Hit I validated compounds with high SSMD values (shaded light gray), and 9 Hit I ‘fails’ (shaded dark gray), are listed. The top 30 drugs were tested for increased β-cell numbers: 15 were validated as leads (++++ = p < 0.0001; +++ = p < 0.001; ++ = p < 0.01; + = p < 0.05), 15 failed (−). *optimal response concentration for the ARQiv and validation screens; **substituted compound due to availability issues; n/a: not applicable; nd: not determined. n = 5–10 larvae per condition, experiment repeated 2–3 times._
+
+### Selective stimulation of β-cell proliferation
 
 Of the leads that increased β-cell number, paroxetine was particularly intriguing as comparisons between β-cell and δ-cell reporter activity suggested that this drug might selectively increase β-cell numbers without affecting δ-cells, that is, potentially acting in a cell type-specific manner (Figure 4B,C). To verify that the actions of paroxetine were specific to β cells, we treated double transgenic (ins:hmgb1-EGFP; β/δ-reporter) larvae with paroxetine at the optimal concentration (1 µM) from 3 to 5 dpf and quantified β and δ cells using confocal microscopy. DMSO treated larvae had an average of 29.4 ± 1.1 β cells and 24.1 ± 1.6 δ cells. As expected, RO4929097 treatment caused a significant increase in both endocrine cell types examined (35.8 ± 1.3 β cells and 29.7 ± 1.5 δ cells; Figure 4D–H), consistent with DAPT treatment in the ARQiv assay (Figure 1E) and likely due to induced differentiation of progenitors contributing to the principal islet. Conversely, paroxetine significantly increased β-cell numbers (37.1 ± 1.4, p < 0.01) but had no effect on δ cells (23.0 ± 1.1, p = 0.57) (Figure 4D–H). This result suggests that it is possible to increase β-cell mass without incurring concomitant increases in other endocrine compartments, an important finding with respect to the development of targeted therapies.
 
-## Mechanism of action studies
+### Mechanism of action studies
 
 One of the central advantages of screening clinically approved drugs is that molecular mechanisms of action are typically well characterized. Thus, having validated several compounds for the capacity to induce endocrine differentiation (Table 1) and/or β-cell proliferation (Table 2), we next sought to investigate whether shared mechanisms of action were implicated between drugs eliciting the same effect on pancreatic biology, that is, among compounds within the Lead I or Lead II sets.
 
-## NF-κB signaling regulates endocrine differentiation
+### NF-κB signaling regulates endocrine differentiation
 
-Two of the 11 drugs in the ‘Lead I’ set, thioctic acid and parthenolide, are known inhibitors of the NF-κB signaling pathway (
+Two of the 11 drugs in the ‘Lead I’ set, thioctic acid and parthenolide, are known inhibitors of the NF-κB signaling pathway (Ying et al., 2010; Ghantous et al., 2013). This inspired us to ask whether these drugs enhance endocrine differentiation by modulating NF-κB signaling. In quiescent cells, the NF-κB complex is sequestered in the cytoplasm and associates with inhibitory IκB proteins (Schmitz et al., 2004). Activation of NF-κB signaling leads to kinase-dependent phosphorylation and degradation of IκB, allowing NF-κB to translocate to the nucleus and regulate target-gene transcription (Schmitz et al., 2004). Despite having different molecular targets, thioctic acid and parthenolide both block NF-κB nuclear translocation (Ying et al., 2010; Ghantous et al., 2013). To further validate the NF-κB pathway as a target for stimulating endocrine differentiation, we used two other compounds, not present in our chemical library, but known to inhibit NF-κB signaling at different steps in the pathway: NF-κB inhibitor II (NFκBi-II) blocks the target transcription without affecting IκB degradation (Shin et al., 2004); and NF-κB I inhibitor III (NFκBi-III) inhibits cytokine-stimulated NF-κB activation (Lee et al., 2005). Neurod:GFP larvae were used to determine effects on 2° islet appearance following incubation (3–5 dpf) with either NFκBi-II (1 µM) or NFκBi-III (10 µM). Initial working concentrations of these compounds were based on previous studies (Shin et al., 2004; Lee et al., 2005). Dosages were then decreased until concentrations that did not induce morphological defects were defined. Treated larvae showed significant increases in the 2° islet number with both NFκB inhibitors (Figure 5A–D). From this work, it is clear that targeting multiple steps in the NF-κB signaling pathway results in precocious 2° islet formation, and therefore, β-cell neogenesis. Using a previously characterized NF-κB reporter transgenic line, Tg(6xNFκB:EGFP)nc1 (Kanther et al., 2011), we confirmed that 2-day treatments (3–5 dpf) with thioctic acid, parthenolide, as well as NF-κB inhibitors II and III dramatically reduced NF-κB reporter activity in the pancreas and globally (Figure 5—figure supplement 1). We next sought to confirm that NF-κB inhibition could induce endocrine differentiation. Larvae from the pan-endocrine reporter line, neurod:EGFP (Figure 5A–C), showed a significant increase in 2° islet number when treated with either inhibitor. This result clearly demonstrates that targeting the NF-κB signaling pathway results in precocious 2° islet formation, thus, β-cell neogenesis through induction of endocrine differentiation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig5-v2.jpg)
 
-**Figure 5.:** (A, B) Representative confocal images—brightfield and fluorescence images merged—of dissected pancreata (dashed lines) from neurod:EGFP transgenic larvae treated from 3 to 5 dpf with NF-κB signaling inhibitor II (A) or III (B). Both inhibitors induced precocious secondary islet formation (white arrows). (C) Secondary islet numbers were quantified and plotted relative to vehicle control (0.1% DMSO). n = 5–10 larvae per condition, experiment was repeated 3 times. Error bar, standard error. All p-values were calculated using Dunnett's test. ****p < 0.0001. (D, D′) Representative in vivo confocal z-projection of pancreas (dashed lines) in 6xNFκB:EGFP ;Tp1:hmgb1:mCherry double transgenic larvae at 5 dpf showing co-labeling of the NF-κB reporter (green) and Notch reporter (red) in endocrine progenitor cells (arrows in D′), suggesting endocrine progenitors respond to both Notch and NF-κB signaling. Scale bars, 25 μm (D), 10 μm (D′).DOI: http://dx.doi.org/10.7554/eLife.08261.013
+**Figure 5.:** (A, B) Representative confocal images—brightfield and fluorescence images merged—of dissected pancreata (dashed lines) from neurod:EGFP transgenic larvae treated from 3 to 5 dpf with NF-κB signaling inhibitor II (A) or III (B). Both inhibitors induced precocious secondary islet formation (white arrows). (C) Secondary islet numbers were quantified and plotted relative to vehicle control (0.1% DMSO). n = 5–10 larvae per condition, experiment was repeated 3 times. Error bar, standard error. All p-values were calculated using Dunnett's test. ****p < 0.0001. (D, D′) Representative in vivo confocal z-projection of pancreas (dashed lines) in 6xNFκB:EGFP ;Tp1:hmgb1:mCherry double transgenic larvae at 5 dpf showing co-labeling of the NF-κB reporter (green) and Notch reporter (red) in endocrine progenitor cells (arrows in D′), suggesting endocrine progenitors respond to both Notch and NF-κB signaling. Scale bars, 25 μm (D), 10 μm (D′).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A–E) Confocal images of 5 dpf pancreata (dashed lines) from 6xNFκB:EGFP/Tp1:hmgb1-mCherry larvae treated with indicated compounds or DMSO control from 3dpf to 5dpf. The NF-κB reporter showed reduced fluorescence levels in the pancreas following exposure to all tested NF-κB inhibitors (A–D) compared with DMSO (E). Scale bar, 25 μm. (F) ARQiv scans were performed on individually tracked 6xNFκB:EGFP/Tp1:hmgb1-mCherry larvae prior to (3 dpf) and after compound exposures (5 dpf). All compounds induced a significant reduction of NF-κB reporter activity relative to 0.1% DMSO controls. GFP reporter expression levels were normalized to pre-treatment levels—that is, plotted as percent change in fluorescence over time (as per Walker et al., 2012)—and showed significant signal loss for all tested compounds. Error bar = standard deviation. NFκBi-II: NF-κB inhibitor II, NFκBi-III: NF-κB inhibitor III. All p-values were calculated using Dunnett's test. ***p < 0.001, ****p < 0.0001.DOI: http://dx.doi.org/10.7554/eLife.08261.014
+**Figure 5—figure supplement 1.:** (A–E) Confocal images of 5 dpf pancreata (dashed lines) from 6xNFκB:EGFP/Tp1:hmgb1-mCherry larvae treated with indicated compounds or DMSO control from 3dpf to 5dpf. The NF-κB reporter showed reduced fluorescence levels in the pancreas following exposure to all tested NF-κB inhibitors (A–D) compared with DMSO (E). Scale bar, 25 μm. (F) ARQiv scans were performed on individually tracked 6xNFκB:EGFP/Tp1:hmgb1-mCherry larvae prior to (3 dpf) and after compound exposures (5 dpf). All compounds induced a significant reduction of NF-κB reporter activity relative to 0.1% DMSO controls. GFP reporter expression levels were normalized to pre-treatment levels—that is, plotted as percent change in fluorescence over time (as per Walker et al., 2012)—and showed significant signal loss for all tested compounds. Error bar = standard deviation. NFκBi-II: NF-κB inhibitor II, NFκBi-III: NF-κB inhibitor III. All p-values were calculated using Dunnett's test. ***p < 0.001, ****p < 0.0001.
 
 Having established that NF-κB is involved in the regulation of endocrine differentiation, we sought to identify which pancreatic cell types are actively undergoing NF-κB signaling during development. To do so, pancreata from double transgenic fish carrying NF-κB and Notch pathway reporters (6xNFκB:EGFP; tp1:hmgb1-mCherry) (Parsons et al., 2009; Kanther et al., 2011) were imaged using confocal microscopy. We found that the NF-κB reporter signal (GFP) overlapped with the Notch-pathway dependent signal (mCherry) at 5 dpf (Figure 5D,D′). This indicates that NF-κB signaling is active in Notch-responsive progenitors that line the pancreatic duct, consistent with a novel role for the NF-κB pathway in endocrine differentiation. Of note, NF-κB inhibition did not appear to reduce Notch-reporter expression (Figure 5—figure supplement 1A–E), a result requiring further characterization.
 
-## Serotonergic signaling stimulates β-cell proliferation
+### Serotonergic signaling stimulates β-cell proliferation
 
 A potential shared mechanism of action among Lead II compounds was revealed by the fact that paroxetine and amitriptyline (Figure 4A, compounds 10 and 22, arrows; Table 2) are both predicted to increase serotonergic signaling (Dechant and Clissold, 1991; Boyer and Feighner, 1992) (Sangdee and Franz, 1979). Clinically, both drugs are used as antidepressants. Paroxetine is a selective serotonin reuptake inhibitor (SSRI), thereby increasing extracellular serotonin concentration. Amitriptyline inhibits reuptake of both norepinephrine and serotonin.
 
-We hypothesized that these drugs regulated β cells by mediating serotonergic signaling. To test this hypothesis, we evaluated fluoxetine, another SSRI, and serotonin itself. β cells were quantified following a 2-day exposure (3–5 dpf) to fluoxetine (25 μM) or serotonin (25 μM). Both treatments displayed a significant increase in β-cell numbers (fluoxetine, 42.6 ± 2.0; serotonin, 45.7 ± 2.5; DMSO, 33.7 ± 1.2) suggesting that elevated serotonergic signaling promotes β-cell proliferation (
+We hypothesized that these drugs regulated β cells by mediating serotonergic signaling. To test this hypothesis, we evaluated fluoxetine, another SSRI, and serotonin itself. β cells were quantified following a 2-day exposure (3–5 dpf) to fluoxetine (25 μM) or serotonin (25 μM). Both treatments displayed a significant increase in β-cell numbers (fluoxetine, 42.6 ± 2.0; serotonin, 45.7 ± 2.5; DMSO, 33.7 ± 1.2) suggesting that elevated serotonergic signaling promotes β-cell proliferation (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig6-v2.jpg)
 
-**Figure 6.:** (A) β-cell quantification following 25 μM serotonin or 25 μM fluoxetine treatment of ins:hmgb1-eGFP transgenic larvae from 3 to 5 dpf indicates enhanced serotonin signaling increases β-cell numbers in zebrafish larvae. (B) β-cell quantification in the principal islet (All) and the number of EdU-labeled β cells (EdU+) are plotted following treatments with EdU and either DMSO, 1 μM paroxetine, or 5 μM RO4929097. More β cells overall, and more EdU+ β cells, are observed with 1 μM paroxetine and 5 μM RO4929097 treatments, suggesting effects on β-cell proliferation. (C) Plot of EdU+ β cells as a percentage all β cells shows that paroxetine treatment stimulates β-cell proliferation, whereas Notch inhibition does not. Error bars, standard error. (D–F) Single-plane confocal fluorescence images of ins:hmgb1-eGFP islets (dashed lines) treated with EdU and either DMSO (D), 1 μM paroxetine (E), or 5 μM RO4929097 (F)—β cell nuclei (green); EdU+ cells (red); double-labled EdU+ β cells (yellow). Scale bar, 10 μm. n = 5–10 larvae per condition, experiment was repeated 3 times. (G, G′) Confocal images of immunostained adult zebrafish pancreas indicate that serotonin signaling is active in islets (white arrows, islets indicated by dashed lines). aTub: acetylated tubulin (red); 5HT (5-hydoxytryptamine): serotonin (green); insulin (magenta). Scale bar, 10 μm. (H, I) Confocal images of adult zebrafish pancreas following injections with EdU and either DMSO (H) or 1 mM paroxetine (I), and immunostained as indicated. (J) Plot of EdU+ β cells as a percentage all β cells shows that paroxetine treatment stimulates β-cell proliferation in adult zebrafish. Error bars, standard deviation. n = 3–5 adult fish per condition, experiment was repeated 3 times. All p-values were calculated using Dunnett's test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.DOI: http://dx.doi.org/10.7554/eLife.08261.015
+**Figure 6.:** (A) β-cell quantification following 25 μM serotonin or 25 μM fluoxetine treatment of ins:hmgb1-eGFP transgenic larvae from 3 to 5 dpf indicates enhanced serotonin signaling increases β-cell numbers in zebrafish larvae. (B) β-cell quantification in the principal islet (All) and the number of EdU-labeled β cells (EdU+) are plotted following treatments with EdU and either DMSO, 1 μM paroxetine, or 5 μM RO4929097. More β cells overall, and more EdU+ β cells, are observed with 1 μM paroxetine and 5 μM RO4929097 treatments, suggesting effects on β-cell proliferation. (C) Plot of EdU+ β cells as a percentage all β cells shows that paroxetine treatment stimulates β-cell proliferation, whereas Notch inhibition does not. Error bars, standard error. (D–F) Single-plane confocal fluorescence images of ins:hmgb1-eGFP islets (dashed lines) treated with EdU and either DMSO (D), 1 μM paroxetine (E), or 5 μM RO4929097 (F)—β cell nuclei (green); EdU+ cells (red); double-labled EdU+ β cells (yellow). Scale bar, 10 μm. n = 5–10 larvae per condition, experiment was repeated 3 times. (G, G′) Confocal images of immunostained adult zebrafish pancreas indicate that serotonin signaling is active in islets (white arrows, islets indicated by dashed lines). aTub: acetylated tubulin (red); 5HT (5-hydoxytryptamine): serotonin (green); insulin (magenta). Scale bar, 10 μm. (H, I) Confocal images of adult zebrafish pancreas following injections with EdU and either DMSO (H) or 1 mM paroxetine (I), and immunostained as indicated. (J) Plot of EdU+ β cells as a percentage all β cells shows that paroxetine treatment stimulates β-cell proliferation in adult zebrafish. Error bars, standard deviation. n = 3–5 adult fish per condition, experiment was repeated 3 times. All p-values were calculated using Dunnett's test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** Absolute glucose values in zebrafish larvae treated with selected lead compounds. For each drug, 3 treatments (20 embryos each treatment) were measured. The absolute glucose levels per embryo were calculated based on standard controls. Error bars = standard error, All p-values were calculated using Dunnett's test. *p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.08261.016
+**Figure 6—figure supplement 1.:** Absolute glucose values in zebrafish larvae treated with selected lead compounds. For each drug, 3 treatments (20 embryos each treatment) were measured. The absolute glucose levels per embryo were calculated based on standard controls. Error bars = standard error, All p-values were calculated using Dunnett's test. *p < 0.05.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/08261/elife-08261-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** Paroxetine effects on β-cell proliferation in postnatal mice assayed at postnatal day 14 (P14; A–C): EdU and DMSO (A), or EdU and 1 mM paroxetine (B), were injected into mice daily from P7 to P14. (A, B) Representative confocal images of a single islet in DMSO (A) and paroxetine (B) injected animals immunostained for Nkx6.1 (red) to mark β cells and EdU (green). (C) The number of EdU-positive β cells (arrows in A and B) plotted as the percentage of all β cells shows a significant increase in β-cell proliferation in paroxetine-injected mice. ***p < 0.0001, n = 4 animals, 150 islets (DMSO); 5 animals, 190 islets (paroxetine). (D–F) Paroxetine effects on β-cell proliferation in postnatal mice assayed at postnatal day 21 (P21); assay performed as above except that injections were performed from 7 to 21 days postnatal (P7–P21). (D, E) Representative confocal images of a single islet in DMSO (D) and paroxetine (E) injected animals. (F) Quantification of EdU-positive β cells (arrows in D and E) plotted as the percentage of all β cells, again, shows a significant increase in β-cell proliferation in paroxetine-injected mice. All p-values were calculated using 2-tailed Student T-test with 95% confidence intervals. ***p < 0.0001, n = 5 animals, 150 islets (DMSO); 7 animals, 210 islets (paroxetine). Scale bar, 25 μm.DOI: http://dx.doi.org/10.7554/eLife.08261.017
+**Figure 6—figure supplement 2.:** Paroxetine effects on β-cell proliferation in postnatal mice assayed at postnatal day 14 (P14; A–C): EdU and DMSO (A), or EdU and 1 mM paroxetine (B), were injected into mice daily from P7 to P14. (A, B) Representative confocal images of a single islet in DMSO (A) and paroxetine (B) injected animals immunostained for Nkx6.1 (red) to mark β cells and EdU (green). (C) The number of EdU-positive β cells (arrows in A and B) plotted as the percentage of all β cells shows a significant increase in β-cell proliferation in paroxetine-injected mice. ***p < 0.0001, n = 4 animals, 150 islets (DMSO); 5 animals, 190 islets (paroxetine). (D–F) Paroxetine effects on β-cell proliferation in postnatal mice assayed at postnatal day 21 (P21); assay performed as above except that injections were performed from 7 to 21 days postnatal (P7–P21). (D, E) Representative confocal images of a single islet in DMSO (D) and paroxetine (E) injected animals. (F) Quantification of EdU-positive β cells (arrows in D and E) plotted as the percentage of all β cells, again, shows a significant increase in β-cell proliferation in paroxetine-injected mice. All p-values were calculated using 2-tailed Student T-test with 95% confidence intervals. ***p < 0.0001, n = 5 animals, 150 islets (DMSO); 7 animals, 210 islets (paroxetine). Scale bar, 25 μm.
 
 To verify effects on cell division, we combined SSRI treatments with 5-ethynyl-2′-deoxyuridine (EdU), a thymidine analog that labels proliferating cells (Salic and Mitchison, 2008). We used another transgenic line labeling β-cell nuclei with GFP, Tg(ins:hmgb1-EGFP)jh10, to facilitate quantification of EdU-labeled cells. Larvae were exposed to compounds and EdU for 2 days (3–5 dpf), then fixed and sectioned for imaging. As expected, the results show increased numbers of β cells in principal islets of larvae treated with paroxetine (37.1 + 1.2) and RO4929097 (44.1 + 2.2), relative to DMSO (29.7 + 1.4; Figure 6B). Increased numbers of proliferating (EdU+) β cells were also observed for both paroxetine and RO4929097 (Figure 6B, EdU+). However, when adjusted for absolute numbers of β cells, only paroxetine-treated larvae showed a significantly higher percentage EdU+ β cells (23.7 ± 2.7%, vs 11.0 ± 1.5% and 15.6 ± 2.1% for DMSO and RO4929097, respectively; Figure 6C–F). Combined with our data suggesting paroxetine acts directly on β cells (Figure 4B–F), these results strongly suggest that enhanced serotonergic signaling promotes proliferation of β cells.
 
@@ -169,74 +608,92 @@ In summary, we present the first full-scale implementation of ARQiv-based whole-
 
 ## Materials and methods
 
-## Zebrafish transgenic lines
+### Zebrafish transgenic lines
 
 All studies were carried out in accordance with onsite ACUC protocols. All fish were maintained at 28.5°C with a consistent 14:10 hr light: dark cycle. Transgenic lines used were Tg(ins:PhiYFP-2A-nsfB, sst2:TagRFP)lmc01 (‘β/δ-reporter’; (Walker et al., 2012), Tg(pax6b:GFP)ulg515 (Delporte et al., 2008), Tg(neurod:EGFP)nl1 (Obholzer et al., 2008), Tg(6xNFκB:EGFP)nc1 (Kanther et al., 2011), Tg(ins:hmgb1-EGFP)jh10 (Parsons et al., 2009), Tg(tp1:hmgb1-mCherry)jh11 (Parsons et al., 2009).
 
-## Compound library
+### Compound library
 
 We screened the JHDL, a collection of 3348 compounds (Chong et al., 2006b; Rovira et al., 2011). The majority of the compounds in the JHDL are approved for use in humans: 2290 drugs approved for use by the FDA or international counterparts, another 775 drugs at various stages in clinical trials, and 66 rare drug compounds. In some cases, an active pharmaceutical ingredient (i.e., drug) was included in more than one formulation as a separate compound. However, these were tallied as a single drug, giving a total of 3131 drugs included in the JHDL collection.
 
-## ARQiv-HTS
+### ARQiv-HTS
 
 The salient features of the primary screen performed here are described below. Additional details of the robotics-integrated ARQiv system and the methodologies we apply in pursuing whole-organism HTS in zebrafish larvae can be found here: (White et al., 2015).
 
-## Quality control
+#### Quality control
 
-The ‘robust’ strictly standardized mean difference (SSMD*) equation was used to assess quality: Z′=1−3(σp+σn)|μp+μn|,(where μp,  μn, σp, σn are the sample mean values and sample standard deviations of the positive and negative controls, respectively). This analysis produced a score of 1.67 with log transformed data, consistent with a ‘moderate’ control of good quality, thus, an HTS-ready assay (Zhang, 2011).
+The ‘robust’ strictly standardized mean difference (SSMD*) equation was used to assess quality: 
 
-## Sample number calculation
+$$
+Z′=1−\frac{3(\sigma_{p}+\sigma_{n})}{|\mu_{p}+\mu_{n}|},
+$$
 
-Using positive (DAPT) and negative (DMSO) control data sets generated for quality control tests, we estimated a required sample size using the statistical power calculation:n=2σ2(Zβ+ Zα/2)2 (µp−µn)2 × (1.15),(where, Zα, Zβ, σ, µp, µn  represent the desired level of statistical significance, desired power, standard deviation [of control sample with greatest variance], mean of the positive control, and mean of the negative control, respectively). A power of 99.9% and p = 0.001 for type I (false negative) and type II (false positive) errors—corresponding to a Zα of 3.29 and Zβ of 3.09, respectively—was used to minimize false-call rates. This analysis determined that a sample size of 14 would be sufficient to detect a 50% effect size on β cells (YFP reporter) relative to DAPT positive controls. An R-based code we developed for plotting sample size data is provided as Source code 1.
+(where $\mu_{p}$, $ \mu_{n}$, $\sigma_{p}$, $\sigma_{n}$ are the sample mean values and sample standard deviations of the positive and negative controls, respectively). This analysis produced a score of 1.67 with log transformed data, consistent with a ‘moderate’ control of good quality, thus, an HTS-ready assay (Zhang, 2011).
 
-## Hit selection—predicted SSMD score
+#### Sample number calculation
 
-To estimate a reasonable hit call criterion, ‘virtual’ assays of the positive (DAPT) and negative (DMSO) control data sets were run. Bootstrapping with replacement was used to run a total of 10,000 computational iterations at a sample size of 16. The following equation was used to predict an SSMD hit score corresponding to a compound producing a 50% effect size relative to the positive control:SSMD= Γ(n−12)Γ(n−22)2n−1d¯isi,(where d¯i, si, are the sample mean and standard deviation of dijs—where dij is the difference between the measured value [usually on the log scale] of the i th compound and the median value of the negative control in the j th plate. Γ() is a gamma function). This analysis set an SSMD of ≥1.3 as the hit call cut-off criterion.
+Using positive (DAPT) and negative (DMSO) control data sets generated for quality control tests, we estimated a required sample size using the statistical power calculation:
 
-## Primary screen (A) drug dilutions and larval dispensing
+$$
+n=\frac{2\sigma^{2}(Z_{\beta}+ Z_{\alpha/2})^{2} }{(µ_{p}−µ_{n})^{2}} \times (1.15),
+$$
+
+(where, $Z_{\alpha}$, $Z_{\beta}$, σ, $µ_{p}$, $µ_{n} $ represent the desired level of statistical significance, desired power, standard deviation [of control sample with greatest variance], mean of the positive control, and mean of the negative control, respectively). A power of 99.9% and p = 0.001 for type I (false negative) and type II (false positive) errors—corresponding to a Zα of 3.29 and Zβ of 3.09, respectively—was used to minimize false-call rates. This analysis determined that a sample size of 14 would be sufficient to detect a 50% effect size on β cells (YFP reporter) relative to DAPT positive controls. An R-based code we developed for plotting sample size data is provided as Source code 1.
+
+#### Hit selection—predicted SSMD score
+
+To estimate a reasonable hit call criterion, ‘virtual’ assays of the positive (DAPT) and negative (DMSO) control data sets were run. Bootstrapping with replacement was used to run a total of 10,000 computational iterations at a sample size of 16. The following equation was used to predict an SSMD hit score corresponding to a compound producing a 50% effect size relative to the positive control:
+
+$$
+SSMD= \frac{Γ(\frac{n−1}{2})}{Γ(\frac{n−2}{2})}\sqrt{\frac{2}{n−1}}\frac{d¯_{i}}{s_{i}},
+$$
+
+(where $d¯_{i}$, $s_{i}$, are the sample mean and standard deviation of $d_{ij}s$—where $d_{ij}$ is the difference between the measured value [usually on the log scale] of the $i$ th compound and the median value of the negative control in the $j$ th plate. $Γ$() is a gamma function). This analysis set an SSMD of ≥1.3 as the hit call cut-off criterion.
+
+### Primary screen (A) drug dilutions and larval dispensing
 
 For the primary screen, larvae were derived from in-crosses of homozygous β/δ-reporter fish (Walker et al., 2012). The β/δ-reporter transgene labels pancreatic β cells with yellow fluorescent protein (Phi-YFP, Evrogen) and neighboring δ cells with red fluorescent protein (TagRFP, Evrogen). At the start of each screening session, customized mass fish breeding chambers were used to collect 3000 to 15,000 eggs. At 24 hr post-fertilization (24 hpf), embryos were transferred into a 0.3× Danieu's solution containing 200 nM of 1-Phenyl-2-thiourea (PTU). PTU is a tyrosinase inhibitor, which reduces pigmentation and thereby increases signal-to-noise ratios for ARQiv assays (Karlsson et al., 2001). A customized Hudson Robotics system (Figure 1—figure supplement 1) was used to dispense and serially dilute individual JHDL stock solutions 1:2 across a 96-well plate (Greiner bio-one, #650209) such that final concentrations were 4 to 0.125 µM in 0.1% DMSO (drug solvent). Positive and negative control 96-well plates were prepared such that they bracketed every 10 drug plates, to account for changes in reporter activity over time (Figure 1—figure supplement 1C). Positive control plates consisted of six concentrations of DAPT, a Notch-signaling inhibitor that enhances precocious endocrine differentiation (Parsons et al., 2009), serially diluted 1:2 with final concentrations ranging from 200 µM to 6.25 µM. Titrating DAPT in every control plate served to account for lot and/or assay variability over the course of the screen. Negative controls consisted of an entire 96-well plate of drug solvent (0.1% DMSO). After drug and control plates had been prepared, a COPAS-XL unit (Union Biometrica, Holliston, MA) (Figure 1—figure supplement 1) was used to sort 3 dpf β/δ-reporter larvae for viability and dispense them into individual wells. All plates were then incubated under standard temperature and light cycle conditions for 4 days until reporter levels were quantified at 7 dpf (Figure 1E). 15 min prior to scanning, 10 µl of 0.2% Eugenol (Sigma) in drug solvent was added to anesthetize larvae.
 
-## Primary screen (B) ARQiv scans
+### Primary screen (B) ARQiv scans
 
 Larvae expressing the β/δ-reporter were analyzed using the ARQiv system to quantify insulin and somatostatin 2 reporter levels (YFP and RFP, respectively). Assay parameters were optimized for HTS as detailed in the text. In addition, plate reader detection parameters (e.g., optimal excitation/emission settings, z-dimension ‘focus’, etc) were determined empirically using previously described methods (Walker et al., 2012). Briefly, all wells were scanned in a 3 × 3 grid, with all grid regions analyzed independently. ‘Signal’ was defined as any region producing a reading greater than or equal to three standard deviations above non-transgenic control fish averages. If more than one region produced ‘signal’, these values were summed to obtain the total signal for that well. A set ‘gain’ for the plate reader was established for all scans in order to normalize data across numerous days/scans.
 
-## Real-time HTS data analysis and ARQiv call criterion
+### Real-time HTS data analysis and ARQiv call criterion
 
 We developed MATLAB (Walker et al., 2012) and R-based scripts to analyze and graphically present all primary screen data in real-time (for an example, see Figure 2). The resultant graphic provided results for each compound in three formats: (1) box plots showed the range of the data at each concentration; (2) SSMD values provided a measure of the relative strength of potential hits; and (3) a heat map of each plate facilitated initial visual follow-ups for detecting 2° islet formation.
 
-## MATLAB and R-based data analysis
+### MATLAB and R-based data analysis
 
 ARQiv data files from the primary screen were saved in an XML format and processed using MATLAB 2008a and/or R. An extraction algorithm was used to determine the total fluorescent signal of each well and tagged with experimental condition information for future analysis (Walker et al., 2012). For wells where the signal could not be detected, the maximum regional value was used. A plate parsing algorithm (Walker et al., 2012) was used to separate control and drug plates into groups and blocks. Each block consisted of 14 plates including ten drug plates and the flanking sets of positive and negative control plates. The most effective DAPT concentration was parsed out as a subset of 16 per each control plate and used in the drug plate analysis algorithm. Drug plate analysis was performed on each plate in correlation to respective control data. Each drug plate consisted of six concentrations, resulting in eight conditions total for the analysis. Graphical representations of the data were plotted as described above in the text. To ensure accurate SSMD score calculation, outliers (defined as any well having a signal value greater than three standard deviations from the median of the 16 wells comprising that condition) were removed from the calculations. Empirically, we found that outlier data correlated with blank wells, multiple fish per well, floating larvae, and dead larvae. All curves in graphed data were drawn using either a best fit (solid lines) or single polynomial curve fitting function (dashed lines). The original MATLAB code was updated to an R-based code to facilitate improved graphical outputs. The R-based code for processing a series of drug and control plates configured as described above is provided as Source code 2.
 
-## Hit test and lead validations
+### Hit test and lead validations
 
 MATLAB (and/or R) data plots were used to identify which conditions produced a SSMD ≥1.3. Using fluorescence stereomicroscopy, researchers then evaluated larvae in the corresponding wells (and in flanking wells) for evidence of enhanced 2° islet formation. Plates showing evidence of increased 2° islet formation were placed in the Hit 1 subset (Figure 2D). In addition, ARQiv hit calls having a SSMD ≥1.75 were placed in the Hit II subset (Figure 2D). It is important to note that this left 131 ARQiv Call compounds, those having an SSMD of 1.3–1.74 for which no immediate evidence of 2° islets was found; these remain to be further characterized (Supplementary file 2).
 
-## Validation assay I (endocrine differentiation)
+### Validation assay I (endocrine differentiation)
 
 For endocrine differentiation validation assays, two transgenic lines facilitating independent tests of Hit I compound effects on endocrine development were used; Tg(pax6b:GFP)ulg515 (Delporte et al., 2008) and Tg(neurod:EGFP)nl1 (Obholzer et al., 2008). Transgenic embryos were plated in 24-well plates with ≥15 embryos per well at 3 dpf in E3 medium. Newly purchased Hit I compounds were diluted from 25 μM to 0.4 μM in a twofold dilution series, added to 24-well plates, and incubated from 3 to 5 dpf. PTU was not required for validation screens and was therefore not used, allowing assessment of lead compounds independent of any potential effects of PTU. As previously described for endocrine differentiation assays (Huang et al., 2014), 5 μM of the Notch inhibitor RO4929097 (Selleck Chemicals) (Luistro et al., 2009) was used as a positive control. 0.1% DMSO was applied as the negative control. Larvae were fixed at 5 dpf with 4% paraformaldehyde (PFA) at 4°C overnight. Larval pancreata were dissected and imaged using a Zeiss Axiovert200M inverted microscope. GFP positive cells in the pancreatic ductal region other than the principal islet were counted as 2° islets (Rovira et al., 2011). All assays were evaluated using one-way ANOVA and p-values calculated with a post hoc Dunnett's test. n = 5–10 larvae per condition, and a minimum of three experimental repeats was performed.
 
-## Validation assay II (increased β-cell number)
+### Validation assay II (increased β-cell number)
 
 To validate Hit I and II compound effects in promoting increased β-cell numbers, the ins:hmgb1-EGFP (Parsons et al., 2009) line was used; this line facilitates β-cell quantification due to nuclear localization of the GFP reporter. The assay was performed similarly to validation I tests except that Hit drugs were tested from 25 μM to 0.2 μM using a 1:5 dilution series. Pancreata were dissected and imaged with a Nikon A1-si Laser Scanning Confocal microscopy under a 20× objective. β cells were counted for all Z planes using ImageJ (NIH) software. All assays were evaluated using one-way ANOVA (Analysis of Variance) and p-values calculated with a post hoc Dunnett's test. n = 5–10 larvae per condition, and a minimum of three experimental repeats was performed.
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 Fish were fixed either in 4% PFA (5 dpf larvae) or 10% formalin (adults) at 4°C overnight. Pancreata were dissected and immunohistochemistry performed as described previously (Huang et al., 2014). Briefly, pancreata were embedded in paraffin and sectioned at 5 μm. Sections were stained with 4', 6-diamidino-2-phenylindole (DAPI) and processed for immunostaining using the following primary antibodies: serotonin (5-HT; 1:100, Rabbit polyclonal, ImmunoStar); acetylated tubulin (aTub; 1:400, Mouse monoclonal, Sigma); green fluorescent protein (GFP; 1:400, Rabbit polyclonal, Life Technologies), GFP (1:400, Mouse monoclonal, Life Technologies), DsRed (1:400, Mouse monoclonal, Clontech); insulin (1:400, Polyclonal Guinea Pig, Dako). Fluorescently conjugated secondary antibodies were diluted 1:400 dilution (Jackson ImmunoResearch Labs). Images were collected using a Nikon A1-si Laser Scanning Confocal microscopy.
 
-## Glucose level assay
+### Glucose level assay
 
 Free glucose level was determined in 5-day-old larvae using a glucose assay kit (BioVision). Briefly, 20 larvae were collected by removing the embryonic media and quickly frozen in liquid nitrogen. Frozen larvae were then thawed on ice and grinded thoroughly in 80 μl glucose assay buffer. Then, glucose concentration were measured and calculated following the manufactory instruction (BioVision).
 
-## β-cell proliferation assay
+### β-cell proliferation assay
 
 For direct assessment of β-cell proliferation, the Click-iT EdU Alexa Fluor 647 Imaging kit (Life Technologies) was used. For larval studies, drug treated 3 dpf larval were treated with EdU (working concentration 12.5 µM) and fixed at 5 dpf. In adult fish, 25 μM EdU in E3 medium was injected intracoelomically every other day together with paroxetine or 0.1% DMSO control for 10 days and alone on the twelfth day. In both cases, pancreata were dissected out, embedded in paraffin blocks, sectioned and stained as per the manufacturer's instructions. Images were collected with a Nikon A1-si Laser Scanning Confocal microscopy. EdU-positive β cells were counted using the ImageJ (NIH) software. All p-values were calculated using Student's t-test as comparisons were made only between a single treatment condition and the control.
 
-## Paroxetine treatment in adult fish
+### Paroxetine treatment in adult fish
 
 20 μl of 1 mM paroxetine was injected intracoelomically into adult fish (>3 month old) every other day for 10 days. Control fish were injected with same volume of 0.1% DMSO. Fish injected with paroxetine exhibited the reported behavioral effects connected to SSRI treatment (Wong et al., 2013). Fish were sacrificed 14 days after the first injection and fixed in 10% formalin for further evaluation.
 
-## Paroxetine treatment in mice
+### Paroxetine treatment in mice
 
 Paroxetine was injected intraperitoneally daily at 15 mg/kg to wild-type mice (129/C57 mixed background) at postnatal day 7 (P7). EdU injections (60 μg per injection) were given intraperitoneally every other day from P8. Mice were sacrificed via CO2 gas (followed by cervical dislocation) and pancreata dissected out. Pancreata were immediately fixed in 4% PFA overnight at 4°C, then transferred to 30% sucrose (in Phosphate buffered saline, PBS) and left rocking overnight at 4°C. Before embedding in Optimal Cutting Temperature compound (OCT), pancreata were equilibrated in 1:1 30% sucrose:OCT overnight. Embedded tissues were sectioned and stained as previously described (Borden et al., 2013). The primary antibody, anti-mouse Nkx6.1 (Developmental Studies Hybridoma Bank), was prepared at a dilution of 1:200. Images were collected using a Zeiss LSM 700 confocal microscope.

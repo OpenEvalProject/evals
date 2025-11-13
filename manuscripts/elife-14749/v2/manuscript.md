@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.14749.001 Natural Killer (NK) cells are essential for control of viral infection and cancer. NK cells express NKG2D, an activating receptor that directly recognizes NKG2D ligands. These are expressed at low level on healthy cells, but are induced by stresses like infection and transformation. The physiological events that drive NKG2D ligand expression during infection are still poorly understood. We observed that the mouse cytomegalovirus encoded protein m18 is necessary and sufficient to drive expression of the RAE-1 family of NKG2D ligands. We demonstrate that RAE-1 is transcriptionally repressed by histone deacetylase inhibitor 3 (HDAC3) in healthy cells, and m18 relieves this repression by directly interacting with Casein Kinase II and preventing it from activating HDAC3. Accordingly, we found that HDAC inhibiting proteins from human herpesviruses induce human NKG2D ligand ULBP-1. Thus our findings indicate that virally mediated HDAC inhibition can act as a signal for the host to activate NK-cell recognition. DOI: http://dx.doi.org/10.7554/eLife.14749.001
+Natural Killer (NK) cells are essential for control of viral infection and cancer. NK cells express NKG2D, an activating receptor that directly recognizes NKG2D ligands. These are expressed at low level on healthy cells, but are induced by stresses like infection and transformation. The physiological events that drive NKG2D ligand expression during infection are still poorly understood. We observed that the mouse cytomegalovirus encoded protein m18 is necessary and sufficient to drive expression of the RAE-1 family of NKG2D ligands. We demonstrate that RAE-1 is transcriptionally repressed by histone deacetylase inhibitor 3 (HDAC3) in healthy cells, and m18 relieves this repression by directly interacting with Casein Kinase II and preventing it from activating HDAC3. Accordingly, we found that HDAC inhibiting proteins from human herpesviruses induce human NKG2D ligand ULBP-1. Thus our findings indicate that virally mediated HDAC inhibition can act as a signal for the host to activate NK-cell recognition.
 
 ## Introduction
 
@@ -41,29 +41,29 @@ Here, we show that in healthy cells, the expression of the RAE-1 family is repre
 
 ## Results
 
-## RAE-1 induction during MCMV infection requires the m18 ORF
+### RAE-1 induction during MCMV infection requires the m18 ORF
 
-Mouse fibroblasts normally express low levels of
+Mouse fibroblasts normally express low levels of Raet1 mRNA and protein, but RAE-1 expression is upregulated in response to cell stress, including viral infection (Lodoen et al., 2003). Previously, we showed that MCMV gene expression was necessary to induce RAE-1 expression during infection (Tokuyama et al., 2011). To identify the MCMV gene(s) responsible for this phenotype, we screened a panel of MCMV mutants (provided by Dr. Hidde Ploegh, Whitehead Institute) lacking genomic regions not essential for viral replication in vitro. We infected mouse fibroblasts with wild type (WT) or mutant MCMV and measured Raet1 mRNA expression by RT-qPCR 24 hr post-infection (h.p.i). In contrast to WT MCMV or other mutant viruses, the MCMV mutant virus deleted for open reading frames (ORFs) m01 through m22 (∆m1-22) failed to induce Raet1 expression (Figure 1A). We assessed whether this was the result of decreased infection or replication in our samples by measuring expression of MCMV immediate early gene 1 (ie1). Levels of MCMV ie1 were comparable to WT virus (Figure 1B). These results indicate that a viral gene or a combination of genes in this region is required to induce Raet1 expression.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig1-v2.jpg)
 
-**Figure 1.:** Raet1 by MCMV.(A) RT-qPCR analysis of Raet1 expression during WT and ∆m1-m22 MCMV infection. Data are normalized to uninfected fibroblasts (NI). *p<0.05 n.s., not significant (1-way ANOVA with Bonferroni’s multiple comparison post-test). (B) RT-qPCR analysis of MCMV ie1 expression during WT and ∆m1-m22 infection. n.s., not significant (student’s t-test). (C, D) RT-qPCR analysis of Raet1 expression during infection with WT or mutant MCMV lacking the indicated ORFs. Data are normalized to uninfected fibroblasts (NI). (E, F) RT-qPCR analysis of Raet1 expression in mouse fibroblasts infected with mutant MCMV lacking the indicated ORFs and subsequently transfected with m18, m19, or empty vector control. Data are normalized to uninfected fibroblasts (NI). All data were obstained by RT-qPCR and are represented as mean±SEM. All data are representative of at least three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.14749.002
+**Figure 1.:** (A) RT-qPCR analysis of Raet1 expression during WT and ∆m1-m22 MCMV infection. Data are normalized to uninfected fibroblasts (NI). *p<0.05 n.s., not significant (1-way ANOVA with Bonferroni’s multiple comparison post-test). (B) RT-qPCR analysis of MCMV ie1 expression during WT and ∆m1-m22 infection. n.s., not significant (student’s t-test). (C, D) RT-qPCR analysis of Raet1 expression during infection with WT or mutant MCMV lacking the indicated ORFs. Data are normalized to uninfected fibroblasts (NI). (E, F) RT-qPCR analysis of Raet1 expression in mouse fibroblasts infected with mutant MCMV lacking the indicated ORFs and subsequently transfected with m18, m19, or empty vector control. Data are normalized to uninfected fibroblasts (NI). All data were obstained by RT-qPCR and are represented as mean±SEM. All data are representative of at least three independent experiments.
 
 The region deleted in ∆m1-22 MCMV contains 22 genes and several miRNAs (Juranic Lisnic et al., 2013). To narrow the list of candidates we generated additional MCMV mutants using bacterial artificial chromosome (BAC) recombination. We again infected mouse fibroblasts with WT and mutant viruses and measured Raet1 expression by RT-qPCR 24 h.p.i. Viruses lacking ORFs m12 to m18 (∆12–18) and m18 to m22 (∆18–22) failed to induce Raet1 expression in contrast to WT MCMV (Figure 1C). No known miRNAs are expressed from these deleted regions (Juranic Lisnic et al., 2013). To identify individual genes required for Raet1 induction, we made individual deletions for each of the genes from m12 to m22 and again infected mouse fibroblasts with these viruses 24 hr before measuring Raet1 expression by RT-qPCR. Only MCMV lacking ORF m18 or ORF m19 failed to induce Raet1 expression (Figure 1D), indicating that one or both of these ORFs are required to induce Raet1 expression.
 
 To determine if expression of m18 or m19 in trans could rescue Raet1 expression, mouse fibroblasts were first infected with WT MCMV, ∆m1-m22, and ∆18 or ∆19 MCMV, and then transfected with a plasmid encoding m18, m19, or an empty control plasmid. Expression of m18, but not m19 or vector control, rescued Raet1 expression in all cases Figure 1E,F) indicating that m18 is required for MCMV mediated Raet1 induction.
 
-## m18 expression is sufficient to induce RAE-1 expression and NK-cell killing
+### m18 expression is sufficient to induce RAE-1 expression and NK-cell killing
 
-To assess if m18 expression is sufficient to induce
+To assess if m18 expression is sufficient to induce Raet1 expression we transfected mouse fibroblasts with mammalian expression plasmids encoding m18, m19, or vector control and analyzed Raet1 mRNA by RT-qPCR (Figure 2A) and protein expression by flow cytometry (Figure 2B). Expression of m18 but not m19 was sufficient to induce Raet1 transcript and RAE-1 protein expression. Thus, our data indicate that m18 is the both necessary and sufficient to drive RAE-1 expression.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig2-v2.jpg)
 
-**Figure 2.:** (A) Mouse fibroblasts were transfected with m18, m19, or vector control and analyzed for Raet1 expression by RT-qPCR Data are normalized to non-transfected fibroblasts (NT) and represented as mean±SEM. Data are representative of three independent experiments. ****p<0.00005 (1 way ANOVA with Bonferroni’s multiple comparison post-test). (B) Mouse fibroblasts transfected with m18, m19, or vector control plasmid were analyzed for RAE-1 surface expression by flow cytometry. Data are representative of three independent experiments. (C) Chromium release assay was performed on fibroblasts transduced with m18 or empty vector control and IL-2 activated NK cells from WT or NKG2D KO b6 littermates. Data are represented as mean ±SEM. Data are representative of three independent experiments. (D) Semi quantitative PCR analysis of m18 expression in fibroblasts infected with MCMV at the indicated times. (E) NIH3T3 or mouse fibroblasts were transfected with an expression plasmid encoding an m18-HA fusion protein, and lysates were analyzed for m18-HA expression by western blot. (F) NIH 3T3 transfected with an expression plasmid encoding an m18-GFP fusion protein, and analyzed for localization of m18-GFP fusion protein by confocal microscopy.DOI: http://dx.doi.org/10.7554/eLife.14749.003
+**Figure 2.:** (A) Mouse fibroblasts were transfected with m18, m19, or vector control and analyzed for Raet1 expression by RT-qPCR Data are normalized to non-transfected fibroblasts (NT) and represented as mean±SEM. Data are representative of three independent experiments. ****p<0.00005 (1 way ANOVA with Bonferroni’s multiple comparison post-test). (B) Mouse fibroblasts transfected with m18, m19, or vector control plasmid were analyzed for RAE-1 surface expression by flow cytometry. Data are representative of three independent experiments. (C) Chromium release assay was performed on fibroblasts transduced with m18 or empty vector control and IL-2 activated NK cells from WT or NKG2D KO b6 littermates. Data are represented as mean ±SEM. Data are representative of three independent experiments. (D) Semi quantitative PCR analysis of m18 expression in fibroblasts infected with MCMV at the indicated times. (E) NIH3T3 or mouse fibroblasts were transfected with an expression plasmid encoding an m18-HA fusion protein, and lysates were analyzed for m18-HA expression by western blot. (F) NIH 3T3 transfected with an expression plasmid encoding an m18-GFP fusion protein, and analyzed for localization of m18-GFP fusion protein by confocal microscopy.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A,B) Lysates from mouse fibroblasts transfected with a mammalian expression construct encoding m18 C-terminally fused to 3xFlag epitope tag (A), mammalian expression construct encoding m18 C terminally fused to GFP (B) or vector control. (C–F) Mouse fibroblasts were transfected with the indicated constructs and analyzed for RAE-1 expression by flow cytomotry. (G) Mouse fibroblasts were transfected with a mammalian expression construct encoding m18 C-terminally fused to GFP, and analyzed for RAE-1 expression. From these data gates of GFP low, GFP medium, and GFP high (Left) were analyzed for RAE-1 expression (Right).DOI: http://dx.doi.org/10.7554/eLife.14749.004
+**Figure 2—figure supplement 1.:** (A,B) Lysates from mouse fibroblasts transfected with a mammalian expression construct encoding m18 C-terminally fused to 3xFlag epitope tag (A), mammalian expression construct encoding m18 C terminally fused to GFP (B) or vector control. (C–F) Mouse fibroblasts were transfected with the indicated constructs and analyzed for RAE-1 expression by flow cytomotry. (G) Mouse fibroblasts were transfected with a mammalian expression construct encoding m18 C-terminally fused to GFP, and analyzed for RAE-1 expression. From these data gates of GFP low, GFP medium, and GFP high (Left) were analyzed for RAE-1 expression (Right).
 
 A recent study suggests that the m19 ORF is unlikely to encode any viral mRNA or protein (Juranic Lisnic et al., 2013). As m19 is immediately adjacent to the transcriptional start site of m18 it is likely that ∆19 MCMV disrupts production of m18. This idea is bolstered by our data showing m18, but not m19, expression vector rescues RAE-1 expression in cells infected with ∆m19 virus (Figure 1F). Thus we focused the rest of our study on the functional role of m18.
 
@@ -71,21 +71,21 @@ We next measured the ability of m18 to trigger NK-mediated killing using a chrom
 
 Previous studies have identified a CTL epitope produced from the m18 ORF (Holtappels et al., 2002), and peptides that correspond to this ORF have been identified in mass spectrometric analysis of MCMV virions (Kattenhorn et al., 2004). Otherwise little is known about m18 or its function. To characterize m18 we assessed the expression of m18 over the course of infection by harvesting RNA of MCMV infected fibroblasts at 2,4,8,12, and 24 hr post infection and amplifying the full length (3 kB) m18 mRNA by reverse transcription followed by semi quantitative PCR. In accordance with previous studies we observed this was mRNA produced as early as 2 hr post-infection (Figure 2D) (Lacaze et al., 2011). To characterize the m18 polypeptide we expressed a C-terminal hemagglutanin (HA)-tagged m18 protein in mouse fibroblasts and NIH 3T3s and analyzed cell lysates by western blot (Figure 2E). We observed a band at a size of ~180 KDa, well above the predicted size of 110 KDa, suggesting m18 is post-translationally modified. To evaluate m18 localization we expressed a C-terminal GFP m18 fusion protein in NIH 3T3s and analyzed localization of GFP by fluorescent microscopy. We found that the m18-GFP fusion protein localized mostly to the nucleus (Figure 2F). Importantly both m18-HA and m18-GFP constructs still induced expression of RAE-1 similarly to other m18 constructs (Figure 2—figure supplement 1).
 
-## The Raet1e promoter is activated by m18 through an sp transcription factor binding site
+### The Raet1e promoter is activated by m18 through an sp transcription factor binding site
 
-To dissect the mechanism by which m18 induces RAE-1 expression, we measured m18’s effect on
+To dissect the mechanism by which m18 induces RAE-1 expression, we measured m18’s effect on Raet1e promoter activity. An expression vector encoding Firefly luciferase (FLuc) under the control of Raet1e promoter (Jung et al., 2012) was co-transfected into mouse fibroblasts with a vector encoding m18 or an empty control plasmid. Co-expression of m18 increased the activity of the Raet1e promoter relative to vector control (Figure 3B). Although E2F sites in the Raet1e promoter have been shown to drive RAE-1 expression during proliferation (Jung et al., 2012), these sites were dispensable for activation of the Raet1e promoter by m18 (Figure 3—figure supplement 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig3-v2.jpg)
 
-**Figure 3.:** Raet1e promoter activity through an Sp-transcription factor binding element.(A) A graphic representation of Raet1e promoter luciferase constructs used in (B). (B) Raet1e promoter activity was measured by quantifying luminescence in lysates of cells transfected with the indicated luciferase promoter constructs in combination with m18 or vector control. Data are represented as fold increase in luminescence over vector control. Data are represented as mean±SEM. Data are representative of three independent experiments. ****p<0.00005 (1 way ANOVA with Bonferroni’s multiple comparison post-test). (C) Alignment of the WT m18RE (top), Sp consensus binding sequence (middle) and mutant m18RE (bottom). (D) Raet1e promoter activity was measured in cells co-transfected with a luciferase construct containing WT Raet1e promoter or Raet1e promoter containing a mutation in the Sp-binding site (m18RE*) and either m18 or vector control. Data shows fold increase in luminescence over vector control. Data are represented as mean (±SEM). Data are representative of three independent experiments. *p<0.05 (Student’s T-test). (E) EMSA was performed on mouse fibroblast nuclear extracts incubated with radio-labeled m18RE (left panel) or radio-labeled Sp consensus sequence (right panel). The indicated non-radiolabeled oligos were added in 1000-fold excess before separation by non-denaturing PAGE. Data is representative of three experiments. (F) ChIP was performed on MCA-205 cells using the indicated antibodies and enrichment of the Raet1e promoter was assayed by qPCR. Values were normalized to input chromatin. Data are representative of three independent experiments. (G) Mouse fibroblasts were co-transfected with m18-RFP and DN-Sp1 GFP or GFP vector control and cells expressing both GFP and RFP were analyzed for RAE-1 expression by flow cytometry. Data is representative of three experiments. (H) Mouse fibroblasts were transfected with m18-GFP and treated with Mithramycin or vehicle control were analyzed for expression of RAE-1 by flow cytometry. Data is representative of three experiments.DOI: http://dx.doi.org/10.7554/eLife.14749.005
+**Figure 3.:** (A) A graphic representation of Raet1e promoter luciferase constructs used in (B). (B) Raet1e promoter activity was measured by quantifying luminescence in lysates of cells transfected with the indicated luciferase promoter constructs in combination with m18 or vector control. Data are represented as fold increase in luminescence over vector control. Data are represented as mean±SEM. Data are representative of three independent experiments. ****p<0.00005 (1 way ANOVA with Bonferroni’s multiple comparison post-test). (C) Alignment of the WT m18RE (top), Sp consensus binding sequence (middle) and mutant m18RE (bottom). (D) Raet1e promoter activity was measured in cells co-transfected with a luciferase construct containing WT Raet1e promoter or Raet1e promoter containing a mutation in the Sp-binding site (m18RE*) and either m18 or vector control. Data shows fold increase in luminescence over vector control. Data are represented as mean (±SEM). Data are representative of three independent experiments. *p<0.05 (Student’s T-test). (E) EMSA was performed on mouse fibroblast nuclear extracts incubated with radio-labeled m18RE (left panel) or radio-labeled Sp consensus sequence (right panel). The indicated non-radiolabeled oligos were added in 1000-fold excess before separation by non-denaturing PAGE. Data is representative of three experiments. (F) ChIP was performed on MCA-205 cells using the indicated antibodies and enrichment of the Raet1e promoter was assayed by qPCR. Values were normalized to input chromatin. Data are representative of three independent experiments. (G) Mouse fibroblasts were co-transfected with m18-RFP and DN-Sp1 GFP or GFP vector control and cells expressing both GFP and RFP were analyzed for RAE-1 expression by flow cytometry. Data is representative of three experiments. (H) Mouse fibroblasts were transfected with m18-GFP and treated with Mithramycin or vehicle control were analyzed for expression of RAE-1 by flow cytometry. Data is representative of three experiments.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Raet1e promoter independent of E2F binding sites.(A) Mouse fibroblasts were transfected with m18 or vector control plasmids along with with luciferase reporter constructs containing the RAE-1 promoter (WT Rae-1) or a Rae-1 promoter with both E2F binding elements mutated (E2F DKO). Data are represented as fold difference between promoter construct transfected with m18 over promoter construct transfected with vector control. Values are shown as mean±SEM. Data are representative of three independent experiments. n.s.: Not significant (1-way ANOVA with Bonferroni’s multiple comparison post-test).DOI: http://dx.doi.org/10.7554/eLife.14749.006
+**Figure 3—figure supplement 1.:** (A) Mouse fibroblasts were transfected with m18 or vector control plasmids along with with luciferase reporter constructs containing the RAE-1 promoter (WT Rae-1) or a Rae-1 promoter with both E2F binding elements mutated (E2F DKO). Data are represented as fold difference between promoter construct transfected with m18 over promoter construct transfected with vector control. Values are shown as mean±SEM. Data are representative of three independent experiments. n.s.: Not significant (1-way ANOVA with Bonferroni’s multiple comparison post-test).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A) MCA-205 cells stably tranduced with either vector control or m18 and analyzed for RAE-1 expression by flow cytometry. Data are representative of three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.14749.007
+**Figure 3—figure supplement 2.:** (A) MCA-205 cells stably tranduced with either vector control or m18 and analyzed for RAE-1 expression by flow cytometry. Data are representative of three independent experiments.
 
 To identify the promoter elements required for m18 to drive expression from the Raet1e promoter, we generated a panel of serial 5’ truncation mutants of the Raet1e promoter driving FLuc (Figure 3A) and co-transfected these with m18 expression vector or control vector. Promoters lacking 15 nucleotides at the 5’ end of the promoter retained WT levels of induction in the presence of m18, but promoter activation by m18 was eliminated when 25 nucleotides were deleted (Figure 3B). These data indicate that the Raet1e promoter contains an m18 response element (m18RE) between −95 and −85 bp from the transcription start site.
 
@@ -97,41 +97,41 @@ To assess Sp TF binding to the Raet1e promoter, we performed a chromatin immunop
 
 To determine whether Sp3 binding is required for m18 induction of RAE-1 expression, we co-transfected mouse fibroblasts with expression vectors encoding m18 and a dominant negative Sp TF (DN-Sp) and measured RAE-1 surface expression levels by flow cytometry. DN-Sp consists of an Sp1 protein DNA binding domain lacking the transactivation domain. DN-Sp binds to Sp1/3 binding sites and acts as a competitive inhibitor of promoter activation (Won et al., 2002). Co-expression of DN-Sp and m18 resulted in a decreased percentage of RAE-1 expressing cells (Figure 3G) suggesting that Sp factors are important for m18 to drive RAE-1 expression. To further test this hypothesis we transfected mouse fibroblasts with an expression vector encoding m18 and treated these cells with mithramycin, an inhibitor of Sp factor binding to DNA (Blume et al., 1991). Mithramycin treatment reduced RAE-1 induction by m18 (Figure 3H) further indicating that Sp TF activity is required for RAE-1 induction by m18.
 
-## The Raet1e promoter is repressed by HDAC3 in an Sp-dependent manner
+### The Raet1e promoter is repressed by HDAC3 in an Sp-dependent manner
 
-The human NKG2D ligand ULBP-1 is repressed by histone deacetylase 3 (HDAC3) in the absence of stress. HDAC3 is recruited to the ULBP1 promoter by Sp3 (
+The human NKG2D ligand ULBP-1 is repressed by histone deacetylase 3 (HDAC3) in the absence of stress. HDAC3 is recruited to the ULBP1 promoter by Sp3 (López-Soto et al., 2009). Additionally, HDAC inhibition induces RAE-1 expression (Gasser et al., 2005). Consistent with these findings, we observed that the chemical HDAC inhibitor butyrate activated the WT Raet1e promoter (Figure 4A). Interestingly, butyrate treatment failed to drive expression from the m18RE* mutant Raet1e promoter (Figure 4A). To assess whether chemical HDAC inhibition also requires Sp TFs to drive RAE-1 expression we treated mouse fibroblasts with butyrate in combination with mithramycin. Mithramycin treatment reduced RAE-1 expression in response to butyrate treatment (Figure 4B), indicating that Sp TFs are also required to drive RAE-1 expression in response to HDAC inhibition.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig4-v2.jpg)
 
-**Figure 4.:** RAE-1 expression in an Sp factor dependent manner.(A) Raet1e promoter activity was measured in lysates from mouse fibroblasts transfected with either WT Raet1e promoter or the m18RE* promoter treated with sodium butyrate (NaB) (1 mM). Data are expressed as fold change between butyrate treated and untreated promoter. Data are represented as mean±SEM. Data are representative of three independent experiments. **p<0.005 (Student’s T-test). (B) Cells treated with NaB (1 mM) with or without Mithramycin (1.5 μM) were analyzed for RAE-1 expression by flow cytometry. Data are representative of five independent experiments. (C) Cells were treated with HDAC inhibitors TSA (1 nM) (pan-HDACi), NaB (0.1 mM) (Class I and IIa), MS-275 (800 nM) (HDAC1,3), RGFP966 (640 nM) (HDAC3) 4-(dimethylamino)-N-[6-(hydroxyamino)−6-oxohexyl]-benzamide (HDAC1i) (1 μM) (HDAC1), or Droxinostat (3 μM) (HDAC6,8) and analyzed for RAE-1 expression by flow cytometry. Data are represented as mean fluorescent intensity±SEM. Data are representative of three independent experiments. ****p<0.00005 (1 way ANOVA with Bonferroni’s multiple comparison post-test).DOI: http://dx.doi.org/10.7554/eLife.14749.008
+**Figure 4.:** (A) Raet1e promoter activity was measured in lysates from mouse fibroblasts transfected with either WT Raet1e promoter or the m18RE* promoter treated with sodium butyrate (NaB) (1 mM). Data are expressed as fold change between butyrate treated and untreated promoter. Data are represented as mean±SEM. Data are representative of three independent experiments. **p<0.005 (Student’s T-test). (B) Cells treated with NaB (1 mM) with or without Mithramycin (1.5 μM) were analyzed for RAE-1 expression by flow cytometry. Data are representative of five independent experiments. (C) Cells were treated with HDAC inhibitors TSA (1 nM) (pan-HDACi), NaB (0.1 mM) (Class I and IIa), MS-275 (800 nM) (HDAC1,3), RGFP966 (640 nM) (HDAC3) 4-(dimethylamino)-N-[6-(hydroxyamino)−6-oxohexyl]-benzamide (HDAC1i) (1 μM) (HDAC1), or Droxinostat (3 μM) (HDAC6,8) and analyzed for RAE-1 expression by flow cytometry. Data are represented as mean fluorescent intensity±SEM. Data are representative of three independent experiments. ****p<0.00005 (1 way ANOVA with Bonferroni’s multiple comparison post-test).
 
 Given that histone deacetylase inhibitors induce the expression of RAE-1 we wanted to identify which HDAC family member(s) must be inhibited to drive RAE-1 expression. To identify specific HDAC inhibitors that induce RAE-1 expression, cells were treated with a panel of HDAC inhibitors and analyzed for RAE-1 expression by flow cytometry. The pan-HDAC inhibitors TSA and NaB induced RAE-1 expression, as did the HDAC1/3 inhibitor MS-275 and the HDAC3 inhibitor RGFP966. In contrast, an HDAC1 inhibitor (4-(dimethylamino)-N-[6-(hydroxyamino)−6-oxohexyl]-benzamide), and an HDAC6,8 inhibitor (droxinostat) did not (Figure 4C). These results indicate that HDAC3 is involved in RAE-1 repression, likely through recruitment to the promoter by Sp3 (López-Soto et al., 2009) though additional HDACs may be involved.
 
-## m18 expression increases histone acetylation
+### m18 expression increases histone acetylation
 
 As m18 and chemical HDAC inhibitors drive expression through the same promoter element in the Raet1 promoter, we hypothesized that m18 acts as an HDAC inhibitor. HDACs modulate gene expression by deacetylating histones to maintain closed chromatin and repress gene expression. Thus one major prediction of this hypothesis is that histone acetylation should be increased in cells expressing m18.
 
-To test the hypothesis that m18 expression increases histone acetylation we analyzed lysates of mouse fibroblasts transduced with m18 or vector control for acetylated histone 3 (AcH3) as well as bulk histone 3 (H3) by western blot. AcH3 levels were increased in m18 expressing mouse fibroblasts, as compared to those expressing vector control. H3 levels were unchanged (
+To test the hypothesis that m18 expression increases histone acetylation we analyzed lysates of mouse fibroblasts transduced with m18 or vector control for acetylated histone 3 (AcH3) as well as bulk histone 3 (H3) by western blot. AcH3 levels were increased in m18 expressing mouse fibroblasts, as compared to those expressing vector control. H3 levels were unchanged (Figure 5A). To determine whether this effect was taking place as a direct result of m18 expression we transfected mouse fibroblasts with a construct encoding m18 C-terminally fused to red fluorescent protein (RFP), and assessed AcH3 levels by immunofluorescence assay (Figure 5B). We compared the fluorescent intensity of AcH3 staining in the nucleus of m18 expressing cells, to non-transfected cells in the same field of view, and found significantly higher levels of AcH3 in m18 expressing cells. AcH3 level was unchanged in cells transfected with RFP alone (Figure 5C). Expression of m18-RFP or RFP alone did not affect H3 levels (Figure 5—figure supplement 1). Finally, we assessed whether m18 expression increased acetylation at the Raet1e promoter by performing ChIP against AcH3 or H3 out of lysates from MCA-205 cells transduced with m18 or vector control. Analysis of Raet1e promoter enrichment showed an increase in AcH3 levels associated with the Raet1e promoter in m18 expressing cells while H3 levels were unchanged (Figure 5D). Together, these results indicate that m18 increases histone acetylation in cells, including at the Raet1e promoter.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig5-v2.jpg)
 
-**Figure 5.:** (A) Mouse fibroblasts stably expressing m18 or vector control were analyzed for H3 and AcH3 expression by western blot. Data are representative of three independent experiments. (B) Representative image of cells transiently transfected with vector encoding m18 with a C-terminal fusion to RFP (m18-RFP) and stained for AcH3. (C) Quantification of AcH3 levels in cells expressing m18-RFP or RFP control vector from compared to non-transfected controls in same field of view. Red bars are representative of mean±SEM. Data are representative of three independent experiments. ****p<0.00005. n.s., not significant. (Student’s T-test). (D) ChIP was performed for AcH3 and H3 in MCA-205 mouse carcinoma cells stably expressing m18 or vector control. Data are normalized to input chromatin and represented as mean±SEM. Data are representative of three independent experiments. *p<0.05, n.s., not significant (Student’s t-test).DOI: http://dx.doi.org/10.7554/eLife.14749.009
+**Figure 5.:** (A) Mouse fibroblasts stably expressing m18 or vector control were analyzed for H3 and AcH3 expression by western blot. Data are representative of three independent experiments. (B) Representative image of cells transiently transfected with vector encoding m18 with a C-terminal fusion to RFP (m18-RFP) and stained for AcH3. (C) Quantification of AcH3 levels in cells expressing m18-RFP or RFP control vector from compared to non-transfected controls in same field of view. Red bars are representative of mean±SEM. Data are representative of three independent experiments. ****p<0.00005. n.s., not significant. (Student’s T-test). (D) ChIP was performed for AcH3 and H3 in MCA-205 mouse carcinoma cells stably expressing m18 or vector control. Data are normalized to input chromatin and represented as mean±SEM. Data are representative of three independent experiments. *p<0.05, n.s., not significant (Student’s t-test).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Representative picture of H3 staining in m18-RFP transfected cells. (B) Nuclear staining of H3 was quantified in FIJI. Red bars are representative of mean±SEM. Data are representative of three independent experiments. n.s., Not significant (Students T-test).DOI: http://dx.doi.org/10.7554/eLife.14749.010
+**Figure 5—figure supplement 1.:** (A) Representative picture of H3 staining in m18-RFP transfected cells. (B) Nuclear staining of H3 was quantified in FIJI. Red bars are representative of mean±SEM. Data are representative of three independent experiments. n.s., Not significant (Students T-test).
 
-## CK2 inhibition connects m18 to HDAC3 regulation
+### CK2 inhibition connects m18 to HDAC3 regulation
 
-To investigate the mechanism by which m18 increases histone acetylation, we analyzed m18 binding to host proteins by immunoprecipitation (IP) followed by mass spectrometry. N- or C-terminally Strep-tagged m18 was transiently expressed in HEK293T cells, and native m18 complexes were captured by streptactin-affinity capture. Proteins were identified with peptide sequencing by LC-MS/MS, and the results are reported in
+To investigate the mechanism by which m18 increases histone acetylation, we analyzed m18 binding to host proteins by immunoprecipitation (IP) followed by mass spectrometry. N- or C-terminally Strep-tagged m18 was transiently expressed in HEK293T cells, and native m18 complexes were captured by streptactin-affinity capture. Proteins were identified with peptide sequencing by LC-MS/MS, and the results are reported in Supplementary files 1 and 2. We used HEK293T for these assays as they allowed for direct comparison with similar virus-host AP-MS samples, and enabled us to identify high frequency background proteins found in this system (Supplementary file 2) (previously reported in 30). To rank the specificity of the remaining candidate protein-protein interactions, a Z-score was calculated with three affinity experiments and 598 unrelated virus-host APMS experiments (Supplementary file 3). This allowed identification of the most specific interaction as casein kinase II beta (CSNK2B) in APMS samples from human HEK293T cells. Peptide sequencing data from LC-MS/MS analysis covered 48–55% of the annotated m18 ORF protein sequence overall, and included phosphorylations at several S/T sites as well as peptides from the Strep-tag (Supplementary file 4). We confirmed the interaction with CK2 in NIH-3T3 by IP-Western blot (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig6-v2.jpg)
 
-**Figure 6.:** (A) Immunoprecipitation (IP) of m18 was performed in lysates of cells expressing m18-3xFlag or empty 3xFlag vector, and the products were analyzed for FLAG and CK2β by western blot. Data are representative of three independent experiments. (B) Mouse fibroblasts were treated with CK2 inhibitor TBBt in conjunction with zVAD or zVAD alone and analyzed for RAE-1 expression by flow cytometry. Data is representative of three independent experiments. (C) Representative image of fibroblasts expressing m18-RFP and stained for HDAC3 pS424. (D) Quantification of HDAC3 pS424 levels in cells expressing m18-RFP or RFP control vector from compared to non-transfected controls in same field of view. Red bars are representative of mean±SEM. Data are representative of three independent experiments. ****p<0.00005. n.s., not significant. (Student’s T-test).DOI: http://dx.doi.org/10.7554/eLife.14749.011
+**Figure 6.:** (A) Immunoprecipitation (IP) of m18 was performed in lysates of cells expressing m18-3xFlag or empty 3xFlag vector, and the products were analyzed for FLAG and CK2β by western blot. Data are representative of three independent experiments. (B) Mouse fibroblasts were treated with CK2 inhibitor TBBt in conjunction with zVAD or zVAD alone and analyzed for RAE-1 expression by flow cytometry. Data is representative of three independent experiments. (C) Representative image of fibroblasts expressing m18-RFP and stained for HDAC3 pS424. (D) Quantification of HDAC3 pS424 levels in cells expressing m18-RFP or RFP control vector from compared to non-transfected controls in same field of view. Red bars are representative of mean±SEM. Data are representative of three independent experiments. ****p<0.00005. n.s., not significant. (Student’s T-test).
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Representative picture of HDAC3 staining in m18-RFP transfected cells. (B) Nuclear staining of HDAC3 was quantified in FIJI. Data are representative of mean±SEM. Data are representative of three independent experiments. n.s., Not significant (Students T-test).DOI: http://dx.doi.org/10.7554/eLife.14749.012
+**Figure 6—figure supplement 1.:** (A) Representative picture of HDAC3 staining in m18-RFP transfected cells. (B) Nuclear staining of HDAC3 was quantified in FIJI. Data are representative of mean±SEM. Data are representative of three independent experiments. n.s., Not significant (Students T-test).
 
 CK2 is involved in many biological processes, including DNA damage signaling (Ghavidel and Schultz, 2001), apoptosis (Hellwig et al., 2010), and cell cycle progression (Homma and Homma, 2008). CK2 is a constitutively active kinase that phosphorylates HDAC3 at serine 424 (S424) activating it (Zhang et al., 2005). The activation of HDAC3 by CK2 has previously been demonstrated to help drive chromatin condensation during mitosis (Patil et al., 2016) and has been shown to repress expression of genes during beige fat thermogenesis (Shinoda et al., 2015) indicating that this interaction can functionally regulate both chromatin structure and gene expression. Thus, we hypothesized that CK2 activation of HDAC3 represses Raet1 transcription in healthy cells, while inhibition of CK2 by m18 would result in less HDAC3 activity and thus induce Raet1 transcription.
 
@@ -139,17 +139,17 @@ To test this hypothesis we investigated the ability of CK2 specific inhibitors t
 
 CK2 activates HDAC3 by phosphorylating HDAC3 at S424, thus CK2 inhibition by m18 should reduce levels of HDAC3 S424. To test this prediction we analyzed the HDAC3 S424 phosphorylation status in mouse fibroblasts expressing m18. We transfected mouse fibroblasts with a construct encoding m18 C-terminally fused to RFP or a control vector only expressing RFP, and assessed HDAC3 S424 levels by IFA (Figure 6E). We compared the fluorescent intensity of HDAC3 S424 staining in the nucleus of m18 expressing cells, to non-transfected cells in the same field of view, and found significantly higher levels of HDAC3 S424 in m18 expressing cells (Figure 6F). By the same measure overall levels of HDAC3 were unaffected by m18 transfection (Figure 6—figure supplement 1). This decrease was not observed in mouse fibroblasts transfected with control RFP vector. Together, these results indicate that m18 inhibits HDAC3 activity by binding to CK2 and reducing HDAC3 phosphorylation.
 
-## m18 is not required for MCMV growth in vitro or acutely in vivo
+### m18 is not required for MCMV growth in vitro or acutely in vivo
 
-The fact that m18 ORF is highly conserved across strains of MCMV (
+The fact that m18 ORF is highly conserved across strains of MCMV (Khairallah et al., 2015) suggests that m18 exert an essential function in MCMV life cycle. Such function is unlikely to be ligand upregulation as their expression would be detrimental for viral fitness (and accordingly the virus actively evades them). To assess whether m18 was required for growth in vitro we infected NIH 3T3 cells with WT or ∆18 MCMV and assessed viral output by plaque assay 2,3,4,5 and six days post infection. ∆18 MCMV did not grow significantly different from WT MCMV in this assay (Figure 7A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig7-v2.jpg)
 
-**Figure 7.:** (A) MCMV titers in supernatents of NIH-3T3 cells infected with either WT or ∆18 MCMV. (B) qPCR analysis of MCMV genome copy number from spleen, lung, and liver tissues of BALB/c mice infected with 500,000 p.f.u. of WT or MCMVm18stop. (C) qPCR analysis of MCMV genome copy number from spleen, lung, and liver tissues of RAG-/-γC-/- Mice infected with 50,000 p.f.u. of WT or MCMVm18stop.DOI: http://dx.doi.org/10.7554/eLife.14749.013
+**Figure 7.:** (A) MCMV titers in supernatents of NIH-3T3 cells infected with either WT or ∆18 MCMV. (B) qPCR analysis of MCMV genome copy number from spleen, lung, and liver tissues of BALB/c mice infected with 500,000 p.f.u. of WT or MCMVm18stop. (C) qPCR analysis of MCMV genome copy number from spleen, lung, and liver tissues of RAG-/-γC-/- Mice infected with 50,000 p.f.u. of WT or MCMVm18stop.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** m18stop does not induce RAE-1 expression or cause a defect in IE-1 expression.(A) RT-qPCR analysis of Raet1 expression in mouse fibroblasts infected with WTMCMV or MCMVm18stop. (B) RT-qPCR analysis of MCMV IE-1 expression in mouse fibroblasts infected with WTMCMV or MCMVm18stop. **p<0.05. n.s., Not significant (Students T-test).DOI: http://dx.doi.org/10.7554/eLife.14749.014
+**Figure 7—figure supplement 1.:** (A) RT-qPCR analysis of Raet1 expression in mouse fibroblasts infected with WTMCMV or MCMVm18stop. (B) RT-qPCR analysis of MCMV IE-1 expression in mouse fibroblasts infected with WTMCMV or MCMVm18stop. **p<0.05. n.s., Not significant (Students T-test).
 
 We then sought to determine whether m18 is critical for viral growth in vivo. As the ∆18 MCMV includes a large (3 kB) genome deletion we generated an additional mutant MCMV to eliminate m18 expression with minimal alteration to the rest of the genome. This virus mutant (MCMVm18stop) includes a set of two stop codons early in the m18 coding sequence preventing the production of the m18 protein. Like ∆18 MCMV, MCMVm18stop fails to induce RAE-1 expression in mouse fibroblasts, but has no defect in IE-1 expression (Figure 7—figure supplement 1) and growth was similar to wild type virus.
 
@@ -157,21 +157,21 @@ To assess the roll of m18 in vivo we infected BALB/c mice by intraperitoneal (i.
 
 It is possible that a deleterious effect of losing m18 was masked in WT mice by immune surveillance. To assess viral fitness in the absence of immune surveillance, we assessed the growth of WT MCMV and MCMVm18stop in RAG-/- yC-/- mice. These mice lack T cells, B cells, and NK cells. Interestingly, these mice also showed identical levels of MCMV between the WT and mutant viruses in spleen, lung, and liver (Figure 7C). Indicating that m18 is dispensable for viral growth at this early time point.
 
-## Model for m18 induced RAE-1 expression in MCMV infection
+### Model for m18 induced RAE-1 expression in MCMV infection
 
-Together our results suggest a model for RAE-1 regulation in which HDAC3, constitutively activated by CK2, maintains
+Together our results suggest a model for RAE-1 regulation in which HDAC3, constitutively activated by CK2, maintains Raet1 in a repressed state. During MCMV infection m18 protein interacts with CK2 and prevents the activation of HDAC3, reducing its repressive activity. The Raet1 promoter becomes unrepressed and constitutively bound Sp3 can recruit transcriptional machinery to transcribe Raet1. To circumvent this induction that would target infected cells for elimination by NK-Cells, MCMV encodes a number of highly efficient evasins that prevent NKG2D from recognizing RAE-1 during viral infection (Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig8-v2.jpg)
 
-**Figure 8.:** In the absence of stimulus CK2 phosphoylates and activates HDAC3, which represses the Raet1 promoter. During MCMV infection m18 directly interacts with CK2 preventing activation of HDAC3 and allowing the Raet1 promoter to become de-repressed, and permiting the expression of Raet1. MCMV also encodes a variety of evasins that prevent the cell surface expression of RAE-1 in order to evade recognition and killing by NK cells. Together these systems allow the virus to inhibit HDAC3 activity, while evading the deleterious effects of inducing NKG2D ligands.DOI: http://dx.doi.org/10.7554/eLife.14749.015
+**Figure 8.:** In the absence of stimulus CK2 phosphoylates and activates HDAC3, which represses the Raet1 promoter. During MCMV infection m18 directly interacts with CK2 preventing activation of HDAC3 and allowing the Raet1 promoter to become de-repressed, and permiting the expression of Raet1. MCMV also encodes a variety of evasins that prevent the cell surface expression of RAE-1 in order to evade recognition and killing by NK cells. Together these systems allow the virus to inhibit HDAC3 activity, while evading the deleterious effects of inducing NKG2D ligands.
 
-## HDAC inhibitors of other herpesviruses induce expression of NKG2D ligands
+### HDAC inhibitors of other herpesviruses induce expression of NKG2D ligands
 
-Some other herpesviruses also encode viral HDAC inhibitors. Two prominent examples of HDAC inhibiting viral proteins are IE1 from HCMV (
+Some other herpesviruses also encode viral HDAC inhibitors. Two prominent examples of HDAC inhibiting viral proteins are IE1 from HCMV (Nevels et al., 2004) and ICP0 from HSV-1 (Gu et al., 2005). We sought to determine whether expression of these proteins would be sufficient to induce expression of human NKG2D ligands. We transfected human foreskin fibroblasts (HFFs) with plasmids expressing IE1 or ICP0 or empty vector and measured expression of human NKG2D-ligands by RT-qPCR compared to vector control. Both ICP0 and IE1 induced expression of human ULBP1 (Figure 9A, B). These results suggest that viral inhibition of HDACs is a common mechanism driving NKG2D ligand induction in humans and mice.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig9-v2.jpg)
 
-**Figure 9.:** (A, B) RT-qPCR analysis of ULBP1 expression in Human foreskin fibroblasts (HFFs) transfected with empty vector or IE-1 (HCMV), or ICP0 (HSV-1). Data are normalized to vector control and represented as mean±SEM. Data are representative of three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.14749.016
+**Figure 9.:** (A, B) RT-qPCR analysis of ULBP1 expression in Human foreskin fibroblasts (HFFs) transfected with empty vector or IE-1 (HCMV), or ICP0 (HSV-1). Data are normalized to vector control and represented as mean±SEM. Data are representative of three independent experiments.
 
 ## Discussion
 
@@ -189,64 +189,264 @@ The regulation of NKG2D ligands is an important pivot point in immune regulation
 
 ## Materials and methods
 
-## Cell lines and reagents
+### Cell lines and reagents
 
 All cells cultured in DMEM with 10% FBS (Invitrogen, Carlsbad CA) and 100 μ/mL Penicillin/Streptomycin (Invitrogen) unless otherwise noted. NIH 3T3 cells (ATC#CRL-1658) were obtained from the ATTC. HFF-1 cells (ATCC#SCRC-1041) were obtained from the ATTC. Mouse fibroblasts were generated as described (Gasser et al., 2005) and provided by Pr D Raulet. MCA-205 were received from Pr. L. Linear (UCSF). All cell lines tested negative for mycoplasma as described by Young et al. (2010). Mithramycin A and Butyrate were purchased from Sigma (St. Louis, MO). RGFP966 was purchased from Seleckchem (Houston, TX). Antibodies recognizing Sp1 (product # 07–645), Acetylated Histone 3 (product # 06–599) were purchased from Millipore (Billerica, MA). Antibodies against histone 3 (clone D1H2), HDAC3 (Clone 7G685), and antibody recognizing CKII substrate (#8738) were purchased from Cell Signaling Technologies (Danvers MA). Antibody recognizing CK2β (Product PA5-27416) was purchased from Thermo Fisher (Waltham, MA). Antibody against Sp3 (D-20) was purchased from Santa Cruz Biotechnology. Plasmid encoding HSV-1 ICP0 was provided by the Knipe Lab (Harvard). Plasmid encoding HCMV IE1 was provided by the Weinberger Lab (UCSF).
 
-## Transfection
+### Transfection
 
 Cells were transfected using FuGENE HD reagent (Promega, Madison WI) according to manufacturer’s instructions.
 
-## RT-qPCR and qPCR
+### RT-qPCR and qPCR
 
-RNA from mouse fibroblasts or human foreskin fibroblasts was extracted in Trizol (Invitrogen). DNA was removed through treatment with RQ1 DNase (Promega), RNA abundance and quality was measured using a nanodrop ND-1000 to analyze 260/230 ratios. and 1 μg of RNA was reverse transcribed for 45 min at 42°C using oligo(dT) primer (IDT) and SuperScript II (Invitrogen) in 20 μl total volume. cDNA was analyzed using an ABI7300 RT-qPCR System and cycled using a 95°C dissociation step for 15 s and a 60°C amplification step for 1 min for 40 cycles. Samples were prepared as 1 μl of prepared cDNA with 10 μl of iTAQ universal Syber Green supermix (Invitrogen) with primers at a concentration of 300 nM in a total reaction volume of 20 μl. Cq values were determined using the Applied Biosystems 7300 SDS software. All samples were run as triplicates from the same pool of cDNA and the results averaged. Average Cq values were then normalized by ∆∆CT against the indicated reference gene. Biological replicates were then used to calculate mean and standard deviation of values. Between 3 and 5 biological replicates were used in each experiment. Samples without RT were included to control for DNA contamination. RAE-1 primers were described previously (Tokuyama et al., 2011), ULBP-1 primers can be found in Table 1.10.7554/eLife.14749.017Table 1.qPCR primers.DOI: http://dx.doi.org/10.7554/eLife.14749.017Gene symbol Accession number Forward Reverse Amplicon length Location ULBP1  Q9BZM6gccaggatgtcttgtgagcatgaattcttggctccaggatgaagtgct134Exon 3HPRT  P00492ggtgaaaaggaccccacgaagggactccagatgtttccaaac205Exon Spanning(7–9)
+RNA from mouse fibroblasts or human foreskin fibroblasts was extracted in Trizol (Invitrogen). DNA was removed through treatment with RQ1 DNase (Promega), RNA abundance and quality was measured using a nanodrop ND-1000 to analyze 260/230 ratios. and 1 μg of RNA was reverse transcribed for 45 min at 42°C using oligo(dT) primer (IDT) and SuperScript II (Invitrogen) in 20 μl total volume. cDNA was analyzed using an ABI7300 RT-qPCR System and cycled using a 95°C dissociation step for 15 s and a 60°C amplification step for 1 min for 40 cycles. Samples were prepared as 1 μl of prepared cDNA with 10 μl of iTAQ universal Syber Green supermix (Invitrogen) with primers at a concentration of 300 nM in a total reaction volume of 20 μl. Cq values were determined using the Applied Biosystems 7300 SDS software. All samples were run as triplicates from the same pool of cDNA and the results averaged. Average Cq values were then normalized by ∆∆CT against the indicated reference gene. Biological replicates were then used to calculate mean and standard deviation of values. Between 3 and 5 biological replicates were used in each experiment. Samples without RT were included to control for DNA contamination. RAE-1 primers were described previously (Tokuyama et al., 2011), ULBP-1 primers can be found in Table 1.
+
+**Table 1.**
+ qPCR primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene symbol</th>
+      <th>Accession number</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+      <th>Amplicon length</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ULBP1</td>
+      <td>Q9BZM6</td>
+      <td>gccaggatgtcttgtgagcatgaa</td>
+      <td>ttcttggctccaggatgaagtgct</td>
+      <td>134</td>
+      <td>Exon 3</td>
+    </tr>
+    <tr>
+      <td>HPRT</td>
+      <td>P00492</td>
+      <td>ggtgaaaaggaccccacgaag</td>
+      <td>ggactccagatgtttccaaac</td>
+      <td>205</td>
+      <td>Exon Spanning(7–9)</td>
+    </tr>
+  </tbody>
+</table>
 
 For DNA qPCR DNA was extracted from single cell suspensions of mouse tissue using Quiagen DNeasy Blood and Tissue Kit (Qiagen). DNA abundance and quality was measured using a nanodrop ND-100 to analyze 260/290 ratios. Samples for use in qPCR were prepared as 2 μL of isolated DNA with 10 μL of iTAQ universal Syber Green supermix (Invitrogen) with primers at a concentration of 300 nM, and cycled as described above with Cq values calculated as detailed above. Between 5–7 biological replicates were used in each experiment, tissues from uninfected mice were included to control for viral DNA contamination, and buffer processed without tissues were included to control for non-viral DNA contamination. MCMV gB primers were described previously by Khairallah and collegues. Standard curve for the calculation of absolute genome number was done using known quantity of purified MCMV BAC. Genome copy per gram tissue was calculated from weight of starting material and genome copies in each sample. Limit of detection was defined for each experiment and tissue as the copy number calculated from the average Cq from uninfected tissue.
 
-## Virus production, propagation, and infection
+### Virus production, propagation, and infection
 
-Mutant MCMV lacking genes m01 through m22 (MCMV∆1–22) was a gift from Dr. Hidde Ploegh (Whitehead Institute, MIT, MA). E. coli strain DH10B were transformed with MCMV BAC pSM3fr and a plasmid encoding the arabinose-inducible Red recombination genes, pkD46, were obtained from Dr. Martin Messerle (Hannover Medical School, Germany). Kanamycin cassette was amplified from pACYC177 (NEB, Ipswitch MA) containing 50 bp sequences on both ends homologous to the region of interest (Table 2). Transformation and induction of recombination was performed as described (Young et al., 2010). E. coli strain GS1783 containing MCMV pSM3fr was provided by Dr. Caroline Kulesza (Fort Lewis College) and used to perform scarless BAC recombination as described by Tischer and colleagues (Borst et al., 2007). The resulting BAC products were analyzed for anticipated mutation by PCR and EcoRI digestion. NIH 3T3 cells were transfected with BAC DNA, and supernatant was collected a week later. Supernatants were passaged twice in NIH 3T3 cells before use. All tissue culture infection experiments were performed at an MOI of 1.10.7554/eLife.14749.018Table 2.BAC mutagenesis primers.DOI: http://dx.doi.org/10.7554/eLife.14749.018Primer pair Forward Reverse Kanamycin* CGATTTATTCAACAAAGCCACGTTGTGTCTGCCAGTGTTACAACCAATTAACCAATTCTGAΔ1-6 gtgtcacgcgcacgtgttagcataggaatccagacgcgcgctcgcctgagatttacatactcaggacaggtgtgggcggttccaggtgtacgtaagcagaΔ6-12 acacgcccaaaatcacgcaatcatatataaatggacaatgaagccaatctgttctaagtaaaaggggatacgggcgggcgatacagatgtacgaacccaaΔ12-18 caacaaataaaaattgtacgctcattttatcgcgtctctgtcatgtgttcgaggggttggtacggttcgagcgattttggtagtccgagacgtccgccgcΔ18-22 ttgaatacgattgtttttattggcagcactgagcacacgtcccccccaccatccgctcgaggccatgctcaccaagaagaccgagtgtcccaacaacttcΔ1-22 gtgtcacgcgcacgtgttagcataggaatccagacgcgcgctcgcctgagatccgctcgaggccatgctcaccaagaagaccgagtgtcccaacaacttcΔ12 caacaaataaaaattgtacgctcattttatcgcgtctctgtcatgtgttcgttctaagtaaaaggggatacgggcgggcgatacagatgtacgaacccaaΔ13 tagaacaatatgtaaaccatctctcattcagctacatacagacaagggacTgataagaattatactttaatgggggacacgttctagaacacgataaactΔ14 AgtataattcttatcaattataccagagtttggtatttttttaatctgagCgagtgtgaaatggggaaactggcgcgtcttttcattcgtgctccacagcΔ15/16 cactcgctatccttcgaccacactttcgagtcttttaccgtatcaagaagAcaataaagatttcagacaaaaagtatggattgtgtgataatttattaaaΔ17 catactttttgtctgaaatctttattgtacgccatcgaaataaggggagcgtctgctttctttgaaatcggacgaccgatcagaacgtccgccttcgaga∆18 ttgaatacgattgtttttattggcagcactgagcacacgtcccccccaccGaggggttggtacggttcgagcgattttggtagtccgagacgtccgccgc∆19 ccaagacgctcgtcttataacaccgactgacgtttactccgactcaggatTcgaggcgagtcttcggagctgtacgctagggcgatcgccatcaccctct∆20/21 CggcgacgacggcgatcacggcgagggtgaagagggtgatggcgatcgccGctgtcatgtaaatggacggttattaaaagatgaggtcgtgtgacctctg∆22 GggtagcgcctcgatcgacgagcgtcggacaaagaaaccgggagaagaagAtccgctcgaggccatgctcaccaagaagaccgagtgtcccaacaacttcMCMVm18stop gcagcggttccgccgtccccatcgcgacgatgggcgctccgaattcctaataaaccgactcccgtccccaccaaggatgacgacgataagtagggggagcgcccatcgtcgcgatttattaggaattccgcgctgctggcgatgagcgtggtggggacgggagtcggtaaccaattaaccaattctgattag*Kanamycin specific oligos were added to the 3 the 3ggaattccgcgctgctggcgatgagcgtggtgggga.
+Mutant MCMV lacking genes m01 through m22 (MCMV∆1–22) was a gift from Dr. Hidde Ploegh (Whitehead Institute, MIT, MA). E. coli strain DH10B were transformed with MCMV BAC pSM3fr and a plasmid encoding the arabinose-inducible Red recombination genes, pkD46, were obtained from Dr. Martin Messerle (Hannover Medical School, Germany). Kanamycin cassette was amplified from pACYC177 (NEB, Ipswitch MA) containing 50 bp sequences on both ends homologous to the region of interest (Table 2). Transformation and induction of recombination was performed as described (Young et al., 2010). E. coli strain GS1783 containing MCMV pSM3fr was provided by Dr. Caroline Kulesza (Fort Lewis College) and used to perform scarless BAC recombination as described by Tischer and colleagues (Borst et al., 2007). The resulting BAC products were analyzed for anticipated mutation by PCR and EcoRI digestion. NIH 3T3 cells were transfected with BAC DNA, and supernatant was collected a week later. Supernatants were passaged twice in NIH 3T3 cells before use. All tissue culture infection experiments were performed at an MOI of 1.
 
-## Mice
+**Table 2.**
+ BAC mutagenesis primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer pair</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kanamycin*</td>
+      <td>CGATTTATTCAACAAAGCCACGTTGTGTCT</td>
+      <td>GCCAGTGTTACAACCAATTAACCAATTCTGA</td>
+    </tr>
+    <tr>
+      <td>Δ1-6</td>
+      <td>gtgtcacgcgcacgtgttagcataggaatccagacgcgcgctcgcctgag</td>
+      <td>atttacatactcaggacaggtgtgggcggttccaggtgtacgtaagcaga</td>
+    </tr>
+    <tr>
+      <td>Δ6-12</td>
+      <td>acacgcccaaaatcacgcaatcatatataaatggacaatgaagccaatct</td>
+      <td>gttctaagtaaaaggggatacgggcgggcgatacagatgtacgaacccaa</td>
+    </tr>
+    <tr>
+      <td>Δ12-18</td>
+      <td>caacaaataaaaattgtacgctcattttatcgcgtctctgtcatgtgttc</td>
+      <td>gaggggttggtacggttcgagcgattttggtagtccgagacgtccgccgc</td>
+    </tr>
+    <tr>
+      <td>Δ18-22</td>
+      <td>ttgaatacgattgtttttattggcagcactgagcacacgtcccccccacc</td>
+      <td>atccgctcgaggccatgctcaccaagaagaccgagtgtcccaacaacttc</td>
+    </tr>
+    <tr>
+      <td>Δ1-22</td>
+      <td>gtgtcacgcgcacgtgttagcataggaatccagacgcgcgctcgcctgag</td>
+      <td>atccgctcgaggccatgctcaccaagaagaccgagtgtcccaacaacttc</td>
+    </tr>
+    <tr>
+      <td>Δ12</td>
+      <td>caacaaataaaaattgtacgctcattttatcgcgtctctgtcatgtgttc</td>
+      <td>gttctaagtaaaaggggatacgggcgggcgatacagatgtacgaacccaa</td>
+    </tr>
+    <tr>
+      <td>Δ13</td>
+      <td>tagaacaatatgtaaaccatctctcattcagctacatacagacaagggac</td>
+      <td>Tgataagaattatactttaatgggggacacgttctagaacacgataaact</td>
+    </tr>
+    <tr>
+      <td>Δ14</td>
+      <td>Agtataattcttatcaattataccagagtttggtatttttttaatctgag</td>
+      <td>Cgagtgtgaaatggggaaactggcgcgtcttttcattcgtgctccacagc</td>
+    </tr>
+    <tr>
+      <td>Δ15/16</td>
+      <td>cactcgctatccttcgaccacactttcgagtcttttaccgtatcaagaag</td>
+      <td>Acaataaagatttcagacaaaaagtatggattgtgtgataatttattaaa</td>
+    </tr>
+    <tr>
+      <td>Δ17</td>
+      <td>catactttttgtctgaaatctttattgtacgccatcgaaataaggggagc</td>
+      <td>gtctgctttctttgaaatcggacgaccgatcagaacgtccgccttcgaga</td>
+    </tr>
+    <tr>
+      <td>∆18</td>
+      <td>ttgaatacgattgtttttattggcagcactgagcacacgtcccccccacc</td>
+      <td>Gaggggttggtacggttcgagcgattttggtagtccgagacgtccgccgc</td>
+    </tr>
+    <tr>
+      <td>∆19</td>
+      <td>ccaagacgctcgtcttataacaccgactgacgtttactccgactcaggat</td>
+      <td>Tcgaggcgagtcttcggagctgtacgctagggcgatcgccatcaccctct</td>
+    </tr>
+    <tr>
+      <td>∆20/21</td>
+      <td>Cggcgacgacggcgatcacggcgagggtgaagagggtgatggcgatcgcc</td>
+      <td>Gctgtcatgtaaatggacggttattaaaagatgaggtcgtgtgacctctg</td>
+    </tr>
+    <tr>
+      <td>∆22</td>
+      <td>Gggtagcgcctcgatcgacgagcgtcggacaaagaaaccgggagaagaag</td>
+      <td>Atccgctcgaggccatgctcaccaagaagaccgagtgtcccaacaacttc</td>
+    </tr>
+    <tr>
+      <td>MCMVm18stop</td>
+      <td>gcagcggttccgccgtccccatcgcgacgatgggcgctccgaattcctaataaaccgactcccgtccccaccaaggatgacgacgataagtaggg</td>
+      <td>ggagcgcccatcgtcgcgatttattaggaattccgcgctgctggcgatgagcgtggtggggacgggagtcggtaaccaattaaccaattctgattag</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Kanamycin specific oligos were added to the 3 the 3ggaattccgcgctgctggcgatgagcgtggtgggga._
+
+### Mice
 
 BALB/cJ were purchased from The Jackson Laboratory. All mice were maintained under specific pathogen free conditions in the UC-Berkeley Animal Facilities. Mice used in experiments were between 3 and 8 weeks of age. All experimental procedures were conducted in accordance with the institution guidelines for care and use. Mice were infected with the indicated amount of virus. Liver, lung, and spleen homogenates were prepared at day five post infection, and viral titer was determined by qPCR specific for MCMV gB as described previously (Smith et al., 2008).
 
-## Luciferase assay
+### Luciferase assay
 
 Mouse fibroblasts were transfected with indicated constructs. Six separate transfections were averaged for each condition. At 24 hr post transfection passive lysis buffer (Promega #E1941) was used to lyse the cells. Lysates were transferred to an opaque assay plate (Corning, Corning NY) and D-Luciferin reagent was added to the plate. Luminescence was assessed over 10 s using an LMAX-II luminometer.
 
-## RAE-1 staining
+### RAE-1 staining
 
 Mouse fibroblasts were harvested in 2 mM EDTA in PBS and stained with monoclonal rat anti panRAE-1or Rat IgG2A isotype control (R&D systems, Minneapolis MN) followed by APC-conjugated goat anti-rat IgG (Jackson ImmunoResearch, West Grove PA). All samples were co-stained with 7-AAD (BD Biosciences, San Jose CA) to exclude dead cells. Cells were analyzed by Flow cytometry using an LSR-Fortessa flow cytometer (BD Biosciences).
 
-## Electrophoretic mobility shift assay (EMSA)
+### Electrophoretic mobility shift assay (EMSA)
 
-Nuclear lysates were prepared as described by Jianping Ye (Pennington Biomedical Research Center, Louisiana State University). Oligonucleotides for m18RE and Sp1 consensus sites can be found in Table 3. Oligonucleotides were labeled with 32P-y-ATP using T4 kinase (NEB). Probes were purified on a G-50 column (G&E health care, Little Chalfont UK), and incorporated radioactivity was measured using a Beckman LS60001C scintillation counter. 4000cpm of labeled probe were added to nuclear lysates. Where indicated, competing unlabeled DNA probes were included in the reaction at a 1000:1 ratio. For super-shift assay 1ug of indicated Ab was added. Samples were run on a 5% native acrylamide gel. Gels were dried before being exposed in phosphofluor cassettes and analyzed using a Typhoon imager.10.7554/eLife.14749.019Table 3.EMSA Oligos.DOI: http://dx.doi.org/10.7554/eLife.14749.019Primer pair Forward m18RE ggctcgcaggtccacgccccttggcaccggagm18RE* ggctcgcaggtccaaaccccttggcaccggagSp Consensus attcgatcggggcggggcgagcSp* Consensus attcgatcggttcggggcgagc
+Nuclear lysates were prepared as described by Jianping Ye (Pennington Biomedical Research Center, Louisiana State University). Oligonucleotides for m18RE and Sp1 consensus sites can be found in Table 3. Oligonucleotides were labeled with 32P-y-ATP using T4 kinase (NEB). Probes were purified on a G-50 column (G&E health care, Little Chalfont UK), and incorporated radioactivity was measured using a Beckman LS60001C scintillation counter. 4000cpm of labeled probe were added to nuclear lysates. Where indicated, competing unlabeled DNA probes were included in the reaction at a 1000:1 ratio. For super-shift assay 1ug of indicated Ab was added. Samples were run on a 5% native acrylamide gel. Gels were dried before being exposed in phosphofluor cassettes and analyzed using a Typhoon imager.
 
-## Affinity purification and peptide sequencing by LC-MS/MS
+**Table 3.**
+ EMSA Oligos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer pair</th>
+      <th>Forward</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>m18RE</td>
+      <td>ggctcgcaggtccacgccccttggcaccggag</td>
+    </tr>
+    <tr>
+      <td>m18RE*</td>
+      <td>ggctcgcaggtccaaaccccttggcaccggag</td>
+    </tr>
+    <tr>
+      <td>Sp Consensus</td>
+      <td>attcgatcggggcggggcgagc</td>
+    </tr>
+    <tr>
+      <td>Sp* Consensus</td>
+      <td>attcgatcggttcggggcgagc</td>
+    </tr>
+  </tbody>
+</table>
+
+### Affinity purification and peptide sequencing by LC-MS/MS
 
 Affinity-purification mass spectrometry (APMS) was used to identify candidate host-virus protein-protein interactions for the m18 protein. To this end, the annotated m18 orf was cloned into the pcDNA4TO expression vector encoding either an N-terminal or C-terminal 2X-StrepTag (m18-NS or m18-CS) for affinity purification and peptide sequencing by tandem liquid chromatography-mass spectrometry (LC-MS/MS) using methods identical to those previously reported (Greninger et al., 2012) Briefly, 10 μg of vector were transfected into 15 cm cultures of HEK293T cells using a Transit-LT1 reagent (Mirus Bio, Madison, WI) at a 3:1 vol to mg plasmid, and the cells were grown for 48 hr. Lysates were prepared in 0.1% NP40, 50 mM Tris HCl pH 8.0, 150 mM NaCl, 1 mM EDTA. The M18 protein was captured on StrepTactin Sepharose, and then eluted with 1X desthiobiotin (IBA Technology, Gottingen Germany) as reported. To identify captured proteins by proteomic analysis, the protein samples were reduced with DTT, alkylated with iodoacetamide, and digested in solution with sequencing grade porcine trypsin (Promega) following an identical protocol to that reported (Greninger et al., 2012). The resulting peptides were subjected to LC-MS/MS on an LTQ-FT mass spectrometer (Thermo Scientific) equipped with a Nano-Acquity ultraperformance liquid chromatography system (Waters) for reversed-phase chromatography with a C18 column (BEH130; 1.7 μm bead size, 100 μm by 100 μm), using identical acquisition parameters as reported (Greninger et al., 2012). MS data were searched using Protein Prospector software v. 5.10.17 (54) against the sequence of the m18 protein constructs and the NCBI Refseq human + virus database (downloaded Jan. 14, 2012) containing 131,459 sequences, concatenated with 131,459 additional randomized decoy sequences (Chalkley et al., 2008). A false discovery rate of <1% was obtained using protein score of 22, peptide score 15, protein expectation value 0.05 and a peptide expectation value of 0.001. Modifications allowed in the protein identification search were: fixed carbamidomethylation of Cys and the following variable modifications: oxidation of Met, start-Met cleavage, oxidation of the N-terminus, acetylation of the N-terminus, and pyroglutamate formation from Gln. HEK293T cells were chosen for these experiments to allow for identification of frequent background proteins and for specificity scoring, by comparison with a background dataset of unrelated picornavirus-host APMS experiments assayed in the same experimental system (Greninger et al., 2012, PMC4332878). Specificity scoring by Z-score was calculated using N = 3 m18 APMS experiments, which included one m18-NS and two biological replicate m18-CS experiments, and a background dataset of 598 unrelated picornavirus-host APMS experiments. Additional peptides for the m18 protein constructs were identified by allowing additional missed cleavages and Ser/Thr phosphorylation. Phosphorylation sites are reported with a site localization (SLIP) score, where SLIP ≥6 corresponds to >95% confident site assignment (PMC3134073).
 
-## Western blotting
+### Western blotting
 
 Nuclear and cytoplasmic lysates were separated as above for EMSA analysis. Protein amounts were quantified using BCA assay (Thermo). Cell lysates were run on a 4–12% SDS-PAGE gradient gel and transferred to Immobilon-fl PVDF membranes (Millipore). Membranes were blocked with 5% Milk in PBS with 0.05%, or 1% BSA Tween before being probed with the indicated antibodies. Where phosphor-epitopes were being assayed, 1% BSA was used in place of 5% milk. Membranes were probed with Li-COR secondary antibodies and imaged on an Odyssey Li-COR imager.
 
-## CHiP
+### CHiP
 
 ChIP was performed essentially as previously described (Elias and Gygi, 2007) with the exception being the use of a Fisher Scientific Sonic Dismembrator Model 100 to shear chromatin. Raet1e Promoter DNA was quantified by qPCR using previously described primers (Tokuyama et al., 2011). All samples were analyzed in triplicate.
 
-## Gene cloning
+### Gene cloning
 
-Primers to genes of interest were designed using cDNA sequences available in the Uniprot database. Primers can be found Table 4.10.7554/eLife.14749.020Table 4.Cloning and Mutagenesis primers.DOI: http://dx.doi.org/10.7554/eLife.14749.020Primer pair Forward Reverse m18RE mutant Quickchange ggaggctcgcaggtccaaaccccttggcaccggagctccggtgccaaggggtttggacctgcgagcctccm18 atggctgacactgggctcaatcatcccaccagagagm19 gatcgaattcATGAGTATCATCGCCACACCCATCCgatcgcggccgcTCACCCTCGCCGTGATCGEBNA-1 ATCGGAATTCGCCACCATGTCTGACGAGGGGCCAGAATTCTCGAGCTCCTGCCCTTCCTCACC
+Primers to genes of interest were designed using cDNA sequences available in the Uniprot database. Primers can be found Table 4.
 
-## Site directed mutagenesis
+**Table 4.**
+ Cloning and Mutagenesis primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer pair</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>m18RE mutant Quickchange</td>
+      <td>ggaggctcgcaggtccaaaccccttggcaccggag</td>
+      <td>ctccggtgccaaggggtttggacctgcgagcctcc</td>
+    </tr>
+    <tr>
+      <td>m18</td>
+      <td>atggctgacactgggc</td>
+      <td>tcaatcatcccaccagagag</td>
+    </tr>
+    <tr>
+      <td>m19</td>
+      <td>gatcgaattcATGAGTATCATCGCCACACCCATCC</td>
+      <td>gatcgcggccgcTCACCCTCGCCGTGATCG</td>
+    </tr>
+    <tr>
+      <td>EBNA-1</td>
+      <td>ATCGGAATTCGCCACCATGTCTGACGAGGGGCCAG</td>
+      <td>AATTCTCGAGCTCCTGCCCTTCCTCACC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Site directed mutagenesis
 
 Site directed mutagenesis was carried out using the Quick-change site directed mutagenesis protocol (Stratagene, La Jolla CA). Primers used can be found below.
 
-## Plaque assay
+### Plaque assay
 
 Plaque assays were performed as previously described (Tokuyama et al., 2011).
 
-## Immunofluorescence assay
+### Immunofluorescence assay
 
 Mouse fibroblasts were plated onto glass slides before transfection with m18-RFP as described above. IFA was performed essentially as previously described using the following staining buffers (1%BSA in PBS for pHDAC1/3 and HDAC1/3, 1% Goat serum in PBS for AcH3 or H3) (Bekerman et al., 2013). Fluorescent signal intensity in the nucleus was quantified using FIJI software (Karijolich et al., 2014).

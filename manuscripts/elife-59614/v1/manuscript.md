@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Sex-specific synaptic connectivity is beginning to emerge as a remarkable, but little explored feature of animal brains. We describe here a novel mechanism that promotes sexually dimorphic neuronal function and synaptic connectivity in the nervous system of the nematode Caenorhabditis elegans . We demonstrate that a phylogenetically conserved, but previously uncharacterized Doublesex/Mab-3 related transcription factor (DMRT), dmd-4 , is expressed in two classes of sex-shared phasmid neurons specifically in hermaphrodites but not in males. We find dmd-4 to promote hermaphrodite-specific synaptic connectivity and neuronal function of phasmid sensory neurons. Sex-specificity of DMD-4 function is conferred by a novel mode of posttranslational regulation that involves sex-specific protein stabilization through ubiquitin binding to a phylogenetically conserved but previously unstudied protein domain, the DMA domain. A human DMRT homolog of DMD-4 is controlled in a similar manner, indicating that our findings may have implications for the control of sexual differentiation in other animals as well.
+Sex-specific synaptic connectivity is beginning to emerge as a remarkable, but little explored feature of animal brains. We describe here a novel mechanism that promotes sexually dimorphic neuronal function and synaptic connectivity in the nervous system of the nematode Caenorhabditis elegans. We demonstrate that a phylogenetically conserved, but previously uncharacterized Doublesex/Mab-3 related transcription factor (DMRT), dmd-4, is expressed in two classes of sex-shared phasmid neurons specifically in hermaphrodites but not in males. We find dmd-4 to promote hermaphrodite-specific synaptic connectivity and neuronal function of phasmid sensory neurons. Sex-specificity of DMD-4 function is conferred by a novel mode of posttranslational regulation that involves sex-specific protein stabilization through ubiquitin binding to a phylogenetically conserved but previously unstudied protein domain, the DMA domain. A human DMRT homolog of DMD-4 is controlled in a similar manner, indicating that our findings may have implications for the control of sexual differentiation in other animals as well.
 
 ## Introduction
 
@@ -41,51 +41,83 @@ We describe here the function of a previously uncharacterized DMRT gene, dmd-4, 
 
 ## Results
 
-## Expression pattern of dmd-4
+### Expression pattern of dmd-4
 
 DMD-4 is one of ten DMRT proteins encoded by the C. elegans genome, only two of which, DMD-4 and DMD-5, are phylogenetically conserved in vertebrates (Volff et al., 2003; Wexler et al., 2014). Neither the expression nor the function of DMD-4 have previously been described. To determine the expression pattern of dmd-4, we used CRISPR/Cas9 genome engineering to tag the endogenous dmd-4 locus at the 3’ end of its coding region with gfp. We examined expression in sexually mature, adult animals and identified two sites of sexually dimorphic expression in the tail of the animal. DMD-4::GFP is expressed in PHA and PHB phasmid sensory neuron pairs of adult hermaphrodites, but not adult males (Figure 1A,B; Figure 1—figure supplement 1). Electron micrographic reconstruction of the synaptic connectivity of males and hermaphrodites revealed that these neurons display highly dimorphic synaptic connectivity (Cook et al., 2019; Jarrell et al., 2012; Figure 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the GFP-tagged dmd-4 locus in the dmd-4 (ot935) allele. The DM, DMA, and EH1 domains of DMD-4 are indicated in the colored boxes and labeled above the locus. (B) DMD-4::GFP is expressed in head sensory neurons and pharyngeal cells/the head mesodermal cell (hmc) in both sexes, and the phasmid sensory neurons PHA and PHB in both sexes until adulthood, when it is degraded in the male phasmids. Expression in the pharyngeal cells onsets during the ‘bean’ stage of embryogenesis. GFP is shown as color-inverted black and white. All scale bars (red horizontal bars) indicate 10 microns. Head images are maximum intensity projections of the entire worm; tail images are maximum intensity images of one half of the tail to clearly display phasmid nuclei. (C) Sexually dimorphic connectivity of the PHA and PHB neurons based on electron micrograph reconstruction (Cook et al., 2019; Jarrell et al., 2012).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Quantification of the number of phasmid neurons expressing DMD-4::GFP in L1/L4/adult animals of both sexes is shown (maximum is 4 cells for PHAL/R and PHBL/R), where each dot represents the number of neurons expressing in a single animal, blue horizontal bars indicate median, and black boxes indicate quartiles. Representative images are shown in Figure 1B.
 
 In addition to this sexually dimorphic expression, we observed sexually non-dimorphic expression of DMD-4 in a subset of head sensory neurons (AFD, AWB, AWC, ASE, ASG, ASH, BAG), a single pharyngeal neuron (I5) and a number of MS blastomere derived cells - the head mesodermal cell (hmc), a single pharyngeal muscle (pm8), a pharyngeal gland cell pair (g2L/R) and four of the six pharyngeal intestinal valve cells (Figure 1B).
 
 The onset of sexual differentiation in the C. elegans nervous system occurs at different stages of embryonic and postembryonic development (Barr et al., 2018; Emmons, 2005; Sulston and Horvitz, 1977; Sulston et al., 1983). To address the timing of sexually dimorphic DMD-4 expression, we examined expression of the gfp-tagged dmd-4 locus throughout all developmental stages. DMD-4::GFP fluorescence is first detectable in mid-embryonic development, with a pattern that is restricted to all the pharyngeal and the hmc cells described above. Onset of expression in the non-pharyngeal nervous system is first observed at around hatching in the same set of head and tail sensory neurons as observed in the adult stage, including the phasmid neurons PHA and PHB. During larval development, dmd-4::gfp expression is the same in both sexes until the L4 to adult molt when DMD-4::GFP protein starts to disappear from PHA and PHB in the male, but not the hermaphrodite (Figure 1—figure supplement 1). We conclude that sexually dimorphic dmd-4::gfp expression in the adult PHA and PHB neurons is the result of male-specific downregulation of dmd-4::gfp from these neurons. These dynamics contrast with the ontogeny of other sexually dimorphically expressed genes in the C. elegans nervous system, which often are not expressed at all until sexual maturation and then turn on in a sex-specific manner (e.g. daf-7 in ASJ, flp-13, eat-4 in PHC, srj-54 in AIM)(Hilbert and Kim, 2017; Lawson et al., 2019; Serrano-Saiz et al., 2017). Moreover, the hermaphrodite-specificity of DMD-4 expression also contrasts with the strict male-specificity of other DMRT proteins known to be dimorphically expressed in C. elegans (Lints and Emmons, 2002; Mason et al., 2008; Oren-Suissa et al., 2016; Yi et al., 2000).
 
-## Generation of a nervous system-specific knock-out allele of dmd-4
+### Generation of a nervous system-specific knock-out allele of dmd-4
 
 To assess dmd-4 function in the nervous system and, specifically, in the phasmid neurons, we used CRISPR/Cas9 genome engineering to delete the first two exons of the gene which code for most of the DNA binding domain (Figure 2A). This putative null allele (ot933) results in highly penetrant embryonic lethality (Figure 2A). A deletion allele generated by the C. elegans knockout consortium (tm1951), that eliminates parts of the DM domain, also results in lethality. Null mutant animals that escape embryonic lethality are scrawny and display a stuffed anterior intestine (Figure 2—figure supplement 1A,B). The stuffed anterior intestine may relate to developmental defects of the hmc, which fail to express a cell fate marker (arg-1::gfp) in dmd-4 mutants (Figure 2—figure supplement 1C). Another deletion allele that we generated using CRISPR/Cas9 leaves the DNA binding domain unaffected, but deletes other domains of the protein (DMA domain and EH1 domain)(Figure 2A), but this allele (ot896) results in no embryonic lethality.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig2-v1.jpg)
+
+**Figure 2.:** (A) The ot933 probable null allele of dmd-4 results in embryonic lethality and severe feeding defects in mutants that survive to adulthood. Deletion alleles generated by CRISPR/Cas9 are shown in the context of the dmd-4 locus above, the penetrance of ot933 embryonic lethality was quantified below by comparing the number of expected ot933 homozygous progeny from a balanced heterozygote mother (25% of total brood) with observed ot933 homozygous progeny. The difference between the observed number of ot933 homozygous progeny and expected homozygous progeny gives a measure of the penetrance of embryonic lethality. We observe a mean of 52% embryonic lethality, and comparing observed to expected ot933 progeny counts is significant by Wilcoxon rank-sum test. Each dot represents the brood size of one hermaphrodite, with blue bars indicating median and black boxes indicating quartiles. We show both observed and expected numbers of ot933 progeny in the figure panel. (B) The enhancers for I5/hmc expression, pharyngeal muscle expression, and somatic nervous system expression are located in separable regions of the dmd-4 promoter and introns. All constructs we examined are schematized, those that showed expression (promoter, intron 2.5, and intron 3) are shown in adult hermaphrodites to the right. GFP and mCherry are shown as color-inverted black and white, boundaries of the heads and tails of animals are marked with navy lines in all panels. Expressing cells are labeled on the GFP/mCherry images. (C) Generation of the dmd-4 (ot957ot935) nervous system null allele. Deletion of the third intron is schematized in the context of the dmd-4 locus above, color-inverted black and white GFP images of dmd-4 (ot935[DMD-4::GFP]) and dmd-4 (ot957ot935) hermaphrodites are shown below.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Constitutive loss of dmd-4 results in bacterial stuffing in the anterior intestine, as quantified by the accumulation of OP50-GFP. No anterior intestinal stuffing is observed in the him-5(e1490) control, dmd-4(ot935), dmd-4(ot957ot935), and dmd-4(ot990ot935). These four strains all maintain pharyngeal DMD-4 expression throughout the larval stages and into adulthood. The dmd-4(ot933) null mutant shows severe anterior intestinal stuffing similar to the ceh-34(n4796) strain, whose alimentary defect was used as a positive control (Hirose et al., 2010). Representative images of adult hermaphrodite animals are shown, white boxes indicate anterior intestine. (B) Quantification of OP50-GFP stuffing. Data are displayed as a violin plot, the internal box plots visualize the quartile distribution of data points, the center bar indicates the median, the blue boxes indicate quartiles, and the black bars indicate range. The black dots show outliers. (C) dmd-4(ot933) null mutants display defects in hmc development. The hmc is marked by a cytosolically localized arg-1::gfp transcriptional reporter (ccIs4443). In wild-type animals (n = 10), the hmc is localized posteriorly to the pharynx and always extends projections along the anterior intestine; in dmd-4 mutants (n = 10), no marker signal is visible in its normal localization, suggesting that the hmc does not develop properly. Representative color-inverted GFP images of adult hermaphrodite animals are shown; dotted lines show the outline of the animal. ‘GUT’ refers to autofluorescent gut granules (not GFP signal).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Markers for neuronal subtype differentiation of both head and tail neurons that express DMD-4 are shown in the dmd-4 (ot957ot935) mutant (where neuronal expression of DMD-4 is lost; shown at top). All markers continue to be expressed in dmd-4 mutant animals, suggesting normal generation and specification of all relevant neuron types. (B) Chemotaxis behavior generated by head sensory neurons is unaffected in dmd-4 (ot957ot935). Three experimental replicates were performed for all chemotaxis assays; each docant shows the chemotaxis index of one replicate, blue bars indicate median. P values are shown above black horizontal bars by Wilcoxon rank-sum test. The odorants used and relevant sensory neurons are shown below each experiment. Chemotaxis index calculation and assays were performed as previously described (see Materials and methods; Bargmann et al., 1993; Wes and Bargmann, 2001).
 
 We sought to generate a nervous system-specific allele of the dmd-4 locus that we would expect to be viable and thus allow us to study the role of dmd-4 in the sexually dimorphic phasmid sensory neurons. To this end, we aimed to identify (and then delete) the cis-regulatory element required for dmd-4 expression in the nervous system. Through the fusion of individual segments of the dmd-4 locus to gfp, we identified the third intron of the dmd-4 locus as containing the cis-regulatory information for all nervous system expression (Figure 2B). Using CRISPR/Cas9 genome engineering, we deleted this enhancer in the context of the dmd-4::gfp allele (dmd-4(ot957ot935)), and indeed found that in these animals dmd-4::gfp expression was lost in all head and tail neurons at all developmental stages, but unaffected in the pharynx and hmc (Figure 2C). Most importantly, dmd-4(ot957ot935) mutants showed none of the lethality or intestinal stuffing phenotypes associated with removal of the gene from all tissues (Figure 2—figure supplement 1A,B), allowing us to characterize the function of dmd-4 in the nervous system.
 
 Using this nervous system-specific allele, we evaluated several markers of neuronal identity to assess whether neurons that express dmd-4 were properly specified. We found no evidence of defects in general neuronal specification or morphology; all head sensory neurons as well as the phasmid neurons were generated in dmd-4(ot957ot935) mutant hermaphrodites and had a normal appearance of axon and dendrite morphologies (Figure 2—figure supplement 2). Furthermore, we examined transgenic reporters for neurotransmitter identity, neuropeptides, and receptors, and found no loss or misexpression of these genes in the amphid and phasmid neurons of dmd-4(ot957ot935) mutant animals (Figure 2—figure supplement 2). Lastly, behaviors associated with the function of head amphid sensory neurons also appear unaffected (Figure 2—figure supplement 2).
 
-## dmd-4 mutants display defects in sexually dimorphic synaptic connectivity
+### dmd-4 mutants display defects in sexually dimorphic synaptic connectivity
 
 The sex-shared phasmid sensory neurons are notable for their strikingly dimorphic synaptic connectivity patterns (Cook et al., 2019; Jarrell et al., 2012; Figure 1C). Not only do both the PHA and PHB neurons generate synaptic connections to male-specific neurons, but they also display dimorphic synaptic connections to neurons that are shared between the two sexes (Figure 1C). We have previously used in vivo synapse labeling techniques, GRASP (GFP-Reconstitution Across Synaptic Partners)(Feinberg et al., 2008) and iBLINC (Desbois et al., 2015), to show that juvenile stages exhibit non-dimorphic ‘sex-hybrid’ connectivity and that during sexual maturation, some synapses are then pruned, while others are maintained (Figure 3A; Oren-Suissa et al., 2016). Unlike many pruning/maintenance events during nervous system development in other animal species (Katz and Callaway, 1992; Katz and Shatz, 1996; Morgan et al., 2011; Vonhoff and Keshishian, 2017), this synaptic maintenance is not dependent on sex-specific patterns of neuronal activity. We arrived at this conclusion by genetic silencing of the phasmid neurons or reducing synaptic signaling in unc-13 mutant animals, neither of which affects sexually dimorphic synapse pruning/maintenance (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig3-v1.jpg)
+
+**Figure 3.:** (A) Sexually dimorphic connectivity of the phasmid neurons in wild-type animals and dmd-4 (ot957ot935) animals (quantified in B, representative images shown in Figure 3—figure supplement 2) is schematized. Adult sexual dimorphism is generated by synaptic pruning of juvenile ‘sex-hybrid’ connectivity (Oren-Suissa et al., 2016). (B) The hermaphrodite-specific connections between PHB>AVA and PHA>AVG are unaffected in dmd-4 (ot957ot935) mutants. Each dot represents one animal (red = hermaphrodite, cyan = male, in all figures), blue bars show median, black boxes represent quartiles. P values are shown above horizontal black bars by Wilcoxon rank-sum test with Bonferroni corrections for multiple testing where applicable (see Materials and methods). Representative images are shown in Figure 3—figure supplement 2. (C) The male-specific PHB>AVG connection is not pruned in dmd-4 (ot957ot935) mutant hermaphrodites, and this phenotype can be rescued by expressing dmd-4 cDNA specifically in the PHB neurons (‘PHB::DMD-4’). We quantified two independent transgenic lines for mutant rescue. dmd-4 (ot957ot935) mutant hermaphrodites also show an increased number of BFP puncta in the BFP::RAB-3 construct labeling pre-synaptic vesicles. The sexual dimorphism of PHA chemical synaptic output is shown on the left, based on the number of EM sections where PHA is presynaptic in both sexes, 110 sections in hermaphrodites and 610 sections in males, (Cook et al., 2019). We term this connectivity ‘male-enhanced’ as it is present in both sexes but stronger in the male. Representative images are shown in Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Reducing phasmid circuit activity either by mutation of the unc-13 regulator of synaptic vesicle exocytosis, or by chemogenetic, HisCl-mediated silencing of the PHB neuron, does not affect normal sex-specific synaptic pruning. Each dot represents one animal (red = hermaphrodite, cyan = male), blue bars show median, black boxes represent quartiles. P values are shown above horizontal black bars by Kruskal-Wallis with Dunn’s multiple comparisons test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Representative images of data quantified in Figure 3B,C. Axon traces are shown above (RFP for GRASP and GFP for the PHA::RAB-3 strain), puncta are shown below in color-inverted black and white images. Intestinal auto-fluorescence is labeled ‘GUT’. Synaptic puncta are labeled with navy arrows.
 
 Using these GRASP reagents we assessed a subset of the hermaphrodite-specific and male-specific connections in the adult phasmid neurons of dmd-4(ot957ot935) mutant animals. We observed selective defects in sexually dimorphic synaptic connectivity. While hermaphrodite-specific synaptic connections (between PHA>AVG and PHB>AVA) are unaffected in dmd-4 mutants (Figure 3A,B, Figure 3—figure supplement 2), male-specific synapses (PHB>AVG) failed to be pruned in hermaphrodite dmd-4 mutants (Figure 3A,C, Figure 3—figure supplement 2; Oren-Suissa et al., 2016). We also developed a PHA-specific transgene using a synaptic vesicle-associated protein, RAB-3, to visualize all presynaptic zones of PHA as discrete BFP puncta (Figure 3C). Transgenic animals show the predicted sexual dimorphism based on electron micrographic reconstruction of PHA synaptic connectivity, with wild-type males displaying more synaptic outputs than wild-type hermaphrodites (Figure 1C, Figure 3C, Figure 3—figure supplement 2; Cook et al., 2019; Jarrell et al., 2012). In dmd-4(ot957ot935) mutant animals this sexual dimorphism is also lost, corroborating the notion that synapses fail to be pruned (Figure 3C, Figure 3—figure supplement 2).
 
 We rescued the PHB>AVG synaptic pruning defect by expressing dmd-4 cDNA under the control of a PHB-specific promoter, confirming the cell-autonomous role of dmd-4 in the presynaptic neuron to control sex-specific synaptic pruning (Figure 3C, Figure 3—figure supplement 2). Taken together our results indicate that dmd-4 functions in the phasmid neurons to promote pruning of phasmid synaptic connections in hermaphrodite animals during sexual maturation.
 
-## Behavioral defects of dmd-4 mutants
+### Behavioral defects of dmd-4 mutants
 
 Sexually dimorphic connectivity of the phasmid neurons gives rise to sexually dimorphic behavioral outputs in adult animals. In larval animals, the phasmid neurons function to mediate chemosensory avoidance behavior (Hilliard et al., 2002; Zou et al., 2017), a functional output which is maintained in adult hermaphrodites, but lost in adult males (Oren-Suissa et al., 2016). dmd-4 mutants exhibit no defects in SDS avoidance in juvenile stages, before sexual maturation (Figure 4A). However, as adults, these animals display a partial masculinization of SDS avoidance behavior, such that mutant hermaphrodites were less responsive to the noxious stimulus, although still intermediate relative to control adult males (Figure 4A). It is possible that this defect is the result of lack of proper pruning of synapses, but it could also be the result of other functions of dmd-4 in the phasmid neurons.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig4-v1.jpg)
 
-**Figure 4.:** dmd-4 affects sexually dimorphic behavior.Noxious chemosensory avoidance is mediated by the PHB neuron (Hilliard et al., 2002), and sexually dimorphic in adults (Oren-Suissa et al., 2016). Left panel shows predicted synaptic input into avoidance behavior by relevant amphid and phasmid neurons. All experiments were done using tax-4 (p678) mutants to disable amphid input and uncover phasmid function, as previously described (Hilliard et al., 2002). dmd-4 (ot957ot935) adult hermaphrodites show reduced chemosensory avoidance behavior, but this is not evident in larval animals. Each dot represents the average reversal index of one animal over 10 experimental trials, median shown with vertical magenta bar. P values shown to the right by Wilcoxon rank-sum test with Bonferroni corrections for multiple testing (where applicable; see Materials and methods).
+**Figure 4.:** Noxious chemosensory avoidance is mediated by the PHB neuron (Hilliard et al., 2002), and sexually dimorphic in adults (Oren-Suissa et al., 2016). Left panel shows predicted synaptic input into avoidance behavior by relevant amphid and phasmid neurons. All experiments were done using tax-4 (p678) mutants to disable amphid input and uncover phasmid function, as previously described (Hilliard et al., 2002). dmd-4 (ot957ot935) adult hermaphrodites show reduced chemosensory avoidance behavior, but this is not evident in larval animals. Each dot represents the average reversal index of one animal over 10 experimental trials, median shown with vertical magenta bar. P values shown to the right by Wilcoxon rank-sum test with Bonferroni corrections for multiple testing (where applicable; see Materials and methods).
 
-## Control of spatiotemporal and sexual specificity of DMD-4 expression
+### Control of spatiotemporal and sexual specificity of DMD-4 expression
 
 We sought to place the regulation of DMD-4 expression in the context of other regulatory pathways that control spatial, sexual and temporal aspects of gene expression in the nervous system. First, to ask how dmd-4 expression is established specifically in the phasmid neurons in an initially non-sex-specific manner at hatching, we turned to terminal selector type transcription factors, master regulatory factors that control multiple aspect of a neuron’s identity (Hobert, 2016). Based on previous mutant analysis, the ceh-14 LIM homeobox transcription factor is a terminal selector for the phasmid neurons (Kagoshima et al., 2013; Serrano-Saiz et al., 2013). We find that in ceh-14 null mutants, dmd-4::gfp expression is selectively lost in the phasmid neurons in both sexes during larval stages and in the adult stage in hermaphrodites (Figure 5A). This is also consistent with the observation that dmd-4(ot957ot935) mutant hermaphrodites display masculinization of SDS avoidance behavior (Figure 4A), a phenotype observed in ceh-14 mutant hermaphrodites (Oren-Suissa et al., 2016).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig5-v1.jpg)
 
-**Figure 5.:** dmd-4 is regulated by spatial, temporal, and sex-specific cues in the phasmid neurons.(A) DMD-4 expression is lost in hermaphrodite animals when the ceh-14 terminal selector of phasmid neuron fate is mutated. Male expression is unaffected. Color-inverted black and white GFP images are shown to the left in all panels, quantification of phasmid neurons expressing DMD-4 in wild-type and mutant animals is shown to the right in all panels. Horizontal blue line indicates median. (B) Constitutive, panneuronal expression of the LIN-41 heterochronic gene maintains DMD-4 in the adult male phasmids. Color-inverted black and white GFP images of adult males are shown in addition to the panneuronal, RFP-tagged LIN-41 overexpression (‘UPN::LIN-41’). L4 male quantification of DMD-4 expression in the phasmids (from Figure 1B) is shown again for reference comparison to control adults (siblings of transgenic animals) and LIN-41 overexpressing males. We quantified two independent transgenic lines. P values are shown above horizontal black bars by Wilcoxon rank-sum test with Bonferroni corrections for multiple testing where applicable (see Materials and methods) in all panels. (C) DMD-4 is degraded in the phasmid neurons of tra-1 (e1099) XX pseudomales in adulthood, but not in the L4 stage. (D) Constitutive expression of proteolytically cleaved TRA-1active feminizes adult male phasmid neurons and maintains DMD-4 expression. The hermaphrodite sex determination pathway represses the CUL-2/FEM-1/2/3 ubiquitin ligase pathway, resulting in TRA-1 stabilization and proteolytic cleavage, which is schematized to the left. Color-inverted black and white GFP images of adult males are shown in addition to the panneuronal, RFP-tagged TRA-1active in the center (‘UPN::TRA-1active::RFP’). We examined three independent transgenic lines; two had a significant effect on DMD-4 expression in the male phasmid neurons and one did not.
+**Figure 5.:** (A) DMD-4 expression is lost in hermaphrodite animals when the ceh-14 terminal selector of phasmid neuron fate is mutated. Male expression is unaffected. Color-inverted black and white GFP images are shown to the left in all panels, quantification of phasmid neurons expressing DMD-4 in wild-type and mutant animals is shown to the right in all panels. Horizontal blue line indicates median. (B) Constitutive, panneuronal expression of the LIN-41 heterochronic gene maintains DMD-4 in the adult male phasmids. Color-inverted black and white GFP images of adult males are shown in addition to the panneuronal, RFP-tagged LIN-41 overexpression (‘UPN::LIN-41’). L4 male quantification of DMD-4 expression in the phasmids (from Figure 1B) is shown again for reference comparison to control adults (siblings of transgenic animals) and LIN-41 overexpressing males. We quantified two independent transgenic lines. P values are shown above horizontal black bars by Wilcoxon rank-sum test with Bonferroni corrections for multiple testing where applicable (see Materials and methods) in all panels. (C) DMD-4 is degraded in the phasmid neurons of tra-1 (e1099) XX pseudomales in adulthood, but not in the L4 stage. (D) Constitutive expression of proteolytically cleaved TRA-1active feminizes adult male phasmid neurons and maintains DMD-4 expression. The hermaphrodite sex determination pathway represses the CUL-2/FEM-1/2/3 ubiquitin ligase pathway, resulting in TRA-1 stabilization and proteolytic cleavage, which is schematized to the left. Color-inverted black and white GFP images of adult males are shown in addition to the panneuronal, RFP-tagged TRA-1active in the center (‘UPN::TRA-1active::RFP’). We examined three independent transgenic lines; two had a significant effect on DMD-4 expression in the male phasmid neurons and one did not.
 
 We found that the well-characterized heterochronic gene regulatory pathway (Ambros and Horvitz, 1984; Rougvie and Moss, 2013) affects the timing of the downregulation of DMD-4::GFP in male phasmid neurons at the adult stage. During the third larval stage, the heterochronic regulator LIN-41, a RNA-binding protein, is down-regulated to allow progression into the final larval stage and then adulthood (Slack et al., 2000), which is one of several developmental time windows during which sexual maturation events occur in several distinct parts of the nervous system (Lawson et al., 2019; Pereira et al., 2019). We generated transgenic animals that constitutively express LIN-41 in the nervous system and asked whether ectopically maintaining LIN-41 throughout all larval stages to adulthood is sufficient to maintain DMD-4 expression in the adult male phasmids. Indeed, we found that DMD-4 was ectopically maintained in these transgenic male animals (Figure 5B), demonstrating that the heterochronic pathway functions to regulate the timing of DMD-4 degradation.
 
 To address how the sexual specificity of dmd-4::gfp downregulation is controlled, we turned to the TRA-1 master regulatory factor of sex determination, a transcription factor expressed in somatic cells of the hermaphrodite but degraded in males (Schvarzstein and Spence, 2006; Zarkower and Hodgkin, 1992). Manipulation of TRA-1 activity has been previously found to be required for the establishment of a number of sexually dimorphic gene expression programs in the nervous system, as well as sexually dimorphic synaptic connectivity (Lee and Portman, 2007; Mowrey et al., 2014; Oren-Suissa et al., 2016; White et al., 2007). We found that genetic removal of tra-1, in tra-1(e1099) XX pseudomales, leads to a downregulation of DMD-4 expression in hermaphrodite phasmid neurons at the adult stage (Figure 5C). Conversely, force-expression of an engineered, activated version of the TRA-1 protein which escapes protein degradation (Schvarzstein and Spence, 2006) in the phasmid neurons of both sexes results in ectopic DMD-4 expression in male phasmid neurons (Figure 5D). We conclude that the transcriptional regulator TRA-1 normally acts to promote DMD-4::GFP expression in hermaphrodite phasmid neurons upon sexual maturation, while its absence in adult male phasmids results in DMD-4 loss.
 
-## DMD-4 downregulation is controlled post-transcriptionally
+### DMD-4 downregulation is controlled post-transcriptionally
 
 Our implication of TRA-1, a transcription factor, in maintaining DMD-4 expression in hermaphrodite, but not male phasmid neurons (where TRA-1 is not expressed) suggested a transcriptional control mechanism for DMD-4 downregulation. However, in the context of our analysis of the cis-regulatory control regions of dmd-4 expression, we noted that the transcriptional reporter containing the nervous system enhancer for dmd-4 expression (Figure 2B), was expressed in the phasmid neurons of both adult hermaphrodite and adult male animals (Figure 6A). This suggested that the regulatory information generating DMD-4 sexual dimorphism is not encoded on the transcriptional level. To define the potential mechanism of posttranscriptional regulation, we expressed gfp tagged dmd-4 cDNA with a heterologous 3’ UTR under control of a non-dimorphic PHA-specific and PHB-specific promoter. In transgenic animals, these constructs show dimorphic GFP fluorescence in the phasmid neurons, identical to the endogenous DMD-4::GFP expression pattern (Figure 6B). Since the dmd-4 cDNA alone confers male-specific downregulation, sexually dimorphic DMD-4 presence may be controlled on the level of stability/degradation of the protein. In the next section, we describe experiments that demonstrate that a specific domain and amino acids within the DMD-4 protein can indeed be made responsible for DMD-4::GFP downregulation and reveal an unanticipated regulatory mechanism.
 
@@ -93,9 +125,21 @@ Our implication of TRA-1, a transcription factor, in maintaining DMD-4 expressio
 
 **Figure 6.:** (A) Dimorphic expression is not regulated on the level of transcription. The enhancer driving DMD-4 expression in the somatic nervous system is schematized above (same as shown in Figure 2B), color-inverted black and white GFP images in adult hermaphrodite and male are shown below. (B) Driving dmd-4 cDNA under heterologous promoters in the phasmid neurons recapitulates the endogenous expression pattern. Heterologous promoters driving gfp with and without the dmd-4 cDNA are shown to the left in adult hermaphrodites and males, quantification is shown to the right. Scale bar (horizontal red bar) denotes 10 microns. For quantification, each dot represents the number of phasmid neurons expressing GFP in one animal (maximum is two neurons for PHAL/R or PHBL/R), red = hermaphrodite and cyan = male. Horizontal blue bars indicate median. P values are shown above horizontal black bars by Wilcoxon rank-sum test.
 
-## The ubiquitin-binding DMA domain controls DMD-4 stability
+### The ubiquitin-binding DMA domain controls DMD-4 stability
 
 To assess which part of the protein may be responsible for sexually dimorphic DMD-4 protein expression, we turned to the phylogenetically conserved DMA domain (for DM associated). The DMA domain is found associated with the DM domain in most of the phylogenetically conserved DMRT proteins and is also present in the sole homolog of the most primitive DMRT protein from corals (Miller et al., 2003). However, the function of the DMA domain has not previously been examined. Pairwise alignments of profile hidden Markov models using HHsearch (Soding, 2005) reveals that the DMA domain shows sequence similarity to CUE domains (for coupling of ubiquitin to ER degradation), a subtype of the ubiquitin-associated (UBA) family of domains (Kang et al., 2003; Figure 7A). We produced a homology model of the DMD-4 DMA domain based on known CUE-ubiquitin domain structures (Kang et al., 2003) using the program I-TASSER (Zheng et al., 2019). The homology model showed an appropriate domain structure, with all inwardly oriented residues of hydrophobic character arranged as a well-packed core, with charged and polar residues at the surface (Figure 7B). The DMA domain contains three alpha-helices; by analogy with CUE domains, helices 1 and 3 would be expected to form a binding surface for direct non-covalent contact with ubiquitin.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig7-v1.jpg)
+
+**Figure 7.:** (A) Weighted sequence alignment of DMA domains and CUE domains across phyla. The similarities behind these two sequence profiles is demonstrated by pairwise alignments of profile hidden Markov models using HHsearch (Soding, 2005) and is noted in the PF03474 Pfam record of the DMA domain. (B) Homology model of the DMD-4 DMA domain based on the known structure of a ubiquitin-binding CUE domain (Kang et al., 2003). The three alpha-helices are labeled; helices 1 and 3 form a binding surface for contact with ubiquitin. The leucine 31 side chain mutated in panel D is highlighted in black; note the position on the ubiquitin-binding surface. (C) SPR binding analysis of the C. elegans dmd-4 and human Dmrt3 DMA domains shows that both bind to monoubiquitin, and this binding is lost in the L31R mutation (see panel A). (D) CRISPR/Cas9 mutation of leucine 31 (see panel B) to arginine, which we predicted to impair DMA binding to ubiquitin, promotes DMD-4::GFP degradation. ot935 is the gfp-tagged dmd-4 locus and the ot990 allele carries the leucine 31 mutation (to Arg) as indicated. Color-inverted black and white GFP images of L1/L4/adult hermaphrodite heads and tails are shown below, purple boxes indicate nervous system expression, green boxes indicate pharyngeal expression. Dashed boxes indicate missing expression. I5 sometimes maintains DMD-4::GFP expression in adults (green arrowhead). Scale bars (red horizontal bars) denote 10 microns. (E) DMD-4::GFP fluorescence intensity in gfp tagged animals (ot935) and ot935 animals in which the ot990 mutation is incorporated (shown in panel D) is quantified in a defined region of the posterior pharynx (alimentary tissues excluding I5) in L4 and adult wildtype and mutant hermaphrodites. Each dot represents fluorescence intensity in one animal (normalized to background fluorescence), blue bars indicate medians, black boxes indicate quartiles. P values are shown above horizontal black bars by Wilcoxon rank-sum test. (F) Expressing human DMRT3 under the dmd-4intron3 enhancer ("dmd-4intron3::DMRT3::GFP") recapitulates DMD-4 expression in the head neurons, but in the phasmid neurons DMRT3 is degraded constitutively and is absent in both sexes in both larval and adult stages (compared to expression of the enhancer alone, 'dmd-4intron3::GFP'). Color-inverted black and white GFP images of adult hermaphrodite heads and tails and L4 hermaphrodite and male tails are shown, red scale bar indicates 10 microns.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** SEC-MALS experiments for C. elegans DMD-4 and human DMRT DMA domains. Plots show A280 for each MBP-fusion protein plotted against elution volume. The grey dotted line shows the monomer molecular weight based on sequence, and apparent molecular weights determined from light scattering analysis is shown in blue at the peak position.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Loss of DMD-4 expression in the nervous system in the L31R dmd-4(ot990) mutant disrupts pruning of the male-specific PHB>AVG connection in adult hermaphrodites. GRASP data from L31R mutants are shown alongside wild-type and dmd-4(ot957ot935) null mutants. Each dot represents one adult hermaphrodite animal, blue bars show median, black boxes represent quartiles. P values are shown above horizontal black bars by Wilcoxon rank-sum test (B) CRISPR/Cas9 mutation of the first alpha helix in the DMA domain promotes DMD-4::GFP degradation. The sequences of the ot966, ot967, and ot968 mutations are given relative to wild-type above. Color-inverted black and white GFP images of L1 and L4 hermaphrodite heads and tails are shown below, purple boxes indicate nervous system expression, green boxes indicate pharyngeal expression. Dashed boxes indicate missing expression. Scale bars (red horizontal bars) denote 10 microns.
 
 To assess the ability of the DMD-4 DMA domain to bind ubiquitin, we expressed the DMA domain as a maltose-binding protein (MBP) fusion in bacteria, and assessed its binding to human ubiquitin (which differs in only one of the 76 amino acids from C. elegans ubiquitin) by Surface Plasmon resonance (SPR) analysis. The DMD-4 DMA domain bound monoubiquitin with an affinity of ~400 µM, which is similar to known affinities for CUE-ubiquitin binding (Hurley et al., 2006; Figure 7C). CUE domains have also been found to dimerize (Azurmendi et al., 2010; Prag et al., 2003). Testing whether the DMA domain of DMD-4 may display the same feature, we used size exclusion chromatography with multi-angle static light scattering (SEC-MALS). We found that the DMD-4 DMA domain behaves as a monomer (Figure 7—figure supplement 1).
 
@@ -107,7 +151,7 @@ We sought to recapitulate these results independently with other mutations in th
 
 Taken together, the stability of DMD-4 in both neurons and non-neuronal tissues is promoted by ubiquitin binding to the DMA domain, but the need to promote DMD-4 stability by ubiquitin binding is different in different tissues and at different times (permanently in the nervous system, but not until adulthood in the alimentary system).
 
-## Phylogenetic conservation of DMA domain properties
+### Phylogenetic conservation of DMA domain properties
 
 To test whether the DMA domain of vertebrate DMRT proteins may carry properties similar to the DMD-4 DMA domain, we examined DMRT3, the closest vertebrate homolog of DMD-4 (Wexler et al., 2014). We find that the purified DMA domain of human DMRT3 also binds ubiquitin in vitro through SPR analysis, with an affinity similar to that of the DMD-4 DMA domain (Figure 7E). However, unlike DMD-4, but like other CUE domains, the DMRT3 domain can homodimerize (Figure 7—figure supplement 1).
 
@@ -129,7 +173,7 @@ Both the heterochronic regulatory pathway as well as the sex determination pathw
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/59614/elife-59614-fig8-v1.jpg)
 
-**Figure 8.:** C. elegans DMRT genes.Similar pathways are used to control the spatial, temporal and sexual specificity of C. elegans DMRT genes, but these pathways are utilized in a fundamentally distinct manner for different DMRT proteins, ranging from transcriptional to posttranslation regulation. See text for more discussion.
+**Figure 8.:** Similar pathways are used to control the spatial, temporal and sexual specificity of C. elegans DMRT genes, but these pathways are utilized in a fundamentally distinct manner for different DMRT proteins, ranging from transcriptional to posttranslation regulation. See text for more discussion.
 
 Strikingly, in the head sensory neurons, there appears to be no dynamic control of stability. In that cellular context, DMD-4 may always require ubiquitin binding for its stabilization. However, in the pharynx and hmc, the situation is again different. While ubiquitin binding is also required to stabilize the protein, this binding is only required in the adult stage to stabilize DMD-4 in both sexes. We infer this from the observation that the ubiquitin binding mutation only destabilizes DMD-4 in adult, but not in juvenile stages. While we clearly do not yet fully understand the mechanisms that lead to this spatiotemporal regulation of DMD-4 protein level, our studies have identified novel means by which a DMRT protein in specific, and sexual dimorphisms more broadly, are controlled in the nervous system in a manner that depends on cell type, time of development and sexual identity. The deeply conserved nature of the DMA domain suggest that these regulatory mechanisms are conserved in other species as well.
 
@@ -137,17 +181,342 @@ It is fascinating to note the diversity of mechanisms by which the spatial, temp
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Caenorhabditis elegans)</td>
+      <td>him-5 (e1490) V; dmd-4 (ot935) X</td>
+      <td>This work</td>
+      <td>OH15814 ‘DMD-4::GFP’</td>
+      <td>Figure 1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>dmd-4 (ot896) X</td>
+      <td>This work</td>
+      <td>OH15302</td>
+      <td>Figure 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>dmd-4(ot933)/tmC24 X</td>
+      <td>This work</td>
+      <td>OH16260</td>
+      <td>Figure 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>ccIs4251; stIs10539</td>
+      <td>CGC</td>
+      <td>SD1633</td>
+      <td>Figure 2 ccIs4251 [(pSAK2) myo-3p::GFP::LacZ::NLS + (pSAK4) myo-3p::mitochondrial GFP + dpy-20(+)] I; stIs10539 [dmd-4p::HIS-24::mCherry + unc-119(+)]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx6774; him-5 (e1490)</td>
+      <td>This work</td>
+      <td>OH14506</td>
+      <td>Figure 2 dmd-4int3::GFP, pRF4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>him-5 (e1490) V; dmd-4 (ot957ot935) X</td>
+      <td>This work</td>
+      <td>OH15908</td>
+      <td>Figure 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otIs612; him-5 (e1490)</td>
+      <td>Oren-Suissa et al., 2016</td>
+      <td>OH13575 ‘PHB &gt; AVA’</td>
+      <td>Figure 3 MVC12 (flp-18p::nlg-1::gfp11)15 ng/ul, MVC6 (gpa-6p::nlg-1::gfp1- 10)15 ng/ul, MVC11 (flp- 18 p::mcherry)10 ng/ul, MVC15 (nlp- 1::mcherry)10 ng/ul, pRF4 50 ng/ul</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otIs612; him-5 (e1490); dmd-4 (ot957ot935) X</td>
+      <td>This work</td>
+      <td>OH16014 ‘PHB &gt; AVA’</td>
+      <td>Figure 3 MVC12 (flp-18p::nlg-1::gfp11) 15 ng/ul, MVC6 (gpa-6p::nlg-1::gfp1- 10)15 ng/ul, MVC11 (flp- 18 p::mcherry)10 ng/ul, MVC15 (nlp- 1::mcherry)10 ng/ul, pRF4 50 ng/ul</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx6347; him-5 (e1490) V</td>
+      <td>Oren-Suissa et al., 2016</td>
+      <td>OH13696 ‘PHA &gt; AVG’</td>
+      <td>Figure 3 srg-13::BirA::nrx-1 25 ng/ul, inx-18p::AP::nlg-1 25 ng/ul, inx-18p::wcherry 10 ng/ul, unc-122::streptavidin::2xsfGFP 25 ng/ul, pRF4 50 ng/ul</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx6347; him-5 (e1490) V; dmd-4 (ot957ot935) X</td>
+      <td>This work</td>
+      <td>OH16067 ‘PHA &gt; AVG’</td>
+      <td>Figure 3 srg-13::BirA::nrx-1 25 ng/ul, inx-18p::AP::nlg-1 25 ng/ul, inx-18p::wcherry 10 ng/ul, unc-122::streptavidin::2xsfGFP 25 ng/ul, pRF4 50 ng/ul</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otIs614; him-5 (e1490)</td>
+      <td>Oren-Suissa et al., 2016</td>
+      <td>OH13577 ‘PHB &gt; AVG’</td>
+      <td>inx-18p::NLG-1::GFP1130 ng/ul, MVC6 gpa-6::NLG-1:::GFP1-10 30 ng/ul, MVC15 nlp-1::mcherry 5 ng/ul, inx-18::wcherry 10 ng/ul, pRF4 50 ng/ul</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otIs614; him-5 (e1490) V; dmd-4 (ot957ot935) X</td>
+      <td>This work</td>
+      <td>OH16017 ‘PHB &gt; AVG’</td>
+      <td>Figure 3 inx-18p::NLG-1::GFP11 30 ng/ul, MVC6 gpa-6::NLG-1:::GFP1-10 30 ng/ul, MVC15 nlp-1::mcherry 5 ng/ul, inx-18::wcherry 10 ng/ul, pRF4 50 ng/ul</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx7431; otIs614; him-5 (e1490) V; dmd-4 (ot957ot935) X</td>
+      <td>This work</td>
+      <td>OH16217 ‘PHBp::DMD-4 line 1’</td>
+      <td>Figure 3 gpa-6p::DMD-4::GFP, ttx-3p::GFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx7433; otIs614; him-5 (e1490) V; dmd-4 (ot957ot935) X</td>
+      <td>This work</td>
+      <td>OH16208 ‘PHBp::DMD-4 line 2’</td>
+      <td>Figure 3 gpa-6p::DMD-4::GFP, ttx-3p::GFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otIs702; him-5 (e1490) V</td>
+      <td>This work</td>
+      <td>OH15565 ‘PHA::RAB-3’</td>
+      <td>Figure 3 srg-13p::RAB-3::BFP, srg-13p::gfp, ttx-3::mCherry</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>him-5 (e1490) V; dmd-4 (ot935ot957) X</td>
+      <td>This work</td>
+      <td>OH16030 ‘PHA::RAB-3’</td>
+      <td>Figure 3 srg-13p::RAB-3::BFP, srg-13p::gfp, ttx-3::mCherry</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>tax-4 (p678); him-5 (e1490)</td>
+      <td>Oren-Suissa et al., 2016</td>
+      <td>OH15339</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>tax-4 (p678); him-5 (e1490) V; dmd-4 (ot957ot935) X</td>
+      <td>This work</td>
+      <td>OH16115</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>wgIs418; him-5 (e1490) V</td>
+      <td>This work</td>
+      <td>OH16268</td>
+      <td>Figure 5 DMD-4fosmid::gfp</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>wgIs418; ceh-14 (ch3) X</td>
+      <td>This work</td>
+      <td>OH14503</td>
+      <td>Figure 5 DMD-4fosmid::gfp</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx7429; him-5 (e1490) V; dmd-4 (ot935) X</td>
+      <td>This work</td>
+      <td>OH16159 ‘UPN::LIN-41 line 1’</td>
+      <td>Figure 5 UPN::LIN-41A, rab-3p::tagRFP, pRF4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx7451; him-5 (e1490) V; dmd-4 (ot935) X</td>
+      <td>This work</td>
+      <td>OH16235 ‘UPN::LIN-41 line 2’</td>
+      <td>Figure 5 UPN::LIN-41A, rab-3p::tagRFP, pRF4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>tra-1 (e1099) III/hT2 [bli-4(e937) umnIs36] (I;III); dmd-4 (ot935) X</td>
+      <td>This work</td>
+      <td>OH16194</td>
+      <td>Figure 5</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx7352; him-5 (e1490) V; dmd-4 (ot935) X</td>
+      <td>This work</td>
+      <td>OH15952 ‘UPN::TRA-1active line 1’</td>
+      <td>Figure 5 UPN::tagRFP::TRA-1active, pRF4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx7353; him-5 (e1490) V; dmd-4 (ot935) X</td>
+      <td>This work</td>
+      <td>OH16158 ‘UPN::TRA-1active line 2’</td>
+      <td>Figure 5 UPN::tagRFP::TRA-1active, pRF4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx7354; him-5 (e1490) V; dmd-4 (ot935) X</td>
+      <td>This work</td>
+      <td>OH15993 ‘UPN::TRA-1active line 3’</td>
+      <td>Figure 5 UPN::tagRFP::TRA-1active, pRF4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otIs627; him-8 (e1489)</td>
+      <td>This work</td>
+      <td>OH14022 ‘PHAp::GFP’</td>
+      <td>Figure 6 srg-13p::GFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx7435; him-5 (e1490) V ; dmd-4 (ot957ot935) X</td>
+      <td>This work</td>
+      <td>OH16177 ‘PHAp::DMD-4::GFP’</td>
+      <td>Figure 6 srg-13p::DMD-4::GFP, ttx-3p::GFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx6456; him-5 (e1490) V</td>
+      <td>This work</td>
+      <td>OH13892 ‘PHBp::GFP’</td>
+      <td>Figure 6 gpa-6p::GFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx7433; him-5 (e1490) V; dmd-4 (ot957ot935) X</td>
+      <td>This work</td>
+      <td>OH16175 ‘PHBp::DMD-4::GFP’</td>
+      <td>Figure 6 gpa-6p::DMD-4::GFP, ttx-3p::GFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>him-5 (e1490) V; dmd-4 (ot990ot935) X</td>
+      <td>This work</td>
+      <td>OH16125</td>
+      <td>Figure 7</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>nIs175 [ceh-28p::4xNLS::GFP + lin-15AB(+)] IV; ceh-34(n4796) V</td>
+      <td>CGC</td>
+      <td>MT15695</td>
+      <td>Figure 2—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otIs518; him-5 (e1490) V; dmd-4 (ot957ot935) X</td>
+      <td>This work</td>
+      <td>OH16054</td>
+      <td>Figure 2—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>ntIs1; dmd-4 (ot957ot935) X</td>
+      <td>This work</td>
+      <td>OH16225</td>
+      <td>Figure 2—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>wgIs73; him-5 (e1490) V; dmd-4 (ot957ot935) X</td>
+      <td>This work</td>
+      <td>OH16018</td>
+      <td>Figure 2—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otIs612; unc-13(e51) I;him-5 (e1490) V</td>
+      <td>This work</td>
+      <td>MOS14</td>
+      <td>Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otEx6913; unc-13(e51) I; him-5 (e1490) V</td>
+      <td>This work</td>
+      <td>MOS234</td>
+      <td>Figure 3—figure supplement 1 inx-18p::NLG-1::GFP11, MVC6 gpa-6::NLG-1:::GFP1-10, MVC15 inx-18::wcherry, pRF4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>etyEx2; otIs614; him-5 (e1490) V</td>
+      <td>This work</td>
+      <td>MOS243</td>
+      <td>Figure 3—figure supplement 1 gpa-6::HisCl1, myo-2::GFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>him-5 (e1490) V; dmd-4 (ot966ot0935) X</td>
+      <td>This work</td>
+      <td>OH16013</td>
+      <td>Figure 7—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>him-5 (e1490) V; dmd-4 (ot967ot935) X</td>
+      <td>This work</td>
+      <td>OH16015</td>
+      <td>Figure 7—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>him-5 (e1490) V; dmd-4 (ot968ot935) X</td>
+      <td>This work</td>
+      <td>OH16016</td>
+      <td>Figure 7—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>otIs614; him-5 (e1490) V; dmd-4 (ot990ot935) X</td>
+      <td>This work</td>
+      <td>OH16771</td>
+      <td>Figure 7—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>ccIs4443 IV; him-5 (e1490) V</td>
+      <td>This work</td>
+      <td>OH16545</td>
+      <td>Figure 2—figure supplement 1 arg-1::GFP + dpy-20(+)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>ccIs4443 IV; him-5 (e1490) V; dmd-4 (ot933) X</td>
+      <td>This work</td>
+      <td>OH16770</td>
+      <td>Figure 2—figure supplement 1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
 
 Wild-type strains were C. elegans variety Bristol, strain N2. Worms were maintained by standard methods (Brenner, 1974). Worms were grown at 20C on nematode growth media (NGM) plates seeded with bacteria (E. coli OP50) as a food source, with the exception of temperature sensitive alleles, which were maintained at 15C. Mutant and transgenic strains used are listed in the Key Resources Table.
 
-## CRISPR/Cas9-mediated genome engineering
+### CRISPR/Cas9-mediated genome engineering
 
 The ot935, ot933, and ot990 alleles were generated using Cas9 protein, tracrRNA, and crRNA from IDT, as previously described (Dokshin et al., 2018). The GFP repair template for ot935 was amplified from pPD95.75, and it was fused in-frame immediately before the endogenous dmd-4 stop codon using gRNA GTTTTCAACCGTATTACTTG.
 
 Resultant amino acid sequences of ot966, ot967, and ot968 are given in Figure 7—figure supplement 2B.
 
-## Cloning and constructs
+### Cloning and constructs
 
 The LIN-41A and TRA-1active cDNAs used in this study were reverse transcribed from C. elegans total RNA using the SuperScript III First-Strand Synthesis System (Thermo-Fisher). TRA-1active is a shortened version of the TRA-1A cDNA (860aa) predicted to encode the proteolytically activated version of TRA-1A generated by C-terminal cleavage in hermaphrodites (Schvarzstein and Spence, 2006). This truncated protein was previously shown to have feminizing activity when expressed under control of its own regulatory elements (Schvarzstein and Spence, 2006).
 
@@ -157,44 +526,44 @@ The DMD-4 cDNA was obtained from the Dharmacon C. elegans ORF collection and clo
 
 The human DMRT3 cDNA was codon-optimized (https://worm.mpi-cbg.de/codons/cgi-bin/optimize.py), synthesized by GeneWiz, and cloned using Restriction-Free Cloning into dmd-4intron 3::gfp to generate pEAB71.
 
-## Microscopy
+### Microscopy
 
 Worms were anesthetized using 100 mM of sodium azide (NaN3) and mounted on 5% agar on glass slides. Worms were analyzed by Nomarski optics and fluorescence microscopy, using a Zeiss 880 confocal laser-scanning microscope. Multidimensional data was reconstructed as maximum intensity projections using Zeiss Zen software. For GRASP and RAB-3 experiments, animals were imaged using 63x objective and puncta were quantified by scanning the original full z-stack for distinct dots in the area where the processes of the two neurons overlap. GRASP and RAB-3 experiments were scored blinded to genotype for mutant analysis and rescue array analysis. For fluorescence quantification experiments, animals were imaged using 40x objective with fixed imaging settings, and quantification was performed on maximum intensity projections using the Zeiss Zen software by quantifying the mean fluorescence intensity in rectangular area of the posterior pharynx (containing all posterior muscle and intestinal valve cells that express DMD-4), and normalizing this value to the image background (an identical rectangular area directly anterior). Sex of L1 animals was determined using rectal epithelial cell morphology.
 
-## Behavioral analysis
+### Behavioral analysis
 
-## SDS-avoidance behavior
+#### SDS-avoidance behavior
 
 SDS avoidance assay was based on procedures described (Hilliard et al., 2002). A small drop of solution containing either the repellent (0.1% SDS in M13 buffer) or buffer (M13 buffer: 30 mM Tris-HCl pH 7.0, 100 mM NaCl, 10 mM KCl) is delivered near the tail of an animal while it moves forward. Once in contact with the tail, the drop surrounds the entire animal by capillary action and reaches the anterior amphid sensory organs. Drop was delivered using 10 uL glass calibrated pipets (VWR international) pulled by hand on a flame to reduce the diameter of the tip. The capillary pipette was mounted in a holder with rubber tubing and operated by mouth. Assayed worms were transferred individually to fresh non-wet unseeded NGM plates. Each assay started with testing the animals with drops of M13 buffer alone. The response to each drop was scored as reversing or not reversing. The avoidance index is the number of reversal responses divided by the total number of trials. An Inter Stimuli Interval of at least two minutes was used between successive drops to the same animal. Each animal was tested 10 times. Two experimental replicates were performed for each experiment.
 
-## Chemotaxis assays
+#### Chemotaxis assays
 
 The response to NaCl gradients was assayed as previously described (Bargmann and Horvitz, 1991). Briefly, 10 ml of buffered agar (20 g/l agar, 1 mM CaCl2, 1 mM MgSO4 and 5 mM KPO4) was poured into 10 cm diameter petri dishes. To establish the chemical gradient, we applied 10 μl of odorant to the attractant/repulsion spot and 10 μl of double-distilled H2O to the control spot. The odorant was allowed to diffuse for 14–16 hr at room temperature before the assay. To increase the steepness of the gradient, another 4 μl of odorant or water was added to the same spots 4 hr before the assay. We applied a 1 μl drop of 1 M sodium azide to both attractant and control spots 10 min before the assay to immobilize worms that reached these areas. Synchronized animals were washed three times with CTX solution (1 mM CaCl2, 1 mM MgSO4 and 5 mM KPO4) and 100–200 animals were placed in the center of the assay plate in a minimal volume of buffer. Animals were allowed to move about the agar surface for 1 hr, after which assay plates were placed at 4°C overnight. The distribution of animals across the plate was then determined and a chemotaxis index was calculated as the number of animals at the odorant minus the number of animals at the control spot, divided by the total number of animals. Animals that did not leave the initial inner circle were not included in the count of total number of animals, as these animals were dead or had movement defects. N2 animals were used as controls.
 
-## Neuronal silencing using the histamine chloride channel system
+### Neuronal silencing using the histamine chloride channel system
 
 We silenced the PHB neurons by expressing HisCl1 channel (Pokala et al., 2014) in the PHB neurons, using a gpa-6 driver, as previously described (Oren-Suissa et al., 2016). Transgenic animals were picked at the L4 stage and placed on NGM plates containing 10 mM histamine with OP50 bacteria as food source. As a control, animals were placed on NGM plates containing OP50 bacteria but no histamine. GRASP connectivity was assessed ~24 hr later when the animals had reached adulthood.
 
-## Biochemical analysis
+### Biochemical analysis
 
-## Protein expression and purification
+#### Protein expression and purification
 
 C. elegans and H. sapiens DMA domain cDNAs were synthesized by GeneWiz, codon optimized for E. coli. These cDNAs were cloned into the KpnI site of pMal-c5x (NEB) to produce maltose binding protein fusions, and transformed into BL21 cells. E. Coli BL21/DE3 cells were grown in Luria Broth with 100 ug/mL ampicillin. When OD at 600 nm of 1.0 was attained, the cells were induced with 300 uM IPTG and grown for an additional 2 hr. Cells were harvested by centrifugation and sonicated in 20 mM HEPES, pH 7.4, 200 mM NaCl, 1 mM EDTA and protease inhibitors. After clarification by centrifugation, 5 mL of amylose resin (New England BioLabs) equilibrated in HEPES 20 mM pH 7.4, NaCl 200 mM was added to ~60 mL of clear lysate and subjected to gentle rocking at 4°C for 2 hr. The bound resin was packed onto a column and washed with at least 15 column volumes of 20 mM HEPES, pH 7.4, 200 mM NaCl. Proteins were eluted with 30 mL of the HEPES 20 buffer supplemented with 10 mM maltose. This eluent was concentrated and loaded onto a Superose 200 10/300 GL Increase (GE Healthcare) gel filtration column. Proteins were eluted at 0.5 mL/min with 10 mM HEPES, pH 7.4, 150 mM NaCl, and appropriate fractions were pooled and concentrated.
 
-## SPR binding experiments
+#### SPR binding experiments
 
 SPR binding experiments were performed using a Biacore T100 biosensor equipped with a Series S CM4 sensor chip. Human DMRT, DMD-4 and its L31R mutant were immobilized over individual flow cells using amine-coupling chemistry in 10 mM HEPES-OH, pH 7.4, 150 mM NaCl, 0.005% Tween-20 at 32°C using a flow rate of 20 μL/min. Dextran surfaces were activated for 7 min using equal volumes of 0.1 M NHS(N-Hydroxysuccinimide) and 0.4 M EDC(1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide) for 10 min. Each protein of interest was immobilized at 50 μg/mL in 10 mM sodium acetate, pH 4.25 for 7 min each. The immobilized surface was blocked using a 3 min injection of 1.0 M ethanolamine, pH 8.5 resulting in immobilizations at ~3,000 RU. An unmodified surface was used as a reference flow cell to subtract bulk shift refractive index changes.
 
 Binding experiments were performed at 25°C in a running buffer containing 10 mM Tris-Cl pH 7.4, 150 mM NaCl, and 0.01% (v/v) Tween-20. Ubiquitin was prepared in the same buffer at a stock concentration of 300 μM and serially diluted using a three-fold dilution series from 300 to 0.137 μM. Ubiquitin analyte samples were tested in duplicate in order of increasing concentration. In each binding cycle, analytes were injected over the three immobilized surfaces at 50 μL/min for 20 s, followed by 180 s of dissociation phase, a running buffer wash step and a buffer injection at 100 μL/min for 60 s. Buffer was used instead of an analyte sample every two binding cycles to double reference the binding responses by removing systematic noise and instrument drift. The binding signal between 15 and 19 s was fit against the ubiquitin concentration using a 1:1 interaction model to calculate the KD. The data was processed and analyzed using Scrubber 2.0 (BioLogic Software).
 
-## SEC-MALS
+#### SEC-MALS
 
 Size exclusion chromatography with multi-angle static light scattering (SEC-MALS) was performed using an AKTA FPLC system with a Superdex 200 Increase 10/300 GL column (GE Healthcare), equilibrated with 10 mM HEPES, pH 7.4, 150 mM NaCl, with a flow rate of 0.5 mL/min. Each protein was injected at a concentration of 3 mg/mL, using an injection volume of 100 μL. UV absorbance was monitored at 280 nm using the AKTA UV detector and light-scattering and refractive index data for molecular weight determination was collected with an Optilab T-rEX and a DAWN Heleos-II detector (Wyatt Technology). Molecular weights were calculated using the Astra 6.1 software (Wyatt Technologies) using a Zimm-plot.
 
-## Quantification of intestinal stuffing
+### Quantification of intestinal stuffing
 
 To assay the degree of anterior intestinal stuffing in the dmd-4 mutants dmd-4(ot935), dmd-4(ot957ot935), dmd-4(ot990ot935), and dmd-4(ot933) relative to the him-5(e1490) control and the positive control ceh-34(n4796) (which is required for pharyngeal development and was used as a positive control [Hirose et al., 2010]), embryos synchronized by hypochlorite treatment were plated onto NGM plates seeded with an E. coli OP50 strain that contains the GFP-expressing plasmid pFPV25.1 (OP50-GFP, CGC). Worms were grown to early adulthood (72 hr after egg prep, at 20°C). In order to reduce background signal, worms were washed twice in 15 mL of M9 and centrifuged at 300 x g for 1 min to separate and discard any fluorescent bacteria in suspension. Worms were then run through the Union Biometrica COPAS FP-250 Biosorter system to measure GFP signal as a function of worm length. Fluorescence data was acquired and processed with the Union Biometrica FlowPilot software (version 1.5.9.2). Events detected by the COPAS system were filtered attending to the time of flight (i.e. worm length) and extinction (i.e. worm opacity) to include only adult males and young adult hermaphrodites in the data set and exclude gravid hermaphrodites, as the condition of gravidity produces its own genotype-independent stuffed phenotype. Any data point without an associated parabolic time-of-flight trace was also excluded. A non-parabolic trace indicates a bent worm in the flow cell, which produces skewed fluorescence data. The green fluorescence trace measures green signal as a function of length, and the area under this curve corresponds to the total amount of fluorescence from the OP50-GFP in the anterior intestine, as confirmed by 63x-objective epifluorescent imaging (Zeiss Axio Imager.Z2). To normalize data, all data points were divided by the mean of the control group (him-5(e1490)).
 
-## Statistics
+### Statistics
 
 Plots for expression data were generated in R using the beeswarm and ggplot2 packages. Statistical tests were performed in R as detailed in figure legends, in addition to post-hoc Bonferroni corrections to adjust p-values for number of pairwise tests in all cases where more than two pairwise statistical tests were performed.

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Transmembrane signaling proteins couple extracytosolic sensors to cytosolic effectors. Here, we examine how binding of Mg 2+ to the sensor domain of an E. coli two component histidine kinase (HK), PhoQ, modulates its cytoplasmic kinase domain. We use cysteine-crosslinking and reporter-gene assays to simultaneously and independently probe the signaling state of PhoQ’s sensor and autokinase domains in a set of over 30 mutants. Strikingly, conservative single-site mutations distant from the sensor or catalytic site strongly influence PhoQ’s ligand-sensitivity as well as the magnitude and direction of the signal. Data from 35 mutants are explained by a semi-empirical three-domain model in which the sensor, intervening HAMP, and catalytic domains can adopt kinase-promoting or inhibiting conformations that are in allosteric communication. The catalytic and sensor domains intrinsically favor a constitutively ‘kinase-on’ conformation, while the HAMP domain favors the ‘off’ state; when coupled, they create a bistable system responsive to physiological concentrations of Mg 2+ . Mutations alter signaling by locally modulating domain intrinsic equilibrium constants and interdomain couplings. Our model suggests signals transmit via interdomain allostery rather than propagation of a single concerted conformational change, explaining the diversity of signaling structural transitions observed in individual HK domains.
+Transmembrane signaling proteins couple extracytosolic sensors to cytosolic effectors. Here, we examine how binding of Mg2+ to the sensor domain of an E. coli two component histidine kinase (HK), PhoQ, modulates its cytoplasmic kinase domain. We use cysteine-crosslinking and reporter-gene assays to simultaneously and independently probe the signaling state of PhoQ’s sensor and autokinase domains in a set of over 30 mutants. Strikingly, conservative single-site mutations distant from the sensor or catalytic site strongly influence PhoQ’s ligand-sensitivity as well as the magnitude and direction of the signal. Data from 35 mutants are explained by a semi-empirical three-domain model in which the sensor, intervening HAMP, and catalytic domains can adopt kinase-promoting or inhibiting conformations that are in allosteric communication. The catalytic and sensor domains intrinsically favor a constitutively ‘kinase-on’ conformation, while the HAMP domain favors the ‘off’ state; when coupled, they create a bistable system responsive to physiological concentrations of Mg2+. Mutations alter signaling by locally modulating domain intrinsic equilibrium constants and interdomain couplings. Our model suggests signals transmit via interdomain allostery rather than propagation of a single concerted conformational change, explaining the diversity of signaling structural transitions observed in individual HK domains.
 
 ## Introduction
 
@@ -38,17 +38,25 @@ In this work, we evaluate the coupling of sensor and autokinase domains in a mod
 
 To probe the coupling between the sensor and autokinase domains, we established two assays, which allow simultaneous measurement of the conformational states of the sensor and autokinase domains (Figure 2A). Like most HKs, PhoQ is a constitutive parallel homodimer, in which the individual domains interact along a series of coaxial helical bundles. Previously, we observed that a Tyr60 to Cys variant forms interchain disulfides between the two monomers only in the absence of Mg2+ where the protein is in the ‘kinase-on’ state (Molnar et al., 2014). Thus, the fraction of the sensor in the ‘kinase-on’ versus ‘kinase-off’ state can be readily quantified based on the amount of dimer versus monomer seen in a western blot. Importantly, the Y60C substitution is minimally perturbing, as the [Mg2+]-dependent signaling curve for this mutant is nearly identical to wild-type PhoQ with respect to the midpoint of the transition and activity of the basal and activated states. Also, the redox environment of the periplasm of E. coli is buffered such that disulfide formation is reversible and hence a good readout of the conformational state of the sensor (Kadokura and Beckwith, 2010). To quantify the activity of the auto-kinase domain, we use a well-established beta-galactosidase gene-reporter assay that employs the PhoQ/PhoP-controlled promoter of the Mg2+ transporter MgtA. Although this assay is indirect, there is a reasonable correlation between promoter activity and PhoP phosphorylation (Miyashiro and Goulian, 2007). We note that similar assays, pairing disulfide crosslinking efficiencies to phenotypic output, have been extensively used by Falke, Haselbauer et al. (Falke and Hazelbauer, 2001; Swain and Falke, 2007) to probe signal transduction in chemosensors that are related to HKs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig2-v2.jpg)
+
+**Figure 2.:** (A) Molecular Dynamics model of dimeric PhoQ in which the sensor (res. 1–219, blue), HAMP (res. 220–260, grey) and autokinase domains (res 261–494, purple) are annotated. The sensor contains a Y60C mutation (spheres) which shows signal state dependent crosslinking. The autokinase contains the conserved catalytic His277, which upon phosphorylation transfers a phosphoryl group to the response regulator PhoP, which then modulates a mgtA promoter-driven β-galactosidase reporter. Stimuli and regulatory proteins that modulate PhoQ activity are shown. (B) Linear topology diagram of PhoQ. The sensor, HAMP and Autokinase domains are highlighted in blue, gray, and purple, respectively. The locations of mutations in panel (C) are shown. (C) Fraction of sensor crosslinking (blue) and autokinase activity (red) determined for ‘wild type’ (Y60C) PhoQ, as well as eight mutants along the signal transduction pathway (n = 9 for WT, n = 2 for A213W, E232A, E233A, L254A, and E261F, n = 1 for V191W, S217W, and Y265A). The sensor state and autokinase activity do not show identical ligand-dependent behavior as would be predicted by a concerted signaling mechanism. Error bars correspond to± SD, where applicable.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** LDS buffer solubilized membrane samples are separated by SDS-PAGE and western blotted using an anti-pentaHis antibody. Relative amounts of dimeric and monomeric PhoQ are measured to generate a crosslinking efficiency between 0 and 1.
+
 Using this approach, we evaluate the extent to which the sensor’s conformational state couples to and dictates the conformational activity of the autokinase domain for a set of over 30 mutations, representing substitutions throughout the signal transduction pathway from the sensor to the autokinase domain. We show how these mutations can modulate the three basic characteristics of a PhoQ signaling response which need to fit the biological role of the HK (1) signal strength at limiting high [Mg2+], (2) signal strength at the limiting low [Mg2+], and (3) the midpoint of the [Mg2+] dependent transition – over the physiologically relevant concentration ranges that E. coli encounters (0.1–10 mM). We further evaluate the intrinsic signaling equilibria of the sensor and autokinase domains by disrupting the allosteric coupling between them using poly-glycine insertions in the signal transduction pathway and show that both domains are highly biased to the ‘kinase-on’ state when uncoupled from each other. The intervening HAMP domain serves as a negative allosteric modulator of both these domains and balances the stability of the ‘kinase-on’ and ‘kinase-off’ states so that they can become responsive to physiological concentrations of Mg2+. With these concepts in mind, we establish, fit and evaluate a semi-empirical 3-domain allosteric coupling model to account for the sensor-autokinase coupling and high/low asymptote and midpoint of transition behaviors of 35 distinct point-mutations and poly-glycine insertions, and highlight the advantages of inserted signal transduction domains in robustly modulating the signaling behavior of HKs.
 
 ## Results
 
-## Single-point mutants along the signal transduction pathway generate a range of sensor and autokinase behavior
+### Single-point mutants along the signal transduction pathway generate a range of sensor and autokinase behavior
 
 We simultaneously measured the sensor cross-linking and autokinase activities of ‘wild type’ (Y60C) PhoQ and a total of 35 point mutants and sequence insertions at five different concentrations of Mg2+ to evaluate the signaling-state correlation of these two domains. Our goal was to investigate the mechanism of signal transduction from the sensor to the kinase. To simplify the interpretation of results we maintained wild-type sequences of the Mg2+-binding site and catalytic domain, and mutated at multiple points along the signal transduction pathway. Ala and Phe substitutions were evaluated at sites expected to be on the interior of the protein; these mutants were expected to alter the relative energetics of the kinase- versus phosphatase-promoting states by altering core packing geometry (Airola et al., 2013; Ferris et al., 2011; Hulko et al., 2006; Bi et al., 2018). We also examined the effects of Trp substitutions in the TM helix at positions expected to map to the headgroup region of the bilayer, as similar substitutions often induce changes in signaling (Draheim et al., 2005; Lehning et al., 2017; Inda et al., 2016; Monzel and Unden, 2015; Yusuf and Draheim, 2015; Yusuf et al., 2018; Adase et al., 2013). We also included several mutations, particularly in the C-terminal half of the HAMP domain, that show altered autokinase activity as compared to WT PhoQ.
 
 Illustrative data in Figure 2C show it is possible to generate several combinations of ligand-dependent sensor and autokinase behavior. WT (Y60C) PhoQ had a correlated ligand-dependent response, with the high cross-linking state of the sensor corresponding to high autokinase activity at low [Mg2+], and the low cross-linking sensor state corresponding to low autokinase activity at high [Mg2+] (Figure 2C). Some mutants however showed low levels of kinase-activity at low [Mg2+] even though the sensor remains in a high-crosslinking ‘kinase-on’ state (e.g. L254A). Similarly, some mutants retained high kinase-activity in the autokinase despite the fact that crosslinking in the sensor showed WT-like crosslinking in a [Mg2+]-dependent manner (e.g. E232A, E261F). Finally, some mutants produced higher levels of kinase activity at low-Mg2+ than WT PhoQ (e.g. E232A is more active than WT PhoQ at low [Mg2+]). Therefore, mutations along the signal transduction pathway have profound effects in altering or uncoupling sensor-autokinase correlation.
 
-## The effect of decoupling the HAMP domain from the catalytic and sensor domains
+### The effect of decoupling the HAMP domain from the catalytic and sensor domains
 
 We examined the intrinsic activities of the sensor and autokinase domains when decoupled from the HAMP domain, by inserting a stretch of seven helix-disrupting glycines (Gly7) to interrupt the helical connections that are required for coupling between PhoQ’s domains. Gly7 insertions were introduced just before the HAMP domain (Gly7 –219/220) as the TM helix exits the membrane and just after the HAMP signal transduction domain within a short helical connection to the autokinase domain (Gly7 –260/261).
 
@@ -56,11 +64,11 @@ As expected, both insertions decoupled Mg2+ binding from kinase activity (Figure
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig3-v2.jpg)
 
-**Figure 3.:** Gly7 insertions are introduced either between the HAMP domain and the autokinase (Gly7 - 260/261, left, n = 3) or between the Sensor and HAMP domain (Gly7 –219/220, right, n = 2) to disrupt allosteric coupling between sensor and autokinase. Both the sensor and autokinase by themselves show high ‘kinase-on’ propensity (red trace, left; blue trace, right). The HAMP domain potentiates the ‘kinase-off’ state, resulting in a more [Mg2+] responsive sensor (blue trace, left), or a lower basal activity autokinase (red trace, right). The fully coupled protein shows correlated sensor/autokinase activity(red and blue traces, middle, n = 9).Figure 3—source data 1.
+**Figure 3.:** Gly7 insertions are introduced either between the HAMP domain and the autokinase (Gly7 - 260/261, left, n = 3) or between the Sensor and HAMP domain (Gly7 –219/220, right, n = 2) to disrupt allosteric coupling between sensor and autokinase. Both the sensor and autokinase by themselves show high ‘kinase-on’ propensity (red trace, left; blue trace, right). The HAMP domain potentiates the ‘kinase-off’ state, resulting in a more [Mg2+] responsive sensor (blue trace, left), or a lower basal activity autokinase (red trace, right). The fully coupled protein shows correlated sensor/autokinase activity(red and blue traces, middle, n = 9).
 
 The HAMP domain had a similar influence on the catalytic domain. When the native connection between the HAMP and the autokinase was disrupted by Gly7 insertion, the autokinase was highly activated (Figure 3, right). By contrast, when the connection between the HAMP and catalytic domains was retained as in Gly7 –219/220, the kinase activity was strongly downregulated (Figure 3, left). Thus, the resulting coupling provides an energetic balance so the system can respond to Mg2+ over the physiological range.
 
-## The HAMP domain is negatively coupled to the autokinase domains of CpxA and BaeS
+### The HAMP domain is negatively coupled to the autokinase domains of CpxA and BaeS
 
 Given the profound effect of the HAMP domain on the intrinsic activities of the PhoQ sensor and autokinase domains, we examined if HAMP domains have similar effects in closely related but functionally distinct HKs with the same arrangement of signaling domains as in PhoQ (TM1, PAS sensor, TM2, a single cytosolic HAMP, and the autokinase domains, Figure 2A and B). We constructed Gly7 insertions in two closely related E. coli HKs, CpxA and BaeS, that have very similar architectures to PhoQ. The HK CpxA responds to periplasmic protein misfolding stress via an accessory protein, CpxP, and upregulates genes to mitigate this stress (Keller et al., 2015; Batchelor et al., 2005; Danese and Silhavy, 1997). It is similar to PhoQ in that the free HK is kinase-active, and is turned off by the binding of the periplasmic CpxP protein (Zhou et al., 2011). BaeS is a closely related HK, which has significant overlap with CpxA, both in the inducing stimuli as well as the genes regulated (Leblanc et al., 2011). We evaluated the activity of these kinases using previously validated fluorescent gene-reporters pcpxP::GFP for CpxA activity (Clark et al., 2021), pspy::mCherry for BaeS activity Mensa et al., 2011 in a double CpxA/BaeS knockout strain.
 
@@ -68,13 +76,21 @@ When Gly7 was inserted immediately upstream of the autokinase domain, we observe
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig4-v2.jpg)
 
-**Figure 4.:** (A) The activity of CpxA constructs is measured in AFS51 strain (ΔcpxA) using a pcpxP::GFP reporter. The activity of WT CpxA (blue) is responsive to the antimicrobial mimetic, brilacidin (Scott et al., 2008; Mensa et al., 2011) (purple). The autokinase domain of CpxA when uncoupled (Gly7 237/238) shows very high kinase activity (green), which is repressed to basal levels by the addition of the HAMP domain alone (Gly7 184/185, red). (B) The activity of BaeS constructs is measured in a ΔbaeS ΔcpxA strain using a pspy::mCherry reporter. The autokinase domain of BaeS when uncoupled shows high kinase activity (Gly7 239/240, green) relative to WT (blue), which is repressed by the addition of the HAMP domain alone (Gly7 190/191, red). Median reporter fluorescence values ± STE (n = 20,000) are reported below labels for single experiment.Figure 4—source data 1.
+**Figure 4.:** (A) The activity of CpxA constructs is measured in AFS51 strain (ΔcpxA) using a pcpxP::GFP reporter. The activity of WT CpxA (blue) is responsive to the antimicrobial mimetic, brilacidin (Scott et al., 2008; Mensa et al., 2011) (purple). The autokinase domain of CpxA when uncoupled (Gly7 237/238) shows very high kinase activity (green), which is repressed to basal levels by the addition of the HAMP domain alone (Gly7 184/185, red). (B) The activity of BaeS constructs is measured in a ΔbaeS ΔcpxA strain using a pspy::mCherry reporter. The autokinase domain of BaeS when uncoupled shows high kinase activity (Gly7 239/240, green) relative to WT (blue), which is repressed by the addition of the HAMP domain alone (Gly7 190/191, red). Median reporter fluorescence values ± STE (n = 20,000) are reported below labels for single experiment.
 
-## Fully cooperative and two-domain allosteric models are unable to explain the gamut of activities of mutants
+### Fully cooperative and two-domain allosteric models are unable to explain the gamut of activities of mutants
 
 In the following sections, we consider thermodynamic two-state allosteric signaling models of increasing complexity to understand the coupling of the sensor to the autokinase of WT PhoQ and our set of point-mutants. In these models, we assume that Mg2+ binds to single sites in the sensor domains. It is possible that binding between the sites is cooperative or that more than one Mg2+ ions are bound per domain. However, given the fact that the transcriptional assay is an indirect readout of the ‘kinase-on’ state, and as such is not necessarily perfectly linear with respect to the fraction of activation (Miyashiro and Goulian, 2007), we are unable to differentiate between models that differ subtly in their dose-response curves. However, our data (see below) are able to rule out highly cooperative models in which many binding sites must be occupied with high cooperativity as this would result in a much sharper dose-response curve (Gestwicki et al., 2000). We also assume that Mg2+ can bind to both ‘sensor-off’ and ‘sensor-on’ states, albeit with higher affinity to the ‘sensor-off’ state, as high [Mg2+] inhibits PhoQ kinase activity. Indeed, for the sensor of PhoQ, there is no reason to preclude ligand binding in either sensor state, since the same negatively charged surfaces are present in both states and can conceivably still bind Mg2+, albeit at a much lower affinity due to the lack of bridging interactions (Waldburger and Sauer, 1996). Therefore, our model allows for independent Mg2+ binding per monomer subunit with built-in stoichiometry factor of 2 in the observed Kds (KdOFF, KdON), but does not consider similar hybrid activation states in the autokinase.
 
 The simplest model for signaling in HKs is one in which the entire HK exists as one concerted domain in a two-state equilibrium of ‘kinase-on’ and ‘kinase-off’ states (equilibrium constant = K) which is then modulated by ligand binding (Figure 5A). In such a model, PhoQ will be pushed to a fully ligand bound, ‘kinase-off’ state at high enough [Mg2+] ([Mg2+]>> Kd). At low [Mg2+], the activity of PhoQ is determined by the partition of PhoQ into the low and high affinity Mg2+ bound states according to the ratio of the two dissociation constants, KdOFF versus KdON. The midpoint of transition is dictated by the relative magnitudes of K, which reflects PhoQ’s preference for the ‘kinase-on’ vs. ‘kinase-off’ state, as well as the two Kds, as shown in Figure 5A. However, this model cannot explain why several mutants of PhoQ do not show a 1-to-1 correlation between their sensor and autokinase signaling states (Figure 2C). Moreover, some mutants also have higher autokinase activity than WT PhoQ at low [Mg2+], demonstrating that even at the low-[Mg2+] conditions in which the sensor is fully in the crosslinked ‘kinase-on’ state, there remains a significant fraction of the WT autokinase that remains in the ‘kinase-off’ state. Therefore, this fully concerted signaling model is insufficient to describe the full range of activities of PhoQ variants.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig5-v2.jpg)
+
+**Figure 5.:** (A) In a concerted model for signaling, PhoQ has an intrinsic on-off equilibrium (constant = K) which is modulated by Mg2+ binding to either states with corresponding Kds. This allows for modulation of both low and high activity asymptotes and the midpoint of transition but requires perfect correlation between sensor and autokinase signaling states. Equations for calculating population fractions are shown in Methods (Equation 1). (B) The sensor and autokinase domains of PhoQ are allowed to sample both ‘kinase-on’ and ‘kinase-off’ states with equilibrium constants KSen and KAK when the other domain is in the ‘kinase-off’ state. When the other domain is in the ‘kinase-on’ state, the equilibria are scaled by the coupling constant, ⍺. This allows for semi-independent fractions of sensor and autokinase in the ‘kinase-on’ state, which are computed as shown in Methods (Equation 2). (C) In the uncoupled case (⍺ = 1), KSen modulates the sensor identically to the previously described concerted signaling mechanism, while KAK sets the basal autokinase activity. (D) The coupling of these domains with ⍺≠one results in [Mg2+] dependent activity that is either correlated (⍺ > 1) or anticorrelated (⍺ < 1). As ⍺ gets larger, the two domains act more as one concerted protein.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Changes in the intrinsic equilibrium of the sensor affect autokinase activity through coupling, and similarly (B) changes in the intrinsic equilibrium of the autokinase domain can alter the ligand-dependent crosslinking behavior of the sensor.
 
 The next model we considered is one in which two domains, sensor and autokinase exhibit two-state equilibria and communicate allosterically. A ligand-dependent sensor can be allosterically coupled to an autokinase domain with a tunable coupling strength to allow for the desired degree of communication between the sensor and the autokinase. In such a scheme, the sensor would be a ligand-binding domain with all the properties previously described for a fully concerted HK. The autokinase on its own would have a constant activity level based on its own intrinsic ‘kinase-off’ to ‘kinase-on’ equilibrium. The sensor is then connected to the autokinase in a manner that biases the intrinsic autokinase equilibrium differently depending on which signaling state the sensor is in. A ligand-dependent allosterically modulated HK results from such a coupling, so long as sensor ‘kinase-on’ and ‘kinase-off’ states of the sensor alter the autokinase equilibrium differently (Figure 5B and C).
 
@@ -82,7 +98,7 @@ To reduce the number of parameters needed to describe such a model, we can defin
 
 Coupling provides a robust mechanism for setting both the upper and lower activity asymptotes of the WT sensor kinase. At high enough [Mg2+], the low-crosslinking ‘kinase-off’ state of the sensor becomes dominant, and the corresponding activity of the autokinase will be dictated by the autokinase equilibrium when coupled to this ‘kinase-off’ state, KAK. At low [Mg2+], the high-crosslinking ‘kinase-on’ state of the sensor will be dominant, and the corresponding activity of the autokinase will be dictated by ⍺*KAK. The midpoint of transition will depend on the relative magnitudes of all the parameters. However, the range of behaviors possible by this model of coupling depends heavily on the intrinsic equilibria of the sensor and autokinase themselves (KSen, KAK). We observed that the two-domain model in Figure 5B captures much of the phenotypic behavior of the mutants shown in Figure 2C. However, different effects were observed for decoupling before and after the HAMP domain (Figures 3 and 4) indicating that it needs to be treated as a separate domain with its own equilibrium constant and independent coupling to both the sensor and catalytic domains.
 
-## Three-domain allosteric coupling mechanism of signal transduction
+### Three-domain allosteric coupling mechanism of signal transduction
 
 Based on the results of Gly7 insertion mutants and our inability to fully explain our data set with two-domain model, we developed a three-domain model, with allosteric couplings defined before and after the HAMP domain. In this model, the HAMP domain has its own intrinsic equilibrium, KHAMP, and there are two coupling constants that describe how the sensor couples to the HAMP domain (⍺1), and how the autokinase couples to the HAMP domain (⍺2). All possible state transitions are enumerated in Figure 6A. This treatment allows for semi-independent modulation of the sensor and autokinase using the intrinsic equilibrium of the HAMP domain in the following ways. In the case where ⍺2 = 1, the autokinase is decoupled from the sensor+ HAMP. In this scenario, the HAMP domain can modulate the [Mg2+] dependent state transition of the sensor through coupling via ⍺1 without altering the basal autokinase activity, as shown in Figure 6B. In the case where ⍺1 = 1, the sensor is decoupled from the HAMP+ autokinase, and the HAMP domain can modulate the basal (and ligand-insensitive) activity of the autokinase through coupling via ⍺2, as shown in Figure 6B. When the protein is fully coupled (i.e. ⍺1, ⍺2 ≠ 1), we can potentiate the ‘kinase-on’ or ‘kinase-off’ states of the sensor and autokinase in a manner that depends on both KHAMP and ⍺n’s, as shown in Figure 6C. Of particular interest is the case where ⍺1, ⍺2 <1, which enables the simultaneous potentiation of the ‘kinase-off’ state, while maintaining the correlated sensor-autokinase behavior of PhoQ. This matches our observation that the ‘kinase-off’ states of both the sensor and autokinase were potentiated by the HAMP domain in our Gly7 insertion experiments (Figure 3). Other possible behaviors with this 3-domain model include correlated sensing with ‘kinase-on’ potentiation, and anticorrelated signaling.
 
@@ -94,19 +110,726 @@ In order to fit our semi-empirical models to experimental observations, we gener
 
 Using this set of mutants, we next determined the five core allosteric parameters (KSen, KHAMP, KAK, ⍺1, ⍺2), and the dissociation constants for Mg2+ to the two sensor states (KdOFF, KdON, Figures 6A and 7A). One last parameter (S) is a scaling factor that relates the mole fraction of autokinase in the ‘kinase-on’ state to the experimentally observed Miller units associated with the beta-galactosidase transcription, which were obtained under strictly controlled experimental conditions to assure uniformity between mutants. In all, we sought to determine eight constants for each mutant. However, given the spacing of the points in our dose-response curves, it is only possible to obtain three pieces of information, that is, the top, bottom, and midpoint of the curves. Thus, with only six pieces of information (three each from crosslinking and transcriptional activation) for each mutant, the model is under-determined for any one mutant. We avoid this problem by using global fitting. For a given mutant, only one or two (or in a single occasion, three) of the parameters are allowed to vary, with the others being fit as global parameters that are shared with other mutants. The choice of which parameters to vary is determined by the location of the perturbation on the primary sequence of PhoQ (Figure 7—figure supplement 1, see methods). For example, a mutation near the N-terminus of the HAMP domain would be expected to primarily alter ⍺1 and KHAMP, so these values were allowed to vary locally. Mutations near the center of the tertiary structure of the HAMP domain are allowed to vary KHAMP alone and so on. This results in an overall fit with 62 adjustable parameters corresponding to eight global parameters, 47 locally varied parameters, and seven parameters fixed to a value of 1 to account for Gly7 insertions (Table 1). By comparison, there are 6 * 36 = 216 observables. Thus, in theory, the data should be more than sufficient to define the independent parameters.
 
+**Table 1.**
+ List of mutant parameter fits.Local parameters whose values remained within 10% of the global fit value are highlighted in bold font and green background. Parameters whose value drifted to one end of the explored parameter range are highlighted in italicized font and orange background. Key: ‘TM7’ → Gly7 insertion at 219/220; ‘HAMP 4’ → Gly4 insertion at 260/261; ‘HAMP 7’ / ‘H7’ → Gly7 insertion at 260/261; ‘SH7’ → Gly7 insertion at 270/271.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutation</th>
+      <th>KSen</th>
+      <th>KHAMP</th>
+      <th>KAK</th>
+      <th>α1</th>
+      <th>α2</th>
+      <th>S</th>
+      <th>KdOFF</th>
+      <th>KdON</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Y60C</td>
+      <td rowspan="5">9.5 E + 02</td>
+      <td>2.2 E + 01</td>
+      <td rowspan="3">1.4 E –03</td>
+      <td rowspan="4">5.3 E –03</td>
+      <td>1.0 E –08</td>
+      <td rowspan="36">7.4 E + 02</td>
+      <td rowspan="36">3.7 E –04</td>
+      <td rowspan="36">1.6 E –02</td>
+    </tr>
+    <tr>
+      <td>Y60C HAMP 4</td>
+      <td rowspan="2">4.5 E + 01</td>
+      <td>1.0 E + 00</td>
+    </tr>
+    <tr>
+      <td>Y60C HAMP 7</td>
+      <td>1.0 E + 00</td>
+    </tr>
+    <tr>
+      <td>Y60C SH7</td>
+      <td>2.1 E + 01</td>
+      <td>7.7 E –04</td>
+      <td>1.7 E + 00</td>
+    </tr>
+    <tr>
+      <td>Y60C TM7</td>
+      <td rowspan="9"></td>
+      <td rowspan="22"></td>
+      <td>1.0 E + 00</td>
+      <td rowspan="10"></td>
+    </tr>
+    <tr>
+      <td>Y40W</td>
+      <td>1.4 E + 03</td>
+      <td rowspan="5"></td>
+    </tr>
+    <tr>
+      <td>S43W</td>
+      <td>3.8 E + 02</td>
+    </tr>
+    <tr>
+      <td>E55A</td>
+      <td>4.1 E + 02</td>
+    </tr>
+    <tr>
+      <td>E55S</td>
+      <td>1.5 E + 03</td>
+    </tr>
+    <tr>
+      <td>V191W</td>
+      <td>1.2 E + 03</td>
+    </tr>
+    <tr>
+      <td>I207A</td>
+      <td>6.9 E + 02</td>
+      <td>1.1 E –01</td>
+    </tr>
+    <tr>
+      <td>L210A</td>
+      <td>3.1 E –03</td>
+      <td>9.1 E + 04</td>
+    </tr>
+    <tr>
+      <td>A213W</td>
+      <td>4.0 E + 04</td>
+      <td>1.0 E –05</td>
+    </tr>
+    <tr>
+      <td>S217W</td>
+      <td rowspan="6"></td>
+      <td rowspan="3">7.1 E –01</td>
+      <td rowspan="2">7.6 E –01</td>
+    </tr>
+    <tr>
+      <td>S217W + H7</td>
+      <td>1.0 E + 00</td>
+    </tr>
+    <tr>
+      <td>S217W + TM7</td>
+      <td>1.0 E + 00</td>
+      <td rowspan="5"></td>
+    </tr>
+    <tr>
+      <td>I221F</td>
+      <td>2.0 E + 01</td>
+      <td>1.5 E –01</td>
+    </tr>
+    <tr>
+      <td>L224A</td>
+      <td>1.6 E + 01</td>
+      <td>1.3 E –01</td>
+    </tr>
+    <tr>
+      <td>L224F</td>
+      <td>6.8 E + 01</td>
+      <td>1.2 E –02</td>
+    </tr>
+    <tr>
+      <td>A225F</td>
+      <td>1.0 E + 03</td>
+      <td>2.4 E + 01</td>
+      <td>2.3 E –01</td>
+    </tr>
+    <tr>
+      <td>E232A</td>
+      <td rowspan="16"></td>
+      <td rowspan="2">1.1 E + 02</td>
+      <td rowspan="13"></td>
+      <td>1.4 E + 00</td>
+    </tr>
+    <tr>
+      <td>E232A + H7</td>
+      <td>1.0 E + 00</td>
+    </tr>
+    <tr>
+      <td>E233A</td>
+      <td>2.3 E + 01</td>
+      <td>1.0 E –08</td>
+    </tr>
+    <tr>
+      <td>R236A</td>
+      <td>8.6 E + 00</td>
+      <td rowspan="3"></td>
+    </tr>
+    <tr>
+      <td>N240A</td>
+      <td>1.7 E + 01</td>
+    </tr>
+    <tr>
+      <td>R245F</td>
+      <td>2.2 E + 01</td>
+    </tr>
+    <tr>
+      <td>L254A</td>
+      <td rowspan="3"></td>
+      <td>1.0 E –05</td>
+      <td>1.0 E –08</td>
+    </tr>
+    <tr>
+      <td>N255A</td>
+      <td rowspan="2">1.3 E –03</td>
+      <td>4.9 E –01</td>
+    </tr>
+    <tr>
+      <td>N255A + H7</td>
+      <td>1.0 E + 00</td>
+    </tr>
+    <tr>
+      <td>R256A</td>
+      <td>3.6 E + 01</td>
+      <td></td>
+      <td>1.0 E –08</td>
+    </tr>
+    <tr>
+      <td>L258A</td>
+      <td></td>
+      <td>1.0 E –05</td>
+      <td>1.0 E –08</td>
+    </tr>
+    <tr>
+      <td>E261F</td>
+      <td>3.9 E + 01</td>
+      <td></td>
+      <td>9.9 E –01</td>
+    </tr>
+    <tr>
+      <td>Y265A</td>
+      <td rowspan="4"></td>
+      <td rowspan="3">4.1 E –04</td>
+      <td rowspan="2">3.2 E + 00</td>
+    </tr>
+    <tr>
+      <td>Y265A + TM7</td>
+      <td>1.0 E + 00</td>
+    </tr>
+    <tr>
+      <td>Y265A + SH7</td>
+      <td rowspan="2"></td>
+      <td>3.8 E + 00</td>
+    </tr>
+    <tr>
+      <td>R269L</td>
+      <td>3.3 E –04</td>
+      <td>1.0 E –08</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 7.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig7-v2.jpg)
+
+**Figure 7.:** (A) Three-domain two-state allosteric model used for fitting (see also Figure 6A) (B) Fits to the [Mg2+]-dependent kinase activity and (C) sensor crosslinking for ‘wild type’ Y60C PhoQ are shown. Error bars correspond to± SD for n = 9 biological replicates. (D) Bootstrapped confidence intervals (top) and residual sweep analyses (bottom) are shown for all eight global parameters. The value of the fit is indicated with red (x) and (|) marks. The confidence intervals of parameters S, KAK and ⍺2 are further parsed in Figure 7—figure supplement 2, and the confidence intervals for ⍺2 are further parsed in Figure 7—figure supplement 3.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** A molecular dynamics model of PhoQ shows the location of mutations on one monomer with colored Cβ spheres. Colors correspond to mutation labels in Figure 8.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** The confidence intervals for KAK and ⍺2 parameters are shown as a function of different ranges of S values. S and KAK show strong correlation.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** The confidence intervals for all global parameters are shown as a function of different ranges of ⍺2 values.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** (A) In a two-domain signaling model, PhoQ is split into two domains, the ‘Sensor’ which includes the periplasmic PAS domain, TM and HAMP domains, and the ‘Autokinase’. These two domains have their own intrinsic equilibria, KSen and KAK, which are coupled in their ‘on’ states by the parameter ⍺. The population ensemble is perturbed by Mg2+ binding to both states of the Sensor. (B) Global fitting of PhoQ single point mutant and Gly7 insertion data set cannot simultaneously fit sensor crosslinking and autokinase activity data. Representative fits for WT phoQ and Gly7 disconnections are shown.
+
+**Table 2.**
+ parameters used in fitting.Values in red font indicate parameters fixed to one to account for Gly7 insertion.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Par.</th>
+      <th>Fit value</th>
+      <th>Lower bound</th>
+      <th>Upper bound</th>
+      <th>Fit datasets affected</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KdON</td>
+      <td>1.6 E-02</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>ALL</td>
+    </tr>
+    <tr>
+      <td>KdOFF</td>
+      <td>3.7 E-04</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>ALL</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>5.3 E-03</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Y60C_Gly7 270/271, Y60C_Gly7 260/261, Y60C_Gly4 260/261, Y60C, Y40W, Y265A_Gly7 270/271, Y265A, V191W, S43W, R269L, R256A, R245F, R236A, N255A Gly7 260/261, N255A, N240A, L258A, L254A, E55S, E55A, E261F, E233A, E232A_Gly7 260/261, E232A</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>Y60C_Gly7 219/220, Y60C, Y40W, V191W, S43W, S217_Gly7 219/220, S217W, R245F, R236A, N240A, L224F, L224A, L210A, I221F, I207A, E55S, E55A, Α225F, Α213W</td>
+    </tr>
+    <tr>
+      <td>KSen</td>
+      <td>9.5 E + 02</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Y60C_Gly7 219/220, Y60C_Gly7 270/271, Y60C_Gly7 260/261, Y60C_Gly4 260/261, Y60C, Y265A_Gly7 270/271, Y265A, S217W_Gly7 219/220, S217W_Gly7 260/261, S217W, R269L, R256A, R245F, R236A, N255A_Gly7 260/261, N255A, N240A, L258A, L254A, L224F, L224A, L210A, I221F, I207A, E261F, E233A, E232A_Gly7 260/261, E232A</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>2.2 E + 01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Y60C_Gly7 219/220, Y60C, Y40W, Y265A_Gly7 219/220, Y265A_Gly7 270/271, Y265A, V191W, S43W, R269L, E55S, E55A, Α213W</td>
+    </tr>
+    <tr>
+      <td>KAK</td>
+      <td>1.4 E-03</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Y60C_Gly7 219/220, Y60C_Gly7 260/261, Y60C_Gly4 260/261, Y60C, Y40W, V191W, S43W, S217W_Gly7 219/220, S217W_Gly7 260/261, S217W, R256A, R245F, R236A, N255A_Gly7 260/261, N255A, N240A, L258A, L254A, L224F, L224A, L210A, I221F, I207A, E55S, E55A, E261F, E233A, E232A_Gly7 260/261, E232A, Α225F, Α213W</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>7.4 E + 02</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>ALL</td>
+    </tr>
+    <tr>
+      <td>KSen</td>
+      <td>1.4 E + 03</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Y40W</td>
+    </tr>
+    <tr>
+      <td>KSen</td>
+      <td>3.8 E + 02</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>S43W</td>
+    </tr>
+    <tr>
+      <td>KSen</td>
+      <td>4.1 E + 02</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>E55A</td>
+    </tr>
+    <tr>
+      <td>KSen</td>
+      <td>1.5 E + 03</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>E55S</td>
+    </tr>
+    <tr>
+      <td>KSen</td>
+      <td>1.2 E + 03</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>V191W</td>
+    </tr>
+    <tr>
+      <td>KSen</td>
+      <td>6.9 E + 02</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>I207A</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>1.1 E-01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>I207A</td>
+    </tr>
+    <tr>
+      <td>KSen</td>
+      <td>3.1 E-03</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>L210A</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>9.1 E + 04</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>L210A</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Α213W</td>
+    </tr>
+    <tr>
+      <td>KSen</td>
+      <td>4.0 E + 04</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Α213W</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>7.1 E-01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>S217W_Gly7 219/220, S217W_Gly7 260/261, S217W</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>7.6 E-01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>S217W_Gly7 260/261, S217W</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>2.0 E + 01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>I221F</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>1.5 E-01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>I221F</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>1.6 E + 01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>L224A</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>1.3 E-01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>L224A</td>
+    </tr>
+    <tr>
+      <td>Par.</td>
+      <td>Fit value</td>
+      <td>lower bound</td>
+      <td>Upper bound</td>
+      <td>Fit datasets affected</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>6.8 E + 01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>L224F</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>1.2 E-02</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>L224F</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>2.4 E + 01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Α225F</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>2.3 E-01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Α225F</td>
+    </tr>
+    <tr>
+      <td>KSen</td>
+      <td>1.0 E + 03</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Α225F</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>1.1 E + 02</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>E232A_Gly7 260/261, E232A</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>1.4 E + 00</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>E232A</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>2.4 E + 01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>E233A</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>E233A</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>8.6 E + 00</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>R236A</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>1.7 E + 01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>N240A</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>2.2 E + 01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>R245F</td>
+    </tr>
+    <tr>
+      <td>KAK</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>L254A</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>L254A</td>
+    </tr>
+    <tr>
+      <td>KAK</td>
+      <td>1.3 E-03</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>N255A_Gly7 260/261, N255A</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>4.9 E-01</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>N255A</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>3.6 E + 01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>R256A</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>R256A</td>
+    </tr>
+    <tr>
+      <td>KAK</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>L258A</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>L258A</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>3.9 E + 01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>E261F</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>9.9 E-01</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>E261F</td>
+    </tr>
+    <tr>
+      <td>KAK</td>
+      <td>4.1 E-04</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Y265A_Gly7 219/220, Y265A_Gly7 270/271, Y265A</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>3.2 E + 00</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>Y265A_Gly7 219/220, Y265A</td>
+    </tr>
+    <tr>
+      <td>KAK</td>
+      <td>3.3 E-03</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>R269L</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>R269L</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>4.5 E + 01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Y60C_Gly7 260/261, Y60C_Gly4 260/261</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>1.0 E + 00</td>
+      <td></td>
+      <td></td>
+      <td>Y60C_Gly7 260;261, Y60C_Gly4 260/261</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>1.0 E + 00</td>
+      <td></td>
+      <td></td>
+      <td>S217W_Gly7 260/261</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>1.0 E + 00</td>
+      <td></td>
+      <td></td>
+      <td>E232A_Gly7 260/261</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>1.0 E + 00</td>
+      <td></td>
+      <td></td>
+      <td>N255A_Gly7 260/261</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>1.0 E + 00</td>
+      <td></td>
+      <td></td>
+      <td>Y60C_Gly7 219/220</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>1.0 E + 00</td>
+      <td></td>
+      <td></td>
+      <td>S217W_Gly7 219/220</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>1.0 E + 00</td>
+      <td></td>
+      <td></td>
+      <td>Y265A_Gly7 219/220</td>
+    </tr>
+    <tr>
+      <td>KHAMP</td>
+      <td>2.1 E + 01</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Y60C_Gly7 270/271</td>
+    </tr>
+    <tr>
+      <td>KAK</td>
+      <td>7.8 E-04</td>
+      <td>1.0 E-05</td>
+      <td>1.0 E + 05</td>
+      <td>Y60C_Gly7 270/271</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>1.7 E + 00</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>Y60C_Gly7 270/271</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>3.8 E + 00</td>
+      <td>1.0 E-08</td>
+      <td>1.0 E + 02</td>
+      <td>Y265A_Gly7 270/271</td>
+    </tr>
+  </tbody>
+</table>
+
 This model was globally fit using our mutant dataset as explained in detail in the Materials and methods section. Briefly, we standardize the ranges of autokinase activity measurements (Miller units from beta-galactosidase assay) by the global average activity in our dataset. This normalizes the range of autokinase activity to one that is similar to crosslinking fractions (range 0–1) and gives both types of experimental measurements similar weights in our global fits. We give additional weight to data with experimental replicates (and hence greater certainty) by simply treating each replicate as an independent data set, with all the variables held constant between replicates during fit. Each parameter is allowed to sample a 10-log range of possible values, and the best fit is determined by minimizing the sum of residuals across the entire dataset. In order to avoid getting trapped in any local minima of the parameter space, we repeat the fit 125,000 times using randomly generated starting values for each parameter and determine confidence intervals for our parameters using bootstrapping to generate over 3000 synthetic dataset fits (see Materials and methods for details). Where mutations or insertions have been introduced, we allow the parameters expected to be affected by the mutation to vary locally for the corresponding data set. Moreover, six mutants can be fit with fewer local parameters than were utilized in the fit, as the values for some of these locally fit parameters remain close to the globally fit value (within 10%), as highlighted in Table 1 (green).
 
 We are able to obtain a remarkably good fit for our entire dataset with the aforementioned considerations. Figure 7 shows the results of the best obtained fit for ‘wild type’ PhoQ (Y60C) sensor-crosslinking (Figure 7B) and autokinase activity (Figure 7C). Since the WT data were fit entirely globally, they represented the most stringent test for the performance of our model overall, and qualitatively showed good agreement between model fit and experimental data. The values of the eight global parameters corresponding to this wild type fit are shown in Figure 7D, alongside two metrics of fit quality. The first metric is a bootstrapped confidence interval, with the frequency histogram of resulting fit values shown in the top panels. The second metric is a parameter sweep analysis in which the global sum of residuals is evaluated as the value of the indicated parameter is allowed to vary while all other parameters are held fixed. Five of our global parameters, KdOFF, KdON, KSen, KHAMP and ⍺1 show excellent convergence to the ‘best fit’ value, with well-defined minima in the sum of residuals as we explore parameter value. Three parameters, KAK, S and ⍺2 show strong signs of covariability, and wider confidence intervals. In the fully activated state, the observed signal is defined by the product of the scaling factor, S, and the fraction of the protein in the ‘kinase-on’ state (approximately S*KAK). This product is well-defined and converges to a value of ≈ 1.02. However, as KAK is lowered below this value, S increases in parallel to maintain a constant value for the product of S*KAK. In Figure 7—figure supplement 2, we show that when the values of S are restrained, the values of KAK are also restrained, and vice versa. Nevertheless, we can place a functionally meaningful upper limit on KAK, of approximately 0.1. Similarly, we can place an upper limit on the value of 0.1 for ⍺2, which represents the negatively cooperative coupling of KAK to the parameters defining the other domains. ⍺2 describes the difficulty of the autokinase to transition into the ‘on-state’ when coupled to the HAMP2 state vs the HAMP1 signaling state. Our data show that this transition is disfavored. Figure 7—figure supplement 3 shows that for both peaks of ⍺2 values centered around 10–2 and 10–7, we converge to similar parameter fits for the other global parameters since both values of ⍺2 establish a tightly coupled ‘kinase-off’ state within the sensitivity of our experiments. Therefore, these uncertainties do not affect any of our conclusions below, which depend on presence of strong versus weak and negative versus positive coupling. We also examined the ability to fit a simpler two-domain allosteric coupling model (Figure 5B, see Materials and methods Equation 2) to our data. This model failed to globally fit the set of sensor crosslinking and kinase activities of WT PhoQ, point mutants and Gly7 insertions (Figure 7—figure supplement 4).
 
 One feature that was somewhat surprising was that KAK was unfavorable towards forming the ‘kinase-on’ versus ‘kinase-off’ states (KAK <1), even at limiting low concentrations of Mg2+. This indicates that the observed activity for the WT protein is less than what is observed for some of the mutants, and what might be observed in a hypothetical state in which the autokinase is unfettered by connections to HAMP and the membrane. Although unexpected, this finding is consistent with a large body of data (Fernández et al., 2019; Wang et al., 2015; Koh et al., 2021), and has been observed in PhoQ with antimicrobial peptide stimulation (Matamouros et al., 2015). Thus, in ligand-responsive HKs, evolution does not drive toward maximal activity which might lead to wasteful and toxic transcription, but instead a finely tuned value that is titrated to the degree of transcription required for function.
 
-## Application of the three-domain model to a set of mutants illustrates how substitutions distant from active sites modulate signal strength and ligand sensitivity
+### Application of the three-domain model to a set of mutants illustrates how substitutions distant from active sites modulate signal strength and ligand sensitivity
 
 The values of the parameters provide a detailed view of the energy landscape of PhoQ, in the ‘kinase-on’ and ‘kinase-off’ state – and how it is modulated by binding to Mg2+ and mutations. The parameters are consistent with our observations that the HAMP domain is a significant modulator of the intrinsic equilibria of the sensor and autokinase domains. At high Mg2+ concentrations, PhoQ is in a ‘sensor-off’ and ‘autokinase-off’ state. With respect to this reference ‘kinase-off’ state, the HAMP domain has a thermodynamically favored signaling state, ‘HAMP2’, with a fit equilibrium value of KHAMP = 22. This favored state of the HAMP domain is more strongly coupled to these ‘kinase-off’ states and serves to dampen the otherwise favorable transitions of both the sensor and autokinase domains to the ‘kinase-on’ conformation. The sensor’s propensity to switch to a ‘sensor-on’ state is reduced from a highly preferred equilibrium KSen = 9.5 x 102, to a modest downhill equilibrium of ⍺1*KSen = 5.0 when the HAMP domain is in this HAMP2 state. This latter equilibrium is weak enough to be overcome by Mg2+ binding, and the ‘sensor-off’ state is further stabilized with more ligand binding. The ‘HAMP2’ state that is preferred in this ‘sensor-off’ state is also strongly coupled to the ‘kinase-off’ state of the autokinase, reducing the propensity of the autokinase to switch to the ‘kinase-on’ state from S*KAK = 1.0 to ⍺2*S*KAK ≤ 10–3. Thus, the HAMP2 state behaves as a negative modulator of the intrinsic propensities of the sensor and autokinase. At high enough [Mg2+], the entire population ensemble is predominantly in the sensorOFF-HAMP2-AutokinaseOFF state.
 
 In the absence of ligand, the sensor’s modest downhill equilibrium to the ‘kinase-on’ state is strongly tied to a switch of the HAMP domain from ‘HAMP2’ to ‘HAMP1’, with an equilibrium = 1/(⍺1KHAMP) = 25. The HAMP1 state is weakly coupled to the autokinase, which allows the autokinase to sample both kinase-off and kinase-on state, with an effective equilibrium of S.KAK = 1.02. This allows for the partial decoupling of the sensor and the autokinase at low Mg2+ concentrations observed in wild type PhoQ (Figure 2C) with the population ensemble composed of both sensorON-HAMP1-AutokinaseON and sensorON-HAMP1-AutokianseOFF states. Because the HAMP1 state is weakly coupled to both adjacent domains, the equilibria constants KSen and KAK are close to the intrinsic equilibria of these domains when uncoupled from the HAMP domain altogether. In other words, KSen = 9.5 × 102 reflects the high propensity of the sensor to switch to the ‘sensor-on’ state when uncoupled from the HAMP domain, and S.KAK = 1.0 reflects the propensity of the autokinase to have as high an activity as WT PhoQ at low [Mg2+], as shown earlier with Gly7 disconnections in Figure 3.
 
 The parameters for individual mutations show how amino acid substitutions alter the energy landscape and how these changes in turn alter the phenotype. Before discussing the effects of substitutions, however, it is important to address the overall quality of the fit over the full ensemble of mutants. Figure 8 shows the results of fits for our mutations and Gly7 insertions with mutations color-labeled according to the locally varied parameters as in Figure 7—figure supplement 1. The corresponding fit values are listed in Table 1, and confidence intervals and parameter sensitivity analyses are shown in Figure 8—figure supplement 1. While it is possible to construct models with even more states, for example, by treating the TM domain separately rather than as an extension of the sensor domain, the number of parameters – and their uncertainty- rapidly increases. We therefore chose the simplest model required to describe the entire set of data.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig8-v2.jpg)
+
+**Figure 8.:** Fits to activity (red line, closed circles) and sensor crosslinking (blue dashed line, triangles) are shown for the entire PhoQ dataset. The color of mutations matches the color scheme in Figure 7—figure supplement 1 to indicate locally varied parameters, and these parameters are listed in Table 1 and Table 2. Confidence intervals and residual sweep analyses are presented in Figure 8—figure supplement 1. Poor fits are highlighted in Figure 8—figure supplement 2.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Histograms from 3,061 convergent fits of simulated datasets for each local variable are shown in top panels. Residual sweeps in which the sum of residuals of the global fit is plotted as a function of indicated parameter being varied locally is shown in the bottom panels. Values of parameter fits are shown with red (x) and (|) marks.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/73336/elife-73336-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Poor midpoints of crosslinking transitions were fit for (D) L254A and (E) L258A. Some combinations of mutations had poor crosslinking fits (F) S217W + HAMP Gly7, (G) N255A + HAMP Gly7 and activity fits (H) Y265A + sensor Gly7.
 
 We obtained fits within experimental error for the [Mg2+]-dependent transcriptional activity of our entire mutant data set. Thus, the model worked well for all ligand-sensitive mutants. The only deviations lay in the crosslinking data for non-functional mutants that were decoupled in the transcriptional output (Figure 8—figure supplement 2). One such set of mutants (I221F, L224A, and A225F) had substitutions at the C-terminal end of the second TM helix. While the midpoint and lower limit were well described by the model, the experimentally observed extent of crosslinking reached an upper limit of 65–80% crosslinking at low Mg2+, less than the predicted value near 100%. Given the location of the substitutions near the membrane interface, it is possible that a portion of the protein is not fully inserted and hence the samples used for western analysis might have been contaminated by cytoplasmically localized, and not yet membrane-inserted protein, which would be expected to remain not cross-linked. There are also two mutations localized near the interface between the HAMP and the autokinase domains where the mid-point is poorly fit (L254A, L258A), potentially owing to our choices of parameters to locally float for these mutants (Figure 8—figure supplement 2D-E) as discussed in Materials and methods. Significantly better fits were obtained by altering the parameters varied for these mutants from KHAMP and α2 to KAK and α2. Thus, these residues may be involved in the underlying equilibrium of the autokinase domain itself due to their proximity to the ‘S-helix’ that connects the HAMP domain to the autokinase. Finally, double mutants are not fit well, especially when the two sites of mutation are in close proximity (S217W + HAMP Gly7, N255A + HAMP Gly7, Y265A + Sensor Gly7, Figure 8—figure supplement 2F-H). This is likely because the thermodynamic effects of double mutations are often non-additive in structurally and sequentially proximal positions that interact directly. Additionally, while we observe relatively invariant expression of almost all variants (as seen in the western analysis used to quantify crosslinking), some variants, particularly double mutants required slight induction of expression with 10 µM IPTG for observable levels of membrane-inserted PhoQ by western-blotting (see Materials and methods). In summary, the crosslinking and transcriptional activity data are very well fit for the entire set of mutants, except for a fraction of the nonfunctional mutants in which Mg2+ binding and transcription were significantly decoupled. Even for these mutants, however, there is a qualitative fit to the data, and possible reasons for the deviation.
 
@@ -134,43 +857,43 @@ It may be that signal transduction mechanisms in HKs are as varied as their modu
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 BW25113 and HK knockout strains were obtained from the Keio collection. TIM206 (E. coli ∆phoQ, pmgrB::LacZ) was obtained from Tim Mayashiro (Goulian lab). pTrc99a (GenBank # M22744) was obtained from commercial sources. pSEVA311 (GenBank# JX560331) was developed by the de Lorenzo lab and was a gift from the European Standard Vector Architecture consortium. Brilacidin was a gift from Polymedix Inc N-ethylmaleimide (NEM) was purchased from Sigma. Tris-Acetate gels (Thermofisher Scientific) and Anti-PentaHis antibody (Thermofisher Scientific) were used for western blotting.
 
-## Methods
+### Methods
 
-## Cloning
+#### Cloning
 
 PhoQ mutants were cloned into the pTrc99a plasmid multiple cloning site by restriction cloning. Point mutations were made by quick-change mutagenesis and confirmed by sanger sequencing. Hybrid HK-gene reporter plasmids were built in pTrc99a plasmid by introducing a c-terminally 6 x His-tagged HK construct into the IPTG inducible MCS, and the mCherry reporter sequence downstream by Gibson cloning (Gibson et al., 2009). Sequences of reporters are available in supplementary methods. Gly7 disconnections and point mutations were introduced by a blunt-end ligation strategy and confirmed by Sanger sequencing.
 
-## Growth of PhoQ constructs
+#### Growth of PhoQ constructs
 
 For each biological replicate, an isolated colony of TIM206 (genotype: ∆phoQ, pmgrB::LacZ) containing various pTrc99a-phoQ constructs was grown overnight at 37 ℃ in MOPS minimal media + 50 µg/mL AMP and 1 mM MgSO4. These overnight cultures were then diluted 50 x into 1 mL MOPS media + 50 µg/mL AMP and 1 mM MgSO4 and grown at 37 °C for 2 hr. These cultures were further diluted 500 X into 30 mL MOPS minimal media + 50 µg/mL AMP containing 0.1, 0.4, 1.6, 6.4, and 25.6 mM MgSO4, and grown for at least 5 hr such that the density of the culture reaches log-phase (OD600 = 0.2–0.8). A total of 500 µL of culture is removed for evaluating beta galactosidase activity, while the remaining culture is used for western analysis. Two constructs (A225F, Y265A Gly7 260/261) showed no detectable PhoQ in membrane preparations and required induction with 10 µM IPTG during growth for observable levels of membrane-inserted PhoQ by western blot.
 
-## Beta galactosidase activity
+#### Beta galactosidase activity
 
 A total of 500 µL of PhoQ culture was combined with 500 µL of 1 x Z-buffer +40 mM beta-mercaptoethanol, 25 µL of 0.1% SDS in water, and 50 µL of chloroform in a glass culture tube and vortexed for complete lysis. The lysate was then prewarmed to 37 °C in an air incubator before addition of ONPG substrate. 0.25 mL of prewarmed 4 mg/mL ONPG in 1 x Z-buffer+ bMe was added to the lysate to initiate hydrolysis, which was then quenched with the addition of 500 µL of 1 M Na2CO3 after variable incubation periods. The quenched hydrolysis was then centrifuged to remove any cell debris, and absorbance at 420 nm and 550 nm was measured in triplicate using a Biotek synergy2 plate-reader with pathlength correction. Miller units were calculated as follows:
 
 Miller units = 1000*(OD420 – 1.75*OD550)/(OD600*dilution factor*incubation time in min).
 
-## Membrane fraction isolation
+#### Membrane fraction isolation
 
 Thirty mL of PhoQ culture was centrifuged at 4350xg at 4 °C for 20 min to collect a cell-pellet. This cell pellet was immediately frozen in liquid nitrogen and stored at –80 °C until analysis. Frozen pellets were thawed, suspended and incubated on ice with 500 µg/mL N-Ethylmaleimide (NEM) and 1 mg/mL lysozyme in 50 mM TRIS buffer, pH 8, for 1 hr. Cells were then lysed by 30 seconds of tip sonication (Fisher Scientific Sonic Dismembrator Model 500, 10% Amplitude, 1 s pulse on, 1 s pulse off). Lysed cells were then centrifuged at 16,000xg for 10 min to remove cell debris. Membrane was isolated from the supernatant by further centrifugation at 90,000xg for 10 min. Membrane pellets were then resuspended in 1 X lithium dodecyl sulfate (LDS, Invitrogen) loading buffer containing 8 M urea and 500 mM NEM, boiled at 95 °C for 10 min and analyzed by western blot.
 
-## Monomer and dimer quantification by western blot
+#### Monomer and dimer quantification by western blot
 
 LDS solubilized membrane prep samples were separated on 7% TRIS-SDS gels by electrophoresis at 200 V for 70 min, and then transferred onto nitrocellulose membranes by dry transfer (iBlot2). Membranes were then blocked using 1% BSA in TBS-t buffer (20 mM Tris, 2.5 mM EDTA, 150 mM NaCl, 0.1% Tween-20), probed using an anti-pentaHis HRP antibody, and visualized using luminescent ECL substrate on a BioRad imager. Bands corresponding to PhoQ monomer and dimer were quantified using Image-J software to yield a crosslinking efficiency between 0 and 1. A representative quantification of crosslinking is presented in Figure 2—figure supplement 1.
 
-## Measuring activity of CpxA, BaeS
+#### Measuring activity of CpxA, BaeS
 
 HK constructs were cloned into the MCS of pTrc99a plasmid, and the associated fluorescent reporter gene was cloned downstream. For the CpxA reporter plasmid, the response regulator CpxR, was also cloned into the MCS and transformed into AFS51 strain (ΔcpxAΔpta::Kan pcpxP::GFP) by heat shock transformation. For BaeS, the response regulator BaeR, was cloned into an additional plasmid, pSEVA331 under an IPTG inducible promoter and both plasmids were transformed into a ∆baeS∆cpxA double KO strain by heat shock transformation. Cultures were started by diluting overnights 200–500 fold into fresh LB medium +50 µg/mL AMP and allowed to grow to mid-log phase (OD600 = 0.4–0.6) before analysis by flow cytometry. The responsiveness of cpxP reporter was confirmed by treating log-phase cultures with 2 µg/mL brilacidin for 1.5 hr before analysis. Expression of HKs was confirmed by western analysis using the c-terminal 6 x His-tag for quantification.
 
-## Flow cytometry
+#### Flow cytometry
 
 LB cultures at mid-log phase were diluted 20 x into 1 x PBS buffer and 20,000 cells gated by forward and side-scatter were evaluated for GFP fluorescence (pcpxP::GFP; Ex. 488 nm, Em. 515 nm) or mCherry fluorescence (pspy::mCherry, Ex. 488 nm, Em. 620 nm) per sample on a BD FACS caliber instrument. Sample average fluorescence and standard error were determined by standard analysis using Flo-Jo software.
 
-## Data fitting
+#### Data fitting
 
 For data fitting, only data-sets in which kinase activity and sensor crosslinking have been determined simultaneously from the same samples at all 5 concentrations of Mg2+ were included in analysis. The resulting kinase-active and sensor cross-linking-competent states are partitioned to generate expressions dependent on [Mg2+] as the lone variable as shown below. The parameters are then fit globally across all datasets, except for those accounting for the perturbation of a mutation/ Gly7 disconnection, which are fit locally. Locally fit parameters are kept identical between replicates or additive mutations.
 
@@ -178,11 +901,11 @@ To ensure equal weights in global fitting, the activity data was scaled by a fac
 
 We also performed a residual sweep analysis to assess the quality of the fit in response to changes in a single parameter value, with all other parameters held fixed. For residual sweep analysis, all but one of the parameters were fixed to their optimum values, and the variable under analysis was swept across its allowed numerical range, after which the sum of squares of residuals was calculated. The sum of squares was then plotted as a function of the parameter’s numerical value (Figure 7D and Figure 8—figure supplement 1). Code to reproduce the fits and plots is given in the comment section at the bottom of the supplement python scripts (phoq_fit_local_global.py, phoq_fit_local_global_ipython.py, and phoq_fit_ci_local_global.py). Scripts to run the fitting on the UCSF Wynton High Performance Computing cluster can also be found in the supplement (phoq_fit.job and phoq_fit_ci.job).
 
-## Choice of locally varied parameters
+#### Choice of locally varied parameters
 
 Mutations contained entirely within a given domain are allowed to vary the intrinsic equilibrium of that domain only. Mutations within 1 heptad of a domain-domain junction (219/220 for sensor/HAMP, 260/261 for HAMP/autokinase) are also allowed to vary the equilibrium constant of the domain they reside in, as well as the coupling constant between the two domains. Exceptions to this rule include A225F, which was additionally allowed to vary the KSen parameter, along with KHAMP and ⍺1 parameters which would normally be varied. Given the poor fit to this mutant, we hypothesized that the disruption of inserting a large Phe sidechain in place of an alanine may propagate into the preceding transmembrane region. Similarly, we allowed KAK to float locally for L254A, N255A, and L258A, which resulted in better fits as discussed in main text. Finally, ⍺2 was allowed to float for E231A and E232A, which have been hypothesized in previous work to directly couple to the autokinase domain via a salt-bridge to an arginine residue in the autokinase (Matamouros et al., 2015).
 
-## Integrative modeling and Molecular dynamics
+#### Integrative modeling and Molecular dynamics
 
 Rosetta (Leaver-Fay et al., 2011), a powerful protein design suite, was employed to produce the initial model of PhoQ. The integrative modeling procedure was used to combine X-ray structures of the PhoQ sensor PDB id: 3bq8 (Cheung et al., 2008) and CpxA kinase domain PDB id: 4biv, Mechaly et al., 2014, with the atomic model of PhoQ transmembrane domain (Lemmin et al., 2013).
 

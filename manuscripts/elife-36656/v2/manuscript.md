@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.36656.001 Protein kinases are major drug targets, but the development of highly-selective inhibitors has been challenging due to the similarity of their active sites. The observation of distinct structural states of the fully-conserved Asp-Phe-Gly (DFG) loop has put the concept of conformational selection for the DFG-state at the center of kinase drug discovery. Recently, it was shown that Gleevec selectivity for the Tyr-kinase Abl was instead rooted in conformational changes after drug binding. Here, we investigate whether protein dynamics after binding is a more general paradigm for drug selectivity by characterizing the binding of several approved drugs to the Ser/Thr-kinase Aurora A. Using a combination of biophysical techniques, we propose a universal drug-binding mechanism, that rationalizes selectivity, affinity and long on-target residence time for kinase inhibitors. These new concepts, where protein dynamics in the drug-bound state plays the crucial role, can be applied to inhibitor design of targets outside the kinome.
+Protein kinases are major drug targets, but the development of highly-selective inhibitors has been challenging due to the similarity of their active sites. The observation of distinct structural states of the fully-conserved Asp-Phe-Gly (DFG) loop has put the concept of conformational selection for the DFG-state at the center of kinase drug discovery. Recently, it was shown that Gleevec selectivity for the Tyr-kinase Abl was instead rooted in conformational changes after drug binding. Here, we investigate whether protein dynamics after binding is a more general paradigm for drug selectivity by characterizing the binding of several approved drugs to the Ser/Thr-kinase Aurora A. Using a combination of biophysical techniques, we propose a universal drug-binding mechanism, that rationalizes selectivity, affinity and long on-target residence time for kinase inhibitors. These new concepts, where protein dynamics in the drug-bound state plays the crucial role, can be applied to inhibitor design of targets outside the kinome.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ The combination of X-ray crystallography, NMR spectroscopy and comprehensive ana
 
 ## Results
 
-## Dephosphorylated Aurora A samples both an inactive and active structure
+### Dephosphorylated Aurora A samples both an inactive and active structure
 
 A plethora of X-ray structures and functional assays led to the general notion that dephosphorylated Aurora A and, more universally, Ser/Thr kinases are in an inactive conformation and that phosphorylation or activator binding induces the active structure. A comparison of many X-ray structures of inactive and active forms of Ser/Thr kinases resulted in an elegant proposal of the structural hallmarks for the active state by Taylor and collaborators: the completion of both the regulatory and catalytic spines spanning the N- and C-terminal domains, including the orientation of the DFG-motif (Kornev and Taylor, 2010; 2015). X-ray structures, however, provide merely static snapshots of possible kinase conformations that do not necessarily reflect the situation in solution. In fact, recent experimental data postulate that phosphorylation of Aurora A does not ‘lock’ the kinase in the active conformation, and that the activation-loop still exhibits conformational dynamics (Gilburt et al., 2017; Ruff et al., 2018). On the other hand, X-ray crystallography provides high-resolution structural data that cannot readily be obtained from FRET or EPR and IR spectroscopy.
 
@@ -46,6 +46,187 @@ Two crystals from the same crystallization well capture both the inactive and ac
 ![Figure 1.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig1-v2.jpg)
 
 **Figure 1.:** (A) Superposition of X-ray structures of dephosphorylated Aurora A (residues 122–403) with Mg2+·AMPPCP (AMPPCP in gray sticks and magnesium as yellow sphere) in the inactive (cyan, PDB 4C3R [Zorba et al., 2014]) and active (orange, PDB 6CPF) state, solved from crystals of the same crystallization well. (B) Zoom-in of (A) to visualize the nucleotide binding region (K162, D274, and E181), the R-spine (L196, Q185, F275, H254, and D311) and the activation loop region (D256, K258, and T292). (C) Same zoom-in as in (B), but dephosphorylated Aurora A in active state (orange) is superimposed with phosphorylated Aurora A (red, PDB 1OL7 [Bayliss et al., 2003]). (D) Superposition of the DFG(W) motif in the three states shown in (B) and (C). (E) Superposition of phosphorylated Aurora A in active conformation (red) and apo, dephosphorylated Aurora A also in the active conformation (yellow, PDB 6CPE). (F) Zoom-in of (E) showing the same region as in (B).
+
+**Table 1.**
+ Data collection and refinement statistics for dephosphorylated Aurora A (122-403).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>apo-Aurora A (6CPE)</th>
+      <th>Aurora A + AMPPCP (6CPF)</th>
+      <th>Aurora A + Mb + AT9283 (6CPG)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 61 2 2</td>
+      <td>P 61 2 2</td>
+      <td>P 21 21 21</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>80.55, 80.55, 169.79</td>
+      <td>81.75, 81.75, 172.87</td>
+      <td>63.86, 69.7, 175.56</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 120</td>
+      <td>90, 90, 120</td>
+      <td>90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>84.90–2.45 (2.55–2.45)*</td>
+      <td>86.44–2.30 (2.39–2.30)*</td>
+      <td>43.14–2.80 (2.87–2.80)*</td>
+    </tr>
+    <tr>
+      <td>Rmeas</td>
+      <td>0.073 (1.308)</td>
+      <td>0.113 (2.260)</td>
+      <td>0.189 (1.268)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)</td>
+      <td>15.0 (1.6)</td>
+      <td>10.3 (1.3)</td>
+      <td>8.9 (1.1)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.998 (0.711)</td>
+      <td>0.997 (0.465)</td>
+      <td>0.986 (0.625)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.9 (100)</td>
+      <td>100 (100)</td>
+      <td>99.2 (98.8)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>7.6 (6.3)</td>
+      <td>9.7 (7.8)</td>
+      <td>5.4 (5.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>64.52–2.45</td>
+      <td>54.79–2.30</td>
+      <td>36.17–2.80</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>12617 (1224)</td>
+      <td>15756 (1527)</td>
+      <td>19556 (1845)</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.2151/0.2528</td>
+      <td>0.2179/0.2587</td>
+      <td>0.2792/0.3350</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>2035</td>
+      <td>2055</td>
+      <td>5122</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>11</td>
+      <td>32</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>4</td>
+      <td>6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B factors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>71.83</td>
+      <td>63.68</td>
+      <td>78.84</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>75.77</td>
+      <td>76.44</td>
+      <td>81.05</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>52.52</td>
+      <td>45.84</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.005</td>
+      <td>0.004</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.98</td>
+      <td>0.97</td>
+      <td>0.98</td>
+    </tr>
+  </tbody>
+</table>
+
+_The number of crystals for each structure is one for apo-Aurora A and Aurora A + AMPPCP and two crystals for Aurora A + Mb + AT9283.*Values in parentheses are for highest-resolution shell._
 
 We note that in Aurora kinase sequences a tryptophan residue, Trp277, is immediately following the DFG motif and displays a drastically different orientation whether Aurora A is in an active (DFG-in) or inactive (DFG-out) conformation (Figure 1D). This Trp moiety is unique for the Aurora kinase family in the Ser/Thr kinome and its position is suggested to be important for tuning the substrate specificity (Chen et al., 2014). We used this Trp residue as probe to monitor the DFG flip and drug binding in real time as described below.
 
@@ -59,43 +240,83 @@ As an experimental approach, NMR spectroscopy is an obvious choice; however effo
 
 **Figure 2.:** (A) The four tryptophan residues in Aurora A are shown on the structure (PDB 4C3R [Zorba et al., 2014]) in stick representation; Trp277 in the DFGW-loop is highlighted in red. (B) Overlay of [1H-15N]-TROSY-HSQC spectra of dephosphorylated Aurora A in its apo-state (U-[15N], blue; [15N]-Trp, green) and AMPPCP-bound (U-[15N], red). Only three instead of the four expected cross peaks for tryptophan side chains are detected. (C) 19F NMR spectra of 5-fluoro-Trp labeled dephosphorylated wild-type Aurora A (apo in blue and AMPPCP-bound in red) and the W277L Aurora A mutant bound to AMPPCP (green). The assignment of Trp277 following the DFG-loop is shown. (D) 19F spectrum of wild-type Aurora A bound to AMPPCP (red) together with its deconvolution into four Lorentzian line shapes, the overall fit is shown as a black, dotted line. The integrals for all four signals are equal, but the linewidth for Trp277 (purple) is approximately 5-fold larger.
 
-## Gleevec binding to Aurora A distinguishes conformational selection versus induced-fit mechanisms
+### Gleevec binding to Aurora A distinguishes conformational selection versus induced-fit mechanisms
 
 Through groundbreaking experiments on the Tyr kinases Abl and Src, the concept of drug selectivity based on the DFG-loop conformation has received considerable attention in kinase drug discovery (Lovera et al., 2012; Treiber and Shah, 2013). A recent report provides kinetic evidence for such conformational selection, but identifies an induced-fit step after drug binding as the overwhelming contribution for Gleevec selectivity towards Abl compared to Src (Agafonov et al., 2014). Here, we ask the obvious question if this mechanism of Gleevec binding to Abl might exemplify a more general mechanism for kinase inhibitors.
 
-To assess which kinetic steps control drug affinity and selectivity, we first studied the binding kinetics for Gleevec to Aurora A by stopped-flow spectroscopy using intrinsic tryptophan fluorescence under degassing conditions to reduce photobleaching. At 25°C, the binding of Gleevec to Aurora A was too fast to be monitored and, therefore, experiments were performed at 10°C. Binding kinetics of Gleevec to Aurora A exhibited biphasic kinetic traces (Figure 3A). The first, fast phase is characterized by a decrease in the fluorescence intensity (Figure 3A,B), with an observed rate constant, kobs, increasing linearly with Gleevec concentration (Figure 3C). The slope corresponds to the bimolecular rate constant, k2 = 1.1 ± 0.3 μM−1s−1, of Gleevec binding to Aurora A and the dissociation of Gleevec is determined from the intercept, k-2 = 31 ± 2 s−1 (Figure 3C). We note that the parameters for the physical binding step are comparable to the ones obtained for Gleevec binding to Abl (cf. k2 = 1.5 ± 0.1 μM−1s−1 and k-2 = 25 ± 6 s−1, measured at 5°C) (Agafonov et al., 2014). The second, slow phase exhibits an increase in fluorescence intensity (Figure 3A), with the observed rate constant decreasing with Gleevec concentration (Figure 3D). The decreasing kobs provides unequivocal evidence of conformational selection, where its rate of interconversion is slower than the rate of ligand dissociation (k1+k-1≪k-2). The values of k1 and k-1 can be estimated by fitting the data to Equation 1 and are 0.014 ± 0.001 s−1 and 0.011 ± 0.002 s−1, respectively (Figure 3D). These rate constants represent the conformational change from DFG-in to -out and vice versa since Gleevec is a DFG-out selective inhibitor due to steric hindrance (Nagar et al., 2002; Schindler et al., 2000; Seeliger et al., 2007).
+To assess which kinetic steps control drug affinity and selectivity, we first studied the binding kinetics for Gleevec to Aurora A by stopped-flow spectroscopy using intrinsic tryptophan fluorescence under degassing conditions to reduce photobleaching. At 25°C, the binding of Gleevec to Aurora A was too fast to be monitored and, therefore, experiments were performed at 10°C. Binding kinetics of Gleevec to Aurora A exhibited biphasic kinetic traces (Figure 3A). The first, fast phase is characterized by a decrease in the fluorescence intensity (Figure 3A,B), with an observed rate constant, $k_{obs}$, increasing linearly with Gleevec concentration (Figure 3C). The slope corresponds to the bimolecular rate constant, $k_{2}$ = 1.1 ± 0.3 μM−1s−1, of Gleevec binding to Aurora A and the dissociation of Gleevec is determined from the intercept, $k_{-2}$ = 31 ± 2 s−1 (Figure 3C). We note that the parameters for the physical binding step are comparable to the ones obtained for Gleevec binding to Abl (cf. $k_{2}$ = 1.5 ± 0.1 μM−1s−1 and $k_{-2}$ = 25 ± 6 s−1, measured at 5°C) (Agafonov et al., 2014). The second, slow phase exhibits an increase in fluorescence intensity (Figure 3A), with the observed rate constant decreasing with Gleevec concentration (Figure 3D). The decreasing $k_{obs}$ provides unequivocal evidence of conformational selection, where its rate of interconversion is slower than the rate of ligand dissociation ($k_{1}+k_{-1}≪k_{-2}$). The values of $k_{1}$ and $k_{-1}$ can be estimated by fitting the data to Equation 1 and are 0.014 ± 0.001 s−1 and 0.011 ± 0.002 s−1, respectively (Figure 3D). These rate constants represent the conformational change from DFG-in to -out and vice versa since Gleevec is a DFG-out selective inhibitor due to steric hindrance (Nagar et al., 2002; Schindler et al., 2000; Seeliger et al., 2007).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig3-v2.jpg)
 
-**Figure 3.:** (A) Kinetics after mixing 0.5 µM Aurora A with 4.5 µM Gleevec is double exponential with a fast decrease and a slow increase in fluorescence signal. (B) The decrease in fluorescence intensity due to the fast binding phase was completed within 0.25 s. (C) Observed rate constants of fast binding phase were plotted against increasing concentrations of Gleevec (= 1.1 ± 0.3 µMkobs, Binding−1s−1,  = 31 ± 2 skdiss−1 from the y-intercept). (D) The increase in fluorescence intensity of slow phase (A) is attributed to conformational selection. The plot of  of this slow phase kobs, CSversus Gleevec concentration was fit to Equation 1 and yields = 0.014 ± 0.001 sk1 −1 and = 0.011 ± 0.002 sk-1 −1. (E) Dissociation kinetics of pre-incubated solution with 5 µM Aurora A and 5 µM Gleevec measured by stopped-flow fluorescence after an 11-fold dilution of the complex yields the  = 23.3 ± 2 sk-2−1. (F) The macroscopic dissociation constant () of Gleevec binding to Aurora A measured by Creoptix WAVE. (KDG) Gleevec (labeled as G) binding scheme to Aurora A corresponds to a two-step binding mechanism: conformational selection followed by the physical binding step. The corresponding microscopic rate constants obtained from the global fit and calculated overall equilibrium and dissociation constants are shown. Fluorescence traces are the average of at least five replicate measurements (n > 5), and error bars and uncertainties given in C-G denote the (propagated) standard deviation in the fitted parameter.
+**Figure 3.:** (A) Kinetics after mixing 0.5 µM Aurora A with 4.5 µM Gleevec is double exponential with a fast decrease and a slow increase in fluorescence signal. (B) The decrease in fluorescence intensity due to the fast binding phase was completed within 0.25 s. (C) Observed rate constants of fast binding phase were plotted against increasing concentrations of Gleevec ($k_{obs, Binding}$= 1.1 ± 0.3 µM−1s−1, $k_{diss}$ = 31 ± 2 s−1 from the y-intercept). (D) The increase in fluorescence intensity of slow phase (A) is attributed to conformational selection. The plot of $k_{obs, CS}$ of this slow phase versus Gleevec concentration was fit to Equation 1 and yields $k_{1}$= 0.014 ± 0.001 s−1 and $k_{-1}$= 0.011 ± 0.002 s−1. (E) Dissociation kinetics of pre-incubated solution with 5 µM Aurora A and 5 µM Gleevec measured by stopped-flow fluorescence after an 11-fold dilution of the complex yields the $k_{-2}$ = 23.3 ± 2 s−1. (F) The macroscopic dissociation constant ($K_{D}$) of Gleevec binding to Aurora A measured by Creoptix WAVE. (G) Gleevec (labeled as G) binding scheme to Aurora A corresponds to a two-step binding mechanism: conformational selection followed by the physical binding step. The corresponding microscopic rate constants obtained from the global fit and calculated overall equilibrium and dissociation constants are shown. Fluorescence traces are the average of at least five replicate measurements (n > 5), and error bars and uncertainties given in C-G denote the (propagated) standard deviation in the fitted parameter.
 
-In order to more rigorously analyze the data and test the model, all time courses of the fluorescence changes were globally fit using the microscopic rate constants determined above as starting values (Figure 4) to the model in Figure 3G, where also the resulting microscopic rate constants are given. The lack of a conformational transition after drug binding (i.e., induced-fit step) in Aurora A should dramatically decrease drug affinity in comparison to Abl. Indeed, Gleevec binds to Aurora A with a KD of 24 ± 7 µM (Figure 3F) compared to the low nM affinity to Abl (Agafonov et al., 2014). Two pieces of independent evidence establish that there is indeed no induced-fit step in Gleevec binding to Aurora A: (i) the calculated KD from the kinetic scheme is in agreement with the macroscopically measured KD (cf. Figure 3G and F), and (ii) the observed koff from the dilution experiment (Figure 3E) coincides with the physical dissociation rate (i.e., intercept of the binding plot, 31 ± 2 s−1, in Figure 3C). In summary, the lack of an induced-fit step for Gleevec binding to Aurora A is the major reason for Gleevec’s weak binding, and not the DFG-loop conformation or physical drug-binding step, consistent with our earlier results (Wilson et al., 2015).
+In order to more rigorously analyze the data and test the model, all time courses of the fluorescence changes were globally fit using the microscopic rate constants determined above as starting values (Figure 4) to the model in Figure 3G, where also the resulting microscopic rate constants are given. The lack of a conformational transition after drug binding (i.e., induced-fit step) in Aurora A should dramatically decrease drug affinity in comparison to Abl. Indeed, Gleevec binds to Aurora A with a $K_{D}$ of 24 ± 7 µM (Figure 3F) compared to the low nM affinity to Abl (Agafonov et al., 2014). Two pieces of independent evidence establish that there is indeed no induced-fit step in Gleevec binding to Aurora A: (i) the calculated $K_{D}$ from the kinetic scheme is in agreement with the macroscopically measured $K_{D}$ (cf. Figure 3G and F), and (ii) the observed $k_{off}$ from the dilution experiment (Figure 3E) coincides with the physical dissociation rate (i.e., intercept of the binding plot, 31 ± 2 s−1, in Figure 3C). In summary, the lack of an induced-fit step for Gleevec binding to Aurora A is the major reason for Gleevec’s weak binding, and not the DFG-loop conformation or physical drug-binding step, consistent with our earlier results (Wilson et al., 2015).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig4-v2.jpg)
 
-**Figure 4.:** Fitting of kinetic traces (average, n > 5) of the mixing of 0.5 µM Aurora A with different Gleevec concentrations at two timescales, 0.25 and 120 s, and dissociation kinetics () were performed using the KinTek Explorer software with the binding scheme in koffFigure 3G. Red lines show the results of the global fit to the experimental data in black.
+**Figure 4.:** Fitting of kinetic traces (average, n > 5) of the mixing of 0.5 µM Aurora A with different Gleevec concentrations at two timescales, 0.25 and 120 s, and dissociation kinetics ($k_{off}$) were performed using the KinTek Explorer software with the binding scheme in Figure 3G. Red lines show the results of the global fit to the experimental data in black.
 
-## Kinetics of Danusertib binding to Aurora A: three-step kinetics with conformational selection and an induced-fit step
+### Kinetics of Danusertib binding to Aurora A: three-step kinetics with conformational selection and an induced-fit step
 
-Next, we wanted to shed light on why Danusertib, unlike Gleevec, binds very tightly to Aurora A. A high-resolution X-ray structure shows Danusertib bound to Aurora A’s active site with its DFG-loop in the out conformation (Figure 5A) (Fancelli et al., 2006), and to rationalize Danusertib’s high affinity we measured the kinetics of Danusertib binding to Aurora A directly by stopped-flow experiments at 25°C. An increase in fluorescence intensity was observed at all Danusertib concentrations and showed double-exponential behavior (Figure 5B). The dependence of the two observed rates constants on drug concentration is linear for one of them (Figure 5C) and non-linear for the other with an apparent plateau at approximately 16 ± 2 s−1 (Figure 5D). The step with linear inhibitor concentration dependence corresponds to the second-order binding step, whereas a non-linear concentration dependency hints at protein conformational transitions. For a hyperbolic increase of the observed rate with substrate concentrations, one cannot a priori differentiate between a conformational selection and an induced fit mechanism. However, conformational selection happens before drug binding, and the intrinsic slow DFG-in to DFG-out interconversion in Aurora A revealed by Gleevec binding (Figure 3) must, therefore, be unaltered. Since the apparent rate of 16 ± 2 s−1 (Figure 5D) is two orders of magnitude faster, it can only reflect an induced-fit step (i.e., kobs=k3+k-3).
+Next, we wanted to shed light on why Danusertib, unlike Gleevec, binds very tightly to Aurora A. A high-resolution X-ray structure shows Danusertib bound to Aurora A’s active site with its DFG-loop in the out conformation (Figure 5A) (Fancelli et al., 2006), and to rationalize Danusertib’s high affinity we measured the kinetics of Danusertib binding to Aurora A directly by stopped-flow experiments at 25°C. An increase in fluorescence intensity was observed at all Danusertib concentrations and showed double-exponential behavior (Figure 5B). The dependence of the two observed rates constants on drug concentration is linear for one of them (Figure 5C) and non-linear for the other with an apparent plateau at approximately 16 ± 2 s−1 (Figure 5D). The step with linear inhibitor concentration dependence corresponds to the second-order binding step, whereas a non-linear concentration dependency hints at protein conformational transitions. For a hyperbolic increase of the observed rate with substrate concentrations, one cannot a priori differentiate between a conformational selection and an induced fit mechanism. However, conformational selection happens before drug binding, and the intrinsic slow DFG-in to DFG-out interconversion in Aurora A revealed by Gleevec binding (Figure 3) must, therefore, be unaltered. Since the apparent rate of 16 ± 2 s−1 (Figure 5D) is two orders of magnitude faster, it can only reflect an induced-fit step (i.e., $k_{obs}=k_{3}+k_{-3}$).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig5-v2.jpg)
+
+**Figure 5.:** (A) Danusertib bound to the DFG-out conformation of Aurora A is shown highlighting important active-site residues in stick representation (PDB 2J50 [Fancelli et al., 2006]). (B) The increase in fluorescence upon Danusertib binding is fitted to a double exponential. (C) Plot of $k_{obs,Binding}$ versus the concentration of Danusertib for the fast phase yields $k_{2}$ = 0.4 ± 0.1 μM−1s−1 and $k_{-2}$ = 4.6 ± 3 s−1 and the $k_{obs,IF}$ for the slow phase (D) reaches a plateau around 16 ± 2 s−1. (E) Dissociation of Danusertib from Aurora A at 25°C after a 30-fold dilution of the Aurora A/Danusertib complex measured by Trp-fluorescence quenching and fitting with single exponential gives a value of $k_{-3}$ = (3.2 ± 0.3) × 10−4 s−1. (F) Double-jump experiment (2 s incubation time of 1 μM Danusertib to Aurora A followed by 60 s long dissociation step initiated by a wash with buffer) was measured by Creoptix WAVE waveguide interferometry to properly define the value of $k_{-2}$ = 6.8 ± 0.4 s−1. (G) Macroscopic dissociation constant ($K_{D}$) determined by Creoptix WAVE waveguide interferometry: surface-immobilized Aurora A was incubated with various concentrations of Danusertib (0.1 nM (black), 0.2 nM (blue), 0.4 nM (purple), 0.8 nM (red), 2.4 nM (green), 7.2 nM (pink), 21.6 nM (cyan), and 64.8 nM (orange)) and surface mass accumulation was observed until establishment of equilibrium. (H) A plot of the final equilibrium value versus Danusertib concentration yields a $K_{D}$ = 1.1 ± 0.4 nM. (I) Binding scheme of Danusertib (labeled D) highlighting a three-step binding mechanism, containing both conformational selection and induced-fit step. Red lines in (B, F) and black line in (E) are the results from fitting. Kinetic constants shown in I determined from global fitting (Figure 6). Fluorescence traces are the average of at least five replicate measurements (n > 5), and error bars and uncertainties given in C-E, H, and I denote the (propagated) standard deviation in the fitted parameter.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Kinetic trace at 35°C of 18.2 µM Danusertib binding to 0.1 µM Aurora A. The red line represents the best fit of the trace to a double exponential function. The initial fast increase in fluorescence is a convolution of the fast binding and induced-fit steps, whereas the slower phase gives an observed rate constant of approximately 0.1 s−1, suggestive of a third process (i.e., conformational selection). (B) Double-jump experiments measured with Creoptix WAVE waveguide intereferometry at 25°C using Danusertib and a 0.2, 0.4, 0.8 and 2 s incubation time. In the first step of the double jump, Danusertib is incubated with surface-immobilized Aurora A kinase before washing with buffer alone initiates dissociation in a second step. All traces show a single exponential decay with an observed rate constant of 6 s−1 and its amplitude increases with longer incubation time as more AurAout:D is formed. (C) Dilution of the Aurora A/Danusertib complex formed after 1 hour of incubation. The slow dissociation of Aurora A/Danusertib (limited by $k_{−3}$) was measured by Creoptix WAVE waveguide interferometry and fitted to a single exponential with a value of $k_{-3}$ = (2 ± 0.6) × 10−4 s−1. (D) Representative selection of emission spectra obtained after the addition of increasing concentrations of Danusertib (0–11.25 nM from dark to light blue) to Aurora A (excitation at 295 nm). Plot of the increase in fluorescence intensity at 368 nm versus Danusertib concentration yields a $K_{D}$ value of 0.4 ± 0.1 nM determined by fitting the data to Equation 6. Fluorescence trace in A is the average of five replicate measurements (n = 5), and the uncertainties given in D denotes the standard deviation in the fitted parameter.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) 0.5 µM Aurora A was mixed with indicated Gleevec concentrations. The increase in fluorescence intensity of slow phase reflects the conformational selection step (see Figure 3A). (B) $k_{obs,CS}$ of the slow phase as a function of the Gleevec concentration is an inverse hyperbolic function and fitting to Equation 1 gives $k_{1}$ = 0.09 ± 0.01 s−1 and $k_{-1}$= 0.06 ± 0.005 s−1. Corresponding binding scheme is depicted. Fluorescence traces are the average of at least five replicate measurements (n > 5), and error bars and uncertainties given in B denote the standard deviation in the fitted parameter.
 
 So, what happened to the conformational selection step? We hypothesize that the lack of this step in our kinetic traces is due to a too small amplitude of this phase, or not observable because of photobleaching having a bigger effect at the longer measurement times. To lessen potential photobleaching, we reduced the enzyme concentration and increased the temperature to 35°C. Indeed, under these conditions, the slow DFG-in to DFG-out kinetics were observed as an increase of fluorescence intensity over time with an observed rate constant of approximately 0.1 s−1 (Figure 5—figure supplement 1A).
 
-While these experiments clearly establish the three-step binding mechanism, it does not provide accurate rate constants for the conformational selection step and it cannot be observed at 25°C where all the other kinetic experiments are performed. To resolve this issue, we repeated the Aurora A–Gleevec experiment at 25°C (Figure 5—figure supplement 2A,B) and obtained reliable rate constants (k1 = 0.09 ± 0.01 s−1 and k-1 = 0.06 ± 0.005 s−1) for the conformational selection step in Aurora A, which will be used as ‘knowns’ in what follows. We hypothesize that the conformational selection step reflects the interconversion between inactive/active conformations and is correlated with the DFG-out and -in position (Figure 1). The following observations support our hypothesis: (i) two crystal structures for the apo-protein show Trp277 in very different environments (Figure 1E), (ii) Danusertib has been proposed to selectively bind to the DFG-out conformation based on a co-crystal structure (Figure 5A) (Fancelli et al., 2006), and (iii) the same slow step is observed for binding of both Gleevec and Danusertib.
+While these experiments clearly establish the three-step binding mechanism, it does not provide accurate rate constants for the conformational selection step and it cannot be observed at 25°C where all the other kinetic experiments are performed. To resolve this issue, we repeated the Aurora A–Gleevec experiment at 25°C (Figure 5—figure supplement 2A,B) and obtained reliable rate constants ($k_{1}$ = 0.09 ± 0.01 s−1 and $k_{-1}$ = 0.06 ± 0.005 s−1) for the conformational selection step in Aurora A, which will be used as ‘knowns’ in what follows. We hypothesize that the conformational selection step reflects the interconversion between inactive/active conformations and is correlated with the DFG-out and -in position (Figure 1). The following observations support our hypothesis: (i) two crystal structures for the apo-protein show Trp277 in very different environments (Figure 1E), (ii) Danusertib has been proposed to selectively bind to the DFG-out conformation based on a co-crystal structure (Figure 5A) (Fancelli et al., 2006), and (iii) the same slow step is observed for binding of both Gleevec and Danusertib.
 
-Next, the dissociation kinetics for Danusertib was measured by fluorescence and appeared to be extremely slow with an observed slow-off rate of (3.2 ± 0.3) × 10−4 s−1 (Figure 5E). Rationalization of complex binding kinetics cannot be done anymore by visual inspection and kinetic intuition, which can, in fact, be misleading. In order to elucidate the correct binding mechanism and obtain accurate kinetic parameters, all kinetic traces were globally fit (Figure 6) to the three-step binding scheme (Figure 5I). Although global fitting of the binding and dissociation kinetics in KinTek Explorer delivered a value for k-2, evaluation of the kinetic scheme with respect to the time traces exposes that k-2 is not well determined from our experiments. We therefore designed a double-jump experiment to populate the AurAout:D state followed by dissociation to obtain more accurate information on k-2. Our stopped-flow machine lacks the capability to perform double mixing and, therefore, the double-jump experiment was performed using a Creoptix WAVE instrument. This label-free methodology uses waveguide interferometry to detect refractive index changes due to alteration in surface mass in a vein similar to Surface Plasmon Resonance (SPR). It is an orthogonal technique that sidesteps notable issues associated with fluorescence methods (e.g., photobleaching and inner-filter effects). In short, after immobilizing Aurora A on a WAVEchip, a high concentration of Danusertib was injected for a short, variable period of time, and dissociation was triggered by flowing buffer through the microfluidics channel to remove the drug. The dissociation kinetics fit to a single exponent with a rate constant, k−2, of 6.8 ± 0.4 s−1 (Figure 5F and Figure 5—figure supplement 1B).
+Next, the dissociation kinetics for Danusertib was measured by fluorescence and appeared to be extremely slow with an observed slow-off rate of (3.2 ± 0.3) × 10−4 s−1 (Figure 5E). Rationalization of complex binding kinetics cannot be done anymore by visual inspection and kinetic intuition, which can, in fact, be misleading. In order to elucidate the correct binding mechanism and obtain accurate kinetic parameters, all kinetic traces were globally fit (Figure 6) to the three-step binding scheme (Figure 5I). Although global fitting of the binding and dissociation kinetics in KinTek Explorer delivered a value for $k_{-2}$, evaluation of the kinetic scheme with respect to the time traces exposes that $k_{-2}$ is not well determined from our experiments. We therefore designed a double-jump experiment to populate the AurAout:D state followed by dissociation to obtain more accurate information on $k_{-2}$. Our stopped-flow machine lacks the capability to perform double mixing and, therefore, the double-jump experiment was performed using a Creoptix WAVE instrument. This label-free methodology uses waveguide interferometry to detect refractive index changes due to alteration in surface mass in a vein similar to Surface Plasmon Resonance (SPR). It is an orthogonal technique that sidesteps notable issues associated with fluorescence methods (e.g., photobleaching and inner-filter effects). In short, after immobilizing Aurora A on a WAVEchip, a high concentration of Danusertib was injected for a short, variable period of time, and dissociation was triggered by flowing buffer through the microfluidics channel to remove the drug. The dissociation kinetics fit to a single exponent with a rate constant, $k_{−2}$, of 6.8 ± 0.4 s−1 (Figure 5F and Figure 5—figure supplement 1B).
 
-We want to discuss a few additional kinetic features. First, the observed rate constant measured in the dilution experiment (Figure 5E, k-3 = (3.2 ± 0.3) × 10−4 s−1) is slower than k-3 from the global fit (k-3 = (7.1 ± 0.5) × 10−4 s−1), which might seem counterintuitive. The observed rate constant was verified by an additional dilution experiment using Creoptix WAVE (k-3 = (2.0 ± 0.6) × 10−4 s−1, Figure 5—figure supplement 1C). The difference in the observed and microscopic rate constant can, however, be fully reconciled by considering the kinetic partitioning for the proposed scheme, as shown in Figure 6—figure supplement 1. Second, a powerful and independent validation of the three-step binding mechanism is obtained by comparing the measured overall KD of Danusertib with the calculated macroscopic KD from the microscopic rate constants (Figure 5G,H,I and Figure 5—figure supplement 1D) according to Equation 4, which indeed delivers values that are within experimental error. In addition, our values for k2, k-3, and KD are in good agreement with those reported in a recent study using SPR (Willemsen-Seegers et al., 2017).
+![Figure 6.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig6-v2.jpg)
 
-Our results illuminate trivial but profound principles of binding affinity and lifetime of drug/target complexes: a conformational selection mechanism always weakens the overall inhibitor affinity, while an induced-fit step tightens the affinity depending on how far-shifted the equilibrium in the enzyme/drug complex is (Equations 2–4, Figure 6—figure supplement 2). For DFG-out binders (e.g., Danusertib and Gleevec), the DFG-in and -out equilibrium weakens the overall affinity 1.6-fold; however, the conformational change after drug binding results in a four orders of magnitude tighter binding for Danusertib and is the sole reason for its high affinity to Aurora A compared to Gleevec. The dissociation constants for the bimolecular binding step K2 is very similar for both inhibitors. Finally, the lifetime of Danusertib on the target is very long because of the very slow conformational dynamics within the Aurora A/Danusertib complex (k-3 = (7.1 ± 0.5) × 10−4 s−1). Earlier examples of protein kinases that also show remarkable slow off-rates, presumably caused by conformational changes, include the epidermal growth factor receptors (Berezov et al., 2001; Wood et al., 2004) and CDK8 (Schneider et al., 2013) amongst others (Willemsen-Seegers et al., 2017). To the best of our knowledge, we present here for the first time a detailed stopped-flow kinetics analysis for Aurora A that unequivocally shows the slow off-rate is caused by the conformational change within the drug-bound state, and not the dissociation step.
+**Figure 6.:** Binding kinetics was monitored by stopped-flow fluorescence for different concentrations of Danusertib (indicated) to 0.5 µM Aurora A, and dissociation kinetics ($k_{off}^{obs}$) by Creoptix and fluorimeter (see Figure 5). Fluorescence traces are the average of at least five replicate measurements (n > 5). Global fitting was performed using the KinTek Explorer software using the model shown in Figure 5I.
 
-## Kinetics of AT9283 binding to Aurora A – a surprise
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig6-figsupp1-v2.jpg)
 
-We chose AT9283 as a third inhibitor to characterize the binding mechanism because it has been described as a DFG-in binder based on a crystal structure of AT9283 bound to Aurora A (PDB 2W1G, [Howard et al., 2009]). We, therefore, anticipated that in its binding kinetics one can now detect the DFG-out to DFG-in switch. Rapid kinetic experiments of binding AT9283 to Aurora A at 25°C resulted in biphasic traces and both processes showed an increase in fluorescence over time (Figure 7A). The kobs for the faster phase (k2) was linearly dependent on drug concentration reflecting the binding step (Figure 7B) and kobs for the slower phase (k3) has a limiting value of 0.8 ± 0.2 s−1 and is attributed to an induced-fit step (Figure 7C). For the conformational selection step (i.e., DFG-out to DFG-in), a decrease in fluorescence is expected because for the reverse flip observed in the Gleevec and Danusertib experiments, a fluorescence increase was seen (Figure 3A and Figure 5—figure supplement 1A). However, we could not find any condition (e.g., by varying temperature and ligand concentrations) where such a phase could be observed.
+**Figure 6—figure supplement 1.:** The apparent discrepancy between the experimentally observed off rates and the microscopic rate constant, $k_{-3}$, can be explained by considering the kinetic partitioning. Uncertainties given denote the (propagated) standard deviation in the fitted parameter.
 
-Dissociation is characterized by double-exponential kinetics (Figure 7D and Figure 7—figure supplement 1A). The fast phase (~38% of the total amplitude change) decays with a rate constant of (1.1 ± 0.02) × 10−2 s−1, and the slow phase (~62% of the total change in amplitude) has a rate constant of (0.1 ± 0.01) × 10−2 s−1. To distinguish between the reverse induced-fit step (k-3) and the physical dissociation step (k-2), a double-jump experiment was performed that unambiguously assigned the faster phase to k-2  (Figure 7E and Figure 7—figure supplement 1B). Our attempts to globally fit all kinetic traces assuming binding to only the DFG-in state and using the rate constants for the DFG-loop flip from the Gleevec experiment failed (Figure 8—figure supplement 1A). An extended model, where AT9283 can bind to both DFGin/out conformations, followed by a common induced-fit step can also not explain the experimental kinetic traces (Figure 8—figure supplement 1B). These failures, together with the lack of a detectable conformational selection step, led to a new model in which both the DFG-in and DFG-out states can bind AT9283, but only AurAin:AT can undergo an induced-fit step (Figure 7H). All data can be globally fit to this model (Figure 8) and the overall KD calculated from the corresponding microscopic rate constants (using Equation 5) is in good agreement with the experimentally measured KD (Figure 7F–H). Finally, the 10-fold difference between the k-3 from the global fit (Figure 7H) and the experimentally observed slow off-rate can be reconciled by kinetic partitioning as shown in Figure 7—figure supplement 1A.
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig6-figsupp2-v2.jpg)
 
-## Crystal structures of AT9283 bound to Aurora A buttress new binding model
+**Figure 6—figure supplement 2.:** Effect of the equilibrium constant for the conformational selection and induced-fit step on the overall $K_{D}$ for Danusertib.The equilibrium constant was changed in both directions by two orders of magnitude starting from unity for the conformational selection (CS) mechanism (A) and induced-fit (IF) step (B). A CS step only weakens the overall affinity compared to the equilibrium constant of the physical binding step ($K_{2}$; 14 μM for Danusertib, see Figure 5), whereas an IF step makes the binding tighter. (C) Effect on the overall $K_{D}$ for Danusertib when changing the equilibrium constants $K_{1}$ and $K_{2}$ by two orders of magnitude starting from their actual values (see Figure 5I).
+
+We want to discuss a few additional kinetic features. First, the observed rate constant measured in the dilution experiment (Figure 5E, $k_{-3}$ = (3.2 ± 0.3) × 10−4 s−1) is slower than $k_{-3}$ from the global fit ($k_{-3}$ = (7.1 ± 0.5) × 10−4 s−1), which might seem counterintuitive. The observed rate constant was verified by an additional dilution experiment using Creoptix WAVE ($k_{-3}$ = (2.0 ± 0.6) × 10−4 s−1, Figure 5—figure supplement 1C). The difference in the observed and microscopic rate constant can, however, be fully reconciled by considering the kinetic partitioning for the proposed scheme, as shown in Figure 6—figure supplement 1. Second, a powerful and independent validation of the three-step binding mechanism is obtained by comparing the measured overall $K_{D}$ of Danusertib with the calculated macroscopic $K_{D}$ from the microscopic rate constants (Figure 5G,H,I and Figure 5—figure supplement 1D) according to Equation 4, which indeed delivers values that are within experimental error. In addition, our values for $k_{2}$, $k_{-3}$, and $K_{D}$ are in good agreement with those reported in a recent study using SPR (Willemsen-Seegers et al., 2017).
+
+Our results illuminate trivial but profound principles of binding affinity and lifetime of drug/target complexes: a conformational selection mechanism always weakens the overall inhibitor affinity, while an induced-fit step tightens the affinity depending on how far-shifted the equilibrium in the enzyme/drug complex is (Equations 2–4, Figure 6—figure supplement 2). For DFG-out binders (e.g., Danusertib and Gleevec), the DFG-in and -out equilibrium weakens the overall affinity 1.6-fold; however, the conformational change after drug binding results in a four orders of magnitude tighter binding for Danusertib and is the sole reason for its high affinity to Aurora A compared to Gleevec. The dissociation constants for the bimolecular binding step $K_{2}$ is very similar for both inhibitors. Finally, the lifetime of Danusertib on the target is very long because of the very slow conformational dynamics within the Aurora A/Danusertib complex ($k_{-3}$ = (7.1 ± 0.5) × 10−4 s−1). Earlier examples of protein kinases that also show remarkable slow off-rates, presumably caused by conformational changes, include the epidermal growth factor receptors (Berezov et al., 2001; Wood et al., 2004) and CDK8 (Schneider et al., 2013) amongst others (Willemsen-Seegers et al., 2017). To the best of our knowledge, we present here for the first time a detailed stopped-flow kinetics analysis for Aurora A that unequivocally shows the slow off-rate is caused by the conformational change within the drug-bound state, and not the dissociation step.
+
+### Kinetics of AT9283 binding to Aurora A – a surprise
+
+We chose AT9283 as a third inhibitor to characterize the binding mechanism because it has been described as a DFG-in binder based on a crystal structure of AT9283 bound to Aurora A (PDB 2W1G, [Howard et al., 2009]). We, therefore, anticipated that in its binding kinetics one can now detect the DFG-out to DFG-in switch. Rapid kinetic experiments of binding AT9283 to Aurora A at 25°C resulted in biphasic traces and both processes showed an increase in fluorescence over time (Figure 7A). The $k_{obs}$ for the faster phase ($k_{2}$) was linearly dependent on drug concentration reflecting the binding step (Figure 7B) and $k_{obs}$ for the slower phase ($k_{3}$) has a limiting value of 0.8 ± 0.2 s−1 and is attributed to an induced-fit step (Figure 7C). For the conformational selection step (i.e., DFG-out to DFG-in), a decrease in fluorescence is expected because for the reverse flip observed in the Gleevec and Danusertib experiments, a fluorescence increase was seen (Figure 3A and Figure 5—figure supplement 1A). However, we could not find any condition (e.g., by varying temperature and ligand concentrations) where such a phase could be observed.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig7-v2.jpg)
+
+**Figure 7.:** (A) The increase in fluorescence at 25°C upon AT9283 binding fitted to a double exponential. (B) The plot of $k_{obs,Binding}$ versus AT9283 concentration for the fast phase yields $k_{2}$ = 3.4 ± 0.5 μM−1s−1 and an underdetermined intercept ($k_{-2}$) and (C) the $k_{obs}$ of the slow phase reaches a plateau around 0.8 ± 0.2 s−1. (D) Dilution of the Aurora A/AT9283 complex formed after 1 hour of incubation. The slow dissociation was measured by Creoptix WAVE waveguide interferometry and fitted with a double exponential with rate constants of (1.1 ± 0.02) × 10−2 s−1 and (0.1 ± 0.01) × 10−2 s−1. (E) Double-jump experiments (1 s incubation time of 1 μM AT9283 to Aurora A followed by 60 s long dissociation step initiated by a wash with buffer) was measured by Creoptix WAVE waveguide interferometry to properly define the value of $k_{-2}$ = (1.0 ± 0.1) x 10−2 s−1. (F) Macroscopic dissociation constant ($K_{D}$) determined by Creoptix WAVE waveguide interferometry: surface-immobilized Aurora A was incubated with various concentration of AT9283 (0.03 nM (black), 0.27 nM (blue), 0.8 nM (purple), 2.4 nM (green), 7.2 nM (red), 21.6 nM (cyan), and 64.8 nM (orange)) and surface mass accumulation was observed until establishment of equilibrium. (G) A plot of the final equilibrium value versus AT9283 concentration yields a $K_{D}$ = 2.1 ± 1.8 nM. (H) Binding scheme for AT9283 (labeled AT) highlighting a four-steps binding mechanism, that contains binding to two different states, a conformational selection mechanism and an induced-fit step. Kinetic constants shown in H were determined from global fitting (see Figure 8). Fluorescence traces are the average of at least five replicate measurements (n > 5), and error bars and uncertainties given in B, C, G and H denote the (propagated) standard deviation in the fitted parameter.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The apparent discrepancy between the experimentally observed off rates and the microscopic rate constant, $k_{-3}$, can be explained by considering the kinetic partitioning. (B) Double-jump experiments measured by Creoptix WAVE waveguide interferometry at 25°C of AT9283 at 1 and 3 s incubation time before induction of dissociation by a buffer wash are best described with a single exponential function of ($k$ = 0.01 s−1). Uncertainties given in A denote the (propagated) standard deviation in the fitted parameter.
+
+Dissociation is characterized by double-exponential kinetics (Figure 7D and Figure 7—figure supplement 1A). The fast phase (~38% of the total amplitude change) decays with a rate constant of (1.1 ± 0.02) × 10−2 s−1, and the slow phase (~62% of the total change in amplitude) has a rate constant of (0.1 ± 0.01) × 10−2 s−1. To distinguish between the reverse induced-fit step ($k_{-3}$) and the physical dissociation step ($k_{-2}$), a double-jump experiment was performed that unambiguously assigned the faster phase to $k_{-2}$ (Figure 7E and Figure 7—figure supplement 1B). Our attempts to globally fit all kinetic traces assuming binding to only the DFG-in state and using the rate constants for the DFG-loop flip from the Gleevec experiment failed (Figure 8—figure supplement 1A). An extended model, where AT9283 can bind to both DFGin/out conformations, followed by a common induced-fit step can also not explain the experimental kinetic traces (Figure 8—figure supplement 1B). These failures, together with the lack of a detectable conformational selection step, led to a new model in which both the DFG-in and DFG-out states can bind AT9283, but only AurAin:AT can undergo an induced-fit step (Figure 7H). All data can be globally fit to this model (Figure 8) and the overall $K_{D}$ calculated from the corresponding microscopic rate constants (using Equation 5) is in good agreement with the experimentally measured $K_{D}$ (Figure 7F–H). Finally, the 10-fold difference between the $k_{-3}$ from the global fit (Figure 7H) and the experimentally observed slow off-rate can be reconciled by kinetic partitioning as shown in Figure 7—figure supplement 1A.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig8-v2.jpg)
+
+**Figure 8.:** Binding kinetics was monitored by stopped-flow fluorescence at different concentrations of AT9283 (indicated) to 0.5 µM Aurora A. Dissociation kinetics were obtained for fully equilibrated drug/kinase complex ($k_{off}^{obs}$) or for the initial encounter complex ($k_{off}^{djump}$) by using a 1 hour or a short 2 s incubation of the kinase with AT9283, respectively, before inducing dissociation by a buffer wash using Creoptix WAVE waveguide interferometry. Global fitting was performed with KinTek Explorer software using the model in Figure 7H (reduced χ2 = 3.2). Fluorescence traces are the average of at least five replicate measurements (n > 5).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Our initial three-state binding scheme, where AT9283 binds only the DFGin state of Aurora A and is followed by an induced-fit step, is incorrect. The best global fit (shown in red) did not describe the data as can be seen by visual inspection and from the reduced χ2 value of 36. (B) An alternative model, where AT9283 can bind to Aurora A irrespective of the state of the DFG-loop, and binding is followed by an induced-fit step did not result in adequate fits (data not shown) and yield a reduced χ2 value of 52. In both cases the values for the interconversion between AurAout and AurAin were taken from the Gleevec experiment (Figure 5—figure supplement 2). Fluorescence traces are the average of at least five replicate measurements (n > 5).
+
+### Crystal structures of AT9283 bound to Aurora A buttress new binding model
 
 In an effort to structurally verify our model we solved a crystal structure of Aurora A with AT9283 bound and indeed observed the DFG-out conformation (PDB 6CPG, Figure 9B and Table 1), in contrast to the DFG-in conformation as previously reported (Figure 9A) (Howard et al., 2009). Our structure was obtained by co-crystalizing Aurora A with AT9283 and a monobody that binds to the same site as the natural allosteric activator TPX2 (Figure 9B). Binding of this monobody shifts Aurora A into an inactive conformation, with the DFG-loop in the out conformation. This new structure underscores the plasticity of Aurora A kinase and the ability of AT9283 to bind to a DFG-out state, in addition to the previously reported DFG-in state.
 
@@ -105,15 +326,15 @@ In an effort to structurally verify our model we solved a crystal structure of A
 
 Thus, our structural and kinetic data together support that AT9283 can bind to both DFG-in and DFG-out state of Aurora A, and emphasizes the need for caution when interpreting single X-ray structures.
 
-## Inhibitors take advantage of built-in dynamics for ATP binding
+### Inhibitors take advantage of built-in dynamics for ATP binding
 
-We finally compared the binding kinetics of the ATP-competitive inhibitors described above with the natural kinase substrate, ATP (Figure 10). In order to measure stopped-flow kinetics for ATP binding, FRET was measured by exciting Trp residues in Aurora A and detecting fluorescence transfer to the ATP-analogue mant-ATP (Lemaire et al., 2006; Ni et al., 2000). The binding of mant-ATP to Aurora A showed biphasic kinetic traces (Figure 10A) that describe the physical binding step (i.e., linear dependence on mant-ATP concentration; Figure 10B) and the induced-fit step (Figure 10C). The observed rate constant approaches a maximum value defined by the sum of k3+ k−3 (Figure 10C) and the intercept can be estimated to be k−3 and is consistent with the value obtained from the koff experiment (Figure 10D). We find that mant-ATP can bind to both the DFG-in and -out conformations, consistent with our nucleotide-bound crystal structures (Figure 1A–D) and recent single-molecule fluorescence spectroscopy data that indicates that nucleotide binding does not significantly affect this equilibrium (Cyphers et al., 2017). To confirm the model, the kinetic data were globally fit to a two-step binding mechanism (Figure 10G,H). The calculated KD from the corresponding microscopic rate constants (Figure 10H) is comparable with the experimental macroscopic KD obtained from a titration experiment (Figure 10E,F).
+We finally compared the binding kinetics of the ATP-competitive inhibitors described above with the natural kinase substrate, ATP (Figure 10). In order to measure stopped-flow kinetics for ATP binding, FRET was measured by exciting Trp residues in Aurora A and detecting fluorescence transfer to the ATP-analogue mant-ATP (Lemaire et al., 2006; Ni et al., 2000). The binding of mant-ATP to Aurora A showed biphasic kinetic traces (Figure 10A) that describe the physical binding step (i.e., linear dependence on mant-ATP concentration; Figure 10B) and the induced-fit step (Figure 10C). The observed rate constant approaches a maximum value defined by the sum of $k_{3}+ k_{−3}$ (Figure 10C) and the intercept can be estimated to be $k_{−3}$ and is consistent with the value obtained from the $k_{off}$ experiment (Figure 10D). We find that mant-ATP can bind to both the DFG-in and -out conformations, consistent with our nucleotide-bound crystal structures (Figure 1A–D) and recent single-molecule fluorescence spectroscopy data that indicates that nucleotide binding does not significantly affect this equilibrium (Cyphers et al., 2017). To confirm the model, the kinetic data were globally fit to a two-step binding mechanism (Figure 10G,H). The calculated $K_{D}$ from the corresponding microscopic rate constants (Figure 10H) is comparable with the experimental macroscopic $K_{D}$ obtained from a titration experiment (Figure 10E,F).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig10-v2.jpg)
 
-**Figure 10.:** (A) Binding of mant-ATP to Aurora A was followed by an increase in fluorescence with biphasic kinetics. The plot of  versus concentration of mant-ATP of the fast phase (kobsB) yields  = 0.8 ± 0.2 μMk2−1s−1 and  = 50 ± 8 sk-2−1 and the slow phase (C) reached a plateau around 21 ± 1 s−1 (). (k3 + k-3 D) Dissociation kinetics of 10 μM Aurora A/10 μM mant-ATP complex was measured after a 11-fold dilution into buffer and yields  = 17.2 ± 1 skoffobs−1. (E, F) Macroscopic dissociation constant of Aurora A with mant-ATP measured by fluorescence energy transfer. (E) Emission spectra (excitation at 290 nm) of 1 μM Aurora A (green), 160 μM mant-ATP (red), and 1 μM Aurora A/160 μM mant-ATP (blue). (F) The change in fluorescence at 450 nm () versus mant-ATP concentrations yields ΔF450 = 22 ± 6 μM. (KDG) Global fitting (red) of all kinetics data (black) in KinTek Explorer to the binding scheme shown in (H) results in the kinetic constants given in the scheme and an overall  = 48 ± 8 μM, calculated from all rate constants. Fluorescence traces are the average of at least five replicate measurements (n > 5), and error bars and uncertainties given in B, C, D, F, and H denote the (propagated) standard deviation in the fitted parameter.KD
+**Figure 10.:** (A) Binding of mant-ATP to Aurora A was followed by an increase in fluorescence with biphasic kinetics. The plot of $k_{obs}$ versus concentration of mant-ATP of the fast phase (B) yields $k_{2}$ = 0.8 ± 0.2 μM−1s−1 and $k_{-2}$ = 50 ± 8 s−1 and the slow phase (C) reached a plateau around 21 ± 1 s−1 ($k_{3}+k_{-3}$). (D) Dissociation kinetics of 10 μM Aurora A/10 μM mant-ATP complex was measured after a 11-fold dilution into buffer and yields $k_{off}^{obs}$ = 17.2 ± 1 s−1. (E, F) Macroscopic dissociation constant of Aurora A with mant-ATP measured by fluorescence energy transfer. (E) Emission spectra (excitation at 290 nm) of 1 μM Aurora A (green), 160 μM mant-ATP (red), and 1 μM Aurora A/160 μM mant-ATP (blue). (F) The change in fluorescence at 450 nm ($ΔF^{450}$) versus mant-ATP concentrations yields $K_{D}$ = 22 ± 6 μM. (G) Global fitting (red) of all kinetics data (black) in KinTek Explorer to the binding scheme shown in (H) results in the kinetic constants given in the scheme and an overall $K_{D}$ = 48 ± 8 μM, calculated from all rate constants. Fluorescence traces are the average of at least five replicate measurements (n > 5), and error bars and uncertainties given in B, C, D, F, and H denote the (propagated) standard deviation in the fitted parameter.
 
-The presence of an induced-fit step for the natural substrate ATP suggests that such conformational change after ligand binding is a built-in property of the enzyme. In other words, inhibitors take advantage of the inherent plasticity of the enzyme that is required for its activity and regulation. The main difference between ATP and inhibitor binding is the rate constant for the reverse induced-fit step (k−3). In the case of ATP, this rate is much faster and, therefore, does not significantly increase the overall affinity. Faster conformational changes and weaker binding are of course prerequisites for efficient turnover; whereas slow conformational changes, particularly the reverse induced-fit step, are at the heart of action for an efficient drug, because it results in tight binding and a long lifetime on the target. In summary, binding of different ligands to the ATP-binding site, such as nucleotides or ATP-competitive inhibitors, is comprised of the physical binding step followed by an induced-fit step. By definition, it is the nature of the induced-fit step that varies for the different ligands since it happens as a result of ligand binding.
+The presence of an induced-fit step for the natural substrate ATP suggests that such conformational change after ligand binding is a built-in property of the enzyme. In other words, inhibitors take advantage of the inherent plasticity of the enzyme that is required for its activity and regulation. The main difference between ATP and inhibitor binding is the rate constant for the reverse induced-fit step ($k_{−3}$). In the case of ATP, this rate is much faster and, therefore, does not significantly increase the overall affinity. Faster conformational changes and weaker binding are of course prerequisites for efficient turnover; whereas slow conformational changes, particularly the reverse induced-fit step, are at the heart of action for an efficient drug, because it results in tight binding and a long lifetime on the target. In summary, binding of different ligands to the ATP-binding site, such as nucleotides or ATP-competitive inhibitors, is comprised of the physical binding step followed by an induced-fit step. By definition, it is the nature of the induced-fit step that varies for the different ligands since it happens as a result of ligand binding.
 
 ## Discussion
 
@@ -127,7 +348,7 @@ Our results exemplify why rational drug design is so challenging. The characteri
 
 ## Materials and methods
 
-## Cloning, expression and purification of dephosphorylated Aurora A (122-403) and inhibiting monobody
+### Cloning, expression and purification of dephosphorylated Aurora A (122-403) and inhibiting monobody
 
 Dephosphorylated Aurora A proteins were expressed and purified as described before (Zorba et al., 2014) and analyzed by mass spectrometry to confirm their phosphorylation state. The W227L mutant was generated using the QuickChange Lightning site-directed mutagenesis kit (Agilent).
 
@@ -135,7 +356,7 @@ U-[15N] Aurora A was obtained by growing E. coli BL21(DE3) (New England Biolabs)
 
 Inhibiting monobody used for co-crystallization with Aurora A and AT9283 was expressed in E. coli BL21(DE3) cells harboring the plasmid pHBT containing His6-tagged-Mb. A culture of TB media containing 50 μg/mL kanamycin that was grown overnight at 37°C was added to 1 L of TB media with 50 μg/mL kanamycin to get a starting OD600 of ~0.2. This culture was grown at 37°C until the OD600 reached ~0.8. Protein expression was induced by 0.6 mM IPTG at 18°C for 13–15 h and cells were harvested by centrifugation. The cell pellet was resuspended in binding buffer (50 mM Tris-HCl, pH 8.0, 300 mM NaCl, 20 mM imidazole, 20 mM MgCl2, 10% glycerol) containing 0.5 mg/mL lysozyme, 5 μg/mL DNase, and 1x EDTA-free protease inhibitor cocktail. Cells were ruptured by sonication on ice then centrifuged at 18,000 rpm at 4°C for 1 h. The supernatant was loaded onto HisTrapTM HP (GE Healthcare) after filtration using 0.2 μm filtering unit. The pellet was resuspended with GuHCl buffer (20 mM Tris-HCl, pH 8.0, 6 M GuHCl) and allowed to rotate on wheel for 10 min at 4°C and spun down again. The supernatant was passed through 0.2 μm filtering unit and loaded onto HisTrap HP column previously loaded with soluble fraction and pre-equilibrated with GuHCl buffer. Refolding monobody on-column was achieved by washing the HisTrap HP column with five column volumes (CV) of GuHCl buffer, followed by 5 CV of Triton-X buffer (binding buffer + 0.1% Triton X-100), then 5 CV of β-cyclodextrin buffer (binding buffer + 5 mM β-cyclodextrin), and finally 5 CV of binding buffer. Monobody was eluted with 100% of elution buffer (binding buffer + 500 mM imidazole). The protein was dialyzed overnight in gel-filtration buffer (20 mM Tris-HCl, pH 7.5, 200 mM NaCl, 20 mM MgCl2, 5 mM TCEP, 10% glycerol) in the presence of TEV protease (1:40 TEVP:Mb molar ratio). After dialysis, the TEV-cleaved monobody was passed through HisTrap HP column again. The flow-through containing TEV-cleaved monobody was collected and concentrated before loading onto Superdex 200 26/60 gel-filtration column pre-equilibrated with the gel-filtration buffer. The monobody was flash-frozen and stored in −80°C until use.
 
-## X-ray crystallography
+### X-ray crystallography
 
 Crystals of dephosphorylated (deP) Aurora A122−403 + AMPPCP were obtained by mixing 570 μM (18 mg/mL) deP Aurora A122−403 and 1 mM AMPPCP in a 2:1 ratio with mother liquor (0.2 M ammonium sulfate, 0.2 M Tris-HCl, pH 7.50, 30% (w/v) PEG-3350). The crystals were grown at 18°C by vapor diffusion using the hanging-drop method. The protein used for the crystallization was in storage buffer (20 mM Tris-HCl, pH 7.5, 200 mM NaCl, 10% (v/v) glycerol, 20 mM MgCl2, 1 mM TCEP); AMPPCP was freshly prepared before use in the same buffer. Crystals were flash-frozen in liquid nitrogen prior to shipping. Crystals of apo, deP Aurora A122−403 were grown at 18°C by vapor diffusion using the sitting-drop method (96-well plate). A 1:1 ratio of protein to mother liquor was obtained by combining 0.5 μL of 300 μM (10 mg/mL) deP Aurora A122−403 in 50 mM HEPES, pH 7.3, 500 mM ammonium acetate, 1 mM MgCl2, 5 mM TCEP) with 0.5 μL of 0.15 M Tris-HCl, pH 7.5, 0.15 M ammonium sulfate, 35% (w/v) PEG-3350. Crystals were soaked for 10–20 s in cryo buffer (20% (w/v) PEG-400, 20% ethylene glycol, 10% water and 50% mother liquor) before flash-freezing in liquid nitrogen. The complex between Aurora A122−403, inhibiting monobody (Mb) and AT9283 was crystallized at 18°C by vapor diffusion using the sitting-drop method. In short, a 1:1 ratio of protein mixture to mother liquor was obtained by combining 0.5 μL of sample [240 μM deP Aurora A122−403 + 1.0 mM AT9283 + 250 μM Mb] with 0.5 μL of mother liquor [0.1 M Bis-Tris, pH 5.5, 0.2 M magnesium chloride, 19% (w/v) PEG-3350]. Crystals were soaked for 10–20 s in cryo buffer (17.5% (w/v) PEG-400, 17.5% ethylene glycol, 45% water and 20% mother liquor) before flash-freezing in liquid nitrogen.
 
@@ -151,7 +372,7 @@ The data collection and refinement statistics are given in Table 1. Structure fa
 
 All figures were generated using Chimera (Pettersen et al., 2004).
 
-## NMR spectroscopy
+### NMR spectroscopy
 
 All 19F NMR experiments were performed at 35°C on a Varian Unity Inova 500 MHz spectrometer, equipped with a 1H/19F switchable probe tuned to fluorine (90° pulse width of 12 µs). All 1D 19F spectra were recorded with a spectral width of ~60 ppm and a maximum evolution time of 0.25 s. An interscan delay of 1.5 s was used with 5000 scans per transients, giving rise to a total acquisition time of 2.5 h per spectrum. To remove background signal from the probe and avoid baseline distortions, data acquisition was started after a ~100 µs delay (using the ‘delacq’ macro) and appropriate shifting of the data followed by backward linear prediction was performed. The data were apodized with an exponential filter (2.5 Hz line broadening) and zero-filled before Fourier transform. To improve the signal-to-noise ratio several data sets were recorded consecutively and, provided that the sample remained stable, added together after processing (two for apo Aurora A, four for Aurora A + AMPPCP, and five for W277L + AMPPCP, respectively). 19F chemical shifts were referenced externally to trifluoroacetic acid (TFA) at −76.55 ppm.
 
@@ -159,48 +380,78 @@ All 19F NMR experiments were performed at 35°C on a Varian Unity Inova 500 MHz 
 
 All data sets were processed with the NMRPipe/NMRDraw software package (Delaglio et al., 1995) and 2D spectra were visualized using Sparky (Goddard, 2008). Deconvolution of the 19F spectra and line shape fitting was performed using the Python package nmrglue (Helmus and Jaroniec, 2013).
 
-## Kinetics experiments of Aurora A with Gleevec, Danusertib, and AT9283
+### Kinetics experiments of Aurora A with Gleevec, Danusertib, and AT9283
 
-## Stopped-flow experiments
+#### Stopped-flow experiments
 
-Intrinsic tryptophan fluorescence spectroscopy was used to monitor drug binding kinetics to Aurora A. All experiments were performed at 25°C, except for the Gleevec kinetics that were measured at 10°C (unless otherwise stated) because the binding of Gleevec to Aurora A is too fast, kobs,Binding. Stock solutions of 200 mM Danusertib, 200 mM AT9283 and 50 mM Gleevec (all purchased from Selleck Chemicals, http://www.selleckchem.com) were prepared in 100% DMSO were and stored at −80°C until used. Aurora A used in the kinetic experiments was dephosphorylated Aurora A as determined by mass spectrometry, Western blot and activity experiments (data not shown). The rapid kinetics were studied using a stopped-flow spectrophotometer (SX20 series from Applied Photophysics Ltd). The flow system was made anaerobic by rinsing with degassed buffer comprised of 50 mM HEPES, 50 mM NaCl, 20 mM MgCl2, 5 mM TCEP, 5% DMSO, pH 7.30 to minimize photobleaching. The stock solutions of Aurora A and all drugs were made anaerobic by degassing with ThermoVac (MicroCal) at the desired temperature. In general, a solution of 5 μM Aurora A was loaded in one syringe and quickly mixed with drug, prepared in the same buffer, in the other syringe (mixing ratio 1:10). A significant increase or decrease in the fluorescence intensity of Aurora A (excitation at 295 nm, emission cut-off at 320 nm) can be observed due to the drug binding. For each drug concentration, at least five replicate measurements were made and these transients were averaged. Analysis was performed by fitting the individual trace to exponential equations using Pro-Data Viewer (Applied Photophysics Ltd) or with Kinesyst 3 software (TgK Scientific) and error bars denote the standard errors as obtained from the fit. KaleidaGraph version 4.5.3 (Synergy) was used for data analysis and plotting. All kinetic data were globally fitted in KinTek Explorer software (Johnson, 2009b, 2009a).
+Intrinsic tryptophan fluorescence spectroscopy was used to monitor drug binding kinetics to Aurora A. All experiments were performed at 25°C, except for the Gleevec kinetics that were measured at 10°C (unless otherwise stated) because the binding of Gleevec to Aurora A is too fast, $k_{obs,Binding}$. Stock solutions of 200 mM Danusertib, 200 mM AT9283 and 50 mM Gleevec (all purchased from Selleck Chemicals, http://www.selleckchem.com) were prepared in 100% DMSO were and stored at −80°C until used. Aurora A used in the kinetic experiments was dephosphorylated Aurora A as determined by mass spectrometry, Western blot and activity experiments (data not shown). The rapid kinetics were studied using a stopped-flow spectrophotometer (SX20 series from Applied Photophysics Ltd). The flow system was made anaerobic by rinsing with degassed buffer comprised of 50 mM HEPES, 50 mM NaCl, 20 mM MgCl2, 5 mM TCEP, 5% DMSO, pH 7.30 to minimize photobleaching. The stock solutions of Aurora A and all drugs were made anaerobic by degassing with ThermoVac (MicroCal) at the desired temperature. In general, a solution of 5 μM Aurora A was loaded in one syringe and quickly mixed with drug, prepared in the same buffer, in the other syringe (mixing ratio 1:10). A significant increase or decrease in the fluorescence intensity of Aurora A (excitation at 295 nm, emission cut-off at 320 nm) can be observed due to the drug binding. For each drug concentration, at least five replicate measurements were made and these transients were averaged. Analysis was performed by fitting the individual trace to exponential equations using Pro-Data Viewer (Applied Photophysics Ltd) or with Kinesyst 3 software (TgK Scientific) and error bars denote the standard errors as obtained from the fit. KaleidaGraph version 4.5.3 (Synergy) was used for data analysis and plotting. All kinetic data were globally fitted in KinTek Explorer software (Johnson, 2009b, 2009a).
 
-Under the rapid equilibrium approximation, the binding and dissociation steps of Gleevec to Aurora A are fast compared to conformational selection, therefore the value of k1 and k−1 can be estimated according to Equation 1:(1)kobs= k−11+ ([Gleevec][Aurora A]+ (k−2k2))+ k1where k1 and k−1 represent the conformational change from DFG-in to -out and vice versa, respectively. The approximate values of k1 and k−1 obtained from fitting to this equation are used as starting values for the global fit.
+Under the rapid equilibrium approximation, the binding and dissociation steps of Gleevec to Aurora A are fast compared to conformational selection, therefore the value of $k_{1}$ and $k_{−1}$ can be estimated according to Equation 1:
+
+$$
+k_{obs}= \frac{k_{−1}}{1+ (\frac{[Gleevec]}{[Aurora A]+ (\frac{k_{−2}}{k_{2}})})}+ k_{1}
+$$
+
+where $k_{1}$ and $k_{−1}$ represent the conformational change from DFG-in to -out and vice versa, respectively. The approximate values of $k_{1}$ and $k_{−1}$ obtained from fitting to this equation are used as starting values for the global fit.
 
 For the 5 μM Aurora A/Gleevec complex, the release of the drug was recorded after a 11-fold dilution of the complex using the stopped-flow instrument for 0.25 s (excitation at 295 nm, emission cut-off at 320 nm) at 10°C.
 
-## Creoptix WAVE experiments
+#### Creoptix WAVE experiments
 
-Double jump, slow-off, and macroscopic KD experiments of Aurora A with drugs were studied using a Creoptix WAVE instrument (Creoptix AG, Wädenswil, Switzerland) at 25°C. All chemicals were purchased from GE Healthcare, unless otherwise stated. The protocols in the WAVE control software for conditioning of the chip, immobilization of proteins and performing kinetics experiments were followed. In short, the polycarboxylate chip (PCH) was activated by injection of a 1:1 mixture with final concentrations of 200 mM N-ethyl-N’-(3-dimethylaminopropyl)carbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), followed by streptavidin immobilization (50 μg/mL in 10 mM sodium acetate pH 5.0). Unreacted sites on the chip were blocked with 1 M ethanolamine pH 8.0. For all activation, immobilization and passivation steps 0.2x HBS-EP was used as running buffer with a flowrate of 10 μL/min and an injection duration of 420 s on both channels 1 and 2.
+Double jump, slow-off, and macroscopic $K_{D}$ experiments of Aurora A with drugs were studied using a Creoptix WAVE instrument (Creoptix AG, Wädenswil, Switzerland) at 25°C. All chemicals were purchased from GE Healthcare, unless otherwise stated. The protocols in the WAVE control software for conditioning of the chip, immobilization of proteins and performing kinetics experiments were followed. In short, the polycarboxylate chip (PCH) was activated by injection of a 1:1 mixture with final concentrations of 200 mM N-ethyl-N’-(3-dimethylaminopropyl)carbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), followed by streptavidin immobilization (50 μg/mL in 10 mM sodium acetate pH 5.0). Unreacted sites on the chip were blocked with 1 M ethanolamine pH 8.0. For all activation, immobilization and passivation steps 0.2x HBS-EP was used as running buffer with a flowrate of 10 μL/min and an injection duration of 420 s on both channels 1 and 2.
 
-Biotinylated T288V variant that mimics dephosphorylated Aurora A was used for experiments performed on the Creoptix WAVE instrument. The activity of T288V with substrate Lats2, the macroscopic KD and slow-off rate of Danusertib were the same as wild-type (data not shown). Biotinylated T288V Aurora A (70 μg/mL) was immobilized on the PCH-streptavidin chip with 10 μL/min injection and 15 s injection duration over channel 1 only (channel 2 was used as reference channel). All experiments were run in 50 mM HEPES, 50 mM NaCl, 20 mM MgCl2, 5 mM TCEP, 0.03 mg/mL BSA, 0.005% Tween-20, pH 7.30 as running buffer. Binding experiments were evaluated over a range of Danusertib (0.13–66.67 nM), AT9283 (0.03–64.8 nM), and Gleevec (0.37–40 μM) concentrations. Gleevec binding experiments contained 5% DMSO in the running buffer (see above) to enhance Gleevec’s solubility. Double-jump experiments of Aurora A/drugs were performed by injecting 1 μM Danusertib or AT9283 with 0.2, 0.4, 0.8, and 2 s injection duration for Danusertib and 1 and 3 s injection duration for AT9283 followed by a 60 s dissociation duration per injection. The slow-off experiments were performed by injecting 5 μM Danusertib or AT9283 with 5–10 s injection duration (to fully saturate Aurora A) followed by a 180 s injection of buffer to remove the excess drug and the dissociation was measured for a duration of 10800 s.
+Biotinylated T288V variant that mimics dephosphorylated Aurora A was used for experiments performed on the Creoptix WAVE instrument. The activity of T288V with substrate Lats2, the macroscopic $K_{D}$ and slow-off rate of Danusertib were the same as wild-type (data not shown). Biotinylated T288V Aurora A (70 μg/mL) was immobilized on the PCH-streptavidin chip with 10 μL/min injection and 15 s injection duration over channel 1 only (channel 2 was used as reference channel). All experiments were run in 50 mM HEPES, 50 mM NaCl, 20 mM MgCl2, 5 mM TCEP, 0.03 mg/mL BSA, 0.005% Tween-20, pH 7.30 as running buffer. Binding experiments were evaluated over a range of Danusertib (0.13–66.67 nM), AT9283 (0.03–64.8 nM), and Gleevec (0.37–40 μM) concentrations. Gleevec binding experiments contained 5% DMSO in the running buffer (see above) to enhance Gleevec’s solubility. Double-jump experiments of Aurora A/drugs were performed by injecting 1 μM Danusertib or AT9283 with 0.2, 0.4, 0.8, and 2 s injection duration for Danusertib and 1 and 3 s injection duration for AT9283 followed by a 60 s dissociation duration per injection. The slow-off experiments were performed by injecting 5 μM Danusertib or AT9283 with 5–10 s injection duration (to fully saturate Aurora A) followed by a 180 s injection of buffer to remove the excess drug and the dissociation was measured for a duration of 10800 s.
 
-## Spectrofluorometer experiments
+#### Spectrofluorometer experiments
 
 The spectrofluorometer FluoroMax-4 (Horiba Scientific) with temperature controller was used to study the slow-off rate of Aurora A with Danusertib at 25°C. For this experiment, a solution containing 30 nM Aurora A and 30 nM Danusertib was pre-incubated for an hour, before diluting 30-fold into degassed buffer (ratio 1:30). A significant decrease in the fluorescence intensity of Aurora A (excitation at 295 nm, emission at 340 nm) can be seen due to the Danusertib release. The fluorescence signal was recorded every 160 s for a duration of six hours using the photobleaching minimization option that will close the shutter after each acquisition. A control experiment was performed, using the same experimental conditions, but without drug in order to account for photobleaching.
 
-## Overall dissociation constant calculated from intrinsic rate constants
+### Overall dissociation constant calculated from intrinsic rate constants
 
-In the following equations, K1, K2, K3 and K4 are equal to:K1=k−1k1K2=k−2k2=koffkonK3=k−3k3K4=k−4k4
+In the following equations, $K_{1}$, $K_{2}$, $K_{3}$ and $K_{4}$ are equal to:
 
-Conformational selection followed by inhibitor binding:(2)Ein⇌k−1k1Eout+ I ⇌koffkonEout⋅IK1K2KD=(K1+1)∗K2
+$$
+K_{1}=\frac{k_{−1}}{k_{1}}K_{2}=\frac{k_{−2}}{k_{2}}=\frac{k_{off}}{k_{on}}K_{3}=\frac{k_{−3}}{k_{3}}K_{4}=\frac{k_{−4}}{k_{4}}
+$$
 
-Inhibitor binding followed by an induced-fit step:(3)Eout+ I⇌koffkonEout⋅I⇌k−3k3Eout∗⋅I K2K3KD=K2∗K3(K3+1)
+Conformational selection followed by inhibitor binding:
 
-Conformational selection followed by inhibitor binding and an induced-fit step:(4)Ein⇌k−1k1Eout+I⇌koffkonEout⋅I⇌k−3k3Eout∗⋅IK1K2K3KD=(K1+1)∗K2∗K3K3+1
+$$
+E_{in}⇌k_{−1}k_{1}E_{out}+ I ⇌k_{off}k_{on}E_{out}⋅IK_{1}K_{2}K_{D}=(K_{1}+1)∗K_{2}
+$$
 
-Conformational selection mechanism, followed by inhibitor binding to both DFG-in and -out state, but an induced-fit step only occurs in the DFG-in state:(5)Eout⇌k−1k1Ein+I⇌koffkonEin⋅I⇌k−3k3Ein∗⋅IK4⇃↾Eout⋅IK1K2K3KD=(K1+1)∗K2∗K3∗K4K1∗K2∗K3+K3∗K4+K4
+Inhibitor binding followed by an induced-fit step:
+
+$$
+E_{out}+ I⇌k_{off}k_{on}E_{out}⋅I⇌k_{−3}k_{3}E_{out}^{∗}⋅I K_{2}K_{3}K_{D}=\frac{K_{2}∗K_{3}}{(K_{3}+1)}
+$$
+
+Conformational selection followed by inhibitor binding and an induced-fit step:
+
+$$
+E_{in}⇌k_{−1}k_{1}E_{out}+I⇌k_{off}k_{on}E_{out}⋅I⇌k_{−3}k_{3}E_{out}^{∗}⋅IK_{1}K_{2}K_{3}K_{D}=\frac{(K_{1}+1)∗K_{2}∗K_{3}}{K_{3}+1}
+$$
+
+Conformational selection mechanism, followed by inhibitor binding to both DFG-in and -out state, but an induced-fit step only occurs in the DFG-in state:
+
+$$
+E_{out}⇌k_{−1}k_{1}E_{in}+I⇌k_{off}k_{on}E_{in}⋅I⇌k_{−3}k_{3}E_{in}^{∗}⋅IK_{4}\frac{⇃↾}{E_{out}⋅I}K_{1}K_{2}K_{3}K_{D}=\frac{(K_{1}+1)∗K_{2}∗K_{3}∗K_{4}}{K_{1}∗K_{2}∗K_{3}+K_{3}∗K_{4}+K_{4}}
+$$
 
 The uncertainties in the calculated dissociation constant parameter using the equations above are obtained using standard error propagation.
 
-## Aurora A binding to mant-ATP
+### Aurora A binding to mant-ATP
 
-FRET using intrinsic tryptophan fluorescence is used to monitor mant-ATP (obtained from Jena Bioscience) binding kinetics to Aurora A at 10°C. In the binding experiment or kon, increasing concentration of mant-ATP were quickly mixed to 0.5 µM Aurora A (ratio 1:10, excitation at 295 nm, emission cut-off at 395 nm). In the experiment to measure the release of mant-ATP or koff, 10 µM/10 µM Aurora A/mant-ATP complex was diluted with buffer (ratio 1:10). A significant decrease in the fluorescence intensity of Aurora A (excitation at 295 nm, emission cut-off at 395 nm) can be seen due to the mant-ATP release.
+FRET using intrinsic tryptophan fluorescence is used to monitor mant-ATP (obtained from Jena Bioscience) binding kinetics to Aurora A at 10°C. In the binding experiment or $k_{on}$, increasing concentration of mant-ATP were quickly mixed to 0.5 µM Aurora A (ratio 1:10, excitation at 295 nm, emission cut-off at 395 nm). In the experiment to measure the release of mant-ATP or $k_{off}$, 10 µM/10 µM Aurora A/mant-ATP complex was diluted with buffer (ratio 1:10). A significant decrease in the fluorescence intensity of Aurora A (excitation at 295 nm, emission cut-off at 395 nm) can be seen due to the mant-ATP release.
 
-## Macroscopic dissociation constant experiments
+### Macroscopic dissociation constant experiments
 
 Fluorescence titration experiments were measured using FluoroMax-4 spectrofluorometer (Horiba Scientific). Increasing amounts of Aurora A/Danusertib complex (4 nM Aurora A and 150 nM Danusertib) or Aurora A/mant-ATP (1 µM Aurora A and 2 mM mant-ATP) were titrated into an Aurora A solution (4 nM and 1 µM Aurora A for experiments with Danusertib and mant-ATP, respectively). To measure Danusertib affinity, the excitation wavelength was 295 nm (5 nm bandwidth) and emission spectra were recorded from 310 to 450 nm (20 nm bandwidth) in increments of 2 nm and the temperature was maintained at 25°C. For the mant-ATP experiment, the dissociation constant was measured at 10°C using fluorescence energy transfer from tryptophan residues in Aurora A to mant-ATP by setting the excitation wavelength to 290 nm (5 nm bandwidth) and collecting the emission intensity from 310 to 550 nm (5 nm bandwidth) in increments of 2 nm. A control experiment in the absence of Aurora A was performed using the same experimental settings and used to correct for the mant-ATP interference. In all experiments, a 5 min equilibration time was used after each addition of Aurora A/Danusertib complex or Aurora A/mant-ATP complex.
 
-The fluorescence intensity at 368 nm versus Danusertib concentration or the change in fluorescence at 450 nm (ΔF450) versus mant-ATP concentration was fitted to Equation 6 using Levenberg-Marquardt nonlinear fitting algorithm included in KaleidaGraph to obtain the KD.(6)F=F0+A⋅[I]+[Et]+KD−([I]+[Et]+KD)2−4⋅[Et]⋅[I]2⋅[Et]
+The fluorescence intensity at 368 nm versus Danusertib concentration or the change in fluorescence at 450 nm ($ΔF^{450}$) versus mant-ATP concentration was fitted to Equation 6 using Levenberg-Marquardt nonlinear fitting algorithm included in KaleidaGraph to obtain the $K_{D}$.
 
-F and F0 are the fluorescence and initial fluorescence intensities, respectively. [I] and [Et] are the total concentration of the drug or mant-ATP and the Aurora A, respectively.
+$$
+F=F_{0}+A⋅\frac{[I]+[E_{t}]+K_{D}−\sqrt{([I]+[E_{t}]+K_{D})^{2}−4⋅[E_{t}]⋅[I]}}{2⋅[E_{t}]}
+$$
+
+$F$ and $F_{0}$ are the fluorescence and initial fluorescence intensities, respectively. $[I]$ and $[E_{t}]$ are the total concentration of the drug or mant-ATP and the Aurora A, respectively.

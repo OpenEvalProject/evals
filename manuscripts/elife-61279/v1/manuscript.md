@@ -46,6 +46,26 @@ Hypercapnia consistently induced a CBF increase in both WT and Tg-SwDI mice unde
 
 **Figure 2.:** From left to right, the different ages are displayed. From top to bottom, respectively CBF maps at baseline, CBF maps during CO2, and CVR maps are displayed, with WT and Tg-SwDI mice alternating per row. On the bottom row, an anatomical magnetic resonance imaging (MRI) scan of the same brain slice is shown. Note that the CBF increase during the CO2 challenge is most profound in the cortex, and that the WT and Tg-SwDI mice show similar CBF and CVR maps.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61279/elife-61279-fig3-v1.jpg)
+
+**Figure 3.:** (A) 21-min CBF time profiles (mean ± standard deviation) that were retrieved in a full mid-brain slice at the ages of 3, 6, 9, and 12 months old shows for wild-type (WT) and transgenic Swedish Dutch Iowa (Tg-SwDI) mice. CO2 was administered between minutes 7 and 14. (B) Boxplot representations of baseline CBF (average of the last 2.3 min before the start of CO2 administration) and CVR (ratio of average of the last 2.3 min during CO2 to baseline CBF). Circles and squares represent individual mice. No significant differences were observed between the two genotypes, but there was a significant effect of age (Friedman test, p=0.005 for CBF in WT, p=0.037 for CBF in TG, p=0.040 for CVR in WT). From the post hoc analysis, only the drop in CBF in WT mice between 3 and 6 months old (p=0.008) reached the Bonferroni-corrected significance threshold (p=0.017).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61279/elife-61279-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** On the top row, CBF trends are displayed, on the second row CVR trends, on the third row brain volume, and on the last row body weight. The left column shows wild-type (WT) mice, and the right column transgenic Swedish Dutch Iowa (Tg-SwDI) mice. Every animal is represented with the same line color in the four graphs. The black dashed line represents the group mean.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61279/elife-61279-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** On the top row, representative T2 weighted images are shown with overlaying areas (in gray) representing the brain regions that were analyzed. The middle row shows boxplot representations of baseline CBF (average of the last 2.3 min before the start of CO2 administration) and bottom row shows cerebrovascular reactivity (CVR; ratio of average of the last 2.3 min during CO2 to baseline CBF). Circles and squares represent individual mice.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/61279/elife-61279-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** On the first row, the pCO2 time profiles (mean ± standard deviation) acquired during the pCASL scans in cohort 1 for both wild types (WT) and transgenic Swedish Dutch Iowa (Tg-SwDI) are displayed. On the second row, the respiration profiles (mean ± standard deviation) are displayed. Note that the respiration profiles were not captured during the second time point due to technical difficulties.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/61279/elife-61279-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** In the graphs from left to right, increasing ages are shown. Within each graph, wild types (WT) and transgenic Swedish Dutch Iowa (Tg-SwDI) mice are displayed.
+
 Median (iqr) baseline ATT values in the mid-brain were also similar for both WT and Tg-SwDI mice, i.e. 206 (186-240) milliseconds (ms) and 223 (202–246) ms respectively at 12 months of age (Figure 4). The hypercapnia challenge shortened the ATT to 192 (189–205) for WT and 197 (187–207) for Tg-SwDI mice, which was significant for Tg-SwDI mice (Z = −2.20 and p=0.028), but did not reach significance for WT mice (Z = −1.84 and p=0.066).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/61279/elife-61279-fig4-v1.jpg)
@@ -54,7 +74,27 @@ Median (iqr) baseline ATT values in the mid-brain were also similar for both WT 
 
 To evaluate if a functional deficit could have been masked by the vasodilatory effect of isoflurane during the MRI sessions, additional CBF and CVR measurements were performed in the same cohort of mice under urethane and alpha-chloralose (U and A) anesthesia. This was done at 12.3 months, 10 days after the last MRI measurement under isoflurane. The change of anesthesia protocol resulted in profound hemodynamic changes: baseline CBF was markedly reduced and the hypercapnic response was higher in amplitude, but also slower (Figure 5a), and more widespread in the brain tissue (Figure 5b). The CBF and CVR estimates were indeed significantly impacted by the change in anesthesia protocol (Figure 5c), with the median CBF (iqr) decreasing from 126 (84–141) to 28 (26–30) mL/100 g/min in WT mice, Z = −2.67 and p=0.008, and median (iqr) CVR increasing from 26 (6–47) to 233 (193–245) %, Z = −2.67 and p=0.008. These changes were again comparable to those in Tg-SwDI mice, with the median CBF (iqr) and CVR (iqr) respectively changing from 114 (103–130) to 25 (21–40) mL/100 g/min, Z = −2.37 and p=0.018, and from 30 (17–34) to 265 (178–312) %, Z = −2.37 and p=0.018. The CBF response at the induction phase of U and A anesthesia was also similar in Tg-SwDI and WT mice (Figure 5—figure supplement 1). The higher CVR during U and A was unlikely due to a higher CO2 absorption, as the tc-pCO2 responses to the hypercapnia challenges only increased from an average of 15 mmHG during isoflurane to an average of 19 mmHG during U and A (Figure 5—figure supplement 2).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/61279/elife-61279-fig5-v1.jpg)
+
+**Figure 5.:** (A) 21-min CBF time profiles acquired in the mid-brain in wild-type (WT) and transgenic Swedish Dutch Iowa (Tg-SwDI) mice under either isoflurane anesthesia (left, 12 months old) or U and A anesthesia (right, 10 days later in the same mice). CO2 was administered between minutes 7 and 14. (B) Mid-brain CBF and CVR maps averaged for WT (top) and Tg-SwDI (bottom) mice. Note that the CVR maps during U and A anesthesia are scaled differently than the CVR maps under isoflurane due to the marked difference in CVR. (C) Boxplot representations of the baseline CBF and CVR group values, where dots and circles represent individual mice.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61279/elife-61279-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** 90-min CBF time profiles (mean ± standard deviation) are displayed that are acquired in cohort 1 for wild-type and transgenic Swedish Dutch Iowa (Tg-SwDI) mice at an age of 12.3 months. U and A was injected 5 min after the start of the arterial spin labeling-magnetic resonance imaging (MRI) scan. Isoflurane (iso) was decreased between minutes 40 and 50. CO2 was administered between minutes 72 and 79.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/61279/elife-61279-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** On the first row, the pCO2 time profiles (mean ± standard deviation) acquired during the pseudo-continuous arterial spin labeling (pCASL) scans are displayed for both wild-type (WT) and transgenic Swedish Dutch Iowa (Tg‑SwDI) mice in the last two time-points of cohort 1, with the acquisition under isoflurane on the left, the acquisition under urethane and α-chloralose on the right. On the second row, the respiration profiles (mean ± standard deviation) for the same time-points are displayed.
+
 An additional smaller second cohort of mice was used to cross-validate our MRI findings with the previously used LDF readout as imaging modality to assess cerebrovascular function in this mouse model (Chow et al., 2007; Park et al., 2014). After a unilateral craniotomy (right side), LDF measurements were performed with two probes at the same time: one through the skull in the left hemisphere and the other directly above the brain tissue in the right hemisphere. MRI measurements were performed directly after the LDF measurement in the same mice and the brain region analyzed with the MRI data was restricted to the somatosensory cortex, where the LDF measurements were also collected. No differences in CVR could be observed between WT and Tg-SwDI mice, neither with MRI nor with LDF (Figure 6). Of note, removal of the skull severely reduced the CVR for both imaging modalities (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/61279/elife-61279-fig6-v1.jpg)
+
+**Figure 6.:** On the left, 21-min CBF time profiles acquired with LDF in the somatosensory cortex are displayed for wild-type (WT) and transgenic Swedish Dutch Iowa (Tg-SwDI) mice. In the middle, 21-min CBF time profiles are displayed that are acquired with ASL-MRI in the left somatosensory cortex, after baseline correction, so the profiles can be compared to the LDF time profiles. On the right are the same profiles as in the middle, without baseline correction.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61279/elife-61279-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) CVR time profiles acquired either with LDF (top row) or ASL-MRI (bottom row). The left column shows the CVR time profiles from the intact, left hemisphere, the right column the profiles from the right hemisphere after craniotomy. (B) A photograph of the somatosensory cortex of a representative mouse after craniotomy. (C) On the top row, a T2 weighted image that was acquired with MRI after craniotomy. On the bottom row, cerebral blood flow (CBF) and CVR images that were acquired in the same scan session. Note that the left hemisphere is displayed on the right, according to radiological convention.
 
 Lastly, the brain tissue was stained for amyloid-β to assess the degree of pathological burden. All Tg-SwDI mice developed extensive amyloid-β plaque pathology by the end of the experiment, with mainly diffuse parenchymal plaques in the cortex and microvascular plaques in the hippocampus and thalamus, but none of the WT mice displayed any amyloid-β deposition (Figure 7).
 
@@ -80,7 +120,115 @@ In conclusion, this study shows that cerebrovascular function in the Tg-SwDI mou
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57Bl/6J (WT)</td>
+      <td>Jackson lab</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6-Tg(Thy1-APPSwDutIowa)-BWevn/Mmjax (Tg-SwDI)</td>
+      <td>Jackson lab</td>
+      <td>MMRRC Stock No: 34843-JAX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta amyloid antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab2539 RRID:AB_303141</td>
+      <td>‘(1:1000)’ dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG antibody (pig polyclonal)</td>
+      <td>Dako</td>
+      <td>E0431</td>
+      <td>‘(1:300)’ dilution</td>
+    </tr>
+    <tr>
+      <td>Ahemical compound, drug</td>
+      <td>α-Chloralose</td>
+      <td>Sigma-Aldrich</td>
+      <td>C0128</td>
+      <td>50 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urethane</td>
+      <td>Sigma-Aldrich</td>
+      <td>U2500</td>
+      <td>750 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DASYLab</td>
+      <td>National Instruments</td>
+      <td>https://www.mccdaq.com/DASYLab-Resources.aspx</td>
+      <td>Version 13</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>IBM</td>
+      <td>RRID:SCR_002865</td>
+      <td>Version 26</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EVolution</td>
+      <td>Denis de Senneville et al.</td>
+      <td>Phys Med Biol 2016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MIA / MP3</td>
+      <td>Brossard et al.</td>
+      <td>Front Neuroinform 2020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>G*Power</td>
+      <td>Faul et al.</td>
+      <td>Behav Res Methods 2007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Avidin-Biotin Complex kit</td>
+      <td>Vector Laboratories</td>
+      <td>Vectastain</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All the experiments were approved by the local ethics committee (‘Leiden University Medical Center Instantie voor Dierenwelzijn’) and the national ethical committees (‘Centrale Commissie Dierproeven’) under OZP PE.18.029.002 of AVD116002017859, and the experiments have been reported in compliance with the ARRIVE guidelines (Kilkenny et al., 2010).
 
@@ -90,7 +238,7 @@ Animal preparation – the isoflurane anesthesia protocol during the first four 
 
 The second cohort was also anesthetized with U and A; however, in this cohort, the i.p. injection was given directly after the induction with 3.5% isoflurane. Again, isoflurane was kept at 1.75% for 35 min after injection, after which it was decreased to 0% over the course of 10 min. While still at 1.75% isoflurane, the trachea was surgically intubated for mechanical ventilation and additionally, a craniotomy of 3 mm in diameter was prepared over the right somatosensory cortex. The dura mater was left intact and kept moist with sterile PBS. Similar physiological monitoring was performed as in the first cohort. Fifteen minutes after the isoflurane reached 0%, the LDF recording was started. After the LDF measurement, and before the animal was placed in the MRI scanner, the skin was placed back over the exposed skull and brain and sutured to limit susceptibility artifacts.
 
-## Image acquisition
+### Image acquisition
 
 MRI acquisition – a 7 T Pharmascan MRI scanner (Bruker, Germany) with a 23 mm transmit-receive volume coil was used. After proper placement of the mouse head in the bore was confirmed with a scout scan, three standard Bruker T2-weighted RARE scans (TE/TR = 35.0 ms/2500 ms; 78 × 78 × 700 µm3 resolution) were performed in all three directions for consistent planning across animals of the subsequent pseudo-continuous ASL (pCASL) scans. The coronal slice package with 21 slices was additionally used for quantification of the brain volume. The pCASL scan protocol was similar as in Munting et al., 2019. In short, the phase of the pCASL labeling was first optimized using pre-scans (Hirschler et al., 2018b). Thereafter, CBF and CVR were measured using a 21-min pCASL scan with 180 dynamics, a labeling duration (τ) of 3000 ms, a post-labeling delay (PLD) of 300 ms, and a five slice spin-echo echo planar imaging (SE-EPI) readout with 225 µm2 resolution and 1.5 mm slice thickness (no slice gap). 7.5% CO2 was administered to the mouse from minute 7 till minute 14. For the last imaging session (12.3 months) of the mice in the first cohort, the number of dynamics of the pCASL scan was extended to 767 (scan duration of 90 min) to also capture the effect of switching from isoflurane to U and A anesthesia on CBF. Specifically, the following steps were performed during the 1.5 hr ASL scan: at 5 min, U and A was injected, between minutes 40 and 50 isoflurane was decreased from 1.75% till 0% and between minutes 72 and 79, 7.5% CO2 was administered. At the fourth scan session (12 months), two time-encoded pCASL (te-pCASL) sequences were additionally acquired per mouse for measuring the ATT. The second te-pCASL sequence was performed while administering 7.5% CO2 to the mouse, which allowed measuring the effect of arterial pCO2 elevation on the ATT. The scan parameters of the te-pCASL sequence were the same as in Hirschler et al., 2018a; Hirschler et al., 2018b except for the resolution, which was decreased from 225 to 337 µm2 to increase the signal-to-noise ratio (SNR). A three slice SE-EPI readout was used, with the same slice orientation as slices 1, 3, and 5 of the standard pCASL scan (thus with a slice gap of 1.5 mm). During every imaging session, for CBF quantification purposes, the T1 of the tissue (T1t) and the tissue magnetization (M0t) were estimated by collecting an additional inversion recovery scan with the same five slice SE-EPI readout as the pCASL scans. Furthermore, a pCASL flow-compensated FLASH was acquired at the level of the carotids, 3 mm downstream of the labeling plane, to measure the labeling efficiency (α). An additional T2-weighted (T2W) RARE anatomical sequence was acquired with the same slice orientation as that of the pCASL scan for registration purposes.
 
@@ -98,18 +246,24 @@ LDF acquisition – A PeriFlux system with a PF 5010 LDPM unit and two Laser Dop
 
 After the last MRI measurement, a subgroup of mice (6 Tg-SwDI and 6 WT) was i.v. injected with 200 µL of DyLight-594-coupled lectin (lycopersicum esculentum, VectorLabs, CA, USA) in the tail vein for staining of the endothelium. This was followed 3 min later by an i.p. overdose of pentobarbital after which the mouse was transcardially perfused with 20 mL of ice-cold PBS and 20 mL of ice-cold 4% PFA. The brain was isolated and fixed overnight in 4% PFA. The tissue was thereafter preserved at 4°C in PBS with 0.02% sodium azide until further processing. The other mice followed the exact same steps, but without the i.v. lectin injection.
 
-## Image processing
+### Image processing
 
 T2W processing – One full-brain volume of interest (VOI) was manually drawn on one of the 21-slice T2W RARE scans, after which the VOI was propagated to the T2W RARE scans of the other data sets (both to other mice and to other time points) using the EVolution algorithm (Denis de Senneville et al., 2016). To derive the brain volume, the number of voxels in the VOI was multiplied by the voxel volume.
 
-ASL image processing – The ASL image processing pipeline was the same as used in Munting et al., 2019. In short, the SE-EPI frames within one pCASL scan were aligned using the image processing toolbox of MATLAB (version 2018b, Mathworks, USA). Subsequently CBF, CVR, and ATT were calculated using the MATLAB-based ‘Multi-Image Analysis (MIA)’ software developed at the Grenoble Institute of Neuroscience (Grenoble, France) (Brossard et al., 2020). CBF was calculated for each pair of label/control images, expressed in mL/100 g/min, and derived using Buxton’s general kinetic perfusion model (Buxton et al., 1998) with the following equation:CBF=λ∙ΔM∙expPLD/T1b2∙α∙T1t∙M0t∙1-exp-τ/T1twhere λ is the blood–brain partition coefficient, that is, 0.9 mL/g (Herscovitch and Raichle, 1985), ΔM is the signal difference of the label and control images from the standard pCASL scans and T1b is the longitudinal relaxation time of blood, that is, 2230 ms at 7 T (Dobre et al., 2007). Baseline CBF was defined as the average of the last 20 repetitions (≈ 2.3 min) before the start of CO2 administration. CVR was defined as the ratio calculated from the average of the last 20 repetitions during CO2, over the average of the last 20 repetitions before CO2 administration. To calculate ATT, the decoded signal from the te-pCASL scans was used, as described in Hirschler et al., 2018a. Cortical, thalamic, and full mid-brain brain (ROIs) were manually drawn on one of the T2W RARE scans, after which they were propagated to the T2W RARE scans of the other data sets (both to other mice and to other time points) using the EVolution algorithm (Denis de Senneville et al., 2016). This image registration method was also applied to position the ROIs in the corresponding SE-EPIs. This allowed to retrieve CBF, CVR, and ATT values for different brain regions. CBF time profiles were all filtered using a sliding window of three time points (after CBF calculation), besides the profiles acquired in cohort 2 in the cortical ROI of the hemisphere where the skull was removed (Figure 5—figure supplement 1), which were filtered with a sliding window of seven time points.
+ASL image processing – The ASL image processing pipeline was the same as used in Munting et al., 2019. In short, the SE-EPI frames within one pCASL scan were aligned using the image processing toolbox of MATLAB (version 2018b, Mathworks, USA). Subsequently CBF, CVR, and ATT were calculated using the MATLAB-based ‘Multi-Image Analysis (MIA)’ software developed at the Grenoble Institute of Neuroscience (Grenoble, France) (Brossard et al., 2020). CBF was calculated for each pair of label/control images, expressed in mL/100 g/min, and derived using Buxton’s general kinetic perfusion model (Buxton et al., 1998) with the following equation:
+
+$$
+CBF=\frac{\lambda∙ΔM∙expPLD/T_{1b}}{2∙\alpha∙T_{1t}∙M_{0t}∙1-exp-\tau/T_{1t}}
+$$
+
+where λ is the blood–brain partition coefficient, that is, 0.9 mL/g (Herscovitch and Raichle, 1985), ΔM is the signal difference of the label and control images from the standard pCASL scans and T1b is the longitudinal relaxation time of blood, that is, 2230 ms at 7 T (Dobre et al., 2007). Baseline CBF was defined as the average of the last 20 repetitions (≈ 2.3 min) before the start of CO2 administration. CVR was defined as the ratio calculated from the average of the last 20 repetitions during CO2, over the average of the last 20 repetitions before CO2 administration. To calculate ATT, the decoded signal from the te-pCASL scans was used, as described in Hirschler et al., 2018a. Cortical, thalamic, and full mid-brain brain (ROIs) were manually drawn on one of the T2W RARE scans, after which they were propagated to the T2W RARE scans of the other data sets (both to other mice and to other time points) using the EVolution algorithm (Denis de Senneville et al., 2016). This image registration method was also applied to position the ROIs in the corresponding SE-EPIs. This allowed to retrieve CBF, CVR, and ATT values for different brain regions. CBF time profiles were all filtered using a sliding window of three time points (after CBF calculation), besides the profiles acquired in cohort 2 in the cortical ROI of the hemisphere where the skull was removed (Figure 5—figure supplement 1), which were filtered with a sliding window of seven time points.
 
 LDF processing – The LDF signal time profiles extracted with DasyLab were filtered with a sliding window of three time points and normalized to the average signal during the first 7 min of the measurement (baseline signal).
 
-## Immunohistochemistry (IHC)
+### Immunohistochemistry (IHC)
 
 The fixed brains were embedded in paraffin, and subsequently cut in sections of 5 µm. After deparaffinization with xylene and rehydration through graded ethanol series, the slides were cooked for 20 min in citrate buffer for antigen retrieval. Slides were then stained overnight at 4°C with anti-amyloid-β antibody (1:1000; Abcam ab2539) followed by a 1 hr room temperature incubation with biotinylated secondary antibody (1:300; Dako E0431). Immunodetection was visualized using an Avidin-Biotin Complex kit (Vector Laboratories, UK), and sections were counterstained with haematoxylin before mounting. The slides were digitized with an automatic bright field microscope (Philips Ultra Fast Scanner, Philips, the Netherlands) and assessed by one examiner (LPM) for positivity for amyloid-β.
 
-## Statistical testing
+### Statistical testing
 
 To test the effect of genotype on CBF, CVR, ATT, and tc-pCO2, Mann–Whitney U-tests were performed. For the longitudinal cohort, Friedman tests were performed to test the effect of age on CBF and CVR, post-hoc followed by Wilcoxon signed-rank tests to determine which of the individual age groups differed from each other. Only consecutive age groups were compared to each other to restrict the stringency of the Bonferroni correction for multiple comparisons. Wilcoxon signed-rank tests were used to test the effect of anesthesia on CBF and CVR and to test the effect of CO2 on the ATT. No statistical testing was performed in cohort 2, given the small group size. All tests were performed in the SPSS statistics software package, version 26 (IBM, Armonk, NY, USA). The results of all tests are summarized in Supplementary file 1.

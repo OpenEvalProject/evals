@@ -55,17 +55,53 @@ To test this hypothesis, we capitalized on a large sample of youth (8–23 years
 
 ## Results
 
-## Network topology constrains the transition to a fronto-parietal activation state
+### Network topology constrains the transition to a fronto-parietal activation state
 
 In this study, we included 946 youths aged 8–23 years who were imaged as part of the PNC (Figure 1—figure supplement 1). Structural white matter networks were reconstructed for each participant from diffusion imaging data using probabilistic tractography and a standard parcellation of 232 regions. Capitalizing on recent advances in network control theory, we modeled how structural networks facilitate state transitions from an initial baseline state to the target state. In the initial state, all regions had an activity magnitude of 0. In the target state, regions in the fronto-parietal system had activity magnitude of 1, with all other regions having an activity magnitude of 0. Specifically, we defined the trajectory of a neural system to be the temporal path that the system traverses through diverse states, where the item state was defined as the vector of neurophysiological activity across brain regions at a single time point. Based on each participant’s unique network topology, we estimated the regional energetic cost required for the brain to transition from the baseline to the fronto-parietal activation target state (Betzel et al., 2016; Gu et al., 2017; Stiso et al., 2019; Figure 1—figure supplement 2 and Figure 1a). Formally, this estimation was operationalized as a multi-point network control optimization problem, where we aimed to identify the optimal trajectory between baseline and the fronto-parietal activation target state that minimizes both the energetic cost and the distance between the final state and the target state.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig1-v2.jpg)
+
+**Figure 1.:** (a) From a baseline state, we calculated the control energy required to reach a fronto-parietal activation target state. This transition was calculated for each subject based on their structural brain network, which was estimated using diffusion imaging and probabilistic tractography. (b) The average energetic costs to reach the fronto-parietal activation target state varied by cognitive system, with the largest energetic costs being present in the fronto-parietal control network and the ventral attention network. (c) The regional control energy required to reach the fronto-parietal activation target. (d) The control energy cost of a transition to the fronto-parietal activation target state was significantly lower in real brain networks than in null model networks where the strength and degree distribution were preserved.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The cross-sectional sample of the Philadelphia Neurodevelopmental Cohort (PNC) has 1601 participants in total. 340 subjects were excluded owing to clinical factors, such as medical disorders. Then, 312 subjects were excluded because of low quality of T1 or diffusion data, incomplete diffusion data, lacking of field map. Finally, three subjects were excluded due to incomplete image coverage during brain parcellation. The final sample consisted of the remaining 946 subjects.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Each parcel was mapped to one of these networks.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) The activation profiles of all 27 brain regions of the fronto-parietal system during an optimal trajectory from the baseline state to the final state. We define the final state to be a vector in which elements corresponding to the 27 regions of the fronto-parietal system are set to 1, and all other elements are set to 0. The activity magnitudes vary by region and by time. The trajectory here is the average of trajectory over all subjects. (b) For each subject, the Euclidean distance from the current state x(t) to the target state x(T) decreases with time. The final distance to the target state was 0, indicating that all subjects reached the target state. Each line represents a different subject. (c) For each subject, the total control energy cost of all brain regions at a particular time point increases with time. Each line represents a different subject. (d) We observe a tight correlation between the total trajectory distance and the total control energy across subjects (r = 0.97, p<2 × 10−16).
 
 Results of this linear dynamical model indicate that the trajectory distance (i.e., the distance between current and target states) decreases with time until the desired target state is reached (Figure 1—figure supplement 3a and b). For each network node, we calculated the control energy cost, which provides an indication of where energy must be injected into the network to achieve the transition to the target state. Consistent with a recent methodological study (Karrer et al., 2019), and several recent empirical studies (Betzel et al., 2016; Gu et al., 2017; Stiso et al., 2019), the trajectory distance (Figure 1—figure supplement 3b) was inversely related to the time-dependent energy cost within subject (Figure 1—figure supplement 3c). We calculated the trajectory distance at each time point, which was defined as the Euclidean distance between the current brain state and the target brain state. A small distance suggests that the current vector of brain activity is similar to the target vector of brain activity. Across all subjects, we found the total trajectory distance of all time points was positively correlated with total control energy of all time points (r = 0.97, p<2 × 10−16, Figure 1—figure supplement 3d), suggesting that subjects whose state transition trajectory is long require more energy input to reach the target state. Prior literature has demonstrated that control energy cost is lower in human brain than in the brains of Drosophila and mouse to support diverse network dynamics (Kim et al., 2018), is related to network topology (Betzel et al., 2016; Kim et al., 2018) and reflects the magnitude of focal electrocorticography stimulation required to drive the brain to a target memory state in patients with medically refractory epilepsy (Stiso et al., 2019). Accordingly, here we used the control energy as a metric to summarize the optimal trajectory. We calculated the mean control energy of each system; the highest control energy was observed in systems involved in executive function (Figure 1b and c), including the fronto-parietal and ventral attention/cingulo-opercular systems (see Figure 1—figure supplement 2; Yeo et al., 2011).
 
 Based on recent evidence that network control properties depend appreciably on the topological structure of the network (Kim et al., 2018; Wu-Yan et al., 2017), we next sought to demonstrate that the topological structure of brain networks facilitates this transition. We therefore compared the energetic cost of this transition in empirical brain networks to the energetic cost observed in null model networks. Specifically, we randomly permuted (100 times per participant) the placement of edge weights, while preserving the network degree and strength distribution. The mean whole brain energetic cost of the null networks was significantly higher (p<2 × 10−16) than that of the empirical networks (Figure 1d), indicating that structural brain networks are topologically optimized to reduce the energetic costs of the transition to a fronto-parietal activation state.
 
-## Energetic costs of the transition to a fronto-parietal activation state decline with development
+### Energetic costs of the transition to a fronto-parietal activation state decline with development
 
 Having shown that the topology of structural brain networks facilitates transitions to a fronto-parietal activation state, we next investigated how the energetic costs of this transition evolve in youth. We hypothesized that the energy required to make this transition would decline as networks were remodeled in development. Prior studies have demonstrated that the developmental changes of both brain structure and function could be either linear (Hagmann et al., 2010; Wierenga et al., 2016) or non-linear (Grayson and Fair, 2017; Mills et al., 2016; Vandekar et al., 2015). Therefore, we used generalized additive models (GAM) with penalized splines, which allowed us to rigorously characterize both linear and nonlinear effects while avoiding over-fitting. Age associations with control energy were examined at multiple scales, including the level of the whole brain, cognitive systems, and individual nodes. For all analyses, we included sex, handedness, in-scanner head motion, total brain volume, and total network strength as covariates. These analyses revealed that the whole-brain average energetic cost of the transition to the fronto-parietal activation state declined with age (Z = −5.12, p=3.06 × 10−7, Partial r = −0.17, 95% confidence interval (CI) = [−0.23,–0.10]; Figure 2a). Notably, analyses of cognitive systems indicated that age effects were heterogeneously distributed (Figure 2b), with the largest declines in control energy occurring in fronto-parietal (Z = −5.30, PFDR = 4.54 × 10−7, Partial r = −0.17, CI = [−0.23,–0.11]; Figure 2c), visual (Z = −4.25, PFDR = 5.71 × 10−5, Partial r = −0.14, CI = [−0.20,–0.08]), and motor (Z = −3.20, PFDR = 2.70 × 10−3, Partial r = −0.09, CI = [−0.15,–0.03]) systems. In contrast, energetic costs within the limbic (Z = 8.69, PFDR <2 × 10−16, Partial r = 0.29, CI = [0.23, 0.35]) and default mode (Z = 2.86, PFDR = 5.66 × 10−3, Partial r = 0.10, CI = [0.04, 0.17]) systems increased with age (see Figure 2—figure supplement 1). These system-level results aligned with analyses of individual network nodes; we found that the control energy of 49 regions decreased significantly with age (PFDR <0.05), including regions in the fronto-parietal control, visual, and motor systems. Furthermore, the control energy significantly increased with development in 30 regions (PFDR <0.05), which were mainly situated in limbic and default mode systems (Figure 2d).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig2-v2.jpg)
+
+**Figure 2.:** (a) The mean whole-brain control energy required to reach the fronto-parietal activation target declines with age. (b) Control energy declines significantly with age in the fronto-parietal, visual, motor and subcortical systems. In contrast, control energy increased in the ventral attention, default mode and limbic systems. For each system with a significant association, the effect size is reported (in each bar) as the partial correlation between system-level control energy and age while controlling for the covariates. There is one outlier in the scatter plot of ventral attention system (Figure 2—figure supplement 1c) and the age-related changes of control energy was not significant (p=0.11) in this system after removing the outlier. (c) The control energy of the fronto-parietal system declines significantly with age. (d) The age effect of control energy for each brain region. The color of the contour of each brain region represents the cognitive system for each region (see Figure 1—figure supplement 2). In the scatterplots shown in panels (a and c), data points represent each subject (n = 946), the bold line indicates the best fit from a general additive model, and the shaded envelope denotes the 95% confidence interval. It should be noted that Z value was derived from the general additive model, which captures both linear and nonlinear relationships; the partial correlation reflects only linear relationships. VS: visual; MT: motor; DA: dorsal attention; VA: ventral attention; LM: limbic; FP: fronto-parietal; DM: default mode; SC: subcortical.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The control energy of (a) visual, (b) motor, and (f) subcortical systems decline significantly with age, while that of (c) ventral attention, (d) limbic and (e) default mode systems increase significantly with age. There is one outlier in the scatter plot of ventral attention system and the age-related changes of control energy was not significant (p=0.11) in this system after removing the outlier. Data points represent each subject (n = 946), the bold line indicates the best fit from a general additive model, and the shaded envelope denotes the 95% confidence interval. There is one outlier in the scatter plot of ventral attention system (panel c) and the age-related changes of control energy was not significant (p=0.11) in this system after removing the outlier.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The effect size (i.e., partial correlation r) of the age effect of control energy at the whole-brain level and in the fronto-parietal system (a) with 100 different initial states, in which the activation value of regions in fronto-parietal follow the Gaussian distribution with a mean value of 0 and standard deviation of 0.1, and (b) with 100 different target states, in which the activation value of regions in fronto-parietal system follow the Gaussian distribution with a mean value of 1 and standard deviation of 0.1. (c) The distribution of the age effect of average control energy of whole-brain and fronto-parietal systems when using null model networks, which preserve the degree and strength distribution. The null networks were created by brain connectivity toolbox (Rubinov and Sporns, 2010). The red arrow indicates the actual age effect estimated using the data from the real brain network. (d), The whole-brain control energy cost to activate the fronto-parietal system when constraining the whole brain was highly significantly correlated with the energy cost when only the fronto-parietal system was constrained (r = 0.94, p<2 × 10−16). (e), Left: the energy required to reach a motor activation state was significantly higher for null networks than real networks. Right: the whole brain average control energy did not change over the age range studied.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** For each system with a significant association, the effect size is reported (in each bar) as the partial correlation between system-level control energy and age while controlling for the covariates. It should be noted that Z values reflect both linear and nonlinear relationships with age, while effect size is reported using a partial correlation, which reflects only linear relationships. VS: visual; MT: motor; DA: dorsal attention; VA: ventral attention; LM: limbic; FP: fronto-parietal; DM: default mode; SC: subcortical.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Alternative target state, defined by the 2-back >0-back contrast on the fractal n-back working memory task (see Satterthwaite et al., 2013). (b) As in the main results, the control energy cost to reach this alternative target state was significantly lower using data from real networks than null networks. (c) Using this alternative target state, the control energy cost was highest in the fronto-parietal system. (d) As in the main results, the mean whole-brain control energy declines with age. (e) Similarly, the control energy of the fronto-parietal system declines significantly with age. (f) Nodal analyses of associations between age and control energy provide convergent results.
 
 Having found associations between age and control energy, we next conducted a series of eight additional analyses. First, we found that our results held true for a range of baseline initial states and a range of fronto-parietal activation target states. When 100 different initial baseline states were evaluated, we found that in all cases both the whole brain and the fronto-parietal system showed a significant decline in control energy with age (Figure 2—figure supplement 2a). Similarly, when 100 different target states of fronto-parietal activation were evaluated, we found that in all cases both the whole-brain and the fronto-parietal system showed a significant decline in control energy with age (Figure 2—figure supplement 2b).
 
@@ -81,17 +117,29 @@ Seventh, we assessed whether connectivity within the fronto-parietal system or b
 
 Finally, in our main analyses, we specified the target state as regions within the fronto-parietal system, with each region having a magnitude of 1. As a final step, we also considered a biologically recorded target state defined as the average activation pattern elicited by an n-back working memory task that reliably recruits the fronto-parietal system (Figure 2—figure supplement 4a). Using this alternative target state, we found that the control energy cost of the real network was significantly lower than null networks (Figure 2—figure supplement 4b). As in the main analyses, the control energy cost was highest in the fronto-parietal system (Figure 2—figure supplement 4c). Similarly, the whole-brain average control energy cost (Z = −7.59, p=3.26 × 10−14, Partial r = −0.25, CI = [−0.30,–0.18]; Figure 2—figure supplement 4d) and average control energy in the fronto-parietal system (Z = −5.26, PFDR = 2.92 × 10−7, Partial r = −0.17, CI = [−0.23,–0.11]; Figure 2—figure supplement 4e) both significantly declined with age. Nodal analyses provided convergent results, revealing that the control energy in nodes within the fronto-parietal system significantly declined with age (Figure 2—figure supplement 4f).
 
-## Patterns of control energy can predict brain maturity
+### Patterns of control energy can predict brain maturity
 
-Having established that the control energy required to reach the fronto-parietal activation state changes with age on a regional and system-level basis using mass-univariate analysis, we next evaluated the developmental changes of control energy using multivariate pattern analysis. Multivariate pattern analysis complements mass-univariate analysis, as mass-univariate analysis investigates each feature (i.e., control energy of one brain region) in isolation. In contrast, multivariate pattern analyses are sensitive to the spatially distributed pattern of features (Davatzikos, 2004; Haynes, 2015; Haynes and Rees, 2006; Norman et al., 2006). To provide an integrated view of this high-dimensional data, we used multivariate pattern analysis to determine whether spatially distributed patterns of control energy could accurately predict participant age. Specifically, we applied ridge regression with nested two-fold cross validation (2F-CV, see Figure 3—figure supplement 1) to identify an individual participant’s age in an unbiased fashion using the multivariate pattern of regional control energy. Specifically, we divided all subjects into two subsets based on age, with the first subset used as a training set and the second subset used as a testing set. Within the training set, we used inner 2F-CV to select an optimal regularization parameter (λ). Then, we trained a model using the training data and predicted the brain maturity (i.e., ‘brain age’) of participants in the testing set (Dosenbach et al., 2010; Franke et al., 2010). The significance of the model was evaluated using permutation testing, where the correspondence between a subject’s control energy features and their age was permuted at random. This analysis revealed that the multivariate pattern of control energy could predict an unseen individual’s age (Figure 3a and Figure 3—figure supplement 2a and b): the correlation between the predicted ‘brain age’ and chronological age was 0.63 (p < 0.001) after controlling for the covariates, and the mean absolute error (MAE) was 2.16 years (p < 0.001). For completeness, we also repeated this procedure while reversing the training and test sets, which yielded very similar results (partial r = 0.58, p < 0.001; MAE = 2.27, p < 0.001; Figure 3a and Figure 3—figure supplement 2c and d). We further examined model weights at the level of individual network nodes. The regions that contributed the most to the prediction of brain maturity aligned with mass-univariate analyses, and included the dorsolateral and ventrolateral prefrontal cortex, the cingulate cortex, superior parietal cortex, and lateral temporal cortex (Figure 3b). In order to ensure that our initial split of the data was representative, we repeated this analysis with 100 random splits, which returned highly consistent results (mean partial r = 0.61, mean MAE = 2.21 years).
+Having established that the control energy required to reach the fronto-parietal activation state changes with age on a regional and system-level basis using mass-univariate analysis, we next evaluated the developmental changes of control energy using multivariate pattern analysis. Multivariate pattern analysis complements mass-univariate analysis, as mass-univariate analysis investigates each feature (i.e., control energy of one brain region) in isolation. In contrast, multivariate pattern analyses are sensitive to the spatially distributed pattern of features (Davatzikos, 2004; Haynes, 2015; Haynes and Rees, 2006; Norman et al., 2006). To provide an integrated view of this high-dimensional data, we used multivariate pattern analysis to determine whether spatially distributed patterns of control energy could accurately predict participant age. Specifically, we applied ridge regression with nested two-fold cross validation (2F-CV, see Figure 3—figure supplement 1) to identify an individual participant’s age in an unbiased fashion using the multivariate pattern of regional control energy. Specifically, we divided all subjects into two subsets based on age, with the first subset used as a training set and the second subset used as a testing set. Within the training set, we used inner 2F-CV to select an optimal regularization parameter ($\lambda$). Then, we trained a model using the training data and predicted the brain maturity (i.e., ‘brain age’) of participants in the testing set (Dosenbach et al., 2010; Franke et al., 2010). The significance of the model was evaluated using permutation testing, where the correspondence between a subject’s control energy features and their age was permuted at random. This analysis revealed that the multivariate pattern of control energy could predict an unseen individual’s age (Figure 3a and Figure 3—figure supplement 2a and b): the correlation between the predicted ‘brain age’ and chronological age was 0.63 (p < 0.001) after controlling for the covariates, and the mean absolute error (MAE) was 2.16 years (p < 0.001). For completeness, we also repeated this procedure while reversing the training and test sets, which yielded very similar results (partial r = 0.58, p < 0.001; MAE = 2.27, p < 0.001; Figure 3a and Figure 3—figure supplement 2c and d). We further examined model weights at the level of individual network nodes. The regions that contributed the most to the prediction of brain maturity aligned with mass-univariate analyses, and included the dorsolateral and ventrolateral prefrontal cortex, the cingulate cortex, superior parietal cortex, and lateral temporal cortex (Figure 3b). In order to ensure that our initial split of the data was representative, we repeated this analysis with 100 random splits, which returned highly consistent results (mean partial r = 0.61, mean MAE = 2.21 years).
 
-## Participants with higher executive function need less energy to activate the fronto-parietal network
+![Figure 3.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig3-v2.jpg)
+
+**Figure 3.:** (a) The predicted brain maturity index was significantly related to the chronological age in a multivariate ridge regression model that used 2-fold cross validation (2F-CV) with nested parameter tuning. The complete sample of of subjects was divided into two subsets according to age rank. The blue color represents the best-fit line between the actual score of the first subset of subjects and their scores predicted by the model trained using the second subset of subjects. The green color represents the best-fit line between the actual score of the second subset of subjects and their scores predicted by the model trained using the first subset of subjects. (b) Regions with the highest contribution to the multivariate model aligned with mass-univariate analyses and included frontal, parietal, and temporal regions. We displayed the 79 regions with the highest contribution, to facilitate comparisons with mass-univariate analyses (where there were 79 regions with significant age effects).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** All subjects were divided into 2 halves according to age rank, with the first half used as a training set and the second half used as a testing set. Each feature was linearly scaled between zero and one across the training dataset, and the scaling parameters were also applied to scale the testing dataset. An inner 2F-CV was applied within training set to select the optimal $\lambda$ parameter. Based on the optimal $\lambda$, we trained a model using all subjects in the training set, and then used that model to predict the age of all subjects in the testing set.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The red arrow represents the actual prediction accuracy (i.e., r or MAE). The actual correlation r was significantly higher than expected by chance (p<0.001) and the actual MAE was significantly lower than expected by chance (p<0.001).
+
+### Participants with higher executive function need less energy to activate the fronto-parietal network
 
 Lastly, we investigated the cognitive implications of individual differences in control energy. Specifically, we expected that participants with higher executive performance on a standardized cognitive battery would require reduced control energy to activate the fronto-parietal system. In order to ensure that associations were present above and beyond the observed developmental effects, we controlled for linear and nonlinear effects of age in addition to the other covariates described above. While we did not find effects at the whole-brain or systems level, two regions survived after FDR correction at nodal level. Specifically, reduced control energy within two regions in the fronto-parietal control system -- the left and right middle cingulate cortex -- was associated with higher executive function (Left: Z = −3.65, PFDR = 0.032, Partial r = −0.13, CI = [−0.19–0.06]; Right: Z = −4.49, PFDR = 0.002, Partial r = −0.15, CI = [−0.21–0.08]; Figure 4a and b).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/53060/elife-53060-fig4-v2.jpg)
 
-**Figure 4.:** a, left and b, right mid-cingulate cortex was associated with higher executive performance.Of all brain regions examined, only the left and right mid-cingulate cortex survived FDR correction. Data points represent each subject (n = 944), the bold line indicates the best linear fit, and the shaded envelope denotes the 95% confidence interval.The yellow color indicates that the two regions belong to the fronto-parietal system (Figure 1—figure supplement 2). The control energy of both (c) left and (d) right mid-cingulate cortex partially mediates the improvement of executive function with age. Significance of mediation effect was assessed using bootstrapped confidence intervals.
+**Figure 4.:** Of all brain regions examined, only the left and right mid-cingulate cortex survived FDR correction. Data points represent each subject (n = 944), the bold line indicates the best linear fit, and the shaded envelope denotes the 95% confidence interval.The yellow color indicates that the two regions belong to the fronto-parietal system (Figure 1—figure supplement 2). The control energy of both (c) left and (d) right mid-cingulate cortex partially mediates the improvement of executive function with age. Significance of mediation effect was assessed using bootstrapped confidence intervals.
 
 Given that control energy reflects the topology of diffusion network (Kim et al., 2018) and prior study showed that diffusion network properties mediated the age-related development of executive function (Baum et al., 2017), we conducted mediation analyses to investigate the extent to which control energy accounted for the association between age and executive function. Using a bootstrapped mediation analysis while adjusting for the covariates described above (See Materials and methods), we found that control energy in both the left (β = 0.03, p=0.001, 95% confidence interval = [0.01, 0.04]; Figure 4c) and right middle cingulate cortex (β = 0.03, p<0.001, 95% confidence interval = [0.02, 0.05]; Figure 4d) mediated the development of executive function with age.
 
@@ -125,97 +173,193 @@ These potential limitations notwithstanding, we demonstrated that the topologica
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 All subjects or their parent/guardian provided informed consent, and minors provided assent. The Institutional Review Boards of both Penn and CHOP approved study procedures. Overall, 1601 participants were enrolled (Satterthwaite et al., 2014). However, 340 subjects were excluded owing to clinical factors including medical disorders that could affect brain function, current use of psychoactive medications, prior inpatient psychiatric treatment, or an incidentally encountered structural brain abnormality. Among the 1261 subjects eligible for inclusion, 54 subjects were excluded for a low quality T1-weighted image or errors in the FreeSurfer reconstruction. Of the remaining 1207 subjects with a usable T1 image, 128 subjects were excluded because of the lack of a complete diffusion scan. Of the 1079 subjects with complete diffusion data, 110 subjects failed quality assurance as part a rigorous quality assurance protocol for diffusion MRI (Roalf et al., 2016). Additionally, 20 subjects were excluded because they had no field map for distortion correction. Finally, of the remaining 949 subjects, three subjects were excluded due to incomplete image coverage during brain parcellation, yielding a final sample of 946 participants (Figure 1—figure supplement 1).
 
-## Cognitive assessment
+### Cognitive assessment
 
 The Penn computerized neurocognitive battery (Penn CNB) was administered to all participants during a separate session from neuroimaging. The CNB consists of 14 tests adapted from tasks applied in functional neuroimaging to evaluate a broad range of cognitive domains (Gur et al., 2012). These domains include executive control (abstraction and mental flexibility, attention, working memory), episodic memory (verbal, facial, spatial), complex cognition (verbal reasoning, nonverbal reasoning, spatial processing), social cognition (emotion identification, emotion differentiation, age differentiation) and sensorimotor and motor speed. Accuracy and speed for each test were z-transformed and summarized into an efficiency score. A factor analysis was used to summarize these efficiency scores into four factors (Moore et al., 2015), including executive function, complex reasoning, memory, and social cognition. Here, we focused on the executive function factor score. Of the sample of 946 participants with complete imaging data that passed quality assurance, two participants had incomplete cognitive data. Accordingly, 944 participants were used in the analysis examining the association between cognition and control energy.
 
-## Image acquisition
+### Image acquisition
 
 As previously described (Satterthwaite et al., 2014), all MRI scans were acquired on the same 3T Siemens Tim Trio whole-body scanner and 32-channel head coil at the Hospital of the University of Pennsylvania.
 
-## Structural MRI
+#### Structural MRI
 
 Prior to dMRI acquisitions, a 5 min magnetization-prepared, rapid acquisition gradient-echo T1-weighted (MPRAGE) image (TR = 1810 ms; TE = 3.51 ms; FOV = 180 × 240 mm2, matrix = 192 × 256, effective voxel resolution = 0.9 × 0.9×1 mm3) was acquired. This high-resolution structural image was used for tissue segmentation and parcellating gray matter into anatomically defined regions in native space.
 
-## Diffusion MRI
+#### Diffusion MRI
 
 Diffusion MRI scans were acquired using a twice-refocused spin-echo (TRSE) single-shot echo-planar imaging (EPI) sequence (TR = 8100 ms; TE = 82 ms; FOV = 240 mm2/240 mm2; Matrix = RL:128, AP:128; Slices: 70, in-plane resolution (x and y) 1.875 mm2; slice thickness = 2 mm, gap = 0; flip angle = 90/180/180; volumes = 71; GRAPPA factor = 3; bandwidth = 2170 Hz/pixel; PE direction = AP). This sequence used a four-lobed diffusion encoding gradient scheme combined with a 90-180-180 spin-echo sequence designed to minimize eddy-current artifacts. For dMRI acquisition, a 64-direction set was divided into two independent 32-direction imaging runs in order to ensure that the scan duration was more tolerable for young subjects. Each 32-direction sub-set was chosen to be maximally independent such that they separately sampled the surface of a sphere (Jones et al., 2002). The complete sequence consisted of 64 diffusion-weighted directions with b = 1000 s/mm2 and 7 interspersed scans where b = 0 s/mm2. The total duration of dMRI scans was approximately 11 min. The imaging volume was prescribed in axial orientation covering the entire cerebrum with the topmost slice just superior to the apex of the brain (Satterthwaite et al., 2014).
 
-## N-back task fMRI
+#### N-back task fMRI
 
 Blood oxygen level-dependent fMRI was acquired using a whole-brain, single-shot, multislice, gradient-echo echoplanar sequence with the following parameters: 231 volumes; TR = 300 ms; TE = 32 ms; flip angle = 90; FOV = 192 × 192 mm; matrix = 64 × 64; 46 slices; slice thickness/gap = 3/0 mm; effective voxel resolution = 3 × 3×3 mm.
 
-## Field map
+#### Field map
 
 In addition, a B0 field map was derived for application of distortion correction procedures, using following the double-echo, gradient-recalled echo (GRE) sequence: TR = 1000 ms; TE1 = 2.69 ms; TE2 = 5.27 ms; 44 slices; slice thickness/gap = 4/0 mm; FOV = 240 mm; effective voxel resolution = 3.8 × 3.8×4 mm.
 
-## Scanning procedure
+#### Scanning procedure
 
 Before scanning, to acclimate subjects to the MRI environment, a mock scanning session where subjects practiced the task was conducted using a decommissioned MRI scanner and head coil. Mock scanning was accompanied by acoustic recordings of the noise produced by gradient coils for each scanning pulse sequence. During these sessions, feedback regarding head movement was provided using the MoTrack motion tracking system (Psychology Software Tools). Motion feedback was given only during the mock scanning session. To further minimize motion, before data acquisition, subjects’ heads were stabilized in the head coil using one foam pad over each ear and a third over the top of the head.
 
-## Image processing
+### Image processing
 
-## Structural image processing and network node definition
+#### Structural image processing and network node definition
 
 The structural image was processed using FreeSurfer (version 5.3) (Fischl, 2012), and cortical and subcortical gray matter was parcellated in native structural space according to the Lausanne atlas (Cammoun et al., 2012), which includes whole-brain sub-divisions of the Desikan-Killany anatomical atlas (Desikan et al., 2006) at multiple spatial scales. The acquired 233-region gray matter parcellation of each subject was dilated by 2 mm and then masked by the boundary of each subject’s white matter segmentation (Baum et al., 2018). Once defined for each subject, the structural parcellation atlas was co-registered to the first b = 0 vol of each subject’s diffusion image using boundary-based registration (Greve and Fischl, 2009). These parcels were then used as nodes for brain network construction. The left lateral occipital parcel was missing in 18 subjects and therefore was removed from analyses, yielding 232 brain regions that were present in all participants.
 
-## Diffusion image pre-processing
+#### Diffusion image pre-processing
 
 FSL was used for diffusion data processing (Jenkinson et al., 2012; Smith et al., 2004). The two consecutive 32-direction acquisitions were merged into a single 64-direction time series. In-scanner head motion and the total network strength were used as covariates in this study. Specifically, in-scanner head motion was measured by the mean relative volume-to-volume displacement between the higher SNR b = 0 images (n = 7), which summarizes the total translation and rotation in 3-dimensional Euclidean space (Baum et al., 2018; Roalf et al., 2016). A mask in subject diffusion space was defined by registering a binary mask of a standard fractional anisotropy (FA) map (FMRIB58 FA) to each subject’s dMRI reference image (mean b = 0) using FSL FLIRT. This mask was provided as input to FSL eddy in addition to the non-brain extracted dMRI image. Eddy currents and subject motion were estimated and corrected using the FSL eddy tool (version 5.0.5: [Andersson and Sotiropoulos, 2016]). This procedure uses a Gaussian Process to simultaneously model the effects of eddy currents and head motion on diffusion-weighted volumes, resampling the data only once. Diffusion gradient vectors were also rotated to adjust for subject motion estimated by eddy (Leemans and Jones, 2009). After the field map was estimated, distortion correction was then applied to dMRI images using FSL’s FUGUE utility.
 
-## Probabilistic tractography and network construction
+#### Probabilistic tractography and network construction
 
 We first fitted a ball-and-sticks diffusion model for each subject’s dMRI data with FSL bedpostx, which uses Markov chain Monte Carlo sampling to build distributions on principal fiber orientation and diffusion parameters at each voxel (Behrens et al., 2007). Probabilistic tractography was run using FSL probtrackx, which repetitively samples voxel-wise fiber orientation distributions to model the spatial trajectory and strength of anatomical connectivity between specified seed and target regions (Behrens et al., 2007).
 
 Each cortical and subcortical region defined along the gray-white boundary was selected as a seed region, and its connectivity strength to each of the other 231 regions was calculated using probabilistic tractography. At each seed voxel, 1000 samples were initiated. We used the default tracking parameters (a step-length of 0.5 mm, 2000 steps maximum, curvature threshold of 0.02). To increase the biological plausibility of white matter pathways reconstructed with probabilistic tractography, streamlines were terminated if they traveled through the pial surface, and discarded if they traversed cerebro-spinal fluid (CSF) in ventricles or re-entered the seed region (Baum et al., 2018). The connection probability from the seed voxel i to another voxel j was defined by the number of fibers passing through voxel j divided by the total number of fibers that were not rejected by exclusion criteria sampled from voxel i. For a seed cortical region, 1,000 × n fibers were sampled (1000 fibers per voxel), where n is the number of voxels in this region. The number of fibers passing through a given region divided by 1,000 × n is calculated as the connectivity probability from the seed region to this given region. Therefore, a 232*232 connection probability matrix was created for each subject. Notably, the probability from region i to region j is not necessarily equivalent to the one from region j to region i due to the dependence of tractography on the seeding location. Thus, we defined the unidirectional connectivity probability Pij between region i and region j by averaging these two probabilities (Baum et al., 2018; Gong et al., 2009a).
 
-## Defining a priori network modules
+### Defining a priori network modules
 
 Each of the 232 nodes in our network was assigned to a standard set of 7 functional systems originally defined by Yeo et al. (2011) in a whole-brain clustering analysis. To make this assignment, we calculated the purity index for the 7-system parcellation and brain regions from the Lausanne 232 parcellation atlas as in prior work (Baum et al., 2017). This measure quantifies the maximum overlap of cortical Lausanne labels and functional systems defined by Yeo et al. (2011). Each cortical Lausanne label was assigned to a functional system by calculating the non-zero mode of all voxels in each brain region (Figure 1—figure supplement 2). Subcortical regions were assigned to an eighth, subcortical module.
 
-## Control analysis
+### Control analysis
 
-We investigated how a structural brain network composed of white matter fiber tracts constrains the brain in transitioning from a baseline state (i.e., 1 × 232 zero vector) to a fronto-parietal activation state, which was defined as regions in the fronto-parietal system that had activity magnitude equal to one while other regions had activity magnitude equal to 0. According to previous studies (Betzel et al., 2016; Gu et al., 2017; Kim et al., 2018; Stiso et al., 2019), we employed a simplified noise-free linear continuous-time and time-invariant network model:(1)x˙(t)=Ax(t)+Bu(t)
+We investigated how a structural brain network composed of white matter fiber tracts constrains the brain in transitioning from a baseline state (i.e., 1 × 232 zero vector) to a fronto-parietal activation state, which was defined as regions in the fronto-parietal system that had activity magnitude equal to one while other regions had activity magnitude equal to 0. According to previous studies (Betzel et al., 2016; Gu et al., 2017; Kim et al., 2018; Stiso et al., 2019), we employed a simplified noise-free linear continuous-time and time-invariant network model:
+
+$$
+x˙(t)=Ax(t)+Bu(t)
+$$
 
 Here, x(t) is a 1 × N vector that represents the brain state at a given time, where N is the number of ROIs (N = 232). The initial sate x(0) is a 1 × 232 zero vector, and the target state xT is a 1 × 232 vector of fronto-parietal activation. The matrix A encodes the connection probability weighted network, where A has been scaled by its largest eigenvalue and had the identity matrix subtracted to assure that it is stable (Betzel et al., 2016; Gu et al., 2017; Karrer et al., 2020; Stiso et al., 2019). The matrix B is a N × N input matrix that identifies the nodes in the control set. Here, B is an identity matrix because all 232 regions in the whole brain were control nodes. The input u(t) denotes the control energy injected for each node at a given time.
 
 This work aims to model the control process necessary to activate the fronto-parietal system, which is critical to executive function. We set the baseline state to zero, because we sought to model the contrast in activation between an executive task and the resting state. This comparison is motivated by a long history of task fMRI experiments that explicitly contrast executive tasks to the resting state, resulting in robust activation of the fronto-parietal cortex (Cohen et al., 1997; Forsyth et al., 2014; Nagel et al., 2009; Ragland et al., 2002; Rowe et al., 2000). We set the values of regions in the fronto-parietal system to one to represent the fact that these regions were activated.
 
-We were interested in a control task where the system transitions from initial state x(0) to target state xT with minimum-energy input, which is an optimal control problem. We first defined a cost function as the weighted sum of the energy cost of the transition and the integrated squared distance between the transition states and the target state.(2)minu∫0T(xT−x(t))TS(xT−x(t))+ρu(t)Tu(t)dt,s.t. x˙(t)=Ax(t)+Bu(t), x(0)= x0, and x(T)=xT,where xT is the target state, (xT-x(t))T(xT-x(t)) is the distance between the state at time t and the target state xT, T is a free parameter that defines the finite amount of time given to reach the target state, and ρ is a free parameter that weights the energy constraint. Because the time of each step was defined as 0.001, there were 1,000 steps from initial to target state if we set T=1. S is 0-1 diagonal matrix of size N×N that selects only the nodes that we wish to control. Here, we only constrain the activity of the fronto-parietal system. Specially, (xT-x(t))TS(xT-x(t))  constrains the trajectories of all nodes in fronto-parietal system by preventing the system from traveling too far from the target state, and utTu(t)  constrains the amount of energy used to reach the target state.
+We were interested in a control task where the system transitions from initial state x(0) to target state xT with minimum-energy input, which is an optimal control problem. We first defined a cost function as the weighted sum of the energy cost of the transition and the integrated squared distance between the transition states and the target state.
 
-To compute an optimal u* that induces a transition from the initial state x(0) to the target state xT, we define a Hamiltonian as:(3) H(p, x, u, t) = xT-xTS(xT-x)+ρuTu+p(Ax+Bu)
+$$
+minu\int_{0}^{T}(x_{T}−x(t))^{T}S(x_{T}−x(t))+ρu(t)^{T}u(t)dt,s.t. x˙(t)=Ax(t)+Bu(t), x(0)= x_{0}, and x(T)=x_{T},
+$$
 
-From the Pontryagin minimum principle (Boltyanskii et al., 1960), if u* is a solution to the minimization problem with corresponding trajectory x*, then there exists p* such that:(4)∂H∂x=−2S(xT−x∗)+ATp∗=−p∗˙,(5)∂H∂u=2ρu∗+ BTp∗=0.
+where xT is the target state, $(x_{T}-x(t))^{T}(x_{T}-x(t))$ is the distance between the state at time t and the target state xT, T is a free parameter that defines the finite amount of time given to reach the target state, and $ρ$ is a free parameter that weights the energy constraint. Because the time of each step was defined as 0.001, there were 1,000 steps from initial to target state if we set T=1. S is 0-1 diagonal matrix of size N×N that selects only the nodes that we wish to control. Here, we only constrain the activity of the fronto-parietal system. Specially, $(x_{T}-x(t))^{T}S(x_{T}-x(t))$ constrains the trajectories of all nodes in fronto-parietal system by preventing the system from traveling too far from the target state, and $ut^{T}u(t)$ constrains the amount of energy used to reach the target state.
 
-From Equation (5) and Equation (1), we derive that(6)u∗=−12ρBTp∗,(7)x˙∗=Ax∗−12ρBBTp∗.
+To compute an optimal u* that induces a transition from the initial state x(0) to the target state xT, we define a Hamiltonian as:
 
-Then, we rewrite Equations (4) and (7) as(8)[x˙∗p˙∗]=[A−12ρBBT−2S−AT][x∗p∗]+[02S]xT,
+$$
+H(p,x,u,t)=x_{T}-x^{T}S(x_{T}-x)+ρu^{T}u+p(Ax+Bu)
+$$
 
-We denote:A~=[A−12ρBBT−2S−AT],x~=[x∗p∗],b~=[02S]xT,
+From the Pontryagin minimum principle (Boltyanskii et al., 1960), if u* is a solution to the minimization problem with corresponding trajectory x*, then there exists p* such that:
 
-Then, Equation (8) can be reduced as:x~˙=A~x~+b~,
+$$
+\frac{∂H}{∂x}=−2S(x_{T}−x^{∗})+A^{T}p^{∗}=−p^{∗}˙,
+$$
 
-Which can be solved as:(9)x~(t)=eA~tx~(0)+A~−1(eA~t−I)b~.
 
-Then, by fixing t = T, we rewrote Equation (9) as(10)x~(T)=eA~Tx~(0)+A~−1(eA~T−I)b~.
 
-Letc=A~−1(eA~T−I)b~,eAT~=[E11E12E21E22].
+$$
+\frac{∂H}{∂u}=2ρu^{∗}+ B^{T}p^{∗}=0.
+$$
 
-We can then rewrite Equation (10) as:[x∗(T)p∗(T)]=[E11E12E21E22][x∗(0)p∗(0)]+[c1c2],from which we can obtain       x*T=E11x*0+E12p*0+c1,which can be rearranged to         p*0=E12-1x*T-E11x*0-c1.
+From Equation (5) and Equation (1), we derive that
 
-Now that we have obtained p*(0), we can use it and x(0) to solve for x~ via forward integration according to Equation (9). To solve for u*, we take p* from our solution of x~ and plug it into Equation (6).
+$$
+u^{∗}=−\frac{1}{2ρ}B^{T}p^{∗},
+$$
 
-To quantify differences in trajectories, and the ease of controlling the system, we calculated a single measure of energy for every trajectory. Particularly, the energy of each control node i was defined as:Ei=∫t=0Tui*t2.
 
-## Comparison to null model network
+
+$$
+x˙^{∗}=Ax^{∗}−\frac{1}{2ρ}BB^{T}p^{∗}.
+$$
+
+Then, we rewrite Equations (4) and (7) as
+
+$$
+[x˙^{∗}p˙^{∗}]=[A−\frac{1}{2ρ}BB^{T}−2S−A^{T}][x^{∗}p^{∗}]+[02S]x^{T},
+$$
+
+We denote:
+
+$$
+A~=[A−\frac{1}{2ρ}BB^{T}−2S−A^{T}],
+$$
+
+
+
+$$
+x~=[x^{∗}p^{∗}],
+$$
+
+
+
+$$
+b~=[02S]x_{T},
+$$
+
+Then, Equation (8) can be reduced as:
+
+$$
+x~˙=A~x~+b~,
+$$
+
+Which can be solved as:
+
+$$
+x~(t)=e^{A~t}x~(0)+A~^{−1}(e^{A~t}−I)b~.
+$$
+
+Then, by fixing t = T, we rewrote Equation (9) as
+
+$$
+x~(T)=e^{A~T}x~(0)+A~^{−1}(e^{A~T}−I)b~.
+$$
+
+Let
+
+$$
+c=A~^{−1}(e^{A~T}−I)b~,
+$$
+
+
+
+$$
+e^{AT~}=[E_{11}E_{12}E_{21}E_{22}].
+$$
+
+We can then rewrite Equation (10) as:
+
+$$
+[x^{∗}(T)p^{∗}(T)]=[E_{11}E_{12}E_{21}E_{22}][x^{∗}(0)p^{∗}(0)]+[c_{1}c_{2}],
+$$
+
+from which we can obtain
+
+$$
+x^{*}T=E_{11}x^{*}0+E_{12}p^{*}0+c_{1},
+$$
+
+which can be rearranged to
+
+$$
+p^{*}0=E_{12}^{-1}x^{*}T-E_{11}x^{*}0-c_{1}.
+$$
+
+Now that we have obtained p*(0), we can use it and x(0) to solve for $x~$ via forward integration according to Equation (9). To solve for $u^{*}$, we take p* from our solution of $x~$ and plug it into Equation (6).
+
+To quantify differences in trajectories, and the ease of controlling the system, we calculated a single measure of energy for every trajectory. Particularly, the energy of each control node i was defined as:
+
+$$
+E_{i}=\int_{t=0}^{T}u_{i}^{*}t^{2}.
+$$
+
+### Comparison to null model network
 
 In order to determine whether the topology of brain networks specifically facilitated transitions to the fronto-parietal activation target state, we compared the energetic cost to that of null model networks. Specifically, for each participant we constructed 100 null model networks where the degree and strength distribution was preserved (Rubinov and Sporns, 2010). We compared the control energy cost of the transition to the fronto-parietal activation target state estimated from the empirical networks to the average energy cost estimated in these null networks using a paired t-test.
 
-## Statistical analyses of developmental and cognition effects
+### Statistical analyses of developmental and cognition effects
 
 Prior studies demonstrated that the developmental changes of brain structure and function could be either linear (Hagmann et al., 2010; Wierenga et al., 2016) or non-linear (Grayson and Fair, 2017; Mills et al., 2016; Vandekar et al., 2015). Accordingly, for our developmental analyses we used generalized additive models (GAMs) in order to simultaneously model linear and nonlinear relationships with age using penalized splines (Wood, 2004). We evaluated associations between control energy and age at multiple resolutions, including the whole brain, cognitive systems, and network nodes. Similarly, we evaluated associations between control energy and executive performance while controlling for age. For all models, we included sex, handedness, total brain volume, total network strength, and in-scanner head motion during the diffusion scan as model covariates. Multiple comparisons were accounted for using the False Discovery Rate (q < 0.05). For developmental effect of control energy, the GAM model was:
 
@@ -223,47 +367,57 @@ We used the gam command in the R package ‘mgcv’ to implement the model. The 
 
 Furthermore, for regions that displayed the associations between control energy and both age and cognition, we evaluated whether regional control energy might mediate the relationship between age and executive function. Specifically, we regressed out the effects of nuisance covariates (i.e., sex, handedness, total brain volume, total network strength, and in-scanner head motion) on the independent (X, age), dependent (Y, executive efficiency) and mediating (M, control energy) variables using a linear model. The resultant normalized residuals were used in our mediation analysis. We then evaluated the significance of the indirect effect using bootstrapped confidence intervals within the R package lavaan. Then, we examined: 1) path c: the total effect of age on executive performance; 2) path a: the relationship between age and the control energy; 3) path b: the relationship between control energy and executive performance; and 4) path c’: the age effect of executive function controlling for the mediator/control energy. The mediation/indirect effect a*b is the effect size of the relationship between age and executive performance that was reduced after controlling for the mediator/control energy. For each path, we calculated the beta coefficient, which reflected the changes of the outcome for every one-unit change in the predictor. A bootstrap analysis (i.e., resampled 10,000 times) was implemented to estimate the confidence intervals for the indirect effect.
 
-## Prediction of brain maturity from the pattern of control energy
+### Prediction of brain maturity from the pattern of control energy
 
 As a complement to the mass-univariate analyses described above, we also sought to predict individual brain maturity using the multivariate pattern of control energy (Dosenbach et al., 2010; Erus et al., 2015; Franke et al., 2012). We used ridge regression with nested two-fold cross validation (2F-CV).
 
-## Ridge regression
+#### Ridge regression
 
-A linear regression model was adopted to predict brain maturity using the pattern of whole-brain control energy. The linear model can be formalized as follows:yi=∑j=1pβjxi,j+β0,where yi is the age of the ith individual, p is the number of features, xi,j is the value of the jth feature of the ith subject, and βj is the regression coefficient.
+A linear regression model was adopted to predict brain maturity using the pattern of whole-brain control energy. The linear model can be formalized as follows:
 
-To avoid over-fitting and to improve the prediction accuracy, we applied ridge regression (Cui and Gong, 2018; Hoerl and Kennard, 1970; Siegel et al., 2016), which used an L2 penalty during model fitting. The objective function is:min β⁡∑i=1N(f(xi)-yi)2 + λ∑j=1p||βj||2.
+$$
+y_{i}=\sumj=1p\beta_{j}x_{i,j}+\beta_{0},
+$$
 
-This technique shrinks the regression coefficients, resulting in better generalizability for predicting unseen samples. In this algorithm, a regularization parameter λ is used to control the trade-off between the prediction error of the training data and L2-norm regularization, i.e., a trade-off of penalties between the training error and model complexity. A large λ corresponds to a greater penalty on model complexity, and a small λ represents a greater penalty on training error. Compared with the traditional ordinary least squares regression, ridge regression is less impacted by multicollinearity and can avoid over-fitting (Cui and Gong, 2018).
+where yi is the age of the ith individual, p is the number of features, xi,j is the value of the jth feature of the ith subject, and βj is the regression coefficient.
 
-## Prediction framework
+To avoid over-fitting and to improve the prediction accuracy, we applied ridge regression (Cui and Gong, 2018; Hoerl and Kennard, 1970; Siegel et al., 2016), which used an L2 penalty during model fitting. The objective function is:
 
-See Figur 3—figure supplement 1 for the schematic overview of the prediction framework. Specifically, we applied a nested 2-fold cross validation (2F-CV), with outer 2F-CV estimating the generalizability of the model and the inner 2F-CV determining the optimal parameter λ for the ridge regression model.
+$$
+min \beta⁡\sumi=1N(f(x_{i})-y_{i})^{2}+\lambda\sumj=1p||\beta_{j}||^{2}.
+$$
 
-## Outer 2F-CV
+This technique shrinks the regression coefficients, resulting in better generalizability for predicting unseen samples. In this algorithm, a regularization parameter $\lambda$ is used to control the trade-off between the prediction error of the training data and L2-norm regularization, i.e., a trade-off of penalties between the training error and model complexity. A large $\lambda$ corresponds to a greater penalty on model complexity, and a small $\lambda$ represents a greater penalty on training error. Compared with the traditional ordinary least squares regression, ridge regression is less impacted by multicollinearity and can avoid over-fitting (Cui and Gong, 2018).
 
-In the outer 2F-CV, all subjects were divided into 2 subsets. Specifically, we sorted the subjects according to their age and then assigned the individuals with an odd rank to subset 1 and the individuals with an even rank to subset 2 (Cui and Gong, 2018; Cui et al., 2018). We first used subset 1 as a training set, and we used subset 2 as a testing set. Each feature was linearly scaled between zero and one across the training dataset, and the scaling parameters were also applied to scale the testing dataset (Cui and Gong, 2018; Cui et al., 2018). We applied an inner 2-fold cross validation (2F-CV) within training set to select the optimal λ parameter. Based on the optimal λ, we trained a model using all subjects in the training set, and then used that model to predict the age of all subjects in the testing set. Analogously, we used subset 2 as a training set and subset 1 as a testing set, and repeated the above procedure. Across the testing subjects for each fold, the correlation and mean absolute error (MAE) between the predicted and actual age was used to quantify the prediction accuracy. Here, we used the scikit-learn library to implement ridge regression (http://scikit-learn.org) (Pedregosa et al., 2011).
+#### Prediction framework
 
-## Inner 2F-CV
+See Figur 3—figure supplement 1 for the schematic overview of the prediction framework. Specifically, we applied a nested 2-fold cross validation (2F-CV), with outer 2F-CV estimating the generalizability of the model and the inner 2F-CV determining the optimal parameter $\lambda$ for the ridge regression model.
 
-Within each loop of the outer 2F-CV, we applied inner 2F-CVs to determine the optimal λ. Specially, the training set for each loop of the outer 2F-CV was further partitioned into 2 subsets according to their rank of the age, as like the outer loop (i.e., subjects with odd rank in subset 1 and subjects with even rank in subset 2). One subset was selected to train the model under a given λ in the range [2−10, 2−9,..., 24, 25] (i.e., 16 values in total) (Cui and Gong, 2018), and the remaining subset was used to test the model. This procedure was repeated 2 times such that each subset was used once as the testing dataset, resulting in 2 inner 2F-CV loops in total. For each inner 2F-CV loop, the correlation r between the actual and predicted age and the mean absolute error (MAE) were calculated for each λ, and averaged over each fold. The sum of the mean correlation r and reciprocal of the mean MAE was defined as the inner prediction accuracy, and the λ with the highest inner prediction accuracy was chosen as the optimal λ  (Cui and Gong, 2018; Cui et al., 2018). Of note, the mean correlation r and the reciprocal of the mean MAE cannot be summed directly, because the scales of the raw values of these two measures are quite different. Therefore, we normalized the mean correlation r and the reciprocal of the mean MAE across all values and then summed the resultant normalized values.
+##### Outer 2F-CV
 
-## Evaluation of generalizability
+In the outer 2F-CV, all subjects were divided into 2 subsets. Specifically, we sorted the subjects according to their age and then assigned the individuals with an odd rank to subset 1 and the individuals with an even rank to subset 2 (Cui and Gong, 2018; Cui et al., 2018). We first used subset 1 as a training set, and we used subset 2 as a testing set. Each feature was linearly scaled between zero and one across the training dataset, and the scaling parameters were also applied to scale the testing dataset (Cui and Gong, 2018; Cui et al., 2018). We applied an inner 2-fold cross validation (2F-CV) within training set to select the optimal $\lambda$ parameter. Based on the optimal $\lambda$, we trained a model using all subjects in the training set, and then used that model to predict the age of all subjects in the testing set. Analogously, we used subset 2 as a training set and subset 1 as a testing set, and repeated the above procedure. Across the testing subjects for each fold, the correlation and mean absolute error (MAE) between the predicted and actual age was used to quantify the prediction accuracy. Here, we used the scikit-learn library to implement ridge regression (http://scikit-learn.org) (Pedregosa et al., 2011).
+
+##### Inner 2F-CV
+
+Within each loop of the outer 2F-CV, we applied inner 2F-CVs to determine the optimal $\lambda$. Specially, the training set for each loop of the outer 2F-CV was further partitioned into 2 subsets according to their rank of the age, as like the outer loop (i.e., subjects with odd rank in subset 1 and subjects with even rank in subset 2). One subset was selected to train the model under a given $\lambda$ in the range [2−10, 2−9,..., 24, 25] (i.e., 16 values in total) (Cui and Gong, 2018), and the remaining subset was used to test the model. This procedure was repeated 2 times such that each subset was used once as the testing dataset, resulting in 2 inner 2F-CV loops in total. For each inner 2F-CV loop, the correlation r between the actual and predicted age and the mean absolute error (MAE) were calculated for each $\lambda$, and averaged over each fold. The sum of the mean correlation r and reciprocal of the mean MAE was defined as the inner prediction accuracy, and the $\lambda$ with the highest inner prediction accuracy was chosen as the optimal $\lambda$ (Cui and Gong, 2018; Cui et al., 2018). Of note, the mean correlation r and the reciprocal of the mean MAE cannot be summed directly, because the scales of the raw values of these two measures are quite different. Therefore, we normalized the mean correlation r and the reciprocal of the mean MAE across all values and then summed the resultant normalized values.
+
+##### Evaluation of generalizability
 
 The correlation and mean absolute error (MAE) between the predicted ‘brain age’ and chronological age was used to quantify the degree to which the model captured the development trajectory of the brain. Particularly, when we calculated the correlation, we controlled sex, handedness, total brain volume, total network strength, and in-scanner head motion.
 
-## Interpreting the model
+##### Interpreting the model
 
 In a linear prediction model such as ridge regression, one weight/regression coefficient was assigned for each feature/brain region. We trained a prediction model using all the samples and acquired a weight vector w. According to Haufe et al. (2014); Waskom and Wagner (2017), we left multiplied the model weight vector w by the data covariance matrix ∑X, which was formulized as a = ∑X· w. The transformed weight vector a was a distributed pattern quantifying the contribution of each brain region in the multivariate ridge prediction. The absolute value of the transformed weight represents the importance of the corresponding feature in a prediction (Haufe et al., 2014; Mourão-Miranda et al., 2005).
 
-## Randomly split 2F-CV
+##### Randomly split 2F-CV
 
 In the above prediction analysis, we split subjects into two halves according to their age rank. For completeness, we also split the subjects randomly into two halves for both outer 2F-CV and inner 2F-CV, and calculated the mean partial correlation r and MAE across two folds. Because the split is random, we repeated this procedure 100 times and averaged the partial correlation and MAE across the 100 times to acquire the final prediction accuracy.
 
-## Specificity and sensitivity analysis
+### Specificity and sensitivity analysis
 
 We conducted several additional supplementary analyses to assess the sensitivity and specificity of our results. First, in order to evaluate the robustness of our results to variation in target states, we additionally generated 100 new initial states and 100 new target states with noise added. In this distribution of initial states, the activation value of regions in the fronto-parietal system is Gaussian with a mean value of 0 and a standard deviation of 0.1, while in the distribution of target states, the activation value of regions in the fronto-parietal system is Gaussian with a mean value of 1 and a standard deviation of 0.1. Second, to ensure the observed associations with age were driven by the topological structure of real brain networks, we tested whether age effects existed using null networks that preserved the degree and strength distribution. We created 100 null networks and calculated the one-tailed P value for effect size of whole-brain and fronto-parietal system, which was the portion of null networks that showed a lower negative effect size value than the actual value for the real network. Third, we assessed whether the structural network also contributed to other cognitive functions as well by comparing the control energy cost required to reach a motor activation state for real networks and null networks. We further evaluated the age effects of control energy cost needed to activate the motor system.
 
-Fourth, the present work explored a specific transition of the brain from a baseline state to a state of fronto-parietal activation by enacting multi-point control. In contrast, modal controllability quantifies the difficulties of transitioning to all possible states via single-node control (Gu et al., 2015). Modal controllability identifies brain areas that can push the brain into difficult-to-reach states; our prior work has shown that modal controllability increases with age in youth (Tang et al., 2017). Accordingly, it is important to establish whether our present results were driven by developmental changes in modal controllability. As in Tang et al. (2017), before calculating controllability, we scaled the matrix by 1+ξ0, where ξ0 is the largest eigenvalue value of the matrix. Next, we conducted sensitivity analyses where we controlled for modal controllability by including it as a covariate in the regression equation at each resolution of analysis (e.g., whole brain, functional system, network nodes). Specifically, we controlled for nodal modal controllability in nodal analysis of control energy, controlled for the average modal controllability of each system for system-level analysis, and controlled for the whole-brain average modal controllability for whole-brain analysis.
+Fourth, the present work explored a specific transition of the brain from a baseline state to a state of fronto-parietal activation by enacting multi-point control. In contrast, modal controllability quantifies the difficulties of transitioning to all possible states via single-node control (Gu et al., 2015). Modal controllability identifies brain areas that can push the brain into difficult-to-reach states; our prior work has shown that modal controllability increases with age in youth (Tang et al., 2017). Accordingly, it is important to establish whether our present results were driven by developmental changes in modal controllability. As in Tang et al. (2017), before calculating controllability, we scaled the matrix by 1+$ξ_{0}$, where $ξ_{0}$ is the largest eigenvalue value of the matrix. Next, we conducted sensitivity analyses where we controlled for modal controllability by including it as a covariate in the regression equation at each resolution of analysis (e.g., whole brain, functional system, network nodes). Specifically, we controlled for nodal modal controllability in nodal analysis of control energy, controlled for the average modal controllability of each system for system-level analysis, and controlled for the whole-brain average modal controllability for whole-brain analysis.
 
 Fifth, one might expect that the modular organization of the brain’s structural network could potentially change the control energy cost of brain state transitions (Avena-Koenigsberger et al., 2017). Prior work has reported age-related increases in brain network modularity during youth (Baum et al., 2017; Hagmann et al., 2010; Huang et al., 2015). Here, we evaluated if observed developmental associations with control energy might be driven by changes in network modularity. We calculated network modularity quality (Q) using the community structure defined by the functional atlas (Yeo et al., 2011) as in Baum et al. (2017). For comparability with analyses of control energy, we scaled the matrix by the maximum eigenvalue before calculating Q. However, for this specific analysis, we did not subtract the identity matrix because it would lead to (uninterpretable) negative values of Q. We controlled for Q by including it as a model covariate in sensitivity analyses, which were conducted at all resolutions (whole brain, functional systems, and network nodes). Further, we evaluated the possibility that the segregation of the fronto-parietal system during youth (Baum et al., 2017) could explain the age effect of control energy. We calculated the average participation coefficient of the fronto-parietal system, and evaluated if developmental associations with control energy in the fronto-parietal system remained while controlling for the average participation coefficient in this system alongside with other covariates.
 

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Blinding reviewers to applicant identity has been proposed to reduce bias in peer review. This experimental test used 1200 NIH grant applications, 400 from Black investigators, 400 matched applications from White investigators, and 400 randomly selected applications from White investigators. Applications were reviewed by mail in standard and redacted formats. Redaction reduced, but did not eliminate, reviewers’ ability to correctly guess features of identity. The primary, preregistered analysis hypothesized a differential effect of redaction according to investigator race in the matched applications. A set of secondary analyses (not preregistered) used the randomly selected applications from White scientists and tested the same interaction. Both analyses revealed similar effects: Standard format applications from White investigators scored better than those from Black investigators. Redaction cut the size of the difference by about half (e.g. from a Cohen’s d of 0.20–0.10 in matched applications); redaction caused applications from White scientists to score worse but had no effect on scores for Black applications. Grant-writing considerations and halo effects are discussed as competing explanations for this pattern. The findings support further evaluation of peer review models that diminish the influence of applicant identity. Funding was provided by the NIH.
+Background:Blinding reviewers to applicant identity has been proposed to reduce bias in peer review.Methods:This experimental test used 1200 NIH grant applications, 400 from Black investigators, 400 matched applications from White investigators, and 400 randomly selected applications from White investigators. Applications were reviewed by mail in standard and redacted formats.Results:Redaction reduced, but did not eliminate, reviewers’ ability to correctly guess features of identity. The primary, preregistered analysis hypothesized a differential effect of redaction according to investigator race in the matched applications. A set of secondary analyses (not preregistered) used the randomly selected applications from White scientists and tested the same interaction. Both analyses revealed similar effects: Standard format applications from White investigators scored better than those from Black investigators. Redaction cut the size of the difference by about half (e.g. from a Cohen’s d of 0.20–0.10 in matched applications); redaction caused applications from White scientists to score worse but had no effect on scores for Black applications.Conclusions:Grant-writing considerations and halo effects are discussed as competing explanations for this pattern. The findings support further evaluation of peer review models that diminish the influence of applicant identity.Funding:Funding was provided by the NIH.
 
 ## Introduction
 
@@ -44,11 +44,11 @@ The experimental intervention was to anonymize applications by post-submission r
 
 ## Materials and methods
 
-## Design
+### Design
 
 The study was conducted by a contract organization, Social Solutions International (SSI). The study design and analytic plan were preregistered at the Center for Open Science in October 2017 (https://osf.io/3vmfz). The experiment obtained reviews using either the standard (original) application format or the redacted format for applications from Black PIs vs. White PIs. Applications were real NIH R01s (NIH’s major research project awards) that had been previously reviewed in 2014–2015 by CSR. There were three sets of applications; 400 R01 applications submitted by Black PIs, and two comparator sets from White PIs, one selected to match the Black PIs’ applications on review-relevant features, the other selected randomly. All applications were redacted to obscure the PI’s identity, race, and institutional affiliation. The original and redacted versions of each application were re-reviewed independently for this study by new reviewers. Each reviewer provided for each application (1) a preliminary overall impact score (which is the primary outcome measure), (2) a written critique, (3) guesses of the race, ethnicity, gender, institutional affiliation, career stage, and name of the investigator, along with confidence ratings regarding those guesses, and (4) ratings of grantsmanship. Grantsmanship was measured with two items intended to measure aspects of the application evaluation not captured by the overall impact score or five individual criterion scores: (1) Is the application organized, well-written, and easy to follow? (‘Grant 1’), and (2) Did the application enable the review to generate informed conclusions about the proposed project? (‘Grant 2’). The major hypothesis was that redaction would differentially affect the scores given to Black and White application sets; that is, either Blacks would score better, Whites worse, or both when applications were redacted.
 
-## Sample
+### Sample
 
 The preregistered plan called for a sample size of 400 per group based on power calculations for a two-sample t-test with alpha = 0.05, an effect size of 0.25, and power of 94%. As documented in the Transparent Change Summary (available on request), linear mixed models were used instead of the originally registered t-tests and the central hypothesis was tested with an interaction term. A revised power analysis focused on detecting interactions in a mixed-effects linear regression showed that with an N of 400 per cell, the study had 70% power to detect an effect size (d) of 0.2, 80% to detect an effect size of 0.25, and greater than 90% power to detect an effect size of 0.3 (Leon and Heo, 2009; Supplementary file 1A).
 
@@ -56,13 +56,186 @@ The 400 R01 applications from Black contact PIs comprised nearly 80% of such app
 
 NIH applications may have more than one principal investigator, for example, may be a ‘multiple PI’ (MPI) application. MPI applications were assigned to groups based on the demographics of only the contact PI. Overall, 21% of applications were MPI. See Table 1 for sample characteristics.
 
-## Matching and redaction
+**Table 1.**
+ PI demographics and application characteristics by sample.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Match criteria</th>
+      <th>Black (n = 400)</th>
+      <th>White matched (n = 400)</th>
+      <th>White random (n = 400)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gender</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>232</td>
+      <td>233</td>
+      <td>276</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>166</td>
+      <td>167</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>2</td>
+      <td></td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Institution NIH mean (SD) awarded dollars in $millions</td>
+      <td>182.88 (172.02)</td>
+      <td>171.12 (159.85)</td>
+      <td>176.92 (157.13)</td>
+    </tr>
+    <tr>
+      <td>Type of application</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Type 1 (New)</td>
+      <td>370</td>
+      <td>369</td>
+      <td>334</td>
+    </tr>
+    <tr>
+      <td>Type 2 (Renewal)</td>
+      <td>30</td>
+      <td>31</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td>Revision or resubmission</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A0 (original submission)</td>
+      <td>290</td>
+      <td>290</td>
+      <td>263</td>
+    </tr>
+    <tr>
+      <td>A1 (resubmission)</td>
+      <td>110</td>
+      <td>110</td>
+      <td>137</td>
+    </tr>
+    <tr>
+      <td>Early stage investigator</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>102</td>
+      <td>102</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>298</td>
+      <td>298</td>
+      <td>353</td>
+    </tr>
+    <tr>
+      <td>Investigator age mean (SD)</td>
+      <td>48.66 (9.31)</td>
+      <td>50.27 (10.20)</td>
+      <td>51.96 (9.96)</td>
+    </tr>
+    <tr>
+      <td>Behavioral/social science IRG</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>174</td>
+      <td>173</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>226</td>
+      <td>227</td>
+      <td>325</td>
+    </tr>
+    <tr>
+      <td>Degree held</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MD</td>
+      <td>80</td>
+      <td>72</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>PhD</td>
+      <td>237</td>
+      <td>267</td>
+      <td>289</td>
+    </tr>
+    <tr>
+      <td>MD/PhD</td>
+      <td>37</td>
+      <td>33</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>24</td>
+      <td>16</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>22</td>
+      <td>12</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Original preliminary overall impact scores: mean (SD)</td>
+      <td>4.35 (1.46)</td>
+      <td>4.34 (1.36)</td>
+      <td>3.94 (1.26)</td>
+    </tr>
+    <tr>
+      <td>% with multiple PIs</td>
+      <td>24</td>
+      <td>18</td>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
+
+### Matching and redaction
 
 The intent of using matched sets of applications from Black and White PIs was to isolate the effect of PI race and redaction on review outcomes. Applications were matched on actual preliminary overall impact scores and seven additional variables: (1) area of science (behavioral/social science vs. other), (2) application type (new/renewal), (3) application resubmission or not, (4) gender, (5) early-stage investigator (ESI) or not, (6) degree of PI (PhD, MD, etc.), and (7) institutional research funding (quintiles of NIH funding) (Supplementary file 1B).
 
 Redaction was performed by a team of 25 SSI research staff and checked by a quality assurance team member. Redaction took between 2 and 8 hr per application to accomplish, and quality assurance took 2–4 hr more (redacted fields listed in Supplementary file 1C).
 
-## Review procedures
+### Review procedures
 
 Reviews were overseen by nine PhD-level scientists contracted by SSI, who functioned as scientific review officers (SROs). Three had retired from CSR, and one had previous contract SRO experience at CSR. The other five had no prior SRO experience with NIH. All SROs were provided with 6 hr of group training along with individual coaching from NIH-experienced SROs. Reviewers were recruited by the SROs from more than 19,000 scientists who had served on the study sections where the 1200 applications were originally reviewed. Reviewers were recruited using a standardized email invitation that stated that this was a study being conducted ‘to examine the impact of anonymization on NIH peer review outcomes in support of CSR’s mission to ensure that grant review processes are conducive to funding the most promising research’. Reviewers were told nothing about the racial composition of the application sample.
 
@@ -72,7 +245,7 @@ Six reviewers were recruited for each application; three were randomly assigned 
 
 In standard NIH peer review, each reviewer scores the application on overall level of scientific merit before reading other reviewers’ critiques (‘preliminary impact score’—the outcome for this study), then may read other’s critiques and adjust that score, then presents that preliminary score to the panel, explains the basis for it, the panel discusses the application, reviewers revise their scores, and each panelist votes a final score. This procedure was considered not feasible for this study. Instead, review was done entirely through non-interactive written reviews. Reviewers were given a chart of the NIH scoring system (1 = best, 9 = worst) and standard R01 critique templates. In addition to providing an overall impact score, reviewers rated applications on grantsmanship and on whether redacted applications provided enough information to enable a fair review. Reviewers reviewed each application as a package, beginning with the writing of the critique and scoring of the application, ending with the questions on grantsmanship and guesses about applicant/institutional identity. The review template and additional rating items are in Supplementary file 2. Nearly all applications received the desired six critiques (7155 of 7200).
 
-## Statistical analysis
+### Statistical analysis
 
 The preregistered protocol defined three primary questions of interest: (1) Effectiveness of redaction in achieving anonymization: Are reviewers less accurate in their assessment of the applicants’ actual race in the anonymized version of the applications? (2) Effectiveness of the matching procedure: Did the matching produce equivalent preliminary overall impact scores in the current study on the standard application format? (3) Primary test of the study hypothesis: Does concealing the race and identity of the applicant affect reviewers’ preliminary overall impact scores of applications from Black and White applicants differently?
 
@@ -82,15 +255,170 @@ The preregistered plan specified that the hypothesis be tested using the matched
 
 ## Results
 
-## Preregistered question 1
+### Preregistered question 1
 
 Question 1 concerns the effectiveness of redaction in achieving anonymization. Table 2 shows redaction reduced the rate at which reviewers could guess PI race for Black PI’s by over half, from 58% to 28%. The effect on the rate of correctly guessing the race of White PIs was much smaller (93%–87%). Reviewers mistakenly guessed that Black PIs were White 36% of the time with standard format applications, 61% of the time with redacted applications. (Data for the two White samples were combined for simplicity, because their distributions were highly similar.) Reviewer confidence in their guesses of race using redacted applications was just over 2 on scale from 1 (‘not at all confident’) to 5 (‘fully confident’) for all PI samples. Using standard format applications, confidence ratings for guesses of race were about one point better; ratings did not vary appreciably by applicant race (see Table 3). Guesses of PI race based on redacted applications were significantly less likely to be correct than were guesses based on standard applications; χ2(1) = 160.2, p < 0.001.
 
+**Table 2.**
+ Reviewer’s guesses of applicant race in relation to actual race by application format.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reviewer guess of PI race</th>
+      <th colspan="2">Standard format applications</th>
+      <th colspan="2">Redacted format applications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Black PIs</td>
+      <td>White PIs</td>
+      <td>Black PIs</td>
+      <td>White PIs</td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>683 (58%)</td>
+      <td>49 (2%)</td>
+      <td>336 (28%)</td>
+      <td>48 (2%)</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>432 (36%)</td>
+      <td>2234 (93%)</td>
+      <td>723 (61%)</td>
+      <td>2081 (87%)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>45 (4%)</td>
+      <td>66 (3%)</td>
+      <td>78 (7%)</td>
+      <td>172 (7%)</td>
+    </tr>
+    <tr>
+      <td>No guess</td>
+      <td>25 (2%)</td>
+      <td>41 (2%)</td>
+      <td>52 (4%)</td>
+      <td>90 (4%)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Reviewer confidence regarding their guesses of investigator demographics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Applicantcharacteristic</th>
+      <th colspan="2">Black investigators</th>
+      <th colspan="2">White matched investigators</th>
+      <th colspan="2">White random investigators</th>
+    </tr>
+    <tr>
+      <th>Standard reviews</th>
+      <th>Anonymized reviews</th>
+      <th>Standard reviews</th>
+      <th>Anonymized reviews</th>
+      <th>Standard reviews</th>
+      <th>Anonymized reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Race</td>
+      <td>3.2</td>
+      <td>2.1</td>
+      <td>3.2</td>
+      <td>2.2</td>
+      <td>3.4</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>4.3</td>
+      <td>2.3</td>
+      <td>4.4</td>
+      <td>2.3</td>
+      <td>4.5</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <td>Institution</td>
+      <td>4.2</td>
+      <td>3.2</td>
+      <td>4.3</td>
+      <td>3.3</td>
+      <td>4.4</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>Career stage</td>
+      <td>4.2</td>
+      <td>3.1</td>
+      <td>4.2</td>
+      <td>3.2</td>
+      <td>4.4</td>
+      <td>3.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: 5-point scale, 1 = low confidence, 5 = high confidence._
+
 Reviewers of redacted applications were asked to guess the PI/research group. Most of the time they did not venture guess, but 21% of the time, a reviewer was able to make an exact identification. Table 4 details these data according to application set. Guesses for MPI applications were counted as correct if the reviewer named any one of the PIs.
+
+**Table 4.**
+ Rates of reviewer identification of name/research group in redacted applications.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PI race</th>
+      <th>Correct</th>
+      <th>Incorrect</th>
+      <th>No guess</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Overall(3580)</td>
+      <td>21.6%(775)</td>
+      <td>6.1%(217)</td>
+      <td>72.3%(2588)</td>
+    </tr>
+    <tr>
+      <td>Black(1189)</td>
+      <td>18.9%(225)</td>
+      <td>5.6%(67)</td>
+      <td>75.4%(897)</td>
+    </tr>
+    <tr>
+      <td>White (matched sample)(1194)</td>
+      <td>19.4%(232)</td>
+      <td>7.0%(84)</td>
+      <td>73.5%(878)</td>
+    </tr>
+    <tr>
+      <td>White (random sample)(1197)</td>
+      <td>26.6%(318)</td>
+      <td>5.5%(66)</td>
+      <td>67.9%(813)</td>
+    </tr>
+  </tbody>
+</table>
 
 Thus, in answer to question 1, redaction diminished but did not eliminate reviewer knowledge of applicant race and identity. Reviewers were about half as likely to identify applicants as Black when viewing redacted applications compared to standard applications.
 
-## Preregistered question 2
+### Preregistered question 2
 
 Question 2 asks did the matching produce equivalent preliminary overall impact scores for standard application format applications? Although the applications sets were matched on the preliminary overall impact scores received in NIH review, simple contrasts show that when reviewed for this study, applications from White PIs scored better (M = 3.9 White, 4.1 Black). The effect size was small, d = 0.20. Figure 2 shows the distributions of average preliminary overall impact scores for Black, White matched, and White random PI applications in standard and redacted formats.
 
@@ -98,23 +426,461 @@ Question 2 asks did the matching produce equivalent preliminary overall impact s
 
 **Figure 2.:** Boxes delineate the central 50% of scores those falling between the 25th and 75th percentiles (Interquartile Range, IQR). Whiskers extend 1.5X the IQR. Dots mark outliers. Horizontal lines within boxes indicate the median, and “x” marks the mean value. Lower scores are better.
 
-## Preregistered question 3
+### Preregistered question 3
 
 Question 3 tests the study hypothesis: Does concealing the race and identity of the applicant affect reviewers’ preliminary overall impact scores of applications from Black and White applicants differently? Table 5 summarizes the analysis, which found a significant main effect for both PI race and application format. On average, applications from White PIs received better scores than those from Black PIs. Redacted format applications scored worse than standard format applications. Both effect sizes were small. The prespecified statistical test of the study hypothesis is the race × application format interaction and was not statistically significant (p = 0.17). Removing from the analyses scores for those cases in which the review correctly identified the PI did not appreciably change the parameter estimates or significance levels.
 
+**Table 5.**
+ Primary analysis.Effects of race and application format on overall impact scores in matched White and Black application sets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>p-Value</th>
+      <th>95% Confidence interval (CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fixed effects</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Race</td>
+      <td>–0.17</td>
+      <td>0.01</td>
+      <td>(−0.31,–0.04)</td>
+    </tr>
+    <tr>
+      <td>Application format</td>
+      <td>–0.10</td>
+      <td>0.02</td>
+      <td>(−0.19,–0.02)</td>
+    </tr>
+    <tr>
+      <td>Race × application format</td>
+      <td>–0.12</td>
+      <td>0.17</td>
+      <td>(–0.29, 0.05)</td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>4.06</td>
+      <td>&lt; 0.001</td>
+      <td>(3.99, 4.13)</td>
+    </tr>
+    <tr>
+      <td>Random effects</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Application intercept</td>
+      <td>0.61</td>
+      <td>–</td>
+      <td>(0.51, 0.72)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: The reference category for race is the Black group. The reference category for application format is the redacted format._
+
 Table 6 shows the observed data and simple contrasts. Redaction had a significant effect on White PI’s applications (scores became worse). Redaction had no effect on scores for Black PI’s applications. Distributions of change scores (three-reviewer average score, redacted format minus standard format score) for the two samples were similar: for Black and matched White samples respectively the means were 0.04, 0.16; medians 0, 0; 1st quartile –0.67, –0.67; 3rd quartile 1, 1.
 
-## Secondary analyses
+**Table 6.**
+ Simple contrasts of average preliminary impact scores for redacted vs. standard format applications by PI race.Matched White application set.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Race</th>
+      <th colspan="2">Anonymization condition</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Standard</th>
+      <th>Anonymized</th>
+      <th>Simple contrast (SE)</th>
+      <th>Effect size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Black</td>
+      <td>4.13</td>
+      <td>4.17</td>
+      <td>0.04 (0.06)</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>White matched</td>
+      <td>3.89</td>
+      <td>4.05</td>
+      <td>0.16* (0.06)</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>Simple contrast (SE)</td>
+      <td>–0.23* (0.08)</td>
+      <td>–0.12 (0.08)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Effect size for race</td>
+      <td>0.20</td>
+      <td>0.10</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*p <.05 (Bonferroni-adjusted)._
+
+### Secondary analyses
 
 Using the White random application set as a comparator provided a secondary test of the study hypothesis in applications representative of those received at NIH (from Black or White PIs).
 
 It also allowed exploratory analyses of additional factors that may influence review outcomes. The dependent variable was the preliminary overall impact score entered by each reviewer. Cases with missing data were deleted. Covariates of interest were categorized as follows: investigator demographics, application characteristics, reviewer perceptions, and grantsmanship indicators. Effects of covariates on final overall impact scores were tested in a set of linear mixed models. The base model included race of the PI as the only predictor. Models 2–4 add blocks of covariates. For each model, appropriate random effects were specified. To determine which random effects were appropriate, we began by including random slopes for all predictors in the model, then used backward list deletion to determine which random effects significantly contributed to the given model. Table 7 displays the fixed and random effects for the nested models.
+
+**Table 7.**
+ Parameter estimates and standard errors from nested models predicting overall impact scores in the Black and random White application sets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Model 1(n = 4764800 applications)</th>
+      <th colspan="2">Model 2(n = 4728794 applications)</th>
+      <th colspan="2">Model 3(n = 4728794 applications)</th>
+      <th colspan="2">Model 4(n = 4315794 applications)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fixed effects</td>
+      <td>Coef.</td>
+      <td>SE</td>
+      <td>Coef.</td>
+      <td>SE</td>
+      <td>Coef.</td>
+      <td>SE</td>
+      <td>Coef.</td>
+      <td>SE</td>
+    </tr>
+    <tr>
+      <td>DemographicsRace (White = 1)</td>
+      <td>–0.266a</td>
+      <td>0.069</td>
+      <td>–0.132c</td>
+      <td>0.065</td>
+      <td>–0.132c</td>
+      <td>0.065</td>
+      <td>–0.124</td>
+      <td>0.068</td>
+    </tr>
+    <tr>
+      <td>Type 2 application</td>
+      <td></td>
+      <td></td>
+      <td>–0.492a</td>
+      <td>0.101</td>
+      <td>–0.491a</td>
+      <td>0.101</td>
+      <td>–0.484a</td>
+      <td>0.104</td>
+    </tr>
+    <tr>
+      <td>A1 application</td>
+      <td></td>
+      <td></td>
+      <td>–0.420a</td>
+      <td>0.069</td>
+      <td>–0.420a</td>
+      <td>0.069</td>
+      <td>–0.415a</td>
+      <td>0.072</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td></td>
+      <td></td>
+      <td>–0.005</td>
+      <td>0.067</td>
+      <td>–0.005</td>
+      <td>0.067</td>
+      <td>0.013</td>
+      <td>0.069</td>
+    </tr>
+    <tr>
+      <td>Early-stage investigator</td>
+      <td></td>
+      <td></td>
+      <td>0.178c</td>
+      <td>0.084</td>
+      <td>0.178c</td>
+      <td>0.084</td>
+      <td>0.186c</td>
+      <td>0.087</td>
+    </tr>
+    <tr>
+      <td>Low NIH institutional funding</td>
+      <td></td>
+      <td></td>
+      <td>0.618a</td>
+      <td>0.094</td>
+      <td>0.618a</td>
+      <td>0.094</td>
+      <td>0.612a</td>
+      <td>0.097</td>
+    </tr>
+    <tr>
+      <td>Experimental covariates</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Format (standard = 1)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>–0.144a</td>
+      <td>0.042</td>
+      <td>–0.022</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>Format × race</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>–0.186b</td>
+      <td>0.083</td>
+      <td>–0.237b</td>
+      <td>0.080</td>
+    </tr>
+    <tr>
+      <td>Perceptions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>PI race guess Black</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>–0.155b</td>
+      <td>0.069</td>
+    </tr>
+    <tr>
+      <td>PI gender guess female</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>–0.069</td>
+      <td>0.061</td>
+    </tr>
+    <tr>
+      <td>PI career stage guessEarly-stage investigator</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.091</td>
+      <td>0.063</td>
+    </tr>
+    <tr>
+      <td>Institutional funding guess ‘low’</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.447a</td>
+      <td>0.134</td>
+    </tr>
+    <tr>
+      <td>Grantsmanship indicators</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grant 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>–0.519a</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>Grant 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>–0.204a</td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <td>Random effects</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grant 1 slope</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Institution slope</td>
+      <td></td>
+      <td></td>
+      <td>0.489</td>
+      <td></td>
+      <td>0.489</td>
+      <td></td>
+      <td>0.477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Application intercept</td>
+      <td>0.614</td>
+      <td></td>
+      <td>0.400</td>
+      <td></td>
+      <td>0.402</td>
+      <td></td>
+      <td>0.511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>2.044</td>
+      <td></td>
+      <td>2.041</td>
+      <td></td>
+      <td>2.032</td>
+      <td></td>
+      <td>1.561</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Statistically significant parameter estimates are bolded; ap ≤ 0.001, bp ≤ 0.025, cp < 0.05._
 
 Model 1 tested the unadjusted effect of race of the PI on overall impact scores across both application formats. Applications from White PIs scored better. The effect was small, explaining less than 2% of variance in overall impact scores.
 
 Model 2 added application characteristics and additional characteristics of the PI. All covariates except PI gender had significant effects; resubmissions and competing renewals scored better while applications from ESIs and institutions in the lowest quintile of NIH grant funding scored worse. Including these effects reduced the effect of PI race by half, but PI race remained a significant predictor.
 
 Model 3 provides a secondary test of the study hypothesis by adding terms for application format and the PI race by format interaction. Application format was significant, with redacted applications scoring worse, and the application format × race interaction was significant. Redaction did not significantly change scores for Black PIs but significantly worsened scores for White PIs. Table 8 shows the effects of PI race and application format in the raw (unadjusted) data.
+
+**Table 8.**
+ Simple contrasts of average preliminary impact scores for redacted vs. standard format applications by PI race.Randomly selected White application set.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Race</th>
+      <th colspan="2">Anonymization condition</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Standard</th>
+      <th>Anonymized</th>
+      <th>Difference (SE)</th>
+      <th>Effect size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Black</td>
+      <td>4.13</td>
+      <td>4.17</td>
+      <td>0.04 (0.06)</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>White random</td>
+      <td>3.76</td>
+      <td>4.01</td>
+      <td>0.25* (0.06)</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Difference (SE)</td>
+      <td>–0.37* (0.08)</td>
+      <td>–0.16 (0.08)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Effect size for race</td>
+      <td>0.31</td>
+      <td>0.15</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*p < .05 (Bonferroni-adjusted)._
 
 Model 4 added reviewer guesses of applicant race, gender, ESI status, institutional funding, and ratings of grantsmanship. Reviewer guesses that the PI was an ESI or was from an institution with low NIH funding were both associated with worse scores, institutional status having the larger effect. Controlling for all other variables in the model, including actual PI race, reviewer’s guess that the PI was Black was associated with slightly better scores. Better ratings on grantsmanship indicators were associated with better overall impact scores. In the final model the following indicators were associated with better scores: competitive renewal, resubmission, reviewer ratings of better grantsmanship, and reviewer guess that the PI was Black. The following indicators were associated with worse scores: ESI, low funded institution, and reviewer guess that the institution was in the low funded group. With this set of covariates, neither PI race nor application format was significant, but the interaction of format by PI race interaction was significant. PI gender was not a significant predictor of scores in any model.
 

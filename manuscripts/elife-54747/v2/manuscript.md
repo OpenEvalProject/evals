@@ -36,17 +36,345 @@ As part of an extended project to understand more fully the immunological events
 
 We carried out TCRseq on unfractionated blood samples from 29 patients with alopecia (Table 1).
 
+**Table 1.**
+ Demographics of the study population.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Age</th>
+      <th>Sex1</th>
+      <th>Alopecia2</th>
+      <th>TCRseq sets3</th>
+      <th>Flow cytometry4</th>
+      <th>Patch test scores5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>50–59</td>
+      <td>F</td>
+      <td>AA (&gt;50%)</td>
+      <td>0</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>10–19</td>
+      <td>M</td>
+      <td>AU</td>
+      <td>0</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>20–29</td>
+      <td>F</td>
+      <td>AT</td>
+      <td>3</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>50–59</td>
+      <td>F</td>
+      <td>AT</td>
+      <td>4</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>50–59</td>
+      <td>M</td>
+      <td>AA (&gt;50%)</td>
+      <td>3</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>40–49</td>
+      <td>M</td>
+      <td>AA (&gt;50)</td>
+      <td>4</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>40–49</td>
+      <td>M</td>
+      <td>AU</td>
+      <td>4</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>30–39</td>
+      <td>F</td>
+      <td>AA (&gt;50%)</td>
+      <td>3</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>30–39</td>
+      <td>F</td>
+      <td>AT</td>
+      <td>0</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>20–29</td>
+      <td>F</td>
+      <td>AT</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>30–39</td>
+      <td>M</td>
+      <td>AU</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>20–29</td>
+      <td>F</td>
+      <td>AA (&gt;50%)</td>
+      <td>0</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>30–39</td>
+      <td>F</td>
+      <td>AT</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>30–39</td>
+      <td>F</td>
+      <td>AA (&lt;50%)</td>
+      <td>3</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>40–49</td>
+      <td>F</td>
+      <td>AU</td>
+      <td>4</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>40–49</td>
+      <td>F</td>
+      <td>AA (&lt;50%)</td>
+      <td>4</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>50–59</td>
+      <td>F</td>
+      <td>AT</td>
+      <td>3</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>20–29</td>
+      <td>F</td>
+      <td>AT</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>50–59</td>
+      <td>F</td>
+      <td>AU</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>50–59</td>
+      <td>F</td>
+      <td>AU</td>
+      <td>4</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>10–19</td>
+      <td>M</td>
+      <td>AA (&gt;50%)</td>
+      <td>3</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>30–39</td>
+      <td>F</td>
+      <td>AA (&gt;50%)</td>
+      <td>4</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>50–59</td>
+      <td>F</td>
+      <td>AU</td>
+      <td>4</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>40–49</td>
+      <td>F</td>
+      <td>AA (&lt;50%)</td>
+      <td>4</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>40–49</td>
+      <td>F</td>
+      <td>AT</td>
+      <td>3</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>60–69</td>
+      <td>F</td>
+      <td>AA (&lt;50%)</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>30–39</td>
+      <td>F</td>
+      <td>AA (&gt;50%)</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>30–39</td>
+      <td>M</td>
+      <td>AA (&lt;50%)</td>
+      <td>3</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>50–59</td>
+      <td>F</td>
+      <td>AT</td>
+      <td>4</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>60–69</td>
+      <td>F</td>
+      <td>AT</td>
+      <td>3</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>30–39</td>
+      <td>F</td>
+      <td>AA (&gt;50%)</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>20–29</td>
+      <td>F</td>
+      <td>AA (&lt;50%)</td>
+      <td>0</td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>40–49</td>
+      <td>F</td>
+      <td>AU</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>40–49</td>
+      <td>F</td>
+      <td>AA (&gt;50%)</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_1F: female; M: male; 2AA: alopecia areata (<50% or >50% scalp involvement); AT: alopecia totalis; AU: alopecia universalis. 3The number of time points for which TCRseq data was obtained. 4The patients for whom PBMC flow cytometry data were available. 5The patients for whom patch test scores were available._
+
 Samples were collected before (referred to as the pre-sensitization [PS] sample, week 0, n = 25 samples) and at one to three time points after sensitization with DPC (Figure 1A), taken at 2 weeks (PT1, n = 23), 6 weeks (PT2, n = 18), and approximately 24 weeks (PT3, n = 17) post-sensitization. As controls, we carried out TCRseq on five healthy volunteers, for which we had time points that matched the 0-, 2-, and 6-week time points of the DPC sensitized group. We obtained a total of 24,431,855 distinct TCR sequences, of which 17,451,853 were unique across all samples. The number of TCR sequences obtained varied between samples (mainly due to small differences in volume of individual libraries when preparing the pooled library for sequencing) and are shown in Supplementary file 1. The median number of TCRs per sample was 95,638 (range 23,224–690,600) and the median number of unique TCRs per sample was 75,111 (range 19,095–342,336). Analyses included every patient for whom the relevant time points (and patch test data where relevant) were available, and this number is indicated in the respective figure legends.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/54747/elife-54747-fig1-v2.jpg)
 
 **Figure 1.:** (A) The study outline showing when bloods were drawn, skin tests were performed, and DPC treatment was applied during the ~24 weeks of participation in the study. The four time points at which sensitization scores were recorded and blood samples were taken are referred to throughout the paper as PS (pre-sensitization, week 0), PT1 (Patch Test 1, week 2), PT2 (Patch Test 2, week 6) and PT3 (Patch Test 3, around week 24). In all cases bloods were drawn prior to application of the patch test. (B) and (C) The PS and PT1 blood samples of 10 patients were analyzed using flow cytometry. The mean percentage of total naive, central memory (CM), effector memory (EM), and effector memory RA (EMRA) expressing cells in the (B) CD4 and (C) CD8 compartments are shown. Paired t-tests with Benjamini–Hochberg correction for multiple testing were performed to check for significant differences between the pre- and post-sensitization cell number distributions for each subpopulation. All p-values were considerably higher than the 0.05 significance threshold. (D) The Shannon diversity index of the healthy volunteers (n = 15 samples from five individuals), pre-sensitization (n = 25), and post-sensitization (n = 58; from all three time points) TCR repertoire samples. All samples were randomly subsampled to the minimum sample size (21,838 beta TCRs), and the Shannon diversity index of the subsample was then calculated. Each sample is represented by a dot. The box plots show the median, and lower and upper quartiles of each group. Differences in the distribution of the three groups were tested using a Kruskal–Wallis rank sum test and were non-significant (p=0.87). (E) The Gini inequality coefficient of the healthy volunteers, pre-sensitization and post-sensitization TCR repertoire samples, subsampled as in (D). Differences in the distribution of the three groups were tested using a Kruskal–Wallis rank sum test and were non-significant (p=0.89). (F) The number of TCRs that appear with a frequency of 1/1000 or higher in each sample (termed ‘abundant TCRs’), for the healthy volunteers, pre-sensitization and post-sensitization samples, subsampled as in (D) and (E). A Kruskal–Wallis rank sum test revealed no statistical difference between the groups (p=0.14). (G)– (I) Sensitized samples were separated according to time point: PT1 (n = 23), PT2 (n = 18), and PT3 (n = 17). The Shannon diversity index (G), the Gini coefficient (H), and the number of abundant clones (I) of these subsamples were then calculated. Kruskal–Wallis rank sum tests were used to compare between the three groups in each case. All tests showed no statistically significant difference, with p-values p=0.97, p=0.96, and p=0.90 respectively.
 
-## Repeated exposure to DPC does not alter the global structure of the peripheral blood TCR repertoire
+### Repeated exposure to DPC does not alter the global structure of the peripheral blood TCR repertoire
 
 The major T cell sub-populations (CD4/CD8, naive, central memory, effector memory, and effector memory RA revertant) (Fletcher et al., 2005) were quantified by flow cytometry and did not change significantly after exposure to DPC (Figure 1B, two-sided paired t-tests corrected for multiple testing, p=0.48, p=0.74, p=0.49, and p=0.74 for CD4, and Figure 1C, p=0.11, p=0.72, p=0.72, and p=0.37 for CD8 naive, central, effector, and effector memory RA revertant cells respectively). Similarly, TCR repertoire diversity, captured by the Shannon diversity index, or the clonal expansion captured by the Gini inequality coefficient, did not differ significantly before and after exposure to DPC (Figure 1D,E, Kruskal–Wallis rank sum tests, p=0.89 and p=0.90 respectively), nor between the different time points post-sensitization (Figure 1G,H, Kruskal–Wallis rank sum tests, p=0.96 and p=0.95 respectively). Finally, the number of TCRs found at frequencies above 1 in 1000, which correspond to the most abundant 6% of the repertoire on average, did not change as a result of sensitization (Figure 1F,I, Kruskal–Wallis rank sum tests, p=0.12 and p=0.91 respectively). The corresponding analyses for the alpha chain sequences are shown in Supplementary file 2. There was therefore no evidence that exposure to DPC, a potent skin sensitizer, caused global alterations in the structure of the TCR repertoire.
 
-## Sensitization with DPC induces a transient expansion in the frequency of a small subset of the TCR repertoire
+### Sensitization with DPC induces a transient expansion in the frequency of a small subset of the TCR repertoire
 
 We next looked for evidence of changes in individual TCR sequences following exposure to DPC. We plotted the abundance of each TCR before sensitization and after sensitization (at PT1) (representative examples are in Figure 2A; all individuals in Supplementary file 3). We observed that in a number of individuals, there was a population of TCRs which were absent before sensitization and present at relatively high abundance after sensitization (indicated by the pink dots in the left panels of Figure 2A). This change is seen clearly in the abundance profile of all TCRs that were absent in the pre-sensitization sample, but present after sensitization (Figure 2B). On the basis of these profiles, we counted the proportion of TCRs absent at PS and present at PT1 with an abundance of eight times or above. The remainder of this study focuses on this population, which we refer to as PT1 expanded. The percentages of PT1 TCRs which are expanded in each individual are summarized for patients and healthy volunteers in Figure 2C. For comparison, we calculated the percentage of TCRs absent at PT1 but present at PS with an abundance of eight times or above (referred to as PS expanded). The range of percentages of expanded TCRs at PT1 is clearly much greater in the patients than in the healthy volunteers (between 0 and 2 weeks), although the medians are not significantly different (p=0.16 and p=0.47 for alpha and beta respectively, Mann–Whitney). The percentage of expanded TCRs at PT1 in the patients is significantly larger than the percentage of TCRs which were expanded at PS and absent at PT1 (p=0.02 for alpha, p=0.03 for beta, Wilcoxon signed–rank). This is not the case for the healthy volunteers (p=0.79 for alpha, p=0.59 for beta, Wilcoxon signed–rank). Similar results were obtained setting the expansion threshold at 16 or 32. The number of PT1 expanded TCR alpha and TCR beta sequences was highly correlated (Spearman’s rho = 0.85, p<0.0001, Supplementary file 3).
 
@@ -60,7 +388,7 @@ After the initial increase post-sensitization, the number of expanded TCRs remai
 
 **Figure 3.:** (A) The abundances of the PT1 expanded (threshold ≥8) beta TCRs at the four time points: PS, PT1, PT2, and PT3. Each panel is a different patient (n = 10). (B) The abundances of the PT2 expanded (threshold ≥8) beta TCRs at the four time points: PS, PT1, PT2, and PT3. Each panel is a different patient (n = 10). (C) Equivalent time points (0 weeks, 2 weeks, and 6 weeks) for five healthy volunteers. Top row is PT1 expanded beta TCRs; bottom row is PT2 expanded beta TCRs.
 
-## TCR expansion after exposure to DPC correlates with the magnitude of skin sensitization
+### TCR expansion after exposure to DPC correlates with the magnitude of skin sensitization
 
 We hypothesized that the expanded TCRs identified above might be functionally related to development of ACD. Exposure to DPC induced skin sensitization (patch test scores of + or higher) in almost all individuals but the magnitude of the response varied significantly between individuals (Figure 4A). Interestingly, the maximum response was usually observed at the first patch test, and declined or remained constant thereafter despite repeated exposure (Figure 4B). The sensitization reaction, therefore, like the number of expanded TCRs, did not continue to increase despite repeated exposure to antigen. In consequence, the magnitude of the response was very diverse at the beginning (+++, ++, or +) but converged toward a score of + or below by week 24.
 
@@ -72,7 +400,7 @@ We plotted the number of PT1 expanded TCRs (abundance ≥8) in individuals with
 
 The correlation between the number of expanded TCRs at all time points (in each case measured as change relative to pre-sensitization frequency) and the sensitization/patch test scores at all time points is summarized in Figure 4D. As illustrated above, the numbers of expanded TCRs at PT1 were correlated with the strength of the reaction recorded at the sensitization site, and with the patch test score at PT1 (2 weeks), as well as PT2 (6 weeks). The correlation was lost at PT3 (24 weeks), perhaps reflecting the greatly decreased range of patch test scores at this time point (Figure 4B).
 
-## The expanded TCRs show characteristics of antigen-driven responses
+### The expanded TCRs show characteristics of antigen-driven responses
 
 We hypothesized that the population of TCRs that are found at increased frequency post-exposure to DPC may be enriched for T cells which bind to DPC, or DPC-modified peptides. Antigen-specific sets of TCRs frequently share sequence features, including skewed use of V and J regions, and similarities in CDR3 sequence (Dash et al., 2017; Davis et al., 1995; Glanville et al., 2017; Pogorelyy et al., 2019; Sun et al., 2017; Thomas et al., 2014). The relative V and J gene usage profiles within the expanded set of TCRs compared to the pre-sensitization repertoire for that individual are shown for each patient in Figure 5. We used a non-parametric bootstrapping approach to determine which V and J genes were statistically significantly skewed in the repertoire of the expanded TCRs. We compared the observed proportion of each V and J gene in the PT1 expanded TCRs (≥8) with 1000 random sets of the same number of TCRs sampled from the pre-sensitization repertoires of the same individuals. V and J genes that ranked in the top 50 out of 1001 were considered significantly under-represented at the 0.05 significance level, and genes in the bottom 50 ranks as significantly over-represented. Several examples of skewed V and J gene usage were observed, both in TCR alpha and TCR beta (pink dots). Due to the relatively small number of expanded TCRs in some patients, under-represented genes were very common as a result of sampling, and hence less statistically robust. We therefore show only over-represented V and J genes. In addition, genes that were over-represented by a similar analysis on the set of all expanded TCRs (generated by combining the individual patient expanded sets and taking unique TCRs) are also shown (Figure 5, pink gene names). Interestingly, some V and J regions were skewed in several different individuals, suggesting some common driver of V/J gene usage, despite the fact that the individuals were not related.
 
@@ -88,7 +416,7 @@ We also looked for potential clustering of CDR3 sequences of the expanded TCRs (
 
 Taken together, the skewing of V and J genes, and the presence of clusters of similar TCRs were strongly suggestive that the expanded TCRs were enriched for TCRs responding to a limited number of specific epitopes.
 
-## A dynamic Bayesian network can predict sensitization based on TCR sequence
+### A dynamic Bayesian network can predict sensitization based on TCR sequence
 
 The skewed V/J usage and the TCR clustering are indicative of an antigen-specific response. We therefore explored whether the repertoire of expanded TCRs was sufficiently distinct from that of the unselected repertoire so that it could be used to distinguish DPC-expanded TCRs or sets of TCRs from the unexpanded repertoire. We used a dynamic Bayesian network (DBN) (Dagum et al., 1992; Murphy and Mian, 1999; Murphy, 2002; Pearl, 1988; Yao et al., 2008), a model we have developed to interrogate antigen specificity in TCR sequences. The DBN is a probabilistic graphical model, which provides a flexible classification tool that can incorporate heterogeneous data (e.g. sequences as well as V/J usage).
 
@@ -96,7 +424,7 @@ We constructed a DBN to classify TCR beta CDR3 sequences into one of two classes
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/54747/elife-54747-fig7-v2.jpg)
 
-**Figure 7.:** (A) The directed acyclic graph depicts the DBN structure, unrolled over 22 time slices (positions). Directed edges capture probabilistic dependencies. P indicates position ii along the CDR3 sequence; AA the amino acid in position ii; T is the triplet score for the triplet of amino acids in positions i; ⟨i−2,i−1,i⟩V and iJ are the V and J genes (constant for each sequence); iCS the class score at position ii, and Class determines whether the sequence comes from the diphenylcyclopropenone (DPC)-related expanded set, or the control set. (iB) The probability of observing pairs of neighboring amino acids differs between DPC-related sequences and control sequences from the pre-sensitization repertoire of the same individuals. Each column in the heatmap corresponds to a position along the CDR3 sequence, each row to an ordered pair of amino acids (total 400). If row i in the heatmap corresponds to amino acid pair , then position ⟨X,Y⟩ in the matrix is the ratio of the probability of observing amino acid ⟨i,j⟩Y in position j+1 in the expanded sequences against the probability of observing Y in the same position in an equal-sized random sample of control sequences, given amino acid X has been observed in position j. (C) The upper panel shows the mean classification accuracy for classifying the full DPC/control test sets, and sets of 10 DPC/control sequences. The lower panel shows mean classification accuracy for individual sequences. 5% confidence refers to the top 5% of sequences with greatest log likelihood difference between the models, and similarly for 10%. 100% is the accuracy when classifying every sequence. Each dot depicts the mean of one of the train-test sets from 10-fold cross validation over 10 generations of the model. Each training set consisted of 3618 expanded sequences and control sequences in equal proportions, and the test sets 402 sequences in equal proportions (201 expanded and 201 control).  Figure 7—source data 1.The list of TCRs which is used as the DPC set to generate the DBN which is illustrated in Figure 7. Each row contains a unique combination of CDR3 sequence, V gene, and J gene annotation.  Figure 7—source data 2.The list of TCRs which is used as the control set to generate the DBN which is illustrated in Figure 7. Each row contains a unique combination of CDR3 sequence, V gene, and J gene annotation.
+**Figure 7.:** (A) The directed acyclic graph depicts the DBN structure, unrolled over 22 time slices (positions). Directed edges capture probabilistic dependencies. Pi indicates position i along the CDR3 sequence; AAi the amino acid in position i; Ti is the triplet score for the triplet of amino acids in positions $⟨i−2,i−1,i⟩$; Vi and Ji are the V and J genes (constant for each sequence); CSi the class score at position i, and Classi determines whether the sequence comes from the diphenylcyclopropenone (DPC)-related expanded set, or the control set. (B) The probability of observing pairs of neighboring amino acids differs between DPC-related sequences and control sequences from the pre-sensitization repertoire of the same individuals. Each column in the heatmap corresponds to a position along the CDR3 sequence, each row to an ordered pair of amino acids (total 400). If row i in the heatmap corresponds to amino acid pair $⟨X,Y⟩$, then position $⟨i,j⟩$ in the matrix is the ratio of the probability of observing amino acid Y in position j+1 in the expanded sequences against the probability of observing Y in the same position in an equal-sized random sample of control sequences, given amino acid X has been observed in position j. (C) The upper panel shows the mean classification accuracy for classifying the full DPC/control test sets, and sets of 10 DPC/control sequences. The lower panel shows mean classification accuracy for individual sequences. 5% confidence refers to the top 5% of sequences with greatest log likelihood difference between the models, and similarly for 10%. 100% is the accuracy when classifying every sequence. Each dot depicts the mean of one of the train-test sets from 10-fold cross validation over 10 generations of the model. Each training set consisted of 3618 expanded sequences and control sequences in equal proportions, and the test sets 402 sequences in equal proportions (201 expanded and 201 control).
 
 One of the key features of the DBN is that each ‘slice’ of the network is position specific. This enables modeling local as well as global sequence features. For example, Figure 7B demonstrates the relationship between neighboring amino acids in specific positions in the CDR3 sequence and antigen specificity. The probability of observing a specific amino acid in a particular position given its neighbors differs between DPC-expanded sequences and control sequences. Both over and under-represented pairs of amino acids can be seen, in particular in the middle of the CDR3. Such relationships are utilized by the model in classification.
 
@@ -118,7 +446,38 @@ In conclusion, this study is the first analysis of in vivo TCR repertoire change
 
 ## Materials and methods
 
-## Patient recruitment
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Decombinator V4</td>
+      <td>https://github.com/innate2adaptive/Decombinator</td>
+      <td>RRID:SCR_006732</td>
+      <td>This software suite is under active development; latest versions available at the GitHub site.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TCRseq protocol</td>
+      <td>Uddin et al., 2019b PMID:31727254</td>
+      <td></td>
+      <td>This protocol is in a continuous state of development. The full details of the current stable version including primer sequences, PCR conditions etc. are all in the attached reference. For latest development contact the corresponding author on b.chain@ucl.ac.uk</td>
+    </tr>
+  </tbody>
+</table>
+
+### Patient recruitment
 
 A total of 34 patients were recruited to this study (NRES Ethics Committee East of England – Cambridgeshire and Hertfordshire [14/EE/1067]). Participants were recruited from patients who had been diagnosed with alopecia, were aged between 18 and 70, identified as suitable for DPC treatment by a consultant dermatologist, and were now attending their first visit to the Alopecia Clinic at Salford Royal Hospital for DPC therapy. This study ran alongside patients’ prescribed DPC treatment (weekly doses of DPC to the scalp to induce inflammation and hair regrowth). The study timeline in terms of treatment and sample collection is provided in Figure 1A. All participants gave their informed consent to participate and were free to withdraw from the study at any time and for any reason without affecting their treatment. Patients were excluded from the study if they were pregnant.
 
@@ -126,30 +485,36 @@ Twenty-nine of the individuals who participated in the study provided blood samp
 
 As controls for the TCR sequencing, five healthy volunteers were bled three times, at day 0, 2 weeks, and 6 weeks. All subjects gave written informed consent in accordance with the Declaration of Helsinki. The protocol was approved by the University College London Hospital Ethics Committee 06/Q0502/92.
 
-## Sensitization and patch testing
+### Sensitization and patch testing
 
 Sensitization to DPC was induced by application of 2% DPC (in acetone) to a 2 cm by 2 cm patch of skin on the upper inner arm. Sensitization at the site of application was assessed 14 days later and scored as described below (sensitization score). Patch testing at a remote site (upper back) was conducted 2 weeks (PT1), 6 weeks (PT2), and 24 weeks (PT3) after application of the sensitizing dose of DPC. Patch testing was performed on the skin of the upper back using Finn chambers (8 mm inner diameter) containing 0.01% DPC in acetone. After 6 days, patients’ reactions were scored as no reaction (−), weakly sensitized (+), strongly sensitized (++), or extremely sensitized (+++) according to standards set by the International Contact Dermatitis Research Group.
 
-## TCR sequencing
+### TCR sequencing
 
 The α and β chains of the TCR repertoire of 29 participants were sequenced using a method that starts with total RNA isolated from unfractionated whole blood, collected in Tempus Blood RNA tubes (Thermofisher #4342792) using the manufacturer’s protocol for RNA extraction. The pipeline introduces unique molecular identifiers attached to individual cDNA molecules to provide a quantitative and reproducible method of library preparation. Full details for both the experimental TCRseq library preparation and the subsequent computational analysis (V, J, and CDR3 annotation) using Decombinator are published in Oakes et al., 2017b; Uddin et al., 2019a.
 
-## Flow cytometry
+### Flow cytometry
 
 PBMCs were isolated from 30 mL whole blood (diluted 1:1 in PBS) from 10 patients layered over an equal volume of Histopaque 1077 (Sigma Aldrich) according to the manufacturer's instructions. Cells were stored at a concentration of 5 × 107 cells/mL in 10% DMSO/90% human AB serum (Sigma Aldrich) at −80°C until required.
 
 Flow cytometric analyses were performed on previously frozen cells using antibodies obtained from eBioscience, with single-stained controls used for compensation. Naïve and memory CD4+ and CD8+ T-cell subsets were identified as previously described (Appay et al., 2008). Naïve cells were defined as CD45RA+ and CD27+; central memory as CD45RA− CD27+; effector memory as CD45RA− CD27−, and EMRA as CD45RA+ CD27−. Flow cytometry was performed on a minimum of 10,000 cells using a FACS-calibur (Becton Dickinson, Mountain View, CA) and data analysis performed in FlowJo (TreeStar) using standardized gating across all samples.
 
-## Statistical and mathematical analysis
+### Statistical and mathematical analysis
 
 Statistical analyses were performed using the statistical programming language R [R version 4.0.2 (2020-06-22)]. Mann–Whitney U-tests were used to compare between two unmatched groups and paired t-tests or Wilcoxon signed-rank tests between two paired groups. All statistical comparisons between more than two groups were done using Kruskal–Wallis non-parametric tests with post hoc Dunn Test and Benjamini–Hochberg correction for multiple testing. Statistical significance in all tests was accepted above the 0.05 threshold.
 
 To calculate which V and J genes were significantly over- or under-expressed in the DPC-expanded TCR sets, at both the individual patient level and for the entire expanded set, we generated 2*1000 independent random samples of equal-sized sets from the pre-sensitized individual/combined population, calculated the ratio between the two, and compared this with the ratio derived from the set of interest against a further 1000 random simulations. A significance level of 0.05 was then achieved for genes that ranked in either the top 50 ‘ratios’ (under-represented) or bottom 50 in the list (over-represented).
 
-## TCR clustering
+### TCR clustering
 
 The CDR3 protein sequences of expanded TCRs were identified using the package CDR3translator (https://github.com/innate2adaptive/Decombinator). The pairwise similarity between TCRs was measured on the basis of amino acid triplet sharing, which was calculated using the normalized string kernel function stringdot (with parameters stringdottype=‘spectrum’, length = 3, normalized=TRUE) from the Kernlab package (Karatzoglou et al., 2004). The kernel was calculated as the number of amino acid triplets (sets of three consecutive amino acids) shared between two CDR3s, normalized by the number of triplets in each CDR3 being compared. The TCR similarity matrix was converted into a network diagram using the iGraph package in R (Csardi and Nepusz, 2006). Two TCRs were considered connected if the similarity index was above 0.75. A range of thresholds were explored, and the lowest threshold that consistently gave few large (>3 nodes) clusters using random samples of TCRs from the study was chosen. The sequences from individual clusters were aligned using Aliview (Larsson, 2014), and the consensus visualized using webLogo (https://weblogo.berkeley.edu/logo.cgi).
 
-## TCR repertoire classification using a DBN
+### TCR repertoire classification using a DBN
 
-DBNs are a type of probabilistic graphical model consisting of a directed acyclic graph and a set of conditional probability distributions. The probability of the set of variables (nodes) of the system Xt at time t given its state at time t−1 can be calculated byP(Xt|Xt−1)=∏i=1NP(Xt(i) | Pa(Xt(i)))where N is the number of variables, Xt(i) is the i’th node in time slice t, and Pa(Xt(i)) are the parents of Xt(i). The TCR DBN was built in MATLAB (2019b), using the Bayes Net Toolbox (Murphy, 2001). The DBN took as input the position along the CDR3 sequence, the amino acid in each position, the V and J genes, a position-specific triplet score, and a class score relative to sequence position. An edge between neighboring amino acids was included in the network to model the observed non-independence between neighboring amino acids in their specific sequence positions and the sequence specificity. The triplet score was calculated by taking for each position the triplet containing the two previous amino acids in the CDR3 and ranking it against other triplets in this position in the control and DPC training sets. The triplet was given a score of 1 if it appeared more frequently (in a given position) in the DPC training set than in the control training set, which consisted of the same number of sequences randomly sampled from the pre-sensitization repertoires of the same patients. Triplets that were more frequent in the control set were scored 2, and triplets that appeared equally in the DPC and control sets were scored 1 or 2 uniformly at random. Positions 1 and 2 were taken as a singleton and an ordered pair of amino acids respectively and scored similarly. Triplets were chosen since they were sufficiently high dimensional to capture amino acid dependencies but remained computationally feasible. To calculate the class scores, the following procedure was followed: 1. Each V gene in the training set was scored 1 if it was more prevalent in the DPC set, 2 if in the control set, and 1 or 2 uniformly at random otherwise. 2. The J genes were scored similarly. 3. For each sequence position, every amino acid (and an additional dummy amino acid added to the end of CDR3s shorter than 22 to equalize sequence lengths) was scored 1 or 2 as above. 4. Finally, the class score for position i was assigned 1 if the total number of ‘1’ scores obtained by Steps 1–3 and the triplets scores from positions 1,2,…,i−1 was greater than the number of ‘2’ scores; a score of 2 if the number of ‘2’s was greater, and 1 or 2 randomly otherwise. Training sequences were assigned 1 or 2 in position 22 according to their original class. This process ensured knowledge about the likelihood of belonging to either set could be learned by the model across time slices (positions). Class scores for the test sets were calculated based on gene, amino acid, and triplet frequencies in the training sets. Nodes depicting specificity (DPC or control) were included as hidden (latent) variables (the Class nodes in Figure 7A). Inference on the network was done using the Junction Tree algorithm, and parameters were initiated with Dirichlet priors and fitted to the network by Expectation Maximization with a maximum of 10 iterations. Two DBNs were constructed, one for the DPC training set and one for the control set. To classify TCR sequences, the log likelihood of each model was calculated. For sets of sequences, we calculated the sum log likelihood for each model. The results of the DBN were evaluated using 10-fold cross-validation, running each train-test pair 10 times, and calculating the mean classification accuracy (number of sequences/sets of sequences correctly classified divided by total number of sequences/sets of sequences). The training and test sets all consisted of equal numbers of DPC-related and control sequences, and running the DBN with shuffled class labels returned ~50% accuracy. The network diagram in Figure 7A was created using the LaTeX TikZ BayesNet package (https://github.com/jluttine/tikz-bayesnet; Luttinen and Dietz, 2013).
+DBNs are a type of probabilistic graphical model consisting of a directed acyclic graph and a set of conditional probability distributions. The probability of the set of variables (nodes) of the system Xt at time t given its state at time t−1 can be calculated by
+
+$$
+P(X_{t}|X_{t−1})=\prodi=1NP(X_{t}^{(i)} | Pa(X_{t}^{(i)}))
+$$
+
+where N is the number of variables, Xt(i) is the i’th node in time slice t, and Pa(Xt(i)) are the parents of Xt(i). The TCR DBN was built in MATLAB (2019b), using the Bayes Net Toolbox (Murphy, 2001). The DBN took as input the position along the CDR3 sequence, the amino acid in each position, the V and J genes, a position-specific triplet score, and a class score relative to sequence position. An edge between neighboring amino acids was included in the network to model the observed non-independence between neighboring amino acids in their specific sequence positions and the sequence specificity. The triplet score was calculated by taking for each position the triplet containing the two previous amino acids in the CDR3 and ranking it against other triplets in this position in the control and DPC training sets. The triplet was given a score of 1 if it appeared more frequently (in a given position) in the DPC training set than in the control training set, which consisted of the same number of sequences randomly sampled from the pre-sensitization repertoires of the same patients. Triplets that were more frequent in the control set were scored 2, and triplets that appeared equally in the DPC and control sets were scored 1 or 2 uniformly at random. Positions 1 and 2 were taken as a singleton and an ordered pair of amino acids respectively and scored similarly. Triplets were chosen since they were sufficiently high dimensional to capture amino acid dependencies but remained computationally feasible. To calculate the class scores, the following procedure was followed: 1. Each V gene in the training set was scored 1 if it was more prevalent in the DPC set, 2 if in the control set, and 1 or 2 uniformly at random otherwise. 2. The J genes were scored similarly. 3. For each sequence position, every amino acid (and an additional dummy amino acid added to the end of CDR3s shorter than 22 to equalize sequence lengths) was scored 1 or 2 as above. 4. Finally, the class score for position i was assigned 1 if the total number of ‘1’ scores obtained by Steps 1–3 and the triplets scores from positions 1,2,…,i−1 was greater than the number of ‘2’ scores; a score of 2 if the number of ‘2’s was greater, and 1 or 2 randomly otherwise. Training sequences were assigned 1 or 2 in position 22 according to their original class. This process ensured knowledge about the likelihood of belonging to either set could be learned by the model across time slices (positions). Class scores for the test sets were calculated based on gene, amino acid, and triplet frequencies in the training sets. Nodes depicting specificity (DPC or control) were included as hidden (latent) variables (the Class nodes in Figure 7A). Inference on the network was done using the Junction Tree algorithm, and parameters were initiated with Dirichlet priors and fitted to the network by Expectation Maximization with a maximum of 10 iterations. Two DBNs were constructed, one for the DPC training set and one for the control set. To classify TCR sequences, the log likelihood of each model was calculated. For sets of sequences, we calculated the sum log likelihood for each model. The results of the DBN were evaluated using 10-fold cross-validation, running each train-test pair 10 times, and calculating the mean classification accuracy (number of sequences/sets of sequences correctly classified divided by total number of sequences/sets of sequences). The training and test sets all consisted of equal numbers of DPC-related and control sequences, and running the DBN with shuffled class labels returned ~50% accuracy. The network diagram in Figure 7A was created using the LaTeX TikZ BayesNet package (https://github.com/jluttine/tikz-bayesnet; Luttinen and Dietz, 2013).

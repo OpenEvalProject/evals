@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.42143.001 Axon guidance requires interactions between extracellular signaling molecules and transmembrane receptors, but how appropriate context-dependent decisions are coordinated outside the cell remains unclear. Here we show that the transmembrane glycoprotein Dystroglycan interacts with a changing set of environmental cues that regulate the trajectories of extending axons throughout the mammalian brain and spinal cord. Dystroglycan operates primarily as an extracellular scaffold during axon guidance, as it functions non-cell autonomously and does not require signaling through its intracellular domain. We identify the transmembrane receptor Celsr3/Adgrc3 as a binding partner for Dystroglycan, and show that this interaction is critical for specific axon guidance events in vivo. These findings establish Dystroglycan as a multifunctional scaffold that coordinates extracellular matrix proteins, secreted cues, and transmembrane receptors to regulate axon guidance.
+Axon guidance requires interactions between extracellular signaling molecules and transmembrane receptors, but how appropriate context-dependent decisions are coordinated outside the cell remains unclear. Here we show that the transmembrane glycoprotein Dystroglycan interacts with a changing set of environmental cues that regulate the trajectories of extending axons throughout the mammalian brain and spinal cord. Dystroglycan operates primarily as an extracellular scaffold during axon guidance, as it functions non-cell autonomously and does not require signaling through its intracellular domain. We identify the transmembrane receptor Celsr3/Adgrc3 as a binding partner for Dystroglycan, and show that this interaction is critical for specific axon guidance events in vivo. These findings establish Dystroglycan as a multifunctional scaffold that coordinates extracellular matrix proteins, secreted cues, and transmembrane receptors to regulate axon guidance.
 
 ## Introduction
 
@@ -32,17 +32,33 @@ Here, we provide genetic evidence that Dystroglycan operates non-cell autonomous
 
 ## Results
 
-## Dystroglycan functions non-cell autonomously as an extracellular scaffold to guide commissural axons
+### Dystroglycan functions non-cell autonomously as an extracellular scaffold to guide commissural axons
 
 We have previously shown that defective glycosylation of Dystroglycan or conditional deletion of Dystroglycan throughout the epiblast results in defective axon tract formation in the developing spinal cord and visual system. We found that Dystroglycan is required to maintain the basement membrane as a permissive growth substrate and for the proper extracellular localization of the secreted axon guidance cue Slit (Clements and Wright, 2018; Wright et al., 2012). However, we have not tested whether Dystroglycan has a cell-autonomous role in regulating the guidance of spinal commissural axons. Examination of E12.5 spinal cord sections shows that in addition to its enrichment in the floor plate and the basement membrane (Figure 1A inset, arrows), Dystroglycan protein was detected in spinal commissural axons (Figure 1A, Figure 1—figure supplement 1A). The specificity of the Dystroglycan expression pattern was confirmed by showing its loss in mice in which the intracellular domain of Dystroglycan is genetically deleted (Figure 1—figure supplement 1B). In cultured e12.5 commissural axons, Dystroglycan was expressed throughout the axon, including the growth cone (arrows, Figure 1B). These results show that Dystroglycan is expressed in both commissural axons and the surrounding environment through which they navigate.
 
-Based on its association with the actin-binding proteins Dystrophin and Utrophin and its ability to regulate filopodial formation via ERK/MAPK and Cdc42 activation, we hypothesized that Dystroglycan could function within commissural axons as an adhesion receptor in vivo. To test this, we performed DiI labeling in open-book e12.5 spinal cord preparations. In control open book preparations, an average of 97.62 ± 2.38% of injection sites showed normal floor plate crossing and anterior turning (Figure 1C,G). In agreement with our previous findings, normal floorplate crossing and turning was observed in only 3.03±3.03% of injection sites from mice lacking Dystroglycan throughout the developing spinal cord (Dag1F/-;Sox2Cre) (Figure 1D,G). This phenotype is fully penetrant, and all of the abnormal injections sites in Dag1F/-;Sox2Cre mutants exhibited both stalling within the floorplate and an anterior-posterior (AP) randomization of post-crossing axonal trajectory. We next examined commissural axons in which the intracellular domain of Dystroglycan is deleted (Dag1βcyto/-), rendering it unable to bind dystrophin/utrophin or initiate ERK/MAPK or Cdc42 signaling (Satz et al., 2009). To our surprise, 89.52±6.75% of injection sites in Dag1βcyto/- mutants showed both normal floorplate crossing and anterior turning (Figure 1E,G), suggesting that the intracellular domain of Dystroglycan is dispensable for commissural axon guidance. To further test for a cell-autonomous role for Dystroglycan during axon guidance, we examined mice in which Dystroglycan is conditionally deleted from commissural axons (Dag1F/-;Wnt1Cre). 95.31±3.29% of injection sites in Dag1F/-;Wnt1Cre open book preparations displayed normal commissural axon growth and post-crossing anterior turning (Figure 1F,G).
+![Figure 1.](https://cdn.elifesciences.org/articles/42143/elife-42143-fig1-v2.jpg)
+
+**Figure 1.:** (A) Immunostaining of E12.5 spinal cord shows Dystroglycan protein (magenta, left panel) expression in commissural axons (L1, green, middle panel). In the high magnification insets, arrows indicate the enriched expression of Dystroglycan in the basement membrane of the spinal cord proximal to the axons. (B) Commissural neurons from E12 dorsal spinal cord cultured for two days in vitro (2DIV) were stained with antibodies to Dystroglycan (magenta, left panel), TUJ1 (green, middle panel). Dystroglycan is present throughout the cell body, axon and growth cone (arrow). (C–F) DiI injections in open-book preparations of E12 spinal cords were used to examine the trajectory of commissural axons. In controls (C), axons extend through the floor plate, then execute an anterior turn (n=6 animals, 49 total injection sites). In Dag1F/-;Sox2Cre mice (D), axons stall within the floor plate and post-crossing axons exhibit anterior-posterior randomization (n=3 animals, 18 total injection sites). (E) Commissural axons in mice lacking the intracellular domain of Dystroglycan (Dag1βcyto/-) show normal crossing and anterior turning (n=3 animals, 34 total injection sites). Conditional deletion of Dystroglycan from commissural neurons in Dag1F/-;Wnt1Cre mice (F) did not affect floor plate crossing or anterior turning (n=8 animals, 59 total injection sites). Higher magnification insets for each image show the anterior (top) and posterior (bottom) trajectories of post-crossing commissural axons. (G) Quantification of open book preparations. On average, 97.62 $\pm$ 3.39% of controls, 3.03 $\pm$ 4.80% of Dag1F/-;Sox2Cre mutants, 89.52 $\pm$ 4.80% of Dag1βcyto/- mutants, and 95.31 $\pm$ 2.94% of Dag1F/-;Wnt1Cre mutants showed normal crossing and anterior turning. All of the Dag1F/-;Sox2Cre mutants with turning defects also showed stalling within the floor plate. *p< 0.001, one-way ANOVA, Tukey’s post hoc test. Scale bar = 100μm (A), 10μm (B) and 50μm (F–H).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42143/elife-42143-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) An antibody raised against the intracellular domain of Dystroglycan shows staining in the basement membrane and in both pre-crossing and post-crossing commissural axons (A’). (B) Lack of staining in spinal cord sections from Dag1βcyto/- mutants verifies the specificity of the Dystroglycan antibody. (C–F) L1, Robo1 and Robo2 antibodies were used to label commissural axons in E12 spinal cord sections from Dag1F/+ (C–C”), Dag1F/-;Sox2Cre (D–D”), Dag1βcyto/- (E–E”), and Dag1F/-;Wnt1Cre (F–F”) mutants. Post-crossing axons are disorganized and the ventrolateral funiculus appears fragmented in Sox2Cre mutants (D–D”), but appears normal in Dag1βcyto/- (E–E”), and Dag1F/-;Wnt1Cre (F–F”) mutants. Scale bar = 100 μm.
+
+Based on its association with the actin-binding proteins Dystrophin and Utrophin and its ability to regulate filopodial formation via ERK/MAPK and Cdc42 activation, we hypothesized that Dystroglycan could function within commissural axons as an adhesion receptor in vivo. To test this, we performed DiI labeling in open-book e12.5 spinal cord preparations. In control open book preparations, an average of 97.62 $\pm$ 2.38% of injection sites showed normal floor plate crossing and anterior turning (Figure 1C,G). In agreement with our previous findings, normal floorplate crossing and turning was observed in only 3.03$\pm$3.03% of injection sites from mice lacking Dystroglycan throughout the developing spinal cord (Dag1F/-;Sox2Cre) (Figure 1D,G). This phenotype is fully penetrant, and all of the abnormal injections sites in Dag1F/-;Sox2Cre mutants exhibited both stalling within the floorplate and an anterior-posterior (AP) randomization of post-crossing axonal trajectory. We next examined commissural axons in which the intracellular domain of Dystroglycan is deleted (Dag1βcyto/-), rendering it unable to bind dystrophin/utrophin or initiate ERK/MAPK or Cdc42 signaling (Satz et al., 2009). To our surprise, 89.52$\pm$6.75% of injection sites in Dag1βcyto/- mutants showed both normal floorplate crossing and anterior turning (Figure 1E,G), suggesting that the intracellular domain of Dystroglycan is dispensable for commissural axon guidance. To further test for a cell-autonomous role for Dystroglycan during axon guidance, we examined mice in which Dystroglycan is conditionally deleted from commissural axons (Dag1F/-;Wnt1Cre). 95.31$\pm$3.29% of injection sites in Dag1F/-;Wnt1Cre open book preparations displayed normal commissural axon growth and post-crossing anterior turning (Figure 1F,G).
 
 We also examined spinal commissural axons by staining E12.5 spinal cord sections with antibodies to L1 or Robo1 and Robo2. As we have previously shown, post-crossing commissural axons in Dag1F/-;Sox2Cre mutants exhibit abnormal bundling and disruptions along the ventrolateral funiculus (Figure 1—figure supplement 1D). In contrast, he ventrolateral funiculus appears normal in both Dag1βcyto/- and Dag1F/-;Wnt1Cre mutants (Figure 1—figure supplement 1E–F), confirming the results obtained with open book preparations. Taken together, these results support a model that Dystroglycan functions non-cell autonomously as an extracellular scaffold to guide commissural axons in vivo.
 
-## Dystroglycan is required for axon tract development in the forebrain
+### Dystroglycan is required for axon tract development in the forebrain
 
 We next sought to determine whether loss of functional Dystroglycan also affected the formation of axon tracts in other regions of the developing nervous system. At E14.5, Dystroglycan is expressed by neuroepithelial cells and is enriched in the basement membrane surrounding the brain. It is also present in the ventral telencephalon, particularly in axons in the thalamus and the developing internal capsule, which is comprised of ascending thalamocortical and descending corticothalamic axons (Figure 2—figure supplement 1A–B). Therefore, we hypothesized that Dystroglycan may be required for axon tract development in the forebrain. In IspdL79*/L79* mutants, which lack glycosylated Dystroglycan, and Dag1F/-;Sox2Cre mutants, in which Dystroglycan is deleted throughout the epiblast, we observed severe defects in multiple forebrain axon tracts (Figure 2, Figure 2—figure supplement 1D,F). Abnormalities included fasciculated axons in the upper layers of the cortex (arrows), a large, swirling bundle of axons in the ventral telencephalon (asterisk), and a large axonal projection inappropriately exiting through the ventral diencephalon (arrowheads) (Figure 2A–C). These defects were somewhat variable in their severity, but were fully penetrant and all three of these defects were observed in all mutants.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/42143/elife-42143-fig2-v2.jpg)
+
+**Figure 2.:** (A) L1 immunohistochemistry on P0 brain sections from Dag1F/+;Sox2Cre controls (n = 3 animals) labels descending CTAs and ascending TCAs in the internal capsule. In Dag1F/-;Sox2Cre (n = 4 animals) (B) and IspdL79*/L79* (n = 5 animals) (C) mutants, the internal capsule is highly disorganized, with axons projecting into the upper layers of the cortex (red arrows), forming ectopic bundles in the ventral telencephalon (red asterisks), and abnormal projections extending ventrally (red arrowheads). High magnification insets show L1 +axons in the intermediate zone of the cortex of controls (A’) and ectopic axonal projections into the upper cortical layers in Dag1F/-;Sox2Cre (B’) and IspdL79*/L79* (C’) mutants. DiI injection in the thalamus of Dag1F/+;Sox2Cre controls (n = 4 animals) labels TCAs as they cross the DTB, extend through the ventral telencephalon, across the PSPB, and into the intermediate zone of the cortex. In Dag1F/-;Sox2Cre (n = 4 animals) (E) and IspdL79*/L79* (n = 4 animals) (F) mutants, TCAs fail to cross the DTB, and instead project ventrally out of the diencephalon. High magnification insets show DiI-labeled TCAs extending into the intermediate zone of the cortex of controls (D’), and a lack of labeled TCAs in the cortex of Dag1F/-;Sox2Cre (E’) and IspdL79*/L79* (F’) mutants. DiI injection in the cortex of Dag1F/+;Sox2Cre controls (n = 3 animals) labels CTAs as they extend across the PSPB, through the ventral telencephalon, and across the DTB into the thalamus. CTAs in Dag1F/-;Sox2Cre (n = 4 animals) (H) and IspdL79*/L79* (n = 5 animals) (I) mutants fail to cross the PSPB or take abnormal trajectories through the ventral telencephalon. High magnification insets show DiI-labeled CTAs extending into the thalamus in controls (G’), and a lack of labeled CTAs in the thalamus of Dag1F/-;Sox2Cre (I’) and IspdL79*/L79* (F’) mutants. (J–L) Schematic summarizing CTA (brown) and TCA (blue) axon trajectories in controls (J), Dag1F/-;Sox2Cre (K) and IspdL79*/L79* (L). Scale bar = 500 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42143/elife-42143-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Dystroglycan is expressed in the basement membrane surrounding the brain at E14.5. Dystroglycan is also expressed in the developing thalamus and in the axons that form the internal capsule (A, A’ inset). (B) Lack of staining in sections from Dag1βcyto/- mutants verifies the specificity of Dystroglycan staining in the cortex. (C–F) L1 staining was used to label forebrain axon tracts in P0 wildtype (n = 3 animals) (C,E) and IspdL79*/L79* mutants (n = 3 animals) (D,F). The corpus callosum (red asterisk) in IspdL79*/L79* mutants appears largely normal compared to controls. In contrast, the anterior commissure (red arrows) is thinner and disorganized in IspdL79*/L79* mutants (D). The lateral olfactory tract (red arrowheads) extends along the pial surface of the ventrolateral telencephalon in controls (C,E), whereas it appears hyperfasciculated and projects deeper into the piriform cortex as a disorganized bundle in IspdL79*/L79* mutants (D,F). Scale bar = 500 μm.
 
 To better understand the nature of the axonal defects in IspdL79*/L79* and Dag1F/-;Sox2Cre mutants, we used anterograde tract tracing. DiI labeling of thalamocortical axons (TCAs) in controls showed that axons cross the diencephalon-telencephalon boundary (DTB), extend dorsolaterally through the ventral telencephalon, and cross the pallial-subpallial boundary (PSPB) before turning medially to extend along the intermediate zone of the cortex (Figure 2D,J). In contrast, TCAs in both IspdL79*/L79* and Dag1F/-;Sox2Cre mutants largely failed to cross the DTB, and instead extended ventrally out of the diencephalon, often joining the optic tract (Figure 2E,F,K,L). Occasionally, TCAs take a more rostral route through the ventral telecephalon in an abnormal trajectory, where they eventually turn and enter the cortex. These aberrant TCAs then extend into the upper layers of the cortex in large fascicles rather than remaining in the intermediate zone (data not shown).
 
@@ -50,9 +66,21 @@ DiI injections in the cortex of controls labeled corticothalamic axons (CTAs) th
 
 In addition to the defects in TCAs and CTAs, other axon tracts within the developing forebrain were malformed in IspdL79*/L79* and Dag1F/-;Sox2Cre mutants. The anterior commissure was frequently diminished in IspdL79*/L79* mutants (Figure 2—figure supplement 1E,F). The lateral olfactory tract (LOT), which contains axons projecting from the olfactory bulb to cortical targets, normally forms directly beneath the pial surface of the ventrolateral rostral forebrain (arrowheads, Figure 2—figure supplement 1C,E). In IspdL79*/L79* mutants, the LOT was consistently abnormal, often projecting deeper into the ventrolateral forebrain (arrowheads, Figure 2—figure supplement 1D,F). We cannot exclude that there are fewer axons in the anterior commissure or the LOT in IspdL79*/L79* mutants, as the extreme disorganization of these axons tracts prevents accurate quantification. In contrast, the corpus callosum in IspdL79*/L79* mutants appears largely normal, despite the prominent number of axons projecting inappropriately into the upper layers of the cortex (Figure 2—figure supplement 1D,F). Taken together, these results show that glycosylated Dystroglycan is required for proper development of multiple axon tracts in the forebrain.
 
-## Dystroglycan functions non-cell autonomously to guide thalamocortical and corticothalamic axons
+### Dystroglycan functions non-cell autonomously to guide thalamocortical and corticothalamic axons
 
 Where does Dystroglycan function during forebrain axon tract development? As ascending TCAs and descending CTAs form the internal capsule, they interact with several intermediate targets along their trajectory (Figure 3A,A’). TCAs are guided ventrolaterally across the DTB by Isl1 +guidepost cells, then extend through a permissive ‘corridor’ in the ventral telencephalon formed by lateral ganglionic eminence (LGE) derived cells (Feng et al., 2016; López-Bendito et al., 2006; Métin and Godement, 1996). TCAs contact CTAs at the PSPB, then track along them within the intermediate zone, where they pause for several days before invading the cortical layers (Blakemore and Molnár, 1990; Catalano and Shatz, 1998; Chen et al., 2012). Descending CTAs extend in the opposite direction, first crossing the PSPB, then extending medially through the ventral telencephalon to the DTB along TCAs, where they turn dorsally into the thalamus (De Carlos and O'Leary, 1992; Molnár and Cordery, 1999).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/42143/elife-42143-fig3-v2.jpg)
+
+**Figure 3.:** L1 staining of P0 brain sections from Dag1F/+ controls (n = 3 animals) (A, F), Dag1F/-;Foxg1Cre (n = 4 animals) (B), Dag1F/-;Gbx2CreERT2 (n = 4 animals) (C), Dag1F/-;Emx1Cre (n = 3 animals) (D), Dag1F/-;Dlx5/6Cre (n = 3 animals) (E), and Dag1βcyto/- (n = 5 animals) (G). A’-E’ illustrate the recombination patterns in each Cre/CreERT2 line in the blue shaded area. Deletion of Dystroglycan throughout the neuroepithelium of the dorsal and ventral telencephalon in Dag1F/-;Foxg1Cre mutants (B, B’) results in abnormal projections in the internal capsule (red arrowheads) and abnormal axonal projections into the upper layers of the cortex (red arrows). Deletion of Dystroglycan from the neuroepithelium of the dorsal telencephalon with Emx1Cre mutants (D) results in abnormal axonal projections into the upper layers of the cortex (red arrows), but normal internal capsule formation. Deletion of Dystroglycan from the thalamus with Gbx2CreERT2 (C) or ‘corridor’ cells with Dlx5/6Cre (E) did not affect axon guidance. Deletion of the intracellular domain of Dystroglycan in Dag1βcyto/- mutants (G) did not affect formation of the internal capsule compared to control littermates (F). A-G Scale bar = 500 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42143/elife-42143-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–E) DiI injections into the cortex (top row) or thalamus (bottom row) of Dystroglycan conditional mutants labels CTAs and TCAs, respectively. CTAs (B) in Dag1F/-;Foxg1Cre mutants (n = 3 animals) take an abnormal trajectory through the ventral telencephalon, and TCAs (n = 4 animals) (B’) fail to cross the DTB and instead extend ventrally out of the diencephalon. CTAs in Dag1F/-;Gbx2CreERT2 (n = 3 animals) (C), Dag1F/-;Emx1Cre (n = 5 animals) (D) and Dag1F/-;Dlx5/6Cre (n = 3 animals) (E) mutants are normal, as are TCAs in Dag1F/-;Gbx2CreERT2 (n = 4 animals) (C’), and Dag1F/-;Dlx5/6Cre (n = 3 animals) (E’) mutants. TCAs in Dag1F/-;Emx1Cre (n = 4 animals) (D’) mutants project through the internal capsule normally, but project into the upper layers prematurely upon entering the cortex (red arrows). Scale bar = 500 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/42143/elife-42143-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Gbx2CreERT2 mice crossed to the AI9; Rosa26lox-stop-lox-tdTomato reporter (n = 2 animals) were dosed with 2.5 mg tamoxifen at e10.5. Analysis of brains at E16 showed recombination of the tdTomato reporter (green) in thalamic neurons/axons. (B) Emx1Cre mice crossed to the AI9; Rosa26lox-stop-lox-tdTomato reporter (n = 2 animals) showed recombination of the tdTomato reporter (green) in cortical neurons/axons at P0. Scale bar = 500 μm.
 
 Based on immunohistochemistry, Dystroglycan is expressed on both axons in the internal capsule, as well as intermediate targets/guidepost cells. To identify the specific cellular population in which Dystroglycan is required during internal capsule formation, we took advantage of Dystroglycan conditional mutants. We first examined Dag1F/-;Foxg1Cre mutants, in which Dystroglycan is deleted in neuroepithelial cells and their progeny throughout the dorsal and ventral telencephalon. This includes CTAs and guidepost cells in the ventral telencephalon, but not the developing thalamus or TCAs (Figure 3B’). Using immunostaining and DiI labeling, we found that both TCAs and CTAs took abnormal trajectories in Dag1F/-;Foxg1Cre mutants that were similar to those observed in Dag1F/-;Sox2Cre and Ispd mutants (arrowheads, Figure 3B, Figure 3—figure supplement 1B,B’). This phenotype was milder than Dag1F/-;Sox2Cre mutants, with some TCAs reaching the thalamus, but was fully penetrant, with all Dag1F/-;Foxg1Cre mutants showing a similar phenotype. To test whether Dystroglycan functions within TCAs, we utilized Dag1F/-;Gbx2CreERT2 mutants, in which tamoxifen administered at E10 results in recombination throughout the developing thalamus (Figure 3—figure supplement 2A). Based on L1 staining and DiI labeling of TCAs and CTAs, the internal capsule is normal Dag1F/-;Gbx2CreERT2 mutants (Figure 3C, Figure 3—figure supplement 1C,C’). Taken together, these results suggest that Dystroglycan is required in the telencephalon and not in TCAs during internal capsule formation.
 
@@ -60,7 +88,7 @@ To further dissect the role of Dystroglycan in the telencephalon, we examined Da
 
 We also tested whether forebrain axon guidance required signaling through the intracellular domain of Dystroglycan. L1 staining shows that the internal capsule, anterior commissure, lateral olfactory tract, and corpus callosum were all normal in Dag1βcyto/- mutants (Figure 3G, data not shown), demonstrating that intracellular signaling by Dystroglycan is completely dispensable for forebrain axon guidance. Collectively, we conclude that Dystroglycan is not required in CTAs (Emx1Cre), TCAs (Gbx2Cre), or ‘corridor’ cells (Dlx5/6Cre), but is required in neuroepithelial cells in the ventral telencephalon (Foxg1Cre). Taken together with our results in spinal commissural axons, these data support a model in which Dystroglycan functions non-cell autonomously as an extracellular scaffold to guide axon tract formation in multiple CNS regions.
 
-## Dystroglycan binds to the axon guidance receptor Celsr3
+### Dystroglycan binds to the axon guidance receptor Celsr3
 
 What are the relevant binding partners for glycosylated Dystroglycan during axon guidance? The majority of interacting proteins bind directly to Dystroglycan’s extensive glycan chains through their LG domains. Importantly, Dystroglycan can bind multiple proteins simultaneously, and increasing the length of its glycan chains increases its ligand binding capacity, suggesting it functions as a ‘tunable’ scaffold (Goddeeris et al., 2013). Dystroglycan binds Laminins to regulate the integrity of basement membranes, which can serve as a permissive growth substrate for extending axons (Clements et al., 2017; Clements and Wright, 2018; Wright et al., 2012). Dystroglycan also binds to the LG domain of Slits to regulate their extracellular distribution in the spinal cord (Wright et al., 2012). Similar to Dystroglycan mutants, Slit1;Slit2, Slit1;Slit2;Slit3 and Robo1;Robo2 mutants display defects in commissural axon crossing, as well as internal capsule, anterior commissure, and lateral olfactory tract formation (Bagri et al., 2002; Fouquet et al., 2007; Jaworski et al., 2010; Long et al., 2004; López-Bendito et al., 2007). However, Slit and Robo mutants do not display the prominent AP randomization seen in the commissural axons of IspdL79*/L79* and Dag1F/-;Sox2Cre mutants, raising the possibility that Dystroglycan interacts with additional molecules during axon guidance.
 
@@ -82,9 +110,17 @@ To test whether this conserved region of Celsr3-LG1 was required for Dystroglyca
 
 To test the specificity of Celsr3-LG1 binding to Dystroglycan in vivo, we utilized an AP-section binding assay. E12.5 spinal cord sections and E14.5 brain sections were incubated with AP alone, AP-Celsr3-LG1, or AP-Celsr3-LG1R1548Q. In E12.5 spinal cord, AP-Celsr3-LG1 binding was observed in post-crossing commissural axons in the ventrolateral funiculus (arrows, Figure 5G), similar to the expression pattern of Dystroglycan (Figure 1A, Figure 1—figure supplement 1A). In E14.5 brain sections, AP-LG1-Celsr3 binding was observed on axons in the internal capsule (arrows, Figure 5H), similar to the expression pattern of Dystroglycan (Figure 2—figure supplement 1A,B). The specificity of this binding was confirmed by the lack of AP alone binding in either the spinal cord or brain sections (Figure 5E,F). Furthermore, AP-Celsr3-LG1R1548Q showed diminished binding in both the spinal cord and brain (Figure 5I,J), consistent with our in vitro binding results (Figure 5D) and confirming the binding specificity between Dystroglycan and Celsr3-LG1.
 
-## Dystroglycan:Celsr3 interactions are specifically required for anterior turning of commissural axons
+### Dystroglycan:Celsr3 interactions are specifically required for anterior turning of commissural axons
 
 The axon guidance phenotypes we observed in Dystroglycan and Ispd mutants are similar to those seen in Slit/Robo and Celsr3 mutants. However, because Dystroglycan binds multiple LG-domain containing proteins through its glycan chains, the phenotypes identified in Dystroglycan and Ispd mutants likely reflect interactions with multiple extracellular proteins, including Laminins, Slits and Celsr3. To define which aspects of Dystroglycan-dependent axon tract formation require interactions with Celsr3, we used CRISPR/Cas9 genome editing to generate a knock-in mouse carrying an arginine-to-glutamine mutation at position 1548 in Celsr3 (Celsr3R1548Q). Celsr3R1548Q/R1548Q mice are viable and fertile, as opposed to Celsr3-/- mice, which die immediately after birth due to respiratory defects (Tissir et al., 2005). Analysis of brain lysates indicated that Celsr3 protein in Celsr3R1548Q/R1548Q mice migrates at the correct molecular weight, is present at normal levels, and does not lead to compensatory changes in the levels of Celsr1 (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/42143/elife-42143-fig6-v2.jpg)
+
+**Figure 6.:** (A) Western blotting of brain lysates from CelsrR1548Q/R1548Q mutants and wildtype littermates show no difference in size or expression level of Celsr3 or Celsr1 protein. Brain lysate from Celsr3-/- mutants is included as a control for antibody specificity. (B, C). In Celsr3WT/R1548Q heterozygous controls (B), DiI labeling of open book preparations shows that commissural axons extend through the floor plate, then execute an anterior turn in 86.5 ± 2.52% of injection sites (n = 7 animals, 49 total injection sites). In contrast, only 22.32 ± 6.35% of injection sites in Celsr3R1548Q/R1548Q mutants (n = 6 animals, 48 total injection sites) (C) show normal anterior turning, with the remaining 77.68% exhibiting AP randomization after crossing the floor plate, similar to Dag1F/-;Sox2Cre, IspdL79*/L79*, and Celsr3-/- mice. Higher magnification insets for each image show the anterior (top) and posterior (bottom) trajectories of post-crossing commissural axons. (D) Quantification of open book preparations, *p<0.001, Student’s T-test. (E–J) L1 immunohistochemistry (E, H) and DiI labeling of thalamocortical (F, I) and corticothalamic (G, J) axons show no defects in internal capsule formation in Celsr3R1548Q mutants. High magnification insets show DiI-labeled thalamocortical axons extending into the intermediate zone of the cortex (F’, I’) and DiI-labeled corticothalamic axons entering the thalamus (G’,J’). (K) Proposed model for Dystroglycan:Celsr3 interactions in guiding commissural axons. Scale bar = 50 μm (B,C), 500 μm (E–J).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/42143/elife-42143-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Evolutionary conservation of Celsr3-LG1 region that forms a putative binding interface with Dystroglycan. The conserved Arginine (blue), Aspartic Acid (red) and Glycine (purple) residues critical for LG domain binding are highlighted. (B) Schematic of the Celsr3 nucleotide and amino acid sequence highlighting the specific sequence targeted to generate CelsrR1548Q knock-in mice. (C) Genotyping of wildtype, CelsrR1548Q/+, and CelsrR1548Q/R1548Q mutants. (D–E) L1, Robo1 and Robo2 antibodies were used to label commissural axons in E12 spinal cord sections from CelsrR1548Q/+ (D–D”) and CelsrR1548Q/R1548Q (E–E”), mutants. Post-crossing axons appear normal in CelsrR1548Q/R1548Q mutants. Scale bar = 100 μm (D,E).
 
 We first examined spinal commissural axon crossing and anterior turning in Celsr3R1548Q/R1548Q mutants in open-book preparations. Remarkably, post-crossing commissural axons exhibited randomization along the AP axis, similar to Celsr3-/-, IspdL79*/L79*, and Dag1F/-;Sox2Cre mutants (Figure 6C). Quantification shows that only 22.32 ± 6.35% of injection sites in Celsr3R1548Q/R1548Q mutants had normal anterior turning, while the remaining 77.68% exhibited AP randomization. This phenotype was fully penetrant, with all Celsr3R1548Q/R1548Q mutants showing abnormal turning at multiple injection sites. Importantly, none of the Celsr3R1548Q/R1548Q mutants exhibit the floorplate stalling phenotypes that are seen in IspdL79*, Dag1F/-;Sox2Cre, and Slit/Robo compound mutants, consistent with Celsr3’s specific role in regulating anterior turning in post-crossing commissural axons. E12.5 spinal cord sections labeled with antibodies to L1 or Robo1 and Robo2 (Figure 6—figure supplement 1A–E) confirm that the overall structure of the ventrolateral funiculus in Celsr3R1548Q/R1548Q mutants appears normal. This is consistent with Celsr3F/F;Wnt1Cre mutants, which also exhibit AP randomization but normal L1 staining of post-crossing axons, indicating that despite their AP randomization, these axons still extend within the ventrolateral funiculus (Onishi et al., 2013). Overall, these results show that Celsr3 interacts with Dystroglycan through its LG1 domain to direct the proper anterior turning of post-crossing commissural axons.
 
@@ -96,7 +132,7 @@ The neurological abnormalities in patients with dystroglycanopathy are extremely
 
 Using a model of severe dystroglycanopathy (IspdL79*) and Dystroglycan conditional mutants, we now show that Dystroglycan is required for proper development of several major axon tracts, including commissural axons in the spinal cord and several major axon tracts in the forebrain. Taken with our previous results, these findings demonstrate that axon guidance defects are a key feature of dystroglycanopathy, which arise due to Dystroglycan’s interaction with multiple ECM proteins, secreted axon guidance cues, and transmembrane axon guidance receptors.
 
-## Dystroglycan interacts with multiple LG domain containing proteins to regulate axon guidance at intermediate targets
+### Dystroglycan interacts with multiple LG domain containing proteins to regulate axon guidance at intermediate targets
 
 As axons develop, guidepost cells function as intermediate targets and express molecular cues that direct them to their final targets in a step-wise manner (Squarzoni et al., 2015). These guidepost cells include glia, neurons, and other axons. In the developing spinal cord, commissural axons are initially directed ventrally by repulsive cues emanating from specialized cells in the roof plate, and extend along the basal endfeet of neuroepithelial cells, where Netrin accumulates to generate a permissive substrate for commissural axon growth (Augsburger et al., 1999; Butler and Dodd, 2003; Varadarajan and Butler, 2017; Varadarajan et al., 2017). These axons then encounter a specialized population of midline glial cells at the floor plate that express a number of other attractive and repulsive guidance cues, including Netrin, VEGF, Shh, Slits, and Semaphorins that promote crossing at the ventral midline and prevent recrossing (Charron et al., 2003; Kennedy et al., 1994; Long et al., 2004; Nawabi et al., 2010; Ruiz de Almodovar et al., 2011). In addition, cell adhesion molecules expressed on both commissural axons and within the floor plate are critical for proper midline crossing (Stoeckli and Landmesser, 1995; Stoeckli et al., 1997). Finally, an anteriorhigh:posteriorlow gradient of Wnts guides commissural axons rostrally towards the brain (Lyuksyutova et al., 2003). Similar to the spinal cord, cues derived from specialized midline glia in the brain guide axons across the dorsal midline through the corpus collosum and the anterior commissure and optic chiasm in the ventral forebrain (Bagri et al., 2002; Erskine et al., 2011; Marcus et al., 1995; Shu and Richards, 2001; Silver and Ogawa, 1983; Williams et al., 2003).
 
@@ -108,11 +144,11 @@ Dystroglycan and Ceslr3 mutants have similar phenotypes in all three of these fo
 
 If Dystroglycan:Celsr3 interactions are not required for internal capsule formation, what could explain the severe forebrain axon guidance phenotypes in IspdL79*/L79* and Dag1F/-;Sox2Cre mutants? Dystroglycan has the ability to bind multiple LG-domain containing partners simultaneously through its extensive glycan chains, making it difficult to ascribe function to a single molecular interaction. However, Slits are likely candidates in the forebrain, as Slit and Robo mutants exhibit defects in internal capsule, anterior commissure and lateral olfactory tract development similar to IspdL79*/L79* and Dag1F/-;Sox2Cre mutants (Bagri et al., 2002; Bielle et al., 2011; Fouquet et al., 2007; López-Bendito et al., 2007; Nguyen-Ba-Charvet et al., 2002). TCAs, CTAs, and olfactory axons are all responsive to Slit, and Slit expression by Nkx2.1+midline glia regulates anterior commissure formation (Braisted et al., 2009; Li et al., 1999; Minocha et al., 2015; Nguyen Ba-Charvet et al., 1999; Shu and Richards, 2001). In addition to directly repelling axons, Slits also regulate the migration of guidepost neurons in the internal capsule and lateral olfactory tract, suggesting the axon guidance phenotypes may be secondary to neuronal migration defects (Bielle et al., 2011; Fouquet et al., 2007). Our results demonstrate that Dystroglycan functions non-cell autonomously in neuroepithelial cells, and not in axons or guidepost cells, during forebrain axon tract development. Therefore, Dystroglycan may influence neuronal migration and axon guidance in the forebrain by regulating the distribution of Slit proteins, similar to its role in the ventral midline of the spinal cord. Determining precisely how these pathways interact to regulate axon tract formation will require careful spatial and temporal manipulation of their expression in vivo.
 
-## Evolutionary conservation of dystroglycan function during axon guidance
+### Evolutionary conservation of dystroglycan function during axon guidance
 
 Dystroglycan and its binding partners have evolutionarily conserved roles in regulating axon guidance. The C. elegans Dystroglycan homologue DGN-1 is required for follower axons to faithfully track along pioneer axons (Johnson and Kramer, 2012). Similarly, FMI-1, the C. elegans homologue of Celsr3, is involved in both pioneer and follower axon guidance in the ventral nerve cord (Steimel et al., 2010). FMI-1 phenotypes could be rescued by expressing the regions encompassing either the cadherin repeats or the EGF and LG domains of FMI-1, suggesting that it may function in both a homophilic and heterophilic manner, depending on the context. In D. melanogaster, the Dystroglycan homologue Dg functions in both neurons and glial cells to guide the proper targeting of photoreceptor axons to the optic lobe (Shcherbata et al., 2007). Slit mutants and RNAi to Robo1/2/3 show a remarkably similar photoreceptor targeting phenotype to Dg mutants, which arises from a failure to form a proper boundary between the lamina glia and the lobula cortex (Tayler et al., 2004). Flamingo, the Drosophila homologue of Celsr3, functions at a subsequent step in visual system development to non-cell autonomously regulate synaptic choice of photoreceptors (Chen and Clandinin, 2008; Lee et al., 2003; Senti et al., 2003). The remarkable similarities in axon targeting defects seen in Dystroglycan, Slit and Celsr3 mutants across species suggests that their interactions are evolutionarily conserved.
 
-## Dystroglycan regulates several aspects of nervous system development by binding to multiple proteins
+### Dystroglycan regulates several aspects of nervous system development by binding to multiple proteins
 
 In addition to regulating axon guidance decisions throughout the nervous system, Dystroglycan is required for neuronal migration, synapse formation, glial development, and maintenance of the blood-brain barrier (Clements et al., 2017; Früh et al., 2016; McClenahan et al., 2016; Menezes et al., 2014; Michele et al., 2002; Moore et al., 2002; Myshrall et al., 2012; Saito et al., 2003; Satz et al., 2008; Satz et al., 2010; Wright et al., 2012). The widespread nature of these defects reflects the reiterative function of Dystroglycan throughout neurodevelopment and its interactions with multiple partners.
 
@@ -126,7 +162,248 @@ In summary, our results establish a widespread role for Dystroglycan in regulati
 
 ## Materials and methods
 
-## Generation and analysis of mutant mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Dag1Flox</td>
+      <td>Jackson Labs</td>
+      <td>stock: 009652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>DagBcyto</td>
+      <td>PMID: 19846701</td>
+      <td></td>
+      <td>Dr. Kevin Campbell, HHMI, University of Iowa</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>IspdL79*</td>
+      <td>PMID: 23217742, Jackson Labs</td>
+      <td>stock: 022019</td>
+      <td>Dr. Kevin Wright, Vollum Institute</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Celsr3R1548Q</td>
+      <td>generated de novo</td>
+      <td></td>
+      <td>Dr. Kevin Wright, Vollum Institute</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Sox2Cre</td>
+      <td>Jackson Labs</td>
+      <td>stock: 008454</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Wnt1Cre</td>
+      <td>Jackson Labs</td>
+      <td>stock: 022137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Foxg1Cre</td>
+      <td>Jackson Labs</td>
+      <td>stock: 006084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Gbx2CreERT2</td>
+      <td>Jackson Labs</td>
+      <td>stock: 022135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Emx1Cre</td>
+      <td>Jackson Labs</td>
+      <td>stock: 005628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Dlx5/6Cre</td>
+      <td>Jackson Labs</td>
+      <td>stock: 008199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>R26-LSL-TdTomato</td>
+      <td>Jackson Labs</td>
+      <td>stock: 007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>CRL-11268, RRID:CVCL_1926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (C. aethiops)</td>
+      <td>COS7</td>
+      <td>ATCC</td>
+      <td>CRL-1651, RRID:CVCL_0224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>L1 (rat monoclonal)</td>
+      <td>Millipore</td>
+      <td>RRID: AB_2133200</td>
+      <td>1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Robo1 (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>RRID: AB_354969</td>
+      <td>1:250 dillution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Robo2 (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>RRID: AB_2181857</td>
+      <td>1:250 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Dystroglycan (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>RRID: AB_1118902</td>
+      <td>1:50 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>myc (mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>RRID: AB_2533008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IIH6 glcosylated dystroglycan (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>RRID: AB_309828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Celsr3 (rabbit poyclonal)</td>
+      <td>Fadel Tissir</td>
+      <td></td>
+      <td>Dr. Fadel Tissir, UC Louvain</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Celsr1 (guinea pig polyclonal)</td>
+      <td>Fadel Tissir</td>
+      <td></td>
+      <td>Dr. Fadel Tissir, UC Louvain</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (O. cuniculus)</td>
+      <td>DG-Fc</td>
+      <td>PMID: 11604425</td>
+      <td></td>
+      <td>Dr. Kevin Campbell, HHMI, University of Iowa</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Celsr3-GFP</td>
+      <td>PMID: 25108913</td>
+      <td></td>
+      <td>Dr. Fadel Tissir, UC Louvain</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Celsr3-GFP-R1548Q</td>
+      <td>generated de novo</td>
+      <td></td>
+      <td>Dr. Kevin Wright, Vollum Institute</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic vector)</td>
+      <td>AP-Tag5-COMP</td>
+      <td>generated de novo</td>
+      <td></td>
+      <td>Dr. Kevin Wright, Vollum Institute</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AP-Tag5-COMP-Celsr3-LG1</td>
+      <td>generated de novo</td>
+      <td></td>
+      <td>Dr. Kevin Wright, Vollum Institute</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AP-Tag5-COMP-Celsr3-LG2</td>
+      <td>generated de novo</td>
+      <td></td>
+      <td>Dr. Kevin Wright, Vollum Institute</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AP-Tag5-COMP-Celsr3-LG1-R1548Q</td>
+      <td>generated de novo</td>
+      <td></td>
+      <td>Dr. Kevin Wright, Vollum Institute</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DiI</td>
+      <td>Thermo Fisher</td>
+      <td>D-3911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BCIP</td>
+      <td>Roche Applied Science</td>
+      <td>Cat: 11383221001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBT</td>
+      <td>Roche Applied Science</td>
+      <td>Cat: 11383213001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>cell surface biotinylation kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat: 89881</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation and analysis of mutant mice
 
 IspdL79* (Wright et al., 2012), DystroglycanFlox/Flox (Michele et al., 2002), Dystroglycanβcyto (Satz et al., 2009), Sox2Cre (Hayashi et al., 2002), Foxg1Cre (Hébert and McConnell, 2000), Gbx2CreERT2 (Chen et al., 2009) Emx1Cre (Gorski et al., 2002), Dlx5/6Cre (Stenman et al., 2003), and Wnt1Cre mice were maintained on a C57Bl/6J background. Ai9/R26LSL-TdTomato mice were maintained on an outbred CD1 background.
 
@@ -134,7 +411,7 @@ Celsr3R1548Q mice were generated using CRISPR/Cas9 pronuclear injection by the H
 
 Mice were handled and bred in accordance with the Oregon Health and Science University IACUC guidelines. Embryos were obtained from timed pregnancies, with the date of plug appearance counted as e0.5. To generate Dystroglycan conditional knockouts, Dystroglycan+/-; Cre + male breeders were crossed to DystroglycanFlox/Flox females. All conditional knockout analyses used DystroglycanF/+; Cre + littermates. Phenotypic analysis was conducted on at least three different offspring obtained from at least three different litters, using at least two different male breeders, without regard to sex of animals analyzed. Mice were genotyped by PCR as previously described.
 
-## Immunohistochemistry and anterograde tract tracing
+### Immunohistochemistry and anterograde tract tracing
 
 For analysis of brains, P0 mice were euthanized by decapitation, brains were removed and fixed in 4% paraformaldehyde at 4° overnight. For L1 immunostaining, brains were washed three times for 30 min each in PBS, then embedded in low melt agarose. 150 μm thick vibrotome sections were collected and washed once in PBS, blocked for 30 min in PBS + 0.25% TritonX-100, 5% goat serum, then incubated in primary antibody diluted in blocking buffer at 4° for two days. Sections were washed in PBS five times for thirty minutes each, then incubated in secondary antibody diluted in blocking buffer at room temperature, overnight. Sections were then washed five times for 1 hr each in PBS, with DAPI (1:5000) included in the second wash step. Sections were then mounted on Permafrost slides, light protected with Fluoromount-G (Southern Biotech), and imaged.
 
@@ -142,11 +419,11 @@ For spinal cord sections, E12.5 embryos were fixed in 2% paraformaldehyde at 4°
 
 For anterograde tract tracing, DiI crystals were inserted into the cortex or thalamus of fixed brains, returned to 4% paraformaldehyde, and incubated at 37° for 5–7 days. Brains were then embedded in low melt agarose, 150 μm thick vibrotome sections were collected in PBS, incubated in DAPI (1:5000) for 30 min, washed once in PBS for five minutes, mounted, and imaged on a Zeiss M2 Imager equipped with ApoTome. Images were processed in Zeiss Zen Blue and Adobe Photoshop six software.
 
-## Open book preparations
+### Open book preparations
 
 Embryos were collected at E12.5 and fixed for 30 min in 0.5% paraformaldehyde. Spinal cords were then removed, split along the roof plate, the meninges were removed, and the flattened spinal cords were fixed in 4% paraformaldehyde for four hours at room temperature. DiI crystals were then inserted along the lateral margin of the spinal cord and tissue was incubated in 4% paraformaldehyde at room temperature overnight. Open book preparations were then imaged on a Zeiss ZoomV-16 dissecting microscope at 50X magnification. Each injection site was scored blind to genotype by three lab members as to whether axons correctly executed an anterior turn. Percent correct turn was calculated by dividing the number of injection sites that turn anterior by the total number of injection sites within each spinal cord. Each animal represents a single ‘N’
 
-## Binding assays
+### Binding assays
 
 293 T cells (ATCC, CRL-11268) were transfected with constructs encoding Fc-tagged Dystroglycan (DG-Fc), AP-tag alone, AP-Celsr3-LG1, AP-Celsr3-LG-2, AP-Celsr3-LG1R1548Q, or AP-Slit-Cterm. After recovery, cells were maintained in OptiMEM for 48–72 hr, after which supernatant was collected, concentrated by centrifugation (Amicon, 10kD molecular weight cutoff), and exchanged to binding buffer (20 mM Hepes, pH 7.0, 150 mM NaCl, 2.5 mM CaCl2). DG-Fc was coupled to Protein-A agarose beads for 6 hr at 4°, beads were washed once in binding buffer, and 5 nM of AP-tagged ligand was added and beads were incubated at 4° overnight, rocking.
 
@@ -158,12 +435,12 @@ For live cell binding assays, COS7 cells (ATCC, CRL-1651) plated on poly-D-lysin
 
 For AP-section binding assays, embryos (E12.5 for spinal cord; E14.5 for brain) were lightly fixed in 2% paraformaldehyde for 4 hr, washed three times in PBS and incubated in 15% sucrose overnight. Tissue was embedded in OCT and 35 μm thick cryosections were mounted on frosted glass slides. Tissue was washed twice in binding buffer (20 mM Hepes pH 7.5, 100 mM NaCl, 5 mM CaCl2), then incubated in binding buffer at 68°C for 90 min to inactivate endogenous alkaline phosphatase activity. Sections were then incubated with the indicated ligands diluted to 5 nM in binding buffer at 4° for 60 min. Slides were washed five times in binding buffer to remove non-specific binding, and bound ligand was crosslinked by briefly incubating slides in 4% paraformaldehyde for 60 s. Slides were then washed in AP buffer (100 mM Tris, pH 9.0, 50 mM MgCl2), then incubated with BCIP/NBT in AP buffer until signal developed. The reaction was then stopped by incubating in 4% paraformaldehyde with 50 mM EDTA for 10 min, slides were coverslipped and imaged on a Zeiss AxioZoon.V16 dissecting microscope.
 
-## Celsr3R1548Q-GFP generation and in vitro assays
+### Celsr3R1548Q-GFP generation and in vitro assays
 
 Celsr3R1548Q-GFP was generated by QuickChange Mutagenesis from the parent Celsr3-GFP vector (Chai et al., 2014). 293 T cells grown on PDL-coated coverslips were transfected with either Celsr3-GFP or Celsr3R1548Q-GFP, and analyzed 48 hr later. For analysis of protein localization by immunocytochemistry, cells were briefly fixed in 4% PKS (paraformaldehyde in Krebs + sucrose) for 30 min at room temperature. Cells were then washed three times in PBS for 10 min, blocked for 30 min in PBS + 0.25% TritonX-100, 5% goat serum, then incubated in primary antibody diluted in blocking buffer at 4° overnight. Cells were washed in PBS five times for five minutes each, then incubated in secondary antibody diluted in blocking buffer at room temperature for two hours. Cells were then washed five times for 5 min each in PBS, with DAPI (1:5000) included in the second wash step. Coverslips were then mounted and imaged.
 
 For total and cell surface expression, 293 T cells in 60 mm plates were transfected with either Celsr3-GFP or Celsr3R1548Q-GFP and allowed to recover for 48 hr. Cell surface labeling was done with the Pierce Cell Surface Protein Isolation Kit, according to the manufacturer’s instructions.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 No statistical methods were used to predetermine sample sizes, but they were similar to our previous work (Clements et al., 2017; Wright et al., 2012). For all phenotypic analyses, tissue was collected from at least three different offspring obtained from at least three different litters, using at least two different male breeders. All analysis was done blind to genotype. Data was tested for normality and statistical analysis was conducting using JMP Pro version 13.0 (SAS Institute). Comparison between two groups was analyzed using a Student’s t test; Comparison between two or more groups was analyzed using a one-way ANOVA and Tukey’s post hoc test. *p<0.0001.

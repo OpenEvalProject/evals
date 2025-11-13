@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.47612.001 Bacterial populations vary in their stress tolerance and population structure depending upon whether growth occurs in well-mixed or structured environments. We hypothesized that evolution in biofilms would generate greater genetic diversity than well-mixed environments and lead to different pathways of antibiotic resistance. We used experimental evolution and whole genome sequencing to test how the biofilm lifestyle influenced the rate, genetic mechanisms, and pleiotropic effects of resistance to ciprofloxacin in Acinetobacter baumannii populations. Both evolutionary dynamics and the identities of mutations differed between lifestyle. Planktonic populations experienced selective sweeps of mutations including the primary topoisomerase drug targets, whereas biofilm-adapted populations acquired mutations in regulators of efflux pumps. An overall trade-off between fitness and resistance level emerged, wherein biofilm-adapted clones were less resistant than planktonic but more fit in the absence of drug. However, biofilm populations developed collateral sensitivity to cephalosporins, demonstrating the clinical relevance of lifestyle on the evolution of resistance.
+Bacterial populations vary in their stress tolerance and population structure depending upon whether growth occurs in well-mixed or structured environments. We hypothesized that evolution in biofilms would generate greater genetic diversity than well-mixed environments and lead to different pathways of antibiotic resistance. We used experimental evolution and whole genome sequencing to test how the biofilm lifestyle influenced the rate, genetic mechanisms, and pleiotropic effects of resistance to ciprofloxacin in Acinetobacter baumannii populations. Both evolutionary dynamics and the identities of mutations differed between lifestyle. Planktonic populations experienced selective sweeps of mutations including the primary topoisomerase drug targets, whereas biofilm-adapted populations acquired mutations in regulators of efflux pumps. An overall trade-off between fitness and resistance level emerged, wherein biofilm-adapted clones were less resistant than planktonic but more fit in the absence of drug. However, biofilm populations developed collateral sensitivity to cephalosporins, demonstrating the clinical relevance of lifestyle on the evolution of resistance.
 
 ## Introduction
 
@@ -30,37 +30,364 @@ Here, we study the evolutionary dynamics and effects of new resistance mutations
 
 ## Results and discussion
 
-## Experimental evolution
+### Experimental evolution
 
 Replicate cultures of the susceptible A. baumannii strain ATCC 17978 (Piechaud and Second, 1951; Baumann et al., 1968) were established under planktonic or biofilm conditions in one of three treatments: i) no antibiotics, ii) sub-inhibitory concentration of the antibiotic ciprofloxacin (CIP) and iii) evolutionary rescue (Bell and Gonzalez, 2009) in which CIP concentrations were increased every 72 hr from subinhibitory concentrations to four times the minimum inhibitory concentration (MIC) (Figure 1A). Before the start of the antibiotic evolution experiment, we propagated the ATCC strain for ten days in planktonic conditions to reduce the influence of adaptation to the laboratory conditions on subsequent comparisons. CIP was chosen because of its clinical importance in treating A. baumannii (Lopes and Amyes, 2013; Ardebili et al., 2014; Doi et al., 2015), its ability to penetrate the biofilm matrix (Tseng et al., 2013) allowing similar efficacy in well mixed and structured populations (Kirby et al., 2012), and because it is not known to stimulate biofilm formation in A. baumannii (Aka and Haji, 2015). Planktonic populations were serially passaged by daily 1:100 dilution while biofilm populations were propagated using a bead model simulating the biofilm life cycle (Poltak and Cooper, 2011; Traverse et al., 2013; Turner et al., 2018). This model selects for bacteria that attach to a 7 mm polystyrene bead, form a biofilm, and then disperse to colonize a new bead each day. (A video tutorial for this protocol is available at http://evolvingstem.org/see-it-in-action). The transfer population size in biofilm and in planktonic cultures was set to be nearly equivalent at the beginning of the experiment (approximately 1 × 107 CFU/mL), because population size influences mutation availability and the response to selection (Salverda et al., 2017; Cooper, 2018). Each day, the population size increases 100-fold during regrowth, generating approximately 106 new mutations per day using a conservative but experimentally justified estimate of the mutation rate (Lynch et al., 2016; Dillon et al., 2017). Effects of fluoroquinolones like CIP have been shown to increase the mutation rate by an order of magnitude, and some studies suggest biofilm growth may also increase the mutation rate (Boles and Singh, 2008; Long et al., 2016; Pribis et al., 2019). Thus any differences in mutated genes reaching high frequency between treatments are almost certainly the product of selection and not a lack of mutation availability, though early-arising or more probable beneficial mutations could sweep and limit invasion of selectively equivalent mutations in different genes (Khan et al., 2011; Flynn et al., 2013; Kryazhimskiy et al., 2014). The mutational dynamics of three lineages from each treatment were tracked by whole-population genomic sequencing (Figure 1A). We also sequenced 49 single clones isolated from 22 populations at the end of the 12 day experiment to determine mutation linkage.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/47612/elife-47612-fig1-v2.jpg)
 
-**Figure 1.:** A) and dynamics of evolved resistance levels during the evolutionary rescue experiment (B).(A) A single clone of A. baumannii ATCC 17978 was propagated both in biofilm and planktonic conditions for 12 days under no antibiotics (top), subinhibitory concentrations of CIP (0.0625 mg/L = 0.5 x MIC) (middle) or in increasing concentrations of CIP (bottom). For the latter, termed evolutionary rescue, the concentration of CIP was doubled from 0.5 x MIC to 4.0 x MIC every 72 hr. As a control, five populations of A. baumannii ATCC 17978 were propagated in biofilm and five in planktonic conditions in the absence of antibiotics. We estimated the MICs to CIP and froze the populations for sequencing before and after doubling the antibiotic concentrations (red stars). (B) MICs (mg/L) of CIP were measured for replicate populations during the evolutionary rescue. The red and blue points represent the MICs of three populations propagated in planktonic or biofilm, respectively, with the 95% CI represented by the error bars. The red and blue lines represent the grand mean of the three planktonic and biofilm populations, respectively, with the upper 95% CI indicated by the gray shaded area. Horizontal dashed line indicates the highest CIP exposure during the experiment (4x MIC) and vertical lines indicate time when CIP concentration was doubled.
+**Figure 1.:** (A) A single clone of A. baumannii ATCC 17978 was propagated both in biofilm and planktonic conditions for 12 days under no antibiotics (top), subinhibitory concentrations of CIP (0.0625 mg/L = 0.5 x MIC) (middle) or in increasing concentrations of CIP (bottom). For the latter, termed evolutionary rescue, the concentration of CIP was doubled from 0.5 x MIC to 4.0 x MIC every 72 hr. As a control, five populations of A. baumannii ATCC 17978 were propagated in biofilm and five in planktonic conditions in the absence of antibiotics. We estimated the MICs to CIP and froze the populations for sequencing before and after doubling the antibiotic concentrations (red stars). (B) MICs (mg/L) of CIP were measured for replicate populations during the evolutionary rescue. The red and blue points represent the MICs of three populations propagated in planktonic or biofilm, respectively, with the 95% CI represented by the error bars. The red and blue lines represent the grand mean of the three planktonic and biofilm populations, respectively, with the upper 95% CI indicated by the gray shaded area. Horizontal dashed line indicates the highest CIP exposure during the experiment (4x MIC) and vertical lines indicate time when CIP concentration was doubled.
 
-## Evolution of CIP resistance
+### Evolution of CIP resistance
 
 The rate and extent of evolved resistance depends on the strength of antibiotic selection (Andersson and Hughes, 2014; Oz et al., 2014), the distribution of fitness effects of mutations that increase resistance to the drug (Maclean et al., 2010), and the population size of replicating bacteria (Salverda et al., 2017; Cooper, 2018). The mode of bacterial growth can in principle alter each of these three variables and generate different dynamics and magnitudes of AMR. In the populations exposed to the increasing concentrations of CIP (the evolutionary rescue), the magnitude of evolved CIP resistance differed between planktonic and biofilm populations. Planktonic populations became approximately 160x more resistant on average than the ancestral clone while the biofilm populations became only 6x more resistant (Figure 1B and Table 1). Planktonic populations also evolved resistance much more rapidly, becoming 10x more resistant after only 24 hr of growth in sub-inhibitory CIP. This level of resistance would have been sufficient for surviving the remainder of the experiment, but MICs continued to increase at each sampling (Figure 1B). The evolution of resistance far beyond the selective requirement indicates that mutations conferring higher resistance also increased fitness in planktonic populations exposed to CIP.
+
+**Table 1.**
+ Antibiotic susceptibility of the populations propagated in the absence, in subinhibitory concentrations or increasing concentrations of CIP at the end of the experiment (day 12).MICs are expressed in mg/L and standard errors of the mean are indicated. Fold increases in MIC compared to the ancestral strain are also indicated.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment and Populations</th>
+      <th>MIC (mg/L)</th>
+      <th>Fold MIC increase</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No Antibiotic</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Planktonic</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P1</td>
+      <td>0.25 ± 0.00</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>P2</td>
+      <td>0.25 ± 0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>P3</td>
+      <td>0.21 ± 0.03</td>
+      <td>1.68</td>
+    </tr>
+    <tr>
+      <td>Biofilm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B1</td>
+      <td>0.25 ± 0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>B2</td>
+      <td>0.25 ± 0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>B3</td>
+      <td>0.25 ± 0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Subinhibitory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Planktonic</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P1</td>
+      <td>2.33 ± 0.72</td>
+      <td>18.64</td>
+    </tr>
+    <tr>
+      <td>P2</td>
+      <td>4 ± 0</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>P3</td>
+      <td>1 ± 0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Biofilm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B1</td>
+      <td>0.41 ± 0.07</td>
+      <td>3.28</td>
+    </tr>
+    <tr>
+      <td>B2</td>
+      <td>0.5 ± 0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>B3</td>
+      <td>0.5 ± 0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Evolutionary rescue</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Planktonic</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P1</td>
+      <td>26.67 ± 5.34</td>
+      <td>213.36</td>
+    </tr>
+    <tr>
+      <td>P2</td>
+      <td>32 ± 0</td>
+      <td>256</td>
+    </tr>
+    <tr>
+      <td>P3</td>
+      <td>6.67 ± 1.34</td>
+      <td>53.36</td>
+    </tr>
+    <tr>
+      <td>Biofilm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B1</td>
+      <td>1 ± 0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>B2</td>
+      <td>0.5 ± 0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>B3</td>
+      <td>0.83 ± 0.17</td>
+      <td>6.64</td>
+    </tr>
+  </tbody>
+</table>
 
 In contrast, biofilm-evolved populations evolved under the evolutionary rescue regime acquired much lower levels of resistance (ca. 3– 7x the ancestral MIC) and primarily in a single step between days 3 and 4 (Figure 1B). In one notable exception, the MIC of biofilm population B2 increased ~50 x after 3 days of selection in subinhibitory concentrations of CIP (Figure 1B), but then the resistance of this population declined to only 6x higher than the ancestral strain. This dynamic suggested that a mutant conferring high-level resistance rose to intermediate frequency but was replaced by a more fit, yet less resistant, mutant (this possibility is evaluated below).
 
 Lower levels of resistance were observed in populations selected at constant subinhibitory concentrations of CIP. Biofilm populations were 4x more resistant than the ancestor and planktonic populations were 20x more resistant (Table 1). We can infer that biofilm growth does not select for the high-level resistance seen in planktonic populations, instead favoring mutants with low levels of resistance and better adapted to life in a biofilm. It is important to note that these MIC measurements were made in planktonic conditions according to the clinical standards (CLSI, 2019) and that these values increased when measured in biofilm (Table 2). Our results correspond with studies of clinical isolates in which those producing more biofilm (and likely having adapted in biofilm conditions) were less resistant than non-biofilm-forming isolates (Wang et al., 2018). Nevertheless, antibiotic resistance levels are context-dependent (Borriello et al., 2004; Hill et al., 2005; Kirby et al., 2012), and because the biofilm environment at least partially protects cells from antibiotic exposure (Table 2), it can be argued that differences in MICs are due to the fact that evolved biofilm populations experienced lower CIP concentrations than planktonic populations. However, we selected CIP because it can penetrate the biofilm barrier (Tseng et al., 2013), and furthermore, cells growing in the bead model must disperse from one bead to colonize the next one in a less protected state. Overall, the fact that the planktonic populations exposed to subinhibitory concentrations of CIP increased their resistance level approximately 20-fold (Table 1) demonstrates that exposing bacteria to low levels of antibiotic risks selection for high levels of resistance that can make future treatment more difficult (Wistrand-Yuen et al., 2018).
 
-## Evolutionary dynamics under CIP treatment
+**Table 2.**
+ Antibiotic susceptibility of one clone of each population propagated in increasing concentrations of CIP at the end of the experiment (day 12).MICs were measured in biofilms and are expressed in mg/L and standard errors of the mean are indicated. Fold increase in MIC compared to the ancestral strain are also indicated.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment and Populations</th>
+      <th>MIC measured in biofilms (mg/L)</th>
+      <th>Fold MIC increase</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Evolutionary rescue</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Planktonic</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P1</td>
+      <td>&gt;128 ± 0</td>
+      <td>&gt;1024</td>
+    </tr>
+    <tr>
+      <td>P2</td>
+      <td>&gt;128 ± 0</td>
+      <td>&gt;1024</td>
+    </tr>
+    <tr>
+      <td>P3</td>
+      <td>&gt;128 ± 0</td>
+      <td>&gt;1024</td>
+    </tr>
+    <tr>
+      <td>Biofilm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B1</td>
+      <td>32 ± 0</td>
+      <td>256</td>
+    </tr>
+    <tr>
+      <td>B2</td>
+      <td>32 ± 0</td>
+      <td>256</td>
+    </tr>
+    <tr>
+      <td>B3</td>
+      <td>32 ± 0</td>
+      <td>256</td>
+    </tr>
+  </tbody>
+</table>
+
+### Evolutionary dynamics under CIP treatment
 
 In large bacterial populations (>105 cells) growing under strong selection, adaptive mutations conferring beneficial traits such as antibiotic resistance will dominate population dynamics (Barrick and Lenski, 2013; Cooper, 2018). Therefore, if a single mutation renders the antibiotic ineffective and provides the highest fitness gain, it would be expected to outcompete all other less fit mutations. Further, the stronger the selection for resistance, the greater the probability of genetic parallelism among replicate populations (Bolnick et al., 2018). Under the population-genetic conditions of these experiments described above, a conservative estimate of 106 mutations occur in the first growth cycle and at least 107 mutations arise over the 12 days of selection, leading to a probability of 0.98 that every site in the 4Mbp A. baumannii genome experiences a mutation at least once over the course of the 12 day experiment (see Supplementary file 1 for details of these calculations). Further, as stated above, fluoroquinolones like CIP or biofilm growth may increase the mutation rate so the probability that every site is mutated may be higher than estimated by this simplistic model (Long et al., 2016; Geisinger et al., 2018; Pribis et al., 2019). However, these studies do not indicate that fluoroquinolones like CIP alter the mutation spectra or particular mutation targets (Long et al., 2016), so a lifestyle-dependent difference in CIP exposure seems unlikely to alter the availability of resistance mutations under selection in these experiments. Rather, the dramatic differences in the evolved resistance levels of planktonic and biofilm populations suggested distinct genetic causes of resistance produced by different selective forces that appear incongruent with mutation availability. We also predicted greater genetic diversity in the biofilm treatments, owing to spatial structure and/or niche differentiation (Traverse et al., 2013), than in the planktonic cultures, in which we expected selective sweeps (Barrick et al., 2009). A signature of spatial structure alone might be different mutations in the same gene with predicted similar function coexisting over time, which is a form of clonal interference (de Visser and Rozen, 2006). A signature of niche differentiation might be the coexistence of mutations in different genes with unique functions, which is a form of adaptive radiation (Kassen, 2009).
 
 We conducted whole-population genomic sequencing of three replicates per treatment to identify all contending mutations above a detection threshold of 5% (see Materials and methods). The spectrum of mutations from CIP-treated populations are consistent with expectations from strong positive selection on altered or disrupted coding sequences (see Table 3 for day 12 results and Supplementary file 2 for dynamics across the experiment). High nonsynonymous to synonymous mutation ratios were observed in both lifestyles (8.5 in planktonic and 9.7 in biofilm). 43% of the total mutations in planktonic and 34% in biofilm were insertions or deletions, which is vastly enriched over typical mutation rates of ~10 SNPs/indel under neutral conditions (Lynch et al., 2016; Dillon et al., 2017). Roughly 30% of the mutations in CIP-treated populations of either lifestyle occurred in intergenic regions, which is statistically enriched over the approximately 13.5% of intergenic regions of the ancestral strain (X-squared = 8.2237, df = 2, p-value=0.01638). Of the intergenic mutations, 72% of the planktonic mutations and 18% of the biofilm mutations occurred in promoters, 5’ untranslated regions, sRNAs or in putative terminators (Kröger et al., 2018) indicating that, as in Pseudomonas, intergenic mutations can be adaptive by regulating the transcription of different genes, while avoiding possible pleiotropic effects of mutations in the coding regions (Khademi et al., 2019).
 
+**Table 3.**
+ Mutation spectrum of different selective environments.Attributes of the contending mutations during the 12 days of the evolution experiment. aResults from the last day of the experimental evolution. bAccounting for all unique mutations detected after filtering (see Materials and methods). For mutation dynamics over time, see Supplementary file 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Increasing concentrations</th>
+      <th colspan="2">Subinhibitory concentrations</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Planktonic</th>
+      <th>Biofilm</th>
+      <th>Planktonic</th>
+      <th>Biofilm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total mutations</td>
+      <td>28</td>
+      <td>38</td>
+      <td>6</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Nonsynonymous/Synonymousa</td>
+      <td>8.5</td>
+      <td>9.67</td>
+      <td>2/0</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Intergenic</td>
+      <td>8</td>
+      <td>11</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Nonsynonymous</td>
+      <td>9</td>
+      <td>13</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Percent intergenic mutationsb</td>
+      <td>29</td>
+      <td>29</td>
+      <td>0</td>
+      <td>25</td>
+    </tr>
+  </tbody>
+</table>
+
 As expected from theory, in CIP-selected planktonic populations where selection is most efficient, one or two mutations rapidly outcompeted others and fixed (Figure 2). Selection in biofilms, however, produced fewer selective sweeps and maintained more contending mutations, especially at lower antibiotic concentrations. In one population, multiple mutations in the same locus (adeL) rose to high frequency and persisted, which is consistent with the effect of population structure producing clonal interference. In the other two populations, mutations in different efflux pumps (adeL, adeS, adeN) contended during the experiment, which could be explained by population structure or ecological diversification, if these mutations produced different phenotypes. Overall, across all treatments and timepoints, biofilm-adapted populations were significantly more diverse than the planktonic-adapted populations (Shannon index; Kruskal Wallis, chi-squared = 7.723, p=0.005), particularly at subinhibitory concentrations of CIP (Figure 2—figure supplement 1a). Notably, increasing drug concentrations eliminated the differences in diversity between treatments (Figure 2—figure supplement 1b), but the greater diversity in biofilms treated with lower doses generated more diversity for selection to act upon in a changing environment. This higher standing diversity is important when considering dosing and when antibiotic exposure may be low (e.g. in the external environment or when bound to tissues) (Baquero et al., 1998; Khan et al., 2013) because biofilms with more allelic diversity have a greater chance of survival to drug and immune attack (Fux et al., 2005).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/47612/elife-47612-fig2-v2.jpg)
+
+**Figure 2.:** Mutation frequencies in planktonic (A and C) and biofilm populations (B and D) over time as determined by population-wide whole genome sequencing. A) and B) show the mutation frequencies obtained under increasing concentrations of CIP. From left to right: P1, P2 and P3 in A) and B1, B2 and B3 in B). C) and D) show the mutation frequencies obtained under the subinhibitory (top) and no antibiotic (bottom) treatments. Mutations in the same gene share a color. Blue: adeN or genes regulated by adeN; green: adeL; gold: MFS putative transporter ACX60_RS15145; purple: adeS; pink: sohB; red: gyrA; and orange: parC. Gray and brown colors indicate genes potentially unrelated to adaptation to CIP. (F) Mutated genes in the sequenced clones. Each column represents one clone. Gray shading of populations indicates whole population sequencing and N1 and N2 indicate populations where only clones were sequenced. Gray shaded clones were used for MIC and fitness estimations. Blue and red indicate SNPs in biofilm and planktonic growing populations respectively. For all SNPs identified in the 49 clones, see Figure 2—figure supplement 2 and Supplementary file 2. (G) The genetic organization of the RND efflux pumps is shown on the left. MFP and OMP denote membrane fusion protein and outer membrane protein respectively. All mutations found in the RND regulators are shown on the right.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47612/elife-47612-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Biofilm populations in blue and planktonic populations in red.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47612/elife-47612-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Each column represents one clone. Gray shaded clones were used for MIC and fitness estimations. Red color indicates SNPs or small indels, blue color indicates new junction evidences and gray indicates missing coverage indicative of a deletion.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/47612/elife-47612-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Blue and red bars show biofilm and planktonic clones, respectively. The ancestral strain is represented by the black bar. Individual clone results are shown as points. The averages are shown by bars. 95% CI are indicated by the error bars. Biofilm clones produced more biofilm than planktonic clones: two tailed t-test of biofilm formation with 0.00 mg/L of CIP: p=0.006, t = 3.008, df = 32; with 0.01 mg/L of CIP: p=0.0006, t = 3.780, df = 32; with 0.03 mg/L of CIP: p=0.0077 t=2.841, df = 32 and with 0.0625 mg/L of CIP: p=0.018 t=2.471 df=32.
 
 In contrast with the data observed in the populations evolving under CIP pressure, drug-free control populations contained no mutations that achieved high frequency during the experiment (Figure 2C and D). These results suggest that the ancestral starting clone was already well adapted both to planktonic and biofilm lifestyles, likely because we had previously propagated the A. baumannii ATCC 17978 clone under identical drug-free conditions for 10 days leading to the fixation of mutations in three genes (Supplementary file 2). The absence of mutations specific to lifestyle in the absence of antibiotics and the acquisition of mutations specific to the growth mode under antibiotic pressure highlight different evolutionary responses to combined selective pressures that were not observed with each selective pressure alone (Harrison et al., 2017).
 
-## Lifestyle determines the selected mechanisms of resistance
+### Lifestyle determines the selected mechanisms of resistance
 
 A. baumannii clinical samples acquire resistance to CIP by two principal mechanisms: modification of the direct antibiotic targets — gyrase A or B and topoisomerase IV — or by the overexpression of efflux pumps reducing the intracellular concentrations of the antibiotic (Doi et al., 2015). To directly associate genotypes with resistance phenotypes, we sequenced 49 clones isolated at the end of the experiment, the majority of which were selected to delineate genotypes in the evolutionary rescue populations (Figure 2E and Figure 2—figure supplement 2).
 
 Both the genetic targets and mutational dynamics of selection in planktonic and biofilm environments differed. Mutations disrupting three negative regulators of efflux pumps evolved in parallel across populations exposed to CIP, but mutations in two of these (adeL and adeS) were nearly exclusive to biofilm clones (Figure 2E). The most common and highest frequency mutations observed in the biofilm populations were in the repressor gene adeL (Figure 2E, Figure 2—figure supplement 2, and Table 4), which regulates AdeFGH, one of three resistance-nodulation-division (RND) efflux pump systems in A. baumannii (Coyne et al., 2010; Fernando et al., 2013; Pournaras et al., 2016). The overexpression of the AdeFGH is predicted to enhance transport of acylated homoserine lactones, which can increase both biofilm and antibiotic resistance (He et al., 2015; Alav et al., 2018). In the planktonic lines, the predominant mutations were found in adeN, which is a negative regulator of AdeIJK and were mainly insertions of IS701 that disrupted the gene (Li et al., 2016). AdeIJK contributes to resistance to biocides, hospital disinfectants, and to both intrinsic and acquired antibiotic resistance in A. baumannii (Damier-Piolle et al., 2008; Rosenfeld et al., 2012) and may decrease biofilm formation, which could explain its prevalence in planktonic populations here (Yoon et al., 2015).
+
+**Table 4.**
+ Efflux pumps and their regulators in A. baumannii 17978 targeted under CIP pressure.Adapted from Li et al. (2016). AG aminoglycosides, AZI azithromycin, BL β-lactams, CHL chloramphenicol, CL clindamycin, ERY erythromycin, FLO florfenicol, FUA fusidic acid, FQ fluoroquinolones, GEN gentamicin, MIN minocycline, NAL nalidixic acid, NOR norfloxacin, RIF rifampicin, SUL sulfonamides, TET tetracycline, TGC tigecycline, TMP trimethoprim. a References in Li et al. (2016).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Transporter Family</th>
+      <th>Regulator</th>
+      <th>Efflux pump</th>
+      <th>Substratesa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RND</td>
+      <td>AdeSR</td>
+      <td>AdeABC</td>
+      <td>AG, BL, CHL, ERY, FQ, NAL, TET, TGC</td>
+    </tr>
+    <tr>
+      <td>RND</td>
+      <td>AdeL</td>
+      <td>AdeFGH</td>
+      <td>CHL, ERY, FQ, NAL, SUL, TET, TGC, TMP</td>
+    </tr>
+    <tr>
+      <td>RND</td>
+      <td>AdeN</td>
+      <td>AdeIJK</td>
+      <td>AZI, BL, CHL, ERY, FQ, FUA, MIN, NAL, RIF, SA, SUL, TET, TMP</td>
+    </tr>
+    <tr>
+      <td>MATE</td>
+      <td>-</td>
+      <td>AbeM</td>
+      <td>FQ, GEN</td>
+    </tr>
+  </tbody>
+</table>
 
 In biofilm lines, different contending adeL mutations were detected in each replicate after 24 hr then eventually fixed as CIP concentrations increased (green lines in Figure 2B), sometimes along with a secondary adeL mutation. This pattern suggests that altering efflux via adeL generates adaptations to the combination of CIP and biofilm which is supported by the increase in biofilm formation by the adeL mutants (Figure 2—figure supplement 3). Further, mutants with higher resistance than necessary appear to be maladaptive in the biofilm treatment. For example, adeN (found more often in planktonic culture) and adeS mutations found simultaneously on day three in population B2 (Figure 2) led to a spike in resistance at that timepoint (Figure 1), but these alleles were subsequently outcompeted by adeL mutants that were evidently more fit despite lower planktonic resistance.
 
@@ -68,7 +395,7 @@ In contrast to the biofilm populations, all planktonic populations with increasi
 
 Together, our results demonstrate that bacterial lifestyle influences the evolutionary dynamics and targets of selection of AMR. Multiple selective pressures, particularly in the biofilm life cycle, may affect evolutionary dynamics and constrain the evolution of AMR if negative genetic correlations exist (Harrison et al., 2017). For instance, adeN mutations decrease biofilm formation and increase resistance by altering the adeN-controlled adeIJK efflux pump (Yoon et al., 2015), which could explain their prevalence in planktonic populations but not biofilm populations. In contrast, loss-of-function mutations in regulators of the adeFGH and adeABC RND efflux pumps were selected in CIP-treated biofilm populations and increased resistance ~4 fold, but these were not selected in planktonic populations perhaps because of this low resistance phenotype. Subsequent adaptation by planktonic populations exposed to CIP then selected mutations in the targets of the fluoroquinolone, gyrA and parC, leading to much higher levels of resistance.
 
-## Evolutionary consequences of acquiring resistance
+### Evolutionary consequences of acquiring resistance
 
 A longstanding hypothesis is that de novo acquired antibiotic resistance is associated with a fitness cost in the absence of antibiotics (reviewed in Vogwill and MacLean, 2015). The extent of this cost and the ability to compensate for it by secondary mutations (compensatory evolution) is a key attribute determining the spread and maintenance of the resistance mechanism (Moore et al., 2000; Zhao and Drlica, 2002; Maclean et al., 2010; Vogwill and MacLean, 2015). A negative correlation between CIP resistance and fitness of resistant genotypes in the absence of antibiotics has been previously described in Escherichia coli, suggesting a trade-off between these traits (Marcusson et al., 2009; Huseby et al., 2017; Basra et al., 2018).
 
@@ -76,9 +403,9 @@ To determine the relationship between resistance and fitness in the absence of a
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/47612/elife-47612-fig3-v2.jpg)
 
-**Figure 3.:** Relative fitness (average ± SEM) of 10 evolved clones from the evolutionary rescue experiment compared to the ancestor and their MICs (mg/L) to CIP. Fitness was measured in both planktonic (squares) and biofilm (circles) conditions. MICs were estimated in planktonic conditions. Black dot represents the ancestral clone. *Denotes the clone with gyrA and parC mutations.10.7554/eLife.47612.014Figure 3—source data 1.
+**Figure 3.:** Relative fitness (average ± SEM) of 10 evolved clones from the evolutionary rescue experiment compared to the ancestor and their MICs (mg/L) to CIP. Fitness was measured in both planktonic (squares) and biofilm (circles) conditions. MICs were estimated in planktonic conditions. Black dot represents the ancestral clone. *Denotes the clone with gyrA and parC mutations.
 
-## Evolutionary interactions with other antibiotics
+### Evolutionary interactions with other antibiotics
 
 When a bacterium acquires resistance to one antibiotic, the mechanism of resistance can also confer resistance to other antibiotics (cross-resistance) or increase the susceptibility to other antibiotics (collateral sensitivity) (Pál et al., 2015). We tested the MIC of the evolved populations to 23 different antibiotics in planktonic conditions and reported quantitative changes in susceptibility by two-fold dilution, but not necessarily clinical breakpoints in resistance. Changes in susceptibilities were observed in 13 antibiotics that depended upon the growth mode of prior selection (Figure 4). For example, planktonic-evolved populations exhibited cross resistance to cefpodoxime and ceftazidime, but biofilm-evolved populations evolved collateral sensitivity to these cephalosporins. Cross-resistance was associated genetically with adeN, adeS, gyrA or pgpB mutations, and collateral sensitivity was associated with adeL mutations. Selection in these environments evidently favors the activation of different efflux pumps or modified targets that have different pleiotropic consequences for multidrug resistance (Podnecky et al., 2018).
 
@@ -88,7 +415,7 @@ When a bacterium acquires resistance to one antibiotic, the mechanism of resista
 
 The mechanisms leading to collateral sensitivity are still poorly understood but they depend on the genetic background of the strain, the nature of the resistance mechanisms (Barbosa et al., 2017; Yen and Papin, 2017), and the specific physiological context of the cells (Leus et al., 2018). In A. baumannii, each RND efflux pump is suggested to be specific for certain classes of antibiotics (Table 4) (Coyne et al., 2011; Li et al., 2016; Leus et al., 2018). Similar to our results (Figure 4), Yoon and collaborators demonstrated that efflux pumps AdeABC and AdeIJK, regulated by adeS and adeN respectively, increased the resistance level to some β-lactams when overexpressed (Yoon et al., 2015). However, production of AdeFGH, the efflux pump regulated by adeL, decreased resistance to some β-lactams and other families of antibiotics or detergents by an unknown mechanism (Yoon et al., 2015; Leus et al., 2018). Increased sensitivity to β-lactams with efflux overexpression has also been reported in P. aeruginosa (Azimi and Rastegar Lari, 2017), which demonstrates the urgency of understanding the physiological basis of collateral sensitivity to control AMR evolution. Exploiting collateral sensitivity has been proposed to counteract the evolution of resistant populations both in bacteria (Imamovic and Sommer, 2013; Kim et al., 2014; Nichol et al., 2019) and in cancer (Dhawan et al., 2017). Remarkably, our results show that biofilm growth, commonly thought to broaden resistance, may actually generate collateral sensitivity during treatment with CIP and potentially other fluoroquinolones.
 
-## Conclusions
+### Conclusions
 
 We used experimental evolution of the opportunistic pathogen A. baumannii in both well-mixed and biofilm conditions to examine how lifestyle influences the dynamics, diversity, identity of genetic mechanisms, and direct and pleiotropic effects of resistance to a common antibiotic (Figure 5). Experimental evolution is a powerful method of screening naturally arising genetic variation for mutants that are the best fit in a defined condition (Elena and Lenski, 2003; Cooper, 2018; Van den Bergh et al., 2018). When population sizes are large and reproductive rates are rapid, as they were here, the probability that all possible single-step mutations that can increase both resistance and fitness occurred in each population is very likely. The few mutations selected here as well as their repeated order with increasing CIP concentrations may indicate that these are the most fit mutations in this A. baumannii strain and set of environmental conditions. The prevalence of some of these mutations in clinical samples suggests that they too may have been exposed to selection in similar conditions. For instance, S81L in gyrA and S80L in parC have been reported worldwide as the primary mechanism conferring high levels of resistance to fluroquinolones in clinical isolates (Adams-Haduch et al., 2008; Warner et al., 2016; Dahdouh et al., 2017), and mutations in RND efflux pumps have been associated with multidrug resistant phenotypes in clinical samples isolated worldwide (Damier-Piolle et al., 2008; Coyne et al., 2010; Rosenfeld et al., 2012; Fernando et al., 2013; Pournaras et al., 2016; Leus et al., 2018). Likewise, the absence of other mutations reported in shotgun mutant screens of resistance in A. baumannii (Geisinger et al., 2018) means that these mutants produced less resistance, lower fitness, or both.
 
@@ -100,7 +427,7 @@ Evolution experiments hold promise for ultimately forecasting mutations selected
 
 ## Materials and methods
 
-## Experimental evolution
+### Experimental evolution
 
 Before the start of the antibiotic evolution experiment, we propagated well mixed tubes founded by one clone of the susceptible A. baumannii strain ATCC 17978-mff (Piechaud and Second, 1951; Baumann et al., 1968) in a modified M9 medium (referred to as M9+) containing 0.1 mM CaCl2, 1 mM MgSO4, 42.2 mM Na2HPO4, 22 mM KH2PO4, 21.7 mM NaCl, 18.7 mM NH4Cl and 11.1 mM glucose and supplemented with 20 mL/L MEM essential amino acids (Gibco 11130051), 10 mL/L MEM nonessential amino acids (Gibco 11140050), and 1 mL each of trace mineral solutions A, B, and C (Corning 25021–3 Cl). This preadaptation phase was conducted in the absence of antibiotics for 10 days (ca. 66 generations) with a dilution factor of 100 per day.
 
@@ -108,24 +435,24 @@ After the ten days of preadaptation to M9+ medium, we selected a single clone an
 
 We propagated the populations into fresh media every 24 hr as described by Turner et al. (2018). For planktonic populations, we transferred a 1:100 (50 µl into 5 mL of M9+) dilution, which corresponded to 6.64 generations per day. For biofilm populations, we transferred a polystyrene bead (Polysciences, Inc, Warrington, PA) to fresh media containing three sterile beads. We rinsed each bead in PBS before the transfer, therefore reducing the transfer of planktonic cells. Each day we alternated between black and white marked beads, ensuring that the bacteria were growing on the bead for 24 hr, which corresponds to approximately 6 to 7.5 generations/day (Traverse et al., 2013; Turner et al., 2018). For the experiment with increasing concentrations of antibiotics, we froze a sample of each bacterial population on days 1, 3, 4, 6, 7, 9, 10 and 12. In the experiment with constant exposure to subinhibitory concentrations of antibiotics, we froze the populations on days 1, 3, 4, 9, and 12. We froze the control populations at days 1, 4, 9, and 12. For planktonic populations, we froze 1 mL of culture with 9% of DMSO. For freezing the biofilm populations, we sonicated the beads in 1 mL of PBS with a probe sonicator and subsequently froze with 9% DMSO.
 
-## Phenotypic characterization: antimicrobial susceptibility and biofilm formation
+### Phenotypic characterization: antimicrobial susceptibility and biofilm formation
 
 We determined the MIC of CIP by broth microdilution in M9+ according to the Clinical and Laboratory Standards Institute guidelines (CLSI, 2019), in which each bacterial sample was tested to 2-fold-increasing concentration of CIP from 0.0625 to 64 mg/L. To obtain a general picture of the resistance profiles we determined the MIC to 23 antibiotics (amikacin, ampicillin, ampicillin/sulbactam, aztreonam, cefazolin, cefepime, cephalothin, meropenem, ertapenem, cefuroxime, gentamicin, CIP, piperacillin/tazobactam, cefoxitin, trimethoprim/sulfamethoxazole, cefpodoxime, ceftazidime, tobramycin, tigecycline, ticarcillin/clavulanic acid, ceftriaxone and tetracycline) by broth microdilution in commercial microtiter plates following the instructions provided by the manufacturers (Sensititre GN3F, Trek Diagnostics Inc, Westlake, OH). We tested the MIC at days 1, 3, 4, 6, 7, 9, 10 and 12 for the populations propagated under increasing concentrations of antibiotic, and at days 1 and 12 for the subinhibitory and non-antibiotic treatments. For the CIP-MICs, we used Pseudomonas aeruginosa PAO1 in Mueller Hinton broth as a control. No differences in the MICs were found between Mueller Hinton and M9+ or if measuring the MIC in 96 well-plate or in 5 mL tubes, which are the experimental conditions. Each MIC was performed in triplicate. The CIP was provided by Alfa Aesar (Alfa Aesar, Wardhill, MA). We also determined the MIC of CIP in biofilm conditions adapting the method described by Diez-Aguilar to the bead model (Díez-Aguilar et al., 2018). We resuspended each clone into fresh M9+ containing sterile beads (as in the experimental evolution conditions, each tube used contained three sterile beads and 5 mL of M9+). After 24 hr growing at 37°, each bead was propagated into new fresh M9+ containing different CIP concentrations (from 4 to 128 mg/L in 2-fold-increasing manner). After 24 growing at 37°, we rinsed each bead in PBS and sonicate them individually as explained before. 10 μl of the sonicated liquid were transferred to 100 μL of M9+. The MIC was calculated after measuring the optical density at 650 nm before and after 24 hr incubation. The inhibition of growth was defined as the lowest antibiotic that resulted in an OD difference at or below 0.05 after 6 hr of incubation.
 
 We estimated the biofilm formation of the selected clones using a modification of the previously described protocol (O'Toole and Kolter, 1998). We resurrected each clone in 5 mL of M9+ containing 0.5 mg/L of CIP and grew them for 24 hr. For each strain, we transferred 50 µl into 15 mL of M9+. We tested 200 µl of the previous dilution of each clone to four different subinhibitory CIP concentrations (0 mg/L, 0.01 mg/L, 0.03 mg/L and 0.0625 mg/L). After 24 hr of growing at 37°C, we measured population sizes by optical density (OD) at 590 nm (ODPopulations). Then, we added 250 µl of 0.1% crystal violet and incubated at room temperature for 15 min. After washing the wells and drying for 24 hr, we added 250 µl 95% EtOH solution (95% EtOH, 4.95% dH2O, 0.05% Triton X-100) to each well and incubated for 15 min and biofilm formation was measured by the OD at 590 nm (ODBiofilm). Biofilm formation was corrected by population sizes (ODBiofilm/ODPopulation). Results are the average of three experiments (Figure 2—figure supplement 3).
 
-## Fitness measurement
+### Fitness measurement
 
 We selected 5 biofilm and five planktonic clones from the end of the evolutionary rescue experiment with known genotype (Figure 2—figure supplement 2) and measured their fitness by directly competing the ancestral strain and the evolved clone variants both in planktonic and in biofilm conditions in the absence of antibiotic (Figure 3) (Turner et al., 2018). We revived each clone from a freezer stock in M9+ for 24 hr. We maintained the same evolutionary conditions to revive the clones, adding three beads and/or CIP to the broth when required. After 24 hr, we added equal volume of the clones and the ancestors in M9+ in the absence of antibiotics. For planktonic populations, we mixed 25 µl of each competitor in 5 mL of M9+. For biofilm competitions, we sonicated one bead per competitor in 1 mL of PBS and mixed in 5 mL of M9+ containing three beads. The mix was cultured at 37°C for 24 hr. We plated at time zero and after 24 hr. For each competition, we plated aliquots onto nonselective tryptic soy agar and tryptic soy agar containing CIP. Selection rate (r) was calculated as the difference of the Malthusian parameters for the two competitors: r = (ln(CIP resistantd=1/CIP resistantd=0))/(ln(CIP susceptibled=1/CIP susceptibled=0))/day (Lenski, 1991). Susceptible populations were calculated as the difference between the total population (number of colonies/mL growing on the nonselective plates) and the resistant fraction (number of colonies/mL growing on the plates containing CIP). As a control for calculating the correct ratio of susceptible vs. resistant populations, we replica-plated 50 to 100 colonies from the nonselective plates onto plates containing CIP as previously described (Santos-Lopez et al., 2017). Results are the average of three to five independent experiments.
 
-## Genome sequencing
+### Genome sequencing
 
 We sequenced whole populations of three evolving replicates per treatment. We sequenced the populations at days 1, 3, 4, 6, 7, 9, 10, and 12 of the populations under increasing concentrations of CIP (populations P1, P2, P3 and B1, B2, B3 for planktonic and biofilm populations) and at days 1, 4, 9, and 12 of the populations under subinhibitory concentration and no antibiotic treatments. In addition, we selected 49 clones for sequencing at the end of the experiment (Figure 2F). 12 of the clones were recovered from the populations propagated in the absence of the antibiotic, 12 clones from the subinhibitory concentrations of CIP treatment and 25 were isolated from the increasing concentrations of antibiotic. We revived each population or clone from a freezer stock in the growth conditions under which they were isolated (i.e. the same CIP concentration which they were exposed to during the experiment) and grew for 24 hr. DNA was extracted using the Qiagen DNAeasy Blood and Tissue kit (Qiagen, Hiden, Germany). The sequencing library was prepared as described by Turner and colleagues (Turner et al., 2018) according to the protocol of Baym et al. (2015), using the Illumina Nextera kit (Illumina Inc, San Diego, CA) and sequenced using an Illumina NextSeq500 at the Microbial Genome Sequencing center (http://migs.pitt.edu).
 
-## Data processing
+### Data processing
 
 All sequences were first quality filtered and trimmed with the Trimmomatic software v0.36 (Bolger et al., 2014) using the criteria: LEADING:20 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:70. Variants were called with the breseq software v0.31.0 (Deatherage and Barrick, 2014) using the default parameters and the -p flag when required for identifying polymorphisms in populations. This option calls a mutation if it is observed in two reads from each strand and reaches 5% in the population. The average depth of sequencing for populations was 219 ± 51 x and average genome coverage was 98.7 ± 0.128%. The reference genome used for variant calling was downloaded from the NCBI RefSeq database using the 17-Mar-2017 version of A. baumannii ATCC 17978-mff complete genome (GCF_001077675.1). In addition to the chromosome NZ_CP012004 and plasmid NZ_CP012005 sequences, we added two additional plasmid sequences to the reference genome that are known to be present in our working strain of A. baumannii ATCC 17978-mff: NC009083, NC_009084. Mutations were then manually curated and filtered to remove false positives. Mutations were filtered if the gene was found to contain a mutation when the ancestor sequence was compared to the reference genome or if a mutation never reached a cumulative frequency of 10% across all replicate populations. Diversity measurements were made in R using the Shannon index considering the presence, absence, and frequency of alleles. Significant differences between biofilm and planktonic populations were determined by the Kruskal Wallis test. Filtering, mutational dynamics, and plotting were done in R v3.4.4 (www.r-project.org) with the packages ggplot2 v2.2.1 (Wickham, 2016), dplyr v0.7.4 (Wickham et al., 2018), vegan v2.5–1 (Oksanen et al., 2018), and reshape2 (Wickham, 2007).
 
-## Data availability
+### Data availability
 
 R code for filtering and data processing can be found here: https://github.com/sirmicrobe/U01_allele_freq_code (Santos-Lopez, 2019; copy archived at https://github.com/elifesciences-publications/U01_allele_freq_code). All sequences were deposited into NCBI under the Biosample accession numbers SAMN09783599-SAMN09783682.

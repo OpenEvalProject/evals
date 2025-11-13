@@ -33,6 +33,65 @@ Within this framework, replications strengthen two key characteristics of precli
 
 A number of large-scale replication projects have been conducted in psychology and social sciences (Camerer et al., 2016; Camerer et al., 2018; Open Science Collaboration, 2015). Those studies were performed with healthy subjects with little to no harm anticipated through participation. Consequently, increasing the number of tested subjects was not ethically problematic or overly expensive. The same is not true for projects that involve animals, so there have been relatively few large-scale replication projects in biomedical research. Moreover, the projects that have been started – such as the Reproducibility Project: Cancer Biology, the Brazilian Reproducibility Initiative, and the Confirmatory Preclinical Studies project – all take different approaches to identifying the studies to be replicated and to performing the replications (see Table 1 and Box 1).
 
+**Table 1.**
+ Overview of three large-scale replication projects in biomedical research: Reproducibility Project: Cancer Biology (RPCB); Brazilian Reproducibility Initiative (BRI); Confirmatory Preclinical Studies (CPS).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>RPCB</th>
+      <th>BRI</th>
+      <th>CPS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Selection of samples to be replicated</td>
+      <td>Main findings from 50 high impact citations/publications in cancer research</td>
+      <td>Replication of 60–100 experiments from research articles of Brazilian studies in different clinical areas</td>
+      <td>Two-step review process of proposals results in twelve projects</td>
+    </tr>
+    <tr>
+      <td>Selection of experiment</td>
+      <td>Main finding from published studies</td>
+      <td>Experiments using five pre-defined methods</td>
+      <td>Own experiments</td>
+    </tr>
+    <tr>
+      <td>Replicate own results</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Exact Protocols</td>
+      <td>Yes (consulting original authors)</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Blind to initial results</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Pre-registration</td>
+      <td>Pre-registered study and individual Replication Protocols</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Multi-site replication</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
 Based on the results from the study being replicated and the stage in the preclinical research trajectory, the question is: what additional evidence is needed to ultimately decide to start trials in human subjects? Throughout a sequence of preclinical experiments, validity and reliability have to be adapted at each stage, and criteria are set so that we know whether to continue, to revise, or even completely break off the experiments (Figure 1). How, for example, could the previous experiments be improved? How many animals should be tested? Are additional controls needed? Should additional labs be involved? At all stages the aim should be to increase the validity of replications and test the reliability of the initial finding (Dirnagl, 2020; Kimmelman et al., 2014; Piper et al., 2019).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/62101/elife-62101-fig1-v2.jpg)
@@ -43,7 +102,7 @@ Researchers usually start off with a study in exploratory mode. As not all detai
 
 As we move along the research trajectory it also becomes helpful to think in terms of three types of validity: internal validity, external validity, and translation validity (Figure 1). To illustrate this, we return to the example of a disease caused by a metabolic product. An experiment in which the inhibition of a metabolic pathway leads to an improvement in animal health is internally valid if the measured effect (improved health) is caused by the experimental manipulation (administration of the inhibitor). Such an experiment is also externally valid if the effect is observed in other animal models and/or can be replicated in other labs. And if the effect is also observed in humans it is translationally valid. As we shall discuss, different strategies are needed to improve these three types of validity.
 
-## Internal validity
+### Internal validity
 
 Poor study design and the lack of control for biases are major contributors towards low internal validity (Bailoo et al., 2014; Pound and Ritskes-Hoitinga, 2018; Würbel, 2017). To increase internal validity, controlling for selection and detection bias is essential. For this, methods of randomization and blinding need to be clearly specified, and inclusion and exclusion criteria need to be defined, before data are collected (Würbel, 2017). Replications can be leveraged to improve this further. Imagine, for example, that an exploratory study has found that a physiological factor (such as animal weight) influences the primary outcome variable: in the next round of experiments, animals could be randomized and stratified by weight. Particularly for replications, all these choices (along with detailed methods and analysis plans) should be communicated before conducting the experiment, ideally via pre-registration at a platform such as http://www.animalstudyregistry.org or http://www.preclinicaltrials.eu.
 
@@ -51,7 +110,7 @@ Methods and analyses also need to be reported transparently and completely (Voll
 
 The three replication projects described in Box 1 all aim at high internal validity through exact specifications of replication protocols. Within the RPCB, for example, protocols were pre-registered, peer reviewed and published before replication experiments were performed. However, in some cases where results have been difficult to interpret, exact pre-specification of replication experiments has limited the possibility of performing the experiments in another, potentially improved way (eLife, 2017). The BRI describes a more naturalistic approach where each participating lab will fill the gaps in papers as best as they can without consulting primary authors. Nevertheless, protocols will still be preregistered and undergo a round of internal peer review among collaborating labs. In summary, high levels of methodological rigour are necessary to ensure high internal validity and to make replications meaningful.
 
-## External validity
+### External validity
 
 For the assessment of external validity, research findings from one setting need to generalise to other settings (Pound and Ritskes-Hoitinga, 2018). One way to increase external validity is to conduct replications at multiple sites, emulating an approach already applied in clinical trials (Dechartres et al., 2011; Friedman et al., 2015). Multi-centre studies (or between-lab replications at a single centre) can index known and unknown differences that define boundary conditions for investigated effects (Glasgow et al., 2006; Pound and Ritskes-Hoitinga, 2018). Regarding generalizability, external validity can often be improved by including aged or comorbid animals, and by performing multimodal studies with animals of different sex and/or varying strains. This systematically introduced heterogeneity strengthens external validity and explores the extent to which standardization is introducing unwanted idiosyncrasies that may limit external validity and prevent successful replication (Richter et al., 2010; Voelkl et al., 2018). Additionally negative and positive control groups that are added to replications can further foster external validity (Kafkafi et al., 2018).
 
@@ -59,7 +118,7 @@ Again, the three replication projects described in Box 1 take different approach
 
 Difference in equipment can be one reason for variation in performing a certain intervention (e.g. surgery). Moreover, if the centres are in different countries, ethics boards and local regulations will most likely differ, complicating and potentially delaying ethics approval (Hunniford et al., 2019; Llovera et al., 2015; Maysami et al., 2016). For example, regulations for analgesic regimes differ between jurisdictions, so that it is difficult to follow the same protocol across sites. Nevertheless, multi-centre studies are characterised by high quality standards with cross validation of results, larger sample size, lower risk of bias as compared to single-centre studies, and higher completeness of reporting (Hunniford et al., 2019). This strongly suggests that a multi-centre approach will be an important component in enabling decisions about clinical trial initiation (Prohaska and Etkin, 2010).
 
-## Translational validity
+### Translational validity
 
 Translational validity is used here as an umbrella term for factors that putatively contribute to the translation from animal models to humans. In particular, it pertains to how well measurements and animal models represent a certain disease and its underlying pathomechanisms in humans, as it is common for only a limited number of disease characteristics to present in animal models. In models of Alzheimer’s disease, for example, the focus on familial early onset genes in mouse models has potentially led to translational failures as the majority of diagnoses of Alzheimer’s disease in humans are classified as sporadic late onset form (Mullane and Williams, 2019; Sasaguri et al., 2017). Translational validity thus reflects whether measured parameters in animal models are diagnostic for human conditions and consequently, to what extent the observed outcomes will predict outcomes in humans (Denayer et al., 2014; Mullane and Williams, 2019).
 

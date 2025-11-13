@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0243gzr89 Department of Protein Evolution, Max Planck Institute for Biology Tübingen Germany
+1. Department of Protein Evolution, Max Planck Institute for Biology Tübingen Germany ([ROR:0243gzr89](https://ror.org/0243gzr89))
 
 † Corresponding author
 
@@ -32,23 +32,23 @@ When using equimolar quantities of educts A and B, Connectase catalyzes an equil
 
 ## Results
 
-## Modification of the Connectase recognition sequence
+### Modification of the Connectase recognition sequence
 
 To facilitate the removal of peptide byproduct from Connectase reactions (see Introduction), we studied ways to alter the Connectase recognition sequence. For this, we used Ubiquitin (Ub) with a C-terminal Connectase recognition sequence followed by a Streptavidin tag (Figure 2, Ub-Strep). As a second reaction substrate, we used peptides derived from the Connectase recognition sequence (XGAFDADPLVVEI, where X represents any of the 20 amino acids). The conjugation of these substrates results in a shorter Ubiquitin product (Figure 2, Ub-Peptide), which lacks the Streptavidin tag. Therefore, the conjugation rate with the different peptides could be determined by monitoring Ub-Peptide formation in SDS-PAGE time course analyses (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/102765/elife-102765-fig2-v1.jpg)
 
-**Figure 2.:** A ubiquitin substrate with a C-terminal Connectase recognition sequence followed by a Streptavidin-tag (Ub-Strep) is fused to peptides consisting of N-terminal Connectase recognition sequence variants (top scheme). These peptides differ in the first amino acid, where proline was replaced by each of the 19 other standard proteinogenic amino acids. An SDS-PAGE time course analysis of each reaction (1 eq. Ub-Strep, 1 eq. Peptide, 0.01 eq. Connectase, 22°C) shows the gradual emergence of the fusion product, Ub-Peptide. Based on densitometric analyses, the reaction rate with the different substrates was estimated (lower panel; an exact determination is not possible due to the reversibility of the reaction [see Methods section]) and normalized to the highest rate (X = P, 100%). The peptide substrates (XGADADPLVVEI) and byproducts (PGAFDADPLVVEI-Strep; top panel) are not visible on the gels.Figure 2—source data 1.Figure 2—source data 2.Figure 2—source data 3.
+**Figure 2.:** A ubiquitin substrate with a C-terminal Connectase recognition sequence followed by a Streptavidin-tag (Ub-Strep) is fused to peptides consisting of N-terminal Connectase recognition sequence variants (top scheme). These peptides differ in the first amino acid, where proline was replaced by each of the 19 other standard proteinogenic amino acids. An SDS-PAGE time course analysis of each reaction (1 eq. Ub-Strep, 1 eq. Peptide, 0.01 eq. Connectase, 22°C) shows the gradual emergence of the fusion product, Ub-Peptide. Based on densitometric analyses, the reaction rate with the different substrates was estimated (lower panel; an exact determination is not possible due to the reversibility of the reaction [see Methods section]) and normalized to the highest rate (X = P, 100%). The peptide substrates (XGADADPLVVEI) and byproducts (PGAFDADPLVVEI-Strep; top panel) are not visible on the gels.
 
 The experiment with the original recognition sequence peptide (X=Proline) resulted in the rapid formation of an equilibrium with ~0.5 equivalents (eq.) Ub-Strep and ~0.5 eq. Ub-Peptide, corresponding to ~50% product yield from equally abundant educts (1 eq. each; see introduction). While proline substitutions with X=D, E, F, G, H, I, K, L, M, N, R, T, W, or Y drastically reduced ligation rates, substitutions with S, C, and A resulted in moderate or high ligation rates. This was surprising, because the KDPGA sequence is highly conserved in the physiological Connectase target, mtrA (methyltransferase A) (Fuchs et al., 2021). Due to its unique structure and chemistry, proline was previously considered essential for the reaction. The results show that other amino acids, which possess a β-carbon (present in all amino acids except G) but lack a γ-carbon (absent in G, S, C, A), can also be used in this position.
 
-## Discrimination between different recognition sequences
+### Discrimination between different recognition sequences
 
 This unexpected finding allowed us to design reactions, in which educts and peptide byproducts differ in their N-terminal amino acid. This discrimination criterion could then be used to specifically inactivate the X1GAFDADPLVVEI peptide byproduct (PGAFDADPLVVEI-Strep in Figure 2) without affecting the X2GAFDADPLVVEI-B educt (peptide without B in Figure 2). Such selective inactivation can be achieved through methods that specifically target X1 (e.g., A, C, S, P, etc.) while leaving X2 (≠ X1) unmodified. We hypothesized that for example an N-acetyltransferase, which acetylates the N-terminal alanine on the peptide byproduct (X1=A), while leaving the N-terminal proline on educts (X2=P) unmodified, might be employed to specifically inactivate the undesired byproduct (Lapteva et al., 2021). Another possibility is to use chemicals, which form ring structures with the amino and sulfhydryl-groups of N-terminal cysteines (X1=C, X2=A /P) (Bandyopadhyay et al., 2016). Finally, it is possible to use aminopeptidases, which act exclusively on the peptide byproduct X1. Many of these enzymes have no absolute specificity for just one amino acid (Gonzales and Robert-Baudouy, 1996). Proline residues, however, are structurally distinct and not modified by many promiscuous enzymes, but instead by a set of proline-specific enzymes (Cunningham and O’Connor, 1997).
 
 Based on these considerations, we decided to search for a proline aminopeptidase (Dong et al., 2022), which removes the N-terminal proline from PGAFDADPLVVEI sequences with suitable efficiency, but is inactive towards all other residues (including X2=A). Literature research identified Bacillus coagulans proline aminopeptidase (BcPAP) as a candidate. This enzyme had been shown to cleave N-terminal proline from peptides consisting of 2–4 amino acids, while remaining inactive towards other N-terminal amino acids (Yoshimoto and Tsuru, 1985; Kitazono et al., 1992). We could produce it as a soluble monomer (33 kDa) in E. coli (>40 mg from 1 L culture) and tested its suitability for shifting the Connectase reaction equilibrium.
 
-## A method for complete protein-protein fusions
+### A method for complete protein-protein fusions
 
 We tested the effect of BcPAP in ligation reactions with A-ELASKDPGAFDADPLVVEI (A=LysS (Lysine-tRNA ligase), GST (Glutathione-S-Transferase), Ub (Ubiquitin)) and AGAFDADPLVVEI-B (B=MBP (Maltose Binding Protein), Ub, - (just the peptide)) substrates, which cover a range of molecular weights (1–61 kDa). The reactions were performed at room temperature (22 °C) in a neutral buffer (pH 7.0), with moderate salt concentrations (150 mM NaCl, 50 mM KCl), 100 µM of each substrate (A and B), as well as 0.033 eq. Connectase, and 0.066 eq. BcPAP. They were separated by SDS-PAGE, stained with Coomassie G-250, and imaged with a fluorescence scanner (Excitation 685 nm, Emission 725 nm). This allowed the densitometric quantification of the resulting protein bands with good accuracy.
 
@@ -56,7 +56,7 @@ In each case (Figure 3A–C, Appendix 1—figure 2A), we observed 98–100% conv
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/102765/elife-102765-fig3-v1.jpg)
 
-**Figure 3.:** Shown are SDS-PAGE time course analyses of ligation reactions using Lysine-tRNA ligase (LysS) and Maltose binding protein (MBP; A, D, E, F), Glutathione-S-Transferase (GST) and MBP (B), or Ubiquitin with Streptavidin tag (Ub-Strep) and AGAFDADPLVVEI peptide (C) as substrates. Each reaction was performed with 1 eq. N-terminal fusion partner (LysS, GST or Ubiquitin; C-terminal ELASKDPGAFDADPLVVEI sequence), 1 eq. C-terminal fusion partner (MBP or peptide; N-terminal AGAFDADPLVVEI sequence), 0.033 eq. Connectase, and 0.066 eq. BcPAP. The substrate concentration was 100 µM (except for D: 10 µM) and the incubation temperature was 22°C (except for E: 10°C). In experiment F, an MBP protein with an additional N-terminal TEV protease recognition sequence (MENLYFQ|AGAFDADPLVVEI-MBP) was used and TEV protease (0.01 eq.) was added to the reaction. A densitometric analysis of the protein bands is shown below each experiment. For the substrates, the values reflect the substrate band density relative to the substrate band in the control sample (0 min); for the products, the values reflect the product band density relative to the total band density (substrates + products).Figure 3—source data 1.Figure 3—source data 2.Figure 3—source data 3.
+**Figure 3.:** Shown are SDS-PAGE time course analyses of ligation reactions using Lysine-tRNA ligase (LysS) and Maltose binding protein (MBP; A, D, E, F), Glutathione-S-Transferase (GST) and MBP (B), or Ubiquitin with Streptavidin tag (Ub-Strep) and AGAFDADPLVVEI peptide (C) as substrates. Each reaction was performed with 1 eq. N-terminal fusion partner (LysS, GST or Ubiquitin; C-terminal ELASKDPGAFDADPLVVEI sequence), 1 eq. C-terminal fusion partner (MBP or peptide; N-terminal AGAFDADPLVVEI sequence), 0.033 eq. Connectase, and 0.066 eq. BcPAP. The substrate concentration was 100 µM (except for D: 10 µM) and the incubation temperature was 22°C (except for E: 10°C). In experiment F, an MBP protein with an additional N-terminal TEV protease recognition sequence (MENLYFQ|AGAFDADPLVVEI-MBP) was used and TEV protease (0.01 eq.) was added to the reaction. A densitometric analysis of the protein bands is shown below each experiment. For the substrates, the values reflect the substrate band density relative to the substrate band in the control sample (0 min); for the products, the values reflect the product band density relative to the total band density (substrates + products).
 
 We generated the AGAFDADPLVVEI-B substrates for these experiments by TEV protease cleavage of MENLYFQ|AGAFDADPLVVEI-B precursors. We chose this approach to avoid the potential acetylation of N-terminal alanine residues during the expression of (M)AGAFDADPLVVEI-B substrates (methionine removal by methionine aminopeptidase). The cleavage is efficient as the TEV protease recognition sequence is exposed N-terminally of the unstructured Connectase recognition sequence. Consequently, cleavage and conjugation can be performed in parallel with small amounts of enzyme (Figure 3F). Another way to prevent N-terminal acetylation is to add an extra N-terminal proline (i.e. P|AGAFDADPLVVEI-B), which is removed during the reaction by BcPAP (Appendix 1—figure 2B).
 
@@ -64,15 +64,15 @@ To substantiate these findings, we conducted a liquid chromatography mass spectr
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/102765/elife-102765-fig4-v1.jpg)
 
-**Figure 4.:** Shown are SDS-PAGE time course (A, B) and LC-MS analyses (C) of αHER2 (human epidermal growth factor receptor 2) antibody conjugations. The αHER2 heavy (HC) and light chains (LC) were produced with a C-terminal Connectase recognition sequence and a Streptavidin tag (HC-Strep, LC-Strep). In the reactions (25 µM αHER2 (100 µM subunits), 0.033 eq. Connectase, 0.066 eq. BcPAP, 22°C), the Streptavidin tag is replaced by Ubiquitin (A; 1 eq.) or a shorter peptide (B; 1 eq.). A densitometric quantification of the product bands relative to the educt bands is shown below the gels. For the calculation, the BcPAP density in the control lane (Cntrl) Subtracted from the combined LC-Strep/BcPAP band. The LC-MS analyses (C) show the assemblies in the unconjugated antibody sample (top panel) and a shift of the detected masses, consistent with a near-complete conjugation to peptide (middle panel) or ubiquitin (lower panel).Figure 4—source data 1.Figure 4—source data 2.Figure 4—source data 3.
+**Figure 4.:** Shown are SDS-PAGE time course (A, B) and LC-MS analyses (C) of αHER2 (human epidermal growth factor receptor 2) antibody conjugations. The αHER2 heavy (HC) and light chains (LC) were produced with a C-terminal Connectase recognition sequence and a Streptavidin tag (HC-Strep, LC-Strep). In the reactions (25 µM αHER2 (100 µM subunits), 0.033 eq. Connectase, 0.066 eq. BcPAP, 22°C), the Streptavidin tag is replaced by Ubiquitin (A; 1 eq.) or a shorter peptide (B; 1 eq.). A densitometric quantification of the product bands relative to the educt bands is shown below the gels. For the calculation, the BcPAP density in the control lane (Cntrl) Subtracted from the combined LC-Strep/BcPAP band. The LC-MS analyses (C) show the assemblies in the unconjugated antibody sample (top panel) and a shift of the detected masses, consistent with a near-complete conjugation to peptide (middle panel) or ubiquitin (lower panel).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/102765/elife-102765-fig5-v1.jpg)
 
-**Figure 5.:** Shown are SDS-PAGE time course analyses of a Ubiquitin cyclization reaction. The employed Ubiquitin substrate was produced with both an N-terminal (AGAFADPLVVEI) and a C-terminal (ELASKDPGAFDADPLVVEI) Connectase recognition sequence. This allows the formation of linear (L1 - L4, formed by 1–4 Ubiquitin proteins) polymers, which are observed in the early stages of the time course. The N-terminus of a given polymer can be fused to its C-terminus, resulting in cyclic assemblies (C2 - C6, formed by 2–6 Ubiquitin proteins), which present the end product of the reaction. A lower substrate concentration (A, 10 µM) results in smaller assemblies, and a higher substrate concentration results in larger assemblies (B, 100 µM). The assignment of the gel bands is consistent with LC-MS data (below the gels). The plots were normalized to the most intense Ubiquitin signal (Ub-C2); the BcPAP peaks are more intense (>100%), despite its relatively low abundance. The molecular masses of the ubiquitin assemblies are 13 kDa (L1), 24 kDa (L2), 34 kDa (L3), 45 kDa (L4), 21 kDa (C2), 32 kDa (C3), 43 kDa (C4), 53 kDa (C5), and 64 kDa (C6).Figure 5—source data 1.Figure 5—source data 2.Figure 5—source data 3.
+**Figure 5.:** Shown are SDS-PAGE time course analyses of a Ubiquitin cyclization reaction. The employed Ubiquitin substrate was produced with both an N-terminal (AGAFADPLVVEI) and a C-terminal (ELASKDPGAFDADPLVVEI) Connectase recognition sequence. This allows the formation of linear (L1 - L4, formed by 1–4 Ubiquitin proteins) polymers, which are observed in the early stages of the time course. The N-terminus of a given polymer can be fused to its C-terminus, resulting in cyclic assemblies (C2 - C6, formed by 2–6 Ubiquitin proteins), which present the end product of the reaction. A lower substrate concentration (A, 10 µM) results in smaller assemblies, and a higher substrate concentration results in larger assemblies (B, 100 µM). The assignment of the gel bands is consistent with LC-MS data (below the gels). The plots were normalized to the most intense Ubiquitin signal (Ub-C2); the BcPAP peaks are more intense (>100%), despite its relatively low abundance. The molecular masses of the ubiquitin assemblies are 13 kDa (L1), 24 kDa (L2), 34 kDa (L3), 45 kDa (L4), 21 kDa (C2), 32 kDa (C3), 43 kDa (C4), 53 kDa (C5), and 64 kDa (C6).
 
 Finally, we tested the effect of serine-, cysteine-, or metalloprotease inhibitors on the reaction. Connectase is not a protease (Fuchs et al., 2021) and therefore unaffected by these substances (Appendix 1—figure 4). However, the equilibrium shift associated with BcPAP activity could be suppressed with the serine protease inhibitors PMSF and AEBSF (Appendix 1—figure 4). These results contrast with previous studies, where BcPAP was found to be more susceptible to cysteine protease inhibitors (Kitazono et al., 1992). They are, however, consistent with the classification of BcPAP as a serine protease (Kitazono et al., 1994).
 
-## Homogeneous antibody conjugates
+### Homogeneous antibody conjugates
 
 Antibodies are the most relevant protein conjugation target (Beck et al., 2017). Many applications require their conjugation to spacious payload molecules (e.g. horseradish peroxidase) and/or to a defined number of molecules. This number, also known as drug: antibody ratio, is used as a benchmark for several specialized techniques. Of these, formyl-glycine insertion (Liu et al., 2019) (Catalent), sugar engineering (Wijdeven et al., 2022; Mersana), cysteine engineering (Sadowsky et al., 2017; Genentech), the introduction of unnatural amino acids (Zimmerman et al., 2014; Sutro), and Sortase-mediated conjugations (Gebleux et al., 2012; NBE) all find commercial use. Each of these approaches has its advantages and disadvantages. One problem is that even a relatively high conjugation ratio of 90% on each antibody chain leads to a desired drug: antibody ratio of 4 in only 66% of all HC2LC2 antibodies, as each antibody chain is modified separately. The completely labeled antibodies are hard to separate from the partially labeled antibodies and side reactions can further complicate the process.
 
@@ -88,7 +88,7 @@ Finally, a 1:1 antibody-ubiquitin conjugation was analyzed (Figure 4C, lower pan
 
 These results demonstrate that the method is effective for the rapid generation of near-homogeneous antibody conjugates. The conjugation ratio could potentially be further increased with a small excess of the conjugation partner (here: Ubiquitin or peptide). The desired products can be purified in subsequent steps, for example with Streptavidin columns to remove unconjugated antibodies, or with size exclusion columns, to separate HC2LC2 from other assemblies.
 
-## Protein cyclization and polymerization
+### Protein cyclization and polymerization
 
 Protein cyclization is used to enhance protein stability (Purkayastha and Kang, 2019), while protein polymerization can be useful for engineering biomaterials or affine binders (Fierer et al., 2014). Both results may be achieved with proteins carrying both N- and C-terminal Connectase recognition sequences. Circularization may be favored, when the protein is present at a low concentration and when its N- and C-termini are in close proximity. Polymerization might be favored for rod-shaped proteins with distant N- and C-termini at high concentrations.
 
@@ -106,7 +106,7 @@ Instead of just fusing two molecules, as for example in chemical ligations, the 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/102765/elife-102765-fig6-v1.jpg)
 
-**Figure 6.:** (A, B) The first strategy uses purified educts and couples the conjugation reaction with affinity tag removal (top scheme). This allows the separation of the untagged product (Ub-Ub conjugate) from tagged enzymes (Connetase-His6, BcPAP-His6), side products (GAFDADPLVVEI-His6 peptide), and the first educt (Ub-His6) by collecting the unbound fraction (flow through (FT)) in an affinity chromatography step. The second untagged educt (AGADADPLVVEI-Ub) must be entirely converted. This can be achieved with sufficient incubation times in equimolar reactions (A) or by using a small excess of reaction partner (B). (C) The second strategy can be used for expressed proteins in cell extracts and introduces an affinity tag in the reaction product (top scheme). It necessitates the complete conversion of the first affinity tagged educt (Strep-Ub). This is most conveniently achieved by using the second untagged educt (MBP) in excess. Note that proteins with N-terminal alanine residues, such as AGAFDADPLVVEI-MBP, may be partially N-acetylated in some expression systems. In these cases, a higher excess (e.g. more extract with MBP) must be used, as acetylated substrates are not converted by Connectase. Strategies to avoid N-acetylation are described in Figure 3 and Appendix 1—figure 2. Aside from these two strategies, alternative methods such as tandem affinity purification or size exclusion chromatography can also be employed.Figure 6—source data 1.Figure 6—source data 2.
+**Figure 6.:** (A, B) The first strategy uses purified educts and couples the conjugation reaction with affinity tag removal (top scheme). This allows the separation of the untagged product (Ub-Ub conjugate) from tagged enzymes (Connetase-His6, BcPAP-His6), side products (GAFDADPLVVEI-His6 peptide), and the first educt (Ub-His6) by collecting the unbound fraction (flow through (FT)) in an affinity chromatography step. The second untagged educt (AGADADPLVVEI-Ub) must be entirely converted. This can be achieved with sufficient incubation times in equimolar reactions (A) or by using a small excess of reaction partner (B). (C) The second strategy can be used for expressed proteins in cell extracts and introduces an affinity tag in the reaction product (top scheme). It necessitates the complete conversion of the first affinity tagged educt (Strep-Ub). This is most conveniently achieved by using the second untagged educt (MBP) in excess. Note that proteins with N-terminal alanine residues, such as AGAFDADPLVVEI-MBP, may be partially N-acetylated in some expression systems. In these cases, a higher excess (e.g. more extract with MBP) must be used, as acetylated substrates are not converted by Connectase. Strategies to avoid N-acetylation are described in Figure 3 and Appendix 1—figure 2. Aside from these two strategies, alternative methods such as tandem affinity purification or size exclusion chromatography can also be employed.
 
 Another consequence of this replacement mechanism is that complete fusions may be reversed on demand. This is not possible with chemical, split intein, or split domain ligation methods. Yet, the addition of a new X3GAFDADPLVVEI-C fusion partner to an existing A-ELASKDX2GAFDADPLVVEI-B fusion product allows the exchange of molecules B and C. To make this second conjugation complete, a new method for the specific removal of X2 is needed, just like BcPAP was used to remove X1=Pro in this study. This new method could involve another aminopeptidase (Gonzales and Robert-Baudouy, 1996), a specific chemical modification (Bandyopadhyay et al., 2016), or an N-acetyltransferase (Lapteva et al., 2021) (see the section ‘Discrimination between different recognition sequences’). The resulting re-conjugation would enable advanced applications, such as the immobilization of a protein on a surface and its release on demand, or the visualization of existing conjugation products by fluorophore (de-) coupling.
 
@@ -118,7 +118,360 @@ The main disadvantage of Connectase lies in its relatively long recognition sequ
 
 ## Methods
 
-## Cloning, expression, and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3) gold</td>
+      <td>Agilent</td>
+      <td>#230130</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>Sigma-Aldrich</td>
+      <td>85120602</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Connectase-GS-His6</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BcPAP-GS-His6</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-GS-Ubiquitin-RELASKD-CnTag-SEEGEGS-Strep</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-GS-LysS-RELASKD-CnTag</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-GS-GST-RELASKD-CnTag</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV-CnTag(P1A)-AAAGA-MBP</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-GS-TEV protease</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV-CnTag(P1A)-AAAGA-Ubiquitin</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pro-CnTag(P1A)-AAAGA-Ubiquitin-His6</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>αHER2-Heavy chain-RELASKD-CnTag-SEEGEGSG-Strep</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>αHER2-Light chain-RELASKD-CnTag-SEEGEGSG-Strep</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV-CnTag(P1A)-AAAGA-Ubiquitin-RELASKD-CnTag-SE-Strep</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ub-RELASKD-CnTag-His6</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Strep-Ub-RELASKD-CnTag</td>
+      <td>synthesized by Biocat (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>AGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>EGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>KGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>LGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>QGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>VGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>WGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>YGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide for in-gel fluorescence detection</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide for biotinylation</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RELASKDPGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ELASKDPGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>LASKDPGAFDADPLVVEI</td>
+      <td>synhesized by Intavis (this paper)</td>
+      <td>-</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protease Inhibitor kit</td>
+      <td>G-biosciences</td>
+      <td>786–207</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher</td>
+      <td>11668027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease Inhibitor Cocktail</td>
+      <td>Roche</td>
+      <td>11697498001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Unicorn v5.1.0</td>
+      <td>GE</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio Lite 5.2.</td>
+      <td>Licor</td>
+      <td>RRID:SCR_013715</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Compass DataAnalysis v6.1 software</td>
+      <td>Bruker</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxEnt</td>
+      <td>Bruker</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning, expression, and purification
 
 The sequences of all proteins and peptides used in this study are listed in Supplementary file 1. The peptide for the in-gel fluorescence assay was synthesized by Intavis, while all other peptides were synthesized by Genecust. Genes were synthesized by Biocat, and cloned into the pET30b(+) vector (restriction sites: NdeI, XhoI) for expression in E. coli or the pcDNA3.1 vector (restriction sites: HindIII, XhoI) for expression in HEK293 cells.
 
@@ -128,7 +481,7 @@ For recombinant expression of αHER2 antibodies, HEK293 cells were cultured at 3
 
 For protein purification, His6-tagged proteins (all proteins except for antibody subunits Figure 4, Appendix 1—figure 5 and Appendix 1—figure 7) and Strep-tagged Ubiquitin constructs (Figure 5 and Figure 6) were applied to HisTrap HP columns (20 mM Tris-HCl pH 8.0, 250 mM NaCl, 20–250 mM imidazole). Strep-tagged proteins (the antibody subunits and the Ubiquitin constructs) were instead purified with StrepTrap XT columns (1.8 mM KH2PO4, 10 mM Na2HPO4, 2.7 mM KCl, 138 mM NaCl, 0–50 mM Biotin, pH 7.4). After this initial purification step, proteins with N-terminal TEV recognition sequences (MBP (Figure 3 and Appendix 1—figure 3)), Ubiquitin (Figure 4 and Appendix 1—figure 2), and Ubiquitin for cyclization (Figure 5) were incubated with TEV protease at a 1:100 molar ratio. The reaction was performed overnight in dialysis tubes (dialysis buffer: 20 mM Tris-HCl pH 8.0, 250 mM NaCl) at 4 °C. The processed proteins were separated from His6-tagged TEV protease, N-terminal fragments (MHHHHHHENLYFQ), and residual unprocessed proteins by another purification step. For this, the reactions were applied a second time to HisTrap HP columns (as above), and the flow-through was collected. All chromatography steps were performed on an Äkta Purifier FPLC (GE Healthcare) using Unicorn v5.1.0 software. Purified proteins were supplemented with 15% glycerol, flash-frozen in liquid nitrogen, and stored at –80 °C.
 
-## Biochemical ssays
+### Biochemical ssays
 
 Unless noted otherwise, all conjugation reactions were performed at 22 °C in neutral (pH 7.0) buffer containing 50 mM sodium acetate, 50 mM MES, 50 mM HEPES, 150 mM NaCl, and 50 mM KCl. They were stopped with SDS loading buffer (final concentration: 50 mM Tris-HCl, 2% SDS, 10% glycerol, 25 mM β-mercaptoethanol, 0.01% bromophenol blue, pH 6.8; final protein concentration ~0.1 g/l) and incubated at 90 °C for 10 min. The samples were separated using mPAGE 12% Bis-Tris gels (Merck; 5 µl loading volume per sample) with MOPS running buffer (50 mM MOPS, 50 mM Tris, 0.1% SDS, 1 mM EDTA; no pH adjustment). The gels were stained with Coomassie blue (25% ethanol, 25% methanol, 10% acetate, 0.25% Coomassie R-250), and subsequently with Coomassie colloidal solution (20% ethanol, 10% ammonium sulfate, 5.8% phosphoric acid, 5% methanol, 0.12% Coomassie G-250). They were destained with 10% acetic acid and imaged with an Azure Sapphire NIR fluorescence scanner (excitation at 685 nm, emission at 725 nm, 25–50 µm resolution, Intensity 8, highest scanning speed). Densitometric band quantification was performed with Image Studio Lite 5.2. The bands were manually assigned with the ‘draw rectangle’ tool. Each quantified region encompassed the entire band, bordered by a minimum of three pixels of background for accurate measurement.
 
@@ -150,7 +503,7 @@ For Figure 6, 100 µM (A) or 115 µM (B) Ubiquitin with C-terminal Connectase re
 
 For Appendix 1—figure 8, Ub-Strep (10 µM) was mixed with RELASKDPGAFDADPLVVEI, ELASKDPGAFDADPLVVEI, or LASKDPGAFDADPLVVEI peptides (10 µM) and 0.25 µM Connectase. Reaction samples were taken after the indicated times (0–60 min) and analyzed by SDS-PAGE.
 
-## Liquid chromatography-mass spectrometry (LC-MS)
+### Liquid chromatography-mass spectrometry (LC-MS)
 
 LC-MS analysis was performed at the Natural and Medical Sciences Institute (NMI, Reutlingen, Germany), using established sample preparation and data interpretation protocols (Gramlich et al., 2021; Gramlich et al., 2022). Specifically, the samples were prepared as follows:
 

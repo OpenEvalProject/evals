@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01485tq96 Department of Molecular Biology, University of Wyoming Laramie United States
+1. Department of Molecular Biology, University of Wyoming Laramie United States ([ROR:01485tq96](https://ror.org/01485tq96))
 
 † Corresponding author
 

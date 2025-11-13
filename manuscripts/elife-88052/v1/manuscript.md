@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/038x9td67 AMOLF Amsterdam Netherlands
-2. https://ror.org/008xxew50 Amsterdam Institute for Life and Environment, Vrije Universiteit Amsterdam Amsterdam Netherlands
-3. https://ror.org/00hx57361 Department of Mechanical and Aerospace Engineering, Princeton University Princeton United States
+1. AMOLF Amsterdam Netherlands ([ROR:038x9td67](https://ror.org/038x9td67))
+2. Amsterdam Institute for Life and Environment, Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))
+3. Department of Mechanical and Aerospace Engineering, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
 
 † Corresponding author
 

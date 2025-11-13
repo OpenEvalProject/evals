@@ -42,37 +42,65 @@ CB-839 (also known as telaglenastat) is a potent and noncompetitive allosteric G
 
 ## Results
 
-## Liver cancer is addicted to glutamine
+### Liver cancer is addicted to glutamine
 
 To determine whether liver cancer is a glutamine (Gln)-dependent tumor type, we cultured a panel of liver cancer cell lines in a medium with 4 mM Gln or without Gln. Both long-term colony formation assay (Figure 1a) and short-term IncuCyte assay (Figure 1b) showed that Gln deprivation impaired the proliferation of most liver cancer cell lines (9 out of 11) in vitro. Accordingly, we defined these 9 cell lines, which need exogenous Gln for efficient proliferation, as Gln dependent (GD) cells, and the other two cell lines as Gln independent (GID) cells. To assess Gln dependency of liver cancer in patients, we analyzed Gln metabolism-related genes in The Cancer Genome Atlas (TCGA) named ‘PENG_GLUTAMINE_DEPRIVATION_DN’, whose expression is considered to be positively correlated with Gln metabolism. The heatmap shows the obvious upregulation of these genes in liver cancer tissues as compared to their corresponding non-cancerous liver tissues in TCGA cohort containing 50 paired HCC samples (Figure 1c). Gene set enrichment approach (GSEA) also showed positive enrichment of genes associated with Gln metabolism in both TCGA and Gene Expression Omnibus (GEO) data (Figure 1d and e). Moreover, SurvExpress survival analysis of 381 TCGA samples indicated that the dysregulation of Gln metabolism genes correlated with poor prognosis of human liver cancer patients (Figure 1f). Taken together, these results indicate that the liver cancers of poor prognosis have upregulated glutamine metabolism, which may indicate an increased requirement for Gln in HCC tumors.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig1-v1.jpg)
 
-**Figure 1.:** (a, b) A total of 11 liver cancer cell lines were cultured with 4 mM glutamine (Gln+) or glutamine deprivation (Gln-). Proliferation was assessed by colony formation assay (a) and IncuCyte assay (b), respectively. Liver cancer cell lines were divided into Gln dependent (GD) and Gln independent (GID) subtypes, respectively. (c) Differential expression profiles of Gln metabolism-related genes (Gene Set: PENG_GLUTAMINE_DEPRIVATION_DN) in 50 paired HCC samples in TCGA cohort. Heatmap illustrated the log2 fold-change values of Gln metabolism-related genes between cancerous tissues and their corresponding noncancerous liver tissues. Red color indicates gene upregulation; blue color indicates gene downregulation. Each column indicates a patient; each row indicates a gene. (d, e) Gene set enrichment analysis (GSEA) enrichment of cancerous tissues versus corresponding noncancerous tissues for gene set ‘PENG_GLUTAMINE_DEPRIVATION_DN’ in TCGA (d) and GSE14520, respectively (e). (f) Expression of Gln metabolism-related genes correlated with poor prognosis of liver cancer patients in TCGA. HR: hazard ratio; CI: confidence interval.Figure 1—source data 1.
+**Figure 1.:** (a, b) A total of 11 liver cancer cell lines were cultured with 4 mM glutamine (Gln+) or glutamine deprivation (Gln-). Proliferation was assessed by colony formation assay (a) and IncuCyte assay (b), respectively. Liver cancer cell lines were divided into Gln dependent (GD) and Gln independent (GID) subtypes, respectively. (c) Differential expression profiles of Gln metabolism-related genes (Gene Set: PENG_GLUTAMINE_DEPRIVATION_DN) in 50 paired HCC samples in TCGA cohort. Heatmap illustrated the log2 fold-change values of Gln metabolism-related genes between cancerous tissues and their corresponding noncancerous liver tissues. Red color indicates gene upregulation; blue color indicates gene downregulation. Each column indicates a patient; each row indicates a gene. (d, e) Gene set enrichment analysis (GSEA) enrichment of cancerous tissues versus corresponding noncancerous tissues for gene set ‘PENG_GLUTAMINE_DEPRIVATION_DN’ in TCGA (d) and GSE14520, respectively (e). (f) Expression of Gln metabolism-related genes correlated with poor prognosis of liver cancer patients in TCGA. HR: hazard ratio; CI: confidence interval.
 
-## The glutaminase inhibitor CB-839 monotherapy achieves insufficient anti-tumor effect in liver cancer
+### The glutaminase inhibitor CB-839 monotherapy achieves insufficient anti-tumor effect in liver cancer
 
 The glutaminase isoenzyme GLS1 is a key enzyme in Gln metabolism. We first analyzed the expression levels of GLS1 in the GSE14520 cohort (n = 229), which provides data on gene expression for both paired human non-tumor and HCC tissues. The results indicate that mRNA levels of GLS1 are significantly increased in HCC tissues compared to non-tumor tissues (Figure 2a). Among the 229 paired samples, the GLS1 level is increased to more than double in about 55% of HCC patients (Figure 2b). Next, we analyzed the association between GLS1 level and prognosis of liver cancer patients. TCGA data indicated that the high mRNA level of GLS1 correlated with the poor prognosis of human liver cancer patients (Figure 2c). We also analyzed GLS1 expression using a tissue microarray (TMA) containing 377 HCC specimens by IHC analysis. HCC patients were classified into two groups: GLS1low group (n = 175) and GLS1high group (n = 202). The Kaplan-Meier analysis indicates that HCC patients with high protein expression of GLS1 exhibit worse overall survival (OS) and disease-free survival (DFS) as compared to patients with low protein expression of GLS1 (Figure 2d,e and f). To explore the therapeutic effect of GLS1 inhibitor CB-839 on liver cancer cells, we treated the panel of 11 liver cancer cell lines with increasing concentrations of CB-839 in long-term colony formation assays and short-term CellTiter-Blue cell viability assays. We found that CB-839 treatment only severely impaired the proliferation of three GD cell lines (Figure 2g and h). Other six GD cell lines and two GID cell lines only showed little response to CB-839 treatment in vitro (Figure 2g and h). We also analyzed the correlation between CB-839 sensitivity and expression level of its target and found no correlation between protein level of GLS1 and CB-839 sensitivity (Figure 2g, h and i). In addition, the protein level of GLS1 was not correlated to Gln addiction in vitro (Figures 1a, b and 2i), indicating that Gln addiction to liver cancer cells is not dependent on GLS1 level. These data suggest that targeting glutamine metabolism by GLS1 inhibitor CB-839 alone is insufficient for liver cancer therapy.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig2-v1.jpg)
 
-**Figure 2.:** (a) mRNA levels of GLS1 in the cohort of GSE14520 (n = 229; probe for GLS1: 203159_at; N: nontumor tissues, T: tumor tissues). Data are represented as mean ± SEM. (b) Log2 fold change of GLS1 mRNA in 229 paired HCC samples in the cohort of GSE14520 (probe for GLS1: 203159_at; N: nontumor tissues, T: tumor tissues). (c) GLS1 expression and Kaplan-Meier OS analysis for patients with HCC in TCGA cohort (n = 364). (d–f) IHC staining analyses of GLS1 were performed in 377 patients with HCC. The patients were divided into two groups: GLS1low group (n = 175) and GLS1high group (n = 202). (d) Typical immunostaining images of GLS1 in GLS1low group and GLS1high group were shown. Scale bars = 100 μm. The Kaplan-Meier analysis for OS (e) and DFS (f) was performed according to GLS1 levels. (g, h) Liver cancer cell lines were treated with increasing concentrations of CB-839. Proliferation and viability were assessed by colony formation assay (g) and CellTiter Blue assay (h), respectively. (i) Lysates of liver cancer cell lines were western blotted for two splice variants of GLS1 (KGA and GAC). HSP90 served as a control. ***p<0.001, Student’s t test.Figure 2—source data 1.
+**Figure 2.:** (a) mRNA levels of GLS1 in the cohort of GSE14520 (n = 229; probe for GLS1: 203159_at; N: nontumor tissues, T: tumor tissues). Data are represented as mean ± SEM. (b) Log2 fold change of GLS1 mRNA in 229 paired HCC samples in the cohort of GSE14520 (probe for GLS1: 203159_at; N: nontumor tissues, T: tumor tissues). (c) GLS1 expression and Kaplan-Meier OS analysis for patients with HCC in TCGA cohort (n = 364). (d–f) IHC staining analyses of GLS1 were performed in 377 patients with HCC. The patients were divided into two groups: GLS1low group (n = 175) and GLS1high group (n = 202). (d) Typical immunostaining images of GLS1 in GLS1low group and GLS1high group were shown. Scale bars = 100 μm. The Kaplan-Meier analysis for OS (e) and DFS (f) was performed according to GLS1 levels. (g, h) Liver cancer cell lines were treated with increasing concentrations of CB-839. Proliferation and viability were assessed by colony formation assay (g) and CellTiter Blue assay (h), respectively. (i) Lysates of liver cancer cell lines were western blotted for two splice variants of GLS1 (KGA and GAC). HSP90 served as a control. ***p<0.001, Student’s t test.
 
-## A compounds screen identifies that ASCT-2 inhibitor V-9302 sensitizes GD liver cancer cells to CB-839 treatment
+### A compounds screen identifies that ASCT-2 inhibitor V-9302 sensitizes GD liver cancer cells to CB-839 treatment
 
 The data shown above indicate that a significant number of liver cancer cell lines are glutamine dependent but fail to respond to CB-839 treatment. To study this in more detail, we investigated metabolite profiles of two GD liver cancer cell lines, SNU398 and HepG2. A total of 66 named metabolites were identified and mapped to seven major pathways. We found that CB-839 treatment significantly decreased a number of key downstream metabolites involved in Gln metabolism, such as glutamate (GLU), TCA cycle intermediate (α-KG), redox metabolite (glutathione, NADPH) in both cell lines (Figure 3a and b and Figure 3—figure supplement 1). These results indicate that CB-839 efficiently blocks Gln utilization and interferes with the dynamic changes of intermediates in Gln metabolism. Therefore, we hypothesized that CB-839 treatment already caused metabolic vulnerability, which could further be exploited for cancer therapy if co-treated with other anti-metabolic drugs. To prove this, we generated a chemical library consisting of 13 compounds inhibiting a variety of tumor metabolism targets, and tested their ability to enhance the anti-tumor effect of CB-839. Notably, we found that V-9302, a novel inhibitor of Gln transporter ASCT2 (Schulte et al., 2018), is the most potent agent in sensitizing both SNU398 and HepG2 GD liver cancer cells to CB-839 (Figure 3c and d). To study whether this combination has a broad anti-proliferative effect in liver cancer cells, we tested cell viability and proliferation in a panel of liver cancer cell lines after single drug or combination treatment with CB-839 and V-9302 in vitro. Indeed, the combination showed synergistic anti-proliferation effect in GD cell lines, but only showed limited anti-tumor effect in GID cell lines in vitro (Figure 4a,b and c and Figure 4—figure supplement 1). Moreover, similar results were observed in these cell lines when combining V-9302 with another GLS1 inhibitor BPTES (Figure 4—figure supplement 2). These findings suggest that the combination of GLS1 inhibitors and V-9302 could be a novel therapeutic approach for GD liver cancer cells.
 
-## Combination of CB-839 and V-9302 depletes glutathione and induces lethal ROS level in GD liver cancer cells
+![Figure 3.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig3-v1.jpg)
+
+**Figure 3.:** (a) Heatmap representation of 66 metabolites between treated and untreated groups. Intracellular metabolite levels measured by LC/MS-MS in SNU398 and HepG2 cells treated with DMSO or CB-839 (SNU398: 4 μM; HepG2: 8 μM) for 4 and 24 hr, respectively. These metabolites were mapped to seven major pathways including those of the glycolytic system, TCA cycle, urea cycle, redox reaction, purine and pyrimidine metabolism. Each column represented a metabolite. Deeper red color represents higher content; conversely, deeper green color represents lower content. (b) Graphic representation of glutamate (GLU), α-ketoglutarate (α-KG), glutathione (GSH), NADPH were shown in the LC/MS-MS screen in a. Data are represented as mean ± SEM, n = 3 independent experiments. (c) Schematic outline of the compounds screen on the basis of CB-839 treatment: Two GD cell lines, SNU398 and HepG2, were first treated with 4 and 8 μM CB-839, respectively. Then, 13 compounds inhibiting a variety of druggable tumor metabolism targets were tested at their IC50 concentrations for 4 d. (d) Heatmap represents the enhanced percentage of viability inhibition by 13 compounds in SNU398 and HepG2, respectively. Deeper red color represents higher enhance; conversely, deeper green color represents lower enhance. Statistical significance was assessed using a Student’s t test. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Heatmap representation of 66 metabolites between treated and untreated groups. Intracellular metabolite levels measured by LC/MS-MS in SNU398 and HepG2 cells treated with DMSO or CB-839 (SNU398: 4 μM; HepG2: 8 μM) for 4 and 24 hr, respectively.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig4-v1.jpg)
+
+**Figure 4.:** (a-c) Liver cancer cells (four GD cell lines and two GID cell lines) were treated with CB-839, V-9302, or the combination at the indicated concentration. CellTiter Blue viability assays (a), IncuCyte assays (b) and long-term colony formation assays (c) were performed, respectively. Data are represented as mean ± SEM. Statistical significance was assessed using a Student’s t test. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Liver cancer cell lines (SNU449, SK-Hep1, Huh6, Hep3B, and SNU387) were treated with CB-839, V-9302, or the combination at the indicated concentration. Long-term colony formation assays were performed.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Liver cancer cells (four GD and two GID cell lines) were treated with BPTES, V-9302, or the combination at the indicated concentration. Long-term colony formation assays were performed.
+
+### Combination of CB-839 and V-9302 depletes glutathione and induces lethal ROS level in GD liver cancer cells
 
 The alanine-serine-cysteine transporter, type-2 (ASCT2, encoded by gene SLC1A5), is a sodium-dependent solute carrier protein responsible for the import of neutral amino acids and is the primary transporter of glutamine in cancer cells. Several studies have attributed glutathione (GSH) synthesis and ROS stress with dysregulation of ASCT2 (Schulte et al., 2018; Yoo et al., 2020). To investigate whether the combination of CB-839 and V-9302 can disrupt the ROS balance in liver cancer, we first analyzed the GSH levels after single-drug treatment or combination in SNU398 and HepG2 cells, respectively. The results show that CB-839 or V-9302 alone significantly decreased the level of GSH, while the combination resulted in a further decrease in GSH in both cell lines (Figure 5a). GSH is an important antioxidant that acts as a free radical scavenger upon its reaction with ROS in cells (Bansal and Simon, 2018; Okazaki et al., 2017), raising the possibility that combination of CB-839 and V-9302 may interfere with ROS homeostasis of these liver cancer cells. Analysis of intracellular ROS levels showed that single agent CB-839 or V-9302 only modestly increased the ROS production. However, their combination dramatically increased the already-elevated ROS production, reaching a level that caused severe DNA damage, as evidenced by an increase in γ-H2AX (Figure 5b and c). To determine whether the combination inhibited cell viability and proliferation of liver cancer cells via the excessive ROS production, we treated these cells with the ROS scavenger N-acetyl-l-cysteine (NAC). The results show that NAC treatment rescued the cell viability and proliferation of SNU398 and HepG2 cells in the presence of both CB-839 and V-9302 (Figure 5d and e). Moreover, the strong synergistic induction of apoptosis can be rescued by NAC treatment in both SNU398 and HepG2 cells, as indicated by the IncuCyte caspase-3/7 apoptosis assay (Figure 5f). These results suggest a model explaining the synergistic effect between CB-839 and V-9302 (Figure 5g): GLS1 inhibition by CB-839 reduces mitochondrial Glu level, which decreases TCA-dependent NADPH production, elevating glutathione oxidation. Besides, CB-839 also decreases intracellular Glu that is essential for cystine import by xCT, a cystine/glutamate antiporter, thus cutting down the cysteine conversion that in turn serves as the rate-limiting precursor for GSH biosynthesis. CB-839 treated cells are vulnerable to other perturbations that further deplete glutamine anaplerosis, such as blockage of major Gln transporter ASCT-2 by V-9302. Collectively, these results indicate that the combination of CB-839 and V-9302 achieves a synergistic anti-tumor effect in liver cancer via disrupting the GSH/ROS balance.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig5-v1.jpg)
 
-**Figure 5.:** (a) Intracellular GSH levels were measured by LC/MS-MS in SNU398 and HepG2 cells treated with indicated drugs for 48 hr, respectively. (b) ROS levels were measured using the CellROX Deep Red flow cytometry assay. (c) Western blot analysis was performed for γH2AX as a DNA damage marker. HSP90 served as a control. (d, e) Long-term colony formation assay and CellTiter-Blue viability assay show rescued proliferation and viability of SNU398 and HepG2 cells after ROS scavenger N-acetyl-cysteine (NAC) treatment. (f) Caspase-3/7 positive percentages of control, NAC, V-9302, CB-839, the combination, or combination plus NAC treated SNU398 and HepG2 cells in the presence of a caspase-3/7 activatable dye. (g) Schematic showing how the combination of CB-839 and V-9302 decreases GSH and induce apoptosis in liver cancer. All the data in this figure are represented as mean ± SEM. Statistical significance was assessed using a Student’s t test. *p<0.05, **p<0.01, ***p<0.001.Figure 5—source data 1.
+**Figure 5.:** (a) Intracellular GSH levels were measured by LC/MS-MS in SNU398 and HepG2 cells treated with indicated drugs for 48 hr, respectively. (b) ROS levels were measured using the CellROX Deep Red flow cytometry assay. (c) Western blot analysis was performed for γH2AX as a DNA damage marker. HSP90 served as a control. (d, e) Long-term colony formation assay and CellTiter-Blue viability assay show rescued proliferation and viability of SNU398 and HepG2 cells after ROS scavenger N-acetyl-cysteine (NAC) treatment. (f) Caspase-3/7 positive percentages of control, NAC, V-9302, CB-839, the combination, or combination plus NAC treated SNU398 and HepG2 cells in the presence of a caspase-3/7 activatable dye. (g) Schematic showing how the combination of CB-839 and V-9302 decreases GSH and induce apoptosis in liver cancer. All the data in this figure are represented as mean ± SEM. Statistical significance was assessed using a Student’s t test. *p<0.05, **p<0.01, ***p<0.001.
 
-## Combined treatment inhibits xenograft growth and induces apoptosis in vivo
+### Combined treatment inhibits xenograft growth and induces apoptosis in vivo
 
 To assess the effectiveness of the combination of CB-839 and V-9302 in vivo, SNU398 and MHCC97H cells were injected into nude mice to establish tumors. After tumors reached a size of about 100 mm3, animals were treated with vehicle, CB-839, V-9302, or the combination of both drugs. Results showed that the combination elicited a strong growth inhibition in both SNU398 and MHCC97H xenograft models, while single-drug treatment showed modest anti-tumor effects (Figure 6a,b,c and d). We also measured the body weight of mice during the treatment, and no body weight reduction was observed in all the treatment groups (Figure 6—figure supplement 1), indicating good tolerability for this novel drug combination. IHC analyses showed that treatment with the combination of CB-839 and V-9302 resulted in an obvious decrease in Ki67 positive cells (Figure 6e,f,g and j). In addition, the combination also significantly increased caspase-3 positive cells (Figure 6e,f,h and k) and γH2AX-positive cells (Figure 6e,f,i and l) in tumor tissues, supporting the induction of apoptosis and DNA damage in vivo. Taken together, our xenograft model experiments point out that combination of CB-839 and V-9302 is effective for liver cancer therapy in vivo.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig6-v1.jpg)
+
+**Figure 6.:** SNU398 and MHCC97H cells were grown as tumor xenografts in BALB/c nude mice. Longitudinal tumor volume progression in SNU398 and MHCC97H tumor-bearing mice treated with vehicle (n = 6), CB-839 (150 mg/kg, oral gavage, twice per day; n = 6), V-9302 (30 mg/kg, intraperitoneal injection; n = 6), or combined therapies (n = 6) for 20 or 15 d, respectively. Growth curve and endpoint tumor volume of SNU398 (a, b) and MHCC97H (c, d) xenografts. (e, f) Representative images of HE, Ki67, cleaved caspase-3, and γH2AX in SNU398 (e) and MHCC97H (f) xenograft models. Scale bars = 50 μm. (g–i) Quantification of Ki67 positive cells (g), cleaved caspase-3 positive cells (h), and γH2AX positive cells (i) in SNU398 xenografts. (j–l) Quantification of Ki67 positive cells (j), cleaved caspase-3 positive cells (k), and γH2AX positive cells (l) in SNU398 xenografts. Data are represented as mean ± SEM. Statistical significance was assessed using a Student’s t test. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** SNU398 and MHCC97H tumor-bearing mice treated with vehicle (n = 6), CB-839 (150 mg/kg, oral gavage, twice per day; n = 6), V-9302 (30 mg/kg, intraperitoneal injection; n = 6), or combined therapies (n = 6) for 20 or 15 d, respectively. Graph shows mean ± SEM.
 
 ## Discussion
 
@@ -86,54 +114,316 @@ The advantage of metabolism-targeted therapies is the ability to non-invasively 
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Hep3B</td>
+      <td>ATCC</td>
+      <td>Cat#:HB-8064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Huh7</td>
+      <td>JCRB</td>
+      <td>Cat#:JCRB0403; RRID:CVCL_0336</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HepG2</td>
+      <td>ATCC</td>
+      <td>Cat# HB-8065; RRID:CVCL_0027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>SNU398</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-2233; RRID:CVCL_0077</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>SNU449</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-2234; RRID:CVCL_0454</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Huh6</td>
+      <td>RCB</td>
+      <td>Cat# RCB1367; RRID:CVCL_4381</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>SK-Hep1</td>
+      <td>ATCC</td>
+      <td>Cat# HTB-52; RRID:CVCL_0525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>JHH1</td>
+      <td>JCRB</td>
+      <td>Cat# NIHS0056; RRID:CVCL_2785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>SNU387</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-2237; RRID:CVCL_0250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>PLC/PRF5</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>MHCC97H</td>
+      <td></td>
+      <td>RRID:CVCL_4972</td>
+      <td>Liver Cancer Institute of Zhongshan Hospital (Shanghai, China)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CB-839</td>
+      <td>Selleck Chemicals</td>
+      <td>S7655</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BPTES</td>
+      <td>Selleck Chemicals</td>
+      <td>S7753</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BAY-876</td>
+      <td>Selleck Chemicals</td>
+      <td>S8452</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AZD3965</td>
+      <td>Selleck Chemicals</td>
+      <td>S7339</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CPI613</td>
+      <td>Selleck Chemicals</td>
+      <td>S2776</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Compound 3 k</td>
+      <td>Selleck Chemical</td>
+      <td>S8616</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NCT503</td>
+      <td>Selleck Chemical</td>
+      <td>S8619</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AG221</td>
+      <td>Selleck Chemical</td>
+      <td>S8205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NLG-8189</td>
+      <td>Selleck Chemical</td>
+      <td>S7756</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IACS-10759</td>
+      <td>Selleck Chemical</td>
+      <td>S8731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dapagliflozin</td>
+      <td>Selleck Chemical</td>
+      <td>S1548</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-DG</td>
+      <td>Selleck Chemical</td>
+      <td>S4701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DHEA</td>
+      <td>Selleck Chemical</td>
+      <td>S2604</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ND-646</td>
+      <td>MedChemExpress</td>
+      <td>HY-101842</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>V-9302</td>
+      <td>Probechem Biochemicals</td>
+      <td>1855871-76-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-acetyl cysteine (NAC)</td>
+      <td>Sigma-Aldrich</td>
+      <td>616-91-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP90 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-13119; RRID:AB_675659</td>
+      <td>(WB 1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GLS (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 12855–1-AP, RRID:AB_2110381</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-γH2AX (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9718; RRID:AB_2118009</td>
+      <td>(WB 1:1000) (IHC 1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab15580; RRID:AB_443209</td>
+      <td>(IHC 1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cleaved Caspase-3 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab2302</td>
+      <td>(IHC 1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellROX Deep Red Flow Cytometry Assay Kit</td>
+      <td>Life Technologies</td>
+      <td>C10491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>javaGSEA desktop application</td>
+      <td>http://software.broadinstitute.org/gsea</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism - Graphpad</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 The human liver cancer cell lines Hep3B, Huh7, HepG2, SNU398, SNU449, Huh6, SK-Hep1, JHH1, SNU387, and PLC/PRF/5 were provided by Erasmus University (Rotterdam, Netherlands). MHCC97H was provided by the Liver Cancer Institute of Zhongshan Hospital (Shanghai, China). The majority of liver cancer cell lines were established from hepatocellular carcinoma (HCC). Among them, SK-Hep1 was established from an endothelial tumor in the liver and Huh6 is a hepatoblastoma cell line. HCC cells were cultured in DMEM with 10% FBS and penicillin/streptomycin (Gibco) at 37°C/5% CO2. All cell lines were tested negative for mycoplasma contamination. The cell lines were authenticated by applying short tandem-repeat (STR) DNA profiling.
 
-## Compounds and antibodies
+### Compounds and antibodies
 
 CB-839 (S7655), BPTES (S7753), BAY-876 (S8452), AZD3965 (S7339), CPI613 (S2776), Compound 3 k (S8616), NCT503 (S8619), AG221 (S8205), NLG-8189 (S7756), IACS-10759 (S8731), Dapagliflozin (S1548), 2-DG (S4701) and DHEA (S2604) were purchased from Selleck Chemicals. ND-646 (HY-101842) was purchased from MedChemExpress. V-9302 (1855871-76-9) was purchased from Probechem Biochemicals. N-acetyl cysteine (NAC) was purchased from Sigma. Antibody against HSP90 (sc-13119) was purchased from Santa Cruz Biotechnology. Antibody against two different splice forms of GLS, KGA/GAC, (12855–1-AP) was purchased from Proteintech. Antibody against γH2AX (#9718) was purchased from Cell Signaling. Antibodies against Ki67 (ab15580) and Cleaved caspase-3 (ab2303) were from Abcam.
 
-## Protein lysate preparation and immunoblotting
+### Protein lysate preparation and immunoblotting
 
 Cells were washed with PBS and lysed with RIPA buffer supplemented with Complete Protease Inhibitor (Roche) and Phosphatase Inhibitor Cocktails II and III (Sigma). Protein quantification was performed with the BCA Protein Assay Kit (Pierce). All lysates were freshly prepared and processed with Novex NuPAGE Gel Electrophoresis Systems (Thermo Fisher Scientific) followed by western blotting.
 
-## Long-term colony formation assays
+### Long-term colony formation assays
 
 Cells were cultured and seeded onto 6-well plates at a density of 2–10 × 104 cells per well, depending on the growth rate, and were cultured in normal DMEM medium containing 4 mM glutamine (11995073, ThermoFisher), DMEM medium without glutamine (10313021, ThermoFisher), or the indicated drugs for 10–14 d (medium was changed twice a week). Cells were then fixed with 4% formaldehyde in PBS and stained with 0.1% crystal violet diluted in water.
 
-## Incucyte cell proliferation assay and apoptosis assay
+### Incucyte cell proliferation assay and apoptosis assay
 
 Indicated cell lines were seeded onto 96-well plates at a density of 1000–8000 cells per well, depending on the growth rate and design of the experiments. About 12 hr after seeding, cells were cultured in medium with drugs of indicated concentrations using the HP D300 Digital Dispenser (HP) and imaged every 4 hr in Incucyte ZOOM (Essen Bioscience). Phase-contrast images were analyzed to detect cell proliferation based on cell confluence. For cell apoptosis, caspase-3/7 green apoptosis assay reagent was added to the culture medium and cell apoptosis was analyzed based on green fluorescent staining of apoptotic cells.
 
-## CellTiter blue viability assays
+### CellTiter blue viability assays
 
 Cell lines were cultured and seeded into 96-well plates (2000–5000 cells per well). After about 12 hr after seeding, drugs with the indicated concentrations were added to liver cancer cells. Cell viability was measured with the CellTiter-Blue assay (Roche) after treatment with the drug for 72 hr. The relative viability of different cell lines in the presence of drug was normalized against control conditions (untreated cells) after subtraction of the background signal.
 
-## ROS detection
+### ROS detection
 
 The cells were treated in the absence or presence of drugs for 48 hr. ROS level in cells was detected using CellROX Deep Red Flow Cytometry Assay Kit (C10491, Life Technologies) according to the manufacturer’s instructions.
 
-## Immunohistochemical staining and scoring
+### Immunohistochemical staining and scoring
 
 HCC specimens were obtained from patients who underwent curative surgery in Eastern Hepatobiliary Hospital of the Second Military Medical University in Shanghai, China. Patients were not subjected to any preoperative anticancer treatment. Ethical approval was obtained from the Eastern Hepatobiliary Hospital Research Ethics Committee and written informed consent was obtained from each patient. Immunohistochemistry (IHC) was performed according to our previous study (Jin et al., 2017). Briefly, formalin-fixed paraffin-embedded samples from HCC patients were probed with the GLS1 antibody (12855–1-AP, Proteintech). Formalin-fixed paraffin-embedded samples were also obtained from xenograft tumors and probed with antibodies against Ki-67 (sc-23900, Santa Cruz), against γH2AX (#9718) and cleaved caspase-3 (ab2303, Abcam). Following incubation with the primary antibodies, positive cells were visualized using DAB+ as a chromogen.
 
 Semiquantitative scores were used to analyze the immunostaining of each HCC case in tissue microarray. Intensity score of staining was categorized into 0 (-), 1 (+), 2 (++), or 3 (+++), denoting negative, weak, moderate, or strong staining, respectively. Percentage score of immunostaining was categorized into 0 (0–5%), 1 (6–25%), 2 (26–50%), 3 (51–75%), or 4 (>76%) based on the percentage of positive cells. Three random microscope fields per tissue were calculated. The sum of intensity and percentage of staining was used as the final score of expression level and determined by the formula: final score = intensity score × percentage score. The final score of ≤4 was defined as a low expression of GLS1 and >4 as a high expression of GLS1.
 
-## Metabolomics
+### Metabolomics
 
 Cells were cultured in 6-well plates until 60% confluent. The medium was replaced 24 hr before harvesting. Then, cells were treated with DMSO and CB-839 (4 μM for SNU398 and 8 μM for HepG2) for 4 hr and 24 hr, respectively. After washing with ice-cold PBS, metabolites were extracted from cells in 0.5 mL lysis buffer containing methanol/acetonitrile/dH2O (2:2:1). Samples were spun at 16,000 × g for 15 min at 4°C. Supernatants were collected for LC-MS analysis.
 
 LC-MS analysis was performed on an Exactive mass spectrometer (Thermo Fisher Scientific) coupled to a Dionex Ultimate 3000 autosampler and pump (Thermo Fisher Scientific). The MS operated in polarity-switching mode with spray voltages of 4.5 and −3.5 kV. Metabolites were separated using a SeQuant ZIC-pHILIC HPLC Columns (2.1 mm × 150 mm, 5 μm, guard column 2.1 mm × 20 mm, 5 μm; Merck) using a linear gradient of acetonitrile and eluent A [20 mM (NH4)2CO3, 0.1% NH4OH in ULC/MS grade water (Biosolve)]. The flow rate was set at 150 μL/min. Metabolites were identified and quantified using LCQUANTM Quantitative Software (Thermo Fisher Scientific) on the basis of exact mass within 5 ppm and further validated by concordance with retention times of standards. Metabolites were quantified using LCQUANTM Quantitative Software (Thermo Fisher Scientific). Peak intensities were normalized based on median peak intensity.
 
-## Compound screen
+### Compound screen
 
 SNU398 and HepG2 cells were seeded in 96-well plates, respectively. A total of 13 compounds inhibiting a variety of druggable tumor metabolism targets were independently added into the plates at a certain concentration gradient, and cultured for 4 d. Then IC50 concentrations for each compound were analyzed. Then, SNU398 and HepG2 cells were firstly treated with 4 and 8 μM CB-839, respectively, and further treated with IC50 concentrations of each compound. For the compound has IC50 ≥100 μM, the concentration of 100 μM was used. For 2-DG, a routine concentration at the mM level was used. The synergistic viability inhibition was analyzed using the following formula: synergistic inhibition = inhibition of combination –﻿ inhibition of CB-839 × (1 + inhibition of candidate compound).
 
-## Xenografts model
+### Xenografts model
 
 All animals were manipulated according to protocols approved by the Shanghai Medical Experimental Animal Care Commission and the Shanghai Cancer Institute. SNU398 cells (8 × 106 cells per mouse) and MHCC97H (6 × 106 cells per mouse) were injected subcutaneously into the right posterior flanks of 6-week-old BALB/c nude mice (six mice per group), respectively. Tumor volume based on caliper measurements was calculated by the modified ellipsoidal formula: tumor volume = ½ length × width. When tumors reached a volume of approximately 50–100 mm3, mice were randomly assigned to 5 d/week treatment with vehicle, CB-839 (150 mg/kg, oral gavage, twice per day), V-9302 (30 mg/kg, intraperitoneal injection), or a drug combination in which each compound was administered at the same dose and scheduled as single agents.
 
-## Statistics
+### Statistics
 
 Statistical significance was calculated by Student’s t test with two tails. All data are expressed as mean ± SEM. Prism and Microsoft Excel were used to generate graphs and statistical analyses. *p value < 0.05, **p value < 0.01, ***p value < 0.001.

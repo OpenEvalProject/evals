@@ -39,25 +39,51 @@ The Longshanks experiment offers a unique opportunity to study correlated evolut
 
 ## Results
 
-## Longshanks adults
+### Longshanks adults
 
-## Body mass and cranium size allometry is altered in Longshanks adults
+#### Body mass and cranium size allometry is altered in Longshanks adults
 
 F01 mice (founders) that had not been subjected to selection did not differ in average weight or tibia length between lines (Figure 1—figure supplement 1, Figure 1—source data 1, Supplementary file 1). Moreover, random-bred F09 Controls and F20 Controls did not differ from F01 founders in terms of tibia length in ANCOVA accounting for body mass (Figure 1—figure supplement 1, Supplementary file 1). In contrast, LS1 and LS2 at F09 have an average of 7.3% longer tibiae compared to F09 Controls, while LS1 and LS2 at F20 have 16.4% longer tibiae on average when compared to F20 Controls (Figure 1—figure supplement 1, Supplementary file 1). Average body mass in our sample was stable between lines across all three generations and did not differ significantly in all but two pairwise comparisons between groups (ANOVA, F = 3.312) (Figure 1—figure supplement 1, Supplementary file 1). In contrast, at generation F20, LS1 and LS2 mice had significantly larger cranium centroid sizes than Controls (ANOVA, F = 312.7, Tukey’s HSD, F20 LS1vsF20 CTL p<0.05, F20 LS2vsF20 CTL p<0.05), although the latter did not differ from F01 or F09 Controls (Tukey’s HSD, F01 CTLvsF09 CTL p=0.929, F09 CTLvsF20 CTL p=0.803, F01 CTLvsF20 CTL p=1.000).
 
 Given that the long bones of the Longshanks post-cranial skeleton are larger than Controls at any given body mass (Sparrow et al., 2017), we asked if the allometric scaling relationship between Longshanks crania and overall body mass had changed in response to 20 generations of selection. Body mass was significantly correlated with cranium centroid size in our adult sample (Pearson, r = 0.697, p<0.001). ANCOVA comparing mean cranium centroid size among lines using body mass as the covariate indicates that there was a significant difference in centroid size between Controls and Longshanks at F20; however, LS1 and LS2 did not differ from each other (F = 14.97, Tukey’s HSD, LS1vsLS2 p=0.947, LS1vsCTL p<0.001, LS2vsCTL p<0.001). Hence, Longshanks selected lines have skeletally larger crania after 20 generations of selection independent of body mass (Figure 1—figure supplement 2).
 
-## The Longshanks cranium is longer, narrower, and flatter
+#### The Longshanks cranium is longer, narrower, and flatter
 
 Next, we asked if the fact that tibia length and cranium centroid size increases in F20 LS1 and LS2 is associated with shape differences in their cranium compared to F09 and F01 mice. We performed a principal component analysis on the residuals of a multivariate regression of shape on sex in order to control for potential sex effects on cranial shape in our sample. Comparison of principal component (PC) score means between groups demonstrates that despite overlap in skull shape, LS1 and LS2 have shifted substantially into positive PC1 space, reflecting crania that are longer and narrower with reduction in vault height (Figure 1A, Figure 1—source data 1, Videos 1 and 2). Post-hoc pairwise comparisons from a Procrustes ANCOVA comparing adult cranium shape by group, independent of sex effects, showed that all groups within line by generation, or within generation by line, differ in mean shape, except F01 LS2 and Controls (F = 10.679, F01 LS2vsF01 CTL p=0.203). When comparing the Euclidean distance among group sex-adjusted PC score means, however, F20 LS1 and LS2 mice are on average over twice as far from unselected mice in morphospace (i.e. all F01 founders, F09 and F20 controls) than the latter are from each other (mean Euclidean distances 0.023 vs 0.010, Supplementary file 2).
 
-## Longshanks cranial shape differences remain after controlling for skull size and sex
+![Figure 1.](https://cdn.elifesciences.org/articles/67612/elife-67612-fig1-v2.jpg)
+
+**Figure 1.:** (A) Plot of sex-adjusted Procrustes shape variables (left), and vectors of shape change at each cranium landmark (magnified two times for visualization) showing shape transformations along PC1 from negative to positive scores (right). Large symbols indicate mean PC1 and PC2 scores for each respective cohort. (B) Plot of Procrustes shape variables additionally corrected for size.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67612/elife-67612-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) Boxplots of adult body mass, tibia length, and cranial centroid size between groups. See also Supplementary file 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67612/elife-67612-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/67612/elife-67612-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** At any given cranium size, LS1 and LS2 are predicted to have positive shape scores (longer and narrower) shapes.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/67612/elife-67612-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** For landmark anatomical definitions, see Supplementary file 4.
+
+![Video 1.](https://cdn.elifesciences.org/articles/67612/elife-67612-video1.mp4.jpg)
+
+**Video 1.:** Top: deformation of an F20 Control mean cranial shape into a F20 Longshanks Line 1 (LS1) mean cranial shape, with both mean configurations scaled to the pooled mean centroid size of the total sample (n = 327). Bottom: as above, but the skulls in each group have been scaled to the mean centroid size of that group. In both cases, the most significant changes relate to the flattening of the frontal and parietal regions, decreasing height of the braincase, and relative elongation of the snout in Longshanks.
+
+![Video 2.](https://cdn.elifesciences.org/articles/67612/elife-67612-video2.mp4.jpg)
+
+**Video 2.:** Top: deformation trajectory between one extreme Control male and one extreme LS1 male, selected from non-overlapping regions of morphospace (see Figure 1). The skull configurations are scaled to the pooled mean centroid size of the total sample (n = 327). Bottom: as above, but the two skulls have been scaled to those individuals’ centroid sizes, revealing substantial differences in centroid size between these two individuals as well.
+
+#### Longshanks cranial shape differences remain after controlling for skull size and sex
 
 Given that PC1 generally captures differences in shape primarily due to allometric effects of size (Klingenberg, 2016), and that LS1 and LS2 have larger skulls in F20, we asked if the cranium of F20 selected lines score more positively simply because they are larger, and if larger skulls are associated with different cranium shapes in F20 selected lines compared to Controls and F01 unselected lines. We compared the fitted PC1 scores of a pooled within-group regression of shape on size to log (centroid size), which shows the cranium size and shape scaling relationship, between all nine groups in our sample (Figure 1—figure supplement 3). At any given centroid size, Longshanks F20 selected lines score more positively (longer and narrower) in predicted shape. Importantly, the slopes of the lines, which capture the scaling relationship between cranium shape and size did not differ significantly between any of the groups in our sample (p>0.05). Thus, while Longshanks F20 LS1 and LS2 have larger crania at any given body mass compared to Controls, the allometric pattern within the cranium itself was not altered by selection for increased tibia length.
 
 The difference in intercept between the fitted PC1 scores and log centroid size of LS1 and LS2 in relation to Controls (Figure 1—figure supplement 3) suggest that while the increase in size of F20 selected crania contributes to the shape differences along PC1, it is not the only cause of shape variation. We therefore asked if differences in shape between the Longshanks and Control cohorts persist when the effect of size is removed from our sample by using multivariate regression residuals of shape on size. The principal component analysis of shape independent of size and sex shows a marked reduction in group separation along PC1; however, F20 LS1 and LS2 still typically score more positively in PC1, corresponding to crania that are relatively longer, narrower, and have reduction in vault height (Figure 1B). Post-hoc pairwise comparisons from a Procrustes ANCOVA comparing adult cranium shape by group independent of size and sex effects showed that all groups within line by generation, or within generation by line, differ in mean shape (F = 8.205, p<0.001) except F01 LS2 and Controls (F01 LS2vsF01 CTL p=0.173). As with sex-adjusted data, F20 Longshanks mice are substantially farther in morphospace from unselected groups than the latter are from each other (mean Euclidean distances 0.017 vs 0.010, Supplementary file 2).
 
-## Tibia length and cranial shape means evolve under selection, but are uncorrelated within generations
+#### Tibia length and cranial shape means evolve under selection, but are uncorrelated within generations
 
 After identifying underlying differences in cranial shape between F20 Longshanks and Controls irrespective of sex and size effects, we asked how this residual cranial shape variation was related to variation in tibia length, the principal selection target. To determine whether the residual cranial shape changes was a correlated response to tibia selection we performed within-group regressions on size and sex adjusted PC1 scores against tibia length (Figure 2, Figure 1—source data 1). Differences in the slopes of within-group regressions over time, and in comparison to Controls, would reveal if LS1 and LS2 crania experienced directional selection (Price and Langen, 1992). Clusters of points for Longshanks specimens progressively increase in tibia length and adjusted cranial shape score over time (Figure 2A,B), a trend which is not seen in Controls (Figure 2C). More importantly, within cohorts, tibia length and cranium shape are not significantly correlated (Figure 2). While the population means for residual cranium shape and tibia length were changing over time in Longshanks selected lines, selected individuals with relatively longer tibiae did not necessarily also have derived cranial shapes. In other words, unlike tibia length, residual cranial shape likely did not confer an advantage in terms of reproductive success.
 
@@ -65,7 +91,7 @@ After identifying underlying differences in cranial shape between F20 Longshanks
 
 **Figure 2.:** Cranium shape data is adjusted for the effects of sex and size related allometry.
 
-## Intergenerational changes occurred in a stepwise process
+#### Intergenerational changes occurred in a stepwise process
 
 F09 LS1 and LS2 score more positively along PC1 in the same direction as F20 LS1 and LS2 after removing size effects (Figures 1B and 3, Figure 1—source data 1). In other words, F09 LS1 and LS2 appear to have intermediate shapes along PC1 between F01 groups and F20 selected lines (Figure 3). This led us to ask how intergenerational changes in cranium shape occurred throughout the selection process. We computed the mean shapes of LS1 and LS2 lines over time and compared them using deformation heat maps to track shape change between generations within a selection line. Our results show that indirect responses to selection in the Longshanks cranium occurred in a stepwise process: shape change in the first nine generations of selection contributed to the reduction in vault height, whereas the remaining 11 generations of tibia selection led to a reduction in cranial width at the zygomatic arches in parallel with snout elongation (arrows in Figure 3). In comparison, intergenerational changes in the Control lines shows virtually no change in cranial vault height between F01 and F09, and a reduction in the occipital area of the cranium from F09 to F20 (Figure 3).
 
@@ -73,25 +99,45 @@ F09 LS1 and LS2 score more positively along PC1 in the same direction as F20 LS1
 
 **Figure 3.:** Intergenerational shape changes within both Longshanks lines and Controls throughout the selection process. Top: Density plots following intergenerational shifts in mean PC1 scores within LS1 (left), LS2 (center), and CTL (right) lines for size and sex adjusted shape data. Bottom: Heatmaps showing shape transformations between mean shapes in the first 9 generations of selection (F01 to F09) and the next 11 generations (F09 to F20) after correcting for size and sex effects. Blue indicates areas of relative reduction, red indicates areas of relative expansion, and green indicates neutral areas. Longshanks independently undergo vault height reduction between generations F01 and F09, followed by snout elongation between generations F09 and F20 (blue arrows).
 
-## Longshanks P07 neonates
+### Longshanks P07 neonates
 
-## Neonate crania have similar shape patterns as Longshanks adults
+#### Neonate crania have similar shape patterns as Longshanks adults
 
 We investigated if we could detect the adult pattern in shape differences earlier in ontogeny. Using one-week old (P07) Longshanks neonates, we compared cranial shape at a time when the Longshanks tibia is growing most rapidly and tibia length differences are already observable (Farooq et al., 2017; Marchini and Rolian, 2018; Figure 4, Figure 4—source data 1, Supplementary file 3). After regressing out litter size effects, our principal component analysis of neonate cranial shape showed a large separation in morphospace between the selected lines and Controls (Figure 4). LS1 and LS2 cluster more closely than Controls and have skulls that are longer, narrower and have reduced vault heights (Figures 4 and 5). The Procrustes ANCOVA and pairwise comparisons showed that LS1, LS2, and Control neonates significantly differ from each other in cranium shape (F = 14.395, LS1vsCTL p<0.001, LS2vsLS1 p<0.001, LS2vsCTL p<0.001). In addition, we observed via deformation heatmaps that the cranial pattern seen in Longshanks adults exists by one-week post partum and becomes more marked with age (Figure 5). The LS2 selection replicate appears to have reduced magnitudes of cranial response compared to LS1 at F20 and in neonates (Figures 1B, 3 and 5).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67612/elife-67612-fig4-v2.jpg)
+
+**Figure 4.:** Left: Plot of litter size adjusted Procrustes shape variables (left), large symbols indicate mean PC1 and PC2 scores for each respective cohort. Shapes of individual points indicate Longshanks lines (circle = CTL, square = LS1, and triangle = LS2). Right: Neonate cranium with vectors of shape change at each cranium landmark (magnified four times for visualization) showing shape transformations along PC1 (top) and along PC2 (bottom) from negative to positive scores.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67612/elife-67612-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Boxplot of neonate litter sizes. (B and C) Boxplots of litter size adjusted tibia length and cranium centroid size.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67612/elife-67612-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** For landmark anatomical definitions, see Supplementary file 5.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/67612/elife-67612-fig5-v2.jpg)
 
 **Figure 5.:** Heatmaps show the deformations required to transform between the mean shape of a given cohort to the mean shape of another. Blue indicates areas of relative reduction, red indicates areas of relative expansion, and green indicates neutral areas. Scale bar = 10 mm.
 
-## Longshanks neonate cranial bases are flatter than Controls and differ in synchondrosis shape
+#### Longshanks neonate cranial bases are flatter than Controls and differ in synchondrosis shape
 
 Given the underlying developmental relationship between the cranial base and the long bones, we asked if the neonate cranial bases differed in shape along the sagittal plane between Longshanks and Controls, where the synchondroses’ primary axis of elongation exists. We performed a 2D morphometric analysis and found that groups differed in cranial base shape after removing litter size effects by Procrustes ANCOVA (F = 20.972, p<0.001). As with the neonate cranial form, Procrustes ANCOVA and pairwise comparisons of cranial base shape showed that LS1, LS2, and Control neonate mean cranial shapes all differ from each other. Longshanks neonate cranial base shapes differed from Controls in a similar pattern, but to different extents, with LS2 assuming an intermediate position in cranial base morphospace (Figure 6A, Figure 6—source data 1). Deformations comparing a mean Control cranial base to LS1 and LS2 means show a flattening of the cranial base in both Longshanks lines (Figure 6B). Moreover, the shape of the intersphenoidal synchondrosis changes in LS1 and LS2 compared to Controls, expanding dorsally to become more wedge-shaped, whereas the spheno-occipital synchondrosis shows no significant shape change differentiating them from the Control spheno-occipital synchondrosis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/67612/elife-67612-fig6-v2.jpg)
+
+**Figure 6.:** (A) Scatter plot of the first two PCs of litter size-adjusted Longshanks and Control cranial base Procrustes shape variables in generation 32 (F32) neonates. Large symbols indicate mean PC1 and PC2 scores for each respective cohort. (B) Neonate cranial bases with vectors of shape change at midline cranial base landmarks (magnified six times for visualization) showing shape transformations to go from the mean Control cranial base to the mean LS1 (blue) and mean LS2 (green) cranial base shapes. Views in (B) are dorsal (left) and lateral (right). Basi-occipital bone (BO), spheno-occipital synchondrosis (SOS), basi-sphenoid bone (BS), intersphenoidal synchondrosis (ISS), presphenoid bone (PS) and ethmoid (ET). (C) Sagittal midline histological sections stained in H + E (top) and safranin-o (bottom) showing differences in synchondrosis morphology of two extreme specimens in CTL and LS1 of approximately equal centroid size (indicated by dashed circles in A).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67612/elife-67612-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Numbered landmarks applied to CT scan reconstruction slices at the midline (left) and landmarks numbered on a 3D cranial base mesh (right). For landmark anatomical definitions, see Supplementary file 6.
 
 shape (Figure 6B). This suggests that a cellular change in the dorsal aspect of the intersphenoidal synchondrosis could be driving cranial base flattening in the Longshanks juvenile skull, and hence potentially into adulthood given the broadly similar shape changes observed at both stages. To qualitatively validate the cellular changes inferred from our 2D geometric morphometric analysis, we collected and imaged cranial base sections near the sagittal midline. Since these developmental shape differences are still subtle, we selected two representative extreme specimens that had large differences in ossified tibia length, cranial base shape and cranium shape, yet comparable cranium centroid sizes so that size would not confound our analysis. In agreement with our morphometric data, the spheno-occipital synchondrosis does not differ qualitatively between these extreme specimens (Figure 6C). However, the intersphenoidal synchondrosis is markedly larger in our Longshanks specimen compared to the Control, with larger resting and proliferative zones that recapitulate the cellular differences characterized in the Longshanks epiphysis (Figure 6C; Marchini and Rolian, 2018). Crucially, the intersphenoidal synchondrosis is more wedge-shaped in our Longshanks specimen at the cellular level, supporting the observed intersphenoidal synchondrosis changes at the morphometric level (Figure 6B,C).
 
 ## Discussion
 
-## Phenotypic changes
+### Phenotypic changes
 
 We investigated parallel skeletal size and shape changes in the limb and cranium in the selectively bred Longshanks mouse. Our morphometric analysis of adult cranium shape demonstrated that 20 generations of selection for longer tibiae relative to body mass are associated with the elongation of the cranium along the rostral caudal axis in Longshanks mice, independent of an overall increase in cranial size (Figure 1). In parallel, the cranium of adult Longshanks decreased in width between the zygomatic arches and reduced in vault height at the bregma and lambda (Figure 1). A similar cranium pattern was present in Longshanks neonates at P07, but with an ontogenically reduced craniofacial phenotype (Figures 4 and 5). LS2 mice appear to have a more subtle phenotype than LS1 in adulthood and at P07 (Figures 1, 3, 5 and 6A). This is not unexpected, as other genomic and phenotypic differences in the response to selection between LS1 and LS2 have been documented previously (Farooq et al., 2017; Castro et al., 2019; Cosman et al., 2019).
 
@@ -99,11 +145,55 @@ The magnitudes of cranial shape change remain small in adult and neonate Longsha
 
 The net adult cranium phenotypic change in Longshanks manifested as a sequence of two distinct evolutionary shape changes. The cranium of both selected lines consistently reduced in vault height in the first 9 generations of tibia selection, and subsequently elongated and narrowed in the next 11 generations of selection (Figure 3). In comparison, the Control line shows minor cranial shape changes around the zygomatic and occipital regions, which are likely due to stochastic intergenerational variation in the Control line (i.e. drift), and/or to sampling artifacts, such as low sample size and family diversity in F09 Controls (Table 1). Similar evolutionary cranial shape changes have also been described in natural populations. Parmenter and colleagues noted that Gough Island mice, which differ significantly in body size compared to mainland relatives, have crania that are longer and narrower without differences in vault height, similar to the intergenerational changes in cranial shape between generations F09 and F20 in Longshanks (Parmenter et al., 2016). The mechanisms underlying these stepwise changes are unknown, in part due to a lack of F09 developmental data. However, the transition in cranium response could be related to temporal differences in allele frequency shifts up to, and subsequent to, generation F09, and/or to the nature in which cranial bones physically interact (e.g. the degree of perturbation that must accumulate in one cranium region before adjacent structures are significantly affected).
 
+**Table 1.**
+ Longshanks adult (F01, F09, F20) and neonate (F32) sample composition.Target sample sizes of n = 40/group represent a compromise between sampling effort (e.g. scanning capacity) and the ability to detect small-to-moderate effect sizes at a power of 0.8 in the case of univariate analyses (Cohen’s d = 0.25). For multivariate analyses (e.g. principal components analyses), target sample sizes of n = 40 with 50–68 landmarks produce highly repeatable covariance matrices (average RV coefficient of a sample’s Procrustes-adjusted covariance matrix with 1000 covariance matrices derived from bootstrapped data > 0.99).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Longshanks samples (n)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>CTL</th>
+      <th>LS1</th>
+      <th>LS2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Generation 1 (F01)</td>
+      <td>24</td>
+      <td>40</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Generation 9 (F09)</td>
+      <td>23</td>
+      <td>40</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Generation 20 (F20)</td>
+      <td>40</td>
+      <td>40</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Generation 32 (F32)</td>
+      <td>32</td>
+      <td>36</td>
+      <td>36</td>
+    </tr>
+  </tbody>
+</table>
+
 Importantly, despite shifts in the population means of tibia length and cranium shape over time (Figure 2), the cranium shape changes in adult LS1 and LS2 are uncorrelated with tibia length within each generation. In other words, selected individuals with relatively longer tibiae did not necessarily have derived cranial shapes. This suggests that residual cranial shape did not increase the chances of being selected as a breeder in our experiment, and therefore the observed change in residual cranial shape over time in Longshanks is most likely a correlated evolutionary response to tibia selection, mediated by underlying genetic correlations due to pleiotropy and/or linkage disequilibrium (Lande, 1984).
 
 Correlated evolutionary responses have been documented in experimental populations primarily in terms of physiological and behavioral processes, such as starvation response, developmental duration, and voluntary wheel running (Carter et al., 2000; Gammie et al., 2003; Davidowitz et al., 2016; Hardy et al., 2018). Correlated responses in morphological phenotypes have also been characterized, but they have typically involved correlated change in the same anatomical structure, or indirect responses to body mass selection (Tobler and Nijhout, 2010). For example, selection for changes in wing spot pattern on the dorsal aspect of butterfly wings produced changes in ventral wing patterns (Beldade et al., 2002). To the best of our knowledge, our study presents the first strong case of correlated evolution of functionally unrelated anatomical structures with no direct musculotendinous or bony connections, in the mammalian skeletal system.
 
-## Developmental correlates of shape change
+### Developmental correlates of shape change
 
 From a developmental perspective, our investigation of Longshanks at one-week post partum revealed that Longshanks neonates have relatively flatter cranial bases, which develop by endochondral ossification, compared to Controls (Figure 6). Moreover, 2D geometric morphometrics at the midline and histology demonstrated that Longshanks neonates have a larger intersphenoidal synchondrosis with larger resting and proliferative zones, especially in its dorsal aspect (Figure 6B,C), much like differences observed in the tibial proximal epiphysis of 2-week-old Longshanks (Marchini and Rolian, 2018). In contrast, the spheno-occipital synchondrosis did not show any substantive size or shape differences among groups. Taken together, these results suggest that the intersphenoidal synchondrosis responded to selection on the tibia independently of the spheno-occipital synchondrosis and may have contributed to the Longshanks cranial phenotype.
 
@@ -111,33 +201,134 @@ It is important to note that our ontogenetic analysis captured a single developm
 
 The exact ontogenetic mechanism by which the observed cranial base changes may lead to shape change across the entire cranium in Longshanks remains to be elucidated. There is extensive evidence for strong phenotypic covariation among cranial traits (i.e. morphological integration) causing indirect change throughout the cranium (Bookstein et al., 2003; Goswami, 2006; Goswami et al., 2012; Singh et al., 2012; Bastir and Rosas, 2016; Neaux et al., 2019). For example, direct basicranium perturbations by genetic mutations in mice generated predictable shape changes throughout the cranium (Parsons et al., 2015). Basicranium undergrowth by deletion of Trsp produces shortened faces and tall, domed calvaria. Conversely, cranial base overgrowth models, such as the Pten -/- mouse, resulted in flattened calvaria, elongated faces and reduced cranial width (Ford-Hutchinson et al., 2007; Lieberman et al., 2008; Parsons et al., 2015). Moreover, analysis of mutant mouse models have demonstrated that cranial base length and angle are interrelated with brain and face size (Ross and Ravosa, 1993; Lieberman et al., 2008). Notably, these transgenic models of basicranium perturbation also have concomitant tibia length changes (Downey et al., 2009; Guntur et al., 2011). While our study identified subtle evolutionary changes that occurred over time, rather than instant changes due to wholesale loss-of-function mutations, our findings are in general agreement with these cranium integration studies, suggesting that a common genetic architecture can produce shared short-term developmental perturbations and long-term evolutionary change in anatomical structures that have no direct musculotendinous or skeletal links.
 
-## Potential genetic basis of shape change
+### Potential genetic basis of shape change
 
 Our data suggest that, at the tissue level, correlated changes in tibia length and cranial shape are associated with similar changes in growth plate morphology. At this time, the genomic basis for these correlated skeletal changes remains unknown. The vertebrate tibia and cranium are complex structures, each with a highly polygenic architecture, thus finding candidate genes that caused changes in one or the other structure, let alone correlated changes in both, is not trivial. A previous study revealed that the genomic response to tibia selection at generation F17 in Longshanks involved substantive contributions from several loci of large effect against an infinitesimal polygenic background (Castro et al., 2019). By F17, LS1, and LS2 showed strong and parallel allele frequency changes in non-coding DNA in two large genomic regions spanning several topology associated domains (TADs) and containing putative cis-regulatory elements (Castro et al., 2019). Several genes in or near these loci, such as Nkx3-2 and Chst11, have known cranium and limb pleiotropic effects in knock-out mice and human diseases (Lettice et al., 1999; Tribioli and Lufkin, 1999; Akazawa et al., 2000; Klüppel et al., 2005; Provot et al., 2006; Chopra et al., 2015). However, it is not clear whether these contributed to the overall F20 correlated cranium response, especially since allelic changes in non-coding regions are predicted to have smaller pleiotropic effects, if any, when compared to genomic changes in coding regions, which were rare at F17 (Carroll, 2008; Stern and Orgogozo, 2008; Rice and Rebeiz, 2019). Moreover, when cross-referenced against annotated mouse knockout phenotypes (Mouse Genome Informatics [MGI], http://www.informatics.jax.org), these genomic regions contain genes with singular effects on the cranium skeleton (e.g. Tapt1 and Nfic), hence it is also possible that the correlated response was driven in part by genetic linkage between limb- and cranium-specific genes swept along by selection. Interestingly, our query of MGI also shows that over 15 of the genes near the altered F17 loci influence brain development and morphology, and therefore could indirectly influence the F20 net cranium shape due to brain-skull physical interactions. More work will be necessary to shed light on the underlying genetic correlates of the Longshanks cranium phenotype, especially functional genomic and molecular analyses of the cranial base at multiple developmental stages.
 
 The Longshanks experiment provides a robust example of correlated evolutionary changes in the vertebrate skeleton. These findings are made possible in part because the experimental design allowed us to assess skeletal change in a controlled environment, and without confounding variables (e.g. fluctuations in climate and/or food availability, presence of predators). At the same time, laboratory conditions in which a single selection pressure can be applied to the skeleton likely differ from the more complex multivariate selective pressures operating in nature. The simplified environment and strong directional selection pressures in experimental evolution studies may target alleles with detrimental pleiotropic effects more frequently than in natural settings (Kawecki et al., 2012). For example, in natural populations, correlated responses in the cranium to selection acting on the limb skeleton could be buffered by counteracting selection pressures, related to diet, olfaction, hearing and/or mate choice (Samuels, 2009; Cox et al., 2012; Maestri et al., 2016). This simplified evolutionary process is a strength of selection experiments. Indeed, by applying strong directional selection on a single trait, selection experiments can ‘overwhelm’ complex multivariate responses to selection operating in nature, including stabilizing selection on other structures, and in doing so reveal previously unknown pleiotropic developmental mechanisms that have the potential to drive correlated evolution among distinct anatomical structures.
 
-## Conclusions
+### Conclusions
 
 In this study, we characterized secondary skeletal responses to tibia selection that likely arose due to shared underlying developmental mechanisms between the cranium and tibia, specifically endochondral ossification. The limb and cranium are often considered separate modules in morphological analyses (Young and Hallgrímsson, 2005). Our results highlight the importance of considering evolution of the vertebrate skeleton in its entirety. Our study shows how indirect, and potentially non-adaptive, skeletal changes can occur due to developmental overlap among physically and functionally distant body parts. These findings have implications for how we reconstruct skeletal evolutionary histories of extant and extinct mammalian lineages by providing empirical evidence that skeletal traits may arise solely as side effects of selection acting elsewhere.
 
 ## Materials and methods
 
-## Animal samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse (Mus musculus)</td>
+      <td>Longshanks 1</td>
+      <td>Campbell Rolian</td>
+      <td>LS1</td>
+      <td>Stock: HSD:ICR</td>
+    </tr>
+    <tr>
+      <td>Mouse (Mus musculus)</td>
+      <td>Longshanks 2</td>
+      <td>Campbell Rolian</td>
+      <td>LS2</td>
+      <td>Stock: HSD:ICR</td>
+    </tr>
+    <tr>
+      <td>Mouse (Mus musculus)</td>
+      <td>Control</td>
+      <td>Campbell Rolian</td>
+      <td>CTL</td>
+      <td>Stock: HSD:ICR</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R, R packages geomorph, Morpho, RRPP</td>
+      <td>R Development Core Team, 2020, Schlager, 2020, Collyer and Adams, 2018, Adams et al., 2020</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Amira</td>
+      <td>Visage Imaging, Berlin, Germany</td>
+      <td>Version 5.4.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python and Bash (Medical Imaging NetCDF library)</td>
+      <td>Percival et al., 2019, Devine et al., 2020</td>
+      <td>Python 3.6 Bash-5.1 MINC 2.0</td>
+      <td>https://github.com/BIC-MNI/minc-toolkit-v2 https://github.com/jaydevine/Landmarking</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Haematoxylin (for Weigert’s)</td>
+      <td>Sigma</td>
+      <td>H3136</td>
+      <td>Histological stain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Iron (III) chloride (for Weigert’s)</td>
+      <td>Sigma</td>
+      <td>157740</td>
+      <td>Histological stain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fast Green (FCF)</td>
+      <td>Sigma</td>
+      <td>F7252</td>
+      <td>Histological stain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Safranin-O</td>
+      <td>Sigma</td>
+      <td>S2255</td>
+      <td>Histological stain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gill’s Haematoxylin</td>
+      <td>Sigma</td>
+      <td>GHS332</td>
+      <td>Histological stain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Eosin Y</td>
+      <td>Sigma</td>
+      <td>588X</td>
+      <td>Histological stain</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal samples
 
 All animal procedures were approved by the Health Sciences Animal Care Committee at the University of Calgary (AC13-0077) and (AC17-0026) and performed in accordance with best practices outlined by the Canadian Council on Animal Care. For more information on the husbandry methods and selective Longshanks breeding regimen, see Marchini et al., 2014.
 
 We collected 8-week-old, non-breeder Longshanks mice (N = 327) from generations 1, 9, and 20 across three experimental lines: Longshanks 1 (hereafter LS1), Longshanks 2 (LS2), and Control (CTL) to study changes in adult cranial shape at the beginning, middle, and end of the selection process, respectively (for group sample sizes, see Table 1). Each group was as sex and family balanced as possible to account for differences due to sexual dimorphism and/or family diversity (Karp et al., 2017). To investigate the developmental basis of the Longshanks cranium, we generated postnatal day seven (P07) neonates (N = 104) from F31 Longshanks mice (Table 1). The three lines have not actively undergone artificial selection since generation F22 and are maintained as experimental populations. We selected P07 as our developmental time point as this is when Longshanks tibiae are growing fastest, and the cranial skeleton is still actively growing (Vora et al., 2015; Farooq et al., 2017; Marchini and Rolian, 2018).
 
-## X-ray micro-computed tomography (µCT)
+### X-ray micro-computed tomography (µCT)
 
 We performed X-ray micro-computed tomography (µCT). We used a Skyscan 1173 v1.6 µCT scanner (Bruker, Kontich, Belgium) to acquire whole-body scans of the adults and separate scans of the neonate cranium and tibiae. We obtained adult samples from frozen archived carcasses at each generation, while F32 neonates were scanned the day they were euthanized. In addition, we scanned the corresponding right hindlimb of each neonate that underwent cranium scanning. Adult scans were acquired at 70–80 kV and 60–75 µA with 44.73 µm isotropic voxels and no filter, while neonates were scanned at a resolution of 17.04 µm isotropic voxels with otherwise identical parameters. Stack reconstructions were performed using NRecon v1.7.4.2 (Bruker, Kontich, Belgium).
 
-## Histology
+### Histology
 
 We dissected neonate crania after scanning them and fixed them in 10% neutral buffered formalin (NBF) (Thermo Scientific) for 48 hr, with NBF replacement every 24 hr. Fixed cranium tissues were then transferred to a decalcifying solution (Cal-Ex II, Fisher Chemical) for 72 hr with daily solution changes. After decalcification, a rectangular portion of the cranial base containing both basicranial synchondroses was dehydrated, embedded it in paraffin, and sectioned in the sagittal plane at 12 µm. Sections were deparaffinized in Slide Brite (Jones Scientific Products, Inc) and subsequently stained. The slides of a specimen were stained in an alternating fashion with two stains: (1) Wiegert’s Iron Haematoxylin (Sigma), 0.05% Fast-Green (FCF) (Sigma), counterstained in 0.1% Safranin-o solution (Sigma); or (2) Gill’s Haematoxylin #3 (Sigma), rinsed in 70% ethanol, and counterstained with 1% alcoholic Eosin Y (Sigma). We imaged sagittal midline sections using an Axio Scan.Z1 slide scanner (Ziess, Oberkochen, Germany) at ×10 magnification and qualitatively evaluated differences in growth plate size and morphology.
 
-## Landmarking
+### Landmarking
 
 µCT adult and neonate crania scans were subjected to a novel image registration-based pipeline to automatically detect landmarks for a geometric morphometrics shape analysis (Percival et al., 2019). Automated landmarking improves data standardization and can be used to quickly process very large sample sizes while reducing intraobserver errors, such as landmark placement drift (Fruciano, 2016; Devine et al., 2020). Automated landmarking involves volumetric registration using a global affine alignment of the skull volumes, followed by a dense non-linear deformation between each cranium and a reference atlas. Here, the atlas is an average volume, with a standardized landmark configuration, that best minimizes intensity differences from the rest of the sample. We used 68 3D landmarks for the adults (Figure 1—figure supplement 4, Supplementary fle 4) and 50 3D landmarks for the neonates (Figure 4—figure supplement 2, Supplementary file 5).
 
@@ -145,7 +336,7 @@ We computed the affine transformations with a multi-resolution framework, where 
 
 In addition to investigating overall neonate cranium shape, we characterized cranial base shape with two-dimensional (2D) landmarks at the sagittal midline. We used a 12 landmark set highlighting the vertices of the developing basicranial bones which provides information about the shape of the sagittal cross-section of the basicranial synchondroses (Figure 6—figure supplement 1; Supplementary file 6). Landmarks at the midline were placed in Amira v.5.4.2 (Visage Imaging, Berlin, Germany) by one observer (CMU) blind to the identity of the specimens. Adult tibiae lengths were quantified in Amira by calculating the distance, in mm, between two landmarks that we placed on the distal tip of the lateral malleolus and most lateral point on the proximal epiphysis, two anatomical points that were demonstrated to have high homology and repeatability (Cosman et al., 2016). Because neonate tibia length is not fully visible in the scans due to small or absent secondary ossification centers (Moss, 1977), neonate tibia measurements were obtained from the distance, in mm, between landmarks placed on the distal and proximal ends of the ossified tibial diaphysis on the rostral edge along the sagittal midline of the tibia.
 
-## Geometric morphometrics
+### Geometric morphometrics
 
 Analyses were performed on the R/Rstudio computational platform (R Development Core Team, 2020). We investigated shape cranial differences by superimposing the adult and neonate landmark configurations into age-specific morphospaces via Generalized Procrustes Analysis. To study the influence of selection on cranial shape, we first corrected for confounding variables known to alter adult and neonatal morphology.
 

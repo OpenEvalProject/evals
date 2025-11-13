@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.11859.001 Small G-proteins of the ADP-ribosylation-factor-like (Arl) subfamily have been shown to be crucial to ciliogenesis and cilia maintenance. Active Arl3 is involved in targeting and releasing lipidated cargo proteins from their carriers PDE6δ and UNC119a/b to the cilium. However, the guanine nucleotide exchange factor (GEF) which activates Arl3 is unknown. Here we show that the ciliary G-protein Arl13B mutated in Joubert syndrome is the GEF for Arl3, and its function is conserved in evolution. The GEF activity of Arl13B is mediated by the G-domain plus an additional C-terminal helix. The switch regions of Arl13B are involved in the interaction with Arl3. Overexpression of Arl13B in mammalian cell lines leads to an increased Arl3·GTP level, whereas Arl13B Joubert-Syndrome patient mutations impair GEF activity and thus Arl3 activation. We anticipate that through Arl13B’s exclusive ciliary localization, Arl3 activation is spatially restricted and thereby an Arl3·GTP compartment generated where ciliary cargo is specifically released. DOI: http://dx.doi.org/10.7554/eLife.11859.001
+Small G-proteins of the ADP-ribosylation-factor-like (Arl) subfamily have been shown to be crucial to ciliogenesis and cilia maintenance. Active Arl3 is involved in targeting and releasing lipidated cargo proteins from their carriers PDE6δ and UNC119a/b to the cilium. However, the guanine nucleotide exchange factor (GEF) which activates Arl3 is unknown. Here we show that the ciliary G-protein Arl13B mutated in Joubert syndrome is the GEF for Arl3, and its function is conserved in evolution. The GEF activity of Arl13B is mediated by the G-domain plus an additional C-terminal helix. The switch regions of Arl13B are involved in the interaction with Arl3. Overexpression of Arl13B in mammalian cell lines leads to an increased Arl3·GTP level, whereas Arl13B Joubert-Syndrome patient mutations impair GEF activity and thus Arl3 activation. We anticipate that through Arl13B’s exclusive ciliary localization, Arl3 activation is spatially restricted and thereby an Arl3·GTP compartment generated where ciliary cargo is specifically released.
 
 ## Introduction
 
@@ -28,45 +28,373 @@ As most small G-proteins Arl3 cycles between inactive GDP-bound and active GTP-b
 
 ## Results
 
-To identify regulatory proteins of Arl3 we employed a yeast-2-hybrid (Y2H) screen using the fast cycling mutant Arl3△N
+To identify regulatory proteins of Arl3 we employed a yeast-2-hybrid (Y2H) screen using the fast cycling mutant Arl3△ND129N as bait. The homologous mutation which in Ras was shown to decrease nucleotide and to increase GEF affinity while maintaining its ability to bind to effectors was used by us to identify the GEF for the plant specific ROP proteins (Berken et al., 2005; Cool et al., 1999). Screening a mouse retinal cDNA Y2H library identified several clones growing on selective media. Sequence analysis revealed Arl13B (residues 1–270) in addition to known Arl3 effectors such as PDE6δ and Unc119a. Intriguingly, in a parallel screen with mouse Arl13B20-278 as bait Arl3 was found as rescuing clone. The interaction between Arl3 and Arl13B was further verified by directed 1:1 Y2H analysis (Figure 1A). Arl13B is an unusual Arl protein containing a C-terminal coiled-coil and proline rich region in addition to its G-domain (Figure 1C). The data show that the interaction is mediated by Arl13B’s G-domain and part of the coiled-coil region. To investigate the specificity of the Arl13B-Arl3 interaction we tested the related constructs of Arl2 and Arl6 neither of which enabled growth on selective medium (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/11859/elife-11859-fig1-v2.jpg)
 
-**Figure 1.:** (A) Y2H interactions between Arl3ΔN D129N -pBD and Arl13B 1-–270-pAD and between Arl13B 20- – 278-pBD and Arl3-pAD. Transformed and mated cells were grown on –Leu –Trp medium. Interaction was verified on high stringency plates (-– Leu –Trp –His –Ade) and with a β-galactosidase filter assay. (B) Interaction of Arl13B 1-–270-pAD with Arl3ΔN D129N-pBD, Arl2ΔN D128N-pBD and Arl6ΔN D133N-pBD was analyzed on low and high stringency plates. PDE6δ-pAD was used as positive control for Arl3 and Arl2. (C) Domain architecture of Arl13B, numbering derived from murine Arl13B (Mm: Mus musculus).DOI: http://dx.doi.org/10.7554/eLife.11859.003
+**Figure 1.:** (A) Y2H interactions between Arl3ΔN D129N -pBD and Arl13B 1-–270-pAD and between Arl13B 20- – 278-pBD and Arl3-pAD. Transformed and mated cells were grown on –Leu –Trp medium. Interaction was verified on high stringency plates (-– Leu –Trp –His –Ade) and with a β-galactosidase filter assay. (B) Interaction of Arl13B 1-–270-pAD with Arl3ΔN D129N-pBD, Arl2ΔN D128N-pBD and Arl6ΔN D133N-pBD was analyzed on low and high stringency plates. PDE6δ-pAD was used as positive control for Arl3 and Arl2. (C) Domain architecture of Arl13B, numbering derived from murine Arl13B (Mm: Mus musculus).
 
-To verify this interaction in vitro, we tested purified proteins in a glutathione-S-transferase (GST) pull-down assay. Due to better stability and purity of Arl13B from
+To verify this interaction in vitro, we tested purified proteins in a glutathione-S-transferase (GST) pull-down assay. Due to better stability and purity of Arl13B from Chlamydomonas reinhardtii (Cr) the following experiments were performed with the homologous Cr-proteins purified from Escherichia coli. We thus prepared CrArl13B18-–278 (CrArl13B from now) analogous to mouse Arl13B18-–278 used in the Y2H screen and tested its interaction with GST-CrArl3 loaded with either GDP or GppNHp (a non-hydrolyzable GTP analogue) (Figure 2A). CrArl13B·GppNHp but not CrArl13B·GDP bound to GST-–CrArl3, and binding was slightly stronger to GST-CrArl3·GDP than to GST-CrArl3·GppNHp. These data show that the interaction between Arl3 and Arl13B is conserved between mouse and Chlamydomonas.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/11859/elife-11859-fig2-v2.jpg)
 
-**Figure 2.:** CrArl13B is the guanine nucleotide exchange factor for CrArl3.(A) Glutathione-S-transferase (GST) pull-down assay with purified Chlamydomonas reinhardtii Arl proteins as indicated and described in detail in Material and methods. (B) Guanine nucleotide exchange factor (GEF) activity of the indicated concentrations of CrArl13B18-–278 for 500 nM CrArl3·mantGDP. Arrow designates addition of CrArl13B and excess of unlabeled nucleotide. (C) CrArl13B·GppNHp but not CrArl6·GppNHp stimulates the nucleotide release of CrArl3·mantGppNHp. (D) CrArl3·GTP does not accelerate the nucleotide dissociation of CrArl13B·mantGppNHp. (E) GEF activity of 5 µM CrArl13B18-278 loaded with GDP (red), GTP (blue), or GppNHp ((a non-hydrolyzable GTP analogue; yellow). (F) Hyperbolic dependence of the observed rate constants for mantGDP release from 500 nM CrArl3 on CrArl3B·GTP or CrArl13B·GDP concentration. Fluorescence changes in time at each concentration of CrArl13B were fitted to single exponentials, and the resulting rate constants (kobs) plotted against GEF concentration. Kobs values are summarized in Table 1.DOI: http://dx.doi.org/10.7554/eLife.11859.004
+**Figure 2.:** (A) Glutathione-S-transferase (GST) pull-down assay with purified Chlamydomonas reinhardtii Arl proteins as indicated and described in detail in Material and methods. (B) Guanine nucleotide exchange factor (GEF) activity of the indicated concentrations of CrArl13B18-–278 for 500 nM CrArl3·mantGDP. Arrow designates addition of CrArl13B and excess of unlabeled nucleotide. (C) CrArl13B·GppNHp but not CrArl6·GppNHp stimulates the nucleotide release of CrArl3·mantGppNHp. (D) CrArl3·GTP does not accelerate the nucleotide dissociation of CrArl13B·mantGppNHp. (E) GEF activity of 5 µM CrArl13B18-278 loaded with GDP (red), GTP (blue), or GppNHp ((a non-hydrolyzable GTP analogue; yellow). (F) Hyperbolic dependence of the observed rate constants for mantGDP release from 500 nM CrArl3 on CrArl3B·GTP or CrArl13B·GDP concentration. Fluorescence changes in time at each concentration of CrArl13B were fitted to single exponentials, and the resulting rate constants (kobs) plotted against GEF concentration. Kobs values are summarized in Table 1.
 
-Since the rather weak interaction in the pull-down experiments and the nucleotide-independent binding suggested that Arl3 is not an effector for Arl13B, we turned our attention to a possible GEF function. As a ciliary protein Arl13B is a good, albeit, as a G-protein, a very unusual candidate GEF for Arl3. The dissociation of a fluorescent GDP-analogue (mantGDP) from CrArl3 in the presence of excess of unlabelled GTP was monitored after adding CrArl13B·GTP. The nucleotide dissociation was strikingly accelerated in the presence of CrArl13B·GTP and was dependent on the CrArl13B concentration (Figure 2B and Table 1). Consistent with features of a typical GEF (Bos et al., 2007) Arl13B did not discriminate whether mantGppNHp or mantGDP was bound to Arl3 and exchanged both nucleotides with the same velocity (Table 2). As a control CrArl6 did not stimulate the nucleotide release of CrArl3 nor did CrArl3 catalyze that of CrArl113B (Figure 2B, C).10.7554/eLife.11859.005Table 1.Kobs values from data shown in Figure 2B and E.DOI: http://dx.doi.org/10.7554/eLife.11859.005Concentration dependency (Figure 2B)Kobs (s-1) ± S.E.CrArl3 wt intrinsic1.2 × 10-4 ± 1 × 10-5+ 0.25 µM CrArl13BGTP1.3 × 10-3± 2 × 10-5+ 0.5 µM CrArl13BGTP2.7 × 10-3± 3 × 10-5+ 5 µM CrArl13BGTP0.85 × 10-2± 1 × 10-4Nucleotide dependency (Figure 2E)Kobs (s-1) ± S.E.CrArl3 wt intrinsic1.3 × 10-4 ± 4 × 10-6+ 5 µM CrArl13BGDP9.0 × 10-4 ± 2 × 10-5+ 5 µM CrArl13BGTP0.6 × 10-2 ± 8 × 10-5+ 5 µM CrArl13BGNP0.78 × 10-2 ± 1 × 10-4Kobs values ± standard error (S.E.) were determined by fitting the data to single exponential functions. 10.7554/eLife.11859.006Table 2.kobs values for the nucleotide dissociation of CrArl3·mGDP and CrArl3·mGppNHp in the presence of CrArl13B·GTP.DOI: http://dx.doi.org/10.7554/eLife.11859.006CrArl3·mGDP vs mGppNHpKobs (s-1) ± S.E.CrArl3·mGDP intrinsic1.3 × 10-4 ± 2 × 10-6CrArl3·mGDP + 5 µM CrArl13B·GTP0.84 × 10-2 ± 7 × 10-5CrArl3·mGppNHp intrinsic1.3 × 10-4 ± 2 × 10-6CrArl3·mGppNHp + 5 µM CrArl13B·GTP1.0 × 10-2 ± 1 × 10-4kobs rates determined from GEF assays with 0.5 µM CrArl3 loaded with either mantGDP or mantGppNHp in the presence of 5 µM CrArl13B18-–278·GTP and 800 µM unlabeled nucleotide.
+Since the rather weak interaction in the pull-down experiments and the nucleotide-independent binding suggested that Arl3 is not an effector for Arl13B, we turned our attention to a possible GEF function. As a ciliary protein Arl13B is a good, albeit, as a G-protein, a very unusual candidate GEF for Arl3. The dissociation of a fluorescent GDP-analogue (mantGDP) from CrArl3 in the presence of excess of unlabelled GTP was monitored after adding CrArl13B·GTP. The nucleotide dissociation was strikingly accelerated in the presence of CrArl13B·GTP and was dependent on the CrArl13B concentration (Figure 2B and Table 1). Consistent with features of a typical GEF (Bos et al., 2007) Arl13B did not discriminate whether mantGppNHp or mantGDP was bound to Arl3 and exchanged both nucleotides with the same velocity (Table 2). As a control CrArl6 did not stimulate the nucleotide release of CrArl3 nor did CrArl3 catalyze that of CrArl113B (Figure 2B, C).
+
+**Table 1.**
+ Kobs values from data shown in Figure 2B and E.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Concentration dependency (Figure 2B)</th>
+      <th>Kobs (s-1) ± S.E.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CrArl3 wt intrinsic</td>
+      <td>1.2 × 10-4 ± 1 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 0.25 µM CrArl13BGTP</td>
+      <td>1.3 × 10-3± 2 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 0.5 µM CrArl13BGTP</td>
+      <td>2.7 × 10-3± 3 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13BGTP</td>
+      <td>0.85 × 10-2± 1 × 10-4</td>
+    </tr>
+    <tr>
+      <td>Nucleotide dependency (Figure 2E)</td>
+      <td>Kobs (s-1) ± S.E.</td>
+    </tr>
+    <tr>
+      <td>CrArl3 wt intrinsic</td>
+      <td>1.3 × 10-4 ± 4 × 10-6</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13BGDP</td>
+      <td>9.0 × 10-4 ± 2 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13BGTP</td>
+      <td>0.6 × 10-2 ± 8 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13BGNP</td>
+      <td>0.78 × 10-2 ± 1 × 10-4</td>
+    </tr>
+  </tbody>
+</table>
+
+_Kobs values ± standard error (S.E.) were determined by fitting the data to single exponential functions._
+
+**Table 2.**
+ kobs values for the nucleotide dissociation of CrArl3·mGDP and CrArl3·mGppNHp in the presence of CrArl13B·GTP.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CrArl3·mGDP vs mGppNHp</th>
+      <th>Kobs (s-1) ± S.E.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CrArl3·mGDP intrinsic</td>
+      <td>1.3 × 10-4 ± 2 × 10-6</td>
+    </tr>
+    <tr>
+      <td>CrArl3·mGDP + 5 µM CrArl13B·GTP</td>
+      <td>0.84 × 10-2 ± 7 × 10-5</td>
+    </tr>
+    <tr>
+      <td>CrArl3·mGppNHp intrinsic</td>
+      <td>1.3 × 10-4 ± 2 × 10-6</td>
+    </tr>
+    <tr>
+      <td>CrArl3·mGppNHp + 5 µM CrArl13B·GTP</td>
+      <td>1.0 × 10-2 ± 1 × 10-4</td>
+    </tr>
+  </tbody>
+</table>
+
+_kobs rates determined from GEF assays with 0.5 µM CrArl3 loaded with either mantGDP or mantGppNHp in the presence of 5 µM CrArl13B18-–278·GTP and 800 µM unlabeled nucleotide._
 
 We next asked whether the nucleotide-bound state of CrArl13B affects its GEF activity as suggested by the GST pull-down experiments. CrArl13B preloaded with GDP, GTP, or GppNHp was used to analyze the exchange activity. At 5 µM GEF, the exchange was about ninefold slower for GDP- than for GTP- and GppNHp-bound CrArl13B (Figure 2E). The observed rate constants of mantGDP-dissociation showed a hyperbolic dependence on CrArl13B concentration, with a maximum release rate of 0.86 × 10-2 sec. The KM for the reaction is 1.1 µM for CrArl13B·GTP and 155 µM for CrArl13B·GDP (Figure 2F) showing that CrArl13B·GTP has a higher affinity than CrArl13B·GDP. Since the in vitro determined maximal nucleotide release stimulation of 70-fold appears relatively slow but not unusual, it is quite conceivable that additional factors such as the presence of membranes or lipids enhance the GEF activity as shown for the Ras-GEF SOS (Gureasko et al., 2008) and other GEFs (Cabrera et al., 2014; Pasqualato et al., 2002). Since Arl3 has a high affinity to membranes (Kapoor et al., 2015) and Arl13B is palmitoylated (Cevik et al., 2010) the reaction between them is thus most likely orchestrated on the ciliary membrane.
 
-Next, we employed x-ray crystallography to elucidate the structural basis for the interaction. We thus co-crystallized
+Next, we employed x-ray crystallography to elucidate the structural basis for the interaction. We thus co-crystallized CrArl13B·GppNHp and CrArl3·GDP in the presence of alkaline phosphatase in order to allow formation of nucleotide free CrArl3. Since CrArl13B requires bound nucleotide for stability (and most likely for activity) complex formation could not be performed with nucleotide free Arl3 GEF-substrate. The obtained crystals diffracted to 2.5Å and the structure was solved by molecular replacement showing one complex in the asymmetric unit (Table 3). Although crystallization was done in the presence of alkaline phosphatase GppNHp was clearly visible in both active sites, suggesting that the structure represents the post-nucleotide-exchange state. The nucleotide dependency of CrAr13B’s GEF activity suggested that switch I and II contribute to the interface. The structure shows indeed that a major part of the interaction is mediated by switch I and II of CrArl13B which contact CrArl3 via α4Arl3, β6Arl3, and α5Arl3 located opposite to the nucleotide binding site (Figure 3A, 3E). Further interactions are between the long α-helix α6Arl13B which makes a 90° turn at residue G189, and α3/ α4Arl3. The last 58 residues, predicted to be α-helical, are not visible in the electron density presumably because they are flexible.
+
+**Table 3.**
+ Data collection and refinement statistics (molecular replacement).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>CrArl13B-CrArl3 (5DI3)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P212121</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>57.10, 68.80, 120.00</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90.00, 90.00, 90.00</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>29.84 – 2.50 (2.60-2.50)</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.07 (0.68)</td>
+    </tr>
+    <tr>
+      <td>I / σI</td>
+      <td>17.56 (3.26)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.9 (99.9)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>6.4 (6.8)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>2.50</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>16944 (1840)</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.199/0.236</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td>2995</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>2900</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>2 Mg2+, 2 GMPPNP</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>66.40</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>54.30</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>55.00</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.02</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for highest-resolution shell._
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/11859/elife-11859-fig3-v2.jpg)
 
-**Figure 3.:** CrArl13B-– CrArl3 complex.(A) The CrArl13B-–CrArl3 complex structure with Arl13B (green), Arl3 (light blue), Switch I (blue), Switch II (red), GppNHp (a non-hydrolyzable (GTP) analogue; yellow). Residues analogous to Joubert syndrome mutations (R77 and R194) are depicted in cyan. Red asterisks delineate the deletion sites (V202, E212, K219) of CrArl13 used in the guanine nucleotide exchange factor (GEF) assay below (Figure 4). Other deletion sites are not resolved in the electron density. Dashed line indicates the 58 C-terminal residues not visible in the structure (B–D) Details of the interaction interface. (C) Hydrophobic residues located in Switch I and Switch II of CrArl13B are involved in the interaction with CrArl3. (D) K210 and R213 in α6Arl13B are forming salt bridges with D143Arl3 and E103Arl3(orange). Coloring as in (A). (E) Schematic representation of residues located in the interface. Hydrogen bonds between residues are depicted as black dashed line, salt bridges as red dashed line.DOI: http://dx.doi.org/10.7554/eLife.11859.008
+**Figure 3.:** (A) The CrArl13B-–CrArl3 complex structure with Arl13B (green), Arl3 (light blue), Switch I (blue), Switch II (red), GppNHp (a non-hydrolyzable (GTP) analogue; yellow). Residues analogous to Joubert syndrome mutations (R77 and R194) are depicted in cyan. Red asterisks delineate the deletion sites (V202, E212, K219) of CrArl13 used in the guanine nucleotide exchange factor (GEF) assay below (Figure 4). Other deletion sites are not resolved in the electron density. Dashed line indicates the 58 C-terminal residues not visible in the structure (B–D) Details of the interaction interface. (C) Hydrophobic residues located in Switch I and Switch II of CrArl13B are involved in the interaction with CrArl3. (D) K210 and R213 in α6Arl13B are forming salt bridges with D143Arl3 and E103Arl3(orange). Coloring as in (A). (E) Schematic representation of residues located in the interface. Hydrogen bonds between residues are depicted as black dashed line, salt bridges as red dashed line.
 
-To examine the interface we mutated residues within switch I, II, and α6 of
+To examine the interface we mutated residues within switch I, II, and α6 of CrArl13B (Figure 3B–D). Switch I mutant CrArl13BF53A showed a markedly decreased GEF activity whereas the D46A, F51A, N75A, and Y83A mutants had only a minor effect (Figure 4A). The charge-reversal mutations K210E/R216E in α6Arl13B as well as D103R and D146R in CrArl3 show no activity, as expected, whereas a control mutation H154W outside the interface has no effect (Figure 4B). Since CrArl13B’s analogous Joubert mutation R77Q and to a lesser extent R194C have been shown to impair the conformational stability of switch II (Miertzschke et al., 2014), we next tested the analogous mutants CrArl13BR77Q and CrArl13BR194C for their GEF activities. CrArl13BR77Q displayed a reduced activity in contrast to a very mild effect of CrArl13BR194C (Figure 4C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/11859/elife-11859-fig4-v2.jpg)
 
-**Figure 4.:** (A) GEF activity of CrArl13B18-– 278·GppNHp (a non-hydrolyzable GTP analogue) switch I and II mutants. To CrArl3 mantGppNHp (500 nM) 5 µM of CrArl13B·GppNHp constructs and 800 µM unlabeled GppNHp were added. (B) GEF assay with CrArl13B18-278·GppNHpand CrArl3·mantGppNHp carrying charge reversal mutations located in the interface. (C) GEF activity of the analogous Joubert syndrome mutants (CrArl13BR77Q, CrArl13BR194C). Same concentrations as in (A). (D) GEF assay with CrArl13B deletion constructs. Boundaries of deletion fragments: △203: 18–202; △213: 18–213; △220: 18–219; △229: 18–228; △233: 18–232. 18–278 are the constructs used for all other GEF assays. Kobs values are summarized in Table 4.DOI: http://dx.doi.org/10.7554/eLife.11859.009
+**Figure 4.:** (A) GEF activity of CrArl13B18-– 278·GppNHp (a non-hydrolyzable GTP analogue) switch I and II mutants. To CrArl3 mantGppNHp (500 nM) 5 µM of CrArl13B·GppNHp constructs and 800 µM unlabeled GppNHp were added. (B) GEF assay with CrArl13B18-278·GppNHpand CrArl3·mantGppNHp carrying charge reversal mutations located in the interface. (C) GEF activity of the analogous Joubert syndrome mutants (CrArl13BR77Q, CrArl13BR194C). Same concentrations as in (A). (D) GEF assay with CrArl13B deletion constructs. Boundaries of deletion fragments: △203: 18–202; △213: 18–213; △220: 18–219; △229: 18–228; △233: 18–232. 18–278 are the constructs used for all other GEF assays. Kobs values are summarized in Table 4.
+
+**Table 4.**
+ Kobs values from data shown in Figure 4 A–D.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CrArl13B Switch interface mutants</th>
+      <th>Kobs (s-1) ± S.E.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CrArl3 intrinsic</td>
+      <td>1.4 × 10-4 ± 4 × 10-6</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B wt GTP</td>
+      <td>0.91 × 10-2 ± 2 × 10-4</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B F51A GTP</td>
+      <td>2.0 × 10-3 ± 2 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B F53A GTP</td>
+      <td>4.2 × 10-4 ± 2 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B Y83A GTP</td>
+      <td>0.9 × 10-3 ± 1 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B D46A GTP</td>
+      <td>4.1 × 10-3 ± 8 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B N75A GTP</td>
+      <td>4.4 × 10-3 ± 3 × 10-5</td>
+    </tr>
+    <tr>
+      <td>CrArl13B and CrArl3 Interface mutants</td>
+      <td>Kobs (s-1) ± S.E.</td>
+    </tr>
+    <tr>
+      <td>CrArl3 wt intrinsic</td>
+      <td>1.1 × 10-4 ± 1 × 10-6</td>
+    </tr>
+    <tr>
+      <td>CrArl3 wt + 5 µM CrArl13B K210E/R216E</td>
+      <td>1.5 × 10-4 ± 1 × 10-5</td>
+    </tr>
+    <tr>
+      <td>CrArl3 D103R + 5 µM CrArl13B wt</td>
+      <td>1.4 × 10-4 ± 5 × 10-6</td>
+    </tr>
+    <tr>
+      <td>CrArl3 D146R + 5 µM CrArl13B wt</td>
+      <td>1.4 × 10-4 ± 6 × 10-6</td>
+    </tr>
+    <tr>
+      <td>CrArl3 wt + 5 µM CrArl13B H154W</td>
+      <td>0.88 × 10-2 ± 2 × 10-4</td>
+    </tr>
+    <tr>
+      <td>CrArl3 wt + 5 µM CrArl13B wt</td>
+      <td>0.85 × 10-2 ± 2 × 10-4</td>
+    </tr>
+    <tr>
+      <td>CrArl13B Deletion constructs</td>
+      <td>Kobs (s-1) ± S.E.</td>
+    </tr>
+    <tr>
+      <td>CrArl3 wt intrinsic</td>
+      <td>1.0 × 10-4 ± 2 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B △203</td>
+      <td>1.0 × 10-4 ± 8 × 10-6</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B △213</td>
+      <td>1.0 × 10-4 ± 1 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B △220</td>
+      <td>1.1 × 10-3 ± 1 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B △243</td>
+      <td>4.5 × 10-3 ± 5 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B △233</td>
+      <td>5.0 × 10-3 ± 6 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B 18-278</td>
+      <td>6.6 × 10-3 ± 2 × 10-4</td>
+    </tr>
+    <tr>
+      <td>CrArl13B Joubert mutants</td>
+      <td>Kobs (s-1) ± S.E.</td>
+    </tr>
+    <tr>
+      <td>CrArl3 intrinsic</td>
+      <td>1.4 × 10-4 ± 3 × 10-6</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B R77Q</td>
+      <td>5.5 × 10-4 ± 1 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B R194C</td>
+      <td>2.0 × 10-3 ± 2 × 10-5</td>
+    </tr>
+    <tr>
+      <td>+ 5 µM CrArl13B wt</td>
+      <td>0.72 × 10-2 ± 1 × 10-4</td>
+    </tr>
+  </tbody>
+</table>
+
+_Kobs values were determined by fitting the data (Figure 4 A-D) to single exponential functions. If not stated otherwise CrArl13B 18-278 is used for the measurements._
 
 GEF proteins normally act by directly interfering with the nucleotide binding site thereby decreasing nucleotide affinity (Cherfils and Zeghouf, 2013). In the crystal structure the nucleotide binding site of CrArl3 is not directly contacted by CrArl13B. We were not able to trap the interacting residues presumably due to the presence of nucleotide and/or the flexibility of the interacting residues of Arl13B. Considering the length of the C-terminus required for catalysis (see below) it is however suggestive that the mobile C-terminus of Arl13B is involved in the GEF reaction by contacting the relevant surface of Arl3. To examine the importance of this region for catalysis we prepared deletion constructs with differing length of the α6-helix (see red asterisks in Figure 3A). Whereas the C-terminal deletion constructs △233(18–232) and △243(18–242) had no effect, a longer deletion to residue 220(18–219) showed a reduced stimulation (Figure 4D). Finally, the GEF activity of △213(18–212) and △203(18–202) was completely abolished. In support of their importance residues 212–228 are highly conserved among species and we would speculate that these residues contact Arl3 close to the nucleotide binding site.
 
-We next decided to demonstrate the GEF activity of Arl13B in mammalian cells. Therefore we used a stably transfected murine inner medullary collecting duct 3 (IMCD3) cell line and transiently transfected HEK293 cells overexpressing human Arl13B-GFP. To quantify Arl3 activation, Arl3·GTP was affinity-precipitated with the effector GST-PDE6δ (
+We next decided to demonstrate the GEF activity of Arl13B in mammalian cells. Therefore we used a stably transfected murine inner medullary collecting duct 3 (IMCD3) cell line and transiently transfected HEK293 cells overexpressing human Arl13B-GFP. To quantify Arl3 activation, Arl3·GTP was affinity-precipitated with the effector GST-PDE6δ (Linari et al., 1999) and analysed by immunoblot. The level of endogenous Arl3·GTP was strikingly increased in cells overexpressing Arl13B compared to control cells (Figure 5A). Furthermore, the level of GTP-bound Arl3-Flag depended on the Arl13B concentration (Figure 5B). Consistent with the Y2H data the Arl2·GTP level was not affected by overexpressed Arl13B indicating selectivity for Arl3 (Figure 5G). Interface mutations in Arl13B which disrupted the in vitro exchange activity were also tested in HEK293 cells. Consistently, cells transfected with Arl13BK216E/R219E, Arl13BY55A or Arl13BY85A did not markedly increase the Arl3·GTP level (Figure 5C,D). Intriguingly, the Arl3·GTP level in cells overexpressing the Joubert mutant variants Arl13BR79Q and Arl13BR200C was lower than those expressing Arl13Bwt. Consistent with the biochemical data the R79Q mutation impaired Arl3 activation was more pronounced than R200C (Figure 5E,F). Finally, we were able to purify human Arl13B (18–278) from insect cells in reasonable amounts to test its GEF activity. Confirming the conservation of structure and function the human Arl13B also exhibits strong GEF activity for Arl3 (Figure 6A). The stimulation of the nucleotide release was more efficient compared to CrArl13B, with a 900fold acceleration at 5 µM. In agreement with the different biological function (Zhou et al., 2006), the nucleotide dissociation of Arl2 was not accelerated by Arl13B (Figure 6B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/11859/elife-11859-fig5-v2.jpg)
 
-**Figure 5.:** (A) Endogenous Arl3·GTP was affinity-precipitated from Human Embryonic Kidney 293 (HEK293) or murine inner medullary collecting duct 3 (IMCD3) cell lysates using GST-PDE6δ and analyzed as described in Materials and methods. HEK293 cells were transiently transfected with full length Arl13B-GFP(pGLAP5); IMCD3 cells stably expressed the same construct. (B) HEK293 cells were transiently transfected with increasing amounts of Arl13B-GFP (0, 1, 3, 6, 12 µg DNA) and constant amounts of Arl3-Flag. Arl3·GTP level determined as in (A). (C) Arl3-Flag activation in the presence of wildtype and interface mutant Arl13B-GFP was determined as in (A) and quantified in (D). (E) Arl3-Flag activation in the presence Arl13B wt and Joubert syndrome mutants R79Q and R200C. (F) Quantification of (E). Data is represented as mean ± S.E. (G) Arl3-Flag and Arl2-Flag activation in the presence of Arl13B-GFP in HEK293 cells.DOI: http://dx.doi.org/10.7554/eLife.11859.011
+**Figure 5.:** (A) Endogenous Arl3·GTP was affinity-precipitated from Human Embryonic Kidney 293 (HEK293) or murine inner medullary collecting duct 3 (IMCD3) cell lysates using GST-PDE6δ and analyzed as described in Materials and methods. HEK293 cells were transiently transfected with full length Arl13B-GFP(pGLAP5); IMCD3 cells stably expressed the same construct. (B) HEK293 cells were transiently transfected with increasing amounts of Arl13B-GFP (0, 1, 3, 6, 12 µg DNA) and constant amounts of Arl3-Flag. Arl3·GTP level determined as in (A). (C) Arl3-Flag activation in the presence of wildtype and interface mutant Arl13B-GFP was determined as in (A) and quantified in (D). (E) Arl3-Flag activation in the presence Arl13B wt and Joubert syndrome mutants R79Q and R200C. (F) Quantification of (E). Data is represented as mean ± S.E. (G) Arl3-Flag and Arl2-Flag activation in the presence of Arl13B-GFP in HEK293 cells.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/11859/elife-11859-fig6-v2.jpg)
 
-**Figure 6.:** (A) GEF activity of human Arl13B18-–278 (purified from insect cells) for murine Arl3. To 500 nM Arl3·mantGppNHp, 5 µM hsArl13B·GTP and 800 µM GTP were added. kobs (intrinsic): 4 × 10-4 s-1, kobs(Arl13B·GTP): 0,36 s-1. (B) Human Arl13B·GTP does not accelerate nucleotide dissociation of Arl2·mantGppNHp. kobs(intrinsic):1.2 × 10-2 s-1; kobs(Arl13B·GTP): 1.2 × 10-2 s-1.DOI: http://dx.doi.org/10.7554/eLife.11859.012
+**Figure 6.:** (A) GEF activity of human Arl13B18-–278 (purified from insect cells) for murine Arl3. To 500 nM Arl3·mantGppNHp, 5 µM hsArl13B·GTP and 800 µM GTP were added. kobs (intrinsic): 4 × 10-4 s-1, kobs(Arl13B·GTP): 0,36 s-1. (B) Human Arl13B·GTP does not accelerate nucleotide dissociation of Arl2·mantGppNHp. kobs(intrinsic):1.2 × 10-2 s-1; kobs(Arl13B·GTP): 1.2 × 10-2 s-1.
 
 ## Discussion
 
@@ -74,11 +402,11 @@ Arl13B has been implicated in a number of ciliary functions (Cevik et al., 2010;
 
 Our results have important implications for the regulation of sorting and transport processes into cilia. It has been shown earlier that Arl3 but not Arl2 can release ciliary cargo from the transport proteins PDE6δ and Unc119 (Ismail et al., 2012, 2011; Wright et al., 2011). One would predict that Arl3, which is enriched in cilia but also in other microtubule dense structures (Grayson et al., 2002; Zhou et al., 2006), is only activated inside cilia where Arl13B exclusively resides (Blacque et al., 2005; Caspary et al., 2007; Duldulao et al., 2009) in order to avoid release of ciliary prenylated and myristoylated cargo in the cytoplasm, where other cargo such as Ras, RheB, or Src kinases can be released by Arl2. The observation that expression of constitutive active ARL-3 (Q70L/Q72L) in Lieshmania donovani and in Caenorhabditis elegans resulted in decreased flagellum length and in impaired ciliogenesis might be explained by Arl3-GTP being located all over the cell and by subsequent mistargeting of proteins destined for the cilium (Cuvillier et al., 2000; Li et al., 2010).
 
-The different subcellular localization of Arl3-GAP and GEF resembles very closely the Ran driven nucleocytoplasmic transport system. Nucleocytoplasmic transport through the nuclear pore is regulated by a Ran gradient across the nuclear pore (
+The different subcellular localization of Arl3-GAP and GEF resembles very closely the Ran driven nucleocytoplasmic transport system. Nucleocytoplasmic transport through the nuclear pore is regulated by a Ran gradient across the nuclear pore (Stewart, 2007). This gradient is regulated by the Ran-GEF RCC1, which is retained inside the nucleus, and by the major form of Ran-GAP, which is located at the exit side of the nuclear pore complex (NPC), by binding to RanBP2 (Mahajan et al., 1997). Import cargo bound to importins is released from the carrier by Ran·GTP. The export complex formed by the exportin-cargo complex is in turn stabilized by Ran·GTP and dissociated after exit from the NPC and hydrolysis of GTP. Since the Arl3 specific GAP RP2 is absent from primary cilia and enriched in the preciliary region as observed by us and others (Blacque et al., 2005; Evans et al., 2010; Grayson et al., 2002), we can assume that a similar Arl3·GTP gradient exists across the transition zone and that the Arl3·GTP compartment inside cilia creates a driving force for the transport of prenylated and myristoylated proteins which are allosterically released by Arl3·GTP from their carrier proteins PDE6δ and Unc119a/b (see Figure 7 for a schematic overview). The Ran-GEF RCC1 is retained in the nucleus through its interaction with nucleosomes (Nemergut et al., 2001). In the case of Arl13B, the N-terminal palmitoylation site, but also the other domains seem to be indispensable for its ciliary localization and retention (Cevik et al., 2010; Duldulao et al., 2009).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/11859/elife-11859-fig7-v2.jpg)
 
-**Figure 7.:** In the cilium where Arl13B resides Arl3 gets activated. Through the exclusive localization of Arl13B (Arl3-GEF [guanine nucleotide exchange factor]) inside and retinitis pigmentosa 2 (RP2) (Arl3-GAP) outside the cilium an Arl3·GTP gradient is generated across the transition zone. The carriers PDEδ and Unc119a/b bound to ciliary lipidated cargo reach the cilium where Arl3·GTP binds to the carrier proteins and releases the cargo. RP2 -– enriched in the preciliary region – stimulates the hydrolysis of Arl3·GTP which leads to the dissociation of the carrier proteins from Arl3·GDP.DOI: http://dx.doi.org/10.7554/eLife.11859.013
+**Figure 7.:** In the cilium where Arl13B resides Arl3 gets activated. Through the exclusive localization of Arl13B (Arl3-GEF [guanine nucleotide exchange factor]) inside and retinitis pigmentosa 2 (RP2) (Arl3-GAP) outside the cilium an Arl3·GTP gradient is generated across the transition zone. The carriers PDEδ and Unc119a/b bound to ciliary lipidated cargo reach the cilium where Arl3·GTP binds to the carrier proteins and releases the cargo. RP2 -– enriched in the preciliary region – stimulates the hydrolysis of Arl3·GTP which leads to the dissociation of the carrier proteins from Arl3·GDP.
 
 Since Arl13B’s GEF activity is higher in the GTP-bound conformation one may ask if and how the nucleotide status of Arl13B itself is regulated. We have shown before that the intrinsic GTP hydrolysis activity of Arl13B is very low and that the protein active site does not contain a catalytic glutamine residue (Miertzschke et al., 2014). Although we cannot exclude that an Arl13B specific GAP would supply catalytic residues an alternative explanation would be that Arl13B in the absence of GTP hydrolysis is mostly in the GTP-bound form. This does not exclude the existence of an Arl13B-GEF which is presently unknown.
 
@@ -86,36 +414,36 @@ Since both the mutations of the Arl3-GAP RP2 in RP and the Arl3-GEF Arl13B in JS
 
 ## Material and methods
 
-## Yeast techniques
+### Yeast techniques
 
 Mouse retina cDNA library was generated according to 'Mate&Plate' Library System User Manual (Clonetech), cloned into pGADT7 (short: pAD) and introduced into Saccharomyces cerevisiae Y187. Yeast techniques and two-hybrid methods were performed according to the Yeast Protocols Handbook and the Matchmaker GAL4 Two-Hybrid System 3 manual (Clontech) with S. cerevisiae AH109. Murine Arl3△ND129N (residues 17–182), Arl6△ND133N (residues 16–186), Arl2△ND128N (residues 17–184) and Arl13B (residue 20–278)were cloned into a Gateway compatible pBD-Gal4 vector (a kind gift from R. Roepman) and S. cerevisiae AH109 used as recipient for transformation.
 
-## Protein expression and purification
+### Protein expression and purification
 
 CrArl13B (UniProt: A8INQ0) and CrArl3 (UniProt: A8ISN6) were amplified by PCR from a cDNA library from C. reinhardtii CC-124 WT(wild- type)mt-[137c] [nit1, nit2, agg1] (a gift from T. Happe). Respective mutants were generated by site directed mutagenesis PCR. CrArl3 and CrArl13B proteins were expressed as GST-fusions and purified as previously described (Miertzschke et al., 2014). CrArl3 full length was additionally cloned into the pET20 vector to produce C-terminally His-tagged protein. Murine Arl3 full length (UniProt: Q9WUL7) and human Arl2 full length (Uniprot: P36404) in pET20 vectors were already available. Proteins were expressed in BL21DE3 CodonPlus RIL cells at 18°C after induction with 100 µM Isopropyl β-D-1-thiogalactopyranoside (IPTG). Purification of CrArl3-His, murine Arl3-His and human Arl2-His were conducted as described previously (Veltel et al., 2008). Human recombinant His-Arl13B 18–278 was expressed in High-Five insect cells for 66 hr at 27°C after virus infection. Insect cells were lysed in 30 mM Tris (pH7.5), 150 mM NaCl, 5 mM MgCl2, 3 mM β-mercaptoethanol, 10% glycerole, and 0.1 mM GTP and Complete protease inhibitor cocktail (Roche) using a Microfluidizer M-110S (Microfluidics). Protein was purified by affinity chromatography using a Talon Superflow column (Clonetech) and size exclusion chromatography. All proteins were stored in buffer M containing 25 mM Tris (pH 7.5) 100 mM NaCl, 5 mM MgCl2, 3mM β-mercaptoethanol and 1% glycerole.
 
-## Preparation of proteins with defined nucleotide state
+### Preparation of proteins with defined nucleotide state
 
 Nucleotide exchange to GDP, GTP, or (N-methylanthraniloyl) mantGDP on Arl proteins was performed in the presence of 50mM ethylenediaminetetraacetic acid (EDTA) and a five fold (two fold for mantGxP) excess of nucleotide. After incubation for 2 hrs 100 mM MgCl2 was added and the protein separated from the excess of nucleotide by a HiTrap desalting column (GE Healthcare). The nucleotide exchange to GppNHp and mantGppNHp was performed using agarose coupled alkaline phosphatase (AP). AP was removed by centrifugation and excess of nucleotide removed by a desalting column. The amount of protein-bound nucleotide was analyzed by C18 reversed-phase high performance liquid chromatography (HPLC) and quantified with a calibrator detector (Beckman Coulter) and an integrator (Shimadzu).
 
-## Pull-down assay with purified protein
+### Pull-down assay with purified protein
 
 Per sample 50 µg GST-CrArl3 was bound to 50 µl glutathione agarose and washed 2x with 500 µl buffer M. GST-CrArl3 was incubated in 100 µl buffer M containing 1 mg/ml CrArl13B18-–278 (~37 µM) for 30 min and afterwards washed 2x with 500 µl buffer M. Protein was eluted from beads by addition of sodium dodecyl sulfate (SDS) loading buffer and subsequent boiling and analyzed by sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS-PAGE).
 
-## Crystallization, data collection and analysis
+### Crystallization, data collection and analysis
 
 CrArl13B·GppNHp and CrArl3·GDP (12 mg/ml) were mixed in the presence of AP in the ratio 1:1.2 (Arl3:Arl13B). With the sitting drop/vapour diffusion method crystals appeared in 0.1M Tris pH 8.5, 25% PEG 6000 (PEGII suite, Qiagen) after 3 days. Crystals were fished out of the 96 well plate and flash frozen in a cryo-solution containing the same constituents as the crystallization condition supplemented with 20% glycerol. Data collection was done at the PXII-XS10SA beamline of the Swiss Light Source (SLS) Villingen. Data were indexed and processed with XDS (Kabsch, 1993). Molecular replacement was done with PHASER from the CCP4 package (The CCP4 suite: programs for protein crystallography, 1994). The structure refinement was done using phenix.refine of PHENIX (Adams et al., 2010). Images were generated with PYMOL (http://www.pymol.org). Atomic coordinates and structural factors have been deposited in the Protein Data Bank (PDB) under the accession code 5DI3.
 
-## Guanine nucleotide exchange assay
+### Guanine nucleotide exchange assay
 
 Nucleotide exchange reactions were performed in buffer M at 20°C. As standard conditions, 500 nM G-protein was incubated and the GEF reaction was started with the addition of a mix Arl13B and an excess of nucleotide. Unless otherwise stated 5 µM GEF was used. Since the species of the in excess added unlabeled G-nucleotide (GDP, GTP, or GppNHP) does not influence the velocity of the GEF reaction, the mix always contained an 800-fold excess of the respective nucleotide which was bound to Arl13B in order to avoid undesirable intrinsic nucleotide exchange of Arl13B. For the intrinsic dissociation the same volume buffer containing unlabeled nucleotide was added. The fluorescence change was monitored using a FluoroMax 4 Spectrofluorometer (Jobin Yvon) with an excitation at 366 nm and emission at 450 nm. Data was fitted to single exponential functions using Grafit5 (Erithacus software) to obtain the koff values. All quantitative parameters were measured two or more times. To ensure that all CrArl13B mutants are 100% loaded with the same nucleotide, they were exchanged to GppNHp with alkaline phosphatase and the stimulation of the nucleotide release measured for CrArl3·mantGppNHp. KM and Vmax were obtained by fitting the data to the Michaelis Menten equation using Grafit5.
 
-## Cells lines
+### Cells lines
 
 Mouse renal epithelial Flp-In cells from the inner medullary collecting duct (IMCD3 Flp-In; kind gift from MV Nachury) and HEK293 cells were cultured at 37°C and 5% CO2 in Dulbecco’s Modified Eagle Medium (DMEM)/F12, 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES) (Life technologies) complemented with 10% fetal bovine serum and 1% L-glutamine.
 
 The parental IMCD3 Flp-In cell line contains a stably integrated FRT cassette and was co-transfected with pOG44 coding a FLP recombinase and the appropriate pgLAP5 vector (Addgene) using Lipofectamine 2000 (Life technologies). For selection of successful stable genomic integration the media was supplemented with 200 μg/ml hygromycin (Merck) and expression of the GFP-fusion protein was checked by Western Blot using an anti-GFP antibody (Santa Cruz Biotechnology).
 
-## Analysis of Arl13B GEF activity in whole cell lysates
+### Analysis of Arl13B GEF activity in whole cell lysates
 
 For pull-downs of overexpressed Arl3-Flag 2.5 × 106 HEK293 cells were seeded in 15 cm2 dishes 24 hr prior to transfection. Cells were transfected using Polyethylenimine (PEI) at a ratio 3:1 of PEI (µg) : total DNA (µg). Cells were induced to ciliate by withdrawing serum for 30 hr. ~2.5 × 107 cells (1 × 15 cm2 dish) were lysed in 1 ml lysis buffer for 30 min at 4°C. For pull-downs of endogenous Arl3 1 × 108 cells (4 × 15 cm2 dish) were used. Lysate was cleared by centrifugation and protein concentration normalized. Per sample 50 µg GST-PDE6δ was coupled to 50 µl glutathione agarose which was incubated with cleared lysates for 45 min at 4°C. Cleared lysate was removed and beads washed 2x with 500 µl buffer M. Samples were eluted with 1 × SDS-loading buffer. For the detection of affinity-precipitated endogenous Arl3 an anti-Arl3 antibody (Novus Biologicals) was used, and in case of Arl3-Flag an anti-Flag antibody (Thermo Scientific) was used. Expression of Arl13B-GFP was checked using an anti-GFP antibody (Santa Cruz Biotechnology) and antibody against S-peptide, which is located between Arl13B and GFP in pGLAP5. The level of Arl3·GTP was quantified using ImageJ. Experiments were repeated two or more times.

@@ -10,14 +10,14 @@
 
 ### Affiliations
 
-1. https://ror.org/03wmf1y16 Department of Cell and Developmental Biology, University of Colorado Anschutz Medical Campus Aurora United States
-2. https://ror.org/03wmf1y16 Department of Pediatrics, University of Colorado Anschutz Medical Campus Aurora United States
+1. Department of Cell and Developmental Biology, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
+2. Department of Pediatrics, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
 
 † Corresponding author
 
 ## Abstract
 
-Heterozygous, missense mutations in α- or β-tubulin genes are associated with a wide range of human brain malformations, known as tubulinopathies. We seek to understand whether a mutation’s impact at the molecular and cellular levels scale with the severity of brain malformation. Here, we focus on two mutations at the valine 409 residue of TUBA1A, V409I, and V409A, identified in patients with pachygyria or lissencephaly, respectively. We find that ectopic expression of TUBA1A -V409I/A mutants disrupt neuronal migration in mice and promote excessive neurite branching and a decrease in the number of neurite retraction events in primary rat neuronal cultures. These neuronal phenotypes are accompanied by increased microtubule acetylation and polymerization rates. To determine the molecular mechanisms, we modeled the V409I/A mutants in budding yeast and found that they promote intrinsically faster microtubule polymerization rates in cells and in reconstitution experiments with purified tubulin. In addition, V409I/A mutants decrease the recruitment of XMAP215/Stu2 to plus ends in budding yeast and ablate tubulin binding to TOG (tumor overexpressed gene) domains. In each assay tested, the TUBA1A -V409I mutant exhibits an intermediate phenotype between wild type and the more severe TUBA1A -V409A, reflecting the severity observed in brain malformations. Together, our data support a model in which the V409I/A mutations disrupt microtubule regulation typically conferred by XMAP215 proteins during neuronal morphogenesis and migration, and this impact on tubulin activity at the molecular level scales with the impact at the cellular and tissue levels.
+Heterozygous, missense mutations in α- or β-tubulin genes are associated with a wide range of human brain malformations, known as tubulinopathies. We seek to understand whether a mutation’s impact at the molecular and cellular levels scale with the severity of brain malformation. Here, we focus on two mutations at the valine 409 residue of TUBA1A, V409I, and V409A, identified in patients with pachygyria or lissencephaly, respectively. We find that ectopic expression of TUBA1A-V409I/A mutants disrupt neuronal migration in mice and promote excessive neurite branching and a decrease in the number of neurite retraction events in primary rat neuronal cultures. These neuronal phenotypes are accompanied by increased microtubule acetylation and polymerization rates. To determine the molecular mechanisms, we modeled the V409I/A mutants in budding yeast and found that they promote intrinsically faster microtubule polymerization rates in cells and in reconstitution experiments with purified tubulin. In addition, V409I/A mutants decrease the recruitment of XMAP215/Stu2 to plus ends in budding yeast and ablate tubulin binding to TOG (tumor overexpressed gene) domains. In each assay tested, the TUBA1A-V409I mutant exhibits an intermediate phenotype between wild type and the more severe TUBA1A-V409A, reflecting the severity observed in brain malformations. Together, our data support a model in which the V409I/A mutations disrupt microtubule regulation typically conferred by XMAP215 proteins during neuronal morphogenesis and migration, and this impact on tubulin activity at the molecular level scales with the impact at the cellular and tissue levels.
 
 ## Introduction
 
@@ -33,49 +33,132 @@ In this study we investigate the molecular mechanism of two previously identifie
 
 ## Results
 
-## TUBA1A-V409I/A mutants dominantly disrupt cortical neuron migration and morphology
+### TUBA1A-V409I/A mutants dominantly disrupt cortical neuron migration and morphology
 
 The V409 residue of TUBA1A is located in helix 11’ of α-tubulin, near the intradimer interface on the cytoplasmic surface of the microtubule (Alushin et al., 2014; PDB: 3J6F; Figure 1—figure supplement 1A). To determine whether TUBA1A-V409I/A variants act as loss- or gain-of-function mutations, we first sought to establish whether the mutant proteins can polymerize into microtubules. We expressed a hexahistidine (6X-His)-tagged TUBA1A construct in cortical neuron cultures harvested from P0 rats. The 6X-His tag was inserted between residues I42 and G43 in a flexible loop of TUBA1A that allows for the addition of amino acids without perturbing tubulin function (Buscaglia et al., 2020a). After 2 days in culture (days in vitro 2 [DIV2]), we extracted soluble tubulin from the neurons, fixed the cells, and stained for the 6X-His tag. Both the TUBA1A-V409I and -V409A mutants incorporate into microtubules, similar to WT controls, as indicated by the microtubule filaments that can be resolved in the soma (Figure 1A). As a positive control, we expressed the TUBA1A-T349E mutant that does not assemble into polymer, as evidenced by the lack of labeled polymer in the soma (Figure 1A). We find that the amount of 6X-His signal retained after soluble protein extraction is similar between WT- and V409I/A-expressing cells (Figure 1B). These results suggest that the TUBA1A-V409I/A mutants assemble similar levels of ectopically expressed tubulin into microtubule polymer as compared to WT.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/76189/elife-76189-fig1-v3.jpg)
+
+**Figure 1.:** (A) Representative images of neurons ectopically expressing 6X-His-tagged TUBA1A-WT, -V409I, -V409A, and -T349E. The soluble tubulin was extracted from the cells, and then cells were stained with an anti-6X-His antibody. Bottom insets are representative of yellow boxes. Scale bar = 10 µm in top panels. Scale bar = 2 µm in bottom panels. Images were collected from three independent experiments; n=16 cells for wild-type (WT), n=16 for V409I, and n=16 for V409A. (B) 6X-His fluorescence intensity was measured for each neuron imaged in panel A. Each dot represents a single cell. Bars are median ± 95% confidence interval. (C) Representative coronal sections of E18.5 mouse brains that were electroporated with the above constructs at E14.5. GFP labels electroporated cells. Scale bar = 200 µm. Images were collected from three independent experiments; n=8 sections for WT, n=10 for V409I, and n=14 for V409A. Yellow box represents region in (D). (E) Representative cortical region was divided into four equal quartiles and GFP fluorescence intensity was measured in each. 1st quartile = ventricular/subventricular zones (VZ/SVZ), 2nd quartile = intermediate zone (IZ), 3rd quartile = lower cortical plate (LCP), 4th quartile = upper cortical plate (UCP). Bars are mean ± 95% confidence interval. (F) Representative zoomed in images of cells in the VZ/SVZ and the IZ. Scale bar = 20 µm. Images were collected from same set of coronal sections described in (C).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76189/elife-76189-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Microtubule lattice structure modified from PDB: 3J6F (Alushin et al., 2014). TUBA1A-V409 residue displayed as yellow ball structure and labeled in zoomed in portion. (B) Individual values of the proportion of GFP fluorescence intensity in each of the three zones that make up the average values in Figure 1E. Images were collected from same set of coronal sections described in Figure 1C. Bars are mean ± 95% confidence interval. Statistical analysis between multiple groups was analyzed by two-way ANOVA and corrected for multiple comparisons post hoc by Tukey test. All statistics with p≤0.05 are indicated on graph.
 
 We next asked whether incorporation of the TUBA1A-V409I/A mutants into microtubules in vivo is sufficient to disrupt cortical neuron migration. To answer this question, we performed in utero electroporations to ectopically express TUBA1A in migrating neurons in the developing mouse brain. At embryonic day (E) 14.5, we electroporated neural progenitors in the cortical ventricular zone, which give rise to immature excitatory neurons that migrate from the ventricular zone into the upper cortical plate. The cDNA expression plasmids used for the electroporations encode for either WT or mutant TUBA1A, along with GFP to identify the electroporated cells. The majority of GFP + neurons ectopically expressing TUBA1A-WT successfully migrate from the ventricular zone to the upper cortical plate by E18.5 (Figure 1C). In contrast, neurons ectopically expressing TUBA1A-V409I do not migrate to the upper cortical plate as robustly as WT control cells by E18.5, as evidenced by many neurons remaining in the ventricular, subventricular, and intermediate zones. Strikingly, a majority of TUBA1A-V409A-expressing neurons fail to migrate at all by E18.5 and remain primarily in the ventricular and subventricular zones. To quantify migration for comparison across experiments, we divided the cortical sections into four equal segments from the ventricular zone to the top of the cortical plate and measured the proportion of GFP signal in each segment (Figure 1D). Approximately, the first quartile represents the ventricular and subventricular zones, the second quartile represents the intermediate zone, the third quartile represents the lower cortical plate, and the fourth quartile represents the upper cortical plate. We find that the largest proportion of TUBA1A-WT-expressing cells (43.4%) are found in the upper cortical plate region (labeled in orange), while the largest proportion of TUBA1A-V409I-expressing cells (45.4%) are in the intermediate zone and lower cortical plate, and the largest proportion of TUBA1A-V409A-expressing cells (49.4%) are in the ventricular/subventricular zones (Figure 1E and Figure 1—figure supplement 1B). In each of our experiments, untransfected control cells successfully reach the cortical plate, as evidenced by abundant DAPI signal in the upper cortical plate segment, indicating that the radial glia cells that support migration are not impaired by the transfection of mutant TUBA1A in our experiments. These results suggest that the TUBA1A-V409I/A mutants act dominantly to disrupt neuron migration, with TUBA1A-V409A being more severe than the TUBA1A-V409I mutant.
 
 To further our understanding of how this migration defect occurs, we next used high-resolution confocal microscopy to examine the morphologies of cells that remain in the intermediate and ventricular zones 4 days after transfection. We find that the TUBA1A-WT-expressing cells in the intermediate and ventricular zones exhibit a clear bipolar morphology (Figure 1F). TUBA1A-V409I-expressing cells in the intermediate and ventricular zones also show a primarily bipolar morphology, however it is again evident that there are more TUBA1A-V409I-expressing cells in these regions as compared to WT-expressing cells (Figure 1F). Most strikingly, the TUBA1A-V409A-expressing cells in the intermediate and ventricular zones have elaborate multipolar morphologies with many processes and branches (Figure 1F). These complex morphologies and the high density of TUBA1A-V409A-expressing cells in these regions create a tangled nest of processes that make it difficult to measure the exact number of processes per cell. We conclude that TUBA1A-V409A-expressing cells exhibit severe migration defects accompanied by morphological defects, while TUBA1A-V409I-expressing cells exhibit intermediate migration defects without a strong morphological phenotype.
 
-## TUBA1A-V409I/A mutants increase neurite branching and decrease neurite retraction events
+### TUBA1A-V409I/A mutants increase neurite branching and decrease neurite retraction events
 
 The microtubule cytoskeleton plays a crucial role in the series of morphological changes that cortical neurons must undergo throughout the course of radial migration (Nadarajah et al., 2001; Noctor et al., 2004; Tabata and Nakajima, 2003). When immature neurons are born, they extend numerous neurites to probe their environment for directional cues. Once these cues have been identified, neurons must retract most of their neurites and become bipolar, such that one neurite becomes the axon and a neurite on the opposite side of the cell becomes the leading process that guides radial migration. Therefore, it is particularly crucial that microtubules are able to deftly respond to various cues throughout development that promote these different morphology transitions. Based on the highly branched morphologies of V409A neurons in the ventricular and intermediate zones (Figure 1F), we hypothesized that V409 mutants could either (1) initiate ectopic neurite growth, (2) promote faster neurite growth, or (3) inhibit or slow neurite retraction.
 
 To distinguish between these hypotheses, we examined the in vitro development of cultured primary neurons ectopically expressing the 6X-His-tagged TUBA1A (WT or mutant) plasmids described above. We first compared the number of primary, secondary, and tertiary neurites at two morphologically distinct stages of in vitro cortical neuron development, stage 2 (DIV1) and stage 3 (DIV2). Stage 2 neurons are characterized as being multipolar with all neurites being approximately similar in length (Dotti et al., 1988). On average, there is no appreciable difference in the number of neurites quantified in stage 2 cells expressing WT or V409I/A mutant TUBA1A. Most neurons at stage 2 have four primary neurites, and we rarely observe secondary or tertiary branches (Figure 2—figure supplement 1A and B). Consistent with this finding, stage 3 WT and V409I/A mutant neurons have a similar number of primary neurites (5.1±0.4, 4.9±0.4, 5.4±0.4 for WT, V409I, and V409A, respectively; Figure 2A and B). However, TUBA1A-V409I-expressing cells exhibit a slight, but measurable increase in secondary branches as compared to WT cells (0.6±0.2, 0.9±0.3 branches/cell for WT and V409I, respectively; Figure 2B). Strikingly, TUBA1A-V409A-expressing cells have a significantly greater number of secondary branches, and some also exhibit tertiary branches (secondary: 0.6±0.2, 2.2±0.7 branches/cell, tertiary: 0.01±0.03, 0.3±0.2 branches/cell for WT and V409A, respectively; Figure 2B). These data fail to support the hypothesis that TUBA1A-V409I/A mutants initiate ectopic primary neurite growth because we find a similar number of primary neurites in WT and mutant-expressing cells. Our data instead lend support to the alternative hypotheses that there is either faster neurite growth or insufficient neurite retraction, as evidenced by the increase in neurite branching.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/76189/elife-76189-fig2-v3.jpg)
+
+**Figure 2.:** (A) Representative days in vitro 2 (DIV2) cortical neurons expressing cytoplasmic GFP and 6X-His-tagged TUBA1A-WT, -V409I, and -V409A. Scale bar = 10 µm. (B) Quantification of number of primary, secondary, and tertiary branches along axons and dendrites in each condition. Images were collected from three independent experiments; n=65 cells for wild-type (WT), n=56 for V409I, and n=59 for V409A. Each dot represents a single cell. Bars are mean ± 95% confidence interval. Statistical analysis between multiple groups was analyzed by two-way ANOVA and corrected for multiple comparisons post hoc by Tukey test. All statistics with p≤0.05 are indicated on graph. (C) Example image of DIV2 cortical neuron expressing cytoplasmic GFP and TUBA1A-WT. Scale bar = 10 µm. Yellow box indicates a representative region measured every 30 s for 15 min at 37°C, 5% CO2. Scale bar in insets = 5 µm. (D) Proportion of events classified as the neurite growing, paused, or shrinking, depending on if the length of the neurite grew, stayed the same, or shrunk, respectively. Images were collected from three independent experiments; n=10 cells for WT, n=13 for V409I, and n=13 for V409A. Bars are mean ± standard error of the mean. (E) Quantification of the amount of time a neurite was in a paused state, neither growing nor shrinking. Each dot represents a period of pause; cell numbers are the same as stated in (D). Bars are mean ± 95% confidence interval. Statistical analysis was done using an unpaired t-test. All statistics with p≤0.05 are indicated on graph. (F) Representative images of neurons expressing the above plasmids, exposed to 4°C for indicated time, and stained with TUBB2A/B. Scale bar = 10 µm. (G) Quantification of the number of neurites per cell every 2 hr over a 6 hr 4°C cold shock. Images were collected from three independent experiments; for WT n=36 cells at 0 hr, n=35 at 2 hr, n=41 at 4 hr, n=44 at 6 hr; for V409I n=32 at 0 hr, n=30 at 2 hr, n=27 at 4 hr, n=29 at 6 hr; for V409A n=37 at 0 hr, n=29 at 2 hr, n=27 at 4 hr, n=22 at 6 hr. Dots represent averages from the three separate experiments and error bars are ± 95% confidence interval. (H) The proportion of neurites that have retraction bulbs per cell measured every 2 hr over a 6 hr 4°C cold shock. Cell numbers and error bars are the same as stated in (G).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76189/elife-76189-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative days in vitro 1 (DIV1) cortical neurons expressing GFP and 6X-His-tagged TUBA1A-WT, -V409I, and -V409A. Scale bar = 10 µm. (B) Quantification of number of primary, secondary, and tertiary branches along axons and dendrites in each condition. Images were collected from three independent experiments; n=32 cells for wild-type (WT), n=41 for V409I, and n=36 for V409A. Each dot represents a single cell. Bars are mean ± 95% confidence interval. Statistical analysis between multiple groups was analyzed by two-way ANOVA and corrected for multiple comparisons post hoc by Tukey test. All statistics with p≤0.05 are indicated on graph. (C) Individual values of the proportion of neurite events that classify as growing, paused, or shrinking that make up the average values in Figure 2D. (D) Representative merge images of neurons expressing the above plasmids, exposed to 4°C for indicated time, stained with TUBB2A/B in magenta, and expressing cytoplasmic GFP in green. Scale bar = 10 µm. (E) Individual values of the number of neurites per cell that make up the average values in Figure 2G. Cell numbers are the same as stated in Figure 2G. Statistical analysis between multiple groups was analyzed by two-way ANOVA and corrected for multiple comparisons post hoc by Tukey test. All statistics with p≤0.05 are indicated on graph. (F) Individual quantifications of the proportion of neurites per cell that have retraction bulbs measured every 2 hr over a 6 hr 4°C cold shock that make up the average values in Figure 2H. Each dot represents one cell. Cell numbers and error bars are the same as stated in (E). Statistical analysis between multiple groups was analyzed by two-way ANOVA and corrected for multiple comparisons post hoc by Tukey test. All statistics with p≤0.05 are indicated on graph.
+
 To assess potential differences in neurite extension or retraction, we imaged living neurons expressing TUBA1A-WT, -V409I, or -V409A over time to measure neurite dynamics (Figure 2C; Figure 2—video 1). We find that neurite growth rates and retraction rates are similar between TUBA1A-WT-, -V409I-, and -V409A-expressing cells (Table 1). The duration of growth and retraction events is also not significantly different; however, neurites in V409I-expressing cells, and more strikingly V409A, have a lower proportion of retraction events per neurite as compared to WT (34.6%, 25.4%, and 16.6% for WT, V409I, and V409A, respectively; Figure 2D and Figure 2—figure supplement 1C). In addition, neurites in both mutants commonly exhibit a paused state, where they are neither growing nor shrinking. Both the proportion of paused events and the duration of these pauses are significantly increased in V409I/A mutants (proportions: 24.0%, 35.6%, and 42.3%, duration: 0.7, 1.2, and 1.4 min for WT, V409I, and V409A, respectively; Figure 2D and E; Figure 2—figure supplement 1C; Table 1). These data suggest that the increased branching observed in V409I/A neurons is not due to an increase in neurite growth events or rate. Rather, our data supports the hypothesis that V409I/A cells have fewer retraction events and spend an increased amount of time neither growing nor shrinking.
+
+**Table 1.**
+ Neurite dynamics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Growth rate (µm/min)</th>
+      <th>Retraction rate (µm/min)</th>
+      <th>Growth duration (min)</th>
+      <th>Retraction duration (min)</th>
+      <th>Paused duration (min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>2.7±0.4</td>
+      <td>2.8±0.5</td>
+      <td>0.9±0.1</td>
+      <td>0.8±0.1</td>
+      <td>0.7±0.1</td>
+    </tr>
+    <tr>
+      <td>V409I</td>
+      <td>2.4±0.2</td>
+      <td>2.4±0.4</td>
+      <td>0.9±0.1</td>
+      <td>0.6±0.1</td>
+      <td>1.2±0.3</td>
+    </tr>
+    <tr>
+      <td>V409A</td>
+      <td>2.7±0.3</td>
+      <td>2.4±0.6</td>
+      <td>0.8±0.1</td>
+      <td>0.7±0.1</td>
+      <td>1.4±0.4</td>
+    </tr>
+  </tbody>
+</table>
 
 We next asked whether the observed differences in neurite dynamics are attributable to increased microtubule stability in V409I/A mutants, compared to WT. We predicted that V409I/A-expressing cells may maintain neurites under microtubule destabilizing conditions that are sufficient to stimulate neurite loss in WT controls. We stimulated neurite loss in vitro by placing the neuron cultures at 4°C over the course of 6 hr. At low temperatures, microtubules destabilize, which ultimately leads to neurite retraction (Breton and Brown, 1998; Tilney and Porter, 1967; Weber et al., 1975). During our time course experiment, cells expressing TUBA1A-WT, -V409I, or -V409A were fixed at 2-hr intervals and stained for β-II tubulin, a highly abundant β-tubulin isotype in cortical neurons, to label microtubules in neurites. After 4 hr at 4° C, the average number of neurites in TUBA1A-WT-expressing cells (identified by cytoplasmic GFP displayed in Figure 2—figure supplement 1C) is decreased from 4 to 1.5. The remaining neurites are depleted for β-II tubulin signal and nearly all have the retraction bulbs that are characteristic of retracting neurites (Figure 2F–H and Figure 2—figure supplement 1D-F). By 6 hr at 4°C, the number of neurites per cell is further diminished and β-II tubulin signal is only found in the cell soma of neurons expressing TUBA1A-WT (Figure 2—figure supplement 1D). In contrast to WT controls, neurite loss and the accumulation of retraction bulbs is more gradual in TUBA1A-V409I-expressing cells (Figure 2F–G). The most severe effect is detected in TUBA1A-V409A-expressing cells where neurites containing robust β-II tubulin signal are maintained throughout the time course, and retraction bulbs begin to form only after 6 hr at 4°C (Figure 2G–H). Together, these data suggest that expression of TUBA1A-V409I or -V409A creates hyper-stable microtubules in neurites that decrease neurite retraction events and lead to excessive branching.
 
-## TUBA1A-V409I/A mutants alter microtubule dynamics in neurons
+### TUBA1A-V409I/A mutants alter microtubule dynamics in neurons
 
 We next sought to determine if the increase in neurite branching and resistance to cold-induced microtubule destabilization seen in TUBA1A-V409I/A-expressing cells is a result of altered microtubule dynamics. To test this, we first quantified levels of tubulin post-translational modifications (PTMs) in WT- and mutant-expressing cells. Tyrosinated tubulin is a marker of dynamic, newly formed microtubules and is typically evenly distributed among the axon and dendrites (reviewed in Westermann and Weber, 2003). Acetylated tubulin is a marker of stable microtubule polymer and is highly localized to the axon, but largely absent in the dendrites.
 
 As expected, stage 3 control cells ectopically expressing TUBA1A-WT have acetylated tubulin localized primarily to the axon and tyrosinated tubulin throughout the neuron (Figure 3A and B). Additionally, TUBA1A-WT cells have the characteristic peak of tyrosinated tubulin at the distal tip of the axon, followed by a sharp increase in acetylated tubulin in the more proximal regions of the process (Figure 3—figure supplement 1A). Both TUBA1A-V409I- and -V409A-expressing neurons also exhibit tyrosinated tubulin throughout the neuron, similar to that observed in control cells expressing TUBA1A-WT (Figure 3B, Figure 3—figure supplement 1B-D). TUBA1A-V409I-expressing cells have a modest, yet statistically insignificant increase in microtubule acetylation at the distal axon tip, and a significant increase in microtubule acetylation in the region more proximal to the soma (Figure 3C, Figure 3—figure supplement 1B). TUBA1A-V409A cells exhibit a striking increase in microtubule acetylation at the distal axon tip, as well as in the more proximal region of the process (first 10 µm from distal tip: 1.238±0.303, 1.801±0.372, 2.331±0.596 AU; second 10 µm: 2.442±0.416, 3.505±0.556, 3.868±0.702 AU for WT, V409I, an V409A, respectively; Figure 3C, Figure 3—figure supplement 1C). Comparing the levels of tyrosinated and acetylated tubulin in each cell, we find an increase in the ratio of acetylated to tyrosinated tubulin in the distal 20 µm of the axon in V409I/A cells as compared to WT (Figure 3D). In a similar analysis of the most distal 10 µm of dendrites, we find that there are no significant differences in acetylated tubulin levels between WT and V409I/A cells, and thus no difference in the ratio of acetylated to tyrosinated tubulin (Figure 3—figure supplement 1E-F). However, we observed that some V409I/A cells exhibit increased microtubule acetylation in the dendrite regions that are closer to the soma, which was not observed in WT-expressing cells (Figure 3A). These data suggest that cells expressing V409I/A mutants have increased levels of microtubule acetylation as compared to WT, and V409A cells in particular have abnormally high levels of acetylation at the distal axon tip.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76189/elife-76189-fig3-v3.jpg)
+
+**Figure 3.:** (A) Representative days in vitro 2 (DIV2) cortical neurons expressing plasmids with cytoplasmic GFP and 6X-His-tagged TUBA1A-WT, -V409I, and -V409A. Cells stained with tyrosinated tubulin and acetylated tubulin. Scale bar = 10 µm. (B) Quantification of acetylated tubulin fluorescence intensity or tyrosinated tubulin (C) binned in two, 10 µm segments at the distal end of the axon tip. Images were acquired in three independent experiments; n=61 cells for wild-type (WT), n=54 for V409I, n=59 for V409A. Each dot represents the quantification from one cell. Bars are mean ± 95% confidence interval. Statistical analysis between multiple groups was analyzed by two-way ANOVA and corrected for multiple comparisons post hoc by Tukey test. All statistics with p≤0.05 are indicated on graph. (D) Calculated ratio of acetylated tubulin over tyrosinated tubulin measurements displayed in (B) and (C). (E) Example image of DIV2 cortical neuron co-expressing TUBA1A-WT and GFP-MACF43. Scale bar = 10 µm. (F) Quantification of the number of microtubule polymerization events that occur in each cell over the course of 4 min. Images were obtained from three independent experiments; n=19 cells for WT, n=18 for V409I, n=19 for V409A. Each dot represents one cell. Bars represent mean ± 95% confidence interval. Statistical analysis for panels F–H was done using an unpaired t-test. All statistics with p≤0.05 are indicated on graph. (G) Quantification of microtubule polymerization rates measured from GFP-MACF43 comets. Each dot represents the rate of one microtubule polymerization rate. Larger dots outlined in black indicate the average of all polymerization rates from the three independent experiments where these images were obtained. (H) Quantification of GFP-MACF43 comet lifetime in seconds.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76189/elife-76189-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Example line scan from one TUBA1A-WT (A), -V409I (B), and -V409A (C) neuron measuring the fluorescence intensity along the distal 10 µm of the axon and the next proximal 10 µm. Acetylated tubulin values are in magenta and tyrosinated tubulin values are in aqua. (D) Quantification of acetylated tubulin fluorescence intensity or tyrosinated tubulin (E) binned in two, 5 µm segments at the distal end of a dendrite tip. Images were acquired in three independent experiments; n=61 for wild-type (WT), n=54 for V409I, n=59 for V409A. Each dot represents the quantification from one cell. Bars are mean ± 95% confidence interval. Statistical analysis between multiple groups was analyzed by two-way ANOVA and corrected for multiple comparisons post hoc by Tukey test. All statistics with p≤0.05 are indicated on graph. (F) Calculated ratio of acetylated tubulin over tyrosinated tubulin measurements displayed in (D) and (E).
+
 We next asked whether the changes observed in microtubule acetylation are attributable to altered microtubule dynamics in these neurons. To test this we measured microtubule polymerization events in living cells by transfecting cultured cortical neurons with pCIG2 constructs that co-express TUBA1A-WT, -V409I, or -V409A along with GFP-MACF43 (Figure 3E; Figure 3—video 1; Honnappa et al., 2009). We find that the number of growing microtubule events that occur over a 4-min imaging experiment is similar across all genotypes (1846±229, 1746±217, 1785±178 polymerization events/cell/4 min for WT, V409I, V409A, respectively; Figure 3F). However, compared to WT, V409A-expressing cells have faster microtubule polymerization rates, while V409I cells have an intermediate phenotype between the two (5.2±0.1, 6.2±0.1, 6.4±0.1 µm/min for WT, V409I, V409A, respectively; Figure 3G). In addition, V409I and V409A cells have slightly but significantly shorter MACF43 comet lifetimes as compared to WT (13.8±0.2, 12.0±0.2, 12.4±0.2 s for WT, V409I, V409A, respectively; Figure 3H). We conclude that ectopic expression of TUBA1A-V409I/A mutants alters microtubule dynamics and microtubule acetylation in neurons.
 
-## Modeling TUBA1A-V409I/A mutants in budding yeast reveals altered microtubule dynamics
+### Modeling TUBA1A-V409I/A mutants in budding yeast reveals altered microtubule dynamics
 
 The α-tubulin V409 residue is highly conserved across eukaryotes (Figure 4A). To better understand the molecular impact of the TUBA1A-V409I/A mutants, we created analogous mutants at the corresponding residue in Saccharomyces cerevisiae (or budding yeast), V410. Using this system, we created strains in which all the α-tubulin expressed in the cell was either WT, V410I, or V410A. We find that compared to WT, V410I cells have no significant change in fitness, while V410A cells exhibit a slight fitness defect, as indicated by a 4.4% increase in doubling time (Figure 4—figure supplement 1A). By introducing either the V410I or V410A mutation into both α-tubulin isotypes of budding yeast (TUB1 and TUB3), we can measure the dynamics of individual microtubules that consist of a homogenous supply of either WT or mutant α-tubulin. Thus, any effect we see on dynamics would be a result of the mutant of interest as opposed to a compensatory response by alternative tubulin isotypes.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/76189/elife-76189-fig4-v3.jpg)
+
+**Figure 4.:** (A) Sequence alignment of human, mouse, and rat TUBA1A and budding yeast α-tubulins Tub1 and Tub3. Valine 409 is highlighted in yellow and resides in a highly conserved helix known as H11’. (B) Representative image of budding yeast cell with microtubule plus end binding protein Bik1 labeled with 3GFP. Scale bar = 1 µm. (C) Life plot of the dynamics of individual microtubules from wild-type (WT) (gray) and V410A (blue) cells showing the change in length over time. (D) Polymerization rates of astral microtubules. Images were obtained from three independent experiments; n=19 cells for WT, n=25 for V410I, n=19 for V409A. Each dot represents a single polymerization event. Bars are mean ± 95% confidence interval. Statistical analysis was done using a one-way ANOVA followed by a Tukey test to correct for multiple comparison tests. All statistics with p≤0.05 are indicated on graph. (E) Depolymerization rates of astral microtubules. Each dot represents a single depolymerization event. (F) Catastrophe frequency for astral microtubules expressed as the number of catastrophe events that occur per minute. Each dot represents the average catastrophe frequency of a single cell. (G) Histogram of all astral microtubule lengths from time lapse imaging of WT, V410I, and V410A cells. (H) Proportion of cells with astral microtubules after indicated time at 4°C. Symbols represent average of three independent experiments; for WT n=581 cells at 0 min, n=385 at 15 min, n=362 at 30 min, n=365 at 60 min, n=283 at 120 min; for V409I n=574 cells at 0 min, n=502 at 15 min, n=235 at 30 min, n=383 at 60 min, n=484 at 120 min; for V409A n=677 cells at 0 min, n=401 at 15 min, n=257 at 30 min, n=247 at 60 min, n=238 at 120 min. (I) Dynamicity of astral microtubules calculated as the total change in length divided by the total change in time. Each dot represents the calculated dynamicity value of a single cell. Bars are mean ± 95% confidence interval. Statistical analysis was done using a one-way ANOVA followed by a Tukey test to correct for multiple comparison tests. All statistics with p≤0.05 are indicated on graph.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76189/elife-76189-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Doubling times of cells expressing the indicated mutation at the genomic TUB1 locus. For each genotype, three technical replicates of two biological replicates were used over the course of three independent experiments; n=18 replicates for all wild-type (WT), V409I, and V409A. Bars are mean ± 95% confidence interval. Statistical analysis between multiple groups was analyzed by two-way ANOVA and corrected for multiple comparisons post hoc by Tukey test. All statistics with p≤0.05 are indicated on graph.
 
 To track the length of individual microtubules over time in cells, we used Bik1-3GFP, the yeast homologue of CLIP-170, as a marker for microtubule plus ends (Figure 4B and C). Compared to WT, we find that tub1/tub3-V410A microtubules have significantly faster polymerization rates, while tub1/tub3-V410I microtubules have intermediate rates between WT and V410A mutants (1.1±0.1, 1.5±0.1, 1.6±0.1 µm/min for WT, V410I, and V410A, respectively; Figure 4D). Similarly, tub1/tub3-V410A microtubules, and to a lesser extent -V410I microtubules, have faster depolymerization rates compared to WT (1.9±0.2, 2.3±0.2, 2.8±0.3 µm/min for WT, V410I, V410A, respectively; Figure 4E). Our data also shows that tub1/tub3-V410A microtubules exhibit very few catastrophes compared to WT, and the tub1/tub3-V410I microtubules again have an intermediate catastrophe frequency (1.216±0.105, 0.973±0.111, 0.761±0.106 events/min for WT, V410I, and V410A, respectively; Figure 4F). Accordingly, tub1/tub3-V410A mutant microtubules reach longer median lengths than either the tub1/tub3-V410I or WT microtubules (0.66, 0.68, 0.90 µm for WT, V410I, V410A, respectively; Figure 4G). Additionally, we find that astral microtubules in tub1/tub3-V410A mutant cells are retained for a longer time at 4°C than those in WT control cells, and tub1/tub3-V410I microtubules have an intermediate phenotype (Figure 4H). Summarizing these dynamics data, we find that α-tubulin-V410I/A microtubules, and particularly the tub1/tub3-V410A variant, exhibit faster microtubule polymerization rates and decrease how often the microtubule catastrophes. However, when these mutant microtubules do catastrophe, they depolymerize at a faster rate than WT.
 
 To understand how the different microtubule parameters described above work together to influence microtubule activity, we calculated the dynamicity of WT and tub1/tub3-V410I/A microtubules. Dynamicity is defined as the total change in microtubule length divided by the change in time (Jordan et al., 1993). We find that tub1/tub3-V410A microtubules have the highest dynamicity values, while tub1/tub3-V410I microtubules have an intermediate dynamicity between -V410A and WT (0.443±0.028, 0.507±0.034, 0.563±0.047 subunits/s; Figure 4I). Similar to our work in neurons, the V410A mutant has the strongest effect on microtubule dynamics while the V410I mutant has a more intermediate impact. Together, the results of modeling these patient-associated mutations in budding yeast indicate that the α-tubulin-V410I/A mutations are sufficient to alter microtubule dynamics in this system.
 
-## tub1/tub3-V410I/A microtubules have decreased localization of and affinity for XMAP215/Stu2
+### tub1/tub3-V410I/A microtubules have decreased localization of and affinity for XMAP215/Stu2
 
 Microtubule dynamics in cells are the product of both intrinsic tubulin activity and regulation by extrinsic MAPs. Therefore, we sought to determine how tub1/tub3-V410I/A affect extrinsic and/or intrinsic modes of regulation to alter microtubule dynamics. The α-tubulin V409 (human) or analogous V410 (yeast) residue resides on the external surface of the tubulin heterodimer near the binding sites of a wide variety of MAPs (Löwe et al., 2001). In particular, one structural analysis highlights the α-tubulin V410 residue as a potential interactor with the TOG2 domain of Crescerin1 (Das et al., 2015). The Crescerin1 TOG2 domain has a similar structure to the TOG1 domain of Stu2, the yeast homologue of XMAP215. Additionally, the V410 residue appears to reside at the interface between α-tubulin and the TOG1 domain of Stu2 (Figure 5A; Ayaz et al., 2012). As Stu2/XMAP215 is the major microtubule polymerase in cells, we predicted that the increase in microtubule polymerization observed in tub1/tub3-V410I/A cells could be a result of increased Stu2 activity on the mutant microtubules. To test this, we first used Stu2-3GFP to measure Stu2 localization at astral microtubule plus ends in cells where all the α-tubulin is either WT, V410I, or V410A mutant (Figure 5B). We find that tub1/tub3-V410A mutant microtubules have significantly decreased Stu2-3GFP fluorescence intensity at the plus ends compared to WT, while tub1/tub3-V410I microtubules have an intermediate phenotype between the two (3203±333, 1860±165, 1365±143 AU for WT, V410I, and V410A, respectively; Figure 5C). Thus, despite having increased microtubule polymerization rates, the tub1/tub3-V410I/A mutant microtubules have less Stu2 at microtubule plus ends.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76189/elife-76189-fig5-v3.jpg)
+
+**Figure 5.:** (A) Structure of yeast tubulin heterodimer with Stu2 TOG1 modified from PDB: 4FFB (Ayaz et al., 2012). Tub1-V409 residue displayed as yellow ball structure and labeled in zoomed in portion. (B) Representative image of budding yeast cell expressing Stu2-3GFP. Red arrow indicates Stu2 at microtubule plus end. Scale bar = 1 µm. (C) Quantification of Stu2-3GFP fluorescence intensity at microtubule plus ends. Images were acquired from three independent experiments; n=39 cells for wild-type (WT), n=42 for V410I, n=42 for V409A. Each dot represents the quantification from a single cell. Bars are mean ± 95% confidence interval. Statistical analysis was done using a one-way ANOVA followed by a Tukey test to correct for multiple comparison tests. All statistics with p≤0.05 are indicated on graph. (D) Proportion of unbound tubulin in solution in the presence of increasing concentrations of GST-TOG1/2. Data was analyzed from the α-tubulin signal on supernatant samples run on western blots. Each condition was normalized to the constant amount of tubulin added to each sample in the absence of GST-TOG1/2. Dots represent averages from three separate experiments. Bars are standard error of the mean. (E) Western blot of protein lysate from cells induced with 500 µM CuSO4 for 0 and 1.5 hr. Blots were probed for HA and Zwf1. (F) Example images of WT cells induced with 500 µM CuSO4 for 0 and 1.5 hr stained for α-tubulin. Red arrows indicate astral microtubules. Scale bar = 1 µm. (G) Quantification of proportion of cells imaged that have at least one astral microtubule. Images were acquired from three independent experiments; for WT n=1389 cells at 0 hr, n=1,525 at 1.5 hr; for V409I n=940 cells at 0 hr, n=2221 at 1.5 hr; for V409A n=1483 at 0 hr, n=1677 at 1.5 hr. Each dot represents the average proportion of cells from the three separate experiments. Bars are mean ± standard error of the mean. Statistical analysis was done using a one-way ANOVA followed by a Tukey test to correct for multiple comparison tests. All statistics with p≤0.05 are indicated on graph.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76189/elife-76189-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative western blots of wild-type (WT), V410I, and V410A samples probed for α-tubulin in the absence of glutathione beads, as well as in the presence of glutathione beads and increasing concentrations of GST-TOG1/2. (B) Representative western blot of WT cells induced with 500 µM CuSO4 for indicated number of hours. Blots were probed with HA and Zwf1 antibodies. (C) Large field representative image of WT cells in the absence of 500 µM CuSO4 stained for α-tubulin. Red arrows represent cells with at least one astral microtubule. Red stars represent cells without an astral microtubule. Scale bar = 1 µm.
 
 Stu2 comprises two TOG domains (TOG1 and TOG2) that bind specifically to free tubulin heterodimer and are necessary for concentrating tubulin at microtubule plus ends to promote microtubule polymerization. Disrupting the interaction between the Stu2 TOG2 domain and tubulin heterodimers decreases the localization of Stu2 to microtubule plus ends (Geyer et al., 2018). We therefore predicted that the decreased localization of Stu2 at tub1/tub3-V410I/A microtubule plus ends may be a result of lowered affinity between the mutant tubulins and Stu2 TOG domains. To test this prediction, we purified tubulin heterodimer from budding yeast in which the purified α-tubulin was either Tub1-WT, -V410I, or -V410A. Additionally, we purified the two TOG domains in Stu2 fused to a GST tag (referred to as GST-TOG1/2). Using a low concentration of either WT or V410I/A mutant tubulin in the presence of increasing concentrations of GST-TOG1/2, we find that V410I, and more significantly V410A, mutant tubulin has decreased affinity for GST-TOG1/2 as compared to WT (Figure 5D and Figure 5—figure supplement 1A). For reference we used previously published KD values for WT yeast tubulin affinity for either TOG1 or TOG2 to determine an expected binding curve (Geyer et al., 2015). These results indicate that the decrease in Stu2 localization we see at the tub1/tub3-V410I/A microtubule plus ends is a consequence of the decreased affinity of Stu2 TOG1/2 domains for the mutant tubulin.
 
 STU2 is an essential gene in budding yeast, presumably because of its important role in regulating microtubule dynamics (Wang and Huffaker, 1997). Based on the increased microtubule polymerization rates observed for V410I/A microtubules, and the decreased affinity between V410I/A and Stu2 TOG domains, we predicted that tub1/tub3-V410I/A microtubules would be resistant to the depletion of Stu2. To test this, we constructed tub1-V410I or -V410A yeast strains where we could conditionally deplete Stu2 (Kosco et al., 2001). Upon addition of copper to the media of these cells, synthesis of STU2 mRNA is repressed and Stu2 protein is degraded. We find that after 1.5 hr in 500 µM copper sulfate (CuSO4), Stu2-HA is almost undetectable via western blot (Figure 5D and Figure 5—figure supplement 1B). Under these conditions, the proportion of WT cells with visible astral microtubules decreases from 53% to 34% (0.526±0.036, 0.345±0.27 at 0 and 1.5 hr, respectively; Figure 5E–F, Figure 5—figure supplement 1C). In contrast, tub1-V410I and tub1-V410A cells have no significant decrease in proportion of cells that have astral microtubules after 1.5 hr of Stu2 depletion (V410I: 0.537±0.023, 0.516±0.022; V410A: 0.524±0.036, 0.588±0.011 at 0 and 1.5 hr, respectively; Figure 5E–F, Figure 5—figure supplement 1C). These data indicate that V410I and V410A microtubules persist in the absence of Stu2, and therefore the mutant tubulins may not require Stu2 polymerase activity to the same extent as WT.
 
-## Purified tub1-V410A has increased microtubule polymerization rates in vitro
+### Purified tub1-V410A has increased microtubule polymerization rates in vitro
 
 Stu2 TOG domains preferentially bind to the kinked conformation of tubulin and have low affinity for straight heterodimers (Ayaz et al., 2014; Ayaz et al., 2012). Based on our in vitro binding assays, we hypothesized that α-tubulin V410I/A heterodimers may adopt a straighter state. The V410 residue resides in helix 11’ of α-tubulin, which is located at the hinge point between α- and β-tubulin (Löwe et al., 2001), and makes it a prime candidate for affecting the conformational states of the heterodimer. We predicted that a straighter heterodimer would increase microtubule polymerization rates as a straight heterodimer is more compatible with forming the microtubule lattice. Therefore, we reasoned that if the changes observed in V410I/A microtubule dynamics are a result of a straightened heterodimer conformation, the mutants should have intrinsically faster polymerization rates in vitro.
 
@@ -83,7 +166,7 @@ To test this, we used interference reflection microscopy (IRM) to measure the in
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/76189/elife-76189-fig6-v3.jpg)
 
-**Figure 6.:** (A) Graphic depicting aggregates and non-seeded nucleation when tubulin concentrations are too high, no nucleation when concentrations are too low, and dynamic microtubules when concentrations are at an appropriate level. (B) Example kymograph of dynamic microtubule from purified budding yeast tubulin measured using interference reflection microscopy. X and Y scale bars = 5 min and 1 µm, respectively. (C) Microtubule polymerization rates at 0.5, 0.7, and 0.9 µM of tubulin. Each data point represents the mean of three independent experiments; for wild-type (WT) n=15 microtubules at 0.5 µM, n=23 at 0.7 µM, n=18 at 0.9 µM; for V410I n=12 microtubules at 0.5 µM, n=14 at 0.7 µM, n=12 at 0.9 µM; for V410A n=16 microtubules at 0.5 µM, n=20 at 0.7 µM, n=10 at 0.9 µM. Bars are mean ± 95% confidence interval. (D) Microtubule depolymerization rates.Figure 6—source data 1.Figure 6—source data 2.Internal reflection microscopy imaging of purified yeast tubulin assembling from GMPCPP-stabilized seeds made of porcine tubulin.
+**Figure 6.:** (A) Graphic depicting aggregates and non-seeded nucleation when tubulin concentrations are too high, no nucleation when concentrations are too low, and dynamic microtubules when concentrations are at an appropriate level. (B) Example kymograph of dynamic microtubule from purified budding yeast tubulin measured using interference reflection microscopy. X and Y scale bars = 5 min and 1 µm, respectively. (C) Microtubule polymerization rates at 0.5, 0.7, and 0.9 µM of tubulin. Each data point represents the mean of three independent experiments; for wild-type (WT) n=15 microtubules at 0.5 µM, n=23 at 0.7 µM, n=18 at 0.9 µM; for V410I n=12 microtubules at 0.5 µM, n=14 at 0.7 µM, n=12 at 0.9 µM; for V410A n=16 microtubules at 0.5 µM, n=20 at 0.7 µM, n=10 at 0.9 µM. Bars are mean ± 95% confidence interval. (D) Microtubule depolymerization rates.
 
 In contrast to our results in budding yeast cells, we find that purified tub1-V410I microtubules do not have significantly increased polymerization rates as compared to WT at any of the three concentrations tested (Figure 6C). However, with purified tub1-V410A tubulin, we were unable to observe microtubule dynamics at these three concentrations, nor did we observe any at higher concentrations up to 1.5 µM or lower concentrations down to 0.1 µM (data not shown). Based on our previous data, we predict that tub1-V410A tubulin exhibits increased assembly activity and would be more dynamic at lower concentrations. If tub1-V410A tubulin exhibits higher assembly activity than WT tubulin, even the low end of our usable concentration range may be too high for this mutant, and we would be unable to visualize microtubule dynamics because the mutant may readily assemble away from seeds (similar to top panel of Figure 6A). To circumvent these issues while still testing the intrinsic capabilities of tub1-V410A, we mixed WT and tub1-V410A tubulin in a one-to-one ratio, for a total tubulin concentration of 0.5, 0.7, or 0.9 µM. At this WT:V410A one-to-one ratio, we find an increase in microtubule polymerization rates at each concentration tested (Figure 6C). Since the amount of either WT or V410A tubulin that is present in each of these one-to-one mixtures (i.e., 0.25, 0.35, or 0.45 µM) is not sufficient to support microtubule assembly on its own, we conclude that the increased microtubule polymerization is a synergistic effect of the blend of WT and V410A mutant tubulin.
 
@@ -115,53 +198,294 @@ We propose a model in which the V409I/A mutants are intrinsically altered in a w
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>TUBA1A</td>
+      <td>NCBI</td>
+      <td>Gene ID: 7846</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>TUB1</td>
+      <td>Saccharomyces genome database</td>
+      <td>SGD:S000004550</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>TUB3</td>
+      <td>Saccharomyces genome database</td>
+      <td>SGD:S000004593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>In utero electroporation coronal brain slices</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Coronal slices of E18.5 mouse brains</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Rattus norvegicus)</td>
+      <td>Primary cortical rat neurons</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cortices obtain from P0-P2 rats</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCIG2-TUBA1A-6X-His</td>
+      <td>Buscaglia et al., 2020a</td>
+      <td></td>
+      <td>Human TUBA1A plasmids transfected in mouse or rat neurons</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCIG2-TUBA1A-IRES-GFP-MACF43</td>
+      <td>Aiken et al., 2019</td>
+      <td></td>
+      <td>Plasmid to co-express human TUBA1A and GFP-MACF43 in rat neurons</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TUBA1A-V409A F QC</td>
+      <td>This paper</td>
+      <td>PCR primer; p674</td>
+      <td>ctttgttcactggtacgctggggaggggatg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TUBA1A-V409A R QC</td>
+      <td>This paper</td>
+      <td>PCR primer; p675</td>
+      <td>catcccctccccagcgtaccagtgaacaaag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TUBA1A-V409I F QC</td>
+      <td>This paper</td>
+      <td>PCR primer; p986</td>
+      <td>cctttgttcactggtacattggggaggggatgg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TUBA1A-V409I R QC</td>
+      <td>This paper</td>
+      <td>PCR primer; p987</td>
+      <td>ccatcccctccccaatgtaccagtgaacaaagg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tub1-V410A F</td>
+      <td>This paper</td>
+      <td>PCR primer; p545</td>
+      <td>CGTCCACTGGTATGCCGGTGAAGGTATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tub1-V410A R</td>
+      <td>This paper</td>
+      <td>PCR primer; p546</td>
+      <td>CATACCTTCACCGGCATACCAGTGGACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tub1-V410I F</td>
+      <td>This paper</td>
+      <td>PCR primer; p1018</td>
+      <td>cgtgctttcgtccactggtatatcggtgaaggt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tub1-V410I R</td>
+      <td>This paper</td>
+      <td>PCR primer; p1019</td>
+      <td>accttcaccgatataccagtggacgaaagcacg</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Amaxa rat nucleofector kit</td>
+      <td>Lonza</td>
+      <td>VPG-1003</td>
+      <td>For transfecting primary cortical neurons</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetylated tubulin (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>T7451</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosinated tubulin (rat monoclonal)</td>
+      <td>Sigma</td>
+      <td>MAB1864-I</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-6X-His (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>4A12E4 37–2900</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta II tubulin (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab179512</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG AF568 (goat polyclonal)</td>
+      <td>Thermo</td>
+      <td>A-11011</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat IgG AF568 (goat polyclonal)</td>
+      <td>Thermo</td>
+      <td>A-11077</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG AF647 (goat polyclonal)</td>
+      <td>Thermo</td>
+      <td>A32728</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI fluoromount-G</td>
+      <td>Southern Biotech</td>
+      <td>0100–20</td>
+      <td>Used in Figure 1C and D</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX6p1-GST-STU2 1–590</td>
+      <td>Widlund et al., 2012</td>
+      <td></td>
+      <td>Expression of GST-fused Stu2 TOG1/2 domains</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS426-GAL-Tub1-internal 6X-His</td>
+      <td>Johnson et al., 2011</td>
+      <td></td>
+      <td>Overexpress α-tubulin in yeast</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS424-GAL-Tub2 (untagged)</td>
+      <td>Johnson et al., 2011</td>
+      <td></td>
+      <td>Overexpress β-tubulin in yeast</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Jel1</td>
+      <td>Lindsley and Wang, 1993</td>
+      <td></td>
+      <td>Protease deficient yeast strain used for expressing tubulin for purification</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YEF473</td>
+      <td>Bi and Pringle, 1996</td>
+      <td></td>
+      <td>Lab yeast strain used for all genetic and cell biology experiments</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Stu2 depletion strains</td>
+      <td>Kosco et al., 2001</td>
+      <td>In this paper, y4835, y4836</td>
+      <td>Depletion of Stu2 from strain upon addition of 500 µM CuSO4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td>Competent bacterial cells</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>U-Track</td>
+      <td>Applegate et al., 2011</td>
+      <td></td>
+      <td>Tracking microtubule plus ends in Figure 3E–H</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Animal research was performed following regulations approved by the Institutional Animal Care and Use Committee at the University of Colorado School of Medicine. All mouse tissue experiments described below were from C57BL/6J WT pregnant mice (Jackson Laboratories Strain #000664). All dissociated neuron cultures described below were prepared from Sprague-Dawley rats. Dissociated cultures were obtained from both male and female pups.
 
-## TUBA1A plasmid vectors
+### TUBA1A plasmid vectors
 
 Plasmids used in this study are listed in Appendix 1—table 1. The plasmids were constructed using the methods described in Aiken et al., 2019. Briefly, the coding region of the human TUBA1A gene was cloned into the multiple cloning site of the pCIG2 plasmid that expresses cytoplasmic GFP from an internal ribosome entry site (IRES) (Hand et al., 2005). QuikChange Lightning Site-Directed Mutagenesis Kit (Agilent Technologies, Santa Clara, CA) was used to introduce either the p.V409A or p.V409I substitution into TUBA1A. All plasmids have the 6X-His tag inserted between residues I42 and G43. Mutants were confirmed by sequencing. Oligos used for plasmid constructions are listed in Appendix 1—table 3.
 
-## In utero electroporation
+### In utero electroporation
 
 In utero electroporations were performed on E14.5 embryos of C57BL/6J WT pregnant mice. Plasmid DNA was endotoxin-free and prepared with 0.1% fast green dye and had a final concentration of 1 µg/µl in TE buffer (10 mM Tris base and 1 mM EDTA, pH 8.0). Plasmid DNA was injected into the lateral ventricles of the exposed embryos and electroporated with 5 pulses at 50 V for 100 ms pulses each, separated by 950 ms. All embryos developed to E18.5, then brains were dissected and fixed overnight at 4°C in 4% paraformaldehyde (PFA). A vibrating microtome (VT1200S; Leica, Buffalo Grove, IL) was used for 50 µm thick coronal sections. Sections were mounted on glass slides, then imaged on a spinning disk confocal microscope with a 20× objective. Analysis includes at least three animals, both male and female, per condition. High-resolution, zoomed in images of ventricular/subventricular and intermediate zones were taken on a Stellaris 5 confocal microscope with a 63× oil objective and 5 HydS tunable detectors (Leica).
 
-## Primary cortical neuron cultures
+### Primary cortical neuron cultures
 
 The frontal cortex was dissected from postnatal days 0–2 male and female neonatal Sprague-Dawley rats. Cortices were digested at room temperature for 1 hr using papain solution composed of 20 units/ml papain (Worthington Biochem, LS003126), 1.5 mM CaCl2 (Sigma-Aldrich, 223506), 0.5 mM EDTA (Fisher Scientific, BP118-500), 1 mM NaOH (Fisher Scientific, BP359-500), and 0.2 mg/ml cysteine (Sigma-Aldrich, C6852) in 10 ml saline. Digested cortices were washed six times with Minimal Essential Media (MEM) (Life Technologies, Carlsbad, CA, 11090-081). Cortices were dissociated with a wide-bore fire-polished pipette, followed by dissociation with a narrow-bore polished pipette. pCIG2-TUBA1A-6X-His or pCIG2-TUBA1A-IRES-GFP-MACF43 (either WT, V409I, or V409A) plasmids (4 µg) were introduced to 4 × 106 dissociated neurons using Amaxa rat nucleofector kit (Lonza Bioscience, VPG-1003). Amaxa-nucleofected neurons plated at 500,000 cells per 35 mm poly-D-lysine-coated glass bottom dish (WillCo Wells, HBST-3522) in MEM containing 10% fetal bovine serum (FBS) (Sigma-Aldrich, F4135), 1% penicillin/streptomycin (Gibco, 15070-063), and 25 µM L-glutamine (Gibco, 25030081). Following 2 hr in culture, media was replaced with supplemented FBS. At 24 hr after plating, media was replaced with Neurobasal-A (NBA) (Life Technologies, 10888-022), 2% B27 (Gibco, 17504-044), and 10 µM uridine/fluoro-deoxyuridine (Sigma-Aldrich, U3003/F0503). Neurons were maintained in a 37°C humidified incubator with 5% CO2.
 
-## Neuron immunocytochemistry
+### Neuron immunocytochemistry
 
 DIV1 or DIV2 primary cortical neurons were washed with phosphate-buffered saline (PBS) (Gibco, 10010023) followed by PHEM buffer, which contains 60 mM PIPES (Sigma-Aldrich, P6757), 25 mM HEPES (Sigma-Aldrich, H3375), 10 mM EGTA (Sigma-Aldrich, E3889), and 2 mM MgCl2 (Acros, 223211000). Soluble tubulin dimers were extracted using 0.1% Triton-X (Sigma-Aldrich, T9284) with 10 µM taxol (LC Labs, P-9600) and 0.1% DMSO (Fisher, M-1739) in PHEM buffer. Cells were fixed with 4% PFA (Sigma-Aldrich, 158127) and 0.1% glutaraldehyde (Sigma-Aldrich, G7776) in PBS for 10 min at room temperature, washed with PBS, then blocked with blocking buffer, 3% BSA (Fisher, 50-253-893) and 0.2% Triton-X in PBS. Cells were reduced with 10 mg/ml sodium borohydride (Fisher, S678-10) in an equal mixture of PBS and methanol (Acros, 177150050) for 7 min at room temperature, then washed three times with PBS. Cells were incubated with blocking buffer for 20 min at room temperature. Immunostaining was performed using a primary antibody directed against 6X-His (Invitrogen, 4A12E4 37-2900; 1:500), β-II tubulin (Abcam, ab179512; 1:500), acetylated tubulin (Sigma, T7451; 1:1000), tyrosinated tubulin (Sigma, MAB1864-I; 1:1000). Primary antibody was diluted in blocking buffer and incubated overnight at 4°C in a humidified chamber. After primary antibody staining, cells were washed three times with PBS. The secondary antibodies goat anti-rabbit IgG Alexa Fluor 568 (Thermo, A-11011), goat anti-rat IgG Alexa Fluor 568 (Thermo, A-11077), or goat anti-mouse IgG Alexa Fluor 647 (Thermo, A32728) were diluted 1:200 in blocking buffer and 1% normal goat serum (Vector Laboratories, S-1000-20) and incubated for 2 hr at room temperature in a dark container. Cells were sealed with glass coverslips and aqueous mounting media containing DAPI (Vector Laboratories, H-1200), then imaged on a spinning disk confocal microscope with a 40× oil objective (see details below). Statistical analysis between multiple groups were analyzed by two-way ANOVA and analyzed post hoc by Tukey test.
 
-## Neuron cold temperature shock
+### Neuron cold temperature shock
 
 The media of DIV1 neuron cultures (as described above) was replaced with Neurobasal-A (NBA) (Life Technologies, 10888-022), 2% B27 (Gibco, 17504–044), and 10 µM uridine/fluoro-deoxyuridine (Sigma-Aldrich, U3003/F0503). The dishes were then placed at 4°C for the desired time. At each time point, dishes were removed from 4° C and placed on ice while following the fixing protocol described above.
 
-## Neuron morphology and PTMs analysis
+### Neuron morphology and PTMs analysis
 
 All images were analyzed using ImageJ (National Institute of Health) and the NeuronJ plugin (Meijering et al., 2004). Neuron processes were defined as primary, secondary, or tertiary, then quantified for each cell analyzed. PTM fluorescent signals were quantified from each cell by measuring line scans along processes. For axons, the data were binned by 0–10 and 10–20 µm from the distal axonal tip. Similarly for dendrites, the data were by binned by 0–5 and 5–10 µm from the distal dendritic tip. The dendrite used for analysis was chosen as the one immediately counter-clockwise of the axon. For consistency within each individual cell, the line scans were first traced using cytoplasmic GFP signal, saved, and then used to measure signal from the immunofluorescent staining for the tubulin PTMs in different channels. A two-way ANOVA analyzed post hoc by Tukey test was used for statistical analyses between multiple groups.
 
-## Neuron microtubule dynamics
+### Neuron microtubule dynamics
 
 Cortical neuron cultures were transfected with pCIG2 plasmids co-expressing TUBA1A and GFP-MACF43 as described above. DIV2 cells were kept at 37°C and 5% CO2 via a LiveCell incubator (Pathology Devices, Inc) during image acquisition. Images were acquired on an inverted microscope (Ti Eclipse) with a 100× Plan-Apochromat (NA 1.43) objective lens (Nikon) and a spinning disk (Yokogawa X1). Images were captured with a charge-coupled device camera (iXon X3; Andor Technology). All images were acquired with SlideBook (3i). A Z-series covering a 5 µm range at 0.5 µm steps was acquired every 2.2 s for 4 min. MACF43-comets were analyzed using the UTrack software (Applegate et al., 2011). Statistical analysis was done using an unpaired t-test.
 
-## Yeast microtubule dynamics
+### Yeast microtubule dynamics
 
 Microtubule dynamics were analyzed in log-phase, pre-anaphase yeast cells in which all the α-tubulin in the cell was either WT, V410I, or V410A. The mutants were integrated at the native TUB1 and TUB3 loci. Microtubule plus ends were identified by Bik1-3GFP. Images were collected on a Nikon Ti-E microscope equipped with a 1.45 NA 100× CFI Plan Apo objective, piezo electric stage (Physik Instrumente, Auburn, MA), spinning disk confocal scanner unit (CSU10; Yokogawa), 488 and 561 nm lasers (Agilent Technologies, Santa Clara, CA), and an EMCCD camera (iXon Ultra 897; Andor Technology, Belfast, UK) using NIS Elements software (Nikon). Cells were grown asynchronously to early log-phase in non-fluorescent media and adhered to slide chambers coated with concanavalin A. Slide chambers were sealed with VALAP (Vaseline, lanolin, and paraffin at 1:1:1). Z-series consisting of a 7 µm range at 0.4 µm steps were acquired every 4 s for 10 min at 30°C. Astral microtubule lengths were measured in each frame as the distance from the spindle pole body to the microtubule plus end. Cell genotypes were blinded for analysis. Statistical analysis was done using a one-way ANOVA followed by a Tukey test to correct for multiple comparison tests.
 
-## Stu2 localization
+### Stu2 localization
 
 Analysis was done in log-phase, pre-anaphase budding yeast cells expressing either tub1/tub3-WT, V410I, or V410A, as well as Stu2-3GFP. The tubulin mutations and the fluorescent tagging of Stu2 were done at the endogenous loci. Short time-lapse images, every 5 s for 30 s, were collected on a spinning disc confocal microscope with a 100× oil objective, using Z-series consisting of 0.4 µm steps over a total range of 7 µm. Stu2-3GFP fluorescence intensity was measured at the plus ends of growing astral microtubules by defining a 182 nm2 region. A region of the same size and adjacent to the Stu2-3GFP foci was also measured and subtracted from the Stu2-3GFP intensity value to account for background fluorescence. Statistics represent values from a one-way ANOVA corrected for multiple comparison by a Tukey test.
 
-## GST-TOG1/2 purification
+### GST-TOG1/2 purification
 
 Purification of GST-TOG1/2 followed previously described methods and is described briefly below (Reusch et al., 2020; Widlund et al., 2012). The pGEX-6P-1 Stu2 1–590 plasmid was transformed into BL21 cells and colonies were grown on an LB plate containing 100 µg/ml carbenicillin and 15 µg/ml chloramphenicol at 37°C. A colony was inoculated overnight at 37°C in MDAG-135 media (25 mM Na2HPO4, 25 mM KH2PO4, 50 mM NH4Cl, 5 mM Na2SO4, 2 mM MgSO4, 0.2× metals, 0.35% glucose, 0.1% aspartate, 200 µg/ml each of 18aa (no C, Y)) containing 100 µg/ml carbenicillin and 15 µg/ml chloramphenicol (Studier, 2005). The following day the colony was diluted 500-fold in 1 l of Terrific Broth media (Fisher, BP2468-2) with 100 µg/ml carbenicillin and 15 µg/ml chloramphenicol and grown at 37°C until the OD600 reached approximately 0.5. The cultures were shaken at 18°C for 1 hr, then induced with 0.2 mM isopropyl β-D-1-thiogalactopyranoside for 18 hr (Fisher, BP1620-1). Following induction cells were pelleted at 6200× g for 10 min at 6°C and resuspended in a 1:1 ratio with a buffer consisting of 2× PBS, 1 mM dithiothreitol (DTT), 20 µl benzonase (25 U/µl), and 1× protease inhibitors (2 cOmplete EDTA-free Tablets per 100 ml; Roche, 04693132001). The cells were lysed by two passes through a microfluidizer at 1500 bar. Cell lysate was then clarified by spinning at 12,000 rpm for 30 min at 4°C.
 
 A 5 ml GSTrap HP column (GE, 17-5282-01) was pre-equilibrated with 5 column volumes (CV) of wash buffer (2× PBS, 1 mM DTT) at 1 ml/min. The clarified lysate was then loaded onto the column at 0.5 ml/min. The following washes were all done at 1 ml/min. The column was washed with 10 CV of wash buffer with 0.1% Tween 20, then 2 CV of 2× PBS with 5 mM ATP and 10 mM MgCl2. The column incubated in this buffer for 20 min. The column was then washed with 5 CV of 6× PBS, followed by 5 CV of wash buffer. GST-TOG1/2 was eluted from the column in 1 ml fractions into a deep 96-well plate with wash buffer plus 5 mM reduced glutathione, pH 8.0. The eluted fractions were run on a gel and stained with Coomassie. Fractions containing GST-TOG1/2 were pooled and dialyzed against three changes (after 2 hr, overnight, then another 2 hr) of coupling buffer (100 mM NaHCO3, 100 mM NaCl, pH 8.2) at 4°C. The dialyzed sample was concentrated in 0.5 ml centrifuge concentrating filters (Sigma Z677108) that had been pre-equilibrated with coupling buffer. GST-TOG1/2 was concentrated to 14.5 µM and stored in 25 µl aliquots at –80°C.
 
-## Yeast tubulin purification
+### Yeast tubulin purification
 
 Purification of yeast tubulin was based on previously described methods with slight modifications (Johnson et al., 2011). Protease deficient yeast cells (JEL1) were transformed with pRS426-GAL-Tub1-internal 6X-His and pRS424-GAL-Tub2 (untagged) (Lindsley and Wang, 1993). tub1-V410I and -V410A mutants were constructed in the pRS426-GAL-Tub1-internal 6X-His plasmid with QuikChange XL. Cells were grown in five or six 5 ml cultures of selection media (-ura -trp) supplemented with 2% glucose for either 3 or 2 days, respectively, at 30°C. Five ml cultures were then transferred to 50 ml cultures of the same media to grow for 24 hr. Cultures were then transferred to 1 l cultures of YPGL, consisting of 10 g yeast extract (Fisher, BP1422), 20 g peptone (Fisher, BP1420), 30 ml glycerol (Fisher, G33), and 33 ml lactate (Sigma, L1375). Yeast extract, peptone, and 850 ml ddH2O was combined and autoclaved the day before it was needed. The glycerol and lactate were added immediately after media came out of the autoclave, then allowed to cool at room temperature overnight. After 20–24 hr of growing in 1 l cultures and the OD600 was between 5.0 and 9.0, 1 l of cells was induced with 20 g galactose (Chem-Impex, 01449) for 5 hr. Cells were spun down at 4°C for 15 min at 4000 rpm (3040 RCF) in a J6 centrifuge (Beckman Coulter Life Sciences). Supernatant was discarded and pellets were stored in 15 ml conical tubes in –80°C. This process was done three times for a total of approximately 100 g of cells before moving on to purification.
 
@@ -171,22 +495,22 @@ Elution fractions from the Ni column were thawed in a room temperature water bat
 
 Amicon ultra 0.5 ml centrifuge concentrating filters with a 10 kDa cutoff (Sigma, Z677108) were prepared with two rounds of 0.4 ml 1% Triton X-100, ddH2O, and PEM (0.1 M PIPES, 1 mM EGTA, 1 mM MgCl2) spinning at 800 RCF for 5 min at 4°C. Up to 0.450 ml of pure tubulin sample was applied to the concentrating filters and spun at 4°C at 800 RCF for anywhere between 2 and 5 min, depending on the concentration of the sample. The concentration was checked after each spin on a Take3 Micro-volume Plate (BioTek) using 260 and 280 nm absorbance to ensure that the concentration was increasing but aggregates were not forming. Samples were constantly kept on ice or at 4°C and concentrated to 2.2 µM (tub1-V410I), 2.3 µM (tub1-V410A), and 3 µM (TUB1). Concentrated protein samples were run through a Zeba spin 2 ml desalting column (Thermo, 89890) that was prepared by spinning at 1000 RCF for 2 min at 4°C to remove storage buffer, then washed three times with 0.4 ml PEM. Up to 0.7 ml of concentrated sample was added to each desalting column, then spun down at 1000 RCF for 2 min at 4°C. The flow-through sample was supplemented with 50 µM GTP, aliquoted into 20 µl samples that were flash frozen in liquid nitrogen, and stored at –80°C. At least two separate rounds of purifications were used as technical replicates for in vitro assays that used this purified tubulin.
 
-## TOG binding assay
+### TOG binding assay
 
 Pierce Glutathione Magnetic Agarose Beads (Thermo, 78602) were used to separate purified GST-TOG1/2 (above) and anything bound in complex with TOG1/2 from the rest of the reaction; 100 µl of bead slurry (equates to 25 µl settled beads) were equilibrated twice with 40 µl wash buffer (125 mM Tris-HCl, 150 mM KCl, 1 mM DTT, 1 mM EDTA, pH 7.4) by vortexing for 10 s and removing buffer by placing tube on magnetic stand. In separate tubes, 100 nM tubulin (WT, V410I, or V410A; purification described above) was mixed with a range of GST-TOG1/2 concentrations (from 9.8 nM to 5 µM) at 4°C for 15 min. Reaction was added to the equilibrated beads and rotated at 4°C for 1 hr. Tubes were placed on magnetic stand and supernatant was collected. The supernatant was prepared with Laemmli sample buffer and β-mercaptoethanol and loaded onto a 10% SDS-PAGE gel. The gel was transferred to a PVDF membrane (Millipore, IPFL85R), blocked with a PBS Blocking Buffer (LI-COR, 927–70001) at room temperature for 1 hr, and probed with mouse anti-α-tubulin (4A1; 1:100) or mouse anti-β-tubulin (E7; 1:100) overnight at 4°C. The following day the membranes were washed once for 5 min with 1× PBS, then incubated at room temperature in the dark for 1 hr with goat anti-mouse-680 (LI-COR, 926-68070; 1:15,000). Membranes were washed twice with 1× PBST, then once with 1× PBS before imaging on an Odyssey Imager (LI-COR, 2471). Both α- and β-tubulin band intensity was analyzed using Image Studio v5.2 (LI-COR). Tubulin band intensity represents the amount of tubulin in solution that is not bound to GST-TOG1/2.
 
-## Stu2 depletion and yeast immunofluorescence
+### Stu2 depletion and yeast immunofluorescence
 
 Stu2 depletion strains originally constructed from Kosco et al. were graciously gifted from Dr Tim Huffaker (Kosco et al., 2001). Strains were modified to mutate the endogenous TUB1 locus to either V410I or V410A using site-directed mutagenesis. Cells were grown to log-phase, then induced with 500 µM cupric sulfate for 1.5 hr at 30°C. The following fix and staining protocol was adapted from Miller, 2004, as described. Cells were fixed with 3.7% formaldehyde (Sigma-Aldrich, 252549) at 30°C for 2 hr, then spun down at 3000 rpm for 3 min. Pellet was washed twice with wash buffer (40 mM KPO4, pH 6.5), then stored overnight at 4°C. The pellet was washed twice with wash buffer plus 1.2 M sorbitol. Fixed cells were digested with 10 µl of 20T 50 mg/ml zymolyase (Nacali Tesque, 07663-91) and 15 µl β-mercaptoethanol (Sigma-Aldrich, M3148) for 45 min at 37°C. Digested cells were spun down at 2000 rpm for 3 min, washed once with wash buffer plus 1.2 M sorbitol, then resuspended in 20 µl wash buffer plus 1.2 M sorbitol. Twenty µl of cells were spotted onto each well of a Teflon-coated 10-well slide (Polysciences, 18357) that had been pre-treated with 10 ng/µl poly-L-lysine. Cells adhered for 10 min at room temperature. Liquid was aspirated off before immediately permeabilizing the cells in a coplin jar of cold methanol for 6 min, followed by immersing the slide in cold acetone for 30 s. Cells were blocked at room temperature for 1 hr in blocking buffer (1× PBS + 0.5% BSA), then incubated overnight at 4°C in a humid chamber with mouse anti-α-tubulin (4A1; 1:100 in blocking buffer). Wells were washed four times for 10 min with blocking buffer, then incubated at room temperature for 1 hr in a dark humid chamber with goat anti-mouse IgG-Alexa488 (Invitrogen, A11001). Cells were washed four more times with blocking buffer. DAPI mounting solution (Vector Laboratories, H-1200) was added to the slide, then imaged on widefield microscope with a 100× oil objective. Statistical analysis was done using a two-way ANOVA corrected for multiple comparison by a Tukey test.
 
-## Yeast growth assays
+### Yeast growth assays
 
 For liquid growth assays, saturated cultures were diluted 1:500 in rich media. In a 96-well plate 200 µl/well was used. OD600 values were measured on an Epoch 2 Microplate Spectrophotometer (BioTek #EPOCH2NS) every 5 min for at least 19 hr at 30°C with orbital shaking. The doubling time was calculated by fitting the measured OD600 values to an exponential curve using a MATLAB code that has previously been described (Fees et al., 2016). The doubling times have been normalized to WT cells. A two-way ANOVA was used to compare across multiple groups and corrected post hoc by a Tukey test.
 
-## 4°C temperature shock in yeast
+### 4°C temperature shock in yeast
 
 Cells expressing either TUB1/TUB3, tub1/tub3-V410I, or tub1/tub3-V410A along with GFP-Tub1, GFP-Tub1-V410I, or GFP-Tub1-V410A, respectively, were grown overnight at 30°C in rich liquid media. The following day the cells were diluted in fresh media and grown to log-phase. The log-phase cultures were then transferred to a shaker at 4°C for the indicated amount of time. Cells were fixed at 4°C with 3.7% formaldehyde and 0.1 M KPO4 for 3 min. Cells were pelleted on a desktop centrifuge and supernatant was discarded. The pellet was resuspended in quencher solution (0.1% Triton-X, 0.1 M KPO4, 10 mM ethanolamine). The cells were pelleted and washed twice with 0.1 M KPO4. Imaging chamber slides were coated with concanavalin A and washed with 0.1 M KPO4 before loading fixed cells into the chambers and sealed with VALAP (Vaseline, lanolin, and paraffin at a 1:1:1 ratio) (Fees and Moore, 2018).
 
-## In vitro dynamics analysis using IRM
+### In vitro dynamics analysis using IRM
 
 IRM was used to measure microtubule dynamics of unlabeled purified tubulin. Chambers were assembled with two different sized coverslips, 22 mm × 22 mm and 18 mm × 18 mm, that were silanized and plasma cleaned. Three strips of single ply parafilm were melted between the coverslips to create two chambers on a custom-made stage insert. Anti-rhodamine antibody (Life Technologies, A6397) was diluted 1:100 in cold BRB80 (80 mM PIPES, 1 mM MgSO4, 1 mM EGTA), flowed into the chamber, then sat at room temperature for 5 min. The antibody was then washed out with room temperature BRB80. Chambers were flushed with 1% pluornic-F127 in BRB80 and incubated in this buffer for 5 min, then washed out with room temperature BRB80. The stage insert was placed in the scope enclave to equilibrate at 30°C for 30 min. GMPCPP-stabilized microtubule seeds that attached to the anti-rhodamine antibody on the coverslips were flowed into the chamber where they settled for 30 s before washing out with room temperature BRB80. The chambers were washed with reaction buffer that contained no tubulin (1× PEM, 0.1% methyl cellulose, 1 mM GTP, 0.1 mg/ml BSA) before adding the reaction buffer along with 0.3–0.9 µM tubulin. The chamber was then sealed with VALAP. The reaction in the chamber was equilibrated on the widefield microscope for 20 min at 30°C to prevent drifting during imaging. Following the equilibration period, images were collected every second for 1 hr in the IRM channel (Mahamdeh et al., 2018). The 561 nm channel was also collected for the first frame to mark the GMPCPP-stabilized seeds. ImageJ was used for analyzing microtubule dynamics by generating kymographs of individual microtubules.

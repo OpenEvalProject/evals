@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04q9qf557 Department of Anatomy and Neurobiology and Hearing Research Group, Northeast Ohio Medical University Rootstown United States
-2. https://ror.org/049pfb863 School of Biomedical Sciences, Kent State University Kent United States
-3. https://ror.org/049pfb863 Brain Health Research Institute, Kent State University Kent United States
+1. Department of Anatomy and Neurobiology and Hearing Research Group, Northeast Ohio Medical University Rootstown United States ([ROR:04q9qf557](https://ror.org/04q9qf557))
+2. School of Biomedical Sciences, Kent State University Kent United States ([ROR:049pfb863](https://ror.org/049pfb863))
+3. Brain Health Research Institute, Kent State University Kent United States ([ROR:049pfb863](https://ror.org/049pfb863))
 
 † Corresponding author
 
@@ -35,9 +35,52 @@ To study how vocalizations affect behaviors and release of neurochemicals within
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88838/elife-88838-fig1-v1.jpg)
 
-**Figure 1.:** (A) Short sample of mating vocal sequence used in playback experiments. Recording was obtained during high-intensity mating interactions and included ultrasonic vocalizations (USVs), likely emitted by the male, as well as low-frequency harmonic (LFH) calls likely emitted by the female. (B) Short sample of restraint vocal sequence used in playback experiments. Recording was obtained from an isolated, restrained mouse (see Material and methods) and consisted mostly of mid-frequency vocalization (MFV) syllables. (C) Syllable types in mating playback sequences differ substantially from those in restraint playback sequences. Percentages indicate frequency-of-occurrence of syllable types across all examplars used in mating or restraint vocal stimuli (nMating = 545, nRestraint = 622 syllables). See also Figure 1—source data 1. (D) Experimental design in playback experiment. Days 1 and 2: each animal experienced restraint and mating behaviors (counterbalanced order across subjects). Day 2: a microdialysis guide tube was implanted in the brain above the BLA. Day 6: the microdialysis probe was inserted through guide tube into the BLA. Playback experiments began after several hours of habituation/equilibration. Behavioral observations and microdialysis sampling were obtained before, during, and after playback of one vocalization type. Microdialysis samples were analyzed using liquid chromatography/mass spectrometry (LC/MS) method described in Materials and methods. (E) Schematic illustration of detailed sequencing of vocal stimuli, shown here for mating playback. A 20-min period of vocal playback was formed by seven repeated stimulus blocks of 170 s. The stimulus blocks were composed of five vocal exemplars (each represented by a different color) of variable length, with each exemplar followed by an equal duration of silence. Stimuli during the Stim 1 and Stim 2 playback windows thus included identical blocks but in slightly altered patterns. See Material and methods for in-depth description of vocalization playback.Figure 1—source data 1.Figure 1C.
+**Figure 1.:** (A) Short sample of mating vocal sequence used in playback experiments. Recording was obtained during high-intensity mating interactions and included ultrasonic vocalizations (USVs), likely emitted by the male, as well as low-frequency harmonic (LFH) calls likely emitted by the female. (B) Short sample of restraint vocal sequence used in playback experiments. Recording was obtained from an isolated, restrained mouse (see Material and methods) and consisted mostly of mid-frequency vocalization (MFV) syllables. (C) Syllable types in mating playback sequences differ substantially from those in restraint playback sequences. Percentages indicate frequency-of-occurrence of syllable types across all examplars used in mating or restraint vocal stimuli (nMating = 545, nRestraint = 622 syllables). See also Figure 1—source data 1. (D) Experimental design in playback experiment. Days 1 and 2: each animal experienced restraint and mating behaviors (counterbalanced order across subjects). Day 2: a microdialysis guide tube was implanted in the brain above the BLA. Day 6: the microdialysis probe was inserted through guide tube into the BLA. Playback experiments began after several hours of habituation/equilibration. Behavioral observations and microdialysis sampling were obtained before, during, and after playback of one vocalization type. Microdialysis samples were analyzed using liquid chromatography/mass spectrometry (LC/MS) method described in Materials and methods. (E) Schematic illustration of detailed sequencing of vocal stimuli, shown here for mating playback. A 20-min period of vocal playback was formed by seven repeated stimulus blocks of 170 s. The stimulus blocks were composed of five vocal exemplars (each represented by a different color) of variable length, with each exemplar followed by an equal duration of silence. Stimuli during the Stim 1 and Stim 2 playback windows thus included identical blocks but in slightly altered patterns. See Material and methods for in-depth description of vocalization playback.
 
 We next asked whether these salient vocal stimuli, associated with very different behavioral states, could elicit distinct behaviors and patterns of neuromodulator release into the BLA. We focused on the neuromodulators ACh and DA, since previous work suggests that these neuromodulatory systems interact in the emission of positive and negative vocalizations (Rojas-Carvajal et al., 2022; Silkstone and Brudzynski, 2020). Our experiments combined playback of the vocal stimuli, behavioral tracking and observations (see Table 1 for descriptions), and microdialysis of BLA extracellular fluid in freely moving mice (Figure 1D).
+
+**Table 1.**
+ Classification of manually evaluated behaviors during playback of vocalizations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Behavior</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Abrupt attending</td>
+      <td>Sudden and quick pause in locomotion followed by abrupt change in head and body position lasting 2+ s. This behavior is accompanied by fixation of the eyes and ears during attending. Appears similar to ‘freezing’ behavior described in fear conditioning but occurs in the context of natural response to vocalizations.</td>
+    </tr>
+    <tr>
+      <td>Flinch</td>
+      <td>A short-duration twitch-like movement in response to vocal sequences, occurring at any location within arena. Unlike acoustic startle (Grimsley et al., 2015), this behavior occurs in free-moving animals in response to non-repetitive, variable-level vocal stimuli. Flinching movements are of smaller magnitude than those observed in acoustic startle.</td>
+    </tr>
+    <tr>
+      <td>Locomotion</td>
+      <td>Movement of all four limbs from one quadrant of the arena to another.</td>
+    </tr>
+    <tr>
+      <td>Rearing</td>
+      <td>A search behavior during which the body is upright and the head is elevated to investigate more distant locations.</td>
+    </tr>
+    <tr>
+      <td>Self-grooming</td>
+      <td>Licking fur and using forepaws to scratch and clean fur on head. The behavior can extend to other parts of the body.</td>
+    </tr>
+    <tr>
+      <td>Still-and-alert</td>
+      <td>Gradual reduction or lack of movement for 2+ s, during which animal appears to be listening or responding to external stimulus. Distinguished from abrupt attending by gradual onset.</td>
+    </tr>
+    <tr>
+      <td>Stretch-attend posture</td>
+      <td>A risk-assessment behavior during which hind limbs are fixed while the head, forelimbs, and the body are stretched sequentially in different directions.</td>
+    </tr>
+  </tbody>
+</table>
 
 Prior to the study, male and female mouse subjects had no experience with sexual or restraint behaviors. On the first 2 days of the experiment, mice in an experienced group (EXP, n = 31) were each exposed to 90-min sessions with mating and restraint behaviors in a counterbalanced design (Figure 1D). Mice were then implanted with a guide cannula for microdialysis. On the playback/sample collection day (Day 6), a microdialysis probe was inserted into the guide cannula. After a 4-hr period of mouse habituation and probe equilibration, we recorded behavioral reactions and sampled extracellular fluid from the BLA before (Pre-Stim) and during a 20-min playback period, divided into two 10-min stimulation/collection/observation periods that are designated Stim 1 and Stim 2 (Figure 1D, E; see also Materials and methods). Each mouse received playback of either the mating or restraint stimuli, but not both: same-day presentation of both stimuli would require excessively long playback sessions, the condition of the same probe would likely change on subsequent days, and quality of a second implanted probe on a subsequent day was uncertain. Fluids were analyzed using a liquid chromatography/mass spectrometry (LC/MS) technique that allowed simultaneous measurement of several neurochemicals and their metabolites in the same dialysate samples, including ACh, DA, and the serotonin metabolite 5-hydroxyindoleacetic acid (5-HIAA) (see Materials and methods). All neurochemical results during Stim 1 and Stim 2 periods are expressed as a percentage relative to the Pre-Stim control period. However, raw values of ACh, DA, and 5-HIAA are reported in source data files (Figure 3—source data 1, Figure 3—source data 2, Figure 3—source data 3). Data are reported only from mice with more than 75% of the microdialysis probe implanted within the BLA (Figure 2).
 
@@ -49,7 +92,7 @@ We first describe tests to examine whether playback of mating and restraint voca
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88838/elife-88838-fig3-v1.jpg)
 
-**Figure 3.:** (A, B) Boxplots show number of occurrences of specified behavior in 10-min observation periods before (Pre-Stim) and during (Stim 1, Stim 2) playback of mating or restraint vocal sequences (nMating = 7, nRestraint = 6). Note that playback sequences during Stim 1 and Stim 2 periods were identical within each group. During playback, the restraint group increased still-and-alert behavior compared to the mating group (A) (context: F(1,11) = 9.6, p = 0.01, ŋ2 = 0.5), and increased flinching behavior (B) (time*context: F(1.1,12.2) = 6.3, p = 0.02, ŋ2 = 0.4) compared to the Pre-Stim baseline and to the mating group. (C–E) Boxplots show differential release of acetylcholine (ACh), dopamine (DA), and 5-hydroxyindoleacetic acid (5-HIAA) relative to the Pre-Stim period, during mating and restraint vocal playback (nMating = 9, nRestraint = 7). (C) Significant differences in ACh for restraint (increase) playback in Stim 1 and Stim 2 vs males in mating playback (Main effect of context: F(1,14) = 22.6, p < 0.001, ŋ2 = 0.62). (D) Significant differences for DA for mating (increase) vs restraint playback (Main effect of context: F(1,14) = 7.4, p = 0.02, ŋ2 = 0.35). (E) No significant changes in 5-HIAA during vocal playback in male mice (context: F(1,14) = 1.36, p = 0.3, ŋ2 = 0.09). (A–E) Statistical testing examined time windows within groups for behavioral observations and all intergroup comparisons within time windows for both behavior and neuromodulator data. Only normalized neuromodulators in Stim 1 and Stim 2 were used for statistical comparisons. Only significant tests are shown. Repeated measures generalized linear model (GLM): *p < 0.05, **p < 0.01, ***p < 0.001 (Bonferroni post hoc test). Time windows comparison: 95% confidence intervals. See Data analysis section in Materials and methods for description of box plots. See Figure 3—source data 1–4 for all numerical data for Figures 3—6.Figure 3—source data 1.Figures 3—6.Figure 3—source data 2.Figures 3—6.Figure 3—source data 3.Figures 3, 4 and 6.Figure 3—source data 4.Figures 3—5.
+**Figure 3.:** (A, B) Boxplots show number of occurrences of specified behavior in 10-min observation periods before (Pre-Stim) and during (Stim 1, Stim 2) playback of mating or restraint vocal sequences (nMating = 7, nRestraint = 6). Note that playback sequences during Stim 1 and Stim 2 periods were identical within each group. During playback, the restraint group increased still-and-alert behavior compared to the mating group (A) (context: F(1,11) = 9.6, p = 0.01, ŋ2 = 0.5), and increased flinching behavior (B) (time*context: F(1.1,12.2) = 6.3, p = 0.02, ŋ2 = 0.4) compared to the Pre-Stim baseline and to the mating group. (C–E) Boxplots show differential release of acetylcholine (ACh), dopamine (DA), and 5-hydroxyindoleacetic acid (5-HIAA) relative to the Pre-Stim period, during mating and restraint vocal playback (nMating = 9, nRestraint = 7). (C) Significant differences in ACh for restraint (increase) playback in Stim 1 and Stim 2 vs males in mating playback (Main effect of context: F(1,14) = 22.6, p < 0.001, ŋ2 = 0.62). (D) Significant differences for DA for mating (increase) vs restraint playback (Main effect of context: F(1,14) = 7.4, p = 0.02, ŋ2 = 0.35). (E) No significant changes in 5-HIAA during vocal playback in male mice (context: F(1,14) = 1.36, p = 0.3, ŋ2 = 0.09). (A–E) Statistical testing examined time windows within groups for behavioral observations and all intergroup comparisons within time windows for both behavior and neuromodulator data. Only normalized neuromodulators in Stim 1 and Stim 2 were used for statistical comparisons. Only significant tests are shown. Repeated measures generalized linear model (GLM): *p < 0.05, **p < 0.01, ***p < 0.001 (Bonferroni post hoc test). Time windows comparison: 95% confidence intervals. See Data analysis section in Materials and methods for description of box plots. See Figure 3—source data 1–4 for all numerical data for Figures 3—6.
 
 As male and female mice emit different vocalizations during courtship and mating (Finton et al., 2017; Grimsley et al., 2013; Neunuebel et al., 2015; Sales, 1972), we tested whether playback of vocal interactions associated with mating (Figure 1A) results in different behavioral and neurochemical responses in listening male and female mice. Since our testing included both estrus and non-estrus females, we further examined the estrous effect on neurochemical release and behavioral reactions.
 
@@ -103,21 +146,21 @@ The interaction between ACh and DA is thought to shape motor responses to extern
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Experimental procedures were approved by the Institutional Animal Care and Use Committee at Northeast Ohio Medical University (protocol 18-09-207). A total of 83 adult CBA/CaJ mice (Jackson Labs, p90-p180), male and female, were used for this study. Animals were maintained on a reversed dark/light cycle and experiments were performed during the dark cycle. The mice were housed in same-sex groups until the week of the experiments, during which they were singly housed. Food and water were provided ad libitum except during the experiment.
 
 The estrous stage of female mice was evaluated based on vaginal smear samples obtained by sterile vaginal lavage. Samples were collected using glass pipettes filled with double distilled water, placed on a slide, stained using crystal violet, and coverslipped for microscopic examination. Estrous stage was determined by the predominant cell type: squamous epithelial cells (estrus), nucleated cornified cells (proestrus), or leukocytes (diestrus) (McLean et al., 2012). To confirm that the stage of estrous did not change during the experiment day, samples obtained prior to and after data collection on the experimental day were compared.
 
-## Experimental overview
+### Experimental overview
 
 The basic experimental structure that occurred over 6 days is illustrated in Figure 1D. Briefly, each mouse was placed in an arena on Days 1 and 2 to provide one-time experiences of mating and sustained restraint. After the experience on Day 2, the subject was anesthetized for implantation of a guide tube for the microdialysis probe. On Day 6, the vocalization playback session occurred. The mouse was briefly anesthetized for insertion of the microdialysis probe into the amygdala, followed by several hours recovery. Before, during, and after vocal playback, we sampled extracellular fluid from the amygdala through the microdialysis probe and recorded video to analyze the subject’s behavior. An LC/MS method was used to measure concentrations of several neurochemicals.
 
 The microdialysis sampling interval of 10 min was used to establish the temporal framework for vocal playback and analysis of neurochemicals and behaviors (Figure 1E). The analysis compared neurochemicals and behaviors in a period immediately preceding the vocal stimuli (Pre-Stim) and in two 10-min periods featuring playback of the same sequence of vocal stimuli (Stim 1 and Stim 2). Each playback session featured only one category of vocalizations (associated with mating or restraint) and each animal participated in a single playback session. Additional details of this experimental structure are described in the sections below.
 
-## Acoustic methods
+### Acoustic methods
 
-## Vocalization recording and analysis
+#### Vocalization recording and analysis
 
 To record vocalizations for use in playback experiments, mice were placed in an open-topped plexiglass chamber (width, 28 cm; length, 28 cm; height, 20 cm), housed within a darkened, single-walled acoustic chamber (Industrial Acoustics, New York, NY) lined with anechoic foam (Grimsley et al., 2016; Niemczura et al., 2020). Acoustic signals were recorded using ultrasonic condenser microphones (CM16/CMPA, Avisoft Bioacoustics, Berlin, Germany) connected to a multichannel amplifier and A/D converter (UltraSoundGate 416H, Avisoft Bioacoustics). The gain of each microphone was independently adjusted once per recording session to optimize the SNR while avoiding signal clipping. Acoustic signals were digitized at 500 kHz and 16-bit depth, monitored in real time with RECORDER software (Version 5.1, Avisoft Bioacoustics), and Fast Fourier Transformed (FFT) at a resolution of 512 Hz. A night vision camera (VideoSecu Infrared CCTV), centered 50 cm above the floor of the test box, recorded the behaviors synchronized with the vocal recordings (VideoBench software, DataWave Technologies, version 7).
 
@@ -127,27 +170,27 @@ To record vocalizations during restraint, six mice (four male, two female) were 
 
 Vocal recordings were analyzed offline using Avisoft-SASLab Pro (version 5.2.12, Avisoft Bioacoustics) with a hamming window, 1024 Hz FFT size, and an overlap percentage of 98.43. For every syllable, the channel with the higher amplitude signal was extracted using a custom-written Python code (https://github.com/GavazziDA/Wenstrup_Lab_Ghasemahmad_2023, copy archived at Gavazzi, 2024) and analyzed. Since automatic syllable tagging did not allow distinguishing some syllable types such as noisy calls and MFVs from background noise, we manually tagged the start and end of each syllable, then examined spectrograms to measure several acoustic features and classify syllable types based on Grimsley et al., 2011; Grimsley et al., 2016.
 
-## Vocalization playback
+#### Vocalization playback
 
 Vocalization playback lasting 20 min was constructed from a set of seven repeating stimulus blocks lasting 2:50 min each (Figure 1E). Each block was composed of a set of vocal sequence exemplars that alternated with an equal duration of background sound (Silence) associated with the preceding exemplar. The exemplars were recorded during mating interactions and restraint, and selected based on high SNR, correspondence with behavioral category by video analysis, and representation of the spectrotemporal features of vocalizations emitted during mating and restraint (Ghasemahmad, 2020; Grimsley et al., 2016). Mating stimulus blocks contained five exemplars of vocal sequences emitted during mating interactions. These exemplars ranged in duration from 15.0 to 43.6 s. Restraint stimulus blocks included seven vocal sequences, emitted by restrained male or female mice, with durations ranging from 5.7 to 42.3 s. Across exemplars, each stimulus block associated with both mating and restraint included different sets of vocal categories (Figure 1A–C).
 
 Playback sequences, that is, exemplars, were conditioned in Adobe Audition CC (2018), adjusted to a 65-dB SNR level, then normalized to 1 V peak-to-peak for the highest amplitude syllable in the sequence. This maintained relative syllable emission amplitude in the sequence. For each sequence, an equal duration of background noise (i.e., no vocal or other detected sounds) from the same recording was added at the end of that sequence (Figure 1E). A 5-ms ramp was added at the beginning and the end of the entire sequence to avoid acoustic artifacts. A MATLAB app (EqualizIR, Sharad Shanbhag; https://github.com/TytoLogy/EqualizIR, Shanbhag, 2018) compensated and calibrated each vocal sequence for the frequency response of the speaker system. Vocal sequences were converted to analog signals at 500 kHz and 16-bit resolution using DataWave (DataWave SciWorks, Loveland, CO), anti-alias filtered (TDT FT6-2, fc = 125 kHz), amplified (HCA-800II, Parasound, San Francisco, CA), and sent to the speaker (LCY, K100, Ying Tai Audio Company, Hong Kong). Each sequence was presented at peak level equivalent to 85 dB SPL.
 
-## Behavioral methods
+### Behavioral methods
 
 Behaviors during both vocalization recording and playback sessions were recorded using a night vision camera (480TVL 3.6 mm, VideoSecu), centered 50 cm above the floor of the test box, and SciWorks (DataWave, VideoBench version 7) for video acquisition and analysis.
 
-## Analysis of mating behaviors during vocal recordings
+#### Analysis of mating behaviors during vocal recordings
 
 Interactions between male and female mice were video-recorded, then analyzed second-by-second. Among more general courtship interactions, we identified a set of behaviors that are mating-related, as described previously (Gaub et al., 2016; Heckman et al., 2016). All vocal sequences selected as exemplars for playback of ‘mating’ vocalizations were recorded in association with these male-mating behaviors: head-sniffing, attempted mounting, or mounting. Vocalizations during these behaviors included chevron, stepped, and complex USVs emitted with longer durations and higher repetition rates, and more LFH calls (Gaub et al., 2016; Ghasemahmad, 2020; Hanson and Hurley, 2012).
 
-## Experience and playback sessions
+#### Experience and playback sessions
 
 Prior to playback experiments, each animal underwent 90-min sessions on two consecutive days (Days 1 and 2) that provided both mating and restraint experiences to the EXP group (n = 31 animals) or no experiences of these to the INEXP group (n = 22 animals). EXP sessions were presented in a counterbalanced pattern across subjects (Figure 1D). For the mating experience, mounting or attempted mounting was required for the animal to be included in the remainder of the experiment. However, we did not record detailed behaviors or track estrous stage during the mating experience session. After the Day 2 session, mice underwent surgery for implantation of a microdialysis guide canula (see below), then recovered for 4 days.
 
 On Day 6, the day of the playback experiment, male mice were randomly assigned to either restraint or mating vocal playback groups. Females were only tested with mating playback, since a preliminary behavioral study suggested no difference in male and female responses to restraint. Video recording was performed simultaneously with microdialysis, beginning 10 min before vocal playback (pre-stimulus) and continuing for 20 min during playback (Figure 1D).
 
-## Analysis of behaviors during vocal playback
+#### Analysis of behaviors during vocal playback
 
 Behavioral analysis was based on previous descriptions (Bakshi and Kelley, 1993; Bakshi and Kelley, 1994; Blanchard et al., 2003; Füzesi et al., 2016; Grimsley et al., 2015; Lezak et al., 2017; Saibaba et al., 1996) (Mouse Ethogram: https://mousebehavior.org). The list of behaviors assessed was determined through pilot analysis and previous studies characterizing rodent defense and fear behaviors. They are defined as the following: abrupt attending, flinching, locomotion, rearing, grooming, still-and-alert, and stretch-attend (description in Table 1; Blanchard et al., 2003). A behavior was only counted when its occurrence lasted two or more seconds, except for flinching, which could take place more quickly.
 
@@ -155,13 +198,13 @@ For analysis of behaviors during vocal playback, all videos were examined blind 
 
 Videos were further analyzed automatically using the video tracker within VideoBench (DataWave Technologies, version 7) for total distance traveled and time spent in the periphery and center of the test arena. For video-tracking analysis of time spent, the floor was divided into 16 equal squares with 4 central squares identified as ‘center’ and the 4 corner squares identified as periphery. The two squares in the middle of each wall were excluded from the analysis to avoid attraction to the holes affect the animal’s preference for the periphery vs center.
 
-## Procedures related to microdialysis
+### Procedures related to microdialysis
 
-## Surgery
+#### Surgery
 
 Since both left and right amygdala are responsive to vocal stimuli in human and experimental animal studies (Wenstrup et al., 2020), we implanted microdialysis probes into the left amygdala to maintain consistency with other studies in our laboratory. Mice were anesthetized with Isoflurane (2–4%, Abbott Laboratories, North Chicago, IL) and hair overlying the skull was removed using depilatory lotion. A midline incision was made, then the skin was moved laterally to expose the skull. A craniotomy (≃1 mm2) was made above the BLA on the left side (stereotaxic coordinates from bregma: −1.65 mm rostrocaudal, +3.43 mm mediolateral). A guide cannula (CMA-7, CMA Microdialysis, Sweden) was implanted to a depth of 2.6 mm below the cortical surface and above the left BLA (Figure 1D, Day 2), then secured using dental cement. After surgery, the animal received a subcutaneous injection of carprofen (4 mg/kg, s.c.) and topical anesthetic (lidocaine) and antibiotic cream (Neosporin). It was returned to its cage and placed on a heating pad until fully recovered from anesthesia. Recovery from the surgical procedures occurred in the animal’s home cage and was assessed by resumption of normal eating, drinking, exploratory, and grooming behaviors and postures. Playback experiments occurred in all recovered animals 4 days after surgery.
 
-## Microdialysis
+#### Microdialysis
 
 On the day before microdialysis, the probe was conditioned in 70% methanol and artificial cerebrospinal fluid (aCSF) (CMA Microdialysis, Sweden). On playback day (Day 6), the animal was briefly anesthetized and the probe with 1-mm membrane length and 0.24-mm outer diameter (MWCO 6 kDa) was inserted into the guide cannula (Figure 1D).
 
@@ -169,17 +212,17 @@ Using a spiral tubing connector (0.1 mm ID × 50 cm length) (CT-20, AMUZA Microd
 
 After probe insertion, a 4-hr period allowed animals to habituate and the neurochemicals to equilibrate between aCSF fluid in the probe and brain extracellular fluid. Sample collection then began, in 10-min intervals, beginning with four background samples, then two samples during playback of restraint or mating vocal sequences (total 20 min), then one or more samples after playback ended. To account for the dead volume of the outlet tubing, a flow rate of 1.069 µl/min was established at the syringe pump to obtain a 1-µl sample per minute. Samples collected during this time were measured for volume to assure a consistent flow rate. To prevent degradation of collected neurochemicals, the outlet tubing was passed through ice to a site outside the sound-proof booth where samples were collected on ice, then stored in a −80°C freezer. The choice of 10-min sampling intervals was based on the minimum collection time needed to provide 5 µl samples both for immediate testing and for a backup sample in the event of catastrophic failure of the processes associated with the neurochemical analysis.
 
-## Neurochemical analysis
+#### Neurochemical analysis
 
 Samples were analyzed using an LC/MS technique (Figure 1D) at the Vanderbilt University Neurochemistry Core. This analysis was blind to the sex, estrous state, or experience of the animal and the context of vocalizations. This method allows simultaneous measurement of several neurochemicals in the same dialysate sample: ACh, DA, and its metabolites (3,4-dihydroxyphenylacetic acid (DOPAC) and homovanillic acid (HVA)), serotonin (5-HT) and its metabolite (5-HIAA), norepinephrine (NE), gamma aminobutyric acid (GABA), and glutamate. Due to low recovery of NE and 5-HT from the mouse brain, we were unable to track these two neuromodulators in this experiment.
 
 Before each LC/MS analysis, 5 μl of the sample was derivatized using sodium carbonate, benzoyl chloride in acetonitrile, and internal standard (Wong et al., 2016). LC was performed on a 2.0 × 50 mm, 1.7 μM particle Acquity BEH C18 column (Waters Corporation, Milford, MA, USA) with 1.5% aqueous formic acid as mobile phase A and acetonitrile as mobile phase B. Using a Waters Acquity Classic UPLC, samples were separated by a gradient of 98–5% of mobile phase A over 11 min at a flow rate of 0.6 ml/min with delivery to a SCIEX 6500+Qtrap mass spectrometer (AB Sciex LLC, Framingham, MA, USA). The mass spectrometer was operated using electrospray ionization in the positive ion mode. The capillary voltage and temperature were 4 kV and 350°C, respectively (Wong et al., 2016; Yohn et al., 2020). Chromatograms were analyzed using MultiQuant 3.0.2 Software (AB SCIEX, Concord, Ontario, Canada).
 
-## Verification of probe location
+#### Verification of probe location
 
 We verified placement of microdialysis probes to minimize variability that could arise due to placement in regions surrounding BLA that receive different sources of neurochemical inputs (e.g., cholinergic inputs to putamen and central amygdala). To verify probe placement within the BLA, each probe was perfused with 2% dextran-fluorescein (MW 4 kDa) (Sigma-Aldrich Inc, Atlanta, GA) at the end of the experiment. The location of the probe was then visualized in adjacent cleared and Nissl-stained sections (e.g., Figure 2, insets). Sections were photographed using a SPOT RT3 camera and SPOT Advanced Plus imaging software (version 4.7) mounted on a Zeiss Axio Imager M2 fluorescence microscope. Adobe Photoshop CS3 was used to adjust brightness and contrast globally. Animals were included in statistical analyses only if ≥75% of the probe membrane was located within the BLA (Figure 2).
 
-## Data analysis
+### Data analysis
 
 For neurochemical analyses, the total numbers of animals used were NEXP = 31 and NINEXP = 22. Only mice with usable neurochemical data were further evaluated for behaviors. This included 46 mice: (NEXP = 25 and NINEXP = 21). Note that some animals used in neurochemical analyses were not included in the behavioral analyses because their behavioral data were unavailable. Since only one INEXP female was in a non-estrus stage during the playback session, our analysis of the effect of experience included only estrus females and males. Furthermore, one INEXP female without detectable DA levels was removed from the INEXP group neurochemical analysis.
 

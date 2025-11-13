@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.38911.001 Transdifferentiation is the poorly understood phenomenon whereby a terminally differentiated cell acquires a completely new identity. Here, we describe a rare example of a naturally occurring transdifferentiation event in zebrafish in which kidney distal tubule epithelial cells are converted into an endocrine gland known as the Corpuscles of Stannius (CS). We find that this process requires Notch signalling and is associated with the cytoplasmic sequestration of the Hnf1b transcription factor, a master-regulator of renal tubule fate. A deficiency in the Irx3b transcription factor results in ectopic transdifferentiation of distal tubule cells to a CS identity but in a Notch-dependent fashion. Using live-cell imaging we show that CS cells undergo apical constriction en masse and are then extruded from the tubule to form a distinct organ. This system provides a valuable new model to understand the molecular and morphological basis of transdifferentiation and will advance efforts to exploit this rare phenomenon therapeutically.
+Transdifferentiation is the poorly understood phenomenon whereby a terminally differentiated cell acquires a completely new identity. Here, we describe a rare example of a naturally occurring transdifferentiation event in zebrafish in which kidney distal tubule epithelial cells are converted into an endocrine gland known as the Corpuscles of Stannius (CS). We find that this process requires Notch signalling and is associated with the cytoplasmic sequestration of the Hnf1b transcription factor, a master-regulator of renal tubule fate. A deficiency in the Irx3b transcription factor results in ectopic transdifferentiation of distal tubule cells to a CS identity but in a Notch-dependent fashion. Using live-cell imaging we show that CS cells undergo apical constriction en masse and are then extruded from the tubule to form a distinct organ. This system provides a valuable new model to understand the molecular and morphological basis of transdifferentiation and will advance efforts to exploit this rare phenomenon therapeutically.
 
 ## Introduction
 
@@ -35,15 +35,31 @@ In this study, we investigate the origin of the CS gland and discover that it ar
 
 ## Results
 
-## CS cells originate in the renal tubule and are extruded to form a gland
+### CS cells originate in the renal tubule and are extruded to form a gland
 
 To better understand CS gland formation, we first examined expression of stanniocalcin-1 (stc1), a marker of CS fate, and cdh17, a pan-renal tubule marker that encodes a cadherin involved in cell-to-cell adhesion (Horsfield et al., 2002). We found that at 24 hr post-fertilisation (hpf), transcripts for cdh17 are down-regulated in the posterior most portion of the DE segment (Figure 1A). Concomitant with this, the first stc1+ cells appear in this region and increase in number. By 32 hpf the stc1+ + appear as a prominent bulge on the dorsal side of the tubule and at 50 hpf, they are found as discrete, and separate, structures on top of each pronephric tubule in ~70% of animals (Figure 1C). These observations suggest that CS cells arise from renal epithelial cells via transdifferentiation and are then physically extruded from the tubule.
 
 To visualise the process of CS gland formation, live time-lapse imaging was performed on Tg(cdh17:egfp) embryos from 24 to 50 hpf (Figure 1A and Video 1). Presumptive CS cells were observed to bulge out of the dorsal wall of the tubule concomitant with the constriction of their apical membranes. Immunostaining of sagittal cross-sections through the CS region at this stage showed that the cells adopt a wedge shape with narrowed apical membranes (marked by Phalloidin+ F-actin, Figure 1B). As apical constriction increased, we observed that the adjacent non-CS epithelial cells moved closer together and the CS cells protruded dorsally as an arch two cell layers wide (Figure 1D). The epithelial cells on either side of the CS cells eventually met at 42 hpf in most animals, followed by extrusion of the CS gland from the tubule (Figure 1A and Video 1). The timing of extrusion was variable but was complete in the majority of embryos by 60 hpf (Figure 1C). We found that during extrusion from the tubule, the epithelial cell adhesion molecule gene (epcam) remains continuously expressed in CS cells (Figure 1E) and the major epithelial cell adhesion protein Cadherin-1 (Cdh1) is retained on the basolateral membranes (Figure 1D), suggesting that the epithelial status of CS cells is not changed during extrusion. After CS cell extrusion, Cdh1 is detectable at the interface between CS and tubular cells and is prominent on the lateral membranes of CS cells, similar to renal epithelial cells (Figure 1D). However, once extruded Cdh1 immunostaining is largely lost from the interface between CS cells and tubular cells but remains on the basal surface of some CS cells (Figure 1D, dotted box region). In addition, F-actin staining, which demarcates the apical surface of tubular cells, is lost in the extruded CS cells (Figure 1D). These results suggest a model in which renal epithelial cells transdifferentiate directly into CS cells, without a loss of epithelial character, extrude from the tubule following apical constriction, and form a distinct ball of unpolarised glandular epithelium.
 
+![Video 1.](https://cdn.elifesciences.org/articles/38911/elife-38911-video1.mp4.jpg)
+
+**Video 1.:** Green fluorescent cells label the pronephric tubule and the CS cells, with the latter observed as a bulge of cells that undergo extrusion during the time-lapse.
+
 One possibility is that the renal epithelial cells in the tubular region that gives rise to the CS have retained some progenitor-like state and direct transdifferentiation is not occurring in the strictest sense. To explore this, we closely examined the expression of the renal progenitor marker lhx1a from 14 to 50 hpf. At 14 hpf, transcripts for lhx1a are found throughout the intermediate mesoderm in mesenchymal cells but are rapidly downregulated in all tubule precursors by 16 hpf (Figure 2—figure supplement 1), when the transition to an epithelial tube occurs (Gerlach and Wingert, 2014; Naylor et al., 2016a). This transition corresponds with the restriction of other markers of renal progenitor state, such as pax2a (Majumdar et al., 2000) and pax8 (Tosh and Slack, 2002), although expression of these genes are retained in the DL segment where they likely play later roles in growth (Bouchard, 2004; Torres et al., 1995). To demonstrate that the tubule has achieved an advanced state of epithelial differentiation prior to stc1 transcripts appearing, we confirmed at 22 hpf that the DE segment contains apically localised F-actin and basally deposited Laminin and Collagen type IV, indicative of apical tight junctions and a basolateral basement membrane, respectively (Figure 2A). In addition, the DE segment at this time point uniformly expresses slc12a1, atp1a1a.4 and the krt18 (but not stc1), consistent with having the identity of a differentiated transporting epithelium (Figure 2A). At 50 hpf, the DE segment continues to be marked by the expression of slc12a1, atp1a1a.4 and krt18 whereas the extruded CS cells do not express these genes. Instead, staining with Phalloidin and antibodies to Laminin and Collagen type IV shows that the CS gland has lost apically localised F-actin and is enveloped by a separate basement membrane (Figure 2A). Taken together, these results support the notion that by 22 hpf, the DE segment has differentiated into a renal tubular epithelium, and that a subset of these cells then transdifferentiate into CS cells.
 
-## Role of apical constriction, proliferation and neighbouring cells during CS gland extrusion
+![Figure 2.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig2-v2.jpg)
+
+**Figure 2.:** (A) Panels show lateral views of the markers indicated in the region of the trunk where the CS will be derived (at 22 hpf) and is extruded (at 50 hpf). (B) Panels show lateral views of the trunk from live Tg(cdh17:egfp) embryos (left) and embryos stained for cdh17 (red)/stc1 (purple) transcripts (right) in control and Blebbistatin treated embryos. Black arrow indicates the position of stc1+ cells in the Blebbistatin treated embryo. (C) Panels show brightfield/fluorescence in Tg(cdh17:egfp) embryos before and after laser ablation (site of ablation indicated with asterisk). Panels on the right show embryos 18 hr post-ablation and arrowheads indicate the extruded CS gland.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Panels show lateral images of zebrafish embryos stained for lhx1a transcripts at the indicated stages. Arrows indicate the intermediate mesoderm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Panels show lateral views of Tg(cdh17:egfp) embryos stained for EdU labelling at 36 hpf (left panel) and 50 hpf (two right panels) after treatment with EdU between the stages shown. (B) Lateral views of DMSO vehicle control (left panels) and HUA treated animals treated from 20 to 26 hpf and then fixed at 50 hpf. Top panels are EdU labelling, middle panels are of Tg(cdh17:egfp) embryos and bottom panels are of embryos stained for cdh17 (red) and stc1 (purple) expression.
+
+### Role of apical constriction, proliferation and neighbouring cells during CS gland extrusion
 
 To determine if CS cell extrusion was dependent upon apical constriction, embryos from 24 hpf onwards were incubated in Blebbistatin (10 μM), an inhibitor of Myosin IIA that blocks the contraction of the apical ring of F-actin filaments, which is essential for apical constriction in other contexts (Lewis, 1947; Sawyer et al., 2010; Kovács et al., 2004). We found that the CS cells failed to extrude in all Blebbistatin-treated embryos (n = 57) and instead, stc1+ cells remained within the tubule (Figure 2B). Thus we conclude that apical constriction of CS cells is a necessary prerequisite for extrusion from the renal tubule.
 
@@ -51,27 +67,94 @@ We next examined the role of cell proliferation in CS gland formation by perform
 
 Previously studied examples of live cell extrusion describe an actomyosin contractile ring that forms in cells neighbouring the extruding cell (Eisenhoffer et al., 2012; Gu et al., 2011). As all pronephric tubule cells contain apically localised F-actin, it was not possible to determine if an equivalent actomyosin ring forms in the cells surrounding the CS cells. However, laser ablation to sever the tubule (and any interconnected contractile filaments) immediately anterior or posterior to the forming CS gland did not prevent CS extrusion (n = 6, Figure 2C), suggesting that neighbouring cells do not play an active role in CS extrusion.
 
-## Nuclear export of Hnf1b occurs in DE cells that transdifferentiate to CS
+### Nuclear export of Hnf1b occurs in DE cells that transdifferentiate to CS
 
 We next investigated the molecular mechanisms governing the transdifferentiation of DE tubule cells into CS cells. We first examined Hnf1b as this transcription factor is critical for establishing and maintaining renal epithelial cell fate but is not expressed in the extruded CS gland ( (Naylor et al., 2013) and Figure 3—figure supplement 1). Immunostaining of embryos at 18 hpf showed that all cells in the renal tubule display nuclear localised Hnf1b (n = 7, Figure 3A). However, from 22 hpf onwards, we found that Hnf1b is lost from the nucleus in presumptive CS cells and becomes localised to the cytoplasm in a speckled pattern (n = 9, Figure 3A, see Figure 3—figure supplement 2 for lateral view). As this cytoplasmic localisation of Hnf1b precedes the onset of stc1 expression, it suggests that loss of Hnf1b activity (via cytoplasmic sequestration) may be an early event in the transdifferentiation of renal to CS fate. To provide further support for this notion, we examined hnf1b-deficient embryos as we reasoned there might be ectopic CS cell formation in the absence of Hnf1b activity. In line with this, we detected a broad stretch of stc1 expression in the middle of the pronephric tubule, largely corresponding to the region that would normally form the DE segment (n = 11/11 hnf1b-deficient embryos, Figure 3B).
 
-## Irx3b inhibits CS cell fate commitment in the pronephros
+![Figure 3.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig3-v2.jpg)
+
+**Figure 3.:** (A) Panels show Hnf1b immunostains (graysale) on transverse cryosections of zebrafish embryos through the region of the trunk where CS glands form at 22 hpf, 36 hpf and 50 hpf. Arrows indicate CS cells that have undergone nuclear export of Hnf1b. Histogram on the right indicates ‘corrected total nuclear fluorescence’ (CTNF) of nuclei in the tubule versus nuclei in the CS gland at 22 hpf (n = 8). (B) Top panels show lateral views and bottom panels show dorsal views of wild-type and hnf1b-deficient embryos stained for stc1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Panel shows a 50 hpf wild-type embryo stained for hnf1ba transcripts. Black arrow indicates the approximate position of the CS gland.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Lateral view of a 50 hpf Tg(cdh17:egfp) (green) embryo immunostained for Hnf1b (red) and counterstained for DAPI (blue). Hnf1b in the CS is largely non-nuclear (white arrow), in contrast to nuclear Hnf1b in the tubules (black arrow).
+
+### Irx3b inhibits CS cell fate commitment in the pronephros
 
 The formation of the DE segment has previously been shown to be regulated by the Irx3b transcription factor, which acts downstream of Hnf1b (Wingert and Davidson, 2011). We therefore explored the involvement of Irx3b in CS gland formation in loss-of-function studies. We found that irx3b knockdown using morpholinos did not prevent the initial formation of the DE segment, as slc12a1 displays a normal expression pattern in irx3b morphants at 18 hpf (n = 21/21) and 20 hpf (n = 24/24, Figure 4A). However, we noted that the length of the DE segment was reduced in some irx3b-deficient embryos at 22 hpf (n = 14/23) and at 24 hpf (n = 19/25, Figure 4A) compared to control embryos (n = 0/21 at 22 hpf and n = 0/43 at 24 hpf) and there was a corresponding expansion in stc1+ CS cells from 24 hpf onwards (Figure 4B, Table 1A and B). By 36 hpf, the DE region lacked transcripts for slc12a1, consistent with previous reports (Wingert and Davidson, 2011) and cdh17 was down-regulated in the region where ectopic stc1+ cells are present (Figure 4B, Table 1B and C). An analysis of live Tg(cdh17:egfp) embryos that are deficient in irx3b showed that these ectopic CS cells still underwent apical constriction but were not fully extruded from the tubule (Figure 5A). In addition, we found that the tubule cells rostral to the enlarged CS gland display a stretched morphology in irx3b-deficient animals, both in live Tg(cdh17:egfp) embryos (Figure 5A) and by expression analysis of the pan-tubule marker atp1a1a.4 (Figure 5B). Conversely, the DL segment was compacted and shorter in irx3b-depleted animals (Figure 5A and B).
 
+**Table 1.**
+ Empirical results for the effect of irx3b morpholino on cdh17, stc1 and slc12a1 expression at 24 hpf, 36 hpf and 50 hpf Un-injected wild-type embryos showed no phenotypes in the pronephros.The phenotypes for irx3b morphants are: slc12a1, reduction in staining; stc1, increased/ectopic staining; cdh17, expanded DL domain, reduced DE staining and reduced/stretched PST segment. Experiments were repeated multiple times (at least three times) and the results showed are from one representative experiment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>slc12a1/stc1</th>
+      <th>24 hpf</th>
+      <th>36 hpf</th>
+      <th>50 hpf</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Un-injected</td>
+      <td>33</td>
+      <td>34</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>irx3bmo slc12a1 phenotype</td>
+      <td>17/23</td>
+      <td>27/32</td>
+      <td>30/39</td>
+    </tr>
+    <tr>
+      <td>irx3bmo stc1 phenotype</td>
+      <td>18/23</td>
+      <td>27/32</td>
+      <td>33/39</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig4-v2.jpg)
 
-**Figure 4.:** irx3b depletion converts the DE segment to CS fate.(A) Panels show lateral views of 18 hpf, 20 hpf, 22 hpf and 24 hpf wild-type and irx3b morphant embryos co-stained for cdh17 (red) and slc12a1 (purple). Black arrowheads highlight the initiation of pronephric phenotypes in irx3b morphants. (B) Panels show lateral views of control (un-injected) embryos and irx3b morphants double-stained for either slc12a1(red)/stc1(purple), cdh17(red)/stc1(purple) or cdh17(red)/slc12a1(purple) at 24 hpf, 36 hpf and 50 hpf.
+**Figure 4.:** (A) Panels show lateral views of 18 hpf, 20 hpf, 22 hpf and 24 hpf wild-type and irx3b morphant embryos co-stained for cdh17 (red) and slc12a1 (purple). Black arrowheads highlight the initiation of pronephric phenotypes in irx3b morphants. (B) Panels show lateral views of control (un-injected) embryos and irx3b morphants double-stained for either slc12a1(red)/stc1(purple), cdh17(red)/stc1(purple) or cdh17(red)/slc12a1(purple) at 24 hpf, 36 hpf and 50 hpf.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig5-v2.jpg)
 
-**Figure 5.:** irx3b depletion causes aberrant pronephric morphogenesis.(A) Lateral views of live un-injected and irx3b morphant Tg(cdh17::egfp) embryos with lower panels showing higher magnification of indicated pronephric regions. Histograms show the width of the tubule (left) and length of tubule cells (right) in the PST and DL regions of wild-type and irx3b morphants (n = 10). (B) Panels show dorsal view images of embryos stained for atp1a1a.4 at the stages indicated. Double-ended black arrows highlight areas of reduced atp1a1a.4 expression immediately anterior to a thickened distal tubule (yellow arrow) at 24 hpf and 50 hpf in irx3b morphants. (C) Lateral views of the trunk of Tg(cdh17:egfp) embryos (left panels) and embryos double stained for cdh17 (red) and stc1 (purple; right panels) after the indicated treatments. Black arrow highlights the ectopic stc1+ cells that remain in the tubule after irx3b knock down and Blebbistatin treatment.
+**Figure 5.:** (A) Lateral views of live un-injected and irx3b morphant Tg(cdh17::egfp) embryos with lower panels showing higher magnification of indicated pronephric regions. Histograms show the width of the tubule (left) and length of tubule cells (right) in the PST and DL regions of wild-type and irx3b morphants (n = 10). (B) Panels show dorsal view images of embryos stained for atp1a1a.4 at the stages indicated. Double-ended black arrows highlight areas of reduced atp1a1a.4 expression immediately anterior to a thickened distal tubule (yellow arrow) at 24 hpf and 50 hpf in irx3b morphants. (C) Lateral views of the trunk of Tg(cdh17:egfp) embryos (left panels) and embryos double stained for cdh17 (red) and stc1 (purple; right panels) after the indicated treatments. Black arrow highlights the ectopic stc1+ cells that remain in the tubule after irx3b knock down and Blebbistatin treatment.
 
 Given that the tubule starts moving rostrally by 29 hpf (Vasilyev et al., 2009), the morphological effects caused by irx3b knockdown suggests that an enlarged and un-extruded CS gland may prevent the DL segment from undergoing this movement, resulting in greater stretching of the more proximal tubule cells and compaction of the distal tubule. To test this, irx3b-deficient animals were treated with Blebbistatin to block apical constriction. The majority of these animals were found to display relatively normal tubule morphology with ectopic stc1+ cells scattered throughout the tubule (n = 20/25, Figure 5C). Taken together, these results suggest that Irx3b inhibits the transdifferentiation of DE cells to a CS fate and that the failed extrusion of the ectopic CS cells seen in irx3b-deficient embryos alters tubular cell morphology due to a block in the rostral migration of the DL segment.
 
-## Irx3b suppresses CS cell formation
+### Irx3b suppresses CS cell formation
 
 We then went on to examine a link between Irx3b and Notch, as the Irx factors have been implicated as both positive and negative regulators of Notch signalling (Scarlett et al., 2015; Domínguez and de Celis, 1998). In addition, Notch has recently been connected to CS gland development (Drummond et al., 2017) and Notch components are expressed in CS cells (Figure 6—figure supplement 1). We first analysed the TP1:VenusPEST Notch reporter line, which contains multiple RBP-Jk-binding sites in front of a minimal promoter (Ninov et al., 2012), and found Notch activity in CS cells from 36 hpf onwards (Figure 6A). This result is consistent with the Notch pathway playing a role in CS gland formation. We did not observe fluorescence in presumptive CS cells or tubule multi-ciliated cells (which have previously been shown to form in a Notch-dependent manner (Liu et al., 2007; Ma and Jiang, 2007) prior to 36 hpf (Figure 6—figure supplement 2), but this may reflect low sensitivity of the reporter.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig6-v2.jpg)
+
+**Figure 6.:** (A) Panels show a stage series of fluorescent images of the TP1:VenusPEST transgenic line in the trunk region (arrows mark fluorescence in the region of the CS gland). (B) Left panels show lateral views of the posterior trunk showing stc1 expression after the indicated treatments. Middle panels show transverse sections of the pronephric tubule and position of the CS gland showing Hnf1b staining (±DAPI) after the same treatments. Right panels show lateral views of the trunk in the region of the CS gland (highlighted by unfilled arrow). (C) Histogram showing ‘corrected total nuclear fluorescence’ (CTNF) measurements of nuclei in the positions indicated. (D) Histograms showing the number of embryos with fluorescence in the CS gland in progeny from TP1:VenusPEST in-crosses with the indicated treatments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Lateral views of wild-type embryos stained for notch3 and jagged2b (jag2b) at the stages shown, black arrows indicate expression of notch factors in the CS gland.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Top panels show lateral views of the trunk of an 18 hpf embryo, bottom panels show lateral views of the trunk region at 24 hpf. Venus+ cells in the region of the pronephros (arrows) were in the epidermis when analysed along the Z-axis.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Panels show lateral views of the trunk of 50 hpf embryos stained for stc1 after early (from 10 hpf) treatments with cpdE and DAPT. (B) Lateral views of stc1 stained embryos treated with DMSO and DAPT from 18 hpf.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/38911/elife-38911-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Panel shows the gel image of the irx3b PCR product amplified from genomic DNA and processed through the T7 endonuclease one protocol (see materials and methods section). (B) Panels show lateral views of Tg(cdh17:egfp) embryos in wild-type, irx3b morphant, irx3b crispant and germline stable irx3b mutant embryos. Sanger sequencing analysis (right) shows a 29 bp deletion that causes a frame-shift mutation in exon 1 of the irx3b gene. (C) Panels show lateral views of the posterior trunk of stable irx3b mutants stained for stc1, slc12a1 and cdh17 transcripts.
 
 To assess the functional consequences of loss of Notch signalling, we treated wild-type zebrafish embryos with the γ-secretase inhibitor compound E (cpdE, Figure 6B) or DAPT (Figure 6—figure supplement 3A) from 18 hpf onwards and found reduced numbers of stc1+ cells (n = 56/56 in cpdE treated, n = 29/31 in DAPT treated). However, as reported previously (Drummond et al., 2017), treatment with cpdE (n = 21/29) or DAPT (n = 20/34) from 10 hpf onwards paradoxically increased the size of the CS gland (Figure 6—figure supplement 3B), indicating that perturbation of Notch signalling has complex temporal effects on CS formation.
 
@@ -103,42 +186,42 @@ Taken together, our data show that the conversion of DE cells to a CS gland fate
 
 ## Materials and methods
 
-## Zebrafish husbandry
+### Zebrafish husbandry
 
 Zebrafish embryos were maintained and staged according to established protocols (Kimmel et al., 1995) and in accordance with the University of Auckland’s Animal Ethics Committee (protocol 001343). Paired matings of wild-type Tübingen (Tg), transgenic Tg(cdh17:egfp), and mutant Tübingen+/hi1843 adults (RRID_ZFIN_ZDB-GENO-090923–3) were carried out in order to collect embryos used to perform the experiments described.
 
-## MO design and injection
+### MO design and injection
 
 Previously validated morpholinos to irx3b (5′- ACCGGGAGGACTGCGGGGAAACTCG −3′ (Wingert and Davidson, 2011) and hnf1bb (5’-CTTGGACACCATGTCAGTAAA-3’ (Choe et al., 2008) were purchased from Gene Tools LLC and re-suspended in 1X Danieau solution. One-cell embryos were injected with 1–5 nl of morpholino at 1.5 ng/nl for irx3b and 5 ng/nl for hnf1bb. Embryos were incubated at 28.5 ˚C to the desired stage and fixed in 4% paraformaldehyde. All experiments were repeated at least three times to reproducible yield the phenotypes as described in the text.
 
-## gRNA design and injection
+### gRNA design and injection
 
 gRNAs were designed using CHOPCHOP (Harvard) software and synthesised according to published protocols (Gagnon et al., 2014). We modified this protocol slightly to create two gRNAs that simultaneously targeted the first exon (5’-GGCGCGGAGATCTCGGTCAC-3’) and second exon (5’-GGATGCAGAAAAACGAGATG-3’) of the irx3b locus in order to increase the chance of biallelic gene disruption. SP6 promoter containing gRNA templates were generated using Phusion polymerase (ThermoFisher). Transcripts were synthesised using the SP6 Megascript kit (Ambion). Cas9 protein that included a nuclear localisation signal was purchased from PNA-BIO Inc. (CP02). Approximately 10 nl of 0.2 ng/μl irx3b gRNAs1+2, 0.4 ng/μl Cas9 and 300 mM KCl were injected directly into the cell of early one-cell stage embryos as per the Burger et al. (2016) protocol. For the T7 endonuclease assay, five un-injected and five irx3b gRNAs injected embryos were lysed in 50 μl of 50 mM NaOH at 95˚C for 20 min. 5 μl of 100 mM Tris HCl pH 8.5 was added to the lysed embryos and the solution was homogenised. 1 μl of the lysed embryos containing genomic DNA was used in a PCR reaction to amplify irx3b exon 1, with PCR primers flanking the site of mutagenesis (Forward primer 5’-TCCCGCAGCTAGGCTATAAGTA-3’; Reverse primer 5’- ACGGGATCAAATCTGAGCTATT-3’). After purification of the PCR product, 200 ng of amplified DNA, 2 μl of 10X NEB buffer and water (to a final volume of 19 μl) was mixed together and placed in a thermocycler for rehybridisation; 5 min at 95˚C, ramp down to 85˚C at −2˚C/s, ramp down to 25˚C at −0.1˚C/s, 25˚C for 10 min. 1 μl of T7 Endonuclease 1 (NEB) was then added to the rehybridisaed PCR product and incubated at 37˚C for 20 min before the products were ran on a 1.5% agarose gel to analyse for digestion.
 
-## Drug treatments
+### Drug treatments
 
 Embryos were dechorionated and exposed to pharmacological agents at the time-points outlined in the text. Blebbistatin (SigmaAldrich #B0560), DAPT (Generon, A8200) and Compound E (Abcam, ab142164) were dissolved in DMSO to a stock concentration of 10 mM and diluted in E3 media to a working concentration of 10 μM, 100 μM and 50 μM, respectively. Aphidicolin (SigmaAldrich #A0781) was dissolved to a 10 mM stock solution with DMSO. The combined Hydroxyurea (20 mM) and Aphidicolin (150 μM) solution (termed HUA in the text) was made up in E3 embryo medium.
 
-## Whole mount in situ hybridisation and immunohistochemistry
+### Whole mount in situ hybridisation and immunohistochemistry
 
 Whole mount in situ hybridisation was performed using protocols previously described (Thisse and Thisse, 2008). Digoxigenin and Fluorescein anti-sense riboprobes were synthesised using T7/T3/SP6 RNA polymerase transcription kits (Roche Diagnostics) from plasmids used previously (Wingert and Davidson, 2011; Wingert et al., 2007). For double in situ hybridisations, alternative Dig- or Flu- riboprobes were used and alkaline phosphatase was inactivated by two 15 min 100 mM Glycine (pH 2.2) treatments. To perform whole mount antibody staining, fixed embryos were washed twice in PBS containing 0.05% Tween20 (PBST), then placed in PBS containing 0.5% Triton X100 for 20 min to permeabilise the embryo. Embryos were then washed twice in TBS containing 0.05% Triton X100 (TBST) and blocked in TBST containing 3% BSA and 5% Goat serum for at least 1 hr. The Hnf1b (SantaCruz Ab #22840, RRID:AB_2279595 (discontinued) and Sigma-Aldrich #HPA002803, RRID:AB_1080232) and E-cadherin (SantaCruz Ab #7870, RRID:AB_2076666) primary antibodies was added at 1:500 dilution overnight at 4˚C. Embryos were washed five times in PBST before Goat anti-Rabbit IgG DyLight594 conjugated secondary antibody (Abcam #96901, RRID:AB_10679699) was added at 1:500 dilution. Embryos were incubated in the secondary antibody for 2 hr at room temperature, washed twice in PBST then imaged on a FV1000 LiveCell confocal microscope (Olympus).
 
-## Corrected total nuclear fluorescence measurements
+### Corrected total nuclear fluorescence measurements
 
 Corrected total nuclear fluorescence (CTNF) measurements (as shown in Figures 3 and 6) were determined using Fiji to detect Nucleus area, Nucleus Mean Fluorescence and average background fluorescence. CTCF was calculated using the formula; (Nucleus area x Nucleus mean fluorescence) – (Nucleus Area x Average background fluorescence)
 
-## Cryosectioning
+### Cryosectioning
 
 Zebrafish embryos were fixed in 4% PFA overnight at 4˚C and washed twice in PBS and then placed in 1% low melting point agarose containing 5% sucrose and 0.9% agar (made up in water) in cryomoulds. After 1 hr, the cryoblocks were removed from the cryomoulds and placed in 30% Sucrose/PBS. Cryoblocks were incubated overnight at 4˚C then 30% Sucrose/PBS was replaced and left for another night at 4˚C. Cryoblocks were flash frozen on dry ice and immediately sectioned. 14 μm sections were cut in a cryostat machine set to −25˚C and transferred to gelatin-coated microscope slides.
 
-## EdU assay
+### EdU assay
 
 For exposure to the EdU label, Tg(cdh17:egfp) embryos were injected with 0.5 μg/ml EdU (SantaCruz #284628). Injections were performed into the yolk (embryo was immobilised in a well formed from a 1% agarose bed in a 45 mm petri dish) and left in E3 embryo medium for the periods of development outlined in the text (we find incubating embryos in E3 media containing EdU only permitted superficial incorporation at post gastrula stages). Embryos were fixed at the desired stage and then incorporated EdU was detected using a Click-iT EdU Alexa Fluor 594 kit (Life Technologies). We found that this labelling quenched the endogenous eGFP fluorescence in the transgenic embryo, thus antibody staining using the same protocol described above was performed for eGFP (SantaCruz Ab #8334, 1:500).
 
-## Time-lapse imaging
+### Time-lapse imaging
 
 32 hpf Tg(cdh17:egfp) embryos were anaesthetised in embryo media containing 0.02% Ethyl 3-aminobenzoate methanesulfonate (Tricaine) and 0.003% N-phenylthiourea (PTU). Anaesthetised embryos were placed in a well made in a 1.5% agarose gel and positioned appropriately for image capture. Z-stack confocal images were captured every 20 min for 20 hr on a FV1000 LiveCell confocal microscope (Olympus) to generate the time-lapse video.
 
-## Laser ablation
+### Laser ablation
 
 Our laser ablation protocol was similar to that described previously (Naylor et al., 2016a; Palmyre et al., 2014). Tg(cdh17:egfp) embryos at 32 hpf were manually de-chorionated and placed into a well on a petri dish containing a bed of 1% agarose. Embryos were oriented to be positioned laterally and GFP-labelled pronephric tubule at the position of the presumptive CS gland was photo-ablated using a 60X water-dipping objective. We found a 5 min exposure to a 405 nm diode laser at maximum intensity with a 12.5 μs/pixel dwell time was required to enable severance of the tubule, when observed later at 50 hpf. The specific target region corresponding to a circular area with a diameter of 25 μm was selected using a Sim Scanner on an Olympus FluoView FV1000 confocal laser-scanning microscope. Subsequent to photo-ablation, embryos were transferred to fresh E3 embryo medium and grown to 50 hpf for further analysis.

@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 RNA Therapeutics Institute, University of Massachusetts Chan Medical School, Howard Hughes Medical Institute Worcester United States
-2. https://ror.org/03vek6s52 Department of Stem Cell and Regenerative Biology, Harvard University Cambridge United States
-3. https://ror.org/04kj1hn59 Harvard Stem Cell Institute Cambridge United States
-4. https://ror.org/002pd6e78 Center for Regenerative Medicine, Massachusetts General Hospital Boston United States
+1. RNA Therapeutics Institute, University of Massachusetts Chan Medical School, Howard Hughes Medical Institute Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. Department of Stem Cell and Regenerative Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+3. Harvard Stem Cell Institute Cambridge United States ([ROR:04kj1hn59](https://ror.org/04kj1hn59))
+4. Center for Regenerative Medicine, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
 
 † Corresponding author
 
@@ -32,15 +32,31 @@ Here we apply 2DTM of the ribosome large subunit (LSU) to a conditionally immort
 
 ## Results
 
-## 2DTM detects large ribosomal subunits in cryo-FIB lamellae of mammalian cells
+### 2DTM detects large ribosomal subunits in cryo-FIB lamellae of mammalian cells
 
 FIB-milled Saccharomyces cerevisiae (yeast) cells are sufficiently well preserved to permit localization of 60S ribosomal subunits with 2DTM (Lucas et al., 2022). Due to the larger size of mammalian cells compared to yeast cells, it was unclear whether plunge freezing would be adequate to produce vitreous ice across the whole volume of the cell. To test this we prepared cryo-lamellae of mouse neutrophil cells. A low magnification image of a representative lamella clearly shows cellular features consistent with a neutrophile-like phenotype, mainly a segmented nucleus and a plethora of membrane-organelles, corresponding to the granules and secretory vesicles of neutrophils (Figure 1A). We then proceeded to acquire micrographs on this lamella with a defocus of 0.5–1.0 μm, 30 e-/Å2/s exposure and 1.76 Å pixel size. We manually selected multiple locations in the lamella and acquired micrographs using standard low-dose techniques where focusing is performed on a sacrificial area. The resulting micrographs showed smooth bilayered membranes and no signs of crystalline ice (Figure 1C and D), indicating successful vitrification throughout the lamella.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/80980/elife-80980-fig1-v2.jpg)
+
+**Figure 1.:** Major cellular regions are labeled, as Nucleus (Nuc), Mitochondria (M), and granular cytoplasm (GrCyt). FOVs where high-magnification images for template matching where acquired are indicated as boxes with the number of detected targets indicated on the bottom right. FOVs displayed in Panels B-E are color-coded. Scalebar corresponds to 1 μm. (B–E) FOVs with projection of detected LSUs shown in cyan. (B) Perinuclear region, the only detected targets are in the cytoplasmic half. (C) Cytoplasmic region with high density of ribosomes (D) Mitochondrium, as expected there are only detected LSUs in the cytoplasmic region (E) Cytoplasm, with low density of ribosomes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80980/elife-80980-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Maximum intensity projection (MIP) cross-correlation map of a micrograph shown in Figure 1B. (B+C) 3D plot of MIP regions indicated by color boxes in Panel A.
+
 We used an atomic model of the 60S mouse ribosomal subunit (6SWA) for 2DTM (Kraushar et al., 2021). In a subset of images, the distribution of cross-correlation scores significantly exceeded the distribution expected from images devoid of detectable targets. In the resulting scaled maximum-intensity projections (MIPs), clear peaks with SNR values up to 10 were apparent (Figure 1—figure supplement 1A). Using a threshold criterion to select significant targets (see Methods), we found that in images of cytosolic compartments there were 10–500 ribosomes within one micrograph (Figure 1B–E). Notably, we found no targets in areas corresponding to the nucleus (Figure 1B) or mitochondria (Figure 1D). In the cytoplasm, we found a highly variable number of targets, only ~50 in some exposures (Figure 1E) and up to 500 in others (Figure 1C). However, it is unclear whether this ten-fold difference in local ribosome concentration is due to technical variation, such as sample thickness, or biological variation. To differentiate between the two we reasoned it was important to not manually choose imaging regions and to collect larger amounts of data. We therefore set out to collect cryo-EM data for 2DTM from mammalian cell lamellae in a high-throughput unbiased fashion.
 
-## DeCo-LACE for 2D imaging of whole lamellae
+### DeCo-LACE for 2D imaging of whole lamellae
 
 In order to obtain high-resolution data from complete lamellae, we developed a new approach for data collection. This approach uses three key strategies: (1) every electron that exposes a fresh area of the sample is collected on the camera, (2) image shift is used to precisely and quickly raster the surface of a lamella, and (3) focusing is done without using a sacrificial area (Figure 2A and B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80980/elife-80980-fig2-v2.jpg)
+
+**Figure 2.:** (A) Graphic demonstrating the data-collection strategy for DeCo-LACE. The electron beam is condensed to a diameter $D_{B⁢e⁢a⁢m}$ that allows capturing of the whole illuminated area on the camera. Beam-image shift along X and Y ($B⁢I⁢S_{X}$,$$B⁢I⁢S_{Y}$) is used to scan the whole lamella. (B) Diagram of the collection algorithm. (C) Example overview image of a lamella with the designated acquisition positions and the used beam diameter indicated with red circles. Scalebar corresponds to 1 μm. (D+E) Representative micrographs taken with a condensed beam at eucentric focus (panel D) or fringe-free focus (panel E). Scalebar corresponds to 100 nm. (F) Boxplot of defocus measured by ctffind of micrographs taken by the DeCo-LACE approach on four lamellae imaged at eucentric focus and four lamellae imaged with fringe-free focus. Sample size n is indicated for each lamella.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80980/elife-80980-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Defocus values of individual micrographs taken using the DeCo-LACE approach plotted as a function of the beam image-shift values. (B) Defocus astigmatism of individual micrographs taken using the DeCo-LACE approach plotted as a function of the beam image-shift values.
 
 To ensure that every electron exposing a fresh area of the sample is captured by the detector, we adjusted the electron beam size to be entirely contained by the detector area. During canonical low-dose imaging, the microscope is configured so that the focal plane is identical to the eucentric plane of the specimen stage. This leaves the C2 aperture out of focus, resulting in ripples at the edge of the beam (Figure 2D). While these ripples are low-resolution features that likely do not interfere with 2DTM (Rickgauer et al., 2017), we also tested data collection under conditions where the C2 aperture is in focus (fringe-free, Figure 2E; Konings et al., 2019).
 
@@ -48,21 +64,49 @@ We then centered a lamella on the optical axis of the microscope and used the im
 
 We used this strategy to collect data on eight lamellae, four using the eucentric focus condition, hereafter referred to as LamellaEUC, and four using the fringe-free condition, hereafter referred to as LamellaFFF (Figure 3A-F, Figure 3—figure supplement 4A). We were able to collect data with a highly consistent defocus of 800 nm (Figure 2F), both in the eucentric focus and fringe-free focus condition. To ensure that data were collected consistently, we mapped defocus values as a function of the applied image shift (Figure 2—figure supplement 1A). This demonstrated that the defocus was consistent across a lamella, except for rare outliers and in images containing contamination. We also plotted the measured objective astigmatism of each lamella and found that it varies with the applied image shift, becoming more astigmatic mostly due to image shift in the x direction (Figure 2—figure supplement 1B). While approaches exist to correct for this during the data collection (Wu et al., 2019), we opted to not use these approaches in our initial experiments. We reasoned that because 2DTM depends on high-resolution information, this would be an excellent test of how much these aberration affect imaging.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/80980/elife-80980-fig3-v2.jpg)
+
+**Figure 3.:** (A) Overview image of LamellaEUC 1 taken at low magnification. Scalebar corresponds to 1 μm. (B) Overview of LamellaEUC 1 created by montaging high magnification images taken with the DeCo-LACE approach. Scalebar corresponds to 1 μm. (C) Zoom-in into the red box in panel B. Slight beam-fringe artifacts are visible. Scalebar corresponds to 100 nm. (D) Overview image of LamellaFFF 4 taken at low magnification. Scalebar corresponds to 1 μm. (E) Overview of LamellaFFF 4 created by montaging high magnification images taken with the DeCo-LACE approach. Scalebar corresponds to 1 μm. (F) Zoom-in into the red box in panel E. No beam-fringe artifacts are visible. Scalebar corresponds to 100 nm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80980/elife-80980-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** At the top of each panel is an average of the movie that was motion-corrected with a red dashed box indicating the region that was used to estimate shifts. Below is a graph indicating the estimated shifts of the individual frames of the movie. Below this is the MIP of 2DTM using the large subunit of the mouse ribosome. (A) Motion correction of the whole movie (B) Motion correction of a cropped region of the movie that eliminates the beam edges. (C) Motion correction of the whole movie, using only the central region to estimate the shifts. (D) Representative result of 2DTM (bottom) on uncorrected micrographs. Detections along the beam edge are artifacts due to the high-contrast signal. (E) Micrograph after preprocessing for 2DTM (top). The micrograph has been cropped to the perimeter of the beam and unilluminated areas of the image have been replaced with Gaussian noise. After running 2DTM on this micrograph (bottom), no more artifactual detections are observed.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80980/elife-80980-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Total estimated motion of individual micrographs taken using the DeCo-LACE approach plotted as a function of the beam image-shift values. (B) Sample thickness estimate of individual micrographs taken using the DeCo-LACE approach plotted as a function of the beam image-shift values. Sample thickness was estimated using Lamber-Beers law using a coefficient of 322 nm (Rice et al., 2018). (C) Distance between highest and lowest LSU detection in each micrograph plotted as a function of estimated sample thickness. The dashed black line indicates unity and red dashed line is drawn in parallel with an x intercept of 70 nm. Most data points fall below the red dashed line, indicating that no detections occur within 35 nm of the lamella edge.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/80980/elife-80980-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Contrast and Brightness have been adjusted to highlight uneven exposure response. (A) Eucentric Focus (B) Fringe-free Focus.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/80980/elife-80980-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Overviews taken at low magnification. Scalebar corresponds to 1 μm. (B) Overviews assembled using the DeCo-LACE approach. Scalebar corresponds to 1 μm. (C) Representative examples of a class of granules containing a putatively cytosolic inclusion. Scalebar corresponds to 100 nm.
+
 We assembled the tile micrographs into a montage using the image-shift values and the SerialEM calibration followed by cross-correlation based refinement (see Methods). In the resulting montages, the same cellular features visible in the overview images are apparent (Figure 3B+E, Figure 3—figure supplement 4B), however due to the high magnification and low defocus many more details, such as the membrane bilayer separation, can be observed (Figure 3C+F). For montages collected using the eucentric condition, there are clearly visible fringes at the edges between the tiles (Figure 3C), which are absent in the fringe-free focus montages (Figure 3F). In our analysis below, we show that these fringes do not impede target detection by 2DTM, making them primarily an aesthetic issue. We also note that the tiling pattern is visible in the montages (Figure 3B+E), which we believe is due to the non-linear behavior of the K3 camera since we can observe these shading artifacts in images of a condensed beam over vacuum (Figure 3—figure supplement 3).
 
 The montages show membrane vesicles and granules with highly variable sizes and density. We found that a substantial number of granules, which are characterized by higher density inside the surrounding cytosol (Bainton et al., 1971), seemed to contain a membrane-enclosed inclusion with density similar to the surrounding cytosol (Figure 3—figure supplement 4C) and could therefore be formed by inward budding of the granule membrane. These granules were 150–300 nm in diameter and the inclusions were 100–200 nm in diameter. Based on these dimensions the granules are either azurophil or specific granules (Bainton et al., 1971). To our knowledge, these inclusions have not been described in granulocytes and are further described and discussed below.
 
-## 2DTM of DeCo-LACE data reveals large ribosomal subunit distribution in cellular cross-sections
+### 2DTM of DeCo-LACE data reveals large ribosomal subunit distribution in cellular cross-sections
 
 In our initial attempts of using 2DTM on micrographs acquired with the DeCo-LACE protocol, we did not observe any SNR peaks above threshold using the large subunit of the mouse ribosome (Figure 3—figure supplement 1A). We reasoned that the edges of the beam might interfere with motion-correction of the movies as they represent strong low-resolution features that do not move with the sample. When we cropped the movie frames to exclude the beam edges, the estimated amount of motion increased (Figure 3—figure supplement 1B), consistent with successful tracking of sample motion. Furthermore, in the motion-corrected average we could identify significant SNR peaks (Figure 3—figure supplement 1B), confirming the high sensitivity of 2DTM to the presence of high-resolution signal preserved in the images by the motion correction. To streamline data processing, we implemented a function in unblur to consider only a defined central area of a movie for estimation of sample motion, while still averaging the complete movie frames (Figure 3—figure supplement 1C). Using this approach, we motion-corrected all tiles in the eight lamellae and found consistently total motion below 1 Å per frame (Figure 3—figure supplement 2A). In some lamellae, we found increased motion in the lamella center, which indicates areas of variable mechanical stability within FIB-milled lamellae. In some micrographs, we also observed that the beam edges gave rise to artifacts in the MIP and numerous false-positive detections at the edge of the illuminated area (Figure 3—figure supplement 1D). A similar phenomenon was observed on isolated hot pixels in unilluminated areas. To overcome this issue, we implemented a function in the program unblur to replace dark areas in the micrograph with Gaussian noise (see Materials and methods), with mean and standard deviation matching the illuminated portion of the micrograph (Figure 3—figure supplement 1D+E). Together, these pre-processing steps enabled us to perform 2DTM on all tiles of the eight lamellae.
 
 We used the tile positions to calculate the positions of the detected LSUs in the lamellae (Figure 4A, Figure 5A, Figure 4—video 1, Figure 5—video 1). Overlaying these positions of the lamella montages reveals the LSU distribution throughout the FIB-milled slices of individual cells. Consistent with prior observations imaging selected views in yeast (Lucas et al., 2022), organelles like the nucleus and mitochondria only showed sporadic targets detected with low SNRs, consistent with the estimated false-positive rate of one per tile. For each detected target, we also calculated the Z positions from the individual estimated defocus and defocus offset for each tile. When viewed from the side, the ribosome positions therefore show the slight tilts of the lamellae relative to the microscope frame of reference (Figure 4B, Figure 5B, Figure 4—video 1, Figure 5—video 1). Furthermore, the side views indicated that lamellae were thinner at the leading edge. To confirm this we estimated the ice thickness in individual tiles using the Beer-Lambert law (Rice et al., 2018) with 322 nm as coefficient (Rice et al., 2018; Figure 3—figure supplement 2B). We found that the thickness of the lamellae varied between 100 and 250 nm, with consistently thinner ice at the leading edge even though we prepared the lamellae with the overtilt approach (Schaffer et al., 2017). To further confirm the relationship of the range in Z-positions of detections and sample thickness we plotted the range in Z-positions as a function of the estimated sample thickness (Figure 3—figure supplement 2C). For most tiles, the apparent thickness of LSU detections was at least 70 nm less than the estimated sample thickness, indicating that no detections were being made within 35 nm of the lamella edge. It is possible that this is caused by sample damage during FIB-milling as similar values for damaged areas in FIB-milled lamellae have been estimated from sub-tomogram averaging (Berger et al., 2022). This means that LSU detections across the lamellae can be skewed by a change in thickness and sample damage. Therefore, better sample preparation methods together with a better understanding of the damage to the sample during FIB-milling are needed to accurately quantify molecular concentrations.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/80980/elife-80980-fig4-v2.jpg)
+
+**Figure 4.:** (A) Montage of LamellaEUC1 overlaid with detected targets colored in orange. Scalebar corresponds to 1 μm. (B) Side view of detected targets in the lamella, such that the direction of the electron beam is horizontal. (C–F) Magnified area of panel A showing rough ER with associated ribosomes (C), outer nuclear membrane with associated ribosomes (D), ribsomes arranged in a circular fashion (E), ribosomes enclosed in a less dense inclusion in a granule (F). Ribosomes are colored in white with the surface of the peptide exit tunnel colored in green and the A, P, and E sites colored in blue, purple, and red, respectively. Scalebar corresponds to 100 nm.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80980/elife-80980-fig5-v2.jpg)
+
+**Figure 5.:** (A) Montage of LamellaFFF4 overlaid with detected targets colored in orange. Scalebar corresponds to 1 μm. (B) Side view of detected targets in the lamella, such that the direction of the electron beam is horizontal. (C–E) Magnified area of panel A showing rough ER with associated ribosomes (C) and ribosomes enclosed in a less dense inclusion in a granule (D,E). (F) Side view of panel E. Ribosomes are colored in white with the surface of the peptide exit tunnel colored in green and the A, P, and E sites colored in blue, purple, and red, respectively. Scalebar corresponds to 100 nm.
+
 As described in Rickgauer et al., 2017 the 2DTM SNR threshold for detecting a target is chosen to result in one false positive detection per image searched. We would therefore expect to find one false positive detection per tile. We reasoned that the large nuclear area imaged by DeCo-LACE could be used to test whether this assumption is true. In the 670 tiles containing exclusively nucleus (as manually annotated from the overview image) we detected 247 targets, making the false-positive rate more than twofold lower than expected. Since earlier work shows that 2DTM with the LSU can produce matches to nuclear ribosome biogenesis intermediates (Lucas et al., 2022), this could even be an overestimate of the false-positive rate. This suggests that the detection threshold could be even lower, which is an area of ongoing research.
 
 Close inspection of the LSU positions in the lamellae revealed several interesting features. LSUs could be seen associating with membranes, in patterns reminiscent of the rough endoplasmic reticulum (Figure 4C, Figure 5C) or the outer nuclear membrane (Figure 4D). We also observed LSUs forming ring-like structures (Figure 4E), potentially indicating circularized mRNAs (Wells et al., 1998). While ribosomes were for the most part excluded from the numerous granules observed in the cytoplasm, in some cases we observed clusters of LSUs in the inclusions of double-membraned granules described earlier (Figure 4F, Figure 5D and E). It is, in principle, possible that these targets are situated above or below the imaged granules, since the granule positions in z cannot be determined using 2D projections. However, in the case of Figure 5E, the detected LSUs span the whole lamella in the z direction (Figure 5F), while positions above or below a granule would result in LSUs situated exclusively at the top or bottom of the lamella. This is consistent with the earlier hypothesis that the inclusions are of cytoplasmic origin.
 
-## Does DeCo-LACE induce aberrations that affect 2DTM?
+### Does DeCo-LACE induce aberrations that affect 2DTM?
 
 Within the eight lamellae we found different numbers of detected targets, ranging from 1089–6,433 per lamella (Figure 6A). LamellaEUC 1 had the most detected targets, but also had the largest surface area and contained cytoplasm from two cells. LamellaFFF 4 had the fewest detected targets, but this particular lamella was dominated by a circular section of the nucleus, with only small pockets of cytoplasm (Figure 3—figure supplement 4). In an attempt to normalize for these differences in area containing cytoplasm, we compared the number of detected targets per tile in tiles that contained more than one target, which should exclude tiles with non-cytosolic content (Figure 6B). While this measure had less variability, there were still differences. LamellaEUC 4 had not only the fewest targets, but also the lowest density, which could be due to this lamella being the thinnest, or due to it sectioning the cell in an area with a lower concentration of ribosomes. LamellaFFF 3 had a substantially higher number of ribosomes per tile. Since all of these lamellae were made from a cell-line under identical conditions, this underscores the necessity to collect data from large numbers of lamellae to overcome the inherent variability. When comparing the distribution of scores between lamellae, we found them to be fairly comparable with median SNRs ranging from 8.7 to 9.7 (Figure 6C). LamellaEUC 1 had slightly lower scores compared to the rest, potentially due to its large size and connected mechanical instability during imaging. Overall, we did not observe differences in the number or SNR of detected targets between eucentric or fringe-free illumination conditions that were bigger than the observed inter-lamella variability.
 
@@ -74,7 +118,7 @@ Since the SNR values of 2DTM are highly sensitive to image quality, we reasoned 
 
 We also wondered whether large image shifts would lead to aberrations due to astigmatism or beam tilt (Wu et al., 2019). We reasoned that if that was the case the number of detected targets should be highest in the center of the lamella where the applied beam image-shift is 0. Instead, we observed that in both eucentric and fringe-free focus conditions more targets were detected at the back edge of the lamella (Figure 6E). This may be due to the center of the cell being predominantly occupied by the nucleus, despite its segmentation in neutrophil-like cells. The increase in matches at the back of the lamellae compared to the front can also be explained by the thickness gradient of the lamellae (Figure 3—figure supplement 2B, Figure 4B, Figure 5B). In addition, aberrations would be expected to cause average 2DTM SNRs to be higher when beam-image shift values are small. Instead, we found that SNRs where on average the highest at the front edge of the lamellae (Figure 6F), presumably due to the reduced sample thickness. We therefore conclude that factors other that beam image-shift or beam condensation aberrations are limiting 2DTM SNRS, predominantly the thickness of the lamellae.
 
-## Computation is the bottleneck of visual proteomics
+### Computation is the bottleneck of visual proteomics
 
 All lamellae described above were derived from a clonal cell line under identical condition and thinned with the same parameters. This means that the substantial variability of detected targets between the lamellae must be due to sample preparation variability, including area, thickness, mechanical stability, and location of the section within the cell. We therefore predict that further studies that want to draw quantitative and statistically relevant conclusions about the number and location of molecules under different experimental conditions, will require collection of orders of magnitude more data than in this study to gain enough statistical power given this variability. The samples used were prepared in two 24 hr sessions on a FIB/SEM instrument, and imaging was performed during another two 24 hr session on the TEM microscope. Inspections of the timestamps of the raw data files revealed that the milling time per lamella was ~30 min and TEM imaging was accomplished in ~10 s per tile or 90 min for a~6 × 6 μm lamella. Processing of the data, however, took substantially longer. Specifically, 2DTM of all tiles took approximately one week per lamella on 32 Nvidia A6000 GPUs. Computation is therefore a bottleneck in our current workflow, and further optimizations of the algorithm may be necessary to increase throughput. Alternatively, this bottleneck could be reduced by increasing the number of processing units.
 
@@ -94,47 +138,97 @@ Since we observed substantial variation in LSU density within and between lamell
 
 ## Materials and methods
 
-## Grid preparation
+**Key resources table**
 
-ER-HoxB8 cells were generated as described by Wang et. al. (Sykes et al., 2016; Wang et al., 2006) and maintained in RPMI medium supplemented with 10% FBS, penicillin/streptomycin, SCF, and estrogen at 37 °C and 5% CO2. 120 hr prior to grid preparation, cells were washed twice in PBS and cultured in the same medium except without estrogen. The authenticity of the cells was verified by flow-cytometry and Giemsa staining after differentiation (Sykes et al., 2016; Wang et al., 2006). Cells were then counted and diluted to 1⋅106 cells/ml. Grids (either 200 mesh copper grids, with a sillicone-oxide and 2 µm holes with a 2 µm spacing or 200 mesh gold grids with a thin gold film and 2 µm holes in 2 µm spacing) were glow-discharged from both sides using a 15 mA for 45 s. 3.5 l of cell suspension was added to grids on the thin-film side and grids were blotted from the back side using a GP2 cryoplunger (Leica, Wetzlar, Germany) for 8 s and rapidly plunged into liquid ethane at –185 °C.
 
-## FIB-milling
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>ER-HoxB8</td>
+      <td>Sykes et al., 2016</td>
+      <td></td>
+      <td>Generated from mouse bone marrow as described</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SCF</td>
+      <td>Sykes et al., 2016</td>
+      <td></td>
+      <td>Generated from CHO-SCF cell line as described</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Estrogen</td>
+      <td>Sigma</td>
+      <td>E8875</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Grid preparation
+
+ER-HoxB8 cells were generated as described by Wang et. al. (Sykes et al., 2016; Wang et al., 2006) and maintained in RPMI medium supplemented with 10% FBS, penicillin/streptomycin, SCF, and estrogen at 37 °C and 5% CO2. 120 hr prior to grid preparation, cells were washed twice in PBS and cultured in the same medium except without estrogen. The authenticity of the cells was verified by flow-cytometry and Giemsa staining after differentiation (Sykes et al., 2016; Wang et al., 2006). Cells were then counted and diluted to $1⋅10^{6}$ cells/ml. Grids (either 200 mesh copper grids, with a sillicone-oxide and 2 µm holes with a 2 µm spacing or 200 mesh gold grids with a thin gold film and 2 µm holes in 2 µm spacing) were glow-discharged from both sides using a 15 mA for 45 s. 3.5 l of cell suspension was added to grids on the thin-film side and grids were blotted from the back side using a GP2 cryoplunger (Leica, Wetzlar, Germany) for 8 s and rapidly plunged into liquid ethane at –185 °C.
+
+### FIB-milling
 
 Grids were loaded into an Aquilos 2 FIB/SEM (Thermo Fisher, Waltham, MA) instrument with a stage cooled to –190 °C. Grids were sputter-coated with platinum for 15 s at 45 mA and then coated with a layer of platinum-precursor by opening the GIS-valve for 45 s. An overview of the grid was created by montaging SEM images and isolated cells at the center of gridsquares were selected for FIB-milling. Lamellae were generated automatically using the AutoTEM software (Thermo Fisher), with the following parameters:
 
 This resulted in 6–10 µm wide lamella with 150–250 nm thickness as determined by FIB-imaging of the lamella edges.
 
-## Data collection
+### Data collection
 
 Grids were loaded into a Titan Krios TEM (Thermo Fisher) operated at 300 keV and equipped with a BioQuantum energy filter (Gatan, Pleasanton, CA) and K3 camera (Gatan). The microscope was aligned using a cross-grating grid on the stage. Prior to each session, we carefully performed the Image/Beam calibration in nanoprobe. We set the magnification to a pixel size of 1.76 Å and condensed the beam to ~900 nm diameter, resulting in the beam being completely visible on the camera. To establish fringe-free conditions, the Fine eucentric procedure of SerialEM (Mastronarde, 2005) was used to move a square of the cross-grating grid to the eucentric position of the microscope. The effective defocus was then set to 2 µm, using the autofocus routine of SerialEM. The objective focus of the microscope was changed until no fringes were visible. The stage was then moved in Z until images had an apparent defocus of 2 µm. The difference in stage Z-position between the eucentric and fringe-free conditions was used to move other areas into fringe-free condition.
 
-Low magnification montages were used to find lamellae and lamellae that were sufficiently thin and free of contamination were selected for automated data collection. Overview images of each lamella were taken at ×2250 magnification (38 Å pixel size). The corners of the lamella in the overview image were manually annotated in SerialEM and translated into beam image-shift values using SerialEMs calibration. A hexagonal pattern of beam image-shift positions was calculated that covered the area between the four corners in a serpentine way, with a 3⋅0.95⋅r horizontal spacing and 3/2⋅0.95⋅r vertical spacing, where r is the radius of the illuminated area. For the fringe-free focus condition r was 250 nm and for the eucentric focus r was 230 nm. This resulted in a fractional overlap of adjacent tiles of 10.3% for the fringe-free focus condition and 12.9% for the eucentric focus condition. Exposures were taken at each position with a 30 e-/Å2 total dose. After each exposure, the defocus was estimated using the ctffind function of SerialEM and the focus for the next exposure was corrected by the difference between the estimated defocus and the desired defocus of 800 nm. Furthermore, after each exposure the deviation of the beam from the center of the camera was measured and corrected using the CenterBeamFromImage command of SerialEM.
+Low magnification montages were used to find lamellae and lamellae that were sufficiently thin and free of contamination were selected for automated data collection. Overview images of each lamella were taken at ×2250 magnification (38 Å pixel size). The corners of the lamella in the overview image were manually annotated in SerialEM and translated into beam image-shift values using SerialEMs calibration. A hexagonal pattern of beam image-shift positions was calculated that covered the area between the four corners in a serpentine way, with a $\sqrt{3}⋅0.95⋅r$ horizontal spacing and $3/2⋅0.95⋅r$ vertical spacing, where $r$ is the radius of the illuminated area. For the fringe-free focus condition r was 250 nm and for the eucentric focus r was 230 nm. This resulted in a fractional overlap of adjacent tiles of 10.3% for the fringe-free focus condition and 12.9% for the eucentric focus condition. Exposures were taken at each position with a 30 e-/Å2 total dose. After each exposure, the defocus was estimated using the ctffind function of SerialEM and the focus for the next exposure was corrected by the difference between the estimated defocus and the desired defocus of 800 nm. Furthermore, after each exposure the deviation of the beam from the center of the camera was measured and corrected using the CenterBeamFromImage command of SerialEM.
 
 After data collection, a 20 s exposure at ×2250 magnification of the lamella at 200 μm defocus was taken for visualization purposes. A Python script implementing this procedure is available at https://github.com/jojoelfe/deco_lace_template_matching_manuscript; Elferich, 2022b.
 
-## DeCo-LACE data processing
+### DeCo-LACE data processing
 
 An overview of the data analysis pipeline is shown in Figure 7.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/80980/elife-80980-fig7-v2.jpg)
 
-## Pre-processing
+#### Pre-processing
 
 Motion-correction, dose weighting and other preprocessing as detailed below was performed using cisTEM (Grant et al., 2018). To avoid influence of the beam-edge on motion-correction, only a quarter of the movie in the center of the camera was considered for calculation of the estimated motion. After movie frames were aligned and summed, a mask for the illuminated area was calculated by lowpass filtering the image with a 100 Å resolution cutoff, thresholding the image at 10% of the maximal value and then lowpass filtering the mask again with a 100 Å resolution cutoff to smooth the mask edges. This mask was then used to select dark areas in the image and fill the pixels with Gaussian noise, with the same mean and standard deviation as the illuminated area. A custom version of the unblur program (Grant and Grigorieff, 2015) implementing this procedure is available at https://github.com/jojoelfe/cisTEM/tree/2574dbdf6161658fd177660b3a841100a792f61b. During motion correction, images were resampled to a pixel size of 1.5 Å. The contrast-transfer function (CTF) was estimated using ctffind (Rohou and Grigorieff, 2015), searching between 0.2 and 2 μm defocus.
 
-## 2DTM
+#### 2DTM
 
 The search template was generated from the atomic model of the mouse LSU (PDB 6SWA, exluding the Epb1 subunit) using the cryo-EM simulator implemented in cisTEM (Himes and Grigorieff, 2021). The match_template program (Lucas et al., 2021) was used to search for this template in the movie-aligned, exposure-filtered and masked images, using a 1.5° angular step in out-of-plane angles and a 1.0° angular step in-plane. 11 defocus planes in 20 nm steps centered around the ctffind-determined defocus were searched. Targets were defined as detected when their matches with the template produced peaks with a singal-to-noise ratio (SNR) above a threshold of 7.75, which was chosen based on the one-false-positive-per-tile criterion (Rickgauer et al., 2017).
 
-## Montage assembly
+#### Montage assembly
 
-The coordinates of each tile i, ci [2D Vector in pixels] were initialized using beam image-shift of the tile, bi [2D Vector in μm], and the ISToCamera matrix IC, as calibrated by SerialEM:ci=IC⋅bi
+The coordinates of each tile $i$, $c_{i}$ [2D Vector in pixels] were initialized using beam image-shift of the tile, $b_{i}$ [2D Vector in μm], and the ISToCamera matrix $IC$, as calibrated by SerialEM:
 
-A list of tile pairs i,j that overlap were assembled by selecting images where |ci−cj|<DBeam. In order to calculate the precise offset between tiles i and j, ri,j, we calculated the cross-correlation between the two tiles, masked to the overlapping illuminated area using the scikit-image package (van der Walt et al., 2014) to calculate refined offsets. The coordinates ci were then refined by a least-square minimization against ri,j:minc∑pairs(ri,j−(ci−cj))2
+$$
+c_{i}=IC⋅b_{i}
+$$
+
+A list of tile pairs $i,j$ that overlap were assembled by selecting images where $|c_{i}−c_{j}|<D_{Beam}$. In order to calculate the precise offset between tiles $i$ and $j$, $r_{i,j}$, we calculated the cross-correlation between the two tiles, masked to the overlapping illuminated area using the scikit-image package (van der Walt et al., 2014) to calculate refined offsets. The coordinates $c_{i}$ were then refined by a least-square minimization against $r_{i,j}$:
+
+$$
+minc\sumpairs(r_{i,j}−(c_{i}−c_{j}))^{2}
+$$
 
 using the scipy package (Virtanen et al., 2020). The masked cross-correlation and the least-square minimization was repeated once more to arrive at the final tile alignment.
 
-The x,y coordinates of target n detected by 2DTM in the tile i, mn,iT, was transformed into the montage frame by adding the coordinate of the tile,mnM=mn,iT+ci
+The x,y coordinates of target $n$ detected by 2DTM in the tile $i$, $m_{n,i}^{T}$, was transformed into the montage frame by adding the coordinate of the tile,
+
+$$
+m_{n}^{M}=m_{n,i}^{T}+c_{i}
+$$
 
 The z coordinate of each target was calculated as the sum of the defocus offset for the target, the estimated defocus of the tile, and the nominal defocus of the microscope when the tile was acquired.
 

@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/03m2x1q45 Department of Molecular and Cellular Biology, University of Arizona Tucson United States
+1. Department of Molecular and Cellular Biology, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
 
 † Corresponding author
 
 ## Abstract
 
-The target of rapamycin complex I (TORC1) regulates cell growth and metabolism in eukaryotes. Previous studies have shown that nitrogen and amino acid signals activate TORC1 via the highly conserved small GTPases, Gtr1/2 (RagA/C in humans), and the GTPase activating complex SEAC/GATOR. However, it remains unclear if, and how, other proteins/pathways regulate TORC1 in simple eukaryotes like yeast. Here, we report that the previously unstudied GPCR-like protein, Ait1, binds to TORC1-Gtr1/2 in Saccharomyces cerevisiae and holds TORC1 around the vacuole during log-phase growth. Then, during amino acid starvation, Ait1 inhibits TORC1 via Gtr1/2 using a loop that resembles the RagA/C-binding domain in the human protein SLC38A9. Importantly, Ait1 is only found in the Saccharomycetaceae/codaceae , two closely related families of yeast that have lost the ancient TORC1 regulators Rheb and TSC1/2. Thus, the TORC1 circuit found in the Saccharomycetaceae/codaceae , and likely other simple eukaryotes, has undergone significant rewiring during evolution.
+The target of rapamycin complex I (TORC1) regulates cell growth and metabolism in eukaryotes. Previous studies have shown that nitrogen and amino acid signals activate TORC1 via the highly conserved small GTPases, Gtr1/2 (RagA/C in humans), and the GTPase activating complex SEAC/GATOR. However, it remains unclear if, and how, other proteins/pathways regulate TORC1 in simple eukaryotes like yeast. Here, we report that the previously unstudied GPCR-like protein, Ait1, binds to TORC1-Gtr1/2 in Saccharomyces cerevisiae and holds TORC1 around the vacuole during log-phase growth. Then, during amino acid starvation, Ait1 inhibits TORC1 via Gtr1/2 using a loop that resembles the RagA/C-binding domain in the human protein SLC38A9. Importantly, Ait1 is only found in the Saccharomycetaceae/codaceae, two closely related families of yeast that have lost the ancient TORC1 regulators Rheb and TSC1/2. Thus, the TORC1 circuit found in the Saccharomycetaceae/codaceae, and likely other simple eukaryotes, has undergone significant rewiring during evolution.
 
 ## Introduction
 
@@ -41,7 +41,7 @@ Here, to learn more about TORC1 regulation in yeast, and other simple eukaryotes
 
 ## Results
 
-## The TORC1 interactome in budding yeast
+### The TORC1 interactome in budding yeast
 
 As a first step toward building a map of the TORC1 regulatory network, we developed an immunopurification protocol that makes it possible to capture and identify TORC1 interactors. Cells carrying Kog1-FLAG, and in parallel cells carrying Kog1-HA, were grown to log-growth phase, or grown to log-growth phase and transferred into stress or starvation medium, rapidly filtered and flash frozen. The cells were then lysed and treated with the short (12 Å) cleavable crosslinker dithiobis(succinimidyl propionate) (DSP) and the nonionic detergent digitonin (Murley et al., 2017). The supernatants from the Kog1-HA and Kog1-FLAG strains were then immunopurified in parallel on anti-FLAG columns, the crosslinkers broken, and the samples analyzed using mass spectrometry. Proteins with at least twofold higher abundance in the true IP (Kog1-FLAG) versus the mock IP (Kog1-HA), and with at least seven peptide spectral maps in the true IP, were scored as potential interactors. In total, we immunopurified Kog1 in 11 different experiments (in nine conditions) and ran a similar experiment to identify Pib2 interactors in two conditions. These purifications led to the identification of over 200 interactors, 138 of which were identified in four or more experiments (Supplementary file 1). At the top of this list are 45 proteins identified in 7 or more experiments, including: (1) all four subunits of TORC1 (blue names, Figure 1); (2) Gtr1, Gtr2, and Ego1, all three subunits of SEACIT, and two subunits of SEACAT (green names, Figure 1); (3) a variety of proteins that have been shown to play some role in TORC1 signaling previously, including several TORC1 substrates (Huber et al., 2009; Liu et al., 2003; Breitkreutz et al., 2010) (black names, Figure 1); and (4) 15 proteins that have, to the best of our knowledge, not been connected to TORC1 signaling previously, or in many cases, studied at all (red names, Figure 1). Several of these new interactors—including Ydl180w/Ait1, Vsb1, and Vtc5—form interactions with TORC1 that are as tight, or tighter, than those between TORC1 and Gtr1/2, as judged by the amount of material captured in the purification (Figure 1).
 
@@ -55,7 +55,15 @@ To learn more about the interaction between TORC1 and the novel interactor Ait1 
 
 **Figure 2.:** (A) The predicted topology of Ait1/Ydl180w from Protter 1.0 (Omasits et al., 2014). The two large cytosolic loops in Ait1, both of which are predicted to be intrinsically disordered (C3 and C4), are labeled. (B, C) GFP-Ait1 localizes to the vacuolar membrane, as shown by the overlap between the GFP-Ait1 signal and the vacuolar membrane stain FM4-64 signal and does not relocalize in amino acid starvation (shown), or other starvation conditions (not shown).
 
-## Impact of TORC1 interactors on TORC1-body formation
+![Figure 3.](https://cdn.elifesciences.org/articles/68773/elife-68773-fig3-v2.jpg)
+
+**Figure 3.:** Blue circles show the number of background corrected peptide spectral maps (PSMs) for the top 25 proteins identified in the GFP-Ait1 immunopurification (based on the average number of PSMs in the four experiments), along with the data for Gtr1, Gtr2, and Pib2 for comparison.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68773/elife-68773-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Immunopurification experiments, carried out after treatment with the dithiobis(succinimidyl propionate) (DSP) crosslinker, confirm that Ait1 interacts with TORC1 in vivo. (A) GFP-Ait1 copurifies with Kog1-FLAG both in the presence, and absence, of amino acids. (B) GFP-Ait1 copurifies with Kog1-FLAG even after long-term amino acid and glucose starvation, but at 50% of the level found in log-phase growth. Note (1) that Kog1 partially degrades during the IP and thus shows up as multiple bands and (2) that we were unable to detect Kog1-FLAG or Ait1 after 2 hr of nitrogen starvation (three total attempts), likely due to changes in the solubility of localization of the TORC1–Ait1 complex. (C) Coimmunopurification carried out as in (A) but with 4× protease inhibitors. The interaction between Kog1-FLAG and GFP-Ait1 was not detected in the absence of the crosslinker (data not shown).
+
+### Impact of TORC1 interactors on TORC1-body formation
 
 To examine the impact that the new TORC1 interactors have on TORC1 signaling, we measured Kog1-YFP localization during nitrogen starvation in a collection of strains, each missing one of the top 50 proteins identified in our immunopurification experiments (excluding interactors that were examined in our previous studies Hughes Hallett et al., 2015; Sullivan et al., 2019). These experiments showed that—as expected (Sullivan et al., 2019) — many of the known TORC1 interactors are important for TORC1-body formation, including the SEACIT/CAT subunits Iml1, Seh1, Sea2/Rtc1, and Npr3 (Figure 4). These experiments also showed that several of the previously unknown TORC1 interactors have a profound impact on TORC1-body formation and/or TORC1 localization. Specifically, deletion of Vnx1 (a vacuolar monovalent cation/proton antiporter; Wilson et al., 2018) or Syg1 (a putative phosphate channel in the vacuolar membrane; Genome Resources, 2020) blocks TORC1-body formation, just like deletion of Npr2, Npr3, Iml1, or Pib2 (Figure 4 and Sullivan et al., 2019). The most striking result, however, was found in the ait1Δ strain: Deletion of Ait1 causes TORC1 to move into a body, even during log-phase growth in nutrient replete medium (Figure 4 and Figure 5A, B).
 
@@ -63,17 +71,33 @@ To examine the impact that the new TORC1 interactors have on TORC1 signaling, we
 
 **Figure 4.:** Each square on the heat map shows the fraction of cells with a Kog1-YFP focus/body at a specific timepoint, calculated by examining the images of >200 cells, per strain, per timepoint. Replicate experiments confirmed the severe defects in the syg1Δ, vps30Δ, rtg2Δ, and vnx1Δ strains (<15% bodies after 1 hr of nitrogen starvation). These follow-up experiments also revealed dramatic variation in the results for vsb1Δcells (even comparing between colonies) leading us to drop the strain from our analysis.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/68773/elife-68773-fig5-v2.jpg)
+
+**Figure 5.:** (A) Kog1-YFP localization in the wild-type and ait1Δ strains, during log-phase growth in nutrient-rich (SD) medium. The white bar shows 5 μm. (B) Fraction of wild-type and ait1Δ cells that form Kog1-YFP foci during nitrogen starvation. The points and error bars show the average and standard deviation from five replicate experiments, with at least 100 cells examined, per timepoint, per replicate. (C) Impact of the Ait1 deletion on TORC1-body formation in the wild-type and various mutant strains (compare left and right columns). Experiments were carried out in at least duplicate with over 200 cells examined per timepoint, per mutant. Individual timepoints have errors ranging from 0.05 to 0.10.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68773/elife-68773-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (Upper panel) Gtr1-YFP and GFP-Pib2 localization in the wild-type and ait1Δ strains, during log-phase growth in nutrient-rich (SD) medium and 1 hr of complete nitrogen starvation (-N). The white bar in the differential interference contrast image (left column) shows 5 μm; fluorescence images are on the right. (Lower panel) Fraction of wild-type and ait1Δ cells that form Gtr1-YFP and GFP-Pib2 foci during nitrogen starvation. The points and error bars show the average and standard deviation from three replicate experiments, with at least 200 cells examined, per timepoint, per replicate.
+
 To learn more about Ait1 function, we next measured the impact that deleting Ait1 has on Kog1-YFP localization in strains carrying mutations that block, or promote, TORC1-body formation (Hughes Hallett et al., 2015; Sullivan et al., 2019; Figure 5C). These experiments revealed that deletion of Ait1 completely overrides the severe defects in TORC1-body formation caused by (1) locking Gtr1 in its active, GTP-bound, conformation (GTR1Q65L or Gtr1on for short), (2) deleting the Gtr1 inhibitor Npr2, or (3) deleting the TORC1-binding protein and regulator Pib2 (Figure 5C). However, deletion of Ait1 does not rescue TORC1-body formation in a strain carrying Q to A mutations in the two prion-like domains of Kog1 (Prm1 + 2, Figure 5C). Thus, Ait1 acts at, or below, the level of Gtr1/2 and Pib2 to hold TORC1 in its native position (distributed around the vacuolar membrane) in nutrient replete conditions. This tethering effect is then lost, or overridden, in starvation conditions.
 
 In contrast to its influence on TORC1, Ait1 does not have a dramatic impact on the localization of the TORC1-binding proteins Gtr1/2 and Pib2, as judged by images of Gtr1-YFP and GFP-Pib2 (Figure 5—figure supplement 1). Instead, Pib2 and Gtr1 remain distributed around the vacuolar membrane in the ait1Δ strain, albeit with additional enrichment in foci on the edge of the vacuole (movement that is likely driven by TORC1 agglomeration; Figure 5—figure supplement 1).
 
-## Ait1 inhibits TORC1 during amino acid starvation
+### Ait1 inhibits TORC1 during amino acid starvation
 
 To test if Ait1 regulates TORC1 signaling, we followed the phosphorylation of a downstream reporter of TORC1 activity, Rps6 (Chen et al., 2018; Yerlikaya et al., 2016), in wild-type and ait1Δ strains. These experiments showed that deletion of Ait1 almost completely blocks TORC1 repression during amino acid starvation (in a standard lab strain, Figure 6); a phenotype similar to that seen in a strain with Gtr1 locked in its active, GTP-bound, state (Figure 6). In contrast, Ait1 does not impact TORC1 inhibition during complete nitrogen starvation (Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/68773/elife-68773-fig6-v2.jpg)
+
+**Figure 6.:** (B) TORC1 activity during complete amino acid starvation (top), and leucine starvation (bottom), in wild-type, ait1Δ, and GTR1Q65L (Gtr1on) strains, as measured by western blot using an anti phospho-Rps6 antibody. (b) Values show the ratio of the p-Rps6 signal divided by the PGK (loading control) signal in each lane, relative to the value for the wild-type strain at time = 0. Wild-type and mutant strains were grown and processed together and run on the same gel.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68773/elife-68773-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) TORC1 activity during complete nitrogen starvation in wild-type and ait1Δstrains, as measured by western blot using an anti phospho-Rps6 antibody. Graphs show the ratio of the p-Rps6 signal divided by the PGK (loading control) signal in each lane, relative to the value for the wild-type strain at time = 0. Wild-type and mutant strains were grown and processed together and run on the same gel. (B) Mobility shift assay following the phosphorylation of Sch9-HA during leucine starvation on a western blot.
+
 Previous studies have shown that leucine is the primary amino acid activating TORC1 via Gtr1/2 (Bonfils et al., 2012). We therefore tested if Ait1 is also required for TORC1 inhibition in cells starved for leucine. This was the case; an ait1Δ strain has over 80% TORC1 activity after 6 hr of leucine starvation, as judged by Rps6 phosphorylation (Figure 6), and nearly 100% TORC1 activity as judged by the phosphorylation of the direct TORC1 substrate (Figure 6—figure supplement 1).
 
-## Ait1 acts at, or above, the level of Gtr1/2 to regulate TORC1
+### Ait1 acts at, or above, the level of Gtr1/2 to regulate TORC1
 
 The observation that Ait1 and Gtr1/2 both regulate TORC1 during amino acid starvation led us to consider two models of Ait1 function: (1) Ait1 acts at, or above, the level of Gtr1/2 to promote TORC1 inhibition, and (2) Ait1 acts downstream of Gtr1/2 to repress TORC1 activity once Gtr1/2 are inactivated. To distinguish between these models, we measured the impact that Ait1 has on TORC1 signaling in strains with: Gtr1 locked in its GDP-bound, inactive, state (GTR1S20L or Gtr1off for short); Gtr2 locked in its GTP-bound, inactive, state (GTR2Q66L or Gtr2off for short); and Gtr1 and Gtr2 both locked in their inactive states (Gtr1off/Gtr2off) (Panchaud et al., 2013). These experiments showed that Ait1 is still important for TORC1 inhibition in a Gtr1off strain, has limited impact on TORC1 inhibition in a Gtr2off strain, and actually helps activate TORC1 in a Gtr1off/Gtr2off strain (Figure 7). Thus, Ait1 promotes TORC1 repression via Gtr1/2 during amino acid starvation, likely by helping to drive Gtr2 into its inactive, GTP-bound, state. In line with this, deletion of Gtr1, Gtr2, or Gtr1/2 completely bypasses the need for Ait1 in amino acid starvation-dependent TORC1 signaling (Figure 7).
 
@@ -81,15 +105,39 @@ The observation that Ait1 and Gtr1/2 both regulate TORC1 during amino acid starv
 
 **Figure 7.:** (A) TORC1 activity during complete amino acid starvation in mutant strains with (left column) and without Ait1 (right column), measured using a western blot, as described in Figure 6. (B) Values show the ratio of the p-Rps6 signal divided by the PGK (loading control) signal in each lane, relative to the value for the wild-type strain at time = 0. Mutant and double mutant strains were grown and collected together and run on the same gel.
 
-## Role of the C3 loop in Ait1-dependent TORC1 inhibition
+### Role of the C3 loop in Ait1-dependent TORC1 inhibition
 
 To gain insight into the mechanism underlying Ait1-dependent regulation of Gtr1/2, we performed sequence alignments to look for similarity between Ait1 and known Gtr1/2- and RagA/C-binding proteins. These alignments uncovered analogous sequences in the N-terminal region of SLC38A9 and the third cytosolic (C3) loop of Ait1 (Figure 8A). The N-terminal region of SLC38A9 has been shown to dissociate from the pore of the SLC38A9 channel in the presence of arginine, and then bind (via residues 39–97; box Figure 8A) to a cleft at the interface between RagA and RagC (Wang et al., 2015; Wyant et al., 2017; Lei et al., 2018; Fromm et al., 2020). This cleft sits near the GTP-binding pockets in RagA and RagC and faces up and away from TORC1 in the RagA/C-TORC1 complex, at a distance ~80 Å away from the vacuolar surface/membrane (Rogala et al., 2019; Fromm et al., 2020). Thus, it seemed likely that Ait1 inhibits Gtr1/2, at least in part, via its 180 aa long, and intrinsically disordered, C3 loop. In line with this model, there are over 50 amino acids either side of the putative Gtr1/2-binding sequence in the C3 loop (box, Figure 8A)—more than enough unstructured peptide for the C3 loop to extend over TORC1 and interact with Gtr1/2.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/68773/elife-68773-fig8-v2.jpg)
+
+**Figure 8.:** (A) BLAST alignment of the SLC38A9 (top) and Ait1 sequences, showing the entire C3 loop (no other sequences in these proteins align). (B, C) TORC1 activity in Ait1 C3 and C4 loop mutants during leucine starvation, measured as described in Figure 6. Values show the ratio of the p-Rps6 signal divided by the PGK (loading control) signal in each lane, relative to the value for the wild-type strain at time = 0. Mutant and wild-type strains were grown and collected together and run on the same gel.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/68773/elife-68773-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Images taken of strains expressing GFP-Ait1, GFP-AitΔC3, GFP-AitΔC4, GFP-Ait1C3v1, GFP-Ait1C3v2, and GFP-Ait1C3v3 show that the mutants fold and are transported to the vacuolar membrane correctly. Note, however, that the abundance of GFP-AitΔC3 is decreased to approximately 65% of that found in the wild-type (values from line-plot analysis of 10 cells in each image). The white bar shows 5 μm.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/68773/elife-68773-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Red dots show the sites mutated in Ait1C3v1 and red and yellow dots show the sites mutated in Ait1C3v2.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/68773/elife-68773-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (A–C) Target of rapamycin complex I (TORC1) signaling in the ait1c3v2 and wild-type strains, measured during leucine, complete amino acid, and nitrogen starvation, respectively (as described in Figure 6). The leucine starvation experiment in (A) is a biological replicate of that shown in Figure 8.
 
 To test If Ait1 regulates Gtr1/2 and TORC1 via its C3 loop, we first built two mutant versions of Ait1; one in which the C3 loop, and the other in which the C4 loop, is replaced by the short, flexible, linker GGSGSGEGSGSGG (ait1Δc3 and ait1Δc4, respectively). Both mutant proteins fold and are trafficked to the vacuolar membrane, as judged by GFP-AitΔC3 and GFP-AitΔC4 localization (Figure 8—figure supplement 1). However, in line with the C3 loop model, only aitΔc3 cells had a defect in TORC1 inhibition during leucine starvation (Figure 8B, C).
 
 Next, to test the function of the central portion of the C3 loop, we created two strains carrying mutations in the region running from Arg 208 to Tyr 231 since it is highly conserved across the yeasts (Figure 8—figure supplement 2): In the first strain (ait1c3v1) we mutated five residues at the center of the 208–231 stretch to alanine (L213A, C216A, I217A, E218A, and R220A; Figure 8C). In the second strain (ait1c3v2), we added two mutations to ait1c3v1 (I211A and I226A; Figure 8C). We also created a control strain (ait1c3v3) that has nine mutations in a poorly conserved portion of the loop (residues 242–250; Figure 8C). All three mutant proteins fold and are transported to the vacuolar membrane as judged by GFP-Ait1 localization (Figure 8—figure supplement 1).
 
 As expected, ait1c3v1 and ait1c3v2 cells had defects in TORC1 inhibition during leucine and amino acid starvation—a phenotype not seen in the ait1c3v3 strain (Figure 8B, C, Figure 8—figure supplement 3). Importantly, however, the signaling defect was larger in ait1c3v2 cells than in ait1c3v1 cells, indicating that Ile 211 and/or Ile 226 play a key role in the Ait1-dependent regulation of TORC1 (Figure 8B, C). Disruption of the C3 loop also triggered the formation of TORC1 bodies. Specifically, the ait1c3v1, ait1c3v2, and aitΔc3 strains all form more TORC1 foci during nitrogen starvation, and/or log-phase growth, than the wild-type strain (Figure 9A, B). Again here, ait1c3v2 cells had a stronger phenotype than ait1c3v1 cells, consistent with the idea that the mutations in Ait1C3v1 only partially disrupt the C3 loop.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/68773/elife-68773-fig9-v2.jpg)
+
+**Figure 9.:** (A) Each square on the heat map shows the fraction of cells with a Kog1-YFP focus/body at a specific timepoint (as labeled), calculated by averaging the data from three replicate experiments (>100 cells analyzed at each timepoint and replicate). Individual timepoints have errors ranging from 0.02 to 0.12 (average 0.06). (B) Bar graph showing the fraction of cells with a TORC1 body during log-phase growth in SD medium. (C) Coimmunoprecipitation showing a strong interaction between GFP-Ait1 and Gtr1-myc, but not GFP-Ait1C3v2 and Gtr1-myc. The graph shows the ratio of the Gtr1 and Ait1 signals in the wild-type (black line) and Ait1C3v2 (blue line) strains, before, and 30 min after, amino acid starvation. The Immunoprecipitation data with a full set of controls are shown in Figure 9—figure supplement 1.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/68773/elife-68773-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) GFP-Ait1 and GFP-Ait1C3v2 were immunopurified in strains with or without a myc-tag on Gtr1 (as labeled). As a control we also immunopurified Ait1 from a strain carrying Gtr1-myc, but without a GFP tag on Ait1. These experiments showed a clear interaction between Ait1 and Gtr1 (i.e., dependent on the C3 loop). However, Gtr1-myc was difficult to detect in the extract. Therefore, to test if Gtr1-myc levels are the same in the GFP-Ait1 and GFP-Ait1C3v2 strains we also carried out a separate immunopurification of Gtr1-myc (bottom panel). This revealed that there is a dramatic decrease in the apparent weight of Gtr1 in strains carrying GFP-Ait1 (unmodified Gtr1-myc is 38 kDa). Thus, Gtr1 is subject to post-translation modification (likely ubiquitination) and this modification is blocked by the GFP on the N-terminus of Ait1. (B) Deletion of Ait1 does not significantly impact the weight of Gtr1, and thus Ait1 does not regulate Gtr1/target of rapamycin complex I (TORC1) via the observed posttranslational modification. (C) Gtr1-myc copurifies with GFP-Ait1 even after long-term amino acid and glucose starvation, but at 60% of the level found in log-phase growth. We were unable to detect GFP-Ait1 after 2 hr of nitrogen starvation, likely due to a change in the solubility or localization of Ait1-Gtr1/2-TORC1.
 
 Finally, to see if the C3 loop drives an interaction with Gtr1/2, we immunopurified GFP-Ait1 and GFP-AitC3v2 in nonionic detergent (without a crosslinker), in the presence and absence of amino acids, and then measured the amount of Gtr1-myc that remains associated with Ait1. This experiment showed (1) that Ait1 interacts with Gtr1/2 in both log-phase growth and starvation conditions, and (2) that the Gtr1/2-Ait1 interaction is significantly weaker in the ait1c3v2 strain (Figure 9C, Figure 9—figure supplement 1).
 
@@ -117,11 +165,11 @@ Further work is needed to fully dissect the structure and function of the TORC1 
 
 ## Materials and methods
 
-## Strain construction
+### Strain construction
 
 All strains used in this study were generated in haploid (W303) S. cerevisiae, using standard methods (Storici and Resnick, 2006; Storici et al., 2001), and are listed in Supplementary file 3.
 
-## Crosslinking and immunopurification
+### Crosslinking and immunopurification
 
 Yeast carrying Kog1-FLAG, and separately Kog1-HA, were inoculated into 5 ml of synthetic complete medium containing 2% glucose (SD medium) and grown overnight at 30°C in a 20 ml tube, rotating at 40 rpm. The cells were then: (1) diluted to an OD600 of 0.1 in 250 ml of fresh SD medium, and grown shaking at 200 rpm and 30°C in a 1 l flask, until they reached an OD600 of 0.6; (2) captured by filtration, washed with 2 × 100 ml of the appropriate stress or starvation medium, and transferred into 200 ml of synthetic medium lacking all nitrogen (-N), all glucose (-Glu), SD medium containing 0.4 M KCl or 1 mM H2O2, or SD medium at 42°C; (3) grown again for the indicated period of time (Figure 1), shaking at 200 rpm and 30°C (or 42°C for heat stress) in a 1 l flask; (4) harvested by filtration, and rinsed into 2 ml screw-cap tubes using a small volume of ImmunoPrecipitation Lysis Buffer (IPLB; 20 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES), pH 7.5, 150 mM potassium acetate, 2 mM magnesium acetate, 1 mM ethylene glycol bis(2-aminoethyl)tetraacetic acid (EGTA), and 0.6 M sorbitol) (Murley et al., 2017); and (5) centrifuged for 30 s at 8000 rpm, the supernatant discarded, and the pellet flash frozen, and stored at −80°C.
 
@@ -131,7 +179,7 @@ To purify Kog1 and any crosslinked interactors, 50 µl of µMACS anti-FLAG beads
 
 Identical procedures were used to identify Pib2 and Ait1 interactors, except that in the these experiments the IP was done using GFP-Pib2 or GFP-Ait1 and anti-GFP beads (Miltenyi Biotech, 130-101-125).
 
-## Protein identification by mass spectrometry
+### Protein identification by mass spectrometry
 
 Gel slices were washed with water, 50% acetonitrile/50% water, acetonitrile, ammonium bicarbonate (100 mM), and then 50% acetonitrile/50% ammonium bicarbonate (100 mM). The liquid was then removed from each sample, and the gel slices dried in a speed vac. The gel slices were then: (1) Reduced with dithiothreitol (10 mM in 100 mM ammonium bicarbonate) at 56°C for 45 min, and the solution removed and discarded. (2) Alkylated with iodoacetamide (55 mM in 100 mM ammonium bicarbonate) in the dark at ambient temperature for 30 min. (3) Washed with ammonium bicarbonate (100 mM) for 10 min on a shaker, an equal volume of acetonitrile added, and washed for an additional 10 min on a shaker, and then dried in a speed vac for 45 min. (4) Cooled on ice and a treated with a cold solution of 12.5 ng/μl trypsin (Promega, Madison, WI) in ammonium bicarbonate (100 mM). After 45 min, the trypsin solution was removed and discarded, and an equal amount of ammonium bicarbonate (50 mM) was added, and the sample incubated overnight at 37°C with mixing. The samples were then spun down in a microfuge and the supernatants collected. Peptides were further extracted from the gel slices by adding 0.1% trifluoroacetic acid (TFA; enough to cover the gel slices) and mixed at ambient temperature for 30 min. An equal amount of acetonitrile was then added, and the samples were mixed for an additional 30 min. The samples were then spun on a microfuge and the supernatants pooled and concentrated in a speed vac. Finally, all samples were desalted using ZipTip C18 (Millipore, Billerica, MA) and eluted with 70% acetonitrile/0.1% TFA, and concentrated in a speed vac.
 
@@ -139,13 +187,13 @@ For analysis, the peptide samples were brought up in 2% acetonitrile and 0.1% fo
 
 Data analysis was performed using Proteome Discoverer 2.2 (Thermo Scientific, San Jose, CA). The data were searched against an SGD yeast database that included common contaminants. Searches were performed with settings for the proteolytic enzyme trypsin. Maximum missed cleavages were set to 2. The precursor ion tolerance was set to 10 ppm and the fragment ion tolerance was set to 0.6 Da. Variable modifications included oxidation on methionine (+15.995 Da) and carbamidomethyl (57.021). Sequest HT was used for database searching. All search results were run through Percolator for scoring.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 TORC1-body formation was measured as described previously (Hughes Hallett et al., 2015; Sullivan et al., 2019). Briefly, stains carrying Kog1-YFP were patched from their glycerol stocks onto fresh YEPD plates and grown overnight at 30°C. The patches were then used to inoculate 5 ml of SD medium, and the tubes grown at 30°C in a 20 ml tube, rotating at 40 rpm, until they reached an OD600 of 0.1. These starter cultures were then used to inoculate 20 ml of SD medium in a 150-ml Erlenmeyer flask (to an OD600 below 0.01) and grown at 30°C and shaking at 200 rpm, until they reached an and OD600 between 0.5 and 0.7. 300 µl of each culture was then pipetted into one chamber in an 8-well microslide (Ibidi, 80826) that had been pretreated with concanavalin A. The chambers were then washed three times with SD -nitrogen, and images acquired using a Nikon Eclipse Ti-E microscope equipped with a ×100 objective, a Photometrics Prime 95B camera, and λEX 510/25 and λEM 540/21 filters, every 10 min for an hour. Each image consisted of a z-stack of sixteen 200 ms images, spaced 0.4 µm apart, to ensure that the bodies in all planes were detected, and was compressed into a maximum projection stack in ImageJ for analysis.
 
 Imaging of GFP-Ait1, Gtr1-YFP, and GFP-Pib2 was done in an identical manner except that GFP images were acquired λEX 470 and λEM 515/30 filters.
 
-## Rps6 phosphorylation assays
+### Rps6 phosphorylation assays
 
 Cultures were grown in conical flasks shaking at 200 rpm and 30°C until mid-log phase (OD600 between 0.55 and 0.6). At this point, a 47 ml sample was collected, mixed with 3 ml 100% trichloroacetic acid (TCA), and held on ice for at least 30 min (and up to 6 hr). The remaining culture was then collected by filtration, and transferred to SD -N, SD -aa, or SD -leu medium after two washes with 100 ml of the same medium, and further samples collected in TCA, as described above. The samples were then centrifuged at 4000 rpm for 5 min at 4°C, washed twice with 4°C water, twice with acetone, and disrupted by sonication at 15% amplitude for 5 s before centrifugation at 8000 rpm for 30 s. The cell pellets were then dried in a speedvac for 10 min at room temperature, and frozen until required at −80°C.
 
@@ -153,11 +201,11 @@ Protein extraction was performed by bead beating (6 × 1 min, full speed) in ure
 
 For protein phosphorylation analysis, the protein extracts were run on a 12% acrylamide gel and transferred to a nitrocellulose membrane. Western blotting was then carried out using anti-pRPS6 antibody (Cell Signaling, 4858) at a 1/2500 dilution, and anti-PGK1 antibody (Invitrogen, 459250) at a 1/10,000 dilution, and anti-mouse and anti-rabbit secondaries, labeled with a IRDye 700CW and IRDye 800CW (LiCor), both at a 1/10,000 dilution, and the blots scanned using a LiCor Odyssey Scanner (LiCor, Lincoln, NE). Band intensities were quantified using the LiCor Image Studio Software.
 
-## Sch9 bandshift experiments
+### Sch9 bandshift experiments
 
 Sch9 bandshift measurements were performed as described previously (Urban et al., 2007; Hughes Hallett et al., 2014), and using the same procedure listed above for the Rps6 Western, except that lysates were subjected to cleavage by 2-nitro-5-thiocyanatobenzoic acid (NTCB) for 12–16 hr at room temperature (1 mM NTCB and 100 mM N-Cyclohexyl-2-aminoethanesulfonic acid (CHES, pH 10.5)) prior to analysis, and the Western was done using an anti-HA (12CA5) antibody.
 
-## Coimmunoprecipitation experiments
+### Coimmunoprecipitation experiments
 
 Figure 3—figure supplement 1. Kog1-FLAG was immunopurified, as described above, the eluate run on a 9% SDS–polyacrylamide gel and transferred to a nitrocellulose membrane. Western blotting was then carried out using a rabbit Anti-GFP polyclonal antibody (enQuirebio, Cat# QAB10298) at a 1:2500 dilution, a mouse Anti-FLAG monoclonal antibody (Sigma Cat# F1804) at a 1:1000 dilution, and the same secondary antibodies used in the Rps6 assay. A sample of each extract (collected prior to immunopurification) was also run on a separate 12% gel and probed with anti-PGK1 antibody (Invitrogen, 459250) at a 1/10,000 dilution, as described in the Rps6 assay. Ait1 levels were monitored in the same cell lines and conditions, but after immunopurification (following the protocol described below).
 

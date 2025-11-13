@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.46096.001 DNA replication requires that the duplex genomic DNA strands be separated; a function that is implemented by ring-shaped hexameric helicases in all Domains. Helicases are composed of two domains, an N- terminal DNA binding domain (NTD) and a C- terminal motor domain (CTD). Replication is controlled by loading of helicases at origins of replication, activation to preferentially encircle one strand, and then translocation to begin separation of the two strands. Using a combination of site-specific DNA footprinting, single-turnover unwinding assays, and unique fluorescence translocation monitoring, we have been able to quantify the binding distribution and the translocation orientation of Saccharolobus (formally Sulfolobus ) solfataricus MCM on DNA. Our results show that both the DNA substrate and the C-terminal winged-helix (WH) domain influence the orientation but that translocation on DNA proceeds N-first.
+DNA replication requires that the duplex genomic DNA strands be separated; a function that is implemented by ring-shaped hexameric helicases in all Domains. Helicases are composed of two domains, an N- terminal DNA binding domain (NTD) and a C- terminal motor domain (CTD). Replication is controlled by loading of helicases at origins of replication, activation to preferentially encircle one strand, and then translocation to begin separation of the two strands. Using a combination of site-specific DNA footprinting, single-turnover unwinding assays, and unique fluorescence translocation monitoring, we have been able to quantify the binding distribution and the translocation orientation of Saccharolobus (formally Sulfolobus) solfataricus MCM on DNA. Our results show that both the DNA substrate and the C-terminal winged-helix (WH) domain influence the orientation but that translocation on DNA proceeds N-first.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ This report characterizes both the distribution of archaeal MCM binding to the s
 
 ## Results
 
-## The orientation distribution of SsoMCM is mapped directly on equal arm fork DNA by localized footprinting
+### The orientation distribution of SsoMCM is mapped directly on equal arm fork DNA by localized footprinting
 
 Previously, our group and others have shown that SsoMCM loads onto fork DNA with the CTD towards the duplex (C@duplex) binding orientation (McGeoch et al., 2005; Rothenberg et al., 2007; Costa et al., 2014), however, its active translocation orientation has yet to be determined. This C@duplex binding orientation has been used to speculate that MCM also translocates in a C-first orientation (Remus et al., 2009; Graham et al., 2011; Zhou et al., 2012; Bell and Botchan, 2013; Costa et al., 2013; Costa et al., 2014; Miller and Enemark, 2015; Martinez et al., 2017). However, more recent evidence has shown that when assembled within a leading strand holoenzyme complex, yeast MCM2-7 helicase assembles with the NTD leading the way (N-first) (Georgescu et al., 2017). In order to more specifically quantify the binding orientation distribution of SsoMCM on model fork substrates, we utilized two separate and specific DNA cleavage strategies.
 
@@ -37,9 +37,29 @@ Single free cysteines within the CTD, at either C642 or C682, were utilized by m
 
 To further investigate the orientation of SsoMCM on equal arm fork DNA, APB (for crosslinking/digestion) or FeBABE (for a localized hydroxyl radical Fenton footprinting reaction; Owens et al., 1998) were conjugated at C682 using SsoMCM(C642A) mutant. Cleavage could be induced specifically with UV light/NaOH (APB) (Figure 1A or D) or hydrogen peroxide and ascorbic acid (FeBABE) (Figure 1B or E) on two separate forks labelled with 5’-Cy3 or 3’-Cy5 at the duplex end. In all situations, multiple cleavage sites were detected on the ssDNA region of the labelled strand (indicated by arrows), suggesting different orientation populations and positioning of SsoMCM. SsoMCM can bind 3’ or 5’ ssDNA arms with similar affinities to fork DNA, however when noncomplementary 3’ and 5’ fork arms are available, there is a preference for binding/encircling the 3’-arm (Rothenberg et al., 2007). SsoMCM has a significantly lower binding efficiency (~4 fold less) for duplex DNA over fork substrates measured at the single molecule level (Rothenberg et al., 2007), essentially eliminating the possibility of SsoMCM encircling the duplex region and contributing significantly to cutting the ssDNA arms. Furthermore, anisotropy experiments performed with SsoMCM and duplex DNA also show a larger dissociation constant (Kd) over fork substrates (Figure 1—figure supplement 3), suggesting that SsoMCM preferentially binds ssDNA arms of the fork DNA. Moreover, stoichiometric (~1:1 MCM6:DNA) concentration ratios were maintained throughout to promote binding to the highest affinity site and limit nonspecific binding to the duplex region. To test this directly, DNaseI footprinting experiments and Electrophoretic Mobility Shift Assays (EMSA) were performed and confirmed complete DNA binding without protection of the duplex region (Figure 1—figure supplement 4). Previously, we have shown that the 5’-excluded strand is protected from ssDNA nuclease digestion upon SsoMCM binding (Graham et al., 2011) and that titration of large amounts of SsoMCM on fork substrates does not compete off the external excluded strand to favor two hexamers binding (Carney and Trakselis, 2016). Therefore, the predominate bound species is a stoichiometric single SsoMCM hexamer encircling one ssDNA arm and interacting with the other on the exterior surface, but other minor populations also exist.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46096/elife-46096-fig1-v2.jpg)
+
+**Figure 1.:** (A) APB or (B) FeBABE orientation mapping of the 3’- encircled strand labelled at the 5’- duplex end with Cy3 on an equal arm fork DNA substrate with a 20 base duplex (DNA164/165-3). SsoMCM was labelled with APB or FeBABE at C682 (within the C-term WH motif) specifically. DNA cleavage was induced and enhanced with UV light [for APB: (A), lane 6] or H2O2 and ascorbic acid (AA) [for FeBABE; (B), lane 5). Arrow thickness indicates the relative amount and position of DNA cleavage. (C) Quantification of the relative amount of DNA cleavage for bases 20-35 or 36-50 from the 5’- end indicate the relative orientation for placing the N-term (N@duplex, orange) or C-term (C@duplex, blue), respectively, closer to the duplex junction for either APB or FeBABE mapping. Similarly, (D) APB or (E) FeBABE orientation mapping of the 5’- excluded strand labelled at the 3’- duplex end with Cy5 (164-5/165). (F) Quantification of the relative amount of DNA cleavage for bases 20-35 or 36-50 from the 5’- end indicate the relative orientation for N@duplex or C@duplex, respectively, closer to the duplex junction for either APB or FeBABE mapping. DNA markers (M) indicate 18 and 50 bases and fork DNA. Error bars represent standard error from 3-5 independent experiments. The products were run on a 20% native PAGE gel. p-values are defined as *< 0.05, **< 0.01 ***<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46096/elife-46096-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The UV crosslinked protein-DNA product of two SsoMCM mutants and the uncrosslinked SsoMCM C642A were run on a 10% SDS- PAGE gel. The shifted protein-DNA product is indicated by a black arrow (←). In the presence of UV and APB, SsoMCM C642A shows a higher signal for the crosslinked protein-DNA product compared to C682A mutant. Rec protein ladder is used as the standard protein marker (M).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46096/elife-46096-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) APB cleavage of a 5’-Cy3 labelled 50 nt ssDNA. No cutting in the absence of APB or MCM (lanes 2–4). MCM-APB can cleave DNA in the absence or presence of UV or NaOH (lanes 5, 8–11). (B) APB cleavage of a 3’-Cy5 labelled 50 nt ssDNA. No cutting in the absence of APB or MCM (lanes 2–4). MCM-APB can cleave DNA in the absence or presence of UV or NaOH (lanes 5, 7–10). Markers (M) at 50 or 18 nts are indicated.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/46096/elife-46096-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** DNA binding was determined by fluorescence anisotropy for each of the DNA substrates. The binding constants (Kd) for equal arm fork DNA substrates (5’-Cy3 labelled or 3’-Cy3 labelled), 3’- long arm (5’-Cy3 labelled), 5’- long arm (3’-Cy5 labelled), and duplex DNA (5’-Cy5 labelled) are given in the plots. Error bars represent standard error from three independent experiments and data was fit to Equation 4.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/46096/elife-46096-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) DNaseI digestion of fork DNA in the absence (lane 3) and presence of SsoMCM (lanes 4–5) at different ratios. Fork DNA is labelled at the 3’ position on the duplex end with Cy5. Markers at 20 nt (lane 1) and 50 nt (lane 2) are indicated. Samples were run on 20% denaturing PAGE. (B) EMSA showing the complete formation of the DNA-protein complexes at the same concentration ratios used in (A).
+
 Using either cleavage agent, there is evidence for footprinting of the CTD of SsoMCM towards the duplex end (C@duplex) or the free ends (N@duplex) for either labelled substrate. Cleavage can occur on the encircled strand or the excluded strand consistent with the flexibility of the WH domain to interact with either strand at the fork junction. We quantified and compared the relative footprinting of the CTD delineated by the midpoint of the ssDNA region (Figure 1C and F). The midpoint of a ssDNA arm was selected for quantification based on a void in cleavage there and the strong preference for binding ssDNA over duplex DNA at stoichiometric concentrations to describe only binary binding orientations. For either agent (APB or FeBABE), there was a significant ~3:1 preference for placing the CTD closer to the duplex region (C@duplex) independent of which strand is labelled.
 
-## The orientation of SsoMCM on asymmetric arm fork DNA by localized footprinting has preference for N@duplex
+### The orientation of SsoMCM on asymmetric arm fork DNA by localized footprinting has preference for N@duplex
 
 Although footprinting on equal arm fork DNA favors C@duplex, it is probable that some proportion of SsoMCM is encircling the 5’-arm, complicating our analysis and interpretation. Therefore, asymmetric arm fork DNA substrates that have a 3’-long arm with different length (0 nucleotide (nt) or eight nt) 5’-arms were designed. Fluorescence anisotropy binding experiments show that SsoMCM binds a 5’-long arm substrate with similar affinity to 3’-long arm substrates (Figure 1—figure supplement 3). Some archaeal species have a MCM central channel that can occupy both ss and dsDNA (Fletcher et al., 2003; Pape et al., 2003). Therefore, SsoMCM when loaded onto the 3’-long arm fork substrate containing a 0 nt 5’-arm has the possibility of being translocated over the duplex DNA region and then cleaving outside of our boundaries. In order to overcome this, substrates were designed with an 8 nt short 5’-arm. This length was designed to be long enough to prevent translocation over duplex DNA and short enough to prevent helicase loading onto the 5’-arm. It has been previously shown that archaeal MCM requires > 16 nts for productive binding/unwinding (Haugland et al., 2006).
 
@@ -47,9 +67,9 @@ Therefore, these orientation mapping experiments were repeated with APB labelled
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/46096/elife-46096-fig2-v2.jpg)
 
-**Figure 2.:** SsoMCM orientation mapping onto 3’-(DNA171/165-3) or 5’-(DNA172/164-5) long arm fork DNA substrates.(A) APB orientation mapping of the 3’-encircled strand labelled at the 5’ duplex end with Cy3 on a 3’-long arm fork DNA substrate with a 20 base duplex. SsoMCM was labelled with APB at C682 (within the C-term WH motif) specifically. (B) Quantification of the relative amount of DNA cleavage for bases 20–35 or 36–50 from the 5’-end indicate the relative orientation for placing the N@duplex (orange) or C@duplex (blue), respectively closer to the duplex junction. Similarly, (C) APB orientation mapping of the 5’-excluded strand labelled at the 3’-duplex end with Cy5 on a 5’-long arm fork DNA substrate with a 20 base duplex. (D) Quantification of the relative amount of DNA cleavage for bases 20–35 or 36–50 from the 3’-end indicate the relative orientation for N@duplex or C@duplex, respectively, closer to the duplex junction. DNA cleavage was induced and enhanced with UV light [(A), lane 4, (C), lane 4]. Arrow thickness indicates the relative amount and position of DNA cleavage. DNA markers (M) indicate 18 and 50 bases and fork DNA. Error bars represent standard error from 3 to 5 independent experiments. The products were run on a 20% native PAGE gel. p-values are defined as *<0.05, **<0.01 ***<0.001. shorter 8 nt 3’-arm (Figure 2C–D). Here, the footprinting orientations were reversed, with a > 3:1 preference for C@duplex (Figure 2D). Therefore, on these long arm fork DNA substrates, SsoMCM can bind either the 3’- or 5’-arm in both orientations, but the preferred 3’−5’ polarity is CTD-NTD.
+**Figure 2.:** (A) APB orientation mapping of the 3’-encircled strand labelled at the 5’ duplex end with Cy3 on a 3’-long arm fork DNA substrate with a 20 base duplex. SsoMCM was labelled with APB at C682 (within the C-term WH motif) specifically. (B) Quantification of the relative amount of DNA cleavage for bases 20–35 or 36–50 from the 5’-end indicate the relative orientation for placing the N@duplex (orange) or C@duplex (blue), respectively closer to the duplex junction. Similarly, (C) APB orientation mapping of the 5’-excluded strand labelled at the 3’-duplex end with Cy5 on a 5’-long arm fork DNA substrate with a 20 base duplex. (D) Quantification of the relative amount of DNA cleavage for bases 20–35 or 36–50 from the 3’-end indicate the relative orientation for N@duplex or C@duplex, respectively, closer to the duplex junction. DNA cleavage was induced and enhanced with UV light [(A), lane 4, (C), lane 4]. Arrow thickness indicates the relative amount and position of DNA cleavage. DNA markers (M) indicate 18 and 50 bases and fork DNA. Error bars represent standard error from 3 to 5 independent experiments. The products were run on a 20% native PAGE gel. p-values are defined as *<0.05, **<0.01 ***<0.001. shorter 8 nt 3’-arm (Figure 2C–D). Here, the footprinting orientations were reversed, with a > 3:1 preference for C@duplex (Figure 2D). Therefore, on these long arm fork DNA substrates, SsoMCM can bind either the 3’- or 5’-arm in both orientations, but the preferred 3’−5’ polarity is CTD-NTD.
 
-## The C-terminal WH domain influences the binding orientation of SsoMCM on fork DNA
+### The C-terminal WH domain influences the binding orientation of SsoMCM on fork DNA
 
 The WH domain at the C-terminus of SsoMCM is suggested as a substrate recognition or localization domain (Aravind et al., 2005). Moreover, the WH domain in both archaea and eukaryotes is considered important for determining MCM helicase loading and initiation during replication (Samson et al., 2016a; Martinez et al., 2017; Goswami et al., 2018) and mediates DNA binding (Gaudier et al., 2007). Thus, we hypothesized that the WH domain may have regulatory effect on directing the orientation of SsoMCM helicase on DNA. To determine this, we utilized SsoMCM-WH mutant (aa 1–612) with two separate cysteine mutations at the CTD (G452C and S456C) (Figure 3A). Footprinting experiments were repeated with APB labelled at either C452 or C456 of SsoMCM–WH on equal arm (Figure 3B) or 3’-long arm (Figure 3D) substrates. The results show a loss of orientation specificity (Figure 3C and E) compared with Figure 1C or 2B.
 
@@ -59,23 +79,31 @@ The WH domain at the C-terminus of SsoMCM is suggested as a substrate recognitio
 
 As shown above, SsoMCM-WH is likely bound on the equal arm fork DNA in at least four populations (two orientations and on either strand). SsoMCM WT on equal arm fork substrates (Figure 1C) specifically loads C@duplex, but when SsoMCM-WH binds the same substrate, it loses a binding preference (Figure 3C). When ABP footprinting experiments were repeated with the 3’-long arm substrate, there is a complete loss of orientation specificity on both mutants (Figure 3E). These results show that the WH domain of SsoMCM influences the binding orientation of this helicase on equal arm fork DNA to place C@duplex but that this WH domain is less important for when engaging ssDNA for translocation.
 
-## Single-turnover DNA unwinding experiments determine relative productive occupancy
+### Single-turnover DNA unwinding experiments determine relative productive occupancy
 
 Previously, multiple reports have shown that the fraction unwound by SsoMCM generally hovers between 0.3 and 0.5 depending on the substrate and conditions (Barry et al., 2007; Graham et al., 2011; Graham et al., 2018). The proportion of SsoMCM bound in a productive orientation and state can be determined in a single-turnover DNA unwinding experiment. Single-turnover unwinding conditions were initiated by the simultaneous addition of a 20-fold excess of unlabelled ssDNA and ATP to a prebound SsoMCM/DNA complex. The proportion of productive translocating SsoMCM hexamers will correlate with the total unwound DNA fraction. Different Cy3 or Cy5 labelled DNA substrates comprised of equal 30 nt fork arms or asymmetric 30 and 8 nt arms were used for unwinding experiments with WT SsoMCM (Figure 4A). The fork DNA substrate has four possible SsoMCM binding orientations (N@duplex or C@duplex on either the 5’ or 3’-arms) and unwinds 0.26 ± 0.01 fraction of DNA. Instead, restricting loading to only the 3’-long arm (8 nt 5’-arm) with only two possible orientations significantly increased the unwound fraction to 0.54 ± 0.03. When experiments were repeated with 0 nt at the 5’ end, there was 2-fold decrease in unwound product confirming that SsoMCM can translocate over the duplex region of the substrates in the absence of any 5’-arm (Figure 4—figure supplement 1). Background unwinding on the 5’-long arm (with 0 or 8 nt 3’-arm) displays only 0.08 ± 0.01 or 0.13 ± 0.01 fraction unwound, respectively (Figure 4—figure supplement 1). Therefore, an 8 nt 3’-arm is not long enough to facilitate unwinding to any significant degree. Hence, the 3’-long arm (with 8 nt 5’-arm) fork substrate enables the most productive fraction of SsoMCM helicases competent for unwinding.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46096/elife-46096-fig4-v2.jpg)
+
+**Figure 4.:** (A) DNA unwinding of equal arm (in blue boxes -■-, 5’-Cy3 labelled at the duplex), 3’-long arm (in green lower left triangle -◣-, 5’-Cy3 labelled at the duplex), 5’-long arm (in red lower right triangle -SsoMCM WT. Experiments were simultaneously initiated with ATP and an unlabelled ssDNA trap oligo identical to the labelled strand as described in the Materials and methods. (B) DNA unwinding of equal arm fork DNA substrate (5’-Cy3 labelled at duplex) with SsoMCM WT (in closed boxes -■-) and –WH (in open boxes -□-). There is an increase in total DNA unwound with –WH compared to WT (grey arrow). (C) DNA unwinding of 3’-long arm fork DNA substrate (5’-Cy3 labelled at duplex) with SsoMCM WT (in lower left closed triangle -◣-) and –WH (in lower left open triangle -◺ -). There is a decrease in the total DNA unwound with –WH compared to WT (grey arrow). Error bars represent standard error from 3 to 5 independent experiments and data was fit to Equation 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46096/elife-46096-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** DNA unwinding of 3’-long arm/5’-arm (n), (n = 0, in green open lower left triangle -◣-, n = 8 in green closed lower left triangle -◣-,5’-Cy3 labelled at the duplex), 5’-long arm/3’-arm (n), (n = 0, in red open lower right triangle -◢-, n = 8 in red open lower right triangle-◢-, 3’-Cy5 labelled at the duplex) fork DNA substrates with SsoMCM WT. Experiments were simultaneously initiated with ATP and an unlabelled ssDNA trap oligo identical to the labelled strand as described in the Materials and methods. There is a decrease in total DNA unwound with n = 0 compared to n = 8 in 3’-long arm/5’-arm(n) fork substrate (grey arrow). Error bars represent standard error from 3 to 5 independent experiments and data was fit to Equation 3.
 
 As the WH domain was shown above to influence the binding orientation, DNA unwinding was repeated on the fork and 3’-long arm with SsoMCM-WH. Previously, deletion of the WH motif had no effect on DNA binding affinity but significantly increased DNA unwinding in a steady-state experiment (Barry et al., 2007). The –WH mutant showed a significant increase in the unwound product with the fork (0.35 ± 0.01) (Figure 4B) but a slight decrease with the 3’-long arm (0.46 ± 0.01) (Figure 4C) compared with WT. An increased amount of unwound product with the fork substrate suggests a loss in specificity for SsoMCM orientation and correlates with the near equal N@duplex and C@duplex cleavage mapping (Figure 3C). The slight decrease in unwound product with the 3’-long arm correlates with the fraction of N@duplex mapped for WT (0.57 ± 0.03) (Figure 2B) or –WH (0.52 ± 0.01) (Figure 3E) on the same substrate. Therefore, the flexible WH domain influences the population distribution of binding SsoMCM on fork DNA.
 
 Further comparison of DNA unwinding and footprinting results can lead to the identification of the proportion of SsoMCM bound in a productive orientation. The fraction unwound for the equal arm fork substrate, 0.26 ± 0.01 (Figure 4A), corresponds with a similar footprinting ratio of 0.23 ± 0.03 for N@duplex (Figure 1C) implicating an N-first translocation orientation. The fraction unwound for the 3’-long arm fork substrate, 0.54 ± 0.03 (Figure 4A), also corresponds with a footprinting ratio of 0.57 ± 0.03 for N@duplex (Figure 2B) again correlating with an N-first translocation mechanism.
 
-## Steady-state FRET monitors SsoMCM loading on fork DNA at the duplex
+### Steady-state FRET monitors SsoMCM loading on fork DNA at the duplex
 
 To more directly monitor orientation and translocation, we turned to fluorescence assays. Steady-state FRET experiments were designed to qualitatively detect SsoMCM binding to forked DNA in a stalled and loaded state from the duplex region. The DNA substrate contains a biotin on the translocating strand (nine bases from the duplex junction) that when bound with streptavidin has been shown to inhibit DNA unwinding (Graham et al., 2011) (Figure 5A). A fluorescein-dT (FAM) is placed six nts beyond the biotin on the complementary strand and is used to detect FRET upon binding SsoMCM labelled at either the N-terminus or C682 with Cy3. SsoMCM is able to bind to this substrate in multiple orientations on either the 30mer 3’- or 20mer 5’-strands that will give drastically different FRET signals. The absolute FRET values will depend on the exact spatial location of Cy3 at the N or C-termini and the relative binding orientation distributions. The labelling of SsoMCM was controlled by dye stoichiometry and reaction time to give 0.4–0.6 Cy3 labels per SsoMCM protein. This puts on average 2–3 Cy3 molecules in the SsoMCM hexamer. The experimental FAM quenching result shows an overall small but significant quenching in fluorescence at 518 nm for both labelled SsoMCMs (Figure 5B) that is consistent with multiple binding populations. The distance of the FAM dye to Cy3 labels near the duplex is modelled to be less than the R0 value for this dye pair (~60 Å) and should be quenched vastly more for one construct over the other if there is a binding preference for either C@duplex or N@duplex. However, results from Figure 1 and 2 indicate that multiple binding orientations predominate favoring C@duplex when there is a long 5’-arm. Qualitatively, the larger quenching for the C-terminally labelled SsoMCM is consistent with a greater distribution that places C@duplex on this semi equal arm fork substrate (Figure 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/46096/elife-46096-fig5-v2.jpg)
 
-**Figure 5.:** SsoMCM bound to a fork DNA.(A) Schematic of the DNA fork substrate that includes a 30 nt 3’-arm, 20 nt 5’-arm, a biotin placed nine nt from the duplex junction and a dT-FAM placed a further six nt downstream. The Tm of the duplex was calculated to be greater than 75°C. (B) Normalized FAM quenching effects upon addition of SsoMCM labelled with Cy3 at the N-terminus (closed boxes, orange) or C682 (closed circles, blue). Background changes in fluorescence upon addition of unlabelled SsoMCM were subtracted prior to normalization.
+**Figure 5.:** (A) Schematic of the DNA fork substrate that includes a 30 nt 3’-arm, 20 nt 5’-arm, a biotin placed nine nt from the duplex junction and a dT-FAM placed a further six nt downstream. The Tm of the duplex was calculated to be greater than 75°C. (B) Normalized FAM quenching effects upon addition of SsoMCM labelled with Cy3 at the N-terminus (closed boxes, orange) or C682 (closed circles, blue). Background changes in fluorescence upon addition of unlabelled SsoMCM were subtracted prior to normalization.
 
-## Unwinding directionality determined by presteady-state FRET is confirmed to be N-first
+### Unwinding directionality determined by presteady-state FRET is confirmed to be N-first
 
 In order to more directly monitor the orientation directionality during unwinding, we changed the experiment setup to monitor presteady-state fluorescence changes in a stopped-flow instrument capable of monitoring loading and translocation of the helicase at 57°C. The 5’-arm was shortened to seven nts to limit loading on that strand and distinguish between translocation orientations solely on the 3’-arm. Binding/loading of SsoMCM labelled at C682 or the N-terminus with Cy3 to fork DNA bound by streptavidin showed similar double exponential increases in Cy3 sensitization with rates of 0.57 ± 0.03 s−1 and 0.030 ± 0.001 s−1 or 0.65 ± 0.02 s−1 and 0.043 ± 0.01 s−1, respectively. (Figure 6—figure supplement 1). Exclusion of ATP in the experiment did not significantly change the exponential results, 0.62 ± 0.01 s−1 and 0.043 ± 0.001 s−1, for N-terminally labelled SsoMCM showing that binding is independent of nucleotide as shown previously (McGeoch et al., 2005). Increases in fluorescence are noted for both N and C-terminal labelled SsoMCM consistent with both orientations bound.
 
@@ -83,11 +111,17 @@ When we preloaded SsoMCM on DNA and instead initiated translocation with ATP in 
 
 When the Cy3 is labelled at C682, translocation N-first would show a minimal to no increase in fluorescence because of the large distance spanning the length of the SsoMCM hexamer; whereas translocation C-first will show a large increase in FRET upon stalling at the streptavidin block. When the stopped-flow experiment was performed, an initial increase (0.53 ± 0.05 s−1) within the first 10 s was noted followed by a slower and more significant decrease in fluorescence (1.1 ± 0.2×10−3 s−1) (Figure 6A). The first faster increase is consistent with more SsoMCM molecules being bound to the DNA template upon addition of ATP (Figure 6—figure supplement 1). The second slower change is consistent with dissociation, but not with C-first translocation.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/46096/elife-46096-fig6-v2.jpg)
+
+**Figure 6.:** SsoMCM (167 nM hexamer) labelled at (A, C) C682 or (B, D) the N-terminus was preassembled onto 3’-long arm fork DNA (125 nM) with a 30 base 3’-arm and a 7 base 5’-arm in the (A, B) presence or (C, D) absence of streptavidin (375 nM) as indicated. Translocation was initiated through rapid mixing of ATP (1 mM) and the change in fluorescence above 570 nm was monitored using a split time base at 57 oC. Data was fit to Equation 5. The blue shaded region in (B) highlights the N-first translocation mode (boxed).The following figure supplements are available for Figure 6:Figure supplement 1. Presteady-state loading of SsoMCM on DNA. SsoMCM (167 nM hexamer) labelled at (A) C682 or (B) the N-terminus and preincubated with 1 mM ATP was mixed vs 3’-long arm fork DNA (13 nM) with a 30 base 3-’arm and a 7 base 5’-arm blocked with streptavidin (38 nM) as indicated. (C) Experiments in the absence of ATP for SsoMCM labelled at the N-terminus with Cy3. The change in fluorescence above 570 nm was monitored using a split time base at 57 oC. Data was fit to Equation 5.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46096/elife-46096-fig6-figsupp1-v2.jpg)
+
 Conversely, when Cy3 is located at the N-terminus, translocation C-first would show little to no change; whereas, translocation N-first would show a large increase in FRET. In the stopped-flow experiment with N-terminal labelled Cy3, there was an initial increase (0.26 ± 0.02 s−1) similar to that seen with the label at C682, followed by a larger and slower increase (1.5 ± 0.4×10−3 s−1) in fluorescence (Figure 6B). The second rate in both experiments (at 57°C) is consistent with the translocation/unwinding rate of SsoMCM at 60°C (Figure 4A). The single turnover unwinding rate for the 3’-long arm substrate (Figure 4A) is 0.07 ± 0.01 min−1 (or ~ 1.1 ± 0.16 x 10−3 s−1) and is for complete separation of the duplex. The second exponential rate in these presteady-state experiments is extremely similar to the single-turnover experiments and only measures translocation up to nine nts or one fourth of the duplex.
 
 When stopped-flow experiments were performed in the absence of streptavidin, similar initial increases are shown for both C682 (0.27 ± 0.01 s−1) and N-terminal (0.21 ± 0.01 s−1) labelled SsoMCM, but now slower and similar decreases are shown for both labelled constructs (0.85 ± 0.05×10−3 s−1 and 1.0 ± 0.5×10−3 s−1), respectively, consistent with unwinding past the biotin and FAM (Figure 6C and D). SsoMCM is known to unwind over small adducts such as biotin on the translocating strand (Graham et al., 2011) and movement past the FAM label on the excluded strand for both labelled SsoMCMs would result in an increase followed by a larger decrease in FRET upon strand separation that would be stochastically blurred in this time scale.
 
-## Translocation orientation on ssDNA determined by presteady-state FRET is consistent with N-first
+### Translocation orientation on ssDNA determined by presteady-state FRET is consistent with N-first
 
 The fluorescent DNA substrates for the presteady-state FRET experiments were varied to limit duplex length (to 20 bp) and lengthen the single-strand region (to 80 bases) to reduce the possibility of binding and translocating on duplex DNA and complicating our interpretation. Biotin was incorporated four nucleotides prior to the duplex region where a FAM label was placed. Translocation of SsoMCM along the ssDNA region would stall when streptavidin was included prior to reaching the duplex but close enough to elicit an increase in FRET when SsoMCM is labelled on the leading face with Cy3.
 
@@ -95,7 +129,7 @@ When stopped-flow experiments were repeated with this substrate that included a 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/46096/elife-46096-fig7-v2.jpg)
 
-**Figure 7.:** SsoMCM translocation.SsoMCM (120 nM hexamer) labelled at C682 (orange) or the N-terminus (blue) was preassembled onto (A) 3’- or (B) 5’long arm ssDNA (100 nM) with a flanking 20 bp duplex with 375 nM streptavidin. A FAM label was incorporated at the 5’ or 3’ end of the duplex, respectively, and four bases from a biotin in the long ssDNA. Translocation was initiated through rapid mixing of ATP (1 mM) and the change in fluorescence above 570 nm was monitored over time at 57°C. Data was fit to Equation 5.
+**Figure 7.:** SsoMCM (120 nM hexamer) labelled at C682 (orange) or the N-terminus (blue) was preassembled onto (A) 3’- or (B) 5’long arm ssDNA (100 nM) with a flanking 20 bp duplex with 375 nM streptavidin. A FAM label was incorporated at the 5’ or 3’ end of the duplex, respectively, and four bases from a biotin in the long ssDNA. Translocation was initiated through rapid mixing of ATP (1 mM) and the change in fluorescence above 570 nm was monitored over time at 57°C. Data was fit to Equation 5.
 
 Therefore, our results show that SsoMCM can be organized on fork DNA in both orientations with particular probabilities depending on the presence of the excluded strand and the C-terminal WH domain, but translocation and unwinding proceeds N-first in the 3’−5’ direction.
 
@@ -123,42 +157,185 @@ The sole selection and encircling of one strand over the other and the conformat
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Plasmid construct (E. coli)</td>
+      <td>pET30a-SsoMCM (C642A)</td>
+      <td>McGeoch et al. (2005)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid construct (E. coli)</td>
+      <td>pET30a-SsoMCM (C682A)</td>
+      <td>McGeoch et al. (2005)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid construct (E. coli)</td>
+      <td>pET30a-SsoMCM 1–612 (G452C)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Site- directed mutagenesis using primers listed in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Plasmid construct (E. coli)</td>
+      <td>pET30a-SsoMCM1–612 (S456C)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Site- directed mutagenesis using primers listed in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Expression strain</td>
+      <td>Rosetta 2</td>
+      <td>Novagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>4-azidophenacyl bromide (APB)</td>
+      <td>Sigma-Aldrich</td>
+      <td>57018-46-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>ATP</td>
+      <td>Invitrogen</td>
+      <td>51963-61-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>1-(p-Bromoacetamidobenzyl) ethylenediamine N, N,N (Fe-BABE)</td>
+      <td>Dojindo</td>
+      <td>186136-50-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>DNaseI</td>
+      <td>New England Biolabs</td>
+      <td>M0303S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Streptavidin</td>
+      <td>Invitrogen</td>
+      <td>800-955-6288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Cy3 succinimidyl ester</td>
+      <td>ThermoFisher</td>
+      <td>57757-57-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Cy3 maleimide</td>
+      <td>ThermoFisher</td>
+      <td>45-001-273</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA primers and substrates</td>
+      <td>Sigma-Aldrich and IDT</td>
+      <td></td>
+      <td>Refer to Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kaleidagraph</td>
+      <td>www.synergy.com</td>
+      <td>V4.5</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 ATP was obtained from Invitrogen (Carlsbad, CA). Azidophenacyl bromide (APB) was from Sigma-Aldrich (St. Louis, MO). 1-(p-Bromoacetamidobenzyl) ethylenediamine N, N,N (Fe-BABE) was from Dojindo (Rockville, Maryland). Streptavidin was from Invitrogen (Carlsbad, CA). Cy3 succinimidyl ester and maleimide were from ThermoFisher (Pittsburgh, PA). DNaseI was from NEB (Ipswich, MA). All other materials were from commercial sources and were analytical grade or better. Helicase buffer was used in all unwinding and binding reactions and consists of 125 mM potassium acetate, 25 mM Tris acetate (pH 7.5), and 10 mM magnesium acetate. DNA primers and substrates (Supplementary file 1) were all synthesized by Sigma-Aldrich (St. Louis, MO) or IDT (Coralville, IA) and gel purified using crush and soak method (Maniatis et al., 1989). Preformed fork substrates: equal arm (DNA164/165), 3’-long arm/5’-(n)nts (n = 0; DNA165/189, n = 8; DNA165/171), 5’-long arm/3’-(n)nts (n = 0; DNA164/190, n = 8; DNA164/172), duplex (DNA180/188), DNA14-B/179 F, DNA14-B/182 F, DNA60-F/202-B and DNA204-F/203-B were heated to 95°C and cooled at a rate of 1 °C /min to room temperature in a PCR instrument.
 
-## Cloning and purification of SsoMCM mutants
+### Cloning and purification of SsoMCM mutants
 
 A cysteine was introduced into SsoMCM (1-612) (-WH) at G452C or S456C using a standard QuikChange protocol (Agilent, Santa Clara, CA) with KAPA HiFi DNA polymerase (KAPA Biosystems, Woburn, MA) with oligos in Supplementary file 1. Mutations were initially confirmed by silent mutations to create unique restriction sites and then by the DNA Sequencing Faculty at The University of Texas at Austin (Austin, TX). SsoMCM full-length (WT, C642A, and C682A) or 1–612 (-WH: WT, G452C, G456C) were purified as previously described (McGeoch et al., 2005; Graham et al., 2011). Briefly, autoinduced SsoMCM was heat-treated at 70°C for 20 min, and the supernatant was applied to MonoQ, heparin, and S-200 gel filtration columns by use of AKTA Pure (GE Healthscience) to isolate the purified hexameric species.
 
-## Site-specific DNA footprinting using APB
+### Site-specific DNA footprinting using APB
 
 APB was dissolved in 100% DMF at a concentration of 40 mM and then diluted to 4 mM in 20 mM Tris pH 7.5, 75 mM NaCl, 10% glycerol and 20% DMF, in the dark. APB was then added to a sample of SsoMCM protein (~10 µM monomer) containing a single cysteine in full length (at either C642 or C682) or in –WH (at either C452 or C456) (in 20 mM Tris [pH 7.5], 75 mM NaCl, 10% glycerol), to achieve a final concentration of 4 mM APB and 1% DMF. Labelling proceeded for 2–3 hr at room temperature. APB labelled SsoMCM was incubated with fluorescent (Cy3 or Cy5 as indicated) fork DNA (150 nM) for 10–20 min in 1x CB buffer (20 mM TrisOAc, 25 mM KOAc, 10 mM MgOAc, 0.1 mg/ ml BSA, 1 mM DTT) in 50 µl volumes (maintaining ~ 1:1 MCM6:DNA ratio). For cross-linking, samples were transferred to silanized cover slips and UV irradiated for 15 s before adding 150 µl of post irradiation buffer (20 mM Tris- HCl [pH 8.0], 0.2% SDS, 50 mM NaCl), vortexed, and placed at 70°C for 20 min. Next, 1 µl of 10 mg/ ml Salmon sperm DNA, 30 µl of 3.0 M NaOAc, 750 μl of ice cold 100% ethanol was added, vortexed, left on ice for 1–2 hr at −80°C. Samples were then spun in microfuge at 4°C, 12,000 rpm for 30 min. The supernatant was discarded, and the pellet was washed twice with ice cold 70% ethanol. Ethanol was removed and the pellets were air dried by inverting on bench for 1 hr and then resuspended in 100 µl: 20 mM NH4OAc, 2% SDS, 0.1 mM EDTA pH 8.0 by vortexing. Samples were spun in microfuge at room temperature for 10 min. Supernatants were transferred into fresh tubes, placed in heat block at 90°C for 2 min. Then, 1 µl of 2 M NaOH was added, vortexed briefly, and incubated at 90°C for 20 min. After incubation, samples were pulse spun, added 101 µl 20 mM Tris- HCl pH 8.0, 1 µl of 2 M HCl, 1 µl of 2 M MgCl2, 480 µl 100% ethanol, vortexed, and placed at −80°C for 1–2 hr. The samples were pelleted in microfuge at 4°C for 30 min, washed two times with ice cold 70% ethanol, and air dried on bench for 1 hr. The DNA pellet was resuspended with 5 µl of 40% glycerol loading buffer containing Orange G dye for gel loading, run on a 20% TBE- PAGE (native PAGE), and visualized on a Typhoon FLA 9000 imager (GE Healthsciences).
 
-## Site-specific DNA cutting using FeBABE
+### Site-specific DNA cutting using FeBABE
 
-SsoMCM proteins containing a single cysteine at either 642 or 682 for full-length or at 452 or 456 for -WH were dialyzed overnight at 4°C into conjugation buffer (30 mM MOPS, 100 mM NaCl, 1 mM EDTA, 5% glycerol, pH 8.0). Conjugation was performed by mixing 400 µM of FeBABE with 20 µM SsoMCM and incubating at 37°C for 1 hr in the dark. After 1 hr incubation, FeBABE-protein conjugate sample was dialyzed against the cutting buffer (50 mM MOPS, 120 mM NaCl, 0.1 mM EDTA, 10 mM MgCl2, 10% glycerol). Then FeBABE-protein conjugate was mixed with fluorescent DNA (150 nM, as indicated) and incubated at room temperature for 30 min maintaining ~ 1:1 MCM6:DNA ratio. 2.5 µl of ascorbic acid solution (40 mM ascorbic acid, 10 mM EDTA, pH 8.0) was added, vortexed for 2–3 s, and H2O2 solution (40 mM H2O2, 10 mM EDTA) was added immediately and vortexed for 2–3 s. The reaction mixture was then incubated for 30 s and quenched by adding Orange G dye loading buffer with 40% glycerol. The samples were electrophoresed on a 20% TBE-PAGE gel and visualized on a Typhoon FLA 9000 imager (GE Healthsciences). Calculation of both the APB and FeBABE footprinting was performed by quantifying the relative density (minus background) for the labelled strand, divided at the midpoint on the ssDNA arm according to the following equation(1)F=(X@duplex-Control)(N@duplex-Control+C@duplex-Control), X=C,N
+SsoMCM proteins containing a single cysteine at either 642 or 682 for full-length or at 452 or 456 for -WH were dialyzed overnight at 4°C into conjugation buffer (30 mM MOPS, 100 mM NaCl, 1 mM EDTA, 5% glycerol, pH 8.0). Conjugation was performed by mixing 400 µM of FeBABE with 20 µM SsoMCM and incubating at 37°C for 1 hr in the dark. After 1 hr incubation, FeBABE-protein conjugate sample was dialyzed against the cutting buffer (50 mM MOPS, 120 mM NaCl, 0.1 mM EDTA, 10 mM MgCl2, 10% glycerol). Then FeBABE-protein conjugate was mixed with fluorescent DNA (150 nM, as indicated) and incubated at room temperature for 30 min maintaining ~ 1:1 MCM6:DNA ratio. 2.5 µl of ascorbic acid solution (40 mM ascorbic acid, 10 mM EDTA, pH 8.0) was added, vortexed for 2–3 s, and H2O2 solution (40 mM H2O2, 10 mM EDTA) was added immediately and vortexed for 2–3 s. The reaction mixture was then incubated for 30 s and quenched by adding Orange G dye loading buffer with 40% glycerol. The samples were electrophoresed on a 20% TBE-PAGE gel and visualized on a Typhoon FLA 9000 imager (GE Healthsciences). Calculation of both the APB and FeBABE footprinting was performed by quantifying the relative density (minus background) for the labelled strand, divided at the midpoint on the ssDNA arm according to the following equation
+
+$$
+F=\frac{(X@duplex-Control)}{(N@duplex-Control+C@duplex-Control)},X=C,N
+$$
 
 A standard two-tailed equal variance student’s T-test was used to determine significant differences of C@duplex versus N@duplex. P-values are reported for each experimental condition.
 
-## Single turnover unwinding assays
+### Single turnover unwinding assays
 
-Single turnover helicase unwinding assays were assembled in helicase buffer with 15 nM concentration of fluorescent forked DNA (as indicated) incubated with 2 µM SsoMCM (WT or WH mutant) at 60°C for 5 min before initiating with 2 mM ATP and a 300 nM ssDNA trap (unlabelled strand with the same sequence as the fluorescently labelled strand). Three different fork DNA substrates with a 20 bp duplex region with either Cy3 or Cy5 labels at the duplex end and either 30 nt equal arms or 30 and 8 nt asymmetric arms were used. Unwinding reactions were quenched using an equal volume of quench solution (1.6% SDS, 50% glycerol, 0.1% w/v bromophenol blue, 100 mM EDTA) and an additional 300 nM ssDNA trap at various times. Reactions were placed on ice until loading and were electrophoresed on native 20% TBE-PAGE. The gels were visualized on a Typhoon FLA 9000 imager (GE Healthsciences). The fraction unwound was calculated using the equation:(2)F=Is(t)Is(t)+ID(t)-Is(0)Is(0)+ID(0)/Is(b)Is(b)+ID(b)-Is(0)Is(0)+ID(0)where Is(t) and ID(t) are the intensities of the single and double-stranded bands, respectively, at time t; subscript 0 and b indicate equivalent counts at t = 0 and the boiled sample, respectively. The fraction unwound was fit to a single exponential equation as a function of time according to:(3)k=C+Ae-ktwhere C is a constant for the amplitude, A is the amplitude change, and k is the rate (min−1). The amplitude change denotes the fraction of productive and processive unwinding complexes.
+Single turnover helicase unwinding assays were assembled in helicase buffer with 15 nM concentration of fluorescent forked DNA (as indicated) incubated with 2 µM SsoMCM (WT or WH mutant) at 60°C for 5 min before initiating with 2 mM ATP and a 300 nM ssDNA trap (unlabelled strand with the same sequence as the fluorescently labelled strand). Three different fork DNA substrates with a 20 bp duplex region with either Cy3 or Cy5 labels at the duplex end and either 30 nt equal arms or 30 and 8 nt asymmetric arms were used. Unwinding reactions were quenched using an equal volume of quench solution (1.6% SDS, 50% glycerol, 0.1% w/v bromophenol blue, 100 mM EDTA) and an additional 300 nM ssDNA trap at various times. Reactions were placed on ice until loading and were electrophoresed on native 20% TBE-PAGE. The gels were visualized on a Typhoon FLA 9000 imager (GE Healthsciences). The fraction unwound was calculated using the equation:
 
-## Fluorescence anisotropy
+$$
+F=\frac{I_{s(t)}}{I_{s(t)}+I_{D(t)}}-\frac{I_{s(0)}}{I_{s(0)}+I_{D(0)}}/\frac{I_{s(b)}}{I_{s(b)}+I_{D(b)}}-\frac{I_{s(0)}}{I_{s(0)}+I_{D(0)}}
+$$
 
-Anisotropy experiments were performed using a Cary Eclipse Spectrophotometer (Agilent, Santa Clara, CA) in CB buffer. The four forked DNA substrates (with equal arms or asymmetric arms) and the duplex substrate were labelled at the duplex end with either Cy3 at the 5’ or Cy5 at the 3’ were annealed as described above. Anisotropy measurements were made at each concentration after a 2 min incubation after protein was added. Anisotropy values were collected with a 0.5 s integration time for three consecutive readings. Final values from at least three independent experiments were averaged and fit to a cooperative binding equation:(4)Y=Amax  × [MCM]n(Kdn+[MCM]n)in which Y is the measured anisotropy, Amax is the maximal anisotropy and n is the Hill coefficient using the Kaleidagraph (Synergy Software, v 4.2).
+where $I_{s(t)}$ and $I_{D(t)}$ are the intensities of the single and double-stranded bands, respectively, at time t; subscript 0 and b indicate equivalent counts at t = 0 and the boiled sample, respectively. The fraction unwound was fit to a single exponential equation as a function of time according to:
 
-## DNaseI footprinting
+$$
+k=C+Ae^{-kt}
+$$
+
+where C is a constant for the amplitude, A is the amplitude change, and k is the rate (min−1). The amplitude change denotes the fraction of productive and processive unwinding complexes.
+
+### Fluorescence anisotropy
+
+Anisotropy experiments were performed using a Cary Eclipse Spectrophotometer (Agilent, Santa Clara, CA) in CB buffer. The four forked DNA substrates (with equal arms or asymmetric arms) and the duplex substrate were labelled at the duplex end with either Cy3 at the 5’ or Cy5 at the 3’ were annealed as described above. Anisotropy measurements were made at each concentration after a 2 min incubation after protein was added. Anisotropy values were collected with a 0.5 s integration time for three consecutive readings. Final values from at least three independent experiments were averaged and fit to a cooperative binding equation:
+
+$$
+Y=\frac{A_{max}\times[MCM]^{n}}{(K_{d}^{n}+[MCM]^{n})}
+$$
+
+in which Y is the measured anisotropy, Amax is the maximal anisotropy and n is the Hill coefficient using the Kaleidagraph (Synergy Software, v 4.2).
+
+### DNaseI footprinting
 
 DNaseI footprinting experiments were performed in stoichiometric MCM6:DNA concentration ratios. Equal arm forked DNA substrates (DNA164-5/DNA165) labelled at the duplex end with Cy5 were incubated with SsoMCM in 1x CB buffer 15 min at room temperature in 10 µl reaction volumes to facilitate protein-DNA complex formation. The complexes were then digested by 0.1 U/µl DNaseI in 1x DNaseI reaction buffer incubated at 37°C for 30 s. Reaction were then quenched by 5 mM EDTA and heating to 75°C for 10 min. An equal volume of 100% formamide was added and separated on a 20% denaturing PAGE.
 
-## Electrophoretic Mobility Shift Assay (EMSA)
+### Electrophoretic Mobility Shift Assay (EMSA)
 
 EMSAs were performed in stoichiometric MCM6:DNA concentration ratios. Equal arm forked DNA substrates (DNA164-5/DNA165) labelled at the duplex end with Cy5 were incubated with SsoMCM in 1x CB buffer 15 min at room temperature in 10 µl reaction volumes to facilitate protein-DNA complex formation. 2 µl of loading buffer (30% v/v glycerol) was added to the reaction prior to being resolved on 5% native PAGE.
 
-## Presteady-State FRET
+### Presteady-State FRET
 
 Stopped-flow fluorescence experiments were performed on an Applied Photophysics (Leatherhead, UK) SX.20MV in fluorescence mode at a constant temperature of 57°C.
 
-DNA14 was annealed to either DNA179 or DNA182 using to generate two fork substrates with a 30 base 3’-arm and a 20 or 7 base 5’-arm; DNA60 was annealed to DNA202 to give a 3’-long tail substrate; or DNA204 was annealed to DNA203 to give a 5’-long tail substrate. 5’SsoMCM(C642A) was labelled at the N-terminus or at C682 with Cy3 as described previously (McGeoch et al., 2005). Final concentrations of components after mixing were SsoMCM (500 nM or 83 nM hexamer), DNA (50–63 nM), streptavidin (0 or 188 nM), and ATP (0.5 mM), unless indicated otherwise. The samples were excited at 490 nm, and a 570-nm-cutoff filter was used to collect 4000 oversampled data points detecting only Cy3 emission over single or split-time bases. The slits were set at 3 mm for both excitation and emission. At least seven traces were averaged for each experiment and performed multiple times and on multiple occasions. The observed averaged traces were fit to one, two, or three exponentials using the supplied software. Below is the equation for a double exponential fit:(5)v=a1∙e-k1t+a2∙e-k2t+Cwhere a is the amplitude change, k is the exponential rate, t is time, and C is a constant for the amplitude.
+DNA14 was annealed to either DNA179 or DNA182 using to generate two fork substrates with a 30 base 3’-arm and a 20 or 7 base 5’-arm; DNA60 was annealed to DNA202 to give a 3’-long tail substrate; or DNA204 was annealed to DNA203 to give a 5’-long tail substrate. 5’SsoMCM(C642A) was labelled at the N-terminus or at C682 with Cy3 as described previously (McGeoch et al., 2005). Final concentrations of components after mixing were SsoMCM (500 nM or 83 nM hexamer), DNA (50–63 nM), streptavidin (0 or 188 nM), and ATP (0.5 mM), unless indicated otherwise. The samples were excited at 490 nm, and a 570-nm-cutoff filter was used to collect 4000 oversampled data points detecting only Cy3 emission over single or split-time bases. The slits were set at 3 mm for both excitation and emission. At least seven traces were averaged for each experiment and performed multiple times and on multiple occasions. The observed averaged traces were fit to one, two, or three exponentials using the supplied software. Below is the equation for a double exponential fit:
+
+$$
+v=a_{1}∙e^{-k_{1}t}+a_{2}∙e^{-k_{2}t}+C
+$$
+
+where a is the amplitude change, k is the exponential rate, t is time, and C is a constant for the amplitude.

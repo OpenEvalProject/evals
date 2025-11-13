@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/046rm7j60 Center for Biomedical Modeling, Department of Psychiatry and Biobehavioral Sciences, Semel Institute for Neuroscience and Human Behavior, David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States
-2. https://ror.org/03p74gp79 Afrobarometer / Institute for Democracy, Citizenship and Public Policy in Africa, University of Cape Town Cape Town South Africa
+1. Center for Biomedical Modeling, Department of Psychiatry and Biobehavioral Sciences, Semel Institute for Neuroscience and Human Behavior, David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+2. Afrobarometer / Institute for Democracy, Citizenship and Public Policy in Africa, University of Cape Town Cape Town South Africa ([ROR:03p74gp79](https://ror.org/03p74gp79))
 
 † Corresponding author
 
@@ -32,35 +32,75 @@ Currently, there are multiple mHealth interventions that are being investigated 
 
 The Afrobarometer R7 survey (Afrobarometer, 2021) collected data in 34 African countries: Benin, Botswana, Burkina Faso, Cabo Verde, Cameroon, Cote d`Ivoire, Eswatini, Gabon, Gambia, Ghana, Guinea, Kenya, Lesotho, Liberia, Madagascar, Malawi, Mali, Mauritius, Morocco, Mozambique, Namibia, Niger, Nigeria, Sao Tome and Principe, Senegal, Sierra Leone, South Africa, Sudan, Tanzania, Togo, Tunisia, Uganda, Zambia, and Zimbabwe. We excluded Kenya from our analysis as its questionnaire did not differentiate between SP and BP ownership.
 
-We used the Afrobarometer data (Afrobarometer, 2021) to estimate the probability of owning a mobile phone (either a BP or an SP) and, amongst mobile phone owners, the probability of owning an SP. We made these estimates at three levels: (i) multi-country (aggregating data from all 33 countries), (ii) the national level for each country, and (iii) the sub-national level within each country. To make these estimates, we used data from the n=44,224 individuals in the 33 countries who provided data on mobile phone ownership, i.e., on whether they owned one (n=35,685), did not own one (n=4,903), or did not own one but someone in their house owned one (n=3,383). Individuals who answered ‘do not know’ or refused to answer were excluded (n=253; proportion of data, p^=0.006). Mobile phone ownership was recoded as a binary variable; participants who reported that someone else in their household owned a mobile phone were coded as not owning a phone. Contingent on mobile phone ownership, participants were asked whether or not their phone had internet access; we assumed that individuals who answered in the affirmative owned an SP (n=16,830), individuals who answered ‘do not know’ or refused to answer were excluded (n=252; p^=0.007), and we assumed that each of the remaining participants owned a BP (n=18,603). A flow diagram depicting participant sample sizes is provided in Figure 1—figure supplement 1. Afrobarometer ‘within-country’ weights were used for all national-level estimates (The Afrobarometer Network, 2021); multi-country estimates were made by weighting the national-level estimates with UN population data (United Nations, 2019). Sub-national estimates of mobile phone ownership were mapped by linking current national and sub-national boundaries (GADM, 2021) to Afrobarometer data at the province/state level.
+We used the Afrobarometer data (Afrobarometer, 2021) to estimate the probability of owning a mobile phone (either a BP or an SP) and, amongst mobile phone owners, the probability of owning an SP. We made these estimates at three levels: (i) multi-country (aggregating data from all 33 countries), (ii) the national level for each country, and (iii) the sub-national level within each country. To make these estimates, we used data from the n=44,224 individuals in the 33 countries who provided data on mobile phone ownership, i.e., on whether they owned one (n=35,685), did not own one (n=4,903), or did not own one but someone in their house owned one (n=3,383). Individuals who answered ‘do not know’ or refused to answer were excluded (n=253; proportion of data, $p^$=0.006). Mobile phone ownership was recoded as a binary variable; participants who reported that someone else in their household owned a mobile phone were coded as not owning a phone. Contingent on mobile phone ownership, participants were asked whether or not their phone had internet access; we assumed that individuals who answered in the affirmative owned an SP (n=16,830), individuals who answered ‘do not know’ or refused to answer were excluded (n=252; $p^$=0.007), and we assumed that each of the remaining participants owned a BP (n=18,603). A flow diagram depicting participant sample sizes is provided in Figure 1—figure supplement 1. Afrobarometer ‘within-country’ weights were used for all national-level estimates (The Afrobarometer Network, 2021); multi-country estimates were made by weighting the national-level estimates with UN population data (United Nations, 2019). Sub-national estimates of mobile phone ownership were mapped by linking current national and sub-national boundaries (GADM, 2021) to Afrobarometer data at the province/state level.
 
 Due to the high cost of internet in African countries, some individuals may own SPs but not pay to access the internet. Therefore, to estimate the percentage of SP owners who may not pay to access the internet, we looked at the frequency of access to the internet within this sub-group. In the Afrobarometer surveys, participants were asked how often they accessed the internet; they were not asked to specify how they accessed the internet. We analyzed these data, stratified on the basis of the type of mobile phone that we assumed individuals owned.
 
-To identify inequalities/inequities in ownership, we used data on five variables from the Afrobarometer R7 survey: gender, age, poverty, urban/rural residency, and proximity to an HC (Afrobarometer, 2021). We defined poverty, as in the Afrobarometer surveys, by using the Lived Poverty Index (LPI). This index is calculated by combining answers to five survey questions that measure how often individuals have gone without basic necessities such as water, food, and medical care in the past month (Mattes, 2020). We use a four-point scale for LPI, where 0 indicates an individual is in the wealthiest group in terms of accessing basic necessities, and 3 indicates an individual is in the poorest group. Individuals responding to any of the five questions with ‘Do not know’ were excluded from the analysis (n=465; p^=0.011). We defined proximity to an HC as a binary variable: close, or not. Individuals who had an HC present in the enumeration area of their residence, or within easy walking distance thereof, were considered to be in close proximity to an HC. There were no missing values for proximity to HC or urban/rural residence which were recorded by the interviewer (n=0; p^=0). Individuals who did not know or refused to provide their age (n=39; p^=0.001) or gender (n=7; p^=0.000) were excluded from the analysis. We estimated country-specific crude ORs (cORs) of mobile phone ownership separately by gender and urban-rural status, calculated an age- and gender-stratified population-pyramid of mobile phone ownership, and constructed Bayesian models for (i) the ownership of mobile phones and (ii) the ownership of SPs amongst mobile phone owners.
+To identify inequalities/inequities in ownership, we used data on five variables from the Afrobarometer R7 survey: gender, age, poverty, urban/rural residency, and proximity to an HC (Afrobarometer, 2021). We defined poverty, as in the Afrobarometer surveys, by using the Lived Poverty Index (LPI). This index is calculated by combining answers to five survey questions that measure how often individuals have gone without basic necessities such as water, food, and medical care in the past month (Mattes, 2020). We use a four-point scale for LPI, where 0 indicates an individual is in the wealthiest group in terms of accessing basic necessities, and 3 indicates an individual is in the poorest group. Individuals responding to any of the five questions with ‘Do not know’ were excluded from the analysis (n=465; $p^$=0.011). We defined proximity to an HC as a binary variable: close, or not. Individuals who had an HC present in the enumeration area of their residence, or within easy walking distance thereof, were considered to be in close proximity to an HC. There were no missing values for proximity to HC or urban/rural residence which were recorded by the interviewer (n=0; $p^$=0). Individuals who did not know or refused to provide their age (n=39; $p^$=0.001) or gender (n=7; $p^$=0.000) were excluded from the analysis. We estimated country-specific crude ORs (cORs) of mobile phone ownership separately by gender and urban-rural status, calculated an age- and gender-stratified population-pyramid of mobile phone ownership, and constructed Bayesian models for (i) the ownership of mobile phones and (ii) the ownership of SPs amongst mobile phone owners.
 
-To specify the Bayesian logistic regression (BLR) models for the probability of owning a mobile phone, we modeled phone ownership yij of individual i ∈(1,nj) in country j ∈(1,33) as a Bernoulli variable with probability θij :(1)yij|θij∼Bern(θij)
+To specify the Bayesian logistic regression (BLR) models for the probability of owning a mobile phone, we modeled phone ownership $y_{ij}$ of individual $i \in(1,n_{j})$ in country $j \in(1,33)$ as a Bernoulli variable with probability $\theta_{ij}$ :
 
-The probability of owning a mobile phone, P(yij=1)=θij , was then modeled using the logit-link function:(2)logit(θij)=β0+β1x1ij
+$$
+y_{ij}|\theta_{ij}∼Bern(\theta_{ij})
+$$
 
-where β0 is the population-level intercept, and β1 is a regression coefficient that quantifies the influence of predictor variable x1ij ; we used a separate BLR model for each of the five variables. Notably, logit(θij)=ln(θij1−θij) is the log-odds of mobile phone ownership. The BLR models for the probability, for mobile phone owners, of owning an SP are defined equivalently, with yij now representing ownership of an SP by phone owner i in country j.
+The probability of owning a mobile phone, $P(y_{ij}=1)=\theta_{ij}$ , was then modeled using the logit-link function:
 
-We then constructed Bayesian multilevel logistic regression (BMLR) models (Gelman et al., 2013) for the probability of owning a mobile phone (model 1) and the probability, for mobile phone owners, of owning an SP (model 2). These models enabled us to quantify the effect of each of the five variables whilst accounting for the effect of the other four variables and the nested structure of the data. We specified model 1 by modifying Equation 2:(3)logit(θij)=β0+β1x1ij+…+β5x5ij+u0j+ u1jx1ij+u2jx2ij
+$$
+logit(\theta_{ij})=\beta_{0}+\beta_{1}x_{1ij}
+$$
 
-Here, the five predictor variables are denoted by xkij and their associated regression coefficients by βk (k∈(1,5)). u0j are country-level intercepts, u1j are coefficients for the country-level effect of urban/rural residency x1ij , and u2j are coefficients for the country-level effect of gender x2ij . The country-level effects are distributed as multivariate normal with mean 0 and unstructured covariance matrix Σ:(4)[u0ju1ju2j]∼MVN([000],Σ=[σu02σu01σu02σu01σu12σu12σu02σu12σu22])
+where $\beta_{0}$ is the population-level intercept, and $\beta_{1}$ is a regression coefficient that quantifies the influence of predictor variable $x_{1ij}$ ; we used a separate BLR model for each of the five variables. Notably, $logit(\theta_{ij})=ln(\frac{\theta_{ij}}{1−\theta_{ij}})$ is the log-odds of mobile phone ownership. The BLR models for the probability, for mobile phone owners, of owning an SP are defined equivalently, with $y_{ij}$ now representing ownership of an SP by phone owner $i$ in country $j$.
 
-By substituting ρab=σuabσuaσub (where ρab is the correlation between country-level effects ua and ub), Σ can be reparametrized as a function of the correlation matrix (R). We derive this for model 1; the result is generalizable.(5)∑=[σu02σu01σu02σu01σu12σu12σu02σu12σu22]=[σu02ρ01σu0σu1ρ02σu0σu2ρ01σu0σu1σu12ρ12σu1σu2ρ02σu0σu2ρ12σu1σu2σu22]=[σu0000σu1000σu2][1ρ01ρ02ρ011ρ12ρ02ρ121]⏟R[σu0000σu1000σu2]
+We then constructed Bayesian multilevel logistic regression (BMLR) models (Gelman et al., 2013) for the probability of owning a mobile phone (model 1) and the probability, for mobile phone owners, of owning an SP (model 2). These models enabled us to quantify the effect of each of the five variables whilst accounting for the effect of the other four variables and the nested structure of the data. We specified model 1 by modifying Equation 2:
+
+$$
+logit(\theta_{ij})=\beta_{0}+\beta_{1}x_{1ij}+…+\beta_{5}x_{5ij}+u_{0j}+ u_{1j}x_{1ij}+u_{2j}x_{2ij}
+$$
+
+Here, the five predictor variables are denoted by $x_{kij}$ and their associated regression coefficients by $\beta_{k}$ ($k\in(1,5)$). $u_{0j}$ are country-level intercepts, $u_{1j}$ are coefficients for the country-level effect of urban/rural residency $x_{1ij}$ , and $u_{2j}$ are coefficients for the country-level effect of gender $x_{2ij}$ . The country-level effects are distributed as multivariate normal with mean 0 and unstructured covariance matrix Σ:
+
+$$
+[u_{0j}u_{1j}u_{2j}]∼MVN([000],Σ=[_{\sigma_{u_{0}}^{2}}_{\sigma_{u_{01}}}_{\sigma_{u_{02}}}_{\sigma_{u_{01}}}_{\sigma_{u_{1}}^{2}}_{\sigma_{u_{12}}}_{\sigma_{u_{02}}}_{\sigma_{u_{12}}}_{\sigma_{u_{2}}^{2}}])
+$$
+
+By substituting $ρ_{ab}=\frac{\sigma_{u_{ab}}}{\sigma_{u_{a}}\sigma_{u_{b}}}$ (where $ρ_{ab}$ is the correlation between country-level effects $u_{a}$ and $u_{b}$), Σ can be reparametrized as a function of the correlation matrix ($R$). We derive this for model 1; the result is generalizable.
+
+$$
+\sum=[\sigma_{u_{0}}^{2}\sigma_{u_{01}}\sigma_{u_{02}}\sigma_{u_{01}}\sigma_{u_{1}}^{2}\sigma_{u_{12}}\sigma_{u_{02}}\sigma_{u_{12}}\sigma_{u_{2}}^{2}]=[\sigma_{u_{0}}^{2}ρ_{01}\sigma_{u_{0}}\sigma_{u_{1}}ρ_{02}\sigma_{u_{0}}\sigma_{u_{2}}ρ_{01}\sigma_{u_{0}}\sigma_{u_{1}}\sigma_{u_{1}}^{2}ρ_{12}\sigma_{u_{1}}\sigma_{u_{2}}ρ_{02}\sigma_{u_{0}}\sigma_{u_{2}}ρ_{12}\sigma_{u_{1}}\sigma_{u_{2}}\sigma_{u_{2}}^{2}]=[\sigma_{u_{0}}000\sigma_{u_{1}}000\sigma_{u_{2}}][1ρ_{01}ρ_{02}ρ_{01}1ρ_{12}ρ_{02}ρ_{12}1]⏟R[\sigma_{u_{0}}000\sigma_{u_{1}}000\sigma_{u_{2}}]
+$$
 
 Model 2 for SP ownership (amongst mobile phone owners) is defined in an equivalent manner, with the addition of interaction effects between gender and proximity to an HC. This allows us to discern differences in SP ownership between women who do not live in close proximity to an HC and: (i) women who live in close proximity to an HC, (ii) men who do not live in close proximity to an HC, and (iii) men who live in close proximity to an HC.
 
-We used weakly informative priors (Gelman, 2006; Gelman et al., 2013; Gelman et al., 2008; Lemoine, 2019; Williams et al., 2018):(6)β0∼N(0,5)βk∼N(0,1.5)σul∼Half-t(0,2.5)R∼LKJ(2)
+We used weakly informative priors (Gelman, 2006; Gelman et al., 2013; Gelman et al., 2008; Lemoine, 2019; Williams et al., 2018):
 
-For the population-level effects βk(k∈(1,N)), we chose normal priors with mean 0 and SD 1.5. This necessitates the initial sampling to not exclude effects in excess of ±3.9, i.e., the 99% boundary for this distribution. This corresponds to being able to detect an OR as large as 48, or as small as 1/48. We used similar reasoning to define the other priors. We used half-t priors for the SD parameters (Gelman, 2006) to ensure positivity. Finally, we used an LKJ(2) prior for the correlation matrix R; this distribution (Lewandowski et al., 2009) is bounded by [–1, 1] and centered at 0 with edge values less likely.
+$$
+\beta_{0}∼N(0,5)\beta_{k}∼N(0,1.5)\sigma_{u_{l}}∼Half-t(0,2.5)R∼LKJ(2)
+$$
+
+For the population-level effects $\beta_{k}(k\in(1,N))$, we chose normal priors with mean 0 and SD 1.5. This necessitates the initial sampling to not exclude effects in excess of ±3.9, i.e., the 99% boundary for this distribution. This corresponds to being able to detect an OR as large as 48, or as small as 1/48. We used similar reasoning to define the other priors. We used half-t priors for the SD parameters (Gelman, 2006) to ensure positivity. Finally, we used an LKJ(2) prior for the correlation matrix $R$; this distribution (Lewandowski et al., 2009) is bounded by [–1, 1] and centered at 0 with edge values less likely.
 
 We fit the BLR and BMLR models by using Markov Chain Monte Carlo (MCMC) sampling to approximate the posterior distributions of all model parameters. MCMC sampling was conducted in the programming language Stan (Stan Development Team, 2020) via the R package brms (v. 2.15.0; Bürkner, 2017). 10,000 posterior samples were drawn over 4 chains, following a warm-up of 1,000 for each. Standard MCMC diagnostics (Betancourt, 2017; Gelman et al., 2013; Gelman and Rubin, 1992) were used to assess chain convergence, independence, and sampling efficiency. We made density plots of each parameter’s posterior distribution: medians and Bayesian 95% highest posterior density (HPD) regions. For all five variables, we computed median ORs (cORs for the BLR models, and aORs for the BMLR models) and the corresponding 95% HPD regions. ROC curves were used to assess the diagnostic capabilities of the fitted BMLR models.
 
 ## Results
 
 We found that 82% of individuals in the 33 countries own mobile phones; 42% of individuals own BPs and 40% own SPs. Notably, we found that only 13% of individuals that we classified as SP owners (and 89% of individuals that we classified as owners of BP) reported that they never accessed the internet (Figure 1—figure supplement 2). Figure 1A shows the probability of phone ownership in all 33 countries. Overall, the probability of not owning a mobile phone (either a BP or an SP) is fairly low (median: 0.15), but there is substantial variation between countries: the probability ranges from 0.05 to 0.53 with SD 0.12. The probability of owning a BP is moderately high (median: 0.40), but again – there is substantial variation amongst countries, ranging from 0.23 to 0.66 with SD 0.10. Overall, the country-level probability of owning a BP is not significantly different (t=0.76; p=0.45) from the probability of owning an SP, but the probability of owning an SP is much more variable amongst countries (SD=0.16). Figure 1B shows the country-specific probabilities of ownership of a BP (orange data) or an SP (red data). Notably, there is substantial sub-national variation, within almost every one of the 33 countries, in the ownership of a BP (Figure 1C) or of an SP (Figure 1D). Even in countries such as South Africa, where there is a high probability of owning a mobile phone, there is a very low probability of ownership in certain areas of the country.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig1-v2.jpg)
+
+**Figure 1.:** (A) Boxplots show the probabilities of not owning a mobile phone (cream), owning a basic mobile phone (BP; orange), or owning a smartphone (SP; red). Country-level probabilities (dots) are overlaid and jittered to reduce overlap. (B) Barplot shows the country-level probabilities of BP ownership (orange) and SP ownership (red) ordered by SP ownership. Geographic distribution showing probabilities of (C) BP ownership and (D) SP ownership in 33 Afrobarometer countries at the sub-national level.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Shown for 33 countries that collect phone ownership data as part of the Afrobarometer Round 7 (R7) survey.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Afrobarometer Round 7 (R7) surveyed individuals on how often they used the internet. Individuals were not asked to specify how they used the internet (i.e. they did not necessarily have to use or own a phone to access the internet).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Country-level basic mobile phone (BP) ownership in individuals with Lived Poverty Index (LPI) = 3. (B) Country-level smartphone (SP) ownership in individuals with LPI = 3.
 
 We found a very clear relationship between country-level ownership of a mobile phone and living in close proximity to an HC (Figure 2A). SP owners were more likely than BP owners to live close to an HC (t=6.86; p<0.001); in turn, BP owners were significantly more likely than individuals who did not own a mobile phone to live close to an HC (t=5.52; p<0.001). Figure 2B shows, for each of the 33 countries, the proportion of individuals who live in close proximity to an HC based on whether they own an SP, own a BP, or do not own a mobile phone. Again, there is considerable variation amongst countries.
 
@@ -70,7 +110,723 @@ We found a very clear relationship between country-level ownership of a mobile p
 
 Considering the 33 countries together, we found a gender inequity in ownership of mobile phones: 87% of men versus 76% of women own mobile phones. We also found a gender inequity in ownership of SPs: 50% of men (who own mobile phones) own SPs versus 46% of women (who own mobile phones). We found that men are significantly more likely than women to own mobile phones in 27 out of the 33 countries (Table 1): the OR of male to female phone ownership is greatest in Benin (cOR 4.78). We did not find a significant gender difference in Botswana, Cabo Verde, Gabon, Lesotho, Namibia, or South Africa. Amongst mobile phone owners, men are significantly more likely than women to own SPs in 15 of the 33 countries (Table 1): gender inequity is most pronounced in Benin (cOR 2.84).
 
+**Table 1.**
+ Probability of mobile phone ownership by country and gender.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Country</th>
+      <th colspan="3">Any mobile phone</th>
+      <th></th>
+      <th colspan="3">Smartphone</th>
+    </tr>
+    <tr>
+      <th>Female</th>
+      <th>Male</th>
+      <th>OR†</th>
+      <th></th>
+      <th>Female</th>
+      <th>Male</th>
+      <th>OR†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Benin</td>
+      <td>0.66</td>
+      <td>0.90</td>
+      <td>4.78*</td>
+      <td></td>
+      <td>0.19</td>
+      <td>0.41</td>
+      <td>2.84*</td>
+    </tr>
+    <tr>
+      <td>Mali</td>
+      <td>0.60</td>
+      <td>0.88</td>
+      <td>4.77*</td>
+      <td></td>
+      <td>0.15</td>
+      <td>0.26</td>
+      <td>1.93*</td>
+    </tr>
+    <tr>
+      <td>Burkina Faso</td>
+      <td>0.67</td>
+      <td>0.90</td>
+      <td>4.31*</td>
+      <td></td>
+      <td>0.18</td>
+      <td>0.27</td>
+      <td>1.64*</td>
+    </tr>
+    <tr>
+      <td>Senegal</td>
+      <td>0.83</td>
+      <td>0.95</td>
+      <td>3.90*</td>
+      <td></td>
+      <td>0.44</td>
+      <td>0.52</td>
+      <td>1.40*</td>
+    </tr>
+    <tr>
+      <td>Guinea</td>
+      <td>0.79</td>
+      <td>0.93</td>
+      <td>3.46*</td>
+      <td></td>
+      <td>0.22</td>
+      <td>0.23</td>
+      <td>1.06</td>
+    </tr>
+    <tr>
+      <td>Niger</td>
+      <td>0.47</td>
+      <td>0.74</td>
+      <td>3.23*</td>
+      <td></td>
+      <td>0.14</td>
+      <td>0.23</td>
+      <td>1.92*</td>
+    </tr>
+    <tr>
+      <td>Cote d`Ivoire</td>
+      <td>0.85</td>
+      <td>0.95</td>
+      <td>3.10*</td>
+      <td></td>
+      <td>0.32</td>
+      <td>0.49</td>
+      <td>1.98*</td>
+    </tr>
+    <tr>
+      <td>Nigeria</td>
+      <td>0.78</td>
+      <td>0.91</td>
+      <td>3.02*</td>
+      <td></td>
+      <td>0.48</td>
+      <td>0.54</td>
+      <td>1.29*</td>
+    </tr>
+    <tr>
+      <td>Gambia</td>
+      <td>0.85</td>
+      <td>0.94</td>
+      <td>2.82*</td>
+      <td></td>
+      <td>0.60</td>
+      <td>0.65</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <td>Togo</td>
+      <td>0.75</td>
+      <td>0.89</td>
+      <td>2.80*</td>
+      <td></td>
+      <td>0.33</td>
+      <td>0.45</td>
+      <td>1.61*</td>
+    </tr>
+    <tr>
+      <td>Uganda</td>
+      <td>0.59</td>
+      <td>0.80</td>
+      <td>2.76*</td>
+      <td></td>
+      <td>0.33</td>
+      <td>0.37</td>
+      <td>1.18</td>
+    </tr>
+    <tr>
+      <td>Tunisia</td>
+      <td>0.92</td>
+      <td>0.97</td>
+      <td>2.45*</td>
+      <td></td>
+      <td>0.61</td>
+      <td>0.60</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>Sierra Leone</td>
+      <td>0.62</td>
+      <td>0.80</td>
+      <td>2.42*</td>
+      <td></td>
+      <td>0.44</td>
+      <td>0.44</td>
+      <td>1.01</td>
+    </tr>
+    <tr>
+      <td>Tanzania</td>
+      <td>0.74</td>
+      <td>0.87</td>
+      <td>2.41*</td>
+      <td></td>
+      <td>0.23</td>
+      <td>0.31</td>
+      <td>1.50*</td>
+    </tr>
+    <tr>
+      <td>Malawi</td>
+      <td>0.41</td>
+      <td>0.61</td>
+      <td>2.29*</td>
+      <td></td>
+      <td>0.34</td>
+      <td>0.43</td>
+      <td>1.49*</td>
+    </tr>
+    <tr>
+      <td>Morocco</td>
+      <td>0.90</td>
+      <td>0.95</td>
+      <td>2.28*</td>
+      <td></td>
+      <td>0.60</td>
+      <td>0.64</td>
+      <td>1.22</td>
+    </tr>
+    <tr>
+      <td>Ghana</td>
+      <td>0.82</td>
+      <td>0.91</td>
+      <td>2.15*</td>
+      <td></td>
+      <td>0.35</td>
+      <td>0.47</td>
+      <td>1.70*</td>
+    </tr>
+    <tr>
+      <td>Mauritius</td>
+      <td>0.93</td>
+      <td>0.97</td>
+      <td>2.11*</td>
+      <td></td>
+      <td>0.63</td>
+      <td>0.64</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <td>Cameroon</td>
+      <td>0.85</td>
+      <td>0.92</td>
+      <td>2.10*</td>
+      <td></td>
+      <td>0.55</td>
+      <td>0.54</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>Mozambique</td>
+      <td>0.61</td>
+      <td>0.75</td>
+      <td>1.87*</td>
+      <td></td>
+      <td>0.45</td>
+      <td>0.45</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <td>Sao Tome and Principe</td>
+      <td>0.75</td>
+      <td>0.85</td>
+      <td>1.83*</td>
+      <td></td>
+      <td>0.55</td>
+      <td>0.58</td>
+      <td>1.14</td>
+    </tr>
+    <tr>
+      <td>Liberia</td>
+      <td>0.64</td>
+      <td>0.76</td>
+      <td>1.79*</td>
+      <td></td>
+      <td>0.38</td>
+      <td>0.53</td>
+      <td>1.90*</td>
+    </tr>
+    <tr>
+      <td>Sudan</td>
+      <td>0.89</td>
+      <td>0.94</td>
+      <td>1.77*</td>
+      <td></td>
+      <td>0.65</td>
+      <td>0.67</td>
+      <td>1.11</td>
+    </tr>
+    <tr>
+      <td>Eswatini</td>
+      <td>0.92</td>
+      <td>0.95</td>
+      <td>1.74*</td>
+      <td></td>
+      <td>0.57</td>
+      <td>0.60</td>
+      <td>1.14</td>
+    </tr>
+    <tr>
+      <td>Zambia</td>
+      <td>0.63</td>
+      <td>0.73</td>
+      <td>1.61*</td>
+      <td></td>
+      <td>0.40</td>
+      <td>0.41</td>
+      <td>1.06</td>
+    </tr>
+    <tr>
+      <td>Zimbabwe</td>
+      <td>0.82</td>
+      <td>0.87</td>
+      <td>1.46*</td>
+      <td></td>
+      <td>0.42</td>
+      <td>0.45</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <td>Madagascar</td>
+      <td>0.44</td>
+      <td>0.50</td>
+      <td>1.29*</td>
+      <td></td>
+      <td>0.36</td>
+      <td>0.36</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Gabon</td>
+      <td>0.93</td>
+      <td>0.94</td>
+      <td>1.26</td>
+      <td></td>
+      <td>0.63</td>
+      <td>0.66</td>
+      <td>1.13</td>
+    </tr>
+    <tr>
+      <td>Namibia</td>
+      <td>0.88</td>
+      <td>0.90</td>
+      <td>1.24</td>
+      <td></td>
+      <td>0.54</td>
+      <td>0.62</td>
+      <td>1.40*</td>
+    </tr>
+    <tr>
+      <td>Botswana</td>
+      <td>0.89</td>
+      <td>0.91</td>
+      <td>1.23</td>
+      <td></td>
+      <td>0.55</td>
+      <td>0.62</td>
+      <td>1.33*</td>
+    </tr>
+    <tr>
+      <td>Cabo Verde</td>
+      <td>0.85</td>
+      <td>0.88</td>
+      <td>1.20</td>
+      <td></td>
+      <td>0.71</td>
+      <td>0.77</td>
+      <td>1.36*</td>
+    </tr>
+    <tr>
+      <td>Lesotho</td>
+      <td>0.84</td>
+      <td>0.86</td>
+      <td>1.18</td>
+      <td></td>
+      <td>0.39</td>
+      <td>0.39</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <td>South Africa</td>
+      <td>0.91</td>
+      <td>0.91</td>
+      <td>0.97</td>
+      <td></td>
+      <td>0.69</td>
+      <td>0.68</td>
+      <td>0.93</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Significant at α=0.05.†Odds ratio of male phone ownership to female phone ownership._
+
 Considering the 33 countries together, we found a substantial inequity in ownership of mobile phones based on whether individuals lived in urban or rural areas: 91% of urban residents versus 74% of rural residents. We also found an urban-rural inequity in ownership of SPs: 61% of urban residents (who own mobile phones) own SPs versus 35% of rural residents (who own mobile phones). We found significant urban-rural differences in the ownership of mobile phones in 29 of the 33 countries (Table 2); the OR of urban to rural phone ownership is greatest in Gabon (cOR 7.17). Notably, we did not find a significant urban-rural inequity in Eswatini, the Gambia, Mauritius, or South Africa. Urban residents are more likely to own SPs than rural residents, in 31 of 33 countries (Table 2); the urban/rural difference in SP ownership is greatest in Burkina Faso (cOR 7.57). We did not find significant urban-rural differences in ownership of SPs in the Gambia or Sao Tome and Principe.
+
+**Table 2.**
+ Probability of mobile phone ownership by country and urban/rural status.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Country</th>
+      <th colspan="3">Any mobile phone</th>
+      <th></th>
+      <th colspan="3">Smartphone</th>
+    </tr>
+    <tr>
+      <th>Rural</th>
+      <th>Urban</th>
+      <th>OR†</th>
+      <th></th>
+      <th>Rural</th>
+      <th>Urban</th>
+      <th>OR†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gabon</td>
+      <td>0.82</td>
+      <td>0.97</td>
+      <td>7.17*</td>
+      <td></td>
+      <td>0.31</td>
+      <td>0.72</td>
+      <td>5.66*</td>
+    </tr>
+    <tr>
+      <td>Zimbabwe</td>
+      <td>0.78</td>
+      <td>0.95</td>
+      <td>5.94*</td>
+      <td></td>
+      <td>0.28</td>
+      <td>0.64</td>
+      <td>4.58*</td>
+    </tr>
+    <tr>
+      <td>Uganda</td>
+      <td>0.63</td>
+      <td>0.90</td>
+      <td>5.58*</td>
+      <td></td>
+      <td>0.29</td>
+      <td>0.49</td>
+      <td>2.42*</td>
+    </tr>
+    <tr>
+      <td>Burkina Faso</td>
+      <td>0.74</td>
+      <td>0.94</td>
+      <td>5.25*</td>
+      <td></td>
+      <td>0.12</td>
+      <td>0.52</td>
+      <td>7.57*</td>
+    </tr>
+    <tr>
+      <td>Ghana</td>
+      <td>0.77</td>
+      <td>0.94</td>
+      <td>5.09*</td>
+      <td></td>
+      <td>0.24</td>
+      <td>0.53</td>
+      <td>3.60*</td>
+    </tr>
+    <tr>
+      <td>Senegal</td>
+      <td>0.82</td>
+      <td>0.96</td>
+      <td>4.78*</td>
+      <td></td>
+      <td>0.34</td>
+      <td>0.60</td>
+      <td>2.90*</td>
+    </tr>
+    <tr>
+      <td>Morocco</td>
+      <td>0.86</td>
+      <td>0.97</td>
+      <td>4.70*</td>
+      <td></td>
+      <td>0.42</td>
+      <td>0.71</td>
+      <td>3.51*</td>
+    </tr>
+    <tr>
+      <td>Zambia</td>
+      <td>0.56</td>
+      <td>0.84</td>
+      <td>4.23*</td>
+      <td></td>
+      <td>0.29</td>
+      <td>0.50</td>
+      <td>2.54*</td>
+    </tr>
+    <tr>
+      <td>Madagascar</td>
+      <td>0.40</td>
+      <td>0.73</td>
+      <td>4.17*</td>
+      <td></td>
+      <td>0.27</td>
+      <td>0.54</td>
+      <td>3.25*</td>
+    </tr>
+    <tr>
+      <td>Togo</td>
+      <td>0.76</td>
+      <td>0.93</td>
+      <td>4.14*</td>
+      <td></td>
+      <td>0.25</td>
+      <td>0.57</td>
+      <td>3.92*</td>
+    </tr>
+    <tr>
+      <td>Tanzania</td>
+      <td>0.75</td>
+      <td>0.92</td>
+      <td>4.00*</td>
+      <td></td>
+      <td>0.17</td>
+      <td>0.42</td>
+      <td>3.45*</td>
+    </tr>
+    <tr>
+      <td>Malawi</td>
+      <td>0.45</td>
+      <td>0.76</td>
+      <td>3.87*</td>
+      <td></td>
+      <td>0.33</td>
+      <td>0.54</td>
+      <td>2.37*</td>
+    </tr>
+    <tr>
+      <td>Guinea</td>
+      <td>0.82</td>
+      <td>0.95</td>
+      <td>3.84*</td>
+      <td></td>
+      <td>0.12</td>
+      <td>0.42</td>
+      <td>5.11*</td>
+    </tr>
+    <tr>
+      <td>Liberia</td>
+      <td>0.58</td>
+      <td>0.84</td>
+      <td>3.69*</td>
+      <td></td>
+      <td>0.35</td>
+      <td>0.55</td>
+      <td>2.33*</td>
+    </tr>
+    <tr>
+      <td>Botswana</td>
+      <td>0.84</td>
+      <td>0.95</td>
+      <td>3.65*</td>
+      <td></td>
+      <td>0.43</td>
+      <td>0.73</td>
+      <td>3.56*</td>
+    </tr>
+    <tr>
+      <td>Mali</td>
+      <td>0.70</td>
+      <td>0.88</td>
+      <td>3.24*</td>
+      <td></td>
+      <td>0.13</td>
+      <td>0.47</td>
+      <td>6.09*</td>
+    </tr>
+    <tr>
+      <td>Niger</td>
+      <td>0.57</td>
+      <td>0.80</td>
+      <td>3.10*</td>
+      <td></td>
+      <td>0.14</td>
+      <td>0.37</td>
+      <td>3.63*</td>
+    </tr>
+    <tr>
+      <td>Sudan</td>
+      <td>0.89</td>
+      <td>0.96</td>
+      <td>3.09*</td>
+      <td></td>
+      <td>0.59</td>
+      <td>0.76</td>
+      <td>2.16*</td>
+    </tr>
+    <tr>
+      <td>Nigeria</td>
+      <td>0.79</td>
+      <td>0.92</td>
+      <td>3.05*</td>
+      <td></td>
+      <td>0.42</td>
+      <td>0.61</td>
+      <td>2.20*</td>
+    </tr>
+    <tr>
+      <td>Lesotho</td>
+      <td>0.82</td>
+      <td>0.93</td>
+      <td>2.91*</td>
+      <td></td>
+      <td>0.27</td>
+      <td>0.57</td>
+      <td>3.62*</td>
+    </tr>
+    <tr>
+      <td>Mozambique</td>
+      <td>0.60</td>
+      <td>0.81</td>
+      <td>2.86*</td>
+      <td></td>
+      <td>0.33</td>
+      <td>0.60</td>
+      <td>3.02*</td>
+    </tr>
+    <tr>
+      <td>Cameroon</td>
+      <td>0.83</td>
+      <td>0.93</td>
+      <td>2.74*</td>
+      <td></td>
+      <td>0.43</td>
+      <td>0.64</td>
+      <td>2.42*</td>
+    </tr>
+    <tr>
+      <td>Cote d`Ivoire</td>
+      <td>0.86</td>
+      <td>0.94</td>
+      <td>2.45*</td>
+      <td></td>
+      <td>0.26</td>
+      <td>0.55</td>
+      <td>3.35*</td>
+    </tr>
+    <tr>
+      <td>Tunisia</td>
+      <td>0.91</td>
+      <td>0.96</td>
+      <td>2.32*</td>
+      <td></td>
+      <td>0.52</td>
+      <td>0.64</td>
+      <td>1.62*</td>
+    </tr>
+    <tr>
+      <td>Sierra Leone</td>
+      <td>0.64</td>
+      <td>0.80</td>
+      <td>2.28*</td>
+      <td></td>
+      <td>0.32</td>
+      <td>0.55</td>
+      <td>2.61*</td>
+    </tr>
+    <tr>
+      <td>Namibia</td>
+      <td>0.85</td>
+      <td>0.93</td>
+      <td>2.22*</td>
+      <td></td>
+      <td>0.44</td>
+      <td>0.68</td>
+      <td>2.72*</td>
+    </tr>
+    <tr>
+      <td>Benin</td>
+      <td>0.72</td>
+      <td>0.85</td>
+      <td>2.18*</td>
+      <td></td>
+      <td>0.23</td>
+      <td>0.40</td>
+      <td>2.21*</td>
+    </tr>
+    <tr>
+      <td>Eswatini</td>
+      <td>0.93</td>
+      <td>0.97</td>
+      <td>2.17</td>
+      <td></td>
+      <td>0.56</td>
+      <td>0.73</td>
+      <td>2.17*</td>
+    </tr>
+    <tr>
+      <td>Cabo Verde</td>
+      <td>0.82</td>
+      <td>0.89</td>
+      <td>1.69*</td>
+      <td></td>
+      <td>0.63</td>
+      <td>0.79</td>
+      <td>2.26*</td>
+    </tr>
+    <tr>
+      <td>South Africa</td>
+      <td>0.89</td>
+      <td>0.92</td>
+      <td>1.36</td>
+      <td></td>
+      <td>0.57</td>
+      <td>0.74</td>
+      <td>2.07*</td>
+    </tr>
+    <tr>
+      <td>Sao Tome and Principe</td>
+      <td>0.77</td>
+      <td>0.82</td>
+      <td>1.34*</td>
+      <td></td>
+      <td>0.52</td>
+      <td>0.59</td>
+      <td>1.30</td>
+    </tr>
+    <tr>
+      <td>Mauritius</td>
+      <td>0.95</td>
+      <td>0.95</td>
+      <td>0.98</td>
+      <td></td>
+      <td>0.61</td>
+      <td>0.67</td>
+      <td>1.29*</td>
+    </tr>
+    <tr>
+      <td>Gambia</td>
+      <td>0.92</td>
+      <td>0.89</td>
+      <td>0.71</td>
+      <td></td>
+      <td>0.61</td>
+      <td>0.64</td>
+      <td>1.15</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Significant at α=0.05.†Odds ratio of urban phone ownership to rural phone ownership._
 
 The age and gender-stratified ownership pyramid (Figure 3) is based upon aggregated data from all 33 countries. The age pyramid shows that ownership of mobile phones differs substantially amongst age classes, by type of mobile phone (BP or SP) and by gender. In all age classes, a high proportion of individuals own mobile phones; almost half of phone owners are under 30 years old. For women, 18–30 year olds (and for men, 18–35 year olds) are more likely to own an SP than a BP; whereas, the opposite holds true in the older age classes. In all age classes, a greater proportion of men than women own mobile phones; this gender inequity in ownership is accentuated for SPs.
 
@@ -80,7 +836,423 @@ The age and gender-stratified ownership pyramid (Figure 3) is based upon aggrega
 
 Results from the BLR and BMLR models on the probability of owning a mobile phone are shown in Table 3. All ORs are significantly different from one in both the bivariable and multivariable analysis. Men have over twice the odds of owning a mobile phone than women (aOR: 2.37, 95% HPD region: 1.96–2.84). Urban residents have nearly three times the odds of owning a mobile phone than rural residents (aOR: 2.66, 95% HPD region: 2.22–3.18). Ownership of mobile phones increases with age, peaks in 26–40 year olds, and then decreases. The probability of ownership decreases with the LPI; the wealthiest individuals have approximately three times higher odds of owning mobile phones than the poorest individuals (aOR: 2.87, 95% HPD region: 2.53–3.27). Notably, individuals who live in close proximity to an HC have higher odds of owning mobile phones than individuals who do not live in close proximity to an HC (aOR: 1.31, 95% HPD region: 1.24–1.39). Country-specific effects are apparent for the inequity in ownership based on gender (Figure 4A) and urban/rural residency (Figure 4B), and for the intercept (Figure 4—figure supplement 1), i.e., certain countries have greater (or lesser) inequities than the average effect for the 33 countries.
 
+**Table 3.**
+ Fitted Bayesian models for determinants of mobile phone ownership in Africa.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Population-level effects</th>
+      <th colspan="2">Bivariable (Bayesian logistic regression [BLR] models)</th>
+      <th colspan="2">Multivariable (Bayesian multilevel logistic regression [BMLR] model 1)</th>
+    </tr>
+    <tr>
+      <th>Crude OR</th>
+      <th>95% highest posterior density (HPD) region†</th>
+      <th>aOR</th>
+      <th>95% highest posterior density (HPD) region†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Female</td>
+      <td>ref</td>
+      <td>-</td>
+      <td>ref</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>2.04</td>
+      <td>(1.94, 2.16)*</td>
+      <td>2.37</td>
+      <td>(1.96, 2.84)*</td>
+    </tr>
+    <tr>
+      <td>Rural</td>
+      <td>ref</td>
+      <td>-</td>
+      <td>ref</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Urban</td>
+      <td>3.47</td>
+      <td>(3.27, 3.68)*</td>
+      <td>2.66</td>
+      <td>(2.22, 3.18)*</td>
+    </tr>
+    <tr>
+      <td>Age (61+)</td>
+      <td>ref</td>
+      <td>-</td>
+      <td>ref</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>18–20</td>
+      <td>1.36</td>
+      <td>(1.21, 1.53)*</td>
+      <td>1.73</td>
+      <td>(1.51, 1.96)*</td>
+    </tr>
+    <tr>
+      <td>21–25</td>
+      <td>1.75</td>
+      <td>(1.59, 1.93)*</td>
+      <td>2.29</td>
+      <td>(2.05, 2.56)*</td>
+    </tr>
+    <tr>
+      <td>26–40</td>
+      <td>1.98</td>
+      <td>(1.82, 2.15)*</td>
+      <td>2.68</td>
+      <td>(2.44, 2.94)*</td>
+    </tr>
+    <tr>
+      <td>41–50</td>
+      <td>1.85</td>
+      <td>(1.68, 2.03)*</td>
+      <td>2.44</td>
+      <td>(2.19, 2.72)*</td>
+    </tr>
+    <tr>
+      <td>51–60</td>
+      <td>1.54</td>
+      <td>(1.39, 1.71)*</td>
+      <td>1.78</td>
+      <td>(1.59, 2.00)*</td>
+    </tr>
+    <tr>
+      <td>Lived Poverty Index (LPI) = 0 (wealthiest)</td>
+      <td>ref</td>
+      <td>-</td>
+      <td>ref</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>LPI = 1</td>
+      <td>0.50</td>
+      <td>(0.44, 0.56)*</td>
+      <td>0.69</td>
+      <td>(0.61, 0.78)*</td>
+    </tr>
+    <tr>
+      <td>LPI = 2</td>
+      <td>0.29</td>
+      <td>(0.26, 0.32)*</td>
+      <td>0.46</td>
+      <td>(0.41, 0.52)*</td>
+    </tr>
+    <tr>
+      <td>LPI = 3 (poorest)</td>
+      <td>0.24</td>
+      <td>(0.21, 0.26)*</td>
+      <td>0.35</td>
+      <td>(0.31, 0.40)*</td>
+    </tr>
+    <tr>
+      <td>No health clinic (HC) in close proximity</td>
+      <td>ref</td>
+      <td>-</td>
+      <td>ref</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HC in close proximity</td>
+      <td>1.56</td>
+      <td>(1.49, 1.65)*</td>
+      <td>1.31</td>
+      <td>(1.24, 1.39)*</td>
+    </tr>
+    <tr>
+      <td colspan="3">Country-level effects</td>
+      <td>Estimate</td>
+      <td>95% highest posterior density (HPD) region†</td>
+    </tr>
+    <tr>
+      <td colspan="3">σu0</td>
+      <td>0.87</td>
+      <td>(0.67, 1.11)</td>
+    </tr>
+    <tr>
+      <td colspan="3">σu1</td>
+      <td>0.48</td>
+      <td>(0.33, 0.62)</td>
+    </tr>
+    <tr>
+      <td colspan="3">σu2</td>
+      <td>0.49</td>
+      <td>(0.36, 0.64)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ01</td>
+      <td>–0.43</td>
+      <td>(–0.73, –0.13)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ02</td>
+      <td>–0.32</td>
+      <td>(–0.63, –0.02)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ12</td>
+      <td>0.21</td>
+      <td>(–0.16, 0.55)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Significant at α=0.05.†Bayesian 95% HPD regions._
+
+![Figure 4.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig4-v2.jpg)
+
+**Figure 4.:** (A) Posterior distributions of the country-level effect on mobile phone ownership of being male (compared to female), sorted by median. (B) Posterior distributions of the country-level effect of living in an urban area (compared to living in a rural area), in the same country order as (A). Both (A) and (B) are on the logit-scale – and should be viewed respectively as country-specific adjustments to the population-level effect of (A) being male or (B) living in an urban area.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Posterior distributions (medians and 95% highest posterior density [HPD] regions) of $u_{0j}$ , the country-level intercept, for country j.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Posterior distributions (medians and 95% highest posterior density [HPD] regions) of $u_{0j}$ , the country-level intercept, for country j.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Posterior distributions (medians and 95% highest posterior density [HPD] regions) of $u_{1j}$ , the country-level effect of living in an urban area, for country j.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Posterior distributions (medians and 95% highest posterior density [HPD] regions) of $u_{2j}$ , the country-level effect of being female in close proximity to a health clinic (HC), for country j.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Posterior distributions (medians and 95% highest posterior density [HPD] regions) of $u_{3j}$ , the country-level effect of being male not in close proximity to a health clinic (HC), for country j.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Posterior distributions (medians and 95% highest posterior density [HPD] regions) of $u_{4j}$ , the country-level effect of being male in close proximity to a health clinic (HC), for country j.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** (A) Violin plots of the log posterior (top) and No-U-Turn Sampling (NUTS) acceptance statistic (bottom). There are no divergent transitions. To further assess chain convergence, we used $R^$ , the potential scale reduction factor (Gelman and Rubin, 1992). All values of $R^$ are nearly equal to 1 $(|R^|<1.005)$, indicating all chains have converged. (B) NUTS energy plot (Betancourt, 2017) for all four chains. The transition distribution (darker histogram in each plot) and target distribution (lighter histogram in each plot) are moderately well aligned, indicating efficient sampling. (C) The effective sample size $N_{eff}$ from the posterior distribution of each parameter was used to gauge the level of autocorrelation in each sample. $N_{eff}/N>0.1$ for all model parameters indicating independent draws within each sample. (D) ROC curve used to assess the diagnostic capability of fitted Bayesian multilevel logistic regression (BMLR) model. The AUC was 0.79 indicating good predictive accuracy.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/79615/elife-79615-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** (A) Violin plots of the log posterior (top) and No-U-Turn Sampling (NUTS) acceptance statistic (bottom). There are no divergent transitions. Additionally, all values of $R^$ are nearly equal to 1 $(|R^|<1.005)$, indicating all chains have converged. (B) NUTS energy plot for all four chains. The transition distribution (darker histogram in each plot) and target distribution (lighter histogram in each plot) are moderately well aligned, indicating efficient sampling. (C) $N_{eff}/N>0.1$ for all model parameters indicating independent draws within each sample. (D) ROC curve used to assess the diagnostic capability of fitted Bayesian multilevel logistic regression (BMLR) model. The AUC was 0.78 indicating good predictive accuracy.
+
 For mobile phone owners who own an SP, the results from the BLR and BMLR models are shown in Table 4. All ORs are significantly different from one in both the bivariable and multivariable analysis. We found an interaction effect between gender and living in proximity to an HC; specifically, the effect of gender on owning an SP depends upon proximity to an HC. Men who do not live in close proximity to an HC had higher odds of SP ownership (aOR: 1.50, 95% HPD region: 1.30–1.72) than women who do not live in close proximity (1; the baseline category). The gender difference is accentuated by proximity to an HC: men in close proximity to an HC had even larger odds of owning an SP (aOR: 1.92, 95% HPD region: 1.63–2.26) than women in close proximity (aOR: 1.15, 95% HPD region: 1.03–1.30). Urban residents (who own mobile phones) are nearly three times as likely as rural residents (who own mobile phones) to own SPs (aOR: 2.67, 95% HPD region: 2.33–3.10). Ownership of SPs (amongst owners of mobile phones) is most likely in 18–30 year olds and decreases with age. The odds of ownership decrease with the LPI: the wealthiest individuals (who own mobile phones) are approximately three times more likely than the poorest individuals (who own mobile phones) to own SPs (aOR: 2.86, 95% HPD region: 2.57–3.17). Country-specific effects are shown in Figure 4—figure supplements 2–6. Notably, in many of the 33 countries, ownership of mobile phones is relatively high even amongst the poorest of the wealth classes; this holds true for both BPs and, more surprisingly, SPs (Figure 1—figure supplement 3). MCMC diagnostic plots and ROC curves for models 1 and 2 are provided in Figure 4—figure supplements 7–8.
+
+**Table 4.**
+ Fitted Bayesian models for determinants of smartphone ownership among mobile phone owners in Africa.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Population-level effects</th>
+      <th colspan="2">Bivariable (Bayesian logistic regression [BLR] models)</th>
+      <th colspan="2">Multivariable (Bayesian multilevel logistic regression [BMLR] model 2)</th>
+    </tr>
+    <tr>
+      <th>Crude OR</th>
+      <th>95% highest posterior density (HPD) region†</th>
+      <th>aOR</th>
+      <th>95% highest posterior density (HPD) region†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Female, no health clinic (HC) in close proximity</td>
+      <td>ref</td>
+      <td>-</td>
+      <td>ref</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Female, HC in close proximity</td>
+      <td>1.23</td>
+      <td>(1.15, 1.32)*</td>
+      <td>1.15</td>
+      <td>(1.03, 1.30)*</td>
+    </tr>
+    <tr>
+      <td>Male, no HC in close proximity</td>
+      <td>1.10</td>
+      <td>(1.03, 1.18)*</td>
+      <td>1.50</td>
+      <td>(1.30, 1.72)*</td>
+    </tr>
+    <tr>
+      <td>Male, HC in close proximity</td>
+      <td>1.54</td>
+      <td>(1.44, 1.65)*</td>
+      <td>1.92</td>
+      <td>(1.63, 2.26)*</td>
+    </tr>
+    <tr>
+      <td>Rural</td>
+      <td>ref</td>
+      <td>-</td>
+      <td>ref</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Urban</td>
+      <td>2.95</td>
+      <td>(2.81, 3.09)*</td>
+      <td>2.67</td>
+      <td>(2.33, 3.10)*</td>
+    </tr>
+    <tr>
+      <td>Age (61+)</td>
+      <td>ref</td>
+      <td>-</td>
+      <td>ref</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>18–30</td>
+      <td>5.59</td>
+      <td>(5.08, 6.16)*</td>
+      <td>7.85</td>
+      <td>(7.04, 8.77)*</td>
+    </tr>
+    <tr>
+      <td>31–40</td>
+      <td>3.53</td>
+      <td>(3.19, 3.90)*</td>
+      <td>4.73</td>
+      <td>(4.24, 5.30)*</td>
+    </tr>
+    <tr>
+      <td>41–50</td>
+      <td>2.25</td>
+      <td>(2.02, 2.50)*</td>
+      <td>2.75</td>
+      <td>(2.44, 3.09)*</td>
+    </tr>
+    <tr>
+      <td>51–60</td>
+      <td>1.58</td>
+      <td>(1.41, 1.77)*</td>
+      <td>1.72</td>
+      <td>(1.51, 1.96)*</td>
+    </tr>
+    <tr>
+      <td>Lived Poverty Index (LPI) = 0 (wealthiest)</td>
+      <td>ref</td>
+      <td>-</td>
+      <td>ref</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>LPI = 1</td>
+      <td>0.61</td>
+      <td>(0.57, 0.66)*</td>
+      <td>0.67</td>
+      <td>(0.62, 0.73)*</td>
+    </tr>
+    <tr>
+      <td>LPI = 2</td>
+      <td>0.38</td>
+      <td>(0.35, 0.40)*</td>
+      <td>0.45</td>
+      <td>(0.41, 0.49)*</td>
+    </tr>
+    <tr>
+      <td>LPI = 3 (poorest)</td>
+      <td>0.27</td>
+      <td>(0.25, 0.29)*</td>
+      <td>0.35</td>
+      <td>(0.32, 0.39)*</td>
+    </tr>
+    <tr>
+      <td colspan="3">Country-level effects</td>
+      <td>Estimate</td>
+      <td>95% highest posterior density (HPD) region†</td>
+    </tr>
+    <tr>
+      <td colspan="3">σu0</td>
+      <td>0.85</td>
+      <td>(0.67, 1.05)</td>
+    </tr>
+    <tr>
+      <td colspan="3">σu1</td>
+      <td>0.39</td>
+      <td>(0.28, 0.50)</td>
+    </tr>
+    <tr>
+      <td colspan="3">σu2</td>
+      <td>0.21</td>
+      <td>(0.08, 0.34)</td>
+    </tr>
+    <tr>
+      <td colspan="3">σu3</td>
+      <td>0.31</td>
+      <td>(0.18, 0.43)</td>
+    </tr>
+    <tr>
+      <td colspan="3">σu4</td>
+      <td>0.41</td>
+      <td>(0.28, 0.53)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ01</td>
+      <td>–0.61</td>
+      <td>(–0.81, –0.37)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ02</td>
+      <td>–0.38</td>
+      <td>(–0.77, 0.01)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ03</td>
+      <td>–0.51</td>
+      <td>(–0.80, –0.19)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ04</td>
+      <td>–0.78</td>
+      <td>(–0.93, –0.60)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ12</td>
+      <td>0.10</td>
+      <td>(–0.38, 0.54)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ13</td>
+      <td>0.16</td>
+      <td>(–0.24, 0.55)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ14</td>
+      <td>0.29</td>
+      <td>(–0.06, 0.60)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ23</td>
+      <td>–0.07</td>
+      <td>(–0.59, 0.41)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ24</td>
+      <td>0.47</td>
+      <td>(0.04, 0.82)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ρ34</td>
+      <td>0.61</td>
+      <td>(0.30, 0.88)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Significant at α=0.05.†Bayesian 95% HPD regions._
 
 ## Discussion
 

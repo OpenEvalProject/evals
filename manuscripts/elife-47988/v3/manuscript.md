@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.47988.001 Morphogenesis in plants depends critically on directional (anisotropic) growth. This occurs principally perpendicular to the net orientation of cellulose microfibrils (CMFs), which is in turn controlled by cortical microtubules (CMTs). In young lateral roots of Arabidopsis thaliana , growth anisotropy also depends on RAB-A5c, a plant-specific small GTPase that specifies a membrane trafficking pathway to the geometric edges of cells. Here we investigate the functional relationship between structural anisotropy at faces and RAB-A5c activity at edges during lateral root development. We show that surprisingly, inhibition of RAB-A5c function is associated with increased CMT/CMF anisotropy. We present genetic, pharmacological, and modelling evidence that this increase in CMT/CMF anisotropy partially compensates for loss of an independent RAB-A5c-mediated mechanism that maintains anisotropic growth in meristematic cells. We show that RAB-A5c associates with CMTs at cell edges, indicating that CMTs act as an integration point for both mechanisms controlling cellular growth anisotropy in lateral roots.
+Morphogenesis in plants depends critically on directional (anisotropic) growth. This occurs principally perpendicular to the net orientation of cellulose microfibrils (CMFs), which is in turn controlled by cortical microtubules (CMTs). In young lateral roots of Arabidopsis thaliana, growth anisotropy also depends on RAB-A5c, a plant-specific small GTPase that specifies a membrane trafficking pathway to the geometric edges of cells. Here we investigate the functional relationship between structural anisotropy at faces and RAB-A5c activity at edges during lateral root development. We show that surprisingly, inhibition of RAB-A5c function is associated with increased CMT/CMF anisotropy. We present genetic, pharmacological, and modelling evidence that this increase in CMT/CMF anisotropy partially compensates for loss of an independent RAB-A5c-mediated mechanism that maintains anisotropic growth in meristematic cells. We show that RAB-A5c associates with CMTs at cell edges, indicating that CMTs act as an integration point for both mechanisms controlling cellular growth anisotropy in lateral roots.
 
 ## Introduction
 
@@ -32,27 +32,63 @@ Here, we use a combination of experimental and computational techniques to inves
 
 ## Results
 
-## CMT and CMF anisotropy increase when RAB-A5c is inhibited
+### CMT and CMF anisotropy increase when RAB-A5c is inhibited
 
 To test whether RAB-A5c function at cell edges controlled directional growth through CMT organisation, we introduced the microtubule marker pUBQ1::RFP:TUB6 (Ambrose et al., 2011) into the RPS5a > Dex > RAB-A5c[N125I] pUBQ10::YFP:NPSN12 background (Kirchhelle et al., 2016). In these lines, RAB-A5c function can be conditionally disrupted through expression of a dexamethasone (Dex)-inducible, dominant-negative protein variant RAB-A5c[N125I]. As this protein variant is predicted to act through titration of interacting factors, this strategy can overcome redundancy amongst different members of the same gene family as well as allowing temporal and dosage control (Batoko et al., 2000; Jones et al., 1995; Olkkonen and Stenmark, 1997; Pinheiro et al., 2009; Schmitt et al., 1986). Previous work in these lines revealed gross morphological defects in lateral roots within 48 hr – 72 hr after transfer to Dex-containing medium, with a dramatic shift from the normally highly anisotropic cellular growth to almost fully isotropic growth (Kirchhelle et al., 2016).
 
 We induced expression of RPS5a > Dex > RAB-A5c[N125I] for 72 hr and quantified mean CMT array anisotropy and orientation. Surprisingly, CMT array anisotropy at the outer periclinal cell face in meristematic lateral root cells was significantly increased in the presence of RAB-A5c[N125I] despite the loss of growth anisotropy (Figure 1A–C, Figure 1—figure supplement 1A,B). Furthermore, while the CMT arrays of individual cells were essentially randomly oriented relative to the longitudinal axis in wild-type roots, in the presence of RAB-A5c[N125I] they were highly transverse, resulting in a prominent supra-cellular pattern (Figure 1A,B,D). This change in mean CMT array orientation occurred within 24 hr of induction with both saturating and sub-saturating concentrations of Dex and preceded obvious changes in cell geometry (Figure 1—figure supplement 2). Since CMT arrays can differ at outer and inner faces in some cell types (Crowell et al., 2011; Panteris et al., 2013), we investigated whether CMT array organisation was similarly affected at the inner periclinal face (at the L1/L2 interface). The inner periclinal face can have a complex surface topology depending on its neighbouring cortical cells, so we employed an image analysis strategy involving 3D-segmentation of cells based on the plasma membrane marker YFP:NPSN12, and subsequent projection a co-expressed RFP:TUB6 marker onto the 3D cell surface (Figure 1 E,F; Figure 1—figure supplement 1C,D). Using this technique, we found that in wild type roots, CMT arrays at the L1/L2 interface had a relatively low anisotropy although they appeared to be oriented in transverse orientation more often than those at the outer epidermal face. In the presence of RAB-A5c[N125I], we observed an increase of CMT anisotropy and transversely oriented arrays at the L1/L2 interface similar to our observations at the outer face. We also introduced the cellulose synthase marker pCESA1::mCherry:CESA1 (Vain et al., 2014) into the RPS5a > Dex > RAB-A5c[N125I] background and imaged cellulose synthase trajectories 24 hr and 48 hr after induction of RAB-A5c[N125I] (Figure 1G,F; Figure 1—figure supplement 3A,B). While trajectories were variable in their orientation in wild-type meristematic cells, they were predominantly transverse in the presence of RAB-A5c[N125I], following the pattern observed for CMTs. This indicated that the change in CMT orientation indeed led to an increase in CMF anisotropy, and consequently, cell wall anisotropy.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig1-v3.jpg)
+
+**Figure 1.:** (A,B) Maximum intensity projections of confocal stacks of lateral roots co-expressing YFP:NPSN12 (top) and RFP:TUB6 (middle) either in wild-type (A) or in a RPS5a > Dex > RAB-A5c[N125I] line (B) three days after seedlings were transferred to agar plates containing 20 µM Dex. Bottom image shows merge of both channels as well as manually drawn cell outlines (yellow) and vectors indicating mean orientation and degree of anisotropy of the CMT array in each cell as measured with FibrilTool (Boudaoud et al., 2014). (C) Plot showing anisotropy of CMTs in meristematic cells from lateral roots like those shown in (A) for wild-type (n = 114 cells) and RPS5a > Dex > RAB-A5c[N125I] line 1 (n = 43 cells) and line 2 (n = 41 cells). Note 0 corresponds to a fully isotropic array, one to a completely parallel (anisotropic) array. Mean CMT array anisotropy was significantly increased in the presence of RAB-A5c[N125I] (Welch’s t-test: p<0.001 (***)). Error bars are SD. (D) Rose diagrams showing mean orientation of the CMT array in cells used in (C) relative to the longitudinal and transverse axes of the lateral root. (E,F) CMT orientation at inner vs. outer periclinal cell walls in wild-type (E) and RPS5a > Dex > RAB-A5c[N125I] (F) roots. Epidermal meristematic cells expressing YFP:NPSN12 were segmented in 3D using MorphoGraphX (Barbier de Reuille et al., 2015), co-expressed RFP:TUB6 was projected onto the 3D cell mesh, and mean CMT orientation at inner and outer periclinal faces was quantified using with FibrilTool (Boudaoud et al., 2014). Seedlings were imaged 24 hr after transfer to agar plates containing 20 µm Dex. (G,H) Average time projections of maximum intensity projections of confocal stacks of lateral roots expressing mCherry:CESA1 in a wild-type (G) or RPS5a > Dex > RAB-A5c[N125I] background (H). Seedlings were imaged 24 hr after transfer to agar plates containing 20 µm Dex. Stacks were acquired in 10 s intervals, each time average projection is based on 60 stacks (corresponding to 10 min total imaging time). (I,J) Maximum intensity projections of confocal stacks expressing CLASP:GFP in the RPS5a > Dex > RAB-A5c[N125I] background showing lateral roots 3 days after transfer to agar plates containing 0.1% DMSO (I) or 20 µM Dex (J). Cell walls were stained with Propidium Iodide (PI). (K,L) Maximum intensity projections of confocal stacks expressing GCP2:3xGFP in a wild-type (K) and RPS5a > Dex > RAB-A5c[N125I] (L) background showing lateral roots 3 days after transfer to agar plates containing 20 µM Dex. Scale bars 10 µm. Cell walls were stained with Propidium Iodide (PI). All scale bars 10 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A,B) Confocal stacks of lateral roots co-expressing YFP:NPSN12 and RFP:TUB6 either in wild-type (A) or in a RPS5a > Dex > RAB-A5c[N125I] line (B) three days after seedlings were transferred to agar plates containing 20 µM Dex. Note the phragmoplasts in dividing cells (arrows). (C,D) Visualising microtubule orientation at inner versus outer periclinal cell walls using MorphoGraphX (as shown in Figure 1E,F). Epidermal meristematic cells expressing YFP:NPSN12 were segmented in 3D and co-expressed RFP:TUB6 was projected onto the 3D cell mesh to visualise CMT orientation at the outer (C) and inner (D) periclinal cell face. All scale bars 10 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A–F) Confocal stacks of seedlings expressing YFP:NPSN12 (red), RFP:TUB6 (green), and the Dex-inducible RAB-A5c[N125I]. Images were acquired 24 hr (A–C) and 44 hr (D–F) after seedlings were transferred to agar plates containing 0.1% DMSO (A,D), 300 nM Dex (B,E), or 20 µM Dex (C,F). Left: confocal stack as snap shots from MorphoGraphX, right: the same confocal stack with a heat map and vector (green) overlay displaying CMTanisotropy quantified using the fibril orientation plugin in MorphoGraphX (0 corresponds to a fully isotropic array, one to a completely parallel (anisotropic) array). Note the incomplete cell divisions (arrows). Scale bars 20 µm. (G,H) Mean anisotropy of cortical microtubules in meristematic cells from lateral roots shown in (A–C) (G) and (D–F) (H). n ≥ 88 cells (G) and n ≥ 53 cells (H). Anisotropy is significantly increased in the presence of RAB-A5c[N125I] (two-way ANOVA and post hoc Tukey’s test: p<0.001 (***)).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A,B) Average time projections of maximum intensity projections of confocal stacks of lateral roots expressing mCherry:CESA1 in a wild-type (A) or RPS5a > Dex > RAB-A5c[N125I] background (B). Seedlings were imaged 48 hr after transfer to agar plates containing 20 µM Dex. Stacks were acquired in 10 s intervals, each time average projection is based on 60 stacks (corresponding to 10 min total imaging time). Scale bar 5 µm. (C) Maximum intensity projections of confocal stacks of a primary root (top and bottom left insert) and a lateral root (middle and bottom right insert) expressing GCP2:3xGFP (Nakamura et al., 2010). Scale bars 10 µm. (D) Maximum intensity projection of a confocal stack of a lateral root co-expressing GCP2:3xGFP (top) and YFP:RAB-A5c (middle). Scale bars 10 µm and 5 µm (insets). (E,F) Plots showing mean intensity and reciprocal colocalisation of GCP2:3xGFP and YFP:RAB-A5c at transverse and longitudinal edges (n ≥ 23, edge width 2 µm). Error bars are SD.
+
 The surprising increase in CMT and CMF anisotropy appears to contradict the common assumption that anisotropic CMT and CMF arrays are associated with anisotropic growth – however, similarly transverse anisotropic arrays have been described in the clasp-1 mutant, which also has shorter and more swollen cells than wild-type plants (Ambrose et al., 2011; Ambrose et al., 2007). We therefore tested if RAB-A5c function was required for localisation of CLASP at cell edges, but found CLASP:GFP still localised to edges in RPS5a > Dex > RAB-A5c[N125I] lines 72 hr after transfer to Dex (Figure 1I,J), indicating edge-localisation of CLASP does not depend on RAB-A5c. We also considered that RAB-A5c might act through γ-tubulin complex protein 2 (GCP2), which can act as a CMT array organiser through nucleation of new MTs at transverse cell edges in primary roots (Ambrose and Wasteneys, 2011). GCP2:GFP localised to both longitudinal and transverse cell edges in lateral roots (Figure 1—figure supplement 3C) and partially overlapped with YFP:RAB-A5c (Figure 1—figure supplement 3D–F). GCP2:GFP was enriched approximately two-fold at transverse compared to longitudinal cell edges in lateral roots, so a loss of the MT nucleating activity of GCP2 from these edges could conceivably result in the more transverse CMT array observed in the presence of RAB-A5c[N125I]. However, GCP2:GFP still localised to transverse cell edges in RPS5a > Dex > RAB-A5c[N125I] lines 72 hr after transfer to Dex (Figure 1K,L). Therefore, the observed effect of RAB-A5c[N125I] on CMT array organisation is likely not mediated through either CLASP or GCP2.
 
-## Increased cell wall anisotropy can counteract edge-mediated cell swelling in silico
+### Increased cell wall anisotropy can counteract edge-mediated cell swelling in silico
 
-We previously proposed that RAB-A5c may act through locally changing cell wall mechanical properties at edges. In this context, the observed increase of CMT and CMF anisotropy reported above can be interpreted as a secondary, compensatory effect counteracting the loss of RAB-A5c activity. We used a computational modelling approach to test whether increased CMF anisotropy at cell faces could counteract cell swelling caused by local reduction in cell wall stiffness at the cell edges. The model follows a previous approach for axon contribution to the mechanical behaviour of brain white matter (Garcia-Gonzalez et al., 2018), allowing us to independently define the CMF and matrix responses. CMF orientation and degree of anisotropy were introduced as mechanical features of the constitutive model, and the matrix was defined as a hyperelastic isotropic material. We also introduced a term to define cross-linking of CMFs, which we considered to be isotropic and to represent both direct cellulose-cellulose interactions and interactions mediated by matrix components in accordance with the mechanical hotspot theory (Cosgrove, 2014). Our constitutive model requires the identification of seven parameters: the bulk modulus K; the shear moduli of the cell wall matrix μm, cellulose microfibrils μf, and microfibril cross-linking μc; the microfibril fraction ϑf; and the mean orientation of the microfibrils ao along with their degree of anisotropy ξ (see 'Supplementary materials and methods' in Appendix 1 for model derivation and parameter definition). The constitutive model was implemented in a 3D FE framework for large deformations, using a meristematic cell with idealised dimensions (Figure 2A) whose instantaneous response to inflation under turgor pressure was examined.
+We previously proposed that RAB-A5c may act through locally changing cell wall mechanical properties at edges. In this context, the observed increase of CMT and CMF anisotropy reported above can be interpreted as a secondary, compensatory effect counteracting the loss of RAB-A5c activity. We used a computational modelling approach to test whether increased CMF anisotropy at cell faces could counteract cell swelling caused by local reduction in cell wall stiffness at the cell edges. The model follows a previous approach for axon contribution to the mechanical behaviour of brain white matter (Garcia-Gonzalez et al., 2018), allowing us to independently define the CMF and matrix responses. CMF orientation and degree of anisotropy were introduced as mechanical features of the constitutive model, and the matrix was defined as a hyperelastic isotropic material. We also introduced a term to define cross-linking of CMFs, which we considered to be isotropic and to represent both direct cellulose-cellulose interactions and interactions mediated by matrix components in accordance with the mechanical hotspot theory (Cosgrove, 2014). Our constitutive model requires the identification of seven parameters: the bulk modulus $K$; the shear moduli of the cell wall matrix $\mu_{m}$, cellulose microfibrils $\mu_{f}$, and microfibril cross-linking $\mu_{c}$; the microfibril fraction $ϑ_{f}$; and the mean orientation of the microfibrils $a_{o}$ along with their degree of anisotropy $ξ$ (see 'Supplementary materials and methods' in Appendix 1 for model derivation and parameter definition). The constitutive model was implemented in a 3D FE framework for large deformations, using a meristematic cell with idealised dimensions (Figure 2A) whose instantaneous response to inflation under turgor pressure was examined.
 
-We first considered an idealised case in which CMFs were oriented fully randomly (isotropic) at all cell faces (Figure 2A, left). To simulate the postulated RAB-A5c-mediated modification of cell wall properties at the edge, we varied the shear moduli μm, μf, and μc at cell edges from 10-fold less to 10-fold more rigid in comparison to cell faces. As the apparent shear modulus in our current 3D model is a combination of all shear moduli μm, μf, and μc, this approach effectively changed the apparent shear modulus by factor 10, following our previous approach in a 2D linear elastic FE model (Kirchhelle et al., 2016). Reduction of shear moduli at edges caused increased displacement at the outer face (i.e., cell swelling; Figure 2B, top, D), reproducing the results from a previous simple 2D model (Kirchhelle et al., 2016). Increasing shear moduli at cell edges relative to faces decreased displacement at the outer face and was associated with a concentration of stresses at the cell edge domain (Figure 2—figure supplement 1A). To simulate our experimental observations regarding CMF reorganisation, we next introduced parallel (anisotropic) CMFs at longitudinal walls (Figure 2A, right). Anisotropy at cell faces reduced the displacement at the outer face caused by modification of shear moduli at cell edges (Figure 2B, bottom, D). While we did not observe increased CMT anisotropy at the inner faces in wild-type lateral roots, transverse anisotropy at inner faces has been reported for both CMT and CMF arrays in the primary root epidermis (Panteris et al., 2013; Sugimoto et al., 2003). We therefore tested the effect of changing cellulose anisotropy at the outer face in cells which had transverse anisotropic arrays at the inner anticlinal and periclinal longitudinal face (Figure 2A, middle). Introducing anisotropy at just the outer face was sufficient to counter-act cell swelling related to changes in edge properties (Figure 2B, middle, D). These findings are consistent with our hypothesis that increased cell wall anisotropy at faces can partially compensate cell swelling induced by local softening of the cell wall at edges.
+![Figure 2.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig2-v3.jpg)
 
-In the idealised cases considering either fully isotropic or fully anisotropic CMFs at cell faces, the effect of CMF orientation on cell swelling outweighed the effects of variations in μc and in shear moduli at edges relative to faces (Figure 2—figure supplement 2A-C, E). However, these idealised cases are unlikely to represent the real cell wall accurately, as (1) new CMFs are not deposited perfectly parallel, (2) cell walls contain CMFs laid down during previous stages of development at different orientations, and (3) CMFs in outer layers can change their orientation towards more longitudinal orientations during growth (Anderson et al., 2010). Therefore, we used our experimentally determined values for CMT anisotropy in meristematic cells in the presence and absence of RAB-A5c[N125I] (0.2 and 0.08 respectively; Figure 1C) as a proxy for CMF anisotropy to ask whether a reduction of cell swelling could still be observed in these more realistic cases. This 2.5-fold increase in anisotropy was sufficient to reduce cell swelling in all cases but one (Figure 2—figure supplement 2D), although its contribution towards cell swelling was much smaller relative to variations in μc and in shear moduli at edges relative to faces. We also tested the effect of varying absolute values of the model parameters ϑf, μc, μm, and μf, and K (Figure 2—figure supplement 2) and found that across all conditions tested, reduction of stiffness at edges enhanced cell swelling, and introduction of anisotropy reduced cell swelling. Taken together, our in silico results predict that RAB-A5c acts through locally modifying cell wall properties at edges, and the observed changes in CMT/CMF organisation are secondary effects that can partially compensate for inhibition of RAB-A5c function.
+**Figure 2.:** (A) Morphology of the uninflated model from the outside (left) and in section (right) of a cell with isotropic CMFs at all faces (left, 1), isotropic CMFs at transverse anticlinal and the outer periclinal face, and anisotropic CMFs at longitudinal anticlinal and the inner periclinal face (middle, 2), and isotropic CMFs at transverse anticlinal, and anisotropic CMFs at longitudinal anticlinal and periclinal faces (right, 3). Edges are colour-coded in red, isotropic faces in grey, and anisotropic faces in teal. R: radial, L: longitudinal, T: transverse. (B,C) Effect of selective increase or reduction by factor 10 of shear moduli shear moduli $\mu_{m}$, $\mu_{f}$, and $\mu_{c}$ at cell edges ($\mu_{edges}$) compared to shear moduli at faces ($\mu_{faces}$) on cell morphology for cells in which CMFs were oriented as described in 1,2, and 3 in (A). Cells are colour coded for displacement. (B) idealised cases with FA of 0 (fully isotropic) and 1 (fully anisotropic); (C) cases with FA corresponding to experimentally determined CMT orientation, with FA = 0.08 corresponding to the isotropic and FA = 0.2 corresponding to the anisotropic case. At faces, $K$ = 10 GPa, $\mu_{m}$ = 18 MPa, $\mu_{f}$ = 1.2 GPa, $\mu_{c}$ = 18 MPa and $ϑ_{f}$ = 0.5 in all cases. (D,E) Plots showing maximum displacement of cell models as those shown in (B,C).
 
-## Simultaneous disruption of RAB-A5c-function and CMT/CMF reorganisation causes a synergistic growth phenotype
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A,B) Effect of selective increase or reduction of the shear moduli at cell edges ($\mu_{edges}$) compared to shear moduli at faces ($\mu_{faces}$) on stress distribution for simulations shown in Figure 2B,C.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A,B) Effect of variation in fibre fraction $ϑ_{f}$ on cell morphology when shear moduli at cell edges ($\mu_{edges}$) were selectively increased or decreased compared to shear moduli at faces ($\mu_{faces}$) for cells in which CMFs at all faces were oriented isotropically (top), and cells in which CMFs at longitudinal anticlinal and periclinal faces were anisotropic in transverse orientation (bottom). Cells are colour coded for displacement, maximum displacement for each simulation is displayed in white for each cell. $ϑ_{f}$ was either 0.25 (A) or 0.5 (B); at faces, $K$ = 10 GPa, $\mu_{m}$ = 18 MPa, $\mu_{f}$ = 1.2 GPa, $\mu_{c}$ = 18 MPa in all cases. (C,D) Effect of variations in the cross-linking shear modulus $\mu_{c}$. (C) idealised cases with FA of 0 (fully isotropic) and 1 (fully anisotropic) as shown in (B); (D) cases with FA corresponding to experimentally determined CMT orientation, with FA = 0.08 corresponding to the isotropic and FA = 0.2 corresponding to the anisotropic case. At faces, $K$ = 10 GPa, $\mu_{m}$ = 18 MPa, $\mu_{f}$ = 1.2 GPa, and $ϑ_{f}$ = 0.5 in all cases. (E) Effect of variations in $\mu_{m}$, $\mu_{f}$, and $K$ for idealised cases with FA of 0 (fully isotropic) and 1 (fully anisotropic) as shown in (B).
+
+We first considered an idealised case in which CMFs were oriented fully randomly (isotropic) at all cell faces (Figure 2A, left). To simulate the postulated RAB-A5c-mediated modification of cell wall properties at the edge, we varied the shear moduli $\mu_{m}$, $\mu_{f}$, and $\mu_{c}$ at cell edges from 10-fold less to 10-fold more rigid in comparison to cell faces. As the apparent shear modulus in our current 3D model is a combination of all shear moduli $\mu_{m}$, $\mu_{f}$, and $\mu_{c}$, this approach effectively changed the apparent shear modulus by factor 10, following our previous approach in a 2D linear elastic FE model (Kirchhelle et al., 2016). Reduction of shear moduli at edges caused increased displacement at the outer face (i.e., cell swelling; Figure 2B, top, D), reproducing the results from a previous simple 2D model (Kirchhelle et al., 2016). Increasing shear moduli at cell edges relative to faces decreased displacement at the outer face and was associated with a concentration of stresses at the cell edge domain (Figure 2—figure supplement 1A). To simulate our experimental observations regarding CMF reorganisation, we next introduced parallel (anisotropic) CMFs at longitudinal walls (Figure 2A, right). Anisotropy at cell faces reduced the displacement at the outer face caused by modification of shear moduli at cell edges (Figure 2B, bottom, D). While we did not observe increased CMT anisotropy at the inner faces in wild-type lateral roots, transverse anisotropy at inner faces has been reported for both CMT and CMF arrays in the primary root epidermis (Panteris et al., 2013; Sugimoto et al., 2003). We therefore tested the effect of changing cellulose anisotropy at the outer face in cells which had transverse anisotropic arrays at the inner anticlinal and periclinal longitudinal face (Figure 2A, middle). Introducing anisotropy at just the outer face was sufficient to counter-act cell swelling related to changes in edge properties (Figure 2B, middle, D). These findings are consistent with our hypothesis that increased cell wall anisotropy at faces can partially compensate cell swelling induced by local softening of the cell wall at edges.
+
+In the idealised cases considering either fully isotropic or fully anisotropic CMFs at cell faces, the effect of CMF orientation on cell swelling outweighed the effects of variations in $\mu_{c}$ and in shear moduli at edges relative to faces (Figure 2—figure supplement 2A-C, E). However, these idealised cases are unlikely to represent the real cell wall accurately, as (1) new CMFs are not deposited perfectly parallel, (2) cell walls contain CMFs laid down during previous stages of development at different orientations, and (3) CMFs in outer layers can change their orientation towards more longitudinal orientations during growth (Anderson et al., 2010). Therefore, we used our experimentally determined values for CMT anisotropy in meristematic cells in the presence and absence of RAB-A5c[N125I] (0.2 and 0.08 respectively; Figure 1C) as a proxy for CMF anisotropy to ask whether a reduction of cell swelling could still be observed in these more realistic cases. This 2.5-fold increase in anisotropy was sufficient to reduce cell swelling in all cases but one (Figure 2—figure supplement 2D), although its contribution towards cell swelling was much smaller relative to variations in $\mu_{c}$ and in shear moduli at edges relative to faces. We also tested the effect of varying absolute values of the model parameters $ϑ_{f}$, $\mu_{c},$ $\mu_{m}$, and $\mu_{f}$, and $K$ (Figure 2—figure supplement 2) and found that across all conditions tested, reduction of stiffness at edges enhanced cell swelling, and introduction of anisotropy reduced cell swelling. Taken together, our in silico results predict that RAB-A5c acts through locally modifying cell wall properties at edges, and the observed changes in CMT/CMF organisation are secondary effects that can partially compensate for inhibition of RAB-A5c function.
+
+### Simultaneous disruption of RAB-A5c-function and CMT/CMF reorganisation causes a synergistic growth phenotype
 
 To test whether reorganisation of CMTs and CMFs could partially compensate for inhibition of RAB-A5c function as predicted by our model, we investigated how genetic and pharmacological perturbations of either CMT or CMF organisation affected the RAB-A5cNI phenotype. ectopic root hair 3–3 (erh3-3; Webb et al., 2002) causes a lesion in the microtubule-severing protein KATANIN p60 (KTN), whose activity at CMT crossover sites is required to establish ordered (anisotropic) CMT arrays (Burk and Ye, 2002; Zhang et al., 2013). To quantitatively compare the effect of RAB-A5c inhibition on anisotropic growth in the presence and absence of functional KTN, we measured mean lateral root diameter as a proxy for radial cell swelling in RPS5a > Dex > RAB-A5c[N125I] and RPS5a > Dex > RAB-A5c[N125I] erh3-3 lines. Induction of RAB-A5c[N125I] in the wild-type background for 72 hr caused a relative increase of the mean lateral root diameter by 29% (Figure 3A,B,I). In the erh3-3 background, radial swelling was significantly more severe, with a relative increase of mean lateral root diameter by 44% (Figure 3A,B,I). This finding indicated that as predicted, CMT reorganisation counteracted cell swelling caused by inhibition of RAB-A5c function.
 
-Loss of KTN function has also been associated with partial reduction in cellulose content (Burk et al., 2001), which may contribute to the synergistic phenotype observed. However, in our computational model, reducing cellulose content by half through changing the fibre fraction ϑf had only a minor effect on cell swelling relative to changes in mechanical properties at edges and anisotropy at faces (Figure 2—figure supplement 2A). Furthermore, we also investigated the effect of inhibiting CMT reorganisation through pharmacological agents: the microtubule-stabilising agent taxol (Morejohn and Fosket, 1991; Schiff et al., 1979; Baskin et al., 1994), which reduces CMT array dynamics, and the microtubule-depolymerising agent oryzalin (Hugdahl and Morejohn, 1993; Morejohn et al., 1987), which causes CMT arrays to fragment or fully depolymerise (Baskin et al., 1994). Both drugs could prevent the establishment of anisotropic CMT arrays in meristematic lateral root cells expressing the inhibitory mutant RAB-A5c[N125I] (Figure 3—figure supplement 1A, F; note subsaturating levels of oryzalin were used so CMT arrays were partially fragmented rather than fully depolymerised). The increase in mean lateral root diameter in RPS5a>Dex>RAB-A5c[N125I] lines after treatment with subsaturating or saturating concentrations of Dex (9% and 35%, Figure 3—figure supplement 1G, J) was significantly increased in the presence of both taxol (49% and 51%, respectively, Figure 3—figure supplement 1H, K) and oryzalin (52% and 57%, respectively; Figure 3C, D, J; Figure 3—figure supplement 1I, L). Therefore, preventing reorganisation of CMTs into anisotropic arrays through either genetic or pharmacological perturbations rendered lateral roots hypersensitive to inhibition of RAB-A5c function.
+![Figure 3.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig3-v3.jpg)
+
+**Figure 3.:** (A–H) Confocal stacks of lateral roots expressing RPS5a > Dex > RAB-A5c[N125I] in wild-type (A,C,D,E,G), erh3-3 (B), pom2-4 (F), or clasp-1 (H) backgrounds; 3 days after transfer to 0.1% DMSO (left) or 1 µM Dex (right), in (D), plates additionally contained 250 nM Ory. Cell walls were stained with Propidium Iodide (A,B,E–H), or cell outlines were visualised using the plasma membrane marker YFP:NPSN12 (C,D). Images are snapshots from MorphoGraphX or maximum intensity projetions of confocal stacks. Scale bars 50 µm. (I–L) Mean diameter of lateral roots such as those shown in (A–H) (n ≥ 21). Difference in diameter (%) between DMSO and 1 µM Dex treatments for each genotype noted above respective columns. Two-way ANOVA and post hoc Tukey’s test: same letter indicates no significant difference in relative diameter increase (p≥0.05), different letters indicate significant difference (p<0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A,B) Maximum intensity projections of confocal stacks of lateral root meristematic cells expressing YFP:NPSN12 (green) and RFP:TUB6 (red) in a wild-type (A,C,E) and RPS5a > Dex > RAB-A5c[N125I] (B,D,F) background after 24 hr induction with Dex in the absence (A,B) or presence of taxol (C,D) or oryzalin (E,F). Scale bars 5 µm. (C,H,I) Maximum intensity projections of confocal stacks from lateral roots expressing YFP:NPSN12 in a RPS5a > Dex > RAB-A5c[N125I] background grown for 3d in in the absence (G) or presence of taxol (H) or oryzalin (I) and the presence of subsaturating (middle) or saturating (bottom) concentrations of Dex. Scale bars 50 µm. (J–L) Mean diameter of lateral roots as those shown in (G–I) (n ≥ 21). Differences in diameter (%) between treatments noted above respective columns. Two-way ANOVA and post hoc Tukey’s test: same letter indicates no significant difference in relative diameter increase (p≥0.05), different letters indicate significant difference (p<0.01).
+
+Loss of KTN function has also been associated with partial reduction in cellulose content (Burk et al., 2001), which may contribute to the synergistic phenotype observed. However, in our computational model, reducing cellulose content by half through changing the fibre fraction $ϑ_{f}$ had only a minor effect on cell swelling relative to changes in mechanical properties at edges and anisotropy at faces (Figure 2—figure supplement 2A). Furthermore, we also investigated the effect of inhibiting CMT reorganisation through pharmacological agents: the microtubule-stabilising agent taxol (Morejohn and Fosket, 1991; Schiff et al., 1979; Baskin et al., 1994), which reduces CMT array dynamics, and the microtubule-depolymerising agent oryzalin (Hugdahl and Morejohn, 1993; Morejohn et al., 1987), which causes CMT arrays to fragment or fully depolymerise (Baskin et al., 1994). Both drugs could prevent the establishment of anisotropic CMT arrays in meristematic lateral root cells expressing the inhibitory mutant RAB-A5c[N125I] (Figure 3—figure supplement 1A, F; note subsaturating levels of oryzalin were used so CMT arrays were partially fragmented rather than fully depolymerised). The increase in mean lateral root diameter in RPS5a>Dex>RAB-A5c[N125I] lines after treatment with subsaturating or saturating concentrations of Dex (9% and 35%, Figure 3—figure supplement 1G, J) was significantly increased in the presence of both taxol (49% and 51%, respectively, Figure 3—figure supplement 1H, K) and oryzalin (52% and 57%, respectively; Figure 3C, D, J; Figure 3—figure supplement 1I, L). Therefore, preventing reorganisation of CMTs into anisotropic arrays through either genetic or pharmacological perturbations rendered lateral roots hypersensitive to inhibition of RAB-A5c function.
 
 According to our computational model, reorganisation of CMTs counteracts cell swelling in the presence of RAB-A5c[N125I] through the increased anisotropy of newly deposited CMFs. To confirm that the role of CMT arrays in guiding CMF deposition and not an unrelated CMT function was required to counteract cell swelling, we examined the phenotypic interaction between RPS5a > Dex > RAB-A5c[N125I] and pom-pom2-4 (pom2-4; Bringmann et al., 2012). pom2-4 is deficient in POM-POM2/CELLULOSE-SYNTHASE INTERACTIVE PROTEIN1 (POM2/CSI1), a protein linking CMTs and cellulose synthase complexes (Bringmann et al., 2012; Li et al., 2012). In pom2-4, CSC trajectories are no longer aligned with CMTs, allowing us to differentiate between CMT reorganisation and orientation of CMF deposition. Similar to erh3-3, induction of RAB-A5c[N125I] in the pom2-4 background caused a significantly larger increase in mean lateral root diameter compared to the wild-type background (67% vs. 37%, Figure 3E,F,K). This indicated that the effect of CMTs on CMF orientation and not another CMT function was required to compensate for inhibition of RAB-A5c function.
 
@@ -60,11 +96,23 @@ If perturbing the establishment of anisotropic CMT arrays enhanced the RAB-A5c[N
 
 Taken together, these experimental results confirm the predictions of our computational model that the observed increase of CMT and CMF anisotropy in the presence of RAB-A5c[N125I] is a compensatory response partially counteracting the cell swelling caused by inhibition of RAB-A5c function.
 
-## YFP:RAB-A5c is associated with CMTs at cell edges
+### YFP:RAB-A5c is associated with CMTs at cell edges
 
 Edge-localisation of YFP:RAB-A5c compartments was shown to be sensitive to pharmacological depolymerisation of microtubules (Kirchhelle et al., 2016). To further investigate the relationship between RAB-A5c and CMTs, we introduced the microtubule markers p35S::RFP:MBD and pUBQ1::RFP:TUB6 (Ambrose et al., 2011) into YFP:RAB-A5c lines. Confocal stacks of lateral roots expressing either marker combination revealed that YFP:RAB-A5c compartments at cell edges were associated with CMTs (Figure 4A–C; Figure 4—figure supplement 1; Figure 4—Videos 1–3). At edges that were densely labelled with YFP:RAB-A5c, CMTs were always present – perhaps not surprising considering the confined space at a cell edge. However, YFP:RAB-A5c compartments were also sometimes found on cell faces away from the edge, where they were also associated with the ends of microtubules (Figure 4B, white arrows). Furthermore, in preprophase cells, where CMTs form the distinctive preprophase band (PPB), YFP:RAB-A5c compartments were progressively restricted to the points on the geometric edges of the cell where the PPB intersected (Figure 4B,C, arrowheads; Figure 4—figure supplement 1) indicating that YFP:RAB-A5c localisation at cell edges was confined to regions where CMTs were present. After the mitotic spindle was formed, YFP:RAB-A5c was no longer associated with microtubules or cell edges but labelled punctae dispersed throughout the cytoplasm (Figure 4D; Figure 4—figure supplement 1, Figure 4—video 3) before relocating to the cell plate during cytokinesis as previously reported (Kirchhelle et al., 2016).
 
-## CMT array structure influences YFP:RAB-A5c pattern
+![Figure 4.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig4-v3.jpg)
+
+**Figure 4.:** (A) Maximum intensity projections of 3D confocal stacks from lateral roots expressing YFP:RAB-A5c (left) and RFP:TUB6 (middle). Scale bar 20 µm. (B,C) Maximum intensity projections of 3D confocal stacks from lateral roots expressing YFP:RAB-A5c (left) and RFP:MBD (middle). Scale bars 5 µm. White arrows indicate YFP:RAB-A5c compartments at cell faces co-localising with RFP:MBD, blue arrows indicate CMTs at cell edges not labelled with YFP:RAB-A5c, white arrowheads indicate preprophase bands. (D) Schematic summary of RAB-A5c localisation in relation to microtubule localisation at different stages of the cell cycle based on images such as those shown in (A–C) and S6. (E–H) Maximum intensity projections of confocal stacks of lateral roots expressing YFP:RAB-A5c either in wild-type (E), clasp-1 (F), erh3-3 (G), and spr3 (H) backgrounds. Cell walls were stained with propidium iodide (PI). Scale bars 10 µm. (I,J) Plots showing relative enrichment of YFP:RAB-A5c intensity at an edge normalised against mean edge intensity in the respective cell (I) and mean transverse and longitudinal edge length in those cells (J) for lateral roots like those shown in (E–H). (n ≥ 103 cells for each genotype; two-way ANOVA and post hoc Tukey’s test: same letter indicates no significant difference (p≥0.05), different letters indicate significant difference (p<0.01).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Maximum intensity projections of a 4D confocal stack from a lateral root expressing YFP:RAB-A5c (green) and RFP:TUB6 (red) at consecutive 40 min time intervals. (B) Close-up of the box shown in (A), as well as intermediate time-points (20 min, 60 min, 100 min, 140 min) following one cell’s progression through the cell cycle. Scale bars 20 µm (A) and 5 µm (B).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A,B) Plots as those shown in Figure 4 showing relative enrichment of YFP:RAB-A5c intensity at an edge normalised against mean edge intensity in the respective cell (Figure 4I) and mean transverse and longitudinal edge length in those cells (Figure 4J). Plots differentiate between cells of different roots (n ≥ 3) and left and right longitudinal and apical and basal transverse walls, respectively.
+
+### CMT array structure influences YFP:RAB-A5c pattern
 
 Colocalisation analysis also revealed that not all microtubules at cell edges were associated with YFP:RAB-A5c compartments (Figure 2B,C, blue arrows), indicating the presence of CMTs alone may not be sufficient to recruit RAB-A5c to a cell edge. Nevertheless, CMT arrays may influence the relative distribution at different cell edges because in the elongation zone, where CMT arrays are strongly transverse, only longitudinal edges are labelled by YFP:RAB-A5c (Kirchhelle et al., 2016). To test this inference, we analysed YFP:RAB-A5c localisation in mutants with defects in CMT array organisation (Figure 4E–J, Figure 4—figure supplement 2). These mutants included clasp-1 (Ambrose et al., 2007; Ambrose and Wasteneys, 2008) and erh3-3 (Webb et al., 2002) described above as well as spiral3 (spr3; Nakamura and Hashimoto, 2009), which carries a missense mutation in the γ-tubulin complex protein 2 (GCP2) resulting in a CMT array with a left-handed helical twist (Nakamura and Hashimoto, 2009).
 
@@ -72,9 +120,21 @@ Colocalisation analysis also revealed that not all microtubules at cell edges we
 
 Since clasp-1 causes increased transverse CMT anisotropy in meristematic root cells (resulting in a relative enrichment of microtubules crossing longitudinal edges) and mutations in erh3-3 delay establishment of transverse CMT anisotropy in older cells, we conclude that CMTs are necessary for RAB-A5c compartment localisation at edges, but on their own, insufficient to explain their distribution at different edges.
 
-## Meristematic lateral root cells exhibit anisotropic growth
+### Meristematic lateral root cells exhibit anisotropic growth
 
 Edge localisation of RAB-A5c is most pronounced in meristematic lateral root cells, where CMT arrays are relatively disordered (Figure 1A,C). In contrast to unidirectionally growing cells on the cylindrical part of the root, these cells are located on the tapering root apex and therefore have to accommodate a degree of radial and circumferential growth. To investigate 3D growth patterns in these cells, we quantified total volume growth as well as growth in the longitudinal, radial, and circumferential directions in lateral root epidermal cells. To distinguish meristematic cells from the more rapidly elongating transition and elongation zone cells, we used a threshold of 1.5-fold volume growth over 6 hr (Figure 5—figure supplement 1). This analysis showed that although total growth rates varied markedly between the two cell populations, in both cases the total volume growth was mostly accounted for by the longitudinal growth vector alone (Figure 5A,B). Thus despite their lack of transverse CMT anisotropy, meristematic cells can sustain highly anisotropic longitudinal growth.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig5-v3.jpg)
+
+**Figure 5.:** (A,B) Snapshots from time-lapse confocal series of two lateral roots expressing YFP:NPSN12 at 0 hr (top) and 6 hr (middle, bottom). Epidermal cells were segmented in 3D using MorphoGraphX (Barbier de Reuille et al., 2015) and are colour-coded for absolute volume (top, middle) or relative volume growth (bottom). (C) boxplot showing relative volume (vol), longitudinal (long), radial (rad), and circumferential (circ) growth for cells shown in (A,B). Cells were split up in two populations based on volume growth to separate slow-growing meristematic cells (growth <1.5, n = 51) from more rapidly growing elongation zone cells (growth >1.5, n = 31). Two-way ANOVA and post hoc Tukey’s test: same letter indicates no significant difference (p≥0.05), different letters indicate significant difference (p<0.01). Note that while cells grow substantially faster once they have entered the elongation zone, growth is predominantly longitudinal in both meristematic and elongation zone cells, and there is no significant difference in radial or circumferential growth between both cell populations. (D) Proposed model of growth anisotropy regulation in epidermal lateral root cells. Top: in wild-type meristematic cells, CMTs (red) and consequently CMFs (grey) are largely isotropic. Growth anisotropy is predominantly conferred through local modification of cell wall properties at edges (green) through a RAB-A5c-dependent trafficking pathway. In elongation zone cells, CMTs and CMFs are aligned transverse anisotropic, further contributing to anisotropic growth. Middle/Bottom: inhibition of RAB-A5c function through RAB-A5c[N125I] abolishes local modification of cell wall properties at edges, leading to the lack of a mechanism promoting anisotropic growth in meristematic cells. This can be partially compensated through premature transverse alignment of CMTs, leading to moderate swelling of cells. If compensatory CMT alignment is prevented through genetic or pharmacological means, cells lack both mechanisms promoting growth anisotropy, and cells swell dramatically.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Plot showing relative volume growth for roots shown in Figure 5A along the longitudinal axis of the roots. The dotted line corresponds to 1.5-fold volume growth, which was identified manually as the point where cells entered into rapid elongation.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/47988/elife-47988-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A–C) Maximum intensity projections of confocal stacks from 2d old seedlings expressing YFP:RAB-A5c (left) and mCHerry:NPSN12 (middle). (B) Arrows indicate cell plates. Note that edge label is most prominent in epidermal cells not covered by the lateral root cap. (C) Boxed area in (B). Arrowheads, YFP:RAB-A5c labelled edges. Scale bars 50 µm (A,B) or 20 µm (C).
 
 ## Discussion
 
@@ -90,28 +150,220 @@ YFP:RAB-A5c was poorly expressed and generally did not localise to cell edges in
 
 ## Materials and methods
 
-## Plant material and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>RAB-A5c/ARA4</td>
+      <td>PMID: 1748311 PMID: 26906735</td>
+      <td>AT2G43130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>KTN</td>
+      <td>PMID: 11283338</td>
+      <td>AT1G80350</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>CLASP</td>
+      <td>PMID: 17873093</td>
+      <td>AT2G20190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>CSI1/POM2</td>
+      <td>PMID: 20616083</td>
+      <td>AT2G22125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>TUB6</td>
+      <td>PMID: 1498609</td>
+      <td>AT5G12250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>GCP2</td>
+      <td>PMID: 17714428</td>
+      <td>AT5G05620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>CESA1/RSW1</td>
+      <td>PMID: 9445479</td>
+      <td>AT4G32410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Arabidopsis thaliana)</td>
+      <td>WT; Wild- Type; Col0</td>
+      <td>NASC</td>
+      <td>Nasc stock number: N1093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>erh3-3</td>
+      <td>PMID: 11782406</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>spr3</td>
+      <td>PMID: 19509058</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>clasp-1</td>
+      <td>PMID: 17873093</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>pom2-4</td>
+      <td>PMID: 22294619</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>RPS5a &gt; Dex &gt; RAB-A5c[N125I]</td>
+      <td>PMID: 26906735</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>RAB-A5c::YFP:RAB-A5c</td>
+      <td>PMID: 26906735</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>UBQ10:: YFP:NPSN12</td>
+      <td>PMID: 19309456</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>UBQ10:: mCherry:NPSN12</td>
+      <td>PMID: 19309456</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>CLASP::GFP:CLASP</td>
+      <td>PMID: 17873093</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>UBQ1::RFP:TUB:6</td>
+      <td>PMID: 21847104</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>GCP2::GCP2:3xGFP</td>
+      <td>PMID: 20935636</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>p35S::RFP:MBD</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oryzalin</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS: 19044-88-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Taxol</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS: 33069-62-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS: 50-02-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji (Fiji is just ImageJ)</td>
+      <td>PMID: 22743772</td>
+      <td>https://imagej.net/Fiji</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MorphoGraphX</td>
+      <td>PMID: 25946108</td>
+      <td>https://www.mpipz.mpg.de/MorphoGraphX</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant material and growth conditions
 
 The Columbia ecotype was used throughout. Seeds expressing YFP:RAB-A5c under its native promoter and lines expressing RAB-A5c[N125I] under the control of the Dex-inducible pOp/LhGR expression system (RPS5a > Dex > RAB-A5c[N125I]) were described before (Kirchhelle et al., 2016). Seeds expressing plasma membrane markers YFP:NPSN12 or mCherry:NPSN12 under the UBIQUITIN10 promoter are part of the WAVE line collection (Geldner et al., 2009). Lines expressing GFP:CLASP under its native promoter in a clasp-1 background (Ambrose et al., 2007), seeds expressing RFP:TUB6 under a UBIQUITIN1 promoter (Ambrose et al., 2011), seeds expressing GCP2:3xGFP under its native promotor (Nakamura et al., 2010), and seeds expressing mCherry:CESA1 under its native promoter (Vain et al., 2014) have been described before. Mutants clasp-1 (Ambrose et al., 2007), erh3-3 (Webb et al., 2002), pom2-4 (Bringmann et al., 2012) and spr3 (Nakamura and Hashimoto, 2009) have been described before. To generate p35S::RFP:MBD expressing plants, Col-0 plants were transformed with p35S::RFP:MBD in gateway vector pK7WGR2 (Van Damme et al., 2004) via Agrobacterium-mediated transformation (Clough and Bent, 1998).
 
 Lateral roots were imaged from seedlings after 7–14 days in a growth chamber (20°C, 16 hr light/8 hr dark) on vertically oriented 0.8% Bacto agar (BD Biosciences) plates with half-strength Murashige and Skoog medium (MS, Sigma-Aldrich), and 1% w/v sucrose (pH 5.7) (½ MS). For Dexamethasone (Dex, Sigma-Aldrich) induction and pharmacological treatments, seedlings were germinated and grown for 6–11 days to allow lateral root development and then transferred onto medium containing either the respective drug or an equivalent volume of solvent for up to three days. Dex was applied at 300 nM, 1 µM or 20 µM diluted from a 20 mM stock in DMSO, Oryzalin (Ory, Sigma-Aldrich) was applied at 250 nM diluted from a 10 mM Stock in DMSO and Taxol (Tax, Sigma-Aldrich) was applied at 10 µM diluted from a 10 mM Stock in DMSO.
 
-## Microscopy
+### Microscopy
 
 All confocal images were acquired using a HCX PL APO CS 20×/0.7 IMM UV lens or a HCX PL APO 63×/1.2 NA lens on a Leica TCS SP5, as described previously (Kirchhelle et al., 2016). Time-lapse imaging of lateral roots was performed in imaging chambers as described before (Kirchhelle and Moore, 2017).
 
-## Quantitative image analysis
+### Quantitative image analysis
 
 Quantification of YFP:RAB-A5c was performed using MorphographX (Barbier de Reuille et al., 2015) in essence as described previously (Kirchhelle et al., 2016), with two modifications: (1) the analysis was limited to the region 0–2 µm from the outer surface of each cell, with the region 0–1 µm from the anticlinal wall considered as edge, and (2) longitudinal and transverse walls were considered separately.
 
 To quantify colocalisation between GCP2:GFP and YFP:RAB-A5c, cytosolic background signal was removed from confocal stacks using a hysteresis filter (thresholds based on mean and maximum intensity + 2SD) in Fiji (Schindelin et al., 2012). On maximum intensity projections of filtered stacks, longitudinal and transverse edges were manually identified and Mander’s colocalisation coefficients (Manders et al., 1993) were determined for a region extending 1 µm in each direction from the cell edge using JACoP (Just Another Colocalisation Plugin) in Fiji (Bolte and Cordelières, 2006). Cell edges where either fluorophore occupied less than 10% of the pixels were excluded to avoid bias.
 
-Microtubule array anisotropy was quantified either as described before using the FibrilTool plugin in Fiji (Boudaoud et al., 2014), or in MorphoGraphX (Barbier de Reuille et al., 2015). For MorphographX-based CMT array quantification, 2.5D segmentation was performed as described before (Barbier de Reuille et al., 2015; Kirchhelle et al., 2016). After segmentation was completed, the RFP:TUB6 stack was imported into MorphoGraphX, filtered with a Gaussian Blur filter with a radius of 0.1 µm, and projected onto the surface (0–1.5 µm from the organ surface). CMT array anisotropy was determined using the Fibril Orientation tool. Maximum (Amax) and minimum (Amin) anisotropy values for each interphase meristematic cell were exported from MorphographX as csv files. Dividing cells were excluded from the analysis. Anisotropy values were normalised as follows for each cell: (Amax-Amin)(Amax+Amin); that is purely isotropic arrays had an anisotropy of 0 and purely anisotropic arrays have an anisotropy of 1.
+Microtubule array anisotropy was quantified either as described before using the FibrilTool plugin in Fiji (Boudaoud et al., 2014), or in MorphoGraphX (Barbier de Reuille et al., 2015). For MorphographX-based CMT array quantification, 2.5D segmentation was performed as described before (Barbier de Reuille et al., 2015; Kirchhelle et al., 2016). After segmentation was completed, the RFP:TUB6 stack was imported into MorphoGraphX, filtered with a Gaussian Blur filter with a radius of 0.1 µm, and projected onto the surface (0–1.5 µm from the organ surface). CMT array anisotropy was determined using the Fibril Orientation tool. Maximum (Amax) and minimum (Amin) anisotropy values for each interphase meristematic cell were exported from MorphographX as csv files. Dividing cells were excluded from the analysis. Anisotropy values were normalised as follows for each cell: $\frac{(A_{max}-A_{min})}{(A_{max}+A_{min})}$; that is purely isotropic arrays had an anisotropy of 0 and purely anisotropic arrays have an anisotropy of 1.
 
 To assess microtubule orientation at the L1/L2 interface, 3D segmentation was performed as described before (Barbier de Reuille et al., 2015; Kirchhelle et al., 2016). After segmentation was completed, the RFP:TUB6 stack was imported into MorphoGraphX, filtered with a Gaussian Blur filter with a radius of 0.1 µm, and projected onto the surface (0–1.5 µm from the organ surface). Note that the cell wall thickness at the L1/L2 interface of less than 200 nm is below the z-resolution limit of CLSM, we therefore cannot exclude a contribution of microtubules from the outer face of cortex cells to our measurements at the L1/L2 interface, and therefore use the term ‘L1/L2 interface’ instead of inner periclinal face.
 
 To quantify root thickness, bright-field images of lateral roots were imported into Fiji, both sides of the root were traced manually along their longitudinal axis, and XY Cartesian coordinates for each pixel on the outline trace were exported as csv files and imported into RStudio (https://www.rstudio.com/). For each pixel on one side, the closest neighbour on the other side was determined and the Euclidian distance between pixels calculated using the nn2 function in the RANN package (https://CRAN.R-project.org/package=RANN). The mean diameter of each root was calculated as the average of all evaluated pixels excluding the tip-most 100 µm of each root to exclude the tapering tip.
 
-## Statistical data analysis and plotting
+### Statistical data analysis and plotting
 
 Two-way ANOVA (analysis of variance) was performed in R using the aov function from the stats package (https://stat.ethz.ch/R-manual/R-devel/library/stats/), Tukey’s test was performed in R using the TukeyHSD function from the stats package, Student’s t-test and, for samples with unequal variance, Welch’s t-test were performed in R using the t.test function from the stats package. Plots were generated in R using the plot function from the graphics package (R Core Team, 2012; https://stat.ethz.ch/R-manual/R-devel/library/graphics/), in Gnumeric (http://www.gnumeric.org/), or in Microsoft Office Excel 2016 (https://products.office.com/en-gb/excel).

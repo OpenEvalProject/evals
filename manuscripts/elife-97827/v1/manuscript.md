@@ -17,11 +17,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01vjw4z39 Department of Microbiology, Guangdong Provincial Key Laboratory of Tropical Disease Research, School of Public Health, Southern Medical University Guangzhou China
-2. https://ror.org/01vjw4z39 Department of Radiation Oncology, Nanfang Hospital, Southern Medical University Guangzhou China
-3. https://ror.org/01eq10738 State Key Laboratory of Organ Failure Research, Key Laboratory of Infectious Diseases Research in South China, Ministry of Education, Guangdong Provincial Key Laboratory of Viral Hepatitis Research, Guangdong Provincial Clinical Research Center for Viral Hepatitis, Department of Infectious Diseases, Nanfang Hospital, Southern Medical University Guangzhou China
-4. https://ror.org/01vjw4z39 Department of Pathology, Nanfang Hospital and School of Basic Medical Science, Southern Medical University Guangzhou China
-5. https://ror.org/01eq10738 HuiQiao Medical Center, Nanfang Hospital, Southern Medical University Guangzhou China
+1. Department of Microbiology, Guangdong Provincial Key Laboratory of Tropical Disease Research, School of Public Health, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
+2. Department of Radiation Oncology, Nanfang Hospital, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
+3. State Key Laboratory of Organ Failure Research, Key Laboratory of Infectious Diseases Research in South China, Ministry of Education, Guangdong Provincial Key Laboratory of Viral Hepatitis Research, Guangdong Provincial Clinical Research Center for Viral Hepatitis, Department of Infectious Diseases, Nanfang Hospital, Southern Medical University Guangzhou China ([ROR:01eq10738](https://ror.org/01eq10738))
+4. Department of Pathology, Nanfang Hospital and School of Basic Medical Science, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
+5. HuiQiao Medical Center, Nanfang Hospital, Southern Medical University Guangzhou China ([ROR:01eq10738](https://ror.org/01eq10738))
 
 † Corresponding author
 
@@ -43,15 +43,15 @@ Previously, we found that various metabolic pathways, including fatty acid metab
 
 ## Results
 
-## Low expression of CPT1A in CRC tumours
+### Low expression of CPT1A in CRC tumours
 
 Analysis of CRC mRNA sequencing arrays from GEO consistently indicated low CPT1A mRNA levels in CRC (Figure 1A). The transcript levels of CPT1A were lower in most colon cancers (19/24 pairs) than in the adjacent non-tumour tissues (Figure 1B). Meanwhile, CPT1A protein levels were lower in most CRC tissues (14/16 pairs) than in the adjacent non-tumour tissues (Figure 1C). Further exploration of CPT1A expression in TCGA revealed that CPT1A mRNA levels were significantly lower in colon adenocarcinoma (COAD) tissues than in the adjacent non-tumour tissues (Figure 1D). Similar results were observed for rectal adenocarcinoma (READ) (Figure 1E). Immunohistochemistry (IHC) staining of the cancer-adjacent borders of two patients showed that CPT1A protein levels were lower in CRC tissues than in the nearby non-tumour tissues (Figure 1F). These findings provide comprehensive evidence supporting the downregulation of CPT1A expression at both mRNA and protein levels in CRC.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig1-v1.jpg)
 
-**Figure 1.:** (A) The expression of CPT1A in six GEO microarrays. (B) Real-time PCR for CPT1A in 24-paired CRC and adjacent non-tumour tissues. (C) Western blot for CPT1A in 16-paired CRC and adjacent non-tumour tissues. (D) Lower CPT1A mRNA level in colon adenocarcinoma (COAD) than the normal counterparts from TCGA in UALCAN database. (E) Lower CPT1A mRNA level in rectal adenocarcinoma (READ) than the normal counterparts from TCGA in UALCAN database. (F) Immunohistochemistry (IHC) assay for CPT1A in two patients, scale bar = 100μm. ***p<0.001, **p<0.01, *p<0.05.Figure 1—source data 1.Figure 1C.Figure 1—source data 2.Figure 1C.
+**Figure 1.:** (A) The expression of CPT1A in six GEO microarrays. (B) Real-time PCR for CPT1A in 24-paired CRC and adjacent non-tumour tissues. (C) Western blot for CPT1A in 16-paired CRC and adjacent non-tumour tissues. (D) Lower CPT1A mRNA level in colon adenocarcinoma (COAD) than the normal counterparts from TCGA in UALCAN database. (E) Lower CPT1A mRNA level in rectal adenocarcinoma (READ) than the normal counterparts from TCGA in UALCAN database. (F) Immunohistochemistry (IHC) assay for CPT1A in two patients, scale bar = 100μm. ***p<0.001, **p<0.01, *p<0.05.
 
-## Low CPT1A CRC exhibits radioresistance and poor overall survival
+### Low CPT1A CRC exhibits radioresistance and poor overall survival
 
 Based on the IHC scores, patients were divided into CPT1A high- and low-expression groups (Figure 2A). Kaplan-Meier survival analysis indicated that low CPT1A-expressing patients had low overall survival (OS) (Figure 2B). Survival analysis of READ patients with low CPT1A using GEPIA also suggested a low OS; the difference was statistically close but not significant (p=0.061, Figure 2C). To further investigate the correlation between CPT1A and radiotherapy efficacy, IHC staining and scoring for CPT1A were performed on samples from 43 patients with rectal cancer who received neoadjuvant radiochemotherapy. Among patients with a tumour regression grade (TRG) score of 1, which indicates a minimal number of residual tumour cells, a high IHC score for CPT1A is often observed. Conversely, patients with a TRG score of 2, indicating more residual tumour cells, exhibited relatively lower IHC staining intensity and overall scores (Figure 2D). A comparison of groups with TRG 2–3 and TRG 1 revealed significantly higher IHC scores in the TRG 1 group (Figure 2E). The TRG and IHC scores for CPT1A showed a negative correlation (R=−0.3430 and p=0.024) (Figure 2F). In summary, low CPT1A expression was associated with poor OS, high TRG scores, and a high probability of radioresistance.
 
@@ -59,17 +59,29 @@ Based on the IHC scores, patients were divided into CPT1A high- and low-expressi
 
 **Figure 2.:** (A) Immunohistochemistry (IHC) assay for CPT1A in two groups of patients, upper with low CPT1A expression and lower with high CPT1A expression (IHC score≥6). (B) The OS was estimated by the Kaplan-Meier method in rectal cancer patients with low (n=33) or high CPT1A expression (n=43). (C) The OS was estimated by the Kaplan-Meier method in rectal cancer patients in TCGA database with low (n=46) or high CPT1A expression (n=46). (D) IHC assay for CPT1A in two groups of patients, upper with TRG-1 and lower with TRG-2 (TRG means tumour regression grade, AJCC standard, 0, complete response: no remaining viable cancer cells; 1, moderate response: only small clusters or single cancer cells remaining; 2, minimal response: residual cancer remaining, but with predominant fibrosis), scale bar = 100μm. . (E) Dot plot showing the IHC score and TRG score of patients. (F) Correlation of CPT1A with TRG score, size of dot represents the number. ***p<0.001, **p<0.01, *p<0.05.
 
-## Decreased CPT1A expression contributes to radiation resistance in CRC cells
+### Decreased CPT1A expression contributes to radiation resistance in CRC cells
 
 Through a colony formation assay (CFA) and multi-target single-hit survival model, we found that SW480, Caco-2, SW620, HT-29, and cells were more resistant to radiation than HCT15, RKO, and HCT 116 cells (Figure 3—figure supplement 1A and B, Supplementary file 1). Furthermore, the background expression levels of CPT1A in the above cells revealed that CPT1A transcription and protein levels were higher in radiation-resistant cells than in radiosensitive cells (Figure 3—figure supplement 1C and D).
 
 Accordingly, we constructed stable CRC cell lines with CPT1A knockout/overexpression. We transfected the CRISPR/Cas9 lentivirus into HCT 116 cells (highest CPT1A expression and radiosensitive) and used western blotting to verify that the knockout efficiency of the second site was the highest, while mRNA levels were significantly reduced (Figure 3A and B). We used the second knockout site for subsequent in vitro and in vivo experiments. We also transfected the CPT1A-overexpressing lentivirus into SW480 cells (lowest CPT1A expression and radioresistant) and verified that CPT1A protein and mRNA levels increased (Figure 3A and B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig3-v1.jpg)
+
+**Figure 3.:** (A) The protein level of CPT1A in HCT 116-NC, HCT 116-KO1, HCT 116-KO2, HCT 116-KO3, SW480-RFP, and SW480-OE cell lines. (B) The mRNA level of CPT1A in HCT 116-NC, HCT 116-KO (KO2), SW480-RFP, and SW480-OE cell lines. (C) Colony-forming assay of HCT 116-NC and HCT 116-KO cell lines. (D) The map of multi-target single-hit model. (E) Colony-forming assay of SW480-RFP and SW480-OE cell lines. (F) The map of multi-target single-hit model. (G) Comet assay of HCT 116-NC, HCT 116-KO, SW480-RFP, and SW480-OE. (H) Protein expression of γ-H2A.X in HCT 116-NC and HCT 116-KO cell lines. (I) Protein expression of γ-H2A.X in SW480-RFP and SW480-OE cell lines. ***p<0.001, **p<0.01, *p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Colony-forming assay in different cell lines. (B) The map of multi-target single-hit model. (C) The mRNA level of CPT1A in different cell lines. (D) The protein level of CPT1A in different cell lines. ***p<0.001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Workflow of establishment of radioresistance cells. F, fraction; W, week. (B) Colony-forming assay in different cell lines. (C) The map of multi-target single-hit model. (D) The protein level of CPT1A in radioresistance cells. (E) Western blot for CPT1A in HCT-15-25F cell line after transfected with overexpression lentivirus. (F) Protein expression of γ-H2A.X in HCT-15-25F-NC and HCT-15-25F-OE cell lines. (G) Colony-forming assay in different cell lines. (H) The map of multi-target single-hit model. ***p<0.001, **p<0.01, *p<0.05.
+
 The CFA and multi-target single-hit survival model suggested that radioresistance increased with CPT1A knockout (D0=1.526 vs 1.993, p<0.05, Figure 3C and D), whereas the radioresistance of cells decreased with CPT1A overexpression (D0=2.724 vs 1.963, p<0.01, Figure 3E and F). The comet assay suggested that the proportion of DNA in the tail of cells decreased with CPT1A knockout, indicating improved damage repair. With CPT1A overexpression, the proportion of DNA in the tail increased, indicating reduced damage repair capabilities (Figure 3G). We also detected γ-H2A.X expression at different time points after 6 Gy irradiation; with CPT1A knockout, γ-H2A.X disappeared from cells faster, indicating improved cell damage repair (Figure 3H). With CPT1A overexpression, the disappearance rate of γ-H2A.X in cells was slower, remaining detectable even after 24 hr, indicating diminished cellular repair capability (Figure 3I). Collectively, our data suggest that CPT1A radiosensitises intrinsically radioresistant cells.
 
 We generated radioresistant cell lines (HCT-15-25F and HCT-15-5F) from the HCT-15 parent line by fractionated irradiation (Figure 3—figure supplement 2A). Using CFAs and the multi-target single-hit survival model, we observed increased radioresistance in these new cell lines, as indicated by higher D0 values than those of the parental cells (HCT-15 D0=2.957, HCT-15-5F D0=3.240, HCT-15-25F D0=3.822) (Figure 3—figure supplement 2B and C). We also found significantly decreased CPT1A protein expression in HCT-15-25F and HCT-15-5F cells compared with that in the original cells (Figure 3—figure supplement 2D). Thus, HCT-15-25F cells were selected for further analysis. Transfection with the CPT1A-overexpressing lentivirus led to stable overexpression in HCT-15-25F cells (Figure 3—figure supplement 2E). To assess the impact of CPT1A overexpression on DNA repair capacity, we monitored γ-H2A.X expression at different time points following 6 Gy irradiation. CPT1A overexpression resulted in a slow disappearance of intracellular γ-H2A.X, suggesting enhanced DNA damage repair capability (Figure 3—figure supplement 2F). CFAs and the multi-target single-hit survival model revealed that CPT1A overexpression increased the radiosensitivity of radioresistant cells (D0=2.871 vs 2.581, p<0.05; Figure 3—figure supplement 2G and H), indicating that CPT1A exerts a radiosensitising effect in inducible radioresistant cell lines.
 
-## Diminished CPT1A expression in vivo also leads to tumour radioresistance
+### Diminished CPT1A expression in vivo also leads to tumour radioresistance
 
 To further validate the impact of CPT1A on radiation resistance in vivo, we established a xenograft model using HCT116-NC and HCT116-KO cell lines in nude mice (Figure 4A). CPT1A-stabilising knockout increased tumour weights in mice, which persisted after radiotherapy (Figure 4B), suggesting that CPT1A knockout promotes tumour growth and confers increased resistance to radiation. IHC staining demonstrated a significant increase in Ki-67 staining intensity and the percentage of positive cells in CPT1A knockout tumours, indicating enhanced proliferative capacity that was further pronounced after radiotherapy (Figure 4C and D). In the absence of CPT1A knockdown, radiotherapy reduced the percentage of Ki67-positive cells in the xenograft tumours by 32.9% (approximately 39.6% of the pre-irradiation baseline). In contrast, upon CPT1A knockdown, radiotherapy only led to a 14.5% reduction in the percentage of Ki67-positive cells (approximately 15.6% of the pre-irradiation baseline; Figure 4D). Similarly, we performed xenograft model experiments using the SW480-RFP and SW480-OE cell lines (Figure 4E). CPT1A overexpression resulted in reduced tumour weight in mice, a trend that persisted even after radiotherapy (Figure 4F). Furthermore, as illustrated in Figure 4E and F, in the absence of CPT1A overexpression, radiotherapy resulted in a 0.10 g decrease in tumour weight (approximately 52.5% of the pre-irradiation weight), whereas with CPT1A overexpression, radiotherapy induced a more pronounced 0.12 g reduction in tumour weight (approximately 89.7% of the pre-irradiation weight). These findings suggested that CPT1A overexpression inhibits tumour growth and sensitises tumour cells to radiation. IHC staining for Ki-67 revealed significantly decreased staining intensity and percentage of positive cells in CPT1A-overexpressing tumours, indicating weakened proliferative capacity, which was further accentuated after radiotherapy (Figure 4G and H).
 
@@ -77,19 +89,98 @@ To further validate the impact of CPT1A on radiation resistance in vivo, we esta
 
 **Figure 4.:** (A) Image of tumours formed in nude mice, with knockout of CPT1A and radiation. (B) Scattergram showing the weight of tumours. (C) Immunohistochemical staining of Ki67 in tumours, scale bar = 100μm. . (D) Bar chart demonstrating the percentage of positively stained Ki67 cells. (E) Image of tumours formed in nude mice, with overexpression of CPT1A and radiation. (F) Scattergram showing the weight of tumours. (G) Immunohistochemical staining of Ki67 in tumours, scale bar = 100μm. (H) Bar chart demonstrating the percentage of positively stained Ki67 cells. ***p<0.001, **p<0.01, *p<0.05.
 
-## Low CPT1A levels accelerate post-radiation ROS scavenging
+### Low CPT1A levels accelerate post-radiation ROS scavenging
 
 To study the mechanism of low CPT1A expression in radiotherapy resistance, we conducted differential gene expression analysis between HCT116-KO and HCT116-NC cells. The gene expression heatmap demonstrated high consistency among technical replicates for both HCT 116-NC and HCT 116-KO cells (Figure 5—figure supplement 1A). With CPT1A knockdown, we found 363 upregulated and 1290 downregulated genes (|log2(fold change)|>1 and q<0.05) (Figure 5—figure supplement 1B). We conducted Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis and Gene Ontology (GO) annotation for all differentially expressed genes (DEGs; Figure 5A; Figure 5—figure supplement 1C–E), showing that the peroxisomes, cell cycle nucleotide excision repair, and fatty acid degradation pathways were among the enriched KEGG pathways (Figure 5A). Peroxisomes are important organelles that maintain cellular redox balance by clearing ROS. Therefore, we targeted peroxisomal pathways. ROS levels in the cells were dynamically balanced, including ROS production and scavenging (Figure 5B). To investigate the effect of CPT1A on ROS, we examined them in stable CPT1A knockout/overexpression cells following 6 Gy irradiation and 1 hr of incubation with 2',7'-dichlorodihydrofluorescein diacetate (DCFH-DA), a fluorescent redox probe used to detect ROS in cells (Figure 5C). The total ROS levels in CPT1A knockout cells decreased, whereas those in CPT1A-overexpressing cells increased (Figure 5D). The main mechanism by which cells produce ROS under irradiation is through the X-ray ionisation of water molecules, which far exceeds those from oxidative phosphorylation and NOX enzymes (Figure 5B). Therefore, we speculated that the regulation of CPT1A by intracellular ROS levels may be attributed to increased ROS scavenging. We examined the GSH/GSSG ratio (Figure 5E and F) and SOD (Figure 5G and H), CAT (Figure 5I), and POD enzyme activities (results were unchanged, data not shown) in stable CPT1A knockout/overexpression cells; in CPT1A knockout cells, the GSH/GSSG ratio and SOD and CAT enzyme activities increased, and these changes were also observed under 6 Gy irradiation (Figure 5I). In contrast, in CPT1A-overexpressing cells, the GSH/GSSG ratio, and SOD and CAT activities decreased, and these changes were also observed after 6 Gy irradiation (Figure 5I).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig5-v1.jpg)
+
+**Figure 5.:** (A) Enriched Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway of differentially expressed genes (DEGs) in mRNA sequencing. (B) Generation and scavenging of ROS in cell. (C) ROS of HCT 116-KO cell, SW480-OE cell and their control with 2',7'-dichlorodihydrofluorescein diacetate (DCFH-DA) by flow cytometry. (D) Bar graph to show the mean of DCFH-DA in HCT 116-KO, HCT 116-NC cells, SW480-NC, and SW480-OE cells. (E) GSH/GSSG ratio measurement under CPT1A knockout and radiation. (F) GSH/GSSG ratio measurement under CPT1A overexpression and radiation. (G) Effect of the CPT1A knockout on SOD activity. (H) Effect of the CPT1A overexpression on SOD activity. (I) Effect of the CPT1A on catalase (CAT) activity. ***p<0.001, **p<0.01, *p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmap of all genes. (B) Volcanic map of all genes. (C) Enriched Gene Ontology (GO) terms of biological process. (D) Enriched GO terms of cellular component. (E) Enriched GO terms of molecular function.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) ROS of HCT-15-25F and HCT-15 with 2',7'-dichlorodihydrofluorescein diacetate (DCFH-DA) by flow cytometry. (B) ROS of HCT-15-25F-OE cell and its control with DCFH-DA by flow cytometry. (C) Bar graph to show the mean of DCFH-DA in HCT-15-25F and HCT-15 cells. (D) Bar graph to show the mean of DCFH-DA in HCT-15-25F-OE and HCT-15-25F-NC cells. (E) GSH/GSSG ratio after CPT1A overexpression. (F) GSH/GSSG ratio after CPT1A overexpression and 6 Gy radiation. (G) Effect of the CPT1A overexpression on SOD activity. (H) Effect of the CPT1A overexpression on SOD activity after 6 Gy radiation. (I) Effect of the CPT1A overexpression on peroxidase (POD) activity. (J) Effect of the CPT1A overexpression on POD activity after 6 Gy radiation. (K) Effect of the CPT1A on catalase (CAT) activity. ***p<0.001, **p<0.01, *p<0.05.
 
 We further validated the effect of CPT1A on ROS scavenging in radioresistant cells. Total ROS significantly reduced in radioresistant cells compared to those in HCT-15 control cells following 6 Gy irradiation (Figure 5—figure supplement 2A and C). Furthermore, CPT1A overexpression increased total ROS levels in radioresistant cells (Figure 5—figure supplement 2B and D), suggesting that CPT1A enhances ROS accumulation in radioresistant cells. Additionally, we assessed the GSH/GSSG ratio (Figure 5—figure supplement 2E and F) and SOD (Figure 5—figure supplement 2G and H), POD (Figure 5—figure supplement 2I and J), and CAT enzyme activities (Figure 5—figure supplement 2K) in radioresistant cells, both at baseline and after 6 Gy irradiation, revealing an increased GSH/GSSG ratio and elevated activities of SOD, POD, and CAT enzymes in radioresistant cells compared to those in parental HCT-15 control cells. Furthermore, these changes persisted under 6 Gy irradiation.
 
 To explore the influence of CPT1A overexpression on radiation resistance, we examined the GSH/GSSG ratio (Figure 5—figure supplement 2E and F) and SOD (Figure 5—figure supplement 2G and H), POD (Figure 5—figure supplement 2I and J), and CAT enzyme activities (Figure 5—figure supplement 2K) in HCT-15-25F-OE cells compared to those in control cells, showing that CPT1A overexpression restored the GSH/GSSG ratio and increased SOD and CAT enzyme activities but failed to restore POD enzyme activity. Additionally, under 6 Gy irradiation, the GSH/GSSG ratio and SOD enzyme activity were restored in CPT1A-overexpressing cells (Figure 5—figure supplement 2E–K).
 
-## Reduced CPT1A expression mediates radioresistance in CRC through increased expression of ROS-scavenging genes, facilitated by FOXM1
+### Reduced CPT1A expression mediates radioresistance in CRC through increased expression of ROS-scavenging genes, facilitated by FOXM1
 
 The reasons underlying the changes in SOD and CAT enzyme activities require further investigation. We examined the transcriptional and protein levels of SOD (SOD1, SOD2, and SOD3) and CAT (Figure 6A and B) and found that CPT1A knockout in cells increased both the mRNA and protein levels of SOD1, SOD2, and CAT, whereas the overexpression of CPT1A decreased them (Figure 6A and B). However, the function of CPT1A as a transcription factor is hitherto unreported, suggesting a potential regulatory mechanism mediated by other transcription factors. Thus, we employed a bioinformatics analysis by intersecting predicted or reported transcription factors known to regulate SOD1, SOD2, and CAT with upregulated DEGs. The Venn diagram highlights three transcription factors that met the criteria: FOXM1, LMNB1, and SAP30 (Figure 6C). FOXM1 transcription and protein levels were significantly increased in CPT1A knockout cells but decreased when CPT1A was overexpressed (Figure 6A and B). Other transcription factors showed no significant changes in protein levels (data not shown).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig6-v1.jpg)
+
+**Figure 6.:** (A) The protein level of FOXM1, CPT1A, catalase (CAT), SOD1, SOD2, SOD3 after knockout and overexpression of CPT1A. (B) The mRNA level of FOXM1, CAT, SOD1, SOD2, SOD3 after knockout and overexpression of CPT1A. (C) Venn diagram showing the potential transcription factor of SOD1, SOD2, and CAT. (D) The protein level of FOXM1, CPT1A, CAT, SOD1, SOD2 after overexpression of FOXM1 in HCT116-CPT1AKO cells. (E) Schematic diagram summarising our working model, namely, decreased CPT1A promotes the transcription factor activity of FOXM1, increasing the mRNA and protein level of CAT, SOD1, and SOD2, followed by increasing ROS scavenge after irradiation and therefore colorectal cancer (CRC) cells become radioresistance. ***p<0.001, **p<0.01, *p<0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The correlation of FOXM1 with SOD1. (B) The correlation of FOXM1 with SOD2.
+
 Additionally, we explored the correlation between FOXM1 and the downstream enzymes SOD1, SOD2, and CAT in READ and COAD. The results (Figure 6—figure supplement 1A and B) indicate a positive correlation between FOXM1 and SOD1 as well as SOD2. Furthermore, we used hTFtarget and JASPAR to predict FOXM1 binding sites in the promoters of SOD1, SOD2, and CAT (Table 1). Finally, a rescue experiment was conducted by overexpressing FOXM1 in HCT 116-NC and HCT 116-KO cells, demonstrating that downstream SOD1, SOD2, and CAT protein levels were restored by FOXM1 overexpression (Figure 6D). In summary, the downregulation of CPT1A increases FOXM1 mRNA and protein levels in CRC, promoting the transcription and translation of SOD1, SOD2, and CAT, thereby accelerating the scavenging of ROS produced after radiation exposure and ultimately leading to radiation resistance in CRC cells (Figure 6E).
+
+**Table 1.**
+ Potential binding site of SOD1, SOD2, catalase (CAT) promoter predicted by hTFtarget and JASPAR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>TF</th>
+      <th>Target gene</th>
+      <th>Sequence name</th>
+      <th>Start</th>
+      <th>Stop</th>
+      <th>Strand</th>
+      <th>Score</th>
+      <th>p-Value</th>
+      <th>q-Value</th>
+      <th>Matched motif</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FOXM1</td>
+      <td>SOD1</td>
+      <td>NC_000021.9:31657693–31659693</td>
+      <td>1166</td>
+      <td>1178</td>
+      <td>-</td>
+      <td>14.4412</td>
+      <td>0.00000152</td>
+      <td>0.00599</td>
+      <td>TTTGTTTGATTTT</td>
+    </tr>
+    <tr>
+      <td>FOXM1</td>
+      <td>SOD2</td>
+      <td>NC_000006.12:c159669069-159667069</td>
+      <td>1152</td>
+      <td>1160</td>
+      <td>+</td>
+      <td>12.685</td>
+      <td>0.00000403</td>
+      <td>0.0159</td>
+      <td>AGATGGAGT</td>
+    </tr>
+    <tr>
+      <td>FOXM1</td>
+      <td>CAT</td>
+      <td>NC_000011.10:34436934–34438934</td>
+      <td>1410</td>
+      <td>1422</td>
+      <td>+</td>
+      <td>11.3333</td>
+      <td>0.0000499</td>
+      <td>0.197</td>
+      <td>TCAGAGTGTTTTT</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -107,37 +198,455 @@ Our study has some limitations. We only conducted radiosensitivity investigation
 
 ## Materials and methods
 
-## Reagents and materials
+### Reagents and materials
 
 The reagent suppliers are indicated in Key resources table.
 
-## Bioinformatic analyses
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HCT-15</td>
+      <td>ATCC (USA)</td>
+      <td>CCL-225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>RKO</td>
+      <td>ATCC (USA)</td>
+      <td>CRL-2577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HCT 116</td>
+      <td>ATCC (USA)</td>
+      <td>CCL-247</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HT-29</td>
+      <td>ATCC (USA)</td>
+      <td>HTB-38</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Caco-2</td>
+      <td>ATCC (USA)</td>
+      <td>HTB-37</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>SW480</td>
+      <td>ATCC (USA)</td>
+      <td>CCL-228</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>SW620</td>
+      <td>ATCC (USA)</td>
+      <td>CCL-227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pLV[Exp]-Puro-CMV&gt;hCPT1A</td>
+      <td>VectorBuilder (China)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pLV[CRISPR]-hCas9:T2A:Puro-U6&gt;hCPT1A</td>
+      <td>VectorBuilder (China)</td>
+      <td></td>
+      <td>Including 3 gRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pLV[Exp]-G418-CMV&gt;hFOXM1</td>
+      <td>VectorBuilder (China)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CPT1A (D3B3) Rabbit mAb</td>
+      <td>Cell Signaling Technology (USA)</td>
+      <td>12252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin (8H10D10) Mouse mAb</td>
+      <td>Cell Signaling Technology (USA)</td>
+      <td>3770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Ki67 monoclonal antibody</td>
+      <td>Cell Signaling Technology (USA)</td>
+      <td>9449</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PPARA Rabbit Polyclonal antibody</td>
+      <td>Proteintech (China)</td>
+      <td>15540-1-AP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PPAR gamma Rabbit Polyclonal antibody</td>
+      <td>Proteintech (China)</td>
+      <td>22061-1-AP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PGC1a Mouse Monoclonal antibody</td>
+      <td>Proteintech (China)</td>
+      <td>66369-1-Ig</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOD1 Rabbit Polyclonal antibody</td>
+      <td>Proteintech (China)</td>
+      <td>10269-1-AP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOD2 Rabbit Polyclonal antibody</td>
+      <td>Proteintech (China)</td>
+      <td>24127-1-AP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOD3 Rabbit Polyclonal antibody</td>
+      <td>Proteintech (China)</td>
+      <td>14316-1-AP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Catalase Rabbit Polyclonal antibody</td>
+      <td>Proteintech (China)</td>
+      <td>21260-1-AP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FOXM1 Rabbit Polyclonal antibody</td>
+      <td>Proteintech (China)</td>
+      <td>13147-1-AP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-linked Antibody</td>
+      <td>Cell Signaling Technology (USA)</td>
+      <td>7074</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol</td>
+      <td>TakaraBio (Japan)</td>
+      <td>9108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Evo M-MLV RT Mix Kit</td>
+      <td>Accurate Biotechnology (China)</td>
+      <td>AG11728</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Green Premix Pro Taq HS qPCR Kit</td>
+      <td>Accurate Biotechnology (China)</td>
+      <td>AG11701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein extraction kit</td>
+      <td>KeyGen BioTech (China)</td>
+      <td>KGP113-SDS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Comet assay kit</td>
+      <td>KeyGen BioTech (China)</td>
+      <td>KGA240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PI</td>
+      <td>Beyotime (China)</td>
+      <td>ST511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Beyotime (China)</td>
+      <td>C1002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ROS detection kit</td>
+      <td>Beyotime (China)</td>
+      <td>S0033S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GSH detection kit</td>
+      <td>Solarbio (China)</td>
+      <td>BC1175</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GSSG detection kit</td>
+      <td>Solarbio (China)</td>
+      <td>BC1180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SOD enzyme activity kit</td>
+      <td>Solarbio (China)</td>
+      <td>BC0170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CAT enzyme activity kit</td>
+      <td>Solarbio (China)</td>
+      <td>BC0200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>POD enzyme activity kit</td>
+      <td>Solarbio (China)</td>
+      <td>BC0090</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bioinformatic analyses
 
 Raw mRNA expression profiles and clinical features from GSE9348, GSE20916, GSE37364, GSE44076, GSE68468, and GSE110223 were downloaded from GEO (http://www.ncbi.nlm.nih.gov/geo/). The CPT1A mRNA expression in cancer and paired normal tissues was analysed using UALCAN (https://ualcan.path.uab.edu/) (Chandrashekar et al., 2022). Correlation analyses between genes were conducted using GEPIA2 (http://gepia2.cancer-pku.cn/) (Tang et al., 2019). Transcription factor prediction and promoter binding site analysis for SOD1, SOD2, and CAT were conducted using the hTF target database (http://bioinfo.life.hust.edu.cn/hTFtarget#) (Zhang et al., 2020). Additionally, JASPAR (http://jaspar.genereg.net/) was used to predict the binding sites of FOXM1 (Rauluseviciute et al., 2024).
 
-## Human
+### Human
 
 Human samples were collected from the Nanfang Hospital of Southern Medical University, Guangzhou, for CRC patients with or without radiochemotherapy with age over 18 and below 75 years. Two to four biopsies from each patient were collected to be used for qRT-PCR, western blotting, and sectioning. Informed consent forms were acquired from all the patients. Ethics approval for the use of human samples was obtained from Ethics Committee of Nanfang Hospital, Southern Medical University (No. NFEC-202304-K13).
 
-## RNA isolation and qRT-PCR
+### RNA isolation and qRT-PCR
 
 A total of 48 rectal adenocarcinoma samples and their paired normal tissues were used for RNA isolation and qRT-PCR. Total RNA was extracted using TRIzol following the manufacturer’s instructions. cDNA was generated using the Evo M-MLV RT Mix Kit. mRNA expression was analysed using the SYBR Green Premix Pro Taq HS qPCR Kit on a QuantStudio6 Real-time PCR system, and β-actin was used for normalisation. Data were analysed using the 2-ΔΔCT method. The PCR primers are listed in Supplementary file 2.
 
-## Protein extraction and western blotting
+### Protein extraction and western blotting
 
 Proteins of rectal adenocarcinoma and paired normal tissues were extracted from tissues and cells using a protein extraction kit, according to the manufacturer’s instructions. Briefly, NanoDrop was used to determine the protein concentration. The proteins were mixed in a 4:1 ratio with 5× loading buffer and denatured at 100°C in a water bath for 5 min. Subsequently, 20 μg of proteins were subjected to SDS-PAGE at 95 V. Subsequently, proteins were transferred onto PVDF membranes at a constant current. The membrane was blocked with 5% BSA and incubated with the corresponding primary antibody overnight at 4°C. Subsequently, the membrane was incubated with an HRP-conjugated secondary antibody (1:2000 dilution), and protein levels were detected using enhanced chemiluminescence.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 All colon cancer (n=76) and rectal adenocarcinoma tissues (n=45) were collected before treatment and sectioned at 4 μm. Clinicopathological features of the patients were provided by the Department of Pathology (Table 2). Staining intensity was independently evaluated by two senior pathologists. The staining intensity was scored on a 4-point scale, where 0 represented no positive staining (negative), 1 represented light yellow (weak positive), 2 represented brownish yellow (positive), and 3 represented brown (strong positive) staining. The percentage of positive cells was also scored on a 4-point scale, where 1 point was assigned for ≤25% positive cells, 2 points for 26–50% positive cells, 3 points for 51–75% positive cells, and 4 points for >75% positive cells. The IHC score was calculated by multiplying the staining intensity score with the positive cell percentage score. Patients with an IHC score ≥6 were classified as the CPT1A-high group.
 
-## Cell culture and lentiviral infection
+**Table 2.**
+ Correlation between clinicopathological features and the expression of CPT1A in tumour paraffin section.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variables</th>
+      <th rowspan="2">Categories</th>
+      <th colspan="3">CPT1A</th>
+      <th rowspan="2">p-Value</th>
+    </tr>
+    <tr>
+      <th>Low</th>
+      <th>High</th>
+      <th>Total (n)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Age</td>
+      <td>&lt;50</td>
+      <td>13</td>
+      <td>13</td>
+      <td>26</td>
+      <td rowspan="2">0.411</td>
+    </tr>
+    <tr>
+      <td>≥50</td>
+      <td>20</td>
+      <td>30</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Gender</td>
+      <td>Male</td>
+      <td>13</td>
+      <td>18</td>
+      <td>31</td>
+      <td rowspan="2">0.831</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>20</td>
+      <td>25</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Histological grade</td>
+      <td>Well differentiated</td>
+      <td>3</td>
+      <td>5</td>
+      <td>8</td>
+      <td rowspan="3">0.640</td>
+    </tr>
+    <tr>
+      <td>Moderately differentiated</td>
+      <td>26</td>
+      <td>32</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>Poorly differentiated</td>
+      <td>4</td>
+      <td>6</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td rowspan="4">UICC/ AJCC Stage</td>
+      <td>Stage I</td>
+      <td>3</td>
+      <td>1</td>
+      <td>4</td>
+      <td rowspan="4">0.379</td>
+    </tr>
+    <tr>
+      <td>Stage II</td>
+      <td>14</td>
+      <td>16</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Stage III</td>
+      <td>14</td>
+      <td>24</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>Stage IV</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td rowspan="4">T-class</td>
+      <td>T1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td rowspan="4">0.272</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>15</td>
+      <td>15</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>T4</td>
+      <td>14</td>
+      <td>24</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td rowspan="3">N-class</td>
+      <td>N0</td>
+      <td>18</td>
+      <td>17</td>
+      <td>35</td>
+      <td rowspan="3">0.189</td>
+    </tr>
+    <tr>
+      <td>N1</td>
+      <td>10</td>
+      <td>16</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>5</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M-class</td>
+      <td>M0</td>
+      <td>31</td>
+      <td>41</td>
+      <td>72</td>
+      <td rowspan="2">0.788</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and lentiviral infection
 
 The CRC cell lines HCT-15, RKO, HCT 116, HT-29, Caco-2, SW480, and SW620 were purchased from ATCC (Manassas, VA, USA). All cell lines were authenticated with STR profiling, using cell line authentication services offered by ATCC, to avoid misidentification and tested negative for mycoplasma contamination. All cell lines were cultured in RPMI-1640 medium supplemented with 10% FBS. Cells were cultured at 37°C with 5% CO2. To establish radiation-resistant strains, HCT-15-25F and HCT-15-5F cells were generated using both conventional fractionated irradiation (2 Gy/fraction, 25 fractions, 5 fractions/week over 5 weeks) and large-fractionated irradiation (5 Gy/fraction, 5 fractions, for 1 week).
 
 The full-length lentiviral expression of CPT1A with puromycin was constructed by VectorBuilder. CPT1A-targeting CRISPR/Cas9 lentiviral vectors (hCpt1a[gRNA#1]: AAATCTCTACTACACGGCCGATGTTACGACAGGTACCGTCCTT, hCpt1a[gRNA#2]: AGAAGGTAAGGACGGTACCTGTCGTAACATCGGCCGTGTAGTA, hCpt1a[gRNA#3]: CTGAACACTCCTGGGCAGATGCGCCGATCGTGGCCCACCTTTG) with RFP and Puro were constructed by VectorBuilder. Infection and in vitro transfection of cell lines were performed following the manufacturer’s protocol. The lentiviral full-length expression of FOXM1 with G418 was constructed using VectorBuilder.
 
-## CFA and multi-target single-hit survival model
+### CFA and multi-target single-hit survival model
 
 The radiosensitivity of all human CRC cell lines was determined using a CFA with a multi-target single-hit model to the surviving fractions. Cells were plated in six-well plates and irradiated at doses of 0, 2, 4, 6, 8, and 10 Gy (6 MeV X-rays). The cells were then cultured for 10 days, stained with 1% crystal violet, and quantified using ImageJ version 1.8.0.
 
@@ -145,32 +654,32 @@ The surviving fraction for each dose was calculated using the following formula:
 
 [(number of surviving colonies at dose X)/(number of cells seeded at dose X (average colonies arising from non-irradiated cells (0 Gy))/number of non-irradiated cells seeded)]. Survival curves were used to develop the multi-target single-hit model, SF = 1 − (1 − e−D/D0)×N, where SF is the surviving fraction, D is the radiation dose, and N is the extrapolation number. The multi-target single-hit model provides parameters related to radiation sensitivity and sensitisation ratios, thereby directly reflecting the cells’ radiation sensitivity.
 
-## Comet assay
+### Comet assay
 
 The comet assay is a classical technique for assessing cellular radiation sensitivity. Essentially, cells that are more susceptible to radiation damage exhibit more DNA fragmentation post-irradiation, leading to a greater proportion of DNA in the tail (with less in the head). The comet assay was performed as previously described (Yu et al., 2022). Briefly, slides were covered with 100 μL of pre-warmed normal melting point agarose (2%) and placed on ice to solidify the first gel layer. Cells irradiated with 6 Gy were digested to obtain a cell suspension. Ten microlitres of the cell suspension were mixed with 80 μL of pre-warmed low melting point agarose (0.75%) and poured onto the slides. The slides were dipped in a cold lysis solution for 2 hr. After cell lysis, the slides were placed in a horizontal electrophoresis chamber filled with cold TAE solution, incubated for 25 min in the dark, and electrophoresed (1 V/cm). The slides were then neutralised in PBS for 5 min and stained with propidium iodide (PI) or DAPI. Comet images were captured using a fluorescence microscope. The percentage of DNA in the tail was analysed using the CASP 1.2.3 beta 1.
 
-## Animal model
+### Animal model
 
 All animal experiments were approved by the Institutional Animal Care and Use Committee of Nanfang Hospital (IACUC-PROJECT-20221128-003). Male BALB/c nude mice (5 weeks of age) were purchased from the Southern Medical University Laboratory Animal Center, China, and raised under specific pathogen-free conditions. All in vivo experiments were performed following institutional guidelines. To develop the xenograft tumour model, 5×106 cells were subcutaneously injected into the left flank of mice. On reaching a volume of 100 mm3, the tumours were irradiated twice at 8 Gy, and other parts of the mouse body were protected with a lead shield. The tumour volume was measured using Vernier callipers and calculated as 1/2×length×width×width. After the mice were euthanised with phenobarbital sodium, the tumours were excised, weighed, and embedded in paraffin for further experiments.
 
-## Transcriptomics
+### Transcriptomics
 
 HCT 116-NC and HCT 116-KO cells were collected and sent to RIBOBIO (Guangzhou, China) for polyA-seq transcriptome sequencing. RNA extraction, library preparation, and sequencing were performed according to the manufacturer’s instructions. To identify the DEGs between the two groups, the expression level of each transcript was calculated according to the transcript per million reads method. RSEM was used to quantify the gene abundance. Differential expression analysis was performed using DESeq2 (Liu et al., 2021). Genes with |log2(fold change)|>1 and q<0.05 were considered significantly differentially expressed. In addition, functional enrichment analysis, including using GO and KEGG, was performed to identify significantly enriched DEGs in GO terms and metabolic pathways at a Bonferroni-corrected p-value of 0.05 compared with the whole-transcriptome background. The heatmap and volcano of mRNA sequencing were conducted on ImageGP (https://www.bic.ac.cn/ImageGP) (Chen et al., 2022). GO functional enrichment and KEGG pathway analyses were performed using the ClusterProfiler package in R (Wu et al., 2021).
 
-## ROS detection
+### ROS detection
 
 ROS were stained with a DCFH-DA probe and detected using flow cytometry. Briefly, the probe was diluted in cell culture media at a 1:1000 ratio to yield a final concentration of 10 μmol/L. The culture medium was replaced with 1 mL of DCFH-DA solution. The cells were incubated at 37°C for 20 min. After incubation, the cells were washed thrice with serum-free medium to remove any excess DCFH-DA.
 
 One hour after 6 Gy irradiation, the cells were digested into single-cell suspensions and washed once with PBS. Finally, cells were resuspended in PBS, and the fluorescence intensity was analysed using flow cytometry at excitation and emission wavelengths of 488 and 525 nm, respectively.
 
-## GSH/oxidised GSH ratio
+### GSH/oxidised GSH ratio
 
 Cells (5×105 cells/well) were seeded into 10 cm wells until they reached 80% confluence. One hour after 6 Gy irradiation, the GSH/oxidised GSH (GSSG) ratio was determined using a GSH/GSSG ratio detection assay kit following the manufacturer’s protocols.
 
-## Enzyme activity
+### Enzyme activity
 
 Cells (5×105 cells/well) were seeded into 10 cm wells until reaching 80% confluence before. One hour after irradiation with 6 Gy, crude enzyme extract was prepared. The cells were digested, collected, and centrifuged to remove the supernatant. Next, 1 mL of HPLC-grade water was added to each pellet. The cells were disrupted by ultrasonication (20% power, 3 s on and 10 s off, repeated 25–40 times). The resulting mixture was centrifuged at 8000×g and 4°C for 10 min, and the supernatant was collected as the crude enzyme extract. The enzyme activities of SOD1, SOD2, CAT, and POD were detected using respective enzyme activity kits, according to the manufacturer’s protocols.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are expressed as the mean ± standard deviation (SD), and p-values<0.05 were considered statistically significant in all experiments. Data were analysed using one-way analysis of variance (ANOVA), Spearman’s correlation, and Kaplan-Meier estimates. Statistical analyses were performed using SPSS software (version 20.0). All experiments were performed in triplicate.

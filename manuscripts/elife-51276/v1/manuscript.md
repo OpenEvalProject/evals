@@ -28,9 +28,25 @@ Cultured ECs have traditionally been characterized by assessing their morphologi
 
 ## Results
 
-## Rapid loss of the CNS EC transcriptional signature upon culturing of primary brain ECs
+### Rapid loss of the CNS EC transcriptional signature upon culturing of primary brain ECs
 
 To acquire an unbiased, genome-wide view of the effect of in vitro culture on the transcriptional and chromatin landscapes of CNS ECs, we grew primary cultures of young adult (8–16 week) brain ECs in standard EC culture medium for eight days (see Materials and methods) and then performed RNA-seq and ATAC-seq on the resulting cells. To selectively culture brain ECs, we took advantage of the expression of P-glycoprotein – an efflux pump with broad substrate specificity – by CNS ECs but not by neurons, glia, or pericytes. Following dissociation of brain cells and enrichment for vascular fragments, the mixed culture was treated with puromycin for 2–2.5 days, which kills non-ECs and selectively spares ECs, a widely used method for preparing pure cultures of acutely isolated CNS ECs (Figure 1A; Welser-Alves et al., 2014; Assmann et al., 2017; reviewed in Helms et al., 2016). ECs were cultured on collagen-coated wells for eight days in 5% serum with supplementary growth factors (see Materials and methods). Immunostaining of the resulting EC cultures revealed uniform expression of the pan-EC marker CD31 (PECAM1) across the monolayer (Figure 1—figure supplement 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/51276/elife-51276-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic outline of the isolation, purification, and culture of brain ECs. (B) Scatter plots comparing cross-sample normalized RNA-seq read counts for all protein-coding genes (gray symbols) between acutely isolated adult brain ECs (y-axis; average of two independent samples) and primary brain ECs cultured for 8 days (x-axis; average of six independent samples). The left plot highlights (in red) EC-enriched genes that are expressed at similar levels in adult brain, P7 brain, P7 liver, P7 lung, and P7 kidney ECs. The right plot highlights (in blue) genes associated with the BBB (i.e., that are >2 fold enriched in brain ECs relative to liver, lung, and kidney ECs). The majority of BBB genes show reduced expression in culture. (C) Heatmap depicting log2 transformed transcript abundances from cultured brain ECs, and from acutely isolated P7 and adult brain ECs, and P7 liver, lung, and kidney ECs for 993 tissue-specific EC genes. (D) Principal component analysis (PCA) based on the abundances of all protein-coding transcripts (top), EC-enriched transcripts (center), and pan-EC transcripts (i.e. transcripts common to adult brain, P7 brain, P7 liver, P7 lung, and P7 kidney ECs; bottom). The symbols for each sample represent biological replicates. Arrows indicate cultured EC data points. In the PCA in the bottom panel, the two samples in the upper right were replicates isolated by Method B, and their RNA-seq libraries were generated and sequenced by a different facility compared to the other four samples, which were isolated by method A (see Materials and methods). (E) Transcript abundances for six genes from each of the four indicated categories of transcripts. Labels at the bottom of the figure apply to all panels above.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51276/elife-51276-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Primary brain ECs in culture, immunostained for CD31 (a pan-EC marker) and counterstained with DAPI. Merged image is shown in the right column. Scale bar: 100 um. (B) Genome browser images showing accessible chromatin (ATAC-seq; top) and transcript abundances (RNA-seq; bottom) for the Cd31 (Pecam1) locus. Histograms show aligned read counts. Tracks in blue represent acutely isolated adult brain ECs and tracks in red represent cultured adult brain ECs. Each track represents an independent replicate (two replicates for acutely isolated adult brain ECs and six replicates for cultured adult brain ECs). All eight of the ATAC-seq histograms are at the same vertical scale and all eight of the RNA-seq histograms are at the same vertical scale. Bottom, intron-exon structure, with the arrow indicating the direction of transcription. (C) Heatmap showing pairwise Pearson correlations for RNA-seq TPM among acutely isolated adult brain ECs and cultured adult brain ECs for all protein-coding genes. Data are shown for the individual replicates, which were from four experiments, each with paired replicates: R1+R2 from brain ECs, and R1+R2, R3+R4, and R5+R6 from cultured ECs. (D) Scatter plots comparing cross-sample normalized RNA-seq read counts of all protein-coding genes between acutely isolated adult brain ECs and adult brain ECs cultured for 8 days. Each plot highlights the top 500 genes enriched in an identified cell type cluster from single-cell RNA-seq analysis of acutely isolated P7 brain ECs (Sabbagh et al., 2018). The red arrow in the lower center plot points to a subset of mitotic genes that show enhanced expression in cultured ECs.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51276/elife-51276-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Heatmap depicting log2 transformed transcript abundances from cultured brain ECs, and from acutely isolated P7 and adult brain ECs, and P7 liver, lung, and kidney ECs for 4,557 EC-enriched genes. (B) Abundances are plotted for each replicate for transcripts coding for tight junction proteins and BBB-enriched members of the solute carrier family of transporters. Labels at the bottom of the figure apply to all panels above.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/51276/elife-51276-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Abundances are plotted for each replicate for transcripts coding for the three indicated categories of proteins. Labels at the bottom of the figure apply to all panels above.
 
 We repeated the culture experiment three times, with cells from independent wells in each experiment serving as biological replicates for a total of six replicates for both RNA-seq and ATAC-seq (Figure 1—figure supplement 1B). Comparing the RNA-seq data for all protein-coding genes among the three independent experiments, the Pearson correlation ranged from 0.93 to 0.96 (Figure 1—figure supplement 1C). An analogous comparison between two replicates of acutely isolated brain ECs (purified by FACS from the cerebrum and cerebellum of Tie2-GFP [also known as Tek-GFP] mice) gave a Pearson correlation of 0.93. [The cerebrum EC data is new to this study; the cerebellum EC data were published previously (Wang et al., 2019). For the present study, we combined the two EC data sets (cerebrum and cerebellum) to generate what we call ‘adult brain ECs’.] Comparisons within the paired replicates in the three cultured EC experiments gave a Pearson correlation of 0.99–1.00. In comparing acutely isolated versus cultured brain ECs, 3585 protein-coding transcripts met our criteria for differential expression (see Materials and methods): 1542 with a > 2 fold increase in abundance in acutely isolated ECs and 2043 with a > 2 fold increase in abundance in cultured ECs. Since some of the transcripts in the acutely isolated brain EC sample could have come from contaminating brain parenchymal cells, we restricted our analysis of transcripts enriched in this sample to a set of 1352 transcripts that were enriched >2 fold in GFP+ cells (ECs) over GFP- cells (non-ECs, that is parenchymal cells) (see Materials and methods). Among these 1352 transcripts, 581 exhibited a > 2 fold increase in abundance in acutely isolated ECs compared to cultured ECs. For a list of these genes, see Supplementary file 1.
 
@@ -46,7 +62,7 @@ We further examined the effect of in vitro culture on four categories of transcr
 
 In summary, the broad reduction in the expression of beta-catenin-responsive and BBB genes implies a reduction in beta-catenin signaling and the BBB gene expression program in brain ECs cultured in vitro.
 
-## Changes in accessible chromatin in cultured brain ECs reflect a loss of beta-catenin signaling
+### Changes in accessible chromatin in cultured brain ECs reflect a loss of beta-catenin signaling
 
 The identification of gene expression changes in cultured brain ECs implies corresponding changes in the chromatin landscape. Comparisons of accessible chromatin in acutely isolated versus cultured brain ECs show (1) loss of ATAC-seq peaks near multiple brain EC-specific genes that lose expression in cultured ECs, such as Slco1c1 and Mfsd2a, and (2) gain of ATAC-seq peaks near multiple genes that are induced in cultured ECs, such as Thbs1 and Cyr61 (also known as Ccn1) (Figure 2A; the histograms in the genome browser images represent averages of the independent replicates). PCA of ATAC-seq read density at a consensus set of called ATAC-seq peaks indicates that the accessible chromatin landscapes of acutely isolated adult and P7 brain ECs are as different from cultured brain ECs as the latter is from peripheral ECs (Figure 2B). PCA also indicates that acutely isolated adult and P7 brain ECs have very similar accessible chromatin landscapes. Among 102,016 ATAC-seq peaks identified in the acutely isolated and cultured brain EC datasets, 16,760 were lost and 20,654 were gained as a result of in vitro culture (Figure 2C; Supplementary file 2).
 
@@ -60,9 +76,21 @@ Comparing the abundances of TF transcripts, Figure 2F shows that, relative to ac
 
 Interestingly, transcripts coding for SP5, a direct target and downstream effector of beta-catenin signaling (Weidinger et al., 2005; Fujimura et al., 2007), are up-regulated in cultured ECs, whereas transcripts coding for SP1, a widely expressed TF that recognizes the same SP/KLF motif, are down-regulated (arrows in Figure 2F). Current evidence indicates that SP5 and its close homologue SP8 mediate many of the effects of Wnt3a signaling on neural and mesodermal development during mammalian gastrulation (Dunty et al., 2014; Kennedy et al., 2016). In HEK293T cells and human pluripotent stem cells, SP5 acts as a beta-catenin-inducible transcriptional repressor to inhibit the expression of genes that are activated by SP1 (Fujimura et al., 2007; Huggins et al., 2017), and Huggins and colleagues have proposed that SP5 acts in the termination phase of beta-catenin signaling to repress beta-catenin target genes. Pan-EC TF genes Erg, Fli1, and Ets1 show minimal changes in expression in cultured brain ECs, consistent with the maintenance of general EC markers in culture.
 
-## Stabilization of beta-catenin does not promote a BBB-like state in cultured CNS ECs
+### Stabilization of beta-catenin does not promote a BBB-like state in cultured CNS ECs
 
 The data described thus far support the general inference from co-culture experiments with ECs and astrocytes, pericytes, and/or neurons that signals from the brain parenchyma are required to maintain the BBB state (Helms et al., 2016). More specifically, the data are consistent with mouse genetic experiments showing that a neuronal- and/or glial-derived beta-catenin signal is necessary for BBB development and maintenance in vivo, as summarized in the Introduction. To explore this idea in the context of our short-term culture system, we used a genetic strategy to artificially activate beta-catenin signaling in ECs prior to in vitro culture. The strategy relies on Cre-mediated excision of exon 3 of the beta-catenin gene (Ctnnb1), which encompasses the sites of phosphorylation that lead to beta-catenin ubiquitination and degradation (Figure 3A; Harada et al., 1999; the allele with loxP sites flanking exon 3 is referred to as Ctnnb1flex3). In previous work, Cre-mediated recombination of Ctnnb1flex3 in ECs was induced in vivo using a Pdgfb-CreER transgene and intraperitoneal injection of 4-hydroxytamoxifen (4HT), a procedure that reliably produces ~80% efficient recombination, as determined by the partial conversion of CVO and choroid plexus ECs from a BBB-deficient to a BBB-proficient state (Wang et al., 2019). In the present work, we have used the same mouse line and the same protocol as used for the CVO and choroid plexus conversion experiments, with CNS ECs harvested from Ctnnb1flex3;Pdgfb-CreER;Tie2-GFP mice 10 weeks after 4HT treatment.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/51276/elife-51276-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic outline of the genetic strategy for stabilizing beta-catenin (encoded by Ctnnb1). The Ctnnb1flex3 allele contains loxP sites flanking exon 3. Cre-recombination produces an in-frame deletion of exon 3, and the resulting beta-catenin protein is stabilized and activates transcription in conjunction with LEF/TCF proteins. (B) Analysis of Ctnnb1 transcripts that include or omit exon 3. The six replicates of wild-type (WT) cultured adult brain ECs produced no RNA-seq reads that join exons 2+4 whereas each of the four replicates of Ctnnb1flex3/+;Pdgfb-CreER;Tie2-GFP cultured adult brain ECs (in which exon 3 is deleted by Cre-mediated recombination) produced several hundred RNA-seq reads that join exons 2+4. (C) Scatter plots comparing cross-sample normalized RNA-seq read counts for protein-coding genes between beta-catenin stabilized and WT primary brain ECs cultured for 8 days. The left plot highlights (in red) EC-enriched genes that are expressed at similar levels in brain, liver, lung, and kidney EC subtypes. The right plot highlights (in blue) genes associated with the blood-brain barrier (BBB). Gene sets are as described for Figure 1B. Stabilizing beta-catenin does not increase the expression of BBB genes in cultured ECs. (D) Transcript abundances for seven genes from the ‘Regulated by beta-catenin signaling’ category. (E) PCA of protein-coding transcript abundances (RNA-seq; top) and PCA of ATAC-seq read density at all called ATAC-seq peaks (bottom) from independent biological replicates of WT and beta-catenin stabilized cultured adult brain ECs, acutely isolated adult and P7 brain ECs, and P7 liver, lung, and kidney ECs. The cyan-outlined red circles correspond to the beta-catenin stabilized cultured adult brain EC samples, and are indicated by cyan arrows. Black arrows point to cultured brain ECs without stabilized beta-catenin.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51276/elife-51276-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Analysis of Ctnnb1 transcripts that include or omit exon 3 from FACS-purified anterior and posterior pituitary ECs from WT control mice (red; four RNA-seq data sets) or following Pdgfb-CreER mediated excision of Ctnnb1 exon 3 from the floxed allele (blue; four RNA-seq data sets). The RNA-seq data come from Wang et al. (2019). The four WT data sets (two each from anterior and posterior pituitary ECs) showed no RNA-seq reads that join exons 2+4, whereas the four Ctnnb1flex3/+;Pdgfb-CreER;Tie2-GFP data sets (two each from anterior and posterior pituitary ECs) produced a mean of ~50 RNA-seq reads that join exons 2+4 (representing exon 3 deletion by Cre-mediated recombination). The ~50 exon 2+4 reads correspond to ~25% as many reads as spanned exons 2+3; the ratios for each sample are shown in the lower left panel. One of the four Ctnnb1flex3/+;Pdgfb-CreER;Tie2-GFP samples showed no exon 2+4 reads.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/51276/elife-51276-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Genome browser images showing ATAC-seq reads (top) and RNA-seq reads (bottom) for the same set of genes shown in Figure 2A for freshly isolated adult brain ECs, WT cultured adult brain ECs, and beta-catenin stabilized and cultured adult brain ECs. Read counts are averaged over the independent replicates. Arrows indicate ATAC-seq peaks that correlate with differential gene expression.
 
 A comparison of RNA-seq read counts from brain ECs cultured from wild-type (WT) control (either C57BL/6J or Ctnnb1flex3/+;Tie2-GFP) injected with 100 ug 4HT at P10 and Ctnnb1flex3/+;Pdgfb-CreER;Tie2-GFP mice injected with 100 ug 4HT at P10 reveals reads spanning Ctnnb1 exons 2+4 only in the genotype carrying the Pdgfb-CreER and Ctnnb1flex3 alleles, implying that cultured brain ECs contain the exon 3 deleted transcripts that code for stabilized beta-catenin (Figure 3A and B). Similar ratios of Ctnnb1 transcripts including or omitting exon 3 were observed in RNA-seq data sets obtained by Wang et al. (2019) from FACS-purified ECs from anterior and posterior pituitaries from control and Ctnnb1flex3/+;Pdgfb-CreER;Tie2-GFP mice (Figure 3—figure supplement 1).
 
@@ -84,11 +112,119 @@ Finally, the present study serves as a demonstration of the utility of applying 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ctnnb1flex3</td>
+      <td>DOI: 10.1093/emboj/18.21.5931</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tie2-Cre (Tek-Cre)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 008863; RRID:IMSR_JAX:008863</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tie2-GFP (Tek-GFP)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 003658; RRID:IMSR_JAX:003658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pdgfb-CreER</td>
+      <td>DOI: 10.1002/dvg.20367</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Tn5 transposase</td>
+      <td>Illumina</td>
+      <td>Cat no: FC-121–1030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Worthington Papain Dissociation Kit</td>
+      <td>Worthington Biochemical Corporation</td>
+      <td>Cat no: LK003160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-hydroxytamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat no: H7904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Salmon</td>
+      <td>DOI: 10.1038/nmeth.4197</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>deepTools</td>
+      <td>DOI: 10.1093/nar/gkw257</td>
+      <td>RRID:SCR_016366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>tximport</td>
+      <td>DOI: 10.12688/f1000research.7563.2</td>
+      <td>RRID:SCR_016752</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EBSeq</td>
+      <td>DOI: 10.1093/bioinformatics/btv193</td>
+      <td>RRID:SCR_003526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2</td>
+      <td>DOI: 10.1186/gb-2008-9-9-r137</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DiffBind</td>
+      <td>DOI: 10.1038/nature10730</td>
+      <td>RRID:SCR_012918</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 The following mouse alleles were used: Ctnnb1flex3 (Harada et al., 1999); Tie2-GFP (also known as Tek-GFP; Motoike et al., 2000; JAX 003658); Pdgfb-CreER (Claxton et al., 2008); HprtLSL-GFP (Wu et al., 2014); Tie2-Cre (also known as Tek-Cre; Kisanuki et al., 2001; JAX 008863); and C57BL/6J (JAX 000664). For EC culture experiments, the mice consisted of control WT mice (either C57BL/6J or Ctnnb1flex3/+;Tie2-GFP that had received 100 ug 4HT at P10) and EC-specific beta-catenin stabilized mice (Ctnnb1flex3/+;Pdgfb-CreER;Tie2-GFP that had received 100 ug 4HT at P10). To control for the possibility of sex-dependent differences, male mice were used for all experiments. All mice were housed and handled according to the approved Institutional Animal Care and Use Committee (IACUC) protocol MO16M367 of the Johns Hopkins Medical Institutions.
 
-## Primary brain EC culture
+### Primary brain EC culture
 
 Primary brain ECs were isolated and purified by either method A or method B, as described below. Both protocols take advantage of the specific expression of the multidrug efflux pump P-glycoprotein in brain ECs, which allows for positive selection using puromycin.
 
@@ -98,31 +234,31 @@ Method B was performed as previously described with slight modifications (Assman
 
 Method A was used to generate RNA-seq WT and beta-catenin stabilized cultured brain EC replicates one and two as well as ATAC-seq WT cultured brain EC replicates one and two. Control cultured ECs processed by Method A were from C57BL/6J mice. Method B was used to generate RNA-seq WT cultured brain EC replicates three to six, RNA-seq beta-catenin stabilized cultured brain EC replicates three and four, ATAC-seq WT cultured brain EC replicates three to six, and ATAC-seq beta-catenin stabilized cultured brain EC replicates one and two. Control cultured ECs processed by Method B were from Ctnnb1flex3/+;Tie2-GFP mice.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 ECs grown on coverslips were washed once with PBS and then fixed in 4% paraformaldehyde (PFA) for 15 min at room temperature. The following reagents were used: DAPI and rat anti-CD31 (1:300; 553370, BD BioSciences, San Jose, CA). Cells were incubated overnight with primary antibody diluted in 1x PBSTC (1x PBS + 1% Triton X-100 + 0.1 mM CaCl2) + 10% normal goat serum (NGS). Incubation and washing steps were performed at 4°C. Cells were washed at least three times with 1x PBSTC, and subsequently incubated overnight with a secondary antibody plus DAPI diluted in 1x PBSTC +10% NGS. Because a primary antibody raised in rat was used, secondary antibodies were additionally incubated with 1% normal mouse serum (NMS) as a blocking agent. The next day, cells were washed at least three times with 1x PBSTC, and mounted on a slide using Fluoromount G (EM Sciences 17984–25). Cells were imaged using a Zeiss LSM700 confocal microscope and processed with ImageJ.
 
-## 4HT preparation and administration
+### 4HT preparation and administration
 
 Solid 4HT (Sigma-Aldrich H7904) was dissolved at 20 mg/ml in ethanol by extensive vortexing. Sunflower seed oil (Sigma-Aldrich S5007) was added to dilute the 4HT to 2 mg/ml and aliquots were stored at −80°C. Thawed aliquots were diluted with Sunflower seed oil to a final concentration of 1 mg/ml 4HT. All injections were performed intraperitoneally.
 
-## Acute isolation of adult brain ECs
+### Acute isolation of adult brain ECs
 
 Viable adult brain ECs were isolated from homozygous Tie2-GFP mice using the Worthington Papain Dissociation System (LK003160, Worthington Biochemical Corporation, Lakewood, NJ) and a MoFlo XDP Sorter (Beckman Coulter, Brea, CA) as previously described (Sabbagh et al., 2018), with propidium iodide negative cells considered as viable. To remove myelin from the dissociated brain, the suspension was mixed with 30% BSA solution (1:1 vol) and centrifuged at 1120 x g for 10 min at room temperature.
 
-## Sample processing for RNA-seq and ATAC-seq
+### Sample processing for RNA-seq and ATAC-seq
 
 For acutely isolated ECs, RNA was extracted from GFP-positive and GFP-negative cells that were FACS sorted directly into QIAGEN Buffer RLT Plus and then processed using the RNeasy Micro Plus kit (74034, QIAGEN, Venlo, Netherlands). For cultured ECs, RNA was extracted by adding QIAGEN Buffer RLT Plus directly into the well followed by extraction using the RNeasy Micro Plus kit. For ATAC-seq, ~50,000 GFP-positive FACS-sorted cells or trypsinized cultured ECs were gently centrifuged and then resuspended in ice-cold lysis buffer (0.25 M sucrose, 25 mM KCl, 5 mM MgCl2, 20 mM Tricine-KOH, 0.1% Igepal CA-630) and immediately centrifuged at 500 x g for 10 min at 4°C to prepare nuclei. The resulting nuclear pellet was resuspended in a 50 ul reaction volume in Tn5 transposase and transposase reaction buffer (FC-121–1030, Illumina Inc, San Diego, CA), and the tagmentation reaction was incubated at 37°C for 30 min.
 
-## Library preparation and sequencing
+### Library preparation and sequencing
 
 Libraries for RNA-seq and ATAC-seq were prepared as previously described (Buenrostro et al., 2015; Sabbagh et al., 2018). Adult brain EC RNA-seq replicates were single-end sequenced for 75 cycles on a NextSeq500 (Illumina). WT cultured brain EC RNA-seq libraries for replicates one, two, five, and six and beta-catenin stabilized brain EC RNA-seq libraries for all four replicates were paired-end sequenced for 36 cycles on a NextSeq500. WT cultured brain EC RNA-seq libraries for replicates three and four were prepared by Omega Bioservices (Georgia) and paired-end sequenced for 150 cycles. Tagmented DNA was purified using QIAGEN MinElute Gel Extraction kit (28604, Qiagen). ATAC-seq libraries were PCR amplified for 11 cycles. Agencourt AMPure XP beads (A63880, Beckman Coulter) were used to purify ATAC-seq libraries, which were then paired-end sequenced for 36 cycles on a NextSeq500 (Illumina). Sequencing libraries that contained overrepresented adaptor sequences were trimmed using Trim Galore (https://github.com/FelixKrueger/TrimGalore).
 
-## Data analysis
+### Data analysis
 
 Most data analyses were performed as previously described (Sabbagh et al., 2018). For basic data processing, exploration, and visualization, we used deepTools (Ramírez et al., 2016), the tidyverse collection of R packages (Wickham, 2017), ggplot2 (Wickham, 2009), and pheatmap (Kolde, 2015).
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 Salmon version 0.14.0 (Patro et al., 2017) was used to quantify expression of transcripts from RNA-seq experiments using GENCODE release M21 (salmon quant -l A –validateMappings –mimicStrictBT2 --rangeFactorizationBins 4 --incompatPrior 0.0 --useVBOpt --seqBias --gcBias --posBias --biasSpeedSamp 10). To visualize RNA-seq data on an IGV browser (Robinson et al., 2011; Thorvaldsdóttir et al., 2013), HISAT2 version 2.1.0 (Kim et al., 2015) was used to generate alignment bam files (hisat2 --dta) and then deepTools was used to generate bigwig files (bamCoverage -bs 1 --normalizeUsing CPM). To convert transcript-level abundances to the gene-level for further downstream analyses, we used tximport version 1.12.3 (Soneson et al., 2015).
 
@@ -130,6 +266,6 @@ Differentially expressed genes were identified using EBSeq version 1.24.0 (Leng 
 
 As described under ‘Library preparation and sequencing’, RNA samples were sequenced with paired-end 150 nt, single-end 75 nt, and paired-end 36 nt Illumina protocols. To test whether these different RNA-seq protocols affected genome alignment – and, therefore, differential expression analysis – we used the FASTX-Toolkit to trim the raw reads from one of the paired-end 150 nt samples to create two single-end 75 nt datasets, and a paired-end 36 nt data set (fastx_trimmer -Q 33 l -z). We then compared Salmon (version 0.14.0) quantification of gene expression from (1) the original 150 nt paired-end reads, (2) the trimmed 75 nt reads from one mate from the original pair, (2) the trimmed 75 nt reads of the other mate from each original pair, and (4) the trimmed 36 nt paired-end reads. Correlation coefficients for each of the four pair-wise comparisons were calculated, and the results show all four data sets were highly correlated with Pearson’s r ranging from 0.994 to 0.998.
 
-## ATAC-seq data analysis
+### ATAC-seq data analysis
 
 ATAC-seq data were aligned to the GRCm38 genome using HISAT2 version 2.1.0 (hisat2 -t -X 2000 --no-mixed --no-discordant) and then duplicate reads were removed (picard MarkDuplicates). Peaks were called using MACS2 version 2.1.2 (callpeak -f BAM --nomodel --keep-dup all --shift −100 --extsize 200) (Zhang et al., 2008). Peaks were then filtered for fold-change >2 and -log(qvalue)>2. deepTools was used to visualize ATAC-seq peaks on the browser (bamCoverage -bs 1 –extendReads --ignoreDuplicates --normalizeUsing CPM). To identify differential ATAC-seq peaks between acutely isolated and cultured adult brain ECs, DiffBind version 2.12.0 was used (Stark and Brown, 2011; Ross-Innes et al., 2012) with EdgeR (Robinson et al., 2010). For the comparison, DiffBind was used to develop a set of consensus peaks between replicates using the requirement that peaks must be in a minimum of two replicates (minOverlap = 2). To retrieve a set of high-confidence, cell type-enriched peaks, we filtered for peaks with an absolute fold difference >2 and FDR < 0.05. Principal component analysis was performed on ‘regularized’ log-transformed data using the DESeq2 rlog and plotPCA function. To identify transcription factor DNA binding motifs enriched in ATAC-seq peaks, the HOMER suite of tools was used for motif discovery (Heinz et al., 2010), in particular, findMotifsGenome.pl -size given. AnnotatePeaks.pl -m -size 1000 -hist 5 was used to generate histograms of enriched motifs.

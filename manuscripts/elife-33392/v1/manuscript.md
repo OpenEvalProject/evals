@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.33392.001 Motor contagions refer to implicit effects on one's actions induced by observed actions. Motor contagions are believed to be induced simply by action observation and cause an observer's action to become similar to the action observed. In contrast, here we report a new motor contagion that is induced only when the observation is accompanied by prediction errors - differences between actions one observes and those he/she predicts or expects. In two experiments, one on whole-body baseball pitching and another on simple arm reaching, we show that the observation of the same action induces distinct motor contagions, depending on whether prediction errors are present or not. In the absence of prediction errors, as in previous reports, participants' actions changed to become similar to the observed action, while in the presence of prediction errors, their actions changed to diverge away from it, suggesting distinct effects of action observation and action prediction on human actions.
+Motor contagions refer to implicit effects on one's actions induced by observed actions. Motor contagions are believed to be induced simply by action observation and cause an observer's action to become similar to the action observed. In contrast, here we report a new motor contagion that is induced only when the observation is accompanied by prediction errors - differences between actions one observes and those he/she predicts or expects. In two experiments, one on whole-body baseball pitching and another on simple arm reaching, we show that the observation of the same action induces distinct motor contagions, depending on whether prediction errors are present or not. In the absence of prediction errors, as in previous reports, participants' actions changed to become similar to the observed action, while in the presence of prediction errors, their actions changed to diverge away from it, suggesting distinct effects of action observation and action prediction on human actions.
 
 ## Introduction
 
@@ -25,7 +25,7 @@ Our motor behaviors are shaped not just by physical interactions (Shergill et a
 
 ## Results
 
-## Experiment-1
+### Experiment-1
 
 Thirty varsity baseball players participated in our Experiment-1. The sample size was determined by a power analysis (see Materials and methods). The participants were randomly assigned to one of three groups (n = 10 in each): No prediction error (nPE) group, Prediction error (PE) group, and Control (CON) group. The participant’s baseball experience was balanced across the three groups (F(2,27)=1.431, p=0.257, ηp2=0.096). The participants in the nPE and PE groups performed five throwing sessions (Figure 1A) that were interspersed with four observation sessions (Figure 1B,C). The participants in the CON group performed only the throwing sessions. Instead of the observation sessions, they took a break in between the throwing sessions for a time period equivalent to the length of the observation sessions.
 
@@ -61,11 +61,19 @@ In addition, the effects of observed actions on the participants’ actions emer
 
 Together, these results clearly show that the observation of a same action can lead to distinct motor contagions depending on whether the observation takes place in the presence or absence of prediction errors.
 
-## Experiment-2
+### Experiment-2
 
 Next, to check whether this prediction error induced contagion is specific to sports experts, and to verify whether it can also be observed in simple everyday movement tasks, we conducted a second follow-up experiment in which we used a similar experimental design to before but tested average adult participants in an arm reaching task (see Materials and methods).
 
 Thirty right-handed averaged male participants were randomly assigned to one of three groups (n = 10 in each): nPE, PE, and CON groups. The participants in the nPE and PE groups performed five reaching sessions and four observation sessions (Figure 4A). The participants in the CON group performed only the reaching sessions.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/33392/elife-33392-fig4-v1.jpg)
+
+**Figure 4.:** (A) In the reaching task, the participants made reaching movements to touch the center line (among the three vertical lines) on a touch screen with their index fingers. They wore ‘occlusion’ goggles that turned opaque when the participant started to reach. This prevented them from seeing where their index finger touched the screen. In the observation task, with their occlusion goggles open, the participants were asked to observe the video of reaches made by an actor and report where the actor touched the screen. (B) Changes in the participants’ touch locations across the throwing sessions. The participant-averaged deviations from the center line along the x-axis were plotted by flipping the data from the left observing participants, such that the directions of the actor’s reaches observed by all participants in both the nPE and PE groups were in the positive ordinate (indicated by gray arrow). The data from the CON, nPE, and PE groups are plotted in black, blue, and red, respectively. The touch locations by the nPE group progressively deviated towards where the actor touched most frequently on the screen. In contrast, the touch locations by the PE group progressively deviated away from where the actor touched most frequently on the screen. The touch locations by the CON group did not change across sessions. Error bars indicate standard error.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33392/elife-33392-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The x-axis position distributions of the actor’s touch locations for the left observing participants (gray bars in the upper panel) and the right observing participants (black bars in the lower panel) across the observation sessions in Experiment-2. The three gray dashed lines indicate the positions of the left, center, and right vertical lines presented on the touch screen, respectively. The 20 touch locations are binned into 10 bins of 5 mm width between the left and right vertical lines. The order of presentation of video clips during the observation task was randomized among sessions.
 
 In the reaching sessions, the participants made right arm reaching movements toward a touch screen to touch the center line, among three vertical lines presented on the screen, with their index fingers (Figure 4A). They again wore occlusion goggles which, similar to the throwing experiment, became opaque as soon as their arm movements started, preventing them from observing where their finger touched the screen. Each reaching session included ten reaches.
 
@@ -91,29 +99,29 @@ In conclusion, our results clearly show that action observation and action predi
 
 ## Materials and methods
 
-## Participants
+### Participants
 
-## Experiment-1
+#### Experiment-1
 
 Thirty right-handed male varsity baseball players (20.33 ± 1.62 (mean ± s.d.) years old) with normal or corrected vision, took part in Experiment-1. Their years of experience in playing baseball were 11.43 ± 1.98 (mean ± s.d.). They were randomly assigned to one of three groups of ten participants each: the No prediction error (nPE) group, the Prediction error (PE) group, and the Control (CON) group. All participants gave informed consent before the experiment and the experiment was approved by the ethics committee in National Institute of Fitness and Sports in Kanoya, and conducted according to the Declaration of Helsinki.
 
 The sample size was determined by a power analysis using G*power (Faul et al., 2007) (Repeated measure ANOVA within-between interaction, α = 0.05, β = 0.80, ηp2=0.06 (medium value), correlation among repeated measures = 0.5, non-sphericity correction = 1). The power analysis provides the sample size of n = 9 for each group. We determined our sample size of n = 10 as a more conservative choice with respect to a type-1 error.
 
-## Experiment-2
+#### Experiment-2
 
 Thirty male participants (22.43 ± 1.79 (mean ± s.d.) years old) with normal or corrected vision, took part in this study. The sample size was determined based on Experiment-1 because the experimental design was same (in terms of the numbers of participant groups, motor task sessions, and observation sessions). All participants were right-handed (laterality quotient, 87.59 ± 17.60 (mean ± s.d.)) according to the Edinburgh Inventory (Oldfield, 1971). The participants were randomly assigned to one of three groups (n = 10 in each): nPE, PE, and CON groups. This experiment was conducted according to the principles in the Declaration of Helsinki. All participants gave informed consent before the experiment, and the experiments were approved by the ethics committee of the National Institute of Information and Communications Technology.
 
-## Task and apparatus
+### Task and apparatus
 
-## Task and apparatus in Experiment-1
+#### Task and apparatus in Experiment-1
 
 All experiments were performed in an indoor baseball facility. The participants in the nPE and PE groups performed in alternating throwing (five sessions), and observation (four sessions) sessions (Figure 1C), while the participants in the CON group performed only five throwing sessions.
 
-## Throwing sessions
+##### Throwing sessions
 
 In the throwing sessions, participants in all the groups were required to throw balls aimed at the center of a target placed on the ‘home plate’ 10 m away. The target was a ‘strike zone’ sized square (0.9 × 0.9 m) and its center was indicated by a cross (Figure 1A). The participants wore liquid-crystal shutter goggles (PLATO, Translucent Technologies, Toronto) during the throwing sessions. The goggles allowed the participants to see the target when taking aim but occluded their vision for 3 s, starting immediately after they released the ball from their hand for each throw. The timing of ball release was detected by an infrared transmitter-sensor system (AO-S1, Applied Office, Tokyo), which sends a TTL signal to the goggles when the participants’ hand intersects the infrared beam between the transmitter and sensor (Figure 1A). The position of the infrared transmitter-sensor setup was adjusted for each participant such that the goggle was shut at the timing of their ball release. This system ensures that the participants do not see their ball flight trajectory and the hit location on the target, preventing them from using visual feedback to correct subsequent throws. Each throwing session included ten throws. The ball hit locations were recorded by a digital video camera at 60 fps (Sony HDR-CX560).
 
-## Observation sessions
+##### Observation sessions
 
 In the observation sessions, the participants (in the nPE and PE groups) sat on a chair 15 m from a large monitor (2.2 × 4.0 m) and watched a life-size video of a right-handed baseball pitcher throwing a ball. Unknown to the participants, the pitcher in the video was asked to aim for various areas on the target indicated by an experimenter (see next subsection on observation session videos), and we pre-selected videos to each participant. For five participants in each group, the spatial distribution of throws by the pitcher in the videos was biased to the upper right corner of the target (see Figure 2B): 12 balls (60 %) in #3; two balls (10 %) in each of #2, #5, #6; one ball (5 %) in each of #1, #9. For the other five participants in each group, the distribution of throws in the videos were biased to the lower left corner of the target (see right panel in Figure 2B): 12 balls in #7; two balls in each of #4, #5, #8; one ball in each of #1, #9.
 
@@ -121,7 +129,7 @@ Each observation session included 20 video clips and lasted about three minutes.
 
 The prediction errors during the observation session were manipulated by a difference of instructions between the nPE and PE groups, provided before each observation session. The participants in the PE group were told that ‘the pitcher in the video is aiming for the center of the target’. This instruction was expected to generate prediction errors between what the participants expect and what they see in the video. On the other hand, the participants in the nPE group were told that 'the pitcher in the video is aiming for various grid numbers on targets. These numbers were provided by the experimenter and we display only those trials in which he was successful in hitting the number he aimed for’. This instruction was expected to prevent the participants from expecting a throw outcome, and hence attenuate prediction errors. The participants in the CON group did not watch a video (they did not have observation sessions), but instead sat on the chair and took a break for three minutes, equivalent to the length of the observation session. The behavior of the CON group was used to check for possible drifts in the participants’ throws because of the persistent lack of feedback in the throwing task.
 
-## Observation session videos
+##### Observation session videos
 
 To create the video clips for the observation sessions, we recorded movies of a pitcher throwing balls toward the target 10 m away. We used a video camera (Sony HDR-CX560, recoding at 60 fps). The camera was placed diagonally (relative to the pitcher–target line) behind the pitcher, 3 m distance away, and recorded the pitcher’s kinematics.
 
@@ -129,15 +137,15 @@ The pitcher was asked to aim his throws to each of the nine areas (#1 to #9) on 
 
 Next, we edited the selected video clips with Adobe Premiere Pro CS6. Each video clip was temporally clipped from between 2000 ms before ball release and the moment of the target impact. For 3000 ms after the target impact, a grid showing the nine numbered grid areas (Figure 1B) was superimposed on the target area in the video. The order of presentation of video clips during observation task was randomized among sessions and participants.
 
-## Task and apparatus in Experiment-2
+#### Task and apparatus in Experiment-2
 
 As in Experiment-1, the participants in the nPE and PE groups performed in alternating reaching (five sessions) and four observation sessions (Figure 4), while the participants in the CON group performed only five reaching sessions.
 
-## Reaching sessions
+##### Reaching sessions
 
 In the reaching sessions, the participants sat on a chair facing a 19 inch LCD screen (ET1915L-8CJA-1-BG-G, Tyco Electronics) placed 45 cm away from their eyes. The participants in all the groups were required to make a reaching movement and touch the center line among three 8 cm vertical lines presented on the screen with their right index finger. The three lines were positioned at the center of the screen and separated by 2.5 cm (Figure 4A). As in Experiment-1, the participants wore liquid-crystal shutter goggles (T.K.K.2275, Takei Scientific Instruments, Niigata) during the reaching sessions. The shutter was opened when the participants pressed a round button (6.5 mm diameter). The participants were required to press the center of the button with their right index finger. The button was positioned 15 cm ahead of the eye in the midsagittal plane. The goggles allowed the participants to see the target when taking aim but occluded their vision immediately after they released the button to reach for the screen. This system ensured that the participants do not see their touch location on the screen, preventing them from using visual feedback to correct subsequent reaches. Each reaching session included ten reaches. Their touch locations were detected with a touch sensor.
 
-## Observation sessions
+##### Observation sessions
 
 In the observation sessions, the participants (in the nPE and PE groups) watched a video of an actor making a reaching movement, which was presented on the same screen used in the reaching session. The actor in the video wore the shutter goggles and made a reaching movement toward the three vertical lines on the screen as the participants performed in the reaching sessions. Unknown to the participants, the actor in the video was asked to aim for various areas between the right and left vertical lines on the screen. We pre-selected videos for each participant based on the reached areas, which are 10 segmented target areas between the right and left vertical lines with intervals of 5 mm (#1 to #10, see Figure 4—figure supplement 1). For five participants in each group, the spatial distributions of the actor’s reaches in the videos were biased to the right area between the right and center vertical lines (Figure 4—figure supplement 1): eight reaches (40 %) in #8; three reaches (15 %) in each of #6, #7; two reaches (10 %) in each of #5, #6, #10. For the other five participants in each group, the distributions of throws in the videos were biased to the left area between the left and center vertical lines (see Figure 4—figure supplement 1): eight reaches (40 %) in #3; three reaches (15 %) in each of #2, #4; two reaches (10 %) in each of #1, #5, #6.
 
@@ -145,7 +153,7 @@ Each observation session included 20 video clips and lasted about two minutes. 
 
 The prediction errors during the observation session were manipulated by a difference of instructions between the nPE and PE groups, provided before each observation session. The participants in the nPE group were told that ‘the actor in the video is aiming for the right (or left) area between the center and right (or left) lines’. This instruction was expected to make the participants expect the actor to touch the right (or left) area, and thus attenuate a difference between the actor’s touch location expected by the participants and the actual location observed by them, leading to suppression in prediction errors. On the other hand, the participants in the PE group were told that ‘the actor in the video is aiming for the center line among the three vertical lines’. This instruction was expected to generate prediction errors between what the participants expect and what they observe in the video. Specifically, we expected the right and left observation participants in the PE group to experience prediction errors, directed towards the right and left, respectively. The participants in the CON group did not watch a video (they did not have observation sessions) but instead sat on the chair and took a break for two minutes, equivalent to the length of the observation session.
 
-## Observation session videos
+##### Observation session videos
 
 To create the video clips for the observation sessions in Experiment-2, we recorded movies of an actor making reaching movements toward the screen wearing shutter goggles. We used a video camera (Casio EX-100F, recoding at 30 fps). The camera was placed diagonally right behind the actor, 50 cm distance away, and recorded the actor’s kinematics.
 
@@ -153,24 +161,24 @@ The actor was asked to make reaching movements aiming for various locations betw
 
 Next, we edited the selected video clips with Adobe Premiere Pro CS6. Each video clip was temporally clipped from ~1000 ms before button release to ~1000 ms after the moment of the screen touch. Immediately after the screen touch, the three vertical lines (Figure 4A) disappeared from the screen in the video. The order of presentation of video clips during observation task was randomized among sessions.
 
-## Data analysis
+### Data analysis
 
-## Hit location analysis in Experiment-1
+#### Hit location analysis in Experiment-1
 
 The hit locations recorded by the camera were digitized using Dartfish (Dartfish, Tokyo, Japan). The hit locations of each throw were first measured in the x-y coordinates where the center of the target was taken as the origin. The throwing task performance in each session was evaluated as the distance of hit location from the target center, averaged over the ten throws for each participant. This value was then averaged across the participants and plotted in Figure 2A,B. For statistical analysis, the hit locations by all three groups were analyzed along the diagonals (green arrows in Figure 2A), parallel and orthogonal to the line joining the corners of the target where the observed throws predominantly hit (#3 or #7). To pool the participants in one group, the hit locations of the throws by the participants who viewed the pitcher aiming for the lower left corner of the target were flipped along the parallel and orthogonal diagonals about the data in the first throwing session. Note that the hit locations in the first throwing session need not be corrected because these represent the default performance by the participant, before the first observation session. To examine spatial biases in the hit location, we separately performed two-way ANOVAs (three groups × five throwing sessions) on the hit locations of the participants’ throws along each of the parallel and orthogonal diagonal. Post hoc pairwise comparisons were performed using Tukey’s method. To examine within-participant variability changes in the hit location across the five throwing sessions, we separately performed Friedman’s test on variances of the hit locations within each session (non-normal data) along each of the parallel and orthogonal diagonals for each group. Post hoc pairwise comparisons were performed using the Wilcoxon signed rank test.
 
-## Observation performance analysis in Experiment-1
+#### Observation performance analysis in Experiment-1
 
 In the observation session, participants in the nPE and PE groups were required to answer where the balls thrown by the pitchers hit the target by orally reporting one of nine possible areas in each trial. The percentage of correct answers in each observation session was calculated for each participant.
 
-## Touch location analysis in Experiment-2
+#### Touch location analysis in Experiment-2
 
 The touch locations of each reach were first measured in the x-y coordinates with the center of the screen as the origin. The reaching task performance in each session was evaluated as the distance of the touch location from the center vertical line along the x-axis, averaged over the ten reaches by each participant. This value was then averaged across the participants and plotted in Figure 4B. For statistical analysis, to pool the participants in one group, the touch locations of the reaches by the participants who viewed the actor aiming for the left area were flipped along the x-axis about the data in the first reaching session, similar to Experiment-1. We separately performed two-way ANOVAs (three groups × five throwing sessions) on the touch locations of the participants’ reaches. We separately performed Friedman’s test on variances of the touch locations within each session (non-normal data) for each group.
 
-## Observation performance analysis in Experiment-2
+#### Observation performance analysis in Experiment-2
 
 In the observation session, participants in the nPE and PE groups were required to answer where the actor touched the screen by writing down one of three possible answers in each trial. The percentage of correct answers in each observation session was calculated for each participant.
 
-## Data availability
+### Data availability
 
 Data to generate Figures 2A, B, 3 and 4B are available from the Dryad Digital Repository: http://datadryad.org/review?doi=doi:10.5061/dryad.3563k

@@ -42,7 +42,7 @@ Therefore, the goal of the present study is to explore the regional organization
 
 Seventeen distinct subdivisions were cyto-/myelo- and receptor architectonically mapped within the macaque IPS and at its junction with the POS. The present multimodal study not only confirms the existence of some previously described areas, but also enables the definition of novel subdivisions within area MIP (i.e. dorsal and ventral parts of MIP), as well as within area PEip (i.e. external and internal parts of PEip). Each area has its own characteristic receptor expression pattern, and the similarities and dissimilarities of their receptor fingerprints enabled the segregation of IPS areas into to three functionally relevant groups.
 
-## Topography of the cortical areas in or near the intraparietal sulcus
+### Topography of the cortical areas in or near the intraparietal sulcus
 
 Eight cortical areas (V3d, V3A, PIP, LOP, V4d, V6, V6Ad, V6Av) were found at the junction of IPS with the POS (Figures 2 and 3). Area V3d lies on the annectant gyrus (Figure 2), which is laterally and medially bordered by the fundus of POS. PIP lies in the POS sulcal fundus rostro-medial to the annectant gyrus between V3d and the rostral parts of V6/V6Av. Areas V6, V6Av, and V6Ad are found on the rostral bank of the POS. V3A lies in the sulcal fundus lateral to the annectant gyrus at the same rostro-caudal level as V3d. V4d is situated on the posterior wall of prelunate gyrus. On the lateral bank of IPS, LOP is located between the rostral parts of V3A/V4d and LIPv.
 
@@ -58,7 +58,7 @@ In addition, we identified nine architectonically distinct areas completely buri
 
 Based on these findings, we created a 2D flat map with detailed information concerning the location and extent of each cyto- and receptor architectonically identified IPS area. The 2D framework was created by unfolding the intraparietal sulcus, marking the position of its fundus and of the annectant gyrus. The parcellation of each brain was mapped in such a way, that the position of an areal border could be traced relative to the macroscopical landmarks, that is fundi and sulci. Thus, the information concerning the location of architectonic areas could be conveniently displayed in a simple visualization format. As an example, Figure 3 shows the 2D cytoarchitectonic parcellation in both hemispheres of the macaque brain DP1.
 
-## Cyto- and myeloarchitecture of IPS areas
+### Cyto- and myeloarchitecture of IPS areas
 
 Nomenclature and criteria for cytoarchitectonic mapping were based on previous studies (Seltzer and Pandya, 1986; Pandya and Seltzer, 1982; Seltzer and Pandya, 1980; Preuss and Goldman-Rakic, 1991; Lewis and Van Essen, 2000a; Bakola et al., 2017; Luppino et al., 2005). The cytoarchitectonic features of most areas found in the present study are comparable to those of previous studies. Figure 4 shows the laminar pattern of these areas in the present study. Since we concur with the cytoarchitectonic descriptions of these areas in the literature, we will add here a detailed description only of the cytoarchitecture of the newly defined areas, that is MIPd, MIPv, PEipe and PEipi.
 
@@ -72,11 +72,35 @@ Areas MIPd and MIPv almost completely occupy the posterior of medial wall of the
 
 **Figure 5.:** (A) The black box on the overview of a coronal section processed for cell bodies indicates the location of the photomicrograph shown on the right. (B) The cortical ribbon was covered by traverses (from which GLI profiles were extracted) running perpendicular to the cortical layers; color changes between yellow and pink after every 10th traverse (left). Automatic labeling of the positions of the statistically defined borders (at position 32, 79 and 161) (middle). The position of borders of areas MIPd and MIPv as defined by visual inspection are indicated by white arrows in the corresponding image of the cell body stained section (right). (C) Exemplary Mahalanobis distance function depicting the Mahalanobis distances between neighboring blocks of 24 profiles; significant maxima occurred at profile positions 32, 79 and 161, which identify the borders of areas MIPd and MIPv (top). The significant maxima of varying block sizes (ranging from 10 to 24), indicate a consistently occurring border between both areas at profile location 79 (bottom). (D) High-resolution photomicrographs of cytoarchitectonic subdivisions MIPd and MIPv. Scale bar 200 μm. Roman numerals indicate cytoarchitectonic layers. Abbreviations: MIPd medial intraparietal area (dorsal), MIPv medial intraparietal area (ventral).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig6-v3.jpg)
+
+**Figure 6.:** (A) Schematic representation of an autoradiograph in which the red box indicates the location of the exemplary autoradiographs (kainate, GABAB and α1 receptors) shown in (B) and (C). (B) The cortical ribbon was covered by traverses (from which profiles were extracted) running perpendicular to the cortical layers; color changes between yellow and pink after every 10th traverse (left). Automatic labeling of the positions of the statistically defined borders (right). (C) The position of borders of area MIPd as defined by visual inspection are indicated by white lines in corresponding pseudocolor coded autoardiographs. (D) Exemplary Mahalanobis distance function depicting the Mahalanobis distances between neighboring blocks of 20 profiles; significant maxima occurred at profile positions which coincide with borders for receptor architectonically defined area MIPd. (E) Laminar distribution patterns of corresponding receptors in areas MIPd and MIPv. Roman numerals indicate cytoarchitectonic layers. Abbreviations: MIPd medial intraparietal area (dorsal), MIPv medial intraparietal area (ventral).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** The absolute receptor concentration (in fmol/mg protein) throughout the cortical depth is provided by the profile curve overlaid onto each receptor autoradiograph. Note, that the scale has been optimized for each profile to provide the best visualization of changes in receptor densities throughout the cortical ribbon. Roman numerals indicate cyto- and myeloarchitectonic layers, respectively. Positions of cytoarchitectonic layers were transferred to the neighboring receptor images.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** For further details, see Figure 6—figure supplement 1.
+
 PEip occupies the anterior two-thirds of the medial bank of the IPS. It is a rostro-caudally oriented strip of cortex, which has previously been described as architectonically homogenous. However, in the coronal planes of the present study, external (PEipe) and internal (PEipi) subdivisions could be identified by visual inspection and confirmed by means of the observer-independent analysis (Figures 7 and 8). As shown in Figure 7D, layer II of both areas is difficult to separate from layer III. In both areas, layers IIIb and IIIc can be distinguished by the lower cell density in IIIb, and the presence of large pyramidal cells in IIIc. Layer Vb appears as a pale stripe between Va and the densely populated layer VIa. However, compared to PEipe, layers IIIa and IIIb of PEipi are very similar in their cell packing density, and cannot be clearly separated. The layer IIIc pyramidal cells in PEipi are smaller than those in PEipe; though still present in considerable numbers, they do not stand out as prominently as in PEipe. Layer IV of PEipi is somewhat broader than in PEipe. Layer Va of PEipi is broader and more easily detectable than in PEipe, where the thin layer Va merges with layer IV. In general, PEipe shows a clearer lamination than does PEipi (Figure 7D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig7-v3.jpg)
 
 **Figure 7.:** (A) The black box on the overview of a coronal section processed for cell bodies indicates the location of the photomicrograph shown on the right. (B) The cortical ribbon was covered by traverses (from which GLI profiles were extracted) running perpendicular to the cortical layers; color changes between yellow and pink after every 10th traverse (left). Automatic labeling of the positions of the statistically defined borders (at position 20, 94 and 148) (middle). The position of borders of areas PEipe and PEipi as defined by visual inspection are indicated by white arrows in the corresponding image of the cell body stained section (right). (C) Exemplary Mahalanobis distance function depicting the Mahalanobis distances between neighboring blocks of 20 profiles; significant maxima occurred at profile positions 20, 94 and 148, which identify the borders of areas PEipe and PEipi (top). The significant maxima of varying block sizes (ranging from 10 to 24), indicate a consistently occurring border between both areas at profile location 94 (bottom). (D) High-resolution photomicrographs of cytoarchitectonic subdivisions PEipe and PEipi. Scale bar 200 μm. Roman numerals indicate cytoarchitectonic layers. Abbreviations: PEipe intraparietal part of PE (external part), PEipi intraparietal part of PE (internal part).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig8-v3.jpg)
+
+**Figure 8.:** (A) Schematic representation of an autoradiograph in which the red box indicates the location of the exemplary autoradiographs (M2 M3 and α1 receptors) shown in (B) and (C). (B) The cortical ribbon was covered by traverses (from which profiles were extracted) running perpendicular to the cortical layers; color changes between yellow and pink after every 10th traverse (left). Automatic labeling of the positions of the statistically defined borders (right). (C) The position of borders of areas PEipi and PEipe as defined by visual inspection are indicated by white lines in corresponding pseudocolor coded autoardiographs. (D) Exemplary Mahalanobis distance function depicting the Mahalanobis distances between neighboring blocks of 20 profiles; significant maxima occurred at profile positions which coincide with borders for receptor architectonically defined areas PEipi and PEipe. (E) Laminar distribution patterns of corresponding receptors in areas PEipi and PEipe. Roman numerals indicate cytoarchitectonic layers. Abbreviations: PEipe intraparietal part of PE (external part), PEipi intraparietal part of PE (internal part).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** For further details, see Figure 6—figure supplement 1.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig8-figsupp2-v3.jpg)
+
+**Figure 8—figure supplement 2.:** For further details, see Figure 6—figure supplement 1.
 
 In myeloarchitecture (Figure 9), both MIPd and MIPv have a thin inner band of Baillarger and a densely packed broad outer band of Baillarger. Area MIPv could be distinguished from MIPd only by its relatively longer and more prominent vertical fiber bundles, which reach into the superficial layers. The myeloarchitecture of PEipi (Figure 9) shows equally prominent and dense inner and outer Baillarger stripes, whereas PEipi shows a relatively lighter myelination and has a slightly more prominent outer than inner Baillarger stripe.
 
@@ -84,11 +108,31 @@ In myeloarchitecture (Figure 9), both MIPd and MIPv have a thin inner band of Ba
 
 **Figure 9.:** Coronal sections through four rostro-caudal levels of a macaque hemisphere showing the myeloarchitecture of the IPS. For abbreviations, see Figure 2.
 
-## Receptor mapping
+### Receptor mapping
 
 We used the Macaca fascicularis monkeys #11530 (left hemisphere), #11539 (left and right hemispheres) and #11543 (left hemisphere) for the receptor architectonic analysis. Figure 10 shows a series of coronal sections from posterior to anterior labeled for the demonstration of representative receptors. Differences in the densities and laminar distribution patterns of the analyzed receptors-enabled delineation of the different cortical areas in the IPS. The receptor-based parcellation approach led to the identification of the same 17 areas as determined by cytoarchitecture. As an example for the observer-independent definition of areal borders of macaque IPS, the receptor architectonically defined borders for different receptor types between newly defined areas MIPd, PEipe and PEipi shown in Figures 6 and 8.
 
-## Areas located at the junction of the IPS and POS
+![Figure 10.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig10-v3.jpg)
+
+**Figure 10.:** Coronal sections through four rostro-caudal levels of a macaque hemisphere showing exemplary receptor distribution patterns in the IPS. Receptor distribution patterns illustrated for all 15 receptors are shown in Figure 10—figure supplements 1–4. The borders between the IPS areas (red lines) are charted on the pseudocolor-coded autoradiographs. The color bar beneath each autoradiograph indicates receptor concentrations by the different colors, from black for low to red for high concentrations (fmol/mg protein). For abbreviations, see Figure 2.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig10-figsupp1-v3.jpg)
+
+**Figure 10—figure supplement 1.:** Receptor distribution patterns in areas MIPd, V6Ad, V6Av, V6, V3d, V3A, V4d, LOP and LIPv illustrated for 15 receptors studied. The borders between IPS areas (red lines) are charted on the pseudocolor-coded autoradiographs. The color bar beneath each autoradiograph indicates receptor concentrations by the different colors, from black for low to red for high concentrations (fmol/mg protein). For abbreviations, see Figure 2. Red box on the left section indicates the location of the region of interest.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig10-figsupp2-v3.jpg)
+
+**Figure 10—figure supplement 2.:** Receptor distribution patterns in areas MIPd, MIPv, V6Av, PIP, V3d, V3A, LOP, LIPv and LIPd illustrated for the 15 receptors studied. For further details, see Figure 10—figure supplement 1.
+
+![Figure 10—figure supplement 3.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig10-figsupp3-v3.jpg)
+
+**Figure 10—figure supplement 3.:** Receptor distribution patterns in areas PEipe, PEipi, VIPm, VIPl, LIPv and LIPd illustrated for the 15 receptors studied. For further details, see Figure 10—figure supplement 1.
+
+![Figure 10—figure supplement 4.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig10-figsupp4-v3.jpg)
+
+**Figure 10—figure supplement 4.:** Receptor distribution patterns in area AIP illustrated for the 15 receptors studied. For further details, see Figure 10—figure supplement 1.
+
+### Areas located at the junction of the IPS and POS
 
 Receptor distribution patterns of the three areas which are located in the proximity of the POS, that is, areas V6, V6Av, and V6Ad, are shown in Figure 10 and Figure 10—figure supplement 1. Area V6 contains significantly lower mean (averaged over all cortical layers) α1 receptor densities than does V6Av, as well as significantly lower AMPA, α1, 5-HT1A, and D1 receptor densities than does V6Ad. Furthermore, V6Av contains significantly lower 5-HT1A receptor densities than does V6Ad. Notably, V6Ad presented the highest densities of most receptors, V6Av intermediate values, and V6 the lowest ones, whereas the opposite trend was found for M2 receptor densities, which were highest in V6 and lowest in V6Ad. Furthermore, the clear bilaminar distribution of M2 receptors in V6Ad and V6Av enabled delineation of both V6A areas from adjacent areas V6 and MIPd.
 
@@ -96,7 +140,7 @@ Area V3d could be distinguished from the surrounding areas mainly by its distinc
 
 V4d showed slightly higher concentrations of kainate, GABAA/BZ, M2, α1 and 5-HT2 receptors than neighboring V3A. In addition, V4d was distinguishable from LOP mainly due to its higher densities in GABAA, GABAB, GABAA/BZ and 5-HT2 receptors, as well as the lower densities in A1 receptors, especially in the deeper layers (Figure 10 and Figure 10—figure supplement 1). Areas LOP and LIPv could be separated by the lower concentrations of AMPA, GABAA, 5-HT1A, and higher concentrations of α2 receptors in the former than in the latter area (Figure 10 and Figure 10—figure supplement 1).
 
-## Areas located in the IPS
+### Areas located in the IPS
 
 The caudal part of the lateral wall of IPS is occupied by LIPv and LIPd (Figure 10 and Figure 10—figure supplements 2–3). These two areas differ significantly in their mean NMDA, α1 and 5-HT1A receptor densities, which are higher in LIPd compared to LIPv.
 
@@ -106,9 +150,639 @@ On the medial wall of the posterior portion of the IPS, area MIPv had lower dens
 
 The rostral portion of the medial wall of the IPS contained two subdivisions of PEip, which differed in their receptor patterns (Figure 8, Figure 10 and Figure 10—figure supplement 3). Most of the receptors (NMDA, GABAA, GABAB, GABAA/BZ, M1, M3, α2, 5-HT1A) show a unimodal laminar distribution pattern with decreasing densities from layers I or II to the border between VIa and VIb. Exceptions are found for kainate, M2, α1, A1 and D1 receptors, which are bimodally distributed in PEipe and PEipi (Figure 8 and Figure 8—figure supplements 1–2). Areas PEipe and PEipi differ in their M2 laminar distribution patterns (Figure 8, Figure 10 and Figure 8—figure supplements 1–2). In PEipe, M2 receptor densities are higher in layer V than in layer III, however, these layers present comparable M2 receptor densities in PEipi (Figure 8 and Figure 8—figure supplements 1–2).
 
-## Multivariate analysis of mean receptor densities
+### Multivariate analysis of mean receptor densities
 
 Figure 11 shows the receptor fingerprints of all areas (except V4d) studied here. The absolute receptor densities are averaged over all cortical layers (Table 1). Thus, the fingerprints represent the area-specific balances between the 15 receptors. Due to oblique planes of sectioning in two of the four brains processed for receptor autoradiography, it was only possible to measure receptor densities in area V4d of other two hemispheres. Thus, we did not create a fingerprint for area V4d. Highest absolute densities were reached by the NMDA, GABAA, and GABAB receptors, as well as by the GABAA/BZ-binding sites, and lowest absolute densities were measured for the M2 and D1 receptors (Figure 11).
+
+![Figure 11.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig11-v3.jpg)
+
+**Figure 11.:** Absolute densities in fmol/mg protein of 15 receptors are displayed in polar coordinate plots (scaling 0–2000 fmol/mg protein). For aesthetical reasons, the standard deviations are not displayed in the fingerprints. For mean (and s.d.) densities of each area and receptor type see Table 1. The positions of the different receptor types and the axis scaling are identical in all polar plots, and specified in the polar plot at the top left corner of the figure. For abbreviations, see Figure 2.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/55979/elife-55979-fig11-figsupp1-v3.jpg)
+
+**Figure 11—figure supplement 1.:** Polar plots (scaling −0.6/+0.6) showing the normalized receptor concentration of all 15 receptors. Normalization of the receptor concentrations was calculated based on each receptor’s mean over all IPS areas. Black thick line indicates the position where the receptor concentration was equal to the mean receptor concentration averaged over all IPS areas.
+
+**Table 1.**
+ Mean receptor densities of IPS areas in fmol/mg protein.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>AMPA</th>
+      <th>Kainate</th>
+      <th>NMDA</th>
+      <th>GABAA</th>
+      <th>GABAB</th>
+      <th>GABAA/BZ</th>
+      <th>M₁</th>
+      <th>M₂</th>
+      <th>M₃</th>
+      <th>α₁</th>
+      <th>α₂</th>
+      <th>5-HT₁A</th>
+      <th>5-HT₂</th>
+      <th>A₁</th>
+      <th>D₁</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">AIP</td>
+      <td>mean</td>
+      <td>506.5</td>
+      <td>541.0</td>
+      <td>1284.4</td>
+      <td>1564.8</td>
+      <td>1958.2</td>
+      <td>1565.2</td>
+      <td>924.0</td>
+      <td>128.2</td>
+      <td>819.3</td>
+      <td>409.3</td>
+      <td>306.0</td>
+      <td>348.6</td>
+      <td>319.4</td>
+      <td>800.7</td>
+      <td>77.3</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>70.1</td>
+      <td>101.0</td>
+      <td>124.5</td>
+      <td>238.1</td>
+      <td>277.9</td>
+      <td>226.9</td>
+      <td>154.5</td>
+      <td>39.3</td>
+      <td>91.8</td>
+      <td>46.0</td>
+      <td>53.3</td>
+      <td>35.2</td>
+      <td>75.9</td>
+      <td>180.4</td>
+      <td>5.1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">LIPd</td>
+      <td>mean</td>
+      <td>485.5</td>
+      <td>592.5</td>
+      <td>1397.0</td>
+      <td>1621.0</td>
+      <td>2012.4</td>
+      <td>2097.2</td>
+      <td>1028.2</td>
+      <td>136.7</td>
+      <td>788.6</td>
+      <td>374.2</td>
+      <td>291.7</td>
+      <td>323.3</td>
+      <td>364.9</td>
+      <td>832.3</td>
+      <td>82.0</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>67.4</td>
+      <td>60.7</td>
+      <td>199.1</td>
+      <td>159.6</td>
+      <td>290.6</td>
+      <td>350.5</td>
+      <td>186.6</td>
+      <td>41.2</td>
+      <td>113.8</td>
+      <td>28.3</td>
+      <td>25.6</td>
+      <td>50.1</td>
+      <td>73.2</td>
+      <td>183.2</td>
+      <td>7.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">LIPv</td>
+      <td>mean</td>
+      <td>443.2</td>
+      <td>551.0</td>
+      <td>1241.1</td>
+      <td>1508.9</td>
+      <td>1783.3</td>
+      <td>1832.0</td>
+      <td>912.2</td>
+      <td>143.3</td>
+      <td>722.4</td>
+      <td>310.6</td>
+      <td>271.9</td>
+      <td>209.0</td>
+      <td>361.8</td>
+      <td>834.4</td>
+      <td>77.6</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>64.8</td>
+      <td>34.3</td>
+      <td>189.3</td>
+      <td>160.3</td>
+      <td>250.3</td>
+      <td>167.5</td>
+      <td>135.7</td>
+      <td>38.0</td>
+      <td>100.9</td>
+      <td>25.5</td>
+      <td>23.7</td>
+      <td>22.2</td>
+      <td>62.8</td>
+      <td>127.6</td>
+      <td>6.4</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PEipe</td>
+      <td>mean</td>
+      <td>522.3</td>
+      <td>526.7</td>
+      <td>1203.0</td>
+      <td>1570.2</td>
+      <td>2064.6</td>
+      <td>1792.6</td>
+      <td>943.6</td>
+      <td>134.2</td>
+      <td>766.0</td>
+      <td>390.0</td>
+      <td>278.6</td>
+      <td>355.6</td>
+      <td>323.5</td>
+      <td>733.6</td>
+      <td>81.6</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>53.4</td>
+      <td>96.6</td>
+      <td>236.5</td>
+      <td>226.5</td>
+      <td>269.9</td>
+      <td>164.1</td>
+      <td>111.0</td>
+      <td>49.6</td>
+      <td>80.1</td>
+      <td>36.8</td>
+      <td>53.0</td>
+      <td>55.9</td>
+      <td>76.8</td>
+      <td>152.8</td>
+      <td>8.8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PEipi</td>
+      <td>mean</td>
+      <td>483.4</td>
+      <td>495.8</td>
+      <td>1190.1</td>
+      <td>1549.1</td>
+      <td>2024.8</td>
+      <td>1802.3</td>
+      <td>933.4</td>
+      <td>114.6</td>
+      <td>800.2</td>
+      <td>389.2</td>
+      <td>288.0</td>
+      <td>312.3</td>
+      <td>311.2</td>
+      <td>789.8</td>
+      <td>79.2</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>85.4</td>
+      <td>95.7</td>
+      <td>135.4</td>
+      <td>194.4</td>
+      <td>286.9</td>
+      <td>114.8</td>
+      <td>77.5</td>
+      <td>40.6</td>
+      <td>108.3</td>
+      <td>39.4</td>
+      <td>53.5</td>
+      <td>50.5</td>
+      <td>55.8</td>
+      <td>111.2</td>
+      <td>7.1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">MIPv</td>
+      <td>mean</td>
+      <td>435.0</td>
+      <td>517.2</td>
+      <td>1173.8</td>
+      <td>1549.0</td>
+      <td>1875.7</td>
+      <td>1927.6</td>
+      <td>903.8</td>
+      <td>132.0</td>
+      <td>723.2</td>
+      <td>342.9</td>
+      <td>288.0</td>
+      <td>245.8</td>
+      <td>356.0</td>
+      <td>826.9</td>
+      <td>79.1</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>72.9</td>
+      <td>62.9</td>
+      <td>217.1</td>
+      <td>175.1</td>
+      <td>263.9</td>
+      <td>162.7</td>
+      <td>93.7</td>
+      <td>34.9</td>
+      <td>97.2</td>
+      <td>33.7</td>
+      <td>44.9</td>
+      <td>62.6</td>
+      <td>51.8</td>
+      <td>131.0</td>
+      <td>6.7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">MIPd</td>
+      <td>mean</td>
+      <td>475.7</td>
+      <td>562.3</td>
+      <td>1210.8</td>
+      <td>1598.3</td>
+      <td>2020.1</td>
+      <td>1779.9</td>
+      <td>951.8</td>
+      <td>126.4</td>
+      <td>760.7</td>
+      <td>406.0</td>
+      <td>291.5</td>
+      <td>307.0</td>
+      <td>350.0</td>
+      <td>796.5</td>
+      <td>85.8</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>70.9</td>
+      <td>84.8</td>
+      <td>186.9</td>
+      <td>171.9</td>
+      <td>321.2</td>
+      <td>93.0</td>
+      <td>102.7</td>
+      <td>36.5</td>
+      <td>81.7</td>
+      <td>39.1</td>
+      <td>47.7</td>
+      <td>82.2</td>
+      <td>66.4</td>
+      <td>154.9</td>
+      <td>6.7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">VIPl</td>
+      <td>mean</td>
+      <td>431.8</td>
+      <td>423.2</td>
+      <td>1130.1</td>
+      <td>1445.1</td>
+      <td>1829.8</td>
+      <td>1606.6</td>
+      <td>858.7</td>
+      <td>121.6</td>
+      <td>753.2</td>
+      <td>368.3</td>
+      <td>272.5</td>
+      <td>264.3</td>
+      <td>317.7</td>
+      <td>718.4</td>
+      <td>84.3</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>75.4</td>
+      <td>91.4</td>
+      <td>151.7</td>
+      <td>243.6</td>
+      <td>203.3</td>
+      <td>142.8</td>
+      <td>81.0</td>
+      <td>41.3</td>
+      <td>76.7</td>
+      <td>27.3</td>
+      <td>49.9</td>
+      <td>28.7</td>
+      <td>69.8</td>
+      <td>120.8</td>
+      <td>9.5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">VIPm</td>
+      <td>mean</td>
+      <td>426.7</td>
+      <td>453.9</td>
+      <td>1104.5</td>
+      <td>1534.2</td>
+      <td>1847.5</td>
+      <td>1714.7</td>
+      <td>856.7</td>
+      <td>119.9</td>
+      <td>725.3</td>
+      <td>338.2</td>
+      <td>270.2</td>
+      <td>244.6</td>
+      <td>321.1</td>
+      <td>806.6</td>
+      <td>76.3</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>69.3</td>
+      <td>90.1</td>
+      <td>212.8</td>
+      <td>180.7</td>
+      <td>346.4</td>
+      <td>78.8</td>
+      <td>83.7</td>
+      <td>41.3</td>
+      <td>99.9</td>
+      <td>49.7</td>
+      <td>48.5</td>
+      <td>34.3</td>
+      <td>59.0</td>
+      <td>148.1</td>
+      <td>9.1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PIP</td>
+      <td>mean</td>
+      <td>348.6</td>
+      <td>494.9</td>
+      <td>1241.2</td>
+      <td>1400.7</td>
+      <td>1702.0</td>
+      <td>1629.8</td>
+      <td>857.7</td>
+      <td>142.5</td>
+      <td>666.3</td>
+      <td>292.3</td>
+      <td>310.5</td>
+      <td>110.6</td>
+      <td>336.4</td>
+      <td>795.1</td>
+      <td>73.3</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>58.7</td>
+      <td>61.3</td>
+      <td>119.2</td>
+      <td>162.5</td>
+      <td>303.9</td>
+      <td>125.5</td>
+      <td>134.0</td>
+      <td>42.3</td>
+      <td>104.3</td>
+      <td>64.7</td>
+      <td>27.0</td>
+      <td>54.6</td>
+      <td>74.8</td>
+      <td>136.8</td>
+      <td>8.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">LOP</td>
+      <td>mean</td>
+      <td>361.6</td>
+      <td>573.1</td>
+      <td>1190.1</td>
+      <td>1396.3</td>
+      <td>1614.2</td>
+      <td>1774.2</td>
+      <td>885.3</td>
+      <td>140.4</td>
+      <td>707.3</td>
+      <td>317.0</td>
+      <td>296.3</td>
+      <td>143.2</td>
+      <td>336.1</td>
+      <td>758.4</td>
+      <td>75.5</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>59.0</td>
+      <td>69.3</td>
+      <td>146.2</td>
+      <td>157.7</td>
+      <td>224.2</td>
+      <td>175.3</td>
+      <td>65.5</td>
+      <td>33.3</td>
+      <td>100.3</td>
+      <td>47.6</td>
+      <td>25.1</td>
+      <td>57.1</td>
+      <td>67.3</td>
+      <td>135.1</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">V3A</td>
+      <td>mean</td>
+      <td>378.0</td>
+      <td>492.2</td>
+      <td>1189.0</td>
+      <td>1455.3</td>
+      <td>1652.9</td>
+      <td>1647.1</td>
+      <td>878.7</td>
+      <td>133.2</td>
+      <td>742.1</td>
+      <td>293.6</td>
+      <td>292.1</td>
+      <td>144.9</td>
+      <td>332.7</td>
+      <td>810.6</td>
+      <td>74.1</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>78.5</td>
+      <td>69.4</td>
+      <td>120.1</td>
+      <td>294.1</td>
+      <td>280.1</td>
+      <td>51.5</td>
+      <td>125.0</td>
+      <td>25.4</td>
+      <td>100.9</td>
+      <td>62.0</td>
+      <td>50.2</td>
+      <td>50.3</td>
+      <td>71.0</td>
+      <td>236.9</td>
+      <td>11.9</td>
+    </tr>
+    <tr>
+      <td rowspan="2">V3d</td>
+      <td>mean</td>
+      <td>317.9</td>
+      <td>452.0</td>
+      <td>1213.6</td>
+      <td>1476.8</td>
+      <td>1644.7</td>
+      <td>1627.7</td>
+      <td>906.6</td>
+      <td>178.9</td>
+      <td>727.6</td>
+      <td>249.6</td>
+      <td>294.6</td>
+      <td>87.9</td>
+      <td>331.0</td>
+      <td>827.0</td>
+      <td>74.9</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>66.2</td>
+      <td>82.4</td>
+      <td>129.3</td>
+      <td>405.2</td>
+      <td>289.8</td>
+      <td>120.2</td>
+      <td>99.0</td>
+      <td>60.5</td>
+      <td>93.5</td>
+      <td>45.8</td>
+      <td>37.8</td>
+      <td>37.3</td>
+      <td>74.0</td>
+      <td>192.6</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">V6Ad</td>
+      <td>mean</td>
+      <td>427.2</td>
+      <td>536.3</td>
+      <td>1148.7</td>
+      <td>1450.0</td>
+      <td>1679.1</td>
+      <td>1698.1</td>
+      <td>904.3</td>
+      <td>118.3</td>
+      <td>710.1</td>
+      <td>329.1</td>
+      <td>248.6</td>
+      <td>245.9</td>
+      <td>323.2</td>
+      <td>782.7</td>
+      <td>80.4</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>71.1</td>
+      <td>87.4</td>
+      <td>116.5</td>
+      <td>265.0</td>
+      <td>335.4</td>
+      <td>141.4</td>
+      <td>74.3</td>
+      <td>36.7</td>
+      <td>92.9</td>
+      <td>35.5</td>
+      <td>36.0</td>
+      <td>46.3</td>
+      <td>68.8</td>
+      <td>147.4</td>
+      <td>8.1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">V6Av</td>
+      <td>mean</td>
+      <td>373.8</td>
+      <td>483.1</td>
+      <td>1115.6</td>
+      <td>1393.7</td>
+      <td>1595.7</td>
+      <td>1543.9</td>
+      <td>857.0</td>
+      <td>134.3</td>
+      <td>706.8</td>
+      <td>305.4</td>
+      <td>286.3</td>
+      <td>136.9</td>
+      <td>336.9</td>
+      <td>790.1</td>
+      <td>76.0</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>71.3</td>
+      <td>59.5</td>
+      <td>71.1</td>
+      <td>193.3</td>
+      <td>277.0</td>
+      <td>116.1</td>
+      <td>64.7</td>
+      <td>32.7</td>
+      <td>91.5</td>
+      <td>29.3</td>
+      <td>23.2</td>
+      <td>38.7</td>
+      <td>52.5</td>
+      <td>106.2</td>
+      <td>4.6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">V6</td>
+      <td>mean</td>
+      <td>319.2</td>
+      <td>457.8</td>
+      <td>1073.0</td>
+      <td>1317.3</td>
+      <td>1505.0</td>
+      <td>1514.6</td>
+      <td>832.1</td>
+      <td>136.7</td>
+      <td>675.9</td>
+      <td>260.1</td>
+      <td>274.9</td>
+      <td>99.8</td>
+      <td>301.8</td>
+      <td>754.1</td>
+      <td>71.5</td>
+    </tr>
+    <tr>
+      <td>s.d.</td>
+      <td>57.7</td>
+      <td>58.9</td>
+      <td>142.3</td>
+      <td>233.8</td>
+      <td>397.6</td>
+      <td>34.2</td>
+      <td>66.2</td>
+      <td>40.6</td>
+      <td>117.0</td>
+      <td>47.5</td>
+      <td>37.1</td>
+      <td>39.4</td>
+      <td>73.5</td>
+      <td>129.2</td>
+      <td>6.7</td>
+    </tr>
+  </tbody>
+</table>
 
 Visual comparison of the fingerprints revealed a basic similarity between the areas V3d, V3A, PIP, LOP, V6, V6Av and V6Ad, whereas the areas AIP, MIPv, MIPd, PEipi, PEipe, LIPd, LIPv, VIPm and VIPl had fingerprints different from the previous areas mainly because of the higher density of the GABAB receptors. Additionally, receptor fingerprints seemed to be slightly larger in the areas near to the brain surface (V6Ad, MIPd, PEipe and LIPd) than their counterparts (V6, V6Av, MIPv, PEipi and LIPv) located near to the depth of sulcus.
 
@@ -122,7 +796,7 @@ In order to analyze quantitatively the degree of (dis)similarity of the receptor
 
 Several maps of the macaque cortex in the IPS and at the confluence with POS have been published (Seltzer and Pandya, 1986; Seltzer and Pandya, 1980; Preuss and Goldman-Rakic, 1991; Lewis and Van Essen, 2000a; Bakola et al., 2017), but they differ in the number and precise extent of identified architectonical areas. Furthermore, it is sometimes not clear which areas are homologue; the different nomenclatural systems add further uncertainties because it is not always clear whether different names indicate different areas. Here, we will compare previous maps with present observations based on the similarity of the topographical relations. By combining information from cyto-, myeloarchitecture and multiple receptor architecture, the present study provides a complete multimodal architectonic map of the macaque IPS and at its junction with POS. Additionally, we present a 2D map with the explicit position of area borders and their relationship with macroanatomical landmarks, which allows comparison of the present parcellation with those from previous studies.
 
-## Areas located at the junction of the IPS and POS
+### Areas located at the junction of the IPS and POS
 
 The junction of the IPS and POS is a convoluted region of the monkey brain that is involved in various functions. We were able to identify eight cyto-/myelo- and receptor architectonically distinct areas within this region of the macaque brain. Area V3d is located on the annectant gyrus, V3A and PIP are situated in the lateral and medial fundus of the POS, respectively. Area V6 covering the lower one-third of the rostro-medial wall of the POS, and the other two-thirds were occupied by the two subdivisions of V6A: V6Ad and V6Av. On the rostro-lateral bank of the POS, we confirmed the existence of LOP, which could be identified as a distinct area between V3A and LIPv. Although the main portion of area V4d is located on the posterior wall of the prelunate gyrus, which is not the topic of the present study, we also identified a small portion which encroached onto the rostro-lateral wall of POS.
 
@@ -136,7 +810,7 @@ On the lateral bank, there is discrepancy related to the existence of area LOP, 
 
 We largely confirmed the delineations on the medial bank of the IPS where it joins the POS (Impieri et al., 2019; Luppino et al., 2005; Zeki, 1986; Galletti et al., 1996; Galletti et al., 1999a; Galletti et al., 1999b). Two functionally distinct areas were originally detected in this region: a ventral, purely visual area V6, and a dorsal area V6A (Zeki, 1986; Galletti et al., 1996). Luppino, Hamed (Luppino et al., 2005) further separated V6A into two areas (V6Av and V6Ad) by using myeloarchitecture combined with the distribution of SMI-32 immunoreactivity. In the present study and in that by Impieri, Zilles (Impieri et al., 2019), multiple receptor architecture corroborated the subdivisions of area V6A, as well as the location and extent of area V6. Differences between V6Ad, V6Av and V6 are prominently indicated by the AMPA, NMDA, M1, M2, M3 and α1 receptors. Interestingly, for all receptors mentioned above (except for M2), we found that the dorsalmost area V6Ad presents a higher receptor density pattern compared to the V6Av, and the ventralmost area V6 always shows the lowest densities. This may be explained by their functional heterogeneity, which will be discussed in the next part.
 
-## Areas located in the IPS
+### Areas located in the IPS
 
 We were able to identify nine cyto- and receptor architectonically distinct areas completely buried in the IPS of the macaque brain. Areas MIPd and MIPv cover the posterior portion of the medial wall, and areas PEipe and PEipi occupy the rostralmost portion of its medial bank. On the lateral bank, the posterior two-thirds contain two architectonically distinct subdivisions of LIP: LIPd and LIPv. The fundus of the IPS comprises medial and lateral subdivisions of VIP, that is, VIPm and VIPl. The anterior part of the IPS fundus is occupied by areas AIP and the rostral portion of VIP.
 
@@ -146,17 +820,17 @@ On the lateral bank, area LIP (or POa) was identified by most previous schemes (
 
 Although the organization of the medial wall of the IPS has been the focus of numerous studies (Lewis and Van Essen, 2000a; Bakola et al., 2017; Seelke et al., 2012), a consensus on the number and arrangement of areas has emerged for only a modest fraction of its total extent. Besides the terminological roots, previous parcellation schemes also differ considerably in terms of the exact number and precise arrangement of distinct areas, such as their size, shape, and location relative to macroanatomic landmarks. According to the studies from Lewis and Van Essen, 2000a and Bakola, Passarelli (Bakola et al., 2017), three areas occupied the medial wall of the IPS: area PO is located in the junction with POS, and the remaining rostral part consists of two distinct areas. The middle area was named MIP (Lewis and Van Essen, 2000a; Bakola et al., 2017), whereas the rostralmost area was identified as area 5V (Lewis and Van Essen, 2000a) or as area PEip (Bakola et al., 2017; Gamberini et al., 2020a). The present partitioning scheme was able to confirm the existence of these two areas, their location and extent are more similar to the scheme charted by Bakola et al., 2017, so we followed their nomenclature. Dorsal to the originally defined area MIP, we identified an architectonic distinct area as a newly described subdivision, which was originally detected by connection studies (Bakola et al., 2010; Bakola et al., 2013). This new subdivision could be distinguished from the original MIP due to its more densely packed cells, especially in layers II, IIIc and VIb. So, we renamed area MIP as MIPv, and named this new subdivision as MIPd. At the same time, evidence from receptor architecture also indicates the existence of MIPd, the differences in receptor densities between cortical layers are more apparent in MIPv than in MIPd. Additionally, for kainate, M2, and α1 receptors, area MIPv has the lowest densities in layers IIIc and V, thus resulting in a sharply definable boundary with MIPd. Area PEip has previously been described as architectonically homogenous (Bakola et al., 2017; Seelke et al., 2012); however, we found evidence for consistent architectonic differences between exteral and interal subdivisions, PEipe and PEipi. In cytoarchitecture, PEipe shows a clearer lamination and a higher cell packing density than PEipi. In receptor architecture, the main difference between PEipe and PEipi occurred in the supragranular layers. For layers I-IIIb, most of receptors (α1, GABAB, M1, M3 and 5-HT1A receptors) present higher densities in area PEipe, whereas, for M1 receptors and GABAA/BZ binding sites, the densities of PEipi are higher than those of PEipe. However, their functional heterogeneity remains to be determined.
 
-## Molecular and functional organization of IPS
+### Molecular and functional organization of IPS
 
 One of the purposes of this study was to analyze the organization of the IPS with a focus on the relationship between its molecular and functional segregation since similarities in fingerprints have been postulated to be indicative of the existence of a network of cortical areas characterized by their comparable receptor expression and participation in the same functional system (Palomero-Gallagher and Zilles, 2018; Zilles and Amunts, 2009; Zilles et al., 2015; Palomero-Gallagher et al., 2009). Furthermore, since the function of a cortical area requires a well-tuned receptor balance, the receptor fingerprint of each area may represent an index of its physiological, connectional and functional properties (Palomero-Gallagher and Zilles, 2018; Zilles and Amunts, 2009; Zilles et al., 2002a; Palomero-Gallagher and Zilles, 2019b; Rakic et al., 1988).
 
 There is a gradual direction trend in the functional organization of the primate IPS: the anterior portion is more concerned with sensorimotor processing, whereas the posterior part is involved in somatosensory and visual processing (Gamberini et al., 2015; Felleman and Van Essen, 1991; Heekeren et al., 2008). Furthermore, with respect to the walls of the IPS, areas located on the medial wall are more active during arm movements (Colby and Duhamel, 1991; Grefkes and Fink, 2005; Seelke et al., 2012), and areas located on the lateral wall are more associated with eye movements (Blatt et al., 1990; Patel et al., 2010). As revealed by the cluster analyses of the receptor fingerprints of areas examined in the present study, three distinct clusters with a grouping of areas with distinct macroanatomical locations along the rostro-caudal axis of the hemisphere were observed:
 
-## Areas of the caudal cluster
+### Areas of the caudal cluster
 
 The caudal cluster includes areas V3d, V3A, PIP, LOP, V6 and V6Av. Area V3d is the dorsal portion of area V3, which together with V3A, constitute part of the extrastriate early visual cortex (Felleman and Van Essen, 1991; Felleman et al., 1997), and receive direct input from V1 (Gattass et al., 1988; Felleman et al., 1997). These regions respond differently to shape, color, direction and motion of objects (Livingstone and Hubel, 1988; Zeki, 1993). PIP is also a visual area with motion sensitivity (Colby et al., 1988; Vanduffel et al., 2001), which probably belongs to the neural circuits involved in visual-guided grasping in macaque monkeys (Jeannerod et al., 1994). Our area LOP overlaps substantially with the functionally identified caudal intraparietal area (CIP), which is involved in the analysis of 3D object features (shape, orientation and curvatures; Katsuyama et al., 2010; Alizadeh et al., 2018). Area V6 is sensitive to the direction, orientation, and speed of motion (Galletti et al., 1996) and to the movement of objects (Galletti and Fattori, 2003). It is a retinotopically organized unimodal area; that is, it contains only cells responsive to visual stimuli (Gamberini et al., 2011). Area V6Av is not retinotopically organized, and although most of its cells are responsive to visual stimuli, twenty percent are also activated by somatosensory stimuli (Gamberini et al., 2011). These findings suggest that V6Av is primarily a visual area that provides the visuo-motor integration network with visual information (Gamberini et al., 2009; Passarelli et al., 2011; Gamberini et al., 2020b). Viewed as a whole, this caudal cluster mainly encompasses areas associated with the processing of visual information, although V6Av also participates in visuomotor coordination.
 
-## Areas of the intermediate cluster
+### Areas of the intermediate cluster
 
 The intermediate cluster consists of areas V6Ad, VIPm and VIPl, and may be interpreted as a multimodal integration cluster serving as an interface between the somatosensory and visual systems. V6Ad is a bimodal visual-somatic area, which is likely involved in the visual guidance of arm movement (Galletti et al., 1997) and object grasping (Caminiti et al., 1991; Raos et al., 2004). Multimodal area V6Ad receives input from many parietal and frontal areas, as well as from visual areas, though to a lesser extent (Boussaoud et al., 1998; Gregoriou et al., 2005). Functionally, V6Ad is more involved in the control of visually guided grasp actions (Fattori et al., 2010), whereas V6Av (which is located in the caudal cluster) is more involved in the visual analysis of these actions (Gamberini et al., 2011; Fattori et al., 2010). Thus, V6Av has been classified as a primarily visual area, whereas V6Ad is considered a truly multimodal area that integrates both visual and somatosensory inputs. This functional distinction is reflected by differences in the receptor architecture of V6Ad and V6Av, since they are assigned to different clusters by the multimodal cluster analyses.
 
@@ -164,7 +838,7 @@ Area VIP is a complex region which receives projections not only from several vi
 
 In general, the intermediate cluster is important for multisensory integration, particularly for visual and somatosensory input.
 
-## Areas of the rostral cluster
+### Areas of the rostral cluster
 
 The rostral cluster encompasses area AIP mainly in the fundus of the IPS, areas LIPd and LIPv on the lateral wall, as well as areas PEipi and PEipe on the rostral portion of the medial wall, and areas MIPd, and MIPv on the caudo-medial part of the IPS. These areas are involved in sensorimotor processing and are particularly important for the coordination of eye and upper limb movements (Blatt et al., 1990; Lewis and Van Essen, 2000b; Colby and Goldberg, 1999).
 
@@ -182,7 +856,7 @@ The present study provides a comprehensive parcellation scheme of the macaque IP
 
 All experimental protocols were carried out in accordance with the guidelines of the European Communities Council Directive for the care and use of animals for scientific purposes.
 
-## Postmortem tissue and histological procedures
+### Postmortem tissue and histological procedures
 
 Two samples of postmortem macaque brains were used in the study.
 
@@ -190,17 +864,206 @@ Sample 1 consisted of four hemispheres from three Macaca fascicularis monkeys (a
 
 Sample 2 consisted of the brain of a Macaca mulatta (animal ID: DP1) monkey obtained from Deepak N. Pandya and used for cytoarchitectonic analysis. The monkey was deeply anesthetized with sodium pentobarbital, transcardially perfused with cold saline followed by 10% buffered formalin and the brain was stored in a buffered formalin solution for several months. After a dehydration step in graded alcohols (70% to 100% propanol), the brain was embedded in paraffin and serially sectioned at 20 μm in the coronal plane. Every fifth section was mounted on gelatin coated slides, stained for cell bodies with a modified silver cell-body staining (Merker, 1983) that provides a high contrast between cell bodies and neuropil.
 
-## Receptor binding procedure
+### Receptor binding procedure
 
 For sample 1, neighboring sections were incubated with a tritiated receptor ligand or stained for cell bodies (Merker, 1983) or myelin (Gallyas, 1979). Thus, a group of sections obtained from the same rostro-caudal sectioning level included information concerning receptor distribution patterns, cyto- and myeloarchitecture. In the present study, we investigated binding sites of fifteen different receptors from various neurotransmitter systems: glutamatergic (AMPA, kainate, NMDA), GABAergic (GABAA, GABAB, GABAA associated benzodiazepine [GABAA/BZ] binding sites), cholinergic (muscarinic M1, M2, M3), adrenergic (α1, α2), serotoninergic (5-HT1A, 5-HT2), dopaminergic (D1), and adenosinergic (A1).
 
 Detailed information of the autoradiographical labelling method was described in previous publications (Palomero-Gallagher and Zilles, 2018; Zilles et al., 2002a). In short, it consists of three steps: 1) preincubation for rehydration of sections and removal of endogenous ligands that could block the binding; 2) main incubation with tritiated ligands, and 3) rinsing step to stop the binding procedure and remove unbound radioactive ligand. During the main incubation step, most sections were incubated in a buffer solution containing the tritiated ligand to demonstrate total binding, and selected sections were incubated in another buffer solution containing the tritiated ligand with an appropriate nonlabelled displacer to identify nonspecific binding. For all receptors in the present study, nonspecific binding was less than 5% of the total binding. Thus, the total binding of each receptor could be accepted as an estimate of the specific binding. Detailed incubation protocols are summarized in Table 2.
 
+**Table 2.**
+ Incubation protocols.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Transmitter</th>
+      <th>Receptor</th>
+      <th>Ligand (nM)</th>
+      <th>Property</th>
+      <th>Displacer</th>
+      <th>Incubation buffer</th>
+      <th>Pre-incubation</th>
+      <th>Main incubation</th>
+      <th>Final rinsing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Glutamate</td>
+      <td>AMPA</td>
+      <td>[3H]-AMPA (10.0)</td>
+      <td>Ag</td>
+      <td>Quisqualate (10 μM)</td>
+      <td>50 mM Tris-acetate (pH 7.2) [+ 100 mM KSCN]*</td>
+      <td>3x10 min, 4°C</td>
+      <td>45 min, 4°C</td>
+      <td>1) 4x4 sec2) Acetone/glutaraldehyde(100 ml + 2,5 ml), 2x2 sec, 4°C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NMDA</td>
+      <td>[3H]-MK-801 (3.3)</td>
+      <td>Ant</td>
+      <td>(+)MK-801 (100 μM)</td>
+      <td>50 mM Tris-acetate (pH 7.2) + 50 μM glutmate [+ 30 μM glycine + 50 μM spermidine]*</td>
+      <td>15 min, 4°C</td>
+      <td>60 min, 22°C</td>
+      <td>1) 2x5 min, 4°C2) Distilled water, 1x22°C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Kainate</td>
+      <td>[3H]-Kainate (9.4)</td>
+      <td>Ag</td>
+      <td>SYM 2081 (100 μM)</td>
+      <td>50 mM Tris-acetate (pH 7.2) [+ 10 mM Ca2+-acetate]*</td>
+      <td>3x10 min, 4°C</td>
+      <td>45 min, 4°C</td>
+      <td>1) 3x4 sec2) Acetone/glutaraldehyde(100 ml + 2,5 ml), 2x2 sec, 22°C</td>
+    </tr>
+    <tr>
+      <td>GABA</td>
+      <td>GABAA</td>
+      <td>[3H]-Muscimol (7.7)</td>
+      <td>Ag</td>
+      <td>GABA (10 μM)</td>
+      <td>50 mM Tris-citrate (pH 7.0)</td>
+      <td>3x5 min, 4°C</td>
+      <td>40 min, 4°C</td>
+      <td>1) 3x3 sec, 4°C2) Distilled water, 1x22°C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GABAB</td>
+      <td>[3H]-CGP 54626 (2.0)</td>
+      <td>Ant</td>
+      <td>CGP 55845 (100 μM)</td>
+      <td>50 mM Tris-HCl (pH 7.2) + 2.5 mM CaCl2</td>
+      <td>3x5 min, 4°C</td>
+      <td>60 min, 4°C</td>
+      <td>1) 3x2 sec, 4°C2) Distilled water, 1x22°C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GABAA/BZ</td>
+      <td>[3H]-Flumazenil (1.0)</td>
+      <td>Ant</td>
+      <td>Clonazepam (2 μM)</td>
+      <td>170 mM Tris-HCl (pH 7.4)</td>
+      <td>15 min, 4°C</td>
+      <td>60 min, 4°C</td>
+      <td>1) 2x1 min, 4°C2) Distilled water, 1x22°C</td>
+    </tr>
+    <tr>
+      <td>Acetylcholine</td>
+      <td>M1</td>
+      <td>[3H]-Pirenzepine (1.0)</td>
+      <td>Ant</td>
+      <td>Pirenzepine (2 μM)</td>
+      <td>Modified Krebs buffer (pH 7.4)</td>
+      <td>15 min, 4°C</td>
+      <td>60 min, 4°C</td>
+      <td>1) 2x1 min, 4°C2) Distilled water, 1x22°C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M2</td>
+      <td>[3H]-Oxotremorine-M (1.7)</td>
+      <td>Ag</td>
+      <td>Carbachol (10 μM)</td>
+      <td>20 mM HEPES-Tris (pH 7.5) + 10 mM MgCl2 + 300 nM Pirenzepine</td>
+      <td>20 min, 22°C</td>
+      <td>60 min, 22°C</td>
+      <td>1) 2x2 min, 4°C2) Distilled water, 1x22°C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M3</td>
+      <td>[3H]-4-DAMP (1.0)</td>
+      <td>Ant</td>
+      <td>Atropine sulfate (10 μM)</td>
+      <td>50 mM Tris-HCl (pH 7.4) + 0.1 mM PSMF + 1mM EDTA</td>
+      <td>15 min, 22° C</td>
+      <td>45 min, 22° C</td>
+      <td>1) 2x5 min, 4° C2) distilled water, 1x22°C</td>
+    </tr>
+    <tr>
+      <td>Noradrenaline</td>
+      <td>α1</td>
+      <td>[3H]-Prazosin (0.2)</td>
+      <td>Ant</td>
+      <td>Phentolamine Mesylate (10 μM)</td>
+      <td>50 mM Na/K-phosphate buffer (pH 7.4)</td>
+      <td>15 min, 22°C</td>
+      <td>60 min, 22°C</td>
+      <td>1) 2x5 min, 4°C2) Distilled water, 1x22°C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>α2</td>
+      <td>[3H]-UK 14,304 (0,64)</td>
+      <td>Ag</td>
+      <td>Phentolamine Mesylate (10 μM)</td>
+      <td>50 mM Tris-HCl + 100 μM MnCl2 (pH 7.7)</td>
+      <td>15 min, 22°C</td>
+      <td>90 min, 22°C</td>
+      <td>1) 5 min, 4°C2) Distilled water, 1x22°C</td>
+    </tr>
+    <tr>
+      <td>Serotonin</td>
+      <td>5-HT1A</td>
+      <td>[3H]-8-OH-DPAT (1.0)</td>
+      <td>Ag</td>
+      <td>5-Hydroxy-tryptamine (1 μM)</td>
+      <td>170 mM Tris-HCl (pH 7.4) [+ 4 mM CaCl2 + 0.01% ascorbate]*</td>
+      <td>30 min, 22°C</td>
+      <td>60 min, 22°C</td>
+      <td>1) 5 min, 4°C2) Distilled water, 3x22°C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5-HT2</td>
+      <td>[3H]-Ketanserin (1.14)</td>
+      <td>Ant</td>
+      <td>Mianserin (10 μM)</td>
+      <td>170 mM Tris-HCl (pH 7.7)</td>
+      <td>30 min, 22°C</td>
+      <td>120 min, 22°C</td>
+      <td>1) 2x10 min, 4°C2) Distilled water, 3x22°C</td>
+    </tr>
+    <tr>
+      <td>Dopamine</td>
+      <td>D1</td>
+      <td>[3H]-SCH 23390 (1.67)</td>
+      <td>Ant</td>
+      <td>SKF 83566 (1 μM)</td>
+      <td>50 mM Tris-HCl + 120 mM NaCl + 5 mM KCl + 2 mM CaCl2 + 1 mM MgCl2 (pH 7.4)</td>
+      <td>20 min, 22°C</td>
+      <td>90 min, 22°C</td>
+      <td>1) 2x20 min, 4°C2) Distilled water, 1x22°C</td>
+    </tr>
+    <tr>
+      <td>Adenosine</td>
+      <td>A1</td>
+      <td>[3H]-DPCPX (1.0)</td>
+      <td>Ant</td>
+      <td>R-PIA (100 μM)</td>
+      <td>170 mM Tris-HCl + 2 Units/I Adenosine deaminase [+ 100 μM Gpp(NH)p]* (pH 7.4)</td>
+      <td>15 min, 4°C</td>
+      <td>120 min, 22°C</td>
+      <td>1) 2x5 min, 4°C2) Distilled water, 1x22°C</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Only included in the main incubation. Ag agonist, Ant antagonist_
+
 After air-drying, the sections were exposed together with plastic scales with known concentrations of radioactivity to films sensitive to β -radiation (Hyperfilm, Amersham) for 4–18 weeks depending on the ligand used.
 
 For further details on image acquisition see Zilles, Schleicher (Zilles et al., 2002b) and Palomero-Gallagher and Zilles (Palomero-Gallagher and Zilles, 2018).
 
-## Analysis of cytoarchitecture
+### Analysis of cytoarchitecture
 
 Histological sections processed for the visualization of cell bodies or of myelin were scanned at an in-plane resolution of 1 µm per pixel using a light microscope (Axioplan 2 imaging, Zeiss, Germany) equipped with a motor-operated stage controlled by the KS400 (Zeiss, Germany) image-analyzing system (version 3.0) and Axiovision (version 4.6).
 
@@ -210,7 +1073,7 @@ The quantitative approach to identification of cortical borders is based on the 
 
 Maximum differences in profile shape can be expected at the interface between the feature vectors of two groups (or blocks) of profiles which represent adjacent cortical areas. Thus a MD function was determined by computing the distances between all pairs of neighboring blocks of profiles and plotting the values as a function of the block’s position. To control the stability of the distance function depending on the block size (number of profiles in a block), this procedure was repeated for varying block sizes (10–24 adjacent profiles; Figures 5C and 7C). A maximum of the MD function indicated a potential cytoarchitectonical border and was accepted as such after confirmation of its statistical significance by means of a Hotelling’s T2 test (p<0.01) and Bonferroni correction (Palomero-Gallagher and Zilles, 2018; Schleicher et al., 2005). Furthermore, since the presence of blood vessels can at times influence the MD, the biological relevance of significant maxima was confirmed by microscopic inspection of the histological section and by comparing spatially corresponding significant maxima from adjoining sections. Since the probability of locating such maxima at comparable sites in a stack of sections by reasons other than changes in cortical organization is exceedingly small, this procedure excluded biologically meaningless maxima which may be caused by artifacts (e.g. ruptures, folds) or local inhomogeneities in microstructure such as blood vessels or atypical cell clusters (Palomero-Gallagher and Zilles, 2018; Schleicher et al., 2005).
 
-## Analysis of receptor architecture
+### Analysis of receptor architecture
 
 Autoradiographs were digitized using a video-based image analyzing system composed of a CCD-camera (Axiocam MRm, Zeiss, Germany) and the image processing software Axiovision (Zeiss, Germany), as well as in-house-developed Matlab (The MathWorks, Natrick, MA) scripts. The resulting eight-bit images represent the regional and laminar distribution of receptor-binding sites. The plastic scales were used to compute a transformation curve indicating the relationship between gray values of an autoradiograph and concentrations of radioactivity in the tissue (linearized autoradiographs), so that the gray value of each pixel in the image could then, with the information concerning specific experimental conditions, be converted into a binding site concentration in fmol/mg protein. To provide a clear visualization of the regional and laminar receptor distribution patterns, digitized autoradiographs were linearly contrast enhanced and pseudo-color coded.
 

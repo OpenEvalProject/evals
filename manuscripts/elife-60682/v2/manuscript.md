@@ -31,19 +31,31 @@ The past decade has seen great structural biology efforts to increase our unders
 
 Understanding the allosteric transitions underlying gating thus requires complementary techniques, where the protein conformation can be followed in near-physiological conditions, that is at non-cryogenic temperature on freely moving protein, and over a broad range of ligand concentrations. To this aim, we previously developed the tryptophan/tyrosine induced quenching technique (TrIQ) on GLIC (Menny et al., 2017), a proton-gated channel (Parikh et al., 2011; Bocquet et al., 2007; Laha et al., 2013; Gonzalez-Gutierrez et al., 2017). In this technique, the protein is labeled with a small fluorophore(bimane, and collisional quenching by a neighboring indole (tryptophan) or phenol (tyrosine) moiety is used to report on changes in distance between two residues within the protein over a short distance range of 5–15 Å (Mansoor et al., 2002; Mansoor et al., 2010; Jones Brunette and Farrens, 2014). Bimane-quencher pairs on GLIC combined with kinetic analysis allowed us to characterize pre-activation motions occurring early in the conformational pathway of activation (Figure 1A). We found that they occur at lower proton concentrations than pore opening, and are complete in less than a millisecond, much faster than the rise time of the active population that occurs in the 30–150 ms range in electrophysiology recordings (Laha et al., 2013).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig1-v2.jpg)
+
+**Figure 1.:** (A) Scheme for GLIC activation, showing first a pre-activation step involving full compaction of the ECD and motion of the M2-M3 loop as monitored by fluorescence, followed by a pore opening step. Blue spheres indicate the location of sensors Bim136-Q101W and Bim250-Y197 used thereafter in this study. (B) GLIC-pH 4 (pdb code 4HFI) structure side view, the light blue rectangle represents the position of the membrane. Quenching pairs generated in our previous study (Menny et al., 2017) are highlighted: blue spheres show the Cα of the residues that were mutated into cysteines and bimane labeled (Bim33, Bim133, Bim135, Bim136, and Bim250), black spheres show the Cα of the quenchers (W160, L103W, W72, Q101W, and Y197). (C) pH-dependent response curves of Bim136-Q101W and Bim250-Y197 sensors, by electrophysiology after labeling (top panel) and with bimane fluorescence quenching (lower two panels). Fluorescence data are shown normalized to the fluorescence of the denatured protein (FSDS), bimane fluorescence is shown without quencher (○) and in presence of the quencher (●). ECD, extracellular domain.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Structure of two monomers of GLIC pH 4 showing in spheres the position of the sensor Bim135-W72 and of the different mutants tested. Propofol is shown in sticks in its known binding sites. (B) pH-dependent response in fluorescence quenching of Bim135 in presence (●) and absence (○) of the quencher W72 demonstrating it is the main cause of Bim135 quenching. (C) Normalized pH-dependent curves in electrophysiological response (black, ●) and fluorescence quenching (blue, ◆) showing that fluorescence pH50 is higher than current pH50 as in the other sensors shown in Figure 1—figure supplement 2. (D) and (E) show the effect of H235F and L157A mutations (◆) on Bim135-W72 fluorescence quenching. (F) and (G) show the effect of propofol on Bim135-W72 (●) and H235Q mutant (◆) fluorescence quenching. Conclusion on Bim135-W72: We unambiguously identify here Trp72 as the endogenous quenching residue of Bim135 since the mutant Bim135-W72F is functional in electrophysiology, but does not undergo pH-dependent quenching. The pH-dependent changes in fluorescence show a bell-shaped curve suggesting complex changes in distances at this level. When combined with Bim135-W72, L157A shows a decrease in pH50 of the first quenching component, and a diminished amplitude of the second unquenching component. Combined with Bim135-W72, H235F, and H235Q display a phenotype with a notably much smaller amplitude of the first component. On Bim135-W72, propofol causes a decrease in pH50 for the first quenching component. On Bim135-W72-H235Q, propofol restores a WT-like pH-dependent quenching curve. The observed global lower amplitude of the Bim135-W72 H235Q/F quenching curves may either result from a decrease in the extent of the reorganization responsible for the amplitude of the first component, or a rightward shift of the curve resulting in an overlap which would result in an averaging of the bimane quenching and unquenching curves. Therefore, the fluorescence data related to the Bim135-W72 pair cannot be interpreted in simple terms, although they further document the strong allosteric coupling between mutations and propofol binding and the upper part of the ECD. ECD, extracellular domain.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Normalized pH-dependent curves in electrophysiological response (black, ●) and fluorescence quenching (blue, ◆) showing that fluorescence pH50 is higher than current pH50 for both sensors Bim136-Q101W and Bim250-Y197. For the fluorescence quenching data, the value at neutral pH is set to 0 and values are then normalized to the value displaying the maximal change in fluorescence.
+
 Here, to explore the conformational landscape of GLIC during pH-gating, we further exploited the TrIQ approach. We performed electrophysiological and fluorescence quenching experiments on a series of allosteric mutants of GLIC, as well as in the presence of the general anesthetic propofol. We modeled the whole data set with a three-state allosteric model comprising a resting state, a pre-active state, and an active state. To help the interpretation of the fluorescence quenching data into structural terms, we built atomistic models of the various bimane-labeled proteins, and computed their gating transition pathways using iMODfit. Our results indicate that mutations alter the function via distinct mechanisms and differentially displace the allosteric equilibria involved in fluorescence quenching and electrophysiology recordings. This supports that pre-activation involves a major quaternary compaction of the ECD, and suggests that activation involves principally a reorganization of a ‘central gating region’ involving a contraction of the ECD β-sandwich and the tilt of the channel lining M2 helix.
 
 ## Results
 
-## Fluorescence and electrophysiological measurements
+### Fluorescence and electrophysiological measurements
 
-## Quenching pairs used in the study
+#### Quenching pairs used in the study
 
 In our previous fluorescence quenching experiments, a bimane fluorophore was introduced on GLIC by covalent labeling on an engineered cysteine, after mutation of the single endogenous cysteine C27S. A Trp or Tyr quenching residue was incorporated when necessary to generate a quenching pair. We created five quenching pairs (Figure 1B): three are located across the ECD interface and report on a quaternary compaction following pH drop (Bim136-Q101W, Bim133-L103W, and Bim33-W160), one reports on a tertiary reorganization at the top of the ECD (Bim135-W72), and one reports on the outward movement of the M2-M3 loop at the ECD-TMD interface (Bim250-Y197). In the present study, we used the Bim136-Q101W as sensor of the ECD compaction, along with Bim250-Y197 as a sensor of the M2-M3 loop motion. We also investigated in detail Bim135-W72, but the complex results for this pair precluded clear conclusions. The related data are thus presented and discussed in Figure 1—figure supplement 1.
 
 To accurately compare mutants, we first measured detailed pH-dependent fluorescence and electrophysiological curves (Figure 1C). Fluorescence was measured in steady-state conditions on detergent (DDM)-purified protein, and normalized to the fluorescence intensity under denaturing conditions (1% SDS), as previously described (Menny et al., 2017). GLIC allosteric transitions are particularly robust in different lipid/detergent conditions (Sauguet et al., 2014; Carswell et al., 2015) and DDM-purified protein yielded similar results to that of azolectin-reconstituted protein (Menny et al., 2017), while allowing better reproducibility. For both sensors, we confirmed that the pH-dependent fluorescence changes are essentially abolished when mutating the quenching partner to phenylalanine, which does not quench bimane fluorescence (Mansoor et al., 2002). We also confirmed that pH-dependent quenching curves for Bim136-Q101W and Bim250-Y197 display higher sensitivity (especially for Bim250-Y197) and lower apparent cooperativity than the pH-dependent activation curves recorded by electrophysiology (Figure 1—figure supplement 2).
 
-## The quaternary compaction at the ECD top is strongly allosterically coupled with the lower part of the ECD interface
+#### The quaternary compaction at the ECD top is strongly allosterically coupled with the lower part of the ECD interface
 
 Using the Bim136-Q101W conformational sensor, we first investigated allosteric mutants located at the inter-subunit interface in the lower part of the ECD (Figure 2A). We previously showed that E26Q produces a decrease in pH50 for activation (Nemecz et al., 2017), a phenotype that is conserved here on the Bim136-Q101W background (Figure 2B and C). The fluorescence quenching curve of Bim136-Q101W-E26Q also shows a decrease in pH50 (Figure 2D), and the ∆pH50 between Bim136-Q101W and Bim136-Q101W-E26Q are nearly identical in electrophysiology and fluorescence (−0.59 and −0.57, respectively; Table 1). Interestingly, the Bim136-Q101W-E26Q fluorescence quenching curve has a remarkable feature as compared to most mutants investigated thereafter: in the pH 7–8 range, where the pH-dependent fluorescence quenching is not yet observed, the fluorescence (F/FSDS) is significantly lower (F0=0.53) as compared to the Bim136-Q101W alone (F0=0.71). This suggests that substantial quenching is present at neutral pH and that E26Q not only alters the allosteric transition, but also modifies the conformation of the resting state itself which appears to be more compact when the E26Q mutation is present.
 
@@ -51,11 +63,317 @@ Using the Bim136-Q101W conformational sensor, we first investigated allosteric m
 
 **Figure 2.:** (A) Structure of two monomers of GLIC pH 4 (4HFI) showing positions of the fluorescence sensor (Bim136-Q101W) and the two mutated residues at the bottom of the ECD resulting in a partial loss of function. The lower panel shows a zoom on the interface with E26 and Y28 residues and their interactions with surrounding residues and a network of water molecules (blue spheres). (B) Electrophysiological recordings in oocytes of the mutants labeled with bimane showing shifted responses to higher proton concentrations in comparison with GLIC Bim136-Q101W. pH applications are shown above each trace and the horizontal scale represents 1 min of recording. Graphs represent pH-dependent curves showing a shift to higher proton concentrations in electrophysiological responses (C) and fluorescence quenching responses (D) for both mutants. ECD, extracellular domain.
 
+**Table 1.**
+ pH-dependence of electrophysiological and fluorescence quenching responses.pH50 and Hill coefficient nH average and standard deviation values are shown after individual fitting of each measurement. n corresponds to the number of oocytes for electrophysiology and the number of fluorescence measurements, each measurement including values for a full pH range. F0 corresponds to the initial fluorescence value at pH 7/8 and ∆Fmax is the maximum variation in fluorescence amplitude within the pH range (absolute values). To reasonably fit Bim136-Q101W + propofol current and Bim136-Q101W-Y28F fluorescence, Hill coefficients have been constrained to 2.5 and below 3 respectively. ∆pH50s are calculated between mutants and their parent construct Bim136-Q101W or Bim250-Y197 (labeled Ref). Their significance was calculated with a one-way ANOVA test using a Dunnett’s multiple comparisons test. The p-value is significantly different with p-value≤0.0001 (****), ≤ 0.001 (***), ≤0.01(**), ≤0.05 (*) or not significantly different when p-value>0.05 (ns). NF stands for non-functional and ND for not determined. To compare electrophysiological pH50 and fluorescence pH50 for each mutant (right column), unpaired t-tests were done with two-tailed p-value and 95% confidence intervals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Mutant</th>
+      <th rowspan="2" colspan="5">Electrophysiological response bimane labeled</th>
+      <th colspan="9">Fluorescence quenching response</th>
+      <th colspan="2">Fluorescence/</th>
+    </tr>
+    <tr>
+      <th colspan="9">in detergent solution</th>
+      <th colspan="2">electrophysiology</th>
+    </tr>
+    <tr>
+      <th>pH50</th>
+      <th>nH</th>
+      <th>n</th>
+      <th colspan="2">∆pH50</th>
+      <th>pH50</th>
+      <th>F0</th>
+      <th>∆FMAX</th>
+      <th>nH</th>
+      <th>n</th>
+      <th colspan="4">∆pH50</th>
+      <th colspan="2">∆pH50</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bim136-Q101W C27S</td>
+      <td>5.42±0.08</td>
+      <td>2.68±0.33</td>
+      <td>10</td>
+      <td colspan="2">Ref</td>
+      <td>5.85±0.21</td>
+      <td>0.71±0.03</td>
+      <td>0.45±0.06</td>
+      <td>0.77±0.18</td>
+      <td>17</td>
+      <td colspan="2">Ref</td>
+      <td colspan="2">–</td>
+      <td>0.43</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>+ E26Q</td>
+      <td>4.83±0.12</td>
+      <td>2.98±0.64</td>
+      <td>6</td>
+      <td>−0.59</td>
+      <td>****</td>
+      <td>5.28±0.34</td>
+      <td>0.53±0.02</td>
+      <td>0.22±0.02</td>
+      <td>1.13±0.27</td>
+      <td>4</td>
+      <td>−0.57</td>
+      <td>**</td>
+      <td colspan="2">–</td>
+      <td>0.45</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>+ Y28 F</td>
+      <td>3.88±0.08</td>
+      <td>2.63±0.68</td>
+      <td>3</td>
+      <td>−1.54</td>
+      <td>****</td>
+      <td>3.68±0.34</td>
+      <td>0.70±0.01</td>
+      <td>0.38±0.09</td>
+      <td>&lt;3</td>
+      <td>3</td>
+      <td>−2.17</td>
+      <td>****</td>
+      <td colspan="2">–</td>
+      <td>−0.2</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>+ Y28 F &amp; C27</td>
+      <td>5.34±0.11</td>
+      <td>2.03±0.12</td>
+      <td>6</td>
+      <td>−0.08</td>
+      <td>ns</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>–</td>
+      <td colspan="2">–</td>
+      <td colspan="2">–</td>
+      <td colspan="2">–</td>
+    </tr>
+    <tr>
+      <td>+ D32E</td>
+      <td>4.65±0.12</td>
+      <td>2.62±1.51</td>
+      <td>6</td>
+      <td>−0.77</td>
+      <td>****</td>
+      <td>5.52±0.05</td>
+      <td>0.68±0.02</td>
+      <td>0.38±0.01</td>
+      <td>0.75±0.05</td>
+      <td>3</td>
+      <td>−0.33</td>
+      <td>ns</td>
+      <td colspan="2">–</td>
+      <td>0.87</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>+ E222Q</td>
+      <td>4.68±0.09</td>
+      <td>2.51±0.33</td>
+      <td>5</td>
+      <td>−0.74</td>
+      <td>****</td>
+      <td>5.36±0.14</td>
+      <td>0.66±0.03</td>
+      <td>0.40±0.04</td>
+      <td>0.74±0.18</td>
+      <td>3</td>
+      <td>−0.49</td>
+      <td>*</td>
+      <td colspan="2">–</td>
+      <td>0.68</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>+ H235Q</td>
+      <td>4.04±0.21</td>
+      <td>1.19±0.31</td>
+      <td>6</td>
+      <td>−1.38</td>
+      <td>****</td>
+      <td>5.00±0.09</td>
+      <td>0.70±0.01</td>
+      <td>0.42±0.01</td>
+      <td>0.78±0.10</td>
+      <td>3</td>
+      <td>−0.85</td>
+      <td>****</td>
+      <td colspan="2">–</td>
+      <td>0.96</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>+ Propofol</td>
+      <td>5.16±0.13</td>
+      <td>=2.5</td>
+      <td>3</td>
+      <td>−0.26</td>
+      <td>*</td>
+      <td>5.33±0.06</td>
+      <td>0.67±0.02</td>
+      <td>0.38±0.01</td>
+      <td>1.21±0.21</td>
+      <td>4</td>
+      <td>−0.52</td>
+      <td>**</td>
+      <td colspan="2">–</td>
+      <td>0.17</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>+ H235 Q &amp; propofol</td>
+      <td>4.71±0.15</td>
+      <td>1.53±0.48</td>
+      <td>6</td>
+      <td>−0.71</td>
+      <td>****</td>
+      <td>5.67±0.14</td>
+      <td>0.70±0.01</td>
+      <td>0.43±0.01</td>
+      <td>1.25±0.04</td>
+      <td>3</td>
+      <td>−0.18</td>
+      <td>ns</td>
+      <td colspan="2">–</td>
+      <td>0.96</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>+ H235 F</td>
+      <td>NF</td>
+      <td>NF</td>
+      <td>3</td>
+      <td colspan="2">–</td>
+      <td>5.25±0.08</td>
+      <td>0.70±0.05</td>
+      <td>0.38±0.04</td>
+      <td>1.06±0.17</td>
+      <td>3</td>
+      <td>−0.60</td>
+      <td>**</td>
+      <td colspan="2">–</td>
+      <td colspan="2">–</td>
+    </tr>
+    <tr>
+      <td>+ L157 A</td>
+      <td>NF</td>
+      <td>NF</td>
+      <td>3</td>
+      <td colspan="2">–</td>
+      <td>5.42±0.65</td>
+      <td>0.67±0.01</td>
+      <td>0.19±0.09</td>
+      <td>0.71±0.46</td>
+      <td>4</td>
+      <td>−0.43</td>
+      <td>*</td>
+      <td colspan="2">–</td>
+      <td colspan="2">–</td>
+    </tr>
+    <tr>
+      <td>+ L246 A</td>
+      <td>NF</td>
+      <td>NF</td>
+      <td>3</td>
+      <td colspan="2">–</td>
+      <td>4.87±0.14</td>
+      <td>0.65±0.01</td>
+      <td>0.24±0.01</td>
+      <td>0.79±0.12</td>
+      <td>3</td>
+      <td>−0.98</td>
+      <td>****</td>
+      <td colspan="2">–</td>
+      <td colspan="2">–</td>
+    </tr>
+    <tr>
+      <td>Bim250-Y197</td>
+      <td>4.66±0.18</td>
+      <td>2.20±0.54</td>
+      <td>12</td>
+      <td>−0.76</td>
+      <td>****</td>
+      <td>5.83±0.17</td>
+      <td>0.59±0.04</td>
+      <td>0.33±0.09</td>
+      <td>1.19±0.28</td>
+      <td>8</td>
+      <td>−0.02</td>
+      <td>ns</td>
+      <td colspan="2">Ref</td>
+      <td>1.17</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>+ H235 F</td>
+      <td>NF</td>
+      <td>NF</td>
+      <td>3</td>
+      <td colspan="2">–</td>
+      <td>5.40±0.13</td>
+      <td>0.54±0.01</td>
+      <td>0.20±0.01</td>
+      <td>1.16± 0.15</td>
+      <td>4</td>
+      <td colspan="2">–</td>
+      <td>−0.43</td>
+      <td>**</td>
+      <td colspan="2">–</td>
+    </tr>
+    <tr>
+      <td>+ L157 A</td>
+      <td>NF</td>
+      <td>NF</td>
+      <td>3</td>
+      <td colspan="2">–</td>
+      <td>5.81±0.19</td>
+      <td>0.49±0.06</td>
+      <td>0.45±0.07</td>
+      <td>0.64±0.19</td>
+      <td>3</td>
+      <td colspan="2">–</td>
+      <td>−0.02</td>
+      <td>ns</td>
+      <td colspan="2">–</td>
+    </tr>
+    <tr>
+      <td>+ L246 A</td>
+      <td>NF</td>
+      <td>NF</td>
+      <td>3</td>
+      <td colspan="2">–</td>
+      <td>5.53±0.03</td>
+      <td>0.64±0.01</td>
+      <td>0.30±0.01</td>
+      <td>1.69±0.29</td>
+      <td>3</td>
+      <td colspan="2">–</td>
+      <td>−0.3</td>
+      <td>*</td>
+      <td colspan="2">–</td>
+    </tr>
+  </tbody>
+</table>
+
 Another mutation, Y28F, was reported to produce a moderate gain of function on a wild-type background (Nemecz et al., 2017). Surprisingly, mutating Y28F in the Bim136-Q101W (C27S) background yields a drastic loss of function characterized by a slow activating receptor and a marked decrease in pH50 (Figure 2B and C; Table 1). However, mutating back the C27 endogenous cysteine (Bim136-Q101W-Y28F (C27)) reverses the phenotype to that of Bim136-Q101W (C27S) (Figure 2C and Table 1), demonstrating that this loss of function is due to the combination of the C27S and Y28F mutations. In fluorescence, the quenching curve of Bim136-Q101W-Y28F (C27S) also shows a large decrease in pH50, associated with an apparent higher cooperativity. Again, the ∆pH50 is in the same range in fluorescence quenching (–2.2) and in electrophysiology (more than −1.5, the plateau could not be reached with this mutant preventing accurate measurement of the pH50).
 
 In conclusion, the quaternary compaction of the top of the ECD, monitored with the Bim136-Q101W sensor, is strongly coupled in an allosteric manner with the lower part of the ECD interface.
 
-## Long-range allosteric coupling between the TMD and the top of the ECD
+#### Long-range allosteric coupling between the TMD and the top of the ECD
 
 To investigate whether allosteric coupling occurs with more distant regions of the protein, we selected three loss of function mutations further away from the Bim136-Q101W pair: D32E near the ECD-TMD interface; H235Q in the middle of the TMD and E222Q, at the bottom of the TMD and lining the pore (Figure 3A; Sauguet et al., 2014; Nemecz et al., 2017).
 
@@ -67,15 +385,23 @@ Performing these mutations on the Bim136-Q101W-C27S background shows overall con
 
 The quenching data thus reveal an allosteric coupling between both ends of the protein, since the structural perturbations performed around the TMD are transmitted to the top of the ECD, impairing its compaction. However, as opposed to the ECD mutations E26Q and Y28F/C27S, these mutations have a stronger effect on the pH50 of the electrophysiological response as compared to fluorescence quenching. It thus suggests that both processes are not fully coupled for mutations further away from the sensor site.
 
-## Total loss of function mutations differentially alter ECD and TMD allosteric motions
+#### Total loss of function mutations differentially alter ECD and TMD allosteric motions
 
 To further explore the allosteric coupling within GLIC, we extended the analysis to mutations known to strongly or completely prohibit channel opening (Figure 4A and B). We selected three mutants: H235F, L157A, and L246A which show robust surface expression and no substantial current in oocytes (Figure 4C and Figure 4—figure supplement 1). For those mutants, in addition to electrophysiological recordings and fluorescence quenching measurements on Bim136-Q101W and Bim135-W72 (Figure 4D and Figure 1—figure supplement 1), we also monitored the motion of the M2-M3 loop with Bim250-Y197 (Figure 4E).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig4-v2.jpg)
+
+**Figure 4.:** (A) Structure of two monomers of GLIC pH 4 showing the position of the fluorescence sensors (Bim136-Q101W and Bim250-Y197) and three mutations causing a total loss of function. (B) Zooms on important re-organizations of the mutated residues between structures at pH 4 (4HFI-gray) and pH 7 (4NPQ-black). (C) Electrophysiological recordings in oocytes of the three mutants labeled with bimane showing no current in comparison with GLIC presenting sensor mutations only. pH-dependent curves in fluorescence for the three mutants with the sensor Bim136-Q101W (D) and Bim250-Y197 (E). ECD, extracellular domain; TMD, transmembrane domain.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** In gray is the GFP fluorescence and in blue the fluorescence resulting from GLIC immunolabeling via anti-HA antibody. The scale and exposure time are the same for all images.
 
 Mutants L157A and L246A reveal unique quenching phenotypes. Combined with Bim136-Q101W, they both show a pH-dependent quenching of fluorescence with a decreased amplitude (∆Fmax) associated with a significant decrease in pH50 as compared to the Bim136-Q101W background (Table 1). In contrast, they only weakly alter the motions at Bim250, which occur with a complete amplitude and small changes in pH50. The mutation H235F leads to a phenotype opposite to that of L157A or L246A. Its Bim136-Q101W pH-dependent curve shows a nearly full quenching amplitude together with a decrease in pH50, while it impairs the motion of the M2-M3 loop, with only a partial pH-dependent de-quenching at Bim250-Y197.
 
 Thus, while those mutants do not have a measurable access to the active state, they still show allosteric motions as revealed by fluorescence. Unlike the moderate loss of function mutants investigated above, these mutations alter the amplitude of the fluorescence curves, revealing profound changes of either the protein conformations and/or allosteric equilibria.
 
-## Long-range allosteric coupling between the ECD top and propofol
+#### Long-range allosteric coupling between the ECD top and propofol
 
 We further used the TrIQ technique to study the mechanism of action of the general anesthetic propofol, an allosteric modulator of GLIC. Propofol binds to at least three main sites within the TMD: one site in the pore itself near the middle of the TMD, and two sites in the upper part of the TMD at intra- or inter-subunit locations (Figure 5A). Propofol is an inhibitor of GLIC, but it has been shown to be a potentiator of the H235Q mutant (Fourati et al., 2018). We verified that these effects are conserved in the Bim136-Q101W background, with propofol decreasing the pH50 of activation of Bim136-Q101W while increasing the pH50 of Bim136-Q101W-H235Q (Figure 5B and C; Table 1). Fluorescence quenching experiments essentially parallel the electrophysiological data. Addition of 100 μM propofol on Bim136-Q101W decreases the fluorescence pH50 by half a unit, while it increases that of Bim136-Q101W-H235Q by more than half a unit (Figure 5D). Interestingly, a similar pattern is seen on sensor Bim135-W72 (Figure 1—figure supplement 1). Our data thus shows that propofol does act on the global allosteric transitions by displacing the equilibria of both pre-activation and activation. It is noteworthy that propofol is also likely to generate local effects upon binding to modulate the function, which are not investigated here. For instance, its binding into the pore may sterically block ion translocation to produce inhibition (Fourati et al., 2018).
 
@@ -83,21 +409,33 @@ We further used the TrIQ technique to study the mechanism of action of the gener
 
 **Figure 5.:** (A) Structure of two monomers of GLIC pH 4 showing positions of the fluorescence sensor Bim136-Q101W at the top of the ECD and three propofol binding sites intra, inter-subunit, and in the pore identified by X-ray crystallography (Fourati et al., 2018). (B) Example of electrophysiological response to 100 μM propofol during a low pH application (scale bars represent 100 nA and 30 s). (C) Electrophysiological pH-dependent curves of Bim136-Q101W with (◆) and without (●) the H235Q mutation showing inhibition and potentiation, respectively. (D) Effect of 100 μM propofol on fluorescence quenching without (top panel) and with H235Q mutation (lower panel) for the Bim136-Q101W sensor. ECD, extracellular domain.
 
-## Fit of the data with a three-state MWC model
+### Fit of the data with a three-state MWC model
 
 To characterize the effect of mutations in a more quantitative manner, we fitted the whole data set with a Monod-Wyman-Changeux (MWC) model. Since the fluorescence and electrophysiological pH-dependent curves presented here underlie two major allosteric steps, pre-activation (a fast process causing the changes in fluorescence as previously identified in stopped flow experiments; Menny et al., 2017) and activation (a slower process responsible for channel opening), we used a three-state model where the protein is in equilibrium between a resting R state, a pre-active pA state, and an active A state. Changes in fluorescence, although measured here in equilibrium conditions, actually occur with fast kinetics and are likely not related to desensitization. For the measure of activation, we used peak currents recorded in oocytes, assuming that desensitization would be negligible in these conditions. The putative slow-desensitized state of GLIC was thus not included in this model.
 
-In our allosteric model, we first defined a single proton binding site present in five copies with intrinsic affinities for each state named KR, KpA, and KA. The equilibria between the states at pH 7 are governed by isomerization constants LpA=R−/pA− and LA=pA−/A− (see Materials and methods for detailed equations). For each fluorescent sensor (Bim136-Q101W and Bim250-Y197), each allosteric state has a defined fluorescence intensity FR, FpA, and FA. As the model involves numerous parameters that cannot be fitted simultaneously given the available data, we adopted a stepwise strategy (summarized in Figure 6—figure supplement 1). We formulated several reasonable hypotheses to fit some parameters to the experimental data which were kept fixed while others were constrained to change together:
+In our allosteric model, we first defined a single proton binding site present in five copies with intrinsic affinities for each state named KR, KpA, and KA. The equilibria between the states at pH 7 are governed by isomerization constants LpA=$R−/pA−$ and LA=$pA−/A−$ (see Materials and methods for detailed equations). For each fluorescent sensor (Bim136-Q101W and Bim250-Y197), each allosteric state has a defined fluorescence intensity FR, FpA, and FA. As the model involves numerous parameters that cannot be fitted simultaneously given the available data, we adopted a stepwise strategy (summarized in Figure 6—figure supplement 1). We formulated several reasonable hypotheses to fit some parameters to the experimental data which were kept fixed while others were constrained to change together:
 
-## Setting the pre-activation parameters using total loss of function mutants
+#### Setting the pre-activation parameters using total loss of function mutants
 
 We started the fitting procedure with the total loss of function mutants, which do not have access to the A state, and simplify the model to one with two states (R and pA). We note that these mutants producing drastic phenotypes, could profoundly alter the protein conformations, possibly including that of the R and pA states and their intrinsic fluorescence. However, the H235F mutant has been shown by X-ray crystallography to adopt a well-folded conformation, captured in the crystal in a ‘Locally closed’ conformation corresponding to an active-like ECD and resting-like TMD conformation (Prevost et al., 2012; Prevost et al., 2013) from which we infer that the fluorescence from this mutant reports on WT-like motions.
 
 Fitting of the Bim136-Q101W-H235F curves is constrained by two experimental values (pH50 and Fmax) with three variable parameters, KR, KpA, and LpA. In consequence, for each value of LpA, the two other parameters are fully constrained by the experimental data. As an illustration, we fixed LpA=100. After manual fitting of the curves, we were able to extract KR=3.6×10–6 and KpA=1.0×10–6. We then used these KR and KpA values to fit the fluorescence quenching curves of Bim250-Y197-H235F, and sensors Bim136-Q101W and Bim250-Y197, only adjusting LpA (Figure 6—figure supplement 2). The model thus provides a minimal set of parameters accounting for the pH50s and absolute fluorescence changes of these four constructs. It notably suggests that H235F causes a marked stabilization of the R state over the pA state (increase in LPA).
 
-## Setting the activation parameters
+#### Setting the activation parameters
 
-In a second step, we added the activation state in the MWC model and sought to fit the pH-dependent electrophysiological response curves. Keeping the pre-activation parameters defined above, we found that a three-state model comprising a single proton site could not account for the separation between the fluorescence and electrophysiological curves. With a unique proton site, the model does not allow for more than a fivefold difference, between the curves, when in our experimental data Bim250-Y197, pH50s are, respectively, 5.83 and 4.66, more than 1 order of magnitude difference. To fit the activation curves, we thus added a second proton site (named primed, present in five copies), that specifically drives the activation step (KR’=KpA’, KpA’>KA’), while the first proton site specifically drives the pre-activation step (KR>KpA, KpA=KA). This model is reasonable since it is established that several proton sites are contributing to GLIC activation (Nemecz et al., 2017). Using this three-state two-site model, we found a set of parameters accounting for the pH-dependent curves of the sensors (Figure 6A). With the Bim136-Q101W sensor (Figure 6C), variations in the first half of the fluorescence curve result from the apparition of the pA state which is maximally populated (pA− around 0.5) near the pH50 of the fluorescence curve. At lower pHs, the equilibria are further displaced toward the A state, contributing to the decrease in fluorescence in the second half of the curve, and to the parallel apparition of current. With the Bim250-Y197 sensor (Figure 7), the mutation introduced causes a destabilization of the A state over the pA state (increase in LA), displacing the pH-dependent activation curve to lower pHs. The pH-dependent fluorescence curve is consequently mainly caused by the apparition of the pA state with a maximal pA− value reaching more than 0.8.
+In a second step, we added the activation state in the MWC model and sought to fit the pH-dependent electrophysiological response curves. Keeping the pre-activation parameters defined above, we found that a three-state model comprising a single proton site could not account for the separation between the fluorescence and electrophysiological curves. With a unique proton site, the model does not allow for more than a fivefold difference, between the curves, when in our experimental data Bim250-Y197, pH50s are, respectively, 5.83 and 4.66, more than 1 order of magnitude difference. To fit the activation curves, we thus added a second proton site (named primed, present in five copies), that specifically drives the activation step (KR’=KpA’, KpA’>KA’), while the first proton site specifically drives the pre-activation step (KR>KpA, KpA=KA). This model is reasonable since it is established that several proton sites are contributing to GLIC activation (Nemecz et al., 2017). Using this three-state two-site model, we found a set of parameters accounting for the pH-dependent curves of the sensors (Figure 6A). With the Bim136-Q101W sensor (Figure 6C), variations in the first half of the fluorescence curve result from the apparition of the pA state which is maximally populated ($pA−$ around 0.5) near the pH50 of the fluorescence curve. At lower pHs, the equilibria are further displaced toward the A state, contributing to the decrease in fluorescence in the second half of the curve, and to the parallel apparition of current. With the Bim250-Y197 sensor (Figure 7), the mutation introduced causes a destabilization of the A state over the pA state (increase in LA), displacing the pH-dependent activation curve to lower pHs. The pH-dependent fluorescence curve is consequently mainly caused by the apparition of the pA state with a maximal $pA−$ value reaching more than 0.8.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig6-v2.jpg)
+
+**Figure 6.:** (A) Scheme showing the three states and parameters of the model. (B) Table with multiplication factors of isomerization constants for pre-activation and activation as compared to Bim136-Q101W. For the Bim136-Q101W-H235Q in presence of propofol, the multiplication factors are given in comparison with Bim136-Q101W-H235Q. Isomerization constants of Bim136-Q101W and Bim136-Q101W-H235Q are shown above the table (see full table in Figure 6—figure supplement 2—source data 1). (C) Superposition of experimental data points and theoretical curves. Data points shown as spheres correspond to fluorescence intensities normalized on FSDS (blue, ◆), and to electrophysiological response normalized to the maximal current in (black, ●) except H235Q without propofol for which values were normalized to the values in the presence of propofol. Theoretical curves: the population of A state is shown in black lines and the fluorescence curve (blue line) is calculated from the sum of the three states’ fractional populations weighted by their intrinsic fluorescence intensity (see formula in Materials and methods section). For each mutant, the fit from Bim136-Q101W (Bim136-Q101W-H235Q for the last panel) is shown in dotted blue and black lines for a visual comparison and arrows are illustrating the shift in pH50. MWC, Monod-Wyman-Changeux.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The chart is showing the main assumptions and steps to establish parameters of the MWC model in order to fit the data. MWC, Monod-Wyman-Changeux.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Two-state model and parameters used in the model and their fixed values. (B) Superposition of experimental data points (fluorescence quenching normalized on FSDS), and theoretical fluorescence curve calculated from the two states weighted by their intrinsic fluorescence intensity. MWC, Monod-Wyman-Changeux.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig7-v2.jpg)
 
@@ -105,7 +443,7 @@ In a second step, we added the activation state in the MWC model and sought to f
 
 It should be noted that while the pre-activation parameters are substantially constrained by the experimental data (relying only on the assumption that LpA=100 for the H235F mutant), the activation parameters were chosen arbitrarily and other combinations of affinity and isomerization constants could also fit the data. In addition, the data set itself is heterogeneous since fluorescence experiments were performed on purified receptors, while electrophysiology was done on Xenopus oocytes. Therefore, the activation parameters used here are only meant to evaluate, as a proxy, the relative effect of each mutation on the activation transition.
 
-## Differential effects of GLIC mutants on pre-activation versus activation
+#### Differential effects of GLIC mutants on pre-activation versus activation
 
 Based on the sensors’ parameters, we fitted the various mutants by adjusting the isomerization constants of pre-activation and activation (Figures 6 and 7). Overall, reasonable fits can be achieved in most cases. Variations in isomerization constants between mutant and parent sensors were calculated as multiplication factors for pre-activation and activation (Lmutant/Lsensor, Figures 6B and 7A). In parallel, we performed the whole set of fits with different starting values of the H235F LpA constants (1000 and 100,000), yielding different sets of isomerization constants but in each case similar effects of the mutants (Figure 6—figure supplement 2—source data 1, all values presented below were taken from the LpA=100 fit unless indicated otherwise). A discrepancy between data points and fits is however consistently observed concerning the apparent cooperativity of most pH-dependent fluorescence curves. The pH-dependent decreases in fluorescence observed experimentally arise over a relatively large range of pHs, while theoretical curves display sharper shapes. It is possible that the pre-activation transition, modeled here by a single allosteric step, might actually involve multiple steps that are not implemented here. Despite this limitation, the model allows us to highlight clear-cut effects.
 
@@ -115,7 +453,7 @@ In contrast, mutants in the lower ECD (D32E), or in the TMD (H235Q and E222Q), a
 
 Finally, for total loss of function mutants, while H235F fluorescence quenching could be fitted reasonably well with a two-state R-pA model (Figure 7, Figure 6—figure supplement 2—source data 1) the best fits of L157A and L246A were of lower quality. In particular, pH-dependent curves of Bim136-Q101W-L157A and Bim136-Q101W-L246A are rather flat, the former being better represented by a straight line. The tentative fits are thus not satisfactory, suggesting that these mutants display complex phenotypes, plausibly driving the conformations into states that are not implemented in our model.
 
-## Investigation of quenching pairs reorganizations using iMODfit and bimane docking
+### Investigation of quenching pairs reorganizations using iMODfit and bimane docking
 
 In our previous study, the various quenching pairs were designed on the basis of the comparison of the X-ray structures of GLIC solved at pH 7 and pH 4, selecting pairs of residues that undergo large changes in backbone Cα distances. GLIC-pH 7 is in a non-conductive conformation with a closed hydrophobic gate in the upper part of the pore, consistent with a resting-like state. The GLIC-pH 4 structure shows in contrast an open gate compatible with a conductive conformation (Cheng and Coalson, 2010; Fritsch et al., 2011; Sauguet et al., 2013; Gonzalez-Gutierrez et al., 2017) consistent with an active-like structure.
 
@@ -123,7 +461,7 @@ However, the orientation of bimane fluorophore and the surrounding residues incl
 
 To investigate these issues, we computed approximate trajectories between the two states using iMODfit, and then modeled on them the bimane/quencher pair using a simple docking approach. iMODfit has been originally designed to fit structures inside electron-microscopy envelopes, notably from a very different starting conformation (Lopéz-Blanco and Chacón, 2013). This flexible fitting is made via the deformation of the structure using normal mode analysis (NMA) (see Materials and methods section). NMA approximates the surface of the conformational landscape and decomposes the movements into discrete modes. It takes advantage of a simplified but physically meaningful representation of the interaction between the atoms, based on simple springs connecting close pairs of atoms in the native structure. This method provides a time-independent equation and allows the study of slow (biologically relevant) and collective conformational transitions. NMA has been shown previously to allow the study of pLGIC gating mechanisms (Taly et al., 2005; Bahar et al., 2010). In addition, we have shown on NMDA receptors that iMODfit’s NMA-based fitting process can actually visit biologically relevant intermediate structures (Esmenjaud et al., 2019). The aim of this study is therefore not to capture the fine details of the transition pathway, but to generate plausible trajectories capturing the main features of the conformational reorganization.
 
-## Generation of two distinct conformational pathways using iMODfit
+#### Generation of two distinct conformational pathways using iMODfit
 
 Two independent trajectories were computed. Trajectory A (12 frames) starts from the closed GLIC-pH 7 structure to reach the open GLIC-pH 4 structure, and trajectory B (11 frames) starts from the GLIC-pH 4 structure to reach the GLIC-pH 7 structure. Both trajectories are fully reversible and are equally relevant to describe either activation or deactivation, since normal modes deformation can be applied in the two directions. RMSD analysis between each frame and the reference structure indicates gradual reorganization of GLIC across the length of both simulations (Figure 8A). Both trajectories, when visualized from the resting to active state, show three major reorganizations components: a quaternary twist of the pentamer, a ‘central gating reorganization’ comprising opening/closure of the pore, and a quaternary compaction of the ECD.
 
@@ -137,9 +475,25 @@ In trajectory A, the twist motion occurs in the first half of the trajectory (Fi
 
 **Figure 9.:** (A) Snapshots of GLIC TMD top view in the first and last frame of the trajectory A with a Bim250-Y197 quenching pair modeled at one interface. Bimane is shown in blue and Y197 in black spheres. One subunit is shown in gray, the others are in white, the M2-M3 loop is shown in blue, and the loop 2 from ECD is shown in purple for one subunit. Atoms used for measurements are shown in pale blue spheres and distances are indicated in angstroms. (B) Pore radius measured at the Ile233 level. (C) Intra-subunit separation of M2 and M3 helices measured between atoms indicated. Points at positions 0 and 13 are the distances measured in pH 4 and pH 7 X-ray structures. (D) Inter-subunit distances showing M2-M3 loop outward motion at the Pro250-Tyr197 level (top panel) and between bimane and Tyr197 centroids (bottom panel) in both trajectories A and B. ECD, extracellular domain; TMD, transmembrane domain.
 
+![Figure 10.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig10-v2.jpg)
+
+**Figure 10.:** (A) Snapshots of two subunits of GLIC ECD in the first and last frame of the trajectory A with a Bim136-Q101W quenching pair modeled at the interface. One subunit is shown in gray, the other in white with sheets of the β-sandwich shown in dark and light purple; bimane is shown in blue and Trp101 in black spheres; Cα and Cβ atoms used for measurements are shown in pale blue spheres and distances are indicated in angstroms. Inter-subunit distances showing ECD compaction measured at the Asp136-Gln101 level (B) and between bimane and Q101W centroids (C) in both trajectories A and B. Points at frames 0 and 13 are the distances in pH 4 and pH 7 X-ray structures. (D) Intra-subunit distance showing contraction at the bottom of the β-sandwich measured by Cα distances between Asp32 and Gly159. ECD, extracellular domain.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** (A) Snapshots of two subunits of GLIC ECD in the first and last frame of the trajectory A with a Bim133-L103W quenching pair modeled. One subunit is shown in gray, the other in white with β-sheets forming the β-sandwich shown in dark and light purple; bimane is shown in blue and quencher in black spheres; Cβ atoms used for measurements are shown in pale blue spheres and distances are indicated in angstroms. (B) Inter-subunit distances showing ECD compaction at the Arg133-Leu103 level (top panel) and between bimane and L103W centers of mass (bottom panel) in both trajectories A and B. Points at frames 0 and 13 are the distances in pH 4 and pH 7 structures subunits interfaces. ECD, extracellular domain.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig10-figsupp2-v2.jpg)
+
+**Figure 10—figure supplement 2.:** (A) Snapshots of two subunits of GLIC ECD in the first and last frame of the trajectory A with Bim33-W160 quenching pair modeled. One subunit is shown in gray, the other in white with β-sheets forming the β-sandwich shown in dark and light purple; bimane is shown in blue and quencher in black spheres; Cβ atoms used for measurements are shown in pale blue spheres and distances are indicated in angstroms. (B) Inter-subunit distances showing ECD compaction at the Lys33-Trp160 level (top panel) and between bimane and W160 centers of mass (bottom panel) in both trajectories A and B. Points at frames 0 and 13 are the distances in pH 4 and pH 7 structures subunits interfaces. ECD, extracellular domain.
+
+![Figure 10—figure supplement 3.](https://cdn.elifesciences.org/articles/60682/elife-60682-fig10-figsupp3-v2.jpg)
+
+**Figure 10—figure supplement 3.:** (A) Snapshots of one subunit of GLIC ECD, top view in the first and last frame of the trajectory A with Bim135-W72 quenching pair modeled. The adjacent subunit is shown in gray, and the main subunit is shown in white with β-sheets forming the β-sandwich shown in dark and light purple; bimane is shown in blue and quencher in black spheres. (B) Snapshots for the trajectory B. (C) Similar representation from the structure resolved by X-ray of Bim135-W72 at pH 4 (5IUX). Bimane was resolved in two out of five chains and showed a similar orientation to the one found in the last frames of both trajectories (A and B right panels). (D) Intra-subunit Cβ distances between Val135 and Trp72 (top panel) and between Bim135 and Trp72 centers of mass (bottom panel) along the trajectories. Conclusion for Bim135-W72, the distances between the centers of mass of the bimane and indole moieties are not correlated with the distances between the residue’s backbone. Since at this position bimane occupies a rather buried location within the protein structure, we suggest that these discrepancies come from local reorganization of surrounding residues that are not directly correlated with the movement of the backbone. Interestingly, we previously solved the X-ray structure of Bim135-W72 at pH 4 by crystallography, which shows a similar location of the bimane moiety with that of our docking in GLIC-pH 4. ECD, extracellular domain.
+
 Trajectory B shows substantially the same components but with an inverted sequence of events. The central gating reorganization starts first and is associated with an increase in pore radius at Ile233, followed by the twist motion in the second half of the trajectory, the latter being associated with further fluctuations of the pore radius. The ECD compaction is also spread over the whole trajectory. In conclusion, using iMODfit we could generate two distinct trajectories that are in principle equally plausible to describe a gating transition of GLIC activation or deactivation.
 
-## Visualization of quenching pairs on iMODfit trajectories
+#### Visualization of quenching pairs on iMODfit trajectories
 
 To relate the conformational reorganizations of GLIC to our fluorescence quenching data, we modeled the fluorophore/quenching pairs in both trajectories. To this aim, the cysteine and quencher mutations were modeled and the bimane moiety was docked into each frame while keeping it at a covalent-bond compatible distance to the sulfur atom of the cysteine. The distance between bimane centers of mass and their quenching indole/phenol moieties was then measured in each frame to follow its evolution throughout the trajectories.
 
@@ -151,13 +505,13 @@ In conclusion, visualizing the quenching pairs using a simple docking procedure 
 
 ## Discussion
 
-## Long-range allosteric coupling associated with pre-activation and pore-opening processes
+### Long-range allosteric coupling associated with pre-activation and pore-opening processes
 
 In this study, we revisited several fluorescent sensors by performing detailed pH-dependent quenching curves and parallel iMODfit/docking calculations. Our data clearly support that Bim136-Q101W and Bim250-Y197 sensors are bona fide reporters of the ECD compaction and the outward M2-M3 motion, respectively. In contrast, data related to the Bim135-W72 sensor (presented and discussed in Figure 1—figure supplement 1 and Figure 10—figure supplement 3) show complex patterns of quenching in both in silico and fluorescence experiments. We infer that, because of the buried location of Bim135 within the protein, it is sensitive to subtle structural reorganizations, the complexity of which precludes clear conclusions. This emphasizes that the fluorescence quenching approach requires screening of multiple positions to select the ones reporting on well-defined local motions.
 
 Using these appropriate sensors, we found that a series of five loss-of-function mutations, which shift the pH-dependent electrophysiological curves to higher concentrations, also shift the pH-dependent fluorescence quenching curve of ECD-compaction at the extracellular top of the protein. The ECD-compaction is thus sensitive to mutations scattered along the protein structure down to the opposite cytoplasmic end, indicating substantial allosteric coupling. Since the conformational motions followed by fluorescence occur early in the pathway of activation, it is expected that a shift in the fluorescence curve will be reflected by a parallel shift in the electrophysiological curve. Mutations in the ECD E26Q and Y28F/C27S both present such a phenotype with similar ∆pH50 in electrophysiology and fluorescence, suggesting that those mutations would mainly impact the pre-activation transition. In contrast, D32E, E222Q, and H235Q lead to a stronger pH50 shift in electrophysiology than in fluorescence suggesting that these mutations would alter not only the pre-activation, but also the downstream pore-opening transitions leading to an additive effect on the pH50.
 
-## Discriminating pre-activation versus activation phenotypes through allosteric modeling
+### Discriminating pre-activation versus activation phenotypes through allosteric modeling
 
 To interpret the mutant phenotypes in a more quantitative manner, we fitted the whole series of data using a three-state two-site model. We had to implement two proton binding sites to account for the separation of the fluorescence and electrophysiological curves of most constructs. This idea is supported by a mutational analysis that showed that several proton activation sites, located at multiple loci, contribute to activation (Nemecz et al., 2017). In addition, chimeric receptors made up of the GLICECD fused to the TMDs of various pLGICs (Duret et al., 2011; Ghosh et al., 2017; Laverty et al., 2017) or of the ELICECD fused to the GLICTMD (Schmandt et al., 2015) all preserve a proton-gated ion channel function, with the GLICECD-GABAρTMD chimera showing a markedly biphasic pH-dependent activation curve (Ghosh et al., 2017). This suggests that the proton activation sites, whose loci are not known, are scattered throughout the GLIC structure, in both the ECD and the TMD. In our model, we arbitrarily tuned the affinity constants of site 1 to drive the pre-activation transition, and of site 2 to drive the activation transition, to minimize the number of parameters involved.
 
@@ -169,7 +523,7 @@ The pattern of effect on LpA versus LA among the various mutants allows us to di
 
 **Figure 11.:** (A) One subunit of GLIC showing the positions of tested mutations in red spheres, with in gray the region involved in the central gating pathway identified by iModFit. (B) Multiplication factor shown on a log scale for each mutant to visualize how isomerization constants LpA and LA were modified in comparison with Bim136-Q101W, or for propofol (H235Q) in comparison with the same mutant without propofol.
 
-## Structural reorganizations associated with pre-activation versus activation
+### Structural reorganizations associated with pre-activation versus activation
 
 Comparison of the GLIC-pH 7 and GLIC-pH 4 X-ray structure highlighted key reorganizations involved in gating (Sauguet et al., 2014), notably a quaternary compaction of the ECD, a tertiary compaction of the β-sandwich in the lower part of the ECD, an outward motion of the M2-M3 loop, and a tilt of the M2 helix toward the M3 helix. Our combined electrophysiological and fluorescence study untangles evaluating the contribution of these specific motions to the pre-activation versus activation transitions.
 
@@ -179,7 +533,7 @@ For the activation, our mutational analysis points to a key role of the lower in
 
 The mutational analysis also shows for most mutations mixed effects on the isomerization constants of activation and pre-activation, suggesting that both processes involve overlapping regions. The Bim250 position is noteworthy in this respect, since the bimane, reporting an outward motion of the M2-M3 loop, monitors pre-activation, while the modification itself (P250C mutation plus reaction with bimane) principally alters the activation process. It is thus plausible that the M2-M3 loop could move in two successive steps, a first one during pre-activation conditioning dequenching and a second one during activation. In either case, our data further highlight a central role for this loop in ECD-TMD coupling.
 
-## Speculative interpretation of the mutant phenotypes in the context of computational trajectories
+### Speculative interpretation of the mutant phenotypes in the context of computational trajectories
 
 The transition pathway of GLIC has been previously studied by atomic-level molecular dynamics simulations in an explicit membrane environment. While the timescale of the transition greatly exceeds that of even the longest possible simulations, two studies addressed this issue. The first one started from the GLIC-pH 4 structure and instantly set it to neutral pH, followed by a 1 μs simulation (Nury et al., 2010), yielding concomitant closing of the pore and twist of the whole structure. The second one is based on the string method, using the ‘swarms of trajectories’ approach, computing a trajectory between GLIC-pH 7 and GLIC-pH 4 (Lev et al., 2017). The trajectory shows a sequence of events starting from the closed to the open conformation. A first major reorganization involves the opening of the pore, its hydration, and the compaction of the lower part of the ECD β-sandwich. This is followed by a major reorganization of the ECD, notably its twist and its quaternary compaction. This sequence of events appears hardly compatible with our quenching data, although a comprehensive integration of both sets of data would require extensive in silico investigations of the bimane-labeled mutants to analyze the reorganizations of the quenching pairs. Of note, an important limitation of the method is that it implicitly postulates the occurrence of a single trajectory. However, a coarse-grained simulation (hybrid elastic-network Brownian dynamics) predicted two possible pathways for GLIC gating, that are characterized by different compactions of the ECD (Orellana et al., 2016).
 
@@ -191,7 +545,7 @@ In addition, both trajectories show a ‘central gating motion’ involving seve
 
 Concerning the order in which reorganizations are observed, trajectory A is a better fit to the fluorescence data. It suggests a scenario involving, during pre-activation, progressive ECD compaction and beginning of the M2-M3 loop motion, generating the fluorescence variations. Then the M2-M3 loop completes its movement in concert with β-sandwich compaction and pore opening. Future computational studies are needed to explore this possibility.
 
-## Consequences on the gating mechanism within the pLGIC family
+### Consequences on the gating mechanism within the pLGIC family
 
 The conservation of the general gating mechanism between bacterial and eukaryotic pLGICs is well documented by the available structures with the common allosteric regulatory sites for ligands and mutations (Sauguet et al., 2015; Bertozzi et al., 2016; Rienzo et al., 2016), together with the allosteric compatibility between eukaryotic and prokaryotic ECD/TMD domains to form functional chimeras (Duret et al., 2011; Moraga-Cid et al., 2015; Laverty et al., 2017). It is therefore tempting to speculate that the pre-activation transition of GLIC that we characterize here might have counterparts in human neurotransmitter-gated receptors. In this line, some recent structures of eukaryotic receptors including the 5-HT3R (Polovinkin et al., 2018), the GABAAR (Masiulis et al., 2019) and the GlyR (Yu et al., 2021) show pre-active-like conformations characterized by marked agonist-elicited reorganization of the ECD but a closed channel at the TMD. Additionally, the flipped or primed states, where the conformational change of the orthosteric site is predicted to be complete, but where the channel is closed, would fit the functional requirement of a pre-active state (Lape et al., 2008; Plested, 2014).
 
@@ -201,35 +555,165 @@ Our work on GLIC provides general mechanisms of how mutations affect pLGICs tran
 
 ## Materials and methods
 
-## Mutagenesis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Gloeobacter violaceus)</td>
+      <td>glvI, GLIC</td>
+      <td>UniProt</td>
+      <td>Q7NDN8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3) C43</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0019</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Xenopus laevis)</td>
+      <td>Xenopus oocytes</td>
+      <td>Centre de Ressources Biologiques Xénopes (Rennes- France) and Ecocyte Bioscience (Dortmund-Germany)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA Tag (rabbit)</td>
+      <td>Euromedex</td>
+      <td>HA-1A1-20 µL</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit – Alexa Fluor 645 (goat)</td>
+      <td>Molecular probes</td>
+      <td>A21246</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pet20b-MBP-GLIC</td>
+      <td>Bocquet et al., 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMT3-GLIC-HAtag</td>
+      <td>Nury et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pmt3-GFP</td>
+      <td>Nury et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Monobromo-Bimane</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>M1378</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bunte salt Bimane</td>
+      <td>Menny et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propofol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Y0000016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>iMODfit</td>
+      <td>Lopéz-Blanco and Chacón, 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>MOLEonline</td>
+      <td>Pravda et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Clampfit</td>
+      <td>Molecular devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>AxoGraph X</td>
+      <td></td>
+      <td>https://axograph.com/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mutagenesis
 
 All GLIC mutants were obtained using site-directed mutagenesis on the C27S background of GLIC, except Bim136-Q101W-Y28F (C27) for which the endogenous cysteine was introduced back. Similarly to previous studies (Sauguet et al., 2014; Menny et al., 2017; Nemecz et al., 2017), two different vectors were used: a pet20b vector with GLIC fused to MBP by a linker containing a thrombin cleavage site under a T7 promoter for expression in Escherichia coli BL21; a pmt3 vector for expression in oocytes with GLIC containing a Cter HA tag and in Nter the peptide signal from α7-nAChR. Incorporation of the mutations in both vectors was verified by sequencing.
 
-## GLIC mutants production and purification
+### GLIC mutants production and purification
 
 Protein production of MBP-GLIC and labeling was done as previously described (Menny et al., 2017) with a few modifications. In brief, MBP-GLIC was expressed in BL21 E. coli cells overnight at 20°C after induction by 100 µM IPTG. Cells were collected and resuspended in buffer A containing 20 mM Tris; 300 mM NaCl at pH 7.4 and subsequently disrupted by sonication. After membrane separation by ultracentrifugation, membrane proteins were extracted overnight in buffer A supplemented with 2% DDM. After ultracentrifugation, supernatant was incubated with amylose resin and MBP-GLIC was eluted using buffer A supplemented with DDM 0.02% and a saturating concentration of maltose. To remove the endogenous maltoporin contaminant, a first size exclusion chromatography was performed on superose 6 10/300 GL in buffer A with 0.02% DDM. GLIC-MBP concentration was measured and the protein was incubated overnight at 4°C with thrombin to cleave off MBP and with monobromobimane (mBBr) at a 1:5 (GLIC monomer:fluorophore) ratio, to label the protein. The mBBr dye being solubilized in DMSO, the sample volume was adjusted to remain below 1% DMSO final concentration. After labeling, a second gel filtration was done to get rid of the MBP and unbound dye molecules. GLIC-Bimane samples were flash-frozen in liquid nitrogen and stored at –80°C prior to fluorescence measurements.
 
-## Steady-state fluorescence measurements
+### Steady-state fluorescence measurements
 
 Fluorescence measurements were done as previously described (Menny et al., 2017). Samples were equilibrated to room temperature and diluted with buffer A with 0.02% DDM to reach a concentration around 40 µg.ml–1. Fluorescence recording buffers consisting of 300 mM NaCl, 2.7 mM KCl, 5.3 mM Na2HPO4, and 1.5 mM KH2PO4 were prepared beforehand and their pH was adjusted either to 7.4 or to different pH in order to reach the desired pH value (from pH 8 to 3) after mixing equal volumes with buffer A 0.02% DDM. Measurements were done at 20°C in 1 ml disposable UV transparent 2.5 ml cuvettes in a Jasco 8200 fluorimeter with 385 nm excitation wavelength and the emission spectra were recorded through 2.5 nm slits from 420 to 530 nm. Parameters were kept constant throughout the study. On the sample at pH 7.4, an addition of SDS to reach 1% final concentration was done to obtain the FSDS value and a tryptophan emission spectrum was done before and after SDS addition in order to monitor denaturation.
 
-Fitting of fluorescence measurements was done on each fluorescence series (values from 1 pH range) with at least three series per mutant using the following Hill equation:y(x)=ΔFmax+xnHxnH+EC50nH+F0
+Fitting of fluorescence measurements was done on each fluorescence series (values from 1 pH range) with at least three series per mutant using the following Hill equation:
+
+$$
+y(x)=\frac{ΔF_{max}+x^{n_{H}}}{x^{n_{H}}+EC_{50}^{n_{H}}}+F_{0}
+$$
 
 where ∆Fmax represents the maximal change in fluorescence amplitude, F0 represents the initial fluorescence at pH 7.8; nH represents the Hill number, and EC50 represents the proton concentration for which half of the maximal fluorescence change is measured. For Bim136-Q101W and Bim250-Y197 and in some other mutants, we excluded from the fit the data point below pH 3.5 that show a small but significant change in fluorescence intensity in the opposite direction to the quenching curves. We did not fit the Bim135-W72 mutant that shows a bell-shaped curve.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Electrophysiological recordings of GLIC were made on Xenopus oocytes provided either by the Centre de Ressources Biologiques Xénopes (Rennes-France) or by Ecocyte Bioscience (Dortmund-Germany). Recordings were made as previously described (Nury et al., 2011) with oocytes 48–96 hr post nucleus injection with a mix containing 80 ng.µl–1 of GLIC cDNA and 25 ng.µl–1 of GFP cDNA. Recordings were done in MES buffer containing 100 mM NaCl, 3 mM KCl, 1 mM CaCl2, 1 mM MgCl2, and 10 mM MES with pH adjusted by addition of 2 M HCl. The perfusion chamber contained two compartments and only a portion of the oocyte was perfused with low pH solution. Bunte salt bimane labeling was performed prior to recording by incubation for 1 hr at room temperature with the dye concentrated at 1 mM in MES buffer. To correct data for rundown, a solution with a pH value in the middle of the pH range (usually pH 5) was used as a reference at the beginning and the end of the recording and every 3/4 applications. To limit the effect of propofol that can stay in the membrane in-between applications (Heusser et al., 2018), only a limited number of pH solutions were tested per oocyte.
 
-Electrophysiological recordings were analyzed using AxoGraph X and Prism was used to fit individual pH-dependent recording using the Hill equation:yx=Imax+xnHxnH+EC50nH
+Electrophysiological recordings were analyzed using AxoGraph X and Prism was used to fit individual pH-dependent recording using the Hill equation:
+
+$$
+yx=\frac{I_{max}+x^{n_{H}}}{x^{n_{H}}+EC_{50}^{n_{H}}}
+$$
 
 where Imax represents the maximal current in percentage of the response from the reference solution. nH represents the hill number and EC50 represents the proton concentration for which half of the maximal electrophysiological response is recorded.
 
-## Xenopus oocytes immunolabeling
+### Xenopus oocytes immunolabeling
 
 Mutants generating currents smaller than 500 nA at high proton concentrations (pH 3.5) were categorized as non-functional. For these non-functional mutants, expression tests were performed by immunolabeling of oocytes as previously described (Prevost et al., 2012; Sauguet et al., 2014). 34 days postinjection, GFP-positive oocytes were fixed overnight in paraformaldehyde (PFA) 4% at 4°C. Immunolabeling was performed after 30 min saturation by 10% horse serum in phosphate-buffered saline. Rabbit anti-HA-tag primary antibody was incubated for 90 min in 2% horse serum and the secondary antibody anti-rabbit coupled to Alexa Fluor 645 was incubated for 30 min. After a second PFA fixation overnight, oocytes were included in warm 3% low-melting agarose and 40 µm slices were made using a vibratome on a portion of the oocyte. Several slices per oocyte were mounted on a slide and analyzed in an epifluorescence microscope using constant exposure time between non-functional mutant and functional mutants used as positive controls.
 
-## Molecular modeling
+### Molecular modeling
 
 The iMODfit flexible fitting method (Lopéz-Blanco and Chacón, 2013) searches the conformational space using the lowest normal modes for the best cross-correlation fit of a starting conformation atomic model into a target conformation density map. Two trajectories were generated here. In trajectory A structure, 4NPQ (GLIC-pH 7) is fitted to the density of 4HFI (GLIC-pH 4), and in trajectory B structure, 4HFI is fitted to the density of 4NPQ.
 
@@ -245,14 +729,60 @@ The geometry of the ion channel has been computed with MOLEonline webserver (mol
 
 For the Bimane docking procedure on each intermediate structure, the position of side chains was first optimized with the software Scwrl4 (Krivov et al., 2009) while keeping the main chain rigid. This step also allowed the introduction of point mutations. The structure of the protein and bimane was converted to pdbqt files with the software open babel 2.4.1. Covalent docking was then performed with the software smina (Koes et al., 2013). The box for docking has been defined around the mutated cysteine residue, with a size of 30 Å in each direction. Covalent docking forced the bimane to be in appropriate distance with the sulfur atom of the introduced cysteine. Only the first pose was kept for further analysis.
 
-## MWC model building
+### MWC model building
 
-To build a three-state MWC model, the following equations were used to obtain the population of each state resting, pre-active and active:A¯=(1+α)5×(1+α′)5(1+α)5×(1+α′)5+LpALA(1+CpACAα)5×(1+CpA′CA′α′)5+LA(1+CAα)5×(1+CA′α′)5pA¯=LA(1+CAα)5×(1+CA′α′)5(1+α)5×(1+α′)5+LpALA(1+CpACAα)5×(1+CpA′CA′α′)5+LA(1+CAα)5×(1+CA′α′)5R¯=LpALA(1+CpACAα)5×(1+CpA′CA′α′)5(1+α)5×(1+α′)5+LpALA(1+CpACAα)5×(1+CpA′CA′α′)5+LA(1+CAα)5×(1+CA′α′)5
+To build a three-state MWC model, the following equations were used to obtain the population of each state resting, pre-active and active:
 
-With constants defined below:LpA=RpH8¯pApH8¯CpA=KpAKRCpA′=KpA′KR′α=[H+]KALA=pApH8¯ApH8¯CA=KAKpACA′=KA′KpA′α′=[H+]KA′
+$$
+A¯=\frac{(1+\alpha)^{5}\times(1+\alpha^{′})^{5}}{(1+\alpha)^{5}\times(1+\alpha^{′})^{5}+L_{pA}L_{A}(1+C_{pA}C_{A}\alpha)^{5}\times(1+C_{pA}^{′}C_{A}^{′}\alpha^{′})^{5}+L_{A}(1+C_{A}\alpha)^{5}\times(1+C_{A}^{′}\alpha^{′})^{5}}
+$$
 
-The weighted fluorescence value was calculated as followed:F=R−×FR+pA−×FpA+A−×FA
 
-With fluorescence values set at:FRBim136−Q101W=0.70FRBim250−Y197=0.56FpABim136−Q101W=0.30FpABim250−Y197=0.92FABim136−Q101W=0.30FABim250−Y197=0.92
 
-Isomerization constants were manually adjusted to fit theoretical and experimental fluorescence quenching curves and normalized electrophysiological curves. Of note, the fluorescence variations of E26Q mutant were normalized to that of the Bim136-Q101W, to correct for its effect on the fluorescence at pH 7 which likely reflects an alteration of the structure of the resting state, independently of the allosteric transitions. Additionally, the A´ population for the Y28F mutant does not reach 1, so it was normalized in order to compare the values with the normalized experimental data.
+$$
+pA¯=\frac{L_{A}(1+C_{A}\alpha)^{5}\times(1+C_{A}^{′}\alpha^{′})^{5}}{(1+\alpha)^{5}\times(1+\alpha^{′})^{5}+L_{pA}L_{A}(1+C_{pA}C_{A}\alpha)^{5}\times(1+C_{pA}^{′}C_{A}^{′}\alpha^{′})^{5}+L_{A}(1+C_{A}\alpha)^{5}\times(1+C_{A}^{′}\alpha^{′})^{5}}
+$$
+
+
+
+$$
+R¯=\frac{L_{pA}L_{A}(1+C_{pA}C_{A}\alpha)^{5}\times(1+C_{pA}^{′}C_{A}^{′}\alpha^{′})^{5}}{(1+\alpha)^{5}\times(1+\alpha^{′})^{5}+L_{pA}L_{A}(1+C_{pA}C_{A}\alpha)^{5}\times(1+C_{pA}^{′}C_{A}^{′}\alpha^{′})^{5}+L_{A}(1+C_{A}\alpha)^{5}\times(1+C_{A}^{′}\alpha^{′})^{5}}
+$$
+
+With constants defined below:
+
+$$
+L_{pA}=\frac{R_{pH8}¯}{pA_{pH8}¯}C_{pA}=\frac{K_{pA}}{K_{R}}C_{pA}^{′}=\frac{K_{pA}^{′}}{K_{R}^{′}}\alpha=\frac{[H^{+}]}{K_{A}}
+$$
+
+
+
+$$
+L_{A}=\frac{pA_{pH8}¯}{A_{pH8}¯}C_{A}=\frac{K_{A}}{K_{pA}}C_{A}^{′}=\frac{K_{A}^{′}}{K_{pA}^{′}}\alpha^{′}=\frac{[H^{+}]}{K_{A}^{′}}
+$$
+
+The weighted fluorescence value was calculated as followed:
+
+$$
+F=R−\timesF_{R}+pA−\timesF_{pA}+A−\timesF_{A}
+$$
+
+With fluorescence values set at:
+
+$$
+F_{R}^{Bim136−Q101W}=0.70F_{R}^{Bim250−Y197}=0.56
+$$
+
+
+
+$$
+F_{pA}^{Bim136−Q101W}=0.30F_{pA}^{Bim250−Y197}=0.92
+$$
+
+
+
+$$
+F_{A}^{Bim136−Q101W}=0.30F_{A}^{Bim250−Y197}=0.92
+$$
+
+Isomerization constants were manually adjusted to fit theoretical and experimental fluorescence quenching curves and normalized electrophysiological curves. Of note, the fluorescence variations of E26Q mutant were normalized to that of the Bim136-Q101W, to correct for its effect on the fluorescence at pH 7 which likely reflects an alteration of the structure of the resting state, independently of the allosteric transitions. Additionally, the $A´$ population for the Y28F mutant does not reach 1, so it was normalized in order to compare the values with the normalized experimental data.

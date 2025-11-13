@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Early-life microbiota has been linked to the development of chronic inflammatory diseases. It has been hypothesized that maternal vaginal microbiota is an important initial seeding source and therefore might have lifelong effects on disease risk. To understand maternal vaginal microbiota’s role in seeding the child’s microbiota and the extent of delivery mode-dependent transmission, we studied 665 mother–child dyads from the COPSAC 2010 cohort. The maternal vaginal microbiota was evaluated twice in the third trimester and compared with the children’s fecal (at 1 week, 1 month, and 1 year of age) and airway microbiota (at 1 week, 1 month, and 3 months). Based on the concept of weighted transfer ratios (WTRs), we have identified bacterial orders for which the WTR displays patterns indicate persistent or transient transfer from the maternal vaginal microbiome, as well as orders that are shared at later time points independent of delivery mode, indicating a common reservoir.
+Early-life microbiota has been linked to the development of chronic inflammatory diseases. It has been hypothesized that maternal vaginal microbiota is an important initial seeding source and therefore might have lifelong effects on disease risk. To understand maternal vaginal microbiota’s role in seeding the child’s microbiota and the extent of delivery mode-dependent transmission, we studied 665 mother–child dyads from the COPSAC2010 cohort. The maternal vaginal microbiota was evaluated twice in the third trimester and compared with the children’s fecal (at 1 week, 1 month, and 1 year of age) and airway microbiota (at 1 week, 1 month, and 3 months). Based on the concept of weighted transfer ratios (WTRs), we have identified bacterial orders for which the WTR displays patterns indicate persistent or transient transfer from the maternal vaginal microbiome, as well as orders that are shared at later time points independent of delivery mode, indicating a common reservoir.
 
 ## Introduction
 
@@ -40,15 +40,21 @@ In this study, we investigated the vaginal microbiota during the last trimester 
 
 ## Results
 
-## Vaginal microbiota
+### Vaginal microbiota
 
 We successfully sequenced 1322 vaginal samples from gestational weeks 24 (n = 657) and 36 (n = 665), with a mean read count of 53,875 (interquartile range [IQR]: 38,330–64,632), representing 3287 unique Amplicon sequence variants (ASVs), with a mean observed richness of 25.0 (IQR: 12–32). We observed 28 unique phyla, of which 10 had a mean abundance above 0.1%, and the most abundant phyla were Firmicutes (85.2%), Actinobacteria (12.0%), and Proteobacteria (1.5%). We observed 463 genera, 94 with mean abundance above 0.1%, and dominated by Lactobacillus (81.1%) and Gardnerella (9.0%). Of the 3287 ASVs, 420 had a mean abundance above 0.1% and the most abundant ASVs were four Lactobacilli and one Gardnerella, with sequences matching L. crispatus (31.5%), L. iners (29.5%), L. gasseri (10.4%), G. vaginalis (4.6), and L. jensenii (4.5%). We clustered the vaginal samples into six clusters (Supplementary file 1, section 1.3.1), and based on the dominant ASVs in each cluster, we refer to them as CST I (L. crispatus), CST II (L. gasseri), CST III (L. iners), CST IV-a (G. vaginalis, few Lactobacillus), CST IV-b (G. vaginalis, some Lactobacillus), and CST V (L. jensenii), in accordance with Gajer et al., 2012 (Figure 1A). The observed richness differed significantly between CSTs (p<10−15, Figure 1B), being lowest in CSTs I, slightly higher in CST III and CST V, while CST IV-a and CST IV-b had the highest observed richness. Similarly, for Shannon diversity index, CST I and CST III were significantly lower than the rest, while CST IV-a and CST IV-b were also significantly higher than CST II and CST V (p<10−15, Figure 1C, Supplementary file 1, section 1.3.2). We analyzed the stability of the vaginal microbiota in relation to their CSTs and by comparing intra- and inter-individual beta diversity distances.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/57051/elife-57051-fig1-v1.jpg)
+
+**Figure 1.:** (A) Boxplot of top amplicon sequence variant (ASV) abundance for each CST (including two most abundant ASVs from each CST), (B) boxplot of observed richness by CST, (C) boxplot of Shannon diversity index by CST, and (D) alluvial plot showing the CST at weeks 24–36 for each woman. All plots are colored by the CST.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57051/elife-57051-fig1-figsupp1-v1.jpg)
 
 Of the 657 women with both week 24 and 36 data, 562 (85.5%) had the same CST at week 36, as they had at week 24, with CST IV-b (21 of 35–60.0%) being significantly less stable (χ2 test, adjusted p-value<0.048), except CST IV-a (30 of 45–66.7%) and CST V (26 of 39–66.7%), while CST I and CST III were the most stable (92.5% and 91.1%, respectively) (Figure 1, Supplementary file 1, section 1.3.2.3.2). The median Jensen–Shannon divergence (JSD) between women’s paired week 24 and week 36 samples (medianJSDpairs = 0.031) was significantly lower than the median JSD between mismatched pairs of week 24 and week 36 samples (medianJSDnonpairs = 0.635) (p<10−3). Furthermore, the distance from week 24 to week 36 strongly depends on week 24 CST, with the highest median divergence for CST IV-b (medianJSDdist = 0.093), followed by similar values for CST IV-a (medianJSDdist = 0.076), CST V (medianJSDdist = 0.068), and CST II (medianJSDdist = 0.064), with the lowest median divergence for CST I (medianJSDdist = 0.023) and CST III (medianJSDdist = 0.022) (Supplementary file 1, section 1.3.2.3.2).
 
 On a non-metric multidimensional scaling plot of JSD for the vaginal samples, it shows that CST I, CST II, and CST III are better defined than CST IV-a, CST IV-b, and CST V (Figure 1—figure supplement 1). A statistical test of the JSD dispersion confirmed that CST I and CST III were less dispersed than the other CSTs (adjusted p<10−3), while both CST II and CST V were less dispersed than CST IV-a and CST IV-b (adjusted p<0.02). Lastly, the beta diversity was not dependent on sampling time point (PERMANOVA p=0.86), while CSTs were highly significant (PERMANOVA R2 = 0.80, p<0.001, Supplementary file 1, section 1.4.2).
 
-## Infant microbiota
+### Infant microbiota
 
 The microbiota of the airway and fecal samples have previously been described in detail; for the full analysis, see Mortensen et al., 2016 and Stokholm et al., 2018 for the airway and fecal samples, respectively. Of the 695 children in the COPSAC2010 cohort, we included the 651 children (94%) with a corresponding maternal week 36 vaginal sample. Of these children, 520 (79.8%) were delivered vaginally, 68 (10.5%) by in labor CS (CS-L), and 63 (9.7%) by scheduled CS (CS-S).
 
@@ -66,25 +72,248 @@ In the 1688 fecal samples from the infants with a corresponding maternal week 36
 
 As for the airway samples, the time point significantly explained a small part of the variation in beta diversity (time point: R2 = 0.035, p<0.001, Figure 3D–E), while delivery mode and mother's CST at week 36 alone were not significantly associated (p=1). Interestingly, when sequentially adding time points followed by delivery mode or mother's CST to the analysis, both did significantly explain an additional small fraction of the beta diversity (delivery mode: R2 = 0.004, p<0.001, mother's CST: R2 = 0.007, p<0.001) (Supplementary file 1, section 2.3.4).
 
-## Transfer of the microbiota
+### Transfer of the microbiota
 
 Of a total of 3287 identified vaginal ASVs, for transfer according to compartment and time point, 293–404 were tested for vertical transfer in vaginally born children and 104–181 in CS-born children. These ASVs covered 31–66%, 36–90%, and 59–92% of the vaginal, airway, and fecal reads, respectively. Table 1 shows summary statistics on the ASVs tested for each comparison.
 
-## Transfer of specific ASVs
+**Table 1.**
+ Descriptives on testable Amplicon sequence variant (ASV) in terms of numbers of ASVs, vaginal, fecal, and airway total coverage, number of tests reaching nominal, and false discovery rate-corrected significance.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Compartment</th>
+      <th>Delivery mode</th>
+      <th>Age (days)</th>
+      <th>Testable ASVs (n)</th>
+      <th>Vaginal relative abundance (%)</th>
+      <th>Child relative abundance (%)</th>
+      <th>Min (p)* (n)</th>
+      <th>Min (q)† (n)</th>
+      <th>p&lt;0.01 (n)</th>
+      <th>p&lt;0.05 (n)</th>
+      <th>q&lt;0.05 (n)</th>
+      <th>q&lt;0.10 (n)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Airways</td>
+      <td>CS</td>
+      <td>7</td>
+      <td>104</td>
+      <td>31.0</td>
+      <td>36.5</td>
+      <td>0.058</td>
+      <td>0.990</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Fecal</td>
+      <td>CS</td>
+      <td>7</td>
+      <td>160</td>
+      <td>31.6</td>
+      <td>73.3</td>
+      <td>0</td>
+      <td>0.008</td>
+      <td>3</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Airways</td>
+      <td>CS</td>
+      <td>30</td>
+      <td>131</td>
+      <td>56.4</td>
+      <td>85.0</td>
+      <td>0.008</td>
+      <td>0.347</td>
+      <td>3</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Fecal</td>
+      <td>CS</td>
+      <td>30</td>
+      <td>181</td>
+      <td>60.5</td>
+      <td>83.2</td>
+      <td>0.008</td>
+      <td>0.991</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Airways</td>
+      <td>CS</td>
+      <td>90</td>
+      <td>152</td>
+      <td>56.8</td>
+      <td>84.4</td>
+      <td>0.033</td>
+      <td>0.992</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Fecal</td>
+      <td>CS</td>
+      <td>300</td>
+      <td>161</td>
+      <td>61.7</td>
+      <td>59.3</td>
+      <td>0.018</td>
+      <td>0.991</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Airways</td>
+      <td>V</td>
+      <td>7</td>
+      <td>293</td>
+      <td>64.0</td>
+      <td>46.0</td>
+      <td>0.002</td>
+      <td>0.691</td>
+      <td>3</td>
+      <td>13</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Fecal</td>
+      <td>V</td>
+      <td>7</td>
+      <td>354</td>
+      <td>65.2</td>
+      <td>90.7</td>
+      <td>0</td>
+      <td>0.012</td>
+      <td>12</td>
+      <td>28</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Airways</td>
+      <td>V</td>
+      <td>30</td>
+      <td>342</td>
+      <td>63.9</td>
+      <td>90.2</td>
+      <td>0</td>
+      <td>0.001</td>
+      <td>8</td>
+      <td>14</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Fecal</td>
+      <td>V</td>
+      <td>30</td>
+      <td>395</td>
+      <td>65.8</td>
+      <td>92.4</td>
+      <td>0.002</td>
+      <td>0.312</td>
+      <td>11</td>
+      <td>28</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Airways</td>
+      <td>V</td>
+      <td>90</td>
+      <td>364</td>
+      <td>62.2</td>
+      <td>87.7</td>
+      <td>0.001</td>
+      <td>0.260</td>
+      <td>3</td>
+      <td>9</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Fecal</td>
+      <td>V</td>
+      <td>300</td>
+      <td>404</td>
+      <td>64.2</td>
+      <td>84.5</td>
+      <td>0.003</td>
+      <td>0.457</td>
+      <td>7</td>
+      <td>17</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Uncorrected p-values.†False discovery rate corrected using the Benjamini-Hochberg procedure._
+
+#### Transfer of specific ASVs
 
 For each testable ASV, we calculated the odds ratio (OR) and p-value for transfer from mothers’ vaginal microbiota to their child’s fecal or airway microbiota at week 1, for both vaginally and CS-delivered infants. In general, only four ASVs (from the genera Escherichia/Shigella, Koukoulia, Prevotella, and Ureaplasma) showed false discovery rate (FDR)-corrected statistical significant transfer (Supplementary file 1, section 3.1.2.4). Of the four, none were significantly transferred at more than one combination of time point, delivery mode, and compartment, but the Ureaplasma ASV did tend to be more shared between mother and infant. Of the 92 samples from children containing this Ureaplasma ASV, 67 (70.7 %) of the matching samples from the mother shared the ASV (Supplementary file 1, section 3.1.2.3). When differentiating between CS-L (65–121 ASVs tested) and CS-S (58–107 ASVs tested), no ASVs were found to be significantly transferred after correcting for multiple testing (Supplementary file 1, section 3.1.2.3).
 
 We then examined whether maternal abundances of the ASVs would affect the likelihood of transfer. By correlating the OR for transfer for each ASV with the population-wide relative maternal abundance, we revealed a negative correlation between maternal abundance of an ASV and the OR for transfer to the fecal compartment for vaginally (1 week: p=0.047, 1 month: p=0.0001, 1 year: p=0.0024) and CS-born children at 1 year (p<0.015), whereas there was no association between population abundance and transfer odds to the airway (p>0.07). When differentiating between CS-L and CS-S, we did find a significant positive correlation for the airways at 1 week for CS-L (p=0.0012), while CS-S tended to have a negative correlation (p=0.055), and no significant correlations were identified for transfer odds to the fecal compartment (Figure 4—figure supplements 1–4, Supplementary file 1, section 3.1.3.5).
 
-## Transfer of the most dominating vaginal ASV at week 36
+#### Transfer of the most dominating vaginal ASV at week 36
 
 For each dyad, the frequency of the most dominating maternal ASV was estimated in the children (Supplementary file 1, section 3.3.2). In the fecal compartment of vaginally delivered children, the proportion of children with their mother's most dominant ASV were 18–20% during the first year of life, while for CS-delivered children, the proportion decreased from 16% at 1 week to 13% at 1 year. In the airway compartment, there was a decrease over time, 13%, 12%, and 11% for vaginally born children and 9%, 8%, and 7% for CS-born children. A permutation test revealed that this association was only statistically significant for vaginally born children at 1 week for both compartments and also at 1 month for the airways (p<0.02), and for CS-born children at 1 week, the association was almost significant (p=0.07), while all other associations were far from significance (p>0.17).
 
-## Enrichment of ASVs with positive transfer estimates (compared to negative)
+#### Enrichment of ASVs with positive transfer estimates (compared to negative)
 
 In order to pursue an enrichment hypothesis, a WTR was calculated as function of compartment, birth mode, and age (Figure 4, Supplementary file 1, section 3.2.1). WTR is based on the OR and p-value for each individual ASV and calculated as the weighted ratio of positive OR (OR > 1) and negative OR (OR < 1), with WTR > 1 indicating enrichment and WTR < 1 indicating depletion of positive OR. For the fecal compartment, a clear enrichment was observed for vaginally born children, with attenuated strength over time (WTRVAG: 4.9, 4.5, and 2.5, respectively. p<0.01). For CS-born children, enrichment was observed for the fecal compartment at the early time point (WTRCS = 2.6 for transfer, p=0.014), but not at the later time points (WTRCS: 0.9 and 1.6, p>0.2, Figure 4). Interestingly, transfer to the airway compartment was significantly enriched at the first two time points for vaginally born children, but strongest at the age of 1 month (1 week: WTRVAG = 2.3, p=0.034, 1 month: WTRVAG = 3.4, p<0.001), with no significant enrichment observed at 1 year (WTRVAG = 1.6, p=0.094). For CS-born children, the WTR followed the same pattern, but at a lower level and without reaching significance at any time point (WTRCS: 1.2, 2.1, 1.3, p>0.084, Figure 4). WTRVAG were higher than WTRCS at all time points, and compartments, but only significantly higher for transfer to the fecal compartment at 1 month (p=0.01, Supplementary file 1, section 3.2.1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57051/elife-57051-fig4-v1.jpg)
+
+**Figure 4.:** A ratio above one indicates enrichment of microbial transfer. Error bars reflect standard errors.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57051/elife-57051-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Top panel shows the odds ratio (OR) (x-axis) and the strength (p-value). Lower panel shows OR (y-axis) versus the population-wide vaginal abundance (x-axis).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/57051/elife-57051-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Top panel shows the OR (x-axis) and the strength (p-value). Lower panel shows OR (y-axis) versus the population-wide vaginal abundance (x-axis).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/57051/elife-57051-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Top panel shows the OR (x-axis) and the strength (p-value). Lower panel shows OR (y-axis) versus the population-wide vaginal abundance (x-axis).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/57051/elife-57051-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Top panel shows the OR (x-axis) and the strength (p-value). Lower panel shows OR (y-axis) versus the population-wide vaginal abundance (x-axis).
+
 We performed a detailed enrichment analysis, in which we included the bacterial orders that had at least two testable ASVs for each combination of delivery mode, time point, and compartment, as well as one combination with more than 10 testable ASVs. The included orders were as follows: Clostridiales, Lactobacillales, Bacteroidales, Selenomonadales, Betaproteobacteriales, Pseudomonadales, Corynebacteriales, Bifidobacteriales, Enterobacteriales, and Bacillales. The analysis showed that the overall enrichment result was order dependent (Figure 5, Supplementary file 1, section 3.2.2.2). Several patterns were observed; some showed evidence of transfer, where positive and larger WTRs are observed for vaginally born children in comparison with CS-born children at 1 week, which were either transient (decreased over time) or persistent (maintained over time). Other patterns showed evidence of a common reservoir, where WTR increased in general and became more similar between mode of delivery with increasing age, indicating that bacteria were shared through a common living environment or transferred from mother to infant at a later time point (e.g. skin contact), and not transferred from mother’s vaginal microbiome to child during birth.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/57051/elife-57051-fig5-v1.jpg)
+
+**Figure 5.:** Dashed lines represent analysis on less than 15 ASVs on average. Error bars reflect standard errors. WTR is truncated so values lower than 0.625 are plotted as 0.625 and values higher than 16 are plotted as 16.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57051/elife-57051-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Dashed lines represent analysis on less than 15 ASVs on average. Error bars reflect standard errors. WTR is truncated so values lower than 0.625 are plotted as 0.625 and values higher than 16 are plotted as 16.
 
 Clostridiales, the most represented order, shows evidence of transfer from a common reservoir. For transfer to the fecal compartment, WTRVAG and WTRCS were almost identical, not showing transfer at 1 week or 1 month, but with enrichment at 1 year (p<0.02). While not statistically significant, there was evidence of transfer to the airway compartment at 1 week, with similar enrichment for vaginally and CS-born children at later time points, indicating sharing of ASVs after birth. For Lactobacillales, the WTRs for the airways were not significant at 1 week, but we did find significant WTRVAG (6.8, p=0.003) at 1 month, which persisted to 3 months (p=0.021), while WTRCS were similar to WTRVAG at 1 month, but decreased at 3 months. Both WTRVAG (13.9, p<0.001) and WTRCS (4.9, p=0.039) were significant for the fecal compartment at 1 week, and WTRVAG (17.5, p<0.001) at 1 month, but attenuated over the first year, indicating transient transfer. Bacteroidales were persistently transferred to the fecal compartment of vaginal born children, with WTRVAG being significant during the first month and attenuating slightly at 1 year, while WTRCS were not significant at any time point. For transfer to the airways, we did not have sufficient testable ASVs (n ≤ 15) to make a strong conclusion for CS-born children, and for vaginally born children, we did see significant WTRVAG at 1 month (10.4, p=0.006). Selenomonadales and Betaproteobacteriales both had significant WTRVAG, to the fecal compartment, at 1 week, and also at 1 month and 1 year for Betaproteobacteriales, with indications of an attenuated, but consistent transfer at the following time points, while there were a low number of testable ASVs for CS-born children, WTRCS for Selenomonadales at 1 week (6.2, p=0.027) were the only WTRCS, together this indicate transfer, which could be either persistent or transient. For transfer to the airways, we were limited by few testable ASVs for CS-born children, with no significant WTR observed at any time point independent of delivery mode. The remaining orders generally had few testable ASVs, leading to high standard error and no clear indication of transfer or a common reservoir, but we did observe significant WTRVAG for Enterobacteriales. For Enterobacteriales, WTRVAG to the fecal compartment were consistently significant and WTRVAG to the airway compartment were significant at 1 and 3 months, while WTRCS were high at 1 week and 1 year, but with very large standard error, indicating that this could be persistent transfer.
 
@@ -110,56 +339,74 @@ In summary, we have shown that the vaginal microbiome in samples collected at we
 
 ## Materials and methods
 
-## Study population
+### Study population
 
 COPSAC2010 is an ongoing Danish mother–child cohort study of 700 unselected children and their families followed prospectively from pregnancy week 24 in a protocol previously described (Bisgaard et al., 2013). Exclusion criteria were as follows: gestational age below week 26; maternal daily intake of more than 600 IU vitamin D during pregnancy; or having any endocrine, heart, or kidney disorders.
 
-## Sample collection
+### Sample collection
 
 Vaginal samples from women at gestational weeks 24 and 36 were collected from the posterior fornix of the vagina using flocked swabs (ESWAB regular, SSI Diagnostica, Hillerød, Denmark) (Stokholm et al., 2012). Airway samples were aspirated with a soft suction catheter passed through the nose into the hypopharynx as previously described in detail (Bisgaard et al., 2007). Fecal samples were collected in sterile plastic containers and transported (within 24 hr) to Statens Serum Institute (Copenhagen, Denmark). Each sample was mixed on arrival with 10% vol/vol glycerol broth (SSI, Copenhagen, Denmark) and frozen at −80°C until further processing (Stokholm et al., 2018). Two thousand six hundred and seventy samples were collected and initially included.
 
 The airway microbiota samples used in this study have been presented previously in Mortensen et al., 2016 , and the fecal samples have been presented in Stokholm et al., 2018. For both sample types, three consecutive samples were included to investigate transfer from mother to infant: from feces at 1 week, 1 month, and 1 year, and from airways at 1 week, 1 month, and 3 months.
 
-## DNA extraction
+### DNA extraction
 
 Genomic DNA was extracted from the mothers’ and infants’ samples as described in Mortensen et al., 2016, using the PowerMag Soil DNA Isolation Kit optimized for epMotion (MO-BIO Laboratories, Inc, Carlsberg, CA) using the epMotion robotic platform model (EpMotion 5075VT, Eppendorf, Hamburg, Germany).
 
-## 16S Amplicon sequencing and bioinformatics pipeline
+### 16S Amplicon sequencing and bioinformatics pipeline
 
 16S rRNA gene amplification was performed as described in Stokholm et al., 2018, using a two-step PCR method, targeting the hypervariable V4 region (forward primer 515F: 5′-GTGCCAGCMGCCGCGGTAA-3′ [Turner et al., 1999], reverse primer Uni806R: 5′-GGACTACHVGGGTWTCTAAT-3′ [Takai and Horikoshi, 2000]). Amplicon products were purified with Agencourt AMPure XP Beads (Beckman Coulter Genomics, MA) and the purified products quantified with Quant-iT PicoGreen quantification system (Life Technologies, CA) to allow for pooling, in equimolar concentration, of up to 192 samples per library. The pooled DNA samples were concentrated using the DNA Clean and Concentrator-5 Kit (Zymo Research, Irvine, CA) and quantified again. The libraries were sequenced on the Illumina MiSeq System (Illumina Inc, CA) using MiSeq Reagent Kits v2.
 
 Primers were removed from the raw paired-end FASTQ files generated via MiSeq using ‘cutadapt’ (Martin, 2011). Furthermore, reads were analyzed by QIIME2 (Bolyen et al., 2019) (qiime2-2018.11) pipeline, with forward and reverse reads truncated at 180 bp and 160 bp, through dada2 (Callahan et al., 2016) to infer the ASVs present and their relative abundances across the samples. Taxonomy was assigned using a pre-trained Naïve Bayes classifier (Silva database, release 132, 99% ASV) (Quast et al., 2013). ASV identifiers were created from their species, or lowest taxonomical classification, with an additional integer for ASVs with identical classification.
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
 For data treatment and analysis, we used the open source statistical program ‘R’ (R Development Core Team, 2020), predominantly the R-package ‘phyloseq’ (McMurdie and Holmes, 2013), with the complete analysis contained as an Rmarkdown file (Source code 1). Samples with less than 2000 sequences were excluded. Two thousand three hundred and fifty-nine samples were included containing, on average, over 32,000 sequences per sample, representing 3934 distinct ASVs. JSD was used to describe the beta diversity in the sample set. As this method is sensitive to bias due to sequencing depth, we performed the calculation of JSD on a randomly subsampled ASV table with an even sequencing depth of 2000 observations. No other analysis was performed using the subsampled ASV table.
 
-## Clustering analysis
+### Clustering analysis
 
 Clustering analysis was performed using partitioning around medoids clustering, based on JSD, and the optimal number of clusters was chosen based on multiple cluster validation techniques using the R-package ‘fpc’ (Hennig, 2020): average silhouette width (Rousseeuw, 1987), Pearson gamma index (Halkidi et al., 2001), dunn2 (Dunn†, 1974), Caliñski and Harabasz index (Caliñski and Harabasz, 1974), as well as comparison with similarity to CST presented in prior studies.
 
-## Identification of CST-dominant ASVs
+### Identification of CST-dominant ASVs
 
 For the three most dominant ASVs in each vaginal CST, we performed BLASTN (v 2.10.1+) against the NCBI 16S ribosomal RNA database (Zhang et al., 2000), excluding models (XM/XP) and uncultured/environmental samples (Source data 2). Alignments were filtered to minimum 99% identity, and the ASVs were assigned to unique species, when possible. In these cases where multiple species aligned equally well, we used published studies to select the most likely species. As an example, L. crispatus and L. acidophilus could not be distinguished based on the sequenced region, and as published studies on the vaginal microbiota concur that L. crispatus, in contrast to L. acidophilus, constitute an important part of the vaginal microbiota, we refer to L. crispatus/L. acidophilus solely as L. crispatus. Based on this reasoning, we will also refer to L. gasseri/johnsonii solely as L. gasseri (Antonio et al., 1999; Kiss et al., 2007; Vásquez et al., 2002).
 
-## Stability of vaginal microbiota
+### Stability of vaginal microbiota
 
 The differences in the amount of women with a stable or non-stable CST were assessed using the χ2 test. The median JSD between each woman’s paired samples tested against 2500 permutations of random unpaired sample sets.
 
-## Transfer of microbiota
+### Transfer of microbiota
 
 Analysis of transfer of microbiota was pursued by three approaches, namely (1) transfer of specific ASVs, (2) transfer of the most dominating vaginal ASV at week 36, and (3) enrichment of ASVs with positive transfer estimates (compared to negative). For all approaches, we analyzed transfer from vagina week 36 to both airways and gut, for all time points, in order to evaluate the differences between vaginally and CS-delivered children. To determine whether the microbiota was transferred from mother to infant, we used a Fisher’s exact test comparing the presence/absence of ASVs between dyads of mothers and children and recorded the OR for transfer with a one-sided p-value toward the null hypothesis of OR = 1. Only ASVs showing the presence/absence in both the vaginal and the child compartments were included in the analysis. This comparison was conducted for both microbial compartments at all three time points during the first year of life and stratified by vaginal and CS deliveries summing up to a total of 12 models. Inference for transfer of single ASVs was evaluated using Benjamini-Hochberg FDR correction.
 
-## Weighted transfer ratio
+### Weighted transfer ratio
 
-A weighted transfer ratio between positive and negative ORs was used as an overall measure of transfer. WTR is defined as follows:WTP=WPWNwhere WP and WN are the sum of the areas of the positive and negative associations from the volcano plot, respectively, that isWP = ∑i ∈I(OR>1)−log⁡(ORi)log10(pvi)andWN = ∑i ∈I(OR<1)log⁡(ORi)log10(pvi)giving larger emphasis to ASVs with high inference and effect size. ORi and p.valuei refer to the OR and its corresponding null hypothesis test, respectively, for the i’th ASV. WTR should be around one in case of no transfer, and larger when present, but due to the high sparsity, the null distribution is not always centered on 1. To test for transfer, the dyads are scrambled to construct a null distribution for the ratio and the WTR reported is the model ratio relative to the median of the null distribution.
+A weighted transfer ratio between positive and negative ORs was used as an overall measure of transfer. WTR is defined as follows:
 
-## Declarations
+$$
+WTP=\frac{WP}{WN}
+$$
 
-## Ethics approval and consent to participate
+where WP and WN are the sum of the areas of the positive and negative associations from the volcano plot, respectively, that is
+
+$$
+WP = \sumi \inI(OR>1)−log⁡(OR_{i})log10(pv_{i})
+$$
+
+and
+
+$$
+WN = \sumi \inI(OR<1)log⁡(OR_{i})log10(pv_{i})
+$$
+
+giving larger emphasis to ASVs with high inference and effect size. ORi and p.valuei refer to the OR and its corresponding null hypothesis test, respectively, for the i’th ASV. WTR should be around one in case of no transfer, and larger when present, but due to the high sparsity, the null distribution is not always centered on 1. To test for transfer, the dyads are scrambled to construct a null distribution for the ratio and the WTR reported is the model ratio relative to the median of the null distribution.
+
+### Declarations
+
+#### Ethics approval and consent to participate
 
 This study followed the principles of the Declaration of Helsinki, and was approved by the Ethics Committee for Copenhagen (The Danish National Committee on Health Research Ethics) (H-B-2008–093) and the Danish Data Protection Agency (2008-41-2599). Written informed consent was obtained from both parents for all participants. The study is reported in accordance with the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) guidelines (von Elm et al., 2007).
 
-## Consent for publication
+#### Consent for publication
 
 Not applicable.

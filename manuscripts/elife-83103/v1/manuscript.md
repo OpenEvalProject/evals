@@ -15,10 +15,10 @@
 
 ### Affiliations
 
-1. https://ror.org/04a9tmd77 Division of Hematology and Medical Oncology, Tisch Cancer Institute, Icahn School of Medicine at Mount Sinai New York United States
-2. https://ror.org/02drdmm93 State Key Laboratory of Experimental Hematology, National Clinical Research Center for Blood Diseases, Division of Pediatric Blood Diseases Center, Institute of Hematology & Blood Diseases Hospital, Chinese Academy of Medical Sciences & Peking Union Medical College Tianjin China
-3. https://ror.org/05cf8a891 Division of Hematology and Medical Oncology, Albert Einstein College of Medicine Bronx United States
-4. https://ror.org/03qxff017 Department of Hematology, Hadassah Medical Center, Hebrew University Jerusalem Israel
+1. Division of Hematology and Medical Oncology, Tisch Cancer Institute, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+2. State Key Laboratory of Experimental Hematology, National Clinical Research Center for Blood Diseases, Division of Pediatric Blood Diseases Center, Institute of Hematology & Blood Diseases Hospital, Chinese Academy of Medical Sciences & Peking Union Medical College Tianjin China ([ROR:02drdmm93](https://ror.org/02drdmm93))
+3. Division of Hematology and Medical Oncology, Albert Einstein College of Medicine Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
+4. Department of Hematology, Hadassah Medical Center, Hebrew University Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))
 
 † Corresponding author
 
@@ -40,61 +40,258 @@ Our results demonstrate that NHD13 mice exhibits anemia, increased serum erythro
 
 ## Results
 
-## MDS mice exhibit elevated mcv anemia with expanded erythropoiesis and iron overload, appropriate as a model of low-risk MDS
+### MDS mice exhibit elevated mcv anemia with expanded erythropoiesis and iron overload, appropriate as a model of low-risk MDS
 
 To establish the expected MDS phenotype, mice were sacrificed at 6 months of age and demonstrate significantly reduced RBC counts and Hb concentration, increased MCV, and no difference in reticulocyte count relative to WT controls (Table 1). MDS mice also exhibit decreased white blood cell (WBC) count and no difference in platelet count (Table 1). Consistently, our experiments also demonstrate that MDS mice exhibit significantly increased serum EPO concentration and increased bone marrow cellularity (Table 1). Furthermore, we demonstrate borderline increased apoptosis in bone marrow erythroblast in MDS mice, reaching significance in OrthoE (Figure 1—figure supplement 1). Finally, liver iron concentration is significantly increased in MDS mice (Table 1). In conjunction with previously published work (Lin et al., 2005; Slape et al., 2008; Suragani et al., 2014), this combination of characteristics provides substantial evidence that NHD13 mice are an appropriate mouse model for MDS (Cui et al., 2014).
 
-## Iron chelation with DFP reverses iron overload, normalized erythroferrone expression in bone marrow erythroblasts, and improves hepcidin iron responsiveness in MDS mice
+**Table 1.**
+ Hematopoiesis- and Iron-related Characteristics of NHD13 mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>RBC count</th>
+      <th>Hb</th>
+      <th>MCV</th>
+      <th>Retic count</th>
+      <th>WBC count</th>
+      <th>Platelet count</th>
+      <th>Serum EPO</th>
+      <th>Bone marrow cells</th>
+      <th>Liver iron concentration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(units)</td>
+      <td>(106 /μL)</td>
+      <td>(g/dL)</td>
+      <td>(fL)</td>
+      <td>(106 /μL)</td>
+      <td>(106 /μL)</td>
+      <td>(103 /μL)</td>
+      <td>(μg/μL)</td>
+      <td>(107 cells)</td>
+      <td>(mg/g dry weight)</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>10±0.1</td>
+      <td>14.7±0.1</td>
+      <td>50±0.5</td>
+      <td>495±67</td>
+      <td>5.5±0.6</td>
+      <td>759±67</td>
+      <td>308±48</td>
+      <td>12.4±0.7</td>
+      <td>0.23±0.07</td>
+    </tr>
+    <tr>
+      <td>MDS</td>
+      <td>6.73±0.29</td>
+      <td>11.2±0.4</td>
+      <td>60±1.3</td>
+      <td>440±30</td>
+      <td>3.0±0.4</td>
+      <td>672±80</td>
+      <td>4832±1,154</td>
+      <td>15±0.8</td>
+      <td>0.51±0.04</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>***</td>
+      <td>***</td>
+      <td>***</td>
+      <td>NS</td>
+      <td>**</td>
+      <td>NS</td>
+      <td>***</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+  </tbody>
+</table>
+
+_WT = wild type; MDS = myelodysplastic syndrome (NHD13) mice; RBC = red blood cell; Hb = hemoglobin; MCV = mean corpuscular hemoglobin; Retic = reticulocyte; WBC = white blood cell; EPO = erythropoietin; NS = not significant; * P<0.05; ** P<0.01; *** P<0.0001._
+
+### Iron chelation with DFP reverses iron overload, normalized erythroferrone expression in bone marrow erythroblasts, and improves hepcidin iron responsiveness in MDS mice
 
 Next, we evaluate the effects of iron chelation with DFP in 5-month-old MDS mice, treated for 4 weeks with DFP and sacrificed for analyses at 6 months of age. First, we demonstrate that DFP can be detected in the serum of DFP-treated mice (Figure 1—figure supplement 2). Second, our results demonstrate that DFP-treated MDS mice exhibit increased serum iron concentration and transferrin saturation (Figure 1A and B); both male and female mice demonstrate equivalent responses to DFP (Figure 1—figure supplement 3). These findings are consistent with the reversal of increased parenchymal iron loading in MDS mice after DFP treatment, exhibiting decreased liver, spleen, and bone marrow non-heme iron concentration (Figure 1C–E) and validate the expected re-distribution of iron from parenchymal deposition to the circulating compartment, to ultimately enable excretion. Furthermore, ferritin concentration is not statistically significantly different in MDS or DFP-treated MDS bone marrow erythroblast-rich CD45 negative cells (Figure 1—figure supplement 4). Finally, Hamp expression, the gene encoding for hepcidin, in the liver is unchanged and Hamp-iron responsiveness is decreased in MDS relative to WT mice (Figure 1F and G). While Hamp expression is not increased in the liver of DFP-treated MDS mice (Figure 1F), it is significantly increased relative to non-heme iron concentration in the liver (Figure 1G) providing evidence of enhanced hepcidin responsiveness to iron in DFP-treated MDS mice.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig1-v1.jpg)
+
+**Figure 1.:** DFP results in increased serum iron (A) and transferrin saturation (B) while reducing parenchymal iron in the liver, spleen, and bone marrow (C-E). While liver Hamp mRNA expression is unchanged in WT, MDS, and DFP-treated MDS mice (F), Hamp responsiveness to iron is normalized in DFP-treated MDS mice (G) (n=7–10 mice/group). (H) DFP results in more normal Erfe mRNA expression (n=10–12 mice/group) in sorted bone marrow erythroblasts from MDS mice analyzed after 1 month of treatment. *p<0.05 vs. WT; **p<0.01 vs. WT; ***p<0.001 vs. WT; ****p<0.0001 vs. WT; &p<0.05 vs. MDS; &&p<0.01 vs. MDS; &&&&p<0.0001 vs. MDS; Abbreviations: WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; Hamp = hepcidin; Erfe = erythroferrone.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Bone marrow erythroblasts were isolated using flow gating strategy and apoptosis was measured using activated caspase 3/7. Erythroblast apoptosis is elevated in ProE, BasoE, PolyE, and OrthoE from MDS mice (n=9–11 mice/group). *p<0.05 vs. WT; **p<0.01 vs. WT; WT = wild type; MDS = myelodysplastic syndrome; ProE = pro-erythroblasts; BasoE = basophilic erythroblasts; PolyE = polychromatophilic erythroblasts; OrthoE = orthochromatophilic erythroblasts; Act casp 3/7=activated caspase 3 and 7.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Serum DFP concentration is measurable in DFP-treated MDS mice. (n=3–5 mice/group). WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Similarly elevated transferrin is observed in male and female DFP-treated MDS mice (n=3–4 male mice/group and n=4–6 female mice/group). *p<0.05 vs. control; Con = control; DFP = deferiprone; sat = saturation.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Western blot of bone marrow CD45 negative cell protein extracts demonstrate no difference in FTH1 between WT, MDS, and DFP-treated MDS mice; the gel is quantified in (B) (n=2 mice/group, experiments repeated twice). WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; FTH1 = ferritin heavy chain. &p<0.05 vs. MDS.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Western blot of liver protein extracts demonstrate no obvious differences in STAT3 signaling (A), and no differences in Saa1 mRNA expression (B), demonstrating no change in the inflammatory signaling pathway to hepcidin expression between WT, MDS, and DFP-treated MDS mice (n=3 mice/group). WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; pSTAT3=phosphorylated signal transducer and activator of transcription 3; GAPDH = glyceraldehyde 3-phosphate dehydrogenase; Saa1 = serum amyloid A1.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Sorted bone marrow erythroblast Erfe mRNA expression between WT and DFP-treated WT mice (n=5–12 mice/group). *p<0.05 vs. WT DFP; WT = wild type; DFP = deferiprone; Erfe = erythroferrone.
 
 Hepcidin expression represents the effect of multiple pathways. Specifically, hepcidin is upregulated in response to liver iron stores and circulating iron; increased in the setting of inflammation; and downregulated in conditions of expanded or ineffective erythropoiesis as a consequence of elevated Erfe expression, the gene name for erythroferrone (ERFE), in erythroblasts (Ginzburg, 2019). Our results demonstrate that DFP-treated MDS mice exhibit decreased liver iron concentration (Figure 1C) while increasing transferrin saturation (Figure 1B) and no evidence of inflammation-mediated signaling to hepcidin in DFP-treated MDS mouse liver (Figure 1—figure supplement 5). Thus, the effect of iron redistribution on hepcidin expression in DFP-treated MDS mice is predictably small, leading us to also evaluate the contribution of changes in erythropoiesis on increased hepcidin responsiveness in DFP-treated MDS mice.
 
 Erythroblast Erfe expression is increased in MDS mouse bone marrow (Figure 1H), the response expected in the setting of increased serum EPO concentration (Kautz et al., 2014) in MDS relative to WT mice. Similar to other diseases of ineffective erythropoiesis, increased expression of bone marrow Erfe is expected to suppress hepcidin and decrease hepcidin iron responsiveness, resulting in iron overload (Kautz et al., 2014; Kautz et al., 2015). As a consequence, our current findings demonstrate that increased bone marrow erythroblast Erfe expression results in inappropriately low liver Hamp expression relative to parenchymal iron loading (Figure 1C–G), demonstrating decreased Hamp responsiveness to iron in MDS mice. These findings further support the use of these mice as an appropriate MDS model in which decreased hepcidin iron responsiveness is a consequence of expanded erythropoiesis, leading to systemic iron overload observed in this disease (Cui et al., 2014). Furthermore, the reversal of ineffective erythropoiesis in DFP-treated MDS mice, with partial normalization of Erfe expression (Figure 1H), correlates with restored Hamp responsiveness to iron and reversal of parenchymal iron loading in the liver, spleen, and bone marrow (Figure 1C–G). Finally, erythroblast Erfe expression is borderline decreased also in DFP-treated WT mice (Figure 1—figure supplement 6). Taken together, our results provide further evidence that mitigating the hepcidin pathway is relevant in the pathophysiology of ineffective erythropoiesis and its reversal.
 
-## Iron chelation with DFP improves ineffective erythropoiesis in MDS mice
+### Iron chelation with DFP improves ineffective erythropoiesis in MDS mice
 
 DFP-treated MDS mice exhibit increased Hb and RBC count relative to untreated MDS mice and no change in MCV or reticulocytosis (Figure 2A–D); both male and female mice demonstrate approximately equivalent responses to DFP (Figure 2—figure supplement 1). In addition, the WBC count remained low while platelet, neutrophil, lymphocyte, and monocyte counts were unchanged in DFP-treated relative to untreated MDS mice (Figure 2E–I). Furthermore, while the spleen size increased in MDS relative to WT mice and is not significantly decreased after DFP (Figure 3A), splenic architecture is improved (Figure 3B)—with relatively decreased red pulp and more organized splenic nodules—and serum EPO concentration is normalized (Figure 3C) in DFP-treated relative to untreated MDS mice. Consistently, the total number of erythroblasts and the erythroid fraction in the bone marrow are increased in MDS relative to WT mice and normalized in DFP-treated relative to untreated MDS mice, with evident decrease, especially in BasoE and PolyE fractions (Figure 3D–F); both male and female mice demonstrate similar responses to DFP (Figure 3—figure supplement 1). DFP also leads to a normalized bone marrow erythroblast differentiation in MDS mice (Figure 3G) with a proportionally increased PolyE and decreased OrthoE fractions in bone marrow from MDS mice, normalized after DFP treatment, consistent with a block of erythroblast differentiation at PolyE in MDS patients (Ali et al., 2018). Finally, erythroblast apoptosis is unchanged (Figure 3H) despite decreased erythroblast ROS in DFP-treated relative to untreated MDS mice (Figure 3I). These findings are globally consistent with the improvement in ineffective erythropoiesis in response to DFP treatment without effects on erythroblast apoptosis in MDS.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig2-v1.jpg)
+
+**Figure 2.:** Circulating RBC count (A), hemoglobin (B), MCV (C), reticulocyte count (D), platelet count (E), WBC count (F), neutrophil count (G), lymphocyte count (H), and monocyte count (i) in WT, MDS, and DFP-treated MDS mice (n=10–14 mice/group) analyzed after 1 month of treatment. *p<0.05 vs. WT; **p<0.01 vs. WT; ***p<0.001 vs. WT; ****p<0.0001 vs. WT; &p<0.05 vs. MDS; &&p<0.01 vs. MDS. Abbreviations: WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; RBC = red blood cell; MCV = mean corpuscular volume; WBC = white blood cell.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Similarly elevated hemoglobin is observed in male and female DFP-treated MDS mice (n=4–6 male mice/group and n=4–9 female mice/group). *p<0.05 vs. control; Con = control; DFP = deferiprone.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig3-v1.jpg)
+
+**Figure 3.:** Spleen weight (n=11–12 mice/group) (A), splenic architecture (n=5 mice/group) (B), serum EPO concentration (n=5–12 mice/group) (C), bone marrow erythroblast count (n=13–15 mice/group) (D), and the total fraction of erythroblasts in the bone marrow (n=13–15 mice/group) (E) are more normal in DFP-treated MDS mice analyzed after 1 month of treatment. The fraction of all stages of terminal erythropoiesis is increased in MDS relative to WT mice in BasoE and PolyE stages and decreased in DFP-treated relative to untreated MDS mice in BasoE stages (n=13–15 mice/group) (F). Erythroblast differentiation in the bone marrow, decreased in MDS relative to WT, is normalized in DFP-treated relative to untreated MDS mice (n=13–15 mice/group) (G). In addition, erythroblast apoptosis, as measured by activated caspase 3/7, is unchanged in DFP-treated MDS mice (n=7–11 mice/group) (H). Finally, erythroblast ROS is decreased in DFP-treated relative to untreated MDS mice (n=11–12 mice/group) (i) analyzed after 1 month of treatment. *p<0.05 vs. WT; **p<0.01 vs. WT; ****p<0.0001 vs. WT; &p<0.05 vs. MDS; &&&p<0.001 vs. MDS; Abbreviations: WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; EPO = erythropoietin; Act casp 3/7 = activated caspase 3 and 7; ROS = reactive oxygen species; ProE = pro-erythroblasts; BasoE = basophilic erythroblasts; PolyE = polychromatophilic erythroblasts; OrthoE = orthochromatophilic erythroblasts; NS = not significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Bone marrow erythroblasts are decreased to a similar degree in male and female DFP-treated MDS mice (n=4–7 male mice/group and n=8–9 female mice/group). *p<0.05 vs. control; Con = control; DFP = deferiprone.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** No differences are observed in RBC count (A), hemoglobin (B), MCV (C), reticulocytes (D), or serum EPO concentration (E) from DFP-treated relative to untreated WT mice (n=5–14 mice/group). WT = wild type; DFP = deferiprone; RBC = red blood cell; MCV = mean corpuscular volume; EPO = erythropoietin.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Bone marrow erythroblast fraction (n=5–13 mice/group) significantly decreased (A) particularly as a consequence of fewer BasoE, PolyE, and OrthoE (B) in DFP-treated WT mice (n=5–11 mice/group). *p<0.05 vs. WT; WT = wild type; DFP = deferiprone; ProE = pro-erythroblasts; BasoE = basophilic erythroblasts; PolyE = polychromatophilic erythroblasts; OrthoE = orthochromatophilic erythroblasts.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Erythroblast apoptosis, as measured by activated caspase 3 and 7 (n=6–9 mice/group) (A), and ROS (B) are unchanged in DFP-treated relative to untreated WT mice (n=5–9 mice/group). WT = wild type; DFP = deferiprone; Act casp 3/7 = activated caspase 3 and 7; ROS = reactive oxygen species.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Serum concentration of DFP and of its metabolite, DFP-G, is significantly lower in DFP-treated MDS relative to DFP-treated WT mice (n=5 mice/group). *p<0.05 vs. WT DFP; &&p<0.01 vs. WT DFP-G; WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; DFP-G = DFP-glucuronide.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Mouse bone marrow is flushed from the femur, processed to remove debris, and filtered to collect CD45 negative flow-through cells. (A) After staining with all required antibodies, CD45-/CD11b-/Gr1- cells are gated (red) and further evaluated using TER119 and side scatter (SSC) to select all TER119 + erythroid lineage cells (red). These cells are then analyzed using forward scatter (FSC) and CD44 to gate pro-erythroblasts (ProE), basophilic erythroblasts (BasoE), polychromatophilic erythroblasts (PolyE), and orthochromatophilic erythroblasts (OrthoE) as progressive stages of terminal erythropoiesis and exclude reticulocytes and enucleated erythrocytes (blue). (B) Terminal erythropoiesis in the bone marrow is evaluated in a homogeneous manner using this gating strategy in WT, MDS, and DFP-treated MDS mice. WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone.
+
 Importantly, we evaluate the effects of DFP in WT mice. Specifically, our results demonstrate no change in RBC count, Hb, MCV, reticulocyte count, or serum EPO in DFP-treated relative to untreated WT mice (Figure 3—figure supplement 2). In addition, the bone marrow erythroblast fraction in DFP-treated WT mice is decreased, especially in the late stages of terminal erythropoiesis (i.e. PolyE and OrthoE), similar to DFP-treated MDS mice. However, unlike DFP-treated MDS mice, erythroid differentiation is decreased in DFP-treated relative to untreated WT mice (Figure 3—figure supplement 3). Furthermore, similar to DFP-treated MDS mice, DFP in WT mice results in unchanged erythroblast apoptosis albeit without affecting ROS (Figure 3—figure supplement 4). Taken together, these findings support our conclusions that reversal of ineffective erythropoiesis in MDS mice occurs independently of changes in erythroblast apoptosis, that DFP has a direct effect on erythropoiesis, and that the differences in effect on MDS and WT mice are dependent on the effectiveness of erythropoiesis in the underlying state. Finally, we confirmed that the effect of DFP in WT mice occurs despite a relatively higher serum DFP concentration and metabolized DFP-G concentration in WT relative to MDS mice (Figure 3—figure supplement 5).
 
-## Normalized expression of EPO downstream genes in bone marrow erythroblast from DFP-treated MDS mice
+### Normalized expression of EPO downstream genes in bone marrow erythroblast from DFP-treated MDS mice
 
 To evaluate erythropoiesis more closely, we also measure Gata1 and Bcl11a expression to assess the effect of DFP on other EPO-STAT5 target genes in MDS erythroblasts. Gata1 and Bcl11a expression is known to be downstream of EPO. While GATA1 is an important transcriptional regulator in normal erythropoiesis (Ling and Crispino, 2020), BCL-xl is implicated in the anti-apoptosis effect of EPO on erythroblasts (Koulnis et al., 2012). Aberrant GATA1 expression in MDS has been described with evidence of increased GATA1 expression in bone marrow CD34 + stem and progenitor cells as well as CD71 + erythroblasts from MDS patients (Maratheftis et al., 2007). Furthermore, normal upregulation of GATA1 and BCL-xl during human erythroid differentiation is lost in MDS (Hopfer et al., 2012). Neither Gata1 nor Bcl11a expression has previously been evaluated in MDS mice; their expression is expected to increase in conditions of elevated EPO concentration.
 
 Our results demonstrate that Gata1 mRNA expression is increased in sorted bone marrow ProE, borderline decreased in BasoE, and decreased in PolyE and OrthoE erythroblasts from MDS relative to WT mice (Figure 4A–D), consistent with expectations that GATA1 expression is elevated in MDS patient bone marrow stem and progenitor and early erythroblasts (Maratheftis et al., 2007) with loss of upregulation during erythroblast differentiation (Hopfer et al., 2012). DFP treatment restores Gata1 mRNA expression relative to untreated MDS or WT mice (Figure 4A–D). Furthermore, Bcl11a mRNA expression is decreased in bone marrow erythroblasts from MDS relative to WT mice and returns to normal expression levels in DFP-treated MDS mice (Figure 4F and G) despite increased serum EPO (Figure 3C) and borderline increased erythroblast apoptosis (Figure 3H) in MDS erythroblasts, normalized in DFP-treated relative to untreated MDS mice. Bone marrow erythroblast Bcl11a expression is also increased in DFP-treated WT mice (Figure 4—figure supplement 1). These results raise an important question, namely whether physiological or pathophysiological nuances in EPO-STAT5 signaling can conceptually separate EPO responsiveness from EPO-mediated anti-apoptotic effects in erythroblasts, similar to a hypothesis alluded to in prior publication (Fontenay-Roupie et al., 1999).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig4-v1.jpg)
+
+**Figure 4.:** Gata1 mRNA expression is increased in sorted bone marrow ProE (A), unchanged in BasoE (B), and significantly decreased in PolyE (C) erythroblasts from MDS relative to WT mice; DFP treatment restores Gata1 mRNA expression relative to untreated MDS or WT mice in all including OrthoE (D) erythroblasts (n=15–21 mice/group). DFP treatment in MDS mice does not affect Bcl11a mRNA expression in sorted bone marrow ProE (E), BasoE (F), and PolyE (G), and increases it in OrthoE (H) erythroblasts relative to untreated MDS or WT mice (n=10–12 mice/group). *p<0.05 vs. WT; &p<0.05 vs. MDS; Abbreviations: WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; Gata1 = erythroid transcription factor; Bcl11a B cell lymphoma 11 a; ProE = pro-erythroblasts; BasoE = basophilic erythroblasts; PolyE = polychromatophilic erythroblasts; OrthoE = orthochromatophilic erythroblasts; NS = not significant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Sorted bone marrow erythroblast Bcl11a mRNA expression between WT and DFP-treated WT mice (n=5–12 mice/group). *p<0.05 vs. WT DFP; WT = wild type; DFP = deferiprone; Bcl11a = B cell lymphoma 11 a, gene name for Bcl-XL.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Western blot of bone marrow CD45 negative cell protein extracts demonstrate no differences in STAT5 signaling between untreated and DFP-treated MDS mice, quantified in (B). Similarly, AKT signaling is not altered in DFP-treated MDS mice, quantified in (C), demonstrating no change in these signaling pathways in response to DFP in MDS mice (n=3 mice/group). MDS = myelodysplastic syndrome; DFP = deferiprone; pSTAT5=phosphorylated signal transducer and activator of transcription 5; pAKT = phosphorylated protein kinase B.
+
 We then evaluate signaling pathways downstream of EPO. Both STAT5 and AKT signaling are essential for erythropoiesis. Prior work demonstrates that the expected STAT5 signaling response to EPO is hampered by iron restriction (Khalil et al., 2018). Others demonstrate that AKT signaling is implicated in EPO-mediated erythroblast survival (Ghaffari et al., 2006), essential in conditions with elevated EPO when Epor expression is suppressed (Bullock et al., 2010; Nai et al., 2015; Zhao et al., 2016a). We demonstrate STAT5 and AKT phosphorylation in bone marrow erythroblasts does not change in DFP-treated relative to untreated MDS mice (Figure 4—figure supplement 2). These findings suggest that the expected changes in signaling downstream of EPO are unaffected by DFP administration, implicating possible changes in erythroblast Epor expression in DFP-treated MDS mice.
 
-## DFP increases Epor expression in later stage MDS erythroblasts
+### DFP increases Epor expression in later stage MDS erythroblasts
 
 Next, we explore erythroblast Epor expression in DFP-treated and untreated MDS mice. We hypothesize that Epor plays an important role in EPO responsiveness that is independent of EPO concentration. This hypothesis is based on findings in EpoR-H mice, a knock-in mutation leading to normal EPO-EpoR binding and signaling but absent EpoR internalization and degradation (Menon et al., 2006; Becker et al., 2010; Sulahian et al., 2009). These mice exhibit decreased serum EPO levels, elevated RBC counts, and a smaller proportion of mature erythroid precursors in the bone marrow relative to WT mice (Khalil et al., 2018), suggesting that EpoR expression may influence erythroblast differentiation in a manner that is complementary to the anti-apoptotic effect of EPO.
 
 Based on this premise, we anticipate that Epor expression is decreased in bone marrow erythroblast from MDS relative to WT mice, and restored in DFP-treated relative to untreated MDS mice. We used sorted bone marrow to evaluate Epor expression in progressive stages of terminal erythropoiesis. First, Epor expression is borderline increased in ProE and significantly increased in BasoE, earlier stage erythroblasts (Figure 5A and B) and decreased in PolyE and OrthoE, later stage erythroblasts (Figure 5C and D), in MDS relative to WT mice. Second, Epor expression is significantly increased in all-stage erythroblasts in DFP-treated relative to untreated MDS or WT mice (Figure 5A–D). Finally, DFP does not result in increased Epor expression in bone marrow erythroblasts from WT mice (Figure 5—figure supplement 1). Taken together, increased later-stage erythroblast Epor expression is a potential mechanism by which DFP leads to enhanced EPO responsiveness and enhanced erythroid differentiation despite decreased serum EPO concentration, reversing ineffective erythropoiesis exclusively in MDS mice.
 
-## Defective enucleation in MDS erythroblasts is normalized by DFP
+![Figure 5.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig5-v1.jpg)
+
+**Figure 5.:** DFP treatment in MDS mice increases Epor mRNA expression in sorted bone marrow following ProE (A), namely in BasoE (B), PolyE (C), and OrthoE (D) erythroblasts relative to untreated MDS or WT mice. *p<0.05 vs. WT; &p<0.05 vs. MDS; &&p<0.01 vs. MDS. Abbreviations: WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; Epor = erythropoietin receptor; ProE = pro-erythroblasts; BasoE = basophilic erythroblasts; PolyE = polychromatophilic erythroblasts; OrthoE = orthochromatophilic erythroblasts.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Sorted bone marrow erythroblast Epor mRNA expression between WT and DFP-treated WT mice (n=5–10 mice/group). *<0.05 vs. WT DFP; WT = wild type; DFP = deferiprone; Epor = erythropoietin receptor.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) DFP restores erythroblast enucleation (n=5–7 mice/group) in MDS mouse bone marrow, quantified in (B) as the fraction of enucleated relative to the total of nucleated and enucleated erythroblasts, using Hoechst staining in TER119 positive cells. **p<0.01 vs. WT; Abbreviations: WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone.
+
+### Defective enucleation in MDS erythroblasts is normalized by DFP
 
 Because increased EPO is implicated in defective enucleation (Zhao et al., 2016a), we also evaluate erythroblast enucleation in WT, MDS, and DFP-treated MDS mice. Our results demonstrate decreased enucleation in bone marrow erythroblasts from MDS relative to WT mice and return to normal expression levels in DFP-treated MDS mice (Figure 5—figure supplement 2). These findings are consistent with prior work which provides mechanistic evidence of an enucleation defect in MDS (Zhao et al., 2016b). Our findings are also consistent with our previously published evidence demonstrating that manipulating iron metabolism in erythropoiesis leads to reversal of ineffective erythropoiesis is associated with normalization of the erythroblast enucleation defect in β-thalassemic mice, another model of ineffective erythropoiesis (Li et al., 2017).
 
-## TFR1 but not TFR2 expression in MDS erythroblasts is normalized by DFP
+### TFR1 but not TFR2 expression in MDS erythroblasts is normalized by DFP
 
 Decreased iron in the bone marrow of DFP-treated MDS mice prompted us to evaluate whether specific mechanisms involved in iron sensing and trafficking could explain the beneficial effects of DFP on ineffective erythropoiesis in MDS mice. First, we demonstrate increased cell surface TFR1 on bone marrow erythroblasts from MDS relative to WT mice, normalized in DFP-treated MDS mice (Figure 6A). In contrast, cell surface TFR1 on bone marrow erythroblasts from DFP-treated WT mice is increased relative to WT mice (Figure 6—figure supplement 1). Because Tfrc expression in bone marrow is mainly EPO-mediated (Chan et al., 1994), we anticipate that erythroblast Tfrc expression is elevated in MDS as a consequence of high EPO, consequently decreased in DFP-treated relative to untreated MDS mice. We used sorted bone marrow to evaluate Tfrc expression in progressive stages of terminal erythropoiesis. First, Tfrc expression is increased in ProE and BasoE stages in MDS mice and remains elevated in DFP-treated MDS mice (Figure 6B and C). Next, Tfrc expression is normal and decreased in PolyE and OrthoE stages, respectively, in MDS relative to WT mice and increased to normal levels in DFP-treated relative to untreated MDS mice (Figure 6D and E). In contrast, Tfrc expression in bone marrow erythroblasts from DFP-treated WT mice is decreased relative to WT mice (Figure 6—figure supplement 2). These findings demonstrate that Tfrc expression correlates with Epor expression, especially in ProE stage, DFP in MDS erythroblasts leads to improvement in EPO-responsiveness not observed in WT mice, and erythroblast cell surface TFR1 for iron uptake during erythropoiesis is coordinated with EPO-responsiveness.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig6-v1.jpg)
+
+**Figure 6.:** (A) Flow cytometry gating using TER119 and CD44 was used to delineate bone marrow erythroblasts. In these gated erythroblasts, we evaluate membrane TFR1 to demonstrate its decrease in response to DFP in MDS mice (n=7–13 mice/group) analyzed after 1 month of treatment. Tfrc mRNA expression is increased in sorted bone marrow ProE (B) from MDS mice and partially normalized in DFP-treated MDS mice. Tfrc mRNA expression is normal in sorted bone marrow BasoE (C) and PolyE (D), decreased in OrthoE (E) from MDS mice, and increased in DFP-treated relative to untreated MDS mice (n=15–18 mice/group). *p<0.05 vs. WT; **p<0.01 vs. WT; &p<0.05 vs. MDS; &&p<0.01 vs. MDS; Abbreviations: WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; TFR1=transferrin receptor 1; ProE = pro-erythroblasts; BasoE = basophilic erythroblasts; PolyE = polychromatophilic erythroblasts; OrthoE = orthochromatophilic erythroblasts.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Membrane TFR1 on bone marrow erythroblasts from WT and DFP-treated WT mice (n=5–11 mice/group). *p<0.05 vs. WT DFP; WT = wild type; DFP = deferiprone; TFR1 = transferrin receptor 1; MFI = mean fluorescence index.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Sorted bone marrow erythroblast Tfrc mRNA expression between WT and DFP-treated WT mice (n=5–7 mice/group). *p<0.05 vs. WT DFP; WT = wild type; DFP = deferiprone; Tfrc = transferrin receptor 1.
+
 Next, we evaluate levels of TFR2 in light of its role in iron sensing and coordination of EPO-responsiveness with iron supply during erythropoiesis (Ghaffari et al., 2006; Khalil et al., 2017). Furthermore, TFR2 is under investigation as a potential therapeutic target in β-thalassemia, another disease of ineffective erythropoiesis (Artuso et al., 2018). We hypothesize that TFR2, given the proposed interaction with EPOR (Forejtnikovà et al., 2010), plays a central compensatory role in ineffective erythropoiesis. MDS mice exhibit higher erythroblast surface TFR2 expression specifically in ProE relative to WT, unchanged in DFP-treated MDS mice (Figure 7A). In addition, TFR2 expression is also borderline increased in bone marrow ProE erythroblasts, significantly higher in DFP-treated MDS relative to WT mice (Figure 7B); no significant differences are evident in BasoE, PolyE, and OrthoE bone marrow erythroblasts between WT, MDS, and DFP-treated MDS mice (Figure 7—figure supplement 1). When compared with ProE, TFR2 expression in BasoE, PolyE, and OrthoE is significantly suppressed and remains suppressed in DFP-treated MDS mice (Figure 7C). Finally, no obvious differences in TFR2 protein concentration (Figure 7D and E) or Scrib mRNA expression (Figure 7—figure supplement 2) are evident between bone marrow erythroblasts from WT, MDS, and DFP-treated MDS mice. These findings do not identify a DFP-specific modification of TFR2 mRNA, protein, or erythroblast surface localization or its action through changes in Scrib (Khalil et al., 2018). A mechanistic role for TFR2 in ineffective erythropoiesis in MDS remains to be fully elucidated.
 
-## Altered iron trafficking in MDS erythroblasts is partially restored by DFP
+![Figure 7.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig7-v1.jpg)
+
+**Figure 7.:** (A) Flow cytometry gating using TER119 and CD44 was used to delineate bone marrow erythroblasts. In these gated erythroblasts, we evaluate membrane TFR2 which is unchanged in MDS and DFP-treated MDS mice (n=6–7 mice/group) analyzed after 1 month of treatment. (B) TFR2 mRNA expression is borderline increased in sorted bone marrow ProE from MDS relative to WT mice and remains significantly elevated in DFP-treated MDS relative to WT mice (n=15–18 mice/group). When compared with sorted bone marrow ProE, TFR2 expression in sorted bone marrow BasoE (C), PolyE (D), and OrthoE (E) is significantly suppressed in MDS relative to WT mice and remains suppressed in PolyE and OrthoE from DFP-treated MDS mice (n=15–18 mice/group). (F) Western blot demonstrating TFR2 protein concentration in bone marrow erythroblasts is not different between WT, MDS, and DFP-treated MDS mice, quantified in (G) (n=3 mice/sample). *p<0.05 vs. WT; **p<0.01 vs. WT; Abbreviations: WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; TFR2 = transferrin receptor 2; ProE = pro-erythroblasts; BasoE = basophilic erythroblasts; PolyE = polychromatophilic erythroblasts; OrthoE = orthochromatophilic erythroblasts.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** No differences are observed in TFR2 mRNA expression in sorted BasoE (A), PolyE (B), and OrthoE (C) relative to ProE in WT, MDS, and DFP-treated MDS mice (n=5–15 mice/group). WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; TFR2 = transferrin receptor 2; ProE = pro-erythroblasts; BasoE = basophilic erythroblasts; PolyE = polychromatophilic erythroblasts; OrthoE = orthochromatophilic erythroblasts.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** No differences in Scrib mRNA expression are observed in sorted bone marrow ProE (A), BasoE (B), PolyE (C), and OrthoE (D) between WT, MDS, and DFP-treated MDS mice (n=15–18 mice/group). WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; ProE = pro-erythroblasts; BasoE = basophilic erythroblasts; PolyE = polychromatophilic erythroblasts; OrthoE = orthochromatophilic erythroblasts; Scrib = Scribble.
+
+### Altered iron trafficking in MDS erythroblasts is partially restored by DFP
 
 We explored further the expression of other iron chaperones in MDS mouse bone marrow erythroblasts, hypothesizing that improved erythropoiesis in DFP-treated MDS mice is a consequence of not only decreased iron concentration but altered iron trafficking within erythroblasts. The cytosolic chaperone Poly(rC)-binding protein 1 (PCBP1) delivers iron to ferritin (Leidgens et al., 2013; Ryu et al., 2017) with evidence from Pcbp1 knockout mice, with microcytosis and anemia, that iron delivery to ferritin is required for normal erythropoiesis (Ryu et al., 2017). In addition, PCBP2 is also required for ferritin complex formation (Leidgens et al., 2013). Conversely, an autophagic process to extract iron from the ferritin core is mediated by nuclear receptor coactivator 4 (NCOA4), a selective cargo receptor for autophagic ferritin turn-over, critical for regulation of intracellular iron availability (Mancias et al., 2014; Dowdle et al., 2014). In iron-replete states, PCBP1 and PCBP2 expression is enhanced while NCOA4 is targeted to the proteasome for degradation (Mancias et al., 2015; Philpott, 2018). Our results demonstrate that mRNA expression of both Pcbp1 (Figure 8A–C) and Pcbp2 (Figure 8—figure supplement 1) in sorted bone marrow ProE, BasoE, and PolyE is elevated in MDS mice and does not return to control WT levels in DFP-treated MDS mice. Conversely, mRNA expression of both Pcbp1 (Figure 8D) and Pcbp2 (Figure 8—figure supplement 1) in sorted bone marrow OrthoE is decreased in MDS relative to WT mice, normalized in DFP-treated MDS mice.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig8-v1.jpg)
+
+**Figure 8.:** Sorted bone marrow Pcbp1 mRNA expression is increased in ProE (A) from MDS relative to WT mice and remains high or is further elevated in ProE, BasoE (B), and PolyE (C) DFP-treated relative to untreated MDS mice. (D) Sorted bone marrow Pcbp1 mRNA expression is unchanged in OrthoE from MDS relative to WT mice, borderline normalized in DFP-treated MDS mice. Sorted bone marrow mRNA expression of Ncoa4 in ProE (E) is borderline increased in MDS, normalized in DFP-treated MDS mice. Sorted bone marrow mRNA expression of Ncoa4 is unchanged in BasoE (F) and PolyE (G) from MDS or DFP-treated MDS relative to WT mice. Sorted bone marrow mRNA expression of Ncoa4 in OrthoE (H) is unchanged in MDS and normalized in DFP-treated MDS mice (n=15–18 mice/group). *p<0.05 vs. WT; &p<0.05 vs. MDS; Abbreviations: WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; Pcbp1=Poly(rC)-binding protein 1; Ncoa4=nuclear receptor coactivator 4; ProE = pro-erythroblasts; BasoE = basophilic erythroblasts; PolyE = polychromatophilic erythroblasts; OrthoE = orthochromatophilic erythroblasts.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Pcbp2 mRNA expression changes parallel those of Pcbp1 in sorted bone marrow ProE (A), BasoE (B), PolyE (C), and OrthoE (d) between WT, MDS, and DFP-treated MDS mice (n=15–18 mice / group). *p<0.05 vs. WT; &p<0.05 vs. MDS; WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; ProE = pro-erythroblasts; BasoE = basophilic erythroblasts; PolyE = polychromatophilic erythroblasts; OrthoE = orthochromatophilic erythroblasts; Pcbp2=Poly(rC)-binding protein 2.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** No differences in Gpx4 mRNA expression are observed in sorted bone marrow ProE (A), BasoE (B), PolyE (C), and OrthoE (D) between WT, MDS, and DFP-treated MDS mice (n=15–18 mice/group). WT = wild type; MDS = myelodysplastic syndrome; DFP = deferiprone; ProE = pro-erythroblasts; BasoE = basophilic erythroblasts; PolyE = polychromatophilic erythroblasts; OrthoE = orthochromatophilic erythroblasts; GPX4 = glutathione peroxidase 4.
+
 Furthermore, ProE mRNA expression of Ncoa4 shows an increased trend in MDS mice and does not return to control WT levels in DFP-treated MDS mice (Figure 8E). While no differences in Ncoa4 expression in bone marrow sorted BasoE and PolyE from WT, MDS, and DFP-treated MDS mice (Figure 8F and G), Ncoa4 expression is suppressed in sorted bone marrow OrthoE in MDS mice, normalized in DFP-treated MDS mice (Figure 8H). Because of the role of NCOA4 in ferritinophagy and ferroptosis, we evaluate Gpx4 expression in sorted bone marrow erythroblasts, demonstrating no differences between WT, MDS, and DFP-treated MDS mice (Figure 8—figure supplement 2). These findings are consistent with expectations that high levels of iron flux through ferritin, high rates of ferritin turnover, and high rates of iron transfer to the mitochondria require elevated NCOA4 and PCBP1/2 levels (Mancias et al., 2015) and provide preliminary evidence that movement of iron between sub-cellular compartments is altered in MDS erythroblasts, especially in early stages of terminal erythropoiesis, partially normalized by DFP.
 
-## Increased expression of iron metabolism-related genes in MDS patient bone marrow stem and progenitor cells
+### Increased expression of iron metabolism-related genes in MDS patient bone marrow stem and progenitor cells
 
 Expression of iron metabolism-related genes is compared in bone marrow-derived CD34 + stem and progenitor cells from MDS patients (N=183) and healthy controls (N=17) as previously described (Pellagatti et al., 2010). As expected, Tfrc, Epor, Gata1, Bcl2l1 (gene name for Bcl-Xl), and Erfe expression are significantly increased in MDS patients relative to controls (Figure 9A–E). In addition, while Pcbp1 is unchanged and Pcbp2 is borderline increased, Ncoa4 is significantly increased in bone marrow stem and progenitor cells from MDS patients (Figure 9F–H), enabling increased ferritin degradation in MDS erythroblasts. Finally, TFR2 expression is also significantly increased in MDS patients relative to controls (Figure 9I), confirming our results in MDS mice. Whether changes in iron sensing and trafficking within erythroblasts contribute to MDS pathophysiology and ineffective erythropoiesis more broadly is unexplored. Our findings demonstrate that NHD13 mice recapitulate pathophysiological changes in iron sensing and trafficking in erythroid progenitors from MDS patients.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/83103/elife-83103-fig9-v1.jpg)
 
-**Figure 9.:** Increased expression of Tfrc (A), Epor (B), Gata1 (C), Bcl2l1 (D), and Erfe (E) is expected and validates the database. No difference in Pcbp1 (F), borderline increase in Pcbp2 (G), and statistically significantly increase in Ncoa4 (H) and TFR2 (I) are evident in MDS patients relative to controls, providing an important confirmation of the relevance of similar findings in MDS mice. *p<0.05, **p<0.01, ***p<0.0001 vs. control; MDS = myelodysplastic syndrome; Tfrc and TFR2 = transferrin receptor 1 and 2; Epor = erythropoietin receptor; Bcl2l1 = B cell lymphoma 2-like protein 1 (gene name for Bcl-Xl); Erfe = erythroferrone; Pcbp1 and Pcbp2 = Poly(rC)-binding protein 1 and 2; Ncoa4 nuclear receptor coactivator 4.Figure 9—source data 1.
+**Figure 9.:** Increased expression of Tfrc (A), Epor (B), Gata1 (C), Bcl2l1 (D), and Erfe (E) is expected and validates the database. No difference in Pcbp1 (F), borderline increase in Pcbp2 (G), and statistically significantly increase in Ncoa4 (H) and TFR2 (I) are evident in MDS patients relative to controls, providing an important confirmation of the relevance of similar findings in MDS mice. *p<0.05, **p<0.01, ***p<0.0001 vs. control; MDS = myelodysplastic syndrome; Tfrc and TFR2 = transferrin receptor 1 and 2; Epor = erythropoietin receptor; Bcl2l1 = B cell lymphoma 2-like protein 1 (gene name for Bcl-Xl); Erfe = erythroferrone; Pcbp1 and Pcbp2 = Poly(rC)-binding protein 1 and 2; Ncoa4 nuclear receptor coactivator 4.
 
 ## Discussion
 
@@ -118,38 +315,38 @@ In addition, with an eye toward its translation, the use of DFP has been associa
 
 ## Materials and methods
 
-## Mice and treatment
+### Mice and treatment
 
 C57BL/6 (WT) and C57BL/6-Tg(Vav1-NUP98/HOXD13)G2Apla/J (NHD13) mice (Lin et al., 2005) were originally purchased from Jackson Laboratories (Bar Harbor, ME, USA). For simplicity, NHD13 mice are designated as ‘MDS mice’ throughout the manuscript. All mice were bred and housed in the animal facility under the Association for Assessment and Accreditation of Laboratory Animal Care guidelines. Experimental protocols were approved by the Institutional Animal Care and Use Committee. This well-established mouse model has been shown to recapitulate all key findings in human MDS, including blood cell dysplasia, peripheral blood cytopenias, ineffective hematopoiesis prior to transformation to acute leukemia, and a subset of mice progressing to acute leukemia at 14 months (Lin et al., 2005; Slape et al., 2008). NHD13 mice on a C57BL/6 background were previously found to be clinically appropriate as an MDS model until at least 7 months (Lin et al., 2005; Slape et al., 2008). As a consequence, we used age and gender-matched 5-month-old mice, at least five mice per group, treated with deferiprone (DFP; trade name Ferriprox; chemical name 3-hydroxy-1,2-dimethylpyridin-4-one) at a concentration of 1.25 mg/mL in the drinking water for 4 weeks. DFP is an orally active iron chelator that binds iron in a 3:1 (DFP:iron) complex and undergoes renal clearance. Mice were euthanized for analysis at 6 months of age, as mice were analyzed previously to study the effects of ineffective erythropoiesis (Suragani et al., 2014). Therefore, all endpoints of interest were analyzed to compare DFP-treated MDS mice after 1 month of treatment with untreated MDS mice and WT controls.
 
-## Peripheral blood analyses
+### Peripheral blood analyses
 
 Mice peripheral blood cell counting was analyzed by ProCyte Dx Hematology Analyzer. Serum mouse EPO (Quantikine, R&D Systems) was measured by enzyme-linked immunosorbent assay (ELISA) according to the manufacturer’s instructions. Integra 800 Automated Clinical Analyzer (Roche Diagnostics) was used to measure serum iron to transferrin iron-binding capacity (TIBC); serum transferrin saturation was measured as a ratio of serum iron to TIBC. Serum DFP and its metabolite DFP-glucuronide (DFP-G) concentrations were measured using liquid chromatography–mass spectrometry, validated in accordance with the FDA Bioanalytical Method Validation Guidance. The lower limit of quantifiable values for the method was 0.10 µM for DFP and 0.050 µM for DFP-Glu in mouse serum.
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 Immunohistochemical staining was performed using anti-TER119 antibodies (eBioscience, San Diego, CA), and counterstained with hematoxylin. Images were acquired on a Zeiss Axioskop2 microscope with an AxioCamHRC camera using Plan-Neofluar objectives 20x/0.5 and Axiovision software.
 
-## Non-heme iron spectrophotometry
+### Non-heme iron spectrophotometry
 
 Quantification was performed via the Torrance and Bothwell method (Torrance and Bothwell, 1980). Briefly, specimens were digested overnight in an acid solution at 65 °C. A mixture of chromogen solution with acid extraction was incubated at room temperature for 10 min and the absorbance was measured at 540 nm by spectrophotometer (CLARIOstar plate reader, BMG Labtech).
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 We prepared RNA from sorted bone marrow and liver samples using the RNeasy Kit (Qiagen) according to the manufacturer’s instructions. We synthesized cDNA using the High-Capacity cDNA Reverse Transcription Kit (Thermo Fisher). Primers are listed in Supplementary file 1a. qPCR was conducted by iQ SYBRGreen Supermix using the BioRad CFX96 Real-Time PCR Thermal Cycler. Target gene mRNA concentration was normalized to Gapdh.
 
-## Western immunoblotting
+### Western immunoblotting
 
 Beads sorted CD45 negative bone marrow or liver cells were lysed in ice-cold SDS page lysis buffer (2% SDS, 50 mM Tris-HCl, pH 7.4, 10 mM EDTA) with protease and phosphatase inhibitors. Twenty mg of heat–denatured protein was loaded onto a 10% gel, run, and transferred onto a 0.4 mm nitrocellulose membrane (Thermo Scientific). After blocking with 5% BSA in Tris–buffered saline with 1% Tween-20, the membranes were incubated with primary antibodies to signaling proteins (Supplementary file 1b) overnight at 4 °C, washed, and incubated with the corresponding HRP–conjugated secondary antibodies at room temperature. Proteins were visualized using the ImageQuant LAS 4010 and quantified using Image J.
 
-## Flow cytometric analysis and sorting
+### Flow cytometric analysis and sorting
 
 Bone marrow cells were processed as described previously (Liu et al., 2013) with minor modifications. Briefly, the cells were mechanically dissociated, blocked with rat anti–mouse CD16/CD32 (Fcγ III/II Receptor), incubated with anti-CD45 magnetic beads (Mylteni), and underwent magnetic separation using LS columns according to the manufacturer’s instructions (Miltenyi Biotec). Erythroid lineage-enriched CD45 negative cells were collected for further staining. Non-erythroid and necrotic cells were excluded using anti-CD45 (BD Pharmigen), anti-CD11b, and anti-Gr1 (APC-Cy7) (Tonbo, Biosciences) antibodies. Cells were incubated with anti-mouse TER119 PE-Cy7 (BioLegend) and CD44-APC (Tonbo, Biosciences) to identify and delineate progressive stages of erythroblast differentiation (Figure 3—figure supplement 6). Once erythroblasts were delineated by TER119, CD44, and forward scatter, CD71-PE (BioLegend) was used to evaluate changes in erythroblast membrane TFR1. ROS quantification in erythroblasts was performed using immunostaining for ROS (Invitrogen) as per the manufacturer’s instructions. To evaluate apoptosis, cells were stained for activated caspase 3/7 kit (Invitrogen); 7-amino-actinomycin D (7AAD, BD Pharmingen) was added to exclude dead cells. Cells were analyzed within 1 hr of staining using BD FACSDiva Version 6.1.2 software on a FACSCanto flow cytometer (Becton Dickinson). The gating strategy was as previously described (Liu et al., 2013). Erythroid differentiation was quantified by analyzing the fraction of each stage of terminal erythropoiesis relative to all erythroblasts in each bone marrow sample. In addition, to individually evaluate gene expression in erythroblasts at different maturation stages, bone marrow cells underwent sorting on a BD FACSAria III (BD Biosciences). Finally, enucleation was assessed as described previously (An and Chen, 2018).
 
-## Gene expression in MDS patient database
+### Gene expression in MDS patient database
 
 Gene expression data from 183 MDS CD34 + samples and 17 controls were obtained from GEO (GSE19429) as previously described (Pellagatti et al., 2010).
 
-## Statistical analyses
+### Statistical analyses
 
 All data are reported as mean ± standard error of the mean (SEM). We performed analysis for statistically significant differences using one-way ANOVA with multiple comparisons and Tukey post-test analyses for the mouse samples where more than two groups are compared and two-tailed t-test in all other circumstances.

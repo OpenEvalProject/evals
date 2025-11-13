@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.45418.001 Alternative splicing (AS) creates proteomic diversity from a limited size genome by generating numerous transcripts from a single protein-coding gene. Tissue-specific regulators of AS are essential components of the gene regulatory network, required for normal cellular function, tissue patterning, and embryonic development. However, their cell-autonomous function in neural crest development has not been explored. Here, we demonstrate that splicing factor Rbfox2 is expressed in the neural crest cells (NCCs), and deletion of Rbfox2 in NCCs leads to cleft palate and defects in craniofacial bone development. RNA-Seq analysis revealed that Rbfox2 regulates splicing and expression of numerous genes essential for neural crest/craniofacial development. We demonstrate that Rbfox2-TGF-β-Tak1 signaling axis is deregulated by Rbfox2 deletion. Furthermore, restoration of TGF-β signaling by Tak1 overexpression can rescue the proliferation defect seen in Rbfox2 mutants. We also identified a positive feedback loop in which TGF-β signaling promotes expression of Rbfox2 in NCCs.
+Alternative splicing (AS) creates proteomic diversity from a limited size genome by generating numerous transcripts from a single protein-coding gene. Tissue-specific regulators of AS are essential components of the gene regulatory network, required for normal cellular function, tissue patterning, and embryonic development. However, their cell-autonomous function in neural crest development has not been explored. Here, we demonstrate that splicing factor Rbfox2 is expressed in the neural crest cells (NCCs), and deletion of Rbfox2 in NCCs leads to cleft palate and defects in craniofacial bone development. RNA-Seq analysis revealed that Rbfox2 regulates splicing and expression of numerous genes essential for neural crest/craniofacial development. We demonstrate that Rbfox2-TGF-β-Tak1 signaling axis is deregulated by Rbfox2 deletion. Furthermore, restoration of TGF-β signaling by Tak1 overexpression can rescue the proliferation defect seen in Rbfox2 mutants. We also identified a positive feedback loop in which TGF-β signaling promotes expression of Rbfox2 in NCCs.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ In the present study, we demonstrate that Rbfox2 is expressed in the neural cres
 
 ## Results
 
-## Rbfox2 is expressed in NCCs during mouse embryogenesis
+### Rbfox2 is expressed in NCCs during mouse embryogenesis
 
 To determine the expression pattern of Rbfox2, we performed Rbfox2 immunostaining on transverse sections from E9.5 to E11.5 embryos at different rostrocaudal axis. At E9.5, Rbfox2 is expressed in the premigratory NCCs at the dorsal neural tube, as well as in the migratory NCCs (Figure 1A–C,F–H,K–M) throughout the rostrocaudal axis, with strong expression of Rbfox2 observed in the somites. Rbfox2 expression is gradually reduced in migratory NCCs (Figure 1K–M). Rbfox2 expression was detected in the neural crest-derived craniofacial tissues including the palate shelves but not in the cardiac tissues such as OFT (Figure 1D–E,I–J,N–O). To compare Rbfox2 expression with a known neural crest cell marker, we performed Rbfox2 and Pax3 immunostaining on transverse sections from E9.5, E10.5 and E11.5 embryos (Figure 1P–U). At E9.5, Rbfox2 expression is identical to Pax3 in NCCs, dorsal neural tube, and somites (Figure 1P and S). At E10.5, in addition to premigratory NCCs, Rbfox2 is also expressed in the dorsal root ganglia (Figure 1Q). In contrast to Pax3 expression in the dorsal neural tube, the Rbfox2 expression is more restricted to the ventral neural tube (Figure 1Q and T). At E11.5, Rbfox2 is expressed in the ventral neural tube and dorsal root ganglia (Figure 1R). However, Pax3 is more restricted to the dorsal neural tube (Figure 1U). At an early stage, Rbfox2 expression was similar to that of Pax3, which is transiently expressed in all premigratory, migratory NCCs and somites. In contrast to Pax3 expression in the dorsal neural tube, Rbfox2 expression was restricted to the ventral neural tube at later stages. These results indicate that Rbfox2 is expressed in NCCs, dorsal neural tube, palate shelves, dorsal root ganglia, and somites.
 
@@ -44,41 +44,117 @@ To determine the expression pattern of Rbfox2, we performed Rbfox2 immunostainin
 
 **Figure 1.:** Immunostaining for Rbfox2 was performed on E9.5, E10.5, E11.5 and E12.5 transverse sections at different rostrocaudal axis (A–R). Magnified view of the neural tube shows Rbfox2 expression in the pre-migratory (white arrows) and migratory (red arrows) neural crest cells (K–M). Rbfox2 expression in neural crest-derived tissues such as OFT and palate shelves (D-E, I-J, and N-O). Non-specific autofluorescence due to blood cells is observed in DA, MDA, OFT, RA and LA. Immunostaining for Rbfox2 and Pax3 was performed on adjacent sections from E9.5, E10.5, and E11.5 mouse embryos (P–U). Rbfox2 is expressed in the premigratory neural crest cells (white arrows) of the dorsal neural tube as well as in the migratory neural crest cells (red arrows). Nuclei were visualized by DAPI staining (blue). CAC, common atrial chamber and CV, cardinal vein; DGR, dorsal root ganglion; DM, dorsal mesocardium; DA, dorsal aorta; FV, fourth ventricle; LA, left atrium; MDA, midline dorsal aorta; NT, neural tube; OFT, outflow tract; PS, palatal shelves; RA, right atrium; S, somite; T, Tongue; TG, trigeminal ganglion; UV, umbilical vein; V, ventricle. Scale bars are 100 μm respectively.
 
-## Rbfox2 deletion results in severe craniofacial defects, edema, and neonatal lethality
+### Rbfox2 deletion results in severe craniofacial defects, edema, and neonatal lethality
 
 To establish the role of Rbfox2 during embryonic development, we conditionally deleted Rbfox2 using Pax3Cre/+ knock in allele and floxed Rbfox2 (Rbfox2flox/flox) mice (Engleka et al., 2005; Gehman et al., 2012). Pax3Cre/+ knock in allele was used to delete Rbfox2 not only in the premigratory and migratory NCCs, but also in paraxial mesoderm and somite derivatives where Rbfox2 is expressed. Pax3Cre/+;Rbfox2flox/+ mice were fertile, born at the expected Mendelian ratio, and exhibited no gross abnormalities. However, we did not recover any mutant (Rbfox2Pax3-CKO) pups at postnatal day 10 from breeding Pax3Cre/+;Rbfox2flox/+ and Rbfox2flox/flox mice, demonstrating that Pax3Cre/+-mediated inactivation of Rbfox2 leads to embryonic or neonatal lethality (Figure 2—figure supplement 1A). Genotyping of embryos from series of timed point matings demonstrated that Rbfox2Pax3-CKO embryos are present at the expected Mendelian ratios at all embryonic time points analyzed (E10.5-E18.5) (Figure 2—figure supplement 1A). However, pups monitoring after birth revealed that mutant pups that are characterized by a shortened body axis and abnormal craniofacial features die at postnatal day one (P1) (Figure 2—figure supplement 1B and G). Our morphological and histological analyses demonstrate that Rbfox2Pax3-CKO embryos develop cleft palate and severe subcutaneous edema, which are present in mid- and late-gestation (Figure 2—figure supplement 1C–F,H–K). Irregular breathing and hardly inflated lungs in Rbfox2Pax3-CKO pups support the notion that the neonatal lethality is caused by respiratory failure (Figure 2—figure supplement 1L–O).
 
-## Loss of Rbfox2 in NCCs results in cleft palate
+### Loss of Rbfox2 in NCCs results in cleft palate
 
 In Rbfox2Pax3-CKO embryos, development of primary palates is not affected. However, all of the Rbfox2Pax3-CKO pups died neonatally, exhibiting a secondary cleft palate defect. To determine when the cleft palate defects were first evident, we examined Rbfox2Pax3-CKO embryos at progressively earlier stages by analyzing their morphological and histological data (Figure 2A–L). At E12.5, the palatal shelves in both control and Rbfox2Pax3-CKO embryos were initiated normally, growing vertically flanking the developing tongue (Figure 2A–B,G–H). No obvious morphological or histological differences were observed at this embryonic stage. At E15.5 and E18.5, the control palatal shelves were elevated above the tongue to a horizontal position and met each other at the midline along the anterior-posterior axis (Figure 2C–F). However, in Rbfox2Pax3-CKO embryos, palatal shelves were elevated above the tongue to a horizontal position, but they completely failed to fuse at the midline throughout the anterior-posterior axis (Figure 2I–L). Since Pax3Cre is expressed in both the neural crest and mesodermal derivatives, it was not clear if the cleft palate defects were due to Rbfox2 deletion in the neural crest cells. To determine the neural crest-specific requirement of Rbfox2, we generated neural crest-specific Rbfox2 mutant (Rbfox2Wnt1-CKO) embryos using Wnt1Cre/+ mice (Gehman et al., 2012; Lewis et al., 2013). Similar to Rbfox2Pax3-CKO, Rbfox2Wnt1-CKO mice were born at the expected Mendelian ratio but died at P1 (Figure 2—figure supplement 1P–R). To determine the craniofacial defects, we analyzed Rbfox2Wnt1-CKO palates at different time points. Similar to Rbfox2Pax3-CKO embryos, palatal shelves in Rbfox2Wnt1-CKO embryos were elevated above the tongue to a horizontal position, but completely failed to fuse at the midline throughout the anterior-posterior axis (Figure 2M–T).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig2-v2.jpg)
+
+**Figure 2.:** Gross morphology and Alcian blue staining of control (A, C and E) and Rbfox2Pax3-CKO (G, I and K) palates at E12.5 (n = 7 controls, n = 7 Rbfox2Pax3-CKO), E15.5 (n = 6 controls, n = 6 Rbfox2Pax3-CKO) and E18.5 (n = 7 controls, n = 7 Rbfox2Pax3-CKO). H and E stained transverse sections of control (B), (D), and (F) and Rbfox2Pax3-CKO (H), (J), and L) embryos at the level of the anterior and posterior palatal shelves. Gross morphology and Alcian blue staining of control (M and O) and Rbfox2Wnt1-CKO (Q and S) palates at E15.5 (n = 6 controls, n = 6 Rbfox2Wnt1-CKO) and E18.5 (n = 7 controls, n = 6 Rbfox2Wnt1-CKO). H and E stained sections of control (N and P) and Rbfox2Wnt1-CKO (R and T) E15.5 and E17.5 embryos at the level of the anterior and posterior palatal shelves. Asterisks (*) represent cleft palate in Rbfox2 mutant embryos (I–L and Q–T). P, palate; PS, palatal shelves; NS, Nasal septum; T, Tongue. Scale bars are 200 μm respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Genotyping results from embryos and pups generated by a cross between Pax3Cre/+; Rbfox2flox/+ and Rbfox2flox/flox mice (A). Gross morphology and histology of control (B–F) and mutant (G–K) embryos and pups at different embryonic and neonatal time points. Pax3Cre/+;Rbfox2flox/flox (Rbfox2Pax3-CKO) embryos show subcutaneous edema (white arrows) compared to controls (n = 40 controls, n = 40 Rbfox2Pax3-CKO). H and E staining of sections detects cleft palate (red arrow) and thin dermal layer in the skin of Rbfox2Pax3-CKO embryos (black arrow) than in littermate controls due to subcutaneous edema (n = 5 controls, n = 5 Rbfox2Pax3-CKO) (F and K). Scale bars are 1 mm respectively. Hematoxylin and eosin stained sagittal sections of control (L, N) and Rbfox2Pax3CKO (M, O) pups at P1 (n = 4 each genotype). Scale bars are 200 μm respectively. Genotyping results from embryos and pups generated by a cross between Wnt1Cre/+;Rbfox2flox/+ and Rbfox2flox/flox mice (P). Gross morphology of control (Q) and Rbfox2Wnt1-CKO (R) pups at P1 (n = 4 each genotype). The mutant lungs are not inflated compared to controls. A, atrium; V, ventricle; Lu, lung.
+
 To determine the cellular mechanisms responsible for the impaired palatal growth in Rbfox2 mutant embryos, we performed cell proliferation, and apoptosis assays on transverse palatal sections from control and Rbfox2 mutant embryos. Ki67 immunohistochemistry revealed a significant reduction in cell proliferation in Rbfox2 mutants when compared with control embryos at E12.5, in which the morphological or histological changes were not evident (Figure 3A–C). A significant difference in cell proliferation was more evident at E15.5 (Figure 3D–F and G–I). TUNEL assay demonstrated no differences in cell death between the control and Rbfox2 mutants at E15.5 (Figure 3J–K). E-cadherin expression is observed in the nasal, palatal and tongue epithelium and not affected by Rbfox2 deletion (Figure 3L–M). To determine whether cleft palate defect was due to impaired neural crest cell migration, we performed lineage-tracing analysis at E15.5 in both control (Wnt1Cre/+:Rbfox2flox/+:R26mTmG/+) and mutant (Wnt1Cre/+:Rbfox2flox/flox:R26mTmG/+) embryos. Labeled neural crest cells marked by GFP immunostaining were abundantly present in the palate shelves of mutant embryos (Figure 3N–O). To determine any gross abnormality in NCCs migration, we performed lineage-tracing analysis at E12.5 and E14.5 in both control (Pax3Cre/+:Rbfox2flox/+:R26mTmG/+) and mutant (Pax3Cre/+:Rbfox2flox/flox:R26mTmG/+) embryos. No obvious NCCs migration defect was observed (Figure 3—figure supplement 1).
 
-## Craniofacial and axial skeletal defects in Rbfox2 mutants
+![Figure 3.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig3-v2.jpg)
+
+**Figure 3.:** Immunohistochemistry for Ki67 was performed on transverse sections through the middle palatal regions of E12.5 (n = 4 controls, n = 4 Rbfox2Pax3-CKO) and E15.5 (n = 5 controls, n = 5 Rbfox2Pax3-CKO) control (A, D) and Rbfox2Pax3-CKO (B, E) embryos. Immunohistochemistry for Ki67 was performed on E15.5 control (G) and Rbfox2Wnt1-CKO (H) middle palatal shelves sections (n = 5 controls, n = 5 Rbfox2Wnt1-CKO). Quantification of cell proliferation was calculated as the ratio of Ki67-positive cells to the total number of cells as determined by DAPI counterstain in the defined area of palatal shelves (C, F and I). TUNEL assay was performed on E15.5 control (J) and Rbfox2Pax3-CKO (K) sections (n = 4 controls, n = 4 Rbfox2Pax3-CKO). E-cadherin immunostaining on E15.5 control (L) and Rbfox2Pax3-CKO (M) sections (n = 4 controls, n = 4 Rbfox2Pax3-CKO). GFP immunostaining on E15.5 Wnt1Cre/+;Rbfox2flox/+;R26mTmG/+ (N) and Wnt1Cre/+;Rbfox2flox/flox;R26mTmG/+ (O) sections showing neural crest derivatives cells in the palatal shelves (n = 4 each genotype). NS, Nasal septum; PS, palatal shelves; T, Tongue. Scale bars are 100 μm respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Lineage tracing of Pax3-derived cells at E12.5 (A–F, n = 3 each genotype) and E14.5 (G–L, n = 3 each genotype) using control (Pax3Cre/+:Rbfox2flox/+:R26mTmG/+) and mutant (Pax3Cre/+:Rbfox2flox/flox:R26mTmG/+) embryos. The white arrow indicates edema present in mutant embryos (J–L).
+
+### Craniofacial and axial skeletal defects in Rbfox2 mutants
 
 To examine the nature and severity of the skeleton defects, we performed Alizarin Red S and Alcian Blue staining on Rbfox2Pax3-CKO and Rbfox2Wnt1-CKO embryos (Figure 4). In both Rbfox2Pax3-CKO and Rbfox2Wnt1-CKO embryos, neural crest-derived bones such as frontal bones of the calvaria were hypoplastic and widely separated leaving a wide dorsal opening (Figure 4C and M). Decreased ossification of nasal bone was observed in Rbfox2Pax3-CKO mutant embryos compared to the controls (Figure 4B–C and L–M). Reduction in the lower jaw or mandible size was observed in Rbfox2 mutant embryos (Figure 4E–H and N–Q). Further analysis revealed that both the shape and size of most neural crest-derived bones including alisphenoid, premaxilla, palatal process of premaxilla, palatal process of maxilla and palatine are affected in Rbfox2 mutant embryos (Figure 4J–K and R–S). The palatal process of palatine bone is also missing in Rbfox2 mutant embryos (Figure 4K and S).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig4-v2.jpg)
+
+**Figure 4.:** Alizarin red and Alcian blue stainings for ossified and chondrified tissues, respectively, of control (A–B), (D–E), (G), and I–J) and Rbfox2Pax3-CKO (C), (F), (H), and (K) skeleton at E17.5 (n = 8 controls, n = 6 Rbfox2Pax3-CKO). Alizarin red and Alcian blue stainings of control (L), (N), (P), and (R) and Rbfox2Wnt1-CKO (M, O, Q and S) skeleton at E18.5 (n = 8 controls, n = 5 Rbfox2Wnt1-CKO). Neural crest and mesoderm contribution to craniofacial bones are represented in green and pink color respectively (A, D and I). Dorsal (A–C and L–M), lateral (D–F and N–O) and ventral (I–K and R–S) view of skulls. Both Rbfox2Pax3-CKO (C), (F), (H), and K) and Rbfox2Wnt1-CKO (M), (O), (Q), and S) embryos demonstrate severe hypoplasia and diminished ossification of many neural crest-derived bones. Asterisks (*) represent the missing PPPL bone in Rbfox2 mutant embryos (K and S). AS, alisphenoid; BO, basioccipital; BS, basisphenoid; EO, exoccipital; F, frontal bone; IP, interparietal; MD, mandible; MX, maxilla; N, nasal; NC, nasal capsule; P, parietal bone; PL, palatine; PMX, premaxilla; PPMX, palatal process of maxilla; PPPL, palatal process of palatine; PPPMX, palatal process of premaxilla; PT, petrous part of temporal bone; SO, supraoccipital; SQ, squamous.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Alizarin red and Alcian blue stainings for ossified and chondrified tissues, respectively, of control and Rbfox2Pax3-CKO skeleton at E17.5 (n = 8 controls, n = 6 Rbfox2Pax3-CKO). Lateral view of full skeletons and higher magnification of cervical and thoracic parts of the vertebral column (A). Cervical and thoracic parts of control and Rbfox2Wnt1-CKO skeleton at E18.5 (n = 8 controls, n = 6 Rbfox2Wnt1-CKO) (B). Transverse sections through the palatal regions of E17.5 control and Rbfox2Pax3-CKO embryos are stained for mineralized bone (black) by Von Kossa staining (C). Black staining represents bone and red staining represents connective tissues (n = 4 controls, n = 4 Rbfox2Pax3-CKO). In comparison to controls, there was a reduced thickness of ossified calvaria bone in the Rbfox2Pax3-CKO embryos (double-headed black arrow). Scale bars are 100 μm respectively.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Gross morphology and histological analyses show no change in the patterning of the great vessels between controls (A–C and G–H) and Rbfox2Pax3-CKO (D–F); n = 10 controls, n = 10 Rbfox2Pax3-CKO) or Rbfox2Wnt1-CKO (I–J); n = 7 controls, n = 5 Rbfox2Wnt1-CKO) mouse embryos. Images of aortic arches in E18.5 control (A) and Rbfox2Pax3-CKO (D) embryos. H and E staining (B and E) and SMA immunohistochemistry (C and F) on sections through aortic arches from control (B–C) and Rbfox2Pax3-CKO (E–F) embryos. Images of aortic arches in E17.5 control (G) and Rbfox2Wnt1-CKO (I) embryos. H and E staining on sections through aortic arches from control (H) and Rbfox2Wnt1-CKO (J) embryos. Hearts from E12.5 and E14.5 Pax3Cre/+;Rbfox2flox/+;R26mTmG/+ (K and M; n = 4) and Pax3Cre/+;Rbfox2flox/flox;R26mTmG/+ (L and N; n = 5) embryos show labeled Pax3-derived neural crest derivatives (green) in the outflow tract. Heart from E15.5 Wnt1Cre/+;Rbfox2flox/+;R26mTmG/+ (O; n = 5) and Wnt1Cre/+;Rbfox2flox/flox;R26mTmG/+ (P); n = 5) embryos show labeled Wnt1-derived neural crest derivatives (green) in the outflow tract. A, Aorta; P, Pulmonary trunk; RA, right atrium; LA, left atrium; RV, right ventricle; LV, left ventricle. Scale bars are 200 μm respectively.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Whole mount neurofilament (2H3) immunostaining of one E10.5 control and two Rbfox2Pax3-CKO embryos are presented (A). White asterisks indicate nerve roots exiting the ventral neural tube. Cranial nerves are referred to as oculomotor (III), trochlear (IV), trigeminal (V), facial/vestibulocochlear (VII/VIII), glossopharyngeal (IX), vagal (X) and hypoglossal (XII). Oculomotor (III) and trochlear (IV) nerves are deformed (black arrow). The hypoglossal nerve (XII) is disorganized and sometime shorter (white arrows) in Rbfox2Pax3-CKO embryos (n = 6 controls, n = 5 Rbfox2Pax3-CKO) (A). Quantitation of dorsal root ganglia in control and Rbfox2Pax3-CKO embryos (n = 4 controls, n = 4 Rbfox2Pax3-CKO) (B). Whole-mount immunostaining of the gastrointestinal tract at E17.5 in two controls and two Rbfox2Wnt1-CKO embryos with the anti-neurofilament antibody 2H3 are presented (C). Scale bars are 500 μm respectively. Higher magnification of the proximal, middle and distal part of the intestine is presented (n = 4 controls, n = 4 Rbfox2Wnt1-CKO). Scale bars are 200 μm respectively. Enteric neural crest lineage tracing in E12.5 and E15.5 control (Wnt1Cre/+:Rbfox2flox/+:R26mTmG/+, n = 3) and Rbfox2 mutant (Wnt1Cre/+:Rbfox2flox/flox:R26mTmG/+, n = 3) embryos (D). DRG, dorsal root ganglion; NT, neural tube; St, stomach; Int, intestine; Mg, midgut; Hg, hindgut; Caec, Caecum.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Gross morphology and histology of thymus from E18.5 control (A–B) and Rbfox2Pax3-CKO (C–D) embryos (n = 6 controls, n = 6 Rbfox2Pax3-CKO). Morphology of the thymus from E17.5 control (E) and Rbfox2Wnt1-CKO (F) embryos (n = 6 controls, n = 5 Rbfox2Wnt1-CKO). Scale bars are 200 μm respectively.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Morphological (A–B) and histological analyses (C–D) of the adrenal gland from E18.5 control (A, C and E) and Rbfox2 Pax3-CKO (B), (D), and F) embryos (n = 8 controls, n = 6 Rbfox2Pax3-CKO). Morphological (G–H) and histological analyses (I–J) of the adrenal gland from E17.5 control (G, I and K) and Rbfox2Wnt1-CKO (H), (J), and L) embryos (n = 4 controls, n = 4 Rbfox2Wnt1-CKO). Immunohistochemistry for tyrosine hydroxylase (E–F and K–L), a marker of neural crest-derived chromaffin cells, in sagittal sections of adrenal glands. Chromaffin cells of the adrenal medulla develop normally in the absence of Rbfox2 (F and L). AG, adrenal glands; Kd, kidney; AGC, adrenal gland cortex and AGM, adrenal gland medulla. Scale bars are 100 μm respectively.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Histological analysis of forelimb musculature from E17.5 control and Rbfox2Pax3-CKO embryos (n = 4 controls, n = 4 Rbfox2Pax3-CKO) (A–B). Histological analysis of forelimb musculature from P1 control and Rbfox2Pax3-CKO pups (n = 3 controls, n = 3 Rbfox2Pax3-CKO) (C–D). Histological analysis of diaphragm musculature from E15.5 (C and D) and E17.5 (E and F) control and Rbfox2Pax3-CKO embryos. H, Humerus; R, radius; U, Ulna; Lu, Lung; Li, Liver; D, Diaphragm. Scale bars are 200 μm (A–D) and 100 μm (E–H) respectively.
+
 The whole embryo skeletal preparations displayed severe defects in the axial skeleton of Rbfox2Pax3-CKO embryos (Figure 4—figure supplement 1A). Mutants are characterized by their shortened axial skeleton and smaller thoracic cavity. The vertebral column of control embryos showed a clear S-bend in the cervical and thoracic region (Figure 4—figure supplement 1A). However, in the Rbfox2Pax3-CKO embryos, the vertebral column was rather straight, positioning the skull and vertebral column perpendicular to each other (Figure 4—figure supplement 1A). Ectopic bone formation and fusion of vertebral bodies were observed in Rbfox2Pax3-CKO embryos (Figure 4—figure supplement 1A). No defects in the axial skeletons were observed in Rbfox2Wnt1-CKO embryos (Figure 4—figure supplement 1B). Von Kossa staining of the calvaria from E17.5 Rbfox2Pax3-CKO mutant embryos revealed the impaired development of mesenchymal condensations that become ossified bone (Figure 4—figure supplement 1C). Reduced thickness in the ossified calvaria bone was observed in Rbfox2Pax3-CKO embryos.
 
-## Rbfox2 deletion does not affect other neural crest-derived structures except cranial nerves
+### Rbfox2 deletion does not affect other neural crest-derived structures except cranial nerves
 
 As shown by normal septation and alignment of the aorta and pulmonary trunk, the development of cardiac OFT was not affected in Rbfox2 mutants (Figure 4—figure supplement 2A–J). No change in smooth muscle actin (SMA) staining was observed (Figure 4—figure supplement 2C,F). Fate-mapping analysis demonstrated that cardiac NCCs migration was grossly intact in the Rbfox2 mutant embryos (Figure 4—figure supplement 2K–P). To determine the effect of Rbfox2 deletion on neurons that populate the dorsal root, sympathetic and enteric ganglia, we performed whole mount neurofilament (2H3) staining to mark the differentiated neurons. The neurofilament 2H3 staining in Rbfox2 mutant embryos revealed abnormalities in the oculomotor (III), trochlear (IV) and hypoglossal nerve (XII cranial nerve) (Figure 4—figure supplement 3A). Oculomotor and trochlear nerves appear to be deformed. Analysis of cranial ganglia at higher magnification revealed that the roots of the hypoglossal cranial nerve are not fully developed. The hypoglossal cranial nerve is disorganized and shorter in Rbfox2Pax3-CKO embryos (Figure 4—figure supplement 3A). Hypoglossal nerve defects could be secondary to defects in the hypoglossal cord which is derived from the occipital somites, and where Pax3 is expressed (Bajard et al., 2006). No significant difference was observed in the size of the dorsal root ganglion (Figure 4—figure supplement 3B). Enteric nervous system development was not affected in the absence of Rbfox2 (Figure 4—figure supplement 3C–D). Similarly, other neural crest-derived organs such as thymus and adrenal gland (chromaffin cells) were not affected in Rbfox2 mutant embryos (Figure 4—figure supplement 4, and Figure 4—figure supplement 5). Since Pax3Cre/+ transgene is active in non-neural crest-derived tissues such as limb and diaphragm muscles, we also analyzed these tissues and found no significant changes (Figure 4—figure supplement 6).
 
-## Splicing and transcriptional changes in cranial neural crest-derived structures in response to Rbfox2 deletion
+### Splicing and transcriptional changes in cranial neural crest-derived structures in response to Rbfox2 deletion
 
 To determine the splicing program and transcriptional network regulated by Rbfox2 in vivo, we performed RNA-Seq profiling using poly(A)+ RNA isolated from microdissected craniofacial tissues from E12.5 control and Rbfox2 mutant embryos (Figure 5A). We performed RNA-Seq analysis at E12.5 because of the minimal morphological and structural changes observed in Rbfox2 mutant embryos at this stage. Multiplexed libraries were prepared for all replicates and sequenced together using Illumina HiSeq 4000 platform to produce 65–80 million, 151-nucleotide paired-end reads per sample (see Materials and methods for detail). Paired-end fastq sequence reads from each sample were aligned to mouse reference genome using ultrafast RNA-Seq aligner STAR with 82% average mapping rate and negligible ribosomal RNA contamination (<1%). Differential expression of genes and transcript isoforms between controls and Rbfox2 mutant samples were determined using two tools: MISO (Mixture of Isoforms), which quantitates the expression level of alternatively spliced genes and identifies differentially regulated isoforms or exons across samples and Cuffdiff, which finds significant changes in transcript expression, splicing, and promoter use. Using MISO analysis, we identified 81 differentially expressed transcripts from 59 genes in Rbfox2 mutant samples as compared with control (Figure 5B and Figure 5—source data 1). However, Cuffdiff analysis identified 33 alternatively spliced transcripts from 30 genes in Rbfox2 mutant samples as compared with controls (Figure 5C and Figure 5—source data 2).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig5-v2.jpg)
+
+**Figure 5.:** Representative fluorescent images from E12.5 control (n = 3) and Rbfox2Pax3-CKO mutant (represented as cKO, n = 3) embryos showing the area (white, dotted line) of craniofacial tissue microdissected for RNA-Seq analysis (A). Heat map of 50 differentially expressed transcripts (out of a total of 81 transcripts) identified by MISO analysis of RNA-Seq data (B). Heat map of 33 alternatively spliced transcripts identified by Cuffdiff analysis of RNA-Seq data (C). Pathway enrichment analysis of Rbfox2 target genes (D). Motif (UGCAUG) enrichment analysis. Significant enrichment was observed only in the introns of the target genes (E). Location of the intronic UGCAUG sequences in the Rbfox2 target genes (F). Venn diagram showing the overlap of transcripts identified by MISO and Cuffdiff analysis of RNA-Seq data (G). Heat map representation of 11 transcripts identified by both MISO and Cuffdiff analysis (H). RT-PCR analysis of alternative splicing of Rbfox2 targets in control and Rbfox2 mutant cranial mesenchyme from two independent replicates for each genotype (I). The gene structure, illustrating the alternative exons is presented on left. RNA-IP on palatal mesenchymal cells (J). Differentially expressed genes control and Rbfox2 mutants (K). qRT-PCR validation of differentially spliced and differentially expressed genes (L).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Sashimi plot of selected Rbfox2 targets (Map3k7, Fn1, Postn and Uap1) were generated in MISO, depicting the distribution of raw RNA-Seq densities mapped to the exons and splice junctions of gene isoforms across control and mutant samples.
+
 Pathway enrichment analysis identified significant enrichment of genes that control cellular and anatomical structure morphogenesis (Figure 5D). We analyzed the location of UGCAUG sequences in different gene features (5'-UTR, promoter, exons, introns, 3-UTR) of Rbfox2 target genes identified through Cuffdiff and MISO analysis. We performed an analysis of motif enrichment (AME) through the MEME suite (version 5.0.5) and identified significant UGCAUG motif enrichment only in the introns of the Rbfox2 target genes (adjusted p-value=1.4E-08) (Figure 5E). We also performed AME on 75 randomly selected genes whose expression levels were comparable to the Rbfox2-target genes, but did not show any transcript-level differential expression in response to Rbfox2 deletion. However, no significant motif enrichment was observed (adjusted p-value=1.0E-01). Next, we used the FIMO tool in MEME to analyze the location of intronic UGCAUG sequences in the Rbfox2 target genes. Most UGCAUG sequences were located within 1000 bases of the exon on either flanking introns (Figure 5F). Venn analysis was performed to identify a small set of high-confidence alternatively spliced transcripts that could be validated in downstream experiments. Venn analysis identified 11 transcripts that were identified by both programs and constituted a high confidence set of differentially expressed and AS isoforms in Rbfox2 mutants (Figure 5G–H and Figure 5—figure supplement 1). Specific genes identified by Venn analysis were selected for validation by RT-PCR based on their established function in the neural crest or craniofacial development. Using RNA isolated from control and Rbfox2 knockout craniofacial tissues, we validated the splicing changes identified by RNA-Seq by performing reverse transcriptase PCR (RT-PCR) in a selected group of genes such as mitogen-activated protein kinase kinase kinase 7 (Map3k7), fibronectin 1 (Fn1), periostin (Postn) and UAP1 UDP-N-acetylglucosamine pyrophosphorylase 1 (Uap1). Rbfox2 deletion significantly impacted splicing and expression of these candidate genes (Figure 5I–L). For example, Rbfox2 deletion reduced the expression of the predominantly expressed Map3k7 transcript. The short Fn1 transcript was not present in Rbfox2 mutants. To determine that Rbfox2 directly bind to these target genes in vivo, we performed RNA immunoprecipitation (RIP) assays using anti-Rbfox2 antibody on palatal mesenchymal cells, followed by quantitative RT-PCR. We observed significant enrichment suggesting that Rbfox2 can directly bind to the RNA of these target genes and modulate splicing (Figure 5J). To determine the transcriptional changes associated with the craniofacial defects, we analyzed genes that are differentially expressed between control and Rbfox2 knockouts. We identified 56 differentially expressed genes (Figure 5K). We further validated the expression of candidate genes that were either differentially expressed or spliced by quantitative PCR in both control and Rbfox2 knockout tissues (Figure 5L). We observed a significant reduction in Map3k7, Fn1, Myl1, Sfrs18 and Smarca2 in Rbfox2 knockout tissues (Figure 5L). Together, we identified over 100 AS transcripts and 56 genes that are differentially expressed between control and Rbfox2 mutant embryos.
 
-## Impaired Rbfox2-TGFβ-Tak1 signaling axis in Rbfox2 mutant embryos
+### Impaired Rbfox2-TGFβ-Tak1 signaling axis in Rbfox2 mutant embryos
 
 By analyzing alternatively spliced and differentially expressed genes from the RNA-Seq data, we observed that a number of genes known to affect TGF-β signaling pathway, such as Map3k7, Fn1, Meg3 etc. were significantly reduced in Rbfox2 mutants. This led us to hypothesize that TGF-β signaling pathway may be affected by Rbfox2 deletion. TGF-β signaling pathway involves both canonical and non-canonical signaling cascades. Recent work has shown that Tak1, encoded by Map3k7 is required for activation of both canonical and non-canonical signaling. To identify if TGF-β signaling pathway is affected by Rbfox2 deletion in vivo, we harvested palatal shelves from control and Rbfox2 mutant embryos and performed western blot analysis for Tak1 and phosphorylated Tak1. We found that both Tak1 and phosphorylated Tak1 levels were significantly reduced in Rbfox2 mutant embryos, demonstrating impaired TGF-β signaling pathway in neural crest-derived palate shelves (Figure 6A). We further investigated the downstream signaling targets of Tak1 such as p38 Mapk, phosphorylated p38 Mapk, Smad2, and phosphorylated Smad2. The level of C-terminal Smad2 phosphorylation was significantly reduced; however, no change in total Smad2 was observed. Similarly, the level of phosphorylated p38 Mapk was significantly reduced, although there was no change in total p38 Mapk (Figure 6A and Figure 6—figure supplement 1). Consistent with the reduction in its mRNA levels, Fn1 protein levels were also significantly reduced in Rbfox2 mutant neural crest as compared with controls (Figure 6B and Figure 6—figure supplement 1). Next, we tested how neural crest-derived palatal mesenchymal cells respond to TGF-β stimulation. We established culture conditions to grow palatal mesenchymal cells from control and Rbfox2 mutant embryos. The neural crest cell’s origin and purity were confirmed by growing cultures of Pax3Cre/+;Rbfox2flox/+;Rosa26mTmG/+ embryos. Majority of the cultured cells were GFP positive confirming their neural crest origin (Figure 6C). Consistent with the in vivo data, palatal mesenchymal cells isolated from Rbfox2 mutant embryos showed reduced levels of both Tak1 and phosphorylated Tak1 when compared with control following TGF-β stimulation (Figure 6D). In addition, no significant change in pTak1/Tak1 ratio was observed, suggesting that Tak1 activation was not affected by Rbfox2 deletion (Figure 6E). Similarly, TGF-β-induced C-terminal Smad2 and p38 Mapk phosphorylation levels were reduced in Rbfox2 mutant cells when compared with controls, while no significant change was observed in total Smad2 or p38 Mapk (Figure 6D–E and Figure 6—figure supplement 1). Quantification of these proteins showed a significant reduction in the ratio of pSmad2-C/Smad2-C and p-p38 Mapk/p38 Mapk, suggesting that Rbfox2-TGF-β-Tak1 signaling axis was impaired in Rbfox2 mutant cells (Figure 6D–E and Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig6-v2.jpg)
+
+**Figure 6.:** Representative western blot and quantification from microdissected palatal shelves from control and Rbfox2Pax3-CKO embryos (represented as cKO) at E14.5 and analyzed for Tak1, phospho-Tak1, Smad2, phospho-Smad2-C, p38 Mapk and phospho- p38 Mapk (A). Western blot and quantification for fibronectin on control and Rbfox2 mutant embryos at E14.5 (B). Primary palatal mesenchymal cell cultures were established from E14.5 Pax3Cre/+; Rbfox2flox/+; R26mTmG/+ embryos. Representative bright field and fluorescent images were taken. The majority of the cultured cells are GFP positive demonstrating their neural crest origin (C). Representative western blot and quantification from control and Rbfox2 mutant primary palatal mesenchymal cells stimulated with recombinant TGFβ and analyzed for Tak1, phospho-Tak1, Smad2, phospho-Smad2-C, p38 Mapk and phospho-p38 Mapk (D). Quantification of western blot (E). Overexpression of Tak1 in Rbfox2 mutant palatal mesenchymal cells. Ki67 immunostaining to determine palatal mesenchymal cell proliferation (F). Representative western blot for Tak1 and pTak1 (G). Quantification of the percentage of Ki67 positive cells (H). β-Actin was used as loading control. PS, palatal shelves; NS, not significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Uncropped western blot images presented in Figure 6 of this manuscript. Dotted box indicates areas that were cropped for use in figures when multiple bands observed.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Overexpression of Tak1 in Rbfox2 mutant palatal mesenchymal cells. RNA was isolated from control and Rbfox2 mutant cells transfected with either empty plasmid (pcDNA3) or plasmid expressing Tak1 (pcDNA3-Tak1) for qRT-PCR analysis. qRT-PCR analysis for Map3k7, Fn1, Myl1, Sfrs18 and Smarca2. NS, not significant. *, p<0.05; **, p<0.01; ***, p<0.001 (one-way ANOVA between groups, Bonferroni's multiple comparisons test).
+
 To determine whether Tak1 overexpression can restore TGF-β signaling pathway and rescue the proliferation defects seen in Rbfox2 mutant embryos in vivo, we cultured palatal mesenchymal cells from control and Rbfox2 mutant embryos. We then transfected Rbfox2 mutant cells with either empty plasmid (pcDNA3) or plasmid expressing Tak1 (pcDNA3-Tak1), and performed Ki67 immunostaining (Figure 6F–H). We confirmed that both Tak1 and phosphorylated Tak1 levels were significantly increased after Tak1 transfection in Rbfox2 mutant cells (Figure 6G). Consistent with the in vivo data, Rbfox2 mutant palatal cells proliferate slower than control cells and Tak1 overexpression can rescue the proliferation defects (Figure 6H). To determine the effect of Tak1 overexpression on the expression of Rbfox2-dependent genes, we performed qRT-PCR for Map3k7, Fn1, Myl1, Sfrs18 and Smarca2 on control and Rbfox2 mutant cells transfected with either empty plasmid vector or plasmid expressing Tak1 (Figure 6—figure supplement 2). Compared with empty vector transfected controls, we observed significant increase in the expression of Map3k7 and Fn1 in Tak1 overexpressing Rbfox2 mutant cells. No change in Myl1, Sfrs18 and Smarca2 expression was observed (Figure 6—figure supplement 2). Together, these results demonstrate that Rbfox2 deficiency leads to impaired Rbfox2-TGF-β-Tak1 signaling axis, resulting in reduced palatal cell proliferation. In addition, Tak1 overexpression restores TGF-β signaling pathway and rescues the proliferation defects in Rbfox2 mutant cells.
 
-## Rbfox2 expression is regulated by TGF-β signaling pathway in a feedback loop
+### Rbfox2 expression is regulated by TGF-β signaling pathway in a feedback loop
 
 To determine whether TGF-β signaling pathway regulate Rbfox2 expression in a positive feedback loop, we analyzed Rbfox2 expression in wildtype palatal mesenchymal cells after TGF-β stimulation. We observed a significant increase in Rbfox2 expression after TGF-β treatment (Figure 7A and Figure 7—figure supplement 1). To determine the mechanism by which TGF-β regulates Rbfox2 expression, we stimulated palatal mesenchymal cells with TGF-β in the presence or absence of chemical inhibitors blocking either canonical (Smad3 inhibitor) or non-canonical (Tak1 and p38 inhibitor) TGF-β signaling pathway (Figure 7B–D and Figure 7—figure supplement 1). We observed that Smad3 inhibitor abolished TGF-β-induced increase in Rbfox2 expression (Figure 7B and Figure 7—figure supplement 1). A similar trend was observed with Tak1 inhibitor (Figure 7C and Figure 7—figure supplement 1). However, p38 inhibitor did not impact TGF-β-induced Rbfox2 expression (Figure 7D and Figure 7—figure supplement 1). Together, these results suggest that TGF-β induces Rbfox2 expression either through Tak1-dependent or -independent canonical pathways. To further investigate how Smad-dependent canonical pathway regulates Rbfox2 expression, we analyzed 2.5 kb Rbfox2 promoter and identified two sites with multiple Smad binding elements (SBEs). Rbfox2 promoter fragment (1.6 kb) with multiple SBEs was PCR-amplified, cloned into a luciferase reporter plasmid, and tested in luciferase reporter assays (Figure 7—figure supplement 2). Smad2, Smad3 or Smad4 significantly activated the Rbfox2 luciferase reporter in the presence/absence of recombinant TGF-β. However, in the presence of recombinant TGF-β, the fold activation was much higher when compared with no TGF-β stimulation (Figure 7E–G). Using the wild-type palatal mesenchymal cells in the presence or absence of TGF-β, we next tested Smad2/3 binding activity to SBEs identified in the Rbfox2 promoter in vivo by chromatin immunoprecipitation (ChIP) assays. Our data indicate that Smad2/3 binds directly to these sites in vivo. Moreover, we observed enrichment in Smad2/3 chromatin binding after TGF-β treatment (Figure 7H). Together, these results demonstrate that Rbfox2 expression in neural crest-derived palatal mesenchymal cells is tightly regulated by TGF-β signaling pathway (Figure 7I).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig7-v2.jpg)
+
+**Figure 7.:** Representative western blot and quantification demonstrating induction of Rbfox2 in primary palatal mesenchymal cells stimulated with recombinant TGFβ. β-Actin was used as a loading control (A). Representative Rbfox2 western blot and quantification from primary palatal mesenchymal cells stimulated with recombinant TGFβ with and without, Smad3 inhibitor (SIS3) or Tak1 inhibitor (5Z-7-Oxozeaenol) or p38 inhibitor (SB203580) at 6 and 24 hr time points. β-Actin was used as a loading control (B–D). *, p<0.05; **, p<0.01 (one-way ANOVA between groups, Bonferroni's multiple comparisons test). The Rbfox2-luciferase reporter was transfected in HEK293T cells with or without recombinant TGFβ in the presence or absence of Smad2 (E) or Smad3 (F) or Smad4 (G). ChIP assay using chromatin from untreated or TGFβ treated primary palatal mesenchymal cells and Smad2/3 antibody. Predicted binding sites in Rbfox2 promoter were tested (H). Model depicting the interaction between the TGF-β signaling pathway and alternative splicing factor Rbfox2 in neural crest cells. Rbfox2 regulates alternative splicing and transcription of neural crest genes. In a feedback loop, Rbfox2 expression is regulated by the canonical TGFβ signaling pathway (red arrows) (I).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Uncropped western blot images presented in Figure 7 of this manuscript. Dotted box indicates areas that were cropped for use in figures when multiple bands observed.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/45418/elife-45418-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Predicted sites (Site1 and Site2) in 2.5 kb Rbfox2 promoter containing Smad binding elements (SBEs). Schematic of the Rbfox2-luciferase (Luc)-reporter construct. Multiple SBEs present in predicted sites (Site1 and Site2) are highlighted in red color.
 
 ## Discussion
 
@@ -100,23 +176,180 @@ Since a single splicing factor affects the expression/splicing of numerous genes
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rbfox2flox/flox</td>
+      <td>(Gehman et al., 2012)</td>
+      <td>IMSR Cat# JAX:014090, RRID:IMSR_JAX:014090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pax3Cre/+</td>
+      <td>(Engleka et al., 2005)</td>
+      <td>IMSR Cat# JAX:005549, RRID:IMSR_JAX:005549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Wnt1Cre2</td>
+      <td>(Lewis et al., 2013)</td>
+      <td>IMSR Cat# JAX:022137, RRID:IMSR_JAX:022137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>R26mTmG/+</td>
+      <td>(Muzumdar et al., 2007)</td>
+      <td>IMSR Cat# JAX:007676, RRID:IMSR_JAX:007676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tak1 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-166562, RRID:AB_2140220</td>
+      <td>WB (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Fibronectin (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-8422, RRID:AB_627598</td>
+      <td>WB (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-actin (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-47778, RRID:AB_626632</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pTak1 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9339, RRID:AB_2140096</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Smad2-C (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5339, RRID:AB_10626777</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pSmad2-C (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3108, RRID:AB_490941</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p38 Mapk (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9212, RRID:AB_330713</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p-p38 Mapk (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4631, RRID:AB_331765</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rbfox2 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab57154, RRID:AB_2285090</td>
+      <td>WB (1:500), IF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ki67 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab16667, RRID:AB_302459</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-αSMA (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2547, RRID:AB_476701</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Neurofilament (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# 2H3, RRID:AB_531793</td>
+      <td>Wholemount staining (1:50)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV5B-HA-Smad2 plasmid</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_11734</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV5B-Flag-Smad3 plasmid</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_11742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV5B-Smad4 plasmid</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_11743</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-TAK1/F plasmid</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_44161</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Pax3Cre/+, Wnt1Cre2, Rbfox2flox/flox, and R26mTmG/+ mice were maintained on a mixed genetic backgrounds (Engleka et al., 2005; Gehman et al., 2012; Lewis et al., 2013; Muzumdar et al., 2007). Rbfox2 mutant mice were generated by crossing the Pax3Cre/+ mice with Rbfox2flox/flox mice (Engleka et al., 2005; Gehman et al., 2012). Resulting Pax3Cre/+;Rbfox2flox/+ offspring were then back-crossed to Rbfox2flox/flox mice to obtain Pax3Cre/+;Rbfox2flox/flox (presented as Rbfox2Pax3-CKO throughout the manuscript) mice. Similarly, Wnt1Cre2-mediated neural crest-specific Rbfox2 mutant mice were generated by crossing the Wnt1Cre2 mice (Jackson Laboratory, 022137) with Rbfox2flox/flox mice (Gehman et al., 2012; Lewis et al., 2013). Resulting Wnt1Cre2;Rbfox2flox/+ offspring were then back-crossed to Rbfox2flox/flox mice to obtain Wnt1Cre2;Rbfox2flox/flox (presented as Rbfox2Wnt1-CKO throughout the manuscript) mice. Control (Rbfox2flox/+ or Rbfox2flox/flox or Pax3Cre/+;Rbfox2flox/+ or Wnt1Cre2;Rbfox2flox/+) and mutant (Pax3Cre/+;Rbfox2flox/flox or Wnt1Cre2;Rbfox2flox/flox) embryos were harvested from timed pregnancies counting the afternoon of the plug date as E0.5. Embryos were dissected in PBS and fixed in 4% paraformaldehyde (PFA) solution in PBS. Genotyping was performed on DNA isolated from either yolk sacs or tail biopsies using following primers: 5’-ATTCTCCCACCGTCAGTACG-3’ and 5’-CGTTTTCTGAGCATACCTGGA-3’ for Pax3Cre/+; 5’-CAG CGC CGC AAC TAT AAG AG-3’ and 5’-CAT CGA CCG GTA ATG CAG-3’ for Wnt1Cre2 and, 5’-AACAAGAAAGGCCTCACTTCAG-3’ and 5’-GGTGTTCTCTGACTTATACATGCAC-3’ for Rbfox2flox/flox. R26mTmG/+ embryos were genotyped based on RFP expression (Muzumdar et al., 2007). Littermate embryos were analyzed in all experiments unless otherwise noted. The Institutional Animal Care and Use Committee (IACUC) at SingHealth and Duke-NUS Medical School approved all the animal experiments.
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 Whole embryos and isolated tissues were dissected in PBS, fixed in 4% paraformaldehyde (PFA) overnight at 4°C, followed by PBS washes and transferred to different gradients of ethanol for processing and paraffin embedding for sectioning. H and E staining was performed for gross histological analysis using standard procedures (Katz et al., 2012; Singh et al., 2010). Immunohistochemical analysis was performed on paraffin sections of PFA-fixed embryos. Primary antibodies used for whole mount or section immunohistochemistry were: anti-Rbfox2 (Fox2/RBM9) mouse monoclonal (Abcam ab57154), anti-Ki67 rabbit monoclonal antibody (Abcam, Cat. no. ab16667), anti-α-Smooth Muscle actin mouse monoclonal antibody (Sigma, Cat. No. A2547), and anti-2H3 mouse polyclonal (Iowa Hybridoma Bank, developed by T. M. Jessell and J. Dodd). Whole-mount immunostaining for neurofilament (2H3) was carried out as described previously (Meadows et al., 2013; Singh et al., 2005a; Singh et al., 2011). Briefly, endogenous peroxidase activity was blocked with 5% H2O2/methanol for 2 hr at room temperature. The anti-2H3 mouse polyclonal primary antibody (Iowa Hybridoma Bank, developed by T. M. Jessell and J. Dodd) was applied overnight at 4°C at a dilution of 1:200. The goat anti-mouse IgG-HRP secondary antibody (Santa Cruz, Cat. no. sc-2005) was applied overnight at 4°C at a dilution of 1:500. Detection of HRP activity was performed using a DAB kit (Vector Laboratories, SK-4100).
 
-## Proliferation and TUNEL assay
+### Proliferation and TUNEL assay
 
 Cell proliferation was evaluated by Ki67 immunohistochemistry (Abcam, Cat. no. ab16667) on E12.5 and E15.5 control and knockout palate sections. DAPI (Vector Laboratories) was used to stain the nuclei. For each genotype, images of 4–6 different sections of 3–4 independent embryos were used. Apoptosis was detected using In Situ Cell Death Detection Kit, Fluorescein (Roche, Cat no. 11684795910) following the manufacturer’s instructions.
 
-## Alcian blue/Alizarin red and Von Kossa staining
+### Alcian blue/Alizarin red and Von Kossa staining
 
 Alcian Blue/Alizarin Red staining of bone and cartilage was performed as described previously (Singh et al., 2005b). Briefly, euthanized embryos were placed in tap water for 1–2 hr at 4°C. Embryos were placed in 65°C water for 30 s allowing easy removal of skin. Visceral organs were removed under the microscope and the embryos were placed in 100% ethanol for 2–3 days at room temperature. Cartilage staining was performed using Alcian blue solution (150 mg/L Alcian blue 8GX in 80% ethanol/20% acetic acid) for 2–3 days. Embryos were rinsed and post-fixed overnight in 100% ethanol. Bone staining was performed using Alizarin red solution (50 mg/L Alizarin red S in 0.5% KOH) for 1–2 days at room temperature. Embryos were incubated in 0.5% KOH until most of the soft tissues were digested. The 0.5% KOH solution was replaced with 20% glycerol in water and incubated at room temperature until tissues cleared completely. Imaging was done using an inverted Olympus dissecting microscope.
 
-## RNA sequencing, data analysis and, RT-PCR validation
+### RNA sequencing, data analysis and, RT-PCR validation
 
 Craniofacial tissue was microdissected from E12.5 control and knockout embryos in cold PBS. Three independent biological replicates were used for each genotype group. Tissues were homogenized and RNA was isolated using a PureLink RNA Mini kit from Thermo Fisher (Cat. no. 12183018A). Sequencing libraries of poly(A)+RNA from 3 control and three mutant samples were prepared using the TruSeq Stranded mRNA Library Prep Kit (Illumina) according to manufacturer’s instructions. Biological replicates were individually barcoded and pooled for paired-end sequencing using Illumina HiSeq4000 platform at the Genome Institute of Singapore. For each sample, approximately ~60–80 million paired-end reads of 151 bp were used for genome-guided alignment. Paired-end fastq sequence reads from each sample were aligned to mouse reference genome (GRCm38) using ultrafast RNA-seq aligner STAR (Dobin et al., 2013) with 82% average mapping rate and negligible ribosomal RNA contamination (<1%). Differential expression of genes and transcripts between controls and knockout samples were determined using two tools: MISO (Mixture of Isoforms) (Katz et al., 2010) and Cuffdiff (Trapnell et al., 2013). For Cuffdiff analysis, transcripts with FPKM >5 either in all control or all mutant samples were retained for further analysis. A similar filtering was employed for MISO where transcripts with assigned count >10 either in all control or all mutant samples were retained. Transcripts with log2 (fold change)>1 or <-1 and nominal p<0.05 were considered differentially expressed in Cuffdiff. Transcripts with delta PSI (percent spliced in)>0.2 or<−0.2 and Bayes factor >1 were similarly considered differentially expressed in MISO. The overlap of differentially expressed transcripts representing alternative splicing events between Cuffdiff and MISO was visualized via Venn diagrams (http://bioinfogp.cnb.csic.es/tools/venny/). For selected genes, Sashimi plots (https://software.broadinstitute.org/software/igv/Sashimi) were generated in MISO, depicting the distribution of raw RNA-Seq densities mapped to the exons and splice junctions of gene isoforms across control and mutant samples. A number of alternatively spliced genes were validated by RT-PCR as described previously (Singh et al., 2016). Briefly, for cDNA synthesis 1 ug of total RNA was used from craniofacial tissue samples. RNA was reverse-transcribed using random hexamer primed M-MLV reverse transcriptase (Promega, Madison, WI).
 
@@ -160,26 +393,26 @@ Sfrs18 F: GGAGCAGTTCCGAATCCCC
 
 Sfrs18 R: GCCTTCTTACCAGACCTTTGAG
 
-## Primary palatal mesenchymal cell cultures
+### Primary palatal mesenchymal cell cultures
 
 Palate shelves were dissected from E14.5 control and knockout embryos in cold PBS. Palate shelves were homogenized and plated on gelatin-coated culture plates. After 6–8 days, the cells were stimulated with 10 ng/ml recombinant TGFβ growth factors (PeproTech Cat no. #100–21) at different time points and harvested for western blot analysis. The neural crest origin and purity of cultures were confirmed by establishing cultures of embryos that carried a Pax3Cre/+ knock in and a Rosa26mTmG/+ reporter (Pax3Cre/+; Rbfox2flox/+; Rosa26mTmG/+). Majority of cultured cells are GFP positive demonstrating their neural crest origin. For inhibitor experiments, primary palatal mesenchymal cells were seeded with a density of 2 × 106 cells/ml onto a 6-well plate and cultured in DMEM supplemented with 1% penicillin/streptomycin and 10% FBS. After 48 hr, cells were washed with PBS and starved overnight in basal medium supplemented with 1% FBS. Cells were then stimulated with/without recombinant TGFβ (10 ng/ml) in the presence/absence of SB203580 (5, 10 and 20 μM) (Selleckchem Cat no. #S1076), SIS3 (1, 5 and 10 μM) (Selleckchem Cat no. #S7959) or 5Z-7-Oxozeaenol (0.1, 1.0 and 5 μM) (R and D Systems Cat no. #3604) for desired time period (6 hr and 24 hr) and harvested for western blot analysis. For Tak1 rescue experiment, primary palatal mesenchymal cells were isolated from E14.5 control and knockout embryos and upon reached ~80% of confluence, knockout cells were transfected with control vector (pcDNA3) or pcDNA3-TAK1/FLAG (Addgene, Plasmid #44161) using Lipofectamine 2000 reagent (Thermo Scientific, catalog no. 11668–027), according to manufacturer’s protocol. Seventy-two hours after the transfection, cells were fixed with 4% paraformaldehyde and processed for Ki67 immunostaining. In a separate experiment, cell lysate was collected to detect the TAK1 and pTAK1 by western blot analysis.
 
-## Western blot analyses
+### Western blot analyses
 
 Micro-dissected palate shelves or cultured palate mesenchymal cells were washed with DPBS and lysed with RIPA buffer (Thermo Scientific, catalog no. 89901) containing 1:100 diluted protease and phosphatase inhibitor cocktail (Sigma). The cell lysates were centrifuged at 13,000 rpm for 10 min at 4°C and the supernatants were collected for immunoblot analyses. Total protein concentration was determined by using the Pierce BCA protein assay kit (Thermo Scientific, catalog no. 23225). Western blots were performed as described previously (Singh et al., 2019; Singh et al., 2016). Briefly, for western blotting, 20–25 μg of total protein samples were separated by SDS-PAGE and transferred to nitrocellulose membrane using a Trans-Blot Turbo system (Bio-Rad). Membranes were then blocked with 2–5% BSA in TBS containing 0.1% Tween (TBST) and subsequently incubated with primary antibodies diluted in TBST containing 2–5% BSA for overnight at 4°C. Blots were then washed in TBST and incubated for 1.5 hr at room temperature with the appropriate horseradish peroxidase-linked secondary antibodies (Santa Cruz). Immunoreactive bands were detected by chemiluminescence (Hiss GmbH, catalog no. 16026) using Gel Doc XR + System (Bio-Rad). Primary antibodies used were as follows: anti-Tak1 (1:300; Santa Cruz sc-166562), anti-pTak1 (1:500; Cell signaling 9339S), anti-Smad2-C (1:500; Cell signaling 5339), anti-pSmad2-C (1:500; Cell signaling 3108), anti-p38 Mapk (1:500; Cell signaling 9212), anti-p-p38 Mapk (1:500; Cell signaling 4631), anti-Fibronectin (1:300; Santa Cruz sc-8422), anti-Rbfox2 (1:500; Abcam ab57154) and anti-β-actin (1:1000; Santa Cruz sc-47778).
 
-## Plasmids
+### Plasmids
 
 Mouse Rbfox2 promoter (~1.7 kb) was amplified and cloned into pGL4.27 vector (Promega) using In-Fusion HD Cloning Kit (Clontech Cat no. 639645) for the luciferase assays. Expression vectors pCMV5B-HA-Smad2 (Addgene plasmid # 11734) (Eppert et al., 1996), pCMV5B-Flag-Smad3 (Addgene plasmid # 11742)(Labbé et al., 1998) and pCMV5B-Smad4 (Addgene plasmid # 11743)(Macías-Silva et al., 1996) were a gift from Jeff Wrana. Expression vector pcDNA3-TAK1/F was a gift from Xin Lin (Addgene plasmid # 44161) (Blonska et al., 2005).
 
-## Luciferase assay
+### Luciferase assay
 
 Luciferase assay was performed as previously described (Singh et al., 2016; Singh and Epstein, 2012). HEK293T cells are the most commonly used cell line for monitoring the activity of the TGF/SMAD signaling pathway. Briefly, HEK293T cells were seeded in 12-well plates for 24 hr before transfection. The Rbfox2 luciferase reporter plasmid along with other indicated plasmids (Smad2, Smad3 or Smad4) was co-transfected using FuGENE6 reagent (Promega, catalog no. E2691). To normalize transfection, 50 ng of lacZ expression plasmid was also transfected together with other indicated plasmids. Cell extracts were prepared 60 hr post-transfection using lysis buffer (Promega, catalog No. E3971). Luciferase activities were assayed using Luciferase Reporter Assay System kit (Promega, catalog no. E1500). Lysates were also assayed for b-galactosidase activity using the b-Galactosidase Enzyme Assay System (Promega, Cat. no. E2000). Luciferase reporter activity was normalized to b-galactosidase activity. The luciferase assay results were reproduced in at least three independent experiments. All experiments were performed in duplicate, and the representative data are shown in the bar graphs.
 
-## ChIP and RNA immunoprecipitation assays
+### ChIP and RNA immunoprecipitation assays
 
 ChIP experiments were performed as previously described (Singh et al., 2016). ChIP assay was performed on either unstimulated or TGFb-stimulated palate mesenchymal cells using Smad2/3 antibody (Abcam, Cat. no. ab207447), according to Millipore Chip Assay Kit protocol with minor modifications (Catalog no #17–295). RNA-IP experiments were performed as previously described with minor modifications (Niranjanakumari et al., 2002).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using the two-tailed Student's t-test. Data are expressed as mean ± SD. Differences were considered significant when the p-value was <0.05. One-way analysis of variance (ANOVA) was used to assess statistical differences between groups. Significant ANOVA results were further analyzed by Bonferroni's multiple comparisons test (*, p<0.05; **, p<0.01; ***, p<0.001; NS, not significant).

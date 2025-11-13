@@ -20,17 +20,17 @@
 
 ### Affiliations
 
-1. https://ror.org/03czfpz43 Department of Cell Biology, Emory University Atlanta United States
-2. https://ror.org/05f950310 Department of Neurosciences, Experimental Neurology and Leuven Brain Institute, KU Leuven Leuven Belgium
-3. https://ror.org/03xrhmk39 Center for Brain & Disease Research, Laboratory of Neurobiology, VIB, Campus Gasthuisberg Leuven Belgium
-4. https://ror.org/03czfpz43 Department of Neurology, Emory University Atlanta United States
-5. https://ror.org/03czfpz43 Department of Biochemistry, Emory University Atlanta United States
+1. Department of Cell Biology, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+2. Department of Neurosciences, Experimental Neurology and Leuven Brain Institute, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+3. Center for Brain & Disease Research, Laboratory of Neurobiology, VIB, Campus Gasthuisberg Leuven Belgium ([ROR:03xrhmk39](https://ror.org/03xrhmk39))
+4. Department of Neurology, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+5. Department of Biochemistry, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
 
 † Corresponding author
 
 ## Abstract
 
-GGGGCC (G 4 C 2 ) hexanucleotide repeat expansion in the C9ORF72 gene is the most common genetic cause of frontotemporal dementia (FTD) and amyotrophic lateral sclerosis (ALS). The repeat is bidirectionally transcribed and confers gain of toxicity. However, the underlying toxic species is debated, and it is not clear whether antisense CCCCGG (C 4 G 2 ) repeat expanded RNAs contribute to disease pathogenesis. Our study shows that C9ORF72 antisense C 4 G 2 repeat expanded RNAs trigger the activation of the PKR/eIF2α-dependent integrated stress response independent of dipeptide repeat proteins that are produced through repeat-associated non-AUG-initiated translation, leading to global translation inhibition and stress granule formation. Reducing PKR levels with either siRNA or morpholinos mitigates integrated stress response and toxicity caused by the antisense C 4 G 2 RNAs in cell lines, primary neurons, and zebrafish. Increased phosphorylation of PKR/eIF2α is also observed in the frontal cortex of C9ORF72 FTD/ALS patients. Finally, only antisense C 4 G 2 , but not sense G 4 C 2 , repeat expanded RNAs robustly activate the PKR/eIF2α pathway and induce aberrant stress granule formation. These results provide a mechanism by which antisense C 4 G 2 repeat expanded RNAs elicit neuronal toxicity in FTD/ALS caused by C9ORF72 repeat expansions.
+GGGGCC (G4C2) hexanucleotide repeat expansion in the C9ORF72 gene is the most common genetic cause of frontotemporal dementia (FTD) and amyotrophic lateral sclerosis (ALS). The repeat is bidirectionally transcribed and confers gain of toxicity. However, the underlying toxic species is debated, and it is not clear whether antisense CCCCGG (C4G2) repeat expanded RNAs contribute to disease pathogenesis. Our study shows that C9ORF72 antisense C4G2 repeat expanded RNAs trigger the activation of the PKR/eIF2α-dependent integrated stress response independent of dipeptide repeat proteins that are produced through repeat-associated non-AUG-initiated translation, leading to global translation inhibition and stress granule formation. Reducing PKR levels with either siRNA or morpholinos mitigates integrated stress response and toxicity caused by the antisense C4G2 RNAs in cell lines, primary neurons, and zebrafish. Increased phosphorylation of PKR/eIF2α is also observed in the frontal cortex of C9ORF72 FTD/ALS patients. Finally, only antisense C4G2, but not sense G4C2, repeat expanded RNAs robustly activate the PKR/eIF2α pathway and induce aberrant stress granule formation. These results provide a mechanism by which antisense C4G2 repeat expanded RNAs elicit neuronal toxicity in FTD/ALS caused by C9ORF72 repeat expansions.
 
 ## Introduction
 
@@ -42,13 +42,25 @@ The underlying toxic species arising from C9ORF72 repeat expanded RNAs that driv
 
 ## Results
 
-## C9ORF72 antisense C4G2 expanded repeats are neurotoxic
+### C9ORF72 antisense C4G2 expanded repeats are neurotoxic
 
 To determine the contribution of C9ORF72 antisense repeat expanded RNAs in FTD/ALS pathogenesis, we first generated a construct containing 75 C4G2 repeats using recursive directional ligation as previously described (Mizielinska et al., 2014). We included six stop codons (two every frame) at the N-terminus to prevent unwarranted translation initiation and three protein tags in frame with individual DPR proteins at the C-terminus (Figure 1A). Recent studies have shown that the nucleotide sequences at 5′- and 3′- regions of expanded repeats regulate toxicity (He et al., 2020; Sellier et al., 2017). Although the molecular mechanism of C9ORF72 antisense transcription initiation is unknown, it has been shown that transcription can start from at least 450 bp nucleotides upstream (Zu et al., 2013). We therefore added 450 bp of human sequence at the 5′- region of the antisense C4G2 repeats and termed this construct as ‘in_(C4G2)75’. When expressed in HEK293T cells, we detected an abundant accumulation of antisense RNA foci, but not in control cells expressing 2 C4G2 repeats (Figure 1B). Using antibodies against individual DPR proteins RAN translated from C4G2 expanded repeat RNAs or the protein tags in frame, we also observed production of GP, PR, and PA DPR proteins only in cells expressing in_(C4G2)75 but not 2 repeats (Figure 1—figure supplement 1A and B). Antisense RNA foci and DPR proteins were also observed in mouse primary cortical neurons expressing in_(C4G2)75, but not in neurons expressing 2 repeats (Figure 1B and Figure 1—figure supplement 1C). Thus, in_(C4G2)75 produces antisense RNA foci and DPR proteins, two cellular pathological hallmarks observed in C9FTD/ALS patients.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic illustration of the in_(C4G2)75 repeat construct including 6× stop codons, 450 bp of human intronic sequences at the N-terminus and 3× protein tags at the C- terminus of the repeats to monitor the DPR proteins in each frame. (B) Representative images of antisense RNA foci in HEK293T cells and in primary cortical neurons expressing in_(C4G2)75 detected by RNA FISH. Red, foci; blue, DAPI; magenta, MAP2. (C) Kaplan–Meier curves showing increased risk of cell death in in_(C4G2)75-expressing primary cortical neurons compared with neurons expressing 2 repeats. Statistical analyses were performed using Mantel–Cox test (replicated three times with similar results). (D, E) Immunoblotting analysis of phosphorylated PKR (p-PKR) and total PKR in HEK293T cells expressing in_(C4G2)75 or 2 repeats. p-PKR levels were detected using anti-p-PKR (T446) and normalized to total PKR. GAPDH was used as a loading control. Error bars represent SD (n = 3 independent experiments). Statistical analyses were performed using Student’s t-test. (F, G) Immunoblotting analysis of phosphorylated eIF2α (p-eIF2α) and total eIF2α in HEK293T cells expressing in_(C4G2)75 or 2 repeats. p-eIF2α levels were detected using anti-phosphor eIF2α (Ser51) and normalized to total eIF2α. GAPDH was used as a loading control. Error bars represent SD (n = 3 independent experiments). Statistical analyses were performed using Student’s t-test. (H, I) Immunoblotting analysis of p-PKR and p-eIF2α in HEK293T cells expressing in_(C4G2)75, with or without co-expression of wild type PKR, or treatment of a PKR inhibitor, C16. Error bars represent SD (n = 3 independent experiments). Statistical analyses were performed using one-way ANOVA with Tukey’s post hoc test. Scale bars: 10 µm (neurons), 20 µm (HEK293T).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative images of DPR protein staining in HEK293T expressing in_(C4G2)75 repeats using DPR antibodies. Red, GP, PA, and PR; blue, DAPI. (B) Immunoblotting of DPR proteins in HEK293T expressing in_(C4G2)75 repeats using TAG antibodies. GAPDH was used as a loading control. (C) Representative images of DPR protein staining in primary neurons expressing in_(C4G2)75 repeats using DPR antibodies. Red, GP, PA, and PR; blue, DAPI; MAP2, magenta. Scale bars, 10 µm (neurons), 20 µm (HEK293T).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Immunoblotting of p-PERK in HEK293T cells expressing in_(C4G2)75 or (C4G2)2 repeats. Phosphorylated PERK levels were quantified and normalized to total PERK. GAPDH was used as a loading control. Error bars represent SD (n = 2 independent experiments). Statistical analyses were performed using Student’s t-test. (B, C) Immunoblotting of p-PKR and p-eIF2α in SH-SY5Y cells expressing (C4G2)75 or (C4G2)2 repeats. p-PKR (T446) and p-eIF2α (Ser51) were normalized to total PKR and eIF2α, respectively. GAPDH was used as a loading control. Error bars represent SD (n = 2 independent experiments). Statistical analyses were performed using Student’s t-test.
+
 To determine whether C9ORF72 antisense C4G2 expanded repeats can cause neuronal toxicity, we co-transfected in_(C4G2)75 or control 2 repeats together with mApple in mouse primary cortical neurons at 4 days in vitro (DIV4) and used automated longitudinal microscopy to track over days the survival of hundreds of neurons as indicated by the mApple fluorescence. Neurons expressing in_(C4G2)75 die much faster than those expressing control 2 repeats, suggesting that C9ORF72 antisense C4G2 expanded repeats are neurotoxic (Figure 1C).
 
-## C9ORF72 antisense C4G2 expanded repeats activate PKR/eIF2α-dependent integrated stress response
+### C9ORF72 antisense C4G2 expanded repeats activate PKR/eIF2α-dependent integrated stress response
 
 We next investigated the molecular mechanism underlying toxicity caused by C9ORF72 antisense C4G2 expanded repeats. More than 50 neurological diseases are genetically associated with microsatellite repeat expansions. Repeat expanded RNAs, including CAG, CUG, CCUG, CAGG, and G4C2, have been shown to activate the double-stranded RNA-dependent protein kinase (PKR) (Handa et al., 2003; Tian et al., 2000). We hypothesized that C9ORF72 antisense C4G2 expanded RNAs can also activate PKR. HEK293T cells expressing in_(C4G2)75 show a significant increase in the level of phosphorylated PKR compared to cells expressing 2 repeats, while the total level of PKR remains unchanged (Figure 1D and E). PKR is one of four kinases that are activated during the integrated stress response (ISR), an evolutionarily conserved stress signaling pathway that adjusts cellular biosynthetic capacity according to need (Martinez et al., 2021). The four ISR kinases, including PKR, PKR-like ER kinase (PERK), heme-regulated eIF2α kinase (HRI), and general control non-derepressible 2 (GCN2), respond to distinct environmental and physiological stresses by phosphorylating the eukaryotic translation initiation factor eIF2α to cause a temporary shutdown of global protein synthesis and upregulation of specific stress-responsive genes. Accompanying PKR activation, in_(C4G2)75 significantly increases the phosphorylation of eIF2α without affecting its total level (Figure 1F and G). in_(C4G2)75 activates eIF2α mainly by the phosphorylation of PKR as other ISR kinases such as PERK phosphorylation are not altered (Figure 1—figure supplement 2A). Consistent with this, overexpressing wild type (WT) PKR further increases the phosphorylation of eIF2α induced by in_(C4G2)75, whereas treatment with a specific PKR inhibitor C16 reduces the phosphorylation of both PKR and eIF2α to a level comparable to that of cells expressing 2 repeats (Figure 1H and I). We further expressed in_(C4G2)75 in a neuronal cell line SH-SY5Y that is commonly used to study neurodegeneration and observed similar activation of PKR and eIF2α by the antisense C4G2 expanded repeats (Figure 1—figure supplement 2B and C).
 
@@ -56,33 +68,169 @@ To determine whether the activation of PKR/eIF2α leads to a global mRNA transla
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig2-v2.jpg)
 
-**Figure 2.:** C9ORF72 antisense C4G2 expanded repeats inhibit global protein synthesis and induce stress granule assembly.(A) Immunoblotting of puromycin in HEK293T cells expressing in_(C4G2)75 or 2 repeats. Cells were incubated with puromycin for 30 min before harvesting. The level of puromycin was normalized to GAPDH. Error bars represent SD (n = 3 independent experiments). Statistical analyses were performed using Student’s t-test (B) Representative images and (C) quantification of primary neurons expressing either (C4G2)75 or 2 repeats stained with anti-puromycin (red), anti-FLAG (green), DAPI (blue), and MAP2 (magenta). The puromycin intensity was quantified using ImageJ. Error bars represent SD (n = 40–50 neurons/group; similar results were obtained from two independent experiments). Statistical analyses were performed using Student’s t-test. (D) Representative images of G3BP1 and FMRP staining in HEK293T cells expressing in_(C4G2)75 and in_(C4G2)2 repeats. (E) Quantification of antisense foci-positive cells with G3BP1 and FMRP granules. Error bars represent SD (n = 150 cells/condition and three independent experiments). Statistical analyses were performed using Student’s t-test. Scale bars, 10 µm (neurons), 20 µm (HEK293T).Figure 2—source data 1.Figure 1A.
+**Figure 2.:** (A) Immunoblotting of puromycin in HEK293T cells expressing in_(C4G2)75 or 2 repeats. Cells were incubated with puromycin for 30 min before harvesting. The level of puromycin was normalized to GAPDH. Error bars represent SD (n = 3 independent experiments). Statistical analyses were performed using Student’s t-test (B) Representative images and (C) quantification of primary neurons expressing either (C4G2)75 or 2 repeats stained with anti-puromycin (red), anti-FLAG (green), DAPI (blue), and MAP2 (magenta). The puromycin intensity was quantified using ImageJ. Error bars represent SD (n = 40–50 neurons/group; similar results were obtained from two independent experiments). Statistical analyses were performed using Student’s t-test. (D) Representative images of G3BP1 and FMRP staining in HEK293T cells expressing in_(C4G2)75 and in_(C4G2)2 repeats. (E) Quantification of antisense foci-positive cells with G3BP1 and FMRP granules. Error bars represent SD (n = 150 cells/condition and three independent experiments). Statistical analyses were performed using Student’s t-test. Scale bars, 10 µm (neurons), 20 µm (HEK293T).
 
-## Antisense C4G2 repeat expanded RNAs activate the PKR/eIF2α pathway independent of DPR proteins
+### Antisense C4G2 repeat expanded RNAs activate the PKR/eIF2α pathway independent of DPR proteins
 
 We next determined whether the activation of PKR/eIF2α-dependent integrated stress response is driven by repeat RNA themselves and/or by DPR proteins. We first expressed individual codon-optimized, ATG-driven DPR proteins. Neither PR50, PA50, nor GP80 activates the phosphorylation of eIF2α, suggesting that the activation of the PKR/eIF2α pathway by C9ORF72 antisense C4G2 expanded repeats is unlikely due to the DPR proteins produced from RAN translation (Figure 3—figure supplement 1A and B). To obtain direct evidence that C9ORF72 antisense repeat expanded RNAs themselves activate PKR/eIF2α, we used two strategies to reduce/inhibit DPR proteins without affecting the RNA. First, recent studies have shown that C9ORF72 sense G4C2 repeat expanded RNAs initiate RAN translation at a near-cognate CUG codon in the intronic region 24 nucleotides upstream of the repeat sequence (Green et al., 2017; Tabet et al., 2018). We thus hypothesized that RAN translation from C4G2 antisense repeat expanded RNAs might similarly depend on the intronic sequence at the 5′ region. We generated a new construct (C4G2)75 without including the 450 bp human intronic sequence (Figure 3A). Supporting our hypothesis, cells expressing (C4G2)75 do not accumulate any detectable GP, PA, or PR DPR proteins, which is strikingly different compared to those expressing in_(C4G2)75 with the 450 bp human intronic sequence (Figure 3B). The reduced/abolished DPR proteins by (C4G2)75 are not due to altered RNA expressions since the levels of RNA transcripts and antisense foci are comparable to those of in_(C4G2)75 (Figure 3C and Figure 3—figure supplement 1C). Second, we obtained a previously reported stop codon-interrupted 108 antisense repeat construct, designated as RNA only (RO) [(C4G2)108RO] (Figure 3A). It has been shown that this construct is not RAN translated to produce DPR proteins, while still adopting similar stable conformations as the uninterrupted repeat RNAs (Moens et al., 2018). As expected, no detectable antisense DPR proteins are observed in cells expressing (C4G2)108RO, despite an abundant accumulation of antisense foci (Figure 3—figure supplement 1C and D). Interestingly, expression of either (C4G2)75 or (C4G2)108RO leads to the robust activation of PKR and eIF2α at a comparable level as seen for in_(C4G2)75 (Figure 3D and E). To further validate the above results in a disease-relevant cell type, we made lentivirus to express (C4G2)108RO in primary cortical neurons. We observed the presence of antisense foci in nearly 100% of (C4G2)108RO-expressing neurons (Figure 3—figure supplement 1E) together with increased levels of phosphorylated eIF2α (Figure 3F and G). Since the available commercial antibodies against mouse phosphorylated PKR do not work in our hands, we designed siRNAs targeting mouse PKR. Reducing PKR in (C4G2)108RO-expressing neurons mitigates the elevated levels of phosphorylated eIF2α (Figure 3F and G and Figure 3—figure supplement 1F and G). These results support that C9ORF72 antisense C4G2 repeat expanded RNAs activate the PKR/eIF2α pathway independent of DPR proteins.
 
-## Antisense C4G2 repeat expanded RNAs themselves induce stress granules and lead to neuronal toxicity
+![Figure 3.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig3-v2.jpg)
+
+**Figure 3.:** (A) (Top) Schematic illustration of (C4G2)75 repeats without the human intronic sequences. 3× protein tags were included at the C- terminus of the repeats to monitor the DPR proteins in each frame. (Bottom) Schematic illustration of antisense (C4G2)108RO repeats with stop codons inserted in every 12 repeats to prevent the translation of DPR proteins from all reading frames. (B) Immunoblotting of DPR proteins in HEK293T cells expressing in_(C4G2)75, (C4G2)75, or 2 repeats. DPR protein levels were detected using anti-FLAG (frame with GP), anti-MYC (frame with PR), and anti-HA (frame with PA). GAPDH was used as a loading control. (C) mRNA levels were measured by quantitative qPCR in cell expressing in_(C4G2)75, (C4G2)75, or 2 repeats. Error bars represent SD (n = 3). (D, E) Immunoblotting of p-PKR and p-eIF2α in HEK293T cells expressing in_(C4G2)75, (C4G2)75, (C4G2)108RO, or 2 repeats. p-PKR (T446) and p-eIF2α (Ser51) were normalized to total PKR and eIF2α, respectively. GAPDH was used as a loading control. Error bars represent SD (n = 3 independent experiments). Statistical analyses were performed using one-way ANOVA with Tukey’s post hoc test. (F, G) Representative images (F) and quantitation (G) of p-eIF2α in primary neurons expressing antisense (C4G2)108RO or 2 repeats in the presence and absence of PKR siRNA. Scale bars, 10 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative images and (B) quantification of p-eIF2α staining in HEK293T cells expressing in_(C4G2)75, PR50, PA50, or GP80. Green, GP, PA, or PR; red, p-eIF2α; blue, DAPI. Error bars represent SD (n = 2 independent experiments). (C) Representative images of antisense RNA foci in HEK293T cells expressing in_(C4G2)75, (C4G2)75 or (C4G2)108RO repeats. Foci were detected by RNA FISH. Red, foci; blue, DAPI. (D) Immunoblotting of DPR proteins in HEK293T cells expressing in_(C4G2)75, (C4G2)75 and (C4G2)108RO repeats. DPR protein levels were detected using anti-PR and anti-GP antibodies. GAPDH was used as a loading control. (E) Representative images of antisense RNA foci in primary cortical neurons expressing (C4G2)108 detected by RNA FISH. Red, foci; blue, DAPI; Green, MAP2. (F) Immunoblotting and (G) quantification of PKR in primary neurons expressing (C4G2)2 and (C4G2)108RO together with control or PKR siRNA. PKR were normalized to GADPH. Error bars represent SD. (H) The levels of PKR and p-eIF2α (Ser51) in HEK293T cells expressing (C4G2)108RO together with control or PKR siRNA. PKR and p-eIF2α (Ser51) were normalized to GADPH and total eIF2α, respectively. Error bars represent SD (n = 2 independent experiments). Statistical analyses were performed using Student’s t-test. (I) Representative images and quantification of puromycin staining in HEK293T cells expressing (C4G2)108RO together with control or PKR siRNA. Error bars represent SD (n = 3 independent experiments). mApple was co-transfected to identify cells with (C4G2)108RO expression. Statistical analyses were performed using Student’s t-test. Scale bars, 20 µm (HEK293T), 10 µm (neurons).
+
+### Antisense C4G2 repeat expanded RNAs themselves induce stress granules and lead to neuronal toxicity
 
 Given the conflicting reports of whether C9ORF72 antisense RNAs themselves are toxic independent of DPR proteins (Moens et al., 2018; Swinnen et al., 2018; Tran et al., 2015), we next focused on (C4G2)108RO, which does not produce DPR proteins but activates the PKR/eIF2α-dependent ISR pathway. We first determined whether the interrupted repeats are sufficient to induce stress granules, which is one of the downstream pathways initiated by phosphorylated eIF2α. We found that FMRP and G3BP1 are mainly diffused in the cytoplasm of cells expressing 2 C4G2 repeats as expected, but they rapidly assemble into stress granules in cells expressing (C4G2)108RO (Figure 4A–C). These data suggest that antisense C4G2 repeat expanded RNAs themselves can trigger stress granule formation in the absence of DPR proteins. To determine the role of PKR activation in stress granule formation by (C4G2)108RO, we knocked down PKR using siRNAs. siRNAs targeting PKR reduce its protein level by 80% compared to control siRNAs (Figure 4D and Figure 3—figure supplement 1H). Consequently, the phosphorylation of eIF2α by (C4G2)108RO is almost inhibited (Figure 4D and Figure 3—figure supplement 1H) and the percentage of foci-positive cells with stress granules is significantly reduced (Figure 4E and F). Furthermore, a slight but significant increase in the global protein synthesis is also observed (Figure 3—figure supplement 1I). Thus, C9ORF72 antisense C4G2 repeat expanded RNAs themselves induce stress granules by activating PKR/eIF2α.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig4-v2.jpg)
 
-**Figure 4.:** 4G2 repeat expanded RNAs themselves induce stress granules and lead to neuronal toxicity.(A) Representative images of FMRP and G3BP1 staining in HEK293T cells expressing (C4G2)108RO or 2 repeats. (B, C) Quantification of antisense foci-positive cells with FMRP and G3BP1 granules. Error bars represent SD (n = 180 cells/condition and three independent experiments). Statistical analyses were performed using Student’s t-test. (D) Immunoblotting of PKR and p-eIF2α (Ser51) in HEK293T cells expressing (C4G2)108RO together with control or PKR siRNA. GAPDH was used as a loading control. (E) Representative images of FMRP staining in HEK293T cells expressing (C4G2)108 repeats together with either control or PKR siRNA. (F) Quantification of antisense foci-positive cells with FMRP granules. Error bars represent SD (n = 150 cells/condition and three independent experiments). (F) Kaplan–Meier curves showing the risk of cell death in (C4G2)108RO-expressing neurons compared with 2 repeats in the presence and absence of PKR siRNA (replicated three times with similar results). Statistical analyses were performed using Mantel–Cox test (*p<0.05, **p<0.01). Scale bars, 20 µm.Figure 4—source data 1.Figure 4D.
+**Figure 4.:** (A) Representative images of FMRP and G3BP1 staining in HEK293T cells expressing (C4G2)108RO or 2 repeats. (B, C) Quantification of antisense foci-positive cells with FMRP and G3BP1 granules. Error bars represent SD (n = 180 cells/condition and three independent experiments). Statistical analyses were performed using Student’s t-test. (D) Immunoblotting of PKR and p-eIF2α (Ser51) in HEK293T cells expressing (C4G2)108RO together with control or PKR siRNA. GAPDH was used as a loading control. (E) Representative images of FMRP staining in HEK293T cells expressing (C4G2)108 repeats together with either control or PKR siRNA. (F) Quantification of antisense foci-positive cells with FMRP granules. Error bars represent SD (n = 150 cells/condition and three independent experiments). (F) Kaplan–Meier curves showing the risk of cell death in (C4G2)108RO-expressing neurons compared with 2 repeats in the presence and absence of PKR siRNA (replicated three times with similar results). Statistical analyses were performed using Mantel–Cox test (*p<0.05, **p<0.01). Scale bars, 20 µm.
 
 We further utilized the unbiased longitudinal microscopy assay to determine the risk of death in neurons expressing (C4G2)108RO. Rodent primary cortical neurons were transfected with mApple and (C4G2)108RO or 2 repeats and imaged at 24 hr intervals for 7 d. Neurons expressing (C4G2)108RO show a significant decrease in survival compared to control neurons expressing 2 repeats (Figure 4G). Importantly, knockdown of PKR partially rescues the (C4G2)108RO-mediated toxicity (Figure 4G). These data suggest that C9ORF72 antisense repeat expanded RNAs themselves are neurotoxic via PKR activation.
 
-## Increased levels of phosphorylated PKR and eIF2α in C9FTD/ALS patients
+### Increased levels of phosphorylated PKR and eIF2α in C9FTD/ALS patients
 
 To study disease relevance, we next determined the levels of phosphorylated PKR and eIF2α in C9FTD/ALS patient postmortem tissues and in patient-derived iPSCs motor neurons. Immunohistochemistry staining showed that the level of phosphorylated PKR is increased in the frontal cortex, especially in the large pyramidal neurons, of patients carrying C9ORF72 repeat expansions compared to age-matched non-disease controls (Figure 5A). This data is consistent with two recent studies showing increased PKR phosphorylation in C9ORF72 patients (Rodriguez et al., 2021; Zu et al., 2020). In addition, the level of phosphorylated eIF2α after normalizing to the total eIF2α level is also significantly increased, despite the heterogeneity of eIF2α protein levels in patients (Figure 5B and C, Table 1). These results suggest that the PKR/eIF2α pathway is activated in C9FTD/ALS patients. We also obtained protein extracts from two lines of C9ORF72 patient-derived motor neurons and their isogenic controls (Braems et al., 2022). However, we did not observe any differences in the levels of either phosphorylated PKR or phosphorylated eIF2α of 38-day-old neurons (Figure 5—figure supplement 1A and B), suggesting that PKR/ eIF2α-dependent ISR pathway possibly gets activated in C9ORF72 patients in a later stage of disease pathogenesis.
 
-## Sense G4C2 repeat expanded RNAs cannot activate the PKR/eIF2α pathway
+![Figure 5.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative immunohistochemistry images of phosphorylated PKR staining in control and C9FTD/ALS patient’s frontal cortex (FCX) using anti-p-PKR (T446) (n = 4 per genotype). (B, C) Immunoblotting of p-eIF2α in proteins extracted from control (C1–C6) and C9FTD/ALS patient’s frontal cortex (P1–P6). p-eIF2α (Ser51) was normalized to total eIF2α. GAPDH was used as a loading control. Error bars represent SD (control n = 6 and C9FTD/ALS n = 6). Statistical analyses were performed using unpaired Student’s t-test. Scale bars, 10 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunoblotting and (B) quantification of p-PKR and p-eIF2α in two different lines of iPSC-derived motor neurons of C9FTD/ALS patient and their isogenic controls (38 d post differentiation). P-PKR levels were detected using anti-p-PKR (T446) and normalized to total PKR. P-eIF2α levels were detected using anti-phosphor eIF2α (Ser51) and normalized to total eIF2α. Error bars represent SD (n = 3).
+
+**Table 1.**
+ List of controls (C1–C6) and C9FTD/ALS patients (P1–P6) postmortem tissues used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Primary neuropathological diagnosis</th>
+      <th>Age atonset (years)</th>
+      <th>Age atdeath (years)</th>
+      <th>Sex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C1</td>
+      <td>Control</td>
+      <td>-</td>
+      <td>53</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>Control</td>
+      <td>-</td>
+      <td>77</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>C3</td>
+      <td>Control</td>
+      <td>-</td>
+      <td>43</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>C4</td>
+      <td>Control</td>
+      <td>-</td>
+      <td>57</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>C5</td>
+      <td>Control</td>
+      <td>-</td>
+      <td>72</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>C6</td>
+      <td>Control</td>
+      <td>-</td>
+      <td>57</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>P1</td>
+      <td>FTLD (C9 expansion)</td>
+      <td>58</td>
+      <td>71</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>P2</td>
+      <td>ALS (C9 expansion)</td>
+      <td>54</td>
+      <td>57</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>P3</td>
+      <td>FTLD (C9 expansion)</td>
+      <td>57</td>
+      <td>66</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>P4</td>
+      <td>FTLD (C9 expansion)</td>
+      <td>58</td>
+      <td>67</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>P5</td>
+      <td>FTLD (C9 expansion)</td>
+      <td>62</td>
+      <td>66</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>P6</td>
+      <td>ALS (C9 expansion)</td>
+      <td>-</td>
+      <td>69</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_ALS: amyotrophic lateral sclerosis._
+
+### Sense G4C2 repeat expanded RNAs cannot activate the PKR/eIF2α pathway
 
 Recently, Zu et al. showed that expressing a construct containing (G4C2)120 also activates PKR and increases DPR protein translation in HEK293T cells (Zu et al., 2020). However, it is not known whether this activation is due to sense or antisense transcripts. Therefore, we generated a sense repeat construct (G4C2)75 that has a similar repeat size as our antisense construct (Figure 6—figure supplement 1A). Consistent with the earlier findings by Zu et al., expression of sense (G4C2)75 in HEK293T cells significantly increases phosphorylation of both PKR and eIF2α (Figure 6A and Figure 6—figure supplement 1B). However, we detected abundant accumulation of both sense and antisense RNA foci in cells expressing sense (G4C2)75 but not in those expressing 2 repeats (Figure 6—figure supplement 1C). Interestingly, we also detected accumulation of sense foci in cells expressing antisense (C4G2) expanded repeats in such model system (Figure 6—figure supplement 1C). We therefore aimed to determine the relative contribution of sense G4C2 and antisense C4G2 repeat expanded RNAs in activating the PKR/eIF2α pathway by focusing the expanded (G4C2)75 repeats which resemble C9FTD/ALS patients. We first used previously published ASOs that specifically degrade sense G4C2 RNAs (Jiang et al., 2016). As expected, ASOs targeting sense G4C2 repeat expanded RNAs significantly reduce the accumulation of sense RNA foci but have little effect on antisense RNA foci (Figure 6B and Figure 6—figure supplement 1D). However, reducing sense G4C2 RNA transcripts/foci does not alter the activation of PKR/eIF2α by (G4C2)75 (Figure 6C and D). We next designed two ASOs specifically targeting antisense repeat RNAs. Both ASO1 and ASO2 targeting antisense C4G2 repeat expanded RNAs significantly reduce the abundance of antisense RNA foci without affecting sense RNA foci (Figure 6B and Figure 6—figure supplement 1E). Consequently, both ASOs significantly inhibit the activation of PKR and eIF2α by (G4C2)75 (Figure 6E and F). We further obtained an interrupted sense (G4C2)108RO construct that has the similar repeat size as the antisense (C4G2)108RO (Moens et al., 2018). Expression of sense (G4C2)108RO also significantly increases the phosphorylation of PKR and eIF2α, which is mitigated by ASOs targeting antisense RNAs, but not sense RNAs (Figure 6—figure supplement 1F). These results suggest that antisense C4G2, but not sense G4C2, repeat expanded RNAs (either pure repeats or interrupted) activate the PKR/eIF2α-mediated ISR pathway. It has been shown previously that expressing sense repeats can induce stress granules (Green et al., 2017), but the underlying molecular mechanisms are not explored. We observed a significant increase in the accumulation of FMRP and G3BP1 granules in (G4C2)75 repeats expressing cells compared to those expressing the control 2 repeats. Interestingly, such aberrant accumulation of stress granules is drastically reduced after treatment with ASOs targeting the antisense G4C2 repeat RNAs (Figure 6G and H). Thus, antisense C4G2, but not sense G4C2, repeat expanded RNAs activate the PKR/eIF2α pathway, leading to toxicity.
 
-## Reduction of PKR mitigates antisense C4G2, but not sense G4C2, RNA- mediated toxicity in zebrafish
+![Figure 6.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig6-v2.jpg)
+
+**Figure 6.:** (A) Immunoblotting of p-PKR and p-eIF2α in HEK293T cells expressing (G4C2)75 or (G4C2)2 repeats. (B) Representative images of sense and antisense RNA foci in HEK293T expressing (G4C2)75 repeats together with either control antisense oligonucleotides (ASOs), ASOs targeting sense G4C2RNAs or ASOs targeting antisense C4G2 repeat expanded RNAs. Foci were detected by RNA FISH. Red, foci; blue, DAPI. (C) Immunoblotting and (D) quantification of p-PKR and p-eIF2α in HEK293T cells expressing (G4C2)75 or (G4C2)2 repeats together with either control ASO or ASOs targeting sense G4C2 repeat expanded RNAs. Phosphorylated PKR levels were detected using anti-p-PKR (phosphor T446) and normalized to total PKR. Phosphorylated eIF2α levels were detected using anti-peIF2α (Ser51) and normalized to total eIF2α. GAPDH was used as a loading control. Error bars represent SD (n = 3 independent experiments). Statistical analyses were performed using unpaired Student’s t-test. (E, F) Immunoblotting of p-PKR and p-eIF2α in HEK293T cells expressing (G4C2)75 or (G4C2)2 repeats together with either control ASO or ASOs targeting antisense G4C2 repeat expanded RNAs. P-PKR (T446) and p-eIF2α (Ser51) were normalized to total PKR and eIF2α, respectively. GAPDH was used as a loading control. Error bars represent SD (n = 3 independent experiments). Statistical analyses were performed using one-way ANOVA with Tukey’s post hoc test. (G) Representative images and (H) quantification of FMRP and G3BP1 staining in HEK293T cells expressing (G4C2)75 or (G4C2)2 repeats in the presence and absence of antisense ASO2. Error bars represent SD (n = 150 cells/condition and three independent experiments). Statistical analyses were performed using one-way ANOVA with Tukey’s post hoc test. Scale bars, 20 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic illustration of the sense (G4C2)75 repeat construct. (B) Quantification of p-PKR and p-eIF2α in HEK293T cells expressing (G4C2)75 or (G4C2)2 repeats. p-PKR (T446) and p-eIF2α (Ser51) were normalized to total PKR and eIF2α, respectively. GAPDH was used as a loading control. Error bars represent SD (n = 2 independent experiments). Statistical analyses were performed using Student’s t-test. (C) Representative images of sense and antisense RNA foci in HEK293T cells expressing sense (G4C2)75 and interrupted antisense (C4G2)108RO repeats. Foci were detected by RNA FISH. Red, foci; blue, DAPI. (D, E) Quantification of RNA foci in HEK293T expressing (G4C2)75 together with either control antisense oligonucleotide (ASO) or ASOs targeting sense G4C2 and antisense C4G2 repeat expanded RNAs. Error bars represent SD (n = 80–100 cells/condition from three independent experiments). (F) Immunoblotting of p-PKR and p-eIF2α in HEK293T cells expressing interrupted sense (G4C2)108RO and control repeats. p-PKR levels were detected using anti-p-PKR (T446) and normalized to total PKR. P-eIF2α levels were detected using anti-phosphor eIF2α (Ser51) and normalized to total eIF2α. Error bars represent. GAPDH was used as a loading control. Error bars represent SD Scale bars, 20 µm (HEK293T).
+
+### Reduction of PKR mitigates antisense C4G2, but not sense G4C2, RNA- mediated toxicity in zebrafish
 
 To validate our findings in an in vivo model, we performed a morpholino-mediated knockdown of the zebrafish ortholog of human PKR (i.e. Eif2ak2) in zebrafish expressing C9ORF72 repeat expanded RNAs. We previously demonstrated that micro-injection of RNAs containing either sense (G4C2)70 or antisense (C4G2)70 repeats results in motor axonopathy including reduced axonal length and aberrant branching in zebrafish embryos (Swinnen et al., 2018). As no DPR proteins are detected, this phenotype is specifically caused by sense or antisense RNA themselves. We first designed a splice-blocking morpholino (SB-MO) targeting the exon 3–intron 3 junction of zebrafish eif2ak2. SB-MO caused the retention of intron 3 in a dose–response manner, resulting in a reduction of the WT eif2ak2 transcripts (Figure 7A and Figure 7—figure supplement 1A). Co-injection of antisense (C4G2)70 RNAs with eif2ak2 SB-MO significantly mitigates the abnormalities of axonal length and branching compared to zebrafish injected with (C4G2)70 RNAs and a control morpholino (Figure 7B–D). Consistent with this observation, Eif2ak2 reduction with a translation-blocking morpholino increases axonal length (Figure 7A and Figure 7—figure supplement 1B and C) and significantly ameliorates the abnormal branching phenotype caused by antisense (C4G2)70 RNAs. On the other hand, no protective effects were observed when co-injecting sense (G4C2)70 RNAs with eif2ak2 SB-MO (Figure 7E and F). Overall, these data indicate that PKR is an important player contributing to toxicity induced by antisense C4G2 but not sense G4C2 repeat expanded RNAs.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic illustration of splice-blocking morpholino (SB-MO) targeting the exon 3/intron 3 junction in zebrafish eif2ak2 pre-mRNA. The correctly spliced (wild type transcripts) and intron 3 retained transcripts are shown. The translation-blocking morpholino targets the AUG start codon in post-spliced eif2ak2 mRNA. (B) SV2 immunostaining of motor axons in 30 hpf zebrafish embryos injected with GFP control mRNA and antisense (C4G2)70 RNAs. Scale bar = 50 µm. (C, D) Effects of SB-MO on axonal length (C) and branching (D) of zebrafish expressing antisense (C4G2)70 RNAs. Embryos were injected with 0.844 µM GFP mRNA, 0.844 µM antisense (C4G2)70 RNAs, 0.844 µM antisense (C4G2)70 RNAs plus 0.25 mM control morpholino, or 0.844 µM antisense (C4G2)70 RNAs plus 0.25 mM eif2ak2 morpholino. Error bars represent SD (n = 4 independent experiments). Statistical analyses were performed using one-way ANOVA with Tukey’s post hoc test. (E, F) Effects of SB-MO on axonal length and branching of zebrafish expressing sense (G4C2)70 RNAs. Embryos were injected with 0.844 µM GFP mRNA, 0.844 µc sense (G4C2)70 RNAs, 0.844 µM sense (G4C2)70 RNAs plus 0.25 mM control morpholino or 0.844 µM sense (G4C2)70 RNAs plus 0.25 mM eif2ak2 morpholino. Error bars represent SD (n = 4 independent experiments). Statistical analyses were performed using one-way ANOVA with Tukey’s post hoc test.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Dose-dependent knockdown of WT transcripts and increase of transcripts with intron 3 retention as determined by RT-PCR analysis. Eif2ak2 splice variants in non-injected, standard control and eif2ak2 targeting MO-injected embryos 30 hpf are shown. (B, C) Effect of translation-blocking morpholino (TB-MO)-mediated reduction of Eif2ak2 on axonal length (B) and branching (C), using a dose of 0.25 mM for TB-MO and standard control MO in GFP and antisense (C4G2)70 RNAs expressing zebrafish. Error bars represent SD (n = 4 independent experiments). Statistical analyses were performed using one-way ANOVA with Tukey’s post hoc test.
 
 ## Discussion
 
@@ -90,7 +238,7 @@ It is generally accepted in the field that gain of toxicity from the bidirection
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/85902/elife-85902-fig8-v2.jpg)
 
-**Figure 8.:** C9ORF72 antisense C4G2 repeat expanded RNAs.C9ORF72 antisense C4G2 repeat expanded RNAs activate PKR/eIF2α-dependent integrated stress response and lead to neurotoxicity independent of DPR proteins.
+**Figure 8.:** C9ORF72 antisense C4G2 repeat expanded RNAs activate PKR/eIF2α-dependent integrated stress response and lead to neurotoxicity independent of DPR proteins.
 
 Several studies argue against the toxicity from either sense G4C2 or antisense C4G2 repeat expanded RNAs and associated RNA foci. In one study, Drosophila expressing intronic (G4C2)160 repeats show abundant sense RNA foci in the nucleus but have little DPR proteins and no neurodegeneration, suggesting that sense RNA foci is insufficient to cause toxicity in this model (Tran et al., 2015). Two other elegant studies generated Drosophila expressing interrupted G4C2 repeats by inserting stop codons every 12 repeats in all reading frames to prevent RAN translation. These Drosophila do not show any toxicity, whereas those expressing pure G4C2 repeats of similar sizes do despite comparable sense RNA foci accumulation. Similarly, Drosophila expressing interrupted antisense repeat expanded RNAs do not show any deficits, suggesting that antisense C4G2 RNAs are not toxic in this model system (Mizielinska et al., 2014; Moens et al., 2018). However, expressing the same antisense interrupted repeat construct (C4G2)108RO causes motor axonopathy in zebrafish (Swinnen et al., 2018). Consistent with this, we show that (C4G2)108RO is toxic to primary cortical neurons, which is partially rescued by the reduction of PKR (Figure 4G). The PKR-dependent toxicity is also observed in zebrafish expressing antisense (C4G2)70 RNAs (Figure 7B–D and Figure 7—figure supplement 1B and C). It is interesting to note that PKR, constitutively and ubiquitously expressed in vertebrate cells including zebrafish, is not found in plants, fungi, protists, or invertebrates such as Drosophila (Martinez et al., 2021). This may partially explain the difference in toxicities caused by the antisense C4G2 repeat expanded RNAs in Drosophila, zebrafish, and primary neurons.
 
@@ -104,56 +252,56 @@ From the therapeutic development point of view, several approaches have been exp
 
 ## Materials and methods
 
-## Plasmids and siRNAs
+### Plasmids and siRNAs
 
 A construct containing 10 GGGGCC repeats, flanked 5′ by BbsI and 3′ by BsmBI recognition sites, was synthesized by GENEWIZ and used to generate antisense C4G2 repeats using recursive directional ligation as previously described (Mizielinska et al., 2014). The repeat-containing plasmids were amplified using recombination-deficient Stbl3 Escherichia coli (Life Technologies) at 32°C to minimize retraction of repeats. Human PKR cDNA was a gift from Dr. Thomas Dever (NIH, USA) and (C4G2)108RO was gifted by Dr. Adrian Isaacs (Moens et al., 2018). For longitudinal fluorescence microscopy, pGW1-mApple was used. All plasmids were verified by Sanger sequencing (Genewiz, USA). All MOE-Gapmer ASOs were synthesized by Integrated DNA Technologies, USA. The ASO sequences are sense ASO (GCCCCTAGCGCGCGACTC) (Jiang et al., 2016), AS ASO1 (GGCCGGGGCCGGGGCCGGGG), and AS ASO2 (CGGGGCCG GGGCCGGGGC). siRNAs against PKR and control siRNAs were purchased from Horizon Discovery, USA.
 
-## Human tissues
+### Human tissues
 
 Postmortem brain tissues from C9FTD/ALS patients (n = 6) and controls (n = 6) were obtained from the Emory Neuropathology Core. Patient information is provided in Table 1.
 
-## Cell culture, transfection, and treatment
+### Cell culture, transfection, and treatment
 
 Human embryonic kidney (HEK293T) and human neuroblastoma (SH-SY5Y) cells from ATCC were cultured in high-glucose DMEM (Invitrogen) and DMEM-F12 (Invitrogen), respectively, supplemented with 10% fetal bovine serum (Corning), 4 mM GlutaMAX (Invitrogen), penicillin (100 U/mL), streptomycin (100 μg/mL), and non-essential amino acids (1%). All parental cell lines were obtained from ATCC (HEK293T, CRL-3216; SH-SY5Y, CRL-2266) and are mycoplasma negative (abcam ab289834). Cells were grown at 37°C in a humidified atmosphere with 5% CO2. Cells were transiently transfected using polyethyleneimine or Lipofectamine 2000. Experiments were performed 24 or 48 hr after transfection. For puromycin labeling, HEK293T and primary neurons were incubated with puromycin (10 ug/mL) for 30 and 5 min, respectively. For PKR inhibition, cells were treated with PKR inhibitor (C16) at 5 nM for 12 hr followed by transfection with repeats RNAs.
 
-## Primary cortical neuronal culture and transfection
+### Primary cortical neuronal culture and transfection
 
 Primary cortical neurons were prepared from C57BL/6J mouse embryos (Charles River) of either sex on embryonic day 17. Cerebral cortices were dissected and enzymatically dissociated using trypsin with EDTA (Thermo Fisher Scientific; 10 min), mechanically dissociated in Minimum Essential Media (MEM; Fisher) supplemented with 0.6% glucose (Sigma) and 10% FBS (Hyclone) and stained to assess viability using Trypan Blue (Sigma). Neurons were plated on coverslips (Matsunami Inc, 22 mm). A total of 50,000 neurons were plated as a ‘spot’ on the center of the coverslip to create a small, high-density network. Neurons were cultured in standard growth medium (glial conditioned neurobasal plus medium [Fisher] supplemented with GlutaMAX [Gibco], and B27 plus [Invitrogen]), and half of the media was exchanged 2–3 times a week until the experiment endpoints. No antibiotics or antimycotics were used. Cultures were maintained in an incubator regulated at 37οC, 5% CO2, and 95% relative humidity as described (Valdez-Sinon et al., 2020). Cells were transiently transfected using Lipofectamine 2000 (Invitrogen) according to the manufacturer’s instructions.
 
-## Longitudinal fluorescence microscopy
+### Longitudinal fluorescence microscopy
 
 Mouse primary cortical neurons were transfected with mApple and repeat expanded constructs and imaged by fluorescence microscopy at 24 hr intervals for 7–10 d as described (Weskamp et al., 2019). Time of death was determined based on rounding of the soma, retraction of neurites, or loss of fluorescence. The time of death for individual neurons was used to calculate the risk of death in each population relative to a reference group. Images were acquired using Keyence BZ-X810 microscope with a ×10 objective and analyzed using ImageJ. The images were stitched and stacked, and cell death was scored using the criteria mentioned above.
 
-## RNA fluorescence in situ hybridization
+### RNA fluorescence in situ hybridization
 
 LNA DNA probes were used against the sense and antisense hexanucleotide repeat expanded RNAs (Exiqon, Inc). The probe sequence for detecting sense RNA foci: TYE563-CCCCGGCCCCGGCCCC; and that for antisense RNA foci is: TYE563-GGGGCCGGGGCCGGGG. All hybridization steps were performed under RNase-free conditions. Cells were fixed in 4% paraformaldehyde (Electron Microscopy Sciences) for 20 min, washed three times for 5 min with phosphate buffered saline (DEPC 1× PBS, Corning) followed by permeabilization with 0.2% Triton-X 100 (Sigma) for 10 min and then incubated with 2× SSC buffer for 10 min. Cells were hybridized (50% formamide, 2× SCC, 50 mM sodium phosphate [pH 7], 10% dextran sulfate, and 2 mM vanadyl sulfate ribonucleosides) with denatured probes (final concentration of 40 nM) at 66°C for 2 hr. After hybridization, slides were washed at room temperature in 0.1% Tween-20/2× SCC for 10 min twice and in stringency washes in 0.1× SCC at 65°C for 10 min. Cell nuclei were stained with DAPI. Three to six random pictures were taken by Keyence BZ-X810 microscope with a ×60 oil objective and analyzed using ImageJ.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were fixed in 4% paraformaldehyde (Electron Microscopy Sciences) for 20 min, washed three times for 5 min with phosphate buffered saline (1×PBS, Corning), and treated with 0.2% Triton-X 100 (Sigma) in PBS for 10 min. Cells were blocked for 30 min in a blocking solution consisting of 4% bovine serum albumin (Sigma) in PBS. Cells were incubated overnight in primary antibodies diluted in blocking solution. The next day, cells were washed three times for 5 min in PBS and incubated in secondary antibodies in blocking solution for 1 hr at room temperature (dark). After washing three times for 5 min, coverslips with the cells were mounted using Prolong Gold Antifade mounting media (Invitrogen). Images were acquired with Keyence BZ-X810 microscope with a ×60 oil objective and analyzed using ImageJ.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Postmortem brain tissues were obtained from the brain bank maintained by the Emory Alzheimer Disease Research Center under proper Institutional Review Board protocols. Paraffin-embedded sections from frontal cortex (8 μm thickness) were deparaffinized by incubation at 60°C for 30 min and rehydrated by immersion in graded ethanol solutions. Antigen retrieval was done by microwaving in a 10 mM citrate buffer (pH 6.0) for 5 min followed by allowing slides to cool to room temperature for 30 min. Endogenous peroxidase activity was eliminated by incubating slides with hydrogen peroxide block solution (Fisher) for 10 min at room temperature followed by rinsing in phosphate buffered saline. Nonspecific binding was reduced by blocking in ultra-Vision Block (Fisher) for 5 min at room temperature. Sections were then incubated overnight with primary antibodies diluted in 1% BSA in phosphate buffered saline for 30 min at room temperature or incubated without primary antibody as a negative control. Sections were rinsed in phosphate buffered saline and incubated in labeled ultra-Vision LP detection system horseradish peroxidase-polymer secondary antibody (Fisher) for 15 min at room temperature. Slides were imaged for analysis using an Aperio Digital Pathology Slide Scanner (Leica Biosystems). For IHC, rabbit anti-p-PKR, Millipore 07-532 (1:100 dilution) antibody was used.
 
-## Protein lysate preparation
+### Protein lysate preparation
 
 Whole cell/tissue extracts were lysed using RIPA Lysis Buffer pH 7.4 (Bio-world, USA) supplemented with Halt protease and phosphatase inhibitor cocktail (Thermo Fisher Scientific). Lysates were sonicated at 25% amplitude for three cycles for 15 s with 5 s intervals. Supernatant was collected after centrifuging at max speed for 15 min at 4°C. The concentration of the isolated proteins was determined using BCA Protein Assay Reagent (Pierce, USA).
 
-## Immunoblotting assay
+### Immunoblotting assay
 
 For western blotting, 20–30 μg of proteins were prepared in 4× Laemmli sample buffer and heat-denatured at 95°C for 5 min. Samples were resolved on 4–20% gradient gels (Bio-Rad). Proteins were transferred to nitrocellulose membranes (0.2 μm, Bio-Rad). The membrane was blocked in 5% milk and incubated overnight at 4°C with primary antibodies diluted in blocking buffer. Secondary antibodies HRP-conjugated secondary antibodies (ABclonal) or IRDye secondary antibodies (LI-COR) were diluted in blocking buffer and applied to the membrane for 1 hr at room temperature. Primary antibodies used mouse anti-FLAG (1:1000; Sigma # F1804), rabbit anti-HA (1:1000; Cell Signaling # 3724S), mouse anti-MYC (1:1000; Sigma # C3956), rabbit anti-PKR (1:1000; abcam # ab184257), rabbit anti-phospho-PKR (1:1000; abcam # ab32036), rabbit anti-eIF2α (1:1000; Cell Signaling # 3398S), rabbit anti-phospho-eIF2α (1:1000; CST# 9722S), rabbit anti-PERK (1:1000; CST # 3192S), rabbit anti-phospho-PERK (1:1000; abcam # ab192591), and rabbit anti-GAPDH (1:5000; ABclonal # ac001). Antibodies against PR, GP, and PA have been previously reported (Jiang et al., 2016). Super Signal West Pico (Pierce, USA) was used for detection of peroxidase activity. Molecular masses were determined by comparison to protein standards (Thermo Scientific). The immunoreactive bands were detected by ChemiDoc Image System (Bio-Rad, USA).
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNAs were extracted using a RNeasy kit as instructed by the manufacturer (QIAGEN). cDNA was prepared using High-Capacity cDNA Reverse Transcription Kit from applied biosystem. Quantitative RT-PCR reactions were conducted and analyzed on a StepOnePlus Real-Time PCR system (Applied Biosystems). Gene expression levels were measured by SYBR green (Thermo Fisher Scientific) quantitative real-time PCR (PRIMER SEQUENCE).
 
-## Zebrafish microinjections, SV2 immunohistochemistry, and phenotyping
+### Zebrafish microinjections, SV2 immunohistochemistry, and phenotyping
 
 Zebrafish work was performed as previously described (Swinnen et al., 2018). Zebrafish oocytes were injected at the one- to two-cell stage with the indicated amounts of morpholinos. The splice-blocking morpholino targeting exon 3 intron 3 junction of Danio rerio eif2ak2 (transcript ENSDART00000164338.2; morpholino sequence 5′-AATGTCTTGAATACTGACC GGGTGA-3′), the translation-blocking morpholino targeting AUG start codon (morpholino sequence 5′-TTCCTGACAGAGACTCCATTGCGAA-3′), and the standard control oligo (morpholino sequence 5′-CCTCTTACCTCAGTTACAATTTATA-3′) were designed and generated by Gene Tools (Philomath, USA). Injected oocytes were incubated at 28°C. After 24 hr post fertilization (hpf), the embryos were dechorionated using a forceps. Only morphologically normal embryos were selected for downstream experiments. At 30 hpf, the selected fish were deyolked and subsequently fixed overnight at 4°C in 4% formaldehyde in 1×PBS. Fish were permeabilized with acetone for 1 hr at − 20°C, blocked with 1% BSA/1% DMSO/PBS for 1 hr at room temperature, and immunostained with mouse anti-SV2 primary antibody (AB2315387, Developmental Studies Hybridoma Bank) followed by a secondary antibody.
 
 For phenotyping, 15 embryos per condition were analyzed with imaging (Leica DM 3000 LED microscope; DMK 33UX250 USB3.0 monochrome industrial camera, The Imaging Source, Bremen, Germany) and the Lucia software (version 4.60, Laboratory Imaging, Prague, Czech Republic) by a blinded observer. For the axonal length, a standardized method was used; five predefined and consecutive motor axons (i.e. the 8th up to the 12th axon on one side) were measured in all 15 embryos. Data for axonal length were normalized to the control condition. For the abnormal branching, a predefined set of 20 consecutive motor axons (i.e. the 8th up to the 17th axon on both sides) in the same 15 embryos were analyzed. Motor axons were considered abnormal when axons branched at or before the ventral edge of the notochord. An embryo was considered as having ‘abnormal branching’ when at least two of these 20 axons were abnormal. For each experiment, the standard morpholino was used as control at the same dose of the tested morpholino.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses and graphs were prepared in GraphPad Prism (version 9). Data is expressed as mean ± SD. Student’s t-test or one-way ANOVA was used for statistical analysis unless specified in figure legends.

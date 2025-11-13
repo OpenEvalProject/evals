@@ -15,19 +15,19 @@
 
 ### Affiliations
 
-1. https://ror.org/01y1kjr75 Nankai University School of Medicine Tianjin China
-2. https://ror.org/01y1kjr75 The Key Laboratory of Bioactive Materials, Ministry of Education, Nankai University, the College of Life Sciences Tianjin China
-3. https://ror.org/04gw3ra78 National Key Laboratory of Kidney Diseases, Chinese PLA General Hospital Beijing China
+1. Nankai University School of Medicine Tianjin China ([ROR:01y1kjr75](https://ror.org/01y1kjr75))
+2. The Key Laboratory of Bioactive Materials, Ministry of Education, Nankai University, the College of Life Sciences Tianjin China ([ROR:01y1kjr75](https://ror.org/01y1kjr75))
+3. National Key Laboratory of Kidney Diseases, Chinese PLA General Hospital Beijing China ([ROR:04gw3ra78](https://ror.org/04gw3ra78))
 4. Jiangxi Engineering Research Center for Stem Cell, Shangrao Jiangxi China
-5. https://ror.org/02khfyc93 Tianjin Key Laboratory of Engineering Technologies for Cell Pharmaceutical, National Engineering Research Center of Cell Products, AmCellGene Co., Ltd Tianjin China
+5. Tianjin Key Laboratory of Engineering Technologies for Cell Pharmaceutical, National Engineering Research Center of Cell Products, AmCellGene Co., Ltd Tianjin China ([ROR:02khfyc93](https://ror.org/02khfyc93))
 6. Beijing Engineering Laboratory of Perinatal Stem Cells, Beijing Institute of Health and Stem Cells, Health & Biotech Co Beijing China
-7. https://ror.org/02ke5vh78 Tianjin Key Laboratory of Human Development and Reproductive Regulation, Tianjin Central Hospital of Gynecology Obstetrics, Nankai University Affiliated Hospital of Obstetrics and Gynecology Tianjin China
+7. Tianjin Key Laboratory of Human Development and Reproductive Regulation, Tianjin Central Hospital of Gynecology Obstetrics, Nankai University Affiliated Hospital of Obstetrics and Gynecology Tianjin China ([ROR:02ke5vh78](https://ror.org/02ke5vh78))
 
 † Corresponding author
 
 ## Abstract
 
-Nitric oxide (NO), as a gaseous therapeutic agent, shows great potential for the treatment of many kinds of diseases. Although various NO delivery systems have emerged, the immunogenicity and long-term toxicity of artificial carriers hinder the potential clinical translation of these gas therapeutics. Mesenchymal stem cells (MSCs), with the capacities of self-renewal, differentiation, and low immunogenicity, have been used as living carriers. However, MSCs as gaseous signaling molecule (GSM) carriers have not been reported. In this study, human MSCs were genetically modified to produce mutant β-galactosidase (β-GAL H363A ). Furthermore, a new NO prodrug, 6-methyl-galactose-benzyl-oxy NONOate (MGP), was designed. MGP can enter cells and selectively trigger NO release from genetically engineered MSCs (eMSCs) in the presence of β-GAL H363A . Moreover, our results revealed that eMSCs can release NO when MGP is systemically administered in a mouse model of acute kidney injury (AKI), which can achieve NO release in a precise spatiotemporal manner and augment the therapeutic efficiency of MSCs. This eMSC and NO prodrug system provides a unique and tunable platform for GSM delivery and holds promise for regenerative therapy by enhancing the therapeutic efficiency of stem cells.
+Nitric oxide (NO), as a gaseous therapeutic agent, shows great potential for the treatment of many kinds of diseases. Although various NO delivery systems have emerged, the immunogenicity and long-term toxicity of artificial carriers hinder the potential clinical translation of these gas therapeutics. Mesenchymal stem cells (MSCs), with the capacities of self-renewal, differentiation, and low immunogenicity, have been used as living carriers. However, MSCs as gaseous signaling molecule (GSM) carriers have not been reported. In this study, human MSCs were genetically modified to produce mutant β-galactosidase (β-GALH363A). Furthermore, a new NO prodrug, 6-methyl-galactose-benzyl-oxy NONOate (MGP), was designed. MGP can enter cells and selectively trigger NO release from genetically engineered MSCs (eMSCs) in the presence of β-GALH363A. Moreover, our results revealed that eMSCs can release NO when MGP is systemically administered in a mouse model of acute kidney injury (AKI), which can achieve NO release in a precise spatiotemporal manner and augment the therapeutic efficiency of MSCs. This eMSC and NO prodrug system provides a unique and tunable platform for GSM delivery and holds promise for regenerative therapy by enhancing the therapeutic efficiency of stem cells.
 
 ## Introduction
 
@@ -39,21 +39,65 @@ To achieve a gas-generating platform based on living cells, MSCs are programmed 
 
 ## Results
 
-## MSC-mediated NO release platform
+### MSC-mediated NO release platform
 
 Other than mentioned in context, MSCs represent human placenta-derived MSCs. To establish a living cell-mediated gas generation platform, MSCs were genetically modified to produce mutant β-galactosidase (β-GALH363A), which triggers NO release from MSCs when the corresponding NO prodrug is applied and avoids the interference of endogenous glycosidase. We constructed a lentiviral vector to stably express mutant β-GALH363A, Renilla luciferase (Rluc), and red fluorescence protein (RFP), in which Rluc and RFP were used for molecular imaging and immunohistology, respectively (Figure 1A). The expression of β-GALH363A in eMSCs was confirmed (Figure 1B and C and Figure 1—figure supplement 1A). Moreover, Rluc expression was confirmed by in vitro molecular imaging (Figure 1—figure supplement 1B). Furthermore, compared with wild-type MSCs, eMSCs did not exhibit significant differences in morphology or MSC surface markers (Figure 1—figure supplement 2).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig1-v2.jpg)
+
+**Figure 1.:** (A) Genetically modifying placenta-derived MSCs to express mutant β-galactosidase (β-GALH363A) through a lentiviral transduction system, thus enabling continuous production of β-GALH363A for NO delivery. Moreover, the MSCs also stably expressed Renilla luciferase (Rluc) and red fluorescence protein (RFP) for in vivo bioluminescence imaging and immunofluorescence analysis, respectively. (B) The protein expression of β-GALH363A in eMSCs was evaluated by 6×His tag protein detection due to β-GALH363A carrying a C-terminal 6×His tag. (C) Immunofluorescence staining of β-GALH363A (green) in eMSCs. Scale bars, 50 μm. (D) Structure of the NO prodrug MGP, 6-methyl-galactose-benzyl-oxy NONOate. (E) Construction of the NO-eMSC system and the mechanism of NO release from this system. (F) The NO release profile from eMSCs administered at different concentrations of NO-prodrug MGP was determined using the Griess assay. n=3. (G) NO release from eMSCs with MGP administration in vitro was assessed by electron paramagnetic resonance (EPR), and the characteristic triplet EPR signal was observed. eMSCs served as controls. (H) The amount of NO-Fe (DETC)2 was calibrated using TEMPO as a standard. A total of 1×106 eMSCs approximately released 1 nmol NO in 1 hr. n=3. (I) The intracellular NO release in eMSCs treated with MGP was measured by diaminofluorescein (DAF) staining, in which DAF-FM DA is a cell-permeable fluorescent probe for the detection of intracellular NO. Scale bar, 25 μm. (J) Quantification of DAF fluorescence intensity in eMSCs in the presence of 5 µg/mL MGP for 6 hr. eMSC+MGP, eMSCs with MGP administration. All data are presented as the mean ± SD, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The percentage of cells that are positive for both β-GALH363A and RFP by flow cytometry. FACS analysis showed that approximately 51.9% of cells were β-GALH363A and RFP double-positive after lentiviral transduction at 48 hr. β-GALH363A and RFP double-positive cells were isolated by FACS for further experiments. (B) Ex vivo bioluminescence imaging (BLI) of eMSCs showed a robust linear relationship (R2=0.998) of Rluc expression with cell numbers in the presence of coelenterazine.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Comparison of immunophenotypes between wild-type MSCs and eMSCs. Negative: CD45, CD31 and CD34; positive: CD90 and CD44. (B) Morphology of wild-type MSCs and eMSCs. Scale bars, 100 μm. Data are expressed as the mean ± SD; data are not statistically significant when p values are not shown; n=3 per group.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The NO release profile of MGP-NO in response to β-GALH363A in PBS was measured by Griess assay. PBS was used as a control.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) CCK-8 assay showed cell proliferation after administration of different concentrations of NO-prodrug MGP. n = 3. (B) Representative imaging of proliferation marker Ki-67 (red) immunofluorescence staining. Scale bars, 100 μm. (C) Quantification of Ki-67-positive cells. n = 3. (D) Growth factor-related gene (bFGF, HGF, and IGF-1) mRNA levels in cells treated with different concentrations of NO-prodrug MGP. n = 3. (E) The proliferation of eMSCs and eMSCs with MGP administration (2 μg/mL) was analyzed by bioluminescence imaging (BLI) (left); quantification of BLI signals (right); n = 3. (F) Real-time quantitative polymerase chain reaction (qPCR) analysis of the expression of a panel of functional-related genes treated with eMSCs and eMSCs with MGP administration (2 μg/mL) for 24 hr. All data are presented as the mean ± SD, *p < 0.05.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Representative BLI photographs of eMSCs and eMSCs with MGP administration. (B) Detailed quantitative analysis of signals (signal activity is expressed as photons/s/cm2/sr). All data are presented as the mean ± SD, **p < 0.01, n = 3.
 
 Based on our previous report (Hou et al., 2019), we designed a new NO prodrug, 6-methyl-galactose-benzyl-oxy NONOate, which was named MGP. MGP contains a lipid-soluble self-decomposition chain oil that enhances its water distribution coefficient and enables it to cross the cell membrane of eMSCs and then be catalyzed by β-GALH363A to release NO from eMSCs. The structure and synthesis routes of MGP are shown in Figure 1D and Figure 1—source data 1. To verify whether the redesigned NO prodrug MGP could release NO specifically by β-GALH363A catalysis, we measured the NO release profile of MGP in response to β-GALH363A in vitro. As shown in Figure 1—figure supplement 3, MGP can be specifically catalyzed by β-GALH363A and has sustained NO release behavior. In this novel NO release eMSC (NO-eMSC) system, eMSCs, as a manufacturing factory for producing β-GALH363A, could further release NO by catalyzing the NO prodrug MGP (Figure 1E). We detected NO production in the medium of eMSCs with MGP administration using the Griess method, confirming that MGP can diffuse into eMSCs and release NO (Figure 1F). We next directly measured the NO levels of eMSCs in vitro by an electron paramagnetic resonance (EPR) technique using the spin trap Fe•(DETC)2 colloid solution. The characteristic triplet EPR signal was observed in eMSCs with MGP administration (Figure 1G), and we further confirmed that 1×106 eMSCs could release 1 nmol NO (Figure 1H). Moreover, NO production of eMSCs with MGP administration was visualized by using diaminofluorescein (DAF)-FM diacetate, a cell-permeable fluorescent probe for the detection of intracellular NO, which also supported that eMSCs could specifically release NO (Figure 1I and J).
 
 Considering the cell-protective effects of a low NO concentration, our results revealed that the optimum concentration of MGP was 2 µg/mL by cell viability, immunostaining for the proliferation marker Ki67, and immunostaining for the expression of proliferation-related genes (Figure 1—figure supplement 4). We further verified the protective effects of NO in response to oxidative stress-induced eMSC apoptosis. The bioluminescence imaging (BLI) assay showed that eMSC proliferation was markedly ameliorated by H2O2-induced oxidative stress (Figure 1—figure supplement 5).
 
-## Enhanced antioxidation properties of eMSCs
+### Enhanced antioxidation properties of eMSCs
 
 To further investigate the transcriptomic profile of eMSCs with MGP administration, mRNA sequencing analysis was performed. RNA sequencing (RNA-seq) profiles from eMSCs and eMSCs with MGP administration passed quality control (Figure 2—figure supplement 1). We identified a total of 228 differentially expressed genes (DEGs), of which 116 were upregulated genes and 112 were downregulated genes (Figure 2—figure supplement 2A). Analysis of Gene Ontology (GO) categories was mainly enriched in biological processes, including protein transport, cell differentiation, morphogenesis, and oxidation-reduction processes (Figure 2A). Among them, the oxidation-reduction process attracted our attention, suggesting that NO may improve intracellular antioxidant capacity, which was confirmed by gene set enrichment analysis (GSEA) (Figure 2B and Figure 2—figure supplement 2B). Meanwhile, we noted that a significant increase in some of the DEGs associated with antioxidation was observed in eMSCs with MGP administration, namely, GSR, SRXN1, RRBP1, BMI1, RPL24P4, and MAFG, indicating that NO may indeed play a cytoprotective role in eMSCs by elevating antioxidation capacity (Figure 2C). We also found that NO led to robust increases in survival- or proliferation-related genes, including FER, NRSN2, UCK2, CAB39, SNHG4, and SYDE1 (Figure 2D), as well as angiogenesis-related genes, such as ARRB2, RHOQ, MYADM, and CFHR1 (Figure 2—figure supplement 2C). Consistent with the aforementioned findings, GSEA of the whole transcriptome also revealed negative regulation of cell apoptosis and positive regulation of angiogenesis by NO (Figure 2E, Figure 2—figure supplement 2D). In addition, Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis highlighted pathways that may contribute to enhanced antioxidant capacity, including the Jak-STAT signaling pathway and MAPK signaling pathway (Figure 2—figure supplement 2E). Together, these results demonstrated that NO might be able to ameliorate the oxidative stress of eMSCs and inhibit cell apoptosis (Figure 2F).
 
-## Enhanced renoprotection of eMSCs
+![Figure 2.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig2-v2.jpg)
+
+**Figure 2.:** (A) Gene Ontology (GO) category analysis of differentially expressed genes (DEGs) for biological processes. Only significantly enriched terms with corrected p< 0.05 are indicated. The top 20 enriched biological processes are ranked by the number of DEGs. (B) Gene set expression analysis (GSEA) revealed enrichment for the cell redox homeostasis pathway. The normalized enrichment score (NES), false discovery rate (FDR), and p value are indicated in the insert. (C, D) Heatmap of representative antioxidation (C) and proliferation/survival (D)-related genes. Fold change  > 1.5, p < 0.05. Red indicates upregulation, and blue indicates downregulation. (E) GSEA revealed enrichment for apoptosis pathways. (F) Schematic representation of the prosurvival potential of the NO-eMSC system. eMSC+MGP, eMSCs with MGP administration.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Sequence counts for each sample. Duplicate read counts are an estimate only. (C) The mean quality value across each base position in the read. (D) The number of reads with average quality scores. (E) Spearman correlation between samples.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Volcano plot illustrating differentially expressed gene (DEG) expression between eMSCs and eMSCs with MGP administration. (B) Gene set expression analysis (GSEA) revealed enrichment for the reactive oxygen species (ROS) pathway. FDR, false discovery rate; NES, normalized enrichment score. (C) Heatmap of representative angiogenesis-related genes. (D) GSEA revealed enrichment for angiogenesis pathways. (E) Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway annotation of DEGs.
+
+### Enhanced renoprotection of eMSCs
 
 To further validate whether NO could promote eMSC survival in ischemia/reperfusion (I/R)-injured kidneys, BLI analysis was performed for the real-time longitudinal monitoring of eMSC survival. A robust BLI signal of eMSCs was observed, indicating successful eMSC transplantation (Figure 3A). Although all groups gradually experienced donor cell death in the following days, eMSCs with MGP administration strikingly exhibited increased cell retention and prolonged cell survival in comparison with the eMSC group (Figure 3B). Furthermore, immunohistology also confirmed that the eMSCs with MGP administration displayed higher cell proliferation and cell retention on day 3 (Figure 3C). Moreover, we found that the eMSCs treated with MGP showed significantly lower levels of SCr and BUN (Figure 3D and E). Further kidney histology examination showed that tubular dilation, cast formation, and massive loss of brush borders at the initial stage after injury (3 days) were obviously reduced after NO-eMSC system treatment (Figure 3F to H). Kidney fibrosis analysis demonstrated that the development of interstitial fibrosis was consistent with the mRNA expression of ECM synthesis- and fibrosis pathway-related genes (Figure 4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig3-v2.jpg)
+
+**Figure 3.:** (A) The survival ratio of eMSCs and eMSCs with MGP administration after transplantation in ischemia/reperfusion (I/R)-induced acute kidney injury (AKI) model mice was tracked by bioluminescence imaging (BLI). Images are from representative animals receiving 1×106 eMSCs alone or eMSCs with MGPs. (B) Quantitative analysis of BLI signals demonstrates that eMSCs with MGP administration could prolong cell survival. Data are presented as the mean ± SD, *p<0.05, **p<0.01. (C) Representative photomicrographs display the engraftment of eMSCs and eMSCs with MGP administration (RFP, red) within kidneys on day 3. Cell nuclei were stained with DAPI (blue). Scale bar, 50 μm. (D and E) Renal function indexes, including serum creatine (D) and blood urea nitrogen (E) levels, were measured on day 3 after AKI. n=9. (F and G) Semi-quantitative histological assessment of cast formation (F) and loss of brush border (G) of H&E staining on day 3 after AKI. n=10. (H) Representative images of H&E staining on day 3 post AKI. eMSC+MGP, eMSCs with MGP administration. Scale bar, 100 μm. All data are presented as the mean ± SD, eMSC+MGP, eMSCs with MGP administration. *p<0.05 versus eMSC; #p<0.05 versus PBS.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Representative images of Kim-1 immunohistochemical staining on day 3 after acute kidney injury (AKI). Scale bar, 25 μm. n = 8. (C, D) Caspase-3 immunohistochemical staining on day 3 after AKI. Scale bar, 100 μm. n = 5. All data are presented as the mean ± SD, *p < 0.05 versus eMSC; #p < 0.05 versus PBS.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig4-v2.jpg)
 
@@ -61,23 +105,61 @@ To further validate whether NO could promote eMSC survival in ischemia/reperfusi
 
 Furthermore, the expression of KIM-1, a kidney injury marker, was significantly decreased in the proximal tubules of the kidneys in the eMSC with MGP administration group compared to the eMSC group (Figure 3—figure supplement 1A and B). Simultaneously, we found that the level of caspase-3/cleaved caspase-3 exhibited an abrupt increase in the injured kidney of the PBS group but was attenuated by eMSCs with MGP administration (Figure 3—figure supplement 1C and D), suggesting that the NO-eMSC system has protective effects on apoptosis in tubular epithelial cells. Overall, these results indicated that the NO-eMSC system could increase eMSC survival in vivo and further improve kidney function.
 
-## Evaluation of NO levels in the kidney
+### Evaluation of NO levels in the kidney
 
 To further evaluate in vivo NO release from the eMSCs, eMSCs were transplanted into the left kidney by renal parenchymal injection followed by intravenous injection of the NO prodrug MGP. The results from Griess (Figure 5A) and chemiluminescence assays (Figure 5B and C) showed that the NO level from eMSC-treated kidneys was significantly increased when the prodrug MGP was applied. We next directly measured the NO levels of eMSC-treated kidneys in vivo by an EPR technique using the spin trap ferrous N-methyl-d-glucamine dithiocarbamate complex ((MGD)2Fe2+). The EPR signal of NO was observed in all groups, while an obvious characteristic triplet EPR signal (NO signal) was observed in the eMSCs treated with MGP (Figure 5D and E), which further confirmed that eMSCs could release NO in vivo. Moreover, targeted NO delivery was evaluated by comparison of NO levels in different tissues of mice after the administration of the eMSC in the kidney. The quantitative data showed that NO production from the kidney was significantly higher than that from the heart and liver (Figure 5F to H), suggesting that eMSCs could release NO specifically in the kidney.
 
-## Extended applications of this cell-based NO delivery platform
+![Figure 5.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig5-v2.jpg)
+
+**Figure 5.:** (A) The Griess kit assay was used to measure NO levels in kidneys with MGP alone, eMSC alone, or eMSC treated with MGP. n=6. (B) Detection and quantification of NO levels in kidneys in vivo using chemiluminescence. The area of each peak represents the corresponding amount of NO. (C) Calculation of the NO concentration in each group from the standard curve. n=6. (D) NO release from eMSCs with MGP administration in kidneys was assessed by electron paramagnetic resonance (EPR). MGP and eMSC served as controls. (E) Quantitative analysis of NO production in each group. The amount of NO-Fe(DETC)2 was calibrated using TEMPO as a standard. n=6. (F) A Griess kit assay was used to measure NO levels in various tissues of renal eMSC-transplanted mice. n=3. (G) Detection and quantification of NO levels in different tissues from renal eMSC-transplanted mice in vivo using chemiluminescence. The area of each peak represents the corresponding amount of NO. (H) Calculation of the NO concentration in each group from the standard curve. n=3. eMSC+MGP, eMSCs with MGP administration. All data are presented as the mean ± SD, ***p<0.001, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) NO release from eAD-MSCs with MGP administration in kidneys was assessed by electron paramagnetic resonance (EPR). MGP and eAD-MSCs served as controls. (B) Quantitative analysis of NO production in each group. The amount of NO-Fe(DETC)2 was calibrated using TEMPO as a standard. n = 3. **p < 0.01. (C) The Griess kit assay was used to measure NO levels in eAD-MSCs treated with MGP. n=3. (D) Calculation of the NO concentration in each group from the standard curve. n = 3. **p < 0.01. (E) Renal function indexes, including serum creatine and blood urea nitrogen levels, were measured on day 3 after acute kidney injury (AKI). n = 3. *p < 0.05 versus eAD-MSC; #p < 0.05 versus PBS.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) NO release from ehUC-MSCs with MGP administration in kidneys was assessed by electron paramagnetic resonance (EPR). MGP and ehUC-MSCs served as controls. (B) Quantitative analysis of NO production in each group. The amount of NO-Fe(DETC)2 was calibrated using TEMPO as a standard. n = 3. *p < 0.05. (C) The Griess kit assay was used to measure NO levels in ehUC-MSC treated with MGP. n=3. (D) Calculation of the NO concentration in each group from the standard curve. n = 3. *p < 0.05. (E) Renal function indexes, including serum creatine and blood urea nitrogen levels, were measured on day 3 after acute kidney injury (AKI). n = 3. All data are presented as the mean ± SD, *p < 0.05 versus eAD-MSC; #p<0.05 versus PBS.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Representative images of H&E staining on day 3 post acute kidney injury (AKI). (B) Representative images of Kim-1 immunostaining on day 3 post AKI. Scale bar, 100 μm.
+
+### Extended applications of this cell-based NO delivery platform
 
 To investigate the universality of our NO delivery approach for applications in AKI, we conducted additional experiments to confirm whether other MSCs will perform equally well. Human adipose-derived MSCs (AD-MSCs) and human umbilical cord MSCs (hUC-MSCs) were genetically modified to produce mutant β-galactosidase (β-GALH363A). NO production by engineered AD-MSCs (eAD-MSCs) and engineered hUC-MSCs (ehUC-MSCs) with MGP administration in vitro was detected by the EPR technique. The characteristic triplet EPR signal was observed in eAD-MSCs and ehUC-MSCs with MGP administration (Figure 5—figure supplement 1A and B, Figure 5—figure supplement 2A and B), which was further confirmed by the Griess method (Figure 5—figure supplement 1C and D, Figure 5—figure supplement 2C and D). Next, the therapeutic effects of eAD-MSCs or ehUC-MSCs with MGP administration in AKI mice were estimated via histological analysis and renal function analysis. We found that the eAD-MSCs and ehUC-MSCs treated with MGP showed significantly lower levels of SCr and BUN (Figure 5—figure supplements 1E and 2E). Further kidney histology examination showed tubular dilation, cast formation, and massive loss of brush borders at the initial stage after injury (3 days) (Figure 5—figure supplement 3A). Furthermore, the expression of KIM-1 (kidney injury marker) was significantly decreased in the proximal tubules of the kidneys in the eAD-MSC and ehUC-MSC with MGP administration groups (Figure 5—figure supplement 3B). Thus, our MSC and NO prodrug system provides a tunable platform for NO delivery and holds promise for regenerative therapy.
 
-## Enhanced proangiogenic effects of eMSCs
+### Enhanced proangiogenic effects of eMSCs
 
 VEGFR2-Fluc transgenic mice were used to monitor renal angiogenesis in real time, which appeared as BLI signals. The schematic diagram is shown in Figure 6—figure supplement 1. According to the results of angiogenesis imaging, BLI signals were emitted in all groups, and the strongest signal was detected in the eMSCs with MGP administration group, which suggests that the NO-eMSC system could stimulate renal angiogenesis by activating the VEGF/VEGFR2 pathway (Figure 6A–C). We next verified neovascularization in damaged kidneys on day 7 post-surgery by histological examination. The CD31 immunostaining results revealed significantly enhanced CD31+ microvascular density in the group of eMSCs with MGP administration, which is consistent with the BLI results (Figure 6D). Moreover, the expression of the angiogenesis-related genes VEGFR2, bFGF, PLGF, Ang-1, and Ang-2 detected by real-time polymerase chain reaction (RT-PCR) also confirmed that the eMSCs with MGP administration facilitated renal angiogenesis by upregulating angiogenic factor expression (Figure 6—figure supplement 2). Recovery from renal I/R injury requires tubular cell proliferation to promote kidney regeneration. As shown in Figure 6E and F, the numbers of proliferating Ki-67+ tubular cells were largely stimulated in the group of eMSCs treated with MGP, suggesting that the NO-eMSC system promoted kidney regeneration by accelerating tubular cell proliferation. The promotion of renal angiogenesis contributes to the restoration and repair of damaged kidneys, which paves the way for successful kidney regeneration.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig6-v2.jpg)
+
+**Figure 6.:** (A) In vivo bioluminescence imaging (BLI) was used to monitor the spatiotemporal dynamics of VEGFR2 expression following eMSC administration in a mouse AKI model using Vegfr2-Fluc transgenic mice. (B) Quantification of BLI signals revealed that eMSCs with MGP could enhance angiogenesis in injured kidneys. The average radiance of Fluc was expressed as photons/s/cm2/sr. n=3. (C) Quantification of CD31-positive capillaries in injured kidneys on day 7 after AKI. CD31 is a marker of endothelial cells and can be used for angiogenesis evaluation. n=5. (D) Immunofluorescence staining of CD31 was performed on day 7 after AKI. Scale bar, 100 μm. LTL (green) was used to reveal proximal tubules. (E) Representative images of immunofluorescence staining of Ki67. (F) Quantification of the percentage of Ki67-positive cells in kidneys on day 3 after AKI. n=5. Scale bar, 50 μm. eMSC+MGP, eMSCs with MGP administration. All data are presented as the mean ± SD, *p<0.05 versus eMSCs; #p<0.05 versus PBS.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** mRNA levels of angiogenesis-related genes (VEGFR2, bFGF, PLGF, Ang-1, and Ang-1) in kidney tissues on day 7 after acute kidney injury (AKI). All data are presented as the mean ± SD, n=5 per group, *p < 0.05 versus eMSCs; #p < 0.05 versus PBS.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Representative images of the wound-healing migration assay in HUVECs cocultured with eMSCs and eMSCs with MGP administration. Scale bar, 200 μm. (B) Quantitative analysis of the wound-healing percentage ratio. n = 5. (C) Representative images of tube formation of HUVECs cocultured with eMSCs and eMSCs with MGP administration. Scale bar, 100 μm. (D to E) Quantitative analysis of node number (D) and branch number (E) in three random fields in each group. n = 5. (F) Cleaved caspase-3 immunostaining in HUVECs cocultured with eMSCs and eMSCs with MGP administration following exposure to 200 μM H2O2. Scale bars, 50 μm. DAPI demarcates nuclei. All data are presented as the mean ± SD, *p < 0.05 versus eMSC; #p < 0.05 versus control.
+
 Subsequently, we explored the mechanism of eMSCs with MGP administration-induced angiogenesis, and our data revealed that eMSCs boosted the migration ability of human umbilical vein endothelial cells (HUVECs) in a coculture system with Transwells, as evidenced by a scratch wound-healing assay (Figure 6—figure supplement 3A and B). Additionally, the angiogenic ability of HUVECs, as manifested by the number of nodes and branches, was visibly increased in the group of eMSCs treated with MGP, as assessed by a tube formation assay (Figure 6—figure supplement 3C, D, and E). Additionally, the protein level of cleaved caspase-3, a key apoptosis molecule, was detected by immunofluorescence staining, suggesting that eMSCs could inhibit the apoptosis of HUVECs (Figure 6—figure supplement 3F). In general, we proposed that eMSCs with MGP administration exert superior promotive effects on kidney angiogenesis after injury by enhancing the proangiogenic activities of vascular endothelial cells.
 
-## Diminished modulated inflammatory responses
+### Diminished modulated inflammatory responses
 
 We next explored the modulatory effect of eMSCs on the inflammatory response in I/R-injured kidneys, and our results showed that eMSCs with MGP administration increased the number of F4/80- and CD206-positive macrophages while decreasing the number of F4/80- and iNOS-positive macrophages, indicating that the NO-eMSC system could promote the polarization of M1 macrophages to M2 macrophages (Figure 7A and B). Meanwhile, mRNA expression profiling further confirmed this finding (Figure 7C and D). Oxidative stress-induced reactive oxygen species (ROS) are well known as the main cause of renal I/R injury, leading to subsequent augmented inflammation and extended tissue damage (Collard and Gelman, 2001). Damaged renal tubular cells were overloaded with excessive lipids caused by abnormal lipid metabolism, while elevated ROS levels can lead to irreversible oxidative damage to lipids and further result in cell damage and death. Excessive intracellular accumulation of lipids was observed in the renal tubules of the PBS group after I/R injury, while the eMSCs with MGP administration significantly decreased lipid deposition (Figure 7—figure supplement 1A and B). Meanwhile, the renal level of MDA, an index of ROS-mediated lipid peroxidation, was notably increased in the PBS group and significantly decreased in the eMSCs with MGP administration group (Figure 7—figure supplement 1C). Moreover, we examined the antioxidant capacity levels (SOD and GSH contents) in kidney tissues, and remarkable upregulation of SOD and GSH levels was observed in the group of eMSCs treated with MGP (Figure 7—figure supplement 1D and E). In conclusion, the NO-eMSC system exhibited a renoprotective effect by targeting antioxidation and macrophage polarization-mediated anti-inflammation.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig7-v2.jpg)
+
+**Figure 7.:** (A) Immunofluorescence images by costaining for the M1 macrophage marker iNOS (green) and pan-macrophage marker F4/80 (red) in injured kidneys on day 3 after acute kidney injury (AKI). M1 macrophages are indicated by white arrows. Scale bar, 50 μm. (B) Immunofluorescence images by costaining for the M2 macrophage marker CD206 (green) and pan-macrophage marker F4/80 (red) in injured kidneys on day 3 after AKI. M2 macrophages are indicated by white arrows. Scale bar, 50 μm. (C) Real-time polymerase chain reaction (RT-PCR) analysis of M1 macrophage-related gene (iNOS and IL-1β) expression in kidney tissues on day 3 after AKI. n=5. (D) RT-PCR analysis of M2 macrophage-related gene (IL-4 and Arg-1) expression in kidney tissues on day 3 after AKI. n=5. eMSC+MGP, eMSCs with MGP administration. All data are presented as the mean ± SD, *p<0.05 versus eMSCs; #p<0.05 versus PBS.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/84820/elife-84820-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representative images of Oil red O staining in proximal tubules at 3 days after acute kidney injury (AKI). Scale bars, 50 μm. (B) Quantification of the Oil Red O-positive area. (C, D, E) Renal MDA (C), SOD (D) contents, and GSH/GSSG ratio (E) 3 days after AKI. All data are presented as the mean ± SD, n=5, *p < 0.05 versus eMSCs; #p < 0.05 versus PBS.
 
 ## Discussion
 
@@ -95,86 +177,86 @@ In conclusion, we have developed a genetic eMSC-based NO delivery, NO-eMSC syste
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
-## HUVEC culture
+#### HUVEC culture
 
 Primary HUVECs were purchased from the American Type Culture Collection (ATCC, Manassas, VA, USA) and grown in EGM2 medium (Lonza, Walkersville, MD, USA). Cells from passages 4–7 were used for the experiments in this study.
 
-## HK-2 culture
+#### HK-2 culture
 
 A human proximal tubule epithelial cell line (HK-2) was purchased from ATCC and cultured in DMEM/F12 medium (Gibco) supplemented with 10% FBS, penicillin (100 U/mL), and streptomycin (100 μg/mL).
 
-## HEK-293T culture
+#### HEK-293T culture
 
 Human embryonic kidney 293T cells (HEK 293T) were obtained from ATCC and maintained in high-glucose DMEM with 10% FBS penicillin (100 U/mL) and streptomycin (100 μg/mL).
 
-## MSC culture
+#### MSC culture
 
 Human placenta-derived MSCs, human AD-MSCs, and hUC-MSCs were purchased from AmCellGene (Tianjin, China). All MSCs were cultured in Dulbecco’s modified Eagle’s medium/F-12 (DMEM/F12) nutrient mixture (Gibco) supplemented with fetal bovine serum (10%, Gibco) and 100 units/mL penicillin-streptomycin (100×, Gibco) as previously described (Liang et al., 2017). The MSCs were transduced with lentiviral vectors carrying β-GALH363A (Hou et al., 2019), Rluc, and RFP. Stable cells were isolated using FACS for RFP expression. The Rluc activity of eMSCs was confirmed in vivo and in vitro using the IVIS Lumina II system (Xenogen Corporation, Hopkinton, MA, USA). The cell surface marker expression of eMSCs was tested using a FACSCalibur flow cytometer (BD Biosciences).
 
-## Construction of plasmids and eMSCs
+### Construction of plasmids and eMSCs
 
 The coding sequence of mutant β-galactosidase (β-GALH363A) can be obtained from a previous report (Hou et al., 2019). To achieve localization of the transplanted MSCs, we cloned the coding sequence of double-fusion reporter genes (Rluc-RFP, Rluc, and red fluorescent protein) from a previously reported pcDNA3.1-RFP-Rluc-HSV-ttk plasmid (Cao et al., 2007; Leng et al., 2014). Subsequently, the sequences encoding β-GALH363A and Rluc-RFP were inserted into the lentiviral backbone plasmid, which was carried out by Miaolingbio Company (Wuhan, China). The lentiviral vector was cotransfected with the second-generation lentivirus packing vectors psPAX2 and pVSVG into 293T cells by Lipofectamine 2000 (Invitrogen, Grand Island, NY, USA) to produce lentivirus. The infection efficiency was evaluated by RFP expression, as directly observed under an inverted fluorescence microscope (Olympus, Japan), and further confirmed by β-GALH363A expression (C-His-tagged recombinant protein), as evidenced by immunofluorescence.
 
-## Synthesis route of the NO prodrug MGP
+### Synthesis route of the NO prodrug MGP
 
 All chemicals and reagents were purchased from Sigma-Aldrich (China-mainland) and Energy Chemical (China-mainland) and used directly without further purification. All solvents were distilled before use, including DCM (CaH2) and acetone (4 Å MS). Dry DMF, CH3CN, and CH3OH were purchased from Innochem (Beijing, China). 1H NMR and 13C NMR spectra were recorded on a Bruker Avance-400 FT nuclear magnetic resonance spectrometer. Chemical shifts were reported relative to the reference chemical shift of the NMR solvent. The synthesis route of MGP from compound 1 to compound 6 (MGP) is described in Figure 1—source data 1.
 
-## Western blotting analysis
+### Western blotting analysis
 
 MSCs were collected and homogenized in RIPA lysis buffer containing protease inhibitors (Solarbio, Shanghai, China), and a BCA Protein Assay Kit (Thermo Scientific) was used to quantify the total protein. The total proteins were diluted in 4× SDS-PAGE loading buffer, boiled for 10 min, electrophoresed on 10% polyacrylamide gels, and blotted on 0.2 μm polyvinylidene fluoride membranes (Millipore, Darmstadt, Germany). After blocking with 5% nonfat milk for 2 hr at room temperature, the blots were incubated with primary antibodies overnight at 4°C followed by secondary antibodies at room temperature for 2 hr. An anti-6×His tag (β-GALH363A) antibody was used. Signals were generated by using enhanced chemiluminescence reagent (Millipore, USA) and were captured by using a Tanon-5200 Chemiluminescence Imaging System (Tanon Science & Technology Co Ltd., Shanghai, China). Quantification was performed using ImageJ software. Antibodies are listed in Supplementary file 1.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 For eMSC apoptosis analysis, 1×104 eMSCs were cultured on 12-well plates and then treated with 200 μM hydrogen peroxide (H2O2) for 12 hr. Cells were collected and then costained with annexin V-fluorescein isothiocyanate (Annexin V)-FITC (CA1020, Solarbio) and 7-aminoactinomycin D (7-AAD) (ST515, Beyotime) for 30 min, and cell apoptosis rates were measured using a FACSCalibur flow cytometer (BD Biosciences) and analyzed using FlowJo software (Tree Star).
 
-## Bulk RNA-seq
+### Bulk RNA-seq
 
 RNA-seq was performed by LC Bio Tech (Hanzghou, China). Briefly, eMSCs treated with MGP (2 μg/mL) or PBS cultured for 24 hr were collected. Total RNA of eMSCs and eMSCs with MGP administration was extracted using TRIzol reagent (Invitrogen). The integrity of the RNA was demonstrated with a Bioanalyzer 2100 (Agilent, CA, USA), RIN >7.0, and confirmed by denaturing agarose gel electrophoresis. Total RNA was sent for RNA-seq library construction and high-throughput sequencing on an Illumina Novaseq 6000 with 2×150 bp paired-end sequencing (PE150). After removing low-quality and undetermined bases using Cutadapt software, we mapped the reads to the genome using HISAT2 software. DEGs among the different samples were defined by the DESeq2 package as criteria of fold change (FC)≥1.5 or FC ≤0.67 and p-value ≤0.05. Functional enrichment analyses of GO and KEGG were based on the Gene Ontology Database (http://www.geneontology.org/) and KEGG pathway database (http://www.genome.jp/kegg/), respectively. GSEA/MSigDB databases were used for GSEA (Broad Institute, http://www.broadinstitute.org/gsea/msigdb/index.jsp).
 
-## NO release detection in eMSCs
+### NO release detection in eMSCs
 
 For in situ visualizations of intracellular NO, a specific membrane-permeable NO molecular probe, DAF-FM diacetate, was used, which was loaded into cells and produced DAF-FM by intracellular esterase (Hou et al., 2019). Cultured eMSCs were incubated with 5 μM DAF-FM diacetate at 37°C for 20 min followed by extensive washing and then incubated with 5 μg/mL NO prodrug at 37°C for 6 hr, according to the manufacturer’s instructions (S0019; Beyotime).
 
-## Assessment of NO release in vivo by chemiluminescence
+### Assessment of NO release in vivo by chemiluminescence
 
 Chemiluminescence methods were adopted to measure NO release from tissues by using a nitric oxide analyzer (NOA 280i, Zysense, USA). On day 7 after injury, the mice were sacrificed, and the samples were harvested. Then, the tissues were homogenized, and the supernatant was collected for NO detection. The samples were immersed in 5 mL of vanadium (III) chloride (50 mM), and the generated NO gas was diffused in the test solution and transported to the NO analyzer by a stream of N2. The generated NO was calculated using NaNO3 as a standard.
 
-## Mice and animal model
+### Mice and animal model
 
 C57BL/6 albino mice (10 weeks of age, female and male) were purchased from Charles River Laboratories (Charles River). The I/R injury-induced AKI model was established as previously described (Zhang et al., 2020b). Briefly, mice were anesthetized by intraperitoneal injection of 2.5% avertin (240 mg/kg, Sigma-Aldrich, Oakville, ON, Canada). A longitudinal incision was made on the back of the mouse above the left kidney to expose the kidney. Clamping the left renal artery and vein with an arterial clamp for 45 min resulted in ischemic blackening of the kidney and visually verified reperfusion before closing the incision. To avoid the compensatory effect of the contralateral kidney, the right kidney was dissected. After reperfusion, 1×106 cells (30 μL) of eMSCs were transplanted into the left kidney through renal parenchymal injection. Subsequently, 200 μL of 1 mg/mL NO prodrug, MGP, was administered via tail vein injection every other day until the end of the experiment. To monitor angiogenesis in real time in vivo, C57BL/6 albino and outbred (Nu/Nu) background Vegfr2-luciferase transgenic mice (10 weeks of age, female) were used to establish an AKI model induced by I/R injury (Zhang et al., 2023; Huang et al., 2022). The treatment of animals and the experimental procedures of the present study adhered to the Nankai University Animal Care and Use Committee Guidelines that conform to the Guidelines for Animal Care approved by the National Institutes of Health (NIH).
 
-## NO release in the supernatant of cell culture
+### NO release in the supernatant of cell culture
 
 NO production in culture media and tissues was measured using the Nitric Oxide Assay Kit (S0021; Beyotime) based on the Griess reaction according to the manufacturer’s instructions. For in vitro NO release, 5×103 eMSCs were seeded in 24-well plates and then incubated with different concentrations (0, 2, 10 μg/mL, 1 mL/well) of the NO-prodrug MGP. At each predetermined time interval, 50 μL of the culture media was transferred to a 96-well plate, and 50 μL of Griess I and 50 μL of Griess II were added in sequence. Finally, a microplate reader (Promega) was used to measure the optical density values of the samples at 540 nm.
 
-## Measurement of NO release in vitro by the EPR technique
+### Measurement of NO release in vitro by the EPR technique
 
 Intracellular NO production was detected by EPR. In brief, sodium DETC (9 mg) and FeSO4•7H2O (5.6 mg) were dissolved in 20 mL of deoxygenated Krebs/HEPES solution. Equal volumes of FeSO4•7H2O solutions were rapidly added into sodium DETC to form a 0.5 mM Fe•(DETC)2 colloid solution. eMSCs were rinsed with modified Krebs/HEPES buffer and incubated with freshly prepared NO•-specific spin trap Fe•(DETC)2 colloid (0.5 mM). Meanwhile, 10 μg/mL NO prodrug MGP was added to the buffer for 1 hr. Gently collected cell suspensions were snap-frozen in liquid nitrogen. Then, the cells were ultrasonically broken and extracted by ethyl acetate (50 μL), and the EPR was measured at room temperature. The following acquisition parameters were used: modulation frequency, 100 kHz; microwave power, 10 mW; modulation amplitude, 2 G; and number of scans, 15. The double-integrated area of the EPR spectra was calibrated into concentrations of DETC2-Fe-NO using TEMPO as a standard.
 
-## Measurement of NO release in vivo by the EPR technique
+### Measurement of NO release in vivo by the EPR technique
 
 The NO production of tissues in vivo was measured by EPR spectroscopy as previously described (Zhang et al., 2020a). C57BL/6 albino mice (20–25 g) were anesthetized using 1×106 cells (30 μL) of eMSCs transplanted into the left kidney through renal parenchymal injection. Then, DETC sodium salt (500 mg/kg, Sigma-Aldrich) dissolved in water (250 mM) was injected subcutaneously. After 5 min, ammonium ferrous sulfate (50 mM) dissolved in citrate solution (250 mM) was administered by subcutaneous injection (2 mL/kg). Subsequently, 200 μL of 1 mg/mL MGP was administered via tail vein injection and allowed to circulate for 1 hr. Tissues were harvested and quickly frozen in liquid nitrogen. After that, the samples were crumbled into small pieces and extracted with 200 μL of ethyl acetate immediately. X-band EPR was used to measure the ethyl acetate extract in 50 μL capillary tubes at room temperature. The instrument settings were as follows: modulation frequency, 100 kHz; microwave power, 10 mW; modulation amplitude, 2 G; the number of scans, 30. The double-integrated area of the EPR spectrum was calibrated into concentrations of NO-Fe2+(DETC)2 using TEMPO as a standard.
 
-## In vitro proangiogenic assay
+### In vitro proangiogenic assay
 
 To analyze the proangiogenic effect of eMSCs in vitro, a scratch wound-healing assay was performed to evaluate the migration capacity of HUVECs using a coculture system. HUVECs were seeded in a six-well plate cocultured with eMSCs or eMSCs with MGP administration on a 24 mm Transwell (3412, Corning). When HUVECs reached confluence, scratch wounds were generated using the tip of a 10 μL micropipette. Images of five microscopic fields per well were taken at 0 hr and 12 hr, and the percentage of wound healing was quantitated using ImageJ software.
 
 For the tube formation assay, 150 μL/well growth factor-reduced cold Matrigel (Corning, Corning, NY, USA) was coated onto 48-well plates and then incubated at 37°C for 30 min for gelatinization. Then, 3×104 HUVECs were seeded per well and cocultured with eMSCs or eMSCs with MGP administration in a 6.5 mm Transwell (3413, Corning). After incubation for 12 hr, the number of branches and nodes was measured in three randomly selected microscopic fields using ImageJ software as described before.
 
-## Gene expression analysis
+### Gene expression analysis
 
 Total RNA was isolated from kidney tissues or cells using TRIzol reagent (Invitrogen) according to the manufacturer’s instructions and spectrophotometrically quantified using a NanoDrop One (Thermo, USA), and RNA integrity was tested by 1% agarose gel electrophoresis. For RNA reverse transcription into complementary DNA (cDNA), 1.0 μg of total RNA was treated with the BioScript All-in-One cDNA Synthesis SuperMix kit (Bimake, Houston, TX, USA). RT-quantitative polymerase chain reaction (qPCR) analysis was performed using a CFX96TM Real-Time System (Bio-Rad, Hercules, CA, USA) in a 20 μL reaction volume containing qPCR SYBR green master mix (Yeasen, Shanghai, China). The 2-ΔΔCt method was used to determine the relative mRNA folding changes. Primers are listed in Supplementary files 2 and 3.
 
-## Immunostaining analysis
+### Immunostaining analysis
 
 For immunofluorescence staining, 8 μm cryosections were returned to room temperature for 30 min and then washed three times in PBS. Next, the cells were incubated with 5% BSA containing 0.1% Triton X-100 at room temperature for 1 hr and then incubated with a series of primary antibodies overnight at 4°C. The following secondary antibodies were used: Alexa Fluor 488-, Alexa Fluor 594-, Alexa Fluor 555-, and Alexa Fluor 647-labeled goat anti-rabbit, goat anti-mouse, or goat anti-rat (1:400; Invitrogen). FITC-labeled Lotus tetragonolobus lectin (LTL, 1:400, Vector Laboratories, Burlingame, CA, USA) was used to stain proximal tubules. DAPI was used for nuclear counterstaining. For quantification, the positive immunostaining area or positively stained cells were measured by ImageJ software. For immunohistochemistry staining of kidney tissues, after dewaxing and rehydration, paraffin sections were incubated with primary antibodies overnight at 4°C. Horseradish peroxidase-conjugated secondary antibody was used (1:200, SP-9000, ZSGB-BIO, Beijing, China), and a DAB staining kit was used to develop colors (ZLI-9017, ZSGB-BIO). The integrated optical density values of positive staining were measured using Image-pro plus 6.0 software. Antibodies are listed in Supplementary file 1.
 
-## Renal oxidative stress-related index
+### Renal oxidative stress-related index
 
 Kidney samples (100 mg) were collected and homogenized in 900 μL of cold PBS with a tissue homogenizer to prepare a 10% tissue homogenate. Then, the activities of the oxidative stress-related factors MDA, SOD, and GSH/GSSG were detected with a lipid peroxidation MDA Assay Kit (A003-1-2, Nanjing Jiancheng Bioengineering Institute), SOD Assay Kit (A001-3-2, Nanjing Jiancheng Bioengineering Institute), and GSH and GSSG Assay Kit (S0053, Beyotime).
 
-## Statistical analysis
+### Statistical analysis
 
 To check for significant differences, one-way analysis of variance (ANOVA) was used followed by Tukey’s HSD test when needed to compare three or more experimental groups of data, and Student’s t-test was used to compare two groups of data. All data were analyzed using SPSS Statistics, version 25.0 (IBM SPSS Inc, Chicago, IL, USA). All quantification data are presented as the mean ± SD of at least three independent replicates.

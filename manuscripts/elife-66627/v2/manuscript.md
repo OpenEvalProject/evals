@@ -14,12 +14,12 @@
 
 ### Affiliations
 
-1. https://ror.org/038t36y30 Centre for Organismal Studies, Heidelberg University Heidelberg Germany
-2. https://ror.org/05290cv24 Department of Agricultural Sciences, Università degli Studi di Napoli Federico II Napoli Italy
-3. https://ror.org/04khwmr87 Gregor Mendel Institute, Vienna Biocenter Vienna Austria
-4. https://ror.org/027bh9e22 Mathematical Institute, Leiden University Leiden Netherlands
-5. https://ror.org/027bh9e22 Institute of Biology, Leiden University Leiden Netherlands
-6. https://ror.org/04rcqnp59 BioQuant, Heidelberg University Heidelberg Germany
+1. Centre for Organismal Studies, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+2. Department of Agricultural Sciences, Università degli Studi di Napoli Federico II Napoli Italy ([ROR:05290cv24](https://ror.org/05290cv24))
+3. Gregor Mendel Institute, Vienna Biocenter Vienna Austria ([ROR:04khwmr87](https://ror.org/04khwmr87))
+4. Mathematical Institute, Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))
+5. Institute of Biology, Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))
+6. BioQuant, Heidelberg University Heidelberg Germany ([ROR:04rcqnp59](https://ror.org/04rcqnp59))
 
 † Corresponding author
 
@@ -41,7 +41,7 @@ As the role of multiple communication cascades between different cambium-related
 
 ## Results
 
-## Establishing a dynamic cambium model
+### Establishing a dynamic cambium model
 
 Taking advantage of the almost exclusive radial expansion of mature plant growth axes, we sought to create a minimal framework recapitulating the 2D dynamics of radial plant growth. To do so, we first produced a simplified stereotypic 2D representation of a plant growth axis displaying a secondary anatomy by employing VirtualLeaf – a framework specially designed for agent-based modeling of plant tissue growth (Merks et al., 2011; Antonovici et al., 2022). To avoid confusion, we refer to factors within the model by an asterisk: for example, GENE– refers to the plant gene, whereas GENE* refers to its model counterpart. Within the model we defined three cell types: cells designated as cambium*, cells present in the center referred to as xylem*, and cells present distally to the cambium* designated as phloem* (Figure 1A). These cell* types were organized in concentric domains as observed after the establishment of a secondary organ anatomy (Smetana et al., 2019). To reduce the risk of losing cambium cells* during our simulations and allow differential cambium cell* behavior right from the start, we defined a rather large starting pool of cambium cells*. We then defined rules determining cell* behavior: (i) all cells* grew until they reached a size specific for each cell* type, (ii) cambium cells* divided when they exceeded a certain size, and (iii) cambium cells* changed their identity into xylem* or phloem* depending on the conditions described below (see also supporting information, Supplementary file 1). All chemical-like factors* implemented in the model had manually chosen cell* type-specific production and degradation rates.
 
@@ -49,39 +49,153 @@ Taking advantage of the almost exclusive radial expansion of mature plant growth
 
 **Figure 1.:** (A) Tissue template used to run VirtualLeaf simulations. Phloem* is depicted in purple, xylem* in red. Cambium cells* are colored according to their levels of PXY* and PXY-active*. Cambium* is colored in blue due to the initial level of PXY*. Color legend on the right applies to (A) and (C). (B) Schematic representation of the biochemical model. Reactions that occur in all cell types* are drawn in black. Reactions only occurring in the phloem* are depicted in purple, reactions specific to the cambium* are in blue. Crossed circles represent production or degradation of molecules. (C) Output of simulation using Model 1. (D) Visualization of cell division rates* within the output shown in (C).Dividing cells* are marked by red color fading over time. (E) Visualization of CLE41* levels within the output shown in (C).(F) Sorting cells* within the output shown in (C)into bins based on how far their centers are from the center of the hypocotyl*. Different colors represent different bins. (G) Visualization of the relative chemical levels and division rates in different bins shown in (F)averaged over n = 10 simulations of Model 1. Each chemical’s bin concentration is first expressed as a percentage of the maximum bin value of the chemical and then averaged over all simulations. The colored area indicates the range between minimum and maximum value of the relative chemical concentration. Bin colors along the x-axis correspond to the colors of bins in (F).The shading represents the range between minimal and maximal values during simulations.
 
-To implement context-dependent regulation of cambial cell division and differentiation, we took advantage of the PXY/CLE41 signaling module (Hirakawa et al., 2008; Hirakawa et al., 2010): Phloem cells* produced a factor designated as CLE41* able to diffuse between cells*, whereas the corresponding, non-diffusing receptor designated as PXY* is produced in cambium cells* (Figure 1B). Recapitulating the CLE41-dependent function of PXY, we considered the following reaction:(1)CLE41+PXY→PXYactive
+To implement context-dependent regulation of cambial cell division and differentiation, we took advantage of the PXY/CLE41 signaling module (Hirakawa et al., 2008; Hirakawa et al., 2010): Phloem cells* produced a factor designated as CLE41* able to diffuse between cells*, whereas the corresponding, non-diffusing receptor designated as PXY* is produced in cambium cells* (Figure 1B). Recapitulating the CLE41-dependent function of PXY, we considered the following reaction:
 
-Thereby, the presence of both CLE41* and PXY* in a cell turned PXY* into PXYactive* (Figure 1B). For cambium cells*, we described the PXY*-CLE41* interaction by the following equations:(2)ddt[PXYactive∗]=[PXY∗]⋅[CLE41∗]−degradationPXYactive⋅[PXYactive∗](3)ddt[PXY∗]=productionPXY(1+suppressrate⋅[PXYactive∗])−[PXY∗]⋅[CLE41∗]−degradationPXY⋅[PXY∗](4)ddt[CLE41∗]=diffusionCLE41−[PXY∗]⋅[CLE41∗]−degradationCLE41⋅[CLE41∗]
+$$
+CLE41^{}+PXY^{}→PXY_{active}^{}
+$$
+
+Thereby, the presence of both CLE41* and PXY* in a cell turned PXY* into PXYactive* (Figure 1B). For cambium cells*, we described the PXY*-CLE41* interaction by the following equations:
+
+$$
+\frac{d}{dt}[PXY_{active}^{∗}]=[PXY^{∗}]⋅[CLE41^{∗}]−degradation_{PXY_{active}^{}}⋅[PXY_{active}^{∗}]
+$$
+
+
+
+$$
+\frac{d}{dt}[PXY^{∗}]=\frac{production_{PXY}}{(1+suppressrate⋅[PXY_{active}^{∗}])}−[PXY^{∗}]⋅[CLE41^{∗}]−degradation_{PXY}⋅[PXY^{∗}]
+$$
+
+
+
+$$
+\frac{d}{dt}[CLE41^{∗}]=diffusion_{CLE41}−[PXY^{∗}]⋅[CLE41^{∗}]−degradation_{CLE41}⋅[CLE41^{∗}]
+$$
 
 In these equations, [X*] denotes the concentration of the respective factor in each cell*. Since PXY-CLE41 signaling was reported to negatively regulate PXY expression (Etchells and Turner, 2010), we assumed that the production rate of PXY* is inhibited by [PXYactive*]. Therefore, the higher [PXYactive*] in a given cell*, the less PXY* was produced (Equation 3). To integrate PXY/CLE41-dependent regulation of cell proliferation, we let cambium cells* divide only when [PXYactive*] exceeded a certain threshold. Thereby, the proliferation of cambium cells* was dependent on both, locally produced PXY* and CLE41* originating from the phloem*. To instruct the differentiation of cambium cells*, we took advantage of the observation that the PXY/CLE41 module represses xylem differentiation (Hirakawa et al., 2008; Kondo et al., 2014). Consequently, we instructed cambium cells* to change their identity into xylem* as soon as they reached a certain size and [PXYactive*] became lower than a threshold value (Supplementary file 1).
 
 In the resulting Model 1, the growing structure maintained a circular pool of dividing cambium cells* with a high concentration of PXYactive* while producing xylem cells* toward the center of the organ (Figure 1C, Videos 1–4). As expected, when cambium cells* were displaced to the proximal side of the cambium*, they stopped dividing likely due to low [PXYactive*] (Figure 1C and D, Video 3, Video 4, Video 5) allowing them to reach a size sufficient for xylem* differentiation. Cell* division rates were highest close to CLE41* producing phloem cells* (Figure 1D–G, Video 2, Video 3). Moreover, as PXYactive* negatively affected the production of PXY*, [PXY*] was particularly low in the distal cambium* region (Figure 1C, F and G. Video 1, Video 5). This pattern was reminiscent of the exclusive activity of the PXY promoter in the proximal cambium area observed previously (Shi et al., 2019; Gursanscky et al., 2016). Thus, although phloem was not produced, with maintaining a circular domain of cambium cells* and cell* proliferation and with promoting xylem* production, Model 1 was able to recapitulate several core features of the active cambium.
 
-## The combination of PXY and SMXL5 promoter reporters reveals cambium anatomy
+![Video 1.](https://cdn.elifesciences.org/articles/66627/elife-66627-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/66627/elife-66627-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/66627/elife-66627-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/66627/elife-66627-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/66627/elife-66627-video5.mp4.jpg)
+
+### The combination of PXY and SMXL5 promoter reporters reveals cambium anatomy
 
 To identify rules for phloem formation, we took advantage of findings obtained using the PXYpro:CYAN FLUORESCENT PROTEIN (PXYpro:CFP) and SUPPRESSOR OF MAX2-LIKE 5pro:YELLOW FLUORESCENT PROTEIN (SMXL5pro:YFP) markers, recently established read-outs for cambium anatomy (Shi et al., 2019). PXYpro:CFP and SMXL5pro:YFP markers label the proximal and distal cambium domain (Figure 2A, Figure 2—figure supplement 1), respectively, and are therefore indicative of a bipartite cambium organization. PXYpro:CFP activity indicates the proximal xylem formation zone whereas SMXL5pro:YFP activity indicates the distal phloem formation zone. A narrow central zone in which both markers are active hold cambium stem cells that feed both tissues and also show a high rate of cell divisions in comparison to xylem and phloem progenitors (Shi et al., 2019).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cross-section of a wild-type hypocotyl expressing PXYpro:CFP (blue) and SMXL5pro:YFP (green). Cell walls are stained by Direct Red 23, mainly visualizing xylem (red). Only a sector of the hypocotyl is shown with the center on the left. Scale bar: 100µm. Ten samples were analysed in total with similar results. An image version for color-blind readers is provided in Figure 2—figure supplement 1. (B) Visualization of cell division rates* within the output shown in (C, E).Dividing cells* are marked by red color fading over time. (C) Sorting cells* within the output shown in (B, E)into bins. (D) Visualization of the average relative chemical levels* and division rates* in different bins of repeated simulations of Model 2A (n = 10). Bin label colors along the x-axis correspond to the colors of bins shown in (C).The shading represents the range between minimal and maximal values during simulations. (E) Output of simulation using Model 2A. Unlike Model 1 (Figure 1C), Model 2A produces new phloem cells*.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A hypocotyl cross-section from a wild-type plant not carrying any transgene, which was stained and imaged in the same way as, for example, the section shown in Figure 2A. The signal detected in the outermost cell layer applying the microscope settings used for detecting PXYpro:CFP activity (in blue) originates from autofluorescence possibly due to suberin deposition in that cell layer. Scale bar: 100 μm. (B–D) Images shown in Figure 2A and Figure 3A–E, respectively, in which the red color was replaced by magenta. Size bars: see respective main figures.
 
 To computationally recapitulate the observed maximum of cell division rates in the central cambium domain, we sought to inhibit cell* divisions in the distal layers of the cambium*. Such an effect is, for instance, mediated by the receptor-like kinase MOL1, which, similarly to SMXL5, is expressed distally to PXY expressing cells and suppresses cambial cell divisions (Gursanscky et al., 2016). Because cells* in the distal cambium* region were characterized by high levels of PXYactive* (Figure 1C and G, Video 4), we used PXYactive* to locally inhibit cell* division and, at the same time, to instruct phloem* formation. Therefore, we modified the rule for cell* differentiation such that, when a cambium cell* reached a specific size, it differentiated into xylem* if [PXYactive*] became lower than a threshold value and into phloem* if [PXYactive*] was greater than the same threshold and the cell was larger (Supplementary file 1). Thereby, our model followed a classical ‘French flag’ principle of development according to which concentration gradients of diffusible morphogens pattern surrounding tissues (Wolpert, 1969). It is worth noting that the combined effect of CLE41* on cell* proliferation, on phloem* specification, and on [PXY*] may also be achieved by distinct phloem-derived factors mediating these effects individually.
 
 The computational implementation of these rules (Model 2A) resulted in a descending gradient of cell* division rates in the distal cambium* domain likely due to high levels of PXYactive* (Figure 2B–E, Video 6, Video 7, Video 8). The cell* division rate was highest in the central cambium* domain defined by high [PXY*] and by moderate [PXYactive*] (Figure 2B–D, Video 8, Video 9, Video 10, Video 11). Also, not only xylem* but also phloem* was continuously produced and the fate of cambium cells* was dependent on their position relative to the differentiated tissues*. In the central cambium* domain, cells* proliferated and constantly replenished the stem cell pool (Figure 2B, Video 6, Video 7, Video 8). Thus, by incorporating relatively simple rules, Model 2A comprised major cambium features, including phloem formation. Moreover, in qualitative terms, the resulting anatomy* reproduced the anatomy of a mature Arabidopsis hypocotyl (Figure 2A and E). It is interesting to note, however, while the cambium domain stays almost perfectly circular in plants, the cambium* in our simulations displayed a clear front instability, suggesting that a stabilizing mechanism exists that we missed in our model.
 
-## Cambium model explains the effect of ectopic CLE41 expression
+![Video 6.](https://cdn.elifesciences.org/articles/66627/elife-66627-video6.mp4.jpg)
+
+![Video 7.](https://cdn.elifesciences.org/articles/66627/elife-66627-video7.mp4.jpg)
+
+![Video 8.](https://cdn.elifesciences.org/articles/66627/elife-66627-video8.mp4.jpg)
+
+![Video 9.](https://cdn.elifesciences.org/articles/66627/elife-66627-video9.mp4.jpg)
+
+![Video 10.](https://cdn.elifesciences.org/articles/66627/elife-66627-video10.mp4.jpg)
+
+![Video 11.](https://cdn.elifesciences.org/articles/66627/elife-66627-video11.mp4.jpg)
+
+### Cambium model explains the effect of ectopic CLE41 expression
 
 To evaluate the predictive power of Model 2, we tested its capacity to simulate the effects of genetic perturbation of cambium regulation. Ectopic expression of CLE41 by employing the IRREGULAR XYLEM 3/CELLULOSE SYNTHASE CATALYTIC SUBUNIT 7 (IRX3/CESA7) promoter, which is active in cells undergoing secondary cell wall deposition (Mitsuda et al., 2007; Taylor et al., 2003; Smith et al., 2013), substantially alters hypocotyl anatomy (Etchells and Turner, 2010). This effect was confirmed when PXYpro:CFP/SMXL5pro:YFP activities were analyzed in a plant line carrying also an IRX3pro:CLE41 transgene (Figure 3A, Figure 2—figure supplement 1, Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4). The PXYpro:CFP activity domain had a cylindrical shape including the proximal cambium domain and the xylem tissue itself in plants with a wild-type background (Figure 2A, Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4). While in the presence of the IRX3pro:CLE41 transgene, PXYpro:CFP activity was found in irregularly shaped patches containing differentiated xylem vessel elements distributed over the whole cross-section (Figure 3A, Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4). Moreover, we observed regions without PXYpro:CFP activity in proximal hypocotyl regions where SMXL5pro:YFP was active (Figure 3A, Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4). Besides, a substantial part of SMXL5pro:YFP activity was detected in the distal regions of the hypocotyl forming islands of irregular shape sometimes intermingled with PXYpro:CFP activity (Figure 3A, Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4). This activity pattern was in contrast to the one found in plants without the IRX3pro:CLE41 transgene where SMXL5pro:YFP reporter activity surrounded the PXYpro:CFP expression domain only from the distal side (Figure 2A, Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4). These results indicated that not only the radial symmetry of the hypocotyl (Etchells and Turner, 2010) but also cambium organization depends on the site of CLE41 production.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cross-section of a hypocotyl carrying PXYpro:CFP (blue), SMXL5pro:YFP (green) markers, and the IRX3pro:CLE41 transgene. Cell walls are stained by Direct Red 23 visualizing mostly xylem (red). Arrowheads point to proximal hypocotyl regions where SMXL5pro:YFP activity is found. Arrows indicate distal regions with SMXL5pro:YFP activity. Cell walls are stained by Direct Red 23 visualizing mostly xylem (red). Only a quarter of the hypocotyl is shown with the center in the upper-left corner. Scale bar: 100µm. Ten samples were analysed in total with similar results. An image version for color-blind readers is provided in Figure 2—figure supplement 1. (B) First frames of Model 2B simulations. Due to the expression of CLE41* by xylem cells*, high levels of PXY-active* are generated around xylem cells* already at this early stage. Legend in (B) indicates color code in (B, C, D, F). (C) Intermediate frames of Model 2B simulations. Newly formed xylem cells* express CLE41* and produce high levels of PXY-active* next to them (white arrowheads). (D) The final result of Model 2B simulations. Zones of PXY* (blue) and PXY-active* (green) are intermixed, xylem cells* are scattered, and phloem cells* are present in proximal areas of the hypocotyl*. (E) Cross-section of a pxy mutant hypocotyl carrying PXYpro:CFP (blue) and SMXL5pro:YFP (green) markers, stained by Direct Red 23 (red). The xylem shows a ray-like structure. Only a quarter of the hypocotyl is shown with the center in the upper-left corner. Ten samples were analysed in total with similar results. Scale bar: 100µm. An image version for color-blind readers is provided in Figure 2—figure supplement 1. (F) Final result of Model 2D simulations. Reducing PXY* levels leads to similar results as produced by Model 1 (Figure 1C) where only xylem* is produced. (G, H) Comparison of histological cross-sections of a wild-type (G)and a pxy (H)mutant hypocotyl, including cell-type classification produced by ilastik. The ilastik classifier module was trained to identify xylem vessels (red), fibers (green), and parenchyma (purple), unclassified objects are shown in yellow. Size bar in G: 100 µm. Same magnification in G and H. (I) Comparison of the number of xylem vessels, fibers, and parenchyma cells found in wild-type (blue) and pxy mutants (purple). Welch’s t-test was performed comparing wild-type and pxy mutants for the different cell types (n = 11–12). ***p<0.0001, *p<0.05. Lines indicate means with a 95% confidence interval. 11 (wild type) and 13 (pxy) samples were analysed.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) PXYpro:CFP (blue) and SMXL5pro:YFP (green) activities at different stages of wild-type hypocotyl development from young (A)to old (D).(E–H) PXYpro:CFP (blue) and SMXL5pro:YFP (green) activities at different stages of hypocotyl development in IRX3pro:CLE41 plants from young (A)to old (D).(I–L) PXYpro:CFP (blue) and SMXL5pro:YFP (green) activities at different stages of hypocotyl development in pxy mutants from young (A)to old (D).Sections are stained by Direct Red 23 (red). Scale bars: 100µm. Note that pictures (D, H, L) are also depicted in Figure 2 and Figure 3. A version of this figure for color-blind readers is provided in Figure 3—figure supplement 3. Five (A-CT, E-G, I-K) or ten (D, H, L) samples were analysed in total with similar results.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) PXYpro:CFP (blue) and SMXL5pro:YFP (green) activities at different stages of wild-type hypocotyl development from young (A)to old (D).(E–H) PXYpro:CFP (blue) and SMXL5pro:YFP (green) activities at different stages of hypocotyl development in IRX3pro:CLE41 plants from young (A)to old (D).(I–L) PXYpro:CFP (blue) and SMXL5pro:YFP (green) activities at different stages of hypocotyl development in pxy mutants from young (A)to old (D).Sections were stained by Direct Red 23 (red). Scale bars: 100µm. A version of this figure for color-blind readers is provided in Figure 3—figure supplement 4. Ten (A-C, E-G, I-K) or five (D, H, L) samples were analysed with similar results.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A–D) PXYpro:CFP (blue) and SMXL5pro:YFP (green) activities at different stages of wild-type hypocotyl development from young (A)to old (D).(E–H) PXYpro:CFP (blue) and SMXL5pro:YFP (green) activities at different stages of hypocotyl development in IRX3pro:CLE41 plants from young (A)to old (D).(I–L) PXYpro:CFP (blue) and SMXL5pro:YFP (green) activities at different stages of hypocotyl development in pxy mutants from young (A)to old (D).Sections are stained by Direct Red 23 (red). Scale bars: 100µm. Note that pictures (D, H, L) are also depicted in Figure 2 and Figure 3. Five (A-C, E-G, I-K) or ten (D, H, L) were analysed with similar results.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A–D) PXYpro:CFP (blue) and SMXL5pro:YFP (green) activities at different stages of wild-type hypocotyl development from young (A)to old (D).(E–H) PXYpro:CFP (blue) and SMXL5pro:YFP (green) activities at different stages of hypocotyl development in IRX3pro:CLE41 plants from young (A)to old (D).(I–L) PXYpro:CFP (blue) and SMXL5pro:YFP (green) activities at different stages of hypocotyl development in pxy mutants from young (A)to old (D).Sections were stained by Direct Red 23 (red). Scale bars: 100µm. Five (A-C, E-G, I-K) or ten (D, H, L) samples were analysed with similar results.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A–C) Three examples showing PXYpro:CFP (top, bottom, in magenta) and SMXL5pro:YFP (middle, bottom, in green) activities in the cambium zone of wild-type plants. Scale bar in (A): 20µm. Same magnification in (A–F). (D–F) Three examples showing PXYpro:CFP (top, bottom, in magenta) and SMXL5pro:YFP (middle, bottom, in green) activities in the cambium zone of pxy mutants. Note that Direct Red 23 staining (in gray) is only shown in top and middle imageds but not in ‘merged’ images at the bottom. Shown are late stages as depicted in Figure 3—figure supplement 1C and K and Figure 3—figure supplement 2C and K. Ten samples were analysed in total with similar results.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Original toluidine-stained cross-sections (A, D), cross-section with cell-type classifications (B, E), and magnifications of regions indicated by black rectangles in (B) and (E) (C, F)for wild type (A–C)and pxy mutants (D–F)are shown. Cell-type classification was exclusively performed in the xylem area. Size bars in A and C: 100 µm. Same magnification in A, B, D, E and in C and F, respectively. 11 (wild type) and 13 (pxy) samples were anaysed.
+
 To simulate the effect of the IRX3pro:CLE41 transgene in silico, we instructed xylem cells* to produce CLE41* at the same rate as phloem cells* (Model 2B). Although in this case xylem* formation was initially repressed possibly due to high levels of PXYactive* in all cambium* cells (Figure 3B, Video 12, Video 13, Video 14), new xylem cells* were formed as soon as the distance between existing xylem and phloem cells* became large enough such that CLE41* levels and, in turn, [PXYactive*] dropped to permissive levels (Figure 3C, Video 12, Video 13, Video 14). New phloem cells* were produced close to existing phloem and xylem cells* likely due to high levels of PXYactive* (Figure 3C, Video 15, Video 16). As a result, Model 2B produced a similar disruption in cambium* organization, as observed in IRX3pro:CLE41 plants (Figure 3D, Video 12, Video 13, Video 14). Zones with both high [PXYactive*] and low [PXY*], which were found in the distal cambium* in Model 2A (Figure 2E, Video 16, Video 17), appeared in the organ* center together with individual xylem cells* (Figure 3D). Moreover, in addition to being produced in distal regions, new phloem cells* were produced in the central areas of the organ* as demonstrated previously for IRX3pro:CLE41 plants (Etchells and Turner, 2010). Thus, rules determining cambium* polarity implemented in Model 2 were sufficient to simulate organ anatomy found in wild-type and IRX3pro:CLE41 genetic backgrounds.
+
+![Video 12.](https://cdn.elifesciences.org/articles/66627/elife-66627-video12.mp4.jpg)
+
+![Video 13.](https://cdn.elifesciences.org/articles/66627/elife-66627-video13.mp4.jpg)
+
+![Video 14.](https://cdn.elifesciences.org/articles/66627/elife-66627-video14.mp4.jpg)
+
+![Video 15.](https://cdn.elifesciences.org/articles/66627/elife-66627-video15.mp4.jpg)
+
+![Video 16.](https://cdn.elifesciences.org/articles/66627/elife-66627-video16.mp4.jpg)
+
+![Video 17.](https://cdn.elifesciences.org/articles/66627/elife-66627-video17.mp4.jpg)
 
 In contrast, a discrepancy between the model logic and the in planta situation was suggested when we compared a model having reduced PXY* activity with pxy mutants carrying the PXYpro:CFP and SMXL5pro:YFP reporters. In pxy mutants, the xylem tissue did not have a cylindrical shape, but was instead clustered in radial sectors showing PXYpro:CFP and, at their distal ends, SMXL5pro:YFP activity, whereas regions in between those sectors had little to no xylem and did not show reporter activity (Figure 3E, Figure 2—figure supplement 1, Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4). Interestingly, PXYpro:CFP and SMXL5pro:YFP activity domains were still mostly distinct meaning that PXYpro:CFP activity did not expand further beyond established xylem than in wild type (Figure 3E, Figure 3—figure supplement 5). This discrepancy indicated that, in contrast to our assumption, the CLE41-PXY signaling module did not restrict PXY promoter activity in the distal cambium. Of note, the sharp border between PXYpro:CFP and SMXL5pro:YFP activity was less pronounced in pxy mutants mostly due to a spread of SMXL5pro:YFP activity towards xylem tissues (Figure 3—figure supplement 5). The discrepancy between Model 2 and the situation in plants was confirmed when we completely eliminated PXY* activity from our model (Model 2C). As expected, this elimination resulted in the absence of growth due to the full dependence of cell* divisions on the PXY* function, clearly being at odds with the phenotype of pxy mutants (Figure 3E). Even when we only reduced PXY* activity (Model 2D), this did not result in a split of the continuous cambium domain* but abolished phloem* formation and increased the production of xylem* (Figure 3F).
 
 Interestingly, the quantification of water transporting xylem vessels, xylem fibers, which provide mechanical stability, and xylem parenchyma in sections from wild-type and pxy mutant hypocotyls by automated image segmentation revealed that the total number of xylem cells and the number of xylem vessels was comparable (Figure 3G–I, Figure 3—figure supplement 6). In contrast, the number of cells classified as fibers was substantially reduced in pxy mutants, whereas the number of cells classified as parenchyma was increased (Figure 3G–I). These results suggested that during radial growth PXY promotes the fiber-parenchyma ratio in the xylem, while the formation of xylem vessels and the total number of cambium-derived cells produced toward the xylem is hardly PXY-dependent.
 
-## Multiple phloem-derived factors determine cambium activity
+### Multiple phloem-derived factors determine cambium activity
 
 Our observations prompted us to reconsider some features of the model and to extend our ‘French flag’ approach. As the proximal cell production rate by the cambium was not PXY-dependent, we made xylem* formation independent from the control of PXY-active*. Instead, cambium cells* differentiated into xylem cells* when they reached a specific size and, at the same time, expressed PXY* as a positional feature. To maintain a population of active cambium cells* in the absence of PXY*, we introduced a second phloem*-derived factor (PF), reminiscent of the PEAR transcription factors identified recently (Miyashima et al., 2019). PF* stimulated cell* divisions by promoting the production of a division factor (DF) in cambium cells* and in phloem parenchyma* (Figure 4A, Figure 4—figure supplement 1, see below). Cambium cells* divided only if the concentration of DF* exceeded a threshold value (Supplementary file 1). DF* production was at the same time stimulated by PXYactive* as its only effect in cambium cells* (Figure 4A). Thereby, cambial cell* divisions were dependent on the combined influence of PXYactive* and their proximity to phloem poles* (see below).
 
-PF* was, thus, produced in phloem poles* and the levels in other cells* were determined by the diffusion and degradation:(5)ddt[PF∗]=productionPF+diffusionPF−degradationPF⋅[PF∗]
+![Figure 4.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig4-v2.jpg)
 
-DF* production was, in turn, determined as follows:(6)ddt[DF∗]=diffusionDF+productionDF
+**Figure 4.:** (A) Regulatory network proposed based on experimental observations. (B) Result of the simulation run for Model 3A. This model implements the network interactions described in (A). Color coding at the bottom of Figure 4. (C) Outline of cell bins for the results of Model 3A, as shown in (B).(D) Visualization of the relative levels of chemicals* and division rates* in different bins. Bin colors along the x-axis correspond to the bin colors in (C).The shading represents the range between minimal and maximal values during simulations (n = 10). (E) Output of Model 3B simulation. Ectopic CLE41* expression was achieved by letting xylem cells* produce CLE41*. (F) Output of Model 3C. Simulation of the pxy mutant was achieved by removing the stimulation of DF* production by PXY* and hence by removing the effect of PXY* on cell division and cambium* subdomain patterning. Because of the network structure, PXY* can be eliminated from Model 3 without letting the model collapse (Figure 3F) but reproducing the pxy mutant phenotype observed in adult hypocotyls (Figure 4E). Be aware that cell* proliferation is generally impaired under these conditions reducing overall template growth*. Because the final output covers the same image area, cell size seems to be enlarged which, however, is not the case. (G) Estimated tissue ratios for five identified parameter sets compared to experimental values (‘data’) found for wild type hypocotyls 20d after germination (Sankar et al., 2014) and compared to the final model output before the automated parameter search (’Model 3A’) and the implementation of experimentally determined cell wall thickness for xylem* and phloem*.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Schemes include representations for Models 3B and C. Color code shown at the bottom of the figure.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Cross-section of a 4.5-week-old plant stained by Direct Red 23. Radius and circumference used by the ‘Radial Profile’ function of the Fiji image analysis tool (Schindelin et al., 2012) are indicated. Note that the function uses the whole circle area for analysis. (B) Plot of six Direct Red 23-stained cross-sections analyzed by the ‘Radial Profile’ function of Fiji. Staining intensity and radius were normalized to 1 by dividing obtained values by maximum values within respective sample data sets. (C) Average intensity profile of Direct Red 23 staining for three sections as shown in Figure 2A determined by the ‘Radial Profile’ function of Fiji. Staining intensity and radius were normalized to 1 by dividing obtained values by maximum values within respective sample data sets.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Overview of parameter values of the different parameter sets. Shown are the relative values of the estimated parameter compared to the original parameter values. Horizontal lines indicate the lower (1/3) and upper (threefold) boundary (gray) as well as the original parameter value (blue). (B) Behavior of parameter sets 2–5. Shown is the final output of the simulation, the tissue* sorted into bins, as well as the average chemical concentration* per bin (for n = 10 simulations). The shading represents the range between minimal and maximal values during simulations.
+
+PF* was, thus, produced in phloem poles* and the levels in other cells* were determined by the diffusion and degradation:
+
+$$
+\frac{d}{dt}[PF_{}^{∗}]=production_{PF}+diffusion_{PF}−degradation_{PF}⋅[PF_{}^{∗}]
+$$
+
+DF* production was, in turn, determined as follows:
+
+$$
+\frac{d}{dt}[DF^{∗}]=diffusion_{DF}+production_{DF}
+$$
 
 where K stands for an empirically defined parameter capping the production rate of DF*.
 
@@ -89,11 +203,47 @@ Based on the strong association of xylem sectors with developing phloem cells (F
 
 The implementation of these principles in silico (Model 3A) resulted again in the establishment of two cambium* subdomains – the distal subdomain that was characterized by high concentrations of DF* and the proximal subdomain characterized by high PXY* concentration (Figure 4B–D, Figure 4—figure supplement 1, Video 18, Video 19, Video 20, Video 21, Video 22, Video 23). Distally, the cambium* produced phloem parenchyma cells* from which phloem poles* were continuously formed with a pattern resembling the patchy phloem pattern observed in plants (Figure 4B, Figure 4—figure supplement 1; Sankar et al., 2014; Wallner et al., 2020). Interestingly, the localization of PF* production mainly in phloem poles* resulted in increased DF levels in the vicinity of those poles and, consequently, in locally increased cell* division rates (Video 20, Video 21). This observation is in line with the observation that phloem poles drive cell divisions in their immediate environment and that phloem cells still divide after initial specification (Miyashima et al., 2019; Bossinger and Spokevicius, 2018). When comparing the radial pattern of PXYpro:CFP/SMXL5pro:YFP activities and, as an in silico approximation to these activities, the distribution of PXY* and DF* in our model over time, patterns were stable in both cases (Figure 4B, Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4, Video 18, Video 22, Video 23). This demonstrated that our model was able to generate stable radial patterns of gene* activity comparable to the in planta situation.
 
+![Video 18.](https://cdn.elifesciences.org/articles/66627/elife-66627-video18.mp4.jpg)
+
+![Video 19.](https://cdn.elifesciences.org/articles/66627/elife-66627-video19.mp4.jpg)
+
+![Video 20.](https://cdn.elifesciences.org/articles/66627/elife-66627-video20.mp4.jpg)
+
+![Video 21.](https://cdn.elifesciences.org/articles/66627/elife-66627-video21.mp4.jpg)
+
+![Video 22.](https://cdn.elifesciences.org/articles/66627/elife-66627-video22.mp4.jpg)
+
+![Video 23.](https://cdn.elifesciences.org/articles/66627/elife-66627-video23.mp4.jpg)
+
 By instructing CLE41* production additionally in xylem cells*, we next simulated CLE41-misexpression by the IRX3 promoter (Model 3B, Figure 4—figure supplement 1, Figure 4E, Video 24, Video 25, Video 26, Video 27, Video 28, Video 29). CLE41* interacted with PXY* on the proximal cambium* border, which resulted in ectopic DF* production and phloem-parenchyma* formation in the proximal hypocotyl* regions (Figure 4E, Video 24, Video 28), similarly as during radial hypocotyl growth in IRX3pro:CLE41 plants (Figure 3A, Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4). Still, xylem cells* were formed, generating a patchy xylem* pattern resembling the xylem configuration found in IRX3pro:CLE41 plants (Figure 3A, Figure 4E, Video 24).
+
+![Video 24.](https://cdn.elifesciences.org/articles/66627/elife-66627-video24.mp4.jpg)
+
+![Video 25.](https://cdn.elifesciences.org/articles/66627/elife-66627-video25.mp4.jpg)
+
+![Video 26.](https://cdn.elifesciences.org/articles/66627/elife-66627-video26.mp4.jpg)
+
+![Video 27.](https://cdn.elifesciences.org/articles/66627/elife-66627-video27.mp4.jpg)
+
+![Video 28.](https://cdn.elifesciences.org/articles/66627/elife-66627-video28.mp4.jpg)
+
+![Video 29.](https://cdn.elifesciences.org/articles/66627/elife-66627-video29.mp4.jpg)
 
 Fully eliminating CLE41* binding to PXY* and therefore PXY* activity but keeping the positional information of PXY* for xylem cell differentiation (Model 3C, Figure 4—figure supplement 1) generated a patchy outline of the distal cambium* subdomain (Figure 4F, Video 30, Video 31, Video 32, Video 33, Video 34, Video 35). While PXY* was usually the main trigger of cell* divisions in cambium cells* at a certain distance from phloem poles*, PF* was sufficient for triggering cell divisions next to phloem poles*. Heterogeneous cambium activity was already observable at early phases of radial hypocotyl growth in silico and in planta and resulted overall in a reduced tissue production in both systems (Figure 4F, Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4, Video 30, Video 31, Video 32, Video 33, Video 34, Video 35). Thus, by introducing both a PXY*-independent pathway stimulating cambium* proliferation and a dependence of cell* proliferation on the distance to phloem poles*, we were able to simulate important features of the pxy mutant phenotype (Figure 3E, Figure 4F, Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4). Collectively, we concluded that we established a computational cambium model sufficiently robust to simulate major genetic perturbations of cambium regulation.
 
-## Physical properties of cambium-derived cells have the potential to influence stem cell behavior
+![Video 30.](https://cdn.elifesciences.org/articles/66627/elife-66627-video30.mp4.jpg)
+
+![Video 31.](https://cdn.elifesciences.org/articles/66627/elife-66627-video31.mp4.jpg)
+
+![Video 32.](https://cdn.elifesciences.org/articles/66627/elife-66627-video32.mp4.jpg)
+
+![Video 33.](https://cdn.elifesciences.org/articles/66627/elife-66627-video33.mp4.jpg)
+
+![Video 34.](https://cdn.elifesciences.org/articles/66627/elife-66627-video34.mp4.jpg)
+
+![Video 35.](https://cdn.elifesciences.org/articles/66627/elife-66627-video35.mp4.jpg)
+
+### Physical properties of cambium-derived cells have the potential to influence stem cell behavior
 
 Next, we were interested to see whether the established model was able to reveal organ-wide features of radial plant growth. A characteristic of cambium stem cells is that they divide mostly in periclinal orientation, which is in parallel to the organ surface, resulting in the frequent formation of radial cell files (Figure 2A). Interestingly, although the overall tissue anatomy of the modeled organ* resembled the in planta situation, cell division orientation in our model outputs was almost random, suggesting that radial cell file formation cannot be explained by the molecular signaling pathways implemented into the model (Figure 4A). The strong dominance of periclinal divisions in planta, however, implies the presence of a positional signal instructing cell division orientation. Because classical observations indicated that physical forces play a role in this regard (Brown, 1964; Brown and Sax, 1962; Lintilhac and Vesecky, 1984), we tested whether the model was suited for finding indications for the influence of differential cell stiffness on geometric features of radial plant growth.
 
@@ -101,7 +251,61 @@ To do so, we first determined the relative cell wall thickness in hypocotyl cros
 
 Utilizing this expanded model (Model 4), we investigated the parameter space to find parameters accurately describing cambium activity not only qualitatively but also quantitatively. To incorporate realistic tissue ratios and unbiased parameter identification, we performed an automated parameter search using a previous characterization of Arabidopsis hypocotyl anatomy (Sankar et al., 2014) as a criterion for parameter selection. To this end, we evaluated our searched parameter sets to aim for a cell-type distribution of 24, 10, and 65% for cambium*, xylem*, and phloem cell* number, respectively. Performing 12,500 simulations resulted in n = 5 parameter sets (Supplementary file 2), which produced more realistic cell-type proportions than we achieved by our manually selected set before (Figure 4G, Figure 4—figure supplement 3). Thus, by taking real cell-type proportions as a guideline for parameter search, we were able to establish a model generating a more realistic morphology as a solution. Furthermore, by generating several parameter sets that described the experimentally observed tissue ratios equally well, we demonstrated that even with differing parameter values the model behavior remained consistent reaffirming the model structure we had identified with Model 3A and was parameterized in Model 4 (Figure 5A and B, Figure 4—figure supplement 3, Video 36, Video 37, Video 38, Video 39, Video 40, Video 41).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig5-v2.jpg)
+
+**Figure 5.:** (A) Final output of Model 4 and parameter set 1. (B) Visualization of the relative levels of chemicals* and division rates* in different bins. Bin colors along the x-axis correspond to the different bins similarly as in Figure 4C. The shading represents the range between minimal and maximal values during simulations (n = 10). (C, D) Simulation outputs at increasing values of xylem stiffness* (C)and epidermis stiffness* (D)with the ratio of stiffness* vs. experimentally determined xylem stiffness indicated at the right bottom corner of each example. All the simulations had the same starting conditions and ran for the same amount of simulated time. At the bottom, there is a magnification of the right region shown in the pictures above, respectively. (E, F) Examples of the relationship between R2 and the geometry of proliferation trajectories (gray arrows) for two different R2 values; dots are cell* centroids, lines represent division* events. (G, H) Fraction of median relative amount of lineages whose R2 falls within a specific range for 30 simulations in each condition (n ≥ 70 lineages per simulation) at different xylem stiffness* (G)and epidermis stiffness* (H)regimes. In case of significant difference among medians, assessed with Kruskal–Wallis (KW significance is p<2.6 E-3 for (0, 0.25) interval and p<9.17e-7 for the (0.75,1) interval), the pairwise difference between medians was tested post hoc applying the Dunn test. The post hoc results are reported in each box as letters; medians sharing the same letter or do not display a letter at all do not differ significantly.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cell* size in arbitrary units. (B) Major axis lengths of cells* in arbitrary units. (C) Numbers of nodes (vertexes) per cell*. (D) Number of cells* among cell types and stiffness values for n = 30 simulations under each stiffness regime. The blue color highlights the simulation at the experimentally determined thickness/stiffness value. The x-axis indicates values of xylem stiffness as the ratio of xylem stiffness* vs. experimentally determined thickness/stiffness. A slight horizontal displacement of points has been added to enhance visualization. Values for individual cells* found in all 30 simulations are displayed in (A–C), whereas numbers of cells* in each cell type* for each one of the 30 simulations are shown in (D).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Cell* size in arbitrary units. (B) Major axis lengths of cells* in arbitrary units. (C) Numbers of nodes (vertexes) per cell*. (D) Number of cells* among cell types and stiffness values for n = 30 simulations under each stiffness regime. The blue color highlights the simulation running at normal stiffness level; the x-axis indicates values of the relative perimeter stiffness as the fold-change compared to the standard parameters. A slight horizontal displacement of points has been added to enhance visualization. Values for individual cells* found in all 30 simulations are displayed in (A–C), whereas numbers of cells* in each cell type* for each one of the 30 simulations are shown in (D).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) With increasing xylem* ‘stiffness’.(B) With increasing epidermis* ‘stiffness’. KW-significance is indicated as follows: (*) p-value ≤ 0.05, (**) p-value ≤ 0.001 and (***) p value ≤ 1 E-5.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/66627/elife-66627-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** The model parameters cell walls’ target length and yielding threshold were varied by± 50%and the behavior at different cell wall stiffness values simulated. The statistical analysis was done as described before for Figure 5 for n = 10 simulations each and n ≥ 70cell lineages per simulation. In the case of the xylem stiffness* regime at +50% yielding threshold and - 50% target length and the epidermis* regime at +50% yielding threshold and +50% target length the sample cell lineages were insufficient for statistics. KW-significance is indicated as follows: (*) p-value ≤ 0.05, (**) p-value ≤ 0.001 and (***) p-value ≤ 1 E-5.
+
+![Video 36.](https://cdn.elifesciences.org/articles/66627/elife-66627-video36.mp4.jpg)
+
+![Video 37.](https://cdn.elifesciences.org/articles/66627/elife-66627-video37.mp4.jpg)
+
+![Video 38.](https://cdn.elifesciences.org/articles/66627/elife-66627-video38.mp4.jpg)
+
+![Video 39.](https://cdn.elifesciences.org/articles/66627/elife-66627-video39.mp4.jpg)
+
+![Video 40.](https://cdn.elifesciences.org/articles/66627/elife-66627-video40.mp4.jpg)
+
+![Video 41.](https://cdn.elifesciences.org/articles/66627/elife-66627-video41.mp4.jpg)
+
 To next investigate the role of biomechanics in the direction of cell division, we analyzed the model behavior at different cell wall stiffness values. Specifically, we were interested in the role of xylem* and epidermis*, the latter being represented by the relative perimeter stiffness of the outer tissue boundary in VirtualLeaf. Of note, defining the outer cell* layer as epidermis* was done for simplicity reasons as the rather complex periderm usually forms the outer tissues of older hypocotyls (Serra et al., 2022). Here, we assumed xylem or epidermis cells* and, in turn, the relative perimeter stiffness to be more resistant to expansion due to the thickness of their cell walls* and implemented this behavior in Model 4 as a cellular* property. First we explored how the variation of the stiffness of xylem cell walls* impacted tissue formation (Figure 5C, Video 42, Video 43, Video 44, Video 45, Video 46, Video 47), we first observed that, as expected, increasing cell wall* stiffness led to a xylem*-specific decrease in cell* size and major axis length (Figure 5—figure supplement 1A and B). In turn, some cambium cells showed an increase in length as the cell type* with the closest proximity to xylem cells*. In addition, we observed a general decrease in the number of cells*, particularly of xylem cells* (Figure 5—figure supplement 1D). We explained this effect by a ‘physical’ constraint generated by ‘stiffer’ xylem cells* acting on neighboring cambium cells* impairing their expansion and, thus, their transformation into xylem* (Video 42, Video 43, Video 44, Video 45, Video 46, Video 47). Importantly, neither cell area nor cell length was affected in phloem cells* and the number of cambium cells* stayed constant (Figure 5—figure supplement 1), suggesting that the general growth dynamics of the model and especially the behavior of cambium cells* was comparable under the different stiffness* regimes. When analyzing the same characteristics for the different epidermis* tissue regimes (Figure 5D, Video 48, Video 49, Video 50, Video 51, Video 52), we found that neither cell size* nor cell length* were impacted (Figure 5—figure supplement 2). Instead, we found a decrease in the number of cells* per simulation with increasing cell wall stiffness, in particular phloem parenchyma* and phloem pole cells*, as the increased resistance of the outer tissue boundary limited the overall tissue growth, resulting in less cells being produced in the outer parts of the tissue (Figure 5—figure supplement 2).
+
+![Video 42.](https://cdn.elifesciences.org/articles/66627/elife-66627-video42.mp4.jpg)
+
+![Video 43.](https://cdn.elifesciences.org/articles/66627/elife-66627-video43.mp4.jpg)
+
+![Video 44.](https://cdn.elifesciences.org/articles/66627/elife-66627-video44.mp4.jpg)
+
+![Video 45.](https://cdn.elifesciences.org/articles/66627/elife-66627-video45.mp4.jpg)
+
+![Video 46.](https://cdn.elifesciences.org/articles/66627/elife-66627-video46.mp4.jpg)
+
+![Video 47.](https://cdn.elifesciences.org/articles/66627/elife-66627-video47.mp4.jpg)
+
+![Video 48.](https://cdn.elifesciences.org/articles/66627/elife-66627-video48.mp4.jpg)
+
+![Video 49.](https://cdn.elifesciences.org/articles/66627/elife-66627-video49.mp4.jpg)
+
+![Video 50.](https://cdn.elifesciences.org/articles/66627/elife-66627-video50.mp4.jpg)
+
+![Video 51.](https://cdn.elifesciences.org/articles/66627/elife-66627-video51.mp4.jpg)
+
+![Video 52.](https://cdn.elifesciences.org/articles/66627/elife-66627-video52.mp4.jpg)
 
 To access the effect of increased stiffness of xylem and epidermis cell walls* on cell* division orientation, we first defined cell lineages* as groups of cells* having originated from the same precursor cell* and drew lines between immediate daughter cells* (Figure 5E and F). We then calculated the goodness of fit (R2) of a linear relationship between center of mass coordinates of all individual lines as a proxy for lineage* ‘radiality’ and, thus, for the ratio of periclinal versus anticlinal cell divisions*. After obtaining the R2 value for each lineage*, we tested for median differences among r distributions under each stiffness regime (Figure 5G, Figure 5—figure supplement 3). These comparisons showed that the increase of the xylem* to non-xylem cell wall* stiffness ratio produced a shift from more ‘curved’ lineages (R2 < 0.25) toward more radial lineages* (R2 > 0.75) (Figure 5G, Figure 5—figure supplement 3A). We attributed this effect to an increased radial elongation of cambium cells* with increasing xylem stiffness* (Video 42, Video 43, Video 44, Video 45, Video 46, Video 47) and the preferred cell division* along the shortest axis in VirtualLeaf (Merks et al., 2011). Although the effect of xylem cell* stiffness on lineage radiality was not on all lineages, as a fraction of them remained less radially oriented even for high xylem stiffness (Figure 5G), implementing stiffness as a cell property therefore produced coherent results in terms of the appearance of radial cell files* as an emergent property of xylem cell* wall stiffness. In contrast, the analysis of different epidermis cell wall stiffness did not show a clear change in the distribution of lineages in the range of analyzed stiffness regimes (Figure 5H, Figure 5—figure supplement 3B, Video 48, Video 49, Video 50, Video 51, Video 52) as increasing stiffness limited tissue growth and therefore the formation of cell lineages. These results remained consistent for both xylem* and epidermis* stiffness regimes when varying other parameters determining cell wall dynamics, that is, the target length of cell wall elements and the yielding threshold for the introduction of new cell wall segments (Figure 5—figure supplement 4).
 
@@ -127,35 +331,39 @@ Taken together, we envision that the model presented in this study recapitulates
 
 ## Materials and methods
 
-## Plant material and growth conditions
+### Plant material and growth conditions
 
 Arabidopsis thaliana (L.) Heynh. plants of Columbia-0 accession were used for all experiments and grown as described previously (Suer et al., 2011). pxy-4 (SALK_009542, N800038) mutants were ordered from the Nottingham Arabidopsis Stock Centre (NASC). Plant lines carrying IRX3pro:CLE41 and 35Spro:CLE41 transgenes (Etchells and Turner, 2010) were kindly provided by Peter Etchells (Durham University, UK). PXYpro:ECFP-ER (pPS19) and SMXL5pro:EYFP-ER (pJA24) reporter lines expressing fluorescent proteins targeted to the endoplasmatic reticulum (ER) were described previously (Agusti et al., 2011a; Wallner et al., 2017). After sterilization, seeds were stratified for 2–3 d in darkness at 4°C. Plants were then grown at 21°C and 60% humidity. To check PXYpro:CFP/SMXL5pro:YFP activities, 27- or 39-d-old seedlings were used. 27-d-old seedlings were grown on plates in short-day conditions (10 hr light and 14 h darkness). 39-d-old seedlings were grown on soil in short-day conditions for 21 d and then moved to long-day conditions (16 hr light and 8 hr darkness) for 18 d.
 
-## Confocal microscopy
+### Confocal microscopy
 
 Hypocotyls were isolated and cleaned from surrounding leaf material using razor blades (Classic Wilkinson, Germany). The cleaned hypocotyls were mounted in 7% low melting point agar (Sigma-Aldrich, St. Louis, MO) in water and sections were generated using a vibratome (Leica VT1000 S). For monitoring hypocotyl development, the developmental gradient in hypocotyls of 27-d-old plate-grown plants (stages 1–3 shown in Figure 3—figure supplement 1A–C, E–G, I–K and Figure 3—figure supplement 2A–C, E–G, I–K) was employed: the lower region close to the hypocotyl-root boundary was taken as the youngest stage (stage1), the middle region as stage 2, and the upper region close to the cotyledons as stage 3. As stage 4, sections from the middle region of 39-d-old plants grown on soil were taken, which are shown in all other images displaying confocal analyses. For Figure 4—figure supplement 2A and B, 75-µm-thick sections from soil-grown 32-d-old plants were stained for 60 min with 0.1% w/v Direct Yellow 96 (Sigma-Aldrich, S472409-1G) diluted in ClearSee (Ursache et al., 2018) (10% w/v xylitol, 15% w/v sodium deoxycholate, 25% w/v urea), washed three times with ClearSee and mounted in ClearSee on microscope slides. For other experiments, 60-μm-thick sections were stained for 5 min with 0.1% w/v Direct Red 23 (Sigma-Aldrich, 212490-50G) diluted in water, washed three times with water, and mounted in water on microscope slides. For analyzing the fluorescent markers, a Leica SP8 or Stellaris 8 (Leica, Germany) confocal microscope was used. Different fluorescence protein signals were collected in different tracks. YFP was excited at 514 nm, and emission was collected at 522–542 nm. CFP was excited at 458 nm, and the signal emission was collected at 469–490 nm. The Direct Red 23-derived signal was excited at 495 nm, and emission was detected at 558–649 nm. The Direct Yellow 96-derived signal was excited at 488 nm, and emission was detected at 500–540 nm. For qualitative comparisons, 5–10 samples for each sample type were included and repeated at least twice. Please be aware that depending on variations in staining intensity, sometimes cell walls of vessel elements appear white in the provided images due to the overlap of signal from Direct Red 23 staining and autofluorescence captured during PXYpro:CFP detection (e.g., see Figure 3—figure supplement 2D).
 
-## Ilastik cell-type counting
+### Ilastik cell-type counting
 
 For cell-type classification and quantification, sections were produced from 42-d-old plants as previously described (Suer et al., 2011). The xylem area was cropped manually from histological images of wild-type and pxy mutant. The Ilastik toolkit (Sommer et al., 2011) was used for image segmentation and cell-type classification (https://www.ilastik.org). With a training set, the pixel classification workflow was trained to distinguish cell walls from the background. After segmentation, the object classifier was then trained to split the resulting objects into four groups – xylem vessels, xylem fibers, xylem parenchyma, and unclassified objects. The resulting classifier was then applied to all cropped images. For each image, cell-type data were extracted using Python. 11–12 plants each for wild-type and pxy mutants were compared in two independent experiments.
 
-## VirtualLeaf simulations
+### VirtualLeaf simulations
 
 Simulations were performed as recommended previously (Merks et al., 2011). To be able to see established models in action, the VirtualLeaf software was installed according to the following instructions described in Appendix 1 and as described previously (Merks and Guravage, 2013). All simulations within Models 1–4, respectively, were conducted for the same VirtualLeaf time duration and repeated at least 10 times to account for the stochastic nature of the tissue simulations (for details on simulations in VirtualLeaf, see section ‘Description of the VirtualLeaf simulations’ in Appendix 1). Dilution of the modeled variables due to growth has been omitted.
 
-## Splitting the result of VirtualLeaf simulations into bins
+### Splitting the result of VirtualLeaf simulations into bins
 
 After a VirtualLeaf simulation was completed, the resulting xml template was stored. To analyze the distribution of chemicals* in such a template along the radial axis, we produced a Python script named “Cambium_bins_calculation.ipnb.” Within the script, it was possible to indicate the path to the xml file, and the script produced two.csv files – one with a table containing data about each cell and another with information about averages across the requested bin number. Cells were sorted into bins based on the cells’ Euclidean distance from the center of the tissue, which was defined as the average of the x- and y-coordinates of all the cells in the tissue.
 
-## Parameter estimation and exploration of the parameter space
+### Parameter estimation and exploration of the parameter space
 
-To estimate the model parameters and, at the same time, investigate the parameter space, we performed a large set of simulations with randomized parameters to identify feasible parameter combinations. In particular, we employed a combination of Python and shell scripting to set up the parameter sets, run the simulations, and analyze the results. To generate the parameter sets, we followed the tutorial using the Python library xml.etree.Elementree as described (Antonovici et al., 2022). The search intervals were defined based on the manually determined parameter values of Model 3A: the search interval was set between 1/3 and 3 times the original value. The individual parameter sets were then simulated for a duration of t_simulated = 2,200 steps on a computing cluster (Linux, 64-bit). The resulting xml leaf was then analyzed based on tissue size and proportions. Based on in planta observations (Sankar et al., 2014), we determined that the simulation should result in 24% cambium, 10% xylem, and 65% phloem cells. As all tissues are equally important, we used a weighted least-squares scoring function to compare the experimentally measured tissue ratios with the model simulations. We added a term for the total number of cells to favor parameter sets that resulted in tissue growth. Altogether, this resulted in the following scoring function:x=10.01(0.1−fractionxylem)2+10.05676(0.24−fractioncambium)2+10.4225(0.65−fractionphloem)2+(1−totalcells/3000)2
+To estimate the model parameters and, at the same time, investigate the parameter space, we performed a large set of simulations with randomized parameters to identify feasible parameter combinations. In particular, we employed a combination of Python and shell scripting to set up the parameter sets, run the simulations, and analyze the results. To generate the parameter sets, we followed the tutorial using the Python library xml.etree.Elementree as described (Antonovici et al., 2022). The search intervals were defined based on the manually determined parameter values of Model 3A: the search interval was set between 1/3 and 3 times the original value. The individual parameter sets were then simulated for a duration of t_simulated = 2,200 steps on a computing cluster (Linux, 64-bit). The resulting xml leaf was then analyzed based on tissue size and proportions. Based on in planta observations (Sankar et al., 2014), we determined that the simulation should result in 24% cambium, 10% xylem, and 65% phloem cells. As all tissues are equally important, we used a weighted least-squares scoring function to compare the experimentally measured tissue ratios with the model simulations. We added a term for the total number of cells to favor parameter sets that resulted in tissue growth. Altogether, this resulted in the following scoring function:
+
+$$
+x_{}=\frac{1}{0.01}(0.1−fraction_{xylem})^{2}+\frac{1}{0.05676}(0.24−fraction_{cambium})^{2}+\frac{1}{0.4225}(0.65−fraction_{phloem})^{2}+(1−totalcells/3000)^{2}
+$$
 
 As we were interested in obtaining simulations with an active cambium, we discarded simulations that resulted in hypocotyls* with less than 300 cells* in total and with cambium cells less than 30. We further eliminated any parameter sets with pronounced edge instability.
 
-## Exploration of stiffness
+### Exploration of stiffness
 
-To explore the effects of stiffer (i.e., less flexible) xylem cell walls and epidermis cell walls as represented by the perimeter stiffness, we slightly modified the VirtualLeaf code so that it was possible for λL (the ‘cost’ of deviation of the wall element’s length from the target length) to assume cell-type-specific values. More specifically, we defined a new parameter named cellwallstiffness, and set λL = cellwallstiffness according to the experimentally determined cell wall thickness as a proxy for cell wall stiffness. We then ran the model with different ratios of cellwallstiffness compared to the normal parameter value, while maintaining the same tissue configuration used for the other simulations done within this study. The values chosen for the parameter were 0.1-, 0.5-, 1-, 5-, and 10-fold change for both tissues of interest and 50-fold change for xylem*. We replicated each run 30 times. We further repeated the analysis of different stiffness regimes while varying other cell wall dynamic parameters by ±50%, that is, the target element for cell wall elements and the yielding threshold for the introduction of new cell wall elements (for n = 10 simulations per parameter combination).
+To explore the effects of stiffer (i.e., less flexible) xylem cell walls and epidermis cell walls as represented by the perimeter stiffness, we slightly modified the VirtualLeaf code so that it was possible for λL (the ‘cost’ of deviation of the wall element’s length from the target length) to assume cell-type-specific values. More specifically, we defined a new parameter named $cellwallstiffness$, and set λL = $cellwallstiffness$ according to the experimentally determined cell wall thickness as a proxy for cell wall stiffness. We then ran the model with different ratios of $cellwallstiffness$ compared to the normal parameter value, while maintaining the same tissue configuration used for the other simulations done within this study. The values chosen for the parameter were 0.1-, 0.5-, 1-, 5-, and 10-fold change for both tissues of interest and 50-fold change for xylem*. We replicated each run 30 times. We further repeated the analysis of different stiffness regimes while varying other cell wall dynamic parameters by ±50%, that is, the target element for cell wall elements and the yielding threshold for the introduction of new cell wall elements (for n = 10 simulations per parameter combination).
 
 To study the proliferation trajectory of cells, we performed for every lineage a linear regression of the centers of mass for the cells belonging to that lineage and used the coefficient of determination (R2) as proxy for proliferation trajectory of the lineage. We next tested for median differences among the R2 distribution under each stiffness regime using the Kruskal–Wallis (KS) test, and performed the Dunn test to determine differences among groups in case of significant KS. Before performing the KS, we subsampled the data to maintain the same number of samples across stiffness values and bootstrapped the samples to obtain robust median estimators and confidence intervals.
 

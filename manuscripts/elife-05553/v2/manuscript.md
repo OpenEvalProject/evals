@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.05553.001 The haptoglobin-haemoglobin receptor (HpHbR) of African trypanosomes allows acquisition of haem and provides an uptake route for trypanolytic factor-1, a mediator of innate immunity against trypanosome infection. In this study, we report the structure of Trypanosoma brucei HpHbR in complex with human haptoglobin-haemoglobin (HpHb), revealing an elongated ligand-binding site that extends along its membrane distal half. This contacts haptoglobin and the β-subunit of haemoglobin, showing how the receptor selectively binds HpHb over individual components. Lateral mobility of the glycosylphosphatidylinositol-anchored HpHbR, and a ∼50 o kink in the receptor, allows two receptors to simultaneously bind one HpHb dimer. Indeed, trypanosomes take up dimeric HpHb at significantly lower concentrations than monomeric HpHb, due to increased ligand avidity that comes from bivalent binding. The structure therefore reveals the molecular basis for ligand and innate immunity factor uptake by trypanosomes and identifies adaptations that allow efficient ligand uptake in the context of the complex trypanosome cell surface. DOI: http://dx.doi.org/10.7554/eLife.05553.001
+The haptoglobin-haemoglobin receptor (HpHbR) of African trypanosomes allows acquisition of haem and provides an uptake route for trypanolytic factor-1, a mediator of innate immunity against trypanosome infection. In this study, we report the structure of Trypanosoma brucei HpHbR in complex with human haptoglobin-haemoglobin (HpHb), revealing an elongated ligand-binding site that extends along its membrane distal half. This contacts haptoglobin and the β-subunit of haemoglobin, showing how the receptor selectively binds HpHb over individual components. Lateral mobility of the glycosylphosphatidylinositol-anchored HpHbR, and a ∼50o kink in the receptor, allows two receptors to simultaneously bind one HpHb dimer. Indeed, trypanosomes take up dimeric HpHb at significantly lower concentrations than monomeric HpHb, due to increased ligand avidity that comes from bivalent binding. The structure therefore reveals the molecular basis for ligand and innate immunity factor uptake by trypanosomes and identifies adaptations that allow efficient ligand uptake in the context of the complex trypanosome cell surface.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ Here, we present the structure of T. brucei HpHbR. We show that the receptor ado
 
 ## Results
 
-## TbHpHbR binds to the HpSP domain:Hb head structure
+### TbHpHbR binds to the HpSP domain:Hb head structure
 
 To provide detailed molecular knowledge of the mechanism of uptake of haptoglobin-haemoglobin and trypanolytic factor-1 (TLF1), we aimed to determine the structure of T. brucei HpHbR (TbHpHbR) alone and bound to a human haptoglobin-haemoglobin complex.
 
@@ -47,87 +47,490 @@ Previous studies have shown that TbHpHbR interacts with the HpHb complex but not
 
 Proteolytic cleavage of haptoglobin normally occurs in the endoplasmic reticulum after residue R102 but this cleavage event did not occur in the insect cell expressed HpSP domain. However, this did not affect the affinity for TbHpHbR. The shortened TbHpHbR construct and the HpSPHb complex therefore interact together with the same affinity as the full-length components, providing reagents for structural determination. These findings also confirm that TbHpHbR binds to the ‘head’ structure of dimeric HpHb, raising the possibility of two receptors simultaneously interacting with one HpHb complex.
 
-## Determination of the structure of TbHpHbR alone and in complex with HpSPHb
+### Determination of the structure of TbHpHbR alone and in complex with HpSPHb
 
-To investigate the molecular basis for HpHb binding by TbHpHbR, crystallisation plates were set up for HpSPHb, TbHpHbR and a complex containing TbHpHbR bound to HpSPHb. Crystals of HpSPHb diffracted to 2.05 Å and were of space group P3121 with one complex in the asymmetric unit. Crystals of TbHpHbR diffracted to 1.85 Å resolution and were of space group P21 with two molecules in the asymmetric unit. Crystals of the TbHpHbR:HpSPHb complex were of space group C2 and diffracted to 3.1 Å resolution with a single complex in the asymmetric unit (Table 1).10.7554/eLife.05553.003Table 1.Crystallographic data collection statisticsDOI: http://dx.doi.org/10.7554/eLife.05553.003HpSPHbTbb HpHbRTbbHpHbR:HpSPHbBeamlineDiamond I04-1Diamond I03Diamond I03Space Groupp3121p21c2Cell dimensions (Å)a = b = 96.6, c = 132.77a = 27.90, b = 47.79, c = 203.38, β = 92.79a = 223.4, b = 56.59, c = 65.29, β = 92.99Resolution (Å)2.051.853.1Wavelength (Å)0.9160.97630.9750RPIM (%)8.1 (37.4)4.5 (42.9)6.3 (72.6)I/ σ(I)8.7 (2.3)10.2 (2.0)9.8 (1.6)Completeness (%)99.8 (100)97.4 (96.5)96.9 (97.1)Multiplicity9.6 (10.2)3.1 (3.1)3.2 (3.3)
+To investigate the molecular basis for HpHb binding by TbHpHbR, crystallisation plates were set up for HpSPHb, TbHpHbR and a complex containing TbHpHbR bound to HpSPHb. Crystals of HpSPHb diffracted to 2.05 Å and were of space group P3121 with one complex in the asymmetric unit. Crystals of TbHpHbR diffracted to 1.85 Å resolution and were of space group P21 with two molecules in the asymmetric unit. Crystals of the TbHpHbR:HpSPHb complex were of space group C2 and diffracted to 3.1 Å resolution with a single complex in the asymmetric unit (Table 1).
 
-The structure of human HpSPHb was determined using molecular replacement with the equivalent region of porcine HpHb (pdb: 4F4O) as a search model. The structure of the TbHpHbR:HpSPHb complex was then determined through molecular replacement using HpSPHb as a search model, allowing a poly-alanine model of TbHpHbR to be built. This model was then used as a molecular replacement search model to determine the structure of TbHpHbR using higher-resolution data obtained from crystals of the receptor alone. Both structures were then completed using iterative cycles of model building and refinement (Table 2).10.7554/eLife.05553.004Table 2.X-ray refinement statisticsDOI: http://dx.doi.org/10.7554/eLife.05553.004ComplexHpSPHbTbb HpHbRTbbHpHbR:HpSPHbResolution (Å)2.051.853.1No. reflections43,17044,68517,302Rwork / Rfree (%)18.0 / 22.419.84 / 23.9519.5 / 21.7No. of protein residues in model544523782rmsd bond lengths (Å)0.0200.0170.012rmsd bond angles (°)2.01.61.5Ramachandran plotAllowed region89.0%98.8%92.5%Additional allowed region11%1.2%7.5%Generously allowed region0%0%0%Disallowed region0%0%0%
+**Table 1.**
+ Crystallographic data collection statistics
 
-## The structure of the T. brucei haptoglobin-haemoglobin receptor
 
-Like
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>HpSPHb</th>
+      <th>Tbb HpHbR</th>
+      <th>TbbHpHbR:HpSPHb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beamline</td>
+      <td>Diamond I04-1</td>
+      <td>Diamond I03</td>
+      <td>Diamond I03</td>
+    </tr>
+    <tr>
+      <td>Space Group</td>
+      <td>p3121</td>
+      <td>p21</td>
+      <td>c2</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions (Å)</td>
+      <td>a = b = 96.6, c = 132.77</td>
+      <td>a = 27.90, b = 47.79, c = 203.38, β = 92.79</td>
+      <td>a = 223.4, b = 56.59, c = 65.29, β = 92.99</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>2.05</td>
+      <td>1.85</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.916</td>
+      <td>0.9763</td>
+      <td>0.9750</td>
+    </tr>
+    <tr>
+      <td>RPIM (%)</td>
+      <td>8.1 (37.4)</td>
+      <td>4.5 (42.9)</td>
+      <td>6.3 (72.6)</td>
+    </tr>
+    <tr>
+      <td>I/ σ(I)</td>
+      <td>8.7 (2.3)</td>
+      <td>10.2 (2.0)</td>
+      <td>9.8 (1.6)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.8 (100)</td>
+      <td>97.4 (96.5)</td>
+      <td>96.9 (97.1)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>9.6 (10.2)</td>
+      <td>3.1 (3.1)</td>
+      <td>3.2 (3.3)</td>
+    </tr>
+  </tbody>
+</table>
+
+The structure of human HpSPHb was determined using molecular replacement with the equivalent region of porcine HpHb (pdb: 4F4O) as a search model. The structure of the TbHpHbR:HpSPHb complex was then determined through molecular replacement using HpSPHb as a search model, allowing a poly-alanine model of TbHpHbR to be built. This model was then used as a molecular replacement search model to determine the structure of TbHpHbR using higher-resolution data obtained from crystals of the receptor alone. Both structures were then completed using iterative cycles of model building and refinement (Table 2).
+
+**Table 2.**
+ X-ray refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Complex</th>
+      <th>HpSPHb</th>
+      <th>Tbb HpHbR</th>
+      <th>TbbHpHbR:HpSPHb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>2.05</td>
+      <td>1.85</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>43,170</td>
+      <td>44,685</td>
+      <td>17,302</td>
+    </tr>
+    <tr>
+      <td>Rwork / Rfree (%)</td>
+      <td>18.0 / 22.4</td>
+      <td>19.84 / 23.95</td>
+      <td>19.5 / 21.7</td>
+    </tr>
+    <tr>
+      <td>No. of protein residues in model</td>
+      <td>544</td>
+      <td>523</td>
+      <td>782</td>
+    </tr>
+    <tr>
+      <td>rmsd bond lengths (Å)</td>
+      <td>0.020</td>
+      <td>0.017</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>rmsd bond angles (°)</td>
+      <td>2.0</td>
+      <td>1.6</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Allowed region</td>
+      <td>89.0%</td>
+      <td>98.8%</td>
+      <td>92.5%</td>
+    </tr>
+    <tr>
+      <td>Additional allowed region</td>
+      <td>11%</td>
+      <td>1.2%</td>
+      <td>7.5%</td>
+    </tr>
+    <tr>
+      <td>Generously allowed region</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>Disallowed region</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+    </tr>
+  </tbody>
+</table>
+
+### The structure of the T. brucei haptoglobin-haemoglobin receptor
+
+Like T. congolense HpHbR, the T. brucei receptor is elongated, consisting primarily of a three-helical bundle (Figure 1): helix I (red; residues 42–110), helix II (orange; residues 116–182), and helix V (dark blue; residues 224–296) with a total length of 118 Å. At the membrane distal end, the receptor widens to form a compact head structure that includes the N-terminus and a 42-residue loop containing two further helices, helix III (yellow: residues 186–196) and helix IV (green: residues 207-–218). The upper part of the structure is extremely similar to that from T. congolense, with the membrane distal halves of the two receptors aligning with a root mean square deviation of 1.1 Å (Figure 1—figure supplement 2).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig1-v2.jpg)
 
-**Figure 1.:** T. brucei haptoglobin-haemoglobin receptor.(A) The structure of the T. brucei haptoglobin-haemoglobin receptor, with helix I (red), helix II (orange) and helix V (blue). These three helices form an elongated bundle with a ∼50° kink towards the membrane proximal C-terminal end. The inset shows a molecular envelope derived from small angle x-ray scattering. (B) The structure of the T. congolense haptoglobin-haemoglobin receptor (Higgins et al., 2013) for comparison. (C) A change in the pattern of hydrophobic residues results in a rigid kink in the three helical bundle of the TbHpHbR. Corresponding regions of the structures of TbHpHbR and TcHpHbR are shown with side chains of the hydrophobic residues that pack in the core of the bundle coloured red and residues at the kink sites in TbHpHbR coloured green. Also shown are sequence alignments of TbHpHbR and TcHpHbR for these regions of each helix, coloured in the same way.DOI: http://dx.doi.org/10.7554/eLife.05553.005
+**Figure 1.:** (A) The structure of the T. brucei haptoglobin-haemoglobin receptor, with helix I (red), helix II (orange) and helix V (blue). These three helices form an elongated bundle with a ∼50° kink towards the membrane proximal C-terminal end. The inset shows a molecular envelope derived from small angle x-ray scattering. (B) The structure of the T. congolense haptoglobin-haemoglobin receptor (Higgins et al., 2013) for comparison. (C) A change in the pattern of hydrophobic residues results in a rigid kink in the three helical bundle of the TbHpHbR. Corresponding regions of the structures of TbHpHbR and TcHpHbR are shown with side chains of the hydrophobic residues that pack in the core of the bundle coloured red and residues at the kink sites in TbHpHbR coloured green. Also shown are sequence alignments of TbHpHbR and TcHpHbR for these regions of each helix, coloured in the same way.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Surface plasmon resonance signals for twofold dilutions of HpSPHb complex from a maximum concentration of 16 μM, binding to a surface coated with the truncated version of T. brucei HpHbR.DOI: http://dx.doi.org/10.7554/eLife.05553.006
+**Figure 1—figure supplement 1.:** Surface plasmon resonance signals for twofold dilutions of HpSPHb complex from a maximum concentration of 16 μM, binding to a surface coated with the truncated version of T. brucei HpHbR.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** Structural alignment of T. brucei HpHbR (blue) with T. congolense HpHbR (red). The membrane distal (upper) halves of the receptors align with a root mean square deviation of 1.1 Å while the membrane proximal (lower) halves differ due to the presence of a ∼50° kink in TbHpHbR.DOI: http://dx.doi.org/10.7554/eLife.05553.007
+**Figure 1—figure supplement 2.:** Structural alignment of T. brucei HpHbR (blue) with T. congolense HpHbR (red). The membrane distal (upper) halves of the receptors align with a root mean square deviation of 1.1 Å while the membrane proximal (lower) halves differ due to the presence of a ∼50° kink in TbHpHbR.
 
-The most dramatic difference between the
+The most dramatic difference between the T. brucei and T. congolense receptors is a ∼50° kink in TbHpHbR, located approximately one-third of the way along the receptor from the membrane proximal end. Each of the three helices is affected, with the backbone carbonyl groups of Asp88, Ala89, Glu123, Asn124, Asp270 and Ala271 no longer forming hydrogen bonds. This kink is not caused by flexibility, but is a rigid feature of the receptor, as it adopts the same confirmation in crystals of receptor alone, and in crystals of its complex with HpSPHb (Figure 2A), and is also observed in molecular envelopes derived from small angle x-ray scattering (Figure 1, Table 3). Instead it is caused by changes in the pattern of hydrophobic and hydrophilic residues around the kink site in each of the three helices. The three long helices of the T. congolense receptor are characterised by an alternating pattern of hydrophobic and hydrophilic residues, leading to continuous hydrophobic strips along the length of each helix that pack in the core of the helical bundle, stabilising its fold. In the T. brucei receptor, this pattern is disturbed at each kink site, breaking the organisation of the helix and leading to an alteration in the surface that displays the hydrophobic patch (Figure 1C). This stabilises the kink and makes it a rigid feature of the receptor structure.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig2-v2.jpg)
 
-**Figure 2.:** (A) The structure of the complex between T. brucei HpHbR (blue) bound to its ligand, HpSPHb (haptoglobin is yellow, the β-subunit of haemoglobin is red and the α-subunit of haemoglobin is orange). (B) The complex viewed from the membrane proximal end, showing the contacts made by haptoglobin and the β-subunit of haemoglobin. (C) A view of the haemoglobin-binding site showing direct contacts between the haem and the receptor. Residues from the receptor that directly contact the haemoglobin subunit are shown as sticks and are numbered.DOI: http://dx.doi.org/10.7554/eLife.05553.008
+**Figure 2.:** (A) The structure of the complex between T. brucei HpHbR (blue) bound to its ligand, HpSPHb (haptoglobin is yellow, the β-subunit of haemoglobin is red and the α-subunit of haemoglobin is orange). (B) The complex viewed from the membrane proximal end, showing the contacts made by haptoglobin and the β-subunit of haemoglobin. (C) A view of the haemoglobin-binding site showing direct contacts between the haem and the receptor. Residues from the receptor that directly contact the haemoglobin subunit are shown as sticks and are numbered.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.05553.009
-
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A) The structure of the TbHpHbR:HpSPHb complex docked into an ab initio molecular envelopes calculated from scattering data. (B) The theoretical scattering calculated from ab initio reconstructions (blue for HpSPHb, red for TbHpHbR and purple for TbHpHbR:HpSPHb), superimposed into experimental scattering data. Guinier plots are shown as an insert. (C) Distance distribution functions of HpSPHb (blue), TbHpHbR (red) and TbHpHbR:HpSPHb (purple) derived from small angle x-ray scattering. (D) A model of the TcHpHbR:HpSPHb complex docked into an ab initio molecular envelope calculated from scattering data. (E) The theoretical scattering calculated from an ab initio reconstruction of the TcHpHbR:HpSPHb complex. (F) Distance distribution function of TcHpHbR:HpSPHb derived from small angle x-ray scattering.DOI: http://dx.doi.org/10.7554/eLife.05553.010
+**Figure 2—figure supplement 2.:** (A) The structure of the TbHpHbR:HpSPHb complex docked into an ab initio molecular envelopes calculated from scattering data. (B) The theoretical scattering calculated from ab initio reconstructions (blue for HpSPHb, red for TbHpHbR and purple for TbHpHbR:HpSPHb), superimposed into experimental scattering data. Guinier plots are shown as an insert. (C) Distance distribution functions of HpSPHb (blue), TbHpHbR (red) and TbHpHbR:HpSPHb (purple) derived from small angle x-ray scattering. (D) A model of the TcHpHbR:HpSPHb complex docked into an ab initio molecular envelope calculated from scattering data. (E) The theoretical scattering calculated from an ab initio reconstruction of the TcHpHbR:HpSPHb complex. (F) Distance distribution function of TcHpHbR:HpSPHb derived from small angle x-ray scattering.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** A model for a complex of TbHpHbR bound to haemoglobin. This was derived by docking a haemoglobin tetramer onto the receptor with the β-subunit binding to the receptor as in the TbHpHbR:HpSPHb complex. TbHpHbR is shown in blue, the α-subunits of haemoglobin are orange and the β-subunits are red. A close up of the model is shown in the right hand panel with side chains involved in clashes shown as sticks.DOI: http://dx.doi.org/10.7554/eLife.05553.011
+**Figure 2—figure supplement 3.:** A model for a complex of TbHpHbR bound to haemoglobin. This was derived by docking a haemoglobin tetramer onto the receptor with the β-subunit binding to the receptor as in the TbHpHbR:HpSPHb complex. TbHpHbR is shown in blue, the α-subunits of haemoglobin are orange and the β-subunits are red. A close up of the model is shown in the right hand panel with side chains involved in clashes shown as sticks.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig2-figsupp4-v2.jpg)
 
-**Figure 2—figure supplement 4.:** (A) The structures of the HpSPHb region of porcine HpHb (red) aligned to the equivalent region of human HpSPHb from the structure of the TbHpHbR:HpSPHb complex (yellow). The structures align with a root mean square deviation of ∼0.5 Å. The major difference is circled and lies around the site at which haptoglobin is cleaved during a processing event in the endoplasmic reticulum, which is disordered in the TbHpHbR:HpSPHb complex. (B) A structural alignment of the porcine HpSPHb structure onto the TbHpHbR:HpSPHb structure. The region that is structurally altered by cleavage is circled and is not involved in contacts with the receptor. This is confirmed by surface plasmon resonance data (Figure 1—figure supplement 1) which shows that TbHpHbR binds with similar affinity to HpSPHb as to previously measured native, cleaved HpHb.DOI: http://dx.doi.org/10.7554/eLife.05553.012
+**Figure 2—figure supplement 4.:** (A) The structures of the HpSPHb region of porcine HpHb (red) aligned to the equivalent region of human HpSPHb from the structure of the TbHpHbR:HpSPHb complex (yellow). The structures align with a root mean square deviation of ∼0.5 Å. The major difference is circled and lies around the site at which haptoglobin is cleaved during a processing event in the endoplasmic reticulum, which is disordered in the TbHpHbR:HpSPHb complex. (B) A structural alignment of the porcine HpSPHb structure onto the TbHpHbR:HpSPHb structure. The region that is structurally altered by cleavage is circled and is not involved in contacts with the receptor. This is confirmed by surface plasmon resonance data (Figure 1—figure supplement 1) which shows that TbHpHbR binds with similar affinity to HpSPHb as to previously measured native, cleaved HpHb.
 
-## The structure of TbHpHbR in complex with haptoglobin-haemoglobin
+**Table 3.**
+ Small angle x-ray scattering statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>MW (kDa)</th>
+      <th>RG (nm)</th>
+      <th>Dmax (nm)</th>
+      <th>Volume (nm3)</th>
+      <th>Mwapp (kDa)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HpSPHb</td>
+      <td>59.7</td>
+      <td>2.6</td>
+      <td>7.5</td>
+      <td>75</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>TbHpHbR</td>
+      <td>32.2</td>
+      <td>3.5</td>
+      <td>11.5</td>
+      <td>44</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>TbHbHbR:HpSPHb</td>
+      <td>91.8</td>
+      <td>3.2</td>
+      <td>10.8</td>
+      <td>110</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>TbHpHbR:HpSPHb</td>
+      <td>89.6</td>
+      <td>3.8</td>
+      <td>12.0</td>
+      <td>140</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>HpHb</td>
+      <td>152</td>
+      <td>5.6</td>
+      <td>18.2</td>
+      <td>214</td>
+      <td>107</td>
+    </tr>
+    <tr>
+      <td>TbHpHbR:HpHb</td>
+      <td>217</td>
+      <td>6.3</td>
+      <td>16.5</td>
+      <td>370</td>
+      <td>185</td>
+    </tr>
+  </tbody>
+</table>
+
+### The structure of TbHpHbR in complex with haptoglobin-haemoglobin
 
 The structure of the TbHpHbR:HpSPHb complex reveals an unexpected binding mode in which the ligand-binding surface extends along more than half of the length of the receptor (Figure 2, Figure 2—figure supplement 1). Residues previously identified as playing a role in HpHb binding in TcHpHbR, such as S59 (Higgins et al., 2013), lie ∼35 Å from the membrane distal tip of the receptor and directly contact haemoglobin. However, this is the upper part of the binding site, with residues from haptoglobin interacting as far as 70 Å from the membrane distal tip. This arrangement is confirmed by small angle x-ray scattering, with complexes of HpSPHb bound to either T. brucei or T. congolense receptors showing a similar architecture to that observed in the crystal (Figure 2—figure supplement 2, Table 3).
 
 The haptoglobin-haemoglobin complex covers a total area of ∼1250 Å2 of the receptor and can be divided into two distinct regions (Figure 2B). The membrane distal part, (∼745 Å2) contacts the β-subunit of the haemoglobin dimer with no contacts between the receptor and the haemoglobin α-subunit. The membrane proximal region (∼505 Å2) forms a binding surface for haptoglobin. The involvement of both haemoglobin and haptoglobin in binding explains why the receptor binds HpHb but not haptoglobin alone. Modelling suggests that the lack of haemoglobin binding is due to steric clashes of the receptor with the second αβ dimer of haemoglobin when the β-subunit of a haemoglobin tetramer is docked onto the receptor with the binding mode observed in the TbHpHbR:HpSPHb complex (Figure 2—figure supplement 3). Therefore, the conformation of the receptor and the presence of two distinct binding sites allow the receptor to specifically select HpHb over its two constitutive components.
 
-The haemoglobin β-subunit makes a number of direct interactions, mostly hydrogen bonds, with the receptor (Figure 2C, Table 4). Side chains from helix I of the receptor make the majority of these contacts, with additional interactions from helix II and the loop that links helices III and IV. These features lie along a groove on haemoglobin that is formed by helices C and F of the β-subunit. The haem group also makes direct contacts with the receptor, with the propionate chains contacting residues K56, S59, K164, R199 and Y200 of the receptor. These interactions, mediated by haem, form ∼140 Å2 of the ∼745 Å2 total contact area of Hb.10.7554/eLife.05553.014Table 4.Interactions between TbHpHbR and HpSPHbDOI: http://dx.doi.org/10.7554/eLife.05553.014ReceptorHpSPHbResidueGroupChainResidueGroupInteractionHbβK56side chainBHaem144O1DHydrogen bondE57side chainBK96Side chainSalt bridgeS59side chainBHaem144O1D/O2DHydrogen bondI60side chainBPatchHydrophobicR67side chain NH1BR41Backbone COHydrogen bondE70side chain OE1/OE2BR41Side chain NE/NH2Salt bridgeS161side chainBK60Side chainHydrogen bondS161side chainBS45Backbone COHydrogen bondK164side chainBHaem144O2DHydrogen bondR199side chain NEBHaem144O2AHydrogen bondY200side chain OHBHaem144O2AHydrogen bondS203backbone COBK96Side chainHydrogen bondHpSPS73side chainCK345Side chainHydrogen bondV74hydrophobicCPatchHydrophobicQ75OE1CG276Backbone COHydrogen bondA78side chainCPatchHydrophobicA82side chainCPatchHydrophobicK85side chainCD305Side chain O2DSalt bridge
+The haemoglobin β-subunit makes a number of direct interactions, mostly hydrogen bonds, with the receptor (Figure 2C, Table 4). Side chains from helix I of the receptor make the majority of these contacts, with additional interactions from helix II and the loop that links helices III and IV. These features lie along a groove on haemoglobin that is formed by helices C and F of the β-subunit. The haem group also makes direct contacts with the receptor, with the propionate chains contacting residues K56, S59, K164, R199 and Y200 of the receptor. These interactions, mediated by haem, form ∼140 Å2 of the ∼745 Å2 total contact area of Hb.
+
+**Table 4.**
+ Interactions between TbHpHbR and HpSPHb
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Receptor</th>
+      <th colspan="3">HpSPHb</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Residue</th>
+      <th>Group</th>
+      <th>Chain</th>
+      <th>Residue</th>
+      <th>Group</th>
+      <th>Interaction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Hbβ</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>K56</td>
+      <td>side chain</td>
+      <td>B</td>
+      <td>Haem144</td>
+      <td>O1D</td>
+      <td>Hydrogen bond</td>
+    </tr>
+    <tr>
+      <td>E57</td>
+      <td>side chain</td>
+      <td>B</td>
+      <td>K96</td>
+      <td>Side chain</td>
+      <td>Salt bridge</td>
+    </tr>
+    <tr>
+      <td>S59</td>
+      <td>side chain</td>
+      <td>B</td>
+      <td>Haem144</td>
+      <td>O1D/O2D</td>
+      <td>Hydrogen bond</td>
+    </tr>
+    <tr>
+      <td>I60</td>
+      <td>side chain</td>
+      <td>B</td>
+      <td>Patch</td>
+      <td></td>
+      <td>Hydrophobic</td>
+    </tr>
+    <tr>
+      <td>R67</td>
+      <td>side chain NH1</td>
+      <td>B</td>
+      <td>R41</td>
+      <td>Backbone CO</td>
+      <td>Hydrogen bond</td>
+    </tr>
+    <tr>
+      <td>E70</td>
+      <td>side chain OE1/OE2</td>
+      <td>B</td>
+      <td>R41</td>
+      <td>Side chain NE/NH2</td>
+      <td>Salt bridge</td>
+    </tr>
+    <tr>
+      <td>S161</td>
+      <td>side chain</td>
+      <td>B</td>
+      <td>K60</td>
+      <td>Side chain</td>
+      <td>Hydrogen bond</td>
+    </tr>
+    <tr>
+      <td>S161</td>
+      <td>side chain</td>
+      <td>B</td>
+      <td>S45</td>
+      <td>Backbone CO</td>
+      <td>Hydrogen bond</td>
+    </tr>
+    <tr>
+      <td>K164</td>
+      <td>side chain</td>
+      <td>B</td>
+      <td>Haem144</td>
+      <td>O2D</td>
+      <td>Hydrogen bond</td>
+    </tr>
+    <tr>
+      <td>R199</td>
+      <td>side chain NE</td>
+      <td>B</td>
+      <td>Haem144</td>
+      <td>O2A</td>
+      <td>Hydrogen bond</td>
+    </tr>
+    <tr>
+      <td>Y200</td>
+      <td>side chain OH</td>
+      <td>B</td>
+      <td>Haem144</td>
+      <td>O2A</td>
+      <td>Hydrogen bond</td>
+    </tr>
+    <tr>
+      <td>S203</td>
+      <td>backbone CO</td>
+      <td>B</td>
+      <td>K96</td>
+      <td>Side chain</td>
+      <td>Hydrogen bond</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HpSP</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S73</td>
+      <td>side chain</td>
+      <td>C</td>
+      <td>K345</td>
+      <td>Side chain</td>
+      <td>Hydrogen bond</td>
+    </tr>
+    <tr>
+      <td>V74</td>
+      <td>hydrophobic</td>
+      <td>C</td>
+      <td>Patch</td>
+      <td></td>
+      <td>Hydrophobic</td>
+    </tr>
+    <tr>
+      <td>Q75</td>
+      <td>OE1</td>
+      <td>C</td>
+      <td>G276</td>
+      <td>Backbone CO</td>
+      <td>Hydrogen bond</td>
+    </tr>
+    <tr>
+      <td>A78</td>
+      <td>side chain</td>
+      <td>C</td>
+      <td>Patch</td>
+      <td></td>
+      <td>Hydrophobic</td>
+    </tr>
+    <tr>
+      <td>A82</td>
+      <td>side chain</td>
+      <td>C</td>
+      <td>Patch</td>
+      <td></td>
+      <td>Hydrophobic</td>
+    </tr>
+    <tr>
+      <td>K85</td>
+      <td>side chain</td>
+      <td>C</td>
+      <td>D305</td>
+      <td>Side chain O2D</td>
+      <td>Salt bridge</td>
+    </tr>
+  </tbody>
+</table>
 
 The haptoglobin subunit also interacts with helix I of the receptor, through a predominantly hydrophobic contact, mediated by three loops that emerge from the C-terminal β-sheet of haptoglobin (Figure 2B, Table 4). The structure of human haptoglobin from this complex aligns with that from porcine Hp with a root mean square deviation of just 0.5 Å and reveals no significant structural change on receptor binding (Figure 2—figure supplement 4). The alignment also confirms that the natural cleavage of Hp does not affect TbHpHbR binding, as residues in the loop that contains the cleavage site are not close to the receptor.
 
-Rather than haptoglobin, trypanolytic factor-1 (TLF1) contains haptoglobin-related protein (Hpr) and binding of HprHb complex to TbHpHbR results in TLF1 uptake. The HprSP domain contains a total of sixteen amino acid substitutions when compared with the HpSP domain. Mapping these onto the structure shows that none of these differences lie in residues that contact the receptor (
+Rather than haptoglobin, trypanolytic factor-1 (TLF1) contains haptoglobin-related protein (Hpr) and binding of HprHb complex to TbHpHbR results in TLF1 uptake. The HprSP domain contains a total of sixteen amino acid substitutions when compared with the HpSP domain. Mapping these onto the structure shows that none of these differences lie in residues that contact the receptor (Figure 3A). Indeed HprSPHb complexes, prepared using the same protocols as HpSPHb complexes, bound to the receptor with an affinity of 1.7 μM, as determined by surface plasmon resonance (Figure 3B), comparable to the 0.7 μM affinity of the receptor for HpSPHb. This suggests that HprHb, and as a result, TLF1, will have a shared binding mode with HpHb.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig3-v2.jpg)
 
-**Figure 3.:** (A) The structure of the TbHpHbR:HpSPHb complex is shown with the receptor in blue and haptoglobin in yellow. Side chains in haptoglobin that are different in haptoglobin-related protein are highlighted in pink and are not involved in making interactions with the receptor. (B) Surface plasmon resonance signals for two-fold dilutions of HprSPHb complex from a maximum concentration of 8 μM, binding to a surface coated with T. brucei HpHbR. The measured affinity of 1.7 μM can be compared with the affinity of 0.7 μM for HpSPHb.DOI: http://dx.doi.org/10.7554/eLife.05553.015
+**Figure 3.:** (A) The structure of the TbHpHbR:HpSPHb complex is shown with the receptor in blue and haptoglobin in yellow. Side chains in haptoglobin that are different in haptoglobin-related protein are highlighted in pink and are not involved in making interactions with the receptor. (B) Surface plasmon resonance signals for two-fold dilutions of HprSPHb complex from a maximum concentration of 8 μM, binding to a surface coated with T. brucei HpHbR. The measured affinity of 1.7 μM can be compared with the affinity of 0.7 μM for HpSPHb.
 
-## A model for haptoglobin-haemoglobin uptake in the context of the VSG layer
+### A model for haptoglobin-haemoglobin uptake in the context of the VSG layer
 
 The haptoglobin-haemoglobin receptor operates in the context of the VSG layer, a dense coat of surface protein that covers the trypansosome surface. It is therefore initially surprising that the location of the binding site for bulky HpHb complexes extends some 70 Å from the membrane distal tip of the receptor and below the surface of the VSG layer. However, one consequence of the kink in the T. brucei receptor is to increase its effective diameter, pushing apart VSG molecules. In addition, the orientation of the kink is precisely arranged to increase exposure of the HpHb binding site to the surface, making it more accessible for ligand binding.
 
-Docking of TbHpHbR:HpSPHb structures onto the structure of dimeric porcine HpHb reveals another consequence of the kink. This modelling suggests that two receptors can bind simultaneously to a single HpHb dimer, resulting in a C-shaped complex with a parallel arrangement of the membrane proximal parts of the two receptors (
+Docking of TbHpHbR:HpSPHb structures onto the structure of dimeric porcine HpHb reveals another consequence of the kink. This modelling suggests that two receptors can bind simultaneously to a single HpHb dimer, resulting in a C-shaped complex with a parallel arrangement of the membrane proximal parts of the two receptors (Figure 4A). Indeed, this arrangement was confirmed in solution by small angle x-ray scattering. Native (dimeric) human HpHb was mixed with TbHpHbR, and gel filtration was performed, with SAXS data collected from samples as they emerged from the column. The resultant scattering curves confirmed the assembly of a complex containing two receptors and one HpHb in vitro. These data were used to generate a molecular envelope for the complex, which confirmed the C-shaped architecture (Figure 4B, Figure 4—figure supplement 1, Table 3). Additional support for the formation of this complex in solution came from multi-angle laser light scattering (SEC-MALLS), which revealed masses of 30 kDa for the receptor, 150 kDa for HpHb and 210 kDa for the complex, showing that two receptors bind to each HpHb in solution (Figure 4—figure supplement 2). This arrangement, in which two independent GPI-anchored receptors can bind simultaneously to an HpHb dimer, would increase avidity for the ligand and decrease the ligand concentration required for efficient uptake.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig4-v2.jpg)
 
-**Figure 4.:** (A) A model for a complex of one HpHb dimer bound to two receptors, generated by docking the structure of the TbHpHbR:HpSPHb complex onto that of porcine HpHb (Andersen et al., 2012). The receptors are organized such that two receptors, both associated with the membrane through attachment at their C-termini, can simultaneously bind to one HpHb dimer. (B) An ab initio molecular envelope derived from small angle x-ray scattering analysis of the TbHpHbR:HpHb complex supports the formation of a complex containing one HpHb dimer bound to two receptors. (C) Uptake of fluorescently labelled dimeric HpHb into live cells was monitored via flow cytometry across a range of 1–62.5 nM. Uptake saturated by 4 nM in wild-type cells whereas no uptake was observed in the HpHbR null cell line. No fluid phase uptake of labelled BSA was observed at these concentrations. (D) Uptake of fluorescently labelled monomeric HpSPHb was not readily detected until 62.5 nM, at which point uptake had not saturated. HpSPHb uptake at 62.5 nM was lost in the HpHbR null cell line. Each uptake assay was carried out in triplicate. Error bars represent standard error of the mean, n = 3.DOI: http://dx.doi.org/10.7554/eLife.05553.016
+**Figure 4.:** (A) A model for a complex of one HpHb dimer bound to two receptors, generated by docking the structure of the TbHpHbR:HpSPHb complex onto that of porcine HpHb (Andersen et al., 2012). The receptors are organized such that two receptors, both associated with the membrane through attachment at their C-termini, can simultaneously bind to one HpHb dimer. (B) An ab initio molecular envelope derived from small angle x-ray scattering analysis of the TbHpHbR:HpHb complex supports the formation of a complex containing one HpHb dimer bound to two receptors. (C) Uptake of fluorescently labelled dimeric HpHb into live cells was monitored via flow cytometry across a range of 1–62.5 nM. Uptake saturated by 4 nM in wild-type cells whereas no uptake was observed in the HpHbR null cell line. No fluid phase uptake of labelled BSA was observed at these concentrations. (D) Uptake of fluorescently labelled monomeric HpSPHb was not readily detected until 62.5 nM, at which point uptake had not saturated. HpSPHb uptake at 62.5 nM was lost in the HpHbR null cell line. Each uptake assay was carried out in triplicate. Error bars represent standard error of the mean, n = 3.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) An ab initio molecular envelopes calculated from scattering data from the HpHb complex. (B) The theoretical scattering calculated from ab initio reconstructions for HpHb superimposed into experimental scattering data. Guinier plots are shown as an insert. (C) Distance distribution functions of HpHb derived from small angle x-ray scattering. (D) An ab initio molecular envelopes calculated from scattering data from the TbHpHbR:HpHb complex. (E) The theoretical scattering calculated from ab initio reconstructions for TbHpHbR:HpHb superimposed into experimental scattering data. Guinier plots are shown as an insert. (F) Distance distribution functions of TbHpHbR:HpHb derived from small angle x-ray scattering.DOI: http://dx.doi.org/10.7554/eLife.05553.017
+**Figure 4—figure supplement 1.:** (A) An ab initio molecular envelopes calculated from scattering data from the HpHb complex. (B) The theoretical scattering calculated from ab initio reconstructions for HpHb superimposed into experimental scattering data. Guinier plots are shown as an insert. (C) Distance distribution functions of HpHb derived from small angle x-ray scattering. (D) An ab initio molecular envelopes calculated from scattering data from the TbHpHbR:HpHb complex. (E) The theoretical scattering calculated from ab initio reconstructions for TbHpHbR:HpHb superimposed into experimental scattering data. Guinier plots are shown as an insert. (F) Distance distribution functions of TbHpHbR:HpHb derived from small angle x-ray scattering.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Multi-angle light scattering (MALLS) measurements of TbHpHbR (red), HpHb (blue) and the TbHpHbR:HpHb complex (green). The molecular weights determined from scattering data (∼30 kDa for TbHpHbR, ∼150 kDa for HpHb and ∼210 kDa for the TbHpHbR:HpHb complex) show the formation of a complex containing two receptors bound to a single HpHb.DOI: http://dx.doi.org/10.7554/eLife.05553.018
+**Figure 4—figure supplement 2.:** Multi-angle light scattering (MALLS) measurements of TbHpHbR (red), HpHb (blue) and the TbHpHbR:HpHb complex (green). The molecular weights determined from scattering data (∼30 kDa for TbHpHbR, ∼150 kDa for HpHb and ∼210 kDa for the TbHpHbR:HpHb complex) show the formation of a complex containing two receptors bound to a single HpHb.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** −/− cell line of T. brucei.TbHpHbR null cell lines were generated in T. b. brucei Lister 427 bloodstream form (BSF) cells. (A) The TbHbHbR gene was knocked out in Lister 427 BSF cells by replacement of one allele with a blasticidin resistance gene and the other allele with a neomycin resistance gene in four independent clones, as confirmed by Southern blot (P = Parental cell line, 1–4 = TbHpHbR null clones 1–4). The schematic depicts the original (top) and replacement (middle and lower) TbHpHbR loci and the positions of Southern blot probes and restriction enzyme sites used. Expected fragment sizes are annotated. (B) Growth of the TbHpHbR null clones was monitored in vitro over 192 hr. Parental L427 cells grew with a mean doubling time of 8.4 hr whereas the TbHpHbR null clones had an increased mean doubling time of 11.5–12.0 hr. Error bars represent standard deviation, n = 8.DOI: http://dx.doi.org/10.7554/eLife.05553.019
+**Figure 4—figure supplement 3.:** TbHpHbR null cell lines were generated in T. b. brucei Lister 427 bloodstream form (BSF) cells. (A) The TbHbHbR gene was knocked out in Lister 427 BSF cells by replacement of one allele with a blasticidin resistance gene and the other allele with a neomycin resistance gene in four independent clones, as confirmed by Southern blot (P = Parental cell line, 1–4 = TbHpHbR null clones 1–4). The schematic depicts the original (top) and replacement (middle and lower) TbHpHbR loci and the positions of Southern blot probes and restriction enzyme sites used. Expected fragment sizes are annotated. (B) Growth of the TbHpHbR null clones was monitored in vitro over 192 hr. Parental L427 cells grew with a mean doubling time of 8.4 hr whereas the TbHpHbR null clones had an increased mean doubling time of 11.5–12.0 hr. Error bars represent standard deviation, n = 8.
 
 To test this hypothesis, we performed uptake experiments using T. brucei. HpHb (dimeric), HpSPHb (monomeric) and bovine serum albumin (BSA, as a control to assess fluid phase uptake), were each fluorescently labelled. In addition, we prepared a null cell line, TbHpHbR−/−, in which both copies of the receptor were disrupted (Figure 4—figure supplement 3). These reagents allowed us to investigate the concentration dependence of ligand uptake. In wild-type T. brucei cells, uptake of HpHb reached saturation below a concentration of 4 nM (Figure 4C). In contrast, the uptake of HpSPHb was negligible at a concentration of 4 nM and continued to increase at 62.5 nM (Figure 4D). Uptake of HpSPHb and HpHb observed in wild-type cells was due to the TbHpHbR, as expected (Vanhollebeke et al., 2008), as uptake of both ligands into TbHpHbR−/− cells was comparable to that of BSA in the range of ligand concentrations assayed (0–62.5 nM).
 
@@ -141,11 +544,11 @@ Here, the first structure of a trypanosome receptor in complex with its ligand i
 
 However, a ∼50° rigid kink occurs as an adaptation in the three helical bundle of the T. brucei receptor, and we propose that it has two main functional consequences. Firstly, the direction of the kink is precisely arranged to bend the receptor such that the ligand-binding site becomes more exposed at the membrane surface. The kink will also increase the effective diameter of the receptor in the plane of the membrane. This combination is likely to increase the separation of VSG molecules in the region of the receptor and to increase the accessibility of the binding site for bulky macromolecular ligands such as HpHb and trypanolytic factors. Increased separation of VSG molecules by a trypanosome receptor is not a novel phenomena, with bulky glycan chains attached to the transferrin receptor proposed to have a similar effect (Mehlert et al., 2012), suggesting that different receptors increase the accessibility of binding sites for bulky ligands by different means.
 
-The precise nature of the integration of TbHpHbR into the VSG layer remains unresolved as the effect of the C-terminal domains of both the receptor and VSG on the vertical disposition of each molecule remains unknown. An attractive model is that the ligand, whether HpHb or TLF1, is bound above the top of the VSG. However, the dimensions of the structures of VSG and the TbHpHbR:HpHb complex suggest that this may not be the case and that the HpHb ligand is held at least partially within the VSG layer (
+The precise nature of the integration of TbHpHbR into the VSG layer remains unresolved as the effect of the C-terminal domains of both the receptor and VSG on the vertical disposition of each molecule remains unknown. An attractive model is that the ligand, whether HpHb or TLF1, is bound above the top of the VSG. However, the dimensions of the structures of VSG and the TbHpHbR:HpHb complex suggest that this may not be the case and that the HpHb ligand is held at least partially within the VSG layer (Figure 5). The TLF1 ligand is ∼4 times the size of HpHb and this must, at least partially, protrude above the top of the VSG layer.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/05553/elife-05553-fig5-v2.jpg)
 
-**Figure 5.:** This suggests that HpHb will lie at least partially within the VSG layer when bound to two receptors.DOI: http://dx.doi.org/10.7554/eLife.05553.020
+**Figure 5.:** This suggests that HpHb will lie at least partially within the VSG layer when bound to two receptors.
 
 A second consequence of the kink is to allow two receptors to simultaneously bind to one dimeric HpHb complex when their membrane-proximal C-termini are membrane-attached. The affinity of a single receptor for HpHb is modest, at ∼1 μM, with a rapid off-rate. By enabling two receptors to bind simultaneously, the kink will increase the ligand avidity, changing the effective affinity to something in the low nanomolar range, as previously measured for bivalent binding by TbHpHbR (Higgins et al., 2013) and to live cells (Drain et al., 2001).
 
@@ -161,41 +564,41 @@ In conclusion, we present the first structure of a trypanosome receptor in compl
 
 ## Materials and methods
 
-## T. brucei HpHbR cloning, expression and purification
+### T. brucei HpHbR cloning, expression and purification
 
 Full-length T. b. brucei HpHbR, without the N-terminal signal sequence and C-terminal GPI-anchor addition sequence, had been previously cloned for expression in a modified pET-15b to generate a polypeptide with an N-terminal hexahistidine tag and a cleavage site for TEV protease (Higgins et al., 2013). To produce a truncated construct for expression of the N-terminal ligand-binding domain, a stop codon was inserted after residue R299 using a polymerase chain reaction based mutagenesis protocol, using oligonucleotide GAGATGAAGCGCTAGGGGAACCCGATC and its reverse-complement. Mutagenesis was carried out as described for the Quikchange mutagenesis method (Stratagene, La Jolla, CA) and the plasmid was sequence verified.
 
 The protein was expressed in E. coli Origami B, induced with 1 mM IPTG and incubated overnight at 18°C. The protein was purified by Ni2+-NTA affinity chromatography and cleaved overnight with his-tagged TEV protease at 4°C in PBS with 3 mM oxidized glutathione, 0.3 mM reduced glutathione, followed by reverse Ni2+-NTA affinity chromatography. The protein was concentrated by Amicon Ultra centrifugal filter device (10,000 MWCO) (EMD Millipore, Billerica, MA) and gel filtered using a Superdex 75 16/60 column (Life Technologies, Carlsbad, CA) into 20 mM HEPES pH 7.5, 150 mM NaCl.
 
-## HpSP and HprSP cloning, expression and purification
+### HpSP and HprSP cloning, expression and purification
 
 Synthetic genes encoding the SP domains of human Hp (148–406) and Hpr (90–348) were cloned into a modified pAcGP67A vector to generate a polypeptide with an N-terminal hexahistidine tag and a cleavage site for TEV protease. These were transfected into Sf9 insect cells using the BaculoGold Baculovirus DNA transfection protocol (BD Biosciences, Franklin Lakes, NJ). Following selection of virus using plaque assays, the third amplification of recombinant virus was used to infect Sf9 insect cells. After 3 days, the cells were centrifuged for 15 min at 6000×g. After filtering, the supernatant was buffer exchanged into 20 mM Tris pH 8, 300 mM NaCl using a tangential flow apparatus (Pall Corporation, Port Washington, NY), followed by Ni2+-NTA affinity chromatography. The protein was concentrated using an Amicon Ultra centrifugal filter device (10,000 MWCO) (EMD Millipore). When used for crystallisation, HpSP was deglycosylated by incubation with endoglycosidase Hf (Sigma-Aldrich, St Louis, MO) and endoglycosidase F3 at enzyme:protein ratios of 1:25 in 1 mM CaCl2, 1 mM MgCl2, 100 mM HEPES pH 7.5 at 37°C for 3 hr.
 
-## Purification of Hb and formation of the HpHb complex
+### Purification of Hb and formation of the HpHb complex
 
 Hb was isolated from human blood by sonication, followed by anion exchange chromatography using a Mono Q column (Life Technologies). HpHb was made by mixing full-length Hp 1-1 (Sigma-Aldrich) with purified Hb and isolating the complex by gel filtration using a Superdex 200 16/60 column (Life Technologies) in 20 mM HEPES pH 7.5, 150 mM NaCl.
 
-## HpSPHb and HprSPHb complex formation
+### HpSPHb and HprSPHb complex formation
 
 HpSP or HprSP at a threefold molar excess was mixed with Hb and diluted fivefold into 20 mM Tris pH 8, 500 mM NaCl, 15 mM imidazole. The complex was purified by Ni2+-NTA affinity chromatography, washed using the dilution buffer, and eluted into PBS containing 200 mM imidazole. The complexes were then concentrated using an Amicon Ultra centrifugal filter device (10,000 MWCO) (EMD Millipore), and purified by gel filtration using a Superdex 200 16/60 column (Life Technologies) in 20 mM HEPES pH 7.5, 150 mM NaCl.
 
-## Crystallisation, data collection and structure determination of the HpSPHb complex
+### Crystallisation, data collection and structure determination of the HpSPHb complex
 
 HpSPHb was concentrated to 15 mg ml−1 for crystallization. Crystals were obtained after 8 hr in sitting drops with a well solution containing 0.2 M NaCl, 0.1 M sodium cacodylate pH 6.5 and 2 M ammonium sulphate. These were cryoprotected by transfer into well solution with the addition of 30% vol/vol glycerol before cryo-cooling using liquid nitrogen. Data were collected on beamline I04-1 at the Diamond light source and were integrated and scaled using iMosflm (Battye et al., 2011) and scala (Evans, 1993) from the CCP4 suite (Winn et al., 2011), giving a final resolution of 2.05 Å. The structure was determined by molecular replacement using Phaser (McCoy et al., 2007) with the equivalent region of the porcine HpHb (pdb: 4F4O) as a search model. The structure was rebuilt and refined using Coot (Emsley et al., 2010) and REFMAC (Murshudov et al., 2011).
 
-## Crystallisation, data collection and structure determination of the TbHpHbR:HpSPHb complex
+### Crystallisation, data collection and structure determination of the TbHpHbR:HpSPHb complex
 
 TbHpHbR was mixed with HpSPHb and purified by gel filtration using a Superdex 200 16/600 column (Life Technologies) into a buffer containing 150 mM NaCl and 20 mM HEPES pH 7.5. It was concentrated to a final concentration of 15 mg ml−1 and crystallised at 18 °C using sitting drops with a well solution containing 12.5% vol/vol MPD, 0.03 M NaBr, 0.03 M NaI, 0.03 M NaF, 0.1 M MES/imidazole pH 6.5, 12.5% wt/vol PEG 1000, 12.5% wt/vol PEG 3350 from the Morpheus screen (Molecular Dimensions, UK). Crystals formed after 10 days. Seed beads (Hampton Research, Aliso Viejo, CA) were used to create seeds from these crystals. These were used to seed a plate containing 100 nl of protein, 50 nl of the Morpheus well solution, and 50 nl of the Silver Bullet additive screen (Hampton Research). Crystals grew after 8 days in the well containing additives 0.2% wt/vol 2,2′-thiodiglcolic acid, 0.2% wt/vol apidic acid, 0.2% wt/vol benzoic acid, 0.2% wt/vol oxalic acid anhydrous, 0.2% wt/vol terephthalic acid. These were cryo-cooled in liquid nitrogen in the Morpheus well solution.
 
 Data were collected on beamline I03 at the Diamond light source. Data reduction was performed using XDS (Kabsch, 2010) and the structure was solved by molecular replacement with the HpSPHb structure as a search model using Phaser (McCoy et al., 2007). Automatic model building in Buccaneer (Cowtan, 2006) was used to identify the positions of the receptor helices, leading to a cycle of model building and refinement in Coot (Emsley et al., 2010) and Buster (Bricogne et al., 2011). The coordinates from the higher resolution structures of both and TbHpHbR, also determined during this study, were used to provide restraints during refinement, leading to improved stereochemistry of the resultant model.
 
-## Crystallisation, data collection and structure determination of TbHpHbR
+### Crystallisation, data collection and structure determination of TbHpHbR
 
 The receptor was concentrated to 12.5 mg ml−1 for crystallization. Crystals were obtained at 18 °C after 7 days using sitting drops with a well solution of 0.15 M KBr, 30% wt/vol PEG 2000 MME from the JCSG+ screen (Molecular Dimensions). These were partially dehydrated and cryoprotected by transfer into the well condition with addition of 30% vol/vol glycerol before cryo-cooling in liquid nitrogen.
 
 Data were collected on beamline I03 at the Diamond light source. Data reduction was performed using iMosflm (Battye et al., 2011) and scala (Evans, 1993) from the CCP4 data processing suite (Winn et al., 2011). Molecular replacement was performed using Phaser (McCoy et al., 2007), with the structure of TbHpHbR taken from the TbHpHbR:HpSPHb complex as a search model. A cycle of refinement and model building was carried out using REFMAC (Murshudov et al., 2011) and Coot (Emsley et al., 2010).
 
-## Small-angle X-ray scattering (SAXS) data collection and processing
+### Small-angle X-ray scattering (SAXS) data collection and processing
 
 SAXS data for TbHpHbR alone and in complex with HpSPHb, and for the complex of TcHpHbR with HpSPHb, were collected at the PetraIII P12 beamline at Deutsches Elektronen-Synchrotron using a wavelength of 1.24 Å. SAXS data for the complex of the receptor with dimeric HpHb were collected at beamline BM29 at the European Synchrotron Radiation Facility using a wavelength of 0.9 Å. SAXS data for HpHb alone was collected at beamline B21 at the Diamond Light Source with a wavelength of 1.0 Å. In all cases, scattering was detected using a Pilatus image reader at 20°C.
 
@@ -207,20 +610,20 @@ For each data set, PRIMUS (Konarev et al., 2003; Petoukhov et al., 2007) was use
 
 AutoRg calculated the distance distribution function (P(r)) using an indirect Fourier transform, allowing estimation of the radius of gyration (Rg), the maximum particle dimension (Dmax) and the Porod volume (Porod, 1982) by GNOM (Petoukhov et al., 2007). Initial models of the shape were generated using DAMMIF (Franke and Svergun, 2009) and averaged using the DAMAVER programme suite (Konarev et al., 2006). DAMMIN then produced a final model by minimising differences between experimental data and scattering of the model. The envelope model was produced using Situs (Birmanns et al., 2011), and feature-based docking of the crystal structures was completed using Sculptor (Birmanns et al., 2011).
 
-## Surface plasmon resonance
+### Surface plasmon resonance
 
 Measurements were performed on a Biacore T200 (Life Technologies) instrument with a constant flow rate of 30 μg ml−1. A CM5 chip was prepared by flowing over a 1:1 mixture of ethyl-dimethylaminopropyl-carbodiimide and N-hydroxysuccinimide. TbHpHbR was diluted into 10 mM sodium acetate pH 5 to a final concentration of 0.1 μM.
 
 Ligands were diluted into HBS (20 mM HEPES pH 7.5, 150 mM NaCl, 0.005% vol/vol Tween 20). Both channels were equilibrated with HBS before injection of binding partner, and the level of specific binding obtained from a subtraction of the response from channel 2 from that of channel 1. Values for KD were obtained by equilibrium binding analysis using the BIAevaluation software.
 
-## Size exclusion chromatography-multiangle laser light scattering
+### Size exclusion chromatography-multiangle laser light scattering
 
 Purified samples were loaded onto a Superose 6 10/300 column (GE Healthcare), then analysed using laser light scattering detected at 662 nm wavelength at 8 scattering angles between 20.6° and 149.1° using a Heleos 8 instrument (Wyatt Technology, Germany). ASTRA 6.1 (Wyatt Technology) was used to calculate molecular weights using the Zimm equation. The samples were loaded at concentrations of 10 μM for HpHb and 40 μM for TbHpHbR.
 
-## Trypanosome cell culture and construction of T. brucei HpHbR−/− cell line
+### Trypanosome cell culture and construction of T. brucei HpHbR−/− cell line
 
 T. brucei blood stream form cells were grown in HMI-9 at 37 °C with 5% CO2 (Hirumi and Hirumi, 1989). The linear DNAs used to replace HpHbR genes by homologous recombination were produced by PCR. First, one allele was replaced in procyclic form Lister 427 cells using a PCR product that contained 80 bp from upstream of the HpHbR gene, followed by the blasticin resistance cassette, followed by 80 bp from downstream of the HpHbR gene. The same approach was used with a G418 resistance cassette. Genomic DNA was prepared from blasticin or G418 resistant cell lines and used as a template for a PCR using oligonucleotides 500 bp upstream and downstream of the HpHbR gene. These second PCR products were used to serially transfect Lister 427 bloodstream form cells expressing VSG118.
 
-## Uptake assays for monitoring uptake of fluorescently labelled ligands into live cells
+### Uptake assays for monitoring uptake of fluorescently labelled ligands into live cells
 
 When used for uptake experiments, Hp, HpSP and BSA were labelled with Alexa Fluor 488 using the protein labelling kit (Life Technologies). The manufacturer's protocol was adapted, extending the reaction time to overnight at 4 °C to increase labelling efficiency. Hp and HpSP were then subsequently mixed with Hb to form complex as above. For each assay, 5 × 106 wild type Lister 427 or HpHbR −/− cells were resuspended in 100 µl of serum free HMI-9 with 1% BSA and incubated with 2 µM protease inhibitor FMK-024 for 10 min at 37 °C. Cells were then incubated with 1–62.5 nM fluorescently labelled protein for 2 hr at 37 °C before being washed twice in serum free HMI-9 with 1% BSA. Cells were fixed in 4% paraformaldehyde for 10 min at room temperature and resupended in PBS. Uptake was assayed by flow cytometry using a FACScan (BD Biosciences) and quantified on FlowJo software. Mode increase in fluorescence was measured relative to a no ligand negative control, and all assays were carried out in triplicate.

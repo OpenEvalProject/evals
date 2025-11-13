@@ -43,9 +43,7 @@ As noted for revision point 2, these were unfortunate annotation errors that wer
 
 4) Check the calculation for the odds ratio for the tables. We have re calculated all of the odds ratios in each of the tables and both the confidence interval and p value of the G2 odds ratio in Table 3 appears incorrect. We calculate p = 0.0043.
 
-We have recalculated the odds ratio for G2 in Table 3 using a Two-tailed Fisher's exact test with mid-P method and obtained the same odds ratio (3.08) and P value (0.0025) as described in the manuscript. This was calculated using openepi (www.openepi.com) using the numbers provided in Table 3. A screenshot of our statistical analysis is presented in Author response image 1.10.7554/eLife.25461.020Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.25461.020
-
-DOI: http://dx.doi.org/10.7554/eLife.25461.020
+We have recalculated the odds ratio for G2 in Table 3 using a Two-tailed Fisher's exact test with mid-P method and obtained the same odds ratio (3.08) and P value (0.0025) as described in the manuscript. This was calculated using openepi (www.openepi.com) using the numbers provided in Table 3. A screenshot of our statistical analysis is presented in Author response image 1.10.7554/eLife.25461.020Author response image 1.
 
 5) Address the possibility that inactivating mutations have abrogated the trypanolytic effect of either or both of the variants, specifically in regard to the small number of (6) of T.b.r. infected G2 genotype individuals, or the 9 T.b.r. infected G1 genotype individuals. The cleanest way to address this would be to sequence through at least the exomes, and if not, to at least add a sentence addressing the extent of implausibility of this scenario. This issue is less relevant for the results summarized in Table 2 and Table 3, since opposing robust associations were found.
 

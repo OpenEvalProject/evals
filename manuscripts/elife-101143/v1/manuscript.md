@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01vjw4z39 Microbiome Medicine Center, Department of Laboratory Medicine, Zhujiang Hospital, Southern Medical University Guangzhou China
+1. Microbiome Medicine Center, Department of Laboratory Medicine, Zhujiang Hospital, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
 2. Nikon Precision Corporation, Guangzhou , China Shanghai China
-3. https://ror.org/01vjw4z39 Department of Neurosurgery, Zhujiang Hospital, Southern Medical University, The National Key Clinical Specialty Guangzhou China
-4. https://ror.org/01vjw4z39 State Key Laboratory of Organ Failure Research, Southern Medical University Guangzhou China
+3. Department of Neurosurgery, Zhujiang Hospital, Southern Medical University, The National Key Clinical Specialty Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
+4. State Key Laboratory of Organ Failure Research, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
 
 † Corresponding author
 
@@ -38,6 +38,20 @@ Here, we developed the Refractive Index Matching-Deep (RIM-Deep) system to addre
 
 Official adapters for 10 X immersion objectives in Nikon inverted confocal microscopy significantly enhance cleared tissue imaging, but RI buffer leakage still occurs, causing RI mismatch and limiting imaging depth (Figure 1A, Figure 1—figure supplement 1A). In response to this challenge, the RIM-Deep was designed based on a light sheet microscopy imaging chamber. It features a media reservoir affixed to the objective and filled with RI buffer, enabling 3D imaging of the sample within an imaging buffer. To further optimize imaging performance, a support bracket integrated into the motorized stages elevates the imaging platform and centrally positions a specimen holder (Figure 1B, Figure 1—figure supplement 1B and Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101143/elife-101143-fig1-v1.jpg)
+
+**Figure 1.:** (A and B) Schematic diagram of a 10 X immersion objective with standard adapter (A) or RIM-Deep (B). (C–D) MIP of 3-μm-diameter beads imaged in the xy and yz planes using standard adapter (C) or RIM-Deep (D) at different axial positions. (E) Axial resolutions for a 10 X immersion objective paired with standard adapter or RIM-Deep at different axial positions. The resolution is estimated by FWHMs of intensity profiles with a Gaussian fit for 3-μm-diameter beads embedded in 1% agarose dissolved in CUBIC mounting solution. Data are presented as mean ± s.e.m. (n=10). (F) The experimental scheme for the brain clearing process in Macaca fascicularis. (G, H, I) Three-dimensional reconstructions of the Macaca fascicularis brain vasculature using three different tissue clearing methods (iDISCO, CUBIC or MACS) with standard adapter. (G0, H0, I0) MIP of G, H, or I in xz plane. (G1–G2, H1–H2, I1–I2) Optical section of (G, H, I) at varying depths. (J, K, L) Three-dimensional reconstructions of the Macaca fascicularis brain vasculature using iDISCO, CUBIC, or MACS with the RIM-Deep. (J0, K0, L0) MIP of J, K, or L in xz plane. (J1–J4, K1–K4, L1–L4) Optical section of (J, K, L) at varying depths.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101143/elife-101143-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/101143/elife-101143-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) A Three-view diagram of a media reservoir. (B) ①-③, Three-view diagram of the support bracket. ④, Three-dimensional diagram of the specimen holder. (C–F) RIM-Deep assembly procedure.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/101143/elife-101143-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Setup of Leica STELLARIS 5 microscope with the RIM-Deep assembly. (B) 3D imaging of cleared Macaca fascicularis brain vasculature. (C) Optical sections of (B) at varying depths.
+
 To demonstrate the effectiveness of the RIM-Deep, imaging resolution was characterized by comparing 3 μm diameter fluorescence beads using standard adapter versus the RIM-Deep in 10 X immersion objective (Figure 1A and B). Within the 2 mm imaging limit, 10 X immersion objectives with the standard adapter maintain both optical axial (XZ) and lateral (XY) resolution (Figure 1C and E). As expected, the RIM-Deep also maintained optimal axial resolution across 5 mm (Figure 1D and E). However, there was no significant difference in lateral resolution between the two types of chambers (Figure 1C–E).
 
 Subsequently, the high-depth imaging performance of the RIM-Deep was evaluated and compared to the standard adapter. Imaging was performed on a Macaca fascicularis brain section cleared using the iDISCO, CUBIC, and MACS methods (Figure 1F). Gravity affected the refractive index matching fluid at the tip of the objective, limiting the imaging depth to less than 2 mm (Figure 1G–I2, Figure 1—videos 1–3). As observed, with the RIM-Deep, the specimen holder was fully immersed in the RI liquid, the depth of images is obviously enhanced to about 5 mm, and the vessel structures could thereby be observed clearly (Figure 1J–L4, Figure 1—video 4, Figure 1—video 5 and Figure 1—video 6).
@@ -46,7 +60,15 @@ The performance of the RIM-Deep method was also evaluated using a Leica inverted
 
 To further assess the resolution and depth robustness of RIM-Deep in neuronal imaging, experiments were conducted on Thy1-EGFP mouse brains cleared with the CUBIC method (Figure 2A). The use of the RIM-Deep also significantly extended the imaging depth to approximately 5 mm (Figure 2B, Figure 2—video 1). This extension enabled the clear visualization and reconstruction of neuronal soma and axon structures in the hippocampus and thalamus (Figure 2C, E, F, G, I), maintaining resolution at the micron level (Figure 2D and H).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/101143/elife-101143-fig2-v1.jpg)
+
+**Figure 2.:** (A) Experimental scheme. (B) 3D reconstruction of the ~5 mm deep in the mouse brain (left), MIP views in XZ (middle) and YZ (right). (C and G) 3D reconstructions of neuronal structures within the hippocampus (C, yellow box) and thalamus (G, orange box), respectively, as indicated in B. (D and H) Lateral slices through the indicated lateral planes in (C and G). Zoom-in views of the selected areas in top right. (E–F) MIP view of hippocampus(C) in xy and xz. (I–J) MIP view of thalamus (G) in xy and yz.
+
 A 3×3 stitching mode with multi-layer Z-axis scanning was used to examine a cleared brain segment (Figure 3A and B, Figure 3—video 1). This method enabled visualization of neuronal cell bodies and axons up to nearly 5 mm in X-Y optical slices (Figure 3C). For large tissue imaging, the RIM-Deep was used on a cleared half-brain, achieving comprehensive imaging (Figure 3D). Its stable and precise positioning ensured accurate alignment across all optical slices, facilitating detailed and thorough imaging (Figure 3E–I).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/101143/elife-101143-fig3-v1.jpg)
+
+**Figure 3.:** (A) 3×3 stitching pattern of deep imaging of a cleared brain. (B) MIP of yz side view of A. (C) Optical section of top layer in (B). Zoom-in views of the selected areas in top right. (D) 3D reconstruction of a half of cleared brain in a Thy1-eGFP mouse brain. The white box represents MIP. (E–I) Stitched single layer images in the Z-direction. (J) 3D imaging of the entire brain vasculature in ischemic stroke mice. The images along the z stack are colored by spectrum. (K) MIP of vascular imaging in the ischemic region (red box in J). (L) MIP of vascular imaging in the contralateral region (blue box in J).
 
 Stroke, caused by disrupted brain blood supply, induces cell death and significant vascular changes (Sekerdag et al., 2018). Generally, confocal microscopy is limited to thin sections and cannot fully study vascular networks. However, with the assistance of the RIM-Deep, complete observation of vascular damage is possible. Therefore, mouse brains with induced cortical ischemia were examined to thoroughly investigate this process. Using VALID labeling and MACS tissue clearing techniques, the cerebral vasculature was reconstructed, revealing a significantly reduced vessel density in the ischemic cortex (Figure 3J–L, Figure 3—video 2, Figure 3—video 3, Figure 3—video 4). These findings demonstrate the effectiveness of the RIM-Deep in visualizing disease-related changes in vascular structures, making it a valuable tool in neuroscience research.
 
@@ -58,7 +80,7 @@ The development of tissue clearing has revolutionized neuroscientific research. 
 
 Wide-field microscopes, although efficient for rapid imaging, often face limitations in depth and resolution when applied to cleared tissues (Shaw, 2006). The RIM-Deep can also be employed in these cases to enhance imaging performance. When using wide-field microscopy with the RIM-Deep, it is necessary to apply deconvolution algorithms or other techniques to eliminate out-of-focus signals (Shaw, 2006). However, it is important to note that this system may reduce fluorescence intensity in deeper regions of the sample.
 
-## Limitations of the study and prospect
+### Limitations of the study and prospect
 
 Despite the advantages offered by the RIM-Deep, several limitations remain. The imaging speed of inverted point-scanning confocal microscopy is slower compared to light sheet microscopy, necessitating advanced post-processing algorithms for high-speed 3D imaging. To address this, resonance scanning methods combined with artificial intelligence-based image analysis can significantly improve the efficiency and accuracy of imaging, providing a more robust solution for detailed analysis (Elliott, 2020). Iterative reconstruction algorithms can enhance resolution and mitigate imaging artifacts. However, achieving uniform resolution across different depths remains challenging, particularly for very dense samples.
 
@@ -70,21 +92,21 @@ In summary, the RIM-Deep represents a significant advancement in deep tissue ima
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 We used 6-y-old male Macaca fascicularis brain and male Thy1-EGFP mice brain gifted from Prof. Xiong Cao (South Medical University). Animals were housed in a temperature-controlled (24 ± 1°C) and humidity-controlled (50 ± 5%) facility with a 12 hr light/dark cycle (lights on at 8:00 a.m.) and had free access to standard chow and water. All animal procedures were approved by the Southern Medical University Animal Ethics Committee and the Ethics Committee of the Center of Guangdong Landao Biotechnology in Guangzhou, China (LDACU20170306-01) and was conducted in compliance with the guidelines of the Chinese Council on Animal Care to minimize animal suffering and reduce the number of animals used.
 
-## CUBIC-based mouse brain clearing
+### CUBIC-based mouse brain clearing
 
 We employed the CUBIC method for clearing Thy1-EGFP mouse fixed brain tissue (Susaki et al., 2015), with the process carried out at the Shared Instrument Platform of the School of Life Sciences at Tsinghua University.
 
-## Mouse brain vascular labeling and tissue clearing using MACS
+### Mouse brain vascular labeling and tissue clearing using MACS
 
 Adult male C57BL/6 J mice (8 wk) were used for the creation of the photothrombotic stroke model. Mice were anesthetized with sodium pentobarbital (50 mg/kg, IP). The head was secured in a stereotaxic device, and the skull was exposed. A photoactive dye, Rose Bengal was injected into the tail vein. Focused 561 nm laser irradiation was then applied to the cortical area to activate the dye, causing thrombosis and inducing ischemia by obstructing blood vessels. After surgery, mice were placed in warm cages for recovery and subsequently returned to their cages. Three days later, mice underwent deep sedation via intraperitoneal administration of sodium pentobarbital at a dosage of 50 mg/kg. Following this, vascular labeling was executed utilizing the VALID protocol (Zhu et al., 2023). Initially, mice were transcardiac infused with 0.01 M phosphate-buffered saline (PBS) for the removal of blood from the vascular system. Subsequently, a volume of 10–15 mL of VALID working solution, warmed to maintain its fluid state, was perfused through the circulatory system. Post perfusion, the mice were refrigerated at 4 °C overnight to solidify the gel within the vasculature. The next phase involved organ extraction and further post-fixation in 4% paraformaldehyde (PFA) for an extended period. Extreme care was taken to detach the skull from the perfused mouse body to avoid distortion of the sample. During this process, the dura mater was carefully excised. Finally, the removed skull was post-fixed in 4% PFA for an overnight duration.
 
 MACS was executed for previously demonstrated (Zhu et al., 2020). Fixed samples were serially incubated in MACS-R0, MACS-R1, and MACS-R2 solutions, with gentle shaking at room temperature. MACS-R0 was prepared by mixing 20% (vol/vol) MACS with 15% (wt/vol) sorbitol (Sigma, 85529) in dH2O; MACS-R1 was prepared by mixing 40% (vol/vol) MXDA with 30% (wt/vol) sorbitol dissolved in 1×PBS; MACS-R2 was prepared by mixing 40% (vol/vol) MXDA with 50% (wt/vol) sorbitol in dH2O.
 
-## Macaca fascicularis brain immunolabeling and clearing
+### Macaca fascicularis brain immunolabeling and clearing
 
 As previously described (Renier et al., 2014), the Macaca fascicularis fixed brain underwent a series of washes and treatments as follows: Initially, they were washed twice for 1 hr each in PBS, followed by sequential hour-long immersions in 50%, 80%, and 100% methanol solutions, with the latter repeated. The samples were then bleached overnight at 4 °C using a 5% hydrogen peroxide solution in a 20% DMSO/methanol mix (prepared with 1 volume of 30% H2O2, one vol of DMSO, and four vol of methanol, all kept ice cold). Post-bleaching, the samples were washed twice in methanol for an hour each, followed by two 1 hr washes in a 20% DMSO/methanol solution, then in 80% and 50% methanol solutions for an hour each, and finally, twice in PBS for an hour. The last step involved two 1 hr washes in a PBS solution containing 0.2% Triton X-100, preparing the samples for subsequent staining procedures.
 
@@ -92,14 +114,14 @@ The samples underwent a series of incubation and washing processes as described:
 
 The immunolabeled tissues underwent a clearing process using the iDISCO technique, CUBIC or MACS. This method and the solutions employed were adapted from protocols detailed in a previously published study. The entire procedure was conducted at the Shared Instrument Platform located in the School of Life Sciences at Tsinghua University.
 
-## Microscope and objectives
+### Microscope and objectives
 
 For image acquisition, we used the Nikon AXR inverted laser scanning confocal microscope and Leica STELLARIS 5 inverted laser scanning confocal microscope, paired with a Nikon 10 x/0.5 NA immersion objective.
 
-## Design principle of the RIM-Deep
+### Design principle of the RIM-Deep
 
 The RI adapter consists of a solution reservoir (Figure 1—figure supplement 2A), a specimen holder and support bracket (Figure 1—figure supplement 2B). The solution reservoir and specimen holder are made of glass. The nested arrangement of the solution and specimen holder forms a semi-closed space at the outer reservoir, which is filled with imaging buffer (Figure 1—figure supplement 2C-F). The specimen holder is centrally positioned on the top surface of the support bracket, ensuring that its base is parallel to the base of the support bracket. The bottom of the specimen holder is 0.17 mm thick cover glasses. The solution reservoir is nested in the cap of the objective.
 
-## Image acquisition
+### Image acquisition
 
 Cleared tissue was placed in a 35 mm confocal dish or the dual-reservoir nested adapter. To ensure that the sample does not slide during X-Y scanning, the sample was fixed in place with transparent glass glue before imaging. Unless otherwise specified, the Z intensity correction module was used to offset the fluorescence signal degradation with depth. The NIS-Elements Advance research software was used for post-processing of images. The processed data were then imported into Imaris (Version 9.0.1, Bitplane AG) for the next step.

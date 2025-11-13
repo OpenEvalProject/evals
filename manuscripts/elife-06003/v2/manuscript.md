@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.06003.001 Lipids are critical to cellular function and it is generally accepted that lipid turnover is rapid and dysregulation in turnover results in disease ( Dawidowicz 1987 ; Phillips et al., 2009 ; Liu et al., 2013 ). In this study, we present an intriguing counter-example by demonstrating that in the center of the human ocular lens, there is no lipid turnover in fiber cells during the entire human lifespan. This discovery, combined with prior demonstration of pronounced changes in the lens lipid composition over a lifetime ( Hughes et al., 2012 ), suggests that some lipid classes break down in the body over several decades, whereas others are stable. Such substantial changes in lens cell membranes may play a role in the genesis of age-related eye disorders. Whether long-lived lipids are present in other tissues is not yet known, but this may prove to be important in understanding the development of age-related diseases. DOI: http://dx.doi.org/10.7554/eLife.06003.001
+Lipids are critical to cellular function and it is generally accepted that lipid turnover is rapid and dysregulation in turnover results in disease (Dawidowicz 1987; Phillips et al., 2009; Liu et al., 2013). In this study, we present an intriguing counter-example by demonstrating that in the center of the human ocular lens, there is no lipid turnover in fiber cells during the entire human lifespan. This discovery, combined with prior demonstration of pronounced changes in the lens lipid composition over a lifetime (Hughes et al., 2012), suggests that some lipid classes break down in the body over several decades, whereas others are stable. Such substantial changes in lens cell membranes may play a role in the genesis of age-related eye disorders. Whether long-lived lipids are present in other tissues is not yet known, but this may prove to be important in understanding the development of age-related diseases.
 
 ## Introduction
 
@@ -30,11 +30,11 @@ In this study, accelerator mass spectrometry (AMS) was utilized to measure carbo
 
 ## Results and discussion
 
-We carefully dissected nuclei from individual human lenses of 23 donors of known birth dates. The average human lens nucleus is approximately 6–7 mm in diameter (
+We carefully dissected nuclei from individual human lenses of 23 donors of known birth dates. The average human lens nucleus is approximately 6–7 mm in diameter (Hermans et al., 2007). Therefore, to avoid contamination of fiber cells laid down postnatally, we cut a cylinder of 4.5 mm in diameter in the axial plane using a trephine, then removed 1 mm from either end as previously described (Friedrich and Truscott, 2009). Total lipids present in each lens nucleus were obtained using a well-established method that reports high yield of lipids and minimal protein contamination (Folch et al., 1957). Since protein is the major component of lenses by mass and lens proteins are known to be present since birth (Stewart et al., 2013), the residual protein content of lipid extracts was determined using a standard BCA assay (Smith et al., 1985). Residual protein was found to represent less than 0.5% of the total weight of carbon in the extract, and therefore a negligible contribution to the 14C measurement. Radiocarbon content in lens lipids was determined by AMS and was found to closely match the atmospheric levels of the date of birth (Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06003/elife-06003-fig1-v2.jpg)
 
-**Figure 1.:** 14C content demonstrates a lack of molecular turnover.(A) The fraction of modern 14C present in the membrane lipids of human lens nuclear regions. The lipid samples (•) are superimposed over the levels of artificial 14CO2 present in the atmosphere in the northern hemisphere (light gray) and the southern hemisphere (dark gray) from 1950 until 1990 (Hua et al., 2013). (B) The correlation between the predicted year of birth as calculated from the measured fraction of modern 14C present in lens membrane lipids and the actual year of birth of each individual. The slope was approximately one (0.98 ± 0.04) and the y-intercept was indistinguishable from zero within the measured error (39 ± 75). Vertical error bars: ± sigma. Horizontal error bars: year of birth ± six months.DOI: http://dx.doi.org/10.7554/eLife.06003.003
+**Figure 1.:** (A) The fraction of modern 14C present in the membrane lipids of human lens nuclear regions. The lipid samples (•) are superimposed over the levels of artificial 14CO2 present in the atmosphere in the northern hemisphere (light gray) and the southern hemisphere (dark gray) from 1950 until 1990 (Hua et al., 2013). (B) The correlation between the predicted year of birth as calculated from the measured fraction of modern 14C present in lens membrane lipids and the actual year of birth of each individual. The slope was approximately one (0.98 ± 0.04) and the y-intercept was indistinguishable from zero within the measured error (39 ± 75). Vertical error bars: ± sigma. Horizontal error bars: year of birth ± six months.
 
 As shown in Figure 1B, the fraction of 14C (f14C) present in the lipid extract from a human lens nucleus was found to be a highly accurate predictor of the year of birth (R2 = 0.9683), indicating negligible lipid turnover during the human lifespan. The values obtained for f14C for human lens nuclear lipids (and thus a predictor of the year of birth) obtained in the present study are consistent with previous reports on the f14C for insoluble protein fraction (Stewart et al., 2013) and total protein (Lynnerup et al., 2008) of the human lens nucleus.
 
@@ -48,15 +48,15 @@ These findings reveal that some cells contain long-lived lipids and this discove
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 HPLC-grade chloroform and methanol were purchased from Crown Scientific (Moorebank, NSW, Australia). Analytical-grade sodium chloride and a Bicinchoninic Acid (BCA) assay kit were purchased from Sigma Aldrich (Sydney, NSW, Australia).
 
-## Labware treatment
+### Labware treatment
 
 Glassware and stainless steel utensils were used throughout and were washed several times with 5% nitric acid, rinsed with deionized water, and dried at 70°C. Quartz tubes for lipid collection and combustion were baked before use at 600°C in a stream of pure oxygen for at least 4 hr.
 
-## Lipid extraction and AMS analysis
+### Lipid extraction and AMS analysis
 
 All work was approved by the human research ethics committees at the University of Sydney (#7292) and the University of Wollongong (HE 99/001). The nuclear regions of human lenses (n = 23) were obtained using a 4.5-mm trephine as described previously (Friedrich and Truscott, 2009). Donor year of birth was determined from Sydney Eye Bank records. Following dissection, each lens nucleus was homogenized in 1 ml of chloroform:methanol (2:1 vol/vol), and lipids were extracted according to Folch et al (1957). The chloroform phase containing lipids was transferred into the baked quartz combustion tubes.
 
@@ -68,6 +68,6 @@ Calendar dates were obtained by calibrating the radiocarbon determinations with 
 
 To ascertain whether the presence of lipids in solution could result in the retention of solvent, a separate batch of samples and blanks was processed with 13C-enriched methanol. Solvent mixtures with 13C enriched to 10% methanol (corresponding to +900‰ δ13C) were prepared. Lipids were extracted following standard procedures in parallel with unlabeled solvents and their δ13C determined by Isotope Ratio Mass Spectrometry (IRMS). While both δ13C results were in the normal range of −20 to −24‰, a small enrichment was observed at −22.7 ± 0.1 and −21.2 ± 0.7‰ for unlabeled and labeled solvents, respectively. Should these values represent isotopic exchange or retention of solvent by lipids, the carbon weight fraction of this contamination would be ∼0.013% and is therefore negligible.
 
-## Residual protein determination
+### Residual protein determination
 
 Lipid extracts (n = 5) were dried under a stream of nitrogen at 37°C and reconstituted in 100 μl phosphate buffered saline. The amount of protein in each sample was determined using a standard BCA assay as described previously (Smith et al., 1985) and calculated as a fraction of the total amount of lipid in the extract.

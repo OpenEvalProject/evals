@@ -38,15 +38,176 @@ While the IAD model provides a satisfying theoretical framework for the process 
 
 We have explored the relative importance of mutations in a gene encoding a weak-link enzyme and elsewhere in the genome using a model system in Escherichia coli. ProA (γ-glutamyl phosphate reductase, Figure 2) is essential for proline synthesis in E. coli. ArgC (N-acetylglutamyl phosphate reductase) catalyzes a similar reaction in the arginine synthesis pathway, although the two enzymes are not homologous (Goto et al., 2003; Ludovice et al., 1992; Page et al., 2003). ProA can reduce N-acetylglutamyl phosphate (NAGP), but its activity is too inefficient to support growth of a ∆argC strain of E. coli in glucose. However, a point mutation that changes Glu383 to Ala allows slow growth of the ∆argC strain in glucose. Enzymatic assays show that E383A ProA (ProA*) has severely reduced activity with γ-glutamyl semialdehyde (GSA), but substantially improved activity with N-acetylglutamyl semialdehyde (NAGSA) (Khanal et al., 2015; McLoughlin and Copley, 2008). (It is necessary to assay kinetic parameters in the reverse direction because the substrates for the forward reaction are too unstable to prepare and purify.) Glu383 is in the active site of the enzyme; the change to Ala may create extra room to accommodate the larger substrate for ArgC, but at a cost to the ability to bind and orient the native substrate. The poor efficiency of the weak-link ProA* creates strong selective pressure for improvement of both proline and arginine synthesis during growth of ∆argC E. coli on glucose as a sole carbon source.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig2-v2.jpg)
+
+**Figure 2.:** The reaction normally catalyzed by ArgC and replaced by ProA* in the parental strain is indicated by the red dotted line. The green and red lines indicate allosteric activation and inhibition, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Modifications to the proBA operon. proA*; A1148→C proA (changes Glu383 to Ala); M2, a −45 C→T promoter mutation that increases expression of the operon more than 4-fold (Kershner et al., 2016). (B) Modifications to the argCBH operon. argC was replaced with a gene encoding kanamycin resistance in the Keio strain created by Baba et al. (2006).
+
 We evolved eight replicate populations of ∆argC proA* E. coli in minimal medium supplemented with glucose and proline for up to 1000 generations to identify mechanisms by which the impairment in arginine synthesis could be alleviated. Our expectation that amplification of proA* would be beneficial was borne out in all populations. Whole-genome sequencing of the adapted populations and further biochemical analysis showed that an adaptive mutation in proA* followed by deamplification of proA* occurred in only one population. Indeed, most of the adaptive mutations occurred outside of proA*. We have identified the mechanisms by which three common classes of such mutations increase fitness: (1) restoration of a known defect in pyrimidine synthesis; (2) an increase in the amount of ArgB, the enzyme that synthesizes NAGP, the substrate for the weak-link ProA*; and (3) an increase in flux through carbamoyl phosphate synthetase, whose product feeds into the arginine synthesis pathway downstream of the weak-link enzyme (Figure 2). The latter two types of mutations appear to increase flux through the bottlenecked arginine synthesis pathway while the more difficult process of improving the weak-link enzyme progresses. In the case of the mutations affecting carbamoyl phosphate synthetase, the fitness increase comes at a cost to presumably well-evolved regulatory functions.
 
 Our results demonstrate that mutations elsewhere in the genome play an important role during the process of gene amplification and divergence when the inefficient activity of a weak-link enzyme limits fitness. Thus, the process of evolution of a new enzyme by gene duplication and divergence is inextricably intertwined with mutations elsewhere in the genome that improve fitness by different mechanisms.
 
 ## Results
 
-## Growth rate of ∆argC proA* E. coli increased 3-fold within a few hundred generations of evolution in M9/glucose/proline
+### Growth rate of ∆argC proA* E. coli increased 3-fold within a few hundred generations of evolution in M9/glucose/proline
 
 We generated a progenitor strain for laboratory evolution by replacing argC with the kanr antibiotic resistance gene, modifying proA to encode ProA*, and introducing a mutation in the −10 region of the promoter of the proBA operon. (This mutation was one of two promoter mutations previously shown to increase proA* expression during adaptation of the ∆argC strain [Figure 2—figure supplement 1; Kershner et al., 2016]). The presence of the promoter mutation ensured that all populations had the same mutation during the evolution experiment. We also introduced yfp downstream of proA* and deleted several genes (fimAICDFGH and csgBAC, which are required for the formation of fimbriae and curli, respectively Barnhart and Chapman, 2006; Proft and Baker, 2009) to minimize the occurrence of biofilms. We evolved eight parallel lineages of this strain (AM187, Table 1) in M9 minimal medium supplemented with 0.2% (w/v) glucose, 0.4 mM proline, and 20 µg/mL kanamycin in a turbidostat to identify mutations that improve arginine synthesis. We used a turbidostat rather than a serial transfer protocol because turbidostats can maintain cultures in exponential phase and thereby avoid selection for mutations that simply decrease lag phase or improve survival in stationary phase. Turbidostats also avoid population bottlenecks during serial passaging that can result in loss of genetic diversity.
+
+**Table 1.**
+ Strains used in this work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>strain</th>
+      <th>genotype</th>
+      <th>notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>E. coli BW25113</td>
+      <td>GenBank accession number CP009273 (Grenier et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>AM008</td>
+      <td>E. coli BW25113; argC::kanr</td>
+      <td>Keio strain (Baba et al., 2006)</td>
+    </tr>
+    <tr>
+      <td>AM187</td>
+      <td>AM008 + −45 C→T upstream of proB (M2 promoter mutation from Kershner et al., 2016) + A1148→C in proA (changes Glu383 to Ala) + yfp construct downstream of proBA consisting of (from 5’to 3’) BBa_B0015 terminator, P3 promoter, synthetic RBS, yfp (see Materials and methods); ∆fimAICDFGH; ∆csgBAC</td>
+      <td>parental strain for adaptation, GenBank accession number CP037857.1</td>
+    </tr>
+    <tr>
+      <td>AM209</td>
+      <td>E. coli BL21(DE3); argC::kanr; proA::cat</td>
+      <td>used for expression and purification of wild-type and mutant ProAs</td>
+    </tr>
+    <tr>
+      <td>AM239</td>
+      <td>AM187 + 58 bp deletion upstream of argB (pos. 4145856–4145913)a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM241</td>
+      <td>AM187 + C4145901→G (24 bp upstream of argB start codon)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM242</td>
+      <td>AM187 + C4145903→A (22 bp upstream of argB start codon)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM243</td>
+      <td>AM187 + C4145903→T (22 bp upstream of argB start codon)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM244</td>
+      <td>AM187 + C4145907→A (18 bp upstream of argB start codon)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM245</td>
+      <td>AM187 + 38 bp duplication upstream of argB (pos. 4145912–4145949)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM267</td>
+      <td>E. coli BL21; carAB::kanr</td>
+      <td>used for expression and purification of wild-type and mutant carbamoyl phosphate synthetases</td>
+    </tr>
+    <tr>
+      <td>AM279</td>
+      <td>AM187 + C1169→T in ygcB (changes Ala390 to Val in Cas3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM320</td>
+      <td>AM187 + T1116→G in proA* (changes Phe372 to Leu)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM327</td>
+      <td>AM187 + 82 bp deletion upstream of pyrE (pos. 3808881–3808962)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM329</td>
+      <td>AM187 + 82 bp deletion upstream of pyrE (pos. 3808881–3808962); C1169→T ygcB (changes Ala390 to Val in Cas3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM399</td>
+      <td>AM187 + ∆2906–2917 carB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM401</td>
+      <td>AM187 + ∆2986–3117 carB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM407</td>
+      <td>AM187 + kanr::argC(null) (Gly153 and Cys154 changed to TAA stop codons)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM413</td>
+      <td>AM187 + G1106→T carB (changes Gly369 to Val)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM415</td>
+      <td>AM187 + A2896→G carB (changes Lys966 to Glu)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM437</td>
+      <td>AM187 + C1148→A in proA* (reverts E383A mutation)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM439</td>
+      <td>AM320 + C1148→A in proA** (reverts E383A mutation)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM441</td>
+      <td>E. coli BW25113 + 82 bp deletion upstream of pyrE (pos. 3808881–3808962)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM443</td>
+      <td>AM441 + ∆2906–2917 carB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM445</td>
+      <td>AM441 + ∆2986–3117 carB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM447</td>
+      <td>AM441 + G1106→T carB (changes Gly369 to Val)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AM449</td>
+      <td>AM441 + A2896→G carB (changes Lys966 to Glu)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_a Genome positions refer to the sequence of strain AM187 (GenBank accession number CP037857), which was modified from the E. coli BW25113 sequence (GenBank accession number CP009273; Grenier et al., 2014) based on the mutations that had been introduced._
 
 Growth rate in each culture tube was averaged over each 24 hr period and was used to calculate the number of generations each day. Each culture was maintained until a biofilm formed (33–57 days, corresponding to 470–1000 generations). While it is possible to restart cultures from individual clones after biofilm formation, this practice introduces a severe population bottleneck. Thus, we decided to stop the evolution for each population when a biofilm formed.
 
@@ -54,27 +215,101 @@ Over the course of the experiment, growth rate increased 2.5–3.5-fold for all 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig3-v2.jpg)
 
-**Figure 3.:** ∆argC M2-proA* E. coli in M9 minimal medium containing 0.2% glucose (w/v), 0.4 mM proline and 20 µg/mL kanamycin.M2 is the C to T mutation at −45 in the promoter for the proBA operon (Kershner et al., 2016).
+**Figure 3.:** M2 is the C to T mutation at −45 in the promoter for the proBA operon (Kershner et al., 2016).
 
-## Copy number of proA* and size of the amplified genomic region varied among replicate populations
+### Copy number of proA* and size of the amplified genomic region varied among replicate populations
 
 We monitored proA* copy number during the evolution experiment using qPCR of population genomic DNA (Figure 4A, Figure 4—figure supplement 1). proA* was present in at least six copies by generation 300 in all eight populations. Six of the populations maintained 6–9 copies for the remainder of the adaptation. proA* copy number in population 2 increased to as many as 20 copies. In population 3, proA* copy number dropped to three by generation 400.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig4-v2.jpg)
+
+**Figure 4.:** (A) proA* copy number in each evolved population as measured by qPCR. (B) Regions of amplification in each evolved population based on population genome sequencing. Population 2 had two overlapping regions of amplification, both of which included proA* (shown as differently shaded bars). Population 6 had a 95.1 kb deletion (shown as a red striped bar) immediately downstream of the amplified region.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Vertical dotted lines indicate when population genomic DNA was sequenced.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** AM187, N = 12; AM279, N = 8; AM327, N = 5; AM329, N = 8. (All p values are > 0.2 based on a two-tailed, unequal variance Student’s t-test. n.s., not significant).
+
 We identified the boundaries of the amplified regions in all eight populations by sequencing population genomic DNA (Figure 4B, Figure 4—source data 1). The amplified region in population 2 was unusually small, spanning only 4.9 kb and resulting in co-amplification of only two other genes besides proBA*. Population 2 also appeared to have a second region of amplification of 18.5 kb. (Whether these two distinct amplification regions coexisted in the same clone or as two separate clades within the population could not be determined from population genome sequencing.) In contrast, the amplified regions in the other seven populations ranged from 41.1 to 163.8 kb, encompassing between 55 and 177 genes. We attribute the variation in proA* copy number to these differences in the size of the amplified region on the genome. The population with the smallest amplified region (4.9 kb, population 2) carries fewer multicopy genes and thus should incur a lower fitness cost, allowing proA* to reach a higher copy number (Adler et al., 2014; Kugelberg et al., 2006; Pettersson et al., 2009; Reams et al., 2010).
 
-## A mutation in proA* led to deamplification in population 3
+### A mutation in proA* led to deamplification in population 3
 
 The decrease in proA* copy number in population 3 was noteworthy since it might have been an indication that a mutation had improved the neo-ArgC activity of ProA*, resulting in a decreased need for multiple copies. In fact, a mutation in proA* that changes Phe372 to Leu (Figure 5A) was observed in population 3. E383A F372L ProA will be designated ProA** hereafter. Introduction of this mutation into the parental strain (which carried proA*) increased growth rate by 75% (Figure 5B), confirming that the mutation is adaptive. Notably, no mutations in proA* were identified in any of the other populations.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig5-v2.jpg)
+
+**Figure 5.:** (A) Crystal structure of Thermotoga maritima ProA (PDB 1O20) (Page et al., 2003). Yellow, catalytic cysteine; green, equivalent of E. coli ProA Glu383; red, equivalent of E. coli ProA Phe372; magenta, NADPH-binding domain; blue, catalytic domain; beige, hinge region; gray, oligomerization domain. (B) Change in growth rate when the mutation changing Phe372 to Leu (proA**) is introduced into the genome of AM187. P value = 4.5 × 10−6 by a two-tailed, unequal variance Student’s t-test, N = 8. (C) proA* copy number (left axis, solid lines) and growth rate (right axis, dotted lines) for population 3. Vertical dotted lines indicate when population genomic DNA was sequenced. Sequencing depth was 130x, 122x, 70x and 81x at the four points, respectively. The frequency of the proA** allele at each time point is noted above the plot.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Each strain has the M2 proBA promoter mutation that was in AM187 at the start of the evolution. The solid line shows the average values of four replicate populations. The shaded area shows the minimum and maximum values of the replicates. The strains containing wild-type ProA and F372L ProA showed no detectable growth by eight days.
 
 To determine whether the beneficial effect of the F372L mutation depended upon the presence of the initial E383A mutation, we created variants of the parental strain with either wild-type ProA, F372L ProA, E383A ProA (ProA*), or F372L E383A ProA (ProA**) (Figure 5—figure supplement 1). Strains with either wild-type or F372L ProA did not grow after eight days. Thus, the F372L mutation is not beneficial on its own, and the combined effect of the two mutations is greater than the sum of their individual effects.
 
 The neo-ArgC and native ProA activities of wild-type, ProA*, and ProA** were assayed (in the reverse direction) with NAGSA and GSA, respectively (Table 2). The kcat/KM,NAGSA for ProA** is 3.6-fold higher than that of ProA* and nearly 80-fold higher than that for ProA. In contrast, there is no difference between kcat/KM,GSA for ProA* and ProA**.
 
+**Table 2.**
+ Kinetic parameters for GSA and NAGSA dehydrogenase activities of ProA, ProA*, and ProA**.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">GSA activity (ProA)</th>
+      <th colspan="3">NAGSA activity (neo-ArgC)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>kcat (s−1)</th>
+      <th>KM (mM)</th>
+      <th>kcat/KM,GSA (M−1 s−1)</th>
+      <th>kcat (s−1)</th>
+      <th>KM (mM)</th>
+      <th>kcat/KM, NAGSA (M−1 s−1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>16 ± 0.3</td>
+      <td>0.22 ± 0.01</td>
+      <td>72000 ± 2000</td>
+      <td>0.0083 ± 0.0009</td>
+      <td>0.30 ± 0.09</td>
+      <td>28 ± 9</td>
+    </tr>
+    <tr>
+      <td>ProA* (E383A)</td>
+      <td>0.0076 ± 0.0008</td>
+      <td>0.20 ± 0.04</td>
+      <td>37 ± 8</td>
+      <td>0.046 ± 0.002</td>
+      <td>0.076 ± 0.009</td>
+      <td>610 ± 74</td>
+    </tr>
+    <tr>
+      <td>ProA** (E383A F372L)</td>
+      <td>0.023 ± 0.005</td>
+      <td>0.42 ± 0.14</td>
+      <td>55 ± 22</td>
+      <td>0.21 ± 0.01</td>
+      <td>0.095 ± 0.011</td>
+      <td>2200 ± 260</td>
+    </tr>
+  </tbody>
+</table>
+
+_a Values reported were calculated from a nonlinear least squares regression of three replicates at each substrate concentration ± standard error._
+
 To determine when the mutation that changes Phe372 to Leu in ProA* occurred, we sequenced population genomic DNA at generations 270, 440, and 630 and at the end of the evolution (Figure 5C). proA** was present in 9% of the sequencing reads by generation 270. By the time deamplification of proA* had occurred at generation 440, the frequency of proA** had risen to 21% of sequencing reads. By the end of the adaptation, proA** was fixed in the population, yet three copies remained in the genome, suggesting that ProA** does not have sufficient neo-ArgC activity to be present at a single copy in the genome.
 
 The fact that a mutation that improved the neo-ArgC activity of ProA* occurred in only one population was surprising considering that ProA* is the weak-link enzyme limiting growth rate. Because the growth rates of all eight populations improved substantially (Figure 3), mutations outside of the proBA* operon must also be contributing to fitness.
 
-## Some prevalent mutations in the evolved clones are not related to improved arginine synthesis
+### Some prevalent mutations in the evolved clones are not related to improved arginine synthesis
 
 Population genome sequencing at the end of the experiment revealed that the final populations contained between 13 and 178 mutations at frequencies ≥ 5%, between 3 and 5 mutations at frequencies ≥ 30%, and between 1 and 4 fixed mutations (not including amplification of proA*) (see Figure 4—source data 1 for a list of mutations). We found several mutations in the same genes in different populations, suggesting that these mutations confer a fitness advantage.
 
@@ -82,9 +317,29 @@ The first mutation to appear in all populations was either an 82 bp deletion in 
 
 A mutation in ygcB occurred early in four populations. This mutation changes Ala390 to Val in Cas3, a nuclease/helicase in the Type I CRISPR/Cas system in E. coli (Howard et al., 2011). We introduced this mutation into the genome of the parent AM187 and compared the growth rates of the mutant and AM187 (Figure 4—figure supplement 2). Surprisingly, we saw no significant change in growth rate. Since this mutation appeared about the same time as the mutations upstream of pyrE, we wondered whether the ygcB mutation might only improve growth rate in the context of restored pyrE expression. Thus, we also tested the growth rate of a strain with the Cas3 mutation and the 82 bp deletion upstream of pyrE. Again, we saw no significant change in relative growth rate (Figure 4—figure supplement 2). Thus, the ygcB mutation is most likely a neutral hitchhiker. The most likely explanation for its prevalence is that it was present in a clade of the parental population that later rose to a high frequency when an additional beneficial mutation was acquired by one of its members.
 
-## Mutations upstream of argB increase ArgB abundance
+### Mutations upstream of argB increase ArgB abundance
 
 All eight final populations contained mutations in the intergenic region upstream of argB and downstream of kanr. These mutations were fixed in two populations, and present at frequencies of 9–82% in the other populations (Figure 6A). ArgB (N-acetylglutamate kinase) catalyzes the second step in arginine synthesis, phosphorylation of N-acetylglutamate to form NAGP, the substrate for ArgC in wild-type E. coli and the substrate for ProA* in ∆argC proA* E. coli (Figure 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig6-v2.jpg)
+
+**Figure 6.:** (A) Locations of adaptive mutations (red) upstream of argB and argH. argC was replaced with kanr in the parental strain AM187, giving this operon two promoters, one native to the operon (PargCBH), and the other introduced with the kanr gene (Pkanr). The table shows the percentages of each evolved population that contained a given argB mutation at the final time point. Six of the argB mutations were introduced into the genome of the parental AM187 strain and changes in growth rate (B), gene expression (C), and protein abundance (D) were determined (N = 4). Asterisks indicate values that were statistically different from those of the parental strain with p values ≤ 0.005 by a two-tailed, unequal variance Student’s t-test. In (B), error bars represent ± SE. argB-LC denotes argB expression on a low-copy plasmid under control of argB’s native promoter.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Levels of ArgB and ArgH levels in AM187 relative to those in AM407 determined by label-free mass spectrometry, N = 4 (bottom). Asterisks indicate values that were statistically different from those from AM407 with p values ≤ 0.0005 by a two-tailed, unequal variance Student’s t-test.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) The entire intergenic region between kanr and argB plus 33 nucleotides of the argB coding region was used for RNA structure prediction. The start codon for argB is boxed in each structure. Arrows in the AM187 and wild-type structure indicate locations of adaptive point mutations. Brackets in the AM187 structure contain the FLP recognition target (FRT) site. Brackets in the 38 bp duplication mutant structure contain the 38 inserted nucleotides. (B) Same as in (A), but showing only the region surrounding the argB start codon.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Red points indicate the mean folding speed, and crossbars indicate one standard error from the mean, N = 500. Asterisks indicate calculated mean folding times that were statistically different from that of the AM187 sequence with p values ≤ 0.001 by a two-tailed, unequal variance Student’s t-test. Inset plot shows the same plot zoomed in 10-fold.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Each box plot represents the calculated ∆E for sequences with mutations upstream of argB (the mutants shown in Figure 6A except for the ∆51 bp mutant) for each annotated sRNA in the E. coli genome. Points were excluded if Emutant > −5 kcal/mol, as those interactions are likely too weak to be physiologically relevant. ∆E < 0 indicates a stronger sRNA-mRNA interaction for the mutant sequence. ∆E > 0 indicates a weaker sRNA-mRNA interaction for the mutant sequence. (B) Predicted locations of binding of RyfA to the region upstream of argB. Predicted E (kcal/mol) is displayed for each binding site. Blue, 5’ region of argB; red, expected ribosome binding site.
 
 We reintroduced six of the mutations upstream of argB into the parental strain AM187. The mutations increased growth rate by 36–61% (Figure 6B). Levels of mRNAs for argB and argH, which is immediately downstream of argB, were little affected by the mutations (Figure 6C). However, levels of ArgB protein increased 2.6–8.2-fold (Figure 6D). In contrast, ArgH levels increased only modestly. These data suggest that the mutations upstream of argB increase translational efficiency of argB mRNA. An increase in the amount of ArgB will increase production of NAGP, the substrate for the weak-link enzyme ProA* (Figure 2).
 
@@ -98,17 +353,168 @@ We also considered the possibility that mutations upstream of argB might increas
 
 A final possibility is that translation efficiency could be increased if a mutation weakens an sRNA:mRNA interaction that blocks the ribosome binding site. There is no known physiological interaction between an sRNA and the argB mRNA, so this explanation is unlikely. Alternatively, a mutation might strengthen a sRNA:mRNA interaction that competes with a mRNA secondary structure that inhibits ribosome binding, thereby increasing the accessibility of the ribosome binding site. We explored the effects of the mutations upstream of argB on the predicted binding energies of 65 annotated sRNAs to the RNA sequences used for the secondary structure predictions (Figure 6—figure supplement 4) using the IntaRNA algorithm (Busch et al., 2008; Mann et al., 2017; Raden et al., 2018; Wright et al., 2014). The calculated binding energy sums the energy needed to denature sRNA and mRNA secondary structures and the hybridization energy of the unfolded sRNA and mRNA. None of the 65 sRNAs had a calculated binding energy for the parental argB region in the range of those for known physiological interactions between sRNAs and target mRNAs (e.g. −16.1 kcal/mol, ChiX and dpiB; −13.0 kcal/mol, OmrA and csgD; −14.9 kcal/mol, DsrA and rpoS), −14.3 kcal/mol, RprA and rpoS), with the strongest binding energy being −7.4 kcal/mol. Mutations decreased the predicted binding energy to <-11 kcal/mol for only one sRNA, RyfA, and only for the 58 bp deletion, 38 bp duplication and −94 A→G point mutation. Binding of RyfA was predicted to increase in a region that is not involved in the secondary structure around the ribosome binding site (Figure 6—figure supplement 4B). Thus, differences in binding to sRNAs are unlikely to be responsible for the changes in translation efficiency.
 
-## Mutations in carB either increase activity or impact allosteric regulation
+### Mutations in carB either increase activity or impact allosteric regulation
 
-We found eight different mutations in carB in six of the evolved populations: four missense mutations, three deletions (≥12 bp), and one 21 bp duplication (Figure 7A). CarB, the large subunit of carbamoyl phosphate synthetase (CPS), forms a complex with CarA to catalyze production of carbamoyl phosphate from glutamine, bicarbonate, and two molecules of ATP (Equation 1).(1)Gln+HCO3−+2ATP⟶carbamoylphosphate+Glu+2ADP+Pi
+We found eight different mutations in carB in six of the evolved populations: four missense mutations, three deletions (≥12 bp), and one 21 bp duplication (Figure 7A). CarB, the large subunit of carbamoyl phosphate synthetase (CPS), forms a complex with CarA to catalyze production of carbamoyl phosphate from glutamine, bicarbonate, and two molecules of ATP (Equation 1).
 
-Synthesis of carbamoyl phosphate involves four reactions that take place in three separate active sites connected by a molecular tunnel of ~100 Å in length (Thoden et al., 2002). CarA catalyzes hydrolysis of glutamine to glutamate and ammonia (Equation 2). CarB phosphorylates bicarbonate to form carboxyphosphate in its first active site (Equation 3). Ammonia from the CarA active site is channeled to CarB, where it reacts with carboxyphosphate to form carbamate (Equation 4). Carbamate migrates to a second active site within CarB, where it reacts with ATP to form carbamoyl phosphate and ADP (Equation 5).(2)Gln+H2O⟶NH3+Glu(3)HCO3−+ATP⟶carboxyphosphate+ADP(4)NH3+carboxyphospate⟶carbamate+Pi(5)carbamate+ATP⟶carbamoylphosphate+ADP
+$$
+Gln+HCO_{3}^{−}+2ATP⟶carbamoylphosphate+Glu+2ADP+P_{i}
+$$
+
+![Figure 7.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig7-v2.jpg)
+
+**Figure 7.:** (A) Maximum percentage of each carB mutation found in the population at any time during the evolution. Nucleotide (nt) numbers below mutant descriptions indicate where deletions or duplications occurred in the 3222 nt carB. Arrows indicate that a kinetic parameter was either increased or decreased in the variant enzyme relative to the wild-type enzyme. X, loss of activity; n.c., no change. (B) Allosteric regulation of carbamoyl phosphate synthetase. CarA and CarB are the small and large subunits of carbamoyl phosphate synthetase, respectively. (C) CarB functional domains (top) and crystal structure of E. coli CarAB (PDB 1CE8, bottom) (Thoden et al., 1999). Green, CarA; blue, CarB; gold, allosteric domain of CarB; red, residues that are deleted or duplicated in the adapted strains; magenta, point mutations that occur in the adapted strains. IMP and ornithine bound to the allosteric domain are shown as spheres. One of the two bound ATP molecules can be seen as spheres in the center of CarB. (D–E) Influence of UMP and L-ornithine on the ATPase activity of CarAB. v0; reaction rate in the absence of ligand. Each point represents the average of three technical replicates. (F) Growth rates of the parental AM187 strain and strains in which carB mutations had been introduced into the genome of AM187. (G) Relative fitness of AM441 (E. coli BW25113 containing the ∆82 bp mutation upstream of pyrE) and strains in which the carB mutations had been introduced into the genome of AM441. Asterisks in (F) and (G) indicate differences with p values < 0.03 (single asterisk) or ≤ 0.001 (double asterisk) by a two-tailed, unequal variance Student’s t-test, N = 4.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Values reported were averaged from three replicates. Error bars represent one standard error from the mean.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Concentrations of arginine and uracil were chosen based on those in EZ rich defined medium (Neidhardt et al., 1974). *, p value < 0.01. **, p value < 0.005; n.s. indicates not significant based on a two-tailed, unequal variance Student’s t-test, N = 4.
+
+Synthesis of carbamoyl phosphate involves four reactions that take place in three separate active sites connected by a molecular tunnel of ~100 Å in length (Thoden et al., 2002). CarA catalyzes hydrolysis of glutamine to glutamate and ammonia (Equation 2). CarB phosphorylates bicarbonate to form carboxyphosphate in its first active site (Equation 3). Ammonia from the CarA active site is channeled to CarB, where it reacts with carboxyphosphate to form carbamate (Equation 4). Carbamate migrates to a second active site within CarB, where it reacts with ATP to form carbamoyl phosphate and ADP (Equation 5).
+
+$$
+Gln+H_{2}O⟶NH_{3}+Glu
+$$
+
+
+
+$$
+HCO_{3}^{−}+ATP⟶carboxyphosphate+ADP
+$$
+
+
+
+$$
+NH_{3}+carboxyphospate⟶carbamate+P_{i}
+$$
+
+
+
+$$
+carbamate+ATP⟶carbamoylphosphate+ADP
+$$
 
 Carbamoyl phosphate feeds into both the pyrimidine and arginine synthesis pathways and its production is regulated in response to an intermediate or product of both pathways (Figure 2, Figure 7B), as well as by IMP (Pierrat and Raushel, 2002). CarB is inhibited by UMP (a pyrimidine) and moderately activated by IMP (a purine). UMP and IMP compete to bind the same region of CarB (Eroglu and Powers-Lee, 2002). The net effect is inhibition of CarB when pyrimidine levels are high and activation when purine levels are high. The allosteric effects of UMP and IMP are dominated, however, by activation by ornithine. Ornithine, an intermediate in arginine synthesis that reacts with carbamoyl phosphate, binds to and activates CarB even when UMP is bound (Figure 7C) (Braxton et al., 1999; Eroglu and Powers-Lee, 2002). Thus, flux into arginine synthesis can be maintained even when pyrimidine levels are sufficient.
 
 Seven of the eight mutations found in carB affect residues in the allosteric domain of CarB. The other mutation changes Gly369, which is immediately adjacent to the allosteric region, to Val (Figure 7C).
 
 The kinetic parameters for carbamoyl phosphate synthetase (CPS) activity (determined as the glutamine- and bicarbonate-dependent ATPase activity [Equation 1]) of all eight CPS variants are shown in Table 3. All mutations decreased kcat/Km,ATP by 34–63%, with the exception of the mutation that changes Lys966 to Glu, which nearly doubles kcat/Km,ATP. None of the mutations affected the enzyme’s ability to couple ATP hydrolysis with carbamoyl phosphate production (Figure 7—figure supplement 1).
+
+**Table 3.**
+ Kinetic parametersa for the glutamine- and bicarbonate-dependent ATPase reaction of wild-type and variant carbamoyl phosphate synthetases.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Enzyme</th>
+      <th>KM, ATP (mM)</th>
+      <th>kcat (s−1)</th>
+      <th>kcat/KM,ATP (M−1 s−1)</th>
+      <th>UMP Kd (µM)</th>
+      <th>UMP a</th>
+      <th>ornithine Kd (µM)</th>
+      <th>ornithine a</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>1.05 ± 0.08</td>
+      <td>13.5 ± 0.3</td>
+      <td>12.9 (±1.0)×103</td>
+      <td>0.81 ± 0.04</td>
+      <td>0.27 ± 0.01</td>
+      <td>130 ± 7</td>
+      <td>3.28 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>G369V</td>
+      <td>3.31 ± 0.25</td>
+      <td>21.5 ± 0.7</td>
+      <td>6.51 (±0.54)×103</td>
+      <td>1.53 ± 0.29</td>
+      <td>0.48 ± 0.02</td>
+      <td>372 ± 20</td>
+      <td>11.8 ± 0.13</td>
+    </tr>
+    <tr>
+      <td>L960P</td>
+      <td>1.12 ± 0.05</td>
+      <td>9.10 ± 0.15</td>
+      <td>8.12 (±0.41)×103</td>
+      <td>na</td>
+      <td>na</td>
+      <td>na</td>
+      <td>na</td>
+    </tr>
+    <tr>
+      <td>L964Q</td>
+      <td>1.25 ± 0.08</td>
+      <td>8.04 ± 0.17</td>
+      <td>6.41 (±0.42)×103</td>
+      <td>na</td>
+      <td>na</td>
+      <td>na</td>
+      <td>na</td>
+    </tr>
+    <tr>
+      <td>K966E</td>
+      <td>0.97 ± 0.06</td>
+      <td>20.6 ± 0.4</td>
+      <td>21.2 (±1.4)×103</td>
+      <td>0.61 ± 0.04</td>
+      <td>0.21 ± 0.01</td>
+      <td>181 ± 34</td>
+      <td>3.23 ± 0.08</td>
+    </tr>
+    <tr>
+      <td>∆12 bp (at nt 2906)b</td>
+      <td>1.09 ± 0.06</td>
+      <td>4.80 ± 0.09</td>
+      <td>4.39 (±0.25)×103</td>
+      <td>na</td>
+      <td>na</td>
+      <td>na</td>
+      <td>na</td>
+    </tr>
+    <tr>
+      <td>∆132 bp (at nt 2986)</td>
+      <td>1.16 ± 0.06</td>
+      <td>6.47 ± 0.11</td>
+      <td>5.57 (±0.31)×103</td>
+      <td>na</td>
+      <td>na</td>
+      <td>na</td>
+      <td>na</td>
+    </tr>
+    <tr>
+      <td>∆12 bp (at nt 3108)</td>
+      <td>1.30 ± 0.10</td>
+      <td>5.86 ± 0.16</td>
+      <td>4.51 (±0.37)×103</td>
+      <td>na</td>
+      <td>na</td>
+      <td>na</td>
+      <td>na</td>
+    </tr>
+    <tr>
+      <td>21 bp dup. (at nt 3130)</td>
+      <td>1.40 ± 0.12</td>
+      <td>9.70 ± 0.30</td>
+      <td>6.94 (±0.64)×103</td>
+      <td>597 ± 133</td>
+      <td>0.51 ± 0.03</td>
+      <td>na</td>
+      <td>na</td>
+    </tr>
+  </tbody>
+</table>
+
+_a Values reported ± standard error. Values for Kd and a for UMP and ornithine were determined by fitting the data to the following equation: v/v0 = (aL + Kd)/(L + Kd), where L is the ligand concentration, v is the initial reaction rate, v0 is the initial reaction rate in the absence of ligand, a is v/v0 at infinite L, and Kd is the apparent dissociation constant. No Kd or a values are given (indicated by na) when inhibition by the allosteric ligand was too weak to measure.b Nucleotide (nt) numbers refer to the position of deletions or duplications in carB._
 
 We measured the effect of mutations on UMP inhibition and ornithine activation of CPS (Table 3, Figure 7D–E). Regulation of the K966E variant, the enzyme for which kcat/Km,ATP was nearly doubled, was minimally affected. Five of the variants showed complete loss of allosteric regulation. The variant with the 21 bp duplication retained modest inhibition by UMP, but only at very high concentrations of UMP; the apparent Kd,UMP was increased by 740-fold. Similarly, G369V CPS retained partial inhibition by UMP. While the apparent Kd,UMP of the G369V enzyme only doubled, this variant showed a 3.5-fold increase in activation at high ornithine concentrations.
 
@@ -140,7 +546,7 @@ Because ~3 copies of proA** remained in the population and the progenitor proA*
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/53535/elife-53535-fig9-v2.jpg)
 
-**Figure 9.:** proA* array with one proA** allele can rapidly lead to a daughter cell with only proA** alleles.Each arrow represents one homologous replication event. The genotype of the less-fit daughter cell from each recombination event is grayed out.
+**Figure 9.:** Each arrow represents one homologous replication event. The genotype of the less-fit daughter cell from each recombination event is grayed out.
 
 While growth rate improved substantially in all populations, a beneficial mutation in proA* arose in only one, suggesting either that mutations that improve the neo-ArgC activity are uncommon, or that their fitness effects are smaller than those caused by mutations elsewhere in the genome that also improve arginine synthesis. We identified two primary mechanisms that apparently improve arginine synthesis without affecting the efficiency of the weak-link enzyme ProA* itself.
 
@@ -156,7 +562,7 @@ Not surprisingly, the process of evolution of a new enzyme by gene duplication a
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 Common chemicals were purchased from Sigma-Aldrich (St. Louis, MO) and Fisher Scientific (Fair Lawn, NJ).
 
@@ -166,11 +572,11 @@ GSA was synthesized enzymatically from L-ornithine using N-acetylornithine amino
 
 Plasmids and primers used in this study are listed in Supplementary file 1 and Supplementary file 2.
 
-## Strains and culture conditions
+### Strains and culture conditions
 
 Strains used in this study are listed in Table 1. E. coli cultures were routinely grown in LB medium at 37°C with 20 µg/mL kanamycin, 100 µg/mL ampicillin, 20 µg/mL chloramphenicol, or 10 µg/mL tetracycline, as required. Evolution of strain AM187 was performed at 37°C in M9 minimal medium containing 0.2% glucose, 0.4 mM proline, and 20 µg/mL kanamycin (Evolution Medium).
 
-## Strain construction
+### Strain construction
 
 The parental strain for the evolution experiment (AM187) was constructed from the Keio collection argC::kanr E. coli BW25113 strain (Baba et al., 2006). The fimAICDFGH and csgBAC operons were deleted (to slow biofilm formation), and the M2 proBA promoter mutation (Kershner et al., 2016) and the point mutation in proA that changes Glu383 to Ala (McLoughlin and Copley, 2008) were inserted into the genome using the scarless genome editing technique described in Kim et al. (2014). We initially hoped to measure proA* copy number during adaptation using fluorescence, although ultimately qPCR proved to be a better approach. Thus, we inserted yfp downstream of proA* under control of the P3 promoter (Mutalik et al., 2013) and with a synthetically designed ribosome binding site (Espah Borujeni et al., 2014; Salis et al., 2009). A double transcription terminator (BioBrick Part: BBa_B0015) was inserted immediately downstream of proBA* to prevent read-through transcription of yfp (Figure 2—figure supplement 1). We also inserted a NotI cut site immediately downstream of proA* to enable cloning of individual proA* alleles after amplification if necessary. A Fis binding site located 32 bp downstream of proA was preserved because it might impact proA transcription. The NotI-2xTerm-yfp cassette was inserted downstream of proA* using the scarless genome editing technique described in Kim et al. (2014). The genome of the resulting strain AM187 was sequenced to confirm that there were no unintended mutations and deposited to NCBI GenBank under accession number CP037857.
 
@@ -182,7 +588,7 @@ Most mutations observed during the evolution experiment were introduced into the
 
 The cells were first transformed with a helper plasmid (pAM053, Supplementary file 1) encoding cas9 under control of a weak constitutive promoter (pro1 from Davis et al., 2011), λ Red recombinase genes (exo, gam, and bet) under control of a heat-inducible promoter, and a temperature-sensitive origin of replication (Datta et al., 2006). The cells were grown to an OD600 of 0.2–0.4 at 30°C and then incubated at 42°C with shaking for 15 min to induce expression of the λ Red recombinase genes. The cells were immediately subjected to electroporation with 100 ng of a plasmid expressing a guide RNA targeting a 20-nucleotide sequence within the region targeted for deletion (Supplementary file 1, Supplementary file 3), and 450 ng of a linear homology repair template that encodes the new sequence with the desired deletion (Supplementary file 4). (Linear homology repair templates were amplified from genomic DNA of clones isolated during the evolution experiment or plasmids that contained the desired deletions and the PCR fragments were gel-purified. Primers used to generate the linear DNA mutation fragments are listed in Supplementary file 2.) The cells were allowed to recover at 30°C for 2–3 hr before being spread onto LB/chloramphenicol/ampicillin plates. Sanger sequencing confirmed that the surviving colonies contained the desired deletion. Individual colonies were cured of pAM053 and the guide RNA plasmids, both of which have temperature-sensitive origins of replication, by growth at 37°C.
 
-## Laboratory evolution
+### Laboratory evolution
 
 Evolution of strain AM187 in Evolution Medium was carried out in eight replicate tubes in a custom turbidostat constructed as described by Takahashi et al. (2015). To start the experiment, strain AM187 was grown to exponential phase (OD600 = 0.7) in LB/kanamycin at 37°C. Cells were centrifuged at 4000 x g for 10 min at room temperature and resuspended in an equal volume of PBS. The suspended cells were washed twice more with PBS and resuspended in PBS. This suspension was used to inoculate all eight turbidostat chambers to give an initial OD600 of 0.01 in 14 mL of Evolution Medium. The turbidostat was set to maintain an OD650 of 0.4 by diluting individual cultures with an appropriate amount of fresh medium every 60 s.
 
@@ -190,35 +596,61 @@ A 3 mL portion of each population was collected every 2–3 days; 800 µl was us
 
 At several points during the evolution, the turbidostat was restarted due to a planned pause or an instrument malfunction. During a planned pause, the populations were subjected to centrifugation at 4000 x g for 10 min at room temperature and the pelleted cells were resuspended in 1.6 mL of Evolution Medium. Half of the resuspension was used to make a 10% glycerol stock for storage at −70°C, and the other half to purify genomic DNA. When the turbidostat was restarted, the frozen stock was thawed and the cells were collected by centrifugation at 16,000 x g for 1 min at room temperature. The pelleted cells were resuspended in 1 mL of PBS, washed, and resuspended in 500 µL of Evolution Medium. The entire resuspension was used to inoculate the appropriate chamber of the turbidostat. Sometimes the experiment had to be restarted from a frozen stock of a normal sample (as opposed to the entire population as just described), resulting in a more significant population bottleneck. In this case, the entire frozen stock was thawed and only 700 µL washed as described above to be used for the inoculation. The remaining 300 µL of the glycerol stock were re-stored at −70°C in case the frozen stock was needed for downstream analysis. The times at which the turbidostat failed and was restarted are indicated in Figure 4—source data 1. We always restarted the turbidostat with >108 cells (>5% of the culture) in order to preserve the diversity of the previous populations.
 
-## Calculation of growth rate and generations during adaptation
+### Calculation of growth rate and generations during adaptation
 
-The turbidostat takes an OD650 reading every ~3 s and dilutes the cultures every 60 s. Thus, readings between dilutions can be used to calculate an average growth rate each day based on the following equation:(6)μ¯=∑in(Nt1,i/Nt0,i)t1,i−t0,inwhere μ¯ is the average growth rate in hr−1, n is the number of independent growth rate calculations within a given 24 hr period, Nt0 is the OD650 reading right after the dilution, Nt1 is the OD650 reading right before the next dilution, and t0 and t1 are the times at which the OD650 was measured. The number of generations per day (g) was then calculated from using (Equation 7).(7)g=24hln(2)/μ¯
+The turbidostat takes an OD650 reading every ~3 s and dilutes the cultures every 60 s. Thus, readings between dilutions can be used to calculate an average growth rate each day based on the following equation:
+
+$$
+\mu¯=\frac{\sumin\frac{(N_{t1,i}/N_{t0,i})}{t_{1,i}−t_{0,i}}}{n}
+$$
+
+where $\mu¯$ is the average growth rate in hr−1, n is the number of independent growth rate calculations within a given 24 hr period, Nt0 is the OD650 reading right after the dilution, Nt1 is the OD650 reading right before the next dilution, and t0 and t1 are the times at which the OD650 was measured. The number of generations per day (g) was then calculated from using (Equation 7).
+
+$$
+g=\frac{24h}{ln(2)/\mu¯}
+$$
 
 The R script used to calculate growth rate from turbidostat readings can be found in Source code 1.
 
-## Measurement of proA* copy number
+### Measurement of proA* copy number
 
-The copy number of proA* was determined by qPCR of purified population genomic DNA. gyrB and icd, which remained at a single copy in the genome throughout the adaptation experiment, were used as internal reference genes. The primer sets used for each gene are listed in Supplementary file 2. PowerSYBR Green PCR master mix (Thermo Scientific) was used according to the manufacturer’s protocol. A standard curve using variable amounts of AM187 genomic DNA was run on every plate to calculate efficiencies for each primer set. Primer efficiencies were calculated with the following equation:(8)Ex=10−(1m)where E is the efficiency of primer set x, and m is the slope of the plot of Ct vs. starting quantity for the standard curve. proA* copy number was then calculated with the following equation (Hellemans et al., 2007):(9)n=EproAΔCt,proAEgyrBΔCt,gyrB×EicdΔCt,icdwhere n is the proA* copy number, and ∆Ct,x is the difference in Ct’s measured during amplification of AM187 and sample genomic DNA with primer set x.
+The copy number of proA* was determined by qPCR of purified population genomic DNA. gyrB and icd, which remained at a single copy in the genome throughout the adaptation experiment, were used as internal reference genes. The primer sets used for each gene are listed in Supplementary file 2. PowerSYBR Green PCR master mix (Thermo Scientific) was used according to the manufacturer’s protocol. A standard curve using variable amounts of AM187 genomic DNA was run on every plate to calculate efficiencies for each primer set. Primer efficiencies were calculated with the following equation:
 
-## Whole-genome sequencing
+$$
+E_{x}=10^{−(\frac{1}{m})}
+$$
+
+where E is the efficiency of primer set x, and m is the slope of the plot of Ct vs. starting quantity for the standard curve. proA* copy number was then calculated with the following equation (Hellemans et al., 2007):
+
+$$
+n=\frac{E_{proA}^{ΔC_{t,proA}}}{\sqrt{E_{gyrB}^{ΔC_{t,gyrB}}\timesE_{icd}^{ΔC_{t,icd}}}}
+$$
+
+where n is the proA* copy number, and ∆Ct,x is the difference in Ct’s measured during amplification of AM187 and sample genomic DNA with primer set x.
+
+### Whole-genome sequencing
 
 Libraries were prepared from purified population genomic DNA using a modified Illumina Nextera protocol and multiplexed onto a single run on an Illumina NextSeq500 to produce 151 bp paired-end reads (Baym et al., 2015), giving a 60–130-fold coverage of the AM187 genome. Reads were trimmed using BBtools v35.82 (DOE Joint Genome Institute) and mapped using breseq v0.32.1 using the polymorphism (mixed population) option (Deatherage and Barrick, 2014).
 
-## Growth rate measurements
+### Growth rate measurements
 
 Growth rates for individual constructed strains were calculated from growth curves measured in quadruplicate. Overnight cultures were grown in LB at 37°C from glycerol stocks. Kanamycin (20 µg/mL) was added for strains in which argC had been replaced by kanR. Ampicillin (100 µg/mL) was added for strains carrying the argB expression plasmid (pAM141, Supplementary file 1). Forty µL of each overnight culture was used to inoculate 4 mL of LB with appropriate antibiotics and the cultures were allowed to grow to mid-exponential phase (OD600 0.3–0.6) at 37°C with shaking. The cultures were subjected to centrifugation at 4000 x g for 10 min at room temperature and the pellets resuspended in an equal volume of PBS. The pellets were washed once more in PBS. The cells were diluted to an OD600 of 0.001 in Evolution Medium and a 100 µL aliquot was loaded into each well of a 96-well plate. When argB was expressed from a low-copy plasmid carrying ampr (Figure 6B), kanamycin was omitted and ampicillin was added to the medium. The plates were incubated in a Varioskan (Thermo Scientific) plate reader at 37°C with shaking every 5 min for 1 min. The absorbance at 600 nm was measured every 20 min for up to 200 hr. The baseline absorbance for each well (the average over several smoothed data points before growth) was subtracted from each point of the growth curve. Growth parameters (maximum specific growth, μmax; lag time, λ; maximum growth, Amax) were estimated by non-linear regression using the modified Gompertz equation (Zwietering et al., 1990). Non-linear least-squares regression was performed in Excel using the Solver feature.
 
 Growth rates were calculated for populations in the turbidostats during evolution and for individual strains in the plate reader. The growth rate of the parental strain AM187 is ~0.27 h−1 in the plate reader (Figure 5B, Figure 6B, Figure 7F, Figure 4—figure supplement 2, Figure 7—figure supplement 2) and ~0.24 h−1 in the turbidostat (Figure 3), so the growth rates of individual strains in the plate reader and turbidostat are similar.
 
-## Fitness competition assay
+### Fitness competition assay
 
 Fitness competition assays were used in lieu of growth curves when growth rate differences between strains were expected to be small (Figure 7G). Overnight cultures of a reference strain containing a plasmid carrying cfp (pAM003, Supplementary file 1) and a test strain containing a plasmid carrying yfp (pAM142, Supplementary file 1) were grown in LB/ampicillin at 37°C from glycerol stocks. Forty µL of each overnight culture was inoculated into 4 mL of M9/0.2% glucose/ampicillin and the cultures were allowed to grow to mid-exponential phase (OD600 0.3–0.6) at 37°C with shaking. One mL of each culture was subjected to centrifugation at 10,000 x g for 1 min at room temperature and the pellets resuspended in an equal volume of PBS. The CFP- and YFP-labelled strains were mixed in equal parts to a final OD600 of 0.01 in 25 mL of M9/0.2% glucose/ampicillin. Competition cultures were grown at 37°C with shaking and passaged into fresh M9/0.2% glucose/ampicillin at mid-log phase four times.
 
-We used flow cytometry to count cells in initial and final cultures. The final cultures were diluted 100-fold in PBS prior to flow cytometry. Relative fitness was calculated by the following equation (Dykhuizen, 1990):(10)w=ln(R(t)/R(0))t+1
+We used flow cytometry to count cells in initial and final cultures. The final cultures were diluted 100-fold in PBS prior to flow cytometry. Relative fitness was calculated by the following equation (Dykhuizen, 1990):
+
+$$
+w=\frac{ln(R(t)/R(0))}{t}+1
+$$
 
 Where t is the number of generations and R is the ratio of mutant to reference strain cell counts (YFP/CFP). All w values were normalized to the w value obtained for a competition between the CFP-containing reference strain and a YFP-containing reference strain to account for any fitness effects of expressing YFP versus CFP.
 
-## Measurement of argB and argH gene expression by RT-qPCR
+### Measurement of argB and argH gene expression by RT-qPCR
 
 Overnight cultures were grown from glycerol stocks in LB/kanamycin at 37°C. Ten µL of each overnight culture was used to inoculate 4 mL of LB/kanamycin and the cultures were grown to mid-exponential phase (OD600 0.3–0.6) at 37°C with shaking. The cultures were centrifuged at 4000 x g for 10 min and pellets resuspended in equal volume PBS. Pellets were washed once more in PBS. The cells were diluted to an OD600 of 0.001 in 4 mL of Evolution Medium and grown to an OD600 of 0.2–0.3. Four 2 mL aliquots of culture were thoroughly mixed with 4 mL of RNAprotect Bacteria Reagent (Qiagen) and incubated at room temperature for 5 min before centrifugation at 4000 x g for 12 min at room temperature. Pellets were frozen in liquid N2 and stored at −70°C.
 
@@ -226,7 +658,7 @@ RNA was purified using the Invitrogen PureLink RNA Mini Kit according to the man
 
 qPCR of cDNA was performed to measure the fold-change in expression of argB and argH in mutant strains compared to that in AM187. hcaT and cysG were used as reference genes (Zhou et al., 2011). The primer sets used for each gene are listed in Supplementary file 2. A standard curve using variable amounts of E. coli BW25113 genomic DNA was run to calculate the primer efficiencies for each primer set. Fold-changes in expression of argB and argH were calculated as described above for calculations of proA* copy number.
 
-## Measurement of ArgB and ArgH protein levels
+### Measurement of ArgB and ArgH protein levels
 
 Individual colonies were inoculated into four parallel 2 mL aliquots of LB. Kanamycin (20 µg/mL) was added for strains in which argC had been replaced by kanr. Ampicillin (100 µg/mL) was added and kanamycin was omitted when argB was expressed from a low-copy plasmid (pAM141, Supplementary file 1). The cultures were grown to mid-exponential phase at 37°C with shaking. One mL of each culture was subjected to centrifugation at 16,000 x g for 1 min at room temperature. The cell pellets were resuspended in 1 mL PBS and washed twice more in PBS before resuspension and dilution to an OD of 0.001 in 5 mL of Evolution Medium. Antibiotics were added as detailed above. Cultures were grown to an OD600 of 0.1–0.3 at 37°C with shaking and then chilled on ice for 10 min before pelleting by centrifugation at 4000 x g at 4°C. Cell pellets were frozen in liquid N2 and stored at −70°C.
 
@@ -234,7 +666,7 @@ Frozen cell pellets were thawed and lysed in 60 µL 50 mM Tris-HCl, pH 8.5, cont
 
 Samples were suspended in 12 µL of 3% (v/v) acetonitrile/0.1% (v/v) trifluoroacetic acid and 0.5–1 µg of peptides were directly injected onto a C18 1.7 µm, 130 Å, 75 µm X 250 mm M-class column (Waters), using a Waters M-class UPLC. Peptides were eluted at 300 nL/minute using a gradient from 3% to 20% acetonitrile over 100 min into an Orbitrap Fusion mass spectrometer (Thermo Scientific). Precursor mass spectra (MS1) were acquired at a resolution of 120,000 from 380 to 1500 m/z with an AGC target of 2.0 × 105 and a maximum injection time of 50 ms. Dynamic exclusion was set for 20 s with a mass tolerance of + /– 10 ppm. Precursor peptide ion isolation width for MS2 fragment scans was 1.6 Da using the quadrupole, and the most intense ions were sequenced using Top Speed with a 3 s cycle time. All MS2 sequencing was performed using higher energy collision dissociation (HCD) at 35% collision energy and scanning in the linear ion trap. An AGC target of 1.0 × 104 and 35 s maximum injection time was used. Rawfiles were searched against the Uniprot Escherichia coli database using Maxquant version 1.6.1.0 with cysteine carbamidomethylation as a fixed modification. Methionine oxidation and protein N-terminal acetylation were searched as variable modifications. All peptides and proteins were thresholded at a 1% false discovery rate (FDR).
 
-## Enzyme overexpression plasmids
+### Enzyme overexpression plasmids
 
 argB and proA were amplified from the genome of E. coli BW25113 and proA* was amplified from the genome of AM187 using primers specified in Supplementary file 2. The amplified PCR fragments were ligated into a linearized pET-46 vector backbone by Gibson assembly (NEB) to make pAM028, pAM063, and pAM064, respectively (Supplementary file 1). A sequence encoding a 6xHis-tag followed by a 2xVal-linker was incorporated at the N-terminus of each protein. The proA** expression plasmid (pAM112) was constructed from pAM064 using the Q5 Site-Directed Mutagenesis Kit (NEB) and the primers listed in Supplementary file 2.
 
@@ -244,7 +676,7 @@ The argD and argI expression plasmids from the ASKA collection (Kitagawa et al.,
 
 The correct sequences for all constructs were confirmed by Sanger sequencing.
 
-## Protein purification
+### Protein purification
 
 Wild-type and variant ProAs were expressed in strain AM209 [BL21(DE3) argC::kanr proA::cat] to avoid contamination with wild-type ProA and ArgC. Carbamoyl phosphate synthetase (CPS) consists of a stable complex between CarA and CarB. Thus, carA and wild-type or variant carBs were co-expressed on the same plasmid with a His-tag on CarA in strain AM267 (BL21 carAB::kanr) to enable purification in the absence of wild-type CPS. Ornithine transcarbamoylase was also expressed in this strain. ArgB was expressed in BL21(DE3).
 
@@ -252,32 +684,44 @@ Enzymes were expressed and purified using the following protocol with minor vari
 
 Frozen cell pellets were resuspended in 5x the cell pellet weight of ice-cold 20 mM sodium phosphate, pH 7.4, containing 300 mM NaCl and 10 mM imidazole. Fifty µL of protease inhibitor cocktail (Sigma-Aldrich, P8849) was added for each gram of cell pellet. Lysozyme was added to a final concentration of 0.2 mg/mL and the cells were lysed by probe sonication (20 s of sonication followed by 30 s on ice, repeated three times). Cell debris was removed by centrifugation at 18,000 x g for 20 min at 4°C. The soluble fraction was then loaded onto 1 mL or 3 mL HisPur Ni-NTA Spin Columns (Thermo Scientific) and His-tagged protein was purified according to the manufacturer’s protocol. Bound protein was eluted with one column volume of 20 mM sodium phosphate, pH 7.4, containing 300 mM NaCl and increasing amounts of imidazole (100 mM, 250 mM, and finally 500 mM). Two separate elutions were performed with 500 mM imidazole. Fractions containing the protein of interest were pooled and dialyzed overnight against 6–12 L of exchange buffer at 4°C. (ProA and ArgC were dialyzed against 20 mM potassium phosphate, pH 7.5, containing 20 mM DTT. N-acetylornithine aminotransferase was dialyzed against 20 mM potassium phosphate, pH 7.5. CPS was dialyzed against 100 mM potassium phosphate, pH 7.6. Ornithine transcarbamoylase was dialyzed against 20 mM Tris-acetate, pH 7.5. ArgB was dialyzed against 10 mM Tris-HCl, pH 7.8.) Protein purity was assessed by SDS-PAGE and concentration measured using the Qubit protein assay kit with a Qubit 3.0 fluorometer (Invitrogen). Purified protein was stored at 4°C for short-term storage, and frozen in liquid nitrogen and stored at −70°C for long-term storage.
 
-## GSA and NAGSA dehydrogenase assays
+### GSA and NAGSA dehydrogenase assays
 
 The native and neo-ArgC activities of ProA were assayed in the reverse direction (dehydrogenase reaction) because the lability of the forward substrates γ-glutamyl phosphate and N-acetylglutamyl phosphate makes them difficult to purify. The change in the dehydrogenase activity due to a mutation is proportional to the change in the reductase activity according to the Haldane relationship (Haldane, 1930; McLoughlin and Copley, 2008).
 
-Assaying ProA’s dehydrogenase activity using γ-glutamyl semialdehyde (GSA) and N-acetylglutamyl semialdehyde (NAGSA) as substrates is complicated by the equilibrium of GSA and NAGSA with their hydrated forms, as well as GSA’s intramolecular cyclization to form pyrroline-5-carboxylate (P5C) (Bearne and Wolfenden, 1995; Mezl and Knox, 1976). In order to measure the concentration of the free aldehyde form of these substrates, we mixed 15 µM ProA or ArgC with 2 mM ‘GSA’ (including the hydrate and P5C) or 2 mM ‘NAGSA’ (including the hydrate), respectively, in a solution containing 100 mM potassium phosphate, pH 7.6, and 1 mM NADP+ and measured the burst in NADPH production (Khanal et al., 2015). The concentrations of GSA+P5C+hydrate or NAGSA+hydrate were determined using the o-aminobenzaldehyde assay (Albrecht et al., 1962; Mezl and Knox, 1976). ﻿The absorbance at 340 nm due to formation of NADPH exhibited a burst followed by a linear phase that was followed for 60 s. We assume that the burst corresponds to reduction of the free aldehyde form of GSA or NAGSA and the rate of the linear phase is determined by the conversion of the hydrate (and P5C in the case of GSA) to the free aldehyde. We calculated the magnitude of the burst by fitting either all of the data or the linear portion of the data to one of the following equations.(11)f(x)=mx+b(12)f(x)=mx+b(1−e−x)where x is time in seconds, m is the slope of the linear phase, and b is the magnitude of the burst and thus proportional to the starting concentration of the free aldehyde form of the substrate. In the case of the linear fit, only the linear portion of the A340 data was used. Equation 11 was used to calculated NAGSA free aldehyde concentration because the exponential equation did not fit the data well. Equation 12 was used to calculated GSA free aldehyde concentration. We repeated the assay three times and averaged the magnitude of the burst to calculate free aldehyde concentrations for solutions of GSA and NAGSA (under these buffer and temperature conditions) of 4.5% and 4.2% of the total concentration of free aldehyde + hydrate (+ P5C for GSA), respectively.
+Assaying ProA’s dehydrogenase activity using γ-glutamyl semialdehyde (GSA) and N-acetylglutamyl semialdehyde (NAGSA) as substrates is complicated by the equilibrium of GSA and NAGSA with their hydrated forms, as well as GSA’s intramolecular cyclization to form pyrroline-5-carboxylate (P5C) (Bearne and Wolfenden, 1995; Mezl and Knox, 1976). In order to measure the concentration of the free aldehyde form of these substrates, we mixed 15 µM ProA or ArgC with 2 mM ‘GSA’ (including the hydrate and P5C) or 2 mM ‘NAGSA’ (including the hydrate), respectively, in a solution containing 100 mM potassium phosphate, pH 7.6, and 1 mM NADP+ and measured the burst in NADPH production (Khanal et al., 2015). The concentrations of GSA+P5C+hydrate or NAGSA+hydrate were determined using the o-aminobenzaldehyde assay (Albrecht et al., 1962; Mezl and Knox, 1976). ﻿The absorbance at 340 nm due to formation of NADPH exhibited a burst followed by a linear phase that was followed for 60 s. We assume that the burst corresponds to reduction of the free aldehyde form of GSA or NAGSA and the rate of the linear phase is determined by the conversion of the hydrate (and P5C in the case of GSA) to the free aldehyde. We calculated the magnitude of the burst by fitting either all of the data or the linear portion of the data to one of the following equations.
+
+$$
+f(x)=mx+b
+$$
+
+
+
+$$
+f(x)=mx+b(1−e^{−x})
+$$
+
+where x is time in seconds, m is the slope of the linear phase, and b is the magnitude of the burst and thus proportional to the starting concentration of the free aldehyde form of the substrate. In the case of the linear fit, only the linear portion of the A340 data was used. Equation 11 was used to calculated NAGSA free aldehyde concentration because the exponential equation did not fit the data well. Equation 12 was used to calculated GSA free aldehyde concentration. We repeated the assay three times and averaged the magnitude of the burst to calculate free aldehyde concentrations for solutions of GSA and NAGSA (under these buffer and temperature conditions) of 4.5% and 4.2% of the total concentration of free aldehyde + hydrate (+ P5C for GSA), respectively.
 
 GSA and NAGSA dehydrogenase activities were measured by monitoring the appearance of NADPH at 340 nm in reaction mixtures containing 100 mM potassium phosphate, pH 7.6, 1 mM NADP+, varying concentrations of NAGSA or GSA, and catalytic amounts of ProA, ProA*, and ProA**. All kinetic measurements were done at 25°C. Values for KM refer to the concentration of the free aldehyde form of the substrate. An example R script used to calculate the Michaelis-Menten parameters can be found in Source code 2 Table 2—source code 1.
 
-## Assays for carbamoyl phosphate synthetase activity and allosteric regulation
+### Assays for carbamoyl phosphate synthetase activity and allosteric regulation
 
 Kinetic assays for carbamoyl phosphate synthetase (CPS) were carried out with minor modifications of the methods described in Pierrat and Raushel (2002). The rate of ATP hydrolysis was measured at 37°C by coupling production of ADP to oxidation of NADH using pyruvate kinase, which converts ADP and PEP to ATP and pyruvate, and lactate dehydrogenase, which reduces pyruvate to lactate. Loss of NADH was monitored at 340 nm. Reaction mixtures consisted of 50 mM HEPES, pH 7.5, containing 10 mM MgCl2, 100 mM KCl, 20 mM potassium bicarbonate, 10 mM L-glutamine, 1 mM PEP, 0.2 mM NADH, saturating amounts of pyruvate kinase and lactate dehydrogenase (Sigma-Aldrich, P0294), and varying amounts of ATP (0.01 to 8 mM). Reactions were initiated by adding CPS to a final concentration of 0.2 µM. The effects of UMP and ornithine were measured under the same reaction conditions but with a fixed ATP concentration of 0.2 mM and varying concentrations of either UMP or ornithine. Kinetic parameters were calculated from a nonlinear least squares regression of data for three technical replicates at each substrate concentration. Examples of R scripts used to calculate Michaelis-Menten parameters and parameters for allosteric regulation of CPS by UMP and ornithine can be found in Source code 2 and Source code 3, respectively.
 
 Carbamoyl phosphate production was measured with minor modifications of previously described procedures (Snodgrass and Parry, 1969; Stapleton et al., 1996). Formation of carbamoyl phosphate by CPS was coupled with formation of citrulline by ornithine transcarbamoylase; citrulline forms a yellow complex (ε464 = 37800 M−1 cm−1﻿; Snodgrass and Parry, 1969) when mixed with diacetyl monoxime and antipyrine. Reaction mixtures consisted of 50 mM HEPES, pH 7.5, 10 mM MgCl2, 100 mM KCl, 20 mM potassium bicarbonate, 10 mM L-glutamine, 4 mM ATP, 10 mM L-ornithine, and 0.7 µM ornithine transcarbamoylase. Reactions (0.25 mL) were initiated by adding CPS at a final concentration of 0.2 µM. After incubation for 2.5 min at 37°C, reactions were quenched by addition of 1 mL of a solution consisting of 25% concentrated H2SO4, 25% H3PO4 (85%), 0.25% (w/v) ferric ammonium sulfate, and 0.37% (w/v) antipyrine, followed by addition of 0.5 mL of 0.4% (w/v) diacetyl monoxime/7.5% (w/v) NaCl. The quenched reaction mixtures were placed in a boiling water bath for 15 min before measurement of OD464. Control reactions contained all components except CPS.
 
-## RNA structure prediction
+### RNA structure prediction
 
 RNA secondary structures for argB mRNAs were predicted using CLC Main Workbench 8.1, which uses the mfold algorithm (Mathews et al., 1999). The entire intergenic region between kanr and argB plus the first 33 nucleotides of argB were included in the structure prediction. The first 33 nucleotides were included because an mRNA-bound ribosome prevents another ribosome from binding to the mRNA until it has moved past the first 33 nucleotides (Steitz, 1969). Thus, at least the first 33 nucleotides are available for folding with the upstream region when a mRNA is being translated.
 
-## Calculation of RNA folding times
+### Calculation of RNA folding times
 
 Folding times for a 63-nucleotide region (30 nt downstream and 30 nt upstream of the argB start codon) surrounding the start codon of argB mRNAs were calculated using the Kinfold program (v1.3) from the ViennaRNA v2.4.11 package (Wolfinger et al., 2004). Kinfold utilizes a Monte Carlo algorithm to calculate the folding time of each RNA sequence to the lowest free energy structure. We simulated 500 folding trajectories for each structure.
 
-## Calculation of sRNA-mRNA hybridization energy
+### Calculation of sRNA-mRNA hybridization energy
 
 Hybridization energies for sRNA-argB mRNA interactions were calculated using the IntaRNA algorithm, which predicts interacting regions between two RNA molecules by taking into account both the stability of sRNA-mRNA interactions and the accessibility of the interacting sequences (Busch et al., 2008; Mann et al., 2017; Raden et al., 2018; Wright et al., 2014). The 65 annotated non-coding RNAs in the E. coli BW25113 genome (GenBank accession number CP009273 Grenier et al., 2014) were used as query sRNAs. The RNA sequences encompassing the intergenic region between kanr and argB through 33 bp downstream of the argB start codon were used as target mRNAs. Default parameters were applied with seven base pairs as the minimum size of the seed region.
 
-## Data availability
+### Data availability
 
 The genome sequence of E. coli strain AM187 used in this study has been deposited to NCBI GenBank under accession number CP037857.1.

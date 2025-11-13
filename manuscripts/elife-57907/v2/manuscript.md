@@ -44,7 +44,7 @@ We show that the cilia-targeted nanobodies bind to eGFP or mCherry-containing pr
 
 ## Results
 
-## N-terminal fusion of optogenetic tools interferes with photoactivation
+### N-terminal fusion of optogenetic tools interferes with photoactivation
 
 To utilize the optogenetic tools bPAC- or LAPD-mCherry in a cilium-specific manner, we first tested whether N-terminal fusion of mNphp3(201) is sufficient for targeting to the primary cilium. Indeed, fusions of both bPAC and LAPD predominantly localized to the primary cilium (Figure 1A,B). To test whether protein fusion interferes with the light-dependent activation of LAPD or bPAC, we measured LAPD or bPAC activity using Ca2+ imaging. To this end, we used HEK293 cells stably expressing a cyclic nucleotide-gated (CNG) ion channel CNGA2-TM (HEK-TM) that conducts Ca2+ upon cAMP binding (Wachten et al., 2006). HEK293 cells were not ciliated to directly compare the non-fused and the fused optogenetic tool. Activation of bPAC with a 465 nm light pulse increases intracellular cAMP levels, leading to a Ca2+ influx, which is quantified using the fluorescence of a Ca2+ indicator dye (Figure 1C). To measure LAPD activity, HEK-TM cells were pre-stimulated with NKH477, a water-soluble forskolin analog that activates transmembrane adenylyl cyclases (tmACs) and, thereby, increases cAMP levels, leading to a Ca2+ influx. NKH477 stimulation was performed under illumination with 850 nm that deactivates LAPD, as previously described (Gasser et al., 2014; Stabel et al., 2019). When the Ca2+ influx reached a steady-state, LAPD was activated by 690 nm light, decreasing cAMP levels and, thereby, the intracellular Ca2+ concentration (Figure 1C). We measured the mNphp3(201)-bPAC-mCherry or mNphp3(201)-LAPD-mCherry activity and compared it to the non-ciliary tagged bPAC- or LAPD-mCherry proteins. Light stimulation of mNphp3(201)-bPAC-mCherry or bPAC-mCherry expressing HEK-TM cells resulted in a transient Ca2+ increase, which was absent in mCherry-expressing control cells (Figure 1D). Repetitive light-stimulation with different light pulses reliably increased the intracellular Ca2+ concentration in mNphp3(201)-bPAC-mCherry or bPAC-mCherry expressing HEK-TM cells (Figure 1D). Normalized peak amplitudes of the Ca2+ signal evoked after the first light pulse were lower in mNphp3(201)-bPAC-mCherry than in bPAC-mCherry expressing HEK-TM cells (Figure 1E), indicating that the N-terminal fusion to a ciliary targeting sequence interferes with the light-dependent activation of bPAC. Next, responses of HEK-TM cells stably expressing mNphp3(201)-LAPD-mCherry or LAPD-mCherry to NKH477 stimulation were quantified: in both, mNphp3(201)-LAPD-mCherry and LAPD-mCherry expressing HEK-TM cells, NKH477 stimulation induced a Ca2+ increase (Figure 1F). Activating LAPD with 690 nm light significantly decreased the intracellular Ca2+ concentration in LAPD-mCherry expressing, but not in mNphp3(201)-LAPD-mCherry expressing HEK-TM cells (Figure 1G), demonstrating that N-terminal fusion to a ciliary targeting sequence interferes with the light-dependent activation of LAPD. Taken together, our results obtained with two different optogenetic tools revealed that fusion with the minimal ciliary targeting motif mNphp3(201) interfered with their light-dependent activation, thus hampering a direct targeting strategy that does not rely on introducing a functional GPCR to the cilium.
 
@@ -52,11 +52,27 @@ To utilize the optogenetic tools bPAC- or LAPD-mCherry in a cilium-specific mann
 
 **Figure 1.:** (A) Localization of mNphp3(201)-bPAC-mCherry to primary cilia. mIMCD-3 cells expressing mNphp3(201)-bPAC-mCherry were labeled with an anti-acetylated tubulin antibody (cyan, ciliary marker) and with DAPI (blue) to label the DNA. The box indicates the position of the magnified view shown at the bottom right. Red arrow indicates the direction and the length of the shift of the respective fluorescence channel. Scale bar: 10 μm. (B) Localization of mNphp3(201)-LAPD-mCherry to primary cilia. mIMCD-3 cells expressing mNphp3(201)- LAPD-mCherry were labeled with an anti-acetylated tubulin antibody (cyan, ciliary marker) and DAPI (blue) to label the DNA. The box indicates the position of the magnified view shown at the bottom right. Red arrow indicates the direction and the length of the shift of the respective red channel. Scale bar: 10 μm. (C) Assays to measure bPAC or LAPD activity using Ca2+ imaging. HEK293 cells express the CNGA2-TM ion channel, which opens upon cAMP binding and conducts Ca2+ (HEK-TM) (Wachten et al., 2006). Light-dependent activation of bPAC increases intracellular cAMP levels, leading to a Ca2+ influx, which was quantified using a fluorescent Ca2+ dye (GFP-certified FluoForte). To measure LAPD activity, HEK-TM cells were pre-stimulated with 100 μM NKH477 to activate transmembrane adenylyl cyclases (AC), thus increasing cAMP levels. Ca2+ influx was detected by a Ca2+ dye (Fluo4-AM). (D) Quantification of bPAC activity. GFP-certified-FluoForte-loaded HEK-TM cells expressing mCherry only (grey), bPAC-mCherry (blue), or mNphp3(201)-bPAC-mCherry (cyan) were stimulated with 465 nm light pulses (1 mW/cm²) of different length and the increase in the intracellular Ca2+ concentration was measured. To evoke a maximal Ca2+ response, cells were stimulated with 2 μM ionomycin. Data are shown as mean ± SD (dotted lines) for the normalized fluorescence (F-F(baseline))/(F(ionomycin)-F(baseline))/fraction of mCherry-positive cells, n = 3 independent experiments (each data point represents the average of a duplicate or triplicate measurement). (E) Mean peak amplitudes of the Ca2+ signal at 3–6 min after the first light pulse. Data are shown as individual data points and mean ± SD, n = 3. (F) Quantification of LAPD activity. Fluo4-AM-loaded HEK-TM cells expressing LAPD-mCherry (red) or mNphp3(201)-LAPD-mCherry (cyan) were incubated with 100 μM NKH477 during continuous 850 nm light stimulation (0.5 µW/cm²). At steady-state, light stimulation was switched to 690 nm (0.5 µW/cm²). NT: non-transfected cells (grey). Data are shown as mean ± SD (dotted lines) for the normalized fluorescence (F-F(baseline))/(F(ionomycin)-F(baseline)). (G) Mean decrease of the Ca2+ signal after 690 nm light stimulation (fraction of maximum value after NKH477 increase), determined over 45 s at 3 min after switching to 690 nm. Data are shown as individual data points and mean ± SD, n = 4 independent experiments (each data point represents the average of a duplicate or triplicate measurement); p-values calculated using a paired, two-tailed t-test are indicated. NT: non-transfected cells.
 
-## Targeting optogenetic tools to the primary cilium using nanobodies
+### Targeting optogenetic tools to the primary cilium using nanobodies
 
 We next devised a combinatorial strategy that allows targeting to the primary cilium, while entirely avoiding N-terminal fusion. Rather, we fused our optogenetic tools with a fluorescent reporter (e.g. mCherry) at their C termini, which leaves photoactivation unaffected (Jansen et al., 2015; Stabel et al., 2019). To direct these proteins to primary cilia, we co-expressed a nanobody, which is directed against the tag (mCherry) and is fused to the ciliary targeting sequence mNphp3(201) at its N terminus. We hypothesize that the nanobody binds to its target in the cytoplasm, the nanobody-protein-complex is recognized by the ciliary targeting machinery and is then transported into the primary cilium (Figure 2A). We first tested the anti-mCherry nanobody VHHLaM-2 (Ariotti et al., 2018; Fridy et al., 2014), fused to eGFP at the C terminus and mNphp3(201) at the N terminus, in mIMCD-3 cells. Indeed, the nanobody localized to primary cilia (Figure 2B). Next, we assessed whether nanobody binding was sufficient to traffic our optogenetic tools to the cilium. Co-expression of the nanobody with LAPD-mCherry resulted in ciliary localization of both the nanobody fusion-construct and LAPD-mCherry (Figure 2C). In contrast, LAPD-mCherry remained exclusively cytosolic in the absence of the nanobody (Figure 2D). A second nanobody directed against mCherry, VHHLaM-4, (Ariotti et al., 2018; Fridy et al., 2014) also localized to primary cilia and resulted in ciliary localization of LAPD (Figure 2—figure supplement 1A,B), while a nanobody directed against eGFP (Kirchhofer et al., 2010) did not mediate ciliary localization of LAPD-mCherry (Figure 2—figure supplement 1C). The nanobody-based targeting approach also succeeded in localizing bPAC-mCherry to the primary cilium (Figure 2E). Taken together, nanobody-based targeting of optogenetic toosl was efficient and specific. Hence, we assume that our approach is generally applicable to target proteins of interest to cilia.
 
-## Nanobody binding does not interfere with photoactivation
+![Figure 2.](https://cdn.elifesciences.org/articles/57907/elife-57907-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic overview of the targeting approach. Nanobodies were fused to the C terminus of mNphp3(201) for ciliary localization. The protein of interest (POI) is co-expressed with a C-terminal tag or fusion partner that is recognized by the nanobody. Binding of the nanobody to the tag is expected to result in ciliary localization of the POI. (B) Localization of the anti-mCherry nanobody (VHHLaM-2) to primary cilia. mIMCD-3 cells were transfected with mNphp3(201)-VHHLaM-2-eGFP (green). (C) Localization of the anti-mCherry nanobody and LAPD-mCherry to primary cilia. mIMCD-3 cells were co-transfected with mNphp3(201)-VHHLaM-2-eGFP (green) and LAPD-mCherry (red). (D) Cytoplasmic localization of LAPD-mCherry. mIMCD-3 cells were transfected with LAPD-mCherry (red). (E) Localization of the anti-mCherry nanobody and bPAC-mCherry to primary cilia. mIMCD-3 cells were co-transfected with mNphp3(201)-VHHLaM-2-eGFP (green) and bPAC-mCherry (red). All cells shown in B-E were labeled with an Arl13B antibody (cyan, ciliary marker) and DAPI (blue). All scale bars: 10 μm. Boxes indicate the position of the magnified view shown at the bottom right. Arrows in different colors indicate the direction and the length of the shift of the respective fluorescence channel.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57907/elife-57907-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Localization of the anti-mCherry nanobody to primary cilia. mIMCD-3 cells were transfected with mNphp3(201)-VHHLaM-4-eGFP (green) and stained with an acetylated tubulin antibody (cyan, ciliary marker) and DAPI (blue). (B) Localization of the anti-mCherry nanobody and LAPD-mCherry to primary cilia. mIMCD-3 cells were co-transfected with mNphp3(201)-VHHLaM-4-eGFP (green) and LAPD-mCherry (red) and labeled with DAPI (blue). (C) Localization of the anti-GFP nanobody mNphp3(201)-VHHenhancer-HA to primary cilia, while LAPD-mCherry resides in the soma. mIMCD-3 cells were co-transfected with mNphp3(201)-VHHenhancer-HA (green) and LAPD-mCherry (red) and stained with an anti-HA antibody (green) and DAPI (blue). Boxes indicate the position of the magnified view shown at the bottom right. Arrows in different colors indicate the direction and the length of the shift of the respective fluorescence channel. Scale bars: 10 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57907/elife-57907-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) HEK-TM cells expressing bPAC. HEK-TM cells stably expressing bPAC-mCherry (red) were fixed and labeled with DAPI (blue). Scale bar: 20 μm. (B) See A. for LAPD-mCherry. (C) HEK-TM cells expressing the cilia-targeted anti-mCherry mNphp3(201)-VHHLaM-2-eGFP (green) nanobody. The box indicates the position of the magnified view shown at the bottom right. (D) HEK-TM cells expressing the anti-mCherry VHHLaM-2-eGFP (green) nanobody. (E) Co-expression of the cilia-targeted anti-mCherry nanobody (LaM-2) (green) and bPAC-mCherry (red) in HEK-TM cells. The box indicates the position of the magnified view shown at the bottom: left: all channels as overlay; center: mCherry channel only; right: eGFP channel only. (F) Co-expression of the cilia-targeted anti-mCherry nanobody (LaM-2) (green) and LAPD-mCherry (red) in HEK-TM cells. The box indicates the position of the magnified view shown at the bottom: left: all channels as overlay; center: mCherry channel only; right: eGFP channel only.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57907/elife-57907-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) bPAC activity measurements in HEK-TM cells. HEK293 cells express the CNGA2-TM ion channel, which opens upon cAMP binding and conducts Ca2+ (HEK-TM). bPAC-mCherry was co-expressed with the mNphp3(201)-tagged mCherry nanobody. Light-dependent activation of bPAC increases intracellular cAMP levels, leading to a Ca2+ influx, which was quantified using a fluorescent Ca2+ dye (GFP-certified FluoForte). bPAC activity was determined in the presence of mNphp3(201)-VHHLaM-2 or mNphp3(201)-VHHLaM-4 (fused to HA or eGFP). Co-expression with the ciliary protein Sstr3-eGFP was used as a negative control (ciliary localized protein, but not binding to bPAC or LAPD). bPAC activity was determined according to the maximum amplitude of the Ca2+ signal after light stimulation (465 nm light pulse, 1 s, 162 µW/cm²) compared to the ionomycin-evoked Ca2+ signal. 5 min before light stimulation, cells were treated with 25 µM of IBMX to inhibit phosphodiesterases and sustain a long-lasting increase in cAMP. NT: non-transfected cells. (B) LAPD activity measurements in HEK-TM cells. To measure LAPD activity, HEK-TM cells were pre-stimulated with 100 μM NKH477 to activate transmembrane adenylate cyclases (AC), thus increasing cAMP levels. Ca2+ influx was detected by a Ca2+ dye (Fluo4-AM). LAPD activity was determined in the presence of mNphp3(201)-VHHLaM-2 or mNphp3(201)-VHHLaM-4 (fused to HA or eGFP). Co-expression of the ciliary protein Sstr3-eGFP was used as a negative control (ciliary localized protein, but not binding to bPAC or LAPD). Fluo4-AM-loaded HEK-TM cells were incubated with 100 μM NKH477 during continuous 850 nm light illumination (0.5 µW/cm²). When reaching a steady-state, light was switched to 690 nm (0.5 µW/cm²) to stimulate LAPD activity. LAPD activity was determined as the maximal decrease compared to the maximal Ca2+ signal amplitude after NKH477 addition. Data are shown as individual data points (each data point represents and independent experiment and corresponds to the average of a duplicate or triplicate measurement) and mean ± S.D., p-values calculated using unpaired, two-sided Student's t-test compared to Sstr3-eGFP are indicated. All HEK-293 cells were non-ciliated.
+
+### Nanobody binding does not interfere with photoactivation
 
 To test whether nanobody binding interferes with the light-dependent activation of LAPD or bPAC, we first tested their activity in non-ciliated cells to directly compare bound and non-bound optogenetic tools and then verified the optimal experimental condition in ciliated mIMCD-3 cells. To measure the activity in HEK-TM cells, bPAC- or LAPD-Cherry were co-expressed with the cilia-targeted mCherry nanobody mNphp3(201)-VHHLaM-2-eGFP. In the absence of the nanobody, bPAC- and LAPD-mCherry displayed a cytosolic distribution (Figure 2—figure supplement 2A,B). In the absence of primary cilia, the mNphp3(201)-VHHLaM-2-eGFP nanobody formed clusters in HEK-TM cells (Figure 2—figure supplement 2C), while the VHHLaM-2-eGFP nanobody did not (Figure 2—figure supplement 2D). Co-expression of bPAC- or LAPD-mCherry with the mNPHP3(201)-tagged nanobody resulted in cluster localization of either bPAC or LAPD, demonstrating that the nanobody interacts with the mCherry fusion-proteins in the cytoplasm (Figure 2—figure supplement 2E,F).
 
@@ -72,19 +88,47 @@ However, we failed to apply this orthogonal system to the primary cilium due to 
 
 In summary, our nanobody-based approach provides a versatile means for ciliary targeting without interfering with protein function.
 
-## Targeting of a genetically-encoded biosensor to the primary cilium
+### Targeting of a genetically-encoded biosensor to the primary cilium
 
 We previously engineered and applied a genetically encoded biosensor, named mlCNBD-FRET, to measure cAMP dynamics in motile cilia (Mukherjee et al., 2016). We already demonstrated targeting of this sensor to primary cilia by fusing it to the C terminus of Sstr3 (Mukherjee et al., 2016). However, Sstr3 is a functional GPCR, which may interfere with ciliary signaling, in particular cAMP signaling, upon overexpression. We aimed to optimize the targeting approach by fusing mNphp3(201) to the N terminus of mlCNBD-FRET. While the biosensor localized to the primary cilium (Figure 4—figure supplement 1A), biosensor function was severely impaired as mlCNBD-FRET no longer responded to changes in cAMP levels (Figure 4—figure supplement 1B,C). We thus tested whether the biosensor can be targeted to primary cilia using our nanobody-based approach without interfering with protein function. The mlCNBD-FRET sensor consists of the FRET pair cerulean and citrine (Mukherjee et al., 2016). Both fluorescent proteins are recognized by the nanobody VHHenhancer directed against eGFP (Kirchhofer et al., 2010; Kubala et al., 2010). Fusion of mNphp3(201) to the N terminus of the anti-eGFP nanobody also resulted in ciliary localization (Figure 4A). In the absence of the nanobody, mlCNBD-FRET was uniformly distributed throughout the cytosol, whereas co-expression with the mNphp3(201)-tagged nanobody resulted in ciliary localization of mlCNBD-FRET (Figure 4B,C). To test whether nanobody interaction impaired mlCNBD-FRET function, we performed FRET imaging in HEK293 cells expressing mlCNBD-FRET in the presence or absence of the nanobody. Similar to the anti-mCherry nanobody, the cilia-targeted eGFP nanobody mNphp3(201)-VHHenhancer-mCherry showed a more clustered subcellular localization in HEK293 cells in the absence of primary cilia formation (Figure 4—figure supplement 1D). Consistently, when binding to the nanobody, mlCNBD-FRET also formed clusters within the cytosol (Figure 4—figure supplement 1E), which did not occur in the presence of mCherry only (Figure 4—figure supplement 1F). To functionally test the FRET sensor in the presence of the nanobody, we first assessed the impact of the nanobody on the fluorescence intensity of the two fluorophores, cerulean and citrine. HEK293 cells were transfected with cerulean or citrine and the eGFP VHHenhancer-mCherry nanobody or mCherry only. The fluorescence intensity of cerulean or citrine was normalized to the mCherry fluorescence in the same cell. Both cerulean and citrine showed an increase in fluorescence in the presence of the nanobody compared to the mCherry control as previously described (Kirchhofer et al., 2010), but the relative change for each of the fluorophores was not substantially different (Figure 4—figure supplement 1G). To test whether mlCNBD-FRET:nanobody complexes still respond to changes in cAMP levels, we first measured cAMP-induced FRET changes in non-ciliated HEK293 cells and then in ciliated mIMCD-3 cells. To increase the intracellular cAMP concentration, cells were stimulated with 20 μM isoproterenol, which stimulates AC activity through signaling via GPCRs (G-protein-coupled receptors). We analyzed FRET changes in HEK293 mlCNBD-FRET cells co-expressing mNphp3(201)-VHHenhancer-mCherry or the non-targeted VHHenhancer-mCherry nanobody (Figure 4D). In the presence of the VHHenhancer-mCherry nanobody, the FRET response to stimulation with isoproterenol remained unchanged (Figure 4E,F) and also interaction with the mNphp3(201)-tagged nanobody only marginally reduced the FRET response and generally left the reporter functional (Figure 4E,F).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57907/elife-57907-fig4-v2.jpg)
+
+**Figure 4.:** (A) Localization of the mNphp3(201)-VHHenhancer-mCherry anti-eGFP nanobody to primary cilia. (B./C) Localization of mlCNBD-FRET in mIMCD-3 cells in the (B) absence or (C) presence of mNPHP3(201)-VHHenhancer-mCherry. (D) Schematic overview of mlCNBD-FRET imaging in non-ciliated HEK293 cells (see E-F). (E) FRET imaging in HEK293 mlCNBD-FRET cells transiently co-expressing mCherry, VHHenhancer-mCherry, or mNphp3(201)-VHHenhancer-mCherry under control conditions or after stimulation with 20 μM isoproterenol (Iso, addition depicted with dotted line). Data are shown as mean (n = 3 independent experiments, 30–90 cells per experiment). (F) Comparison of maximal change for data shown in E. Data are presented as individual data points and mean ± S.D.; p-value calculated using an unpaired, two-tailed Mann-Whitney test is indicated. (G) Schematic overview of mlCNBD-FRET imaging in the primary cilium of mIMCD-3 cells (see H-I). (H) FRET imaging in primary cilia of mIMCD-3 cells expressing mlCNBD-FRET and mNphp3(201)-VHHenhancer-mCherry. Cells have been stimulated with 250 μm IBMX (left) or buffer only (right). Cerulean and citrine are shown before and after stimulation with IMBX. The change in cerulean/citrine ratio is shown below (color-scheme indicated at the bottom). Scale bar: 2 μm. (I) Time course of mean change in FRET (dark green line)± S.D. (dotted green line) for data set, exemplary shown in H; n = 5. Inset: each data point shows the time-average per cilium at the position indicated by grey box; one-sample Student’s t-test compared to 1.0 indicated.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57907/elife-57907-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Localization of mNphp3(201)-mlCNBD-FRET to primary cilia in mIMCD-3 cells. (B) FRET imaging in non-ciliated HEK293 cells expressing mlCNBD-FRET or mNphp3(201)-mlCNBD-FRET under control conditions or after stimulation with 20 μM isoproterenol (addition depicted with dotted line). Data are shown as mean (n = 3 independent experiments, 30–90 cells per experiment). Schematic overview of mlCNBD-FRET imaging is shown on the left. (C) Comparison of the maximal FRET change for data shown in B. Data are presented as individual data points and mean ± S.D.; p-value calculated using a two-tailed Mann-Whitney test is indicated. (D) Localization of mNphp3(201)-VHHenhancer-mCherry in HEK293 cells. The box indicates the position of the magnified view shown at the bottom for the individual channels. (E./F) Localization of mlCNBD-FRET in HEK293 cells in the presence (E) or absence (F) of mNphp3(201)-VHHenhancer-mCherry. In F, mCherry only was used as a control. Scale bar: 10 μm. The box in indicates the position of the magnified view shown at the bottom. left: overlay; middle and right: individual channels. (G) HEK293 cells were transfected with cerulean or citrine in the presence of mCherry (control) or the eGFP nanobody mNphp3(201)-VHHenhancer-mCherry. Fluorescence intensities of cerulean or citrine were normalized to the mCherry fluorescence of the nanobody or mCherry only in the same cell, and the relative change in fluorescence compared to the control condition (mCherry only) was plotted. Data are shown as mean ± S.D., n = 3–6 with 2–30 cells per experiment; p-values were determined using an unpaired, two-sided Student’s t-test. (H) FRET imaging in primary cilia of mIMCD-3 cells expressing mlCNBD-FRET and mNphp3(201)-VHHenhancer-mCherry. Cells have been stimulated with 250 μm IBMX (top) or buffer only (bottom). Images show the change in cerulean/citrine ratio (color-scheme indicated on the right) from different time points (top) of Video 1. Scale bar: 2 μm.
+
 After having verified biosensor function in the presence of the nanobody in non-ciliated cells, we performed FRET imaging in cilia of mIMCD-3 cells co-expressing mlCNBD-FRET and mNphp3(201)-VHHenhancer-mCherry (Figure 4G). In response to stimulation with 250 μM IBMX to increase cAMP levels, the ciliary-localized mlCNBD-FRET responded with a change in FRET, whereas buffer addition did not change FRET (Figure 4H,I, Figure 4—figure supplement 1H, Video 1), demonstrating that the nanobody-targeted mlCNBD-FRET sensor can be used to study cAMP dynamics in the primary cilium. In conclusion, the nanobody-based approach applies not only for targeting optogenetic tools, but also genetically encoded biosensors to the primary cilium.
 
-## Applying the nanobody-based ciliary targeting approach in vivo
+![Video 1.](https://cdn.elifesciences.org/articles/57907/elife-57907-video1.mp4.jpg)
+
+**Video 1.:** mIMCD-3 cells expressing mlCNBD-FRET and mNphp3(201)-VHHenhancer-mCherry have been stimulated with 250 μm IBMX or buffer only.
+
+### Applying the nanobody-based ciliary targeting approach in vivo
 
 Having shown that our bipartite strategy for localization to primary cilia works in vitro, we wondered whether we could also target proteins of interest to primary cilia in vivo. We first confirmed the ciliary localization of the nanobody in vivo by injecting mRNA of the anti-mCherry mNphp3(201)-VHHLaM-2-eGFP nanobody into nacre (mitfa-/-) zebrafish embryos, which are transparent and, therefore, widely used for fluorescence imaging (Lister et al., 1999). The cilia-targeted nanobody was expressed and localized to cilia in all tissues, including the developing neural tube, the primary and motile cilia of the spinal cord (Kramer-Zucker et al., 2005), and the eye (Figure 5A,B,C) and allowed to mark cilia in an in vivo imaging approach (Figure 5—figure supplement 1A). Localization of the nanobody to cilia is similar to the previously described bactin:arl13b-gfp transgenic line, where GFP is fused to the ciliary Arl13B protein (Figure 5—figure supplement 1B; Borovina et al., 2010; Olstad et al., 2019). To test whether the cilia-targeted nanobody can also direct proteins to primary cilia in vivo, we injected mRNA of the anti-mCherry nanobody fusion mNphp3(201)-VHHLaM-2-eGFP into transgenic zebrafish embryos ubiquitously expressing RFP (Ubi:zebrabow) (Pan et al., 2013), which is also bound by the anti-mCherry nanobody. In the absence of the nanobody, RFP was distributed in the cytosol (Figure 5D, Figure 5—figure supplement 1C). In the presence of the nanobody, RFP was highly enriched in primary cilia (Figure 5E, Figure 5—figure supplement 1D), demonstrating that our nanobody-based approach efficiently targets ectopically expressed proteins to primary cilia and to motile cilia in vitro and in vivo.
 
-## Investigating the spatial contribution of cAMP signaling to cilia length control
+![Figure 5.](https://cdn.elifesciences.org/articles/57907/elife-57907-fig5-v2.jpg)
+
+**Figure 5.:** (A) Nanobody localization in the neural tube of a zebrafish embryo. The mRNA of the anti-mCherry mNphp3(201)-VHHLaM-2-eGFP nanobody was injected into nacre zebrafish embryos. Embryos were stained with an anti-acetylated tubulin antibody (magenta, ciliary marker), an anti-GFP antibody (green), and DAPI (blue). (B) See A. for spinal cord. (C) See A. for eye. (D) RFP (red) expression in the neural tube of Ubi:zebrabow (Pan et al., 2013) transgenic embryos. (E) RFP (red) expression in the neural tube of Ubi:zebrabow (Pan et al., 2013) transgenic embryos, injected with mRNA of the anti-mCherry mNphp3(201)-VHHLaM-2-eGFP nanobody. Scale bars: 20 μm, magnified view: 10 μm. Boxes indicate the position of the magnified views shown at the bottom right as inset (A-C) or as a separate panel next to the overview image (D, E). Arrows in different colors indicate the direction and the length of the shift of the respective fluorescence channel. The upper right panel in D and E shows the RFP channel only, the bottom right panel shows the magnified view. A: anterior, P: posterior, L: left, R: right, D: dorsal, V: ventral. All images were taken from fixed samples.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57907/elife-57907-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Nanobody localization in the neural tube of a zebrafish embryo. The mRNA of the anti-mCherry mNphp3(201)-VHHLaM-2-eGFP (green) nanobody was injected into nacre zebrafish embryos. (B) Ciliary labeling (green) in the neural tube of b-actin:arl13b-gfp transgenic embryos (38). (C) RFP (red) expression in the neural tube of Ubi:zebrabow (40) transgenic embryos. (D) RFP (red) expression in the neural tube of Ubi:zebrabow (40) transgenic embryos, injected with mRNA of the anti-mCherry mNphp3(201)-VHHLaM-2-eGFP nanobody. Scale bar: 20 μm, magnified view: 10 μm. Boxes indicate the position of the magnified views (bottom right panels). Arrow indicates the direction and the length of the shift of the respective fluorescence channel. The upper right panels show the individual RFP fluorescence, the bottom magnified view the overlay. A: anterior, P: posterior, L: left, R: right, D: dorsal, V: ventral. All images have been acquired from live embryos.
+
+### Investigating the spatial contribution of cAMP signaling to cilia length control
 
 The primary cilium is a dynamic cellular structure that assembles and dissembles in accordance with the cell cycle (Keeling et al., 2016; Kim and Tsiokas, 2011; Wang et al., 2019). The interplay between assembly and disassembly determines the length of the primary cilium. cAMP-dependent signaling pathways have been shown to regulate cilia length (Besschetnova et al., 2010; Porpora et al., 2018; Jin et al., 2014; Avasthi et al., 2012; Kwon et al., 2010). Changes in cAMP signaling to study cilia length control have only been evoked using pharmacology, lacking spatial resolution and targeting both, the cilium and cell body. However, it is generally accepted that cAMP signaling occurs within defined subcellular compartments to evoke a specific cellular response (Johnstone et al., 2018). Whether an increase in cAMP levels in either the cilium or the cell body is sufficient to evoke a change in ciliary length, is not known. Thus, it is not surprising that it has been controversially discussed whether an increase in the intracellular cAMP concentration, evoked by pharmacological stimulation, results in an increase or decrease in cilia length, (Besschetnova et al., 2010; Porpora et al., 2018), as spatial cAMP signaling might evoke a differential response, which is impossible to reveal using pharmacology. We also performed pharmacological stimulation of cAMP synthesis in mIMCD-3 cells using Forskolin and analyzed the change in cilia length. To analyze cilia length in an automated and unbiased fashion in 3D, we developed an ImageJ plug-in called CiliaQ. In fact, the response was quite variable and we did not observe a significant change in cilia length (Figure 6A). Thus, we set out to investigate the spatial contribution of an increase in cAMP levels in the cilium or cell body in regulating cilia length.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/57907/elife-57907-fig6-v2.jpg)
+
+**Figure 6.:** (A) Cilia length of mIMCD-3 cells stimulated for 1 hr with 10 μM Forskolin (solvent: DMSO), normalized to the DMSO control. Data are shown as mean ± S.D., n = 3 with at least 40 cells per experiment. (B) Correlation of cilia length and eGFP fluorescence (a.u., average ciliary fluorescence of non-transfected control cells was subtracted) in the cilium in mIMCD-3 cells transiently expressing mNphp3(201)-VHHLaM-2-eGFP. Below 7.5 a.u., the cilia length is independent of the eGFP fluorescence (see inset, values are highlighted in green, slope not different from zero, correlation: p=0.07), whereas including values > 7.5 a.u., there is a linear correlation between the cilia length and the eGFP fluorescence in the cilium (slope different from zero, correlation: p<0.0001). (C) Length of cilia that show mNphp3(201)-VHHLaM-2-eGFP localization and an eGFP fluorescence < 7.5 a.u., normalized to equally treated, non-transfected (NT) control cells. Data are shown as mean ± S.D., n = 7 with at least 18 cilia per experiment; p-values determined using unpaired, two-tailed Student’s t-test are indicated. (D) Correlation of cilia length and mCherry fluorescence in the cilium in mIMCD-3 cells transiently expressing mNphp3(201)-VHHLaM-2-eGFP and mCherry. Only cilia with an eGFP fluorescence below 7.5 a.u. were taken into account. There is no linear correlation between the mCherry fluorescence and cilia length (slope not different from zero, correlation: p=0.2). (E) mIMCD-3 cells (non-transfected, NT) kept in the dark (top) or stimulated with light (bottom, 1 hr, 465 nm, 38.8 µW/cm²) (F) mIMCD-3 bPAC-mCherry cells kept in the dark (left) or stimulated with light (right, 16 hr, 465 nm, 38.8 µW/cm²). (G) mIMCD-3 bPAC-mCherry transiently transfected with mNphp3(201)-VHHLaM-2-eGFP kept in the dark (left) or stimulated with light (right, 1 hr, 465 nm, 38.8 µW/cm²). (H) Normalized cilia length after light stimulation (left 1 hr, right 16 hr; 465 nm, 38.8 µW/cm²) for mIMCD-3 bPAC-mCherry cells with or without transiently expressing mNphp3(201)-VHHLaM-2-eGFP. Only cilia with an eGFP fluorescence < 7.5 a.u. were included and each data point was normalized to control cells. Data are shown as mean ± S.D., n = 3 with at least 25 cells per experiment; p-values determined using one-sample Student’s t-test compared to 100% are indicated. (I) mIMCD-3 LAPD-mCherry cells kept in the dark (left) or stimulated with light (right, 16 hr, 630 nm, 42.3 µW/cm²). (J) mIMCD-3 LAPD-mCherry transiently transfected with mNphp3(201)-VHHLaM-2-eGFP kept in the dark (left) or stimulated with light (right, 16 hr, 630 nm, 42.3 µW/cm²). (K) Normalized cilia length after light stimulation (16 hr, 630 nm, 42.3 µW/cm²) for mIMCD-3 LAPD-mCherry with or without transiently expressing mNphp3(201)-VHHLaM-2-eGFP. Only cilia with an eGFP fluorescence < 7.5 a.u. were included and each data point was normalized to control cells. Data are shown as mean ± S.D., n = 3–4 with at least 18 cells per experiment; p-values determined using one-sample Student’s t-test compared to 100% are indicated. Cells in E-G and I-J were stained with an Arl13B antibody (cyan) and DAPI (blue). All boxes indicate the magnified view below. Arrows indicate the direction and the length of the shift of the respective same-colored fluorescence channel. Scale bar for all images: 3 μm. (L) Spatial cAMP signaling controlling cilia length. Our data suggest a model, in which cAMP signaling in the cell body, stimulated by photoactivation of bPAC and an increase in cAMP levels, causes primary cilia shortening, whereas an increase of cAMP levels in the cilium results in primary cilia elongation. (M) Summary of the correlation between bPAC localization and photoactivation, cAMP levels, and cilia length.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57907/elife-57907-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Determination of total cAMP levels in WT mIMCD-3 cells or mIMCD-3 LAPD-mCherry cells in the dark or after light stimulation (2 min, 630 nm, 42.3 µW/cm2). cAMP levels have been determined using an ELISA and normalized to the protein concentration. Data are shown as mean ± S.D., n = 3, p-values were calculated using a paired two-sided Student’s t-test.
 
 To this end, we used a monoclonal IMCD-3 cell line stably expressing bPAC-mCherry in combination with the mNphp3(201)-VHHLam-2-eGFP nanobody. Since ectopic expression of a ciliary protein may result in an increase of the cilia length (Guadiana et al., 2013; Koschinski and Zaccolo, 2017), we first tested whether expression of the mNphp3(201)-tagged nanobody in the cilium had an impact on the length of the cilium. Indeed, ectopic expression of the mNphp3(201)-tagged nanobody resulted in longer cilia compared to non-transfected control cells. There was a linear correlation between the expression level of the mNphp3(201)-tagged nanobody in the cilium and cilia length: the higher the expression (determined by eGFP fluorescence), the longer the cilia (Figure 6B), as has been reported previously for ectopic expression of membrane proteins in the cilium (Guadiana et al., 2013). However, in the low expression regime, that is < 7.5 a.u. eGFP fluorescence, there was no linear correlation between the expression level of the mNphp3(201)-tagged nanobody in the cilium and cilia length (Figure 6B inset, Figure 6C), demonstrating that ectopic expression of the mNphp3(201)-tagged nanobody in the cilium at a low level does not change ciliary length. To verify whether the mNphp3(201)-tagged nanobody also does not alter cilia length in the low mNphp3(201)-VHHLam-2-eGFP expression regimes (<7.5 a.u.) while in complex with its target, we analyzed mIMCD-3 cells co-expressing mNphp3(201)-VHHLam-2-eGFP and mCherry. In the low mNphp3(201)-VHHLam-2-eGFP expression regimes (<7.5 a.u.), there was no linear correlation between the mCherry fluorescence and cilia length (Figure 6D), demonstrating that targeting the mNphp3(201)-tagged nanobody in complex with another protein to the cilium does not alter cilia length. Our results underline that the amount of protein in the cilium has to be carefully titrated and a thorough analysis is needed to rule out any unspecific effects caused by ectopic expression of ciliary proteins. In the following, we hence only analyzed cilia with a mNphp3(201)-VHHLam-2-eGFP expression level of < 7.5 a.u. We compared the change in cilia length upon photoactivation of bPAC-mCherry either in the cell body or in the presence of mNphp3(201)-VHHLam-2-eGFP in the cilium (Figure 6E–H). No light-dependent increase in ciliary length was observed in non-transfected cells (Figure 6E). Stimulating cAMP synthesis by light in the cell body significantly reduced cilia length (Figure 6F,H), whereas stimulating cAMP synthesis in the cilium significantly increased cilia length (Figure 6G,H).
 
@@ -108,61 +152,309 @@ Our approach and complementary developments in other labs using nanobodies for s
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (mouse)</td>
+      <td>Nphp3</td>
+      <td>NCBI</td>
+      <td>NM_028721</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK-TM</td>
+      <td>Wachten et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>mIMCD-3</td>
+      <td>ATCC</td>
+      <td>CRL-2123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>See Sup. Table 1</td>
+      <td>See Sup. Table 1</td>
+      <td>See Sup. Table 1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Danio rerio)</td>
+      <td>nacre</td>
+      <td>Lister et al., 1999</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Danio rerio)</td>
+      <td>b-actin:arl13b-gfp</td>
+      <td>Borovina et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Danio rerio)</td>
+      <td>Ubi:zebrabow</td>
+      <td>Pan et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse)</td>
+      <td>anti-acetylated-Tubulin (mouse, monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>T6793</td>
+      <td>1:600</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-GFP (rabbit, polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab6556</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-Arl13B (rabbit, polyclonal)</td>
+      <td>Proteintech</td>
+      <td>17711–1-AP</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse)</td>
+      <td>anti-Arl13B (mouse, monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab136648</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (donkey)</td>
+      <td>anti-mouse-Cy5 (donkey)</td>
+      <td>Dianova</td>
+      <td>715-175-151</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (goat)</td>
+      <td>anti-rabbit-Alexa488 (goat)</td>
+      <td>Life Technologies</td>
+      <td>A11034</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>cADDis cAMP assay kit</td>
+      <td>Montana Molecular</td>
+      <td>#D0201/11G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (IDT)</td>
+      <td>VHHLaM-2, VHHLaM-4</td>
+      <td>Gene blocks (IDT) Fridy et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Ploegh lab)</td>
+      <td>VHHEnhancer</td>
+      <td>Hidde Ploegh, Boston, USA Kirchhofer et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit (Thermo)</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#11668030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit (Molecular Devices)</td>
+      <td>CatchPoint assay</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit (Thermo)</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit (Qiagen)</td>
+      <td>QIAquick PCR purification kit</td>
+      <td>Qiagen</td>
+      <td>#28104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit (Thermo)</td>
+      <td>mMessage mMachine T7 kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#AM1344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug (Sigma)</td>
+      <td>PEI</td>
+      <td>Sigma Aldrich</td>
+      <td>#64604–1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug (Merck)</td>
+      <td>ChemiBLOCKER</td>
+      <td>Merck Millipore</td>
+      <td>#2170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug (Polysciences)</td>
+      <td>Aqua-Poly/Mount</td>
+      <td>Polysciences</td>
+      <td>#18606–20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug (Thermo)</td>
+      <td>DAPI</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D1306</td>
+      <td>1:10.000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug (Enzo)</td>
+      <td>FluoForte</td>
+      <td>Enzo Life Sciences</td>
+      <td>ENZ-52015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug (Sigma)</td>
+      <td>Fluo4-AM</td>
+      <td>Sigma Aldrich</td>
+      <td>93596</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug (Thermo)</td>
+      <td>probenecid</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>P36400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug (Sigma)</td>
+      <td>NKH477</td>
+      <td>Sigma Aldrich</td>
+      <td>N3290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug (Sigma)</td>
+      <td>Forskolin</td>
+      <td>Sigma Aldrich</td>
+      <td>F3917</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug (Sigma)</td>
+      <td>IBMX</td>
+      <td>Sigma Aldrich</td>
+      <td>I5879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm (this paper)</td>
+      <td>CiliaQ</td>
+      <td>This publication</td>
+      <td>https://github.com/hansenjn/CiliaQ; Hansen, 2020; copy archived at https://github.com/elifesciences-publications/CiliaQ</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 Coding sequences for codon-optimized anti-mCherry nanobodies VHHLaM-2 and VHHLaM-4 were synthesized as GeneBlocks by IDT, based on the amino acid sequences provided by Fridy et al., 2014. A vector encoding the anti-eGFP nanobody GBP-1 (VHHEnhancer) (Kirchhofer et al., 2010) was kindly provided by the lab of Hidde Ploegh (Boston Children’s Hospital, Boston, MA). The cDNA sequence encoding the anti-mCherry nanobodies was fused to the 3’ end of the sequence encoding amino acid 1–201 of mNphp3 (NCBI NM_028721, release 16/09/2018), and to eGFP or an hemagglutinin HA-tag at the 3’ end. Similarly, the cDNA encoding the anti-eGFP nanobody was fused to the 5’ end of the sequence encoding amino acid 1–201 of mNphp3 and at the 3’ end to an HA-tag. The respective constructs were cloned into the pcDNA3.1(+) vector (Thermo Fisher Scientific) for expression in mammalian cells. All primer sequences used for cloning and the corresponding plasmids are summarized in Supplementary Table 1.
 
-## Cell lines and tissue culture
+### Cell lines and tissue culture
 
 HEK293 (CRL-1573) and mIMCD-3 (CRL-2123) cells were obtained and authenticated from American Type Culture Collection (ATCC). HEK293 TM (HEK-TM) cells were generated as described previously (Wachten et al., 2006). HEK-TM cells were transfected with pc3.1-bPAC-mCherry or pcDNA6-LAPD-mCherry and selected for stable expression. HEK-mlCNBD-FRET were generated as described previously (Mukherjee et al., 2016). HEK293 cells were maintained in Dulbecco’s modified Eagle’s medium (DMEM) (Gibco), supplemented with 1x GlutaMax (Gibco) and 10% Fetal Calf Serum (FCS) (Biochrome) at 37°C and 5% CO2 atmosphere. mIMCD-3 cells were maintained in DMEM/F12 (1:1) medium, supplemented with GlutaMax and 10% FCS at 37°C and 5% CO2. Additionally, individual media contained the following: HEK-TM cells: 0.1 mg/ml hygromycin (Thermo Fisher Scientific), HEK-TM bPAC-mCherry: 0.1 mg/ml hygromycin (Thermo Fisher Scientific) and 0.8 mg/ml G418 (Thermo Fisher Scientific), HEK-TM LAPD-mCherry: 50 µg/ml hygromycin, 5 µg/ml blasticidin (Thermo Fisher Scientific), HEK-TM mNphp3(201)-LAPD-mCherry: 0.1 mg/ml hygromycin (Thermo Fisher Scientific) and 0.8 mg/ml G418 (Thermo Fisher Scientific), HEK-mlCNBD-FRET cells: 0.8 mg/ml G418 (Thermo Fisher Scientific), mIMCD-3 bPAC-mCherry: 0.8 mg/ml G418 (Thermo Fisher Scientific), mIMCD-3 LAPD-mCherry: 5 µg/ml blasticidin (Thermo Fisher Scientific). During the experiments, cells were kept without antibiotics. All cells have been tested and free from mycoplasma and other microorganisms.
 
-## Transfection
+### Transfection
 
 mIMCD-3 cells were transfected with Lipofectamine 2000 (Thermo Fisher Scientific) and HEK293 cells with polyethylenimine (PEI, Sigma Aldrich). For transfection with Lipofectamine 2000 Reagent, the transfection medium was replaced after 4–5 hr with full medium. For PEI transfection (four-well dish), 0.5 µg plasmid DNA per well was mixed with 1 µg PEI in 50 µl OptiMEM (Gibco), incubated at room temperature for 10 min, and added to 200 µl full medium on the cells. For PEI transfection (96-well plate), 0.1 µg DNA was mixed with 0.2 µg PEI in 10 µl OptiMEM, incubated at room temperature for 10 min, and added to the cells in 50 µl full medium containing 2% FCS. All cells referred to as non-transfected (NT) were subjected to the same transfection protocol as transfected cells, but without adding DNA, Lipofectamine and PEI.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Immunocytochemistry was performed according to standard protocols. Cells were seeded on poly-L-lysine (PLL, 0.1 mg/ml, Sigma Aldrich)-coated 13 mm glass coverslips (VWR) in a four-well dish (VWR) and transfected on the next day as described above. For mIMCD-3 cells, the medium was replaced with starvation medium (0.5% FCS) on the next day to induce ciliogenesis. Cells were fixed 24 hr after inducing ciliogenesis (mIMCD-3) or 24–48 hr after transfection (HEK293) with 4% paraformaldehyde (Alfa Aesar, Thermo Fisher Scientific) for 10 min at room temperature. After washing with PBS, cells were blocked with CT (0.5% Triton X-100 (Sigma Aldrich) and 5% ChemiBLOCKER (Merck Millipore) in 0.1 M NaP, pH 7.0) for 30 min at room temperature. Primary and secondary antibodies were diluted in CT and incubated for 45 and 60 min at room temperature, respectively. Coverslips were mounted with one drop of Aqua-Poly/Mount (Tebu-Bio).The following antibodies were used: mouse anti-acetylated-Tubulin (1:600, Sigma Aldrich, T6793), rabbit anti-GFP (1:500, Abcam, ab6556, IgG), mouse anti-Arl13B (Abcam, ab136648, 1:500), rabbit anti-Arl13B (1:500, Proteintech, 17711–1-AP), donkey anti-mouse-Cy5 (1:500, Dianova, 715-175-151), goat anti-rabbit-Alexa488 (1:500, Life Technologies, A11034). As a DNA counterstain, DAPI was used (4',6-Diamidino-2-Phenylindole, Dihydrochloride, 1:10 000, Invitrogen) and cells were mounted in Aqua-Poly/Mount (Tebu-Bio).
 
-## Optogenetic stimulation for cilia length measurements
+### Optogenetic stimulation for cilia length measurements
 
 mIMCD-3 cells and mIMCD-3 bPAC cells were seeded, transfected with pcDNA3.1-mNphp3(201)-VHHLaM-2-eGFP, and induced to form cilia as described above. Cells were kept in the dark during the entire experiment and handled only under dim red (bPAC) or green (LAPD) light, preventing bPAC- or LAPD-activation, respectively. For ‘light’ stimulation, cells were placed on a LED plate (bPAC: 465 nm, 38.8 µW/cm²; LAPD: 630 nm, 42.3 µW/cm²) for the last 16 hr before harvesting or for 1 hr at 24 hr prior to harvesting (as indicated in the figure legends). Cells were fixed and further analyzed by immunocytochemistry and confocal microscopy.
 
-## Confocal microscopy and image analysis
+### Confocal microscopy and image analysis
 
 Confocal z-stacks (step size 0.4–0.5 µm, 60x objective) were recorded with a confocal microscope (Eclipse Ti, Nikon or Olympus FV100). All depicted images show a maximum projection of a z-stack unless differently stated in the figure legend. For quantifying cilia length and fluorescence signals, z-stacks were recorded from at least two (for stable cell lines) or three (for transiently transfected cells) random positions per experiment and analyzed using custom-written ImageJ plug-ins. Channels were split and the channel representing the Arl13B-staining was segmented by applying an intensity threshold calculated in a maximum projection of the channel (‘RenyiEntropy’-algorithm, implemented in ImageJ). The segmented Arl13B channel served as a mask for cilia in the other channels, which were then subjected to a custom-written ImageJ plug-in called ‘CiliaQ’. We developed CiliaQ to fully-automatically quantify the cilia length and ciliary intensity levels in the different channels. CiliaQ detects individual 3D objects in the segmented channel and filters out 3D objects below a pre-defined size threshold (10 voxel) to exclude noise. Each remaining 3D object is considered as a cilium. For each cilium, CiliaQ determines the average intensity of all pixels belonging to the 3D region in each channel. The length of the cilium is determined as the length of the ciliary 3D skeleton obtained by skeletonizing (Arganda-Carreras et al., 2010) the three-fold-upscaled and blurred (Gaussian blur, sigma = 3 corresponding to 0.21 µm) image of the corresponding ciliary 3D region. All results were scrutinized by a trained observer.
 
-## Ca2+ imaging
+### Ca2+ imaging
 
 Ca2+ imaging in 96-well plates in a fluorescence plate reader was performed as previously described (Jansen et al., 2015; Stabel et al., 2019). For probing LAPD activity, HEK-TM or HEK-TM-LAPD cells were seeded on a PLL (0.1 mg/ml, Sigma Aldrich)-coated 96-well plate (F-Bottom, CELLSTAR, Greiner) at 3 × 104 cells per well and incubated over night at 37°C and 5% CO2 in darkness. For probing bPAC activity, HEK-TM or HEK-TM-bPAC cells were seeded on a PLL (0.1 mg/ml, Sigma Aldrich)-coated 96-well plate (F-Bottom, CELLSTAR, Greiner) at 4 × 104 cells per well, HEK-TM cells were PEI-transfected with pc3-mNphp3(201)-bPAC-mCherry or pcDNA3.1zeo_mCherry on the next day, and incubated over night at 37°C and 5% CO2 in darkness. For probing LAPD or bPAC activity during nanobody binding, HEK-TM, HEK-TM-LAPD, or HEK-TM-bPAC cells were as described for LAPD activity measurements, transfected on the next day with pEGFP-N1_sstr3, pcDNA3.1-mNphp3(201)-VHHLaM-2-eGFP, pcDNA3.1-mNphp3(201)-VHHLaM-2-HA, pcDNA3.1-mNphp3(201)-VHHLaM-4-eGFP, or pcDNA3.1-mNphp3(201)-VHHLaM-4-HA using PEI transfection, and incubated over night at 37°C and 5% CO2 in darkness. All following steps were conducted under dim green light (LAPD) or dim red light (bPAC). Medium was removed, and cells were washed with 50 μl ES (extracellular solution) buffer (120 mM NaCl, 5 mM KCl, 2 mM CaCl2, 2 mM MgCl2, 10 mM glucose, 10 mM HEPES pH 7.4). Cells were loaded with 2 μM FluoForte (bPAC, bPAC+nanobody, LAPD+nanobody, Enzo Life Sciences) or 2 μM Fluo4-AM (LAPD) (stocks in DMSO/Pluronic F-127 (Sigma-Aldrich)) and 3 mM probenecid (Invitrogen) in 50 µl ES for 30 min at 37°C. Afterwards, the buffer was replaced with 90 μl ES containing 3 mM probenecid, and cells were incubated for 30 min at 29°C in a fluorescence plate-reader (FLUOstar omega, BMG Labtech). Fluorescence was measured at 29°C with an Ex544 excitation and a 570 ± 10 nm emission filter (FluoForte) or with a 485 ± 6 nm excitation and a 530 ± 15 nm emission filter (Fluo4) (all filters BMG Labtech). During bPAC activity measurements, cells were stimulated with a 488-nm-light pulse (1 W/cm²) for 1 s at 3 min, for 10 s at 21 min, and for 60 s at 45 min. For bPAC+nanobody activity measurements, cells were incubated with 25 µM of IBMX (stock: 250 mM in DMSO, AppliChem) from 5 min before light activation on; light activation was induced 2 min after starting the recording using a 488-nm-light pulse (1 s, 162 µW/cm²). For LAPD and LAPD+nanobody activity measurements, cells were stimulated after 2 min with 100 µM NKH477 (Sigma-Aldrich) in ES buffer. During the measurement, the plate was illuminated with an 850 nm LED (0.5 μW/cm2) inside the reader and then switched to a 690 nm LED (0.5 μW/cm2) to activate LAPD. At the end of all experiments, ionomycin was added (final concentration: 2 µM, stock: 1 mM in DMSO, Tocris), and fluorescence was recorded until saturation of the signal amplitude. After the end of recording, cell integrity and transfection rate was scrutinized by confocal microscopy of the recorded wells.
 
-## FRET imaging
+### FRET imaging
 
 FRET imaging was performed as previously described (Mukherjee et al., 2016). HEK293 or HEK-mlCNBD-FRET cells were seeded and transfected with pcA-Cerulean, pcA-Citrine, pcA-Cerulean + pc3.1-VHHenhancer-mCherry, or pcA-Citrine + pc3.1-VHHenhancer-mCherry (HEK293), and pc3.1-VHHenhancer-mCherry, pcDNA3.1zeo_mCherry (HEK-mlCNBD-FRET) as described for LAPD activity measurements. Fluorescence imaging of live cells was performed using the CellR Imaging System (Olympus), consisting of an inverse, fully motorized wide-field microscope (IX81) with a monochromatic CCD camera (XM10), a reflector turret, and an illumination system with an excitation-filter wheel (MT20, 150 W Xenon arc burner). Measurements were performed with a 20x/0.75 objective (UPlanSApo, Olympus) at room temperature under atmospheric conditions. Before the measurement, cells were washed once with ES (extracellular solution) buffer and measurements were performed in ES buffer. The experimental recordings were as follows: Before and after each time-resolved measurements, the mCherry fluorescence (12% light intensity, 200 ms exposure time, 575/25 excitation filter, mCherry-B-0MF Semrock dichroic mirror, 630/20 emission filter) was measured. Time-resolved measurements captured the cerulean (12% light intensity, 100 ms exposure time, 430/25 excitation filter, M2CFPYFP Olympus dichroic mirror, 480/40 emission filter), the citrine fluorescence (12% light intensity, 100 ms exposure time, 500/20 excitation filter, M2CFPYFP dichroic mirror, 535–30 emission filter), and the FRET signal (12% light intensity, 100 ms exposure time, 430/25 excitation filter, M2CFPYFP dichroic mirror, 535–30 emission filter) every 5 s. After 120 s, cells were stimulated with 20 µM isoprenaline hydrochloride (isoproterenol, Sigma Aldrich) or ES buffer as a control. Data was analyzed using Fiji/ImageJ (ImageJ Version 1.52i) (Schindelin et al., 2012) by selecting mCherry positive cells with freehand ROIs and determining the mean fluorescence intensity for each ROI in each channel. Values were background subtracted and the FRET signal was corrected for bleed-through and cross-excitation with the following formula: FRETcorrected = FRET – α * cerulean – β * citrine (with α being the determined bleed-through constant and β being the determined cross-excitation constant for the chosen experimental set-up; α and β values were calculated from single cerulean or citrine transfected cells of three independent experiments using the innate ImageJ tool ‘Coloc 2’, and are 0.75 and 0.02, respectively). Data were plotted as a change of cerulean/FRETcorrected over time. Data were acquired from n = 3 independent experiments.
 
-## R-FlincA imaging
+### R-FlincA imaging
 
 HEK293 cells were seeded and transfected with pcDNA4HMB_R-FlincA or pcDNA4HMB_R-FlincAmut (R221E, R335E) (Ohta et al., 2018) (generously provided by Kazuki Horikawa, Tokushima University, Japan) and pEGFP-N1-bPAC (see Supp. Table 1) as described for LAPD activity measurements. Imaging was performed using the CellR Imaging System (Olympus). The experimental recordings were as follows: R-FlincA signal (57% light intensity, 200 ms exposure time, 572/25 excitation filter, mCherry-B-0MF Semrock dichroic mirror, 630/20 emission filter) was measured every 5 s. At 120 s, cells were illuminated for 5 s with 2.1 mW/cm2 white light, followed by further recording of R-FlincA signal every 5 s for 480 s. Subsequently, bPAC-GFP fluorescence (12% light intensity, 100 ms exposure time, 500/20 excitation filter, M2CFPYFP dichroic mirror, 535–30 emission filter) was measured. Data were analyzed using Fiji/ImageJ (ImageJ Version 1.52i) by selecting low-expressing bPAC-GFP cells with freehand ROIs and determining the mean fluorescence intensity for each ROI in the average signal recorded during the 120 s before white light exposure. Data were plotted as a change of fluorescence over time. Data were acquired from n = 3 measurements.
 
-## Imaging of primary cilia
+### Imaging of primary cilia
 
 mIMCD-3 cells were seeded on PLL (0.1 mg/ml, Sigma Aldrich)-coated chambers (µ-Slide 8 Well Glass Bottom, ibidi) and transfected after 24 hr with pc3.1-VHHenhancer-HA and pc3.1-mlCNBD-FRET (Mukherjee et al., 2016) as described above. The medium was replaced with starvation medium (0.5% FCS) on the following day to induce ciliogenesis. Confocal FRET imaging was performed at the DZNE Light Microscopy Facility using the Andor Spinning Disk Setup (built on an inverted Eclipse Ti Microscope, Nikon) at 37° C. For FRET imaging, the 445 nm laser (18% intensity, 445-, 514-, 640-triple dichroic mirror in the Yokogawa CSU-X1 unit and 5000 rpm disk speed) was used as excitation source, combined with a dual-cam CFP/YFP filter cube (509 nm dichroic mirror with 475/25 nm and 550/49 nm emission filters) to simultaneously measure cerulean and citrine emission with the two EM-CCD cameras (100 ms exposure time, 300 EM gain, 5.36 frames per second frame rate, 10.0 MHz horizontal readout, 1.7 µs vertical readout time, 5x pre Amp gain, −70° C camera temperature). The imaging procedure was as follows: Cells were washed once with ES buffer and measurements were performed in ES buffer. Cilia were imaged with a 100x/1.45 oil objective with 1 µm step size in 10 s intervals. After a stable baseline was obtained, cells were stimulated by drug addition. Cilia-specific fluorescence values were obtained by analyzing the recordings using CiliaQ as described above in ‘Confocal microscopy and image analysis’. The FRET signal was calculated as a ratio of cerulean/citrine, normalized to the mean baseline value before stimulus addition, and plotted as a change over time.
 
-## cADDis imaging
+### cADDis imaging
 
 mIMCD-3 cells were seeded as described above. After 24 hr, cells were transduced with the ratiometric cilia-targeted cADDis cAMP assay kit (5-HT6-mCherry-cADDis, Montana Molecular). In detail, 25 µl of the BacMAM stock was mixed with 3 µl sodium butyrate (Sigma Aldrich), and 22 µl Opti-MEM (ThermoFischer Scientific). The growth medium on the cells was exchanged with 250 µl Opti-MEM, and the 50 µl mixture containing BacMAM was added dropwise to the well. Cells were incubated for 24 hr at 37° C, 5% CO2 and subsequently measured at the DZNE Light Microscopy Facility using the Andor Spinning Disk Setup. For ratiometric cADDis imaging, cpGFP and mCherry were excited with the 448 nm (10%) and 561 nm (10%) lasers, respectively, in combination with a 405, 448-, 561-, 640-quad dichroic mirror in the Yokogawa CSU-X1 unit and 5000 rpm disk speed. Images were acquired on the two EM-CCD cameras simultaneously (100 ms 100 ms exposure time, 300 EM gain, 5.36 frames per second frame rate, 10.0 MHz horizontal readout, 1.7 µs vertical readout time, 5x pre Amp gain, −70° C camera temperature) with a GFP/RFP emission filter cube (580 nm LP dichroic and 617/73 nm and 525/50 nm emission filters). The experimental procedure during imaging and data analysis was performed as described in the Materials and methods section ‘ Imaging of primary cilia’. Data analysis was as described above form mlCNBD-FRET sensor imaging, but without correction for bleed-through and cross-excitation. Accordingly, the cADDis signal was plotted as a ratio of mCherry/cpGFP, normalized to the mean baseline value before stimulus addition, and plotted as a change over time.
 
 For imaging in combination with bPAC, mIMCD3 cells were transfected with mNphp3(201)-VHHLam2-HA and bPAC-mCherry or mCherry as described above. After 24 hr, cells were transduced with the cilia-targeted cADDis cAMP assay kit (5-HT6-cADDis, Montana Molecular) as described above. Six hours after transduction, the medium was replaced with 250 µl starvation medium per well containing 2 µM sodium butyrate and further incubated at 37° C overnight. 24 hr post transduction, cells were measured at the Microscopy Core Facility of the Medical Faculty at the University of Bonn using the Visitron VisiScope Spinning Disk Setup (Build on a Zeiss Axio Observer, Zeiss) at 37° C. For non-ratiometric cADDis imaging in combination with bPAC-mCherry, cpGFP and mCherry were excited with the 448 nm (8%) and 561 nm (10%) laser, respectively, in combination with the 405-488-560bs dichroic mirror in the Yokogawa CSU-W1 unit and the 50 µm pinhole disk at 4000 rpm disk speed. A 60x C-Apochromat water objective (NA = 1.2) was used. Images were acquired on two pco.edge sCMOS cameras simultaneously (200 ms exposure time, 2x binning) with a GFP/RFP emission filter cube. The experimental procedure during imaging and image analysis was the same as described above.
 
-## ELISA-based cAMP measurements
+### ELISA-based cAMP measurements
 
 Total cAMP levels were determined using a CatchPoint assay (Molecular Devices) according to manufacturer’s instructions mIMCD-3, mIMCD-3 bPAC-mCherry, or mIMCD-3 LAPD-mCherry cells were seeded on a PLL (0.1 mg/ml, Sigma Aldrich)-coated 96-well plate (F-Bottom, CELLSTAR, Greiner) at 1.8 × 104 cells per well and incubated over night at 37°C and 5% CO2 in darkness. During all further experimental procedures, cells or cell lysates were kept in the dark and handled only under dim red (bPAC) or green (LAPD) light, preventing bPAC- or LAPD-activation, respectively. After 48 hr, the medium was changed to starvation medium (0.5% FCS) to induce ciliogenesis. Another 24 hr later, the medium was replaced with ES and cells were either subjected to a 2 min light pulse (465 nm, 38.8 µW/cm²; LAPD: 630 nm, 42.3 µW/cm²) or kept in the dark. Directly after light stimulation, cells were lysed and cAMP amounts per well were determined using a CatchPoint assay (Molecular Devices), according to manufacturer’s instructions. The protein concentration per well was determined with a Pierce BCA Protein Assay Kit (Thermo Fisher Scientific), according to manufacturer’s instructions.
 
-## Zebrafish as an experimental model
+### Zebrafish as an experimental model
 
 The animal facilities and maintenance of the zebrafish, Danio rerio, were approved by the Norwegian Food Safety Authority (NFSA, 19/175222). Fishes were kept in 3.5 l tanks in a Techniplast Zebtech Multilinking system at 28°C, pH 7 and 700 mSiemens, at a 14/10 h light/dark cycle. Fish were fed dry food (ZEBRAFEED; SPAROS I and D Nutrition in Aquaculture) two times/day and Artemia nauplii once a day (Grade0, platinum Label, Argent Laboratories, Redmond, USA). Embryos were maintained in egg water (1.2 g marine salt and 0.1% methylene blue in 20 l RO water) from fertilization to imaging. All procedures were performed on zebrafish embryos in accordance with the directive 2010/63/EU of the European Parliament and the Council of the European Union and the Norwegian Food Safety Authorities. For experiments the following zebrafish lines were used: nacre (mitfa-/-) (Lister et al., 1999), b-actin:arl13b-gfp (Borovina et al., 2010), and Ubi:zebrabow (Pan et al., 2013) transgenic animals, which express RFP ubiquitously in absence of Cre recombinase.
 
-## mRNA synthesis, injection, immunostaining, and imaging
+### mRNA synthesis, injection, immunostaining, and imaging
 
 The mRNA synthesis, injection, immunostaining, and imaging was performed according to standard protocols. In order to generate capped mRNA of the cherry-nanobody, 5 μg of the plasmid pc3.1-mNphp3 (201)-VHHLaM-2-eGFP was first linearized using FastDigest BpiI for 30 min at 37°C (Thermo Fisher Scientific, Cat# FD1014). Upon verification of the linearization of the plasmid by gel electrophoresis, the digested plasmid was purified using the QIAquick PCR purification kit (Qiagen, cat #28104) and its DNA concentration measured using a Nanodrop spectrophotometer (Thermo Fisher Scientific). mRNA was in vitro transcribed from 500 ng of linearized plasmid using the mMessage mMachine T7 kit according to the supplier’s instructions (Thermo Fisher Scientific, Cat # AM1344). Following 3 hr incubation at 37°C, the mRNA was precipitated upon addition of 40 μl RNase-free H2O and 30 μl LiCl precipitation solution provided in the mMessage mMachine T7 kit, incubation overnight at −20°C, and centrifugation for 30 min at 13.000 rpm at 4°C. The precipitated mRNA was further washed with 70% Ethanol in RNase-free H2O, air dried, and resuspended in RNase-free H2O. The integrity of the mRNA was confirmed by gel electrophoresis and its RNA concentration measured with a nanodrop spectrophotometer. The mRNA was aliquoted and kept at −80°C until injection.
 
@@ -172,10 +464,10 @@ Dechorionated and euthanized embryos (collected between 24 and 26 hpf) were fixe
 
 Embryos at 22–26 hpf were manually dechorionated, anaesthetized in 0.01% pH 7.4 buffered MS-222, and mounted in 2% low-melting point agarose (dissolved in artificial fish water (1.2 g marine salt in 20 l RO water) in a Fluorodish (World Precision Instruments). Images were acquired using a Zeiss Examiner Z1 confocal microscope with a 20x water immersion NA 1.0 objective. Acquired images were processed with Fiji/ImageJ or Zen (Zeiss).
 
-## Software
+### Software
 
 Data analysis and statistical analysis was performed in Excel (Microsoft Office Professional Plus 2013, Microsoft) and GraphPad Prism (Version 8.1.2, GraphPad Software, Inc). All image processing and analysis was performed in ImageJ (Version v1.52i, U.S. National Institutes of Health, Bethesda, Maryland, USA). Plots and Figures were generated using GraphPad Prism (Version 8.1.2, GraphPad Software, Inc) and Adobe Illustrator CS5 (Version v15.0.0, Adobe Systems, Inc). ImageJ plugins were developed in Java, with the aid of Eclipse Mars.2 (Release 4.5.2, IDE for Java Developers, Eclipse Foundation, Inc, Ottawa, Ontario, Canada).
 
-## Code availability statement
+### Code availability statement
 
 The analysis workflow to study cilia length and fluorescence signal with its custom-written ImageJ plug-ins (‘CiliaQ’) is available through the following link https://github.com/hansenjn/CiliaQ (copy archived at https://github.com/elifesciences-publications/CiliaQ).

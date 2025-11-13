@@ -36,11 +36,19 @@ To uncover novel components and pathways that regulate endogenous protein homeos
 
 ## Results
 
-## Measurement of endogenous proteostasis state by flow cytometry
+### Measurement of endogenous proteostasis state by flow cytometry
 
 ProteoStat is used to stain endogenous protein aggregates in fixed cells. Like Thioflavin T, ProteoStat fluorescence increases when rotationally confined by binding to cross-beta sheets in amyloidal structures. Recent studies have used the dye to visualize aggregated proteins in mouse NSCs and C. elegans (Leeman et al., 2018; Shen et al., 2011; Vonk et al., 2020; Bohnert and Kenyon, 2017). To verify that ProteoStat can report changes in proteostasis in human cell culture, we inhibited proteasomes in K562 cells and stained them for microscopy or flow cytometry analysis. As expected, proteasome inhibition by MG132 increased ProteoStat intensity, with numerous bright puncta around the nucleus (Figure 1—figure supplement 1A). ProteoStat-high cells obtained by fluorescence-activated cell sorting (FACS) from cells treated with a lower dose of MG132 – which generated mixed phenotypes – likewise showed numerous bright puncta, whereas ProteoStat-low cells displayed diffuse staining of lower intensity, indicating that this tool can be used to report and isolate cells in different proteostasis states (Figure 1A).
 
-## Genome-wide screen for modifiers of ProteoStat recovered major known components of the proteostasis machinery
+![Figure 1.](https://cdn.elifesciences.org/articles/86194/elife-86194-fig1-v1.jpg)
+
+**Figure 1.:** (A) ProteoStat validation: MG132-treated cells were stained, sorted into top and bottom quartiles (ProteoStat-high and ProteoStat-low, respectively), and imaged. (B) CRISPRi screen schematic: Untreated K562 cells were infected with sgRNA library, selected, stained, and sorted using gates that corrected for correlation between staining intensity and cell size. (C) A subset of GO Terms (Biological Process and Cellular Component) identified with GSEA on screen results. Positive Enrichment scores indicate an increased likelihood of genes in the GO Term to increase ProteoStat when knocked down. (D) Volcano plot highlighting major proteostasis pathways and select genes involved in lipid uptake and metabolism. Dotted line denotes where the product of |log2(fold-change)| and -log10(False discovery rate) is constant and equals to 1*-log10(0.05).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86194/elife-86194-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) K562 cells treated with MG132 at 1 µM for 20 hr were stained with ProteoStat and imaged. Images with untreated and treated cells are shown here with the same grayscale. Inset: enlarged image of a single cell showing perinuclear ProteoStat punctates in MG132-treated cells. (B) Results of a reduced-scale batch retest to validate the effect of select sgRNAs from the genome-wide screen. Sequencing counts of each sgRNA in the FACS-sorted ProteoStat-high vs ProteoStat-low populations are shown. sgRNAs selected include ones that were enriched in the ProteoStat-high (red) and ProteoStat-low (blue) populations, or showed no enrichment (green) in the genome-wide screen, as well as non-targeting sgRNAs (gray) for normalization. (C) Effects of pharmacological inhibition of proteasome (MG132, 1 µM), lysosomal acidification (Bafilomycin A1, 6.25 µM), and chaperones (VER-155008, 50 µM; Ganetespib, 100 nM; 17-DMAG, 1 µM; n=1) on ProteoStat staining in K562 cells after the specified treatment durations.
+
+### Genome-wide screen for modifiers of ProteoStat recovered major known components of the proteostasis machinery
 
 We performed FACS-based, pooled screens in K562 CRISPRi cells, which stably expressed KRAB-dCas9. Briefly, cells carrying individual sgRNAs were fixed, stained, and sorted by ProteoStat intensity into top and bottom quartiles (ProteoStat-high and ProteoStat-low, respectively; Figure 1B). Illumina sequencing was used to quantify the frequency of each sgRNA in each of these two populations. We performed this experiment twice and evaluated the effect of each gene’s knockdown (KD) on proteostasis using the MAGeCK package (Li et al., 2014).
 
@@ -48,23 +56,35 @@ KDs of 239 genes increased ProteoStat, whereas KDs of 607 genes decreased it (ou
 
 Surprisingly, KD of most of the major components directly involved in macroautophagy did not affect ProteoStat in either direction. These include the core autophagosome formation components (e.g. ATG5, ATG10, ATG12, and the ATG8 protein family) and the autophagy adaptors (NBR1, TAX1BP1, OPTN, SQSTM1 etc). Although we performed our screens under nutrient-replete conditions, perturbations of these macroautophagy genes in K562 under similar growth conditions have previously been demonstrated to influence autophagic flux (Shoemaker et al., 2019). These results suggest that basal macroautophagy plays a negligible role in clearing endogenous amyloid-like structures in this system.
 
-## Lipid uptake and metabolism modulate proteostasis
+### Lipid uptake and metabolism modulate proteostasis
 
 The strong association of lysosomal vATPases with Proteostat phenotype is likely due to the need to maintain a lysosomal pH of ~4.5–5.0 for optimal activity of the hydrolases that break down proteins, lipids, and nucleic acids. Failure to maintain this acidic pH can cause lysosomal storage of undegraded macromolecules. Accordingly, in addition to the vATPases, several genes that broadly regulate lysosomal function impacted ProteoStat. These include genes that modulate the delivery or activity of multiple lysosomal enzymes (e.g. GNPTAB, IGF2R, LYSET, and PSAP) or lipid uptake and metabolism (e.g. LDLR, MYLIP, and SCAP; Figure 1D). However, no perturbations of more discrete activities (e.g. individual cathepsins, lipid hydrolases – e.g. GBA, LIPA, and GALC – or solute carriers) did so, suggesting that proteostasis is generally resilient and becomes impaired only in response to pleiotropic perturbations.
 
 KD of low-density lipoprotein receptor (LDLR) reduced ProteoStat. Correspondingly, KD of the E3 ubiquitin-protein ligase MYLIP, which targets LDLR for sterol-regulated degradation, led to one of the strongest signal increases. MYLIP KD increased ProteoStat via upregulating LDLR levels rather than through other MYLIP targets, as the effect of LDLR KD was epistatic to MYLIP in cells with double KD (Figure 2A). Cultured cells take up LDL – lipoproteins rich in cholesterol esters – through LDLR and the endo-lysosomal pathway. Once inside the acidic environment of lysosomes, cholesterol ester is hydrolyzed into free fatty acid and cholesterol, the latter of which is trafficked to the ER. Excess cholesterol exerts negative feedback on LDLR levels via two mechanisms: (1) oxysterols (oxidized derivatives of cholesterol) activate the liver X receptor (LXR), in turn increasing MYLIP expression and LDLR degradation (Zelcer et al., 2009); (2) high ER cholesterol sequesters the SCAP-SREBPs complex, suppressing its activity and in turn reducing LDLR expression as well as de novo cholesterol synthesis (Goldstein et al., 2006). Two positive regulators of the SREBP pathways (SCAP and MBTPS2) also reduced ProteoStat when knocked down (Figure 1D). In contrast, genes along the mevalonate – de novo cholesterol synthesis – pathway did not consistently score in our screen, indicating the difference between cholesterol that is taken up vs synthesized de novo.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/86194/elife-86194-fig2-v1.jpg)
+
+**Figure 2.:** (A & D) Comparing effects on ProteoStat of single vs double KDs (n≥2) (B) Effects of gene KDs on ProteoStat in cells maintained in media with regular or delipidated FBS (DL media). (n=3) (C) Effects of supplementing free cholesterol or human LDL in restoring ProteoStat, which was lowered in cells grown in DL media (n=3). Phenotypes in A-D were normalized first to an internal staining control, and then to cells carrying non-targeting guides. (✻: p<0.05; ✻✻: p<0.01; t-test between pairs of samples as indicated with horizontal lines). (E) ProteoStat vs abundance of indicated lipid species in cells with KD of a core set of lipid-related target genes, or including other ProteoStat perturbing genes (insets). Both ProteoStat and lipid abundance are averages of biological triplicates and normalized to cells carrying non-targeting guides. Least squares linear regression models (dotted red lines) were generated and the Coefficient of determination, R2, values are shown. (F) Histograms of R2 values for all lipid species within each indicated lipid class as in E. p-values were calculated using K-S test comparing R2 values within each lipid class versus that of all lipids. The number of individual lipid species analyzed is indicated for each lipid class.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86194/elife-86194-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A & B) Filipin III (A) and Proteostat (B) staining on K562 cells that were untreated or MBCD-treated to remove cholesterol. Same grayscale was used for each pair of images in the main panels, where an additional Filipin III image of the MBCD-treated cells was shown at enhanced-grayscale to expose the minimal filipin III staining on these cells. (C) Co-staining K562 cells (untreated or MG132-treated) against LAMP1 and with ProteoStat and Filipin III. (D) Biphasic GUVs with cholesterol-poor and cholesterol-rich phases were generated, which included TopFluor Cholesterol to label the cholesterol-rich phases. These GUVs were stained with ProteoStat at two concentrations – low (1:10000 diluted, as used in all other experiments, including FACS-based screen) and high (1:500 diluted). Unstained samples were included to assess background fluorescence in the ProteoStat channel.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86194/elife-86194-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Histograms of R2 values obtained for all lipid species within each indicated lipid class – ceramides (Cers), lactosylceramides (LacCers), or hexosylceramides (HexCers) – using linear regression models generated from the ProteoStat phenotypes vs lipid abundances, as in Figure 2E. p-values were calculated using K-S test comparing R2 values within each lipid class versus that of all lipids. The number of individual lipid species analyzed is indicated for each lipid class. (B) Excerpt of hydrolytic pathway of a few sphingolipid species, their catalytic enzymes, and associated activating Saps. (C) Schematic of the series of constructs expressing different variations of PSAP (full-length, truncated, carrying mutations deleterious to individual Sap peptides, or individual functional Sap peptides alone). Colored boxes depict individual Sap peptides. Deleterious mutations are depicted by X’s on the corresponding Sap peptide. (D) ProteoStat phenotypes in cells overexpressing various PSAP variants in E, in conjunction with either PSAP KD or non-targeting control (n=3, #: p>0.05; t-test).
+
 Chronic depletion of exogenous LDL using media that contains delipidated serum reduced ProteoStat to a level similar to LDLR KD and was sufficient to abrogate the effect of MYLIP KD (Figure 2B), further demonstrating that the effect of these genetic perturbations was mediated through lipid uptake and not direct degradative action of MYLIP on putative aggregation-prone substrates. Supplementing either exogenous cholesterol or human LDL reversed the effect of LDL depletion (Figure 2C). We also examined the possibility that ProteoStat may directly stain cholesterol by acutely extracting cholesterol using methyl-β-cyclodextrin (MBCD). MBCD removed most free cholesterol as determined by Filipin III staining, but did not affect ProteoStat (Figure 2—figure supplement 1A–B). In neither untreated nor MG132-treated cells did ProteoStat and Filipin III staining overlap, indicating that ProteoStat does not stain free cholesterol nor any major components of the plasma membrane (Figure 2—figure supplement 1C). Furthermore, in an in vitro biphasic lipid bilayer system (giant unilamellar vesicles, GUVs), ProteoStat stained the lipid bilayer poorly and was not brighter at the cholesterol-rich phase (Figure 2—figure supplement 1D). Together, the evidence suggests that increased flux of LDL uptake and/or the levels of lipid metabolites generated during the process increases protein aggregation.
 
 KD of genes involved in lysosomal sphingolipid metabolism and lysosomal protein trafficking (GNPTAB, IGF2R, LYSET, and PSAP) increased ProteoStat in our screens (Figure 1D). GNPTAB encodes two subunits of a Golgi-resident enzyme, GlcNAc-1-phosphotransferase, which catalyzes the first step to form mannose 6-phosphate (M6P) markers on lysosomal enzymes and is stabilized by the recently characterized LYSET (also named TMEM251; Richards et al., 2022). IGF2R (also known as the cation-independent M6P receptor) binds to these lysosomal enzymes and facilitates their transport from golgi to lysosome. PSAP, or prosaposin, is the precursor to saposin peptides, which are required to activate lysosomal sphingolipid catabolizing enzymes. The effect of PSAP KD was dramatically exacerbated by MYLIP KD and alleviated by LDLR KD (Figure 2D), indicating that lipid uptake can impinge on proteostasis through its interaction with lipid catabolism in lysosomes. The individual lysosomal hydrolases activated by saposins, such as GBA, GALC, and LIPA, did not rise above the detection threshold in our screen, again suggesting that the proteostasis network, as measured by ProteoStat, is generally resilient to perturbations of discrete functional nodes or changes in individual lipid species.
 
-## Sphingolipids and cholesterol esters mediate the effect of lipid perturbations on proteostasis
+### Sphingolipids and cholesterol esters mediate the effect of lipid perturbations on proteostasis
 
 Having demonstrated that lipid metabolism could influence proteostasis, we wondered if specific lipid species might be involved. To address this question, we performed lipidomic analysis on cells in which lipid metabolism was perturbed, either genetically by CRISPRi, or environmentally by lipid depletion. These perturbations were selected from the screen results to represent a range of effects on ProteoStat staining. When considering perturbations that directly affect lipid uptake and metabolism, we found remarkable correlation between ProteoStat staining and individual levels of most lipids in the sphingomyelin (SM) and cholesterol ester (CE) classes (R2 of up to 0.968 and 0.843, for SM and CE, respectively, Figure 2E). Indeed, lipids belonging to these two classes were better correlated with the ProteoStat phenotype when compared with the full collection of lipid compounds assayed (Figure 2F, see Figure 2—figure supplement 2A for the lipid classes ceramides [Cers], lactosylceramides [LacCers], or hexosylceramides [HexCers] as counterexamples). In contrast, KD of targets that do not impinge directly on lipid metabolism (e.g. AMBRA1 or CHMP2A) or else expected to have strong pleiotropic effects beyond lipid metabolism (e.g. ATP6V1E1) did not induce strong correlations between SMs/CEs and ProteoStat (insets in Figure 2E). These results further highlight the multimodality of proteostasis regulation, where lipid dysregulation represents one, among other, major components.
 
 To determine if any lipid species alone contributed critically to protein aggregation induced by lipid dysregulation, we leveraged the modularity of the highly conserved PSAP. Upon delivery to the lysosome, the proprotein is cleaved proteolytically into four active peptides, saposins (Saps) A, B, C, and D. Saps are involved in the hydrolysis of glycosphingolipids (GSLs) as enzymatic activators, facilitating the interaction between soluble lysosomal hydrolases and GSLs embedded in the membrane (Kolter and Sandhoff, 2005; Xu et al., 2010). Distinct residues within the Sap-hydrolase interface confer hydrolase specificity on each saposin (e.g. SapA binds to Galactocerebrosidase, GALC, and stimulates galactosylceramide hydrolysis, Figure 2—figure supplement 2B; Hill et al., 2018). Deficiency in full-length PSAP or individual Saps (by truncation, inactivating mutations, or reduced expression) lead to various lysosomal storage disorders, with neuropathology and often dysfunction of other organs (Schulze and Sandhoff, 2011). Depending on which Sap is deficient, distinct GSL species are found to accumulate in the storage cells. We therefore performed rescue experiments using different PSAP variants to perturb turnover of individual GSLs more specifically. We expressed full length PSAP or variants with either a single Sap or all-but-one Sap (Figure 2—figure supplement 2C). Full-length PSAP largely rescued the increase in ProteoStat induced by PSAP KD (p=0.07 vs non-targeting, no-rescue control), while the variant with all four Saps inactivated (PSAP ΔABCD) failed to rescue (p=0.74 vs PSAP KD, no-rescue control; Figure 2—figure supplement 2D). Furthermore, addition of any single Sap did not fully rescue the KD phenotype. Accordingly, inactivating any single Sap also did not fully abrogate PSAP’s ability to rescue. Together, the evidence suggests that proteostasis impairment from sphingolipid accumulation is pleiotropic and is likely attributable to the action of multiple but not a single lipid. This is consistent with the observation that, in our CRISPRi screens, none of the individual GSL hydrolases significantly increased ProteoStat level.
 
-## Lipid dysregulation leads to accumulation of insoluble lysosomal protein aggregates
+### Lipid dysregulation leads to accumulation of insoluble lysosomal protein aggregates
 
 Lipid-related perturbations that impair proteostasis suggested a central role for lysosomes, prompting us to further characterize ProteoStat staining, especially its subcellular localization. Aggresomes are reportedly composed of misfolded and aggregated proteins that are poly-ubiquitinated and transported along microtubules to coalesce into perinuclear assemblies. These aggresomes can be recognized by autophagy receptors to undergo canonical macroautophagy and lysosomal degradation (Kocaturk and Gozuacik, 2018). Alternatively, cytosolic or organelle cargo may be recruited and directly delivered into endolysosomal compartments in a process termed microautophagy that is dependent on the ESCRT pathway (Kuchitsu et al., 2023; Oku et al., 2017; Schäfer et al., 2020). ProteoStat was initially reported to colocalize with mono-/poly-ubiquitinated proteins, p62, and LC3, and has been used as a general reporter for protein aggregation (Bohnert and Kenyon, 2017; Leeman et al., 2018; Shen et al., 2011; Vonk et al., 2020). Additionally, lysosome-accumulating ProteoStat-positive aggregates were reported in quiescent neural stem cells but not their activated counterparts (Leeman et al., 2018), nor in other rapidly dividing cell types.
 
@@ -72,11 +92,31 @@ We initially characterized aggresomes induced by pharmacological proteasome inhi
 
 Cells with lipid impairment (MYLIP or PSAP KD) exhibited lysosomal ProteoStat puncta that were non-ubiquitinated, in addition to occasional cytoplasmic double-positive puncta (Figure 3A–B, white arrowheads). This suggests a moderate level of proteostatic stress that does not overwhelm the capacity to deubiquitinate. Accordingly, cells with MYLIP and PSAP KD did not exhibit growth defects (Figure 3—figure supplement 2A). To verify the presence of protein aggregates in lysosomes under the above conditions, we isolated lysosomes using Lyso-IP (Lysosome Immunoprecipitation) (Abu-Remaileh et al., 2017). HA epitopes are targeted to the lysosomal surface by TMEM192, which enable lysosomal isolation, followed by differential extraction into RIPA (detergent-soluble) and Urea/SDS (detergent-insoluble) fractions. This orthogonal approach confirmed that lipid-perturbation (MYLIP and PSAP KDs) resulted in accumulation of detergent-insoluble protein aggregates in the lysosome (Figure 3C). Inhibiting lysosomal acidification (ATP6V1E1 KD) or proteasome activity (by MG132) led to larger amounts of lysosomal aggregates (Figure 3C, Figure 3—figure supplement 2B).
 
-## Lipid dysregulation leads to the accumulation of insoluble ESCRT components at the lysosome
+![Figure 3.](https://cdn.elifesciences.org/articles/86194/elife-86194-fig3-v1.jpg)
+
+**Figure 3.:** (A) K562 cells with the indicated KDs were co-stained with ProteoStat and antibodies against ubiquitinated proteins or lysosomes and imaged with confocal (maximum projection of multiple-z-slices). (B) Quantification (n=3) of ProteoStat and mono/poly-ubiquitinated proteins (representative images shown in A) segregated according to co-localization with lysosome (LAMP1 staining). (C) Representative (from triplicate experiments) polyacrylamide gel with Silver Stain showing Lysosomal Insoluble fractions from cells with various KDs after Lyso-IP and differential extraction. (✻✻: p<0.01; n.s.: not significant; t-test vs NT control or between pairs of samples as indicated with horizontal lines).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86194/elife-86194-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A and C) K562 cells with various treatments were co-stained with ProteoStat and antibodies against ubiquitinated proteins or lysosomes (A), or Thioflavin T and antibodies against lysosomes (C), and imaged with confocal microscopy. White arrowheads highlight cytoplasmic Ub-high/ProteoStat-medium puncta. (B and D) Quantification (n=3) of ProteoStat, mono/poly-ubiquitinated proteins (B), or Thioflavin T (D) signals, segregated according to co-localization with lysosome (representative images of select conditions shown in A and C, respectively). (E) K562 cells with control or UBPY KD were co-stained with ProteoStat and antibodies against ubiquitinated proteins or lysosomes. (F) Quantification (n=3) of ProteoStat and mono/poly-ubiquitinated proteins (representative images shown in E) segregated according to co-localization with lysosome (LAMP1 staining). Maximum projection of multiple z-slices shown for all microscopy images.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86194/elife-86194-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Effect on growth rates of various gene KDs. (B) Polyacrylamide gel with Silver Stain showing Lysosomal Insoluble fractions from cells treated with various concentrations of MG132 for 20 hr, followed by Lyso-IP and differential extraction.
+
+### Lipid dysregulation leads to the accumulation of insoluble ESCRT components at the lysosome
 
 We performed in-depth quantitative proteomics coupled with isobaric tandem mass tags (TMT) on different Lyso-IP fractions to determine the identity of lysosomal detergent-insoluble proteins. 67 of 70 core lysosomal resident (Singh et al., 2020) proteins were captured in the Lysosomal Total fraction (before differential extraction), validating the Lyso-IP-proteomics method. Within the Lysosomal Insoluble fraction, 35 proteins were over-represented (q-value <0.05) in MYLIP KD cells versus control. Remarkably, 9 of the top 12 insoluble proteins induced by MYLIP KD were components involved in the ESCRT pathway (Figure 4A), including multiple ESCRT-III subunits (e.g. CHMP2A, CHMP4A & B), accessory proteins (ALIX and PTPN23), and ESCRT-III disassembling enzymes (VPS4A and VTA1). The ESCRT machinery is involved in multiple cellular processes that involve membrane scission with a negative curvature (membrane bending out and away from the cytoplasm), including cytokinesis, ciliogenesis, multivesicular body formation, microautophagy, and lysosomal membrane repair. Accordingly, GSEA of insoluble lysosomal proteins enriched in MYLIP KD compared to control highlighted the Multivesicular Body gene set (GO:0005771; Figure 4B). This enrichment of ESCRT components was not simply a consequence of increased abundance in the Lysosomal Total fraction, as multiple proteins (most notably vATPases) were also more abundant in the total, but not insoluble, fraction of MYLIP KD cells (Figure 4—figure supplement 1A). ESCRT-III subunits have previously been shown to form detergent-insoluble hetero-polymers on membranes (Hanson et al., 2008; McCullough et al., 2015). These ESCRT-III polymers can be trapped on membranes by depleting VPS4A/B (Cashikar et al., 2014), which has the dual function of progressing ESCRT-III polymerization through subunit exchange and ultimately disassembling the complex upon completion of membrane scission (Pfitzner et al., 2020). Here, our results provide novel evidence that excessive SM and CE levels may disrupt ESCRT function by impeding ESCRT-III progression and/or resolution.
 
-## Lysosomal membrane permeabilization (LMP) contributes to proteostasis impairment
+![Figure 4.](https://cdn.elifesciences.org/articles/86194/elife-86194-fig4-v1.jpg)
+
+**Figure 4.:** (A) Volcano plot of Lyso-IP proteomics experiment highlighting ESCRT components and associated proteins that became more insoluble in the lysosome in MYLIP KD vs control cells. Dotted line denotes where the product of |log2(fold-change)| and -log10(False discovery rate) is constant and equals to 1*-log10(0.05). (B) GO Terms (Cellular Component) identified with GSEA on Lyso-IP Proteomics results. Positive Enrichment scores indicate an increased likelihood of genes in the GO Term to be enriched in Lysosomal Insoluble fraction in MYLIP KD vs control cells.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86194/elife-86194-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Relative enrichment of proteins in MYLIP KD over NT control, in Lysosomal Total Fraction vs Lysosomal Insoluble Fraction. Highlighted are proteins with statistically significant enrichment in the stated categories.
+
+### Lysosomal membrane permeabilization (LMP) contributes to proteostasis impairment
 
 Can ESCRT disruption mediate the effect of lipid dysregulation on proteostasis impairment? As ESCRT contributes to lysosomal membrane repair and ESCRT deficiency is sufficient to drive LMP, we examined the effect of lipid-perturbing KDs on lysosomal membrane integrity using a TagBFP-fused Galectin-3 (GAL3) reporter. GAL3 is normally diffused in the cytoplasm but becomes punctate upon binding to glycans on the lumenal side of the lysosomal membrane that are exposed upon damage. We imaged the reporter under a combination of candidate gene KDs and/or acute LMP induced by LLOMe (L-leucyl-L-leucine, a lysosomotropic membranolytic agent; Uchimoto et al., 1999). MYLIP KD and, to a much weaker degree, PSAP KD, both increased LMP, as did KDs of ESCRT-III subunits (CHMP2A and CHMP6) and ATP6V1E1 (Figure 5A–B). Chemically inducing LMP with LLOMe was sufficient to cause a moderate lysosomal accumulation of protein aggregates (Figure 5C). However, the magnitude of LMP was not directly related to ProteoStat intensity across conditions (Figure 5C–E), suggesting that while LMP is sufficient to promote lysosomal protein aggregation, other factors are likely to contribute.
 
@@ -86,11 +126,19 @@ Can ESCRT disruption mediate the effect of lipid dysregulation on proteostasis i
 
 We further tested if LMP was necessary for lysosomal protein aggregation by promoting lysosomal membrane repair through VPS4A overexpression. Chemically induced LMP was almost completely rescued by ectopic VPS4A expression (Figure 5D), presumably due to accelerated progression and resolution of ESCRT-III polymers. This rescue of chemically induced LMP was largely negated in the background of MYLIP KD (Figure 5D), suggesting that lipid dysregulation impairs ESCRT pathway in an orthogonal manner or upstream to ESCRT-III resolution. Accordingly, VPS4A overexpression only led to a modest reduction in LMP and lysosomal protein aggregation that were induced by MYLIP KD (Figure 5D–E). Together, these data show that LMP contributes, albeit only partially, to lipid-induced lysosomal protein aggregation and that lipid accumulation may impair VPS4A-mediated resolution of ESCRT assemblies.
 
-## Proteostasis impairments due to lipid dysregulation are not correlated with changes in lysosomal and proteasomal functions
+### Proteostasis impairments due to lipid dysregulation are not correlated with changes in lysosomal and proteasomal functions
 
 We sought to determine whether lipid dysregulation impacted proteasomal or lysosomal function. SM and CE metabolisms were previously linked with several diseases with proteinopathy, including Alzheimer’s disease (AD) and the lysosomal storage disease Niemann Pick’s type C (NPC) (Kirkegaard et al., 2010; Schulze and Sandhoff, 2011; van der Kant et al., 2019; Yamazaki et al., 2001). Furthermore, multiple lines of recent evidence suggest that SM and/or CE dysregulation may induce lipid peroxidation (Choi et al., 2017; Tian et al., 2021) and impinge on the activity of the proteasome and lysosomal proteases (Gabandé-Rodríguez et al., 2014; van der Kant et al., 2019). We therefore investigated different aspects of lysosomal health, including lysosomal number, size, protease activity, pH, and membrane integrity, as well as lipid peroxidation and proteasome activity, under several lipid perturbing conditions.
 
 To monitor lysosomal protease activity, we incubated cells with BSA conjugated to self-quenched red BODIPY TR-X (DQ-Red BSA). Uptake and delivery of these molecules to the lysosome lead to BSA hydrolysis and unquenching of BODIPY fluorescence. As expected, impeding lysosomal acidification (by ATP6V1E1 KD) or lysosomal membrane integrity (by CHMP2A KD) led to reduced BODIPY unquenching (Figure 6A). However, despite inducing LMP to a similar degree as KDs of ATP6V1E1, CHMP2A, and CHMP6 (Figure 5B), lipid-modifying perturbations affected lysosomal protease function only modestly and incoherently with respect to the ProteoStat phenotype, with MYLIP KD reducing BODIPY unquenching and PSAP KD trending in the opposite direction (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/86194/elife-86194-fig6-v1.jpg)
+
+**Figure 6.:** (A–D) Flow cytometry quantification of phenotypes in K562 cells with various KDs (n=3 for all). (A) TR-X fluorescence (after protease-induced unquenching) as an indicator of lysosomal protease function; (B) Ratio of lysosome-targeted sfGFP fluorescence (pH sensitive) to mCherry fluorescence (pH insensitive) as an indicator of lysosomal pH; (C) LysoTracker-Red fluorescence as an indicator of lysosomal content and pH; (D) LiperFluo staining as an indicator of lipid peroxidation level; (E–F) Efficacy of the 5 antioxidant cocktail (5AO) in rescuing the effects of gene KDs on (E) LiperFluo or (F) ProteoStat phenotypes. (✻: p<0.05; ✻✻: p<0.01; t-test vs NT control or between pairs of samples as indicated with horizontal lines; n=3) (G) Flow cytometry-based assay with the Proteasome Activity Probe was validated with proteasome inhibitors (n=1). (H) Effect of gene KDs on proteasome activity (n=1).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/86194/elife-86194-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) K562 cells stably expressing the pHLys sensor pHLARE were incubated with a pH buffer series in the presence of ionophores (nigericin and monensin) and analyzed with flow cytometry (n=3). (B) Effect of target gene KDs on LysoTracker vs LiperFluo phenotypes. R2 value was obtained with a linear regression model (dotted blue line). (C) LysoTracker-Red staining in K562 CRISPRi cells carrying sgRNAs targeting various genes, which were either untreated or treated with the five antioxidant cocktail (5AO) for the duration of the gene KD. (D) SDS-PAGE in-gel fluorescence of lysates from cells treated with MG132 or Bortezomib for 1, 2, 4, or 20 hr before labeling with the Proteasome activity probe for 1 hour followed by lysis. Expected migration distances of different proteasome subunits are marked. (E) Effect of KDs of select genes in the mevalonate pathway on proteasome activity (n=1). (F) Transmission Electron Microscopy (TEM) images of K562 CRISPRi cells harvested 6 days after transduction of either non-targeting or PSAP-targeting sgRNAs.
 
 Changes in lysosomal pH (pHLys) can be detected with high sensitivity using a ratiometric reporter (pHLARE), which consists of a pH-sensitive fluorescent protein (super-folder GFP, sfGFP) and a pH-insensitive one (mCherry) flanking rat LAMP1 (Webb et al., 2021). Here, we stably expressed pHLARE, and validated the sensor for use with flow cytometry using a buffer series with pH ranging from 4 to 7.5 in the presence of ionophores (Figure 6—figure supplement 1A). The sensor also correctly reported lysosomal deacidification as expected with ATP6V1E1 KD, and demonstrated that LMP induced by either CHMP2A or CHMP6 KD was associated with modest increase in pHLys (Figure 6B). Nevertheless, lipid-modifying KDs – MYLIP, PSAP, and LDLR – did not significantly shift pHLys, suggesting their effects on proteostasis were not mediated via lysosomal deacidification.
 
@@ -114,23 +162,296 @@ Taken together, the data presented here demonstrate that, despite the general re
 
 ## Materials and methods
 
-## Cell line construction and screen procedure
+**Key resources table**
 
-CRISPRi cell line was obtained by transducing K562 cells with a lentiviral vector expressing the nuclease-deactivated Cas9 fused with transcriptional repressor KRAB (UCOE-SFFV-KRAB-dCas9), followed by antibiotic selection. Monoclonal cell lines were obtained by limiting dilution, and screened functionally for effectiveness at silencing test genes when treated with sgRNAs. Cells were maintained in suspension at a density between 125 K to 1 M cells/mL in RPMI complete media (with 10% FBS and 1 x GlutaMax). 500 million stable CRISPRi cells were transduced with a sgRNA lentivirus pool (hCRISPRi_v2.1_top5 library, which includes 102,640 gene-targeting and 4590 non-targeting sgRNAs) at an MOI of 0.3 for single integrants. After 6 days in culture, including antibiotic selection for cells carrying the sgRNAs with 2 µg/mL puromycin, these cells were stained with fixable blue dead cell stain (Molecular Probes), then fixed, permeabilized and stained with ProteoStat Aggresome detection kit (Enzo) according to manufacturer’s protocol. Stained cells were sorted by FACS (BD FACSAria) into top and bottom quartiles (ProteoStat-high and ProteoStat-low, respectively), using gates that excluded dead cells and corrected for correlation between cell size and staining intensity. Sorted cell populations were pelleted, from which genomic DNA was extracted with phenol:chloroform:isoamyl alcohol and ethanol precipitation. sgRNA-containing sequences were amplified from the genomic DNA with two rounds of PCR, introducing multiplexing barcodes and sequencing adaptors in the process. Amplicons were then purified and sequenced with the HiSeq4000 platform (Illumina). Sequencing data were analyzed using the MAGeCK pipeline (Li et al., 2014). GSEA was performed using the GSEAPY package (Subramanian et al., 2005; Mootha et al., 2003) with the prerank method, using the following score that takes into similarly weighted accounts both the effect size and confidence level for each gene:scoregene=(|LFCgene /σLFC|+nlFDRgene/σnlFDR)∗D
 
-where nlFDRgene=log10(1/FDRgene), and D=1 or−1 such that the overall sign matches that of LFCgene.
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>K562</td>
+      <td>ATCC</td>
+      <td>CCL-243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>K562 CRISPRi</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line used to perform CRISPRi screen</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>K562 CRISPRi +TagBFP-Gal3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line used to assay lysosomal membrane permeabilization</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>K562 CRISPRi +pHLARE</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line used to assay lysosomal pH</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>K562 CRISPRi +LysoIP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line used to perform lysosomal proteomics</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-human-LAMP1 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab25630</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-mono/polyubiquitinated conjugates (mouse monoclonal)</td>
+      <td>Enzo</td>
+      <td>BML-PW8810-0100</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa Fluor Plus 647-conjugated anti-mouse (goat polyclonal secondary)</td>
+      <td>Invitrogen</td>
+      <td>A32728</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>PSAP overexpression variant series</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral constructs to interrogate the effect of individual saposins. See Figure 2—figure supplement 2C</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>hCRISPRi_v2.1_top5 sgRNA library; Modified to include additional controls and target of interests</td>
+      <td>Horlbeck et al., 2016</td>
+      <td></td>
+      <td>Cloned into an in-house lentiviral vector. See Supplementary file 1 for sgRNA sequences</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Filipin III (in Cholesterol Assay Kit)</td>
+      <td>Abcam</td>
+      <td>ab133116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>ProteoStat Aggresome detection kit</td>
+      <td>Enzo</td>
+      <td>ENZ-51035-K100</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Liperfluo</td>
+      <td>Dojindo Molecular Technologies</td>
+      <td>L24810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>DQ-Red BSA</td>
+      <td>Invitrogen</td>
+      <td>D12051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>LysoTracker Red DND-99</td>
+      <td>Invitrogen</td>
+      <td>L7528</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Me4BoVS</td>
+      <td>R&amp;D system</td>
+      <td>I-190–050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Pierce anti-HA magnetic beads</td>
+      <td>Life Technologies</td>
+      <td>88837</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>MG132</td>
+      <td>EMD Millipore</td>
+      <td>474790</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Bafilomycin A1</td>
+      <td>Invivogen</td>
+      <td>TLRL-BAF1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>VER155008</td>
+      <td>Selleckchem</td>
+      <td>S7751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Ganetespib</td>
+      <td>Selleckchem</td>
+      <td>S1159</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>17-DMAG</td>
+      <td>Invivogen</td>
+      <td>ant-dgl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>MBCD</td>
+      <td>Sigma</td>
+      <td>C4555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Bortezomib</td>
+      <td>Selleckchem</td>
+      <td>S1013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>LLOMe</td>
+      <td>MedKoo</td>
+      <td>597431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Cumene Hydroperoxide</td>
+      <td>Sigma-Aldrich</td>
+      <td>247502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Lipoprotein depleted FBS</td>
+      <td>Kalen Biomed</td>
+      <td>880100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>catalase</td>
+      <td>Sigma-Aldrich</td>
+      <td>C40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>glutathione</td>
+      <td>Sigma-Aldrich</td>
+      <td>G6013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>superoxide dismutase</td>
+      <td>Sigma-Aldrich</td>
+      <td>S5395</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>DL-alpha tocopherol</td>
+      <td>Sigma-Aldrich</td>
+      <td>T3251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>DL-alpha tocopherol acetate</td>
+      <td>Sigma-Aldrich</td>
+      <td>T3001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Halt Protease and Phosphatase Inhibitor Cocktail</td>
+      <td>Thermo Scientific</td>
+      <td>78440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MAGeCK</td>
+      <td>Li et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>GSEAPY</td>
+      <td>Subramanian et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MAVEN peak analysis program (version 2.20.21)</td>
+      <td>Seitzer et al., 2022</td>
+      <td>RRID:SCR_022491</td>
+      <td>https://github.com/eugenemel/maven</td>
+    </tr>
+  </tbody>
+</table>
 
-## Validation of hit genes by batch-retesting a reduced pool of CRISPRi guides
+### Cell line construction and screen procedure
+
+CRISPRi cell line was obtained by transducing K562 cells with a lentiviral vector expressing the nuclease-deactivated Cas9 fused with transcriptional repressor KRAB (UCOE-SFFV-KRAB-dCas9), followed by antibiotic selection. Monoclonal cell lines were obtained by limiting dilution, and screened functionally for effectiveness at silencing test genes when treated with sgRNAs. Cells were maintained in suspension at a density between 125 K to 1 M cells/mL in RPMI complete media (with 10% FBS and 1 x GlutaMax). 500 million stable CRISPRi cells were transduced with a sgRNA lentivirus pool (hCRISPRi_v2.1_top5 library, which includes 102,640 gene-targeting and 4590 non-targeting sgRNAs) at an MOI of 0.3 for single integrants. After 6 days in culture, including antibiotic selection for cells carrying the sgRNAs with 2 µg/mL puromycin, these cells were stained with fixable blue dead cell stain (Molecular Probes), then fixed, permeabilized and stained with ProteoStat Aggresome detection kit (Enzo) according to manufacturer’s protocol. Stained cells were sorted by FACS (BD FACSAria) into top and bottom quartiles (ProteoStat-high and ProteoStat-low, respectively), using gates that excluded dead cells and corrected for correlation between cell size and staining intensity. Sorted cell populations were pelleted, from which genomic DNA was extracted with phenol:chloroform:isoamyl alcohol and ethanol precipitation. sgRNA-containing sequences were amplified from the genomic DNA with two rounds of PCR, introducing multiplexing barcodes and sequencing adaptors in the process. Amplicons were then purified and sequenced with the HiSeq4000 platform (Illumina). Sequencing data were analyzed using the MAGeCK pipeline (Li et al., 2014). GSEA was performed using the GSEAPY package (Subramanian et al., 2005; Mootha et al., 2003) with the prerank method, using the following score that takes into similarly weighted accounts both the effect size and confidence level for each gene:
+
+$$
+score_{gene}=(|LFC_{gene} /\sigma_{LFC}|+nlFDR_{gene}/\sigma_{nlFDR})∗D
+$$
+
+where $nlFDR_{gene}=log_{10}(1/FDR_{gene})$, and $D=1 or−1$ such that the overall sign matches that of $LFC_{gene}$.
+
+### Validation of hit genes by batch-retesting a reduced pool of CRISPRi guides
 
 A subset of sgRNAs were selected and cloned into a reduced-scale library that consisted of 572 sgRNAs targeting 286 genes (87 enriched in ProteoStat-high, 99 enriched in ProteoStat-low, and 100 unenriched but abundantly expressed in K562 cells) and 300 non-targeting sgRNAs. sgRNA transduction in K562 CRISPRi cells, ProteoStat staining, FACS, library preparation and sequencing were performed similarly to the genome-wide experiment, except at a reduced scale (20 million cells transduced with sgRNA lentivirus pool, and >2.8 million cells each of ProteoStat-high and ProteoStat-low populations were obtained by FACS).
 
-## ProteoStat assays on cells with individual perturbations
+### ProteoStat assays on cells with individual perturbations
 
 K562 cells in multi-well plates were treated with individual perturbations and harvested for ProteoStat staining. To control for cell density-dependent variation in staining, harvested cells were spiked with untreated cells carrying appropriate fluorescent markers (e.g. TagBFP, mCerulean, or unlabeled, to be distinguished from treated cells) before fixation, permeabilization, and staining. ProteoStat fluorescence was quantified by flow cytometry (Fortessa, BD) with excitation at 488 nm and bandpass emission at 695/40 nm. ProteoStat intensity for each sample was first normalized to the internal spiked in (untreated) control, then to the corresponding negative control sample in the experiment (e.g. Non-targeting sgRNA).
 
 Individual perturbations were achieved by CRISPRi (sgRNA lentiviruses) or pharmacological inhibitors – MG132, Bafilomycin A1, VER155008, Ganetespib, 17-DMAG, MBCD, Bortezomib, LLOMe, and Cumene Hydroperoxide. Lipid deprivation was performed by substituting regular FBS with delipidated FBS (Lipoprotein depleted FBS).
 
-## Immunofluorescence and cell staining by fluorescent probes
+### Immunofluorescence and cell staining by fluorescent probes
 
 Cholesterol quantification was performed by formaldehyde fixing and staining cells with Filipin III according to manufacturer’s instructions.
 
@@ -144,7 +465,7 @@ Lysosomal content was estimated by incubating cells under various genetic pertur
 
 Proteasome activity was assessed with flow cytometry by incubating cells with genetic (7 days) or chemical (1 hr) perturbations with Me4BoVS. After incubation at 37 °C for 2 hr, cells were washed once with cold PBS, resuspended in cold PBS, and analyzed by flow cytometry (Fortessa, BD) with excitation at 488 nm and bandpass emission at 525/50 nm. For in-gel fluorescence analysis, cells treated with chemical inhibitors (1–20 hr) were incubated with Me4BoVS for 1 hr at 37 °C, washed once with cold PBS and pelleted. Cells were lysed with cold NP40 lysis buffer (50 mM Tris-HCl pH7.4, 150 mM NaCl, 1% NP40, filtered) for 30 min at 4 °C and pelleted at 14,000 × g for 3 min to remove debris. Samples were normalized by protein concentration (BCA assay) and run on a 4–20% Mini-PROTEAN TGX gel (Bio-Rad) and imaged directly on ChemiDoc with excitation at 460–490 nm and emission at 518–546 nm.
 
-## Lipidomics experiment and data analysis
+### Lipidomics experiment and data analysis
 
 K562 cells under various CRISPRi or lipid perturbations were maintained, in triplicate, for 7 days. Cells were pelleted, resuspended in fresh medium, and returned to culture on Day 6 – one day before up to ~1 million cells per sample were harvested. Briefly, cells were pelleted and washed twice with PBS at 4 °C, then lysed using 800 µL of ice-cold MeOH:H2O (1:1,v/v) containing 3% by volume of lipid standards - Avanti 330707 SPLASH LIPIDOMIX Mass Spec Standard, which includes 18:1(d7) Chol Ester, d18:1-18:1(d9) SM, and Cholesterol (d7), among other lipid classes at –20 °C, and transferred to a glass vial. Following the methyl tertiary-butyl ether (MTBE)- liquid-liquid extraction (LLE) adapted from the Matyash protocol (Matyash et al., 2008), 800 µL of 100% MTBE was added into each sample, vortexed, and incubated on ice for 10 min to form phase separation. Next, after centrifuging samples at 3000 × g at 4 °C for 5 min, 500 µL of the upper organic phase was collected into a clean glass vial, and the lower phase was re-extracted by the addition of 600 µL of 100% MTBE as described above. The organic phases were combined, dried under nitrogen, and resuspended in 150 µL of HPLC graded-ButOH/MeOH/H2O (2:2:1,v/v/v) with internal standards including: 5 µg/mL PE(18:0/18:0)-D70, PA(14:0/14:0)-D54, and 25 µg/mL LPC (16:0)-D31. Samples were analyzed using Thermo Scientific Vanquish UHPLC coupled with Q Exactive Plus Mass Spectrometer with 7.5 µL injection volume.
 
@@ -154,13 +475,13 @@ The source parameters for the MS were as follows: Sheath gas: 40; Aux gas:15; Sw
 
 Data were analyzed and visualized using the open source software MAVEN peak analysis program (https://github.com/eugenemel/maven [version 2.20.21, RRID:SCR_022491]; Seitzer et al., 2022; Seitzer and Ledogar, 2024a). Compounds were identified with the criteria of a precursor ion tolerance of 10 ppm and a product ion tolerance of 20 ppm, comparing fragmentation and retention time to in-house generated in-silico libraries for lipidomics (https://github.com/calico/CalicoLipidLibrary) (Seitzer and Ledogar, 2024b).
 
-## PSAP variant series and rescue experiments
+### PSAP variant series and rescue experiments
 
 A series of constructs expressing various PSAP variants were built into lentiviral vectors under a UBC promoter. The canonical sequence mRNA variant 1 (NM_002778.4) was designated as wild-type. The full-length, wild-type sequence was modified using the following known disease-associated mutations to generate deficient variants: SapA-deficiency (p.V70del), SapB-deficiency (p.N215H_C241S), SapC-deficiency (p.L349P_C388F). The SapD-deficiency variant was created by truncating the entire C-terminal starting at the first SapD residue (p.405_524del). These mutations are procured from OMIM (https://omim.org/entry/176801) and other sources in literature (Spiegel et al., 2005; Schnabel et al., 1991).
 
 PSAP KD rescue experiments were performed by co-transducing K562 CRISPRi cells with lentiviruses expressing either a PSAP-targeting or non-targeting sgRNA, and in parallel one of the various PSAP variants. Transduced cells were selected with 2 µg/mL puromycin and 500 µg/mL geneticin for doubly transduced cells. Cells were harvested 6 days after transduction, spiked with untreated cells as internal control, then stained with ProteoStat and analyzed with flow cytometry as in other experiments.
 
-## Lyso-IP, silver stain, differential extraction
+### Lyso-IP, silver stain, differential extraction
 
 Lyso-IP cells were obtained by transducing K562 CRISPRi cells with a lentiviral vector expressing a lysosomal membrane protein fused with an epitope and fluorescent protein (UCOE-SFFV-TMEM192-mRFP1-3xHA-2A-Neo), followed by antibiotic selection. Cells were transduced in triplicates with corresponding sgRNA lentivirus and expanded in culture for 6 days, including antibiotic selection with 2 µg/mL puromycin for cells carrying the sgRNAs. Lysosomes were harvested in a protocol partly adapted from the Sabatini Lab (Abu-Remaileh et al., 2017). Briefly, up to 40 million cells per sample were harvested, processing quickly on ice or at 4 °C in batches of four to six samples. Cells were washed twice with chilled 10–25 mL PBS by pelleting at 1000 × g for 2 min each, followed by resuspension in 1 mL KPBS (136 mM KCl, 10 mM KH2PO4, adjusted to pH 7.25 with KOH) and a final centrifugation in an 1.5 mL low-retention Eppendorf tube. Cell pellets were resuspended in 950 µL KPBS +inhibitors (Halt Protease and Phosphatase Inhibitor Cocktail (from 100 x)+0.5 mM PMSF). One at a time, cell suspensions were passed 20 times through a cell homogenizer (Isobiotec) with a 8 µm clearance. Cell homogenates were clarified by pelleting at 1000 × g for 2 min to remove cell debris and nuclei. Clarified supernatants were incubated with 100 µL of KPBS-prewashed anti-HA magnetic beads on rotation for 3 min and put on a DynaMag magnet rack. Lysosomes bound on beads were washed thrice with cold 1 mL KPBS directly on the magnet. After final buffer removal, washed beads were flash-frozen and stored at –80 °C until lysis, when they were thawed briefly on ice.
 
@@ -168,23 +489,23 @@ Bound lysosomes were lysed by incubating in up to 150 µL (scaled with cell numb
 
 For polyacrylamide gel and silver stain analysis, 30 µL per Lysosomal Insoluble fractions were loaded onto each lane of a 4–20% Mini-PROTEAN TGX gel (Bio-Rad) and stained with Pierce Silver Stain Kit, and imaged on the Odyssey CLx Imager (LI-COR) according to manufacturer’s protocols.
 
-## Protein extraction and TMT labeling for proteomic analysis
+### Protein extraction and TMT labeling for proteomic analysis
 
 Lysosomal Total (in 1 x RIPA complete buffer) and Lysosomal Insoluble (in 1 x Urea/SDS complete buffer) samples (see above section for protocol and buffer compositions) were prepped using a combined manual version of our in-house automated multiplexed proteome profiling platform (AutoMP3) protocol (Gaun et al., 2021) and the single-pot, solid-phase-enhanced sample-preparation protocol (Hughes et al., 2019) with some minor modifications. In brief, 30 µL of the samples were diluted with 50 µL PBS. Samples were heated to 95 °C for 5 min, briefly cooled and then treated with benzonase for 30 min at 37℃ followed by sonication for 5 min. Samples were reduced with 5 mM DTT at 37℃ for 30 min, alkylated with 15 mM iodoacetamide for 20 min in the dark and then quenched with 5 mM DTT for 15 min at room temperature in the dark. Protein cleanup was performed using a 1:1 mixture of E3:E7 Sera-Mag Carboxylate-Modified Magnetic Particles (Cytiva Life Sciences, Marlborough, MA, USA). In brief, a bead stock was made and first washed with water four times, and then diluted to (20 µg solids/µL) and 100 µL beads were taken out into a new tube, placed on a magnet and the water removed followed by the addition of 100 µL of the sample to the beads and then mixed thoroughly off the magnet. The mixture was then immediately brought to 75% acetonitrile by addition of 300 µL of 100% acetonitrile and then incubated 18 min at room temp, allowing beads to aggregate with proteins. Tubes were then immobilized on the magnet and the supernatant removed. The beads were washed twice with 70% ethanol, and once more with 100% acetonitrile before they were brought into suspension with 92 µL digestion buffer (50 mM EPPS pH 8.5, 10 mM CaCl2) and Trypsin/LysC (Promega) was added at a ratio of 1:25 (enzyme: substrate) and incubated for 16 hr at 37 °C with shaking (800 rpm). The next day vials were sonicated for 5 min and tubes were then immobilized on the magnet and the digest transferred to new vials. For TMT-labeling 40 µL of the digest was then mixed with 12 µL TMTpro-reagent (0.2 mg/ml, in acetonitrile) followed by incubation at 25℃ for 1 hr. All samples were quenched with 11 µL 5% hydroxylamine solution before they were combined. The combined samples were mixed and split into multiple peptide cleanup reactions in order to be able to reach the high % of needed organic solutions for peptide binding to beads. In brief, 50 µL prewashed beads were mixed with 50 µL of the combined sample and then the solution was immediately brought to 95% isopropanol by addition of 100% isopropanol. These samples were incubated at room temperature for 18 min to enable peptide binding to the beads. Tubes were then placed on the magnet for 2 min and the supernatant removed followed by two rounds of washes with 95% isopropanol, and then once with 100% acetonitrile. The peptides were then eluted in two rounds of 40 µL 5% acetonitrile followed by shaking at 1500 rpm for 1 min. The cleaned up TMT-labeled samples were dried down in a speedvac (Labconco) and then resuspended in 5% formic acid, 5% acetonitrile (targeting 0.25 µg/µL) and 4 µL was injected for analysis per run.
 
-## Mass spectrometry proteomic analysis
+### Mass spectrometry proteomic analysis
 
 All data were obtained on an Orbitrap Eclipse mass spectrometer with FAIMS (Field Asymmetric Ion Mobility Spectrometry) Pro Interface. The mass spectrometer was coupled to an UltiMate 3000 HPLC operating in DDA mode (Thermo Fisher Scientific). Peptides were separated on an Aurora Series emitter column (25 cm ×75 µm i.d., 1.6 µm, 120 Å pore size, C18; IonOpticks) using a 165 min gradient from 8 to 30% acetonitrile in 0.125% formic acid. FAIMS was enabled during data acquisition with compensation voltages set as −40, –50, −60, and –70 and each voltage had a cycle time of 1.25 s. A high-resolution MS1 scan was performed in the Orbitrap at a 120,000 resolving power, m/z range 400–1600, RF lens 30%, standard automatic gain control (AGC) target, and ‘Auto’ maximum injection time and data collected in profile mode. For MS2 collision-induced dissociation (CID) was used and the fragments were analyzed in the ion trap. A 0.7 m/z isolation window was used and the normalized collision energy for CID was 35% with a CID activation time of 10ms at 0.25 activation Q and AGC 1×104 with 35ms maximum injection time and data collected in centroid mode. Real-time search (RTS; Schweppe et al., 2020) with the Uniprot database UP000005640 was used. Depending on the RTS, the ions were then analyzed with SPS MS3. For the RTS, the minimum Xcorr was set to 1, the minimum dCn was set to 0.1, and the maximum missed cleavages allowed was set to two. MS3 analysis was performed in the Orbitrap at a 50,000 resolving power, with HCD activation and 45% normalized collision energy, AGC 1×105, m/z range 100–500 m/z, and 200ms maximum injection time and data collected in centroid mode. A maximum of 10 fragment ions from each MS2 spectrum were selected for MS3 analysis using SPS.
 
-## Computational interpretation of proteomic Data
+### Computational interpretation of proteomic Data
 
 An in-house software pipeline (version 3.12) was used to process all mass spectrometry data (Huttlin et al., 2010). Raw files were first converted to mzXML files using the MSConvert program (version 3.0.45) to generate peak lists from the RAW data ﬁles, and spectra were then assigned to peptides using the SEQUEST (version 28.12) algorithm (Eng et al., 1994). Spectra were queried against a ‘target-decoy’ protein sequence database consisting of human proteins (using the reviewed Swiss-Prot portion of UP000005640 containing 20596 features and common contaminants) in forward and reversed decoys of the above (Elias and Gygi, 2007). The parent mass error tolerance was set to 20 ppm and the fragment mass error tolerance to 0.6 Da. Trypsin specificity was required allowing for up to two missed cleavages. Carbamidomethylation of cysteine (+57.02 Da), TMTpro-labeled N terminus and lysine (+304.20 Da) were set as static modifications. Methionine oxidation (+15.99 Da) were set as variable modifications. Following database searching, linear discriminant analysis was performed to filter peptide spectral matches to a 1% false discovery rate (FDR; Huttlin et al., 2010). Following peptide filtering, non-unique peptides were assigned to proteins that comprised the largest number of matched redundant peptide sequences using the principle of Occam’s razor. The quantification of TMT reporter ions was performed by extracting the most intense ion at the predicted m/z value for each reporter ion (within a 0.003 m/z window) and isotopic purity correction of reporter quant values was applied. Known false positives (i.e. decoys and contaminants) were excluded from further analysis steps and peptide intensities and signal-to-noise ratios were exported for further analysis. In order to identify differentially expressed proteins between each condition the msTrawler v1 statistical software package (O’Brien et al., 2024) was used.
 
-## Lysosomal membrane permeability assay
+### Lysosomal membrane permeability assay
 
 Stable LMP reporter cells were generated by transducing K562 CRISPRi cells with a lentiviral vector expressing TagBFP-GAL3, followed by selection with 10 µg/mL blasticidin. To measure the effect of gene KDs on LMP, these reporter cells were transduced with corresponding sgRNA-expressing lentiviruses and selected with 2 µg/mL puromycin. 5 days after sgRNA transduction, cells were plated on poly-D-lysine-coated CellCarrier Ultra 96-well plates (Perkin Elmer) at 12 K cells in 200 µL regular media per well. 2 days after plating, cells were treated with 60 uM LLOMe (or left untreated) and imaged on Opera Phenix imaging platform (Perkin Elmer) at 15 minute intervals for 4 hr, with excitation laser at 375 nm and bandpass emission filter at 435–550 nm. Images were analyzed with Harmony software (Perkin Elmer) by cell segmentation and spot detection. The number of GAL3 puncta in each field of view (6 fields per condition) is normalized by the total segmented cell area and scaled to match the average cell area, to correct for cell density and averaged across replicates. The maximal response for each sample over the 4 hr time course was reported.
 
-## pHLys quantification by pHLARE
+### pHLys quantification by pHLARE
 
 Stable pHLys reporter cells were generated by transducing K562 CRISPRi cells with a lentiviral vector expressing pHLARE (a fusion protein consisting of prolactin signal sequence, superfolder GFP [sfGFP]), rat LAMP1, and mCherry developed by Webb et al., 2021, and selected with 10 µg/mL blasticidin.
 
@@ -192,20 +513,20 @@ For validation, reporter cells were pelleted at 500 × g for 5 min and resuspend
 
 Cytometry data was analyzed in FlowJo software (BD). Median background fluorescence in each channel in the cognate non-reporter controls was subtracted from the sfGFP and mCherry fluorescence intensities in the pHLys reporter samples. The ratio of adjusted sfGFP intensity vs adjusted mCherry intensity was reported.
 
-## Giant unilamellar vesicles (GUVs) and ProteoStat staining
+### Giant unilamellar vesicles (GUVs) and ProteoStat staining
 
 GUVs with binary mixtures of saturated and unsaturated lipids were obtained by electroformation. Briefly, DOPC, DPPC, and free cholesterol were mixed in equal molar parts to a final concentration of 1 mg/mL. TopFluor Cholesterol (Avanti Polar Lipids Inc) was included at 1% of total lipids. The lipid mix was spread onto ITO-coated glass coverslips and dried overnight under vacuum. Dried lipids were hydrated with 300–400 ul of a 100 mM sucrose solution while applying a sinusoidal voltage (1.2 Vp-p and 10 Hz) for 1 hr at 60 °C. GUVs were harvested, diluted 20-fold in 200 µL of a 100 mM glucose solution supplemented with either no ProteoStat, or ProteoStat at a final dilution of 10,000 x and 500 x and imaged at 30 °C in a spinning disk confocal fluorescence microscope (Nikon), using excitation/emission at 488 nm/525±18 nm (TopFluor) or 561 nm/605±35 nm (ProteoStat). Multi-channel single-plane images were acquired using NIS-Elements software and analyzed with ImageJ/Fiji (Schindelin et al., 2012).
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 K562 CRISPRi cells carrying either non-targeting or PSAP-targeting sgRNA (6 days after sgRNA transduction) were fixed by directly mixing cells in suspension 1:1 with prewarmed 1 x fixative (2% glutaraldehyde and 4% paraformaldehyde in 0.1 M sodium cacodylate buffer, pH7.4), followed immediately by gentle pelleting at 100 × g for 10 min. Cell pellets were resuspended gently with fresh 1 x fixative, and incubated at room temperature for 1 hr, followed by washing once with 2 mL 0.1 M sodium cacodylate buffer at room temperature and then transferring to 0.5 mL 0.1 M sodium cacodylate buffer, each time pelleting at 100 × g for 10 min.
 
 Fixed cells were stored at 4 °C until they were enrobed in gelatin and post-fixed with 1% osmium tetroxide, washed with ddH2O and stained with 1% uranyl acetate. Stained samples were dehydrated in a graded series of ethanol, infiltrated and embedded in epon resin. Samples were then trimmed and sectioned with an ultramicrotome and imaged on a JEM-1400 transmission electron microscope (JEOL).
 
-## Materials availability
+### Materials availability
 
 All new CRISPRi and reporter cell lines, and the pooled sgRNA plasmid library are available from the corresponding author.
 
-## Data and availability
+### Data and availability
 
 Number of replicates (n), where indicated, refers to biological replicates, that is samples that are independently treated and processed. Standard and publicly available MAGeCK and GSEAPY packages were used to analyze the CRISPRi screen data. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2022) partner repository with the dataset identifier PXD054648.

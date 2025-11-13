@@ -42,6 +42,18 @@ The current study investigated the processing of auditory, visual or audiovisual
 
 In this fMRI study, participants were presented with blocks of auditory (A), visual (V) and audiovisual (AV) looming stimuli interleaved with fixation (Figure 1A). We used looming motion as a biologically relevant and highly salient stimulus that reliably evokes crossmodal influences in sensory cortices in human neuroimaging and animal neurophysiology (Cappe et al., 2012; Maier et al., 2008; Tyll et al., 2013). Modality-specific attention was manipulated by requiring participants to detect and respond selectively to weak auditory or visual targets, which were adjusted prior to the main study to threshold performance in sound amplitude or visual size for each participant. The targets were interspersed throughout all auditory, visual and audiovisual looming blocks (e.g. visual targets were presented during both visual and auditory looming blocks; see Figure 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46856/elife-46856-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental design: Participants were presented with auditory, visual and audiovisual looming stimuli under auditory and visual attention. (B) Example trial and timeline: Participants were presented with brief auditory, visual or audiovisual looming stimuli in 33 s blocks interleaved with 16 s fixation. At the beginning of each block, a cue indicated whether the auditory or visual modality needed to be attended. Brief visual and auditory targets (grey) were interspersed in the looming activation blocks. Participants were instructed to respond to the targets in the attended and ignore the targets in the unattended sensory modality. (C) Cortical layering: Left: A parasagittal section of a high resolution T1 map is shown with a colour coded laminar label for each voxel (voxel size: (0.4 mm)3). The primary auditory cortex is circled in yellow. Right: The cortical sheet is defined by the pial and white matter surfaces (thick black solid lines). Six additional surfaces (thin black solid lines) were determined at different cortical depths. Data were mapped onto those surfaces by sampling (blue dots) radially along the normal (white dashed line) to the mid-cortical depth surface (not shown here). WM: white matter, GM: grey matter, CSF: cerebrospinal fluid.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46856/elife-46856-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Percentage of responses to auditory (red) and visual (blue) targets in auditory, visual and audiovisual blocks (along the x-axis) and under auditory (top panel) and visual (bottom panel) attention. Thick lines represent group means + /- SEM and each thin line represents a participant. Responses to visual targets under auditory attention and responses to auditory targets under visual attention are false alarms (and vice versa for visual attention).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46856/elife-46856-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Sagittal section of T1 structural images (left), the corresponding coregistered mean EPI images of four representative participants. The definition of the six laminae is overlaid in A1.
+
 For the behavioural analysis, the percentages of visual and auditory targets that gained a response (see Figure 1—figure supplement 1 and Supplementary file 1 for ‘% target responses’) were entered into a 2 (target modality: auditory vs. visual) X 2 (attended modality: auditory vs. visual) X 3 (stimulus block modality: auditory, visual, audio-visual) repeated measures ANOVA. We observed significant main effects of attended modality (F(1, 10)=291.263, p<0.001, ηp2 = 0.967), target modality (F(1, 10)=13.289, p=0.004, ηp2 = 0.571), and stimulus modality (F(1.986, 19.864)=5.304, p=0.014, ηp2 = 0.347), together with a significant interaction between target modality and attended modality (F(1, 10)=14.786, p=0.003, ηp2 = 0.597). This interaction confirmed that participants had successfully maintained auditory or visual attention as instructed.
 
 Further, we observed significant interactions between target modality and stimulus block modality (F(1.813, 18.126)=8.149, p=0.004, ηp2 = 0.449) and between attended modality and stimulus block modality (F(1.436, 14.360)=24.034, p<0.001, ηp2 = 0.706). These interactions resulted from greater hit rates for auditory targets given auditory attention than for visual targets given visual attention during both auditory (t(10)=2.845, p=0.017, Hedges gav = 0.804) and visual blocks (t(10)=4.432, p=0.001, Hedges gav = 2.037), but not for audio-visual blocks (t(10)=0.276, p=0.788, Hedges gav = 0.081) suggesting that observers’ performance was not completely matched across all conditions. Specifically, the presentation of auditory and visual stimuli in the audiovisual blocks interfered with the detection of auditory targets. For completeness, there was no significant three-way interaction (F(1.783, 17.826)=2.467, p=0.118, ηp2 = 0.198).
@@ -50,9 +62,364 @@ Using sub-millimeter resolution fMRI, we characterized the laminar profiles in a
 
 Briefly, we used the following methodological approach (see Material and methods): in each ROI and participant, we estimated the regional BOLD response (i.e. ‘B parameter estimate’) (e.g. Figure 2A row 1, left) and the multivariate pattern decoding accuracy for each of the six laminae (e.g. Figure 3A row 1, right). We then characterized the laminar profiles of BOLD response and decoding accuracy in terms of a constant and a linear shape parameter (i.e. ‘S parameter estimates’) and show their across-subjects’ mean and distribution in violin plots (e.g. Figure 2A row 2). Finally, we characterized the spatial topography of those S parameter estimates by projecting their group mean onto a normalized group cortical surface (e.g. Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/46856/elife-46856-fig2-v2.jpg)
+
+**Figure 2.:** (A) BOLD response profiles: Rows 1 and 3: The BOLD response (i.e. B parameters, across subjects’ mean ± SEM) for visual and auditory looming stimuli averaged over auditory and visual attention in A1, PT, V1, V2/3 is shown as a function of percentage cortical depth. WM: white matter; GM: grey matter; CSF: cerebrospinal fluid. Percentage cortical depth is indicated by the small numbers and colour coded in red. Rows 2 and 4: Across subjects’ mean (± SEM) and violin plot of the participants’ shape parameter estimates that characterize the mean (C: constant) and linear increase (L: linear) of the laminar BOLD response profile. n = 11. (B) Surface projections: Across subject’ mean of the ‘constant’ (row i) and ‘linear’ increase (row ii) shape parameter estimates of the laminar BOLD response profile for auditory and visual looming stimuli (averaged over auditory and visual attention) are projected on an inflated group mean surface to show auditory and visual regions of the left hemisphere. A1 and V1 are delineated by black solid lines, PT and V2/3 by dashed lines. For visualization purposes only: i. surface projections were smoothed (FWHM = 1.5 mm); ii. values are also presented for vertices for which data were not available from all subjects and which were therefore not included in our formal statistical analysis. Grey areas denote vertices with no available data for any subject.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46856/elife-46856-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) BOLD response profiles: Row 1 and 3: The BOLD response (i.e. B parameters, across subjects’ mean ± SEM) for auditory and visual activations induced by looming stimuli averaged over auditory and visual attention in A1, PT, V1, V2/3 is shown as a function of percentage cortical depth. WM: white matter; GM: grey matter; CSF: cerebrospinal fluid. Percentage cortical depth is indicated by the small numbers and colour coded in red. Rows 2 and 4: Across subjects’ mean (± SEM) and violin plot of the participants’ shape parameter estimates that characterize the mean (C: constant) and linear increase (L: linear) of the laminar BOLD response profile. n = 11. (B) Surface projections: Across subject’ mean of the ‘constant’ (row i) and ‘linear’ increase (row ii) shape parameter estimates of the laminar BOLD response profile for auditory and visual looming stimuli (averaged over auditory and visual attention) are projected on an inflated group mean surface to show auditory and visual regions of the left hemisphere. A1 and V1 are delineated by black solid lines, PT and V2/3 by dashed lines. For visualization purposes only: i. borders between visual-induced activations and deactivations (white dashed lines) were defined based on visual inspection; ii. surface projections were smoothed (FWHM = 1.5 mm); iii. values are also presented for vertices for which data were not available from all subjects and which were therefore not included in our formal statistical analysis. Grey areas denote vertices with no available data for any subject.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46856/elife-46856-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Surface projection for individual subjects: Within subject ‘constant’ shape parameter estimates of the laminar BOLD response profile for visual (column i and ii) and auditory (column iii and iv) stimuli are projected on each subject’s inflated surface to show visual regions of the left (column i and iii) and right (column ii and iv) hemisphere. V1 and V2/3 are delineated by black solid and dashed lines respectively. For visualization purposes only, surface projections were smoothed (FWHM = 1.5 mm). Grey areas denote vertices with no available data.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/46856/elife-46856-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Surface projection for individual subjects: Within subject ‘constant’ shape parameter estimates of the laminar BOLD response profile for visual (column i and ii) and auditory (column iii and iv) are projected on each subject’s inflated surface to show visual regions of the left (column i and iii) and right (column ii and iv) hemisphere. A1 and PT are delineated by black solid and dashed lines, respectively. For visualization purposes only, surface projections were smoothed (FWHM = 1.5 mm). Grey areas denote vertices with no available data.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/46856/elife-46856-fig3-v2.jpg)
+
+**Figure 3.:** (A) Laminar profiles: Rows 1 and 3: The BOLD response (solid line; column 1 and 3) and decoding accuracy (dashed line; columns 2 and 4) (across subjects’ mean ± SEM) for [AV-A] in A1 and PT is shown as a function of percentage cortical depth pooled (i.e. averaged) over auditory and visual attention. WM: white matter, GM: grey matter, CSF: cerebrospinal fluid. Percentage cortical depth is indicated by the small numbers and colour coded in red. Rows 2 and 4: Across subjects’ mean (± SEM) and violin plot of participants’ shape parameter estimates that characterize the mean (C: constant) and linear increase (L: linear) of the laminar BOLD response and decoding accuracy profiles. n = 11. (B) Surface projections and raster plots: Left: Across subject’ mean of the ‘constant’ (row i) and ‘linear increase’ (row ii) shape parameter estimates of the laminar BOLD response profile for [AV-A] (averaged over auditory and visual attention) are projected on an inflated group mean surface to show auditory regions of the left hemisphere. A1 and PT are delineated by black solid and dashed lines. For visualization purposes only: i. surface projections were smoothed (FWHM = 1.5 mm); ii. values are also presented for vertices for which data were not available from all subjects and which were therefore not included in our formal statistical analysis. Grey areas denote vertices with no available data for any subject. Right: Row i. PT: The raster plot illustrates the statistical relationship between the ‘constant’ shape parameters for the visual evoked response [V-Fix]AttA, AttV and the crossmodal modulation [AV-A]AttA, AttV in PT. Each raster plot shows the laminar profiles (colour coded along abscissa) of the vertices for the ‘predicting contrast’ [V-Fix] and of the ‘predicted contrast’ [AV-A]. The laminar profiles of the vertices were sorted along the ordinate according to the value of the ‘constant’ shape parameter for [V-Fix]. The raster plot shows that the laminar profile of a vertex for [V-Fix] can predict its laminar profile for [AV-A]: PT vertices with less deactivations across laminae for [V-Fix] are associated with greater crossmodal enhancement [AV-A]. Row ii. The raster plot illustrates the statistical relationship between the ‘linear slope’ shape parameters for the visual evoked response [V-Fix]AttA, AttV and the crossmodal modulation [AV-A] in A1. Each raster plot shows the laminar profiles (colour coded along abscissa) of the vertices for the ‘predicting contrast’ [V-Fix] and of the ‘predicted contrast’ [AV-A]. The laminar profiles of the vertices are sorted along the ordinate according to the value of the ‘linear’ shape parameter for [V-Fix]. A1 vertices with less deactivations in deeper laminae for [V-Fix] are associated with greater crossmodal enhancement [AV-A] in deeper laminae. To enable averaging the raster plots across participants, the vertices were binned after sorting (number of bins for A1: 10100, number of bins for PT: 6800). For visualization purposes all raster plots were smoothed along the vertical axis (FWHM = 1% of the number of data bins). The subplot (i.e. black line) to the left of the raster plots shows the across subjects’ mean value (+ /- STD) of the shape parameters (i.e. i. constant, ii, linear) of the sorting contrast. n = 11.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46856/elife-46856-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Laminar profiles: Rows 1 and 3: The BOLD response (solid line; column 1 and 3) and decoding accuracy (dashed line; columns 2 and 4) (across subjects’ mean ± SEM) for [AV-A] in V1 and V2/3 is shown as a function of percentage cortical depth pooled (i.e. averaged) over auditory and visual attention. WM: white matter, GM: grey matter, CSF: cerebrospinal fluid. Percentage cortical depth is indicated by the small numbers and colour coded in red. Rows 2 and 4: Across subjects’ mean (± SEM) and violin plot of participants’ shape parameter estimates that characterize the mean (C: constant) and linear increase (L: linear) of the laminar BOLD response and decoding accuracy profiles. n = 11.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/46856/elife-46856-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The raster plots illustrate the statistical relationship between the ‘constant’ shape parameters for the visual evoked response [V-Fix]AttA, AttV and auditory evoked response [A-Fix]AttA, AttV in A1 (left) and PT (right). Each raster plot shows the laminar profiles (colour coded along abscissa) of the vertices for the ‘predicting contrast’ [V-Fix] and of the ‘predicted contrast’ [A-Fix]. The vertex profiles were sorted along the ordinate according to the value of the ‘constant’ shape parameter for [V-Fix]. The raster plot shows that the laminar profile of a vertex for [V-Fix] cannot predict its laminar profile for [A-Fix]. To enable averaging the raster plots across participants, the vertices were binned after sorting (number of bins for A1: 10100, number of bins for PT: 6800). For visualization purposes, all raster plots were smoothed along the vertical axis (FWHM = 1% of the number of data bins). The subplot (i.e. black line) to the left of the raster plots shows the across subjects’ mean value (+ /- STD) of the shape parameters (i.e. i. constant, ii, linear) of the sorting contrast. The violin plot show the distribution across subject of beta values for ‘a’ in the regression model [A-Fix]=a [V-FIX] + b. n = 11.
+
 All statistical results are presented in Table 1, Table 2, Table 3 and Supplementary files 3 and 4. Additional descriptive statistics as well as effect sizes can be found here: https://osf.io/tbh37/.
 
-## Auditory cortices
+**Table 1.**
+ Auditory and visual deactivations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Linear or constant</th>
+      <th></th>
+      <th colspan="2">Constant</th>
+      <th colspan="2">Linear</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">[V-fix]Att_A, Att_V</td>
+      <td>Mean(A1, PT)</td>
+      <td>F(2,40) = 9.280</td>
+      <td>p&lt;0.001</td>
+      <td></td>
+      <td>t(10)=−2.460</td>
+      <td>p=0.017*</td>
+      <td>F(1,20) = 2.083</td>
+      <td>p=0.164</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A1</td>
+      <td>t(10)=−2.077</td>
+      <td>p=0.032*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>PT</td>
+      <td>t(10)=−2.042</td>
+      <td>p=0.034*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">[A-fix]Att_A, Att_V</td>
+      <td>mean(V1, V23)</td>
+      <td>F(2,40) = 58.615</td>
+      <td>p&lt;0.001</td>
+      <td></td>
+      <td>t(10)=−5.547</td>
+      <td>p&lt;0.001*</td>
+      <td>F(1,20) = 22.433</td>
+      <td>p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>V1</td>
+      <td>t(10)=−6.538</td>
+      <td>p&lt;0.001*</td>
+      <td>t(10)=−5.080</td>
+      <td>p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>V2-3</td>
+      <td>t(10)=−4.305</td>
+      <td>p&lt;0.001*</td>
+      <td>t(10)=−4.142</td>
+      <td>p=0.002</td>
+    </tr>
+  </tbody>
+</table>
+
+_*indicates p-values based on a one-sided t-test based on a priori hypotheses. p-values<0.05 are indicated in bold. n = 11Using 2 (shape parameter: constant, linear) x 2 (ROI: primary, non-primary) linear mixed effects models, we performed the following statistical comparisons in a 'step down procedure':1. Two-dimensional F-test assessing whether the constant or linear parameter (e.g. each averaged across ROIs in auditory resp. visual cortices), was significantly different from zero (dark grey),2. If this two-dimensional F-test was significant, we computed one dimensional F-tests separately for the constant and the linear parameters (again averaged across auditory resp. visual ROIs) (light grey),3. If the one dimensional F-test was significant, we computed follow-up t-tests separately for each of the two ROIs (white)._
+
+**Table 2.**
+ Effects of the cross-modal modulation on the laminar BOLD response and decoding accuracy profiles in auditory areas.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A) BOLD profile</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">linear or constant</td>
+      <td colspan="2">constant</td>
+      <td colspan="2">linear</td>
+    </tr>
+    <tr>
+      <td>[AV - A]Att_A, Att_V</td>
+      <td>mean(A1, PT)</td>
+      <td>F(2,40) = 0.196</td>
+      <td>p=0.823</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>B) Decoding profile</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">linear or constant</td>
+      <td colspan="2">constant</td>
+      <td colspan="2">linear</td>
+    </tr>
+    <tr>
+      <td rowspan="3">[AV VS A]att A, att V</td>
+      <td>mean(A1, PT)</td>
+      <td>F(2,40) = 34.946</td>
+      <td>p&lt;0.001</td>
+      <td></td>
+      <td>F(1,20) = 21.966</td>
+      <td>p&lt;0.001</td>
+      <td>F(1,20) = 1.850</td>
+      <td>p=0.189</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A1</td>
+      <td>t(10)=3.867</td>
+      <td>p=0.003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>PT</td>
+      <td>t(10)=4.992</td>
+      <td>p&lt;0.001</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Using 2 (shape parameter: constant, linear) x 2 (ROI: primary, non-primary) linear mixed effects models, we performed the following statistical comparisons in a 'step down procedure':1. Two-dimensional F-test assessing whether the constant or linear parameter (e.g. each averaged across ROIs in auditory resp. visual cortices), was significantly different from zero (dark grey),2. If this two-dimensional F-test was significant, we computed one dimensional F-tests separately for the constant and the linear parameters (again averaged across auditory resp. visual ROIs) (light grey),3. If the one dimensional F-test was significant, we computed follow-up t-tests separately for each of the two ROIs (white)._
+
+**Table 3.**
+ Effects of the attentional modulation (irrespective of stimulus type) on the laminar BOLD response and decoding accuracy profiles.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A) BOLD profile</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">linear or constant</td>
+      <td colspan="2">constant</td>
+      <td colspan="2">linear</td>
+    </tr>
+    <tr>
+      <td rowspan="3">[Att_V - Att_A]A, V, AV</td>
+      <td>mean(A1, PT)</td>
+      <td>F(2,40) = 12.602</td>
+      <td>p&lt;0.001</td>
+      <td></td>
+      <td>F(1,20) = 9.249</td>
+      <td>p=0.006</td>
+      <td>F(1,20) = 12.163</td>
+      <td>p=0.002</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A1</td>
+      <td>t(10)=1.882</td>
+      <td>p=0.089</td>
+      <td>t(10)=3.123</td>
+      <td>p=0.011</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>PT</td>
+      <td>t(10)=4.523</td>
+      <td>p=0.001</td>
+      <td>t(10)=3.361</td>
+      <td>p=0.007</td>
+    </tr>
+    <tr>
+      <td>[Att_V - Att_A]A, V, AV</td>
+      <td>mean(V1, V23)</td>
+      <td>F(2,40) = 0.669</td>
+      <td>p=0.518</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>B) Decoding profile</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">linear or constant</td>
+      <td colspan="2">constant</td>
+      <td colspan="2">linear</td>
+    </tr>
+    <tr>
+      <td rowspan="3">[Att_A VS Att_V]A, V, AV</td>
+      <td>mean(A1, PT)</td>
+      <td>F(2,40) = 4.687</td>
+      <td>p=0.015</td>
+      <td></td>
+      <td>F(1,20) = 4.882</td>
+      <td>p=0.039</td>
+      <td>F(1,20) = 4.028</td>
+      <td>p=0.058</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A1</td>
+      <td>t(10)=1.260</td>
+      <td>p=0.236</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>PT</td>
+      <td>t(10)=2.031</td>
+      <td>p=0.070</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">[Att_A VS Att_V]A, V, AV</td>
+      <td>mean(V1, V23)</td>
+      <td>F(2,40) = 20.026</td>
+      <td>p&lt;0.001</td>
+      <td></td>
+      <td>F(1,20) = 13.564</td>
+      <td>p=0.001</td>
+      <td>F(1,20) = 9.951</td>
+      <td>p=0.005</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>V1</td>
+      <td>t(10)=2.472</td>
+      <td>p=0.033</td>
+      <td>t(10)=1.359</td>
+      <td>p=0.204</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>V2-3</td>
+      <td>t(10)=4.298</td>
+      <td>p=0.002</td>
+      <td>t(10)=3.089</td>
+      <td>p=0.011</td>
+    </tr>
+  </tbody>
+</table>
+
+_Using 2 (shape parameter: constant, linear) x 2 (ROI: primary, non-primary) linear mixed effects models, we performed the following statistical comparisons in a 'step down procedure':1. Two-dimensional F-test assessing whether the constant or linear parameter (e.g. each averaged across ROIs in auditory resp. visual cortices), was significantly different from zero (dark grey),2. If this two-dimensional F-test was significant, we computed one dimensional F-tests separately for the constant and the linear parameters (again averaged across auditory resp. visual ROIs) (light grey),3. If the one dimensional F-test was significant, we computed follow-up t-tests separately for each of the two ROIs (white).p-values<0.05 are indicated in bold. n = 11._
+
+### Auditory cortices
 
 Auditory stimuli evoked a positive BOLD response in primary auditory cortex and especially in anterior portions of the planum temporale (Figure 2—figure supplements 1B and 3 right). As expected from the typical physiological point spread function of the GE-EPI BOLD signal, the positive BOLD signal increased roughly linearly towards the cortical surface (Markuerkiaga et al., 2016) (Figure 2—figure supplement 1A and Supplementary file 3).
 
@@ -80,7 +447,7 @@ In summary, we observed distinct laminar BOLD response profiles and activation p
 
 Modality-specific attention amplified the mean BOLD-signal within A1 and PT mainly at the cortical surface (i.e. significant linear parameter). Likewise the decoding accuracy was better than chance with a non-significant increase toward the surface.
 
-## Visual cortices
+### Visual cortices
 
 In V1 and V2/3 visual stimuli induced activations that increased toward the cortical surface as expected for GE-EPI BOLD (Markuerkiaga et al., 2016) (Figure 2—figure supplements 1 and 2 left and Supplementary file 1). Contrary to previous research (Chen et al., 2013; Koopmans et al., 2010), we did not observe a more selective increase in activations for layer 4. Potentially, this selective increase in BOLD-response may have been smoothed across multiple layers, because the relative cortical depth of layer four varies between foveal and lateral projections in V1 and our region of interest is larger than those used in previous work (for similar findings see figure 6B in Polimeni et al., 2010 for fMRI and figure 6E in Waehnert et al. (2016) for structural anatomy). Consistent with previous research (Shmuel et al., 2002; Silver et al., 2008; Tootell et al., 1998), the centrally presented visual looming stimuli activated predominantly areas representing the centre of the visual field with response suppressions (i.e. negative BOLD) in adjacent areas (see dashed white lines in Figure 2—figure supplement 1B right). By contrast, auditory deactivations were not confined to the central field that was activated by visual stimuli. Instead, they were particularly pronounced in the rostral part of the calcarine sulcus representing more eccentric positions of the visual field (Figure 2B right and Figure 2—figure supplement 2 right). Furthermore, auditory looming stimuli induced deactivations that increased in absolute magnitude toward the cortical surface (significant constant and linear effect, Table 1). Again as in auditory areas, these auditory deactivations were not significantly modulated by modality-specific attention ([AttV-AttA] for auditory stimuli in V1 and V2/3: F(2,40) = 1.651, p=0.205).
 
@@ -94,7 +461,7 @@ In summary, auditory looming induced widespread deactivations in visual cortices
 
 The current high-resolution 7T fMRI study revealed distinct depth-dependent BOLD response profiles and patterns for multisensory and attentional influences in early sensory cortices.
 
-## Distinct laminar profiles and activation patterns for multisensory and attentional influences in auditory cortices
+### Distinct laminar profiles and activation patterns for multisensory and attentional influences in auditory cortices
 
 Visual looming suppressed activations in auditory cortices (see also [Laurienti et al., 2002; Leitão et al., 2013; Mozolic et al., 2008], but enhanced the response to concurrent auditory looming in posterior auditory cortices (Werner and Noppeney, 2011; Werner and Noppeney, 2010). In other words, intersensory competition for purely visual stimuli turned into cooperative interactions for audiovisual stimuli. While the visual-induced response suppression was constant across cortical depth in A1 and PT, the crossmodal BOLD-response enhancement was observed mainly in the caudal parts of PT, that is in parts of PT where visual influences have previously been shown (Kayser et al., 2007). At a finer spatial resolution, multivariate analyses revealed significant differences between audiovisual and auditory activation patterns across all laminae in both A1 and PT. As shown in the surface projections (see Figure 3B), visual looming enhanced and suppressed auditory responses in adjacent patches consistent with neurophysiological results in non-human primates (Kayser et al., 2008). Critically, as illustrated in the raster plots, the response profile of a vertex to visual stimuli significantly predicted its laminar profile for crossmodal modulation (see Figure 3B right). In A1, vertices whose activations were only weakly suppressed by visual looming in deeper laminae showed a greater visual-induced response enhancement for audiovisual looming again in deeper laminae. These results suggest that visual looming influences activations in A1 mainly in deeper layers with similar patchy topographies in unisensory and audiovisual contexts.
 
@@ -102,7 +469,7 @@ By contrast, modality-specific attention affected auditory and visual evoked res
 
 Critically, however, the laminar profiles for attentional effects were distinct from those for multisensory (i.e. crossmodal) effects in auditory cortices. This dissociation in laminar profiles in the same territories cannot be explained by vascular effects that limit the laminar specificity of the BOLD response, but strongly implies that multisensory and attentional mechanisms regulate information flow in auditory cortices via partly distinct neural circuitries (De Martino et al., 2015a; Lakatos et al., 2009). Further, the constant laminar profiles for crossmodal influences in auditory cortices suggest that visual signals influence auditory cortices mainly via infragranular layers – a finding that converges with a recent neurophysiological study in mouse that likewise highlighted deep layer six as the key locus for visual influences on auditory cortex (Morrill and Hasenstaub, 2018). Anatomical studies in monkeys have previously suggested that visual inputs can influence auditory cortices via three routes (Ghazanfar and Schroeder, 2006; Musacchia and Schroeder, 2009; Schroeder et al., 2003; Smiley and Falchier, 2009): i. thalamic afferents, ii. direct connectivity between sensory areas (Falchier et al., 2002; Rockland and Ojima, 2003) and iii. connections from higher order association cortices.
 
-## Common laminar profiles, but distinct activation patterns for multisensory and attentional influences in visual cortices
+### Common laminar profiles, but distinct activation patterns for multisensory and attentional influences in visual cortices
 
 In visual cortices, visual and auditory stimuli evoked responses that were maximal in absolute amplitude at the cortical surface, yet differed in their activation pattern. Visual looming stimuli induced activations in areas representing the centre of the visual field and deactivations in surrounding areas representing the periphery (Shmuel et al., 2002). In contrast to this visual ‘centre-surround’ pattern, auditory stimuli induced widespread deactivations (Laurienti et al., 2002; Leitão et al., 2013; Mozolic et al., 2008) particularly in peripheral visual field representations known to have denser direct fibre connections to auditory cortices (Falchier et al., 2002; Rockland and Ojima, 2003).
 
@@ -112,11 +479,11 @@ While we observed no statistically significant crossmodal nor attentional effect
 
 The differences in activation patterns for multisensory and attentional influences indicate that the impact of purely auditory looming (Maier et al., 2008; Maier et al., 2004) on visual cortices cannot solely be attributed to a withdrawal of attentional resources from vision. Instead, purely auditory looming may inhibit activations in visual cortices via direct connectivity between auditory and visual areas (Bizley et al., 2007; Budinger et al., 2006; Campi et al., 2010; Falchier et al., 2002; Ibrahim et al., 2016; Rockland and Ojima, 2003). In line with this conjecture, research in rodents has shown that auditory stimuli modulates activity in supragranular layers in primary visual areas via direct connectivity from auditory cortices and translaminar inhibitory circuits – though the studies disagreed in whether layer 5 (Iurilli et al., 2012) or layer 1 (Deneux et al., 2019; Ibrahim et al., 2016) were the primary targets of auditory inputs.
 
-## Multisensory effects in visual and auditory cortices – a comparison
+### Multisensory effects in visual and auditory cortices – a comparison
 
 Our results reveal distinct laminar profiles for multisensory deactivations in auditory and visual cortices. In auditory cortices the visual induced deactivations were constant across laminae, in visual cortices the deactivations linear increased (in absolute magnitude) toward cortical surface. These distinct laminar profiles converge with previous research in rodents that also reveal visual influences in auditory cortices predominantly in infragranular layer (Morrill and Hasenstaub, 2018), but auditory influences in visual cortices mainly in supragranular layers (Deneux et al., 2019; Ibrahim et al., 2016; Iurilli et al., 2012). Potentially, these distinct laminar profiles in auditory and visual cortices may suggest that multisensory influences are mediated by different neural circuitries in auditory and visual cortices. However, the distinct laminar profiles across cortical areas may not only reflect differences in neural circuitries but also in vascular organization. Moreover, a wealth of research has previously shown that multisensory responses profoundly depend on stimulus salience and other input characteristics (Deneux et al., 2019; Meijer et al., 2017; Stein et al., 2020; Werner and Noppeney, 2010). It is currently unclear how these factors influence laminar BOLD-response profiles. Finally, interpreting laminar BOLD-response profiles in relation to previous findings in rodents remains tentative because of cross-species and methodological differences.
 
-## Conclusions
+### Conclusions
 
 Using submillimetre resolution fMRI at 7T, we resolved BOLD response and activation patterns of multisensory and attentional influences across cortical depth in early sensory cortices. In visual cortices auditory stimulation induced widespread inhibition, while attention to vision enhanced central but suppressed peripheral field representations. In auditory cortices, competitive and cooperative multisensory interactions were stronger deep within the cortex, while attentional influences were greatest at the cortical surface. The distinctiveness of these depth-dependent activation profiles and patterns suggests that multisensory and attentional mechanisms control information flow via partly distinct neural circuitries.
 
@@ -124,11 +491,11 @@ Using submillimetre resolution fMRI at 7T, we resolved BOLD response and activat
 
 All procedures were approved by the Ethics Committee of the University of Leipzig.
 
-## Participants
+### Participants
 
 Thirteen healthy German native speakers (6 females; 7 males; mean age: 24.8 years, standard deviation: 1.5 years, range: 22–27 years) gave written informed consent to participate in this fMRI study. Participants reported no history of psychiatric or neurological disorders, and no current use of any psychoactive medications. All had normal or corrected to normal vision and reported normal hearing. Two of those subjects did not complete all fMRI sessions and were therefore not included in the analysis. All procedures were approved by the Ethics Committee of the University of Leipzig.
 
-## Looming stimuli and targets
+### Looming stimuli and targets
 
 The visual looming stimulus (500 ms duration) was a sequence of 1 to 4 radially expanding white annuli (Figure 1B). Each of the four annuli started in the centre of the screen with a diameter of 0.25° visual angle and expanded at a radial speed of 15.52° visual angle per second to a maximum radius of 3.88° visual angle which covered the entire screen visible in the scanner bore along the vertical dimension. During the 500 ms sequence, an additional annulus started in the centre every 125 ms. Given the retinotopic organization of early visual cortices (Wandell et al., 2007) these parameters ensured that visual looming elicited relatively widespread activations in visual cortices.
 
@@ -138,25 +505,25 @@ Audiovisual stimuli were generated by presenting the auditory and visual stimuli
 
 The visual target was a grey dot presented for 50 ms within a circular area that increased over the 500 ms duration consistent with the auditory, visual or audiovisual looming stimulus (Figure 1B). Auditory targets were a single 440 Hz pure tone that lasted for 100 ms. The size of the visual target and the sound amplitude of the auditory target were adjusted in a subject-specific fashion to match the approximate target detection performance across sensory modalities and then held constant across the entire experiment. This was done using the method of constant stimuli in a brief ‘psychometric function experiment’, performed prior to the fMRI study inside the scanner and with scanner noise present.
 
-## Experimental design
+### Experimental design
 
 The experiment conformed to a 3 (stimulus modality: auditory, visual, audiovisual) X 2 (attended modality: auditory, visual) factorial design (Figure 1A). In an intersensory selective attention paradigm, participants were presented with blocks of audio (A), visual (V) or audiovisual (AV) looming stimuli as highly salient stimuli that drive bottom-up attention and elicit crossmodal deactivations (Leitão et al., 2013). Brief auditory (i.e. weak and brief beep) and visual (i.e. small and brief grey dot) targets were presented interspersed in all stimulation blocks irrespective of the sensory modality of the looming stimuli or the focus of modality-specific attention (e.g. A and V targets were presented during a unisensory auditory looming block and auditory attention). The visual grey dot could be presented at any time at any location within the area defined by the radially expanding outermost annulus until they reach a radius of maximal 3.88° visual angle. Likewise, the auditory target is presented at random time interspersed in the looming sound. Consistent with previous research on modality-specific attention (Lakatos et al., 2009; Werner and Noppeney, 2011; Werner and Noppeney, 2010) these additional targets were included to ensure that the effects of attention could not be attributed to top-down effects associated with explicit responses.
 
 During auditory attention (AttA), participants were instructed to respond selectively to all auditory targets and ignore visual ones. During visual attention (AttV) participants were instructed to respond selectively to all visual targets, that is brief grey dots and ignore auditory targets. In this way, we matched the auditory (i.e. attention to frequency) and visual attention (i.e. attention to targets in spatial field) tasks to the tonotopic and retinotopic organizational principles of primary auditory and visual areas as well as the specifics of auditory and visual looming bottom-up salient stimuli.
 
-## Experimental procedures
+### Experimental procedures
 
 Auditory, visual or audiovisual looming stimuli were presented in 33 s blocks of 50 stimuli (stimulus duration: 500 ms, inter-stimuli interval: 160 ms giving a fixed stimulus onset asynchrony of 660 ms with no jitter) (Figure 1B). Activation blocks were preceded by 16 s fixation baseline periods. We opted for a block design as they have the highest design efficiency despite their potential drawbacks from a cognitive perspective (Friston et al., 1999). Throughout the entire experiment, participants fixated a cross (0.16° visual angle) in the centre of the black screen. Therefore, processes related to fixation are present in all conditions (i.e. all stimulation and fixation conditions). The fixation cross was white during the activation conditions and blue during the fixation baseline periods. A blue letter (‘V’ or ‘A’) presented 3 s prior to the activation blocks instructed participants to direct their attention to the visual or auditory modality. During visual attention blocks, participants were instructed to attend generally to the visual modality and respond selectively to visual targets. Conversely, during auditory attention blocks, participants had to attend generally to the auditory modality and respond selectively to auditory targets. Sixteen targets of each modality were presented for each condition. To maintain observer’s attention and minimize the effect of target stimuli on measured stimulus-induced activations, targets were more frequently presented at the end of the block (i.e. two thirds of the blocks included one auditory target and one visual target, the last third of blocks included 2 targets of each type). The final block of each run was followed by a fixation baseline period of 20 s. The order of blocks was pseudo randomized across participants. Each fMRI run included 18 blocks (three blocks for each condition in our 2 × 3 design) and lasted 15 min. There were four runs per participant yielding 12 blocks per condition per participant.
 
-## Experimental set up
+### Experimental set up
 
 Stimuli were presented using Presentation (v17.6, Neurobehavioral system, www.neurobs.com; RRID:SCR_002521) on a PC desktop (Windows XP). Visual stimuli were back-projected onto a plexiglas screen using an LCD projector (60 Hz) visible to the participant through a mirror mounted on the MR head coil. The MR head coil enabled a visual field with a width of 10.35° and height of 7.76° visual angle. Auditory stimuli were presented using MR-compatible headphones (MR-Confon; HP-SI01 adapted for the head-coil). Behavioral responses were collected using a MR-compatible button device connected to the stimulus computer. The code to run the fMRI experiment is available at https://doi.org/10.5281/zenodo.3581316.
 
-## Behavioral data analysis
+### Behavioral data analysis
 
 The response window extended from the target onset and for either 2.5 s or until the beginning of the next target. Any recorded response outside of that window was coded as an extra-response (i.e. to be modeled in the fMRI design matrix). The percentage of auditory (or visual) targets that participants responded to in a particular condition were entered as dependent variables into a 2 (target modality: auditory vs. visual) X 2 (attended modality: auditory vs. visual) X 3 (stimulus block modality: auditory, visual, audio-visual) repeated measures ANOVA (results were corrected for non-sphericity using Greenhouse-Geiser correction). Alpha was set to 0.05. This analysis was done with IBM SPSS Statistics, version 17.0 (IBM, Armonk, NY, USA).
 
-## MRI data acquisition
+### MRI data acquisition
 
 All experiments were performed on a Siemens 7T MAGNETOM MRI scanner (Siemens Healthineers, Erlangen, Germany) equipped with an SC72 gradient coil (Siemens Healthineers). For radio-frequency transmission and reception, a single-channel-transmit/32-channel-receive phased array head coil (Nova Medical, Wilmington, MA) was used. The experiment was run over 2 days with 50 min MRI scanning in total per day per participant.
 
@@ -168,25 +535,25 @@ The acquisition slab was inclined and positioned to include Heschl’s gyri, the
 
 One field-map was acquired on each day with a coverage and orientation matching that of the EPI slab [TR/TE1/TE2 = 1500/6/7.02 ms, flip angle = 72°; 18 axial slices, matrix = 96×90, slice thickness = 2 mm, spatial resolution = 2.00×2.00 X 2.00 mm3 voxels, field of view: FOV = 192×180 mm].
 
-## MRI structural analysis
+### MRI structural analysis
 
 The MRI structural data were processed using the CBS toolbox (v3.0.8, Max Planck Institute for human cognitive and brain science, Leipzig, Germany, www.nitrc.org/projects/cbs-tools/; RRID:SCR_009452) based on the MIPAV software package (v7.0.1, NIH, Bethesda, USA, www.mipav.cit.nih.gov, (McAuliffe et al., 2001); RRID:SCR_007371) and the JIST pipeline environment(v2.0, (Landman et al., 2013; Lucas et al., 2010); RRID:SCR_008887). The T1 map was coregistered to the Montreal's Neurological Institute brain space (rigid body registration and normalized mutual information as a cost function) and resampled to an isometric resolution of 0.4 mm. The image was segmented fully automatically, and the cortical boundary surfaces were reconstructed (Bazin et al., 2014). Between these surfaces, we computed six intracortical surfaces that defined cortical laminae with the equivolume approach (Waehnert et al., 2014) (Figure 1C and Figure 1—figure supplement 2). It is important to note that the term ‘lamina’ used in this communication does not directly refer to cytoarchitectonically defined cortical layers: for example, the variation across cortical regions of the relative thickness between layers was not modelled here (Nieuwenhuys, 2013). However, it should be mentioned that this method provides biologically plausible cortical contours (Waehnert et al., 2014).
 
-## Definition of region of interest
+### Definition of region of interest
 
 We defined four regions of interest (ROI), each combining left and right hemispheres, as follows (see Table S2 for ROI effective sizes):
 
 We obtained >95% coverage for A1, PT and V1 and >82% coverage for V2/3. (For the number of vertices and percentage coverage across subjects, Supplementary file 2).
 
-## fMRI preprocessing
+### fMRI preprocessing
 
 The fMRI data were pre-processed and analyzed using statistical parametric mapping (SPM12 – v6685; Wellcome Center for Neuroimaging, London, UK; www.fil.ion.ucl.ac.uk/spm; RRID:SCR_007037) running on matlab (Mathworks). The fieldmaps were co-registered to the first functional scan of the first run (i.e. rigid-body transformations optimized using normalized mutual information as cost function) and a voxel displacement map was then created. Functional scans from each participant were realigned and unwarped using the first scan as a reference (interpolation: 4th degree b-spline, unwarping done using the voxel displacement map of the corresponding day for each run).
 
-## Functional to anatomical coregistration
+### Functional to anatomical coregistration
 
 We co-registered the mean EPI image to the pre-processed T1 map (i.e. rigid-body transformations optimized using normalised mutual information as cost function). We assessed the accuracy of co-registration using FSLview (FSL 5.0 - Analysis Group, FMRIB, Oxford, UK, https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL; RRID:SCR_002823) by flipping back and forth between the mean EPI and the T1 map images in all the ROIs (see Figure 1—figure supplement 2). If the co-registration was not sufficiently precise, the mean EPI was initially co-registered manually and the co-registration repeated until anatomical structures of the mean EPI and the T1 map were precisely realigned. The transformation matrix of the co-registration was later applied to the beta images from the fMRI general linear model (see fMRI statistical analysis).
 
-## fMRI statistical analysis
+### fMRI statistical analysis
 
 At the first (i.e subject) level, we performed a mass univariate analysis with a linear regression at each voxel, using generalized least squares with a global approximate AR(1) autocorrelation model and a drift fit with discrete cosine transform basis (128 s cut-off). We modelled the fMRI experiment with a mixed block-event related model with regressors entered into the run-specific design matrix after convolving the onsets of each block or event with a canonical hemodynamic response function (HRF) and its temporal derivative. More specifically, we modelled each of the three looming blocks in each run for each of the six conditions in our 3 (visual, auditory, audiovisual) X 2 (auditory vs. visual attention) factorial design separately. Hence for each run the statistical model included the following regressors: 3 block regressors for each of the 6 conditions (A_AttA, A_AttV, V_AttA, V_AttV, AV_AttA, AV_AttV), 4 event-related regressors for each target type under each attention condition (i.e. TargetA_AttA, TargetA_AttV, TargetV_AttA, TargetV_Attv) and one event-related regressor modelling any additional responses that participants produced in the absence of targets. We modelled the targets and additional responses as independent regressors in our first (i.e. subject) level general linear model (GLM) to minimize confounding effects of perceptual decision making, response selection and motor preparation on the activations reported for the A, V, AV looming activation blocks that are the focus of this communication. Nuisance covariates included the realignment parameters to account for residual motion artefacts.
 
@@ -194,7 +561,7 @@ All subsequent analyses included only the beta images pertaining to the HRF of t
 
 To minimize the possibility that attentional lapses reduced the sensitivity of our analysis we also repeated our neuroimaging analysis selectively for blocks that included neither misses (i.e. missed responses to targets of the attended modality) nor false alarms (i.e. responses to targets from the unattended modality). This control analysis basically showed similar results similar to those from the main analysis that is reported in this manuscript.
 
-## Sampling of the BOLD-response along cortical depth
+### Sampling of the BOLD-response along cortical depth
 
 The 72 beta images (6 conditions X 3 blocks per condition per run X 4 runs) were co-registered to the MRI structural by applying the transformation matrix obtained from the mean EPI image co-registration and up-sampled to a 0.4 mm isometric resolution (4th degree b-spline interpolation). Finally, we sampled each beta image along vertices defined by the normal to the mid-cortical surface at the depths defined by the 6 intra-cortical surfaces from the MRI structural analysis (tri-linear interpolation) (see ‘MRI structural analysis’ above, Figure 1C).
 
@@ -202,7 +569,7 @@ In total, the fMRI data were therefore resampled 3 times for: 1. realignment+unw
 
 The activity values at the vertices of these 6 intra-cortical surfaces in our four ROIs (i.e. primary auditory, planum temporale, V1, V2/3) pooled over both hemispheres form the basis for our univariate ROI analysis of the laminar BOLD-response profiles and laminar decoding accuracy profiles (based on multivariate pattern classification).
 
-## Laminar BOLD-response profiles for contrasts of interest
+### Laminar BOLD-response profiles for contrasts of interest
 
 The laminar profiles of each ROI were obtained for each block per run by collapsing data over vertices. For each of our 72 beta images (6 conditions X 3 blocks per condition per run X 4 runs) we summarized the BOLD response at each of the six cortical depth levels in terms of the median of the parameter estimates across all vertices at this cortical depth within a particular ROI (n.b. each ROI pools over both hemispheres). The median was used as a summary index because the parameter estimates distribution was skewed especially for the most superficial laminae.
 
@@ -210,19 +577,19 @@ For each ROI and lamina, we computed the following contrasts of interest indepen
 
 For completeness, we also assessed whether the differences in BOLD-response for the contrasts listed 1 and 2 – in cases when they were significantly different from zero - depended on modality-specific attention (i.e. by testing for the interaction of sensory evoked responses or crossmodal enhancement with modality-specific attention). Moreover, we also show the activations > fixation for auditory or visual stimuli in the Figure 2—figure supplement 1 to confirm that our experimental manipulations were effective.
 
-## Shape parameters for characterization of laminar BOLD response profiles
+### Shape parameters for characterization of laminar BOLD response profiles
 
 The laminar profile of each ROI was then summarized by parameters by collapsing across blocks per runs. For each statistical comparison, lamina and ROI, we thus obtained 12 (i.e. 3 blocks X 4 runs) contrast estimates (as the median over vertices within a bilateral ROI) per subject that is 12 laminar profiles. We refer to those parameter estimates that quantify the BOLD response for a particular lamina as BOLD response parameter estimates. For instance, Figure 2A (first row) shows the. B parameter estimates (across participants mean ± SEM) as a line plot for each of the six laminae as a function of cortical depth along the x-axis.
 
 To characterize the overall shape of the laminar profile, we estimated for each subject a second-level general linear model (i.e. a laminar GLM) that modeled the activation in each lamina in a given ROI as dependent variable by two predictors: 1. a constant term (i.e. activation mean across laminae) and 2. a linear term characterizing a linear increase across laminae (mean-centered and orthogonalized with respect to the constant term). The parameter estimates of this 2nd or laminar GLM are referred to as shape parameters. For instance, Figure 2A (2nd row) shows the S parameter estimates as violin plots for the constant and the linear term. The S-parameters enable us to make inferences about the shape of a laminar BOLD-response profile rather than using an omnibus F-test that assesses whether the BOLD-response differs across any of the six laminae followed by numerous post hoc pairwise comparisons between layers. However, we acknowledge that this characterization makes our inference less specific about locating even the BOLD-response to a particular lamina. Moreover, because the laminar GLM in the current report did not include any higher order (e.g quadratic) terms they would not be to model U-shaped laminar profiles.
 
-## Statistical analysis for the shape parameters at the between subject that is group level
+### Statistical analysis for the shape parameters at the between subject that is group level
 
 To enable generalization to the population, we entered these shape parameters into linear mixed effects models at the group level separately for each contrast. To limit the number of statistical tests we used the following step-down approach:
 
 Based on our a-priori predictions (Leitão et al., 2013) that auditory stimuli induce deactivations in visual areas and that visual stimuli induce deactivations in auditory areas, we employed one-sided t-tests in step 2 and 3 (i.e. negative constant term for contrasts). In all other cases unidirectional F-tests were used. Unless otherwise stated, we report statistical results as significant at p<0.05.
 
-## Multivariate analysis of pattern across vertices and decoding accuracy profiles
+### Multivariate analysis of pattern across vertices and decoding accuracy profiles
 
 Multivariate pattern analyses were performed using a linear support vector classifier (SVC) that was trained in a leave-one-run-out cross-validation scheme (LIBSVM 3.21, https://www.csie.ntu.edu.tw/~cjlin/libsvm/; RRID:SCR_010243, with C = 1 and mean-centred activations for each feature separately for training and test sets).
 
@@ -252,13 +619,13 @@ We also note that the statistical results were basically equivalent without any 
 
 These regression models over vertices and raster plots were used to evaluate whether crossmodal modulation for auditory or visual stimuli in A1, PT, V1 or V2/3 depended on the unisensory visual or auditory response.
 
-## Intersubject registration for surface projection of group results
+### Intersubject registration for surface projection of group results
 
 To visualize patterns of the laminar profile shape parameters (i.e. ‘constant’ or ‘linear’) that are consistent across subjects on the cortical surface, we transformed the individual surface projections into a standardized study group space using a multimodal, multi-contrast surface registration (MMSR) approach (Tardif et al., 2015). The transformation matrix for group normalization was computed for the level-set corresponding to the mid-cortical surface and the high-resolution T1 maps. The T1 map was sampled radially along the cortical profile, averaged between 20% and 80% cortical depth and smoothed tangentially (FWHM = 1.5 mm). To reduce computation time, the level-set and the T1 map data were down-sampled to a resolution of 0.8 mm isotropic. We used a two-stage registration. In the first step, we computed an intermediate mean surface by using the median subject in the study group as the initial target. In the second step, MMSR was repeated using this intermediate mean surface as the new target.
 
 To apply this registration to our fMRI data, we computed the mean beta images for each of our six conditions, sampled them at the depths defined by the six intra-cortical surfaces (trilinear interpolation) and then down-sampled to a resolution of 0.8 mm isotropic. We then used the deformation field resulting from the second stage MMSR to transform those 36 images per subject (six conditions X six depths) into the group surface template space (trilinear interpolation). Mass univariate laminar GLM were then performed in normalized group space and the parameters corresponding to the ‘constant’ and ‘linear’ terms were averaged across subjects for each vertex.
 
-## Materials and data availability
+### Materials and data availability
 
 The raw data of the results presented here are available in a BIDS format upon request (remi.gau@gmail.com). Beta values extracted from our layers/ROIs for each participant as well as the summary data necessary to reproduce our figures have been uploaded as CSV or mat files on the open-science framework (https://osf.io/63dba/). Group average statistical maps are available in an NIDM format from neurovault (https://neurovault.org/collections/5209/).
 

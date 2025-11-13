@@ -32,7 +32,7 @@
 
 ## Abstract
 
-10.7554/eLife.33781.001 Life history strategies for optimizing individual fitness fall on a spectrum between maximizing reproductive efforts and maintaining physical health over time. Strategies across this spectrum are viable and different suites of personality traits evolved to support these strategies. Using data from 538 captive chimpanzees ( Pan troglodytes ) we tested whether any of the dimensions of chimpanzee personality – agreeableness, conscientiousness, dominance, extraversion, neuroticism, and openness – were associated with longevity, an attribute of slow life history strategies that is especially important in primates given their relatively long lives. We found that higher agreeableness was related to longevity in males, with weaker evidence suggesting that higher openness is related to longer life in females. Our results link the literature on human and nonhuman primate survival and suggest that, for males, evolution has favored the protective effects of low aggression and high quality social bonds.
+Life history strategies for optimizing individual fitness fall on a spectrum between maximizing reproductive efforts and maintaining physical health over time. Strategies across this spectrum are viable and different suites of personality traits evolved to support these strategies. Using data from 538 captive chimpanzees (Pan troglodytes) we tested whether any of the dimensions of chimpanzee personality – agreeableness, conscientiousness, dominance, extraversion, neuroticism, and openness – were associated with longevity, an attribute of slow life history strategies that is especially important in primates given their relatively long lives. We found that higher agreeableness was related to longevity in males, with weaker evidence suggesting that higher openness is related to longer life in females. Our results link the literature on human and nonhuman primate survival and suggest that, for males, evolution has favored the protective effects of low aggression and high quality social bonds.
 
 ## Introduction
 
@@ -68,7 +68,7 @@ Finally, among primates, social standing is related to physiological stress resp
 
 ## Results
 
-## Comparing captive and wild chimpanzee mortality
+### Comparing captive and wild chimpanzee mortality
 
 During the follow-up period, 187 chimpanzees died. A Kaplan-Meier plot (Figure 1) shows survival functions for our sample and a wild sample (Bronikowski et al., 2011). Unlike wild chimpanzee populations in which infant mortality is high, captive chimpanzee populations have strikingly reduced infant mortality, live longer, and display accelerated mortality in older ages. These results show that captive chimpanzees benefit from protection against extrinsic sources of mortality, for example shelter from elements and predators, good health care, and abundant food.
 
@@ -76,15 +76,43 @@ During the follow-up period, 187 chimpanzees died. A Kaplan-Meier plot (Figure 1
 
 **Figure 1.:** Lines indicate survival probability of each group over the lifespan. The solid lines represent the captive population used in this study and the dashed line corresponds to a wild group (Bronikowski et al., 2011). The shaded areas indicated the 95% confidence region for reach group.
 
-## Associations between personality and age
+### Associations between personality and age
 
 Inspection of the six chimpanzee personality dimensions (Figure 2), as well as prior studies (King et al., 2008) indicate that personalities change as individuals age, making it possible that an association between personality and longer life might be confounded. This is not necessarily undesirable, as it indicates that personality and lifespan are linked, but to be conservative, we modeled and therefore controlled for potential confounds between age and personality scores. We fitted generalized additive models (GAMs) for each personality dimension, regressing personality ratings on the age at which the individual was rated.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/33781/elife-33781-fig2-v1.jpg)
+
+**Figure 2.:** Each panel shows the personality scores of a specific dimension for all individuals in a scatterplot against age on the left, and on the right with bean plots showing the distribution of scores split by sex (females are on the left, males on the right). Relationships between age and each personality dimensions are illustrated in the figure supplements.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33781/elife-33781-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The carpet and scatter plot present the distribution of observations over which the best fit smoothed regression line is plotted with the 95% confidence region.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/33781/elife-33781-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The carpet and scatter plot present the distribution of observations over which the best fit smoothed regression line is plotted with the 95% confidence region.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/33781/elife-33781-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The carpet and scatter plot present the distribution of observations over which the best fit smoothed regression line is plotted with the 95% confidence region.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/33781/elife-33781-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The carpet and scatter plot present the distribution of observations over which the best fit smoothed regression line is plotted with the 95% confidence region.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/33781/elife-33781-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** The carpet and scatter plot present the distribution of observations over which the best fit smoothed regression line is plotted with the 95% confidence region.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/33781/elife-33781-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** The carpet and scatter plot present the distribution of observations over which the best fit smoothed regression line is plotted with the 95% confidence region.
 
 The GAM regression lines for each model are plotted against the personality data in Figure 2—figure supplements 1 through 6. Curvilinear associations were presented between age and personality for all dimensions except neuroticism, where only a linear relationship was present.
 
 Because personality does change over time, some of the raw personality score variance could be attributed to rating age variance. Alternative, adjusted personality scores were therefore calculated as residuals from the regression function of each GAM. In the subsequent analyses, adjusted scores were fitted as predictors in separate survival models from the raw scores.
 
-## Decision tree survival models
+### Decision tree survival models
 
 We fit decision trees to test whether sex, origin (wild-born or other), or any personality dimensions were related to longevity. A conditional inference survival tree procedurally determined that among males, higher agreeableness was associated with longer survival (Figure 3). Specifically, males with agreeableness scores less than 0.063 standard deviations below the mean were at significantly higher risk than other males (p<0.027). These results held for the age-adjusted agreeableness scores as well.
 
@@ -92,9 +120,144 @@ We fit decision trees to test whether sex, origin (wild-born or other), or any p
 
 **Figure 3.:** Bottom panes indicate the survival curves of and number of chimpanzees in each sub-group. Sub-groups were split based on the growth of the tree and decision criteria are indicated below each node. Splits in numeric variables (e.g. agreeableness) are by standard deviations.
 
-## Weighted parametric hazard regression models
+### Weighted parametric hazard regression models
 
 The association between agreeableness and survival in males was confirmed with parametric hazards modeling: in a AIC weighted model including all covariates and frailty effects, the hazard ratio for males was 0.66 (95% CI: 0.49 – 0.89) per standard deviation increase, and in a model where we adjusted personality scores to control for age, the hazard ratio associated with a standard deviation increase was 0.61 (95% CI: 0.42 – 0.89). In the models of only females, a positive association between openness and survival was also revealed with a hazard ratio of 0.77 (95% CI: 0.59 – 0.99) for unadjusted scores, but the association was not significant when we used the adjusted openness scores. Higher openness in males was not related to living longer nor was higher agreeableness in females (Table 1 presents a full description of the AIC weighted models). For a subset of the sample, more detailed rearing data were available, but survival analyses did not find any association between rearing conditions or origin and longevity (Table S1). A complete description of all survival analyses is available in the supporting information.
+
+**Table 1.**
+ Weighted survival model estimates of personality and demographic variables related to longevity.Values are model averaged parameter estimates and unconditional confidence intervals calculated from estimates shown in Supplementary Table 4.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Unadjusted</th>
+      <th colspan="2">Adjusted for age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Variable</td>
+      <td>Hazard Ratio</td>
+      <td>95% C.I.</td>
+      <td>Hazard Ratio</td>
+      <td>95% C.I.</td>
+    </tr>
+    <tr>
+      <td>Male (n = 216)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wild-born</td>
+      <td>1.40</td>
+      <td>[0.68, 2.90]</td>
+      <td>1.35</td>
+      <td>[0.66, 2.74]</td>
+    </tr>
+    <tr>
+      <td>Agreeableness</td>
+      <td>0.66</td>
+      <td>[0.49, 0.89]</td>
+      <td>0.61</td>
+      <td>[0.42, 0.89]</td>
+    </tr>
+    <tr>
+      <td>Dominance</td>
+      <td>0.98</td>
+      <td>[0.74, 1.29]</td>
+      <td>0.99</td>
+      <td>[0.72, 1.37]</td>
+    </tr>
+    <tr>
+      <td>Extraversion</td>
+      <td>1.04</td>
+      <td>[0.71, 1.51]</td>
+      <td>1.01</td>
+      <td>[0.65, 1.57]</td>
+    </tr>
+    <tr>
+      <td>Conscientiousness</td>
+      <td>1.11</td>
+      <td>[0.78, 1.58]</td>
+      <td>1.19</td>
+      <td>[0.79, 1.81]</td>
+    </tr>
+    <tr>
+      <td>Neuroticism</td>
+      <td>0.91</td>
+      <td>[0.66, 1.25]</td>
+      <td>0.93</td>
+      <td>[0.66, 1.31]</td>
+    </tr>
+    <tr>
+      <td>Openness</td>
+      <td>1.09</td>
+      <td>[0.76, 1.55]</td>
+      <td>1.06</td>
+      <td>[0.78, 1.46]</td>
+    </tr>
+    <tr>
+      <td>Female (n = 322)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wild-born</td>
+      <td>1.16</td>
+      <td>[0.72, 1.85]</td>
+      <td>1.17</td>
+      <td>[0.73, 1.87]</td>
+    </tr>
+    <tr>
+      <td>Agreeableness</td>
+      <td>1.12</td>
+      <td>[0.83, 1.50]</td>
+      <td>1.24</td>
+      <td>[0.84, 1.82]</td>
+    </tr>
+    <tr>
+      <td>Dominance</td>
+      <td>1.04</td>
+      <td>[0.83, 1.30]</td>
+      <td>1.05</td>
+      <td>[0.82, 1.35]</td>
+    </tr>
+    <tr>
+      <td>Extraversion</td>
+      <td>1.15</td>
+      <td>[0.80, 1.67]</td>
+      <td>1.02</td>
+      <td>[0.66, 1.57]</td>
+    </tr>
+    <tr>
+      <td>Conscientiousness</td>
+      <td>1.01</td>
+      <td>[0.76, 1.34]</td>
+      <td>0.98</td>
+      <td>[0.70, 1.38]</td>
+    </tr>
+    <tr>
+      <td>Neuroticism</td>
+      <td>0.93</td>
+      <td>[0.73, 1.17]</td>
+      <td>0.93</td>
+      <td>[0.72, 1.19]</td>
+    </tr>
+    <tr>
+      <td>Openness</td>
+      <td>0.77</td>
+      <td>[0.59, 0.99]</td>
+      <td>0.82</td>
+      <td>[0.66, 1.02]</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -118,7 +281,7 @@ The present study is a reminder of the complex, multifaceted nature of personali
 
 ## Materials and methods
 
-## Sample and experimental design
+### Sample and experimental design
 
 All research reported in this study was non-invasive. The research complied with the regulations and guidelines prescribed by The University of Edinburgh and the participating zoos, research institutes, and sanctuaries.
 
@@ -126,17 +289,17 @@ All research reported in this study was non-invasive. The research complied with
 
 Vital status was recorded throughout 2016 and 2017, yielding follow-up times ranging from 7 to 24 years, which is approximately equivalent to 10 to 36 human years (Napier and Napier, 1967). A total of 187 chimpanzees died during the follow-up period. As is standard in studies that seek to identify mortality risk factors, our analytic approach treated the remaining 353 chimpanzees as right-censored at the date that mortality data were gathered for that group. 336 individuals were known to be alive at the time of data collection, and 17 individuals were lost to follow-up and censored at the date of their last known record. All records were also left-truncated, beginning each record at the age at which the individual was assessed for personality.
 
-## Personality assessments
+### Personality assessments
 
 Fifty-four items comprising a trait name, for example ‘Fearful’ and a one to three sentence behavioral description, for example 'Subject reacts excessively to real or imagined threats by displaying behaviors such as screaming, grimacing, running away or other signs of anxiety or distress.’ were developed to assess the personalities of the chimpanzees (King and Figueredo, 1997; Weiss et al., 2009), Between 1993 and 2005, 43 of these items were used to assess the personalities of chimpanzees in the American zoos, the Taronga Zoo, and chimpanzees living at the Yerkes National Primate Research Center (King and Figueredo, 1997; Weiss et al., 2007). Starting in 2007, all 54 items were used to assess the personality of the chimpanzees living in Japan (Weiss et al., 2009), the Netherlands (Herrelko, 2011), and at the Edinburgh Zoo (Herrelko et al., 2012). The distributions of all six chimpanzee personality dimensions split by sex are shown in Figure 2.
 
 The personalities of the chimpanzees in this study were assessed via ratings on these items by multiple keepers and researchers who knew the individual chimpanzees, sometimes for decades (King and Figueredo, 1997; Weiss et al., 2009; Weiss et al., 2007). In addition to showing that the interrater reliabilities are comparable to those found in human studies of personality, previous studies have shown that chimpanzee personality, measured this way, yields measures that are more reliable than behavioral codings (Vazire et al., 2007), that are heritable (Weiss et al., 2000; Wilson et al., 2017; Latzman et al., 2015a) and stable over time (King et al., 2008), and that generalize across samples (Weiss et al., 2009; Weiss et al., 2007; King et al., 2005), and are not adversely affected by anthropomorphic attributions on the part of raters (Weiss et al., 2012), Finally, these measures have been related to observed behaviors (Pederson et al., 2005), differences in brain morphology (Latzman et al., 2015b; Blatchley and Hopkins, 2010), and genetic polymorphisms (Wilson et al., 2017; Hong et al., 2011; Hopkins et al., 2012).
 
-## Generalized additive models
+### Generalized additive models
 
 To adjust for confounding in the personality variables brought on by changes with age, we fit GAMs modeling the relationship between age at assessment and each personality variable (Wood, 2006). GAMs are an extension to linear models that allow the input data to ‘suggest’ non-linearities (Hastie, 2017) as opposed to requiring researchers to manually specify them, by, for example, adding a quadratic term to a model formula. To avoid overfitting, non-parametric transformations penalize roughness in the transformation function creating terms aptly called ‘smooths’ (Faraway, 2016). For our smooths, we used thin plate regression splines with a basis dimension (k) of 20. The basis dimension was verified as being acceptable using internal package functions; varying k did not alter any model fits. GAMs are difficult to interpret mathematically, but visually intuitive, so each GAM is described by its line of best fit, drawn in Figure 2—figure supplements 1 through 6. GAMs generate residuals like other regression models, thus, bivariate GAMs are a powerful method for identifying and controlling for the effects of confounders (Benedetti and Abrahamowicz, 2004).
 
-## Survival analyses
+### Survival analyses
 
 To be conservative, our survival models included all six personality scores. We also included sex and origin (whether the individual was born in the wild or not) as controls.
 

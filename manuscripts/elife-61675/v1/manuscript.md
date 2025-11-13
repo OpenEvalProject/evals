@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Vector-borne illnesses comprise a significant portion of human maladies, representing 17% of global infections. Transmission of vector-borne pathogens to mammals primarily occurs by hematophagous arthropods. It is speculated that blood may provide a unique environment that aids in the replication and pathogenesis of these microbes. Lipids and their derivatives are one component enriched in blood and are essential for microbial survival. For instance, the malarial parasite Plasmodium falciparum and the Lyme disease spirochete Borrelia burgdorferi , among others, have been shown to scavenge and manipulate host lipids for structural support, metabolism, replication, immune evasion, and disease severity. In this Review , we will explore the importance of lipid hijacking for the growth and persistence of these microbes in both mammalian hosts and arthropod vectors.
+Vector-borne illnesses comprise a significant portion of human maladies, representing 17% of global infections. Transmission of vector-borne pathogens to mammals primarily occurs by hematophagous arthropods. It is speculated that blood may provide a unique environment that aids in the replication and pathogenesis of these microbes. Lipids and their derivatives are one component enriched in blood and are essential for microbial survival. For instance, the malarial parasite Plasmodium falciparum and the Lyme disease spirochete Borrelia burgdorferi, among others, have been shown to scavenge and manipulate host lipids for structural support, metabolism, replication, immune evasion, and disease severity. In this Review, we will explore the importance of lipid hijacking for the growth and persistence of these microbes in both mammalian hosts and arthropod vectors.
 
 ## Shared resource utilization by diverse organisms
 
@@ -55,7 +55,7 @@ Membrane formation is a critical step in microbial proliferation. Microbes are g
 
 **Figure 3.:** Certain pathogens can obtain nutrients directly from their environment and may not require host cell invasion for lipid uptake. (A) Borrelia spp. are extracellular bacteria and acquire lipids directly from mammalian cells and the blood. B. burgdorferi also organizes its membrane into eukaryotic-like lipid rafts. (B) Trypanosoma brucei is extracellular in both mammalian and arthropod hosts. These parasites acquire various lipids from the blood and can synthesize their own fatty acids using the type II fatty acid synthase system (FASII) and the microsomal elongase pathway when resources are restricted. In the tsetse fly, the enzyme acetyl coenzyme A carboxylase (ACC) regulates the microsomal elongase pathway based on lipid abundance. (C) Trypanosoma cruzi is extracellular in its trypomastigote and epimastigote forms. Within the triatomine, epimastigotes acquire various lipids from the blood meal. Additional lipids function as signaling molecules and promote the differentiation from epimastigotes into metacyclic trypomastigotes. At this stage, metacyclic trypomastigotes may be deposited in the skin of a mammal before invading cells to become amastigotes. Intracellular amastigotes transform into trypomastigotes, burst out of host cells, and enter the bloodstream. PC = phosphatidylcholine, PG = phosphatidylglycerol, HDL = high density lipoprotein, LDL = low density lipoprotein, LPL = lysophospholipid, TAG = triacylglycerol, SM = sphingomyelin, PL = phospholipid, LPC = lysophosphatidylcholine, OA = oleic acid.
 
-## Borrelia
+### Borrelia
 
 Borrelia is a genus of tick-borne, extracellular spirochetes that includes B. burgdorferi, the causative agent of Lyme disease. They are loosely considered ‘Gram-negative’ bacteria; yet, their membranes lack characteristic Gram-negative features such as lipopolysaccharide (LPS) and diaminopimelic acid in their peptidoglycan layer (Yanagihara et al., 1984; Takayama et al., 1987). Instead, Borrelia spp. use phospholipids, cholesterols and lipoproteins for structural support of their bacterial envelope (Brandt et al., 1990; Belisle et al., 1994; Toledo and Benach, 2015). The incorporation of host lipids is strongly tied to their unique membrane formation. In this Review, we will refer to studies on Lyme disease-causing Borrelia, also known as the B. burgdorferi sensu lato complex.
 
@@ -63,7 +63,7 @@ B. burgdorferi is capable of phospholipid synthesis and predominantly incorporat
 
 Bacteria cannot synthesize cholesterol. However, Borrelia are one of a few bacterial species that integrate host cholesterol into their membranes (Toledo and Benach, 2015; Figure 3A). In mammals, B. burgdorferi scavenges cholesterol directly from the plasma membranes of host cells (Crowley et al., 2013). It may also acquire cholesterol from the blood meal, as ticks fed on mice infected with Borrelia spp. display dysregulated cholesterol levels compared to uninfected controls (Hoxmeier et al., 2017). Uniquely, B. burgdorferi organizes cholesterol and cholesterol glycolipids into eukaryotic-like lipid rafts on their inner or outer membranes (LaRocca et al., 2010; Toledo et al., 2018). Inner and outer membrane lipid rafts appear to be distinct from each other. For example, outer membrane rafts contain well-defined lipoproteins involved in colonization, such as the outer membrane proteins (Osp) A and B, while inner membrane rafts possess proteins with signaling and transport functions, including ATP-binding cassette transporters (Toledo et al., 2014; Toledo et al., 2018). OspA and OspB were also shown to selectively associate with cholesterol glycolipids found in lipid rafts, while the lipoprotein OspC did not, suggesting the specificity of their interactions contributes to lipid raft composition (Toledo et al., 2014; Toledo et al., 2015b). Thus, these bacteria rely on host lipids for membrane organization, structure, and survival.
 
-## Trypanosomatida
+### Trypanosomatida
 
 Trypanosomatids, which include Trypanosoma cruzi, Trypanosoma brucei, and Leishmania spp., are single-cell flagellated parasites that cause a high burden of disease in developing countries. T. cruzi and T. brucei are the etiological agents of Chagas disease and African sleeping sickness respectively, while Leishmania spp. cause leishmaniasis (Field et al., 2017). T. cruzi and Leishmania spp. are extracellular in the arthropod vector and transmitted to mammals in their trypomastigote (T. cruzi) or promastigote (Leishmania) forms. These parasites will then infect mammalian cells and undergo intracellular stages. Conversely, T. brucei is an exclusively extracellular parasite. Trypanosomatids have developed different strategies to survive under dynamic physiological conditions, including fluctuations in available lipids during their life cycles (Lukeš et al., 2018; Landfear and Zilberstein, 2019; Figure 3B and C).
 
@@ -87,7 +87,66 @@ Additional lipid receptors, including phosphatidylserine (PS) receptors, play im
 
 Intracellular pathogens require resources and machinery to survive in host cells. These microbes often have reduced genomes through evolutionary selection and cannot synthesize necessary products on their own, including lipids required for membrane formation. Thus, pathogens hijack host enzymes and biosynthesis pathways to promote replication and growth (Table 1). The dual host environment requires vector-borne pathogens to rewire both arthropod and mammalian metabolism. How intracellular arthropod-borne infections utilize host lipids to promote growth is discussed below.
 
-## Bacteria
+**Table 1.**
+ Lipid hijacking by intracellular arthropod-borne pathogens.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Microbe</td>
+      <td>Anaplasma and Ehrlichia</td>
+      <td>Flaviviruses</td>
+      <td>Alphaviruses</td>
+    </tr>
+    <tr>
+      <td>Vector</td>
+      <td>• Accumulation of lipid transport and absorption proteins from the blood meal in the vector (Villar et al., 2016)</td>
+      <td>• Increase phospholipid and sphingolipid synthesis (Perera et al., 2012; Melo et al., 2016; Chotiwan et al., 2018; Vial et al., 2019) • Replication occur on ER; form replication vesicles but not convoluted membranes (Junjhon et al., 2014) • Increase aminophospholipid concentrations by regulating AGPAT1 expression in mosquito cells (DENV) (Vial et al., 2019) • Maintain cholesterol levels in mosquito cells by downregulating LRP-1 (DENV) (Tree et al., 2019) • Increase lipid droplets in the cell (Barletta et al., 2016)</td>
+      <td>• Increase lipid droplets in the cell (Barletta et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Mammal</td>
+      <td>• Accumulate cholesterol in membranes, elevate cellular cholesterol levels and traffic cholesterol to inclusions using flotillins and NPC1-bearing vesicles (A. phagocytophilum) (Xiong et al., 2009; Xiong and Rikihisa, 2012; Xiong et al., 2019) • Manipulate glycerolipid synthesis (A. phagocytophilum) (POPG, PODAG, MPPC) (Shaw et al., 2017) • Recruit membrane phospholipids to bacterial vacuoles (E. chaffeensis) (Lin et al., 2020)</td>
+      <td>• Viral replication curves the ER lipid bilayer into vesicles and convoluted membranes (Leier et al., 2018) • Increase sphingolipid synthesis and require ceramide for replication vesicles (WNV, ZIKV) (Martín-Acebes et al., 2014; Leier et al., 2020) • Recruit host fatty acid synthase to replication sites for fatty acid synthesis (DENV) (Heaton et al., 2010) • Increase intracellular cholesterol levels (DENV, WNV), induce cholesterol accumulation at the ER (DENV, WNV), and bring in HMGCR to replication sites for cholesterol synthesis (DENV) (Mackenzie et al., 2007; Rothwell et al., 2009; Soto-Acosta et al., 2013; Soto-Acosta et al., 2017) • Interact with lipid droplets on the ER for assembly (DENV) (Samsa et al., 2009) • Lipid droplets are consumed/reabsorbed by the ER for fatty acids and energy (DENV) (Heaton and Randall, 2010; Peña and Harris, 2012; Zhang et al., 2018)</td>
+      <td>• Require intracellular cholesterol transport (CHIKV) (Wichit et al., 2017) • Nonstructural proteins colocalize with lipid droplets (Remenyi et al., 2017) • Use Akt pathway to drive fatty acid synthesis (SFV) (Mazzon et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>Microbe</td>
+      <td>Plasmodium</td>
+      <td>Babesia</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vector</td>
+      <td>Oocysts: • Acquires lipids through lipophorin (Atella et al., 2009; Costa et al., 2018) • Availability of lipophorin-transported lipids impacts growth in the mosquito and infectivity, virulence, quantity, and metabolism of sporozoites (Costa et al., 2018; Werling et al., 2019)</td>
+      <td>Unknown</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mammal</td>
+      <td>Liver stage: • Scavenges PC and extracellular and intracellularly synthesized cholesterol (Labaied et al., 2011; Itoe et al., 2014) • Promotes host lipid biosynthesis by inhibiting AMPK pathway (Kluck et al., 2019) • Uses parasite fatty acid synthesis (FAS) II pathway in late liver stage (Yu et al., 2008; Vaughan et al., 2009) Blood stage: • Scavenges fatty acids, choline, ethanolamine, and serine from blood to synthesize phospholipids (PC, PE) (Mikkelsen et al., 1988; Wein et al., 2018; Tanaka et al., 2019) • Uses host Kennedy and PMT pathways to synthesize phospholipids (Ancelin and Vial, 1989; Pessi et al., 2004) • Upregulates triacylglycerol, diacylglycerol, PG, etc. (Gulati et al., 2015) Sexual stages: • PMT pathway is required for making gametocytes (Bobenchik et al., 2013) • Availability of polyunsaturated fatty acids and downregulation of lysophospholipids in the blood triggers gametocytogenesis (Brancucci et al., 2017; Tanaka et al., 2019) • Gametocytes have decreased phospholipids, increased ceramides and sphingolipids (Gulati et al., 2015)</td>
+      <td>• Causes low HDL levels in patients (Cunha et al., 2000; Bock et al., 2017) • Causes low HDL levels in canines and cattle (Goodger et al., 1990; Milanović et al., 2019) • Synthesizes PC in the blood stage (Florin-Christensen et al., 2000)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Microbe</td>
+      <td>Leishmania*</td>
+      <td>Trypanosoma cruzi*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mammal</td>
+      <td>• Increases lipid concentrations by regulating expression of lipid metabolism genes (Osorio y Fortéa et al., 2009; Rabhi et al., 2012; Semini et al., 2017) • Sequesters cholesterol in parasitophorous vacuoles and incorporates it in membranes; retains cholesterol using host V-ATPases (Tewary et al., 2006; Semini et al., 2017; Pessoa et al., 2019) • Induces lipid body formation (Rabhi et al., 2016) • Scavenges phospholipids and sphingolipids to make parasite-specific lipids, e.g. the sphingolipid inositol phosphorylceramide (Winter et al., 1994; Henriques et al., 2003; Zhang et al., 2005) • Contains increased cholesterol and free fatty acids, decreased ergosterol and triglycerides (Bouazizi-Ben Messaoud et al., 2017)</td>
+      <td>• Scavenges long chain fatty acids from pools of triacylglycerols for membranes (Gazos-Lopes et al., 2017) • Upregulates levels of cholesterol and LDL (Johndrow et al., 2014) • Requires host fatty acid oxidation for parasite growth (Caradonna et al., 2013; Li et al., 2016) • Induces lipid body formation (D'Avila et al., 2011)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Extracellular stages in the vector._
+
+### Bacteria
 
 The intracellular tick-borne bacteria A. phagocytophilum and E. chaffeensis interact with host lipids for replication. Following invasion, infectious bacteria, termed dense-core cells, establish a niche within host vacuoles. Then, these bacteria convert into a non-infectious, replicative form (reticulate cells) and undergo rapid division. Intracellular bacteria must traffic host resources and components, including lipids, to their replicative niche (Table 1). The replicating bacteria form morulae in the cell, convert back into their infectious dense-core form, and eventually are released by exocytosis or lysis (McClure et al., 2017).
 
@@ -97,7 +156,7 @@ Moreover, these bacteria manipulate host glycerolipid synthesis for proliferatio
 
 The role of lipid metabolism in the vector, Ixodes scapularis, is less understood. Lipid transport and absorption proteins from the blood meal may accumulate in tick midguts infected with A. phagocytophilum implicating a role for lipid utilization in the arthropod (Villar et al., 2016). To date, changes in tick lipid metabolism have only been observed during fungal and B. burgdorferi infection (Hoxmeier et al., 2017; Sá et al., 2018). Whether mechanisms of lipid utilization by intracellular bacteria are conserved during tick colonization remains to be studied.
 
-## Viruses
+### Viruses
 
 The lifecycle of many flaviviruses are intimately tied to host lipids and aid in their replication and assembly (Leier et al., 2018; Table 1). Following cellular entry, these viruses uncoat and release their genome into the cytoplasm. The genome is translated into a polyprotein and cleaved into components that mediate replication. These viral proteins will then curve mammalian ER lipid bilayers into unique subcellular structures such as convoluted membranes and vesicles where viral replication occurs (Welsch et al., 2009; Gillespie et al., 2010; Cortese et al., 2017). Assembled virions bud off from the ER and undergo additional steps in the Golgi.
 
@@ -111,9 +170,9 @@ While not as abundantly studied as the flaviviruses, the alphaviruses display so
 
 An emerging field of arbovirus research explores their interactions with the mosquito vector. Insects are cholesterol auxotrophs; therefore, mosquito-borne viruses must co-opt different processes to obtain lipids in the vector. To maintain intracellular cholesterol, DENV downregulates expression of the low-density lipoprotein receptor-related protein 1 (LRP-1), a protein involved in cholesterol export that facilitates viral replication in mosquitoes (Tree et al., 2019). Interestingly, while the induction of DENV replication vesicles is conserved between mammals and mosquitoes, infected mosquito cells do not display convoluted ER membranes, possibly due to the lack of cholesterol synthesis (Junjhon et al., 2014). Instead, flaviviruses alter the lipidome of Aedes mosquitoes by increasing phospholipid and sphingolipid synthesis, likely for their replication and membrane formation (Perera et al., 2012; Melo et al., 2016; Chotiwan et al., 2018; Vial et al., 2019). DENV accomplishes this by regulating expression of acylglycerolphosphate acyltransferase (AGPAT1), which increases phospholipid concentrations and promotes infectivity (Vial et al., 2019). Finally, the interactions between arboviruses and LDs appear to be conserved, as both flaviviruses and alphaviruses induce their formation in mosquitoes (Barletta et al., 2016). Mosquito LD biogenesis was shown to be a direct result of immune activation; however, whether these viruses require mosquito LDs is unclear (Barletta et al., 2016).
 
-## Parasites
+### Parasites
 
-## Apicomplexa
+#### Apicomplexa
 
 The Apicomplexa are a phylum of intracellular protozoans. These parasites are named after the presence of an apicoplast, a unique organelle that aids in parasite metabolism (Vaughan et al., 2009). Two families of vector-borne apicomplexans are Plasmodium and Babesia spp., which are transmitted by mosquitoes and ticks, respectively.
 
@@ -127,7 +186,7 @@ Following the sexual stages, Plasmodium gametocytes are taken up by Anopheles mo
 
 Babesia parasites infect several mammalian hosts and replicate in erythrocytes. Compared to Plasmodium, there is less known about Babesia pathogenesis. However, patients infected with Babesia display lipid abnormalities and markedly low HDL levels, suggesting these parasites depend on host lipid metabolism as well (Cunha et al., 2000; Bock et al., 2017; Table 1). Similar abnormalities have been observed in Babesia-infected cattle and canines (Goodger et al., 1990; Milanović et al., 2019). These parasites have been demonstrated to rewire lipid biosynthesis to produce PC during the blood stage, much like Plasmodium (Florin-Christensen et al., 2000). Similar to other tick-borne infections, their interactions with lipids in the tick remain unknown.
 
-## Trypanosomatida
+#### Trypanosomatida
 
 T. cruzi and Leishmania spp. have intracellular stages in the mammalian host. Following transmission by its vector, Leishmania promastigotes infect macrophages and differentiate into obligate intracellular amastigotes within phagolysosomes (Loría-Cervera and Andrade-Narvaez, 2020). T. cruzi trypomastigotes also infect mammalian cells and develop into intracellular amastigotes; conversely, they replicate predominantly in the cytosol and can infect a variety of tissues, including muscle and adipose tissue (Lewis and Kelly, 2016). Trypanosomatids may synthesize many of their necessary lipids de novo, including fatty acids, sphingolipids, and phospholipids (Zhang and Beverley, 2010). However, their intracellular forms require lipid salvaging mechanisms (Table 1).
 
@@ -145,7 +204,7 @@ The mammalian and arthropod immune systems have evolved mechanisms to recognize 
 
 **Figure 4.:** (A) Microbial lipids: Borrelia spp. use lipoproteins and other surface lipids to evade immunity and promote disease in humans. Borrelia possess various lipoproteins that inhibit the complement system in the blood. Additionally, antibodies are generated during Borrelia infection that promote anti-phospholipid syndrome, an autoimmune condition that targets phospholipids. Leishmania spp. contain the surface molecule lipophosphoglycan (LPG), which prevents the maturation of the phagosome. (B) Host lipids and metabolism: West Nile Virus (WNV) redistributes cholesterol from the plasma membrane to replication sites at the ER. This phenomenon disrupts lipid rafts, which downregulates JAK/STAT activation and antiviral responses. (C) Surface lipid receptors: Erythrocytes infected with Plasmodium engage the lipid receptor CD36. Infected erythrocytes bind CD36 on endothelial cells and promote cytoadherence, which may lead to severe complications (e.g. cerebral malaria). Flaviviruses and arboviruses have been shown to engage the phosphatidylserine (PS) receptors TIM and TAM. These receptors have known immunosuppressive functions. Engagement of TAM, specifically, has been shown to inhibit type I interferon signaling during infection with other enveloped viruses. (D) Lipid signaling molecules: Eicosanoids, such as prostaglandins and leukotrienes, are formed by the cleavage of arachidonic acid. Eicosanoids may have immunomodulatory roles during trypanosomatid infections. Prostaglandin E2 (PGE2), for example, promotes parasite viability and may be immunosuppressive. Conversely, leukotriene B4 (LTB4) is proinflammatory and recruits neutrophils.
 
-## Bacteria
+### Bacteria
 
 The reliance of host lipids by arthropod-borne bacteria is both critical to pathogen survival and intertwined with evasion mechanisms. Borrelia spp. possess an arsenal of lipoproteins that aid in mammalian persistence (Christodoulides et al., 2017). Borrelia lipoproteins are immunogenic and must be tightly regulated by environmental cues, including temperature, CO2 levels and immune pressure (Brandt et al., 1990; Schwan et al., 1995; Liang et al., 2004; Hyde et al., 2007; Wilder et al., 2016). Borrelia lipoproteins are known to undergo antigenic variation in mammalian hosts, specifically the variable major protein (VMP)-like sequence (Vls) E (Zhang et al., 1997; Zhang and Norris, 1998). This variation in VlsE is critical for reinfection with Borrelia and error-prone repair mechanisms during recombination contribute to this process (Rogovskyy and Bankhead, 2013; Verhey et al., 2018).
 
@@ -153,21 +212,21 @@ Borrelia lipoproteins can directly influence immune recognition and activation. 
 
 In addition to evasion, the relationship between tick-borne bacteria and host lipids can contribute to severe disease in humans. During an immune response, antibodies are produced to neutralize the microbes. The generation of antibodies to Borrelia lipids may contribute to severe pathologies during Lyme disease (Figure 4A). It was demonstrated that a significant portion of Lyme disease patients possess autoantibodies to apolipoprotein B-100 or annexin 2, which is a common determinant in the autoimmune disorder anti-phospholipid syndrome (Crowley et al., 2015; Pianta et al., 2015). Additionally, severe outcomes during Lyme disease may be associated with host metabolism. Patients with early disseminated Lyme disease have more pronounced metabolic signatures than those with early localized Lyme disease (Fitzgerald et al., 2020). One such metabolic signature is the differential production of eicosanoids that correlate with symptoms such as Lyme arthritis (Blaho et al., 2009; Fitzgerald et al., 2020). The shared requirement of cholesterol by Borrelia and Anaplasma spp. may influence their pathogenicity, as hypercholesterolemia and high-cholesterol diet were shown to promote Borrelia and Anaplasma infection, respectively (Xiong et al., 2007; Toledo et al., 2015a). Therefore, it can be speculated that additional shared mechanisms involving host lipids may lead to severe outcomes in disease during tick-borne infections.
 
-## Viruses
+### Viruses
 
 The innate immune system promotes viral elimination through interferon signaling. Because arboviruses can expertly manipulate lipid metabolism, this can be used to thwart immunity. For example, the mammalian JAK/STAT pathway is activated by interferon and regulates antiviral responses and lipid metabolism (Xu et al., 2013). During WNV infection, cholesterol is redistributed from the plasma membrane to viral replication sites. This redistribution was demonstrated to disrupt lipid rafts and diminish JAK/STAT activation, which could then be restored by the addition of exogenous cholesterol (Mackenzie et al., 2007; Figure 4B). In the vector, the JAK/STAT pathway may also regulate lipid metabolism. Mosquitoes with constitutively active JAK/STAT signaling display resistance to DENV and downregulated expression of lipid metabolism genes, such as those involved in cholesterol transport (Jupatanakul et al., 2017). Therefore, it is conceivable that flaviviruses may use lipids to counteract these immune pathways in the mosquito. The interplay between cellular lipids and immune activation may also contribute to disease severity, as low LDL levels are associated with severe outcomes in patients infected with DENV (Biswas et al., 2015).
 
 Arboviruses may mitigate immune responses prior to viral entry. The PS receptors TIM and TAM mediate both the removal of apoptotic cells and immunosuppressive responses (Szondy et al., 2017). Flaviviruses and alphaviruses have been shown to utilize TIM and TAM receptors for viral entry and TIM receptors for replication (Meertens et al., 2012; Jemielity et al., 2013). Notably, engagement of TAM receptors with enveloped viruses was shown to dampen innate immune responses by inhibiting type I interferon signaling (Bhattacharyya et al., 2013; Figure 4C). Thus, it is plausible that PS on flavivirus and alphavirus envelopes contributes to innate immune inactivation and evasion.
 
-## Parasites
+### Parasites
 
-## Apicomplexa
+#### Apicomplexa
 
 Plasmodium spp. primarily use protein antigens to evade host immunity. However, these parasites utilize host lipid receptors to invade other tissues and promote disease severity. One of the most defined mechanisms of host-Plasmodium interaction is with CD36, an evolutionarily conserved lipid scavenger receptor and transporter (Hsieh et al., 2016). CD36 contributes to apoptotic cell clearance, pathogen recognition and uptake of host lipids, including the potentially harmful form of cholesterol, oxidized LDL (oxLDL) (Febbraio et al., 2001). During Plasmodium infection, oxLDL is responsible for the phagocytosis of infected red blood cells (iRBCs), regulation of inflammatory responses and induction of cellular immunity by phagocytic immune cells (Serghides and Kain, 2001; Gowda et al., 2013; Thylur et al., 2017). However, CD36 has been implicated as a determinant of severe malarial infection (Figure 4C). Endothelial CD36 binds domains of the Plasmodium falciparum erythrocyte membrane protein 1 (PfEMP1) with high affinity, tethering iRBCs to the endothelium in a phenomenon called cytoadherence (Barnwell et al., 1989; Hsieh et al., 2016). Sequestration of iRBCs to the endothelium promotes parasite survival, potentially by preventing splenic clearance, and is tied to severe pathologies such as cerebral malaria (Fonager et al., 2012). In the mosquito vector, the CD36 ortholog Croquemort may also be involved in parasite recognition although this relationship is not explicitly defined (González-Lázaro et al., 2009).
 
 In terms of disease severity, lipidomics has been used to distinguish clinical manifestations of malaria, including acute and chronic disease (Cordy et al., 2019). Susceptibility to severe malaria is correlated with decreased levels of eicosanoids, such as prostaglandin E2 (PGE2) in both P. falciparum- and P. vivax-infected patients (Perkins et al., 2001; Abreu-Filho et al., 2019). Studies from P. vivax-infected patients also reveal that parasitemia is significantly associated with metabolites involved in lipid metabolism, an observation that may be tied to their intracellular growth (Gardinassi et al., 2017). Conversely, in a study observing factors associated with pre-existing P. vivax immunity, semi-immune subjects exhibit increased levels of linoleate metabolites compared to naive subjects (Gardinassi et al., 2018). The ability of an infected individual to respond to malaria treatment may also be tied to host lipids, where patients with lower levels of baseline glycerophosphocholines were more likely to develop chloroquine-resistant malaria after infection (Uppal et al., 2017). Together, the relationship between clinical presentation and host lipidomics allows for the use of lipid biomarkers in patients with malaria.
 
-## Trypanosomatida
+#### Trypanosomatida
 
 Trypanosomatids use membrane components and parasite lipids to evade the immune response. Leishmania promastigotes contain lipophosphoglycan (LPG), a critical virulence factor and lipid-containing polysaccharide (Späth et al., 2003). LPG has been well characterized for its role in inhibiting phagosome maturation and establishing infection in macrophages (Desjardins and Descoteaux, 1997; Moradin and Descoteaux, 2012; Figure 4A). In the vector, LPG facilitates arthropod colonization. This membrane component is critical for midgut attachment and protection from hydrolytic enzymes in the sand fly (Sacks et al., 2000; Kamhawi et al., 2004; Kamhawi, 2006; Myskova et al., 2007; Jecna et al., 2013). Other lipids have been implicated in Leishmania immune evasion as well. For example, infective parasites express higher levels of polyunsaturated fatty acid metabolites and may promote the differentiation of macrophages into a less inflammatory phenotype, known as the M2 phenotype (Paloque et al., 2019). These M2 macrophages produce high levels of pro-resolving bioactive lipids to facilitate parasite survival and proliferation (Paloque et al., 2019). For T. cruzi, these parasites possess membrane lipids that may be involved in the induction of severe disease. It was demonstrated that T. cruzi glycolipids activate a specific γδ-T cell population associated with cardiomyopathy, a severe outcome of Chagas disease (Passos et al., 2017).
 
@@ -184,6 +243,73 @@ In the insect vector, Trypanosoma have adopted additional strategies for evasion
 Recent advances in the field of metabolism have allowed for a deeper understanding of host-pathogen interactions. Because of their increasing global health significance, research about vector-borne pathogens has experienced a surging interest from the scientific community. Great strides have been made in investigating otherwise neglected tropical diseases, including Trypanosoma and Leishmania. Additional work in understudied microbes, such as Babesia, alphaviruses, and POWV, among others, is imperative for understanding shared mechanisms used by vector-borne pathogens. Using these microbes to study the molecular basis of infection could unlock new paradigms in microbiology.
 
 The regulation of lipids is a crucial process in both mammalian and arthropod metabolism, and arthropod-borne pathogens have evolved mechanisms to co-opt these processes. For example, only seven bacterial genera are known to incorporate mammalian cholesterol in their membranes, including the tick-borne Borrelia, Anaplasma, and Ehrlichia (Toledo and Benach, 2015). Based on their shared environment, it is easy to speculate why tick-borne bacteria are overrepresented for this quality. Other discoveries have prompted the development of novel therapeutics for vector-borne diseases. For instance, both extracellular and intracellular arthropod-borne pathogens must salvage lipids from their hosts for survival (Table 2). To this end, drugs targeting lipid metabolism have been shown to inhibit arboviral and parasitic infections (Tewary et al., 2006; Bobenchik et al., 2013; Merino-Ramos et al., 2016; Choi et al., 2016; Jiménez de Oya et al., 2019). Thus, their use in humans is a promising area of research. Studying host lipid requirements by these pathogens can also aid in understanding host susceptibilities to infection, such as comorbidities and medications taken for other diseases.
+
+**Table 2.**
+ Requirement of lipid scavenging for microbial growth.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Cholesterol</th>
+      <th>Fatty acids</th>
+      <th>Phospholipids</th>
+      <th>Sphingolipids</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anaplasma and Ehrlichia</td>
+      <td>Essential (Lin and Rikihisa, 2003a; Xiong et al., 2009; Cockburn et al., 2019)</td>
+      <td>Essential (Dunning Hotopp et al., 2006)</td>
+      <td>Essential (Lin et al., 2020)</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Borrelia</td>
+      <td>Essential (LaRocca et al., 2010; Crowley et al., 2013; Toledo et al., 2015a)</td>
+      <td>Essential (Belisle et al., 1994; Fraser et al., 1997; Hossain et al., 2001)</td>
+      <td>Non-essential (Hossain et al., 2001; Wang et al., 2004)</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Flaviruses</td>
+      <td>Essential (Rothwell et al., 2009; Soto-Acosta et al., 2013)</td>
+      <td>Essential (Heaton et al., 2010)</td>
+      <td>Essential (Vial et al., 2019)</td>
+      <td>Essential (Martín-Acebes et al., 2014; Leier et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>Plasmodium</td>
+      <td>Unclear (Labaied et al., 2011)</td>
+      <td>Essential (mammal: blood) (Yu et al., 2008; Vaughan et al., 2009)</td>
+      <td>Essential (mammal: liver) (Déchamps et al., 2010; Itoe et al., 2014)</td>
+      <td>Non-essential (Zhang et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>Leishmania</td>
+      <td>Essential (mammal) (Andrade-Neto et al., 2011; De Cicco et al., 2012; Rabhi et al., 2012; Semini et al., 2017)</td>
+      <td>Unknown</td>
+      <td>Essential (mammal) (Zhang and Beverley, 2010)</td>
+      <td>Essential (mammal) (Winter et al., 1994; Henriques et al., 2003; Zhang et al., 2005; Zhang and Beverley, 2010)</td>
+    </tr>
+    <tr>
+      <td>T. brucei</td>
+      <td>Essential (mammal) (Coppens et al., 1995)</td>
+      <td>Non-essential (Millerioux et al., 2018; Ray et al., 2018)</td>
+      <td>Non-essential (Ramakrishnan et al., 2013)</td>
+      <td>Non-essential (Zhang et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>T. cruzi</td>
+      <td>Essential (mammal) (Johndrow et al., 2014)</td>
+      <td>Essential (mammal and vector) (Wainszelbaum et al., 2003; Caradonna et al., 2013; Li et al., 2016; Gazos-Lopes et al., 2017)</td>
+      <td>Non-essential (vector) (Ramakrishnan et al., 2013; Chagas-Lima et al., 2019)</td>
+      <td>Non-essential (Zhang et al., 2010)</td>
+    </tr>
+  </tbody>
+</table>
 
 The interactions between microbes and their arthropod vectors have also come to the forefront of vector biology research. Molecular strategies of vector competence, or the ability of an arthropod vector to efficiently transmit disease, are currently being defined in insect and non-insect arthropods. These include: (1) pathogen recognition by diverse arthropod immune systems, (2) secretion of salivary effector proteins, (3) survival advantages provided by colonized microbes, and (4) interactions with mammalian immunity and the microbiome at the bite site. This emerging area of research is critical for understanding why arthropod vectors are tolerant of certain human pathogens and how these interactions developed on an evolutionary scale.
 

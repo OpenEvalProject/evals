@@ -33,7 +33,7 @@
 
 ## Abstract
 
-The extent splicing is regulated at single-cell resolution has remained controversial due to both available data and methods to interpret it. We apply the SpliZ, a new statistical approach, to detect cell-type-specific splicing in >110K cells from 12 human tissues. Using 10X Chromium data for discovery, 9.1% of genes with computable SpliZ scores are cell-type-specifically spliced, including ubiquitously expressed genes MYL6 and RPS24 . These results are validated with RNA FISH, single-cell PCR, and Smart-seq2. SpliZ analysis reveals 170 genes with regulated splicing during human spermatogenesis, including examples conserved in mouse and mouse lemur. The SpliZ allows model-based identification of subpopulations indistinguishable based on gene expression, illustrated by subpopulation-specific splicing of classical monocytes involving an ultraconserved exon in SAT1 . Together, this analysis of differential splicing across multiple organs establishes that splicing is regulated cell-type-specifically.
+The extent splicing is regulated at single-cell resolution has remained controversial due to both available data and methods to interpret it. We apply the SpliZ, a new statistical approach, to detect cell-type-specific splicing in >110K cells from 12 human tissues. Using 10X Chromium data for discovery, 9.1% of genes with computable SpliZ scores are cell-type-specifically spliced, including ubiquitously expressed genes MYL6 and RPS24. These results are validated with RNA FISH, single-cell PCR, and Smart-seq2. SpliZ analysis reveals 170 genes with regulated splicing during human spermatogenesis, including examples conserved in mouse and mouse lemur. The SpliZ allows model-based identification of subpopulations indistinguishable based on gene expression, illustrated by subpopulation-specific splicing of classical monocytes involving an ultraconserved exon in SAT1. Together, this analysis of differential splicing across multiple organs establishes that splicing is regulated cell-type-specifically.
 
 ## Introduction
 
@@ -59,19 +59,59 @@ To our knowledge, this work provides the first unbiased and systematic screen fo
 
 ## Results
 
-## Conserved splicing in ubiquitously expressed genes, including ATP5FC1 and RPS24, predicts cellular compartment at single-cell resolution
+### Conserved splicing in ubiquitously expressed genes, including ATP5FC1 and RPS24, predicts cellular compartment at single-cell resolution
 
 We applied the SpliZ (Olivieri et al., 2021), a recently developed method to identify cell-type-specific splicing, to ~75k 10X cells in 12 tissues from one human donor (Tabula Sapiens Consortium, 2021), beginning by testing for splicing regulation differing by tissue compartment (immune, epithelial, endothelial, and stromal) regardless of the tissue of origin (SpliZ scores available for download at the following FigShare repository: DOI: 10.6084 /m9.figshare.14531721). This analysis identified 1.6% (22 of 1353) of genes with computable SpliZ scores as having consistent compartment-specific splicing effects (Supplementary file 2, Materials and methods). ATP5F1C, RPS24, and MYL6 have the highest compartment-specific splicing effects, defined as the largest magnitude median SpliZ in any compartment, and their compartment-specific splicing was conserved in mouse and mouse lemur. ATP5F1C is the gamma subunit of mitochondrial ATP synthase, a multi-subunit molecular motor that converts the energy of the proton potential across the mitochondrial membrane into ATP. MYL6 is an actin light chain subunit known to have cell-type-specific splicing differences in the muscle (Brozovich et al., 2016). RPS24 is an essential ribosomal protein for ribosome small subunit 40S discussed in detail later. Among the examples of genes demonstrating compartment-specific splicing is LIMCH1 (Figure 2A). LIMCH1 has been reported as a non-muscle myosin regulator (Lin et al., 2017) and has been associated with Huntington’s disease (Lin et al., 2016) with little other characterization, including, to our knowledge, no reports of regulated splicing. The SpliZ values for MYL6, RPS24, and ATP5F1C are not correlated with gene expression (Figure 2—figure supplements 1–3).
 
-To test the predictive power of compartment-specific genes at single-cell resolution, we performed unsupervised k-means clustering on the SpliZ scores of RPS24 and ATP5F1C alone. Setting k=3, cells from stromal, epithelial, and immune compartments in the first human individual were classified with accuracies of 78, 84, and 95%, respectively, independent of gene expression (70, 100, and 49% in the second individual) (Figure 2B–D, Materials and methods). The lower accuracy for individual 2 may be caused by individual 2 having only a third as many cells. The endothelial compartment was not included because it had a small proportion of cells in both datasets (3.7% in individual 1, 4.5% in individual 2). This establishes that splicing of a minimal set of genes, in this case only two, has high predictive power of the compartmental origin of each single cell. Underlining tight biological regulation of splicing in these genes, parallel analysis in the 10X scRNA-seq data from mouse lemur and mouse shows compartment-specific splicing is conserved for RPS24 and MYL6 (Figures 3 and 4).
+![Figure 2.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig2-v2.jpg)
 
-## The splicing of actin regulator MYL6 is compartment-specifically regulated
+**Figure 2.:** (A) Dot and sashimi plots showing LIMCH1 compartment-specific exon skipping (involving 5′ splice site [5′ SS] 41,619,440 and two 3′ splice sites [3′ SS] 41,638,932 and 41,644,500) impacting a protein domain of unknown function DUF4757 (shown by the purple color on the gene structure) across cell types and 10X and SS2 data from both human individuals. Each dot shows junction expression for the splice junction from the 5′ SS to one of the 3′ SS’s, with dot size proportional to the fraction of junctional reads supporting the splice junction in that cell type and dataset. Columns of dots are biological replicates; the first column is the individual 1 10X dataset (circles) and the next two columns are SS2 datasets from individuals 1 and 2 (squares). Cell types are grouped in two sets depending on the sign of the median SpliZ score in 10X data from human individual 1. The thickness of the sashimi arcs represents the fraction of the reads mapping to each 3′ SS when all datasets and corresponding cell types for the sashimi arc are grouped together. The box plot for each cell type shows the distribution of the weighted average 3′ SS (weights being the number of reads aligning to each 3′ SS in the cell) for each cell and the reads are assigned 1 (for those aligning to the closer 3′ SS) and 2 (for those aligning to the farther 3′ SS). Stromal cells including vasculature smooth muscle cells and fibroblasts always include the exon (higher fraction of reads aligning to the splice site at 41,638,932), while epithelial cells including bladder urothelial cells skip with >50% rate. (B) Unsupervised k means clustering results in 78, 84, and 95% accuracy of compartment classification for the stromal, epithelial, and immune compartments, respectively, for individual 1, and 70, 100, and 49%, respectively, for individual 2. (C) The SpliZ scores of the genes ATP5F1C and RPS24 together separate compartments in both human individuals. Each dot represents the SpliZ score in a single cell and is color coded by the compartment. (D) Using the spliced read counts for each gene rather than the SpliZ does not separate the compartments, showing that this separation is not driven by gene expression differences. Each dot represents the number of spliced reads in a single cell and is color coded by the compartment.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Coloring Tabula Sapiens cells by both gene expression and SpliZ value shows that MYL6 is ubiquitously expressed and that the SpliZ is independent of gene expression for these cases. Plots are obtained by using the cellxgene (Megill et al., 2021) visualization platform.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Coloring Tabula Sapiens cells by both gene expression and SpliZ value shows that RPS24 is ubiquitously expressed and that the SpliZ is independent of gene expression for these cases. Plots are obtained by using the cellxgene (Megill et al., 2021) visualization platform.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Coloring Tabula Sapiens cells by both gene expression and SpliZ value shows that ATP5F1C is ubiquitously expressed and that the SpliZ is independent of gene expression for these cases. Plots are obtained by using the cellxgene (Megill et al., 2021) visualization platform.
+
+To test the predictive power of compartment-specific genes at single-cell resolution, we performed unsupervised k-means clustering on the SpliZ scores of RPS24 and ATP5F1C alone. Setting $k=3$, cells from stromal, epithelial, and immune compartments in the first human individual were classified with accuracies of 78, 84, and 95%, respectively, independent of gene expression (70, 100, and 49% in the second individual) (Figure 2B–D, Materials and methods). The lower accuracy for individual 2 may be caused by individual 2 having only a third as many cells. The endothelial compartment was not included because it had a small proportion of cells in both datasets (3.7% in individual 1, 4.5% in individual 2). This establishes that splicing of a minimal set of genes, in this case only two, has high predictive power of the compartmental origin of each single cell. Underlining tight biological regulation of splicing in these genes, parallel analysis in the 10X scRNA-seq data from mouse lemur and mouse shows compartment-specific splicing is conserved for RPS24 and MYL6 (Figures 3 and 4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig3-v2.jpg)
+
+**Figure 3.:** Differential alternative splicing between compartments for MYL6 is driven by an exon skipping event with orthologous splice sites (SS) in (A) human (5′ SS: 56,160,320 and two 3′ SSs: 56,161,387 and 56,160,626), (B) mouse lemur, and (C) mouse. Each dot shows the expression for the splicing to one of the 3′ SSs marked by vertical red lines on the gene annotation in (D) in a 10X (circles) or SS2 (squares) dataset from individuals 1 and 2. Columns of dots are biological replicates; for human data, the first two columns are 10X and the second two columns are SS2. Dots are colored by compartment. For mouse and mouse lemur, the two columns are 10X samples. The box plot is obtained by assigning 1 and 2 to the closer and farther 3′ SS and then computing their weighted average for each cell according to their corresponding fraction of junctional reads in the cell. Cells in the immune compartment have higher exon skipping rates than cells in the stromal compartment in all three organisms. Smooth muscle cell types are boxed within the stromal compartment. Mouse cells have the same relative proportions of exon inclusion between compartments, but express higher levels of the exon included isoform overall. The SpliZ scores (and also gene expression values) for MYL6 across all 10X cells in human individual 1 are shown in Figure 2—figure supplement 1. (D) Gene structures showing MYL6 annotation in human, mouse, and mouse lemur. The gray arrows between different organisms show LiftOver mapping between human, mouse, and mouse lemur, indicating that orthologous splice sites are involved in alternative splicing in different organisms. (E) Protein domains in MYL6 and how they are organized in the two MYL6 isoforms. The exon skipping leads to the deletion in the EF_hand_8 domain (shown by the red color). (F) RNA FISH validation in human lung: each slide is stained simultaneously with probes in red (specific to exon inclusion) and brown (specific to exon exclusion). As found from the scRNA-seq data, smooth muscle cells have a higher proportion of the included exon than the other compartments and immune cells have the lowest proportion.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Human, (B) lemur, and (C) mouse for the splice sites shown in Figure 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Indicated cell types were isolated from human muscle and stained by RNA FISH. Example images are shown on the left, with the exon 6 isoform shown in red, the 5–7 isoform shown in gray in the DIC channel, and DAPI shown in blue. Graph depicting the quantifications is shown on the right.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig4-v2.jpg)
+
+**Figure 4.:** (A) Each colored circle in the plot represents one RPS24 junction that uniquely identifies an isoform (junction with green circle represents two isoforms). For each cell type (y axis), the median of all single-cell point estimates of junction fraction in the cell type is plotted on the x axis, with bars representing the 25th and 75th quantiles of single-cell junction fractions. Cell types are sorted by compartment. Black arrows show the splice junctions that can be used for identifying each isoform. Within the immune compartment, the fraction of the blue junction increases from classical monocytes to intermediate monocytes to non-classical monocytes. (B) The isoform with epithelial-specific splicing in human is not expressed in mouse lemur. However, the same isoform is expressed in smooth muscle as in human. Retinal cells are the only cells to express the +a+b+c isoform. (C) RPS24 isoform structure in human shows alternative inclusion of three cassette exons a, b, and c create five annotated isoforms. (D) Single-cell PCR validates the prediction that the +a-b+c isoform is epithelial-specific. All the epithelial cells contain the isoform with the 3-nt exon a, while none of the cells from other compartments do. PCR products from the cells prefixed by asterisks were Sanger-sequenced and matched the expected isoform without evidence of mixture. (E) RPS24 FISH in human lung validates scRNA-seq computational predictions. Slides were simultaneously stained with probes in red and brown, specific for alternative splice junctions. As found from the scRNA-seq data, respiratory epithelium and bronchiole smooth muscle in the epithelial and stromal compartments, respectively, have a low proportion of the -a-b-c isoform compared to alveolar macrophages and lymphocytes, both of which are in the immune compartment.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Indicated cell types were isolated from human muscle and stained by RNA FISH. Example images are shown on the left, with the -a-b+c isoform shown in red, the -a-b-c isoform shown in gray in the DIC channel, and DAPI shown in blue. Graphs depicting the quantifications are shown on the right. Graph depicting the quantifications is shown on the right.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Bar plots for the (A) endothelial, (B) epithelial, (C) immune, and (D) stromal compartments show proportions of each isoform for each species, with error bars corresponding to 95% binomial confidence intervals. Within epithelial cells the +a-b+c isoform was expressed at the highest fraction in human, while only at a small fraction in mouse and mouse lemur, confirming that this isoform’s epithelial specificity is not conserved in mouse and mouse lemur.
+
+### The splicing of actin regulator MYL6 is compartment-specifically regulated
 
 We identified MYL6 as both cell-type-specifically and compartment-specifically spliced in humans and its splicing pattern is conserved (Figure 3). MYL6 is a ubiquitously expressed myosin light chain subunit and is known to have a lower level of exon skipping in muscle than non-muscle tissue (Brozovich et al., 2016), but differential exon skipping at a single-cell level has only been characterized in smooth muscle cells. We find in human, mouse, and mouse lemur that the stromal compartment, which includes smooth muscle, as well as the endothelial compartment have a relatively higher proportion of exon inclusion, while the epithelial compartment has a lower level of exon inclusion and the immune compartment has the lowest level of exon inclusion (Figure 3A–E, Figure 3—figure supplement 1). Despite these trends being the same for all three species, mouse has higher levels of exon inclusion in all compartments than in the other two species.
 
 We validated compartment-specific differential alternative splicing in MYL6 using RNA FISH with isoform-specific probes on human adult lung tissue obtained from the Stanford Tissue Bank (Figure 3F, Materials and methods). In human lung, this confirmed that bronchiole smooth muscle cells have the highest fraction of the exon inclusion isoform (57%), while the respiratory epithelium has a lower fraction of this isoform (16%) and the two profiled immune cell types (macrophages and lymphocytes) have the lowest fractions of the exon inclusion isoform (10% and 8%, respectively). We separately performed RNA FISH on human cells isolated from the muscle, which showed that mesenchymal stem cells and muscle stem cells have a higher proportion of the exon inclusion isoform than endothelial cells (Figure 3—figure supplement 2, Materials and methods).
 
-## RPS24 has compartmentally regulated alternative splicing and expresses a microexon in human epithelial cells
+### RPS24 has compartmentally regulated alternative splicing and expresses a microexon in human epithelial cells
 
 RPS24 is a highly expressed and essential ribosomal protein. Our analysis revealed that RPS24 has the most significant cell-type-specific and compartment-specific alternative splicing patterns at its C terminus in human and mouse lemur. The significance of the alternative splicing patterns of RPS24 is underscored by recent findings that ribosome composition is more modular than previously appreciated in a cell- and tissue-specific manner (Genuth and Barna, 2018). There has been a partial study of RPS24 splicing treating two isoforms (Song et al., 2017), and another study reported modest differential splicing at the tissue level (Gupta and Warner, 2014; Song et al., 2017) for RPS24 involving three isoforms. However, here, we show that splicing of RPS24 is more complex and highly regulated at a single-cell level (Figure 4A and B).
 
@@ -85,9 +125,33 @@ In addition to using RNA FISH to independently validate cell-type-specific splic
 
 Together, the subtle changes in protein sequence from alternative splicing of RPS24 prompt two hypotheses: one is that splicing affects post-translational modifications (Kondrashov et al., 2011). However, the fact that some splice variants have subtle or no variation in the encoded protein suggests an alternative that, like isoforms of Actin in mouse, RPS24 splicing could function at the nucleotide rather than protein level (Vedula et al., 2017).
 
-## Approximately 9% of measured genes have cell-type-specific splicing regulation
+### Approximately 9% of measured genes have cell-type-specific splicing regulation
 
 Splicing regulation in the vast majority of human cell types has not been characterized. We used the 82 annotated cell types in the Tabula Sapiens cell atlas to identify genes with statistical support for having differential alternative splicing patterns using the same SpliZ procedure for identifying compartment-specific genes (Olivieri et al., 2021; Figure 1C, Materials and methods, Supplementary file 3). Among genes called significant, the Pearson correlation between the median SpliZ in individuals 1 and 2 (10X) was 0.77 and it was 0.44 between 10X and SS2 within individual 1 (p-value < 10e-50, Materials and methods, Figure 5). 129 out of 1416 genes (9%) had significant cell-type-specific splicing profiles based on discovery with 10X data from individual 1 (p-value < 0.05, effect size >0.5) (Materials and methods, Figure 5—figure supplement 1). Genes with cell-type-specific splicing regulation include TPM1 (Figure 6), PNRC1 (Figure 7A), and FYB (Figure 7—figure supplement 1), among others.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig5-v2.jpg)
+
+**Figure 5.:** (A) When subsetted to only shared junctions and shared cell types, the SpliZ values for significant genes for both 10X datasets are highly concordant (Pearson correlation of 0.776). (B) Comparing datasets from the 10X and SS2 technologies.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Effect size filters were chosen based on correlation analysis of (A) Both human 10X datasets and (B) separately for SpliZVD by correlation of both human SS2 datasets.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig6-v2.jpg)
+
+**Figure 6.:** Conserved splicing in TPM1 is recovered in (A) human, (B) mouse lemur, and (C) mouse. TPM1 has a pattern of differential splicing involving two cassette exons and an alternate 5′ end (as shown by the gene structures at the bottom of the figure). Capillary endothelial cells mostly express the isoform with the alternate 5′ end (5′ splice site [5’ SS] 1), while smooth muscle almost exclusively expresses the isoform with the 5′-most domain (boxed in the figure). The box plot shows the distribution of the average 5′ SS (obtained as the weighted average of 5′ SS when ranked from 1 to 3 from the closest to the farthest according to their fraction of junctional reads) for the cells within a cell type (see Figures 2 and 3 for more explanation of dot and box plots). There is differential isoform usage within the stromal compartment as well, for example, human bladder stromal fibroblasts and bladder stromal pericytes each express a different dominant cassette exon. Both lemur and mouse similarly express cell-type-specific differences in TPM1 isoform usage. Orthologous SpliZsites in human, mouse, and mouse lemur are involved in alternative splicing based on the LiftOver mapping, as shown by gray arrows on the gene structures.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Both TPM2 (A) and TPM3 (B) exhibit cell-type-specific splicing patterns in human.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig7-v2.jpg)
+
+**Figure 7.:** (A) Cell-type-specific exon skipping in PNRC1 (involving one 3′ SS and two 5′ SS’s) is replicated across the four human datasets. Skeletal muscle satellite stem cells include the exon about 50% of the time, whereas vein endothelial cells in the thymus never include the exon. Cell types with negative median SpliZ values are on the top panel, and those with positive median SpliZ values are on the bottom panel. Each of the four human datasets is plotted, with circles representing 10X data and squares representing SS2 data. The gene annotation is shown above the dots, with sashimi arcs indicating the mean expression of each junction for the given cell types and datasets in the corresponding panel (similar to Figure 2). The known protein domain is marked on the gene structure. Box plots for each cell type are based on weighted 3′ usage (based on the fraction of junctional reads to each 3′ SS) of the 5′ SS for each cell in the cell type in individual 1 10X data (L). Each box shows 25–75% quantiles of average 5′ SS per cell. (B) Unsupervised clustering analysis with the SpliZ identified clusters of cell types and compartments independent of tissue. Dots show the median SpliZ (effect size) for genes found to be significantly regulated across cell types. Only 50 significant genes with the highest effect size and cell types with >25 significant genes are shown. Hierarchical clustering was performed on both genes and cell types based on median SpliZ values. Cell type names are color-coded based on their tissue (same tissue colors as in A) and the side bar shows the compartment for each cell type. (C) Alternative splicing of gene SAT1 distinguishes two populations of cells within blood classical monocytes and involves an ultraconserved exon. The dot plot shows the differential inclusion of the 5′ SSs for the 3′ SS at 23,785,300 for cells grouped based on their assigned subclusters. The number of reads (X) and cells (Y) containing the splice junctions involving the 3′ SS in each individual are shown at right. Clustering based on gene expression as shown by cellxgene visualization (middle panel) and scatter plot (right panel) does not distinguish cell populations with distinct splice profiles. In the scatter plot, the x and y axes represent the gene expression and SpliZ values for SAT1 in each cell, respectively. Cells are colored according to their human individual number. Visualization of the gene expression value for SAT1 does not distinguish the populations; both subclusters contain classical monocytes from both human individuals (right scatter plot).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The pattern is replicated in 10X and SS2 data from both human individuals and technologies, with monocytes and macrophages tending to include an exon (at position 39125998) that is usually skipped in T cells. (See Figure 3C for top-panel plot explanation.) At the bottom are diagrams of FYB1 genomic organization and protein features. The exon structure is completely conserved between mouse and human, including the cassette exon; the conserved mapping of exons to protein sequence is shown for the C-terminal portion. Most of the protein is predicted to be unstructured, except for the distal SH3 and hSH3 domains. Numerous tyrosine (Y) phosphorylation sites are conserved and annotated in the expanded view of the protein. The cassette exon contains two predicted short alpha-helical stretches; it may allow additional protein interactions and/or may modulate accessibility of the two important phosphorylation sites that flank it.
 
 Tropomyosin 1, TPM1, which has three isoforms each impacting the tropomyosin domain at the 3′ end of the transcript, served as a positive control in this analysis as it is known to undergo cell-type-specific splicing. It is ranked as the 27th most significant effect size. Unbiased SpliZ analysis finds that capillary endothelial cells express about equal levels of three isoforms, while smooth muscle cells almost exclusively express the isoform with the 3′-most domain (Figure 6A–C). This trend, among others, is consistent with knowledge of TPM1 splicing from other studies (Gooding and Smith, 2008), though it extends its splicing profile to cell types where it has never been characterized. Among the comprehensive catalog of differences, smooth muscle and pericyte cells consistently include different cassette exons at the 3′ end of the transcript, affecting the tropomyosin protein domain (Figure 6A). Cell types outside of muscle such as bladder pericytes and bladder fibroblasts have similar splicing profiles as smooth muscle and muscle mesenchymal stem cells, respectively. Splicing biology of TPM2 and TPM3, two other genes from the TPM family where partial characterization has suggested cell-type-specific splicing, is similarly rediscovered in our analysis and significantly extended: slow muscle cells (and fast muscle cells for TPM2) have different splicing patterns than other cell types for both genes (Figure 6—figure supplement 1).
 
@@ -95,23 +159,35 @@ PNRC1, a nuclear receptor coregulator that functions as a tumor suppressor, has 
 
 The high dimensionality of SpliZ scores enabled us to test if unsupervised clustering on the median SpliZ scores could recapitulate relationships between cell types (Figure 7B). We found that the same cell types from different tissues are generally clustered together, including macrophages and T cells from different tissues and also intestinal cell types from large and small intestine (Figure 7B, Materials and methods). This clustering also reveals that the splicing programs of cell types from the same compartment are highly similar and automatically clustered together independent of their tissues (Figure 7B).
 
-## The most statistically variable splice sites with cell-type-specific regulated splicing are annotated splice sites involved in unannotated alternative splicing
+### The most statistically variable splice sites with cell-type-specific regulated splicing are annotated splice sites involved in unannotated alternative splicing
 
 The biological importance of splicing detected by the SpliZ and the fact that it is completely agnostic to isoform annotation led us to test whether cell-type-specific splicing variation is (a) focused at exons that are annotated to undergo alternative splicing and (b) conserved. The SpliZ method uses a statistical, annotation-free approach to identify SpliZsites: variable splice sites that contribute most to the cell-type-specific splicing of a gene agnostic to gene annotation. SpliZsites blindly reidentify known alternative splice sites in ATP5F1C, MYL6, TPM1, and RPS24 (Supplementary file 4). In TPM2, the SpliZ reidentifies two known alternative splicing sites but also predicts a cell-type-specific unannotated alternative splicing event in stromal cell types involving 5′ splice site 35,684,315 affecting Tropomyosin and Tropomyosin 1 protein domains.
 
 Genome-wide, the vast majority of SpliZsites (93%) in significant genes are at boundaries of annotated exons. However, only 38.5% are annotated as alternatively spliced, suggesting that unannotated – rather than annotated – exon skipping accounts for underappreciated splicing variation in single cells. Further, exon skipping has a global effect on single-cell proteomes: more than half of SpliZsites impact protein coding domains; 34% impact the 3′ UTR and 16% impact the 5′ UTR, consistent with a bias in 10X technology towards the 3′ gene end. Supporting the idea that SpliZsites discover a real biological signal, 15.5% of LiftOver human SpliZsites were also SpliZsites in the mouse lemur compared to 7% expected under the null (Materials and methods). Only 8.0% of LiftOver SpliZsites in human were called as SpliZsites in mouse compared to 8.8% expected under the null. This could be due to many factors including a larger evolutionary distance between mouse and human, smaller number of analyzed mouse cells, or lower sequencing depth (Supplementary file 1).
 
-## The SpliZ identifies subpopulations of classical monocytes with distinct splicing of an ultraconserved exon of SAT1
+### The SpliZ identifies subpopulations of classical monocytes with distinct splicing of an ultraconserved exon of SAT1
 
 The SpliZ has a theoretical normal distribution under the assumption that cells within a cell type all have the same propensity to express each splice isoform (the ‘null hypothesis’). This property allows us to statistically test whether cell types subcluster on the basis of splice isoform, as quantified by the SpliZ, using an integrated complete-data likelihood (ICL) model selection framework. This is based on Gaussian mixture modeling (GMM), and includes a measure of ‘effect size’ differences between clusters via the Bhattacharyya distance, a measure of the distance between probability distributions (Materials and methods). Importantly, this approach avoids false-positive calls of apparent binary exon inclusion (Buen Abad Najar et al., 2020; Materials and methods, manuscript in preparation). We applied the ICL analysis of the SpliZ to immune cell types in individual 2 to illustrate the power of single-cell splicing quantification by the SpliZ for defining subsets of cells within annotated cell types defined by gene expression. SpliZ values for SAT1 in blood classical monocytes had the largest Bhattacharyya distance among identified subpopulations (Materials and methods).
 
 Junctional reads (defined by SpliZsites) driving the separation of the two subpopulations show distinct isoform expression profiles (Figure 7C): cells in cluster 1 splice to a 5′ splice site that includes an ultraconserved genomic sequence, whereas those in cluster 2 contain splice to a different 5′ splice site (Figure 7C). These clusters are not driven by SAT1 gene expression and are not detected by gene-based clustering of monocytes as shown by visualization in cellxgene (Megill et al., 2021; Figure 7C). We used predictions of subpopulations of cells’ splicing profiles in SAT1 in individual 2 to blindly test whether classical monocytes in individual 1 also exhibited evidence of subpopulations based on their splicing profile. The number of cells with reads from the same junction – supporting subpopulations – is significantly greater than the number expected under the null assumption of randomly sampling two reads per cell regardless of cluster (p-value < 0.05, exact binomial test in individual 1, Materials and methods). Further supporting a biological role of SAT1 splicing in the immune system, the same GMM-based approach identified two subpopulations of cells based on the SpliZ values for SAT1 in both lung macrophages and thymus monocytes. Together with statistical support and blinded validation, this supports that SAT1 exhibits splicing programs that define two splicing states within classical monocytes and calls for further investigations for up- and downstream regulation. Other genes including PTP4A2, RABAC1, and MAGOH have similar evidence of subpopulation structure and warrant further investigation.
 
-## The SpliZ discovers conserved alternative splicing in mammalian spermatogenesis
+### The SpliZ discovers conserved alternative splicing in mammalian spermatogenesis
 
 The SpliZ provides a systematic framework to discover how splicing is regulated at a single-cell level along developmental trajectories (i.e., pseudotime). Previous studies have shown that testis is among the tissues with the highest isoform complexity and that even the isoform diversity in spermatogenic cells (spermatogonia, spermatocytes, round spermatids, and spermatozoa) is higher than that of many tissues (Soumillon et al., 2013). Also, RNA processing has been known to be important in spermatogenesis (Green et al., 2018). However, alternative splicing in single cells during spermatogenesis at the resolution of developmental time enabled by single-cell trajectory inference has not been studied. To systematically identify cells whose splicing is regulated during spermatogenesis, we applied the SpliZ to 4490 human sperm cells (Hermann et al., 2018) and compared findings to mouse (Hermann et al., 2018) and mouse lemur (Tabula Microcebus Consortium, 2021) sperm cells to test for conservation of regulated splicing changes.
 
 170 genes out of 1757 genes with computable SpliZ in >100 human cells have splicing patterns that are significantly correlated with the pseudotime (|Spearman’s correlation| > 0.1, Bonferroni-corrected p-value < 0.05, Supplementary file 5). The highest correlated genes included TPPP2, a gene regulating tubulin polymerization implicated in male infertility (Zhu et al., 2019), FAM71E1, being predominantly expressed in testes (Kwon et al., 2017), SPATA42, a long non-coding RNA implicated in azoospermia (Bo et al., 2020), MTFR1, a gene regulating mitochondrial fission, and MLF1, an oncogene regulated in Drosophila testes (Singh et al., 2016; Figure 8A, Figure 8—figure supplement 1). In MTFR1, SpliZsites identify an unannotated 3' splice site in immature sperm showing evidence of novel transcripts (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig8-v2.jpg)
+
+**Figure 8.:** (A) Regulated alternative splicing of MTFR1 during sperm development. Significant negative correlation (Spearman’s correlation = –0.27, p-value = 1.23e-7) between the SpliZ score for gene MTFR1 and pseudotime in human sperm cells (top left). Dot plot and box plot show increasing use of a downstream 3′ splice site driving the MTFR1 SpliZ in equal pseudotime quantiles (top right) with the same trend in immature (spermatocyte) and mature (spermatid) cells (bottom left). The gene structure for MTFR1 according to the human RefSeq annotation database is shown in the bottom-right panel. The orange box on the gene structure represents the PDEase_I domain and how it is affected by the alternative splicing. (B) Dot plots showing the developmentally regulated alternative splicing of gene CEP112 in testis cells from human, mouse, and mouse lemur. Cells are grouped according to pseudotime quantiles. The alternative splicing is conserved (i.e., involves the same set of 5′ and 3′ splice sites in human, mouse, and mouse lemur data as shown by the gray arrows on the gene structures) and involves 5′ splice sites 65,826,138 and 65,851,804 in human, 5′ splice sites 108,664,726 and 108,682,875 in mouse, and 5′ splice sites 38,798,359 and 38,809,336 in mouse lemur. The 3′ splice site and the two 5′ splice sites involved in alternative splicing are shown by black and red vertical lines, respectively, on the gene structures. CEP112 is on the minus strand in the human genome but is on the plus strand in mouse and mouse lemur genomes, leading to a negative correlation in splice site usage. Gray arrows show the LiftOver mapping between the 3′ splice site and two 5′ splice sites of the exon skipping event (indicating that the alternative splicing is conserved) and gray dashed lines for the human plot show the location of the 5′ splice sites and how splicing changes the apolipoprotein protein domain.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** The same 5′ splice site drives the alternative splicing in human and mouse. The gene structures for MLF1 according to the RefSeq database for human, mouse, and mouse lemur are shown.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/70692/elife-70692-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Regulated splicing in both human and mouse lemur involves one unannotated 5′ splice site. The gene structures according to the RefSeq database for human and mouse lemur are shown.
 
 Among significantly correlated genes in human cells, splicing in 10 of these genes is also developmentally regulated in mouse and mouse lemur (Supplementary file 5). Centrosomal protein 112 (CEP112), a coiled-coil domain containing centrosomal protein and member of the cell division control protein, had the highest SpliZ-pseudotime correlation. It is highly expressed in testes and is essential for maintaining sperm function: loss-of-function mutations in CEP112 have recently been associated with male infertility (Sha et al., 2020). Strikingly, the same 3' splice site and 5' splice sites identified by SpliZsites are orthologous and affect the apolipoprotein domain, a protein involved in the delivery of lipid between cell membranes and which is critical for the sperm development and fertility (Setarehbadi et al., 2012; Figure 8B).
 
@@ -127,13 +203,86 @@ The reproducibility of models in independently generated datasets suggests that 
 
 ## Materials and methods
 
-## File downloads
+**Key resources table**
 
-## Code availability
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SICILIAN</td>
+      <td>Dehghannasiri et al., 2021</td>
+      <td></td>
+      <td>https://github.com/salzmanlab/SICILIAN, Roozbeh, 2021</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SpliZ Pipeline</td>
+      <td>Olivieri et al., 2021</td>
+      <td></td>
+      <td>https://github.com/juliaolivieri/SpliZ_pipeline, Julia, 2021b</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>Dobin et al., 2013</td>
+      <td></td>
+      <td>https://github.com/alexdobin/STAR, Alexander, 2021</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BaseScope Duplex Reagent Kit - Hs</td>
+      <td>ACD (Bio-Techne)</td>
+      <td>cat. no 323,870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BaseScope Probes for MYL6</td>
+      <td>ACD (Bio-Techne)</td>
+      <td>BA-Hs-MYL6-tv1-1zz-st-C2 and BA-Hs-MYL6-tv2-1zz-st</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BaseScope Probes for RPS24</td>
+      <td>ACD (Bio-Techne)</td>
+      <td>BA-Hs-RPS24-tva-1zz-st-C2 and BA-Hs-RPS24-tvc-1zz-st</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FL-RPS24ex4F1</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>/6FAM/CAATGTTGGTGCTGGCAAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPS24ex6R2</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GCAGCACCTTTACTCCTTCGG</td>
+    </tr>
+  </tbody>
+</table>
+
+### File downloads
+
+### Code availability
 
 Code to reproduce analysis and create figures is available through this GitHub repository: https://github.com/juliaolivieri/DiffSplice (copy archived at swh:1:rev:6fa54f473eb55c9e68692a6aa1d92d479e56b830, Julia, 2021a).
 
-## Explanation of the SpliZ method
+### Explanation of the SpliZ method
 
 The SpliZ is a scalar score assigned to each cell-gene pair in a single-cell dataset. It is calculated using a three-step procedure (Olivieri et al., 2021). First, for every splice site with multiple partners in a dataset, those partners are assigned ranks according to their distance from the splice site. Next, each of these ranks is converted to a mean-zero, variance-one residual that quantifies the statistical deviation of that rank compared to the overall population. Finally, for a given cell and gene, these residuals are summed for each spliced read mapping to the corresponding splice site, and then scaled. Intuitively, the SpliZ for a particular gene has a large negative value if the introns for the gene in a given cell are smaller than average, and has a large positive value if the introns for the gene in a given cell are larger than average.
 
@@ -141,11 +290,11 @@ The SpliZVD is a modification of the SpliZ, in which rather than simply summing 
 
 After SpliZ values are computed, if annotations are provided the SpliZ pipeline calculates which genes are differentially spliced between groups in the annotation. To calculate a p-value for whether the median SpliZ values by annotation are different for a given gene, the distribution of medians is first referred to as a null distribution. For p-values passing a nominal 0.05 level, permutations are performed to estimate the p-value with higher precision, and then adjusted using the Benjamini–Hochberg correction (Hochberg and Benjamini, 1990; Olivieri et al., 2021).
 
-## SpliZ pipeline
+### SpliZ pipeline
 
 Data from each individual was preprocessed from fastqs using SICILIAN with default parameters (Dehghannasiri et al., 2021). SICILIAN is a statistical method that can be applied to the BAM files by spliced aligners such as STAR (Dobin et al., 2013) to remove false-positive junction calls, enabling unbiased discovery of unannotated junctions that can contribute to alternative splicing. The scRNA-seq datasets were mapped using STAR version 2.7.5a in two-pass mode with default parameters. Also, SICILIAN performs UMI deduplication to remove PCR duplicates. SpliZ scores were calculated using the SpliZ pipeline with default parameters (Olivieri et al., 2021). A SpliZ score was assigned to a gene-cell pair if there were at least five spliced reads from that gene aligned in that cell. Differential analysis was performed both based on tissue compartment (endothelial, epithelial, immune, and stromal) and independently based on cell type (defined by the tissue, compartment, and individual cell type, e.g., ‘lung immune macrophage’). For a given gene, only cell types with at least 10 cells with computable SpliZ values for that gene were used. The SpliZ was used to call genes as significant for all datasets except the full SS2 datasets, for which the SpliZVD was used because of the increased complexity of full-length transcript data. We used a p-value cutoff of 0.05 after Benjamini–Hochberg correction. We define ‘effect size’ for a gene to be the largest magnitude median SpliZ (or SpliZVD) value out of all cell types with computable SpliZ for the gene. For between-cell-type-analysis, we use an effect size threshold of 0.5 (3.5 for SpliZVD) (Supplement) and require a difference of at least 0.5 within a single tissue and compartment for the gene to be called.
 
-## FISH methods
+### FISH methods
 
 Human rectus abdominis muscle biopsies from two donors were processed to single-cell suspensions by a combination of manual and enzymatical dissociation (Tabula Sapiens Consortium, 2021). Single-cell suspensions were stained with a combination of antibodies against CD45, CD31, THY1, and CD82, allowing for the isolation of immune cells (CD45+), endothelial cells (CD31+), mesenchymal cells (THY1+), and skeletal muscle satellite stem cells (CD82+). Due to the low number of immune cells present in the tissues, only the latter three cell types were stained. Cells were cytospun onto ECM-coated 8-well chamber slides and fixed in 4% PFA. Cells were washed in PBS and prepared for RNA FISH by replacing the PBS to 100% ethanol. Cells were stained with custom probes according to the manufacturer’s protocol (BaseScope Duplex Detection Reagent Kit [Advanced Cell Diagnostics, ACD]). Briefly, cells were rehydrated and treated with Protease IV solution (1;15 dilution) and were subsequently stained with indicated BaseScope probes for 2 hr in a hybridization oven set to 40°C. Cells were then treated with amplification steps and imaged immediately after completion of the staining. As a control, human primary myoblasts were stained with the BaseScope probes and a negative control probe. Images were captured with a Zeiss Axiofluor microscope with collected CCD camera and a 40× objective lens. The red dye fluoresces in the 555 channel, whereas the green dye shows as gray in the DIC channel. Images were quantified with Volocity software. One muscle sample was independently fixed in 10% neutral buffered formalin for 24 hr in preparation for BaseScope staining in cryosections. Tissue was dehydrated in 20% sucrose for 24 hr, washed in PBS, dried, embedded in OCT, and frozen in cooled isopentane. Sections of 10 µm were cut and dried in –20°C for 1 hr and stored –80°C until use. Tissue slides were removed from –80°C and immediately washed with PBS to remove OCT, dried, and baked in 60°C for 30 min. Tissue slides were post-fixed in 4% PFA for 15 min and dehydrated by immersing slides in 50, 70, and 100% ethanol for 5 min each. Tissue slides were then treated with hydrogen peroxide for 10 min and washed briefly with distilled water and subjected to target retrieval for 5 min, washed briefly with distilled water and in 100% ethanol. Tissue slides were treated with Protease IV solution in 40°C for 10 min and washed twice with distilled water and hybridized with indicated BaseScope probes for 2 hr in 40°C. Tissue slides were then treated with amplification steps. For dual FISH and IHC staining, tissue slides were immediately blocked in blocking buffer for 30 min (5% FBS, 1% BSA, 0.1% Triton-X100, 0.01% sodium azide in PBS) and stained with Pax7 antibody (1:100) in blocking buffer overnight in 4°C. Tissue slides were washed with 0.1% Tween-20 in PBS three times and then fluorescently conjugated secondary antibodies were added for an hour in room temperature. After three additional washes, tissue slides were dried, mounted, and imaged immediately.
 
@@ -153,54 +302,62 @@ Deidentified human adult lung tissue was obtained from the Stanford Tissue Bank.
 
 Proprietary probes (ACD) used for both human lung and muscle: BA-Hs-RPS24-tvc-1zz-st (targets 400–437 of NM_001026.5), BA-Hs-RPS24-tva-1zz-st (targets 399–437 of NM_033022.4); BA-Hs-MYL6-tv1-1zz-st (targets 469–505 of NM_021019.5), BA-Hs-MYL6-tv2-1zz-st (targets 436–480 of NM_079423.4).
 
-## Single-cell RT-PCR
+### Single-cell RT-PCR
 
 SS2 preamplified cDNA of single cells from the Human Lung Cell Atlas project (Travaglini et al., 2020) was used as starting templates. The cells correspond to wells N14, A16, H14, B6, A3, A7, A13, A11, A8, D1, A12, A17, B12, J16, A21, P22, D23, A22, B22 of plate B002014; cell type metadata was taken from https://www.synapse.org/#!Synapse:syn21041850/wiki/60086. 1 µl of primary preamp was further preamplified in a 20 µl reaction (100 nM ISPCR primer = AAGCAGTGGTATCAACGCAGAGT, KAPA HiFi Fidelity mix; program: 95° 3'; 9 × [98° 20"; 67° 15"; 72° 4']; 72° 5'), then diluted eightfold with water. 2 µl of this secondary preamp was used as template in a 40 µl reaction (500 nM each of primers FL-RPS24ex4F1 = /6FAM/CAATGTTGGTGCTGGCAAAA and RPS24ex6R2 = GCAGCACCTTTACTCCTTCGG, New England Biolabs Phusion HF buffer, 200 nM dNTPs, 0.4 units Phusion DNA Polymerase; program: 98° 30"; 24 × [98° 10"; 60° 15"; 72° 20"]; 72° 5'). PCRs were diluted 1:100 and run on an ABI 3130xl Genetic Analyzer with GS500ROX standard; peaks were called by the Thermo Fisher Cloud Peak Scanner app, and presented as a pseudo-gel image using a custom Python script. For Sanger sequencing, secondary preamps were used in a similar PCR but with primers RPS24ex4F4 = AAGCAACGAAAGGAACGCAA and RPS24ex6R4 = CCACAGCTAACATCATTGCAG; the cleaned-up products were sequenced with the same primers. Oligonucleotide synthesis and capillary electrophoresis were done by Stanford PAN (Protein and Nucleic Acid Facility).
 
-## Concordance analysis between technologies and donors
+### Concordance analysis between technologies and donors
 
 Concordance with SS2 was used as an extra test of the reproducibility of the method. SS2 and 10X datasets were subset to include only junctions and cell types shared in both to make the datasets as comparable as possible, and remove RNA measurements that could only be detected by SS2. Next, the SpliZ was calculated independently for both datasets as described for 10X. We then correlated the median SpliZ scores for matched genes and ontologies for genes called as significant by both technologies in the same individual. This resulted in a Pearson correlation of 0.439 between the two technologies for individual 1 and 0.769 for individual 2. We similarly subsetted both 10X datasets so that they each only included shared cell types and junctions, and then ran the SpliZ pipeline separately on each dataset, resulting in a Pearson correlation of 0.776 between the two datasets.
 
-## K-means clustering of RPS24 and ATP5F1C
+### K-means clustering of RPS24 and ATP5F1C
 
 We first subsetted to only cells in the immune, epithelial, and stromal compartments with computable SpliZ values for both RPS24 and ATP5F1C in the 10X data (9712 cells in individual 1, 2370 cells in individual 2). K-means clustering was performed with the “sklearn” package in Python with k = 3 to separate all cells into three clusters based on their RPS24 and ATP5F1C SpliZ values. Each resulting cluster was assigned to one compartment such as to minimize classification error, and accuracy was calculated for each compartment based on these cluster assignments.
 
-## LiftOver shared sites
+### LiftOver shared sites
 
 We used the UCSC LiftOver tool (https://genome.ucsc.edu/cgi-bin/hgLiftOver) with the recommended settings to convert the coordinates between human (hg38), mouse (mm10), and mouse lemur (Mmur3). To find shared SpliZsites between human, mouse, and mouse lemur, we subset to only those junctions that had been successfully and uniquely converted by the LiftOver tool.
 
-## Spermatogenesis analysis
+### Spermatogenesis analysis
 
 To find genes with regulated splicing during sperm development, for each gene, Spearman’s correlation was computed between the SpliZ and pseudotime values across the cells with computable SpliZ scores for that gene. We considered only genes with computable SpliZ in at least 100 cells, and for each organism (human, mouse, mouse lemur), the genes with |Spearman’s coefficient| >0.1 and Bonferroni-corrected p-value < 0.05 were selected as significantly splicing regulated genes. Only those genes that have names in all three organisms were considered for the conservation analysis.
 
-## Subpopulation analysis
+### Subpopulation analysis
 
 To find subcluster of cells within cell types that can be distinguished based on the splice profile as quantified by the SpliZ score, we take advantage of the fact that under the null hypothesis all cells within a cell type should follow a univariate normal distribution for the SpliZ score of each gene; however, if there are subcluster of cells with distinct splice profiles, the distribution should be better modeled via a GMM. To find the optimal number of components for the distribution of the SpliZ score for each gene within a cell type, we used the ICL, which is a model selection criterion, and selected the optimal number of component as the number that attains the knee point in the ICL curve for different component numbers. If ICL selects at least two subclusters within a cell type, we assigned cells to one of the clusters based on the fitted GMM with the optimal number of components. After clustering cells, we checked to see if subclusters are disjoint enough by computing the Bhattacharyya distance between the subclusters. The subclusters for a pair of gene and cell type are called, if the distance between subclusters is >0.5. Otherwise, we reduced the optimal number of components by 1 and then again ran the GMM clustering to see if the new subclusters can satisfy the Bhattacharyya criterion. We keep doing this until either we end up with only one cluster (which means no subcluster is found) or the resulting subclusters have enough distance.
 
 To test whether the subpopulations of SAT1 were the result of a ‘bimodal splicing’ artifact as reported in Buen Abad Najar et al., 2020, we performed the following analysis. Considering the blood classical monocytes in human individual 1 together, we calculated the fraction p of junctional reads aligning to the 5′ splice site 23,785,328 in SAT1 that partner with the 3′ splice site 23,783,883 rather than 23,784,403. We found p = 83/102 = 0.814 (the probability was 0.893 in individual 2). We then subset to only cells with exactly two reads mapping to 5′ splice site 23,785,328, resulting in 16 cells. Out of these 16 cells, all had either both reads mapping to 3′ splice site 23,783,883 or both reads mapping to 3′ splice site 23,784,403. We calculated the probability of zero cells having one read mapping to each splice site under the null hypothesis as follows: (1 - binom.pmf(1,2,0.814))16 = 0.00312 (exact binomial test). Because processing of 10X data includes a UMI deduplication step through SICILIAN (Dehghannasiri et al., 2021), these duplicates are not PCR duplicates.
 
-## SpliZsite analysis
+### SpliZsite analysis
 
-23 out of 148 (fraction = 0.1554) and 11 out of 138 (fraction = 0.0797) SpliZsites found in human individual 1 were also found to be SpliZsites in mouse lemur and mouse, respectively. We limited the comparison with mouse (resp. mouse lemur) SpliZsites to only those SpliZsites whose corresponding genes had computable SpliZ in mouse (resp. mouse lemur). To compute the expected fraction of shared SpliZsites between human and one of the other organisms under the null, we first need the null probability of each SpliZsite being shared between human and the other organism by considering the number of splice sites for the gene. This probability is 1Ni, where Ni is the number of distinct splice sites (we considered only 5′ splice sites) with junctional reads according to SICILIAN. If there are I SpliZsites in human whose genes have also computable SpliZ scores in the other organism, the expected fraction of shared SpliZsites between human and that organism is 1I∑i=1I1Ni, resulting in the expected fractions 0.071 and 0.088 of human SpliZsites shared with mouse lemur and mouse, respectively. The p-value for the observed fraction 0.1554 for mouse lemur can be approximated using a binomial test (the binomial test is an approximation as the success probability for each SpliZsite changes according to 1Ni), which results in a p-value of 0.0003.
+23 out of 148 (fraction = 0.1554) and 11 out of 138 (fraction = 0.0797) SpliZsites found in human individual 1 were also found to be SpliZsites in mouse lemur and mouse, respectively. We limited the comparison with mouse (resp. mouse lemur) SpliZsites to only those SpliZsites whose corresponding genes had computable SpliZ in mouse (resp. mouse lemur). To compute the expected fraction of shared SpliZsites between human and one of the other organisms under the null, we first need the null probability of each SpliZsite being shared between human and the other organism by considering the number of splice sites for the gene. This probability is $\frac{1}{N_{i}}$, where $N_{i}$ is the number of distinct splice sites (we considered only 5′ splice sites) with junctional reads according to SICILIAN. If there are $I$ SpliZsites in human whose genes have also computable SpliZ scores in the other organism, the expected fraction of shared SpliZsites between human and that organism is $\frac{1}{I}\sumi=1I\frac{1}{N_{i}}$, resulting in the expected fractions 0.071 and 0.088 of human SpliZsites shared with mouse lemur and mouse, respectively. The p-value for the observed fraction 0.1554 for mouse lemur can be approximated using a binomial test (the binomial test is an approximation as the success probability for each SpliZsite changes according to $\frac{1}{N_{i}}$), which results in a p-value of 0.0003.
 
-## Choosing effect size filters
+### Choosing effect size filters
 
 To choose the filters for differential analysis in 10X data, we subsetted the TSP1 and TSP2 10X data to only junctions shared in both individuals and cell types shared in both individuals. We then ran the SpliZ pipeline. Using a p-value threshold of 0.05 for the SpliZ, we tested the correlation between median SpliZ values matching on cell type for genes called as significant in both datasets based on that effect size cutoff. Without an effect size cutoff, there was already a correlation of 0.2. We chose the effect size threshold 0.5 because it yielded a correlation of 0.6 between the datasets (Figure 8—figure supplement 1). To decide the SpliZVD cutoff for SS2 data, we perform the same procedure, except this time use the SS2 data from TSP1 and TSP2, again restricted to only shared junctions and shared cell types. Because the correlation never reaches 0.6 for this data, we choose a cutoff of 3.5 because it maximizes correlation (Figure 8—figure supplement 1).
 
-## Sanger sequencing confirms low levels of the +a-b+c RPS24 isoform in mouse kidney
+### Sanger sequencing confirms low levels of the +a-b+c RPS24 isoform in mouse kidney
 
 Whole-tissue RNA was amplified from mouse adult kidney and human fetal kidney, assuming that a large fraction of the RNA would be coming from epithelial cells. The PCR products were cloned and then ligated so that multiple could be read out per each Sanger read. However due to the repetitive nature of the inserts, the read quality was poor and only the first couple of inserts could be interpreted. Generally, our results confirm that +a-b+c is not very abundant in mouse: in human kidney, it is 45% of total, while in mouse kidney it is only 14% (data not shown).
 
-## Bowtie2 alignment of RPS24 reads
+### Bowtie2 alignment of RPS24 reads
 
 Custom fasta files were created for human, mouse, and mouse lemur. Each includes eight transcripts corresponding to all combinations of inclusion of the a, b, and c exons in RPS24. Each sequence is centered on whichever of these exons are included, and padded on either side with sequence from exon 4 and exon 6 such that each sequence is 150 base pairs long. A Bowtie2 index was created based on these transcriptomes for each species, and all fasta files for individual 1 from human, mouse, and mouse lemur were aligned to the respective index using Bowtie2 with the command bowtie2 --no-unal index/{params.species}_RPS24_bwt -U {input} -S {output}, where {params.species} is the name of the species’ index, {input} is the input fasta and {output} is the output file name. Because exons a, b, and c are 3, 18, and 22 base pairs long, respectively, and 10X reads are around 90 base pairs long, each read aligning to one of these transcripts uniquely identifies the isoform.
 
-## Enrichment of genes significant in all three species analysis
+### Enrichment of genes significant in all three species analysis
 
-We test whether the number of genes significant in all three species is more than expected under the null hypothesis, which is that there is no evolutionary conservation between the species. Let s be the number of genes that are shared between human, lemur, and mouse that are significant at least once in all three species. Let n be the total number of genes present in at least 20 cells in a cell type in all three species (note: mapping between species is not perfect, so some genes present in all are probably missing). The probability that a given gene is significant in all three species isP(gene sig in 3)=P(gene sig in human)P(gene sig in lemur | gene sig in human)P(gene sig in mouse | gene sig in human, gene sig in lemur).
+We test whether the number of genes significant in all three species is more than expected under the null hypothesis, which is that there is no evolutionary conservation between the species. Let s be the number of genes that are shared between human, lemur, and mouse that are significant at least once in all three species. Let n be the total number of genes present in at least 20 cells in a cell type in all three species (note: mapping between species is not perfect, so some genes present in all are probably missing). The probability that a given gene is significant in all three species is
 
-Under the null hypothesis, assume that a gene being significant in one species is independent from it being significant in either other species. Therefore, under the null hypothesis, P(gene sig in 3)=P(gene sig in human)P(gene sig in lemur)P(gene sig in mouse).
+$$
+P(gene sig in 3)=P(gene sig in human)P(gene sig in lemur | gene sig in human)P(gene sig in mouse | gene sig in human, gene sig in lemur).
+$$
 
-We can estimate the quantities on the right-hand side of the question for each species. For every species, calculate pspecies, wherepspecies=(# genes that ever have a significant mz in species) (total # genes with computable SpliZ in at least 20 cells in a cell type).
+Under the null hypothesis, assume that a gene being significant in one species is independent from it being significant in either other species. Therefore, under the null hypothesis, $P(gene sig in 3)=P(gene sig in human)P(gene sig in lemur)P(gene sig in mouse)$.
 
-Therefore, under the null hypothesis, the probability that at least x genes are significant in all three species out of n genes is given by 1−binom_cdf(x,n,phuman∗plemur∗pmouse). The estimates of the degree of regulated splicing are a lower bound as they are based on (a) sampling only a subset of organs and (b) based on studying only a subset of genes that are sampled sufficiently with current sequencing depth conventions. Incomplete gene naming conventions, especially in the mouse and lemur, may restrict the power of this analysis.
+We can estimate the quantities on the right-hand side of the question for each species. For every species, calculate pspecies, where
+
+$$
+p_{species}=(# genes that ever have a significant mz in species) (total # genes with computable SpliZ in at least 20 cells in a cell type).
+$$
+
+Therefore, under the null hypothesis, the probability that at least x genes are significant in all three species out of n genes is given by $1−binom_cdf(x,n,p_{human}∗p_{lemur}∗p_{mouse})$. The estimates of the degree of regulated splicing are a lower bound as they are based on (a) sampling only a subset of organs and (b) based on studying only a subset of genes that are sampled sufficiently with current sequencing depth conventions. Incomplete gene naming conventions, especially in the mouse and lemur, may restrict the power of this analysis.

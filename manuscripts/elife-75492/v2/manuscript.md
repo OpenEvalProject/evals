@@ -18,7 +18,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01kj2bm70 Newcastle University Biosciences Institute, Newcastle University, Newcastle upon Tyne Newcastle United Kingdom
+1. Newcastle University Biosciences Institute, Newcastle University, Newcastle upon Tyne Newcastle United Kingdom ([ROR:01kj2bm70](https://ror.org/01kj2bm70))
 
 † Corresponding author
 
@@ -44,9 +44,45 @@ To address these questions in a pre-clinical setting, we used a simple mouse mod
 
 ## Results
 
-## Short-term post-irradiation senolytic interventions rescue premature ageing
+### Short-term post-irradiation senolytic interventions rescue premature ageing
 
 Male C57Bl/6 J mice received fractionated sublethal whole-body irradiation (IR, 3 × 3 Gy) at an age of 5–6 months and were treated with a short course (10 days) of senolytics by oral gavage at 1 month after irradiation, i.e., when acute radiation sickness had abated (Figure 1A). Doses were 5 mg/kg/day dasatinib and 50 mg/kg/day quercetin (D+Q) as typically applied in senolytic mouse studies (Palmer et al., 2019; Schafer et al., 2017; Zhu et al., 2015). As a senolytic, Navitoclax has been used at widely different doses in mice, ranging from 1.5 mg/kg/day (Tarantini et al., 2021; Yabluchanskiy et al., 2020) to 50 mg/kg/day (Bussian et al., 2018; Chang et al., 2016). Because Navitoclax causes thrombocytopenia at higher concentrations (Wilson et al., 2010), we decided to use Navitoclax in the lower concentration range, e.g., at 5 mg/kg/day. Irradiated mice experienced premature ageing as documented by a doubling of the rate of frailty progression, decreased neuromuscular co-ordination, decreased short-term memory, and increased general and cancer-associated mortality (Fielder et al., 2019 and Figure 1). When mice were treated with either senolytic drug at 1 month after IR indicators of premature ageing were rescued over almost 1 year of follow-up (Figure 1B – G). Although frailty was not reversed, rates of frailty progression decreased after senolytic treatment to values comparable to non-irradiated mice (Figure 1B). The frailty index is composed of 30 different assessments. Early intervention with each of the senolytics improved six of them, namely, mouse grimace scale, body condition, breathing rate, eye discharge/swelling, whisker loss, and body weight loss. In addition, Navitoclax treatment also reduced loss of fur colour and tumour incidence (Figure 1—figure supplement 2). Irradiated mice progressively lost neuromuscular co-ordination as indicated by increasingly poorer performance in the wire hanging (Figure 1C) and rotarod (Figure 1D) tests. Improvements for both interventions became greater with increasing age, with Navitoclax being more effective than D+Q (Figure 1C and D). Short-term memory was assessed using spontaneous alternation frequency in a Y-maze test at 16 months of age (Fielder et al., 2019). It was improved substantially following Navitoclax treatment, with a modest improvement following D+Q (Figure 1E). Liver damage was assessed by the activity of alanine transaminase (ALT) and aspartate aminotransferase (AST) in serum, which indicates leakage from hepatocytes, at 16 months of age. ALT activity in serum was reduced under both interventions (Figure 1F), suggesting that they enabled better liver maintenance. However, intervention-dependent changes were not significant for AST although ALT and AST activities were positively correlated amongst all mice (correlation coefficient = 0.533, p=0.0000234). Picrosirius red staining did not show a significant effect of senolytics on liver fibrosis. Although cohort sizes were not powered to assess long-term survival effects, both treatments tended to result in improved survival and lower tumour prevalence at death in comparison to irradiated control mice (Figure 1G). While normal skin ageing is characterised by epidermal thinning, irradiation-induced premature ageing is accompanied by hypertrophy of the epidermis in the skin (Figure 1—figure supplement 3A,B). Neither D+Q nor Navitoclax treatment reduced epidermal hypertrophy at late age (Figure 1—figure supplement 3C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig1-v2.jpg)
+
+**Figure 1.:** (A) Layout of the experiment. (B) Frailty index (FI) vs mouse age for non-irradiated (Non-IR, black), irradiated (IR, red), and irradiated plus treated with either D+Q (green) or Navitoclax (blue) mice. Irradiation and treatment times are indicated by vertical lines. Dots indicate FI for individual mice, regression lines and 95% confidence intervals are indicated by bold and dotted lines, respectively. Individual frailty scores are enlarged for clarity in Figure 1—figure supplement 1. (C) Wire hanging test results (% success) under the indicated treatments and ages. (D) Maximum speed achieved on rotarod under the indicated treatments and ages. (E) Short-term memory assessed as spontaneous alternation in a Y maze under the indicated treatments. (F) Alanine transaminase (ALT) activity in plasma at 16 months. (G) Tumour prevalence at death. Data are from 12 mice per group at start with attrition to 8–10 mice over the course of the experiment.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Frailty index (FI) vs mouse age for (A) non-irradiated (non-IR, black), (B) irradiated (IR, orange), and IR plus treated with an early intervention of either (C) D+Q (green) or (D) Navitoclax (blue) mice. Dots at 50% opacity indicate FI for individual mice, regression lines and 95% confidence intervals are indicated by bold and narrow dotted lines, respectively. Darker dots indicate multiple animals with the same frailty index score.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Colours represent the mean FI of all animals alive at that given point (8–12 animals/group). Arrows indicate components that were improved under the interventions.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Epidermal thickness decreases in old (median age 32 months) as compared to young adult (median age 10 months) mice. (B) Irradiated (IR) at 5 months of age results in increased epidermal thickness at 12 months. (C) Treatment of irradiated mice with senolytics D+Q or Navitoclax at 7 months of age does not change epidermal thickness at 16 months of age. Data are from at least seven animals/group.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A–F) Irradiated vs sham-irradiated mice at 12 months of age. (A) Nuclear area. (B) Frequency of karyomegalic hepatocytes. (C) HMGB1 immunohistochemistry. Left: Representative HMGB1 micrographs (left: control, right: 7 months past IR). Right: Frequencies of HMGB1-negative hepatocytes. (D) Telomere-associated foci (TAF) assay. Left: Representative TAF immunoFISH image (single focal plane, arrowhead indicates overlap of a telomere [red] with a γH2AX focus [green], e.g., TAF). Right: Average TAF frequency per hepatocyte nucleus. (E) Frequency of TAF-positive hepatocytes. (F) Frequency of hepatocytes with at least three TAF. (G–K) Young adult (8–14 months) vs old (32 months) mice. Nuclear area (G), frequencies of karyomegalic hepatocytes (H), frequencies of HMGB1-negative hepatocytes (I), TAF frequency per nucleus (J), and frequency of hepatocytes with at least one TAF (K). Data are from at least six animals/group.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Nuclear size (A), percentage of karyomegalic hepatocytes (B), percentage of HMGB1-negative hepatocytes (C), telomere-associated foci (TAF) frequency per nucleus (D), frequency of TAF-positive cells, and (E) frequency of cells with at least three TAF (F) in mice livers at 16 months of age, irradiated at 5 months and treated with either D+Q, Navitoclax, or sham gavage at 6 months. Data are from at least six animals/group.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Neuron nuclear area in CA1 (A) and CA3 (B). (C, D) Left: LaminB1 immunostaining (green) in CA1 (C) and CA3 (D) regions of the hippocampus under the different treatments. Blue: DAPI. Arrowheads indicate Lmn1-positive (red) and negative (white) nuclei. Right: Frequencies of laminB1-negative neurons in CA1 (top) and CA3 (bottom). (E) Telomere-associated foci (TAF) ImmunoFISH of neurons in the CA1 area. Left: Higher magnification of a single TAF (single plane image) and intensity scans for green (gH2AX) and red (telomere) fluorescence. Right: Maximum intensity projections. Frequencies of TAF-positive neurons in CA1 (F) and CA3 (H). Frequencies of neurons with at least three TAF in CA1 (G) and CA3 (I). Ionized calcium-binding adapter molecule 1 (Iba1) + cell density in CA1 (J) and CA3 (K). Iba1 + cell soma size in CA1 (L) and CA3 (M). Data are from at least six animals/group.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** Muscle fibre cross-sectional area in oxidative (A) and non-oxidative (B) fibres from irradiated mice at 16 months of age. Frequencies of p21-positive myonuclei in oxidative (C) and glycolytic (D) fibres. (E) Telomere-associated foci (TAF) frequencies in myonuclei. Data are from at least five animals/group.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** Concentrations were measured by cytokine array (Eve Technologies) and z-scored. Four peptides in the array were not significant above background in any mouse and were excluded. There are no significant differences for any peptide between treatment groups.
 
 Sublethal irradiation resulted in persistently enhanced levels of markers for cellular senescence in multiple tissues of mice for up to 12 months (Le et al., 2010; Seol et al., 2012). Senescence marker levels in 1 year old irradiated mice were similar to those found in normally ageing mice older than 24 months (Hudgins et al., 2018; Jurk et al., 2014). We focussed first on liver in which hepatocyte senescence contributes causally to age-associated functional decline (Jurk et al., 2014; Ogrodnik et al., 2017). As senescence markers, we measured nuclear size and karyomegaly (Aravinthan and Alexander, 2016; Ogrodnik et al., 2017), nuclear HMGB1 exclusion (Davalos et al., 2013), nuclear accumulation of telomere-associated DNA damage foci (TAF), and frequencies of TAF-positive hepatocyte nuclei (Hewitt et al., 2012; Ogrodnik et al., 2017). Among TAF-positive cells, we assayed both cells with any TAF and those with at least three TAF, because of previous evidence suggesting that the latter might be more representative of cells in ‘full’ or ‘late’ senescence (Zou et al., 2004; Jurk et al., 2014). The markers indicated higher frequencies of senescent hepatocytes at 7 months after irradiation (Figure 1—figure supplement 4A-F). Marker changes were similar to those seen in normally ageing mice at ages above 30 months (Figure 1—figure supplement 4G-K). Navitoclax intervention at 6 months of age resulted in reduced senescent hepatocyte frequencies in liver 10 months later as indicated by all markers tested (Figure 1—figure supplement 5A-F). However, D+Q intervention led to reduced nuclear size and hepatocyte karyomegaly but did not maintain a significant long-term reduction of HMGB1-negative or TAF-positive hepatocytes (Figure 1—figure supplement 5A-F).
 
@@ -56,33 +92,101 @@ We also examined the effects of D+Q or Navitoclax treatment on morphological and
 
 It is often assumed that the effect of senescent cells onto physiological characteristics is mediated via the SASP, especially the induction of a chronic inflammatory state (Ogrodnik et al., 2019). Concentrations of 18 cytokines/chemokines that are part of a typical SASP were measured in serum at the end of the experiment by cytokine array (Eve Technologies). Although short senolytic treatment at 6 months of age was sufficient to reduce senescence markers in liver and brain persistently (Figure 1—figure supplements 5 and 6), none of the analysed cytokines was significantly different from controls at late age (Figure 1—figure supplement 8).
 
-## Late senolytic interventions block further progression of irradiation-induced premature ageing
+### Late senolytic interventions block further progression of irradiation-induced premature ageing
 
 So far, our data showed that a short senolytic intervention at an early timepoint can rescue irradiation-induced premature accumulation of senescent cells as well as premature physiological ageing. We next asked the question, whether senolytics could still be effective if mice were treated late after irradiation, when premature ageing was already manifest. Animals were again irradiated at 5 months of age, but senolytic interventions were delayed for 6 months and mice were treated with the senolytics D+Q or Navitoclax (using the same regimen as before) at 11 months of age (Figure 2A). At this timepoint, the frailty index in irradiated mice was already significantly above than in sham-irradiated mice (Figure 2B). However, similar to early intervention, late senolytic treatment did not reduce the frailty index score, but rescued its further accelerated progression (Figure 2B). Late intervention with each of the senolytics improved largely the same components of the frailty index as early senolytic intervention, namely, mouse grimace scale, body condition, breathing rate, and eye discharge/swelling (Figure 1—figure supplement 2). Mice that had been treated with senolytics at 11 months of age still showed a tendency for improved results of the hanging wire test at 14 months (Figure 2C); however, rotarod performance was not better than in irradiated animals (Figure 2D). Late intervention with either senolytic improved short-term memory at late age (Figure 2E). Neither liver damage (Figure 2F) nor tumour incidence (Figure 2G) following late senolytic treatment was significantly reduced. Epidermal thickness was unchanged (Figure 2—figure supplement 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig2-v2.jpg)
+
+**Figure 2.:** (A) Layout of the experiment. (B) Frailty index (FI) vs mouse age for non-irradiated (Non-IR, black), irradiated (IR, red), and irradiated plus treated with either D+Q (green) or Navitoclax (blue) mice. Irradiation and treatment times are indicated by vertical lines. Dots indicate FI for individual mice, regression lines and 95% confidence intervals are indicated by bold and dotted lines, respectively. Individual scores are enlarged for clarity in Figure 2—figure supplement 1. (C) Wire hanging test results (% success) under the indicated treatments. (D) Maximum speed achieved on rotarod under the indicated treatments at 14 months of age. (E) Short-term memory assessed as spontaneous alternation in a Y maze under the indicated treatments. (F) Alanine transaminase (ALT) activity in serum, 16 months old. (G) Tumour prevalence at death. Data are from 12 mice per group at start with attrition to 8–10 mice over the course of the experiment.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Frailty indices (FIs) vs mouse age for irradiated (IR) plus treated with a late intervention of either (A) D+Q (green) or (B) Navitoclax (blue) mice. Dots at 50% opacity indicate FI for individual mice, regression lines and 95% confidence intervals are indicated by bold and narrow dotted lines, respectively. Darker dots indicate multiple animals with the same FI score.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Data are from at least seven animals/group.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Nuclear size (A), percentage of karyomegalic hepatocytes (B), percentage of HMGB1-negative hepatocytes (C), telomere-associated foci (TAF) frequency per nucleus (D), frequency of TAF-positive cells, and (E) frequency of cells with at least three TAF (F) in mice livers at 16 months of age, irradiated at 5 months and treated with either D+Q, Navitoclax, or sham gavage at 12 months. Data are from at least six animals/group.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Muscle fibre cross-sectional area in oxidative (A) and non-oxidative (B) fibres from irradiated mice after late intervention at 16 months of age. (C) Telomere-associated foci (TAF) frequencies in myonuclei at 16 months of age after late senolytic intervention. Data are from at least five animals/group.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Ionized calcium-binding adapter molecule 1 (Iba1) + cell density in CA1 (A) and CA3 (C). Iba1 + cell soma size in CA1 (B) and CA3 (D). Data are from at five to six animals/group.
 
 In agreement with a diminished effect of late treatments on liver damage, there was also less impact on persistent systemic cell senescence as assessed by nuclear size, nuclear HMGB1 expression, and TAF frequencies in liver (Figure 2—figure supplement 3D-F); however, treatment with Navitoclax still reduced nuclear size (Figure 2—figure supplement 3A), karyomegaly (Figure 2—figure supplement 3B), and frequencies of HMGB1-negative hepatocytes (Figure 2—figure supplement 3C) suggesting a reduced senescent burden. There was no improvement of hind limb myofibre cross-sectional area but rather a tendency (significant for Navitoclax) to reduce it (Figure 2—figure supplement 4A,B). There was no reduction of TAF frequencies in muscle (Figure 2—figure supplement 4C). However, in agreement with improved memory maintenance (Figure 2E) we found a reduction of neuroinflammation markers in the CA1 (both markers) and CA3 (microglia soma size only) regions of the hippocampus following both late interventions (Figure 2—figure supplement 5).
 
 Together, these data show that a short-term senolytic intervention even if applied at an advanced age still has beneficial effect on irradiation-induced premature progression of frailty and cognitive decline.
 
-## A short-term intervention with the senostatic metformin rescues irradiation-induced premature ageing
+### A short-term intervention with the senostatic metformin rescues irradiation-induced premature ageing
 
 Senolytics can have serious side effects, for instance, Navitoclax-induced thrombocytopenia at higher doses (Demaria, 2017), that may be limiting for preventive applications. Senostatic or senomorphic caloric restriction mimetics, which block senescence-stabilising signalling, can also reduce net accumulation of senescent cells in tissues (da Silva et al., 2019; Wang et al., 2010). One example is metformin, which has been shown to act as a senostatic (Moiseeva et al., 2013) and has an excellent safety profile as testified by about 70 years of clinical application. We therefore decided to treat our irradiated mice with metformin for a relatively short period (10 weeks), starting at 1 month after irradiation, and assessed the long-term effects of this treatment (Figure 3A). The amount of 1 mg/g food, as used here, had previously been found to extend lifespan and healthspan of mice (Martin-Montalvo et al., 2013). Similar to senolytic interventions, metformin treatment rescued the enhanced rate of frailty progression due to irradiation (Figure 3B). Among the components of frailty, metformin improved mouse grimace scale, body condition, breathing rate, whisker loss, and body weight loss at late age (Figure 1—figure supplement 2). It also improved neuromuscular co-ordination as tested by hanging wire test (Figure 3C), but had only a minor effect on performance on the rotarod at late age (Figure 3D), which might be due to the high body weights of mice fed soaked food. At 16 months of age, metformin-treated animals tended to perform better in the short-term memory test (Figure 3E), showed less liver damage (Figure 3F) and tumour prevalence at death was reduced to the levels as in sham-irradiated mice (Figure 3G). Metformin treatment also tended to reduce irradiation-induced epidermal hypertrophy assessed at 16 months of age (Figure 3—figure supplement 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig3-v2.jpg)
+
+**Figure 3.:** (A) Outline of the experiment. Animals were irradiated at 5 months of age and treated with either soaked food (controls) or metformin in soaked food (Met) from 6 months of age for 10 weeks. (B) Frailty index (FI) vs mouse age for non-irradiated (no IR, black), irradiated (IR, red), and IR plus treated with metformin (blue) mice. Irradiation and treatment times are indicated by vertical lines. Dots indicate FI for individual mice, regression lines and 95% confidence intervals are indicated by bold and dotted lines, respectively. Individual scores are enlarged for clarity in Figure 3—figure supplement 1. (C) Wire hanging test results (% success) under the indicated treatments and ages. (D) Maximum speed achieved on rotarod under the indicated treatments and ages. (E) Short-term memory assessed as spontaneous alternation in a Y maze under the indicated treatments. (F) Alanine transaminase (ALT) activity in plasma at 16 months of age. (G) Tumour prevalence at death. Data are from 12 mice per group at start with attrition to 8–10 mice over the course of the experiment.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Frailty index (FI) vs mouse age for mice that were irradiated (IR) and fed metformin in soaked food. Dots at 50% opacity indicate FI for individual mice, regression lines and 95% confidence intervals are indicated by bold and narrow dotted lines, respectively. Darker dots indicate multiple animals with the same FI score.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Data are from at least six animals/group.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Mice were irradiated at 5 months of age and treated with metformin for 10 weeks starting at 6 months of age. (A) Nuclear size with representative images (left, blue DAPI, green autofluorescence) and quantification (right). (B) Frequency of karyomegalic hepatocytes. (C) Frequency of hepatocytes negative for nuclear HMGB1. (D) Telomere-associated foci (TAF) frequency per nucleus. (E) Frequency of hepatocytes with at least one TAF. (F) Frequency of hepatocytes with at least three TAF. Data are from at least six animals per group at 16 months of age.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Neuron nuclear area in CA1 (top) and CA3 (bottom). (B) Frequencies of laminB1-negative neurons in CA1 (top) and CA3 (bottom). (C) Frequencies of telomere-associated foci (TAF)-positive neurons in CA1 (top) and CA3 (bottom). (D) Frequencies of neurons with at least three TAF in CA1 (top) and CA3 (bottom). (E) Ionized calcium-binding adapter molecule 1 (Iba1) + cell density in CA1 (top) and CA3 (bottom). (F) Iba1 + cell soma size in CA1 (top) and CA3 (bottom). Data are from five to six animals/group.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Myofibre cross-sectional area of oxidative (A) and non-oxidative (B) fibres. (C) Frequencies of telomere-associated foci (TAF)-positive myonuclei. Data are from at least eight animals per group at 16 months of age.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Concentrations were measured by cytokine array (Eve Technologies) and z-scored. Four peptides in the array were not significant above background in any mouse and were excluded. Significant differences (t-test) are indicated as p<0.05 (*) and p=0.10 (+).
 
 All tested senescence markers in livers of metformin-treated mice indicated the reduction of senescent cell frequencies at old age (16 months) (Figure 3—figure supplement 3A-F). Similarly, senescence and neuroinflammation markers in the CA1 and CA3 regions of the hippocampus were decreased (Figure 3—figure supplement 4A-F). Interestingly, metformin treatment improved skeletal muscle fibre maintenance as shown by larger cross-sectional area of both oxidative and non-oxidative muscle fibres (Figure 3—figure supplement 5A,B) and reduced TAF frequencies in myocyte nuclei (Figure 3—figure supplement 5C). Metformin treatment also led to a persistent reduction of the levels of the pro-inflammatory SASP components IL-17, CCL2, and TNFα in serum of mice at 16 months of age, e.g., more than half a year after cessation of treatment (Figure 3—figure supplement 6).
 
 In conclusion, these data indicate that a relatively short treatment with the senostatic metformin rescues multiple domains of irradiation-induced premature ageing in mice for at least 10 months after cessation of the intervention.
 
-## At therapeutic concentrations, metformin inhibits the SASP by reducing NADPH oxidase 4 activity in senescent cells
+### At therapeutic concentrations, metformin inhibits the SASP by reducing NADPH oxidase 4 activity in senescent cells
 
 Metformin can block the SASP, and thus act as a senostatic, by inhibiting complex I of the electron transport chain, thus causing a reduction of mitochondrial ROS production, which in turn will reduce the activity of the NF-κB transcription factor, the major driver of the pro-inflammatory SASP. This pathway has been identified in vitro, using millimolar concentrations of metformin (Moiseeva et al., 2013). However, therapeutically achievable metformin concentrations in the vast majority of tissues in mice or man are typically well below 100 μM (Wilcock and Bailey, 1994). In permeabilised human fibroblasts in vitro, metformin inhibits complex I-dependent respiration with pyruvate and malate in concentrations around 1 mM or higher but has no detectable effect on oxygen consumption rates (OCR) at 100 μM (Figure 4A). Supplementation of the complex II substrate succinate completely restored respiration under metformin, confirming that metformin at high concentrations inhibits complex I specifically (Figure 4A). Even when senescent human fibroblasts were treated with various concentrations of metformin for 10 days to mimic longer-term in vivo interventions, low metformin concentrations (100 μM) did not decrease mitochondria-dependent ATP production compared with senescent untreated controls. In contrast, 2 mM metformin shifted cellular ATP production almost entirely to glycolysis with little contribution from mitochondrial oxidative phosphorylation (Figure 4B). Interestingly, the senescence-associated enhanced H2O2 production from whole cells (as measured by Amplex Red assay) was rescued only by low (up to 400 μM), but not by high metformin concentrations (Figure 4C). Reduction of ROS production in senescent cells by long-term treatment with low metformin concentrations was confirmed by measuring cellular ROS levels using dihydroethidium (DHE) fluorescence (Figure 4D), with a stronger effect for metformin as compared to rapamycin. In accordance with the ROS data (Figure 4C and D), low concentrations of metformin were more effective than higher ones in reducing a wider range of cytokines in the secretome of senescent fibroblasts (Figure 4E). Together, these data indicate that low, therapeutically relevant concentrations of metformin reduce the release of ROS and SASP cytokines from senescent cells, which can explain the senostatic activity of metformin in vivo. Importantly, this effect was not mediated by complex I inhibition.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig4-v2.jpg)
 
-**Figure 4.:** (A) Mitochondrial oxygen consumption rate of permeabilised MRC5 human fibroblasts treated sequentially (at timepoint indicated by arrow) with various concentrations of metformin (Met), 0.5 μM rotenone (Rot), 4 mM succinate (Suc), and 2.5 μM carbonyl cyanide p-trifluoromethoxy-phenylhydrazone. M ± SD, n = 4. (B) ATP production rate by oxidative phosphorylation (OXPHOS) and glycolysis in young and senescent MRC5 human fibroblasts treated for 10 days with the indicated metformin concentrations. M ± SD, n = 4. (C) Impact of metformin in the indicated concentrations on ROS production measured by AR in human fibroblasts. Cells were induced to senescence by IR and treated with metformin for 10 days. M ± SD, n = 3. (D) Impact of rapamycin and metformin on ROS levels in human fibroblasts measured by dihydroethidium (DHE) fluorescence in FACS. Left: representative FL3 histograms. Light blue: young, red: senescent (10d past IR), purple: senescent + 0.1 mM metformin, black: senescent + 10 nM rapamycin. Right: average DHE fluorescence intensities. M ± SD, n = 5. (E) Cytokine concentrations in the supernatant of human fibroblasts. N = 2. Senescent fibroblasts were treated with the indicated metformin concentrations for 10 days. Source data are provided as Figure 4—source data 1.Figure 4—source data 1.
+**Figure 4.:** (A) Mitochondrial oxygen consumption rate of permeabilised MRC5 human fibroblasts treated sequentially (at timepoint indicated by arrow) with various concentrations of metformin (Met), 0.5 μM rotenone (Rot), 4 mM succinate (Suc), and 2.5 μM carbonyl cyanide p-trifluoromethoxy-phenylhydrazone. M ± SD, n = 4. (B) ATP production rate by oxidative phosphorylation (OXPHOS) and glycolysis in young and senescent MRC5 human fibroblasts treated for 10 days with the indicated metformin concentrations. M ± SD, n = 4. (C) Impact of metformin in the indicated concentrations on ROS production measured by AR in human fibroblasts. Cells were induced to senescence by IR and treated with metformin for 10 days. M ± SD, n = 3. (D) Impact of rapamycin and metformin on ROS levels in human fibroblasts measured by dihydroethidium (DHE) fluorescence in FACS. Left: representative FL3 histograms. Light blue: young, red: senescent (10d past IR), purple: senescent + 0.1 mM metformin, black: senescent + 10 nM rapamycin. Right: average DHE fluorescence intensities. M ± SD, n = 5. (E) Cytokine concentrations in the supernatant of human fibroblasts. N = 2. Senescent fibroblasts were treated with the indicated metformin concentrations for 10 days. Source data are provided as Figure 4—source data 1.
 
 To identify potential alternative mechanisms of the senostatic activity of metformin, we subjected human fibroblasts treated with either low (100 μM) or high (2 mM) metformin concentrations to a stress response pathway identifier assay by cytometry by time of flight (CyTOF). Two or three antigens were chosen to represent each of seven cellular stress response pathways, namely, heat shock, oxidative stress response, xenobiotics response, ER-UPR, Mito-UPR, nutrient signalling pathway/autophagy, and DNA damage response (DDR)/senescence, resulting in a panel of 21 antibodies (Table 2). Cells were treated with test interventions for 2 days and analysed by CyTOF using the antibody panel. Starvation, heat shock, and oxidative stress by H2O2 treatment were used as positive control interventions. In the positive control experiments, activation of heat shock and oxidative stress response pathways was evident following the respective control treatments together with induction of autophagy and a DDR/senescence, while starvation impacted primarily onto the mTOR pathway, together validating the assay (Figure 5A). Treatment with high metformin reduced the levels of marker proteins in a wide range of pathways, including heat shock, oxidative stress response, ER-UPR, Mito-UPR, nutrient signalling pathway/autophagy, and DDR/senescence. In contrast, low metformin only reduced indicators of oxidative stress response as expected (compare Figure 4C and D) and nutrient signalling (Figure 5A). This suggested that low metformin might activate autophagy and mitophagy via suppression of the mTOR pathway and thus contribute to a reduction of mitochondrial ROS production in senescence. Therefore, we next examined mitophagy activity in human fibroblasts transfected with the mitophagy reporter mt-mKeima (Katayama et al., 2011), which localises to mitochondria and displays a shift in fluorescence emission under low pH, when mitochondria are delivered into lysosomes (indicated in red, Figure 5B). As shown before (Dalle Pezze et al., 2014; Korolchuk et al., 2017), mitophagy activity was reduced in senescent cells. This reduction occurred within hours after irradiation and mitophagy remained low in irradiated cells for multiple days (Figure 5C). Treatment with rapamycin improved mitophagy at all timepoints, but 100 μM metformin had no effect (Figure 5C). Mitochondrial dysfunction in senescence is characterised by high ROS production together with low respiratory coupling (Passos et al., 2007). In accordance with their effects on mitophagy, rapamycin, but not metformin, suppressed senescence-associated mitochondrial superoxide production as measured by MitoSOX fluorescence (Figure 5D). Moreover, metformin did not rescue mitochondrial dysfunction in senescent cells as assessed by respiratory control ratio (RCR) with the complex I-linked substrate, pyruvate + malate (Figure 5E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig5-v2.jpg)
+
+**Figure 5.:** (A) Impact of high (2 mM) and low (100 µM) concentrations of metformin on stress response pathways in human fibroblasts. cytometry by time of flight with the indicated antibodies was performed on human MRC5 fibroblasts treated for 2 days with the indicated interventions. Heat map colour codes indicate strong decrease (dark blue), mild decrease (light blue), no change (white), light increase (amber), or strong increase (red) as exemplified in Figure 5—figure supplement 1. Data are pooled from two independent experiments. (B) Dermal fibroblasts expressing mt-mKeima were irradiated with 20 Gy and treated with either 100 µM metformin or 10 nM rapamycin for 3 days. Red fluorescence indicates mitochondria engulfed in lysosomes. (C) Number of mitophagy events per cell. Dermal fibroblasts expressing mt-mKeima were irradiated with 20 Gy and treated with either 100 µM metformin or 10 nM rapamycin for the indicated times. N = 196–271 cells per condition pooled from three biological repeats. (D) Impact of rapamycin and metformin on mitochondrial superoxide levels in human fibroblasts either young or at 10 days after IR measured (Sen) by MitoSOX fluorescence in FACS. N = 5. (E) Respiratory control ratio (RCR) of mitochondria in fibroblasts at 10 days after IR treated with the indicated concentrations of metformin. N ≥ 3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Treatments are indicated on the left. Colour codes at the bottom represent strong decrease (dark blue), mild decrease (light blue), no change (white), light increase (amber), or strong increase (red) and correspond to the heatmap in Figure 5A.
+
 Together, these data suggested that low metformin has no effect on mitochondrial (dys)function in senescence. Therefore, we tested the alternative possibility that it might primarily reduce non-mitochondrial, rather than mitochondrial, ROS production in senescent cells. ROS production by the NADPH oxidase 4 (NOX4) has been shown to contribute to replicative (Lener et al., 2009), oncogene-induced (Weyemi et al., 2012), and stress-induced senescence (Goy et al., 2014) although its knock out had no impact on lifespan in mice (Rezende et al., 2017). To test the hypothesis that low metformin might act as a senostatic via reduction of the major cytoplasmic ROS generator NOX4, we first measured the abundance of NOX4 in senescent fibroblasts, which was enhanced as expected (Figure 6A and B). Moreover, NOX4 did not colocalise with mitochondria (Figure 6—figure supplement 1). A low concentration of metformin (100 μM) reduced NOX4 protein levels in senescent human fibroblasts as shown by both immunofluorescence (Figure 6A) and Western blotting (Figure 6B). To test whether manipulation of NOX4 alone would be sufficient to explain the senostatic activity of metformin, we overexpressed NOX4 in young fibroblasts and assessed its effects on markers of senescence, SASP, and ROS. In comparison to EGFP-overexpressing controls, NOX4-overexpressing fibroblasts were more often positive for Sen-β-Gal (Figure 6C) and produced higher levels of ROS (Figure 6D). Importantly, cells overexpressing NOX4 produced significantly more of the SASP interleukin IL-6 (Figure 6E), and there was a strong positive correlation between NOX4 and IL-6 levels (Figure 6F), but not between EGFP and IL-6 (Figure 6G). Finally, we treated fibroblasts in stress-induced senescence with the NADPH oxidase inhibitor diphenyleneiodonium chloride (DPI), which reduced both Sen-β-Gal activity as a marker for the senescent phenotype (Figure 6H) and DHE fluorescence, indicative of decreased production of senescence-associated ROS (Figure 6I).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig6-v2.jpg)
+
+**Figure 6.:** (A) Human fibroblasts were irradiated with 20 Gy and treated with 100 µM metformin for 10 days. Left: Representative images of cells treated as indicated, red: NADPH oxidase 4 (NOX4) immunofluorescence, blue: DAPI. Right: Quantification of NOX4 fluorescence intensity. (B) Left: Representative NOX4 Western blot. Cells treated as above. A complete blot is provided as Figure 6—source data 1. Right: Average NOX4 signal intensity, normalised to total protein. (C) Left: Sen-β-Gal staining in EGFP- and NOX4-overexpressing fibroblasts. Right: Average frequencies of Sen-β-Gal-positive cells. (D) Left: Dihydroethidium (DHE) staining in EGFP- and NOX4-overexpressing fibroblasts. DHE fluorescence in red, cells visualised in phase contrast. Right: Average DHE fluorescence intensity per cell. (E) Co-staining for NOX4 (red) and IL-6 (green) on EGFP- or NOX4-transfected fibroblasts. Right: Fluorescence intensity levels for EGFP (top), NOX4 (middle), and IL-6 in EGFP- and NOX4-transfected cells. (F) Correlation between cellular NOX4 and IL6 fluorescence signals in NOX4-transfected cells. (G) Correlation between cellular EGFP and IL6 fluorescence signals in EGFP-transfected cells. (H) Left: Sen-β-Gal staining in senescent fibroblasts treated with the indicated concentrations of diphenyleneiodonium chloride (DPI). Right: Frequencies of Sen-β-Gal-positive cells. (I) Left: DHE staining in senescent fibroblasts treated with the indicated concentrations of DPI. DHE fluorescence in red, cells visualised in phase contrast. Right: Average intensity of DHI fluorescence per cell. All experiments N ≥3.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75492/elife-75492-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Senescent MRC5 fibroblasts, representative double staining with NOX4 (green), and TOMM20 (red). Blue: DAPI.
 
 Together, our data indicate that metformin at low, therapeutically achievable concentrations reduces senescence-associated ROS production by diminishing NOX4 abundance in senescent cells, which in turn causes the reduction of other facets of the senescent phenotype, importantly including a reduction of SASP production.
 
@@ -116,39 +220,363 @@ In conclusion, we have shown that short senolytic or senostatic interventions ca
 
 ## Materials and methods
 
-## Study design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male)</td>
+      <td>Wild-type</td>
+      <td>Charles River</td>
+      <td>C57BL/6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human foetal lung, male</td>
+      <td>ECACC</td>
+      <td>MRC5, Cat-Nr. 05072101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HMGB1 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab79823, RRID:AB_1603373</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TOMM20 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab56783, RRID:AB_945896</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Iba-1 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab178846, RRID:AB_2636859</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LMNB1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab16048, RRID:AB_443298</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NOX4 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab109225, RRID:AB_10861375</td>
+      <td>IF (1:200)WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL6 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab9324, RRID:AB_307175</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p21 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab109520, RRID:AB_10860537</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phosphor-Histone H2AX (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 9718, RRID:AB_2118009</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Beta-Actin (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 5125, RRID:AB_1903890</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCHAC-mt-mKeima</td>
+      <td>Addgene</td>
+      <td>Cat-Nr. #72,342</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-hNOX4</td>
+      <td>Addgene</td>
+      <td>Cat-Nr. #69,352</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1(+)eGFP</td>
+      <td>Addgene</td>
+      <td>Cat-Nr. #129,020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Cytokine Array Proinflammatory focused 13-plex Assay</td>
+      <td>Eve Technologies</td>
+      <td>HDF13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse High Sensitivity 18-Plex Discovery Assay</td>
+      <td>Eve Technologies</td>
+      <td>MDHSTC18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>eBioscience Foxp3/Transcription Factor Staining Buffer Set</td>
+      <td>ThermoFisher</td>
+      <td>00-5523-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dasatinib</td>
+      <td>Merck</td>
+      <td>CDS023389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Quercetin</td>
+      <td>Merck</td>
+      <td>#1592409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Navitoclax</td>
+      <td>Stratech</td>
+      <td>#285063-USB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Metformin HCL API</td>
+      <td>Pharmahispania</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyethylenglycol 400</td>
+      <td>Merck</td>
+      <td>#8074851000</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design
 
 This study addressed the hypothesis that premature frailty and accelerated ageing after sublethal irradiation are caused by accelerated accumulation of senescent cells triggered by bystander signalling from radiation-induced senescence, and that thus a short treatment with either a senolytic or the senostatic metformin would be protective. A series of controlled laboratory experiments were performed to determine the progression of frailty and other markers of biological age following irradiation with and without intervention at prespecified time points. All studies were conducted at Newcastle University in agreement with ARRIVE guidelines (Kilkenny et al., 2010). On the basis of previous work, two-sided two-sample test was used to generate animal group sizes. Incorporating expected attrition rates during long-term follow-up, this resulted in group sizes of 12 animals at start of the experiments for physiological phenotyping. Data collection was performed at prespecified time points unless limited by animal distress as identified by facility staff and/or veterinary surgeons. Primary and secondary end points were prespecified. Each mouse represented one experimental unit. Mice were coded with randomised allocation to experimental groups and housing cages. Data collection, tissue collection, and tissue analyses were done by staff members blinded to experimental group allocation with unblinding performed only after data acquisition was complete. For ex vivo assessments, power calculations informed by previous experience indicated a minimum number of five animals per group. Tissues were either randomly selected or all available tissues were used for analysis.
 
 To address the mechanism of senostatic activity of metformin in therapeutically achievable concentration, a stepwise series of controlled laboratory in vitro experiments was performed, where experimental outcomes guided alternative hypotheses. Individual cell culture dishes represented experimental replicates except in the case of mitophagy experiments, where each cell was treated as a biological unit. Again, in vitro treatments were coded, and codes were broken only after data collection and analysis. In vitro experiments were independently reproduced at least three times.
 
-## Animals
+### Animals
 
 Male C57Bl/6 J mice were bought past weaning from Charles River and were maintained in groups of six littermates per cage as described (Cameron et al., 2012). The mice were fed standard pelleted food (CRM-P formulation rodent diet, SDS Diets), except those used for metformin treatment and their control, which received soaked food (same as above) with or without metformin from 1-month post-IR. Mice were sacrificed at the end of the study by cervical dislocation and tissues harvested, and stored in 4% paraformaldehyde for 24 hours for paraffin embedding, or frozen in liquid nitrogen. The work was licensed by the UK Home Office (PB048F3A0) and complied with the guiding principles for the care and use of laboratory animals.
 
-## Irradiation
+### Irradiation
 
 At 5 months of age, mice were sublethally irradiated thrice (NDT320, 225kV) with 3 Gy of X-ray irradiation, with two days of recovery between each dose, as described (Fielder et al., 2019). Mice received 1% Baytril solution in drinking water for 2 days before, and for 14 days after, to the start and end of irradiation, respectively.
 
-## Senolytic and senostatic treatments
+### Senolytic and senostatic treatments
 
 Mice were orally gavaged with either 5 mg/kg/day dasatinib and 50 mg/kg/day quercetin or with 5 mg/kg/day Navitoclax for 10 days total (5 days, 2 days recovery, and 5 days). Compounds were prepared for oral gavage in 10% polyethylene glycol (PEG400). Control mice were gavaged with PEG400 only. Interventions were started at 1 month post-irradiation for the early intervention group, and 7 months post-irradiation for the late intervention group. Dasatinib (CDS023389), quercetin (1592409), and PEG400 (8074851000) were purchased from Sigma-Aldrich (now Merck). Navitoclax (285063-USB) was purchased from Stratech.
 
 Metformin hydrochloride was a kind gift from FARMHISPANIA, (Barcelona) and prepared at 1 g/kg in dry food (0.1% (w/w) in food) and provided at 6 mg/6 ml water in 6 g food per mouse in the cage as soaked food. The control group also received soaked food without metformin. Treatment was started at 1 month post-irradiation and was given daily for 10 weeks.
 
-## Mouse phenotyping
+### Mouse phenotyping
 
 Frailty was assessed regularly using a 30-parameter index based on Whitehead et al., 2014, with modifications as described in Fielder et al., 2019. Rotarod, wire hanging and spontaneous alternation Y-Maze were performed as described in Fielder et al., 2019. Tumour incidence at death was assessed by gross pathological examination.
 
-## Immuno-histochemistry (IHC) and immunofluorescence
+### Immuno-histochemistry (IHC) and immunofluorescence
 
 Paraformaldehyde (PFA)-fixed paraffin embedded tissue samples were cut and stained with primary and secondary antibodies as detailed in Table 1, see also Fielder et al., 2020 for a step-by-step protocol. Fixed cells were blocked with 2% normal goat serum +0.1% BSA and stained overnight with the primary antibody at 4 C (Table 1).
 
-## Immuno-fluorescence in situ hybridisation (immuno-FISH)
+**Table 1.**
+ Immunostaining and blotting methods.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tissue</th>
+      <th>Thickness</th>
+      <th>Technique</th>
+      <th>Primary antibody</th>
+      <th>Cat No, vendor</th>
+      <th>Dilution</th>
+      <th>Secondary antibody</th>
+      <th>Cat No, vendor</th>
+      <th>Dilution</th>
+      <th>Detection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Liver</td>
+      <td>3</td>
+      <td>IF</td>
+      <td>Rabbit anti-HMGB1</td>
+      <td>Ab79823 (Abcam)</td>
+      <td>1:250</td>
+      <td>Goat Anti-Rabbit IgG H&amp;L, Texas Red</td>
+      <td>Ab6719 (Abcam)</td>
+      <td>1:500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>IF</td>
+      <td>Mouse anti-TOMM20</td>
+      <td>Ab56783 (Abcam)</td>
+      <td>1:200</td>
+      <td>Goat anti-mouse (Alexa Fluor 594)</td>
+      <td>Ab150116</td>
+      <td>1:1,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Quads</td>
+      <td>3</td>
+      <td>IF</td>
+      <td>Rabbit anti-HMGB1</td>
+      <td>Ab79823 (Abcam)</td>
+      <td>1:250</td>
+      <td>Goat anti-rabbit (Alexa Fluor 594)</td>
+      <td>A32740 (ThermoFisher)</td>
+      <td>1:1,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Brain</td>
+      <td>10</td>
+      <td>IHC</td>
+      <td>Rabbit anti-Iba1</td>
+      <td>Ab178846 (Abcam)</td>
+      <td>1:2000</td>
+      <td>Biotinylated Goat anti-rabbit</td>
+      <td>BA-1000 (Vector labs)</td>
+      <td>1:250</td>
+      <td>VECTASTAIN ABC-HRP Kit,NovaRED (Vevtor labs)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>IF</td>
+      <td>Rabbit anti-γH2A.X primary antibody</td>
+      <td>9,718 (Cell Signalling)</td>
+      <td>1:250</td>
+      <td>Biotinylated Goat anti-rabbit</td>
+      <td>BA-1000 (Vector labs)</td>
+      <td>1:250</td>
+      <td>Fluorescein Avidin DCS (1:500) (Vector labs)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>IF</td>
+      <td>Rabbit anti-Lamin B1</td>
+      <td>ab16048 (Abcam)</td>
+      <td>1:200</td>
+      <td>Biotinylated Goat anti-rabbit</td>
+      <td>BA-1000 (Vector labs)</td>
+      <td>1:250</td>
+      <td>Fluorescein Avidin DCS (1:500) (Vector labs)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">MRC5 Cells</td>
+      <td rowspan="4" colspan="2">ICC</td>
+      <td>Anti-NADPH oxidase 4 antibody</td>
+      <td>ab109225 (Abcam)</td>
+      <td>1:200</td>
+      <td>Goat Anti-Rabbit IgG H&amp;L (Alexa Fluor 594)</td>
+      <td>ab150080 (Abcam)</td>
+      <td>1:1,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anti-IL6 antibody</td>
+      <td>ab9324 (Abcam)</td>
+      <td>1:500</td>
+      <td>Anti-Mouse IgG (H+L) Alexa Fluor 488</td>
+      <td>A-11017 (vector labs)</td>
+      <td>1:1,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-p21</td>
+      <td>ab109520 (Abcam)</td>
+      <td>1:100</td>
+      <td>Goat Anti-Rabbit IgG H&amp;L (Alexa Fluor 594)</td>
+      <td>ab150080 (Abcam)</td>
+      <td>1:1,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-HMGB1</td>
+      <td>ab79823 (Abcam)</td>
+      <td>1:250</td>
+      <td>Goat Anti-Rabbit IgG H&amp;L (Alexa Fluor 594)</td>
+      <td>ab150080 (Abcam)</td>
+      <td>1:1,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td colspan="2">WB</td>
+      <td>Anti-NADPH oxidase 4 antibody</td>
+      <td>ab109225 (Abcam)</td>
+      <td>1:2000</td>
+      <td>Goat Anti-Rabbit IgG H&amp;L (HRP)</td>
+      <td>ab6721 (Abcam)</td>
+      <td>1:10,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2"></td>
+      <td>Anti-β-Actin antibody</td>
+      <td>5,125 (Cell Signaling)</td>
+      <td>1:1,000</td>
+      <td>Goat Anti-Rabbit IgG H&amp;L (HRP)</td>
+      <td>ab6721 (Abcam)</td>
+      <td>1:10,000</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Immuno-fluorescence in situ hybridisation (immuno-FISH)
 
 The immuno-FISH for TAF were performed as previously described (Hewitt et al., 2012, Fielder et al., 2020) with the following modifications for quadriceps: The blocking step used 1% BSA, 5% Normal Goat Serum in PBS, for 30 min at 30 °C. Fluorescein Avidin DCS was substituted with Texas Red-labelled Avidin DCS (Vector Laboratories) in PBS for 30 min at 30 °C. CCCTAA Cy-3 probe was substituted for TTAGGG probe (Pangene).
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 IHC images were taken using a widefield light microscope ECLIPSE E800 (Nikon, Japan) at total magnification of 100 x. Microscopy for IF and immuno-FISH was performed using a DMi8 fluorescence microscope (Leica, Germany) with total magnification of 400 x for IF and 630 x (with Z-stack/depth) for immuno-FISH.
 
@@ -158,15 +586,15 @@ Epidermal thickness was measured on 3 μm back skin sections stained with Picro-
 
 To identify TAF in brain, the colocalisation of DNA damage foci and telomeres were detected manually and confirmed in Icy software through 3D image setup as described (Hewitt et al., 2012, Fielder et al., 2020). For liver and muscle, detection and 3D location of DNA damage foci and telomeres was automated using Icy software (Institut Pasteur & France Bioimaging, France). A Python programme was used to assess their colocalisation. Results from this automated counting were validated against manual counts in individual liver and muscle sections.
 
-## Western blotting
+### Western blotting
 
 Cells were collected using Accutase (StemCell Technologies #07922) and lysed using RIPA buffer supplemented with protease inhibitors. Western blotting was performed as described (Miwa et al., 2014) with antibodies against NOX4 and β-Actin as detailed in Table 1.
 
-## Liver function assessment
+### Liver function assessment
 
 Liver function was assessed using the Alanine Transaminase Activity Assay Kit (Abcam, ab105134) and Aspartate Aminotransferase Activity Assay Kit (Abcam, ab105135) according to the manufacturer’s instructions. Average of duplicates was used as individual data of a sample/animal, and then the data were grouped by treatment types and compared.
 
-## Cell culture
+### Cell culture
 
 Human lung MRC5 fibroblasts were grown in Dulbecco’s modified Eagle’s medium (DMEM, Sigma, # D5671) supplemented with 10% heat‐inactivated foetal Bovine Serum (FBS, Sigma), 100 units/ml penicillin, 100 μg/ml streptomycin, and 2 mM L-glutamine at 37 °C in a humidified atmosphere with 5% CO2. Stress‐induced senescence was induced by X‐ray irradiation with 20 Gy or (for DPI experiments) with 200 μM H2O2 in serum-free medium.
 
@@ -178,30 +606,179 @@ For NOX4 inhibition, senescent MRC5 cells were treated with diphenyleneiodonium 
 
 For Sen-β-Gal staining, cells were fixed for 5 min with 2% PFA in PBS-Mg before incubation with the staining solution (PBS-Mg containing 1 mg/ml X-gal, 5 mM potassium ferrocyanide, and 5 mM potassium ferricyanide, pH 5.5) overnight at 37 C.
 
-## Mitophagy measurement
+### Mitophagy measurement
 
 Neonatal human dermal fibroblasts (HDFns) were transduced with lentiviruses containing pCHAC-mt-mKeima (Addgene plasmid #72342) (Lazarou et al., 2015). Cells were irradiated with 20 Gy X-ray radiation, and the mt-mKeima signal was measured up to 3 days later. During this time, cells were treated with metformin (100 μM) or rapamycin (10 nM). The live-cell mt-mKeima signal was captured on a Leica DMi8 inverted microscope with a 63 x oil objective. Numbers of red dots per cell, indicating lysosomal mt-mKeima signal, were quantified using ImageJ.
 
-## ROS measurements
+### ROS measurements
 
 Cells were stained with dihydroethidium (DHE, ThermoFisher Scientific) to measure intracellular peroxides or with MitoSOX (ThermoFisher Scientific) to assess mitochondrial superoxide. Cells were incubated with either 10 μM DHE or 5 μM MitoSOX for 30 min at 37 °C in the dark and analysed by flow cytometry or in a DMi8 fluorescence microscope (Leica).
 
 Extracellular release of hydrogen peroxide was measured by Amplex Red assay (ThermoFisher Scientific) as described (Miwa et al., 2016) in a 96 well plate using a fluorescent plate reader (FLUOstar Omega, BMG Labtech) at excitation 544 nm and emission 590 nm at 37 °C.
 
-## Oxygen consumption rates
+### Oxygen consumption rates
 
 Cellular OCR and media acidification rates (extracellular acidification rate, ECAR) in intact cells were measured in parallel using a Seahorse XF24 analyser in unbuffered basic media (DMEM, Sigma, #D5030) supplemented with 5 mM glucose, 2 mM L-Glutamine, and 3% FBS. Whilst the measurements were taken, the following compounds were injected to test mitochondrial activity and cellular bioenergetics: Oligomycin (0.5 μM) to inhibit ATP synthase, carbonyl cyanide p-trifluoromethoxy-phenylhydrazone (FCCP) (2.5 μM), a respiratory chain uncoupler, 2-deoxyglucose (2DG) (80 mM), a glucose analogue competitively inhibiting glucose uptake and glycolytic flux, and Rotenone (0.5 μM) and Antimycin (2.5 μM), mitochondrial complex I and complex III inhibitors, respectively. Data analysis to calculate absolute ATP production rates was carried out using the methods described by Mookerjee and Brand, 2015 taking into account the acidification rates due to mitochondrial CO2 production (Birket et al., 2011; Brand, 2005).
 
 Permeabilised cells were used to measure mitochondrial OCR using Pyruvate (10 mM) and Malate (1 mM) as complex I-linked substrate. Cells were permeabilised using plasma membrane permeabiliser (PMP, Agilent Technologies) according to manufacturer’s instructions, and oxygen consumption was measured in medium containing 220 mM Mannitol, 70 mM Sucrose, 10 mM KH2PO4, 5 mM MgCl2, 2 mM Hepes, 1 mM EGTA, and 0.2% (w/v) Fatty Acid Free BSA. To determine the effects of metformin on mitochondrial complex I activity, sequential additions of metformin (at concentrations as indicated in Figure 4A), Rotenone (0.5 μM), Succinate (4 mM), and FCCP (4 μM) were made. For determination of RCR, permeabilised cells respiring with Pyruvate (10 mM) and Malate (1 mM) received 4 mM ATP (State 3) followed by 0.5 μM Oligomycin (State 4). RCR was calculated as state 3 divided by state 4 respiration rates.
 
-## Cytokine measurement
+### Cytokine measurement
 
 Cytokines secreted from MRC5 cells were analysed by Human Cytokine Array Proinflammatory focussed 13-plex Assay (Eve Technologies, Calgary, Canada). The cells were grown in 75 cm flasks, and the culture media was switched to serum free media for 24 hr and the media samples were collected for the analysis. Mouse serum was collected from the supernatant of whole blood after centrifugation at 0.4 g for 4 min and analysed using the Mouse High Sensitivity 18-Plex Discovery Assay (Eve Technologies, Calgary, Canada).
 
-## Mass Cytometry
+### Mass Cytometry
 
 Markers for multiple stress response pathways (Table 2) were analysed at single cell level simultaneously by mass cytometry (Helios, Fluidigm). MRC5 cells were treated with either 2 mM or 0.1 mM metformin for 2 days. Positive controls were challenged with either 300 μM H2O2 in serum-free medium, heat shock (50 °C for 45 min) or starvation (serum-free medium for 24 hr). The cells were trypsinized, washed in PBS, and stained with metal-conjugated antibodies (Table 2). Antibodies were either pre-conjugated (Fluidigm), or purified antibodies were conjugated to lanthanide metals using the Maxpar antibody labelling kit (as per manufacturer’s instructions; DVS Sciences) and were stabilised with an antibody stabilisation solution (Candor Bioscience) (Table 2). Cells were stained as described (Cytlak et al., 2020). Briefly, cells were first stained with 2.5 μM Cisplatin (Fluidigm #201064) for 5 min in PBS for live/dead cell discrimination and washed promptly using Wash buffer (PBS containing 2% FBS). Then the cells were fixed using 1.6% formaldehyde in a working fixation buffer (eBioscience Foxp 3 fixation permeabilisation kit, ThermoFisher Scintific #00–5523) for 30 min, and washed twice with eBioscience perm buffer. Cells were stained in perm buffer for 1 hr with the antibody cocktail containing each intracellular antibody (approximately 0.5 μg in 100 μl per sample) for 1 hr at room temperature and washed twice with PBS. Finally, the cells were fixed with 1.6% formaldehyde in PBS with a nuclear marker, 125 nM iridium (Cell-ID Intercalator-Ir, Fluidigm #201,192B) for 1 hr, and washed using Wash buffer for overnight storage at 4 °C. Prior to CyTOF acquisition, cells were washed twice in 200 μL MilliQ water (600xg for 5 min), counted, diluted to a maximum final concentration of 0.55 × 106/ml in MilliQ water, and filtered through a 40 μm filter (BD). EQ beads were added (10% by volume) and 0.1 × 106 cells per sample were acquired on the Helios mass cytometer running CyTOF software v 6.7.1014. The data were analysed using FCS Express 7 (De Novo Software).
 
-## Statistics
+**Table 2.**
+ List of metal conjugated antibodies for stress response pathway analysis by CyTOF.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Metal</th>
+      <th>cat #</th>
+      <th>Vendor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SOD2/MnSOD [9E2BD2]</td>
+      <td>176Yb</td>
+      <td>ab110300</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>GSTM2 (9E975)</td>
+      <td>167Er</td>
+      <td>H00002946-M03</td>
+      <td>Novus Biologicals</td>
+    </tr>
+    <tr>
+      <td>HSF1</td>
+      <td>153Eu</td>
+      <td>825,801</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>Hsp-70 (2A4)</td>
+      <td>154Sm</td>
+      <td>ab5442</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>Nrf2 (phospho S40) [EP1809Y]</td>
+      <td>142Nd</td>
+      <td>ab180844</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>NR1L2/PXR (6H11D8)</td>
+      <td>164Dy</td>
+      <td>LS-C682408-LSP</td>
+      <td>Stratech Scientific Ltd.</td>
+    </tr>
+    <tr>
+      <td>GRP78 BiP [EPR4041(2)]</td>
+      <td>161Dy</td>
+      <td>ab108615</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>EIF2S1 (phospho S51) (E90)</td>
+      <td>169Tm</td>
+      <td>ab214434</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>ATF-6 (-Carboxy terminal end)</td>
+      <td>175Lu</td>
+      <td>ab62576</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>GADD153/CHOP</td>
+      <td>141Pr</td>
+      <td>NBP2-13172</td>
+      <td>Novus Biologicals</td>
+    </tr>
+    <tr>
+      <td>CLPP [EPR7133]</td>
+      <td>165Ho</td>
+      <td>ab236064</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>Hsp-60 (LK1)</td>
+      <td>144Nd</td>
+      <td>ab212454</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>pS6 [S235/S236]</td>
+      <td>172Yb</td>
+      <td>3172008 A</td>
+      <td>Fluidigm</td>
+    </tr>
+    <tr>
+      <td>p21 Waf1/Cip1</td>
+      <td>159Tb</td>
+      <td>3159026 A</td>
+      <td>Fluidigm</td>
+    </tr>
+    <tr>
+      <td>Phospho-Acetyl-CoA Carboxylase (Ser79) (10HCLC)</td>
+      <td>170Er</td>
+      <td>711,289</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>p62 /SQSTM1 (C-terminus)</td>
+      <td>146Nd</td>
+      <td>GP62-C</td>
+      <td>Progen</td>
+    </tr>
+    <tr>
+      <td>p-p38 [T180/Y182]</td>
+      <td>156Gd</td>
+      <td>3156002 A</td>
+      <td>Fluidigm</td>
+    </tr>
+    <tr>
+      <td>DNA/RNA damage</td>
+      <td>173Yb</td>
+      <td>ab62623</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>pHistone H2A.X [Ser139]</td>
+      <td>147Sm</td>
+      <td>NB100-384</td>
+      <td>Novus Biologicals</td>
+    </tr>
+    <tr>
+      <td>PHB</td>
+      <td>151Eu</td>
+      <td>NBP2-32305</td>
+      <td>Novus Biologicals</td>
+    </tr>
+    <tr>
+      <td>p16INK4</td>
+      <td>174Yb</td>
+      <td>ab54210</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>Cell-ID Intercalator-Ir—500 μM</td>
+      <td></td>
+      <td>201,192B</td>
+      <td>Fluidigm</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistics
 
 Data were analysed with Microsoft Excel and Prism software (GraphPad). Values were expressed either as means with error bars representing SDs or as boxplots with median, upper, and lower quartiles (boxes) and percentiles (whiskers). Graphs were overlaid with the values of all individual biological replicates. Linear regressions and survival curves show means and 95% confidence intervals. Depending on results of normality testing, groups were compared using unpaired t test, Mann-Whitney or one-way analysis of variance with Tukey post-hoc test. Statistical significance is indicated as *p<0.05, **p<0.01, ***p<0.001, **** p<0.0001.

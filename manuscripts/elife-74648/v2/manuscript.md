@@ -52,13 +52,29 @@ Secondly, nicotine dependence involves one or more ‘inside-out’ mechanisms. 
 
 These two neuroscience aspects of nicotinic ligands – pharmaceutical science and addiction science – call for direct measurements of drug movements in living cells (Video 1). We previously explored the subcellular pharmacokinetics of nicotine and varenicline in immortalized cell lines and cultured neurons using the iDrugSnFRs iNicSnFR3a and iNicSnFR3b to visualize that these nicotinic agonists enter the ER within seconds of drug application and exit equally rapidly from the ER upon extracellular washing (Shivange et al., 2019). That nicotine diffuses across cellular membranes in seconds has been suspected for decades: nicotine crosses six PMs to enter the brain within 20 s, providing a ‘buzz.’ That varenicline becomes trapped in acidic vesicles suggests appreciable membrane permeation but may also underlie unwanted effects (Govind et al., 2017; Le Houezec, 2003).
 
+![Video 1.](https://cdn.elifesciences.org/articles/74648/elife-74648-video1.mp4.jpg)
+
+**Video 1.:** PBP at the left; cpGFP at the right;key side chains in the linkers are shown as spheres. The ligand, varenicline, is shown as sticks.
+
 We sought to generate and apply additional intensity-based drug-sensing fluorescent reporters (iDrugSnFRs) for candidate smoking-cessation drugs: dianicline, cytisine, 10-fluorocytisine, and 9-bromo-10-ethylcytisine. We hypothesized that a family of newly developed iDrugSnFRs would enable quantifiable fluorescence signals that compare the differences in permeation among these compounds.
 
 ## Results
 
-## Generation of additional nicotinic iDrugSnFRs: Structural tactic
+### Generation of additional nicotinic iDrugSnFRs: Structural tactic
 
 To generate iDrugSnFRs for cytisine and dianicline, we followed two converging tactics. In the ‘structure-based’ tactic, we obtained the first structural data for OpuBC-based SnFRs bound by nicotinic ligands (nicotine and varenicline) (Figure 1, Supplementary file 1). Crystals of iNicSnFR3adt in the presence of 10 mM nicotine diffracted to 2.95 Å resolution (PDB 7S7U). Overall, the liganded periplasmic binding protein (PBP) domain of iNicSnFR3adt adopts a closed conformation (Figure 1A). In the binding pocket between the top and bottom lobes of the PBP, we observed an ‘avocado’-shaped electron density in the nicotine binding site, enclosed by several aromatic residues (Figure 1B). The combination of protonation/deprotonation and the rotatable bond of nicotine (Elmore and Dougherty, 2000) vitiate unambiguously localizing it within the binding pocket.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig1-v2.jpg)
+
+**Figure 1.:** To form an intensity-based drug-sensing fluorescent reporter (iDrugSnFR), a circularly permuted GFP molecule, flanked by two 4-residue linking sequences, is inserted into a PBP at a position (77–78, in our numbering system) that changes backbone Φ-Ψ angles between the apo and liganded PBP. (A) Overall conformation of iNicSnFR3adt crystallized with nicotine; an electron density appears at the nicotine binding site (PDB 7S7U). (B) iNicSnFR3adt binding site residues. (C) Overall conformation of iNicSnFR3adt with varenicline bound (PDB 7S7T). (D) iNicSnFR3adt binding site with varenicline present. (E) Aspects of the PBP-Linker1-cpGFP interface, emphasizing contacts that change upon ligand binding. The Phe76-Pro77-Glu78 cluster (in Linker 1) lies 11–16 Å from position 43, which defines the outer rim of the ligand site (B); therefore, the cluster makes no direct contact with the ligand site. (E1) In the apo conformation, Glu78 acts as a candle snuffer that prevents fluorescence by the chromophore (PDB 7S7V). (E2) In the liganded conformation (PDB 7S7T), the Phe76-Pro77-Glu78 cluster moves Glu78 at least 14 Å away from the fluorophore. Pro77 is flanked by Phe76 and Pro396 (in the top lobe of the PBP moiety). The presumably deprotonated Glu78 forms salt bridges with Lys97 and Arg99, both facing outward on the β6 strand of the original GFP (within the original Phe165-Lys-Ile-Arg-His sequence).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The bottom lobe of the PBP is superimposed in the two conformations. With respect to the bottom lobe, the ‘Venus flytrap’ conformational change tilts the top lobe of the PBP but does not change its structure (see Appendix 1). The conformational change also tilts the cpGFP moiety but does not change its structure.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The display ranges from –10 to 715 kJ/mol. The molecules are shown on the same distance scale. Right: bond-line skeletal structures for the deprotonated forms.
 
 We obtained an unambiguous ligand placement for iNicSnFR3adt in the presence of 10 mM varenicline in the same crystallization condition. Crystals of iNicSnFR3adt with varenicline bound were isomorphous to those of the nicotine-bound crystals and diffracted to 3.2 Å resolution (PDB 7S7T). While the protein structure (Figure 1D) is identical to that of the nicotine bound structure (Figure 1A), the rigidity and additional ring of varenicline allowed us to unambiguously localize it in the binding pocket. Varenicline is enclosed by the same aromatic residues as nicotine, forming cation-π interactions with Tyr65 and Tyr357, in addition to other interactions with the pocket residues (Figure 1E).
 
@@ -66,21 +82,327 @@ The data confirm that similar ligand-induced conformational changes occur in the
 
 In the full iDrugSnFR, in the apo state, the Glu78 in Linker 1 approaches within ~2.5 Å of the oxygen of the tyrosine fluorophore (Figure 1E1; PDB 7S7V). Figure 1E2 provides structural details confirming the hypothesis (Barnett et al., 2017; Nasu et al., 2021) that in the liganded state Glu78 has moved away, presumably allowing the fluorescent tyrosinate to form (Video 2). We term this mechanism the ‘candle snuffer’.
 
-## Generation of additional nicotinic iDrugSnFRs: Mutational tactic
+![Video 2.](https://cdn.elifesciences.org/articles/74648/elife-74648-video2.mp4.jpg)
+
+**Video 2.:** PBP at the left; cpGFP at the right; key side chains in the linkers are shown as spheres. The ligand, varenicline, is shown as sticks.
+
+### Generation of additional nicotinic iDrugSnFRs: Mutational tactic
 
 In the mutational tactic, we screened each drug shown in Figure 1—figure supplement 2 against a panel of biosensors that included iNicSnFR3a and iNicSnFR3b (Shivange et al., 2019) and iAChSnFR (Borden et al., 2019) as well as intermediate constructs from their development process. From this screen, we chose sensors with the lowest EC50 for each drug as our starting protein for iDrugSnFR evolution.
 
 Because the candle snuffer mechanism explains several details of the agonist- and pH sensitivity of both iNicSnFR3a and iSketSnFR (see ‘Discussion’), we presume that it represents a general mechanism for OpuBC-cpGFP SnFRs. We did not mutate residues that lie (in 3D space) between the binding site and linkers.
 
-For dianicline and cytisine separately, we incrementally applied site-saturation mutagenesis (SSM) to first- and second-shell amino acid positions within the binding pocket. We evaluated each biosensor and drug partner in lysate from Escherichia coli and carried forward the biosensor with the highest S-slope to the subsequent round. S-slope, ∆FF0ligand at the beginning of the dose–response relation, emphasizes the response to ligand concentrations in the pharmacologically relevant range (Bera et al., 2019). Table 1 and Figure 2 summarize dose–response relations for the optimized sensors. The dianicline sensor, iDianiSnFR, has EC50 6.7 ± 0.3 µM, ΔFmax/F0 7.4 ± 0.1, and S-slope 1.1. The cytisine sensor, iCytSnFR, has EC50 9.4 ± 0.8 µM, ΔFmax/F0 5.0 ± 0.2, and S-slope 0.5 (Table 1, Figure 2A and B). After generating iCytSnFR, we performed additional SSM to progress from iCytSnFR to SnFRs for 10-fluorocytisine and 9-bromo-10-ethylcytisine. This optimization gave us iCyt_F_SnFR (EC50 1.4 ± 0.04 µM, ΔFmax/F0 7.9 ± 0.1, S-slope 5.6) and iCyt_BrEt_SnFR (EC50 5.7 ± 0.1 µM, ΔFmax/F0 4.0 ± 0.03, and S-slope 0.7) (Table 1, Figure 2C and D).
+For dianicline and cytisine separately, we incrementally applied site-saturation mutagenesis (SSM) to first- and second-shell amino acid positions within the binding pocket. We evaluated each biosensor and drug partner in lysate from Escherichia coli and carried forward the biosensor with the highest S-slope to the subsequent round. S-slope, $\frac{\frac{\DeltaF}{F_{0}}}{ligand}$ at the beginning of the dose–response relation, emphasizes the response to ligand concentrations in the pharmacologically relevant range (Bera et al., 2019). Table 1 and Figure 2 summarize dose–response relations for the optimized sensors. The dianicline sensor, iDianiSnFR, has EC50 6.7 ± 0.3 µM, ΔFmax/F0 7.4 ± 0.1, and S-slope 1.1. The cytisine sensor, iCytSnFR, has EC50 9.4 ± 0.8 µM, ΔFmax/F0 5.0 ± 0.2, and S-slope 0.5 (Table 1, Figure 2A and B). After generating iCytSnFR, we performed additional SSM to progress from iCytSnFR to SnFRs for 10-fluorocytisine and 9-bromo-10-ethylcytisine. This optimization gave us iCyt_F_SnFR (EC50 1.4 ± 0.04 µM, ΔFmax/F0 7.9 ± 0.1, S-slope 5.6) and iCyt_BrEt_SnFR (EC50 5.7 ± 0.1 µM, ΔFmax/F0 4.0 ± 0.03, and S-slope 0.7) (Table 1, Figure 2C and D).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig2-v2.jpg)
 
 **Figure 2.:** Dose–response relations on intermediate constructs using E. coli lysate were performed with respective drug partners to identify site-saturation mutagenesis (SSM) winners. (A–D) The progenitor biosensor is listed in black. Dashed lines indicate data that did not reach saturation at the concentrations tested; therefore, EC50 and ∆Fmax/F0 could not be determined. Development of (A) iDianiSnFR, (B) iCytSnFR, (C) iCyt_F_SnFR, and (D) iCyt_BrEt_SnFR.
 
-## Specificity and thermodynamics of nicotinic iDrugSnFRs
+**Table 1.**
+ Nicotinic agonist intensity-based drug-sensing fluorescent reporter (iDrugSnFR) naming, dose–response relations, and residues mutated.Measurements in E. coli lysates (L) or with purified protein (P). ND, not determined. Data for iAChSnFR from Borden et al., 2019; data for iNicSnFR3b from Shivange et al., 2019.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Informal name</th>
+      <th rowspan="2">Drug of interest</th>
+      <th colspan="2">ΔFmax/F0</th>
+      <th colspan="2">EC50 (µM)</th>
+      <th colspan="10">S-slope</th>
+    </tr>
+    <tr>
+      <th>L</th>
+      <th>P</th>
+      <th>L</th>
+      <th>P</th>
+      <th>L</th>
+      <th>P</th>
+      <th>11</th>
+      <th>43</th>
+      <th>44</th>
+      <th>68</th>
+      <th>324</th>
+      <th>360</th>
+      <th>391</th>
+      <th>395</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>iNicSnFR3b</td>
+      <td>Nicotine</td>
+      <td>ND</td>
+      <td>10</td>
+      <td>ND</td>
+      <td>19</td>
+      <td>ND</td>
+      <td>0.5</td>
+      <td>E</td>
+      <td>E</td>
+      <td>N</td>
+      <td>H</td>
+      <td>S</td>
+      <td>T</td>
+      <td>F</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>iDianiSnFR</td>
+      <td>Dianicline</td>
+      <td>7.4 ± 0.1</td>
+      <td>4.7 ± 0.2</td>
+      <td>6.7 ± 0.3</td>
+      <td>15 ± 1</td>
+      <td>1.1</td>
+      <td>0.3</td>
+      <td>D</td>
+      <td>R</td>
+      <td>-</td>
+      <td>S</td>
+      <td>N</td>
+      <td>G</td>
+      <td>-</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>iAChSnFR</td>
+      <td>ACh</td>
+      <td>ND</td>
+      <td>12</td>
+      <td>ND</td>
+      <td>1.3</td>
+      <td>ND</td>
+      <td>9.2</td>
+      <td>I</td>
+      <td>V</td>
+      <td>N</td>
+      <td>H</td>
+      <td>A</td>
+      <td>T</td>
+      <td>F</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>iCytSnFR</td>
+      <td>Cytisine</td>
+      <td>5.0 ± 0.2</td>
+      <td>7.3 ± 0.4</td>
+      <td>9.4 ± 0.8</td>
+      <td>11 ± 1</td>
+      <td>0.5</td>
+      <td>0.7</td>
+      <td>-</td>
+      <td>Y</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>W</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>iCyt_F_SnFR</td>
+      <td>10-Fluorocytisine</td>
+      <td>7.9 ± 0.1</td>
+      <td>2.3 ± 0.1</td>
+      <td>1.4 ± 0.04</td>
+      <td>1.6 ± 0.3</td>
+      <td>5.6</td>
+      <td>1.4</td>
+      <td>-</td>
+      <td>N</td>
+      <td>G</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>W</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>iCyt_BrEt_SnFR</td>
+      <td>9-Bromo-10-ethylcytisine</td>
+      <td>4.0 ± 0.03</td>
+      <td>3.6 ± 0.04</td>
+      <td>5.7 ± 0.1</td>
+      <td>4.2 ± 0.2</td>
+      <td>0.7</td>
+      <td>0.9</td>
+      <td>-</td>
+      <td>Q</td>
+      <td>G</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>W</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Specificity and thermodynamics of nicotinic iDrugSnFRs
 
 We characterized the specificity of purified iDrugSnFRs for their drug partners versus a panel of related nicotinic agonists (Table 2, Figure 3). The newly developed iDrugSnFRs showed some sensitivity to related nicotinic agonists. iDianiSnFR had the greatest fidelity for its drug partner but also showed an increased EC50 (15 µM) as a purified protein versus its EC50 in lysate (6.7 µM), possibly indicating decreased stability in a purified form. iCytSnFR, iCyt_F_SnFR, and iCyt_BrEt_SnFR showed a greater level of promiscuity for the compounds comprising the nicotinic agonist panel. Of note, iCytSnFR, iCyt_F_SnFR, and iCyt_BrEt_SnFR have an exceptionally low (60‒90 nM) EC50 for varenicline. The newly developed iDrugSnFRs showed negligible binding to choline or the neurotransmitter acetylcholine, leading one to expect minimal endogenous interference during future in vivo experiments.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) Relevant EC50 values for each iDrugSnFR are listed in Table 2. Dashed lines indicate dose–response relations that did not approach saturation for the concentration ranges tested; therefore, EC50 and ∆Fmax/F0 could not be determined. (A) iDianiSnFR shows preference for dianicline, with some promiscuity for other nicotinic agonists. (B) iCytSnFR, (C) iCyt_F_SnFR, and (D) iCyt_BrEt_SnFR bind their drug partner, but also respond to other nicotinic agonists. Ch, choline; ACh, acetylcholine; Cyt, cytisine; Diani, dianicline; Nic, nicotine; Var, varenicline; 10FC, 10-fluorocytisine; 9Br10EtC, 9-bromo-10-ethylcytisine.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) iDianiSnFR shows no fluorescent response to any of the selected endogenous molecules. (B) iCytSnFR, (C) iCyt_F_SnFR, and (D) iCyt_BrEt_SnFR show no response to any of the selected endogenous molecules except 5-HT and DA at concentrations above 100 µM. ATP, adenosine triphosphate; DA, dopamine; GABA, γ-aminobutyric acid; Glu, glutamate; Gly, glycine; Hist, histamine; L-DOPA, levodopa; NE, norepinephrine; 5-HT, serotonin.
+
+**Table 2.**
+ Intensity-based drug-sensing fluorescent reporter (iDrugSnFR) dose–response relations versus a selected panel of nicotinic agonists.ND, not determined. *, ** EC50 and ∆Fmax/F0 could not be determined from the data (Figure 3). Therefore, the upper limit to the S-slope is estimated from the data at the foot of the dose–response relation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Drug name</th>
+      <th colspan="3">iDianiSnFR</th>
+      <th colspan="3">iCytSnFR</th>
+      <th colspan="3">iCyt_F_SnFR</th>
+      <th colspan="3">iCyt_BrEt_SnFR</th>
+    </tr>
+    <tr>
+      <th>ΔFmax/F0</th>
+      <th>EC50 (µM)</th>
+      <th>S-slope</th>
+      <th>ΔFmax/F0</th>
+      <th>EC50 (µM)</th>
+      <th>S-slope</th>
+      <th>ΔFmax/F0</th>
+      <th>EC50 (µM)</th>
+      <th>S-slope</th>
+      <th>ΔFmax/F0</th>
+      <th>EC50 (µM)</th>
+      <th>S-slope</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Choline</td>
+      <td>2.0 ± 0.1</td>
+      <td>84 ± 20</td>
+      <td>&lt; 0.1</td>
+      <td>5.8 ± 0.2</td>
+      <td>240 ± 30</td>
+      <td>&lt; 0.1</td>
+      <td>2.6 ± 0.1</td>
+      <td>18 ± 1</td>
+      <td>0.1</td>
+      <td>2.6 ± 0.1</td>
+      <td>12 ± 1</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Acetylcholine</td>
+      <td>7.4 ± 1.0</td>
+      <td>660 ± 80</td>
+      <td>&lt; 0.1</td>
+      <td>2.9 ± 0.1</td>
+      <td>35 ± 3</td>
+      <td>&lt; 0.1</td>
+      <td>4.4 ± 0.3</td>
+      <td>222 ± 50</td>
+      <td>&lt; 0.1</td>
+      <td>2.5 ± 0.2</td>
+      <td>73 ± 6</td>
+      <td>&lt;0.1</td>
+    </tr>
+    <tr>
+      <td>Cytisine</td>
+      <td>-</td>
+      <td>-</td>
+      <td>&lt;0.1*</td>
+      <td>7.3 ± 0.4</td>
+      <td>11 ± 1</td>
+      <td>0.7</td>
+      <td>4.4 ± 0.1</td>
+      <td>2.6 ± 0.3</td>
+      <td>1.7</td>
+      <td>4.7 ± 0.1</td>
+      <td>3.5 ± 0.2</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Dianicline</td>
+      <td>4.7 ± 0.2</td>
+      <td>15 ± 1</td>
+      <td>0.3</td>
+      <td>6.5 ± 0.4</td>
+      <td>34 ± 4</td>
+      <td>0.2</td>
+      <td>2.3 ± 0.3</td>
+      <td>43 ± 6</td>
+      <td>&lt; 0.1</td>
+      <td>4–6</td>
+      <td>&gt;100</td>
+      <td>&lt;0.1**</td>
+    </tr>
+    <tr>
+      <td>Nicotine</td>
+      <td>2.2 ± 0.1</td>
+      <td>440 ± 100</td>
+      <td>&lt; 0.1</td>
+      <td>6.4 ± 0.2</td>
+      <td>14 ± 2</td>
+      <td>0.5</td>
+      <td>4.7 ± 0.1</td>
+      <td>3.8 ± 0.2</td>
+      <td>1.2</td>
+      <td>4.8 ± 0.1</td>
+      <td>5.5 ± 0.2</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>2.4 ± 2.0</td>
+      <td>1200 ± 500</td>
+      <td>&lt; 0.1</td>
+      <td>6.5 ± 0.1</td>
+      <td>0.06 ± 0.01</td>
+      <td>110</td>
+      <td>7.1 ± 0.2</td>
+      <td>0.09 ± 0.02</td>
+      <td>79</td>
+      <td>5.3 ± 0.1</td>
+      <td>0.06 ± 0.01</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td>10-Fluorocytisine</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>2.3 ± 0.1</td>
+      <td>1.6 ± 0.3</td>
+      <td>1.4</td>
+      <td>3.0 ± 0.1</td>
+      <td>4.7 ± 0.3</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>9-Bromo-10-ethylcytisine</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>3.1 ± 0.1</td>
+      <td>31 ± 2</td>
+      <td>0.1</td>
+      <td>3.6 ± &lt; 0.1</td>
+      <td>4.2 ± 0.2</td>
+      <td>0.9</td>
+    </tr>
+  </tbody>
+</table>
 
 We also performed dose–response experiments with iDianiSnFR, iCytSnFR, iCyt_F_SnFR, and iCyt_BrEt_SnFR against a panel of nine endogenous molecules, including neurotransmitters (Figure 3—figure supplement 1). iDianiSnFR showed no response to any of the nine selected compounds above background. iCytSnFR, iCyt_F_SnFR, and iCyt_BrEt_SnFR showed no response above background for seven of the compounds. However, they exhibited a ΔF/F0 of 0.25‒0.8 to dopamine at 316 µM/1 mM and a ΔF/F0 of 0.8–1.5 to serotonin (5-HT) at 316 µM/1 mM. In terms of S-slope, the relevant metric for most cellular or in vivo experiments, the SnFRs are at least 250-fold more sensitive to their eponymous partners than to other molecules we have tested.
 
@@ -90,13 +412,64 @@ To examine the thermodynamics of the iDrugSnFR:drug interaction, we conducted is
 
 **Figure 4.:** Top row: exemplar heat traces of iCytSnFR, iCyt_F_SnFR, iCyt_BrEt_SnFR, and iDianiSnFR paired with their drug partners obtained by isothermal calorimetry. The heats for iCytSnFR, iCyt_F_SnFR, and iCyt_BrEt_SnFR were exothermic, while that for iDianiSnFR was endothermic. Middle row: the resulting fits for each iDrugSnFR:drug pair from the integrated heats comprising each series of injections. Bottom row: energy calculations. All iDrugSnFRs show exergonic reactions, but the relative enthalpic and entropic contributions vary among iDrugSnFRs. Data are from three separate runs, mean ± SEM. iDrugSnFR, intensity-based drug-sensing fluorescent reporter.
 
-## Kinetics of nicotinic agonist iDrugSnFRs: Stopped-flow
+**Table 3.**
+ Affinity, occupancy number, and thermodynamic data calculated from isothermal titration calorimetry.Data are the mean ± SEM, three runs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Biosensor</th>
+      <th>KD (μM)</th>
+      <th>n</th>
+      <th>ΔH(kcal/mol)</th>
+      <th>-TΔS(kcal/mol)</th>
+      <th>ΔG(kcal/mol)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>iCytSnFR</td>
+      <td>13.7 ± 1.1</td>
+      <td>0.84 ± 0.05</td>
+      <td>–2.1 ± 0.1</td>
+      <td>–4.6 ± 0.2</td>
+      <td>–6.6 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>iCyt_F_SnFR</td>
+      <td>1.8 ± 0.5</td>
+      <td>0.83 ± 0.02</td>
+      <td>–5.5 ± 0.1</td>
+      <td>–2.4 ± 0.2</td>
+      <td>–7.9 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>iCyt_BrEt_SnFR</td>
+      <td>5.4 ± 0.8</td>
+      <td>0.69 ± 0.09</td>
+      <td>–1.12 ± 0.03</td>
+      <td>6.1 ± 0.1</td>
+      <td>–7.2 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>iDianiSnFR</td>
+      <td>7.6 ± 1.4</td>
+      <td>0.92 ± 0.02</td>
+      <td>3.2 ± 0.5</td>
+      <td>10.1 ± 0.4</td>
+      <td>–7.0 ± 0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Kinetics of nicotinic agonist iDrugSnFRs: Stopped-flow
 
 In a stopped-flow apparatus, we measured the fluorescence changes of iDrugSnFRs with millisecond resolution during multiple 1 s trials and an independent 100 s trial. The stopped-flow data revealed that iDrugSnFRs do not have pseudo-first-order kinetic behaviors typical of two-state binding interactions. Time courses of iDianiSnFR (both over 1 s and 100 s) were best fitted by double exponential equations. Most of the fluorescence change occurs within the first 0.1 s of mixing (Figure 5A), with only minor additional increase by 100 s.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig5-v2.jpg)
 
-**Figure 5.:** A) iDianiSnFR, (B) iCytSnFR, (C) iCyt_F_SnFR, and (D) iCyt_BrEt_SnFR over 1 s and 100 s.Fluorescence was activated by mixing with the agonists as noted. Stopped-flow data shows a departure from first-order kinetics for this set of intensity-based drug-sensing fluorescent reporter (iDrugSnFRs). iDianiSnFR and iCyt_F_SnFR are fit to a double exponential; iCytSnFR and iCyt_BrEt_SnFR are fit to a single exponential. (E–H) Plots of the observed apparent rate constant against [agonist] for the 1 s data obtained in (A–D). In (H), we have confidence that the kobs shows a maximal value of 40–50 s–1; the Kd probably lies within twofold of the fitted value.
+**Figure 5.:** Fluorescence was activated by mixing with the agonists as noted. Stopped-flow data shows a departure from first-order kinetics for this set of intensity-based drug-sensing fluorescent reporter (iDrugSnFRs). iDianiSnFR and iCyt_F_SnFR are fit to a double exponential; iCytSnFR and iCyt_BrEt_SnFR are fit to a single exponential. (E–H) Plots of the observed apparent rate constant against [agonist] for the 1 s data obtained in (A–D). In (H), we have confidence that the kobs shows a maximal value of 40–50 s–1; the Kd probably lies within twofold of the fitted value.
 
 Changes in fluorescence from iCytSnFR during the first 1 s of mixing fit well to a single exponential (Figure 5B) and have close to pseudo-first-order kinetics (i.e., the observed rate of fluorescence change is nearly linear with drug concentration). As with iDianiSnFR, most of the fluorescence change occurs within the first second, with additional fluorescent increase continuing over the next minute (Figure 5B, right panel).
 
@@ -104,7 +477,7 @@ Like iDianiSnFR, iCyt_F_SnFR fluorescence changes are best fit by a double expon
 
 We plotted the kobs (s–1) obtained in the 1 s stopped-flow experiments versus concentration (Figure 5E–H) (see also Supplementary file 2). The aberrations from ideal first-order kinetics vitiate generation of definitive koff and kon values but we can approximate a Kmax and KD from our fitting procedures. Our stopped-flow experiments reinforced previous observations (Unger et al., 2020) that the kinetics of iDrugSnFR binding involve complexities beyond a simple first-order kinetic model governing two binding partners.
 
-## Kinetics of nicotinic agonist iDrugSnFRs: Millisecond microperfusion
+### Kinetics of nicotinic agonist iDrugSnFRs: Millisecond microperfusion
 
 We also studied iCytSnFR_PM expressed in HEK293T cells during fluorescence responses to ACh, cytisine, or varenicline in a microperfusion apparatus that exchanged solutions near the cell on a millisecond time scale (Materials and methods). This system directly measures the decay of the response when ligand is suddenly removed. The rank order of the iCytSnFR steady-state sensitivities is varenicline > cytisine > ACh. The time constant for decay decreased with increasing steady-state EC50 of the ligands, as though more tightly binding ligands dissociate more slowly (Figure 6A).
 
@@ -118,9 +491,49 @@ The decay of the cytisine and varenicline response was biphasic (Figure 6C and D
 
 Interestingly, the decay waveform of the varenicline response was much slower than that for cytisine or ACh (Figure 6A and D). We pulsed 2 µM varenicline, >> the EC50 of the steady-state response of the isolated protein (60 ± 10 nM) (Figure 6D). The values of the kfoff and ksoff were 0.9 ± 0.2 s–1 and 0.0065 ± 0.0002 s–1, respectively (n = 4 areas [nine cells]). The slower component dominated the decay phase, with a fractional amplitude of 85% ± 1%. Thus, the temporal resolution of the iCytSnFR_PM sensor for varenicline was in the minute range. In the live-cell experiments described below, it would not be possible to resolve the differences between varenicline at the PM and in the ER. The relatively high affinity of iCytisineSnFR for varenicline, which presumably arises in part from the increased lifetime of the varenicline-iDrugSnFR complex, has drawbacks. The temporal resolution of iNicSnFR3a and iNicSnFR3b, which bind varenicline ~100-fold less tightly, is appropriate for subcellular experiments (Shivange et al., 2019). The previous experiments showing ER entry of varenicline used iNicSnFR3a and iNicSnFR3b (Shivange et al., 2019). For additional microperfusion data and analyses, see Appendix 2—figures 1–3.
 
-## Characterization of nicotinic iDrugSnFRS in HeLa cells and primary mouse hippocampal culture
+### Characterization of nicotinic iDrugSnFRS in HeLa cells and primary mouse hippocampal culture
 
 We examined the subcellular pharmacokinetics of the nicotinic agonists in mammalian cell lines and primary mouse hippocampal neurons. The nicotinic iDrugSnFRs were targeted to the PM (iDrugSnFR_PM) or the ER (iDrugSnFR_ER) as previously described (Bera et al., 2019; Shivange et al., 2019). We then performed a dose–response experiment using wide-field fluorescence imaging with each iDrugSnFR and its drug partner, sampling a range of concentrations covering a log scale surrounding the EC50 as determined for the purified protein (Figures 7 and 8, Videos 3–6). iDianiSnFR showed a robust response to dianicline at the PM and the ER in HeLa cells across a range of concentrations (3.125‒100 µM), and the speed was nearly limited by solution exchanges; there was a clear return to baseline fluorescence upon washout on the order of seconds after each drug application. At 100 µM, the PM and ER have a ΔF/F0 of ~1.2, but at lower concentrations, the ER displayed 30–75% of the signal detected at the PM, which may indicate a difference in membrane crossing (Figure 7A). Imaging in primary mouse hippocampal neurons demonstrated a similar trend (Figure 8A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig7-v2.jpg)
+
+**Figure 7.:** (A–D) Each iDrugSnFR detects its drug partner at the plasma membrane (PM) and endoplasmic reticulum (ER) of HeLa cells at the concentrations sampled. BC, buffer control. SEM of data are indicated by semi-transparent shrouds around traces where trace width is exceeded. (A) iDianiSnFR detects dianicline with a return to baseline fluorescence between drug applications. (B) iCytSnFR detection at the PM returns to baseline fluorescence between applications, while detection at the ER shows incomplete wash-in and washout. (C) iCyt_F_SnFR fluorescence response to the presence of 10-fluorocytisine in the ER also shows an incomplete washout between applications. (D) iCyt_BrEt_SnFR detects 9-bromo-10-ethylcytisine with wash-in and washout fluorescence similar to the pattern seen in iDianiSnFR.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** BC, buffer control. SEM of data are indicated by semi-transparent shrouds around traces where trace width is exceeded. Cyt (cytisine) in cells expressing iCytSnFR_ER (A) or iCytSnFR_PM (B); 10FC (10-fluorocytisine) in cells expressing iCyt_F_SnFR_ER (A) or iCyt_F_SnFR_PM (B); 9Br10EtC (9-bromo-10-ethylcytisine) in cells expressing iCyt_BrEt_SnFR_ER (A) or iCyt_BrEt_SnFR_PM (B). Relatively long (300 s) washout periods between drug applications allowed a return to baseline fluorescence for the (A) endoplasmic reticulum (ER) and (B) plasma membrane (PM). (C) A zoomed-in exemplar comparison of the ER and PM for a pulse of 1 µM 10-fluorocytisine shows a distinct lag in the decrease of the fluorescent signal in the ER as compared to the PM.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** BC, buffer control. SEM of data are indicated by semi-transparent shrouds around traces where trace width is exceeded. (A) iCytSnFR and (B) iCyt_F_SnFR detect nicotine at both the plasma membrane (PM) and endoplasmic reticulum (ER). Nicotine enters and exits the ER rapidly over seconds, a direct contrast to the behavior of cytisine and 10-fluorocytisine as detected by their intensity-based drug-sensing fluorescent reporter (iDrugSnFR) partners.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Endoplasmic reticulum (ER)-targeted constructs of iDianiSnFR, iCytSnFR, iCyt_F_SnFR, and iCyt_BrEt_SnFR are shown before (A1–D1) and during (A2–D2) exposure to each drug partner. ER-targeted iDrugSnFRs show the reticulated ER and dark ovals corresponding to the nucleus. Plasma membrane (PM)-targeted constructs of the same iDrugSnFRs are shown before (E1–H1) and after (E2–H2) drug introduction. Localization to the PM is robust, with some minimal puncta that may represent inclusion bodies or internal transport.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig8-v2.jpg)
+
+**Figure 8.:** Cultured primary mouse hippocampal neurons were transduced with endoplasmic reticulum (ER)- or plasma membrane (PM)-targeted constructs. BC, buffer control. SEM of data are indicated by semi-transparent shrouds around traces where trace width is exceeded. (A–D) Each iDrugSnFR detects its drug partner at the PM and ER over the concentrations sampled. (A) iDianiSnFR detects dianicline with a return to baseline fluorescence between drug applications. (B) iCytSnFR detection at the PM returns to baseline fluorescence between applications, while detection at the ER shows an incomplete washout. (C) iCyt_F_SnFR fluorescence response to the presence of 10-fluorocytisine in the ER also shows an incomplete washout between applications. (D) iCyt_BrEt_SnFR_ER detects 9-bromo-10-ethylcytisine with a wash-in and decay intermediate between iDianiSnFR and the other two cytisine derivatives.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/74648/elife-74648-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Endoplasmic reticulum (ER)-targeted constructs of iDianiSnFR, iCytSnFR, iCyt_F_SnFR, and iCyt_BrEt_SnFR are shown before (A1–D1) and during (A2–D2) exposure to each drug partner. ER-targeted iDrugSnFRs show the reticulated the ER and dark ovals corresponding to the nucleus. Plasma membrane (PM)-targeted constructs of the same iDrugSnFRs are shown before (E1–H1) and after (E2–H2) drug introduction. Localization in the PM is robust, with some minimal puncta that may represent inclusion bodies or internal transport.
+
+![Video 3.](https://cdn.elifesciences.org/articles/74648/elife-74648-video3.mp4.jpg)
+
+**Video 3.:** The dianicline concentrations are shown. The scale bar is shown. The video is 25-fold faster than real time.
+
+![Video 4.](https://cdn.elifesciences.org/articles/74648/elife-74648-video4.mp4.jpg)
+
+**Video 4.:** The dianicline concentrations are shown. The scale bar is shown.The video is 25-fold faster than real time.
+
+![Video 5.](https://cdn.elifesciences.org/articles/74648/elife-74648-video5.mp4.jpg)
+
+**Video 5.:** The cytisine concentrations are shown. The scale bar is shown. The video is 25-fold faster than real time.
+
+![Video 6.](https://cdn.elifesciences.org/articles/74648/elife-74648-video6.mp4.jpg)
+
+**Video 6.:** The cytisine concentrations are shown. The scale bar is shown. The video is 25-fold faster than real time.
 
 Cytisine showed slower entry into and exit from the ER of HeLa cells. The iCytSnFR_PM construct detected cytisine at concentrations from 0.078 to 80 µM and demonstrated a return to baseline fluorescence upon washout on the order of seconds after each drug application, reaching a maximum ΔF/F0 of ~2 at concentrations above 5 µM (Figure 7B). In contrast to the _PM construct, the iCytSnFR_ER construct only detected cytisine with a ΔF/F0 above the buffer control in the range of concentrations from 1.25 to 80 µM with a ΔF/F0, which was 25–50% of the maximum ΔF/F0 detected at the PM. Additionally, in the range of detectable concentrations of cytisine, the washout of cytisine was much slower than solution changes (Figure 7B). The incomplete washout persists even after several minutes and corresponds with previous suggestions that cytisine has low membrane permeability, as evidenced by its low brain penetration (Rollema et al., 2010).
 
@@ -142,11 +555,11 @@ Several complexities in the HeLa cell and neuron experiments imposed uncertainti
 
 ## Discussion
 
-## Membrane permeation of molecules with low logDpH7.4
+### Membrane permeation of molecules with low logDpH7.4
 
 The experiments show, to our knowledge, the first time-resolved measurements of membrane permeation for drugs in the logDpH7.4 range less than –1. Most orally available drugs have logDpH7.4 values between 2 and 4 (Smith et al., 2012). Cytisine, varenicline, dianicline, and the cytisine analogs studied here have calculated membrane partition coefficients some 3–6 orders of magnitude lower. These values and their order vary according to the algorithm, partially because of uncertainties in predicting pKa (Pieńko et al., 2016); here, we provide values calculated by Chemicalize (see Materials and methods): 10-fluorocytisine, –2.70; cytisine, –2.64; dianicline, –1.29; varenicline, –1.27; 9-bromo-10-ethylcytisine, –1.13. It is remarkable that drugs with such low calculated partition coefficients do cross membranes on a time scale of seconds (9-bromo-10-ethylcytisine, varenicline, dianicline) to minutes (10-fluorocytisine, cytisine). According to some (but not all) algorithms, the calculated logDpH7.4 values fall in the same two classes as the measured kinetics of membrane permeability: 10-fluorocytisine and cytisine are the slowest, and only these two agonists have logDpH7.4 values < –2. These observations support previous work suggesting that differences among chemical properties of nicotinic partial agonists correlate with drug permeation into the cerebrospinal fluid (CSF) after peripheral administration in mice (Rollema et al., 2010).
 
-## The iDrugSnFR paradigm
+### The iDrugSnFR paradigm
 
 The iDrugSnFRs are sensitive enough to allow experiments near the experimentally determined (or otherwise projected) concentration in the human blood and CSF (Astroug et al., 2010; Jeong et al., 2018; Rollema et al., 2010). The iDrugSnFRs have the advantage that they measure free aqueous ligand concentration (‘activity’), as sensed by nAChRs. Targeting sequences provide for visualization within the lumen of organelles – here, the ER.
 
@@ -154,7 +567,7 @@ The experiments do not use radiolabeled drugs, in vivo microdialysis or other ex
 
 We comment on varenicline. None of the biosensors in Table 1 were evolved to bind varenicline; yet it binds to some iDrugSnFRs with nanomolar EC50. Only iDianiSnFR, which lacks His68, binds varenicline with EC50 > 10 μM. Even tighter binding has been achieved with varenicline derivatives at mutated ligand-gated channels (Magnus et al., 2019). On the one hand, the cellular experiments described here cannot use iDrugSnFR pairs with dissociation rate constants less than ~0.1 s–1, corresponding to an EC50 of less than ~100 nM. On the other hand, all known neural drugs leave the human body and brain much more slowly, with rates determined primarily by metabolism; even ‘fast’ nicotine metabolizers display time constants of ~1200 s (Dempsey et al., 2004). Highly sensitive, tightly binding, reagentless iDrugSnFRs will be used in studies on personal pharmacokinetics in biofluids.
 
-## Structure–function relations for nicotinic and other iDrugSnFRs
+### Structure–function relations for nicotinic and other iDrugSnFRs
 
 This study shows that the amine group of nicotinic ligands makes equidistant cation-π interactions with two tyrosine residues (Tyr65, Tyr357), and this is confirmed by higher-resolution (1.5–1.7 Å) structures of varenicline, acetylcholine, and choline crystallized with isolated PBP moieties (PDB 7S7X, SV1R, 7S7Z, respectively; see also 3R6U, 6EYQ, and 3PPQ). Cation-π interactions also occur for cholinergic and/or nicotinic ligands in nAChRs (Morales-Perez et al., 2016; Post et al., 2017), the acetylcholine-binding protein (Celie et al., 2004), PBPs (Schiefner et al., 2004), and muscarinic receptors (Haga et al., 2012). We also observe that the protonated amine of varenicline makes a hydrogen bond to a backbone carbonyl group, another similar theme in acetylcholine binding protein (Celie et al., 2004) and nAChRs (Xiu et al., 2009).
 
@@ -162,7 +575,7 @@ This study presents a general step forward in understanding the structure–func
 
 While we cannot resolve the protonation-deprotonation event, the available functional data show good support for its occurrence, as follows. (1) The apo form of the iDrugSnFR increases its F0 by 10-fold per pH unit (Shivange et al., 2019), as though when deprotonated, Glu78 leaves the ‘candle snuffer’ position and moves to make the salt bridges with Lys97 and Arg99. (2) The EC50 for the ligand decreases by 10-fold per pH unit (Shivange et al., 2019), as though the conformation of the linker that forms the salt-bridge form is also the closed, liganded, fluorescent form of the PBP. Other observations favor the crucial role of the Glu78–chromophore interaction. (3) Only glutamate functions in position 78 of iSeroSnFR (Unger et al., 2020). (4) The mTurquoise variant in iGluSnFR, which has a tryptophan chromophore, requires entirely different linkers (Marvin et al., 2018).
 
-## Challenges at the intersection of pharmaceutical science and nicotine addiction science
+### Challenges at the intersection of pharmaceutical science and nicotine addiction science
 
 Our measurements show that nicotinic ligands with logDpH7.4 < ~–2 cross membranes much more slowly than do ligands with logDpH7.4 > ~–2. These measurements have two, possibly opposing, implications for future smoking-cessation drugs. On the one hand, α4β2 agonists that enter the ER, like nicotine and varenicline, upregulate nAChRs (Turner et al., 2011), which may be necessary and sufficient for addiction (Henderson and Lester, 2015); and maintenance of upregulation by varenicline may help to explain its suboptimal quit rate. On the other hand, ligands that do not enter the ER are also unlikely to enter the brain and therefore unlikely to be useful for smoking cessation.
 
@@ -172,7 +585,339 @@ Given these challenges, further progress may be possible now that we have two ty
 
 ## Materials and methods
 
-## Crystallography
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Agilent Technologies, Santa Clara, CA</td>
+      <td>200131</td>
+      <td>Chemically competent</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2;RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216;RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Primary hippocampal neurons</td>
+      <td>Caltech animal facilities</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td>Freshly isolated from Mus musculus</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>iAChSnFR</td>
+      <td>Loren Looger</td>
+      <td>Addgene: 137955</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>iDianiSnFR</td>
+      <td>This paper</td>
+      <td>Addgene: 177741</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>iCytSnFR</td>
+      <td>This paper</td>
+      <td>Addgene: 177738</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>iCyt_F_SnFR</td>
+      <td>This paper</td>
+      <td>Addgene: 177739</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>iCyt_BrEt_SnFR</td>
+      <td>This paper</td>
+      <td>Addgene: 177740</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV(MinDis)-iDianiSnFR_PM</td>
+      <td>This paper</td>
+      <td>Addgene: 177751</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV(MinDis)-iDianiSnFR_ER</td>
+      <td>This paper</td>
+      <td>Addgene: 177750</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV(MinDis)-iCytSnFR_PM</td>
+      <td>This paper</td>
+      <td>Addgene: 177743</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV(MinDis)-iCytSnFR_ER</td>
+      <td>This paper</td>
+      <td>Addgene: 177742</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV(MinDis)-iCyt_F_SnFR_PM</td>
+      <td>This paper</td>
+      <td>Addgene: 177745</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV(MinDis)-iCyt_F_SnFR_ER</td>
+      <td>This paper</td>
+      <td>Addgene: 177744</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV(MinDis)-iCyt_BrEt_SnFR_PM</td>
+      <td>This paper</td>
+      <td>Addgene: 177747</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV(MinDis)-iCyt_BrEt_SnFR_ER</td>
+      <td>This paper</td>
+      <td>Addgene: 177746</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV9-hSyn-iDianiSnFR_PM</td>
+      <td>This paper</td>
+      <td>Addgene: 177759</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV9-hSyn-iDianiSnFR_ER</td>
+      <td>This paper</td>
+      <td>Addgene: 177758</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV9-hSyn-iCytSnFR_PM</td>
+      <td>This paper</td>
+      <td>Addgene: 177753</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV9-hSyn-iCytSnFR_ER</td>
+      <td>This paper</td>
+      <td>Addgene: 177752</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV9-hSyn-iCyt_F_SnFR_PM</td>
+      <td>This paper</td>
+      <td>Addgene: 177755</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV9-hSyn-iCyt_F_SnFR_ER</td>
+      <td>This paper</td>
+      <td>Addgene: 177754</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV9-hSyn-iCyt_BrEt_SnFR_PM</td>
+      <td>This paper</td>
+      <td>Addgene: 177757</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV9-hSyn-iCyt_BrEt_SnFR_ER</td>
+      <td>This paper</td>
+      <td>Addgene: 177756</td>
+      <td>Obtainable through Addgene</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phusion High-Fidelity PCR Kit</td>
+      <td>New England Biolabs</td>
+      <td>E0553L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>New England Biolabs</td>
+      <td>E0554S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAprep Spin Miniprep Kit</td>
+      <td>QIAGEN SCR_008539</td>
+      <td>27104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EndoFree Plasmid Maxi Kit</td>
+      <td>QIAGEN SCR_008539</td>
+      <td>12362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAquick PCR Purification Kit</td>
+      <td>QIAGEN SCR_008539</td>
+      <td>28104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAquick Gel Extraction Kit</td>
+      <td>QIAGEN SCR_008539</td>
+      <td>28704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AAVpro Purification Kit</td>
+      <td>Takara Bio Inc.</td>
+      <td>6666</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PACT premier</td>
+      <td>Molecular Dimensions</td>
+      <td>MD1-29</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>10-Fluorocytisine</td>
+      <td>Tim Gallagher</td>
+      <td></td>
+      <td>Rego Campello et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>9-Bromo-10-ethylcytisine</td>
+      <td>Tim Gallagher</td>
+      <td></td>
+      <td>Rego Campello et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000 Transfection Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11668027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 3000 Transfection Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>L3000015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spartan’20</td>
+      <td>Wavefunction, Inc.</td>
+      <td>RRID:SCR_014901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NanoAnalyze</td>
+      <td>TA Instruments</td>
+      <td></td>
+      <td>https://www.tainstruments.com/sw/nano_analyze.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginPro 2018</td>
+      <td>OriginLab</td>
+      <td>RRID:SCR_014212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KaleidaGraph</td>
+      <td>Synergy</td>
+      <td>RRID:SCR_014980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XDS Program Package</td>
+      <td>MPI for Medical Research, Heidelberg</td>
+      <td>RRID:SCR_015652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>Phenix</td>
+      <td>RRID:SCR_014224, SCR_016736</td>
+      <td>Adams et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>MRC Laboratory of Molecular Biology</td>
+      <td>RRID:SCR_014222</td>
+      <td>Emsley et al., 2010</td>
+    </tr>
+  </tbody>
+</table>
+
+### Crystallography
 
 The gene encoding the full-length biosensor iNicSnFR3a was previously cloned into a bacterial expression vector (Shivange et al., 2019). To improve crystallization, we deleted the N-terminal HA tag and the N-terminal Myc tag, forming the constructs with the suffix ‘dt.’ These deletions were carried out with the Q5 Site-Directed Mutagenesis Kit (New England Biolabs, Ipswich, MA). All proteins were overexpressed in E. coli BL21-gold (DE3) cells (Agilent Technologies, Santa Clara, CA) using ZYM-5052 autoinduction media (Studier, 2005). Cells were collected by centrifugation and stored at –80°C until use.
 
@@ -182,65 +927,73 @@ For all constructs, initial crystallization screening was carried out with 40 mg
 
 X-ray datasets were collected at Stanford Synchrotron Radiation Laboratory beamline 12-2 and Advanced Light Source beamline 5.0.2 using Pilatus 6M detectors. All datasets were processed and integrated with XDS (Kabsch, 2010) and scaled with Aimless (Winn et al., 2011). For iNicSnFR3adt, molecular replacement was carried out using domains of the unliganded structure (PDB ID 6EFR) with Phaser in Phenix (Adams et al., 2010). The experimental phase information of KI-soaked crystals of iNicSnFR3adt was obtained with MR-SAD using AutoSol in Phenix (Adams et al., 2010). Molecular replacements of the remaining structures were carried out with the refined model of iNicSnFR3adt. Iterative refinement and model building cycles for all structures were carried out separately with phenix.refine in Phenix (Adams et al., 2010) and Coot (Emsley et al., 2010).
 
-## Directed evolution of iDrugSnFR proteins using bacterial-expressed protein assays
+### Directed evolution of iDrugSnFR proteins using bacterial-expressed protein assays
 
 Starting with iAChSnFR and intermediate biosensor constructs of that sensor, we constructed and optimized iDrugSnFRs for each drug partner during iterative rounds of SSM as previously described (Bera et al., 2019; Shivange et al., 2019). We utilized the 22-codon procedure including a mixture of three primers, creating 22 unique codons encoding the 20 canonical amino acids (Kille et al., 2013). The 22-codon procedure yields an estimated >96% residue coverage for a collection of 96 randomly chosen clones.
 
 A Tecan Spark M10 96-well fluorescence plate reader (Tecan, Männedorf, Switzerland) was used to measure baseline and drug-induced fluorescence (F0 and ΔF, respectively). Bacterial lysates were tested with excitation at 485 nm and emission at 535 nm. Lysates were also measured against choline to evaluate potential endogenous intracellular binding. Promising clones were amplified and sequenced. The optimally responding construct in each round of SSM was used as a template for the next round of SSM.
 
-S-slope allows for comparison between iDrugSnFRs with differing ΔFmax/F0 values (Bera et al., 2019) at the beginning of the dose–response relation, which is usually the pharmacologically relevant range. With lysates or purified protein, which allow complete dose–response relations, the Hill coefficient is near 1.0. We therefore calculated,Sslope=ΔFmaxF0EC50
+S-slope allows for comparison between iDrugSnFRs with differing ΔFmax/F0 values (Bera et al., 2019) at the beginning of the dose–response relation, which is usually the pharmacologically relevant range. With lysates or purified protein, which allow complete dose–response relations, the Hill coefficient is near 1.0. We therefore calculated
+
+$$
+S_{slope}=\frac{\frac{ΔF_{max}}{F_{0}}}{EC_{50}}
+$$
 
 in units of µM–1.
 
-## Measurements of purified iDrugSnFRs
+### Measurements of purified iDrugSnFRs
 
-Biosensors selected for further study were purified using a His6 sequence using an ÄKTA Start FPLC (GE Healthcare, Chicago, IL) as previously described (Shivange et al., 2019). Performance of protein quantification and dose–response relations for drug–sensor partners was also as previously described (Shivange et al., 2019). Where appropriate, we corrected for depletion of the ligand by binding with the equation,ΔFΔFmax=kD+[S]+[L]−([s]2+[L]2+KD2)−2[S][L]+2[S]KD+2[L]KD2[s],
+Biosensors selected for further study were purified using a His6 sequence using an ÄKTA Start FPLC (GE Healthcare, Chicago, IL) as previously described (Shivange et al., 2019). Performance of protein quantification and dose–response relations for drug–sensor partners was also as previously described (Shivange et al., 2019). Where appropriate, we corrected for depletion of the ligand by binding with the equation,
+
+$$
+\frac{ΔF}{ΔF_{max}}=\frac{k_{D}+[S]+[L]−\sqrt{([s]^{2}+[L]^{2}+K_{D}^{2})−2[S][L]+2[S]K_{D}}+2[L]K_{D}}{2[s]},
+$$
 
 where KD is the ligand–sensor equilibrium dissociation constant (we assume that KD = EC50), [S] is the iDrugSnFR protein concentration (typically 100 nM), and [L] is the nominal ligand concentration.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 Experiments were performed on an Affinity ITC (TA instruments, New Castle, DE) at 25°C. The iDrugSnFR protein was buffer-exchanged into 3× PBS, pH 7.0. The nicotinic agonists were dissolved in the same buffer. 800 µM cytisine (Sigma-Aldrich, Munich, Germany) was titrated into 80 µM iCytSnFR, 160 µM 10-fluorocytisine was titrated into 16 µM iCyt_F_SnFR. 470 µM 9-bromo-10-ethylcytisine was titrated into 47 µM iCyt_BrEt_SnFR. 1.5 mM dianicline (Tocris, Bio-Techne, Minneapolis, MN) was titrated into 150 µM iDianiSnFR. Analysis, including correction for changes in enthalpy generated from the dilution of the ligands, was performed using a single-site binding model in the manufacturer’s NanoAnalyze software.
 
-## Stopped-flow kinetic analysis
+### Stopped-flow kinetic analysis
 
 Kinetics were determined by mixing equal volumes of 0.2 µM iDrugSnFR protein (in 3× PBS, pH 7.0) with varying concentrations of cognate ligand in an Applied Photophysics (Surrey, UK) SX20 stopped-flow fluorimeter with 490 nm LED excitation and 510 nm long-pass filter at room temperature (22°C). ‘Mixing shots’ were repeated five times and averaged (except for 100 s experiments, which were collected only once). Standard deviations are not included on the plots, but are nearly the same size as the data markers. The first 3 ms of data were ignored because of mixing artifacts and account for the dead time of the instrument.
 
 Data were plotted and time courses were fitted, when possible, to a single exponential, and kobs was plotted as a function of [ligand]. The linear portion of that graph was fit, with the slope reporting k1 and the y-intercept reporting k-1. When the time course did not fit well to a single rising exponential, it was fitted to the sum of two increasing exponentials, and the first rise (kobs1) was treated as above to determine k1 and k-1.
 
-## Expression in mammalian cells
+### Expression in mammalian cells
 
 We constructed two variants of each iDrugSnFR for expression in mammalian cells. The PM (suffix _PM) and ER (suffix _ER) variants were constructed by circular polymerase extension cloning (Quan and Tian, 2009). To create the _PM constructs, we cloned the bacterial constructs into pCMV(MinDis), a variant of pDisplay (Thermo Fisher Scientific, Waltham, MA) lacking the hemagglutinin tag (Marvin et al., 2013). To generate the _ER constructs, we replaced the 14 C-terminal amino acids (QVDEQKLISEEDLN, including the Myc tag) with an ER retention motif, QTAEKDEL (Shivange et al., 2019).
 
 We transfected the iDrugSnFR cDNA constructs into HeLa and HEK293T cells. Cell lines were purchased from ATCC (Manassas, VA) and cultured according to ATCC protocols. We purchased new aliquots of the cell lines listed above at 6-month intervals to ensure reproducibility. Mycoplasma contamination was assayed at 6-month intervals and was negative over the course of these experiments. For chemical transfection, we utilized either Lipofectamine 2000 or Lipofectamine 3000 (Thermo Fisher Scientific) following the manufacturer’s recommended protocol. Cells were incubated in the transfection medium for 24 hr and imaged 24–48 hr after transfection.
 
-## Millisecond timescale microperfusion
+### Millisecond timescale microperfusion
 
 HEK293T cells were imaged using a Nikon (Tokyo, Japan) DIAPHOT 300 with a Zeiss ×63 objective (1.5 NA). Because the ligand concentration after micro-iontophoretic drug application (Shivange et al., 2019) is unknown, we applied drugs with a laminar-flow microperfusion (model SS-77B Fast-Step perfusion system; Warner Instruments, Holliston, MA). In an array of three square glass capillaries (600 µ i.d.), the center capillary contained vehicle (Hanks buffered salt solution [HBSS]) plus drug, while the two outer capillaries contained vehicle only. Vehicle also flowed from a separate input connected to the bath perfusion system. Solution exchange, measured by loading the center capillary with dye, had a time constant of 90 ± 20 ms (n = 6 trials).
 
 We used Fiji ImageJ and Origin Pro 2018 (OriginLab, Northampton, MA) to fit the rise and decay of the iCytSnFR_PM drug response to the sum of one or two exponential components. An F-test determined whether two exponential components fit the data significantly better than 1 (p<0.05). Statistical comparisons between groups were carried out using ANOVA.
 
-## AAV production and transduction in primary mouse hippocampal neuronal culture
+### AAV production and transduction in primary mouse hippocampal neuronal culture
 
 The adeno-associated virus plasmid vector AAV9-hSyn was described previously (Challis et al., 2019). Virus was purified using the AAVpro Purification Kit (TakaraBio USA). Mouse embryo dissection and culture were previously described (Shivange et al., 2019). About 4 days after dissection, we transduced the _ER construct at an MOI of 0.5–5 × 104; and separately, the _PM construct was transduced at an MOI of 0.5–1 × 105. Neurons were imaged ~2–3 weeks post-transduction.
 
-## Time-resolved fluorescence measurements in live mammalian cells and primary mouse hippocampal neuronal culture
+### Time-resolved fluorescence measurements in live mammalian cells and primary mouse hippocampal neuronal culture
 
 Time-resolved dose–response imaging was performed on a modified Olympus IX-81 microscope (Olympus Microscopes, Tokyo, Japan), in widefield epifluorescence mode using a ×40 lens. Images were acquired at 2–4 frames/s with a back-illuminated EMCCD camera (iXon DU-897, Andor Technology USA, South Windsor, CT), controlled by Andor IQ3 software. Fluorescence measurements at λex = 470 nm and the epifluorescence cube were as previously described (Shivange et al., 2019; Srinivasan et al., 2011).
 
 Solutions were delivered from elevated reservoirs by gravity flow, via solenoid valves (Automate Scientific, Berkeley, CA), then through tubing fed into a manifold, at a rate of 1–2 ml/min. The vehicle was HBSS. Other details have been described (Shivange et al., 2019; Srinivasan et al., 2011). Data analysis procedures included subtraction of ‘blank’ (extracellular) areas and corrections for baseline drifts using Origin Pro 2018.
 
-## Spinning disk confocal fluorescence images
+### Spinning disk confocal fluorescence images
 
 HeLa cells and mouse primary hippocampal culture were transfected or transduced as described above. Live-cell images were collected using a Nikon Ti-E spinning disk laser scanning confocal inverted microscope equipped with ×100 objective, 1.49 NA (oil), 120 μm WD. The laser wavelength was 488 nm at 15% power. Dishes were imaged in a custom incubator (Okolab, Ottaviano, Italy) at 37°C and 5% CO2. Initial images were taken in HBSS. To add drug, we doubled the bath volume by adding HBSS containing drug using a hand-held pipette. The final drug concentrations were dianicline, 15 µM; cytisine, 10 µM; 10-fluorocytisine, 10 µM; and 9-bromo-10-ethylcytisine, 7.5 µM.
 
-## LogD calculations
+### LogD calculations
 
 We used Chemicalize (https://chemaxon.com/products/chemicalize). The software uses algorithms to calculate logP and pKa. The software then calculates
 
 LogDpH7.4 = logP -log[1 + 107.4 - pKa].
 
-## Plasmid availability
+### Plasmid availability
 
 We will deposit plasmids with the following cDNAs at Addgene:
 

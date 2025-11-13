@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.28070.001 Cells of multi-cellular organisms evolve toward uni-cellularity in the form of cancer and, if humans intervene, continue to evolve in cell culture. During this process, gene dosage relationships may evolve in novel ways to cope with the new environment and may regress back to the ancestral uni-cellular state. In this context, the evolution of sex chromosomes vis-a-vis autosomes is of particular interest. Here, we report the chromosomal evolution in ~ 600 cancer cell lines. Many of them jettisoned either Y or the inactive X; thus, free-living male and female cells converge by becoming ‘de-sexualized’. Surprisingly, the active X often doubled, accompanied by the addition of one haploid complement of autosomes, leading to an X:A ratio of 2:3 from the extant ratio of 1:2. Theoretical modeling of the frequency distribution of X:A karyotypes suggests that the 2:3 ratio confers a higher fitness and may reflect aspects of sex chromosome evolution.
+Cells of multi-cellular organisms evolve toward uni-cellularity in the form of cancer and, if humans intervene, continue to evolve in cell culture. During this process, gene dosage relationships may evolve in novel ways to cope with the new environment and may regress back to the ancestral uni-cellular state. In this context, the evolution of sex chromosomes vis-a-vis autosomes is of particular interest. Here, we report the chromosomal evolution in ~ 600 cancer cell lines. Many of them jettisoned either Y or the inactive X; thus, free-living male and female cells converge by becoming ‘de-sexualized’. Surprisingly, the active X often doubled, accompanied by the addition of one haploid complement of autosomes, leading to an X:A ratio of 2:3 from the extant ratio of 1:2. Theoretical modeling of the frequency distribution of X:A karyotypes suggests that the 2:3 ratio confers a higher fitness and may reflect aspects of sex chromosome evolution.
 
 ## Introduction
 
@@ -39,11 +39,19 @@ In this study, we analyze 620 cancer cell lines that have been genotyped using S
 
 ## Results
 
-## Convergent sex chromosome evolution between sexes
+### Convergent sex chromosome evolution between sexes
 
 The most common form of genomic changes in cell lines is the loss of heterozygosity (LOH) when one of the two homologous chromosomes is eliminated (Roschke et al., 2003). We therefore examine single nucleotide polymorphisms (SNPs) across the 620 cell lines for occurrences of LOH on each autosome and the X chromosome. Male and female cell lines are separately analyzed.
 
 Figure 1A shows the LOH frequency for each autosome (black dots) and the red dot represents the sex chromosomes (X in female and Y in male). For autosomes, the percentages of LOH are remarkably similar between sexes, with a correlation coefficient of 0.94 among 620 cell lines. There is a slight tendency for the smaller autosomes to have higher LOH rate (R =~−0.4, p=~0.046, Figure 1—figure supplement 1). The median percentage of LOH is about 13% for autosomes. However, the losses of X (37% in females) and Y (40% in males) stand out. Given its rank as the 7th largest chromosome, the X is not expected to be lost in more than 15% of cell lines, based on the regression analysis of Figure 1A. Since the expression from the X is not lost, we infer that it’s the inactive X(or Xi) that is eliminated.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/28070/elife-28070-fig1-v1.jpg)
+
+**Figure 1.:** (A) Percentage of lines with LOH (loss of heterozygosity). Each black dot represents an autosome and the red dot represents X and Y. LOH in male and female lines are separately displayed on the X and Y-axes. (B) Percentage of cell lines with either one (n = 119, 34.80% of male cell lines) or two Xa’s (n = 108, 31.58% of male cell lines), cell lines with partial X’s are not included. (C) Expression level of XIST in male cell lines, [Y] means with or without Y chromosome. (D) Expression ratios of X-linked genes between Xa[Y] and XaXa[Y] cell lines. Each grey dot represents a gene, and significant differences are indicated by black dots (t-test, p<0.05). (E) Expression level of XIST in female cell lines with or without LOH. Female lines with LOH have very low levels of XIST, suggesting all X's being active. In non-LOH (XaXb) lines, the expression of XIST indicates the presence of inactive X’s. (F) Percentage of cell lines with either one (n = 30,10.79% of female cell lines) or two Xa’s (n = 31, 11% of female lines) in female lines with LOH of whole X chromosome. Non-LOH lines are not used because of the uncertainty in the number of Xa’s.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28070/elife-28070-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** There is a slight tendency for the smaller autosomes to have higher LOH's than for the larger ones (R =~ −0.4, p=~0.046). X chromosome shows significant deviated from the regression line.
 
 Female lines lose the inactive X (Xi) and male lines lose the Y chromosome at a higher rate than other chromosomes. The two sexes may thus be expected to converge toward having a single sex chromosome. Furthermore, given that spontaneous LOH is not infrequent and the loss cannot be regained, long-term cultures might evolve to complete LOH for sex chromosomes as well as autosomes. The genome-wide low rate of LOH suggests selection holding back such changes. The strong correlation between sexes further reflects a balance between the production and elimination of LOH’s, likely involved natural selection.
 
@@ -57,25 +65,49 @@ Cancer cell lines usually have high rates of aneuploidy and could be heterogeneo
 
 **Figure 2.:** (A–B) Representative images of X chromosome FISH in the A549 cell line (A) with two Xs and HeLa (B) with three Xs. DNA is stained with DAPI (blue), and the X chromosome is labeled with Cy3 (red). (C–D) The distribution of the copy number of X’s among cells from A549 (n = 343) and HeLa (n = 170).
 
-## Evolution toward a new X:A expression ratio (EX/A)
+### Evolution toward a new X:A expression ratio (EX/A)
 
 With an extra copy of the active X, the ‘expression phenotype’ is expected to change. The ratio of the median gene expression on the X to that on the autosomes(EX/A) is of particular interest. EX/A has been reported to be around 0.5 ~ 0.8 for normal mammalian tissues (Xiong et al., 2010; Deng et al., 2011; Kharchenko et al., 2011). We assayed EX/A by separating lines derived from cancerous and normal tissues. Figure 3A shows that EX/A distributions center on ~ 0.84 in normal cell lines and on one in cancerous cell lines. Given the controversy in the assay of EX/A, we also varied the threshold for counting expressed transcripts (see Materials and methods). By varying the threshold (Figure 3B), EX/A ranges from 0.78 to 1.05 in normal cell lines but is consistently higher by approximately 15% in cancer cell lines. The same pattern is seen in the RNA-seq data (Figure 3—figure supplement 1).
 
-## The concerted evolution of autosomes as a set
+![Figure 3.](https://cdn.elifesciences.org/articles/28070/elife-28070-fig3-v1.jpg)
+
+**Figure 3.:** (A) EX/A distributions among normal (N) and cancer (C) cell lines. NF and NM (or CF and CM) designate normal (or cancer) female and male lines. EX/A in cancer cell lines become larger than those of the normal cell lines. Note that the expression in normal cell lines is narrowly distributed and is close to that of the normal tissue when compared. Although the numbers of NF and NM lines are much smaller than CF and CM lines (17 and 24 vs. 279 and 341), their EX/A distributions are much tighter than in cancer cell lines. The actual counts correspond to kernel density are given in Figure 3—figure supplement 2. (B) EX/A ratio in CF, CM, NF and NM lines with filtering with three different cutoffs (see Materials and methods). EX/A ratios are consistently higher in CF and CM lines than in NF and NM lines.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28070/elife-28070-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The gene expression information (gtf files) by RNA-seq was downloaded from UCSC (ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/). There are 7 cancerous and 11 normal cell lines respectively. E X/A was calculated by the median value of expressed X-linked and autosomal genes. Expressed genes were selected as RPKM > 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/28070/elife-28070-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The median expression values of X and autosomes genes were used to compute EX/A for each cell lines. The proportion of cell lines within in a bin (0.1) was plotted as Y-axis. The EX/A of cancerous cell lines show a strong right shift compared to that of normal cell lines.
+
+### The concerted evolution of autosomes as a set
 
 While sex chromosomes evolve, autosomes should also evolve. Since the generation of aneuploidy may happen independently for each autosome, a key question is whether selection operates on the autosomes as a set. Does natural selection favor cells that have full sets of autosomes?
 
 Figure 4A shows the distribution of chromosome number across the 620 cell lines we studied. Apparently, cancerous cell lines acquire autosomes during evolution. The distribution of ploidy (n = 22) number shows peaks at 2 and 3, indicates that many cell lines appear to be in transition between full diploidy and triploidy of 44 and 66 autosomes. Similarly, the majority of sublines of HeLa cells we examined have 55–75 chromosomes centering about the triploid count of 69 (Figure 4—figure supplement 1). Indeed, autosomes appear to exist as a full complement with n = 22. Although autosomes may evolve as a set, cells most likely add one autosome at a time. It is hence desirable to track each chromosome individually. Single cells were individually isolated from a HeLa cell line and subsequently grown to a sub-line of 106 cells. We subjected six such sub-lines to whole genome sequencing such that each chromosome could be tracked individually. Smaller chromosomes are indeed more erratic in their numbers in cell lines. Only the largest 14 chromosomes (13 autosomes and X), which together account for ~75% of the genome, are used to test the convergence of autosomes. The cutoff is based on the observation that chromosome 13 is the largest autosome yielding viable trisomic new-borns (Taylor, 1968; Patterson, 2009; Kleijer et al., 2006). We reason that, if whole organisms can survive trisomy, the fitness consequence of the particular aneuploidy would probably be very small at the cellular level.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/28070/elife-28070-fig4-v1.jpg)
+
+**Figure 4.:** (A) The density plot of autosome copy number among 620 cell lines shows peaks at 2 and 3 per autosome. (B-C) The observed distributions of gain in copy number among autosomes in two HeLa sublines. The expected Poisson distributions are also given for sublines with different means (λ = 10/13, 16/13; see text). (D) The percentages of C(Xa:A) types among the 620 cell lines.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28070/elife-28070-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (B) The composite distribution of the five lines with λ < 1. And the comparison to Poisson distribution.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/28070/elife-28070-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The median values for copy numbers on autosomes and X chromosome were used to calculate C(Xa:A). The proportion of cell lines within a bin (0.1) was plotted as the Y-axis. The discrete peaks denote the four major genotypes (X:3A; X:2A; 2X:3A; 2X:2A).
+
 In all 6 lines, each of the 13 autosomes has 2–4 copies, ranging from an average of 2.62 to 3.23 (Supplementary file 2). If each autosome behaves independently, the number of autosomes that increase by x copies (x = 0, 1, 2 etc.) should follow a Poisson distribution with a mean of λ. Two different lines, with λ = 10/13 and λ = 16/13, are shown in Figure 4B and C. In the former, all cells have x = 0 or x = 1 and, in the latter, all cells have x = 1 or x = 2 (Supplementary file 2). The data suggest that each autosome increases by one copy and only after all of the 13 autosomes have gained an extra copy do further increases continue. Figure 4—figure supplement 1 shows the composite distribution of the five lines with λ < 1. The pattern, like that of Figure 4B, is statistically significant (p=0.0021 by the χ2 test) with an excess at x = 1. These results suggest that the larger autosomes evolve cohesively as a set. With autosomes evolving as a cohesive unit, X:A can be represented by whole numbers of 1:2, 2:3 etc.
 
-## Evolution of the C(Xa:A) ratio underlying EX/A
+### Evolution of the C(Xa:A) ratio underlying EX/A
 
 We now summarize the evolution of cell lines by their C(Xa:A) genotypes. C(Xa:A) is the number of active X chromosomes and the ploidy number of autosomes (in multiples of 22) and is equal to C(1:2) in normal cells. For the purpose of counting active Xa’s, data from most male lines are usable. For female lines, only data from the LOH lines of the X can be used. Between the two sexes, C(Xa:A) distributions are very similar and the combined distribution is used in the analysis (Figure 4—figure supplement 2).
 
 Shown in Figure 4D, most lines have the C(1:2) or C(2:3) genotype which together account for 2/3 of the lines. Given that C(1:2) is the starting genotype, its common occurrence at 37.4% is not surprising. The high frequency of C(2:3), however, is unexpected. To reach C(2:3) from the starting point of C(1:2), cells should evolve to either C(2:2) or C(1:3) first, but neither genotype is commonly seen in these cells lines. In contrast, C(2:3) at 29.2% is the second most common genotype. If we include the two genotypes, C(2:4) and C(3:3), that are derivatives of C(2:3), this inclusive C(2:3) cluster is the most common genotype. The model p the next section helps to interpret the observation.
 
-## A model for the evolution of free-living cells
+### A model for the evolution of free-living cells
 
 The pathways of chromosomal evolution can be diagrammed as a series steps in Figure 5A. Each node represents a C(Xa:A) genotype, the abundance of which is reflected in the size of the node. Thicker arrows indicate faster transitions which add/delete one X while the thinner arrow denotes the slower transition of adding/deleting the whole set of autosomes. The fitness of each genotype, W, is assumed to be determined by the Xa/A ratio. In general, one would expect the wild type (W1) to be the fittest genotype and we particularly wish to know whether that is indeed the case here.
 
@@ -83,11 +115,23 @@ The pathways of chromosomal evolution can be diagrammed as a series steps in Fig
 
 **Figure 5.:** (A) Evolutionary pathways of chromosomal changes. Each node represents a karyotype C(Xa:A) and the size roughly corresponds to its frequency. Cell fitness is assumed to be a function of the Xa/A ratio, which is represented by the Y-axis. The four abundant karyotypes are shown by solid black circles. Red arrows indicate faster changes in X and black arrows indicate slower changes in autosome. Main transitions between the common karyotypes are indicated by thicker arrows. (B) Changes in the frequencies of the three key genotypes as a function of time (T, expressed in units of 1/v) under fitness neutrality with all Wi’s = 1. The parameters for Equations 1 and 2 are u = 10 v, a = 2 and b = 1.5. Both the theoretical trajectories and the observed values are given. The C(2:3) cluster (x3) is far more common in the observation than in the neutral model. (C) Changes in 4 karyotypic frequencies under selection according to Equation S3 with s = −0,5 and t = 0.5. All other conditions are the same as above. Under selection, a reasonable agreement between the model and the observation can be obtained.
 
-We first model the evolution under strict neutrality where all nodes have the same fitness. For simplicity, genotypes are grouped into 3 clusters centering around the 3 dominant genotypes, C(1:2), C(2:2) and C(2:3), the frequencies of which are x1, x2 and x3, respectively. Each cluster consists of the dominant genotype as well as the less common ones adjacent to it (see Figure 5A). For instance, x2 is the sum of the frequencies of C(2:2) and C(3:2) and x1 is those of C(1:2), C(1:1) and half of C(1:3). The frequency of the last one, being adjacent to both C(1:2) and C(2:3), is split between the two clusters. Tallying up the numbers in Figure 4D, we obtain x1 = 0.41, x2 = 0.092 and x3 = 0.482 with a total of 0.984, excluding the marginal genotypes. The analysis below can be expanded to account for each genotype separately. The transitions between clusters are defined as follows:x1Tu⇌au x2Tv⇌bvx3T
+We first model the evolution under strict neutrality where all nodes have the same fitness. For simplicity, genotypes are grouped into 3 clusters centering around the 3 dominant genotypes, C(1:2), C(2:2) and C(2:3), the frequencies of which are x1, x2 and x3, respectively. Each cluster consists of the dominant genotype as well as the less common ones adjacent to it (see Figure 5A). For instance, x2 is the sum of the frequencies of C(2:2) and C(3:2) and x1 is those of C(1:2), C(1:1) and half of C(1:3). The frequency of the last one, being adjacent to both C(1:2) and C(2:3), is split between the two clusters. Tallying up the numbers in Figure 4D, we obtain x1 = 0.41, x2 = 0.092 and x3 = 0.482 with a total of 0.984, excluding the marginal genotypes. The analysis below can be expanded to account for each genotype separately. The transitions between clusters are defined as follows:
 
-where u and v are the transition rates and xi(T) is the frequency of cluster i at time T. Let X(T) be the vector of [x1(T),x2(T),x3(T)], expressed as(1)X(T)=X(0)[1−uu0au1−au−vv0bv1−bv]T
+$$
+x_{1}Tu⇌aux_{2}Tv⇌bvx_{3}T
+$$
 
-When T >> 0,(2)[x1(T),x2(T),x3(T)]∼[ab,b,1]/z
+where u and v are the transition rates and $x_{i}(T)$ is the frequency of cluster i at time T. Let $X(T)$ be the vector of $[x_{1}(T),x_{2}(T),x_{3}(T)]$, expressed as
+
+$$
+X(T)=X(0)[1−uu0au1−au−vv0bv1−bv]^{T}
+$$
+
+When T >> 0,
+
+$$
+[x_{1}(T),x_{2}(T),x_{3}(T)]∼[ab,b,1]/z
+$$
 
 where z = ab + b+1. The genotype frequencies evolve toward the equilibrium, [ab, b, 1]/z, which depends on a and b, but not u and v. We posit that a > 1 and b > 1 because, as the chromosome number increases, the probability of chromosome gain/loss increases as well. By - Equation 2, x1(T) > x2(T) > x3(T) when T >> 0. In short, the relative frequency should be in the descending order of C(1:2), C(2:2) and C(2:3) if there is no fitness difference among genotypes. This predicted inequality at T >> 0 is very different from the observed trend.
 
@@ -113,11 +157,11 @@ Finally, this study of cancerous cell lines may also have medical implications. 
 
 ## Materials and methods
 
-## Chromosome number estimation of HeLa sub-lines
+### Chromosome number estimation of HeLa sub-lines
 
 The processing of clonal expansion and whole genome sequencing of HeLa lines are described at Zhang et. al. (https://www.biorxiv.org/content/early/2017/10/05/193482). For each line, the copies of each chromosome are estimated according to the average sequencing depth by Control-FREEC, a tool for assessing copy number using next generation sequencing data (Boeva et al., 2012).
 
-## Data collection
+### Data collection
 
 Three large-scale datasets were used in this study (Greenman et al., 2010; Barretina et al., 2012; Cheung et al., 2010).
 
@@ -125,31 +169,31 @@ Genome-wide SNP array data on cancer cell lines and a normal training set were d
 
 The genome-wide gene expression data for 947 human cancer cell lines from 36 tumor types were generated by Barretina et al (Barretina et al., 2012), as part of the cancer cell line Encyclopedia (CCLE) project using Affymetrix U133 plus 2.0 arrays and are available from the CCLE project website (CCLE_Expression_Entrez_2012-09-29.gct, http://www.broadinstitute.org/ccle/home). The expression profiles of 768 cell lines with gender information, representing 337 females and 431 males, were used in this study. These cell lines were partially overlapped with the lines used in Greenman et. al. Additionally, RNA-seq data from 41 lymphoblastoid cell lines from 17 females and 24 males were downloaded from GEO database (GSE16921) (Cheung et al., 2010). The details of these cell lines are shown in Supplementary file 5.
 
-## LOH detection and copy number estimation
+### LOH detection and copy number estimation
 
 Human genomes harbor single nucleoid polymorphisms (SNPs) at a density of about 0.5–1 SNP per kb. When a large segment of chromosome is lost in somatic cells, the corresponding region would be devoid of SNPs, referred to as loss of heterozygosity (LOH). LOH regions may regain the copy number but the lost heterozygosity cannot be regained.
 
 We used the genotype information and the allelic copy number estimation generated from PICNIC to infer LOH as well as copy number of a specific chromosome. As for a chromosome, if ≥ 95% of SNP sites were homologous we considered that there was a LOH (loss of heterogeneity) event for this chromosome. Similarly, if ≥ 95% of detected alleles on the chromosome had a constant copy number of 0, 1, 2, 3 or 4, the copy number would be considered as the copy number of the chromosome. The copy number of the Y chromosome was estimated separately. In females, although all sites on Y chromosome should have yielded 0 copies, only ~ 60% of sites detected by the Y chromosome probes showed a copy number of 0. This result indicated that several X homologous regions on the Y were covered by ~ 30% of Y probes. Therefore, Y chromosome loss was defined as when more than 60% of SNP probes from the Y chromosome showed a copy number of 0.
 
-## Sex chromosome genotype inference
+### Sex chromosome genotype inference
 
 The expression level of XIST can be used as a proxy to distinguish the active X chromosome from the silent one as this gene was expressed on the inactive X chromosome and functioned in cis (Richardson et al., 2006). According to Greenman’s and Barretina’s studies, 496 cancer cell lines have both copy number and expression data. As expected, XIST was silenced in male cell lines, as well as in females with whole X chromosome LOH (Figure 1C). Based on X chromosome LOH and copy number information, we identified five genotypes, including XaO (female lines with one X = 20 lines), XaXa (female lines with isodisomy of X = 17 lines), XaXb (female lines with heterozygous for the X = 28 lines), Xa[Y] (male lines with one X = 53 lines) and XaXa[Y] (male lines with two X's = 69 lines).
 
-## C(Xa:A)(ratio of active X's to autosomes) calculation
+### C(Xa:A)(ratio of active X's to autosomes) calculation
 
 All male (341 lines) and female cell lines with whole X chromosome LOH (103 lines) were employed for C(Xa:A) calculation. C(Xa:A) was defined as the ratio of absolute X copy number to that of all autosomes.
 
-## EX/A (ratio of X to autosomal expression) calculation
+### EX/A (ratio of X to autosomal expression) calculation
 
 EX/A was defined as the ratio of the expression of X-linked genes to that of autosomal ones. The median values of expressed X-linked and autosomal genes were used to calculate EX/A in both cancerous and normal cell lines. For the datasets from the Affymetrix U133 + 2.0 array, genes with signal intensities ≥ 32 (log2 ≥ 5) were considered to be expressed. While as for RNA-seq data, genes with RPKM values ≥ 1 were considered to be expressed.
 
 Previous studies have shown that EX/A value may be affected by gene set used (Deng et al., 2011). In addition, several silent genes in normal tissues have been shown to be expressed in tumor tissues (Hofmann et al., 2008). Those genes were dominant on X chromosome, which could result in an increase of EX/A. To exclude the possibility that EX/A ratios may be biased in cancerous cell lines, gene sets for EX/A calculation were first selected in normal cell lines by three criteria, with the same sets then selected in cancerous cell lines. The three filtering criteria for gene set selection were RPKM > 0, 1, and 5 in normal cell lines (Figure 2C).
 
-## Differences in X-linked gene expression between Xa[Y] and XaXa[Y] lines
+### Differences in X-linked gene expression between Xa[Y] and XaXa[Y] lines
 
 To explore the impact of extra X chromosome on gene expression levels of X-linked genes, 53 cell lines with Xa[Y] and expression data, 69 cell lines with XaXa[Y] and expression data were used. T-test with Benjamini and Hochberg adjusting method was employed to determine genes, the expression of which are significantly changed due to an extra X copy. 648 detected X-linked genes are plotted in Figure 2A. The free statistical programming language R was used for the statistical analysis (version 3.0.1).
 
-## X chromosome Fluorescence in situ hybridization
+### X chromosome Fluorescence in situ hybridization
 
 HeLa cells (from the Culture Collection of the Chinese Academy of Sciences, Shanghai, China) were cultured in DMEM (Life Technologies ,CA, United State) supplemented with 10% fetal bovine serum (FBS), 100 U/ml of penicillin, and 100 μg/ml of streptomycin. A549 cells (from ATCC) were cultured in RPMI-1640 (Life Technologies) with 10% fetal bovine serum (FBS), 100 U/ml of penicillin, and 100 μg/ml of streptomycin at 37°C with 5% CO2. Approximately 2 × 106 cells were seeded and cultured in 10 cm dishes with 10 ml growth medium as described above. To synchronize the cells, 200 μl of thymidine (100 mM) was added to the cells. After incubating for 14 hr, the cells were washed twice with 10 ml PBS and then supplemented with 10 ml growth medium containing deoxycytidine (24 μM). After incubating for 2 hr, 10 µl nocodazole (100 μg/ml) was added to the cells. The cells were incubated for an additional 10 hr.
 
@@ -157,7 +201,7 @@ After synchronization, cells were harvested and treated with 4 ml hypotonic solu
 
 The identification of HeLa cells was confirmed by genome sequence method and the identification of A549 cells was confirmed by karyotype profile. The mycoplasma contamination status was tested by DNA staining for both HeLa and A549.
 
-## The assumption of the model
+### The assumption of the model
 
 In the model, autosomes are treated as an integrated set, labeled ‘A’ and counted as a set. There may be two reasons to do so. One is mechanistic if the entire haploid set of chromosomes increases a unit. While this may happen in organismal evolution, we consider the mechanism dubious for cell lines. In the absence of meiosis, whole-sale changes should involve the entire diploid set (diploids, tetraploids and octoploids, as in human hepatocytes).
 
@@ -165,11 +209,11 @@ We therefore suggest that chromosomes are gained and lost individually. They evo
 
 Assuming all genotypes have whole numbers of X and A, we assign a fitness to all genotypes of Figure 4A. Under neutrality, these genotypes have the same fitness. The main goal of the modeling work (see Figure 5B and C) is to test the fitness neutrality of these ‘whole number’ genotypes.
 
-## Environmental factors
+### Environmental factors
 
 When we attribute the observed genetic changes associated with cells’ unicellular existence, we do include all environmental factors that make the unicellular existence possible. Without these factors, cell lines cannot live. An analogy is the study of the evolution of social structure, which is also conditional on many environmental factors (e.g., food supply) but one often uses ‘social structure’ as an all-encompassing term. Since the unicellular existence requires a number of environmental factors (which the cell culture community has been keen to identify), it is not possible to separate ‘unicellularty’ and the environments needed to sustain the unicellular existence. It is also important to point out that these environmental factors are often antagonistic to the multicellular living.
 
-## Strength of selection
+### Strength of selection
 
 In this study, we use the model to compare the observations with the neutral expectation. Although we could reject the neutral model and conclude the direction of selection, we refrain from estimating the strength of selection for two reasons – both biological and technical.
 

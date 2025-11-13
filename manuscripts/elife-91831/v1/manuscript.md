@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01kpzv902 Department of Clinical Pharmacology, Flinders Medical Centre and Flinders University Adelaide Australia
-2. https://ror.org/00892tw58 Adelaide Medical School, University of Adelaide Adelaide Australia
+1. Department of Clinical Pharmacology, Flinders Medical Centre and Flinders University Adelaide Australia ([ROR:01kpzv902](https://ror.org/01kpzv902))
+2. Adelaide Medical School, University of Adelaide Adelaide Australia ([ROR:00892tw58](https://ror.org/00892tw58))
 
 † Corresponding author
 

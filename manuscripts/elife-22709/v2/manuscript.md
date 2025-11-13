@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.22709.001 Chlamydia trachomatis is an obligate intracellular pathogen that resides in a membrane-bound compartment, the inclusion. The bacteria secrete a unique class of proteins, Incs, which insert into the inclusion membrane and modulate the host-bacterium interface. We previously reported that IncE binds specifically to the Sorting Nexin 5 Phox domain (SNX5-PX) and disrupts retromer trafficking. Here, we present the crystal structure of the SNX5-PX:IncE complex, showing IncE bound to a unique and highly conserved hydrophobic groove on SNX5. Mutagenesis of the SNX5-PX:IncE binding surface disrupts a previously unsuspected interaction between SNX5 and the cation-independent mannose-6-phosphate receptor (CI-MPR). Addition of IncE peptide inhibits the interaction of CI-MPR with SNX5. Finally, C. trachomatis infection interferes with the SNX5:CI-MPR interaction, suggesting that IncE and CI-MPR are dependent on the same binding surface on SNX5. Our results provide new insights into retromer assembly and underscore the power of using pathogens to discover disease-related cell biology. DOI: http://dx.doi.org/10.7554/eLife.22709.001
+Chlamydia trachomatis is an obligate intracellular pathogen that resides in a membrane-bound compartment, the inclusion. The bacteria secrete a unique class of proteins, Incs, which insert into the inclusion membrane and modulate the host-bacterium interface. We previously reported that IncE binds specifically to the Sorting Nexin 5 Phox domain (SNX5-PX) and disrupts retromer trafficking. Here, we present the crystal structure of the SNX5-PX:IncE complex, showing IncE bound to a unique and highly conserved hydrophobic groove on SNX5. Mutagenesis of the SNX5-PX:IncE binding surface disrupts a previously unsuspected interaction between SNX5 and the cation-independent mannose-6-phosphate receptor (CI-MPR). Addition of IncE peptide inhibits the interaction of CI-MPR with SNX5. Finally, C. trachomatis infection interferes with the SNX5:CI-MPR interaction, suggesting that IncE and CI-MPR are dependent on the same binding surface on SNX5. Our results provide new insights into retromer assembly and underscore the power of using pathogens to discover disease-related cell biology.
 
 ## Introduction
 
@@ -40,77 +40,152 @@ In this work, we solved a high-resolution co-crystal structure of the C-terminus
 
 ## Results
 
-## The structure of the SNX5-PX20-180:IncE108-132 complex
+### The structure of the SNX5-PX20-180:IncE108-132 complex
 
-To uncover the molecular basis for the strong interaction between IncE and SNX5 and to illuminate the biological function of this interaction, we determined the crystal structure of the
+To uncover the molecular basis for the strong interaction between IncE and SNX5 and to illuminate the biological function of this interaction, we determined the crystal structure of the Mus musculus SNX5-PX domain (SNX5-PX20-180) bound to the C-terminal 25 amino acids of IncE (IncE108-132) (Figure 1). The crystal structure was solved by molecular replacement at a resolution of 2.31 Å, using the SNX5-PX apo-structure as a model (PDB ID 3HPC) ([Koharudin et al., 2009] and Supplementary file 3). The structure contained four copies of the SNX5-PX:IncE complex in the asymmetric unit, which are all less than 0.41 Å RMSD between the molecules and do not appear different in conformation (Figure 1—figure supplement 1A). The discussion below refers to SNX5-PX chain A and its associated IncE (chain P) of the structure but could apply to any of the other chains. Inspection of Fo-Fc maps indicated strong electron density in the structure that was absent in the 3HPC model (Figure 1—figure supplement 2). Using bulky hydrophobic residues as a guide, we were able to unambiguously place the IncE108-132 peptide into the density, although amino acids 108–110 and 132 were disordered in the crystal and could not be built. The final model of the complex (Rwork/Rfree 20.32/26.00) showed that IncE108-132 forms a β-hairpin that does not appear to be externally stabilized by its interaction with the PX domain (Figure 1A). When compared to the apo-SNX5-PX structure (PDB ID 3HPC [Koharudin et al., 2009]), IncE108-132 was found to bind in a deep, hydrophobic groove that is approximately 10 Å x 18 Å in area running perpendicular to the long axis of the SNX5-PX domain. SNX5-PX20-180 is a mixed α-β structure with three antiparallel β-sheets running along the surface of a long α-helix (α3) stabilized by two shorter helices. Two of the helices extend past the end of the β-sheets to form a long α-helical hairpin not seen in the crystal structures of other SNX-PX domains (Koharudin et al., 2009). In the SNX5-PX20-180:IncE108-132 structure, the SNX5-PX20-180 β-sheet is completed by the IncE108-132 β-hairpin, which binds on the surface of the α-helical hairpin in the hydrophobic groove, hydrogen bonding with the SNX5-PX20-180 β-sheet to form a hybrid, five-stranded antiparallel β-sheet (Figure 1A). Outside of this β-sheet formation, the structure of SNX5 complexed with IncE108-132 is notable for its almost complete lack of hydrogen bonding or ionic charge-charge interactions (Figure 1B), relying instead on the formation of a small hydrophobic core at the interface of the two proteins. This core buries five residues at the interface: Y132, L133 and F136 from SNX5-PX20-180 and V114 and F116 from IncE108-132 (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/22709/elife-22709-fig1-v2.jpg)
 
-**Figure 1.:** (A) The structure of SNX5-PX20-180 (green) bound to IncE108-132 (gold). Binding of IncE to SNX5 leads to the formation of a hybrid β-sheet. (B) Surface and ribbon representation of SNX5-PX showing the hydrophobic binding groove. Atoms are colored according to the scheme described in (Hagemans et al., 2015) to highlight hydrophobic surfaces. Carbon atoms not bound to nitrogen or oxygen atoms are colored grey, oxygens carrying the negative charges in glutamate and aspartate are red and nitrogens carrying the positive charges in lysine and arginine are blue, while all remaining atoms are green. The IncE interacting residues are shown as sticks and labeled. IncE is displayed as gold ribbon. (C) Close-up view of the SNX5-PX20-180:IncE108-132 binding surface with interacting residues shown as sticks.DOI: http://dx.doi.org/10.7554/eLife.22709.002
+**Figure 1.:** (A) The structure of SNX5-PX20-180 (green) bound to IncE108-132 (gold). Binding of IncE to SNX5 leads to the formation of a hybrid β-sheet. (B) Surface and ribbon representation of SNX5-PX showing the hydrophobic binding groove. Atoms are colored according to the scheme described in (Hagemans et al., 2015) to highlight hydrophobic surfaces. Carbon atoms not bound to nitrogen or oxygen atoms are colored grey, oxygens carrying the negative charges in glutamate and aspartate are red and nitrogens carrying the positive charges in lysine and arginine are blue, while all remaining atoms are green. The IncE interacting residues are shown as sticks and labeled. IncE is displayed as gold ribbon. (C) Close-up view of the SNX5-PX20-180:IncE108-132 binding surface with interacting residues shown as sticks.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/22709/elife-22709-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Overlay of the four SNX5-PX:IncE complexes present in the asymmetric unit. The B-factors of the Cα atoms are indicated by colors along a spectrum as shown in the figure. (B) Overlay of the SNX5-PX:IncE complex with the apo-SNX5-PX core structure (PDB ID 3HPC). The structures are colored by their root-mean-square deviation (RMSD) indicated by a color gradient from blue to red. The average RMSD is 1.77 Å. Molecules are rotated 75° around the y-axis compared to panel A.DOI: http://dx.doi.org/10.7554/eLife.22709.003
+**Figure 1—figure supplement 1.:** (A) Overlay of the four SNX5-PX:IncE complexes present in the asymmetric unit. The B-factors of the Cα atoms are indicated by colors along a spectrum as shown in the figure. (B) Overlay of the SNX5-PX:IncE complex with the apo-SNX5-PX core structure (PDB ID 3HPC). The structures are colored by their root-mean-square deviation (RMSD) indicated by a color gradient from blue to red. The average RMSD is 1.77 Å. Molecules are rotated 75° around the y-axis compared to panel A.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/22709/elife-22709-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** 108-132.The refined F density map after molecular replacement, contoured at 2σ, shows positive density not present in the molecular replacement model. SNX5-PXo-Fc20-180 and the final model of the IncE peptide are shown as grey and gold ribbons, respectively.DOI: http://dx.doi.org/10.7554/eLife.22709.004
+**Figure 1—figure supplement 2.:** The refined Fo-Fc density map after molecular replacement, contoured at 2σ, shows positive density not present in the molecular replacement model. SNX5-PX20-180 and the final model of the IncE peptide are shown as grey and gold ribbons, respectively.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/22709/elife-22709-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** (A) Overlay of the SNX5-PX:IncE structure with the crystal structure of the PX domain from p40 bound to phosphatidylinositol 3-phosphate (PDB ID 1H6H) (phoxBravo et al., 2001). SNX5-PX and IncE are colored green and gold, respectively. The PX domain from p40 is colored pink and the phosphatidylinositol 3-phosphate is shown as sticks with carbons colored pink. (phoxB) IncE does not affect SNX5 binding to immobilized lipids. Purified SNX5-PX20-180 alone or in complex with IncE108-120 was incubated with membranes containing various phospholipids as described in Methods. SNX5 binding was detected using anti-SNX5 antibody. A blot representative of two independent biological experiments is shown. LPA, lyosophophatidic acid. LPC, lysophosphocholine. PtdIns, phosphatidylinositol. PI(3)P, phosphatidylinositol (3) phosphate. PI(4)P, phosphatidylinositol (4) phosphate. PI(5)P, phosphatidylinositol (5) phosphate. PE, phosphatidylethanolamine. PC, phosphatidylcholine. S1P, sphingosine 1-phosphate. PI(3,4)P2, phosphatidylinositol (3,4) bisphosphate. PI(3,5)P2, phosphatidylinositol (3,5) bisphosphate. PI(4,5)P2, phosphatidylinositol (4,5) bisphosphate. PI(3,4,5)P3, phosphatidylinositol (3,4,5) triphosphate. PA, phosphatidic acid. PS, phosphatidylserine.DOI: http://dx.doi.org/10.7554/eLife.22709.005
+**Figure 1—figure supplement 3.:** (A) Overlay of the SNX5-PX:IncE structure with the crystal structure of the PX domain from p40phox bound to phosphatidylinositol 3-phosphate (PDB ID 1H6H) (Bravo et al., 2001). SNX5-PX and IncE are colored green and gold, respectively. The PX domain from p40phox is colored pink and the phosphatidylinositol 3-phosphate is shown as sticks with carbons colored pink. (B) IncE does not affect SNX5 binding to immobilized lipids. Purified SNX5-PX20-180 alone or in complex with IncE108-120 was incubated with membranes containing various phospholipids as described in Methods. SNX5 binding was detected using anti-SNX5 antibody. A blot representative of two independent biological experiments is shown. LPA, lyosophophatidic acid. LPC, lysophosphocholine. PtdIns, phosphatidylinositol. PI(3)P, phosphatidylinositol (3) phosphate. PI(4)P, phosphatidylinositol (4) phosphate. PI(5)P, phosphatidylinositol (5) phosphate. PE, phosphatidylethanolamine. PC, phosphatidylcholine. S1P, sphingosine 1-phosphate. PI(3,4)P2, phosphatidylinositol (3,4) bisphosphate. PI(3,5)P2, phosphatidylinositol (3,5) bisphosphate. PI(4,5)P2, phosphatidylinositol (4,5) bisphosphate. PI(3,4,5)P3, phosphatidylinositol (3,4,5) triphosphate. PA, phosphatidic acid. PS, phosphatidylserine.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/22709/elife-22709-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** The color scheme for SNX5 and IncE is the same as in Figure 1. SNX9 (PDB ID 2RAK) (Pylypenko et al., 2007) is colored blue. The structure of SNX5-PX:IncE is rotated 90˚ around the x-axis compared to Figure 1—figure supplement 3A.DOI: http://dx.doi.org/10.7554/eLife.22709.006
+**Figure 1—figure supplement 4.:** The color scheme for SNX5 and IncE is the same as in Figure 1. SNX9 (PDB ID 2RAK) (Pylypenko et al., 2007) is colored blue. The structure of SNX5-PX:IncE is rotated 90˚ around the x-axis compared to Figure 1—figure supplement 3A.
 
-## The IncE binding groove is highly conserved, suggesting a native protein-protein interaction surface
+### The IncE binding groove is highly conserved, suggesting a native protein-protein interaction surface
 
 PX domain proteins bind to phosphatidylinositol phosphate (PIP) head groups (Teasdale and Collins, 2012). For example, the SNX5 PIP binding site binds specifically to phosphatidylinositol 4,5-bisphosphate (PI(4,5)P2), although the binding is weak (Koharudin et al., 2009). In the SNX5-PX20-180:IncE108-132 crystal structure, we observed no direct interaction between IncE108-132 and the previously observed PIP binding pocket (Figure 1—figure supplement 3A). In order to determine if binding of IncE altered the conformation of the SNX5-PX domain, we overlaid the apo- (PDB ID 3HPC) and IncE-bound structures and mapped RMSD values onto the surface for comparison (Figure 1—figure supplement 1B). The changes between the apo-SNX5-PX structure and the IncE108-132 bound SNX5-PX20-180 structure are small and consist mainly of an inward rotation of the SNX5 α-helical hairpin ~30° toward the IncE peptide. This region appears to be quite flexible as it has the highest B-factors in both the apo- and IncE-bound structures (Koharudin et al., 2009). We directly tested whether IncE108-132 allosterically interfered with binding of PIPs by assaying the ability of SNX5-PX20-180 to bind to immobilized phospholipids in the presence and absence of IncE108-132. IncE108-132 did not compete with binding of SNX5 to lipid head groups nor did it affect the pattern of PIPs engaged by SNX5-PX20-180 (Figure 1—figure supplement 3B). Together, this data supports the notion that binding of IncE to SNX5-PX does not interfere with SNX5 binding to PIPs.
 
 No structure is available of the full-length SNX5 (SNX5FL) protein with the BAR domain intact; however, there are several other structures of SNX-BAR domain proteins (Pylypenko et al., 2007; Wang et al., 2008) that allow us to model the position of the BAR domain relative to SNX5-PX20-180 (Figure 1—figure supplement 4). IncE108-132 does not bind at this BAR domain interface, and the BAR domain interface does not appear to be significantly altered by binding of IncE. Although SNX5-PX20-180 exhibits a unique structure that differs from other PX proteins, the regions that distinguish the SNX5-PX20-180 structure are distant from the BAR domain interaction site. We conclude that the interaction between SNX5 and SNX1 through their respective BAR domains would not be affected by interaction of SNX5 with IncE.
 
-A phylogenetic analysis of 763 unique sequences of SNX5, SNX6, and SNX32 allowed comparison of the IncE binding surface of each species and revealed that the three residues buried at the IncE
+A phylogenetic analysis of 763 unique sequences of SNX5, SNX6, and SNX32 allowed comparison of the IncE binding surface of each species and revealed that the three residues buried at the IncE108-132 interface are identical in all species of metazoans for which sequence data is available (Figure 2A). This conservation was observed even in the most distantly related sequence we analyzed, SNX6 from Trichinella spiralis, which shows overall identity of only 49%. This region of conservation in the SNX5/6/32 family extends outside of the hydrophobic groove that binds to IncE and includes several solvent exposed residues, including K138 (Figure 2B). Importantly, these residues are absent in other SNX-BAR proteins including SNX1 and SNX2, as has been previously noted (Koharudin et al., 2009). Thus, the residues lining the SNX5 hydrophobic groove are not involved in the core folding of the SNX5/6/32-PX domain. These residues are solvent exposed in the unbound crystal structure (Koharudin et al., 2009), and yet they are identical throughout metazoan evolution, implying an essential function. Together, our finding that the IncE binding surface is highly conserved in the SNX5/6/32 family of proteins suggests that it serves a normal physiological role, most likely by mediating an interaction with another macromolecule.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/22709/elife-22709-fig2-v2.jpg)
 
-**Figure 2.:** (A) Alignment of selected SNX family members showing the conservation of the IncE-interacting residues Y132, L133 and F136 (red triangles) in SNX5/6/32 family members and their divergence in related SNX-BAR proteins. The only invariant residues in all SNX5/6/32 sequences are highlighted in pink. (B) Structural representation of the invariant residues (pink) shown in A. (C) HEK293T cells were transiently co-transfected with the indicated full-length FLAG-tagged SNXWT constructs and with Strep-tagged IncE101-132. Lysates were immunoprecipitated with anti-FLAG beads and immunoblotted with the indicated antibodies. Input represents 1% of lysates. SNX15 serves as a negative control. The data shown is representative of two independent biological experiments.DOI: http://dx.doi.org/10.7554/eLife.22709.007
+**Figure 2.:** (A) Alignment of selected SNX family members showing the conservation of the IncE-interacting residues Y132, L133 and F136 (red triangles) in SNX5/6/32 family members and their divergence in related SNX-BAR proteins. The only invariant residues in all SNX5/6/32 sequences are highlighted in pink. (B) Structural representation of the invariant residues (pink) shown in A. (C) HEK293T cells were transiently co-transfected with the indicated full-length FLAG-tagged SNXWT constructs and with Strep-tagged IncE101-132. Lysates were immunoprecipitated with anti-FLAG beads and immunoblotted with the indicated antibodies. Input represents 1% of lysates. SNX15 serves as a negative control. The data shown is representative of two independent biological experiments.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/22709/elife-22709-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** C. trachomatis inclusions.HeLa cells transiently expressing full-length FLAG-SNX5WT or FLAG-SNX5Y132D,F136D were infected with C. trachomatis for 24 hr and analyzed by confocal microscopy for the localization of FLAG-SNX5 and endogenous SNX6. Shown are single z slices. White arrowheads point to inclusions. Yellow arrowheads point to tubules. Scale bar, 10 µm. The data shown is representative of two biological replicates.DOI: http://dx.doi.org/10.7554/eLife.22709.008
+**Figure 2—figure supplement 1.:** HeLa cells transiently expressing full-length FLAG-SNX5WT or FLAG-SNX5Y132D,F136D were infected with C. trachomatis for 24 hr and analyzed by confocal microscopy for the localization of FLAG-SNX5 and endogenous SNX6. Shown are single z slices. White arrowheads point to inclusions. Yellow arrowheads point to tubules. Scale bar, 10 µm. The data shown is representative of two biological replicates.
 
-## Mutation of the SNX5-PX:IncE binding surface disrupts IncE binding and SNX5 recruitment to the C. trachomatis inclusion
+### Mutation of the SNX5-PX:IncE binding surface disrupts IncE binding and SNX5 recruitment to the C. trachomatis inclusion
 
 The crystal structure predicts that disruption of the small hydrophobic core at the SNX5-PX20-180:IncE108-132 interface would destabilize the complex. In particular, SNX5Y132:IncEV114 and SNX5F136:IncEF116 form stable van der Waals and π-π stacking interactions that appear to be central to the specificity of the interaction. We mutated SNX5 residues Y132 and F136 to aspartic acid or to asparagine and co-transfected the WT or mutated full-length FLAG-SNX5 constructs together with IncE101-132-Strep into HEK293T cells. The SNX5 variants expressed at similar levels to SNX5WT (Figure 2C). Co-immunoprecipitation of IncE101-132 with SNX5 was dependent upon Y132 or F136, confirming the importance of these aromatic amino acid contacts in the formation of the SNX5:IncE complex (Figure 2C). We previously demonstrated a robust recruitment of full-length FLAG-SNX5WT to the C. trachomatis inclusion and associated tubules (Mirrashidi et al., 2015). We next determined whether the IncE binding groove is necessary for recruitment of SNX5 to the C. trachomatis inclusion by analyzing the localization of FLAG-SNX5Y132D,F136D during infection. FLAG-SNX5Y132D,F136D fails to localize to the inclusion (Figure 2—figure supplement 1), although endogenous SNX6 was still recruited. Together, these data provide further support that IncE interacts with the SNX5 hydrophobic binding groove.
 
-## Differential mass-spectrometry reveals a native interaction between SNX5-PX and CI-MPR
+### Differential mass-spectrometry reveals a native interaction between SNX5-PX and CI-MPR
 
-Given the high conservation of the IncE binding surface, we reasoned that IncE is likely disrupting an interaction between SNX5 and a previously unappreciated host cell protein through a shared binding surface. Thus, we hypothesized that mutating this surface would lead to loss of the native interaction. We performed AP-MS to identify host cell proteins whose binding to SNX5 is dependent on the presence of the same hydrophobic residues, Y132 and F136, as are required for IncE binding. Full-length FLAG-SNX5
+Given the high conservation of the IncE binding surface, we reasoned that IncE is likely disrupting an interaction between SNX5 and a previously unappreciated host cell protein through a shared binding surface. Thus, we hypothesized that mutating this surface would lead to loss of the native interaction. We performed AP-MS to identify host cell proteins whose binding to SNX5 is dependent on the presence of the same hydrophobic residues, Y132 and F136, as are required for IncE binding. Full-length FLAG-SNX5WT, FLAG-SNX5Y132D or FLAG-SNX5F136D were transfected into HEK293T cells. Affinity-purified eluates were analyzed by label-free, shotgun liquid chromatography-mass spectrometry/mass spectrometry (LC-MS/MS), employing a pipeline similar to our previous studies (Jäger et al., 2011a; Mirrashidi et al., 2015) (Supplementary file 1). Using SAINT-Express (Teo et al., 2014), we compared the protein-protein interactions of affinity purified lysates from untransfected cells to those prepared from SNX5WT, SNX5Y132D, or SNX5F136D transfected cells. We considered only those proteins that had a Bayesian False Discovery rate (BFDR) ≤ 0.1, a conservative threshold for the elimination of false positive interactions. Although six proteins were found to significantly interact with SNX5WT protein according to the SAINT algorithm, only two proteins, CI-MPR and Insulin-like Growth Factor I (IGF1R), bound differentially to SNX5WT and the SNX5 hydrophobic groove mutants, as evidenced by significantly different SAINT scores (Table 1, Supplementary file 2 and Figure 3). We focused on CI-MPR because it is the most well studied retromer cargo and because we have previously established that ectopic expression of IncE is sufficient to disrupt CI-MPR trafficking (Mirrashidi et al., 2015). Importantly, SNX1 co-affinity purified with both WT and mutant SNX5 (Supplementary file 2 and Figure 3), consistent with the notion that disrupting the IncE binding surface does not cause major alterations to the SNX5 structure. This result also suggests that the association of CI-MPR with SNX5 observed in the AP-MS analysis is not solely dependent on the previously described interaction of SNX1/2 with the VPS complex (Haft et al., 2000; Rojas et al., 2007).
+
+**Table 1.**
+ SNX5 protein-protein interactions and their dependence on the IncE binding groove. Shown is the average of the spectral counts from the listed proteins detected in the affinity purified lysates prepared (in triplicate) from untransfected cells (mock) or from cells transfected with full-length SNX5WT, SNX5F136D, or SNX5Y132D mutants. Only interactions exhibiting a BFDR ≤ 0.1 when compared to affinity purified lysates from untransfected cells are listed. The proteins that have a SAINT score (Teo et al., 2014) of 1 (the highest probability possible) are highlighted in green and the SAINT score is shown in parentheses. Of the proteins found to interact with SNX5WT, CI-MPR and IGF1R show a difference in their SAINT score between the WT and the mutants, suggesting that the mutations block the protein-protein interaction. (ND, not determined due to lack of spectral counts in data set).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ProtID</th>
+      <th>Name</th>
+      <th>Mock</th>
+      <th>SNX5 WT</th>
+      <th>SNX5 F136D</th>
+      <th>SNX5 Y132D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Q9Y5X3</td>
+      <td>SNX5_HUMAN</td>
+      <td>4.33</td>
+      <td>134 (1)</td>
+      <td>118.33 (1)</td>
+      <td>121.67 (1)</td>
+    </tr>
+    <tr>
+      <td>Q13596</td>
+      <td>SNX1_HUMAN</td>
+      <td>0</td>
+      <td>70 (1)</td>
+      <td>64 (1)</td>
+      <td>64 (1)</td>
+    </tr>
+    <tr>
+      <td>O60749</td>
+      <td>SNX2_HUMAN</td>
+      <td>1</td>
+      <td>105.5 (1)</td>
+      <td>101 (1)</td>
+      <td>99.67 (1)</td>
+    </tr>
+    <tr>
+      <td>P11717</td>
+      <td>CI-MPR_HUMAN</td>
+      <td>0</td>
+      <td>12.67 (1)</td>
+      <td>0.33 (0)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>P08069</td>
+      <td>IGF1R_HUMAN</td>
+      <td>0</td>
+      <td>8.67 (1)</td>
+      <td>ND</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>P30048</td>
+      <td>PRDX3_HUMAN</td>
+      <td>0.33</td>
+      <td>4.67 (0.65)</td>
+      <td>0.33 (0)</td>
+      <td>1.33 (0.07)</td>
+    </tr>
+    <tr>
+      <td>Q15773</td>
+      <td>MLF2_HUMAN</td>
+      <td>0</td>
+      <td>1.67 (0.33)</td>
+      <td>5.33 (0.98)</td>
+      <td>2.67 (0.56)</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/22709/elife-22709-fig3-v2.jpg)
 
-**Figure 3.:** WT, SNX5Y132D, and SNX5F136D.The Y-axis quantifies the number of peptides/charge detected by LC-MS/MS for CI-MPR, SNX5, and SNX1 that affinity purified with the indicated full-length SNX5 proteins. Mock refers to untransfected cells. The graph is normalized to SNX5WT. Whereas SNX1 is equally well represented in the affinity-purified lysates from WT and mutant SNX5, the representation of CI-MPR peptides differed significantly between SNX5WT and each of the SNX5 mutants. Data are mean +/− SD from three independent biological experiments.DOI: http://dx.doi.org/10.7554/eLife.22709.010
+**Figure 3.:** The Y-axis quantifies the number of peptides/charge detected by LC-MS/MS for CI-MPR, SNX5, and SNX1 that affinity purified with the indicated full-length SNX5 proteins. Mock refers to untransfected cells. The graph is normalized to SNX5WT. Whereas SNX1 is equally well represented in the affinity-purified lysates from WT and mutant SNX5, the representation of CI-MPR peptides differed significantly between SNX5WT and each of the SNX5 mutants. Data are mean +/− SD from three independent biological experiments.
 
-## IncE peptide interferes with CI-MPR binding to the SNX5-associated complex
+### IncE peptide interferes with CI-MPR binding to the SNX5-associated complex
 
-We have previously shown that expression of the C-terminus of IncE results in loss of CI-MPR co-localization with TGN-46 positive compartments and increases localization with VPS35 positive compartments (
+We have previously shown that expression of the C-terminus of IncE results in loss of CI-MPR co-localization with TGN-46 positive compartments and increases localization with VPS35 positive compartments (Mirrashidi et al., 2015). We next assessed whether IncE108-132 could displace CI-MPR binding to SNX5-containing complexes. Lysates from HEK293T cells transfected with full-length FLAG-SNX5WT were mixed with increasing amounts of IncE108-132, added to anti-FLAG beads, and eluates were assessed for CI-MPR co-immunoprecipitation. We also tested a mutant version of IncE108-132 in which V114 and F116 were changed to asparagine and aspartic acid (IncEV114N,F116D), which would not be predicted to disrupt SNX5:IncE or SNX5:CI-MPR complexes. In control experiments, we performed an in vitro competition assay to demonstrate that WT IncE108-132 peptide disrupts binding of 6xHis-MBP-IncE101-132-Strep to 8xHis-SNX5-PX20-180 (Figure 4—figure supplement 1). Addition of WT IncE108-132 to SNX5-containing complexes from HEK293T cells diminished SNX5:CI-MPR binding in a dose-dependent manner without affecting SNX1 binding (Figure 4). In contrast, the mutant IncE peptide failed to disrupt CI-MPR interactions with SNX5-containing complexes (Figure 4). These experiments show qualitatively that the C-terminus of IncE is capable of disrupting the SNX5:CI-MPR interaction in a manner that depends on IncE residues V114 and F116. We conclude that the IncE binding groove is required for the SNX5:CI-MPR interaction.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/22709/elife-22709-fig4-v2.jpg)
 
-**Figure 4.:** 108-132 interferes with CI-MPR binding to SNX5-associated complexes.Lysates from HEK293T cells transiently expressing full-length FLAG-SNX5WT were incubated with anti-FLAG beads in the presence of the indicated concentrations of wild type or mutant IncE108-132 under non-equilibrium conditions. Eluates were immunoblotted with the indicated antibodies. Input represents 1% of lysates. WT but not mutant IncE interferes with binding of CI-MPR to FLAG-SNX5-containing complexes. The data shown is representative of three biological experiments.DOI: http://dx.doi.org/10.7554/eLife.22709.011
+**Figure 4.:** Lysates from HEK293T cells transiently expressing full-length FLAG-SNX5WT were incubated with anti-FLAG beads in the presence of the indicated concentrations of wild type or mutant IncE108-132 under non-equilibrium conditions. Eluates were immunoblotted with the indicated antibodies. Input represents 1% of lysates. WT but not mutant IncE interferes with binding of CI-MPR to FLAG-SNX5-containing complexes. The data shown is representative of three biological experiments.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/22709/elife-22709-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** 101-132 binding to SNX5-PX20-180 in vitro.Purified 6xHis-MBP-IncE101-132-Strep was immobilized to Strep-Tactin beads and incubated with purified 8xHis-SNX5-PX20-180 in the presence of the indicated concentrations of WT IncE108-132 or IncEV114N,F116D (Mut) under non-equilibrium conditions. Eluates were immunoblotted with the indicated antibodies. WT but not mutant IncE peptide interferes with binding of IncE to SNX5-PX.DOI: http://dx.doi.org/10.7554/eLife.22709.012
+**Figure 4—figure supplement 1.:** Purified 6xHis-MBP-IncE101-132-Strep was immobilized to Strep-Tactin beads and incubated with purified 8xHis-SNX5-PX20-180 in the presence of the indicated concentrations of WT IncE108-132 or IncEV114N,F116D (Mut) under non-equilibrium conditions. Eluates were immunoblotted with the indicated antibodies. WT but not mutant IncE peptide interferes with binding of IncE to SNX5-PX.
 
-## Chlamydial infection disrupts CI-MPR association with SNX5 complexes
+### Chlamydial infection disrupts CI-MPR association with SNX5 complexes
 
-Based on our crystal structure, we predicted that
+Based on our crystal structure, we predicted that C. trachomatis infection should therefore interfere with the CI-MPR:retromer interaction. We tested this notion by assessing CI-MPR co-immunoprecipitation with SNX5 during C. trachomatis infection (Figure 5A). As we have previously reported (Mirrashidi et al., 2015), IncE co-immunoprecipitates with FLAG-SNX5 in infected cells, and infection does not appreciably diminish steady-state levels of SNX1, VPS35, or CI-MPR. We did not observe a stable interaction between FLAG-SNX5 and VPS35 in either uninfected or infected cells, consistent with their known transient interaction (Seaman, 2012; Swarbrick et al., 2011). Remarkably, infection decreased the co-immunoprecipitation of CI-MPR with FLAG-SNX5 with minimal effects on the co-immunoprecipitation of SNX1 with FLAG-SNX5. We quantified the effect of infection on co-immunoprecipitation of CI-MPR with SNX5 by calculating the ratio of CI-MPR in infected versus uninfected FLAG-SNX5 transfected lysates and the ratio of CI-MPR in infected versus uninfected FLAG-SNX5 co-immunoprecipitations. We found an ~5.6 fold decrease in the ratio in co-immunoprecipitated complexes (Figure 5B). This result is consistent with a model in which IncE displaces CI-MPR from SNX5-containing complexes during infection.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/22709/elife-22709-fig5-v2.jpg)
 
-**Figure 5.:** C. trachomatis infection interferes with CI-MPR binding to SNX5 complexes.(A) HeLa cells were transiently transfected with full-length FLAG-SNX5WT for 24 hr and then were infected (Inf) or left uninfected (UI) with C. trachomatis for 24 hr. FLAG-SNX5WT was immunoprecipitated and eluates were immunoblotted with the indicated antibodies. Input is 1% of lysates used for immunoprecipitation. (B) Quantitation of the ratio of CI-MPR from infected to uninfected cells in lysates or in eluates from FLAG-SNX5 immunoprecipitations (IP). Data are mean +/− SD from three independent biological experiments. *p=0.0004 compared to lysates, unpaired t-test.DOI: http://dx.doi.org/10.7554/eLife.22709.013
+**Figure 5.:** (A) HeLa cells were transiently transfected with full-length FLAG-SNX5WT for 24 hr and then were infected (Inf) or left uninfected (UI) with C. trachomatis for 24 hr. FLAG-SNX5WT was immunoprecipitated and eluates were immunoblotted with the indicated antibodies. Input is 1% of lysates used for immunoprecipitation. (B) Quantitation of the ratio of CI-MPR from infected to uninfected cells in lysates or in eluates from FLAG-SNX5 immunoprecipitations (IP). Data are mean +/− SD from three independent biological experiments. *p=0.0004 compared to lysates, unpaired t-test.
 
 ## Discussion
 
@@ -124,50 +199,50 @@ Our work adds to our understanding of how intracellular pathogens modulate the r
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 Mouse 8xHis-SNX5-PX20-180 (UniProt Q9D8U8), which is 98% identical to human, was expressed in BL21(DE3) E. coli cells. Briefly, cells were grown at 37°C to OD600 0.5 in Terrific Broth supplemented with 50 µg/ml kanamycin. Expression of 8xHis-SNX5-PX20-180 was induced by addition of 1 mM isopropyl ß-D-thiogalactoside (IPTG) and cells were incubated overnight at 18°C. Cells were pelleted, resuspended in lysis buffer (2.5x PBS (3.7 mM KH2PO4, 38 mM Na2HPO4, 300 mM NaCl, 7 mM KCl), 10 mM imidazole, 5 units/ml Benzonase, and 1 mg/ml lysozyme). Cells were lysed using a microfluidizer (Microfluidics) and the lysate was cleared by centrifugation for 25 min at 15,000 x g. The supernatant was loaded onto a Ni-NTA column (Qiagen) equilibrated in 50 mM Hepes pH 7.4, 500 mM NaCl, 5 mM ß-mercaptoethanol and 20 mM imidazole (buffer A). After washing with 15 column volumes buffer A, the imidazole concentration was increased to 43 mM for two column volumes, and protein was eluted in 50 mM Hepes pH 7.4, 500 mM NaCl, 5 mM ß-mercaptoethanol and 250 mM imidazole. Fractions containing SNX5 were pooled and dialyzed against 50 mM Hepes pH 7.4, 100 mM NaCl, 1 mM TCEP (Tris(2-carboxyethyl)phosphin) for 16 hr at 4°C in the presence of 3C protease. The protein was passed twice over Ni agarose resin (Gold Biotechnology) to remove the protease and purification tag, concentrated and injected onto a Superdex 75 10/300 column (GE Healthcare Life Sciences) equilibrated in 20 mM Hepes pH 7.4, 100 mM NaCl and 1 mM TCEP (buffer G). SNX5-containing fractions were pooled and concentrated to 31.2 mg/ml. The IncE (UniProt P0DJI4) peptide encompassing residues 108–132 was synthesized by Peptide 2.0 at 90.44% purity and diluted in 20 mM Hepes pH 7.4, 100 mM NaCl and 1 mM TCEP to 3.94 mM. For complex formation, IncE108-132 was mixed with purified SNX5-PX20-180 at a 3.4:1 (mol/mol) ratio and injected onto a Superdex 75 10/300 size exclusion column equilibrated in buffer G. The SNX5:IncE complex was concentrated to 12.2 mg/ml.
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 Crystals of the SNX5-PX:IncE complex were grown at 20°C by sitting drop vapor diffusion against 26% (w/v) PEG1500. The SNX5-PX:IncE complex (12.2 mg/ml) was mixed with an equal volume of reservoir solution. Crystals were flash frozen in liquid nitrogen without additional cryoprotection. Diffraction data was collected at the Lawrence Berkeley National Laboratory Advanced Light Source (ALS) Beamline 8.3.1. Diffraction data was processed using mosflm (Battye et al., 2011). The structure was determined by molecular replacement with Phaser (McCoy et al., 2007) from the PHENIX (Adams et al., 2010) suite of programs using the rat SNX5-PX domain (PDB ID 3HPC, residues 30–169) as a search model. Strong positive density peaks in the Fo-Fc density map allowed manual placement of an IncE molecule in Coot (Emsley et al., 2010). Density fitting with Coot was alternated with refinement in PHENIX using standard refinement protocols (Adams et al., 2010). The refinement of the structure was optimized using the PDB_REDO web server (Joosten et al., 2014). Data collection and refinement statistics are shown in Supplementary file 3. All structure figures were prepared using PyMOL (The PyMOL Molecular Graphics System, Version 1.7.4.4 Schrödinger, LLC). Coordinates have been deposited in the RCSB Protein Data Bank with accession number 5TP1.
 
-## Antibodies and plasmids
+### Antibodies and plasmids
 
 Antibodies were obtained from the following sources: mouse anti-SNX1 (BD Biosciences, 611482), rabbit anti-SNX5 (Santa Cruz, H-40), goat anti-SNX6 (Santa Cruz, N-19), goat anti-VPS35 (Imgenex, IMG-3575), mouse anti-FLAG (Sigma, F3165), mouse anti-GAPDH (Millipore, MAB374), rabbit anti-CI-MPR (EPR6599) (Abcam, ab124767), rabbit anti-Strep TagII HRP (Novagen, 71591–3), goat anti-rabbit IgG HRP (BioRad), goat anti-mouse IgG HRP (BioRad), anti-goat IgG HRP (BioRad). Secondary fluorescent antibodies were derived from donkey (Life Technologies): anti-goat Alexafluor 647, anti-mouse Alexafluor 568, anti-rabbit Alexafluor 488. Rabbit anti-IncE antibody was kindly provided by Ted Hackstadt (Rocky Mountain Laboratories, NIH).
 
 The plasmid encoding FLAG-tagged mouse SNX5 was a kind gift from Jia-Jia Liu (Chinese Academy of Sciences) (Hong et al., 2009). The plasmid encoding human SNX15 was a kind gift from Michael Starnbach (Harvard) and was shuttled to a vector encoding a C-terminal FLAG tag by Gateway cloning. The region encoding SNX5-PX20-180 was PCR amplified and inserted into the SmaI site of pH3C-LIC using ligation independent cloning to generate a protein with an N-terminal 8xHis fusion. The SNX5 single (Y132D, Y132N, F136D, F136N) and double point mutants (Y132D, F136D and Y132N, F136N) were generated by site directed mutagenesis (QuickChange, Agilent) using the template plasmid encoding FLAG-SNX5. Construction of the plasmid encoding IncE101-132-Strep or 6xHis-MBP-IncE101-132-Strep was previously described (Mirrashidi et al., 2015). Primers are listed in Supplementary file 4.
 
-## Cell culture and bacterial propagation
+### Cell culture and bacterial propagation
 
 HeLa cells (obtained from American Type Culture Collection) and HEK293T (a generous gift from NJ Krogan) cells were maintained at 37°C with 5% CO2 in Eagle’s Minimum Essential Media (MEM) or Dulbecco’s modified Eagle’s medium (DMEM) containing 10% fetal bovine serum (FBS) respectively. Cells were tested as mycoplasma free. C. trachomatis serovar D (UW-3/Cx) was propagated as previously described (Elwell et al., 2011). Plasmid transfections were performed using Effectene (Qiagen) or Continuum (Gemini Bio Products) for 24 or 48 hr following manufacturer’s instructions.
 
-## Lipid binding assay
+### Lipid binding assay
 
 Protein:lipid binding assays were performed using commercially available PIP strips (Molecular Probes). Briefly, membranes spotted with lipids were blocked with TBST (50 mM Tris-HCl pH 7.4 and 150 mM NaCl, 0.1% Tween) containing 3% fatty-acid free bovine serum albumin (Sigma) for 1 hr at room temperature. Membranes were then incubated with purified SNX5-PX20-180 or SNX5-PX20-180 in complex with IncE108-132 peptide for 1.5 hr and then washed with TBST. Bound SNX5 was detected by immunoblot analysis with a rabbit anti-SNX5 antibody.
 
-## Affinity purification and mass spectrometry
+### Affinity purification and mass spectrometry
 
 Affinity purifications were performed as previously described (Jäger et al., 2011b; Mirrashidi et al., 2015). Briefly, HEK293T cells were seeded in 10 cm2 plates, and transfected the next day with 6 µg/plate of the indicated purified plasmid DNA using Effectene transfection reagent (Qiagen). At 48 hr after transfection with the full-length FLAG-tagged SNX5WT, SNX5Y132D, or SNX5F136D encoding plasmids, cells were detached with 10 mM EDTA/D-PBS, washed with PBS and lysed with 1 ml of ice cold Final Wash buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 1 mM EDTA) plus 0.5% NP-40, Roche Complete protease and PhosSTOP phosphatase inhibitor. Lysates were incubated with 30 µl of FLAG beads (Sigma) and incubated overnight, rotating at 4°C. Beads were washed three times in Final Wash Buffer plus 0.05% NP-40, and then once in Final Wash Buffer. Samples were eluted in 45 µl of 100 µg/ml FLAG peptide (Sigma) in Final Wash Buffer. All AP-MS were performed in triplicate and assayed by Immunoblot using chemiluminescence (Denville Scientific) or by silver stain (Pierce). Purified protein eluates were digested with trypsin for LC-MS/MS analysis and processed as previously described (Mirrashidi et al., 2015). Digested peptides were analyzed on a Thermo Fisher Orbitrap Fusion mass spectrometry system equipped with a Easy nLC 1200 ultra-high pressure liquid chromatography system interfaced via a Nanospray Flex nanoelectrospray source. Samples were injected on a C18 reverse phase column (25 cm x 75 um packed with ReprosilPur C18 AQ 1.9 um particles). Peptides were separated by an organic gradient from 5% to 30% ACN in 0.1% formic acid over 60 minutes at a flow rate of 300 nl/min. The MS continuously acquired spectra in a data-dependent manner throughout the gradient, acquiring a full scan in the Orbitrap (at 120,000 resolution with an AGC target of 200,000 and a maximum injection time of 100 ms) followed by as many MS/MS scans as could be acquired on the most abundant ions in 3s in the dual linear ion trap (rapid scan type with an intensity threshold of 5000, HCD collision energy of 29%, AGC target of 10,000, a maximum injection time of 35 ms, and an isolation width of 1.6 m/z). Singly and unassigned charge states were rejected. Dynamic exclusion was enabled with a repeat count of 1, an exclusion duration of 20 s, and an exclusion mass width of +/- 10 ppm.
 
 Raw mass spectrometry data were assigned to human protein sequences and MS1 intensities extracted with the MaxQuant software package (version 1.5.5.1) (Cox and Mann, 2008). Data were searched against the SwissProt human protein database (downloaded on January 11, 2016). Variable modifications were allowed for N-terminal protein acetylation, methionine oxidation. A static modification was indicated for carbamidomethyl cysteine. The ‘Match between runs’ feature was enabled to match within 2 minutes between runs. All other settings were left using MaxQuant default settings. The intensity information from the MS system was searched using freely available MaxQuant proteomics software. The spectral counts for the identified peptides were then analyzed using SAINTexpress (http://saint-apms.sourceforge.net/Main.html) to determine the confident protein-protein interactions in the set based on theBFDR. Interactions with a BFDR ≤ 0.1 were considered significant and included in Table 1 in the main text.
 
-## IncE peptide competition assay
+### IncE peptide competition assay
 
 HEK293T cells were transfected with FLAG-SNX5 for 48 hr, lysed in Final Wash Buffer containing 0.5% NP-40 and immunoprecipitated with anti-FLAG magnetic beads (Sigma) in the presence of the indicated concentrations of IncE wild type or mutant peptide. Beads were washed and proteins were eluted with FLAG peptide as described above. Eluates were subjected to Immunoblot analysis with the indicated antibodies. IncE wild type and mutant peptides corresponding to amino acids 108–132 were synthesized by Peptide 2.0 at crude purity and resuspended in Final Wash Buffer to 4.02 mM. IncE wild type peptide sequence is PANEPTVQFFKGKNGSADKVILVTQ and IncEV114N,F116D mutant peptide sequence is PANEPTNQDFKGKNGSADKVILVTQ.
 
-## In vitro pull-downs
+### In vitro pull-downs
 
 Expression and purification of 6xHis-MBP-IncE101-132-Strep was performed as previously described (Mirrashidi et al., 2015). Purified 6xHis-MBP-IncE101-132-Strep was immobilized on Strep-Tactin Sepharose beads (IBA) and incubated with purified 8xHis-SNX5-PX20-180 for 1 hr, rotating at 4°C in binding buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl), in the presence of the indicated concentrations of IncE wild type or mutant peptide. Beads were washed and proteins were eluted with 2.5 mM D-desthiobiotin (Invitrogen). Eluates were subjected to immunoblot analysis with the indicated antibodies.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 HEK293T cells were co-transfected with a plasmid encoding IncE101-132-Strep and either full-length FLAG-tagged SNX15WT, SNX5WT, or SNX5 mutants for 48 hr. Cells were lysed in Final Wash Buffer containing 0.5% NP-40, and proteins were immunoprecipitated with FLAG beads followed by elution with FLAG peptide. Eluates were subjected to Immunoblot analysis with the indicated antibodies. For co-immunoprecipitation during infection, HeLa cells were transfected with full-length FLAG-SNX5WT for 24 hr and infected with C. trachomatis serovar D for 1 hr. At 24 hr post-infection (hpi), cells were lysed in Final Wash Buffer containing 0.5% NP-40 and proteins were immunoprecipitated with FLAG beads followed by elution with FLAG peptide. Eluates were subjected to Immunoblot analysis with the indicated antibodies. Band intensity was quantified using ImageJ (Schneider et al., 2012).
 
-## Microscopy
+### Microscopy
 
 HeLa cells were grown on glass coverslips, transfected with full-length FLAG-tagged SNX5WT or SNX5Y132D,F136D and infected with C. trachomatis for 24 hr. Cells were fixed in 4% paraformaldehyde/D-PBS, permeabilized in 1x D-PBS containing 0.1% Triton X-100 for 5 min at room temperature, blocked in 1x/D-PBS containing 1% BSA for 1 hr, and stained with the indicated primary and fluorophore-conjugated secondary antibodies in blocking buffer for 1 hr each. Coverslips were mounted in Vectashield mounting media containing DAPI (Vector Laboratories) to identify bacteria and host cell nuclei. Single z slices were acquired using Yokogawa CSU-X1 spinning disk confocal mounted on a Nikon Eclipse Ti inverted microscope equipped with an Andora Clara digital camera and CFI APO TIRF 60x oil objective. Images were acquired by NIS-Elements software (Nikon). The exposure time for each filter set for all images was identical. Images were processed with Adobe Photoshop CS and NIS-Elements.
 
-## Bioinformatics
+### Bioinformatics
 
 A BLAST search (Altschul et al., 1990) was performed using M. musculus SNX5 as input. The resulting sequences were culled to remove all partial sequences. Sequences that were titled ‘Sorting nexin-like’, leaving 1273 sequences, were then aligned in CLUSTAL Omega (Sievers et al., 2011) and displayed in ESPript (http://espript.ibcp.fr). Sequences displayed in the figure were chosen manually to display the diversity of SNX sequences but are extracted from the larger alignment. To determine highly conserved residues in the SNX5/6/32 family, we further culled the list to include only sequences with the terms: ‘sorting nexin-5’ or ‘sorting nexin-6’ or ‘sorting nexin-32’. These were realigned in CLUSTAL Omega, partial sequences that did not align in the PX domain were removed manually and the remaining 763 sequences were realigned. Only 13 residues were found to be completely invariant across all sequences, as annotated in Figure 2.

@@ -70,6 +70,184 @@ Finally, in line with the ACM, which predicts differential adaptive physiologica
 
 We used the long-term behavioral, demographic, and urine sample data of the Taï Chimpanzee Project (Wittig and Boesch, 2019b) collected on four communities of wild Western chimpanzees (East, North, Middle, and South) in the Taï National Park, Cote d’Ivoire (5°52′N, 7°20′E). The urine samples included in this study span over 19 years and were collected between 2000 and 2018 (see Table 1 for details about sample size).
 
+**Table 1.**
+ Sample size for immature and adult male orphans and non-orphans in each of the four study communities.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Community</th>
+      <th>Age class</th>
+      <th>Orphan status</th>
+      <th>N.ID</th>
+      <th>No. of samples</th>
+      <th>Mean ± SE no. of sample per individual</th>
+      <th>Age range (years)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Taï East</td>
+      <td rowspan="2">Immatures</td>
+      <td>Non-orphans</td>
+      <td>8*</td>
+      <td>112</td>
+      <td>14.0 ± 3.8</td>
+      <td>3.8–11.9</td>
+    </tr>
+    <tr>
+      <td>Recently orphaned</td>
+      <td>5*</td>
+      <td>116</td>
+      <td>23.2 ± 9.1</td>
+      <td>4.1–11.9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Non-recently orphaned</td>
+      <td>9*</td>
+      <td>136</td>
+      <td>15.1 ± 6.4</td>
+      <td>6.1–11.8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Adult males</td>
+      <td>Non-orphans</td>
+      <td>4</td>
+      <td>456</td>
+      <td>114.0 ± 56.2</td>
+      <td>13.8–40.7</td>
+    </tr>
+    <tr>
+      <td>Orphans</td>
+      <td>3</td>
+      <td>354</td>
+      <td>118.0 ± 18.0</td>
+      <td>12.3–19.8</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Taï Middle</td>
+      <td rowspan="2">Immatures</td>
+      <td>Non-orphans</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recently orphaned</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Non-recently orphaned</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Adult males</td>
+      <td>Non-orphans</td>
+      <td>3</td>
+      <td>17</td>
+      <td>5.7 ± 0.67</td>
+      <td>17.2–33.7</td>
+    </tr>
+    <tr>
+      <td>Orphans</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="5">Taï North</td>
+      <td rowspan="2">Immatures</td>
+      <td>Non-orphans</td>
+      <td>11</td>
+      <td>168</td>
+      <td>15.3 ± 4.3</td>
+      <td>3.0–12.0</td>
+    </tr>
+    <tr>
+      <td>Recently orphaned</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Non-recently orphaned</td>
+      <td>2</td>
+      <td>7</td>
+      <td>3.5 ± 0.5</td>
+      <td>10.5–11.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Adult males</td>
+      <td>Non-orphans</td>
+      <td>3</td>
+      <td>95</td>
+      <td>31.7 ± 9.1</td>
+      <td>12.3–20.8</td>
+    </tr>
+    <tr>
+      <td>Orphans</td>
+      <td>2</td>
+      <td>61</td>
+      <td>30.5 ± 3.5</td>
+      <td>12.1–20.4</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Taï South</td>
+      <td rowspan="2">Immatures</td>
+      <td>Non-orphans</td>
+      <td>17*</td>
+      <td>173</td>
+      <td>10.2 ± 1.5</td>
+      <td>2.8–11.9</td>
+    </tr>
+    <tr>
+      <td>Recently orphaned</td>
+      <td>2*</td>
+      <td>18</td>
+      <td>9.0 ± 6.0</td>
+      <td>4.1–9.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Non-recently orphaned</td>
+      <td>5*</td>
+      <td>116</td>
+      <td>23.2 ± 7.7</td>
+      <td>6.1–11.9</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Adult males</td>
+      <td>Non-orphans</td>
+      <td>7</td>
+      <td>858</td>
+      <td>122.6 ± 18.1</td>
+      <td>12.1–45.3</td>
+    </tr>
+    <tr>
+      <td>Orphans</td>
+      <td>6</td>
+      <td>343</td>
+      <td>57.2 ± 31.5</td>
+      <td>12.1–21.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_*50 immature individuals were included in this study but one immature in Taï East and two immatures in Taï South were sampled before and after their mother died (i.e., they are counted twice in the table, once as an orphan and once as a non-orphan). Six males were included in the study as both mature and immature individuals._
+
 We used a series of Bayesian linear mixed models (LMMs) to test our predictions regarding the effect of maternal loss on overall cortisol levels and diurnal slopes (jointly constituting the cortisol profile). We first tested these effects in socially immatures (i.e., males and females < 12 years of age because prior to 12 years, chimpanzees associate primarily with their mother; Reddy and Sandel, 2020). Secondly, we tested these effects in mature males (i.e., males ≥ 12 years of age).
 
 For immatures, we first tested for differences in cortisol profiles between recently orphaned individuals (individuals that lost their mother for less than 2 years previously, N = 7), not-recently orphaned orphans (individuals that experienced maternal loss more than 2 years ago at the time of sampling, N = 16), and non-orphans (N = 36; all immature model). We used these three categories to test whether the potential effect of maternal loss on immature cortisol profiles is a short-term effect (i.e., only present in recently orphaned individuals) or endures throughout ontogeny. Note that immatures that have been sampled over several years can appear in two or three of the orphan categories in our dataset. We then tested, for immature orphans only (N = 17), the effect of two test predictors on their cortisol profiles, the age at which the orphan lost their mother, and the years since maternal loss (immature orphan model).
@@ -78,9 +256,323 @@ For mature males, we tested first for differences in cortisol profiles between o
 
 For each of the models, all these test predictors were included in interaction with the linear, the quadratic, and the cubic terms for time of sample collection to test the effect of these test predictors on diurnal cortisol slopes. The quadratic and cubic terms for time of sample collection were included here since a previous study using a large sample size showed that diurnal cortisol slopes in chimpanzees follow a curved cubic pattern (Emery Thompson et al., 2020). While our models differ in the test predictors that were included in each model, the control predictors were nearly identical for all models (except for the immature orphan model, see below). In all our models, we controlled for sex of the individual, community size, sex ratio of mature individuals in the community, age of the individual (except for the immature orphan model because of collinearity issue, see Materials and methods), the liquid chromatography mass spectrometry (LCMS) method used (‘old’ or ‘new’ method, see the Urine analysis section), and seasonal variation in ecological conditions (see Materials and methods). In addition, we controlled for repeated observations of the same individual over the same year by incorporating individual ID and year as random factors in each model. Finally, to control for the changes in cortisol diurnal slope with age, we built one slope per individual per year into each model by incorporating the dummy variable individual_year as a random factor. For each model, we first ran a full model comprising all the variables and interactions described above. When the 90% credible interval (CI) for the estimate of an interaction term overlapped 0, this indicated a large uncertainty and therefore that the effect of this interaction was not consistent in our data. Accordingly, we reran the models without those non-consistent interaction terms and present the results of the final reduced models. For each model, we report P + and P- as the percentage of the posterior distribution in support of the hypothesized positive or negative effect given the observed data. We also report the proportion of variance in the response explained by the fixed effects and the random effects (conditional R2) and the fixed effect only (marginal R2). Throughout the result section, we describe differences in cortisol levels in the morning, in the afternoon, or throughout the day, based on the visual inspection of the model line predictions and on the model output regarding diurnal cortisol slopes. We did not directly test differences in cortisol levels in morning or afternoon samples separately due to limitations in the sample size, but these differences can be assessed based on the diurnal cortisol slopes depicted in the figures.
 
-## Effect of maternal loss on immature cortisol profiles
+### Effect of maternal loss on immature cortisol profiles
 
 For the all immature model (N = 846 samples and 50 individuals), assessing if immature individuals that were either recently orphaned, not-recently orphaned, and non-orphans differed in their cortisol profiles, the 90% CI for the estimate of the interaction terms between orphan status and the quadratic and the cubic term for time of the day overlapped with 0. In the reduced model not comprising these two interaction terms, we found that recently orphaned individuals had a consistently steeper linear slope (estimate for the interaction between orphan status and the linear term for time of the day: –0.22, 95% CI: [–0.03: –0.48], P = 98.9%, Table 2, Figure 1, and Appendix 1—figure 1) than non-orphans. On average, recently orphaned individuals had a diurnal cortisol slope 58% steeper than non-orphans (average slope and [95% CI] for recently orphaned: –0.60 [-0.79: –0.41], and non-orphans: –0.38 [-0.53: –0.22]). A visual inspection of the model line prediction (Figure 1) indicates that this difference in slopes may stem from higher early morning cortisol levels in recently orphaned immatures as compared to non-orphan immatures (Figure 1 and Appendix 1—figure 1). However, we found no consistent differences in the linear slopes of not-recently orphaned immatures and non-orphan immatures (90% CI: [–0.24: 0.01], P = 93.4%, Table 2, Figure 1, and Appendix 1—figure 1). Since our model comprised an interaction between orphan status and time of the day, the main effect of orphan status inherently corresponds only to the difference at midday. The 95% CI for the main effect of orphan status in the all immature model clearly overlapped 0, indicating that there was no consistent difference between recently orphaned, not-recently orphaned, and non-orphans in their average cortisol levels at midday. However, Figure 1 indicates that recently orphaned individuals had higher cortisol levels in the morning and lower cortisol levels in the afternoon than non-orphans. Conditional and marginal R2 for the all immature model were 0.60 and 0.26, respectively.
+
+**Table 2.**
+ Results of the all immature and the immature orphan models.These two models tested in immatures for the effect of orphan status (all immature model) and, for immature orphan only, the effect of age when mother died and years since maternal loss (orphan immature model) on cortisol levels and diurnal cortisol slopes. The results presented here are from reduced all immature and immature orphan models after removing the interactions for which the 90% credible interval (CI) overlapped 0. SE indicates the standard error of the estimate for each predictor. The coded level for each categorical predictor is indicated in parentheses. Control predictors are italicized. 95% CI low and 95% CI high indicate the lower and upper limits of the 95% CI. Likewise, 90% CI low and 90% CI high indicate the lower and upper limits of the 90% CI. CIs that do not overlap 0 are indicated in bold. Predictors for which the 95% CI did not overlap 0 are indicated with salmon shading, and predictors for which the 95% CI overlapped 0 but the 90% CI did not overlap 0 are indicated with yellow shading. LCMS: liquid chromatography mass spectrometry. Time of the day2: quadratic term for time of the day. Time of the day3: cubic term for time of the day.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Response</th>
+      <th>Predictor</th>
+      <th>Estimate</th>
+      <th>SE</th>
+      <th>95% CI low</th>
+      <th>95% CI high</th>
+      <th>90% CI low</th>
+      <th>90% CI high</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="15">All immature model</td>
+      <td rowspan="15">Log urinary cortisol levels (ng/ml SG)</td>
+      <td>Intercept</td>
+      <td>3.69</td>
+      <td>0.27</td>
+      <td>3.17</td>
+      <td>4.23</td>
+      <td>3.26</td>
+      <td>4.14</td>
+    </tr>
+    <tr>
+      <td>Time of the day</td>
+      <td>–0.38</td>
+      <td>0.08</td>
+      <td>–0.53</td>
+      <td>–0.22</td>
+      <td>–0.51</td>
+      <td>–0.25</td>
+    </tr>
+    <tr>
+      <td>Time of the day2</td>
+      <td>–0.01</td>
+      <td>0.08</td>
+      <td>–0.17</td>
+      <td>0.14</td>
+      <td>–0.14</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Time of the day3</td>
+      <td>0.03</td>
+      <td>0.04</td>
+      <td>–0.05</td>
+      <td>0.12</td>
+      <td>–0.04</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Orphan category (orphan for less than 2 years)</td>
+      <td>0.01</td>
+      <td>0.19</td>
+      <td>–0.36</td>
+      <td>0.38</td>
+      <td>–0.30</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>Orphan category (orphan for more than 2 years)</td>
+      <td>–0.14</td>
+      <td>0.22</td>
+      <td>–0.58</td>
+      <td>0.32</td>
+      <td>–0.50</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Sex ratio</td>
+      <td>0.07</td>
+      <td>0.07</td>
+      <td>–0.06</td>
+      <td>0.2</td>
+      <td>–0.04</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Community size</td>
+      <td>–0.12</td>
+      <td>0.06</td>
+      <td>–0.24</td>
+      <td>0.01</td>
+      <td>–0.22</td>
+      <td>–0.01</td>
+    </tr>
+    <tr>
+      <td>Individual sex (male)</td>
+      <td>–0.26</td>
+      <td>0.25</td>
+      <td>–0.78</td>
+      <td>0.22</td>
+      <td>–0.67</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Individual age at sample</td>
+      <td>–0.01</td>
+      <td>0.17</td>
+      <td>–0.33</td>
+      <td>0.37</td>
+      <td>–0.27</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>LCMS method (old)</td>
+      <td>0.06</td>
+      <td>0.35</td>
+      <td>–0.62</td>
+      <td>0.78</td>
+      <td>–0.50</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <td>Sin(seasonDate)</td>
+      <td>–0.07</td>
+      <td>0.04</td>
+      <td>–0.14</td>
+      <td>0</td>
+      <td>–0.13</td>
+      <td>–0.02</td>
+    </tr>
+    <tr>
+      <td>Cos(seasonDate)</td>
+      <td>0.01</td>
+      <td>0.04</td>
+      <td>–0.06</td>
+      <td>0.08</td>
+      <td>–0.05</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Orphan category (less than 2 years): time of the day</td>
+      <td>–0.22</td>
+      <td>0.10</td>
+      <td>–0.41</td>
+      <td>–0.03</td>
+      <td>–0.38</td>
+      <td>–0.07</td>
+    </tr>
+    <tr>
+      <td>Orphan category (more than 2 years): time of the day</td>
+      <td>–0.11</td>
+      <td>0.08</td>
+      <td>–0.27</td>
+      <td>0.03</td>
+      <td>–0.24</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td rowspan="17">Immature orphan model</td>
+      <td rowspan="17">Log urinary cortisol levels (ng/ml SG)</td>
+      <td>Intercept</td>
+      <td>3.59</td>
+      <td>0.26</td>
+      <td>3.08</td>
+      <td>4.11</td>
+      <td>3.17</td>
+      <td>4.02</td>
+    </tr>
+    <tr>
+      <td>Time of the day</td>
+      <td>–0.44</td>
+      <td>0.17</td>
+      <td>–0.75</td>
+      <td>–0.05</td>
+      <td>–0.7</td>
+      <td>–0.14</td>
+    </tr>
+    <tr>
+      <td>Time of the day2</td>
+      <td>–0.01</td>
+      <td>0.07</td>
+      <td>–0.16</td>
+      <td>0.13</td>
+      <td>–0.13</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Time of the day3</td>
+      <td>0.03</td>
+      <td>0.11</td>
+      <td>–0.18</td>
+      <td>0.27</td>
+      <td>–0.14</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>Orphan’s age when mother died</td>
+      <td>0.00</td>
+      <td>0.24</td>
+      <td>–0.51</td>
+      <td>0.46</td>
+      <td>–0.41</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>Years since maternal loss</td>
+      <td>–0.16</td>
+      <td>0.16</td>
+      <td>–0.48</td>
+      <td>0.14</td>
+      <td>–0.42</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Sex ratio</td>
+      <td>–0.06</td>
+      <td>0.11</td>
+      <td>–0.27</td>
+      <td>0.15</td>
+      <td>–0.23</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Community size</td>
+      <td>–0.05</td>
+      <td>0.08</td>
+      <td>–0.22</td>
+      <td>0.12</td>
+      <td>–0.19</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Individual sex (male)</td>
+      <td>0.1</td>
+      <td>0.3</td>
+      <td>–0.47</td>
+      <td>0.7</td>
+      <td>–0.38</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>LCMS method (old)</td>
+      <td>–0.04</td>
+      <td>0.32</td>
+      <td>–0.66</td>
+      <td>0.64</td>
+      <td>–0.55</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>Sin(seasonDate)</td>
+      <td>0.02</td>
+      <td>0.05</td>
+      <td>–0.09</td>
+      <td>0.12</td>
+      <td>–0.07</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Cos(seasonDate)</td>
+      <td>0.04</td>
+      <td>0.05</td>
+      <td>–0.07</td>
+      <td>0.14</td>
+      <td>–0.05</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Years since maternal loss: time of the day</td>
+      <td>0.19</td>
+      <td>0.1</td>
+      <td>–0.01</td>
+      <td>0.38</td>
+      <td>0.02</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>Years since maternal loss: time of the day2</td>
+      <td>–0.05</td>
+      <td>0.05</td>
+      <td>–0.15</td>
+      <td>0.05</td>
+      <td>–0.14</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Years since maternal loss: time of the day3</td>
+      <td>–0.06</td>
+      <td>0.04</td>
+      <td>–0.15</td>
+      <td>0.02</td>
+      <td>–0.14</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Age when mother died: time of the day</td>
+      <td>0.08</td>
+      <td>0.09</td>
+      <td>–0.09</td>
+      <td>0.25</td>
+      <td>–0.06</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>Age when mother died: time of the day2</td>
+      <td>–0.12</td>
+      <td>0.06</td>
+      <td>–0.23</td>
+      <td>–0.00</td>
+      <td>–0.21</td>
+      <td>–0.02</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64134/elife-64134-fig1-v1.jpg)
 
@@ -98,7 +590,7 @@ In addition, in the immature orphan model, we found a consistent effect of the i
 
 **Figure 3.:** Orange square, blue circles, and green triangles depict cortisol levels for individuals who lost their mother when they were less than 5 years, 5–8 years, and 8–12 years of age, respectively. Each dot represents the average hourly cortisol level of all individuals for each of the three categories of age when mother died. The size of the dot is proportional to the sample size (number of urine sample collected) for each hour of the day. The orange solid line and blue and green dashed lines indicate model line predictions, and the orange, blue, and green light areas the 95% credible interval (CI) for individuals who lost their mother when they were less than 5 years, 5–8 years, and 8–12 years of age, respectively (immature orphan model). The model lines depict the consistent effect of the interaction between age when mother died and the quadratic term of time of day in the immature orphan model (estimate and [95% CI]: –0.12 [0.00: –0.23]). Note that while ‘age at maternal loss’ was modeled as a continuous variable in the immature orphan model, for ease of interpretation the model is depicted here for three categorical intervals of ’age when mother died’. The sample size for the immature orphan model was N = 393 samples and 17 individuals.
 
-## Effect of maternal loss on cortisol slopes in mature male chimpanzees
+### Effect of maternal loss on cortisol slopes in mature male chimpanzees
 
 In contrast to immature individuals, we did not detect a consistent effect of orphan status on mature males’ diurnal cortisol profiles and cortisol levels. All the 90% CIs for the estimate of the interaction terms between orphan status and the linear, quadratic, and cubic terms for time of day in the full all adult male model largely overlapped 0, and all P+ and P- were below 75% for the estimates of each interaction (N = 2184 samples and 28 individuals; Appendix 1—table 1). Furthermore, in a reduced model not comprising these interactions, the 90% CI for the estimate of orphan status largely overlapped 0 and P+ = 56% (Appendix 1—table 1). Conditional and marginal R2 for the all adult male model were 0.53 and 0.28, respectively.
 
@@ -132,49 +624,53 @@ While modifications of HPA axis activity are unlikely to directly impact chimpan
 
 ## Materials and methods
 
-## Ethics statement
+### Ethics statement
 
 Our study was purely observational and non-invasive. Observers followed the strict hygiene protocol of Taï Chimpanzee Project, which was adopted by IUCN as the best practice guideline for wild ape studies (Gilardi et al., 2015; Appendix 1). Observers quarantined for 5 days before following the chimpanzees. During follows, observers disinfected their hands and boots and changed clothes before leaving and entering camps. In the forest, observers wore face masks and kept a minimum distance of 8 m between themselves and the chimpanzees to avoid disease transmission from humans to chimpanzees, and to avoid disturbing the natural behavior of the observed individuals. The research presented here was approved by the ‘Ethikrat’ of the Max Planck Society on 04.08.2014.
 
-## Study communities
+### Study communities
 
 We used the long-term data of the Taï Chimpanzee Project (Wittig and Boesch, 2019b) collected on four communities of wild Western chimpanzees (East, North, Middle, and South) in the Taï National Park, Cote d’Ivoire (5°52′N, 7°20′E). The behavioral observation of the chimpanzees started in 1982 and is still ongoing. The observation periods for each of the communities are as follows: North 1982–present; South, 1993–present; Middle, 1995–2004; East, 2000–present (Wittig, 2018). Urine samples were collected regularly in all communities from 2000 onwards, except for the East community where sample collection started in 2003.
 
-## Study subjects
+### Study subjects
 
 For this study, we considered all immature individuals from both sexes (<12 years of age) and mature males (≥12 years of age) from whom urine samples were collected. The age ranges for immatures sampled in this study were 2.82–11.99 years for non-orphans and 4.10–11.99 years for orphans. Physical maturity may come later in male Taï chimpanzees, but 12 years is the age at which chimpanzees range predominantly independently of their mother (Taï Chimpanzee Project, unpublished data) and are fully integrated in the male hierarchy (Mielke et al., 2018). We excluded mature females from the analysis since most females in our study immigrated from unhabituated communities into the study communities, which meant we had no knowledge of the presence or absence of their mothers during their immature years. We excluded orphans for whom the date of death of the mother was unknown (e.g., occurred before habituation of the study community). For individual samples, we excluded outliers (i.e., samples with very low or very high hormonal measures, see details in Appendix 1) and samples collected when the individuals were sick. We also ensured that the final dataset comprised at least three data points per individual per year, and that the earliest and the latest samples were separated by at least 6 hr, to ensure a meaningful evaluation of the diurnal cortisol slope of each individual (see details in Appendix 1). In total, we used 846 samples from 50 immatures, including 17 orphans (N samples per individual mean ± SE = 16.9 ± 2.2) and 2184 samples from 28 mature males, including 11 orphans (N samples per individual mean ± SE = 78 ± 13.5). For immatures, we used an average of nine samples per individual per year, and half of the individual_year comprised at least seven samples. For adult males, we used an average of 19 samples per individual per year, and half of the individual_year comprised at least 10 samples.
 
-## Demographic and behavioral data collection
+### Demographic and behavioral data collection
 
 In Taï, each chimpanzee community is followed daily by a joint effort of local and international assistants and researchers (Wittig and Boesch, 2019b). Each day, the observers conducted focal follows from and to sleeping sites. The focal individual was either followed all day (i.e., 12 hr) or the identity of the focal changed around 12h30 and two different individuals were followed each day one after the other (i.e., 6 hr focal follow each). The observer recorded detailed focal and ad libitum behavioral data (Altmann, 1974). Observers recorded all social interactions such as aggression and submissive behaviors, which we then used to build a dominance hierarchy (see below). In addition, each day, the observers recorded the presence of all individual chimpanzees they encountered, which provides a detailed account of the demography of each community. Specifically, we obtained detailed information on individuals’ date of birth, immigration/emigration, and death or disappearance. This information was used to determine the early-life history of the study subject, namely if their mother died before they reached 12 years of age, and, if so, the age of the subject when its mother died.
 
-## Assessment of dominance hierarchy in mature males
+### Assessment of dominance hierarchy in mature males
 
 Since dominance rank may correlate with the cortisol levels of adult male chimpanzees (e.g., Muller and Wrangham, 2004), we wanted to control for this parameter in our analysis of cortisol patterns in adult males. We calculated the dominance hierarchy for mature males in each of the study communities using a modified version of the Elo-rating method (Neumann et al., 2011) developed by Foerster et al., 2016. In this modified version, the k parameters and the starting score of each individual are optimized using maximum likelihood approximation (Mielke et al., 2018, see details in Appendix 1). We used all of the long-term data available on unidirectional submissive pant-grunt vocalizations, given by the lower ranking of the two individuals towards the higher ranking (Bygott, 1979). We used 9189 pant-grunt recorded for males in Taï South, 3952 in Taï East, 5784 in Taï North, and 111 in Taï Middle. All Elo-rating scores were standardized between 0 and 1 with 1 being the highest-ranking individual and 0 the lowest ranking on any given day. We then extracted the Elo-rating score of each individual on the day when each urine sample was collected.
 
-## Urine sample collection and analysis
+### Urine sample collection and analysis
 
-During chimpanzee follows, we collected urine samples opportunistically from known individuals. Directly after urination, we collected the urine from leaves and/or the ground into a 2 ml cryo vial using a disposable plastic pipette. Within 12 hr of collection, we placed these vials in liquid nitrogen. Subsequently, the samples were shipped on dry ice to the Endocrinology Laboratory of the Max Plank Institute for Evolutionary Anthropology in Leipzig, Germany, and stored at ≤–20°C until analysis. We usedLCMS ( Hauser et al., 2008; Murtagh et al., 2013) and MassLynx (version 4.1; QuanLynx-Software) to quantify cortisol concentrations in each sample. For all samples analyzed, we used either prednisolone (hereafter the ‘old’ method; i.e., most samples analyzed prior to July 2016) or cortisol d4 (hereafter the ‘new’ method; i.e., all samples analyzed after September 2016) as our internal standard for the cortisol measurements. To adjust for water content in the urine (i.e., urine concentration), we measured, for each sample, its specific gravity (SG) using a refractometer (TEC, Ober-Ramstadt, Germany). We corrected our cortisol concentration for urine water content in each sample using the following formula provided by Miller et al., 2004:SG corrected cortisol = raw cortisol concentration(ng/ml) × (SGpopulation mean − 1.0)(SGsample − 1.0)
+During chimpanzee follows, we collected urine samples opportunistically from known individuals. Directly after urination, we collected the urine from leaves and/or the ground into a 2 ml cryo vial using a disposable plastic pipette. Within 12 hr of collection, we placed these vials in liquid nitrogen. Subsequently, the samples were shipped on dry ice to the Endocrinology Laboratory of the Max Plank Institute for Evolutionary Anthropology in Leipzig, Germany, and stored at ≤–20°C until analysis. We usedLCMS ( Hauser et al., 2008; Murtagh et al., 2013) and MassLynx (version 4.1; QuanLynx-Software) to quantify cortisol concentrations in each sample. For all samples analyzed, we used either prednisolone (hereafter the ‘old’ method; i.e., most samples analyzed prior to July 2016) or cortisol d4 (hereafter the ‘new’ method; i.e., all samples analyzed after September 2016) as our internal standard for the cortisol measurements. To adjust for water content in the urine (i.e., urine concentration), we measured, for each sample, its specific gravity (SG) using a refractometer (TEC, Ober-Ramstadt, Germany). We corrected our cortisol concentration for urine water content in each sample using the following formula provided by Miller et al., 2004:
+
+$$
+SG corrected cortisol = raw cortisol concentration(ng/ml) \times \frac{(SG_{population mean − 1.0})}{(SG_{sample − 1.0})}
+$$
 
 where SGpopulation mean is the mean SG value average across all the samples used in this study (SGpopulation mean = 1.022 in our study), and SGsample is the SG value of each given sample. In the article, all cortisol concentrations are reported as ng/ml SG.
 
-## Statistical analysis
+### Statistical analysis
 
 We used a series of Bayesian LMMs to test our predictions regarding the effect of maternal loss on overall cortisol levels and diurnal slopes (jointly constituting the cortisol profile). We first tested these effects in socially immatures from both sexes (all immature and immature orphan models). Secondly, we tested these effects in mature males in the all adult male and adult male orphan models (i.e., four models in total). In all the models, each urine sample represented a data point and the cortisol concentration of the sample (expressed in ng/ml SG) was the response variable. We log-transformed the cortisol values to achieve a symmetric distribution of the response.
 
-## Effect of maternal loss on cortisol profiles in immatures
+### Effect of maternal loss on cortisol profiles in immatures
 
 In the all immature model, we tested the prediction that immature orphans, especially those recently orphaned, will have higher overall cortisol levels and a flatter slope of diurnal cortisol slope when compared to non-orphans. We fitted a LMM with a categorical variable for orphan status with three levels (recently orphaned, non-recently orphaned, and non-orphans) as our test predictor to test for the short- and long-term effects of maternal loss on overall cortisol levels in immatures. In addition, to test for the effect of this orphan status on the diurnal cortisol variation, we incorporated the linear, quadratic, and cubic terms for time of sample collection as test predictors as well as their interaction with orphan status to test whether the diurnal cortisol slope differed between recently orphaned, non-recently orphaned, and non-orphans. The time of sample collection was expressed in minutes with 0 being midnight and 720 being noon. In addition, in this model, we used the following control predictors: the LCMS method used (‘old’ or ‘new’ method, see the Urine analysis section), sex of the individual, community size, sex ratio of mature individuals in the community and age of the individual, since these factors can all influence the cortisol profiles of immature and/or mature chimpanzees (Muller and Wrangham, 2004; Emery Thompson et al., 2020; Tkaczynski et al., 2020). Community ID was not included as a control predictor in our analysis since it was highly correlated with community size. In addition, we accounted for seasonal variation in ecological conditions (e.g. rainfall, temperature, food availability) that can affect cortisol levels in chimpanzees (Wessling et al., 2018; Preis et al., 2019; Samuni et al., 2019b) by converting the Julian date at which samples were collected into a circular variable and including the sine and cosine of this variable in our model (Wessling et al., 2018).
 
-## Effect of age at mother’s death and time since mother died on cortisol profile in orphan immatures
+### Effect of age at mother’s death and time since mother died on cortisol profile in orphan immatures
 
 In the immature orphan model, we focused on immatures who were orphans at the time of sampling in order to investigate more specifically the effects of the age at maternal loss and years since maternal loss on cortisol levels. We tested the predictions that (a) immature individuals who were orphaned at a younger age would have higher cortisol levels and flatter diurnal cortisol slopes and (b) that, if some form of recovery occurs, these effects will be weaker the more time has passed since an individual lost its mother. We incorporated two test predictors in the immature orphan model, the age at which the individuals have been orphaned (in days since their date of birth), and the time since the individuals have been orphaned (in days since the date their mother died). As in the all immature model, we incorporated the six interaction terms between these two test predictors and the linear, quadratic, and cubic terms for time of sample collection. As before, we also incorporated individual sex, community size, sex ratio, and LCMS method, and the sine and cosine of the Julian date as control fixed effect. Initially, we also wanted to incorporate the age of the individual at the time of sampling into the immature orphan model. This was however not possible due to collinearity between the individual age at sample and both the age at which the individual was orphaned and the time since its mother died (i.e., the model did not run due to collinearity issues). However, since age at sample did not have a consistent effect in our immature sample in the all immature model (90% CI: –0.27: 0.29) we decided to not include age at sample in the immature orphan model, allowing us to test our variable of interest, namely years since maternal loss and age when mother died.
 
-## Effect of maternal loss on cortisol profiles in mature males
+### Effect of maternal loss on cortisol profiles in mature males
 
 In the all adult male model, we tested whether mature males (≥12 years) who were orphaned as immatures (i.e., before 12 years of age) had overall higher cortisol levels and a flatter diurnal cortisol slope than mature males who did not lose their mother before 12 years of age. We fitted a LMM with the early-life orphan status (i.e., ‘no’, if the mother of the individual was still alive when the individual reached 12 years of age, and ‘yes’ if the mother died before the individual was 12 years of age) as our test predictor. As in the all immature model, we incorporated three interaction terms between orphan status and the linear, quadratic, and cubic terms for time of sample collection. As in the other models, we used community size, the sex ratio, the age of the individual, the LCMS method, and the sine and cosine of the Julian date as control fixed effects. In addition, we controlled for the dominance rank of the individual by adding the standardized Elo-rating score of each individual on the day the sample was collected as a fixed effect into the model.
 
-## Effect of age at mother’s death on cortisol profile in orphan immatures
+### Effect of age at mother’s death on cortisol profile in orphan immatures
 
 In the adult male orphan model, we assessed whether the age at which the orphan adult male chimpanzees lost their mother impacted the diurnal cortisol levels and slopes of mature males (i.e., whether the potential effect of early-life adversity continued into adulthood). Accordingly, we fitted a LMM with ‘age at which mother died’ as a test predictor and its interaction with the linear, quadratic, and cubic terms for time of day. In this model, we used only samples collected from mature males who lost their mothers before they were 12 years of age. As previously, we used community size, the sex ratio, the age of the individual, the LCMS method, and the sine and cosine of the Julian date as control fixed effects.
 

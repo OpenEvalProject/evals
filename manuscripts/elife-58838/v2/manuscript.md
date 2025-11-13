@@ -44,39 +44,75 @@ In this study, we show for the first time that human primed ILCPs can interact w
 
 ## Results
 
-## ILCPs upregulate adhesion molecules on EC surface and acquire an activated and ILC3-like phenotype in vitro
+### ILCPs upregulate adhesion molecules on EC surface and acquire an activated and ILC3-like phenotype in vitro
 
 The first evidence of an ILC–EC interaction was reported by Eisenring and colleagues in an in vivo melanoma model (Eisenring et al., 2010). To investigate whether also human ILCs can interact with ECs, individual circulating ILC subsets, identified based on the expression of c-Kit and CRTH2 within the Lin- CD127+ fraction (Figure 1a), were ex vivo-sorted from the PB of healthy volunteers and short-term in vitro-expanded and eventually re-sorted at a purity ≥90%, before use in co-culture experiments with primary human ECs (HUVECs, Figure 1—figure supplement 1a). Upon exposure of ECs to in vitro-expanded ILC subsets, ILCPs were the only subset that significantly upregulated the adhesion molecules E-Selectin, ICAM-1, and VCAM-1 on the EC surface, if compared to ILC1s and ILC2s (Figure 1b). These adhesion proteins are involved in the different stages of the multi-step process of the leukocyte transendothelial migration (TEM) process, i.e., the movement of leukocytes out of the blood stream and toward the site of tissue damage and/or infection (Muller, 2011). We confirmed the ability of in vitro-expanded ILCPs to activate ECs using other primary human dermal blood ECs, i.e., HDBECs (Figure 1—figure supplement 1b). Following in vitro expansion, we observed that ILCPs upregulated NKp44 and CD69 as well as CD45RO and RORγt, if compared to their ex vivo counterparts, while maintaining similar levels of expression of NKp46 and CD62L (Figure 1—figure supplement 1c and d), suggesting that the in vitro expansion process conferred a more committed phenotype to this ILC subset. Interestingly, no difference in T-bet or GATA3 expression in RORγt+ vs RORγt- cells was observed (Figure 1—figure supplement 1e), indicating that the expression or not of RORγt is not directly involved in the EC-activating capacity of ILCPs. Since we observed that around 60% of in vitro-expanded ILCPs acquired NKp44 expression, we investigated the ability of NKp44+ vs NKp44- ILCPs to activate ECs. As shown in Figure 1—figure supplement 1f, no significant difference was observed in the EC-activating capacity of these two subpopulations, suggesting that the EC-activating capacity of ILCPs does not depend on the expression of NKp44. Moreover, we observed that in vitro-expanded ILCPs upregulated the expression of the chemokine receptors CCR6 and CXCR5, i.e., two known LTi-like cells markers, compared to their ex vivo counterparts. Consistent with previous reports, Neuropilin1 (NRP1) was not expressed by circulating ILC3s (Shikhagaie et al., 2017) and was not upregulated after in vitro expansion. Compared to ex vivo ILCPs, in vitro-expanded ILCPs downregulated the expression of CD28, although only 20% of circulating ILCPs expressed it (Figure 1—figure supplement 1c and d). Overall, these data suggest that not only in vitro-expanded ILCPs acquire an activated phenotype in vitro, but are also skewed toward an ILC3-like phenotype and share some phenotypical markers with LTi-like cells, while maintaining multipotent features as shown by the expression of T-bet and GATA3.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58838/elife-58838-fig1-v2.jpg)
+
+**Figure 1.:** (a) Circulating human ILCs are identified as lineage negative CD127+ cells; within this population, we discriminate ILC1s as c-Kit- CRTH2-, ILC2s as CRTH2+ c-Kit+/-, and ILCPs as c-Kit+ CRTH2- cells. HUVEC cells were co-cultured for 3 hr at 1:1 ratio in direct contact with either in vitro-expanded (b) or directly ex vivo-sorted (c) ILC1s, ILC2s, and ILCPs. Untreated ECs were employed as negative control (CTRL). ECs were harvested and analyzed for cell-surface adhesion molecule expression by flow cytometry. Graphs show representative histograms (panels b and c, top) and the summary (panels b and c, bottom) of the induction of the indicated adhesion molecules on the EC surface (n = 6). Ordinary one-way ANOVA–Tukey’s multiple comparison test (panel b); Ordinary one-way ANOVA–Friedman test (panel c).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58838/elife-58838-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Following ex vivo sorting and in vitro expansion, the individual ILC subsets were subjected to purity checks before use in functional assays with endothelial cells (ECs). ILC1s were re-sorted as Lin-c-Kit-CRTH2-, ILC2s as Lin-c-Kit-/+CRTH2+, and ILCPs as Lin-c-Kit+CRTH2- cells. (b) HDBECs were co-cultured for 3 hr at 1:1 ratio in direct contact with in vitro-expanded ILCPs. Untreated HDBECs were employed as negative control (CTRL). ECs were harvested and analyzed for cell-surface adhesion molecule expression by flow cytometry. Graphs show representative histograms (top) and the summary (bottom) of the induction of the indicated adhesion molecules on the EC surface (n = 3). (c) Representative histograms showing the expression of NKp44, NKp46, CD28, CD62L, CD69, CD45RA, CD45RO, CCR6, CXCR5, NRP1, and RORγt by ex vivo- and in vitro-expanded ILCPs. (d) The graphs show the summary of the results obtained in four different donors. (e) Expression of T-bet and GATA3 in RORγt+ vs RORγt- ILCPs. (f) HUVEC cells were co-cultured for 3 hr at 1:1 ratio in direct contact with in vitro-expanded NKp44+ ILCPs and NKp44- ILCPs. Untreated ECs were employed as negative control (CTRL). ECs were harvested and analyzed for cell-surface adhesion molecule expression by flow cytometry. Graphs show representative histograms (top) and the summary (bottom) of the induction of the indicated adhesion molecules on the EC surface (n = 3). The black dotted lines indicate the level of average expression of adhesion molecules by untreated ECs. Statistical tests used: Paired t-test (panels b and f); Multiple t-tests (panels d and e).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58838/elife-58838-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Circulating human naïve CD4+ T cell subsets were isolated from the peripheral blood of HDs as CD3+ CD4+ CD45RA+ cells and in vitro-expanded for 2 weeks in the presence of 100 U/mL rhIL-2, 1 μg/mL of PHA, and irradiated allogenic feeder cells (1:10 T cell-feeder cell ratio). Individual CD4+ T cell subsets were re-sorted by FACS as follows: Th1 as CRTH2- CXCR3+ CCR6- cells; Th* as CRTH2- CXCR3+ CCR6+ cells; Th2 as CRTH2+ cells; and Th17 as CRTH2- CXCR3- CCR4+ CCR6+ cells. (b) HUVEC cells were co-cultured for 3 hr at 1:1 ratio in direct contact with in vitro-expanded Th1, Th2, Th17, and Th* or left untreated (CTRL). ECs were harvested and analyzed for cell-surface adhesion molecule expression by flow cytometry. Graphs show representative histograms (top) and the summary (bottom) of the induction of the indicated adhesion molecules on the EC surface (n = 3). The red dotted lines indicate the level of average expression of adhesion molecules by innate lymphoid cell precursor (ILCP)-exposed ECs. Statistical test used: Kruskal–Wallis test (panel b).
+
 To understand if the ability of ILCPs to interact with ECs is an intrinsic property of these cells or if they need to be primed to acquire it, we decided to expose ECs directly to ex vivo-sorted ILC subsets. As shown in Figure 1c, none of the isolated ILC subsets could induce a significant activation of ECs, suggesting that the EC-activating capacity of ILCPs is acquired during the in vitro expansion process. Since ILCPs were expanded in the presence of feeder cells, PHA, and IL-2, it is conceivable that feeder-derived cytokines such as IL-12 and IL-1β are involved in the priming. As ILCs constitute the innate counterpart of CD4+ T cells, we tested if in vitro-expanded individual T-helper (Th) subsets, i.e., Th1, Th2, Th17, and Th* (i.e., Th cells with a Th1/Th17 intermediate phenotype [Sallusto, 2016; Figure 1—figure supplement 2a]) could also interact, at steady state, with ECs. Following the same expansion protocol employed for ex vivo-isolated ILC subsets, Th subsets were employed in 3 hr co-culture experiments with ECs. As reported in the Figure 1—figure supplement 2b, except for a statistically significant Th1-mediated upregulation of VCAM-1, still not to the same extent as the ILCP-mediated induction, all Th subsets failed to upregulate adhesion molecule expression on the EC surface. Overall, these data suggest that in vitro-expanded ILCPs not only acquire a more activated/ILC3-like phenotype in vitro, but also the ability of interacting with ECs by means of mediating the upregulation of adhesion molecule expression on the EC surface.
 
-## ILCPs activate ECs primarily in a contact-dependent mechanism
+### ILCPs activate ECs primarily in a contact-dependent mechanism
 
 Inflammation triggers the upregulation of adhesion molecules in ECs, promoting the accumulation of leukocytes and their adhesion to the blood vessel walls. This phenomenon is mediated by pro-inflammatory mediators, such as TNF and IL-1β (Collins et al., 1995). As a consequence, to discriminate whether the EC activation by ILCPs was due to contact-dependent or soluble factor(s)-dependent mechanism(s), supernatants from the EC/ILCP co-cultures were analyzed. Significantly higher levels of IL-6, IL-8, GM-CSF, and IFN-γ were observed (Figure 2a). To address which cell type was producing the pro-inflammatory cytokines that accumulate in the cell-free supernatants, qPCR analysis of ECs and ILCPs (CD31-based FACS-sorted after 3 hr co-culture) was performed and compared to untreated ECs and steady-state ILCPs. As reported in Figure 2b, high levels of IL-6 and IL-8 transcripts were found in ECs exposed to ILCPs, whereas TNF transcripts were high only in steady-state ILCPs, indicating that IL-6 and IL-8 measured in the supernatant (Figure 2a) derive from ECs, and TNF from ILCPs. GM-CSF and IFN-γ transcripts were observed in both ECs and ILCPs before and after co-culture, indicating that both cell types contribute to the accumulation of these two cytokines in the supernatant. To experimentally verify if the upregulation of adhesion molecules in ECs was dependent on these soluble factors, 0.4 μm pore transwell chambers were employed, to allow cytokine exchange between the two compartments yet avoiding the cell contact. In this context, ILCPs failed to induce the expression of adhesion molecules on EC surface (Figure 2c). Of note, the production of the pro-inflammatory cytokines was dramatically reduced in the presence of the transwell insert (Figure 2—figure supplement 1a). To further prove the direct contact-dependency of the EC–ILC interaction, ECs were incubated during 3 hr in the presence of cell-free supernatant collected from previous EC–ILCP co-culture. As reported in Figure 2d, cell-free supernatant did not lead to the upregulation of the adhesion molecules E-Selectin and VCAM-1 in ECs, although ICAM-1 levels were found to be significantly increased if compared to unstimulated ECs, yet not to the same extent as for ILCP-exposed ECs. Finally, we analyzed the production of IL-6, IL-8, TNF, GM-CSF, and IFN-γ by ex vivo- and in vitro-expanded ILCPs. As shown in Figure 2—figure supplement 1b, no difference in terms of secretion of the indicated cytokines was observed. Indeed, incubation of ECs during 3 hr with cell-free supernatant collected from pure ILCPs at the end of the in vitro expansion did not provoke upregulation of adhesion molecules on EC surface (Figure 2—figure supplement 1c), correlating with the very low amount of the pro-inflammatory cytokines as shown in Figure 2—figure supplement 1b. Overall, these data suggest that ILCPs are superior to other ILC subsets in inducing the upregulation of adhesion molecules on ECs and can also favor the release of pro-inflammatory cytokines, primarily in a contact-dependent manner.
 
-## ILCPs engage the NF-κB pathway in ECs
+![Figure 2.](https://cdn.elifesciences.org/articles/58838/elife-58838-fig2-v2.jpg)
+
+**Figure 2.:** (a) The supernatant of the 3 hr co-culture experiments between ECs and ILCPs was analyzed for its cytokine contents (n = 4). The composition of the supernatant of ECs in EC growth medium was used as negative control (CTRL). (b) The expression of IL-6, IL-8, GM-CSF, TNF, and IFN-γ was analyzed by qPCR in ECs and ILCPs after being cultured for 3 hr at 1:1 ratio and FACS-sorted according to CD31 expression. Untreated ECs and ILCPs were employed as controls (CTRL). (c) HUVEC cells were co-cultured for 3 hr at 1:1 ratio in direct contact with in vitro-expanded ILCPs either in the absence (red dots) or presence (red circles) of a transwell (TW) insert (0.4 μm pore polycarbonate filter) or (d) in the presence of pre-conditioned media coming from previous EC–ILCP 3 hr co-cultures. ECs were harvested and analyzed for cell-surface adhesion molecule expression by flow cytometry (n = 6). The dotted lines indicate the level of average expression of adhesion molecules by unstimulated ECs. Statistical tests used: Unpaired t-test (panels a and d); paired t-test (panel c).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58838/elife-58838-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The supernatant of the 3 hr co-culture experiments between ECs and ILCPs, with (ILCPs TW) and without transwell (ILCPs) (a), and with (ILCPs NF-κBi) or without (ILCPs) NF-κB pre-inhibition in ECs (d) was analyzed for its cytokine content (n = 3). EC growth medium was used as negative control (black dotted lines). (b) The supernatant of ex vivo-sorted ILCPs, cultured for 24 hr in the presence of 100 U/mL of IL-2 in RPMI 8% HS, and of ILCPs at the end of the in vitro expansion protocol was analyzed for its cytokine content (n = 3). (c) HUVEC cells were co-cultured for 3 hr in the presence of pre-conditioned media coming from previous ILCPs at the end of the expansion protocol. ECs were harvested and analyzed for cell-surface adhesion molecule expression by flow cytometry (n = 4). The red dotted lines indicate the level of average expression of adhesion molecules by ILCP-exposed ECs. Statistical test used: Paired t-test (panels a, c, and d): Unpaired t-test (panel b).
+
+### ILCPs engage the NF-κB pathway in ECs
 
 It has been shown that adhesion molecule expression can be induced in ECs during inflammatory responses by the activation of different signaling pathways, among which the NF-κB pathway (Rahman and Fazal, 2011). To test whether the induction of adhesion molecules by ILCPs was dependent on NF-κB, ECs were pre-treated during 1 hr with a IκB kinase (IKK) complex inhibitor (BAY 11–7082, Mori et al., 2002) to specifically prevent NF-κB activation. In this context, ILCPs failed to significantly induce the expression of adhesion molecules on pre-treated ECs (Figure 3a), indicating that ILCPs need to engage the NF-κB pathway to activate ECs in vitro. Similar to what we observed in the context of ILCPs cultured with ECs in the presence of a transwell insert, the prevention of NF-κB activation in ECs led to a significant decrease of IL-6, as well as reduction in IL-8, GM-CSF, and IFN-γ secretion (Figure 2—figure supplement 1d). Next, to understand which molecular players were involved in the ILC–EC cross-talk, we screened ECs and, both ex vivo and in vitro-expanded, ILCPs for the presence on their surface of receptors and ligands, respectively, known to be involved in the NF-κB pathway activation. On one side, we observed that untreated ECs constitutively expressed the lymphotoxin-β receptor (LT-βR), as well as the tumor necrosis factor (TNF) receptors 1 and 2 (TNFR-1 and TNFR-2, respectively), whereas B-cell activating factor receptor (BAFF-R), CD40, and RANK were expressed only at low levels (Figure 3b). Following stimulation with TNF, CD30 expression became detectable and BAFF-R and RANK expression increased, while CD40 and LT-βR expression remained unchanged (Figure 3b). On the other side, when looking at extracellular NF-κB activating ligands on ex vivo ILCPs, we observed that they expressed high levels of the transmembrane form of lymphotoxin (LTα1β2), a described ligand for LT-βR (Madge et al., 2008), if compared to in vitro-expanded ILCPs (Figure 3c and d). Both BAFF and CD30L were undetectable and low levels of CD40L and RANKL were observed. In contrast, in vitro-expanded ILCPs upregulated the expression of RANKL and downregulated that of LTα1β2 (Figure 3c and d). It has been reported that pro-inflammatory cytokines, such as interleukin 12 (IL-12), can induce RANKL on human periodontal ligament cells in vitro (Issaranggun Na Ayuthaya et al., 2017). Since it is known that feeder cells can produce a wide array of cytokines, among which IL-1β and IL-12, we decided to test whether RANKL expression might be upregulated by one of these factors. Surprisingly, after 24 hr stimulation of freshly ex vivo isolated ILCPs with IL-1β (Figure 3e), but not with IL-12 (data not shown), we observed increased expression of RANKL compared to untreated ILCPs. The transmembrane form of TNF (tm-TNF) constitutes another described NF-κB activating ligand. However, the detection of the membrane-bound form of TNF could not be tested due to the lack of a specific antibody. Moreover, the discrimination between the soluble and the membrane forms of TNF at mRNA levels is not possible, since TNF is transcribed (and also translated) as a full-length membrane-bound precursor (Black et al., 1997). However, at the end of the in vitro expansion, ILCPs showed higher levels of TNF transcripts compared to ex vivo ILCPs (data not shown). Overall, these data show that in vitro-expanded ILCPs express TNF, possibly present on the ILCP surface, to in vitro interact with ECs via TNFRs and upregulate RANKL expression, possibly via feeder-cell-derived IL-1β, to engage RANK on ECs.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58838/elife-58838-fig3-v2.jpg)
 
-**Figure 3.:** (a) HUVEC cells were treated during 1 hr with 2.5 μM of a specific inhibitor of both canonical and alternative NF-κB pathways (BAY 11–7082, Adipogen) and then exposed to ILCPs at 1:1 ratio for 3 hr. ECs were harvested and analyzed for cell-surface adhesion molecule expression by flow cytometry (n = 4). The black dotted line indicates the level of average expression by untreated ECs. (b) HUVEC cells were tested for the expression of NF-κB activating receptors, either at steady-state (black line) or following 3 hr in vitro stimulation with 20 ng/mL of TNF (green line). (c and d) The respective activating ligands were analyzed on both ex vivo- and in vitro-expanded ILCPs. Graphs show representative histograms (panel c) and the summary (panel d) of the analysis performed on HDs (n = 4–11). (e) In vitro-expanded ILCPs were stimulated during 24 hr in the presence of 20 ng/mL of IL-1β or left untreated and stained for surface RANKL (n = 4). Statistical tests used: Paired t-test (panels a and e); Multiple t-tests (panel d).Figure 3—source data 1.
+**Figure 3.:** (a) HUVEC cells were treated during 1 hr with 2.5 μM of a specific inhibitor of both canonical and alternative NF-κB pathways (BAY 11–7082, Adipogen) and then exposed to ILCPs at 1:1 ratio for 3 hr. ECs were harvested and analyzed for cell-surface adhesion molecule expression by flow cytometry (n = 4). The black dotted line indicates the level of average expression by untreated ECs. (b) HUVEC cells were tested for the expression of NF-κB activating receptors, either at steady-state (black line) or following 3 hr in vitro stimulation with 20 ng/mL of TNF (green line). (c and d) The respective activating ligands were analyzed on both ex vivo- and in vitro-expanded ILCPs. Graphs show representative histograms (panel c) and the summary (panel d) of the analysis performed on HDs (n = 4–11). (e) In vitro-expanded ILCPs were stimulated during 24 hr in the presence of 20 ng/mL of IL-1β or left untreated and stained for surface RANKL (n = 4). Statistical tests used: Paired t-test (panels a and e); Multiple t-tests (panel d).
 
-## ILCPs activate ECs via the engagement of TNFR and RANK
+### ILCPs activate ECs via the engagement of TNFR and RANK
 
 To test which of the NF-κB activating molecules was responsible for the upregulation of adhesion molecules on EC surface, a series of blocking experiments using different soluble Fc fusion proteins were performed to prevent the binding of defined ligands to their receptors on ILCPs. Since we observed increased levels of RANKL on in vitro-expanded ILCPs as compared to their ex vivo counterparts (Figure 3e), and higher levels or RANK on ECs following 3 hr co-culture with ILCPs (Figure 4—figure supplement 1a), we decided to interfere with the RANK/RANKL interaction. As negative control, we performed the blocking experiments with intravenous immune globulins (IVIGs), a pool of human gamma globulins (Figure 4—figure supplement 1b). Although ILCPs were still able to activate ECs in this setting with yet an inhibition of E-Selectin triggering in ECs (Figure 4a), we observed that the levels of IL-6 and GM-CSF were dramatically reduced, if compared to the cytokine composition of ECs cultured with steady-state ILCPs (Figure 4—figure supplement 1c). Therefore, we hypothesized a major involvement of tm-TNF in the induction of adhesion molecules. Thus, we pre-incubated ILCPs in the presence of TNFR1:Fc and/or TNFR2:Fc and we observed that the EC expression of adhesion molecules was significantly reduced (Figure 4b). In all cases, inhibition with TNFR2:Fc was slightly more efficient than with TNFR1:Fc, which could be explained by the greater affinity of TNFR2 for TNF (Grell et al., 1995). Of note, no difference in the cytokine secreted levels was observed (Figure 4—figure supplement 1d), suggesting that interfering with the TNF-TNFR signaling does not impact cytokine production in both cell types. Addition of RANK:Fc to TNFR1:Fc and TNFR2:Fc further slightly reduced E-Selectin, ICAM-1 and VCAM-1 levels, although the contribution of RANK:Fc was not significant (Figure 4c). However, we could observe a decreased production of the pro-inflammatory cytokine IL-6, IL-8, TNF, and GM-CSF (Figure 4—figure supplement 1e) when blocking ligands of TNFR1, TNFR2, and RANK in ILCPs/ECs co-cultures. Taken together, our data suggest that ILCPs activate EC primarily through the engagement of TNFRs to upregulate adhesion molecules expression on EC surface. The engagement of RANK in ECs does not seem to have an additive effect in inducing adhesion molecules expression, but might act in synergy with tm-TNF to control the cytokine secretion and further support the EC activation.
 
-## ILCP-mediated EC activation favors the adhesion of freshly isolated PBMCs in vitro
+![Figure 4.](https://cdn.elifesciences.org/articles/58838/elife-58838-fig4-v2.jpg)
+
+**Figure 4.:** ILCPs were incubated overnight in the presence of 10 U/mL of rhIL-2 and an additional pre-incubation of 30 min (prior co-culture with ECs) was performed in the presence of 5 μg/mL of RANK:Fc (a), of 2 μg/mL of TNFR1:Fc, 5 μg/mL of TNFR2:Fc, and 5 μg/mL of RANK:Fc, either alone or in combination (b and c). ECs were harvested and analyzed for cell-surface adhesion molecule expression by flow cytometry (n = 3). The dotted lines indicate the level of average expression of adhesion molecules by unstimulated ECs. Statistical test used: Paired t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58838/elife-58838-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) HUVEC cells were co-cultured for 3 hr at 1:1 ratio in direct contact with in vitro-expanded ILCPs. Untreated ECs were employed as negative control (CTRL). ECs were harvested and analyzed for cell-surface RANK expression by flow cytometry. Graphs show a representative histogram (left) and the summary (right) of the induction of RANK expression on the EC surface by ILCPs isolated from three different donors. (b) ILCPs were incubated for an overnight in the presence of 10 U/mL of rhIL-2 and an additional pre-incubation of 30 min (prior co-culture with ECs) was performed in the presence of 2 μg/mL of IVIGs, or left untreated. ECs were harvested and analyzed for cell-surface adhesion molecule expression by flow cytometry (n = 3). The dotted lines indicate the level of average expression of adhesion molecules by unstimulated ECs. (c–e) The supernatant of the 3 hr co-culture experiments between ECs and ILCPs pre-incubated with Fc fusion proteins were analyzed for cytokine content (n = 3). The dotted lines indicate the average level of cytokines produced by unstimulated ECs. Paired t-tests.
+
+### ILCP-mediated EC activation favors the adhesion of freshly isolated PBMCs in vitro
 
 To address the functionality of the EC–ILCP interaction, i.e., the adhesion of freshly isolated PBMCs to ILCP-exposed EC, a static adhesion assay was performed. Briefly, following the 3 hr co-cultures, CD31+ ECs were isolated by FACS, to remove adherent ILCPs, and re-plated. After the sorting, untreated ECs (negative control) did not upregulate adhesion molecule expression on their cell surface, and ILCP-exposed ECs maintained comparable surface levels of adhesion molecule as before the FACS isolation procedure, showing that the sorting procedure did not affect the activation state of ECs in any of the conditions (Figure 5a). The day after, the assay was performed and ECs, together with adherent PBMCs, were detached and stained for flow cytometry analyses. Interestingly, ECs pre-exposed to ILCPs led to the adhesion of a significantly higher number of freshly isolated PBMCs compared to unstimulated ECs. As shown in Figure 5b and c, the ILCP modification of EC allowed a strong adhesion of T, B as well as NK cells and monocytes. To understand if the adhesion of freshly isolated PBMCs is itself dependent on NF-kB, we repeated the experiment by exposing untreated or NF-κB-inhibited ECs to TNF for 3 hr the day before performing the static adhesion assay. As shown in Figure 5d, the inhibition of NF-κB activation prior stimulation with TNF strongly reduced the numbers of adhered T, B, NK cells, and monocytes. In this setting, we could also observe that ILCs themselves could adhere to TNF-treated ECs (Figure 5d). Interestingly, a trend for a reduction in the number of adhered PBMCs to ECs was also observed when NF-κB activation was prevented in ECs 30 min before performing the static adhesion assay (Figure 5d) although not significant. Since we showed that NF-κB engagement is crucial for the ILCP-mediated adhesion molecule upregulation in ECs (Figure 3a), it was not surprising to observe the impaired adhesion of PBMCs to ECs in vitro. Overall, these data suggest that the adhesion molecule expression induced by the ILCPs is functional, i.e., it supports the adhesion of other immune cell types to ECs in vitro and relies on NF-κB activation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58838/elife-58838-fig5-v2.jpg)
 
-**Figure 5.:** HUVEC cells were co-cultured for 3 hr at 1:1 ratio in direct contact with in vitro-expanded ILCPs or left untreated (CTRL). ECs were harvested, FACS isolated to remove adhered ILCPs, and re-seeded. (a) The graphs show the level of expression of adhesion molecules by ILCP-exposed ECs after the sorting and before performing the static adhesion assay, compared to untreated ECs (gray). Graphs show representative dot plots (b) and the summary (c) of the number of adhered CD3, CD4, CD8, CD14, CD16, and CD19 expressing cells assessed by flow cytometry with the use of CountBright Absolute Counting Beads (blue gate in the dot plots). (d) The day before the assay, HUVEC cells were cultured for 3 hr in the presence of 20 ng/mL of TNF and treated during 1 hr with 2.5 μM NF-κB inhibitor BAY 11–7082 (Adipogen), either before the TNF treatment (half-full red square dots) or directly on the day of the assay (empty red square dots), before incubation with total PBMCs at 1:4 ratio for 30 min. The graphs show the summary of the number of adhered CD3, CD4, CD8, CD14,, CD56dimCD16+, CD56brightCD16low, CD19 expressing cells, and ILCs assessed by flow cytometry with the use of CountBright Absolute Counting Beads. Statistical test used: Unpaired t-test (panels c and d).Figure 5—source data 1.
+**Figure 5.:** HUVEC cells were co-cultured for 3 hr at 1:1 ratio in direct contact with in vitro-expanded ILCPs or left untreated (CTRL). ECs were harvested, FACS isolated to remove adhered ILCPs, and re-seeded. (a) The graphs show the level of expression of adhesion molecules by ILCP-exposed ECs after the sorting and before performing the static adhesion assay, compared to untreated ECs (gray). Graphs show representative dot plots (b) and the summary (c) of the number of adhered CD3, CD4, CD8, CD14, CD16, and CD19 expressing cells assessed by flow cytometry with the use of CountBright Absolute Counting Beads (blue gate in the dot plots). (d) The day before the assay, HUVEC cells were cultured for 3 hr in the presence of 20 ng/mL of TNF and treated during 1 hr with 2.5 μM NF-κB inhibitor BAY 11–7082 (Adipogen), either before the TNF treatment (half-full red square dots) or directly on the day of the assay (empty red square dots), before incubation with total PBMCs at 1:4 ratio for 30 min. The graphs show the summary of the number of adhered CD3, CD4, CD8, CD14,, CD56dimCD16+, CD56brightCD16low, CD19 expressing cells, and ILCs assessed by flow cytometry with the use of CountBright Absolute Counting Beads. Statistical test used: Unpaired t-test (panels c and d).
 
-## Tumor-derived factors impair ILCP ability to activate ECs in vitro
+### Tumor-derived factors impair ILCP ability to activate ECs in vitro
 
 The poorly functional and altered structural organization of the vascular bed has an important impact on tumor progression and affects endothelial–leukocyte interactions (Cedervall et al., 2015). Hence, we were interested in studying the impact that the tumor and/or the tumor microenvironment could exert on ILCPs and, therefore, on their ability to modulate the EC activation. First, we observed that CD3-RORγt+ ILCs are present in low-grade transitional bladder carcinoma in close proximity to CD31+ blood vessels (Figure 6a, panels 1–4) but are barely detected in high-grade bladder carcinoma (Figure 6a, panels 5–8), suggesting a protective role of RORγt-expressing ILCs, at least at early stage of disease. Interestingly, since we also observed that ILCPs are expanded in the PB of non-muscle-invasive bladder cancer (NMIBC) patients, but reduced in muscle-invasive stage of the disease (MIBC, Figure 6b), and, following in vitro expansion, ILCPs acquire RORγt expression, we hypothesized that the presence of ILCPs in NMIBC patients might underline the attempt of this cell population to support the infiltration of immune cells into the tumor site. To this aim, ILCPs were pre-exposed to human bladder cancer cell lines, originating either from non-muscle-invasive (NMIBC, early stage) or muscle-invasive (MIBC, late-stage) epithelial bladder carcinoma, thus allowing us to mimic in vitro early and late tumor stage conditions. As shown in Figure 6c, the capacity to upregulate adhesion molecule expression on ECs by ILCPs was significantly reduced after the overnight incubation with bladder carcinoma cell lines, if compared to resting ILCPs. Interestingly, the co-culture with MIBC lines showed the highest capacity to modify ILCP ability to activate the ECs (Figure 6c). Moreover, the analysis of the cytokine composition of the supernatants from 3 hr EC–ILCP co-culture revealed statistically significant reduced levels of the pro-inflammatory cytokines IL-8, GM-CSF, and IFN-γ when ECs where co-cultured with MIBC pre-exposed ILCPs (Figure 6d). Similar observations were obtained using tissue sections of colon adenocarcinoma patients and the SW1116 colon cancer cell line (Figure 6—figure supplement 1a and b). To further understand which could be the mechanisms underlying the tumor cell-mediated impairment of ILCPs, we wondered whether the tumor cells were affecting ILCPs via adenosine and/or kynurenines, two metabolites with potent immune-inhibitory effects in the TME (Vigano et al., 2019; Labadie et al., 2019). As shown in Figure 6e, TCC-Sup did not express IDO-1, suggesting that the tumor-mediated effects on ILCPs might not depend on kynurenines. However, following the overnight incubation with ILCPs, TCC-Sup strongly upregulated CD39 and further increased the CD73 expression (Figure 6e). Interestingly, steady-state ILCPs also expressed CD39, but very low levels of CD73 (Figure 6—figure supplement 1c), suggesting that, in the presence of CD73+ cells, ILCPs might process ATP and support adenosine production. Interestingly, as shown in Figure 6—figure supplement 1d, in vitro-expanded ILCPs upregulated the expression of A2A, A2B, and A3 receptors. Of note, pre-exposure of ILCPs to 2-Chloroadenosine (a stabilized form of adenosine) reduced their EC-activating capacity (Figure 6f). Taken together, these results suggest that tumor cells might impair or deviate, at least in part via adenosine production, the capacity of ILCs to modulate vascular activation through the upregulation of cell surface adhesion molecules, and affect the production of pro-inflammatory cytokines upon EC–ILCP encounter. Therefore, this could represent a mechanism through which tumors can prevent and block immune cell infiltration into the tumor site.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/58838/elife-58838-fig6-v2.jpg)
+
+**Figure 6.:** (a, Panels 1–4) Low-grade transitional bladder cell carcinoma. (a, Panel 1) In the subepithelial connective, blood vessels (green arrow) and inflammatory lymphocytic infiltrate are observed (white arrow) (hematoxylin-eosin staining, 20× magnification). (a, Panel 2) Immunohistochemical CD31 signal showing intense positive endothelial cells (ECs) of blood vessels (20× magnification). (Panel 3) Immunohistochemical detection of CD3+ cells at level of inflammatory lymphocytic infiltrate (brown signal) (20× magnification). (a, Panel 4) Combined staining with antibody to RORγt and CD3. Black arrows indicate RORγt+/CD3+ cells; red arrows indicate RORγt+/CD3- cells (red signal) (20× magnification). On the upper left a magnified insert of the main image. Data are representative of five independent experiments. (a, Panels 5–8) High-grade bladder cell carcinoma. (a, Panel 5) In the subepithelial connective, blood vessels (green arrow) and inflammatory lymphocytic infiltrate are observed (white arrow) (hematoxylin-eosin staining, 20× magnification). (a, Panel 6) Immunohistochemical CD31 signal showing intense positive ECs of blood vessels (20× magnification). (a, Panel 7) Immunohistochemical detection of CD3+ cells at level of inflammatory lymphocytic infiltrate (brown signal) (20× magnification). (a, Panel 8) Immunohistochemical detection of RORγt+ cells at level of inflammatory lymphocytic infiltrate (red signal, red arrow) (20× magnification). Data are representative of three independent experiments. (b) Flow cytometry characterization of ILCP distribution in the PB of NMIBC and MIBC patients, compared to HDs, expressed as percentage of total ILCs (n = 20). (c) Graphs show representative histograms (panel c, top) and the summary (panel c, bottom) of the induction of adhesion molecules by ILCPs upon different culture conditions, represented as percentage of ECs expressing the indicated adhesion molecules. The dotted lines represent the level of expression of the adhesion molecules in untreated ECs (n = 4). (d) The supernatants of the 3 hr co-culture experiments between ECs and ILCPs, pre-incubated or not for an overnight with bladder carcinoma cell lines, were analyzed for cytokine content (n = 4). The dotted lines indicate the average level of cytokines produced by unstimulated ECs. (e) The expression of CD39, CD73, and IDO-1 in MIBC cells (TCC-Sup) after overnight co-culture with in vitro-expanded ILCPs was assessed by flow cytometry. Untreated TCC-Sup cells (purple bar) were used as controls (CTRL) (n = 3). (f) Graphs show representative histograms (panel f, left) and the summary (panel f, right) of the induction of adhesion molecules by ILCPs pre-treated with 50 μM of 2-Chloroadenosine (a stabilized form of adenosine), represented as percentage of ECs expressing the indicated adhesion molecules. The dotted lines represent the level of expression of the adhesion molecules in untreated ECs (n = 3). Statistical tests used: Ordinary one-way ANOVA, Tukey’s multiple comparison tests (panels b, c, and d); Multiple t-tests (panel f).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/58838/elife-58838-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a, Panels 1–4) Low-grade invasive colon adenocarcinoma. (a, Panel 1) In the stroma, blood vessels (green arrow) and lymphocytic inflammatory infiltrate (white arrow) are observed (hematoxylin-eosin staining, 20× magnification). (a, Panel 2) CD31 immunohistochemistry shows an intense signal in the endothelial cells (ECs) of blood vessels (20× magnification). (a, Panel 3) Immunohistochemical detection of CD3+ cells at level of inflammatory lymphocytic infiltrate (brown signal) (20× magnification). (a, Panel 4) Combined staining with antibody to RORγt and CD3. Black arrows indicate RORγt+/CD3+ cells; red arrows indicate RORγt+/CD3- cells (20× magnification). On the upper right a magnified insert of the main image. Data are representative of five independent experiments. (b) Graphs show representative histograms (top) and the summary (bottom) of the induction of adhesion molecules by steady-state ILCPs (red) or by ILCPs pre-exposed to SW1116 colon cancer cells (marine blue), represented as percentage of ECs expressing the indicated adhesion molecules. The dotted lines represent the level of expression of the adhesion molecules in untreated ECs (n = 3). (c) The expression of CD39 and CD73 in in vitro-expanded ILCPs after overnight co-culture with TCC-Sup cells was assessed by flow cytometry. Untreated ILCPs (red bar) were used as controls (CTRL) (n = 3). (d) The expression of adenosine receptors A2A, A2B, and A3 was analyzed by qPCR in ex vivo- and in in vitro-expanded ILCPs (n = 3).
 
 ## Discussion
 
@@ -104,34 +140,744 @@ In conclusion, our data show that ILCPs, upon proper stimulation, might represen
 
 ## Materials and methods
 
-## Cell isolation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HUVEC (normal, adult, single donor)</td>
+      <td>Lonza</td>
+      <td>Cat# LZ-CC-2517</td>
+      <td>Primary cell line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HDBEC (normal, adult, single donor)</td>
+      <td>Promocell.</td>
+      <td>Cat# C-12225</td>
+      <td>Primary cell line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>BU68.08</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary cell line generated in L. Derré Lab from TaG2 stage cancer patient</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>TCC-Sup</td>
+      <td></td>
+      <td>RRID:CVCL_1738</td>
+      <td>Primary cell line Gift of G.N- Thalmann, Inselspital, Bern, Switzerland</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SW1116</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0544</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Peripheral blood (adult, healthy donors)</td>
+      <td>Interregional Blood Transfusion SRC (Route de la Corniche 2, 1066 Epalinges)</td>
+      <td></td>
+      <td>9 mL Li Heparin tubes</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488 anti-human CXCR3 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_10962442</td>
+      <td>FACS/FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD3 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2562046</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD4 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2562052</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD8 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_1877178</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD14 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2571929</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD15 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID: AB_314196</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD16 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_314206</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD19 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2750099</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD20 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_314252</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD31 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_314330</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD33 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_314344</td>
+      <td>FACS/FC (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD34 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_1732005</td>
+      <td>FACS/FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD94 (mouse monoclonal)</td>
+      <td>Miltenyi</td>
+      <td>RRID:AB_2659623</td>
+      <td>FACS/FC (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human CD203c (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_11218991</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-human FεcRI (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_1227653</td>
+      <td>FACS/FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human BAFF (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_830752</td>
+      <td>FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human CD4 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2562053</td>
+      <td>FACS/FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human CD62E (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_536008</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human CRTH2 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_10900060</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human IDO-1 (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_2572712</td>
+      <td>FC (1:50) Intracellular</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human RANK (mouse monoclonal)</td>
+      <td>R and D</td>
+      <td>RRID:AB_10643566</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human RANKL (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2256265</td>
+      <td>FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human RORγt (mouse monoclonal)</td>
+      <td>BD</td>
+      <td>RRID:AB_2686896</td>
+      <td>FC (1:25) Intracellular</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-CF594 anti-human CD14 (mouse monoclonal)</td>
+      <td>BD</td>
+      <td>RRID:AB_11153663</td>
+      <td>FC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-CF594 anti-human T-bet (mouse monoclonal)</td>
+      <td>BD</td>
+      <td>RRID:AB_2737621</td>
+      <td>FC (1:25) Intracellular</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Dazzle anti-human CD39 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2564318</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP-Cy5.5 anti-human CCR4 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2562391</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP-Cy5.5 anti-human CD28</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2073718</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP-Cy5.5 anti-human NKp44 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2616752</td>
+      <td>FC (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy5 anti-human CD106 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2214227</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7 anti- human CCR6 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_10916518</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7 anti-human CD4 (mouse monoclonal)</td>
+      <td>BC</td>
+      <td>Cat # 737660 Clone 7975048</td>
+      <td>FC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7 anti-human CD62E (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2800891</td>
+      <td>FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7 anti-human NKp46</td>
+      <td>BD</td>
+      <td>RRID:AB_10894195</td>
+      <td>FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human CD3 (mouse monoclonal)</td>
+      <td>BC</td>
+      <td>RRID:AB_130788</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human CD30L (mouse monoclonal)</td>
+      <td>R and D</td>
+      <td>RRID:AB_416825</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human c-Kit (mouse monoclonal)</td>
+      <td>BD</td>
+      <td>RRID:AB_398461</td>
+      <td>FACS/FC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human GATA3 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2562725</td>
+      <td>FC (1:50) Intracellular</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 700 anti-human CD4 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_493743</td>
+      <td>FACS/FC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 700 anti-human CD16 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2278418</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 700 anti-human CD45RA (mouse monoclonal)</td>
+      <td>BD</td>
+      <td>RRID:AB_1727496</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-Cy7 anti-human CXCR5 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2562593</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-H7 anti-human CD19 (mouse monoclonal)</td>
+      <td>BD</td>
+      <td>RRID:AB_1645728</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC/Fire750 anti-human CD45RO (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2616717</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eFluor450 anti-human CD73 (mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>RRID:AB_11041811</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pacific Blue anti-human CD54 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_10900234</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 anti-human CXCR5 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2562302</td>
+      <td>FACS/ FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 anti-human CD127 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_10960140</td>
+      <td>FACS/FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 anti-human NRP1 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2562361</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV650 anti-human CCR6 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2562235</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV650 anti-human CD62L (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2561461</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV650 anti-human CD69 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2563158</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV711 anti-human CD40L (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2563845</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Purified anti-LTα/β</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2050404</td>
+      <td>FC (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 647 goat anti-mouse IgG (H+L) secondary antibody</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_2535804</td>
+      <td>FC (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD31 (mouse monoclonal)</td>
+      <td>Cell Marque</td>
+      <td>RRID:AB_629040</td>
+      <td>IH (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD3 (mouse monoclonal)</td>
+      <td>Ventana</td>
+      <td>Clone 2GV6</td>
+      <td>IH (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human RORγt (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>RRID:AB_11205416</td>
+      <td>IH (1:20)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rhIL-1β</td>
+      <td>PeproTech</td>
+      <td>Cat# 200-01B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rhIL-2</td>
+      <td>PeproTech</td>
+      <td>Cat# 200–02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rhIL-12</td>
+      <td>PeproTech</td>
+      <td>Cat# 200–12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rhIL-21</td>
+      <td>PeproTech</td>
+      <td>Cat# 200–21</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rhTNF</td>
+      <td>PeproTech</td>
+      <td>Cat# 300-01A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>hrTNFR1:Fc</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Provided by PS</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>hrTNFR2:Fc</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Provided by PS</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>hrRANK:Fc</td>
+      <td>Adipogen</td>
+      <td>Cat# AG-40B-0018-C050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BAY 11–7082</td>
+      <td>Adipogen</td>
+      <td>Cat# AG-CR1-0013-M010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Chloroadenosine</td>
+      <td>Sigma</td>
+      <td>Cat# C5134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hA2A_F</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>CTCCGGTACAATGGCTTGGT</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hA2A_R</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>TGGTTCTTGCCCTCCTTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hA2B_F</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>ATGCCAACAGCTTGAATGGAT</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hA2B_R</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>GAGGTCACCTTCCTGGCAAC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hA3_F</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>TTGACCAAAAGGAGGAGAAGT</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hA3_R</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>AGTCACATCTGTTCAGTAGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hIL-6_F</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>GGATTCAATGAGGAGACTTGC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hIL-6_R</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>GTTGGGTCAGGGGTGGTTAT</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hIL-8_F</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>AGCTCTGTGTGAAGGTGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hIL-8_R</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>TGGGGTGGAAAGGTTTGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hGM-CSF_F</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>GCCTCAGCTACGTTCAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hGM-CSF_R</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>CATAGGAGTTAGGTCCCCACA</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hIFN-γ_F</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>TGCCTTCCCTGTTTTAGCTGC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hIFN-γ_R</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>TCGGTAACTGACTTGAATGTC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hTNF_F</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>GAGGCCAAGCCCTGGTATG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>hTNF_R</td>
+      <td>NCBI Nucleotide</td>
+      <td>PCR primers</td>
+      <td>CGGGCCGATTGATCTCAGC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LIVE/DEAD Fixable Aqua Dead Cell Stain Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# L34957</td>
+      <td>FC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Foxp3 / Transcription Factor Staining Buffer Set</td>
+      <td>eBioscience</td>
+      <td>Cat# 00-5523-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA SYBR FAST qPCR KITs</td>
+      <td>KAPA Biosystems</td>
+      <td>Cat# 4385612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Eco Real-Time PCR System Software</td>
+      <td>Illumina</td>
+      <td>Cat# EC-101–1001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EcoStudy Software</td>
+      <td>Illumina</td>
+      <td>EcoStudy 5.0.4883</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>TreeStar</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CountBright Absolute Counting Beads</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# C36950</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EGM Endothelial Growth Medium BulletKit</td>
+      <td>Lonza</td>
+      <td>Cat# LZ-CC-3124</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell isolation
 
 Human circulating ILCs and naïve CD4+ T cells were isolated from PB mononuclear cells (PBMCs) of healthy donors by density-gradient centrifugation on 1.077 g/mL Ficoll-Hypaque (Lymphoprep) and ex vivo sorting. Individual human ILC subsets were isolated by fluorescence activated cell sorting (FACS) using the following antibodies: FITC anti-CD3 (Biolegend), -CD4 (Biolegend), -CD8 (Biolegend), -CD14 (Biolegend), -CD15 (Biolegend), -CD16 (Biolegend), -CD19 (Biolegend), -CD20 (Biolegend), -CD33 (Biolegend), -CD34 (Biolegend), -CD94 (Miltenyi), -CD203c (Biolegend) and -FcεRI (Biolegend) (lineage markers); PE anti-CRTH2 (Biolegend); APC anti-c-Kit (BD); and BV421 anti-CD127 (Biolegend). ILC subsets were sorted within the Lin- CD127+ fraction, according to the expression of c-Kit and CRTH2: ILC1s as c-Kit−CRTH2−cells; ILC2s as c-Kit+/− CRTH2+ cells and ILCPs as c-Kit+ CRTH2− cells. Naïve total CD4+ T cells were first isolated by FACS by using FITC anti-CD3 (Biolegend), PE anti-CD4 (Biolegend), and Alexa Fluor 700 anti-CD45RA antibodies (BD). Following in vitro expansion, individual CD4+ Th cell subsets were isolated by FACS using Alexa 488 anti-CXCR3 (Biolegend), PerCP-Cy5.5 anti-CCR4 (Biolegend), PE anti-CRTH2 (Biolegend), PE-Cy7 anti-CCR6 (Biolegend), APC anti-CD3 (BC), Alexa Fluor 700 anti-CD4 (Biolegend), APC/Fire750 anti-CD45RO (Biolegend), and BV421 anti-CXCR5 (Biolegend) antibodies. Gating on CD3+CD4+CD45RO+CXCR5− cells, the Th subsets were sorted as follows: Th1 as CRTH2−CXCR3+CCR6− cells; Th* as CRTH2−CXCR3+CCR6+ cells; Th2 as CRTH2+CXCR3−CCR6−cells; Th17 as CRTH2−CXCR3−CCR4+CCR6+ cells. Individual ILC subsets, naïve CD4+ T cells, and individual CD4+ Th cell subsets were all isolated by FACS on a FACS Aria II or a FACS Aria III (BD).
 
-## Cell culture and blocking experiments
+### Cell culture and blocking experiments
 
 Highly purified ILC subsets (≥90%) were expanded in vitro for at least 2 weeks in the presence of 100 U/mL of rh-IL-2 (PeproTech), 1 μg/mL of phytohaemagglutinin (PHA – PeproTech) and irradiated allogenic feeder cells obtained from three different donors (1:10 ILC/feeder cell ratio) in RPMI-1640 (Gibco) supplemented with 8% human serum (HS), 1% penicillin/streptomycin (10,000 U/mL, Gibco), 1% L-glutamine (Gibco), 1% nonessential amino acids (Gibco), 1% Na pyruvate (Gibco), 1% Kanamycin 100× (Gibco), and 0.1% 2β-mercaptoethanol 500 mM (Sigma). After expansion, content of ILC subset in the cultures was assessed by flow cytometry and, if necessary, re-sorted to obtain pure (≥90%) ILC1s, ILC2s, and ILCPs, before being employed in co-culture experiments. Similarly, CD45RA+ naïve CD4+ T cells were first ex vivo isolated and in vitro-expanded for 2 weeks in the presence of 100 U/mL of rh-IL-2, 1 μg/mL of PHA, and irradiated allogenic feeder cells obtained from three different donors (1:10 CD4+ T cell/feeder cell ratio) in RPMI-8% HS. Subsequently, individual CD4+ Th cell subsets (i.e., Th1, Th2, Th17, and Th*) were isolated by FACS and cultured for additional 2 weeks in RPMI-8% HS in the presence of 100 U/mL of rh-IL-2 for Th1 and Th2, 20 U/mL of rh-IL-2 for Th17, 10 U/mL of rh-IL-2 with 50 ng/mL of rh-IL-12 and rh-IL-21 (Peprotech) for Th*. Primary human umbilical cord vein ECs (HUVECs – Lonza) and primary HDBECs (Promocell) were cultured in supplemented EC growth medium (EGM Ready To Use, Lonza) and used between passages 4 and 6. Non-muscle invasive bladder carcinoma cells (BU68.08) (EC number 2019–00564), muscle-invasive bladder carcinoma cells (TCC-Sup), and the colon adenocarcinoma cells (SW1116) were maintained in RPMI-1640 (Gibco) supplemented with 10% fetal calf serum (FCS), 1% penicillin/streptomycin (10,000 U/mL, Gibco), 1,15% AAG (Arg,Asp,Glu), 1% Hepes buffer 1M (Gibco), and 0.2 g/L ciproxin (Bayer). The used primary cell lines were checked for authenticity via STR profiling and periodically tested for mycoplasma contamination. Prior exposure to ILCPs, EC monolayers were incubated during 1 hr in the presence of 2.5 μM of BAY 11–7082 (Adipogen) in EC growth medium to specifically prevent NF-κB activation in ECs. EC monolayers where then washed once with PBS, before incubation with ILCPs at 1:1 ratio. Similarly, blocking experiments with the use of soluble Fc fusion proteins were performed: when indicated, ILCPs were pre-incubated for 30 min with 2 μg/mL of TNFR1:Fc, 5 μg/mL of TNFR2:Fc, 5 μg/mL of RANK:Fc (Adipogen), either alone or in combination. Then, ILCPs were washed once with PBS, then added to EC monolayers. Finally, when indicated, in vitro-expanded ILCPs were incubated overnight with 50 μM of 2-chloroadenosine (CADO, Sigma) in RPMI-8% HS with 10 U/mL of IL-2 prior co-culture with ECs.
 
-## Co-culture experiments
+### Co-culture experiments
 
 Following expansion, individual pure (≥90%) ILC and Th subsets were rested overnight in RPMI-8% HS medium supplemented with 10 U/mL of rh-IL-2. Then, confluent EC monolayers were either co-cultured for 3 hr with individual ILC and Th subsets at 1:1 ratio, treated with 20 ng/mL of rh-TNF (Peprotech) or left untreated as positive and negative controls, respectively. Co-cultures of ECs with ILCPs were performed both in the presence or absence of 0.4 μm pore polycarbonate filter in 24-well transwell chambers (Corning). ILCPs were also incubated overnight with epithelial bladder carcinoma cell lines in RPMI 8% HS with 10 U/mL of IL-2 at 1:1 ratio, before exposure to EC monolayers. The day of the experiment, ILCs were collected, washed with PBS, and re-suspended in the respective EC growth medium (Lonza). At least three independent experiments were performed, using individual ILC and Th subsets isolated from a different donor. At the end of the experiment, supernatants were collected and stored at −20°C, and ECs were washed twice with PBS and detached with Accutase (Gibco) for 5 min at 37°C. Cell suspensions were then washed with PBS and stained for flow cytometry analyses.
 
-## Phenotypic characterization
+### Phenotypic characterization
 
 The phenotypic characterization of both ex vivo- and in vitro-expanded ILCPs from HDs, as well as the quantification of ex vivo ILCPs in the PB of bladder cancer patients, was performed by using the same antibodies as the ones used for isolation by FACS together with the following antibodies: PE anti-BAFF (Biolegend), -RANKL (Biolegend) and –RORγt (BD); PE-CF594 anti-T-bet (BD); PE-Dazzle anti-CD39 (Biolegend); PerCP-Cy5.5 anti-CD28 (Biolegend) and anti-NKp44 (Biolegend); PE-Cy7 anti-NKp46 (BD); APC anti-CD30L (R and D) and anti-GATA3 (Biolegend); Alexa Fluor 700 anti-CD45RA (Biolegend); Biotin anti-LTα1β2 (Abcam); APC/Fire750 anti-CD45RO (Biolegend) and APC-Cy7 anti-CXCR5 (Biolegend); eFluor450 anti-CD73 (eBioscience); BV421 anti-NRP1 (Biolegend); BV650 anti-CD62L (Biolegend), -CD69 (Biolegend) and anti-CCR6 (Biolegend); BV711 anti-CD40L (Biolegend). The activation state of ECs was assessed by flow cytometry using FITC anti-CD31 (Biolegend), PE anti-RANK (R and D), PE-Cy7 anti-CD62E (or E-Selectin – Biolegend), Pacific Blue anti-CD54 (or ICAM-1 – Biolegend) and PE-Cy5 anti-CD106 (or VCAM-1 – Biolegend). For the static adhesion assay, the assessment of PBMCs adhesion to ECs and the EC activation state was analyzed using the following panel of antibodies: APC anti-CD3 (BC), PE-Cy7 anti-CD4 (BC), PE-CF594 anti-CD14 (BD), Alexa Fluor 700 anti-CD16 (Biolegend), APC-H7 anti CD19 (BD), FITC anti-CD31 (Biolegend), Pacific Blue anti-CD54 (Biolegend), PE anti-CD62E (Biolegend), and PE-Cy5 anti-CD106 (Biolegend). For the characterization of tumor cells, the following antibodies were used: PE-Dazzle anti-CD39 (Biolegend); eFluor450 anti-CD73 (eBioscience), and PE anti-IDO-1 (Invitrogen). All analyses included size exclusion (forward scatter [FSC] area versus side scatter [SSC] area), doublets exclusion (FSC height/ FSC area), and dead cell exclusion (LIVE/DEAD Fixable Aqua Dead Cell Stain Kit, Thermo Fisher). A minimum of 10,000 events were acquired on either a Gallios Cytometer (Beckman Coulter) or SORPLSR-II Cytometer (BD) and analyzed with FlowJo software (TreeStar).
 
-## Static adhesion assay
+### Static adhesion assay
 
 ECs were plated at 80% confluency in a 24-well plate in complete EGM. Once adherent, the media was removed, ECs were washed with PBS, and 500 μL of complete EGM, containing or not ILCPs at 1:1 ratio, were added to the wells during 3 hr. As positive control, ECs were incubated during 3 hr with 20 ng/mL of TNF. After the co-culture, ECs were detached and stained with FITC anti-CD31 antibody and FACS-sorted to remove adherent ILCPs. Recovered ECs were seeded in a 48-well plate and let to adhere overnight in complete EGM. The morning after, the static adhesion assay was performed (adapted from Safuan et al., 2012). The adhesion of freshly isolated PBMCs was assessed by adding 4:1 cells (PBMC:EC) /well for 30 min at 37°C. Non-adherent cells were washed away from the EC monolayer by performing 2× washing steps with PBS. ECs, together with adherent PBMCs, were detached with Accutase (Gibco), and stained for flow cytometry analyses. The number of CD3, CD4, CD8, CD14, CD56dimCD16+, CD56brightCD16low, and CD19 expressing cells, as well as Lin-CD127+ total ILCs were quantified by flow cytometry by adding 10 μL of CountBright Absolute Counting Beads (Thermo Fisher) to the cell suspensions. 2000 beads/sample were acquired and cell counts normalized.
 
-## RNA purification and qPCR
+### RNA purification and qPCR
 
 Total RNA was isolated from highly pure ex vivo- and in vitro-expanded ILCPs, from primary ECs (HUVECs) and from sorted human ILC and CD4 Th cell subsets using the TRIZOL reagent according to the manufacturer’s instructions (Invitrogen, Carlsbad, CA, USA). Final preparation of RNA was considered protein-free if the ratio of spectrophotometer (NanoDrop, ThermoFischer, Carls- bad, CA, USA) readings at 260/280 nm was ≥1.7. Isolated mRNA was reverse-transcribed using the iScript cDNA Synthesis Kit (Bio-Rad Laboratories, Watford, UK) according to the manufacturer’s protocol. The qPCR was carried out in the ECO Real-time PCR System (Illumina) with specific primers (see Key Resources Table) using KAPA SYBR FAST qPCR Kits (KAPA Biosystems, Inc, MA). Samples were amplified simultaneously in triplicate in one-assay run with a nontemplate control blank for each primer pair to control for contamination or for primer dimerization, and the Ct value for each experimental group was determined. The housekeeping gene (ribosomal protein S16) was used as an internal control to normalize the Ct values, using the 2−ΔCt formula.
 
-## Immunohistochemical staining
+### Immunohistochemical staining
 
 Immunohistochemical staining was performed on 2 µm paraffin sections with an automated IHC staining system (Ventana BenchMark ULTRA, Ventana Medical Systems, Italy). Sequential double IHC was performed on Ventana BenchMark ULTRA, using a ultraView Universal DAB detection Kit as the first stain and ultraView Universal Alkaline phosphatase Red detection kit as the second stain. Heat-induced epitope retrieval pre-treatment was performed using CC1 buffer (standard CC1, Roche Ventana) by boiling for 36 min for both CD31 and CD3 and for 64 min for RORγt. Afterwards, slides were incubated with primary antibodies: CD31 antibody (clone JC70, Cell Marque, dilution 1:20) for 16 min at 37°C or CD3 (clone 2GV6, Ventana, dilution 1:20) for 44 min at 37°C and RORγt (clone 6F3.1, Millipore, dilution 1:20) for 36 min at 37°C. CD31 and CD3 were visualized with DAB chromogen, and RORγt was visualized with Fast Red chromogen.
 
-## Statistical analyses
+### Statistical analyses
 
 GraphPad Prism 7 software was used to perform the statistical analyses. Paired or unpaired t-tests were used when comparing two groups. ANOVAs or the non-parametric Kruskal–Wallis test were used for comparison of multiple groups. Data in graphs represent the mean ± SEM, with a p-value <0.05 (two-tailed) being significant and labeled with *. p-values <0.01, <0.001, or <0.0001 are indicated as **, ***, and ****, respectively. Without mention, differences are not statistically significant.

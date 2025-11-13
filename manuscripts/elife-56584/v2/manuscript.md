@@ -39,43 +39,63 @@ In this study, we found that Miga interact with Vap33 to mediate ERMCSs. Miga is
 
 ## Results
 
-## Miga overexpression led to increased ERMCS and severe retinal degeneration
+### Miga overexpression led to increased ERMCS and severe retinal degeneration
 
 Our previous studies indicated that a mitochondrial outer membrane protein Miga is required for neuronal homeostasis (Zhang et al., 2016). Miga forms a complex with MitoPLD, which promotes mitochondrial fusion through regulating mitochondrial membrane lipid composition. Interestingly, we found that Miga overexpression led to severe retinal degeneration in fly eyes. We used GMR-Gal4, a Gal4 driver expressing in the developing eyes, to drive UAS-Miga expression and examined the adult fly eyes at days 1 and 30. The adult eyes with Miga overexpression looked grossly normal from outside. However, when we examine the retina with the transmission electron microscopy (TEM) analysis (Figure 1A–D), we found that both the rhabdomere numbers and sizes were greatly reduced in the Miga overexpressing fly eyes, and the reductions were progressively enhanced with aging (Figure 1I–L).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig1-v2.jpg)
 
-**Figure 1.:** TEM analysis was performed for the retina thin sections of young (1 Day) and old (30 Day) flies with indicated genotypes. (A–B’) The ommatidia of the control (CTL) flies showed seven photoreceptor cells with intact rhabdomeres (highlighted with blue pseudo-color) at both the young (A, A’) and old (B, B’) stages. (C–D’) GMR-Gal4 driven Miga overexpression resulted in reduction of rhabdomere number and size in the 1-day-old flies (C, C’) and the loss of photoreceptor cells in 30-day-old flies (D, D’). Large amount of circular membrane structures accumulated in the photoreceptor cells. ER tubules (green) attached to the mitochondria (red) were increased in the photoreceptor cells (C’). (E–F) GMR-Gal4-driven Marf overexpression did not change the number and size of rhabdomeres in the 1-day-old flies (E, E’), but slightly reduced the number and size of rhabdomeres in the 30-day-old animals (F, F’). (G–H’) GMR-Gal4-driven MitoPLD overexpression did not affect the number and size of rhabdomeres in both 1-day and 30-day-old animals. (A’–H’) are enlarged views of the photoreceptor cells highlighted with yellow pseudo-color in (A–H). The ER tubules was marked with green pseudo-color and the mitochondria was marked by the red pseudo-color. (I) Quantification of the rhabdomere numbers per ommatidia in the 1-day-old flies with indicated genotypes. n = 12 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (J) Quantification of the rhabdomere numbers per ommatidia in the 30-day-old flies with indicated genotypes. n = 12 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (K) Quantification of the rhabdomere size in the 1-day-old flies with indicated genotypes. n = 27 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (L) Quantification of the rhabdomere size in in the 30-day-old flies with indicated genotypes. n = 22 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test.Figure 1—source data 1.Figure 1I.Figure 1—source data 2.Figure 1J.Figure 1—source data 3.Figure 1K.Figure 1—source data 4.Figure 1L.
+**Figure 1.:** TEM analysis was performed for the retina thin sections of young (1 Day) and old (30 Day) flies with indicated genotypes. (A–B’) The ommatidia of the control (CTL) flies showed seven photoreceptor cells with intact rhabdomeres (highlighted with blue pseudo-color) at both the young (A, A’) and old (B, B’) stages. (C–D’) GMR-Gal4 driven Miga overexpression resulted in reduction of rhabdomere number and size in the 1-day-old flies (C, C’) and the loss of photoreceptor cells in 30-day-old flies (D, D’). Large amount of circular membrane structures accumulated in the photoreceptor cells. ER tubules (green) attached to the mitochondria (red) were increased in the photoreceptor cells (C’). (E–F) GMR-Gal4-driven Marf overexpression did not change the number and size of rhabdomeres in the 1-day-old flies (E, E’), but slightly reduced the number and size of rhabdomeres in the 30-day-old animals (F, F’). (G–H’) GMR-Gal4-driven MitoPLD overexpression did not affect the number and size of rhabdomeres in both 1-day and 30-day-old animals. (A’–H’) are enlarged views of the photoreceptor cells highlighted with yellow pseudo-color in (A–H). The ER tubules was marked with green pseudo-color and the mitochondria was marked by the red pseudo-color. (I) Quantification of the rhabdomere numbers per ommatidia in the 1-day-old flies with indicated genotypes. n = 12 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (J) Quantification of the rhabdomere numbers per ommatidia in the 30-day-old flies with indicated genotypes. n = 12 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (K) Quantification of the rhabdomere size in the 1-day-old flies with indicated genotypes. n = 27 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (L) Quantification of the rhabdomere size in in the 30-day-old flies with indicated genotypes. n = 22 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test.
 
 We wondered whether the retinal degeneration of the Miga overexpressing eyes was due to the increased mitochondrial fusion. Therefore, we overexpressed Marf, the Drosophila mitofusin (Sandoval et al., 2014), and MitoPLD in a same manner as we overexpressed Miga (Figure 1E–H). Surprisingly, neither Marf nor MitoPLD overexpression reduced the rhabdomere numbers or sizes in 1-day-old flies. Overexpression of Marf, but not MitoPLD, reduced the rhabdomere numbers in 30 days old flies, but the degeneration phenotype was much milder than that in Miga overexpressing eyes (Figure 1I–L).
 
 We carefully examined the retina in 1-day-old flies and saw many circular shaped membrane structures inside the photoreceptor cells. Some of the circular, membraned structures were found to be donut-shaped mitochondria with closely attached ER tubules (Figure 1C’). There were also regular shaped mitochondria with close contacts with ER (Figure 1C’), which were seldom seen in wild-type control eyes (Figure 1A′). The proximity between ER and mitochondria at the contact sites were close to 10 nm and the ribosomes were excluded (Figure 1C’). Although several studies suggested that MFN2, the mammalian Marf homolog, mediated ERMCSs (Phillips and Voeltz, 2016; de Brito and Scorrano, 2008), we did not observe any increase in ERMCS when Marf was overexpressed in the fly eyes (Figure 1E′, 1F′). MitoPLD overexpression did not affect ERMCSs either (Figure 1G′, 1H′). These data suggested that Miga might have a function to establish ERMCSs and extra ERMCSs led to neurodegeneration.
 
-## Miga forms complex with Vap33 and mediates ERMCSs
+### Miga forms complex with Vap33 and mediates ERMCSs
 
 To understand Miga function, we performed tandem immunoprecipitation (IP) in the cultured S2 cells with FLAG-HA tandem tagged overexpressed Miga and examined its binding partner with mass spectrometry (Figure 2—source data 4). The ER protein Vap33 was one of the binding partners of Miga. The mammalian Vap33 orthologs are VAPA and VAPB. Both proteins are ER proteins mediating contacts between ER and other organelles. Point mutation in VAPB has been identified in amyotrophic lateral sclerosis (ALS) patients (Nishimura et al., 2004; Kabashi et al., 2013). Recent study in mammalian cells found that MIGA2 form a complex with VAP proteins (Freyre et al., 2019). We confirmed the interaction between Vap33 and Miga by IP. Miga and Vap33 could pull down each other in both directions. Interestingly, Vap33P58S, the ALS disease mimicking Vap33 mutation, had lower affinity to Miga than its wild type (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig2-v2.jpg)
+
+**Figure 2.:** (A) Miga-V5 and Vap33-Flag could pull down each other in both directions in the IP assay when both were overexpressed in S2 cells. The affinity between Miga-V5 and Vap33P58S-Flag was reduced compared with that between Miga-V5 and wildtype Vap33-Flag. Miga-V5 showed two bands in most of the blots. The lower bands have a molecular weight close to 50 KD (indicated with green arrows), which were often merged with the IgG heavy chain (indicated with red *) in the blots after IP experiments. (B) A scheme to show the typical FFAT motif, the FFAT-like motifs in human MIGA2 and Drosophila Miga protein, and the amino acid changed in MigaFM. (C) MigaFM-V5 and Vap33-Flag failed to pull down each other in the IP assay. MigaFM-V5 showed two bands in most of the blots. The lower bands have a molecular weight close to 50 KD (indicated with green arrows), which were often merged with the IgG heavy chain (indicated with red *) in the blots after IP experiments. (D) Genomic rescue fragment of Miga with HA tags (Miga gRes-HA, mimics the endogenous Miga expression level ) and Vap33-Flag were expressed in S2 cells and the IP assays were perfromed by IP with anti-HA or IP with anti-Flag antibodies. Miga and Vap33 could pull down each other in this condition. (E–I) HA-tagged Vap33 (green), RFP-tagged Miga or MigaFM (red) were overexpressed in fat body tissues with indicated combinations. When Vap33 and Miga were co-expressed, they colocalized with each other (G) and the patterns of both proteins were different from the patterns when they were expressed individually (E, F). (H, I) MigaFM over-expression failed to recruit Vap33. (J–P) TEM of the fat body tissues with indicated genotypes. Miga overexpression increased ERMCSs (L). Co-expression of Miga and Vap33 further increased ERMCSs (M). Vap33 RNAi did not affect ERMCSs (N). Miga overexpression could not induce ERMCS increase when Vap33 were knock down by RNAi (O). MigaFM overexpression did not affect ERMCSs (P). The red arrows indicate the ERMCSs. (Q) Quantification of the proportion of mitochondria with ERMCSs. n = 6 images for each genotype. Data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (R) Quantification of ratio between the length of ERMCSs and the mitochondrial perimeter. n = 16 for each genotype. Data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (S) Quantification of the distance between ER and mitochondria at ERMCSs. n = 50 for each genotype. Data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The quantification of mitochondrial perimeter in the early third instar larvae fat body tissues with indicated genotypes. n = 60 for each genotype. Data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. TEM images were collected for the early third instar larvae fat body tissues thin sections with indicated genotypes. The perimeter of the mitochondria was measured by Image J. Wildtype Miga overexpression but not MigaFM overexpression increased the mitochondrial perimeter.
+
 VAP proteins interact with its partner through an FFAT motif EFFDAXE (Murphy and Levine, 2016). Miga has a conserved sequence that is similar to the FFAT motif but with two acidic amino acids changed to serine. We prepared an FFAT motif mutant form of Miga (MigaFM) with the 247th phenylalanine and the 249th serine residues changed to alanine (Figure 2B). MigaFM failed to bind to Vap33 (Figure 2C). We expressed a genomic rescue construct of Miga (Zhang et al., 2016) that contains the genomic fragment of Miga and a 3 × HA tag fused at the C-terminus just before the stop codon of Miga and a Flag tagged Vap33 in S2 cells and performed IP experiments. Since the genomic rescue construct of Miga contains the regulatory sequences from Miga locus, it likely expresses Miga in an endogenous level. Indeed, the level Miga-HA was much less than the level of overexpressed ones. We found that Miga and Vap33 could pull down each other in this condition (Figure 2D). We expressed both wildtype and mutant Miga with Vap33 in fly fat body tissues. Vap33 had a diffused pattern when it was expressed alone (Figure 2E). Both Miga and MigaFM showed mitochondrial patterns when they were expressed alone (Figure 2F and H). When Vap33 and Miga were co-expressed, Vap33 was recruited by Miga and the two proteins were co-localized (Figure 2G). However, MigaFM expression failed to recruit Vap33 and its own pattern did not change upon Vap33 expression (Figure 2I). To test whether Miga overexpression indeed could increase ERMCSs, we examined the fly fat body tissues with TEM. In the wildtype larvae fat body tissues, around 12% mitochondria had contacts with ER (Figure 2J and Q) and ERMCS length occupied about 12% of the mitochondrial perimeter (Figure 2J and R). The average distance between ER and mitochondria at the ERMCSs is around 22 nm (Figure 2J and S). Vap33 overexpression alone increased the mitochondrial proportion that have contacts with ER (Figure 2K and Q). However, it did not significantly change the ERMCS length for each mitochondrion (Figure 2K and R). The distance between ER and mitochondria at the ERMCSs in fat body slightly reduced (Figure 2K and S). Miga overexpression not only dramatically increased the mitochondrial frequency associated with ER (Figure 2L and Q), but also increased the average ERMCS length for each mitochondrion (Figure 2L and R). It also greatly reduced the proximity between ER and mitochondria at the ERMCSs (Figure 2L and S). Expressing Miga together with Vap33 further increased the ERMCS incidence and length (Figure 2M and Q–R) suggesting that Miga and Vap33 together could establish ERMCSs. Vap33 RNAi did not significantly affect ERMCS formation in fly fat body (Figure 2N and Q–R). However, ERMCS increase caused by Miga overexpression was canceled by Vap33 RNAi (Figure 2O and Q–R). Similarly, MigaFM overexpression failed to affect ERMCS formation in fat body tissues (Figure 2P–S). These data suggest that the interaction between Miga and Vap33 through FFAT motif is critical for establishing ERMCSs. When Miga was overexpressd, we observed enhanced mitochondrial fusion and increased mitochondrial length (Figure 2—figure supplement 1; Zhang et al., 2016). However, when MigaFM was overexpressed, the mitochondria length was significantly shorter than that in the wild-type Miga overexpressed tissues (Figure 2—figure supplement 1).
 
-## The interaction between Vap33 and Miga is required for Miga overexpression induced neurodegeneration
+### The interaction between Vap33 and Miga is required for Miga overexpression induced neurodegeneration
 
 Since the interaction between Vap33 and Miga is required for establishing ERMCSs, we wondered whether it is also required for the eye degeneration caused by Miga overexpression. We therefore used GMR-Gal4 to drive MigaFM expression and examined the eye morphology in 1-day-old animals. Although MigaFM expressing eyes had some donut shaped mitochondria, they were not closely associated with ER membranes (Figure 3A′–C′). Both rhabdomere numbers and shapes were comparable to the controls (Figure 3A–C, F and G). Vap33 RNAi alone did not show obvious eye defects (Figure 3E–E′, 3F, 3G). Knockdown Vap33 in the Miga overexpressed retina significantly revived the retinal defects caused by Miga overexpression (Figure 3D, F and G). Although there were donut-shaped mitochondria inside the photoreceptor cells, the rhabdomere shapes and sizes were largely normal (Figure 3D′). These data suggested that the eye defects caused by Miga overexpression require the interaction between Miga and Vap33.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig3-v2.jpg)
+
+**Figure 3.:** The interaction between Miga and Vap33 is critical for the eye degeneration caused by Miga overexpression. TEM analysis was performed for the retina thin sections of 1-day-old flies with indicated genotypes. (A, A’) The ommatidia of the control (CTL) flies showed seven photoreceptor cells with intact rhabdomeres (highlighted with blue pseudo-color). (B, B’) GMR-Gal4 driven Miga-RFP overexpression resulted in reduced number and size of rhabdomeres in the 1-day-old flies. (C, C’) GMR-Gal4-driven MigaFM-RFP overexpression did not affect the number and size of rhabdomeres in the 1-day-old flies. (D, D’) GMR-Gal4-driven Miga-RFP overexpression together with Vap33 RNAi did not affect the number and size of rhabdomeres in the 1-day-old flies. (E, E’) GMR-Gal4-driven Vap33 RNAi did not cause obvious defects in the 1-day-old fly eyes. (A'-E') were enlarged views of the photoreceptor cells highlighted with yellow pseudo-color in (A–E). (F) Quantification of the rhabdomere numbers per ommatidia of fly eyes with indicated genotypes. n = 12 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (G) Quantification of the rhabdomere size of the fly eyes with indicated genotypes. n = 27 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (H–K) TEM analysis was performed for the fat body thin sections of the early third instar larvae with indicated genotypes. Miga-RFP, human PTPIP51-RFP and the artificial ER- mitochondrial tether (Tether-RFP) overexpression led to increase of ERMCS. Red arrows indicate ERMCSs. (L–L’’) Quantification of the ERMCSs in the fat body tissues with indicated genotypes. Data are represented as mean + SD. ns, not significant; **, p<0.01, ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (M–T) TEM analysis was performed for the retina thin sections of 1-day (M–P) and 30-day-old flies (Q–T) with indicated genotypes. Miga, PTPIP51 and Tether overexpression led to severe retinal degeneration in fly eyes with aging. (U) Quantification of the rhabdomere numbers per ommatidia of the fly eyes with indicated genotypes. n = 12 for each genotype, Data are represented as mean + SD. ns, not significant; **, p<0.01, ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (V) Quantification of the rhabdomere size of the fly eyes with indicated genotypes. n = 27 for each genotype, data are represented as mean + SD. ns, not significant; **, p<0.01, ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (W) Quantification of the rhabdomere numbers of the fly eyes with indicated genotypes. n = 12 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The thick sections of adult fly flight muscles in the young (1 Day) and old (30 Day) flies with indicated genotypes. Mef2-Gal4 driven UAS-Miga-RFP overexpression induced severe muscle degeneration in the 30-day-old flies. However, MigaFM overexpression in muscles only led to mild muscle degeneration in the 30-day-old flies. (B) The quantification of the proportion of damaged muscle fragments in the thick sections of the 30-day-old flies with indicated genotype. n = 3 images for each genotype. Data are represented as mean + SD. ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) A diagram shows the design of the ER- mitochondrial tether. (B) IP experiments indicated that the tether could interact with VAP33. V5 tagged Miga was used as a control.
 
 In addition to eye degeneration, Miga overexpression in muscle also caused flight muscle degeneration in aged (30 days old) flies. However, MigaFM overexpression only led to very mild muscle degeneration phenotypes in the aged animals (Figure 3—figure supplement 1). These data suggested that the interaction between Miga and Vap33 is critical for the defects caused by Miga overexpression.
 
 The interaction between Vap33 and Miga increased ERMCSs and led to eye degeneration. We speculated whether the degeneration was caused by the increasing ERMCSs. In mammals, it has been reported that a protein called PTPIP51 could interact with VAPA/B and mediate ERMCSs (Stoica et al., 2014). There is no homolog of PTPIP51 in flies. We expressed the human PTPIP51 in fly fat bodies and found that the human PTPIP51 is sufficient to increase ERMCS (Figure 3H–J and L-L′′). We therefore overexpressed the human PTPIP51 and examined the adult fly eyes at days 1 and 30 by TEM. PTPIP51 overexpressed eyes had reduced rhabdomere numbers and sizes from day 1 (Figure 3O, U and V). The degeneration was progressively worse with aging. In the 30-day-old flies, most ommatidia lost all rhabdomeres (Figure 3W), which is similar to Miga overexpression (Figure 3R and W). We also designed a molecular tether with a mitochondrial localization signal from human mitochondrial protein Akap1, a linker, an RFP, and 39 amino acids from the FFAT motif region of Miga (Figure 3—figure supplement 2A). The tether interacted with Vap33 nicely (Figure 3—figure supplement 2B). When we overexpressed it in fly fat body tissues, we could see ERMCS increase (Figure 3K, 3L–L′′). When this tether was expressed in the eyes, it also led to reduced rhabdomere numbers and sizes in 1-day-old flies (Figure 3P, U and V) and the majority of rhabdomeres were lost in the 30 day old flies (Figure 3T and W). These data suggested that artificially increasing ERMCSs led to severe neurodegeneration in fly eyes.
 
-## FFAT motif is important for Miga physiological functions
+### FFAT motif is important for Miga physiological functions
 
 Since Miga overexpression led to ERMCS increase, we wondered whether Miga was required to establish ERMCSs. We examined the ERMCSs in the fly fat body tissues of wild type and Miga mutant third instar larvae. However, we did not observe any obvious ERMCS decrease in Miga mutants (Figure 4A–C). Since ERMCSs were not prevalent in the fat body tissues, the mild reduction was difficult to be detected. This may explain why Vap33 RNAi also did not affect ERMCSs in the fat body tissues.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig4-v2.jpg)
 
-**Figure 4.:** (A, B) TEM analysis was performed for the fat body thin sections of the early third instar larvae with indicated genotypes. The loss of Miga did not affect MERCS significantly in fat body tissues. (C) Quantification of the ERMCSs in the fat bodies of the indicated genotypes. ns, not significant; two-tailed unpaired t-test. (D) The genomic fragment of Miga with FFAT motif mutated (Miga) could rescue the fatality of Miga mutants (FMgRes-HAMiga mu), but the rescued flies (Miga mu; Miga) have reduced life span compared with FM gRes-HAMiga mutants rescued with wildtype Miga genomic fragment (Miga mu; Miga gRes-HA). The male flies were analyzed. p<0.001, log rank test; n = 100 flies. (E) Quantification of the rhabdomere numbers per ommatidia of the fly eyes with indicated genotypes n = 50 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (F–M) TEM analysis was performed for the retina thin sections of 1-day and 25-day-old flies with indicated genotypes. The seventh/eighth photoreceptor cells often degenerated in the 25-day-old Miga mu; Miga flies. The rhabdomeres were highlighted with blue pseudo-color.FM gRes-HAFigure 4—source data 1.Figure 4C.Figure 4—source data 2.Figure 4D.Figure 4—source data 3.Figure 4E.
+**Figure 4.:** (A, B) TEM analysis was performed for the fat body thin sections of the early third instar larvae with indicated genotypes. The loss of Miga did not affect MERCS significantly in fat body tissues. (C) Quantification of the ERMCSs in the fat bodies of the indicated genotypes. ns, not significant; two-tailed unpaired t-test. (D) The genomic fragment of Miga with FFAT motif mutated (MigaFMgRes-HA) could rescue the fatality of Miga mutants (Miga mu), but the rescued flies (Miga mu; MigaFM gRes-HA) have reduced life span compared with Miga mutants rescued with wildtype Miga genomic fragment (Miga mu; Miga gRes-HA). The male flies were analyzed. p<0.001, log rank test; n = 100 flies. (E) Quantification of the rhabdomere numbers per ommatidia of the fly eyes with indicated genotypes n = 50 for each genotype, data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (F–M) TEM analysis was performed for the retina thin sections of 1-day and 25-day-old flies with indicated genotypes. The seventh/eighth photoreceptor cells often degenerated in the 25-day-old Miga mu; MigaFM gRes-HA flies. The rhabdomeres were highlighted with blue pseudo-color.
 
 Our previous study showed that Miga loss led to early pupal fatality and the mosaic eyes with Miga mutant clones showed progressive degeneration (Zhang et al., 2016). The genomic fragment containing only Miga could rescue the fatality and the eye degeneration phenotypes. To test whether the interaction between Miga and Vap33 play any role in the physiological conditions, we made a Miga genomic rescue transgene (MigaFM gRes HA) with mutated FFAT motif to ensure that MigaFM expression levels and patterns mimicked those of endogenous Miga proteins. MigaFM genomic rescue transgene could rescue the Miga mutant fatality, but the life span of the MigaFM rescued flies was shorter than those of the ones with wildtype genomic rescue transgene (Figure 4D). We also examined the eyes of the genomic rescued adult flies at days 1 and 25. The seventh/eighth photoreceptor cells often degenerated in the 25 day old MigaFM rescued flies, which is barely seen in the wildtype Miga rescued flies (Miga mu; Miga gRes HA) (Figure 4E–M). These data suggested although Miga loss did not decrease ERMCSs in fat body tissues, the FFAT motif is critical for Miga physiological functions.
 
-## Miga was phosphorylated at multiple clusters
+### Miga was phosphorylated at multiple clusters
 
 When we performed the western blot to detect the interaction between Vap33 and Miga, we realized that Miga shows multiple bands and the higher bands have larger molecular weights than the predicted molecular weights (Figure 2A). Interestingly, expressing together with Vap33 increased the amount of upper shift bands of Miga (Figure 2A), suggesting that Miga modification was regulated.
 
@@ -85,9 +105,29 @@ We then immunoprecipitated Miga from the cultured S2 cells with V5-tagged overex
 
 **Figure 5.:** (A) A diagram showed the protein sequence of Miga. The sequences highlighted with green color were the peptides identified in the mass spectrometry analysis. The phosphorylation sites identified in the mass spectrometry analysis were labeled with ‘p’. The Ser/Thr clusters were underlined with green lines and labeled with I-VII sequentially. The blue color highlighted the amino acid residues were mutated to Ala or Glu in our study. The FFAT motif was underlined with red line. (B) λ-phosphatase treatment abolished the upper shift of V5-tagged Miga protein in the western blot assay. (C) V5-tagged Miga proteins with mutated Ser/Thr in cluster I, II, III, IV, V, VI or VII were analyzed by western blot and the mobility shift of the mutated proteins were compared with the wildtype Miga. (D) Miga proteins with Ser/Thr residues in cluster I-III mutated to Ala (I-IIISA) or Glu (I-IIISE) were analyzed by western blot the mobility shifts of the mutated proteins were compared with the wildtype Miga (WT). (E) CKI inhibitor D4476 inhibited the shift of the upper band of Miga. (F) Coexpressing CKIα with Miga increased the proportion of the upper band vs lower bands. (G) Overexpressed CAMKII together with Miga led to up-shift of both lower and upper bands of Miga in a phospho-tag gel. (H) Phospho-tag gel analysis together with western blot indicated that a slight reduction of band shift when CAMKII was knocked down.
 
-## Hyperphosphorylation regulates ERMCS formation and fine-tuned Miga activity
+### Hyperphosphorylation regulates ERMCS formation and fine-tuned Miga activity
 
 Interestingly, Ser246 and Ser249 in cluster V were two phospho-Ser residues located inside the FFAT motif. In the classical FFAT motifs, those two positions were the acidic amino acids E or D. We hypothesized that the phosphorylation of these two serine residues is required for the interaction between Miga and Vap33 and the phosphorylation provides an opportunity to regulate the ERMCS formation. Mutating Ser246 and Ser249 to Ala indeed abolished the interaction between Miga and Vap33 (Figure 6B) and failed to increase ERMCSs when it was overexpressed in fly fat bodies (Figure 6A). There were eight Ser residues inside the cluster V. Mutating the other six serine residues outside the FFAT motif also greatly reduced the affinity between Miga and Vap33 (Figure 6—figure supplement 1). These data suggested that cluster V phosphorylation is required for the interaction between Miga and Vap33.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig6-v2.jpg)
+
+**Figure 6.:** (A) TEM analysis was performed for the fat body thin sections of the early third instar larvae. Overexpression of the mutant form of Miga with Ser residues in the V cluster mutated to Ala (Miga 8S-A) did not affect ERMCSs in fat body tissues. (B) Miga with Ser 246 and Ser 249 mutated to Ala (MigaS246A, S249A) fail to bind to Vap33. MigaS246A, S249A-V5 showed two bands in most of the blots. The lower bands have a molecular weight close to 50 KD (indicated with green arrows), which were often merged with the IgG heavy chain (indicated with red *) in the blots after IP experiments. (C) A phospho-specific antibody of Miga (p-Miga) recognize overexpressed wildtype Miga-V5 but not MigaS246A, S249A-V5. Western blot with anti-V5 antibody indicated that both proteins were expressed at comparable levels. (D, E) HBSS treatment increased the phosphorylation on the Ser246 and Ser249 residues. (E) was the quantification of the ratios between p-Miga and total V5 tagged Miga when the cells were treated with HBSS. n = 3. Data are represented as mean + SD. ns, not significant; *, p<0.05, **, p<0.01, ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (F–I) TEM analysis was performed for the thin sections of fly early third instar larval fat body tissues with indicated genotypes and treatments. Starvation was performed by treating the dissected fat body tissues with HBSS for 6 hr. (J–L) Quantification of the ERMCSs in the fat body tissues with indicated genotypes and treatments. Data are represented as mean + SD. ns, not significant; *, p<0.05, **, p<0.01, ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. Starvation slightly increased the proportion of mitochondria with ERMCSs in the control group (CTL-S). When Miga was overexpressed, starvation increased the length of ERMCSs per mitochondria. (M–P) TEM analysis was performed for the retina thin sections of 1-day-old flies with indicated genotypes. Overexpression of Miga I-IIISE led to more severe eye defects than the overexpression of wild type Miga or Miga I-IIISA. Overexpression Miga I-IIISA had the weakest eye defects when compared with the overexpression of the wildtype Miga or the overexpression of Miga I-IIISE. The rhabdomeres were highlighted with blue pseudo-color. (Q) Quantification of the rhabdomere numbers per ommatidia in the fly eyes with indicated genotypes. n = 12 for each genotype, data are represented as mean + SD. ns, not significant; *, p<0.05, **, p<0.01, ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (R) Quantification of the rhabdomere size in the fly eyes with indicated genotypes. n = 27 for each genotype, data are represented as mean + SD. ns, not significant; *, p<0.05, ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** V5-tagged wildtype Miga or indicated mutant forms of Miga co-expressed with Flag-tagged Vap33 in S2 cells. Miga 8SA is the mutant form of Miga with 8 Ser in the cluster V mutated to Ala. Miga 6SA is the mutant form of Miga with 6 Ser in the cluster V mutated to Ala and two Ser residues in the FFAT motif are intact. The IP expreiments were performed by IP with V5 or IP with Flag. The input and the pulldown products were detected by western blot with indicated antibodies. The lower bands of Miga have a molecular weight close to 50 KD (indicated with green arrows), which were often merged with the IgG heavy chain (indicated with red *) in the blots after IP experiments.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) The phosphorylation of Ser246 and Ser249 of Miga is increased with short time exposure to CCCP (6 hr). But the hyperphosphorylation of Miga was reduced upon CCCP treatment. (B) was the quantification of the ratios between p-Miga and α-tubulin when the cells as treated with CCCP with indicated time period. n = 3. Data are represented as mean + SD. ns, not significant; *, p<0.05, **, p<0.01, ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) TEM analysis was performed for the fat body thin sections of the early third instar larvae. Miga I-IIISA or Miga I-IIISE overexpression increased ERMCSs in a similar manner as the wildtype Miga overexpression did. (B) Quantification of the proportion of mitochondria with ERMCSs. n = 6 images for each genotype. Data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (C) Quantification of ratio between the length of ERMCSs and the mitochondrial perimeter. n = 17 for each genotype. Data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (D) Quantification of the distance between ER and mitochondria at ERMCSs. n = 50 for each genotype. Data are represented as mean + SD. ns, not significant; ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) The thick sections of adult fly flight muscles in the young (1 Day) and old (30 Day) flies with indicated genotypes. Mef2-Gal4 driven UAS-Miga-RFP overexpression induced severe muscle degeneration in the 30-day-old flies. Miga I-IIISE overexpression caused more severe muscle degeneration in 30-day-old flies than the wildtype Miga overexpression. Miga I-IIISA overexpression led to less severe muscle degeneration in the aged flies than the wildtype Miga overexpression. (B) The quantification of the proportion of damaged muscle fragments in the thick sections of the 30 day old flies with indicated genotype. n = 3 images for each genotype. Data are represented as mean + SD. ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test.
 
 To evaluate the FFAT motif phosphorylation, we generated an antibody specifically recognizing Ser246 and Ser249 phosphorylation. The antibody was proved to be specific because it only recognized the wild type Miga but not MigaS246A, S249A when they were overexpressed in S2 cells (Figure 6C).
 
@@ -95,9 +135,17 @@ It has been reported that starvation enhances ERMCS formation (Yang et al., 201
 
 In addition to cluster V phosphorylation, Miga was also hyperphosphorylated in the I, II, and, III clusters. To understand how Miga hyperphosphorylation in the first three clusters regulates Miga activity, we overexpressed wild-type Miga, Miga I-IIISA, and Miga I-IIISE in various tissues and examined their effects. In the larvae fat body tissues, wild-type Miga, Miga I-IIISA or Miga I-IIISE overexpression all could increase ERMCSs. There was no obvious difference between these three forms (Figure 6—figure supplement 3), suggesting that Miga hyperphosphorylation in these clusters did not affect Miga ability to mediate ERMCSs. Using GMR-Gal4 to express the three forms of Miga in the developing eyes, we found that all forms cause eye defects and degeneration. Among the three forms of Miga, Miga I-IIISE caused most severe reduction of rhabdomere numbers and size, while Miga I-IIISA overexpression led to the mildest defects (Figure 6M–R). Similarly, in the adult muscle, Miga I-IIISE overexpression led to muscle degeneration and around 50% flight muscles were affected, while only 40% or 20% flight muscles were affected when wild-type Miga or Miga I-IIISA were overexpressed (Figure 6—figure supplement 4). These data suggested that Miga I-IIISE was more active than the wild-type control and Miga I-IIISA. The hyperphosphorylation in the first three clusters could fine-tune Miga activity.
 
-## The mammalian homolog of Miga, MIGA2, had conserved function in ERMCS formation
+### The mammalian homolog of Miga, MIGA2, had conserved function in ERMCS formation
 
 Miga has two mammalian homologs, MIGA1 and MIGA2. Both proteins are mitochondrial outer membrane proteins. We then tested whether MIGA1 and MIGA2 could interact with VAPA/B and promote ERMCS formation. Although the FFAT motif was identical in MIGA1 and MIGA2, MIGA1 had low affinity to VAP proteins. We used IP and detected its interaction with VAPA only in one direction (Figure 7—figure supplement 1). MIGA2 interacted with both VAPA and VAPB (Figure 7A–B). Mutating the FFAT motif in MIGA2 (MIGA2-mu) abolished the interaction between VAPB and MIGA2 (Figure 7C). These data were consistent with the results that has been recently reported by Freyre et al. Using COS7 cells, they demonstrated that MIGA2 interacts with both overexpressed and endogenous VAP proteins and the interaction depends on the FFAT motif in MIGA2 and the MSP (Major Sperm Protein) domain in VAP proteins (Freyre et al., 2019). When we overexpressed human MIGA2 in fly fat body, mitochondria were swollen and ERMCSs were increased (Figure 7D–G).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig7-v2.jpg)
+
+**Figure 7.:** (A) MIGA2-HA and VAPB-V5 could pull down each other in both directions in the IP assay. (B) MIGA2-GFP and VAPA-HA could pull down each other in both directions in the IP assay. (C) Mutating the FFAT motif in MIGA2 (MIGA2-mu) abolished the interaction between VAPB and MIGA2 in the IP assay. (D and E) Human MIGA2RFP (red) ectopically overexpressed in fly fat body tissues led to the change of MitoGFP (green) patterns. (F and G) TEM analysis were performed for the early third instar larval fat body tissues with MitoGFP (F) or MIGA2RFP together with MitoGFP overexpressed (G). MIGA2RFP overexpression increased ERMCS. (H–N”) MIGA2 overexpression but not MIGA2-mu overexpression increased the signals of MERCSs. VAPB co-expression with MIGA2 further increased MERCSs. (H) Quantification of the ratio between contacts and the total mitochondrial signals of the cells with indicated genotypes. n = 30 for each genotype, ns, not significant; *, p<0.05, ***, p<0.001; one-way ANOVA/Bonferroni’s multiple comparisons test. (I–N’’) A genetic encoded split-GFP based MERCS reporter (green) stably expressed in U2OS cells was used to indicate MERCS. Mitochondria were labeled with anti-TOMM20 staining (red). The expression of VAPB, MIGA2 or MIGA2-mu were indicated by anti-V5 or anti-HA staining (blue).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56584/elife-56584-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) HA-tagged MIGA1 and V5-tagged VAPB were co-expressed in HeLa cells. MIGA1 and VAPB failed to pulldown each other in the IP experiments. (B) V5-tagged MIGA1 and HA-tagged VAPA were co-expressed in Hela cells. VAPA could pulldown MIGA1, but MIGA1 fail to pulldown VAPA in the IP experiments.
 
 We previously developed a genetically encoded reporter using split super-folder GFP protein for labeling ERMCSs. MIGA2, but not MIGA2-mu, overexpression increased the ERMCS reporter signals. Co-expression of VAPB with MIGA2, but not MIGA2-mu, further increased the ERMCS reporter signals (Figure 7H–N’’), suggesting that the interaction between MIGA2 and VAP proteins mediated ERMCSs.
 
@@ -117,45 +165,356 @@ It has been reported that presenilins and γ-secretase activity are concentrated
 
 ## Materials and methods
 
-## Molecular cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Miga</td>
+      <td>GenBank</td>
+      <td>FLYB:FBgn0030037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>marf</td>
+      <td>GenBank</td>
+      <td>FLYB:FBgn0029870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>MitoPLD</td>
+      <td>GenBank</td>
+      <td>FLYB:FBgn0261266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Vap33</td>
+      <td>GenBank</td>
+      <td>FLYB:FBgn0029687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo- sapiens )</td>
+      <td>Miga1</td>
+      <td>GenBank</td>
+      <td>HGNC:24741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo- sapiens )</td>
+      <td>PTPIP51</td>
+      <td>GenBank</td>
+      <td>HGNC:25550</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo- sapiens )</td>
+      <td>Miga2</td>
+      <td>GenBank</td>
+      <td>HGNC:23621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo- sapiens )</td>
+      <td>VAPA</td>
+      <td>GenBank</td>
+      <td>HGNC:12648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo- sapiens )</td>
+      <td>VAPB</td>
+      <td>GenBank</td>
+      <td>HGNC:12649</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Drosophila melanogaster)</td>
+      <td>S2</td>
+      <td>This paper</td>
+      <td>FLYB:FBtc0000181; RRID:CVCL_Z992</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS</td>
+      <td>This paper</td>
+      <td>CLS Cat# 300364/p489_U-2_OS, RRID:CVCL_0042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Hela</td>
+      <td>This paper</td>
+      <td>CLS Cat# 300194/p772_HeLa, RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling Technology Cat# 3724, RRID:AB_1549585</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Rabbit polyclonal)</td>
+      <td>MBL</td>
+      <td>MBL International Cat# 598, RRID:AB_591819</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Flag (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Sigma-Aldrich Cat# F3165, RRID:AB_259529</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: R96025</td>
+      <td>WB(1:5000) IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P-Miga (Rabbit monoclonal)</td>
+      <td>GL BioChem Ltd</td>
+      <td></td>
+      <td>WB (1:5000-1:10000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phos-tag acrylamide</td>
+      <td>Boppard</td>
+      <td>Boppard: 300–93523</td>
+      <td>100 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D4470</td>
+      <td>Selleck</td>
+      <td>Selleck:S7642</td>
+      <td>80 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CCCP</td>
+      <td>Sigma</td>
+      <td>Sigma:C2759</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HBSS</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher: 14025076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhosSTOP</td>
+      <td>Sigma</td>
+      <td>Sigma: 4906837001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>FLAG peptide</td>
+      <td>APExBIO</td>
+      <td>APExBIO: A6001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Electron Microscopy Sciences: 15711</td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cacodylic acid</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Electron Microscopy Sciences: 12201</td>
+      <td>1.4%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutaraldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Electron Microscopy Sciences: 16020</td>
+      <td>1%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Osmium tetroxide</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Electron Microscopy Sciences: 19152</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propylene oxide</td>
+      <td>Sigma</td>
+      <td>Sigma:82320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Embed 812</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Electron Microscopy Sciences: 14900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DDSA</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Electron Microscopy Sciences: 13710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NMA</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Electron Microscopy Sciences:19000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMP-30</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Electron Microscopy Sciences:13600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uranyl acetate</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Electron Microscopy Sciences: 22400</td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lead nitrate</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Electron Microscopy Sciences: 17800</td>
+      <td>2.5%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Toluidine blue</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Electron Microscopy Sciences: 22050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HA beads</td>
+      <td>Sigma</td>
+      <td>Sigma:E6779</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Flag beads</td>
+      <td>Sigma</td>
+      <td>Sigma, A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein A Sepharose 4 Fast Flow beads</td>
+      <td>GE Healthcare</td>
+      <td>GE Healthcare: 17-5280-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CaMKII_F</td>
+      <td>This paper</td>
+      <td>dsRNA primers</td>
+      <td>TAATACGACTCACTATAGGGGCAAAGTCCGCTTATTCTCGTTCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CaMKII_R</td>
+      <td>This paper</td>
+      <td>dsRNA primers</td>
+      <td>TAATACGACTCACTATAGGGAATTCTTTGGCTCCCCTCATGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CaMKII_F</td>
+      <td>This paper</td>
+      <td>Real-time PCR primers</td>
+      <td>ATCCCAACATAGTGCGGCTACATGA’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CaMKII_R</td>
+      <td>This paper</td>
+      <td>Real-time PCR primers</td>
+      <td>AAGTCAGCGAGTTTCACTGCTGCA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular cloning
 
 The plasmid pUASattB-RFP was constructed by inserting cDNA of red fluorescent protein (RFP) into pUASattB vector through exogenous restriction sites of KpnI and XbaI. To generate pUASattB Miga-RFP, Miga cDNA was cloned into the pUAS attB-RFP vector, RFP was fused to the C terminus of Miga. To generate pUASattB MigaFM-RFP, the 247th Phe residue and the 249th Ser residue in Miga were mutated to Ala through site directed mutagenesis. pUASattBMigaS246A, S249A-RFP was generated through site directed mutagenesis to mutate the 246th Ser and 249th Ser residues to Ala. pUASattB Miga I-IIISA-RFP was generated by site directed mutagenesis to change the 68th, 71st, 77th, 81st, 84th, 87th, 89th, 93rd, 98th, 102nd, 105th, and 107th Ser residues to Ala. pUASattB Miga I-IIISE-RFP was generated by site directed mutagenesis to change the 68th, 71st, 77th, 81st, 84th, 87th, 89th, 93rd, 98th, 102nd, 105th, and 107th Ser residues to Glu. pUASattB Miga 8SA-RFP was generated by site directed mutagenesis to change the 225th, 228th, 230th, 233rd, 237th, 243rd, 246th, and 249th Ser residues to Ala. pattB Miga gRes-HA was generated by cloning Miga genomic DNA with its upstream and downstream 1.5 kb sequence into pattB vector, 3xHA tag was inserted just before the stop codon in the coding sequence (Zhang et al., 2016). pattB MigaFM gRes-HA was generated by introduce point mutations to change the 247th Phe residue and the 249th Ser residue to Ala in the Miga genomic DNA fragments and subcloned into pattB vector. The genomic DNA fragment including Miga’s gene span together with upstream and downstream 1.5 kb sequences and 3xHA tag was inserted just before the stop codon in the coding sequence. pUASattB PTPIP51-RFP was generated by cloning the full length human PTPIP51 cDNA into pUASattB-RFP vector. To generate pAC-Miga-V5 plasmid, Miga cDNA was sub-cloned into the pAC-His-V5 vector (Invitrogen), V5 was fused to the C terminus of Miga. pAC Miga I-V5 was generated by site-directed mutagenesis to change the 68th, 71st, 77th, 81st Ser residues to Ala. pAC Miga II-V5 was generated by site-directed mutagenesis to change the 84th, 87th, 89th, 93rd Ser residues to Ala. pAC Miga III-V5 was generated by site-directed mutagenesis to change the 98th, 102nd, 105th, and 107th Ser residues to Ala. pAC Miga IV-V5 was generated by site-directed mutagenesis to change the 122nd, 123rd Ser residues to Ala and the 126th, 129th Thr residues to Ala. pAC Miga V-V5 was generated by site-directed mutagenesis to change the 225th, 228th, 230th, 233rd, 237th, 243rd, 246th, and 249th Ser residues to Ala. pAC Miga VI-V5 was generated by site-directed mutagenesis to change the 299th Ser residue to Ala, 300th, 302nd Thr residues to Ala and 301st Asp residue to Ala. pAC Miga VII-V5 was generated by site-directed mutagenesis to change the 423rd, 426th , 427th Thr residues to Ala and 431st Ser residue to Ala. pAC Miga I-IIISA-V5 was generated by site-directed mutagenesis to change the 68th, 71st, 77th, 81st, 84th, 87th, 89th, 93rd, 98th, 102nd, 105th, and 107th Ser residues to Ala. pAC Miga I-IIISE-V5 was generated by site-directed mutagenesis to change the 68th, 71st, 77th, 81st, 84th, 87th, 89th, 93rd, 98th, 102nd, 105th, and 107th Ser residues to Glu. pAC-Miga 6S-A-V5 was generated by site-directed mutagenesis to change the 225th, 228th, 230th, 233rd, 237th, 243rd Ser residues to Ala. pAC-Miga 8S-A-V5 was generated by site-directed mutagenesis to change the 225th, 228th, 230th, 233rd, 237th, 243rd ,246th and 249th Ser residues to Ala. pUASVap33-FLAG, pUAS Vap33P58S-FLAG, pUAS CK1α have been described before (Tsuda et al., 2008; Jia et al., 2004). The plasmid pUASattB CamkII-HA was generated by cloning the full length CamKII cDNA into pUASattB vector with a N-terminal 3xHA tag. The plasmid pAC-Tether-V5 was generated by cloning the mitochondrial targeting sequence of human mitochondrial protein Akap1 (MAIQFRSLFPLALPGMLALLGWWWFFSRKK), a linker sequence (AEAAAKEAAAKEAAAKA), an RFP full length cDNA, and 39 amino acids sequence from FFAT motif region (229aa-267aa) of Miga into pAC-His-V5 vector. pUASattB-Tether was generated by cloning the mitochondrial targeting sequence of human mitochondrial protein Akap1 (MAIQFRSLFPLALPGMLALLGWWWFFSRKK), a linker sequence (AEAAAKEAAAKEAAAKA), an RFP full length cDNA, and 39 amino acids sequence from FFAT motif region (229aa-267aa) of Miga into pUASattB vector. pUASattB Miga-FLAG-HA was generated by cloning the full length Miga cDNA into pUASattB vector with a FLAG tag (DYKDDDDK) and a HA tag (YPYDVPDYA) fused to the C-terminal of Miga. The plasmid pcDNA3.1-MIGA2-HA was generated by cloning Miga2 cDNA into pcDNA3.1 vector with a 3xHA tag fused to the C-terminus. pcDNA3.1-MIGA2 mu-HA was generated by site-directed mutagenesis to change the 293rd, 294th Phe residues of MIGA2 to Ala . The plasmid pcDNA3.1-MIGA2-EGFP was generated by cloning Miga2 cDNA into pcDNA3.1 vector with a C-terminal EGFP tag. The plasmid pcDNA3.1-VAPB-V5 was generated by cloning VAPB cDNA into pcDNA3.1 vector with a C-terminal V5 tag. The plasmid pcDNA3.1-VAPA-HA was generated by cloning VAPA cDNA into pcDNA3.1 vector with a N-terminal 3xHA tag.
 
-## Fly strains
+### Fly strains
 
 The fly strains used in this study were listed in the Supplementary file 1. All the transgenic strains were generated by the standard way. All the transgenic flies were generated by PhiC31-mediated transgenesis to integrate the DNA fragments at specific sites in the genome. Therefore, the transgenes presumably are single copy insertions.
 
-## Cell culture, transfection and treatments
+### Cell culture, transfection and treatments
 
 S2 cells were originally from Invitrogen. HeLa cells and the U2OS cells were originally from ATCC. These cells were recently authenticated and tested for contamination. S2 cells were cultured in a 25°C incubator in Schneider insect cell culture medium (Sigma, S0146). HeLa cells and the U2OS cell lines stable transfected with ERMCS reporters were cultured in a 37°C incubator with 5% CO2 in Dulbecco’s modified Eagle’s medium (Life Technologies, C11995500CP). Both the culture mediums were supplemented with 10% fetal bovine serum (Life Technologies, 10091148) and 50 IU/mL penicillin/streptomycin (Biological Industries, 03-031-1B). Plasmids were transfected by using lipo2000 (Life Technologies, 11668019) as a transfection reagent. 48 hr after transfection, the cells were harvested and used for immunoprecipitation assay, western blotting or immuno-staining.
 
 For drug treatment, 80 μM CKI inhibitor D4470 (Selleck, S7642) was added into the medium for 48 hr and DMSO was added as a control. For HBSS treatment, cells were cultured in HBSS (ThermoFisher, 14025076) for indicated period before harvest. For CCCP (Sigma, C2759) treatment, 10 μM CCCP was added to the culture medium for indicated period before harvest. For λ-ppase treatment, the cells were harvested and lysed in lysis buffer (150 mM NaCl, 50 mM Tris-HCl, 0.5% NP-40, protease inhibitor, pH 8.0) and incubated with λ-ppase for 1 hr at 30°C before western blot analysis.
 
-## RNA interference (RNAi) in Drosophila S2 cells
+### RNA interference (RNAi) in Drosophila S2 cells
 
 Drosophila RNAi experiments were carried out as previously described. The dsRNA targeting CaMKII was generated by annealing reverse complimented RNA strains generated by in vitro transcription from a template amplified by PCR using following primers: CaMKII-F: 5’-TAATACGACTCACTATAGGGGCAAAGTCCGCTTATTCTCGTTCTT-3’; CaMKII-R: 5’-TAATACGACTCACTATAGGGAATTCTTTGGCTCCCCTCATGC-3’. dsRNA was transfected to the S2 cells with the liposome RNAi max (Life Technologies, 13778 150). After 3 days, cells were transfected with pAC-Miga-V5. After 2 more days, cells were collected for real-time quantitative PCR and western blot. The primers used for the real time PCR are: CamKII-F: 5’-ATCCCAACATAGTGCGGCTACATGA-3’; CamKII-R: 5’-AAGTCAGCGAGTTTCACTGCTGCA-3’. RpLP0-F: 5'-CTAAGCTGTCGCACAAATGGC-3', RpLP0-R: 5'-ATCTCCTTGCGCTTCTTGGA-3'.
 
-## Immunofluorescence
+### Immunofluorescence
 
 The fat body tissues or the cultured cells were fixed in 4% paraformaldehyde (Sigma-Aldrich, 158127) for 45 min, followed by permeabilizing in PBST (PBS with 0.1% Triton X-100 (Sangon Biotech, T0694)). Samples were incubated with primary antibody at 4°C overnight. After washing with PBST, samples were then incubated with secondary antibodies for 1 hr at room temperature in dark. After that, samples were mounted in 80% glycerol (Sangon Biotech, A100854) with 5 ng/μL DAPI (Invitrogen, D-1306) followed by confocal microscopy (Cal Zeiss, LSM710, Oberkochen, Germany).
 
-## TEM analysis
+### TEM analysis
 
 For the adult fly eyes, fly head was dissected and fixed in EM eye solutions (1.4% cacodylic acid (Electron Microscopy Sciences,12201), 4% paraformaldehyde (Electron Microscopy Sciences, 15711), and 1% Glutaraldehyde (Electron Microscopy Sciences,16020), pH7.2.) for more than 48 hr at 4°C. Samples were then washed five times with Millipore water, and post-fixed with 2% osmium tetroxide (Electron Microscopy Sciences, 19152) for about 2 hr. After rinsing five times with Millipore water, samples were gradually dehydrated through a graded series of ethanol (50%, 70%, 80%, 90%, 95%, and 100%, respectively). After that, samples were dehydrated in propylene oxide (PO) (Sigma, 82320) for three times with 30 min for each time. And then, samples were embedded in Eponate 12 resin, which was made up from Embed 812 (Electron Microscopy Sciences, 14900), DDSA (Electron Microscopy Sciences, 13710), NMA (Electron Microscopy Sciences,19000) and DMP-30 (Electron Microscopy Sciences, 13600). The samples were then cured in 65°C for 48 hr. For the fat body and the muscle tissues, the initial fixation solution is 2.5% glutaraldehyde (Electron Microscopy Sciences, 16020) and the samples were washed with PBS after fixation. All the other steps were same as those used for the fly eyes. The samples were cut into 50 nm thin sections and stained with 4% uranyl acetate (Electron Microscopy Sciences, 22400) and 2.5% lead nitrate (Electron Microscopy Sciences, 17800) for electron microscopy analysis (Hitachi Ltd., HT7700, Tokyo, Japan). For the semi-thin sections of muscle tissues, the samples were cut into 1.5 μm thin sections and stained with toluidine blue (Electron Microscopy Sciences, 22050) and examine under a light microscopy (Nikon Corporation, ECLIPSE 80i, Tokyo, Japan).
 
-## Co-immunoprecipitation and western blotting
+### Co-immunoprecipitation and western blotting
 
 Cells were lysed in lysis buffer (150 mM NaCl, 50 mM Tris-HCl pH 8.0,1 mM EDTA, 0.5% Triton-100 (for HeLa cell); 150 mM NaCl，50 mM Tris-HCl pH 8.0, 10 mM NaF, 1 mM Na3VO4,1% NP-40, 10% glycerol, 1.5 mM EDTA pH 8.0 (for S2 cell)), supplemented with protease inhibitors PMSF, aprotinin, pepstatin, leupeptin, and phosphatase inhibitor PhosSTOP (sigma, 4906837001). Samples were centrifuged at 16000 g for 10 min and supernatant were collected and incubated with HA beads (Sigma, E6779) or Flag beads (Sigma, A2220) or V5 antibody followed with Protein A Sepharose 4 Fast Flow beads (GE Healthcare, 17-5280-01) for 2–4 hr at 4°C. Spin down the beats at 500 g for 30 s. Then washed with lysis buffer for three times and add SDS running buffer to the beads and proceed to western blot analysis. For western blotting analysis, proteins were separated by SDS–PAGE, and transferred onto a PVDF membrane. The membrane was then blocked with 5% non-fat milk (Sangon Biotech, A600669) in TBST buffer and incubated with primary antibodies in TBST with 5% non-fat milk overnight at 4°C. The membranes were then washed in TBST and incubated with HRP labeled secondary antibodies (1:5000 in TBST with 5% non-fat milk) for 1 hr at RT. The membranes were then washed in TBST and developed with ECL reagents (Cyanagen Srl, XLS3-0020) and exposed. Quantification of protein bands was done with Image J software.
 
-## Phos-tag SDS-PAGE
+### Phos-tag SDS-PAGE
 
 Phos-tag SDS-PAGE was performed with 7% polyacrylamide gels containing 100 μM Phos-tag acrylamide (Boppard, 300–93523) and 200 μM MnCl2. After electrophoresis, Phos-tag acrylamide gels were washed with transfer buffer (50 mM Tris, 384 mM glycine, 0.1% SDS, 20% methanol) containing 10 mM EDTA for 20 min and with transfer buffer without EDTA for 10 min. The proteins on the gel was transferred onto PVDF membranes followed with regular western blot procedure.
 
-## Antibodies
+### Antibodies
 
 Anti-HA antibody (Cell Signaling: #3724) was used with 1:1000 dilution in both western blot and immunofluorescence staining. Anti-GFP antibody (MBL: 598) was used with 1:1000 dilution in western blot. Anti-Flag antibody (Sigma: F3165) was used with 1:1000 dilution in western blot. Anti-V5 antibody (Invitrogen: R96025) was used with 1:5000 dilution in western blot and 1:500 dilution in immunofluorescence staining. Miga phospho-specific antibody was generated by GL BioChem Ltd. Phosphorylated peptide GSDPNFDSAE(S)pFA(S)pA was used as an antigen to immune the rabbits. The antibody was tested by ELESA assays and western blot (1:5000).
 
-## Mass spectrometry
+### Mass spectrometry
 
 To identify Miga’s binding proteins, FLAG-HA tagged Miga was overexpressed in S2 cells for 48 hr. Cells were lysed in lysis buffer (150 mM NaCl，50 mM Tris-HCl pH 8.0, 10 mM NaF, 1 mM Na3VO4,10% NP-40, 10% glycerol, 1.5 mM EDTA pH 8.0) and Miga was pulled down by FLAG beads and eluted with FLAG peptide (APExBIO, A6001) twice. The eluted fractions then subjected for pull-down assay with HA beads. Then the pull-down products were separated by SDS-PAGE. The gel was dyed with Coomassie brilliant blue for 30 min and then de-colored by de-staining solution (75% alcohol, acetic acid, and H2O). Then the gel was cut and subjected to the LC-MS/MS analysis.
 
@@ -163,6 +522,6 @@ To identify the modifications on Miga protein, V5 tagged Miga was overexpressed 
 
 The peptides were subjected to NSI source followed by tandem mass spectrometry (MS/MS) in Q Exactive Plus (Thermo) coupled online to the UPLC. The electrospray voltage applied was 2.0 kV. The m/z scan range was 350 to 1800 for full scan, and intact peptides were detected in the Orbitrap at a resolution of 70,000. Peptides were then selected for MS/MS using NCE setting as 28 and the fragments were detected in the Orbitrap at a resolution of 17,500. A data-dependent procedure that alternated between one MS scan followed by 20 MS/MS scans with 15.0 s dynamic exclusion. Automatic gain control (AGC) was set at 5E4. The resulting MS/MS data were processed using Proteome Discoverer 1.3. Tandem mass spectra were searched against Miga protein sequence. Trypsin/P was specified as cleavage enzyme allowing up to two missing cleavages. Mass error was set to 10 ppm for precursor ions and 0.02 Da for fragment ions. Phosphorylation of serine, threonine and tyrosine were specified as fixed modification and oxidation on Met was specified as variable modifications. Peptide confidence was set at high, and peptide ion score was set >20.
 
-## Lifespan analysis
+### Lifespan analysis
 
 The Drosophila of each genotype were collected and housed at a density of 10 flies per vial (n = 100). All flies were kept in a constant temperature and humidity environment with 12 hr on/off light cycle. The number of surviving animals was counted and transferred to fresh food every 2 days.

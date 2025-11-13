@@ -15,17 +15,17 @@
 
 ### Affiliations
 
-1. https://ror.org/00b30xv10 Department of Neurology, The Perelman School of Medicine at The University of Pennsylvania Philadelphia United States
-2. https://ror.org/02917wp91 Division of Neurology, Department of Pediatrics, The Children’s Hospital of Philadelphia Philadelphia United States
-3. https://ror.org/00b30xv10 Neuroscience Graduate Group, The University of Pennsylvania Perelman School of Medicine Philadelphia United States
-4. https://ror.org/00b30xv10 College of Arts and Sciences, The University of Pennsylvania Philadelphia United States
-5. https://ror.org/00b30xv10 Department of Neuroscience, The Perelman School of Medicine at The University of Pennsylvania Philadelphia United States
+1. Department of Neurology, The Perelman School of Medicine at The University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+2. Division of Neurology, Department of Pediatrics, The Children’s Hospital of Philadelphia Philadelphia United States ([ROR:02917wp91](https://ror.org/02917wp91))
+3. Neuroscience Graduate Group, The University of Pennsylvania Perelman School of Medicine Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+4. College of Arts and Sciences, The University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+5. Department of Neuroscience, The Perelman School of Medicine at The University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
 
 † Corresponding author
 
 ## Abstract
 
-Dravet syndrome (DS) is a neurodevelopmental disorder due to pathogenic variants in SCN1A encoding the Nav1.1 sodium channel subunit, characterized by treatment-resistant epilepsy, temperature-sensitive seizures, developmental delay/intellectual disability with features of autism spectrum disorder, and increased risk of sudden death. Convergent data suggest hippocampal dentate gyrus (DG) pathology in DS ( Scn1a ) mice. We performed two-photon calcium imaging in brain slice to uncover a profound dysfunction of filtering of perforant path input by DG in young adult +/- Scn1a mice. This was not due to dysfunction of DG parvalbumin inhibitory interneurons (PV-INs), which were only mildly impaired at this timepoint; however, we identified enhanced excitatory input to granule cells, suggesting that circuit dysfunction is due to excessive excitation rather than impaired inhibition. We confirmed that both optogenetic stimulation of entorhinal cortex and selective chemogenetic inhibition of DG PV-INs lowered seizure threshold in vivo in young adult +/- Scn1a mice. Optogenetic activation of PV-INs, on the other hand, normalized evoked responses in granule cells in vitro. These results establish the corticohippocampal circuit as a key locus of pathology in +/- Scn1a mice and suggest that PV-INs retain powerful inhibitory function and may be harnessed as a potential therapeutic approach toward seizure modulation. +/-
+Dravet syndrome (DS) is a neurodevelopmental disorder due to pathogenic variants in SCN1A encoding the Nav1.1 sodium channel subunit, characterized by treatment-resistant epilepsy, temperature-sensitive seizures, developmental delay/intellectual disability with features of autism spectrum disorder, and increased risk of sudden death. Convergent data suggest hippocampal dentate gyrus (DG) pathology in DS (Scn1a+/-) mice. We performed two-photon calcium imaging in brain slice to uncover a profound dysfunction of filtering of perforant path input by DG in young adult Scn1a+/- mice. This was not due to dysfunction of DG parvalbumin inhibitory interneurons (PV-INs), which were only mildly impaired at this timepoint; however, we identified enhanced excitatory input to granule cells, suggesting that circuit dysfunction is due to excessive excitation rather than impaired inhibition. We confirmed that both optogenetic stimulation of entorhinal cortex and selective chemogenetic inhibition of DG PV-INs lowered seizure threshold in vivo in young adult Scn1a+/- mice. Optogenetic activation of PV-INs, on the other hand, normalized evoked responses in granule cells in vitro. These results establish the corticohippocampal circuit as a key locus of pathology in Scn1a+/- mice and suggest that PV-INs retain powerful inhibitory function and may be harnessed as a potential therapeutic approach toward seizure modulation.
 
 ## Introduction
 
@@ -41,41 +41,445 @@ In this study, we demonstrate a profound hyperexcitability of the corticohippoca
 
 ## Results
 
-## Response of dentate gyrus to entorhinal cortical input is selectively impaired in young adult Scn1a+/- mice
+### Response of dentate gyrus to entorhinal cortical input is selectively impaired in young adult Scn1a+/- mice
 
 Emerging data suggest an important role for the hippocampus and, more specifically, the dentate gyrus (DG), in DS pathology (Dutton et al., 2013; Liautard et al., 2013; Stein et al., 2019). We therefore hypothesized that the circuit function of DG – filtering input from the entorhinal cortex to limit propagation of activity through the limbic system – might be impaired in Scn1a+/- mice. We used two photon calcium imaging (2 P imaging) to achieve large-scale quantification of granule cell (GC) activation in response to stimulation of the perforant path (PP), the excitatory projection from entorhinal cortex that constitutes the major input to GCs. We first injected an adeno-associated virus (AAV) encoding the calcium indicator GCaMP7s (Dana et al., 2019) under control of a pan-neuronal promoter hSyn1 into DG of Scn1a+/- mice and age-matched wild-type littermate controls (Figure 1A). We prepared acute hippocampal-entorhinal cortex (HEC) slices (Xiong et al., 2017), which preserve the PP projection from entorhinal cortex to hippocampus within the slice (Figure 1B). We then performed 2 P imaging of evoked calcium transients in cells within the granule cell layer (GCL) in response to electrical stimulation of the PP (Figure 1C–D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig1-v2.jpg)
 
-**Figure 1.:** (A) Mice were injected with AAV9-hSyn-jGCaMP7s-WPRE into DG. (B) Acute slices are cut at a 15° angle off-axial to maximize connectivity. Shown is the location of a stimulation electrode (stim) in the perforant path (PP), and the imaging field in DG (green box). (C) GCaMP labeling of GCs in the granule cell layer (GCL; dashed lines) between the hilus (H) and molecular layer (ML). (D) Example GC response to PP stimulation (arrow), displayed as change in fluorescence over baseline (dF/F0). (E) Representative image showing a quantum dot (Andrásfalvy et al., 2014)-labeled pipette tip (red) used for cell-attached recording of GCaMP-expressing GCs (green). (F) Representative data from a single GC firing 0, 1, 3, or 13 action potentials (left) in response to PP stimulation, while calcium transients (right) were simultaneously recorded. Scale bar represents 75 ms (left) and 5 s (right). Vertical dashed line indicates stimulus onset. (G) Action potentials versus calcium transient magnitude for GCs from WT (blue) and Scn1a (+/-red) mice. Data were fit using a linear model, with no significant difference between genotypes (solid / dashed line = best fit / 95% confidence interval). n = 7 (cells), 5 (mice). (H) Results for 0 and 1 action potentials. Threshold for action potential detection (green bar) was defined as p = 0.001 from a normal distribution fit to the dF/F0 values for 0 action potentials. (I) Observed action potentials versus action potentials derived from deconvolution (R2 = 0.83; p < 0.0001).Figure 1—source data 1.
+**Figure 1.:** (A) Mice were injected with AAV9-hSyn-jGCaMP7s-WPRE into DG. (B) Acute slices are cut at a 15° angle off-axial to maximize connectivity. Shown is the location of a stimulation electrode (stim) in the perforant path (PP), and the imaging field in DG (green box). (C) GCaMP labeling of GCs in the granule cell layer (GCL; dashed lines) between the hilus (H) and molecular layer (ML). (D) Example GC response to PP stimulation (arrow), displayed as change in fluorescence over baseline (dF/F0). (E) Representative image showing a quantum dot (Andrásfalvy et al., 2014)-labeled pipette tip (red) used for cell-attached recording of GCaMP-expressing GCs (green). (F) Representative data from a single GC firing 0, 1, 3, or 13 action potentials (left) in response to PP stimulation, while calcium transients (right) were simultaneously recorded. Scale bar represents 75 ms (left) and 5 s (right). Vertical dashed line indicates stimulus onset. (G) Action potentials versus calcium transient magnitude for GCs from WT (blue) and Scn1a+/- (red) mice. Data were fit using a linear model, with no significant difference between genotypes (solid / dashed line = best fit / 95% confidence interval). n = 7 (cells), 5 (mice). (H) Results for 0 and 1 action potentials. Threshold for action potential detection (green bar) was defined as p = 0.001 from a normal distribution fit to the dF/F0 values for 0 action potentials. (I) Observed action potentials versus action potentials derived from deconvolution (R2 = 0.83; p < 0.0001).
 
 To characterize GCaMP7s as a reporter of action potentials in GCs within this experimental paradigm, we performed simultaneous cell-attached recording and calcium imaging of GCaMP-expressing cells within the GCL in Scn1a+/- and wild-type mice. We used a quantum dot-labeled pipette tip (Andrásfalvy et al., 2014) for 2P-guided targeted electrophysiological recording during simultaneous calcium imaging (Figure 1E). This allowed us to correlate calcium transients within individual cells against a gold-standard quantitative measure of action potentials (APs). Action potentials were evoked via PP stimulation. However, given the normally sparse activation of DG in response to PP stimulation in wild-type mice, we bath-applied picrotoxin (PTX), a GABAA receptor antagonist that is known to induce widespread PP-driven recruitment of GCs (Dengler et al., 2017), such that nearly all GCs were activated by PP stimulation. We found that the number of APs and the magnitude of the calcium signal were highly correlated (Figure 1F–G; R2 = 0.769). This linear relationship between AP and calcium signal was the same in wild-type and Scn1a+/- mice for single APs and across a measured range (0–14 APs; Figure 1G). We next evaluated the sensitivity and specificity of GCaMP7s in detecting single APs in the absence of PTX as GABAA-mediated responses in dentate GCs can be depolarizing even in the adult DG (Chiang et al., 2012), and could therefore cause subthreshold calcium transients which may mimic spikes (Stocca et al., 2008). We fit a normal distribution to the dF/F0 values associated with 0 APs (with an AP defined as an increase in calcium signal (dF/F0) of at least three times the standard deviation above the mean noise), set a global threshold defined by this data (p = 0.001), and verified that subthreshold responses (n = 9) could be resolved from single APs (n = 10; Figure 1H). Finally, we deconvolved the dF/F0 signals (Pnevmatikakis et al., 2016) to extract the number of action potentials from the calcium transients and verified the deconvolution algorithm on the ‘ground truth’ AP dataset (R2 = 0.83; p < 0.0001; Figure 1I). Thus, GCaMP7s reports APs in GCs similarly in both genotypes, with single-AP resolution, validating 2 P calcium imaging in brain slice as a method for comparing large-scale DG excitability between wild-type and Scn1a+/-.
 
 In order to quantify the extent of DG activation in response to entorhinal cortex input, we stimulated the PP while performing 2 P imaging of the evoked responses across hundreds of GCs simultaneously (Figure 2). We tested early postnatal (P14-21; at/around epilepsy onset) and young adult (P50-100; chronic phase) mice. We delivered either a single pulse or a train of 4 pulses at 20 Hz across a range of stimulation intensities, similar to prior studies of this circuit in acute brain slices (Dengler et al., 2017; Ewell and Jones, 2010; Yu et al., 2013). We then identified activated GCs within the imaging field in response to each stimulation condition, defining activation as an increase in calcium signal (dF/F0) at least three times the standard deviation above the mean noise (Figure 2, columns 1–4) and/or if one or more action potentials were extracted using deconvolution (Figure 2, columns 5–6). To determine if the responses across stimulation intensities differed by genotype, we employed a statistical approach based on mixed-effects modeling, to account for potential variation between individual imaging fields in a slice, slices from a given mouse, and/or between mice. (See Figure 2—figure supplement 1 for data including all individual imaging fields, which are omitted for clarity from Figure 2.)
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig2-v2.jpg)
+
+**Figure 2.:** Proportion of activated GCs (A–C) and magnitude of activation (D) in response to PP stimulation (early postnatal P14-21, columns 1 and 2; young adult P48-91, columns 3 and 4), with deconvolved data for the young adult time point (columns 5 and 6). Wild-type in blue; Scn1a+/- in red. Data were analyzed using a mixed model to account for potential variability between animal, slice, field, and cell. Proportion of responsive GCs was calculated (A) relative to all GCaMP-expressing cells, or restricting analysis (B) to only GCs that respond to PP stimulation in the presence of 100 µM picrotoxin or (C) to only GCs that respond to the maximal stimulation delivered. (D) Magnitude of activated GC responses to PP stimulation, expressed as natural log dF/F0 (columns 1–4) or estimated spikes based on deconvolution (columns 5–6; size of data points reflects number of cells at that value). Dots: raw data from all imaging fields or cells; dark lines: average of fits; shaded: 95% confidence intervals of average fits. Stars indicate significant differences in curve fits: *, p < 0.05; **, p < 0.01; ***, p < 0.001. For early postnatal mice, n for the experiments in rows A, C, and D was, for Scn1a+/- and WT, respectively: 991 and 1,210 (cells), 51 and 58 (fields), 31 and 29 (slices), 11 and 10 (mice); for row B: 372 and 445 (cells), 16 and 17 (both fields and slices), 5 and 5 (mice). For the young adult mice, n for the experiments in rows A, C, and D: 1236 and 1167 (cells), 17 and 17 (both fields and slices), 8 and 6 (mice); for row B: 1109 and 1073 (cells), 16 and 14 (both fields and slices), 6 and 7 (mice).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Same dataset presented in Figure 2A–C but including predicted fits for each individual imaging field (light lines) in addition to raw data from each field (dots), average of fits (dark lines), and 95% confidence intervals of fits (shaded). See Figure 2 legend for additional details.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Quantification of early postnatal Scn1a+/- GCs (96% ± 2%) and WT GCs (94% ± 3%) that respond to maximal (400 µA) perforant path stimulation in the presence of 100 µM PTX. (B) Quantification of early postnatal Scn1a+/- GCs (93% ± 2%) and WT GCs (88% ± 4%) that respond to maximal ( 500 µA) perforant path stimulation in the presence of 100 µM PTX. There was no significant difference between the proportion of Scn1a+/- versus wild-type GCs responding to maximal stimulation in the presence of PTX at either time point. For early postnatal mice, n for Scn1a+/- and WT, respectively: 16 and 17 (fields), 5 and 5 (mice). For young adult mice, n for Scn1a+/- and WT, respectively: 16 and 14 (fields), 6 and 7 (mice).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Deconvolution was performed to calculate the total estimated number of action potentials in response to either a single perforant path stimulus (A) or 4 stimuli at 20 Hz (B) in young adult Scn1a+/- (red) and wild-type (blue) mice. Note that this analysis includes at each point the data from all cells that respond to the maximal stimulation condition (400 µA), whereas Figure 2D 5–6 are otherwise similar but include only the cells that respond at each given condition (that is, these plots include cells that fire 0 action potentials, whereas such data are excluded from Figures 2D—6 5-6). **, p < 0.01; ***, p < 0.001. n for Scn1a+/- and WT, respectively: 1236 and 1167 (cells), 17 and 17 (both fields and slices), 8 and 6 (mice).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Current clamp recordings from WT (blue) and Scn1a+/- (red) DG GCs at the young adult timepoint. Scale bar 20 mV / 100ms. Current/frequency (I-f) plot for GC at the early postnatal (B) and young adult (C) timepoints, with no significant differences across genotype. n and mouse ages are as per Table 1.
+
 We first calculated the proportion of activated GCs relative to all identifiable GCaMP7s-expressing cells, fit the data from each genotype (as a binomial distribution fitted with a probit link function), and compared the fit of the curves between genotypes (‘All cells’ in Figure 2A). We validated these data in two different ways to account for the possibility that some GCs might be unresponsive due to deafferentation during the slice preparation, as opposed to this being due to physiologic circuit inhibition. First, we excluded from analysis all GCs that failed to respond to maximal PP stimulation in the presence of PTX (‘Responds to PTX’ in Figure 2B). Note that most ( > 85%) GCs did respond under these conditions (Figure 2—figure supplement 2), demonstrating a high level of connectivity within the HEC slice; hence, results were similar whether considering all cells or only PTX-responsive cells. Second, we excluded from analysis those GCs that failed to respond to the highest amplitude PP stimulation delivered in the absence of PTX (‘Responds to max stim’ in Figure 2C). Finally, in Figure 2D, we quantified the magnitude of the evoked calcium signal (dF/F0; columns 1–4) or estimated the action potential numbers calculated via deconvolution (columns 5–6) and used a mixed-effects model to compare across genotypes, using a normal distribution fitted with a logarithmic link function. Note that we included in this analysis only GCs activated under each specific condition (‘Responds to each stim’); that is we quantified how many spikes occurred per active cell. We additionally analyzed the data including all GCs activated under highest amplitude PP stimulation (‘Responds to max stim’; Figure 2—figure supplement 3) to quantify the total activation of the population: that is how many spikes occurred, averaged across cells.
 
 We saw enhanced activation at the early postnatal timepoint for both genotypes (Figure 2, columns 1–2), with only a subtle difference between genotypes. Consistent with the known increase in sparsity of GC activation that occurs with development (Yu et al., 2013), the wild-type activity pattern was markedly decreased at the young adult relative to the early postnatal timepoint (Figure 2, columns 3–6). However, the Scn1a+/- activation pattern remained markedly enhanced at the young adult relative to the early postnatal timepoint, resulting in a robust, statistically significant difference between genotypes at this later timepoint. For instance, proportional Scn1a+/- GC activation at the young adult timepoint was over threefold larger than that of wild-type (0.51 ± 0.08 vs 0.16 ± 0.00; p < 0.001) in response to 4 × 400 µA pulses (subset of data in Figure 2A 4), and dF/F0 was increased by ~130% (p < 0.001; Figure 2D 4). Hence, there was a profound abnormality of Scn1a+/- DG circuit function at the young adult timepoint, with a markedly higher proportion of GCs activated by PP input, as well as an increase in the number of action potentials fired in those GCs, versus age-matched wild-type controls, across stimulation paradigms and a broad range of intensities.
 
-## Mechanisms of dentate gyrus circuit dysfunction in young adult Scn1a+/- mice
+### Mechanisms of dentate gyrus circuit dysfunction in young adult Scn1a+/- mice
 
 Increased PP activation of GCs could be due to increased intrinsic GC excitability, dysfunction of feed-forward inhibition, or increased synaptic excitatory drive onto GCs. To investigate the mechanism of DG circuit dysfunction in young adult Scn1a+/- mice, we first assessed the intrinsic excitability of GCs in Scn1a+/- mice versus controls. Whole-cell current-clamp recordings of GCs from Scn1a+/- mice and age-matched wild-type littermate controls (at both the early postnatal and young adult timepoints) showed no differences across a range of measures of intrinsic excitability, properties of individual action potentials (APs), and repetitive AP firing (Figure 2—figure supplement 4; Table 1).
+
+**Table 1.**
+ Properties of early postnatal and young adult DG GCs from Scn1a+/- and wild-type mice.Table 1—source data 1.Data summary for all DG GCs electrophysiological data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Measurement</th>
+      <th colspan="3">Early postnatal</th>
+      <th colspan="3">Young adult</th>
+      <th>Genotype variation (ANOVA)</th>
+    </tr>
+    <tr>
+      <th>Scn1a+/-</th>
+      <th>WT</th>
+      <th>p-value</th>
+      <th>Scn1a+/-</th>
+      <th>WT</th>
+      <th>p-value</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n cells (mice)</td>
+      <td>19 (3)</td>
+      <td>21 (3)</td>
+      <td></td>
+      <td>16 (7)</td>
+      <td>13 (4)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (days)</td>
+      <td>18 ± 2</td>
+      <td>19 ± 1</td>
+      <td>0.88</td>
+      <td>55 ± 6</td>
+      <td>58 ± 2</td>
+      <td>0.75</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vm (mV)</td>
+      <td>–78.0 ± 1.6</td>
+      <td>–77.6 ± 1.7</td>
+      <td>0.99</td>
+      <td>–78.1 ± 1.6</td>
+      <td>–78.8 ± 2.1</td>
+      <td>0.99</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Rm (MΩ)</td>
+      <td>379 ± 19</td>
+      <td>405 ± 43</td>
+      <td>0.89</td>
+      <td>237 ± 20</td>
+      <td>217 ± 19</td>
+      <td>0.97</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>Time Constant</td>
+      <td>8.3 ± 1.4</td>
+      <td>9.1 ± 1.2</td>
+      <td>0.96</td>
+      <td>7.2 ± 0.8</td>
+      <td>8.1 ± 1.5</td>
+      <td>0.96</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>Rheobase (pA)</td>
+      <td>65 ± 8</td>
+      <td>69 ± 8</td>
+      <td>0.99</td>
+      <td>134 ± 16</td>
+      <td>119 ± 19</td>
+      <td>0.86</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>AP Threshold (mV)</td>
+      <td>–36.2 ± 1.7</td>
+      <td>–34.1 ± 2.8</td>
+      <td>0.89</td>
+      <td>–37.2 ± 1.5</td>
+      <td>–36.8 ± 1.6</td>
+      <td>0.99</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>AP Amplitude (mV)</td>
+      <td>80.9 ± 2.4</td>
+      <td>84.2 ± 1.8</td>
+      <td>0.64</td>
+      <td>81.4 ± 1.6</td>
+      <td>83.8 ± 2.5</td>
+      <td>0.88</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>AP Peak (mV)</td>
+      <td>44.7 ± 1.4</td>
+      <td>46.1 ± 2.2</td>
+      <td>0.94</td>
+      <td>44.2 ± 1.4</td>
+      <td>47.0 ± 2.1</td>
+      <td>0.77</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>AP Rise Time (ms)</td>
+      <td>0.54 ± 0.02</td>
+      <td>0.53 ± 0.03</td>
+      <td>0.97</td>
+      <td>0.57 ± 0.02</td>
+      <td>0.59 ± 0.02</td>
+      <td>0.94</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>AP Halfwidth (ms)</td>
+      <td>0.76 ± 0.02</td>
+      <td>0.80 ± 0.04</td>
+      <td>0.69</td>
+      <td>0.77 ± 0.03</td>
+      <td>0.86 ± 0.04</td>
+      <td>0.34</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>AHP Amplitude (mV)</td>
+      <td>15.2 ± 1.1</td>
+      <td>15.7 ± 0.7</td>
+      <td>0.98</td>
+      <td>13.9 ± 1.0</td>
+      <td>13.8 ± 1.1</td>
+      <td>&gt; 0.99</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>AHP time (ms)</td>
+      <td>3.08 ± 0.34</td>
+      <td>2.99 ± 0.27</td>
+      <td>0.99</td>
+      <td>1.91 ± 0.14</td>
+      <td>2.16 ± 0.09</td>
+      <td>0.93</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Sag (percent)</td>
+      <td>3.2 ± 0.3</td>
+      <td>4.0 ± 0.5</td>
+      <td>0.71</td>
+      <td>3.5 ± 0.6</td>
+      <td>3.8 ± 0.9</td>
+      <td>0.98</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>Max instantaneous (Hz)</td>
+      <td>140 ± 10</td>
+      <td>160 ± 8</td>
+      <td>0.44</td>
+      <td>184 ± 13</td>
+      <td>161 ± 8</td>
+      <td>0.49</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>Max steady-state (Hz)</td>
+      <td>57 ± 3</td>
+      <td>65 ± 4</td>
+      <td>0.41</td>
+      <td>66 ± 4</td>
+      <td>63 ± 6</td>
+      <td>0.97</td>
+      <td>0.50</td>
+    </tr>
+  </tbody>
+</table>
 
 Single-cell electrophysiology data from acute brain slices and acutely dissociated neurons prepared from various Scn1a+/- mouse lines from multiple laboratories has repeatedly identified interneuron dysfunction (Cheah et al., 2012; Dutton et al., 2017; Ogiwara et al., 2007; Richards et al., 2018; Rubinstein et al., 2015; Tai et al., 2014), and in particular dysfunction of parvalbumin-expressing fast-spiking GABAergic interneurons (PV-INs) (Dutton et al., 2013; Rubinstein et al., 2015; Tai et al., 2014). Therefore, we next tested the intrinsic properties of DG PV-INs in Scn1a+/- mice versus wild-type littermate controls based on the involvement of these cells in DS pathogenesis as well as the fact that the GC response to PP input is known to be powerfully regulated by feedforward inhibition mediated by DG PV-INs (Ewell and Jones, 2010; Lee et al., 2016).
 
 We prepared acute brain slices from early postnatal and young adult Scn1a+/- mice and wild-type littermates expressing tdTomato (tdT) under Pvalb-specific Cre-dependent control, as described previously (Favero et al., 2018). PV-INs in DG were thus identified by endogenous tdT expression visualized with epifluorescence and characteristic location at the GCL:hilus border. Early postnatal Scn1a+/- PV-INs exhibited profoundly impaired firing in response to depolarizing current steps (Figure 3A–C). The findings at the young adult timepoint were more subtle: young adult Scn1a+/- PV INs fired normally at the onset of a depolarizing current step and reached identical maximal steady-state firing frequencies but exhibit gradual spike height accommodation that ultimately progresses to spike failure with prolonged and large-amplitude (~2.5-fold rheobase) current injections (Figure 3D–F). Comparing across timepoints, while PV-INs from young adult Scn1a+/- mice continue to exhibit a reduced maximal instantaneous firing frequency relative to age-matched wild-type (Figure 3G), there was normalization of maximal steady-state firing frequency as well as across multiple other metrics of intrinsic excitability and properties of individual action potentials (Figure 3H–J; Table 2).
 
+**Table 2.**
+ Properties of early postnatal and young adult DG PV-INs from Scn1a+/- and wild-type mice.Table 2—source data 1.Data summary for all DG PV-IN electrophysiological data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Measurement</th>
+      <th colspan="3">Early postnatal</th>
+      <th colspan="3">Young adult</th>
+      <th>Genotype variation (ANOVA)</th>
+    </tr>
+    <tr>
+      <th>Scn1a+/-</th>
+      <th>WT</th>
+      <th>p-value</th>
+      <th>Scn1a+/-</th>
+      <th>WT</th>
+      <th>p-value</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n cells (mice)</td>
+      <td>13 (5)</td>
+      <td>10 (5)</td>
+      <td></td>
+      <td>18 (5)</td>
+      <td>19 (4)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (days)</td>
+      <td>19 ± 1</td>
+      <td>19 ± 1</td>
+      <td>0.72</td>
+      <td>69 ± 3</td>
+      <td>66 ± 2</td>
+      <td>0.56</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vm (mV)</td>
+      <td>–57.9 ± 1.7</td>
+      <td>–61.5 ± 2.3</td>
+      <td>0.65</td>
+      <td>–57.6 ± 1.8</td>
+      <td>–57.2 ± 1.8</td>
+      <td>0.99</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>Rm (MΩ)</td>
+      <td>94 ± 11</td>
+      <td>53 ± 6</td>
+      <td>0.007 (**)</td>
+      <td>105 ± 6</td>
+      <td>101 ± 6</td>
+      <td>0.97</td>
+      <td>0.005 (**)</td>
+    </tr>
+    <tr>
+      <td>Time Constant</td>
+      <td>5.3 ± 0.8</td>
+      <td>4.7 ± 1.0</td>
+      <td>0.91</td>
+      <td>6.4 ± 0.3</td>
+      <td>5.1 ± 0.3</td>
+      <td>0.26</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Rheobase (pA)</td>
+      <td>555 ± 96</td>
+      <td>802 ± 120</td>
+      <td>0.10</td>
+      <td>489 ± 35</td>
+      <td>463 ± 34</td>
+      <td>0.99</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>AP Threshold (mV)</td>
+      <td>–35.7 ± 3.4</td>
+      <td>–45.8 ± 3.1</td>
+      <td>0.04 (*)</td>
+      <td>–50.4 ± 1.4</td>
+      <td>–49.0 ± 1.6</td>
+      <td>0.96</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>AP Amplitude (mV)</td>
+      <td>64.2 ± 2.1</td>
+      <td>61.8 ± 4.2</td>
+      <td>0.92</td>
+      <td>75.1 ± 1.7</td>
+      <td>76.9 ± 1.9</td>
+      <td>0.93</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>AP Peak (mV)</td>
+      <td>28.5 ± 3.4</td>
+      <td>16.1 ± 4.0</td>
+      <td>0.008 (**)</td>
+      <td>24.7 ± 31.3</td>
+      <td>27.9 ± 1.3</td>
+      <td>0.69</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>AP Rise Time (ms)</td>
+      <td>0.63 ± 0.15</td>
+      <td>0.50 ± 0.07</td>
+      <td>0.61</td>
+      <td>0.67 ± 0.08</td>
+      <td>0.50 ± 0.05</td>
+      <td>0.41</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>AP Halfwidth (ms)</td>
+      <td>0.54 ± 0.03</td>
+      <td>0.43 ± 0.04</td>
+      <td>0.01 (*)</td>
+      <td>0.35 ± 0.01</td>
+      <td>0.37 ± 0.01</td>
+      <td>0.86</td>
+      <td>0.048 (*)</td>
+    </tr>
+    <tr>
+      <td>AHP Amplitude (mV)</td>
+      <td>10.7 ± 1.5</td>
+      <td>7.2 ± 3.5</td>
+      <td>0.58</td>
+      <td>11.4 ± 1.1</td>
+      <td>9.7 ± 1.2</td>
+      <td>0.85</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>AHP time (ms)</td>
+      <td>1.60 ± 0.11</td>
+      <td>1.12 ± 0.10</td>
+      <td>0.001 (**)</td>
+      <td>0.98 ± 0.05</td>
+      <td>0.93 ± 0.03</td>
+      <td>0.92</td>
+      <td>0.0008 (***)</td>
+    </tr>
+    <tr>
+      <td>Sag (percent)</td>
+      <td>11.1 ± 1.7</td>
+      <td>26.4 ± 6.6</td>
+      <td>0.007 (**)</td>
+      <td>9.0 ± 1.1</td>
+      <td>17.3 ± 2.3</td>
+      <td>0.10</td>
+      <td>0.0001 (***)</td>
+    </tr>
+    <tr>
+      <td>Max instantaneous (Hz)</td>
+      <td>181 ± 8</td>
+      <td>277 ± 19</td>
+      <td>0.002 (**)</td>
+      <td>237 ± 15</td>
+      <td>297 ± 13</td>
+      <td>0.006 (**)</td>
+      <td>&lt; 0.0001 (****)</td>
+    </tr>
+    <tr>
+      <td>Max steady-state (Hz)</td>
+      <td>139 ± 12</td>
+      <td>213 ± 20</td>
+      <td>0.006 (**)</td>
+      <td>189 ± 11</td>
+      <td>191 ± 12</td>
+      <td>0.99</td>
+      <td>0.008 (**)</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig3-v2.jpg)
 
-**Figure 3.:** Scn1a mice, with partial normalization by young adulthood.+/-(A) Example current clamp recordings of DG PV-INs from WT (blue) and Scn1a (+/-red) mice at the juvenile timepoint, demonstrating early spike failure in Scn1a PV-INs. Scale bar 20 mV / 100ms. For juvenile GC PV-INs, (+/-B) current/frequency (I-f) plot and (C) I-F plot with current normalized to Rheobase for each cell. (D) Example current clamp recordings from WT (blue) and Scn1a (+/-red) DG PV-INs at the young adult timepoint, demonstrating progressive spike-height accommodation in Scn1a PV-INs in response to a prolonged depolarizing current step. Scale bar as in +/-A. For young adult GC PV-INs, (E) current/frequency (I-F) plot and (F) I-F plot with current normalized to Rheobase for each cell. Scn1a PV-INs have significantly lower instantaneous firing frequency at both timepoints (+/-G) but the steady state firing frequency normalizes by the young adult timepoint (H). Scn1a PV-INs display larger input resistance (+/-I) and action potential half-width (J) at the early postnatal timepoint only. For B–F, line and shaded areas represent mean and SEM, and bars indicate significance calculated using one-way ANOVA and post-hoc tests with Bonferroni correction. For G–J, significance is determined by Tukey’s multiple comparisons test. *, p < 0.05; **, p < 0.01; ***, p < 0.001. n and mouse ages are as per Table 2. See also Table 2—source data 1.
+**Figure 3.:** (A) Example current clamp recordings of DG PV-INs from WT (blue) and Scn1a+/- (red) mice at the juvenile timepoint, demonstrating early spike failure in Scn1a+/- PV-INs. Scale bar 20 mV / 100ms. For juvenile GC PV-INs, (B) current/frequency (I-f) plot and (C) I-F plot with current normalized to Rheobase for each cell. (D) Example current clamp recordings from WT (blue) and Scn1a+/- (red) DG PV-INs at the young adult timepoint, demonstrating progressive spike-height accommodation in Scn1a+/- PV-INs in response to a prolonged depolarizing current step. Scale bar as in A. For young adult GC PV-INs, (E) current/frequency (I-F) plot and (F) I-F plot with current normalized to Rheobase for each cell. Scn1a+/- PV-INs have significantly lower instantaneous firing frequency at both timepoints (G) but the steady state firing frequency normalizes by the young adult timepoint (H). Scn1a+/- PV-INs display larger input resistance (I) and action potential half-width (J) at the early postnatal timepoint only. For B–F, line and shaded areas represent mean and SEM, and bars indicate significance calculated using one-way ANOVA and post-hoc tests with Bonferroni correction. For G–J, significance is determined by Tukey’s multiple comparisons test. *, p < 0.05; **, p < 0.01; ***, p < 0.001. n and mouse ages are as per Table 2. See also Table 2—source data 1.
 
 Given near-normalization of PV-IN firing properties at the young adult timepoint, we reasoned that PV-IN dysfunction was unlikely to underlie the larger circuit deficit, which worsens, rather than improves, across development (Figure 2). To further confirm that the subtle deficits seen in individual PV-IN firing properties (Figure 2) were not responsible for the GC hyperactivation observed in young adult Scn1a+/- mice, we performed an additional set of experiments using Hm1a, a peptide toxin that acts as an Nav1.1-specific activator (Osteen et al., 2016) and has been shown to correct the abnormalities seen in PV-INs in Scn1a+/- mice (Goff and Goldberg, 2019). We found that bath-application of Hm1a to brain slices prepared from Scn1a+/- mice corrected the PV-IN deficits apparent in response to large and prolonged current injections, whereas Hm1a had no impact on firing of PV-INs from wild-type mice, consistent with prior literature (Richards et al., 2018; Figure 4A–D). However, Hm1a had no effect on the large-scale evoked activation of GCs – as measured via 2 P imaging – in either genotype (Figure 4E–H). This result suggests that the subtle identified deficits in Scn1a+/- PV-IN spike generation and impairment in repetitive firing does not underlie the observed large-scale circuit impairment at the young adult timepoint.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig4-v2.jpg)
 
-**Figure 4.:** Scn1a (but not wild-type) mice but has no effect on evoked GC activation.+/-(A) Example trace from one Scn1a PV-IN showing responses to depolarizing current steps at baseline (+/-red) or in the presence of Hm1a (purple). Hm1a decreased spike height accommodation and prevented AP failures with larger current injections. Scale bar 300 ms / 50 mV. Note that single APs cannot be visualized due to condensed timescale and high frequency firing. (B) Example trace from one wild-type PV-IN at baseline (blue) or in the presence of Hm1a (purple). Scale bar 100 ms / 20 mV. Current/frequency (I-F) plots at baseline and in the presence of Hm1a for Scn1a PV-INs (+/-C) and wild-type PV-INs (D), showing significant enhancement of firing in Scn1a PV-INs only. Line and shaded areas represent mean and SEM. Bars indicate significance calculated using one-way ANOVA and post-hoc tests with Bonferroni correction: *, p < 0.05. For both genotypes, bath-application of Hm1a does not alter the perforant path-evoked proportional activation of GCs (+/-E–F) or the amplitude of the calcium signal within those activated cells (G–H). n for Scn1a and WT, respectively: 5 and 9 (cells), 3 and 4 (mice) for electrophysiology; 335 and 465 (cells), 6 and 8 (fields), 2 and 3 (mice) for 2 P imaging.+/-Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (A) Example trace from one Scn1a+/- PV-IN showing responses to depolarizing current steps at baseline (red) or in the presence of Hm1a (purple). Hm1a decreased spike height accommodation and prevented AP failures with larger current injections. Scale bar 300 ms / 50 mV. Note that single APs cannot be visualized due to condensed timescale and high frequency firing. (B) Example trace from one wild-type PV-IN at baseline (blue) or in the presence of Hm1a (purple). Scale bar 100 ms / 20 mV. Current/frequency (I-F) plots at baseline and in the presence of Hm1a for Scn1a+/- PV-INs (C) and wild-type PV-INs (D), showing significant enhancement of firing in Scn1a+/- PV-INs only. Line and shaded areas represent mean and SEM. Bars indicate significance calculated using one-way ANOVA and post-hoc tests with Bonferroni correction: *, p < 0.05. For both genotypes, bath-application of Hm1a does not alter the perforant path-evoked proportional activation of GCs (E–F) or the amplitude of the calcium signal within those activated cells (G–H). n for Scn1a+/- and WT, respectively: 5 and 9 (cells), 3 and 4 (mice) for electrophysiology; 335 and 465 (cells), 6 and 8 (fields), 2 and 3 (mice) for 2 P imaging.
 
 Since impaired response of DG to entorhinal cortex input in Scn1a+/- mice could not be adequately attributed to aberrant intrinsic properties of either DG GCs or PV-INs, we next considered whether this finding may instead be due to alterations in the excitatory drive onto GCs and/or recruitment of disynaptic inhibition. We performed whole-cell voltage-clamp recordings of GCs from Scn1a+/- mice versus wild-type controls (P54-75) using a cesium-based internal solution to isolate evoked monosynaptic excitatory postsynaptic currents (EPSCs; recorded at –70 mV) and di-synaptic inhibitory postsynaptic currents (IPSCs; recorded at +10 mV) (Figure 5A). We first quantified the minimal PP stimulation (tested in ascending 25 µA increments) required to evoke an EPSC and IPSC for each cell (Figure 5—figure supplement 1) and did not find a significant difference between genotypes (EPSC: 42.5 ± 5.3 µA in Scn1a+/- versus 49.7 ± 6.6 WT, p = 0.41; IPSC: 27.1 ± 2.4 Scn1a+/- versus 36.6 ± 3.9 WT, p = 0.06).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig5-v2.jpg)
+
+**Figure 5.:** Whole cell patch clamp recordings were performed in GCs from Scn1a+/- and wild-type mice (P54-75). (A) Representative traces from wild-type (blue) and Scn1a+/- (red) GCs showing evoked monosynaptic EPSCs (recorded at –70 mV; solid) and di-synaptic IPSCs (recorded at +10 mV; dashed) in response to 300 µA PP stimulation. Scale bar, 10 ms / 500 pA. (B) EPSC / IPSC magnitude was calculated in response to 100–500 µA PP input. Data were fit with a one site binding curve and compared with an extra sum-of-squares F test (p < 0.0001). Mixed-effects analysis with multiple comparisons were used for comparisons at each point (p = 0.03 for 400 µA and p = 0.009 for 500 µA). (C) Raw evoked ESPC magnitude was significantly larger in Scn1a+/- GCs (p < 0.0001; extra sum-of-squares F test comparison of curve fits). Mixed-effects analysis with multiple comparisons were used for comparisons at each point (p = 0.01 for 200 µA, 0.004 for 400 µA, and <0.001 for 300 and 500 µA). (D) Raw evoked disynaptic IPSC magnitude was also higher overall in Scn1a+/- GCs (p = 0.01, extra sum-of-squares F test comparison of curve fits), although significance was not reached at any individual data point. n for the experiments in B-D was, Scn1a+/- and WT, respectively: 13 and 16 (cells), 4 and 4 (mice). Stars in the upper left indicate significance of overall curve fits while stars above individual data points indicate post-hoc significance at each point. (E) Magnitude of evoked GC responses as quantified by calcium imaging (dF/F0) in the presence of 100 µM picrotoxin, with persistence of significantly larger responses measured in Scn1a+/- GCs in the setting of GABAA receptor blockade (p < 0.001; mixed model analysis). n for Scn1a+/- and WT, respectively: 1073 and 1109 (cells), 14 and 16 (both fields and slices), 7 and 6 (mice). (F) Puffed glutamate (1 mM) was applied to the mid-molecular layer, with pulses of 5, 10, or 30 ms duration, while resulting currents were recorded from GCs. Scale bar 100 pA / 100ms. Arrow indicates delivery of pressure pulse to the glutamate-containing pipette. (G) Currents evoked by 10 ms glutamate puffs. n for Scn1a+/- and WT, respectively: 4 and 4 (mice), 23 and 22 (cells). (H) Representative scaled traces from wild-type and Scn1a+/- GCs showing EPSCs in response to 300 µA PP stimulation delivered at 20 Hz. Scale bar, 400 pA (Scn1a+/-) / 300 pA (wild-type) / 40ms. The decay of the EPSC (from 300 µA stimulation) was fit with a single exponential that was not different by genotype: 7.2 ± 0.6ms for Scn1a+/- (n = 8) and 8.1 ± 0.7ms for WT (n = 15; p = 0.44 vs. WT via unpaired t-test). (I) EPSC PPR comparing 2nd / 1st PP stimuli. There was a highly significant overall effect of genotype (p < 0.0001; two-way ANOVA) as well as significant genotype differences with individual comparisons (Sidak’s multiple comparisons test: 100 µA, p = 0.04; 200 µA, p = 0.04; 300 µA, p = 0.01). n for Scn1a+/- and WT, respectively: 14 and 16 (cells), 4 and 4 (mice).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The threshold EPSC and IPSC stimulation intensity was identified for each cell, with no significant difference between genotypes. There was no genotype difference in response to puffed glutamate with 5 ms (B) or 30 ms (C) pulse duration. (D) 4th / 1st evoked EPSC amplitude. There was a significant overall effect of genotype (p = 0.003; two-way ANOVA), although the individual comparisons did not reach threshold for significance (Sidak’s multiple comparisons tests). n values as per Figure 5.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Magnitude of evoked GC responses as quantified by calcium imaging (dF/F0) in the presence of 100 µM picrotoxin, with persistence of significantly larger responses measured in Scn1a+/- GCs in the setting of GABAA receptor blockade (p < 0.001; mixed model analysis). (B) EPSC / IPSC magnitude was calculated in response to 100–400 µA PP input, for which one curve (one site binding curve) fit both data sets (p = 0.48), and with no significant differences seen at any individual data point. (C) Raw evoked ESPC magnitude was similar across genotypes (p = 0.72). (D) Raw evoked disynaptic IPSC magnitude was slightly higher overall in Scn1a+/- GCs (p = 0.03, extra sum-of-squares F test comparison of curve fits), although significance was not reached at any individual data point. Both the 2nd/ 1st EPSC (E) and the 4th / 1st EPSC (F) had no significant overall effect of genotype (two-way ANOVA followed by multiple comparison tests). For experiments in A, n was, for Scn1a+/- and WT, respectively: 372 and 445 (cells), 16 and 17 (both fields and slices), 5 and 5 (mice). For experiments in B–F, n was: 33 and 24 (cells), 7 and 6 (mice). Stars in the upper left indicate significance of overall curve fits. For A–D, note that the y-axes are scaled to match the young adult dataset.
 
 We next calculated the ratio of the maximal evoked EPSC/IPSC amplitude (Figure 5B). We tested the null hypothesis that all data could be fit by one curve (one-site binding curve), and found that, instead, the fits of the two genotypes were significantly different (p < 0.0001), with a markedly larger EPSC/IPSC ratio in Scn1a+/- GCs. The data were further analyzed using a mixed-effects model with post-hoc analysis with multiple comparisons, with significant differences found between genotypes in the two strongest stimulation conditions (400 µA: 1.8 ± 0.4 Scn1a+/- versus 1.0 ± 0.2 WT, p = 0.03; 500 µA: 1.9 ± 0.5 Scn1a+/- versus 1.0 ± 0.1 WT, p = 0.009).
 
@@ -87,7 +491,7 @@ This increase in evoked EPSC could result from a pre- and/or post-synaptic mecha
 
 In contrast, parallel experiments at the early postnatal timepoint revealed no genotype difference in either glutamate puff-evoked currents or in the dynamics of perforant path-evoked EPSCs (Figure 5—figure supplement 2). However, the small but statistically significant genotype difference in dF/F0 (Figure 2D 1) persisted in the presence of PTX (Figure 5—figure supplement 2A) and is thus also independent of synaptic inhibition.
 
-## Optogenetic activation of entorhinal cortex readily triggers seizures in Scn1a+/- mice
+### Optogenetic activation of entorhinal cortex readily triggers seizures in Scn1a+/- mice
 
 The DG controls hippocampal signal propagation from entorhinal cortex to CA3; dysfunction of this control point is hypothesized to be involved in temporal lobe epileptogenesis and seizure generation in chronic temporal lobe epilepsy (Behr et al., 1998; Dengler et al., 2017; Lu et al., 2016). Having demonstrated that corticohippocampal circuit function is impaired in Scn1a+/- mice (Figure 2), we next moved in vivo to test the implications of this circuit dysregulation on ictogenesis. We hypothesized that the hyperexcitable corticohippocampal circuit in Scn1a+/- mice would be vulnerable to seizures in response to entorhinal cortex activation.
 
@@ -95,23 +499,31 @@ We injected an AAV encoding ChR2 under control of the excitatory neuron-specific
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig6-v2.jpg)
 
-**Figure 6.:** Scn1a mice.+/-(A) Scn1a and wild-type mice were injected with AAV9-CaMKIIα-ChR2-YFP into entorhinal cortex; a subset of +/-Scn1a mice were instead injected with the control virus AAV9-CaMKIIα-YFP. (+/-B) Viral expression (green) was seen in the PP projection to dorsal (left) and ventral (right) hippocampus (as delineated by DAPI; blue). (C) Whole-cell current-clamp trace demonstrating light-evoked 20 Hz action potentials in a ChR2-expressing neuron in entorhinal cortex (470 nm, blue lines). Scale bar: 200 ms / 40 mV. (D) Pulsed photostimulation is delivered to EC at 20 Hz, 5ms pulse-width, for 5 s on / 5 s off. Mice are stimulated initially at room temperature for up to 5 min, then while subjected to hyperthermia again until 42.5 °C, or until a behavioral seizure is observed. (E) Seizure threshold for Scn1a mice expressing ChR2 (38.7°C ± 0.5°C; +/-n = 6 mice; red circles) was significantly lower than that for Scn1a mice expressing YFP control virus (41.7°C ± 0.1°C; +/-n = 6 mice; red triangles), or wild-type mice expressing ChR2 (n = 5 mice; blue circles). Note that some wild-type mice had no seizure prior to 42.5 °C (open circles). p < 0.0001 for both two-way comparisons (Sidak’s multiple comparisons tests, assuming a threshold of 42.5 °C for the wild-type mice that had no seizure). (F) Photostimulation duration prior to seizure onset was also significantly lower for the Scn1a-ChR2 group (p = 0.02 versus +/-Scn1a-YPF and 0.04 versus wild-type-ChR2; Sidak’s multiple comparisons tests).+/-Figure 6—source data 1.
+**Figure 6.:** (A) Scn1a+/- and wild-type mice were injected with AAV9-CaMKIIα-ChR2-YFP into entorhinal cortex; a subset of Scn1a+/- mice were instead injected with the control virus AAV9-CaMKIIα-YFP. (B) Viral expression (green) was seen in the PP projection to dorsal (left) and ventral (right) hippocampus (as delineated by DAPI; blue). (C) Whole-cell current-clamp trace demonstrating light-evoked 20 Hz action potentials in a ChR2-expressing neuron in entorhinal cortex (470 nm, blue lines). Scale bar: 200 ms / 40 mV. (D) Pulsed photostimulation is delivered to EC at 20 Hz, 5ms pulse-width, for 5 s on / 5 s off. Mice are stimulated initially at room temperature for up to 5 min, then while subjected to hyperthermia again until 42.5 °C, or until a behavioral seizure is observed. (E) Seizure threshold for Scn1a+/- mice expressing ChR2 (38.7°C ± 0.5°C; n = 6 mice; red circles) was significantly lower than that for Scn1a+/- mice expressing YFP control virus (41.7°C ± 0.1°C; n = 6 mice; red triangles), or wild-type mice expressing ChR2 (n = 5 mice; blue circles). Note that some wild-type mice had no seizure prior to 42.5 °C (open circles). p < 0.0001 for both two-way comparisons (Sidak’s multiple comparisons tests, assuming a threshold of 42.5 °C for the wild-type mice that had no seizure). (F) Photostimulation duration prior to seizure onset was also significantly lower for the Scn1a+/--ChR2 group (p = 0.02 versus Scn1a+/--YPF and 0.04 versus wild-type-ChR2; Sidak’s multiple comparisons tests).
 
 It is well established that Scn1a+/- mice exhibit not only spontaneous but also temperature-sensitive seizures (Oakley et al., 2009). We took advantage of this phenotype to test whether activation of entorhinal cortex could also shift the temperature threshold for seizure generation in Scn1a+/- mice. We optogenetically stimulated entorhinal cortex in vivo, initially at room temperature for 5 min, and then (if no seizure was evoked), while subjecting the mice to a ramp of increased core body temperature up to 42.5 °C (Figure 6D). Since rhythmic stimulation of excitatory neurons can evoke seizures even in wild-type mice (Khoshkhoo et al., 2017), we titrated our stimulation parameters (5 ms pulse width at 20 Hz = 10% duty cycle; 5 s on / 5 s off; similar to previously published protocol Leung et al., 2018) such that the wild-type ChR2 mice had either no seizures, or seizures only at/near maximal temperature elevation (42.5 °C). Under these same conditions, the Scn1a+/--ChR2 mice exhibited behavioral seizures at a significantly lower threshold temperature compared to both control cohorts (Figure 6E). A statistically significant difference was also seen in time to seizure onset during stimulation (Figure 6F), although noting that any cohort differences in autonomic regulation and thus heating rate could be confounding (Sahai et al., 2021).
 
-## Inhibition of dentate gyrus PV-INs lowers the temperature threshold for seizure induction in Scn1a+/- mice
+### Inhibition of dentate gyrus PV-INs lowers the temperature threshold for seizure induction in Scn1a+/- mice
 
 If corticohippocampal circuit hyperexcitability promotes susceptibility to hyperthermic seizures and is not due to DG PV-IN dysfunction, we hypothesized that inhibition of DG PV-INs would exacerbate the hyperthermic seizure phenotype of Scn1a+/- mice. To test this, we injected an AAV encoding the inhibitory Designer Receptor Exclusively Activated by Designer Drugs (DREADD; AAV8.hSyn.FLEX.hMD4(Gi).mCh; Krashes et al., 2011) throughout the bilateral dentate gyri of PvalbCre mice (Figure 7A). We verified virus expression within DG (Figure 7B) and performed acute whole-cell recordings in slice to confirm that bath-application of the ligand clozapine-N-oxide (CNO) significantly hyperpolarized expressing neurons (change in resting potential –9.9 ± 2.8 mV, p = 0.02, paired t-test, n = 6 cells).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig7-v2.jpg)
 
-**Figure 7.:** Scn1a mice.+/-(A)Scn1a and wild-type +/-PvalbCre mice were injected with AAV9-hSyn-FLEX-hM4D(Gi)-mCherry into bilateral DG. (B) PV-IN expression (red) was sparse within the dentate gyrus (anatomically delineated by DAPI staining, blue). (C) On Day 1, mice were randomized to receive either CNO (circle) or vehicle (triangle) injection prior to hyperthermic seizure induction; mice received the other agent on Day 2. (D) The seizure threshold for mice with CNO injection (i.e. inhibition of dentate PV-INs) was significantly lower than vehicle (p = 0.01; unpaired t test); no wild-type mice had evoked seizures after CNO injection (open circles). (E) Data pooled across the two days revealed a significantly lower seizure threshold with CNO injection (p = 0.009; paired t test). (F) In a separate control cohort of mice not injected with hM4D(Gi), there was no effect of CNO on seizure threshold. n = 12 Scn1a mice with hM4D(Gi), 6 wild-type mice with hM4D(Gi), and 8 +/-Scn1a mice with no viral injection.+/-Figure 7—source data 1.
+**Figure 7.:** (A)Scn1a+/- and wild-type PvalbCre mice were injected with AAV9-hSyn-FLEX-hM4D(Gi)-mCherry into bilateral DG. (B) PV-IN expression (red) was sparse within the dentate gyrus (anatomically delineated by DAPI staining, blue). (C) On Day 1, mice were randomized to receive either CNO (circle) or vehicle (triangle) injection prior to hyperthermic seizure induction; mice received the other agent on Day 2. (D) The seizure threshold for mice with CNO injection (i.e. inhibition of dentate PV-INs) was significantly lower than vehicle (p = 0.01; unpaired t test); no wild-type mice had evoked seizures after CNO injection (open circles). (E) Data pooled across the two days revealed a significantly lower seizure threshold with CNO injection (p = 0.009; paired t test). (F) In a separate control cohort of mice not injected with hM4D(Gi), there was no effect of CNO on seizure threshold. n = 12 Scn1a+/- mice with hM4D(Gi), 6 wild-type mice with hM4D(Gi), and 8 Scn1a+/- mice with no viral injection.
 
 We tested the effect of PV-cell inhibition in vivo by comparing the temperature threshold for seizure induction of mice following subcutaneous injection of CNO versus vehicle control (Figure 7C). We found that Scn1a+/- mice injected with CNO had significantly decreased seizure threshold; wild-type mice did not exhibit behavioral seizures despite CNO injection (Figure 7D). We then performed a crossover the following day, such that mice that received vehicle on Day one received CNO on Day 2, and vice versa, which further demonstrated that inhibition of PV-INs lowered seizure threshold in Scn1a+/- mice (Figure 7D). A separate, control cohort of Scn1a+/- mice, with no viral DREADD expression, were used to confirm that CNO itself was not ictogenic (Figure 7E).
 
-## Activation of dentate gyrus PV-INs decreases corticohippocampal circuit hyperexcitability in Scn1a+/- mice
+### Activation of dentate gyrus PV-INs decreases corticohippocampal circuit hyperexcitability in Scn1a+/- mice
 
 Given that PV-INs are known to exert powerful feedforward inhibition in DG (Ewell and Jones, 2010; Lee et al., 2016), and that Scn1a+/- DG PV-INs have only subtle deficits of spike initiation at the young adult time point (Figure 3, Table 2), we hypothesized that targeted activation of DG PV-INs could correct the imbalance of evoked inputs onto GCs in Scn1a+/- mice. We injected a 1:1 mix of two AAVs into the DG of Scn1a+/-.PvalbCre mice (Figure 8A): (1) the calcium indicator GCaMP7s (AAV9.hSyn.GCaMP7s) as in Figure 1, and (2) the red-shifted excitatory opsin, ChrimsonR (Klapoetke et al., 2014) under Cre-dependent control (AAV9.hSyn.FLEX.ChrimsonR.tdT), allowing simultaneous imaging of DG and photo-activation of PV-INs.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig8-v2.jpg)
+
+**Figure 8.:** (A) Scn1a+/-.PvalbCre mice were injected with a mix of AAV9-hSyn-GCaMP7s and AAV9-hSyn-FLEX-ChrimsonR-tdT into DG. (B) Whole-cell current-clamp trace demonstrating light-evoked action potentials in a ChrimsonR-expressing PV-IN (660 nm, red bar). (C) Example calcium transients in GCs with electrical PP stimulation (single pulse, 500 µA, arrow), either alone (black) or coupled with optogenetic PV-IN activation (10ms light pulse; gray). Proportional GC activation (D) and magnitude of GC responses (E) to PP stimulation (one pulse, 500 µA) are both significantly decreased by concurrent optogenetic PV-IN activation. Each line represents one imaging field, subject to PP stimulation alone versus PP stimulation with optogenetic PV-IN activation (p < 0.001; paired t-test). Expression in PV-INs (F) results in perisomatic ChrimsonR fibers (red) surrounding GCaMP-expressing GC cells (green) within the granule cell layer, whereas expression in SST-INs (G) results in ChrimsonR expression primarily seen within the molecular layer. Optogenetic activation of DG PV-INs is more effective that activation of DG SST-INs at decreasing PP stimulation-evoked activity in GCs, with a lower proportional activation (G) and dF/F0 amplitude (H), normalized to the response to PP stimulation alone in the same cells and imaging fields. Significance (p < 0.01) determined using mixed model analysis. n for PvalbCre and SstCre, respectively: 1055 and 663 (cells), 13 and 15 (fields), 6 and 3 (mice).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/69293/elife-69293-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** PvalbCre (A) and SstCre (B) mice were injected with AAV9-hSyn-FLEX-ChrimsonR-tdT into DG. ChrimsonR expression (red) and antibody staining for PV or SST (green) were highly colocalized (white arrows).
 
 After verifying functional opsin expression in PV-INs (Figure 8B), we used 2 P calcium imaging to record PP stimulation-evoked activation of GCs either with or without concurrent optogenetic activation of DG PV-INs. We found that optogenetic co-activation significantly reduced PP-evoked DG hyper-activation in Scn1a+/- mice (Figure 8C–E), decreasing the proportion of activated GCs (0.15 ± 0.04 with PV-IN activation versus 0.48 ± 0.08 without; p < 0.001, paired t-test) and the magnitude of evoked calcium transient (dF/F0) within that subset of activated cells (0.10 ± 0.03 with PP stimulation versus 0.38 ± 0.03 without; p < 0.001; paired t-test). As a negative control, we also delivered photo-stimulation without PP activation in a subset of imaging fields, and confirmed that, as expected, no GCs were directly activated (data not shown).
 
@@ -121,11 +533,11 @@ To test whether this rescue was specific to activation of PV-INs, we repeated th
 
 Prior work has established that Dravet syndrome (DS) is largely due to heterozygous pathogenic loss-of-function variants in SCN1A leading to haploinsufficiency of the voltage-gated sodium channel α subunit Nav1.1 (Claes et al., 2001). However, mechanisms by which loss of Nav1.1 leads to the epilepsy, neurodevelopmental disability and SUDEP that clinically defines DS remains under intense investigation. Work in preclinical experimental mouse models of DS (Scn1a+/- mice) demonstrates temporal lobe-onset seizures (Liautard et al., 2013) and prominent activation of hippocampal DG during temperature-sensitive seizures (Dutton et al., 2017), suggesting involvement of hippocampus in seizure generation in Scn1a+/- mice. This corresponds with human clinical data demonstrating hippocampal involvement in patients with SCN1A-related seizure disorders (Colosimo et al., 2007; Gaily et al., 2013; Van Poppel et al., 2012). In this study, we employed 2 P calcium imaging in acute slice in an experimental mouse model of DS (Figure 1) to demonstrate a profound abnormality in a corticohippocampal circuit element strongly linked to temporal lobe seizures and epilepsy (Figure 2). This abnormality was not prominent in early postnatal mice (P14-21) yet became more profound in the chronic phase of the disorder. In contrast, defects in PV-IN excitability became less pronounced at this later timepoint (Figure 3) and hence could not account for the identified circuit dysfunction (Figure 4). Indeed, Scn1a+/- mice had no impairment in disynaptic feedforward inhibition from entorhinal cortex onto GCs; rather, there was increased strength of monosynaptic excitatory input from entorhinal cortex to DG, with evidence of increased release probability implicating pre-synaptic mechanisms of PP dysfunction driving circuit dysregulation (Figure 5). We then extended our study in vivo and found that both optogenetic activation of the perforant path (Figure 6) and chemogenetic inhibition of PV-INs (Figure 7) significantly decreased the temperature threshold for seizure generation in Scn1a+/- mice. Finally, we targeted and corrected this circuit abnormality in vitro by recruiting inhibitory reserve via optogenetics in slice (Figure 8). Taken together, these results demonstrate a clear locus of dysfunction despite complex circuit abnormalities and suggest unexpected plastic rearrangements in corticohippocampal circuity that may relate to the dynamic clinical evolution and maintenance of chronic epilepsy and intellectual disability in DS.
 
-## Calcium imaging enables large-scale comparison of dentate gyrus activation in wild-type and Scn1a+/- mice
+### Calcium imaging enables large-scale comparison of dentate gyrus activation in wild-type and Scn1a+/- mice
 
 2 P imaging allows simultaneous read-out of the activity of hundreds (and now even many thousands or more Stringer et al., 2019) of neurons, with cellular resolution and at high speeds. Our aim was to use 2 P imaging for a large-scale comparison of GC activation between genotypes (Scn1a+/- versus wild-type), which is a valid approach only if there is no genotype difference in the relationship between the number of action potentials that a neuron fires and its resulting calcium signal (dF/F0). This is indeed a theoretical concern as previous studies have demonstrated dysregulation of voltage gated calcium channel expression patterns in hippocampal neurons in rodent models as well as human patients with TLE (Xu and Tang, 2018; Yaari et al., 2007). Expression of calcium binding proteins, such as calmodulin and calbindin, may also be altered by, and play a role in, the pathological process of epilepsy (Xu and Tang, 2018). We therefore directly tested the ability of GCaMP7s to report action potentials in both Scn1a+/- and wild-type GCs (Figure 1), confirming that we could detect single action potentials in both genotypes under our experimental conditions and that there was no difference between genotypes in the relationship between action potentials and calcium-induced fluorescence increases. That this was the case may relate to the relative homogeneity of GCs and the fact that intrinsic GC cellular physiology does not appear to change in Scn1a+/- mice (Figure 2—figure supplement 4; Table 1).
 
-## Corticohippocampal circuit hyperexcitability and ictogenesis in Scn1a+/- mice
+### Corticohippocampal circuit hyperexcitability and ictogenesis in Scn1a+/- mice
 
 Consistent with previous literature (Yu et al., 2013), we found that, in wild-type mice, the response of GCs to PP stimulation is robust in early postnatal mice (P14-21), becoming sparse by the young adult timepoint (Figure 2). This developmental pattern was disrupted in Scn1a+/- mice: the GC response was only mildly abnormal via selected measures in early postnatal mice (P14-21), whereas relative to wild-type age-matched controls, GCs were profoundly hyper-activated in young adult mice across all conditions and analyses.
 
@@ -135,7 +547,7 @@ In chronic acquired TLE after brain injury (such as due to status epilepticus in
 
 Note that it is highly unlikely that this corticohippocampal circuit hyperexcitability provides a complete mechanistic explanation for seizures in Scn1a+/- mice, which places several important limitations on the scope of our interpretation. First, we only tested the impact of this circuit on hyperthermia-evoked seizures, and it is possible that spontaneous seizures are mechanistically dissimilar. Second, spontaneous seizures in this model begin at approximately P16-18 (Hawkins et al., 2017), at which time this circuit is only mildly hyperexcitable (Figure 2); hence, this circuit abnormality likely does not underlie epilepsy onset in these mice (which may instead relate to the transient but profound hypoexcitability of PV-INs at early developmental time points), although it may contribute to ongoing seizures in the chronic phase. Finally, although there is evidence of temporal lobe dysfunction (Gaily et al., 2013; Kasperaviciute et al., 2013; Siegler et al., 2005; Tiefes et al., 2019; Van Poppel et al., 2012) in human patients with DS, DS is a multifocal epilepsy and seizures do not exclusively emanate from the temporal lobe.
 
-## Mechanisms of corticohippocampal hyperexcitability in DS: expanding beyond the interneuron hypothesis
+### Mechanisms of corticohippocampal hyperexcitability in DS: expanding beyond the interneuron hypothesis
 
 As PV-INs in DG have been shown to powerfully regulate the GC response to entorhinal cortical input (Ewell and Jones, 2010; Lee et al., 2016) and GABAergic interneurons are known to be abnormal in Scn1a+/- mice (Bechi et al., 2012; Mistry et al., 2014; Ogiwara et al., 2013; Tsai et al., 2015; Yu et al., 2006), we initially hypothesized that PV-IN dysfunction would be the primary mechanism underlying the GC hyperactivation observed here (Figure 2). However, our findings were not compatible with this conclusion, for multiple reasons.
 
@@ -153,7 +565,7 @@ Taken together, our findings demonstrate excessive excitation in the cortico-hip
 
 The mechanism underlying the developmental pattern of the corticohippocampal circuit deficit remains unclear. The typical development of the corticohippocampal circuit – in which PP-evoked DG firing becomes more sparse – is at least in part mediated by increases in local circuit inhibition (Dieni et al., 2013; Yu et al., 2013); thus, it is not simply the case that the Scn1a+/- circuit remains in an ‘immature’ state. Rather, persistent GC hyperactivation could reflect accumulated or repetitive insult from ongoing seizures, a complex interaction between genotype and seizure burden (Dutton et al., 2017; Salgueiro-Pereira et al., 2019), and/or a pathologic compensatory increase in synaptic strength of the PP in response to loss of Nav1.1. These possibilities could be further explored using experimental manipulations to exacerbate (Dutton et al., 2017; Hawkins et al., 2017; Salgueiro-Pereira et al., 2019) or ameliorate (Hawkins et al., 2017) the epilepsy phenotype of Scn1a+/- mice; subsequent testing of the excitability of the corticohippocampal circuit could help parse the contribution of the genotype (common across cohorts) versus, for example, the effect of ongoing seizures, to disease severity. Conversely, it would be of interest to focally rescue Scn1a levels exclusively in dentate gyrus and/or entorhinal cortex of Scn1a+/- mice (Colasante et al., 2020), to test whether the corticohippocampal circuit would remain abnormal (assuming continued seizures involving the hippocampus). Finally, while we did not directly assess dendritic integration by GCs – which are known to exhibit strong voltage attenuation that modulates dendritic integration and contributes to their sparse activation in response to PP input (Krueppel et al., 2011) – we do show that (a) the intrinsic excitability of GCs (as measured at the soma) is unchanged in Scn1a+/- mice at both developmental time points and (b) the response to exogenous glutamate application is the same between genotypes (with attendant caveats noted above).
 
-## Rescue of corticohippocampal circuit excitability via targeted recruitment of PV-INs
+### Rescue of corticohippocampal circuit excitability via targeted recruitment of PV-INs
 
 To test the impact of local inhibitory interneurons on the recruitment of GCs by PP input, we combined 2 P imaging with optogenetic stimulation with the red-shifted channelrhodopsin variant ChrimsonR (Klapoetke et al., 2014; Figure 8). This technique enabled us to perform simultaneous imaging (of anatomically defined GCs) and photostimulation (of genetically defined interneuron subtypes; that is PV-INs or SST-INs) within the same slice. We found that targeted PV-IN activation in acute slice significantly decreased GC activation in response to PP input (Figure 8).
 
@@ -163,9 +575,194 @@ Improved understanding of the mechanisms of ictogenesis in DS is critical toward
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculis)</td>
+      <td>129S-Scn1atm1Kea/Mmjax</td>
+      <td>Jax</td>
+      <td>RRID:MMRRC_037107-JAX</td>
+      <td>Dr. Jennifer A. Kearney, Northwestern University</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculis)</td>
+      <td>B6;129P2-Pvalbtm1(cre)Arbr/J</td>
+      <td>Jax</td>
+      <td>RRID:IMSR_JAX: 017320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculis)</td>
+      <td>B6J.Cg-Ssttm2.1(cre)Zjh/MwarJ</td>
+      <td>Jax</td>
+      <td>RRID:IMSR_JAX:028864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculis)</td>
+      <td>Rosa-CAG-LSL-tdTomato</td>
+      <td>Jax</td>
+      <td>RRID:IMSR_JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculis)</td>
+      <td>C57BL/6 J</td>
+      <td>Jax</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGP-AAV-syn-jGCaMP7s-WPRE</td>
+      <td>Addgene</td>
+      <td>104487-AAV9</td>
+      <td>3 × 1013 cfu/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-Syn-ChrimsonR-tdT</td>
+      <td>Addgene</td>
+      <td>59171-AAV9</td>
+      <td>2.3 × 1012 cfu/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CaMKIIa-hChR2(H134R)-EYFP</td>
+      <td>Addgene</td>
+      <td>26969-AAV9</td>
+      <td>3.9 × 1012 cfu/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9-CamKIIα-eYFP-WPRE-hGH</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td>3.9 × 1012 cfu/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn-DIO-hM4D(Gi)-mCherry</td>
+      <td>Addgene</td>
+      <td>44362-AAV9</td>
+      <td>9.0 × 1012 cfu/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Hm1a</td>
+      <td>Alomone</td>
+      <td>STH-601</td>
+      <td>50 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Quantum dot</td>
+      <td>PMID:25326662</td>
+      <td></td>
+      <td>Igor L. Medintz, U.S. Naval Research Laboratory</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Tocris Bioscience</td>
+      <td>11–281 G</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine N-oxide (CNO)</td>
+      <td>Sigma-Aldrich</td>
+      <td>C0832</td>
+      <td>10 µM (slice); 10 mg/kg (in vivo)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 10</td>
+      <td>Clampfit</td>
+      <td>RRID:SCR_011323</td>
+      <td>V10.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td>2019 a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python Programming Language</td>
+      <td>http://www.python.org/</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Analysis of two photon imaging data</td>
+      <td>This paper Somarowthu, 2022</td>
+      <td>https://github.com/GoldbergNeuroLab/Mattis-et-al.-2022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Analysis of whole cell patching data</td>
+      <td>This paper Evans, 2022; Goff, 2022</td>
+      <td>https://github.com/GoldbergNeuroLab/Mattis-et-al.-2022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Parvalbumin antibody (Rabbit polyclonal)</td>
+      <td>Swant Cat# PV27</td>
+      <td>RRID:AB_2631173</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- Somatostatin antibody (Rat monoclonal)</td>
+      <td>Millipore Cat# MAB354</td>
+      <td>RRID:AB_2255365</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rat IgG (H + L) Antibody, Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Molecular Probes Cat# A-11006</td>
+      <td>RRID:AB_141373</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (H + L) Antibody, Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Molecular Probes Cat# A-11008</td>
+      <td>RRID:AB_143165</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Thermo Fisher Scientific Cat# D1306</td>
+      <td>RRID:AB_2629482</td>
+      <td>(1:50,000)</td>
+    </tr>
+  </tbody>
+</table>
+
 All experiments were carried out as per protocols approved by the Institutional Animal Care and Use Committee at the Children’s Hospital of Philadelphia, in accordance with ethical guidelines set forth by the National Institutes of Health.
 
-## Experimental animals
+### Experimental animals
 
 Male and female mice were used in equal proportion. Mice were weaned at P21 and were subsequently group-housed to the extent possible in cages containing up to five mice. Mice were maintained on a 12 hr light/dark cycle with access to food and water ad libitum. All mice were genotyped via PCR analysis of a tail snip obtained at P7.
 
@@ -173,21 +770,21 @@ The Scn1a+/- mice used in this study have a targeted deletion of the first exon 
 
 For experiments requiring targeted viral expression in, or visualization of, PV-INs, female PvalbCre.tdT double-heterozygous mice were generated from a cross between homozygous tdTomato reporter/Ai14D mice (Rosa-CAG-LSL-tdTomato; RRID:IMSR_JAX:007914) and homozygous PvalbCre mice (B6;129P2-Pvalbtm1(cre)Arbr; RRID:IMSR_JAX:008069). These mice are on a 100% C57BL/6 J background. The F1 progeny include Scn1a+/-.PvalbCre.tdT and PvalbCre.tdT mice (1:8 predicted Mendelian ratio for each). These mice express tdT in PV-INs, which facilitates targeted experiments. A similar strategy was used for experiments targeting viral expression to SST-INs, with SstCre mice (B6J.Cg-Ssttm2.1(cre)Zjh; RRID:IMSR_JAX:028864).
 
-## Viral injections
+### Viral injections
 
 Subdural viral injections (early postnatal mice): To achieve GCaMP expression in early postnatal mice, subdural viral injections (Gao et al., 2019) were performed on mice at age P0-2. Mice were anesthetized by cooling on ice until cessation of motor activity. The scalp was sterilized using ethanol. Virus was injected halfway between lambda and bregma and halfway between the midline and the eye, using a 10 µL syringe (Hamilton) and a 33 G beveled needle (World Precision Instruments). Injections of GCaMP (AAV9.syn.GCaMP7s.WPRE; Addgene) were performed bilaterally using 1 µL of virus at a genomic titer of 1.5 × 1013 cfu/mL.
 
 Stereotaxic viral injections (young adult mice): Mice were anesthetized by inhalation of isoflurane (4% induction, 1–2% maintenance) in oxygen. Anesthesia depth was monitored by response to toe pinch and by breathing rate. Animals were injected subcutaneously with buprenorphine (0.5–1.0 mg/kg, sub-Q), cefazolin (500 mg/kg, sub-Q), and meloxicam (5 mg/kg, sub-Q), for post-operative analgesia and anti-bacterial prophylaxis. Mice were placed in a stereotaxic apparatus (Kopf Instruments) while resting on a heating pad. After removal of fur and sterilization of the scalp, a scalpel was used to expose the skull, and target regions were identified in relation to skull surface landmarks (lambda and bregma). Craniotomies were made using a hand-held drill. Injections were performed with 200–250 nL of virus per site, at a rate of 100 nL/min, using a 10 µL syringe (Hamilton) and a 33 G beveled needle (World Precision Instruments). Injection coordinates for entorhinal cortex (relative to Bregma, in mm) were –4.5 (A/P) / 3.0 (M/L) / 4.5 (D/V); –4.5 (A/P) / 3.6 (M/L) / 4.2 (D/V); and –4.8 (A/P) / 3.2 (M/L), 3.2 and 3.8 (D/V). Dorsal and ventral DG were targeted via 10–12 injections per animal, spanning from –1.5 to –3.8 A/P, 0.7–2.6 M/L, and 2.0–3.8 D/V. Injections were unilateral (R hemisphere) except for mice used for in vivo chemogenetics experiment, which had bilateral injections. The viruses and final genomic titers (following dilution) were as follows: AAV9-syn-GCaMP7s-WPRE (Addgene 104487; 3 × 1012 cfu/mL); AAV9-syn-FLEX-ChrimsonR-tdT (Addgene 59171; 2.3 × 1012 cfu/mL); AAV9-CamKIIα-hChR2(H134R)-eYFP-WPRE-hGH (Addgene 26969; 3.9 × 1012 cfu/mL); AAV9-CamKIIα-eYFP-WPRE-hGH (UNC Vector Core; 3.9 × 1012 cfu/mL); AAV8-hSyn-DIO-hM4D(Gi)-mCherry (Addgene 44362; 9.0 × 1012 cfu/mL). All experiments were performed at least 3 weeks after injection to allow for virus expression.
 
-## Acute slice preparation
+### Acute slice preparation
 
 Mice were deeply anesthetized using inhaled isoflurane. Adult mice were perfused transcardially with 5 mL ice-cold sucrose-based cutting solution. Brains were removed and immediately transferred to ice-cold sucrose solution (in mM: NaCl, 87; sucrose, 75; KCl, 2.5; CaCl2, 1.0; MgSO4, 2.0; NaHCO3, 26; NaH2PO4, 1.25; glucose, 10), and equilibrated with 95% O2 and 5% CO2. Hippocampal-entorhinal cortex (HEC) slices were obtained to preserve within the slice the PP connection between the entorhinal cortex and the hippocampus (Xiong et al., 2017). A mid-sagittal cut was made to divide the hemispheres, and one hemisphere was mounted onto an angled agar block. The blade therefore passed through the block at an acute (15°) downward angle from rostral to caudal, resulting in modified horizontal/axial HEC slices. Slices were sectioned at a 300 µm thickness using a Leica VT-1200S vibratome. Slices were transferred to a holding chamber containing the same sucrose solution. After a recovery period of 30 min at 30°C–32°C, the holding chamber was removed from the water bath and allowed to return to room temperature.
 
-## Perforant path stimulation
+### Perforant path stimulation
 
 The perforant path was stimulated using a 125 µm diameter concentric bipolar microelectrode (FHC Inc NC0950490). The electrode was placed in the entorhinal cortex adjacent to the apex of the dentate gyrus granule cell layer and approximately 100 µm from the hippocampal fissure so as not to directly stimulate GCs. Since GCs are known to be more readily activated by PP stimulation in younger mice (Yu et al., 2013), we selected different ranges of stimulation intensity for the two groups (25–400 µA for early postnatal; 100–500 µA for young adult).
 
-## Slice electrophysiology
+### Slice electrophysiology
 
 Slices were transferred to a recording chamber (shielded from light in the case of opsin-containing slices) and continuously perfused with oxygenated artificial cerebrospinal fluid (ACSF; in mM: NaCl, 125; KCl, 2.5; CaCl2, 2.0; MgSO4, 1.0; NaHCO3, 26; NaH2PO4, 1.25; glucose, 10), continuously bubbled with 95% O2 and 5% CO2, at a rate of approximately 3 mL/min. All slice physiology experiments were performed at 30°C–32°C.
 
@@ -201,41 +798,41 @@ For cell-attached recordings, Quantum Dots (Andrásfalvy et al., 2014) were empl
 
 Signals were sampled at 50 kHz, amplified with a MultiClamp 700B amplifier (Molecular Devices), filtered at 10 kHz, digitized using a DigiData 1550, and acquired using pClamp10 software. Data were not included for final analysis if the cell had a membrane potential greater (less negative) than –60 mV (for GCs) or greater than –50 mV (for PV-INs), or if access resistance was greater than 30 MΩ. Series resistance compensation (bridge balance) was applied throughout current clamp experiments with readjustments as necessary. Reported values for membrane potential and AP threshold are not corrected for the liquid junction potential.
 
-## 2P calcium imaging and combined optogenetic stimulation in acute slice
+### 2P calcium imaging and combined optogenetic stimulation in acute slice
 
 Slices were continuously perfused with oxygenated ACSF (as for slice physiology, above) and were heated to 30–32°C. Imaging was performed using a customized two-photon laser scanning microscope (Bruker Ultima) equipped with a resonant scanner (Cambridge Technologies) and a MaiTai DeepSee Ti:Sapphire mode-locked pulsed infrared laser (SpectraPhysics). GCaMP7s was imaged at 920 nm with a gallium arsenide phosphide (GaAsP) photodetector (H7422-40; Hamamatsu) through a 25 X/0.95-NA water immersion objective (Leica). Laser power for imaging in the acute brain slice preparation typically ranged from 10 to 20 mW (at the specimen). For each stimulation, 500 frames were collected with a frame period of 33.8ms (30 Hz) and a resolution of 512 × 512 pixels.
 
 Full field photostimulation was delivered through the objective lens with a high-powered red (660 nm) LED (M660L4; Thorlabs). This was mounted to the epifluorescence port of the microscope and routed to the sample below the PMTs using a custom notched dichromic mirror/polychromic beam splitter with reflectance from 660 ± 20 nm (ZT660/40; Chroma). LEDs were controlled via an LED driver (LEDD1B; Thorlabs) driven by a TTL pulse from and synchronized with either the imaging acquisition software (PrairieView) or electrophysiology data acquisition software (pClamp). Irradiance at the specimen was measured through the imaging objective using a photodiode power sensor (Thorlabs, S120C) and was 26 mW/mm2 for all experiments.
 
-## Slice pharmacology
+### Slice pharmacology
 
 Picrotoxin (Tocris) was used at a saturating concentration of 100 µM in ACSF. Hm1a (Alomone Labs STH-601) was used at a 50 nM final concentration in 0.025% BSA in ACSF. CNO (Sigma) was reconstituted in 4% DMSO and was used at 10 µM in ACSF. Drugs were perfused at 3 mL/min after a baseline recording was obtained.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were deeply anesthetized with isoflurane and transcardially perfused with ice-cold PBS followed by 4% paraformaldehyde (PFA) in PBS. Brains were removed, post-fixed in PFA overnight, and equilibrated in a 30% sucrose solution. 40 µm sections were obtained using a frozen sliding microtome (American Optical). Slices were placed in cryoprotectant (25% glycerol, 30% ethylene glycol, 45% PBS, pH adjusted to 6.7 with HCl) for long-term storage. Before immunostaining, slices were washed in PBS to remove the cryoprotectant and then blocked and permeabilized for one hour at room temperature with 0.3% Triton X-100 (Sigma) and 3% normal goat serum (NGS) in PBS. We incubated slices for ~48 hr at 4o C with a primary antibody for either parvalbumin (Swant PV27, 1:1000) or somatostatin (Millipore MAB354, 1:50) in PBS with 0.3% Triton X-100% and 3% NGS. Slices were then washed with PBS and incubated with a secondary antibody in PBS with 0.3% Triton X-100% and 1% NGS: Alexa Fluor 488 goat anti-rat for PV staining (Molecular Probes, A11006) or goat anti-rabbit for SST staining (Molecular Probes, A11034). Slices were washed, labeled with DAPI (1:50,000; Fisher Scientific), and cover-slipped using polyvinyl alcohol mounting medium with DABCO (Sigma 10981). Imaging was performed using an upright epi-fluorescence microscope (Nikon Instruments).
 
-## Hyperthermic seizure generation
+### Hyperthermic seizure generation
 
 Seizures were elicited by induction of hyperthermia. Mouse body temperature was monitored continuously via a rectal probe (Physitemp), which was secured in place such that stable recordings were obtained while mice moved freely throughout the recording chamber. Mice were placed in a room temperature chamber and were monitored for 5 min to establish a stable body temperature. Mice were then transferred to a second chamber in which they were passively heated via gradual temperature ramp using an overhead lamp. Heating was continued either until a behavioral seizure was observed (at which point the exact body temperature was noted and recorded), or until the body temperature reached 42.5 °C, upon which the mouse was immediately removed from the chamber and cooled using ice.
 
-## In vivo optogenetics
+### In vivo optogenetics
 
 Following stereotaxic virus injection, mice were implanted with a fiberoptic cannula (200 µm core diameter, 240 µm outer diameter, 0.22 NA, flat tip) coupled to a Zirconia ferrule (1.25 mm outer diameter; Doric Lenses). This was implanted above the entorhinal cortex (unilateral, on the right hemisphere). Implant coordinates (relative to Bregma) were –4.5 (A/P); 3.0 (M/L); 3.9 (D/V). The implant was secured to the skull with a layer of adhesive cement (C&B metabond) followed by dental cement (Patterson dental) and then capped prior to use.
 
 In vivo optogenetic stimulation was performed approximately 3 weeks after surgery to allow for virus expression and recovery from surgery. Blue light was generated by a 473 nm laser (Shanghai Laser & Optics Century Co.) and delivered through a fiberoptic patch cord (0.22 NA, 200 µm core diameter; Doric Lenses) coupled to the implanted fiberoptic cannula via a connecting plastic sleeve (Precision Fiber Products). Blue laser output was controlled using a pulse generated (Master-8) to deliver 5 ms light pulse trains at a rate of 20 Hz, 5 s on / 5 s off. Light power was 3 mW, measured at the tip of the fiberoptic.
 
-## In vivo chemogenetics
+### In vivo chemogenetics
 
 CNO was reconstituted in 4% DMSO (in saline) and stored in a 10 mM stock solution. The stock solution was thawed immediately prior to use, diluted 1:2 (in saline), and injected subcutaneously at 10 mg/kg. The vehicle control was 2% DMSO in saline. Mice were injected intraperitoneally 30 min prior to seizure induction. Consecutive seizures were triggered 24 hr apart.
 
-## Analysis of whole-cell electrophysiology data
+### Analysis of whole-cell electrophysiology data
 
 All analysis (Evans, 2022; Goff, 2022) was performed blind to genotype using Matlab (Mathworks) or Python (custom software using Python 3.7 and the pyABF model) with quality control using manual confirmation in Clampfit (pCLAMP). Resting membrane potential (Vm) was measured directly using the average value of a 1 s sweep with no direct current injection. Input resistance (Rm) was calculated using the average response to a small hyperpolarizing step near rest, using Rm = ΔV/I for each sweep. Membrane time constant was calculated from the single exponential fit to the hyperpolarizing response to a negative current injection. Rheobase was determined as the minimum current injection that elicited APs using a 600ms sweep at 10–25 pA intervals. AP threshold was calculated as the value at which the derivative of the voltage (dV/dt) first reached 10 mV/ms. AP peak refers to the absolute maximum voltage value of an individual AP. AP amplitude was the difference between AP peak and AP threshold; AP rise time was the time from AP threshold to AP peak. AP half-width is defined as the width of the AP (in ms) at half-maximal amplitude (half the voltage difference between the AP threshold and peak). AHP amplitude was calculated as the depth of the after-discharge potential (in mV) relative to AP threshold. Sag (produced by Ih), was calculated as the steady state relative to maximal hyperpolarization in response to a negative current injection, expressed as a percentage. Maximal instantaneous firing was calculated as the inverse of the smallest inter-spike interval elicited during a suprathreshold 600ms current injection. Maximal steady-state firing was defined as the maximal mean firing frequency during a suprathreshold 600ms current injection. Spikes were defined as having a clear threshold, at which the derivative of the voltage (dV/dt) is greater than 10 mV/ms, a spike height overshooting 0 mV, and an amplitude of at least 40 mV. All quantification of single spike properties was done at the first spike to the current injection twice rheobase. I-f plots were created using the steady-state firing calculated for each current step.
 
 Paired-pulse ratio was defined as the ratio of the amplitude of the second EPSC to amplitude of the first EPSC (extrapolating a new baseline following the prior EPSC), in response to 20 Hz perforant path stimulation.
 
-## Analysis of 2P imaging data
+### Analysis of 2P imaging data
 
 Analysis was performed using custom code (Somarowthu, 2022) in Matlab. All conditions under each field of view were grouped together as a raw data file. Motion was minimal or absent in most cases, but there was some drift during longer imaging sessions, such as with pharmacologic application. Therefore, within each raw data file, all individual frames were motion corrected using the Non-Rigid Motion Correction (NoRMCorre) Matlab toolbox (Pnevmatikakis, 2019). The first 200 frames were used for the template. The motion corrected individual frames were averaged to obtain an average image for the respective field of view. Regions of interest (ROIs) were identified from the average image. ROIs were individual GCs, and were identified using NeuroSeg (Guan et al., 2018), a Matlab toolbox with both automatic and manual options for selection of regions of cells; we primarily relied upon the manual option as we observed that the automated algorithm was not able to effectively identify the densely packed GCs.
 

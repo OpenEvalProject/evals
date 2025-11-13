@@ -9,11 +9,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Department of Ecology and Evolutionary Biology, University of Michigan Ann Arbor United States
-2. https://ror.org/00jmfr291 Center for the Study of Complex Systems, University of Michigan Ann Arbor United States
-3. https://ror.org/05hs6h993 Department of Computer Science and Engineering, Michigan State University East Lansing United States
-4. https://ror.org/05hs6h993 Program in Ecology, Evolution, and Behavior, Michigan State University East Lansing United States
-5. https://ror.org/03jep7677 Computer Science Department, Carleton College Northfield United States
+1. Department of Ecology and Evolutionary Biology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+2. Center for the Study of Complex Systems, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+3. Department of Computer Science and Engineering, Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
+4. Program in Ecology, Evolution, and Behavior, Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
+5. Computer Science Department, Carleton College Northfield United States ([ROR:03jep7677](https://ror.org/03jep7677))
 
 † Corresponding author
 
@@ -35,7 +35,7 @@ Overall, we found that multiobjective selection techniques (lexicase and non-dom
 
 These findings lay the foundation for strengthened communication between the evolutionary computing and directed evolution communities. The evolution of biological organisms (both natural and artificial) inspired the origination of evolutionary computation, and insights from evolutionary biology are regularly applied to evolutionary computing. As evolutionary computation has immense potential as a system for studying how to control laboratory evolution, these communities are positioned to form a virtuous cycle where insights from evolutionary computing are then applied back to directing the evolution of biological organisms. With this work, we seek to strengthen this feedback loop.
 
-## Directed evolution
+### Directed evolution
 
 Humans have harnessed evolution for millennia, applying artificial selection (knowingly and unknowingly) to domesticate a variety of animals, plants, and microorganisms (Hill and Caballero, 1992; Cobb et al., 2013; Driscoll et al., 2009; Libkind et al., 2011). More recently, a deeper understanding of evolution, genetics, and molecular biology in combination with technological advances has extended the use of artificial selection beyond domestication and conventional selective breeding. For example, artificial selection has been applied to biomolecules (Beaudry and Joyce, 1992; Chen and Arnold, 1993; Esvelt et al., 2011), genetic circuits (Yokobayashi et al., 2002), microorganisms (Ratcliff et al., 2012), viruses (Burrowes et al., 2019; Maheshri et al., 2006), and whole microbial communities (Goodnight, 1990; Swenson et al., 2000; Sánchez et al., 2021). In this work, we focus on directed microbial evolution.
 
@@ -57,19 +57,140 @@ Using our model of laboratory directed evolution, we investigated whether select
 
 We conducted three independent experiments. First, we evaluated the relative performance of parent selection algorithms in a conventional evolutionary computing context, which established baseline expectations for subsequent experiments using our model of laboratory directed evolution. Next, we compared parent selection algorithms using our model of laboratory directed evolution in two contexts. In the first context, we did not link population-level functions (Table 1) to organism survival to evaluate how well each parent selection algorithm performs as a screening-based method of artificial selection. In the second context, we tested whether any of the selection schemes still improve overall directed evolution outcomes even when organism survival is aligned with population-level functions.
 
-## Digital directed evolution
+**Table 1.**
+ Computational functions that conferred individual-level or population-level benefits.The particular functions were chosen to be used in our model based on those used in the Avida system (Bryson et al., 2021). In all experiments, we included two versions of ECHO (each for different input values), resulting in 22 possible functions that organisms could perform. In general, functions that confer population-level benefits are more complex (i.e., require more instructions to perform) than functions designated to confer individual-level benefits.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Function</th>
+      <th># Inputs</th>
+      <th>Benefit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ECHO</td>
+      <td>1</td>
+      <td>Individual</td>
+    </tr>
+    <tr>
+      <td>NAND</td>
+      <td>2</td>
+      <td>Individual</td>
+    </tr>
+    <tr>
+      <td>NOT</td>
+      <td>1</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>ORNOT</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>AND</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>OR</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>ANDNOT</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>NOR</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>XOR</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>EQU</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>2A</td>
+      <td>1</td>
+      <td>Individual</td>
+    </tr>
+    <tr>
+      <td>A2</td>
+      <td>1</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>A3</td>
+      <td>1</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>A×B</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>A−B</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>A2+B2</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>A3+B3</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>A2−B2</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>A3−B3</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+    <tr>
+      <td>A+B2</td>
+      <td>2</td>
+      <td>Population</td>
+    </tr>
+  </tbody>
+</table>
+
+### Digital directed evolution
 
 Figure 1 overviews our model of laboratory directed microbial evolution. Our model contains a set of populations (i.e., a ‘metapopulation’). Each population comprises digital organisms (self-replicating computer programs) that compete for space in a well-mixed virtual environment. Both the digital organisms and their virtual environment are inspired by those of the Avida Digital Evolution Platform (Ofria et al., 2009), which is a well-established study system for in silico evolution experiments (e.g., Lenski et al., 1999; Lenski et al., 2003; Zaman et al., 2014; Lalejini et al., 2021) and is a closer analog to microbial evolution than conventional evolutionary computing systems. However, we note that our model’s implementation is fully independent of Avida, as the Avida software platform does not allow us to model laboratory setups of directed microbial evolution (as described in the previous section).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/79665/elife-79665-fig1-v2.jpg)
 
-**Figure 1.:** In (a), we found each of  populations with a single digital organism. In this figure, the metapopulation comprises three populations. Next (Nb), each population undergoes a maturation period during which digital organisms compete for space, reproduce, mutate, and evolve. After maturation, (c) we evaluate each population based on one or more population-level characteristics, and we select populations (repeat selections allowed) to partition into  ‘offspring’ populations. In this figure, we show populations being evaluated on three objectives (oN1, o2, and o3). In this work, population-level objectives include the ability to compute different mathematical expressions (see Table 1). We see this as analogous to a microbial population’s ability to produce different biomolecules or to metabolize different resources. After evaluation, populations are chosen algorithmically using one of the selection protocols described in ‘Methods.’
+**Figure 1.:** In (a), we found each of $N$ populations with a single digital organism. In this figure, the metapopulation comprises three populations. Next (b), each population undergoes a maturation period during which digital organisms compete for space, reproduce, mutate, and evolve. After maturation, (c) we evaluate each population based on one or more population-level characteristics, and we select populations (repeat selections allowed) to partition into $N$ ‘offspring’ populations. In this figure, we show populations being evaluated on three objectives (o1, o2, and o3). In this work, population-level objectives include the ability to compute different mathematical expressions (see Table 1). We see this as analogous to a microbial population’s ability to produce different biomolecules or to metabolize different resources. After evaluation, populations are chosen algorithmically using one of the selection protocols described in ‘Methods.’
 
 In our model, we seed each population with a digital organism (explained in more detail below) capable only of self-replication (Figure 1a). After initialization, directed evolution proceeds in cycles. During a cycle, we allow all populations to evolve for a fixed number of time steps (i.e., a ‘maturation period’; Figure 1b). During a population’s maturation period, digital organisms execute the computer code in their genomes, which encodes the organism’s ability to self-replicate and perform computational tasks using inputs from its environment. When an organism reproduces, its offspring is subject to mutation, which may affect its phenotype. Therefore, each population in the metapopulation independently evolves during the maturation period. After the maturation period, we evaluate each population’s performance on a set of objectives and apply an artificial selection protocol to algorithmically choose performant populations to propagate (Figure 1c).
 
 In this work, we simulate a serial batch culture protocol. To create an offspring population (Figure 1d), we use a random sample of digital organisms from the chosen parental population (here we used 1% of the maximum population size). We chose this sample size based on preliminary experiments, wherein we found that smaller sample sizes performed better than larger sizes (see supplemental material, Lalejini et al., 2022).
 
-## Digital organisms
+#### Digital organisms
 
 Each digital organism contains a sequence of program instructions (its genome) and a set of virtual hardware components used to interpret and express those instructions. The virtual hardware and genetic representation used in this work extends that of Dolson et al., 2019; Hernandez et al., 2022a. The virtual hardware includes the following components: an instruction pointer indicating the position in the genome currently being executed, 16 registers for performing computations, 16 memory stacks, input and output buffers, ‘scopes’ that facilitate modular code execution, and machinery to facilitate self-copying. For brevity, we refer readers to supplemental material for a more detailed description of these virtual hardware components (Lalejini et al., 2022).
 
@@ -81,45 +202,45 @@ Genomes were fixed at a length of 100 instructions. When an organism replicates,
 
 During evolution, organism replication can be improved in two ways: by improving computational efficiency or by increasing the rate of genome execution (‘metabolic rate’). An organism’s metabolic rate determines the average number of instructions an organism is able to execute in a single time step. Digital organisms can improve their metabolic rate by evolving the ability to perform designated functions (referred to as individual-level functions), including some Boolean logic functions and simple mathematical expressions (Table 1).
 
-Performing a function requires the coordinated execution of multiple genetically encoded instructions, including ones that interact with the environment, store intermediate computations, and output the results. For example, the A+B function requires an organism to execute the input instruction twice to load two numeric inputs into its memory registers, execute an add instruction to sum those two inputs and store the result, and then execute an output instruction to output the result.
+Performing a function requires the coordinated execution of multiple genetically encoded instructions, including ones that interact with the environment, store intermediate computations, and output the results. For example, the $A+B$ function requires an organism to execute the input instruction twice to load two numeric inputs into its memory registers, execute an add instruction to sum those two inputs and store the result, and then execute an output instruction to output the result.
 
 When an organism produces output, we check to see whether the output completes any of the designated functions (given previous inputs it received); if so, the organism’s metabolic rate is adjusted accordingly. Organisms are assigned a random set of numeric inputs at birth that determine the set of values accessible via the input instruction. We guarantee that the set of inputs received by an organism result in a unique output for each designated function. Organisms benefit from performing each function only once, preventing multiple rewards for repeating a single-function result. In this work, we configured each function that confers an individual-level benefit to double an organism’s metabolic rate, which doubles the rate the organism can copy itself. For a more in-depth overview of digital organisms in a biological context, see Wilke and Adami, 2002.
 
-## Population-level evaluation
+#### Population-level evaluation
 
 In addition to individual-level functions, organisms can perform 18 different population-level functions (Table 1). Unless stated otherwise, performing a population-level function does not improve an organism’s metabolic rate. Instead, population-level functions are used for population-level evaluation and selection, just as we might screen for the production of different by-products in laboratory populations. We assigned each population a score for each population-level function based on the number of organisms that performed that function during the population’s maturation period. The use of these scores for selecting progenitors varied by selection scheme (as described in the ‘Methods section).
 
 While population-level functions benefit a population’s chance to propagate, they do not benefit an individual organism’s immediate reproductive success: time spent computing population-level functions is time not spent on performing individual-level functions or self-replicating. Such conflicts between group-level and individual-level fitness are well-established in evolving systems (Simon et al., 2013; Waibel et al., 2009) and are indeed a problem recognized for screening-based methods of artificial selection that must be applied at the population level (Escalante et al., 2015; Brenner et al., 2008).
 
-## Selection schemes
+### Selection schemes
 
-## Elite and top 10% selection
+#### Elite and top 10% selection
 
-Elite and top 10% selection are special cases of truncation selection (Mühlenbein and Schlierkamp-Voosen, 1993) or (μ,λ) evolutionary strategies (Bäck et al., 1991) wherein candidates are ranked and the most performant are chosen as progenitors. We implement these selection methods as they are often used in laboratory directed evolution (Xie et al., 2019; Xie and Shou, 2021). Here, both elite and top 10% selection rank populations according to their aggregate performance on all population-level functions. Elite selection chooses the single best-performing population to generate the next metapopulation, and top 10% chooses the best 10% (rounded up to the nearest whole number) as parental populations.
+Elite and top 10% selection are special cases of truncation selection (Mühlenbein and Schlierkamp-Voosen, 1993) or ($\mu,\lambda$) evolutionary strategies (Bäck et al., 1991) wherein candidates are ranked and the most performant are chosen as progenitors. We implement these selection methods as they are often used in laboratory directed evolution (Xie et al., 2019; Xie and Shou, 2021). Here, both elite and top 10% selection rank populations according to their aggregate performance on all population-level functions. Elite selection chooses the single best-performing population to generate the next metapopulation, and top 10% chooses the best 10% (rounded up to the nearest whole number) as parental populations.
 
-## Tournament selection
+#### Tournament selection
 
-Tournament selection is one of the most common parent selection methods in evolutionary computing. To select a parental population, T populations are randomly chosen (with replacement) from the metapopulation to form a tournament (T=4 in this work). The population with the highest aggregate performance on all population-level functions wins the tournament and is chosen as a parent. We run N tournaments to choose the parental populations for each of N offspring populations.
+Tournament selection is one of the most common parent selection methods in evolutionary computing. To select a parental population, $T$ populations are randomly chosen (with replacement) from the metapopulation to form a tournament ($T=4$ in this work). The population with the highest aggregate performance on all population-level functions wins the tournament and is chosen as a parent. We run $N$ tournaments to choose the parental populations for each of $N$ offspring populations.
 
-## Lexicase selection
+#### Lexicase selection
 
 Unlike the previously described selection schemes, lexicase selection does not aggregate measures of performance across population-level functions (i.e., objectives) to choose parental populations. Instead, lexicase selection considers performance on each population-level function independently. For each parent selection event, all members of the metapopulation are initially considered candidates for selection. To select a parental population, the set of population-level functions is shuffled and each function is considered in sequence. Each function (in shuffled order) is used to filter candidates sequentially, removing all but the best candidates from further consideration. This process continues until only one candidate remains to be selected or until all functions have been considered; if more than one candidate remains, one is selected at random.
 
 Lexicase selection was originally proposed for test-based genetic programming problems (Spector, 2012; Helmuth and Spector, 2015a), but has since produced promising results in a variety of domains (Moore and Stanton, 2017; La Cava et al., 2016; Metevier et al., 2019; Aenugu and Spector, 2019). By randomly permuting the objectives for each parent selection, lexicase selection maintains diversity (Dolson et al., 2018; Helmuth et al., 2016), which improves search space exploration (Hernandez et al., 2022b) and overall problem-solving success (Hernandez et al., 2022a; Helmuth et al., 2015b). In particular, lexicase selection focuses on maintaining specialists (Helmuth et al., 2019).
 
-## Non-dominated elite selection
+#### Non-dominated elite selection
 
 Non-dominated elite selection is a simple multiobjective selection algorithm that chooses all populations that are not Pareto dominated by another population (Zitzler, 1999). A candidate, ca, Pareto dominates another candidate, cb, if the following two conditions are met: (1) ca performs no worse than cb on all population-level functions and (2) ca has strictly better performance than cb on at least one population-level function. The set of all non-dominated populations is then sampled with replacement to seed offspring populations.
 
 Pareto domination is a fundamental component in many successful evolutionary multiobjective optimization (EMOO) algorithms (Fonseca and Fleming, 1995; Zitzler, 1999; Horn et al., 1994; Deb et al., 2002). In general, EMOO algorithms aim to produce the set of solutions with optimal trade-offs of the objective set. Most EMOO algorithms have more sophisticated routines for parent selection than non-dominated elite selection (e.g., use of external archives or crowding metrics). We opted to use non-dominated elite selection for its simplicity, but future work will explore more EMOO selection schemes.
 
-## Selection controls
+#### Selection controls
 
 We used random and no selection treatments as controls. Random selection chooses a random set of populations (with replacement) to serve as parental populations. ‘No selection’ chooses all populations in the metapopulation as sources for founding the next generation of populations; that is, each population is chosen to produce one offspring population. Neither of these controls apply selection pressure for performing population-level functions.
 
-## Experimental design
+### Experimental design
 
-## Establishing baseline problem-solving expectations in an evolutionary computing context
+#### Establishing baseline problem-solving expectations in an evolutionary computing context
 
 First, we evaluated the relative performance of parent selection algorithms in a conventional evolutionary computing context (linear genetic programming; Brameier and Banzhaf, 2007), in which we evolved programs to compute the functions in Table 1. This control experiment followed conventional evolutionary computing setup: there is no metapopulation, and programs are evaluated, selected, and propagated as individuals. We used this control experiment to verify that the genetic representation used by digital organisms is sufficient for evolving each of the computational functions used in subsequent experiments. Additionally, the relative performances of each algorithm establishes an expectation for how each parent selection algorithm might perform in our model of laboratory directed evolution.
 
@@ -131,7 +252,7 @@ After evaluating each individual, we selected ‘parents’ to contribute offspr
 
 At the end of each run, we identified the individual program that performed the most tasks, and we used these programs to compare performance across treatments. Adopting conventional evolutionary computation metrics, we considered a replicate population to be successful if it produced a program capable of performing all 22 tasks during evaluation.
 
-## Applying parent selection algorithms in a digital directed evolution context
+#### Applying parent selection algorithms in a digital directed evolution context
 
 Next, we evaluated each selection scheme’s performance in our model of laboratory directed evolution. For each selection scheme, we ran 50 independent replicates of directed evolution for 2000 cycles of population maturation, screening, and propagation (as shown in Figure 1). During each cycle, we gave populations a maturation period of 200 updates (one update is the amount of time required for the average organism in a population to execute 30 instructions). Each 200-update maturation period allowed for approximately 25–35 generations of evolution, resulting in a total of approximately 50,000–70,000 organism-level generations after 2000 cycles of simulated laboratory directed evolution. Within each replicate, the metapopulation was composed of 96 populations (following the number of samples held by a standard microtiter plate used in laboratory experiments), each with a maximum carrying capacity of 1000 digital organisms. During a population’s maturation period, we measured the number of organisms that performed each of the 18 population-level functions (Table 1) as the population’s ‘phenotype’ for evaluation. We selected populations to propagate according to the treatment-specific selection scheme and propagated chosen parental populations.
 
@@ -141,39 +262,39 @@ Next, we measured the ‘best population task coverage’ and ‘metapopulation 
 
 We also measured the phenotypic diversity within each metapopulation. Specifically, we measured the number of different task profiles present in the metapopulation (i.e., phenotypic richness) and the ‘spread’ of task profiles in the metapopulation. To measure a metapopulation’s task profile spread, we calculated a centroid task profile as the average of all task profiles in the metapopulation, and then we calculated the average normalized cosine distance between each population’s task profile and the centroid. A metapopulation’s task spread summarizes how different the constituent populations’ task profiles are from one another.
 
-## Evaluating whether selection schemes improve directed evolution outcomes when population-level functions are aligned with organism survival
+#### Evaluating whether selection schemes improve directed evolution outcomes when population-level functions are aligned with organism survival
 
 Selection-based methods of artificial selection tie desired traits to organism survival, eliminating the need to apply screening-based methods to populations. We tested whether the addition of population-level selection improves directed evolution outcomes even when traits of interest (population-level functions) are selected for at the individual level (i.e., tied to organism survival). To do so, we repeated our previously described directed evolution experiment, except we configured all population-level functions to improve an organism’s metabolic rate in addition to the individual-level functions. As such, all population-level functions were beneficial in all treatments, including the random and no selection controls. However, only treatments with non-control selection schemes applied artificial selection at the population level.
 
-## Statistical analyses
+### Statistical analyses
 
-In general, we differentiated between sample distributions using non-parametric statistical tests. For each major analysis, we first performed a Kruskal–Wallis test (Kruskal and Wallis, 1952) to determine whether there were significant differences in results across treatments (significance level α=0.05). If so, we applied a Wilcoxon rank-sum test (Wilcoxon, 1992) to distinguish between pairs of treatments using a Bonferroni correction for multiple comparisons (Rice, 1989). Due to space limitations, we do not report all pairwise comparisons in our main results; however, all of our statistical results are included in our supplemental material.
+In general, we differentiated between sample distributions using non-parametric statistical tests. For each major analysis, we first performed a Kruskal–Wallis test (Kruskal and Wallis, 1952) to determine whether there were significant differences in results across treatments (significance level $\alpha=0.05$). If so, we applied a Wilcoxon rank-sum test (Wilcoxon, 1992) to distinguish between pairs of treatments using a Bonferroni correction for multiple comparisons (Rice, 1989). Due to space limitations, we do not report all pairwise comparisons in our main results; however, all of our statistical results are included in our supplemental material.
 
-## Software and data availability
+### Software and data availability
 
 Our model of laboratory directed evolution is available on GitHub (see Lalejini et al., 2022) and is implemented using the Empirical scientific software library (Ofria et al., 2020). We conducted all statistical analyses with R version 4.04 (R Development Core Team, 2021), using the following R packages for data analysis and visualization: tidyverse (Wickham et al., 2019), ggplot2 (Wickham, 2016), cowplot (Wilke, 2020), viridis (Garnier, 2018), khroma (Frerebeau, 2022), and Color Brewer (Harrower and Brewer, 2003; Neuwirth, 2014). Our source code for experiments, analyses, and visualizations is publicly available on GitHub (see Lalejini et al., 2022). Additionally, our experiment data are publicly archived on the Open Science Framework (see Lalejini, 2022).
 
 ## Results and discussion
 
-## Baseline problem-solving expectations in an evolutionary computing context
+### Baseline problem-solving expectations in an evolutionary computing context
 
 First, we established baseline performance expectations for the selection schemes in a conventional genetic programming context to validate the solvability of the individual- and population-level functions used in our digital directed evolution experiments. Two selection schemes produced successful replicates, where success is defined as evolving a program capable of performing all 22 functions: elite (1/50) and lexicase selection (47/50). No replicates solved this set of tasks in any other treatment. Figure 2 depicts the number of functions performed by the best program from each replicate (over time and at the end of the experiment). All selection schemes outperformed the random and no selection controls. At the end of the experiment, differences between all pairs except random and no selection were statistically significant (Bonferroni-corrected Wilcoxon rank-sum, p<0.01). Lexicase selection was the most performant followed by top 10%, elite, tournament, and non-dominated elite selection.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/79665/elife-79665-fig2-v2.jpg)
 
-**Figure 2.:** a) and at the end of the experiment (b).Selection scheme abbreviations are as follows: TOURN, tournament; LEX, lexicase; NDE, non-dominated elite; RAND, random; NONE, no selection. In panel (a), each line gives the mean value across 50 replicates, and the shading around each mean gives a bootstrapped 95% confidence interval. Differences in final task coverage among treatments were statistically significant (Kruskal–Wallis, ).p<10-4
+**Figure 2.:** Selection scheme abbreviations are as follows: TOURN, tournament; LEX, lexicase; NDE, non-dominated elite; RAND, random; NONE, no selection. In panel (a), each line gives the mean value across 50 replicates, and the shading around each mean gives a bootstrapped 95% confidence interval. Differences in final task coverage among treatments were statistically significant (Kruskal–Wallis, $p<10^{-4}$).
 
 These data confirm that our genetic representation allows for the evolution of each computational function used in our model of laboratory directed evolution. Moreover, these data establish some expectations for the relative performance of each selection scheme in our directed evolution experiments. Lexicase selection’s strong performance is consistent with previous work demonstrating its efficacy on program synthesis problems (Helmuth and Spector, 2015a; Helmuth and Abdelhady, 2020). While initially surprised by non-dominated elite’s poor performance (relative to other non-control selection schemes), we note that selection methods based on Pareto domination are rarely applied to pass–fail test-based genetic programming problems, and perhaps the course-grained function scores (0 or 1) hindered its capacity for problem-solving success.
 
-## Lexicase and non-dominated elite selection show promise for directed evolution
+### Lexicase and non-dominated elite selection show promise for directed evolution
 
-Next, we compared selection scheme performance when modeling the directed evolution of digital organisms. Figure 3a–d shows the best population and metapopulation task coverages. By the end of the experiment, all selection schemes resulted in greater single-population task coverage than both random and no selection controls (Bonferroni-corrected Wilcoxon rank-sum test, p<10-4). Metapopulation coverage under tournament selection was not significantly different than coverage under the no selection control, but all other selection schemes resulted in significantly better metapopulation coverage than both controls (Bonferroni-corrected Wilcoxon rank-sum, p<0.03). Overall, lexicase and non-dominated elite selection scored the greatest population and metapopulation task coverage out of all selection schemes, and lexicase was the overall best selection scheme according to both metrics of performance. Moreover, we found that lexicase selection improved both single-population and metapopulation task coverage relative to all other selection methods after just 10 cycles of directed evolution (Bonferroni-corrected Wilcoxon rank-sum, p<0.04).
+Next, we compared selection scheme performance when modeling the directed evolution of digital organisms. Figure 3a–d shows the best population and metapopulation task coverages. By the end of the experiment, all selection schemes resulted in greater single-population task coverage than both random and no selection controls (Bonferroni-corrected Wilcoxon rank-sum test, $p<10^{-4}$). Metapopulation coverage under tournament selection was not significantly different than coverage under the no selection control, but all other selection schemes resulted in significantly better metapopulation coverage than both controls (Bonferroni-corrected Wilcoxon rank-sum, $p<0.03$). Overall, lexicase and non-dominated elite selection scored the greatest population and metapopulation task coverage out of all selection schemes, and lexicase was the overall best selection scheme according to both metrics of performance. Moreover, we found that lexicase selection improved both single-population and metapopulation task coverage relative to all other selection methods after just 10 cycles of directed evolution (Bonferroni-corrected Wilcoxon rank-sum, $p<0.04$).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/79665/elife-79665-fig3-v2.jpg)
 
-**Figure 3.:** For panels (a) and (c), each line gives the mean value across 50 replicates, and the shading around each mean gives a bootstrapped 95% confidence interval. At the end of the experiment, differences among treatments were statistically significant for each of (b) best population task coverage, (d) metapopulation task coverage, (e) task profile diversity, and (f) task profile spread (Kruskal–Wallis, ).p<10-4
+**Figure 3.:** For panels (a) and (c), each line gives the mean value across 50 replicates, and the shading around each mean gives a bootstrapped 95% confidence interval. At the end of the experiment, differences among treatments were statistically significant for each of (b) best population task coverage, (d) metapopulation task coverage, (e) task profile diversity, and (f) task profile spread (Kruskal–Wallis, $p<10^{-4}$).
 
-While differences were significant in the best population task coverage, they were not necessarily substantial. However, other measures had more substantial differences. Both multiobjective selection schemes—lexicase and non-dominated elite—had the greatest metapopulation task coverage (Figure 3d) and the greatest diversity of task profiles in the final metapopulations (Figure 3e; Bonferroni-corrected Wilcoxon rank-sum test, p<10-4). Lexicase selection in particular also had the greatest task profile spread (Figure 3f; Bonferroni-corrected Wilcoxon rank-sum test, p<10-4), which is consistent with previous results demonstrating that lexicase excels at maintaining diverse specialists (Dolson et al., 2018; Helmuth et al., 2019; Hernandez et al., 2022a; Helmuth et al., 2019).
+While differences were significant in the best population task coverage, they were not necessarily substantial. However, other measures had more substantial differences. Both multiobjective selection schemes—lexicase and non-dominated elite—had the greatest metapopulation task coverage (Figure 3d) and the greatest diversity of task profiles in the final metapopulations (Figure 3e; Bonferroni-corrected Wilcoxon rank-sum test, $p<10^{-4}$). Lexicase selection in particular also had the greatest task profile spread (Figure 3f; Bonferroni-corrected Wilcoxon rank-sum test, $p<10^{-4}$), which is consistent with previous results demonstrating that lexicase excels at maintaining diverse specialists (Dolson et al., 2018; Helmuth et al., 2019; Hernandez et al., 2022a; Helmuth et al., 2019).
 
 The lack of task profile diversity maintained by each of the elite, top 10%, and tournament selection methods is consistent with empirical and theoretical evolutionary computing studies (Dolson et al., 2019; Hernandez et al., 2022c). Similar results have also been observed in directed evolution of bacterial communities. For example, after just six generations of selecting the top 25% of bacterial communities, Chang et al. observed that their entire metapopulation of bacterial communities descended from the initial top community, resulting in no functional variance for further selection to act on Chang et al., 2020. Indeed, the inability to reliably maintain diversity is an intrinsic limitation of elite, top 10%, and tournament selection, regardless of the substrate in which they are applied.
 
@@ -183,19 +304,19 @@ Of all non-control selection methods, non-dominated elite exhibited the least se
 
 These results are also informative when compared to our genetic programming control experiment (Figure 2). While results across these two contexts are not directly comparable, we found steering evolution at the population level to be more challenging than steering at the individual level (as in conventional evolutionary computing). For example, across all treatments, no single population in our model of directed evolution performed all 18 population-level functions. Yet, after a similar number of organism-level generations (~55,000), both elite and lexicase selection produced programs capable of all 22 functions in a genetic programming context. Even if we limited our genetic programming control experiment to only 2000 generations (matching the 2000 cycles of population-level artificial selection in our simulated directed evolution experiments), we found that conventional genetic programming produced more performant programs than those evolved under our model of laboratory directed evolution (supplemental material; Lalejini et al., 2022). We also observed differences in the rank order of selection schemes between the genetic programming and simulated laboratory directed evolution experiments. For example, non-dominated elite selection performed poorly in a genetic programming context relative to the other non-control selection schemes; however, non-dominated elite outperformed all selection schemes except lexicase selection in our model of laboratory directed evolution. On its own, non-dominated elite’s difference in performance is not surprising as non-dominated elite selection is not conventionally used for evolving computer programs where evaluation criteria are evaluated on a pass–fail basis. More broadly, however, we argue that these results highlight modeling as an important intermediate step when evaluating which techniques from evolutionary computing are likely to be effective in a laboratory setting.
 
-## Selection schemes improve outcomes even when organism survival can be tied to population-level functions
+### Selection schemes improve outcomes even when organism survival can be tied to population-level functions
 
-Next, we tested whether the addition of population-level screening improves directed evolution outcomes even when population-level functions can be tied to organism survival. After 2000 cycles of directed evolution, each non-control selection scheme resulted in better single-population task coverage than either control treatment (Figure 4b; Bonferroni-corrected Wilcoxon rank-sum test, p<10-4). We did not find significant differences in best population coverage among elite, top 10%, tournament, and non-dominated elite selection. In contrast to our previous experiment, lexicase selection resulted in lower best population coverage than each other non-control selection scheme (Bonferroni-corrected Wilcoxon rank-sum test, p<10-4).
+Next, we tested whether the addition of population-level screening improves directed evolution outcomes even when population-level functions can be tied to organism survival. After 2000 cycles of directed evolution, each non-control selection scheme resulted in better single-population task coverage than either control treatment (Figure 4b; Bonferroni-corrected Wilcoxon rank-sum test, $p<10^{-4}$). We did not find significant differences in best population coverage among elite, top 10%, tournament, and non-dominated elite selection. In contrast to our previous experiment, lexicase selection resulted in lower best population coverage than each other non-control selection scheme (Bonferroni-corrected Wilcoxon rank-sum test, $p<10^{-4}$).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/79665/elife-79665-fig4-v2.jpg)
 
-**Figure 4.:** For panels (a) and (c), each line gives the mean value across 50 replicates, and the shading around each mean gives a bootstrapped 95% confidence interval. At the end of the experiment, differences among treatments were statistically significant for each of (b) best population task coverage, (d) metapopulation task coverage, (e) task profile diversity, and (f) task profile spread (Kruskal-Wallis, ).p<10-4
+**Figure 4.:** For panels (a) and (c), each line gives the mean value across 50 replicates, and the shading around each mean gives a bootstrapped 95% confidence interval. At the end of the experiment, differences among treatments were statistically significant for each of (b) best population task coverage, (d) metapopulation task coverage, (e) task profile diversity, and (f) task profile spread (Kruskal-Wallis, $p<10^{-4}$).
 
-Lexicase selection, however, outperformed all other selection schemes on metapopulation task coverage (Figure 4d; Bonferroni-corrected Wilcoxon rank-sum test, p<10-4), producing 30 metapopulations that cover all 18 population-level functions. Even after just 10 cycles of directed evolution, lexicase selection improved metapopulation task coverage more than all other selection methods except non-dominated elite (Bonferroni-corrected Wilcoxon rank-sum test, p<10-4). In general, lexicase selection produced metapopulations containing distinct specialist populations, resulting in high metapopulation task coverage while each specialist population had low task coverage on its own. Indeed, while lexicase metapopulations did not necessarily comprise many different population task profiles (Figure 4e), the task profiles were very different from one another (Figure 4f).
+Lexicase selection, however, outperformed all other selection schemes on metapopulation task coverage (Figure 4d; Bonferroni-corrected Wilcoxon rank-sum test, $p<10^{-4}$), producing 30 metapopulations that cover all 18 population-level functions. Even after just 10 cycles of directed evolution, lexicase selection improved metapopulation task coverage more than all other selection methods except non-dominated elite (Bonferroni-corrected Wilcoxon rank-sum test, $p<10^{-4}$). In general, lexicase selection produced metapopulations containing distinct specialist populations, resulting in high metapopulation task coverage while each specialist population had low task coverage on its own. Indeed, while lexicase metapopulations did not necessarily comprise many different population task profiles (Figure 4e), the task profiles were very different from one another (Figure 4f).
 
-Of our two control selection methods, we found that performing no selection was better than random selection for both single-population and metapopulation task coverage (Bonferroni-corrected Wilcoxon rank-sum test, p<10-4). In fact, performing no selection at all resulted in better metapopulation task coverage than elite, top 10%, and tournament selection (Bonferroni-corrected Wilcoxon rank-sum test, p<10-3). We hypothesize that this result is because elite, top 10%, and tournament selection drive metapopulation convergence to homogeneous task profiles, while performing no selection at all allows populations to diverge from one another.
+Of our two control selection methods, we found that performing no selection was better than random selection for both single-population and metapopulation task coverage (Bonferroni-corrected Wilcoxon rank-sum test, $p<10^{-4}$). In fact, performing no selection at all resulted in better metapopulation task coverage than elite, top 10%, and tournament selection (Bonferroni-corrected Wilcoxon rank-sum test, $p<10^{-3}$). We hypothesize that this result is because elite, top 10%, and tournament selection drive metapopulation convergence to homogeneous task profiles, while performing no selection at all allows populations to diverge from one another.
 
-## Conclusion
+### Conclusion
 
 In this work, we investigated whether the selection schemes from evolutionary computing might be useful for directing the evolution of microbial populations. To do so, we introduced an agent-based model of laboratory directed evolution. Overall, our results suggest that lexicase and non-dominated elite selection are promising techniques to transfer into the laboratory when selecting for multiple traits of interest as both of these selection schemes resulted in improved outcomes relative to conventional directed evolution selection methods. In some cases, these more sophisticated selection protocols improved directed evolution outcomes (relative to conventional methods) after just 10 rounds of artificial selection, which is especially promising given the effort required to carry out a single round of selection in the laboratory. We expect lexicase selection to be particularly useful for evolving a set of microbial populations, each specializing in different population-level functions. We also found that the addition of screening-based selection methods developed for evolutionary computation can improve directed evolution outcomes even in cases where organisms’ reproductive success can be tied directly to the traits of interest.
 

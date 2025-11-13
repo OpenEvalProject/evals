@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04m01e293 Structural Biology Laboratory and York Biomedical Research Institute, Department of Chemistry, The University of York York United Kingdom
-2. https://ror.org/01y9arx16 Max Planck Institute for Chemical Energy Conversion Muelheim an der Ruhr Germany
-3. https://ror.org/05bhada84 Division of Materials Science, Nara Institute of Science and Technology Ikoma Japan
-4. https://ror.org/0151bmh98 Graduate School of Life Science, University of Hyogo Hyogo Japan
+1. Structural Biology Laboratory and York Biomedical Research Institute, Department of Chemistry, The University of York York United Kingdom ([ROR:04m01e293](https://ror.org/04m01e293))
+2. Max Planck Institute for Chemical Energy Conversion Muelheim an der Ruhr Germany ([ROR:01y9arx16](https://ror.org/01y9arx16))
+3. Division of Materials Science, Nara Institute of Science and Technology Ikoma Japan ([ROR:05bhada84](https://ror.org/05bhada84))
+4. Graduate School of Life Science, University of Hyogo Hyogo Japan ([ROR:0151bmh98](https://ror.org/0151bmh98))
 
 † Corresponding author
 
 ## Abstract
 
-Electron bifurcation is a fundamental energy conservation mechanism in nature in which two electrons from an intermediate-potential electron donor are split so that one is sent along a high-potential pathway to a high-potential acceptor and the other is sent along a low-potential pathway to a low-potential acceptor. This process allows endergonic reactions to be driven by exergonic ones and is an alternative, less recognized, mechanism of energy coupling to the well-known chemiosmotic principle. The electron-bifurcating [FeFe] hydrogenase from Thermotoga maritima (HydABC) requires both NADH and ferredoxin to reduce protons generating hydrogen. The mechanism of electron bifurcation in HydABC remains enigmatic in spite of intense research efforts over the last few years. Structural information may provide the basis for a better understanding of spectroscopic and functional information. Here, we present a 2.3 Å electron cryo-microscopy structure of HydABC. The structure shows a heterododecamer composed of two independent ‘halves’ each made of two strongly interacting HydABC heterotrimers connected via a [4Fe–4S] cluster. A central electron transfer pathway connects the active sites for NADH oxidation and for proton reduction. We identified two conformations of a flexible iron–sulfur cluster domain: a ‘closed bridge’ and an ‘open bridge’ conformation, where a Zn 2+ site may act as a ‘hinge’ allowing domain movement. Based on these structural revelations, we propose a possible mechanism of electron bifurcation in HydABC where the flavin mononucleotide serves a dual role as both the electron bifurcation center and as the NAD + reduction/NADH oxidation site.
+Electron bifurcation is a fundamental energy conservation mechanism in nature in which two electrons from an intermediate-potential electron donor are split so that one is sent along a high-potential pathway to a high-potential acceptor and the other is sent along a low-potential pathway to a low-potential acceptor. This process allows endergonic reactions to be driven by exergonic ones and is an alternative, less recognized, mechanism of energy coupling to the well-known chemiosmotic principle. The electron-bifurcating [FeFe] hydrogenase from Thermotoga maritima (HydABC) requires both NADH and ferredoxin to reduce protons generating hydrogen. The mechanism of electron bifurcation in HydABC remains enigmatic in spite of intense research efforts over the last few years. Structural information may provide the basis for a better understanding of spectroscopic and functional information. Here, we present a 2.3 Å electron cryo-microscopy structure of HydABC. The structure shows a heterododecamer composed of two independent ‘halves’ each made of two strongly interacting HydABC heterotrimers connected via a [4Fe–4S] cluster. A central electron transfer pathway connects the active sites for NADH oxidation and for proton reduction. We identified two conformations of a flexible iron–sulfur cluster domain: a ‘closed bridge’ and an ‘open bridge’ conformation, where a Zn2+ site may act as a ‘hinge’ allowing domain movement. Based on these structural revelations, we propose a possible mechanism of electron bifurcation in HydABC where the flavin mononucleotide serves a dual role as both the electron bifurcation center and as the NAD+ reduction/NADH oxidation site.
 
 ## Introduction
 
@@ -37,11 +37,45 @@ As structural data would reveal the complex arrangement of redox cofactors in th
 
 ## Results
 
-## The structure of HydABC
+### The structure of HydABC
 
 The heterologous production of apo-HydABC in Escherichia coli was described recently (Chongdar et al., 2020). In our previous work, it was shown that this preparation contains all the redox cofactors of the native HydABC enzyme except for the [2Fe] subcluster of the hydrogenase active site (H-cluster), which E. coli is unable to synthesize. In particular, Fe quantitation measurements of the heterologously produced enzyme agreed with the expected number of iron–sulfur clusters based on sequence analysis, and were even higher than those from the native enzyme (Verhagen et al., 1999). Furthermore, electron paramagnetic resonance (EPR) spectra of the reduced apo- and reduced holo-HydABC (where the H-cluster is EPR-silent) were identical to each other and the same as those from the native enzyme (Figure 1—figure supplement 1 and Verhagen et al., 1999). A drawback of using this apo-HydABC preparation is that we cannot observe how the structure is affected by reduction by H2.
 
 Here, we have used this heterologously expressed apo-HydABC to prepare the cryo-EM grids under air, as apo-HydABC lacking the [2Fe] subcluster is much less oxygen sensitive. Previous studies have indicated that the incorporation of the [2Fe] subcluster minimally affects the structure of [FeFe] hydrogenases (Esselborn et al., 2016) (except for the enzyme from Chlamydomonas reinhardtii; Mulder et al., 2010) and, as shown by our structure, the H-cluster is located far away from the likely electron bifurcation site. Following grid imaging, data collection (Figure 1—figure supplement 2), and processing (Figure 1—figure supplement 3), we obtained a 2.3-Å resolution map when D2 symmetry was enforced (Figure 1, Video 1, Figure 1—figure supplement 4, Figure 1—figure supplement 5). Into this, an atomic model of HydABC was constructed, starting with a homology model based on homologous subunits in bacterial complex I (Chongdar et al., 2020; Baradaran et al., 2013), together with ab initio model building in regions of the highest resolution (Figure 1—figure supplement 6). Initially, the last 91 and 61 CT residues of HydA and HydB, respectively, could not be built as they were not present in the homology model (because complex I does not contain homologous domains) and had a low resolution in the map, indicating regions of high heterogeneity (explored later).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig1-v2.jpg)
+
+**Figure 1.:** (A) The unsharpened 2.3 Å map of Hyd(ABC)4 with D2 symmetry enforced showing a tetramer of HydABC heterotrimers. All four copies of HydB and C are colored blue and green, respectively. The four HydA copies that make up the core of the complex are in orange, yellow, pink, and red. The top and bottom halves of the complex are constituted by dimers of HydABC protomers (each HydABC unit is a protomer); the two protomers within the same dimer are strongly interacting, while a weaker interaction is present between the top and bottom dimers. (B) HydABC dimer highlighting the iron–sulfur clusters and flavin mononucleotide (FMN) constituting the electron transfer network. (C) The arrangement of redox cofactors within the protein complex, showing two independent identical redox networks (dashed circles); each redox network is composed of iron–sulfur clusters belonging to a Hyd(ABC)2 unit composed of two strongly interacting HydABC protomers. (D) Schematic of the electron transfer network of one of the two identical Hyd(ABC)2 units showing edge-to-edge distances (in Å) between the various cofactors. Note that our structure is of apo-HydABC and contains only the [4Fe–4S]H subcluster of the H-cluster. The 2H+/H2 interconversion reaction in (B) illustrates the site at which this reaction occurs, but this will only occur in the full assembled H-cluster including [2Fe]H.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The spectrum measured at 10 K and 10 μW power shows a mixture of spin-coupled [4Fe–4S] clusters (evidenced by the features at g ≈ 2.04, 1.97, and 1.89) and a [2Fe–2S] cluster (evidenced by the features at g ≈ 2.00, 1.95, and 1.92). (B) The spectrum measured at 40 K and 1 mW power shows the pure spectrum of a [2Fe–2S] cluster simulated using a rhombic g tensor (2.003, 1.953, 1.923) using g strain (0.012, 0.018, 0.015). At 40 K, the additional features observed at 10 K have been lifetime broadened, confirming that they arise from fast relaxing [4Fe–4S] clusters. All other EPR parameters are given in the methods. (C) EPR spectra of HydB isolated from native T. maritima are reproduced from Verhagen et al., 1999 for comparison. The close agreement between the spectrum in (A) and the upper spectrum in (C) and between the spectrum in (B) and the lower spectrum in (C) indicates that the same cohort of EPR-detectable iron–sulfur clusters is present in both preparations.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative micrograph from the data collection used to resolve the structure of T. maritima HydABC. A few different views of well isolated particles are shown, highlighted with a green box. (B) 2D class averages after cleaning the dataset with coarse 3D classification, only the full tetramer of trimers is observed.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Following automatic particle picking and 2D and 3D classification to discard broken particles and contaminants, 3D refinement, and particle polishing were performed. Subsequently, the particles were classified using an angular sampling of 7.5° and pixel size of 3.4 Å, limiting the data to 6.8 Å (see Materials and methods). All five classes provided were populated. The dominant class refined to 2.3 Å. The remaining classes contained what appeared to be damaged particles or fragments of broken particles.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Local resolution was estimated using the local resolution function in RELION with default parameters. The figure was created using UCSF Chimera.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Density maps and model of A3 [4Fe4S] cluster at (threshold 0.097) (A), C1 [2Fe2S] cluster (threshold 0.044) (B), Zn2+ site (threshold 0.040) (C), B4 [4Fe4S] cluster in the bridge domain (threshold 0.034) (D), example of waters in HydA (threshold 0.038) (E), Phenylalanine-261 in HydA (threshold 0.078) (F).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (A) shows the center in chain B (HydB) as published with a [2Fe–2S] cluster, pdb code: 7T30 (Feng et al., 2022). (B) shows the same center but built with a tetrahedral Zn; other tetrahedral metals with similiar geometry will also provide a satisfactory fit, given the resolution (≈3 Å). In both cases, the map (EMD-25647) is displayed identically, at a threshold of 0.138.
+
+![Video 1.](https://cdn.elifesciences.org/articles/79361/elife-79361-video1.mp4.jpg)
+
+**Video 1.:** The cryo-EM map then fades to reveal the structural model with the protein represented in the ribbon mode (HydA in the center in red, pink, green, and orange, HydB in blue, and HydC in yellow) and the cofactors shown as spheres. After rotation, again around the central vertical axis, the ribbon structure fades to reveal the iron–sulfur cluster cofactors as yellow and brown spheres, the zinc sites as gray spheres, and the flavin mononucleotide (FMN) as sticks. It is clear to see that the redox cofactors in the top and bottom halves of the dodecamer are separated by a large distance, too large for efficient electron transfer. Thus, the two redox cofactor networks cannot exchange electrons with each other. It is also clear that there is a core electron transfer pathway linking the FMN sites and a peripheral electron transfer pathway consisting of two iron–sulfur clusters on the other side of the FMN from the core pathway. Finally, the video centers on the region around one of the FMN cofactors for a closer view.
 
 The processed cryo-EM map shows that HydABC forms a dodecameric complex, Hyd(ABC)4, composed of a tetramer of HydABC heterotrimer units (from now on referred to as protomers). Oligomerization of HydABC occurs through interactions between four HydA subunits in the core of the complex (Figure 1A and Video 1). Each HydA has extensive interactions with one adjacent HydA chain (buried surface area of 2280 Å2), and minor interactions with another HydA chain (780 Å2) (Figure 1A). HydB is tightly bound to a single HydA (buried surface area of 1232 Å2, Supplementary file 1) but with minor interactions between HydB of one heterotrimer and HydA and HydB in another heterotrimer. HydB and HydC extend outward from the core and form the four lobes clearly visible in the 2D class averages (Figure 1—figure supplement 2). The HydA core is the best resolved part of the map, consistent with the core being rigid and homogenous (Figure 1—figure supplement 5).
 
@@ -49,25 +83,55 @@ Based on the density map, each HydABC protomer appears to contain nine redox cof
 
 In a related electron-bifurcating [NiFe] hydrogenase (HydABCSL) from Acetomicrobium mobile this monometallic site was modeled as a [2Fe–2S] cluster with five coordinating ligands from the protein (Feng et al., 2022). Furthermore, an oxygen-tolerant [FeFe] hydrogenase (CbA5H) from Clostridium beijerinckii contains a similar domain and was suggested to ligate a [4Fe–4S] cluster (Winkler et al., 2021). We have compared our structure with these two previously published structures and find it is possible to replace the FeS clusters with a Zn (or other similarly sized tetrahedral metal center) and obtain a reasonable model; given the ~3 Å resolution it is not possible to confidently distinguish which fits better. Figure 1—figure supplement 7 shows the details of one such model for HydABCSL. EPR spectra of the separately produced HydB subunit (Figure 1—figure supplement 1) are identical to those published for the HydB subunit obtained from the native T. maritima (Verhagen et al., 1999), confirming that the native and heterologously produced HydB subunits contain the same cohort of EPR active FeS clusters. Furthermore, our HydABC preparation is fully active in electron bifurcation (Chongdar et al., 2020). These results indicate that TmHydABC contains a single metal at this site and not a [2Fe–2S] cluster. Regardless, it would appear that the cofactor bound at this site does not transfer electrons in TmHydABC.
 
-## Cofactor arrangement in HydABC
+### Cofactor arrangement in HydABC
 
 Electron transfer chains, often connecting distant active sites, are composed of redox-active cofactors usually less than 14 Å apart to allow sufficiently fast electron tunneling through the protein dielectric to sustain physiological processes (Page et al., 1999). In each HydABC heterotrimer, the spatially distant H-clusters and FMN centers are connected via a chain of four FeS clusters (A1, A2, A3, and B2, see Figure 1D for cluster nomenclature). The edge-to-edge distances between all these clusters are <15 Å and within a distance for electron transfer at physiologically relevant rates (Figure 1D). Among the three remaining FeS clusters, the [4Fe–4S] cluster from HydA (A4) lies at the interface of the two tightly interacting HydA chains, and the two [2Fe–2S] clusters from HydC (C1) and HydB (B1) subunits lie in the vicinity, but on the opposite side, of the FMN.
 
 Within the Hyd(ABC)4 complex, there appear to be two redox networks, each composed of two HydABC protomers with an extended electron transfer chain, separated by at least 50 Å and held together by extensive HydA–HydA interactions (Figure 1B, C). The large distance between each electron-transfer network indicates there is no possibility for electrons to be exchanged and that they probably function independently (Figure 1C). The two tightly interacting HydABC protomers within the Hyd(ABC)2 unit are connected (8.8 Å separation) through the His-ligated [4Fe–4S] cluster (A4) in HydA (Figure 1B), part of the so-called Y-junction of iron–sulfur clusters (Zuchan et al., 2021). This junction is well conserved in a wide number of structurally related enzymes, but its significance is unknown. In HydABC it is clear that the Y-junction connects the NADH and ferredoxin oxidation sites to the hydrogenase active site and to the neighboring protomer. The two A4 clusters are separated by 9.0 Å and have the possibility to allow an overflow of electrons from one protomer to the other. An electronic connection between two identical protomers has already been observed in cytochrome bc1 (Swierczek et al., 2010), called an electronic ‘bus-bar’, which is speculated to have a number of possible roles such as allowing the physiological function of the protein even after operational damage of one of the two protomers. This connection does not provide a ‘short circuit’, however, since in HydABC the A4 clusters simply connect FMN and H-cluster sites from adjacent protomers that are already directly connected within their respective protomer.
 
-## Structural comparison of HydABC with homologous proteins
+### Structural comparison of HydABC with homologous proteins
 
 The spatial arrangement of subunits HydA, B, and C in the HydABC protomer is similar to that of subunits Nqo3, Nqo1, and Nqo2, respectively, in the NADH oxidation (N) module of Thermus thermophilus (Tt) respiratory complex I (Figure 2—figure supplement 1). This comparison is useful because complex I is structurally well characterized, but does not oxidize ferredoxin or carry out electron bifurcation. Therefore, structural differences between the subunits of complex I and HydABC may reveal important insight into the mechanism of electron transfer in the latter. The individual subunits are structurally highly similar and here we use RMSD (root-mean-square deviation between the Cα positions in homologous pairs of amino acids) as a quantitative measure of similarity between proteins. The highest similarity is between HydB and Nqo1 (RMSD of 1.040 Å) (Gutiérrez-Fernández et al., 2020), followed by HydC and Nqo2 (RMSD 1.152 Å), and the lowest similarity between HydA and Nqo3 (RMSD 1.294 Å) (Figure 2A). The remarkable structural similarities between HydB and Nqo1 subunits agree with their common evolutionary origins (Schut et al., 2013) and suggest that NADH oxidation follows a similar mechanism in both enzymes (Figure 2B). The structural differences between Nqo3 and HydA likely reflect the fact that the latter accommodates the hydrogenase H-cluster and facilitates oligomerization of the Hyd(ABC)4 complex. It should be emphasized here that our structure of HydABC was produced from an enzyme lacking the [2Fe] subcluster component of the H-cluster. However, previous studies have shown negligible structural changes of the protein upon [2Fe] subcluster incorporation (Esselborn et al., 2016).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig2-v2.jpg)
+
+**Figure 2.:** (A) Subunits HydA (red), HydB (blues), and HydC (green) overlaid with, respectively, Nqo3, Nqo1, and Nqo2 (all yellow) of complex I from T. thermophilus (Gutiérrez-Fernández et al., 2020, PDB: 6ZIY). (B) Comparison of the NADH-binding site of the Nqo1 subunit of complex I from T. thermophilus (light blue) with the flavin mononucleotide (FMN) site in HydB; the high similarity suggests NADH binds in the proximity of FMN in HydABC similar to complex I. (C) Electron transfer network in HydABC compared to complex I from T. thermophilus with edge-to-edge distances indicated in bold. The red, blue, and green dotted lines indicate the cofactors present in the HydA (Nqo3), HydB (Nqo1), and HydC (Nqo2) subunits, respectively. Note that our structure is of the apo-HydABC and lacks the [2Fe]H subcluster of the H-cluster. The 2H+/H2 interconversion reaction in (C) illustrates the site at which this reaction occurs, but this will only occur in the full assembled H-cluster including [2Fe]H.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig2-figsupp1-v2.jpg)
 
 The structural similarities between HydABC and Tt respiratory complex I are also reflected by the FeS cluster positioning that is in excellent agreement in these two proteins (Figure 2C). However, in contrast to the Tt complex I, the HydABC protomers contain five additional FeS clusters. One of these additional clusters is a [4Fe–4S] cluster (A3) that connects the [4Fe–4S] subcluster of the H-cluster (analogous to the cluster N7 in Tt complex I) with the rest of the electron transfer network (<10 Å separation from both). Another additional cluster is a [2Fe–2S] cofactor in HydB (B1) that is 12 Å from the [2Fe–2S] cluster in HydC (C1, analogous to N1a in Tt complex I); due to this connection and the proximity of HydC to the ‘bridge’ domains (discussed later) it is likely that the [2Fe–2S] cluster in HydC has an important role in the mechanism of electron bifurcation. This is in contrast to its analogous N1a cluster in complex I, the role of which is unclear but is certainly not part of the main catalytic electron transfer pathway (Birrell et al., 2013; Gnandt et al., 2017). Lastly, the Zn2+ site in HydB is not conserved in Nqo1, instead of three Cys and one His the homologous amino acids in Nqo1 are Ser, Leu, Arg, and Pro.
 
 The HydA subunit has close structural homology (35% sequence identity) to the well-characterized monomeric non-bifurcating [FeFe] hydrogenase from Clostridium pasteurianum, CpI. In contrast to electron-bifurcating [FeFe] hydrogenases, non-bifurcating [FeFe] hydrogenases use a single redox partner, typically ferredoxin. Aligning the two enzymes (using holo-CpI containing the [2Fe] subcluster) shows high similarity (rmsd 1.119 Å) and excellent conservation of the FeS clusters, including the A4 cluster, which connects neighboring HydA subunits in HydABC (Figure 3). However, in CpI, for which ferredoxin is the only redox partner, the cluster homologous to A4 is thought to lead to the ferredoxin-binding site (Artz et al., 2017), although a study on the related enzyme from Clostridium acetobutylicum (CaHydA) came to a different conclusion (Gauquelin et al., 2018). The multimerization of HydA blocks this site, so the two enzymes must have different ferredoxin-binding sites. This rearrangement is an example of how closely related systems may have different electron transfer pathways formed by different multimerization of their subunits. Importantly, the structure around the H-cluster is highly conserved between CpI and HydABC with only very small deviations in the positions of serveral conserved side chains (Figure 3—figure supplement 1).
 
-## A bridging domain formed by the flexible C-termini of the HydA and HydB subunits
+![Figure 3.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig3-v2.jpg)
+
+**Figure 3.:** (A) HydA from Thermotoga maritima (red) compared with CpI hydrogenase from Clostridium pasteurianum (orange) (Artz et al., 2020, PDB: 6N59). (B) Electron transfer network in HydA showing the iron–sulfur cluster that connects adjacent HydABC protomers (red circle). (C) Electron transfer network in CpI, with Cp ferredoxin, predicted to bind closely to the [4Fe–4S] cluster on the right (Artz et al., 2017), although the [2Fe–2S] cluster has also been suggested (Gauquelin et al., 2018). Note that only the [4Fe–4S]H subcluster of the H-cluster is present in our TmHydA structure, whereas the complete H-cluster including the [2Fe]H subcluster is present in the CpI structure. Edge-to-edge electron transfer distances are indicated in bold. The 2H+/H2 interconversion reaction in (B) illustrates the site at which this reaction occurs, but this will only occur in the full assembled H-cluster including [2Fe]H.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The [2Fe]H subcluser is only shown for the CpI structure as it is lacking in apo-HydABC.
+
+### A bridging domain formed by the flexible C-termini of the HydA and HydB subunits
 
 The core of the tetrameric HydABC complex is very well resolved, reaching a local resolution of 2.2 Å. However, the lobes formed from HydA and HydB subunits have substantially lower local resolution (~3 Å), due to increased heterogeneity (Figure 1—figure supplement 5) and low intensity, blurred map density was observed between the lobes of connected HydABC protomers (Figure 4—figure supplement 1A). To investigate the blurred regions, symmetry expansion followed by classification was explored to separate the different conformations into classes. Initial attempts to use D2 symmetry, to match the core, resulted in maps no better than before, however, using C2 symmetry revealed two classes with bridging density between the HydB lobes (Figure 4A) with local resolution similar to the lobes formed from HydA and HydB (Figure 4B). This bridging density breaks the rotational symmetry between the protomers in the Hyd(ABC)2 unit, explaining why D2 symmetry expansion was ineffective. The two classes correspond to the bridge domain being formed between different HydB lobes: when rotated by 180°, the bridges are identical (Figure 4A, C). Despite extensive attempts, we were unable to find a class with both bridges in the closed conformation. The observation that both bridges cannot close simultaneously suggests that these behave as reciprocating elements. A similar observation was made previously for the Rieske domains in the bifurcating bc1 complex (Maldonado et al., 2021).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig4-v2.jpg)
+
+**Figure 4.:** (A) The unsharpened 2.8 Å map of the bridge forward class subparticle, identical to the bridge backward class if a C2 rotation is applied. The map shows only the Hyd(ABC)2 unit as the two Hyd(ABC)2 units constituting the Hyd(ABC)4 complex were found to be independent after 3D classification. All four copies of HydB and C are colored blue and green, respectively. The two HydA copies are in light brown and light red. (B) Local resolutions were estimated using the local resolution function in RELION with default parameters. (C) The atomic model that was built into the map density with the iron–sulfur electron transfer chain. (D) Map showing the HydB bridge domain in the open position and its fitted model. (E) Zn2+ hinge region, showing the two possible conformations of the HydB bridge domain, open (blue) and closed (light blue). (F) Schematic of the electron transfer network of one of the two identical Hyd(ABC)2 units showing edge-to-edge distances (Å) between the components. Represented are the iron–sulfur clusters, [4Fe–4S]H subcluster of the H-cluster, flavin mononucleotide FMN, and Zn2+ site; the bridge components and Zn site are enclosed in a dashed ellipse. Each of the two HydABC protomers constituting the Hyd(ABC)2 unit is included within a dashed rectangle. Here, the top bridge is represented in its closed conformation, while the bottom one is in its open conformation. Note that our structure is of the apo-HydABC and lacks the [2Fe]H subcluster of the H-cluster.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Map at low-density threshold shows blurry regions between the HydBC lobes (red circle). (B) Symmetry expansion, classification, and refinement using the extracted particles from the high-resolution D2 map using RELION pipeline. Following particle extraction, C2 symmetry expansion was applied, effectively doubling the dataset and allowing independent classification of the two subparticles top and bottom (Hyd(ABC)2 units) in each Hyd(ABC)4 complex. 3D classification of the expanded dataset with masking revealed two classes with a clear bridging density. Those two classes were refined separately revealing a bridge backward and forward conformation.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Fourier shell correlation (FSC) curves showing the resolution of (A, B) the ‘bridge closed’ maps, both reaching a resolution of 2.8 Å and (C), the ‘bridge open’ map, reaching a resolution of 2.7 Å (although note that the bridge is much less well resolved than the core in this particular map).
+
 To further explore the particles without a bridge a further classification was used (Figure 4—figure supplement 1B). It was possible to obtain a low-resolution map of a class where the HydB CT domain was found in an ‘open’ conformation (Figure 4D). The movement of the HydB C-terminal domain between the bridge open and bridge closed classes is shown in Figure 4E and Video 2.
+
+![Video 2.](https://cdn.elifesciences.org/articles/79361/elife-79361-video2.mp4.jpg)
+
+**Video 2.:** The HydB C-terminal iron–sulfur cluster domain is colored blue and the HydA C-terminal iron–sulfur cluster domain is colored orange. The zinc ion (gray sphere) and ligating residues (three cysteine ligands and one histidine) are also shown. The location of the HydA C-terminal domain when the bridge is open is unknown so it is shown transparently in both states for reference.
 
 In the bridge-containing structure, the two C-terminal [4Fe–4S] clusters (named B3 and B4, Figure 4F) of HydB are close enough to exchange electrons with each other but are too far from the next nearest FeS clusters, such as cluster C1 (≈35 Å away) or cluster A5 (≈32 Å away). Furthermore, cluster A5 is completely isolated from exchanging electrons with all the nearest clusters being >30 Å away. Thus, unless the HydA and HydB bridge domains undergo substantial conformational changes, the FeS clusters A5, B3, and B4 cannot participate in electronic exchange with the rest of the enzyme.
 
@@ -85,6 +149,14 @@ A potential mechanism would operate as follows:
 
 During the oxidation of H2 to reduce NAD+ and ferredoxin (electron bifurcation) (Figure 5), (1) four electrons from the oxidation of two H2 molecules at the H-cluster travel via the core electron transfer pathway composed of the A1, A2, A3, and B2 clusters toward FMN. At first, the one-electron redox potential for the FMN (EFMN/FMN•−) is too negative for the formation of the FMN•− radical. Since the B2 cluster is at the end of the four-helix bundle connected to the Zn site, reduction of this cluster could trigger the opening of the HydB-CT domain. (2) NAD+ binding to the FMN increases EFMN/FMN•− allowing the formation of the FMN•− radical, but not full reduction to FMNH−. NAD+ binding also stabilizes a conformation of the HydB-CT ‘bridge’ domain in which the B3 and B4 clusters are close to the C1 and B1 clusters. FMN•− cannot reduce NAD+ as the NAD• radical is very unstable but FMN•− can reduce the C1 cluster, which in turn reduces the B3 and B4 clusters via the B1 cluster. (3) Fd-binding triggers a conformational change, moving the B3 and B4 clusters away from the C1 and B1 clusters and closer to the Fd-binding site. This conformational change also alters the potentials of the FMN so that FMN•− can be reduced to FMNH− by the B2 cluster. (4) The final stage is hydride transfer from FMNH− to NAD+ to make NADH and reduction of Fd by the B3 and B4 clusters. HydABC is known to also function in the reverse, electron confurcating, direction where electrons from NADH and reduced ferredoxin are channeled toward the H-cluster and used to reduce H+ to H2. In the electron confurcating direction (Figure 5—figure supplement 1): (1) ferredoxin reduces the B3 and B4 clusters while the bridge is in the closed state. NADH binds and transfers a hydride to the FMN to make FMNH−. (2) FMNH− transfers an electron to the B2 cluster triggering the bridge to open allowing it to move close enough to transfer electrons to the B1 and C1 clusters. (3) Electrons are transferred to the H-cluster via the C1, B1, A1, A2, and A3 clusters. (4) NAD+ dissociation triggers the bridge to close again and the potentials of the FMN to change such that FMN•− transfers its electron to the core electron transfer pathway. The electrons in the core pathway can reduce 4H+ to 2H2.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig5-v2.jpg)
+
+**Figure 5.:** (1) Electrons generated by oxidation of H2 at the H-cluster travel down the core electron transfer pathway to the B2 cluster but not to the flavin mononucleotide (FMN). Reduction of the B2 cluster triggers bridge movement allowing the B3/B4 clusters to get close to the B1 and C1 clusters. (2) NAD+ binding stabilizes the FMN•− radical allowing electron transfer to the FMN, then to the B1/C1 clusters, and finally to the B3 and B4 clusters. (3) The bridge domain then returns to the closed position allowing reduction of ferredoxin. (4) Domain movement triggers the FMN to get fully reduced to the FMNH− state, which can then reduce NAD+ to NADH. (5) NADH is released and the enzyme returns to its initial state. The reverse, electron confurcation, direction (NADH and reduced ferredoxin are used to produce H2) is described in Figure 5—figure supplement 1. Color code: red regions are in HydA, orange regions are in HydA’, blue regions are in HydB, and green regions are in HydC. The gray circle indicates the Zn site. Gray squares represent the location of electrons.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79361/elife-79361-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (1) NADH binds. (2) Two ferredoxin are oxidized by the B3/B4 clusters while the bridge is closed and hydride transfer occurs from NADH to flavin mononucleotide (FMN) giving FMNH−FMNH−. (3) Electron transfer to the B2 cluster to give an FMN•− radical, which is stabilized by NAD+. Reduction of the B2 cluster triggers the HydB-CT domain to open and move to a position close to the B1/C1 clusters. (4) Electrons are then transferred from B3/B4 to the H-cluster via B1/C1, the FMN, and the core electron transfer pathway. (5) The electrons in the core electron transfer pathway reduce 4H+ to H2. Oxidation of the FMN•− radical triggers NAD+ dissociation and oxidation of the B2 cluster triggers the bridge to close again returning the enzyme to its initial state.
+
 The mechanism described above is highly speculative at present but does make some important predictions. We expect that NADH binding to HydABC would generate a stable FMN•− radical, leading to the reduction of a single [4Fe–4S] cluster (B2), and triggering the HydB-CT domain to open. Meanwhile, ferredoxin is expected to reduce the B3 and B4 clusters only, and reduction of C1/B1 and all clusters in HydA will only be observed upon the addition of both NADH and ferredoxin. Additionally, H2 oxidation will reduce clusters in HydA as well as cluster B2, leading to an opening of the HydB-CT domain. H2 and NAD+ would be expected to lead to the reduction of C1, B1, B3, and B4 as well as the formation of an FMN•− radical.
 
 A similar mechanistic proposal was made by Feng et al., 2022 to explain electron bifurcation in the related [NiFe] hydrogenase (HydABCSL) from A. mobile. HydA, B, and C in A. mobile are homologous to HydA, B, and C in T. maritima, respectively, however, HydA in A. mobile lacks the H-cluster and instead the enzyme contains HydS and L, which form the [NiFe] hydrogenase unit. The fact that both enzymes bifurcate electrons, yet do not both contain the H-cluster, further supports the idea that the H-cluster is not the site of electron bifurcation in TmHydABC. Otherwise, the structures of the HydABC units in both enzymes are very similar. However, it was proposed that instead of a zinc site AmHydB contains an additional [2Fe–2S] cluster, which allows electron transfer between the site of ferredoxin oxidation in the B3/B4 clusters and the [2Fe–2S] cluster in AmHydC. The latter was also suggested to be located in a mobile domain and that conformational changes are triggered by events at the FMN site. However, the authors did not consider in detail how nucleotide binding or changes in the FMN redox potentials could be coupled to conformational changes. While the two mechanistic proposals differ in the details, they both consider the FMN and unique arrangement of metallocofactors around it to be crucial components for electron bifurcation.
@@ -93,19 +165,92 @@ In summary, our cryo-EM structure reveals essential information on the arrangeme
 
 ## Methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background(Escherichia coli)</td>
+      <td>BL21(DE3)ΔiscR/pASK-IBA17plus/hydabc</td>
+      <td>Chongdar et al., 2020</td>
+      <td>n/a</td>
+      <td>A genetically modified strain of E. coli containing a kanamycin resistance cassette inserted in the iscR gene and transformed with a pASK-IBA17plus plasmid containing the hydabc protein-coding DNA sequence</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strep-Tactin Superflow high capacity resin</td>
+      <td>IBA-life sciences</td>
+      <td>2-1208-025</td>
+      <td>Used for purification of TmHydABC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION-3.1</td>
+      <td>Zivanov et al., 2019</td>
+      <td>n/a</td>
+      <td>Image processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WinCoot</td>
+      <td>Emsley et al., 2010</td>
+      <td>n/a</td>
+      <td>Modeling</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>Liebschner et al., 2019</td>
+      <td>n/a</td>
+      <td>Model refinement</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChimeraX 1.1</td>
+      <td>Pettersen et al., 2021</td>
+      <td>n/a</td>
+      <td>Used to visualize maps and models and to make the figures in this paper</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EasySpin 5.2.35</td>
+      <td>Stoll and Schweiger, 2006</td>
+      <td>n/a</td>
+      <td>Used to simulate EPR spectra</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UltrAuFoil R 1.2/1.3 Gold foil on Gold 300 mesh grid</td>
+      <td>Quantifoil Micro Tools GmbH</td>
+      <td>n/a</td>
+      <td>Used to prepare cryo-EM grids</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 Previously, HydABC was expressed heterologously in E. coli and purified under anaerobic conditions, generating an ‘apo’ enzyme, containing all of the [2Fe–2S] and [4Fe–4S] clusters, but lacking the [2Fe]H subcluster of the H-cluster in HydA (Chongdar et al., 2020; Kuchenreuther et al., 2010). The H-cluster was then reconstituted using a synthetic [2Fe]H precursor (Chongdar et al., 2020; Berggren et al., 2013; Esselborn et al., 2013). The H-cluster of [FeFe] hydrogenases (including HydABC) is highly sensitive to O2 (Swanson et al., 2015). Additionally, only minor structural differences are observed upon incorporation of the [2Fe] subcluster (Esselborn et al., 2016). As our grid preparation was only possible under air and our main interest was in the structural characterization of the electron transfer pathways, we decided to focus on the ‘apo’ enzyme. Previous studies with [FeFe] hydrogenase (CpI) from C. pasteurianum showed that the ‘apo’ and ‘holo’ enzymes have identical structures (Esselborn et al., 2016). For this work, HydABC and HydB were produced heterologously in E. coli BL21(DE3) ΔiscR cells under anaerobic growth conditions and purified in an anaerobic glovebox (Coy, 2% H2 in N2) using Streptactin (IBA) affinity chromatography and size-exclusion chromatography (GE Healthcare) as previously described (Chongdar et al., 2020). For these studies, we did not incorporate the [2Fe]H subcluster to form the holo-enzyme. Sample purity and quality were checked by sodium dodecyl sulfate–polyacrylamide gel electrophoresis and UV–vis spectrophotometry. Samples in 10 mM Tris–HCl, 150 mM NaCl, pH 8 were frozen at −80°C until further use.
 
-## Inductively coupled plasma mass spectrometry
+### Inductively coupled plasma mass spectrometry
 
 For inductively coupled plasma mass spectrometry (ICP-MS), a sample of the HydB subunit, buffer exchanged into 10 mM MOPS pH 7 and concentrated to 621 µM, and a sample of 10 mM MOPS pH 7 were measured by Mikroanalytisches Laboratorium Kolbe (https://www.mikro-lab.de/). The samples were digested using a CEM Model MARS6 microwave digestion unit and measured on an Agilent Model 7900 ICP-MS.
 
-## Grid preparation and imaging
+### Grid preparation and imaging
 
 1.2/1.3 UltrAuFoil grids were glow discharged (PELCO easiGlow) for 90 s on each side using atmospheric gas before mounting in Vitrobot (model IV) tweezers (Thermo Fisher Scientific). We prepared grids with minimal exposure to air using anaerobically frozen aliquots of HydABC. These were individually defrosted and used. In this manner, HydABC was exposed to the air for a few seconds. The enzyme (without the [FeFe] site) seems to be stable under air for at least a few hours, determined as there were no visible spectral changes when the enzyme solution was exposed to air. Individual HydABC aliquots were defrosted and 2.5 μl immediately placed onto the grid, blotted, and plunged into liquid ethane. 12 grids were prepared, varying blot time from 2 to 4 s with 0.75–1.5 mg ml−1 protein; blot force parameter was constant at −5. Following screening to optimize protein concentration and blotting parameters, cryo-grids could be consistently prepared with densely packed but non-aggregated particles where it was possible to see several different views of HydABC by eye. Following screening, a grid at 1 mg ml−1 protein concentration was selected for data collection on a Titan Krios microscope operated at 300 kV with a K2 detector and energy filter. The energy filter was set to a 20 eV window. Three exposures were collected per hole, and the autofocus routine was run every 10 μm. AutoCTF was used to correct for astigmatism and coma. 4790 movies of 48 frames each were collected. The total fluence was 57 electrons / Å2.
 
-## Image processing
+### Image processing
 
 The Relion pipeline was used for all image processing. Whole micrograph motion correction and damage weighting were performed using the implementation of MotionCor2 in Relion (Zivanov et al., 2018). Initial CTF values were determined with CTFFIND4 (Rohou and Grigorieff, 2015) and particles were picked using a low resolution (≈10 Å) preliminary dataset that was previously collected (not described here). The early stages of 2D and 3D classification used images with the original pixel size downsampled from 0.85 to 3.4 Å/pixel. Reference-free 2D classification was performed to classify the particles (Figure 1—figure supplement 3) and remove broken particles that are most likely denatured at the air–water interface, common to most cryo-EM projects (Noble et al., 2018). It was clear there were large particles that had four lobes consistent with a tetramer of trimers and smaller particles, with high-resolution features (Figure 1—figure supplement 3). Any classes that showed high-resolution features in the 2D class averages were selected for coarse 3D classification, which effectively cleaned the dataset to only the tetramer of trimer particles, consistent with the gel filtration profile of the preparation. An initial model was generated in Relion and coarse 3D classification (7.5° sampling) without symmetry being enforced was used to remove broken particles. Docking in the related structure of subunits Nqo1, Nqo2, and Nqo3 of complex I from T. thermophilus (Baradaran et al., 2013) showed that the particles had D2 symmetry, consistent with a tetramer of trimers Hyd(ABC)4 arrangement. The particles were reextracted with the original pixel size of 0.85 Å/pixel and 3D autorefinement of these particles resulted in a 2.5-Å resolution structure when D2 symmetry was applied. To further improve the resolution, anisotropic magnification, trefoil, and fourth-order aberration parameters were refined; with astigmatism and defocus being fitted on a per-particle basis (Zivanov et al., 2020). Bayesian polishing was also performed (Zivanov et al., 2019). The map displayed the features expected at such a resolution, with rotamers of many side chains being clear and water molecules being visible in well-resolved regions. Refinment resulted in a 2.3-Å resolution structure when D2 symmetry was applied (Figure 1—figure supplement 3). The final calibrated pixel size was 0.824 Å.
 
@@ -113,12 +258,12 @@ To investigate the blurred bridging regions, symmetry expansion was used to sepa
 
 To explore the location of the HydB in the non-bridged class, a mask was created around the suspected area and used for classification and refinement (Figure 4—figure supplement 1B). The improved map allowed an improved mask to be created for a final round of classification and refinement. The resulting map density is of insufficient quality for ab initio model building, but the strong FeS signals allowed the HydB CT-domain to be docked in place (Figure 4D).
 
-## Model building and validation
+### Model building and validation
 
 WinCoot (Emsley et al., 2010) and Phenix (Liebschner et al., 2019) were used for model building and validation, and ChimeraX (Pettersen et al., 2021) was used for visualization and figure generation. We used a homology model generated based on bacterial complex I (Baradaran et al., 2013) discussed in our recent paper on HydABC (Chongdar et al., 2020) as a starting point for model building. Here, the Nqo3 subunit of complex I is related to HydA, Nqo1 to HydB, and Nqo2 to HydC. The map density was sufficiently strong to allow ab initio building of the non-conserved regions of HydA and HydB in the well-resolved parts of the D2 map, however, without further classification, many parts of HydB and HydC were poorly resolved. Model refinement was performed using Phenix real-space refinement. Phenix now automatically recognizes the ligation between FeS clusters and cysteines, so it is no longer necessary to manually define these restraints or to provide the correct definition of the FeS geometry (Moriarty and Adams, 2019).
 
 The ‘bridge’ is formed from 91 residues of the CT of HydA and 61 residues of the CT of HydB. The HydA CT ‘bridge’ domain has homology with the CT of HndA from the NADP-reducing hydrogenase complex in Desulfovibrio fructosovorans (Nouailler et al., 2006) and 82 CT residues of T. maritima HydC. The HydB CT ‘bridge’ domain has homology with bacterial 2×[4Fe–4S] ferredoxin domains. In both cases, Phyre2 was used to build a homology model from this information, which was further built into the density, combined with the model for the rest of the complex built from the D2 map and refined (Kelley et al., 2015).
 
-## EPR spectroscopy
+### EPR spectroscopy
 
 A 0.2 ml, 0.2 mM sample of the HydB subunit in 100 mM Tris–HCl, 150 mM NaCl, pH 8 reduced with 10 mM sodium dithionite was transferred to a quartz 4 mm (o.d.) EPR tube and frozen in liquid nitrogen. X-band EPR spectra were recorded on a Bruker ELEXSYS E500 CW X-band EPR spectrometer. The temperature of the sample was controlled using an Oxford Instruments ESR900 helium flow cryostat connected to an ITC503 temperature controller. The measurement parameters were: microwave frequency 9.64 GHz, time constant 81.92 ms, conversion time 81.92 ms, and modulation frequency 100 kHz. The microwave power and temperature were varied between measurements and are indicated in the figure legends. All spectra were analyzed with home-written scripts in MATLAB. Spectral simulations were performed using the EasySpin package (Stoll and Schweiger, 2006).

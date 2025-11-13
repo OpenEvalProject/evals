@@ -17,19 +17,19 @@
 
 ### Affiliations
 
-1. https://ror.org/03v76x132 Department of Molecular Biophysics and Biochemistry, Yale University New Haven United States
-2. https://ror.org/03v76x132 Department of Neuroscience, Yale School of Medicine New Haven United States
-3. https://ror.org/03v76x132 Interdepartmental Neuroscience Program, Yale University New Haven United States
-4. https://ror.org/04gw3ra78 Department of Gerontology, The Third Medical Center, Chinese PLA General Hospital Beijing China
-5. https://ror.org/03v76x132 Department of Comparative Medicine, Yale School of Medicine New Haven United States
-6. https://ror.org/05vkpd318 Laboratory for Immunochemical Circuits, La Jolla Institute for Immunology La Jolla United States
-7. https://ror.org/03v76x132 Department of Neurosurgery, Yale School of Medicine New Haven United States
+1. Department of Molecular Biophysics and Biochemistry, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+2. Department of Neuroscience, Yale School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+3. Interdepartmental Neuroscience Program, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+4. Department of Gerontology, The Third Medical Center, Chinese PLA General Hospital Beijing China ([ROR:04gw3ra78](https://ror.org/04gw3ra78))
+5. Department of Comparative Medicine, Yale School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+6. Laboratory for Immunochemical Circuits, La Jolla Institute for Immunology La Jolla United States ([ROR:05vkpd318](https://ror.org/05vkpd318))
+7. Department of Neurosurgery, Yale School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 
 ## Abstract
 
-Genetic variants in TRIO are associated with neurodevelopmental disorders (NDDs) including schizophrenia (SCZ), autism spectrum disorder (ASD), and intellectual disability. TRIO uses its two guanine nucleotide exchange factor (GEF) domains to activate GTPases (GEF1: Rac1 and RhoG; GEF2: RhoA) that control neuronal development and connectivity. It remains unclear how discrete TRIO variants differentially impact these neurodevelopmental events. Here, we investigate how heterozygosity for NDD-associated Trio variants – +/K1431M (ASD), +/K1918X (SCZ) , and +/M2145T (bipolar disorder, BPD) – impacts mouse behavior, brain development, and synapse structure and function. Heterozygosity for different Trio variants impacts motor, social, and cognitive behaviors in distinct ways that model clinical phenotypes in humans. Trio variants differentially impact head and brain size, with corresponding changes in dendritic arbors of motor cortex layer 5 pyramidal neurons (M1 L5 PNs). Although neuronal structure was only modestly altered in the Trio variant heterozygotes, we observe significant changes in synaptic function and plasticity. We also identified distinct changes in glutamate synaptic release in +/K1431M and +/M2145T cortico-cortical synapses. The TRIO K1431M GEF1 domain has impaired ability to promote GTP exchange on Rac1, but +/K1431M mice exhibit increased Rac1 activity, associated with increased levels of the Rac1 GEF Tiam1. Acute Rac1 inhibition with NSC23766 rescued glutamate release deficits in +/K1431M variant cortex. Our work reveals that discrete NDD-associated Trio variants yield overlapping but distinct phenotypes in mice, demonstrates an essential role for Trio in presynaptic glutamate release, and underscores the importance of studying the impact of variant heterozygosity in vivo.
+Genetic variants in TRIO are associated with neurodevelopmental disorders (NDDs) including schizophrenia (SCZ), autism spectrum disorder (ASD), and intellectual disability. TRIO uses its two guanine nucleotide exchange factor (GEF) domains to activate GTPases (GEF1: Rac1 and RhoG; GEF2: RhoA) that control neuronal development and connectivity. It remains unclear how discrete TRIO variants differentially impact these neurodevelopmental events. Here, we investigate how heterozygosity for NDD-associated Trio variants – +/K1431M (ASD), +/K1918X (SCZ), and +/M2145T (bipolar disorder, BPD) – impacts mouse behavior, brain development, and synapse structure and function. Heterozygosity for different Trio variants impacts motor, social, and cognitive behaviors in distinct ways that model clinical phenotypes in humans. Trio variants differentially impact head and brain size, with corresponding changes in dendritic arbors of motor cortex layer 5 pyramidal neurons (M1 L5 PNs). Although neuronal structure was only modestly altered in the Trio variant heterozygotes, we observe significant changes in synaptic function and plasticity. We also identified distinct changes in glutamate synaptic release in +/K1431M and +/M2145T cortico-cortical synapses. The TRIO K1431M GEF1 domain has impaired ability to promote GTP exchange on Rac1, but +/K1431M mice exhibit increased Rac1 activity, associated with increased levels of the Rac1 GEF Tiam1. Acute Rac1 inhibition with NSC23766 rescued glutamate release deficits in +/K1431M variant cortex. Our work reveals that discrete NDD-associated Trio variants yield overlapping but distinct phenotypes in mice, demonstrates an essential role for Trio in presynaptic glutamate release, and underscores the importance of studying the impact of variant heterozygosity in vivo.
 
 ## Introduction
 
@@ -43,15 +43,23 @@ We report here the comprehensive analysis of mice heterozygous for discrete Trio
 
 ## Results
 
-## Generation of Trio variant mice and impact on Trio isoforms
+### Generation of Trio variant mice and impact on Trio isoforms
 
 To evaluate how different ways of impairing Trio could affect mammalian brain development and function, we used CRISPR/Cas9 technology to generate mice bearing heterozygous Trio variant alleles in different Trio functional domains (Figure 1A and B). We chose these alleles for their discrete and measurable effects on TRIO levels or GEF activity in vitro: K1431M impairs TRIO GEF1 interaction with and subsequent activation of Rac1 in vitro up to eightfold (Figure 1—figure supplement 1A and B; Katrancha et al., 2017; Sadybekov et al., 2017), M2145T TRIO GEF2 has a reduced ability to activate RhoA as a function of protein concentration in cells (Katrancha et al., 2017), and K1918X is predicted to lead to nonsense-mediated decay and loss of Trio protein (Katrancha et al., 2017). These Trio variant alleles are found heterozygous in individuals with NDDs: +/K1431M is associated with ASD, +/K1918X is associated with SCZ, and +/M2145T is a de novo mutation found in an individual with BPD (Bircher and Koleske, 2021).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of major Trio isoforms present in the adult mouse brain, with locations of engineered neurodevelopmental disease (NDD)-associated Trio variants: K1431M is a rare missense variant in the GEF1 DH domain associated with autism spectrum disorder (ASD); a K1918X nonsense variant that lies just before the GEF2 domain associated with schizophrenia (SCZ); and M2145T missense variant in the GEF2 DH domain found in an individual with bipolar disorder (BPD). (B) Representative sequencing chromatograms of WT and Trio variant mice. Arrows indicate heterozygosity for the variant alleles. (C) Representative immunoblots for Trio in P0 brain lysates using an antibody against Trio spectrin repeats (SR5-6). (D) Quantification of Trio protein levels from P0 brain lysates. Trio protein levels are reduced only in the brains of +/K1918X mice compared to WT controls (0.545±0.126 of WT level, p=0.0046). (E–H) Activity levels of Rac1 (E,G) and RhoA (F,H) in whole brain homogenates of neonate (P0, E–F) and adult (P42, G–H) Trio variant mice as measured by G-LISA assay. Rac1 activity is increased in +/K1431M mice relative to WT at both ages (1.106±0.027 fold at P0, p=0.0035; 1.509±0.175 fold at P42, p=0.0279) and decreased in neonate +/K1918X mice (0.908±0.0.032 fold, p=0.0230), with a trend towards increased activity in adult +/M2145T mice (1.438±0.183 fold, p=0.0843); meanwhile, RhoA activity appears unchanged in all mice relative to WT, although there may be a trend towards decreased activity in +/K1918X neonates (0.840±0.074 fold, p=0.1292). (I,J) Activity levels of Rac1 (I) and RhoA (J) in synaptosomes isolated from P42 mouse cortex. Rac1 activity is increased in +/K1431M synaptosomes (1.125±0.107 fold, p=0.0023), while RhoA activity is decreased in +/M2145T synaptosomes (0.731±0.042 fold, p=0.0093) relative to WT. All data shown as mean ± SEM. For (D–J), one-way ANOVA with post-hoc Bonferroni MC test identified differences from WT (nsp <0.1, *p<0.05, **p<0.01). Mouse numbers per group are shown in bars.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) In vitro GEF assay showing Rac1:Bodipy-FL-GDP exchange via fluorescence decay over time, with background subtracted and fitted with exponential curves. K1431M has impaired GEF activity compared to WT at equimolar amounts (500 nM) of TRIO GEF1 protein (n=3 replicates). (B) K1431M significantly decreases the initial rate of nucleotide exchange compared to WT (Kobs = 0.0006 ± 0.0002 x10–3 s–1 vs WT Kobs = 2.5 ± 0.1 x10–3 s–1; p<0.0001, n=3). (C) Number and frequency of progeny from heterozygote intercrosses. +/K1431M x +/K1431M crosses produced litters in the expected Mendelian frequencies of 25% +/+: 50% +/variant: 25% variant/variant (Chi-square test, two-tailed p=0.2231). +/K1918X (Chi-square test, two-tailed p<0.0001) intercrosses did not yield homozygote variants (binomial test, two-tailed p=0.0610). +/M2145T x +/M2145T crosses yielded slightly more heterozygotes than expected (Chi-square test, two-tailed p=0.0140). (D,H) Representative immunoblots for Trio isoforms in the cortex (D) and cerebellum (H) of P42 male Trio heterozygous variant and paired WT littermate mice (used antibodies noted in parentheses). (E–G,I–L) Quantification of Trio isoform levels in immunoblots of the cortex (E–G) and cerebellum (I–L). Significant decreases in Trio9 levels were found only in +/K1918X cortex (in E: 0.3590±0.06005 vs WT 1.000±0.1541, p=0.0036; in F: 0.3513±0.1191 vs WT 1.000±0.1165, p=0.0207) and cerebellum (in I: 0.4239±0.04858 vs WT 1.000±0.08361, p=0.0003; in J: 0.2753±0.08413 vs WT 1.000±0.2118, p=0.0059, n=6 mice per group). No significant changes in Trio levels were observed in +/K1431M or +/M2145T mouse brains. Trio8 levels in the cerebellum for all Trio heterozygous variant mice were unchanged from WT littermates. Ratio paired t-tests identified differences from the WT mean (n=6 mice per group). (M) Representative immunoblots showing enrichment of Trio, PSD95, and synaptophysin (Syp) in synaptosomes (syn) compared to 40 µm-filtered total homogenate (hom) from P42 WT mouse cortex. (N–P) Quantification of Trio9S, PSD95, and Syp in immunoblots from P42 mouse synaptosomes versus total homogenate (n=18 mice). All data are presented as mean ± SEM; significance tested by Paired t-tests unless specified otherwise (nsp <0.1, *p<0.05, **p<0.01, ****p<0.0001).
 
 Because Trio knockout mice exhibit decreased survival (O’Brien et al., 2000; Peng et al., 2010; Zong et al., 2015), we first verified the viability of mice bearing these CRISPR/Cas9-generated Trio alleles. Mice heterozygous for any one of these three Trio alleles survived to adulthood. Mice homozygous for Trio K1431M and M2145T survived to adulthood, with genotypes from offspring of +/K1431M intercrosses observed in Mendelian ratios, but fewer than expected M2145T homozygotes obtained from +/M2145T intercrosses (Figure 1—figure supplement 1C). K1918X homozygote pups were not observed (Figure 1—figure supplement 1C), as expected for a Trio null allele (O’Brien et al., 2000; Zong et al., 2015). We focused on heterozygotes, as most rare damaging Trio variants are heterozygous in humans.
 
 Alternative splicing of the full-length TRIO transcript generates multiple brain-specific isoforms of various sizes, whose expression level varies by brain region and developmental age: cortex-predominant Trio9S (263 kDa) and Trio9L (277 kDa), brain-wide Duet (145 kDa), and cerebellum-specific Trio8 (217 kDa; Figure 1A; McPherson et al., 2005; Portales-Casamar et al., 2006). Heterozygosity for the K1431M and M2145T alleles did not alter the levels of the predominant Trio isoforms in the brain at postnatal day 0 (P0, neonate; Figure 1C–D) or at P42 (young adult; Figure 1—figure supplement 1D–L). Trio9 protein levels were reduced by ~50% in the brains of +/K1918X mice at P0 (Figure 1C–D) and P42 (Figure 1—figure supplement 1D–L), and we did not detect the presence of residual truncated protein (expected at 217 kDa), suggesting this K1918X mutation indeed leads to nonsense-mediated decay as predicted. Meanwhile, as the K1918 site is not contained in these isoforms, the levels of Trio8 and Duet were unaffected (Figure 1—figure supplement 1D–L).
 
-## Trio variant alleles differentially impact active Rho family GTPase levels
+### Trio variant alleles differentially impact active Rho family GTPase levels
 
 Having demonstrated that heterozygosity for the K1431M and M2145T alleles does not alter Trio protein levels in the brain, we can attribute any observed differences to the effects of these missense mutations on Trio GEF domain function rather than changes in Trio protein expression. Given the effects of these variants on TRIO GEF1/2 activities in vitro, we measured levels of active GTP-bound Rac1 and RhoA in brains of neonatal (P0) and young adult (P42) Trio variant-bearing mice (Figure 1E–H).
 
@@ -61,9 +69,17 @@ As K1431M decreases TRIO GEF1 catalytic activity in vitro (Figure 1—figure sup
 
 Because Trio, Rac1, and RhoA are enriched at synapses (O’Neil et al., 2021; Paskus et al., 2019; Katrancha et al., 2017; Oevel et al., 2024), we also measured GTPase activities in synaptosomes (Figure 1—figure supplement 1M–P), within the same age range as the electrophysiological recordings performed on these mice. Active Rac1 was significantly increased in +/K1431M crude synaptosomes from P42 cortex (112% of WT, p<0.01; Figure 1I), consistent with our findings in +/K1431M whole brain lysates (Figure 1E and G). We also measured decreased levels of active RhoA in P42 +/M2145T cortical synaptosomes compared to WT (73% of WT, p<0.01; Figure 1J), consistent with its reduced GEF2 activity in vitro (Katrancha et al., 2017; Figure 1F and H).
 
-## Distinct trio variants differentially impact mouse behavior
+### Distinct trio variants differentially impact mouse behavior
 
 NDDs affect learning and memory, compulsivity, motor coordination, and social skills; hence, we assessed these skills using a diverse array of established behavioral tests (Katrancha et al., 2019) in P42 mice bearing Trio variants (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic illustration of the behavioral tests performed on young adult (P42–P56) heterozygous Trio variant mice of both sexes. All mice proceeded through the same battery of tests. (B) +/K1431M and +/K1918X mice of both sexes had decreased latency to fall off an accelerating rotarod compared to WT male mice. In male mice (left), linear regressions identified differences from WT in slopes, indicating impaired rate of improvement in the skill (WT 16.96±1.344; +/K1431M 7.270±2.019, p<0.0001; +/K1918X 10.61 ± 1.444, p<0.0001; ####p<0.0001) (n=40 WT; 10 +/K1431M; 16 +/K1918X; 13 +/M2145T male mice). In female mice (right), linear regressions identified differences from WT in slopes (+/K1431M 9.436±2.146, p=0.0215; vs WT 14.52±1.792; #p<0.05) and intercepts (+/K1918X 6.492 ± 5.555, p=0.0248; vs WT 19.28±5.942; €p<0.05; n=28 WT; 11 +/K1431M; 16 13 +/K1918X; and 15 +/M2145T female mice). (C) +/K1431M mice of both sexes and +/K1918X females showed impaired social interactions in a three-chamber test, showing no preference to the (Str.) vs. inanimate object (Obj.) compared to WT. (D) +/K1918X mice of both sexes and +/M2145T females exhibit impaired novel object recognition and spend equal time exploring a novel object (N) and a familiar object (F). (E) Male +/K1918X mice exhibited increased nestlet shredding over 30 min (26.26 ± 3.61% shredded vs WT 14.26 ± 2.97%; p=0.0433), and +/K1431M mice exhibited a trend toward increased nestlet shredding (25.90 ± 4.34% shredded, p=0.1038) compared to WT mice. n=19 male, 19 female WT; 10 male, 10 female +/K1431M; 15 male, 11 female +/K1918X; 9 male, 10 female +/M2145T mice. All data are shown as mean ± SEM, significant differences identified using two-way ANOVA with post-hoc Bonferroni MC (nsp <0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001). Numbers of mice quantified per group are annotated inside the bar unless otherwise indicated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic diagram of the open field test. (B–F) Total distance and time in each zone were tracked automatically over 10 min per mouse (n of mouse per group are shown inside the bar). (B-C, D left) Trio variant male mice did not show significant differences in the open field test compared to WT. (D right) +/K1431M females spent significantly more time in the outer and corner zones of the open field relative to WT females (outer zone: +/K1431M 450.622±17.117 s, vs WT 409.774±10.664 s zone, p=0.0157; corner zone: +/K1431M 188.188±12.876 s, vs WT 146.550±7.251 s, p=0.0192). (E) Schematic diagram of the elevated plus maze. (F) WT mice of both sexes and +/M2145T males preferred to spend more time in the closed arms than in the open arms of the elevated plus maze; +/K1431M and +/K1918X mice of both sexes and +/M2145T females in time spent in open versus closed arms in the elevated plus maze test. Females of all Trio heterozygote genotypes as well as +/K1918X males displayed decreased time in the closed arm relative to WT mice and exhibited trends towards increased time in the open arms relative to WT. All data are presented as mean ± SEM. Two-way ANOVA with post-hoc Bonferroni MC test identified differences from WT (nsp <0.1, *p<0.05, ****p<0.0001). Numbers of mice quantified per group are annotated inside the bars.
 
 We measured motor coordination and learning using an accelerating rotarod test. +/K1431M and +/K1918X mice of both sexes fell from an accelerating rotarod with reduced latency relative to WT littermates, while +/M2145T mice performed similarly to WT (Figure 2B). In addition, +/K1431M and +/K1918X males and +/K1431M females showed a lower rate of improvement in this skill over repeated trials (Figure 2B). No deficits in muscle strength were noted in any genotype using the Kondziela inverted screen test prior to rotarod testing.
 
@@ -75,17 +91,29 @@ Repetitive behaviors and stereotypies are often identified in individuals with N
 
 Behavioral phenotypes mostly overlapped between +/K1431M and +/K1918X mice, with differences in social interaction and memory tests. +/M2145T mice exhibited the fewest phenotypes in measured tasks. Additionally, some behavioral manifestations appeared to be selective to one sex. Together, these data indicate that these Trio alleles differentially impact behavior.
 
-## Trio +/K1431M and +/K1918X mice have smaller brains
+### Trio +/K1431M and +/K1918X mice have smaller brains
 
 TRIO variants that reduce TRIO GEF1 activity are associated with microcephaly (Barbosa et al., 2020; Bonnet et al., 2023; Bircher et al., 2022), so we assessed head and brain size in Trio variant mice (Figure 3A–E [males], Figure 3—figure supplement 1A–E [females]). After adjusting for body weight, both the head width (Figure 3D, Figure 3—figure supplement 1D) and brain weight (Figure 3E, Figure 3—figure supplement 1E) were reduced in P42 adult +/K1431M mice of both sexes relative to WT, consistent with the microcephaly seen in patients harboring TRIO GEF1-deficient alleles. Of note, these ratios were driven by the increased body weight exhibited by P42 +/K1431M mice of both sexes compared to WT counterparts (Figure 3C, Figure 3—figure supplement 1C). +/K1918X mice of both sexes displayed a reduced brain weight-to-body weight ratio (Figure 3E, Figure 3—figure supplement 1E) but an unchanged head width-to-body weight ratio (Figure 3D, Figure 3—figure supplement 1D) relative to WT, suggesting a disproportionate reduction in brain mass in +/K1918X mice. Meanwhile, +/M2145T mice did not differ from WT in either head width or brain weight when adjusted for body weight.
 
-## Trio variant mice show mild changes in cortical organization
+![Figure 3.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig3-v1.jpg)
+
+**Figure 3.:** (A) Ear-to-ear head width is reduced in P42 +/K1918X and +/M2145T compared to WT male mice (+/K1431M: 12.40±0.04 mm, p=0.95; +/K1918X: 12.15±0.08, p=0.001; +/M2145T 12.01±0.15, p<0.0001; vs WT 12.49±0.04 mm, n=17–45). (B) Brain weight is significantly decreased relative to WT in P42 males of all three heterozygous Trio variants (+/K1431M: 0.382±0.004 g, p=0.04; +/K1918X: 0.346±0.004 g, p<0.0001; +/M2145T 0.378±0.005 g, p=0.002; vs WT 0.396±0.004 g, n=44–98). (C) Body weight is significantly increased in P42 +/K1431M males and decreased in +/K1918X males (+/K1431M: 22.91±0.38 g, p=0.01; +/K1918X: 20.67±0.03 g, p=0.001; +/M2145T: 21.22±0.33 g, p=0.44; vs WT 21.76±0.19 g, n=45–118). (D) Head widths normalized to body weight of P42 +/K1431M male mice were reduced 10.8% compared to WT mice (+/K1431M: 0.520±0.008 mm/g, p=0.0001; +/K1918X: 0.598±0.012 mm/g, p>0.999; +/M2145T 0.607±0.023 mm/g, p=0.54; vs WT 21.76±0.19 mm/g, n=17–46). (E) Brain weights normalized to body weight of P42 +/K1431M and +/K1918X male mice were reduced 3.9% and 7.9%, respectively compared to WT mice (+/K1431M: 0.520±0.008 mm/g, p=0.0001; +/K1918X: 0.598±0.012 mm/g, p>0.999; +/M2145T 0.607±0.023 mm/g, p=0.54; vs WT 21.76±0.19 mm/g, n=17–46). (F) Representative images of Nissl-stained 30 μm coronal slices of male P42 WT and heterozygous Trio variant brains. (G) Total cross-sectional tissue area of Nissl-stained coronal sections was reduced by ~9% + /K1918X in P42 male mice compared to WT. (H) Representative images of Nissl-stained cortical layers (L1-L6, dotted black box) of P42 WT and heterozygous Trio variant brains. (I) The total cortical thickness (from H) is reduced by ~8% in +/K1918X P42 male brains compared to WT. (J) Thickness of individual cortical layers, as identified in Nissl stains in H. L2/3 and L5 were preferentially reduced (–12% and –13%, resp.) in +/K1918X cortex relative to WT (L2/3: 0.306±0.011 mm vs WT 0.346±0.010 mm, p=0.0043; L5: 0.274±0.008 mm vs WT 0.314±0.008 mm, p=0.0054). (K) Representative traces of M1 L5 PNs from heterozygous male Trio variant mice crossed with Thy1-GFP(M). (L) +/K1918X M1 L5 PNs show a trend toward reduced basal dendritic field size (0.1172±0.0078 mm²; vs WT 0.1368±0.0077 mm², p=0.0933; n=15–22 neurons per mouse), as measured by convex hull analysis of dendrite arbor reconstructions. (M) Both +/K1918X and +/M2145T exhibit significantly smaller apical dendritic field size (+/K1918X: 0.5157±0.0169 mm², p=0.0460; +/M2145T: 0.4893±0.0285 mm², p=0.0062) compared to WT (0.6081±0.0319 mm²; n=15–22 neurons per mouse). All data shown as mean ± SEM. One-way ANOVA with post-hoc Bonferroni MC test identified significant differences from WT (nsp <0.1, *p<0.05, **p<0.01). (N,O) Sholl analysis revealed basal (N) and apical (O) dendritic arborization changes in Trio variant M1 L5 PNs compared to WT: both basal and apical arborization was reduced in +/K1918X, while proximal basal arborization was increased in +/K1431M. Two-way ANOVA (stacked) with post-hoc Bonferroni MC test identified differences from WT.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Ear-to-ear head width is unchanged from WT for all female heterozygous Trio variant mice at P42. (B) Brain weight is significantly reduced by 9.9% in P42 +/K1918X female mice compared to WT. (C) Body weight is increased by 4.2% in P42 +/K1431M female mice. (D) Head widths normalized to body weight of P42 +/K1431M female mice were reduced by 7.9% compared to WT mice. Head width-to-body weight ratios were calculated per individual mouse, with mouse number per group annotated within the bar. (E) Brain weights normalized to body weight of P42 +/K1431M and +/K1918X female mice were reduced 6.2% and 8.6%, respectively, compared to WT mice. Brain-to-body weight ratios were calculated per individual mouse, with mouse number per group annotated within the bar. (F) Thickness of individual cortical layers expressed as a percentage of total cortical thickness. No differences were observed in Trio variant mice compared to WT. For (G–H), two-way ANOVA with post-hoc Bonferroni MC test identified differences from WT (**P<0.01; n=7 mice per group). (G) Representative maximum projection fluorescence image and corresponding dendritic arbor reconstruction of a motor cortex Layer 5 pyramidal neuron (M1 L5 PN) from a P42 Thy1-GFP mouse. (H–K) Representative fluorescent image of a 30 μm coronal slice from P42 WT brain, immunostained for NeuN and PV. Regions of motor cortex as outlined by the white dotted box in (H) and (J) are magnified in (I) and (K), resp. (L–N) Density of DAPI+, NeuN+, and PV + cells did not significantly differ between Trio variants and WT in the total M1 region quantified or in cortical layers 2/3 and 5, though there were trends towards increased DAPI + cell density in +/K1918X and increased L2/3 NeuN + cell density in +/M2145T P42 male mice relative to WT. All data are shown as mean ± SEM; significance tested by one-way or two-way ANOVA with post-hoc Bonferroni MC test identified differences from WT (ns: 0.05<p < 0.1; n=6 mice for Trio variants, n=8 WT mice; 3 slices per mouse were analyzed). All data are presented as mean ± SEM.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–E) Overall measurements of dendritic reconstructions showed that average dendrite length (A), sum total dendrite length (B), number of branches (C), number of branch points (D), and number of tips (E) of Trio variant M1 L5 PNs were not different from WT. (n=same as in main Figure 2J–M). (F–K) Path length analysis showed dendrite order-dependent changes in +/K1431M and +/K1918X number of branches (F,I), average dendrite length (G,J), sum total dendrite length (H,K) for basal (F–H) and apical (I–K) dendrites compared to WT. +/K1918X PNs exhibited reduced average and total dendrite length at higher-order basal dendrites (in 5th-order basal dendrites: average branch length 11.015±5.176 µm vs WT 38.51±9.565 µm, p=0.0491; total dendrite length 31.593±18.700 µm vs WT 137.550±38.407 µm, p=0.0491) and reduced sum total branch length in mid-order apical dendrites (in tertiary apical dendrites, 1596.476±129.408 vs WT 2068.017 ±127.918 µm, p=0.0354). +/K1431 PNs had increased proximal basal dendrite numbers (in secondary basal dendrites, 17.545±0.513 µm vs WT 14.783±0.866 µm, p=0.0256). Two-way ANOVA with post-hoc Bonferroni MC test identified differences from WT. (L) Representative maximum projection fluorescence images of basal and apical dendrite segments from M1 L5 PNs of P42 Trio variant mice. (M) Dendritic spine density on proximal apical and secondary basal dendrites is unchanged in Trio variant mice compared to WT (used 2–5 dendrites per neuron/1–2 neurons per mouse). Numbers of dendrites quantified per group are annotated inside the bar (number of neurons in parentheses). All data show mean ± SEM; significance tested using one-way or two-way ANOVA as appropriate with post-hoc Bonferroni MC test identified differences from WT (nsp <0.1, *p<0.05, **p<0.01; n=same as in main Figure 2J–M).
+
+### Trio variant mice show mild changes in cortical organization
 
 We examined whether the decreased brain weight and head size observed in +/K1431M and +/K1918X mice were associated with anatomical defects. Gross histological analyses of fixed Nissl-stained brain sections in P42 male mice showed only mild morphological defects (Figure 3F–J). We observed reductions in both total cross-sectional brain area (Figure 3F–G) and cortical thickness (Figure 3H–I) in +/K1918X brains, consistent with their smaller head size and brain weight. Significant decreases in cortical layer 2/3 and layer 5 thickness were observed in +/K1918X brains (Figure 3H–J) and were in proportion to the relative decrease in cortical thickness relative to WT (Figure 3—figure supplement 1F). Meanwhile, no significant differences in brain area or cortical thickness were observed in either +/K1431M or +/M2145T mice.
 
 Deletion of Trio has been shown to impair the migration of forebrain interneuron progenitors, resulting in fewer neurons entering the cerebral cortex and altered distribution of cortical layers (Sun et al., 2021; Wei et al., 2022). However, we observed no change in total cortical cell density or in layer-specific cell density in heterozygous Trio variant male mice, nor were numbers of cortical NeuN +neuronal cells or PV +inhibitory neurons altered relative to WT, although there were trends toward increased DAPI + cell density in +/K1918X and increased NeuN + cell density in +/M2145T motor cortex (Figure 3—figure supplement 1H–N). These data suggest that the reduced brain size of +/K1918X mice results from a loss of neuropil rather than reductions in cortical neuron number.
 
-## Trio variant heterozygotes exhibit alterations in dendritic arbors and synaptic ultrastructure
+### Trio variant heterozygotes exhibit alterations in dendritic arbors and synaptic ultrastructure
 
 Altered dendritic arbor morphology and dendritic spine abnormalities are hallmarks of NDDs (Kaufmann and Moser, 2000; Huttenlocher, 1970; Huttenlocher, 1974; Huttenlocher, 1991; Purpura, 1974; Purpura, 1975; Kulkarni and Firestein, 2012). Excitatory neuron-specific ablation of one or both Trio alleles decreased dendritic arborization, increased spine density, and yielded smaller synapses in cortex area M1 Layer 5 pyramidal neurons (M1 L5 PNs; Katrancha et al., 2019).
 
@@ -97,11 +125,11 @@ Electron microscopy of cortical area M1 L5 revealed that synapse density was sig
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig4-v1.jpg)
 
-**Figure 4.:** Trio variants differentially impact synapse ultrastructure and synaptic vesicle distribution.(A) Representative electron micrographs (EMs) from motor cortex layer 5 (M1 L5) of P42 WT and Trio variant mice. Post-synaptic regions are pseudo-colored in cyan; pre-synaptic regions in magenta. (B) Asymmetric synapse density was increased in +/K1918X mice (0.09205±0.004775 synapses/µm2; vs WT 0.07633±0.003954 synapses/µm2, p=0.0345). (C) PSD lengths were slightly decreased in M1 L5 synapses by 6% in +/K1918X and 6.6% in +/M2145T mice vs WT (+/K1918X 0.2926 ± 0.004652 µm, p=0.0204; +/M2145T 0.2916±0.004922 µm, p=0.0142; vs WT 0.3125±0.005612 µm). (D,E) Presynaptic bouton and spine head areas of Trio variants M1 L5 synapses were unchanged from WT. (F) Synaptic vesicles (SVs) distribution per 100 nm of active zone (AZ) length in M1 L5 as a function of distance from the AZ. +/M2145T showed an increase in readily releasable pool (RRP) identified as docked SVs (15 nm from AZ; 1.23±0.05 vs WT 0.90±0.05) and increase in tethered SVs (50 nm from AZ; 1.44±0.04 vs WT 1.20±0.05). +/K1918X and +/M2145T also showed an increase in the reserve pool of SVs (200 nm from AZ; 3.51±0.21 and 3.81±0.18, resp. vs WT 2.74±0.16, n=15–30 synapses/mouse). (G) Total releasable pool, calculated as number of SVs at 15–150 nm from AZ per area of distribution (nm2). RRP (15–50 nm from AZ) was significantly increased in +/M2145T (0.257±0.007 vs WT 0.228±0.008), driven by increased docked and tethered SVs. All data are presented as mean ± SEM, significance tested by ordinary one-way ANOVA with post-hoc Bonferroni MC test (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).
+**Figure 4.:** (A) Representative electron micrographs (EMs) from motor cortex layer 5 (M1 L5) of P42 WT and Trio variant mice. Post-synaptic regions are pseudo-colored in cyan; pre-synaptic regions in magenta. (B) Asymmetric synapse density was increased in +/K1918X mice (0.09205±0.004775 synapses/µm2; vs WT 0.07633±0.003954 synapses/µm2, p=0.0345). (C) PSD lengths were slightly decreased in M1 L5 synapses by 6% in +/K1918X and 6.6% in +/M2145T mice vs WT (+/K1918X 0.2926 ± 0.004652 µm, p=0.0204; +/M2145T 0.2916±0.004922 µm, p=0.0142; vs WT 0.3125±0.005612 µm). (D,E) Presynaptic bouton and spine head areas of Trio variants M1 L5 synapses were unchanged from WT. (F) Synaptic vesicles (SVs) distribution per 100 nm of active zone (AZ) length in M1 L5 as a function of distance from the AZ. +/M2145T showed an increase in readily releasable pool (RRP) identified as docked SVs (15 nm from AZ; 1.23±0.05 vs WT 0.90±0.05) and increase in tethered SVs (50 nm from AZ; 1.44±0.04 vs WT 1.20±0.05). +/K1918X and +/M2145T also showed an increase in the reserve pool of SVs (200 nm from AZ; 3.51±0.21 and 3.81±0.18, resp. vs WT 2.74±0.16, n=15–30 synapses/mouse). (G) Total releasable pool, calculated as number of SVs at 15–150 nm from AZ per area of distribution (nm2). RRP (15–50 nm from AZ) was significantly increased in +/M2145T (0.257±0.007 vs WT 0.228±0.008), driven by increased docked and tethered SVs. All data are presented as mean ± SEM, significance tested by ordinary one-way ANOVA with post-hoc Bonferroni MC test (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).
 
 Synaptic vesicle (SV) distribution was significantly altered in +/M2145T mice relative to the other genotypes (Figure 4F and G). The densities of both docked and tethered vesicles at 15 and 50 nm from the active zone (AZ) respectively, which together can estimate the readily releasable pool (RRP) (Montesinos et al., 2015; Dong et al., 2018), were significantly increased in +/M2145T relative to the other genotypes (Figure 4F and G). Also, SV distribution at 200 nm from the AZ, thought to contribute the reserve pool, was also significantly increased in +/M2145T mice, suggesting an overall larger SV pool size. No differences in synaptic vesicle distribution were noted in +/K1431M mice, while +/K1918X showed modestly increased SVs at 200 nm from AZ relative to WT.
 
-## Synaptic transmission and plasticity are differentially impaired by distinct Trio variants
+### Synaptic transmission and plasticity are differentially impaired by distinct Trio variants
 
 Loss of Trio function or disruption of TRIO GEF1 activity in slice culture decreases AMPAR levels at excitatory synapses (Katrancha et al., 2019; Tian et al., 2021; Paskus et al., 2019; Sadybekov et al., 2017), while mice bearing a GEF1-deficient Trio allele exhibited decreased gamma-aminobutyric acid receptor (GABAR)- and glycine receptor (GlyR)-mediated inhibitory miniature current (mIPSC) frequencies in the prefrontal cortex (Sun et al., 2021). To explore how Trio variants impact synaptic function, we measured both miniature excitatory currents (mEPSCs) and mIPSCs in M1 L5 PNs in each of the Trio variant heterozygotes at P35-42 consistent with other experiments.
 
@@ -109,41 +137,49 @@ AMPAR-mediated mEPSC amplitudes were significantly increased in +/K1431M and +/K
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig5-v1.jpg)
 
-**Figure 5.:** Trio variant mice exhibit deficits in synaptic signaling and LTP.(A,D) Representative traces of miniature excitatory AMPAR-mediated mEPSCs, NMDAR-mediated mEPSCs, and (G) inhibitory postsynaptic currents (mIPSCs) in M1 L5 pyramidal neurons of WT and Trio variant mice. (B) AMPAR-mediated mEPSC amplitudes were significantly increased in +/K1431M (16.67±1.04 pA; p=0.0009) and +/K1918X (14.71±0.92 pA; p=0.03) slices, with no observed changes in +/M2145T slices (13.90±1.16 pA; p=0.16) compared to WT (11.25±0.84 pA; n=17–25 neurons from ≥6–8 mice per group). (C) No significant changes in AMPAR mEPSC frequencies (q) were observed in +/K1431M and +/K1918X, while +/M2145T had an increase (2.20±0.15 1 /s; vs WT 1.55±0.09 1 /s; p=0.0005). (E, F) NMDAR mEPSC frequencies were reduced in +/K1431M (0.89±0.12 1 /s; vs WT 1.3324±0.11 1 /s; p=0.015) and showed an increase in +/M2145T mice (1.68±0.10 1 /s vs WT 1.3324±0.11 1 /s; p=0.044, n=9–13 neurons from ≥5–7 mice per group). (H, I) GABA/GlyR mIPSC amplitudes were significantly increased in +/K1918X vs WT (23.69±2.89 pA; vs 15.86±1.56 pA, respectably; p=0.008), while frequency was decreased in +/K1431M and +/M2145T (0.94±0.14 1 /s, p<0.0001; and 1.64±0.19 1 /s, p=0.013; respectably; vs WT 2.44±0.20; n=16–26 neurons from ≥6–8 mice per group). (J) Representative averaged traces of NMDA and AMPA eEPSCs recorded in M1 L5 PNs. (K) Heterozygous +/K1431M and +/K1918X Trio variants mice display reduced NMDAR/AMPAR eEPSC amplitude ratios, suggesting an increase in AMPAR transmission in M1 L5 PNs (+/K1431M: 0.75±0.06, p=0.0002; +/K1918X: 0.69±0.05, p<0.0001; +/M2145T: 1.00±0.08, p=0.37; vs WT: 1.15±0.07; n=13–19 neurons from ≥5–6 mice per group). (L) Averaged representative traces of baseline and post-TBS eEPSC currents in M1 L5 PNs of WT and Trio variant mice. (M) Normalized eEPSC amplitudes measuring LTP in L5 PNs by TBS in L2/3 afferents in all genotypes showed a significant decrease in the initiation and no potentiation of the LTP in +/K1431M and +/K1918X, with increase in initiation and potentiation of +/M2145T M1 L5 PNs compared to WT. LTP was induced at 0 min. RM two-way ANOVA with post-hoc Bonferroni MC test identified significant differences (n=6–8 neurons from ≥4–5 mice per group). Data are presented as mean ± SEM; significance tested by one-way ANOVA with post-hoc Bonferroni test unless specified otherwise (**p<0.01; ***p<0.001; ****p<0.0001).
+**Figure 5.:** (A,D) Representative traces of miniature excitatory AMPAR-mediated mEPSCs, NMDAR-mediated mEPSCs, and (G) inhibitory postsynaptic currents (mIPSCs) in M1 L5 pyramidal neurons of WT and Trio variant mice. (B) AMPAR-mediated mEPSC amplitudes were significantly increased in +/K1431M (16.67±1.04 pA; p=0.0009) and +/K1918X (14.71±0.92 pA; p=0.03) slices, with no observed changes in +/M2145T slices (13.90±1.16 pA; p=0.16) compared to WT (11.25±0.84 pA; n=17–25 neurons from ≥6–8 mice per group). (C) No significant changes in AMPAR mEPSC frequencies (q) were observed in +/K1431M and +/K1918X, while +/M2145T had an increase (2.20±0.15 1 /s; vs WT 1.55±0.09 1 /s; p=0.0005). (E, F) NMDAR mEPSC frequencies were reduced in +/K1431M (0.89±0.12 1 /s; vs WT 1.3324±0.11 1 /s; p=0.015) and showed an increase in +/M2145T mice (1.68±0.10 1 /s vs WT 1.3324±0.11 1 /s; p=0.044, n=9–13 neurons from ≥5–7 mice per group). (H, I) GABA/GlyR mIPSC amplitudes were significantly increased in +/K1918X vs WT (23.69±2.89 pA; vs 15.86±1.56 pA, respectably; p=0.008), while frequency was decreased in +/K1431M and +/M2145T (0.94±0.14 1 /s, p<0.0001; and 1.64±0.19 1 /s, p=0.013; respectably; vs WT 2.44±0.20; n=16–26 neurons from ≥6–8 mice per group). (J) Representative averaged traces of NMDA and AMPA eEPSCs recorded in M1 L5 PNs. (K) Heterozygous +/K1431M and +/K1918X Trio variants mice display reduced NMDAR/AMPAR eEPSC amplitude ratios, suggesting an increase in AMPAR transmission in M1 L5 PNs (+/K1431M: 0.75±0.06, p=0.0002; +/K1918X: 0.69±0.05, p<0.0001; +/M2145T: 1.00±0.08, p=0.37; vs WT: 1.15±0.07; n=13–19 neurons from ≥5–6 mice per group). (L) Averaged representative traces of baseline and post-TBS eEPSC currents in M1 L5 PNs of WT and Trio variant mice. (M) Normalized eEPSC amplitudes measuring LTP in L5 PNs by TBS in L2/3 afferents in all genotypes showed a significant decrease in the initiation and no potentiation of the LTP in +/K1431M and +/K1918X, with increase in initiation and potentiation of +/M2145T M1 L5 PNs compared to WT. LTP was induced at 0 min. RM two-way ANOVA with post-hoc Bonferroni MC test identified significant differences (n=6–8 neurons from ≥4–5 mice per group). Data are presented as mean ± SEM; significance tested by one-way ANOVA with post-hoc Bonferroni test unless specified otherwise (**p<0.01; ***p<0.001; ****p<0.0001).
 
 Finally, we tested the ability of the L5 PNs to undergo long-term potentiation (LTP) following theta-burst stimulation of L2/3 afferents (Figure 5L and M). While LTP was robustly induced and potentiated in M1 L5 PNs from WT mice, LTP induction and potentiation were deficient in slices from +/K1918X and +/K1431M mutant mice. In contrast, +/M2145T L5 PNs showed increased induction and prolonged potentiation of LTP compared to WT L5 PNs.
 
-## Neurotransmitter release is altered in Trio +/K1431M and +/M2145T heterozygotes
+### Neurotransmitter release is altered in Trio +/K1431M and +/M2145T heterozygotes
 
 In addition to its postsynaptic roles, Trio localizes presynaptically and interacts with the presynaptic active zone scaffolding proteins Bassoon and Piccolo (Terry-Lorenzo et al., 2016; O’Neil et al., 2021; Paskus et al., 2019). Additionally, recent work demonstrates that Rac1 activity levels can bidirectionally affect SV probability of release (Pr) in excitatory synapses (O’Neil et al., 2021; Keine et al., 2022; Broadbelt et al., 2002). To assess the impact of Trio variants on presynaptic function, we first measured the paired-pulse ratio (PPR) to test possible changes in Pr. Synapses with a low probability of release (Pr), such as L2/3 onto L5 PNs synapses, exhibit paired-pulse facilitation (PPF), where synaptic response increases for the second of two apposed stimuli due to elevated residual Ca²+ promoting SV fusion. WT and +/K1918X M1 L5 PNs exhibited normal facilitation of eEPSC amplitudes that decreased with increased interstimulus interval (ISI) (Figure 6A and B). PPF was significantly enhanced in +/K1431M M1 L5 PNs at short ISIs relative to WT, suggesting a reduction in Pr at these synapses (Figure 6A and B). The +/M2145T PPR curve was complex, with significantly reduced PPF at short ISIs, yet clearly increased PPF at longer ISIs compared to WT (Figure 6A and B). The decreased PPF at initial ISIs in +/M2145T mice, together with an increase in both AMPAR and NMDAR mEPSC frequency (Figure 5A–C), demonstrates an increase in both synchronous and spontaneous glutamate Pr.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig6-v1.jpg)
 
-**Figure 6.:** Trio +/K1431M and +/M2145T variant mice have deficiencies in short-term facilitation, glutamate Pr, and RRP.(A) Representative traces in M1 L5 PNs of WT, Trio variant mice in response to paired pulse stimulation in L2/3. (B) Paired-pulse ratio (PPR) at varying interstimulus intervals (ISIs) was overlaid with a single exponential fit (except for +/M2145T data). An increase in the initial PPR was observed in M1 L5 PNs of +/K1431M slices (35ms: 1.70±0.089, p=0.003; 60ms: 1.40±0.07, p=0.046; 100ms: 1.27±0.05, p=0.031; n=20–34 neurons from ≥7–9 mice per group) with no change in +/K1918X slices; and in +/M2145T slices we observed a decrease in initial RRP at shorter ISIs (35ms: 1.05±0.06, p<0.0001; 60ms: 0.97±0.06, p=0.037) and an increase at longer ISIs (100ms: 1.36±0.09, p=0.034; 200ms: 1.18±0.08, p=0.013) compared to WT (35ms: 1.40±0.04; 60ms: 1.21±0.03; 100ms: 1.13±0.03; 200ms 1.0±0.02; 300ms 0.96±0.17). (C) Representative traces of AMPAR eEPSCs in M1 L5 PNs under HFS (15 pulses at 40 Hz) in L2/3. (D) AMPAR eEPSCn amplitudes normalized to eEPSC1 of the train revealed changes in the depletion rates during HFS in Trio +/K1431M and +/M2145T variants compared to WT (tau decay (τd), WT: 2.7 s, +/K1431M: 3.19 s, +/M2145T: 4.79 s, +/K1918X: 2.52 s; n=12–15 neurons from 5 to 7 mice). (E) The estimated glutamate probability of release (Pr) was decreased in +/K1431M slices (0.13±0.099; p=0.013) and increased in +/M2145T slices (0.26±0.019, p=0.042), with no significant change in +/K1918X slices (0.15±0.01, p=0.64) compared to WT M1 L5 PNs (0.19±0.01; n=12–15 neurons from ≥5 mice per group). (F) The calculated size of the readily releasable vesicle pool (RRP) was increased only in +/M2145T M1 L5 PNs compared to WT (665.7±68.5 pA vs 415.8±43.9 pA, p=0.012). RRP in +/K1431M and +/K1918X synapses did not differ from WT (543.1±64.4 pA; and 543.1±64.4 pA, respectively vs 415.8±43.9 pA) (G) Exponential fits of the fractional recovery plotted vs ISI, to estimate synapse ability to recover from RRP depletion. Time of recovery, measured by exponential tau recovery (τ), was significantly decreased in R+/K1431M M1 L5 PNs (5.7 s, vs WT 2.2 s). +/K1431M also exhibited an inability to fully recover to initial levels after ISI 18 s, vs WT. Data are presented as mean ± SEM, with significant differences from WT tested using one-way ANOVA with post-hoc Bonferroni (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001).
+**Figure 6.:** (A) Representative traces in M1 L5 PNs of WT, Trio variant mice in response to paired pulse stimulation in L2/3. (B) Paired-pulse ratio (PPR) at varying interstimulus intervals (ISIs) was overlaid with a single exponential fit (except for +/M2145T data). An increase in the initial PPR was observed in M1 L5 PNs of +/K1431M slices (35ms: 1.70±0.089, p=0.003; 60ms: 1.40±0.07, p=0.046; 100ms: 1.27±0.05, p=0.031; n=20–34 neurons from ≥7–9 mice per group) with no change in +/K1918X slices; and in +/M2145T slices we observed a decrease in initial RRP at shorter ISIs (35ms: 1.05±0.06, p<0.0001; 60ms: 0.97±0.06, p=0.037) and an increase at longer ISIs (100ms: 1.36±0.09, p=0.034; 200ms: 1.18±0.08, p=0.013) compared to WT (35ms: 1.40±0.04; 60ms: 1.21±0.03; 100ms: 1.13±0.03; 200ms 1.0±0.02; 300ms 0.96±0.17). (C) Representative traces of AMPAR eEPSCs in M1 L5 PNs under HFS (15 pulses at 40 Hz) in L2/3. (D) AMPAR eEPSCn amplitudes normalized to eEPSC1 of the train revealed changes in the depletion rates during HFS in Trio +/K1431M and +/M2145T variants compared to WT (tau decay (τd), WT: 2.7 s, +/K1431M: 3.19 s, +/M2145T: 4.79 s, +/K1918X: 2.52 s; n=12–15 neurons from 5 to 7 mice). (E) The estimated glutamate probability of release (Pr) was decreased in +/K1431M slices (0.13±0.099; p=0.013) and increased in +/M2145T slices (0.26±0.019, p=0.042), with no significant change in +/K1918X slices (0.15±0.01, p=0.64) compared to WT M1 L5 PNs (0.19±0.01; n=12–15 neurons from ≥5 mice per group). (F) The calculated size of the readily releasable vesicle pool (RRP) was increased only in +/M2145T M1 L5 PNs compared to WT (665.7±68.5 pA vs 415.8±43.9 pA, p=0.012). RRP in +/K1431M and +/K1918X synapses did not differ from WT (543.1±64.4 pA; and 543.1±64.4 pA, respectively vs 415.8±43.9 pA) (G) Exponential fits of the fractional recovery plotted vs ISI, to estimate synapse ability to recover from RRP depletion. Time of recovery, measured by exponential tau recovery (τR), was significantly decreased in +/K1431M M1 L5 PNs (5.7 s, vs WT 2.2 s). +/K1431M also exhibited an inability to fully recover to initial levels after ISI 18 s, vs WT. Data are presented as mean ± SEM, with significant differences from WT tested using one-way ANOVA with post-hoc Bonferroni (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001).
 
 To further characterize changes in neurotransmitter release in these mice, we used high-frequency (40 Hz) stimulation (HFS) trains to quantitatively estimate glutamate Pr, RRP size, and rates of SV depletion and recovery. A plot of the normalized eEPSC responses to a HFS train stimulation again revealed facilitation upon the first 2–3 stimulations that was increased in +/K1431M and decreased in +/M2145T slices relative to WT, with no changes in +/K1918X slices (Figure 6C and D). Initial facilitation was followed by decaying eEPSC amplitudes, reflecting SV depletion under HFS. +/K1431M and +/M2145T Trio variants exhibited a slower train decay rate relative to WT during HFS with +/M2145T depleting at half the rate of WT (τd, +/K1431M: 3.19 s, +/M2145T: 4.79 s vs WT: 2.70 s; Figure 6D).
 
 We used a ‘Decay’ method (Ruiz et al., 2011; Thanawala and Regehr, 2016) to estimate Pr and RRP size from HFS trains, which allows us to account for initial facilitation seen in the train eEPSCs. Glutamate Pr in the L2/3-L5 synapses was increased in +/M2145T mice, while it was decreased for +/K1431M mice (Figure 6E), consistent with the relative changes observed in PPF for these mice. RRP size was much larger in L2/3-L5 synapses of +/M2145T mice relative to WT (Figure 6F), consistent with the increased SV distribution found at 15–50 nm from the AZ in electron micrographs (Figure 4F and G). We tested the ability of Trio variant heterozygotes to recover after train depletion by pairing HFS train with a single stimulus at increasing intervals (0.01, 2, 6, 9, 12, 18 s) and calculating the fractional recovery (see Materials and methods). The recovery rate (τR) was significantly slower in +/K1431M L5 PNs, and they did not recover to their initial strength within 18 s, plateauing at 78% of maximal recovery compared to WT (Figure 6G). Together, Trio +/K1431M and +/M2145T mice exhibit distinct and significant alterations in short-term plasticity and synchronous glutamate release.
 
-## Trio variant cortex displays different proteomic signatures
+### Trio variant cortex displays different proteomic signatures
 
 We used comparative proteomics from P21 cortex to identify proteins and pathways that were differentially altered by the Trio variants. We quantified a total of 7,362 proteins, finding distinct differences in the cortical proteome for each genotype (Figure 7—figure supplement 1, Figure 7—figure supplement 1—source data 1). Gene Set Enrichment Analysis (GSEA; Subramanian et al., 2005; Mootha et al., 2003) revealed alterations in distinct functions for each Trio variant (Figure 7A; Figure 7—source data 1). Of note, the only enriched gene set specific to neurons was downregulation of the synaptic vesicle pathway in +/K1431M cortex; all other gene sets were not cell-type specific.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig7-v1.jpg)
+
+**Figure 7.:** (A) Bar graph illustrating the top enriched pathways (FDR q-value <0.2, *FDR <0.05) identified by gene set enrichment analysis (GSEA) for each Trio mutant mouse compared to WT, using all 7,362 proteins quantified by mass spectrometry in P21 cortex (n=4/genotype), sorted by normalized enrichment score (NES). Pathways with +NES are upregulated, -NES are downregulated vs. WT. [ ] indicates gene set: [R] Reactome, [WP] WikiPathways, [K] KEGG. Full list attached in Figure 7—source data 1. (B, C) Bar graphs illustrating the top enriched (FDR q-value <0.001) (B) cellular components and (C) biological processes identified by GSEA, using synaptic proteins from SynGO gene sets (n=1,077 proteins), full list see in Figure 7—source data 2. (D) Representative immunoblots in synaptosomes isolated from P42 cortex of WT and Trio variant mice. (E–H) Normalized intensity levels from immunoblots demonstrate significant increases of (E) Munc18-1 (also known as syntaxin binding protein 1), (F) synaptophysin (Syp), (G) syntaxin1a (Stx1) and (H) synaptotagmin3 (Syt3) levels in +/M2145T synaptosomes; Syp is increased while Stx1a is significantly decreased in +/K1431M synaptosomes compared to WT. Ordinary one-way ANOVA with post-hoc Bonferonni MC test identified differences from WT (*p<0.05, **p<0.01, ***p<0.001; n=synaptosomes from 7 to 14 male mice). (I) Representative immunoblots of select RhoGEFs from P42 cortical lysates of WT and Trio variant mice. (J–L) Normalized intensity levels from immunoblots identified ~47% increase of Tiam1 levels in +/K1431M and increase ~45% in +/M2145T cortex vs to WT; VAV2 is increased by ~34% in +/M2145T cortex compared to WT. Unpaired t-tests identified differences from WT (*p<0.05; n=6 mice per genotype).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Heatmap of select protein abundances in P21 cortex of WT and Trio variant mice shows genotype differences. Each row is a protein, each column a mouse (n=4 mice per genotype). Displayed are 184/7362 proteins with significant differences (p<0.01, t-test). Red = upregulated, blue = downregulated, sorted by k-means clustering. Complete list of proteins shown in Figure 7—figure supplement 1—source data 1. (B–D) Volcano plots of differentially expressed proteins (DEPs) identified by proteomics for P21 +/K1431M (B), +/K1918X (C), and +/M2145T (D) mice, expressed as log2(fold-change, FC) relative to WT mice (from n=4 mice per genotype). DEPs that are increased in the mutant compared to WT have a positive log2FC, while DEPs that are decreased in the mutant compared to WT have a negative log2FC. Dotted lines on y-axis indicate cutoffs of p<0.01 and p<0.05; dotted lines on x-axis indicate cutoffs of log2FC <−1.5 (downregulated DEPs) or log2FC >1.5 (upregulated DEPs). (E) Venn diagrams show little overlap in the up- and down-regulated DEPs between Trio variant mice, using DEP cut-off values of log2FC >1.5 (upregulated DEPs) or log2FC <−1.5 (downregulated DEPs), and p<0.01 or p<0.05.
+
 We used SynGO (Koopmans et al., 2019) to investigate whether the Trio variants impacted synaptic functions. 1067 of the 7362 total quantified proteins were synaptic proteins listed in the SynGO gene set (Figure 7, Figure 7—source data 2). When restricted to brain-specific genes, all three Trio variant heterozygotes showed enrichment of differentially expressed proteins (DEPs) in synaptic processes (Figure 7B and C). Notably, +/M2145T upregulated DEPs and +/K1431M downregulated DEPs were significantly enriched at the presynapse (Figure 7B), but with only +/K1431M downregulated DEPs showing significant enrichment for postsynaptic receptor and synaptic vesicle cycling (Figure 7C). Meanwhile, +/K1918X showed enrichment of DEPs at the postsynapse, particularly in the postsynaptic density (Figure 7B). Together, our proteomics data point to a significant deficit in presynaptic function in both +/K1431M and +/M2145T cortex, as well as a significant effect of +/K1431M on postsynaptic function.
 
-## Rho GEFs and synaptic regulatory proteins are altered in Trio +/K1431M and +/M2145T heterozygotes
+### Rho GEFs and synaptic regulatory proteins are altered in Trio +/K1431M and +/M2145T heterozygotes
 
 Given our findings from proteomic analysis and electrophysiology, we measured levels of key presynaptic regulators, including synaptophysin (Syp), syntaxin binding protein 1 (Stxbp1, also known as Munc18-1), syntaxin 1a (Stx1a) and synaptotagmin 3 (Syt3), which are crucial for synaptic vesicle (SV) tethering, docking, replenishment, and calcium-dependent replenishment, respectively. We also measured levels of presynaptic proteins in P42 cortical synaptosomes, where these proteins are enriched. Munc18-1, Syt3, and Syp levels were increased in +/M2145T synaptosomes relative to WT (Figure 7D–H). Meanwhile, Stx1a levels were significantly decreased in +/K1431M synaptosomes compared to WT, with no significant changes in +/K1918X compared to WT mice.
 
 The elevated Rac1 activity in +/K1431M brain lysates and synaptosomes (Figure 1I) seemed at odds with previous reports that K1431M reduces TRIO GEF1 activity (Figure 1—figure supplement 1A and B; Sun et al., 2021; Katrancha et al., 2017; Sadybekov et al., 2017). We hypothesized that homeostatic compensation in +/K1431M mice may alter expression of other RhoGEFs and GAPs. Indeed, levels of the Rac1 GEF Tiam1 were increased in both +/K1431M and +/M2145T P42 cortical lysates, while VAV2 levels were increased in +/M2145T P42 lysates (Figure 7I–L). Levels of the Trio paralog Kalirin (Yan et al., 2015) were unaffected in the Trio variant mice at P42 (Figure 7J). Together, our proteomic analyses suggest that presynaptic functions are altered in +/K1431M and +/M2145T mice and may be driven by abnormal levels of crucial presynaptic regulatory proteins and changes in Rac1 and RhoA activity.
 
-## NSC23766, a Rac1-specific inhibitor, rescues neurotransmitter release in Trio +/K1431M heterozygotes
+### NSC23766, a Rac1-specific inhibitor, rescues neurotransmitter release in Trio +/K1431M heterozygotes
 
 Rac1 negatively regulates synaptic vesicle replenishment and synaptic strength in excitatory synapses (O’Neil et al., 2021; Keine et al., 2022). In +/K1431M synapses, increased Rac1 activity and decreased Stx1a levels were associated with reduced synaptic strength and impaired vesicle replenishment. We tested if the acute application of the Rac1 inhibitor NSC23766 (NSC) could rescue these deficits. Treatment of +/K1431M and WT slices acutely with NSC shifted the PPF downwards in M1 L5 PNs, suggesting an increase in Pr in both cases (Figure 8A and B). Notably, at longer ISI, PPRs in NSC-treated WT slices still normalized at around 1, while PPRs in NSC-treated +/K1431M slices shifted below 1, exhibiting slight depression.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/103620/elife-103620-fig8-v1.jpg)
 
-**Figure 8.:** +/K1431M L23-L5 synapses and improved SV recycling.(A) Representative PPR traces of WT and Trio +/K1431M slices with or without 5 min application of 100 µM NSC23766. (B) Acute application of NSC onto both +/K1431M and WT synapses leads to a decrease in PPF in M1 L2/3-L5 synapses. +/K1431M slices significantly shifted the PPF curve at all ISI downwards compared to untreated +/K1431M slices and showed no significant difference from WT (+/K1431M+NSC 35ms: 1.25±0.06, p<0.0001; 60ms: 1.13±0.052, p=0.0007; 100ms: 1.02±0.053, p=0.0017; 200ms 0.91±0.039, p=0.0043; 300ms 0.88±0.045, p=0.021), with +/K1431M shifting into paired pulse depression at 200–300ms intervals, while WT PPF plateauing to 1. (C) Representative traces of AMPAR eEPSCs in M1 L5 PNs under HFS of WT and Trio +/K1431M slices before and after NSC application. (D) Normalized AMPAR eEPSCn amplitudes of the train revealed changes in the depletion rates during HFS before and after NSC application to WT and +/K1431M slices (tau decay (τ), WT +NSC: 2.85 s vs WT: 2.70 s; d+/K1431M+NSC: 2.66 s vs +/K1431M: 3.19 s, n=12–15 neurons from 5 to 7 mice). (E) Rac1 inhibition by NSC increased the glutamate Pr in both WT and +/K1431M slices (WT +NSC 0.25±0.067 vs initial 0.19±0.01, p=0.046; and for +/K1431M+NSC 0.23±0.019 vs initial 0.13±0.099, p<0.0001; n=15–18 neurons from ≥5 mice per group). (F) RRP in WT or +/K1431M synapses with NSC did not show significant changes to initial values (WT +NSC: 370.3±82.37 pA vs 415.8±43.9 pA, p˃0.99; +/K1431M+NSC: 427.9±79.2 vs 543.1±64.44 pA, p˃0.99). (G) Exponential fits of the fractional recovery for WT and +/K1431M with and without NSC application. NSC application led to a faster recovery time in WT (+NSC: 1.5 s vs initial 2.2 s) and it significantly improved but did not fully rescue recovery time in +/K1431M (+NSC 3.2 s vs initial 5.7 s), but allowed for full recovery at 18 s. Data are presented as mean ± SEM, significance tested using one-way ANOVA with post-hoc Bonferroni (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001).
+**Figure 8.:** (A) Representative PPR traces of WT and Trio +/K1431M slices with or without 5 min application of 100 µM NSC23766. (B) Acute application of NSC onto both +/K1431M and WT synapses leads to a decrease in PPF in M1 L2/3-L5 synapses. +/K1431M slices significantly shifted the PPF curve at all ISI downwards compared to untreated +/K1431M slices and showed no significant difference from WT (+/K1431M+NSC 35ms: 1.25±0.06, p<0.0001; 60ms: 1.13±0.052, p=0.0007; 100ms: 1.02±0.053, p=0.0017; 200ms 0.91±0.039, p=0.0043; 300ms 0.88±0.045, p=0.021), with +/K1431M shifting into paired pulse depression at 200–300ms intervals, while WT PPF plateauing to 1. (C) Representative traces of AMPAR eEPSCs in M1 L5 PNs under HFS of WT and Trio +/K1431M slices before and after NSC application. (D) Normalized AMPAR eEPSCn amplitudes of the train revealed changes in the depletion rates during HFS before and after NSC application to WT and +/K1431M slices (tau decay (τd), WT +NSC: 2.85 s vs WT: 2.70 s; +/K1431M+NSC: 2.66 s vs +/K1431M: 3.19 s, n=12–15 neurons from 5 to 7 mice). (E) Rac1 inhibition by NSC increased the glutamate Pr in both WT and +/K1431M slices (WT +NSC 0.25±0.067 vs initial 0.19±0.01, p=0.046; and for +/K1431M+NSC 0.23±0.019 vs initial 0.13±0.099, p<0.0001; n=15–18 neurons from ≥5 mice per group). (F) RRP in WT or +/K1431M synapses with NSC did not show significant changes to initial values (WT +NSC: 370.3±82.37 pA vs 415.8±43.9 pA, p˃0.99; +/K1431M+NSC: 427.9±79.2 vs 543.1±64.44 pA, p˃0.99). (G) Exponential fits of the fractional recovery for WT and +/K1431M with and without NSC application. NSC application led to a faster recovery time in WT (+NSC: 1.5 s vs initial 2.2 s) and it significantly improved but did not fully rescue recovery time in +/K1431M (+NSC 3.2 s vs initial 5.7 s), but allowed for full recovery at 18 s. Data are presented as mean ± SEM, significance tested using one-way ANOVA with post-hoc Bonferroni (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001).
 
 Application of NSC to WT and +/K1431M slices under HFS train stimulation decreased initial facilitation in both (Figure 8C and D), and significantly increased Pr (Figure 8E) without affecting RRP size (Figure 8F) in both, rescuing the initial Pr in +/K1431M slices (Figure 8C–F). NSC treatment also led to a faster train decay rate (τd) in +/K1431M slices but did not significantly change WT relative to untreated slices (+/K1431M+NSC τd, 2.66 s vs. initial 3.19 s; WT +NSC: 2.85 vs 2.70 s; Figure 8D).
 
@@ -155,19 +191,19 @@ Overall, we demonstrate that presynaptic Trio GEF1-dependent Rac1 signaling is c
 
 Large-scale genetic studies show significant overlap in risk genes for ASD, SCZ, and BPD, many converging on synaptic proteins (Carroll and Owen, 2009; Purcell et al., 2014; Satterstrom et al., 2020; Genovese et al., 2016; Fromer et al., 2014; De Rubeis et al., 2014; Iossifov et al., 2014; Pinto et al., 2014; Kirov et al., 2012). However, how variants in a single gene contribute to different NDDs remains a major unresolved question. Our study reveals that mice heterozygous for NDD-associated Trio variants differentially affecting Trio protein levels or GEF activity yield overlapping but distinct behavioral, neuroanatomical, and synaptic phenotypes. Our findings extend prior work demonstrating that Trio is critical for postsynaptic signaling and synaptic plasticity. We also demonstrate for the first time in mice that Trio is critical for glutamate release and synaptic vesicle recycling, and that NDD-associated variants differentially impact these pre- and post-synaptic roles.
 
-## Heterozygosity for Trio variants in mice yields phenotypes similar to those observed in NDDs
+### Heterozygosity for Trio variants in mice yields phenotypes similar to those observed in NDDs
 
 Individuals with mutations in TRIO present with a range of NDD-associated clinical features, including varying degrees of intellectual disability, altered head size, skeletal and facial features, and behavioral abnormalities (Ba et al., 2016; Barbosa et al., 2020; Gazdagh et al., 2023; Pengelly et al., 2016; Bircher et al., 2022; Bonnet et al., 2023; Schultz-Rogers et al., 2020). Patients with missense or truncating variants in TRIO that reduce GEF1 activity have mild developmental delay and microcephaly (Barbosa et al., 2020; Bonnet et al., 2023; Pengelly et al., 2016; Bircher et al., 2022). Similarly, we found that heterozygosity for the GEF1-deficient K1431M missense or the K1918X nonsense variants significantly reduced brain weight and/or head size compared to WT mice, along with multiple behavioral impairments. Notably, while both showed impaired motor coordination and learning, only mice bearing the ASD-associated K1431M allele exhibited social interaction deficits. In addition, we observed behavioral differences in male versus female Trio variant mice, possibly similar to human sex differences in the susceptibility to and clinical presentation of NDDs (Bölte et al., 2023).
 
 Both +/K1431M and +/K1918X adult mice of both sexes had reduced brain-to-body weight ratios compared to WT, but these were driven by different factors. The smaller brain size in +/K1918X male mice was associated with a reduction in neuropil and reduced cortical thickness, similar to mice bearing excitatory neuron-specific ablation of one Trio allele (Katrancha et al., 2019) and paralleling the reduced gray matter volume and cortical thickness in SCZ patients (Howes et al., 2023; Dabiri et al., 2022; Harvey et al., 1993; Suddath et al., 1989; Zipursky et al., 1992). Meanwhile, +/K1431M mice of both sexes exhibited an overall increase in body weight leading to relatively decreased head width- and brain-to-body weight ratios in these mice. Adult +/K1431M male mice had no change in neuropil or cross-sectional brain area, consistent with a prior study describing normal brain size in +/K1431M at E14.5 (Sun et al., 2021). Rac1 mediates glucose-stimulated insulin secretion from pancreatic islet beta-cells (Kowluru, 2011; Kowluru, 2021; Zhou et al., 2015; Veluthakal and Thurmond, 2021; Asahara et al., 2013; Sylow et al., 2016), which may explain how chronic alterations in Rac1 activity contribute to weight changes in Trio +/K1431M and +/K1918X mice. Most studies of Trio variants have focused on neuronal effects, but expression of Trio in other tissues could explain the increased body weight in these mice, as well as the musculoskeletal abnormalities associated with TRIO variation in humans (Ba et al., 2016; Barbosa et al., 2020; Gazdagh et al., 2023; Kloth et al., 2021).
 
-## Trio variants differentially impact dendritic arbor structure
+### Trio variants differentially impact dendritic arbor structure
 
 Rac1 and RhoA signaling is critical for dendrite development (Hall, 1998; Luo, 2000; Nakayama et al., 2000; Newey et al., 2005; Ba et al., 2013). We found relatively subtle effects of Rac1/RhoA-altering Trio variants on cortical L5 PN dendrites. +/K1918X L5 pyramidal neurons are smaller and less complex than WT neurons, especially in the basal compartment corresponding to L5 where EM images were obtained, consistent with the smaller brain size and reduced cortical thickness of +/K1918X mice. We posit that due to their smaller dendritic field size, L5 neurons pack more densely, contributing to the mildly increased synapse density observed in +/K1918X M1 L5 cortex. Consistent with this hypothesis, we observed a trend toward increased DAPI + cell density in M1 L5 of +/K1918X neurons.
 
 The reductions in dendritic arborization and length in +/K1918X neurons are consistent with reports of reduced gray matter volume and dendrite alterations in individuals with SCZ versus controls (Broadbelt et al., 2002; Black et al., 2004), but were modest compared to NEX-Trio+/fl mice lacking one copy of Trio in excitatory neurons (Katrancha et al., 2019). Reduced Trio function in other cell types, such as in inhibitory neurons or glia, or in neurons from other brain regions that project to cortical M1 L5 PNs, may ameliorate the phenotypes in excitatory neurons of +/K1918X relative to NEX-Trio+/fl mice. In addition, changes to L5 PN dendrites in Trio variant mice appeared to be regionally selective within the arbor: +/K1431M neurons had increased arborization only in proximal basal dendrites, while +/M2145T neurons had decreased arborization only in the most distal apical dendrites. These differences may reflect the differential spatiotemporal influence of Trio in regulating Rac1 versus RhoA activity. Alternatively, given our finding for presynaptic roles for Trio, these differences may reflect differential effects of the Trio variants on both excitatory and inhibitory afferent synaptic inputs, which play critical roles in shaping the apical and basal dendrites of L5 PNs (Ramaswamy and Markram, 2015).
 
-## Trio variants impact brain Rho GTPase signaling
+### Trio variants impact brain Rho GTPase signaling
 
 We show here that the K1431M variant significantly reduces TRIO GEF1 nucleotide exchange on Rac1 in vitro, consistent with previous reports (Katrancha et al., 2017; Sadybekov et al., 2017). Decreased Rac1 activity was observed in +/K1431M mice at embryonic day 14.5 in the ganglionic eminence, which is enriched for pre-migratory GABAergic interneurons (Sun et al., 2021). In contrast, we show an increase in active Rac1 levels in +/K1431M postnatal brains (at P0, P21, P42) and synaptosomes (at P42) from cortex, primarily composed of differentiated excitatory neurons. This increase aligns with observed phenotypes (e.g. reduced Pr) and reveals why reductions in brain volume, dendrites and spines, or AMPAR signaling anticipated from reduced Rac1 activity (Chen et al., 2009; Reijnders et al., 2017; Tahirovic et al., 2010; Pennucci et al., 2019; Wiens et al., 2005) were not observed in +/K1431M mice. We propose that the increased Rac1 activity we observed reflects homeostatic compensation in Rac1 regulation occurring between birth to adult ages and identify changes in Rac1-specific GEFs, for example Tiam1 and Vav2, that may contribute to this compensation. Importantly, we did not find changes in Kalirin levels in the adult brain of these Trio mutant mice, suggesting that Kalirin does not compensate for the loss of Trio GEF1 activity at this age.
 
@@ -175,7 +211,7 @@ We observed a significant reduction in active RhoA only in purified synaptosomes
 
 Our results strongly complement a growing body of evidence showing that altered activation of Rho GTPases is an important mechanism affecting synaptic function in ASD (Bölte et al., 2023; Pinto et al., 2010; Zeidán-Chuliá et al., 2013; Guo et al., 2020; Carbonell et al., 2023; Zamboni et al., 2018). This highlights Rho GTPase signaling as a convergent pathway in ASD and therefore an attractive target for pharmacotherapy for these disorders.
 
-## The NDD-associated Trio variants cause synaptic transmission, plasticity, and excitatory/inhibitory imbalance
+### The NDD-associated Trio variants cause synaptic transmission, plasticity, and excitatory/inhibitory imbalance
 
 Overexpression of a TRIO K1431M variant with reduced GEF1 activity decreased AMPAR-mediated mESPC amplitudes in rat organotypic slices (Tian et al., 2021), while Rac1 activation increased AMPAR amplitudes by promoting synaptic AMPAR clustering (Wiens et al., 2005; Hussain et al., 2015). In +/K1431M mice, we observed a decrease in the NMDA/AMPA ratio and NMDA mEPSCs frequency, with increased AMPAR mEPSCs amplitudes, with no changes in dendritic spines suggesting a possible reduction in silent synapses due to increased AMPAR incorporation. This increase in AMPAR was associated with increased active Rac1 levels measured in synaptosomes in adult +/K1431M mice. AMPAR mEPSC amplitudes were also increased in L5 PNs of +/K1918X mice, corresponding with a decrease in the NMDA/AMPAR ratio, but no changes in mEPSC frequencies, also suggesting an increased number of synaptic AMPARs. In +/K1918X cortex, Rac1 activity is reduced at P0 but increases by P21 and P42 to WT levels, suggesting that a relative increase in Rac1 during development may enhance AMPAR tone and affect LTP, especially given the precise spatiotemporal requirements of Rac/Rho activity and their effectors for LTP (Wiens et al., 2005; Hussain et al., 2015; Cui et al., 2021; Herring and Nicoll, 2016; Duman et al., 2022). The +/M2145T variant showed no changes in AMPAR or NMDAR amplitudes but had increased mEPSC frequencies in both, without changes in spine or synapse density, consistent with enhanced spontaneous neurotransmitter release.
 
@@ -185,7 +221,7 @@ Overall, heterozygosity for Trio variants dysregulates excitatory and inhibitory
 
 Trio-deficient excitatory neurons are unable to undergo long-term potentiation (LTP) in mouse brain slices (Katrancha et al., 2019), which is crucial for working memory in mammals. During LTP, Rac1 is suggested to be transiently activated and deactivated to regulate AMPAR (Wiens et al., 2005; Hussain et al., 2015; Cui et al., 2021; Herring and Nicoll, 2016; Duman et al., 2022). Both +/K1431M and +/K1918X L5 PNs exhibited reduced LTP induction and maintenance. The increased AMPAR resulting from elevated Rac1 activity (+/K1431M mice) or the inability of reduced levels of Trio to activate Rac1 (+/K1918X mice) may preclude LTP in these mice. +/M2145T mice showed a striking increase in the induction and maintenance of LTP, correlating with an increased glutamate Pr and SV pool size. The function of RhoA in plasticity is unknown, but the decrease in RhoA activity and increased levels in presynaptic machinery proteins measured in cortical synaptosomes may underlie the increase in LTP in these mice.
 
-## Trio GEF1 and GEF2-deficient variants lead to opposing defects in the synaptic release of glutamate
+### Trio GEF1 and GEF2-deficient variants lead to opposing defects in the synaptic release of glutamate
 
 In neuroendocrine, pancreatic beta, and mast cells, Trio GEF1 activity, Rac1, and RhoA are required for regulation of exocytosis (Ferraro et al., 2007; Hong-Geller and Cerione, 2000; Lecuona et al., 2003; Momboisse et al., 2009; Pathak et al., 2012). Recent work suggests that Trio GEF1 can act through Rac1 to regulate presynaptic processes – Rac1 colocalizes with SVs in the axonal boutons to negatively regulate action potential-dependent (synchronous) glutamate Pr and SV replenishment (O’Neil et al., 2021; Keine et al., 2022; Doussau et al., 2000; Banerjee et al., 2024). Using the Rac1 inhibitor NSC, we demonstrate that elevated Rac1 activity, potentially driven by Tiam1 upregulation, drives the reduction in synchronous glutamate Pr and SV replenishment without affecting RRP in +/K1431M mice. NSC application rescues Pr and enhances SV replenishment in +/K1431M slices while also increasing both processes in WT. Decreased Stx1 levels in +/K1431M synapses, a key component of the priming machinery, may still be a limiting factor in effective priming, thus preventing full rescue of the SV recovery by NSC. Overall, NSC had a significant yet weaker effect in WT than in +/K1431M slices, likely due to the overall increased Rac1 activity in +/K1431M slices providing more of a target for NSC.
 
@@ -195,23 +231,411 @@ RhoA activity is significantly reduced in cortical synaptosomes of +/M2145T mice
 
 Our findings show that Trio GEF1 and GEF2-mediated Rho GTPase signaling pathways play critical and distinct roles in regulating Pr, RRP size, and SV recycling.
 
-## Conclusions
+### Conclusions
 
 TRIO is a risk gene for several NDDs with different patterns of variants observed in different disorders. We show here that variants in Trio that lead to impaired Trio levels or GEF function cause both shared and distinct defects in behavior, neuroanatomy, and prominent synaptic dysfunction that may reflect variant-specific NDD clinical phenotypes. Our data also demonstrate, for the first time, the differential impact of distinct Trio lesions on glutamate Pr, RRP size, and SVs replenishment, along with alterations in presynaptic release machinery that contribute to these deficits. We demonstrate that the +/K1431M lesion in TRIO GEF1 leads to presynaptic deficits due to Rac1 dysregulation, which can be rescued by pharmacological normalization. We propose that Trio variants disrupt brain function by impairing Rho GTPase signaling, causing diverse synaptic dysfunction through combined effects on pre- and/or post-synaptic functions. Our findings support growing evidence linking synaptic dysfunction in several NDD models to Rho GTPase signaling dysregulation, identifying it as a commonly affected pathway and a potential therapeutic target.
 
 ## Materials and methods
 
-## Animal work
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Trio+/+(C57Bl/6)</td>
+      <td>Jax Laboratories (by Dr. CC Little)</td>
+      <td>RRID:IMSRJAX:000664</td>
+      <td>Both sexes</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Trio+/K1431M</td>
+      <td>This paper</td>
+      <td>K1431M</td>
+      <td>Both sexes(see Generation of Trio mutant mice)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Trio+/K1918X</td>
+      <td>This paper</td>
+      <td>K1918X</td>
+      <td>Both sexes(see Generation of Trio mutant mice)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Trio+/M2145T</td>
+      <td>This paper</td>
+      <td>M2145T</td>
+      <td>Both sexes(see Generation of Trio mutant mice)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'-tgtaatacgactcactataggACCTGATCAAACCAGTTCAGgttttagagctagaaatagc-3’</td>
+      <td>This paper</td>
+      <td>sgRNA scaffold sequence K1431M</td>
+      <td>see Generation of Trio mutant mice</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'-tgtaatacgactcactataggAAGCTTCTCACGCACGCAGGgttttagagctagaaatagc-3’</td>
+      <td>This paper</td>
+      <td>sgRNA scaffold sequence K1918X</td>
+      <td>see Generation of Trio mutant mice</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'-tgtaatacgactcactataggATGACATGATGAACGTCGGGgttttagagctagaaatagc-3’</td>
+      <td>This paper</td>
+      <td>sgRNA scaffold sequence M2145T</td>
+      <td>see Generation of Trio mutant mice</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-gccaattccatctcttcctACCTGATCAAACCTGTACAGCGTataacaaTgtatcagctccttttaaaggtgtgtatgaaacattgtccatctgcaacatcacaccctgtgttgatatgtatcccct-3’</td>
+      <td>This paper</td>
+      <td>Recombination template oligos K1431M</td>
+      <td>see Generation of Trio mutant mice</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-agctgccatctatggcaaaggcatttgtacacaggtgtgagagtgactcgcgaaACTGCTGCATGCGTGAGAAGCTTaccattttgctttAcacgagttcttcaatagcactgacgagctcagctgcgctgggag-3’</td>
+      <td>This paper</td>
+      <td>Recombination template oligos for K1918X</td>
+      <td>see Generation of Trio mutant mice</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-agggcccctcaataaacaatgcattacgtcaaatccctgcaGTCGACCAacgttcatcGtgtcattacagcgcttcggcacgatgcacatgacttctacagctttctgtgggtggagagaaagca-3’</td>
+      <td>This paper</td>
+      <td>Recombination template oligos for M2145T</td>
+      <td>see Generation of Trio mutant mice</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primer pairs: GFP_For:5’-gcacgacttcttcaagtccgccatgcc-3’GFP_Rev:5’-gcggatcttgaagttcaccttgatgcc-3’</td>
+      <td>This paper</td>
+      <td>Mice genotyping</td>
+      <td>see Generation of Trio mutant mice</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primer pairs: Trio1431_For:5’-ttgtcattaatgtggtactgtgccc-3’Trio1431_Rev:5’-gacaggccaagaaatgtcagtg-3’</td>
+      <td>This paper</td>
+      <td>Mice genotyping</td>
+      <td>see Generation of Trio mutant mice</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primer pairs: Trio1918_For: 5’-tacgagggagttcactgtctg-3’Trio1918_Rev:5’-agtgcaggctatgcttcgttta-3’</td>
+      <td>This paper</td>
+      <td>Mice genotyping</td>
+      <td>see Generation of Trio mutant mice</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primer pairs: Trio2145_For:5’-gcctggacacatccgaattaga-3’Trio2145_Rev:5’-aataaccccggacagaggaaag-3’</td>
+      <td>This paper</td>
+      <td>Mice genotyping</td>
+      <td>see Generation of Trio mutant mice</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-TRIO SR5-6</td>
+      <td>Katrancha et al., 2019</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-TRIO DH2</td>
+      <td>Katrancha et al., 2019</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-PSD95</td>
+      <td>NeuroMab</td>
+      <td>Cat#: K28/43</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Synaptophysin(Syp; rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 36406 S</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Munc18-1/Stxbp-1(rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: 109023</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Syntaxin-1a(Stx1a; rabbit monoclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#: 110 118</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Synaptotagmin3(Syt3; rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#: 105 133</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Kalirin(rabbit polyclonal)</td>
+      <td>Yan et al., 2015</td>
+      <td>(CT302)</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tiam1(rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 31128</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VAV2(rabbit recombinant monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: 52640</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit IgG(H+L)-HRP conjugate(goat polyclonal)</td>
+      <td>Bio-Rad</td>
+      <td>Cat#: 170–6515</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mouse IgG(H+L)-HRP conjugate(goat polyclonal)</td>
+      <td>Bio-Rad</td>
+      <td>Cat#: 172–1011</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NeuN(chicken polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#: 266 006</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Parvalbumin(PV; guinea pig monoclonal)</td>
+      <td>Swant</td>
+      <td>Cat#: GP72</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Chicken IgY(H+L), AlexaFluor 488 (goat polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>Cat#: A-11039</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit IgG(H+L),AlexaFluor 568 (goat polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>Cat#: A-11011</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>DAPI</td>
+      <td>Invitrogen</td>
+      <td>Cat#: D21490</td>
+      <td>IF (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kynurenic acid</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 3694</td>
+      <td>See Materials and Methods, Electrophysiology section</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lidocaine N-ethyl bromide (QX-314)</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 2313</td>
+      <td>See Materials and Methods, Electrophysiology section</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-2-Amino-5-phosphonovaleric acid (D-AP5)</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 0106</td>
+      <td>See Materials and Methods, Electrophysiology section</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(-)-bicuculline methochloride (BMI)</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 0109</td>
+      <td>See Materials and Methods, Electrophysiology section</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strychnine hydrochloride</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 2785</td>
+      <td>See Materials and Methods, Electrophysiology section</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyanquixaline (CNQX)</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 0190</td>
+      <td>See Materials and Methods, Electrophysiology section</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NSC23766</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 2785</td>
+      <td>See Materials and Methods, Electrophysiology section</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 1078</td>
+      <td>See Materials and Methods, Electrophysiology section</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (human)</td>
+      <td>WT TRIO GEF1</td>
+      <td>Blaise et al., 2022</td>
+      <td></td>
+      <td>Used for recombinant protein purification</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (human)</td>
+      <td>K1431M TRIO GEF1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Used for recombinant protein purification</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (human)</td>
+      <td>Rac1</td>
+      <td>Blaise et al., 2022</td>
+      <td></td>
+      <td>Used for recombinant protein purification</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-cagcgaataacgatgtatcagctcc-3’ and 5’-ggagctgatacatcgttattcgctg-3’.</td>
+      <td>This paper</td>
+      <td>Oligonucleotides for site-directed mutagenesis (K1431M TRIO GEF1)</td>
+      <td>see In vitro GEF Assays</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>BODIPY-FL-GDP</td>
+      <td>Invitrogene</td>
+      <td>Cat# G22360</td>
+      <td>See Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>G-LISA activation assay kits for Rac1</td>
+      <td>Cytoskeleton Inc.</td>
+      <td>Cat# BK128</td>
+      <td>See Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>G-LISA activation assay kits for RhoA</td>
+      <td>Cytoskeleton Inc.</td>
+      <td>Cat# BK124</td>
+      <td>See Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AnyMaze software</td>
+      <td>Stoelting Co.</td>
+      <td></td>
+      <td>Behavioral analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://fiji.sc/</td>
+      <td>RRID:SCR_002285</td>
+      <td>IF and WB analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mini-Analysis software</td>
+      <td>Synaptosoft</td>
+      <td></td>
+      <td>mEPSCs analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin Version 2021</td>
+      <td>OriginLab</td>
+      <td>RRID:2JJ-JT7-8IP</td>
+      <td>Electrophysiology graphing, signal processing, and analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>Dotmatics</td>
+      <td>V10</td>
+      <td>Statistical analysis and graphing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuPath software</td>
+      <td>Bankhead et al., 2017</td>
+      <td>V5; https://qupath.github.io/</td>
+      <td>Neuroanatomy analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp software suite</td>
+      <td>Molecular Devices</td>
+      <td>11.1</td>
+      <td>Electrophysiology recordings, y graphing, signal processing, and analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal work
 
 All animal work was performed in compliance with federal guidelines and approved by the Yale Institutional Animal Care and Use Committee. All mice were maintained on a C57Bl/6 background and housed on a standard 12 hr light/dark cycle. Mice heterozygous for Trio variants K1431M (Trio+/K1431M), K1918X (Trio+/K1918X), or M2145T (Trio+/M2145T) were crossed with WT (Trio+/+) mice to produce heterozygous Trio variant and WT littermates used in all experiments. As the mice were maintained on the same genetic background, analyses of WT mice were pooled and considered one genotype, irrespective of parental Trio variant genotype. Age-matched mice of both sexes were used for behavioral experiments and for brain and body weight measurements. Only male mice were used for electrophysiological and neuroanatomical analyses to reduce potential variation in dendritic spines and activity due to the estrus cycle (Frankfurt and Luine, 2015).
 
-## Generation of Trio mutant mice
+### Generation of Trio mutant mice
 
 Mice heterozygous for Trio variants K1431M, K1918X, or M2145T were generated via CRISPR/Cas-mediated genome editing (Yang et al., 2014; Chen et al., 2016). Potential Cas9 target guide (protospacer) sequences in the vicinity of the Trio K1431, K1918, and M2145 codons were screened using the online tool CRISPOR (Haeussler et al., 2016), and candidates were selected. Templates for sgRNA synthesis were generated by PCR from a pX330 template (Addgene), and sgRNAs were transcribed in vitro and purified (Megashortscript, MegaClear; Thermo Fisher). sgRNA/Cas9 RNPs were complexed and tested for activity by zygote electroporation, incubation of embryos to blastocyst stage, and genotype scoring of indel creation at the target sites. sgRNAs that demonstrated the highest activity were selected for creating the knock-in alleles. Guide primers for generating the template for transcription included a 5’ T7 promoter and a 3’ sgRNA scaffold sequence and were as follows (protospacer sequence capitalized):
 
 Recombination template oligos (Integrated DNA Technologies, San Diego, CA) were designed to create the desired codon changes, with incorporation of silent mutations to destroy the PAM and prevent sgRNA recognition of the newly created alleles as well as create a new restriction site for genotyping. sgRNA/Cas9 RNP and the template oligo were electroporated into C57Bl/6 J (JAX) zygotes (Chen et al., 2016). Embryos were transferred to the oviducts of pseudopregnant CD-1 foster females using standard techniques (Nagy, 2003). Genotype screening of tissue biopsies from founder pups was performed by PCR amplification and Sanger sequencing to identify the desired base changes, followed by backcrossing to C57Bl/6 mice and sequence confirmation to establish germline transmission of the correctly targeted alleles. Recombination template oligos were as follows (silent mutations bolded and italicized; new restriction digest site underlined):
 
-## Mouse genotyping
+### Mouse genotyping
 
 Genotypes were determined by PCR of mouse DNA using the following primer pairs:
 
@@ -219,83 +643,83 @@ To distinguish Trio variant and WT alleles, PCR was followed by restriction dige
 
 WT samples resulted in a band at 530 kb for K1431 litters, 550 kb for K1918 litters, 400 kb for M2145 litters; while Trio heterozygous variants resulted in bands at 450 and 530 kb for +/K1431M, 350 and 550 kb for +/K1918X, 350 and 400 kb for +/M2145T. All mice used in experiments were genotyped twice from DNA samples collected at two different time points, prior to weaning and again post-experiment for validation.
 
-## In vitro GEF assays
+### In vitro GEF assays
 
 The K1431M point mutant was generated via site-directed mutagenesis of human WT TRIO GEF1 using the following oligos: 5’-cagcgaataacgatgtatcagctcc-3’ and 5’-ggagctgatacatcgttattcgctg-3’. Recombinant WT and K1431M human TRIO GEF1 and Rac1 proteins were purified from bacteria as previously described (Blaise et al., 2022). GEF activity was monitored by the decrease in fluorescent signal (λexcitation = 488 nm; λemission = 535 nm) as GTP was exchanged for BODIPY-FL-GDP on Rac1 over 30 min, as previously described (Bircher et al., 2022; Blaise et al., 2022).
 
-## Body weight, brain weight, and head width measurements
+### Body weight, brain weight, and head width measurements
 
 Ear-to-ear head width of P42 mice was measured with calipers in anesthetized mice. Brain weight was measured after removing the olfactory bulbs and brain stem.
 
-## Brain lysate preparation
+### Brain lysate preparation
 
 Whole brain lysates from P0-P1 or P35-P42 mice were prepared as previously described (Katrancha et al., 2019; Hollingsworth et al., 1985; Scheetz et al., 2000), with minor modifications. Cerebella, hippocampi, and cortices were rapidly removed, snap-frozen in liquid nitrogen and stored at –80 °C until lysate preparation. Tissue was homogenized in ice-cold RIPA buffer (1% NP-40, 0.1% SDS, 50 mM Tris pH 8, 150 mM NaCl, 0.5% sodium deoxycholate) supplemented with protease and phosphatase inhibitors (Roche 11873580001; Roche 04906837001), then clarified by brief centrifugation; aliquots were snap frozen and stored at –80 ° C until immunoblotting. For Trio immunoblots, tissue was sonicated in homogenization buffer (1% SDS, 50 mM Tris pH 7.4, 2 mM EDTA), supplemented with protease and phosphatase inhibitors, heated at 95 ° C for 5 min, then clarified, snap frozen, and stored at –80 ° C until immunoblotting. Protein concentrations were determined with a bicinchoninic acid (BCA) assay (Pierce).
 
-## Cortical synaptosome prep
+### Cortical synaptosome prep
 
 Crude synaptosomes were prepared as previously described (Hollingsworth et al., 1985; Scheetz et al., 2000). Briefly, cortices were rapidly dissected from anesthetized P39-P42 mice and immediately homogenized in cold buffer (118 mM NaCl, 4.7 mM KCl, 1.2 mM MgSO4, 2.5 mM CaCl2, 1.53 mM KH2PO4, 212.7 mM glucose) supplemented with protease and phosphatase inhibitors (Roche). Homogenates were passed through a series of nylon filters of descending pore size: 40 μm, 10 μm, and finally 5 μm. Samples were centrifuged for 15 min at 1000 x g at 4 °C; the supernatant was discarded, and the pellet was resuspended in an appropriate buffer for G-LISA measurements or immunoblotting. Mice from at least 3 litters per genotype were processed concurrently with WT littermates.
 
-## Western blot and quantification
+### Western blot and quantification
 
 Brain lysates were separated on SDS-PAGE gels, transferred to nitrocellulose membranes, stained with Ponceau S, blocked in 5% nonfat milk in TBS-T, and incubated with primary antibodies overnight at 4 °C, then with conjugated secondary antibodies at RT for 1 hr (see Key Resources Table for list of antibodies). Images were captured by a ChemiDoc Imaging System (Bio-Rad) and quantified in ImageJ. Signal intensity was normalized to Ponceau S, then to the WT average.
 
-## G-LISA
+### G-LISA
 
 Active GTP-bound GTPase levels in brain lysates were measured using G-LISA activation assay kits for Rac1 (Cytoskeleton, Inc, BK128) and RhoA (Cytoskeleton, Inc, BK124). Brains or crude synaptosome pellets were homogenized in G-LISA lysis buffer supplemented with protease and phosphatase inhibitors (Roche), normalized to the same concentration as determined by Precision Red Advanced Protein Assay, and applied to the G-LISA matrices and processed according to manufacturer’s protocols. Absorbances at 490 nm (OD490) were background-subtracted and normalized to the WT average.
 
-## Behavioral tests
+### Behavioral tests
 
 Behavioral tests were performed in both male and female mice 6–8 weeks of age (P42-P56). Mice were habituated to handling for 5 min/ day for 5 days prior to experiments, and habituated in the test facility separate from housing for at least 30 min prior to starting the task. We performed the Kondziela inverted screen test for motor strength, accelerating rotarod for motor coordination and learning, social preference test, novel object recognition task, open field test, elevated plus maze, and nestlet shredding, as previously described (Katrancha et al., 2019; Deacon, 2013; Omar et al., 2017; Rapanelli et al., 2017; Sfakianos et al., 2007). All behavioral studies were performed and analyzed by an experimenter blinded to genotype. Individual data points could be excluded from analysis if a mouse failed to properly acclimate to the testing conditions, as described in detail for specific tests below.
 
-## Accelerating rotarod
+### Accelerating rotarod
 
 A five-lane rotarod treadmill (Med Associates ENV-577M 8.75’’ rod circumference) was used for accelerating analyses. Mice were acclimated to the rotating rod at 4 RPM for 10 s before beginning the test; mice that were unable to stay on the rod during this period were excluded from analyses. The rod then accelerated from 4 to 40 RPM over the course of 5 min (1.2 RPM/10 s) before leveling off at 40 RPM for 2.5 min. Five trials were performed per mouse with a rest time of at least 10 min between trials. The latency to fall was recorded per trial.
 
-## Kondziela inverted screen test
+### Kondziela inverted screen test
 
 The screen apparatus consisted of a 40 cm square of wire mesh composed of 12 mm squares with 1 mm diameter wire, surrounded by a square wooden frame 3.5 cm thick. Mice were placed in the center of the screen and inverted over 2 s over a clear open box 45 cm high. During the training session on day 1, mice were habituated to hanging on the screen until a cumulative hang time of 2 min was reached; mice were excluded if they were unable to meet this requirement. During the test session on day 2, mice were placed on the screen as before and given three trials to reach a maximum inverted hang time of 8 min, with 10 min rest periods between trials. Mice that were unsuccessful at reaching the 8 min mark were excluded from the accelerating rotarod test.
 
-## Open field test
+### Open field test
 
 Mice were placed in a large 16x16 inch square clear plexiglass SuperFlex cage and monitored using the Fusion software connected to a light beam array (Omnitech Electronics, Open Field Test, Version 4.5) for 10 min. The following measurements were analyzed based upon beam breaks: total distance traveled, ambulatory time (successive beam breaks), and vertical activity time (z axis beam breaks).
 
-## Social preference test
+### Social preference test
 
 Mice were placed in a 50 cm x 50 cm plexiglass box with two wire-mesh pencil holders (open side facing downward) for 10 min for habituation. Then, the mouse was briefly removed while an inanimate object (Duplo blocks of a similar size and color to a mouse) and a male conspecific ‘‘stranger’’ mouse were placed underneath separate wire-mesh pencil holders. The test mouse was then returned to the cage for 10 min, tracked using the AnyMaze software (Stoelting Co.), and scored for entries into and time within a social target zone and an equivalent nonsocial target zone. The target zones were defined by an annulus around the wire enclosure.
 
-## Novel object recognition task
+### Novel object recognition task
 
 During object familiarization on day 1, two identical objects were placed on the left and right sides of the testing cage. Mice explored the objects until they accumulated 30 s of tactile exploration time, defined as direct oral or nasal contact. Mice were then returned to their home cage for 48 hr. During the novel object recognition task on day 3, one familiar and one novel object were placed on either side of the testing cage, and mice explored the objects until they accumulated 30 s of tactile exploration time. Mice were excluded from analysis if they failed to explore both objects or accumulate 30 s of tactile exploration time within 6 min on either day.
 
-## Elevated plus maze
+### Elevated plus maze
 
 The apparatus is raised 36.5 cm above the ground with a 5 cm square center platform and four 30 cm x 5 cm arms; two of the arms are enclosed by 16 cm high walls (Stoelting Co, Wood Dale, IL). Mice were tested in 3 trials that were 5 min long with at least 10 min to rest between trials. Mice were placed directly on the center platform and allowed to freely explore all arms of the maze, tracked using the AnyMaze software (Stoelting Co.), and scored for time spent in each arm.
 
-## Nestlet shredding
+### Nestlet shredding
 
 A standard polycarbonate mouse cage (19×29 × 13 cm) was filled with unscented bedding material to a depth of 0.5 cm, the surface was leveled, and a fitted filter-top cover was placed on top. Commercially available cotton fiber nestlets (5 cm x 5 cm, 5 mm thick, 2–2.5 g each) were weighed on an analytical balance before being placed on top of the bedding. The mouse was placed into the test cage without food or water and left undisturbed for 30 min. The remaining intact nestlet was removed and allowed to dry overnight. The weight of the dried unshredded nestlet was divided by the starting weight to calculate the percentage of nestlet shredded.
 
-## Animal perfusion and tissue processing
+### Animal perfusion and tissue processing
 
 Mice were transcardially perfused with heparinized PBS followed by 4% paraformaldehyde (PFA) in phosphate buffered saline (PBS). Brains were postfixed in 4% PFA at 4 °C for 24 hr, then sliced coronally at 30 μm for Nissl stain and immunohistochemistry and at 200 μm for dendritic arbor and spine analysis. Sections were processed as per application and coverslip-mounted with ProLong Diamond Antifade Mountant (P36961, Thermo Fisher). For electron microscopy, mice were perfused with 4% PFA supplemented with 2% glutaraldehyde.
 
-## Nissl staining
+### Nissl staining
 
 Nissl staining on 30 μm brain slices was performed according to standard protocols (Paul et al., 2008). Brightfield images were acquired at 20 X on a SlideView VS200 slide scanner (Olympus). Coronal sections containing the decussation of the anterior commissure were selected for analysis and quantified using QuPath software. Measurements from three consecutive slices were averaged per mouse.
 
-## Immunostaining
+### Immunostaining
 
 Desired sections were identified by comparison to a mouse brain atlas (Franklin and Paxinos, 2013). Three 30 μm coronal sections from the motor cortex, spaced at 120 μm intervals and containing the rostral decussation of the corpus callosum, were used for immunostaining. Mounted sections were boiled in Na-Citrate buffer (10 mM, pH 6.4) for 45 min, blocked for 1 hr in 5% normal goat serum (NGS) in 0.3% PBS-T, incubated overnight at 4 °C with primary antibodies (Key Resources Table), then with appropriate AlexaFluor-conjugated secondary antibodies for 1 hr at RT, and counterstained for 10 min with DAPI. Controls lacking primary antibody were used to confirm staining specificity. Fluorescent images were acquired at 10 X on a SlideView VS200 slide scanner (Olympus). Semi-automatic cell counts for DAPI+, NeuN+, and PV +stained cells were obtained using QuPath by an experimenter blinded to genotype.
 
-## Dendritic arbor reconstructions and dendritic spine density analysis
+### Dendritic arbor reconstructions and dendritic spine density analysis
 
 Mice of all genotypes examined were intercrossed with mice bearing a thy1-GFP transgene (M line; Feng et al., 2000). Fluorescent images of neurons contained within 200 μm coronal sections were acquired at 20 X for arbor reconstructions (Zeiss LSM900) and at 100 x on an UltraVIEW VoX spinning disc confocal microscope for dendritic spines. Dendrites were traced and measured using the Simple Neurite Tracer Fiji plugin (SNT) in ImageJ (NIH). Spines were manually counted from max projection z-stack images on secondary apical and basal dendritic branches of L5 PNs.
 
-## Electron microscopy
+### Electron microscopy
 
 Electron microscopy of synapses in M1 layer 5 was performed as previously described (Katrancha et al., 2019). Asymmetric excitatory synapses were identified as an electron-dense post-synaptic density (PSD) apposed to a presynaptic terminal containing synaptic vesicles. Measurements of synaptic features, including synapse density, PSD length, spine head area, presynaptic bouton area, and synaptic vesicle distribution, were quantified in ImageJ as previously described (Montesinos et al., 2015; Dong et al., 2018; Levy et al., 2018; González-Forero et al., 2012), from 5 to 18 fields of view (~50 μm2) per mouse by a reviewer blinded to genotype.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Acute slices were prepared from mice at P35-42 as previously described (Katrancha et al., 2019) with modifications noted here. Coronal slices of M1-M2 cortex were cut at 360 µm in ice-cold N-Methyl-D-glucamine-aCSF (NMDG-aCSF, in mM): 120 NMDG, 2.5 KCl, 7 MgSO4, 1.25 NaH2PO4, 0.5 CaCl2, 28 NaHCO3, 13 glucose, 7 sucrose, saturated with 95% O2-5% O2 at 300–320 mOsmol/L, pH 7.4 on a vibratome (Leica). Slices were recovered in ACSF (in mM): 120 NaCl, 2 KCl, 1.2 NaH2PO4, 26 NaHCO3, 1.3 MgSO4, 1.6 CaCl2, 11 glucose, 2 ascorbic acid, 4 Na-lactic acid, 2 Na-pyruvate saturated with 95% O2-5% O2 at 300–320 mOsmol/L, pH 7.4, at 32 °C for 20 min followed by 1 hr recovery and recordings at RT. Recorded signals were acquired at a 100 kHz sampling rate and low pass filtered at 6 kHz. Cells were excluded from analysis if series resistance changed >20%.
 
@@ -309,24 +733,24 @@ Estimations of the readily releasable pool (RRP) size and synaptic vesicles (SVs
 
 PPR and train recordings for the rescue experiments were performed as described above with the addition of 100 μM NSC23766 into the recording solution with a 5-min incubation period to allow for efficient slice penetration.
 
-## Quantitative proteomics - sample preparation
+### Quantitative proteomics - sample preparation
 
 Cortices from male P21 mice (four per genotype) were removed and immediately frozen in liquid nitrogen. Mouse brain tissues were transferred to Covaris tissueTUBE TT1 (Part No. 520001, Plug Part No. 520006), kept on dry ice, and flash frozen in liquid nitrogen prior to cryopulverization using a Covaris CP02 cryoPREP Automated Dry Pulverizer (Part No. 500001). The resulting powdered samples were transferred to 1.5 ml microcentrifuge tubes and lysed in 300 μl lysis buffer (8 M urea in 50 mM Tris pH 8.0, 150 mM NaCl, 1 mM EDTA and protease phosphatase inhibitor) on ice. Lysates were sonicated using AFA Covaris E220 (Part No. 500239). The sonicated samples were centrifuged for 30 min at 10,000 rpm. Clear supernatants were transferred to new tubes and quantified with the BCA assay (Thermo). Lysates were reduced with 10 mM TCEP and alkylated with 10 mM iodoacetamide for 30 min in the dark at room temperature. 1 mg lysates were diluted to 4 M urea with 200 mM Tris pH 8.0 and digested with Lys-C (1:50 protease:protein ratio) for 90 min at 37 °C. Samples were then diluted to less than 2 M urea with 200 mM Tris pH 8.0 and digested with trypsin at the same ratio overnight at 37 ° C. The samples were acidified with 1% formic acid and desalted using 50 mg per 1 cc Sep-Pak (Waters). A 250 μg aliquot of each sample was frozen and dried, then stored at –80 ° C until tandem mass tag (TMTpro 16, Thermo lot# WI325918) peptide labeling according to manufacturer instructions.
 
 Desalted 16-plex TMT-labeled peptides (5 mg total) were subjected to basic reverse-phase (RP) chromatography. Peptides were separated using a 4.6 mm x 250 mm RP Zorbax 300 A Extend-C18 column (Agilent, 5 mm bead size) on an Agilent 1260 series HPLC. The 96 min gradient of solvent A (2% ACN, 5 mM ammonium formate) to solvent B (90% ACN, 5 mM ammonium formate) stayed at 0% B for 7 min, from 0% to 16% B over 6 min, from 16% to 40% over 60 min, from 40% to 44% over 4 min, from 44% to 60% over 5 min and maintained at 60% B over 14 min. Flow rate was 1 ml/min. 90 fractions were collected and concatenated down to 24 fractions. 5% of each final fraction was used for proteome analysis. The remaining 95% of each of the 25 fractions was concatenated to 13 fractions. These 13 fractions were IMAC enriched using Ni-NTA Agarose beads as described for phosphoproteome analysis (Mertins et al., 2018).
 
-## Quantitative proteomics - data acquisition
+### Quantitative proteomics - data acquisition
 
 Proteome analysis was performed using an EASY-nLC 1200 UHPLC coupled to an Orbitrap Eclipse mass spectrometer (Thermo Fisher Scientific). The online peptide separation was performed using a 25 cm x 75 mm i.d. silica picofrit capillary column (New Objectives) packed with 1.9 mm ReproSil-Pur C18-AQ beads (Dr. Maisch GmbH). The 110 min method, 84 min effective gradient of solvent A (2% ACN, 0.1% FA) and solvent B (80% ACN, 0.1% FA). The gradient started at 2% B and increased to 10% B over 1 min, from 10% to 50% B over 84 min, from 50% to 72% B over 9 min, from 72% to 90% B over 1 min, stayed at 90% B over 5 min, then dropped to 60% B over 1 min and maintained at 60% B for 9 min. The flow rate was at 200 nl/min. The Eclipse mass spectrometer performed data-dependent acquisition in positive ion mode. MS1 spectra scanned a range of 350–2000 m/z at 60000 resolution, with maximum injection time of 50ms and 100% AGC target. MS2 spectra scanned at first mass of 110 m/z at 50,000 resolution. The cycle time for MS2 scan was set for 2 s for charge state of 1<x < 6, with isolation window of 0.7 m/z. The AGC target for MS2 was 60% with a maximum injection time of 105ms. An empirically determined normalized collision energy was set to 32. Dynamic exclusion was set to 20 s.
 
-## Quantitative proteomics - data analysis
+### Quantitative proteomics - data analysis
 
 All raw files were searched using Spectrum Mill (Agilent). MS2 spectra were searched against the Uniprot Mouse Database (20171228, 47,069 mouse entries, 264 common laboratory contaminants) with a mass tolerance of 20 ppm for both the precursor and product ions. The enzyme specificity was set for Trypsin and allowed up to three missed cleavages. The fixed modification was carbamidomethylation at cysteine. TMT labeling was required at lysine, but peptide N-termini were allowed to be either labeled or unlabeled. Allowed variable modifications for whole proteome datasets were acetylation of protein N-termini, oxidized methionine, deamidation of asparagine, and pyroglutamic acid at peptide N-terminal glutamine, with a precursor MH +shift range of –18–64 Da. The false discovery rate was less than 1%. Protein identifications were discarded if the protein was only observed by a single peptide. Protein subgroups were collapsed to the proteoform with the most evidence.
 
-## Gene set enrichment analysis
+### Gene set enrichment analysis
 
 Mouse UniProtIDs for identified proteins were converted to human orthologs and ranked by signed log10(nominal p-value) (with sign indicating direction of fold-change from WT). GSEA 4.3.3 (Subramanian et al., 2005; Mootha et al., 2003) was used to run the GSEA Preranked tests against all gene sets in the Human MSigDB Collection C2 v2023.2. SynGO 1.2 was used to identify synaptic ontologies for differentially expressed proteins with nominal p-value <0.05.
 
-## Data analysis
+### Data analysis
 
 Statistical analyses were performed using GraphPad Prism 10. Data in bar graphs are presented as mean ± SEM, with individual data points graphed when applicable. Sample size ‘n’ is annotated within the bars or in the Figure legend for each group. Distributions were tested for normality and outliers (>1.5 x the interquartile distance for behavioral data, or by Prism ROUT method at Q=5% for other metrics) were removed before proceeding with statistical tests. Specific details of statistical tests performed, adjusted with post-hoc Bonferroni test for multiple comparisons (MC) where appropriate, are noted in the Figure legends. Significance was defined by a p-value less than 0.05: nsp <0.1; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.

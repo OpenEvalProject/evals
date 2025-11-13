@@ -32,15 +32,15 @@ This outbreak, which has been previously described, (Lee et al., 2015b; Lee et a
 
 ## Materials and methods
 
-## Study subjects
+### Study subjects
 
 All 50 samples from the 2011–2012 outbreak (Lee et al., 2015b) were eligible for inclusion, as well as samples from all cases (n = 15) diagnosed in same village in the preceding five years (2007 onwards), 13/15 of which were caused by the same strain of M. tuberculosis (the ‘Major [Mj]-III’ sublineage; Lee et al., 2015a). There were two episodes of recurrent TB (i.e., where an individual had microbiologically-confirmed TB once, was cured, but developed TB again during the study period); otherwise, all samples are from unique individuals. All cases had pulmonary TB that was Lineage 4 (Euro-American; Lee et al., 2015b). Cross-contamination was ruled out as described in Lee et al. (2015b).
 
-## DNA extraction and sequencing
+### DNA extraction and sequencing
 
 Samples were cultured once on Middlebrook 7H10 agar and plate sweeps were collected for DNA extraction using the van Soolingen method (van Soolingen et al., 1991). Genomic DNA was quantified using the Quant-iT PicoGreen dsDNA Assay (ThermoFisher Scientific, Massachusetts, USA). Library preparation and sequencing were done at the McGill University/Genome Québec Innovation Centre. The Illumina HiSeq 4000 was used to produce paired-end 100 bp reads. To obtain the depth of coverage needed for this study (~500–1000x for deep sequencing, compared to ~50–100x as routinely done by public health), pooled libraries were run on four independent lanes.
 
-## Bioinformatics
+### Bioinformatics
 
 FastQC (v.0.11.5, https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) was used to assess sequencing data quality and reads were trimmed to remove low-quality bases using Trimmomatic (v.0.36 Bolger et al., 2014). Kraken (v.1.1 Wood and Salzberg, 2014) was then used to identify potential contamination with the miniKraken database (minikraken_20171019). Reads classified as ‘Mycobacterium tuberculosis complex’ (MTBC) were extracted using Seqtk (v.1.2, Li H, available at: https://github.com/lh3/seqtk).
 
@@ -52,21 +52,21 @@ Low-quality variants, variants in proline-proline-glutamic acid (PE) and proline
 
 Concatenated core cSNP alignments were made using snp-sites -c (v.2.4.0 Page et al., 2016), with positions with hSNPs excluded. Pairwise cSNP distances between samples were computed using snp-dists (v.0.6, available at https://github.com/tseemann/snp-dists). The frequency of hSNPs at each position in the genome was tabulated and hSNPs were reviewed to identify variants shared between samples.
 
-## Phylogenetics and clustering
+### Phylogenetics and clustering
 
 Core cSNP alignments were used to generate maximum likelihood trees using IQ-Tree (v.1.6.8 Nguyen et al., 2015). Model selection was based on the lowest Bayesian Information Criterion. Hierarchical Bayesian Analysis of Population Structure (Cheng et al., 2013) was run in R (v.3.5.2) to identify clusters. Phylogenetic trees were visualized using Interactive Tree of Life (Letunic and Bork, 2016).
 
-## Single molecule Real-Time (SMRT) sequencing and assembly
+### Single molecule Real-Time (SMRT) sequencing and assembly
 
 To examine the influence of potential alignment errors in identification of hSNPs, we used SMRT sequencing with the PacBio RSII platform to create a local reference genome for the outbreak. Sample MT-0080 was chosen for sequencing because this was previously identified as the probable source for as many as 19 of the 50 cases diagnosed in 2011–2012 (Lee et al., 2015b). Prior to sequencing, the culture was grown on a Middlebrook 7H10 agar plate. A single colony was then selected and grown further in 3 mL of Middlebrook 7H9 Broth to provide sufficient DNA for SMRT sequencing and Illumina MiSeq (for polishing of the long-read assembly). DNA for SMRT sequencing was extracted using the MagAttract High Molecular Weight DNA Kit from Qiagen (Maryland, USA). High molecular weight fragments were verified using gel electrophoresis. Library preparation and sequencing were then done at the McGill University/Genome Québec Innovation Centre. Prior to sequencing, fragment size was evaluated using a BioAnalyzer and the BluePippin system (Sage Science, Massachusetts, USA) was used for size selection. DNA for Illumina MiSeq was extracted using the van Soolingen method, as previous (van Soolingen et al., 1991).
 
 Long-reads were assembled and corrected using Canu (v.1.7.1 Koren et al., 2017). Pilon (v.1.23 Walker et al., 2014) was then used to polish the assembly using the Illumina MiSeq reads from the same colony. This was re-run until no further corrections were possible. Quast (v.5.0.2, Gurevich et al., 2013) was used to evaluate assembly quality. RASTtk (v.2.0 Brettin et al., 2015) was used for annotation, to identify regions for masking as previous.
 
-## Epidemiological data
+### Epidemiological data
 
 Epidemiological and clinical data were collected on all cases and contacts using standardized questionnaires as part of the routine public health response, described previously in Lee et al. (2015b); Lee et al. (2016).
 
-## Statistical analyses
+### Statistical analyses
 
 A two-sample test of proportions was used to compare overall proportions across references, and the Wilcoxon Signed Rank test was used to compare paired SNP distances. Analyses were done in Stata (v.15, StataCorp, College Station, TX, USA).
 
@@ -80,13 +80,88 @@ Average genome coverage and depth across the H37Rv reference was 98·64% [SD 0·
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/53245/elife-53245-fig1-v2.jpg)
 
-**Figure 1.:** Source data 3, with MT-4942 used as an example and zoomed on position 2,255,171 to 2,280,170 in H37Rv (National Center for Biotechnology Information RefSeq Database Accession NC_000962.3).Binary Alignment Map (BAM) file were loaded into Tablet (v.1.17.08.17, Milne et al., 2013) to visualize the pileup compared to H37Rv.
+**Figure 1.:** Binary Alignment Map (BAM) file were loaded into Tablet (v.1.17.08.17, Milne et al., 2013) to visualize the pileup compared to H37Rv.
+
+**Table 1.**
+ Comparison of alignments to H37Rv and MT-0080_PB.Based on these filters: Phred < 50, Root Mean Square Mapping Quality (RMS-MQ) ≤ 30, depth (DP) < 20, Fisher Strand Bias (FS) ≥ 60 and read position strand bias (ReadPos) < −8 and an allelic fraction of ≥ 95% for cSNPs, with hSNPs classified when 5% < ALT < 95%. Quality metrics for the individual cSNPs/hSNPs identified in each sample are given in Source data 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>H37Rv (4,411,532 bp)</th>
+      <th>MT-0080_PB (4,426,525 bp)</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Number of positions according to reference genome</td>
+    </tr>
+    <tr>
+      <td>Invariant reference across all samples, n (%)</td>
+      <td>4,018,786 (91·10%)</td>
+      <td>4,084,195 (92·27%)</td>
+      <td>&lt;0·00005 a</td>
+    </tr>
+    <tr>
+      <td>Position was missing/low quality in at least one sample, n (%)</td>
+      <td>391,761 (8·88%)</td>
+      <td>342,179 (7·73%)</td>
+      <td>&lt;0·00005 a</td>
+    </tr>
+    <tr>
+      <td>Position was an c/hSNP in at least one sample, n (%)</td>
+      <td>985 (0·22%)</td>
+      <td>152 (0·00%)</td>
+      <td>&lt;0·00005 a</td>
+    </tr>
+    <tr>
+      <td>Shared cSNPs across all samples, n (%)</td>
+      <td>764 (0·02%)</td>
+      <td>1 (0·00%)</td>
+      <td>&lt;0·00005 a</td>
+    </tr>
+    <tr>
+      <td>Shared hSNPs across all samples, n (%)</td>
+      <td>42 (0·00%)</td>
+      <td>0 (0%)</td>
+      <td>&lt;0·00005 a</td>
+    </tr>
+    <tr>
+      <td colspan="4">Core pairwise distances</td>
+    </tr>
+    <tr>
+      <td>Core cSNPs vs. reference, median (range)</td>
+      <td>791 (790–792)</td>
+      <td>3 (1–65)</td>
+      <td>&lt;0·00005 b</td>
+    </tr>
+    <tr>
+      <td>Core cSNPs between samples, median (range)</td>
+      <td>3 (0–64)</td>
+      <td>3 (0–66)</td>
+      <td>&lt;0·00005 b</td>
+    </tr>
+  </tbody>
+</table>
+
+_a Two sample test for difference in proportions.b Wilcoxin Signed Rank test._
 
 To address this, we generated a local reference genome for the outbreak, MT-0080_PB. Quality metrics for the MT-0080_PB assembly are given in Source data 5. Compared to H37Rv, mean genome coverage and depth were higher with MT-0080_PB (at 99·33% [SD 0·09%] and 717·07 [SD 93·01], respectively), fewer positions were missing/low-quality (p < 0·00005, Table 1), and overall, fewer variable positions were detected (p < 0·00005). While core cSNP distances were similar between samples regardless of the reference (Table 1), the number of hSNPs was greatly reduced using MT-0080_PB (Source data 2); while 4,897 hSNPs were identified across all individual samples using H37Rv, only 125 hSNPs were identified using MT-0080_PB. There were also no hSNPs shared across all 62 samples using MT-0080_PB. Together, these findings support our hypothesis that alignment error is responsible for many of the detected variants, and indicate a local reference is important for accurate identification of hSNPs. All further results presented are based on the MT-0080_PB alignment.
 
 A maximum likelihood tree was generated from 90 core cSNP positions (excluding sites invariant across all samples and the reference) compared to MT-0080_PB (Figure 2). All 62 samples (historical and outbreak) were included, for comparison with our previous work. (Lee et al., 2015b) Consistent with this, (Lee et al., 2015b) hierBAPS identified two main sub-lineages (‘Mj-V’ and ‘Mj-III’ per Lee et al., 2015a), with three sub-clusters (Mj-IIIA/B/C).
 
-## hSNPs identify a novel super-spreading event and more accurately resolve transmission clusters
+![Figure 2.](https://cdn.elifesciences.org/articles/53245/elife-53245-fig2-v2.jpg)
+
+**Figure 2.:** Maximum likelihood tree of 62/65 cases diagnosed between 2007–2012 in village K based on consensus single nucleotide polymorphisms (cSNPs). After aligning to a local reference, MT-0080_PB, cSNPs were identified based on a minimum threshold of ≥95% of reads supporting the alternative allele. A core cSNP alignment was then produced with 90 positions.and IQ-Tree (v.1.6.8 Nguyen et al., 2015) was used to generate the tree using a KP3 model with correction for ascertainment bias. Model selection was based on the lowest Bayesian Information Criterion. 1000 bootstrap replicates were done; only p values > 60% are shown. Clusters were identified using hierarchical Bayesian Analysis of Population Structure (Cheng et al., 2013). These clusters were consistent with the sub-lineages previously identified in Lee et al. (2015a); Lee et al. (2015b), thus only sub-lineage names are indicated (Major sub-lineages [Mj]-IIIA, B, C, and Mj-VA). Only Mj-IIIA/B/C were present in 2011–2012; Mj-IIIA was first seen in village K in 2007, IIIB was first seen in 2009, and IIIC was first seen in 2012. Alleles informative for transmission in Mj-IIIB, identified using deep sequencing, are indicated. Between 2007–2012, there were two individuals who had a second episode of TB; stars are used to highlight these samples, with a different colour for each patient. MT-0080 is included in the alignment as the deep sequencing data from a sweep of all colonies identified a cSNP compared to the MT-0080_PB reference, which itself was generated from a single colony pick.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53245/elife-53245-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Routine sequencing (to ~40–50x) had indicated there were three major clusters present in village K in 2011–2012, Mj-IIIA, B and C. Further analysis of sequencing and epidemiological data indicated that the 2011–2012 cases in Mj-IIIB could be divided into two subgroups of transmission – comprised of five and 13 patients, respectively (Lee et al., 2015b). MT-504 was the suspected source case for the subgroup of five, which all shared a ‘C’ allele at position 276,685 in H37Rv (position 276,544 in MT-0080_PB). In contrast, all members of the subgroup of 13 shared an ‘A’ at this position. Previously, MT-2474 was the suspected source case for this subgroup; this case was the first person with smear-positive (SS+) cavitary disease diagnosed in this subgroup. The epidemiologic curve for the 2011–2012 Mj-IIIB cases is shown, stratified by sub-group based on the alleles detected with routine sequencing. MT-504 and MT-2474, the putative sources within each sub-group are indicated. Sputum smear grade is given where cases were positive on microscopy. Dates of diagnosis are classified into biweekly intervals. (B) In contrast to standard sequencing, deep sequencing data revealed that, in fact, MT-504 – the presumed source for the subgroup of five cases and the first highly contagious case diagnosed in Mj-IIIB during the outbreak year – had both ‘C’ and ‘A’ alleles at this position (563:133 of reads, respectively), suggesting this was in fact the most probable source for both subgroups.
+
+### hSNPs identify a novel super-spreading event and more accurately resolve transmission clusters
 
 The core cSNPs and hSNPs between samples are shown in Source data 6, with the sub-groups identified in the original analysis indicated. Overlaying hSNPs with the cSNP-based analysis revealed a novel super-spreader (MT-504) in Cluster Mj-IIIB, undetected by genomic epidemiology analyses relying on lower sequencing depth. (Lee et al., 2015b).
 
@@ -94,15 +169,15 @@ In brief, our previous analysis using routine sequencing depth had suggested tha
 
 In contrast to the analysis based on routine sequencing data, our in-depth investigation of within-host diversity using deep sequencing data revealed that MT-504 harboured both the alternative allele (563 reads [80·9%]) shared by all members of the subgroup of five as well as the reference allele (133 reads [19·1%]), shared by all members of the subgroup of 13 (Figure 2—figure supplement 1B). Given that MT-504 was the first contagious case diagnosed in Mj-IIIB (Figure 2—figure supplement 1A), and all 13 cases in the second subgroup had attended or resided in a gathering house (with 9/13 [69·2%] reporting attendance at the same houses as MT-504), this strongly suggests that MT-504 is in fact the most probable source for both subgroups.
 
-## hSNP analysis adds support for suspected transmission
+### hSNP analysis adds support for suspected transmission
 
 Sample 68995 and MT-5543 were from 2007, and were the only strains from the Mj-VA sub-lineage in this village. Previous analysis indicated Mj-VA strains from other villages were distantly related, (Lee et al., 2015b) while these two samples were separated from one another by zero core cSNPs. This suggests direct transmission between these historical cases, a hypothesis strongly supported by hSNP analysis, as the samples share hSNPs that are not found in any other sample in the dataset. These hSNPs were present even when highly conservative filtering thresholds were used (Source data 7), but were not included when using H37Rv as the reference - potentially due to differences in annotation and subsequent filtering.
 
-## Potential utility for discriminating TB recurrence
+### Potential utility for discriminating TB recurrence
 
 Six individuals had TB recurrence in 2011–2012. Paired samples were available for two of these (Patient 1: samples MT-5195 [Mj-IIIA] in 2007 and MT-1838 [Mj-IIIC] in 2012; Patient 2: samples MT-5543 [Mj-VA] in 2007 and MT-1206 [Mj-IIIB] in 2012, Figure 2). Clinically, both patients had new lesions detected at their second episode, compared to their previous chest x-rays. cSNP-based analyses suggested their second episodes of TB were due to re-infection with a new strain, rather than relapse with the strain causing their original disease. Investigation of within-host diversity strongly supported this conclusion; using deep sequencing, we verified that there was a single, different strain present at both baseline and their second episodes of TB. There was no evidence for mixed infection at either baseline or second episode with these strains, more definitively ruling out relapse in this low diversity setting (Source datas 6, 7, 8).
 
-## Impact of altering cSNP and hSNP thresholds
+### Impact of altering cSNP and hSNP thresholds
 
 To ensure we were not missing lower frequency variants using the prior cSNP/hSNP thresholds, we re-ran our analysis such that hSNPs were classified when 1% < ALT < 99%. Quality scores for individual cSNPs and hSNPs are given in Source data 9 and the core cSNP/hSNP alignment is shown in Source data 8. While our primary analysis using a threshold of ≥95% for cSNPs identified a single cSNP (A to G) shared across all samples compared to MT-0080_PB, close examination of the MT-0080 deep sequencing data (obtained using DNA from a sweep of the plate) showed that this sample had both alleles at this position, with only the minority ‘A’ allele (33 reads/1189 [2·8%]) isolated for SMRT sequencing. Based on this, we recommend sequencing samples both using a clean sweep (with an alternative sequencing platform) and a single colony pick when generating a reference genome for TB, as using the latter alone may introduce error and affect epidemiological inferences. With this exception, no other informative hSNPs were detected using these thresholds.
 

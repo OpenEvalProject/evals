@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.07902.001 We tested a novel hypothesis, generated from representational accounts of medial temporal lobe (MTL) function, that the major white matter tracts converging on perirhinal cortex (PrC) and hippocampus (HC) would be differentially involved in face and scene perception, respectively. Diffusion tensor imaging was applied in healthy participants alongside an odd-one-out paradigm sensitive to PrC and HC lesions in animals and humans. Microstructure of inferior longitudinal fasciculus (ILF, connecting occipital and ventro-anterior temporal lobe, including PrC) and fornix (the main HC input/output pathway) correlated with accuracy on odd-one-out judgements involving faces and scenes, respectively. Similarly, blood oxygen level-dependent (BOLD) response in PrC and HC, elicited during oddity judgements, was correlated with face and scene oddity performance, respectively. We also observed associations between ILF and fornix microstructure and category-selective BOLD response in PrC and HC, respectively. These striking three-way associations highlight functionally dissociable, structurally instantiated MTL neurocognitive networks for complex face and scene perception. DOI: http://dx.doi.org/10.7554/eLife.07902.001
+We tested a novel hypothesis, generated from representational accounts of medial temporal lobe (MTL) function, that the major white matter tracts converging on perirhinal cortex (PrC) and hippocampus (HC) would be differentially involved in face and scene perception, respectively. Diffusion tensor imaging was applied in healthy participants alongside an odd-one-out paradigm sensitive to PrC and HC lesions in animals and humans. Microstructure of inferior longitudinal fasciculus (ILF, connecting occipital and ventro-anterior temporal lobe, including PrC) and fornix (the main HC input/output pathway) correlated with accuracy on odd-one-out judgements involving faces and scenes, respectively. Similarly, blood oxygen level-dependent (BOLD) response in PrC and HC, elicited during oddity judgements, was correlated with face and scene oddity performance, respectively. We also observed associations between ILF and fornix microstructure and category-selective BOLD response in PrC and HC, respectively. These striking three-way associations highlight functionally dissociable, structurally instantiated MTL neurocognitive networks for complex face and scene perception.
 
 ## Introduction
 
@@ -47,25 +47,175 @@ Finally, we used a mediation analysis (Hayes, 2013) to examine the three-way rel
 
 ## Results
 
-Both diffusion-weighted and fMRI data were acquired in 30 healthy adult participants who completed a perceptual oddity task for scenes and faces (and a size oddity control condition). To ensure that mnemonic demand was minimised in the oddity task, stimuli were presented concurrently on each trial and never repeated, once shown, in the task (
+Both diffusion-weighted and fMRI data were acquired in 30 healthy adult participants who completed a perceptual oddity task for scenes and faces (and a size oddity control condition). To ensure that mnemonic demand was minimised in the oddity task, stimuli were presented concurrently on each trial and never repeated, once shown, in the task (Lee et al., 2005a). Performance in this paradigm was defined as the proportion of trials for which participants selected the correct odd-one-out stimulus from the array of three stimuli (see ‘Materials and methods’). Two of these stimuli were the same item from different viewpoints, and the third stimulus was a different, but similar, item (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/07902/elife-07902-fig1-v2.jpg)
 
-**Figure 1.:** This is shown for (A) face and (B) scene oddity. The best fitting linear regression line and 95% confidence interval (CI) are displayed on each scatter plot. Reconstructions of the fornix (blue) and inferior longitudinal fasciculus (ILF) (red) are depicted on the sagittal midline slice of a participant's T1-weighted brain image. Data obtained from the fornix and ILF are indicated with blue and red data markers, respectively, with 29 data points appearing on all graphs. Scatter plots for both the fractional anisotropy (FA) data and the size oddity condition are depicted in Figure 1—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.07902.003
+**Figure 1.:** This is shown for (A) face and (B) scene oddity. The best fitting linear regression line and 95% confidence interval (CI) are displayed on each scatter plot. Reconstructions of the fornix (blue) and inferior longitudinal fasciculus (ILF) (red) are depicted on the sagittal midline slice of a participant's T1-weighted brain image. Data obtained from the fornix and ILF are indicated with blue and red data markers, respectively, with 29 data points appearing on all graphs. Scatter plots for both the fractional anisotropy (FA) data and the size oddity condition are depicted in Figure 1—figure supplement 1.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/07902/elife-07902-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) The relationship between white matter microstructure (MD, FA) and size oddity performance (proportion correct). (B) The relationship between FA and proportion correct for faces (left) and scenes (right; see the main paper for MD). Data obtained from the fornix (top) and ILF (bottom) are indicated by blue and red data markers, respectively, with 29 data points appearing on all graphs. The best fitting linear regression line and 95% CI are displayed on each scatter plot.DOI: http://dx.doi.org/10.7554/eLife.07902.004
+**Figure 1—figure supplement 1.:** (A) The relationship between white matter microstructure (MD, FA) and size oddity performance (proportion correct). (B) The relationship between FA and proportion correct for faces (left) and scenes (right; see the main paper for MD). Data obtained from the fornix (top) and ILF (bottom) are indicated by blue and red data markers, respectively, with 29 data points appearing on all graphs. The best fitting linear regression line and 95% CI are displayed on each scatter plot.
 
-## Behaviour
+### Behaviour
 
-To ensure that behavioural performance (proportion correct) was matched across stimulus types, and that no learning was shown across task runs, we conducted a 3 (task: scenes, faces, size) × 2 (run number: run 1, run 2, run 3) analysis of variance (ANOVA). This analysis revealed no effect of task (F (2, 28) = 1.47, p = 0.24) or run number (F (2, 28) = 1.37, p = 0.26) on behavioural performance and no significant interaction between these two factors (p = 0.27). These results indicate that performance was matched across the three conditions and that there was no improvement in accuracy across task runs (i.e., learning). Descriptive statistics for the behavioural task are shown in Table 1.10.7554/eLife.07902.005Table 1.Descriptive statistics for the three behavioural conditionsDOI: http://dx.doi.org/10.7554/eLife.07902.00510.7554/eLife.07902.006Table 1—source data 1.Raw behavioural data from the oddity task.DOI: http://dx.doi.org/10.7554/eLife.07902.006AccuracyRTMeanSDMeanSDFace0.870.072932.40479.68Scene0.850.063147.86557.49Size0.840.122464.10668.31Mean and standard deviation (SD) are reported for both accuracy (proportion correct) and reaction time (RT). Raw behavioural data for the three oddity categories are available in Table 1—source data 1.
+To ensure that behavioural performance (proportion correct) was matched across stimulus types, and that no learning was shown across task runs, we conducted a 3 (task: scenes, faces, size) × 2 (run number: run 1, run 2, run 3) analysis of variance (ANOVA). This analysis revealed no effect of task (F (2, 28) = 1.47, p = 0.24) or run number (F (2, 28) = 1.37, p = 0.26) on behavioural performance and no significant interaction between these two factors (p = 0.27). These results indicate that performance was matched across the three conditions and that there was no improvement in accuracy across task runs (i.e., learning). Descriptive statistics for the behavioural task are shown in Table 1.
 
-## DTI and behaviour
+**Table 1.**
+ Descriptive statistics for the three behavioural conditionsTable 1—source data 1.Raw behavioural data from the oddity task.
 
-## Tractography
 
-Based on the directional hypotheses outlined above, we conducted one-tailed correlations between free water corrected MD and FA values of the ILF and fornix (obtained separately for each participant) and individual accuracy on oddity judgements for faces, scenes, and size (see ‘Materials and methods’ for further information). As one participant's mean FA value for the fornix was lower than three standard deviations below the group mean (SD < 0.25), they were removed in order to reduce the effect of outliers on the subsequent correlational analyses. All analyses reported below, therefore, are based on the remaining 29 participants. The mean and standard deviation for each tract (ILF, fornix) and DTI metric (MD, FA) are shown in Table 2. Correlations were Bonferroni corrected by dividing the 0.05 alpha level by the number of statistical comparisons for each individual DTI measure (i.e., 0.05/3 = 0.017). The 95% confidence interval (CI) for each correlation was derived using a bootstrapping procedure based on 1000 iterations. Individual FA and MD values for each participant (and tract) are available in Table 2—source data 1. A summary table of the DTI-behaviour correlations can be found in Table 3.10.7554/eLife.07902.007Table 2.Descriptive statistics for the fornix (left) and inferior longitudinal fasciculus (ILF, right)DOI: http://dx.doi.org/10.7554/eLife.07902.00710.7554/eLife.07902.008Table 2—source data 1.Raw values for the DTI metrics.DOI: http://dx.doi.org/10.7554/eLife.07902.008FornixILFMeanSDMeanSDFA0.3730.0310.4290.023MD1.0580.0540.7580.017Mean and standard deviations are reported for fractional anisotropy (FA) and mean diffusivity (MD × 10−3 mm2 s−1). Individual FA and MD values for each participant (and tract) are available in Table 2—source data 1.10.7554/eLife.07902.009Table 3.Summary table for the DTI-behaviour correlationsDOI: http://dx.doi.org/10.7554/eLife.07902.009FornixILFMDFAMDFArprprprpFace−0.140.230.150.22−0.570.000.300.06Scene−0.460.010.360.030.120.270.040.43Size−0.290.060.180.18−0.260.090.090.32Correlation coefficients (and one-tailed p values) are reported for each metric (fractional anisotropy [FA], mean diffusivity [MD]) of fornix and inferior longitudinal fasciculus (ILF) microstructure and each task condition (face, scene, size).DTI, diffusion tensor imaging.
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Accuracy</th>
+      <th colspan="2">RT</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Face</td>
+      <td>0.87</td>
+      <td>0.07</td>
+      <td>2932.40</td>
+      <td>479.68</td>
+    </tr>
+    <tr>
+      <td>Scene</td>
+      <td>0.85</td>
+      <td>0.06</td>
+      <td>3147.86</td>
+      <td>557.49</td>
+    </tr>
+    <tr>
+      <td>Size</td>
+      <td>0.84</td>
+      <td>0.12</td>
+      <td>2464.10</td>
+      <td>668.31</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mean and standard deviation (SD) are reported for both accuracy (proportion correct) and reaction time (RT). Raw behavioural data for the three oddity categories are available in Table 1—source data 1._
+
+### DTI and behaviour
+
+#### Tractography
+
+Based on the directional hypotheses outlined above, we conducted one-tailed correlations between free water corrected MD and FA values of the ILF and fornix (obtained separately for each participant) and individual accuracy on oddity judgements for faces, scenes, and size (see ‘Materials and methods’ for further information). As one participant's mean FA value for the fornix was lower than three standard deviations below the group mean (SD < 0.25), they were removed in order to reduce the effect of outliers on the subsequent correlational analyses. All analyses reported below, therefore, are based on the remaining 29 participants. The mean and standard deviation for each tract (ILF, fornix) and DTI metric (MD, FA) are shown in Table 2. Correlations were Bonferroni corrected by dividing the 0.05 alpha level by the number of statistical comparisons for each individual DTI measure (i.e., 0.05/3 = 0.017). The 95% confidence interval (CI) for each correlation was derived using a bootstrapping procedure based on 1000 iterations. Individual FA and MD values for each participant (and tract) are available in Table 2—source data 1. A summary table of the DTI-behaviour correlations can be found in Table 3.
+
+**Table 2.**
+ Descriptive statistics for the fornix (left) and inferior longitudinal fasciculus (ILF, right)Table 2—source data 1.Raw values for the DTI metrics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Fornix</th>
+      <th colspan="2">ILF</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FA</td>
+      <td>0.373</td>
+      <td>0.031</td>
+      <td>0.429</td>
+      <td>0.023</td>
+    </tr>
+    <tr>
+      <td>MD</td>
+      <td>1.058</td>
+      <td>0.054</td>
+      <td>0.758</td>
+      <td>0.017</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mean and standard deviations are reported for fractional anisotropy (FA) and mean diffusivity (MD × 10−3 mm2 s−1). Individual FA and MD values for each participant (and tract) are available in Table 2—source data 1._
+
+**Table 3.**
+ Summary table for the DTI-behaviour correlations
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3"></th>
+      <th colspan="4">Fornix</th>
+      <th colspan="4">ILF</th>
+    </tr>
+    <tr>
+      <th colspan="2">MD</th>
+      <th colspan="2">FA</th>
+      <th colspan="2">MD</th>
+      <th colspan="2">FA</th>
+    </tr>
+    <tr>
+      <th>r</th>
+      <th>p</th>
+      <th>r</th>
+      <th>p</th>
+      <th>r</th>
+      <th>p</th>
+      <th>r</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Face</td>
+      <td>−0.14</td>
+      <td>0.23</td>
+      <td>0.15</td>
+      <td>0.22</td>
+      <td>−0.57</td>
+      <td>0.00</td>
+      <td>0.30</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Scene</td>
+      <td>−0.46</td>
+      <td>0.01</td>
+      <td>0.36</td>
+      <td>0.03</td>
+      <td>0.12</td>
+      <td>0.27</td>
+      <td>0.04</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>Size</td>
+      <td>−0.29</td>
+      <td>0.06</td>
+      <td>0.18</td>
+      <td>0.18</td>
+      <td>−0.26</td>
+      <td>0.09</td>
+      <td>0.09</td>
+      <td>0.32</td>
+    </tr>
+  </tbody>
+</table>
+
+_Correlation coefficients (and one-tailed p values) are reported for each metric (fractional anisotropy [FA], mean diffusivity [MD]) of fornix and inferior longitudinal fasciculus (ILF) microstructure and each task condition (face, scene, size).DTI, diffusion tensor imaging._
 
 Face oddity performance was, as predicted, negatively associated with ILF MD (Figure 1A). This relationship was found to be significant at the experiment-wise significance level (r = −0.57, p = 0.00, 95% CI [−0.76, −0.36]). ILF MD did not correlate significantly with scene (r = 0.12, p = 0.27; Figure 1A) or size oddity performance (r = −0.26, p = 0.09; Figure 1—figure supplement 1). While a positive correlation was observed between ILF FA and face odd-one-out accuracy, this was not statistically significant (r = 0.30, p = 0.06, 95% CI [0.62, −0.1]; Figure 1—figure supplement 1). ILF FA did not correlate significantly with individual scores in either the scene (r = 0.04, p = 0.43) or size oddity (r = 0.09, p = 0.32) conditions.
 
@@ -79,53 +229,53 @@ Complementing the ILF data, a significant negative correlation (Figure 1B) was o
 
 Using the directional Steiger Z-test, we found, for fornix MD, that there was a marginally significant difference between the two correlations obtained for scenes and faces (z (26) = 1.39, p = 0.08). There was no significant difference between the scene and face correlations for fornix FA (p = 0.18).
 
-## Comparisons with size oddity
+#### Comparisons with size oddity
 
 While none of the microstructural measures obtained, in either pathway, were significantly associated with performance in the difficulty-matched size oddity condition, there were, as reported above, small-to-moderate one-tailed trends between fornix/ILF MD and size oddity (Figure 1—figure supplement 1). A Steiger Z-test comparing these coefficients revealed a significant difference between the face and size oddity correlation for ILF MD (z (26) = 2.05, p = 0.02). The difference between the size and scene oddity correlations for fornix MD did not differ significantly (z (26) = 0.94, p = 0.17).
 
 We also conducted partial correlations to see whether the significant relationship between face/scene oddity and ILF/fornix MD remains when size oddity is controlled for, that is, to show that WM microstructure is predictive of face/scene oddity over and above its contribution to lower-level visual discriminations. When size oddity was controlled for, we still observed significant associations (one-tailed) between scene oddity and fornix MD (r = −0.38, p = 0.02, 95% CI [−0.61, −0.08]) and face oddity and ILF MD (r = −0.53, p = 0.00, 95% CI [−0.61, −0.08]).
 
-## Tract-based spatial statistics (TBSS)
+#### Tract-based spatial statistics (TBSS)
 
-To complement the tractography analysis, we also conducted a whole-brain TBSS analysis to investigate any potential voxel-wise correlations outside our main ROIs for scene vs face oddity (S > F) and vice versa (F > S; see ‘Materials and methods’ for further details). While there were no whole-brain WM voxels showing a significantly greater association with S > F (for either MD or FA), the F > S contrast revealed 23 whole-brain clusters for MD, which were predominantly located in the right hemisphere (see
+To complement the tractography analysis, we also conducted a whole-brain TBSS analysis to investigate any potential voxel-wise correlations outside our main ROIs for scene vs face oddity (S > F) and vice versa (F > S; see ‘Materials and methods’ for further details). While there were no whole-brain WM voxels showing a significantly greater association with S > F (for either MD or FA), the F > S contrast revealed 23 whole-brain clusters for MD, which were predominantly located in the right hemisphere (see Supplementary file 1). The peak of the largest cluster was located in right superior longitudinal fasciculus (SLF; 31, −33, 37; p = 0.02) and incorporated right anterior ILF and the right inferior fronto-occipital fasciculus (IFOF; Figure 2). Sub-peak clusters were found in left corpus callosum, right middle ILF, and the left middle portion of the cingulum bundle. There were 53 significant voxels located in the ILF bilaterally with the peak located in the right hemisphere (44, −8, −18; p = 0.03).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/07902/elife-07902-fig2-v2.jpg)
 
-**Figure 2.:** White matter (WM) voxels identified by TBSS that show a stronger relationship for F > S and (A) mean diffusivity (MD) (negative correlation, red clusters), and (B) FA (positive correlation, blue clusters). Abbreviated WM structures include SLF (superior longitudinal fasciculus), IFOF (inferior fronto-occipital fasciculus), and ILF (inferior longitudinal fasciculus). There were no whole-brain WM voxels showing a significantly greater association with S > F (for both MD and FA). A table of peak coordinates for the TBSS analysis can be found in Supplementary file 1.DOI: http://dx.doi.org/10.7554/eLife.07902.010
+**Figure 2.:** White matter (WM) voxels identified by TBSS that show a stronger relationship for F > S and (A) mean diffusivity (MD) (negative correlation, red clusters), and (B) FA (positive correlation, blue clusters). Abbreviated WM structures include SLF (superior longitudinal fasciculus), IFOF (inferior fronto-occipital fasciculus), and ILF (inferior longitudinal fasciculus). There were no whole-brain WM voxels showing a significantly greater association with S > F (for both MD and FA). A table of peak coordinates for the TBSS analysis can be found in Supplementary file 1.
 
 For FA, nine clusters were identified that were more strongly correlated with faces than scenes. The peak for the largest cluster was located in the right callosal body (16, 12, 29; p = 0.00) and incorporated several prominent WM structures bilaterally, including ILF, SLF, and forceps major (see Supplementary file 1). A second cluster of 118 voxels was identified with a peak in the right anterior ILF (40, −33, −15; p = 0.05). There were 250 significant voxels in ILF with the peak located in the left ILF. A figure displaying the TBSS clusters can be found in Figure 2.
 
-## BOLD and DTI
+### BOLD and DTI
 
 As MD and FA are associated with properties that affect the efficiency of information transfer along axons (Beaulieu, 2002), it is highly likely that inter-individual variation in these measures will impact on, and constrain, BOLD activity in specific ROIs (Behrens and Johansen-Berg, 2005). Here, we used probabilistic atlases to define bilateral ROIs of PrC, FFA, and HC and employed a general linear model (GLM) to test for voxel-wise linear associations between WM microstructure and category-selective BOLD (see ‘Materials and methods’). Given that increased MD reflects greater diffusion along both the axial and radial diffusion directions, we predicted a negative association with BOLD activity. For FA, we predicted a positive association with BOLD, as this metric reflects the extent to which diffusion within biological tissue is highly directional, or constrained along a single axis. The data from four participants were excluded from the analysis due to excessive movement during the functional run (>3 mm), and a further participant removed due to scanner error, resulting in a sample of n = 24 for all subsequent analyses.
 
-As shown in
+As shown in Figure 3A, the statistical map reflecting a negative association between inter-subject BOLD for F > S and ILF MD revealed significant bilateral clusters in FFA (left: −28, −52, −18, Z = 2.99, 25 voxels; right: 44, −52, −18, Z = 3.07, 41 voxels). There was also a cluster of 11 voxels in left PrC (−32, −12, −34, Z = 2.81), which did not quite reach our PrC cluster extent threshold (cluster >17 voxels, p = 0.05; Figure 3B). No clusters were found for F > S and ILF FA. As these functional associations with MD could arise from between-subject variability in the scene oddity baseline, we also conducted this analysis for F > rest; as above, we identified significant bilateral clusters in FFA associated with ILF MD, with the larger, stronger, cluster located in right hemisphere (left: −28, −52, −18, Z = 2.98, 19 voxels; right: 42, −54, −18, Z = 4.21, 210 voxels; Figure 3A). We also identified bilateral face-sensitive clusters in the PrC associated with ILF MD (left: −32, −14, −34, Z = 3.52, 19 voxels; right: 28, −16, −32, Z = 3.52, 27 voxels; Figure 3B). There were no supra-threshold clusters in FFA or PrC for ILF FA. Across two BOLD contrasts (F > S and F > rest), therefore, inter-individual differences in ILF microstructure (MD) were correlated with BOLD response to faces in FFA and PrC (Pyles et al., 2013).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/07902/elife-07902-fig3-v2.jpg)
 
-**Figure 3.:** A group-level region-of-interest (ROI) analysis of the fMRI data was conducted to identify clusters reflecting a significant relationship between BOLD response for faces and scenes and tissue microstructure of the ILF and fornix, respectively. (A) Fusiform face area (FFA): significant bilateral clusters reflecting a negative association between BOLD response during face oddity judgements (F > S, left; F > rest, right) and ILF MD. (B) Perirhinal cortex (PrC): bilateral clusters reflecting a significant negative association between face-sensitive BOLD (F > rest) and ILF MD (right). A sub-threshold cluster for F > S is shown on the left. (C) Hippocampus (HC): a significant cluster was identified in the intermediate HC that corresponds to a positive association between task-induced scene deactivations (against rest) and fornix FA.DOI: http://dx.doi.org/10.7554/eLife.07902.011
+**Figure 3.:** A group-level region-of-interest (ROI) analysis of the fMRI data was conducted to identify clusters reflecting a significant relationship between BOLD response for faces and scenes and tissue microstructure of the ILF and fornix, respectively. (A) Fusiform face area (FFA): significant bilateral clusters reflecting a negative association between BOLD response during face oddity judgements (F > S, left; F > rest, right) and ILF MD. (B) Perirhinal cortex (PrC): bilateral clusters reflecting a significant negative association between face-sensitive BOLD (F > rest) and ILF MD (right). A sub-threshold cluster for F > S is shown on the left. (C) Hippocampus (HC): a significant cluster was identified in the intermediate HC that corresponds to a positive association between task-induced scene deactivations (against rest) and fornix FA.
 
 In the HC, there were no significant clusters for our two scene contrasts (S > F or S > rest) and either measure of fornix microstructure. Given evidence for a decoupling between HC BOLD and underlying neuronal activity (Ekstrom, 2010), in particular that negative BOLD changes in the HC are often accompanied by increased spike rate or synaptic input (see ‘Discussion’ for further details), we also investigated whether fornix MD or FA might be associated with inter-individual differences in scenes compared to rest (S < rest, i.e., task-induced hippocampal deactivations). This analysis revealed a significant cluster in left intermediate HC (−26, −24, −16, Z = 3.1, 32 voxels; Figure 3C) that was strongly associated with fornix FA. The fornix MD analysis revealed a cluster in right anterior HC (20, −16, −16, Z = 2.24) albeit at a lower voxel-wise threshold (p = 0.05). To test whether this deactivation effect was specific to scene oddity, we conducted the same analysis for face deactivations against rest baseline (F < rest); this revealed no voxels in HC associated with either fornix MD or FA.
 
 To test whether fornix microstructure is associated with scene-selective BOLD in other scene-selective cortical regions (Epstein, 2014), we conducted an additional voxel-wise analysis within anatomically defined, independent ROIs sampling the posterior parahippocampal gyrus (PHG), retrosplenial cortex (RSC), and transverse occipital sulcus (TOS; see ‘Materials and methods’). No significant clusters were found that showed a significant positive or negative association between scene-selective BOLD (S > F, S > rest) and fornix microstructure (MD or FA) in any of the additional scene-selective ROIs.
 
-## BOLD and behaviour
+### BOLD and behaviour
 
-We next correlated mean individual percentage BOLD signal change values from each probabilistic anatomical ROI with face and scene oddity performance (one-tailed,
+We next correlated mean individual percentage BOLD signal change values from each probabilistic anatomical ROI with face and scene oddity performance (one-tailed, Figure 4). A significant positive relationship was found between face-sensitive BOLD (F > rest) in FFA and face oddity accuracy (r = 0.36, p = 0.04, 95% CI [0.05, 0.65]; Figure 4A). A significant positive correlation was also observed between BOLD for faces (F > rest) in PrC and face oddity performance (r = 0.42, p = 0.02, 95% CI [0.06, 0.69]; Figure 4B). Neither ROI was correlated with scene oddity performance (all ps > 0.2).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/07902/elife-07902-fig4-v2.jpg)
 
-**Figure 4.:** (A) Scatter plot displaying the relationship between inter-individual variation in percentage signal change for faces (relative to rest) and face oddity performance (proportion correct) in the pre-defined FFA ROI. (B) The relationship between inter-individual variation in face-related activations (against rest) and face oddity performance in the PrC ROI. (C) The relationship between task-induced scene deactivations (relative to rest) and scene oddity performance in the pre-defined HC ROI. A total of 24 data points are shown on each graph. Individual percentage signal change values for each ROI are contained in Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.07902.01210.7554/eLife.07902.013Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.07902.013
+**Figure 4.:** (A) Scatter plot displaying the relationship between inter-individual variation in percentage signal change for faces (relative to rest) and face oddity performance (proportion correct) in the pre-defined FFA ROI. (B) The relationship between inter-individual variation in face-related activations (against rest) and face oddity performance in the PrC ROI. (C) The relationship between task-induced scene deactivations (relative to rest) and scene oddity performance in the pre-defined HC ROI. A total of 24 data points are shown on each graph. Individual percentage signal change values for each ROI are contained in Figure 4—source data 1.
 
 There was also a strong trend evident between scene-related deactivations (S < rest) and scene oddity accuracy in the HC ROI (r = 0.30, p = 0.08, 95% CI [−0.039, 0.606]; Figure 4C); an association that was not evident for the face oddity condition (p = 0.20).
 
-## Mediation analysis: BOLD, DTI, and behaviour
+### Mediation analysis: BOLD, DTI, and behaviour
 
-From a mediation analysis conducted using ordinary least squares path analysis (
+From a mediation analysis conducted using ordinary least squares path analysis (Preacher and Hayes, 2008), FFA BOLD activity indirectly influenced face oddity performance through its relationship with ILF MD. As seen in Figure 5A, individuals with a higher FFA BOLD response for F > rest had significantly lower ILF MD values, and participants with lower ILF MD values showed significantly better face discrimination ability. A bootstrap 95% CI (based on 1000 bootstrapped samples) for the indirect effect was entirely above zero (see Figure 5A). Thus, there was no evidence that FFA BOLD activity influenced face oddity performance independent of its relationship with ILF MD. Further analyses revealed that this effect was predominantly evident in the right hemisphere (see Supplementary file 2). An alternative model in which FFA activity mediated the influence of ILF MD on face oddity performance revealed no evidence for an indirect effect of ILF MD on face discrimination accuracy through its effect on FFA BOLD activity (95% CI [−1017.19, 1361.64]; Supplementary file 2).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/07902/elife-07902-fig5-v2.jpg)
 
-**Figure 5.:** Mediation models are presented for (A) FFA, (B) PrC, and (C) HC. These models test the extent to which the relationship between BOLD response (in the a priori FFA, PrC, and HC ROIs) and odd-one-out accuracy is mediated by WM microstructure. The left, middle, and right boxes in each model represent the independent variable (IV), mediator (M), and dependent variable (DV), respectively. Unstandardised coefficients and their corresponding one-tailed p values are depicted for each path of interest (a, b, a*b, c′, and c). In a simple mediation model, these paths reflect the following: path c represents the total effect of the IV on the DV; path a quantifies the effect of the IV on the M; path b reflects the causal effect of the M on the DV; and path c′ is the direct effect of the IV on the DV that also partials out the effect of the M. Significant paths are indicated by dashed lines and significant terms are indicated by bold font. The bootstrap 95% CI is displayed for the indirect effects (a*b). See Supplementary file 2 for further details.DOI: http://dx.doi.org/10.7554/eLife.07902.014
+**Figure 5.:** Mediation models are presented for (A) FFA, (B) PrC, and (C) HC. These models test the extent to which the relationship between BOLD response (in the a priori FFA, PrC, and HC ROIs) and odd-one-out accuracy is mediated by WM microstructure. The left, middle, and right boxes in each model represent the independent variable (IV), mediator (M), and dependent variable (DV), respectively. Unstandardised coefficients and their corresponding one-tailed p values are depicted for each path of interest (a, b, a*b, c′, and c). In a simple mediation model, these paths reflect the following: path c represents the total effect of the IV on the DV; path a quantifies the effect of the IV on the M; path b reflects the causal effect of the M on the DV; and path c′ is the direct effect of the IV on the DV that also partials out the effect of the M. Significant paths are indicated by dashed lines and significant terms are indicated by bold font. The bootstrap 95% CI is displayed for the indirect effects (a*b). See Supplementary file 2 for further details.
 
 A comparable analysis for PrC revealed a significant direct effect of BOLD response for faces (F > rest) on face oddity success (Figure 5B). A bootstrap 95% CI for the indirect effect was found to cross zero and was thus non-significant (95% CI [−0.01, 0.1]). This finding indicates that PrC BOLD and ILF MD are independent predictors of face oddity performance. As with FFA, this effect was predominantly evident in the right hemisphere (see Supplementary file 2). The alternative mediation model in which PrC BOLD activity mediated the influence of ILF MD on face oddity (see Supplementary file 2) revealed no evidence for an indirect effect of ILF MD on face discrimination via its effect on PrC activity.
 
@@ -167,11 +317,11 @@ Based on representational accounts of MTL function that assume dissociable roles
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 30 undergraduates from Cardiff University participated in this study (2 male; aged 18–22 years; mean = 19; SD = 0.96) and were paid for taking part. The experiment was undertaken with the understanding and written consent of each subject. Cardiff University School of Psychology Research Ethics Committee approved the research project.
 
-## Oddity task and procedure
+### Oddity task and procedure
 
 In the oddity task, participants were presented with three stimuli on each trial (top centre; bottom left; bottom right) and instructed to select the odd-one-out as quickly and as accurately as possible. Two of these stimuli were the same item from different viewpoints, and the third stimulus was a different item. In this article, we analysed the behavioural performance on scene and face oddity with a size oddity condition acting as a single feature baseline. Example trials for the scene and face oddity conditions are shown in Figure 1.
 
@@ -179,41 +329,41 @@ The scene stimuli were real-world photographs of outdoor environments. On each t
 
 Each trial was presented for 6 s with a jittered inter-trial interval of 500–4000 ms. The task was administered in the scanner over three functional imaging runs. Within each run, trials for a given category (scene, face, size) were presented in mini-blocks of three successive trials. The order in which category ‘triplets’ were presented was counterbalanced across participants. Overall, 18 trials were presented per category per run resulting in 54 trials per condition overall. An equal number of targets appeared at each screen position (i.e., top centre; bottom left; bottom right) within each stimulus condition. Stimuli were presented in the scanner using ePrime (Psychology Software Tools, Inc., Sharpsburg, PA) and projected onto the screen behind the participant using a Canon SX60 LCOS projector system combined with the Navitar SST300 zoom converter lens. Button responses in the scanner were acquired using a right-hand MR compatible button box.
 
-## MRI data acquisition
+### MRI data acquisition
 
 Imaging data were collected at the Cardiff University Brain Research Imaging Centre (CUBRIC) using a GE 3-T HDx MRI system with an 8-channel receive-only head coil. Whole-brain high angular resolution diffusion image data were acquired using a diffusion weighted single-shot spin-echo echo-planar imaging (EPI) pulse sequence with the following parameters: TE = 87 ms; voxel dimensions = 2.4 × 2.4 × 2.4 mm3; field of view = 23 × 23 cm2; 96 × 96 acquisition matrix; 60 contiguous slices acquired along an oblique–axial plane with 2.4-mm thickness (no gap). Acquisitions were cardiac gated using a peripheral pulse oximeter. Gradients were applied along 30 isotropic directions (Jones et al., 1999) with b = 1200 s/mm2. Three non-diffusion-weighted images were acquired with b = 0 s/mm2. Functional BOLD data were acquired using an EPI pulse sequence with the following scan parameters: TR/TE = 3000/35 ms; FOV = 240 mm; 64 × 64 data matrix; ASSET (acceleration factor); 90° flip angle. 42 interleaved slices were collected per volume for whole-brain coverage. Each slice was 2.8-mm thick with a 1-mm inter-slice gap (3.75 × 3.75 × 2.8-mm voxels). Slices were acquired with a 30° axial-to-coronal tilt relative to the AC-PC line (anterior upwards). The first four volumes of each run were discarded to allow for signal equilibrium. Two 3D SPGR images were acquired to improve registration and reduce image distortion as a result of magnetic field inhomogeneity (TE = 7 ms and 9 ms, TR = 20 ms, FOV = 384 × 192 × 210 mm, 128 × 64 × 70 data matrix, 10° flip angle). The SPGR used the same slice orientation as the functional acquisition. High-resolution anatomical images were acquired using a standard T1-weighted 3D FSPGR sequence comprising 178 axial slices (TR/TE = 7.8/3.0 s, FOV = 256 × 256 × 176 mm, 256 × 256 × 176 data matrix, 20° flip angle, and 1 mm isotropic resolution).
 
-## Diffusion MRI pre-processing
+### Diffusion MRI pre-processing
 
 ExploreDTI (Leemans and Jones, 2009) was used to correct for subject motion and eddy current distortions. In order to correct for partial volume artefacts arising from voxel-wise free water contamination, the two-compartment ‘free water elimination’ procedure was implemented (Pasternak et al., 2009). Following free water correction, corrected diffusion indices were computed: MD and FA. The resulting free water-corrected maps were inputs for both the tractography and the TBSS analyses.
 
-## Tractography
+### Tractography
 
 Deterministic whole-brain WM tractography was performed using ExploreDTI. Tractography was based on constrained spherical deconvolution (CSD; see Tournier et al., 2004; Jeurissen et al., 2011), which extracts peaks in the fibre orientation density function (fODF) at each voxel. The ‘diffusion tensor’ model is not sufficient when modelling the distribution of water displacement in more complex fibre configurations, such as crossing or kissing fibres (e.g., as seen where the anterior pillars of the fornix meet the anterior commissure). The fODF—which is estimated directly by CSD—quantifies the proportion of fibres in a voxel pointing in each direction and so information about more complex fibre configurations can be extracted (Jones, 2008). Each streamline was reconstructed using an fODF amplitude threshold of 0.1 and a step size of 1 mm and followed the peak in the fODF that resulted in the smallest step-wise change in orientation. An angle threshold of 30° was used and any streamlines exceeding this threshold were terminated.
 
-To generate three-dimensional reconstructions of each tract, ‘way-point’ ROIs were manually drawn onto whole-brain FA maps in the diffusion space of individual subjects (
+To generate three-dimensional reconstructions of each tract, ‘way-point’ ROIs were manually drawn onto whole-brain FA maps in the diffusion space of individual subjects (Metzler-Baddeley et al., 2011). In accordance with Boolean logic, these way-point ROIs can specify that: (a) tracts passing through multiple ROIs are retained for analysis (i.e., ‘AND’ ROIs) and (b) tracts passing through certain ROIs are omitted from analysis (i.e., ‘NOT’ ROIs). Depending on the specific tract, or the anatomical plausibility of initial reconstructions, such ROIs can be combined; for example, a tract may pass through ROI-1 ‘AND’ ROI-2 but ‘NOT’ ROI-3 (Figure 6). The ROI approaches described below will adopt this Boolean terminology when describing the ROIs that were drawn for each tract. Following the reconstruction of each pathway in each subject, mean MD and FA were calculated by averaging the individual values at each 1-mm step along the tracts, and in the case of the ILF, across hemispheres. The placement of ROIs for each tract is depicted in Figure 6.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/07902/elife-07902-fig6-v2.jpg)
 
-**Figure 6.:** Tractography ROIs are shown for three participants (SEED ROI, blue; AND ROI, green; NOT ROI, red).DOI: http://dx.doi.org/10.7554/eLife.07902.015
+**Figure 6.:** Tractography ROIs are shown for three participants (SEED ROI, blue; AND ROI, green; NOT ROI, red).
 
-## Fornix ROIs
+#### Fornix ROIs
 
 A multiple ROI approach was used to reconstruct the fornix (Metzler-Baddeley et al., 2011). The approach involved placing a seed point ROI on the coronal plane where the anterior pillars enter the main body of the fornix. A single AND ROI is then positioned on the axial plane, encompassing both crus fornici at the lower part of the splenium of the corpus callosum. Three NOT ROIs are then placed: (1) anterior to the fornix pillars, (2) posterior to the crus fornici, and (3) on the axial plane, intersecting the corpus callosum. Once these ROIs were placed, and the tracts reconstructed, anatomically implausible fibres were removed using additional NOT ROIs.
 
-## ILF ROIs
+#### ILF ROIs
 
 Fibre-tracking of the ILF was performed using a two-ROI approach in each hemisphere (Wakana et al., 2007). First, the posterior edge of the cingulum bundle was identified on the sagittal plane. Reverting to a coronal plane at this position, a SEED ROI was placed that encompassed the whole hemisphere. To isolate streamlines extending towards anterior temporal cortex, a second ROI was drawn at the most posterior coronal slice in which the temporal lobe was not connected to the frontal lobe. Here, an additional AND ROI was drawn around the entire temporal lobe. Like the fornix, any outlying streamlines were removed using additional NOT ROIs. This approach was carried out in both hemispheres; microstructural measurements for the left and right ILF (for both MD and FA) were averaged to provide a bilateral estimate of ILF microstructure.
 
-## TBSS
+### TBSS
 
 Voxel-wise statistical analysis of the DTI data was carried out using TBSS (for a full description, see Smith et al., 2006). TBSS permits voxel-wise correlations by non-linearly projecting all subjects' DTI data (MD or FA) onto a mean tract skeleton before applying voxel-wise cross-subject statistics. To investigate the relationship between microstructure (MD, FA) and performance on the behavioural tasks, we implemented a GLM with two explanatory variables: proportion correct for (1) scene oddity and (2) face oddity. Two main contrasts were carried out to compare our two categories of interest: Faces > Scenes (F > S), and Scenes > Faces (S > F). To address the possibility of reporting false-positives, clusters were extracted using Threshold-Free Cluster Enhancement (Smith and Nichols, 2009) with a FWE-corrected threshold of p = 0.05. All reported co-ordinates are in Montreal Neurological Institute (MNI) 152 space.
 
-## fMRI pre-processing
+### fMRI pre-processing
 
 Functional MRI data were preprocessed using FEAT (FSL, www.fmrib.ox.ac.uk/fsl) and involved: motion correction (Jenkinson et al., 2002), removal of non-brain tissue using BET (Smith, 2002), spatial smoothing using a 5 mm full-width at half-maximum (FWHM) Gaussian kernel, mean-based intensity normalisation, and high-pass temporal filtering (Gaussian-weighted least squares straight line fitting, with sigma = 50.0 s). Phase information from the two SPGR images was unwrapped using PRELUDE (Jenkinson, 2003). These phase images were then subtracted and the resulting fieldmap used to unwarp the EPI data using FUGUE. Time-series statistical analysis was carried out using FMRIB's Improved Linear Model (FILM) with local autocorrelation correction (Woolrich et al., 2001). Registration to high-resolution 3D anatomical T1 scans (per participant) and to a standard MNI 152 template image (for group averaging) was carried out using FLIRT (Jenkinson and Smith, 2001; Jenkinson et al., 2002). Following pre-processing, analyses were first conducted at the single-subject level using FILM. The BOLD signal was modelled using a standard model of haemodynamic response function. Co-ordinates of significant effects are reported in MNI space.
 
-## fMRI data analysis
+### fMRI data analysis
 
 Two explanatory variables comprising correct scene and face oddity trials were used to model the time-course data. A GLM was implemented to examine the BOLD response associated with three main contrast groups: (a) each separate stimulus category compared to each other (S > F; F > S), (b) each stimulus category against rest baseline (S > rest; F > rest), and (c) rest baseline against scenes and faces (i.e., negative BOLD activation for scenes and faces). The three individual runs for each participant were combined using a fixed-effects model in FEAT. Group-level ROI analyses were carried out using the FMRIB Local Analysis of Mixed Effects tool (Beckmann et al., 2003; Woolrich et al., 2004). A bilateral ROI of the HC was extracted from the Harvard–Oxford subcortical atlas (Jovicich et al., 2009) using FSL and was defined using a probability threshold of 50%. The PrC was based on a probabilistic mask from the literature (Devlin and Price, 2007) and likewise defined using a probability threshold of 50%. The FFA was approximated by intersecting an anatomical mask of the fusiform gyrus (from the Harvard–Oxford cortical atlas) with a probabilistic map of face activations thresholded at 50% (Atlas of Social Agent Perception, http://www.andrewengell.com/wp; see Engell and McCarthy, 2013). Anatomically defined, independent ROIs were also used for the DTI-BOLD analysis of other scene-selective regions. For the PHG, we used posterior PHG from the Harvard–Oxford Cortical Atlas, defined using a probability threshold of 50%. For RSC, we extracted Brodmann area 29 dilated by a single voxel (Bluhm et al., 2009). TOS was taken from the International Consortium for Brain Mapping (ICBM) Sulcal atlas using a probability threshold of 25% (Mazziotta et al., 1995).
 

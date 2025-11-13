@@ -18,17 +18,17 @@
 
 ### Affiliations
 
-1. https://ror.org/03angcq70 Birmingham Centre for Neurogenetics, School of Biosciences, University of Birmingham Birmingham United Kingdom
-2. https://ror.org/04pzf5g91 Semillero Lún, Grupo D+Tec, Universidad de Ibagué Ibagué Colombia
+1. Birmingham Centre for Neurogenetics, School of Biosciences, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+2. Semillero Lún, Grupo D+Tec, Universidad de Ibagué Ibagué Colombia ([ROR:04pzf5g91](https://ror.org/04pzf5g91))
 3. MRC LMB Cambridge United Kingdom
-4. https://ror.org/03angcq70 Institute of Biomedical Research, University of Birmingham Birmingham United Kingdom
-5. https://ror.org/01v29qb04 Department of Biosciences, Durham University Durham United Kingdom
+4. Institute of Biomedical Research, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+5. Department of Biosciences, Durham University Durham United Kingdom ([ROR:01v29qb04](https://ror.org/01v29qb04))
 
 † Corresponding author
 
 ## Abstract
 
-Experience shapes the brain as neural circuits can be modified by neural stimulation or the lack of it. The molecular mechanisms underlying structural circuit plasticity and how plasticity modifies behaviour are poorly understood. Subjective experience requires dopamine, a neuromodulator that assigns a value to stimuli, and it also controls behaviour, including locomotion, learning, and memory. In Drosophila , Toll receptors are ideally placed to translate experience into structural brain change. Toll-6 is expressed in dopaminergic neurons (DANs), raising the intriguing possibility that Toll-6 could regulate structural plasticity in dopaminergic circuits. Drosophila neurotrophin-2 (DNT-2) is the ligand for Toll-6 and Kek-6, but whether it is required for circuit structural plasticity was unknown. Here, we show that DNT-2 -expressing neurons connect with DANs, and they modulate each other. Loss of function for DNT-2 or its receptors Toll-6 and kinase-less Trk-like kek-6 caused DAN and synapse loss, impaired dendrite growth and connectivity, decreased synaptic sites, and caused locomotion deficits. In contrast, over-expressed DNT-2 increased DAN cell number, dendrite complexity, and promoted synaptogenesis. Neuronal activity modified DNT-2, increased synaptogenesis in DNT-2-positive neurons and DANs, and over-expression of DNT-2 did too. Altering the levels of DNT-2 or Toll-6 also modified dopamine-dependent behaviours, including locomotion and long-term memory. To conclude, a feedback loop involving dopamine and DNT-2 highlighted the circuits engaged, and DNT-2 with Toll-6 and Kek-6 induced structural plasticity in this circuit modifying brain function and behaviour.
+Experience shapes the brain as neural circuits can be modified by neural stimulation or the lack of it. The molecular mechanisms underlying structural circuit plasticity and how plasticity modifies behaviour are poorly understood. Subjective experience requires dopamine, a neuromodulator that assigns a value to stimuli, and it also controls behaviour, including locomotion, learning, and memory. In Drosophila, Toll receptors are ideally placed to translate experience into structural brain change. Toll-6 is expressed in dopaminergic neurons (DANs), raising the intriguing possibility that Toll-6 could regulate structural plasticity in dopaminergic circuits. Drosophila neurotrophin-2 (DNT-2) is the ligand for Toll-6 and Kek-6, but whether it is required for circuit structural plasticity was unknown. Here, we show that DNT-2-expressing neurons connect with DANs, and they modulate each other. Loss of function for DNT-2 or its receptors Toll-6 and kinase-less Trk-like kek-6 caused DAN and synapse loss, impaired dendrite growth and connectivity, decreased synaptic sites, and caused locomotion deficits. In contrast, over-expressed DNT-2 increased DAN cell number, dendrite complexity, and promoted synaptogenesis. Neuronal activity modified DNT-2, increased synaptogenesis in DNT-2-positive neurons and DANs, and over-expression of DNT-2 did too. Altering the levels of DNT-2 or Toll-6 also modified dopamine-dependent behaviours, including locomotion and long-term memory. To conclude, a feedback loop involving dopamine and DNT-2 highlighted the circuits engaged, and DNT-2 with Toll-6 and Kek-6 induced structural plasticity in this circuit modifying brain function and behaviour.
 
 ## Introduction
 
@@ -48,15 +48,35 @@ Here, we focus on Drosophila neurotrophin-2 (DNT-2), proved to be the ligand of 
 
 ## Results
 
-## DNT-2A, Toll-6, and Kek-6 neurons are integrated in a dopaminergic circuit
+### DNT-2A, Toll-6, and Kek-6 neurons are integrated in a dopaminergic circuit
 
 To allow morphological and functional analyses of DNT-2-expressing neurons, we generated a DNT-2Gal4 line using CRISPR/Cas9 and drove expression of the membrane-tethered-GFP FlyBow1.1 reporter. We identified at least 12 DNT-2+ neurons and focused on four anterior DNT-2A neurons per hemi-brain (Figure 1A and B). Using the post-synaptic marker Denmark, DNT-2A dendrites were found at the prow (PRW) and flange (FLA) region (Figure 1C and C’), whereas axonal terminals visualised with the pre-synaptic marker synapse defective 1 (Dsyd1-GFP) resided at the superior medial protocerebrum (SMP) (Figure 1C and C’’). We additionally found post-synaptic signal at the SMP and pre-synaptic signal at the FLA/PRW (Figure 1C, C’ and C’’), suggesting bidirectional communication at both sites. Using Multi-Colour Flip-Out (MCFO) to label individual cells stochastically (Nern et al., 2015; Costa et al., 2016), single-neuron clones revealed variability in the DNT-2A projections across individual flies (Figure 1D), consistently with developmental and activity-dependent structural plasticity in Drosophila (Heisenberg et al., 1995; Kremer et al., 2010; Sugie et al., 2015; Mayseless et al., 2018; Li et al., 2020; Linneweber et al., 2020; Baltruschat et al., 2021). We found that DNT-2A neurons are glutamatergic as they express the vesicular glutamate transporter vGlut (Figure 1E, Figure 1—figure supplement 1A) and lack markers for other neurotransmitter types (Figure 1—figure supplement 1). DNT-2A terminals overlapped with those of DANs (Figure 1G), suggesting they could receive inputs from neuromodulatory neurons. In fact, single-cell RNA-seq revealed transcripts encoding the dopamine receptors Dop1R1, Dop1R2, Dop2R, and/or DopEcR in DNT-2+ neurons (Croset et al., 2018). Using reporters, we found that Dop2R is present in DNT-2A neurons (Figure 1F, Figure 1—figure supplement 1B), but not Dop1R2 (Figure 1—figure supplement 1E). Altogether, these data showed that DNT-2A neurons are glutamatergic neurons that could receive dopaminergic input both at PRW and SMP.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) DNT-2A-expressing neurons (DNT-2>FlyBow1.1 in green; anti-Brp in magenta) have cell bodies in SOG and project to FLA/PRW and SMP. (C, C’, C’’) Pre-synaptic (green) and post-synaptic (magenta) terminals of DNT-2A neurons seen with DNT-2>DenMark::RFP, Dsyd1::GFP, higher magnification in (C’, C”), different specimens from (C). DNT-2A projections at SMP and PRW have both pre- and post-synaptic sites. (D) Single-neuron DNT-2A>MCFO clones. (E) DNT-2A neurons have the vesicular glutamate transporter vGlut (arrows). (F) Co-localisation between Dop2RLexA>LexAOP-CD8-GFP and DNT2Gal4>UASCD8-RFP in cell bodies of DNT-2A neurons (arrows). (G) Terminals of dopaminergic neurons (TH>mCD8GFP) abut and overlap those of DNT-2A neurons (DNT2>CD8-RFP, magenta), arrows; magnified projections on the right. (H) Illustration of neurons expressing DNT-2 (magenta) and KCs, DAN PAM and PPL1, and DAL neurons (I) Toll-6>FlyBow1.1 is expressed in Kenyon cells, PPL1, PPL2, and PAM DANs, as revealed by co-localisation with anti-TH. (J) kek-6>FlyBow1.1 co-localises with TH in MB vertical lobes, dopaminergic PALs, VUMs, PPL1, PPM2, and PPM3. SMP: superior medial protocerebrum; PRW: Prow; FLA: Flange; SOG: sub-oesophageal ganglion. Scale bars: (A, G left, I, J) 50 µm; (B, C, C”, D, G right) 30 µm (C’, E, F) 25 µm. For genotypes and sample sizes, see Supplementary file 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) All four DNT-2A neurons per hemibrain are glutamatergic as DNT-2>FlyBow1.1 reporter co-localises with anti-vGlut in these neurons as well as in their projections at SMP (arrows point at cluster of four cells). (B) All four DNT-2A neurons per hemibrain have Dop2R (arrows point to cluster, each neuron seen in magenta). (C, D) Anterior DNT-2A neurons projecting at SMP are not dopaminergic as there was no co-localisation between DNT-2>histoneYFP and anti-TH in the anterior brain (C), and there was no co-localisation in other DNT-2+ neurons in the posterior brain either (D). Higher magnification of dotted boxes on the right. (E) There was no co-localisation with Dop1R2LexA>CD8::GFP, DNT-2Gal4>CD8::RFP either. (F) DNT-2 neurons are not serotonergic as there was no co-localisation between DNT-2>FlyBow1.1 and the serotonergic neuron marker anti-5HT. (G) They are not octopaminergic as there was no overlap between TdcLexA>mCD8::GFP and DNT-2Gal4>CD8::RFP. (H) There was no overlap between DNT-2Gal4>histoneYFP and the cholinergic neuron marker anti-ChAT4b1. (I, J) Anterior DNT-2A neurons are not GABAergic, but lateral DNT-2 neurons are, as visualised with DNT-2>CD8-RFP, GADLexA>CD8-GFP. Scale bars: (A right, B, E, F, G, H, I, J) 20 µm; (A left, C,D same magnification) 50 µm. For further genotypes and sample sizes, see Supplementary file 2.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A)Toll-6Gal4, MB247-Gal80>UASFlyBow1.1 and kek-6Gal4, MB247-Gal80>UASFlyBow1.1 revealed Toll-6+ and Kek-6+ projections on MB γ2α’1. (B) R25D01LexA >CD8GFP, kek6-Gal4>CD8RFP overlapped in MB γ2α’1. (C) R14C08LexA >CD8GFP, Toll-6Gal4>CD8-RFP13 revealed co-localisation in MBON-M4/M6 cell bodies. (D, E) Co-localisation of Toll-6>Histone-YFP and kek-6>HistoneYFP with TH in PPL1 neurons. (F) Number of PAM and PPL1 neurons expressing Tolls and kek-6, revealed from published RNAseq data (Scope, see also Supplementary file 1). (G, H) Toll-6 and kek-6 are expressed in DAL neurons. (G) DAL neurons express Toll-6, as revealed by co-localisation between DAL-LexA (VT49239-LexA)>mCD8-GFP and Toll-6GAL4>mCD8-RFP. (H) DAL neurons express kek-6, as revealed by co-localisation between DAL-LexA (VT49239-LexA)>mCD8-GFP and kek6GAL4>mCD8RFP. (I, J) Toll-6 and kek-6 are expressed in MB neurons. (I) Toll-6>MCFO clones reveal expression at least in MB neurons γ medial (γm), αβcore (αβc), and αβsurface (αβs). (J) kek-6>MCFO clones reveal expression at least in MB Kenyon cells αβα’β’γ formed and MB γ2α’1 and α2α’2 and PPL1-γ2α’1 and PPL1-α2α’2. Scale bars: (B, H same magnification) 50 µm; (A,C,D,E,G, I, J same magnification) 30 µm. For further genotypes and sample sizes, see Supplementary file 2.
+
 DNT-2 functions via Toll-6 and Kek-6 receptors, and Toll-6 is expressed in DANs (McIlroy et al., 2013). To identify the cells expressing Toll-6 and kek-6 and explore further their link to the dopaminergic system, we used Toll-6Gal4 (Li et al., 2020) and kek-6Gal4 (Ulian-Benitez et al., 2017) to drive expression of membrane-tethered FlyBbow1.1 and assessed their expression throughout the brain. Using anti-tyrosine hydroxilase (TH) – the enzyme that catalyses the penultimate step in dopamine synthesis – to visualise DANs, we found that Toll-6+ neurons included DANs from the PAMs, PPL1, and PPL2 clusters (Figure 1I, Figure 1—figure supplement 2D and F; Supplementary file 1), whilst Kek-6+ neurons included PAM, PAL, PPL1, PPM2, and PPM3 dopaminergic clusters (Figure 1J, Figure 1—figure supplement 2B, E, and F; Supplementary file 1). DNT-2 can also bind various Tolls and Keks promiscuously (McIlroy et al., 2013; Foldi et al., 2017) and other Tolls are also expressed in the dopaminergic system: PAMs express multiple Toll receptors (Figure 1—figure supplement 2F) and all PPL1s express at least one Toll (Figure 1—figure supplement 2F). Using MCFO clones revealed that both Toll-6 and kek-6 are also expressed in KCs (Li et al., 2020; Figure 1—figure supplement 2I and J, Supplementary file 1), DAL neurons (Figure 1—figure supplement 2G and H, Supplementary file 1) and MBONs (Figure 1—figure supplement 2A–C). In summary, Toll-6 and kek-6 are expressed in DANs, DAL, KCs, and MBONs (Figure 1H). These cells belong to a circuit required for associative learning, long-term memory, and behavioural output, and DANs are also required for locomotion (Riemensperger et al., 2011; Chen et al., 2012; Aso et al., 2014b; Boto et al., 2014; Adel and Griffith, 2021; Huang et al., 2024). Altogether, our data showed that DNT-2A neurons are glutamatergic neurons that could receive dopamine as they contacted DANs and expressed the Dop2R receptor, and that in turn DANs expressed the DNT-2 receptors Toll-6 and kek-6, and therefore could respond to DNT-2. These data suggested that there could be bidirectional connectivity between DNT-2A neurons and DANs, which we explored below.
 
-## Bidirectional connectivity between DNT-2A neurons and DANs
+### Bidirectional connectivity between DNT-2A neurons and DANs
 
 To verify the connectivity of DNT-2A neurons with DANs, we used various genetic tools. To identify DNT-2A output neurons, we used TransTango (Talay et al., 2017; Figure 2A, Figure 2—figure supplement 1). DNT-2A RFP+ outputs included a subset of MB α’β’ lobes, αβ KCs, tip of MB β’2, DAL neurons, dorsal fan-shaped body layer, and possibly PAM or other DANs (Figure 2A, Figure 2—figure supplement 1). Consistently, these DNT-2A output neurons express Toll-6 and kek-6 (Supplementary file 1). To identify DNT-2A input neurons, we used BAcTrace (Cachero et al., 2020). This identified PAM-DAN inputs at SMP (Figure 2B). Altogether, these data showed that DNT-2A neurons receive dopaminergic neuromodulatory inputs, their outputs include MB KCs, DAL neurons, and possibly DANs, and DNT-2 arborisations at SMP are bidirectional.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig2-v1.jpg)
+
+**Figure 2.:** (A) TransTango revealed out-puts of DNT-2 neurons. All neurons express TransTango and expression of the TransTango ligand in DNT-2 neurons identified DNT-2 outputs with Tomato (anti-DsRed). TransTango identified as DNT-2 outputs KC α’β’ MB lobes (anterior brain, arrow, top left); Kenyon and possibly DAN cell bodies (posterior, arrows top right); DAL neurons (bottom left, arrows) and the dorsal layer of the fan shaped body (bottom right, arrow). See also Figure 2—figure supplement 1 for further controls. (B) BAcTrace tests connectivity to a candidate neuron input visualised with LexAop>sybGFP by driving the expression of a ligand from DNT-2GAL4 that will activate QUASTomato in the candidate input neuron (Cachero et al., 2020). Candidate PAM neurons visualised at SMP with GFP (green): Control: R58E02LexA>BAcTrace 806, no GAL4. Test: R58E02LexA, DNT-2GAL4>BAcTrace 806 revealed PAMs are inputs of DNT-2A neurons at SMP (Tomato, bottom). Magenta shows QUAS-Tomato. (C) qRT-PCR showing that TH mRNA levels increased with DNT-2 over-expression at 30°C (tubGAL80ts, DNT-2>DNT-2FL). One-way ANOVA, p=0.0085; post doc Dunnett’s multiple comparison test. Mean ± standard deviation (s.d.). n=4 (left), 5 (middle), 3 (right). (D) FRET cAMP probe Epac1 revealed that DNT-2>Dop2R-RNAi knock-down decreased YFP/CFP ratio over time in DNT-2A neurons, meaning that cAMP levels increased. Two-way ANOVA, genotype factor p<0.0001, time factor p<0.0001; post doc Dunnett’s. Mean ±s.d. n=9,12,17. (E, F) Summary: DNT-2 neurons and DANs are functionally connected and modulate each other. (E) DNT-2 can induce TH expression in DANs; (F) this is followed by negative feedback from DANs to DNT-2 neurons (question marks indicate inferences). TH: tyrosine hydroxylase. Scale bars: (A) 50 µm; (B) 30 µm; (D) 20 µm. p-Values over graphs in (C) refer to group analyses; stars indicate multiple comparisons tests. *p<0.05, **p<0.01, ***p<0.001. For sample sizes and further statistical details, see Supplementary file 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) UAS-TransTango/+ control, showing background GFP expression in mushroom bodies and Tomato+ signal in sub-oesophageal ganglion (SOG). (B) DNT-2GAL4>UAS-TransTango, revealing the GFP+DNT-2 neurons and Tomato+ signal in DNT-2 neurons. TransTango also reveals what appears to be feedback connections between DNT-2 neurons from SMP to PRW (arrow). These are controls for Figure 2A. Scale bars: (A, B) 50 µm. For further genotypes and sample sizes, see Supplementary file 2.
 
 To further test the relationship between DNT-2A neurons and DANs, we reasoned that stimulating DANs would provoke either release or production of dopamine. So, we asked whether increasing DNT-2 levels in DNT-2 neurons could influence dopamine levels. For this, we over-express DNT-2 in full-length form (i.e. DNT-2FL) as it enables to investigate non-autonomous functions of DNT-2 (Ulian-Benitez et al., 2017). Importantly, DNT-2FL is spontaneously cleaved into the mature form (McIlroy et al., 2013; Foldi et al., 2017) (see ‘Discussion’). Thus, we over-expressed DNT-2FL in DNT-2 neurons and asked whether this affected dopamine production, using mRNA levels for TH as readout. Using quantitative real-time PCR (qRT-PCR), we found that over-expressing DNT2-FL in DNT-2 neurons in adult flies increased TH mRNA levels in fly heads (Figure 2C). This showed that DNT-2 could stimulate dopamine production.
 
@@ -64,25 +84,25 @@ Next, we wondered whether in turn DNT-2A neurons that express Dop2R could be mod
 
 In summary, DNT-2A neurons are connected to DANs, DAL, and MB KCs, all of which express DNT-2 receptors Toll-6 and kek-6 and belong to a dopaminergic as well as associative learning and memory circuit. Furthermore, DNT-2A and PAM neurons form bidirectional connectivity. Finally, DNT-2 and dopamine regulate each other: DNT-2 increased dopamine levels (Figure 2E), and in turn dopamine via Dop2R inhibited cAMP signalling in DNT-2A neurons (Figure 2F). That is, an amplification was followed by negative feedback. This suggested that a dysregulation in this feedback loop could have consequences for dopamine-dependent behaviours and for circuit remodelling by the DNT-2 growth factor.
 
-## DNT-2 and Toll-6 maintain survival of PAM dopaminergic neurons in the adult brain
+### DNT-2 and Toll-6 maintain survival of PAM dopaminergic neurons in the adult brain
 
 We showed earlier that DNT-2 and PAM DANs are connected, so we next asked whether loss of function for DNT-2 or Toll-6 would affect PAMs. In wild-type flies, PAM-DAN number can vary between 220 and 250 cells per Drosophila brain, making them ideal to investigate changes in cell number (Liu et al., 2012). Maintenance of neuronal survival is a manifestation of structural brain plasticity in mammals, where it depends on the activity-dependent release of the neurotrophin BDNF (Lu et al., 2005; Wang et al., 2022). Importantly, cell number can also change in the adult fly as neuronal activity can induce neurogenesis via Toll-2, whereas DANs are lost in neurodegeneration models (Feany and Bender, 2000; Li et al., 2020). Thus, we asked whether DNT-2 influences PAM-DAN number in the adult brain. We used THGal4; R58E02Gal4 to visualise nuclear Histone-YFP in DANs (Figure 3A) and counted automatically YFP+ PAMs using a purposely modified DeadEasy plug-in developed for the adult fly brain (Li et al., 2020). DeadEasy plug-ins were developed and used before to count cells labelled with sparsely distributed nuclear markers in embryos (Zhu et al., 2008; Forero et al., 2009; Forero et al., 2010a; Forero et al., 2010b; McIlroy et al., 2013), larvae (Kato et al., 2011; Forero et al., 2012; Losada-Perez et al., 2016), and adult (Li et al., 2020) Drosophila brains. Here, we show that DNT237/DNT218 mutant adult brains had fewer PAMs than controls (Figure 3B). Similarly, Toll-6 RNAi knock-down in DANs also decreased PAM neuron number (Figure 3C). DAN loss was confirmed with anti-TH antibodies and counted manually as there were fewer TH+ PAMs in DNT237/DNT218 mutants (Figure 3D). Importantly, PAM cell loss was rescued by over-expressing activated Toll-6CY in DANs in DNT-2 mutants (Figure 3D). Altogether, these data showed that DNT-2 functions via Toll-6 to maintain PAM neuron survival.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig3-v1.jpg)
 
-**Figure 3.:** (A) Illustration of PAM neuronal cell bodies and experimental temporal profile. DANs are shown in green, DNT-2A neurons in magenta, and MB in dark grey. The left hemisphere shows the anterior brain with PAL and PAM DAN neurons (green) and DNT-2 neurons (magenta); the right shows the posterior brain, with the calyx and other DAN neurons (PPM1, PPM2, PPM3, PPL1, PPL2, green). (B–D) Fruit flies were kept constantly at 25°C, from development to adult. Analyses done in adult brains. (B) DNT-2 mutants had fewer histone-YFP+-labelled PAM neurons (37/DNT-218THGAL4, R58E02-GAL4>hisYFP). Unpaired Student’s t-test. (C) Toll-6 RNAi knock-down in all DANs (THGAL4, R58E02-GAL4>hisYFP, Toll-6 RNAi) reduced Histone-YFP+-labelled PAM cell number. Unpaired Student’s t-test. (D) DNT-2 mutants had fewer PAMs stained with anti-TH antibodies. Over-expressing 37/DNT-218Toll-6 in DANs (CYTHGAL4, R58E02 GAL4>hisYFP, Toll-6) rescued TH+ PAM neurons in CYDNT-2 mutants, demonstrating that DNT-2 functions via Toll-6 to maintain PAM cell survival. Welch ANOVA p<0.0001, post hoc Dunnett test. (37/DNT-218E–H) Adult-specific restricted over-expression or knock-down at 30°C using the temperature-sensitive GAL4 repressor tubGAL80. (tsE) Adult-specific DNT-2 RNAi knock-down in DNT-2 neurons decreased Tomato+ PAM cell number (tubGAL80). Unpaired Student’s ts, R58E02-LexA, DNT-2 GAL4>LexAOP-Tomato, UAS DNT-2-RNAit-test, p=0.005. (F) Adult-specific Toll-6 RNAi knock-down in Toll-6 heterozygous mutant flies in DANs, reduced Histone-YFP+ PAM cell number (31tubGAL80). Unpaired Student’s ts; THGAL4, R58E02-GAL4>hisYFP, Toll-6 RNAi/Toll631t-test. (G) PAMs were visualised with anti-TH. Left: tubGAL80 knock-down decreased TH+ PAM cell number. Unpaired Student’s ts, Toll-6>Toll-6-RNAit-test. Right: tubGAL80 knock-down decreased TH+ PAM cell number, whereas ts, DNT-2>DNT-2-RNAiDNT-2FL over-expression increased PAM cell number. Kruskal–Wallis ANOVA, p=0.0001, post hoc Dunn’s test. (H) Adult-specific tubGAL80 knock-down increased the number of apoptotic cells in the brain labelled with anti-DCP-1. Dcp-1+ cells co-localise with anti-TH at least in PAM clusters. One-way ANOVA, p<0.0001, post hoc Bonferroni’s multiple comparisons test. DANs>histone-YFP: all dopaminergic neurons expressing histone-YFP, genotype: ts, DNT-2>DNT-2RNAiTHGal4 R58E02Gal4>UAS-histoneYFP. PAMsLexA>tomato: restricted to PAM DANs: R58E02LexA >LexAop-nlstdTomato. Controls: GAL4 drivers crossed to wild-type Canton-S. Scale bars: (B–G) 30 µm; (H) 20 µm. Graphs show boxplots around the median. p-values over graphs in (D, G right, H) refer to group analyses; stars indicate multiple comparisons tests. *p<0.05, **p<0.01, ***p<0.001. For further genotypes, sample sizes, and statistical details, see Supplementary file 2.Figure 3—source code 1.Figure 3—source code 2.Figure 3—source code 3.Figure 3—source data 1.Figure 3B.Figure 3—source data 2.Figure 3C.Figure 3—source data 3.Figure 3D.Figure 3—source data 4.Figure 3E.Figure 3—source data 5.Figure 3F.Figure 3—source data 6.Figure 3G.Figure 3—source data 7.Figure 3H.
+**Figure 3.:** (A) Illustration of PAM neuronal cell bodies and experimental temporal profile. DANs are shown in green, DNT-2A neurons in magenta, and MB in dark grey. The left hemisphere shows the anterior brain with PAL and PAM DAN neurons (green) and DNT-2 neurons (magenta); the right shows the posterior brain, with the calyx and other DAN neurons (PPM1, PPM2, PPM3, PPL1, PPL2, green). (B–D) Fruit flies were kept constantly at 25°C, from development to adult. Analyses done in adult brains. (B) DNT-237/DNT-218 mutants had fewer histone-YFP+-labelled PAM neurons (THGAL4, R58E02-GAL4>hisYFP). Unpaired Student’s t-test. (C) Toll-6 RNAi knock-down in all DANs (THGAL4, R58E02-GAL4>hisYFP, Toll-6 RNAi) reduced Histone-YFP+-labelled PAM cell number. Unpaired Student’s t-test. (D) DNT-237/DNT-218 mutants had fewer PAMs stained with anti-TH antibodies. Over-expressing Toll-6CY in DANs (THGAL4, R58E02 GAL4>hisYFP, Toll-6CY) rescued TH+ PAM neurons in DNT-237/DNT-218 mutants, demonstrating that DNT-2 functions via Toll-6 to maintain PAM cell survival. Welch ANOVA p<0.0001, post hoc Dunnett test. (E–H) Adult-specific restricted over-expression or knock-down at 30°C using the temperature-sensitive GAL4 repressor tubGAL80ts. (E) Adult-specific DNT-2 RNAi knock-down in DNT-2 neurons decreased Tomato+ PAM cell number (tubGAL80ts, R58E02-LexA, DNT-2 GAL4>LexAOP-Tomato, UAS DNT-2-RNAi). Unpaired Student’s t-test, p=0.005. (F) Adult-specific Toll-6 RNAi knock-down in Toll-631 heterozygous mutant flies in DANs, reduced Histone-YFP+ PAM cell number (tubGAL80ts; THGAL4, R58E02-GAL4>hisYFP, Toll-6 RNAi/Toll631). Unpaired Student’s t-test. (G) PAMs were visualised with anti-TH. Left: tubGAL80ts, Toll-6>Toll-6-RNAi knock-down decreased TH+ PAM cell number. Unpaired Student’s t-test. Right: tubGAL80ts, DNT-2>DNT-2-RNAi knock-down decreased TH+ PAM cell number, whereas DNT-2FL over-expression increased PAM cell number. Kruskal–Wallis ANOVA, p=0.0001, post hoc Dunn’s test. (H) Adult-specific tubGAL80ts, DNT-2>DNT-2RNAi knock-down increased the number of apoptotic cells in the brain labelled with anti-DCP-1. Dcp-1+ cells co-localise with anti-TH at least in PAM clusters. One-way ANOVA, p<0.0001, post hoc Bonferroni’s multiple comparisons test. DANs>histone-YFP: all dopaminergic neurons expressing histone-YFP, genotype: THGal4 R58E02Gal4>UAS-histoneYFP. PAMsLexA>tomato: restricted to PAM DANs: R58E02LexA >LexAop-nlstdTomato. Controls: GAL4 drivers crossed to wild-type Canton-S. Scale bars: (B–G) 30 µm; (H) 20 µm. Graphs show boxplots around the median. p-values over graphs in (D, G right, H) refer to group analyses; stars indicate multiple comparisons tests. *p<0.05, **p<0.01, ***p<0.001. For further genotypes, sample sizes, and statistical details, see Supplementary file 2.
 
 To ask whether DNT-2 could regulate DAN number specifically in the adult brain, we used tubGal80ts to conditionally knock-down gene expression in the adult. PAMs were visualised with either R58E02LexA>LexAop-nls-tdTomato or THGal4; R58E02Gal4>histone-YFP and counted automatically. Adult-specific DNT-2 RNAi knock-down decreased Tomato+ PAM cell number (Figure 3E). Similarly, RNAi Toll-6 knock-down in DANs also decreased PAM neuron number (Figure 3F). Furthermore, knock-down of either Toll-6 or DNT-2 in the adult brain caused loss of PAM neurons visualised with anti-TH antibodies and counted manually (Figure 3G). Cell loss was due to cell death as adult-specific DNT-2 RNAi knock-down increased the number of apoptotic cells labelled with anti-Drosophila Cleave caspase-1 (DCP-1) antibodies compared to controls, including Dcp-1+ PAMs and other TH+ cells (Figure 3H). Dcp-1+ cells also included TH-negative cells, consistent with the expression of Toll-6 and kek-6 also in other cell types. In contrast, DNT-2FL over-expression in DNT2 neurons did not alter the incidence of apoptosis (Figure 3G), consistently with the fact that DNT-2FL spontaneously cleaves into the mature form (McIlroy et al., 2013; Foldi et al., 2017). Instead, and importantly, over-expression of DNT-2FL increased PAM cell number (Figure 3G). Thus, DNT-2 and Toll-6 knock-down specifically in the adult brain induced apoptosis and PAM-neuron loss, whereas DNT-2 gain of function increased PAM cell number.
 
 Altogether, these data showed that PAM cell number is plastic, sustained PAM neuron survival in development, and in the adult brain depends on DNT-2 and Toll-6, and a reduction in their levels causes DAN cell loss, characteristic of neurodegeneration.
 
-## DNT-2 and its receptors are required for arborisations and synapse formation
+### DNT-2 and its receptors are required for arborisations and synapse formation
 
 We next asked whether DNT-2, Toll-6, and Kek-6 could influence dendritic and axonal arbours and synapses of DANs (Figure 4A). Visualising the pre-synaptic reporter Synaptotagmin-GFP (Syt-GFP) in all DANs (with THGal4; R58E02Gal4), we found that DNT-218/DNT-237 mutants completely lacked DAN synapses in the MBβ,β' and γ lobes (Figure 4B). Interestingly, DAN connections at α,α' lobes were not affected (Figure 4B). This shows that DNT-2 is required for synaptogenesis and connectivity of DANs to MB β,β' and γ lobes.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig4-v1.jpg)
 
-**Figure 4.:** (A) Illustration showing the regions of interest (ROIs) (dashed lines) used for the analyses, corresponding to dendrites and axonal endings of PAMs and axonal terminals of PPL1ped neurons. (B–F) Fruit flies were kept constantly at 25°C. (B) Complete loss of DAN synapses (THGAL4, R58E02GAL4>syt-GFP) onto α,β MB lobe in DNT-237/DNT-2 null mutants. (18C) Toll-6 RNAi knock-down in PAM β2β’2 neurons (MB301B>FB1.1, Toll-6-RNAi) decreased dendrite complexity. Unpaired Student’s t-test. (D) Over-expression of cleaved DNT-2CK in PAM β2β’2 neurons (MB301B>CD8-GFP, DNT-2CK) increased dendrite complexity. Unpaired Student’s t-test. Same magnification as (C). (E, E’, F) PPL1ped axonal misrouting was visualised with split-GAL4 MB320CGal4>FlyBow1.1. Images show PPL1-γped neurons and some PPL1-α2α’2. (E,E’) RNAi knock-down of Toll-6, kek-6 or both (e.g. MB320CGal4>FlyBow1.1, Toll-6RNAi) in PPL1-γped neurons caused axonal terminal misrouting (arrows). (E’ Higher magnification of E, dotted squares). Chi-square for group analysis: p=0.0224, and multiple comparisons Bonferroni correction control vs Toll-6RNAi p<0.01; vs kek-6RNAi p<0.05; vs Toll-6RNAi kek-6RNAi p<0.01, see Supplementary file 2. (F) PPL1 misrouting was also induced by over-expressed DNT-2CK or DNT-2FL (e.g. MB320CGal4>FlyBow1.1, DNT-2FL). Chi-square for group analysis: p<0.05, Bonferroni correction control vs DNT-2CK ns, vs DNT-2FL *p<0.05, see Supplementary file 2. (G) Adult-specific Toll-6 kek-6 RNAi knock-down in PAM neurons decreased size of post-synaptic density sites (PAM >Homer-GCaMP and anti-GFP antibodies). Temperature regime shown on the right. (C, D) Graphs show boxplots around the median; (G) are boxplots with dot plots. (C, D, G) *p<0.05, **p<0.01, ****p<0.0001. Scale bars: (B, C, D, E) 30 µm; (E’, F, G) 20 µm. For genotypes, sample sizes, and statistical details, see Supplementary file 2.Figure 4—source data 1.Figure 4B.Figure 4—source data 2.Figure 4C.Figure 4—source data 3.Figure 4D.Figure 4—source data 4.Figure 4E.Figure 4—source data 5.Figure 4F.Figure 4—source data 6.Figure 4G.
+**Figure 4.:** (A) Illustration showing the regions of interest (ROIs) (dashed lines) used for the analyses, corresponding to dendrites and axonal endings of PAMs and axonal terminals of PPL1ped neurons. (B–F) Fruit flies were kept constantly at 25°C. (B) Complete loss of DAN synapses (THGAL4, R58E02GAL4>syt-GFP) onto α,β MB lobe in DNT-237/DNT-218 null mutants. (C) Toll-6 RNAi knock-down in PAM β2β’2 neurons (MB301B>FB1.1, Toll-6-RNAi) decreased dendrite complexity. Unpaired Student’s t-test. (D) Over-expression of cleaved DNT-2CK in PAM β2β’2 neurons (MB301B>CD8-GFP, DNT-2CK) increased dendrite complexity. Unpaired Student’s t-test. Same magnification as (C). (E, E’, F) PPL1ped axonal misrouting was visualised with split-GAL4 MB320CGal4>FlyBow1.1. Images show PPL1-γped neurons and some PPL1-α2α’2. (E,E’) RNAi knock-down of Toll-6, kek-6 or both (e.g. MB320CGal4>FlyBow1.1, Toll-6RNAi) in PPL1-γped neurons caused axonal terminal misrouting (arrows). (E’ Higher magnification of E, dotted squares). Chi-square for group analysis: p=0.0224, and multiple comparisons Bonferroni correction control vs Toll-6RNAi p<0.01; vs kek-6RNAi p<0.05; vs Toll-6RNAi kek-6RNAi p<0.01, see Supplementary file 2. (F) PPL1 misrouting was also induced by over-expressed DNT-2CK or DNT-2FL (e.g. MB320CGal4>FlyBow1.1, DNT-2FL). Chi-square for group analysis: p<0.05, Bonferroni correction control vs DNT-2CK ns, vs DNT-2FL *p<0.05, see Supplementary file 2. (G) Adult-specific Toll-6 kek-6 RNAi knock-down in PAM neurons decreased size of post-synaptic density sites (PAM >Homer-GCaMP and anti-GFP antibodies). Temperature regime shown on the right. (C, D) Graphs show boxplots around the median; (G) are boxplots with dot plots. (C, D, G) *p<0.05, **p<0.01, ****p<0.0001. Scale bars: (B, C, D, E) 30 µm; (E’, F, G) 20 µm. For genotypes, sample sizes, and statistical details, see Supplementary file 2.
 
 PAM-β2β'2 neuron dendrites overlap axonal DNT2 projections. Toll-6 RNAi knock-down in PAM -β2β’2 (with split-GAL4 MB301BGal4; Aso et al., 2014a) reduced dendrite complexity (Figure 4C). To test whether DNT-2 could alter these dendrites, we over-expressed mature DNT-2CK. DNT-2CK is not secreted (from transfected S2 cells), but it is functional in vivo (Zhu et al., 2008; Foldi et al., 2017; Ulian-Benitez et al., 2017). Importantly, over-expressed DNT-2CK functions cell-autonomously, whereas DNT-2FL functions also non-autonomously, but they have similar effects (Zhu et al., 2008; Foldi et al., 2017; Ulian-Benitez et al., 2017). Over-expression of DNT-2CK in PAM-β2β’2 increased dendrite arbour complexity (Figure 4D). Thus, DNT-2 and its receptor Toll-6 are required for dendrite growth and complexity in PAM neurons.
 
@@ -92,21 +112,45 @@ To test whether this signalling system was required specifically in the adult br
 
 Altogether, these data showed that DNT-2, Toll-6, and Kek-6 are required for dendrite branching, axonal targeting, and synapse formation. The shared phenotypes from altering the levels of DNT-2 and Toll-6 kek-6 in arborisations and synapse formation support their joint function in these contexts. Importantly, these findings showed that the connectivity of PAM and PPL1 DANs depends on DNT-2, Toll-6, and Kek-6.
 
-## DNT-2 neuron activation and DNT-2 over-expression induced synapse formation in target PAM dopaminergic neurons
+### DNT-2 neuron activation and DNT-2 over-expression induced synapse formation in target PAM dopaminergic neurons
 
 The above data showed that DNT-2, Toll-6, and Kek-6 are required for DAN cell survival, arborisations, and synaptogenesis in development and adults. This meant that the dopaminergic circuit remains plastic in adult flies, consistently with their functional plasticity (Boto et al., 2014). Thus, we wondered whether neuronal activity could also induce remodelling in PAM neurons. In mammals, neuronal activity induces translation, release, and cleavage of BDNF, and BDNF drives synaptogenesis (Poo, 2001; Lu et al., 2005; Lu et al., 2013; Wang et al., 2022). Thus, we first asked whether neuronal activity could influence DNT-2 levels or function. We visualised tagged DNT-2FL-GFP in adult brains, activated DNT-2 neurons with TrpA1 at 30°C, and found that DNT-2 neuron activation increased the number of DNT-2-GFP vesicles produced (Figure 5—figure supplement 1A). Furthermore, neuronal activity also facilitated cleavage of DNT-2 into its mature form. In western blots from brains over-expressing DNT-2FL-GFP, the levels of full-length DNT-2FL-GFP were reduced following neuronal activation and the cleaved DNT-2CK-GFP form was most abundant (Figure 5—figure supplement 1B). These findings meant that, like mammalian BDNF, DNT-2 can also be influenced by activity.
 
 Thus, we asked whether neuronal activity and DNT-2 could influence synapse formation. We first tested DNT-2 neurons. Activating DNT-2 neurons altered DNT-2 axonal arbours (Figure 5A) and it increased Homer-GFP+ synapse number in the DNT-2 SMP arbour (Figure 5B, Figure 5—figure supplement 2). Next, as DNT-2 and PAMs form bidirectional connexions at SMP (Figures 1 and 2), we asked whether activating DNT-2 neurons could affect target PAM neurons. To manipulate DNT-2 neurons and visualise PAM neurons concomitantly, we combined DNT-2GAL4 with the PAM-LexA driver. However, there were no available LexA/OP post-synaptic reporters, so we used the pre-synaptic LexAOP-Syt-GCaMP reporter instead, which labels Synaptotagmin (Syt), and GFP antibodies. Activating DNT-2 neurons with TrpA1 increased the number of Syt+ synapses at the PAM SMP arbour (Figure 5C) and reduced their size (Figure 5C). This was consistent with the increase in Homer-GFP+ PSD number in stimulated DNT-2 neurons (Figure 5B). Neuronal activity can induce ghost boutons, immature synapses that are later eliminated (Fuentes-Medel et al., 2009). Here, the coincidence of increased pre-synaptic Syt-GFP from PAMs and post-synaptic Homer-GFP from DNT-2 neurons at SMP suggests that newly formed synapses could be stable. PAM neurons also send an arborisation at the MB β, β’, γ lobes, but DNT-2 neuron activation did not affect synapse number nor size there (Figure 5C). These data showed that activating DNT-2 neurons induced synapse formation at the SMP connection with PAMs.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig5-v1.jpg)
+
+**Figure 5.:** (A) Thermo-activation of DNT-2 neurons at 30°C altered DNT-2 arborisations, here showing an example with smaller dendrites and enlarged axonal arbours (magenta shows 3D rendering of axonal arborisation done with Imaris, merged with raw image in green) (genotype: DNT-2>FlyBow1.1, TrpA1). (B) Thermogenetic activation of DNT-2 neurons increased the number of Homer+ PSDs in DNT-2 neurons, at SMP (DNT-2>Homer-GCAMP3, TrpA1, anti-GFP). Test at 30°C 24 hr: unpaired Student’s t-test. See Supplementary file 2. (C) Thermogenetic activation of DNT-2 neurons induced synaptogenesis in PAM target neurons at SMP, but not at MB lobe (genotype: PAM(R58E02)LexA/LexAOP-sytGCaMP; DNT-2GAL4/UASTrpA1). At SMP: No. Syt+ synapses: Mann–Whitney U; Syt+ synapse volume: Mann–Whitney U. At MB lobe: No. Syt+ synapses: unpaired Student’s t ns; Syt+ synapse volume: Mann–Whitney U ns. (D) Over-expression of DNT-2FL in DNT-2 neurons increased synapse volume at SMP dendrite and induced synaptogenesis at MB lobe (genotype: PAM(R58E02)LexA/LexAopSytGcaMP6; DNT-2Gal4/UAS-DNT-2FL). At SMP: No. Syt+ synapses: unpaired Student’s t ns. Syt+ synapse volume: Mann–Whitney U. At MB lobe: No. Syt+ synapses: unpaired Student’s t; Syt+ synapse volume: Mann–Whitney U ns. Graphs show boxplots around the median, except for PSD volume data that are dot plots. *p<0.05, ****p<0.0001; ns: not significantly different from control. Scale bars (A-D): 30 µm. For genotypes, sample sizes, p-values, and other statistical details, see Supplementary file 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Thermogenetic activation of DNT-2 neurons increased the number of DNT-2FLGFP+ vesicles or spots (DNT-2>DNT-2-FL-GFP, TrpA1 with anti-GFP). Control 18°C: unpaired Student’s t-test, ns. Activation 30°C 24 hr: Mann–Whitney. (B) Western blot from fly heads over-expressing DNT-2FL-GFP in DNT-2+ neurons showing that neuronal activation with TrpA1 at 30°C increased DNT-2FL-GFP cleavage (genotype: DNT-2>TrpA1, DNT-2FL-GFP). Controls are flies of the same genotype kept constantly at 18°C as well as flies treated also at 30°C but lacking TrpA1. High temperature (30°C) is sufficient to increase fly activity. ***p<0.001. ns, not significant. For further genotypes, sample sizes, p-values, and other statistical details, see Supplementary file 2.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Control at 18°C, for Figure 5B. DNT-2 bidirectional arborisation at SMP was visualised with Homer-GCaMP and anti-GFP antibodies (DNT-21>homer-GCAMP and DNT-2>homer-GCAMP, TrpA1 at 18°C). Unpaired Student’s t-test, ns. Scale bars: 30 µm. For further genotypes, sample sizes, p-values, and other statistical details, see Supplementary file 2.
+
 Finally, we asked whether, like activity, DNT-2FL could also drive synaptogenesis. We over-expressed DNT-2FL in DNT-2 neurons and visualised the effect in PAM neurons. Over-expression of DNT-2FL in DNT-2 neurons did not alter Syt+ synapse number at the PAM SMP dendrite, but it increased bouton size (Figure 5D). In contrast, at the MB β, β’ lobe arborisation, over-expressed DNT-2 did not affect Syt+ bouton size, but it increased the number of output synapses (Figure 5D). This data showed that DNT-2 released from DNT-2 neurons could induce synapse formation in PAM target neurons.
 
 Altogether, these data showed that neuronal activity induced synapse formation, stimulated production and cleavage of DNT-2, and DNT-2 could induce synapse formation in target neurons.
 
-## Structural plasticity by DNT2 modified dopamine-dependent behaviour
+### Structural plasticity by DNT2 modified dopamine-dependent behaviour
 
 Circuit structural plasticity raises the important question of what effect it could have on brain function, that is, behaviour. The above data showed that DANs and DNT-2 neurons are functionally connected, loss of function for DNT-2 or its receptors caused DAN loss, altered DAN arborisations and caused synapse loss or reduction in size, and DNT-2 could induce neuron number, dendrite branching and synaptogenesis, altogether modifying circuit connectivity. To measure the effect of such circuit modifications on brain function, we used dopamine-dependent behaviours as readout.
 
 Startle-induced negative geotaxis (also known as the climbing assay) is commonly used as a measure of locomotor ability and requires dopamine and specifically PAM neuron function (Riemensperger et al., 2013; Sun et al., 2018). We tested the effect of DNT-2 or Toll-6 and kek-6 loss of function in climbing, and both DNT-237/DNT-218 mutants and flies in which DNT-2 was knocked-down in DNT-2 neurons in the adult stage had lower climbing ability than controls (Figure 6A). Similarly, when Toll-6 and kek-6 were knocked-down with RNAi in the adult using a Toll-6- or a PAM-GAL4 neuron driver, climbing was also reduced (Figure 6B). Importantly, over-expressing activated Toll-6CY in DANs rescued the locomotion deficits of DNT-2 mutants, showing that DNT-2 functions via Toll-6 in this context (Figure 6C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig6-v1.jpg)
+
+**Figure 6.:** (A) DNT-2 mutants (left, DNT-237/DNT-218) and flies with adult-specific RNAi knock-down of DNT-2 in DNT-2 neurons (right, tubGAL80ts; DNT-2>DNT-2RNAi), had impaired climbing. Left: Mann–Whitney U; right: one-way ANOV, post hoc Dunnett. (B) Adult-specific Toll-6 and kek-6 RNAi knock-down in Toll-6 (tubGAL80ts; Toll-6>Toll-6RNAi, kek-6RNAi, left) or PAM (tubGAL80ts; R58E02>Toll-6RNAi, kek-6RNAi, right) neurons impaired climbing. Left: Welch ANOVA, post hoc Dunnett. Right: Welch ANOVA, post hoc Dunnett. (C) The climbing impairment of DNT-2 mutants could be rescued with the over-expression of Toll-6CY in dopaminergic neurons (rescue genotype: UASToll-6CY/+; DNT-218THGAL4 R58E02GAL4/DNT-237). Welch ANOVA, post hoc Dunnett. (D) Adult-specific over-expression of Toll-6CY in DANs increased locomotion in DNT-237/DNT-218 mutants (test genotype: UASToll-6CY/+; DNT-218THGAL4 R58E02GAL4/DNT-237). Walking speed: Kruskal–Wallis ANOVA, post hoc Dunn’s. Distance walked: Kruskal–Wallis ANOVA, post hoc Dunn’s. Time spent immobile: Kruskal–Wallis ANOVA, post hoc Dunn’s. (E) Adult-specific DNT-2FL overexpression in DNT-2 neurons increased fruit fly locomotion speed in an open arena at 30°C (see also Figure 6—figure supplement 1A for further controls) (test genotype: tubGAL80ts, DNT-2>DNT-2FL) Kruskal–Wallis, post hoc Dunn’s test. (F) Thermogenetic activation of DNT-2 neurons at 30°C (DNT-2>TrpA1) increased fruit fly locomotion speed (see also Figure 6—figure supplement 1B for further controls). One-way ANOVA p<0.0001, post hoc Dunnett’s test. (G) Over-expression of DNT-2-FL in DNT-2 neurons increased long-term memory (test genotype: tubGAL80ts, DNT-2>DNT-2FL). Left: 23°C controls: one-way ANOVA p=0.8006. Right: 30°C: one-way ANOVA, post hoc Dunnett’s test. Graphs show boxplots around the median, under also dot plots. p-Values over graphs refer to group analyses; asterisks indicate multiple comparisons tests. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001; ns, not significantly different from control. For further genotypes, sample sizes, p-values, and other statistical details, see Supplementary file 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Controls for Figure 6E. In 18°C controls, GAL80 is on and GAL4 is off, thus there is no adult-specific DNT-2FL overexpression in DNT-2 neurons in these flies (genotype: tubGAL80ts, DNT-2>DNT-2FL). Consistently, there was no increase in locomotion speed in an open arena, in flies over-expressing DNT-2FL relative to controls, compare also to Figure 6E. Kruskal–Wallis ANOVA ns (lower median in UAS-DNT-2FL/+ control). (B) Controls for Figure 6F. The cation TrpA1 opens at high temperatures (e.g. 30°C) but remains closed at 18°C. Consistently, there was no effect in locomotion at 18°C in flies of genotype DNT-2>TrpA1 compared to controls, compare also to 30°C data in Figure 6F. Kruskal–Wallis ANOVA ns. For further genotypes, sample sizes, p-values, and other statistical details, see Supplementary file 2.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/102222/elife-102222-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Knock-down or over-expression of DNT-2 in the adult, using GAL80ts. Fruit flies were reared at 18°C from egg laying to adult eclosion, when they were transferred to 30°C and kept there for 5 days prior to testing. To test for seizures, we used the bang-sensitivity test. DNT237/DNT218 mutant flies (left) and adult DNT-2 knock-down flies (tubGal80ts DNT-2Gal4>DNT-2RNAi, centre) took longer to recover than controls. Over-expression of DNT-2FL in DNT-2 neurons (tubGal80ts DNT-2Gal4>DNT-2FL, right) increased variability in recovery time. For further genotypes and sample sizes, see Supplementary file 2.
 
 We also tracked freely moving flies in an open arena (Eyjolfsdottir et al., 2014). Interestingly, in that setting, locomotion of homozygous DNT-237/DNT-218 mutants was similar to that of controls, but over-expression of Toll-6CY in their DANs increased locomotion as flies walked longer distances and spent less time immobile (Figure 6D). Adult flies over-expressing DNT2-FL walked faster (Figure 6E, Figure 5—figure supplement 2) and so did those where DNT-2 neurons were activated with TrpA1 (Figure 6F, Figure 6—figure supplement 1), consistently with the fact that neuronal activity increased DNT-2 production (Figure 5—figure supplement 1A) and that DNT-2FL increased TH levels (Figure 2C). Therefore, increased Toll-6CY levels in DANs increase locomotion, and increased DNT-2 levels are sufficient to boost walking speed. Interestingly, both loss and gain of function for DNT-2 also caused seizures (Figure 6—figure supplement 2). Thus, dopamine-dependent locomotion is regulated by the function of DNT-2, Toll-6, and Kek-6.
 
@@ -134,39 +178,714 @@ Drosophila and mammalian NTs may have evolved to use different receptor types to
 
 A functional relationship between NTs and TLRs could exist also in humans, as in cell culture, human BDNF and NGF can induce signalling from a TLR (Foldi et al., 2017) and NGF also functions in immunity and neuroinflammation (Levi-Montalcini et al., 1996; Hepburn et al., 2014). Importantly, TLRs can regulate cell survival, death and proliferation, neurogenesis, neurite growth and collapse, learning and memory (Okun et al., 2011). They are linked to neuroinflammation, psychiatric disorders, neurodegenerative diseases, and stroke (Okun et al., 2011; Figueroa-Hall et al., 2020; Adhikarla et al., 2021). Intriguingly, genome-wide association studies have revealed the involvement of TLRs in various brain conditions and potential links between NTs and TLRs in, for example, major depression (Sharma, 2012; Mehta et al., 2018; Chan et al., 2020; Garrett et al., 2021). Importantly, alterations in NT function underlie psychiatric, neurological, and neurodegenerative brain diseases (Lu et al., 2005; Martinowich et al., 2007; Krishnan and Nestler, 2008; Lu et al., 2013; Park and Poo, 2013; Wohleb et al., 2016; Yang et al., 2020; Casarotto et al., 2021; Wang et al., 2022), and BDNF underlies the plasticity inducing function of anti-depressants (Lu et al., 2013; Casarotto et al., 2021; Wang et al., 2022). It is compelling to find out whether and how these important protein families – NTs, TLRs, and kinase-less Trks – interact in the human brain.
 
-## Conclusion
+### Conclusion
 
 We provide a direct link between structural circuit plasticity and behavioural performance by a novel molecular mechanism. The neurotrophin DNT-2 and its receptors Toll-6 and the kinase-less Trk family Kek-6 are linked to a dopaminergic circuit. Neuronal activity boosts DNT-2, and DNT-2 and dopamine regulate each other homeostatically. Dopamine labels the circuits engaged and DNT-2, a growth factor, with its receptors Toll-6 and Kek-6, drives structural plasticity in these circuits, enhancing dopamine-dependent behavioural performance. These findings mean that DNT-2 is a plasticity factor in the Drosophila brain that could enable experience-dependent behavioural enhancement. Whether NTs can similarly function with TLRs and kinase-less Trks remains to be explored. As behaviour is a source of experience, this has profound implications for understanding brain function and health.
 
 ## Materials and methods
 
-## Genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>DNT2 Gal4 [CRISPR]</td>
+      <td>This study</td>
+      <td>Hidalgo Lab</td>
+      <td>See Materials and Methods, Molecular Biology and Figure 1.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Toll-6 Gal4 [MIO2127]</td>
+      <td>Hidalgo Lab; Li et al., 2020</td>
+      <td>Hidalgo Lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>kek-6 Gal4 [MI13953]</td>
+      <td>Hidalgo Lab; Ulian-Benitez et al., 2017</td>
+      <td>Hidalgo Lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Toll-2 Gal4 [pTV]</td>
+      <td>Hidalgo Lab; Li et al., 2020</td>
+      <td>Hidalgo Lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Toll-7 Gal4 [MI13963]</td>
+      <td>Hidalgo Lab; Li et al., 2020</td>
+      <td>Hidalgo Lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Toll-5 Gal4 [CRISPR]</td>
+      <td>Hidalgo Lab; Li et al., 2020</td>
+      <td>Hidalgo Lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Toll-8 Gal4 [MD806]</td>
+      <td>Bloomington Drosophila Stock Center (BDSC)</td>
+      <td>RRID:BDSC_36548</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MB320C-Gal4 (PPL1-ped)[1w[1118]; P{y[+t7.7] w[+mC]=R22B12-GAL4.DBD}attP2 PBac{y[+mDint2] w[+mC]=ple-p65.AD}VK00027118]; P{y[+t7.7] w[+mC]=R71D01-p65.AD}attP40; P{y[+t7.7] w[+mC]=R58F02-GAL4.DBD}attP2</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_68253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MB301B-Gal4 (PAM-b2b'2)w[1118]; P{y[+t7.7] w[+mC]=R71D01-p65.AD}attP40; P{y[+t7.7] w[+mC]=R58F02-GAL4.DBD}attP2</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_68311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TH-LexA(II)</td>
+      <td>Gift from Davis Ronald (via Serge Birman)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TH-Gal4,R58E02-Gal4</td>
+      <td>Gift from Serge Birman</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R58E02-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_41347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R58E02-LexA</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_52740</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R14C08-LexA</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_52473</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dop1R1-LexA</td>
+      <td>Gift from Deng et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dop2R-LexA</td>
+      <td>Gift from Deng et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gad-LexA</td>
+      <td>Gift from Yi Rao</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VT49239-LexA (DAL-LexA)</td>
+      <td>Gift from Ann-Shyn Chiang</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tdc2-LexA</td>
+      <td>Gift from Carolina Rezaval</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Canton-S</td>
+      <td>Gift from Kei Ito</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Oregon</td>
+      <td>Hidalgo Lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MCFO: w[1118] P{y[+t7.7] w[+mC]=hs-FLPG5.PEST}attP3; P{y[+t7.7] w[+mC]=10xUAS(FRT.stop)myr::smGdP-OLLAS}attP2 PBac{y[+mDint2] w[+mC]=10xUAS(FRT.stop)myr::smGdP-HA}VK00005 P{10xUAS(FRT.stop)myr::smGdP-V5-THS-10xUAS(FRT.stop)myr::smGdP-FLAG}su(Hw)attP1</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_64086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DNT2FL-GFP</td>
+      <td>Hidalgo Lab; Ulian-Benitez et al., 2017</td>
+      <td>Hidalgo Lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-FlyBow1.1 (2609)</td>
+      <td>Gift from Iris Salecker (Hadjieconomou et al., 2011)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hs Flp;;UAS-FlyBow2.0</td>
+      <td>Gift from Iris Salecker (Ferrer et al., 1999; Hadjieconomou et al., 2011)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>13xLexAop-nls-tdTomato</td>
+      <td>Gift from B. Pfeiffer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DNT-2RNAi [VDRC49195]</td>
+      <td>VDRC</td>
+      <td>VDRC49195</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Toll6RNAi [P{GD35}v928]</td>
+      <td>VDRC</td>
+      <td>VDRC:928 FBst0471444</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Toll-6[CY]</td>
+      <td>Hidalgo Lab; McIlroy et al., 2013</td>
+      <td>Hidalgo Lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-KeK6RNAi [KK-109681]</td>
+      <td>VDRC</td>
+      <td>VDRC:109681 FBgn0039862</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TransTango: UAS-myrGFP.QUAS-mtdTomato-3xHA (attp8); transTango (attp40)</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_77124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>13LexAop-CD8::GFP, 10UAS-CD8::RFP</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_32229</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-FB1.1 (406)</td>
+      <td>Gift from Iris Salecker (Hadjieconomou et al., 2011)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DenMarkRFP, UAS-Dsyd1GFP</td>
+      <td>Gift from Carolina Rezaval</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MB247-Gal80</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_64306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DNT2[37]/TM6BlacZ</td>
+      <td>Hidalgo Lab; Ulian-Benitez et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DNT2[18]</td>
+      <td>Hidalgo Lab; Ulian-Benitez et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tubGal80[ts] on 2nd</td>
+      <td>BDSC</td>
+      <td>Hidalgo Lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Toll-6[31]/TM6BlacZ</td>
+      <td>Hidalgo Lab (McIlroy et al., 2013)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-dop2R-RNAi [TRiP.HMC02988}attP40]</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_50621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Toll6-RNAi [TRiP.HMS04251}attP2]</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_56048</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Brp-s-mCherry (II)</td>
+      <td>Gift from Stephan Sigrist</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Brp-s-mCherry (III)</td>
+      <td>Gift from Stephan Sigrist</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CD8::GFP (II)</td>
+      <td>Hidalgo Lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>BacTrace 806: w; LexAop2-Syb::GFP-P10(VK37) LexAop-QF2::SNAP25::HIVNES::Syntaxin(VK18) / CyO; UAS-B3Recombinase(attP2) UAS&lt;B3Stop &lt;BoNT/A(VK5)</td>
+      <td>Cachero et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-UAS-Epac1-camps-50A</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_25408</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>20x UAS V5 Syn Cs Chrimson td tomato</td>
+      <td>Gift from B. Pfeiffer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>13XLexAop2-IVS-GCaMP6s-p10 su(Hw)attP1</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_44274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>13XLexAop2-IVS-GCaMP6s-p10 su(Hw)attP5</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_44590</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>P{w[+mC]=UAS-syt.eGFP}2</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_6925</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-homer-GCaMP3 on 2nd</td>
+      <td>Gift from André Fialá</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-brp (nc82)</td>
+      <td>Developmental Studies Hybridoma Bank (DSHB), IA</td>
+      <td>Cat# nc82;RRID:AB_2314866</td>
+      <td>1:10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-11122; RRID:AB_221569</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GFP</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-11120; RRID:AB_221568</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP</td>
+      <td>Aves</td>
+      <td>Cat# GFP1010; RRID:AB_2307313</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-FLAG</td>
+      <td>Sigma</td>
+      <td>Cat# F7425</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-V5</td>
+      <td>Invitrogen</td>
+      <td>Cat# # R960-25; RRID:AB_2556564</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-HA</td>
+      <td>Aves</td>
+      <td>Cat# ET-HA100; RRID:AB_2313511</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Vglut</td>
+      <td>Gift from Hermann</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-TH</td>
+      <td>Immunostar</td>
+      <td>Cat# 22941; RRID:AB_572268</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-TH</td>
+      <td>Novus Biologicals</td>
+      <td>Cat# NB300-109</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-DsRed</td>
+      <td>Clontek</td>
+      <td>Cat# 632496; RRID:AB_10013483</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-ChAT4B1</td>
+      <td>DHSB</td>
+      <td>Cat# ChAT4B1;RRID:AB_528122</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-5-HT</td>
+      <td>Immunostar</td>
+      <td>Cat#20080; RRID:AB_572263</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-DCP-1</td>
+      <td>Cell Signalling</td>
+      <td>Cat# 8578S</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Flour 488 goat anti-mouse</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-11001; RRID:AB_2534069</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Flour 488 donkey anti-rabbit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-21206; RRID:AB_2435792</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Flour 488 goat anti-rabbit (Fab')2</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-11070; RRID:AB_2534114</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Flour 488 goat anti-chicken</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-11039; RRID:AB_2534096</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Four 546 goat anti-rabbit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-11035; RRID:AB_2534093</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Four 546 goat anti-mouse</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-11003; RRID:AB_25334071</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alex Four 647 goat anti-rabbit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-21245; RRID:AB_2535813</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alex Four 647 goat anti-mouse</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-21236; RRID;AB_2535905</td>
+      <td>:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug.</td>
+      <td>TRIzol</td>
+      <td>Ambion</td>
+      <td>Cat# AM9738</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA-free DNA Removal Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# AM1906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GoScript Reverse Transcriptase</td>
+      <td>Promega</td>
+      <td>Cat# 237815</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SensiFAST synGreen Mix</td>
+      <td>Bioline</td>
+      <td>Cat# B2092020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PFA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Car# P6148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal goat serum</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# S1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Octanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 218405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Methylcyclohexaniol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 153095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mineral oil</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 330760</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>qPCR plate</td>
+      <td>GeneFlow</td>
+      <td>Cat# P3-0292</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Prism6</td>
+      <td>GraphPad, CA</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Fiji/ImageJ</td>
+      <td>Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>DeadEasy-Central Brain</td>
+      <td>Figure 3—source code 1. ImageJ plug-in originally published in Li et al., 2020</td>
+      <td>DeadEasy_Central_Brain in UBIRA; https://edata.bham.ac.uk/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>DeadEasy-Dopaminergic neuron</td>
+      <td>Figure 3—source code 2. ImageJ plug-in</td>
+      <td>DeadEasy_Dopaminergic3DNew ni UBIRA;https://edata.bham.ac.uk/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe CS</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe CS</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software; algorithm</td>
+      <td>FlyTracker</td>
+      <td>Eyrun Eyjolfsdottir, Steve Branson, Xavier P. Burgos-Artizzu, Eric D. Hoopfer, Jonathan Schor, David J Anderson, Pietro Perona.Eyjolfsdottir et al., 2014,Computer Vision – ECCV 772–787</td>
+      <td>https://kristinbranson.github.io/FlyTracker/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Scope Fly Cell Atlas</td>
+      <td>Davie et al., 2018; Davie et al., 2018</td>
+      <td>https://scope.aertslab.org/#/FlyCellAtlas/*/welcome</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Genetics
 
 Mutants: DNT237 and DNT218 are protein null (Foldi et al., 2017; Ulian-Benitez et al., 2017). Toll631 is a null mutant allele (McIlroy et al., 2013). Driver lines: DNT2-Gal4 is a CRISPR/Cas9-knock-in allele, with GAL4 at the start of the gene (this work, see below). Toll-6-Gal4 was generated by RMCE from MIMIC Toll-6MIO2127; kek6-Gal4 from MIMIC Kek6MI12953 (Ulian-Benitez et al., 2017; Li et al., 2020). MB320C-Gal4 (BSC68253), MB301B-Gal4 (BSC68311), R58E02-Gal4 (BSC41347), MB247-Gal80 (BSC64306), R58E02-LexA (BSC52740), R14C08-LexA (BSC52473) were from the Bloomington Drosophila Stock Center (BDSC). Dop1R2-LexA, Dop2R-LexA, Gad-LexA were kindly provided by Yi Rao; TH-LexA (gift from Ron Davis), TH-Gal4,R58E02-GAL4 (gift from Serge Birman); G0431-Gal4 (DAL-GAL4), VT49239 nls LexA (DAL LexA) (gifts from Ann-Shyn Chiang); tubGal80ts, Tdc-LexA. Reporter lines: UAS-CD8::GFP, for membrane tethered GFP; UAS-histone-YFP, for YFP-tagged nuclear histone; UASFlybow1.1, constant membrane tethered expression (gift from Iris Salecker); 13xLexAop-nls-tdTomato, nuclear Tomato (gift from B. Pfeiffer); UASCD8::RFP, LexAopCD8::GFP (BSC32229), for dual binary expression; UAS-homer-GCaMP for PSDs (gift from André Fialá), UAS-syt.eGFP (BSC6925) and LexAop-Syt-GCaMP (BSC64413) for pre-synaptic sites. For connectivity: UAS-DenMarkRFP, UAS-Dsyd1GFP (gift from Carolina Rezaval); TransTango: yw UAS-myrGFP,QUAS-mtdTomato-3xHA attP8; Trans-Tango@attP40 (BSC77124); BAcTrace 806 (w;LexAop2-Syb::GFP-P10(VK37) LexAop-QF2::SNAP25::HIVNES::Syntaxin(VK18)/CyO; UAS-B3Recombinase (attP2) UAS<B3Stop<BoNT/A (VK5) UAS<B3Stop<BoNT/A(VK27) QUAS-mtdTomato::HA/TM2): MCFO clones: hs-FLPG5.PEST;; 10xUAS (FRT.stop) myr::smGdP-OLLAS 10xUAS (FRT.stop) myr::smGdP-HA 10xUAS (FRT.stop) myr::smGdP-V5-THS-10xUAS (FRT.stop) myr::smGdP-FLAG (BSC64086). Optogenetic activation: 20x UAS-V5-Syn-CsChrimson td tomato (gift from B. Pfeiffer). For thermogenetic activation: UASTrpA1@attP2 (BSC26264) and UAS-TrpA1@attP216 (BSC26263). UAS gene over-expression: UAS-DNT2CK, UAS-DNT2FL-GFP, UAS-DNT2-FL-47C, UAS-Toll-6CY (McIlroy et al., 2013; Foldi et al., 2017). UAS-RNAi knock-down: UAS-DNT2RNAi (VDRC49195), UAS-Toll6RNAi (VDRC928), y1v1; UAS-Toll6RNAi[Trip.HMS04251] (BSC 56048), UAS-kek6RNAi (VDCR 109681), y1v1; UAS-Dop2R-RNAi[TRiP.HMC02988](BSC50621).
 
-## Molecular biology
+#### Molecular biology
 
 DNT-2GAL4 was generated by CRISPR/Cas9 enhanced homologous recombination. 1 kb long 5′ and 3′homology arms (HA) were amplified by PCR from genomic DNA of wild-type flies using primers for 5′ HA: atcgcaccggtttttacaggcaccccatgtctga containing AgeI cutting site and cttgacgcggccgcTGTCAATTCATTCGCCGTCGAT containing NotI cutting site. 3′ HA primers were tattaggcgcgccATGACAAAAAGTATTAAACGTCCGCCC containing AscI cutting site and tactcgactagtgaagcacacccaaaatacccagg containing SpeI cutting site. HAs were sequentially cloned by conventional cloning into pGEM-T2AGal4 vector (Addgene #62894). For gRNA cloning, two 20-nucleotide gRNA oligos (gtcGACAAGTTCTTCTTACCTATG and aaacCATAGGTAAGAAGAACTTGTC) were designed using Optimal Target Finder. BbsI enzyme sites were added: gtc(g) at the 5′ end of sense oligo, and aaac at the 5′ end of the antisense oligo. gRNA is located at 41 bp downstream of the start codon of DNT-2 within the first coding exon. The gRNA was cloned into pU6.3 using conventional ligation. The two constructs were injected in Cas9 bearing flies, and red fluorescent (3xP3-RFP) transformants were selected and balanced, after which 3xP3-RFP was removed with CRE-recombinase.
 
-## qRT-PCR
+#### qRT-PCR
 
 qRT-PCR was carried out from 20 whole-adult fruit fly heads, frozen in liquid nitrogen before homogenising in 50 ml Trizol (Ambion #AM9738), followed by a stand RNA extraction protocol. RNA was treated with DNase treatment (Thermo Fisher # AM1906) to remove genomic DNA. 200 ng of RNA was used for cDNA synthesis following GoScript Reverse Transcriptase (Promega #237815) protocol. Sample was diluted 1:4 with nuclease-free H2O. Standard qPCR was performed with SensiFast syb Green Mix (Bioline #B2092020) in ABI qPCR plate (GeneFlow #P3-0292) and machine. To amplify TH mRNA, the following primers were used: TH-F: CGAGGACGAGATTTTGTTGGC and TH-R: TTGAGGCGGACCACCAAAG. GAPDH was used as a housekeeping control. Reactions were performed in triplicate. Specificity and size of amplification products were assessed using melting curve analyses. Target gene expression relative to reference gene is expressed as a value of 2-ΔΔCt (where Ct is the crossing threshold).
 
-## Conditional expression
+### Conditional expression
 
 Multi-Colour Flip-Out clones: DNT2-Gal4, Toll6-Gal4, and kek6-Gal4 were crossed with hsFLP::PEST;;MCFO flies, and female offspring were collected and heat-shocked at 37°C in a water bath for 15 min, then kept for 48 hr at 25°C before dissecting their brains. TransTango: DNT2-Gal4 or Oregon female virgins were crossed with TransTango males, progeny flies were raised at 18°C constantly and 15 days after eclosion, and female flies were selected for immunostaining. Thermogenetic activation with TrpA1: Fruit flies were bred at 18°C from egg laying to 4 days post-adult eclosion, then shifted to 29°C in a water bath for 24 hr followed by 24 hr recovery at room temperature for over-expressed DNT-2FL-GFP; for the other experiments, after breeding as above, adult flies were transferred to an incubator at 30°C, kept there for 24 hr, and then brains were dissected. Conditional gene over-expression and RNAi knock-down: Flies bearing the temperature-sensitive GAL4 repressor tubGal80ts were kept at 18°C from egg laying to adult eclosion, then transferred to 30°C incubator for 48 hr for Dcp-1+ and cell counting experiments and for 120 hr for TH+ cell counting.
 
-## Immunostainings
+#### Immunostainings
 
 Adult fruit fly female brains were dissected (in PBS), fixed (in 4% paraformaldehyde, room temperature, 20–30 min), and stained following standard protocols. Primary antibodies and their dilutions were as follows: mouse anti-Brp (nc82) 1:10 (DSHB); rabbit anti-GFP 1:250 (Thermo Fisher); mouse anti-GFP 1:250 (Thermo Fisher); chicken anti-GFP 1:500 (Aves); rabbit anti-FLAG 1:50 (Sigma); mouse anti-V5 1:50 (Invitrogen); chicken anti-HA 1:50 (Aves); rabbit anti-VGlut 1:500 (gift from Hermann); mouse anti-TH 1:250 (Immunostar); rabbit anti-TH 1:250 (Novus Biologicals); rabbit anti-DsRed 1:250 (Clontek); mouse anti-ChAT4B1 1:250 (DSHB); rabbit anti-5-HT 1:500 (Immunostar); and rabbit anti-DCP-1 1:250 (Cell Signalling). Seconday antibodies were all used at 1:500 and all were from Thermo Fisher: Alexa Flour 488 goat anti-mouse, Alexa Flour 488 donkey anti-rabbit, Alexa Flour 488 goat anti-rabbit (Fab')2, Alexa Flour 488 goat anti-chicken, Alexa Four 546 goat anti-rabbit, Alexa Four 546 goat anti-mouse, Alex Four 647 goat anti-rabbit, and Alex Four 647 goat anti-mouse.
 
-## Microscopy and imaging
+### Microscopy and imaging
 
-## Laser scanning confocal microscopy
+#### Laser scanning confocal microscopy
 
 Stacks of microscopy images were acquired using laser scanning confocal microscopy with either Zeiss LSM710, 900, or Leica SP8. Brains were scanned with a resolution of 1024 × 1024, with Leica SP8 ×20 oil objective and 1 mm step for whole brain and DCP-1 stainings, ×40 oil objective and 1 mm step for central brain. Resolution of 1024 × 512 was used for analysing PAM clusters with 0.96 mm step for cell counting; 0.5 mm step for neuronal morphology; and ×63 oil objective with 0.5 mm step for neuronal connections. Acquisition speed in Leica SP8 was 400 Hz, with no line averaging. Resolution of 3072 × 3072 was used for single-image analysis of synapses using either Leica SP8 or Zeiss LSM900 and Airyscan acquisition with ×40 water objective speed 6, and average 4, or with 1024 × 512, with ×40 oil lens 2× zoom and 0.35 mm step. TH counting in PAM were scanned with Zeiss 710 with a resolution 1024 × 1024, ×40 oil objective, step 1 mm, speed 8. Zeiss LSM900 Airyscan with a resolution of 1024 × 1024, ×40 water objective, speed 7, 0.7 zoom, and 0.31 µm step size was used for acquisition of optical sections of synapses in PAM neurons.
 
-## Optogenetics and Epac1 FRET two-photon imaging
+#### Optogenetics and Epac1 FRET two-photon imaging
 
 To test whether DNT-2 neurons can respond to dopamine via the Dop2R inhibitory receptor, we used the cAMP sensor Epac1 and two-photon confocal microscopy. Epac1 is FRET probe, whereby data are acquired from CFP and YFP emission and lower YFP/CFP ratio reveals higher cAMP levels. DNT-2Gal4 flies were crossed to UAS-CsChrimson UAS Epac1 flies to stimulate DNT-2 neurons and detect cAMP levels in DNT2 neurons. 1–3-day-old DNT2Gal4>UASCsChrimson, UAS Epac1 flies were collected and separated in two groups. Flies bearing DNT2Gal4 UASCsChrimson UAS Epac1 UASDop2RRNAi were fed on 50 μM all-trans retinal food for at least 3 days prior to imaging and kept in constant darkness prior to the experiment.
 
@@ -174,17 +893,17 @@ Optogenetic stimulation of fly brains expressing CsChrimson in DNT-2 neurons was
 
 Image analysis of Epac data was carried out using ImageJ. The two channels (YFP and CFP) were separated, and the ratio of YFP/CFP for each pixel was calculated using the ImageJ>Image Calculator by diving YFP channel by CFP channel. The obtained result of YFP/CFP ratio was saved, the mean ratio of YFP/CFP in the ROI was calculated for each time point, and 11 time points were used. The 11 values represent the ratio of YFP/CFP change in the cell body upon stimulation, with 30 s interval and repeated 10 times.
 
-## Cell counting
+#### Cell counting
 
 To count cells labelled with nuclear reporters (e.g. Histone-YFP, nls-tdTomato) and Dcp-1+ cells, where signal is of high intensity, contrast, and sphericity, we adapted the DeadEasy Central Brain ImageJ plug-in (Li et al., 2020) for automatic cell counting in adult brains (Figure 3—source code 1). DeadEasy plug-ins automatically identify and count cells labelled with nuclear reporters in 3D stacks of confocal image in the nervous system of embryos (Forero et al., 2010a; Forero et al., 2010b), larvae (Kato et al., 2011; Forero et al., 2012; Losada-Perez et al., 2016; Harrison et al., 2021), and adult (Li et al., 2020) Drosophila. DeadEasy plug-ins are accurate at counting cells sparsely labelled with nuclear markers, and importantly, treat all genotypes objectively and equally yielding reliable data. Here, adult brains expressing Histone-YFP or nls-td-tomato reporters were dissected, fixed, and scanned without staining them. DeadEasy Central Brain was used with threshold set to 75.
 
 To count the TH-labelled PAMs, where both the signal and the labelled cell shape are more irregular, we used assisted manual cell counting using two methods. First, we developed a plug-in called DeadEasy Dopaminergic3D (Figure 3—source code 2) as follows. A median filter was used to reduce Poison noise, without having large losses at the edges. Then, a 3D morphological closing was performed. Next, all very dark pixels were assigned a value of zero. To mark each cell, each chasm in the image was found using a 3D extended h-minimal transform. As more than one local minimum can be found within each cell, which would result in counting a cell multiple times, a 3D inverse dome detection was performed, and then labelled. Thus, each inverse dome was used as a seed to identify each cell. Once the seeds were obtained, a 3D watershed transformation was performed to recover the shape of the cells. Then, we ran DeadEasy DAN on our raw data to obtain a results stack of images and formed a merged stack between the raw and result stacks to manually add any missing cells. This assisted cell counting method was effective at producing accurate cell counts with less labour and time than conventional manual counting and worked well for some genotypes (Figure 3D). However, it was less effective with RNAi knock-down genotypes, where the signal can be less intense, for which TH+ cells were either corrected manually or counted manually, assisted by the ImageJ cell counter instead.
 
-## Dendrite analysis with Imaris
+#### Dendrite analysis with Imaris
 
 To analyse dendritic complexity, image data were processed with Imaris using the ‘Filaments’ module with the default algorithm and ‘Autopatch function’. A simple ROI with parallelepiped shape was delimited. Thresholds were set for the largest and the smallest diameter of the dendrite, and this was consistent across samples within the same experiment. The starting point threshold was adjusted to only represent the soma of the neurons, and the ‘Seed Points threshold’ to match the branches of the neurons. ‘Remove Seed Points Around Starting Points’ and ‘Remove Disconnected Segments’ were chosen, keeping the default values. The threshold for background substation and local contrast was consistent across all samples within an experiment. The ‘Edit function’ within the Filaments module was used to correct any inaccuracy detected in the resulting tracing. The number of dendritic branches, dendritic segments, dendritic branch points, and dendritic terminal points were collected to compare the differences between the groups.
 
-## Vesicles, synapses, and PSD analysis with Imaris
+#### Vesicles, synapses, and PSD analysis with Imaris
 
 To analyse the number and volume of Homer-GCaMP GFP+ PSDs, Syt-GCaMP GFP+ pre-synaptic sites and DNT-2FLGFP+ vesicles, optical section images of confocal stacks through the brain were processed with the Imaris ‘Spot function’. To analyse the number and volume of Homer-GCaMP GFP+ PSDs, the ‘Surface module’ from Imaris was used to restrict an ROI. Then, ‘Absolute Intensity Thresholding’ method was applied to each sample choosing the same cutoff each time. The resulting surface was applied to mask the original scan. The masked image was processed using ‘Image Processing module’ from Imaris. Background subtraction followed by threshold cutoff filters were applied. Afterwards, the ‘Spots module’ was used as explained below.
 
@@ -192,20 +911,20 @@ An ROI was determined for Syt-GCaMP GFP+ pre-synaptic sites and DNT-2FLGFP+ vesi
 
 The ‘Spots module’ algorithm was set to ‘Different Spot Sizes’. An Estimated XY Diameter was set according to each experiment group using the same within an experiment. ‘Background Subtraction’ option was selected. ‘Intensity Center Filter’ was used. ‘Spot Region’ type was determined from ‘Local Contrast’, and the ‘Region Threshold’ according to the ‘Region Border’. Setting of the threshold was consistent across genotypes.
 
-## Behaviour
+### Behaviour
 
-## Startle-induced negative geotaxis assay
+#### Startle-induced negative geotaxis assay
 
 Startle-induced negative geotaxis assay was carried out as described in Sun et al., 2018. Groups of approximately 10 male flies of the same genotype were placed in a fresh tube one night before the test, after which flies were transferred to a column formed with two empty tubes 15 cm long and 2 cm and then habituated for 30 min. Columns were tapped 3–4 times, flies fell to the bottom, and then climbed upwards. Multiple rounds of testing were performed 3–7 times in a row per column. The process was filmed and films were analysed. Flies were scored during the first 15 s after the tapping, and those that climbed above 13 cm and those that climbed below 2 cm were counted separately. Results given are mean ± SEM of the scores obtained with 10 groups of flies per genotype. The performance index (PI) is defined as 1⁄2[(ntot + ntop − nbot)/ntot], where ntot, ntop, and nbot are the total number of flies, the number of flies at the top, and the number of flies at the bottom, respectively. The assay was carried out at 25°C, 55% humidity. Flies with tubGal80ts to conditionally overexpress or knock-down were shifted from 18 to 30° at eclosion and kept for 5 days at 30°C to induce Gal4. Experiments were carried in an environmental chamber at 31°C, 60% humidity or in a humidity and temperature-controlled behaviour lab always kept at 25°C.
 
-## Spontaneous locomotion in an open arena
+#### Spontaneous locomotion in an open arena
 
 Male flies of each genotype were collected and kept in groups of 10–20 flies in vials containing fresh fly food for 5–9 days. Before filming, three male flies from one genotype were transferred into a 24 mm well of a multi-well plate using an aspirator and habituated for 15–20 min. The multi-well plate with transparent lid and bottom was placed on a white LED light pad (XIAOSTAR Light Box) and either inside a light-shielding black box (PULUZ, 40 * 40 * 40 cm) in a room with constant temperature (25°C) and humidity (55%) to maintain stable environmental conditions (Figure 6D) or inside a temperature-controlled environmental chamber at 18°C or 30°C (Figure 6E and F). The locomotion behaviour of freely moving flies was filmed with a camera (Panasonic, HC-V260) in the morning from ZT1-ZT4 and for 10 min at a frame rate of 25 fps. The 10 min videos were trimmed (from 00:02:00 to 00:07:00) to 5 min videos for analysis using FlyTracker software (Eyjolfsdottir et al., 2014) for Figure 6E and F and this software, with a slight modification for Figure 6D (Figure 6—source data 1). For the DNT-2 mutants and over-expression of Toll-6CY experiments, flies were bred and tested at 25°C. To test over-expression of DNT-2 with tubGAL80ts; DNT2-Gal4>UAS-DNT-2FL, flies were raised at 18°C until eclosion, and controls were kept and tested at 18°C; test groups were transferred directly after eclosion to 30°C for 5 days and tested in an environmental chamber kept at 30°C, 60%. For thermo-genetic activation of DNT2 neurons using TrpA1 (DNT-2GAL4>UASTrpA1), flies were bred at 18°C and kept at 18°C for 7–9 days post-eclosion. Following habituation at 18°C for 20 min in the multi-well plates, they were transferred to the 30°C chamber 10 min before filming to activate TrpA1 and then filmed for the following 10 min. Fly locomotion activity was tracked using FlyTracker (https://kristinbranson.github.io/FlyTracker/index.html) and calculated (distance and speed) in MATLAB (Eyjolfsdottir et al., 2014) using the raw data generated from the tracking procedure (see also Figure 6—source code 1 for Figure 6D). The ‘walking distance’ was calculated as the sum of the distance flies moved, and the ‘walking speed’ was the speed of flies only when they were walking, and it was calculated using only frames where flies moved above 4 mm/s (which corresponds to two body lengths).
 
-## Appetitive long-term memory test
+#### Appetitive long-term memory test
 
 Appetitive long-term memory was tested as described in Krashes and Waddell, 2011. The two conditioning odours used were isoamyl acetate (Sigma-Aldrich #24900822 6 mL in 8 mL mineral oil; Sigma-Aldrich #330760) and 4-methylcyclohexanol (Sigma-Aldrich #153095, 10 mL in 8 mL mineral oil). Groups of 80–120 mixed sex flies were starved in a 1% agar tube filled with a damp 20 × 60 mm piece of filter paper for 18–20 hr before conditioning. During conditioning training, one odorant was presented with a dry filter paper (unconditioned odour, CS-) for 2 min, before a 30 s break, and presentation of a second odorant with filter paper coated with dry sucrose (conditioned odour, CS+). The test was repeated pairing the other odorant with sucrose, with a different group of flies to form one replicate. After training, flies were transferred back to agar tubes for testing 24 h later. PI was calculated in the same way as in Krashes and Waddell, 2011, as the number of flies approaching the conditioned odour minus the number of flies going in the opposite direction, divided by the total number of flies. A single PI value is the average score from the test with the reverse conditioning odour combination. Groups for which the total number of flies among both odorants was below 15 were discarded. For the DNT-2 over-expression experiments with tubGAL80ts; DNT-2>DNT-2FL, flies were raised at 18°C until 7–9 days post-eclosion. They were then either transferred to and maintained at 23°C (controls) or 30°C for 18–20 hr starvation, training, and up to testing 24 hr later.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were carried out using GraphPad Prism. CI was 95%, setting significance at p<0.05. Chi-square tests were carried out when comparing categorical data. Numerical data were tested first for their type of distributions. If data were distributed normally, unpaired Student’s t-tests were used to compare means between two groups and one-way ANOVA or Welch ANOVA for larger groups, followed by post hoc Dunnett’s test for multiple comparisons to a fixed control. Two-way ANOVA was used when comparisons to two variables were made. If data were not normally distributed, non-parametric Mann–Whitney U-test for two two group comparisons and Kruskal–Wallis ANOVA for larger groups, followed by post hoc Dunn’s multiple comparisons test to a fixed control. Statistical details, including full genotypes, sample sizes, tests, and p-values, are provided in Supplementary file 2.

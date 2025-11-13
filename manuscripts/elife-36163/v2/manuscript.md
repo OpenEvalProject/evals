@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.36163.001 Transparent reporting is essential for the critical evaluation of studies. However, the reporting of statistical methods for studies in the biomedical sciences is often limited. This systematic review examines the quality of reporting for two statistical tests, t-tests and ANOVA, for papers published in a selection of physiology journals in June 2017. Of the 328 original research articles examined, 277 (84.5%) included an ANOVA or t-test or both. However, papers in our sample were routinely missing essential information about both types of tests: 213 papers (95% of the papers that used ANOVA) did not contain the information needed to determine what type of ANOVA was performed, and 26.7% of papers did not specify what post-hoc test was performed. Most papers also omitted the information needed to verify ANOVA results. Essential information about t-tests was also missing in many papers. We conclude by discussing measures that could be taken to improve the quality of reporting.
+Transparent reporting is essential for the critical evaluation of studies. However, the reporting of statistical methods for studies in the biomedical sciences is often limited. This systematic review examines the quality of reporting for two statistical tests, t-tests and ANOVA, for papers published in a selection of physiology journals in June 2017. Of the 328 original research articles examined, 277 (84.5%) included an ANOVA or t-test or both. However, papers in our sample were routinely missing essential information about both types of tests: 213 papers (95% of the papers that used ANOVA) did not contain the information needed to determine what type of ANOVA was performed, and 26.7% of papers did not specify what post-hoc test was performed. Most papers also omitted the information needed to verify ANOVA results. Essential information about t-tests was also missing in many papers. We conclude by discussing measures that could be taken to improve the quality of reporting.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ To obtain our sample two reviewers independently examined all original research 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/36163/elife-36163-fig1-v2.jpg)
 
-**Figure 1.:** The flow chart illustrates the selection of articles for inclusion in this analysis at each stage of the screening process.10.7554/eLife.36163.003Figure 1—source data 1.
+**Figure 1.:** The flow chart illustrates the selection of articles for inclusion in this analysis at each stage of the screening process.
 
 ## Can we determine which type of ANOVA was performed?
 
@@ -49,7 +49,7 @@ While ANOVA encompasses a wide variety of techniques, basic biomedical science p
 
 **Figure 2.:** The figure illustrates the proportion of papers in our sample that reported information needed to determine what type of ANOVA was performed, including the number of factors, the names of factors, and the type of post-hoc tests. The top panel presents the proportion of all papers that included ANOVA (n = 225). 'Sometimes' indicates that the information was reported for some ANOVAs but not others. The bottom row examines the proportion of papers that specified whether each factor was between vs. within-subjects. Papers are subdivided into those that reported using repeated measures ANOVA (n = 41), and those that did not report using repeated measures ANOVA (n = 184). RM: repeated measures.
 
-## The number of factors included in the ANOVA and the names and levels of each factor
+### The number of factors included in the ANOVA and the names and levels of each factor
 
 16.9% of papers (38/225) failed to specify how many factors were included for any ANOVA performed in the paper. 54% of papers did not specify which factors were included in any ANOVA, whereas fewer than half of papers specified which factors were included for some (n = 13, 5.8%) or all (n = 90, 40%) ANOVAs reported in the manuscript.
 
@@ -63,7 +63,7 @@ Our data suggest that reporting the number, names and levels of factors may be p
 
 **Figure 4.:** This figure compares key features of one- and two-way ANOVAs to illustrate potential problems with using a one-way ANOVA for a design with two or more factors. When used for a study with two factors, the one-way ANOVA incorrectly assumes that the groups are unrelated, generates a single p-value that does not provide information about which groups are different, and does not test for interactions. The two-way ANOVA correctly interprets the study design, which can increase power. The two-way ANOVA also allows for the generation of a set of p-values that provide more information about which groups may be different, can test for interactions, and may eliminate the need for unnecessary post-hoc comparisons. This figure uses an experimental design with four groups (wild-type mice receiving placebo, wild-type mice receiving an experimental drug, knockout mice receiving placebo and knockout mice receiving an experimental drug). See Figure 2 for a detailed explanation of the material in the statistical implications section. KO: knockout; WT: wild-type; Pla: placebo.
 
-## Whether each factor was entered as a between (independent) or within (non-independent) subjects factor
+### Whether each factor was entered as a between (independent) or within (non-independent) subjects factor
 
 Among the 18.2% of papers (41/225) that reported using repeated measures ANOVA, 63.4% (n = 26) did not specify whether each factor was entered as a between or within-subjects factor. Many of the 15 papers that provided adequate information reported using one-way repeated measures ANOVA. When the ANOVA only includes one factor, stating that repeated measures were used demonstrates that this factor was treated as a within-subjects or non-independent factor. When a repeated measures ANOVA includes two or more factors, however, authors need to clearly report which factors were treated as between vs. within-subjects factors. A two-way repeated measures ANOVA could refer to two different tests – an ANOVA with two within-subjects factors, or an ANOVA with one within-subjects factor and one between-subjects factor (Box 1).
 
@@ -73,7 +73,7 @@ The remaining 81.8% of papers that included ANOVA did not indicate whether repea
 
 **Figure 5.:** This figure highlights the differences between ANOVA with vs. without repeated measures and illustrates the problems with using an ANOVA without repeated measures when the study design includes longitudinal or non-independent measurements. These two tests interpret the data differently, test different hypotheses, use information differently when calculating the test statistic, and give different results.
 
-## The type of post-hoc test that was performed
+### The type of post-hoc test that was performed
 
 Clear reporting of post-hoc testing procedures allows readers to determine how the authors decided whether to use post-hoc tests, what type of post-hoc tests were performed and whether the tests results were adjusted for multiple comparisons. 72.8% of papers (164/225) stated what test was used to examine pairwise differences after performing an ANOVA (such as Tukey and Bonferroni). The remaining 27.1% of papers (61/225) did not specify what type of post-hoc tests were performed.
 
@@ -81,7 +81,7 @@ Clear reporting of post-hoc testing procedures allows readers to determine how t
 
 Many of the 179 papers that included a t-test were missing information that was needed to determine what type of t-test was performed, including whether the tests were paired or unpaired, or assumed equal or unequal variance.
 
-## Unpaired vs. paired t-tests
+### Unpaired vs. paired t-tests
 
 Over half of the papers (53%; 95/179) did not specify whether any t-tests were paired or unpaired; a small proportion (2.2%; 4/179) provided this information for some but not all of the t-tests in the paper. 69 of the 95 papers without any information on paired vs. unpaired t-tests reported that the Student’s t-test was used. While the term Student’s t-test traditionally refers to the unpaired t-test for equal variances, we identified numerous instances where authors referred to a paired t-test as a Student’s t-test. Due to this confusion, we did not assume that the Student’s t-test was unpaired unless the authors included additional terms like unpaired t-test or independent samples t-test. Figure 6 illustrates why clear reporting that allows readers to confirm that the correct test was used is essential. Unpaired and paired t-tests interpret the data differently, test different hypotheses, use different information to calculate the test statistic and usually give different results. If the incorrect test is used, the analysis tests the wrong hypothesis and the results may be misleading. Without the original data, it is difficult to determine how the test results would have been different had the appropriate tests been used.For example, differencesbetween the results of the paired and unpaired t-tests depend on the strength of the correlation between paired data points (Figure 7), which is difficult or impossible to determine from line graphs that only show summary statistics.
 
@@ -93,7 +93,7 @@ Over half of the papers (53%; 95/179) did not specify whether any t-tests were p
 
 **Figure 7.:** The three datasets use different pairings of the values shown in the dot plot on the left. The comments on the right side of the figure illustrate what happens when an unpaired t-test is inappropriately used to compare paired, or related, measurements. We expect paired data to be positively correlated – two paired observations are usually more similar than two unrelated observations. The strength of this correlation will vary. We expect observations from the same participant to be more similar (strongly correlated) than observations from pairs of participants matched for age and sex. Stronger correlations result in greater discrepancies between the results of the paired and unpaired t-tests. Very strong correlations between paired data are unusual but are presented here to illustrate this relationship. We do not expect paired data to be negatively correlated – if this happens it is important to review the experimental design and data to ensure that everything is correct.
 
-## Equal vs. unequal variance
+### Equal vs. unequal variance
 
 When using unpaired t-tests, it is important to specify whether the test assumes that the variance is equal in both groups. The unpaired Student’s t-test (also called the t-test for equal variances) assumes that the variance is similar in both groups, whereas the Welch’s t-test (the t-test for unequal variances) assumes that variance differs between the two groups. If the variance is not estimated appropriately, the type I error is actually higher than advertised; this means that the null hypothesis is falsely rejected more often (Ruxton, 2006). Among the 155 papers that included unpaired t-tests, 64.5% (100/155) reported whether the test assumed equal variance for all unpaired t-tests and 6.5% (10/155) provided this information for some unpaired tests.
 
@@ -107,6 +107,43 @@ Among the studies in our sample that included ANOVA (Figure 8), more than 95% fa
 
 **Figure 8.:** This figure reports the proportion of papers with ANOVAs (n = 225) that reported the F-statistic, degrees of freedom and exact p-values. Sometimes indicates that the information was reported for some ANOVAs contained in the paper but not for others.
 
+**Table 1.**
+ Reporting of details needed to verify the results of a t-test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Reported t-statistic</th>
+      <th>Reported exact sample size or degrees of freedom</th>
+      <th>Reported exact p-values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No</td>
+      <td>156 (95.7%)</td>
+      <td>11 (6.7%)</td>
+      <td>113 (69.3%)</td>
+    </tr>
+    <tr>
+      <td>Sometimes</td>
+      <td>0</td>
+      <td>27 (16.6%)</td>
+      <td>17 (10.4%)</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>7 (4.3%)</td>
+      <td>125 (76.7%)</td>
+      <td>33 (20.2%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_We analyzed the 179 papers in our sample that included t-tests to check if they reported the details that are needed to verify the results of these tests: we had to exclude 16 papers from this analysis because we were unable to determine what data were analyzed by t-tests or to identify a two-group comparison. Most of the papers (95.7%; 156/163) did not report the t-statistic (column 2) and over two-thirds (69.3%; 113/163) did not report exact p-values (column 4), but over three-quarters (76.7%; 125/163) reported the exact sample size or degree of freedom for all of the t-tests in the paper (column 3)._
+
 ## Moving towards a more transparent and reproducible future
 
 This systematic review demonstrates that t-tests and ANOVA may not be so simple after all, as many papers do not contain sufficient information to determine why a particular test was selected, what type of test was used or to verify the test result. Selecting statistical tests that are not appropriate for the study design may be surprisingly common. Often, it is not possible to determine why statistical tests were selected, or whether other analyses may have provided more insight. Investigators frequently present data using bar or line graphs that only show summary statistics (Weissgerber et al., 2015) and raw data are rarely available. Many journals have recently introduced policies to encourage more informative graphics, such as dot plots, box plots or violin plots, that show the data distribution (Nature, 2017; Fosang and Colbran, 2015; Kidney International, 2017; PLOS Biology, 2016; Teare, 2016) and may provide insight into whether other tests are needed. Non-parametric tests, such as the Mann-Whitney U test, Wilcoxon sign rank test and Kruskal Wallis test, may sometimes be preferable as sample sizes in basic biomedical science research are often too small to determine the data distribution. However, these tests are not commonly used. A systematic review of physiology studies showed that 3.8% used only non-parametric tests to compare continuous data, 13.6% used a combination of parametric and non-parametric tests, and 78.1% of studies used only parametric tests (Weissgerber et al., 2015). A recent primer Hardin and Kloke, 2017 provides a brief overview of common statistical techniques, including non-parametric alternatives to t-tests and ANOVAs.
@@ -119,14 +156,14 @@ Other possible solutions to improve reporting include strengthening and implemen
 
 ## Materials and methods
 
-## Systematic review of literature
+### Systematic review of literature
 
 Methodology for the systematic review was similar to the approach outlined in our previous paper (Weissgerber et al., 2015). Physiologists perform a wide range of studies involving humans, animals and in vitro laboratory experiments; therefore we examined original research articles that were published in June 2017 in the top 25% of journals (n = 21) in the Physiology category in Journal Citation Reports as determined by 2016 journal impact factor; six journals that only publish review articles and one journal that did not publish a June issue were excluded. Each phase of screening and data abstraction was performed by two independent reviewers (TLW, OGV). Disagreements were resolved by consensus. Both reviewers screened all articles published in each journal between June 1 and June 30, 2017 to identify full length, original research articles (Figure 1 and Supplementary file 1). Full text articles were then reviewed and papers were excluded if they did not include new data, did not have a continuous outcome variable, or did not include an analysis of variance (ANOVA) or t-test. Eligible manuscripts and supplements were reviewed in detail to evaluate the following questions according to a predefined protocol (Supplementary file 2). This systematic review was conducted in accordance with those elements of the PRISMA guideline (Liberati et al., 2009) that are relevant to literature surveys.
 
-## Questions asked for papers that included ANOVAs
+#### Questions asked for papers that included ANOVAs
 
-## Questions asked for papers that included t-tests
+#### Questions asked for papers that included t-tests
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as n (%). The objective of this observational study was to assess standard practices for reporting statistical methods and results when data are analyzed by ANOVA; therefore no statistical comparisons were performed. Summary statistics were calculated using JMP (10.0.0, SAS Institute Inc., Cary, NC). Ethical approval was not required.

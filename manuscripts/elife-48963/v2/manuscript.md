@@ -43,7 +43,7 @@ Given the complex role of autophagy in PDAC, the role of interactions between MA
 
 ## Results
 
-## Mutational landscape of MAGEA genes in cancer
+### Mutational landscape of MAGEA genes in cancer
 
 The MAGEA gene family is located on the X chromosome and consists of thirteen protein-encoding genes (MAGEA1 to A6, A8 to A12, A2B, and A9B) and one pseudogene, MAGEA7P. About 1000 unique non-silent MAGEA gene aberrations have been identified by ICGC (ICGC/TCGA Pan-Cancer Analysis of Whole Genomes Consortium, 2020), The Cancer Genome Atlas (TCGA), and Catalogue of Somatic Mutations in Cancer (COSMIC) (Tate et al., 2019) pan-cancer analyses (Figure 1A). Most of these gene aberrations are missense mutations, and they are clustered on MAGEA1, A3, A4, A6, A8, A10, A11, and A12. As a group, MAGEA gene family members, are more frequently mutated in TCGA lung cancer patients and pancreatic cancer patients when compared to a randomized gene set of 1000 genes with similar size to MAGEAs (Figure 1B), suggesting that mutation of MAGEA genes is functionally important in cancer.
 
@@ -53,17 +53,69 @@ The MAGEA gene family is located on the X chromosome and consists of thirteen pr
 
 MAGEA genes represent an attractive group of antigens for cancer immunotherapy owing to their upregulation in cancer tissues. Indeed, over the past 10 years, 42 phase I and II clinical trials (Supplementary file 2) have explored MAGEA3, A4, A6, A10, and A12 as targets for immunotherapy. More than 500 recurrent mutations have been identified in the five clinically studied MAGEA genes in TCGA, ICGC, and COSMIC pan-cancer analyses (Figure 1C). These mutations were uniformly distributed along the entire gene without any obvious mutational hotspots.
 
-## Cancer-specific mutations of MAGEA genes reduce their protein expression
+### Cancer-specific mutations of MAGEA genes reduce their protein expression
 
 We leveraged our High-Throughput Mutagenesis and Molecular Barcoding (HiTMMoB) technology (Tsang et al., 2016) to mimic 82 recurrent mutation events (found in at least 150 cancer patients) in the five MAGEA genes that have been evaluated in clinical trials (Figure 1C and Supplementary file 3). To evaluate the impact of the mutations on protein expression, equal amounts of mutant plasmids were transfected individually into HEK293T cells. Due to the specificity limit of the antibody targeting MAGEA12, we were unable to confirm protein level changes of MAGEA12 variants (Figure 2—figure supplement 1), and thus we decided to remove them from the statistical analysis. About one-third of the MAGEA variants (21/67; 20 missense mutations and one nonsense mutation) showed a marked reduction in protein expression compared with their wild-type counterparts (Figure 2A and B and Figure 2—figure supplement 2). For most of the under-expressed variants (20/21), the mutations lay within a highly conserved MAGE homology domain (MHD) domain (Figure 2—figure supplement 3) at the C-terminus of the four MAGEA genes (Figure 2A). The amino acids that led to lower protein levels when mutated were significantly more conserved than residues that did not alter protein expression when mutated (Figure 2C), suggesting that the C-terminal region is important in regulating or maintaining protein stability.
 
-## MAGEA variants are degraded through the ubiquitin proteasome pathway
+![Figure 2.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig2-v2.jpg)
+
+**Figure 2.:** (A) Immunoblot analysis of MAGEA3, A4, A6 and A10 variants expressed in HEK293T cells. Variants that are not recognized by the antibody (gray), variants expressed at levels 33% (three standard deviation determined by the expression deviation analysis in Figure 2—figure supplement 2) or less than those of the wild-type (WT) (red) are indicated. MAGE_N: N-terminal MAGE domain. (B) Densitometry analysis of protein expression of the MAGEA variants in (A). Each variant is represented by a dot, and the dots are shown in the same order and colors as in (A). The blue area represents three standard deviations, determined from Figure 2—figure supplement 2. (C) Conservation score analysis (mean ± standard deviation) of amino acids that show reduced protein expression and those that show unchanged protein expression when mutated. P value was calculated by two-tailed unpaired t-test (N = 26 for no change cohort, N = 17 for low-expression cohort).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** MAGEA12 and the non-specific band recognized by MAGEA12 antibody are indicated as ← and *, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Standard deviation of all 15 samples = 0.1118.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Wild-type amino acids of recurrent mutations are shown and colored as in Figure 2A.
+
+### MAGEA variants are degraded through the ubiquitin proteasome pathway
 
 We speculated that the low expression of the cancer-associated MAGEA variants is ubiquitin proteasome dependent owing to their reported interaction with the various E3 ubiquitin ligase (Doyle et al., 2010). Indeed, while a subset of MAGEA variants had lower level of transcripts than wild-type MAGEA (Figure 3—figure supplement 1), in general their protein and mRNA expression levels did not correlate and changes in transcript levels were insufficient to explain changes in protein amounts (Figure 3A). More importantly, the addition of proteasome inhibitor MG132 increased protein amounts of multiple MAGEA3, MAGEA6 and MAGEA10 variants (Figure 3B and Figure 3—figure supplement 2), indicating that the proteasome is a major mediator of degradation. However, the protein amounts of a number of the MAGEA variants were not altered by MG132 treatment, suggesting that alternative mechanisms contribute to the discrepancy between RNA and protein amount in these examples. Our data demonstrated that a high number of MAGEA variants are degraded through the ubiquitin proteasome pathway. Further evaluation is needed to determine the efficacy of immunotherapy targeting these low-expression MAGEA variants in cancer.
 
-## Cancer-specific mutations and glucose/glutamine depletion stimulate proteasome-dependent MAGEA6 degradation
+![Figure 3.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig3-v2.jpg)
+
+**Figure 3.:** (A) Correlation study of protein vs. mRNA expression of MAGEA variants. MAGEA variant protein and mRNA expression levels shown in Figure 3B and Figure 3—figure supplement 1, respectively, were analyzed after normalized to their corresponding wild-type. Pearson correlation coefficient r (N = 21) was calculated using GraphPad. (B) Immunoblot of MAGEA variants expressed in HEK293T cells with or without MG132 treatment for 9 hr. Variants that showed increased protein levels under MG132 treatment are in green.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** qRT-PCR primer RT#3 was used, and MAGEA expression is normalized to that of parental HEK293T cells. *P value < 0.05; two-tailed unpaired t-test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Each dot represents a variant.
+
+### Cancer-specific mutations and glucose/glutamine depletion stimulate proteasome-dependent MAGEA6 degradation
 
 Recently, an International Cancer Genome Consortium (ICGC) study listed MAGEA6 among the top 16 significantly mutated genes across tumors in two of three computational methods used (Fisher combined p value test, p=0.07; likelihood ratio test, p=9.88E-05; convolution test, p=8.85E-05) (Biankin et al., 2012). The study identified two MAGEA6 mutations, MAGEA6N254I (tumor specimen PACA-86-T) and MAGEA6H305fs*>7 (tumor specimen ICGC_0050_TD), in PDAC patients. To examine the effects of the cancer-specific variants in the proper cell lineage, we stably expressed the MAGEA6 variants in non-transformed human pancreatic ductal epithelial cells (HPDE-iKRAS) (Tsang et al., 2016) and two PDAC cell lines, BxPC-3 and MIA PaCa-2 using lentivirus (Figure 4A and Figure 4—figure supplement 1). Although quantitative real-time polymerase chain reaction (qRT-PCR) confirmed high mRNA expression of both wild-type and mutant MAGEA6, the protein expression of the mutants was significantly downregulated compared to wild-type. Notably, MAGEA6H305fs*>7 loses its termination codon owing to a frameshift deletion, which allows part of the vector sequence to be translated and results in a 26–amino acid addition (ERGGRVIPSFLVQSWHYKKALLINLLQRTGHYQSK) at the C-terminus, distinct from the wild-type. This change is reflected in the size increase of the MAGEA6H305fs*>7 protein (Figure 4A and Figure 4—figure supplement 1). The clone is referred to as MAGEA6H305fs* hereafter to indicate the loss of the last 11 amino acids.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig4-v2.jpg)
+
+**Figure 4.:** (A) Immunoblots (left) and qRT-PCR (right) analysis of HPDE-iKRAS cells expressing GFP (Vec) and MAGEA6 variants with or without MG132. WT: wild-type, GAPDH: glyceraldehyde 3-phosphate dehydrogenase. (B) V5 pull-down assays of HEK293T lysate expressing V5-tagged GFP/MAGEA6 variants with or without MG132 treatment for 6 hr. Immunoblots of the pulled-down samples (left) and total lysate (right) are shown. HA: hemagglutinin, Ub: ubiquitin. (C) Immunoblot analysis of MAGEA6 in the transduced HPDE-iKRAS cells cultured in KSFM for the indicated times and (D) in the presence or absence of doxycycline at the indicated time points. KSFM was refreshed every 24 hr in the last four lanes throughout the experiment. (E) Immunoblot analysis of HPDE-iKRAS cells cultured in DMEM– supplemented with PBS, FBS, glutamine, or glucose, as indicated, for 5 hr and (F) 24 hr. (G) Immunoblot analysis of HPDE-iKRAS cells cultured in DMEM– or in FBS-, glucose-, and glucose-supplemented DMEM (F) with or without MG132 treatment for 6 hr.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Immunoblot (left) and qRT-PCR (right) analysis of MAGEA6 in BxPC-3 (A) and MIA PaCa-2 (B) in the presence or absence of MG132.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Immunoblots of V5-tag pulled-down samples (left) and total lysate (right) are shown.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Cell proliferation analysis of HPDE-iKRAS cells (mean ± standard deviation of replicates, N = 3). (B) Immunoblot study of the transduced HPDE-iKRAS cells with the estimated cell confluency (bottom).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Immunoblot analysis of MAGEA6 in transduced PDAC lines AsPC-1 (left), BxPC-3 (middle), and MIA PaCa-2 (right) in nutrient-depleted DMEM (-) with or without MG132. Fully nutrient-supplemented DMEM (f) served as a control.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** HPDE-iKRAS cells expressing wild-type MAGEA6 were treated with AKT and mTORC1 inhibitors (MK2206 and rapamycin, respectively) as indicated. Immunoblots of AKT and S6K phosphorylation status confirmed the efficacy of these inhibitors.
 
 Consistent with our MAGEA study in 293 T cells, addition of MG132 to the stable lines expressing MAGEA6 variants resulted in a dramatic increase in mutant protein levels, which reached levels similar to those of wild-type (Figure 4A and Figure 4—figure supplement 1), supporting proteasome-mediated degradation as a means of decreasing amounts of these MAGEA6 variants. A co-immunoprecipitation assay using HEK293T cell lysate co-expressing C-terminal V5-tagged green fluorescent protein (GFP) or MAGEA6 variants and N-terminal hemagglutinin (HA) -tagged ubiquitin revealed a strong HA-polyubiquitin signal on mutant MAGEA6 proteins, which was further enhanced by MG132 treatment (Figure 4B). We also detected a strong polyubiquitination signal on MAGEA6H305fs* and MAGEA6N254I after MG132 treatment with an antibody targeting endogenous ubiquitin in HEK293T cells (Figure 4—figure supplement 2), indicating that the MAGEA6 polyubiquitination observed in our co-expression study was not an artifact of ubiquitin overexpression.
 
@@ -75,17 +127,43 @@ Since cancer cells often require increased amounts of nutrients, such as glucose
 
 To examine whether MAGEA6 protein stability is maintained by mTORC1, we treated HPDE-iKRAS MAGEA6-expressing cells with rapamycin and MK2206 to inhibit mTORC1 or its upstream kinase AKT1, respectively. We did not observe any change in MAGEA6 protein amount after either treatment (Figure 4—figure supplement 5), suggesting that MAGEA6 protein levels are not regulated by the AKT/mTORC1 pathway. Consistent with a role of ubiquitination for protein degradation regulation, addition of MG132 to the starved HPDE-iKRAS cells (Figure 4G) and other PDAC lines (Figure 4—figure supplement 4) fully rescued MAGEA6 from degradation. In summary, our data show that cancer-specific mutations and carbon source depletion induce MAGEA6 degradation by proteasomes.
 
-## Wild-type MAGEA6, but not mutant MAGEA6, suppresses basal autophagy and starvation-induced autophagy activation
+### Wild-type MAGEA6, but not mutant MAGEA6, suppresses basal autophagy and starvation-induced autophagy activation
 
 In mammalian cells, mTORC1 and AMPK are key kinases that coordinate autophagy activity (Mihaylova and Shaw, 2011; Zoncu et al., 2011). mTORC1 activation promotes anabolic programs such as mRNA translation and represses catabolic programs such as autophagy when the nutrient supply is sufficient (Bar-Peled and Sabatini, 2014). The activation of mTORC1 can be informed by the phosphorylation status of its direct substrate S6K Thr389 (Zoncu et al., 2011). AMPK, on the other hand, is a pro-autophagy and energy-sensing kinase that is phosphorylated on Thr172 when activated (Hardie et al., 2016). In general, autophagy activity can be monitored by examining mTORC1 and AMPK pathways, counting LC3B puncta, and measuring autophagic flux, a frequently used technique to determine autophagy dynamics by comparing the amounts of stable protein substrates such as SQSTM1/p62 between samples in the presence and absence of lysosomal inhibitors (Bjørkøy et al., 2005).
 
 In agreement with the reported autophagy inhibitory role of MAGEA3/6 (Pineda et al., 2015), HPDE-iKRAS, AsPC-1, and MIA PaCa-2 cells stably expressing wild-type MAGEA6 showed reduced AMPK phosphorylation on Thr172 and increased S6K phosphorylation on Thr389 (Figure 5A and Figure 5—figure supplement 1). Immunofluorescence staining of LC3B in MAGEA6–expressing HPDE cells treated with lysosome inhibitor bafilomycin A1 (BafA1) dramatically reduced the cell population with a high number of LC3B puncta (Figure 5B), suggesting slower autophagosome formation and thus lower basal autophagy activity levels in these cells. Autophagic flux study using BafA1 showed slower SQSTM1/p62 accumulation in MAGEA6-expressing cells compared with control cells (Figure 5C, left), suggesting a slower turnover of SQSTM1/p62 and therefore further supporting the anti-autophagy role of MAGEA6. Importantly, cells expressing MAGEA6H305fs* and MAGEA6N254I, which are susceptible to proteasome mediated degradation, showed minimal changes in autophagy signaling (Figure 5A), autophagosome formation (Figure 5B), and autophagic flux (Figure 5C, right and Figure 5—figure supplement 2) compared with control cells.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig5-v2.jpg)
+
+**Figure 5.:** (A) Immunoblot analysis of autophagy signaling in HPDE-iKRAS cells expressing GFP (Vec) and MAGEA6 variants. (B) Immunofluorescence staining of LC3B puncta in the transduced HPDE-iKRAS cells. Representative photos (left) and statistical analysis (mean ± standard deviation of counted cells, N=~100 per cohort) are shown. *p=0.002; two-tailed unpaired t-test. (C) Immunoblot analysis of autophagy substrate SQSTM1/p62 in the transduced HPDE-iKRAS cells treated with BafA1 for the indicated time points., Immunoblot analysis of (D) autophagy signaling and (E) SQSTM1/p62 accumulation in wild-type MAGEA6 expressing and (F) autophagy signaling in MAGEA6H305fs* expressing HPDE-iKRAS cells under nutrient-deficient conditions. (G) Immunoblot analysis of autophagy signaling in wild-type MAGEA6 expressing cells under prolonged nutrient-deficient conditions.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig5-figsupp2-v2.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig5-figsupp3-v2.jpg)
+
 In nutrient-deficient conditions, short-term culture of HPDE-iKRAS cells in DMEM– showed a gradual reduction in MAGEA6 expression, although MAGEA6 levels still remained sufficient to suppress AMPK Thr172 phosphorylation, reduce induction of LC3B expression (Figure 5D) and to impair autophagic flux, as demonstrated by the slow accumulation of SQSTM1/p62 and LC3B in the presence of BafA1 (Figure 5E). In contrast, cells expressing MAGEA6H305fs* and MAGEA6N254I displayed autophagy activation similar to that in control cells (Figure 5F and Figure 5—figure supplement 3). Nevertheless, long-term culture (24 hr) of cells expressing wild-type MAGEA6 in DMEM– completely abolished MAGEA6 expression and thus allowed autophagy re-initiation, as indicated by low S6K Thr389 and high AMPK Thr172 phosphorylation (Figure 5G). In summary, MAGEA6 suppresses both basal and short-term starvation-induced autophagy in PDAC. Its autophagy-quenching effect is revoked when MAGEA6 is downregulated either by degradation-prone mutation or by long-term starvation-induced protein degradation.
 
-## MAGEA6 mutation status/protein amount manipulates autophagy to promote tumor progression at different stages
+### MAGEA6 mutation status/protein amount manipulates autophagy to promote tumor progression at different stages
 
 To investigate the oncogenic role of MAGEA6 in PDAC, we subjected non-transformed HPDE cells stably expressing wild-type MAGEA6 or GFP to bilateral subcutaneous implantation into athymic mice (5 × 105 cells per flank; N = 5 for each cohort). In consonance with its role in autophagy suppression, MAGEA6 expression transformed HPDE cells, induced xenograft tumor growth (Figure 6A), and led to poor survival (Figure 6B). In addition to autophagy suppression, MAGEA3/6 has been reported to enhance the degradation of the tumor suppressor p53 (Doyle et al., 2010), which may contribute to PDAC development. However, we did not find any association between endogenous MAGEA6 and p53 expression in HPDE-iKRAS or in six other PDAC cell lines (Figure 6—figure supplement 1). Furthermore, ectopic expression of MAGEA6 variants in the BxPC-3 and MIA PaCa-2 lines did not induce changes in p53 protein levels in the presence or absence of the proteasome inhibitor MG132 (Figure 4—figure supplement 1), indicating that MAGEA6 drives PDAC independently of p53.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig6-v2.jpg)
+
+**Figure 6.:** (A) Tumor volume plot (50 d after injection) and Kaplan-Meier survival plot (B) of xenograft assay using HPDE-iKRAS cells expressing GFP (Vec) or MAGEA6 (five mice, two injections each, N = 10). P value was calculated by two-tailed unpaired t-test in (A) and log-rank test in (B). (C) (Top) Tumor volume plot (100 d after injection) of xenograft assay using BxPC-3 cells transduced with MAGEA6 shRNAs (#4 and #6) and non-targeting shRNA (NT). P value was calculated by two-tailed unpaired t-test (three mice, two injections each, N = 6). (Bottom) Representative photos and quantification of LC3B immunohistochemical staining in the xenograft tumor samples. P value was calculated by two-tailed unpaired t-test (>150 cells analyzed per cohort). (D) Tumor volume plot (100 d after injection) of xenograft assay using BxPC-3 cells transduced with MAGEA6 (#4), ATG7, VPS34 shRNAs and non-targeting shRNA (NT). P value was calculated by two-tailed unpaired t-test (nine mice, one injection each, N = 9). (E) Patient survival analysis of low and high MAGEA6 expression in stage I (top), stage II (middle), and stage III (bottom) lung cancer. Number of patients analyzed per cohort is shown (Győrffy et al., 2013). P value was calculated by log-rank test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** qRT-PCR of endogenous MAGEA6 expression (A) and immunoblot analysis of endogenous p53 (B) in HPDE and six other PDAC cell lines.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) qRT-PCR analysis of MAGEA6 expression of the injected BxPC-3 cells in Figure 6C. P value was calculated by two-tailed unpaired t-test. (B) qRT-PCR analysis of MAGEA6, ATG7 and VPS34 expression of the injected BxPC-3 cells in Figure 6D. P value was calculated by two-tailed unpaired t-test.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/48963/elife-48963-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Immunoblot (A) and qRT-PCR analysis (B) of MAGEA6 variants identified from the ICGC lung cancer database. MAGEA6 variant expression levels are normalized to those of HEK293T cells transfected with GFP (Vec). MAGEA6 variants with low protein expression are in red.
 
 As stated earlier, autophagy exhibits both oncogenic and tumor-suppressing activities, largely depending on progression status of individual tumor. It is still unclear how autophagy is regulated to carry out these divergent activities during tumor development. The fact that MAGEA6 functions as a bona fide oncogene in PDAC but is subjected to degradation-prone mutation leads us to hypothesize that (1) MAGEA6 is an autophagy coordinator manipulating autophagy activity at different disease stages to promote tumor initiation and further development and (2) the nutrient-sensing stability of MAGEA6 provides autophagy regulation for better tumor survival under metabolically stressed conditions.
 
@@ -113,34 +191,34 @@ In summary, our findings reveal a previously unrecognized, mutation-directed reg
 
 More information of the reagents used in the study can be found in Supplementary file 1.
 
-## Cell culture
+### Cell culture
 
 All cell lines were propagated at 37°C in 5% CO2 in a humidified atmosphere. HPDE cells and HPDE-iKRAS cells were cultured as described previously (Tsang et al., 2016). AsPC-1, BxPC-3, Capan-1, Capan-2, Panc-1, and MIA PaCa-2 were purchased from the American Type Culture Collection and cultured according to the manufacturer’s recommendations. HEK293T cells were cultured in DMEM supplied with 10% FBS and 1% penicillin-streptomycin. All human cell lines were authenticated by fingerprinting using STR testing where possible and were verified to be free of mycoplasma contamination before use. In some experiments, as indicated, cells were propagated in doxycycline (100 ng/ml), 20 nM BafA1 (Selleck Chemicals), 10 µM MG132 (Sigma-Aldrich), or glucose and glutamine-free DMEM supplemented with physiologic plasma concentrations of 5 mM glucose and/or 0.5 mM L-glutamine (Corning).
 
-## Immunoblotting, immunoprecipitation assays, and immunofluorescence staining
+### Immunoblotting, immunoprecipitation assays, and immunofluorescence staining
 
 Cells were lysed using radioimmunoprecipitation assay buffer (Boston BioProducts) containing cOmplete, Mini Protease Inhibitor Cocktail Tablets (Sigma-Aldrich) and PhosSTOP phosphatase inhibitors (Sigma-Aldrich). Protein lysates were separated on 4–12% Bis-Tris gel (Thermo Fisher Scientific) and transferred to polyvinylidene difluoride membranes (EMD Millipore). The following antibodies were used for immunoblotting: MAGEA3 (Abcam; ab223162), MAGEA4 (Abcam; ab76177), MAGEA6 (Abcam; ab38495), MAGEA10 (Abcam; ab83557), MAGEA12 (Thermo Fisher Scientific; PA5-67682), GAPDH (glyceraldehyde 3-phosphate dehydrogenase) (Santa Cruz Biotechnology; sc-25778), phospho-ERK1/2 (Cell Signaling Technology; 9101S), phospho-AMPK (Cell Signaling Technology; 2531S), phospho-p70 S6 kinase (Cell Signaling Technology; 9205S), phospho-AKT (Cell Signaling Technology; 9271), SQSTM1/p62 (Abcam; ab56416), Tp53 (Cell Signaling Technology; 2524), V5 (Santa Cruz Biotechnology; sc-83849-R), and ubiquitin (Abcam; ab7780). All antibodies were diluted to 1:1000 in 1% bovine serum albumin. Densitometry of immunoblots was performed using ImageJ. Vinculin served as a reference gene to correct cross-sample variations. For immunoprecipitation assays, V5-tagged MAGEA6 variants or GFP was pulled down from 500 µg of transfected HEK293T cell lysate by the Protein A/G PLUS-Agarose Immunoprecipitation Reagent (Santa Cruz Biotechnology) according to the manufacturer’s protocol. For immunofluorescence, transduced HPDE-iKRAS cells were seeded at 20,000 cells/well on Millicell EZ SLIDE (EMD Millipore). Cells were fixed in 2% formalin and permeabilized by 0.05% saponin/phosphate-buffered saline (PBS). LC3B antibodies (Novus Biologicals; NB-100–2220) were used to detect protein expression of LC3B puncta and immunohistochemical staining of xenograft. Slides were mounted by SlowFade Gold Antifade Mountant with DAPI (4′,6-diamidino-2-phenylindole) (Thermo Fisher Scientific) to label DNA. Cells were analyzed by confocal microscopy with a Nikon A1RS inverted laser-scanning microscope and NIS-Elements software.
 
-## qRT-PCR
+### qRT-PCR
 
 The following qRT-PCR primers were used for MAGEA6: RT#1: F-5’-GGAGAAAATCTGGGAGGAGC R-5’-TAGCTGGTTTCAATGAGGGC, RT#2: F-5’-GAGGACTCCAGCAACCAAGA R-5’-AGTACTGCCAATTTCCGACG. For part of the mRNA transcript shared by all MAGEA variants, we used RT#3: F-5’-CGTTGTGAGTTGGATAGTTGTGGAAA R-5’-CTTCTGGGCATCCTTCAGCC. For the reference gene, ribosomal protein L32 (RL32), we used RT#4: F-5’-CCTTGTGAAGCCCAAGATCG R-5’-TGCCGGATGAACTTCTTGGT. For ATG7, we used RT#5: F-5’-CAGTTTGCCCCTTTTAGTAGTGC R-5’-CCAGCCGATACTCGTTCAGC. For VPS34, we used RT#6: F-5’-CCTGGAAGACCCAATGTTGAAG R-5’-CGGGACCATACACATCCCAT. Gene- and variant-specific qRT-PCR primers used are indicated in the figures and figure legends. RT#4 was used to correct cross-sample variations in all qRT-PCR experiments. qRT-PCR was performed in technical replicates, N = 3, as previously described (Lu et al., 2017).
 
-## Cell assays
+### Cell assays
 
 For cell proliferation assays, HPDE-iKRAS cells were plated onto white opaque 96-well microplates in quadruplicate. Cell density was assayed by CellTiter-Glo (Promega) using a Wallac Victor2 Multilabel Counter (PerkinElmer) at multiple the indicated time intervals. All data were assessed by exponential growth curve fitting analysis using Prism 4 (GraphPad).
 
-## Animal studies
+### Animal studies
 
 Animal studies were conducted in accordance with an approved Institutional Animal Care and Use Committee protocol at Baylor College of Medicine. HPDE-iKRASG12D cells transduced with GFP or MAGEA6 lentivirus (in pLenti6.3 backbone) or BxPC-3 cells transduced with shRNAs were subcutaneously injected 1 × 106 (Figure 6A, B and C) into both flanks and 2 × 106 (Figure 6D) cells per site into single flank of female nude animals (Harlan) following suspension in Hank’s Balanced Salt Solution at 1:1 with Matrigel (BD Biosciences). The following MISSION pLKO shRNAs were used to knock down MAGEA6: shRNA #4: TRCN0000151826 and shRNA #10: TRCN0000155661. For ATG7 and VPS34 knockdown, we used MISSION pLKO shRNAs: TRCN0000007584 and TRCN0000196247 respectively. The slides were scanned by a Pannoramic 250 Flash whole slide digital scanner (3DHISTECH).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Murine lung tissues or subcutaneous tumors were excised, washed in PBS, and fixed in formalin for 48 hr. Once fixed, samples were dehydrated in graded ethanol series followed by xylene. Samples were then embedded in paraffin, sectioned onto slides (5 mm thick), and allowed to dry. For immunohistochemical staining, slides were deparaffinized using a standard procedure (xylene for two washes, 100% ethanol for two washes, 95% ethanol, 70% ethanol, and 50% ethanol). Slides were then processed using VECTASTAIN Elite ABC HRP Kit and DAB Peroxidase Substrate Kit (Vector Laboratories, PK-6101, SK-4100). Briefly, after the deparaffinizing procedure (described above), antigen retrieval was completed using 0.01 M sodium citrate buffer (pH 6.0), for 15 min at 95°C, followed by blocking with 0.3% H2O2 for 30 min. Slides were stained for LC3B antibody (1:4000, Novus Biologicals; NB100-2220) and processed using the VECTASTAIN and DAB kits in accordance with the manufacturer’s instructions. LC3B staining was quantified using Immunohistochemistry (IHC) Image Analysis Toolbox on ImageJ following the instructions from the plugin developers.
 
-## Evolutionary conservation study
+### Evolutionary conservation study
 
 Conservation of protein sequences was analyzed via the ConSurf (http://consurf.tau.ac.il/); (Ashkenazy et al., 2016) online server. For proteins with a known 3D experimental structure, we used the known 3D structures as the starting point. Otherwise, we used protein sequences as input. ConSurf performed Basic Local Alignment Search Tool to collect homologous sequences with default parameters. Normalized conservation scores were reported for each protein sequence.
 
-## Kaplan-Meier survival analysis
+### Kaplan-Meier survival analysis
 
 Lung cancer patient survival was analyzed using KM plotter (Győrffy et al., 2013) with MAGEA6-specific probe: 214612_x_at. Patients with high and low MAGEA6 expression were divided by population median.

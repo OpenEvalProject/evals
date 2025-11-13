@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.47155.001 The nematodes C. elegans and P. pacificus populate diverse habitats and display distinct patterns of behavior. To understand how their nervous systems have diverged, we undertook a detailed examination of the neuroanatomy of the chemosensory system of P. pacificus . Using independent features such as cell body position, axon projections and lipophilic dye uptake, we have assigned homologies between the amphid neurons, their first-layer interneurons, and several internal receptor neurons of P. pacificus and C. elegans. We found that neuronal number and soma position are highly conserved. However, the morphological elaborations of several amphid cilia are different between them, most notably in the absence of ‘winged’ cilia morphology in P. pacificus . We established a synaptic wiring diagram of amphid sensory neurons and amphid interneurons in P. pacificus and found striking patterns of conservation and divergence in connectivity relative to C. elegans , but very little changes in relative neighborhood of neuronal processes. These findings demonstrate the existence of several constraints in patterning the nervous system and suggest that major substrates for evolutionary novelty lie in the alterations of dendritic structures and synaptic connectivity.
+The nematodes C. elegans and P. pacificus populate diverse habitats and display distinct patterns of behavior. To understand how their nervous systems have diverged, we undertook a detailed examination of the neuroanatomy of the chemosensory system of P. pacificus. Using independent features such as cell body position, axon projections and lipophilic dye uptake, we have assigned homologies between the amphid neurons, their first-layer interneurons, and several internal receptor neurons of P. pacificus and C. elegans. We found that neuronal number and soma position are highly conserved. However, the morphological elaborations of several amphid cilia are different between them, most notably in the absence of ‘winged’ cilia morphology in P. pacificus. We established a synaptic wiring diagram of amphid sensory neurons and amphid interneurons in P. pacificus and found striking patterns of conservation and divergence in connectivity relative to C. elegans, but very little changes in relative neighborhood of neuronal processes. These findings demonstrate the existence of several constraints in patterning the nervous system and suggest that major substrates for evolutionary novelty lie in the alterations of dendritic structures and synaptic connectivity.
 
 ## Introduction
 
@@ -41,53 +41,397 @@ Using the 3D reconstructions of serial thin section transmission electron micros
 
 ## Results
 
-## Overall amphid architecture
+### Overall amphid architecture
 
 Using a combination of 3D reconstructions from TEM sections of two young adult hermaphrodites, as well as live dye uptake and transgene reporter analysis, we set out to characterize the amphid sensory circuitry of P. pacificus in order to undertake a comparative analysis with the amphid sensory circuitry of C. elegans. For comparison with C. elegans, we used electron micrographs and findings from both legacy (White et al., 1986) and modern EM methodologies (Doroquez et al., 2014). Despite being approximately 40 years old, the EMs used by John White and colleagues to create The Mind of a Worm remain the most complete publicly available data of the adult hermaphrodite C. elegans nervous system. While the methods used to create these legacy EM series are technologically inferior to current practices (chemical fixation, analog microscopy, thicker sections), the overall staining and elucidation of synaptic zones remain useful and valuable for anatomical comparisons as has been shown in a recent publication on whole-animal connectomes of both C. elegans sexes (Cook et al., 2019). Recent studies of the amphid dendritic endings in C. elegans using the modern High Pressure Freezing (HPF) method have validated the original studies, resulting in a richer description of ultrastructural anatomy (Doroquez et al., 2014). The numerous anatomical similarities and differences we observed across species are both reproducible and share equivalences to previous nematode comparative anatomical studies.
 
 To account for all the amphid neurons in P. pacificus, we identified and traced every amphid neuron from the tip of its cilium in the channel near the mouth to its cell body posterior to the nerve ring in two young adult hermaphrodites. Like C. elegans, P. pacificus possesses 12 neurons per amphid sensillum. All amphid neurons and the amphid sheath cell (AMsh) in P. pacificus have their cell bodies in the lateral ganglion posterior to the nerve ring, which resembles the condition found in C. elegans and other nematodes. At the anterior end, the tips of the dendrites are housed by the processes of a pair of amphid sheath cells, which are glial cells that connect to the amphidial pore in the cuticle via a pair of amphid socket cells (AMso) that expose the amphid neuronal cilia to the environment (Figure 1A–D). All amphid neurons have ciliated endings with a circle of varying numbers of doublet microtubules surrounding a few inner singlet microtubules in their transition zones and middle segments (Figure 1F). We counted 13 cilia (from 11 neurons) in each amphid channel in P. pacificus, compared to 10 cilia (from eight neurons) in the channel in C. elegans (Figure 1D–F, Table 1). The greater number of ciliated endings in P. pacificus coincides with a conspicuous lack of neurons with winged dendritic morphology found in the C. elegans wing cells (AWx), whose elaborate ciliary endings terminate as invaginations inside the distal amphid sheath cell cytoplasm rather than in the amphid channel. This indicates that the AWA, AWB, AWC cellular homologs in P. pacificus are among the 11 single or double ciliated neurons in the channel and, therefore, do not display a characteristic ‘wing’-shaped cilia morphology. The only other known amphid neurons with elaborate dendritic processes resembling the AWA cells are found in the swine parasite, Oesophagostomum dentatum (Hoholm et al., 2005). Because the wing neurons are the most morphologically distinct and best studied amphid neurons in C. elegans, their absence in most other nematodes contributes to the difficulty in assigning homology in the amphid neurons in these other nematode species (Ashton et al., 1995; Bumbarger et al., 2007a; Bumbarger et al., 2009; Li et al., 2001; Ward et al., 1975).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig1-v1.jpg)
+
+**Figure 1.:** All images are from specimen 107 (Series 14), except B and C. As specimens were sectioned from the head, left structures appear on the right side in the images and vice versa. (A) Complete transverse section 6.8 µm from the tip of the head showing the amphid socket cells (light yellow) with false-colored amphid cilia bundles inside the channels. Note the dorsal tooth (dt) and sub-ventral tooth (svt) in the buccal cavity. (B) Scanning electron micrograph of the head of an adult animal showing the two amphid openings (am). (C–H) Transverse TEM sections through the amphid cilia at various levels from anterior to posterior (C) Left amphid channel close to the pore, containing the tips of the longest three cilia; the channel is formed by the amphid socket cell (AMso). (Specimen DB-9–1) (D) Right amphid channel slightly more posterior than in A (7.1 µm from the tip of the head) with all 13 cilia visible in the channel matrix. Arrowheads indicate the autocellular junction of the amphid socket cell (AMso). (E) Distal segments of the amphid cilia with singlet microtubules in the left channel 6.85 µm from the tip. (F) Middle segments of the right amphid cilia with discernable nine outer doublet microtubules that make up the core axoneme 11.25 µm from the tip; here the channel is formed by the amphid sheath cell (lilac). (G) Section through the region of sheath entry 13.1 µm from the tip, showing the thick periciliary membrane compartment (PCMC) of AM11 (red) entering the left amphid sheath cell (AMsh), the green and beige PCMCs have just completed their entry. Additionally, the sheath lumen harbors the basal parts of the double cilia of AM9 (dark lilac) with typical transition zone (TZ) arrangement of microtubules and seven further TZ cilia. Arrowheads mark the adherens junctions between the PCMCs and the amphid sheath. (H) A slightly more posterior section through the left sheath cell (13.85 µm from the tip), showing the distinctively large and irregular outline of the PCMC of AM9 (dark lilac) and the PCMCs of 6 other dendrites. The base of the AM8 cilium (blue) and the TZ of AM5 (orange) are found in the lumen. AM11 is still outside the sheath. (I–K) Transverse TEM sections through the posterior AMsh process and cell body (lilac). (I) Right-side amphid nerve directly anterior of the nerve ring (88.3 µm from the tip) consisting of the AMsh process (sh) with prominent Golgi stacks and the 12 amphid neuron dendrites. AM1 to AM12 are labeled by number and color. The color code is used throughout the paper. FLP (reddish, just below sheath) and AUA (white) join the amphid process bundle until they diverge from it or end. (J) AMsh cell body (100.8 µm from tip) with numerous mitochondria (m) and Golgi stacks. (K) A higher magnification of the Golgi apparatus (g) and vesicles (v) in the midst of ribosome-studded rough ER cisternae (arrowhead). (L) The bilaterally symmetrical URX and BAG neurons have extended flattened ciliary endings associated with the lateral Inner Labial socket cell (ILso) process; 2.05 µm from the tip. Comparable C. elegans EM annotations are available at SlidableWorm http://www.wormatlas.org/SW/SW.php/. See Figure 1—figure supplements 1–3, and Figure 1—videos 1–3 for details on the URX, URY, URA, and BAG neurons.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The large image shows the left lateral IL sensillum of P. pacificus (specimen 107) with ILsh (lilac) and ILso (green), surrounded by URXL (pink) and BAGL (yellow). Small images track the URXL cilium from its extended sheet-like tip (section 56 = 2.8 µm from the tip of the nose) to transition zone (section 73 = 3.65 µm from the tip of the nose). Dendritic structures can be compared to C. elegans at SlidableWorm http://www.wormatlas.org/SW/SW.php/ (slices 8–10).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** TEM cross-sections through two right labial sensilla (I., III.) and process bundles (II., IV.) of P. pacificus (specimen 107) (seen from anterior). (I) Right ventral lip, 3.8 µm from the tip of the nose. The membranous extension of a URYV branch (blue) wraps halfway round the ILV sensillum. It terminates further distally in the tip of the ventral lip. (II) Right dorsal lip, 7.8 µm from the tip of the nose. This more posterior section shows that the dendrites of all three UR neurons are part of the dorsal labial process bundle. The URYD process is found next to CEPshD, URX next to ILshD and OLQshD, and URAD next to CEPD and OLQD. (III) Right lateral lip, 3.6 µm from the tip of the nose, showing branches of URYD, URYV and the URX dendrite extending into the lateral labial process bundle. URYV is associated with ILsh, and URYD with ILsh, OLLsh and OLLso. URX and BAG endings are found apposed to ILso. For more anterior sections showing the elaborate URX and BAG extensions, see Figure 1L. (IV.) Right lateral lip, 7.05 µm from the tip of the nose. Lateral labial processes, branches of URYD and URYV, and the BAG dendrite are located directly ventral of the amphid sensillum. URYD shows many prominent singlet microtubules (see inset) but appears to be unciliated. URX will join the bundle more anteriorly.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The derived characters in C. elegans are highlighted in red. *Many prominent singlet microtubules.
+
+**Table 1.**
+ Comparison of amphid neurons in various nematode species.The total number of neurons with dendritic processes encased in the sheath cell in a single amphid compartment is indicated. These neurons are further categorized as neurons with dendrites having single or double ciliated endings in the amphid channel, or as specialized ‘wing’ neurons with endings outside the channel but within the sheath cell other than the finger cell. The ASC neurons in L1 larvae of P. trichosuri described by Zhu et al. (2011) match this criterion but lack the ciliary elaborations known from C. elegans wing neurons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3">Cilia in channel</th>
+      <th>Wing</th>
+    </tr>
+    <tr>
+      <th>Species</th>
+      <th>Total neurons</th>
+      <th>Dendritic ends in channel</th>
+      <th>Total count</th>
+      <th>Single</th>
+      <th>Double</th>
+      <th>Neurons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pristionchus pacificus</td>
+      <td>12</td>
+      <td>11</td>
+      <td>13</td>
+      <td>9</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Caenorhabditis elegansa</td>
+      <td>12</td>
+      <td>8</td>
+      <td>10</td>
+      <td>6</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Haemonchus contortusb</td>
+      <td>12</td>
+      <td>10</td>
+      <td>13</td>
+      <td>7</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Strongyloides stercoralisc</td>
+      <td>13</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Parastrongyloides trichosurid</td>
+      <td>13</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>0</td>
+      <td>1?</td>
+    </tr>
+    <tr>
+      <td>Acrobeles complexuse</td>
+      <td>13</td>
+      <td>12</td>
+      <td>12</td>
+      <td>10</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_a. Ward et al. (1975)b. Li et al. (2001)c. Ashton et al. (1995)d. Zhu et al. (2011)e. Bumbarger et al. (2007a) and Bumbarger et al. (2009)_
+
 We designated provisional names for the P. pacificus amphid neurons utilizing ‘AM’ for amphid, followed by numbers 1 to 12 (Table 2). Of the 11 dendrites in the channel, nine have single ciliated endings and only two of them, AM3 and AM9, possess dual-ciliated endings. The lack of neurons with winged morphology compelled us to consider several other criteria for assigning amphid neuron homology between P. pacificus and C. elegans, such as i) relative cell body positions, ii) axon projections, iii) manner of dendrite entry into the amphid sheath cell, iv) number of cilia in channel, v) DiI dye filling properties, and vi) connections to first layer interneurons. While no single criterion allows homology assignment for all amphid neurons, our analysis results in high confidence homology assignments for most neurons. Using these provisional homologies, we proceeded to evaluate possible evolving features and found conservation and divergence in synaptic connectivity and orthologous transcriptional reporters. At the end of this analysis, we will revisit homology assignments and will discuss potential strategies to overcome current limitations.
 
-## The finger neuron
+**Table 2.**
+ Provisional nominations of putative amphid neuronal homologs between C. elegans and P. pacificus.Morphological data based on TEM series of specimens 107 and 148. Features supporting cellular homology include axon projections, lipophilic dye uptake, cell body positions, and chemical synapses to the four first layer amphid interneurons (AIA, AIB, AIY, AIZ) or the AUA. DiI filling neurons in C. elegans are ASI, ASJ, ASK, ADL, ASH, AWB (weak), *ADF (shows only weak FITC uptake, not DiI). DiO filling neurons in C. elegans are ASI, ASJ, ASK, ADL, ASH, AWB. PCMC: periciliary membrane compartment. Structures of C. elegans amphid neurons are available at http://www.wormatlas.org/images/NeuronImageList.jpg.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>P. pacificus neuron</th>
+      <th>Axon termination site in nerve ring</th>
+      <th>Dye filling</th>
+      <th>Feature(s) supporting homology</th>
+      <th>Likely C. elegans homolog</th>
+      <th>Main difference compared to C. elegans</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AM1</td>
+      <td>dorsal midline</td>
+      <td>DiI only</td>
+      <td>DiI uptake, cell position, cell body morphology</td>
+      <td>ASH</td>
+      <td>lack DiO uptake</td>
+    </tr>
+    <tr>
+      <td>AM2</td>
+      <td>dorsal midline</td>
+      <td>DiI + DiO</td>
+      <td>DiI + DiO uptake; branched axon not through commissure; AIA/AIB</td>
+      <td>ADL</td>
+      <td>single ciliated vs. dual ciliated</td>
+    </tr>
+    <tr>
+      <td>AM3</td>
+      <td>dorsal midline</td>
+      <td>none</td>
+      <td>none</td>
+      <td>AWA</td>
+      <td>dual ciliated vs. wing; Ppa-odr-3 expression</td>
+    </tr>
+    <tr>
+      <td>AM4</td>
+      <td>dorsal midline</td>
+      <td>DiI only</td>
+      <td>DiI uptake; AIA/AIB</td>
+      <td>ASK</td>
+      <td>lack of DiO uptake; Ppa-odr-3 expression;</td>
+    </tr>
+    <tr>
+      <td>AM5</td>
+      <td>dorsal midline</td>
+      <td>none</td>
+      <td>Ppa-che-1 expression</td>
+      <td>ASE</td>
+      <td>axons cross the midline in C. el.</td>
+    </tr>
+    <tr>
+      <td>AM6</td>
+      <td>lateral midline</td>
+      <td>none</td>
+      <td>short axons;cell position</td>
+      <td>ASG</td>
+      <td>Ppa-che-1 expression</td>
+    </tr>
+    <tr>
+      <td>AM7</td>
+      <td>cross dorsal midline</td>
+      <td>none</td>
+      <td>axons overlap dorsally; dorsal sheath entry;cell position; AIA/AIB/AIY/AIZ</td>
+      <td>AWC</td>
+      <td>single ciliated vs. wing; Ppa-odr-7 expression</td>
+    </tr>
+    <tr>
+      <td>AM8</td>
+      <td>dorsal midline</td>
+      <td>DiI + DiO</td>
+      <td>DiI and DiO uptake; ventral sheath entry;cell position</td>
+      <td>ASJ</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>AM9</td>
+      <td>dorsal midline</td>
+      <td>DiI only</td>
+      <td>dual ciliated; DiI uptake*; prominent PCMC; connect to AUA</td>
+      <td>ADF</td>
+      <td>Ppa-odr-7 expression</td>
+    </tr>
+    <tr>
+      <td>AM10</td>
+      <td>dorsal midline</td>
+      <td>none</td>
+      <td>AIA/AIB/AIY/AIZ</td>
+      <td>ASI</td>
+      <td>lack DiI and DiO uptake</td>
+    </tr>
+    <tr>
+      <td>AM11</td>
+      <td>dorsal midline</td>
+      <td>DiI only</td>
+      <td>weak DiI uptake; cell position; AIA/AIB/AIY/AIZ</td>
+      <td>AWB</td>
+      <td>single ciliated vs. wing; lack DiO uptake</td>
+    </tr>
+    <tr>
+      <td>AM12</td>
+      <td>dorsal midline</td>
+      <td>none</td>
+      <td>finger dendrite morphology; cell position; first to enter the AMsh</td>
+      <td>AFD</td>
+      <td>more posterior position in AMsh due to lack of winged neurons</td>
+    </tr>
+    <tr>
+      <td>AMU1</td>
+      <td>dorsal midline</td>
+      <td>none</td>
+      <td>short ‘dendritic’ process; cell position; exclusive output of ADF</td>
+      <td>AUA</td>
+      <td>none</td>
+    </tr>
+  </tbody>
+</table>
+
+### The finger neuron
 
 The most unambiguous amphid neuron homolog found in P. pacificus is AM12, with finger-like dendritic endings akin to the finger-neuron in most other nematode species: C. elegans, Ancylostoma caninum, Oesophagostomum dentatum, Haemonchus contortus, Acrobeles complexus and Parastrongyloides trichosuri L1 (Bhopale et al., 2001; Bumbarger et al., 2009; Hoholm et al., 2005; Li et al., 2001; Ward et al., 1975; Zhu et al., 2011) (Figures 2A, C and 3A, Figure 2—figure supplements 1 and 2). The sensory ending of the AM12 dendrite is formed by a short cilium of about 1 µm length (in C. elegans about 500 nm, see Figure 12A in Doroquez et al., 2014) and a complex of 30–40 microvilli-like projections branching off from the periciliary membrane compartment (PCMC), which strongly resembles the morphology of the AFD neurons responsible for thermosensation in C. elegans, A. caninum, and H. contortus (Bhopale et al., 2001; Li et al., 2001; Mori and Ohshima, 1995). Similar to AFD endings in other species, the AM12 cilium is fully embedded in the amphid sheath cell process, does not enter the lumen of the sheath cell or the amphid channel and thus has no contact to the outside environment. We also observed that like in other species, the cell body of AM12(AFD) is the most anterior among the amphid neurons, located just ventral of the lateral mid-line (Figure 3C). Nevertheless, there is a small difference compared to other species – the AM12 sensory ending is located in a part of the AMsh that is clearly posterior to the lumen into which the other amphid dendrites enter. Taken altogether, we conclude that AM12 is the P. pacificus homolog of AFD. The confirmation of the AM12(AFD) neurons’ role in thermosensation, however, will ultimately depend on cell ablation experiments followed by behavioral assays.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig2-v1.jpg)
+
+**Figure 2.:** (A–B) Sagittal TEM sections of a P. pacificus young adult hermaphrodite. (A) The yellowish shading highlights the narrow amphid channel, which is formed by the socket cell process and contains the distal segments of the 13 amphid cilia. The lilac shading highlights the expanded region of the amphid sheath cell process, which harbors the proximal segments of the amphid cilia in its anterior lumen and, more posteriorly, the finger cell in its cytoplasm amidst a multitude of vesicles. Arrows point at the space taken up by the finger cell cilium with its projections. Scale bar: 5 µm. (B) Detail of A (from a neighboring section) showing the different ciliary regions: middle segment (ms), transition zone (tz), and periciliary membrane compartment (p). The arrow points at cilia in the narrow, matrix-filled amphid channel. Arrowheads mark the adherens junctions between the AMsh and AMso processes. The red arrowhead indicates the ciliary rootlet within the periciliary membrane compartment (p) of one of the amphid neurons. Scale bar: 1 µm. (C) Transverse section through the periciliary membrane compartment of the amphid finger cell with central rootlet (red arrow head) and numerous fingerlike villi in various orientations. The dotted line in A represents the approximate plane of sectioning. Scale bar: 1 µm. The order of each dendrite entry is shown in Figure 2—figure supplements 1 and 2. Comparative sagittally sectioned C. elegans nose images are present at http://www.wormatlas.org/hermaphrodite/neuronalsupport/jump.html?newLink = mainframe.htm and newAnchor = Amphidsensilla31 (Figure 35). Figure 2—figure supplements 1 and 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The entering dendrite is labeled in white by a number from 1) to 11) according to the order of entry followed by its P. pacificus name. Section numbers from anterior tip of head and direction of entry are given at the bottom of each image. One section is 50 nm. To demonstrate the variability of entry sites between left and right side in this specimen, AM3 to AM6 have been labeled in color.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The entering dendrite is labeled in white by a number from 1) to 11) according to the order of entry followed by its P. pacificus name. Section numbers from anterior tip of head and direction of entry are given at the bottom of each image. One section is 50 nm. To demonstrate the variability of entry sites between left and right side in this specimen, AM3 to AM6 have been labeled in color.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig3-v1.jpg)
+
+**Figure 3.:** (A) Three-dimensional renderings of individual pairs of amphid neurons, amphid sheath, amphid socket, internal sensory receptor AUA, and BAG neuron in a P. pacificus young adult hermaphrodite (Specimen 107). Left lateral view, anterior is to the left. Blue and red renderings denote left and right counterparts, respectively. The pharynx is outlined in teal. Nomenclature is displayed with P. pacificus first and C. elegans name in parenthesis. Black arrows denote lateral nerve ring entry (not through amphid commissure) and branched axons in AM2(ASG), short axons ending at the lateral midline in AM6(ASG), dorsal overlap of axon endings in AM7(AWC), fingerlike endings of AM12(AFD) dendrite terminating within the sheath cell posterior to the nose, and short dendritic-like endings of AUA anterior to the nerve ring Figure 3—videos 1–15. (B) Schematic diagram of the positions of the nuclei of the left cuticular sensilla with sheath and socket cells and of the internal receptors. The nerve ring (NR) is indicated by a dotted line. Amphid cell bodies are labeled 1–12 by their last number, with color code the same as in Figure 1. (C) Schematic of amphid nuclei as seen from the left side with full names, nuclei slightly enlarged. (TB = terminal bulb). (D–G) The four different types of axon projections in P. pacificus amphid neurons: right and left axons: (D) meet and end with very little overlap at the dorsal midline (all except AM6/ASG and AM7/AWC, also AMU1/AUA) (AM3 is shown to represent this group); (E) cross extensively over the dorsal midline (AM7/AWC); (F) branch laterally into a dorsal and a ventral process due to lateral entry into the NR instead of the usual ventral entry of all other amphid neurons that come from the amphid commissure (AM2/ADL); (G) short axons end at the lateral midline (AM6/ASG). Cartoons of C. elegans amphid neuron anatomy are present at http://www.wormatlas.org/images/NeuronImageList.jpg. Cartoons of C. elegans ganglia are present at http://www.wormatlas.org/images/VCMNganglia.jpg. 3D renderings of individual neurons are shown in Figure 3—videos 1–15.
+
 Thus, of the six nematode species with detailed descriptions of their amphidial sensory neuroanatomy (P. pacificus, C. elegans, H. contortus, S. stercoralis, A. complexus, Parastrongyloides trichosuri L1) the only nematode species known so far not to share finger-like dendritic endings is the mammalian parasite Strongyloides stercoralis, which has instead evolved a lamellar morphology for its putative thermosensory neuron ALD (Ashton et al., 1995; Bumbarger et al., 2007a; Bumbarger et al., 2009; Li et al., 2001; Ward et al., 1975; Zhu et al., 2011).
 
-## Cell body positioning and axonal projections of other amphid neurons
+### Cell body positioning and axonal projections of other amphid neurons
 
 Without other signature dendritic endings to nominate possible amphid homologs, we turned to likely conservations in cell body position as well as in the projection trajectories of individual axon processes that enter and terminate in the nerve ring. Using the 3D reconstructions of amphid neurons from EM sections (specimen 107, 148; Figure 3A; Figure 3—videos 1–15), we first looked for P. pacificus neurons that might share another defining feature of the C. elegans AWC neurons: the AWC axons cross the dorsal midline, overlap each other and terminate just before reaching the lateral midline. We identified only one pair of single ciliated amphid neurons that shares this feature, the AM7 (Table 2). The AM7(AWC) cell body is located between the AM1 and AM8 neurons, which are likely the respective cellular homologs of ASH and ASJ based on conservation in DiI uptake and cell body positions along the ventral edge of the amphid neuron cluster (discussed below). As the AM7 and AWC axons both cross the dorsal midline and terminate above the lateral midline, we regard them as homologs based on this singular feature, although the AM7(AWC) cell body appears to have shifted from a position ventral of ASH in C. elegans to a position between AM1(ASH) and AM8(ASJ) in P. pacificus, such that the three cell types are just ventral and parallel to the lateral midline on each side.
 
 Two other amphid neurons also show strong resemblance to their C. elegans counterparts according to their unique axon projections. The P. pacificus AM6 is likely the homolog of the C. elegans ASG neuron because these counterparts have the unique property of short axon projections that do not project into the nerve ring much further than the lateral midline, terminating before the dorsal midline. The P. pacificus AM2 is the likely homolog of the C. elegans ADL neuron because like in ADL, the AM2 axons are the only amphid sensory neurons that do not run through the amphidial commissure but enter the nerve ring directly from an anterior projection before branching in the dorsal-ventral direction, which is unique among all amphid neurons in both species (Table 2). If axon projection is more highly conserved than cilia branching, then the P. pacificus cellular homolog for ADL is single ciliated and not double ciliated. The nomination of AM2 as the ADL homolog is corroborated by its cell body position just posterior to AM4 and its ability to take up DiI. Altogether, the conserved unique axon trajectories of AM2, AM6, and AM7 argue they are the likely homologs of the C. elegans ADL, ASG, and AWC neurons, respectively.
 
-## The presumptive taste receptor neuron pair ASE in P. pacificus may not be functionally lateralized
+### The presumptive taste receptor neuron pair ASE in P. pacificus may not be functionally lateralized
 
 In C. elegans, the axons of the ASEL and ASER neuron pair cross the dorsal midline around the nerve ring until they end ventrally close to the entry point of the contralateral axon (White et al., 1986). In P. pacificus, the cell bodies of AM5 are located just ventral to those of the AM2(ADL) neurons at the second-most posterior position of the amphid cluster in the lateral ganglion [AM8(ASJ) is the most posterior pair]. The conservation of cell body position and the expression of the Ppa-che-1p::rfp transgene reporter (see below) provide independent support to nominate the AM5 neurons as the ASE homologs. However, the P. pacificus AM5(ASE) axons do not cross each other at the dorsal midline, but rather terminate at the dorsal midline. At their respective termination points P. pacificus, ASEL and ASER make a small gap junction with each other, like all but two amphid sensory neuron pairs do (Table 2). This apparent electrical coupling between the P. pacificus ASE homologs is notable because in C. elegans no such gap junctions are formed between the ASEs (White et al., 1986). The consequent lack of electrical coupling between the C. elegans ASEL and ASER neurons has been found to be necessary to produce a physiological asymmetry between these neurons, such that both neurons are differentially activated by distinct sensory cues, that is their function is ‘lateralized’ (‘left/right asymmetric’) (Pierce-Shimomura et al., 1999; Ortiz et al., 2009; Suzuki et al., 2008). Moreover, it has been shown that artificial establishment of gap junctions between the left and right C. elegans ASEs leads to loss of functional lateralization and changes in chemotaxis behavior (Rabinowitch et al., 2014). The apparent coupling of ASEL and ASER in P. pacificus suggests that these two neurons are not functionally lateralized in P. pacificus.
 
 Two additional genetic observations are consistent with a lack of functional lateralization in P. pacificus: First, the key regulatory factor that triggers the asymmetry of the ASEL/R neurons in C. elegans, the miRNA lsy-6 (Cochella and Hobert, 2012; Johnston and Hobert, 2003), does not exist in the P. pacificus genome and is apparently specific to the Caenorhabditis crown clade (Ahmed et al., 2013). Second, the ASEL and ASER neurons in C. elegans (as well as closely related Caenorhabditis species) each express a different subfamily of duplicated and chromosomally-linked, receptor-type guanylyl cyclases (rGCYs), the ASER-rGCYs (e.g. gcy-1, gcy-2, gcy-3, gcy-4, gcy-5) and the ASEL-rGCYs (gcy-6, gcy-7, gcy-14, gcy-20) (Ortiz et al., 2006; Yu et al., 1997), several members of which are thought to be salt chemoreceptors (Ortiz et al., 2009). In contrast, the P. pacificus genome contains no C. elegans- ASEL-type or ASER-type rGCYs (Figure 4—figure supplements 1 and 2). Together with the changes in electrical coupling of the ASE neurons in C. elegans versus P. pacificus, the differences in the existence of molecular regulators (lsy-6) and molecular effectors (gcy genes) of C. elegans ASE laterality suggest that the ASE neurons of P. pacificus may not be functionally lateralized.
 
-## Patterns of neuronal dye-filling are largely conserved
+### Patterns of neuronal dye-filling are largely conserved
 
 To further explore homologous features of P. pacificus and C. elegans amphid neurons, we visualized the organization and location of the neuronal cell bodies and their dendritic processes in live wild-type animals with the lypophilic dyes DiI and DiO. In C. elegans non-dauer hermaphrodites, DiI, DiO, and FITC routinely stain five specific pairs of amphid neurons with open sensory endings to the environment - ASK, ADL, ASI, ASH, ASJ (Table 3; Figure 4B and I) - along with two pairs of tail phasmid sensory neurons - PHA and PHB. Additionally, ADF is stained weakly by FITC but not by DiI, while AWB is stained weakly by DiI but more strongly by DiO (Hedgecock et al., 1985; Perkins et al., 1986; Starich et al., 1995). It is unclear why only certain amphid neurons exposed to the environment take up certain dyes. In C. elegans, the cell bodies of the three dorsal-most amphid neurons just below the amphid sheath cell form a distinctive DiI-stained trio (ASK, ADL, ASI), while ASH and ASJ are visible at different focal planes ventral or posterior to this trio, respectively (Figure 4). The cell ablations of the DiI positive ASH neurons show that its polymodal function is strongly conserved across various nematode species (Srinivasan et al., 2008). While ciliated channel neurons take up DiI differentially but are superficially conserved in diverse free-living nematode species examined, including other Caenorhabditis species, Panagrellus redivivus, and P. pacificus, DiI uptake patterns are less similar in the insect parasites such as Steinernema carpocapse and Heterorhabditis bacteriophora. Thus, DiI uptake is an important but not singular criterion for defining homologous sensory neurons (Han et al., 2016; Srinivasan et al., 2008).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig4-v1.jpg)
+
+**Figure 4.:** (A) Stacked and deconvoluted fluorescent images of DiI stained amphid neurons in a P. pacificus young adult hermaphrodite (left lateral view). AM9(ADF), AM4(ASK), AM2(ADL), AM1(ASH), and AM8(ASJ) amphid neurons stain robustly. (B) In C. elegans, DiI stains the ASK, ADL, ASI, AWB, ASH, and ASJ neurons. (C–H) Single plane fluorescent images in P. pacificus. (C–D) DiI stained Ppa-odr-3p::rfp transgenic J3 larvae showing the three dorsal amphid neurons and the larger ASH and ASJ neurons in two focal planes. (E) Ppa-che-1p::rfp transgenic J4 hermaphrodite showing expression in ASE and ASG. (F) A DiI stained Ppa-daf-6p::venus J4 larva showing ADL and ASJ staining, anterior to the amphid sheath and the excretory cells, respectively. (G, H) A DiO stained Ppa-odr-7p::rfp young adult in two focal planes showing dye filling in ADL and ASJ, and RFP expression in ADF and AWC. (G’ inset) The dendritic ends of another Ppa-odr-7p::rfp adult show the prominent PCMC of ADF with double cilia (bottom), and the smaller PCMC of ASK with a single cilium. (I) A DiO stained C. elegans young adult showing five dye filled neurons ASK, ADL, ASI, ASH, and ASJ. Scale bar: 5 µm. (C’–I’) DIC overlay of the same DiI fluorescence images. Anterior is left and dorsal is up. Scale bar: 20 µm. (Representative images based on: Ppa-odr-3p::rfp n = 22; Ppa-che-1p::rfp n = 31; Ppa-daf-6p::venus n = 60; PS312 n = 10; Ppa-odr-7p::venus n = 26). Additional Z-stacks are available: Figure 4—figure supplements 1–5 and Figure 1—videos 1–3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** DAF-11 orthologs form an outgroup. Only branch support ≥30% is shown.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** An overlay of the AM7(AWC) cell body showing no change in the ciliated endings of AM7 and AM9(ADL)(blowup panel).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Phylogenetic trees for (A) the CHE-1 Zinc finger transcription factor, (B) the ODR-7 nuclear hormone receptor, and (C) the ODR-3 G-alpha protein subunits. The C. elegans and P. pacificus orthologs are shaded. Maximum Likelihood phylogeny trees were generated by PhyML (phylogeny.fr). For the nuclear hormone receptor tree building, only the DNA binding C4 domain was used. Midpoint rooting was used and only branch support ≥30% is shown. Protein sequences for P. pacificus are ‘Ppa-’ (orthology same as Wormbase.org), or ‘PPA’ (no orthology assignment), whereas the rest are C. elegans names. Sequences from additional species are Drosophila melanogaster (Dm), Homo sapiens (Hs), Caenorhabditis briggsae (Cbr), Brugia malayi (Bma), and Onchocerca volvulus (Ovo).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (Left) Representative images of C. elegans embryos carrying two different Cel-che-1 reporters: a translational fusion of CHE-1 to mCherry in the context of a recombineered fosmid construct shows the expected nuclear localization in a pair of neurons identified as the ASE neurons (arrows) as well as two apoptotic bodies (arrow heads) corresponding to the dying ASE-sister cells. A 1.3 Kb fragment upstream of the Cel-che-1 coding sequence also drives expression in the ASE neurons, in this case visualized with a myristoylated GFP reporter. (Right) A representative P. pacificus embryo stained with the smFISH probe set against Ppa-che-1. Individual planes focused on the left or right sides of the embryo show two neurons on each side.
+
+**Table 3.**
+ Dye filling properties of individual amphid neurons in young adult hermaphrodites.orange = clearly conserved; blue = clearly divergent; in brackets()=weak staining, *weak FITC uptake in C. elegans.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Amphid Homologs</th>
+      <th colspan="2">P. pacificus</th>
+      <th colspan="2">C. elegans</th>
+    </tr>
+    <tr>
+      <th>Ppa</th>
+      <th>Cel</th>
+      <th>DiI</th>
+      <th>DiO</th>
+      <th>DiI</th>
+      <th>DiO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AM1</td>
+      <td>ASH</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>AM2</td>
+      <td>ADL</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>AM4</td>
+      <td>ASK</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>AM8</td>
+      <td>ASJ</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>AM9</td>
+      <td>ADF</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-*</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AM10</td>
+      <td>ASI</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>AM11</td>
+      <td>AWB</td>
+      <td>(+)</td>
+      <td>-</td>
+      <td>(+)</td>
+      <td>+</td>
+    </tr>
+  </tbody>
+</table>
 
 In P. pacificus young adult hermaphrodites, DiI stains five pairs of amphid neurons in a pattern similar to the one in C. elegans [AM9, AM4, AM2(ADL), AM1, and AM8] (n > 50; Figure 4A–B) but DiO stains only the AM2(ADL) and AM8 neurons (Figures 4E, G and H; Table 3). In contrast to C. elegans, the P. pacificus phasmid neurons only dye fill in the dauer larvae (data not shown), while the AM11(AWB) neurons rarely dye fill in any developmental stage with either dye (AWB is stained more robustly with DiO than with DiI in C. elegans). The similarity in cell body positions for AM8 and morphology for both AM2 as well as AM8, suggest they are likely ADL and ASJ homologs, respectively. As mentioned earlier, AM2 axons are also the only neurons that resemble ADL for not passing through the commissure and branching in the dorsal-ventral direction, so that the AS2(ADL) homology can be considered well supported. Thus, DiI staining in the three dorsal-most cells in the same focal plane as the AMsh cell body has only superficial resemblance to the three dorsal-most neurons in C. elegans (Figure 4C; Figure 4—video 1). If the posterior AM2 cell in the trio is the ADL homolog, rather than the ASI as in C. elegans, then the middle cell of this trio, AM4, is likely the ASK homolog, while the anterior cell of this trio, AM9, is the ADF. In addition to the conservation in DiI staining, we have nominated AM9 as the ADF homolog primarily due to the conservation of a distinctively bulbous PCMC in the ultrastructure of the P. pacificus AM9 similar to the C. elegans ADF (Figure 1G–H) (Doroquez et al., 2014). Thus we assume that AM9(ADF), AM4(ASK), and AM2(ADL) together make up the dorsal trio of neurons that take up DiI. In this proposed homology, the putative ASI homolog, AM10, does not take up DiI. In C. elegans, the ASI neurons are important for regulating dauer development and are remodeled in the dauer larvae such that the dauer ASI neurons no longer take up DiI due to cilia retraction from the amphid pore (Albert and Riddle, 1983; Peckol et al., 2001). Given that in P. pacificus the phasmid neurons only take up DiI as dauer larvae, it is possible that differential DiI uptake in homologous neurons between the two species recapitulates certain remodeling events in amphid neurons during dauer entry and exit that is lost in one lineage. Our cell homology nominations are consistent with the ASH and ASJ identified by position and DiI staining in a previous study by Srinivasan et al. (2008), but are different for the DiI stained dorsal trio (ADF, ASK, ADL). Table 3 summarizes the dye filling properties of the individual amphid neurons. While the positioning of the neurons taking up DiI appears mostly unaltered at first glance, cell physiology or the chemical environment for the live dye may have diverged modestly during evolution. An overview of the reconstructed cilia in one-to-one comparisons to their C. elegans counterparts is shown in Figure 5.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig5-v1.jpg)
 
-**Figure 5.:** P. pacificus and C. elegans amphid neurons.P. pacificus lacks neurons with wing-like morphology.
+**Figure 5.:** P. pacificus lacks neurons with wing-like morphology.
 
-## The amphid sheath glia
+### The amphid sheath glia
 
 To complement the characterization of the neuronal composition of the amphid sensillum, we set out to visualize the morphology of the glia-like amphid sheath cells (AMsh) in more detail and in vivo. To this end, we constructed an AMsh reporter using a 2.4 kb region of the P. pacificus daf-6 promoter to drive the Red Fluorescent Protein (RFP). DAF-6 is a Patch-related protein required for proper tubule formation in C. elegans, including the morphogenesis of the amphid sheath channel (Oikonomou et al., 2011). Indeed, P. pacificus daf-6 expression shows strong conservation not only in the AMsh, but also in cells of the excretory duct and pore, seam cells, as well as in the VulE epidermal cell that contributes to vulva formation during the mid-J4 larval stage (Perens and Shaham, 2005) (Figure 6A; Figure 6—video 1; data not shown). We found a similar daf-6 expression profile in dauer larvae (Figure 6B). The cell bodies of the amphid sheath cells are distinctively large and sit dorso-anteriorly to the terminal bulb of the pharynx. The AMsh cells extend thick processes anteriorly that swell to form vesicle-filled paddle-like endings near the nose of the worm (Figure 2A–B, Figure 3A–B), unlike their C. elegans counterparts, whose endings fan out widely into the head, forming large sheets to accommodate the expanded ciliated endings of the winged AWC neurons and the finger cells. The amphid socket cells distally surround the ciliated ends of the sensory dendrites, each forming autocellular junctions onto themselves to create a pore in the cuticle of the lateral lip that is in direct contact with the environment (Figure 1C–D; Figure 2A–B). The sensory dendrites enter the matrix-filled lumen of the amphid sheath cell process quite distal to their respective cell bodies. The lumen, or channel, is an extracellular space formed by the merging of numerous large matrix-filled vesicles (Figure 1G–H; Figure 2A–B). Accordingly, the cytoplasm of the posterior process and the cell body is rich in mitochondria, ribosomes, rough endoplasmic reticulum, Golgi complexes and vesicles of different sizes, distinguishing the AMsh as an active secretory cell (Figure 1I–K). We speculate that some of the secreted factors act as accessory to chemosensory function to modify odors or water soluble molecules (Bacaj et al., 2008; Cinkornpumin et al., 2014), or to protect the neurons against reactive oxygen species (Liu et al., 2017; Liu et al., 2015).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig6-v1.jpg)
+
+**Figure 6.:** (A–A’) DIC overlay and Ppa-daf-6p::rfp expression in the dorsally located amphid sheath cell as well as the excretory cell on the ventral side of a J4 hermaphrodite. Scale bar: 50 µm. (B–B’) DIC overlay and Ppa-daf-6p::rfp expression in a dauer larva with prominent amphid sheath, excretory cell, and seam cells expression. Scale bar: 25 µm. Arrows indicate the amphid sheath cell body. A Z-stack of a Ppa-daf-6p::rfp adult is available: Figure 6—video 1.
+
 In contrast to C. elegans, all the non-finger amphid neurons in P. pacificus have dendritic processes that terminate in the amphid channel and are thus in direct contact to the external environment (Figure 1A–F, Figure 2A–B). Because the C. elegans AMsh cells accommodate the prominently large AWC winged neurons, the left and the right AMsh can fuse to each other in the dauer larvae, which undergo radial constriction during dauer entry (Procko et al., 2011). Given the absence of any amphid neurons with winged morphology in P. pacificus, not surprisingly, Ppa-daf-6p::rfp expression in the pair of anterior AMsh endings remains distinctively separated in P. pacificus dauer larvae (Figure 6B). While the C. elegans amphid sheath processes expand into a large sheet at their anterior ends to accommodate the wing-shaped cilia, the amphid sheath processes in P. pacificus maintain a tube-like form, becoming slightly wider in diameter towards the anterior tip, where they take up the 12 neurons, and thinner posteriorly near the nerve ring in an apparent kink anterior to the cell body (n = 3). As a result, the P. pacificus amphid sheath morphology is tubular, lacking the distal enlargement of the C. elegans amphid sheath.
 
-## Dendrite entry into the sheath cell
+### Dendrite entry into the sheath cell
 
 Next, we examined the interaction of the neuronal dendrites with sheath cells in more detail. During C. elegans development, the nascent dendrites of the amphid neurons and the processes of the sheath glial cells attach to the tip of the nose and from there elongate posteriorly by retrograde growth when the cell bodies start migrating posteriorly to their final position. This elongation process happens in a precisely coordinated way in each bundle (Heiman and Shaham, 2009). Reconstruction of transverse TEM sections from four C. elegans specimens show invariant arrangement of the amphid neurons in the sensory channel, such that each amphid neuron can be reliably identified by its position in the channel (Ward et al., 1975). However, recent studies using live imaging on a much larger number of C. elegans samples reveal some variability in dendrite entry during larval development (Yip and Heiman, 2018). In our data set of only two specimens, we saw a variation in the channel position of one cilium even between the left and right side in one animal. To determine the degree in which the order and position of each dendrite entry is stereotypical in P. pacificus, we determined the individual entry points of amphid dendrites into the sheath in the reference sample (Specimen 107, similar data from specimen 148 not shown; Figure 2—figure supplements 1 and 2). Over most of their length the dendrite bundles are located on the ventral side of the AMsh but from 36.4 µm and 39.5 µm from the tip of the head on the left and right sides, respectively, shortly before the tips of the AMsh processes start to become wider, the bundles loosen and dendrites distribute around the sheath processes, finally arranging themselves into a dorsal and a ventral group. The first dendrites to enter are those of the finger neurons AM12(AFD) at approximately 25 µm from the tip of the head, or 1/6 the remaining distance between the posterior end of the pharynx (section 3000) and the tip of the ‘nose’ at the anterior end (Section 0). Anterior to the region occupied by AM12(AFD), the dendritic bundle splits into two or three groups consisting of one or more dendrites that enter the sheath in variable order from two or three sides. On the left side, for example, AM5(ASE, orange), AM4(ASK, bright green), AM6(ASG, light blue) and AM3(AWA, cream) form a group which enter laterally whereas on the right side there is no lateral group. Instead, AM5(ASE, orange) and AM4(ASK, bright green) enter from the ventro-lateral side, while AM6(ASG,light blue) and AM3(AWA, cream) are part of the dorsal entry group. The entry of the finger neuron AM12(AFD, yellow) is also variable, it can be dorsal as on the left side or ventral as on the right side. In contrast, the site of entry for AM8(ASJ, middle blue) is always ventral and for the remaining seven other neurons consistently dorsal on both sides. The dendrites of AM11(AWB, magenta red) are the last to enter the sheath (dorsally) 13.5 and 13.8 µm from the tip of the head. Thus, the sequence and site of entry for many neurons relative to the amphid sheath are variable in P. pacificus, but higher sample size involving semi-automated live imaging would be necessary to determine if the left-right variability is consistent and if the degree of variability is different between P. pacificus and C. elegans.
 
-## Homologies of other sensory neurons
+### Homologies of other sensory neurons
 
 In addition to the sensory sensilla, both P. pacificus and C. elegans also possess five types of sensory receptors that terminate in the nose region of the animal but are not accompanied by sheath or socket cells. Of these, the BAG neurons (named for bag-like sensory ending) stand out for being required for CO2 and O2 sensing in C. elegans (Hallem and Sternberg, 2008; Zimmer et al., 2009), as well as CO2 avoidance in P. pacificus (Hallem et al., 2011), both of which are presumably important for host detection in parasitic nematodes. In P. pacificus, the two BAG neuron cell bodies are located just anterior of the nerve ring in subventral position close to the isthmus (Figure 3A–B, Figure 7A–B), with their dendritic processes running in the ventral-most position of the amphid process and lateral labial bundle. The ciliated distal ends of these processes form branched lamellae around the ventral halves of the lateral inner labial socket cells (ILsoL), opposite to those of another pair of internal receptors, the URX neurons (Figure 1L, Figure 7A–B, Figure 1—figure supplement 1 and Figure 1—video 1). In C. elegans, the pair of URX neurons is known to be important for sensing oxygen levels and to control carbon dioxide response (Carrillo et al., 2013; Gray et al., 2004). The cell body of the URX neuron in both nematode species is located posterior to the nerve ring, and directly anterior to the anterior-most amphid neuron cell body in dorsal position [AM9(ADF) in P. pacificus and ASK in C. elegans] (Figure 3B). Interestingly, the dendritic endings of the homologous pair of P. pacificus URX neurons appear to be ciliated with eight microtubules, which are associated with the dorsal half of the lateral IL socket cells (Figure 1L, Figure 7A–B). In contrast, the C. elegans URX neurons are non-ciliated and unaffiliated with any sensilla (Doroquez et al., 2014). Ciliated URX neurons are also found in other nematode species, for example, in one of two dendritic endings of the URX neurons in the soil-dwelling nematode Acrobeles complexus, as well as in all of the URX endings of the mycophagus nematode Aphelenchus avenae (Bumbarger et al., 2007b; Ragsdale et al., 2009). Similarly, the four putative URY neurons have dendritic endings with numerous (6-20) singlet microtubules but they do not appear to be ciliated. These extensions are split into several overlapping branches extending membranous elaborations towards all six ILsh and ILso, resembling their C. elegans counterparts (Figure 1—figure supplement 2 and Figure 1—video 2) (Doroquez et al., 2014). Lastly, the four putative URA neurons of unknown function also resemble the morphology of their homologs in C. elegans (Figure 1—video 3). A comparison of C. elegans, P. pacificus, and A. complexus suggests that wing neurons (AWx) and unciliated URX neurons are derived characters in C. elegans, whereas ciliated BAG and unciliated URY are conserved (Figure 1—figure supplement 3).
 
@@ -99,7 +443,7 @@ The C. elegans FLP neurons have elaborate multi-dendritic structures throughou
 
 Another unusual neuron pair, called AUA in C. elegans (for Amphid Unknown Type A), has a clear homolog in P. pacificus. Although not a true amphid sensory neuron, the C. elegans AUA also sends its axon through the amphid commissure and possesses a distinctive dendrite-like process (White et al., 1986). While the axons of the AUA neuron pair are similar to many other amphid sensory neurons, also terminating by making a gap junction between the left and right partners at the dorsal midline, their dendrites terminate just anterior of the nerve ring rather than projecting to the anterior end of the animal. We observed a similar neuron in P. pacificus, AMU1 (AMphid Unknown 1), whose dendritic-like process terminates just anterior of the nerve ring (Figure 3A–B). Given this strong dendritic structural similarity, as well as a similar axonal projection, AMU1 is the likely homolog of AUA. The conservation of the AMU1(AUA) neurons, which mediate oxygen sensing and social feeding behavior in C. elegans, implies that they share conserved functions in several nematode species (Bumbarger et al., 2009; Chang et al., 2006; Coates and de Bono, 2002).
 
-## Axonal process neighborhood is highly conserved
+### Axonal process neighborhood is highly conserved
 
 We next explored amphid neuron axon process placement within the nerve ring. The original characterization of the C. elegans nervous system identified and used reproducible placement of axons within ganglia as criteria to identify individual neurons (Ware et al., 1975; White et al., 1986). We used a similar approach and compared axonal placement in P. pacificus to C. elegans (Figure 8A). Specifically, we evaluated the ultrastructure of the ventral ganglion (Figure 8B and D), which is proximal to where the amphid commissure enters the main axonal neuropil, as well as the dorsal midline (Figure 8C and E), where most amphid axons terminate. Using the P. pacificus color codes, we labeled the location of each amphid axon in both species. Despite differences in sample preparation (HPF for P. pacificus and chemical fixation for C. elegans) and EM section thickness (50 nm for P. pacificus and ~80 nm for C. elegans), we observed striking similarities in axonal placement in both species, providing further strong support for our homology assignment of neurons. For example, we observed similar amphid sensory neuron axonal fasciculation along the ventrodorsal and mediolateral axes of the ventral ganglion, where the ASJ and ASG neurons are most lateral, and the AFD and AUA neurons are the most ventral in both species (Figure 8B and D). The most posterior segment of the dorsal nerve cord, where most bilaterally symmetric neurons meet, is occupied by a similar set of neurons in both species (Figure 8C and E). Also, of note are the ASJ neurons, which are most ventral, and ADL, which are most lateral in both P. pacificus and C. elegans.
 
@@ -107,11 +451,11 @@ We next explored amphid neuron axon process placement within the nerve ring. The
 
 **Figure 8.:** (A) Model of the anterior P. pacificus highlighting the nerve ring (NR) and ventral ganglion (VG). (B) Electron micrograph of the anterior C. elegans (N2U sample) ventral ganglion and dorsal nerve ring (C) colored with the same color code as in Figure 1. Also shown are AIA (maroon), AIB (dark green), AIY (green/gray), and AIZ (purple). C. elegans neuronal nomenclature is used. Electron micrograph of the anterior P. pacificus (specimen 107) ventral ganglion (D) and dorsal nerve ring (E) colored with the same color code as in Figure 1. (F) Three dimensional rendering of the AIA, AIB, AIY, and AIZ interneurons from P. pacificus (specimen 107) with pharyngeal outline shown in light teal. (G) Individual three dimensional renderings of P. pacificus (specimen 107) amphid interneurons shown with a dorsoposterior view with the left and right neurons in blue and red, respectively. Arrows show anatomical features present in both species: AIA cell bodies are adjacent, AIB axons undergo a dorsal neighborhood change within in the nerve ring, AIY neurons have varicosities relating to synaptic output posterior to the nerve ring, and AIZ axons show anterior projections before commissural entry. Amphid neuroanatomy can be compared to C. elegans at http://www.wormatlas.org/images/NeuronImageList.jpg.
 
-## Soma and process morphology of amphid interneurons are conserved
+### Soma and process morphology of amphid interneurons are conserved
 
 We then examined the next processing layer of amphid sensory information in the worm, the first-layer amphid interneurons. In C. elegans there are four such amphid interneuron classes, each composed of a bilaterally symmetric pair of neurons (termed AIA, AIB, AIY, AIZ, for Amphid Interneuron A, B, Y and Z). All four neurons display highly distinctive features and an examination of the P. pacificus nervous system revealed a remarkable extent of conservation of these features, thereby easily identifying these neurons (the ease of identification prompted us to skip the tentative numerical naming scheme that we initially applied to sensory neurons, and thus we assigned these P. pacificus neurons with the same name as in C. elegans straight away). In both species, the AIY interneuron cell bodies are located in the same relative position in the ventral ganglion and their axons display a characteristic ‘humped’ morphology (White et al., 1986). This ‘humped’ morphology corresponds to a large synaptic output onto AIZ, which forms a sheet-like cross-section immediately dorsal to AIY (Figure 8B and D). The AIB neurons are identifiable in both species by a characteristic switch of their process into two distinct neighborhoods of the anterior portion of the ventral ganglion, where its proximal axon is ventral and its distal axon is more dorsal. The somas of the P. pacificus and C. elegans AIA interneurons occupy a stereotypic mediodorsal location and, like the AIY and AIZ neurons, form a dorsal midline gap junction. We rendered the complete structure of the amphid interneurons in 3D, further illustrating that cell body locations and axon projections are nearly identical in both species (Figure 8F).
 
-## Patterns of conservation and divergence in synaptic connectivity
+### Patterns of conservation and divergence in synaptic connectivity
 
 Having identified the first-layer amphid interneurons in P. pacificus, we next explored the degree to which synaptic connectivity in the amphid circuit is conserved across species. We annotated all chemical synapses and gap junctions between the P. pacificus amphid sensory neurons, AUA, AIA, AIB, AIY, and AIZ, recording both the number of individual synapses as well as the number of serial section electron micrographs where ultrastructural synaptic anatomy was present as a proxy for anatomical connection strength. We identified 138 chemical connections (directed edges in a graph of connectivity) and 98 gap junction connections (undirected edges) in P. pacificus, compared to 73 chemical edges and 96 gap junction edges in a recent re-evaluation of connectivity in C. elegans (Cook et al., 2019). As small synapses are more difficult to annotate reliably (Xu et al., 2013), we limited our analysis to only include connections that are ≥10 EM sections in strength in both species, which represents the strongest 50% of synaptic connections. Such thresholding also should minimize any potential concerns about comparing synaptic annotations between distinct datasets of different provenance.
 
@@ -119,11 +463,11 @@ Of these strong chemical synaptic connections, 32/53 connections were present in
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/47155/elife-47155-fig9-v1.jpg)
 
-**Figure 9.:** (A) Venn diagrams showing number of conserved (black), C. elegans-specific (red), and P. pacificus-specific (blue) chemical connections (directed edges) and gap junction connections (undirected edges). Threshold for edge weight was set to ≥10 serial EM sections, connectivity was determined between amphid sensory neurons, AUA, and amphid interneurons AIA, AIB, AIY, and AIZ. (B) Circuit diagram showing sensory neurons (triangles) connecting to interneurons (hexagons) by chemical synaptic connectivity (arrows) and gap junctions (lines). The thickness of the line is proportional to the weight of connection (aggregate number of serial section electron micrographs where a synaptic specialization is observed, with only connections ≥ 10 sections shown in this diagram). (C) Comparison of species-specific connections and neuronal adjacency. Bar graph showing chemical synaptic connectivity (orange), neuronal adjacency for C. elegans (purple), and neuronal adjacency for P. pacificus (green). The x axis is ordered by increasing strength of species-specific connection, and colored coded as in 8A. Adjacency was determined computationally by comparing adjacent pixels of volumetrically traced neuron profiles. Proportion was determined by dividing the number of serial EM sections showing a synaptic connection or adjacency by the total number of sections comprising the nerve ring and ventral ganglion. A proportion of 1.0 indicates the entire ipsilateral region of interest was adjacent, with proportions over 1.0 showing adjacency on both sides of the nerve ring. Each partnership evaluated is a combination of two neurons that formed a species-specific connection shown in (B). Figure 9—source datas 1–3.10.7554/eLife.47155.047Figure 9—source data 1.P. pacificus amphid neurons.10.7554/eLife.47155.048Figure 9—source data 2.P. pacificus amphid neurons.10.7554/eLife.47155.049Figure 9—source data 3.P. pacificus and C. elegans.
+**Figure 9.:** (A) Venn diagrams showing number of conserved (black), C. elegans-specific (red), and P. pacificus-specific (blue) chemical connections (directed edges) and gap junction connections (undirected edges). Threshold for edge weight was set to ≥10 serial EM sections, connectivity was determined between amphid sensory neurons, AUA, and amphid interneurons AIA, AIB, AIY, and AIZ. (B) Circuit diagram showing sensory neurons (triangles) connecting to interneurons (hexagons) by chemical synaptic connectivity (arrows) and gap junctions (lines). The thickness of the line is proportional to the weight of connection (aggregate number of serial section electron micrographs where a synaptic specialization is observed, with only connections ≥ 10 sections shown in this diagram). (C) Comparison of species-specific connections and neuronal adjacency. Bar graph showing chemical synaptic connectivity (orange), neuronal adjacency for C. elegans (purple), and neuronal adjacency for P. pacificus (green). The x axis is ordered by increasing strength of species-specific connection, and colored coded as in 8A. Adjacency was determined computationally by comparing adjacent pixels of volumetrically traced neuron profiles. Proportion was determined by dividing the number of serial EM sections showing a synaptic connection or adjacency by the total number of sections comprising the nerve ring and ventral ganglion. A proportion of 1.0 indicates the entire ipsilateral region of interest was adjacent, with proportions over 1.0 showing adjacency on both sides of the nerve ring. Each partnership evaluated is a combination of two neurons that formed a species-specific connection shown in (B). Figure 9—source datas 1–3.
 
 Synaptic connections present in only one species could be due to either differences in the structure of neuronal neighborhoods or synaptic specificity among adjacent processes. To distinguish between these possibilities, we computationally determined all axon-axon adjacencies of the amphid circuit in both species as previously described (Brittin et al., 2018). To compare across species, and to reduce section thickness and fixation artifacts, we calculated the proportion of adjacency (total number of EM sections where two processes are adjacent divided by the number of sections in the region of interest), similar to previous analyses of neuronal adjacency (White et al., 1983). Of the 29 species-specifc connections, there are only 21 pairs of possible neuron-neuron adjacencies due to reciprocal connectivity. Of these 21 neuron-neuron pairs, we found that all make physical contact in both species. The amount of contact did, however, vary across a wide range in both species. Among species-specific neuronal partnerships, we found the percent of axonal-axonal contact ranged from 0.95% to 142% (median contact 26.7%) (Figure 9C). We evaluated whether the amount of neuron-neuron adjacency could predict the strength of a synaptic connection. We compared the correlation between synaptic connectivity and neuron-neuron adjacency and found a very weak, non-significant, correlation in both species (Spearman’s R = 0.2042, p=0.3747 in P. pacificus; Spearman’s R = 0.1248, p=0.5898 in C. elegans). Together, these results suggest that species-specific differences in connectivity are largely determined by synaptic partnership choice or recognition rather than large differences in axonal fasciculation and neuronal neighborhood changes.
 
-## Similarity and divergences of molecular features
+### Similarity and divergences of molecular features
 
 Moving beyond anatomy, we assessed the evolutionary divergence of molecular features of individual neurons. Divergences in molecular features between homologous neurons in different species can be expected to be manifested via the species-specific loss or gain of genes that control certain neuronal phenotypes or via the modifications of expression patterns of genes. There appears to be ample evidence for both. For example, several censuses taken for the number of GPCR-type sensory receptor-encoding genes indicated a much smaller number in P. pacificus compared to C. elegans (Dieterich et al., 2008; Krishnan et al., 2014). Similarly, there are species-specific gene losses and gains in the complement of specific subfamilies of taste receptor-type guanylyl cyclases, as discussed above (Figure 4- figure supplement 1 and 2). On the level of regulatory factors, we noted above the absence of the lsy-6 locus outside the Rhabditidae. In regard to genes that control structural features to neurons, we considered a gene, oig-8, which was recently identified as controlling the morphological elaborations of the winged cilia of the AWA/B/C neurons in C. elegans (Howell and Hobert, 2017). oig-8 encodes a single transmembrane, immunoglobulin domain protein that not encoded in the P. pacificus genome. To assess whether this gene loss is responsible for the lack of winged cilia in P. pacificus, we mis-expressed Cel-oig-8 under the Ppa-odr-7 promoter (described below) along with the Ppa-odr-7p::rfp marker but found no difference in the terminal dendritic cilia of RFP positive neurons that were co-injected with the Ppa-odr-7p::Cel-oig-8 transgene compared to those that were injected only with the Ppa-odr-7p::RFP marker (Figure 4—figure supplement 3). This result suggests the two Ppa-odr-7-expressing amphid neurons may lack other factors (DiTirro et al., 2019), such as factors involved in ciliary membrane morphogenesis in wing neurons, to realize the branching function of Cel-oig-8﻿.
 
@@ -151,7 +495,171 @@ One obvious question for the future is about the functional consequences of the 
 
 ## Materials and methods
 
-## Transmission electron microscopy
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Pristionchus pacificus)</td>
+      <td>Ppa-daf-6p::rfp</td>
+      <td>this study</td>
+      <td>tuEx231</td>
+      <td>extrachromosomal array transgenic strain</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Pristionchus pacificus)</td>
+      <td>Ppa-daf-6p::venus</td>
+      <td>this study</td>
+      <td>tuEx250</td>
+      <td>extrachromosomal array transgenic strain</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Pristionchus pacificus)</td>
+      <td>Ppa-odr-3p::rfp</td>
+      <td>this study</td>
+      <td>tuEx265</td>
+      <td>extrachromosomal array transgenic strain</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Pristionchus pacificus)</td>
+      <td>Ppa-odr-7p::rfp</td>
+      <td>this study</td>
+      <td>tuEx296 and tuEx297</td>
+      <td>extrachromosomal array transgenic strain</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Pristionchus pacificus)</td>
+      <td>Ppa-che-1p::che-1:rfp</td>
+      <td>this study</td>
+      <td>lucEx367</td>
+      <td>extrachromosomal array transgenic strain</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ppa-che-1 mRNA probe</td>
+      <td>Stellaris, Biosearch Technologies; this study</td>
+      <td>PPA01143</td>
+      <td>single-molecule in situ fluorescence probe</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ppa-daf-6 promoter forward primer</td>
+      <td>this study</td>
+      <td>PPA15978</td>
+      <td>CTCGCCCGTGGATCATGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ppa-daf-6 promoter reverse primer</td>
+      <td>this study</td>
+      <td>PPA15978</td>
+      <td>TGCAAATCATTGATTGAATCATGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ppa-odr-3 promoter forward primer</td>
+      <td>this study</td>
+      <td>PPA14189</td>
+      <td>GAGCGAGTGAAATGAGCTCAGTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ppa-odr-3 promoter reverse primer</td>
+      <td>this study</td>
+      <td>PPA14189</td>
+      <td>GGGTGATCGATACGAGGAGTGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ppa-odr-7 promoter forward primer</td>
+      <td>this study</td>
+      <td>Contig1-aug1055.t1</td>
+      <td>AACCAATGCATTGGCTTAGTTGGTTTCACTAATCACTACTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ppa-odr-7 promoter reverse primer</td>
+      <td>this study</td>
+      <td>Contig1-aug1055.t1</td>
+      <td>CCCTTGTCATTCAGATGAGCGAGCTGATCAAGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ppa-che-1 promoter reverse primer</td>
+      <td>this study</td>
+      <td>PPA01143</td>
+      <td>CAGGAAACAGCTATGACCATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ppa-che-1 intron reverse primer</td>
+      <td>this study</td>
+      <td>PPA01143</td>
+      <td>CTGTGATAAGATCATTATTGGTAC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DiI</td>
+      <td>Molecular Probe</td>
+      <td>V22889</td>
+      <td>1:150 dilution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DiO</td>
+      <td>Molecular Probe</td>
+      <td>V22886</td>
+      <td>1:150 dilution</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TrakEM2</td>
+      <td>PMID: 22723842</td>
+      <td></td>
+      <td>EM section alignment</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>3D reconstruction</td>
+      <td>bioRxiv 485771</td>
+      <td></td>
+      <td>volumetric reconstruction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td></td>
+      <td>image processing</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Image J</td>
+      <td>Imagej.net</td>
+      <td></td>
+      <td>image processing</td>
+    </tr>
+    <tr>
+      <td>Algorithm</td>
+      <td>www.phylogeny.fr</td>
+      <td>PMID: 18424797</td>
+      <td></td>
+      <td>maximum liklihood phylogeny</td>
+    </tr>
+  </tbody>
+</table>
+
+### Transmission electron microscopy
 
 The TEM data used in the current study are derived from two sets of slightly different preparations of young adult P. pacificus strain PS312 (Sommer et al., 1996) hermaphrodites. All of the 3D reconstructions and most descriptions of the morphological details originate from two datasets of roughly 3000 serial sections of 50 nm thickness, covering the anterior parts of two high-pressure-frozen and freeze-substituted adult hermaphrodite (specimen 107 and specimen 148), which were generated by Daniel Bumbarger. For a detailed methods description see Bumbarger and coworkers (Bumbarger et al., 2013). Alignment and manual segmentation was done in TrakEM2 (Cardona et al., 2012; Kremer et al., 1996). Segmentation and 3D reconstruction of the sensory head neurons were initially performed by Tahmineh Sarpolaki (2011) in the course of her Diploma thesis. The datasets can be accessed freely at https://wklink.org/7348.
 
@@ -159,24 +667,24 @@ Analysis of neuronal adjacencies was performed by using a modified python script
 
 We additionally used sections of four older TEM specimens, three transversely sectioned and one sagittally, which were prepared as follows: worms were placed in 100 µm deep specimen carriers half-filled with thick E. coli OP50 suspension, covered with the flat side of another carrier and high-pressure-frozen with a Bal-tec HPM-10 high-pressure freezer (Balzers, Liechtenstein). Freeze substitution was carried out in a freeze-substitution unit (Balzers FSU 010, Bal-Tec, Balzers, Liechtenstein) according to the following protocol: fix in 2% OsO4, 0.5% UA, 0.5% GA in 97.5% acetone, 2.5% Methanol for 24 hr at −90°C, raise temperature to −60°C in 3 hr, hold for 6 hr, raise to −40°C in 2 hr, hold for 12 hr, keep on ice for 1 hr, wash with 100% acetone, embed in Epon/acetone. Blocks were sectioned with an LKB 2128 Ultratome. Ultrathin sections were viewed in a Philips CM10 or in a Fei Tecnai G2 Spirit T12 transmission electron microscope, images were acquired on photo plates or with a Morada TEM CCD camera, respectively.
 
-## Scanning electron microscopy
+### Scanning electron microscopy
 
 Clean specimens of adult P. pacificus strain PS312 (Sommer et al., 1996) were fixed in 2.5% glutaraldehyde in PBS, post-fixed with 1% osmium tetroxide in PBS, dehydrated in a graded series of 30%, 50%, 70%, 95% and 100% ethanol, critical-point dried in liquid CO2 and sputter-coated with 10 nm Au/Pd. Inspection was carried out at 15 kV in a Hitachi S-800 field emission scanning electron microscope. We viewed ten processed P. pacificus PS312 hermaphrodite adults ‘face on’ and did not notice any differences in the external structures of the mouth regions among them.
 
-## Transgenic reporter strains
+### Transgenic reporter strains
 
 P. pacificus California PS312 and transgenic strains were raised on OP50 E. coli seeded NGM plates at 20°C. We used P. pacificus gene names (PPAxxxxx) and putative homology from www.wormbase.org based on the most recent P. pacificus Genome Assembly El_Paco (Rödelsperger et al., 2017) and C. elegans WS269. To confirm the assigned gene orthology, we looked for best reciprocal BLASTP hits between P. pacificus and C. elegans genomes, as well as 1–1 orthology in gene phylogeny trees. To resolve ambiguities, we also performed BLASTP search against AUGUSTUS gene predictions in the previous P. pacificus Genome Assembly Hybrid1 (www.pristionchus.org >Genome > Hybrid1, select track AUGUSTUS2013) and the amino acid sequences downloaded under ‘Sequences’. To make a Ppa-odr-3 reporter plasmid, a ~ 1.7 kb long region upstream of the first ATG codon of Ppa-odr-3 (PPA14189) (FP: GAGCGAGTGAAATGAGCTCAGTCC, RP: GGGTGATCGATACGAGGAGTGTTC) and the coding sequence of TurboRFP fused to the 3’ UTR of the ribosomal gene Ppa-rpl-23 (Schlager et al., 2009) were cloned into the pUC19 plasmid using Golden Gate Assembly Mix (New England BioLabs, E1600S) following the manufacturer’s instructions. To make the Ppa-daf-6 reporter, a 2.4 kb promoter sequence upstream of the start codon Ppa-daf-6 (PPA15978) (FP: CTCGCCCGTGGATCATGTG, RP: TGCAAATCATTGATTGAATCATGG) was fused with rfp and Venus by fusion PCR (Hobert, 2002; Kieninger et al., 2016). Because the homology assignment for odr-7 on Wormbase.org was Ppa-nhr-66, we looked for more likely orthology candidates using the AUGUSTUS genome assembly. The best BLASTP hit of Cel-odr-7 was Contig1-aug1055.t1 (Contig1:2723982–2725788) and the Ppa-odr-7 promoter was amplified and fused to rfp (FP: AACCAATGCATTGGCTTAGTTGGTTTCACTAATCACTACTG, RP: CCCTTGTCATTCAGATGAGCGAGCTGATCAAGGAG). To test if Cel-oig-8 expression in the Ppa-odr-7-expressing neurons is sufficient to induce branching, we fused the 1.8 kb Ppa-odr-7 promoter region to the genomic region of Cel-oig-8 (FP: CCCTTGTCATTCAGATGAGCCTCCTTTCCAATATT, RP: TTACAGGGAGAAAGAGCATGTAG) and injected it with the Ppa-odr-7p::rfp. Each fusion junction site was verified by Sanger sequencing. For the construction of Ppa-che-1p::rfp, a 3.1 kb upstream fragment containing the first exon was amplified and fused with rfp. Although Ppa-che-1(PPA01143) was not the best hit when using the Cel-che-1 as query, Cel-che-1 was the best hit when using PPA01143 as query. The best hit homolog on Wormbase.org, Ppa-blmp-1(PPA04978), is predicted to encode for a much larger protein than both che-1 and Ppa-che-1(PPA01143). Curiously, no RFP fluorescence was visible when the reporter did not include the endogenous first exon and intron fused to rfp. The expression pattern observed with this transgene recapitulated the pattern of expression of the endogenous Ppa-che-1 determined by single-molecule fluorescence in situ hybridization (smFISH). The probe set used to stain for Ppa-che-1 was obtained from Stellaris, Biosearch Technologies (Middlesex, UK) and targets the validated, full-length Ppa-che-1 sequence. The smFISH staining was performed as previously described (Ji and van Oudenaarden, 2012).
 
 To create complex arrays for transgenesis, wildtype PS312 genomic DNA, the PCR product or the plasmid carrying the target reporter, and the Ppa-egl-20::rfp reporter (co-injection marker expressed in the tail) were digested with the FastDigest PstI restriction enzyme (Thermo Fisher Scientific, FD0615) and then mixed at the final concentration of 60 ng/µl for genomic DNA and 10 ng/µl for each plasmid. Prepared mix was injected in the gonad rachis in hermaphrodites (Cinkornpumin and Hong, 2011; Schlager et al., 2009). The F1 progeny of injected animals were examined under a fluorescent dissecting microscope and animals that expressed the Ppa-egl-20p::rfp co-injection marker were isolated. All reporters were maintained as extrachromosomal arrays: Ppa-daf-6p::rfp (tuEx231), Ppa-daf-6p::venus (tuEx250), Ppa-che-1p::rfp (lucEx367), Ppa-odr-3p::rfp (tuEx265) and Ppa-odr-7p::rfp (tuEx296 and tuEx297).
 
-## DiI live staining
+### DiI live staining
 
 Lipophilic dyes DiI and DiO (Molecular Probes, V22889 and V22886) were used as neuronal tracers for a stereotypical subset of amphid neurons to facilitate cell identification either by relative cell position or overlap of red or green fluorescence in combination with transgenic reporters. DiI (red) and DiO (green) specifically stain five head amphid neurons in C. elegans, but DiO stains only two (AM2(ADL) and AM8(ASJ)) of the five (AM1(ASH), AM2(ADL), AM4(ASK), AM8(ASJ), and AM9(ADF)) possible stereotypical amphid neurons in P. pacificus. Well-fed nematodes were washed once in M9 buffer and then incubated for 2 hr at ~23°C with 300 µl of fresh M9 containing 1:150 dilution of DiI or DiO (6.7 µM). The nematodes were subsequently washed twice in 800 µl of fresh M9 buffer and placed onto OP50 E. coli seeded NGM plates to let the worms crawl freely for ~30 min to remove excess dye.
 
-## Software
+### Software
 
 For images of DiI-filling in Figure 3A–B, we used AutoDeblur and Autovisualize v9.3 (AutoQuant Imaging, Inc, New York) to reduce fluorescence background, and MetaMorph v6.2r5 (Universal Imaging Corp. Pennsylvania) to 3D reconstruct or stack images from multiple planes. Adobe Photoshop and Image J were used to process other images.
 
-## Phylogeny
+### Phylogeny
 
 The amino acid sequences of potential homologs were first identified by BLASTX searches on WormBase. The phylogeny trees were built using the following workflow: alignment and removal of positions with gap with T-COFFEE, Maximum Likelihood phylogeny by PhyML, and tree rendering by TreeDyn (www.phylogeny.fr) (Dereeper et al., 2008). Midpoint rooting was used and branch support ≥30% is shown. For the nuclear hormone receptor tree building, only the DNA binding C4 domain was used.

@@ -10,12 +10,12 @@
 
 ### Affiliations
 
-1. https://ror.org/05rrcem69 Department of Public Health Sciences, University of California, Davis Davis United States
-2. https://ror.org/05rrcem69 Center for Animal Disease Modeling and Surveillance (CADMS), Department of Veterinary Medicine, University of California, Davis Davis United States
+1. Department of Public Health Sciences, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+2. Center for Animal Disease Modeling and Surveillance (CADMS), Department of Veterinary Medicine, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 3. Departments of Preventive Medicine and Urology, Keck School of Medicine of USC Los Angeles United States
-4. https://ror.org/03taz7m60 Norris Comprehensive Cancer Center, University of Southern California Los Angeles United States
-5. https://ror.org/01cwqze88 Office of the Director, National Institute on Minority Health and Health Disparities, National Institutes of Health Bethesda United States
-6. https://ror.org/05rrcem69 Comprehensive Cancer Center, University of California, Davis Davis United States
+4. Norris Comprehensive Cancer Center, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+5. Office of the Director, National Institute on Minority Health and Health Disparities, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+6. Comprehensive Cancer Center, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 
 † Corresponding author
 
@@ -71,7 +71,7 @@ Just as the interpersonal level in the present framework explores human-human in
 
 In the present framework, the societal level of influence includes the presence and actions of governmental and civil society organizations at different levels (such as state, country, or region), (Alvidrez et al., 2019) and the new planetary level of influence adds considerations of globalization and impacts of the natural environment. Examples include the effects on minority health and health disparities of climate change (i.e., the biological domain), (US EPA, 2017b) global trade (behavioral), (Friel et al., 2015) ambient air temperature and pollution (physical/built environment), (Son et al., 2019; Yi et al., 2010; Schifano et al., 2013) migration and mobility (sociocultural environment), (Castañeda et al., 2015) global health programs, and the global system for producing medicines and medical devices (healthcare system) (Newman and Cragg, 2020). More examples are given in Figure 1 (but please note that these examples are not meant to be comprehensive or to imply causal inference).
 
-## Example: Antimicrobial resistance
+### Example: Antimicrobial resistance
 
 We will now show how the expanded framework can be applied to research into health disparities in two areas: antimicrobial resistance (AMR) (Figure 2) and obesity. The problem of AMR is primarily driven by antibiotic overuse and misuse in humans, non-human animals, and the environment. Moreover, the interconnected nature of AMR means that it has already been studied by One Health researchers, (McEwen and Collignon, 2018; Robinson et al., 2016) which makes it a promising candidate for the expanded NIMHD framework. There are documented disparities by racial and ethnic category in antibiotic use and AMR infections in the US (Olesen and Grad, 2018; Hota et al., 2007; Iwamoto et al., 2013). There are also known occupational disparities in AMR pathogen exposure, with those in the agricultural and medical fields being at increased risk (Fynbo and Jensen, 2018; Voss et al., 2005). Racial/ethnic category minority individuals, such as African American/Black and Hispanic/Latino, are more likely to work in these industries due to a combination of government policies and laws, and the unequal distribution of income and resources (Division of Labor Force Statistics, 2020).
 
@@ -87,7 +87,7 @@ Globalization and climate change are also highly relevant when considering AMR, 
 
 The risk factors for AMR are well documented, but our understanding of the combination of factors and interactions that contribute to disparities in AMR is limited (Holmes et al., 2016). Including the planetary level of influence in the expanded framework highlights the need for multidisciplinary research that considers the interplay between humans, biodiversity, and the environment (Venkatasubramanian et al., 2020). For example, environmental scientists could collaborate on studies evaluating geographic disparities in AMR that explore the possible impact of climate change on the abiotic environment in which people live (i.e., the planetary level/biological domain), and how the effect of this relationship disproportionately impacts segments of the population based on socioeconomic status. While there is no direct evidence of climate change impacts to the abiotic environment leading to disparities in AMR, the expanded framework allows such possibilities to be explored.
 
-## Example: Obesity
+### Example: Obesity
 
 Obesity, defined by a body mass index above 30 kg/m2, is a major public health concern due to its contribution to several leading causes of disability and death, including diabetes, heart disease, stroke, osteoarthritis, and cancer (CDC, 2021a). Obesity affects people in every country worldwide and the prevalence is increasing, making it classifiable as a pandemic (Swinburn et al., 2019). This pandemic results from a number of factors, including urbanization, global trade, and easy access to inexpensive caloric-dense food, (Swinburn et al., 2019) and disparities in obesity are evident by geography, gender, age, and socioeconomic status, as well as race and ethnicity categories (Hill et al., 2014; Wang and Beydoun, 2007). Solutions to the growing obesity pandemic will, therefore, require a multifaceted understanding of all these factors and the interactions between them.
 

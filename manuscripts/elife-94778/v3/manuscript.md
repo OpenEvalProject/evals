@@ -18,10 +18,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02f6dcw23 Department of Biochemistry and Structural Biology, UT Health San Antonio San Antonio United States
-2. https://ror.org/02f6dcw23 Department of Obstetrics and Gynecology, UT Health San Antonio San Antonio United States
-3. https://ror.org/02f6dcw23 Center for Innovative Drug Discovery, UT Health San Antonio San Antonio United States
-4. https://ror.org/02f6dcw23 Department of Molecular Medicine, UT Health San Antonio San Antonio United States
+1. Department of Biochemistry and Structural Biology, UT Health San Antonio San Antonio United States ([ROR:02f6dcw23](https://ror.org/02f6dcw23))
+2. Department of Obstetrics and Gynecology, UT Health San Antonio San Antonio United States ([ROR:02f6dcw23](https://ror.org/02f6dcw23))
+3. Center for Innovative Drug Discovery, UT Health San Antonio San Antonio United States ([ROR:02f6dcw23](https://ror.org/02f6dcw23))
+4. Department of Molecular Medicine, UT Health San Antonio San Antonio United States ([ROR:02f6dcw23](https://ror.org/02f6dcw23))
 
 † Corresponding author
 
@@ -43,11 +43,322 @@ Gap junctions have also been associated with multiple aspects of the other major
 
 Despite these links between GJs and the two major pathologies of endometriosis, studies have been limited to tracking connexin expression. Immunocytochemistry showed a shift in Cx expression of endometrial epithelial cells (EECs) from primarily Cx26 (GJB2) with some Cx32 (GJB1) in the uterus (Jahn et al., 1995), to Cx43 (GJA1) in peritoneal (ectopic) endometriotic lesions (Regidor et al., 1997). A similar switch in EEC Cx expression profile was reported ectopically in the uteri of baboons with endometriosis (Winterhager et al., 2009), but this was not seen in human patient samples where Cx expression of EECs remained unaltered (Yu et al., 2014). In contrast, ESCs have been reported to retain Cx43 expression in both eutopic and ectopic locations, although at significantly reduced levels in endometriosis patients (Nair et al., 2008, Yu et al., 2014). The reduced Cx43 expression in the uterus has been suggested to contribute to infertility associated with endometriosis (Yu et al., 2014), but to date, no studies have explored the role of GJs in lesion formation. Of particular relevance to this is the consistent observations, mentioned above, that connexin expression is repressed in primary tumors, yet is induced in metastatic tumor cells to promote invasion. We investigate this same connection here with regard to endometriosis using primary endometrial stromal and epithelial cells isolated from 22 control and 22 endometriosis patients from stages I-II and III-IV of the disease (Table 1).
 
+**Table 1.**
+ Patient data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient</th>
+      <th>Ethnicity</th>
+      <th>Age</th>
+      <th>BMI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CONTROL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Cauc</td>
+      <td>22</td>
+      <td>18.1</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>NS</td>
+      <td>35</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Cauc</td>
+      <td>36</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Hisp</td>
+      <td>38</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Hisp</td>
+      <td>40</td>
+      <td>29.2</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Cauc</td>
+      <td>23</td>
+      <td>32.6</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Hisp</td>
+      <td>25</td>
+      <td>28.3</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Afr Am</td>
+      <td>33</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Afr Am/Hisp</td>
+      <td>37</td>
+      <td>43.4</td>
+    </tr>
+    <tr>
+      <td>33 *</td>
+      <td>Hisp</td>
+      <td>31</td>
+      <td>39.6</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Cauc</td>
+      <td>30</td>
+      <td>38.2</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Cauc</td>
+      <td>36</td>
+      <td>33.1</td>
+    </tr>
+    <tr>
+      <td>37 *</td>
+      <td>Cauc</td>
+      <td>28</td>
+      <td>37.3</td>
+    </tr>
+    <tr>
+      <td>38 *</td>
+      <td>Hisp</td>
+      <td>25</td>
+      <td>27.7</td>
+    </tr>
+    <tr>
+      <td>45 *</td>
+      <td>Cauc</td>
+      <td>33</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>47 *</td>
+      <td>Hisp</td>
+      <td>29</td>
+      <td>24.5</td>
+    </tr>
+    <tr>
+      <td>H11</td>
+      <td>Hisp</td>
+      <td>38</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>H19</td>
+      <td>Cauc</td>
+      <td>25</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>H20</td>
+      <td>Cauc</td>
+      <td>45</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>H25</td>
+      <td>Hisp</td>
+      <td>26</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>H27</td>
+      <td>Cauc</td>
+      <td>26</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>H47</td>
+      <td>Cauc</td>
+      <td>24</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td colspan="2">ENDOMETRIOSIS I-II</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Hisp</td>
+      <td>35</td>
+      <td>22.5</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Pac Isl</td>
+      <td>30</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Cauc</td>
+      <td>25</td>
+      <td>27.4</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Cauc</td>
+      <td>35</td>
+      <td>27.6</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Cauc</td>
+      <td>24</td>
+      <td>23.1</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Cauc</td>
+      <td>31</td>
+      <td>31.3</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Hisp</td>
+      <td>30</td>
+      <td>25.8</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Cauc</td>
+      <td>39</td>
+      <td>29.9</td>
+    </tr>
+    <tr>
+      <td>35 *</td>
+      <td>Cuac</td>
+      <td>28</td>
+      <td>21.7</td>
+    </tr>
+    <tr>
+      <td>39 *</td>
+      <td>Hisp/Pac Isl</td>
+      <td>25</td>
+      <td>24.2</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>Cauc</td>
+      <td>25</td>
+      <td>40.2</td>
+    </tr>
+    <tr>
+      <td colspan="2">ENDOMETRIOSIS III-IV</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Cauc</td>
+      <td>26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Cauc</td>
+      <td>31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Afr Am</td>
+      <td>28</td>
+      <td>18.9</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Cauc</td>
+      <td>41</td>
+      <td>45.1</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Hisp</td>
+      <td>40</td>
+      <td>20.3</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Cauc</td>
+      <td>37</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Cauc</td>
+      <td>23</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Cauc</td>
+      <td>30</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>40 *</td>
+      <td>Hisp</td>
+      <td>34</td>
+      <td>18.9</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Cauc</td>
+      <td>32</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Cauc</td>
+      <td>34</td>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
+
+_OCP, Oral contraceptives; IUD, Intra-uterine device; ES, Early secretory; MS, Mid-secretory; LS, Late Secretory; M, Menstruation.*PMCs also obtained._
+
 ## Results
 
-## ESC and EEC mixes from endometriosis patients are more invasive, with ESCs being the primary invaders
+### ESC and EEC mixes from endometriosis patients are more invasive, with ESCs being the primary invaders
 
 As the first step in lesion formation, or any invasive process, is adhesion to the target, we tested the two major endometrial cell types for adhesiveness to mesothelial cells, as this would indicate which cell type we should focus on as the primary instigator of invasion. Peritoneal Mesothelial Cells (PMCs, specifically the LP9 cell line) or primary EECs or ESCs isolated from patients as described in Methods (see Figure 1—figure supplement 1) were attached to the cantilever of an Atomic Force Microscope (AFM) and brought into contact with LP9 mesothelial cells in a monolayer, and after 30 s, the force needed to separate the cells was measured (Figure 1A - Sancho et al., 2017; Roca-Cusachs et al., 2017). PMCs show low levels of adhesion to one another and to EECs, but sixfold greater forces were needed to separate ESCs from PMCs (Figure 1B). These measurements were conducted with cells from control patients. ESCs from endometriosis patients showed even higher levels of adhesion, as they were difficult to separate from PMCs even after only 1–2 s of contact, precluding accurate measurement of force using our instrumentation.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94778/elife-94778-fig1-v3.jpg)
+
+**Figure 1.:** Adhesiveness. (A) The force needed to separate a cell attached to an atomic force microscope (AFM) cantilever tip (left) from peritoneal mesothelial cells (PMCs) growing on a dish (left) was calculated from a force/distance curve (right). (B) LP9 PMCs show similar adhesion to one another as to endometrial epithelial cells (EECs), but much stronger adhesion to endometrial stromal cells (ESCs) (3–6 technical replicates). Invasiveness. (C) A 3-D ex-vivo model measured endometrial cell invasion across a PMC monolayer in a Boyden chamber. (D) Consistent with their lower adhesion, EECs were twofold less invasive than ESCs across all patients. (E) ESCs from Endometriosis patients (n=7) were more invasive than those from controls (n=6), both through an LP9 PMCs (> fivefold difference) or primary PMCs (fourfold difference) derived from both control (n=5) or endometriosis (n=3) patients. (F) Mixes (1:1) of ESCs and EECs from the same control (n=6) or endometriosis (n=7) patients were 1.5 and 2.1-fold more invasive, respectively than ESCs alone (significance values represent the difference of co-cultures from ESCs alone). (G) Invasion of ESCs from eight patients across LP9 PMC or HUVEC monolayers were highly correlated. Number of repeats for each condition in D - F is shown. Significance based on two-tailed t-test. Full data in Figure 1—source data 1. Legend applies to Figures 1—4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94778/elife-94778-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Cell separations from an endometriosis and control patient taken at 40 x (top) and 10 x (bottom), indicate the purity of the isolations, using double staining with EpCAM or cytokeratin 7 antibodies for Epithelial cells (red), and Vimentin for stromal cells (green). Nuclei are stained blue with DAPI in both. Bars are 20 µm (top) and 100 µm (bottom).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94778/elife-94778-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (accompanies Figure 1F) (A–C) ESCs [labeled with DiI (red)] and EECs [labeled with DiO (green)] were mixed in equal numbers prior to invasion across a peritoneal mesothelial cell (PMC) monolayer. Invading cells were visualized with DAPI (blue) to stain the nuclei. As DiI and DiO are lipophilic dyes, they stain in a non-uniform punctate pattern. The two-cell types tended to invade in clusters. ESCs formed the majority of the invasive cells (A and C), although in some regions EECs represented 50% of the invasive species. (D) In some experiments, rather than pre-labeling, the cells were fixed and stained with Vimentin for ESCs (green) and cytokeratin 7 for EECs (red). The more uniform labeling clearly demonstrates the predominance of ESCs in the invasive cells. Scale bars are 10 µm.
 
 We then directly assessed invasiveness using an established 3D-invasion model (Nair et al., 2008). Endometrial cells labeled with a lipophilic fluorescent dye (Di-O) are dropped onto a hormone depleted Matrigel-coated Boyden chamber on which is grown a confluent monolayer of the LP9 PMCs (Figure 1C). Neither ESCs nor EECs invaded through the membrane alone, confirming a dependence on a PMC monolayer for invasion. PMCs alone showed limited invasiveness, but this was excluded as only Di-O labeled cells were counted. Comparisons of ESC and EEC invasiveness from all patients showed ESCs to be twofold more invasive (Figure 1D), consistent with their higher level of adhesiveness to PMCs observed above. This led us to focus our invasion comparisons between control (8) and endometriosis (11) patients primarily on ESCs. ESCs from endometriosis patients were 4–6 fold more invasive than from controls (Figure 1E) mostly due to patients from more advanced disease (Figure 1 - support data 1). This difference was less (~2.5 fold) when invasion was measured in the absence of a serum gradient, or at higher gradients (data not shown), indicating that endometriosis ESCs are more responsive to low-level chemo-attractant gradients. We also observed a similar difference of ~ fourfold when we compared invasiveness across PMCs derived from either control or endometriosis patients (Figure 1E).
 
@@ -55,25 +366,25 @@ In the retrograde model of endometriosis, fragments of the endometrium, containi
 
 While most endometriosis lesions are restricted to the peritoneal cavity, some (<5%) can be found outside, even as far as the lungs and brain. Such lesions clearly cannot arise form retrograde menstruation, but as we have shown that ESCs from patients are highly invasive through PMCs, we tested whether they may also be able to intravasate into the circulation, allowing further spread. A comparison of eight patients with different invasive tendencies demonstrated that invasiveness across a PMC monolayer was highly correlated with invasiveness across an endothelial cell monolayer of HUVECs (Figure 1G), suggesting that spread on endometrial cells through the circulation may also be enhanced in endometriosis.
 
-## ESCs from endometriosis patients show greater inherent motility, and this is further enhanced by PMCs
+### ESCs from endometriosis patients show greater inherent motility, and this is further enhanced by PMCs
 
 To assess another major contributor to invasiveness, we compared the motility of ESCs from control and endometriosis patients using a wound healing assay (Figure 2A and B). Comparisons of ESCs from 15 control and 11 endometriosis patients (4 stages I-II and 7 stages III-IV) revealed a twofold increase in motility associated with disease (Figure 2C). In a subset of these patient samples (eight controls and four endometriosis patients) we also tested the effects of co-culture of ESCs with LP9 PMCs. The motility of co-cultures compared to ESCs grown alone was not significantly changed in control samples but increased by 1.5-fold in endometriosis samples (Figure 2D). We could not assess the effect of EECs on ESC motility due to low adhesiveness of EECs, leading to selective loss of these cells and disruption of the cell monolayer needed for motility measurements. While these data show a net threefold difference in motility between control and endometriosis ESCs in the presence of PMCs, this does not fully account for the sixfold difference in invasiveness, indicating that additional factors play a role.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/94778/elife-94778-fig2-v3.jpg)
 
-**Figure 2.:** (A) Motility was measured by rates of wound clousre in in an incucyte system (images at 0, 24 and 48 hr after scraping). (B) Motility is measured by fits to the linear portion of the wound closure over time. (C) ESCs from endometriosis patients (n=10) show higher the motility than from control patients (n=9). (D) Mixing LP9 peritoneal mesothelial cell s (PMCs) with ESCs further increases motility of Endometriosis ESCs, while little effect is seen in control ESCs. The number of repeats for each condition is shown. Significance based on two-tailed t-tests. Full data in Figure 2—source data 1.Figure 2—source data 1.Figure 2C and D.
+**Figure 2.:** (A) Motility was measured by rates of wound clousre in in an incucyte system (images at 0, 24 and 48 hr after scraping). (B) Motility is measured by fits to the linear portion of the wound closure over time. (C) ESCs from endometriosis patients (n=10) show higher the motility than from control patients (n=9). (D) Mixing LP9 peritoneal mesothelial cell s (PMCs) with ESCs further increases motility of Endometriosis ESCs, while little effect is seen in control ESCs. The number of repeats for each condition is shown. Significance based on two-tailed t-tests. Full data in Figure 2—source data 1.
 
-## PMCs induce gap junction intercellular coupling (GJIC) with ESCs
+### PMCs induce gap junction intercellular coupling (GJIC) with ESCs
 
 Adhesion, motility, and invasive processes have all been shown to be regulated at some level by gap junctions, either between like cells or between invading cells and the target tissue. To explore the potential role of GJs in endometriosis, we utilized an automated variant of the ‘parachute’ technique to measure GJIC as the rate of spread of preloaded calcein dye from donor cells (D) dropped onto a monolayer of acceptor cells (A) (Figure 3A). While we had observed some changes in the expression of gap junction genes in ESCs and EECs with endometriosis (Chen et al., 2021), we saw only modest changes (<35%) in the most highly expressed isoform, Cx43 or in homo-cellular GJIC between ESCs (Figure 3B) between control (black) and endometriosis (gray) patients. However, hetero-cellular GJIC between ESCs and PMCs, as would occur at the onset of lesion formation, was induced at higher levels as disease progressed (Figure 3C), from twofold in controls to over threefold in stage III-IV endometriosis (p<0.01).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/94778/elife-94778-fig3-v3.jpg)
 
-**Figure 3.:** (A) Gap junction intercellular coupling (GJIC) was measured by a modified ‘parachute assay’ where calcein-loaded donors are dropped onto a monolayer of acceptors of either the same (homocellular) or different (heterocellular) cell type, and calcein transfer is measured as a linear increase in fluorescent acceptor/donor ratio over time. Scale bars are 50 µM. (B) GJIC between eutopic ESCs decreased progressively with the disease, reaching significance in Endometriosis III-IV patients. (C) Heterocellular ESC-PMC GJIC was induced compared to ESC homocellular coupling and this increased with disease progression to 2–4.5-fold in Endometriosis III-IV patients. (D–K) Immunocytochemical staining of Cx43 (red), with cell outlines from phase (yellow) or membrite labeling (blue) superimposed in the lower panels. ESCs alone showed some labeling between cells (arrowheads), but most Cx43 was in intracellular pools (D–G). By contrast, in mixed cultures of PMCs with ESCs [labeled with cell tracker green (*)] there is less intracellular Cx43 labeing, and punctate staining of GJs between cells is increased in frequency [Arrowheads: ESC-ESC (green in yellow); PMC-PMC (hollow yellow); ESC-PMC (solid yellow)] (H–K). Nuclei are stained with DAPI. Scale bars are 10 μm. Number of repeats for each condition are shown in B and C, with 8–10 patients in each group. Significance based on two-tailed t-tests. Full data in Figure 3—source data 1.Figure 3—source data 1.Figure 3B and C.
+**Figure 3.:** (A) Gap junction intercellular coupling (GJIC) was measured by a modified ‘parachute assay’ where calcein-loaded donors are dropped onto a monolayer of acceptors of either the same (homocellular) or different (heterocellular) cell type, and calcein transfer is measured as a linear increase in fluorescent acceptor/donor ratio over time. Scale bars are 50 µM. (B) GJIC between eutopic ESCs decreased progressively with the disease, reaching significance in Endometriosis III-IV patients. (C) Heterocellular ESC-PMC GJIC was induced compared to ESC homocellular coupling and this increased with disease progression to 2–4.5-fold in Endometriosis III-IV patients. (D–K) Immunocytochemical staining of Cx43 (red), with cell outlines from phase (yellow) or membrite labeling (blue) superimposed in the lower panels. ESCs alone showed some labeling between cells (arrowheads), but most Cx43 was in intracellular pools (D–G). By contrast, in mixed cultures of PMCs with ESCs [labeled with cell tracker green (*)] there is less intracellular Cx43 labeing, and punctate staining of GJs between cells is increased in frequency [Arrowheads: ESC-ESC (green in yellow); PMC-PMC (hollow yellow); ESC-PMC (solid yellow)] (H–K). Nuclei are stained with DAPI. Scale bars are 10 μm. Number of repeats for each condition are shown in B and C, with 8–10 patients in each group. Significance based on two-tailed t-tests. Full data in Figure 3—source data 1.
 
 Since the induction of GJIC was observed within the 2- hr timespan of our coupling assay, it seemed likely it was not due to transcriptional activation. Thus, we examined the distribution of Cx43 protein in ESCs before and after contact with PMCs (Figure 3D–K). ESC cultures alone show most of the Cx43 staining is intracellular, particularly evident in non-confocal images (Figure 3D–E). Some punctate staining at cell-cell interfaces indicative of gap junction plaques (arrowheads) is evident, particularly in confocal images (Figure 3F–G). By contrast, in mixed ESC/PMC cultures, there is much reduced intracellular staining within most, although not all, ESCs (green * labeled cells in Figure 3H,I and K). Punctate staining at cell-cell interfaces is now more frequently observed between ESCs and PMCs (solid yellow arrowheads), as well as between ESCs (green-filled yellow arrowheads) (Figure 3H and J). These gap junction plaques are often found on PMC processes that cross ESC cell bodies (Figure 3K), or the reverse, and are far more frequent in ESC-PMC co-cultures than in ESC homocellular cultures.
 
-## GJIC is required for the invasion of ESCs across a peritoneal mesothelium
+### GJIC is required for the invasion of ESCs across a peritoneal mesothelium
 
 As GJIC has been indirectly linked to the analogous process of extravasation (Ito et al., 2000: Naoi et al., 2007), we directly tested if GJIC between ESC and PMCs is required for invasion across the mesothelium. We employed several complementary strategies to selectively block GJIC, targeting Cx43, as it is expressed at 10 times higher levels than other connexins in both control and endometriosis ESCs as well as PMCs (Chen et al., 2021).
 
@@ -81,7 +392,7 @@ Firstly, we pre-treated both PMCs and ESCs in our invasion chambers with GAP27, 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/94778/elife-94778-fig4-v3.jpg)
 
-**Figure 4.:** (A) GAP27 peptide: Averaging ESCs from control (black bars, n=3) and endometriosis patients (gray bars, n=6), the invasion was inhibited by a peptide inhibitor of GJ channels, GAP27 (percent Gap Junction Intercellular Coupling (GJIC) compared to untreated shown below each bar). (B-D) shRNA: (B) Infection of a doxycycline-inducible Cx43 shRNA into endometriosis ESCs or LP9 peritoneal mesothelial cells (PMCs) reduced levels of Cx43 protein (arrow) compared to Laminin controls (doublet at ~66 kD), while expression of DN or wt Cx43 increased Cx43 expression levels. (% of untreated shown below gel) (see Figure 4—source data 1 and Figure 4—source data 2). (C) Cx43 shRNA inhibited GJIC by >90% compared to scrambled shRNA in infected LP9 PMCs (black bars, n=3) and Endometriosis ESCs (Gray bars, n=4). (D) Invasiveness was inhibited by ~85% in Cx43 shRNA infected compared to uninfected neighbors, whether expressed in ESCs (n=7), or PMCs (n=2). DN Cx43 inhibited invasiveness by 98% when expressed in ESCs, and 65% when expressed in PMCs, where ~70% of the monolayer was infected. N represents independent tests with different shRNAs, with 10 technical replicates of each. Significance based on two-tailed t-tests. Full data in Figure 4—source data 3.Figure 4—source data 1.Figure 4B.Figure 4—source data 2.Figure 4B with labels and bands highlighted.Figure 4—source data 3.Figure 4C and D.
+**Figure 4.:** (A) GAP27 peptide: Averaging ESCs from control (black bars, n=3) and endometriosis patients (gray bars, n=6), the invasion was inhibited by a peptide inhibitor of GJ channels, GAP27 (percent Gap Junction Intercellular Coupling (GJIC) compared to untreated shown below each bar). (B-D) shRNA: (B) Infection of a doxycycline-inducible Cx43 shRNA into endometriosis ESCs or LP9 peritoneal mesothelial cells (PMCs) reduced levels of Cx43 protein (arrow) compared to Laminin controls (doublet at ~66 kD), while expression of DN or wt Cx43 increased Cx43 expression levels. (% of untreated shown below gel) (see Figure 4—source data 1 and Figure 4—source data 2). (C) Cx43 shRNA inhibited GJIC by >90% compared to scrambled shRNA in infected LP9 PMCs (black bars, n=3) and Endometriosis ESCs (Gray bars, n=4). (D) Invasiveness was inhibited by ~85% in Cx43 shRNA infected compared to uninfected neighbors, whether expressed in ESCs (n=7), or PMCs (n=2). DN Cx43 inhibited invasiveness by 98% when expressed in ESCs, and 65% when expressed in PMCs, where ~70% of the monolayer was infected. N represents independent tests with different shRNAs, with 10 technical replicates of each. Significance based on two-tailed t-tests. Full data in Figure 4—source data 3.
 
 Our first approach was to use transient transfection of siRNAs to Cx43. While these did achieve 60–70% KD of GJIC, and a significant (~40%) block of invasion, results were highly variable due to compromised cell health following transfection. This affected both the effective formation of a mesothelial barrier by as PMCs, and the motility and invasiveness of ESCs. Thus, to avoid these complicating effects of transient transfection, we moved to stable Lentiviral infection to generate PMCs and ESCs that express inducible shRNAs targeted to Cx43 (or scrambled shRNAs as control). An RFP reporter allowed us to track which cells expressed the shRNA, which averaged 61 ± 8% (n=8) of the cell population in the presence of doxycycline. Suppression of Cx43 protein levels in the total cell population was evident (Figure 4B) and GJIC was inhibited by 95 ± 4% (n=7) in infected ESCs (Figure 4C). Invasion by infected ESCs expressing Cx43 shRNA (identified by RFP expression) was reduced by 90–95% compared to uninfected cells in the same sample (Figure 4D). In the inverse experiment where Cx43shRNA was expressed in PMCs, the monolayer consisted of both infected (~70%) and uninfected cells, but invasion was still inhibited by ~85% (Figure 4D).
 
@@ -89,13 +400,13 @@ Finally, to ensure the inhibition of invasiveness was due to the block of GJIC, 
 
 While each method for blocking gap junctions may have limitations, we demonstrate that four independent approaches that block either functional GJIC between ESCs and PMCs (GAP27 or DN CX43) or expression of Cx43 in either of the cell types (si- and shRNA) all significantly reduce invasive behavior of ESCs. The fact that block in both ESCs and PMCs caused similar effects strongly implicates a role for gap junctions between these two cell types, as if hemichannels are involved, they would have to have similar effects in both cell types.
 
-## Cx43 expression is required for both the integrity of a mesothelial barrier and its disruption by ESCs
+### Cx43 expression is required for both the integrity of a mesothelial barrier and its disruption by ESCs
 
 To probe the influence of ESCs, in the presence or absence of Cx43, on the ‘barrier function’ of the mesothelium (ie. the intercellular contacts between PMCs comprised of tight and adhesive junctions that prevent transmigration of cells), we utilized the unique ability of AFM to probe the surface topology of a cell monolayer in real-time. ESCs from control subjects or endometriosis patients were first labeled with the membrane dye DiO, and dropped onto a PMC monolayer at a ratio of ~1:20 (ESC:PMC). After ~3 hr, the monolayer was imaged with AFM using a ‘sharp’ conical probe at a constant applied pressure of 1 nN to obtain a 3-D contour map of the monolayer (Figure 5B). This readily identified the interfaces between cells and measured the depth of penetration of the probe between cells as a physical measure of mesothelial ‘barrier function’ (Figure 5A). ESCs from several patients all induced a widening in the gap between PMCs (Figure 5C), corresponding to an ~ twofold increase in penetrance, measured ~10 µm (1–2 cell diameters) from an identified dropped cell. This increase in penetration of the monolayer was seen with all ESCs but was which was more notable in ESCs from endometriosis patients (Figure 5D), consistent with their greater invasive potential (Figure 1E).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/94778/elife-94778-fig5-v3.jpg)
 
-**Figure 5.:** (A) Probing the topological surface of a PMC monolayer using an AFM probe under constant force allows the identification of sites of intercellular contact (where penetration of the probe is maximal). (B–C) 3-D reconstructions of the surface of an LP9 PMC monolayer alone (B) or in the presence of ESCs which induce the opening of wide gaps (C) (Scale bars in μm). (D) Penetration depth between PMCs increased more with ESCs from endometriosis than control patients. (E) PMC monolayer integrity (i.e. lower penetrance) is reduced by Cx43 shRNA KD and enhanced by Cx43 overexpression. (F) In contrast, when ESCs are dropped onto a PMC monolayer, the increased penetrance that is induced is eliminated by the expression of Cx43shRNA or DNCx43 in the PMCs and is enhanced by Cx43 overexpression. Each dot in D-F represents a single image analysis. Significance based on two-tailed t-test. Full data in Figure 5—source data 1,Figure 5—source data 2 and Figure 5—source data 3.Figure 5—source data 1.Figure 5D.Figure 5—source data 2.Figure 5E.Figure 5—source data 3.Figure 5E.
+**Figure 5.:** (A) Probing the topological surface of a PMC monolayer using an AFM probe under constant force allows the identification of sites of intercellular contact (where penetration of the probe is maximal). (B–C) 3-D reconstructions of the surface of an LP9 PMC monolayer alone (B) or in the presence of ESCs which induce the opening of wide gaps (C) (Scale bars in μm). (D) Penetration depth between PMCs increased more with ESCs from endometriosis than control patients. (E) PMC monolayer integrity (i.e. lower penetrance) is reduced by Cx43 shRNA KD and enhanced by Cx43 overexpression. (F) In contrast, when ESCs are dropped onto a PMC monolayer, the increased penetrance that is induced is eliminated by the expression of Cx43shRNA or DNCx43 in the PMCs and is enhanced by Cx43 overexpression. Each dot in D-F represents a single image analysis. Significance based on two-tailed t-test. Full data in Figure 5—source data 1,Figure 5—source data 2 and Figure 5—source data 3.
 
 We then used Cx43 shRNA, DNCx43, and wtCx43 infected LP9-PMCs, characterized in Figure 4B–D, to test the dependence of these changes on GJIC. First, we observed that the ‘barrier function’ of a PMC monolayer in the absence of ESCs was dependent on Cx43 expression, as the degree of penetrance was reduced when Cx43 was overexpressed and increased when Cx43 was inhibited by shRNA (Figure 5E). This is consistent with GJs being part of the intercellular nexus, including tight and adhesions junctions, that connect cells. However, this effect was strikingly inverted when we introduced ESCs (Figure 5F). Cx43 overexpression in PMCs significantly enhanced penetrance in response to ESCs, while Cx43 inhibition by shRNA eliminated the effect of ESCs, so that penetrance was indistinguishable from control PMC monolayers. The only difference between the studies in Figure 5E and F is the presence of ESCs in the latter, implicating the formation of GJs between ESCs and PMCs as the factor that must trigger the breakdown of the PMC barrier. This directly demonstrated that this was dependent on Cx43 channels, as expression of a DN Cx43 in PMCs, which suppresses coupling but maintains the gap junction structures, and all their adhesive and structural properties, also prevented barrier breakdown similarly to Cx43 shRNA.
 
@@ -103,7 +414,7 @@ This raised the question that if GJs pass signals from ESCs to PMCs that promote
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/94778/elife-94778-fig6-v3.jpg)
 
-**Figure 6.:** (A) Using a constant force of 1 nN, the AFM tip was moved over the peritoneal mesothelial cell (PMC) monolayer progressively further away from a dropped DiI labeled ESC. (B) ESCs from an endometriosis III-IV patient showed greater homocellular (solid gray) and induced heterocellular gap junction intercellular coupling (GJIC) with PMCs (striped gray) than those from an endometriosis I-II patient. GJIC of LP9 PMCs was also measured and shown to be decreased by 60% through an expression of Cx43shRNA (black). (C) Penetration through the LP9 PMC monolayer decayed with distance from the dropped ESC much faster in the poorly coupled Endo I-II ESCs (gray) than the better coupled Endo III-IV ESCs (black). Penetration of the monolayer was eliminated by KD of Cx43 in PMCs (red). (D) Conversely, the decay in penetration of the PMC monolayer induced by Endo III-IV ESC cells (black) was greatly reduced by over-expression of Cx43 in PMCs (green). Full data in Figure 6—source data 1.Figure 6—source data 1.Figure 6C and D.
+**Figure 6.:** (A) Using a constant force of 1 nN, the AFM tip was moved over the peritoneal mesothelial cell (PMC) monolayer progressively further away from a dropped DiI labeled ESC. (B) ESCs from an endometriosis III-IV patient showed greater homocellular (solid gray) and induced heterocellular gap junction intercellular coupling (GJIC) with PMCs (striped gray) than those from an endometriosis I-II patient. GJIC of LP9 PMCs was also measured and shown to be decreased by 60% through an expression of Cx43shRNA (black). (C) Penetration through the LP9 PMC monolayer decayed with distance from the dropped ESC much faster in the poorly coupled Endo I-II ESCs (gray) than the better coupled Endo III-IV ESCs (black). Penetration of the monolayer was eliminated by KD of Cx43 in PMCs (red). (D) Conversely, the decay in penetration of the PMC monolayer induced by Endo III-IV ESC cells (black) was greatly reduced by over-expression of Cx43 in PMCs (green). Full data in Figure 6—source data 1.
 
 ## Discussion
 
@@ -133,48 +444,48 @@ Together, these studies demonstrate that eutopic ESCs (i.e. from the uterine end
 
 ## Materials and methods
 
-## Primary endometrial epithelial cell isolation from endometrial biopsies
+### Primary endometrial epithelial cell isolation from endometrial biopsies
 
 Primary ESCs and EECs were isolated from endometrial biopsies obtained from women with and without endometriosis under IRB protocol # 20070728 HR (8-31-23). All women provided informed consent prior to participating in this Institutional Review Board-approved protocol. Study subjects were premenopausal women between 30 and 45 y of age with regular menstrual cycles, or in some cases on Oral Contraceptives, undergoing laparoscopic surgery for gynecologic indications (Table 1). Women with pelvic inflammatory disease/hydrosalpinx, endometrial polyps, or submucosal fibroids were excluded. Two control patients (H11 and H20) and one Endometriosis patient (31) were found to have ovarian cysts at the time of surgery. Endometriosis was staged according to the revised American Society for Reproductive Medicine (ASRM) criteria and confirmed by histopathologic review of peritoneal or cyst wall biopsy in all cases. Fertile women undergoing tubal sterilization and without endometriosis at surgery were considered healthy controls. Menstrual cycle phase (proliferative or secretory) was determined by cycle history and confirmed by serum estradiol and progesterone levels when available. Endometrial tissue was obtained by pipelle biopsy at the time of laparoscopic surgery. In some patients, during laparoscopy for definitive diagnosis of disease, small biopsies of the peritoneum were also taken both in the vicinity of, and distant to, identified lesions. These samples were kept on ice for <2 hr before embedding in OCT and freezing and storage at –80 °C for subsequent immunocytochemistry.
 
 Pipelle endometrial biopsy material was dissociated by shaking in 5 mg/ml collagenase and 2.5 mg/ml DNase in Hanks Balanced Salt Solution at 37 °C for 1 hr. Isolation of primary ESCs and EECs from the biopsies was performed using a combination of straining (45 uM nylon filter) and differential sedimentation (EECs cluster and sediment faster), followed by differential attachment (EECs adhere less well to culture plates), in a modification of the method developed by Kirk and Irwin, 1980 used in prior studies (De La Garza et al., 2012; Chen et al., 2016b). In some experiments, the differential attachment step was replaced by using an Ep-CAM affinity column to enrich EECs. Both methods achieve about 97% purity for EECs and ESCs, as illustrated in Figure 1—figure supplement 1 by immunostaining for epithelial [(EpCAM- ab71916 from Abcam, Waltham, MA) and CK 7 (ab902 and 1598 from Abcam)] and stromal [Vimentin (MA1-10459 from Thermo Fisher, Waltham, MA; NBP1-92687 from NovusBio, Centennial, CO)] markers.
 
-## Cell culture
+### Cell culture
 
 Primary ESCs were cultured in Dulbecco’s Modified Eagle Medium (DMEM)/F12 (1:1) (Gibco, Buffalo, NY) containing antibiotic/antimycotic mix (Gibco, Buffalo, NY), 10 µg/ml insulin (Sigma, St. Louis, MO) and 10% heat-inactivated fetal bovine serum (FBS - Gibco, Buffalo, NY) as described previously (Ferreira et al., 2008). EECs were cultured in MCDB/Medium 199/MEMα (1:1:0.6) containing antibiotic/antimycotic mix, 10 ug/ml insulin, D-Glucose (0.45%) (Sigma, St. Louis, MO), Gluta-Max and 10% FBS (Gibco). Prolonged culture was in defined KSFM with supplement, 1% FCS, and antibiotics/antimycotics (Gibco) to preserve the differentiated state of the EECs (Chen et al., 2016b) although this generally was only possible to 3–4 passages. All experiments were performed using low passages (≤4) to avoid loss of differentiated characteristics. Established LP9 cells (Karyotype verified from NIA Aging Cell Culture Repository #AG07086 PDL 4.84 passage 6, Coriell Institute, Camden, NJ) were used as a model for peritoneal mesothelium and cultured as described previously (De La Garza et al., 2012; Liu et al., 2009) and grown in MCDB 131.Medium 199 (1:1 - Gibco) with 15% FBS, sodium pyruvate, Gluta-Max, antibiotic/antimycotic mix (Gibco), 20 ng/ml hEGF, and 0.4 ng/ml hydrocortisone (Sigma, St. Louis, MO). All cells used were confirmed to be mycoplasma-free. Previous studies, including our work, have validated and used LP9 cells as a model peritoneal mesothelial line for peritoneal invasion by endometrial cells (Nair et al., 2008). Primary peritoneal mesothelial cells from control or endometriosis patients (from regions not containing lesions) were cultured form explants as described in Acosta Go et al., 2023. Identity and purity of all cell cultures were confirmed by immunocytochemistry, using antibodies for Vimentin or CD10 for ESCs, CK 7 for EECs (Figure 1—figure supplement 1), and Calretinin (ab92341- Abcam) for PMCs.
 
-## Trans-mesothelial invasion assay
+### Trans-mesothelial invasion assay
 
 The 3-D invasion assay modeling trans-mesothelial invasion (Figure 1C) has been described previously (De La Garza et al., 2012; Ferreira et al., 2008; Nair et al., 2008). Briefly, LP9 PMCs were grown to confluence in 24-well invasion chamber inserts containing growth-factor-reduced Matrigel, coated on 8 µm pore membranes (Corning, NY). ESCs were labeled with the lipophilic dyes DiO (Invitrogen/Thermo Fisher), trypsinized, and counted, prior to dropping onto the confluent layer of LP9 PMCs in the prepared inserts (~20,000 cells per insert). Media above the insert was replaced immediately prior to the assay with serum-free stromal media, and below with 1% serum in stromal media, although other serum gradients were tested After 24 hr incubation, non-invading cells on the upper surface of the insert were mechanically removed. Invading cells on the bottom of the membrane insert, were stained with DAPI, and 10 fields were counted using an Inverted Nikon 2000 fluorescence microscope with a 20 x objective, confirming in each case that the DAPI-stained nuclei were associated with DiO staining. In ESC/EEC mixed cell studies, the cells were labeled before mixing with DiO and DiI, respectively, and serum-free stromal media was used on the top with 1% FBS containing stromal media on the bottom. In the case of mixed stromal and epithelial invasion studies, LP9 mesothelial media was used on top and stromal media was used on the bottom (i.e. no attractive serum gradient). Invasion assays for each cell type were performed in triplicate.
 
-## Block of gap junction coupling
+### Block of gap junction coupling
 
 To test the role of gap junctions in the invasive process, we initially pretreated both the monolayer and dropped cells for 24 hr with 300 uM GAP27 (Zealand Pharma, Copenhagen, Denmark) (Figure 4A). In other experiments (data not shown), Cx43 KD was achieved by a 24- hr pre-treatment of the LP9 monolayer with a combination of two siRNAs to Cx43 (10 pmoles/well or 5 nM final concentration) - Ambion Silencer Select in OptiMEM (Gibco, NY) with RNAiMAX (1/100 dilution, Invitrogen/Thermo Fisher), diluted 1:1 with assay media, per manufacturer’s instructions. In a final set of experiments (Figure 4B–D), ESCs, or PMCs were infected with Lentiviruses expressing one of four doxycycline-inducible shRNAs directed to Cx43, along with a pIRES RFP to identify the cells expressing the shRNA (TRIPZ vectors – Dharmacon, Lafayette, CO). Lentiviral vectors constructed in-house expressing wt or DN Cx43(T154A) with a bicistronic GFP reporter were also used in some experiments.
 
-## Western blotting
+### Western blotting
 
 To assess the effectiveness of viral infections with shRNA to Cx43 or expression of wt or DN versions of Cx43, ~107 cells were lysed in 1 ml of standard RIPA buffer, insoluble material spun out at 12,000 rpm for 10 min prior to assessing protein concentration by a BCA assay kit (#23225-Thermo Fisher). 1.2 ug of protein per sample is then solubilized in standard SDS loading buffer with 1 mM DTT for 30 min at RT, then loaded on an automated Western System (Biotechne, Minneapolis, MN) using a 12-230kD Wes separation module cassette according to the manufacturer’s instructions. The individual capillary gels within each cassette allow for band fixation, antibody labeling, and visualization (using a fluorescent master mix) within the gel. A biotinylated marker set of proteins was run in one lane. Antibodies used were anti-Laminin A/C (#2032 Cell Signaling Technology Danvers, MA) and anti-Cx43 (#3512 Cell Signaling Technology), both at 1/50 dilution.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 ESCs or EECs are plated at ~50 K cells per well onto eight chamber slides (Nunc LabTech II, ….) pre-coated with 100 ug/ml poly-D- Lysine for 30 min at 37 °C and grown to 50–90% confluence. In co-culture experiments of ESCs with LP9 PMCs, LP9 cells were plated first and grown overnight to 70–90% confluence before dropping ~20 K ESCs pre-labeled with 1/1000 dilution of CellTracker Green (#C2925, Invitrogen/Thermo Fisher) in serum-free media for 30 min at 37 °C. After 4 hr to allow ESCs to attach, cells were either fixed, or in some cases pre-treated and stained with Membrite Fix dye (#30,092 T, Biotium, Freemont, CA) at 1/1000 dilution per the manufacturer’s instructions to visualize membranes. All cells were washed with PBS with 1 mM Ca++/Mg++ (CaPBS) prior to fixation with 2% paraformaldehyde (Sigma, St. Louis, MO) for 15 min at RT. Further CaPBS washed preceded permeabilization with 0.25% triton X-100 and 1% glycine in PBS (15 min at RT) and subsequent blocking of non-specific binding with1% Bovine Serum Albumin (BSA) (Sigma, St. Louis, MO) in 0.5% Tween-20 (1 hr at 37 °C or 4 °C overnight). Primary antibody staining was for 3 hr at RT or overnight at 4 °C in 0.1%BSA, 0.2% Tween-20 in PBS. Primary antibodies used were: anti-Cx43 (#3512 Cell Signaling Technology) at 1:100 dilution; anti-Cytokeratin 7 for EECs (#902-Abcam) at 1/1000, and anti-Vimentin (#1–92687, NovusBio) at 1/5000. After CaPBS washes, secondary antibodies to the appropriate species conjugated to Alexa 488 or Alexa 594 (#s 10680 and 11037-Invitrogen) were used at 1:1000 concentration for 1 hr. at room temperature in the dark. After final washes in CaPBS, the chamber grid is removed and a coverslip mounted with slow-fade Diamond mountant with 4',6-diamidino-2-phenylindole (DAPI) (#S36964, Invitrogen) to visualize the nuclei. Cells were imaged on a Nikon 2000 inverted epi-fluorescent microscope. In some cases, superimposed phase images were used to trace the membrane contacts between cells for clarity in visualizing Cx43 localization.
 
-## Motility assays
+### Motility assays
 
 Motility was assessed by a wound healing assay illustrated in Figure 2A–B. Cultures are grown to confluence in a 96-well plate format before being mechanically wounded and washed. Wound closure is measured every 3 hr in the Incucyte automated cell monitoring system (Essen Biosciences/Sartorius, MI) over ~3 d. Mixed cultures were plated with 2/3rd primary ESCs with 1/3rd LP9-PMCs. As we found that dye labeling of the cells can affect motility, only bulk migration of the whole culture was measured. % wound closure was platted against time and the linear portion fitted by regression analysis to provide the rates shown. All assays were performed in quadruplicate wells.
 
-## Homo-cellular and hetero-cellular GJIC assays
+### Homo-cellular and hetero-cellular GJIC assays
 
 GJIC was measured using a novel automated parachute assay. Recipient cells are grown to confluence in a 96 cell flat bottomed plate, and the media changed to (Phenol Red-free DMEM, sodium pyruvate, and 5%FBS – Assay Media) immediately before the assay. Donor cells in separate wells are incubated for 20 min with 10 uM calcein AM (Invitrogen/Thermo Fisher), a membrane-permeable dye that on cleavage by intracellular esterases becomes membrane impermeable, but permeable to gap junctions. After washing, trypsinization, and addition of assay media, ~2500 calcein-labeled donor cells per well are dropped (‘parachuted’) onto the recipient cell layer, and calcein transfer between donor and recipient cells is observed by fluorescent microscopic imaging (Figure 3A). For homo-cellular interactions, ESCs, EECs or LP9 donor cells were parachuted onto recipient cells of the same type. For hetero-cellular GJIC assays, ESCs or EECs were parachuted onto LP9 recipient cells. Fluorescent, bright field, and digital phase contrast images of 10–15 fields per well were captured on an Operetta automated microscope (Perkin Elmer) at 30- min intervals for approximately 2 hr. A program (developed in consultation with Perkin Elmer) allowed the identification of all cells on the plate, (from phase contrast image), original donors (5–15 per field), and dye-filled recipients (based on calcein intensity). Data are expressed as # of fluorescent recipient cells/# of donor cells for each condition (A/D ratio), plotted over time, and a linear regression line drawn through the data, with the slope used as a measure of coupling and regression coefficient (typically >0.8) used as a measure of assay reliability.
 
-## AFM measurements of cell-cell adhesion and mesothelial integrity
+### AFM measurements of cell-cell adhesion and mesothelial integrity
 
 We applied a Nanoscope Catalyst atomic force microscope (AFM, Bruker) interfaced with an epi-fluorescent inverted microscope Eclipse Ti (Nikon, Melville, NY). AFM images were acquired with the Peak Force Quantitative Nanomechanical Mapping (QNM) mode with cells immersed in appropriate culture media. ScanAsyst probes (Bruker, Billerica, MA) with the nominal spring constant 0.4 N/m were used for imaging. The exact spring constant for each probe was determined with the thermal noise method (Butt and Jaschke, 1995). For each cell culture dish at least five fields 100 by 100 μm were collected with the Peak Force set point of 2nN, and electronic resolution of 256 by 256 pixels. Nanomechanical data were processed with Nanoscope Analysis software v.1.7 (Bruker) using retrace images.
 
-## Cell-to-cell adhesion
+#### Cell-to-cell adhesion
 
 We attached a tester cell to a cantilever of a tipless probe MLCT-O10 (Bruker, cantilever A, spring constant 0.07 N/m) using polyethyleneimine (PEI) as a glue (Friedrichs et al., 2013; Figure 1A). Briefly, the probes were immersed in 0.01% PEI in water for 30 min. Tester cell’s attachment to a culture dish was weakened by replacement of the culture medium with a non-enzymatic cell dissociation solution (Millipore) for 15–30 min in a cell culture incubator (37 °C, 5%CO). Next, a single tester cell loosely attached to a culture dish was attached to a PEI-covered cantilever by pressing it at 1nN for 5–10 min. After visual inspection of successful cell attachment, the tester cell was lifted and transferred to a dish containing single tested cells. Then the tester cell was positioned over a tested cell and the cantilever slowly lowered till cell-cell interactions were detected with a force plot. The cells were left interacting for 30–180 sec at forces 0.5–5 nN and then the tester cell was lifted. During this step, a force plot was recorded, and the collected data was applied to calculate cell – cell adhesion parameters. The force plots were baseline corrected and a maximum of adhesion between cells during their detachment was calculated (units of force, Newton) (Taubenberger et al., 2014; Dufrêne et al., 2017).
 
-## Integrity of LP9 mesothelial monolayer
+#### Integrity of LP9 mesothelial monolayer
 
 LP9 cells were grown to confluence in a 60 mm culture dish. ESC cells grown in separate wells were stained with DiO, suspended, and dropped on to the LP9 monolayer at either a 1:50 or 1:20 ratio to the LP9 cells. In cases where cell mixes were used, ESCs and EECs were labeled with different dyes (DiI and DiO, respectively) prior to mixing in equal numbers and dropping onto PMCs. Three hours later the cells were imaged by AFM (Figure 5B–C). To calculate a tip penetration depth, cell boundaries were identified using images collected by the peak force error (PFE) channel. To exclude gap areas between cells or areas of cells growing in multilayers, PFE images were overlaid with height channel images after processing them with the flatten function of first order. Tip penetration was calculated based on a height histogram of all data points using a difference between the prevalent maximum of cell monolayer height and the prevalent maximum depth between cells accessible for the tip (Figure 5A).

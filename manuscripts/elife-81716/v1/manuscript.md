@@ -15,12 +15,12 @@
 
 ### Affiliations
 
-1. https://ror.org/03ad39j10 Department of Biology, Unit of Cell and Developmental Biology, University of Pisa Pisa Italy
+1. Department of Biology, Unit of Cell and Developmental Biology, University of Pisa Pisa Italy ([ROR:03ad39j10](https://ror.org/03ad39j10))
 2. Departments of Neurosurgery and Neuroscience, Yale School of Medicine New Haven United States
-3. https://ror.org/04pyb7y63 Fondazione Pisana per la Scienza ONLUS San Giuliano Terme Italy
-4. https://ror.org/00wjc7c48 Dipartimento di Bioscienze, Università degli Studi di Milano Milan Italy
-5. https://ror.org/05rb1q636 INGM, Istituto Nazionale Genetica Molecolare Milan Italy
-6. https://ror.org/04tnbqb63 Host-Pathogen Interactions in Tuberculosis Laboratory, The Francis Crick Institute London United Kingdom
+3. Fondazione Pisana per la Scienza ONLUS San Giuliano Terme Italy ([ROR:04pyb7y63](https://ror.org/04pyb7y63))
+4. Dipartimento di Bioscienze, Università degli Studi di Milano Milan Italy ([ROR:00wjc7c48](https://ror.org/00wjc7c48))
+5. INGM, Istituto Nazionale Genetica Molecolare Milan Italy ([ROR:05rb1q636](https://ror.org/05rb1q636))
+6. Host-Pathogen Interactions in Tuberculosis Laboratory, The Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))
 
 † Corresponding author
 
@@ -42,15 +42,63 @@ We find that MCPH-associated mutations in WDR62 (D955AfsX112, V1402GfsX12, and W
 
 ## Results
 
-## Generation of 2D and 3D in vitro models to investigate WDR62 function in neurodevelopment
+### Generation of 2D and 3D in vitro models to investigate WDR62 function in neurodevelopment
 
 We previously reported a consanguineous family with two affected siblings harboring a recessive mutation in WDR62 (Sgourdou et al., 2017). The index case, a 13-year-old male, and his 6-year-old brother presented to medical attention for global developmental delay, severe MCPH, and dysmorphic facial traits. Neuroimaging revealed diffuse pachygyria, thickened cortex, and hypoplastic corpus callosum. Whole exome sequencing identified a homozygous 4 bp deletion in exon 23 of WDR62, leading to a frameshift and a premature stop codon, which results in a C-terminally truncated protein (D955AfsX112) (Figure 1A). The mutation was confirmed to be homozygous in both affected subjects and heterozygous in both parents by Sanger sequencing (Sgourdou et al., 2017). To investigate the consequences of the mutation and gain additional insight into WDR62 function, skin fibroblasts from family members were reprogrammed to iPSCs (parental WDR62D955A/WT, hereafter ‘Het’, and patient WDR62D955A/D955A, hereafter ‘Mut’) using episomal vectors, assessed for pluripotency, and subsequently differentiated to relevant 2D and 3D neural populations, that is, iPS-NES cells, COs, cerebro-cortical progenitors, and terminally differentiated neurons (Figure 1B and Figure 1—figure supplement 1). To obtain a gold-standard control for all subsequent analyses, we corrected the mutation through CRISPR/Cas9 gene editing in the Mut iPSC line, generating isogenic (hereafter ‘Iso’) control lines. We verified sequence restoration in five clones by Sanger sequencing (Figure 1B); three (Iso 1, Iso 2, and Iso 3) of which were randomly selected, verified for pluripotency (Figure 1—figure supplement 1) and further analyzed.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic illustrations of the WDR62 gene on chromosome 19q13 indicating the 4 bp (ACAG) deletion in exon 23, and of WDR62 full-length and C-terminally truncated (D955AfsX112) protein structure showing the location of WD40 repeats and loop α3 helix motif. (B) Scheme of experimental design. WDR62 iPSCs harboring the heterozygous (Het; D955A/WT) or homozygous (Mut; D955A/D955A) mutation, and isogenic corrected (Iso) iPSC lines were employed. Sanger sequencing of iPSCs shows the above-described mutations from one parent and the affected offspring, and the CRISPR/Cas9 corrected sequence. A neuroinduction protocol was applied to Het, Mut, and Iso 1 and/or Iso 2 iPSCs to obtain neuroepithelial stem (iPS-NES) cells, cerebral organoids (COs), as well as cerebro-cortical progenitors and neurons. (C) Representative confocal images of WDR62 and tubulin-alpha (TUBA1A) expression in CTRL (external control), Het, Mut, and Iso 1 iPSCs during mitosis. Orthogonal projections indicate WDR62, TUBA1A, and DAPI signals. (D) Surface plots and fluorescence intensity analysis show WDR62 signal distribution. Histograms show mean fluorescence intensity (top) and fluorescence signal distribution (skewness, arbitrary unit, bottom) during metaphase. CTRL, Het, and Iso 1 iPSCs show similar WDR62 signal distribution, which is decreased in the measured area in Mut iPSCs (replicates n=3, total cells N=61, p-value <0.05, Kruskal-Wallis test, post hoc Dunn’s test in top and bottom histograms. Data are shown as mean ± SD. Scale bar = 10 μm).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Immunofluorescence analysis for NANOG, POU5F1 (also known as OCT4), TRA-1–60, and SSEA4 in Mut, Het, Iso 1, Iso 2, and Iso 3 iPSC lines. Scale bars = 50 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative immunofluorescence assay for WDR62, PCTN (centrosome marker), and TUBA1A (mitotic spindle marker) showing WDR62 signal surrounding the centrosome. (B) Magnified view (left) of the mitotic cell in (A) showing the WDR62 and TUBA1A signals in the boxed area overlapping at the spindle poles (middle). The 3D surface plot of fluorescence intensity shows similar WDR62 and TUBA1A signal distribution at the spindle poles (right). (C) Magnified view (left) of the mitotic cell in (A) showing the WDR62 signal surrounding the PCTN signal in the boxed area (middle). The 3D surface plot of fluorescence intensity shows non-overlapping WDR62 and PCTN signal distribution at the spindle poles (right). (D) Endogenous WDR62 signal in Mut iPSCs. Representative immunofluorescence assay for WDR62 and PCTN during mitosis and interphase. Magnified view of the boxed areas showing subcellular localization of mutant WDR62 protein. Schematic representation of mutant WDR62 signal (green) distribution during mitosis (diffuse) and interphase (in the Golgi apparatus). Scale bars = 10 μm in (A) and 5 μm in (B, C), and 20 μm in (D).
+
 We examined the expression and localization of WDR62 in the Iso, Het, Mut, and external control (CTRL) iPSC lines by confocal imaging analysis. We found that mutant WDR62 remained diffuse and failed to localize to the mitotic spindle poles in Mut iPSCs (Figure 1C). In contrast, in Het and CTRL iPSCs, WDR62 co-localized with PCNT (pericentrin) and TUBA1A (tubulin alpha 1a) at the spindle poles (Figure 1C and Figure 1—figure supplement 2A–C), similarly to our previous findings in skin fibroblasts (Sgourdou et al., 2017). As expected, spindle pole localization was restored in Iso 1 iPSCs (Figure 1C). In addition, quantification of WDR62 signal distribution through fluorescence intensity analysis revealed high and narrow fluorescence peaks in Iso 1 and Het iPSCs, similarly to CTRL iPSCs (Figure 1D); in contrast, no such peaks were detected in patient-derived Mut iPSCs (Figure 1C and D). We also detected WDR62 as a polarized perinuclear signal during interphase, which appeared to be localized around the centrosome (marked by PCTN) in G1-S Mut iPSCs (Figure 1—figure supplement 2D).
 
-## WDR62 is associated with the Golgi apparatus in cerebro-cortical progenitors
+### WDR62 is associated with the Golgi apparatus in cerebro-cortical progenitors
 
 To explore WT and mutant WDR62 behavior in a neurodevelopmental context, we differentiated Iso 1, Iso 2, and Mut iPSCs toward neural fate by applying a neocortical NES cell derivation protocol (Morelli et al., 2021; Lottini et al., 2022; Figure 2A). Briefly, after the initial induction of dorsal forebrain neuroepithelial identity, based on dual SMAD inhibitors and the WNT inhibitor XAV, we captured long-term self-renewing populations of iPS-NES cells by adding growth factors. iPS-NES cells in culture organize into polarized neural rosettes with the apical domain facing the lumen and express typical neuroprogenitor markers (Figure 2—figure supplement 1). Iso 2 and Mut iPS-NES cells expressed comparable levels of WDR62 mRNA (Figure 2—figure supplement 2A) and we were able to detect by western blot the full-length and mutant protein overexpressed in CTRL iPS-NES cells (Figure 2—figure supplement 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic illustration of Neuroepithelial Stem Cell derivation protocol from induced Pluripotent Stem Cells (iPSCs) (iPS-NES). (B) Immunofluorescence analysis of WDR62 and GOLGA1 in interphase and metaphase iPS-NES cells. During interphase, the WDR62 subcellular localization is comparable in Iso 2 and Mut iPS-NES cells. In metaphase, the WDR62 signal is localized to the spindle poles in Iso 2 iPS-NES cells, but remains diffuse and co-localized with GOLGA1 in Mut iPS-NES cells. Orthogonal projections indicate WDR62, GOLGA1, and DAPI signals. (C) Quantification of WDR62 and GOLGA1 signal co-localization during interphase (top left histogram) and mitosis (top right histogram); WDR62 mean fluorescence in interphase (bottom left histogram) shows no differences in Iso 2 versus Mut iPS-NES cells. Fluorescence distribution in mitotic cells (bottom right histogram) (skewness, arbitrary units) show differences in Iso 2 versus Mut cells (top left histogram: replicates n=3, total cells N=60, p-value >0.05, unpaired Student’s t-test; top right histogram: replicates n=3, total cells N=33, p-value <0.0001, Kolmogorov-Smirnov test; bottom left histogram: replicates n=3, total cells N=164, p-value >0.05, unpaired Student’s t-test; bottom right histogram: replicates n=3, total cells N=21, p-value <0.0001, unpaired Student’s t-test). (D) Schematic illustration of cerebral organoid (CO) derivation protocol from iPSCs. (E) Immunofluorescence analysis of WDR62, GOLGA1, and TUBA1A in Iso 2, Het, and Mut COs at 30 days in vitro (DIV30). WDR62 and GOLGA1A signals co-localize to the apical domain of neural progenitors in COs during interphase. 3D surface plots show WDR62 and GOLGA1 signal distribution within the apical process. (F) Quantification of WDR62 and GOLGA1 signal co-localization in neural progenitors of Iso 2, Het, and Mut COs at DIV30 (COs n=6, total cell N=193, p-value >0.05, Kruskal-Wallis test, post hoc Dunn’s test). (G) Quantification of WDR62 fluorescence within the apical process versus the basal process and the soma of neural rosettes of Iso 2, Het, and Mut COs at DIV30 (COs n=6, total cell N=54, p-value <0.05, p-value <0.001, and p-value <0.0001, two-way ANOVA, post hoc Tukey’s test top histogram; p-value >0.05, one-way ANOVA, post hoc Tukey’s test bottom histogram). Data are shown as mean ± SD. Scale bar = 5 μm in (B) and 20 μm (E).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Morphology of Neuroepithelial Stem cells derived from induced Pluripotent Stem cells (iPS-NES cells), live imaging and representative immunofluorescence assay for SOX2, nestin (progenitor markers), and CTNNB1 (beta catenin, apical domain marker) showing iPS-NES cells at early passages self-organizing into neural rosettes. Scale bars = 50 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) WDR62 mRNA expression in Neuroepithelial Stem cells derived from induced Pluripotent Stem cells (iPS-NES cells). Quantitative analysis of mRNA expression levels detected by RT-qPCR reveals no differences in Iso 2 and Mut iPS-NES cells. Data are shown as fold change in mRNA expression of WDR62 relative to GAPDH, a housekeeping gene, according to the 2−ΔΔCT method. (B) Western blot showing full-length (165 KDa) and mutant (118 KDa) WDR62 protein expression. CTRL iPS-NES cells were transfected with WDR62 or WDR62 D955AfsX112 expression plasmids. Transfected cell lysates were immunoblotted with antibodies against WDR62 and TUBA1A.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) siRNA-mediated knockdown of WDR62 leads to loss of endogenous signal. Immunofluorescence assay for WDR62, GOLGA1, and TUBA1A shows no WDR62 signal in CTRL Neuroepithelial Stem cells derived from induced Pluripotent Stem cells (iPS-NES cells) transfected with WDR62-siRNA. In non-transfected cells (arrowhead), the WDR62 signal is present at the Golgi apparatus. Magnification of WDR62-siRNA transfected cells in mitosis (A’) and interphase (A’’). (B) Immunofluorescence assay for WDR62 and TUBA1A in CTRL iPS-NES cells co-transfected with WDR62- and LMNA-Cy3 siGLO (positive control for transfection) siRNAs. No WDR62 signal is detected in co-transfected cells (Cy3 fluorescence). (C) Immunofluorescence assay for WDR62, LMNA-Cy3, and TUBA1A in non-transfected CTRL iPS-NES cells. Representative confocal images of WDR62 signal in both mitotic and interphase cells. (D) Representative confocal images of LMNA and LMNA-Cy3 in CTRL iPS-NES cells transfected with LMNA-Cy3 siGLO siRNA. Contrary to non-transfected cells, transfected cells show no LMNA signal (arrowhead). Scale bars = 10 μm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Schematic illustration of the protocol for Golgi apparatus fragmentation in CTRL Neuroepithelial Stem cells derived from induced Pluripotent Stem cells (iPS-NES cells) through nocodazole treatment and formation of Golgi ministacks. (B) Representative confocal images of GOLGA2 and GOLGA1 in untreated (top), and of WDR62 and GOLGA1 in nocodazole-treated cells showing Golgi apparatus fragmentation. In nocodazole-treated cells, WDR62 follows the same pattern as GOLGA1, indicating WDR62 association with the Golgi ministacks. Arrowheads indicate the areas magnified in the insets. Replicates n=4, total cell N=8. Scale bars = 20 μm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) CTRL Neuroepithelial Stem cells derived from induced Pluripotent Stem cells (iPS-NES cells) were co-transfected with WDR62-FLAG and GALT1-mWasabi expression plasmids. Representative confocal images for FLAG, mWasabi (a green fluorescent protein), and GOLGA2. Representative magnified views of a metaphase cell (top row) and of an interphase cell (bottom row) showing WDR62 localization to the mitotic spindle poles and to the Golgi apparatus during interphase. (B – D) Cells were co-transfected with microcephaly (MCPH)-associated WDR62 D955AfsX112-FLAG (B), WDR62 V1402GfsX12-FLAG (C), or WDR62 W224S-FLAG (D) and GALT1-mWasabi expression plasmids. Representative confocal images for FLAG, mWasabi, and GOLGA2. Magnified views of mitotic (top rows) and interphase cells (bottom rows) showing that mutant WDR62 do not localize to the mitotic spindle poles and that the FLAG and mWasabi signals overlap in the Golgi apparatus in interphase cells in a manner similar to the endogenous WDR62/GOLGA1 signals. Scale bars = 10 μm.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Schematic representation of CO generation (LSBX) via inhibitors of SMAD (LDN193189, SB431542) and WNT (XAV939) from Iso 2, Het, and Mut induced Pluripotent Stem Cell (iPSC) lines. (B) Immunofluorescence assay for nestin and SOX2 in sections of Iso 2, Het, and Mut COs at 30 days in vitro (DIV30) and representative confocal images. (C) Immunofluorescence assay for WDR62 and TUBA1A in Iso 2, Het, and Mut COs at DIV30 and representative confocal images showing the formation of neural rosettes. Boxed areas indicate the magnification in the insets, and white arrowheads indicate mitotic cells. Scale bars = 50 μm in (B) and 20 μm in (C).
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Immunofluorescence analysis for ZO-1 and GOLGA1 in Iso 2, Het, and Mut COs at 30 days in vitro (DIV30) identifies the position of the Golgi apparatus within the apical process of RG-like cells in neural rosettes. (B) Immunofluorescence analysis for WDR62 and CTNNB1 showing apical localization of WDR62 in rosettes of Iso 2, Het, and Mut COs at DIV30. White dotted lines outline individual cells lining the rosette lumen; yellow lines outline the apical process of RG-like cells. Pink arrowheads indicate the basal process of RG-like cells. 3D surface plots show fluorescence distribution of WDR62 in the apical process of Iso 2, Het, and Mut COs. Scale bars = 20 μm.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig2-figsupp8-v1.jpg)
+
+**Figure 2—figure supplement 8.:** (A–D). Immunofluorescence analysis of E14.5 mouse brains for FLAG and mWasabi following in utero electroporation (IUE) at E13.5 with GALT-mWasabi and WDR62-FLAG (A), WDR62 D955AfsX112-FLAG (B), WDR62 V1402GfsX12-FLAG (C), or WDR62 W224S-FLAG (D) expressing plasmids. (A’–D’) Representative confocal images and magnified views of the boxed areas (left) showing overlapping mWasabi (green) and FLAG (magenta) signals in radial processes. Scale bars = 10 μm in (A–D) and 2 μm in (A’–D’).
 
 The pericentrosomal localization of WDR62 in interphase iPSCs (Figure 1—figure supplement 2D) prompted us to investigate, by confocal imaging, its potential association with the Golgi apparatus, which is known to be in proximity to the centrosome (Sütterlin and Colanzi, 2010). Indeed, WDR62 localized to the Golgi apparatus (GOLGA1/Golgin 97-positive) in interphase Iso 2 and Mut iPS-NES cells (Figure 2B). Analysis of fluorescence signal intensity suggested that full-length and mutant WDR62 localized to the Golgi apparatus at comparable amounts, potentially excluding a non-physiological accumulation of the mutant protein (Figure 2C). During mitosis, the WDR62 signal was centered, as expected, on discrete regions corresponding to the spindle poles in Iso 2 iPS-NES cells, while the Golgi apparatus was scattered around the chromatin, appearing as clusters formed during mitosis that are eventually partitioned between daughter cells (Ayala et al., 2020). In contrast, in Mut iPS-NES cells the WDR62 signal was diffuse (Figure 2B), with a large fraction (60%) overlapping with GOLGA1 (Figure 2C).
 
@@ -60,27 +108,51 @@ Next, we co-transfected CTRL iPS-NES cells with FLAG epitope-tagged full-length 
 
 To investigate WDR62 function and the consequences of the mutation on cerebro-cortical progenitors in a 3D platform, we derived COs from Iso 2, Het, and Mut iPSCs by culturing in suspension dissociated clumps of iPSCs under cerebro-cortical patterning conditions followed by expansion and differentiation, optimizing a previously published protocol (Andersen et al., 2020; Figure 2—figure supplement 6A). We performed the analyses at 30 days in vitro (DIV30) (Figure 2D), when COs showed an inner structure organized into neural rosettes with SOX2+ and nestin+ radial glia (RG)-like cells (Figure 2—figure supplement 6B). WDR62 localized to the spindle poles of mitotic RG-like cells in Iso 2 and Het, but not Mut, COs (Figure 2—figure supplement 6C). A non-canonical and dynamic localization of the Golgi apparatus to the apical process has been reported in bipolar epithelial neural stem cells of the developing mouse telencephalon (Taverna et al., 2016). Thus, we asked whether a similar pattern was present in RG-like cells in human COs. We observed a radial distribution of the Golgi apparatus, polarized toward the ZO-1+ apical domain of the RG-like cells within the neural rosettes (Figure 2—figure supplement 7A), where WDR62 was also confined (Figure 2—figure supplement 7B). We also found that WDR62 and GOLGA1 highly co-localized to the apical domain of the RG-like cells during interphase in Iso 2, Het, and Mut COs (Figure 2E and F). Of note, the WDR62 signal was enriched in the apical side of RG-like cells with comparable relative fluorescence values in Iso 2, Het, and Mut COs (Figure 2G). Finally, we delivered FLAG epitope-tagged full-length or mutant (D955AfsX112, V1402GfsX12, W224S) WDR62 and GALT1-mWasabi to the developing neocortical wall of the mouse at embryonic day (E) 13.5 by in utero electroporation. We observed overlapping FLAG and mWasabi signals in RG processes (Figure 2—figure supplement 8). These findings provide evidence of WDR62 localization to the Golgi apparatus in a polarized 3D model of human neural development and suggest that the association of WDR62 with the Golgi apparatus is also observed in the developing mouse neocortex.
 
-## WDR62 shuttling from the Golgi apparatus to the spindle poles is microtubule-dependent
+### WDR62 shuttling from the Golgi apparatus to the spindle poles is microtubule-dependent
 
 Next, we sought to investigate the mechanism underlying WDR62 shuttling from the Golgi apparatus to the spindle poles at the interphase/mitosis transition. Several MCPH-related proteins have been reported to translocate from various cellular compartments to the spindle poles or centrosomes along microtubular rails (Wang et al., 2010; Welburn and Cheeseman, 2012). Among them, CDK5RAP2, CEP63, WDR62, and ASPM are known to belong to the same molecular assembly that localizes hierarchically around the centrosome during interphase (Kodani et al., 2015).
 
 First, we examined the consequences of microtubule depolymerization on WDR62 localization. Following nocodazole treatment and fixation, WDR62 appeared diffuse around the nucleus in mitotic Iso 2 iPS-NES cells and was absent from the spindle poles and the centrosomal/pericentrosomal area, stained with CETN2 (Degl’Innocenti et al., 2022) or PCTN (Figure 3A); the same pattern was observed in Mut iPS-NES cells (Figure 2B and C). We analyzed WDR62 signal intensity and distribution around chromatin and mean fluorescence values before and after nocodazole treatment (Figure 3B), confirming that the observed pattern was comparable to mutant WDR62 distribution in untreated Mut iPS-NES cells (Figure 2C). Moreover, the percentage of WDR62 and GOLGA1 co-localization was similar in nocodazole-treated Iso 2 and Mut iPS-NES cells (Figures 2C and 3B). Together, these observations strongly suggest that microtubules are fundamental for the Golgi apparatus-to-spindle pole translocation of WDR62 during mitosis and that the C-terminal part of the protein may have an important role in the interaction of WDR62 with microtubules.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematics of the experiment and relative immunofluorescence analysis of WDR62, GOLGA1, and CETN2 in Iso 2 Neuroepithelial Stem cells derived from induced Pluripotent Stem cells (iPS-NES cells) before and after microtubule depolymerization with 1.5 μg/ml nocodazole for 1 hr. In untreated metaphase cells, the WDR62 signal is pericentrosomal. In nocodazole-treated cells, WDR62 remains associated with the Golgi apparatus (marked by GOLGA1). White arrowheads indicate the centrosome (marked by CETN2). (B) Surface plots and analysis of WDR62 fluorescence signal distribution in mitotic untreated and nocodazole-treated Iso 2 iPS-NES cells. Histograms show fluorescence signal distribution (skewness, arbitrary units) (left), mean fluorescence intensity (center), and co-localization with GOLGA1 (right) in untreated and nocodazole-treated Iso 2 iPS-NES cells during mitosis. Treated mitotic cells show different WDR62 signal distribution, increased mean fluorescence values, and higher WDR62/GOLGA1 co-localization percentage in the measured area (see also Figure 2B and C for comparison with Mut iPS-NES cells). Replicates n=3, total cells N=42, p-value <0.0001, Kolmogorov-Smirnov test, left histogram; replicates n=3, total cells N=42, p-value <0.05, Kolmogorov-Smirnov test, center histogram; replicates n=3, total cells N=32, p-value <0.0001, unpaired Student’s t-test, right histogram. Data are shown as mean ± SD. Scale bar = 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunofluorescence assay for CDK5RAP2 and PCTN in Mut Neuroepithelial Stem cells derived from induced Pluripotent Stem cells (iPS-NES cells) during mitosis and interphase. Representative confocal images show correct localization of CDK5RAP2 to the centrosome. (B) Immunofluorescence assay for WDR62, CDK5RAP2, and PCTN in untreated and nocodazole-treated (1.5 μg/ml for 1 hr) Iso 2 iPS-NES cells during G1, S, and mitosis (M) phases. Representative confocal images of CDK5RAP2 and PCTN signal localization. (C) Quantitative analysis of CDK5RAP2 centrosomal localization during mitosis, which is unaltered in nocodazole-treated cells. (D) Quantitative analysis of WDR62 spindle pole localization during mitosis; nocodazole treatment results in a dispersed perinuclear signal. Data are shown as %, p-value >0.05 (Chi-square test) and %, p-value <0.05 (Fisher’s exact test), respectively (replicates n=3, total cells N=46). (E – G) The interactions of WDR62 with CDK5RAP2 (E), AURKA (F), and TPX2 (G) are not disrupted by the mutation. HEK293T cells were transfected with Myc-CDK5RAP2, Myc-AURKA, or Myc-TPX2 and WDR62-FLAG or WDR62 D955AfsX112-FLAG expression plasmids, as indicated. Cell lysates were immunoprecipitated with an antibody against Myc and immunoblotted with an antibody against FLAG. Interactions of WT and mutant WDR62 are detectable with all three partners. Scale bars = 5 μm in (A) and 10 μm in (B).
+
 We then asked whether the centrosomal localization of CDK5RAP2 was preserved in Mut iPS-NES cells. We found that both during mitosis and interphase, CDK5RAP2 was correctly localized, as we reported previously for skin fibroblasts (Sgourdou et al., 2017; Figure 3—figure supplement 1A). Next, we investigated CDK5RAP2 localization in Iso 2 iPS-NES cells after nocodazole treatment. We found that, already during G1 and before centriole duplication, CDK5RAP2 was localized to the centrosome, whereas WDR62 remained associated with the Golgi apparatus (Figure 3—figure supplement 1B) both in untreated and in nocodazole-treated cells. After centriole duplication at early S-phase (Holland et al., 2010), only CDK5RAP2 was detected at the centrosomes both in untreated and in nocodazole-treated cells, even before the centrioles started to migrate to participate in spindle pole formation (O’Neill et al., 2022; Figure 3—figure supplement 1B). In untreated cells during prometaphase, CDK5RAP2 and WDR62 localized to the centrosome and properly positioned spindle poles, respectively (Figure 3—figure supplement 1B). In nocodazole-treated cells, however, the two proteins showed divergent behavior: CDK5RAP2 remained at the centrosome (Figure 3—figure supplement 1C), whereas WDR62 appeared dispersed (Figure 3—figure supplement 1D).
 
 WDR62 and CDK5RAP2 have been reported to physically interact (Kodani et al., 2015). We overexpressed CDK5RAP2 and full-length or D955AfsX112 WDR62 in HEK293T cells and then performed co-immunoprecipitation (co-IP). We found that the mutation did not prevent WDR62 interaction with CDK5RAP2 (Figure 3—figure supplement 1E) or with AURKA or TPX2 (Lim et al., 2015; Lim et al., 2016) in a similar overexpression/co-IP assay (Figure 3—figure supplement 1F, G). Together, these findings suggest that the mutation does not impinge WDR62 binding to several of its physical interactors, but prevents shuttling to the spindle poles.
 
-## WDR62 is associated with the Golgi apparatus in human fetal telencephalon
+### WDR62 is associated with the Golgi apparatus in human fetal telencephalon
 
 To strengthen our observations of WDR62 localization to the Golgi apparatus in the apical domain of RG-like cells of COs, we examined human fetal telencephalic tissue sections from presumed healthy subjects at 9 and 11 post-conceptional weeks (pcw) (Figure 4A–D), when WDR62 is broadly expressed in neural progenitor populations (Bilgüvar et al., 2010, Nicholas et al., 2010). At 9 pcw in the cortical plate (CP), where committed neuroblasts are populating the incipient cortical layers, the WDR62 signal was polarized and perinuclear, overlapping with GOLGA2, thus retracing the pattern observed in non-mitotic iPS-NES cells (Figure 4B’ and B’’). In the cortical ventricular zone (VZ), where RG cells reside and most mitotic events occur, WDR62 was detected at the TUBA1A-positive spindle poles in mitotic cells (Figure 4B’ and B’’’); in contrast, the WDR62 signal appeared elongated and scattered in interphase cells, reminiscent of the distribution of the Golgi apparatus along radial processes in COs (Figure 4—figure supplement 1A, A’). Similarly, in human fetal incipient dorsal and ventral telencephalic areas at 11 pcw (Figure 4D), the WDR62 and GOLGA2 signals were polarized and perinuclear in the CP (Figure 4D and D’ and Figure 4—figure supplement 1B, B’) and in the mantle zone of the developing striatum (Figure 4—figure supplement 1B’’), but scattered and localized in the CTNNB1+ (beta catenin) apical processes in RG cells at the germinative zones (Onorati et al., 2014; Castiglioni et al., 2019; Figure 4D’ and D’’ and Figure 4—figure supplement 1B’, B''). Thus, we found persistent WDR62 and GOLGA2 signal co-localization at 9 and 11 pcw, showing a perinuclear and polarized pattern at the CP, consistent with the distribution of the Golgi apparatus in post-mitotic neurons (Taverna and Huttner, 2019), and a radial/apical pattern at the VZ (Figure 4F). Independently from area-specific patterns, WDR62 and GOLGA1 displayed a high incidence of co-localization at the VZ/subventricular zone (SVZ), intermediate zone (IZ)/subplate (SP), and CP (Figure 4G).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic illustration of a human fetal specimen at 9 post-conceptional weeks (pcw) showing the developing central nervous system (CNS). (B) DAPI staining of a coronal hemisection of the human telencephalon at 9 pcw. (B’) Magnification of the boxed area in (B) showing WDR62/GOLGA2/TUBA1A expression in the developing NCX. (B’’, B’’’) Magnified views of the boxed areas in (B’) showing WDR62/GOLGA2 expression in CP (B’’) and WDR62/TUBA1A expression in VZ/SVZ (B’’’). White arrowheads indicate WDR62 signal and TUBA1A+ spindle poles in a mitotic cell. (C) Schematic illustration of a human fetal specimen at 11 pcw showing the developing CNS. (D) DAPI staining of a coronal hemisection of the human telencephalon at 11 pcw. (D’) Magnification of the boxed area in (D) showing WDR62 and GOLGA2 expression in the developing NCX. (D’’) Magnified views of the boxed areas in (D’) showing WDR62/CTNNB1 and WDR62/GOLGA2 expression at the apical domain of VZ progenitors. (F) Representative magnified views of the boxed areas in (B’) and (D’) showing WDR62 and GOLGA2 signal distribution during interphase at the CP and VZ at 9 and 11 pcw. WDR62 and GOLGA2 signals overlap in post-mitotic neuroblasts at the CP (B’’, E) and in neural progenitor cells (NPCs) at the VZ (B’’’, E’). (G) Analysis of WDR62 and GOLGA2 co-localization at the VZ/SVZ, IZ/SP, and CP at 9 and 11 pcw (sections n=2, total Golgi objects N=7087 in 9 pcw sections; sections n=2, total Golgi objects N=5103 in 11 pcw sections). Data are shown as mean ± SD. Scale bar = 500 μm in (B, D), 100 μm in (B’, D’), 5 μm in (B’’, B’’’, E, and E’). NCX (neocortex); PSPB (pallial-subpallial boundary); LGE (lateral ganglionic eminence); MGE (medial ganglionic eminence); MZ (marginal zone); CP (cortical plate); IZ/SP (intermediate zone/subplate); SVZ (subventricular zone); VZ (ventricular zone).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic illustration of a coronal hemisection of human telencephalon at 9 post-conceptional weeks (pcw) (left), and schematic illustration of Golgi apparatus patterns in neural progenitor cells (NPCs) at the VZ and in post-mitotic neurons at the CP (right). (A’, A”) Immunofluorescence assay for WDR62, GOLGA2, and TUBA1A (medial pallium) (A’) and magnified view of WDR62 and GOLGA2 signal distribution (A’’) in the CP and VZ at 9 pcw. In early post-mitotic neurons at the CP, WDR62 shows a discrete perinuclear pattern and follows a diffuse-to-punctate pattern along NPC processes at the VZ, overlapping with GOLGA2. (B) Schematic illustration of a coronal hemisection of human telencephalon at 11 pcw. (B’, B”) Immunofluorescence assay for WDR62, GOLGA2, and TUBA1A in the developing neocortex (B’) and basal ganglia (B’’); boxed areas show WDR62 and GOLGA2 signal distribution in the NCX (B’) and basal ganglia (B”). Scale bars = 100 μm. NCX (neocortex); MZ (marginal zone); LGE (lateral ganglionic eminence); MGE (medial ganglionic eminence); CP (cortical plate); IZ (intermediate zone); SP (subplate); SVZ (subventricular Zone); VZ (ventricular zone); IC (internal capsule).
+
 Taken together, these data suggest a dynamic association between WDR62 and the Golgi apparatus in the developing human telencephalon, supporting the findings in iPS-NES cells and COs.
 
-## WDR62 regulates mitotic progression and asymmetric versus symmetric divisions in cerebro-cortical progenitors
+### WDR62 regulates mitotic progression and asymmetric versus symmetric divisions in cerebro-cortical progenitors
 
 By consensus, MCPH is thought to be a consequence of neural progenitor depletion/premature differentiation (Jayaraman et al., 2018; Phan and Holland, 2021). For instance, in MCPH3 (caused by mutations in CDK5RAP2) (Lancaster et al., 2013), MCPH5 (ASPM) (Li et al., 2017), and MCPH6 (CENPJ) (Bond et al., 2005), loss of proliferative capacity of neural progenitors at the VZ/SVZ compromises final brain architecture and size (Gabriel et al., 2020; Phan and Holland, 2021). For this reason, we sought to determine the consequences of WDR62 dysfunction on iPS-NES cells.
 
 First, we performed phenotypic analyses of Iso and Mut iPS-NES cells by staining with markers of proliferating cells. We found significantly fewer MKI67+ (also known as Ki-67) cells in Mut iPS-NES cell cultures (Figure 5A). Since MKI67 detects cells at all phases of the cell cycle except G0, this result suggests a tendency for premature cell cycle exit in Mut iPS-NES cells. On the other hand, we did not find significant differences in the global mitotic index (PH3+/total cells) between Iso 1, Iso 2, and Mut iPS-NES cells in unsynchronized cultures (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig5-v1.jpg)
+
+**Figure 5.:** (A) Quantitative analysis for MKI67 and PH3 in Iso 1, Iso 2, and Mut Neuroepithelial Stem cells derived from induced Pluripotent Stem cells (iPS-NES cells) reveals a decrease in G1-M (MKI67+) but not in mitotically active (PH3+) cells (MKI67+, replicates n=4, total cell N=3315, one-way ANOVA, post hoc Tukey’s test, p-value <0.001; PH3+, replicates n=4, total cell N=12684, one-way ANOVA, post hoc Tukey’s test, p-value >0.05). (B) Scheme of synchronization experiment in iPS-NES cells. (C) Representative confocal images and quantification of mitotic figure distribution in iPS-NES cells. The distribution of mitotic figures (quantified as % of mitotic figures at each phase) is not significantly different in unsynchronized (T0) Iso 1, Iso 2, and Mut iPS-NES cell cultures (replicates n=4, total cell N=12684, p-value <0.05, two-way ANOVA, post hoc Dunnett’s test). Quantitative analysis after 16 hr of treatment (T1) shows increased mitotic cell fraction in P-M. The percentage of cells arrested in P-M is higher in Iso 1 and Iso 2 than in Mut iPS-NES cell cultures. Fewer Mut iPS-NES cells proceed to M following nocodazole treatment and subsequent release in standard culture conditions (T2) compared to Iso 1 and Iso 2 iPS-NES cells (replicates n=4, total cell N=8764, P-value <0.0001, two-way ANOVA, post hoc Dunnett’s test and replicates n=4, total cell N=9751, p-value <0.05, two-way ANOVA, post hoc Dunnett’s test). P (prophase); P-M (prometaphase); M (metaphase); A (anaphase), and T (telophase). (D) Schematic 3D representation of inter-centrosomal distance (ICD) and spindle angle α measurements in iPS-NES cell cultures. α was measured as the angle of the spindle plane relative to the surface of the culture dish (baseline). (E) Representative confocal images of PCTN and DAPI staining in Iso 1 and Mut iPS-NES cells in metaphase and example of ICD measurements. Quantitative analysis shows no differences in ICD (replicates n=6, total cell N=81, p-value >0.05, one-way ANOVA, post hoc Sidak’s test). (F) Confocal Z-stack images of PCTN in Iso 1 and Mut iPS-NES cell lines during metaphase. Quantitative analysis shows smaller α in Mut iPS-NES cell compared with Iso 1 and Iso 2 iPS-NES cells (replicates n=6, total cell N=81, p-value <0.01, one-way ANOVA, post hoc Dunnett’s test). (G) Representative confocal images of ZO-1 in COs of Iso 2, Het, and Mut at 30 days in vitro (DIV30) showing the lumen of neural rosettes. (H) Confocal images of PCTN in Iso 2, Het, and Mut COs at DIV30. (I) Analysis of the cleavage plane angle θ in neural progenitors (% mitotic cells) showing a higher percentage of asymmetric (horizontal) divisions in Mut COs compared with Iso 2 and Het COs (COs n=6, total cell N=184, data are shown as %, p-value >0.001, Chi-square test). Data are shown as mean ± SD. Scale bar = 5 μm in (C), 10 μm in (E, F), and 20 μm (G, H).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunofluorescence analysis of PCTN and ARL13B in Iso 2 and Mut Neuroepithelial Stem cells derived from induced Pluripotent Stem cells (iPS-NES cells) during interphase. (B) Quantitative analysis of ciliary length (measured from the tip on the base of the cilium) in Iso 1, Iso 2, and Mut iPS-NES cells shows shorter primary cilia in the latter (replicates n=3, total cell N=850, p-value <0.01, one-way ANOVA, post hoc Dunnett’s test). Data are shown as mean ± SD. Scale bars = 10 μm.
 
 Aware that growth factor supplementation can propel iPS-NES cell proliferation, we further investigated cell cycle progression using additional methods. We induced cell cycle arrest through nocodazole (Figure 5B) to synchronize iPS-NES cell cultures and evaluated their capability to reorganize cytoskeletal components, such as the mitotic spindle, and proceed through mitosis. Before nocodazole treatment (T0), we did not find statistically significant differences in mitotic figure distribution (i.e. cells at each mitotic phase, evaluated through PH3 staining), between Iso 1, Iso 2, and Mut iPS-NES cells (Figure 5C). Nocodazole treatment induced prometaphase arrest and synchronization of the culture after 16 hr (T1) (Matsui et al., 2012; Yiangou et al., 2019). Following nocodazole removal and 1 hr of release (T2), cells re-enter the cell cycle. We found that approximately 80% of Iso 1 and Iso 2 iPS-NES cells arrested in prometaphase at T1 had re-entered the cell cycle at T2 (Figure 5C). In contrast, the percentage of Mut iPS-NES cells in prometaphase was reduced at T1 but increased at T2 (Figure 5C). Altogether, our data confirm that after an insult affecting mitotic progression, Mut iPS-NES cells are delayed compared to Iso counterparts.
 
@@ -88,9 +160,17 @@ Previous reports described WDR62 function in regulating mitotic spindle orientat
 
 We also quantified symmetric and asymmetric cell divisions in Iso 2, Het, and Mut COs at DIV30 by analyzing the angle (θ) of the cleavage plane relative to the rosette lumen (ZO-1+) – mirroring the VZ cellular composition and organization (Figure 5G and H). We found that RG-like progenitors in Mut COs displayed asymmetric cell divisions more frequently, suggestive of premature differentiation (Kosodo et al., 2004; Figure 5I). On the other hand, the incidence of symmetric and asymmetric divisions was comparable in Het and Iso 2 COs (Figure 5I). These observations suggest that WDR62 is important for maintaining proliferative divisions in RG-like progenitors and that the mutation results in a shift toward neurogenic divisions in COs.
 
-## WDR62 regulates NPC fate
+### WDR62 regulates NPC fate
 
 Considering its impact on neural progenitor choice of symmetric versus asymmetric cell divisions, we next investigated potential effects of WDR62 on iPSC differentiation into mature cerebro-cortical neurons and glia. We employed a directed cerebro-cortical differentiation protocol (Figure 6A): after an initial induction phase, we obtained, at DIV16, neuroectodermal cells (Figure 6—figure supplement 1A), which were subsequently driven toward terminal differentiation through the addition of supplements and neurotrophins (e.g. BDNF) (Sousa et al., 2017). Quantification of MKI67+ and PH3+ mitotic cells, as well as EdU-incorporating S-phase cells, revealed an increase in mitotic index in Mut versus Iso 2 neuroectodermal cells at DIV16 (Figure 6—figure supplement 1B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic illustration of the cerebro-cortical differentiation protocol (LSBX) via inhibitors of SMAD (LDN193189, SB431542) and WNT (XAV939). (B) Representative confocal images of TBR1, BCL11B, MAP2, and TUBB3 in Iso 2 and Mut progeny at 40 days in vitro (DIV40). (C) TBR1+ and BCL11B+ neurons are significantly enriched in Mut compared with Iso 2 induced Pluripotent Stem Cell (iPSC)-DIV40 cultures. Quantification shows no differences in MAP2+ cells but significant differences in TUBB3+ density (total TUBB3+ area (μm2)) normalized to total cell number (DAPI+) between Iso 2 and Mut iPSC-DIV40 cultures (replicates n=3), total cells N=38412, p-value <0.05, unpaired Student’s t-test for TBR1; replicates n=3, total cells N=40866, p-value <0.05, unpaired Student’s t-test for BCL11B; replicates n=6, total cells N=39595, p-value >0.05, unpaired Student’s t-test for MAP2; replicates n=6, total cells N=21013, p-value <0.001, unpaired Student’s t-test for TUBB3 density. (D) Representative confocal images for TBR1, BCL11B, SATB2, TUBB3, GABA, and GFAP staining in Iso 2 and Mut progeny at DIV80. (E) Quantification shows a decrease in TBR1+ and SATB2+ cells, but no differences in BCL11B+ cells and in TUBB3 density in Mut iPSC-derived neurons, and a decrease in GABA+, but not in GFAP+, cells (replicates n=3, total cells N=23396, p-value <0.05, unpaired Student’s t-test for TBR1; replicates n=3, total cells N=29448, p-value >0.05, unpaired Student’s t-test for BCL11B; replicates n=3, total cells N=21843, p-value <0.01, unpaired Student’s t-test for SATB2; replicates n=3, total cells N=7292, p-value >0.05, Kolmogorov-Smirnov test for TUBB3 density; replicates n=3, total cells N=20375, p-value <0.0001, unpaired Student’s t-test for GABA; replicates n=3, total cells N=20370, p-value >0.05, unpaired Student’s t-test for GFAP). Data are shown as mean ± SD. Scale bar = 50 μm in (B) and (D).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81716/elife-81716-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Immunofluorescence analysis for MKI67, PH3, and EdU in Iso 2 and Mut iPSC-neural progeny at 16 days in vitro (DIV16). (B) Quantitative analysis shows no differences in the number of proliferating (MKI67+) or S-phase (EdU+) cells, but a significant increase in mitotic index (PH3+) in Mut iPSC neural progeny (replicates n=3, total cells N=5222, p-value >0.05, unpaired Student’s t-test for MKI67; replicates n=3, total cells N=58313, p-value <0.05, unpaired Student’s t-test for PH3; replicates n=4, total cells N=3395, p-value >0.05, unpaired Student’s t-test for EdU >50%). (C) Cross-comparison of TUBB3 density (TUBB3+ surface area normalized to total cell number [DAPI]) between DIV40 and DIV80 in Iso 2 and Mut iPSC-derived neurons shows increase during differentiation (from DIV40 to DIV80) in Iso 2 iPSC-neuroderivatives (top) (p-value <0.01, two-way ANOVA for TUBB3 density in Iso 2 iPSC-DIV40 vs. -DIV80; p-value >0.05, two-way ANOVA, post hoc Sidak’s test for TUBB3 density in Mut iPSC-DIV40 vs. -DIV80). Average neurite length cross-comparison between DIV40 and DIV80 in Iso 2 and Mut iPSC-derived neurons showing significant difference between Iso 2 and Mut neuroderivatives at DIV40 (p-value <0.001, two way-ANOVA, post hoc Tukey’s test in Iso 2 iPSC-DIV40 vs. Mut iPSC-DIV40, and Iso 2 iPSC-DIV40 vs. Iso 2 iPSC-DIV80; p-value >0.05 in Iso 2 iPSC-DIV80 vs. Mut iPSC-DIV80, and Mut iPSC-DIV40 vs. Mut iPSC-DIV80). (D) Representative immunofluorescence assay for RBFOX3 and TUBB3 in Iso 2 and Mut iPSC-DIV80 cultures. Quantitative analysis shows a decrease in RBFOX3+ cells in Mut cells (replicates n=3, total cell N=35207, p-value <0.01, unpaired Student’s t-test). (E) Representative immunofluorescence assay for SYP (pre-synaptic marker) and TUBB3 in Iso 2 and Mut iPSC-DIV80 cultures. Scale bars = 50 μm in (A), (D), and 10 μm in (E).
 
 Next, we investigated the differentiation potential of Iso 2 and Mut neural cells at DIV40 (Figure 6B and C) and DIV80 (Figure 6D and E). We observed a significant enrichment in early-born neurons expressing TBR1 and BCL11B (also known as CTIP2), markers of layers 6 and 5, respectively, in Mut compared to Iso 2 iPSC-DIV40 cultures (Figure 6C). No differences emerged in the percentage of MAP2+ cells (Figure 6C). However, the total TUBB3+ surface area normalized to the total cell number (DAPI+), defined as TUBB3 density, was increased in Mut compared with Iso 2 iPSC-DIV40 cultures (Figure 6C), suggesting premature differentiation.
 
@@ -128,15 +208,15 @@ The frozen sections of human fetal brain used in this study were previously obta
 
 All mouse work was according to a protocol approved by the Institutional Animal Care and Use Committee (IACUC protocol #2022-10886) of Yale University.
 
-## Description of the mutation
+### Description of the mutation
 
 The mutation under study was identified in index case NG1406-1 and described in Sgourdou et al., 2017. Briefly, analysis of whole exome sequencing data detected a novel homozygous 4 bp deletion in exon 23 of WDR62, leading to a frameshift and the generation of a premature stop codon at position 1067 producing a C-terminally truncated protein (D955AfsX112). The parents of the affected siblings were both found to be heterozygous for the mutation. iPSCs derived from skin fibroblasts of the index case NG1406-1 and from one parent (NG1406-4) have been employed (Sgourdou et al., 2017).
 
-## iPSC culture and maintenance
+### iPSC culture and maintenance
 
 Reprogramming of patient and parent-derived fibroblasts (NG1406-1 and NG1406-4) was performed via episomal vectors – pCXLEhOCT3/4-shp53-F, pCXLE-hSK, pCXLE-hUL (Sgourdou et al., 2017). Human iPSCs were cultured as previously described (Sousa et al., 2017). Briefly, cells were seeded on Matrigel-coated culture plates (Cat: #356234, Corning, 1:60) and maintained in StemFlex Basal medium (Thermo Fisher Scientific; #A3349201) or Essential 8 Medium (Thermo Fisher Scientific, #A2858501). Cells were typically passaged with EDTA (0.5 mM) at room temperature (RT). After 3–5 min of incubation, the EDTA solution was removed and cells were gently detached from the dish with a small volume of medium, generating clumps of six to eight cells. In standard conditions (37°C, 5% CO2), iPSC colonies typically grow within 4–5 days.
 
-## CRISPR/Cas9 gene editing: isogenic line generation
+### CRISPR/Cas9 gene editing: isogenic line generation
 
 CRISPR/Cas9 technology was used to generate isogenic correct lines (Skarnes et al., 2019). 1.5×106 WDR62 iPSCs (clone 1b2-1) were nucleofected with pre-mixed 8 µg of synthetic chemically modified sgRNA_1 (Synthego), 200 pmol/µl of single strand donor oligonucleotide (ssODN; IDT) together with 20 µg of HiFi Cas9 Nuclease V3 (Cat: #1081060, IDT) using Amaxa 4D-Nucleofector (Cat: #AAF-1002B, Lonza) transfection system with Primary Cell Optimization 4D-Nucleofector X Kit (Cat: #V4XP-9096, Lonza) in P2 buffer – program DS-150.
 
@@ -146,59 +226,59 @@ To assess WDR62 sequence restoration, single clonal populations were first scree
 
 The relevant portion of genomic DNA from selected clones was amplified by PCR using WDR62_GF1 and WDR62_GR1 primers, with the following conditions: Initial denaturation: 95°C 2 min; denaturation: 98°C 20 s; annealing: 55°C 30 s; extension: 72°C 1 min; final extension: 72°C; 5 min. Cycle number: 30. Finally, the genotype was confirmed by Sanger sequencing. Sequences for genome editing (5’–3’): sgRNA_1: GAAGTGACAGTCACAGGGAC; ssODN: GCCAGTGAGCTCATCCTCTACTCTCTGGAGGCAGAAGTGACAGTCACAGGGACAGACAGGTGGGTGTCCTTTCCACAAGGGAGCCTTAGTTGGAGGAACCCCCAGCTG Primer sequences (5’–3’): Melting analysis: F1: CTCTGGAGGCAGAAGTGACAG R1: CTTGGTGGAAAGGACACCCAC. PCR: GF1: ACTGGGTTTCCTATTCTTGAACTTG GR1: AGGACTTCAGCTGGAGACTCAAC. Sequencing: SF1: TGTGCTGTCTTCCCCATAGTC; SR1: CCCATCCAGGCCTCAACTGTC.
 
-## Generation of cerebro-cortical neurons
+### Generation of cerebro-cortical neurons
 
 Mature neurons were generated from iPSCs through an optimized cerebro-cortical differentiation protocol, based on a dual SMAD inhibition strategy (Chambers et al., 2009; Shi et al., 2012). As previously described (Sousa et al., 2017), iPSCs were dissociated into a single-cell suspension with Accutase (Corning, #25–058 CI) pre-warmed at 37°C and plated onto Matrigel-coated six-well plates at high density (0.7–2×105 cells/cm2) in StemFlex basal media supplemented with Y-27632 (10 µM). When they reached a confluent state, maintenance medium was replaced with neural induction medium 1:1 DMEM/F-12 (Thermo Fisher Scientific, #31330095) and Neurobasal medium (Thermo Fisher Scientific, #21103049) supplemented with N-2 (1:100, Gibco, #17502-048), B-27 (1:50, Thermo Fisher Scientific, #17504-044), 20 µg/ml insulin (Sigma-Aldrich, #I9278-5ML), L-glutamine (1:100, Thermo Fisher Scientific, #25030-081), MEM non-essential amino acids (1:100, Gibco, #11140-050) and 2-mercaptoethanol (1:1000, Thermo Fisher Scientific, #31350010). For cerebro-cortical induction (LSBX), 100 nM of LDN-193189 (STEMCELL Technologies, #72144), 10 µM of SB-431542 (Merck, #616464-5 MG) and 2 µM of XAV939 (STEMCELL Technologies, #72674) were added. Induction medium was replaced daily until DIV11. For terminal differentiation, cells were dissociated at DIV12 with Accutase and replated onto poly-D-lysine (Sigma, #P6407, 10 µg/ml)/laminin (Invitrogen, #23017-015, 3 µg/ml) coated chamber slides at the density of 8×104 cells in terminal differentiation medium containing Neurobasal supplemented with N-2 (1:100), B-27 (1:50), L-glutamine (1:100), BDNF (30 ng/ml, R&D Systems, #248-DB025), and Y-27632 (10 μM) to increase cell viability. Culture media were partially replaced every 3–4 days until DIV80.
 
-## iPS-NES cell generation
+### iPS-NES cell generation
 
 To obtain iPS-NES cells, 2×106 cells were replated at the end of the neuroinduction phase (DIV12) onto POLFN-coated six-well plates (0.01% of poly-L-ornithine, Sigma, #P4957; 5 µg/ml laminin; 1 µg/ml fibronectin, Corning, #354008) in NES medium containing DMEM/F-12 supplemented with B-27 (1:1000), N-2 (1:100), 20 ng/ml of FGF-2 (Gibco, #13256 029), 20 ng/ml of EGF (Gibco, #PHG0311), glucose (1.6 g/l), 20 µg/ml insulin, and 5 ng/ml of BDNF. NES cells were then cultured as previously described (Dell’Anno et al., 2018); to preserve optimal growth properties, the medium was replaced every 2–3 days and cells were passaged 1:2 or 1:3 weekly with 0.25% Trypsin/EDTA (Thermo Fisher Scientific, #25200-056) pre-warmed at 37°C.
 
-## Generation and characterization of COs
+### Generation and characterization of COs
 
 COs were generated according to a previously published procedure (Andersen et al., 2020) with modifications. Briefly, Iso 2, Het, and Mut iPSCs were detached into small clumps with 0.5 mM EDTA. Cells suspension was plated onto poly-(2-hydroxyethyl methacrylate) (also known as poly-HEMA) (Sigma, #P3932-10G) coated dished to avoid cell adhesion and StemFlex medium supplemented with Y-27632 (20 μM) to increase cell viability. The following day, once small aggregates formed, the media were replaced with Neural Induction Medium supplemented with LDN-193189 (100 nM), SB-431542 (10 μM), XAV939 (2 μM), and Y-27632 (20 μM). Neural Induction Medium was partially replaced every other day until DIV6 and replaced with Neural Expansion Medium (NEM); Neurobasal supplemented with B-27 (1:50), L-glutamine (1:100), FGF2 (20 ng/ml), and EGF (20 ng/ml) at DIV7. NEM was partially replaced every other day until DIV25. From DIV25 to DIV30, FGF2 and EGF were substituted by BDNF (10 ng/ml) and NT3 (20 ng/ml) in the Neuronal Differentiation Medium. COs were cultured in static conditions until DIV30. At DIV30, COs were fixed in 4% formaldehyde (FA) for 30 min, washed three times with D-PBSX (0.1% vol/vol Triton X-100 in D-PBS 1×), dehydrated in 30% sucrose overnight and embedded in OCT (VWR, #361603e) for cryostat sectioning.
 
-## NES cell synchronization
+### NES cell synchronization
 
 For efficient synchronization, iPS-NES cells were seeded onto POLFN-coated coverslips in a 48-well plate at a density of 105 cells/cm2. To induce prometaphase arrest (T1), cells were rinsed once with D-PBS (Sigma-Aldrich, #D8537) and cultured in NES medium containing 100 ng/ml nocodazole (MilliporeSigma, #M1404) for 16 hr. Then, cells were fixed with 4% FA for 20 min at 25°C.
 
 For cell cycle re-entry analysis (T2), after 16 hr of treatment, nocodazole was removed and synchronized iPS-NES cells were rinsed once with D-PBS, released in NES medium for 1 hr and then fixed in 4% FA for immunofluorescence analysis. For mitotic index and mitotic figure distribution analysis, cells were classified following PH3 staining.
 
-## Microtubule de-polymerization assay
+### Microtubule de-polymerization assay
 
 To induce microtubule de-polymerization, iPS-NES cells were first plated onto POLFN-coated coverslips in a 48-well plate at a density of 105 cells/cm2. The day after, 5 µM nocodazole was added to cell culture medium for 1 hr; the cells were then rinsed once with D-PBS and fixed (4% FA for 20 min at 25°C) for immunofluorescence analysis.
 
-## Mitotic spindle angle and ICD estimation in iPS-NES cells
+### Mitotic spindle angle and ICD estimation in iPS-NES cells
 
 Confocal images of iPS-NES cells immunostained with the pericentrosomal marker PCTN were acquired with a pre-determined Z-stack step size of 300 nm and elaborated with ImageJ software (Schneider et al., 2012) (developed by the National Institute of Health; https://imagej.nih.gov/ij). The mitotic spindle angle α was calculated as follows: α=arctan (h/D), with ‘h’ as the distance between centrosomes on Y-axis and ‘D’ as the distance between centrosomes on X-axis, manually traced (edge-to-edge distance of PCTN signal). ICD was calculated as follows: ICD = D/cos (α) (see Figure 2—figure supplement 1 for reference).
 
-## Estimation of cleavage plane angle in COs
+### Estimation of cleavage plane angle in COs
 
 Confocal images from sections of COs immunostained with the centrosomal marker PCTN were acquired with a pre-determined Z-stack step size of 500 nm and elaborated with ImageJ software. Mitotic cells within neural rosettes were selected for cleavage angle Ɵ estimation. Operatively, cleavage angle Ɵ was calculated with respect to the tangent at the rosette lumen as Ɵ=arcos (a/b) with ‘a’ as the distance of the farthest centrosome from the tangent to the lumen and ‘b’ as the line of sight the two centrosomes intersecting the tangent. Cleavage planes with 45°<Ɵ<135° have been considered as ‘vertical/symmetric division’, while cleavage planes with 0°<Ɵ<45° and 135°<Ɵ<180° have been considered ‘horizontal/asymmetric division’.
 
-## Measurement of primary cilium length
+### Measurement of primary cilium length
 
 Serial optical Z-stacks with a step size of 300 nm were used to create Z-projections (maximum intensity projection) of primary cilia for a minimum of 50 cells per genotype. Single cilium length was measured using ‘NeuronJ’ plugin of ImageJ (Meijering et al., 2004). Briefly, after selecting the first pixel mid-point at the cilium perinuclear edge, short subsequent segments were traced manually following cilium shape until the last pixel mid-point. Cilia were measured regardless of cell cycle phase, excluding mitosis.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 RT-qPCR was performed to quantify WDR62 mRNA in Iso 2 and Mut iPS-NES cells cultures. iPS-NES cells were plated onto six-well plates and lysates were collected in RNAprotect Cell Reagent (QIAGEN, #76526) to stabilize the RNA. Subsequently, RNA purification was performed applying RNAeasy Protect Cell Mini Kit (QIAGEN, #74134) and RNase-Free DNase set (QIAGEN, #79254). cDNA was synthesized using GoScript Reverse Transcription System (Promega, #A5001) according to the manufacturer’s instructions. PCR was performed using QuantStudio 3 Real-Time PCR System (Applied Biosystems, A28137) with SensiMixSYBRNo-ROX kit (Meridian BIOSCIENCE, #QT650-05). Thermal cycling conditions: denaturation at 95°C for 10 min and 40 cycles of 95°C for 15 s and 60°C for 1 min. Data are expressed as fold change of WDR62 gene expression relative to GAPDH housekeeping gene, according to the 2−ΔΔCT method. Three technical replicates were performed for each experiment. qPCR primers (5’–3’) qF_WDR62: GGAGGAAGAGTGTGAGCCAG; qR_WDR62: CTTGCCGTTGGTTAGCAGG.
 
-## EdU labeling
+### EdU labeling
 
 The Click-iT EdU Alexa Fluor 594 Imaging kit (Invitrogen, #C10339) was used to perform EdU labeling on iPSC cultures at DIV16, according to the manufacturer’s instructions; 3.5 hr after EdU incubation, cells were fixed, imaged with confocal microscopy, and processed using ImageJ. For quantitative analysis, cells with signal intensity above 50% were considered.
 
-## Immunostaining assay
+### Immunostaining assay
 
 After cell fixation (4% FA for 20 min at 25°C or methanol for 7 min at –20°C for the CDK5RAP2 antibody), three washes with D-PBSX were performed. Then, samples were incubated at RT in permeabilization solution (0.5% vol/vol Triton X-100 in D-PBS Ca2+/Mg2+) for 10 min and then in blocking solution (5% FBS, 0.3% vol/vol Triton X-100 in D-PBS Ca2+/Mg2+) for at least 1 hr (RT). Subsequently, samples were incubated in antibody solution (3% FBS, 0.2% vol/vol Triton X-100 in D-PBS Ca2+/Mg2+) with primary antibodies overnight (ON) at 4°C. The next day, samples were washed three times with D-PBSX before incubation with the corresponding secondary antibodies (all diluted 1:500) and DAPI (Sigma, #32670-25 mg) for 1 hr (RT). Samples were mounted with Aqua-Poly/Mount (VWR, #87001-902) on microscope slides for confocal microscopy.
 
 For immunohistochemistry, human fetal brain sections and COs were first thawed at RT, washed once with D-PBS for 10 min, and permeabilized with 0.5% Triton X-100 in D-PBS for 10 min. Sections were then washed in D-PBS and treated with sodium citrate-based R-buffer A (EMS, #62706-10) in 2100-Retriever (EMS, #62706) at 120°C for 20 min. After antigen retrieval, the sections were washed with D-PBS and blocked with 5% horse serum (Thermo Fisher, #26050070), 1% bovine serum albumin (BSA) in D-PBS with 0.3% Triton X-100 for 1 hr (RT). Primary antibodies were diluted in blocking solution and incubated at 4°C ON. The following day the sections were washed three times in D-PBSX. Secondary antibodies and DAPI were diluted in blocking solution for 1 hr (RT). Then, sections were washed twice in D-PBSX and once in D-PBS and finally mounted with Aqua-Poly/Mount on microscope slides for confocal microscopy. All images were acquired using a laser scanning confocal microscope (Nikon, Eclipse Ti).
 
-## Co-localization analysis
+### Co-localization analysis
 
 Following immunofluorescent staining, co-localization analysis for WDR62 and GOLGA1 (also known as Golgin97) signals was performed using the DiAna plugin (Gilles et al., 2017) (ImageJ) on 300 nm Z-stack confocal images. This plugin allows to calculate co-localization percentage between two selected objects measuring the distance (on three dimensions) of every single pixel unit – defined by size through threshold setting – constituting the object itself. To calculate WDR62-Golgi co-localization, Golgi objects identified by GOLGA1 signal (‘object A’) were selected as regions of interest (ROI) and the same ROI then identified on the WDR62 channel (‘object B’). Then, for each A and B object pair, co-localization of A volume on B was calculated. Alternatively, on human fetal and CO sections, co-localization analysis for WDR62 and GOLGA1 signal was performed using the JACoP plugin (Bolte and Cordelières, 2006) (ImageJ) on 300 nm Z-stack confocal images. This plugin allows to calculate percentage of co-localization through Manders’ coefficient between two selected objects measuring the co-occurrence (on three dimensions) of every single pixel unit – defined by size through threshold setting – constituting the object itself. To calculate WDR62-GOLGA1 co-localization in CO sections, the apical processes of single RG-like cells were selected as ROI in channel 1 (WDR62) and channel 2 (GOLGA1) composites. Then, co-occurrence of channel 1 and channel 2 pixels was calculated in single RG-like cells.
 
-## Cell culture, transfection, immunoprecipitation, and western blotting
+### Cell culture, transfection, immunoprecipitation, and western blotting
 
 To generate the expression vectors used for co-IP and overexpression experiments, full-length cDNA fragments encoding Myc-hCDK5RAP2, Myc-hAURKA, Myc-hTPX2, or hWDR62-FLAG were amplified by PCR and inserted into a CAG-promoter plasmid backbone by In-Fusion HD (Takara). A plasmid encoding hWDR62-FLAG was generated by amplifying WDR62-FLAG by PCR; the fragment was excised using XhoI and NotI and ligated into a CAG-promoter plasmid. A plasmid encoding WDR62 D955AfsX112-FLAG was generated by overlap extension PCR cloning using two products (aa 1–955 of WDR62 D955AfsX112 and 955–1067 of WDR62 D955AfsX112-FLAG), excised using XhoI and NotI, and ligated into a CAG-promoter plasmid. WDR62 W224S-FLAG was generated by standard PCR mutagenesis. WDR62 V1402GfsX12-FLAG, the mutation was introduced in exon 31 using Gateway with reverse primers targeting the region (for additional details and Gateway oligonucleotides, see Sgourdou et al., 2017). The plasmid expressing GALT1-mWasabi was generated by inserting the fragment corresponding to aa 1–61 of hB4GALT1-mWasabi into a CAG-promoter plasmid.
 
@@ -208,30 +288,207 @@ Overexpression experiments were performed through forward transfection. CTRL iPS
 
 1×106 iPS-NES cells, maintained in NES medium without antibiotics, were transiently transfected using Lipofectamine 2000 as described above. Cells were lysed 48 hr after transfection using lysis buffer (RIPA buffer [Sigma, #R0278] and protease inhibitors [Roche, #11836170001]). After DC assay (Bio-Rad, #5000111) for protein quantification, samples were analyzed by western blotting (anti-WDR62 and anti-TUBA1A antibodies).
 
-## Animals and housing
+### Animals and housing
 
 Animals were housed in groups of four to five in standard caging with ad libitum access to water and standard lab chow and cared for in a facility operated by the Yale Animal Resources Center. The facility was maintained on a 12 hr light/dark cycle (lights on at 7 am). Environmental enrichment was provided by nesting material, in accordance with the national standards and recommendations of the Guide for the Care and Use of Laboratory Animals as required by the Public Health Service.
 
-## In utero electroporation
+### In utero electroporation
 
 All surgeries were performed under sterile conditions and in accordance with an IACUC approved protocol (Yale University). DNA solution (~1 μl) in Hank’s Balanced Salt Solution (HBSS, Thermo Fisher Scientific, #88284) containing 0.02% fast green was injected into the embryonic lateral ventricle. After injection, electroporation (four 50 ms square pulses of 30 V and 950 ms intervals for E13.5 embryos) was carried out with forceps-type electrodes (Nepa Gene, #CUY650P3). Final concentrations of the plasmids used were GALT-mWasabi (2 μg/μl), WDR62*-FLAG (0.5 μg/μl; *denotes WDR62-FLAG, WDR62 D955AfsX112-FLAG, WDR62 V1402GfsX12-FLAG, or WDR62 W224S-FLAG). Embryos were collected 24 hr post-IUE.
 
-## WDR62 siRNA-mediated knockdown
+### WDR62 siRNA-mediated knockdown
 
 Knockdown experiments were performed through reverse transfection. CTRL iPS-NES cells, maintained in NES medium, were transiently transfected using Lipofectamine RNAiMAX (Thermo Fisher Scientific, #13778150) according to the manufacturer’s instructions. Cells (0.6×105) were alternatively transfected with 100 nM, 200 nM, or 300 nM of siGENOME siRNA-hWDR62 (Dharmacon, #D-031771-01-0002) with similar efficiency (not shown). 100 nM siGENOME siRNA-hWDR62 was selected for immunostaining assay. CTRL iPS-NES cells were also transfected with 100 nM siGLO lamin A/C CTRL siRNA (Dharmacon, #D-001620-02-05) or co-transfected with 300 nm siRNA-hWDR62 and siGLO lamin A/C CTRL siRNA (5:1 molar ratio). Cells were fixed 52 hr after transfection in 4% FA.
 
-## Generation of Golgi ministacks
+### Generation of Golgi ministacks
 
 We followed a previously published methodology to induce Golgi apparatus fragmentation (i.e. Golgi ministacks) (Tie et al., 2017). Briefly, 0.7×105 CTRL iPS-NES cells were plated onto POLFN-coated 48-well plate cover glasses. The day after, 10 µg/ml nocodazole was added. After 3 hr, cells were fixed in 4% FA at 25°C for 20 min. For ministack visualization, cells were first rinsed twice with 0.1 mM glycine solution (quenching) and then treated with permeabilization solution (0.5% vol/vol Triton X-100 in D-PBS) for 10 min. Then, cells were alternatively incubated for 1 hr at RT with GOLGA1/GOLGA2 or GOLGA1/WDR62 primary antibodies properly diluted in Fluorescence Dilution Buffer (FDB – 5% (vol/vol) FBS, and 2% (wt/vol) BSA in D-PBS) containing 0.1% saponin. Then, cells were extensively rinsed with D-PBS (3×>10 min washes) and incubated with secondary antibodies diluted in FDB+0.1% saponin for 1 hr at RT. Finally, after 3×>10 min washes in D-PBS, coverslips were mounted with Aqua-Poly/Mount on microscope slides for confocal microscopy.
 
-## Cell lines
+### Cell lines
 
 All the above-mentioned cell lines (iPSCs, iPS-NES cells, and HEK293T) were routinely tested for mycoplasma.
 
-## Quantitative and statistical analysis
+### Quantitative and statistical analysis
 
 Nuclei and nuclear markers were quantified manually with the ‘Cell counter’ plugin (ImageJ) or automatically through the ‘Analyze particles’ function (ImageJ) defining a 15 µm2 particle-size threshold. Mean fluorescence and fluorescence distribution were calculated as mean gray values and skewness, respectively. Operatively, ROIs individuating WDR62 signal were defined with free-hand selection function and measured (ImageJ). Concerning COs, ROIs for analysis corresponding to the cells lining the rosette lumen were identified through either CTNNB1 or TUBA1A signal, which defined clear cytoplasmic boundaries within a few (3–5) Z-stacks. The apical process of the cells was considered as the cytoplasmic portion comprised between the nucleus (stained with DAPI) and the lumen (stained with CTNNB1).
 
 Average neurite length was estimated as the area of TUBB3 signal – automatically determined through the ‘Analyze particles’ function (ImageJ) – from which the TUBB3 perinuclear signal was removed through the application of a nuclei mask and normalized on the TUBB3+ cell number (quantified manually with the ‘Cell counter’ plugin [ImageJ]).
 
 Values identify mean and error bars represent SD and a significance level of at least p<0.05 (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001). All experiments were performed at least in biological replicates n≥3 or triplicate (rounds of differentiations/batches n=3). The size of the population (N) is reported for each experiment in the corresponding figure legend. Counts and analyses were performed blinded to conditions and genotypes. Graphs were generated with GraphPad Prism 7.00 software. Images were acquired with a Nikon A1 Confocal Microscope (Eclipse Ti) and NIS-Elements AR 4.20.03 64-bit software. Confocal images were then processed with ImageJ, Adobe Photoshop CC 2019, and Adobe Illustrator 2020.
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Brand, Cat. number</th>
+      <th>Dilution (IF)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ARL13B</td>
+      <td>Invitrogen, PA5-61840</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>BCAT</td>
+      <td>BD bioscience, BD610153</td>
+      <td>1:150</td>
+    </tr>
+    <tr>
+      <td>BCL11B</td>
+      <td>Abcam, ab18465</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>CDK5RAP2</td>
+      <td>Bethyl Lab, IHC-00063-T</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>CETN2</td>
+      <td>Biolegend, W16110A</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>DYKDDDDK [FLAG]</td>
+      <td>Sigma, F3165</td>
+      <td>1:8000,1:10,000 WB</td>
+    </tr>
+    <tr>
+      <td>DYKDDDDK [FLAG]</td>
+      <td>Invitrogen, MA1-142</td>
+      <td>1: 1000 IP</td>
+    </tr>
+    <tr>
+      <td>FOXG1</td>
+      <td>Abcam, ab18259</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>GABA</td>
+      <td>Sigma, A2052</td>
+      <td>1:1500</td>
+    </tr>
+    <tr>
+      <td>GFAP</td>
+      <td>Sigma, g3893</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>GM 130 (GOLGA2)Alexa Fluor 488</td>
+      <td>Abcam, ab275987</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Golgin97 (GOLGA1)</td>
+      <td>Invitrogen, A-21270</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>LMNA</td>
+      <td>Cell Signaling, 2025</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>MAP2</td>
+      <td>Millipore, ab5622</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>MKI67</td>
+      <td>Abcam, ab16667</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>MYC</td>
+      <td>Millipore, 06-549</td>
+      <td>1: 5000 WB</td>
+    </tr>
+    <tr>
+      <td>NANOG</td>
+      <td>Stemgent, 09-0020</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>NESTIN</td>
+      <td>R&amp;D, MAB1259</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>OCT4</td>
+      <td>Stemgent, 09-0023</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>PCTN</td>
+      <td>Abcam, ab28144</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>PH3</td>
+      <td>Millipore, 06-570</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>RBFOX3</td>
+      <td>Millipore, ABN78</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>SATB2</td>
+      <td>Genway, satba4b109</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>SOX2</td>
+      <td>Millipore, ab5603</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>SSEA4</td>
+      <td>Stemgent, 09-0006</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>SYP</td>
+      <td>Millipore, MAB329</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>TBR1</td>
+      <td>Abcam, ab183032</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>TRA-1–60</td>
+      <td>Stemgent, 09-0010</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>TUBA1A</td>
+      <td>Cell Signaling, 3873</td>
+      <td>1:2000,1:8000 WB</td>
+    </tr>
+    <tr>
+      <td>TUBA1A</td>
+      <td>Bio-Rad, mca77g</td>
+      <td>1: 500</td>
+    </tr>
+    <tr>
+      <td>TUBB3</td>
+      <td>Sigma, T8578</td>
+      <td>1: 500</td>
+    </tr>
+    <tr>
+      <td>WDR62</td>
+      <td>Bethyl Lab, A301-560A</td>
+      <td>1:500 IF,1:2000 WB</td>
+    </tr>
+    <tr>
+      <td>ZO-1</td>
+      <td>Invitrogen, 617300</td>
+      <td>1:100</td>
+    </tr>
+  </tbody>
+</table>

@@ -37,31 +37,112 @@ We propose an integrated cultivation and screening strategy based on surfactant-
 
 ## Results
 
-## Concept of cultivation in pL-droplets and workflow
+### Concept of cultivation in pL-droplets and workflow
 
 We used a droplet-microfluidic platform to singularize, cultivate, and screen bacterial cells from complex environmental communities. The workflow featured three major phases: first, cells were separated from each other by encapsulating them in droplets during droplet generation. All droplets were collected in a vessel, where they lost their order. We refer to the state of a droplet population, in which the positional information of droplets is unrelated to the order of droplet generation, as ‘droplets in bulk’. Second, droplets in bulk were incubated together using dynamic droplet incubation (Mahler et al., 2015), which ensured aerobic and homogenous cultivation conditions for months. Third, grown microbial cultures were isolated from droplets by depositing them on agar plates. Either all droplets were deposited in an untargeted manner or droplets were first screened for antimicrobial activity and then only selected droplets were distributed on agar plates (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig1-v2.jpg)
+
+**Figure 1.:** (A) General workflow of in-droplet cultivation with two options for strain isolation. (1) Single cells of the soil community are encapsulated in droplets. (2) Droplets are incubated under oxic conditions in bulk. (3a) Droplets are deposited on agar plates for strain isolation without previous selection. (3b) Droplets are screened for antibiotic producers and only screening hits are deposited for strain isolation. (B) Brightfield microscopy images of droplet samples after droplet generation and 28 days of incubation. Bacterial colonies were not visible right after droplet generation (top). Negative control droplets remained empty throughout the entire incubation period (bottom left). A mixture of five Streptomyces strains (Table 1) was used as a positive control (middle). Co-encapsulated soil particles are visible as dark particles in the images of droplets with soil community (right). A variety of different morphologies were observed in droplets with soil community, ranging from different sizes and densities of cocci- and rod-shaped cells to filamentous growth (bottom right). Droplets with cell colonies are marked with arrows.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Displayed is the average CFU concentration over time obtained for the extracted soil community by cultivating the soil community in droplets or on plates using the same media composition and equal incubation time. CFUs for in-droplet cultivation were determined by counting the relative abundance of droplets occupied with bacterial biomass via microscopic image analysis at given time points. We transferred abundance of occupied droplets to CFU under the assumption that one cell was initially encapsulated per occupied droplet. For example, among 1000 droplets in total 224 were occupied by colonies, meaning that in 200 nL droplet liquid (1000*200 pL) at least 224 CFU were contained. Considering the dilution of the soil community in medium to obtain droplet liquid, this amounts to 3 x 106 CFU/mL of soil community in droplets. Error bars show the standard error of the mean.
+
 For designing the medium in which single cells were encapsulated in droplets, we followed the rationale of replicating the conditions in the natural environment as closely as possible. We used low amounts of defined nutrients typically originating from plants supplemented with a cold-extracted soil extract (CESE), prepared from the same soil that the community was derived from, and several solid soil particles (diameter <40 µm). CESE contained dissolvable macro- and micronutrients and other effectors, like signaling molecules. The number of cells occupying a droplet during an encapsulation event follows a Poisson distribution (Collins et al., 2015). As we aimed at one cell per droplet, we minimized the probability of several cells per droplet by adjusting the concentration of cells at inoculation to obtain not more than 30% occupied droplets (λ = 0.4, on average 0.4 cells/droplet). Nevertheless, the occurrence of several cells per droplet cannot be excluded due to a small statistical probability of 6.16% and biological reasons like cells adhering to the same soil particle or to each other. The droplets were stabilized by a biocompatible surfactant forming a monolayer at the aqueous/oil interphase. The level of miniaturization (~200 pL droplet volume), in conjunction with bulk incubation, permitted droplet populations comprising on average 9 × 106 droplets.
 
-## In-droplet cultivation results in higher CFU concentration in comparison to conventional plating
+### In-droplet cultivation results in higher CFU concentration in comparison to conventional plating
 
 To prove the capability of our droplet cultivation technique, we directly compared the cultivation outcome of droplets with standard plating for the extracted microbial community of a brown earth soil sample (eight replicates, Figure 1—figure supplement 1). The soil community was incubated with the same media composition at 20 °C for 28 days in both approaches.
 
 During incubation, we monitored microbial growth inside droplets by brightfield microscopy imaging followed by counting occupied droplets (Figure 1B). After 28 days, the average occupation frequency of the eight populations amounted to 22.4%, which translates into 3.03 × 106 colony-forming units (CFUs)/mL (Figure 1—figure supplement 2). On plates, the colony count is equivalent to 1.3 × 106 CFU/mL of the soil community. The more than twofold higher concentration of CFUs found during in-droplet cultivation indicates that the singularization and incubation of cells in droplets enabled more cells to replicate.
 
-## A diverse set of bacterial species replicates in droplets
+### A diverse set of bacterial species replicates in droplets
 
 We analyzed the bacterial diversity of growing cells for each cultivation method by pooling the biomass of colonies after incubation, extracting metagenomic DNA, and sequencing the 16S rDNA amplicons on an Illumina MiSeq platform. We subsampled the reads at an equal sequencing depth per sample to avoid bias by variable library size (Gihring et al., 2012). Uninformative operational taxonomic units (OTUs) were removed by a combination of a total count and prevalence filter resulting in 2106 final OTUs.
 
 To explore the similarity between the microbial community structures for the different cultivation approaches, we performed unconstrained ordination based on the community composition using Bray–Curtis distance (Figure 2A). Samples belonging to one sample type showed little dispersion, and plate and droplets-derived sample clusters did not overlap. These results indicate clear dissimilarities between the cultivation outcome of the two methods but a reproducible community composition within one cultivation method.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig2-v2.jpg)
+
+**Figure 2.:** Sample-type abbreviations represent the following: droplet PC – droplet-positive control of five selected Streptomyces strains (Table 1); droplet sample – droplet population inoculated with soil community; plate PC – plate-positive control of five selected Streptomyces strains; plate sample – agar plates inoculated with soil community; soil – original soil sample; extr. community – extracted soil community. (A) Principal coordinate analysis based on Bray–Curtis distance matrix visualized similarities between microbial communities. (B) Community structure based on Illumina amplicon sequencing of the 16S rRNA gene. The phylogenetic affiliation at the phylum level is displayed for each sample type. All samples for one sample type were merged. The bars depict the relative abundance of the 10 most abundant phyla.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Means between droplet sample and plate sample were tested by Wilcoxon rank-sum test. Cutoff for significance was p<0.05. *** Significant with p<0.001, * significant with p<0.05.
+
 At the broad level of phyla, differences in the community structure are clearly visible between all sample types (Figure 2B). The relative abundance of the phylum Actinobacteria among the cultivated species was more than twofold higher in droplets (37.9%) than on agar plates (15.7%). As expected, more than 99% of reads in the Streptomyces-positive controls (Table 1) affiliated to Actinobacteria for both cultivation techniques, proving the absence of external contaminations. The composition of the extracted soil community was similar to the initial community structure of the original soil sample, indicating no technical bias of extracting the microbial cells from the soil matrix.
+
+**Table 1.**
+ Bacterial species contained in the spore mixture constituting the positive control for the droplet–plate comparison.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Streptomyces griseus</td>
+      <td>ST036300</td>
+    </tr>
+    <tr>
+      <td>Streptomyces hygroscopicus</td>
+      <td>HKI0016</td>
+    </tr>
+    <tr>
+      <td>Streptomyces noursei</td>
+      <td>JA03890</td>
+    </tr>
+    <tr>
+      <td>Streptomyces netropsis</td>
+      <td>IMET43883</td>
+    </tr>
+    <tr>
+      <td>Streptomyces collinus</td>
+      <td>IMET43780</td>
+    </tr>
+  </tbody>
+</table>
 
 Alpha diversity indices were calculated for the subsampled dataset without further filtering. The total number of OTUs, as well as Good’s Coverage, chao1 (species richness) (Chao et al., 2006), and Shannon indices (species diversity) (Shannon, 1948) were significantly higher in the droplet cultivation samples than in the plate cultivation samples, suggesting a higher microbial diversity cultivated in droplets (Figure 2—figure supplement 1).
 
 To examine the differences in diversity in more detail, we directly compared the relative abundance of taxa on all taxonomic ranks for the cultivation outcome of droplets and plates (Figure 3—figure supplements 1–5). A pronounced distinction was the significantly higher abundance of the phylum Firmicutes on plates, comprising one-third of the community (Figure 3—figure supplement 1), while it was represented with only 5.3% in droplets. On plates, Firmicutes were mainly composed of five OTUs (three affiliating to Bacillus and two to Paenibacillus). As expected, Bacillus and Paenibacillus, together with Phyllobacterium, were the three most abundant genera on plates, accounting for 42% of all the sequences (Figure 3A). In contrast, Acinetobacter as a member of the γ-Proteobacteria showed the highest relative abundance on the genus rank for droplets, accompanied by Agromyces and Micromonospora. As a general trend, most taxa present on plates were also found in droplets, while many taxa were exclusively found in droplets but not on plates (Figure 3B, C, Figure 3—figure supplement 6A). Among the taxa that were exclusively found in droplet samples, which accounted for almost 60% of all taxa, we found also a considerable number of taxa classified as uncultured at the genus level (151 taxa of 983 exclusive droplet taxa) (Figure 3—figure supplement 6B). Taxa that were just unclassified and likely belong to the uncultured category were not considered for this comparison. While 15.2% of the exclusive droplet taxa were classified as uncultured, only 1.2% of the taxa found in both approaches – droplet and plate – were classified as uncultured and 0% in exclusive plate taxa.
 
-## Microbial colonies can be isolated from microfluidic droplets
+![Figure 3.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig3-v2.jpg)
+
+**Figure 3.:** (A) Triangles depict the relative abundances for genera in eight biological replicates per droplet and plate cultivation method. Underlying boxplots show the distribution of data points. Relative abundances of operational taxonomic units (OTU) (evolutionary distance of 0.03) were agglomerated on the genus level (evolutionary distance of 0.1). Displayed are the 10 most abundant genera of in total 238 assigned genera covering 66.8% of all sequences. The 30 most abundant genera covering a total of almost 90% are shown in Figure 3—figure supplement 5. Means of relative abundances were compared by Wilcoxon rank-sum test for each genus (α = 0.05), applying Holm–Bonferroni correction for multiple comparisons. Adjusted p-values are displayed. As effect size, Cohen’s d was computed and plotted as bars to indicate which differences are practically relevant. The direction and the color of the bars depend on the sample type in which the larger mean was found (blue – larger mean in plate samples, green – larger mean in droplet samples). (B) Venn diagram for the taxa on genus level. Of 238 assigned genera, 142 were found in both cultivation methods while 93 were unique to droplet cultivation and three were only observed in plate cultivation. The area of the Venn elements corresponds to the total number of genera found for the cultivation techniques. (C) Venn diagram for the OTU level. Of 1687 OTUs, 677 were found in both cultivation methods, 983 were unique to droplets, and 27 were unique to plates. The area of the Venn elements corresponds to the total number of OTUs found for the cultivation techniques.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Boxplots depict the distribution of relative abundances for phyla in droplet and plate cultivation samples. Relative abundances of operational taxonomic units were agglomerated on the phylum level. Displayed are 13 assigned phyla covering 100% of all sequences. Means of relative abundances were compared by Wilcoxon rank-sum test for each phylum (α = 0.05), applying Holm–Bonferroni correction for multiple comparisons. ** Significant with p<0.01, * significant with p<0.05. As effect size, Cohen's d was computed and plotted as bars to indicate which differences are practically relevant. The direction and the color of the bars depend on the sample type in which the larger mean was found (blue – larger mean in plate samples, green – larger mean in droplet samples).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Boxplots depict the distribution of relative abundances for phyla in droplet and plate cultivation samples. Relative abundances of operational taxonomic units were agglomerated on the class level. Displayed are the 10 most abundant classes of in total 41 assigned classes covering 99.42% of all sequences. Means of relative abundances were compared by Wilcoxon rank-sum test for each class (α = 0.05), applying Holm–Bonferroni correction for multiple comparisons. ** Significant with p<0.01, * significant with p<0.05. As effect size, Cohen's d was computed and plotted as bars to indicate which differences are practically relevant. The direction and the color of the bars depend on the sample type in which the larger mean was found (blue – larger mean in plate samples, green – larger mean in droplet samples).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Boxplots depict the distribution of relative abundances for phyla in droplet and plate cultivation samples. Relative abundances of operational taxonomic units were agglomerated on the order level. Displayed are the 20 most abundant orders of in total 72 assigned orders covering 99.03% of all sequences. Means of relative abundances were compared by Wilcoxon rank-sum test for each order (α = 0.05), applying Holm–Bonferroni correction for multiple comparisons. ** Significant with p<0.01, * significant with p<0.05. As effect size, Cohen's d was computed and plotted as bars to indicate which differences are practically relevant. The direction and the color of the bars depend on the sample type in which the larger mean was found (blue – larger mean in plate samples, green – larger mean in droplet samples).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Boxplots depict the distribution of relative abundances for phyla in droplet and plate cultivation samples. Relative abundances of operational taxonomic units were agglomerated on the family level. Displayed are the 30 most abundant classes of in total 144 assigned families covering 96.37% of all sequences. Means of relative abundances were compared by Wilcoxon rank-sum test for each family (α = 0.05), applying Holm–Bonferroni correction for multiple comparisons. ** Significant with p<0.01, * significant with p<0.05. As effect size, Cohen's d was computed and plotted as bars to indicate which differences are practically relevant. The direction and the color of the bars depend on the sample type in which the larger mean was found (blue – larger mean in plate samples, green – larger mean in droplet samples).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Boxplots depict the distribution of relative abundances for phyla in droplet and plate cultivation samples. Relative abundances of operational taxonomic units were agglomerated on the genus level. Displayed are the 30 most abundant genera of in total 240 assigned genera covering 89.54% of all sequences. Means of relative abundances were compared by Wilcoxon rank-sum test for each genus (α = 0.05), applying Holm–Bonferroni correction for multiple comparisons. ** Significant with p<0.01, * significant with p<0.05. As effect size, Cohen's d was computed and plotted as bars to indicate which differences are practically relevant. The direction and the color of the bars depend on the sample type in which the larger mean was found (blue – larger mean in plate samples, green – larger mean in droplet samples).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Overview of taxa that were exclusively found in droplet samples and/or plate samples with taxonomic classification on the phylum level. (B) Overview of the exclusive taxa that were classified as uncultured found in droplet and/or plate samples. Taxa that were unclassified on the genus level and likely belong to the uncultured category were not considered for this comparison.
+
+### Microbial colonies can be isolated from microfluidic droplets
 
 To facilitate the isolation of bacterial cells from droplets, we designed an experimental setup in which droplets were deposited on a nutrient containing matrix after 1 month incubation in order to enable microcultures to grow into macroscopically visible colonies (Figure 4). Droplets were injected into a capillary at 10–50 droplets/s and guided to an agar plate, mounted on a positioning system. While droplets and oil phase continuously emanated from the capillary tip, the plate was moved following a spiral pattern, leading to the distribution of droplets along the spiral streak over the agar plate. Both the volatile oil phase surrounding the droplets and, subsequently, also the aqueous droplets evaporated fast, leaving behind the cells that were previously confined in droplets now spatially separated on the agar surface.
 
@@ -73,19 +154,59 @@ We picked 224 colonies after incubation of the plates, trying to keep the select
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig5-v2.jpg)
 
-**Figure 5.:** The distribution of abundance on the genus rank is displayed. Colors of the bars indicate the affiliation to phyla. Each bar is labeled with its exact relative abundance.Figure 5—source code 1.Figure 5.Figure 5—source data 1.Figure 5.
+**Figure 5.:** The distribution of abundance on the genus rank is displayed. Colors of the bars indicate the affiliation to phyla. Each bar is labeled with its exact relative abundance.
 
-## Screening for antibiotic producers in droplets
+### Screening for antibiotic producers in droplets
 
 We combined the cultivation of complex cell mixtures with an immediate screening for antibiotic compounds (Mahler et al., 2018) in order to achieve the selective isolation of putative producers of antimicrobial substances. For this purpose, we picoinjected cells of a reporter strain into all droplets of a population after 1 month incubation (Video 1). Based on the fluorescent signal, droplets with inhibited reporter cells (low red fluorescence signals) were selected in a droplet sorting operation on-chip (Video 2) and subsequently distributed on agar plates to recover soil bacteria-producing antimicrobial compounds.
 
+![Video 1.](https://cdn.elifesciences.org/articles/64774/elife-64774-video1.mp4.jpg)
+
+**Video 1.:** Images were taken with 800 frames/s at 5x magnification in bright-field illumination. Images are played with 7 frames/s. In the field of view is the channel that is guiding the reinjected droplets through the electrical field applied between the black electrodes (only tips are visible). The surfactant-stabilized water oil interphase is destabilized by the electrical field resulting in fusion of the aqueous phase coming from the top channel and containing reporter cells and the aqueous droplet. When droplets leave the electrical field, the interphase is stable again.
+
+![Video 2.](https://cdn.elifesciences.org/articles/64774/elife-64774-video2.mp4.jpg)
+
+**Video 2.:** Images were taken with 1577 frames/s at 5x magnification. Every third image is played with 10 frames/s, resulting in a 52-fold reduction in playback speed. In the field of view is the droplet sorting structure. Droplets with high red fluorescence intensity are pulled with an electrical field into the upper channel. Droplets with low red fluorescence intensity leave the chip through the lower outlet.
+
 In four different screening experiments, we explored combinations of two different reporter strains, Escherichia coli and Bacillus subtilis, as representatives of Gram-negative and Gram-positive bacteria, and two different media to cultivate the soil community in droplets (Supplementary file 1). We observed among the inhibiting isolates an enrichment of Actinobacteria and Alphaproteobacteria represented by various genera like Kocuria, Microbacterium, and Sphingomonas for the B. subtilis reporter (Figure 6). In contrast, the spectrum of genera recovered with the E. coli reporter was broader. The most abundant genus for both reporters was, however, Bacillus sp. . Interestingly, two isolates falling in the Cytophagaceae family but being only distantly related to known type strains (<95%) were obtained. They also did not cluster closely to the previously uncultivated Cytophagaceae isolate gained in the untargeted isolation (Figure 6—figure supplement 1), indicating that those isolates represent an additional new strain. As before, these isolates could not be maintained on agar plates for long.
 
-## Identifying the chemical arsenal of a potent antibiotics producer strain
+![Figure 6.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig6-v2.jpg)
+
+**Figure 6.:** The classification is depicted on the level of order and based on the Sanger sequences of the nearly complete 16S rRNA gene. The bars depict the relative abundance of all detected orders for the isolates of all four screening rounds combined and for each screening round separately.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The tree shows the phylogenetic placement of isolates among type strains belonging to the Cytophagaceae. Bootstrap values (100 resamplings) are indicated at nodes. Isolate names starting with D were obtained in the antimicrobials-targeted isolation, while S-11-23-2/1/1 was isolated in the untargeted approach.
+
+### Identifying the chemical arsenal of a potent antibiotics producer strain
 
 For detailed natural product discovery, we chose one of the droplet isolates that showed strong inhibition of various test strains like Mycobacterium vaccae or Pseudomonas aeruginosa during the primary validation of our screening hits. This isolate (D121-0906-b3-2-1) is closely related to Bacillus tequilensis (99.79%) and was isolated using B. subtilis as reporter strain in droplets. When challenged with M. vaccae, isolate D121-0906-b3-2-1 showed a peculiar increase in growth rate (Figure 7—figure supplement 1). Additionally, the isolates’ crude culture supernatant exhibited a strong antifungal activity against test strains like Candida albicans, Sporobolomyces salmonicolor, and Penicillium notatum (Supplementary file 1—table 2). Other isolates with less remarkable initial inhibition properties are still under detailed investigation.
 
 For increasing the production titer of the natural products, we cultured Bacillus sp. D121-0906-b3-2-1 under several conditions including varying media composition and duration of cultivation (Figure 7A, Figure 7—figure supplement 2). In addition, extraction took place with either ethyl acetate or the absorber resin XAD-2. The extracts were analyzed by liquid chromatography coupled to high resolution mass spectrometry (LC-HRMS) and five compounds were detected. For compounds 1 and 2 with m/z 579 [M–H]– and m/z 741 [M–H]–, respectively, we deduced the molecular formulas of C34H47N2O6 (1) and C40H57 N2O11 (2). The predicted molecular formulas as well as a characteristic UV absorption spectrum indicated that 1 and 2 are identical with bacillaene A and B, known strong antibacterial polyketides active against a variety of strains (Patel et al., 1995; Müller et al., 2014; Figure 7B, Figure 7—figure supplement 4A, B). Tandem mass spectrometry (MS/MS) fragmentation analysis confirmed this assumption. Cleavages of the glucopyranose unit in 2 as well as of the peptide bond (mass shift m/z –163 Da) in 1–2 were observed (Figure 7—figure supplement 4E, F). Furthermore, we detected three highly lipophilic metabolites (3–5) in the extracts of Bacillus sp. D121-0906-b3-2-1 with molecular masses of m/z 1006 [M–H]– (3), m/z 1020 [M–H]– (4), and m/z 1034 [M–H]– (5), respectively. High-resolution MS data, as well as characteristic amino acid fragments obtained from HRESI-MS/MS analysis, revealed these cryptic molecules to be surfactins (3–5), cytotoxic lipopeptides (Figure 7C, Figure 7—figure supplement 5D–F; Kakinuma et al., 1969; Bonmatin et al., 2003). The retention times of a surfactin standard (Merck) were identical with 3 (Figure 7—figure supplement 5A). To exclude a linearized form of the surfactins, called gageostatins (Tareq et al., 2014), we added base (0.4 M NaOH) to the extracts to cleave the ester bond of 3. A mass shift of +18 Da was observed, confirming a cyclized form of the lipopeptides (Figure 7—figure supplement 5C). Surfactins and surfactin-like natural products are known to exert a broad spectrum of antimicrobial effects against Gram-positive and Gram-negative bacteria as well as fungi (Vitullo et al., 2012; Liu et al., 2012; Luo et al., 2015; Jiang et al., 2016b) and may thus explain the strong antimicrobial effects of the Bacillus sp. extracts towards the test strain panel. We fractionated the crude extract with preparative high performance liquid chromatography (HPLC) and submitted the bacillaene- and surfactin-containing fractions to an agar diffusion assay against B. subtilis (Figure 7—figure supplement 3). The bacillaene fraction inhibited growth of B. subtilis most effectively while the surfactin fractions showed weaker antibacterial activities.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig7-v2.jpg)
+
+**Figure 7.:** (A) Metabolic profiles of Bacillus sp. extracts under different growth and extraction conditions detected by liquid chromatography coupled to high resolution mass spectrometry (LC-HRMS) (displayed as extracted ion chromatograms in negative mode). (B) Bacillaene A (1) and B (2) and (C) surfactin-like compounds (3–5) detected in extracts of Bacillus sp. isolate D121-0906-b3-2-1. Tandem mass spectromety (MS/MS) spectra for 1–5 are provided in Figure 7—figure supplements 4 and 5.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Test strains suspended in the agar are indicated in panel captions. Label denotes the medium, in which D121-0906-b3-2-1 was cultivated and the duration of incubation at sampling time point. (A, B) Medium A – MGY; medium B – MGY + Gluc; NC, negative control – MGY only; PC, positive control – amphotericin B antibiotic. (C) Medium A – MGY; medium B – 0.5 SM + Gluc; NC – 0.5S M; PC – chlortetracycline. (D) Medium A – 0.5 SM; NC, negative control – 0.5 SM; PC, positive control – ciprofloxacin antibiotic. The plate was incubated for 18 hr at imaging and is displayed as an example for the rapid growth of the Bacillus isolate when in contact with M. vaccae. For determining the antimicrobial activity of the isolate against M. vaccae further bioactivity plates were prepared with filtered (0.2 µm pore size) culture supernatant.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Relative intensity according to highest peak in spectrum. Photodiode array signal (PDA) 210–600 nm. Surfactin complex including compounds 3–5. TIC: total ion chromatogram.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Fraction D contains bacillaenes, fractions G–H contain surfactins. Cip: ciprofloxacin; MeOH: methanol; A–H: fractions collected from a crude extract from Bacillus sp.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Physicochemical properties of bacillaene A (1) and B (2): (1) electrospray ionization ESI(–) m/z 579 [M–H]–, high resolution electrospray ionization HRESI(–)-MS m/z 579.3454 (calcd. for C34H47 N2O6 579.3434); (2) ESI(–) m/z 741 [M–H]–, HRESI(–)-MS m/z 741.3990 (calcd. for C40H57 N2O11 741.3962). (A) Extracted ion chromatograms in negative mode of 1 and 2. (B) UV absorption spectrum of 1. (C) Tandem mass spectrometry (MS/MS) fragmentation pattern of m/z 579.3454 [M–H]– (1) in negative mode. (D) MS/MS fragmentation pattern of m/z 741.3987 [M–H]– (2) in negative mode. (E) MS/MS fragmentation pattern of m/z 581.3575 [M+H]+ (1) in positive mode. (F) MS/MS fragmentation pattern of m/z 743.4119 [M+H]+ (2) in positive mode.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/64774/elife-64774-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** Physicochemical properties of surfactins (3 , 4) and (5): (3) ESI(+) m/z 1008 [M+H]+, HRESI(+)-MS m/z 1008.6594 (calcd. for C51H90 N7O13 1008.6597), ESI(–) m/z 1006 [M–H]–, HRESI(–)-MS m/z 1006.6480 (calcd. for C51H88 N7O13 1006.6446); base-hydrolyzed (3) ESI(+) m/z 1026 [M+H]+, HRESI(+)-MS m/z 1026.6676 (calcd. for C51H92N7O14 1026.6697); (4) ESI(–) m/z 1020 [M–H]–, HRESI(–)-MS m/z 1020.6633 (calcd. for C52H90 N7O13 1020.6602); (5) ESI(–) m/z 1034 [M–H]–, HRESI(–)-MS m/z 1034.6791 (calcd. for C53H92 N7O13 1034.6759). (A) Comparison of surfactin standard (Merck) and compound 3 as extracted ion chromatograms. (B) MS/MS fragmentation pattern of m/z 1008.6594 [M+H]+ (3) in positive mode. (C) MS/MS fragmentation pattern of m/z 1026.6683 [M+H]+ (base-hydrolyzed 3) in positive mode. (D) MS/MS fragmentation pattern of m/z 1006.6480 [M–H]– (3) in negative mode. (E) MS/MS fragmentation pattern of m/z 1020.6638 [M–H]– (4) in negative mode. (F) MS/MS fragmentation pattern of m/z 1034.6791 [M–H]– (5) in negative mode.
 
 ## Discussion
 
@@ -109,11 +230,11 @@ Our cultivation and screening strategy has proven to be comprehensive and adapta
 
 ## Materials and methods
 
-## Microfluidic device fabrication and operation
+### Microfluidic device fabrication and operation
 
 Microfluidic chips were designed in AutoCAD 2015 (Autodesk Corp., USA). Designs were printed by JD phototools (Great Britain) as photomasks, which were used by Biotec TU Dresden Microstructure facility to fabricate SU8 molds. PDMS (Sylgard 184, Dow Corning, Germany) replicas were obtained from molds following standard protocols (Mazutis et al., 2013) and plasma bonded to microscope glass slides. For hydrophobization, Novec 1720 (3M, Germany) was introduced into the channels while heating the chips to 100°C. At the same temperature, channels designated for electrodes were filled with low-melting solder (Indalloy 19, Indium Corporation of America, USA). Fluids were actuated by high-precision syringe pumps (neMESYS, Cetoni GmbH, Germany) and pressure pumps (MFCS-EZ, Fluigent, France). PTFE tubing (1/16′′ OD, 0.25 mm ID and 0.5 mm ID, Chromophor Technologies, Germany) was used to realize fluidic connections. The device for droplet incubation was 3D-printed by i.materialise (Belgium) (the CAD design files are included in Supplementary files 2 and 3), and the complete setup was used as described before (Mahler et al., 2015) in a humidified chamber. Microfluidic operations were conducted on an inverted microscope (Axio Observer Z1, Zeiss, Germany) and imaged during flow with a Pike F-032B ASG16 camera (Allied Vision Technologies, Germany). For images of stationary droplets in observation chambers, a pco.edge 5.5 m camera (PCO AG, Germany) was employed. Chips containing observation chambers were also manufactured from PDMS bonded to glass and comprised a wide channel (2 mm wall-to-wall, 150 µm height), termed chamber. Droplets with oil were introduced into the chamber until all air was replaced and entrances to the chip were closed. After 3–5 min, droplets stopped moving and spread into a monolayer ready for imaging by transmitted light microscopy. Droplets were constantly surrounded by oil, thereby maintaining their integrity.
 
-## Soil sampling and extraction
+### Soil sampling and extraction
 
 Soil was collected from a dry grassland site at the nature reserve ‘Schwellenburg’ (51° 1 ‘519174’ ‘latitude', 10° 57 ‘146013’ ‘longitude', 263 m altitude) close to Erfurt (Germany) in May 2016. Soil was collected from a depth of 10 cm after the overlaying turf was removed. It was transported in a sealed plastic bag for immediate further processing in the lab.
 
@@ -121,64 +242,64 @@ For the CESE, the soil was mixed with aq. dest. in a ratio of 1:1 (w/w). At room
 
 To extract the bacterial soil community, 20 g of the freshly sampled soil spread onto a flat glass tray were dried for 24 hr at 37 °C. The dried soil was ground in a mortar, while stones and macroscopic plant material were removed. Ten grams of the milled soil and 25 glass beads (diameter 2–6 mm) were suspended in 90 mL CESE and shaken at 200 rpm for 2 hr at 28 °C. Subsequently, the suspension was sonicated twice at 50 W for 1 min. One half of the suspension was vacuum-filtered through a cell strainer (40 µm pore size). The other half was left for particle sedimentation at room temperature. After 1 hr, the supernatant was decanted. Aliquots of both cell suspensions were stored at –20 °C. Upon usage, the suspension rich in soil particles (decanted) was mixed with the suspension containing fewer particles (filtered) in a ratio of 2:35 (v/v).
 
-## Microorganisms and culture conditions
+### Microorganisms and culture conditions
 
 The soil community was cultivated in medium containing 50% (v/v) CESE, 6% (v/v) supernatant of soy mannitol medium and 44% (v/v) deionized water (Supplementary file 1—table 3). For agar plates, 2% (w/v) agar was autoclaved with appropriate amounts of water and soy mannitol supernatant at 121 °C for 20 min. After cooling to 56 °C, CESE was added and plates were poured. For cultivation on plates, the soil community was diluted with 0.9% (w/v) NaCl solution in a serial dilution until 10−4; 50 µL of the respective dilution were spread on agar plates with Drigalski spatulas. For droplet generation, the soil community was suspended in medium without dilution. The positive control comprised a spore mixture of known Streptomyces strains (Supplementary file 1) in equal concentrations (8 × 105 spores/mL) in the medium described above. All samples containing the soil community and respective controls were incubated at 20 °C.
 
 For the inhibition assays in droplets, the reporter strains E. coli (E. coli JW1982 [Baba et al., 2006] with plasmid pMPAG6 – PT5/lacO:mCherry) and B. subtilis (B. subtilis 168 amyE::hy-mKATE:CM [van Gestel et al., 2014]) were used. They were cultivated in 1× terrific broth (Supplementary file 1—table 4) containing 100 µg/mL ampicillin (E. coli) or 5 µg/mL chloramphenicol (B. subtilis) at 37 °C, 200 rpm for 16 hr. New cultures were inoculated to a start OD600 of 0.1 and cultivated without selection markers until mid-exponential phase. Before picoinjection of reporter cells into droplets, cells were pelleted and resuspended in 2.5× terrific broth + 1% (w/v) glucose (Supplementary file 1—table 4) to a final OD600 of 4. In the case of E. coli, 0.5 mM isopropyl β- d-1-thiogalactopyranoside (IPTG) was added.
 
-## Comparison of cultivation in droplets and on agar plates
+### Comparison of cultivation in droplets and on agar plates
 
 Microfluidic droplets were generated at a flow focusing unit using Novec HFE7500 (3M, Germany) with 0.5% Pico-Surf 1 (Dolomite, UK) as continuous phase. Droplets were generated at 1500 Hz with a volume of 200 pL. One droplet population, which was incubated in one droplet incubator, comprised approximately 9 × 106 droplets. Droplet populations were generated with eight replicates and compared to eight plate sets. One plate set consisted of eight plates with 1:100 dilution of the soil community and seven plates with 1:1000 dilution. The conducted replicates are regarded as biological since independent cultivation experiments were started from one common soil cell extract. The chosen sample size represents a compromise between maximum available droplet incubation units and minimum required replicate number for maximum statistical power.
 
 For each cultivation technique, three positive controls were prepared and incubated along with the soil community samples. After an incubation time of 28 days, microcultures of one droplet population were pooled by fusing the emulsion with 200 µL/mL 1H,1H,2H,2H-perfluoro-1-octanol (Sigma, USA). The upper aqueous phase including the cells was transferred into a new vessel, and the cells were pelleted. From plates, colonies were pooled by suspending the cells in 2 mL 0.9% NaCl solution per plate with a cell scraper.
 
-## DNA extraction and purification
+### DNA extraction and purification
 
 For DNA extraction, 150 mg of sterilized glass beads (0.1–0.5 mm diameter) were added along with one volume of lysis buffer (100 mM Tris-HCl [pH 8], 20 mM Na-EDTA, 1.5 M NaCl, 1.2% [w/v] Triton X-100) to the cell pellets. In case of cell pellets derived from plates, the double amount of glass beads and three ceramic beads (0.5 cm diameter) were used. Cells were lysed in a FastPrep-24 (MP Biomedicals, Germany) two times for 2 min at a speed of 6 m/s. Afterwards, 0.3 volumes of 20% (w/v) SDS (Roth, Germany) were added, and precipitates removed by centrifugation. The cell lysate was extracted with one volume of phenol:chloroform:isoamylalcohol (25:24:1, Roth, Germany). To remove phenol traces, the samples were further extracted three times with one volume of chloroform:isoamylalcohol (24:1, Roth, Germany). Finally, the DNA was precipitated with ethanol. DNA samples were mixed with 0.1 volume 3 M sodium acetate, 0.001 volume of 20 mg/mL glycogen, and 2.5 volumes of 98% (v/v) cold ethanol. Samples were stored at −20 °C for at least 16 hr before they were centrifuged for 1 hr at 4 °C and 25,000 × g. The supernatant was removed and the remaining pellet washed with 1 mL 70% (v/v) ethanol. The samples were centrifuged and decanted again. Traces of ethanol were removed by drying the pellet for 5 min under vacuum. Afterwards, the DNA was rehydrated in NE Buffer (5 mM Tris/HCl, pH 8.5) and stored at 4 °C.
 
-## Further purification of metagenomic DNA via Q Sepharose columns
+### Further purification of metagenomic DNA via Q Sepharose columns
 
 To remove humic acids, the DNA was further purified with custom-made Q Sepharose columns as described by Mettel et al., 2010. For each DNA sample, 600 µL of Q Sepharose (Q Sepharose High Performance, GE Healthcare, USA) were aliquoted in 1.5 mL reaction vessels and washed four times in 1 mM potassium phosphate buffer (136 mg/L KH2PO4, 228 mg/L K2HPO4 × 3 H2O). After washing, the Q Sepharose pellet was resuspended in 300 µL of the same buffer and transferred into a centrifugal filter unit (Durapore-PVDF 0.45 µm, Merck Millipore Ltd, Germany). The self-made column was packed by centrifugation, and the buffer that passed through the filter membrane was discarded. In the next step, the DNA sample dissolved in NE Buffer was pipetted onto the column and centrifuged for 10 s at 3000 × g, thereby DNA and humic acids were binding to the Q Sepharose. The DNA was eluted by adding 80 µL of a 1.5 M NaCl solution, which was also pushed through the column by centrifugation at 3000 × g for 10 s. The elution step was repeated until the clearly visible brown band of humic acids reached the filter membrane, which usually happened after four repetitions. The DNA in the eluate was desalted by binding it to a silica membrane using the DNA Clean and Concentrator Kit (Zymo Research, Germany) following the manufacturer's protocol.
 
-## DNase I pretreatment of polymerases
+### DNase I pretreatment of polymerases
 
 The polymerases were pretreated with DNase I (New England Biolabs, Germany) according to Stach et al., 2001 in order to remove bacterial DNA traces that originated from the enzyme production processes. The necessary amount of polymerase stock was diluted in a ratio of 1:6 in PCR grade water. A 10× DNase I buffer and DNase I were added according to the manufacturer's protocol. The mixture was incubated 10 min at 37 °C and inactivated 10 min at 75 °C. After cooling down, the mixture was added to the master mix, which was subsequently aliquoted for the following PCR.
 
-## 16S rDNA amplicon preparation and sequencing
+### 16S rDNA amplicon preparation and sequencing
 
 The V3–V4 region of the 16S rRNA gene was amplified using the primers 314F and 758R (Klindworth et al., 2013) with Illumina adapters at the 5′ end. A Q5 polymerase (New England Biolabs, Germany) was used in a 50 µL reaction after pretreatment with DNase I. PCR was performed with the following settings: pre-denaturation at 98 °C for 3 min, 30 cycles of denaturation at 98 °C for 30 s, annealing at 55 °C for 40 s, elongation at 72 °C for 1 min, and final elongation at 72 °C for 5 min. DNA libraries were constructed from PCR products following the standard Illumina protocol. Amplicons were sequenced on an Illumina MiSeq system with 200 bp paired-end by IIT Biotech (Germany).
 
-## Data analysis of sequence data
+### Data analysis of sequence data
 
 Forward and reverse reads of the amplicon data were merged by FLASH (Magoc and Salzberg, 2011). Primers were removed with cutadapt (Martin, 2011) allowing 20% error. For quality trimming, sickle (Joshi and Fass, 2017) was used with a minimum quality threshold of 20. Reads were further processed following the MiSeq SOP (https://www.mothur.org/wiki/MiSeq_SOP) in Mothur (Schloss et al., 2009). To detect chimera, the implemented uchime algorithm was used in combination with the SILVA reference database (release 128) (Glöckner et al., 2017), which was also used to taxonomically classify the reads. For clustering into OTUs, the vsearch method ‘abundance-based greedy clustering’ and a distance cutoff of 0.03 were employed. Read numbers across all samples were subsampled in Mothur to 88,435 sequences to obtain better comparability. No sample outliers were detected or removed. The OTU table was further processed and visualized in R and with the R package phyloseq (McMurdie and Holmes, 2013). OTUs were excluded when they were not represented more than three times in at least 10% of the samples. Furthermore, a median normalization within samples was applied to the read counts. Indices for alpha diversity are shown in supplemental information for subsampled data.
 
-## Cell isolation from microfluidic droplets
+### Cell isolation from microfluidic droplets
 
 Droplets were generated and incubated with the soil community as described above. After 1 month, droplets were reinjected from the incubator into a microfluidic chip and spaced to a frequency of 10–50 Hz. All droplets were directed to a glass capillary (TSH, 100 µm ID, 360 µm OD, Molex, USA), which led to a positioning system (neMAXYS 200, cetoni GmbH, Germany). The tip of the capillary was attached to a z-steerable arm of the system, while an agar plate was positioned below on an x–y-steerable platform. Thereby, droplets were continuously deposited in a spiral pattern on an agar plate over which the outlet of the capillary was moved at 1 mm/s. Plates were incubated for 15 days at 20 °C, after which colonies were picked and streaked onto new agar plates. By restreaking multiple times, pure isolates were obtained of which DNA was extracted using the QIAamp DNA Mini Kit (QIAGEN, Germany).
 
-## 16S rDNA amplification and analysis for isolate characterization
+### 16S rDNA amplification and analysis for isolate characterization
 
 For isolate characterization, the whole 16S rRNA gene was amplified in 50 µL reaction using the primers 27F (AGA GTT TGA TCM TGG CTC AG) and 1492R (CGG TTA CCT TGT TAC GAC TT) and the PrimeSTAR GXL polymerase (Takara Bio, USA). Before amplification, the polymerase was treated with DNase I. The PCR was carried out as follows: pre-denaturation at 98 °C for 30 s, 35 cycles of denaturation at 98 °C for 20 s, annealing at 55 °C for 40 s, elongation at 68 °C for 30 s, and final elongation at 68 °C for 3 min. The Sanger sequencing was performed bidirectionally. Consensus 16S rRNA gene sequences of axenic cultures were assembled from forward and reverse reads with SeqTrace (Stucky, 2012) (v0.9.0) applying a Needleman–Wunsch alignment algorithm and a quality cutoff for base calls of 30. After automatic trimming until 20 consecutive bases were correctly called, consensus sequences were examined and curated manually. Consensus sequences of the nearly full-length 16S rRNA gene were aligned with SILVA Incremental Aligner (SINA) (Pruesse et al., 2012) (v1.2.11). Phylogenetic relations were deduced by reconstructing phylogenetic trees with ARB (Ludwig et al., 2004) (v6.0.6) using the ‘All species living tree project’ database (Yarza et al., 2008) (release LTPs128, February 2017). Sequences were added into the LTP-type strain reference tree using ARB parsimony (Quick add marked), and alignment was corrected manually. Phylogenetic tree calculation with all family members was based on a maximum-likelihood algorithm using RAxML (Stamatakis, 2006) (v7.04) with GTR-GAMMA and rapid bootstrap analysis, a maximum-parsimony method using DNAPARS (Felsenstein, 2005) (v3.6), and neighbor-joining with Jukes–Cantor correction.
 
-## Screening for antimicrobial compounds in droplets
+### Screening for antimicrobial compounds in droplets
 
 Droplets inoculated with the soil community and incubated for 28 days were reinjected into a microfluidic chip at 200 Hz. The chip contained a picoinjection structure similar to the structures described by Abate et al., 2010. By applying an alternating electrical field through a function generator (AFG-2005, GW Instek, China) and a high-voltage amplifier (model 2210-CE, Trek, USA) with an amplitude of 20 Vpp, a frequency of 20 kHz, and a duty cycle of 50%, a cell suspension containing the reporter strain was picoinjected into each droplet. Droplets were subsequently guided into a new incubator, and soil organisms and reporter cells were co-incubated for 20 hr at 28 °C inside droplets by applying dynamic droplet incubation. Finally, droplets were reinjected into a droplet sorting structure (Baret et al., 2009), where fluorescent proteins of the reporter strains were excited with a laser (488 nm diode laser, LASOS, Germany) and emitted light detected with a photomultiplier module (H10721-20, Hamamatsu Photonics UK Limited, UK). Droplets exceeding a predefined intensity threshold were sorted via dielectrophoresis by a triggered burst signal of 430 V, 30 cycles, 6 kHz, 50% duty cycle. Software for data logging was custom-made and written in LabVIEW (v2015). Sorted droplets with high fluorescence intensity were discarded while the remaining droplets were collected and distributed on agar plates. Plates were incubated, and colonies were picked and purified.
 
 For primary validation of hits, selected isolates were cultivated in 50 mL of various media (Supplementary file 1—table 5) at 28 °C, 160 rpm, for 3–10 days. Crude culture supernatants were obtained by centrifugation at 20,000 × g for 15 min at 20 °C and stored at −20 °C until testing. Antimicrobial activity was characterized in agar diffusion tests against a primary panel of test strains, which included different species of Gram-positive (B. subtilis ATCC6633, Staphylococcus aureus SG511, M. vaccae IMET10670) and Gram-negative bacteria (E. coli SG458, P. aeruginosa SG137) as well as fungal strains S. salmonicolor SBUG549, C. albicans ST50163, and P. notatum JP36. The antibiotics ciprofloxacin 5 µg/mL and amphothericin B 10 µg/mL were used as positive reference for bacterial and fungal test strains, respectively. For bacterial test strains, 34 mL standard 1 nutrient agar (Merck 1.07881) were inoculated with 100 µL of bacterial suspension adjusted to an optical density of McFarland standard 0.5 (for M. vaccae IMET10670 McFarland standard 1 [Biomerieux 70900], Inoculum 200 µL). For agar diffusion tests with fungal strains JP36 and SBUG549 malt extract agar (Oxoid CM 59) and for ST50163 Yeast-Morphology-Agar (Difco 239320) were inoculated with cell suspensions, resulting in a final concentration of 5 × 106 cells/mL. The inoculated agar media were immediately poured into leveled test plates, and after solidification 12 holes were punched. Then, 50 µL of crude supernatants, reference antibiotics, or sterile culture media were added per hole. After incubation for 18 hr at 37°C (bacterial tests) and 30°C (fungal tests), the diameter of growth inhibition zones surrounding the holes was measured manually (in mm) (Supplementary file 1—table 2).
 
-## Secondary metabolite production
+### Secondary metabolite production
 
 For the identification of natural products, Bacillus sp. strain D121-0906-b3-2-1 was inoculated in diverse media (MGY+M9 [Dose et al., 2018] and soy mannitol medium + CESE [SM]) at OD600 0.1 and grown at 160 rpm, 28 °C for 3–8 days. Extraction took place with 1:1 volume of ethyl acetate overnight or with addition of XAD-2 to the culture broth for 30 min followed by elution twice with 100% methanol for 30 min. The organic phase was dried with anhydrous sodium sulfate and concentrated under reduced pressure. Residues were dissolved in a small volume of methanol and measured at LC/MS. Fragmentation patterns were monitored via tandem mass spectrometry (MS/MS).
 
-## LC/MS
+#### LC/MS
 
 Exactive Orbitrap High Performance Benchtop LC-MS (Thermo Fisher Scientific) with an electron spray ion source and an Accela HPLC System, C18 column (Betasil C18, 150 × 2.1 mm, Thermo Fisher Scientific), solvents: acetonitrile and distilled water (both supplemented with 0.1% formic acid), flow rate: 0.2 mL/min; program: hold 1 min at 5% acetonitrile, 1–16 min 5–99% acetonitrile, hold 15 min 99% acetonitrile, 19–20 min 99% to 5% acetonitrile, hold 11 min at 5% acetonitrile. The metabolic profiles of the acquired fractions were monitored with HR-ESI-LC/MS.
 
-## MS/MS
+#### MS/MS
 
 QExactive Orbitrap High Performance Benchtop LC-MS (Thermo Fisher Scientific) with an electrospray ion source and an Accela HPLC System, C18 column (Accucore C18 2.6 µm, 100 × 2.1 mm, Thermo Fisher Scientific), solvents: acetonitrile and distilled water (both supplemented with 0.1% formic acid), flow rate: 0.2 mL/min; gradient: hold 1 min at 5% acetonitrile, 1–10 min 5–98% acetonitrile, hold 12 min 98% acetonitrile, 22–22.1 min 98% to 5% acetonitrile, hold 7 min at 5% acetonitrile.
 
-## Antimicrobial testing
+### Antimicrobial testing
 
 A 400 mL PDB culture of Bacillus sp. strain D121-0906-b3-2-1 was grown at 30 °C and 120 rpm for 4 days. Absorber resin XAD-2 was added to the culture for 1 hr and, subsequently, extracted twice with 100% methanol for 1 hr. The organic phase was concentrated under reduced pressure. The crude extract was fractionated by preparative HPLC (Nucleodur C18 HTec, 5 µm VP 250 × 10 mm; flow rate: 5 mL/min; solvents: water supplemented with 0.01% trifluoroacetic acid and acetonitrile; gradient: 0–5 min 25% acetonitrile, 5–25 min 25–100% acetonitrile, 25–30 min 100% acetonitrile). Fractions were collected every 2–3 min, concentrated under reduced pressure, and the remains dissolved in methanol. The agar diffusion assays against B. subtilis 6633 B1 were conducted as previously described (He et al., 2004; Ziehl et al., 2005).

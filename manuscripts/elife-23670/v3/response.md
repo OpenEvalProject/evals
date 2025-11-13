@@ -106,9 +106,7 @@ In the present study, apart from the website mentioned, we have cited in the Met
 
 RNA quality was assayed by Bioanalyzer and even though each sample came from asingle blastocyst, RIN score was acceptable, with values between 6.1-8.2. According with a recent report (Sigurgeirsson et al., 2014), “there does not seem to be any justification to set a threshold at any specific RIN but rather it is important to be aware of the effects of low RIN and all samples should preferably be in close range in terms of quality.” In fact, this report showed the biggest effect in differential expression by comparing samples with RIN 10 vs RIN8 (affecting 36% of all the expressed genes), while only 1% genes showed as differentially expressed when comparison was between samples with RIN 8 vs RIN6.
 
-In addition, quality control plots were obtained from SeqMonk, which indicated similar output inall samples and low presence of ribosomal RNA (Author response image 1). Although high proportion of ribosomal RNA (rRNA) compared to mRNA represents a typical limitation for RNA-seq studies, the use in different species of Ovation RNA-Seqamplification system(Nugen), which was used for this experiment, have resulted in the low percentages of rRNA fragments (Tariq et al. NucleicAcids Res. 2011; Chitwood et al. BMC Genomics 2013).10.7554/eLife.23670.023Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.23670.023
-
-DOI: http://dx.doi.org/10.7554/eLife.23670.023
+In addition, quality control plots were obtained from SeqMonk, which indicated similar output inall samples and low presence of ribosomal RNA (Author response image 1). Although high proportion of ribosomal RNA (rRNA) compared to mRNA represents a typical limitation for RNA-seq studies, the use in different species of Ovation RNA-Seqamplification system(Nugen), which was used for this experiment, have resulted in the low percentages of rRNA fragments (Tariq et al. NucleicAcids Res. 2011; Chitwood et al. BMC Genomics 2013).10.7554/eLife.23670.023Author response image 1.
 
 (Where C means C-IVF embryos, N means Natur-IVF embryos and IV means in vivo embryos).
 

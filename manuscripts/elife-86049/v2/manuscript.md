@@ -20,9 +20,9 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 Department of Life Sciences, Imperial College London London United Kingdom
-2. https://ror.org/01swzsf04 Department of Microbiology and Molecular Medicine, Faculty of Medicine, University of Geneva Geneva Switzerland
-3. https://ror.org/01aj84f44 Interdisciplinary Nanoscience Center (iNANO) and Department of Chemistry, Aarhus University Aarhus Denmark
+1. Department of Life Sciences, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+2. Department of Microbiology and Molecular Medicine, Faculty of Medicine, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
+3. Interdisciplinary Nanoscience Center (iNANO) and Department of Chemistry, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
 
 † Corresponding author
 
@@ -44,17 +44,324 @@ Here, we describe combined X-ray crystallography, nuclear magnetic resonance (NM
 
 ## Results
 
-## The structure of full-length TgGAC
+### The structure of full-length TgGAC
 
 Well-diffracting and reproducible crystals were obtained at pH 5 for native full-length TgGAC (residues 1–2639; Kumar et al., 2022). Selenomethionine-substituted crystals were also obtained that produced sufficient anomalous signal for phase determination. The structure was solved by multiple-wavelength anomalous dispersion (MAD) to 2.7 Å resolution with an Rfree of 26% (Table 1). The electron density for residues 7–2504 was of sufficient quality to facilitate modelling for these residues (Figure 1 and Figure 1—figure supplement 1A). The remaining electron density showed evidence of peptide backbone but could not be confidently modelled and refined, indicating a degree of conformational flexibility for residues 2505–2639.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram of the apicomplexan glideosome. Key molecular components and structures are indicated, including subpellicular microtubules (SPMTs), inner membrane complex (IMC), preconoidal rings (PCRs), apical polar ring (APR), Formin-1 (FRM1), filamentous actin (F-actin), glideosome-associated protein 45 (GAP45), myosin motors (MyoA and MyoA), microneme protein 2 (MIC2), and glideosome-associated connector (GAC) protein. (B) Crystal structure of TgGAC7–2504 and representative nuclear magnetic resonance (NMR) model of TgGAC2505–2639 (inset). Helices shown in blue, β-strands in orange and loops in magenta. (C) Full-length TgGAC model comprising the combined crystal structure and NMR-validated AlphaFold2 structures in (B). Region I (R1: residues 1–1665) comprising the first 37 consecutive armadillo (ARM)/HEAT-like repeats (AHRs) is supercoiled into a three-layer pyramid structure (blue). AHR region II comprising 16 ARM repeats (RII: AHR38-53 residues 1670–2489) forms the superhelical arch (green). The C-terminal PH domain encompassing 2511–2639 of RIII is shown in orange (left). Second orientation related by a 180° rotation with even numbered AHRs shown in grey and odd number shown in blue for RI and green for RII. The R1–RII linker and AHR50 which has a helix-loop-helix insertion are shown in magenta. (D) The N/C interface between RI and RII showing key interacting AHRs. (E) Key residues specific interactions across the N/C interface. Cartoon representations coloured in light blue for RI and light green for RII.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative X-ray crystallographic electron density map showing the fit to residues 1203–1453 from the final model. (B) Assigned 1H-15N HSQC nuclear magnetic resonance (NMR) spectrum for TgGACPH (TgGAC2505–2639). (C) Superposition of the the 20 low energy structure of TgGACPH from the NMR ensemble. (D) Superposition of the Alphafold2 structure of TgGACPH with a representative NMR structure. (E) Structural TgGACPH coloured according to annotated secondary structure.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Representation generated using ENDscript (Robert and Gouet, 2014). α-helices labelled α1, α2…, and α156, other helix types η1, η2…, and β-strands by their sheets β1... β7 and turn with TT.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Comparisons of the structure of the C-terminal armadillo (ARM)-rich arch of TgGAC with human p120 catenin/E-cadherin (PDB 3L6X), β-catenin//E-cadherin from Caenorhabditis elegans (PDB 4R10), human plakoglobin/E-cadherin (PDB 3IFQ) and UNC45 myosin chaperone Caenorhabditis elegans (PDB 6QDL). Orientations are chosen by superposing over equivalent ARMs.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Sequence alignment of selected glideosome-associated connector (GAC) homologues with domain architecture and key interface, phosphatidic acid (PA) binding residues indicated.
+
+**Table 1.**
+ Data collection, phasing, and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">TgGAC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>P 21 21 21</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, and c (Å)</td>
+      <td>119.078, 123.605, and 221.508</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>α, β, and γ (°)</td>
+      <td>90, 90, and 90</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Peak</td>
+      <td>Edge</td>
+      <td>Remote</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9795</td>
+      <td>0.9796</td>
+      <td>0.9722</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>110.75–2.67 (2.72–2.67)</td>
+      <td>110.75–2.67 (2.72–2.67)</td>
+      <td>110.75–2.67 (2.72–2.67)</td>
+    </tr>
+    <tr>
+      <td>Total number of reflections</td>
+      <td>904,519</td>
+      <td>750,918</td>
+      <td>798,669</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>92,922</td>
+      <td>76,602</td>
+      <td>81,143</td>
+    </tr>
+    <tr>
+      <td>Rpim</td>
+      <td>0.036 (0.48)</td>
+      <td>0.032 (0.517)</td>
+      <td>0.031 (0.504)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>14.00 (0.8)</td>
+      <td>15.8 (0.73)</td>
+      <td>14.70 (0.71)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>100 (100)</td>
+      <td>100 (100)</td>
+      <td>100 (100)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>9.7 (9.7)</td>
+      <td>9.7 (10.7)</td>
+      <td>9.8 (10.3)</td>
+    </tr>
+    <tr>
+      <td>R-merge</td>
+      <td>0.108 (1.627)</td>
+      <td>0.096 (1.64)</td>
+      <td>0.093 (1.44)</td>
+    </tr>
+    <tr>
+      <td>R-meas</td>
+      <td>0.114 (1.698)</td>
+      <td>0.101 (1.72)</td>
+      <td>0.098 (1.528)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.99 (0.58)</td>
+      <td>0.999 (0.57)</td>
+      <td>0.99 (0.65)</td>
+    </tr>
+    <tr>
+      <td>Refinement statistics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. of reflections for refinement</td>
+      <td>92,300 (9069)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. of reflections for Rfree</td>
+      <td>4502 (409)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rwork</td>
+      <td>0.2095 (0.4036)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rfree</td>
+      <td>0.2683 (0.3990)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CC (work)</td>
+      <td>0.904 (0.508)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CC(free)</td>
+      <td>0.910 (0.440)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. of non-hydrogen atoms</td>
+      <td>18,793</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Macromolecules</td>
+      <td>18,679</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>114</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran favoured/allowed/outliers (%)</td>
+      <td>93.4/6.1/0.45</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Average B-factor</td>
+      <td>76.88</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Macromolecules</td>
+      <td>70.92</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>70.07</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rms bond lengths (Å)</td>
+      <td>0.009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rms bond angles (°)</td>
+      <td>1.47</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>17.98</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Values in parentheses are for highest-resolution shell.Data from a single crystal were used to solve the structure._
+
 To gain insight into the structure of this C-terminal region, we initiated a solution NMR spectroscopy approach with a construct encompassing residues 2505–2639 (TgGAC2505–2639). NMR spectra confirmed an independently folded domain, and over 80% of the backbone resonances could be confidently assigned (Figure 1—figure supplement 1B). Several amide peaks were broadened or absent from the spectra due to conformational exchange in some loop regions. Using available nuclear Overhauser effect spectroscopy (NOESY) and assignment spectra an automated NMR structure calculation was performed using CYANA (Güntert and Buchner, 2015) implemented within the ARTINA approach (Klukowski et al., 2022). The final NMR ensemble was calculated based on 3533 nuclear Overhauser effect and superposes with an average pairwise backbone root mean square deviation (RMSD) of 0.17 Å (Figure 1—figure supplement 1C). Structure statistics are shown in Table 2. We also independently generated a structural model for TgGAC2505–2639 using AlphaFold2 (Jumper et al., 2021; Varadi et al., 2022). Excellent agreement is observed between the experimental NMR structure and predicted from the AlphaFold2 structure with a backbone RMSD of 1.5 Å (Figure 1—figure supplement 1D). The precision of the NMR ensemble is lower between residues 2548 and 2560 due to missing resonance assignments within this region.
+
+**Table 2.**
+ Nuclear magnetic resonance (NMR) structure calculation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>20 lowest energy structures</th>
+      <th>TgGACPH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Assigned nuclear Overhauser effect (NOE) peaks</td>
+    </tr>
+    <tr>
+      <td>Intra-residue</td>
+      <td>1648</td>
+    </tr>
+    <tr>
+      <td>Medium range (|i – j|)≤4</td>
+      <td>640</td>
+    </tr>
+    <tr>
+      <td>Long range (|i – j|)&gt;4</td>
+      <td>1260</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>3548</td>
+    </tr>
+    <tr>
+      <td>Average CYANA target function value</td>
+      <td>12.4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>% in most favoured positions</td>
+      <td>79.7±0.7</td>
+    </tr>
+    <tr>
+      <td>% in allowed regions</td>
+      <td>20.2±0.4</td>
+    </tr>
+    <tr>
+      <td>% in generously allowed</td>
+      <td>0.2±0.1</td>
+    </tr>
+    <tr>
+      <td>% in disallowed regions</td>
+      <td>0.0±0.0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Atomic coordinates</td>
+    </tr>
+    <tr>
+      <td>Pairwise backbone RMSD secondary structures (Å)</td>
+      <td>0.17±0.01</td>
+    </tr>
+  </tbody>
+</table>
 
 The structure of TgGAC2505–2639 adopts a PH-like domain fold comprising a seven-stranded β-barrel with three α-helices. The presence of an extended N-terminal-helix is reminiscent of the PH domains from TgAPH and TgISP (Darvill et al., 2018; Tonkin et al., 2014) and appears to be a common feature among apicomplexan PH domains. To provide an illustrative model for full-length TgGAC, the validated structure of TgGAC2505–2639 (TgGACPH) was positioned in the available electron density map for N-terminus of this region and a linker modelled with MODELLER (Fiser et al., 2000).
 
 The crystal structure of TgGAC7–2504 comprises 169 helices (Figure 1 and Figure 1—figure supplement 2) arranged in 53 consecutive helical bundles that resemble ARM and HEAT-like repeats (AHRs; Kippert and Gerloff, 2009) linked to the mixed α/β C-terminal PH domain (Figure 1A). The architecture can be divided into three major regions (RI, RII, and RIII). RI (residues 1–1665) comprises 37 consecutive AHRs of approximately 40 residues long that are supercoiled into a three-layer pyramid structure (Figure 2A). The final ARM of region I (AHR 37) is extended with a six amino acid linker (L1) to start a second large AHR region (RII). RII comprises 16 canonical armadillo repeats (AHR38-53) and forms a superhelical arch that contacts the base of the RI pyramid helical regions. This interface encompasses a surface area of 1550 Å2, with AHR1 and AHR17-18 from RI forming one side while AHR48-50 from RII form the other (Figure 1C). The interface comprises several prominent electrostatic interactions (K2254-D11, E2436-H24, D2330-R629, D2346-K672, and D2197-R716; Figure 1D). AHR50 also has a large helix-loop-helix insertion (residues 2278–2337) between the second and third helices which creates a prominent protrusion that also stabilises the interface (Figure 1B and C). A basic AHR53 completes the region, (II) and an ordered linker from 2489 to 2510 (L2) extends to the adjacent C-terminal PH domain which comprises region III (Figure 1A and B). Residues forming these key features of the structure are highly conserved across GAC orthologues in Apicomplexa (Figure 1—figure supplement 3).
 
-## GAC adopts multiple extended conformations in solution
+![Figure 2.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig2-v2.jpg)
+
+**Figure 2.:** (A) Superimposition of the experimentally determined composite structure of TgGAC with those generated from AlphaFold2 for TgGAC and PfGAC, showing that the closed structure is conserved (left). N/C-terminal interface is highly similar but partially opened in the predicted structures of TgGAC and PfGAC. The PH domain is not displayed for clarity (right). (B) Conservation profile on a surface representation for TgGAC in three different orientation generated using ConSurf (Landau et al., 2005). Centre – full-length TgGAC in the same conformation as (A). TgGAC is split in two and each half rotated 90° to display the N/C interface. C-terminal regions RII and RIII (left) and N-terminal region RI (right). The surface is coloured according to its ConSurf conservation score, which varies from cyan which are highly variable to maroon for highly conserved. (C) Small-angle X-ray scattering (SAXS) data for GAC at pH 4.0–8.0. (D) Pair distance distribution functions (p(r)) for GAC SAXS data at pH 8.0, calculated from full-length closed TgGAC structure and calculated for the opened structure generated by molecular dynamic (MD) simulations. (E) Modelling of TgGAC solution structure at pH 8.0, calculated theoretical scattering curves for the full-length closed TgGAC structure (red), and calculated for the opened full-length TgGAC structure (blue), and a GASBOR ab initio model (orange). Structures are shown in colours corresponding to those of the scattering curves.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Size exclusion chromatography (SEC) profiles for 4 mg/ml TgGAC at pH 5 (25 mM sodium acetate) and pH 8 (25 mM Tris) in the presence and absence of 100 mM NaCl. (B) Guinier fit of TgGAC SAXS data using the first eight points. The molecular mass (MW) and radius of gyration (Rg) calculated from the Guinier fit are noted in the legend. (C) p(r) functions for TgGAC SAXS data (black), the full length closed TgGAC structure (red), and the molecular dynamics generated opened TgGAC structure (blue). The MW and Rg calculated from indirect Fourier transform (IFT) routine for SAXS data are noted in the legend. (D) Dimensionless Kratky plot for TgGAC SAXS data (black), the full length closed TgGAC structure (red), and the molecular dynamics generated opened TgGAC structure (blue).
+
+### GAC adopts multiple extended conformations in solution
 
 The closed conformation observed in the TgGAC crystal structure deviates significantly from the extended club-shaped structure that was proposed from previous SAXS analyses (Jacot et al., 2016), which raises concern that it could be an artefact of crystallisation. To shed light on this, we examined AlphaFold2 structures predicted for full-length TgGAC and PfGAC (Jumper et al., 2021; Varadi et al., 2022). Remarkably, the overall architecture of the predicted structures is very similar to that observed in the crystal structure of TgGAC (Figure 2A), as it is characterised by a series of tandem AHRs that are supercoiled into a large ring and is closed by specific interactions between N- and C-terminal AHRs. While the interface in the predicted TgGAC and PfGAC is partially separated (Figure 2A), the interacting regions overlap with those identified experimentally for TgGAC. The N-/C-terminal interface that characterises the closed structure is conserved at the amino acid sequence level (Figure 2B and Figure 1—figure supplement 3).
 
@@ -62,11 +369,27 @@ We next performed a SAXS analysis over a range of solution conditions to determi
 
 To explore the structure of TgGAC in solution at pH 8.0, the mass and size were determined both by a Guinier fit (Figure 2—figure supplement 1B) and using an indirect Fourier transform (IFT) routine for calculating the pair distance distribution function, p(r) (Figure 2C). Note that due to the oligomerisation/aggregation at low pH, the overall size of the complex is too large to be resolved by our instrument setup, as the slope of the intensity at low q is too large. When the overall size cannot be established, the mass and p(r) functions cannot be reliably calculated. At pH 8.0, masses of 264 kDa (Guiner) and 286 kDa (IFT) were obtained, which are close to the expected value of 286 kDa for a TgGAC monomer. The radius of gyration, Rg, values of, respectively, 105 Å and 122 Å were obtained, which are much larger than the Rg of 48 Å calculated from the crystal structure of TgGAC. This discrepancy in size is also clearly seen when comparing the p(r) function calculated from the SAXS data and the crystal structure, where the maximum intramolecular distances are 394 Å and 138 Å, respectively (Figure 2C). The theoretical scattering curve can be calculated from the coordinates of the full-length TgGAC structure and compared to the measured data (Figure 2D). It shows that at medium to large q, the structures are relatively similar, indicating that they contain similar structural components on shorter length scales, but at medium to low q, there is a large difference showing that the overall size and shape are very different. To explore this further, an ab initio model was build using the ATSAS program GASBOR (Svergun et al., 2001), which is highly extended and fits the low q part of the experimental data (Figure 2D). A dimensionless Kratky plot also illustrates that the structure in pH 8.0 solution is much more flexible than would be predicted from the crystal structure, but also it is not completely unfolded (Figure 2—figure supplement 1). To investigate the conformation changes occurring at pH 8.0 compared to the crystal structure in solution, a series of extended models were generated by steered-MD by applying a pulling force between the C- and N-terminal side of the interface, followed by the subsequent separation of the supercoiled pyramid. The model of these that fits best with the data is the most extended, which maintain the domain structures (Figure 2D). The curve fits the data well at high and low q; however, it is significantly above the data in the intermediate range. This means that further loss of domain structure is likely occurring. We did not attempt to pursue this further as it would be too speculative to predict which regions lose their secondary structure. Note that the p(r) function and the Kratky plot of the scattering for the extended structure are shown in Figure 2—figure supplement 1. Overall, the data and the models show that even though TgGAC is primarily a monomer in solution at pH 8.0, it forms a much more extended structure than seen in the crystal structure whilst maintaining key structural elements. Collectively, it can be concluded that a closed structure is likely to be an important stable functional state as the N-/C-interface is encoded within the sequence conservation. The extended, flexible structures observed in solution may play a role is a facilitating the assembly GAC with its binding partners.
 
-## Mapping the PA-binding interface for the C-terminal PH domain of GAC
+### Mapping the PA-binding interface for the C-terminal PH domain of GAC
 
 An extended patch of conserved basic residues is formed on one face of the PH domain in GAC which is reminiscent of the charge distribution on TgAPH (Darvill et al., 2018), suggesting a similar role in phospholipid binding. Using phospholipid strip assays, it had been previously demonstrated that both PfGAC and TgGAC bind specifically to PA (Jacot et al., 2016). Building upon our earlier work on the PA-binding protein TgAPH (Darvill et al., 2018), we employed CG-MDs simulations to characterise the binding of TgGAC to PA within a membrane environment. In all three simulation repeats, GAC bound to the membrane within 10 μs (Figure 3—figure supplement 1). Analysis of protein-lipid contacts highlighted two key membrane-bound regions, which localised to the PH domain and an adjacent basic protrusion from AHR53 (Figure 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig3-v2.jpg)
+
+**Figure 3.:** (A) Analysis of residues that interact with 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphate (POPA) as a percentage of contact during the simulation time. Analysis was performed for the final 5 µs of the simulation. (B) Key residues from mapped onto the TgGAC structure. (C) As in (B) in the contact of the membrane which is displayed as a transparent surface.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Binding series and initial orientations for each of three independently generated repeats. The initial configurations show GAC randomly orientated relative to the membrane patch, and the corresponding time series with snapshots at each microsecond are shown. Water is omitted for clarity. (B) Lipid contact analysis for the final microsecond of each trajectory. The heatmap and labelled residues show key regions in contact with POPA lipid. (C) Centre of mass distance over time for each simulation repeat for the PH domain (left hand panel) and the ARM51 region (right hand panel).
+
 NMR titrations were subsequently employed to quantify and comprehensively map the PA-binding site experimentally. To circumvent any issues with the missing NMR resonances for TgGACPH, we explored the equivalent region from the GAC homologue from Plasmodium falciparum, which has 53% sequence identity over the PH domain (PfGAC2471–2605) with an improved NMR spectra that enabled over 95% of the backbone residues to be assigned (Figure 4—figure supplement 1). First, 1D NMR binding assays were performed with PA-enriched large unilamellar vesicles (LUVs of ~100 nm diameter) to measure the affinity of the interaction. Titration with LUVs composed of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) and POPA (50:50% POPC:POPA) caused a significant loss in PfGACPH NMR signals (Figure 4A), indicating binding to the ‘NMR invisible’ LUVs, whilst almost no loss in signal was observed upon titration with LUVs composed solely of POPC. Binding curves were generated from integration of the NMR signals and (Figure 4B) apparent dissociation constants (Kdapp) calculated (Figure 4C). The Kdapp for PfGACPH binding LUVs composed of 50% POPA was calculated to be 60±3 μM.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig4-v2.jpg)
+
+**Figure 4.:** (A) 1D 1H-NMR spectrum (9.4–6.5 ppm) of PfGACPH upon titration with increasing concentrations of large unilamellar vesicles (LUVs) composed of POPC:POPA (50:50%) LUV molar ratios: blue, free PfGACPH in solution; red 1:2; green 1:4; purple 1:7; yellow 1:15; orange 1:20; lime 1:25; black 1:30. (B) Binding curves generated from spectral integration and expressed as the fraction of bound protein for variable LUV compositions (POPC [100%] green, POPC:POPS [50:50%] purple, or POPC:POPA [50:50%] red). (C) Apparent dissociation constants (Kdapp) for binding LUVs were calculated from fitting binding curves. (D) Plot of PfGACPH paramagnetic relaxation enhancements (PREs) with PA-enriched MSP1D1H4-5 nanodiscs top (POPC:POPA:PE-DTPA-Gd3+46:40:14%) and bottom (POPC:PE-DTPA-Gd3+86:14%), against sequence number. Dashed lines represent 1 (yellow), 2 (orange), or 3 (red) SD from the mean noise (baseline). (E) PA PREs mapped onto the structure of PfGACPH, residues and coloured if greater than 2 (orange) or 3 (red). (F) Comparison of contact resides from molecular dynamic (MD) and NMR mapped on to the sequence alignment between PfGACPH and TgGACPH. (G) Electrostatic surface representation of PfGACPH revealing an extensive surface patch of positive charge surface charge with key mutated residues labelled. (H) Binding curves of PfGACPH mutants generated from 1D NMR titration with calculated Kdapp. Data are shown as mean of three replicates ±1σ. Apparent dissociation constants (Kdapp) were calculated from fitted binding curves. Data represent mean ±1σ for fitted curves.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Assigned 1H-15N HSQC for PfGACPH and comparison of validated structures for PfGACPH (magenta) and TgGACPH (blue). (B) PRE’s with phosphatidic acid (PA)-enriched (top) or phosphatidylcholine (PC) only MSP1D1H4-5 nanodiscs.
 
 We next measured paramagnetic relaxation enhancements (PREs) using small PA-enriched MSP1D1ΔH4-5 nanodiscs. PA-enriched MSP1D1ΔH4-5 nanodiscs (40:60%, POPA:POPC) or nanodiscs containing no PA (100% POPC), doped with (paramagnetic nanodiscs) or without (diamagnetic nanodiscs) PEDTPA-Gd3+ paramagnetic lipid, were generated. 2D 1H-15N HSQC spectra were recorded for 15N-labelled PfGACPH in the presence of paramagnetic or diamagnetic nanodiscs. Paramagnetic induced relaxation enhancements of membrane-interacting regions were measured from reductions in signal intensities. Numerous PREs were observed for PfGACPH upon the addition of PA-enriched paramagnetic nanodiscs (Figure 4D - top) but not with 100% POPC nanodiscs (Figure 4D - bottom).
 
@@ -78,21 +401,29 @@ To establish whether the PA-binding interface identified through NMR analyses on
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig5-v2.jpg)
 
-**Figure 5.:** (A) Liposome binding assay with the three proteins of interest. A representative gel stained by Coomassie blue (left). Quantification of the pellet fraction measured by band densitometry (n=2). n/a=no liposome. S=supernatant fraction after ultracentrifugation. P=pellet fraction after centrifugation (right). (B) Representative gel stained by Coomassie blue from liposome binding assays with full-length TgGACFL and the three mutated versions (left). Quantification of the GACFL pellet fraction measured by band densitometry (n=2–4; right). n/a=no liposome. S=supernatant fraction after ultracentrifugation. P=pellet fraction after centrifugation. RK = RK/AA mutations. KER = KER/AAA mutations. RKKER = RK/AA +KER/AAA mutations. (C) Representative gel stained by Coomassie blue from liposome binding assays with TgGACPH and the three mutated versions (left). Quantification of the GACPH pellet fraction measured by band densitometry (n=2–4; right).Figure 5—source data 1.Figure 5—source data 2.Figure 5—source data 3.
+**Figure 5.:** (A) Liposome binding assay with the three proteins of interest. A representative gel stained by Coomassie blue (left). Quantification of the pellet fraction measured by band densitometry (n=2). n/a=no liposome. S=supernatant fraction after ultracentrifugation. P=pellet fraction after centrifugation (right). (B) Representative gel stained by Coomassie blue from liposome binding assays with full-length TgGACFL and the three mutated versions (left). Quantification of the GACFL pellet fraction measured by band densitometry (n=2–4; right). n/a=no liposome. S=supernatant fraction after ultracentrifugation. P=pellet fraction after centrifugation. RK = RK/AA mutations. KER = KER/AAA mutations. RKKER = RK/AA +KER/AAA mutations. (C) Representative gel stained by Coomassie blue from liposome binding assays with TgGACPH and the three mutated versions (left). Quantification of the GACPH pellet fraction measured by band densitometry (n=2–4; right).
 
-## Key lipid-binding residues in the GAC PH domain are not essential for parasite invasion
+### Key lipid-binding residues in the GAC PH domain are not essential for parasite invasion
 
 T. gondii mutant lines were generated in which the PH domain was replaced at the endogenous locus with equivalent sequences containing the PA-binding mutations together with C-terminal Ty tag. Parasite lines were obtained with a wild-type PH domain (TgGACWT -Ty), with the individual targeted mutations (TgGACRK -Ty and TgGACKER -Ty), the double mutation patch (GACRKKER -Ty), and a line in which the PH domain was replaced by the P. falciparum version (TgGACPfPH -Ty). All GAC versions, wild-type, mutated and chimeric, localised correctly at the PCRs of the parasite as well as cytosolically (Figure 6A), suggesting that the PA-binding by the GAC PH domain is not critical for GACs apical localisation. Likewise, upon triggering parasite motility with 5-Benzyl-3-isopropyl-1H-pyrazolo[4,3-d]pyrimidin-7(6H)-one (BIPPO), all the strains displayed the characteristic basal accumulation of TgGAC (Figure 6B). Finally, to access if there was any fitness cost induced by the mutations, wild-type, and mutated parasites were analysed by plaque assay and revealed that the mutations were not detrimental for the parasite lytic cycle (Figure 6C). Accordingly, no clear defect in invasion could be observed in parasites expressing the mutated versions (Figure 6D). A small reduction of the plaque size and reduction in invasion capacity was observed for the TgGAC-PfPH chimera.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig6-v2.jpg)
 
-**Figure 6.:** (A) GAC localisation by Immunofluorescence assay (IFA) in intracellular parasites. White arrow = apical pole. Scale bar = 2 µm. (B) GAC localisation by IFA in extracellular parasites. White arrow = apical pole. White star = basal pole. Scale bar = 2 µm. (C) Plaque assay of the different mutants analysed. (D) Red/green invasion assay (n=3). A Δku80 background T. gondii strain is used, which is deficient in nonhomologous end joining and provides highly efficient gene replacement.Figure 6—source data 1.
+**Figure 6.:** (A) GAC localisation by Immunofluorescence assay (IFA) in intracellular parasites. White arrow = apical pole. Scale bar = 2 µm. (B) GAC localisation by IFA in extracellular parasites. White arrow = apical pole. White star = basal pole. Scale bar = 2 µm. (C) Plaque assay of the different mutants analysed. (D) Red/green invasion assay (n=3). A Δku80 background T. gondii strain is used, which is deficient in nonhomologous end joining and provides highly efficient gene replacement.
 
-## Evaluation of GAC and GAC fragments binding to Toxoplasma F-actin
+### Evaluation of GAC and GAC fragments binding to Toxoplasma F-actin
 
 Association to rabbit F-actin was previously shown to involve the N-terminal 1114 amino acids of TgGAC, roughly corresponding to the first 25 AHRs of the RI region (Figure 7A and B). To map further the interaction of TgGAC with the shorter and highly dynamic actin filaments characteristic of T. gondii (Skillman et al., 2013), a series of recombinant TgGAC fragments were purified and tested for binding (Figure 7C). Both full-length TgGAC and a fragment encompassing residues GAC1–1114 co-sedimented with Toxoplasma F-actin produced from recombinant TgACT (Figure 7D and E). In contrast, a shorter N-terminal fragment, (TgGAC1–619) corresponding to the first 14 AHRs, failed to interact with F-actin. This suggests that either the binding site for F-actin lies between residues 619 and 1114 of TgGAC or that that isolated N-terminal fragment TgGAC1–619 adopts a different conformation than TgGAC1–1114 and TgGAC which prevents its interaction with F-actin.
 
-## Investigation of GAC fragment conformations using HDX-MS
+![Figure 7.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig7-v2.jpg)
+
+**Figure 7.:** (A) Cartoon representation of the structure of TgGAC coloured according to schematic representation shown in (B). (C) Schematic representation of TgGAC structure coloured according to panel (B) with illustration of the truncated recombinant TgGAC constructs. (D) Coomassie-stained gel analysing proteins remaining in supernatant or sedimenting upon centrifugation at 100,000 g. S: Supernatant. P: Pellet. (E) Graphical representation of the percentage of TgGAC co-sedimenting alone or in the presence of TgActin filaments. Data are mean + SD of three independent experiments. p Value calculated using unpaired t-test. (F) Graph displaying deuteration levels for TgGAC1–619, TgGAC1–1114, and TgGAC-FL. Each dot represents a single peptide where the deuteration level in percentage maximal deuteration is plotted according to the residue number at the centre of the peptide (peptide centroid). (G) Comparison of H/D exchange levels for peptides spanning glideosome-associated connector (GAC) residues 1–619 between (i) TgGAC 1–619 and TgGAC1–1114 (blue dots) and between (ii) TgGAC-FL and TgGAC1–1114 (green). Each dot represents a peptide with the x-axis indicating peptide centroid as in (F). The y-axis indicates the sum of differences in number of deuterons incorporated for each peptide, measured at three deuteration times: 3, 30, and 300 s. Region showing significant differences between TgGAC1–619 and TgGAC1–1114 is indicated in red. (H) Schematic representation of the three GAC constructs studied by hydrogen/deuterium exchange coupled to mass spectrometry (HDX-MS), focussing on the region coloured in light blue (residues 1–619). Red colouring indicates the region where a difference in H/D exchange rate is observed. (I) Structure of TgGAC with fragment 1–619 shown as surface representation and highlighted in light blue. Residues 620–1114 are shown in blue, and the remaining of GAC structure is shown in light white. Region displaying a different conformation in TgGAC1–619 compared to other TgGAC constructs, with increased H/D exchange rate, is coloured in red.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/86049/elife-86049-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Peptide map showing all peptides analysed in for TgGAC1–619. (B) Uptake plots for a selection of peptides. (C) 1H-15N HSQC NMR spectrum of TgGAC1–619 showing a well-folded protein.
+
+### Investigation of GAC fragment conformations using HDX-MS
 
 To gain a deeper understanding into the conformational requirements of the binding of GAC to F-actin, we used HDX-MS. HDX-MS is a powerful method that examines protein dynamics by monitoring the exchange rate of protein amide hydrogens with the solvent (James et al., 2022). Information on protein secondary structure and conformation is provided by measuring overall deuteration levels, and the comparison of H/D exchange rates between protein constructs reveals differences in protein dynamics and conformation. To evaluate whether the 1–619 region adopts the same conformation in TgGAC1–619, TgGAC1–1114, and TgGAC-FL, HDX-MS analyses of peptides encompassing residues 1–619 were compared for all three constructs (Figure 7F–I and Figure 7—figure supplement 1; Supplementary file 1). Most of the GAC N-terminus exhibited identical dynamics in all constructs (Figure 7F and G), and only the C-terminal extremity of TgGAC1–619 (residues 559–609) displayed higher H/D exchange rate compared to TgGAC1–1114 and TgGAC-FL (Figure 7F–I). TgGAC1–1114 and TgGAC-FL share identical dynamics within this region. This indicates that the two truncated fragments share a similar conformation as TgGAC-FL for residues 1–558, corresponding to a major portion (14 AHRs) of the first turn in the superhelical pyramid structure (19 AHRs). NMR data (Figure 7—figure supplement 1C) also confirms that this fragment is predominantly well folded. The C-terminal extremity of the shortest fragment, TgGAC1–619, is significantly more flexible which also may contribute to its inability to bind F-actin.
 
@@ -114,45 +445,45 @@ Structural similarity also exists between the C-terminal ARM region of GAC (TgGA
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 Full-length TgGAC gene with TEV cleavable N-terminal 6xHis-tag has been cloned into the pET28a vector as previously described (Jacot et al., 2016; Kumar et al., 2022). Constructs for PfGACPH (PfGAC2471–2605) and TgGACPH (TgGAC2505–2639) were constructed with a 6His purification tag and an additional SUMO tag for soluble expression of PfGACPH. A Q5 site-directed mutagenesis kit (NEB) and the manufacturers protocol were used to generate and PfGACPH mutants with standard primers. For protein expression, plasmids were transformed into BL21 (DE3; NEB) or Rosetta2 (Novagen) Escherichia coli strains. Expression was carried in minimal medium supplemented with 15NH4Cl and/or 13C-glucose for NMR isotopic labelling. Purification for His-tagged constructs was carried by Ni2+ affinity chromatography. Removal of the SUMO tag for PfGACPH samples was carried out by incubation with purified ULP1 protease. Further purification for all constructs was achieved by size-exclusion chromatography.
 
-## NMR spectroscopy
+### NMR spectroscopy
 
 Samples of purified 15N/13C-PfGACPH and 15N/13C-TgGACPH were prepared and supplemented with D2O. All NMR spectra were acquired at 298 K on Bruker Avance-III DRX 800 and Avance-III 600 spectrometers. Triple resonance HNCA, HNCACB, HNCO, and HN(CO)CA spectra (Sattler et al., 1999) were recorded and analysed to obtain backbone assignments, which was assisted using MARS program (Jung and Zweckstetter, 2004). Chemical shift assignment and analysis were performed using an in-house version of NMRview (Marchant et al., 2008). HBHA(CO)NH, H(CCO)NH, CC(CO)NH, and HCCH-TOCSY spectra were recorded for use in side-chain chemical shift assignment. 15N-NOESY and 13C-NOESY spectra were recorded and used as distance restraints in structural calculation/validation.
 
 For PfGACPH and TgGACPH 1D 1H NMR LUV binding assays performed with LUVs containing an increasing proportion of POPA (POPA Mol% value). To form LUVs, a lipid suspension was sonicated until transparent and then clarified by centrifugation. The supernatant containing LUVs were prepared at an 8 mM total lipid concentration for use in 1D NMR LUV-binding assays. Dynamic light scattering analyses show homogeneous LUV diameters of ~100 nm. For each LUV composition titration series, a separate Kdapp value was calculated for each replicate (n=3), and a mean Kdapp value was calculated. PfGACPH and TgGACPH titration PRE experiments were carried out with increasingly POPA-enriched MSP1D14-5 nanodiscs. MSP1D1H4-5 MSP was expressed and purified by nickel affinity chromatography using a well-established protocol (Ritchie et al., 2009). Peak elution fractions containing pure nanodiscs (assessed by SDS-PAGE) from size-exclusion chromatography were pooled, concentrated, and stored (at –80°C). Relative NMR signal reductions for amide resonances in 1H-15N HSQC spectra were determined and mapped. For 1D 1H-NMR LUV binding assays, the fraction of bound protein at each titration point was averaged between replicates and plotted as the mean. Error bars for binding curves represent 1σ from this mean value. Error bars shown for Kdapp values represent 1σ for mean Kdapp from fitting binding isotherms.
 
-## X-ray data collection and processing
+### X-ray data collection and processing
 
 Diffraction data from a single native crystal were collected on beamline i04 of the Diamond Light Source (DLS), UK. Data were processed with CCP4 dials (Beilsten-Edmands et al., 2020; Winn et al., 2011; Winter, 2010; Winter et al., 2018) and scaled using dials.scale (Evans, 2006) within the Xia2 package (Winter et al., 2013). Multi-wavelength anomalous diffraction (MAD) data from a single SeMet labelled crystal were collected on beamline i04 of the DLS at the following wavelengths: peak = 0.9795 Å, inflection = 0.9796 Å, and remote = 0.9722 Å. Data were processed initially by AutoProc (Vonrhein et al., 2011). Substructure definition and initial model building were performed using AutoSHARP (Vonrhein et al., 2007). This was followed by manual building in Coot (Emsley et al., 2010) and further refinement using Phenix Refine (Adams et al., 2010). Data collection statistics have been published previously (Kumar et al., 2022). The structure has been deposited in wwPDB under accession code: PDB ID 8C4A (Berman et al., 2007).
 
-## Small angle X-ray scattering
+### Small angle X-ray scattering
 
-Samples for SAXS measurements were prepared by concentrating samples from SEC using a centrifugal spin device with a molecular weight cut-off of 100 kDa. For all experiments, a buffer of 25 mM Tris, 5 mM TCEP, and pH 8.0 was used, which was adjusted to a pH value between 4.0 and 8.0 by addition of 1 M HCl leading to a salt concentration of maximum 30 mM in the case of pH 4.0. SAXS data were measured using a laboratory based flux-optimised Bruker AXS Nanostar with a gallium liquid metal jet source (Schwamberger et al., 2015) and scatterless slits (Li et al., 2008), a detector distance of 867 mm, and a q range of 0.0098–0.42 Å–1. The entire q range could be probed with this setup in a single measurement. More information about the optimised instrument can be found here (Lyngsø and Pedersen, 2021). All data were measured for 1800s at 20°C. SAXS data are plotted as an intensity as a function of q, which is the modulus of the scattering vector and defined as q = (4πsin[ϴ])/λGa, where 2ϴ is the scattering angle between the incident and scattered beam and λGa = 1.34 Å. Data were background subtracted and converted to absolute scale using the software package SUPERSAXS (CLP Oliveira and JS Pedersen). The mass was calculated using M=(I0×NA )/(c×Δρm2), where I(0) is the intensity extrapolated to q=0, NA is Avogadro’s number, c is the protein concentration in g/mL, and Δρm is the scattering contrast per mass that can be estimated to 2.0×1010 cm/g for a typical protein. I(0) was determined both by a Guinier fit analysis (using the intercept with the y-axis) and from an IFT routine (Glatter, 1977). The theoretical scattering curve was calculated using the program wlsq_PDBx (Steiner et al., 2018). An ab initio reconstruction of the protein structure was performed using GASBOR from the ATSAS package (Svergun et al., 2001) where the number of amino acids is given, and each amino acid is represented by a dummy residue. The optimisation was performed with the real space option due to the large size of GAC.
+Samples for SAXS measurements were prepared by concentrating samples from SEC using a centrifugal spin device with a molecular weight cut-off of 100 kDa. For all experiments, a buffer of 25 mM Tris, 5 mM TCEP, and pH 8.0 was used, which was adjusted to a pH value between 4.0 and 8.0 by addition of 1 M HCl leading to a salt concentration of maximum 30 mM in the case of pH 4.0. SAXS data were measured using a laboratory based flux-optimised Bruker AXS Nanostar with a gallium liquid metal jet source (Schwamberger et al., 2015) and scatterless slits (Li et al., 2008), a detector distance of 867 mm, and a q range of 0.0098–0.42 Å–1. The entire q range could be probed with this setup in a single measurement. More information about the optimised instrument can be found here (Lyngsø and Pedersen, 2021). All data were measured for 1800s at 20°C. SAXS data are plotted as an intensity as a function of q, which is the modulus of the scattering vector and defined as q = (4πsin[ϴ])/λGa, where 2ϴ is the scattering angle between the incident and scattered beam and λGa = 1.34 Å. Data were background subtracted and converted to absolute scale using the software package SUPERSAXS (CLP Oliveira and JS Pedersen). The mass was calculated using $M=(I0\timesN_{A} )/(c\timesΔρ_{m}^{2})$, where I(0) is the intensity extrapolated to q=0, NA is Avogadro’s number, c is the protein concentration in g/mL, and $Δρ_{m}$ is the scattering contrast per mass that can be estimated to $2.0\times10^{10} cm/g$ for a typical protein. I(0) was determined both by a Guinier fit analysis (using the intercept with the y-axis) and from an IFT routine (Glatter, 1977). The theoretical scattering curve was calculated using the program wlsq_PDBx (Steiner et al., 2018). An ab initio reconstruction of the protein structure was performed using GASBOR from the ATSAS package (Svergun et al., 2001) where the number of amino acids is given, and each amino acid is represented by a dummy residue. The optimisation was performed with the real space option due to the large size of GAC.
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 The TgGAC crystal structure was used to generate coarse-grained protein:membrane simulation systems in which TgGAC was rotated randomly in respect to the membrane patch to generate the first set of coordinates. CHARMM-GUI Martini Maker was used to generate a system in which GAC was translated 12 nm in the z direction from the centre of the membrane (Qi et al., 2015). The membrane composition used was 50% POPC: 50% POPA to replicate simulations performed in Darvill et al., 2018. For two independent replicates, TgGAC was rotated again (0, 90) and (90, 0). Simulations were performed using the gromacs biomolecular software package version 2021.3 (Hess et al., 2008) and the MARTINI3 forcefield with ElNeDyn restraints (Souza et al., 2021). The v-rescale thermostat (tau 1.0 ps; Bussi et al., 2007) and the Parrinello–Rahman barostat (tau 12.0 ps; Parrinello and Rahman, 1981) were used to maintain temperature (303.15 K) and pressure (1 bar). Production simulations were 10 μs in length. Analysis was performed using gromacs tools, VMD (Humphrey et al., 1996), and the ProLint server (Sejdiu and Tieleman, 2021).
 
 To generate a model for a TgGAC open conformation, we used steered-MD. The TgGAC crystal was first used to generate a coarse-grained model, using the CHARMM-GUI Martini Maker (Qi et al., 2015) with the MARTINI3 forcefield and the ElNeDyn restraints (Souza et al., 2021). The restraint network at the N-/C-terminal interface was removed using an in-house Python script. A small and optimised pulling force was applied (pull rate = 0.01 nm/ns, k=100 kJ/mol.nm2) between a selected helix on either side of the interface to drive its separation and the extension of the structure. A series of structures along the trajectory were generated over the course of an averaged 2.5 μs simulations in length. The procedures were repeated to drive the separation of the three supercoiled pyramid interfaces (TgGAC1–619, TgGAC620–1114, and TgGAC1114–1661). The snapshots were back mapped to atomistic models using Martini to All-atom Converter (Wassenaar et al., 2014) and used in the fits of the SAXS data.
 
-## Plaque assay
+### Plaque assay
 
 Human foreskin fibroblasts (HFFs) monolayers were infected with freshly egressed parasites and incubated for 7 days at 37°C. Cells were then fixed with 4% paraformaldehyde (PFA)/0.05% glutaraldehyde for 10–15 min. After neutralisation with 0.1 M glycine/PBS, cells were stained using crystal violet. For quantification, pictures were taken, and the plaque area was determined using ImageJ.
 
-## Immunofluorescence assay
+### Immunofluorescence assay
 
 For vacuoles images, parasites were inoculated on an HFF monolayers previously seeded on a glass coverslip. The parasites were grown for 16–24 hr at 37°C. For extracellular parasites, freshly egressed parasites were seeded on gelatin-coated coverslips, and media containing BIPPO was used to stimulate motility. The coverslips were then fixed with 4% PFA/0.5% glutaraldehyde (PFA-Glu) during 10 min. The fixative agent was then neutralised using 0.1 M glycine/PBS for 10 min. Cells were then permeabilised for 20 min using 0.2% TritonX100/PBS and blocked using 5% BSA/PBS for 20 min before incubation with primary antibodies in 2% BSA/0.2% TritonX100/PBS for 1 hr. Coverslips were then washed three times for 5 min using 0.2% TritonX100/PBS. Secondary antibodies were incubated for 1 hr similarly to the primary antibodies. Finally, the coverslips were washed three times with PBS before mounting on glass slides using DAPI-containing Fluoromount. For immunofluorescence analysis, the secondary antibodies Alexa Fluor 488 and Alexa Fluor 594 conjugated goat α-mouse/rabbit antibodies (Molecular Probes) were used.
 
-## Liposome binding assay
+### Liposome binding assay
 
 Proteins were expressed in bacteria and purified by the PPR2P platform (University of Geneva). The liposomes were prepared in-house as follow: lipids were mixed in glass vials with the following proportions: 10% DOPE +X%DO-PA + qsp%DOPC (percentage by weight). The mix was slowly dried using nitrogen flow. The lipids were dried further in a dessicator for 30 min. The dried lipids were then resuspended in ‘lipid buffer’ (50 mM Hepes pH 7.5/100 mM NaCl/5% glycerol) to reach a 5 mg/mL concentration. Resuspension was then ensured by vortexing the mixes for 5 min. Then, seven freeze–thaw cycles were performed (20 s in liquid nitrogen followed by 90 s in a 33°C water bath). Lipid mixes were extruded by passing them through 0.1 µm filters for 21 times. Liposomes were then aliquoted in microtubes (50 µL), flash frozen in liquid nitrogen, and stored at –80°C until use.
 
 For the binding assay, proteins were resuspended in ‘protein buffer’ (20 mM Tris pH 7.4/200 mM NaCl/1 mM DTT), centrifuged at 100,000 g for 30 min at 4°C to remove any precipitate and measure the exact protein concentration in the supernatant. Protein concentration was then adjusted to 0.2 mg/mL using protein buffer. In parallel, the liposomes were diluted at 2 mg/mL in ‘lipid buffer’ (50 mM Hepes pH 7.4/100 mM NaCl/1% glycerol) and re-diluted twofold using water to achieve a concentration of 1 mg/mL. For the ‘no lipid’ conditions, lipid buffer was simply diluted twofold in water. For the reaction, 40 µL of protein and 40 µL of liposomes were mixed and incubated on ice for 1 hr. The mix was then centrifuged at 120,000 g for 30 min at 4°C. Supernatant and pellets were separated, resuspended in Laemmli buffer, and boiled 10 min at 95°C. Equal volumes were then ran on polyacrylamide gels and stained using Coomassie blue. Quantification was performed by band densitometry.
 
-## HDX-MS sample preparation and data analysis
+### HDX-MS sample preparation and data analysis
 
 HDX-MS experiments were performed at the UniGe Protein Platform (University of Geneva, Switzerland) following a well-established protocol with minimal modifications (Wang et al., 2018). Details of reaction conditions and all data are presented in Supplementary file 2 and Supplementary file 3. HDX reactions were done in 50 μL volumes with a final protein concentration of 2.4 μM of GAC protein. Briefly, 120 pmol of the protein in 10 µL final volume were pre-incubated 5 min at 22°C before the reaction.
 
@@ -160,10 +491,10 @@ Deuterium exchange reaction was initiated by adding 40 µL of D2O exchange buffe
 
 To quantify deuterium uptake into the protein, samples were thawed and injected in a ultra-performance liquid chromatography (UPLC) system immersed in ice with 0.1% FA as liquid phase. The protein was digested via two immobilised pepsin columns (Thermo #23131), and peptides were collected onto a VanGuard precolumn trap (Waters). The trap was subsequently eluted, and peptides were separated with a C18, 300 Å, 1.7 μm particle size Fortis Bio 100×2.1 mm column over a gradient of 8–30% buffer C over 20 min at 150 μL/min (buffer B: 0.1% FA; buffer C: 100% acetonitrile). Mass spectra were acquired on an Orbitrap Velos Pro (Thermo), for ions from 400 to 2200 m/z using an electrospray ionisation source operated at 300°C, 5 kV of ion spray voltage. Peptides were identified by data-dependent acquisition of a non-deuterated sample after MS/MS, and data were analysed by Mascot. All peptides analysed are shown in Supplementary file 2 and Supplementary file 3. Deuterium incorporation levels were quantified using HD examiner software (Sierra Analytics), and quality of every peptide was checked manually. Results are presented as percentage of maximal deuteration compared to theoretical maximal deuteration. Changes in deuteration level between two states were considered significant if >20% and >2 Da and p<0.01 (unpaired t-test).
 
-## Strains generation – GAC mutations at the endogenous locus
+### Strains generation – GAC mutations at the endogenous locus
 
 The pGST-GAC_PH domain vector used to produce the PH domain of GAC was used as a base to generate the points mutation. The points mutations were inserted using the Q5 mutagenesis kit (New England Biolabs) and specific primers. The mutations in the PH domains were checked by sequencing. Then, the 5’UTR_UPRT-pT8-DDGACΔPH-Ty-DHFR-3’UTR_UPRT was linearised with SgrAI, while the mutated PH domain from the pGST vector was amplified by PCR using primers containing homology regions. The mutated PH domain was inserted in the linearised 5’UTR_UPRT-pT8-DDGACΔPH-Ty-DHFR-3’UTR_UPRT by Gibson assembly. The insertion of the PH domain in the receiving vector was checked by analytical digestion and sequencing. The mutated PH domain of newly generated 5’UTR_UPRT-pT8-DDGACmut-Ty-DHFR-3’UTR_UPRT vector (therefore without introns) was amplified by KOD PCR using specific primers containing homology regions (on one side with the sequence preceding the PH domain, and on the other with the 3’UTR of the GAC gene). A double gRNA targeting the region preceding the PH domain and the 3’UTR of the GAC gene was generated in parallel by Q5 mutagenesis. For transfection, the equivalent of 100 µL of KOD PCR and 40 µg of gRNA was used. 48 hr after transfection, the parasites were fluorescence-activated cell sorted (FACS) to select clones expressing the gRNA-Cas9-YFP construct. Then, the individual clones were amplified, genomic DNA was extracted, and integration PCR of the GAC PH domain region was checked (the PCR ensured the loss of the introns, generating a smaller PCR amplicon in modified parasites compared to wild types). In addition, the PH domain of the PCR positive clones was fully sequenced. Primers are shown in Supplementary file 4.
 
-## Materials and data availability
+### Materials and data availability
 
 Reagents generated in this study will be made available upon request. All data generated or analysed during this study are included in the manuscript and supplementary files. DNA primers are listed in Supplementary file 4. The structure has been deposited in wwPDB under accession code: PDB ID 8C4A (Berman et al., 2007). The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2022) partner repository with the dataset identifier PXD039335.

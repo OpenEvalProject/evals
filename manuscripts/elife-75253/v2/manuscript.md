@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Neuroscience Program, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Kavli Institute for Fundamental Neuroscience, University of California San Francisco United States
-3. https://ror.org/043mz5j54 Weill Institute for Neuroscience, University of California San Francisco United States
-4. https://ror.org/043mz5j54 Department of Neurology, University of California, San Francisco San Francisco United States
-5. https://ror.org/05a3y1m41 Aligning Science Across Parkinson’s (ASAP) Collaborative Research Network Chevy Chase United States
+1. Neuroscience Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Kavli Institute for Fundamental Neuroscience, University of California San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Weill Institute for Neuroscience, University of California San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+4. Department of Neurology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+5. Aligning Science Across Parkinson’s (ASAP) Collaborative Research Network Chevy Chase United States ([ROR:05a3y1m41](https://ror.org/05a3y1m41))
 
 † Corresponding author
 
@@ -35,31 +35,67 @@ Here, we used the genetically encoded calcium indicator GCaMP to enable region- 
 
 ## Results
 
-## STN GCaMP signals correlate with spiking measured by electrophysiology
+### STN GCaMP signals correlate with spiking measured by electrophysiology
 
 To test whether DBS inhibits, excites, or disrupts its target neurons, we used fiber photometry to measure bulk fluorescence signals from the genetically encoded calcium indicator GCaMP6s. To validate this approach, we first sought to determine whether STN calcium signals could serve as proxy for neural activity. We injected the STN of VGlut2-Cre mice with AAVs encoding Cre-dependent GCaMP6s, limiting expression to glutamatergic STN neurons. We then performed simultaneous whole-cell current-clamp recordings and fluorescence imaging of STN neurons in ex vivo slices to compare firing rate and intracellular calcium signals (Figure 1A–C). Neurons were driven to spike with intracellular current pulses at frequencies ranging from 10 to 200 Hz in 1 min epochs, which evoked rhythmic spiking at these frequencies (Figure 1D–E). Calcium, as measured by changes in GCaMP6s fluorescence, similarly increased during firing at 10–200 Hz (Figure 1F–G). In a subset of recordings, we assessed GCaMP6s signals in response to a range of lower firing frequencies (10–60 Hz) or higher frequencies (up to 200 Hz). Again, STN neurons showed rhythmic spiking that matched the frequency of pulsatile stimulation (Figure 1E, insets), and calcium signals correlated with firing rates up to about 100 Hz, and were variable between 100 and 200 Hz (Figure 1G, inset). As some groups have speculated that high-frequency DBS may cause some neurons to enter depolarization block, we also tested the firing and calcium signals associated with constant current (‘square wave’) stimulation. During such stimulation, STN neurons fired only transiently, appearing to enter depolarization block (Figure 1D–E). Under these circumstances, evoked calcium signals fell between those associated with 10 and 50–60 Hz spiking (Figure 1F–G). These experiments suggest that the relationship between spiking and GCaMP calcium signals may break down at very high firing frequencies, or under conditions of forced depolarization block. However, at more moderate firing frequencies, GCaMP calcium signals correlate with STN firing.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/75253/elife-75253-fig1-v2.jpg)
+
+**Figure 1.:** (A–G) Combined ex vivo electrophysiological and calcium imaging recordings in STN neurons. Neurons were patched in the whole-cell current-clamp configuration. (A) Combined whole-cell/calcium imaging recording configuration. (B) Brief intracellular current pulses were provided at different frequencies up to 200 Hz and with prolonged depolarization (‘square wave’). (C) Image of GCaMP-expressing STN neuron (scale bar = 10 μm). (D) Representative STN neuron responses to intracellular current pulses at different frequencies and to prolonged depolarization (‘square wave’). (E) Average firing rate of STN neurons in response to stimulation at a range of frequencies and prolonged depolarization (n=10 cells, N=3 mice for main; n=5 cells, N=1 mouse for each inset). (F) Representative trace of z-scored STN GCaMP signal in response to current-clamp stimulation. (G) Average z-scored STN GCaMP signal in response to intracellular current pulses at a range of frequencies and prolonged depolarization (n=10 cells, N=3 mice for main; n=5 cells, N=1 mouse for each inset). Arrowhead in current-clamp traces and GCaMP traces corresponds to –75 mV and 0 z-score, respectively. Bar plots show mean ± SEM. (H–M) In vivo electrophysiological and GCaMP fiber photometry recordings in STN neurons from freely moving mice, aligned to movement starts. (H) Sagittal schematic showing multielectrode array implant in the STN or parkinsonian mice for single-unit electrophysiology. (I, J) Sagittal schematic showing STN GCaMP and fiber implant for photometry in parkinsonian (I) and healthy (J) mice. (K) Representative STN single-unit firing (top), average firing rate (middle), and average velocity (bottom) aligned to movement starts (n=17 cells, N=3 mice). (L, M) Representative STN fiber photometry signal (top), average fiber photometry signal (middle), and average velocity (bottom) aligned to movement starts in parkinsonian (L, N=8) and healthy (M, N=5) mice. Average firing rate, photometry, and velocity traces show mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75253/elife-75253-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Left: Sagittal schematic showing unilateral injection of 6-hydroxydopamine (6-OHDA) to deplete ipsilateral dopamine neurons. Right: Postmortem sagittal section showing depletion of TH (purple) in lesioned hemisphere (dotted lines indicate borders of substantia nigra, pars compacta; scale bar = 500 μm). (B) Comparison of average velocity (left) and rotation bias (right) in healthy mice (N=9 mice), hemiparkinsonian mice without STN implants (N=10 mice), and hemiparkinsonian mice with STN implants (N=9 mice). Statistical significance was determined using a Wilcoxon rank-sum test; **p<.01, ***p < 0.001 (see Supplementary file 1, table 1 for detailed statistics). Bar plots show mean ± SEM.
+
 We next tested whether changes in bulk GCaMP6s fluorescence, as recorded through in vivo fiber photometry, corresponded with in vivo single-unit activity. To address this question, we recorded neural activity in vivo in two sets of parkinsonian animals, using either electrophysiology or GCaMP fiber photometry. We rendered mice parkinsonian through unilateral injection of 6-hydroxydopamine (6-OHDA) in the medial forebrain bundle (MFB, Figure 1—figure supplement 1A). In one group of parkinsonian mice, we implanted a 16-channel electrode array in the ipsilateral STN (Figure 1H). In a second group of parkinsonian VGlut2-Cre mice, we injected Cre-dependent GCaMP6s and implanted an optical fiber in the ipsilateral STN (Figure 1I). As observed in prior studies (Bové and Perier, 2012; Campos et al., 2013; Carvalho et al., 2013; Ungerstedt, 1968), 6-OHDA-treated mice showed both decreased movement velocity (1.3±0.1 cm/s parkinsonian vs. 3.1±0.4 cm/s healthy, p=8.23 × 10–5) and an ipsilesional rotational bias (p=1.40 × 10–3) when compared to healthy mice (Figure 1—figure supplement 1B). Additionally, movement velocity and rotation bias did not differ significantly between parkinsonian mice with and without STN implants (Figure 1—figure supplement 1B, p=0.66 for velocity, p=0.97 for rotation), suggesting that local, implant-related STN tissue disturbance did not alter gross movement parameters. We then aligned single-unit spiking activity and fiber photometry signal to movement starts (defined as a transition from velocity <0.5 to >2 cm/s) in both sets of mice (Figure 1K–L). STN single units showed baseline firing rates of approximately 5–10 spikes/s (Figure 1K), well within the linear range for GCaMP6s (Figure 1G, inset). The firing of STN units showed a marked change in firing rate around movement onset, increasing just prior to, and peaking just following movement initiation (approximately 1 spike/s over the baseline rate). Population calcium signals showed a similar increase around movement onset, but lagged the rise in single-unit firing rate by ~1 s, likely due to the slower kinetics of GCaMP6s (Markowitz et al., 2018; Figure 1L). To determine whether this movement-related activity was also present in the STN of healthy animals, we used a similar fiber photometry approach, targeting GCaMP to STN glutamatergic neurons (Figure 1J). Healthy animals tended to move at greater average velocity, but using the same event selection criteria, we aligned STN calcium signals to movement onset. As in parkinsonian mice, we found that in healthy animals, STN GCaMP signals increased around movement onset (Figure 1M). Thus, STN calcium signals and electrophysiology appear to capture a slightly time-shifted, but qualitatively similar increase in activity when aligned to behavior. Together, these ex vivo and in vivo experiments show a correlation between spiking and GCaMP6s signal, and therefore support the utility of fiber photometry as a proxy for neuronal activity in the context of STN DBS.
 
-## STN DBS consistently increases STN activity
+### STN DBS consistently increases STN activity
 
 The direct impact of STN DBS on STN neural activity remains unclear: some studies indicate that STN DBS decreases STN firing rates, while recordings in downstream nuclei indicate STN activity may increase. To address whether STN DBS increases or decreases overall STN activity, we injected parkinsonian VGlut2-Cre mice with Cre-dependent GCaMP6s and implanted them with both an STN DBS device and an optical fiber (Figure 2A–B; Figure 2—figure supplements 1A and 2A). We applied DBS using 12 different parameter sets, holding pulse width and amplitude constant (60 µs and 200 µA, respectively) and varying frequency (Supplementary file 1, table 2). Consistent with our previous findings in the same mouse model (Schor and Nelson, 2019), many different parameter sets were effective, across a broad frequency range. Grouping these parameter sets by stimulation frequency, we found that average movement velocity was increased by low- (5–40 Hz), medium- (60–100 Hz), and high-frequency (120–180 Hz) STN DBS (Figure 2—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1). We found that 60–100 and 120–180 Hz DBS produced similar benefits in movement velocity, so focused on 60 and 100 Hz stimulation for subsequent analyses; 60 or 100 Hz stimulation improved multiple movement metrics (Figure 2—figure supplement 1B-K). At either 60 or 100 Hz stimulation, STN DBS increased movement velocity (Figure 2—figure supplement 1B,C,G,H; p=3.92 × 10–9 for 60 Hz, p=5.53 × 10–8 for 100 Hz) and percent time moving (Figure 2—figure supplement 1D,I; p=3.53 × 10–9 for 60 Hz, p=1.46 × 10–8 for 100 Hz), while not significantly altering rotation bias (Figure 2—figure supplement 1E,J; p=0.71 for 60 Hz, p=0.47 for 100 Hz) or causing prolonged dyskinesias (Figure 2—figure supplement 1F,K). We subsequently used movement velocity as the primary behavioral outcome measure for STN DBS. We then measured changes in STN activity in vivo in response to treatment with STN DBS. Surprisingly, in parallel with its impact on movement velocity (p=7.11 × 10–9), STN DBS at 60 Hz caused a significant increase in STN calcium signals (Figure 2C–D, Figure 2—figure supplement 2B; p=1.19 × 10–7). The same was true for stimulation at 100 Hz, with an increase in STN activity (p=9.54 × 10–7) mirroring an increase in velocity (Figure 2E–F, Figure 2—figure supplement 2C; p=1.11 × 10–9). A similar phenomenon could be seen with DBS parameters across a wide range of stimulation frequencies (Figure 2—figure supplement 2D, Supplementary file 1, table 2). This result suggests that, rather than inhibiting the STN, STN DBS increases STN activity.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/75253/elife-75253-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental timeline. (B) Left: Sagittal schematic showing STN DBS and GCaMP fiber photometry. Right: Postmortem sagittal section showing GCaMP expression and estimated fiber placement in the STN (inset, scale = 500 μm). (C) Representative single-session velocity (black) and STN GCaMP signal (blue) in response to 60 Hz STN DBS. (D) Average velocity (top) and STN GCaMP signal (bottom) before, during, and after 60 Hz STN DBS (N=9 mice). (E) Representative single-session velocity (black) and STN GCaMP signal (blue) in response to 100 Hz STN DBS. (F) Average velocity (top) and STN GCaMP signal (bottom) before, during, and after 100 Hz STN DBS (N=9 mice). (G) Representative single-session velocity (black) and STN GCaMP signal (blue) before and after levodopa injection (dotted line). (H) Average velocity (top) and STN GCaMP signal (bottom) before, during, and after levodopa treatment (N=9 mice). (I) Representative single-session velocity (black) and STN single-unit activity (red) before and after levodopa injection (dotted line). (J) Average velocity (top) and STN single-unit activity (bottom) before, during, and after levodopa treatment (n=11 cells, N=3 mice). Statistical significance was determined using a one-way repeated measures ANOVA with a Tukey HSD post hoc analysis applied to correct for multiple comparisons; *p < 0.05, **p < 0.01, ***p < 0.001 (only comparison between pre and stim/LD shown, see Supplementary file 1, table 1 for detailed statistics). Arrowhead in velocity, GCaMP, and single-unit electrophysiology traces corresponds to 1 cm/s, 0 z-score, and 0 spike/s, respectively. Bar plots show mean ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75253/elife-75253-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Targeting of subthalamic nucleus deep brain stimulation (STN DBS) electrodes to the STN in 32 mice. (B) Representative single-session velocities in response to 60 Hz STN DBS in three mice. (C) Binned average velocity, (D) percent time moving, (E) change in rotational bias, and (F) dyskinesia in response to 60 Hz STN DBS (N=32 mice). (G) Representative single-session velocities in response to 100 Hz STN DBS in three mice. (H) Binned average velocity, (I) percent time moving, (J) change in rotational bias, and (K) dyskinesia in response to 100 Hz STN DBS (N=31 mice). (L) Representative single-session velocities before and after levodopa injection (dotted line) in three mice. (M) Binned average velocity, (N) percent time moving, (O) change in rotational bias, and (P) dyskinesia in response to levodopa injection (N=30 mice). Dyskinesia was quantified with as the abnormal involuntary movement (AIM) score. Statistical significance was determined using a Wilcoxon signed-rank test (E,I,O); a one-way repeated measures ANOVA with a Tukey HSD post hoc analysis applied to correct for multiple comparisons (M–N); or a Friedman test with a Tukey HSD post hoc analysis applied to correct for multiple comparisons (C,D,H,I); ***p < 0.001 (for ANOVA/Friedman, only comparison between pre and stim/LD shown, see Supplementary file 1, table 1 for detailed statistics). Arrowhead in velocity traces corresponds to 1 cm/s. Bar plots show mean ± SEM.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75253/elife-75253-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Sagittal schematic showing estimated extent of viral GCaMP6s spread in the subthalamic nucleus (STN) of VGlut2-Cre mice (N=9 mice). (B–C) Average movement velocity over time (black) and STN GCaMP signal (blue) following 60 Hz STN deep brain stimulation (DBS) (B, N=9 mice) or 100 Hz STN DBS (C, N=9 mice). (D) Average movement velocity (top) and STN GCaMP signal (bottom) during DBS sessions grouped by stimulation frequency: Low = 5–40 Hz, Med = 60–100 Hz, High = 120–180 Hz stimulation. (E) Average movement velocity over time (black) and STN GCaMP signal (blue) following administration of levodopa (N=9 mice) and average change in rotation bias during levodopa (inset). (F) Average movement velocity over time (black) and STN GCaMP signal (blue) following administration of saline (N=9 mice). (G) Average velocity (left), STN GCaMP signal (middle), and change in rotation bias before, during, and after saline injection (N=9 mice). (H) Average velocity over time (black) and STN single-unit firing rate (red) following administration of levodopa (n=11 cells, N=3 mice) and average change in rotation bias during levodopa (inset). Statistical significance was determined using a Wilcoxon signed-rank test (D,F (right),G) or a one-way repeated measures ANOVA with a Tukey HSD post hoc analysis applied to correct for multiple comparisons (F (left, middle)); **p < 0.01, ***p < 0.001 (for ANOVA, only comparison between pre and saline shown, see Supplementary file 1, table 1 for detailed statistics). Arrowhead in velocity, GCaMP, and single-unit electrophysiology traces corresponds to 1 cm/s, 0 z-score, and 0 spike/s, respectively. Velocity traces, GCaMP traces, single-unit electrophysiology traces, and bar plots show mean ± SEM.
+
 These results appear to conflict with the proposed inhibitory mechanism of other PD treatments, such as surgical ablations and dopamine replacement therapy. To directly compare STN DBS and dopamine replacement therapy using the same readout of STN activity, we administered levodopa in the same set of mice. In these animals, levodopa increased movement velocity (Figure 2—figure supplement 1L-M; p=9.69 × 10–10) and percent time moving (Figure 2—figure supplement 1N; p=9.56 × 10–10), evoked contralesional rotations (Figure 2—figure supplement 1O; p=1.73 × 10–6), and caused minimal dyskinesias (Figure 2—figure supplement 1P). We subsequently used movement velocity and rotation bias as primary and secondary behavioral outcome measures of levodopa treatment, respectively. In these sessions, though all mice showed improvements in movement (p=1.66 × 10–3 for velocity, p=3.91 × 10–3 for rotation bias), changes in STN calcium were variable (Figure 2G–H; Figure 2—figure supplement 2D). In some mice, STN activity decreased, while in others it increased: STN activity was not significantly changed across the entire group (Figure 2H; p=0.90). Injection with saline did not improve movement parameters, nor did it produce significant changes in STN activity (Figure 2—figure supplement 2E-F; p=0.084). As levodopa does not produce electrical artifacts like DBS, we were able to directly compare its effects on calcium signals and the gold standard measure of neural activity, single-unit electrophysiology. In parallel with its impact on movement (p=3.13 × 10–4 for velocity, p=9.77 × 10–4 for rotation bias), levodopa caused a modest, though significant, decrease in STN firing rates (Figure 2I–J, Figure 2—figure supplement 2G; p=0.029). The fact that bulk calcium signals did not reflect the modest reductions in STN firing seen with electrophysiology may relate to differential sensitivity of the two methods. Despite the fact that DBS and levodopa both improve movement parameters, they appear to alter overall activity level in opposite directions.
 
-## STN DBS increases SNr activity
+### STN DBS increases SNr activity
 
 Though the STN is a critical node within the basal ganglia circuit, especially in regard to dysfunction in PD and its treatment, it is believed to regulate motor function via excitatory projections to basal ganglia output nuclei. In addition, STN DBS is likely to cause changes in the activity of nearby axons, and thus may have complex downstream effects. Therefore, while we did not observe inhibition at the level of the STN during STN DBS, we wondered if it might still produce inhibition at the level of the primary basal ganglia output nucleus in rodents, the SNr. To determine how SNr activity responds to STN DBS, we injected either VGAT-Cre mice with Cre-dependent GCaMP6s in the SNr (N=6 mice) or wild-type (WT) mice with synapsin- GCaMP6s in the SNr (N=2 mice) and implanted them with an STN DBS device and an optical fiber in the SNr (Figure 3A, Figure 3—figure supplement 1A). As before, STN DBS in these mice increased movement velocity across a wide range of frequencies (Figure 3B–E; p=1.33 × 10–5 for 60 Hz, p=4.99 × 10–6 for 100 Hz; Figure 3—figure supplement 1D, Supplementary file 1, table 2). Consistent with our results in the STN, STN DBS (at both 60 and 100 Hz) increased SNr activity (Figure 3B–E; Figure 3—figure supplement 1B-D; p=4.14 × 10–5 for 60 Hz, p=3.32 × 10–5 for 100 Hz). Contrary to the basal ganglia rate model, and the inhibition theory of DBS, these findings suggest that both STN and SNr activities are increased by STN DBS.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75253/elife-75253-fig3-v2.jpg)
+
+**Figure 3.:** (A) Left: Sagittal schematic showing STN DBS and substantia nigra pars reticulata (SNr) GCaMP fiber photometry. Right: Postmortem sagittal section showing GCaMP expression and estimated fiber placement in the SNr (inset, scale = 500 μm). (B) Representative single-session velocity (black) and SNr GCaMP signal (purple) in response to 60 Hz STN DBS. (C) Average velocity (top) and SNr GCaMP signal (bottom) before, during, and after 60 Hz STN DBS (N=7 mice). (D) Representative single-session velocity (black) and SNr GCaMP signal (purple) in response to 100 Hz STN DBS. (E) Average velocity (top) and SNr GCaMP signal (bottom) before, during, and after 100 Hz STN DBS (N=7 mice). (F) Representative single-session velocity (black) and SNr GCaMP signal (purple) before and after levodopa injection (dotted line). (G) Average velocity (top) and SNr GCaMP signal (bottom) before, during, and after levodopa treatment (N=8 mice). (H) Representative single-session velocity (black) and SNr single-unit activity (red) before and after levodopa injection (dotted line). (I) Average velocity (top) and SNr single-unit activity (bottom) before, during, and after levodopa treatment (n=9 cells, N=3 mice). Statistical significance was determined using a one-way repeated measures ANOVA with a Tukey HSD post hoc analysis applied to correct for multiple comparisons; *p < 0.05, **p < 0.01, ***p < 0.001 (only comparison between pre and stim/LD shown, see Supplementary file 1, table 1 for detailed statistics). Arrowhead in velocity, GCaMP, and single-unit electrophysiology traces corresponds to 1 cm/s, 0 z-score, and 0 spike/s, respectively. Bar plots show mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75253/elife-75253-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Sagittal schematic showing estimated extent of viral GCaMP6s spread in the substantia nigra pars reticulata (SNr) of VGAT-Cre or wild-type (WT) mice (N=8 mice). (B–C) Average velocity over time (black) and SNr GCaMP signal (purple) following 60 Hz subthalamic nucleus deep brain stimulation (STN DBS) (B, N=7 mice) or 100 Hz STN DBS (C, N=7 mice). (D) Average movement velocity (top) and SNr GCaMP signal (bottom) during DBS sessions grouped by stimulation frequency: Low = 5–40 Hz, Med = 60–100 Hz, High = 120–180 Hz stimulation. (E) Average velocity over time (black) and SNr GCaMP signal (purple) following administration of levodopa (N=8 mice) and average change in rotation bias during levodopa (inset). (F) Average velocity over time (black) and SNr GCaMP signal (purple) following administration of saline (N=8 mice). (G) Average velocity (left), SNr GCaMP signal (middle), and change in rotation bias before, during, and after saline injection (N=8 mice). (H) Average velocity over time (black) and SNr single-unit firing rate (red) following administration of levodopa (n=9 cells, N=3 mice) and average change in rotation bias during levodopa (inset). Statistical significance was determined using a Wilcoxon signed-rank test (D,F (right),G) or a one-way repeated measures ANOVA with a Tukey HSD post hoc analysis applied to correct for multiple comparisons (F (left, middle)); **p < 0.01, ***p < 0.001 (for ANOVA, only comparison between pre and saline shown, see Supplementary file 1, table 1 for detailed statistics). Arrowhead in velocity, GCaMP, and single-unit electrophysiology traces corresponds to 1 cm/s, 0 z-score, and 0 spike/s, respectively. Velocity traces, GCaMP traces, single-unit electrophysiology traces, and bar plots show mean ± SEM.
+
 To again validate GCaMP fiber photometry signals and compare DBS to other treatments, we measured how levodopa altered SNr activity. In the same parkinsonian mice, levodopa increased movement velocity (p=0.016) and caused a contralesional rotation bias (Figure 3F–G; Figure 3—figure supplement 1E; p=7.81 × 10–3). In parallel, we observed a marked decrease in SNr neural activity as measured by fiber photometry (Figure 3F–G; Figure 3—figure supplement 1E; p=6.68 × 10–6). In contrast, saline neither improved movement parameters nor significantly changed SNr calcium signals (Figure 3—figure supplement 1F-G; p=0.31). Single-unit electrophysiological recordings also showed profound reductions in SNr firing rate (p=0.012) during therapeutic levodopa treatment (Figure 3H–I; Figure 3—figure supplement 1H), similar to findings in the GPi of parkinsonian NHPs (Papa et al., 1999). Thus, GCaMP fiber photometry and electrophysiology revealed qualitatively similar changes in SNr activity in response to levodopa, supporting the idea that these two measures of neural activity have substantial concordance. Furthermore, these experiments show marked differences in how STN DBS and levodopa impact neural activity, suggesting that STN DBS does not exert therapeutic effects through inhibition of STN or SNr.
 
-## Hyperdirect pathway activity during STN DBS
+### Hyperdirect pathway activity during STN DBS
 
 While we did not observe inhibition in either the STN or SNr during STN DBS, a more recent theory posits that STN DBS acts through antidromic activation of the hyperdirect pathway: primary motor cortex (M1) neurons that project monosynaptically to the STN. To assess whether STN DBS increases activity of hyperdirect M1 neurons, we imaged hyperdirect pathway neurons using a retrograde viral strategy. We injected the STN of parkinsonian mice with one of two retrograde viruses encoding Cre recombinase (CAV2-Cre or rAAV2-Cre-mCherry), and injected M1 with Cre-dependent GCaMP6s (Figure 4A, Figure 4—figure supplement 1A-B). This strategy restricted expression of GCaMP6s to STN-projecting M1 neurons, which previously have been shown to send collaterals to the STN with parent axons in the cerebral peduncle (Kita and Kita, 2012; Figure 4—figure supplement 1B). We then implanted an optical fiber in M1 and a DBS device in the STN. As in other parkinsonian mice, DBS increased movement velocity across a wide range of stimulation frequencies (Figure 4—figure supplement 1E, Supplementary file 1, table 2; Figure 4B–E; p=1.51 × 10–9 for 60 Hz, p=4.14 × 10–7 for 100 Hz). Despite the consistent therapeutic effects of 60 Hz STN DBS (Figure 4C, top), hyperdirect M1 calcium responses were surprisingly variable: some mice showed increases, while the calcium signal in other mice decreased or did not change (Figure 4C, bottom; Figure 4—figure supplement 1C; p=0.084). In the same mice, 100 Hz STN DBS also increased movement velocity (Figure 4E, top), but in this case M1 activity was more consistently increased during stimulation (Figure 4E, bottom; Figure 4—figure supplement 1D; p=5.88 × 10–5). These results suggested poor correlation between hyperdirect M1 activity and the behavioral benefits of STN DBS. To further probe the correspondence between DBS effectiveness and hyperdirect M1 activation, we asked if the movement velocity of a single mouse during 60 Hz STN DBS could be predicted by that mouse’s M1 calcium activity. We found that movement velocity during DBS did not correlate with change in hyperdirect M1 neural activity (Figure 4—figure supplement 1F; R2=−0.14, p=0.96). These findings suggest that while certain stimulation parameters may promote hyperdirect pathway activity, these changes do not strongly correlate with behavioral improvements during DBS.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/75253/elife-75253-fig4-v2.jpg)
+
+**Figure 4.:** (A) Left: Sagittal schematic showing STN DBS and M1-STN GCaMP fiber photometry. Right: Postmortem sagittal section showing GCaMP expression and estimated fiber placement in M1 (inset, scale = 500 μm). (B) Representative single-session velocity (black) and M1-STN GCaMP signal (green) in response to 60 Hz STN DBS. (C) Average velocity (top) and M1-STN GCaMP signal (bottom) before, during, and after 60 Hz STN DBS (N=9 mice). (D) Representative single-session velocity (black) and M1-STN GCaMP signal (green) in response to 100 Hz STN DBS. (E) Average velocity (top) and M1-STN GCaMP signal (bottom) before, during, and after 100 Hz STN DBS (N=8 mice). Statistical significance was determined using a one-way repeated measures ANOVA with a Tukey HSD post hoc analysis applied to correct for multiple comparisons; ***p < 0.001 (only comparison between pre and stim shown, see Supplementary file 1, table 1 for detailed statistics). Arrowhead in velocity and GCaMP traces corresponds to 1 cm/s and 0 z-score, respectively. Bar plots show mean ± SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75253/elife-75253-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Sagittal schematic showing estimated extent of viral AAV-retro and GCaMP6s spread in the subthalamic nucleus (STN) and M1, respectively, of wild-type (WT) mice (N=9 mice). (B) Postmortem sagittal section example showing AAV-retro expression in the STN (red), resulting in GCaMP6s expression in M1 neurons (green) projecting to the STN and cerebral peduncle (cp). (C–D) Average velocity over time (black) and M1-STN GCaMP signal (green) following 60 Hz STN DBS (C, N=9 mice) or 100 Hz STN DBS (D, N=8 mice). (E) Average movement velocity (top) and M1-STN GCaMP signal (bottom) during deep brain stimulation (DBS) sessions grouped by stimulation frequency: Low = 5–40 Hz, Med = 60–100 Hz, High = 120–180 Hz stimulation. (F) Scatter plot comparing hyperdirect M1 photometry signal to movement velocity during 60 Hz STN DBS (each dot represents average for one mouse, N=9 mice). (G) Sagittal schematic showing estimated extent of M1 lesions in WT mice (N=11 mice). Statistical significance was determined using a one-way ANOVA (see Supplementary file 1, table 1 for detailed statistics). Arrowhead in velocity traces and GCaMP traces corresponds to 1 cm/s and 0 z-score, respectively. Velocity and GCaMP traces show mean ± SEM.
+
 Additionally, we noted that increases in hyperdirect M1 activity evolved more slowly during STN DBS than increases in STN and SNr activity. The activity of neurons mediating the therapeutic effects of STN DBS would be predicted to change on a similar timescale to behavior. To compare the activation kinetics of STN, SNr, and hyperdirect M1 neurons during DBS, we measured the rise time of the calcium signal in regions and conditions in which we observed significant changes in neural activity: STN (60 and 100 Hz), SNr (60 and 100 Hz), and hyperdirect M1 (100 Hz). Given the observed lag between electrophysiology and bulk GCaMP signals seen by other groups (Markowitz et al., 2018), and in our own data (Figure 1), we expected that changes in calcium signals might appear to lag the behavior itself. Across all STN DBS conditions, movement velocity increased with a rise time of 2.8±0.6 s after stimulation commenced. For each condition, we calculated the difference in rise time between the calcium signal and movement velocity as an indicator of whether these two signals changed on a similar timescale. STN calcium signals during 60 or 100 Hz STN DBS lagged movement velocity by 2.6±1.1 s. We observed a relatively similar lag comparing SNr calcium signals to the corresponding movement velocity traces (3.7±1.8 s). However, the lag in hyperdirect M1 activity was markedly longer (17.3±3.1 s). These kinetics indicate STN and SNr activity evolve on a timescale similar to the movement benefits of STN DBS, while hyperdirect M1 activity, as measured by fiber photometry, evolves more slowly.
 
-## Surgical removal of M1 does not abolish therapeutic benefit of STN DBS
+### Surgical removal of M1 does not abolish therapeutic benefit of STN DBS
 
 Though overall hyperdirect pathway activity was not a strong predictor of the therapeutic effects of STN DBS, these findings do not exclude the possibility that the hyperdirect pathway mediates motor benefits. We next asked if M1 was required for the therapeutic effects of STN DBS on movement. We surgically removed the ipsilesional M1 of parkinsonian mice and implanted STN DBS devices (Figure 5A, Figure 4—figure supplement 1G). As in previous motor cortex lesion studies (Kawai et al., 2015), mice were allowed to recover for at least 10 days before behavioral testing. Remarkably, these mice still showed a significant increase in movement velocity in response to 100 Hz STN DBS (Figure 5B–C; p=8.24 × 10–3). Thus, it is unlikely that antidromic activation of M1 is the primary driver of the therapeutic benefit of STN DBS in parkinsonian mice.
 
@@ -67,7 +103,7 @@ Though overall hyperdirect pathway activity was not a strong predictor of the th
 
 **Figure 5.:** (A) Left: Sagittal schematic showing STN DBS and M1 surgical lesion. Right: Postmortem sagittal section showing estimated extent of M1 lesion (inset, scale = 500 μm). (B) Representative single-session velocity of an M1-lesioned hemiparkinsonian mouse in response to 100 Hz STN DBS. (C) Average velocity before, during, and after 100 Hz STN DBS in M1-lesioned hemiparkinsonian mice (N=11 mice). Statistical significance was determined using a one-way repeated measures ANOVA with a Tukey HSD post hoc analysis applied to correct for multiple comparisons; **p < 0.01 (only comparison between pre and stim shown, see Supplementary file 1, table 1 for detailed statistics). Arrowhead in velocity trace corresponds to 1 cm/s. Bar plots show mean ± SEM.
 
-## STN movement-related activity is disrupted by therapeutic STN DBS
+### STN movement-related activity is disrupted by therapeutic STN DBS
 
 Our results indicate that STN DBS is unlikely to work through inhibition of basal ganglia output, nor solely through antidromic excitation of M1. However, a third possibility is that STN DBS disrupts the pattern of neural activity within the STN itself. As previously noted, in parkinsonian mice, STN activity increases around movement initiation (Figure 6A, left), consistent with the idea that STN neurons encode some aspects of movement. To determine whether this encoding was altered during DBS, we aligned neural activity to movement starts during stimulation epochs. We found that although the overall average calcium signal was increased during DBS (Figure 2), the movement-aligned increase in STN activity was abolished during therapeutic STN DBS at 100 Hz (Figure 6A, right). This observation suggested that STN movement encoding was disrupted by STN DBS.
 
@@ -77,9 +113,17 @@ Our results indicate that STN DBS is unlikely to work through inhibition of basa
 
 This disruption might result from any patterned electrical stimulation, or it could represent a direct correlate of therapeutic stimulation. To test these possibilities, we chose 13 parameter combinations (varying in current amplitude, frequency, and pulse width, Supplementary file 1, table 3) from a set that we had used previously to evaluate the impact of STN DBS parameters on behavioral benefit in the mouse model (Schor and Nelson, 2019). In the same mice, we measured locomotor activity and calcium signals while delivering STN DBS at each of these 13 parameter combinations. Behavioral responses were divided into two groups, depending on whether the DBS-induced movement velocity averaged greater or less than 1 cm/s (Figure 6B). We labeled the first group ‘high effect’ stimulation (8 combinations) and the second group ‘low effect’ stimulation (5 combinations). We then assessed STN movement-related activity during each stimulation type, as measured by the peak-to-trough deflection of the movement-aligned STN photometry signal (Figure 6C, shaded inset). Interestingly, across 13 stimulation parameter sets, this neural activity metric showed a bimodal distribution. With low effect stimulation parameters, STN calcium signals increased around movement onset, as they did during baseline (no stimulation) periods. This resulted in a peak-to-trough change in calcium that was >1 (z-scored dF/F; Figure 6C). However, during high effect stimulation, STN calcium signals changed minimally around movement onset, with a peak-to-trough change of <1 (Figure 6C). When comparing STN activity across all high effect vs. all low effect stimulation parameters rather than individually, the normal movement-related increase in STN activity was strongly suppressed only during highly effective stimulation (Figure 6D; p=1.48 × 10–11 for pre vs. high, p=0.54 for pre vs. low). Taken together, these results suggest that STN DBS disrupts movement-related STN activity and furthermore that this disruption is specific to behaviorally beneficial stimulation parameters.
 
-## Disruption of movement-related STN activity is sufficient to provide therapeutic benefit
+### Disruption of movement-related STN activity is sufficient to provide therapeutic benefit
 
 STN DBS may trigger many changes in both the rate and timing of neural activity. However, it remains critical to determine which changes in neural activity causally contribute to the therapeutic mechanism(s) of STN DBS. In our experiments using electrical STN DBS, we observed changes in overall STN activity and activity around movement initiation, making it difficult to determine which change is more likely to mediate the benefit. To disentangle the behavioral impacts of changing STN rate vs. timing, we replaced electrical DBS/optical recording with optical DBS/electrical recording techniques. We injected parkinsonian VGlut2-Cre mice with Cre-dependent channelrhodopsin (ChR2) and implanted 16-channel optrode arrays in the STN (Figure 7A, Figure 7—figure supplement 1A). We then assessed STN single-unit firing during two optical stimulation paradigms in freely moving parkinsonian mice: ‘constant’ and ‘pulsatile’ (50 Hz) blue light stimulation (both 3 mW). As has been observed previously in anesthetized STN recordings in rats (Yu et al., 2020), STN neurons showed both excitatory and inhibitory responses to optical stimulation (Figure 7B–E; Figure 7—figure supplement 1B-C). However, both stimulation paradigms caused similar decreases in overall firing rate (Figure 7C and E; p=0.98 comparing relative firing rates during constant and 50 Hz stimulation, Wilcoxon signed-rank test). Of note, the response of STN neurons to optical stimulation differed between in vivo/freely moving and ex vivo preparations. During cell-attached patch-clamp recordings of STN in ex vivo slices (Figure 7—figure supplement 1D), pulsatile (50 Hz) blue light stimulation increased STN firing fairly consistently (Figure 7—figure supplement 1E-F; p=0.033), while constant illumination evoked more variable changes in spiking (Figure 7—figure supplement 1G-H; p=0.63). The effects of optical stimulation on STN firing in the in vivo, freely moving condition, however, are most relevant to the behavioral impact of STN DBS.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/75253/elife-75253-fig7-v2.jpg)
+
+**Figure 7.:** (A) Left: Sagittal schematic showing viral injection and 16-channel optrode implantation in the STN. Right: Postmortem sagittal section showing ChR2 expression in the STN (inset, scale = 500 μm). (B) Representative STN single-unit firing in response to continuous optical stimulation, given in 1 min epochs (blue bars). (C) Average z-scored firing rate of STN single units before, during, and after continuous optical stimulation (n=17 neurons, N=3 mice). (D) Representative STN single-unit firing in response to 50 Hz optical stimulation, given in 1 min epochs (blue bars). (E) Average z-scored firing rate of STN single units before, during, and after 50 Hz optical stimulation (n=17 neurons, N=3 mice). (F) Average z-scored firing rate of STN single units aligned to movement starts before (left) and during (right) continuous optical stimulation. Inset: average change in firing rate around movement starts (see Materials and methods for further details) before (pre) or during (con) constant optical stimulation (n=17 neurons, N=3 mice). (G) Average z-scored firing rate of STN single units aligned to movement starts before (left) and during (right) 50 Hz optical stimulation. Inset: average change in firing rate around movement starts before (pre) and during (50) 50 Hz optical stim (n=17 neurons, N=3 mice). (H) Representative single-session movement velocity in response to continuous optical stimulation, given in 1 min epochs. (I) Average velocity before, during, and after continuous optical stimulation (N=11 mice). (J) Representative single-session movement velocity in response to 50 Hz optical stimulation, given in 1 min epochs. (K) Average velocity before, during, and after 50 Hz optical stimulation (N=11 mice). Statistical significance was determined using a Wilcoxon rank-sum test (F–G) or a one-way repeated measures ANOVA with a Tukey HSD post hoc analysis applied to correct for multiple comparisons (C,E,I,K); *p<.05, ***p < 0.001 (for ANOVA, only comparison between pre and laser shown, see Supplementary file 1, table 1 for detailed statistics). Arrowhead in firing rate and velocity traces corresponds to 0 spike/s and 1 cm/s, respectively. Bar plots and average firing rate traces show mean ± SEM.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/75253/elife-75253-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Sagittal schematic showing estimated extent of viral ChR2 or eYFP spread in the subthalamic nucleus (STN) of VGlut2-Cre mice (N=20 mice). (B–C) Average in vivo firing rate of STN single units over time in response to continuous (B) or 50 Hz (C) optical stimulation (n=17 cells, N=3 mice), subdivided into neurons in which firing rate increased to greater than 0 z-score (top traces, red) and neurons in which firing rate decreased to less than 0 z-score (bottom traces, blue). (D) Recording configuration for ex vivo recordings of STN neurons in the cell-attached configuration. (E) Representative STN neuron before, during, and after 50 Hz optical stimulation. 1 s portions of the sweep are shown below. (F) Average firing rate before, during, and after 50 Hz optical stimulation (n=13 cells, N=3 mice). (G) Two STN neurons before, during, and after constant optical stimulation, demonstrating the variable response of neurons. 1 s portions of the sweep are shown below. (H) Average firing rate before, during, and after constant optical stimulation (n=13 cells, N=3 mice). (I) Average movement velocity and change in rotation bias (inset) in response to constant optical stimulation in ChR2 mice (N=11 mice). (J) Average percent time moving before, during, and after constant optical stimulation in ChR2 mice (N=11 mice). (K) Average movement velocity before, during, and after constant optical stimulation in mice injected with eYFP (N=9 mice). (L) Average movement velocity and change in rotation bias (inset) in response to 50 Hz optical stimulation in ChR2 mice (N=11 mice). (M) Average percent time moving before, during, and after 50 Hz optical stimulation in ChR2 mice (N=11 mice). (N) Average movement velocity before, during, and after 50 Hz optical stimulation in mice injected with eYFP (N=9 mice). Statistical significance was determined using a one-way repeated measures ANOVA with a Tukey HSD post hoc analysis applied to correct for multiple comparisons; *p < 0.05 (only comparison between pre and laser shown, see Supplementary file 1, table 1 for detailed statistics). Arrowhead in firing rate, cell-attached, and velocity traces corresponds to 0 z-score, 0 pA, and 1 cm/s, respectively. Firing rate traces, velocity traces, and bar plots show mean ± SEM.
 
 While both optical stimulation patterns produced decreases in the average firing rate of STN neurons, the two stimulation paradigms had different effects on movement-related STN activity. During stimulation-off epochs for both paradigms, STN firing rate increased around the time of movement starts (Figure 7F and G, left), as we had observed previously (Figure 1L). During constant optical stimulation, these movement-related firing dynamics did not change significantly (Figure 7F, right; p=0.51). In contrast, pulsatile 50 Hz stimulation greatly attenuated firing rate increases around movement onset (Figure 7G, right; p=0.039). Based on these electrophysiological recordings, continuous and 50 Hz optical stimulation produce similar changes in firing rate, but distinct effects on movement-related activity, allowing us to disentangle the effects of STN rate and pattern in producing therapeutic effects in parkinsonian mice.
 
@@ -109,15 +153,144 @@ Excitingly, our observation that non-canonical changes in STN activity confer th
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus, C57Bl/6)</td>
+      <td>VGluT2-Cre</td>
+      <td>JAX</td>
+      <td>RRID IMSR_JAX:028863</td>
+      <td>Hemizygous</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus, C57Bl/6)</td>
+      <td>VGAT-Cre</td>
+      <td>JAX</td>
+      <td>RRID IMSR_JAX:016962</td>
+      <td>Hemizygous</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57Bl/6)</td>
+      <td>C57Bl/6J</td>
+      <td>JAX</td>
+      <td>RRID IMSR_JAX:000664</td>
+      <td>Wild-type</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (AAV)</td>
+      <td>AAV1-Syn-Flex-GCaMP6s-WPRE-SV40</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_100845</td>
+      <td>Diluted 1:8 in normal saline</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (AAV)</td>
+      <td>AAV2retro-Cre-mCherry</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_55632</td>
+      <td>Undiluted</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (CAV)</td>
+      <td>CAV-Cre</td>
+      <td>Montpellier</td>
+      <td>CAV-Cre</td>
+      <td>Undiluted</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (AAV)</td>
+      <td>AAV5-DIO-ChR2-eYFP</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_20298</td>
+      <td>Diluted 1:2 in normal saline</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (AAV)</td>
+      <td>AAV5-DIO-eYFP</td>
+      <td>UNC Vector Core</td>
+      <td>No. order # available</td>
+      <td>Undiluted</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>16-Channel 7 mm fixed electrode array</td>
+      <td>Innovative Neurophysiology</td>
+      <td>No. catalog #</td>
+      <td>Tungsten microwire array</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Master8</td>
+      <td>AMPI</td>
+      <td>RRID:SCR_018889</td>
+      <td>Stimulus pattern generator</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosine hydroxylase (rabbit polyclonal)</td>
+      <td>Pel-Freez</td>
+      <td>Order # P40101-150RRID:AB_2617184</td>
+      <td>lot #: AJ0818B; (1:1000) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosine hydroxylase (chicken polyclonal)</td>
+      <td>Millipore</td>
+      <td>Order # AB9702RRID:AB_570923</td>
+      <td>lot #: 3152195; (1:1000) dilution</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Plexon Offline Sorter</td>
+      <td>Plexon</td>
+      <td>RRID:SCR_000012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision</td>
+      <td>Noldus</td>
+      <td>RRID:SCR_000441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IgorPro</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td>With MafPC: https://www.xufriedman.org/mafpc</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td>v.2019a</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Three- to six-month-old WT and transgenic C57Bl/6 mice of either sex were used in this study. To allow optical recording and manipulation of glutamatergic STN neurons, homozygous VGlut2-Cre mice (Stock No. 028863; RRID IMSR_JAX:028863, Jackson Labs) were bred to WT C57BL/6 mice (Jackson Labs) to yield hemizygous VGlut2-Cre mice. To allow optical recording of GABAergic SNr neurons, homozygous VGAT-Cre mice (Stock No. 028862; IMSR_JAX:016962, Jackson Labs) were bred to WT C57BL/6 mice (Stock No. 000664; RRID IMSR_JAX:000664, Jackson Labs) to yield hemizygous VGAT-Cre mice. Hemizygous experimental animals were used to minimize potential confounds reported in association with homozygous BAC transgenic animals or homozygous breeding schemes (Chan et al., 2012; Nelson et al., 2012). VGluT2-Cre and VGAT-Cre mice have IRES-Cre targeted to the Slc17a6 locus and Slc32a1 locus, respectively. Animals were housed 1–5 per cage on a 12 hr light/dark cycle with ad libitum access to rodent chow and water. All behavioral manipulations were performed during the light phase. We complied with local and national ethical regulations regarding the use of mice in research. All experimental protocols were approved by the UC San Francisco Institutional Animal Care and Use Committee.
 
-## Electrical DBS devices
+### Electrical DBS devices
 
 A detailed protocol for DBS implants can be found at https://doi.org/10.17504/protocols.io.261gen92dg47/v1. Briefly, we constructed electrical DBS devices consisting of three twisted pairs of stainless steel wire (76.2 µm diameter, coated, AM Systems), cut at an angle to span approximately 300 µm in DV. These were pressure-fit into female Millmax connectors. Each electrode pair was tested for shorts prior to electrode implantation. For additional details, see Schor and Nelson, 2019.
 
-## Surgical procedures
+### Surgical procedures
 
 A detailed protocol for stereotaxic surgery can be found at https://doi.org/10.17504/protocols.io.n2bvj6qynlk5/v1. Briefly, stereotaxic surgery was performed between 3 and 6 months of age. Anesthesia was induced with intraperitoneal (IP) injection (0.1 mL) of ketamine (40 mg/kg) and xylazine (10 mg/kg) and maintained with inhaled isoflurane (0.5–1%). To model PD in mice, the neurotoxin 6-OHDA (1 μL, 5 mg/mL) was injected unilaterally in the left MFB (–1.0 AP, –1.0 ML, 4.9 DV from Bregma). Desipramine (0.2 mL, 2.5 mg/mL) was injected IP approximately 30 min prior to 6-OHDA injections to reduce uptake by other monoaminergic neurons in the MFB. Additional surgeries were performed at least 2 weeks following 6-OHDA injection.
 
@@ -127,31 +300,31 @@ For in vivo electrophysiological experiments, mice were implanted with a 16-chan
 
 For experiments involving M1 lesioning, a large rectangular craniectomy was performed to expose brain tissue containing M1 (vertices of rectangle at [–0.1 AP, –2.1 ML]; [2.6 AP, –2.1 ML]; [2.6 AP, –0.9 ML]; and [–0.1 AP, –0.9 ML]). A micro knife (FST) was then used to carefully remove a 1 mm thick rectangle of brain tissue that was the height and width of the craniectomy under a dissecting microscope. A hemostatic sponge (Ethicon) was used to staunch any bleeding before covering the lesion and adjacent bone with silicone sealant (Kwik-Cast). A three-lead bipolar stimulating electrode array was then implanted in the ipsilesional STN as previously described. The scalp was closed with Vicryl suture. The analgesics buprenorphine (0.05 mg/kg IP) and ketoprofen (5 mg/kg SQ) were administered immediately postoperatively and as needed subsequently for postoperative pain. A minimum of 10 days of recovery was allowed before subsequent behavioral testing.
 
-## Behavior
+### Behavior
 
 A protocol for behavioral testing can be found here: https://doi.org/10.17504/protocols.io.n2bvj6qynlk5/v1. All behavior was conducted in the open field (clear acrylic cylinders, 25 cm diameter) following 1 day of habituation (20 min). Mice were monitored via two cameras, one directly above and one in front of the chamber. Video-tracking software (Noldus Ethovision XT version 10; RRID:SCR_000441) or custom-written code (Matlab v. 2019a RRID:SCR_001622) was used to quantify locomotor activity, including movement velocity, ipsilateral rotations, and contralateral rotations. Dyskinesia was scored manually by an unblinded rater using a modified version of the abnormal involuntary movement scoring method (Cenci and Lundblad, 2007). Dyskinesia was quantified in 1 min increments either every minute (for STN DBS experiments) or every 5 min (for levodopa experiments), with axial, limb, and orofacial body segments rated on a scale of 0–3 each. A score of 0 indicates no abnormal movement, while a score of 3 indicates continuous dyskinesia for the 1 min epoch. The scores for each body segment are then summed, with a maximum score of 9 per epoch.
 
-## Pharmacology
+### Pharmacology
 
 6-OHDA (Sigma Aldrich) was prepared at 5 mg/mL in normal saline. Levodopa was prepared (0.5 mg/mL Sigma Aldrich) with benserazide (0.25 mg/mL, Sigma Aldrich) in normal saline and always administered at 5 mg/kg.
 
-## Electrical stimulation
+### Electrical stimulation
 
 An isolated constant current bipolar stimulator (WPI) was used to deliver electrical stimuli. The timing of stimuli was controlled by TTL input from an Arduino. Electrical stimulation experiments consisted of five 1 min stimulation periods, each preceded and followed by 1 min of no stimulation, for a total of 11 min. Both the construction of STN DBS electrodes and the determination of optimal stimulation electrode pair were as detailed previously (Schor and Nelson, 2019).
 
-## Fiber photometry
+### Fiber photometry
 
 A detailed protocol for fiber photometry can be found at https://doi.org/10.17504/protocols.io.8epv59dbjg1b/v1. Fiber photometry signals were acquired through implanted 400 μm optical fibers, using an LED driver system (Doric). Following signal modulation, 405 nm (control signal, from GCaMP autofluorescence) and 465 nm signals were demodulated via a lock-in amplifier (RZ5P, TDT), visualized, and recorded (Synapse, TDT). Offline, the 405 nm signal was fit to the 465 nm signal using a first-degree polynomial fit (Matlab) to extract the non-calcium-dependent signal (due to autofluorescence, fiber bending, etc.). The fitted 405 nm signal was then subtracted from the 465 nm signal to generate a motion-corrected signal. Animals in which the fitted 405 nm signal did not differ from the 465 nm signal were excluded from further analysis. To remove the gradual, slow bleaching observed in the ~3 hr saline and levodopa recordings, we additionally fit a double exponential to the 405 nm signal, linearly fit it to the the motion-corrected signal, and then subtracted it.
 
 Every processed fiber photometry signal was normalized (z-scored) by subtracting the mean and dividing by the standard deviation of the closest preceding ‘pre’ period. For electrical stimulation experiments, the 30 s preceding each stimulation period was used to normalize the subsequent 1 min stim and 1 min post period. For levodopa and saline experiments, the 20 min prior to injection was used to normalize the subsequent 2.5 hr of signal.
 
-## In vivo electrophysiology
+### In vivo electrophysiology
 
 A detailed protocol for in vivo physiology can be found here: https://.doi.org/10.17504/protocols.io.5jyl89w69v2w/v1. Briefly, single-unit activity from microwires was recorded using a commutated (Doric) multiplexed 96-channel recording system (CerePlex Direct, Blackrock Microsystems). Spike waveforms were filtered at 154–8800 Hz and digitized at 30 kHz. The experimenter manually set a threshold for storage of electrical events. Spike sorting and single units (SUs) were identified offline by manual sorting into clusters (Offline Sorter, Plexon, RRID:SCR_000012).
 
 Waveform features used for separating units were typically a combination of valley amplitude, the first three principal components (PCs), and/or nonlinear energy. Clusters were classified as single units if they fulfilled the following criteria: (1) <1% of spikes occurred within the refractory period and (2) the cluster was statistically different (p<0.05, MANOVA using the aforementioned features) from the multi- and other single-unit clusters on the same wire.
 
-## Ex vivo slice electrophysiology and imaging
+### Ex vivo slice electrophysiology and imaging
 
 A detailed protocol for slice electrophysiology can be found at https://doi.org/10.17504/protocols.io.6qpvr67rpvmk/v1. To prepare ex vivo slices for whole-cell recordings and GCaMP imaging, mice were deeply anesthetized with IP ketamine-xylazine, transcardially perfused with ice-cold glycerol-based slicing solution, decapitated, and the brain was removed. Glycerol-based slicing solution contained (in mM): 250 glycerol, 2.5 KCl, 1.2 NaH2PO4, 10 HEPES, 21 NaHCO3, 5 glucose, 2 MgCl2, 2 CaCl2. The brain was mounted on a submerged chuck, and sequential 275 mm coronal or sagittal slices were cut on a vibrating microtome (Leica), transferred to a chamber of warm (34°C) carbogenated ACSF containing (in mM) 125 NaCl, 26 NaHCO3, 2.5 KCl, 1 MgCl2, 2 CaCl2, 1.25 NaH2PO4, 12.5 glucose for 30–60 min, then stored in carbogenated ACSF at room temperature. Each slice was then submerged in a chamber superfused with carbogenated ACSF at 31–33°C for recordings. STN neurons were targeted using differential interference contrast optics in VGlut2-Cre mice on an Olympus BX 51 WIF microscope.
 
@@ -163,25 +336,25 @@ For simultaneous electrophysiology and GCaMP6s imaging, current-clamped neurons 
 
 All ex vivo electrical recordings were passed through a 1 Hz high-pass filter to remove slow electrical drift and spikes were extracted using the findpeaks function in Matlab. All ex vivo optical recordings were first collapsed into a one-dimensional fluorescence time series by averaging the fluorescence of pixels within a defined region-of-interest. In one-photon recordings, this signal was further processed by fitting a double exponential and subtracting it to remove effects of signal bleaching.
 
-## Optogenetic manipulations
+### Optogenetic manipulations
 
 A detailed protocol for optogenetic manipulations can be found at https://doi.org/10.17504/protocols.io.4r3l2oybxv1y/v1. Prior to optical stimulation experiments, animals were habituated to tethering with custom lightweight patch cables (Precision Fiber Products and ThorLabs) coupled to an optical commutator (Doric Lenses) in the open field for 30 min per day, over 1–2 days. Optical stimulation sessions consisted of five 1 min stimulation periods, each preceded and followed by 1 min of no stimulation, for a total of 11 min. TTL-controlled (Master8, A.M.P.I.) blue laser light (488 nm, 3 mW, Shanghai Laser and Optics Century) was delivered in pulse trains (3 ms, 50 Hz) or continuously. Behavior was rated by an observer blinded to the injected construct (ChR2-eYFP or eYFP).
 
-## Histology and microscopy
+### Histology and microscopy
 
 A protocol for immunohistochemistry can be found here: https://doi.org/10.17504/protocols.io.14egn7nezv5d/v1. Mice were terminally anesthetized with IP ketamine (200 mg/kg) and xylazine (40 mg/kg). For mice with an implanted STN DBS device or multielectrode array, the site of stimulation or recording was marked with a solid state, direct current Lesion Maker (Ugo Basile). Mice were then transcardially perfused with 4% paraformaldyde (PFA), the brain was dissected from the skull and fixed overnight in 4% PFA, and then was placed in 30% sucrose at 4°C for 2–3 days. Brains were then cut into 50 μm sagittal sections on a freezing microtome (Leica). To confirm dopamine depletion, tissue was immunostained for tyrosine hydroxylase (TH). Stitched multi-channel fluorescence images were taken on a Nikon 6D conventional widefield microscope at 4–10×, using custom software (UCSF Nikon Imaging Center) to confirm virus expression, fiber placement, and STN DBS placement.
 
-## Group allocation and blinding
+### Group allocation and blinding
 
 The order in which each mouse received electrical stimulation during optical recording experiments was randomized daily, as was the type of stimulation administered. Mouse order and stimulation type was also randomized during optogenetic experiments. For optical manipulations, VGluT-Cre-positive littermates were randomized to eYFP or ChR2-eYFP injection. The experimenter was blinded to experimental group (eYFP vs ChR2-eYFP) during behavioral experiments.
 
-## Inclusion/exclusion criteria
+### Inclusion/exclusion criteria
 
 If the number of ipsilesional TH-positive SNc neurons were >5% of the contralateral (unlesioned) side, the animal was excluded from all analyses. Animals that did not show strong virus expression, proper optical fiber placement (within target structure or <0.2 mm above), and/or proper STN DBS device placement (within STN) were excluded from further analysis. If DBS leads developed a short, further DBS experiments were terminated, but levodopa experiments were continued.
 
 A short developed in one mouse in the STN DBS/SNr fiber photometry cohort, such that only levodopa experiments could be performed. We failed to deliver 1 of the 30 DBS parameter combinations in one mouse from the STN DBS/M1 hyperdirect fiber photometry cohort, so no 100 Hz DBS data were included for this mouse. Across all photometry cohorts, 4 mice were excluded due to insufficient GCaMP expression and/or improper targeting of the optical fiber, resulting in no detectable GCaMP signal (4 of 30 mice). Across optical stimulation cohorts, 2 mice were excluded due to insufficient eYFP or ChR2-eYFP expression (2 of 22 optical stimulation mice). One mouse in the STN in vivo electrophysiology cohort (1 of 4) and 1 mouse from the SNr in vivo electrophysiology cohort (1 of 4) were excluded due to a lack of clearly isolated single units.
 
-## Sample size determination, quantification, statistical analysis, and replication
+### Sample size determination, quantification, statistical analysis, and replication
 
 For in vivo fiber photometry experiments, no similar studies had been performed by which to estimate effect size. We performed small pilot experiments in each recorded brain region to determine the mean and standard deviation of GCaMP signals in these regions. Effect sizes were estimated from these pilots, or from similarly designed and published electrophysiological studies. The sample size was calculated using 0.90 power to detect a significant difference, two-sided nonparametric comparisons, and alpha of 0.05. Sample sizes for ex vivo experiments, in vivo electrophysiology, and in vivo optical stimulation were calculated using a similar approach, but based on variance and effect sizes from previous experiments conducted in the lab using similar methods as well as published studies from other laboratories.
 

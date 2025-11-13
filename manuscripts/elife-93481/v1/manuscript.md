@@ -15,17 +15,17 @@
 
 ### Affiliations
 
-1. https://ror.org/02qz8b764 Cold Spring Harbor Laboratory Cold Spring Harbor United States
-2. https://ror.org/05qghxh33 Program in Neurobiology, Stony Brook University Stony Brook United States
-3. https://ror.org/00py81415 Department of Neurobiology, Duke University Durham United States
+1. Cold Spring Harbor Laboratory Cold Spring Harbor United States ([ROR:02qz8b764](https://ror.org/02qz8b764))
+2. Program in Neurobiology, Stony Brook University Stony Brook United States ([ROR:05qghxh33](https://ror.org/05qghxh33))
+3. Department of Neurobiology, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 4. Department of Neural and Behavioral Sciences, Penn State College of Medicine Hershey United States
-5. https://ror.org/00py81415 Department of Biomedical Engineering, Duke University Durham United States
+5. Department of Biomedical Engineering, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 
 † Corresponding author
 
 ## Abstract
 
-Axo-axonic cells (AACs), also called chandelier cells (ChCs) in the cerebral cortex, are the most distinctive type of GABAergic interneurons described in the neocortex, hippocampus, and basolateral amygdala (BLA). AACs selectively innervate glutamatergic projection neurons (PNs) at their axon initial segment (AIS), thus may exert decisive control over PN spiking and regulate PN functional ensembles. However, the brain-wide distribution, synaptic connectivity, and circuit function of AACs remain poorly understood, largely due to the lack of specific and reliable experimental tools. Here, we have established an intersectional genetic strategy that achieves specific and comprehensive targeting of AACs throughout the mouse brain based on their lineage ( Nkx2.1 ) and molecular ( Unc5b , Pthlh ) markers. We discovered that AACs are deployed across essentially all the pallium-derived brain structures, including not only the dorsal pallium-derived neocortex and medial pallium-derived hippocampal formation, but also the lateral pallium-derived claustrum–insular complex, and the ventral pallium-derived extended amygdaloid complex and olfactory centers. AACs are also abundant in anterior olfactory nucleus, taenia tecta, and lateral septum. AACs show characteristic variations in density across neocortical areas and layers and across subregions of the hippocampal formation. Neocortical AACs comprise multiple laminar subtypes with distinct dendritic and axonal arborization patterns. Retrograde monosynaptic tracing from AACs across neocortical, hippocampal, and BLA regions reveal shared as well as distinct patterns of synaptic input. Specific and comprehensive targeting of AACs facilitates the study of their developmental genetic program and circuit function across brain structures, providing a ground truth platform for understanding the conservation and variation of a bona fide cell type across brain regions and species.
+Axo-axonic cells (AACs), also called chandelier cells (ChCs) in the cerebral cortex, are the most distinctive type of GABAergic interneurons described in the neocortex, hippocampus, and basolateral amygdala (BLA). AACs selectively innervate glutamatergic projection neurons (PNs) at their axon initial segment (AIS), thus may exert decisive control over PN spiking and regulate PN functional ensembles. However, the brain-wide distribution, synaptic connectivity, and circuit function of AACs remain poorly understood, largely due to the lack of specific and reliable experimental tools. Here, we have established an intersectional genetic strategy that achieves specific and comprehensive targeting of AACs throughout the mouse brain based on their lineage (Nkx2.1) and molecular (Unc5b, Pthlh) markers. We discovered that AACs are deployed across essentially all the pallium-derived brain structures, including not only the dorsal pallium-derived neocortex and medial pallium-derived hippocampal formation, but also the lateral pallium-derived claustrum–insular complex, and the ventral pallium-derived extended amygdaloid complex and olfactory centers. AACs are also abundant in anterior olfactory nucleus, taenia tecta, and lateral septum. AACs show characteristic variations in density across neocortical areas and layers and across subregions of the hippocampal formation. Neocortical AACs comprise multiple laminar subtypes with distinct dendritic and axonal arborization patterns. Retrograde monosynaptic tracing from AACs across neocortical, hippocampal, and BLA regions reveal shared as well as distinct patterns of synaptic input. Specific and comprehensive targeting of AACs facilitates the study of their developmental genetic program and circuit function across brain structures, providing a ground truth platform for understanding the conservation and variation of a bona fide cell type across brain regions and species.
 
 ## Introduction
 
@@ -37,13 +37,86 @@ Here, we leverage lineage origin and molecular markers to establish an intersect
 
 ## Results
 
-## Lineage and marker-based intersectional targeting captures AACs across brain regions
+### Lineage and marker-based intersectional targeting captures AACs across brain regions
 
 The embryonic subpallium generates GABAergic neurons of the telencephalon, with the MGE giving rise to AACs (Kelly et al., 2019; Taniguchi et al., 2013) while other progenitor domains, such as the caudal ganglionic eminence (Miyoshi et al., 2015) or preoptic area (Gelman et al., 2011) do not. Within the MGE Nkx2.1 lineage, AACs are generated in two consecutive waves during both early and late neurogenesis (Kelly et al., 2019), extending our initial report of their birth pattern (Taniguchi et al., 2013). Therefore, late embryonic induction in the Nkx2.1CreER line only enriches a subset of neocortical AACs and also labels at least two other IN types Kelly et al., 2019; this strategy also misses AACs in the hippocampus, BLA, and potentially other brain areas that are born earlier (Kelly et al., 2019). Taking a different approach based on scRNAseq analysis, we identified several pAAC markers (Paul et al., 2017) and accordingly generated Unc5bCreER and PthlhFlp driver lines. However, neither by itself is fully specific to AACs: the former also labels endothelial cells and sparse cortical pyramidal neurons (data not shown), and the latter labels a subset of CGE-derived INs (Figure 1—figure supplement 3m–p). To purify AACs from these driver lines, we then designed an intersectional strategy that combines lineage and molecular markers (Figure 1a); we tested the intersection of Nkx2.1Flp with Unc5bCreER as well as Nkx2.1CreER with PthlhFlp. We expected that the constitutive Nkx2.1Flp or Cre line would cover the entire output from MGE, including all AACs, and the intersection with postmitotic markers would specifically capture AACs.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig1-v1.jpg)
+
+**Figure 1.:** Schematic of lineage (Nkx2.1) and marker (Unc5b) intersection for pan-AAC labeling. (a) Embryonic Nkx2.1 expression defines medial ganglionic eminence (MGE) interneuron identity while subsequent postnatal Unc5b expression restricts interneurons to AACs. Height of green or gray shade represents relative expression levels. (b) Configuration of triple allele intersectional labeling, combining Unc5bCreER and Nkx2.1Flp drivers and the Cre-AND-Flp Ai65 reporter. Embryonic Flp expression removes the frt-flanked STOP cassette and postnatal CreER induction removes the loxp-flanked STOP, thereby activating constitutive tdTomato expression. (c) Schematic showing that MGE-derived AACs migrate and populate all four pallial-derived brain structures depicted in color: medial pallium (red), dorsal pallium (green), lateral pallium (violet and blue), and ventral pallium (yellow and orange). (d) Representative midsagittal section showing AAC labeling in cerebral cortex, hippocampal formation (HPF), and olfactory centers such as piriform cortex (PIR) and anterior olfactory nucleus (AON). Note sparse labeling in lateral hypothalamus (LH) and striatum (str). (e-g) Representative coronal sections at specified anterior–posterior coordinates (from Bregma) showing dense AAC labeling in cerebral cortex (e–g), HPF (f, g), claustrum (CLA, e), endopiriform (EP, f, g), taenia tecta (TTd, e), lateral septum (LS, e), basolateral amygdala (BLA, f, g), cortical amygdala (COA, f, g), medial amygdala (MeA, f), and hypothalamus (HYP, g). Scale bars, 500 µm. Abbreviations for anatomical structures are listed in Supplementary file 1. All images showing Ai65-tdTomato were immunostained for signal amplification.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a–f) Additional representative coronal sections showing dense Ai65 expression patterns at specified anterior–posterior coordinates (from Bregma). Note labeling in cerebral cortex (a–f); hippocampus (e, f); olfactory centers, including piriform, anterior olfactory nucleus, and tenia tecta dorsal (PIR, AON, TTd) (a, b); agranular insula, claustrum, and endopiriform nucleus (AI, CLA, EP) (b, c); amygdaloid complex and extended amygdala (COA, basolateral amygdala [BLA], MeA) (d–f); Bed nuclei of the stria terminalis (BST) (d); and hypothalamus (HYP) (e, f). Ai65-labeled putative AACs (pAACs) in the bed nuclei of the stria terminalis (BST) are largely confined to the principal nucleus (BSTpr), with pAACs clustering more densely in anterior BSTpr (g, h) compared to more posterior segments (i, j). (k–n) Ai65-labeled pAACs in the hypothalamus are densest in the ventral-medially area of the arcuate nucleus (ARH), with highest density in caudal portions (k–m) and more posteriorly in the paraventricular hypothalamic nuclei (PVP) (n). pAACs are also present sparsely in the dorsal-medial nucleus of the hypothalamus (DMH) (k–m). Scale bars, 500 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a–c) A lateral sagittal section showing the lateral pallium (lPAL)-derived anterior insular (AI), claustrum (CLA), endopiriform (EP) (magnified in b), and medial pallium (mPAL)-derived hippocampal formation (magnified in c). Note the single-banded orientation of hippocampal (c) and insular (b) axo-axonic cells (AACs) that is absent in more inferior lPAL structures (b). A more medial sagittal section showing dorsal and ventral hippocampus and retrohippocampal region (RHP) (d), retrohippocampus, and visual and retrosplenial cortex (e). Compare the dual-banded AAC distribution in upper and deeper cortical layers to the single-banded pattern in hippocampus. Also note dense labeling in amygdaloid complex and extended amygdala (basolateral amygdala [BLA], cortical amygdala [COA], and MeA) (a, d). Scale bars, 500 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Schematic of intersectional strategy. (b–d) Tamoxifen induction of Nkx2.1CreER; PthlhFlp; Ai65 at E14.5 or E17.5 sparsely labels chandelier cells (ChCs) with diverse morphology in sensorimotor cortices. Arrowheads highlight a translaminar AAC type in layer 2, which extends axon arbors into deep layers. Scale bars, 65 µm. (e–i) Coronal hemisections from Nkx2.1Cre; PthlhFlp; Ai65 at specified anterior–posterior coordinates (mm from Bregma) showing pattern of dense labeling. Note labeling in cerebral cortex (e–i); hippocampus (h, i); olfactory centers, including piriform, anterior olfactory nucleus (AON), and tenia tecta dorsal (e–h); agranular insula, claustrum, and endopiriform nucleus (AI, CLA, EP) (f); amygdaloid complex and extended amygdala (COA, basolateral amygdala [BLA], MeA) (h, i); and hypothalamus (HYP) (i). Labeling by Nkx2.1Cre; PthlhFlp is sparser in AON and anterior TTd and absent in BST compared to Unc5bCreER; Nkx2.1Flp (Figure 1). Note non-AAC labeling of layer 4 interneurons in somatosensory cortex (g, h) and striatum CP (f–h). The absence of projection fibers in SNr (i) suggests these striatal cells are not medium spiny neurons and likely striatal interneurons. Scale bars, 500 µm. (j–l) Coronal hemisections from Nkx2.1CreER; PthlhFlp; Ai65 following a single tamoxifen dose at embryonic day 18.5 (E18.5) shows exclusive specificity for individual ChCs across neocortex. Scale bars, 500 µm. (m) Intersectional strategy of Pthlh and Vip using VipCre; PthlhFlp; Ai65 mice. (n–p) Dense labeling of cortical and hippocampal interneurons with predominantly bipolar morphology (putative interneuron-selective cells) in cortical layers II/III and deep layers. Scale bars, 500 µm.
 
 We first combined Nkx2.1Flp and Unc5bCreER driver lines with an Ai65 intersectional reporter allele to generate Unc5bCreER; Nkx2.1Flp; Ai65 mice (Figure 1b). Tamoxifen induction (TM) allows dose-dependent titration of AAC labeling density, allowing the characterization of global distribution patterns en masse with high dose as well as the evaluation of individual cell morphologies with sparser labeling by lower dose (see methods). Indeed, postnatal high-dose TM induction generated dense and highly characteristic AAC labeling patterns throughout the neocortex, hippocampus, and BLA (Figure 1d–g). The characteristic chandelier axon arbor morphology with strings of synaptic boutons (cartridges) along the AIS of pyramidal neurons unequivocally indicated their AAC identity (Figure 1, Figure 1—figure supplements 1–3), consistent with our previous high-resolution single-cell AAC imaging and reconstructions (Wang et al., 2019).
 
 Surprisingly, cell labeling extended much beyond these three previously reported structures that contain AACs. As the AAC identity of labeled cell is validated in most but not all these structures, we tentatively call some of these pAACs. Extensive analysis of these brain regions revealed an overarching pattern: AACs and pAACs are abundantly present in essentially all pallium-derived structures and several additional structures (Table 1; Figure 1c–g, Figure 1—figure supplements 1 and 2, Video 1). The dPAL-derived structures include the entire neocortex and entorhinal/ectorhinal cortices. The mPAL-derived structures include the entire hippocampal formation. Beyond these previously known structures, pAACs are abundant in lPAL-derived claustrum, insular, and endopiriform dorsal. In addition, the vPAL-derived structures include most of the amygdaloid complex (cortical amygdala, basolateral and basomedial amygdala, and medial amygdala) and extended amygdala (bed nucleus of stria terminalis). Most surprisingly, AACs are highly abundant in a set of olfactory centers including piriform cortex, AON, and TT. Among these, the piriform derives from the vPAL while AON and tenia tecta dorsal (TTd) derive from septum neuroepithelium. Finally, pAACs are found in lateral septum also derived from septum neuroepithelium (Magno et al., 2022) and parts of the hypothalamus (derived largely from neuroepithelium of the third ventricle).
+
+**Table 1.**
+ Brain-wide distribution pattern of putative axo-axonic cells (AACs).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Developmental origin</th>
+      <th>Brain structure</th>
+      <th>Evolutionary term</th>
+      <th>Validation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dorsal pallium</td>
+      <td>Neocortex all cortical areasentorhinal, perirhinal</td>
+      <td>Isocortex</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Medial pallium</td>
+      <td>Hippocampal formationdentate, CA1, CA2, CA3subiculum</td>
+      <td>Archicortex</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Lateral pallium</td>
+      <td>Claustrum insular endopirifom dorsal</td>
+      <td></td>
+      <td>Not yet</td>
+    </tr>
+    <tr>
+      <td>Ventral pallium</td>
+      <td>Amygdaloid complexBLACoAMEABMAextended amygdalaCeA (no AACs found)BNST (putative cases only)olfactory cortexPiriformEndopiriform ventral [no]</td>
+      <td>Paleocortex</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Septal neuroepithelium</td>
+      <td>Lateral and medial septumTania tectaAON</td>
+      <td></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Hypothalamo-telencephalic prosomere h1/h2</td>
+      <td>HypothalamusArcuate nucleusPeriventricular hypothalamic nucleus</td>
+      <td></td>
+      <td>Not yet</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/93481/elife-93481-video1.mp4.jpg)
+
+**Video 1.:** Serially reconstructed coronal images of representative dense-labeled Unc5bCreER; Nkx2.1Flp; Ai65 brain imaged by STP microscopy at 50 µm intervals. Scale bar, 500 µm.
 
 Consistent with these findings, the PthlhFlp; Nkx2.1Cre; Ai65 mice were found to have an overall similar pattern of pAAC distribution across different brain regions, with several differences (Figure 1—figure supplement 3). First, this intersection also labeled a set of layer 4 INs in the somatosensory cortex (Figure 1—figure supplement 3f). Second, Pthlh;Nkx2.1 yielded slightly higher cell targeting in retrosplenial cortex (Figure 1—figure supplement 3h, i). Third, Pthlh;Nkx2.1 labeled fewer cells in the AON and BST. As an additional application of the PthlhFlp line, we demonstrate that when combined with an inducible Nkx2.1CreER driver (Taniguchi et al., 2013) the PthlhFlp; Nkx2.1CreER; Ai65 mice led to exclusive fate mapping of AACs (Figure 1—figure supplement 3j–l). The overall similarity between Unc5b/Nkx2.1 and Pthlh/Nkx2.1 patterns (except in layer 4 somatosensory cortex and striatum), and high density of cells captured, provided independent evidence that these intersectional approaches may have captured most if not all AACs in the brain.
 
@@ -51,11 +124,19 @@ In addition to targeting AACs, the PthlhFlp is a useful tool for at least two ad
 
 In sum, our lineage and marker intersections combining Nkx2.1Flp, Nkx2.1Cre, or Nkx2.1CreER with Unc5bCreER or PthlhFlp appear to have achieved unprecedented specificity and comprehensiveness of AAC targeting. To validate this result, in the following sections, we present more detailed and quantitative descriptions of AACs and pAACs across brain structures.
 
-## Areal, laminar, and subtype distribution of AACs across the neocortex
+### Areal, laminar, and subtype distribution of AACs across the neocortex
 
 Previous studies have identified ChCs in multiple neocortical areas and cortical layers with the observation of several morphological variants (Kelly et al., 2019; Somogyi et al., 1982; Taniguchi et al., 2013; Wang et al., 2019), but the global and quantitative distribution of ChC across the cerebral cortex and cortical layers is unknown. To first validate the specificity of our method to ChCs, we used single low-dose TM induction to sparsely label individual cells across cortical areas (Figure 2—figure supplement 1). Combined with immunolabeling of AnkyrinG-stained pyramidal neuron (PN) AIS, we showed that the vast majority of RFP+ cells (97.3%, n = 110 cells from 6 mice) had axonal cartridge structure with synaptic boutons along PN AIS, validating their ChC identity (Figure 2—figure supplement 1).
 
 To systematically map and quantify ChC distribution across the entire cerebral cortex, we then used high-dose TM induction in Unc5bCreER; Nkx2.1Flp; Ai65 mice to densely label ChCs and performed serial two-photon tomography (STP) across the entire mouse brain at 50 µm intervals (Video 1). The whole-brain STP datasets were then registered to the Allen CCFv3 atlas, followed by segmentation of anatomical regions and an automated cell detection algorithm was applied to identify and quantify labeled cells in each region (Ragan et al., 2012; Kim et al., 2017; Matho et al., 2021). ChCs were detected across all areas of cerebral cortex (Figure 2a; Video 1). Normalized cell density analysis revealed area-specific patterns (Figure 2b). The highest densities were observed in ventrolateral areas such as PERI, ECT, TEA, and AI as well as ventromedially in infralimbic area (ILA). There was a slight decline in ChC density very rostrally in FRP or caudally in RSP.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig2-v1.jpg)
+
+**Figure 2.:** (a) Representative two-dimensional (2D) stereotactic plot of cortical ChC distribution in Unc5b; Nkx2.1. Dots represent individual red fluorescent (RFP) labeled cells. Anterior–posterior distance from Bregma (vertical scale on right). (b) Normalized ChC cell density (cells/um3) following registration to ARAv3 isocortical areas. For b and c, data are mean ± standard error of the mean (SEM). (c) Comparative bar plot showing relative proportion in each cortical layer in sensorimotor cortices. (d) Violin plots of ChC cell density proportion along pia-to-white matter cortical depth in each sensorimotor cortical area. Median is used for each violin plot. (e) Scatterplot of ChC distribution along pia-to-white matter depth (vertical axis) and anterior–posterior distance from Bregma (horizontal axis, in mm); red dots represent individual cells. While a vast majority (~80%) of ChCs occupy a band near the layer I/II border, ChCs in other layers account for ~20% of the total cortical population and vary in depth distribution by anterior–posterior cortical location. (f) Representative ChC laminar distribution pattern, showing largely separated supragranular (top inset) and infragranular (bottom inset) laminar subtypes. Scale bars, 200 µm and insets, 100 µm. (g–i) Multiple ChC laminar subtypes revealed by single-cell labeling using low-dose tamoxifen induction. These include supragranular subtypes (g), infragranular and inverted subtypes (h), and translaminar L2/3 subtypes that extend long vertical axons (white arrowheads) to deep layers (i). White arrowheads highlight axonal plexi distant from soma in translaminar types. Scale bars, 65 µm. (j) Example of regional ChC morphological diversity in auditory cortex, with relatively high proportion of translaminar subtypes. Scale bar, 200 µm. (k–n) ChC axon terminal (i.e. ‘cartridge’) labeling and mapping using intersectional synaptophysin-EGFP/cytoplasmic-tdtomato reporter mouse line. Diagram of intersectional genetic labeling of ChC cartridges (EGFP) and soma (tdTomato). Pixel classifier trained to segment EGFP-expressing ChC cartridges in cortex and CA1 hippocampus. Native EGFP fluorescence was imaged using serial two-photon (STP) microscopy. White arrowheads indicate detected EGFP-labeled cartridges. Scale bars, 100 µm. Density of ChC cartridges (cartridges/µm3) registered to ARAv3. Representative relative depth plots (from pia) of individual detected cartridges at a single AP coordinate for each cortical area. Refer to for ARAv3 area label abbreviations. Note reduced deep layer cartridges in FRP, RSP, and V1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** AnkyrinG or IκBα immunohistochemical labeling (green) of PyN axon initial segment (AIS) was used for validation of axo-axonic targeting. Examples are shown of characteristic upper L2 ChCs in motor (a), sensory (b, d, j), cingulate (f, k), and insular cortex (i). Examples of deeper L5 or L6 ChCs in somatosensory (c, e, g) and temporal association area (TEA) (h). Note the clustering of a distinct morphological subtypes in ventromedial infralimbic cortex (l). High-magnification inset (g): white arrowheads indicate segments of overlap between AnkG and RFP. Scale bars, 50 and 5 µm for high-magnification insets.
 
 We further mapped ChC distribution across cortical layers in several sensory and motor areas (Figure 2c, d). The majority of ChC somas were located in L2/3, though this was area specific, with normalized density ranging from the lowest in SSs (65.5 ± 0.6%) to highest in VISp (94.7 ± 1.0%). An analysis of relative cortical depth (Figure 2e) revealed that ~80% of ChCs occupied a narrow band just below the L1/2 border, though this varied by anterior–posterior location. Nevertheless, ChCs were found at nearly all cortical depths, with a sizable proportion forming a second, less dense band above the white matter tract. This largely ‘bilaminar’ pattern was highly evident in certain areas such as the SSp (Figure 2f).
 
@@ -63,29 +144,29 @@ To more systematically sample the morphological variations of ChCs, we used low-
 
 In addition to soma position and cell morphology, we sought to map the distribution of ChC axon terminals (i.e. cartridges) throughout the mouse cortex. For this purpose, we used a Cre/Flp-dependent reporter line expressing a synaptophysin–EGFP fusion protein and cytoplasmic tdTomato (Niederkofler et al., 2016; Figure 2k–l). Following high-dose induction and dense labeling, we performed whole brain STP imaging and calculated cartridge density across ARAv3 areas (see Methods). ChC cartridges exhibited a wide range of densities across areas and layers (Figure 2m), with overall similarity to ChC soma densities in those areas and layers (Figure 2b). Plotting the relative laminar depth for ChC cartridges in each area (Figure 2n) revealed characteristic patterns of population-level laminar innervation onto PNs.
 
-## AACs in the hippocampus
+### AACs in the hippocampus
 
 Decades of studies of hippocampal AACs using traditional anatomical and physiological methods have implicated their role in network oscillations, including sharp waves and epilepsy (Fitzgerald et al., 2013; Klausberger et al., 2003; Viney et al., 2013) but the quantitative distribution of AACs across hippocampal formation has remained unknown, and reliable genetic access to hippocampal AACs is not well established. We applied Unc5b/Nkx2.1 intersectional targeting and STP to map AAC distribution throughout hippocampal compartments. Single-cell labeling by low-dose tamoxifen and immunohistochemistry confirmed that the vast majority (98.2%, n = 56 cells, 6 mice) were AACs, characterized by vertically oriented cross laminar apical dendrites in CA1–CA3 and axon terminals innervating PN AIS (Figure 3a, b, d). Dense labeling with high-dose TM followed by cell density analysis revealed that AAC density was, surprisingly, highest in CA2 and lowest in dentate gyrus (Figure 3c), with density in CA1 and CA3 approximately equal. Only a very sparse population of AAC was labeled in dentate gyrus. Overall AAC density in CA2 was 3- to 4-fold greater than CA1/CA3 and 13-fold greater than dentate gyrus (DG) (Figure 3c). As the density of PNs across hippocampal areas is overall similar, this result suggests substantially different AAC–PN innervation ratio and that AACs may exert much denser and likely stronger control of CA2 PNs than CA1/CA3 PNs or DG granule cells.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig3-v1.jpg)
 
-**Figure 3.:** (a) Population labeling of AACs throughout hippocampal compartments by Unc5b; Nkx2.1 intersection. Note the highly stereotyped banded distribution of AACs in CA1–CA3, with somata in the stratum pyramidale and vertically oriented dendrites extending basally to the stratum oriens and apically to the striatum lacunosum-moleculare. AACs are much sparser in dentate gyrus, with individual cells having elaborate and extended horizontal axon arbor. Scale bars, 200 and 50 µm for high-magnification inset. (b) AACs in ventral CA1 have overall similar morphology as in dorsal CA1, though with longer basal–apical dendrites matching the ventral CA1 anatomy. (c) Normalized AAC cell density (cells/µm3) across hippocampal compartments. CA2 has 3- to 4-fold higher AAC cell density compared to CA1 and CA3 and 12-fold higher compared to DG. (d–i) Immunohistochemistry validation with the axon initial segment (AIS) markers AnkG or IκBα (green) and sparse-labeled RFP cells confirm axo-axonic targeting by the intersectional strategy. Examples of hippocampal AACs in CA1 (e, g), CA2 (d) and CA3 (d, f, h). In contrast, AACs in DG have much wider axon arbor in the stratum granulosum, potentially innervating many more granule cell AIS compared to in other hippocampal compartments (i). High-magnification inset: white arrowheads indicate segments of IκBα and RFP apposition. Scale bars, 50 and 20 µm for high-magnification inset. For b, data are mean ± standard error of the mean (SEM).Figure 3—source data 1.Figure 3c.
+**Figure 3.:** (a) Population labeling of AACs throughout hippocampal compartments by Unc5b; Nkx2.1 intersection. Note the highly stereotyped banded distribution of AACs in CA1–CA3, with somata in the stratum pyramidale and vertically oriented dendrites extending basally to the stratum oriens and apically to the striatum lacunosum-moleculare. AACs are much sparser in dentate gyrus, with individual cells having elaborate and extended horizontal axon arbor. Scale bars, 200 and 50 µm for high-magnification inset. (b) AACs in ventral CA1 have overall similar morphology as in dorsal CA1, though with longer basal–apical dendrites matching the ventral CA1 anatomy. (c) Normalized AAC cell density (cells/µm3) across hippocampal compartments. CA2 has 3- to 4-fold higher AAC cell density compared to CA1 and CA3 and 12-fold higher compared to DG. (d–i) Immunohistochemistry validation with the axon initial segment (AIS) markers AnkG or IκBα (green) and sparse-labeled RFP cells confirm axo-axonic targeting by the intersectional strategy. Examples of hippocampal AACs in CA1 (e, g), CA2 (d) and CA3 (d, f, h). In contrast, AACs in DG have much wider axon arbor in the stratum granulosum, potentially innervating many more granule cell AIS compared to in other hippocampal compartments (i). High-magnification inset: white arrowheads indicate segments of IκBα and RFP apposition. Scale bars, 50 and 20 µm for high-magnification inset. For b, data are mean ± standard error of the mean (SEM).
 
-## AACs in anterior insular, claustrum, and dorsal endopiriform nuclei
+### AACs in anterior insular, claustrum, and dorsal endopiriform nuclei
 
 According to the updated tetrapartite model of pallial/cortical development (Figure 1c), the lPAL gives rise to the claustro-insular complex as well as the dorsal endopiriform nuclei (EPd) (Puelles, 2017). Our brain-wide imaging of Unc5bCreER; Nkx2.1Flp; Ai65 mice revealed pAACs deployed across these three regions (Figure 4a). Unlike cortical and hippocampal AACs whose axon arbors exhibit highly characteristic laminar pattern, reflecting the organization of their postsynaptic targets (i.e. AIS of PNs), the axon arbors of RFP cells in AI, CLA, EPd do not show clear laminar patterns and exhibit less uniformity and are more multipolar in morphology (Figure 4b, c), making it more difficult to ascertain their identity. Nevertheless, strings of synaptic boutons were frequently identified that co-localized with AnkG-labeled AIS, suggesting these as pAACs. Quantification from dense labeling revealed higher pAAC density in EPd compared to claustrum and EPv, the latter of which structure is derived from vPAL (Figure 4d).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig4-v1.jpg)
 
-**Figure 4.:** (a) Dense-labeled RFP cells in claustrum, endopiriform nucleus, and insula. Note AACs in insula follow the banded laminar pattern of AACs similar to cortical upper layers and piriform, while those in claustrum and endopiriform are more dispersed in distribution. Sparse labeling of single-cell morphologies in endopiriform nucleus (b) and claustrum (c) showing elaborate dendritic and axonal branching structure. High-magnification insets: white arrowheads indicate segments of AnkG and RFP apposition. Scale bars, 50 and 5 µm for single-cell examples and insets, respectively. (d) Normalized AAC cell density (cells/µm3) across lateral pallial structures. pAACs are approximately fivefold more prevalent in dorsal EP compared to ventral EP. Data are mean ± standard error of the mean (SEM). (e) Dense labeling throughout vPall-derived amygdalar nuclei and piriform cortex. Note there is a degree of compartmentalization, with fewer cells in the ventral-most portions of EPd and the ventral basomedial amygdala (BMA). The laminar pattern of AAC distribution in piriform and Piriform-amygdalar area (PAA) is similar to other three-layered allocortices. (f–h) Immunohistochemistry of single-cell labeling shows the multipolar morphologies characteristic of amygdalar AACs. High-magnification inset: white arrowheads indicate segments of AnkG and RFP apposition. Scale bars, 500 µm for grayscale panels, 50 and 5 µm for single-cell examples and insets. Normalized AAC cell density (cells/µm3) across cortical subplate (i) and striatum-like (j) amygdala. Data are mean ± standard error of the mean (SEM). All images showing Ai65-tdTomato were immunostained for signal amplification, except for a and e which were native fluorescence.Figure 4—source data 1.Figure 4d, i, j.
+**Figure 4.:** (a) Dense-labeled RFP cells in claustrum, endopiriform nucleus, and insula. Note AACs in insula follow the banded laminar pattern of AACs similar to cortical upper layers and piriform, while those in claustrum and endopiriform are more dispersed in distribution. Sparse labeling of single-cell morphologies in endopiriform nucleus (b) and claustrum (c) showing elaborate dendritic and axonal branching structure. High-magnification insets: white arrowheads indicate segments of AnkG and RFP apposition. Scale bars, 50 and 5 µm for single-cell examples and insets, respectively. (d) Normalized AAC cell density (cells/µm3) across lateral pallial structures. pAACs are approximately fivefold more prevalent in dorsal EP compared to ventral EP. Data are mean ± standard error of the mean (SEM). (e) Dense labeling throughout vPall-derived amygdalar nuclei and piriform cortex. Note there is a degree of compartmentalization, with fewer cells in the ventral-most portions of EPd and the ventral basomedial amygdala (BMA). The laminar pattern of AAC distribution in piriform and Piriform-amygdalar area (PAA) is similar to other three-layered allocortices. (f–h) Immunohistochemistry of single-cell labeling shows the multipolar morphologies characteristic of amygdalar AACs. High-magnification inset: white arrowheads indicate segments of AnkG and RFP apposition. Scale bars, 500 µm for grayscale panels, 50 and 5 µm for single-cell examples and insets. Normalized AAC cell density (cells/µm3) across cortical subplate (i) and striatum-like (j) amygdala. Data are mean ± standard error of the mean (SEM). All images showing Ai65-tdTomato were immunostained for signal amplification, except for a and e which were native fluorescence.
 
-## AACs in the amygdaloid complex and extended amygdala
+### AACs in the amygdaloid complex and extended amygdala
 
 The amygdaloid complex includes over a dozen nuclei and can be segregated into five groups (Beyeler and Dabrowska, 2020): (1) the BLA divided into a dorsal section (lateral amygdala, LA) and basal section (basal amygdala, BA), (2) the basomedial amygdala (BMA), (3) the central amygdala (CeA) further splits into medial, lateral, and central sections (CeM, CeL, and CeC), (4) the medial amygdala (MeA), and (5) the cortical amygdala (CoA). Furthermore, the CeM extends rostrally and medially, thereby including the bed nucleus of stria terminalis (BST) to form the extended amygdala. Based on developmental origin, connectivity, and gene expression, these groups can be assigned into two large categories: pallium-derived cortex-like structures and subpallium-derived basal ganglia-like structures. The former includes BLA, CoA, BMA, and MeA, while the latter includes CeA and BST. Within the amygdala nuclei, PNs are exclusively glutamatergic in BLA, CoA, BMA, exclusively GABAergic in CeA, and predominantly GABAergic in MeA and BST. In rodents, there is also a population of glutamatergic pyramidal neurons (GLU PNs, derived from third ventricle neuroepithelium) that populates the BST, MeA, and hypothalamus (García-Moreno et al., 2010; Huilgol and Tole, 2016).
 
 In this context, we found AACs or pAACs in all the amygdala nuclei containing GLU PNs, that is except CeA (Figure 4i–h). Sparse labeling and immunohistochemical co-staining with AnkG confirmed that the labeled cells in these compartments were nearly exclusively AIS-targeting (97.2%, n = 36 cells, 6 mice). Morphologically, AACs in the amygdala tended to be similar to those in the claustrum, exhibiting multipolar dendrites and multipolar axon terminal branches (in contrast to axon arbor of cortical AACs that typically extend either below or above the soma) (Figure 4f). The density of AACs in amygdala appears to correlate with the known abundance of GLU PNs: densities in BLA, CoA, and BMA were much higher than those in MeA and BST. Among the pallium-derived amygdala subdivisions (LA, BLA, BMA, and PA), AACs were present at roughly similar densities (Figure 4i), while among striatum-like amygdala nuclei they were largely concentrated in MeA (Figure 4j). Our results indicate that AACs are deployed to all amygdala nuclei containing GLU PNs. Within the largely GABAergic structures such as MeA and BST, we hypothesize that pAACs might innervate the minor glutamatergic PNs in these structures.
 
-## AACs in olfactory centers: piriform cortex, AON, and TTd
+### AACs in olfactory centers: piriform cortex, AON, and TTd
 
 A major novel finding is the surprising abundance of AACs across multiple olfactory centers. Derived from the vPAL, the piriform cortex had been reported to contain axo-axonic synapses by co-localization of the inhibitory presynaptic marker GAT1 and AnkG (Wang and Sun, 2012). Our dense labeling in Unc5bCreER; Nkx2.1Flp; Ai65 mice revealed a striking abundance of AACs that span the anterior-medial extent of the piriform in a single layer (Figure 5a–c). Sparse-labeled single AACs exhibited characteristic morphologies analogous to L2/3 AACs of the neocortex, with extended branching of apical dendrites to L1 and dense axon arbors below the cell body forming cartridges along PN AIS (Figure 5d–j). The single-layer distribution pattern of piriform AACs continued dorsally to the insular cortex and ventrally to piriform-amygdala area (PAA) and COA (Figure 5c).
 
@@ -97,45 +178,53 @@ Furthermore, we found that AACs are deployed to two other olfactory centers that
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig6-v1.jpg)
 
-**Figure 6.:** Dense population labeling in anterior AON and TT (a) and more posterior sections containing the TT and LS (b). Anteriorly, AACs are more concentrated in ventral TT while posteriorly in dorsal TT. Within LS, AACs tend to occupy the medial most portions along the midline. (c–g, i–k) Single-cell (confocal) labeling of AACs in AON (c, d), TT (e–g), and lateral septum (i–k). Note that despite areal variations, individual AACs preserve their stereotyped morphological characteristics (apical-oriented dendrite and basal-oriented axon arbor) that conform to laminar patterns of targets in each anatomical area. High-magnification insets: white arrowheads indicate segments of AnkG and RFP apposition. Scale bars, 200 µm for grayscale panels, 50 and 5 µm for single-cell examples and insets. (h) Normalized cell density (cells/µm3) for AACs in AON, TT, and lateral septum. Within lateral septum, the majority of AACs are located in rostral compartments (LSr). Data are mean ± standard error of the mean (SEM).Figure 6—source data 1.Figure 6h.
+**Figure 6.:** Dense population labeling in anterior AON and TT (a) and more posterior sections containing the TT and LS (b). Anteriorly, AACs are more concentrated in ventral TT while posteriorly in dorsal TT. Within LS, AACs tend to occupy the medial most portions along the midline. (c–g, i–k) Single-cell (confocal) labeling of AACs in AON (c, d), TT (e–g), and lateral septum (i–k). Note that despite areal variations, individual AACs preserve their stereotyped morphological characteristics (apical-oriented dendrite and basal-oriented axon arbor) that conform to laminar patterns of targets in each anatomical area. High-magnification insets: white arrowheads indicate segments of AnkG and RFP apposition. Scale bars, 200 µm for grayscale panels, 50 and 5 µm for single-cell examples and insets. (h) Normalized cell density (cells/µm3) for AACs in AON, TT, and lateral septum. Within lateral septum, the majority of AACs are located in rostral compartments (LSr). Data are mean ± standard error of the mean (SEM).
 
-## AACs in the lateral septum
+### AACs in the lateral septum
 
 The LS, despite having no distinct laminar structure (delineated in ARAv3), shows some evidence of differential mRNA expression in superficial and deep domains, possibly analogous to a laminar organization (Besnard and Leroy, 2022). In Unc5bCreER; Nkx2.1Flp; Ai65 mice, AACs tended to locate toward the midline (Figure 6b). Individual AACs were morphologically similar to cortical AACs, with extensive apical dendrites extending toward the midline and axon arbors and cartridges typically protruding away and into the cellular layer (Figure 6i–k).
 
-## Monosynaptic input tracing to AACs in sensorimotor cortex
+### Monosynaptic input tracing to AACs in sensorimotor cortex
 
 In addition to using Cre-AND-Flp-dependent reporter lines for AAC access, it is advantageous to extend our intersectional strategy to engage viral vectors that enable more selective and anatomy-based labeling, recording, and manipulation. Because the endogenous expression of Unc5b and Nkx2.1 occur at non-overlapping stages in development, it is not feasible to directly use Cre-AND-Flp-dependent viral vectors (Fenno et al., 2020). Instead, we crossed Unc5bCreER; Nkx2.1Flp driver with a Cre-AND-Flp-dependent tTA2 reporter line (Figure 7a; Matho et al., 2021), which provides an indelible genetic handle for delivery of tTA-activated viral reporters. We tested this approach in AACs to map their synaptic input source by using tTA-activated AAVs in of Unc5bCreER; Nkx2.1Flp; dual-tTA2 mice (Figure 7b; Figure 7—figure supplement 1b, c). We used the Pvalb cell (PVC) population for comparison largely due to convenience, recognizing the fact that PVCs also include some ChCs.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig7-v1.jpg)
+
+**Figure 7.:** (a) Schematic of intersectional tTA2-conversion strategy. Expression of Nkx2.1Flp and subsequent Unc5bCreER or PvalbCre results in activation of tTA2 expression in axo-axonic cells (AACs). This provides a genetic handle for versatile viral targeting and manipulation. (b) Cortical injection of TRE3G-promoter AAV vectors enables specific targeting of ChCs (green, left). A similar backbone was used to construct a TRE3G rabies starter AAV for monosynaptic input tracing, which contains both TVA and optimized rabies glycoprotein (right). Compared to TRE3G-EGFP, the TRE3G starter AAV has weaker EGFP labeling of neurites. Scale bar, 200 µm. (c) Linear regression fit of inputs cells/starter cells. Each point represents one animal, n = 18, r = 0.8874, slope = 135.51. (d) Relative pia-to-white matter depth distribution of starter cells (expressing both AAV starter and rabies). ChC starter cell tended to cluster closer to the pia while Pvalb cells were more broadly distributed throughout the cortical upper layers, reflecting the differences in the distribution of the two subtypes. (e–g) Synaptic input source to ChCs in primary motor area (MOp), secondary motor area (MOs) and primary somatosensory area (SSp), with Pvalb cells as comparison. Only long-range inputs (i.e. outside the ARAv3 area injected) are plotted. Left: Representative coronal sections from three indicated cortical areas overlaid with macroscale view of rabies tract labeling (in red, gray is autofluorescence) to each subpopulation of ChC. Middle: Histogram comparing percentage of inputs from each structure innervating the indicated cortical subpopulation of ChCs (dark gray) and Pvalb (light gray), sorted from largest input source to smallest. Inset: Representative top–down map of all inputs to AACs from a single animal. Right: Representative sections highlighting select sources of rabies-labeled inputs to each ChC population, overlaid with ARAv3 boundaries. Scale bars, 200 µm. For e–g, data are mean ± standard error of the mean (SEM), **p < 0.01, ***p < 0.001, ****p < 0.0001 indicates p ≥ 0.05 (two-way analysis of variance [ANOVA] with post hoc Bonferroni correction); for scatterplot in d, median is plotted. Homotypic projections to injection site from contralateral hemisphere are denoted by (#). All images showing EGFP were immunostained for signal amplification, while rabies-RFP shown in e–g were native fluorescence. For each MOs, MOp, and SSp, N = 6 mice for (3 Unc5b; Nkx2.1, 3 Pvalb; Nkx2.1; total N = 18 mice).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Schematic and procedure for synaptic input tracing from ChC and Pvalb interneurons. Top, driver and reporter lines to achieve tTA expression in ChC or Pvalb cells. Middle, schematic of AAV and EnvA pseudo-typed rabies viral vectors. Bottom, timeline of tamoxifen and viral vector for retrograde synaptic tracing. (b) Bulk injection of TRE3G-EGFP in Unc5bCreER; Nkx2.1Flp; LSL-FSF-tTA2 results in efficient and specific labeling of ChCs, identifiable by laminar position and morphological features (inset). Scale bars, 200 and 100 µm for high-magnification inset. (c) Starter AAV expression is comparable to TRE3G-EGFP with high specificity for ChCs in Unc5b; Nkx2.1, albeit with weaker EGFP neurite expression. Scale bars, 100 and 20 µm for high-magnification insets. Example of starter cells (arrowheads) co-expressing EGFP (AAV vector) and RFP (rabies vector) in Unc5b/Nkx2.1 (d) and Pvalb/Nkx2.1 (e) intersections. Scale bars, 100 and 20 µm for high-magnification insets. All images showing EGFP were immunostained for signal amplification, while rabies-RFP shown in d and e were native fluorescence.
 
 We crossed the dual-tTA2 reporter to either Unc5bCreER; Nkx2.1Flp or PvalbCre; Nkx2.1Flp and performed monosynaptic input tracing to ChCs and Pvalb cells (PVCs), respectively, in three sensorimotor areas: MOs, MOp, and SSp (Figure 7a–c, Figure 7—figure supplement 1a). Intersecting PvalbCre with Nkx2.1Flp is a strategy for specifically targeting Pvalb INs, as PvalbCre also captures a sparse population of excitatory pyramidal neurons (van brederode et al., 1991). Although Pvalb is expressed in up to ~50% of cortical ChCs, starter cell depth distribution was found to be largely non-overlapping between injected ChCs and PVCs, likely due to the much higher abundance of Pvalb basket cells (Figure 7d, Figure 7—figure supplement 1d, e).
 
 Using STP tomography and our registration/cell detection pipeline, we mapped long-range inputs to different cortical ChC populations. Across sensorimotor cortex ChCs and PVCs integrated into highly interconnected cortical networks. ChCsMOs received ~50% of inputs from motor areas (41.0 ± 2.3% in MOp, 4.5 ± 0.7% in contra MOs) followed by SSp (20.4 ± 4.2%) and SSs (9.5 ± 0.7%) (Figure 7e). Long-range inputs to ChCsMOp were largely dominated by sensory cortex (63.2 ± 11.3% in SSp, 10.1 ± 1.3% in SSs), followed by MOs (12.7 ± 6.7%) and contra MOp (4.2 ± 2.5%) (Figure 7f). In contrast, ChCsSSp received only ~65% inputs total from sensorimotor (42.2 ± 0.5% in SSs, 11.1 ± 1.2% in MOs, 7.8 ± 1.9% in MOp, 3.03 ± 0.2% in contra SSp), with considerably more inputs from thalamus and other cortical areas (Figure 7g). Thalamocortical (TC) afferents to ChCsMOs and ChCsMOp were primarily from VAL, whereas TC inputs to ChCsSSp were mostly from ventral posteromedial nucleus of the thalamus (VPM). In addition to sensorimotor, other cortical areas such as ORB, FRP, AI, VIS, ACA, RSP, and AUD comprised a minor source of long-range inputs. Interestingly, we identified sparse inputs from GPe directly to ChCs and Pvalb in all three cortical areas. Overall input patterns were comparable between ChCs and Pvalb, although ChCs received significantly less homotypic inputs from the contralateral hemisphere for each injection site (Figure 7e–g).
 
-## Monosynaptic input tracing to AACs in CA1
+### Monosynaptic input tracing to AACs in CA1
 
 The functional role of AACs is perhaps best understood in hippocampus, where CA3 AACs tend to fire at distinct epochs compared to other cell types and near the peak of theta oscillations (Viney et al., 2013). Little is known about the inputs to AACs that might drive this cell-type functional distinction, although non-specific tracers have identified an inhibitory connection from medial septum (MS) to AACs in CA3 (Viney et al., 2013). More recently, we used Unc5bCreER to functionally characterize the firing patterns of AACsCA1 during whisking and locomotion (Dudok et al., 2021). Here, we applied cell type targeted retrograde monosynaptic tracing to map long-range inputs to AACsCA1 (Figure 8a, b).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig8-v1.jpg)
 
-**Figure 8.:** CA1 of hippocampus.(a) Schematic of retrograde synaptic tracing from CA1 axo-axonic cells (AACs) with site of viral injection. (b) Starter AAV expression in CA1 (green). White arrowheads show soma position is largely confined to the pyramidal cell layer. Scale bar, 50 µm. (c) Comparative input distribution from ipsilateral (right) and contralateral (left) hippocampal compartments. (d) Mesoscale rabies labeling of presynaptic input cells (red) to AACsCA1 (e) Histogram of percentage of total inputs from each structure, sorted from largest to smallest. Inset: Summary schematic of input sources to AACsCA1. AACsCA1 receive strong innervation from entorhinal, subiculum, and contralateral hippocampus, with more minor innervation from thalamus, medial septum (MS), diagonal band nucleus, and various cortical areas. (f–j) Immunohistochemistry and hybridization chain reaction-fluorescence in situ hybridization (HCR RNA-FISH) marker analysis of input cells in MS and nucleus of the diagonal band (NDB), indicated by color-coded labels. Examples of co-labeled cells are shown following HCR RNA-FISH for the inhibitory marker vGAT (g) and immunohistochemistry for the excitatory marker EAAC1 (h), Pvalb (i) and ChAT (j). White arrowheads indicate co-labeled cells for each marker. Scale bars, 50 and 20 µm for high-magnification insets. (k) Quantification of marker colocalization with rabies labeling in MS and NDB. (l–p) Representative coronal sections highlighting select sources of rabies-labeled inputs to AACsCA1, overlaid with ARAv3 atlas boundaries. Inputs within hippocampus were mostly from within CA1 both ipsilateral (l) and contralateral (m) to the injection site. Input cells were also found in adjacent cortical areas more posterior such as entorhinal cortex (ENT), auditory cortex (AUD), and temporal association area (TEa) (n–p). Thalamic inputs were largely confined to the anterior group of the dorsal thalamus (ATN) (o). Scale bars, 200 µm. For c, e, and k, data are mean ± standard error of the mean (SEM) from N = 4 mice. Homotypic projections to injection site from contralateral hemisphere are denoted by (#CA1) in e. EGFP in b and rabies-RFP in f–j were immunostained for signal amplification, while rabies-RFP shown in l–p were native fluorescence.Figure 8—source data 1.Figure 8c, e, k).
+**Figure 8.:** (a) Schematic of retrograde synaptic tracing from CA1 axo-axonic cells (AACs) with site of viral injection. (b) Starter AAV expression in CA1 (green). White arrowheads show soma position is largely confined to the pyramidal cell layer. Scale bar, 50 µm. (c) Comparative input distribution from ipsilateral (right) and contralateral (left) hippocampal compartments. (d) Mesoscale rabies labeling of presynaptic input cells (red) to AACsCA1 (e) Histogram of percentage of total inputs from each structure, sorted from largest to smallest. Inset: Summary schematic of input sources to AACsCA1. AACsCA1 receive strong innervation from entorhinal, subiculum, and contralateral hippocampus, with more minor innervation from thalamus, medial septum (MS), diagonal band nucleus, and various cortical areas. (f–j) Immunohistochemistry and hybridization chain reaction-fluorescence in situ hybridization (HCR RNA-FISH) marker analysis of input cells in MS and nucleus of the diagonal band (NDB), indicated by color-coded labels. Examples of co-labeled cells are shown following HCR RNA-FISH for the inhibitory marker vGAT (g) and immunohistochemistry for the excitatory marker EAAC1 (h), Pvalb (i) and ChAT (j). White arrowheads indicate co-labeled cells for each marker. Scale bars, 50 and 20 µm for high-magnification insets. (k) Quantification of marker colocalization with rabies labeling in MS and NDB. (l–p) Representative coronal sections highlighting select sources of rabies-labeled inputs to AACsCA1, overlaid with ARAv3 atlas boundaries. Inputs within hippocampus were mostly from within CA1 both ipsilateral (l) and contralateral (m) to the injection site. Input cells were also found in adjacent cortical areas more posterior such as entorhinal cortex (ENT), auditory cortex (AUD), and temporal association area (TEa) (n–p). Thalamic inputs were largely confined to the anterior group of the dorsal thalamus (ATN) (o). Scale bars, 200 µm. For c, e, and k, data are mean ± standard error of the mean (SEM) from N = 4 mice. Homotypic projections to injection site from contralateral hemisphere are denoted by (#CA1) in e. EGFP in b and rabies-RFP in f–j were immunostained for signal amplification, while rabies-RFP shown in l–p were native fluorescence.
 
 Compared to cortical ChCs, AACsCA1 received inputs from more diverse sets of sources. Within the hippocampus formation, AACsCA1 received asymmetric inputs from each hemisphere, with relatively a higher fraction in CA3 contralaterally (29.0 ± 2.4%) but higher ipsilaterally in DG (4.3 ± 1.5%) and ENT (11.6 ± 3.6%) and SUB (15.2 ± 5.2%) (Figure 8c). Surprisingly, while the aforementioned study Viney et al., 2013 found inhibitory connections from MS to AACs in CA3, we found in AACsCA1 over twofold higher input connectivity from adjacent NDB (5.1 ± 0.9%) compared to MS (2.0 ± 0.2%) (Figure 8d, e). Immunohistochemistry analysis found the majority of these long-range inputs were inhibitory (56.8 ± 4.8%) and a sizeable proportion ChAT-positive (27.6 ± 4.0%) (Figure 8f–j). AACsCA1 also received diverse cortical inputs, including from VIS, RSP, AUD, SSp, PTLp, SSs, Tea, and PERI, as well as TC afferents from ATN (Figure 8l–p; see abbreviations in Supplementary file 1).
 
-## Monosynaptic input tracing to AACs in BLA
+### Monosynaptic input tracing to AACs in BLA
 
 Comparatively little is known about the function or circuit role of AACsBLA. Past studies have had to largely rely on post hoc identification from paired recordings, demonstrating their potent inhibitory effects (Veres et al., 2014). However, without cell-type-specific tools for AACsBLA, the long-range afferent connectivity that might drive these effects has remained virtually unknown. We applied our intersectional targeted approach to reveal the monosynaptic inputs to AACsBLA (Figure 9a, b). AACsBLA received highly diverse sets of inputs (Figure 9c). AACsBLA received strongest afferents from PIR (13.1 ± 1.1%) and the hippocampal–entorhinal network (ENT 12.7 ± 0.2%, CA1 10.5 ± 2.0%, SUB 8.0 ± 0.1%) (Figure 9e, h–i). The next strongest inputs originated from cortical amygdala areas (TR, PAA, COA) and cortical subplate nuclei (CeA, LA, EP, BMA) (Figure 9d). TC afferents were largely from MTN (2.6 ± 0.4%), while cortical projections were identified in AI, AUD, PERI, and ECT (Figure 9f). Input cells in LZ and MEZ of hypothalamus were found to be glutamatergic, while those from GPe and EP were GABAergic (Figure 9j–o).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/93481/elife-93481-fig9-v1.jpg)
 
-**Figure 9.:** BLA.(a) Schematic of retrograde synaptic tracing from basolateral amygdala (BLA) axo-axonic cells (AACs) with site of viral injection. (b) Starter AAV distribution as indicated by white arrowheads, overlaid with ARAv3 atlas. Scale bar, 200 µm. (c) Left: Mesoscale rabies labeling of presynaptic input cells (red) to AACsBLA. Right: Histogram of percentage of total inputs from each structure, sorted form largest to smallest. Inset: Summary schematic synaptic input source to AACsBLA. AACsBLA are innervated by diverse sets of inputs, with strongest innervation from entorhinal cortical–hippocampal network (EC-HPC), piriform areas (PIR), cortical subplate (CTXsp), and minor subcortical and cortical inputs. (d–j) Representative coronal sections of rabies-labeled inputs (gray) across input structures, overlaid with ARAv3 boundaries. Scale bars, 200 µm. Inputs to AACsBLA were found in amygdalar and cortical-amygdalar areas (d, e), piriform (e), midline group of the dorsal thalamus (f), substantia innominata (g), posterior hippocampus and cortex (h), and the ventral subiculum (i). Examples of dense input cells in medial (MEZ) and lateral (LZ) hypothalamus overlaid with excitatory vGLUT2 HCR RNA-FISH (j). (k–o) Immunohistochemistry and RNA-FISH marker analysis of input cells in striatum/CP, GPe, EP, and hypothalamus. VGAT FISH or GABA IHC were used for identifying GABAergic input cells (l–n) while VGLUT2 FISH was used an excitatory marker (o) as indicated. White arrowheads indicate co-labeled cells. Scale bars, 50 and 20 µm for high-magnification insets. Right: Quantification of marker colocalization with rabies labeling for each corresponding area. Inputs to AACsBLA from CP, GPe, and EP were inhibitory, while inputs from hypothalamus were excitatory. Data are mean ± standard error of the mean (SEM) from N = 3 mice. Rabies-RFP in j–o were immunostained for signal amplification, while EGFP in b and rabies-RFP shown in d–i were native fluorescence.Figure 9—source data 1.Figure 9c, l-o.
+**Figure 9.:** (a) Schematic of retrograde synaptic tracing from basolateral amygdala (BLA) axo-axonic cells (AACs) with site of viral injection. (b) Starter AAV distribution as indicated by white arrowheads, overlaid with ARAv3 atlas. Scale bar, 200 µm. (c) Left: Mesoscale rabies labeling of presynaptic input cells (red) to AACsBLA. Right: Histogram of percentage of total inputs from each structure, sorted form largest to smallest. Inset: Summary schematic synaptic input source to AACsBLA. AACsBLA are innervated by diverse sets of inputs, with strongest innervation from entorhinal cortical–hippocampal network (EC-HPC), piriform areas (PIR), cortical subplate (CTXsp), and minor subcortical and cortical inputs. (d–j) Representative coronal sections of rabies-labeled inputs (gray) across input structures, overlaid with ARAv3 boundaries. Scale bars, 200 µm. Inputs to AACsBLA were found in amygdalar and cortical-amygdalar areas (d, e), piriform (e), midline group of the dorsal thalamus (f), substantia innominata (g), posterior hippocampus and cortex (h), and the ventral subiculum (i). Examples of dense input cells in medial (MEZ) and lateral (LZ) hypothalamus overlaid with excitatory vGLUT2 HCR RNA-FISH (j). (k–o) Immunohistochemistry and RNA-FISH marker analysis of input cells in striatum/CP, GPe, EP, and hypothalamus. VGAT FISH or GABA IHC were used for identifying GABAergic input cells (l–n) while VGLUT2 FISH was used an excitatory marker (o) as indicated. White arrowheads indicate co-labeled cells. Scale bars, 50 and 20 µm for high-magnification insets. Right: Quantification of marker colocalization with rabies labeling for each corresponding area. Inputs to AACsBLA from CP, GPe, and EP were inhibitory, while inputs from hypothalamus were excitatory. Data are mean ± standard error of the mean (SEM) from N = 3 mice. Rabies-RFP in j–o were immunostained for signal amplification, while EGFP in b and rabies-RFP shown in d–i were native fluorescence.
 
 ## Discussion
 
-## Specific and comprehensive targeting of ground truth cell types
+### Specific and comprehensive targeting of ground truth cell types
 
 A major challenge in studying the functional organization of GABAergic inhibitory circuits, and neural circuits in general, is establishing specific and comprehensive genetic access to ground truth cell types. Here, leveraging an intersectional strategy that integrates lineage and molecular markers, we have achieved near-perfect specificity and near-complete comprehensiveness in targeting a bona fide IN type. This strategy will facilitate studying the connectivity, function, and development of AACs across brain regions, thereby providing a robust experimental platform for integrating multi-modal analysis of a ground truth cell type across brain circuits. Both PthlhFlp- and Unc5bCreER-mediated intersectional approaches are also useful for studying the development of AACs. We recognize that it is currently not possible to fully assess the ‘completeness’ of AAC targeting; this may require a comparison with complete labeling by anatomical ground truth, such as dense EM reconstruction of all AACs across the brain volume. Another practical drawback of our approach is the requirement of combining three engineered genetic alleles. In this context, the Unc5bCreER line by itself is already useful for AAV-mediated targeting of AACs (Dudok et al., 2021). Because most AAVs are neurotrophic, Cre-activated AAVs would bypass endothelial cells to target only AACs in the Unc5bCreER line, even though this approach is not suited to quantify brain-wide AAC patterns. Beyond relying on germline engineering, the recently invented CellREADR technology (Qian et al., 2022) will further simplify AAC targeting by identifying an RNA sensor of Unc5b mRNA and deliver it with an AAV vector. As Unc5b is a conserved AAC marker from rodents to primates including humans, the CellREADR approach may enable genetic access to AACs across mammalian species.
 
-## Implications of brain-wide AAC distribution pattern
+### Implications of brain-wide AAC distribution pattern
 
 The initial discovery of neocortical AACs was based on their striking chandelier-like morphology (Szentágothai, 1975), reflecting the spatial arrangement of their exclusive synaptic targets – the AIS of cortical pyramidal neurons (Somogyi, 1977; Somogyi et al., 1982). This defining feature of synapse specificity led to subsequent discoveries of AACs in the hippocampus and BLA. These findings have relied on meticulous efforts of skilled neuroanatomists to correctly identify AACs, mostly post hoc, by synapse specificity at AIS (Bienvenu et al., 2012; Veres et al., 2014). Since then, it has been widely assumed that AACs are restricted to these brain structures, and likely to the mammalian species. Here, based on developmental lineage and key molecular markers that likely include all AACs, our results reveal a vastly expanded and likely complete brain distribution pattern of AACs. Most importantly, we found that pAACs are deployed to the entire pallium-derived brain structures (Puelles, 2017), including not only the dPAL-derived neocortex and mPAL-derived hippocampal formation, but also the lPAL-derived claustrum–insular complex, the vPAL-derived extended amygdaloid complex, piriform cortex, and other olfactory centers such as AON and TT. In addition, subregions of the lateral septum and hypothalamus also contain pAACs. In this context, it is notable that the pallium may have its evolutionary origin in an anterior region of the vertebrate hypothalamus (Puelles and Rubenstein, 2003).
 
@@ -145,41 +234,226 @@ In particular, the finding of a striking abundance of AACs in olfactory centers 
 
 Notably, although the MeA and BST comprise mostly GABAergic neurons that are primarily generated from the subpallium, they contain subsets of glutamatergic PN that migrate from pallium origin (Beyeler and Dabrowska, 2020) or from the third ventricle (García-Moreno et al., 2010). The true AAC identity in these regions, and in several other regions such as the hypothalamus, remains to be validated by synapse innervation at AIS of GLU PNs. Nevertheless, based on current results, our overarching hypothesis is that AACs are deployed across all pallium-derived structures to control the AIS of GLU PNs, including those in MeA and BST. Our results also indicate that AACs are absent from the rest of the CNS. This finding suggests a major distinction between the physiology and functional organization of pallium-derived GLU PNs versus those in other CNS regions.
 
-## AACs as a model for understanding neuronal cell-type organization across regions and species
+### AACs as a model for understanding neuronal cell-type organization across regions and species
 
 The rapid scaling of single-cell RNA sequencing enables the generation of massive transcriptome datasets across brain regions and species (Bakken et al., 2021; Hain et al., 2022). These datasets provide unprecedented opportunities to discover the organization and relationship of cell types within and across brain regions, which reflect their gene regulatory programs and developmental origin. Cross species analyses promise to further reveal the evolutionary conservation and divergence of brain cell types (Bakken et al., 2021; Tosches, 2021). However, transcriptomic cell homologies between brain regions and species, especially more distantly related regions and species, are often discernible only at a relatively coarse level and do not fully capture the biological complexity (Tosches, 2021). A major challenge is to evaluate statistically defined transcriptomic similarity against biological ground truth, such as anatomic connectivity and developmental relationship. In this context, the most appealing attribute of AACs is their singularly defining synapse specificity at AIS of GLU PNs, which can be readily measured and validated. Under this overarching connectivity-based definition, all other molecular and phenotypic variations can be assessed and organized accordingly regardless of brain regions and species. Therefore, genetic access to AACs across brain regions provides a rare and compelling ground truth platform that can unambiguously identify this cell type across regions and species. This will further facilitate transcriptomic and epigenomic analysis to discover the gene regulatory program of AACs and contribute to understanding the principles of cell-type organization by linking developmental genetic program, circuit connectivity and function, and evolutionary trajectory.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AnkryinG (mouse monoclonal)</td>
+      <td>Neuromab</td>
+      <td>Cat#: 75-146</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ChAT (goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#: AB144P</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EAAC1 (goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#: AB1520</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GABA (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat#: A2052</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>Cat#: 1020</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-parvalbumin (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat#: P3088</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-IκBα (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 2859</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RFP (rabbit polyclonal)</td>
+      <td>Rockland</td>
+      <td>Cat#: 600-401-379</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HCR v3.0</td>
+      <td>Molecular Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAVDJ-TRE3g-EGFP</td>
+      <td>Vigene</td>
+      <td></td>
+      <td>Adeno-associated virus, titer: 5 × 1012 genome copies (gc)/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAVDJ-TRE3g-TVA-oG-EGFP</td>
+      <td>Vigene</td>
+      <td></td>
+      <td>Adeno-associated virus, titer: 9.24 × 1012 genome copies (gc)/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>G-Deleted Rabies dsRedXpress</td>
+      <td>Salk Institute</td>
+      <td></td>
+      <td>Rabies virus, titer: 5.0 × 107 colony-forming units (cfu)/ml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td>R2017b</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Elastix</td>
+      <td>Image Sciences Institute</td>
+      <td>RRID:SCR_009619</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>Ai65</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:021875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>dual-SynaptotagminEGFP-2A-tdTomato</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:030206</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>dual-tTA2</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:036304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>Nkx2.1Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:008661</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>Nkx2.1FlpO</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:028577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>PthlhFlpO</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>PvalbCre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:017320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>Unc5bCreER</td>
+      <td>Dudok et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experiments were carried out in accordance with the guidelines of the Animal Care and Use Committee of Cold Spring Harbor Laboratory (CSHL). Mice were housed in groups of five per cage or singly if pregnant under standard vivarium conditions with a 12-hr light/dark cycle. Unc5bCreER (Dudok et al., 2021) or PvalbCre (JAX, Stock 017320) were crossed to Nkx2.1Flp (JAX, Stock 028577). PthlhFlp (unpublished) was crossed to Nkx2.1Cre (JAX, Stock 008661). For each Cre/Flp combination, offspring hemizygous for both alleles were crossed to Ai65 (JAX, Stock 021875), Rosa26-loxpSTOPloxp-frtSTOPfrt-synaptotagminEGFP-2A-tdTomato (JAX, Stock 030206), or Rosa26-loxpSTOPloxp-frtSTOPfrt-tTA2 (JAX, Stock 036304) reporter mice. Mice with Unc5bCreER were induced by tamoxifen i.p. (TM; Sigma-Aldrich, Cat# T5648) administered either (1) for dense labeling and input tracing, 100 mg/kg for 5 consecutive days starting at P55–60 (2) for single-cell labeling, 25 mg/kg for 1–2 consecutive days at P55–P60. The dosage and regimen of tamoxifen for dense AAC labeling were the maximum based on established protocols for conditional knockouts and one that was well-tolerated. For single-cell labeling, the tamoxifen dosage was determined empirically for reliable labeling of non-overlapping AACs in different brain areas. Animals were fed ad libitum and their health status were routinely monitored. Both male and female animals were used in all experiments, with three to four mice total for each injection site × genotype and for cell distribution analysis. Sample sizes were estimated on the basis of previous studies using similar methods and analyses (Oh et al., 2014, Kim et al., 2015, Harris et al., 2019, Matho et al., 2021). Genotyping was performed using PCR and according to supplier protocols.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were anesthetized with Avertin and transcardially perfused with 0.9% saline followed by 4% paraformaldehyde in 0.1 M phosphate buffer. Following overnight post-fixation, brains were rinsed in phosphate-buffered saline (PBS) and sectioned at 50–65 µm thickness with a Leica VT1000S vibratome. For immunohistochemistry, sections were first treated with a secondary-matched blocking solution (10% normal goat or donkey serum and 0.2% Triton X-100 in PBS) for 1 hr, then incubated overnight at 4°C with primary antibodies diluted in 5% blocking solution. Sections were washed three times in PBS and incubated for 2 hr at room temperature with corresponding secondary antibodies, Goat or Donkey Alexa Fluor 488, 568, or 647 (1:500, Life Technologies) and 4',6-diamidino-2-phenylindole (DAPI) to label nuclei (1:1000 in PBS, Life Technologies, Cat#: 33342). Sections were washed three times with PBS and dry-mounted on slides using Fluoromount-G (SouthernBiotech, Cat#: 0100-01) mounting medium. Primary antibodies used were Anti-AnkryinG (1:500, Neuromab, Cat#: 75-146), Anti-ChAT (1:300, Millipore, Cat#: AB144P), Anti-EAAC1 (1:500, Millipore, Cat#: AB1520), Anti-GABA (1:500, Sigma-Aldrich, Cat#: A2052), Anti-GFP (1:1000, Aves Labs, Cat#: 1020), Anti-parvalbumin (1:1000, Sigma-Aldrich, Cat#: P3088), Anti-Phospho-IκBα (1:500, Cell Signaling Technology, Cat#: 2859), and Anti-RFP (1:1000, Rockland, Cat#: 600-401-379). Samples for AAC validation were collected from six mice given 25 mg/kg for 1–2 consecutive days, as described above. Validation was conducted with high-magnification confocal microscopy and defined by a cell exhibiting at least two RFP-labeled axons bearing multiple synaptic boutons aligned with AIS labeled by AnkryinG or Phospho-IκBα.
 
-## Floating section two-color in situ hybridization
+### Floating section two-color in situ hybridization
 
 In situ hybridization was performed using hybridization chain reaction (HCR v3.0, Molecular Instruments). Samples post-fixed in 4% paraformaldehye (PFA) at 4°C were cryoprotected in 30% sucrose solution in RNAse-free diethyl pyrocarbonate-PBS (DEPC-PBS) at 4°C for 48 hr, frozen in Tissue-Tek O.C.T. Compound (Sakura), and stored at −80°C until sectioning. 50 µm thick coronal floating sections were collected into a sterile 24-well plate in DEPC-PBS, fixed again briefly for 5 min in 4% PFA, then placed in 70% EtOH in DEPC-PBS overnight. Sections were rinsed in DEPC-PBS, incubated for 45 min in 5% sodium dodecyl sulfate (SDS) in DEPC-PBS, rinsed and incubated in 2× sodium chloride-sodium citrate buffer (SSCT), pre-incubated in HCR hybridization buffer at 37°C, and then placed in HCR hybridization buffer containing RNA probes overnight at 37°C. The next day, sections were rinsed 4 × 15 min at 37°C in HCR probe wash buffer, rinsed with 2× SSCT, pre-incubated with HCR amplification buffer, then incubated in HCR amplification buffer containing HCR amplifiers at room temperature for ~24 hr. On the final day, sections were rinsed in 2× SSCT, rinsed again with 2× SSCT, then mounted on slides and coverslipped with Fluoromount-G (Southern Biotech).
 
-## Microcopy and image analysis
+### Microcopy and image analysis
 
 Confocal imaging was performed on a Zeiss LSM 780 (CSHL St. Giles Advanced Microscopy Center) using ×10, ×20, or ×63 objectives. Imaging for grayscale overview images was performed on a Zeiss Axioimager M2 System equipped with MBF Neurolucida Software (MBF) using ×5, ×10, or ×20 objectives. Quantification and image analysis was performed using Image J/FIJI software with experimenter blind to genotype and experiment. Statistics and plotting of graphs were done using GraphPad Prism 7 and Microsoft Excel 2010. All images shown in figures were acquired by one-photon microscopy (confocal, epifluorescence) with the exception of Figure 1—figure supplement 1g–n, Figure 7e–g, Figure 8l–p, and Figure 9d–i which were acquired by STP tomography.
 
-## Viruses
+### Viruses
 
 To construct AAVDJ-TRE3g-TVA-oG-eGFP, TVA, the optimized rabies glycoprotein oG (Kim et al., 2016), and eGFP were linked by ‘self-cleaving’ 2A and P2A peptides and cloned into pAAV-TRE3G (Sacha Nelson). For AAVDJ-TRE3g-eGFP only eGFP was cloned. AAVs serotype DJ were packaged by a commercial vector core facility (Vigene). Genomic titers of AAVDJ-TRE3g-TVA-oG-eGFP and AAVDJ-TRE3g-eGFP were 9.24 × 1012 and 5.0×1012 gc/ml, respectively. TVA, oG, and eGFP were subcloned from AAV-hSyn-FLEX-TVA-P2A-EGFP-2A-oG (Addgene, Cat# 85225). AAVs were diluted 1:5 in 1× PBS immediately prior to use. EnvA-pseudotyped G-Deleted Rabies dsRedXpress was purchased from Salk Institute (5.0 × 107 titer units (TU)/ml).
 
-## Stereotactic viral injections
+### Stereotactic viral injections
 
 Adult mice were anaesthetized with 2% isofluorane delivered by constant air flow (0.4 l/min). Analgesics ketoprofen (5  mg/kg) and dexamethasone (0.5  mg/kg) were administered subcutaneously just prior to sugery, while lidocaine (2–4 mg/kg) was applied intra-inciscionally. Mice were mounted on a stereotaxic headframe (Kopf Instruments, 940 series or Leica Biosystems, Angle Two) and stereotactic coordinates identified as follows: (MOs): 2.25 mm anterior to bregma, 1.2 mm lateral, 0.3 mm in depth; (MOp): 0.5 mm anterior to bregma, 1.6 mm lateral, 0.3 mm in depth; (SSp): 1.12 mm posterior to bregma, 3.25 mm lateral, 0.3 mm in depth; (CA1): 1.94 mm posterior to bregma, 1.4 mm lateral, 1.4 mm in depth; (BLA): 1.9 mm posterior to bregma, 3.38 mm lateral, 4.76 mm in depth. An incision was made over the scalp, a small burr hole drilled in the skull and brain surface exposed. A pulled glass pipette with a tip of 20–30  µm containing virus was lowered into the brain. Virus was delivered at a rate of 30 nl/min using a Picospritzer (General Valve Corp) for a total volume of 100–150 nl for starter AAV and 300–400 nl for rabies virus. The pipette remained in place for 10 min prior to retraction to prevent backflow, after which the incision was closed with 5/0 nylon suture thread (Ethilon Nylon Suture Ethicon) or Tissueglue (3M Vetbond). Mice were kept warm on a heating pad until complete recovery. For input tracing experiments, Unc5bCreER; Nkx2.1Flp; dual-tTA2 (tamoxifen-induced as described above) and PvalbCre; Nkx2.1Flp; dual-tTA2 were injected at respective coordinates with AAVDJ-TRE3g-TVA-oG-eGFP at P75 ±2. After a 2- to 3-week incubation period, a second injection at the same coordinates was performed using EnvA-pseudotyped G-Deleted Rabies-dsRedXpress. Following another 7-day incubation mice were perfused as described above.
 
-## Whole-brain STP tomography and image analysis
+### Whole-brain STP tomography and image analysis
 
 We used the whole-brain STP tomography pipeline described previously (Ragan et al., 2012; Kim et al., 2015; Matho et al., 2021). Perfused and post-fixed brains were embedded in 4% oxidized-agarose in 0.05 M phosphate buffer (PB), cross-linked in 0.2% sodium borohydrate solution (in 0.05 M sodium borate buffer, pH 9.0–9.5). The entire brain was imaged coronally with a 20×Olympus XLUMPLFLN20XW lens (NA 1.0) on a TissueCyte 1000 (Tissuevision) with a Chameleon Ultrafast-2 Ti:Sapphire laser (Coherent). EGFP/EYFP or tdTomato/dsRedXpress signals were excited at 910 or 920  nm, respectively. Whole-brain image sets were acquired as series of 12 (x) × 16 (y) tiles with 1 µm × 1 µm sampling for 230–270 z sections with a 50-µm z-step size. Images were collected by two PMTs (PMT, Hamamatsu, R3896), for signal and autofluorescent background, using a 560-nm dichroic mirror (Chroma, T560LPXR) and band-pass filters (Semrock FF01-680/SP-25). The image tiles were corrected to remove illumination artifacts along the edges and stitched as a grid sequence. Image processing was completed using ImageJ/FIJI and Adobe/Photoshop software with linear level and nonlinear curve adjustments applied only to entire images. Registration of brain-wide datasets to the Allen reference Common Coordinate Framework version 3 (CCFv3) was performed by 3D affine registration followed by a 3D B-spline registration using Elastix software (Klein et al., 2010), according to established parameters. Prior to STP analysis, datasets were screened for standard quality control according to pre-established criteria. Somata labeled by Ai65-tdtomato or rabies-dsRedXpress and catridges labeled by synaptotagmin-EGFP were automatically detected by a convolutional network trained as described previously (Ragan et al., 2012; Kim et al., 2017; Matho et al., 2021). For AAC laminar depth, somata and cartridge coordinates were overlaid on a mask for relative cortical depth, as described. For area cell density and cortical depth analysis, we registered each dataset, reporting cells detected in each brain structure without warping the imaging channel. For rabies input tracing experiments, only inputs originating outside the ARAv3 area injected were plotted (i.e. only long-range inputs). All cell density quantifications are reported as mean cells per cubic µm ± standard error of the mean from n = 4 mice.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were done using GraphPad Prism (GraphPad Software Inc, San Diego, CA, USA). Normality of the data was assessed using Shapiro–Wilk and Smirnov–Kolmogorov tests. Detailed information for statistical tests performed, p-values, and sample sizes, and other descriptive statistics is included in the text (figure legends) and/or in the source data.
 

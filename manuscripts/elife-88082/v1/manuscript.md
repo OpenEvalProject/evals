@@ -8,14 +8,14 @@
 
 ### Affiliations
 
-1. https://ror.org/0072zz521 Department of Veterinary and Animal Sciences, University of Massachusetts Amherst Amherst United States
-2. https://ror.org/0072zz521 Molecular and Cellular Biology Graduate Program, University of Massachusetts Amherst United States
+1. Department of Veterinary and Animal Sciences, University of Massachusetts Amherst Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))
+2. Molecular and Cellular Biology Graduate Program, University of Massachusetts Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))
 
 † Corresponding author
 
 ## Abstract
 
-Changes in the intracellular concentration of free calcium (Ca 2+ ) underpin egg activation and initiation of development in animals and plants. In mammals, the Ca 2+ release is periodical, known as Ca 2+ oscillations, and mediated by the type 1 inositol 1,4,5-trisphosphate receptor (IP 3 R1). Another divalent cation, zinc (Zn 2+ ), increases exponentially during oocyte maturation and is vital for meiotic transitions, arrests, and polyspermy prevention. It is unknown if these pivotal cations interplay during fertilization. Here, using mouse eggs, we showed that basal concentrations of labile Zn 2+ are indispensable for sperm-initiated Ca 2+ oscillations because Zn 2+ -deficient conditions induced by cell-permeable chelators abrogated Ca 2+ responses evoked by fertilization and other physiological and pharmacological agonists. We also found that chemically or genetically generated eggs with lower levels of labile Zn 2+ displayed reduced IP 3 R1 sensitivity and diminished ER Ca 2+ leak despite the stable content of the stores and IP 3 R1 mass. Resupplying Zn 2+ restarted Ca 2+ oscillations, but excessive Zn 2+ prevented and terminated them, hindering IP 3 R1 responsiveness. The findings suggest that a window of Zn 2+ concentrations is required for Ca 2+ responses and IP 3 R1 function in eggs, ensuring optimal response to fertilization and egg activation.
+Changes in the intracellular concentration of free calcium (Ca2+) underpin egg activation and initiation of development in animals and plants. In mammals, the Ca2+ release is periodical, known as Ca2+ oscillations, and mediated by the type 1 inositol 1,4,5-trisphosphate receptor (IP3R1). Another divalent cation, zinc (Zn2+), increases exponentially during oocyte maturation and is vital for meiotic transitions, arrests, and polyspermy prevention. It is unknown if these pivotal cations interplay during fertilization. Here, using mouse eggs, we showed that basal concentrations of labile Zn2+ are indispensable for sperm-initiated Ca2+ oscillations because Zn2+-deficient conditions induced by cell-permeable chelators abrogated Ca2+ responses evoked by fertilization and other physiological and pharmacological agonists. We also found that chemically or genetically generated eggs with lower levels of labile Zn2+ displayed reduced IP3R1 sensitivity and diminished ER Ca2+ leak despite the stable content of the stores and IP3R1 mass. Resupplying Zn2+ restarted Ca2+ oscillations, but excessive Zn2+ prevented and terminated them, hindering IP3R1 responsiveness. The findings suggest that a window of Zn2+ concentrations is required for Ca2+ responses and IP3R1 function in eggs, ensuring optimal response to fertilization and egg activation.
 
 ## Introduction
 
@@ -29,51 +29,112 @@ Here, we examined whether crosstalk between Ca2+ and Zn2+ is required to initiat
 
 ## Results
 
-## TPEN dose-dependently lowers intracellular Zn2+ and inhibits sperm-initiated Ca2+ oscillations
+### TPEN dose-dependently lowers intracellular Zn2+ and inhibits sperm-initiated Ca2+ oscillations
 
 TPEN is a cell-permeable, non-specific chelator with a high affinity for transition metals widely used to study their function in cell physiology (Arslan et al., 1985; Lo et al., 2020). Mouse oocytes and eggs have exceedingly high intracellular concentrations of Zn2+ (Kim et al., 2011; Kim et al., 2010), and the TPEN-induced defects in the progression of meiosis have been ascribed to its chelation (Bernhardt et al., 2011; Kim et al., 2010). In support of this view, the Zn2+ levels of cells showed acute reduction after TPEN addition, as reported by indicators such as FluoZin-3 (Arslan et al., 1985; Gee et al., 2002; Suzuki et al., 2010b). Studies in mouse eggs also showed that the addition of low µM (40–100) concentrations of TPEN disrupted Ca2+ oscillations initiated by fertilization or SrCl2 (Lawrence et al., 1998; Suzuki et al., 2010b), but the mechanism(s) and target(s) of the inhibition remained unknown. To gain insight into this phenomenon, we first performed dose-titration studies to determine the effectiveness of TPEN in lowering Zn2+ in eggs. The addition of 2.5 µM TPEN protractedly reduced Zn2+ levels, whereas 5 and 10 µM TPEN acutely and persistently reduced FluoZin-3 fluorescence (Figure 1A). These concentrations of TPEN are higher than the reported free Zn2+ concentrations in cells, but within range of those found in typical culture conditions (Lo et al., 2020; Qin et al., 2011). We next determined the concentrations of TPEN required to abrogate fertilization-initiated oscillations. Following intracytoplasmic sperm injection (ICSI), we monitored Ca2+ responses while increasing TPEN concentrations. As shown in Figure 1B, 5 and 10 µM TPEN effectively blocked ICSI-induced Ca2+ oscillations in over half of the treated cells, and the remaining eggs, after a prolonged interval, resumed lower-frequency rises (Figure 1B, center panels). Finally, 50 µM or greater concentrations of TPEN permanently blocked these oscillations (Figure 1B, right panel). It is noteworthy that at the time of addition TPEN concentrations of 5 µM or above induce a sharp drop in basal Fura-2 F340/F380 ratios, consistent with Fura-2’s high affinity for Zn2+ (Snitsarev et al., 1996).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/88082/elife-88082-fig1-v1.jpg)
+
+**Figure 1.:** (A) Left panel: representative normalized Zn2+ recordings of MII eggs loaded with FluoZin-3AM following the addition of increasing concentrations of TPEN (0 µM, DMSO, black trace; 2.5 µM, sky blue; 5 µM, blue; 10 µM, navy). TPEN was directly added to the monitoring media. Right panel: representative fluorescent images of MII eggs loaded FluoZin-3AM supplemented with 0, 2.5, and 10 µM of TPEN. Scale bar: 10 µm. (B–D) (B) Representative Ca2+ oscillations following intracytoplasmic sperm injection (ICSI) after the addition of 0, 5, 10, or 50 µM TPEN (arrowheads). Insets show representative traces for eggs that resumed Ca2+ oscillations after TPEN. (C) As above, but following the addition of 100 µM EDTA, 100 or 500 µM DTPA (time of addition denoted by arrowheads). (D) Ca2+ oscillations following ICSI after the addition of 50, 100, and 500 µM TPA (horizontal bars of increasing thickness). (E) Representative bright field images of ICSI-fertilized eggs 2.5, 4, and 7 hr after sperm injection. Arrows and arrowheads denote the second polar body and pronuclear (PN) formation, respectively. Scale bar: 10 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88082/elife-88082-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A representative trace of FluoZin3 fluorescence in replete monitoring media (TL-HEPES). The media was supplemented with cell-impermeable FluoZin-3, and after initiation of monitoring, the addition of EDTA (100 μM) occurred at the designated point (triangle). (B) The left black trace represents Ca2+ oscillations initiation by injection of mPlcz1 mRNA (0.01 μg/μl). The oscillations were monitored in Ca2+ and Mg2+-free media and in the presence of EDTA (110 μM) to chelate residual divalent cations derived from the water source or reagents used to make the media. The right red trace represents the initiation of oscillations as above, but after a period indicated by the black and green bars, Ca2+ and Mg2+ were sequentially added back.
 
 We next used membrane-permeable and -impermeable chelators to assess whether TPEN inhibited Ca2+ oscillations by chelating Zn2+ from intracellular or extracellular compartments. The addition of the high-affinity but cell-impermeable Zn2+ chelators DTPA and EDTA neither terminated nor temporarily interrupted ICSI-induced Ca2+ oscillations (Figure 1C), although protractedly slowed them down, possibly because of chelation and lowering of external Ca2+ (Figure 1C). These results suggest that chelation of external Zn2+ does not affect the continuation of oscillations. We cannot determine that EDTA successfully chelated all external Zn2+, but the evidence that the addition of EDTA to the monitoring media containing cell-impermeable FluoZin-3 caused a marked reduction in fluorescence suggests that a noticeable fraction of the available Zn2+ was sequestered (Figure 1—figure supplement 1). Similarly, injection of mPlcz1 mRNA in eggs incubated in Ca2+ and Mg2+-free media supplemented with EDTA, to maximize the chances of chelation of external Zn2+, initiated low-frequency but persistent oscillations, and addition of Ca2+ and Mg2+ restored the physiological periodicity (Figure 1—figure supplement 1). Lastly, another Zn2+-permeable chelator, TPA, blocked the ICSI-initiated Ca2+ oscillations but required higher concentrations than TPEN (Figure 1D). Collectively, the data suggest that basal levels of labile internal Zn2+ are essential to sustain the fertilization-initiated Ca2+ oscillations in eggs.
 
 We next evaluated whether Zn2+ depletion prevented the completion of meiosis and pronuclear (PN) formation. To this end, ICSI-fertilized eggs were cultured in the presence of 10 μM TPEN for 8 hr, during which the events of egg activation were examined (Figure 1E and Table 1). All fertilized eggs promptly extruded second polar bodies regardless of treatment (Figure 1E). TPEN, however, impaired PN formation, and by 4 or 7 hr post-ICSI, most treated eggs failed to show PNs, unlike controls (Figure 1E and Table 1). Together, these results demonstrate that depletion of Zn2+ terminates Ca2+ oscillations and delays or prevents events of egg activation, including PN formation.
 
-## TPEN is a universal inhibitor of Ca2+ oscillations in eggs
+**Table 1.**
+ Addition of TPEN after intracytoplasmic sperm injection (ICSI) does not prevent extrusion of the second polar body but precludes pronuclear (PN) formation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Group*</th>
+      <th rowspan="2">No. of zygotes</th>
+      <th rowspan="2">Second polar body (2.5 hr)</th>
+      <th colspan="2">PN</th>
+    </tr>
+    <tr>
+      <th>4 hr</th>
+      <th>7 hr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Untreated</td>
+      <td>26</td>
+      <td>25 (96.1%)</td>
+      <td>23 (88.5%)</td>
+      <td>23 (88.5%)</td>
+    </tr>
+    <tr>
+      <td>TPEN (10 µM)</td>
+      <td>27</td>
+      <td>24 (88.9%)</td>
+      <td>1 (3.7%)***</td>
+      <td>2 (7.4%)***</td>
+    </tr>
+  </tbody>
+</table>
+
+_***p<0.001.*Data from three different replicates for each group._
+
+### TPEN is a universal inhibitor of Ca2+ oscillations in eggs
 
 Mammalian eggs initiate Ca2+ oscillations in response to numerous stimuli and conditions (Miyazaki and Ito, 2006; Wakai and Fissore, 2013). Fertilization and its release of PLCζ stimulate the phosphoinositide pathway, producing IP3 and Ca2+ oscillations (Miyazaki, 1988; Saunders et al., 2002). Neurotransmitters such as acetylcholine (Ach) and other G-protein-coupled receptor agonists engage a similar mechanism (Dupont et al., 1996; Kang et al., 2003), although in these cases, IP3 production occurs at the plasma membrane and is short-lived (Kang et al., 2003; Swann and Parrington, 1999). Agonists such as SrCl2 and thimerosal generate oscillations by sensitizing IP3R1 without producing IP3. The mechanism(s) of SrCl2 is unclear, although its actions are reportedly directly on the IP3R1 (Hajnóczky and Thomas, 1997; Hamada et al., 2003; Nomikos et al., 2015; Nomikos et al., 2011; Sanders et al., 2018). Thimerosal oxidizes dozens of thiol groups in the receptor, which enhances the receptor’s sensitivity and ability to release Ca2+ (Bootman et al., 1992; Evellin et al., 2002; Joseph et al., 2018). We took advantage of the varied points at which the mentioned agonists engage the phosphoinositide pathway to examine TPEN’s effectiveness in inhibiting their effects. mPlcz1 mRNA injection, like fertilization, induces persistent Ca2+ oscillations, although mPlcz1’s tends to be more robust. Consistent with this, the addition of 10 and 25 µM TPEN transiently interrupted or belatedly terminated oscillations, whereas 50 µM acutely stopped all responses (Figure 2A). By contrast, SrCl2-initiated rises were the most sensitive to Zn2+-deficient conditions, with 2.5 µM TPEN nearly terminating all oscillations that 5 µM did (Figure 2B). TPEN was equally effective in ending the Ach-induced Ca2+ responses (Figure 2C), but curbing thimerosal responses required higher concentrations (Figure 2D). Lastly, we ruled out that downregulation of IP3R1 was responsible for the slow-down or termination of the oscillations by TPEN. To accomplish this, we examined the IP3R1 mass in eggs (Jellerette et al., 2004) with and without TPEN supplementation and injection of mPlcz1 mRNA. By 4 hr post-injection, Plcz1 induced the expected downregulation of IP3R1 reactivity, whereas it was insignificant in TPEN-treated and Plcz1 mRNA-injected eggs, as it was in uninjected control eggs (Figure 2F). These findings together show that Zn2+ deficiency inhibits the IP3R1-mediated Ca2+ oscillations independently of IP3 production or loss of receptor, suggesting a role of Zn2+ on IP3R1 function (Figure 2E).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88082/elife-88082-fig2-v1.jpg)
 
-**Figure 2.:** 2+ oscillations in eggs triggered by a broad spectrum of agonists that stimulate the PI pathway or IP3R1.(A–D) Representative Ca2+ responses induced by (A) mPlcz1 mRNA microinjection (0.01 µg/µl, black traces), (B) strontium chloride (10 mM, green), (C) acetylcholine chloride (50 µM, orange), and (D) thimerosal (25 µM, purple) in MII eggs. Increasing concentrations of TPEN were added to the monitoring media (arrowheads above traces denotes the time of adding). Insets in the upper row show representative traces of eggs that stop oscillating despite others continuing to oscillate. (E) Each bar graph summarizes the TPEN effect on Ca2+ oscillations at the selected concentrations for each of the agonists in (A–D). (F) Western blot showing the intensities of IP3R1 and alpha-tubulin bands in MII eggs or in eggs injected with mPlcz1 mRNA and incubated or not with TPEN above (p<0.01). Thirty eggs per lane in all cases. This experiment was repeated twice, and the mean relative intensity of each blot is shown in the bar graph below.Figure 2—source data 1.3R1 and TUBA western blottings.
+**Figure 2.:** (A–D) Representative Ca2+ responses induced by (A) mPlcz1 mRNA microinjection (0.01 µg/µl, black traces), (B) strontium chloride (10 mM, green), (C) acetylcholine chloride (50 µM, orange), and (D) thimerosal (25 µM, purple) in MII eggs. Increasing concentrations of TPEN were added to the monitoring media (arrowheads above traces denotes the time of adding). Insets in the upper row show representative traces of eggs that stop oscillating despite others continuing to oscillate. (E) Each bar graph summarizes the TPEN effect on Ca2+ oscillations at the selected concentrations for each of the agonists in (A–D). (F) Western blot showing the intensities of IP3R1 and alpha-tubulin bands in MII eggs or in eggs injected with mPlcz1 mRNA and incubated or not with TPEN above (p<0.01). Thirty eggs per lane in all cases. This experiment was repeated twice, and the mean relative intensity of each blot is shown in the bar graph below.
 
-## Zn2+ depletion reduces IP3R1-mediated Ca2+ release
+### Zn2+ depletion reduces IP3R1-mediated Ca2+ release
 
 To directly assess the inhibitory effects of TPEN on IP3R1 function, we used caged IP3 (cIP3) that, after short UV pulses, releases IP3 into the ooplasm (Wakai et al., 2012; Walker et al., 1987). To exclude the possible contribution of external Ca2+ to the responses, we performed the experiments in Ca2+-free media. In response to sequential cIP3 release 5 min apart, control eggs displayed corresponding Ca2+ rises that occasionally transitioned into short-lived oscillations (Figure 3A). The addition of TPEN after the third cIP3 release prevented the subsequent Ca2+ response and prematurely terminated the in-progress Ca2+ rises (Figure 3B, inset). Pre-incubation of eggs with TPEN precluded cIP3-induced Ca2+ release, even after 5 s UV exposure (Figure 3C). The addition of excess ZnSO4 (100 µM) overcame TPEN’s inhibitory effects only if added before (Figure 3E) and not after the addition of TPEN (Figure 3D). Similar concentrations of MgCl2 or CaCl2 failed to reverse TPEN effects (Figure 3F and G). Together, the results show that Zn2+ is required for IP3R1-mediated Ca2+ release downstream of IP3 production, appearing to interfere with receptor gating, as suggested by TPEN’s rapid termination of in-progress Ca2+ rises and ongoing oscillations.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/88082/elife-88082-fig3-v1.jpg)
+
+**Figure 3.:** (A–G) Representative Ca2+ responses in MII eggs triggered by the release of caged IP3 (cIP3) induced by UV light pulses of increasing duration (arrows). (A) A representative control trace without TPEN, and (B) following the addition of 10 µM TPEN between the third and the fourth pulses. The broken line rectangle is magnified in the inset, farthest right side of the panel displaying the near immediate termination of an ongoing rise. (C, D) Recordings started in the presence of 10 µM TPEN but in (D) 100 µM ZnSO4 was added between the second and the third pulses. (E) Recording started in the presence of 100 µM ZnSO4 followed by the addition of 10 µM TPEN between the third and the fourth pulses. (F, G) Recording started in the presence of 100 µM MgSO4 (F) or 100 µM CaCl2 (G) and 10 µM TPEN added as above. Arrowheads above the different panels indicate the time of TPEN or divalent cation addition. (H) Bar graphs summarizing the number and percentages of eggs that responded to a given duration of UV pulses under each of the TPEN ± divalent ions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88082/elife-88082-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative immunofluorescent images of MII eggs with overexpression of ERp44. At 5 hr. post microinjection, eggs were treated with 10 or 50 µM of TPEN and incubated for 1 hr, after which they were fixed and stained. An anti-HA antibody was used. Scale bar: 10 µm. (B) Representative Ca2+ responses induced by mPlcz1 mRNA microinjection (0.01 µg/µl, left column), SrCl2 (10 mM, center column), and acetylcholine (50 µM, right column) in eggs with (top panels) or without (bottom panels) ERp44 overexpression.
+
 ERp44 is an ER luminal protein of the thioredoxin family that interacts with the IP3R1, reportedly inhibiting its ability to mediate Ca2+ release (Higo et al., 2005). The localization of ERp44 in the ER-Golgi intermediate compartment of somatic cells correlates with Zn2+’s availability and changes dramatically after TPEN treatment (Higo et al., 2005; Watanabe et al., 2019). To rule out the possibility that TPEN suppresses the function of IP3R1 by modifying the subcellular distribution of ERp44, we overexpressed ERp44 by injecting mRNA encoding HA-tagged ERp44 into MII eggs and monitored the effect on Ca2+ release. TPEN did not alter the localization of ERp44 (Figure 3—figure supplement 1), and overexpression of ERp44 modified neither the Ca2+ oscillations induced by agonists (Figure 3—figure supplement 1) nor the effectiveness of TPEN to block them (data not shown). Thus, TPEN and Zn2+ deficiency most likely inhibits Ca2+ release by directly interfering with IP3R1 function rather than modifying this particular regulator.
 
-## Zn2+ depletion diminishes the ER Ca2+ leak and increases Ca2+ store content
+### Zn2+ depletion diminishes the ER Ca2+ leak and increases Ca2+ store content
 
 Our above cIP3 results that TPEN inhibited IP3R1-mediated Ca2+ release and interrupted in-progress Ca2+ rises despite the presence of high levels of environmental IP3 suggest its actions are probably independent of IP3 binding, agreeing with an earlier report showing that TPEN did not modify IP3’s affinity for the IP3R (Richardson and Taylor, 1993). Additionally, the presence of a Zn2+-binding motif near the C-term cytoplasmic domain of the IP3R1’s channel, which is known to influence agonist-induced IP3R1 gating (Fan et al., 2015), led us to posit and examine that Zn2+ deficiency may be disturbing Ca2+ release to the cytosol and out of the ER. To probe this possibility, we queried if pretreatment with TPEN inhibited Ca2+ release through IP3R1. We first used thapsigargin (Tg), a sarcoplasmic/ER Ca2+ ATPase pump inhibitor (Thastrup et al., 1990) that unmasks a constitutive Ca2+ leak out of the ER (Lemos et al., 2021); in eggs, we have demonstrated it is mediated at least in part by IP3R1 (Wakai et al., 2019). Treatment with TPEN for 15 min slowed the Tg-induced Ca2+ leak into the cytosol, resulting in delayed and lowered amplitude Ca2+ responses (Figure 4A; p<0.05). To test whether the reduced response to Tg means that TPEN prevented the complete response of Tg, leaving a temporarily increased Ca2+ content in the ER, we added the Ca2+ ionophore ionomycin (Io), which empties all stores independently of IP3Rs. Io-induced Ca2+ responses were 3.3-fold greater in TPEN-treated cells, supporting the view that TPEN interferes with the ER Ca2+ leak (Figure 4A; p<0.05). We further evaluated this concept using in vitro aged eggs that often display reduced Ca2+ store content than freshly collected counterparts (Abbott et al., 1998). After culturing eggs in the presence or absence of TPEN for 2 hr, we added Io during Ca2+ monitoring, which in TPEN-treated eggs induced bigger Ca2+ rises than in control eggs (Figure 4B; p<0.05). We confirmed that this effect was independent of IP3R1 degradation because TPEN did not change IP3R1 reactivity in unfertilized eggs (Figure 4C; p<0.05).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88082/elife-88082-fig4-v1.jpg)
 
-**Figure 4.:** 2+ depletion alters Ca2+ homeostasis and increases Ca2+ store content independent of IP3R1 mass.(A, B) Representative Ca2+ traces of MII eggs after the addition of Tg and Io in the presence or absence of TPEN. Blue trace recordings represent TPEN-treated eggs, whereas gray traces represent control, untreated eggs. (A) Io was added to fresh MII eggs once Ca2+ returned to baseline after treatment with Tg. Comparisons of mean peak amplitudes after Tg and Io are shown in the bar graphs in the right panel (p<0.001). (B) MII eggs were aged by 2 hr. incubation supplemented or not with TPEN followed by Io addition and Ca2+ monitoring (p<0.001). (C) Western blot showing the intensities of IP3R1 bands in MII eggs freshly collected, aged by 4 hr. incubation without TPEN, and with TPEN. Thirty eggs per lane in all cases. This experiment was repeated three times. (D, E) Left panels: representative traces of Ca2+ values in eggs loaded with the Ca2+-sensitive dye Rhod-2 AM and the ER Ca2+reporter, D1ER (1 µg/µl mRNA). TPEN was added into the media followed 10 min later by (D) 10 µM Tg and (E) 50 µM Ach. Right panel: bars represent the difference of FRET value between at the time of Tg/ Ach addition and at 3 and 5 min later of the addition (p<0.05). Experiments were repeated two different times for each treatment. Black and green traces represent cytosolic Ca2+ and Ca2+-ER, respectively. Blue and black arrowheads indicate the time of addition of TPEN and Tg/Ach, respectively. (F) Basal Zn2+ level comparison in WT (open bar) and Trpv3/-/-Trpm7 (dKO, orange bar) MII eggs. Each plot represents the Fluozin3 measurement at 5 min after starting monitoring. (-/-G) Left panel: representative Ca2+ traces of WT (black trace) and dKO (orange trace) MII eggs after adding Tg. Insets represent the magnified traces at the peak of Ca2+ spike from different sets of eggs. Middle panel: individual traces of WT and dKO eggs after Tg addition. Dashed circles represent the flection point in dKO traces. Right panel: comparisons of mean peak amplitudes after Tg and the time between Tg addition and the Ca2+ peak are shown in the bar graphs in the right panel (p<0.001).Figure 4—source data 1.3R1 and TPEN western blotting.
+**Figure 4.:** (A, B) Representative Ca2+ traces of MII eggs after the addition of Tg and Io in the presence or absence of TPEN. Blue trace recordings represent TPEN-treated eggs, whereas gray traces represent control, untreated eggs. (A) Io was added to fresh MII eggs once Ca2+ returned to baseline after treatment with Tg. Comparisons of mean peak amplitudes after Tg and Io are shown in the bar graphs in the right panel (p<0.001). (B) MII eggs were aged by 2 hr. incubation supplemented or not with TPEN followed by Io addition and Ca2+ monitoring (p<0.001). (C) Western blot showing the intensities of IP3R1 bands in MII eggs freshly collected, aged by 4 hr. incubation without TPEN, and with TPEN. Thirty eggs per lane in all cases. This experiment was repeated three times. (D, E) Left panels: representative traces of Ca2+ values in eggs loaded with the Ca2+-sensitive dye Rhod-2 AM and the ER Ca2+reporter, D1ER (1 µg/µl mRNA). TPEN was added into the media followed 10 min later by (D) 10 µM Tg and (E) 50 µM Ach. Right panel: bars represent the difference of FRET value between at the time of Tg/ Ach addition and at 3 and 5 min later of the addition (p<0.05). Experiments were repeated two different times for each treatment. Black and green traces represent cytosolic Ca2+ and Ca2+-ER, respectively. Blue and black arrowheads indicate the time of addition of TPEN and Tg/Ach, respectively. (F) Basal Zn2+ level comparison in WT (open bar) and Trpv3-/-/Trpm7-/- (dKO, orange bar) MII eggs. Each plot represents the Fluozin3 measurement at 5 min after starting monitoring. (G) Left panel: representative Ca2+ traces of WT (black trace) and dKO (orange trace) MII eggs after adding Tg. Insets represent the magnified traces at the peak of Ca2+ spike from different sets of eggs. Middle panel: individual traces of WT and dKO eggs after Tg addition. Dashed circles represent the flection point in dKO traces. Right panel: comparisons of mean peak amplitudes after Tg and the time between Tg addition and the Ca2+ peak are shown in the bar graphs in the right panel (p<0.001).
 
 Next, we used the genetically encoded FRET sensor D1ER (Palmer et al., 2004) to assess the TPEN’s effect on the ER’s relative Ca2+ levels changes following the additions of Tg or Ach. TPEN was added 10 min before 10 µM Tg or 50 µM Ach, and we simultaneously monitored changes in cytosolic and intra-ER Ca2+ (Figure 4D and E). For the first 3 min, the Tg-induced decrease in Ca2+-ER was similar between groups. However, while the drop in Ca2+ content continued in control eggs, in TPEN-treated eggs, it came to an abrupt halt, generating profound differences between the two groups (Figure 4D; p<0.05). TPEN had even more pronounced effects following the addition of Ach, leading to a reduced- and prematurely terminated Ca2+ release from the ER in treated eggs (Figure 4E; p<0.05).
 
 Lastly, we sought to use a cellular model where low labile Zn2+ occurred without pharmacology. To this end, we examined a genetic model where the two non-selective plasma membrane channels that could influx Zn2+ in maturing oocytes have been deleted (Bernhardt et al., 2017; Carvacho et al., 2016; Carvacho et al., 2013), namely, the transient receptor potential melastatin-7 (TRPM7) and TRP vanilloid 3 (TRPV3), both members of the TRP superfamily of channels (Wu et al., 2010). We found that eggs from double knockout females (dKOs) had lower levels of labile Zn2+ (Figure 4F), and the addition of Tg revealed an expanded Ca2+ store content in these eggs vs. control WT eggs (Figure 4G). Remarkably, in dKO eggs, the Ca2+ rise induced by Tg showed a shoulder or inflection point before the peak delaying the time to peak (Figure 4G, inset; p<0.001). These results in dKO eggs show a changed dynamic of the Tg-induced Ca2+ release, suggesting that lower levels of labile Zn2+ modify ER Ca2+ release independently of chelators.
 
-## Ca2+ oscillations in eggs occur within a window of Zn2+ concentrations
+### Ca2+ oscillations in eggs occur within a window of Zn2+ concentrations
 
 We next examined whether resupplying Zn2+ could restart the Ca2+ oscillations terminated by Zn2+ depletion. Zn pyrithione (ZnPT) rapidly increases cellular Zn2+ upon extracellular addition (Barnett et al., 1977; Robinson, 1964). Dose titration studies and imaging fluorimetry revealed that 0.01 µM ZnPT caused subtle and protracted increases in Zn2+ levels, whereas 0.1 µM ZnPT caused rapid increases in eggs’ Zn2+ baseline (Figure 5A). We induced detectable Ca2+ oscillations by injection of mPlcz1 mRNA followed by 50 µM TPEN (Figure 5B), which terminated them. After 30 min, we added 0.1 µM ZnPT, and within 15 min the oscillations restarted in most TPEN-treated eggs (Figure 5C). We repeated this approach using thimerosal (Figure 5D and E). Adding 0.1 µM ZnPT did not restore the Ca2+ oscillations retrained by TPEN, but 0.5 µM ZnPT did so (Figure 5E). These results demonstrate that Zn2+ plays a pivotal, enabling role in the generation of Ca2+ oscillations in mouse eggs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/88082/elife-88082-fig5-v1.jpg)
 
-**Figure 5.:** 2+ levels with ZnPT rescues oscillations interrupted by TPEN-induced Zn2+ deficiency.(A) Representative traces of Zn2+ in MII eggs following the addition of 0.01–0.1 µM concentrations of ZnPT. The broken rectangular area is amplified in the next panel to appreciate the subtle increase in basal Zn2+ caused by the addition of ZnPT. (B, C) mPlcz1 mRNA (0.01 µg/µl)-induced oscillations followed by the addition of TPEN (black arrowhead) (B), or after the addition of TPEN followed by ZnPT (red arrowhead) (C). (D, E) Thimerosal (25 µM) induced oscillations using the same sequence of TPEN (D) and ZnPT (E), but higher concentrations of ZnPT were required to rescue thimerosal-initiated oscillations (E). These experiments were repeated at least two different times.
+**Figure 5.:** (A) Representative traces of Zn2+ in MII eggs following the addition of 0.01–0.1 µM concentrations of ZnPT. The broken rectangular area is amplified in the next panel to appreciate the subtle increase in basal Zn2+ caused by the addition of ZnPT. (B, C) mPlcz1 mRNA (0.01 µg/µl)-induced oscillations followed by the addition of TPEN (black arrowhead) (B), or after the addition of TPEN followed by ZnPT (red arrowhead) (C). (D, E) Thimerosal (25 µM) induced oscillations using the same sequence of TPEN (D) and ZnPT (E), but higher concentrations of ZnPT were required to rescue thimerosal-initiated oscillations (E). These experiments were repeated at least two different times.
 
-## Excessive intracellular Zn2+ inhibits Ca2+ oscillations
+### Excessive intracellular Zn2+ inhibits Ca2+ oscillations
 
 Zn2+ is necessary for diverse cellular functions, consistent with numerous amino acids and proteins capable of binding Zn2+ within specific and physiological ranges (Pace and Weerapana, 2014). Excessive Zn2+, however, can cause detrimental effects on cells and organisms (Broun et al., 1990; Hara et al., 2022; Sikora and Ouagazzal, 2021). Consistent with the deleterious effects of Zn2+, a previous study showed that high concentrations of ZnPT, ~50 µM, prevented SrCl2-induced egg activation and initiation of development (Bernhardt et al., 2012; Kim et al., 2011). We examined how ZnPT and excessive Zn2+ levels influence Ca2+ oscillations. Our conditions revealed that pre-incubation or continuous exposure to 0.1 µM or 1.0 µM ZnPT delayed or prevented egg activation induced by mPlcz1 mRNA injection (Figure 6—figure supplement 1). We used these ZnPT concentrations to add it into ongoing oscillations induced by ICSI and monitored the succeeding Ca2+ responses. The addition of 0.05–10 µM ZnPT caused an immediate elevation of the basal levels of Fura-2 and termination of the Ca2+ oscillations (Figure 6A–D). mPlcz1 mRNA-initiated Ca2+ responses were also interrupted by adding 0.1 µM ZnPT, whereas untreated eggs continued oscillating (Figure 6E and F). ZnPT also inhibited IP3R1-mediated Ca2+ release triggered by cIP3, suggesting that excessive Zn2+ directly inhibits IP3R1 function (Figure 6G).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/88082/elife-88082-fig6-v1.jpg)
+
+**Figure 6.:** (A–D) Intracytoplasmic sperm injection (ICSI)-initiated Ca2+ response without (A) or following the addition of ZnPT (B, C) (the time of ZnPT addition and concentration are denoted above the tracing). (E, F) Representative Ca2+ responses induced by injection of 0.01 µg/µl mPlcz1 mRNA in untreated eggs (E) or in eggs treated with 0.1 µM ZnPT followed by 10 µM TPEN first and then 50 µM (F). (G) cIP3-induced Ca2+ release as expected when the UV pulses in the absence but not in the presence of 0.05 µM ZnPT (the time of addition is denoted by a bar above the tracing). (H, I) Representative traces of Ca2+ values in eggs loaded with the Ca2+-sensitive dye Rhod-2 AM and the ER Ca2+reporter, D1ER (1 µg/µl mRNA). Uninjected and 0.01 µg/µl mPlcz1 mRNA-injected eggs were monitored. After initiation and establishment of the oscillations, 0.1 µM ZnPT was added into the media followed 30 min later by 2.5 µM Io. Experiments were repeated two different times. Red and black arrowheads indicate the time of addition of ZnPT and Io, respectively.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/88082/elife-88082-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) MII eggs were incubated in TL-HEPES containing 0, 0.1, or 1.0 µM ZnPT at room temperature for 10 min and washed several times with fresh TL-HEPES and injected with mPlcz1 mRNA. After it, eggs and zygotes were cultured in KSOM for 24 hr. PN formation and two-cell development were checked at 7 and 24 hr post-microinjection. Bars represent the percentages of injected eggs that reached the PN and the two-cell stage. Scale bar: 50 μm. (B) MII eggs injected with mPlcz1 mRNA were incubated in KSOM without ZnPT for an hour and then incubated in KSOM with 0 or 0.1 μM ZnPT for 24 hr. The second polar body extrusion, PN formation, and two-cell development were checked at 2.5, 7, and 24 hr. post-microinjection. Bars represent the percentages of injected eggs that reached the PN and the two-cell stage. Scale bar: 50 μm.
 
 A noticeable feature of ZnPT is the increased basal ratios of Fura-2 AM. These changes could reflect enhanced IP3R1 function and increased basal Ca2+ concentrations caused by Zn2+ stimulation of IP3R1. This seems unlikely, however, because extended elevated cytosolic Ca2+ would probably induce cellular responses, such as the release of the second polar body, egg fragmentation, or cell death, neither of which happened. It might reflect, instead, Fura-2’s ability to report changes in Zn2+ levels, which seemed the case because the addition of TPEN lowered fluorescence without restarting the Ca2+ oscillations (Figure 6F). To ensure the impact of ZnPT abolishing Ca2+ oscillations was not an imaging artifact obscuring ongoing rises, we simultaneously monitored cytoplasmic and ER Ca2+ levels with Rhod-2 and D1ER, respectively. This approach allowed synchronously observing Ca2+ changes in both compartments that should unfold in opposite directions. In control, uninjected eggs, the fluorescent values for both reporters remained unchanged during the monitoring period, whereas in mPlcz1 mRNA-injected eggs, the reporters’ signals displayed simultaneous but opposite changes, as expected (Figure 6H and I). The addition of ZnPT in uninjected eggs rapidly increased Rhod-2 signals but not D1ER’s, which was also the case in oscillating eggs, as the addition of ZnPT did not immediately alter the dynamics of the ER’s Ca2+ release, suggesting that D1ER faithfully reports in Ca2+ changes but cannot detect changes in Zn2+ levels, at least to this extent; ZnPT progressively caused fewer and lower amplitude changes in D1ER fluorescence, consistent with the diminishing and eventual termination of the Ca2+ oscillations. Noteworthy, in these eggs, the basal D1ER fluorescent ratio remained unchanged after ZnPT, demonstrating its unresponsiveness to Zn2+ changes of this magnitude. The ZnPT-induced increases in Rhod-2 fluorescence without concomitant changes in D1ER values suggest that the changes in the dyes’ fluorescence do not represent an increase in basal Ca2+ and, more likely, signal an increase in intracellular Zn2+. We confirmed that both reporters were still in working order as the addition of Io triggered Ca2+ changes detected by both reporters (Figure 6H and I).
 
@@ -83,7 +144,7 @@ This study demonstrates that appropriate levels of labile Zn2+ are essential for
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/88082/elife-88082-fig7-v1.jpg)
 
-**Figure 7.:** 3R1 function by Zn2+ in eggs and fertilized zygotes.In MII eggs, left panel, IP3R1s are in a Ca2+-release permissive state with optimal levels of cytoplasmic Ca2+ and Zn2+ and maximum endoplasmic reticulum (ER) content, but Ca2+ is maintained at resting levels by the combined actions of pumps, ER Ca2+ leak, and reduced influx. Once fertilization takes place, left center panel, robust IP3 production induced by the sperm-borne PLCζ leads to Ca2+ release through ligand-induced gating of IP3R1. Continuous IP3 production and refilling of the stores via Ca2+ influx ensure the persistence of the oscillations. Zn2+ release occurs in association with first few Ca2+ rises and cortical granule exocytosis, Zn2+ sparks, lowering Zn2+ levels but not sufficiently to inhibit IP3R1 function. Zn2+ deficiency caused by TPEN or other permeable Zn2+ chelators, right center panel, dose-dependently impairs IP3R1 function and limits Ca2+ release. We propose this is accomplished by stripping the Zn2+ bound to the residues of the zinc-finger motif in the LNK domain of IP3R1 that prevents the allosteric modulation of the gating process induced by IP3 or other agonists. We propose that excess Zn2+, right panel, also inhibits IP3R1-mediate Ca2+ release, possibly by non-specific binding of thiol groups present in cysteine residues throughout the receptor (denoted by a?). We submit that optimal Ca2+ oscillations in mouse eggs unfold in the presence of a permissive range of Zn2+ concentration.
+**Figure 7.:** In MII eggs, left panel, IP3R1s are in a Ca2+-release permissive state with optimal levels of cytoplasmic Ca2+ and Zn2+ and maximum endoplasmic reticulum (ER) content, but Ca2+ is maintained at resting levels by the combined actions of pumps, ER Ca2+ leak, and reduced influx. Once fertilization takes place, left center panel, robust IP3 production induced by the sperm-borne PLCζ leads to Ca2+ release through ligand-induced gating of IP3R1. Continuous IP3 production and refilling of the stores via Ca2+ influx ensure the persistence of the oscillations. Zn2+ release occurs in association with first few Ca2+ rises and cortical granule exocytosis, Zn2+ sparks, lowering Zn2+ levels but not sufficiently to inhibit IP3R1 function. Zn2+ deficiency caused by TPEN or other permeable Zn2+ chelators, right center panel, dose-dependently impairs IP3R1 function and limits Ca2+ release. We propose this is accomplished by stripping the Zn2+ bound to the residues of the zinc-finger motif in the LNK domain of IP3R1 that prevents the allosteric modulation of the gating process induced by IP3 or other agonists. We propose that excess Zn2+, right panel, also inhibits IP3R1-mediate Ca2+ release, possibly by non-specific binding of thiol groups present in cysteine residues throughout the receptor (denoted by a?). We submit that optimal Ca2+ oscillations in mouse eggs unfold in the presence of a permissive range of Zn2+ concentration.
 
 Zn2+ is an essential micronutrient for living organisms (Kaur et al., 2014) and is required for various cellular functions, such as proliferation, transcription, and metabolism (Lo et al., 2020; Maret and Li, 2009; Yamasaki et al., 2007). Studies using Zn2+ chelators have uncovered what appears to be a cell-specific, narrow window of Zn2+ concentrations needed for cellular proliferation and survival (Carraway and Dobner, 2012; Lo et al., 2020). Further, TPEN appeared especially harmful, and in a few cell lines, even low doses provoked oxidative stress, DNA fragmentation, and apoptosis (Mendivil-Perez et al., 2012). We show here that none of the Zn2+ chelators, permeable or impermeable, affected cell viability within our experimental observations, confirming findings from previous studies that employed high concentrations of TPEN to interrupt the Ca2+ oscillations (Lawrence et al., 1998) or inducing egg activation of mouse eggs (Suzuki et al., 2010b). Our data demonstrating that ~2.5 µM is the threshold concentration of TPEN in eggs that first causes noticeable changes in basal Zn2+, as revealed by FluoZin, is consistent with the ~2–5 µM Zn2+ concentrations in most culture media without serum supplementation (Lo et al., 2020), and with the ~100 pM basal Zn2+ in cells (Qin et al., 2011). Lastly, the effects on Ca2+ release observed here with TPEN and other chelators were due to the chelation of Zn2+, as pretreatment with ZnSO4 but not with equal or greater concentrations of MgCl2 or CaCl2 rescued the inhibition of the responses, which is consistent with results by others (Kim et al., 2010; Lawrence et al., 1998).
 
@@ -97,42 +158,346 @@ Abrupt Zn2+ changes have emerged as critical signals for meiotic and mitotic tra
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>CD1</td>
+      <td>Charles River</td>
+      <td>022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>JAX</td>
+      <td>JAX: 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trpm7-floxed</td>
+      <td>A generous gift from Dr. Carmen P. Williams (NIEHS) (PMID:30322909)</td>
+      <td></td>
+      <td>C57BL6/J and 129s4/SvJae mixed background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Gdf9-cre</td>
+      <td>JAX</td>
+      <td>JAX: 011062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trpv3−/−</td>
+      <td>A generous gift from Dr H. Xu (PMID:20403327)</td>
+      <td></td>
+      <td>C57BL/6J and 129/SvEv mixed background</td>
+    </tr>
+    <tr>
+      <td>Biological sample(mouse oocyte)</td>
+      <td>Mus musculus</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Eggs at the metaphase of the second meiosis</td>
+    </tr>
+    <tr>
+      <td>Biological sample(mouse sperm)</td>
+      <td>Mus musculus</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Matured sperm from cauda epididymis</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA6-mouse Plcz1-venus (plasmid used as a template for mRNA synthesis)</td>
+      <td>Published in previous Fissore lab paper PMID: 34313315Mouse Plcz1 sequence was a generous gift from Dr. Kiyoko Fukami (PMID:18028898)</td>
+      <td></td>
+      <td>Mouse Plcz1 mRNA was fused with Venus and inserted in pcDNA6 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA6-CALR-D1ER-KDEL (plasmid used as a template for mRNA synthesis)</td>
+      <td>Published in previous Fissore lab paper PMID:24101727Original D1ER vector was a generous gift from Dr. Roger Y Tsien (PMID:15585581)</td>
+      <td></td>
+      <td>FRET construct D1ER was inserted between ER-targeting sequence of calreticulin and KDEL ER retention signal in pcDNA6 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA6-human ERP44-HA (plasmid used as a template for mRNA synthesis)</td>
+      <td>This paperOriginal human ERp44 sequence was a generous gift from Dr. Roberto Sitia (PMID:11847130)</td>
+      <td></td>
+      <td>Human ERP44 mRNA fused with HA in pcDNA6/Myc His B vector</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal HA (mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>11581816001</td>
+      <td>Dilution: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal IP3R1 (rabbit polyclonal)</td>
+      <td>Parys et al., 1995</td>
+      <td></td>
+      <td>Dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal α-tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T-9026</td>
+      <td>Dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: A32723</td>
+      <td>Dilution: 1:400</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T7 mMESSAGE mMACHINE Kit</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: AM1344</td>
+      <td>Used for in vitro mRNA synthesis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Poly(A) Tailing Kit</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: AM1350</td>
+      <td>Used for poly (A) tailing of synthesized mRNA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hyaluronidase from bovine testes</td>
+      <td>Sigma-Aldrich</td>
+      <td>H3506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Isobutyl-1-methylxanthine (IBMX)</td>
+      <td>Sigma-Aldrich</td>
+      <td>I5879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyvinylpyrrolidone (PVP) (average molecular weight: 360,000)</td>
+      <td>Sigma-Aldrich</td>
+      <td>PVP360</td>
+      <td>Used for mRNA microinjection and ICSI</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N,N, N′,N′-Tetrakis (2-pyridylmethyl) ethylenediamine (TPEN)</td>
+      <td>Sigma-Aldrich</td>
+      <td>P4413</td>
+      <td>Prepared in DMSO and kept at –20°C until use</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zinc pyrithione (ZnPT)</td>
+      <td>Sigma-Aldrich</td>
+      <td>PHR1401</td>
+      <td>Prepared in DMSO and kept at –20°C until use</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strontium chloride hexahydrate (SrCl2)</td>
+      <td>Sigma-Aldrich</td>
+      <td>255521</td>
+      <td>Freshly dissolved in water on the day of experiment</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcium chloride dihydrate (CaCl2)</td>
+      <td>Sigma-Aldrich</td>
+      <td>C3881</td>
+      <td>Freshly dissolved in water on the day of experiment</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Magnesium chloride hexahydrate (MgCl2)</td>
+      <td>Sigma-Aldrich</td>
+      <td>M2393</td>
+      <td>Freshly dissolved in water on the day of experiment</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zinc sulfate monohydrate (ZnSO4)</td>
+      <td>Acros Organics</td>
+      <td>389802500</td>
+      <td>Freshly dissolved in water on the day of experiment</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethylenediaminetetraacetic acid sodium dihydrate (EDTA)</td>
+      <td>LabChem</td>
+      <td>LC137501</td>
+      <td>Prepared as 0.5 M aqueous solution with pH 8.0 adjusted by NaOH</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diethylenetriaminepentaacetic acid(DTPA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>D6518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris (2-pyridylmethyl) amine (TPA)</td>
+      <td>Santa Cruz</td>
+      <td>sc-477037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Sigma-Aldrich</td>
+      <td>D8418</td>
+      <td>Used as a solvent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetylcholine chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>A6625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thimerosal</td>
+      <td>Sigma-Aldrich</td>
+      <td>T5125</td>
+      <td>Freshly dissolved in water on the day of experiment and kept on ice until use</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin calcium salt</td>
+      <td>Tocris</td>
+      <td>1704</td>
+      <td>Working concentration: 2.5 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thapsigargin</td>
+      <td>Calbiochem</td>
+      <td>#586500</td>
+      <td>Working concentration: 10 µM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pluronic F-127 (20% solution in DMSO) (pluronic acid)</td>
+      <td>Invitrogen</td>
+      <td>P3000MP</td>
+      <td>Added to dye dilutions to facilitate the solubilization</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fura-2 AM</td>
+      <td>Invitrogen</td>
+      <td>F1221</td>
+      <td>Ratiometric fluorescent Ca2+ indicatorUsed at 1.25 µM in TL-HEPES containing 0.02% pluronic acid</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FluoZin-3 AM</td>
+      <td>Invitrogen</td>
+      <td>F24195</td>
+      <td>Fluorescent Zn2+ indicatorUsed at 1.25 µM in TL-HEPES containing 0.02% pluronic acid</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluo-4 AM</td>
+      <td>Invitrogen</td>
+      <td>F14201</td>
+      <td>Fluorescent Ca2+ indicatorUsed at 1.25 µM in TL-HEPES containing 0.02% pluronic acid</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rhod2-AM</td>
+      <td>Invitrogen</td>
+      <td>R1244</td>
+      <td>Fluorescent Ca2+ indicatorUsed at 2.2 µM in TL-HEPES containing 0.02% pluronic acid.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ci-IP3/PM</td>
+      <td>Tocris</td>
+      <td>6210</td>
+      <td>Photo-activatable IP3. Dissolved in DMSO and kept at –20°CBefore use, the stock was diluted with water to make a final concentration of 0.25 mM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pme1</td>
+      <td>New England BioLabs</td>
+      <td>R0560S</td>
+      <td>Used to linearize pcDNA6 vectors for mRNA synthesis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td>Version 5.01</td>
+    </tr>
+  </tbody>
+</table>
+
 N,N,N′,N′-tetrakis (2-pyridinylmethyl)–1,2-ethylenediamine (TPEN) and zinc pyrithione (ZnPT) were dissolved in dimethyl sulfoxide (DMSO) at 10 mM and stored at –20°C until use. SrCl2, CaCl2, ZnSO4, and MgCl2 were freshly dissolved with double-sterile water at 1 M and diluted with the monitoring media just before use. Ethylenediaminetetraacetic acid (EDTA) and diethylenetriaminepentaacetic acid (DTPA) were reconstituted with double-sterile water at 0.5 M and 10 mM, respectively, and the pH was adjusted to 8.0. Tris(2-pyridylmethyl) amine (TPA) was diluted in DMSO at 100 mM and stored at –20°C until use. Acetylcholine chloride and thimerosal were dissolved in double-sterile water at 550 mM and 100 mM, respectively. Acetylcholine was stored at –20°C until use, whereas thimerosal was made fresh in each experiment.
 
-## Mice
+### Mice
 
 The University of Massachusetts Institutional Animal Care and Use Committee (IACUC) approved all animal experiments and protocols. Trpm7-floxed (Trpm7fl/fl) Gdf9-Cre and Trpv3−/− mice were bred at our facility. Trpm7fl/fl mice were crossed with Trpv3−/− to generate Trpm7fl/fl; Trpv3−/− mouse line. Female Trpm7fl/fl; Trpv3−/− mice were crossed with Trpm7fl/fl; Trpv3−/−; Gdf9-cre male to generate females null for Trpv3 and with oocyte-specific deletion for Trpm7. Ear clips from offspring were collected prior to weaning, and confirmation of genotype was performed after most experiments.
 
-## Egg collection
+### Egg collection
 
 All gamete handling procedures are as previously reported by us (Wakai et al., 2019). MII eggs were collected from the ampulla of 6- to 8-week-old female mice. Females were superovulated via intraperitoneal injections of 5 IU pregnant mare serum gonadotropin (PMSG, Sigma, St. Louis, MO) and 5 IU human chorionic gonadotropin (hCG, sigma) at 48 hr interval. Cumulus-oocyte-complexes (COCs) were obtained 13.5 hr post-hCG injection by tearing the ampulla using forceps and needles in TL-HEPES medium. COCs were treated with 0.26% (w/v) of hyaluronidase at room temperature (RT) for 5 min to remove cumulus cells.
 
-## Intracytoplasmic sperm injection (ICSI)
+### Intracytoplasmic sperm injection (ICSI)
 
 ICSI was performed as previously reported by us (Kurokawa and Fissore, 2003) using described setup and micromanipulators (Narishige, Japan). Sperm from C57BL/6 or CD1 male mice (7–12 weeks old) were collected from the cauda epididymis in TL-HEPES medium, washed several times, heads separated from tails by sonication (XL2020; Heat Systems Inc, USA) for 5 s at 4°C. The sperm lysate was washed in TL-HEPES and diluted with 12% polyvinylpyrrolidone (PVP, MW = 360 kDa) to a final PVP concentration of 6%. A piezo micropipette-driving unit was used to deliver the sperm into the ooplasm (Primetech, Ibaraki, Japan); a few piezo-pulses were applied to puncture the eggs’ plasma membrane following penetration of the zona pellucida. After ICSI, eggs were either used for Ca2+ monitoring or cultured in KSOM to evaluate activation and development at 36.5°C in a humidified atmosphere containing 5% CO2.
 
-## Preparation and microinjection of mRNA
+### Preparation and microinjection of mRNA
 
 pcDNA6-mPlcz1-mEGFP, pcDNA6-CALR-D1ER-KDEL, and pcDNA6-humanERp44-HA were linearized with the restriction enzyme PmeI and in vitro transcribed using the T7 mMESSAGE mMACHINE Kit following procedures previously used in our laboratory (Ardestani et al., 2020). A poly(A) tail was added to the in vitro synthesized RNA (mRNA) using Tailing Kit followed by quantification and dilution to 0.5 μg/μl in nuclease-free water and stored at –80°C until use. Before microinjection, mPlcz1, D1ER, and ERp44 mRNA were diluted to 0.01, 1.0, and 0.5 μg/μl, respectively, in nuclease-free water, heated at 95°C for 3 min followed by centrifugation at 13,400 × g for 10 min at 4°C. Cytoplasm injection of mRNA was performed under microscopy equipped with micromanipulators (Narishige, Japan). The zona pellucida and the plasma membrane of MII eggs were penetrated by applying small pulses generated by the piezo micromanipulator (Primetech). The preparation of the injection pipette was as for ICSI (Kurokawa and Fissore, 2003), but the diameter of the tip was ~1 μm.
 
-## Ca2+ and Zn2+ imaging
+### Ca2+ and Zn2+ imaging
 
 Before Ca2+ imaging, eggs were incubated in TL-HEPES containing 1.25 μM Fura2-AM, 1.25 μM FluoZin3-AM, or 2.2 μM Rhod2-AM and 0.02% pluronic acid for 20 min at RT and then washed. The fluorescent probe-loaded eggs were allowed to attach to the bottom of the glass dish (Mat-Tek Corp., Ashland, MA). Eggs were monitored simultaneously using an inverted microscope (Nikon, Melville, NY) outfitted for fluorescence measurements. Fura-2 AM, FluoZin3-AM, and Rhod2-AM fluorescence were excited with 340 nm and 380 nm, 480 nm, and 550 nm wavelengths, respectively, every 20 s, for different intervals according to the experimental design and as previously performed in the laboratory. The illumination was provided by a 75 W Xenon arc lamp and controlled by a filter wheel (Ludl Electronic Products Ltd, Hawthorne, NY). The emitted light above 510 nm was collected by a cooled Photometrics SenSys CCD camera (Roper Scientific, Tucson, AZ). Nikon Element software coordinated the filter wheel and data acquisition. The acquired data were saved and analyzed using Microsoft Excel and GraphPad using Prism software (Ardestani et al., 2020). For Figures 1A, 4A–C—6H–I, values obtained from FluoZin3-AM, Fura2-AM, or Rhod2-AM recordings were divided by the average of the first five recordings for each treatment that was used as the F0.
 
 To estimate relative changes in Ca2+-ER, emission ratio imaging of the D1ER (YFP/CFP) was performed using a CFP excitation filter, dichroic beamsplitter, CFP and YFP emission filters (Chroma Technology, Rockingham, VT; ET436/20X, 89007bs, ET480/40m, and ET535/30m). To measure Ca2+-ER and cytosolic Ca2+ simultaneously, eggs that had been injected with D1ER were loaded with Rhod-2AM, and CFP, YFP, and Rhod-2 intensities were collected every 20 s.
 
-## Caged IP3
+### Caged IP3
 
 Caged-IP3/PM (cIP3) was reconstituted in DMSO and stored at –20°C until use. Before injection, cIP3 stock was diluted to 0.25 mM with water and microinjected as above. After incubation in KSOM media at 37°C for 1 hr, the injected eggs were loaded with the fluorophore, 1.25 μM Fluo4-AM, and 0.02% pluronic acid and handled as above for Fura-2 AM. The release of cIP3 was accomplished by photolysis using 0.5–5 s pulses at 360 nm wavelengths. Ca2+ imaging was as above, but Fluo4 was excited at 488 nm wavelength and emitted light above 510 nm collected as above.
 
-## Western blot analysis
+### Western blot analysis
 
 Cell lysates from 20 to 50 mouse eggs were prepared by adding 2× Laemmli sample buffer. Proteins were separated on 5% SDS–PAGE gels and transferred to PVDF membranes (Millipore, Bedford, MA). After blocking with 5% fat-free milk + TBS, membranes were probed with the rabbit polyclonal antibody specific to IP3R1 (1:1000; a generous gift from Dr. Jan Parys, Katholieke Universiteit, Leuven, Belgium; Parys et al., 1995). Goat anti-rabbit antibody conjugated to horseradish peroxidase (HRP) was used as a secondary antibody (1:5000; goat anti-rabbit IgG [H+L] Cross-Adsorbed Secondary Antibody, HRP; Invitrogen, Waltham, MA). For detection of chemiluminescence, membranes were developed using ECL Prime (Sigma) and exposed for 1–3 min to maximum sensitivity film (VWR, Radnor, PA). Broad-range pre-stained SDS–PAGE molecular weight markers (Bio-Rad, Hercules, CA) were run in parallel to estimate the molecular weight of the immunoreactive bands. The same membranes were stripped at 50°C for 30 min (62.5 mM Tris, 2% SDS, and 100 mM 2-beta mercaptoethanol) and re-probed with anti-α-tubulin monoclonal antibody (1:1000).
 
-## Immunostaining and confocal microscopy
+### Immunostaining and confocal microscopy
 
 Immunostaining was performed according to our previous study (Akizawa et al., 2021). After incubation with or without TPEN, MII eggs were fixed with 4% (w/v) paraformaldehyde in house-made phosphate-buffered saline (PBS) for 20 min at RT and then permeabilized for 60 min with 0.2% (v/v) Triton X-100 in PBS. Next, the eggs were blocked for 45 min with a blocking buffer containing 0.2% (w/v) skim milk, 2% (v/v) fetal bovine serum, 1% (w/v) bovine serum albumin, 0.1% (v/v) TritonX-100, and 0.75% (w/v) glycine in PBS. Eggs were incubated overnight at 4°C with mouse anti-HA antibody (1:200) diluted in blocking buffer. Eggs were washed in blocking buffer 3× for 10 min, followed by incubation at RT for 30 min with a secondary antibody, Alexa Fluor 488 goat anti-mouse IgG (H+L) (1:400) diluted in blocking buffer. Fluorescence signals were visualized using a laser-scanning confocal microscope (Nikon A1 Resonant Confocal with six-color TIRF) fitted with a 63×, 1.4 NA oil-immersion objective lens.
 
-## Statistical analysis
+### Statistical analysis
 
 Comparisons for statistical significance of experimental values between treatments and experiments were performed in three or more experiments performed on different batches of eggs in most studies. Given the number of eggs needed, WB studies were repeated twice. Prism-GraphPad software was used to perform the statistical comparisons that include unpaired Student’s t-tests, Fisher’s exact test, and one-way ANOVA followed by Tukey’s multiple comparisons, as applicable, and the production of graphs to display the data. All data are presented as mean ± SD. Differences were considered significant at p<0.05.

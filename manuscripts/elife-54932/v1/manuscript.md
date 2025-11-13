@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Maintaining synaptic structure and function over time is vital for overall nervous system function and survival. The processes that underly synaptic development are well understood. However, the mechanisms responsible for sustaining synapses throughout the lifespan of an organism are poorly understood. Here, we demonstrate that a previously uncharacterized gene, CG31475 , regulates synaptic maintenance in adult Drosophila NMJs. We named CG31475 mayday due to the progressive loss of flight ability and synapse architecture with age. Mayday is functionally homologous to the human protein Cab45, which sorts secretory cargo from the Trans Golgi Network (TGN). We find that Mayday is required to maintain trans-synaptic BMP signaling at adult NMJs in order to sustain proper synaptic structure and function. Finally, we show that mutations in mayday result in the loss of both presynaptic motor neurons as well as postsynaptic muscles, highlighting the importance of maintaining synaptic integrity for cell viability.
+Maintaining synaptic structure and function over time is vital for overall nervous system function and survival. The processes that underly synaptic development are well understood. However, the mechanisms responsible for sustaining synapses throughout the lifespan of an organism are poorly understood. Here, we demonstrate that a previously uncharacterized gene, CG31475, regulates synaptic maintenance in adult Drosophila NMJs. We named CG31475 mayday due to the progressive loss of flight ability and synapse architecture with age. Mayday is functionally homologous to the human protein Cab45, which sorts secretory cargo from the Trans Golgi Network (TGN). We find that Mayday is required to maintain trans-synaptic BMP signaling at adult NMJs in order to sustain proper synaptic structure and function. Finally, we show that mutations in mayday result in the loss of both presynaptic motor neurons as well as postsynaptic muscles, highlighting the importance of maintaining synaptic integrity for cell viability.
 
 ## Introduction
 
@@ -33,13 +33,13 @@ Gaining a better understanding of synaptic dysfunction should help to identify s
 
 ## Results
 
-## Progressive loss of flight in 3PM71 mutants
+### Progressive loss of flight in 3PM71 mutants
 
 Maintaining synaptic communication throughout the lifespan of an organism is crucial for nervous system function and survival. To better understand how these structures are sustained beyond development, we carried out a forward genetic screen assaying locomotor behavior in adult Drosophila using a collection of temperature-sensitive paralytic mutants associated with neurodegeneration (Palladino et al., 2002). We utilized a high-throughput flight assay to screen for the progressive loss of flight ability with age (Babcock and Ganetzky, 2014). Flight behavior in Drosophila is powered primarily by the indirect flight muscles (IFMs). Among these muscles are the dorsal longitudinal muscles (DLMs) which are an important component of the Giant Fiber escape response (Allen et al., 2006). The DLMs are composed of six large muscle fibers labeled from a to f (dorsal to ventral) and are innervated by five motor neurons, forming the NMJs (Figure 1A–C). These motor neurons are located in the thoracic ganglion, and send their axons into the nearby DLMs (Figure 1D–E).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig1-v1.jpg)
 
-**Figure 1.:** 3PM71 mutants.(A) Illustration depicting the location and morphology of the dorsal longitudinal muscles within the thorax. (B) The six muscle fibers and five motor neurons that innervate them are highlighted. (C) Further magnification of a single muscle fiber reveals the en passant boutons and NMJ structures. (D) Side and (E) Dorsal view of motor neuron cell bodies located within the thoracic ganglion. (F) The average landing height of Wild Type (WT) and 3PM71 mutants at days 3 and 25. Each dot represents a single fly in the violin plot. Sample sizes for each plot: WT Day 3 n = 51, with a landing average of 77.6 cm, 3PM71 Day 3 n = 54, landing average 74.1 cm, Day 25 WT n = 65, landing average 68.3 cm, and 3PM71 Day 25 n = 51, and landing average 9.4 cm. 3PM71 mutants have a progressive loss of flight ability in comparison to WT. Black bars represent median values. ****, p-value<0.0001 using A Brown-Forsythe and Welch ANOVA tests with Post hoc Games-Howell’s multiple comparisons. N.S. = Not Significant.  Figure 1—source data 1.Figure 1 flight scores.
+**Figure 1.:** (A) Illustration depicting the location and morphology of the dorsal longitudinal muscles within the thorax. (B) The six muscle fibers and five motor neurons that innervate them are highlighted. (C) Further magnification of a single muscle fiber reveals the en passant boutons and NMJ structures. (D) Side and (E) Dorsal view of motor neuron cell bodies located within the thoracic ganglion. (F) The average landing height of Wild Type (WT) and 3PM71 mutants at days 3 and 25. Each dot represents a single fly in the violin plot. Sample sizes for each plot: WT Day 3 n = 51, with a landing average of 77.6 cm, 3PM71 Day 3 n = 54, landing average 74.1 cm, Day 25 WT n = 65, landing average 68.3 cm, and 3PM71 Day 25 n = 51, and landing average 9.4 cm. 3PM71 mutants have a progressive loss of flight ability in comparison to WT. Black bars represent median values. ****, p-value<0.0001 using A Brown-Forsythe and Welch ANOVA tests with Post hoc Games-Howell’s multiple comparisons. N.S. = Not Significant.
 
 In our forward genetic screen, we isolated 3PM71, a mutant that demonstrated progressive loss of flight. At Day 3, both wild type (WT) and 3PM71 mutants performed similarly, with average landing heights of 77.6 and 74.1 cm. While WT flies continued to perform well at day 25, however, 3PM71 mutants had a significantly lower landing height, suggesting a progressive loss of locomotor ability (Figure 1F).
 
@@ -47,11 +47,19 @@ To determine whether the structural integrity of NMJs is compromised along with 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig2-v1.jpg)
 
-**Figure 2.:** 3PM71 mutants.(A–D) Confocal images of DLM NMJs labeled with FITC-conjugated HRP (green) at 63X magnification. (E–G) Quantification of (E) Total Branch Length, (F) Branch number, and (G) Bouton Number at both WT and 3PM71 NMJs. Sample size was n = 20 for each group. Black bars represent mean values. The mean total branch lengths for each data set from left to right as depicted in the graph (530.5 µM, 519.5 µM, 495.1 µM, and 274.9 µM). The mean branch number for each group as follows: 45, 39, 40, and 15. The mean bouton number (G) for each group as ordered in the panel, 185, 179, 161, and 43. ****, p-value<0.0001, *** p-value<0.001 using a Brown-Forsythe and Welch ANOVA tests with Post Hoc Dunnett’s multiple comparisons. N.S. = Not Significant. Scale bar in D represents 20 µM for all confocal images.  Figure 2—source data 1.
+**Figure 2.:** (A–D) Confocal images of DLM NMJs labeled with FITC-conjugated HRP (green) at 63X magnification. (E–G) Quantification of (E) Total Branch Length, (F) Branch number, and (G) Bouton Number at both WT and 3PM71 NMJs. Sample size was n = 20 for each group. Black bars represent mean values. The mean total branch lengths for each data set from left to right as depicted in the graph (530.5 µM, 519.5 µM, 495.1 µM, and 274.9 µM). The mean branch number for each group as follows: 45, 39, 40, and 15. The mean bouton number (G) for each group as ordered in the panel, 185, 179, 161, and 43. ****, p-value<0.0001, *** p-value<0.001 using a Brown-Forsythe and Welch ANOVA tests with Post Hoc Dunnett’s multiple comparisons. N.S. = Not Significant. Scale bar in D represents 20 µM for all confocal images.
 
-## 3PM71 mutation maps to CG31475
+### 3PM71 mutation maps to CG31475
 
 To elucidate the gene(s) responsible for the progressive loss of flight in 3PM71 mutants, we first mapped this mutation to the third chromosome and used deficiency stocks to identify the location of the mutation on this chromosome. 3PM71 is a recessive mutation, as heterozygotes have a comparable flight performance as controls. When a single copy of 3PM71 is combined with Df(3R)ED5938, flies had a loss of flight comparable to 3PM71 recessive mutants (Figure 3A), suggesting that the gene responsible for the flight defect lies within this uncovered region.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig3-v1.jpg)
+
+**Figure 3.:** (A) Deficiency mapping of 3PM71 mutants to a small region of chromosome 3R using Df(3R)ED5938. The average landing height (cm) and sample size for each group as ordered in the figure are, WT 67.4 cm, n = 149, 3PM71/+ 67.4 cm, n = 108, 3PM71 13.3 cm, n = 77, Df(3R)ED5938/+ 65.4 cm, n = 113, and Df(3R)ED5938/3PM71 20.2 cm, n = 73. (B) Flight performance of insertion alleles in CG31475 (CG31475MI08258, CG31475MI08666, and CG31475MB03509) alone and in combination with 3PM71 and Df(3R)ED5938. For each group, the landing average (cm) and sample size are as follows: CG31475MI08258/+ 67.5 cm, n = 92, CG31475MI08258/3PM71 64.3 cm, n = 140, CG31475MI08258/Df 26.9 cm, n = 78, CG31475MI08666/+ 69.3 cm, n = 81, CG31475MI08666/3PM71 36.2 cm, n = 108, CG31475MI08666/Df 20.4 cm, n = 156, CG31475MB03509/+ 69.3 cm, n = 137, CG31475MB03509/3PM71 36.9 cm, n = 101, and CG31475MB03509/Df 11.6 cm, n = 72. (C) 3PM71 mutants map to the previously uncharacterized gene, CG31475. Green arrows represent the location of current CG31475 alleles. White and purple boxes represent exons. Black bars represent the median values. and ****p<0.0001, ***p<0.001, using A Brown-Forsythe and Welch ANOVA tests with Post hoc Games-Howell’s multiple comparisons. N.S. = Not Significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The fold change in CG31475 expression in comparison to WT. qPCR results were calculated by comparison of CG31475 transcript levels to Actin5C as an internal control using the 2(-▲▲CT) method. The fold change for 3PM71, 0.11, 3PM71/Df ED 5938 0.09, CG31475MI08282/Df ED 5938 0.18, CG31475MI08866/Df ED 5938 0.05 and CG31475MB03509/Df ED 5938 0.26, respectively.
 
 To further identify the specific genetic lesion, we crossed mutants of genes within this region to 3PM71 and measured progressive flight performance. This analysis included three transposon insertion alleles of the previously uncharacterized gene CG31475, including CG31475MI08666 (Nagarkar-Jaiswal et al., 2015), CG31475MI08258 (Nagarkar-Jaiswal et al., 2015), and CG31475MB03509 (Bellen et al., 2011). Flies bearing each of these alleles flew well when crossed to WT. Interestingly, two of the three alleles displayed a significant flight defect when tested along with 3PM71, and all three alleles phenocopied 3PM71 when tested in combination with the deficiency (Figure 3B). These results strongly support the idea that the mutation responsible for the NMJ defects in 3PM71 maps to CG31475.
 
@@ -59,25 +67,41 @@ We next performed DNA sequencing of the CG31475 gene region in both WT and 3PM71
 
 Finally, we performed qPCR to assess transcript levels of myd in each of the alleles assessed in this study. Interestingly, transcript levels of myd were not significantly altered in these alleles in comparison to WT flies (Figure 3—figure supplement 1). Thus, while transcript levels do not appear to be increased or decreased, it is possible that the flight phenotypes caused by these mutations instead is a result of interfering with myd function.
 
-## Mayday is required in muscle tissue to maintain synaptic integrity
+### Mayday is required in muscle tissue to maintain synaptic integrity
 
 To determine the tissue(s) in which Mayday is required to exert its function, we utilized the Gal4/UAS system to knock down Myd using RNA interference (RNAi) (Dietzl et al., 2007) using various tissue-specific drivers. We first knocked down Myd ubiquitously with Tubulin-Gal4 (Tub-Gal4) and found it to be lethal, with no adult progeny emerging (Figure 4A). The lethality of myd RNAi using Tub-Gal4 illustrates the essential role of myd. We also validated the specificity of the UAS-mydRNAi line by co-expressing a WT version of UAS-myd. The ability of UAS-myd to restore the RNAi phenotype demonstrates the specificity of the RNAi construct (Figure 4—figure supplement 1). We next used Gal4 drivers that target tissues associated with the tripartite synapse, including neurons, glia, and muscle tissues (Danjo et al., 2011). When Myd is knocked down using a pan-neuronal driver (ElavC155-gal4) or a motor neuron driver (OK371-Gal4), flight behavior phenocopied heterozygous controls. We found a similar result using a pan-glial driver (Repo-Gal4) as there was no progressive loss of flight (Figure 4B–D). Finally, we examined knockdown of myd in muscle tissue (MHC-Gal4) and found a progressive loss of flight (Figure 4E), similar to the phenotype observed in myd3PM71 mutants. These data suggest that myd has a necessary role in postsynaptic muscle tissue in maintaining synaptic integrity.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig4-v1.jpg)
+
+**Figure 4.:** (A–E) Flight performance upon tissue-specific knockdown of myd with UAS-Dicer 2. Knockdown was assessed ubiquitously (A), pan-neuronally (B), in motor neurons (C), in glia (D), and in muscles (E). All lines used in the RNAi screen were also crossed to WT for controls. The average landing height and sample size for A-E are listed in Supplementary file 1. Black bars represent the median values. ****, p-value<0.0001, *, p-value<0.05, using A Brown-Forsythe and Welch ANOVA tests with Post hoc Games-Howell’s multiple comparisons. N.S. = Not Significant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Landing height of flies upon muscle-specific knockdown of myd using UAS-mydRNAi. Flight defect from RNAi is rescued by co-expression of UAS-Venus::Myd, but not by UAS-luciferase. Black bars represent median values. The landing average (cm) and sample size (n) for each condition are: MHC-Gal4 > mydRNAi44.5 cm, n = 47, MHC-Gal4 > mydRNAi, luciferase 42.0 cm, n = 29, and MHC-Gal4 > mydRNAi, venus::myd 62.0 cm, n = 63. **, p-value<0.01 using a one-way ANOVA with Turkey Post hoc multiple comparisons. N.S. = Not Significant.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Confocal Images of DLM NMJs labeled with FITC-conjugated HRP (green) and Phalloidin 647 (magenta) at ×63 magnification in both control flies (A-I) and those with muscle-specific knockdown of myd (J-R). Scale bar in R represents 20 µM for all panels.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A–B) Transient knockdown of myd with UAS-Dicer-2 using Tubulin-Gal4 (A) as well as MHC-Gal4 (B) using a temperature-sensitive Gal80 to repress Gal4 expression until after eclosion. Flies were kept at 18°C until eclosion, then shifted to 29°C. Flight performance was measured at both Day 3 and Day 28. The average landing height (cm) and sample size (n) for panel A for each condition: TsGal80,Tub-Gal4/+ Day 3 82.2 cm, n = 29, TsGal80-Tub-Gal4 > mydRNAi Day 3 66.7 cm, n = 28, TsGal80,Tub-Gal4/+ Day 28 71.7 cm, n = 50, and TsGal80-Tub-Gal4 > mydRNAi Day 28 24.1 cm, n = 41. For B, the average landing height (cm) and sample size (n) for each group are: UAS-mydRNAi /+ Day 3. 71.2 cm, n = 53, TsGal80,MHC-Gal4/+ Day 3 76.1 cm, n = 42, TsGal80,MHC-Gal4 > mydRNAi Day 3 70.7 cm, n = 40, UAS-mydRNAi /+ Day 28 63.5 cm, n = 43, TsGal80,MHC-Gal4/+ Day 28 68.8 cm, n = 38, and TsGal80,MHC-Gal4 > mydRNAi Day 28 18.9 cm, n = 58. Black bars represent median values. ****, p-value<0.0001 using Brown-Forsythe and Welch ANOVA tests with Post hoc Dunnett’s multiple comparisons. N.S. = Not Significant.
 
 To further validate the role of Myd in muscle tissue, we visualized the gross morphology of NMJs upon knocking down myd in muscles. MHC-Gal4 heterozygotes showed no obvious changes in motor neuron or muscle integrity from day 3 through 21 (Figure 4—figure supplement 2A–I). At day 3, MHC-Gal4>mydRNAi flies also showed NMJ integrity comparable to controls (Figure 4—figure supplement 2J–L). While muscle morphology remains normal at days 14 and 21, motor neuron morphology is severely decreased by day 14, and is almost entirely lost by day 21 (Figure 4—figure supplement 2M–R). Thus, the structural deterioration of NMJs in MHC-Gal4>mydRNAi flies is consistent with the functional.
 
 The finding that ubiquitous knockdown of mayday is lethal prior to adult eclosion suggests that this gene also has an important role in earlier stages of development. To test whether the defects in synaptic maintenance at adult NMJs are due to loss of Mayday function at earlier stages, we transiently knocked down mayday expression after adult eclosion and measured flight performance. Using a temperature-sensitive Gal80 (McGuire et al., 2003), flies were raised at 18°C until eclosion to prevent Gal4 expression. Upon eclosion, adult flies were shifted to 29°C to repress Gal80 and allow for the Gal4-mediated knockdown of mayday. Using both ubiquitous and muscle-specific knockdown, we found that flies still demonstrated a progressive loss of flight ability (Figure 4—figure supplement 3). Although mayday appears to have required roles throughout development, these results suggest that mayday is required throughout aging in order to maintain synaptic integrity.
 
-## Mayday expression in muscle and motor neurons is necessary to maintain synaptic integrity
+### Mayday expression in muscle and motor neurons is necessary to maintain synaptic integrity
 
 Given the loss of synaptic integrity in myd3PM71 mutants, we investigated the ability of wild-type Myd to prevent the progressive loss of flight. We tested for the restoration of flight behavior by expressing a wild-type Mayday construct bearing an N-Terminal Venus tag. Expression of UAS-venus::myd ubiquitously using Tub-Gal4 in a Myd3PM71 homozygous background rescued the progressive loss of flight observed in Myd3PM71 mutants, with a similar average landing height compared to wild-type flies (Figure 5A). These results further support the role of myd in maintaining synaptic integrity. Since muscle-specific knockdown of Myd using RNAi recapitulates the flight defect seen in myd3PM71 mutants, we next examined whether expressing UAS-venus::myd in muscle tissue in the myd3PM71 homozygous background could restore flight behavior. We found that muscle-specific expression was unable to restore flight behavior (Figure 5A), suggesting that expression of Myd in muscles is necessary, but not sufficient to maintain synaptic integrity. Although motor neuron-specific knockdown of Myd did not impair flight on its own, we next tested whether expression of WT Myd is also required in motor neurons to maintain synaptic integrity. By expressing Myd in presynaptic motor neurons and postsynaptic muscles simultaneously in a Myd3PM71 background, we found that flight ability was restored to levels comparable to WT controls as well as the ubiquitous rescue (Figure 5A). These results demonstrate that maintaining synaptic integrity requires both pre- and postsynaptic expression of Myd.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig5-v1.jpg)
 
-**Figure 5.:** (A) Average landing height of flies expressing UAS-venus::Myd either ubiquitously, in muscles, or in both muscles and motor neurons at Day 25 the in a myd mutant background. The average landing height (cm) and the sample size (n) for each are as follows: WT 67.3 cm, n = 81, 3PM71myd 14.1 cm, n = 36, Tub-Gal4>venus::myd, 3PM71myd 64.8 cm, n = 34, MHC-Gal4>venus::myd, 3PM71myd 20.8 cm, n = 65, and MHC-Gal4 and OK371-Gal-4>venus::myd, 3PM71myd 63.2 cm and n = 31. (3PM71B-F) Confocal images of Myd rescue of gross morphology of DLM NMJs stained with Cy3-conjugated-HRP (red) at 63X. (G-I) Measurements of Total branch length, branch number, and bouton number for each condition, sample size n = 20 per genotype. The mean Total Branch Length (µM), mean branch number (n), and mean bouton number (n) for each genotype are as follows: WT 525.0 µM, n = 40, n = 163, myd 296.3 µM, n = 14, n = 33, Tub-Gal4>venus::myd, 3PM71myd 962.9 µM, n = 98, n = 179, MHC-Gal4>venus::myd, 3PM71myd 1082.0 µM, n = 116, n = 87, and MHC-Gal4 and OK371-Gal-4>venus::myd, 3PM71myd 1952.0 µM, n = 198, n = 292, respectively. Black bars in A represent median values. Black bars in G-I represent mean values. ****, p-value<0.0001, ***, p-value<0.001, using a Brown-Forsythe and Welch ANOVA tests with Post hoc Dunnett’s multiple comparisons. N.S. = Not Significant. Scale bar in E represents 20 µM for all images.3PM71  Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Average landing height of flies expressing UAS-venus::Myd either ubiquitously, in muscles, or in both muscles and motor neurons at Day 25 the in a myd3PM71 mutant background. The average landing height (cm) and the sample size (n) for each are as follows: WT 67.3 cm, n = 81, myd3PM71 14.1 cm, n = 36, Tub-Gal4>venus::myd, myd3PM71 64.8 cm, n = 34, MHC-Gal4>venus::myd, myd3PM71 20.8 cm, n = 65, and MHC-Gal4 and OK371-Gal-4>venus::myd, myd3PM71 63.2 cm and n = 31. (B-F) Confocal images of Myd rescue of gross morphology of DLM NMJs stained with Cy3-conjugated-HRP (red) at 63X. (G-I) Measurements of Total branch length, branch number, and bouton number for each condition, sample size n = 20 per genotype. The mean Total Branch Length (µM), mean branch number (n), and mean bouton number (n) for each genotype are as follows: WT 525.0 µM, n = 40, n = 163, myd3PM71 296.3 µM, n = 14, n = 33, Tub-Gal4>venus::myd, myd3PM71 962.9 µM, n = 98, n = 179, MHC-Gal4>venus::myd, myd3PM71 1082.0 µM, n = 116, n = 87, and MHC-Gal4 and OK371-Gal-4>venus::myd, myd3PM71 1952.0 µM, n = 198, n = 292, respectively. Black bars in A represent median values. Black bars in G-I represent mean values. ****, p-value<0.0001, ***, p-value<0.001, using a Brown-Forsythe and Welch ANOVA tests with Post hoc Dunnett’s multiple comparisons. N.S. = Not Significant. Scale bar in E represents 20 µM for all images.
 
 We also assessed whether expression of UAS-venus::myd could rescue the gross structural deficits in NMJ morphology in myd3PM71 mutants. We found that ubiquitous expression of UAS-venus::myd in the Myd3PM71 homozygous background was able to maintain HRP staining comparable to controls (Figure 5B–D), as well as total branch length, branch number, and bouton number (Figure 5G–I). Similar to our results with functional integrity, muscle-specific expression of UAS-venus::myd was unable to prevent NMJ deterioration as seen in myd3PM71 mutants (Figure 5E and G–I). However, expression of Myd in both pre-and post-synaptic tissue was able to restore these values (Figure 5F–I). Interestingly, the synapses in the pre- and post-synaptic rescue had even greater values for branch length and bouton number than WT controls. One possibility for this result is the fact that Myd is overexpressed by multiple Gal4 drivers in this condition. Together, these results provide further evidence that Myd expression in muscles and motor neurons is necessary to maintain synaptic integrity over time.
 
-## Mayday is functionally homologous to human Cab45
+### Mayday is functionally homologous to human Cab45
 
 To determine whether Mayday is conserved across species, we performed a database search to align the protein sequence of Mayday. We found that Myd is very similar to the human protein Calcium Binding Protein of 45 kDa (Cab45), also known as Stromal Cell Derived Factor 4 (SDF4) (Koivu et al., 1997; Scherer et al., 1996; von Blume et al., 2012). Protein alignment comparing Myd with Cab45 revealed a 48% similarity and a 28% identity using the DRSC Integrative Ortholog Prediction Tool (DIOPT) (Hu et al., 2011). The regions of greatest similarity lie within the conserved EF hand domains (Figure 6A), which are associated with Ca2+ binding (Honoré, 2009; Honoré and Vorum, 2000). Cab45 is ubiquitously expressed and localizes to the Trans Golgi Network (TGN), where it plays a role in sorting secretory cargo (Crevenna et al., 2016; Koivu et al., 1997; Scherer et al., 1996; von Blume et al., 2012). To determine if Myd has a similar function to Cab45, we first examined the cellular localization of Myd to see if it also localizes to the Golgi. We expressed UAS-Venus::myd along with a TGN-specific marker (UAS-Golgi-GalT::RFP) (Zhou et al., 2014) in muscle tissue and found that Myd strongly colocalizes with the Golgi marker (Figure 6B–G). This result suggests that Myd may function in a similar manner to Cab45.
 
@@ -89,7 +113,7 @@ Since Cab45 and Myd similarly localize to the TGN, we next investigated whether 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig7-v1.jpg)
 
-**Figure 7.:** myd mutant phenotypes.(A) Average landing height of Day 25 Cab45 rescue flies. The average landing height (cm) and sample size (n) for each group are as follows: WT 71.4 cm, n = 49, myd 10.1 cm, n = 49, Tub-Gal4>Cab45, 3PM71myd 55.6 cm, n = 137, MHC-Gal4>Cab45, 3PM71myd 21.0 cm, n = 64, and MHC-Gal4 and OK371-Gal-4>Cab45, 3PM71myd 60.1 cm, n = 62, respectively. (3PM71B-F) Confocal images of Cab45 expressed ubiquitously, in muscles, or in both muscles and motor neurons together in a myd mutant background. Neuronal membranes are labeled with Cy3-conjugated-HRP (red). (3PM71G-I) Measurements of Total branch length, branch number, and bouton number for each condition with a sample size of n = 20 for each genotype. For each group the mean Total branch length (µM), mean branch number (n), and mean bouton number (n), are listed as follows: WT 533.0 µM, n = 42, n = 128, myd3PM71271.3 µM, n = 13, n = 36, Tub-Gal4>Cab45, myd 957.9 µM, n = 94, n = 151, MHC-Gal4>Cab45, 3PM71myd, 648.1 µM, n = 54, n = 57, and MHC-Gal4 and OK371-Gal-4>Cab45, 3PM71myd 1138.0 µM, n = 128, n = 145. Black bars in 3PM71A represent median values. Black bars in G-I represent mean values. ****, p-value<0.0001, ***, p-value<0.001, **, p-value<0.01, *, p-value<0.05 using Brown-Forsythe and Welch ANOVA tests with Post hoc Dunnett’s multiple comparisons N.S. = Not Significant. Scale bar in E = 20 µM for panels B-F.  Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) Average landing height of Day 25 Cab45 rescue flies. The average landing height (cm) and sample size (n) for each group are as follows: WT 71.4 cm, n = 49, myd3PM71 10.1 cm, n = 49, Tub-Gal4>Cab45, myd3PM71 55.6 cm, n = 137, MHC-Gal4>Cab45, myd3PM71 21.0 cm, n = 64, and MHC-Gal4 and OK371-Gal-4>Cab45, myd3PM71 60.1 cm, n = 62, respectively. (B-F) Confocal images of Cab45 expressed ubiquitously, in muscles, or in both muscles and motor neurons together in a myd3PM71 mutant background. Neuronal membranes are labeled with Cy3-conjugated-HRP (red). (G-I) Measurements of Total branch length, branch number, and bouton number for each condition with a sample size of n = 20 for each genotype. For each group the mean Total branch length (µM), mean branch number (n), and mean bouton number (n), are listed as follows: WT 533.0 µM, n = 42, n = 128, myd3PM71271.3 µM, n = 13, n = 36, Tub-Gal4>Cab45, myd3PM71 957.9 µM, n = 94, n = 151, MHC-Gal4>Cab45, myd3PM71, 648.1 µM, n = 54, n = 57, and MHC-Gal4 and OK371-Gal-4>Cab45, myd3PM71 1138.0 µM, n = 128, n = 145. Black bars in A represent median values. Black bars in G-I represent mean values. ****, p-value<0.0001, ***, p-value<0.001, **, p-value<0.01, *, p-value<0.05 using Brown-Forsythe and Welch ANOVA tests with Post hoc Dunnett’s multiple comparisons N.S. = Not Significant. Scale bar in E = 20 µM for panels B-F.
 
 We also tested whether expression of Cab45 specifically in muscles can rescue the flight phenotype seen in the myd3PM71 mutant background. Expressing Cab45 in muscle tissue alone was not able to restore flight ability (Figure 7A). Similar to our previous experiments with Myd expression, these results demonstrate that muscle-specific expression of Cab45 is insufficient to maintain synaptic integrity.
 
@@ -97,7 +121,7 @@ Since simultaneous expression of Myd in both muscles and motor neurons was able 
 
 We next investigated whether expression of human Cab45 could also prevent the gross morphological deficits at NMJs in myd3PM71 mutants. Ubiquitous expression of UAS-Cab45 was able to restore the structural defects found in myd mutants (Figure 7B–D), as well as total branch length, branch number, and bouton number (Figure 7G–I). When we expressed Cab45 in muscle tissue alone in the homozygous mutant background (Figure 7E), it was unable to completely restore intact WT NMJs. Although total branch length and branch number were restored, the NMJs looked highly unorganized and lacked a restoration of boutons (Figure 7G–I). However, expression of Cab45 in both pre-and postsynaptic tissue was able to restore these values (Figure 7F–I). Together, this evidence supports the functional homology between Cab45 and Myd.
 
-## Dysregulation of trans-synaptic BMP signaling in myd mutants
+### Dysregulation of trans-synaptic BMP signaling in myd mutants
 
 Given the requirement of Myd in muscle tissue and the loss of DLM innervation in myd3PM71 mutants, we next investigated how Myd may be involved in maintaining synaptic integrity. The localization of Myd to the TGN and its shared functional homology with Cab45 suggest that Myd could play a role in secreting a trans-synaptic signal between the postsynaptic muscle tissue and the presynaptic motor neuron. There are several well-studied signaling pathways involved in trans-synaptic communication, including Wingless, the Drosophila Wnt ortholog, and Glass bottom boat (Gbb) (McCabe et al., 2003; Packard et al., 2002). Because Myd has a clear role in muscles (Figure 4A), we specifically focused on retrograde signaling mechanisms. The Drosophila retrograde BMP signaling cascade begins with secretion of the morphogen Gbb from muscle tissue to the presynaptic motor neuron and regulates synaptic growth and development (Aberle et al., 2002; Marqués et al., 2002; McCabe et al., 2004; McCabe et al., 2003; O'Connor-Giles et al., 2008; Rawson et al., 2003; Sweeney and Davis, 2002). Gbb then binds to the BMP receptor, wishful thinking (wit), a BMP-Type II receptor, a transmembrane receptor serine-threonine kinase that phosphorylates BMP-Type I receptors Thickveins (Tkv) and/or saxophone (sax) at the presynaptic terminal and form a complex (Aberle et al., 2002; Marqués et al., 2002; McCabe et al., 2003; Rawson et al., 2003; Sweeney and Davis, 2002). Once the complex enters the presynaptic terminal, Tkv phosphorylates the R-Smad Mothers against Decapentaplegic (Mad) and forms a complex with Medea (med) and translocates to the nucleus to regulate transcription of target genes (Chen et al., 1998; Das et al., 1998; Hoodless et al., 1996; Inoue et al., 1998; Raftery et al., 1995; Wiersdorff et al., 1996; Wisotzkey et al., 1998). However, it is unknown whether Gbb signaling is needed to maintain synaptic integrity in adults.
 
@@ -105,19 +129,19 @@ To determine if Gbb signaling is impaired at adult NMJs in myd3PM71 mutants, we 
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig8-v1.jpg)
 
-**Figure 8.:** Myd genetically interacts with gbb.(A–D) Confocal images of DLM NMJs stained with Gbb (Magenta) at early (A–B) and late (C–D) time points at 63X. Arrowheads designate Gbb puncta in each image. (E) Quantification of the number of Gbb puncta per muscle area for each genotype, sample size n = 10. Box plots show the distribution of data with bar from the min to the max with the mean Gbb puncta for each condition as follows: WT Day 3 n = 61, myd Day 3 n = 110, WT day 25 n = 234, and 3PM71myd Day 3 n = 652. (3PM71F) Progressive loss of flight at day 25 in heterozygous and double heterozygous mutants for myd and 3PM71gbb. The average landing height (cm) and sample size (n) for each condition: mydD203PM71 /+ 70.5 cm, n = 54, gbb/+ 58.3 cm, n = 74, and D20gbb/+; mydD203PM71 /+ 21.1 cm, n = 56. (G–M) Quantification of Gbb puncta located within Golgi (H–I), early endosomes (J–K), or lysosomes (L–M) with n = 10 per condition at Day 25. Box plots show the distribution of data with a bar from the min to the max, with the mean colocalized Gbb puncta for each comparison, Golgi: WT 0.01, myd 2.9, early endosomes WT 0.7, 3PM71myd 5.5, and lysosomes WT 0.6, and 3PM71myd 1.1, respectively. Arrowheads designate Gbb puncta co-localization. In 3PM71E ****, <0.0001 p-value, ***<0.001 p-value using a one-way ANOVA with Turkey Post hoc multiple comparisons. N.S. = Not Significant. In F black bars in graphs represent median values. In F and G ****, p-value<0.0001, *, p-value<0.05 using Brown-Forsythe and Welch ANOVA tests with Post hoc Dunnett’s multiple comparisons. N.S. = Not Significant Scale bar in D represents 20 µM for panels A-D. Scale bar in M represents 2 µM for H-M.  Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A–D) Confocal images of DLM NMJs stained with Gbb (Magenta) at early (A–B) and late (C–D) time points at 63X. Arrowheads designate Gbb puncta in each image. (E) Quantification of the number of Gbb puncta per muscle area for each genotype, sample size n = 10. Box plots show the distribution of data with bar from the min to the max with the mean Gbb puncta for each condition as follows: WT Day 3 n = 61, myd3PM71 Day 3 n = 110, WT day 25 n = 234, and myd3PM71 Day 3 n = 652. (F) Progressive loss of flight at day 25 in heterozygous and double heterozygous mutants for myd3PM71 and gbbD20. The average landing height (cm) and sample size (n) for each condition: myd3PM71 /+ 70.5 cm, n = 54, gbbD20/+ 58.3 cm, n = 74, and gbbD20/+; myd3PM71 /+ 21.1 cm, n = 56. (G–M) Quantification of Gbb puncta located within Golgi (H–I), early endosomes (J–K), or lysosomes (L–M) with n = 10 per condition at Day 25. Box plots show the distribution of data with a bar from the min to the max, with the mean colocalized Gbb puncta for each comparison, Golgi: WT 0.01, myd3PM71 2.9, early endosomes WT 0.7, myd3PM71 5.5, and lysosomes WT 0.6, and myd3PM71 1.1, respectively. Arrowheads designate Gbb puncta co-localization. In E ****, <0.0001 p-value, ***<0.001 p-value using a one-way ANOVA with Turkey Post hoc multiple comparisons. N.S. = Not Significant. In F black bars in graphs represent median values. In F and G ****, p-value<0.0001, *, p-value<0.05 using Brown-Forsythe and Welch ANOVA tests with Post hoc Dunnett’s multiple comparisons. N.S. = Not Significant Scale bar in D represents 20 µM for panels A-D. Scale bar in M represents 2 µM for H-M.
 
 To further investigate the regulation of BMP signaling in myd3PM71 mutants, we tested for a dominant genetic interaction between myd3PM71 and gbb using double heterozygous mutants. At Day 25, myd3PM71/+ and gbbD20/+ (Chen et al., 1998) heterozygotes alone had a strong flight performance, while myd3PM71 and gbbD20 double heterozygous mutants exhibited a severe flight phenotype (Figure 8F). The flight performance of double heterozygous mutants provides evidence of a genetic interaction between gbb and myd, suggesting that the role of myd in maintaining synaptic integrity involves trans-synaptic BMP signaling.
 
 To determine where the increased Gbb is accumulating within DLMs, we measured co-localization of the Gbb puncta with various membrane-bound cellular structures including golgi, endosomes, and lysosomes. We identified a small but significant increase in the amount of Gbb located within either golgi or early endosomes at Day 25 in myd3PM71 mutants (Figure 8G–M). However, we did not find any significant accumulation with lysosomes. The accumulation of Gbb within muscle golgi and early endosomes is consistent with proteins that are sorted and trafficked. Interestingly, the vast majority of Gbb puncta did not co-localize with any of the examined membrane-bound structures, suggesting that much of this Gbb is likely located within the cytoplasm.
 
-## Mayday genetically interacts with presynaptic components of the BMP signaling cascade
+### Mayday genetically interacts with presynaptic components of the BMP signaling cascade
 
 We further investigated the role of myd in trans-synaptic BMP signaling by measuring the readout of downstream BMP targets. The most commonly used readout of BMP signaling activity across synapses is the staining of phosphorylated mothers against DPP (pMad) (McCabe et al., 2003). If Gbb accumulates in postsynaptic muscle tissue due to a defect in trans-synaptic signaling, we hypothesized that this would then result in a decrease in pMad activity in presynaptic motor neuron nuclei. We examined pMad staining at an early time point and found similar staining between WT and myd3PM71 flies (Figure 9A–F), suggesting that BMP signaling is not impaired in myd3PM71 mutants at early time points. However, at Day 21 myd3PM71 mutants had a significant decrease in pMad signaling in motor neuron nuclei compared to WT (Figure 9G–M). The decrease in nuclear pMad suggests that trans-synaptic BMP signaling is progressively impaired in myd mutants. This result, supported by the accumulation of Gbb in post-synaptic muscle tissue (Figure 8C), suggest that Gbb cannot reach the presynaptic motor neuron to activate the downstream signaling components.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig9-v1.jpg)
 
-**Figure 9.:** Myd is a positive regulator of trans-synaptic BMP signaling.(A–L) Confocal images of motor neuron nuclei in myd and controls stained with elav (green) and pMad (magenta) at ×40 magnification. Arrowheads designate areas of co-localization. (3PM71M) Quantification of pMad-positive motor neuron nuclei within each lobe of the thoracic ganglion with a sample size of n = 12 per condition. The mean number of pMad+ nuclei per condition: WT Day 3 n = 66, myd Day 3 n = 63, WT Day 21 n = 62, and 3PM71myd Day 21 n = 31. (3PM71N–Q) Images of DLM NMJs stained with pMad (magenta) at ×63 magnification. Arrowheads designate pMad puncta. (R) Quantification of the amount of pMad signaling per muscle area (2916 µM²), n = 10 for each condition. The mean percent pMad/Muscle Area per condition: WT Day 3 = 0.3%, myd Day 3 = 0.3%, WT Day 21 = 0.3% and 3PM71myd Day 21 = 2.3%. (3PM71S) Progressive loss of flight in wit and myd double heterozygous combinations at Day 28. (T) Progressive loss of flight in tkv and myd double heterozygous combinations at Day 28. (U) Progressive loss of flight in mad and myd double heterozygous combinations at Day 28. (V) Motor neuron expression of a constitutively active Tkv in myd mutants. Average landing height (cm) and sample size (n) can be found in 3PM71Supplementary file 2 for panels (S–T). Black bars in graphs represent median values. For panels M and R. ****, p-value<0.0001, ***, p-value<0.001,. using a one-way ANOVA with Turkey Post hoc multiple comparisons. N.S. = Not Significant. For S-T, ****, p-value<0.0001 using Brown-Forsythe and Welch ANOVA tests with Post hoc Dunnett’s multiple comparisons. N.S. = Not Significant Scale bar in L represents 20 µM for A-L. Scale bar in O represents 10 µM for panels N-Q.  Figure 9—source data 1.Figure 9.
+**Figure 9.:** (A–L) Confocal images of motor neuron nuclei in myd3PM71 and controls stained with elav (green) and pMad (magenta) at ×40 magnification. Arrowheads designate areas of co-localization. (M) Quantification of pMad-positive motor neuron nuclei within each lobe of the thoracic ganglion with a sample size of n = 12 per condition. The mean number of pMad+ nuclei per condition: WT Day 3 n = 66, myd3PM71 Day 3 n = 63, WT Day 21 n = 62, and myd3PM71 Day 21 n = 31. (N–Q) Images of DLM NMJs stained with pMad (magenta) at ×63 magnification. Arrowheads designate pMad puncta. (R) Quantification of the amount of pMad signaling per muscle area (2916 µM²), n = 10 for each condition. The mean percent pMad/Muscle Area per condition: WT Day 3 = 0.3%, myd3PM71 Day 3 = 0.3%, WT Day 21 = 0.3% and myd3PM71 Day 21 = 2.3%. (S) Progressive loss of flight in wit and myd double heterozygous combinations at Day 28. (T) Progressive loss of flight in tkv and myd double heterozygous combinations at Day 28. (U) Progressive loss of flight in mad and myd double heterozygous combinations at Day 28. (V) Motor neuron expression of a constitutively active Tkv in myd3PM71 mutants. Average landing height (cm) and sample size (n) can be found in Supplementary file 2 for panels (S–T). Black bars in graphs represent median values. For panels M and R. ****, p-value<0.0001, ***, p-value<0.001,. using a one-way ANOVA with Turkey Post hoc multiple comparisons. N.S. = Not Significant. For S-T, ****, p-value<0.0001 using Brown-Forsythe and Welch ANOVA tests with Post hoc Dunnett’s multiple comparisons. N.S. = Not Significant Scale bar in L represents 20 µM for A-L. Scale bar in O represents 10 µM for panels N-Q.
 
 To distinguish between nuclear and synaptic pMAD, we also measured pMAD signaling located at NMJs. At Day 3, we found small amounts of pMad localized primarily within postsynaptic muscle tissue (Figure 9N–O). However, at Day 21, there was a significant increase in pMAD staining within muscles in myd3PM71 mutants (Figure 9P–R). Thus, the decrease in presynaptic nuclear pMAD signaling is accompanied by an increase in postsynaptic signaling.
 
@@ -125,19 +149,19 @@ To further characterize the relationship between myd and downstream BMP signalin
 
 If the underlying defect in myd mutants is the inability to secret Gbb from muscle tissue in a retrograde fashion, we would predict that expressing a constitutively active form of the BMP receptor Tkv (Hoodless et al., 1996) in presynaptic motor neurons could restore synaptic integrity. To test this, we expressed constitutively active Tkv (UAS-TkvCA) in motor neurons using the OK371-Gal4 driver (Mahr and Aberle, 2006) in a myd3PM71 mutant background, and found that flight behavior was restored even at Day 28 (Figure 9V). The ability of presynaptic BMP signaling to rescue the flight defect in myd3PM71 mutants supports the functional role of myd in trans-synaptic BMP signaling to maintain synaptic integrity in adult NMJs.
 
-## Loss of retrograde BMP signaling in mayday mutants results in cell death
+### Loss of retrograde BMP signaling in mayday mutants results in cell death
 
 Our model that myd positively regulates retrograde BMP signaling infers that Myd has a neuroprotective role in maintaining synaptic integrity. Since previous studies with Cab45 have demonstrated a role in preventing apoptosis (Chen et al., 2014; Grønborg et al., 2006; Shen et al., 2018), we wanted to determine if cell death is a consequence of mutations in mayday. To further evaluate the consequences of impaired BMP signaling in myd3PM71 mutants, we assessed the viability of both muscle cells and motor neurons using TUNEL staining to detect cell death. While we found a very small number of TUNEL-positive cells within motor neuron nuclei at Day 25, there was widespread TUNEL-positive nuclei in myd3PM71 samples (Figure 10A–G). We also detected muscle cell death as assessed by the presence of TUNEL-positive cells in DLMs of myd3PM71 mutants in comparison to WT flies (Figure 10H–N). These results suggest that the defects in synaptic integrity found in myd3PM71 mutants leads to the loss of both presynaptic motor neurons as well as postsynaptic muscle tissue.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig10-v1.jpg)
 
-**Figure 10.:** (A–F) Confocal images of Day 25 adult thoracic ganglia stained with DAPI (blue) and TUNEL (green) at ×40. White arrows highlight areas of cell death. (G) Quantification of the number of TUNEL-positive nuclei located within a single lobe of the thoracic ganglion with a sample size n = 12, in each condition. The box plot shows the distribution of data with the min and max, with the mean number of TUNEL + nuclei for WT n = 2 and myd n = 28. (3PM71H–N) Confocal images of Day 28 adult DLMs stained with DAPI (blue) and TUNEL (green) at ×63. White arrows highlight areas of cell death. (O) Quantification of the percentage of TUNEL-positive nuclei within each muscle cell. The box plot shows the distribution of data with the min and max, with the mean % of number of TUNEL+ nuclei for WT 3.8% and myd 92.0%, respectively. Scale bar in 3PM71F represents 20 µM for panels A-F, and the scale bar in N represents 10 µM for panels H-N. ****p<0.0001 using a Student’s T-Test.  Figure 10—source data 1.Figure 10.
+**Figure 10.:** (A–F) Confocal images of Day 25 adult thoracic ganglia stained with DAPI (blue) and TUNEL (green) at ×40. White arrows highlight areas of cell death. (G) Quantification of the number of TUNEL-positive nuclei located within a single lobe of the thoracic ganglion with a sample size n = 12, in each condition. The box plot shows the distribution of data with the min and max, with the mean number of TUNEL + nuclei for WT n = 2 and myd3PM71 n = 28. (H–N) Confocal images of Day 28 adult DLMs stained with DAPI (blue) and TUNEL (green) at ×63. White arrows highlight areas of cell death. (O) Quantification of the percentage of TUNEL-positive nuclei within each muscle cell. The box plot shows the distribution of data with the min and max, with the mean % of number of TUNEL+ nuclei for WT 3.8% and myd3PM71 92.0%, respectively. Scale bar in F represents 20 µM for panels A-F, and the scale bar in N represents 10 µM for panels H-N. ****p<0.0001 using a Student’s T-Test.
 
 Thus, these results support the model that Mayday sustains trans-synaptic signaling in adult NMJs. According to our model, we propose that Myd regulates the trafficking of Gbb from the TGN. Myd promotes the secretion of Gbb from the muscle tissue to the presynaptic motor neurons. Once Gbb binds to Wit, Wit then phosphorylates Tkv. The receptor complex enters the presynaptic terminal and Tkv phosphorylates Mad. Mad then forms a complex with Medea and translocated to the nucleus to regulate transcription of BMP signaling. By contrast, in myd3PM71 mutants BMP retrograde signaling is dysregulated by the accumulation of Gbb in the muscle tissue. As a result, Gbb accumulates in the postsynaptic muscle tissue. Because Gbb is not adequately transferred to presynaptic motor neurons, presynaptic pMAD levels decrease. Over time, the excess Gbb in muscles and the decrease in pMAD levels in motor neurons lead the loss of synaptic integrity, leading to the death of both muscle tissue and motor neurons (Figure 11A–B). These results are consistent with previous studies linking an imbalance of BMP signaling to neuromuscular dysfunction. For example, elevated BMP signaling was found in individuals with muscular dystrophy (2017; Bernasconi et al., 1995; Yamazaki et al., 1994). Additionally, enhanced pMAD signaling within muscle tissue has also been used as a biomarker for Amyotrophic Lateral Sclerosis (ALS) (Si et al., 2014; Si et al., 2015). Thus, our model combined with these lines of evidence supports the idea that myd has a neuroprotective role in positively regulating BMP signaling in postsynaptic muscle tissue in adult NMJs.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/54932/elife-54932-fig11-v1.jpg)
 
-**Figure 11.:** myd mutants.3PM71(A) In WT flies, Myd is required for proper retrograde trafficking of Gbb. Successful trafficking of Gbb to presynaptic motor neurons and subsequent BMP signaling promotes synaptic maintenance. (B) In myd flies, defects in Gbb trafficking result in decreased BMP signaling in motor neurons along with accumulated Gbb in muscles, leading to cell death in motor neurons and muscles, respectively.3PM71
+**Figure 11.:** (A) In WT flies, Myd is required for proper retrograde trafficking of Gbb. Successful trafficking of Gbb to presynaptic motor neurons and subsequent BMP signaling promotes synaptic maintenance. (B) In myd3PM71 flies, defects in Gbb trafficking result in decreased BMP signaling in motor neurons along with accumulated Gbb in muscles, leading to cell death in motor neurons and muscles, respectively.
 
 ## Discussion
 
@@ -153,55 +177,632 @@ Our assessment of synaptic dysfunction in the current study includes flight perf
 
 ## Materials and methods
 
-## Fly stocks and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Oregon R</td>
+      <td>BDSC: 5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Df(3R)ED5938</td>
+      <td>BDSC:24139</td>
+      <td>w[1118]; Df(3R)ED5938, P{w[+mW.Scer\FRT.hs3]=3'.RS5+3.3'}ED5938/TM6C, cu[1] Sb[1]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>CG31475MI08258</td>
+      <td>BDSC:51072</td>
+      <td>y[1] w[*]; Mi{y[+mDint2]=MIC}CG31475[MI08258]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>CG31475MI08666</td>
+      <td>BDSC:51100</td>
+      <td>y[1] w[*]; Mi{y[+mDint2]=MIC}CG31475[MI08666]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>CG31475MB03509</td>
+      <td>BDSC:24073</td>
+      <td>w[1118]; Mi{ET1}CG31475[MB03509]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tubulin-Gal4</td>
+      <td>BDSC:5138</td>
+      <td>y[1] w[*]; P{w[+mC]=tubP-GAL4}LL7/TM3, Sb[1] Ser[1]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ElavC155-Gal4</td>
+      <td>BDSC:458</td>
+      <td>P{w[+mW.hs]=GawB}elav[C155]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MHC-Gal4</td>
+      <td>BDSC:55132</td>
+      <td>P{w[+mC]=Mhc-GAL4.K}1, w[*]/FM7c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MHC-Gal4</td>
+      <td>BDSC:55133</td>
+      <td>w[*]; P{w[+mC]=Mhc-GAL4.K}2/TM3, Sb[1]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>OK371-Gal4</td>
+      <td>BDSC:26160</td>
+      <td>OK371-Gal4 w[1118]; P{w[+mW.hs]=GawB}VGlut[OK371]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Repo-Gal4</td>
+      <td>BDSC:7415</td>
+      <td>Repo-Gal4 w[1118]; P{w[+m*]=GAL4}repo/TM3, Sb[1]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dicer2</td>
+      <td>BDSC:24651</td>
+      <td>w[1118]; P{w[+mC]=UAS-Dcr-2.D}10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Golgi-Galt-RFP</td>
+      <td>BDSC:65251</td>
+      <td>w[1118]; P{w[+mC]=UAS-GalT-TagRFP-T}2; TM2/TM6B, Tb[1]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GbbD20</td>
+      <td>BDSC:63054</td>
+      <td>GbbD20 y[1] w[*]; P{w[+mW.hs]=FRT(w[hs])}G13 sha[1] gbb[D20]/SM6a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TkvCA</td>
+      <td>BDSC:36537</td>
+      <td>UAS-Tkv.CA w[*]; P{w[+mC]=UAS-tkv.CA}3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tkv7</td>
+      <td>BDSC:3242</td>
+      <td>Tkv7 tkv[7] cn[1] bw[1] sp[1]/CyO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tkv8</td>
+      <td>BDSC:34509</td>
+      <td>Tkv8 tkv[8] cn[1] bw[1] sp[1]/CyO, P{ry[+t7.2]=sevRas1.V12}FK1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>WitB11</td>
+      <td>BDSC:5174</td>
+      <td>WitB11 bw[1]; wit[B11] st[1]/TM6B, Tb[1]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Mad1-2</td>
+      <td>BDSC:7323</td>
+      <td>Mad1-2 w[*]; Mad[1-2] P{ry[+t7.2]=neoFRT}40A/CyO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TsGal80</td>
+      <td>BDSC:7108</td>
+      <td>w[*]; P{w[+mC]=tubP-GAL80[ts]}10; TM2/TM6B, Tb[1]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TsGal80</td>
+      <td>BDSC:7017</td>
+      <td>w[*]; P{w[+mC]=tubP-GAL80[ts]}2/TM2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-luciferase</td>
+      <td>BDSC:35788</td>
+      <td>y[1] v[1]; P{y[+t7.7] v[+t1.8]=UAS-LUC.VALIUM10}attP2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS CG31475 RNAi</td>
+      <td>VDRC: 106664</td>
+      <td>UAS-maydayRNAi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-venus::myd</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Cab45</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Myd3PM71</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>Cat# CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (E. coli)</td>
+      <td>pBID-UASC-VG vector</td>
+      <td>PMID:22848718</td>
+      <td>RRID:Addgene_35206</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (E. coli)</td>
+      <td>pBID-UASC-G vector</td>
+      <td>PMID:22848718</td>
+      <td>RRID:Addgene_35202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DsRed (rabbit polyclonal)</td>
+      <td>Takara Bio USA Inc</td>
+      <td>Cat#: 632496</td>
+      <td>(1:500), 24 hr, 48 hr with anti-Gbb</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>Cat#: A10262</td>
+      <td>(1:500) 24 hr</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gbb (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#: 3D6-24</td>
+      <td>(1:500), 48 hr</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-elav (rat monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# Elav-9F8A9</td>
+      <td>(1:20), 24 hr</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pMad (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab529031</td>
+      <td>(1:500), 24 hr</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-lamp-1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab30687</td>
+      <td>(1:500), 48 hr</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti -rab5 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab31261</td>
+      <td>(1:200), 48 hr</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568 (goat anti rabbit IgG)</td>
+      <td>Invitrogen, Life Technologies</td>
+      <td>Cat#: A11036</td>
+      <td>(1:200), 2 hr</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 (goat anti rabbit IgG)</td>
+      <td>Invitrogen, Life Technologies</td>
+      <td>Cat#: A11008</td>
+      <td>(1:200), 2 hr</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 (goat anti chicken IgG)</td>
+      <td>Invitrogen, Life Technologies</td>
+      <td>Cat#: A11039</td>
+      <td>(1:200), 2 hr</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 (goat anti mouse IgG)</td>
+      <td>Invitrogen, Life Technologies</td>
+      <td>Cat#: A11001</td>
+      <td>(1:200), 2 hr</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568 (goat anti mouse IgG)</td>
+      <td>Invitrogen, Life Technologies</td>
+      <td>Cat#: A11031</td>
+      <td>(1:200), 2 hr</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated anti HRP</td>
+      <td>Jackson Laboratories</td>
+      <td>Cat#: 123-165-021</td>
+      <td>(1:500), 2 hr</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-conjugated anti HRP</td>
+      <td>Jackson Laboratories</td>
+      <td>Cat#: 123-545-021</td>
+      <td>(1:200), 2 hr</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>CG31475-Gold cDNA clone</td>
+      <td>Drosophila Genomics Resource Center</td>
+      <td>Cat#:16308</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cab45 Forward-5’-ATGGTCTGGCCCTGGGTG-3’</td>
+      <td>This Paper</td>
+      <td>IDT</td>
+      <td>Cab45 Isolation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cab45 Reverse- 5’-TCAAAACTCCTCGTGCACGCT-3’</td>
+      <td>This Paper</td>
+      <td>IDT</td>
+      <td>Cab45 Isolation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actin5C Forward 5’- CGAAGAAGTTGCTGCTCTGGTTGT-3’</td>
+      <td>PMID:25823231</td>
+      <td>IDT</td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actin5C Reverse 5’- GGACGTCCCACAATCGATGGGAAG-3’</td>
+      <td>PMID:25823231</td>
+      <td>IDT</td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CG31475-Forward 5’- TCCAGGAATTGGGGCAGTACATAAATC-3’</td>
+      <td>PMID:17625558</td>
+      <td>IDT</td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CG31475-Reverse 5’ CTCGGGATGGCGGAAACTCA-3’</td>
+      <td>PMID:17625558</td>
+      <td>IDT</td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In Situ Cell Death Detection Kit, Fluorescein</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#: 11684795910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>pCR8 Gateway cloning kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat#:250020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Monarch Total RNA Isolation kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: T2010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Monarch RNA Clean Up Kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat:# T2030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>VECTASHIELD Antifade Mounting Medium</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#:H-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>qScript cDNA synthesis SuperMix</td>
+      <td>Quantabio</td>
+      <td>Cat#: 95048–025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PowerUP SYBR Green Master Mix</td>
+      <td>Applied Biosystems</td>
+      <td>Cat#: A-25741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SuperScript III Reverse Transcriptase</td>
+      <td>Invitrogen, Life Technologies</td>
+      <td>Cat#: 18080093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rnase OUT</td>
+      <td>Invitrogen, Life Technologies</td>
+      <td>Cat#: 10777019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rnase H</td>
+      <td>New England Biolabs</td>
+      <td>Cat#:M02975</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oilgo(dT)20</td>
+      <td>Invitrogen, Life Technologies</td>
+      <td>Cat#: 18418020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nuclease Free Water</td>
+      <td>Invitrogen, Life Technologies</td>
+      <td>Cat#: AM9937</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Invitrogen, Life Technologies</td>
+      <td>Cat#: 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroform</td>
+      <td>Fisher scientific</td>
+      <td>Cat#: AC423550250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RQ-1 Rnase Free -DNAse</td>
+      <td>RQ-1 Rnase Free -DNAse</td>
+      <td>Cat#:M6101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>NIH PMID:22743772</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe Creative Cloud</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe Creative Cloud</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>T-COFFEE Alignment Tool</td>
+      <td>PMID:10964570</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Boxshade</td>
+      <td>n/a</td>
+      <td>Swiss Institute of Bioinformatics</td>
+      <td>Free Open Source Software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad PRISM 9</td>
+      <td>Graphpad</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ABI7300</td>
+      <td>Applied Biosystems</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nanodrop OneC</td>
+      <td>ThermoFisher</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LSM 880 Confocal Microscope</td>
+      <td>Zeiss</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tangle-Trap</td>
+      <td>TangleFoot</td>
+      <td>Cat#:300000588</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNase-Free Pellet Pestle</td>
+      <td>VWR</td>
+      <td>Cat:# 47747–370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Homogenizer</td>
+      <td>VWR</td>
+      <td>Cat:# 749521–1590</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Molecular Probes</td>
+      <td>Cat#: D1306</td>
+      <td>(1:1000), 2 hr</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phalloidin 647</td>
+      <td>Abcam</td>
+      <td>Cat#: Ab176759</td>
+      <td>(1:1000), 2 hr</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and husbandry
 
 Flies were raised on standard Drosophila medium at 25°C. For aging experiments, adult flies were collected each day and raised at 29°C. Flies used in experiments with the presence of TsGal80 (McGuire et al., 2003) were raised at 18°C until eclosion, and then shifted to 29.0°C.
 
 The following fly stocks were obtained from the Bloomington Drosophila Stock Center: Oregon-R (5), Df(3R)ED5938 (24139) (Ryder et al., 2007), CG31475MI08258 (51072) (Nagarkar-Jaiswal et al., 2015), CG31475MI08666 (51100) (Nagarkar-Jaiswal et al., 2015), CG31475MB03509 (24073) (Bellen et al., 2011), Tubulin-Gal4-(5138) (Lee and Luo, 1999), ElavC155-Gal4 (458) (Lin and Goodman, 1994), MHC-Gal4 (55132) (Klein et al., 2014), MHC-Gal4 (55133) (Klein et al., 2014), TsGal80 (7108) (McGuire et al., 2003), TsGal80 (7017) (McGuire et al., 2003), OK371-Gal4 (26160) (Mahr and Aberle, 2006), Repo-Gal4 (7415) (Sepp et al., 2001), UAS-Dicer 2 (24651) (Dietzl et al., 2007), UAS-Luciferase (35788) (Perkins et al., 2015), UAS-Golgi-Galt-RFP (65251) (Zhou et al., 2014), GbbD20 (63054) (Chen et al., 1998), UAS-TkvCA (36537) (Hoodless et al., 1996), Tkv7 (3242) (Nüsslein-Volhard et al., 1984), Tkv8 (34509) (Nüsslein-Volhard et al., 1984), WitB11 (5174) (Harrison et al., 1995), and Mad1-2 (7323) (Wiersdorff et al., 1996). The following stocks were obtained from the Vienna Drosophila Resource Center: UAS-maydayRNAi (106664) (Dietzl et al., 2007). Other Fly Stocks Include: Myd3PM71 (Palladino et al., 2002). Both UAS-Venus::myd and UAS-Cab45 were generated in the Babcock Lab (see below).
 
-## Generation of transgenic fly stocks
+### Generation of transgenic fly stocks
 
 UAS-Venus::myd was created by amplifying myd cDNA from a Gold cDNA clone (16308) obtained from the Drosophila Genomics Resource Center. Myd cDNA was first cloned into pCR8 using the pCR8 Gateway cloning kit (ThermoFisher Scientific) and then cloned into the pBID-UASC-VG vector (Addgene #35206 deposited by Brain McCabe) (Wang et al., 2012) with the venus tag attached to the N-Terminus of Myd. The construct was inserted into Chromosome two at VK00002 by BestGene Inc (Chino Hills, CA).
 
 UAS-Cab45 was generated using full-length WT Cab45 that was isolated from HeLa cell culture using the Monarch Total RNA Isolation kit (New England Biolabs). Next, total RNA was amplified by RT-PCR using the qScript cDNA Synthesis Kit (Quantabio). Cab45 DNA was then amplified from the cDNA using the following primers: Forward 5’-ATGGTCTGGCCCTGGGTG-3’ and Reverse 5’-TCAAAACTCCTCGTGCACGCT-3’ (Integrated DNA Technologies) (IDT). Cab45 cDNA was then cloned into pCR8, followed by cloning into pBID-UASC-G vector (Addgene #35202 deposited by Brain McCabe) (Wang et al., 2012). The UAS-Cab45 construct was inserted into Chromosome two at VK00002 by BestGene, Inc (Chino Hills, CA). DNA sequencing was performed at each step to verify construct identity (Genscript).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Dorsal Longitudinal Muscles (DLMs) were dissected by first removing the head and abdomen from the thorax. Samples were then fixed in 4% paraformaldehyde in PBS for 30 min, and washed four times with PBS at room temperature (RT). Thoraces were then flash frozen with liquid nitrogen and bisected down the midline in ice cold PBS. Tissues were then incubated in blocking buffer (PBS with 0.1% normal goat serum and 0.2% Triton X-100) for at least 1 hr at 4°C (Sidisky and Babcock, 2020). The following primary antibodies were used to treat samples overnight at 4°C unless otherwise specified; rabbit polyclonal anti-DsRed 1:500 (Takara Bio USA Inc), chicken polyclonal anti-GFP 1:500 (ThermoFisher), rabbit monoclonal anti-pMad 1:500 (Abcam ab52903) and rat anti-elav 1:20 (Developmental Studies Hybridoma Bank Elav-9F8A9). The following primary antibodies were treated for 48 hr at 4°C, mouse monoclonal anti-Gbb 1:200 (Developmental Studies Hybridoma Bank 3D6-24), rabbit polyclonal anti-Lamp-1 1:500 (Abcam ab30687), and rabbit polyclonal anti-Rab5 1:200 (Abcam ab31261). Tissues were then washed four times in PBS with 0.3% Triton X-100 (PBS-T) for 5 min followed by secondary antibody treatment. The following secondary antibodies were used for 2 hr at RT: species specific Alexa-488 and Alexa 568 (Molecular Probes) were used at 1:200, DAPI 1:1000 (D1306, Invitrogen, Molecular Probes) Cy3-conjugated anti HRP 1:500, FITC-conjugated anti HRP (Jackson Laboratories) 1:200, and Phalloidin iFluor 647 −1:1000 (Abcam ab176759). Samples were washed four times with PBS-T and then mounted on a glass slide with Vectashield (Vector Laboratories).
 
-## TUNEL assay
+### TUNEL assay
 
 Adult thoraces were isolated from Day 28 old flies as described above fixed for 30 min at RT, washed 4X with PBS and bisected in ice cold PBS after treatment with liquid nitrogen. Tissue were permeabilized and blocked for 1 hr at 4°C with and washed 4X with PBST for 5 min before TUNEL staining. Thoraces were then treated with the In Situ Death Detection Kit Fluorescein (Roche, Germany). Each sample was treated with 7 µL tdt enzyme and 70 µL Fluorescein Labeling Mix for 3 hr at 37.0°C adapted from Denton and Kumar, 2015. Samples were washed 4X with PBST and stained with DAPI 1:1000 in PBST-0.1% NGS for 20 min at RT, washed 4x with PBST and mounted with Vectashield (Wang et al., 2016).
 
 Thoracic ganglia from Day 25 old flies were removed from the thorax and fixed in 4% formaldehyde. Tissues were then blocked and stained as described above for DLM tissues.
 
-## Imaging acquisition
+### Imaging acquisition
 
 A Zeiss LSM 880 Confocal Microscope was used to captured DLM images using a 63 X oil objective (N.A. 1.4). Thoracic ganglion images were obtained using a ×40 oil objective (N.A. 1.3) Confocal stacks were generated using parameters specified under each assay description. Brightness and contrast were adjusted using ImageJ software (NIH) Fiji (Schindelin et al., 2012) and Adobe Photoshop CC2020. All figures were generated in Adobe Illustrator CC2020.
 
-## DLM synaptic morphology
+### DLM synaptic morphology
 
 Images for DLM for all synaptic morphology were captured using a ×63 objective (N.A. 1.4) oil by creating a Z-Stack at a constant tissue depth of 45 slices (with an interval of 0.7 μm) from the top of the tissue when HRP staining first comes into view at muscle fiber D, as indicated by the placement of the white box in Figure 1A. A total of 20 images were captured for each condition with identical parameters for each experiment. Images were then processed as Max Intensity Projections (MIP) using Fiji software (Schindelin et al., 2012). Synaptic Morphology Measurements of total neurite length (µM) and branch number were obtained through traces made form HRP staining using the updated Simple Neurite Tracer (SNT) Plug-in (Arshadi et al., 2020; Longair et al., 2011) and analyzed using the Skeletonize 3D Plug-in of Fiji (Schindelin et al., 2012) for each image. Boutons were counted manually for each image using the Cell Counter tool in Fiji (Schindelin et al., 2012).
 
-## Quantification of pMad in DLMs and motor neurons
+### Quantification of pMad in DLMs and motor neurons
 
 The muscle pMad was quantified using the Analyze Particles Plugin in Fiji. Z-Stacks of 30 slices (an interval of 1.0 µM) in muscle Fiber D were obtained processed as MIPs. Background was subtracted and threshold was adjusted. The pMad puncta were quantified as the percentage of pMad puncta per muscle area for 10 images for each condition.
 
 Thoracic ganglion preps stained with Elav and pMad were used to identify motor neuron nuclei that are pMad positive. Z-stacks of 15 slices (0.7 µM interval) of each lobe (T1 and T2) with using a ×40 oil (N.A 1.3) objective were obtained. The total number of pMad + nuclei per image was analyzed by counting nuclei stained with both Elav and pMad using the Cell Counter tool in Fiji with a total of 12 images per condition.
 
-## Quantification of Gbb
+### Quantification of Gbb
 
 The Gbb in DLM muscle tissue was quantified using the Analyze Particles tool in Fiji. Z-Stacks of 30 slices (interval of 1.0 µM) of muscle Fiber D were obtained and processed as MIPs. Background was subtracted and threshold was adjusted. The Gbb puncta were calculated as the total Gbb puncta per muscle area over 10 images, for each condition.
 
 For the Gbb trafficking images and colocalization analysis, a Z-stack with 15 slices (interval of 0.7 µM) for each image of the same area in muscle Fiber D and processed as a MIP. The colocalized puncta were counted manually using the Cell Counter tool in Fiji in areas where the Gbb puncta clearly overlapped with the marker in each condition per muscle area. For each condition, 10 images were analyzed.
 
-## TUNEL quantification
+### TUNEL quantification
 
 The percent of TUNEL positive nuclei in DLM tissue was obtained from Z-stacks of 15 slices (interval of 0.7 µM) and processed as an MIP in FIJI. The percent of TUNEL positive nuclei was quantified by manually counting the total number nuclei with DAPI and then count the nuclei that had a TUNEL-positive signal. The percent of TUNEL positive nuclei was tabulated for each image, a total of 10 images were generated and analyzed for each condition from the same area in muscle fiber D.
 
 The number of TUNEL-positive nuclei in the thoracic ganglion were obtained from Z-Stacks of 15 slices (0.7 µM interval) and processed as a MIP in FIJI in each lobe (T1 and T2) with using a ×40 oil (N.A 1.3) objective. The total number of TUNEL + nuclei per image was analyzed counting nuclei stained with both DAPI and TUNEL using the Cell Counter tool in Fiji with a total of 12 images per condition.
 
-## Thorax RNA isolation and qRT-PCR analysis
+### Thorax RNA isolation and qRT-PCR analysis
 
 Total RNA was isolated from Day 28 old flies with 30 adult thoraces isolated per genotype that were dissected in ice cold PBS. PBS was removed prior to snap freezing the tissue with liquid nitrogen and stored at −80°C for storage until RNA isolation. The RNA was isolated (Kearse et al., 2011) by homogenizing tissue in Trizol (Invitrogen) and chloroform following the manufacturer’s instructions. Each tissue sample was homogenized using an RNAase-free pestal. RNAase free glycogen (Invitrogen) was used to increase the yield. Total RNA was then washed once with 75% EtOH and with 100.0% EtOH and resuspended in Nuclease-Free water (Invitrogen). Total RNA samples were processed using the NEB RNA Clean-up kit (NEB T2030) to remove any potential residual contaminants from Trizol isolation. RNA quality and concentration were accessed using a Nanodrop One C prior to downstream applications. Total RNA was stored at −80°C.
 
@@ -209,14 +810,14 @@ Total RNA of 1.0 µg was treated with Promega DNase (M6101) following manufactur
 
 For qRT-PCR analysis was performed using an ABI7300 Real-Time PCR system using SYBR green power up master mix (Applied Biosystems) on cDNA. Actin5C primers (Dalui and Bhattacharyya, 2014) Forward 5’- CGAAGAAGTTGCTGCTCTGGTTGT-3’ and Reverse 5’- GGACGTCCCACAATCGATGGGAAG-3’ were used as an internal control and CG31475 primers (Dietzl et al., 2007) Forward 5’- TCCAGGAATTGGGGCAGTACATAAATC-3’ and Reverse 5’ CTCGGGATGGCGGAAACTCA-3’ were used to detect myd. Reactions were repeated in triplicate to obtain average cycle number (Ct) values. Actin5C was the internal control. The fold change in myd gene expression was adapted from as previously described (Bhattacharya et al., 2018; Ton and Iovine, 2013). The delta Ct (▲Ct) values represent expression levels normalized to Actin 5C. The delta delta Ct (▲▲Ct) values represent the relative gene expression levels. The 2^-▲▲Ct method was used to calculate the fold change in expression of myd relative to WT across each genotype.
 
-## Flight behavior
+### Flight behavior
 
 Flies were for each genotype were collected, separated by sex, and aged at 29.0°C. Flight behavior was characterized using the flight test as previously described (Babcock and Ganetzky, 2014). Briefly, flies were transferred into glass vials and launched down into a 90 cm tube with the inner walls coated with Tangle-Trap (TangleFoot). The landing height of each individual fly was measured to the nearest cm. For each experiment, males and females were tested separately and the landing average was recorded. Data of both sexes was combined for each genotype if no statistical significance was detected between sexes.
 
-## Protein alignment
+### Protein alignment
 
 The protein alignment of Cab45 and Mayday was generated using the Cab45 (NP_057260.2) and Drosophila CG31475 (NP_001262725) sequences. The alignment was generated using T-Coffee Alignment tool (Notredame et al., 2000). The shading the alignment was generated using the Boxshade software from the Swiss Institute of Bioinformatics (SIB). The EF-hand domains were identified using the UnitProtKB database (Apweiler et al., 2017 Apweiler, 2004) for Cab45 (Q9VDY9) and CG31475 (Q9BRK.1).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis for the data was conducted using the Brown-Forsythe and Welch ANOVA tests with Post hoc Dunnett’s or Games-Howell multiple comparisons or a one way ANOVA with Turkey Post hoc comparisons or a Student’s T-Test where appropriate in Graphpad PRISM 9 (Graphpad Software, San Diego),CA.

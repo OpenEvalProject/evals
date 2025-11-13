@@ -24,20 +24,20 @@
 
 ### Affiliations
 
-1. https://ror.org/04drvxt59 Division of Medical Oncology, Beth Israel Deaconess Medical Center Boston United States
-2. https://ror.org/03wevmz92 Harvard Medical School Boston United States
-3. https://ror.org/0142eak56 Blueprint Medicines Cambridge United States
+1. Division of Medical Oncology, Beth Israel Deaconess Medical Center Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
+2. Harvard Medical School Boston United States ([ROR:03wevmz92](https://ror.org/03wevmz92))
+3. Blueprint Medicines Cambridge United States ([ROR:0142eak56](https://ror.org/0142eak56))
 4. Henry Ford Cancer Institute Detroit United States
-5. https://ror.org/02dqehb95 Department of Biochemistry, Purdue University West Lafayette West Lafayette United States
-6. https://ror.org/02e7b5302 Nanyang Technological University Singapore Singapore
-7. https://ror.org/04drvxt59 Department of Radiology, Beth Israel Deaconess Medical Center Boston United States
-8. https://ror.org/03dwhj404 Agenus Inc Lexington United States
-9. https://ror.org/038hbfs18 Deciphera Pharmaceuticals Waltham United States
-10. https://ror.org/04drvxt59 Division of Gastroenterology, Beth Israel Deaconess Medical Center Boston United States
-11. https://ror.org/02r109517 Division of Hematology-Oncology, Weill Cornell Medical College New York United States
-12. https://ror.org/03gzbrs57 New York-Presbyterian Hospital New York United States
-13. https://ror.org/04dd14e02 Tymora Analytical Operations West Lafayette United States
-14. https://ror.org/040gcmg81 National Cancer Institute Bethesda United States
+5. Department of Biochemistry, Purdue University West Lafayette West Lafayette United States ([ROR:02dqehb95](https://ror.org/02dqehb95))
+6. Nanyang Technological University Singapore Singapore ([ROR:02e7b5302](https://ror.org/02e7b5302))
+7. Department of Radiology, Beth Israel Deaconess Medical Center Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
+8. Agenus Inc Lexington United States ([ROR:03dwhj404](https://ror.org/03dwhj404))
+9. Deciphera Pharmaceuticals Waltham United States ([ROR:038hbfs18](https://ror.org/038hbfs18))
+10. Division of Gastroenterology, Beth Israel Deaconess Medical Center Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
+11. Division of Hematology-Oncology, Weill Cornell Medical College New York United States ([ROR:02r109517](https://ror.org/02r109517))
+12. New York-Presbyterian Hospital New York United States ([ROR:03gzbrs57](https://ror.org/03gzbrs57))
+13. Tymora Analytical Operations West Lafayette United States ([ROR:04dd14e02](https://ror.org/04dd14e02))
+14. National Cancer Institute Bethesda United States ([ROR:040gcmg81](https://ror.org/040gcmg81))
 
 † Corresponding author
 
@@ -55,7 +55,7 @@ To meet this need, we conducted a large EV proteomics study from peripheral bloo
 
 ## Results
 
-## Proteomics characterization of circulating EVs
+### Proteomics characterization of circulating EVs
 
 In this study, we sought to identify proteins in extracellular vesicles in the blood that may be used as biomarkers for the diagnosis and prognosis of pancreatic cancer. With the approval of our institutional review board (DF/HCC IRB#17–640), we enrolled a total of 124 patients to the discovery cohort of this biomarker study (Methods and Supplementary file 1). Subjects in the pancreatic cancer group (N=93) had a mean age of 66.5 years (range, 37–91), and 48.4% were female. All subjects had biopsy-proven disease. Thirty subjects had early-stage disease (stages I-II) and 63 had advanced disease (stages III-IV). Patients with benign pancreatic diseases included chronic pancreatitis (N=12) with a mean age of 57.5 years (range 37–78) and with 50% females, whereas IPMN included individuals with main duct and side branch IPMNs (N=8) with a mean age of 68.2 years (range 50–89) and with 87.5% being females. Subjects in the healthy control group (N=11) had a mean age of 53.4 years (range, 31–83) with 54.5% females (Supplementary file 1).
 
@@ -63,23 +63,47 @@ We employed the novel EVtrap method (Extracellular Vesicles Total Recovery And P
 
 Following EV isolation, samples were digested in-solution and analyzed by liquid chromatography-tandem mass spectrometry (nanoLC-MS/MS) on a high-resolution mass spectrometer (Q-Exactive HF-X). The workflow for cEVs isolation and enrichment and subsequent cEV mass spectrometry analysis is illustrated in Figure 1A.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87369/elife-87369-fig1-v1.jpg)
+
+**Figure 1.:** The discovery cohort was comprised of 124 individuals, including pancreatic ductal adenocarcinoma (PDAC, N=93), chronic pancreatitis (CP, N=12), intraductal papillary mucinous neoplasm (IPMN, N=8) and healthy controls (N=11). Plasma samples were processed for EV isolation using EVtrap and analyzed by liquid chromatography-tandem mass spectrometry (LC-MS/MS).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87369/elife-87369-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Transmission electron microscopy (TEM) images collected of a single EV and multiple EVs captured from plasma by EVtrap. TEM imaging of EVs was carried out on a HITACHI H-8100 electron microscope (Hitachi, Tokyo, Japan) with an accelerating applied potential of 200 kV. (B) Nanoparticle tracking analysis (NTA) of EVs after elution off EVtrap beads. NTA was carried out using ZetaView instrument (Particle Metrix) after calibration with 100 nm polystyrene particles.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87369/elife-87369-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Reproducibility of the method. A standard plasma sample was processed in six replicates and performed a Pearson correlation analysis that revealed a very high correlation between replicates. (B) Number of quantified EV proteins per sample according to different patient cohort.
+
 First, to confirm that EVtrap can efficiently isolate extracellular vesicles from plasma, a test plasma sample was processed to remove platelets and other large particles and enriched for EVs using EVtrap beads (see Methods for details). Transmission electron microscopy (TEM) analysis of the EV pellet showed cup-shaped extracellular vesicles (exosomes and microvesicles; Figure 1—figure supplement 1A), and nanoparticle tracking analysis (NTA) using ZetaView instrument (Particle Metrix) demonstrated that the isolated EVs were in the 100–200 nm diameter range, with a mean diameter of 152 nm (Figure 1—figure supplement 1B). Second, to assess the technical reproducibility of the EV proteomics approach, the test plasma sample was processed in six replicates and Pearson correlation analysis revealed a very high correlation (r2 >0.97) between replicates (Figure 1—figure supplement 2A, Supplementary file 2). These results provided the confidence to proceed with the analysis of our discovery set of plasma from 124 subjects. In this cohort, we identified 1708 unique proteins (Supplementary file 3). The number of unique EV proteins detected per 100 µL of plasma sample varied from 817 to 1128, with an average of 912 unique proteins per sample (Figure 1—figure supplement 2B). We did not observe differences between non-tumor and tumor samples regarding the overall number of EV proteins identified. Within the PDAC group, we did not observe significant differences in the average number of EV proteins detected for different disease stages. Collectively, these data demonstrate high reproducibility of EV isolation and robust label-free MS quantification of cEVs.
 
-## Diseases of the pancreas express distinct circulating EV proteome compared to controls
+### Diseases of the pancreas express distinct circulating EV proteome compared to controls
 
 Next, we aimed at identifying specific cEV proteins associated with clinical parameters with the potential to serve as diagnostic biomarkers. We first compared the proteomics profile of individuals with underlying pancreatic diseases (PDAC, chronic pancreatitis and IPMN) against healthy controls. We selected EV proteins expressed in at least 50% of subjects in the disease group with a fold change of expression ≥2 or≤2 compared to controls and p-value ≤0.01 after adjusting for multiple testing. A total of 207 proteins were identified that met the criteria, with the largest number of differentially expressed markers in PDAC (176), followed by chronic pancreatitis (55) and IPMN (3) (Supplementary file 4). Principal component analysis (PCA) of these markers showed control samples as a tight cluster segregated away from PDAC samples but closer to IPMN and chronic pancreatitis patients (Figure 2A).
 
-## Circulating EV proteome discriminates pancreatic cancer from benign pancreatic diseases
+![Figure 2.](https://cdn.elifesciences.org/articles/87369/elife-87369-fig2-v1.jpg)
+
+**Figure 2.:** (A) Principal component analysis of cEV proteins differentially expressed in the plasma of patients with pancreatic diseases compared to controls. Each dot indicates one individual enrolled in the study: green, controls; blue, patients with intraductal papillary mucinous neoplasm (IPMN); purple, patients with chronic pancreatitis (CP); salmon, early stage (stages I and II) pancreatic ductal adenocarcinoma (PDAC); red, late stage (stages III and IV) PDAC. (B) Volcano plot of circulating EV proteins enriched in the plasma of patients with PDAC versus benign pancreatic diseases. X-axis, log base 2 of fold changes; Y-axis, negative of the log base 10 of p values. (C) Heatmap of cEV proteins differentially expressed in the plasma of patients with pancreatic diseases compared to controls. Designations of clinical parameters were indicated at the top of the heatmap. (D) Expression of enriched cEV proteins in patients with PDAC (N=93) versus benign pancreatic diseases (N=20). Each dot indicates the target protein signal from one patient. Y-axis, normalized log base 2 of protein signals detected by mass spectrometry; Error bars, min and max values; lines in boxes, median values. * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87369/elife-87369-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Protein abundances were normalized across patients for each protein.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87369/elife-87369-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Functional association of proteins identified by STRING database. Red, cEV proteins enriched in PDAC patients as compared to benign pancreatic diseases. Green, cEV proteins decreased in patients with PDAC as compared to benign pancreatic diseases. Red, cEV proteins increased in PDAC as compared to benign pancreatic diseases. Thickness of lines indicate confidence of association. (B, C) Clustering of cEV protein pathways enriched (B) or downregulated (C) in PDAC cohorts. Pathways were identified using Gene Ontology database and REACTOME database.
+
+### Circulating EV proteome discriminates pancreatic cancer from benign pancreatic diseases
 
 To further assess the potential of cEV proteins for cancer detection, we compared proteomic profiles of cEVs between patients with PDAC with those with underlying benign diseases of the pancreas (chronic pancreatitis and IPMN). We identified 182 differentially expressed proteins in malignant cases (92 over-expressed and 90 with reduced expression; Supplementary file 5). Several of those markers had remarkable overexpression in PDAC (greater than tenfold), including PDCD6IP, SERPINA12, RUVBL2, among others, as shown in the volcano plot (Figure 2B). Unsupervised clustering showed a clear separation between PDAC and benign pancreatic diseases. Individuals with IPMN were more closely related to controls, whereas chronic pancreatitis cases were more related to PDAC (Figure 2C). In addition, the PDAC cohort was separated into two subgroups: the first, enriched for early-stage tumors and more closely related to the other pancreatic diseases (chronic pancreatitis and IPMN); the second, enriched for advanced and metastatic cases with expression profiles further apart from early-stage cancer and pancreatic diseases (Figure 2C). We further noticed that some proteins such as PDCD6IP, SERPINA12, KRT20 showed statistically significant population-wise enrichment in pancreatic cancer compared to benign pancreatic diseases (Figure 2D, Figure 2—figure supplement 1). Together, these data indicate the existence of EV markers that can separate controls, benign and malignant pancreatic diseases, as well as proteins that separate early versus late-stage PDAC, suggesting their potential to serve as diagnostic biomarkers.
 
-## Functional and systems biology of cEV proteome
+### Functional and systems biology of cEV proteome
 
 To gain molecular insight into the functions of the 182 proteins differentially expressed in pancreatic cancer as compared to benign pancreatic diseases, we conducted pathway analysis using the Gene Ontology (GO) and REACTOME databases (Supplementary file 5). We identified protein modules in protein localization, biomolecule binding/docking, peptidase activities among changes enriched in PDAC compared to benign diseases (Figure 2—figure supplement 2). Interestingly, KRT20 (keratin 20), a gastrointestinal epithelia-associated keratin, was increased in PDAC patient EVs, while keratins associated basal cells, KRT4, KRT15, and KRT3, were reduced. KRT20 overexpression is frequently found in pancreatic tumor tissues and correlates with poor prognosis (Schmitz-Winnenthal et al., 2006), suggesting a biological basis for their high levels in the cEVs of PDAC patients.
 
 Interestingly, proteins associated with immunological functions showed complex regulation with increased representation of leukocyte mediated immunity (GO:0002443), leukocyte degranulation (GO:0043299), myeloid leukocyte activation (GO:0002274), and decrease in Fc receptor signaling (GO: 0038093), regulation of complement activation (GO:0030449), and immune effector process (GO:0002252; Supplementary file 5). These data suggest that direct profiling of cEVs from patient plasma provided unique insights into systemic changes in immune biology during pancreatic cancer development, which is lacked in analysis restricted to tissue or cell models.
 
-## Circulating EV proteomics reveal markers associated with metastasis and worse prognosis
+### Circulating EV proteomics reveal markers associated with metastasis and worse prognosis
 
 We then investigated whether cEV proteins can assist in the distinction of metastatic versus non-metastatic pancreatic cancer. We compared the cEV proteome profiles of individuals with metastatic cancer to those without metastasis and identified 85 proteins differentially expressed between the two groups (Supplementary file 6). Supervised clustering between metastatic and non-metastatic diseases showed a clear separation with two distinct expression patterns (Figure 3A). In particular, PSMB4, RUVBL2, and ANKAR (Figure 3B) EV protein levels were increased in patients with metastatic disease, whereas RAP2B, SERPINA12, and IGLV4-69 abundance levels were decreased in the cEVs of patients with metastasis (Figure 3C). Together, these findings suggest the presence of a core set of cEV proteins with the potential to distinguish early versus metastatic pancreatic cancer.
 
@@ -89,13 +113,31 @@ We then investigated whether cEV proteins can assist in the distinction of metas
 
 We further analyzed whether the expression of certain cEV proteins had prognostic relevance in our cohort. We first classified individuals with PDAC as having low or high expression of any given markers based on each marker’s first and third quartile. Survival was estimated by the Kaplan Meier method. We identified that the cEV expression of RALB, CRP, and CD55 had a significant correlation with overall survival, with a trend for PDCD6IP (Figure 3D).
 
-## Validation of cEV markers using parallel reaction monitoring and identification an EV protein signature for pancreatic cancer diagnosis
+### Validation of cEV markers using parallel reaction monitoring and identification an EV protein signature for pancreatic cancer diagnosis
 
 Because pancreatic cancer is extremely heterogeneous, the chance of identifying a single biomarker with sufficient diagnostic performance is likely low. Instead, the identification of a panel of candidate markers may have enhanced diagnostic performance.
 
 To identify a signature that shows the most discriminatory power between ‘benign diseases’ and ‘PDAC,’ we employed a binary classification approach using Support Vector Machines (SVM). Classification models, built based on a large number of proteins, contain irrelevant markers that can reduce the predictive accuracy. Hence, we implemented a consensus feature selection method based on two algorithms: one using recursive feature elimination (RFE) algorithm (SVM-RFE; Guyon et al., 2002) and second, RFE combined with a non-parametric Wilcox rank test (sigFeature; Das et al., 2020). The top 16 markers were selected whose classification performance can be tested in the independent validation cohort (Supplementary file 7). A summary of selection process is shown in Figure 4—figure supplement 1. The classification performance of these 16 markers, individual and in all combinations, were tested using 80% training data and evaluated in the remaining 20% test data. The quality of training was assessed using five repetitions of tenfold cross-validation. The optimal kernel parameters were estimated by tuning over a wide range of values. Receiver operating characteristic (ROC) analysis was used as the metric to assess the performance of the classifier model. We found a set of seven EV protein signature comprised of RUVBL2, PDCD6IP, ATP5F1, DLD, KRT20, CCT4, and SERPINAI2, that gave 100% accuracy when tested in the discovery cohort (Figure 4—figure supplement 2, Figure 4—figure supplement 3). Recurrence of these putative markers in our dataset varied from 55% to 97%.
 
 The model was further validated on an independent validation cohort whose proteome was obtained using an alternate technology, parallel reaction monitoring (PRM) mass spectrometry. The markers chosen for validation included 16 markers selected for SVM classification model and an additional 9 markers to result in top 25 markers that are significantly differentially expressed in the discovery cohort with a fold change increase in PDAC ≥5.5 and p-value ≤0.01 (Methods, Figure 4—figure supplement 4). The independent validation cohort consisted of 36 new subjects (24 with PDAC, 6 with chronic pancreatitis, and 6 with IPMN; Supplementary file 9). A total of 10 proteins, including all 7 signature proteins, showed a significant difference (p<0.05) in patients with PDAC as compared to benign pancreatic diseases (Figure 4A). The performance of individual validated markers according to the specific underlying disease in the validation cohort is presented in Figure 4—figure supplement 3. The performance of seven EV protein signature was further tested using SVM model, in our independent validation cohort, yielding an 89% prediction accuracy (Figure 4B, Figure 4—figure supplement 4). As expected, we observed that no single marker achieved sufficiently high sensitivity and specificity as the combined model for the diagnosis of pancreatic cancer.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87369/elife-87369-fig4-v1.jpg)
+
+**Figure 4.:** (A) Differences of cEV protein abundances between patients with PDAC (n=24) and benign pancreatic diseases (chronic pancreatitis and IPMN) (n=12). x axis, minus log p values of protein abundance differences between PDAC and benign groups; y axis, average fold changes of proteins in PDAC group compared to benign group. Size of bubbles indicate average protein abundances in PDAC group. Pink color, proteins that had at least twofold enrichment in PDAC group (p<0.05). (B) ROC curves were calculated for individual cEV markers as well as for the seven EV protein PDAC signature combination to determine optimum diagnostic performance.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87369/elife-87369-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/87369/elife-87369-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Each dot indicated the target protein signal from one patient. Error bars, min and max values; lines in boxes, median values. * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/87369/elife-87369-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Expression of biomarker candidates detected by Parallel Reaction Monitoring (PRM) analyses. A total of 25 cEV proteins with significant overexpression in PDAC in the discovery cohorts were quantified by PRM in a separate validation cohort of patients.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/87369/elife-87369-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Each dot indicated the target protein signal from one patient. Error bars, min and max values; lines in boxes, median values. * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001.
 
 ## Discussion
 
@@ -115,27 +157,27 @@ With no major treatment breakthrough for pancreatic cancer in the last decade, e
 
 ## Methods
 
-## Study design and patient demographics
+### Study design and patient demographics
 
 We conducted this study at Beth Israel Deaconess Medical Center with the approval of the Harvard Cancer Center Institutional Review Board (IRB#17–640). All subjects provided written informed consent. Clinical data and blood samples were prospectively collected from 2017 to 2019 from patients with pancreatic cancer, chronic pancreatitis, intraductal papillary mucinous neoplasms (IPMN), and age-matched controls. A total of 124 patients, including PDAC (N=93), chronic pancreatitis of different etiologies (N=12), IPMN (N=8), and controls (N=11), were included in the discovery cohort. PDAC diagnosis was established by histology or cytology, and staging was performed according to the American Joint Committee on Cancer guidelines (8th Edition 2016; Amin et al., 2017; Supplementary file 1). For the independent validation cohort, a total of 36 patients were enrolled, including PDAC (N=24), IPMN (N=6), and chronic pancreatitis (N=6; Supplementary file 9).
 
-## Plasma sample collection and processing
+### Plasma sample collection and processing
 
 All blood samples were collected and processed following the same standard operating procedure optimized for EV analysis and included the following steps: (i) whole blood was collected into one 10 ml yellow-top tube containing acid citrate dextrose; (ii) blood was mixed by gently inverting the tube five times; (iii) vacutainer tubes were stored upright at room temperature (RT); (iv) samples were centrifuged at 1300 × g for 15 min in RT; (v) plasma was removed from the top carefully avoiding cell pellet; (vi) repeat centrifugation of plasma at 2500 × g for 15 min in RT; (vii) again, plasma was removed from the top carefully avoiding cell pellet; (viii) third centrifugation at 2500 × g for 15 min in RT, then samples were aliquoted to be stored at –80 °C.
 
-## Extracellular vesicle isolation from plasma
+### Extracellular vesicle isolation from plasma
 
 We employed EVtrap for EV isolation from plasma samples (Iliuk et al., 2020). EVtrap beads were provided by Tymora Analytical (West Lafayette, IN) as a suspension in water and were used as previously described in more details (Iliuk et al., 2020; Wu et al., 2018). Briefly, 100 μL plasma samples were diluted 20 times in the diluent buffer, the EVtrap beads were added to the samples in a 1:2 v/v ratio, and the samples were incubated by end-over-end rotation for 30 min according to the manufacturer’s instructions. After supernatant removal using a magnetic separator rack, the beads were washed with PBS, and the EVs were eluted by a 10 min incubation with 200 mM triethylamine (TEA, Millipore-Sigma). The samples were fully dried in a vacuum centrifuge.
 
-## Preparation of EV samples
+### Preparation of EV samples
 
 The isolated and dried EV samples were lysed to extract proteins using the phase-transfer surfactant (PTS) aided procedure. The proteins were reduced and alkylated by incubation in 10 mM TCEP and 40 mM CAA for 10 min at 95 °C. The samples were diluted fivefold with 50 mM triethylammonium bicarbonate and digested with Lys-C (Wako) at 1:100 (wt/wt) enzyme-to-protein ratio for 3 hr at 37 °C. Trypsin was added to a final 1:50 (wt/wt) enzyme-to-protein ratio for overnight digestion at 37 °C. To remove the PTS surfactants from the samples, the samples were acidified with trifluoroacetic acid (TFA) to a final concentration of 1% TFA, and ethyl acetate solution was added at a 1:1 ratio. The mixture was vortexed for 2 min and then centrifuged at 16,000 × g for 2 min to obtain aqueous and organic phases. The organic phase (top layer) was removed, and the aqueous phase was collected. This step was repeated once more. The samples were dried in a vacuum centrifuge and desalted using Top-Tip C18 tips (Glygen) according to the manufacturer’s instructions. The samples were dried completely in a vacuum centrifuge and stored at –80 °C.
 
-## LC−MS analysis of plasma EV proteome
+### LC−MS analysis of plasma EV proteome
 
 Approximate 1 μg of each dried peptide sample was dissolved in 10.5 μL of 0.05% trifluoroacetic acid with 3% (vol/vol) acetonitrile containing spiked-in indexed Retention Time Standard containing 11 artificially synthetic peptides (Biognosys). The spiked-in 11-peptides standard mixture was used to account for any variation in retention times and to normalize abundance levels among samples. 10 μL of each sample was injected into an Ultimate 3000 nano UHPLC system (Thermo Fisher Scientific). Peptides were captured on a 2 cm Acclaim PepMap trap column and separated on a heated 50 cm Acclaim PepMap column (Thermo Fisher Scientific) containing C18 resin. The mobile phase buffer consisted of 0.1% formic acid in ultrapure water (buffer A) with an eluting buffer of 0.1% formic acid in 80% (vol/vol) acetonitrile (buffer B) run with a linear 60 min gradient of 6–30% buffer B at a flow rate of 300 nL/min. The UHPLC was coupled online with a Q-Exactive HF-X mass spectrometer (Thermo Fisher Scientific). The mass spectrometer was operated in the data-dependent mode, in which a full-scan MS (from m/z 375–1500 with the resolution of 60,000) was followed by MS/MS of the 15 most intense ions (30,000 resolution; normalized collision energy - 28%; automatic gain control target (AGC) - 2E4, maximum injection time - 200ms; 60 sec exclusion).
 
-## EV proteome data processing
+### EV proteome data processing
 
 The raw files were searched directly against the human Swiss-Prot database with no redundant entries using Byonic (Protein Metrics) and Sequest search engines loaded into Proteome Discoverer 2.3 software (Thermo Fisher Scientific). MS1 precursor mass tolerance was set at 10 ppm, and MS2 tolerance was set at 20ppm. Search criteria included a static carbamidomethylation of cysteines (+57.0214 Da) and variable modifications of oxidation (+15.9949 Da) on methionine residues and acetylation (+42.011 Da) at the N terminus of proteins. The search was performed with full trypsin/P digestion and allowed a maximum of two missed cleavages on the peptides analyzed from the sequence database. The false-discovery rates of proteins and peptides were set at 0.01. All protein and peptide identifications were grouped, and any redundant entries were removed. Only unique peptides and unique master proteins were reported.
 
@@ -145,22 +187,22 @@ The abundances of EV proteins were normalized using indexed retention time (iRT)
 
 A non-parametric Wilcox Rank Sum test was performed to test the null hypothesis that the distributions of two groups of the patient population are the same, and the fold change and p-values for each protein were estimated for the following comparisons: IPMN vs. Control, CP vs. Control, PDAC vs. Control, Benign Pancreatic Diseases (CP, IPMN) vs. PDAC. Multiple testing correction was done using Benjamini-Hochberg method to control for the false discovery rate (Benjamini and Hochberg, 1995). Volcano plots were created using those p values and fold change. Heatmaps visualization and clustering of statistically significant proteins, with adjusted p-value ≤0.05 and absolute fold change ≥2, were created in R using the pheatmap package. Euclidean distance and average cluster method were used. The values were row-scaled for normalization. Both rows and columns were allowed to cluster.
 
-## Pathways enrichment and protein network analysis
+### Pathways enrichment and protein network analysis
 
 Pathway enrichment analysis was performed on statistically significant genes using g:Profiler (Raudvere et al., 2019), a web-based tool that searches for pathways whose genes are significantly enriched in our dataset compared to a collection of genes representing Gene Ontology (GO) terms and Reactome pathways. We further used EnrichmentMap (Merico et al., 2010), a Cytoscape, v3.8.2 (Shannon et al., 2003) application to create a visual network of connected pathways that helps to identify relevant pathways and theme (Reimand et al., 2019). A Protein-Protein interaction network was generated using a stringApp, a Cytoscape app. This application allows to import STRING networks into Cytoscape and enables to perform complex network analysis and visualization of networks (Szklarczyk et al., 2019).
 
-## Parallel reaction monitoring and data analysis
+### Parallel reaction monitoring and data analysis
 
 Parallel reaction monitoring mass spectrometry (PRM-MS) was employed for validation experiments. Twenty-five cEV markers were selected for validation based on fold change increase ≥5.5, p-value ≤0.01, and technical aspects (number of unique peptides and coverage; Supplementary file 8). Thirty-six plasma samples from a new cohort were used for the validation (24 PDAC, 6 IPMN and 6 chronic pancreatitis samples). The EVs were isolated from plasma and the proteins processed as described before. Peptide samples were dissolved in 10.8 μL 0.05% TFA & 2% ACN, and 10 μL injected into the UHPLC coupled with a Q-Exactive HF-X mass spectrometer (Thermo Fisher Scientific). The mobile phase buffer consisted of 0.1% formic acid in HPLC grade water (buffer A) with an eluting buffer containing 0.1% formic acid in 80% (vol/vol) acetonitrile (buffer B) run with a linear 60 min gradient of 5–35% buffer B at a flow rate of 300 nL/min. Each sample was analyzed under PRM with an isolation width of ±0.8 Th. In these PRM experiments, an MS2 level at 30,000 resolution relative to m/z 200 (AGC target 2E5, 200ms maximum injection time) was run as triggered by a scheduled inclusion list. Higher-energy collisional dissociation was used with 28 eV normalized collision energy. PRM data were manually curated within Skyline-daily (64-bit) 20.2.1.404 (32d27b598) (MacLean et al., 2010).
 
-## Identification of EV signature for pancreatic cancer diagnosis
+### Identification of EV signature for pancreatic cancer diagnosis
 
 To identify a biomarker signature demonstrating the highest discriminatory power between ‘benign’ and ‘PDAC’ diseases, we adopted a binary classification approach utilizing Support Vector Machines (SVM). Recognizing that classification models built on an extensive array of proteins may incorporate irrelevant markers, which can diminish the predictive accuracy, we started with a list of significantly differentially expressed set of 91 proteins between ‘benign’ and ‘PDAC’ patients and further employed a consensus feature selection strategy using two algorithms, ‘Recursive Feature Elimination’ (SVM-RFE), and ‘Integrated RFE with a non-parametric Wilcox rank test (sigFeature). Subsequently, we selected the top 16 markers, the classification performance of which was subjected to testing in an independent validation cohort. The classification performance evaluation of these markers, both individually and in various combinations, involved a rigorous assessment utilizing 80% of the data for training and the remaining 20% for internal-validation. To ensure the quality of the training process, we employed five repetitions of a tenfold cross-validation approach. The optimal kernel parameters were determined through tuning across a broad range of values. Receiver operating characteristic (ROC) analysis served as the metric to gauge the performance of the classifier model. All algorithms for identifying the EV signature predictive of pancreatic cancer diagnosis were implemented in R. We used Support Vector Machine (SVM) using CRAN package, e107 (Meyer et al., 2015). Ranking of genes was achieved using packages ‘sigFeature’ and ‘SVM-RFE’. An R package, ‘pROC’ (Robin et al., 2011) was used to build a receiver operating characteristic curve (ROC) and to calculate the AUC.
 
-## Survival analysis
+### Survival analysis
 
 The prognostic value of every protein was estimated by dividing patients into two groups: group 1, patients with expression below the 25th percentile, and group 2, patients with expression values greater than 75th percentile. The Kaplan-Meier estimator was used to estimate the survival function associating survival with EV protein expression, and the log-rank test was used to compare survival curves of two groups. ‘survival’ R package was used for the analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using the statistical software R. Statistical significance was calculated by two-tailed Student’s t-test or Wilcoxon rank-sum test unless specified otherwise in the figure legend. Data are expressed as mean ± SEM. A p-value <0.05 in biological experiments or FDR <0.05 after multiple comparison corrections in proteomics data analysis was considered statistically significant.

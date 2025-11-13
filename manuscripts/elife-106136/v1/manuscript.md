@@ -13,7 +13,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 National Institutes of Health Bethesda United States
+1. National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
 
 † Corresponding author
 
@@ -33,7 +33,7 @@ The Integrative and Quantitative Approaches Team was convened to design funding 
 
 ## Results
 
-## The NIH BRAIN Circuit Programs
+### The NIH BRAIN Circuit Programs
 
 From the beginning, this functional neuroscience approach adopted a set of guiding scientific principles that defined the priorities and context for developing the content of the ‘circuit-busting’ funding announcements (David et al., 2020). Based on these principles, the BRAIN Circuits Program created an ecosystem of funding mechanisms illustrated in Figure 1A. The general format of this integrated approaches program has been to have 2/3-year exploratory forms of funding, followed by a peer-reviewed opportunity to compete for an expanded 5-year award, in each emphasis area. Note that the exploratory projects are not a requirement of the expanded awards but offer an enabling, or pilot, step where useful. Research topics were prioritized to be investigator-initiated concepts in fundamental systems neuroscience in three major research tracks: (1) targeted, single-lab-sized or limited multi-PI research proposals, (2) team-research approaches that could only be successful as integrated approaches across biological scales, disciplines, and/or species, (3) human-neuroscience research opportunities afforded by direct, intracranial access to recording and manipulating in the human brain. This format emphasizes peer-reviewed, investigator-initiated selection of scientific merit.
 
@@ -49,7 +49,7 @@ The popularity of the top tool products can be quantified by GitHub stars, which
 
 In the interest of improving measures of high-content, high-temporal resolution of behavior to match that available for neural activity, a novel research track in Basic Behavioral Quantification and Synchronization (BBQS) was initiated in FY2023. There are staged funding tracts specifically for human behavior and for organismal behavior. The human clinical tract employs an administrative review for progression from early to elaborated stages. Whereas, the organismal tract employs a peer-reviewed progression from a 2 year enabling stage to elaborated 5-year stages for non-human and comparative human/non-human studies. These programs are expected to better develop and engage dynamic behavioral and environmental assays integrated with dynamic measure of the neural systems of study. As a newly launched funding program, it is now premature to assess overall impacts for these programs in this report.
 
-## 10-Year impact evaluation
+### 10-Year impact evaluation
 
 Now 10 years since conceiving this landmark initiative to better understand how the brain works, this report analyzes the impact of this functional neuroscience ecosystem as funding experiments in the domains of systems and integrative neuroscience, and computational neuroscience, with an eye on comparison with other funding models and best practices for how best to support fundamental, investigative neuroscience.
 
@@ -65,6 +65,89 @@ While the NIH baseline funding in this definition of neuroscience research grows
 
 Table 1 reports bibliometric productivity measures for each research track across all awards within each funding mechanism, including the median publications per award, the median citations per award, and the median Relative Citation Ratio (RCR) per publication. For comparison to the BRAIN Circuits Program awards, we include bibliometrics for the 127 non-BRAIN ‘Parent’ R01 or investigator-initiated research project awards from the FY2014–2023 Systems and Computational baseline (Figure 2), linked to 2095 research articles. Publications are a traditional measure of research output by peer review, whereas the rates of citations are a measure of influence to knowledge progress by subsequent reference. The RCR is a normalized index of impact (Hutchins et al., 2016), which is a measure of citation relative to the topic neighborhood or subject areas related to the reference article in its co-citation network for the year of publication. An RCR of 1.0 represents a median citation count relative to that year and topic neighborhood. While this makes the RCR normalization dependent on the topic neighborhood selection, the methodology of the topic normalization is described in Hutchins et al., 2016, and the topic neighborhood for each RCR calculation is available as part of the report.
 
+**Table 1.**
+ Bibliometric and fiscal performance measures for each funding mechanism.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Median Pubs per Award</th>
+      <th>Median Cites per Award</th>
+      <th>Median RCR per Pub</th>
+      <th>Median Pubs per $1M</th>
+      <th>Median Cites per $1M</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eROH</td>
+      <td>11</td>
+      <td>212</td>
+      <td>2.5</td>
+      <td>5</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <td>ROH</td>
+      <td>6</td>
+      <td>73</td>
+      <td>1.9</td>
+      <td>1</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>TargetBCPP</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1.3</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>TargetBCP</td>
+      <td>4</td>
+      <td>48</td>
+      <td>1.7</td>
+      <td>2</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>eTeamBCP</td>
+      <td>9</td>
+      <td>132</td>
+      <td>1.5</td>
+      <td>3</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>TeamBCP</td>
+      <td>25</td>
+      <td>669</td>
+      <td>2.6</td>
+      <td>2</td>
+      <td>195</td>
+    </tr>
+    <tr>
+      <td>TMM</td>
+      <td>9</td>
+      <td>79</td>
+      <td>1.2</td>
+      <td>7</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Parent R01</td>
+      <td>9</td>
+      <td>191</td>
+      <td>1.1</td>
+      <td>5</td>
+      <td>117</td>
+    </tr>
+  </tbody>
+</table>
+
 Comparing the 5-year Parent R01s to the BRAIN 5-year awards (ROH, TargetBCP, and TeamBCP) reveals a much higher publication rate for the TeamBCP and similar publication rates for the other 5-year programs. Interestingly, the exploratory version of the ROH program had notably higher citation rates than the elaborated 5-year ROH awards. In general, the BRAIN awards had fewer median citations than the Parent R01s, while the TeamBCP had substantially more citation rates than any of the other programs. In general, the BRAIN program awards had higher median RCR per publication than the Parent R01 awards. The range of average RCR for the top 5 awards within non-exploratory tracks was TargetedBCP, 5.5–9.3; TeamBCP, 2.5–5.5; ROH, 3.8–5.1; TMM, 2.2–5.7, respectively. Budget efficiency measures (publications and citations per $1M of award) were highest for the TeamBCP, TMM, the Parent R01, and the eROH programs.
 
 Figure 3 reports successive years from initial award for each of the full-scale programs for each research track (TargetBCP, TeamBCP, ROH, and TMM). All of the programs accumulated publications and citations at a healthy rate of return, especially for the team-research BCP program. By these publication and citation measures, all these systems neuroscience programs featured impressive impacts.
@@ -79,11 +162,80 @@ Of course, such transition success to subsequent awards is an incomplete measure
 
 Similarly, as a snapshot of public impact, we turned to Altmetric scores within each research tract in Supplementary file 3, which are a measure designed to identify how much media attention a research publication has received. The high popularity topics for the large and small Brain Circuits awards include interesting behaviors, such as sleep/wake, maternal behaviors, and odor pleasantness; understanding structural details of the brain; SARS-CoV-2 and anosmia (Brann et al., 2020); the discovery of possible fourth meningeal membrane in the brain that helps protect and bathe the brain (Møllgård et al., 2023); and elucidation of the neural circuitry underlying maternal responses to infant cries (Valtcheva et al., 2023). Top topics for the functional human neuroscience centered around neural decoding of speech/language and neural encoding for speech prostheses. The top topic of public interest for the TMM program involved identifying anxiety activity in mnemonic and brain hormonal axes. It is noteworthy how some of these projects awarded for their merit in fundamental neuroscience research offer examples of manuscripts that attest to early translational impact, as indicated by asterisks.
 
-## The NIH BRAIN Initiative’s Experiment in Team Research (TeamBCP)
+### The NIH BRAIN Initiative’s Experiment in Team Research (TeamBCP)
 
 An early innovation of the BRAIN Initiative’s experiment was to support team-research at a scale commensurate with the complexity of a mechanistic understanding of how the brain works as perhaps the most complex machine in the universe (David et al., 2020). Here, specific progress and impact of the program are presented to better understand our funding efforts in large-scale, team-research neuroscience.
 
 Table 2 summarizes some statistics of the BRAIN team-research programs, compared to the BRAIN small-project circuits programs. The team-approach program was initially issued in 2014 as a 3-year funding opportunity, Integrated Approaches to Understanding Circuit Function in the Nervous System. In 2017, the program evolved into the larger-scale, multicomponent TeamBCP funding opportunity of 5 years, and in 2018 the original 3-year program was repurposed as Exploratory Team-Research BRAIN Circuit Programs – eTeamBCP, an exploratory stage to enable advancement to the larger, more elaborated 5-year TeamBCP. For FY2014–2023, the total expenditures of the 3-year eTeamBCP, including the original ‘Integrated Approaches’, were $118.7M; the total expenditures for the TeamBCP were $280.7M (Table 2). Note that these expenditures in BRAIN team-science approaches were balanced with parallel, small-project awards, the 3/5-year Targeted BRAIN280 exploratory and elaborated programs at $348M (Table 1). In FY2023, the expenditures in this team-science approach were $129.4M, which was 19% of the total BRAIN Initiative expenditures.
+
+**Table 2.**
+ We report the total number, cost, and number of publications per funding stream for FY2014 through 2023.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Team-research</th>
+    </tr>
+    <tr>
+      <th>eTeamBCP (U01)</th>
+      <th>TeamBCP (U19)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number awards</td>
+      <td>40</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Total cost</td>
+      <td>$118.7M</td>
+      <td>$280.7M</td>
+    </tr>
+    <tr>
+      <td>Number publications *</td>
+      <td>366</td>
+      <td>618</td>
+    </tr>
+    <tr>
+      <td>Median annual total cost per award</td>
+      <td>$1.0M</td>
+      <td>$2.9</td>
+    </tr>
+    <tr>
+      <td rowspan="2"></td>
+      <td colspan="2">Small project</td>
+    </tr>
+    <tr>
+      <td>TargetBCPP (R34)</td>
+      <td>TargetBCP (R01)</td>
+    </tr>
+    <tr>
+      <td>Number awards</td>
+      <td>60</td>
+      <td>137</td>
+    </tr>
+    <tr>
+      <td>Total cost</td>
+      <td>$36.4M</td>
+      <td>$312.2M</td>
+    </tr>
+    <tr>
+      <td>Number publications*</td>
+      <td>99</td>
+      <td>624</td>
+    </tr>
+    <tr>
+      <td>Median annual total cost per award</td>
+      <td>$0.3M</td>
+      <td>$0.6M</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note this data is frozen based in 2023 and only includes publications published between 2014 and 2023. Please note that some projects are completed while others are not, which adds some variability to publications and the amount of money that has gone out the door (including if projects are multiyear-funded). Finally, when assigning publications to grants, NIH does not typically differentiate between new awards (type 1) and competing renewals (type 2), so for the purposes of publication calculations, type 2s are collapsed into one single project. They are counted separately for the number of awards.*Papers published from 2014 to 2023 only, some papers may be double counted between programs if more than one program contributed to the publication, but is not double counted within a program if more than one award contributed (i.e. if an eTeamBCP and a TeamBCP both are cited in one publication, the publication is counted under both programs; if two different TargetBCPP awards contribute to one publication, the publication is counted once under the program)._
 
 All TeamBCP and the original Integrative BCP awardees joined two consortia for awardees from all years to explore common challenges and best practices: a leadership consortium and a data science consortium. The leadership consortium produced topic maps of (1) domains of study (Figure 4A) and scales of research with respect to conceptual models (Figure 4B). As investigator-initiated research topics, the total collection of awards covers a broad portfolio of systems and behaviors. The spectrum of specific research topics can be mined from the award links provided above. The modeling efforts of the collective TeamBCP awards (David et al., 2020) span broad scales and levels of mechanistic focus, as estimated by the TeamBCP data science consortium.
 
@@ -99,53 +251,53 @@ Another measure of team-building success is the confederation of multiple projec
 
 ## Discussion
 
-## Culture change and best practices
+### Culture change and best practices
 
 In addition to these quantitative productivity measures, the program has facilitated a cultural change of systems neuroscience through these multidisciplinary, team-science approaches (Miller et al., 2024). Below, we offer some useful detail of how this team-research program has addressed our original guiding principles for the Brain Circuit Programs (David et al., 2020).
 
-## A culture of collaboration
+#### A culture of collaboration
 
 We have supported projects that are approaching complex questions at multiple scales, through bridging of disciplines, and across species. This combining of disciplines is reflected, in part, by a demographic survey from the 2022 BRAIN Initiative Investigator’s Meeting. This survey of meeting attendees found an emphasis on integration of experimentalists and theorists (Statistics, Computational Biology, Computer Science; 31% of 520 respondents), and research spanning different scales and species (see below). We have also brought in tool developers, usually from physics and/or engineering backgrounds (42%), as well as neuroethicist expertise (5%). All of the TeamBCP awards that include humans in the NIH definition of Clinical Trials (L2L, Osmonauts) had neuroethics components built into peer review. In addition, the topics supported have expanded to include the impact of non-neuronal components on brain circuit dynamics (A-Team, USARhythms, BrainflowzZZ).
 
-## Consortia-level collaboration
+#### Consortia-level collaboration
 
 The TeamBCP consortia specifically are charged with taking on community interests larger than the individual awards. Despite vast differences in research topics and methods/approaches, the consortia have built a research community that develops and shares best practices in team management, data science (Schottdorf et al., 2024), and has promoted many confederated efforts across awards. Several TeamBCP with similar research topics exchange data and best practices by joint laboratory meetings (e.g. aABC & SCC, BrainflowzZZ & USARhythms). In 2023, the data science consortium convened an international Digital Atlas Interest Group on common challenges for digital atlas development. Through the consortia, PIs were introduced to recent insights from the field of Science of Team Science, strengthening connections between theoretical and practical considerations of the practice of team science.
 
-## A change in the workforce
+#### A change in the workforce
 
 The resource cores offer support for staff scientists and a rich training environment that is producing multifaceted trainees. We also note the value of program managers and thoughtful processes/policies as key to effective coordination and fair governance – a point particularly well addressed by the highly standardized International Brain Laboratory. Trainees from team science awards are exposed to an expanded universe of scientific collaborations/interactions and have greater access to resources, mentors, and multidisciplinary expertise available to them (David et al., 2020). However, team science is not without challenges (National Research Council, 2015), such as programmatic management of disparate disciplines, authorship policies, and credit assignment (David et al., 2020). Annual site visits diligently watch for concern with these challenges (see below). TeamBCP trainees have recently established a working group to focus on trainee outcomes. This group is addressing best practices for trainee-related concerns and to optimize trainee team-science research experiences. Additionally, NINDS recently hosted a webinar on perspectives in training in team science. The webinar highlighted the work of a few TeamBCP-supported early career stage scientists and elaborated on the best practices, lessons learned, and lasting impacts of engaging in collaborative research. As well, the data science consortium recognized through their own survey the diverse expertise requirements for creating robust infrastructure and tools for supporting the TeamBCP scientific pipeline from theory to experiment and analysis.
 
-## Spawning new team-science research programs in neuroscience
+#### Spawning new team-science research programs in neuroscience
 
 BRAIN Initiative Team science approaches have inspired innovative non-BRAIN Initiative funding opportunities for team science, notably the NINDS Collaborative Opportunities for Multidisciplinary, Bold, and Innovative Neuroscience (COMBINE) program, RM1 program. Distinct from the NINDS Program Project Grant (P01) and parent R01, this RM1 program draws from experiences with the BRAIN TeamBCP program and emphasizes tight integration across team expertise and approaches.
 
-## Integrated data science and experimental science
+#### Integrated data science and experimental science
 
 The required data science cores were designed to promote flexible and focused solutions to sharing complex data from diverse disciplines, formats, and scales between component laboratories (Chapuis and Winter, 2024). The TeamBCP site visits (see below) revealed various and unique data sharing challenges and solutions that were effectively addressed by the specific data science expertise and resources of the data science cores. The dedicated personnel with data science expertise were highly successful and ensured resources to solve complex data science challenges without burdening the productivity efforts of the research staff. We find this ‘bottom-up’ approach of project-specific data management complements well ‘top-down’ BRAIN Initiative Data Science and Informatics programs and Data Archives. A self-evaluation by the data science consortium revealed, however, that improvements can be made to adopt more standards for organizing, documenting, processing, evaluating, and sharing data and software. Particularly salient for the early-career scientists was how to recruit and incentivize data science efforts that are not as easily measurable in traditional neuroscience publication and citation.
 
-## Site visits
+#### Site visits
 
 Annual site visits are arranged for the awarded TeamBCPs to monitor progress and offer mid-award guidance by an External Advisory Board (EAB). The EAB is composed of an NIH or NSF scientific Program Officer with subject matter expertise, a scientist from other team-based BRAIN awards, and an invited scientist at large. The EAB is charged to help the Program Officers assess progress, offer expert constructive critique to the TeamBCP team, explore scientific opportunities, and highlight the achievements of the awardees and trainees. These site visits, which specifically emphasize guided self-evaluation through a Strengths, Weaknesses, Opportunities, and Threats (SWOT) format, have proven to be one of the most valuable factors in the TeamBCP program for both the scientific goals and progress management.
 
-## Enabling cross-species comparative studies
+#### Enabling cross-species comparative studies
 
 BRAIN supports investigative and tool development studies that take advantage of and/or enable the special abilities and power of diverse species and comparative experimental systems to address specific questions. Species of study among the eTeamBCP and TeamBCP awards include Drosophila fruit flies, Danio rerio zebrafish, Mus and Rattus rodents, Rhesus and Marmoset monkeys, Berghia nudebranch, octopus, voles, bats, and humans. Through these species, these programs have revealed conserved and diverse mechanisms by which the nervous system produces behavior.
 
-## Combining experimental and computational approaches
+#### Combining experimental and computational approaches
 
 The extensive cross-scale experimental modeling in Figure 4B attests to the power of bringing quantitative approaches to experimental neurobiology. Greater integration of quantitative, predictive modeling into research projects has led to more cross-talk between theoretical modelers and experimentalists and has enhanced collaborations between mathematical and modeling communities (David et al., 2020), revealing the importance of a dynamic interaction between theory and experimentation. Like the NSF/NIH CRCNS program, the engagement of special emphasis review panels for the TeamBCP applications effectively recruited well-tuned expertise for the specific, and sometimes complex, integration of computational and experimental methodologies.
 
-## How are we shaping the next generation of scientists?
+### How are we shaping the next generation of scientists?
 
 Based on observations from our TeamBCPs, the BRAIN-awarded trainees, and job advancement from early career investigators, the next generation of scientists is more multifaceted and can comfortably wear different technology hats and speak multiple scientific languages. From an attendee survey of 722 respondents to 2022 BRAIN Initiative Investigators meeting registration, the percentage of primary or secondary fields was highest for Engineering, Psychology or Behavioral Science, Biochem/Molec/Cellular Biology, Physiology or Systems Biology, and Neuroimaging/Radiology (28% to 18% in descending order). This was followed by Computer Science, Computational Biology, Genetics, Statistics (from 11% to 10% in descending order). Also represented was Clinical Science, Physics, Ethics, and Chemistry (from 8% to 3% in descending order). For example, trainees are able to move with ease across the different scales of inquiry, from cellular to systems to quantitative approaches. The data science consortium found through their self-evaluation that theorists and experimentalists are similarly engaged in data science training, though the level of expertise required to enforce standards in research practice remains high (Schottdorf et al., 2024). Nonetheless, the culture reflects an openness to innovative and integrative approaches in the neuroscience research workforce.
 
-## Looking to the future
+### Looking to the future
 
 By conceptual design, team-research programs are successful to the extent that they foster collective efforts that could not have happened as effectively as individually funded projects. Traditionally, NIH standard study sections review applications with the mindset of a single lab’s success or competition with one another. But with team science, they are reoriented to think in terms of synergy, co-publication, leveraging collective expertise and resources, and collective capacity to achieve the goals they set out to achieve. We believe the rubric of the funding program description and the review criteria drives an ecosystem of team-research that seeks to cross boundaries of interdisciplinary collaboration at scales beyond the limitations of the ‘single-principal-investigator (PI)-led projects’ common in biology in the past (Olds, 2016). The TeamBCP review criteria emphasize synergy as a qualifying element, and the annual site visits monitor this closely. This report finds that awardees have used the TeamBCP program to engage more adventurous and necessarily collaborative programs of high impact, on topics that transcend interests of all the ‘neuro’ NIH Institutes. We note that the BRAIN Initiative is part of an effort commissioning NASEM to produce a consensus study about team science and its opportunities and challenges: https://www.nationalacademies.org/our-work/research-and-application-in-team-science.
 
 Following the 10th year of our experiment in supporting team neuroscience, we offer that the BRAIN TeamBCP has been a leading agent for changing the culture of fundamental neuroscience research to consider collective, team efforts of high impact scientifically and socially. The TeamBCP program offers a successful, collective-research approach that complements other collaborative models in neuroscience (David et al., 2020). We encourage that the TeamBCP approach continues to be an enduring model of bold and effective team-research approaches in fundamental neuroscience discovery at NIH. Useful guidance in how to advance academic implementation of team-research approaches can be found in the EMBO reports white paper (van Helden et al., 2024).
 
-## Conclusions
+### Conclusions
 
 The NIH BRAIN Initiative’s primary goal is to enable neuroscience broadly (Ngai, 2024). Its impact is recognized across the NIH neuroscience IC priorities (see BRAIN at 10 messages of the 10 neuroscience Institute Directors in The BRAIN Blog). We offer that the BRAIN Initiative Circuits Program has substantially advanced and changed the landscape of research funding in fundamental, pre-translational discovery in systems and computational neuroscience. A qualitative testament to this conclusion is reflected in an informal poll of IC-contributing Program Directors that work within the BRAIN Circuits Program Team (Supplementary file 4). For objective measure, the raw and normalized citation indices offer impressive measures of scientific impact across all the funding tracts, and particularly high performance by the team-research TeamBCP program (Table 1 and Figure 3).
 
@@ -153,21 +305,91 @@ In summary, the BRAIN Initiative has invested approximately $1B into fundamental
 
 ## Materials and methods
 
-## Database of awards
+### Database of awards
 
 In order to have a baseline of system neuroscience awards similar to the Systems Neuroscience [OR] Computational Neuroscience portfolio, data downloads were curated to include research mechanisms similar to the BRAIN Initiative mechanisms of award:
 
-## Budgetary and grant data
+### Budgetary and grant data
 
 BCP program budget and numbers of applications (FY2014–2023) were pulled from NIH FASTR and publications from iCITE. Number of publications, publication citations, median citations, and Relative Citation Rates were extracted from iCITE and custom Python scripts by the BRAIN Office of Budget.
 
-## BRAIN Circuits Program funding announcements for Figure 2
+### BRAIN Circuits Program funding announcements for Figure 2
 
-## Landscape maps
+<table>
+  <thead>
+    <tr>
+      <th>eROH</th>
+      <th>ROH</th>
+      <th>eTargetBCP</th>
+      <th>TargetBCP</th>
+      <th>eTeamBCP</th>
+      <th>TeamBCP</th>
+      <th>TMM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RFA-NS-16–008</td>
+      <td>RFA-NS-19–001</td>
+      <td>RFA-NS-17–015</td>
+      <td>RFA-NS-17–014</td>
+      <td>RFA-NS-14–009</td>
+      <td>RFA-NS-17–018</td>
+      <td>RFA-EB-15–006</td>
+    </tr>
+    <tr>
+      <td>RFA-NS-17–019</td>
+      <td>RFA-NS-22–041</td>
+      <td>RFA-NS-18–014</td>
+      <td>RFA-NS-18–009</td>
+      <td>RFA-NS-15–005</td>
+      <td>RFA-NS-19–003</td>
+      <td>RFA-EB-17–005</td>
+    </tr>
+    <tr>
+      <td>RFA-NS-18–010</td>
+      <td></td>
+      <td>RFA-NS-21–014</td>
+      <td>RFA-NS-18–030</td>
+      <td>RFA-NS-18–008</td>
+      <td>RFA-NS-22–040</td>
+      <td>RFA-EB-20–002</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>RFA-NS-22–027</td>
+      <td>RFA-NS-21–013</td>
+      <td>RFA-NS-18–009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RFA-NS-22–026</td>
+      <td>RFA-NS-20–029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RFA-NS-22–028</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### Landscape maps
 
 All of the notices of funding opportunities from the Brain Circuits Portfolio (integrative and quantitative neuroscience) were queried in the NIH internal iSEARCH 3.0 portfolio analysis platform to yield all of the unique awards from 2014 to 2023. The titles and abstracts from the resulting competing awards were input into a Python script using Matplotlib library and Seaborn interface in order to derive the cluster visualizations from words that appeared frequently. The Python script was adapted from https://amueller.github.io/word_cloud/ and can be found here: https://github.com/fbader2/wordcloud (copy archived at Bader, 2025).
 
-## Continuity analysis
+#### Continuity analysis
 
 The BRAIN Circuits Program portfolio of awarded grants was downloaded using an NIH-internal database search engine (Query View Report [QVR]) that can recapitulate the public, awarded grant information available from NIH RePORTER as linked in this report, including the keyword fingerprint field (Matchmaker). For each PI for a project, grants across the NIH that shared similarity in scientific content to the original project (derived from the similarity fingerprint) were identified. Unawarded, non-research-related mechanisms and nonbasic science-related grants were filtered out. A manual review of the title and abstract was used to confirm that the selected project was a continuation of the original grant’s work by the original (Multi-)PI.
 
@@ -177,6 +399,6 @@ Comparison groups were determined by examining non-BRAIN NIH initiatives that ha
 
 Success rate calculations within a funding track for the continuity analyses were performed using the following formulas: (Number of similar downstream awards)/(Number of original awards). Note that if multiple original awards led to a similar downstream award, that batch of awards was only counted once in the numerator, and that a given BRAIN award could spin off multiple, successful, downstream awards.
 
-## GitHub data
+### GitHub data
 
 Customized scripts using all of BRAIN Circuits Program application IDs were written to extract repositories from annual NIH Research Performance Progress Reports in conjunction with the number of stars, watchers, and forks associated with each repository. (Note: This code was developed as part of a larger NIH project which accesses privacy-protected information in privileged NIH systems and, thus, is not reproducible publicly. Queries about this analysis can be directed to the authors.)

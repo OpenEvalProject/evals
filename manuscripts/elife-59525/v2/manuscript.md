@@ -44,6 +44,52 @@ The recovery of neurocognitive function after brain network perturbations such a
 
 To improve scientific understanding of recovery of consciousness and cognition after anesthetic-induced unconsciousness, we studied 30 healthy volunteers at three centers who were administered deep general anesthesia using isoflurane for 3 hr, with cognitive testing conducted at pre-anesthetic baseline as well as every 30 min for 3 hr after return of consciousness (Figure 1). We hypothesized that post-anesthetic recovery would be an extended process rather than a single point, commencing with return of responsiveness and concluding with return of executive function. We hypothesized that executive function would be the last to recover because there is evidence that neurologic recovery from general anesthesia occurs in a caudal-to-rostral direction (Långsjö et al., 2012; Reshef et al., 2019), suggesting that anterior structures mediating higher cognition would have the most prolonged recovery. To assess differential return of cognitive functions after the major perturbation of deep anesthesia, we assessed a neurocognitive battery of tests (including the Psychomotor Vigilance Test (PVT), Motor Praxis (MP), Digit Symbol Substitution Test (DSST), fractal 2-Back (NBCK), Visual Object Learning Test (VOLT), and Abstract Matching (AM); Table 1) at baseline and at multiple time points after the 3-hr period of anesthetic exposure. Isoflurane anesthesia was chosen because of its heterogeneous molecular targets, which affect multiple neural systems, and because its slower offset compared to other anesthetics would allow us to observe differential recovery of function (Hemmings et al., 2019). A halogenated ether was chosen instead of propofol because of the greater diversity of molecular targets, which would be predicted to have a more profound effect on neural dynamics through multiple neurotransmitter receptor and channel systems. Clinical observations as well as clinical research comparing recovery from isoflurane vs. propofol support this interpretation (Pollard et al., 1994; Geng et al., 2017). The 3-hr duration of anesthesia was chosen based on clinical data related to recovery of surgical patients, the pharmacokinetics of isoflurane, and practical considerations for volunteers participating in day-long experiments.
 
+**Table 1.**
+ Neurocognitive battery, associated cognitive domains, and neuroanatomy.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Cognitive domains assessed</th>
+      <th>Brain regions primarily recruited</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Motor Praxis</td>
+      <td>Sensorimotor speed</td>
+      <td>Sensorimotor cortex</td>
+    </tr>
+    <tr>
+      <td>Visual Object Learning</td>
+      <td>Spatial learning and memory</td>
+      <td>Medial temporal cortex, hippocampus</td>
+    </tr>
+    <tr>
+      <td>Fractal 2-Back</td>
+      <td>Working memory</td>
+      <td>Dorsolateral prefrontal cortex, cingulate, hippocampus</td>
+    </tr>
+    <tr>
+      <td>Abstract Matching</td>
+      <td>Abstraction, concept formation</td>
+      <td>Prefrontal cortex</td>
+    </tr>
+    <tr>
+      <td>Digit Symbol Substitution</td>
+      <td>Complex scanning and visual tracking, working memory</td>
+      <td>Temporal cortex, prefrontal cortex, motor cortex</td>
+    </tr>
+    <tr>
+      <td>Psychomotor Vigilance</td>
+      <td>Vigilant attention</td>
+      <td>Prefrontal cortex, motor cortex, inferior parietal and some visual cortex</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/59525/elife-59525-fig1-v2.jpg)
 
 **Figure 1.:** Participants were randomized to one of two groups for investigating recovery of consciousness and cognition after general anesthesia. Sleep-wake actigraphy data were acquired in the week leading up to the day of the experiment, which started with baseline cognitive testing followed by either a period of general anesthesia (1.3 age-adjusted minimum alveolar concentration of isoflurane) or wakefulness. Upon recovery of consciousness (or similar time point for controls), recurrent cognitive testing was performed for 3 hr. Actigraphy resumed for 3 days after the experiment.
@@ -54,11 +100,11 @@ To control for the learning effects of repeated cognitive testing (Basner et al.
 
 Full methods of the Reconstructing Consciousness and Cognition (ReCCognition) study (clinicaltrials.gov NCT01911195) have been published and are freely available (Maier et al., 2017). The published protocol includes details related to participants, electroencephalography, and neurocognitive testing.
 
-## Ethics
+### Ethics
 
 This multicenter study was reviewed and approved by the Institutional Review Board specializing in human subjects research at the University of Michigan, Ann Arbor; University of Pennsylvania; and Washington University in St. Louis. Volunteers were recruited through the use of fliers and were compensated for their participation at levels approved by ethics committees. Participation eligibility required that all subjects provide written informed consent, which was obtained after careful discussion, in accordance with the Declaration of Helsinki.
 
-## Experimental design
+### Experimental design
 
 The experimental design and data acquisition are summarized in Figure 1. This was a within-group study of anesthetized participants with a primary outcome of the pattern of cognitive recovery after general anesthesia; a non-anesthetized cohort was included to control for the learning effects of repeated cognitive testing and circadian factors. Volunteers were randomly assigned to receive general anesthesia with isoflurane or to engage in waking activity on the study day and serve as experimental controls. Baseline cognitive assessment was performed after an initial screening.
 
@@ -70,13 +116,13 @@ Subjects were discharged according to standard post-anesthesia care unit dischar
 
 A second group of healthy individuals (n = 30) was recruited to participate in the same study design. These individuals also fasted overnight, but did not have intravenous lines inserted. Rather than being anesthetized, these volunteers remained awake (by reading or watching television on a personal electronic device) and continued fasting for 3.5 hr in order to control both for potential learning effects of repeated testing and also for circadian variability in testing performance (McLeod et al., 1982; Gur et al., 2001; Van Dongen et al., 2003; Van Dongen and Dinges, 2005; Jasper et al., 2009; Tucker et al., 2010). We chose not to sedate these participants as a control for the anesthetized state because doing so would have obscured the predicted learning effect accompanying repeated neurobehavioral testing and would thus confound the normal performance standard that was required. Volunteers randomized to the restful group were instructed to avoid napping and were regularly monitored by a dedicated research assistant.
 
-## Participants
+### Participants
 
 A total of 60, healthy American Society of Anesthesiologists physical status classification I or II volunteers were enrolled. The choice of study subject numbers was informed by several factors, including previous studies (Eger et al., 1997; Eger et al., 1998), biological plausibility (our best estimates regarding effect size and standard deviation), and safety considerations (exposing the minimum number of humans to general anesthesia in order to answer the questions of interest). The main factor that was considered in estimating our required sample size was the time difference in return of cognitive functions within the subjects receiving general anesthesia. Sample size calculation was modeled with various assumptions regarding the difference in recovery times between the first and last cognitive domains to return, and the standard deviations of these parameters. A range between 30 min and 90 min was considered for differences in recovery times between cognitive domains (possible effect sizes). A range between 20 min and 40 min was considered for standard deviations of these parameters. Assuming relatively conservative estimates (difference in recovery times = 30 min and standard deviation = 40 min), 30 subjects would provide >80% power with a two-sided alpha <0.05, using an unpaired t test. With relatively liberal assumptions (difference in recovery times = 90 min and standard deviation = 20 min), 30 subjects would provide >99% power with a two-sided alpha <0.001, using an unpaired t test.
 
 Each study site (University of Michigan, University of Pennsylvania, Washington University in St. Louis) recruited 20 volunteers who met the inclusion criteria. Prospective volunteers were screened using a phone questionnaire administered by a study coordinator. Eligible subjects that consented to participate in this study underwent a baseline familiarization round of neurocognitive testing and were given rest-activity monitoring devices (actiwatch) 1 week prior to the study day.
 
-## EEG acquisition and analysis
+### EEG acquisition and analysis
 
 To assess the neural correlates of the anesthetized state and recovery, participants enrolled at the University of Pennsylvania and University of Washington in St. Louis (n = 40) were fitted with 32 EEG scalp electrodes. Subjects at the University of Michigan (n = 20) were fitted with 64 or 128 EEG scalp electrodes. EEG recordings began prior to the baseline neurocognitive testing on the study day and were continued with minimal interruption until the completion of the final neurocognitive test.
 
@@ -86,27 +132,27 @@ Ten 2 min epochs were selected during the seven resting-state eyes-closed sessio
 
 Preliminary analysis with high-density EEG suggested that phase-based connectivity measures and graph-theoretical variables were not robust enough to capture the neurophysiologic dynamics of general anesthesia and recovery with appropriate temporal resolution (Blain-Moraes et al., 2017). We therefore chose two measures of cortical dynamics that have been suggested to differentiate levels of consciousness and, unlike spectral analysis, also serve as a surrogate for the repertoire of brain states, which we would expect to increase with recovery of consciousness and cognitive function.
 
-## Permutation entropy
+### Permutation entropy
 
-We used permutation entropy (PE) to measure the local dynamical changes of EEG in frontal and posterior channels. PE quantifies the regularity structure of a time series, based on a comparison of the order of neighboring signal values, which is conceptually simple, computationally efficient, and artifact resistant (Bandt and Pompe, 2002), and has been successfully applied to the separation of wakefulness from unconsciousness (Jordan et al., 2013; Li et al., 2008; Olofsen et al., 2008; Ranft et al., 2016). The calculation of PE requires two parameters: embedding dimension (dE) and time delay (τ). In line with previous studies, we used dE=5 and τ=4 in order to provide a sufficient deployment of the trajectories within the state space of the EEG beta activity during wakefulness and anesthesia (Jordan et al., 2013; Ranft et al., 2016). Supplementary analysis was performed to test the sensitivity of PE using alternative strategies of parameter selection.
+We used permutation entropy (PE) to measure the local dynamical changes of EEG in frontal and posterior channels. PE quantifies the regularity structure of a time series, based on a comparison of the order of neighboring signal values, which is conceptually simple, computationally efficient, and artifact resistant (Bandt and Pompe, 2002), and has been successfully applied to the separation of wakefulness from unconsciousness (Jordan et al., 2013; Li et al., 2008; Olofsen et al., 2008; Ranft et al., 2016). The calculation of PE requires two parameters: embedding dimension ($d_{E}$) and time delay (τ). In line with previous studies, we used $d_{E}$=5 and τ=4 in order to provide a sufficient deployment of the trajectories within the state space of the EEG beta activity during wakefulness and anesthesia (Jordan et al., 2013; Ranft et al., 2016). Supplementary analysis was performed to test the sensitivity of PE using alternative strategies of parameter selection.
 
 In the implementation, each 2 min epoch was divided into non-overlapping 10 s windows, the PE was calculated for each window, and the PE values were averaged across all the windows for each studied epoch and channel. The topographic maps of group-level PE value for each studied epoch was constructed using the topoplot function in the EEGLAB toolbox (Delorme and Makeig, 2004). For statistical comparisons, the averaged PE values were calculated over the frontal (Fp1, Fp2, Fpz, F3, F4, and Fz) and posterior (P3, P4, Pz, O1, O2, and Oz) channels at each studied epoch for each participant.
 
-## Lempel-Ziv complexity
+### Lempel-Ziv complexity
 
 Lempel-Ziv Complexity (LZC) was computed as a surrogate of complexity to reflect the spatiotemporal repertoire across scalp potentials. LZC is a method of symbolic sequence analysis that measures the complexity of finite length sequences (Lempel and Ziv, 1976), which has been shown to be a valuable tool to investigate brain states related to consciousness and cognition (Casali et al., 2013; Abásolo et al., 2015; Schartner et al., 2015; Hudetz et al., 2016; Schartner et al., 2017). The calculation of LZC requires a binarization of the multichannel EEG data. In this study, we used the implementation as described in Schartner et al., 2015; Schartner et al., 2017, and calculated the instantaneous amplitude from the Hilbert transformed EEG signal for each channel, which was binarized using its mean value as the threshold for the current channel (supplementary analysis was performed to test the effect of threshold selection). The data segment was then converted into a binary matrix, in which rows represent channels and columns represent time points. LZC was computed by searching the spatiotemporal matrix time point by time point and counting the number of different spatial patterns across different time points. Thus, the resultant measure captures the complexity or diversity in both temporal and spatial domains.
 
 For implementation, the average signal was first subtracted from all channels in order to remove the effect of common reference, and then the multichannel EEG epochs were divided into non-overlapping 4 s windows to compute the LZC, with the resultant LZC values being averaged across all the windows for each studied epoch. In line with previous studies, we normalized the original LZC by the mean of the LZC values from N = 50 surrogate data sets generated by randomly shuffling each row of the binary matrix, which is maximal for a binary sequence of fixed length (Schartner et al., 2015; Schartner et al., 2017) (supplementary analysis was performed to test alternative methods in the generation of surrogate data).
 
-## Statistical analysis of EEG measures
+### Statistical analysis of EEG measures
 
 Statistical analyses were conducted in consultation with the Center for Statistical Consultation and Research at the University of Michigan. All EEG-derived PE and LZC values were exported to IBM SPSS Statistics version 24.0 for Windows (IBM Corp. Armonk, NY). Statistical comparisons were performed using linear mixed models (LMM), to test (1) the difference between the ten studied epochs for both PE and LZC measures and (2) the difference between PE values derived from frontal and posterior channels. In contrast to traditional repeated-measures ANOVA analysis, LMM analysis offers more flexibility in dealing with missing values (see Supplementary file 1B) and accounting for the within-participant variability by including a random intercept associated with each participant. The non-anesthetized group was included primarily to control for learning effects in repeated cognitive testing and thus, for EEG analysis, the statistical analysis was focused on anesthetized group. For the model of LZC values, the fixed effect is the studied epoch. For the model of PE values, the fixed effects include the studied epoch, region, and the interaction between them. We fitted the models with random intercept specific for each participant and used the default variance components as the covariance structure. We modeled the studied epoch as repeated effects and assumed each studied epoch was associated with different residual variance by using the diagonal structure as the covariance structure of the residuals. We employed restricted maximum likelihood estimation. The models described above were chosen by taking into account the information criteria and likelihood ratio test results in the comparisons, with alternative models including additional random effects and repeated effects, as well as different covariance structures (Supplementary file 1B). For all post hoc pairwise comparisons, the Bonferroni corrected p-value along with the estimate and 95% confidence interval (CI) of the difference were reported. A two-sided p<0.05 was considered statistically significant.
 
-## Associations between EEG measures and neurocognitive performance
+### Associations between EEG measures and neurocognitive performance
 
 To explore whether the EEG-based measures of cortical dynamics are predictive of the performance of the cognitive functions in the post-anesthetic period, we examined the associations between EEG measures during pre-anesthetic baseline (EC1), Maintenance and pre-ROC and the impairment of cognitive performance at emergence (just after recovery of consciousness). Spearman’s rank correlation was used to assess the relationships between each of the EEG measures (frontal PE, posterior PE and LZC) and the impairment of performance, in terms of both accuracy and response time, for each of the six tasks.
 
-## Neurocognitive testing
+### Neurocognitive testing
 
 Neurocognitive tests were selected from the cognition test battery (Basner et al., 2015) to reflect a broad range of cognitive domains, ranging from basic abilities such as sensory-motor speed to complex executive functions such as abstraction. The order of the six tests was randomized but balanced across subjects. Individual subjects took the tests in the same order (except during familiarization, which occurred at least 1 week prior to the study day). In each test session, subjects repeated the first test after completion of sixth test. Therefore, the temporal resolution for one test in five control subjects and five experimental subjects was doubled. Each testing session required 15–25 min to complete, with a new session starting every 30 min after emergence. There was thus a total of six testing sessions in the 3-hr time period after emergence. The following six tests, adopted from Basner et al., 2015, were chosen for this study. See Table 1 for a summary of the tests, associated cognitive function, and associated neuroanatomical substrates.
 
@@ -122,27 +168,27 @@ The Visual Object Learning Test (VOLT) measures the volunteer’s memory for com
 
 The Abstract Matching (AM) test (Glahn et al., 2000) is a validated test of executive function. Subjects are presented with two pairs of objects at the bottom left and right of the screen whose perceptual dimensions (e.g. color and shape) vary. Subjects were presented with a target object in the upper middle of the screen and had to classify the target using its perceptual dimensions to one of the two pairs, based on a set of implicit, abstract rules. The abstract matching paradigm evaluates abstraction and cognitive flexibility and depends upon the prefrontal cortex (Berman et al., 1995).
 
-## Statistical analysis of cognitive data
+### Statistical analysis of cognitive data
 
 Apart from the Bayesian analyses, statistical analyses were implemented by the SAS software version 9.4. In view of the learning effect with repeated cognitive testing, it is difficult to pinpoint when any cognitive domain returns to baseline. We could therefore not simply compare recovery times between individual cognitive tests, as we had planned. Instead, in order to test whether there was a difference in recovery times between cognitive domains, we opted for a Bayesian regression approach using all the data from the anesthetized subjects as well as the non-anesthetized controls. For this analysis, we used the brms package in R (R Foundation for Statistical Computing, Vienna, Austria), which uses Stan for full Bayesian inference. We simulated M samples from the (posterior) conditional distribution of the model parameters given the data, and for each set of simulated model parameters, we calculated the corresponding recovery time, thus we obtained M samples of recovery times. Then, based on these simulated recovery times, we further calculated the corresponding differences in recovery times between pairs of cognitive tests (or domains), and evaluated the posterior probability of one cognitive test recovering more than 30 min before another test [P(diff >30 min|data)] by checking the sample proportion in the posterior sample. The recovery time involves both performance accuracy and performance speed. Both processes are defined by the time for anesthetized subjects to have the test score back to their respective accuracy/speed baseline scores. Regarding priors, we chose normal priors with a large variance, which is a routine choice for non-informative flat priors.
 
-Multiple statistical comparisons were separately conducted on the standardized accuracy and speed indices, which were two metrics to evaluate each task performance. We used nonlinear mixed-effects models (NLMM) based on a damped exponential in time to fit the data of each task at all time-points, that is yt=ybaseline+α+β*eγt, where yt is the task performance response at time t, ybaseline is the pre-treatment baseline response, α is the random intercept, β is the random slope, and γ is the coefficient of the fixed-effect time t. Based on our model, the recovery time was calculated by T=log⁡-αβ/γ. The random intercept α and the random slope β are independent, and distributed from normal distributions. Some NLMMs were degenerated to models with a fixed intercept or a fixed slope according to goodness of fit. The appeal of NLMM analysis is its flexibility in modeling the nonlinear trend of cognitive data with repeated measures over time and the ability to adjust the pre-treatment baseline performance. In order to test against the alternative hypothesis that there was a significant difference at the end of the 3-hr period between the anesthetized group and the control group, we performed model-based multiple testing on the least squares means of predicted response difference at 3 hr. For accuracy and speed of each task, the point estimates of the difference as well as the Bonferroni corrected confidence intervals (CI) of the difference with an overall significance level 0.05 were reported. The p-values of testing difference between groups should be compared to the corrected level 0.05/6=0.0083. For both accuracy and speed estimates of recovery time (measured in hours) in each testing domain, we based our estimates on 10,000 Markov Chain Monte Carlo samples. For these simulations, we present posterior probabilities and corresponding 90% credible intervals for differences between cognitive domains in recovery times.
+Multiple statistical comparisons were separately conducted on the standardized accuracy and speed indices, which were two metrics to evaluate each task performance. We used nonlinear mixed-effects models (NLMM) based on a damped exponential in time to fit the data of each task at all time-points, that is $y_{t}=y_{baseline}+\alpha+\beta*e^{\gammat},$ where $y_{t}$ is the task performance response at time t, $y_{baseline}$ is the pre-treatment baseline response, $\alpha$ is the random intercept, $\beta$ is the random slope, and $\gamma$ is the coefficient of the fixed-effect time t. Based on our model, the recovery time was calculated by $T=log⁡-\frac{\alpha}{\beta}/\gamma.$ The random intercept $\alpha$ and the random slope $\beta$ are independent, and distributed from normal distributions. Some NLMMs were degenerated to models with a fixed intercept or a fixed slope according to goodness of fit. The appeal of NLMM analysis is its flexibility in modeling the nonlinear trend of cognitive data with repeated measures over time and the ability to adjust the pre-treatment baseline performance. In order to test against the alternative hypothesis that there was a significant difference at the end of the 3-hr period between the anesthetized group and the control group, we performed model-based multiple testing on the least squares means of predicted response difference at 3 hr. For accuracy and speed of each task, the point estimates of the difference as well as the Bonferroni corrected confidence intervals (CI) of the difference with an overall significance level 0.05 were reported. The p-values of testing difference between groups should be compared to the corrected level 0.05/6=0.0083. For both accuracy and speed estimates of recovery time (measured in hours) in each testing domain, we based our estimates on 10,000 Markov Chain Monte Carlo samples. For these simulations, we present posterior probabilities and corresponding 90% credible intervals for differences between cognitive domains in recovery times.
 
-## Actigraphy
+### Actigraphy
 
 In order to assess and control for differences in baseline sleep-wake rhythms and to potentially evaluate the effect of isoflurane anesthesia on subsequent rest activity behavior, participants were trained and instructed to wear a wrist GT3X + device (ActiGraph) on their nondominant wrist beginning at the conclusion of their baseline visit, 1 week before prior to and 1 week following their assigned study day. Actigraphy data were downloaded to a computer and GT3X + devices recharged on the study day and again at completion 1 week following the study day. Raw activity counts for each subject were binned into 1 min epochs and analyzed for bouts of inactivity using the Cole-Kripke scoring algorithm (Cole et al., 1992), included in the ActiLife 6.7.2 software. For each subject, minutes of inactivity each hour were calculated. ActiLife’s wear time validation was employed using default settings to confirm that subjects used the GT3X + monitor as instructed. Hours in which wear time validation revealed that the watch was not worn were excluded from the analysis.
 
-## Statistical analysis of actigraphy data
+### Statistical analysis of actigraphy data
 
 Actigraphy data were imported into Prism 5.0d (GraphPad) and analyzed with a two-way ANOVA with Time in hours relative to the midnight before testing and Treatment Group (Isoflurane Exposed or Awake Controls) as the two factors. Effects of Time, Treatment Group, and the interaction between these two factors were considered to be significant for p values < 0.05. Due to asynchrony in times during which the GT3X + device was not worn across individuals, it was not possible to conduct a repeated measures two-way ANOVA. To obtain a graphical best fit of actigraphy data, we performed a standard Cosinar analysis.
 
 ## Results
 
-## Participants
+### Participants
 
 The study received ethics committee approval at all three sites independently; written informed consent was obtained after careful discussion with each participant. The average age of all study participants was 27 (±4.5) years, with 50% females. There were no adverse events during the course of the study or at 1-week follow up at the completion of the study.
 
-## Recovery of cognitive functions after general anesthesia
+### Recovery of cognitive functions after general anesthesia
 
 We administered six distinct cognitive tests at baseline and twice per hour for 3 hr after exposure to general anesthesia or a comparable period without anesthetic exposure in the control participants. The order of the MP, PVT, DSST, NBCK, VOLT, and AM tests was randomized between subjects but consistent within subjects. In anesthetized volunteers (with correction for learning based on results from tests taken at corresponding times by the non-anesthetized controls), the accuracy and speed of all six cognitive tests were significantly impaired compared with the pre-anesthetic baseline assessments (all twelve statistical tests yielded p<0.008, with adjustments for multiple comparisons). Thus, the first question answered is that all tests were impaired at initial recovery.
 
@@ -152,7 +198,7 @@ For accuracy (Figure 2), the probability was high that (i) recovery of AM occurr
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/59525/elife-59525-fig2-v2.jpg)
 
-**Figure 2.:** AM, Abstract Matching; DSST, Digit Symbol Substitution Test; MP, Motor Praxis; NBCK, Fractal 2-Back; PVT, Psychomotor Vigilance Test; VOLT, Visual Object Learning Test. The six cognitive tests are all represented.Figure 2—source data 1.Figure 2.
+**Figure 2.:** AM, Abstract Matching; DSST, Digit Symbol Substitution Test; MP, Motor Praxis; NBCK, Fractal 2-Back; PVT, Psychomotor Vigilance Test; VOLT, Visual Object Learning Test. The six cognitive tests are all represented.
 
 The results from the 10,000 Markov Chain Monte Carlo samples yield the following additional insights with respect to accuracy of recovery. The accuracy in PVT is strongly impaired as most samples cannot recover. For the other five tests, the posterior probability that: (a) recovery of MP occurred more than 30 min before VOLT, NBCK and DSST are 93%, 97%, and 99%, respectively; the 90% corresponding credible intervals of the difference in recovery time are (−2.82,–0.27), (−3.6,–0.77), and (−0.15, 0.78); (b) recovery of VOLT occurred more than 30 min before NBCK and DSST are 55% and 50%, respectively; the 90% corresponding credible intervals of the difference in recovery time are (−2.38, 1.32) and (−1.69, 0.74); (c) recovery of AM occurred more than 30 min before VOLT, NBCK, and DSST are 98%, 99%, and 100%, respectively; the 90% corresponding credible intervals of the difference in recovery time are (−2.92,–0.47), (−3.66,–0.91), and (−2.47,–1.15); (d) recovery of DSST occurred more than 30 min before NBCK is 42%; the 90% corresponding credible interval of the difference in recovery time is (−1.55, 1.09).
 
@@ -160,7 +206,7 @@ For speed (Figure 3), the probability was high that (i) recovery of AM occurred 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59525/elife-59525-fig3-v2.jpg)
 
-**Figure 3.:** AM, Abstract Matching; DSST, Digit Symbol Substitution Test; MP, Motor Praxis; NBCK, Fractal 2-Back; PVT, Psychomotor Vigilance Test; VOLT, Visual Object Learning Test. The six cognitive tests are all represented.Figure 3—source data 1.Figure 3.
+**Figure 3.:** AM, Abstract Matching; DSST, Digit Symbol Substitution Test; MP, Motor Praxis; NBCK, Fractal 2-Back; PVT, Psychomotor Vigilance Test; VOLT, Visual Object Learning Test. The six cognitive tests are all represented.
 
 The results from the 10,000 Markov Chain Monte Carlo samples yield the following additional insights with respect to speed of recovery. The recovery of NBCK (as measured by speed to task completion) is strongly impaired. Most samples did not recover over the experimental time course, a fact mirrored in the simulations. For the other five tests, the posterior probability that: (a) recovery of MP speed occurred more than 30 min before AM, PVT, and DSST are 54%, 91%, and 83%, respectively; the 90% corresponding credible intervals of the difference in recovery time are (−1.31, 0.24), (−3.95,–0.02), and (−1.64,–0.24); (b) recovery of VOLT speed occurred more than 30 min before MP, AM, PVT, and DSST are 82%, 98%, 100%, and 100%, respectively; the 90% corresponding credible intervals of the difference in recovery time are (−1.97,–0.12), (−2.35,–0.79), (−4.84,–1.17), and (−2.66,–1.33); (c) recovery of AM speed occurred more than 30 min before PVT and DSST are 79% and 40%, respectively; the 90% corresponding credible intervals of the difference in recovery time are (−3.49, 0.10) and (−0.92, 0.10); (d) recovery of DSST occurred more than 0.5 hr before PVT is 64%; the 90% corresponding credible interval of the difference in recovery time is (−3.02, 0.47).
 
@@ -168,21 +214,128 @@ As expected, for all tests, the maximal degree of impairment was upon ROC. Infor
 
 To account for a trade-off in accuracy versus speed, we also evaluated speed of task performance (Figure 3). Speed was also most strongly impaired at ROC, with a drop of more than 5 SD for all tests but the NBCK. At 3 hr after ROC in the anesthetized group, speed in two (MP and PVT) out of six tests were not statistically significantly different from the control group. There remained significant (p<0.001), albeit small, differences between the anesthetized and the control group in speed performance on four (VOLT, NBCK, AM, DSST) tests at 3 hr. The results of the nonlinear mixed-effects models for cognitive performance in anesthetized and non-anesthetized cohorts are summarized in Table 2.
 
-## Cortical dynamics before, during, and after general anesthesia
+**Table 2.**
+ Results of nonlinear mixed-effects models comparing cognitive trajectories at 3 hr post emergence between anesthetized and non-anesthetized cohorts.AM, Abstract Matching; DSST, Digit Symbol Substitution Test; MP, Motor Praxis; NBCK, Fractal 2-Back; PVT, Psychomotor Vigilance Test; VOLT, Visual Object Learning Test. For speed and accuracy of each task, we report the Bonferroni corrected confidence intervals (CI) of the difference with an overall significance level 0.05. The p-values of testing difference between groups should be compared to the corrected level 0.05/6 = 0.0083.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Speed</th>
+      <th colspan="3">Accuracy</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>p-value</th>
+      <th>CI</th>
+      <th>Estimate</th>
+      <th>p-value</th>
+      <th>CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MP</td>
+      <td>0.3562</td>
+      <td>0.1101</td>
+      <td>(−0.2437, 0.9561)</td>
+      <td>0.0366</td>
+      <td>0.8721</td>
+      <td>(−0.5824, 0.6556)</td>
+    </tr>
+    <tr>
+      <td>VOLT</td>
+      <td>0.7666</td>
+      <td>0.0720</td>
+      <td>(−0.3757, 1.9089)</td>
+      <td>0.3915</td>
+      <td>0.0847</td>
+      <td>(−0.2184, 1.0015)</td>
+    </tr>
+    <tr>
+      <td>NBCK</td>
+      <td>1.2803</td>
+      <td>&lt;0.0001</td>
+      <td>(0.6642, 1.8964)</td>
+      <td>0.0089</td>
+      <td>0.9664</td>
+      <td>(−0.5679, 0.5857)</td>
+    </tr>
+    <tr>
+      <td>AM</td>
+      <td>0.6336</td>
+      <td>0.0023</td>
+      <td>(0.09021, 1.1770)</td>
+      <td>0.3692</td>
+      <td>0.0709</td>
+      <td>(−0.1791, 0.9176)</td>
+    </tr>
+    <tr>
+      <td>PVT</td>
+      <td>0.7986</td>
+      <td>0.0026</td>
+      <td>(0.1052, 1.4921)</td>
+      <td>1.0916</td>
+      <td>0.0557</td>
+      <td>(−0.4359, 2.6191)</td>
+    </tr>
+    <tr>
+      <td>DSST</td>
+      <td>1.0184</td>
+      <td>&lt;0.0001</td>
+      <td>(0.4420, 1.5949)</td>
+      <td>0.5454</td>
+      <td>0.0931</td>
+      <td>(−0.3279, 1.4188)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cortical dynamics before, during, and after general anesthesia
 
 We assessed cortical dynamics before, during, and after anesthetic exposure using local measures of permutation entropy (PE) and global measures of Lempel-Ziv complexity (LZC). Using a linear mixed model, the PE demonstrated significant differences associated with behavioral states (F9, 86 = 42.423, p<0.001), brain regions (F1, 257 = 4.275, p=0.040), and the interaction between them (F9, 85 = 2.750, p=0.007). As compared to the baseline condition of eyes-closed resting state, frontal PE decreased at propofol-induced loss of consciousness (LOC), further decreased during maintenance of the anesthetized state with isoflurane anesthesia (p<0.001,–0.160 [-0.185 to −0.135], maintenance vs. EC1), and returned to or even exceeded the baseline level just before the recovery of consciousness (ROC) (p=0.002, 0.036 [0.018 to 0.055], pre-ROC vs. EC1) (Figure 4A and B). Posterior PE did not show significant changes at LOC but was decreased during the maintenance phase (p<0.001,–0.110 (-0.135 to −0.085), maintenance vs. EC1), and then returned to baseline level just before ROC (Figure 4A and B). The topographic maps of PE exhibited region-specific patterns, in which frontal channels demonstrated significantly higher PE values as compared to posterior channels at the eyes-closed resting state directly after emergence (EC2, p=0.002, 0.032 [0.016 to 0.048], frontal vs. posterior) (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/59525/elife-59525-fig4-v2.jpg)
+
+**Figure 4.:** (A) Scalp topographic maps of the group-level permutation entropy (PE; median average across N = 30 participants) at the ten studied epochs. (B) The box plots of average PE values in frontal (Fp1, Fp2, Fpz, F3, F4, and Fz) and posterior channels (P3, P4, Pz, O1, O2, and Oz) for the studied epochs. On each box, the central mark is the median, the edges are the 25th and 75th percentiles, the whiskers extend to the most extreme data points determined by the MATLAB algorithm to be non-outliers, and the points deemed by the algorithm to be outliers are plotted individually (red cross). (C) The box plots of LZC values for the studied epochs. EC = eyes closed resting state (EC1 is baseline consciousness, EC2-7 are post-emergence just prior to cognitive testing), LOC = loss of consciousness, Pre-ROC = 2 min epoch just before recovery of consciousness. *indicates significant difference relative to EC1, using linear mixed model analysis (Bonferroni-corrected p<0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59525/elife-59525-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Confirmatory results of permutation entropy (PE) with different settings of embedding dimension ($d_{E}$) and time delay (τ).The description of the figure and statistical results are the same as those in Figure 4A-B.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/59525/elife-59525-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Sensitivity of the LZC measure to the selection of threshold for binarization. (B) Confirmatory results of LZC by using spatial shuffling (top) and phase randomization (bottom) in the generation of surrogate data for normalization. The spatial shuffling method permutates the spatial order (at each time point) of the spatiotemporal matrix. The phase randomization method preserves the spectral profile of the signals and reflects the complexity changes beyond the power spectrogram. The description of the figure and the statistical results are same with those in Figure 4C.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/59525/elife-59525-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Scalp topographic maps of the group-level PE at the seven resting-state eyes-closed (EC) epochs. (B) The box plots of average PE values in frontal and posterior channels for the studied epochs. (C) The box plots of LZC values for the studied epochs.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/59525/elife-59525-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** The EEG measures do not appear to be related to the degree of performance impairment via Spearman’s rank correlation analysis. AM, Abstract Matching; DSST, Digit Symbol Substitution Test; MP, Motor Praxis; NBCK, Fractal 2-Back; PVT, Psychomotor Vigilance Test; VOLT, Visual Object Learning Test; RT, Response time; ACC, Accuracy.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/59525/elife-59525-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Only significant correlations were indicated (Spearman’s rank correlation, p<0.05).
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/59525/elife-59525-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Only significant correlations are indicated (Spearman’s rank correlation, p<0.05).
 
 The LZC demonstrated significant state-dependent differences (F9, 50 = 59.364, p<0.001). As compared to baseline consciousness, LZC declined at LOC and decreased further during the maintenance phase (p<0.001,–0.258 [-0.285 to −0.231], maintenance vs. EC1), returning to baseline level just before ROC (Figure 4C). Thus, both the local (PE) and global (LZC) metrics of cortical dynamics recover just as the brain is recovering consciousness. Similar state-dependent changes were observed despite different strategies in the parameter selection for PE (Figure 4—figure supplement 1), the threshold of binarization, and the method of generating surrogate data for LZC (Figure 4—figure supplement 2). Additionally, as expected, the non-anesthetized control group showed no differences among the seven resting-state eyes-closed epochs (Figure 4—figure supplement 3).
 
 We explored further whether the EEG measures during EC1, Maintenance or pre-ROC were associated with the impairment of cognitive performance at emergence, where the maximal degree of impairment occurred. We found no evidence that the EEG measures during EC1 is associated with the impairment in accuracy or response time for all tasks (Figure 4—figure supplement 4). Of note, the LZC during Maintenance showed some correlation with the impairment of response time for MP (r = 0.522, p=0.004) and DSST (r = 0.446, p=0.016) tasks (Figure 4—figure supplement 5). Moreover, both the frontal PE and LZC were found to be weakly correlated with the impairment of accuracy for DSST task (r = 0.381, p=0.046 and r = 0.479, p=0.011) (Figure 4—figure supplement 6). These data must be interpreted with caution given the multiple statistical comparisons and weak correlations.
 
-## Sleep-wake activity in the days following exposure to general anesthesia
+### Sleep-wake activity in the days following exposure to general anesthesia
 
 Average rest-activity patterns for all study subjects are shown in Figure 5A. As expected, time of day significantly affected inactivity in both groups (F129, 6867 = 46.24, p<0.0001). Cosinar analysis demonstrated that peak inactivity occurred between 3 and 4 am for both groups. Importantly, two-way ANOVA analysis revealed that over the week prior to the study day, there were no significant differences between the participants who would subsequently be anesthetized and those who would not (F1, 6865 = 3.70, p>0.05). Moreover, there were no significant interactions between time and group (F149, 6865 = 1.18, p>0.05). Analysis of rest activity resumed upon completion of the experiment on the study day. Actigraphy revealed a small yet statistically significant effect of anesthetic exposure, accounting for only 0.19% of the total variance (F1, 3576 = 12.55, p=0.0004). This was attributable to an increase in inactivity in the isoflurane-exposed volunteers during the initial 2 hr of the early evening (Figure 5B). Activity patterns were not distinguishable after that time period. As before the study day, time remained as a highly significant predictor of inactivity accounting for 42% of the variance (F77, 3576 = 35.78, p<0.0001).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/59525/elife-59525-fig5-v2.jpg)
 
-**Figure 5.:** (A) Rest activity plots are displayed in the week prior to the study day for volunteers that were subsequently randomized to anesthetized (purple) or control (black) conditions. (B) Rest-activity rhythms in the same participants are displayed on the evening of the study day and for the ensuing days. Time = 0 corresponds to midnight on the evening of the study day.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Rest activity plots are displayed in the week prior to the study day for volunteers that were subsequently randomized to anesthetized (purple) or control (black) conditions. (B) Rest-activity rhythms in the same participants are displayed on the evening of the study day and for the ensuing days. Time = 0 corresponds to midnight on the evening of the study day.
 
 ## Discussion
 

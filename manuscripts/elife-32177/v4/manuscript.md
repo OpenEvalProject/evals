@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.32177.001 High fidelity replicative DNA polymerases are unable to synthesize past DNA adducts that result from diverse chemicals, reactive oxygen species or UV light. To bypass these replication blocks, cells utilize specialized translesion DNA polymerases that are intrinsically error prone and associated with mutagenesis, drug resistance, and cancer. How untimely access of translesion polymerases to DNA is prevented is poorly understood. Here we use co-localization single-molecule spectroscopy (CoSMoS) to follow the exchange of the E. coli replicative DNA polymerase Pol IIIcore with the translesion polymerases Pol II and Pol IV. We find that in contrast to the toolbelt model, the replicative and translesion polymerases do not form a stable complex on one clamp but alternate their binding. Furthermore, while the loading of clamp and Pol IIIcore is highly organized, the exchange with the translesion polymerases is stochastic and is not determined by lesion-recognition but instead a concentration-dependent competition between the polymerases.
+High fidelity replicative DNA polymerases are unable to synthesize past DNA adducts that result from diverse chemicals, reactive oxygen species or UV light. To bypass these replication blocks, cells utilize specialized translesion DNA polymerases that are intrinsically error prone and associated with mutagenesis, drug resistance, and cancer. How untimely access of translesion polymerases to DNA is prevented is poorly understood. Here we use co-localization single-molecule spectroscopy (CoSMoS) to follow the exchange of the E. coli replicative DNA polymerase Pol IIIcore with the translesion polymerases Pol II and Pol IV. We find that in contrast to the toolbelt model, the replicative and translesion polymerases do not form a stable complex on one clamp but alternate their binding. Furthermore, while the loading of clamp and Pol IIIcore is highly organized, the exchange with the translesion polymerases is stochastic and is not determined by lesion-recognition but instead a concentration-dependent competition between the polymerases.
 
 ## Introduction
 
@@ -30,17 +30,33 @@ Here, we use co-localization single molecule spectroscopy (CoSMoS) (Friedman et 
 
 ## Results
 
-## Preparation of DNA substrates and fluorescently labeled proteins
+### Preparation of DNA substrates and fluorescently labeled proteins
 
 The ring-shaped E. coli β-clamp is capable of threading and unthreading itself on free DNA ends and therefore we attached a primer-template DNA substrate to a glass surface and blocked its free end with monovalent streptavidin (Figure 1A). Subsequently, the binding of fluorescently labeled proteins to DNA was followed by two- or three-color total internal reflection fluorescence microscopy (see Materials and methods) with a frame rate of 0.44 and 0.66 s (s), respectively, on ~800 well separated DNA molecules per field of view (Figure 1B–C). Proteins were fluorescently labeled via maleimide-cysteine crosslinking or enzymatically via an N-terminal Ybbr tag (Yin et al., 2006), and the fluorescently labeled proteins retained wild-type activity as indicated by polymerase processivity assay (Figure 1—figure supplement 1A–C). For detection of Pol IIIcore (α, ε, θ), we fluorescently labeled the α subunit. For the clamp loader complexes (γ3δδ' and τ3δδ'), the fluorescent label was placed on the δ' subunit. The lifetime of the each of the fluorophores was measured individually on DNA-bound clamps (Atto 488 274.4 ± 16.5 s, Atto 565: 145.7 ± 7.5 s, Atto 647N: 93.0 ± 7.4 s) (Figure 1—figure supplement 1D–F). In most experiments, after initial detection of the DNA molecules, the fluorophore (Atto 488) on the DNA was bleached so that the same color could be re-used on one of the proteins. The bleaching of the DNA fluorophore has no effect on the lifetime of Pol IIIcore on clamp-DNA (τon without bleaching 18.1 ± 1.6, τon with bleaching 16.8 ± 1.8) (Figure 1—figure supplement 1G–H).
 
-## Clamp loading and unloading are distinct processes
+![Figure 1.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig1-v4.jpg)
+
+**Figure 1.:** (A) Schematic representation of the experimental setup. DNA molecules are attached to a PEGylated glass slide via a biotin-streptavidin layer, and end-blocked with monovalent streptavidin. Fluorescently labeled proteins will be detected when bound to the DNA molecules (B) Schematic representation of the three fluorescent channels from a single image (out of an 1000 image series) showing the presence of different molecules. (C) Schematic representation of kymographs from single position in the image series, revealing the binding and release of different proteins to the DNA at that position.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** (A) ϕX174 phage DNA (5.4 kb) primer extension assays, showing the activity of fluorescently labeled and unlabeled proteins. In the labeled reactions, fluorescently labeled clamp, labeled clamp loader, and labeled polymerase (Pol IIIcore, Pol II, or Pol IV) were used. Reaction were quenched at 0, 0.5, 1, 2, and 5 min. The increased background in the ‘Pol IIIcore Fluo label +" lanes is caused by the presence of αAtto488, whose fluorescent signal overlaps with that of the fluorescein label on the DNA primer (B) Coomassie stained SDS-page showing unlabeled and labeled proteins (marked with *). (C) Three-wavelength fluorescent scan of the same gel shown in B (before coomassie staining) revealing the presence of the labeled proteins. (D–F) Lifetimes of fluorescent dyes Atto 488, Atto 565, and Atto 674N under experimental conditions. The dyes were attached to the β-clamp that was loaded onto the DNA substrate used in the experiments. (G–F) Lifetime of Pol IIIcore on clamp-DNA before and after photobleaching of the Atto 488 fluorophore on the DNA substrate. All values represent mean lifetime/lag time ±s.e.m.
+
+### Clamp loading and unloading are distinct processes
 
 The isolated β-clamp shows no interaction with the end-blocked DNA (Figure 2—figure supplement 1A–B) When combined with the γ clamp loader complex (γ3δ1δ'1), frequent clamp loading events are observed where the loader and clamp arrive at the DNA simultaneously or in two adjacent frames (Figure 2A–B), due to the sequential data acquisition of the three laser channels (further explained in Figure 2—figure supplement 1C–E). Therefore, the loader and clamp bind DNA as a pre-formed complex. Shortly after DNA binding, the loader dissociates while the clamp remains bound to the DNA for the remainder of the data acquisition (Figure 2A). As the two lifetimes of the loader and clamp are vastly different it was not possible to accurately measure both in one experiment. Therefore, for the clamp lifetime, we first loaded the clamp, washed away the loader and then started data collection using 10 s intervals between measurements to avoid bleaching of the fluorophore. The clamps remain bound for more than 23 min (τon = 1429.7 ± 177.0 s; Figure 2C), excluding the time it takes to load the clamps, wash away the loader, and start data collection (~3 min). In contrast, the lifetime of the loader is very short lived. To accurately measure the loader lifetime, only one fluorescent channel was used to decrease the frame rate to 0.086 s. The lifetime of the isolated loader on DNA is 1.20 ± 0.05 s, which is shortened to 0.41 ± 0.01 s in the presence of the clamp (Figure 2D). The rapid release of the loader from clamp-DNA is dependent on ATP hydrolysis as evidenced by the fact that in the presence of the poorly hydrolysable analog ATPγS, the loader and clamp still bind to the DNA together but also release together (Figure 2E). The loader and clamp bind to the DNA briefly (τon = 2.7 ± 0.2 s; Figure 2F), which contrasts with the long lifetimes for the loaded clamps on DNA (Figure 2C). Taken together, our analysis is in agreement with the model that the clamp holds the loader in a conformation that suppresses ATPase activity and subsequent DNA binding triggers ATP hydrolysis and the release of the loader from clamp and DNA (Hedglin et al., 2013; Kelch et al., 2012).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig2-v4.jpg)
+
+**Figure 2.:** (A) Representative trace showing a clamp loading event on DNA in the presence of ATP. (B) Histogram showing the simultaneous arrival of loader and clamp on DNA (see also Figure 2—figure supplement 1C–E). (C) The distribution of lifetimes for the clamp on DNA after removal of the clamp loader (D) Lifetime of the clamp loader on DNA in the absence (blue bars) and presence (grey bars) of the clamp. (E) Representative trace showing the simultaneous arrival and release of loader and clamp on DNA in the presence of ATPγS. (F) The distribution of lifetimes for the loader and clamp on DNA in the presence of ATPγS. (G) Representative trace showing clamp loading and unloading by the loader in the presence of ATP. (H) The distribution of lifetimes for the loader on DNA during unloading. (I) The distribution of lag times between the arrival of the loader and the release of the clamp. (J) Representative trace showing unloading of a pre-loaded clamp in absence of ATP. (K) The distribution of lifetimes for the loader during clamp unloading in the absence of ATP. The first column (in dark grey) has been excluded from the fitting. The lower numbers in this column are possibly caused by the clamp that needs to be removed first before the loader can release. (L) The distribution of lag times between the arrival of the loader and the release of the clamp in the absence of ATP. All values represent mean lifetime/lag time ±s.e.m.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig2-figsupp1-v4.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Self-loading and unloading of clamp on open-ended DNA. (B) Lack of self-loading of clamp on end-blocked DNA. (C) Histogram showing the simultaneous arrival of loader and clamp on DNA (same as main Figure 2B) (D) Schematic representation of how the simultaneous arrival of two proteins can be recorded in a single image or (E) on two sequential images. (F) Representative trace showing sequentially an unsuccessful and a successful clamp unloading event. (G) The distribution of lifetimes for the unsuccessful unloading attempts by the clamp loader. All values represent mean lifetime ±s.e.m.
+
 During DNA replication, the clamps on the lagging strand need to be unloaded and recycled to allow for continuous DNA synthesis (Yao et al., 1996). We observe a different temporal organization for unloading events compared to the loading events: the loader arrives at the loaded clamp, releases the clamp within 4.1 ± 0.4 s of its arrival but remains bound for a total time of 10.8 ± 1.2 s (Figure 2G–I). Furthermore, unlike clamp loading, the unloading of a clamp does not require ATP hydrolysis: the nucleotide requirement of the unloading process was tested by first loading clamps onto DNA and then washing away the ATP and free proteins. Next, the loader was re-introduced in the absence of ATP, resulting in many unloading events with similar kinetics to those observed in the presence of ATP (Figure 2J–L). About half (53%) of the binding events of the loader to the pre-loaded clamp do not result in unloading of the clamp. These events last shorter (τon = 2.5 ± 0.1 s) than the unloading events (τon = 10.8 ± 1.2 s) (Figure 2—figure supplement 1F–G). Taken together, the data indicates that the loading and unloading of a clamp are not forward and backward reactions of the same mechanism but that they are separate processes, each with a distinct organization, possibly to prevent unwanted clamp unloading at the replication fork.
 
-## Pol IIIcore has an intrinsic lifetime on DNA that is independent of its activity
+### Pol IIIcore has an intrinsic lifetime on DNA that is independent of its activity
 
 Once the clamp is loaded onto DNA, the replicative DNA polymerase Pol IIIcore will associate with the clamp and initiate DNA replication (Johnson and O'Donnell, 2005). Pol IIIcore is a stable trimeric complex containing the polymerase subunit α, the exonuclease ε and the accessory subunit θ (McHenry and Crow, 1979). Using a single fluorescent channel, we find that Pol IIIcore alone binds DNA very briefly for one image frame (0.086 s) or less, resembling more a collisions-like interaction rather than true binding events (Figure 3A–B). These short-lived collisions are in agreement with previous studies that show that Pol IIIα is a poor enzyme in isolation (Fay et al., 1981) that has a low affinity for DNA (Fernandez-Leiro et al., 2015; McCauley et al., 2008). The collisions of Pol IIIcore contrasts with the well-studied E. coli DNA polymerase I Klenow fragment, which is known to have a high affinity for DNA (Kuchta et al., 1987) and consequently shows a lifetime of 42.2 ± 1.8 s (Figure 3C–D).
 
@@ -54,15 +70,210 @@ During DNA replication, Pol IIIcore is tethered to the rest of the replisome via
 
 However, during the simultaneous synthesis of leading and lagging strand, the polymerases on either strand are linked together by the multiple τ proteins of the clamp loader complex, which prevents the polymerase from diffusing away and enables it to quickly resume DNA synthesis. This may explain the higher processivity measured for the replisome (Yao et al., 2009; Tanner et al., 2009) compared to the bursts of activity from a single Pol IIIcore (Jergic et al., 2013; Tanner et al., 2008).
 
-## Pol IIIcore and Pol IV alternate binding to clamp-DNA
+### Pol IIIcore and Pol IV alternate binding to clamp-DNA
 
 During DNA replication the replisome may encounter DNA adducts caused by diverse chemicals, reactive oxygen species or UV-light that form barriers to the high-fidelity replicative DNA polymerases. To overcome these replication blocks, the replicative DNA polymerases temporarily trade places with the error-prone translesion DNA polymerases (Goodman and Woodgate, 2013). To study the molecular mechanism of polymerase switching, we directly visualized the binding of Pol IIIcore and the translesion DNA polymerase Pol IV on clamp-DNA. At equal concentration of Pol IIIcore and Pol IV (30 nM each), we record a large majority of events (92%) that show alternating binding of the two polymerases on clamp-DNA, with Pol IIIcore binding first in 70%, and Pol IV binding first in 22%, of events (Figure 4A and C, Table 1). Similar to the lifetime of Pol IIIcore alone on clamp-DNA, this competition is unaffected by addition of nucleotides (dATP/dTTP, 0.5 mM each) (Pol IIIcore to Pol IV switch: 72%, Pol IV to Pol IIIcore switch 21%). In the polymerase switching events, there is a significant lag time between the release of Pol IIIcore and Pol IV arrival that decreases with increased protein concentrations (Table 1, Figure 4—figure supplement 1A–D). The lifetime of Pol IIIcore on the clamp-DNA remains unchanged at all protein concentrations (Table 1, Figure 4—figure supplement 1E–H), suggesting that Pol IV binding does not cause the release of Pol IIIcore and therefore the two polymerases bind independently.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig4-v4.jpg)
+
+**Figure 4.:** (A) Representative trace showing alternating binding of Pol IIIcore and Pol IV on clamp-DNA. (B) Lifetime of Pol IV on clamp-DNA. (C) Cartoon showing the frequency of different polymerase switching events. (D) Representative trace showing the independent arrival and release of Pol IIIcore and Pol IV on clamp-DNA during co-localization events. (E) Lifetime of the co-localization of Pol IIIcore on Pol IV on clamp-DNA. (F) Representative trace showing the simultaneous arrival and release of Pol IIIcore α subunit (polymerase) and Pol IIIcore ε subunit (exonuclease) on clamp-DNA. (G) Lifetime of the co-localization of the Pol IIIcore α subunit and Pol IIIcore ε subunit. (H) Representative trace showing alternating binding of Pol IIIcore and Pol II on clamp-DNA. (I) Lifetime of Pol II on clamp-DNA. All values represent mean lifetime ±s.e.m.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig4-figsupp1-v4.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Histograms of the lag time between Pol IIIcore release from clamp-DNA and binding of Pol IV at increasing protein concentrations. (E–H) Histograms of the lifetime of Pol IIIcore on clamp-DNA at all four protein concentrations. See also Table 1. All values represent mean lifetime/lag time ±s.e.m.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig4-figsupp2-v4.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Lifetime of Pol IIIcore with a reduced β-binding motif in the ε subunit. (B) Lifetime of Pol IIIcore with an improved β-binding motif in the ε subunit. (C) Lifetime of Pol IV with a mutated β-groove binding motif. (D) Lifetime of Pol IV with a mutated β-rim binding motif. (E) Lifetime of Pol II with a mutated β-groove binding motif. All values represent mean lifetime ±s.e.m.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig4-figsupp3-v4.jpg)
+
+**Figure 4—figure supplement 3.:** (A) The distribution of lifetimes for Pol IIIcore binding on the clamp on matched, (B) lesion, and (C) mismatched DNA. (D) The distribution of lifetimes for Pol IIIcore binding on clamp-DNA in the presence of dATP and dTTP on matched, (E) lesion, and (F) mismatched DNA. (G) All values represent mean lifetime ±s.e.m.
+
+**Table 1.**
+ Competition of Pol IIIcore and Pol IV
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Concentration (nM)</th>
+      <th colspan="3">Polymerase exchange (%)*</th>
+      <th>Lag time (s)†</th>
+      <th>Lifetime (s)‡</th>
+    </tr>
+    <tr>
+      <th>Competition</th>
+      <th>Pol IIIcore</th>
+      <th>Pol IV</th>
+      <th>III→IV</th>
+      <th>IV →III</th>
+      <th>III + IV</th>
+      <th>III→IV</th>
+      <th>Pol IIIcore</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pol IIIcore - Pol IV</td>
+      <td>30</td>
+      <td>6</td>
+      <td>81</td>
+      <td>12</td>
+      <td>7</td>
+      <td>32.5 ± 4.6</td>
+      <td>16.3 ± 1.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>30</td>
+      <td>30</td>
+      <td>70</td>
+      <td>22</td>
+      <td>9</td>
+      <td>20.3 ± 3.5</td>
+      <td>15.7 ± 1.1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>30</td>
+      <td>150</td>
+      <td>63</td>
+      <td>20</td>
+      <td>15</td>
+      <td>5.9 ± 0.5</td>
+      <td>16.6 ± 1.7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>150</td>
+      <td>150</td>
+      <td>51</td>
+      <td>24</td>
+      <td>26</td>
+      <td>3.5 ± 0.2</td>
+      <td>16.0 ± 0.9</td>
+    </tr>
+    <tr>
+      <td>τ-complex§ - Pol IV</td>
+      <td>30#</td>
+      <td>30</td>
+      <td>95</td>
+      <td>0</td>
+      <td>5</td>
+      <td>11.3 ± 1.3</td>
+      <td>14.8 ± 0.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Polymerase exchange observed on clamp-DNA showing the exchange from Pol IIIcore to Pol IV (III→IV), Pol IV to Pol IIIcore (IV→III), or co-localization of Pol IIIcore and Pol IV (III + IV).†Time between Pol IIIcore release and Pol IV arrival.‡Lifetime on clamp-DNA.§τ-complex consists of τ clamp loader (τ3δ1δ'1) and three Pol IIIcore complexes (α, ε, θ).#Concentration of Pol IIIcore._
 
 In addition to the switching events, we also observe a small number of co-localization events of the two polymerases on clamp-DNA (9%), which become more frequent at higher protein concentrations (Figure 4C, Table 1) but are unaffected by addition of nucleotides (7% with dATP/dTTP). In all events where Pol IIIcore and Pol IV co-localize on the clamp-DNA, the polymerases arrive and leave independently of one another (Figure 4D). This is different from the true binding partner exonuclease ε that arrives and leaves with Pol IIIα (Figure 4F). In addition, the co-localization time of Pol IIIcore and Pol IV (τcolocalize = 8.2 ± 0.6, Figure 4E) is shorter than that of Pol IIIcore alone (τon = 15.8 ± 0.9 s, Figure 4G). This therefore shows that Pol IIIcore and Pol IV do not form a stable complex on clamp-DNA and that the clamp does not function as a molecular toolbelt, but that the two polymerases compete for the binding of the clamp-DNA in a concentration-dependent manner. This competition is strongly favored towards Pol IIIcore in the presence of the τ clamp loader complex (Table 1) as it is directly tethered to Pol IIIcore and ensures that Pol IIIcore is immediately bound upon clamp loading (Figure 3H). The presence of the τ clamp loader complex does not alter the frequency of co-localization between Pol IIIcore and Pol IV (Table 1). This suggests that during replication, Pol IV may be able to frequently access the clamp-DNA, especially as the estimated cellular concentration of Pol IV is ~10 fold higher than that of Pol IIIcore (Sutton, 2010).
 
 Finally, a second E. coli translesion polymerase, Pol II (Paz-Elizur et al., 1996) also competes with Pol IIIcore for access to the clamp but shows no co-localization with Pol IIIcore (Figure 4H–I, Table 2), possibly because of its large size (90 kDa vs. 40 kDa for Pol IV) that may prevent it from simultaneous binding to the clamp with Pol IIIcore.
 
-## Polymerases compete for binding to the hydrophobic groove of the clamp
+**Table 2.**
+ Lifetime of β-clamp binding mutants of Pol IIIcore, Pol IV and Pol II
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3">Polymerase exchange (%) *</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Polymerase</td>
+      <td>Mutation</td>
+      <td>Lifetime (s)†</td>
+      <td>III→IV</td>
+      <td>IV →III</td>
+      <td>III + IV</td>
+    </tr>
+    <tr>
+      <td>Pol IIIcore</td>
+      <td>WT</td>
+      <td>15.7 ± 1.1</td>
+      <td>70</td>
+      <td>22</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ε (β-)</td>
+      <td>7.9 ± 1.2</td>
+      <td>70</td>
+      <td>26</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ε (β+)</td>
+      <td>40.2 ± 8.7</td>
+      <td>71</td>
+      <td>24</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Pol IV</td>
+      <td>WT</td>
+      <td>14.2 ± 1.8</td>
+      <td>70</td>
+      <td>22</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β groove‡</td>
+      <td>2.7 ± 0.2</td>
+      <td>40</td>
+      <td>60</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β rim</td>
+      <td>14.9 ± 1.7</td>
+      <td>66</td>
+      <td>29</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Polymerase</td>
+      <td>Mutation</td>
+      <td>Lifetime (s)†</td>
+      <td>III→II</td>
+      <td>II →III</td>
+      <td>III + II</td>
+    </tr>
+    <tr>
+      <td>Pol II</td>
+      <td>WT</td>
+      <td>10.4 ± 1.3</td>
+      <td>71</td>
+      <td>29</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β groove</td>
+      <td>4.4 ± 0.8</td>
+      <td>63</td>
+      <td>37</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Polymerase exchange observed on clamp-DNA showing the exchange from Pol IIIcore to Pol IV or Pol II, Pol IV or Pol II to Pol IIIcore, or co-localization of Pol IIIcore and Pol IV or Pol II.†Lifetime on clamp-DNA.‡The Pol IV β cleft mutant was measured at high concentrations (90nM) in an attempt to catch co-localization events._
+
+### Polymerases compete for binding to the hydrophobic groove of the clamp
 
 To further investigate the competition between the different polymerases and their access to the clamp, we created a series of polymerase mutants. Most clamp interacting proteins, including Pol IIIcore, Pol IV, and Pol II, bind to a hydrophobic groove on the surface of the β-clamp using the canonical sequence Qxx(L/M)xF (Dalrymple et al., 2001). The β-clamp is dimeric and thus has two binding grooves. Interestingly, Pol IIIcore contains two β-binding sequences: one in the polymerase subunit α (QADMF, residues 920–924) that is absolutely required for clamp binding (Dohrmann and McHenry, 2005), and a second sequence in the exonuclease subunit ε (QTSMAF, residues 182–187) that stabilizes the Pol IIIcore complex and stimulates processive DNA synthesis and exonuclease activity (Toste Rêgo et al., 2013; Jergic et al., 2013). To demonstrate that the ε β-binding motif also contributes to the lifetime of Pol IIIcore on the clamp, we made two variants of the exonuclease ε, one with a weakened the β-binding motif (QTSMAF to QTSAAA [Toste Rêgo et al., 2013]) and one with an enhanced β-binding motif (QTSMAF to QTSLPL [Fernandez-Leiro et al., 2015]). Indeed, the lifetime of Pol IIIcore is decreased ~2 fold by the weak β-binding motif, while it is increased ~2 fold by the enhanced β-binding sequence (Table 2, Figure 4—figure supplement 2A–B), showing that Pol III core occupies both binding grooves of the dimeric clamp.
 
@@ -70,9 +281,59 @@ In Pol IV, two β-clamp interacting motifs have been described: a canonical QLVL
 
 This therefore shows that all three polymerases compete for the same binding groove on the clamp, and that the isolated polymerases compete with similar lifetimes on the clamp-DNA. This equilibrium is directly influenced by the concentration of the polymerases, or by physically tethering the polymerase to the clamp loader, as is observed for the τ clamp loader complex and Pol IIIcore (Table 1, Figure 3H–J)
 
-## DNA lesions do not affect the recruitment of translesion polymerases
+### DNA lesions do not affect the recruitment of translesion polymerases
 
 The apparent lack of organization for the switching of the two polymerases raises the question of how Pol IV is recruited to the site of a lesion. We therefore wondered whether the lifetime of Pol IIIcore is affected by the nature of the DNA substrate. For this, we compared the lifetimes on three different DNA substrates: a matched, a mismatched, and a substrate containing a N2-furfuryl-dG lesion (Jarosz et al., 2006). These three DNA substrates should elicit very different outcomes, i.e. extension on a matched DNA substrate, mismatch removal by the exonuclease ε on a mismatched substrate, or polymerase switching on a DNA lesion. Surprisingly, the lifetime of Pol IIIcore on clamp-DNA is not altered by the presence of either a mismatch or the lesion (Table 3, Figure 4—figure supplement 3A–C). This indicates that Pol IIIcore does not 'discriminate' between the different DNA substrates. This is also observed in the presence of the two nucleotides dATP and dTTP (0.5 mM each), which give little change in the lifetime of Pol IIIcore on all three DNA substrates (Table 3, Figure 4—figure supplement 3D–F). Likewise, the exchange of Pol IIIcore to Pol IV is similar on all three substrates, (Table 3). Hence, Pol IIIcore dissociation is unaffected by mismatches or DNA lesions and the exchange between Pol IIIcore and Pol IV is not driven by the state of the DNA, but instead is a direct competition between the replicative and translesion polymerases.
+
+**Table 3.**
+ DNA lesion and mismatches do not affect the lifetime of Pol IIIcore on clamp-DNA or its competition with Pol IV
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Lifetime (s)</th>
+      <th colspan="3">Polymerase exchange† (%)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>No dNTP</th>
+      <th>dATP/dTTP</th>
+      <th>III → IV</th>
+      <th>IV → III</th>
+      <th>III + IV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Matched</td>
+      <td>15.7 ± 1.1</td>
+      <td>16.1 ± 1.0</td>
+      <td>73</td>
+      <td>14</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Lesion*</td>
+      <td>17.6 ± 2.1</td>
+      <td>16.4 ± 1.4</td>
+      <td>58</td>
+      <td>24</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Mismatched*</td>
+      <td>19.0 ± 1.4</td>
+      <td>17.5 ± 0.5</td>
+      <td>64</td>
+      <td>23</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Lesion DNA: N2-furfuryl-dG, mismatched DNA: G-T.†Polymerase exchange on observed on clamp-DNA showing the exchange from Pol IIIcore to Pol IV (III→IV), Pol IV to Pol IIIcore (IV→III), or co-localization of Pol IIIcore and Pol IV (III + IV). Exchange rates measured in the absence of nucleotides_
 
 ## Discussion
 
@@ -88,40 +349,40 @@ Interestingly, in higher eukaryotes the access of the eukaryotic translesion pol
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 All chemicals were purchased from Sigma-Aldrich (Gillingham, United Kingdom), unless stated otherwise. All chromatography columns were purchased from GE healthcare (Little Chalfont, United Kingdom) .
 
-## Cloning of protein expression vectors
+### Cloning of protein expression vectors
 
 Genes for E. coli β (dnaN), ε (dnaQ), θ (holE), γ (dnaX) and Bacillus subtilis Sfp phosphopantetheinyl transferase were cloned into pET28a vectors, and genes for δ (holA) and single cysteine δ' (holB) K83C/C217S/C294S(Goedken et al., 2004) were cloned into pET3d vectors. The sequence for Pol I (polA) Klenow fragment (residues 324–928) was cloned into a pETNKI-His-3C-LIC (Luna-Vargas et al., 2011) vector. For labeling purposes the Ybbr sequence DSLEFIASKLA (Yin et al., 2005) was added N-terminally to the following proteins during cloning into their respective vectors: Pol IIIα (dnaE) was cloned into a pETNKI-His-3C-LIC vector, Pol II (polB) and Pol IV (dinB) were cloned into pET11 vectors, and the gene for ε (dnaQ) was cloned into a pET28a vector. The plasmids for streptavidin 'alive' (biotin-binding) and streptavidin 'dead' (not biotin-binding) (Howarth et al., 2006) were generous gifts from M. Howarth (Univ. of Oxford).
 
 Clamp binding mutants of ε, Pol IV, and Pol II were generated through site directed mutagenesis. The following sequences were changed: ε (β-) residues 182–187: QTSMAF to QTSAAA, ε (β+) residues 182–187: QTSMAF to QTSLPL, Pol IV (β groove) residues 346–351: QLVLGL to QLVAGA, Pol IV (β rim) residues 303–305 VWP to AGA, Pol II (β groove), residues 779–783: QLGLF to QLGAA.
 
-## Protein purification
+### Protein purification
 
 Unless otherwise stated, protein purifications were performed with the following gradients: nickel affinity (25–500 mM Imidazole gradient in the presence of 500 mM NaCl), ion exchange (0–1 M NaCl gradient), hydrophobic interaction chromatography (2–0 M ammonium sulfate gradient) and gel filtration (150 mM NaCl). Pol IIIα-NYbbr was purified in 20 mM Hepes pH 7.5 and 2 mM DTT by nickel affinity, ion exchange and gel filtration. Pol I Klenow fragment was purified in 20 mM Tris pH 8.0 and 2 mM DTT by nickel affinity, anion exchange, hydrophobic interaction chromatography and and gel filtration. Pol IV-NYbbr was purified in 20 mM Hepes pH 7.5 and 2 mM DTT by ion exchange, hydrophobic chromatography and gel filtration. Pol II-NYbbr was purified in 20 mM Tris pH 8.0, 0.5 mM EDTA and 2 mM DTT by two steps of ion exchange separated by a step of hydrophobic chromatography, followed by gel filtration. ε-NYbbr was purified in 25 mM Hepes pH 8.2 and 2 mM DTT by nickel affinity under denaturing conditions (in the presence of 6 M Urea), followed by refolding overnight at 4°C in 25 mM Hepes pH 8.2 and 10 mM DTT and ion exchange. β, ε, θ and Sfp were purified in 20 mM Hepes pH 7.5 and 2 mM DTT by nickel affinity, ion exchange and gel filtration. δ and δ' K83C/C217S/C294S were purified in 50 mM Hepes pH 7.5, 0.1 mM EDTA and 2 mM DTT by hydrophobic chromatography and ion exchange, and γ/τ was purified in the same buffer by nickel affinity chromatography. The γ3δ1δ'1 and τ3δ1δ'1 complexes were assembled at a 1:2:1 ratio of γ/τ:δ:δ' and separated by ion exchange. To fully occupy all Pol IIIcore binding site, a 5-fold excess of Pol IIIcore was added to the τ3δ1δ'1 complex, and then purified by gel filtration. Streptavidin alive and dead were purified and prepared as described (Howarth et al., 2006).
 
-## Protein labeling
+### Protein labeling
 
 Pol IIIα, Pol IV, Pol II and ε exonuclease subunit were enzymatically labeled by Sfp, which conjugates CoA-linked Atto dyes to their N-terminal Ybbr tags (Yin et al., 2006). The labeled proteins were Pol IIIα-Atto 488, Pol IV-Atto 565, Pol II-Atto 647N, and ε-Atto 565. The β clamp and Pol I Klenow fragment were labeled on a single cysteine residue with maleimide-Atto647N. The γ-complex (δγ3δ') was labeled at the δ' subunit with the mutations K83C/C217S/C294S (Goedken et al., 2004) with maleimide-Atto 565 before complex assembly. All labeled proteins were purified away from the free dye by gel filtration. The labeling efficiencies of the proteins were determined using the protein and fluorophore absorption ratios, with the free fluorophore absorption at 280 nm subtracted from the protein absorption at 280 nm. The labeling efficiency was 85% for the γ- and τ-complexes, 68% for the β clamp monomer, 100% for Pol I Klenow fragment, 60% for Pol IIIα, 78% for ε, 62% for Pol IV and 66% for Pol II. In addition, the labeling efficiencies for Pol IIIα and ε were verified at the single molecule level by measuring the co-localization frequencies between Pol IIIα and ε on clamp-DNA, where each co-localization event was scored as having labeled Pol IIIα only, labeled ε only, or both labeled proteins. This way, the labeling efficiencies were 67% for Pol IIIα and 71% for ε, which are similar to the efficiencies measured by absorption.
 
-## φX174 primer extension assays
+### φX174 primer extension assays
 
 Protein activity was tested using single stranded ϕX174 phage DNA (New England Biolabs, Hitchin, United Kingdom), primed with a 5' fluorescein labeled primer (sequence: 5' FAM-ACCAACATAAACATTATTGCCCGGCGTACpG, where lowercase 'p' indicates the non-cleavable phosphothioate bond). Reactions were performed in 20 mM Tris pH 7.5, 2 mM DTT, 50 mM potassium glutamate, 8 mM magnesium acetate, and 0,05 mg/ml BSA. Each reaction contained 5 nM primed ϕX174 phage DNA, 50 nM β clamp, 10 nM γ clamp loader complex (γ3δ1δ'1), and 30 nM polymerase (Pol IIIcore, Pol II, or Pol IV). Reactions were quenched at 0, 0.5, 1, 2 and 5 min with 75 mM EDTA and 0.6% (W/V) SDS and stored on ice before separated on a alkaline agarose gel (0.8% agarose, 30 mM NaOH, 2 mM EDTA) for 15 hr at 14 V. Gels were scanned at 488 nM using a Amersham Typhoon (GE Healthcare)
 
-## DNA substrates
+### DNA substrates
 
 All DNA oligos were ordered from IDT (Leuven, Belgium), with the exception of the furfuryl-modified oligo that was purchased from Eurogentec (Seraing, Belgium). The following DNA substrates were used. A 33-nt template DNA: 5' Bio-CATAATATCCATGCTTCACC[amino-dT]TCATCCAAATCC for the matched and mismatched substrates or 5' Bio-CATAA[N2-furfuryl-dG]ATCCATGCTTCACC[amino-dT]TCATCCAAATCC for the lesion substrate. A 27-nt primer DNA: 5' Bio-GGATTTGGATGAAGGTGAAGCATGGApT for the matched and lesion substrates (where lowercase 'p' indicates the non-cleavable phosphothioate bond) or a 25-nt 5' Bio-GGATTTGGATGAAGGTGAAGCATGpT for the mismatched substrate. The template DNA was labeled on the internal amino-modified thymine with NHS-Atto 488 and purified away from the free dye by gel filtration. The labeled template DNA was subsequently bound to monovalent streptavidin and purified by gel filtration, before annealing to the primer DNA and binding to the glass cover slip for imaging. See Figure 1A for cartoon representation of final DNA substrate.
 
-## Preparation of slides
+### Preparation of slides
 
 Glass slides and cover slips were washed in 3 M NaOH and Piranha solution (3:2 concentrated sulfuric acid: 30% hydrogen peroxide) and then silanized and pegylated essentially as described in (Ha et al., 2002). The imaging chamber (15 μL) was assembled by creating a sandwich between the cover slip and glass slide using double adhesive tape, and it was further passivated using 4 mg/ml PLL-PEG (SuSoS, Dübendorf, Switzerland), 1% (W/V) pluronic F127 (Sigma) and 10 mg/ml BSA (New England Biolabs). Streptavidin (1 mg/ml) (New England Biolabs) was added last to bind the biotin-DNA.
 
-## CoSMoS microscopy
+### CoSMoS microscopy
 
 All single-molecule measurements were performed at 23 (±1) °C in 20 mM Tris-HCl pH 7.5, 50 mM potassium glutamate, 8 mM MgCl2, 4% glycerol, 2 mM DTT, 0.1% Tween20 and 1 mM Trolox. The protein concentrations used were: 15 nM β2 clamp; 15 nM γ3δ1δ'1 complex; 30 nM or 150 nM Pol IIIcore; 6 nM, 30 nM, or 150 nM Pol IV; and 30 nM Pol II. Movies were acquired using Micromanager software on a Nikon (Kingston Upon Thames, United Kingdom) Eclipse Ti-E microscope with ApoTirf 100X/1.49 Oil, 0.13–0.20 WD 0.12 objective. The lasers used were 150 mW 488 nm, 150 mW 561 nm (both Coherent Sapphire Ely, United Kingdom) and 100 mW 638 nm (Coherent Cube) controlled by an acousto-optic tunable filter (Gooch and Housego, Ilminster, United Kingdom). Movies were acquired on an Andor (Belfast, United Kingdom) iXon (EM) + CCD camera at 20–40 mW laser power and an exposure of 50 millisecond (ms) per frame for a thousand frames with rapid alternation between the three laser channels (180 ms/change). Thus the frame rate is 660 ms for a 3-color experiment, 440 ms for a 2-color experiment, and 86 ms for a single color experiment (as there is no need to change the laser channels). The total duration of the movies for a 3-color experiment was 650–670 s, which gives an acquisition rate of 220 milliseconds per frame when the lag in the filter wheel was taken into consideration. Each field of view (54 μm × 54 μm, pixel size 105 × 105 nm) had an average density of 5900 DNA molecules of which 700–900 molecules were well separated and picked for analysis. The DNA-Atto 488 signal was bleached in order for this channel to be re-used for Pol IIIα-Atto 488.
 
-## Data analysis
+### Data analysis
 
 The acquired movies were fed into the Imscroll analysis GUI developed by Jeff Gelles and Larry Friedman (Friedman and Gelles, 2015) to find the individual landing events and their dwell times. Histograms were plotted in Igor Pro and the data was fitted with an one-parameter exponential using a bin size ~1/2 the lifetime of the molecule. The decay constant τ represents the mean dwell time and the error in τ represents the error in the mean dwell time.

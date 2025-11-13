@@ -47,9 +47,21 @@ Here we dissect the transport pathway that regulates C. elegans RAB-28 localizat
 
 ## Results
 
-## RAB-28 transport to and within amphid and phasmid cilia is regulated by the BBSome, ARL-6 and prenyl-binding PDL-1
+### RAB-28 transport to and within amphid and phasmid cilia is regulated by the BBSome, ARL-6 and prenyl-binding PDL-1
 
 In amphid and phasmid neurons, we previously showed that the IFT motility and periciliary membrane (PCM) targeting of GFP-tagged RAB-28Q95L, a putative GTP-preferring and active form of the G-protein, is dependent on the BBSome component bbs-8 (Jensen et al., 2016). To further establish the role of the BBSome in RAB-28 ciliary localization and transport we assessed GFP-RAB-28Q95L in bbs-5(gk507) null mutant cilia. We also assessed GFP-RAB-28Q95L localization in a null mutant of arl-6, which regulates membrane-targeting of the BBSome in mammalian cells (Jin et al., 2010). We found that GFP-RAB-28Q95L mislocalization in the amphid and phasmid cilia of bbs-5(gk507) worms is indistinguishable from bbs-8(nx77) mutants; GFP signals are diffused throughout the neurons, with no detectable PCM enrichment or IFT movement (Figure 1, enhanced contrast images and expressivity shown in Figure 1—figure supplement 1A and C). By contrast, arl-6(ok3472) mutants display a weaker phenotype, with modestly reduced levels of RAB-28 at the PCM and a diffuse dendritic localization (Figure 1). Also, in arl-6 phasmid cilia, the frequency of GFP-RAB-28Q95L- positive IFT trains is increased twofold (Figure 1—figure supplement 1B and Video 1). These data indicate that a complete and properly regulated BBSome is required for normal targeting and retention of RAB-28 to the PCM and that ARL-6 inhibits RAB-28 association with IFT trains, at least in amphid and phasmid neurons.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50580/elife-50580-fig1-v1.jpg)
+
+**Figure 1.:** Representative confocal z-projection images of amphid (head) and phasmid (tail) neurons from hermaphrodites of the indicated genotype expressing GFP::RAB-28Q95L. Anterior is to the left; all images taken at identical exposure settings. Traced outlines in bbs-5, bbs-8 and pdl-1;bbs-8 panels are derived from intensity-adjusted images (see Figure 1—figure supplement 1A). Insets; higher magnification images of phasmid cilia, with PCMC denoted by asterisks. Kymograph x-axis represents distance and y-axis time (scale bars; 5 s and 1 μm), and both retrograde and anterograde particle lines are shown in the kymograph schematics. Schematics on the right summarize the phenotypes observed in a pair of phasmid cilia. Bottom schematic shows proposed model for RAB-28 transport to amphid and phasmid channel neuronal cilia. ci: cilium; PQR: additional ciliated neuron in the tail that occasionally expresses the RAB-28 reporter.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50580/elife-50580-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative confocal z-projection images of amphid and phasmid neurons from worms of the indicated genotypes expressing GFP::RAB-28Q95L. Images are the same as those in Figure 1 except image intensity has been increased to visualize the mislocalized GFP signals. Insets show magnifications of phasmid cilia; asterisks indicate PCMC. Anterior is to the left. Scale bars; 10 μm. (B) Scatter plots showing the frequency of anterograde and retrograde GFP::RAB-28 IFT particles, in particles per second, as derived from kymographs taken from phasmid cilia of the indicated genotype expressing GFP::RAB-28Q95L. The frequency with which GFP-RAB28Q95L undergoes IFT is effectively doubled in the arl-6 background, but reduced to 7.8% (anterograde) and 16.4% (retrograde) of WT in the pdl-1; arl-6 background. Error bars show SEM; p-values calculated by one-way ANOVA with Tukey's multiple comparison test. Graphed data are from 22 WT, 21 arl-6 and 9 pdl-1;arl-6 kymographs. (C) Table summarizing the percentage of phasmid cilia with detectable IFT movement of GFP::RAB-28Q95L in the indicated mutants. (D) Table summarizing the percentage of CEM and RnB cilia with detectable IFT movement of GFP::RAB-28Q95L in the indicated mutants.
+
+![Video 1.](https://cdn.elifesciences.org/articles/50580/elife-50580-video1.mp4.jpg)
+
+**Video 1.:** Anterior is to the left. Movies are played at 5 frames per second. Scale bars; 2 μm. PCMC: periciliary membrane compartment.
 
 As RAB-28 is a prenylated protein, we investigated whether RAB-28 ciliary targeting requires the C. elegans orthologs of PDE6d (PDL-1) and ARL3 (ARL-3). We found that whilst the PCM localization of GFP-RAB-28Q95L remains intact, the reporter’s IFT motility is completely lost in pdl-1(gk157) and arl-3(1703) null mutants (Figure 1 and Figure 1—figure supplement 1C). An additional punctate localization was also detected for GFP-RAB-28Q95L in the phasmid cell bodies of pdl-1(gk157) mutants. Thus, like the BBSome, the lipidated protein shuttle PDL-1 is also required for RAB-28 association with IFT trains in amphid and phasmid neurons, although it is dispensable for RAB-28 targeting to the PCM of these cells.
 
@@ -57,33 +69,49 @@ To explore the genetic relationship between the BBSome, arl-6 and pdl-1, we asse
 
 Taken together, these data reveal a ciliary trafficking pathway in amphid and phasmid neurons whereby activated RAB-28 is initially targeted to the PCM by the BBSome, and to a lesser extent ARL-6, and subsequently solubilized by PDL-1 for loading onto IFT trains, a step inhibited by ARL-6 (summarized in Figure 1 schematic).
 
-## A modified BBSome-ARL-6-PDL-1 network targets RAB-28 to the periciliary membrane and cilia of extracellular vesicle-releasing neurons (EVNs)
+### A modified BBSome-ARL-6-PDL-1 network targets RAB-28 to the periciliary membrane and cilia of extracellular vesicle-releasing neurons (EVNs)
 
 Having identified a BBSome-PDL-1 ciliary targeting pathway for RAB-28 in amphid and phasmid channel neurons, we explored RAB-28 ciliary trafficking in extracellular vesicle-releasing neurons (EVNs) because: (i) we speculated previously that the cell non-autonomous roles of rab-28 in amphid neurons could be related to a ciliary extracellular vesicle (EV) pathway, and (ii) rab-28 expression is highly enriched in EVNs based on transcriptome analysis (Wang et al., 2015; Jensen et al., 2016). There are 27 classified EVNs in C. elegans that include six IL2 head neurons of males and hermaphrodites and twenty one male-specific neurons (four CEM head neurons; 16 RnB tail ray neurons; one HOB tail hook neuron) (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/50580/elife-50580-fig2-v1.jpg)
 
-**Figure 2.:** (A) Epifluorescence z-projections of the heads and tails of C. elegans males expressing rab-28p::sfGFP and klp-6p::tdTomato (EVN cilia-specific reporter). Arrows denote the CEM neurons. Brightfield images of male head and tail are also shown for clarity. Anterior is to the left. Scale bars; 5 μm. (B) Representative images of the male head and tail regions of the indicated genotypes expressing GFP::RAB-28Q95L in EVNs. Insets show higher magnification images of CEM (head) and RnB (numbered 1–9 in the tail) cilia. Asterisks indicate PCMC; white arrowheads indicate accumulated GFP::RAB-28Q95L in the distal region of CEM and RnB cilia. Anterior is to the left. Scale bars; 5 μm. (C) Scatter plots of GFP::RAB-28 IFT particle frequency in CEM and RnB male cilia. Error bars show SEM. Data are from 26 worms. (D) Schematic of proposed model for RAB-28 transport to EVN cilia. Scale bars; 10 μm. PCMC: periciliary membrane compartment.Figure 2—source data 1.Figure 2C.
+**Figure 2.:** (A) Epifluorescence z-projections of the heads and tails of C. elegans males expressing rab-28p::sfGFP and klp-6p::tdTomato (EVN cilia-specific reporter). Arrows denote the CEM neurons. Brightfield images of male head and tail are also shown for clarity. Anterior is to the left. Scale bars; 5 μm. (B) Representative images of the male head and tail regions of the indicated genotypes expressing GFP::RAB-28Q95L in EVNs. Insets show higher magnification images of CEM (head) and RnB (numbered 1–9 in the tail) cilia. Asterisks indicate PCMC; white arrowheads indicate accumulated GFP::RAB-28Q95L in the distal region of CEM and RnB cilia. Anterior is to the left. Scale bars; 5 μm. (C) Scatter plots of GFP::RAB-28 IFT particle frequency in CEM and RnB male cilia. Error bars show SEM. Data are from 26 worms. (D) Schematic of proposed model for RAB-28 transport to EVN cilia. Scale bars; 10 μm. PCMC: periciliary membrane compartment.
 
 To confirm that rab-28 is expressed in EVNs, we examined transgenic male animals co-expressing the EVN reporter klp-6p::tdTomato (Morsci and Barr, 2011) and a GFP reporter under the control of rab-28 5’UTR (promoter) sequence (rab-28p::sfGFP). rab-28 is expressed in the IL2 neurons present in both males and hermaphrodites, as well as all 21 male-specific EVNs (Figure 2A). Next we explored RAB-28 subcellular localization in male-specific EVNs using our GFP::RAB-28Q95L reporter. Like amphid and phasmid channel neurons, RAB-28 is enriched at the PCM of CEM and RnB neurons (Figure 2B). However, unlike amphid and phasmid cells, a pool of RAB-28 also occurs within the distal ends of the CEM and ray RnB cilia (see arrowheads in Figure 2B). Moving RAB-28-positive IFT particles were rarely detected in CEM and RnB cilia (Figure 2C and Video 2), consistent with our previous report showing that IFT in CEM cilia is less frequent than in amphid cilia (Morsci and Barr, 2011). Interestingly, almost all detectable RAB-28-positive IFT trains in male EVN cilia move in the retrograde direction (Figure 2C). We did not observe RAB-28 in environmentally-released EVs, indicating that RAB-28 is not an EV cargo.
+
+![Video 2.](https://cdn.elifesciences.org/articles/50580/elife-50580-video2.mp4.jpg)
+
+**Video 2.:** A RAB-28-positive IFT particle can be seen in the bottom CEM and RnB cilia. Higher frequency IFT movement of RAB-28 is evident from the amphid cilia. PCMCs are marked by asterisks. Movies are played at 6 fps. Anterior is to the left. Scale bars; 2 μm.
 
 To investigate the RAB-28 ciliary targeting pathway in EVNs, we expressed the GFP::RAB-28Q95L reporter in him-5(e1490)-containing (induces high incidence of male progeny) mutants of the BBSome (bbs-5, bbs-8), arl-6 and pdl-1. In EVN cilia, GFP::RAB-28Q95L PCM localization was absent in bbs-5(gk507) and bbs-8(nx77) males, whilst reduced in arl-6(ok3472) and pdl-1(gk157) males (Figure 2B), similar to phenotypes observed in the amphid and phasmid channel neuronal cilia (Figure 2B). Also, the distal pool of RAB-28 in CEM and RnB cilia was reduced or absent in all of these mutants (Figure 2B). Like in amphid and phasmid neurons, IFT movement of RAB-28Q95L was also absent in bbs-5(gk507), bbs-8(nx77) and pdl-1(gk157) mutant EVN cilia. Surprisingly, RAB-28Q95L IFT movement was also not detectable in the EVN cilia of arl-6(ok3472) males, which is in striking contrast to the increased frequency of RAB-28-positive IFT trains in amphid and phasmid neurons (Figure 1—figure supplement 1C). Analysis of pdl-1(gk157);arl-6(ok3472) double mutant EVNs revealed that GFP::RAB-28Q95L is diffusely localized in the cytoplasm, with no PCM enrichment (Figure 2B). Thus, pdl-1 and arl-6 demonstrate an additive genetic relationship in targeting RAB-28 to EVN cilia, which is in contrast to that of amphid and phasmid neurons where the relationship is suppressive.
 
 Together, these data reveal that the BBSome/ARL-6/PDL-1 network that regulates RAB-28 localization and IFT behavior in amphid and phasmid neurons is also functioning in EVNs. Although similar, there are differences in how the network is deployed in these different cell types. In amphid and phasmid neurons, GTP-bound RAB-28 is enriched at the PCM and undergoes continuous IFT, which is promoted by PDL-1 and inhibited by ARL-6 (summarized in Figure 1 model). In EVNs, the PCM is also a site of RAB-28Q95L enrichment along with an additional RAB-28Q95L pool in the distal cilium. However, RAB-28 IFT events are infrequent in this cell type and positively regulated by ARL-6 (summarized in Figure 2D model).
 
-## C. elegans BBS gene mutants phenocopy the amphid sensory organ defects of rab-28 mutants
+### C. elegans BBS gene mutants phenocopy the amphid sensory organ defects of rab-28 mutants
 
 The identification of ARL-6-BBSome-PDL-1 ciliary targeting pathways for RAB-28 prompted us to investigate possible functional relationships between RAB-28 and its trafficking machinery. The amphid sensory organ (or sensillum) contains 10 rod-like cilia (from 8 neurons) located in an environmentally-exposed pore, formed by the dendrites and ciliary axonemes punching through surrounding amphid sheath and socket glial cell processes (Ward et al., 1975; Doroquez et al., 2014). Previously we showed that RAB-28 disruption via overexpression of GTP or GDP-preferring RAB-28 variants causes cell non-autonomous defects in amphid sensory compartment size and the surrounding sheath cell (Jensen et al., 2016). To investigate if the RAB-28 ciliary trafficking machinery also serves roles in amphid sensory compartment size and sheath regulation we performed TEM on chemically-fixed BBSome gene and arl-6(ok3472) mutant hermaphrodites. We found that bbs-5(gk507) and bbs-8(nx77) mutant hermaphrodites abnormally accumulate electron dense matrix filled vesicles in the sheath cell process similar to RAB-28T26N-overexpressing worms, although sometimes at higher levels (Figure 3A). Additionally, much like hermaphrodites overexpressing RAB-28Q95L (GTP-preferring) (Jensen et al., 2016), bbs-5(gk507) and bbs-8(nx77) mutant hermaphrodites consistently exhibit highly distended amphid compartments,2–3 times the size of WT,although with much darker staining of the extracellular matrix (ECM) (Figure 3A,B). Also, at the level of the ciliary middle segments and transition zones, where the compartment is most enlarged, bbs-5(gk507) and bbs-8(nx77) mutant compartments each contain 11 ciliary axonemes, instead of the usual 10 (Figure 3B,C). A weaker phenotype was observed in the arl-6(ok3472) mutant; whilst there are electron dense deposits in the sheath cell at the ciliary middle segment, transition zone and PCMC levels of the amphid sensory organ, compartment size and ECM density are normal (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/50580/elife-50580-fig3-v1.jpg)
 
-**Figure 3.:** arl-6 mutant hermaphrodites display defects in amphid sensory organ structure and/or associated glia.(A) Transmission electron microscopy (TEM) images showing the amphid channels of the indicated genotype in cross section, at the positions of ciliary distal segments (DS) and middle segments (MS)/transition zones (TZ). Arrows point to matrix-filled vesicles (mfv) within the cytoplasm of the sheath glial cell that surrounds the amphid cilia. The extracellular matrix-filled amphid compartment volume is also highlighted. Scale bars; 1 μm (all panels). n = 4 hermaphrodites for WT, n = 1 hermaphrodite for arl-6, bbs-5 and bbs-8 (two amphid organs imaged per hermaphrodite). (B) TEM images of longitudinal sections through the amphid cilia of WT and bbs-8 mutant worms, highlighting the expanded compartment volume and accumulated mfv in the sheath cell (arrows). N = 2 hermaphrodites imaged per genotype, with two amphid organs imaged per hermaphrodite. Question marks denote densities for which identification as either an mfv or an expanded pore region is ambiguous. Scale bars; 1 μm. (C) Cartoon representations of amphid organ ultrastructure in WT and BBSome mutant hermaphrodites, in longitudinal and cross section. Only three cilia are shown in the longitudinal schematics for simplicity.
+**Figure 3.:** (A) Transmission electron microscopy (TEM) images showing the amphid channels of the indicated genotype in cross section, at the positions of ciliary distal segments (DS) and middle segments (MS)/transition zones (TZ). Arrows point to matrix-filled vesicles (mfv) within the cytoplasm of the sheath glial cell that surrounds the amphid cilia. The extracellular matrix-filled amphid compartment volume is also highlighted. Scale bars; 1 μm (all panels). n = 4 hermaphrodites for WT, n = 1 hermaphrodite for arl-6, bbs-5 and bbs-8 (two amphid organs imaged per hermaphrodite). (B) TEM images of longitudinal sections through the amphid cilia of WT and bbs-8 mutant worms, highlighting the expanded compartment volume and accumulated mfv in the sheath cell (arrows). N = 2 hermaphrodites imaged per genotype, with two amphid organs imaged per hermaphrodite. Question marks denote densities for which identification as either an mfv or an expanded pore region is ambiguous. Scale bars; 1 μm. (C) Cartoon representations of amphid organ ultrastructure in WT and BBSome mutant hermaphrodites, in longitudinal and cross section. Only three cilia are shown in the longitudinal schematics for simplicity.
 
 Together, these data show that disruption of the BBSome, or ARL-6 to a lesser extent, phenocopies the amphid sensory organ and sheath cell defects observed in rab-28-disrupted worms (overexpressing RAB-28T26N or RAB-28Q95L). As with rab-28, C. elegans BBS genes are expressed exclusively in ciliated neurons (Ansley et al., 2003; Fan et al., 2004), indicating that their effects on the amphid sheath cell are also likely due to cell non-autonomous functions. Thus, in the amphids, the BBSome, ARL-6 and RAB-28 function together in a common cell non-autonomous pathway that regulates sensory organ size.
 
-## RAB-28, BBS-8 and ARL-6 negatively regulate EV shedding
+### RAB-28, BBS-8 and ARL-6 negatively regulate EV shedding
 
 To directly investigate a role for RAB-28 and its transport machinery in EV regulation, we first examined the localization of fluorescent protein-tagged EV cargo in rab-28 mutants. We used two deletion alleles of rab-28, the previously studied gk1040 null allele (998 bp deletion) (Jensen et al., 2016) and the tm2636 allele, which is a 147 bp deletion that is expected to affect nucleotide binding and thus, disrupt RAB-28 protein function (Figure 4A and Figure 4—figure supplement 1). PKD-2 is a TRP polycystin-2 expressed in male-specific EVNs, including the CEM neurons, and localizes to cilia and ciliary EVs (Barr et al., 2001; Wang et al., 2014a). In control males expressing a rescuing PKD-2::GFP transgene, PKD-2 is observed at the PCMC and ciliary tip of CEM neurons, and within EVs that are shed into the cephalic sensory organ lumen and environmentally released outside of the male (Figure 4A–C). Note that we previously showed that PKD-2::GFP localization is indistinguishable from endogenous PKD-2 localization measured by anti-PKD-2 antibody staining (Barr et al., 2001; Maguire et al., 2015). In rab-28(tm2636) mutant males, total PKD-2::GFP levels at the CEM ciliary region from the PCMC to the tip are similar to control (Figure 4D). However, fluorescence intensity measurement analyses revealed a subtle yet consistent change in the pattern of PKD-2::GFP distribution in rab-28(tm2636) males indicating a ciliary localization defective (Cil) phenotype. Specifically, unlike control animals where PKD-2::GFP is most intense at the PCMC region of the CEM cilium, rab-28(tm2636) mutants display abnormally high PKD-2::GFP levels at more distal parts of the CEM cilium region (Figure 4B,C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50580/elife-50580-fig4-v1.jpg)
+
+**Figure 4.:** (A) Left- schematic showing the location of the deleted regions in the gk1040 and tm2636 mutant alleles of rab-28. Right- cartoon modified from Bae et al. (2006) depicting the morphology of the CEM neurons of C. elegans. PCMC; periciliary membrane compartment. (B, F) Fluorescence micrographs of CEM cilia of control and rab-28(tm2636) males expressing PKD-2::GFP or CIL-7::GFP. Dotted white boxes mark one CEM cilium (ci), including the PCMC (periciliary membrane compartment) at the base. Scale bars; 5 μm. (C, G) Plot profiles of PKD-2::GFP and CIL-7::GFP intensity across different points along the cilium in control and rab-28(tm2636) adult males. Traces run from the ciliary tip and posterior towards the PCMC. Each data point represents the average GFP intensity at an individual point on several cilia in many animals of each genotype. rab-28(tm2636) males (n = 57 cilia from 36 males) accumulate more PKD-2 anterior to the site where PKD-2 accumulation is greatest in control males (n = 46 cilia from 32 males). rab-28(tm2636) males (n = 32 cilia from 18 males) accumulate more CIL-7 along the length of the cilium compared to controls (n = 48 cilia from 34 males). (D, H) Bar charts depicting mean PKD-2::GFP and CIL-7::GFP intensity along the cilium length of control and rab-28(tm2636) adult males. Error bars depict SEM. p values calculated by a Mann-Whitney test. For control, n = 40 (D) and 47 (H); for the rab-28 mutant, n = 50 (D) and n = 32 (H) cilia. Data is from three separate experiments. (E, I) Scatter plots depicting the number of PKD-2::GFP- and CIL-7::GFP-positive EVs surrounding the male head per animal between control and rab-28(tm2636). Horizontal line depicts the mean. Error bars depict SEM. p values calculated by a Mann-Whitney test. For control, n = 47 (E) and n = 46 (I) males; for the rab-28 mutant, n = 48 (E) and n = 47 (I) males. (J) Fluorescence images of CIL-7::GFP in the male heads of the indicated genotypes. Scale bars; 5 μm. (K, L) Bar charts depicting the ratio of CIL-7::GFP intensity between the ciliary and cell body regions in the indicated genotypes. Error bars show SEM. p values in K determined by Mann-Whitney test. n = 21 males for both genotypes in K and n = 27 males for all genotypes in L. Letters above each dataset in L indicate results of statistical analysis; data sets that do not share a common letter are significantly different at p<0.0005 (Kruskal–Wallis test with Dunn’s post-hoc correction). (M, N) Scatter plots depicting the number of CIL-7::GFP-labeled EVs released from the indicated genotypes. Error bars depict SEM. p values determined by a Mann-Whitney test (M) or Kruskal-Wallis test with Dunn’s multiple comparisons (N). n = 34 (M) and n = 31 (N) males.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50580/elife-50580-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Top schematic shows the location of the deleted region in the tm2636 mutant allele and the location of the primer pairs used to amplify full length cDNA sequence that was sequenced using the sequencing primer (seqF). Sequences show a portion of the sequenced cDNA product amplified from control and rab-28(tm2636) mRNA. Nucleotides marked in red in control indicate the region deleted in tm2636, flanked by nucleotides in bold. tm2636 lacks the deleted sequence but makes a cDNA indicating the deletion mutation is not a null. Boxed region contains an alignment of the putative translation of sequenced cDNA products from control and rab-28(tm2636). The rab-28(tm2636) protein product is expected to lack 11 amino acids that includes a lysine in the G5 box important for nucleotide binding.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50580/elife-50580-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Fluorescence micrographs of control and rab-28(gk1040) adult males expressing CIL-7::GFP. Close-ups of the male heads are shown on the left. Dotted white boxes mark one cilium. White arrowheads in insets mark PCMC and cilium (ci). In rab-28(gk1040), more CIL-7 is seen along the cilium. Scale bar; 10 μm. (B) Bar chart depicting the ratio of CIL-7::GFP intensity between the cilia and cell bodies in control and rab-28(gk1040). Similar to rab-28(tm2636), rab-28(gk1040) males also accumulate CIL-7::GFP along the cilium. Error bars depict SEM. p value determined by Mann-Whitney test. N = 27 animals for both genotypes. (C) Scatter plots depicting the number of CIL-7::GFP EVs surrounding the male head per animal between control and rab-28(gk1040). Error bars depict SEM. p value determined by Mann-Whitney test. N = 31 animals for both genotypes.
 
 Cil defects could arise due to defects in PKD-2 trafficking to cilia or in PKD-2-labeled EV biogenesis, cilia base EV shedding into lumens, or ciliary EV release into the surrounding media (Wang et al., 2014a; Maguire et al., 2015; Silva et al., 2017; O'Hagan et al., 2017; Bae et al., 2006). Since the abnormal PKD-2::GFP accumulation at more distal regions of the rab-28(tm2636) cephalic sensory organ appears to extend beyond that predicted by sole localization to the relatively narrow CEM cilium, we suspected that this excess GFP signal derives from abnormally high levels of PKD-2::GFP-labeled EVs in the cephalic lumen. To determine if rab-28 regulates environmental EV release similar to IFT and tubulin code regulators (Wang et al., 2014a; Maguire et al., 2015; Silva et al., 2017; O'Hagan et al., 2017; Bae et al., 2006), we compared the number of PKD-2::GFP-labeled EVs in mounting media surrounding control and rab-28(tm2636) males. We found that control and rab-28(tm2636) males release similar numbers of PKD-2::GFP-labeled EVs, ruling out a function for RAB-28 in environmental EV release of PKD-2 and suggesting a possible defect whereby EV shedding into the sensory organ lumen is abnormally upregulated (Figure 4E).
 
@@ -93,29 +121,49 @@ Finally, we examined the localization of CIL-7::GFP in RAB-28 transport regulato
 
 Together, these data indicate that RAB-28, BBS-8 and ARL-6, but not PDL-1, regulate the localization and levels of EV markers in the ciliated sensory organs. However, they do not regulate the release of EVs from the sensory organs into the external environment of the worm.
 
-## RAB-28 and BBS-8 negatively regulate EV ciliary base shedding and control EV characteristics in the cephalic sensory organ
+### RAB-28 and BBS-8 negatively regulate EV ciliary base shedding and control EV characteristics in the cephalic sensory organ
 
 The accumulation of EV cargo markers in the ciliary region of rab-28 and BBSome gene mutants suggests defects in ciliary EV biogenesis and shedding into the lumens of sensory organs. To investigate this possibility directly, we examined the ultrastructure of the four cephalic sensory organs in males cryofixed via high pressure freezing (HPF) to optimally preserve EVs. Each organ contains a single cilium from the CEM and CEP neurons and is environmentally exposed via a cuticular pore formed by the surrounding cephalic glial sheath and socket cells (Figure 5A). In wild-type males, EVs are observed in the extracellular space of the cephalic sensory organ (ie. the lumen) (Figure 5B,C and Video 3). These EVs are typically of low electron density and found predominantly in the proximal regions of the lumen, although a few occur in distal regions (Figure 5B; Wang et al., 2014a; Silva et al., 2017).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50580/elife-50580-fig5-v1.jpg)
+
+**Figure 5.:** (A) Cartoon of the ultrastructure of the cephalic sensory organ reproduced from Wang et al. (2014a). EVs (magenta spheres) are ‘shed’ from the PCMC/ciliary base into the lumen and ‘released’ into the environment outside of the worm. (B) Transmission electron micrographs of the cephalic lumen surrounding the distal region of CEM cilia. Black arrows point to the CEM and magenta arrows to EVs. rab-28(tm2636) accumulate significantly more EVs in the lumen distal to the singlet region of CEM compared to control males. Scale bars; 100 nm (C) Transmission electron micrographs of the cephalic organ at the level of the CEM cilium transition zone. Scale bars; 100 nm. A subset of the rab-28(tm2636) animals accumulate EVs in the cephalic lumen surrounding the TZ. (D) TEM cross sections of the proximal and distal regions for the cephalic lumen of bbs-8 mutant males. Black arrows point to the CEM cilium. Ectopic EVs (magenta arrows) are observed at distal and proximal regions of the lumen. Matrix filled vesicles (MFVs) in cephalic sheath are marked by yellow arrowheads. Scale bar; 200 nm. (E) Cartoon depictions of the lumen surrounding the cilia in the male cephalic sensillum in control, rab-28(tm2636), and bbs-8 mutants. Color scheme is the same as the cartoon in (A). Brackets enclose the cephalic sensory organ pore region. rab-28 mutant males accumulate an excess of EVs (labeled by magenta spheres and pointed to by arrows) in the lumen surrounding the more distal portion of the CEM axoneme whereas bbs-8 mutant males accumulate excessive EVs at all levels of the cephalic lumen. rab-28 and bbs-8 mutants also have an enlarged cephalic pore/opening of the sensory organ.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50580/elife-50580-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, E) Cartoon of the ultrastructure of the cephalic sensory organ reproduced from Wang et al. (2014a). Color scheme is same as that in Figure 5. The distal and proximal cephalic lumens (A) and PCMC (E) are marked. (B, C, F) Scatter plots showing the mean number of EVs in the distal (B), proximal (surrounding the TZ region of the CEM cilium) (C), and PCMC (F) regions of the cephalic lumen in control (him-5(e1490)) and rab-28(tm2636) mutant males. Error bars depict SEM. p values determined by unpaired t-tests with Welch’s correction. The rab-28 mutant accumulates significantly more EVs in the cephalic lumen distal to the singlet region of the CEM cilium (B); in a subset of animals, EVs accumulate in regions surrounding the CEM cilium TZ (C) and PCMC (F). Numbers in brackets under genotypes represent the number of cilia. All measurements are from at least 2 animals. Error bars depict SEM. p values calculated by unpaired t-test with Welch’s correction. The variances for the data in panel C are significantly different as assessed by a F-test p=0.0098. (D) TEM of control CEM ciliary tip (left) and slice view of an electron tomogram of the rab-28(tm2636) CEM ciliary tip (right). Arrows point to the CEM ciliary tips, its neighboring CEP cilium, the cuticle overlying the CEM cilium, and the nearby OLQ cilium. Note that the CEM ciliary tip is open and exposed to the environment in both genotypes. Scale bar is 200 nm. (E) TEM of control (him-5) and rab-28(tm2636); him-5 cephalic lumens at the level of the CEM cilium PCMC. White arrows point to the CEM neurons. A subset of rab-28 sensory organs accumulate more EVs (magenta arrowheads) in the cephalic lumen. Scale bar is 100 nm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/50580/elife-50580-video3.mp4.jpg)
+
+**Video 3.:** Models depict the CEM cilium (gold), and EVs (magenta spheres). Dotted white line in movie shows position of the TZ. rab-28 mutants ectopically accumulate excess EVs in distal regions of the cephalic lumen.
 
 In rab-28(tm2636) male worms, the distal part of the cephalic lumen is enlarged and accumulates an excess of EVs. When compared with control counterparts, these rab-28 mutant EVs are smaller and more uniform in size, and sometimes more electron dense, possibly indicating a change in composition (Figure 5B, Figure 5—figure supplement 1B, Video 3). In proximal parts of the lumen, at the level of the CEP and CEM ciliary transition zones and PCMCs, we also observed increased incidence of electron dense EVs (Figure 5C and Figure 5—figure supplement 1C,E,F and Video 3). Interestingly, we noticed a consistent increase in EVs in the lumens surrounding the TZs of two of the four cephalic sensory organs. There was no bias for EV accumulation in any one of the four specific organs (ie. left/right, dorsal/ventral). Thus, RAB-28 loss disrupts the number and nature of EVs in the lumens of cephalic sensory organs. Notably, electron tomographic analysis revealed that the cephalic sensory organ and CEM ciliary tip in the rab-28(tm2636) mutant retains normal exposure to the environment, indicating that pore blockage or a ciliogenesis defect is not the cause of EV accumulation in the distal lumen (Figure 5—figure supplement 1D). Also, rab-28(tm2636) worms retain the normal CEM ciliary axonemal AB tubule split that is important to EV release (Silva et al., 2017; O'Hagan et al., 2017). We conclude from these data that rab-28(tm2636) mutant males produce and shed excessive amounts of abnormally stained and sized EVs into the cephalic sensory organ. These data suggest that RAB-28 regulates EV cargo sorting and production (biogenesis) and that RAB-28 acts as a negative regulator of EV shedding without affecting environmental EV release. Our findings also show that RAB-28 negatively regulates cephalic sensory compartment size, in agreement with what we previously reported for RAB-28 in the amphid organs (Jensen et al., 2016).
 
 In bbs-8(nx77) male worms, the cephalic lumen is distended and filled throughout (ie, proximal and distal regions) with abnormally large numbers of EVs (Figure 5D). Compared with rab-28(tm2636) worms, the accumulated EVs in bbs-8(nx77) mutant lumens are more numerous, and more varied in size. We also observed electron dense matrix filled vesicles within seventy five percent of bbs-8(nx77) mutant cephalic sheath glia (Figure 5D), matching the amphid sheath cell phenotype in these worms (Figure 3). Similar to rab-28(tm2636) mutants, the ultrastructure of bbs-8(nx77) mutant CEM cilia is grossly normal. Thus, like RAB-28, the BBSome also negatively regulates EV shedding in the cephalic organ and the size of the organ’s lumen. The differences in the severity of the EV phenotype in bbs-8(nx77) and rab-28(tm2636) mutants, and in the appearance of EVs that accumulate in both these worms, indicate a greater role for BBS-8 in EV regulation, possibly because the BBSome regulates the trafficking of multiple EV regulators and not just RAB-28.
 
-## BBS-8 but not RAB-28 suppresses EV shedding into the amphid sensory organ
+### BBS-8 but not RAB-28 suppresses EV shedding into the amphid sensory organ
 
 While analyzing EVs in the cephalic sensory organs of rab-28 and bbs-8 mutants, we were surprised to observe ectopic EVs in the amphid sensory organ lumens of cryofixed male bbs-8 but not rab-28 mutants. We previously observed rare EVs in the region surrounding the distal-most segment of amphid channel cilia in males and have not observed release of FP-tagged EVs from amphid cilia of males or hermaphrodites (Wang et al., 2014a). No EVs were observed in high-resolution three-dimensional reconstruction of the hermaphrodite amphid sensory organ (Doroquez et al., 2014). Although we previously investigated amphid sensory organ ultrastructure in rab-28(gk1040) and bbs-8(nx77) mutant hermaphrodites (Jensen et al., 2016 and Figure 3), these experiments used chemically fixed samples, which may not allow ready visualization and assessment of EVs.
 
 As reported previously, few if any EVs are detectable in the amphid sensory organ lumen of control male animals (Figure 6A). A similar scenario occurs in rab-28(tm2636) male worms, although irregular shaped vesicular structures are occasionally observed (Figure 6A). In contrast, large accumulations of EVs are observed in the amphid lumen of male bbs-8(nx77) mutants (Figure 6A). These EVs are heterogeneous in size and appearance, and occur throughout the amphid sensory organ (proximal and distal regions) (Figure 6B). We conclude that BBS-8 suppresses abnormal amphid EV shedding in a RAB-28-independent manner.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/50580/elife-50580-fig6-v1.jpg)
+
+**Figure 6.:** (A) TEM cross sections of control, rab-28(tm2636), and bbs-8 amphid channel cilia at the middle segment (top) and at the transition zone (bottom). Yellow arrowheads in rab-28 indicate the occasional irregular structure observed in the amphid sensory organ. Magenta arrowheads in bbs-8 point to the ectopic EVs that accumulate in the lumen of amphid sensory organ. Scale bar; 200 nm. (B) High magnification images of EVs in the distal amphid channel (left) and in the proximal amphid channel (right) of bbs-8 mutants. Scale bar; 50 nm. (C) Cartoon representation of EV phenotypes in control and bbs-8 male amphid sensory organs.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50580/elife-50580-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Left- cartoon representation of the amphid sensory organ with the locations of the different ciliary segments marked. Right-Transmission electron micrographs of chemically frozen control (N2) adult hermaphrodites and cryofixed rab-28 adult males. The amphid sensory organs are outlined in yellow. Yellow arrows indicate matrix filled vesicles. n = 4 worms for WT, n = 2 worms for rab-28 (two amphid pores imaged per worm). Scale bar is 1 μm.
+
 ## Discussion
 
-## The BBSome, ARL-6 and PDE6D regulate the ciliary targeting of RAB-28
+### The BBSome, ARL-6 and PDE6D regulate the ciliary targeting of RAB-28
 
 We present here a network of ciliary trafficking pathways that cooperate to regulate C. elegans RAB-28 levels both at the periciliary membrane and within cilia. We show that BBS-5 promotes RAB-28 PCM and IFT association, thereby solidifying the requirement of the BBSome for regulating RAB-28 localization originally described (Jensen et al., 2016). The ortholog of the mammalian BBSome regulator, ARL-6, also maintains normal RAB-28 PCM levels, albeit not to the same extent as the BBSome. Furthermore, our results show that RAB-28 loading onto IFT trains is negatively regulated by ARL-6 and positively regulated by the orthologs of the PDE6d lipidated protein shuttle (PDL-1) and the ARL3 cargo release factor (ARL-3). Notably, bbs-8 is epistatic (masking) to pdl-1 for RAB-28 PCM localization, suggesting that the BBSome functions upstream of PDL-1 in the ciliary RAB-28 trafficking pathway. Our transport data here are in agreement with previous observations that the BBSome does not depend on RAB-28 for localization to phasmid cilia (Jensen et al., 2016). Taken together, our data suggest that the PCM is the primary membrane at which RAB-28 functions and that its levels at the PCM and ciliary membranes membrane are regulated by a combination of the BBSome, IFT, and lipidated protein transport machinery in a cell-specific manner. This latter observation is in concordance with, and expands upon, previous reports that Rab28 localization to the outer segments of mouse photoreceptors is disrupted in Arl3 and Pde6d mutants (Hanke-Gogokhia et al., 2016; Ying et al., 2018). Rab28 is one of only two proteins known to undergo both IFT and lipidated protein transport, the other being INPP5E (Fansa et al., 2016; Kösling et al., 2018). In both cases, PDE6D is required for initial ciliary import and IFT for subsequent transport within cilia and, presumably, exit. This may, therefore, be a general mechanism for the ciliary targeting and distribution of lipidated proteins. Aside from its functional roles in cilia, C. elegans RAB-28 could serve as a useful model for investigating the trafficking of ciliary lipidated proteins and crosstalk between IFT and lipidated protein transport.
 
 Intriguingly, we observe cell-type specific differences in RAB-28 localization and targeting. In male EVN cilia, a distinct pool of RAB-28 is present in the distal region, while the frequency of RAB-28Q95L IFT events is much lower than in phasmids. Whilst the requirement for the BBSome in regulating RAB-28 PCM association and IFT behavior is identical in all analyzed ciliary subtypes, PDL-1/PDE6D is partially required for maintaining RAB-28 PCM levels in EVN cilia but not amphid/phasmid cilia. In addition, an additive relationship is observed for pdl-1 and arl-6, in that RAB-28 is fully delocalized from the PCM region of pdl-1;arl-6 double mutant EVNs. These differences could indicate distinct relationships between PCM- and IFT-bound RAB-28 in both cell types, possibly as a result of the different RAB-28 functions in CEM versus amphid/phasmid channel cilia. Indeed, cell type-specific differences in RAB-28 ciliary trafficking correlate with distinctions in IFT and PCMC composition between amphid/phasmid and EVN cilia (Morsci and Barr, 2011; Scheidel et al., 2018).
 
-## RAB-28 and the BBSome negatively regulate EV ciliary base shedding in EVNs
+### RAB-28 and the BBSome negatively regulate EV ciliary base shedding in EVNs
 
 We previously proposed that ciliary RAB-28 may serve a role in EV biology (Wang et al., 2015; Jensen et al., 2016). We now confirm this hypothesis by showing that RAB-28 negatively regulates EV numbers in sensory organs containing EV-releasing neurons (EVNs). Notably, EV release from the cephalic sensory organ lumen to the animal’s external environment is not affected in rab-28 mutants, indicating that the accumulated EVs in the mutant sensory organs arise due to abnormalities in biogenesis and shedding at the ciliary base rather than environmental release. We also show that defective targeting of RAB-28 to EVN periciliary membranes, via mutation of the BBSome, elicits a similar phenotype. These findings indicate: (i) RAB-28 and the BBSome are negative regulators of EV shedding at the ciliary base, and (ii) the PCM may be the site of RAB-28’s EV-related function. Taken together, our data indicate the presence of a tuneable system of EV regulation in EVNs that consists of transport regulators that control the levels and localization of EV regulators in cells and cilia. Since the prevalence, pattern, and extent of the EV phenotype is more severe in BBSome vs RAB-28 deficient worms, our data also suggests that the BBSome targets additional EV regulators, beyond RAB-28, to EVN cilia.
 
@@ -123,25 +171,169 @@ In C. elegans, very little is known about EV ciliary base shedding versus enviro
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/50580/elife-50580-fig7-v1.jpg)
 
-**Figure 7.:** rab-28 and bbs-8 mutants, and EV release defective IFT and axoneme mutants (ccpp-1, ttll-11, klp-6, tba-6).Color scheme is the same as in Figure 5; magenta spheres represent shed EVs accumulating within sensory organs and EVs released into the environment, brown spheres represent secreted molecules within the sensory lumen. RAB-28 and BBS-8 act at the PCM to regulate EV ciliary base shedding into the lumen without affecting environmental EV release; IFT and ciliary transport components regulate EV release without abrogating EV ciliary base shedding, suggesting two sites and distinct mechanisms. Molecules released into the lumen - either ciliary EVs or secreted proteins - mediate signaling events between neurons and glia and regulate sensory organ size. EV shedding and release defective mutants both have sensory organ size defects as indicated by the expanded lumenal space in both mutant categories. RAB-28 localization in WT CEMs is indicated by purple highlighting.
+**Figure 7.:** Color scheme is the same as in Figure 5; magenta spheres represent shed EVs accumulating within sensory organs and EVs released into the environment, brown spheres represent secreted molecules within the sensory lumen. RAB-28 and BBS-8 act at the PCM to regulate EV ciliary base shedding into the lumen without affecting environmental EV release; IFT and ciliary transport components regulate EV release without abrogating EV ciliary base shedding, suggesting two sites and distinct mechanisms. Molecules released into the lumen - either ciliary EVs or secreted proteins - mediate signaling events between neurons and glia and regulate sensory organ size. EV shedding and release defective mutants both have sensory organ size defects as indicated by the expanded lumenal space in both mutant categories. RAB-28 localization in WT CEMs is indicated by purple highlighting.
 
 Although it is not known why EVs accumulate in rab-28 and BBSome gene mutants, this phenotype may arise from endosomal pathway disruption. Indeed, both Rab28 and the BBSome have previously been associated with endosomal sorting and degradative processes in Trypanosomes and C. elegans (Lumb et al., 2011; Xu et al., 2015; Langousis et al., 2016). In one model, defective ciliary protein turnover in Rab28 or BBSome-disrupted worms would lead to a compensatory mechanism whereby receptors are removed from the ciliary/periciliary membrane via EV shedding. This model is in agreement with the proposed mechanism for excess ciliary ectosome production in BBSome-depleted mammalian cells (Nager et al., 2017).
 
-## The non-EVN-containing amphid sensory organ is a model for pathogenic EV shedding
+### The non-EVN-containing amphid sensory organ is a model for pathogenic EV shedding
 
 Somewhat surprisingly, we also observed EV accumulations in the non-EVN-containing amphid sensory organs of bbs-8 mutants. We consider these EVs ectopic since we almost never observe EVs in control amphids, although we cannot exclude the occurrence of EVs at specific time points during animal development. Interestingly, ectopic EVs have been described in other cilia-related contexts, associated with a pathological phenotype. For example, in the mouse retina, photoreceptor disc formation requires the suppression of EV release by the disk-specific protein peripherin (Salinas et al., 2017). Thus, in peripherin-disrupted mice that display photoreceptor degeneration, the ectopic EVs that surround the photoreceptor can be considered as pathological. Also, pathological EVs (ectosomes) are reported to be released from the tips of IMCD3 cells depleted of the BBSome (Nager et al., 2017). Thus, like the photoreceptor and IMCD3 scenarios, where EV shedding is normally rare, the amphid sensory organ represents a simple model to identify mechanisms that regulate the formation of ectopic and pathological EVs.
 
-## RAB-28 and the BBSome regulate sensory organ morphogenesis possibly via a role in EV-mediated neuron-glia communication
+### RAB-28 and the BBSome regulate sensory organ morphogenesis possibly via a role in EV-mediated neuron-glia communication
 
 A particularly striking observation from this study is that the BBSome and RAB-28 regulate sensory organ morphogenesis in addition to EV shedding. Specifically, bbs-8 and rab-28 mutants display expanded sensory organ lumens and abnormally large deposits of dense vesicular material in the sheath cytoplasm that surrounds the lumen . Such deposits have been previously observed in ciliary mutants (Perkins et al., 1986; Braunreiter et al., 2014; De Vore, 2018) and correspond to altered forms of matrix-filled vesicles (MFVs) that normally deliver membrane and ECM to the pore (Ward et al., 1975; Bacaj et al., 2008). Indeed, the size and composition of the amphid sensory organ is thought to be critically dependent on exocytic and endocytic pathways in the sheath cell that control the amount of matrix and membrane deposited at, and retrieved from, the lumen (Perens and Shaham, 2005; Singhvi and Shaham, 2019). Additionally, signaling from amphid cilia has been proposed to regulate the localization of glial factors such as DAF-6 and LIT-1 that regulate the size of the sensory compartment/sensory organ (Oikonomou et al., 2011). Given these observations, we propose that RAB-28 and the BBSome coordinate sensory organ morphogenesis via signaling events that mediate neuronal-glial interactions (Figure 7; Table 1).
 
+**Table 1.**
+ Table summarizing the amphid and cephalic sensory organ phenotypes of strains used in this study.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="6">Amphid sensory organ TEM phenotypes</td>
+    </tr>
+    <tr>
+      <td>Mutant</td>
+      <td>Sex</td>
+      <td>Sensory compartment size</td>
+      <td>Matrix filled vesicles in sheath</td>
+      <td>EVs in pore</td>
+      <td>Reference</td>
+    </tr>
+    <tr>
+      <td>rab-28(tm2636)</td>
+      <td>Male</td>
+      <td>Not enlarged</td>
+      <td>Yes</td>
+      <td>Few vesicles/odd shaped particles observed surrounding MS</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>rab-28(gk1040)</td>
+      <td>Hermaphrodite</td>
+      <td>Not enlarged</td>
+      <td>No</td>
+      <td>ND</td>
+      <td>Jensen et al., 2016</td>
+    </tr>
+    <tr>
+      <td>RAB-28Q95L</td>
+      <td>Hermaphrodite</td>
+      <td>Enlarged</td>
+      <td>No</td>
+      <td>ND</td>
+      <td>Jensen et al., 2016</td>
+    </tr>
+    <tr>
+      <td>RAB-28T49N</td>
+      <td>Hermaphrodite</td>
+      <td>Not enlarged</td>
+      <td>Yes</td>
+      <td>ND</td>
+      <td>Jensen et al., 2016</td>
+    </tr>
+    <tr>
+      <td>bbs-8</td>
+      <td>Male and hermaphrodite</td>
+      <td>Enlarged</td>
+      <td>Yes</td>
+      <td>Lots of EVs (in male)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>arl-6</td>
+      <td>Hermaphrodite</td>
+      <td>Not enlarged</td>
+      <td>Yes</td>
+      <td>ND</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td colspan="4">Male cephalic sensory organ TEM phenotypes</td>
+    </tr>
+    <tr>
+      <td>Reference</td>
+      <td>Mutant</td>
+      <td>Sensory organ size</td>
+      <td>EVs in pore</td>
+    </tr>
+    <tr>
+      <td>rab-28(tm2636)</td>
+      <td>Enlarged</td>
+      <td>Yes, especially at the distal regions</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>rab-28(gk1040)</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>RAB-28Q95L</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>RAB-28T49N</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>bbs-8</td>
+      <td>Enlarged</td>
+      <td>Yes, surrounding all segments</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>arl-6</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="5">Other phenotypes</td>
+    </tr>
+    <tr>
+      <td>Phenotype</td>
+      <td>rab-28(tm2636)</td>
+      <td>rab-28(gk1040)</td>
+      <td>arl-6</td>
+      <td>bbs-8</td>
+    </tr>
+    <tr>
+      <td>PKD-2 localization in CEMs</td>
+      <td>Mislocalized</td>
+      <td>Normal (Jensen et al., 2016)</td>
+      <td>ND</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>CIL-7 localization in CEMs</td>
+      <td>Mislocalized</td>
+      <td>Mislocalized</td>
+      <td>Mislocalized</td>
+      <td>Mislocalized</td>
+    </tr>
+    <tr>
+      <td>Environmental release of EVs from heads</td>
+      <td>Normal</td>
+      <td>Normal</td>
+      <td>Normal</td>
+      <td>Normal</td>
+    </tr>
+  </tbody>
+</table>
+
 A tantalizing hypothesis is that RAB-28 and the BBSome fulfill this role via their EV regulatory function. Indeed, EV exchange between neurons and glia has been documented in vitro and in vivo (Lopez-Verrilli et al., 2013; Frühbeis et al., 2013; Fröhlich et al., 2014; Goncalves et al., 2015). However, whether the abnormal EV and sensory organ expansion phenotypes in rab-28 and bbs-8 mutants are directly linked is not entirely clear. Whilst expanded sensory organs may be due to aberrant neuronal EV-mediated signaling to glia, it could also arise from physical constraints imposed by the accumulated EVs. Alternatively, aberrant EV-independent signaling in rab-28 and bbs-8 mutants could lead to the downstream secretion of molecules that signal the organ to expand, with ectopic EVs as a consequence, rather than a cause, of the enlargement. An important question to answer, therefore, is whether the contents of the EVs observed in mutant sensory organs include molecules that signal to sheath cells. Depletion of such molecules would be predicted to suppress sensory organ expansion in rab-28 and BBSome gene mutants. Also, further work is needed to determine the origins, cargo contents, cellular targets, and functions of shed EVs to learn about the relationship between EV shedding and regulation of sensory organ compartments. Despite the gaps in our knowledge, C. elegans represents an excellent system for assessing the possible roles of EVs in regulating the formation of a simplified organ (ie. a sensory organ) in an intact animal.
 
-## EV shedding regulation and the pathogenesis of RAB28 and BBSome-associated retinal dystrophy
+### EV shedding regulation and the pathogenesis of RAB28 and BBSome-associated retinal dystrophy
 
 The association of RAB28 and BBSome gene disruption with cone-rod dystrophy (Roosing et al., 2013; Riveiro-Álvarez et al., 2015; Lee et al., 2017; Ying et al., 2018) and retinitis pigmentosa (Waters and Beales, 2011; Weihbrecht, 2017) raises the possibility that EV regulatory functions contribute to human retinal disease. As mentioned above, suppression of ciliary EV release is a crucial step in the formation of the discs of the outer segments (OS) of photoreceptors (Salinas et al., 2017). 10% of the OS undergoes a daily renewal process that involves disc shedding and phagocytosis by neighboring retinal pigmented epithelium (RPE) cells (Kevany and Palczewski, 2010). However, unlike disc formation, it is not known whether OS disc shedding and RPE uptake in the mature photoreceptor is related in some way to the mechanisms governing EV shedding and EV mediated signaling. Nonetheless, our observation of EV shedding defects in C. elegans rab-28 and bbs-8 gene mutants, together with reduced disc shedding and/or phagocytosis reported in Rab28 knockout mice (Ying et al., 2018), allows us to propose that OS disc and EV shedding processes may involve a shared Rab28 mechanism. However, the precise nature of this mechanism is unclear given that Rab28 positively regulates mouse OS shedding but negatively regulates C. elegans EV shedding. Furthermore, although Bbs8 mutant mice exhibit defects in OS morphogenesis, including disorganized discs and a shorter OS (Hsu et al., 2017), it remains to be determined if the BBSome functions in disc shedding. Molecules regulating ciliary EV biogenesis and shedding such as those identified in C. elegans sensory organs may provide insight into the molecular mechanisms underpinning OS formation and/or disc shedding.
 
-## Final conclusions and open questions
+### Final conclusions and open questions
 
 Our work adds Rab28 to a growing list of G-proteins involved in EV biogenesis and release that includes Arf6, Rab11, Rab22A, Rab27 and Rab35 (Muralidharan-Chari et al., 2009; Wehman et al., 2011; Ostrowski et al., 2010; Hsu et al., 2010; Wang et al., 2014b). While the majority of Rabs associated with EV biogenesis function in exosome formation and trafficking (Blanc and Vidal, 2018), ciliary EVs are generally thought to be ectosomes (Wood et al., 2013; Nager et al., 2017). Rab28 is only the second Rab family member shown to have a role in cilia-related EV biogenesis, the other being IFT27/Rabl4 (Nager et al., 2017). Neither is associated with EV generation in other contexts. Therefore, the cilium may use some unique EV-regulators, enabling the cilium to modulate its EV output independently of the rest of the plasma membrane.
 
@@ -153,13 +345,13 @@ Our studies raise several interesting questions: How and why is periciliary memb
 
 ## Materials and methods
 
-## C. elegans strains and maintenance
+### C. elegans strains and maintenance
 
 All strains were cultured according to standard protocols (Brenner, 1974). Briefly, worms were cultured on plates of nematode growth medium (NGM), seeded with a lawn of OP50 E. coli. Plates were incubated at either 20°C or 15°C to slow development. Reporter strains were crossed into mutant backgrounds and double mutants generated by standard crossing strategies. Mutations were followed by genotyping PCR.
 
-## Strain list
+### Strain list
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 For PKD-2::GFP, CIL-7::GFP, rab-28p::sfGFP and klp-6p::tdTomato (Figures 2 and 4), L4 males were isolated the previous day to provide virgin adults for imaging the next day. Males were placed on 4% agarose pads, and immobilized in 10 mM levamisole before imaging. For CIL-7::GFP imaging (except for comparison of control and bbs-8 mutants), males were placed in levamisole for 7–8 min prior to imaging. Epifluorescence imaging was performed using an upright Zeiss Axio Imager D1m. Images were acquired using a digital sCMOS camera (C11440-42U30, Hamamatsu Photonics). The microscope was controlled by Metamorph 7.1 to acquire Z stacks. All images were analyzed using Fiji (Schindelin et al., 2012).
 
@@ -171,7 +363,7 @@ Statistical analysis: Raw data was sorted and arranged using Microsoft Excel. St
 
 For analysis of RAB-28Q95L localization, hermaphrodite or male worms were placed on 5% agarose pads on glass slides and immobilized with 40 mM levamisole. L4 males were isolated the previous day to provide virgin males for imaging. Epifluorescence imaging was performed on an upright Zeiss AxioImager M1 microscope with a Retiga R6 CCD detector (Teledyne QImaging). Confocal imaging was performed on an inverted Nikon Eclipse Ti microscope with a Yokogawa spinning-disc unit (Andor Revolution) and images were acquired using an iXon Life 888 EMCCD detector (Andor Technology). All image analysis was performed using Fiji. For kymography, time-lapse (multi tiff) movies of IFT along cilia were taken at 250 ms exposure and 4 fps. Kymographs were generated from multi tiff files using the KymographClear ImageJ plugin (Mangeol et al., 2016). For RAB-28 localization experiments, at least three biological replicates were performed for each strain meaning that different individuals were imaged on different days; control animals were imaged alongside mutants for all experiments.
 
-## Electron microscopy
+### Electron microscopy
 
 High pressure freeze fixation (HPF) and freeze substitution for TEM on CEM cilia: control CB1490 (him-5), PT3189 (rab-28(tm2636); him-5) and OEB947 (bbs-8(nx77); him-5) strains were collected as L4 males the day before freeze fixation to provide virgin day 1 adult males on the day of fixation. Males were subjected to high‐pressure freeze fixation using a HPM10 high‐pressure freezing machine (Bal‐Tec, Switzerland). Males were slowly freeze substituted in 2% osmium tetroxide, 0.2% uranyl acetate and 2% water in acetone using RMC freeze substitution device (Boeckeler Instruments, Tucson, AZ, USA) (Weimer, 2006). Samples were infiltrated with Embed 812 resin over 3 days prior to embedding in blocks. Most males were collected in 70 nm‐thick plastic serial sections collected on copper slot grids and were post‐stained with 2% uranyl acetate in 70% methanol, followed by washing and incubating with aqueous lead citrate. TEM images were acquired on either a Philips CM10 transmission electron microscope operating at 80 kV or a JEOL JEM‐1400 transmission electron microscope operating at 120 kV.
 

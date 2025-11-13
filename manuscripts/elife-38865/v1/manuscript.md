@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.38865.001 More than half of long-term brain tumor survivors develop irreversible cognitive decline that severely affect their quality of life. However, there is no pre-clinical model that allows long-term assessment of cognition, and there is no treatment which ameliorates cognitive deficits in patients. Here, we report a novel glioma mouse model that offers manageable tumor growth and reliable assessment of cognitive functions in a post-treatment manner. Using this model, we found that fractionated whole-brain irradiation (fWBI), but not tumor growth, results in memory deficits. Transient inhibition of CSF-1R during fWBI prolongs survival of glioma-bearing mice and fully prevents fWBI-induced memory deficits. This result suggests that CSF-1R inhibition during radiotherapy can be explored as an approach to improve both survival and cognitive outcomes in patients who will receive fWBI. Taken together, the current study provides a proof of concept of a powerful tool to study radiation-induced cognitive deficits in glioma-bearing animals.
+More than half of long-term brain tumor survivors develop irreversible cognitive decline that severely affect their quality of life. However, there is no pre-clinical model that allows long-term assessment of cognition, and there is no treatment which ameliorates cognitive deficits in patients. Here, we report a novel glioma mouse model that offers manageable tumor growth and reliable assessment of cognitive functions in a post-treatment manner. Using this model, we found that fractionated whole-brain irradiation (fWBI), but not tumor growth, results in memory deficits. Transient inhibition of CSF-1R during fWBI prolongs survival of glioma-bearing mice and fully prevents fWBI-induced memory deficits. This result suggests that CSF-1R inhibition during radiotherapy can be explored as an approach to improve both survival and cognitive outcomes in patients who will receive fWBI. Taken together, the current study provides a proof of concept of a powerful tool to study radiation-induced cognitive deficits in glioma-bearing animals.
 
 ## Introduction
 
@@ -33,27 +33,59 @@ Cognitive studies in glioma animal models following radiation treatment have not
 
 ## Results and discussion
 
-## The GL261-DTR glioma model
+### The GL261-DTR glioma model
 
 To create a growth-manageable glioma model we stably transfected Diphtheria Toxin Receptor (DTR) into GL261-luc cell line (Figure 1—figure supplement 1). When injected into the mouse brain, the GL261-DTR cells formed tumors indistinguishable from non-DTR expression GL261 cells (data not shown). Six doses of DT injection at 1 µg/mouse/daily significantly prolonged the survival of tumor bearing mice (Figure 1A), and resulted in delayed increase of bioluminescence imaging (BLI) signals from tumor cells (Figure 1B). Survival was further improved when DT treatment was combined with fWBI (Figure 1A). This regimen (DT treatment and fWBI) resulted in a more dramatic decrease in BLI signals from tumor cells; and a new round of DT treatment (1 µg/mouse every other day) slowed tumor growth in four of the five mice with recurrent tumors (Figure 1C). These results demonstrate that the GL261-DTR glioma model has a predictable and manageable pattern of tumor growth in vivo, which allows delayed cognitive assessments.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38865/elife-38865-fig1-v1.jpg)
+
+**Figure 1.:** (A) Survival curve of mice injected with GL261-DTR cells and the response to DT or combined DT and fWBI treatments. DT treatment was given at 1 ug daily between Day 7 and 12, the combined DT and fWBI treatment group received extra DT treatment at 1 ug every other day between Day 31 and 45. **ptumor + DT = 0.0076, **ptumor + DT + fWBI=0.0033, Mantel-Cox Log-rank test compared to the tumor only group. (B) BLI of the tumor only and the tumor +DT groups. DT treatment resulted in delayed tumor growth. (C) BLI of mice received combined DT and fWBI treatment. Irradiation further delayed tumor growth, and extra DT treatment was able to delay growth of tumors when they recur. (tumor only no treatment control, DT and DT +fWBI treatments were randomly allocated among tumor bearing mice, N = 5 – 7 each treatment group, median survival is labeled next to the curve of each group, sample size was selected to minimize the number of animals used for this pilot experiment.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38865/elife-38865-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Treatment with 10 ng/ml DT killed all GL261-DTR cells in 48 hr.
+
 The medium survival of DT treated tumor bearing mice was extended to 31 days (Figure 1A). DT treatment was able to temporarily inhibit tumor growth, as evidenced by reduced BLI signals compared to the non-treated group (Figure 1B). No side effects beside moderate weight loss (<10%, data not shown) were observed in DT treated mice. In the DT + fWBI group, higher efficacy of tumor growth inhibition was achieved (Figure 1C). This paradigm further extended the medium survival to 46 days, more than 4 weeks after the completion of fWBI (Figure 1A), thus permitting assessment of cognitive function in these mice at a timepoint that matches our previously reported results using tumor-free models (Belarbi et al., 2013; Feng et al., 2016).
 
-## Tumor growth in the frontal cortex does not affect recognition memory
+### Tumor growth in the frontal cortex does not affect recognition memory
 
 We used the Novel Object Recognition (NOR) test to measure recognition memory performance, which partially depends on hippocampal function, in another group of GL261-DTR bearing mice between day 13 and day 16 after tumor implantation. Strikingly, no recognition memory deficits were detected in these mice despite of tumors in their brains (Figure 2A). A previous report demonstrated hippocampal dysfunction in mice with subcutaneous sarcoma (Yang et al., 2014). In their study, Yang et al demonstrated that there is increased plasma and hippocampal IL-6 concentrations in sarcoma bearing mice compared to tumor-free animals, as well as elevated plasma corticosterone levels. These changes in immune and endocrine systems induced neuroinflammation and were responsible for the observed cognitive deficits. It has been reported that GBM growth can lead to increased plasma IL-6 levels (Lamano et al., 2017). However, it is not known whether hippocampal IL-6 levels are also increased with GBM growing in the right frontal cortex. Due to the different strain, age and gender of mice used between the current study and the one reported by Yang et al, it is difficult to make an adequate comparison. It is worth noting that memory deficits are seen in brain tumor patients prior to treatments, but only when brain regions involved in memory functions are directly disrupted by glioma growth (van Kessel et al., 2017). Concordantly, in our GL261-DTR glioma model, the tumor growth in the right frontal cortex does not affect recognition memory.
 
-## CSF-1R inhibition during fWBI prevents recognition memory deficits in tumor bearing mice
+![Figure 2.](https://cdn.elifesciences.org/articles/38865/elife-38865-fig2-v1.jpg)
+
+**Figure 2.:** (A) No memory deficits were seen in GL261-DTR bearing mice at 16 days after tumor implantation. ns = not significant, ****p<0.0001, paired t-test. N = 5, error bars show mean ±SEM (B) Improved survival of GL261-DTR bearing mice with concurrent DT, fWBI and/or CSF-1R inhibitor treatment. Timeline of treatments and behavior tests are labeled on the X-axis. Novel Object Recognition (NOR) tests were performed between day 28 and 31, or day 46 and 49, for the tumor +DT group or all other groups, respectively. *ptumor + DT + fWBI=0.0178, *ptumor + DT + PLX = 0.0167, **ptumor + DT + PLX + fWBI = 0.0029, Mantel-Cox Log-rank test compared to the tumor +DT group, survival curves show combined results from two independent experiments, N = 11–15. (C) The results of NOR tests, recognition memory was impaired by fWBI, and CSF-1R inhibitor treatment during fWBI was able to prevent this impairment. The tumor +DT + fWBI group showed memory deficits, this was prevented by CSF-1R inhibitor treatment, combined results from two independent experiments, N = 8–12, ns = not significant, **ptumor + DT = 0.0011, ***ptumor + DT + PLX=0.0006, ***ptumor + DT + PLX + fWBI = 0.0001, paired t-test. All treatments were randomly allocated among tumor bearing animals. F = familiar object, N = novel object.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38865/elife-38865-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Combined DT and fWBI treatment further prolonged survival compared to no treatment (****p<0.0001) and each single treatments (****p<0.0001, *p=0.0178, compared to DT and fWBI treatments, respectively). (B) CSF-1R inhibitor (PLX5622) treatment did not significantly improve survival. No deficits in motor function or anxiety in GL261-DTR bearing mice. Ntumor only = 5, Ntumor+DT = 11, Ntumor+PLX = 5, Ntumor+fWBI = 5, Ntumor+PLX+fWBI=5, Ntumor+DT+fWBI=15, p values were calculated by comparing two curves using the Mantel-Cox test. (C) There was no difference among the groups in velocity of mice tested by the Open Field test (day 1 of NOR test). (D) There was no significant difference among the groups in time spent in the center of arena tested by the Open Field test (day 1 of NOR test). N = 5–12 each group. Results shown in Figures A and B are combined from three experiments. Results shown in Figure C and D are combined from two independent experiments.
+
+### CSF-1R inhibition during fWBI prevents recognition memory deficits in tumor bearing mice
 
 CSF-1R is expressed in microglia, peripheral monocytes/macrophages and tumor associated macrophages. Pharmacological inhibition of CSF-1R has shown advantages in preventing cranial irradiation-induced cognitive deficits in tumor-free models (Acharya et al., 2016; Feng et al., 2016), prolonging survival in glioma-bearing mice (Pyonteck et al., 2013), and delaying the recurrence of glioma after radiotherapy (Stafford et al., 2016). Next, we tested possible treatment interactions using single and combined treatments of DT, CSF-1R inhibitor and fWBI. Treatment with fWBI alone was able to improve survival after tumor implantation, but not to the extent of DT treatment alone, while combined DT and fWBI treatment resulted in better survival than either single treatment (Figure 2—figure supplement 1A). CSF-1R inhibitor treatment alone did not prolong survival of tumor bearing mice. With combined CSF-1R inhibitor and fWBI treatments, survival was significantly improved compared to inhibitor alone, but was not significantly different from fWBI alone (Figure 2—figure supplement 1B). Therefore, DT, but not CSF-1R inhibitor, acted as a radiosensitizer in our GL261-DTR model, which allowed us to extend survival of tumor bearing mice long enough for cognitive assessment. In light of these results, we tested the effects of CSF-1R inhibition on cognition in GL261-DTR bearing mice after DT and fWBI treatments. We found that DT +fWBI or DT +CSF-1R inhibitor treatment significantly improved survival in the GL261-DTR model (Figure 2B, blue and green lines). Combined DT, CSF-1R inhibitor and fWBI treatment did not improve survival time of tumor bearing mice (Figure 2B, black line). Most importantly, CSF-1R inhibitor treatment was able to prevent memory deficits induced by fWBI in tumor bearing mice (Figure 2C). There was no difference in velocity or time spent in the center of arena (Figure 2—figure supplement 1C and D) during the test trials, suggesting that no motor dysfunction or increase of anxiety was caused by tumor growth or treatments at the time of Novel Object Recognition (NOR) test. These results demonstrate for the first time that tumor-bearing mice are susceptible to fWBI-induced memory deficits, and temporary inhibition of CSF-1R during fWBI is sufficient to prevent radiation-induced deficits. Similar to the tumor-only group, animals in the tumor +DT group also showed no recognition memory deficits (Figure 2C), further demonstrating that glioma growth does not affect recognition memory.
 
-## CSF-1R inhibition reduces microglia activation after fWBI
+### CSF-1R inhibition reduces microglia activation after fWBI
 
 Increased CD11b expression level has been used as an indicator of microglia activation during CNS inflammation (Hoogland et al., 2015). To determine the activation status of microglia and their response to CSF-1R inhibitor treatment in the presence of brain tumors, we compared mean fluorescent intensity (MFI) of microglial CD11b using flow cytometry analysis 22–24 days after tumor transplantation (Figure 3—figure supplement 1). We found no significant change in microglial CD11b MFI after irradiation compared to non-irradiated mice. Conversely, CSF-1R inhibitor treatment resulted in significant reduction of CD11b MFI compared to untreated groups (Figure 3A). Immunofluorescent staining for Iba1, a macrophage specific marker, revealed that no morphological changes of hippocampal microglia were induced by irradiation (Figure 3D). However, there was a trend for an increase in the Iba1 stained area in the hippocampus, which was reveresed by CSF-1R inhibitor treatment (Figure 3B). Co-staining for microglia activation marker CD68 suggest that radiation induced a significant increase in activated microglia, which was significantly reduced in animals treated with CSF-1R inhibitor (Figure 3C). Consistent with the CD11b results, the immunohistochemistry data suggest that treatment with CSF-1R inhibitor reduced microglial reactivity in the hippocampus. Previous reports have demonstrated that cranial irradiation induces morphological changes that correlate with microglia activation, including increased Iba1 +and CD68+cell numbers and staining coverage (Chiang et al., 1993; Acharya et al., 2016). Taken together with the present results, this work confirmed that cranial irradiation induced microglia activation can be prevented by CSF-1R inhibitor mediated depletion in the presence of brain tumors.
 
-## CSF-1R inhibition alters myeloid cells composition in the contralateral brain of tumor bearing mice
+![Figure 3.](https://cdn.elifesciences.org/articles/38865/elife-38865-fig3-v1.jpg)
 
-fWBI-induced cognitive deficits has been shown to correlate with increased monocyte accumulation in the CNS (Morganti et al., 2014; Moravan et al., 2016). We next examined the myeloid composition (namely, resident microglia and peripherally derived macrophages) in the contralateral brains at 6–8 days after the completion of fWBI (see Figure 3—figure supplement 1 for experimental timeline). fWBI induced significant increase of peripherally derived monocytes in the contralateral brain hemisphere to the tumor (Figure 4B). Treatment with the CSF-1R inhibitor induced a partial depletion of microglia, in both irradiated and non-irradiated mice (Figure 4A) and prevented radiation-induced infiltration of peripherally derived monocytes (Figure 4B). These results are in line with our previous findings in a tumor-free radiation model (Morganti et al., 2014; Feng et al., 2016). However, in the ipsilateral hemisphere inflammatory monocyte numbers correlate with the size of tumors (Figure 4—figure supplement 1). Taken together, these results suggest that changes in contralateral myeloid cells are unaffected by the growth of tumors in the ipsilateral brain hemisphere.
+**Figure 3.:** (A) Plots of the CD11b mean fluorescent intensity of microglia in the contralateral hemisphere of tumor bearing mice. There was significant decrease of microglial CD11b MFI in CSF-1R inhibitor treated mice. there was significant CSF-1R treatment effect F(1,14) = 38.77, p<0.0001 with no significant fWBI effect or interaction. (B) Quantifications of Iba1 +signal covered area. two-way ANOVA revealed significant PLX5622 treatment effect, F(1,13) = 39.14, p<0.0001, no significant radiation effect F(1,13) = 0.01122, p=0.9173 and significant interaction between PLX5622 treatment and fWBI, F(1,13) = 4.793, p=0.0474. There was a trend of increase in the tumor +DT + fWBI group (p=0.3044), and significant reduction in the tumor +DT + PLX group (*p=0.0381) and the tumor +DT + PLX+fWBI group (**p=0.0017), compared to the tumor +DT group. (C) Quantifications of CD68 +signal covered area. Two-way ANOVA revealed significant CSF-1R inhibitor treatment effect, F(1,13) = 53.07, p<0.0001, no significant radiation effect F(1,13) = 3.559, p=0.0817, and significant interaction F(1,13) = 7.529, p=0.0167. (D) Representative images of Iba1 and CD68 staining, showing Iba1 staining in red, CD68 staining in white and DAPI in blue. Scale bar = 50 um. (A-C, Two-way ANOVA with Dunnett’s multiple comparisons test vs the tumor +DT group, ns = not significant, *p<0.05, **p<0.01. each dot represents value from one mouse (A) or the mean values of Iba1 and CD68 (B and C) staining quantification of 3 snapshots in the hippocampus, N = 4–5. Error bars show mean ±SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38865/elife-38865-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** BLI imaging during the week of fWBI treatment and timeline of treatments (related to Figures 3 and 4). All mice were euthanized between day 22 and 24.
+
+### CSF-1R inhibition alters myeloid cells composition in the contralateral brain of tumor bearing mice
+
+fWBI-induced cognitive deficits has been shown to correlate with increased monocyte accumulation in the CNS (Morganti et al., 2014; Moravan et al., 2016). We next examined the myeloid composition (namely, resident microglia and peripherally derived macrophages) in the contralateral brains at 6–8 days after the completion of fWBI (seeFigure 3—figure supplement 1 for experimental timeline). fWBI induced significant increase of peripherally derived monocytes in the contralateral brain hemisphere to the tumor (Figure 4B). Treatment with the CSF-1R inhibitor induced a partial depletion of microglia, in both irradiated and non-irradiated mice (Figure 4A) and prevented radiation-induced infiltration of peripherally derived monocytes (Figure 4B). These results are in line with our previous findings in a tumor-free radiation model (Morganti et al., 2014; Feng et al., 2016). However, in the ipsilateral hemisphere inflammatory monocyte numbers correlate with the size of tumors (Figure 4—figure supplement 1). Taken together, these results suggest that changes in contralateral myeloid cells are unaffected by the growth of tumors in the ipsilateral brain hemisphere.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/38865/elife-38865-fig4-v1.jpg)
+
+**Figure 4.:** (A) Plot of microglia (CD11b + CD45 lo) numbers in treated tumor bearing mice. There was significant CSF-1R inhibitor treatment effect (F(1,8) = 31.45, p=0.0005), but no significant radiation effect or interaction between these two treatments. Two-way ANOVA with Dunnett post-hoc comparisons against the tumor +DT group, ns = not significant, *p<0.05. (B) Plot of inflammatory monocyte (CD11b + CD45hiLy6Chi) numbers in treated tumor bearing mice. There was significant radiation effect (F(1,8) = 10.68, p=0.0114) and CSF-1R inhibitor treatment effect (F(1,8) = 23.49, p=0.0013), as well as significant interaction (F(1,8) = 5.52, p=0.0467) between these two treatments, two-way ANOVA with Dunnett post hoc comparisons against the tumor +DT group, ns = not significant, *p<0.05. Error bars show mean ±SEM values. Each dot represents cell count from a mouse, N = 4–5.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38865/elife-38865-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Plot of microglia numbers in tumor bearing mice. (B) Plot of inflammatory monocyte numbers. (C) Plot of BLI signals after single treatments. (D) Plot of correlation between BLI signal (X axis) and monocyte numbers in the ipsilateral brain (Y axis). N = 3–5 each group.
 
 Collectively, we report a novel high-grade glioma model with tumor removal followed by fWBI. The GL261-DTR model allows manageable tumor growth, prolonged survival and feasible assessment of cognition in a post-treatment manner. Using this model, we confirmed findings previously reported in tumor-free models, including increased monocyte accumulation in the CNS and elevated microglia activation. However, strikingly, we found that glioma growth in the frontal cortex does not affect recognition memory. On the contrary, it was the fWBI that induced recognition memory deficits in these tumor-bearing mice. To our knowledge, this report provides the first evidence that CSF-1R inhibition is able to prevent fWBI-induced cognitive deficits in tumor-bearing animals.
 
@@ -61,36 +93,144 @@ It is important to acknowledge that the cell line used for the GL261 model is dr
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus), C57BL/6J</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory, cat# 000664</td>
+      <td>cat # 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus), C57BL/6</td>
+      <td>GL261</td>
+      <td>NCI-Frederick DCTD tumor/cell line repository</td>
+      <td>Glioma 261</td>
+      <td>Mycoplasma negative</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>ATF5-DTR- GFP</td>
+      <td>PMID: 20495567</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF700- CD11b</td>
+      <td>BD Biosciences</td>
+      <td>cat# 557960</td>
+      <td>Flow Cyt: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV711- CD45</td>
+      <td>BD Biosciences</td>
+      <td>cat# 563709</td>
+      <td>Flow Cyt: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD68</td>
+      <td>Bio-Rad,</td>
+      <td>cat#: MCA1957</td>
+      <td>IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Iba1</td>
+      <td>Wako chemicals,</td>
+      <td>cat# 019–19741</td>
+      <td>IF: 1:100</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Neural Tissue Dissociation kit (P)</td>
+      <td>Miltenyi Biotech</td>
+      <td>cat# 130-092-628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CSF-1R inhibitor</td>
+      <td>Plexxikon Inc</td>
+      <td>PLX5622</td>
+      <td>300ppm in AIN-76A standard chow</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AIN-76A standard chow</td>
+      <td>Research Diets Inc</td>
+      <td>cat#: D10001i</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Percoll</td>
+      <td>Sigma</td>
+      <td>cat# P1644-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diphtheria toxin</td>
+      <td>Sigma</td>
+      <td>cat# D0564-1MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Ethovision XT</td>
+      <td>Noldus Information Technology</td>
+      <td>Version 11.5</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal experiments were conducted in compliance with protocols approved by the Institutional Animal Care and Use Committee at the University of California, San Francisco (UCSF), following the National Institutes of Health Guidelines for animal care. 11 weeks-old C57BL/6J male mice were purchased from the Jackson Laboratory, and housed in UCSF animal facility for one week before tumor transplantation.
 
-## Treatments
+### Treatments
 
-## CSF-1R inhibitor treatment
+#### CSF-1R inhibitor treatment
 
 Control and PLX5622 (300 ppm formulated in AIN-76A standard chow, Research Diets, Inc.) chows were provided by Plexxikon Inc (Berkeley, CA). Approximately 1.2 mg of PLX5622 was ingested by each mouse per day (calculation based on 4 g/mouse chow daily).
 
-## Diphtheria toxin treatment
+#### Diphtheria toxin treatment
 
 DT (Sigma-Aldrich) was dissolved in sterile saline at 10 µg/ml. 6 injections of 100 µl DT solution was given to each mouse by intraperitoneal injection every day between day 7 and day 12 (Figure 1), or every two days between day 7 and day 17 (Figures 2–4) after tumor implantation.
 
-## Radiation treatment
+#### Radiation treatment
 
 mice were anesthetized and received 10 Gy head-only irradiation in three fractions from a cesium-137 source as previously described (Feng et al., 2016).
 
-## Stable transfection of GL261-DTR cells and intracranial transplantation
+### Stable transfection of GL261-DTR cells and intracranial transplantation
 
 The GL261 cells were obtained from the NCI-Frederick DCTD tumor/cell line repository. Firefly luciferase reporter modification for bioluminescent imaging was done as previously described (Clark et al., 2016). Two micrograms of lineazed ATF5-DTR-GFP plasmid (Sheng et al., 2010) was transfected into GL261-luc cells in a 6-well plate using lipofectamine 2000 (Invitrogen) following manufacturer’s instructions. Medium supplemented with 200 ug/ml Zeocin (Gibco) was changed every two days to select positively transfected cells. GFP expressing GL261-DTR cells were sorted using a BD Aria III and washed with serum-free RPMI medium before injection. 250,000 cells were injected into the right frontal cortex at the coordinate Bregma, AP + 2 mm, ML +2 mm and DV −2 mm. DT treatment started at 7 days after tumor injection, at 1 µg/mouse/daily for 6 days (Figure 1) or at 1 µg/mouse every other day for six doses (Figures 2, 3 and 4).
 
-## Novel Object Recognition (NOR) test
+### Novel Object Recognition (NOR) test
 
 NOR test was performed during the dark cycle as previously described (Feng et al., 2016). Briefly, trials from the four-day test were recorded by an overhead camera and analyzed by an automatic video tracking system (EthoVision, Noldus). Animals with insufficient exploration (less than total of 3 s interacting with both objects) during training (day 3) or test (day 4) were excluded. Same object sets were used in NOR tests conducted at 13-16 days or 4 weeks tumor implantation (Figure 2AandFigure 2C,respectively), or 4 weeks after the completion of fWBI Figure 2C. Sample sizes (N > 8) were chosen according to our previous experiments where we can detect radiation effects on memory performance.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Mice were euthanized and perfused with ice-cold PBS. Brains were quickly removed and half hemispheres were placed in ice-cold HBSS. Brain samples were dissociated using the Neural Tissue Dissociation kit (P) according to the manufacturer’s instructions (Miltenyi Biotech). Dissociated cells were then resuspened in 30% Percoll (Sigma) solution diluted with RPMI medium (Gibco) and centrifuged at 800 g for 30 min at 4° C. Cell pellets were washed with RPMI medium and resuspended in FACS buffer (1 x DPBS with 2% FBS and 0.5% BSA fraction V) and blocked with mouse BD Fc block (5 µg/ml, purified rat anti-mouse CD16/CD32, BD Pharmingen) for 30 min on ice. Cells were then stained with fluorophore-conjugated antibodies (BV711-CD45, AF700-CD11b). Data were collected on an Aria III sorter (BD) and analyzed with Flowjo v10 (Tree Star Inc.).
 
-## Immunohistochemistry staining and imaging
+### Immunohistochemistry staining and imaging
 
 After perfusion, the other brain hemispheres were immediately put into 4% PFA at 4° C, fixed overnight and then switched into 30% sucrose solution for at least two days. Samples were sliced into 20 µm coronal sections and stained with rabbit anti-Iba1 (1:100, Wako Pure Chemicals) and rat anti-CD68 (1:200, BioRad) followed by incubation with AF-568 goat anti-rabbit and AF-647 goat anti-rat secondary antibodies (1:500, Life Technologies). DAPI was used for nuclear counterstaining. Hippocampal images were taken using a Zeiss Imager Z1 under a 20x objective lens. The area of Iba1 +and CD68+signals were measured in ImageJ.

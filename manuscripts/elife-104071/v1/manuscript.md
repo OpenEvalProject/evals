@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03j2ta742 Jindal School of Psychology and Counselling, O.P. Jindal Global University Haryana India
-2. https://ror.org/03j2ta742 Centre for Neurodiversity Studies, O.P. Jindal Global University Haryana India
+1. Jindal School of Psychology and Counselling, O.P. Jindal Global University Haryana India ([ROR:03j2ta742](https://ror.org/03j2ta742))
+2. Centre for Neurodiversity Studies, O.P. Jindal Global University Haryana India ([ROR:03j2ta742](https://ror.org/03j2ta742))
 
 † Corresponding author
 

@@ -20,13 +20,13 @@
 
 ### Affiliations
 
-1. https://ror.org/04p5ggc03 Laboratory of Genome Diversification & Integrity, Max Delbrück Center for Molecular Medicine in the Helmholtz Association Berlin Germany
-2. https://ror.org/046ak2485 Freie Universität Berlin Berlin Germany
-3. https://ror.org/016476m91 Institute of Medical Sciences, University of Aberdeen, Foresterhill Aberdeen United Kingdom
-4. https://ror.org/0420db125 Laboratory of Mass Spectrometry and Gaseous Ion Chemistry, The Rockefeller University New York United States
-5. https://ror.org/0493xsw21 Proteomics Platform, Max Delbrück Center for Molecular Medicine in the Helmholtz Association and Berlin Institute of Health Berlin Germany
-6. https://ror.org/00jjq6q61 Laboratory of Molecular Immunology, The Rockefeller University New York United States
-7. https://ror.org/021ft0n22 Charité-Universitätsmedizin Berlin Berlin Germany
+1. Laboratory of Genome Diversification & Integrity, Max Delbrück Center for Molecular Medicine in the Helmholtz Association Berlin Germany ([ROR:04p5ggc03](https://ror.org/04p5ggc03))
+2. Freie Universität Berlin Berlin Germany ([ROR:046ak2485](https://ror.org/046ak2485))
+3. Institute of Medical Sciences, University of Aberdeen, Foresterhill Aberdeen United Kingdom ([ROR:016476m91](https://ror.org/016476m91))
+4. Laboratory of Mass Spectrometry and Gaseous Ion Chemistry, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))
+5. Proteomics Platform, Max Delbrück Center for Molecular Medicine in the Helmholtz Association and Berlin Institute of Health Berlin Germany ([ROR:0493xsw21](https://ror.org/0493xsw21))
+6. Laboratory of Molecular Immunology, The Rockefeller University New York United States ([ROR:00jjq6q61](https://ror.org/00jjq6q61))
+7. Charité-Universitätsmedizin Berlin Berlin Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))
 
 † Corresponding author
 
@@ -50,13 +50,13 @@ Despite the multiple contributions of RIF1 in the regulation of DNA processing a
 
 ## Results
 
-## A conserved cluster of SQ sites in RIF1 intrinsically disordered region is phosphorylated in activated B cells
+### A conserved cluster of SQ sites in RIF1 intrinsically disordered region is phosphorylated in activated B cells
 
 RIF1 is a large protein of almost 2500 amino acids in mammalian cells (Figure 1—source data 1) with no known enzymatic activity. While information about RIF1 structural organization is limited, analyses of RIF1 homologs across species identified two motifs that are highly conserved from yeast to mammals: the N-terminal Huntingtin, Elongation factor 3, A subunit of protein phosphatase 2A, and Tor1 (HEAT) repeats, and the SILK-RVxF motif, whose sequence location shifted from the N-terminus to the C-terminal end during the evolution of unicellular to multicellular organisms (Figure 1A; Sreesankar et al., 2012; Xu et al., 2010). In vertebrates, RIF1 also exhibits a conserved C-terminal domain with a tripartite structure (Figure 1A; Xu et al., 2010). The region spanning between these N- and C-terminal motifs is poorly conserved and is characterized by a high degree of intrinsic disorder (Figure 1A). Additionally, RIF1 contains multiple serine-glutamine/threonine-glutamine (SQ/TQ) motifs, which are consensus sites for phosphorylation by the DNA damage response kinases ATM and ATR (Blackford and Jackson, 2017; Figure 1A, Figure 1—source data 2).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/75047/elife-75047-fig1-v1.jpg)
 
-**Figure 1.:** (A) Top: schematic representation of mammalian RIF1 domains and motifs. The scheme refers to the canonical sequence for mouse RIF1 (mRIF1, isoform 1, 2419 amino acids, UniProt entry Q6PR54-1). Filled and empty circle symbols represent conserved and nonconserved SQ/threonine-glutamine (TQ) motifs, respectively, between mRIF1 and human RIF1 (hRIF1, isoform 1, 2472 amino acids, UniProt entry Q5UIP0-1) (see also Figure 1—source data 1 and Figure 1—source data 2). CTD: carboxyl-terminal domain. Bottom: disorder profile plot of mRIF1 as determined by Protein DisOrder prediction System (PrDOS). (B) Schematic representation of key cellular changes and processes induced by the activation of mature B lymphocytes. Ig CSR: immunoglobulin class switch recombination. (C) Western blot analysis of whole-cell extracts from mouse embryonic fibroblasts (MEFs) and primary B cells derived from mice of the indicated genotypes. For each depicted antibody staining, the left and right blots represent noncontiguous portions of the same gel and film exposure. Rif1. (-/-: Rif1F/FCd19Cre/+D) Left: schematic representation of RIF1 Isotopic Differentiation of Interactions as Random or Targeted (I-DIRT) in primary cultures of B cells. Light (L): light media; heavy (H): heavy media; Act: activation; IR: ionizing radiation; LC-MS/MS: liquid chromatography-tandem mass spectrometry. Right: graph depicting the distribution of identified RIF1 I-DIRT proteins as a function of their H/(H+L) ratio and posterior error probability (PEP) (data from Delgado-Benito et al., 2018). Only proteins with PEP ≤ 10–4 were included in the graph. SD: standard deviation units (0.10) from the mean of the distribution (0.49); Count: number of peptides identified per protein. (E) Number of MS/MS spectra identified for the indicated phosphorylated SQ (pSQ) motif-containing peptides in different RIF1 I-DIRT preparations. (F) Representative MS/MS spectra of the RIF1 peptides encompassing phosphorylated residues S1387, S1416, and S1528. (G) Schematic representation of SQ/TQ motif clusters in the IDRs of mouse and human RIF1, which were defined by the PrDOS disorder profile plots (Ishida and Kinoshita, 2007). Orange filled symbols represent the conserved S1387, S1416, and S1528 residues identified as phosphorylated SQ motifs in mRIF1.Figure 1—source data 1.Figure 1—source data 2.Figure 1—source data 3.Figure 1C (anti-FLAG, anti-RIF1, and anti-tubulin).Figure 1—source data 4.Figure 1C and original scans of the relevant Western blot analysis (anti-FLAG, anti-RIF1, and anti-tubulin) with highlighted bands and sample labels.Figure 1—source data 5.Figure 1D.Protein H/(H+L) ratios were derived using peptides’ H/L intensity values in MaxQuant output.
+**Figure 1.:** (A) Top: schematic representation of mammalian RIF1 domains and motifs. The scheme refers to the canonical sequence for mouse RIF1 (mRIF1, isoform 1, 2419 amino acids, UniProt entry Q6PR54-1). Filled and empty circle symbols represent conserved and nonconserved SQ/threonine-glutamine (TQ) motifs, respectively, between mRIF1 and human RIF1 (hRIF1, isoform 1, 2472 amino acids, UniProt entry Q5UIP0-1) (see also Figure 1—source data 1 and Figure 1—source data 2). CTD: carboxyl-terminal domain. Bottom: disorder profile plot of mRIF1 as determined by Protein DisOrder prediction System (PrDOS). (B) Schematic representation of key cellular changes and processes induced by the activation of mature B lymphocytes. Ig CSR: immunoglobulin class switch recombination. (C) Western blot analysis of whole-cell extracts from mouse embryonic fibroblasts (MEFs) and primary B cells derived from mice of the indicated genotypes. For each depicted antibody staining, the left and right blots represent noncontiguous portions of the same gel and film exposure. Rif1-/-: Rif1F/FCd19Cre/+. (D) Left: schematic representation of RIF1 Isotopic Differentiation of Interactions as Random or Targeted (I-DIRT) in primary cultures of B cells. Light (L): light media; heavy (H): heavy media; Act: activation; IR: ionizing radiation; LC-MS/MS: liquid chromatography-tandem mass spectrometry. Right: graph depicting the distribution of identified RIF1 I-DIRT proteins as a function of their H/(H+L) ratio and posterior error probability (PEP) (data from Delgado-Benito et al., 2018). Only proteins with PEP ≤ 10–4 were included in the graph. SD: standard deviation units (0.10) from the mean of the distribution (0.49); Count: number of peptides identified per protein. (E) Number of MS/MS spectra identified for the indicated phosphorylated SQ (pSQ) motif-containing peptides in different RIF1 I-DIRT preparations. (F) Representative MS/MS spectra of the RIF1 peptides encompassing phosphorylated residues S1387, S1416, and S1528. (G) Schematic representation of SQ/TQ motif clusters in the IDRs of mouse and human RIF1, which were defined by the PrDOS disorder profile plots (Ishida and Kinoshita, 2007). Orange filled symbols represent the conserved S1387, S1416, and S1528 residues identified as phosphorylated SQ motifs in mRIF1.
 
 To identify post-translational modifications (PTMs) that modulate RIF1 functions in the maintenance of genome stability, we took advantage of the Isotopic Differentiation of Interactions as Random or Targeted (I-DIRT) experiment that we recently performed to define RIF1 interactome in mature B lymphocytes activated to differentiate ex vivo (Delgado-Benito et al., 2018). In addition to experiencing programmed DSB formation and repair during Ig CSR, activated B cells undergo a proliferative burst that renders them susceptible to DNA replication stress and damage (Figure 1B). Furthermore, activated B cells express considerably higher levels of RIF1 than their mouse embryonic fibroblast (MEF) counterparts (Figure 1C). The I-DIRT approach employed primary cultures of splenocytes from mice harboring a FLAG-2xHA-tagged version of RIF1 (RIF1FH, Cornacchia et al., 2012; Delgado-Benito et al., 2018), which is expressed at physiological levels (Figure 1C; Delgado-Benito et al., 2018). For the RIF1 I-DIRT experiment, activated splenocytes cultures were also irradiated, which would simultaneously increase the level and broaden the range of DNA damage-induced PTMs (Figure 1D; Delgado-Benito et al., 2018). Furthermore, αFLAG-mediated pull-down of RIF1 was performed under conditions that preserved bona fide protein interactions and native complex formation (Figure 1D; Delgado-Benito et al., 2018). The RIF1 I-DIRT experiment generated a list of high-confidence interactor candidates with functions ranging from DSB repair to transcriptional regulation of gene expression (Figure 1D; Delgado-Benito et al., 2018). Moreover, a differential filtering criteria analysis uncovered an extended network of factors contributing to DNA replication initiation, elongation, and fork protection (Figure 1D). Altogether, these observations indicate that activated B cells provide an ideal model system to probe for RIF1 multiple biological functions and prompted us to re-evaluate RIF1 I-DIRT datasets for potentially relevant PTMs.
 
@@ -64,11 +64,23 @@ Analysis of post-translationally modified RIF1 peptides from different I-DIRT pr
 
 We concluded that in activated B lymphocytes, RIF1 is phosphorylated at a conserved cluster of SQ motifs within its IDR.
 
-## A genetic engineering-amenable B cell model system for the assessment of DSB end protection outcomes
+### A genetic engineering-amenable B cell model system for the assessment of DSB end protection outcomes
 
 Phosphorylation of residues within IDRs has been reported to affect protein functions in a variety of cellular contexts (Bah and Forman-Kay, 2016; Wright and Dyson, 2015). Given the conservation, proximity, and IDR location of S1387Q, S1416Q, and S1528Q motifs, as well as their identification as phosphoresidues in I-DIRT pull-downs, we decided to assess the contribution of the IDR-CII SQ phosphorylation to the regulation of RIF1 activities in DNA repair. RIF1 inhibits resection of DSBs downstream 53BP1 during both aberrant repair of DNA replication-associated DSBs in the absence of BRCA1 and physiological end joining of CSR breaks in G1 in B cells (Chapman et al., 2013; Di Virgilio et al., 2013; Escribano-Díaz et al., 2013; Feng et al., 2013; Zimmermann et al., 2013). Therefore, to determine if phosphorylation of the IDR-CII modulates RIF1’s role in DSB end protection, we monitored both types of repair in cells expressing phosphomutant RIF1.
 
 To assess for aberrant (radial chromosome formation) and physiological (CSR) repair events in the same cellular context, we opted to perform our analysis in HR-deficient, yet CSR-proficient, CH12 cells bearing hypomorphic Brca1 mutations (Figure 2A). CH12 is a well-characterized mouse B cell lymphoma line that recapitulates the molecular mechanism and regulation of CSR (Nakamura et al., 1996). Furthermore, CH12 cells display a stable near-diploid genome that can be easily and efficiently manipulated by somatic gene targeting (Delgado-Benito et al., 2020; Delgado-Benito et al., 2018; Sundaravinayagam et al., 2019).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75047/elife-75047-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic representation of BRCA1-deficient CH12 model system’s versatility to investigate both pathological and physiological consequences of RIF1-mediated DSB end protection. CIT: αCD40, IL-4, and TGFβ B cell activation cocktail. (B) Left: representative images of chromosomal aberrations typically associated with homologous recombination (HR) deficiency (chromatid breaks and radial chromosomes). Right: graph summarizing the average number of chromosomal aberrations in the parental CH12 cell line (WT sample) and selected Brca1mut clonal derivatives following 1 μM PARPi treatment for 24 hr from two independent experiments (n = 50 metaphases analyzed per genotype). Breakdown of the same data into actual number of aberrations per cell is shown for one experimental repeat in Figure 2—figure supplement 1C. (C) Residual viability of Brca1mut CH12 cell lines after treatment with 1 μM of PARPi versus DMSO (mock treatment control) for 72 hr. Residual viability was calculated as percentage of cell viability of PARPi- over DMSO-treated cultures. Graph summarizes four independent experiments per Brca1mut clonal derivative. The control (Ctrl) samples comprise parental WT CH12 cells and clonal cell lines generated by targeting CH12 cells with gRNAs against random sequences not present in the mouse genome (validated Random clones, Brca1mutR). (D) Residual viability of Brca1mut-1 CH12 cells nucleofected with random gRNAs (Random), or 53bp1, Rif1, and Rev7, and treated for 72 hr with 1 μM of PARPi versus DMSO. Graph summarizes four independent experiments. (E) Left: representative flow cytometry plots measuring class switch recombination (CSR) to IgA in activated cell lines of the indicated genotype. Right: summary graph for at least three independent experiments per Brca1mut cell line, with CSR% levels within each experiment normalized to the average of controls (parental WT CH12 and one Random clone), which was set to 100. (F) Top: amino acid sequence in the IDR-CII SQ region of WT and S→A-mutated RIF1 protein. Bottom: Western blot analysis of whole-cell extracts from independent cells lines of the indicated genotypes (Rif1-/-, control Random R, and Rif1S→A, all generated on the parental [P] Brca1mut-1 cell line background, henceforth indicated as Brca1mut). (G) Graph summarizing the average number of chromosomal aberrations in cells of the indicated genotypes following 1 μM PARPi treatment for 24 hr with each Brca1mutRif1S→A cell line tested twice over three independent experiments (n = 50 metaphases analyzed per genotype). Control samples include the parental Brca1mut-1 cell line (P) and a derivative Brca1mutR clone. (H) Residual viability of Brca1mutRif1S→A cell lines after treatment with 1 μM of PARPi versus DMSO for 72 hr. Graph summarizes four independent experiments per Brca1mutRif1S→A clonal derivative. The control (Ctrl) samples comprise parental Brca1mut-1 cells and Brca1mutR clones. (I) Left: representative flow cytometry plots measuring CSR to IgA in activated cell lines of the indicated genotype. Right: summary graph for four independent experiments, with CSR% levels within each experiment normalized to the average of controls (parental Brca1mut-1 and one Random clone), which was set to 100. Significance in panels (C), (D), (H), and (I) was calculated with the Mann–Whitney U-test, and error bars represent SD. *p≤0.05; **p≤0.01; ***p≤0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75047/elife-75047-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Scheme of mouse Brca1 genomic locus (scheme adapted from Ensembl ENSMUST00000017290.10) and location of gRNAs used in this study. The nickase gRNA pairs are gBrca1-N1a and gBrca1-N1b for Nickase 1, and gBrca1-N2a and gBrca1-N2b for Nickase 2. Please note that the targeted exon, which is the 10th exon in the official Ensembl Brca1-201 transcript, is commonly referred to in literature (and in the text of this paper) as exon 11 because of a historical misannotation of one additional exon (Evers and Jonkers, 2006; Miki et al., 1994). (B) Genomic scar of the selected Brca1mut clonal derivatives (Brca1mut-1, Brca1mut-2, and Brca1mut-3). The expected/potential consequences at the protein level are indicated for each scar. The gRNAs employed to generate each cell line are highlighted in shades of blue with the PAM sequence in red. Note that Brca1mut-1 and Brca1mut-2 bear the same CRISPR scar on both alleles, whereas the Brca1mut-3 cell line has three genomic scars since it possesses a near-tetraploid chromosome set (see also panel C). Ref: reference sequence; Indel: insertion and/or deletion; Δ: base pairs (bp)/amino acid (AA) deletion; fs: amino acid frameshift; PTC: premature termination codon. (C) Analysis of genomic instability in Brca1mut CH12 cell lines. Top: representative metaphase spreads from parental CH12 cell line (WT sample) and selected Brca1mut clonal derivatives following PARPi treatment (1 μM for 72 hr). Orange and red arrows indicate examples of chromatid breaks and radial chromosomes, respectively. Bottom: summary graphs for the number of chromatid breaks and radial chromosomes per metaphase/cell (n = 50 metaphases analyzed per genotype). Significance in panel (C) was calculated with the Mann–Whitney U-test, and error bars represent SD. ns, not significant; *p≤0.05; ****p<0.0001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75047/elife-75047-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Scheme of mouse Rif1 genomic locus (scheme adapted from Ensembl Rif1-201 ENSMUST00000112693.9) and location of gRNAs used in this study. The nickase gRNA pairs are gRif1-N1a and gRif1-N1b for Nickase 1, and gRif1-N2a and gRif1-N2b for Nickase 2. (B) Genomic scar of two selected/representative Brca1mutRif1-/- clonal derivatives (Brca1mutRif1-/-–1 and Brca1mutRif1-/-–2). The expected consequences at the protein level are indicated for each scar. The gRNAs employed to generate each cell line are highlighted in shades of blue with the PAM sequence in red. Ref: reference sequence; Indel: insertion and/or deletion; fs: amino acid frameshift; PTC: premature termination codon. (C) Western blot analysis of whole-cell extracts from control Brca1mutR and Brca1mutRif1-/- cell lines. The arrowhead indicates RIF1 band, whereas the asterisk symbol denotes aspecific bands that can be used as additional internal loading controls. (D) Residual viability of control Brca1mutRs and Brca1mutRif1-/- cell lines after treatment with 1 μM of PARPi versus DMSO (mock treatment control) for 72 hr. Residual viability was calculated as percentage of cell viability of PARPi- over DMSO-treated cultures. Graph summarizes three independent experiments per Brca1mutRif1-/- clone. (E) Dot plot depicting class switch recombination (CSR) to IgA in activated control (Brca1mutR) and two selected Brca1mutRif1-/- cell lines. The graph summarizes three independent experiments per Brca1mut Rif1-/- cell line with CSR efficiencies within each experiment normalized to either one, or the average CSR value of two, control Brca1mutR, which was set to 100%. (F) Schematic representation of the knock-in strategy employed for the Ser to Ala mutagenesis at the conserved serine-glutamine (SQ) motifs in the IDR-CII cluster. Location of primers (F, forward; R, reverse) and expected PCR digestion products employed for initial assessment of targeting results are indicated in dark red. KI: knock-in. Asterisk symbol indicates silent mutations introduced to create the NheI diagnostic restriction site and to render the knocked-in sequences resistant to CRISPR-Cas9 digestion. (G) Characterization of selected Brca1mut Rif1S→A CH12 cell lines by diagnostic digestion. The bands refer to the NheI-undigested and -digested products of the PCR analysis performed with the primers indicated in panel (G). Note that the undigested and digested products of the donor DNA PCR fragment (digestion control) are of smaller size compared to the cell line sample fragments because they are amplified with primers inside the homology arms of the donor plasmid. The control cell line samples comprise the parental Brca1mut-1 cell line (P) and a Brca1mutR clonal derivative. (H) Western blot analysis of whole-cell extracts from cells lines of the indicated genotypes. The asterisk symbol denotes an aspecific band that was included as an additional internal loading control. The analysis is representative of two independently performed experiments. IR: ionizing radiation. Significance in panels (D) and (E) was calculated with the Mann–Whitney U-test, and error bars represent SD. *p≤0.05; **p≤0.01.
 
 These features render CH12 the preferred model system over B cells isolated from the available BRCA1-mutated mouse models, which (1) are refractory to classic transfection methods, (2) do not allow for transduction-based reconstitution studies of large proteins like RIF1, and (3) whose primary nature precludes genetic manipulation for knock-in generation.
 
@@ -80,7 +92,7 @@ CH12 cells can be induced to undergo CSR to IgA with high efficiency after activ
 
 Altogether, these findings show that Brca1mut CH12 cell lines allow for the investigation of both outcomes of RIF1-mediated DSB end protection: aberrant repair of DNA replication-associated DSBs and physiological end joining of CSR breaks.
 
-## Phosphorylation of the IDR-CII SQ cluster is dispensable for RIF1’s ability to inhibit DSB end resection
+### Phosphorylation of the IDR-CII SQ cluster is dispensable for RIF1’s ability to inhibit DSB end resection
 
 To investigate whether the phosphorylation status of the conserved IDR-CII SQ cluster is required for RIF1’s ability to inhibit DSB end resection, we abrogated phosphorylation of S1387Q, S1416Q, and S1528Q motifs by serine to alanine substitutions in Brca1mut CH12 cells via CRISPR-Cas9-mediated knock-in mutagenesis at the Rif1 locus (Figure 2F, Figure 2—figure supplement 2F and G). This knock-in approach allows the characterization of the PTM-dependent regulation of RIF1 biological functions under physiological levels of protein expression.
 
@@ -94,11 +106,19 @@ Finally, we assessed whether phosphorylation of the IDR-CII SQ cluster modulates
 
 We concluded that RIF1-mediated DSB end protection activity is not dependent on the phosphorylation of the conserved IDR-CII SQ cluster.
 
-## Phosphorylation of the IDR-CII SQ cluster enables RIF1-dependent protection of stalled DNA replication forks
+### Phosphorylation of the IDR-CII SQ cluster enables RIF1-dependent protection of stalled DNA replication forks
 
 RIF1 has recently been reported to play a genome-protective role under conditions of DNA replication stress (Ray Chaudhuri et al., 2016; Garzón et al., 2019; Mukherjee et al., 2019). RIF1 is recruited to stalled DNA replication forks where it protects nascent DNA from degradation by the DNA2 nuclease in a manner dependent on its interaction with protein phosphatase 1 (PP1) (Ray Chaudhuri et al., 2016; Garzón et al., 2019; Mukherjee et al., 2019). This activity allows for timely restart of stalled forks and prevents genome instability (Garzón et al., 2019; Mukherjee et al., 2019). Given the high proliferative nature of the cellular context where phosphorylation of the conserved IDR-CII SQ motifs was originally detected (activated primary B cells, Figure 1), we asked whether these PTMs could influence RIF1 function during replication stress.
 
 BRCA1 plays a protective role at DNA replication forks that is independent from RIF1 (Ray Chaudhuri et al., 2016; Garzón et al., 2019; Mukherjee et al., 2019; Schlacher et al., 2012). Therefore, to specifically address the contribution of RIF1 phosphorylation to fork protection, we first generated a set of Rif1 knockout and A1387A1416A1528-bearing phosphomutant cell lines on a BRCA1-proficient background (WT CH12 cells) (Rif1-/- and Rif1S→A, Figure 3A, Figure 3—figure supplement 1A–C). As expected, deletion of RIF1 severely impaired CSR (Chapman et al., 2013; Di Virgilio et al., 2013; Escribano-Díaz et al., 2013; Figure 3—figure supplement 1D), whereas, in agreement with the findings from the BRCA1-deficient background (Figure 2I), CSR was not affected in Rif1S→A cell lines (Figure 3—figure supplement 1D). Furthermore, analogously to what we described in the Brca1mut setting (Figure 2—figure supplement 2H), Rif1S→A cells did not display the IR-induced RPA phosphorylation that was detectable in the absence of RIF1 (Figure 3—figure supplement 1E).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75047/elife-75047-fig3-v1.jpg)
+
+**Figure 3.:** (A) Western blot analysis of whole-cell extracts from independent cells lines of the indicated genotypes (Rif1-/-, control Random clones R, and Rif1S→A, all generated on the parental – P – WT CH12 background). (B) Left: schematic representation of the DNA fiber assay employed to assess protection of nascent DNA at stalled replication forks. Right: representative images of protected and degraded DNA fibers. (C) Left: representative fields for the analysis of nascent DNA degradation following 3 hr treatment with 4 mM HU in CH12 cells of the indicated genotypes. Right: graph summarizing the quantification of CldU/IdU ratio for n = 100 DNA fibers analyzed per genotype (1 and 2 indicate two different Rif1S→A clonal derivatives). The graph is representative of three independently performed experiments. (D). Graph summarizing the quantification of CldU/IdU ratio for n ≥ 100 DNA fibers analyzed per genotype in HU-treated cells in the absence/presence of 0.3 μM DNA2i (four different Rif1S→A clonal derivatives were employed). The graph is representative of two independently performed experiments. (E) Amino acid sequence in the IDR-CII SQ region of WT, S→A- and single SQ-mutated RIF1 proteins. (F) Graph summarizing the quantification of CldU/IdU ratio for n = 100–150 DNA fibers analyzed per genotype (1 and 2 indicate two different clonal derivatives). The control (Ctrl) samples comprise the parental CH12 cell line and the R clone employed also for the analyses in panels (C) and (D). The graph is representative of two independently performed experiments. Significance in panels (C), (D), and (F) was calculated with the Mann–Whitney U-test, and the median is indicated. Significance for each cell line in the graph in panel (C) was calculated in reference to the parental CH12 (P) sample. ns, not significant; *p≤0.05; ***p≤0.001; ****p<0.0001. The bar charts underneath the main graphs in panels (C), (D), and (F) display the samples’ median for each independently performed experiment.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75047/elife-75047-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Genomic scar of two selected Rif1-/- clonal derivatives (Rif1-/-–1 and Rif1-/-–2). The expected consequences at the protein level are indicated for each scar. The gRNAs employed to generate each cell line are highlighted in shades of blue with the PAM sequence in red. Ref: reference sequence; Indel: insertion and/or deletion; fs: amino acid frameshift; PTC: premature termination codon. (B) Western blot analysis of whole-cell extracts from controls and two different Rif1 knockout cell lines (Rif1-/-–1 and Rif1-/-–2). Controls: WT parental CH12 culture (P) and clonal cell lines derived from targeting CH12 cells with gRNAs against random (R) sequences not present in the mouse genome (validated Random clones on the WT background, R1, R2, and R3). (C) Characterization of selected Rif1S→A CH12 cell lines by diagnostic digestion, which followed the same scheme as for Brca1mut Rif1S→A clonal derivatives in Figure 2—figure supplement 2G and H. (D) Top: representative flow cytometry plots measuring class switch recombination (CSR) to IgA in activated cell lines of the indicated genotype (Rif1S→A-1, Rif1S→A-2, and Rif1S→A-3 are independent clonal derivatives). Bottom: summary graph for four independent experiments. (E) Western blot analysis of whole-cell extracts from cells lines of the indicated genotypes. The asterisk symbol denotes an aspecific band that was included as an additional internal loading control. The analysis is representative of two independently performed experiments. IR: ionizing radiation. (F) Top: schematic representation of the strategy employed for the initial assessment of targeting results of the single serine-glutamine (SQ) RIF1 CH12 mutant cell lines. Location of primers (F, forward; R, reverse) and expected PCR digestion products is indicated in dark red. KI: knock-in. Bottom: characterization of selected clonal derivatives by diagnostic digestion. White lines separate noncontiguous portions of the same agarose gel and exposure. (G) Western blot analysis of whole-cell extracts from independent cells lines of the indicated genotypes. White lines separate noncontiguous portions of the same SDS-PAGE gel and film exposure.
 
 Next, we applied the DNA fiber assay to monitor the degradation of nascent DNA at forks that were stalled via treatment with hydroxyurea (HU) (Figure 3B). HU interferes with DNA synthesis by inhibiting ribonucleotide reductase, the rate-limiting enzyme in dNTP synthesis (Singh and Xu, 2016). Both Rif1-/- and Brca1mut genotypes exhibited the expected fork degradation phenotype (Figure 3C), thus indicating that the protective pathways mediated by these factors are active also in CH12 cells. Interestingly, Rif1S→A clonal derivatives showed increased degradation of stalled forks compared to controls and to the same levels observed in Rif1-/- cells (Figure 3C), thus suggesting that abrogation of these IDR-CII SQ phosphorylation events prevents RIF1 function at the forks.
 
@@ -108,13 +128,13 @@ We next asked whether the fork degradation phenotype exhibited by Rif1S→A cell
 
 We concluded that phosphorylation of the conserved IDR-CII SQ cluster enables RIF1-dependent inhibition of DNA2 activity and protection of nascent DNA at stalled replication forks.
 
-## Phosphorylation of the IDR-CII SQ cluster promotes HU-induced recruitment of RIF1 to DNA replication forks
+### Phosphorylation of the IDR-CII SQ cluster promotes HU-induced recruitment of RIF1 to DNA replication forks
 
 To mechanistically dissect how phosphorylation of the conserved IDR cluster contributes to RIF1’s role in protection of stalled DNA replication forks, we first assessed the integrity of RIF1-PP1 interaction via co-immunoprecipitation studies. We found that RIF1S→A mutant protein retains the ability to interact with PP1, thus indicating that the abrogation of phosphorylation events in the conserved cluster does not have a major impact on RIF1-PP1 association (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/75047/elife-75047-fig4-v1.jpg)
 
-**Figure 4.:** (A) Western blot analysis of anti-RIF1 immunoprecipitates (IP) from cell lines of the indicated genotypes (WT parental CH12 cells [P], a validated Random clone [R], Rif1, and two different -/-Rif1 clonal derivatives). The analysis is representative of two independently performed experiments. Pre: pre-immune serum control for αRIF1 IP. (S→AB) Left: representative histograms displaying EdU-RIF1 proximity signal in untreated (Untr) and HU-treated (+HU) samples of the indicated genotypes. Right: summary graph showing quantification of the proximity signal data for three independent experiments. For each sample, values were expressed as fold mean fluorescent intensity (MFI) of HU-treated over untreated conditions, and normalized within each experiment to Rif1, which was set to 1. Samples include parental CH12 cells and two validated Random clones as positive (-/-Ctrl), and Rif1 cells as negative, experimental controls, and three different -/-Rif1 clonal derivatives. (S→AC) Left: schematic representation of the strategy for the identification of HU-induced RIF1 phosphosites in primary B cells. Act: activation; Untr: untreated (no ATMi/ATRi); LC-MS/MS: liquid chromatography-tandem mass spectrometry. Right: representative Western blot analysis of whole-cell extracts employed for the RIF1 pull-downs. The analysis is representative of the four mice pairs (WT and Rif1) included in the mass spec experiment. (FH/FHD) Top: representative annotated MS/MS spectra of a RIF1 peptide encompassing phosphorylated S1416 residue from one HU-treated Rif1 sample. Bottom: graph summarizing SFH/FH1416 phosphosite intensities in the different conditions shown in panel (C). Values were normalized to bait protein (RIF1) levels for each sample followed by replicate-wise median normalization. The horizontal line indicates the mean of the four data points. Adjusted p-values shown were calculated using a Benjamini–Hochberg correction after a global two-sample moderated t-test. Values for t-test were imputed using a Gaussian distribution with downshift by column after filtering for at least 60% valid values per row across all samples (without WT). Original values are shown in blue, imputed values in gray. (E) Left: schematic representation of the strategy for the identification of aphidicolin-induced hRIF1 phosphosites. GFP-hRIF1-L: human RIF1 long isoform fused to GFP; Aph: aphidicolin. Right: hRIF1 S1542 phosphosite intensity values were normalized to bait protein (hRIF1) levels and shown as fold increase of Aph- versus DMSO-treated sample, which was set to 1. Norm: normalized. Significance in panel (B) was calculated with the Mann–Whitney U-test, and error bars represent SD. *p≤0.05; **p≤0.01.Figure 4—source data 1.Figure 4A (anti-RIF1).Figure 4—source data 2.Figure 4A (anti-PP1).Figure 4—source data 3.Figure 4A (anti-PP1).Figure 4—source data 4.Figure 4A (anti-vinculin).Figure 4—source data 5.Figure 4A and original scans of the relevant Western blot analysis (anti-RIF1, anti-PP1, and anti-vinculin) with highlighted bands and sample labels.Figure 4—source data 6.Figure 4C (anti-FLAG).Figure 4—source data 7.Figure 4C (anti-pCHK1).Figure 4—source data 8.Figure 4C (anti-CHK1 and anti-H2AX).Figure 4—source data 9.Figure 4C (anti-vinculin and anti-γH2AX).Figure 4—source data 10.Figure 4C and original scans of the relevant Western blot analysis (anti-FLAG, anti-pCHK1, anti-CHK1, anti-H2AX, anti-vinculin, and anti-γH2AX) with highlighted bands and sample labels.
+**Figure 4.:** (A) Western blot analysis of anti-RIF1 immunoprecipitates (IP) from cell lines of the indicated genotypes (WT parental CH12 cells [P], a validated Random clone [R], Rif1-/-, and two different Rif1S→A clonal derivatives). The analysis is representative of two independently performed experiments. Pre: pre-immune serum control for αRIF1 IP. (B) Left: representative histograms displaying EdU-RIF1 proximity signal in untreated (Untr) and HU-treated (+HU) samples of the indicated genotypes. Right: summary graph showing quantification of the proximity signal data for three independent experiments. For each sample, values were expressed as fold mean fluorescent intensity (MFI) of HU-treated over untreated conditions, and normalized within each experiment to Rif1-/-, which was set to 1. Samples include parental CH12 cells and two validated Random clones as positive (Ctrl), and Rif1-/- cells as negative, experimental controls, and three different Rif1S→A clonal derivatives. (C) Left: schematic representation of the strategy for the identification of HU-induced RIF1 phosphosites in primary B cells. Act: activation; Untr: untreated (no ATMi/ATRi); LC-MS/MS: liquid chromatography-tandem mass spectrometry. Right: representative Western blot analysis of whole-cell extracts employed for the RIF1 pull-downs. The analysis is representative of the four mice pairs (WT and Rif1FH/FH) included in the mass spec experiment. (D) Top: representative annotated MS/MS spectra of a RIF1 peptide encompassing phosphorylated S1416 residue from one HU-treated Rif1FH/FH sample. Bottom: graph summarizing S1416 phosphosite intensities in the different conditions shown in panel (C). Values were normalized to bait protein (RIF1) levels for each sample followed by replicate-wise median normalization. The horizontal line indicates the mean of the four data points. Adjusted p-values shown were calculated using a Benjamini–Hochberg correction after a global two-sample moderated t-test. Values for t-test were imputed using a Gaussian distribution with downshift by column after filtering for at least 60% valid values per row across all samples (without WT). Original values are shown in blue, imputed values in gray. (E) Left: schematic representation of the strategy for the identification of aphidicolin-induced hRIF1 phosphosites. GFP-hRIF1-L: human RIF1 long isoform fused to GFP; Aph: aphidicolin. Right: hRIF1 S1542 phosphosite intensity values were normalized to bait protein (hRIF1) levels and shown as fold increase of Aph- versus DMSO-treated sample, which was set to 1. Norm: normalized. Significance in panel (B) was calculated with the Mann–Whitney U-test, and error bars represent SD. *p≤0.05; **p≤0.01.
 
 Next, we asked whether phosphorylation of IDR-CII SQ influences RIF1 recruitment to stalled DNA replication forks. To do so, we applied a proximity ligation assay (PLA) that employs flow cytometry measurements to quantitatively assess the localization of RIF1 at sites of EdU incorporation in the presence and absence of HU. As expected (Garzón et al., 2019; Mukherjee et al., 2019), RIF1 and EdU co-localization increased upon HU treatment in control cell lines (Figure 4B). In contrast, the HU-induced RIF1-EdU proximity signal was only modestly affected in Rif1S→A clonal derivatives (Figure 4B). This data suggests that phosphorylation of the IDR-CII SQ cluster facilitates RIF1 interaction with stalled replication forks.
 
@@ -134,7 +154,7 @@ Orthologous IDRs exhibit molecular features that are crucial for function but do
 
 ## Materials and methods
 
-## Mice and derived primary cell cultures
+### Mice and derived primary cell cultures
 
 Rif1FH/FH (Cornacchia et al., 2012) and Rif1F/FCd19Cre/+ (Di Virgilio et al., 2013) mice were previously described and maintained on a C57BL/6 background. Mice were kept in a specific pathogen-free (SPF) barrier facility under standardized conditions (20 ± 2°C temperature; 55% ± 15% humidity) on a 12 hr light/12 hr dark cycle. Animals were maintained in small groups (4–5) or as breeding pairs in individually ventilated cages to ensure optimal habitat condition. Mice of both genders were used for the experiments. All experiments were performed in compliance with the European Union (EU) directive 2010/63/EU, and in agreement with Landesamt für Gesundheit und Soziales directives (LAGeSo, Berlin, Germany).
 
@@ -142,7 +162,7 @@ Primary cell cultures of resting B lymphocytes were isolated from WT, Rif1FH/FH,
 
 Primary MEFs (pMEFs) were isolated from WT and Rif1FH/FH mice as follows. Pregnant mice were sacrificed on day E12.5 by cervical dislocation, and embryos were removed from uterine horns and placed individually in plates containing PBS (Thermo Fisher Scientific). Brain, tail, limbs, and dark red organs were removed and the remaining tissue was transferred into fresh PBS. Tissue was treated with 2 ml of Trypsin-EDTA 0.05% (Gibco) at 37°C for 15 min, and cell suspension was passed through a syringe with 18-gauge needle. Trypsin was neutralized with DMEM medium (Life Technologies) supplemented with 10% FBS, 2 mM l-glutamine, and Penicillin-Streptomycin (Life Technologies). pMEFs from each embryo were expanded in 25 cm plates at 37°C and 5% CO2 levels to reach 80% confluency, and either used immediately for immortalization (see below) or frozen.
 
-## Cell lines
+### Cell lines
 
 The cell lines employed for this study are CH12 (CH12F3, mouse, Nakamura et al., 1996); Rif1-/- CH12 (clone 1, mouse, Delgado-Benito et al., 2018); WT (Random clones), Rif1-/- (clone 2), and Brca1mut CH12 clonal derivatives (mouse, this paper), as well as RIF1 phosphomutant CH12 cell lines generated on both WT and Brca1mut backgrounds (mouse, this paper); WT and Rif1FH/FH immortalized mouse embryonic fibroblasts (iMEFs, this paper). iMEFs were generated by immortalization of the pMEFs cultures described above via retroviral transduction of a construct expressing the SV40 T-antigen.
 
@@ -150,7 +170,7 @@ CH12 cells were grown in RPMI 1640 medium supplemented with 10% FBS, 10 mM HEPES
 
 Mycoplasma contamination was not detected in any cell line tested in the lab using commercially available mycoplasma detection kits.
 
-## Identification of RIF1 phosphoresidues
+### Identification of RIF1 phosphoresidues
 
 RIF1 phosphoresidues were identified via analysis of RIF1 I-DIRT samples (Figure 1E and F) prepared from primary B cell cultures as previously described (Delgado-Benito et al., 2018), with the only difference that preparations with varying concentrations of glutaraldehyde (1–5 mM) were employed. Samples were loaded on NuPAGE Bis-Tris Gels (Thermo Fisher Scientific) and run for a short time to produce gel plugs. The gel samples were subjected to in-gel tryptic digestions. Peptides were extracted, purified, and analyzed by LC-MS using a Thermo Orbitrap Fusion mass spectrometer, with a Thermo Easy-nLC 1000 HPLC and a Thermo Easy-Spray electrospray source. Isotopically labeled proteins were identified by searching against a mouse protein sequence database using the GPM software (Beavis, 2006), which was set to search for tryptic peptides whose lysines and arginines were isotopically labeled and for potential phosphorylation modifications at serines, threonines, and tyrosines.
 
@@ -162,11 +182,11 @@ Analysis was done in MaxQuant (version 1.5.2.8; Cox and Mann, 2008) applying an 
 
 Analysis of aphidicolin-induced phosphorylation of hRIF1 (Figure 4E) was performed using Flp-In T-REx GFP-RIF1-L cells (HEK293-derived Flp-In T-REx 293 cells expressing GFP-hRIF1-L, Watts et al., 2020) as follows. Flp-In T-REx GFP-RIF1-L cells were cultivated in DMEM medium and induced for GFP-RIF1-L expression by addition of 1 µg/ml doxycycline (Sigma-Aldrich) 48 hr before harvesting. Cells were treated with 1 µM aphidicolin (Abcam) or DMSO (for mock control) for the final 24 hr. Cells were gently washed in dishes with 1× ice-cold Tris-buffered saline (TBS), lysed, and gently scraped off in ice-cold TBS IP buffer (1× TBS supplemented with 1% CHAPS, 1× Halt protease and phosphatase inhibitor cocktail [Thermo Fisher], and 1 mM phenylmethylsulfonyl fluoride [PMSF]) supplemented with 3 mM MgCl2 and Benzonase. Lysates were incubated for 30 min at 4°C with gentle agitation. The lysate was spun at 20,000 for 10 min, and the supernatant then used for immunoprecipitation using GFP-Trap Magnetic-agarose beads (Chromotek). Immunoprecipitation was carried out according to the manufacturer’s instruction but in Tris IP buffer. Beads were further washed with 100 mM ammonium bicarbonate and on-beads trypsin digestion was performed essentially as described (Garzón et al., 2019) but without Cys alkylation. Peptides were analyzed using an Orbitrap Q Exactive Plus mass spectrometer equipped with nano-LC C18 liquid chromatography over 60 min elution gradient. The raw MS datasets were analyzed using MaxQuant software (version 1.6.2.3). MS1 intensity of each phosphorylation site was normalized by iBAQ value of RIF1 in each sample. The normalized phospho/RIF1 values between samples were compared.
 
-## CSR assay
+### CSR assay
 
 CH12 cells were stimulated to undergo CSR to IgA by treatment with 1–5 μg/ml αCD40 (BioLegend), 5 ng/ml TGFβ (R&D Systems), and 5 ng/ml of mouse recombinant IL-4 for 48 hr. For class switching analysis, cell suspensions were stained with fluorochrome-conjugated anti-IgA (Southern Biotech) and samples were acquired on an LSRFortessa cell analyzer (BD Biosciences).
 
-## CRISPR-Cas9 gene targeting and generation of CH12 clonal cell lines
+### CRISPR-Cas9 gene targeting and generation of CH12 clonal cell lines
 
 Targeting of Brca1 and Rif1 loci for generation of indel-bearing clonal derivatives was performed with two gRNA pairs per gene (gGene-N1a and gGene-N1b for Nickase 1, and gGene-N2a and gGene-N2b for Nickase 2) cloned into tandem U6 cassettes in a version of pX330 plasmid (pX330-U6-Chimeric_BB-CBh-hSpCas9, Addgene #42230) mutated to express Cas9D10A-T2A-GFP (Nickase-1/2). The Nickase-1/2 constructs were individually transfected into CH12 via electroporation with Neon Transfection System (Thermo Fisher Scientific).
 
@@ -178,7 +198,263 @@ For in-bulk targeting of Brca1mut-1 cells in the rescue-of-viability assay, gRNA
 
 The sequences of the gRNAs, genotyping, and mutagenesis primers employed in this study are listed in Table 1.
 
-## Western blot and co-immunoprecipitation analyses
+**Table 1.**
+ List of oligonucleotides used in this study.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="13">CRISPR-Cas9 gene targeting for clonal derivative generation</td>
+      <td>gRNAs</td>
+      <td>Sequence (5′→3′)</td>
+      <td>References</td>
+    </tr>
+    <tr>
+      <td>gRandom-1a</td>
+      <td>GCGAGGTATTCGGCTCCGCG</td>
+      <td>Delgado-Benito et al., 2018</td>
+    </tr>
+    <tr>
+      <td>gRandom-1b</td>
+      <td>ATGTTGCAGTTCGGCTCGAT</td>
+      <td>Delgado-Benito et al., 2018</td>
+    </tr>
+    <tr>
+      <td>gBrca1-N1a</td>
+      <td>GAGCTACCACCGATGTTCCT</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>gBrca1-N1b</td>
+      <td>TCTCAGGGCACAGACTTTGC</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>gBrca1-N2a</td>
+      <td>GCGTTCAGAAAGTTAATGAG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>gBrca1-N2b</td>
+      <td>TGTTATCCAAGGAACATCGG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>gRif1-N1a</td>
+      <td>GAAGACCCCTCGGTGCCTCC</td>
+      <td>Delgado-Benito et al., 2018</td>
+    </tr>
+    <tr>
+      <td>gRif1-N1b</td>
+      <td>AAGTCTCCAGAAGCGGCTCC</td>
+      <td>Delgado-Benito et al., 2018</td>
+    </tr>
+    <tr>
+      <td>gRif1-N2a</td>
+      <td>TGTGTGTACCAGGGCACTGT</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>gRif1-N2b</td>
+      <td>ACTCTTAATGATACCATTCA</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>gRNA-5′</td>
+      <td>AAACACTCCGACGGTCTTCG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>gRNA-3′</td>
+      <td>CGACTTGTCTAGATTGTCCA</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td rowspan="11">CRISPR-Cas9 gene targeting in in-bulk cultures</td>
+      <td colspan="3">gRNAs</td>
+    </tr>
+    <tr>
+      <td>gRandom-1a (as above)</td>
+      <td>GCGAGGTATTCGGCTCCGCG</td>
+      <td>Delgado-Benito et al., 2018</td>
+    </tr>
+    <tr>
+      <td>gRandom-1b (as above)</td>
+      <td>ATGTTGCAGTTCGGCTCGAT</td>
+      <td>Delgado-Benito et al., 2018</td>
+    </tr>
+    <tr>
+      <td>gRandom-1c</td>
+      <td>GCTTTCACGGAGGTTCGACG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>g53bp1-1</td>
+      <td>CAGATGTTTATTATGTGGAT</td>
+      <td>Delgado-Benito et al., 2018</td>
+    </tr>
+    <tr>
+      <td>g53bp1-2</td>
+      <td>GAGTGTACGGACTTCTCGAA</td>
+      <td>Delgado-Benito et al., 2018</td>
+    </tr>
+    <tr>
+      <td>gRif1- N2a (as above)</td>
+      <td>TGTGTGTACCAGGGCACTGT</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>gRif1- N2b (as above)</td>
+      <td>ACTCTTAATGATACCATTCA</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>gRev7-1</td>
+      <td>CCTGATTCTCTATGTGCGCG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>gRev7-2</td>
+      <td>GTGCGCGAGGTCTACCCGGT</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>gRev7-3</td>
+      <td>CTATGTGCGCGAGGTCTACC</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Site-directed mutagenesis of knock-in template</td>
+      <td colspan="3">PCR primers</td>
+    </tr>
+    <tr>
+      <td colspan="3">A1387 → S1387</td>
+    </tr>
+    <tr>
+      <td>Primer 1</td>
+      <td>CAAATAGTAAATGAAGATAGTCAGGCTGCTGCGCTAGCCCC</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>Primer 2</td>
+      <td>GGGGCTAGGGCAGCAGCCTGACTATCTTCATTTACTATTTG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td colspan="3">A1416 → S1416</td>
+    </tr>
+    <tr>
+      <td>Primer 1</td>
+      <td>GATTCTTGCAGTGACAGCCAAGAGAGAGAGAGTGGTCAGC</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>Primer 2</td>
+      <td>GCTGACCACTCTCTCTCTCTTGGCTGTCACTGCAAGAATC</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td colspan="3">A1528 → S1528</td>
+    </tr>
+    <tr>
+      <td>Primer 1</td>
+      <td>CGTTATCAAACAAGAAGAGCTTCGCAGGGTTTGATTTCTGC</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>Primer 2</td>
+      <td>GCAGAAATCAAACCCTGCGAAGCTCTTCTTGTTTGATAACG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td rowspan="19">Analysis of genomic scars and knock-ins</td>
+      <td colspan="3">PCR primers</td>
+    </tr>
+    <tr>
+      <td colspan="3">Brca1 – Nickase 1 and 2 clones</td>
+    </tr>
+    <tr>
+      <td>Fw</td>
+      <td>AAATGTGTGTGTGGAGCCATG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CTTCTCCAAACCAGTAGAGG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td colspan="3">Rif1 – Nickase 1 clones</td>
+    </tr>
+    <tr>
+      <td>Fw</td>
+      <td>GAGTAAATAAGCGCGAGCCG</td>
+      <td>Delgado-Benito et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CGATCCGGAGTTAGTGGGTT</td>
+      <td>Delgado-Benito et al., 2018</td>
+    </tr>
+    <tr>
+      <td colspan="3">Rif1 – Nickase 2 clones</td>
+    </tr>
+    <tr>
+      <td>Fw</td>
+      <td>TTCCTTCCCTCAGTAGAG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GCAACAGGGCTGGCATTT</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td colspan="3">Rif1S→A – Rif1 locus</td>
+    </tr>
+    <tr>
+      <td>Fw</td>
+      <td>GCGGTGCTTGAACTTCAGGG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GCTGCGTGCTCAGTCTCAAC</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td colspan="3">Rif1S→A – HR donor</td>
+    </tr>
+    <tr>
+      <td>Fw</td>
+      <td>TGTGGTGGCTCTGTTGCTGA</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GCATGGTCACGAGCTTCACG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td colspan="3">Rif1S1387A, Rif1S1416A, and Rif1S1528A – Rif1 locus</td>
+    </tr>
+    <tr>
+      <td>Fw</td>
+      <td>ACTCTGAACCATACACTAGCAG</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>TTGGGTGGAGCTTGCAGTGA</td>
+      <td>This paper</td>
+    </tr>
+  </tbody>
+</table>
+
+_Fw: forward; Rev: reverse._
+
+### Western blot and co-immunoprecipitation analyses
 
 Western blot analysis of protein levels was performed on whole-cell lysates prepared by lysis in RIPA buffer (Sigma-Aldrich) supplemented with 1 mM DTT (Sigma-Aldrich), cOmplete EDTA-free Protease Inhibitor Cocktail (Roche), and Pierce Phosphatase Inhibitor Mini Tablets (Thermo Fisher). For assessment of RPA phosphorylation, CH12 were seeded at a density of 105 cells/ml and irradiated 24 hr later with 25 Gy, followed by 3 h of recovery time.
 
@@ -186,28 +462,28 @@ For RIF1-PP1 co-immunoprecipitation analysis, exponentially growing CH12 cells w
 
 The antibodies used for co-IP and WB analysis are anti-FLAG M2 (Sigma-Aldrich), FLAG-M2 peroxidase (HRP conjugated, Sigma-Aldrich), anti-HA (Santa-Cruz), pre-immune serum and anti-RIF1 (Di Virgilio et al., 2013), anti-PP1 (PPP1A/PPP1CA, Abcam), anti-phospho-RPA32 (S4/S8) (Bethyl Laboratories), anti-RPA32 (Millipore), anti-phospho-CHK1 (S345) (Cell Signaling), anti-CHK1 (Cell Signaling), anti-γH2AX (S139) (Cell Signaling), anti-H2AX (Novus Biologicals), anti-tubulin (Abcam), anti-β-actin (Sigma-Aldrich), and anti-vinculin (Sigma-Aldrich).
 
-## Cell viability and metaphase analysis
+### Cell viability and metaphase analysis
 
 For assessment of cell viability, CH12 cells were either mock-treated (DMSO, Carl Roth) or incubated with 1 μM PARPi (Olaparib – AZD2281, Selleckchem) for 72 hr. Residual viability was expressed as percentage of cell viability of PARPi- over DMSO-treated cultures.
 
 For genomic instability analysis, exponentially growing cells were treated with DMSO or 1 μM PARPi for 24 hr followed by 45 min incubation at 37°C with Colcemid (Roche). Metaphase preparation and aberration analysis were performed as follows. Cell pellets were resuspended in 0.075 M KCl at 37°C for 15 min to perform a hypotonic shock, and washed/fixed with 3:1 methanol (VWR)/glacial-acetic acid (Carl Roth) solution for 30 min at RT. Metaphase spreads were prepared by dropping fixed cells on humidified microscope slides, which were air-dried and placed at 42°C for 1 hr. Giemsa staining was performed by using KaryoMAX Giemsa Stain Solution and 1× Gurr Buffer (tablets, Gibco). Metaphases were acquired with the Automated Metaphase Finder System Metafer4 (MetaSystems).
 
-## DNA fiber assay
+### DNA fiber assay
 
 Degradation of nascent DNA at stalled forks was assessed as follows. Exponentially growing CH12 cells were sequentially pulse-labeled with 40 μM of idoxuridine (IdU) (Sigma-Aldrich) and 400 μM of 5-chloro-2′-deoxyuridine thymidine (CldU) (Sigma-Aldrich) for exactly 20 min each, washed once with 1× PBS, and treated with 4 mM HU for 3 hr. Cells were collected and resuspended in 1× PBS at a concentration of 3.5 × 105 cells/ml. 3 μl of cell suspension was diluted with 10 μl of lysis buffer (200 mM Tris-HCl pH 7.5, 50 mM EDTA, and 0.5% [w/v] SDS) on a glass slide and incubated for 2 min at RT. The slides were titled at 15–60°, air-dried, and fixed with 3:1 methanol/acetic acid for 10 min. Slides were denatured with 2.5 M HCl for 80 min, washed with 1× PBS, and blocked with 5% BSA (Carl Roth) in PBS for 40 min. The newly replicated CldU and IdU tracks were labeled for 1.5 hr with anti-BrdU antibodies recognizing CldU (1:500, Abcam) and IdU (1:50, BD Biosciences), followed by 45 min incubation with secondary antibodies anti-mouse Alexa Fluor 488 (1:500, Invitrogen) and anti-rat Alexa Fluor 546 (1:500, Invitrogen). The incubations were performed in the dark in a humidified chamber. DNA fibers were visualized using a Carl Zeiss LSM800 confocal microscope at a 40× objective magnification, and images were analyzed using ImageJ software.
 
 Whenever indicated, the DNA2 inhibitor NSC-105808 (Kumar et al., 2017) was added at a final concentration of 0.3 μM for 24 hr prior to HU addition.
 
-## Proximity ligation assay (PLA)
+### Proximity ligation assay (PLA)
 
 Exponentially growing CH12 cells were incubated with 10  μM of 5-ethynyl-2′-deoxyuridine (EdU) (Merck) for 15  min. For each sample, cells were washed once with 1× PBS and split into two aliquots, one of which was incubated with fresh media containing 4 mM HU for 3 hr. The other aliquot was incubated with fresh media without HU and processed for PLA in parallel (untreated condition). Cells were washed once with 1× PBS and fixed with 4% paraformaldehyde (Sigma-Aldrich) for 10 min at RT. Cells were washed twice with 1× PBS and then permeabilized for 5 min at RT using 0.2% Triton-X-100 (Roth). Cells were washed twice with 1× PBS and incubated for 30 min in the dark at RT with Click-iT Cell Reaction Buffer Kit (Thermo Fisher) supplemented with 25 μM biotin-azide (Thermo Fisher) according to the manufacturer’s instructions to conjugate incorporated EdU with biotin. Specifically, 500 μl of the Click-iT reaction was used for 6 × 106 cells. After the click reaction, cells were washed with 1× PBS and then blocked with 3% BSA in 1× PBS for 1 hr at 37°C in a humidified chamber. The blocking solution was removed and cells were incubated overnight at 4°C with primary antibodies against RIF1 (1:1000) and biotin (1:1000) in blocking solution. The following day the PLA was performed using the Duolink flowPLA Detection Kit – FarRed (Sigma-Aldrich) according to the manufacturer’s instructions. Specifically, 40 μl of reaction mix per sample were used at each step, and all incubations were performed at 37°C in a humidified chamber. Cells were washed twice with Duolink wash buffer and incubated for 1 hr with the Duolink PLA probes anti-mouse plus (for biotin) and anti-rabbit minus (for RIF1) diluted 1:5 in blocking solution. Cells were then washed twice with Duolink wash buffer and incubated with Duolink ligation mix prepared by diluting ligation buffer 1:5 and ligase 1:40 in high-purity water for 30 min. Cells were washed twice and incubated for 100 min with the Duolink amplification mix prepared by diluting amplification buffer 1:5 and rolling circle polymerase 1:80 in high-purity water. Cells were washed twice and then incubated for 30 min with Duolink detection solution prepared by diluting detection buffer 1:5 in high-purity water. The detection solution was washed off, and cells were resuspended in 1× PBS containing 3% BSA. Samples were acquired on a BD LSRFortessa cell analyzer. To control for EdU incorporation, PLA values were expressed as the ratio of the mean fluorescent intensity of the HU-treated versus untreated conditions, which derived from the same EdU-incubated sample, as indicated above.
 
-## Protein sequence analysis
+### Protein sequence analysis
 
 The sequence alignment of RIF1 orthologs was performed simultaneously on the full-length proteins from all 18 species listed in Figure 1—source data 1 using the multiple sequence alignment program Clustal Omega (clustalo version 1.2.4, https://www.ebi.ac.uk/Tools/msa/clustalo/).
 
 The disorder profile plots were determined by the Protein DisOrder prediction System (PrDOS) server (https://prdos.hgc.jp/cgi-bin/top.cgi; Ishida and Kinoshita, 2007) using the template-based prediction option and with the prediction false-positive rate set to 5.0%.
 
-## Statistical analysis
+### Statistical analysis
 
 Information about the statistical analysis of the mass spectrometry datasets is included in the section ‘Identification of RIF1 phosphoresidues’ above. For all other data presented in this study, the statistical significance of differences between groups/datasets was determined by the Mann–Whitney U-test. Statistical details of experiments can be found in the figure legends.

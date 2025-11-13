@@ -22,15 +22,51 @@ We examined the relationships between activity in the locus coeruleus (LC), acti
 
 Multiple lines of evidence implicate the locus coeruleus/norepinephrine (LC/NE) system in perceptual task performance. First, LC activity modulates feedforward processing of sensory stimuli (Hirata et al., 2006; Devilbiss et al., 2006; Rodenkirch et al., 2019) and impacts sensory cortex states (Constantinople and Bruno, 2011; Polack et al., 2013). Second, LC activity correlates with task performance (Rajkowski et al., 1994; Usher et al., 1999) and pupil diameter (Rajkowski et al., 1994; Joshi et al., 2016; Reimer et al., 2016; Liu et al., 2017). Finally, pupil diameter is thought to index arousal and has been found to be correlated with neuronal and behavioral detection or discrimination sensitivity (Reimer et al., 2014; McGinley et al., 2015a; McGinley et al., 2015b; Vinck et al., 2015; Lee and Margolis, 2016; Schriver et al., 2018; Lee et al., 2020; Cazettes et al., 2021), as well as decision bias (de Gee et al., 2014; de Gee et al., 2020). Since sensory cortex activity impacts perceptual reports (Sachidhanandam et al., 2013; Miyashita and Feldman, 2013), these observations suggest the hypothesis that LC/NE modulates sensory cortex activity and affects perceptual task performance and that this effect can be monitored noninvasively via the easy-to-measure pupil diameter. Testing this hypothesis requires simultaneous measurement of (1) LC activity, (2) cortical activity, ideally subthreshold membrane potential, and (3) pupil diameter, all during perceptual task performance. Here, we recorded spiking activity of optogenetically-tagged LC units together with pupil diameter in mice performing a tactile detection task (Yang et al., 2016). In a subset of experiments, we also performed simultaneous whole-cell current clamp recordings in S1 (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig1-v1.jpg)
+
+**Figure 1.:** (a) Task schematic, trial structure, and all trial types of the single-whisker detection task (Yang et al., 2016). (b) Schematic of tetrode recording in LC, whole-cell recording in S1, and pupil tracking during the task. (c) Expression of ChR2 in a Dbh;Ai32 mouse (ChR2-EYFP: green; tyrosine hydroxylase TH: red). (d) Left: Responses of a ChR2-expressing LC unit to opto-tagging (lightning bolts: blue light pulses) and tail pinch. Middle: LC unit responses to 12 blue light pulses (200 ms) aligned to individual pulse onset. Ticks represent spikes. PSTH is shown at the bottom. Right: Typical wide waveforms of LC units and an electrolytic lesion (arrow: lesion site) in the LC (white) showing the recording location. (e) Example simultaneously recorded LC activity, S1 Vm, and pupil with auditory cue and whisker stimulation onsets indicated. Trace is from a brief period of non-performance during a behavioral session and so there are no licks. The example pupil size is typical for all sessions (Figure 1—figure supplement 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Histogram of median pupil diameter (n = 39 recordings). Magenta arrow indicates the recording shown in Figure 1e.
+
 ## Results
 
 First, we report the analysis of LC and pupil recordings during behavior (e.g., Figure 2a). Consistent with prior reports (Joshi et al., 2016; Reimer et al., 2016; Liu et al., 2017), cross-correlogram analysis revealed that LC spiking activity and pupil diameter were correlated across entire sessions, with pupil dilation following LC spikes (peak correlation coefficient: 0.15 ± 0.02; time lags: 2.61 ± 0.39 s, n = 39 recordings, Figure 2b). Mean LC spiking activity aligned with trial onsets showed prominent responses to a tone delivered at the beginning of each trial, as well as in trials where mice made Go (licking) responses (Hit and False Alarm trials, Figure 2a,c). LC spiking activity to the tone was comparable to Go responses (p=0.24, Figure 2d, Materials and methods). On Hit trials, where mice successfully licked to the whisker stimulus, pre-stimulus LC activity (measured in a 0.5 s window prior to stimulus onset) was slightly but significantly lower than Miss trials, where mice failed to lick to the whisker stimulus (Figure 2e). We note that on Miss trials, LC responded weakly to the whisker stimulus alone (<0.5 sp/s above baseline, Figure 2—figure supplement 1). LC activity measured in a short window (0.2 s) after stimulus onset was larger on Hits compared with Misses (Figure 2e; the same trend holds for 0.1 s window, data not shown). Ideal-observer analysis showed that both pre- and post-stimulus LC activity significantly predicted perceptual reports of the mice on a trial-by-trial basis, with choice probabilities (Yang et al., 2016) of 0.47 ± 0.014 (p=0.032, n = 43) for pre-stimulus and 0.59 ± 0.017 (p=4.6e-6, n = 43) for post-stimulus LC activity, respectively (Figure 2e). LC activity aligned to the time of licking showed that spiking responses began ~200 ms prior to licking (Figure 2f).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig2-v1.jpg)
+
+**Figure 2.:** (a) Example LC recording with pupil tracking. Left: LC spike raster separated by trial types. Right: Mean pupil diameter (± s.e.m.) separated by trial types. Gray and black arrows indicate tone and stimulus onsets, respectively. Gray and black bars indicate the time windows during which pupil responses to tone and to Go (behavioral responses) were quantified, respectively. We note that based on the temporal profiles of pupil diameter in different trial types (i.e., in the presence or absence of tactile stimulus or licking) and that the tactile stimulus starts 1 s after tone onset, pupil responses to tone and Go can be segregated (Materials and methods). (b) Top: Grand average cross-correlogram between LC spike train and pupil diameter (n = 39). Individual LC spikes were convolved with a 400 ms wide Gaussian kernel. Spike times were shuffled and LC–pupil correlations computed to establish controls (narrow gray band around zero). Bottom: Histogram of peak correlation coefficient (left), and time lags (right) between LC spike train and pupil diameter for each paired recording (magenta dot: mean). Both distributions are significantly larger than 0 (peak correlation coefficient: 0.15 ± 0.02, p=8.3e-7, signed rank = 743; time lags: 2.61 ± 0.39 s, p=7.8e-7, signed rank = 744, n = 39). (c) Grand average trial-aligned LC spike rate (n = 43, top), and pupil diameter (n = 36, bottom) averaged by different trial types. Gray and black arrows indicate tone and stimulus onsets, respectively. In Hit trials, the latency of LC responses to tone onset was 0.064 ± 0.005 s, and to whisker stimulation onset was 0.111 ± 0.008 s, and the reaction time (first lick latency to whisker stimulation onset) of the mice was 0.58 ± 0.03 s. (d) Left: LC responses to tone (T) and Go responses (G) during Hit trials with median indicated. Tone vs. Go: 4.79 (3.70–6.66) sp/s vs. 4.68 (3.33–7.26) sp/s, median (IQR), p=0.24, signed rank = 496.5, n = 43. Right: Pupil responses to tone and Go responses during Hit trials with median indicated. Tone vs. Go: 0.003 (−0.015–0.015) mm vs. 0.027 (−0.010–0.063) mm, median (IQR), p=6.4e-5, signed rank = 559, n = 36. Gray lines indicate individual recordings. (e) Top: Pre-stimulus (baseline) and post-stimulus (evoked) LC spike rate for Hit and Miss trials with median indicated (Baseline: Hit vs. Miss, 0.66 (0.30–3.51) sp/s vs. 1.55 (0.68–3.00) sp/s, median (IQR), p=0.0083, signed rank = 254.5; Evoked: Hit vs. Miss, 3.24 (1.78–5.49) sp/s vs. 1.82 (0.95–3.45) sp/s, median (IQR), p=5.5e-7, signed rank = 782.5, n = 43). Gray lines indicate individual recordings. Bottom: Histogram of choice probability for Hit vs. Miss trials based on baseline and evoked LC activity (magenta dots: mean). Choice probabilities are significantly deviated from 0.5. Baseline: 0.47 ± 0.014, p=0.032, signed rank = 295.5; Evoked: 0.59 ± 0.017, p=4.6e-6, signed rank = 751, n = 43. (f) Lick-aligned LC spike rate (top) and pupil diameter (∆Pupil, bottom) averaged by trial types: Hit (blue), FA (green).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Hit trials: Pre-stimulus vs. post-stimulus: 0.66 (0.30-3.51) sp/s vs. 3.24 (1.78-5.49) sp/s, median (IQR), P = 7.6e-7, n = 43. (b) Miss trials: Pre-stimulus vs. post-stimulus: 1.55 (0.68-3.00) sp/s vs. 1.82 (0.95-3.45) sp/s, median (IQR), P = 0.02, n = 43.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Pupil responses to the tone for Hit and Miss trials with median indicated. Hit vs. Miss, 0.003 (-0.015 – 0.015) mm vs. 0.0083 (-0.0005 – 0.029) mm, median (IQR), P = 0.0062, n = 36. Gray lines indicate individual recordings. (b) Histogram of choice probability for Hit vs. Miss trials based on pupil responses to the tone (magenta dot: mean). Choice probability is significantly deviated from 0.5 (0.44 ± 0.021, P = 0.0036, n = 36).
 
 In striking contrast, pupil diameter minimally increased in response to the tone. Instead, pupil strongly dilated on Hit and False Alarm trials, in which mice made Go (licking) responses (Figure 2a,c,d; tone vs. Go: p=6.4e-5, n = 36, Materials and methods) (Lee and Margolis, 2016). Interestingly, pupil response to the tone was larger on Misses compared to Hits and significantly predicted perceptual choices of the mice (Figure 2—figure supplement 2). Pupil diameter changes (∆Pupil) aligned to the time of licking showed that pupil responses occurred after licking (Figure 2f).
 
 Together, these data show that LC and pupil responses were positively correlated. Both LC activity and pupil diameter increased during licking responses, but LC also strongly responded to the tone, a salient sensory cue that alerted mice to trial onsets. Thus, LC activity and pupil diameter appear to reflect different sets of task events during this behavior.
 
 Next, we analyzed recordings where we simultaneously measured membrane potential (Vm) of S1 neurons (mostly from layer 2/3, Figure 3—figure supplement 1), along with LC spiking and/or pupil diameter during the detection task. Our goal was to determine how LC spiking related to cortical activity and to pupil diameter during task performance. We used spike-triggered averages (STAs) to quantify how individual spikes from single LC units correlated with changes in Vm and pupil diameter. LC spike-triggered Vm analyses revealed that LC spikes were associated with a depolarization in cortical neurons (1.39 ± 0.35 mV, n = 12, Figure 3a–c). On average, Vm depolarization associated with an LC spike peaked after the spike, with short time lags from an LC spike to peak depolarization in S1 (0.17 ± 0.06 s, n = 12, Figure 3a–c; also see Figure 3—figure supplement 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig3-v1.jpg)
+
+**Figure 3.:** (a) Two examples of LC spike-triggered average ∆Vm. (b) Group mean of LC spike-triggered average ∆Vm (± s.e.m., n = 12). (c) Histograms of peak ∆Vm and peak lags (showing all LC–S1 pairs) with means indicated (magenta dots). Both distributions are significantly larger than 0 (peak ∆Vm: 1.39 ± 0.35 mV, p=4.9e-4, signed rank = 78; peak lags: 0.17 ± 0.06 s, p=4.9e-4, signed rank = 78, n = 12). (d) Two examples of LC spike-triggered average ∆Pupil. (e) LC spike-triggered average ∆Pupil group mean (± s.e.m., n = 7). (f) Histograms of peak ∆Pupil and peak lags (showing all LC–Pupil pairs) with means indicated (magenta dots). Both distributions are significantly larger than 0 (peak ∆Pupil: 0.03 ± 0.01 mm, p=0.016, signed rank = 28; peak lags: 1.89 ± 0.25 s, p=0.016, signed rank = 28, n = 7). (g) Two examples of Pupil–Vm cross-correlograms. (h) Group mean of Pupil–Vm cross-correlograms (± s.e.m., n = 19). (i) Histograms of peak Pupil–Vm correlation coefficient and peak lags (showing all S1–Pupil pairs) with means indicated (magenta dots). Both distributions are not significantly deviated from 0 (peak correlation coefficient: 0.05 ± 0.04, p=0.33, signed rank = 119; peak lags: - 0.22 ± 1.01 s, p=0.87, signed rank = 99, n = 19). (j) Group mean of the time derivative of pupil (Pupil’)–Vm cross-correlograms (± s.e.m., n = 19). (k) Histograms of peak Pupil’-Vm correlation coefficient and peak lags with means indicated (magenta dots). Both distributions are significantly larger than 0 (peak correlation coefficient: 0.15 ± 0.03, p=1.6e-4, signed rank = 189; peak lags: 1.31 ± 0.24 s, p=1.3e-4, signed rank = 190, n = 19). (l) Left: Peak correlation coefficient for LC–Vm, Pupil–Vm and Pupil’–Vm pairs after progressive high-pass filtering of S1 Vm. Right: Exponential decay functions (corr. coef. = a*exp(−freq*μ)) were fitted to these curves. The time constant μ is significantly different (repeated-measures ANOVA, F(2, 36)=74.5, p=1.6e-13, n = 19). Post hoc Tukey–Kramer tests revealed that the LC–Vm relationship had the slowest decay and Pupil–Vm had the fastest decay. LC–Vm vs. Pupil–Vm, p=5.9e-8; LC–Vm vs. Pupil’–Vm, p=0.0037; Pupil–Vm vs. Pupil’–Vm, p=7.1e-7.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Red: 12 S1 recordings included in the LC–S1 pairs in Figures 3a–c and 4a. Gray: 19 S1 recordings included in the Pupil–S1 pairs in Figure 3g–I.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Group mean of cross-correlogram between LC spike train and S1 Vm (n = 12). Individual LC spikes were convolved with a 400 ms wide Gaussian kernel. (b) Histogram of peak correlation coefficient (0.24 ± 0.03) and time lag (0.24 ± 0.06 s) between LC spike train and S1 Vm for each paired recording (magenta dot: mean).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Group mean of LC spike-triggered time derivative of pupil diameter (Pupil’, n = 7), same dataset as used in Figure 3d–f. (b) Histogram of peak pupil’ (0.05 ± 0.01 mm/s) and time lag (0.53 ± 0.35 s) between LC spike train and pupil’ for each paired recording (pupil dot: mean).
 
 Consistent with the previous cross-correlogram analysis based on a larger set of LC–pupil recordings (Figure 2b), here STA analysis showed that pupil diameter increased in association with individual spikes from LC single units (0.03 ± 0.01 mm, n = 7), with peak dilation occurring roughly 10-fold slower than peak Vm depolarization (time lags from an LC spike to peak pupil dilation: 1.89 ± 0.25 s, n = 7, Figure 3d–f).
 
@@ -41,6 +77,22 @@ Together, these data show that LC spikes preceded S1 depolarizations and pupil d
 Individual trials in our detection task contained distinct events, including the tone that alerted mice of the trial start (‘Tone’), the whisker stimulus on Go trials (‘Stimulus’), and licks (‘Lick’), as well as other periods in which mice did not receive stimuli or make lick responses (‘Quiet’). For a more granular perspective on how LC spiking correlated with changes in Vm and pupil diameter, we computed LC spike-triggered averages separately in these different event windows (task epochs, Materials and methods).
 
 While single LC spikes were associated with prominent changes in both cortical Vm and pupil diameter, we found that these associations strikingly depended on task epoch: Vm depolarization associated with an LC spike had the biggest response to tone/licking and almost no response during the quiet periods (Figure 4a). In contrast, pupil dilation associated with an LC spike had the biggest response to licking and almost no response to the tone (Figure 4b; this was true as well for pupil dilation after z-scoring, Figure 4—figure supplement 1). The pupil’ associated with an LC spike had an intermediate response to the tone (Figure 4c). In addition, peak pupil dilation, pupil’ and Vm depolarization appeared to have different dependencies on LC spike counts, with a roughly monotonic relationship between pupil and LC, and a much weaker dependence between Vm and LC (Figure 4—figure supplement 2). The relationship between Vm and LC spike count could partly but not fully be attributable to differences in the LC inter-spike intervals (Figure 4—figure supplement 2a). Thus, the correlations between LC spiking and Vm, and between LC spiking and pupil diameter, are non-stationary, even on the timescale of a few seconds. Importantly, these epoch dependencies were different for Vm and pupil – with the biggest response occurring to the tone for Vm and the smallest response occurring to the tone for pupil – suggesting that the correlations between LC activity and Vm and pupil each reflect distinct unmeasured underlying processes.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig4-v1.jpg)
+
+**Figure 4.:** (a) Top: LC spike-triggered ∆Vm separated by task epoch: tone, stimulus, lick, and quiet. Bottom: Bar graphs of peak ∆Vm for each epoch. Dots indicate individual paired recordings. Repeated-measure ANOVA, F(3, 33)=9.2, p=1.4e-4, n = 12. Post hoc Tukey–Kramer tests revealed that peak ∆Vm in lick, stimulus, and tone epochs were not different from each other. Lick vs. Stim, p=1.00; Lick vs. Tone, p=0.76; Stim vs. Tone, p=0.94. Peak ∆Vm in quiet epochs was lower. Quiet vs. Lick, p=0.0059; Quiet vs. Stim, p=0.0038; Quiet vs. Tone, p=0.0041. (b) Top: LC spike-triggered ∆Pupil separated by task epoch. Bottom: Bar graphs of peak ∆Pupil for each epoch. Dots indicate individual paired recordings. Repeated-measure ANOVA, F(3, 57)=22.1, p=1.3e-9, n = 20. Post hoc Tukey–Kramer tests revealed that peak ∆Pupil in lick and stimulus epochs were larger than in tone and quiet epochs. Lick vs. Stim, p=0.10; Tone vs. Quiet, p=0.76; Lick vs. Tone, p=3.7e-7; Lick vs. Quiet, p=6.2e-4; Stim vs. Tone, p=1.1e-4; Stim vs. Quiet, p=0.0027. (c) Top: LC spike-triggered pupil’ separated by task epoch. Bottom: Bar graphs of peak pupil’ for each epoch. Dots indicate individual paired recordings. Repeated-measures ANOVA, F(3, 57)=35.3, p=4.9e-13, n = 20. Post hoc Tukey–Kramer tests revealed that peak pupil’ in lick and stimulus epochs were larger than in tone, and peak pupil’ in quiet epochs was the lowest. Lick vs. Stim, p=0.46; Tone vs. Quiet, p=0.0013; Lick vs. Tone, p=1.0e-4; Lick vs. Quiet, p=1.4e-8; Stim vs. Tone, p=0.0058; Stim vs. Quiet, p=6.7e-6.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) LC spike-triggered z-scored ∆Pupil separated by task epoch. (b) Bar graphs of z-scored peak ∆Pupil for each epoch. Dots indicate individual paired recordings. Repeated-measure ANOVA, F(3, 57)=21.4, p=2.1e-9, n = 20. Post hoc Tukey–Kramer tests revealed that z-scored peak ∆Pupil in lick and stimulus epochs were larger than in tone and quiet epochs. Lick vs. Stim, p=0.16; Tone vs. Quiet, p=0.65; Lick vs. Tone, p=3.0e-8; Lick vs. Quiet, p=3.3e-4; Stim vs. Tone, p=3.0e-4; Stim vs. Quiet, p=0.0087.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) From left to right: (1) Peak ∆Vm vs. LC spike counts by epoch. (2) Inter-spike-interval vs. LC spike counts by epoch. Quiet and Stimulus epochs differ for the Vm response across LC spike counts, but their ISIs are similar. At low spike counts, Quiet and Tone epochs differ for both Vm response and ISI. ∆Vm for LC spike counts 2-5, Quiet vs. Stim: P = 9.9e-4, 0.081, 0.016, 0.14; Quiet vs. Tone: P = 0.0043, 0.062, 0.11, 0.19. ISI for LC spike counts 2-5, Quiet vs. Stim: P = 0.44, 0.25, 1, 0.79; Quiet vs. Tone: P = 0.0061, 0.0068, 0.20, 0.38. Two-tailed Wilcoxon rank sum test. (3) Peak ∆Vm vs. mean inter-spike-interval for LC spike counts 2-5. This is essentially replotting the values in the y axis in (1) against the values in y axis in (2). (4) Cumulative histograms showing numbers of trials that go into the plots when broken down by LC spike counts. (b) From left to right: (1) Peak ∆Pupil vs. LC spike counts by epochs. (2) Inter-spike-interval vs. LC spike counts by epochs. (3) Peak ∆Pupil vs. mean inter-spike-interval for LC spike counts 2-5. (4) Cumulative histograms showing numbers of trials that go into the plots when broken down by LC spike counts. (c) From left to right: (1) Peak Pupil’ vs. LC spike counts by epochs. (2) Inter-spike-interval vs. LC spike counts by epochs, identical to what is shown in b. (3) Peak Pupil’ vs. mean inter-spike-interval for LC spike counts 2-5. (4) Cumulative histograms showing numbers of trials that go into the plots when broken down by LC spike counts, which is identical to the histogram in (b).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Bar graphs of peak ∆Vm (a) and ∆Pupil (b) for each epoch, when ‘Tone’ epochs were defined 0 s to 0.5 s with respect to tone onset.
 
 ## Discussion
 
@@ -55,6 +107,114 @@ Our data show that while LC spiking and pupil diameter correlate well at long ti
 Pupil size changes have been linked to activity in multiple brain areas and neuromodulatory systems (Joshi et al., 2016; Reimer et al., 2016; Cazettes et al., 2021), and different pupil response profiles reflect different cognitive processes (Schriver et al., 2020). Therefore, it is possible that the pupil exhibits dynamic coupling with different underlying brain circuits in a cognitive process (behavioral epoch)-dependent way. In addition, a recent study showed that pupil responses to dorsal raphe stimulation exhibited task uncertainty-dependent variations (Cazettes et al., 2021). Thus, it is also possible that other modulatory systems (e.g., serotonergic and cholinergic, Berridge and Waterhouse, 2003) modulate the pupil–LC coupling in a dynamic manner.
 
 ## Materials and methods
+
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>DBH-Cre</td>
+      <td>MMRRC</td>
+      <td>Cat# 036778-UCD, RRID:MMRRC_036778-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Ai32</td>
+      <td>Jackson Laboratory</td>
+      <td>Cat#: JAX:012569, RRID:IMSR_JAX:012569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BControl</td>
+      <td>Princeton University</td>
+      <td>https://brodylabwiki.princeton.edu/bcontrol</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WaveSurfer</td>
+      <td>HHMI Janelia</td>
+      <td>http://wavesurfer.janelia.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StreamPix</td>
+      <td>Norpix</td>
+      <td>RRID:SCR_015773</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>High-speed CMOS camera</td>
+      <td>PhotonFocus</td>
+      <td>DR1-D1312-200-G2-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Telecentric lens</td>
+      <td>Edmund Optics</td>
+      <td>Cat#: 55–349</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pipette glass</td>
+      <td>Warner Instruments</td>
+      <td>Cat#: 640792</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tetrode drive</td>
+      <td>Cohen et al., 2012</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TH primary antibody (rabbit, polyclonal)</td>
+      <td>Thermo-Fisher</td>
+      <td>Cat#: OPA1-04050, RRID: AB_325653</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Secondary antibody (goat, polyclonal)</td>
+      <td>Thermo-Fisher</td>
+      <td>Cat#: A-11008, RRID:AB_2534079</td>
+      <td>(1:500)</td>
+    </tr>
+  </tbody>
+</table>
 
 All procedures were performed in accordance with protocols approved by the Johns Hopkins University Animal Care and Use Committee. Mice were DBH-Cre (B6.FVB(Cg)-Tg(Dbh-cre) KH212Gsat/Mmucd, 036778-UCD, MMRRC) and Ai32 (RCL-ChR2(H134R)/EYFP, 012569, JAX), singly housed in a vivarium with reverse light–dark cycle (12 hr each phase). Male and female mice of 6–12 weeks were implanted with titanium head posts as described previously (Yang et al., 2016). After recovery, mice were trained to perform a Go/NoGo single whisker detection task as described previously (Yang et al., 2016). Behavioral apparatus was controlled by BControl (C. Brody, Princeton University). A custom ‘lickport’ was placed within reach of the mouse’s tongue and used both to deliver water rewards and to record the time of each lick, determined via measurement of an electrical conductance change caused by contact between tongue and lickport. On go trials, a single whisker was deflected for 0.5 s with a 40 Hz sinusoidal deflection (rostral to caudal, peak angular speed ~800 deg/s). A ‘response window’ was defined as 0.2–2 s after the time of whisker stimulus onset for go trials or the time that the whisker stimulus would have onset on no-go trials. A ‘hit’ trial occurred when mice licked the lickport within the response window, and a drop of water was delivered. On go trials, if mice did not lick within the 1.8 s response window, the trial was scored as a ‘miss’ and no reward or punishment was delivered. Go trials were randomly mixed with no-go trials, in which the whisker was not deflected. No more than three consecutive trials of the same type were allowed. On no-go trials, if mice licked within the response window, it was scored as a ‘false alarm’, and mice were punished with a 3–5 s time-out. If mice licked during the time-out, an additional time-out was triggered. A ‘correct rejection’ occurred when mice withheld licking during the response window. Correct rejections were not rewarded. A 0.1 s auditory cue (8 kHz tone, ~80 dB SPL) was introduced starting 1 s before stimulus onset. During all sessions, ambient white noise (cut off at 40 kHz, ~80 dB SPL) was played through a separate speaker to mask any other potential auditory cues associated with movement of the piezo stimulator. Trials where mice made ‘premature’ licking during the period between tone and 0.1 s after whisker stimulation onset were excluded from further analysis. To align LC activity and pupil traces to the ‘first lick’ (Figure 2f), we used the first lick occurring in the response window. A total of 46 recordings from eight mice are reported (mean hit rate: 0.52 ± 0.03; false alarm rate: 0.11 ± 0.02).
 

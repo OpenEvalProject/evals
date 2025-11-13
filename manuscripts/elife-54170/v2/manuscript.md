@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Spinal motor networks are formed by diverse populations of interneurons that set the strength and rhythmicity of behaviors such as locomotion. A small cluster of cholinergic interneurons, expressing the transcription factor Pitx2, modulates the intensity of muscle activation via ‘C-bouton’ inputs to motoneurons. However, the synaptic mechanisms underlying this neuromodulation remain unclear. Here, we confirm in mice that Pitx2 + interneurons are active during fictive locomotion and that their chemogenetic inhibition reduces the amplitude of motor output. Furthermore, after genetic ablation of cholinergic Pitx2 + interneurons, M2 receptor-dependent regulation of the intensity of locomotor output is lost. Conversely, chemogenetic stimulation of Pitx2 + interneurons leads to activation of M2 receptors on motoneurons, regulation of Kv2.1 channels and greater motoneuron output due to an increase in the inter-spike afterhyperpolarization and a reduction in spike half-width. Our findings elucidate synaptic mechanisms by which cholinergic spinal interneurons modulate the final common pathway for motor output.
+Spinal motor networks are formed by diverse populations of interneurons that set the strength and rhythmicity of behaviors such as locomotion. A small cluster of cholinergic interneurons, expressing the transcription factor Pitx2, modulates the intensity of muscle activation via ‘C-bouton’ inputs to motoneurons. However, the synaptic mechanisms underlying this neuromodulation remain unclear. Here, we confirm in mice that Pitx2+ interneurons are active during fictive locomotion and that their chemogenetic inhibition reduces the amplitude of motor output. Furthermore, after genetic ablation of cholinergic Pitx2+ interneurons, M2 receptor-dependent regulation of the intensity of locomotor output is lost. Conversely, chemogenetic stimulation of Pitx2+ interneurons leads to activation of M2 receptors on motoneurons, regulation of Kv2.1 channels and greater motoneuron output due to an increase in the inter-spike afterhyperpolarization and a reduction in spike half-width. Our findings elucidate synaptic mechanisms by which cholinergic spinal interneurons modulate the final common pathway for motor output.
 
 ## Introduction
 
@@ -34,15 +34,15 @@ In this study, we employed a combination of genetic, pharmacological and electro
 
 ## Results
 
-## Pitx2+ INs are rhythmically active during fictive locomotion
+### Pitx2+ INs are rhythmically active during fictive locomotion
 
 We first confirmed that Pitx2+ interneurons exhibit rhythmic activity that is phase locked to spinal locomotor network output. Hemisected spinal cords were dissected from Pitx2::Cre;GCAMP6s mice to visualize Ca2+ activity from groups of Pitx2+ interneurons whilst simultaneously recording pharmacologically induced locomotor output from L1-L3 lumbar ventral roots (Figure 1a). Pitx2+ interneurons (32 upper lumbar interneurons and 19 lower lumbar interneurons, 6 hemisected spinal cords, 3 mice) exhibited clear rhythmic activity during fictive locomotion (Figure 1b–c). The activity of 65.6% of L1-3 interneurons was tightly phase locked with respective L1-L3 ventral root output (indicated by a significant Rayleigh test statistic, p<0.05; Figure 1d,e), while the activity of a smaller population of lower lumbar (L4-L6) interneurons was also aligned with upper lumbar output (only 31.6%, Figure 1d,e). The remaining cells did not show any phase relationship associated with ventral root output. These data clearly demonstrate that groups of Pitx2+ interneurons are rhythmically active during fictive locomotion and that, as indicated by previous single-cell recordings (Zagoraiou et al., 2009), their activity patterns are tightly locked to the locomotor cycle.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig1-v2.jpg)
 
-**Figure 1.:** + interneurons are rhythmically active during fictive locomotion.(a) Illustration of ventral root recordings and Ca2+ imaging from Pitx2+ interneurons (green) in hemisected spinal cords from Pitx2::Cre;GCAMP6 mice. (b) Pitx2+ interneurons visualized in the L1-3 upper lumbar regions in a neonatal hemisected spinal cord from a Pitx2::Cre;GCAMP6 mouse. (c) Ventral root output and examples of Ca2+ imaging traces from the four neurons marked in (b). (d) Phase plots depicting relationships between Ca2+ transients in interneurons and ventral root output for three neurons in L1-3 (top) and three neurons in L4-6 (bottom). Blue points represent the phasing of individual Ca2+ transients within a locomotor cycle, red points represent the mean direction and strength of the phasing for each neuron, and grey shading indicates the average duration of upper lumbar-related bursts. (e) Summary graph of mean direction and strength of phasing for all interneurons analyzed (L1-3, n=31; and L4-6, n=19).Figure 1—source data 1.
+**Figure 1.:** (a) Illustration of ventral root recordings and Ca2+ imaging from Pitx2+ interneurons (green) in hemisected spinal cords from Pitx2::Cre;GCAMP6 mice. (b) Pitx2+ interneurons visualized in the L1-3 upper lumbar regions in a neonatal hemisected spinal cord from a Pitx2::Cre;GCAMP6 mouse. (c) Ventral root output and examples of Ca2+ imaging traces from the four neurons marked in (b). (d) Phase plots depicting relationships between Ca2+ transients in interneurons and ventral root output for three neurons in L1-3 (top) and three neurons in L4-6 (bottom). Blue points represent the phasing of individual Ca2+ transients within a locomotor cycle, red points represent the mean direction and strength of the phasing for each neuron, and grey shading indicates the average duration of upper lumbar-related bursts. (e) Summary graph of mean direction and strength of phasing for all interneurons analyzed (L1-3, n=31; and L4-6, n=19).
 
-## Chemogenetic inhibition of Pitx2+ INs decreases the amplitude of locomotor output
+### Chemogenetic inhibition of Pitx2+ INs decreases the amplitude of locomotor output
 
 We next sought to directly demonstrate the role that Pitx2+ interneurons play in controlling motoneuron output during locomotor network activity. Cre-dependent DREADD mice were used to manipulate the activity of Pitx2+ interneurons during fictive locomotion.
 
@@ -50,19 +50,27 @@ We first investigated whether Pitx2+ interneurons could be effectively inhibited
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig2-v2.jpg)
 
-**Figure 2.:** (a) Schematic representation of a spinal cord slice containing Pitx2+ interneurons (red) targeted for single-cell recordings. (b and c) Spontaneous firing of Pitx2+ interneurons from Pitx2::Cre;tdTomato;hM4Di (b) and Pitx2::Cre;tdTomato (c) mice in control conditions and in the presence of CNO (1 μM); along with firing frequency data pooled for all recordings (b, n = 9; c, n = 5). *p<0.05.Figure 2—source data 1.Pitx2::Cre;tdTomato;hM4Di and Pitx2::Cre;tdTomato mice.
+**Figure 2.:** (a) Schematic representation of a spinal cord slice containing Pitx2+ interneurons (red) targeted for single-cell recordings. (b and c) Spontaneous firing of Pitx2+ interneurons from Pitx2::Cre;tdTomato;hM4Di (b) and Pitx2::Cre;tdTomato (c) mice in control conditions and in the presence of CNO (1 μM); along with firing frequency data pooled for all recordings (b, n = 9; c, n = 5). *p<0.05.
 
 Having established that populations of Pitx2+ interneurons are active during fictive locomotion and that their activity can be reduced using the inhibitory DREADD, we went on to assess the effect that chemogenetic inhibition of Pitx2+ interneurons has on ventral root output. Ventral root recordings from L1-L5 were obtained from spinal cords isolated from Pitx2::Cre;hM4Di mice. Pitx2+ interneurons were then inhibited by perfusion of CNO during fictive locomotion (Figure 3a). Inhibition of Pitx2+ interneurons during fictive locomotion did not change burst frequency (Q = 0.57, Friedman’s test, p=0.7515; Figure 3c, n = 14) or duration (Q = 5.28, Friedman’s test, p=0.0712; Figure 3e, n = 14) but significantly decreased burst amplitude (−10.7 ± 1.8%, F = 4.34, Repeated measures ANOVA, p=0.0235; Figure 3g, n = 14). We also did not observe any significant changes in the variance of burst frequency (F = 4.33, Repeated measures ANOVA, p=0.1146, n = 14) or duration (F = 1.44, Repeated measures ANOVA, p=0.4857, n = 14). CNO had no effect on fictive locomotion in spinal cord preparations obtained from mice that did not express Cre-recombinase (Figure 3—figure supplement 1). When M2 receptors were blocked using methoctramine (10 µM; Figure 3b), DREADD-mediated inhibition of Pitx2+ interneurons had no significant effect on burst frequency (F = 1.23, Repeated measures ANOVA, p=0.3203; Figure 3d, n = 8), duration (Q = 3.25, Friedman’s test, p=0.2359; Figure 3f, n = 8) or amplitude (F = 0.89, Repeated measures ANOVA, p=0.4345, Figure 3h, n = 8), indicating that the observed reduction in motor output involved C-boutons derived from V0c interneurons.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig3-v2.jpg)
+
+**Figure 3.:** (a and b) Raw (top) and integrated/rectified (bottom) traces illustrating the effects of (a) CNO (1 μM) and (b) CNO plus methoctramine (10 μM) on drug-induced locomotor output recorded from spinal cords of Pitx2::Cre;hM4Di mice. (c – h) Time course plots and box-plots of pooled data showing the effects of CNO alone or CNO plus methoctramine on locomotor burst frequency (b,c), duration (d,e) and amplitude (g,h). *p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Raw (top) and integrated/rectified (bottom) traces showing locomotor-related ventral root bursts recorded from the spinal cord of a hM4Di mouse in control, CNO and wash conditions. (b–d) Average time course plots (top) and mean pooled data (bottom) showing no significant effect of CNO (1 μM) on the frequency (b), duration (c) or amplitude (d) of drug-induced locomotor output recorded from the spinal cords of hM4Di mice (n = 8).
 
 We next investigated the modulatory effects of Pitx2+ interneurons on the locomotor-related firing output of individual motoneurons by performing whole-cell patch-clamp recordings from lumbar motoneurons within intact spinal cord, preparations obtained from Pitx2::Cre;tdTomato;hM4Di mice (Figure 4a). Application of CNO, to chemogenetically inhibit Pitx2+ interneurons, led to a clear reduction in the rate of motoneuron firing during locomotor bursts (t(3)=5.40, Paired t-test, p=0.0125; Figure 4b). We also observed an outward current in motoneurons when CNO was applied (102 ± 14 pA, n = 11), which was associated with a decrease in input resistance (control: 88 ± 8 MΩ, CNO: 68 ± 4 MΩ, t(8)=2.455, Paired t-test, p=0.0386).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig4-v2.jpg)
 
-**Figure 4.:** + interneurons decreases motoneuron firing rates during fictive locomotion.(a) Schematic depicting the intact spinal cord preparation used for patch clamp recordings of lumbar motoneurons (green) during fictive locomotion. (b) Spontaneous firing recorded from a motoneuron during pharmacologically induced fictive locomotion in control conditions and after the addition of CNO; along with firing frequency data pooled for all recordings (n = 4); *p<0.05.Figure 4—source data 1.Pitx2::Cre;hM4Di mice.
+**Figure 4.:** (a) Schematic depicting the intact spinal cord preparation used for patch clamp recordings of lumbar motoneurons (green) during fictive locomotion. (b) Spontaneous firing recorded from a motoneuron during pharmacologically induced fictive locomotion in control conditions and after the addition of CNO; along with firing frequency data pooled for all recordings (n = 4); *p<0.05.
 
 Taken together, these results directly demonstrate that Pitx2+ interneurons play a specific role in regulating the intensity of locomotor-related motoneuron output and that this modulation is mediated by M2 receptors, known to be expressed at C-bouton synapses. In addition, Pitx2+ interneurons appear to have little influence on rhythm or pattern generating elements of spinal motor circuits.
 
-## Ablation of V0c INs eliminates muscarinic modulation of the intensity of locomotor output
+### Ablation of V0c INs eliminates muscarinic modulation of the intensity of locomotor output
 
 Results obtained from Pitx2::Cre;hM4Di mice indicate that Pitx2+ interneurons modulate motoneuron output via M2 receptors located at C-bouton synapses. However, chemogenetic inhibition with CNO did not fully abolish Pitx2+ cell firing (Figure 2b). Furthermore, spinal Pitx2+ interneurons subdivide into cholinergic (V0c) and glutamatergic (V0g) subtypes (Zagoraiou et al., 2009), but the transgenic mice utilized in our inhibitory DREADD experiments did not enable the functional dissociation of V0c versus V0g interneurons. Next, we therefore assessed the effects of the specific ablation of V0c interneurons and their C-bouton inputs to motoneurons.
 
@@ -70,17 +78,25 @@ Pitx2::Cre mice were crossed with a novel vAChT-stop-DTA mouse line (where there
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig5-v2.jpg)
 
-**Figure 5.:** + interneurons (V0c) eliminates C-boutons around motoneuron somata.(a) Immunofluorescence in spinal cord sections of P2 wt (control) and Pitx2::Cre;vAChT-stop-DTA (experimental) mice using antibodies against Pitx2 (red) and Choline Acetyl Transferase (ChAT, green). (b) Immunofluorescence in spinal cord sections of P7 upper lumbar levels from wt (control) and Pitx2::Cre;;vAChT-stop-DTA (experimental) mice using antibodies against Pitx2 (red) and ChAT (green). White arrows in (a) and (b) point to double positive neurons. Neurons that are positive for cholinergic markers only but not positive for Pitx2 are preganglionics, typically present in the intermediate zone in these levels (a, b). (c) Immunofluorescence of motoneurons and their C-bouton terminals in upper lumbar spinal cord sections using an antibody against vAChT. (d) Average number of V0c neurons per 14 µm section in control and experimental P7 mice. (e) Immunofluorescence of motoneurons and their C-bouton terminals in upper lumbar spinal cord sections of P25 Pitx2::Cre;tdTomato (control) and Pitx2::Cre;tdTomato;vAChT-stop-DTA (experimental) mice using antibodies against tdTomato (red), ChAT (green) and vAChT (blue); Photos acquired with confocal microscopy using (a, b) 20x lens and (c, e) 40x lens. Sections thickness was 14 μm and scale bar is 20 µm; n = 3 mice for each condition; **p<0.01.Figure 5—source data 1.Pitx2::Cre;vAChT-stop-DTA mice.
+**Figure 5.:** (a) Immunofluorescence in spinal cord sections of P2 wt (control) and Pitx2::Cre;vAChT-stop-DTA (experimental) mice using antibodies against Pitx2 (red) and Choline Acetyl Transferase (ChAT, green). (b) Immunofluorescence in spinal cord sections of P7 upper lumbar levels from wt (control) and Pitx2::Cre;;vAChT-stop-DTA (experimental) mice using antibodies against Pitx2 (red) and ChAT (green). White arrows in (a) and (b) point to double positive neurons. Neurons that are positive for cholinergic markers only but not positive for Pitx2 are preganglionics, typically present in the intermediate zone in these levels (a, b). (c) Immunofluorescence of motoneurons and their C-bouton terminals in upper lumbar spinal cord sections using an antibody against vAChT. (d) Average number of V0c neurons per 14 µm section in control and experimental P7 mice. (e) Immunofluorescence of motoneurons and their C-bouton terminals in upper lumbar spinal cord sections of P25 Pitx2::Cre;tdTomato (control) and Pitx2::Cre;tdTomato;vAChT-stop-DTA (experimental) mice using antibodies against tdTomato (red), ChAT (green) and vAChT (blue); Photos acquired with confocal microscopy using (a, b) 20x lens and (c, e) 40x lens. Sections thickness was 14 μm and scale bar is 20 µm; n = 3 mice for each condition; **p<0.01.
 
 The effects of genetic ablation of V0c interneurons and their C-boutons were then assessed by investigating muscarinic modulation of pharmacologically induced locomotion recorded from L1-L5 ventral roots from spinal cord preparations from Pitx2::Cre;vAChT-stop-DTA mice and wild-type animals. In wild-type mice (Figure 6a), blockade of M2 receptors via application of methoctramine reduced the amplitude of locomotor-related ventral root bursting (−16.8 ± 4.1%, Q = 9.50, Friedman’s test, p=0.0087; Figure 6g, n = 12), decreased burst frequency (−11.9 ± 3.6%, Q = 11.62, Friedman’s test, p=0.0030; Figure 6c, n = 12) and increased burst duration (27.2 ± 3.4%, Q = 20.67, Friedman’s test, p<0.0001; Figure 6e, n = 12), similar to recently reported effects of M2 receptor antagonists on whole cord output in neonatal mice (Nascimento et al., 2019). Blockade of M2 receptors in Pitx2::Cre;vAChT-stop-DTA mice (Figure 6b) also led to a decrease in burst frequency (−24.4 ± 7.6%, F = 16.59, Repeated measures ANOVA, p=0.0099; Figure 6d, n = 10) and an increase in burst duration (68.34 ± 23.7%, Q = 9.80, Friedman’s test, p=0.0063; Figure 6f, n = 10). However, methoctramine no longer had an effect on burst amplitude when V0c interneurons and C-boutons were ablated (2.3 ± 2.2%, F = 0.32, Friedman’s test, p=0.7263; Figure 6h, n = 10). These data demonstrate that V0c interneurons and their C-bouton contacts with motoneurons are solely responsible for the M2 muscarinic receptor-mediated modulation of the intensity of locomotor-related output. In addition, these results demonstrate that additional effects of M2 receptor activation on locomotor network function do not involve V0c interneurons or C-bouton synapses.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig6-v2.jpg)
 
-**Figure 6.:** + interneurons (V0c) removes M2 receptor-dependent modulation of locomotor burst amplitude.(a, b) Raw (top) and integrated/rectified (bottom) traces with averaged time course plots and mean pooled data illustrating the effects of methoctramine (10 μM) on Wild Type (n = 12) and Pitx2::Cre;vAChT-stop-DTA (n = 10) mice lumbar ventral root burst frequency (c, d), duration (e, f) and amplitude (g, h); *p<0.05, **p<0.01, ***p<0.001.Figure 6—source data 1.Pitx2::Cre;;vAChT-stop-DTA mice.
+**Figure 6.:** (a, b) Raw (top) and integrated/rectified (bottom) traces with averaged time course plots and mean pooled data illustrating the effects of methoctramine (10 μM) on Wild Type (n = 12) and Pitx2::Cre;vAChT-stop-DTA (n = 10) mice lumbar ventral root burst frequency (c, d), duration (e, f) and amplitude (g, h); *p<0.05, **p<0.01, ***p<0.001.
 
-## Chemogenetic excitation of Pitx2+ INs reveals synaptic mechanisms at C-boutons
+### Chemogenetic excitation of Pitx2+ INs reveals synaptic mechanisms at C-boutons
 
 To reveal the cellular mechanisms underlying C-bouton-mediated modulation of motor output, we used excitatory (hM3Dq receptor) DREADD expression in Pitx2+ interneurons to activate C-boutons while recording from lumbar motoneurons in intact spinal cord preparations. We first tested whether Pitx2+ interneurons could be excited using this DREADD approach. Application of CNO reliably increased the spontaneous firing frequency of Pitx2+ interneurons clustered near the central canal in spinal cord slices prepared from Pitx2::Cre;tdTomato;hM3Dq mice (t(7)=2.45, Paired t-test, p=0.0441; Figure 7a).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig7-v2.jpg)
+
+**Figure 7.:** (a) Spontaneous firing of a Pitx2+ interneuron from a Pitx2::Cre;tdTomato;hM3Dq mouse in control conditions and during the application of CNO; along with firing frequency data pooled for all recordings (n = 8). (b) Representative traces illustrating changes in holding current (Vhold = −60 mV) during recordings of motoneurons in the presence of CNO alone (left) or co-applied with methoctramine (10 μM, middle) or guangxitoxin-1E (50 nM, right). (c) Motoneuron firing in response to current steps in control conditions and in the presence of CNO (left) with pooled data plotted to show changes in rheobase, depolarizing block, current-frequency relationships and maximum firing (right) (n = 23). (d, e) Examples of motoneuron firing and pooled data depicting firing parameters in the presence of methoctramine and methoctramine co-applied with CNO (d; n = 11) or Guangxitoxin-1E and CNO co-applied with Guangxitoxin-1E (e; n = 14). *p>0.05, **p<0.01, ***p<0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) CNO does not effect motoneuron firing parameters (rheobase, depolarizing block, current-frequency relationships or maximum firing rates, n = 15) and (b) mAHP amplitude (n = 4) in mice that do not express DREADD receptors. Input resistance also did not change in the presence of CNO (control: 77 ± 12 MΩ, CNO: 78 ± 12 MΩ, t(9)=0.499, Paired t-test, p=0.6295).
 
 Having established that Pitx2+ interneurons from Pitx2::Cre;hM3Dq mice can be excited via CNO application, we next performed whole-cell patch-clamp recordings from motoneurons to directly examine the cellular effects of activating Pitx2+ interneurons. We began by assessing whether activation of Pitx2+ interneurons induced any subthreshold currents that might adjust the resting membrane potential of motoneurons (Figure 7b). In spinal cords from Pitx2::Cre;hM3Dq mice, activation of Pitx2+ interneurons with CNO elicited an inward current in motoneurons (−37 ± 6 pA, n = 14; Figure 7b left) that was associated with an increase in input resistance (control: 77 ± 9 MΩ, CNO: 90 ± 12 MΩ, W=-46, Wilcoxon signed-rank test, p=0.0217,n = 10). The M2 receptor antagonist methoctramine, blocked both this inward current (−2 ± 4 pA, n = 9; Figure 6b, middle) and the change in input resistance (methoctramine: 82 ± 13 MΩ, methoctramine+CNO: 89 ± 16 MΩ, t(7)=1.68, Paired t-test, p=0.1368, n = 8), supporting that these CNO-induced effects involve V0c interneurons and their C-boutons. Given that Kv2.1 channels are expressed by motoneurons and exhibit clustering at C-bouton synapses (Wilson et al., 2004; Deardorff et al., 2014), they could be involved in V0c interneuron-mediated modulation of motor output. To address whether changes in the subthreshold properties of motoneurons following activation of Pitx2+ interneurons involves Kv2.1 channels, we perfused CNO in the presence of the selective Kv2.1 channel blocker guangxitoxin-1E (50 nM). At this concentration, guangxitoxin-1E is thought to be highly selective for Kv2.1 channels, with limited impact on other channels including Kv4 channels (Herrington et al., 2006; Liu and Bean, 2014; Fletcher et al., 2017). Co-application of CNO with guangxitoxin-1E still induced an inward current (−30 ± 7 pA, n = 10; Figure 7b, right) that was associated with an increase in input resistance (guangxitoxin-1E: 49 ± 5 MΩ, guangxitoxin-1E and CNO: 58 ± 3 MΩ, t(7)=3.28, Paired t-test, p=0.0135, n = 8), indicating that Kv2.1 channels are not involved in this response.
 
@@ -90,7 +106,7 @@ The observed decrease in rheobase could indicate a change in the firing threshol
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig8-v2.jpg)
 
-**Figure 8.:** + interneurons influences action potential parameters in motoneurons.(a–c) Motoneuron firing in response to depolarizing current ramps (1 s duration) in whole spinal cord preparations from Pitx2::Cre;hM3Dq mice demonstrating action potential threshold following activation of Pitx2+ interneurons with CNO alone (a; 1 μM, a; n = 12), and CNO co-applied with either methoctramine (10 μM) (b; n = 4) or guangxitoxin-1E (50 nM) (c; n = 5). (d–f) Truncated single action potentials illustrating the amplitude of the mAHP following application of CNO alone (d; n = 22), and CNO co-applied with either methoctramine (e; n = 7) or guangxitoxin-1E (f; n = 11). (g–i) Successive action potentials recorded during repetitive firing showing inter-spike AHP amplitude following application of CNO alone (g; n = 21), and CNO co-applied with either methoctramine (h; n = 10) or guangxitoxin-1E (i; n = 12). (j–l) Recordings of single action potentials illustrating action potential half-width following application of CNO alone (j; n = 20), and CNO in the presence of either methoctramine (k; n = 11) or guangxitoxin-1E (l; n = 13). *p<0.05, **p<0.01, ***p<0.001.Figure 8—source data 1.Pitx2::Cre; hM3Dq mice.
+**Figure 8.:** (a–c) Motoneuron firing in response to depolarizing current ramps (1 s duration) in whole spinal cord preparations from Pitx2::Cre;hM3Dq mice demonstrating action potential threshold following activation of Pitx2+ interneurons with CNO alone (a; 1 μM, a; n = 12), and CNO co-applied with either methoctramine (10 μM) (b; n = 4) or guangxitoxin-1E (50 nM) (c; n = 5). (d–f) Truncated single action potentials illustrating the amplitude of the mAHP following application of CNO alone (d; n = 22), and CNO co-applied with either methoctramine (e; n = 7) or guangxitoxin-1E (f; n = 11). (g–i) Successive action potentials recorded during repetitive firing showing inter-spike AHP amplitude following application of CNO alone (g; n = 21), and CNO co-applied with either methoctramine (h; n = 10) or guangxitoxin-1E (i; n = 12). (j–l) Recordings of single action potentials illustrating action potential half-width following application of CNO alone (j; n = 20), and CNO in the presence of either methoctramine (k; n = 11) or guangxitoxin-1E (l; n = 13). *p<0.05, **p<0.01, ***p<0.001.
 
 Previous, indirect evidence has suggested that activation of M2 receptors at C-bouton synapses is likely to increase motoneuron output through a reduction in the amplitude of the mAHP (Miles et al., 2007). We therefore tested this directly using our chemogenetic approach. Single action potentials were evoked from motoneurons in current-clamp mode using brief (10 ms) depolarizing current steps to assess whether activation of Pitx2+ interneurons reduced the action potential mAHP within isolated spinal cord preparations from Pitx2::Cre;hM3Dq mice. Surprisingly, activation of Pitx2+ interneurons with CNO increased the mAHP amplitude (W = 204, Wilcoxon signed-rank test, p=0.0010; Figure 8d). This effect was blocked when CNO was co-applied with either the M2 receptor antagonist methoctramine (t(6)=0.63, Paired t-test, p=0.5513; Figure 8e) or the Kv2.1 channel blocker guangxitoxin1-E (t(15)=1.27, Paired t-test, p=0.2208; Figure 8f).
 
@@ -105,6 +121,135 @@ In this study, we interrogated the roles and cellular mechanisms of cholinergic 
 Previous single cell recordings from Pitx2+ interneurons during pharmacologically induced locomotor-related activity demonstrated that the majority of Pitx2+ cells exhibit bursts of activity in phase with segmentally aligned motoneuron targets (Zagoraiou et al., 2009). We have now extended these analyses to a population level by imaging Ca2+ fluctuations in groups of lumbar Pitx2+ interneurons during locomotor network activity. We find that a high proportion of Pitx2+ interneurons exhibit rhythmic activity that is phase locked to bursts of locomotor-related activity recorded from ventral roots. Similar to previous work (Zagoraiou et al., 2009), we found that the strength of the relationship between Pitx2+ cell activity and locomotor output was more robust in upper compared with lower lumbar regions. This may reflect rostro-caudal differences in the density of V0c and V0g interneurons in the lumbar spinal cord (Zagoraiou et al., 2009; Enjin et al., 2010).
 
 Following the demonstration that Pitx2+ interneurons are rhythmically active during locomotor network activity, we next investigated their modulatory actions on locomotor-related output by using Cre-dependent expression of DREADDs to manipulate their activity. We first verified the effectiveness and specificity of our DREADD-based approach by showing that single-cell properties and baseline network output did not differ between DREADD and control mice prior to the application of CNO (Tables 1, 2 and 3, Supplementary file 1). Both high doses of CNO (10 µM) and the CNO derivative clozapine, which is only likely to be produced at significant levels when administered in vivo (MacLaren et al., 2016; Pirmohamed et al., 1995), can exhibit off-target effects on endogenous receptors, including 5-HT receptors known to contribute to the control of locomotor networks (Armbruster et al., 2007; Gomez et al., 2017). We therefore also verified that CNO (1 µM) had no detectable effects on ventral root output, single motoneuron firing, or subthreshold motoneuron properties when applied to preparations obtained from animals that do not express DREADD receptors (Figure 3—figure supplement 1 and Figure 7—figure supplement 1). Having verified our DREADD approach, we first assessed the effects of inhibiting Pitx2+ interneurons on ongoing locomotor-related activity. DREADD-mediated inhibition revealed that Pitx2+ interneurons modulate the amplitude of locomotor-related output in an M2 muscarinic receptor-dependent manner. This finding is consistent with previous reports of a reduction in the amplitude of locomotor-related bursts when applying antagonists of M2-type muscarinic receptors (Miles et al., 2007; Nascimento et al., 2019). We next addressed whether cholinergic V0c interneurons, and their C-bouton inputs to motoneurons, were solely responsible for the modulation of motor output we observed. In preparations from animals in which V0c cells had been genetically ablated, blockade of M2 receptors no longer affected the amplitude of locomotor-related output. Thus, Pitx2+ interneuron-dependent modulation of the intensity of motor output originates from cholinergic V0c interneurons and their C-bouton synapses on motoneurons. Despite previous evidence of a low density of V0c-derived synapses in the intermediate zone of the spinal cord (Zagoraiou et al., 2009), our findings demonstrate a primary role for V0c interneurons in the control of motoneuron output with little or no impact on locomotor CPG interneurons. Furthermore, although glutamatergic V0g interneurons are also known to project to the intermediate zone as well as the dorsal horn of the spinal cord (Zagoraiou et al., 2009), the fact that locomotor-related activity was unaltered when Pitx2+ cell activity was manipulated in the presence of muscarinic receptor blockers indicates that V0g interneurons do not contribute to the generation or modulation of locomotor network output and hence their functional roles remain elusive.
+
+**Table 1.**
+ Intrinsic properties of lumbar motoneurons from hM3Dq and Pitx2::Cre; hM3Dq mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>hM3Dq</th>
+      <th>Pitx2::Cre; hM3Dq</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Resistance (MΩ)</td>
+      <td>63 ± 3</td>
+      <td>58 ± 4</td>
+    </tr>
+    <tr>
+      <td>Capacitance (pF)</td>
+      <td>114 ± 7</td>
+      <td>113 ± 4</td>
+    </tr>
+    <tr>
+      <td>Membrane potential (mV)</td>
+      <td>−60 ± 2</td>
+      <td>−62 ± 2</td>
+    </tr>
+    <tr>
+      <td>Rheobase (pA)</td>
+      <td>263 ± 43</td>
+      <td>353 ± 43</td>
+    </tr>
+    <tr>
+      <td>Depolarizing block (pA)</td>
+      <td>666 ± 44</td>
+      <td>817 ± 84</td>
+    </tr>
+    <tr>
+      <td>Maximum firing (Hz)</td>
+      <td>26 ± 2</td>
+      <td>27 ± 2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>n = 16</td>
+      <td>n = 23</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Intrinsic properties of Pitx2+ interneurons from control, excitatory and inhibitory DREADD mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Pitx2::Cre;tdTomato</th>
+      <th>Pitx2::Cre;tdTomato;hM4Di</th>
+      <th>Pitx2::Cre;tdTomato;hM3Dq</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Resistance (MΩ)</td>
+      <td>336 ± 48</td>
+      <td>307 ± 30</td>
+      <td>320 ± 16</td>
+    </tr>
+    <tr>
+      <td>Capacitance (pF)</td>
+      <td>28 ± 2</td>
+      <td>35 ± 3</td>
+      <td>26 ± 4</td>
+    </tr>
+    <tr>
+      <td>Membrane potential (mV)</td>
+      <td>−52 ± 3</td>
+      <td>−52 ± 2</td>
+      <td>−53 ± 1</td>
+    </tr>
+    <tr>
+      <td>Spontaneous firing (Hz)</td>
+      <td>2.2 ± 0.6</td>
+      <td>1.8 ± 0.5</td>
+      <td>2.0 ± 0.4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>n = 11</td>
+      <td>n = 9</td>
+      <td>n = 9</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Ventral root burst frequency and duration measured in the presence of NMDA, 5-HT and DA from preparations obtained from hM4Di and Pitx2::Cre;hM4Di mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>hM4Di</th>
+      <th>Pitx2::Cre;hM4Di</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Burst frequency (Hz)</td>
+      <td>0.23 ± 0.03</td>
+      <td>0.21 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Burst duration (ms)</td>
+      <td>2049 ± 507</td>
+      <td>2393 ± 554</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>n = 14</td>
+      <td>n = 19</td>
+    </tr>
+  </tbody>
+</table>
 
 Recent studies have reported a diversity of muscarinic receptor-mediated effects on spinal locomotor circuits, as revealed by modulation of the frequency, duration and amplitude of locomotor-related output (Nascimento et al., 2019; Jordan et al., 2014; Finkel et al., 2014). In keeping with these observations, when V0c interneurons were genetically ablated, pharmacological blockade of M2 receptors revealed V0c-independent muscarinic modulation of the frequency and duration of locomotor bursts. Given that M2 receptors are not only juxtaposed to C-boutons but are also widely distributed throughout motoneuron somata (Wilson et al., 2004; Miles et al., 2007; Hellström et al., 2003; Welton et al., 1999) and on spinal interneurons (Höglund and Baghdoyan, 1997), it is likely that additional, as yet genetically undefined, neuronal sources of intraspinal acetylcholine (Bertrand and Cazalets, 2011; Gillberg et al., 1988; Gillberg et al., 1990; Sherriff and Henderson, 1994) are responsible for these M2 receptor-dependent changes in the rhythm and pattern of locomotor output. Given the specific nature of the effects of V0c interneurons on spinal motor circuits, it will be interesting to investigate whether similarly discrete subsets of spinal cells fulfil the other modulatory roles uncovered by blockade of endogenous cholinergic signalling. Recent work suggests that such separate modulatory pathways may act in concert, via different muscarinic receptor subtypes, to ensure balanced motor circuit output (Nascimento et al., 2019).
 
@@ -128,31 +273,31 @@ Cholinergic pathways within the nervous system process a variety of inputs which
 
 ## Materials and methods
 
-## Animal ethics
+### Animal ethics
 
 All the procedures performed on animals were conducted in accordance with the UK Animals (Scientific Procedures) Act 1986 and were approved by the University of St Andrews Animal Welfare Ethics Committee. Experiments on animals performed in the Biomedical Research Foundation of the Academy of Athens were approved by the competent veterinary service of the Prefecture of Athens, Greece in accordance with the existing legal framework. The facility is registered as a ‘breeding’ and ‘user’ establishment by the Veterinary Service of the Prefecture of Athens according to the Presidential Decree 56/2013 in harmonization with the European Directive 2010/63/EU for the protection of animals used for scientific purposes.
 
-## Tissue preparation for in vitro electrophysiology and Ca2+ imaging
+### Tissue preparation for in vitro electrophysiology and Ca2+ imaging
 
 Whole or hemisected spinal cord preparations and spinal cord slices were obtained from postnatal day (P)2-P7 mice. Spinal cords were isolated as previously described Jiang et al. (1999). In brief, animals were euthanized using cervical dislocation and quickly decapitated and eviscerated. They were then pinned ventral side up in a chamber filled with ‘dissecting’ artificial cerebrospinal fluid (aCSF) continuously gassed with 95% O2 and 5% CO2 at a temperature of ~4°C. The spinal vertebrae were cut and the spinal cord isolated from mid-cervical to upper sacral segments.
 
 To perform ventral root recordings, dorsal roots were trimmed and ventral roots from L1-L5 were kept intact. For patch-clamp recordings in whole spinal cords, access to motoneurons was facilitated by making small vertical cuts in the meninges on the ventral surface. To produce hemisected spinal cords, the pia was carefully removed and the two halves cleaved gradually with a dissecting pin. To obtain spinal cord slices, both the ventral and dorsal roots were trimmed and transverse slices were prepared from lumbar segments (300 µm thick) using a vibrating microtome (Leica VT1200). Slices were transferred to a ‘recovery’ aCSF solution continuously gassed with 95% O2 and 5% CO2 and kept at ~34°C for 45–60 min. Slices were then transferred to a beaker with ‘recording’ aCSF gassed with 95% O2 and 5% CO2 at room temperature (~20°C).
 
-## Sections for immunofluorescence
+### Sections for immunofluorescence
 
 Spinal cords were isolated from P2, P7 and P25 mice. P7 and P25 mice were first perfused with 4% PFA. Spinal cords were then post-fixed in 4% PFA and cryoprotected in 30% sucrose solution. They were embedded in Optical Cutting Temperature compound and 14 µm sections were taken using a Leica cryostat. Immunofluorescence was preformed using the following antibodies: rabbit anti-Pitx2 (1:8K CU1533 Jessel lab), goat anti-ChAT (1:100 AB144P Millipore), rabbit anti-dsRed (1:500 Chemicon), rabbit anti-vAChT (1:8K CU1475 Jessell lab) and ginea pig anti-vAChT (1:12K Fitzerald).
 
-## Animal lines
+### Animal lines
 
 Pitx2tm4(cre)Jfm (Pitx2::Cre) mice (Liu, 2003) were crossed with Gt(ROSA)26Sortm96.1(CAG-GCaMP6s)Hze/J (GCAMP6, Jackson Laboratories, USA; stock #024106) animals to obtain Pitx2::Cre;GCAMP6 mice that express the GCAMP6 Ca2+ indicator in Pitx2+ interneurons (Acton et al., 2018). Pitx2::Cre mice were mated with homozygous Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J (tdTomato) fluorescent reporter animals (Madisen et al., 2010), generating Pitx2::Cre;tdTomato mice, which allow fluorescent Pitx2+ interneurons to be targeted for single-cell electrophysiology (Zagoraiou et al., 2009). Pitx2::Cre and Pitx2::Cre;tdTomato mice were crossed with Gt(ROSA)26Sortm2(CAG-hM3Dq *,-mCitrine)Ute/J animals (hM3Dq; Jackson Laboratories, USA; stock #026220) in order to generate Pitx2::Cre;hM3Dq and Pitx2::Cre;tdTomato;hM3Dq offspring respectively, which express the excitatory hM3Dq DREADD receptor in Pitx2+ interneurons. Pitx2::Cre and Pitx2::Cre;tdTomato mice were also crossed with Gt(ROSA)26Sortm1(CAG-hM4Di*,-mCitrine)Ute/J (hM4Di; Jackson Laboratories, USA; stock #026219) to obtain Pitx2::Cre;hM4Di and Pitx2::Cre;tdTomato;hM4Di animals respectively that express the inhibitory hM4Di DREADD receptor in Pitx2+ interneurons.
 
 The vAChT-loxP-STOP-loxP-DTA targeting vector was constructed by inserting a loxP-PGKneo-triple polyA-loxP-DTA-polyA cassette at the ATG of the vAChT coding sequence. The vAChT-loxP-STOP-loxP-DTA targeting vector was electroporated into mouse embryonic stem (ES) cells (129sv/ev), selected with G418 and homologous recombinants were identified by Southern blot analysis. Targeted ES cells were then microinjected into blastocysts and chimeras were crossed to C57BL/6J females resulting the vAChT-stop-DTA mouse line. Pitx2::Cre and Pitx2::Cre;tdTomato mice were crossed with vAChT-stop-DTA animals to produce Pitx2::Cre;vAChT-stop-DTA and Pitx2::Cre;tdTomato;vAChT-stop-DTA offspring respectively in which cholinergic Pitx2+ interneurons (V0c) were selectively ablated due to expression of diphtheria toxin A. Wild Type C57/BL6 mice were also used for some ventral root recordings. All these animals were bred to a C57/BL6 background.
 
-## In vitro Ca2+imaging
+### In vitro Ca2+imaging
 
 Imaging of hemisected spinal cords was performed at 20–24°C. Image acquisition was controlled with Andor Solis (Andor, Oxford Instruments) software. Images were acquired with a Zyla 4.2 scientific CMOS camera using a x40 water immersion objective lens (0.9 numerical aperture). Images were acquired with a rolling shutter at 5 Hz with a 50 ms exposure time. Illumination was provided by a 470 nm CoolLED system. Fictive locomotor output was recorded from L2/3 ventral roots during image acquisition (see below). Imaging and ventral root recordings were synchronized using a TTL pulse from the Digidata 1440 A/D to the CMOS camera.
 
-## In vitro electrophysiology
+### In vitro electrophysiology
 
 Spinal cord slices or intact spinal cord preparations were immersed in a recording chamber perfused with recording aCSF (approximately 1 mL per second). Whole-cell patch-clamp recordings were established using borosilicated glass microelectrodes (2.5–6 MΩ) filled with intracellular solution. Signals were amplified and filtered (4 kHz low-pass Bessel filter) with a MultiClamp 700B amplifier (Molecular Devices, Sunnyvale, CA) and acquired at ≥10 kHz using a Digidata 1440A A/D board and pClamp software (version 10.6, Molecular Devices, Sunnyvale, CA).
 
@@ -160,11 +305,11 @@ Measurements of drug-induced currents and input resistance (using 2.5 mV steps f
 
 Ventral root recordings were performed in whole or hemisected (in parallel with Ca2+ imaging) spinal cords by attaching suction electrodes to the ventral roots (L1-L5). Rhythmic locomotor-related activity was induced by applying 5-hydroxytryptamine (5-HT; 10 µM), N-methyl-D-aspartate (NMDA; 5 µM) and dopamine (DA, 50 µM). Signals were amplified and filtered (band-pass filter 30–3000 Hz, Qjin Design) and then acquired at a frequency of 6 kHz with a Digidata 1440A A/D board and pClamp software. Custom built amplifiers (Qjin design) allowed acquisition of raw signals with simultaneous online rectification and integration (50 ms time constant).
 
-## Drugs and solutions
+### Drugs and solutions
 
 The dissecting aCSF contained (in mM): 25 NaCl, 188 sucrose, 1.9 KCl, 1.2 NaH2PO4, 10 MgSO4, 1 CaCl2, 26 NaHCO3, 25 glucose and 1.5 kynurenic acid. The recovery solution contained (in mM): 119 NaCl, 1.9 KCl, 1.2 NaH2PO4, 10 MgSO4, 1 CaCl2, 26 NaHCO3, 20 glucose and 1.5 kynurenic acid. The recording aCSF contained (in mM): 127 NaCl, 3 KCl, 1.25 NaH2PO4, 1 MgCl2, 2 CaCl2, 26 NaHCO3, 10 glucose. The intracellular solution for patch-clamp recordings contained (in mM): 140 KMeSO4, 10 NaCl, 1 CaCl2, 10 HEPES, 1 EGTA, 3 Mg-ATP and 0.4 GTP-Na2 (pH 7.2–7.3, adjusted with KOH). NMDA, DA, 5-HT and methoctramine were supplied by Sigma-Aldrich; Clozapine-N-oxide (CNO) by Tocris and Hello-Bio; and guangxitoxin-1E by Alomone Labs. All drugs were dissolved in H2O.
 
-## Data analysis
+### Data analysis
 
 Analysis of Ca2+ imaging was performed with FIJI software. Data were first converted to 8 bit and processed with a background subtraction and 3D smoothing. If required, a histogram-based bleach correction was performed, along with manual drift correction to control for tissue movement. Active cells were selected and delineated from the images, guided by a maximum intensity projected image to highlight high-intensity structures. Intensity measurements were converted to Δf/f0, calculated as: 100 x (fluorescence value – baseline fluorescence ÷ baseline fluorescence). Baseline fluorescence was calculated as the mean intensity from 10 frames during a period of low-level activity for each cell within the first minute of recording. Ca2+ transients from Pitx2+ interneurons in hemisected spinal cords were detected and quantified using DataView software (courtesy of Dr W. J. Heitler, University of St Andrews). Circular phase plots were used to depict the coupling of cellular Ca2+ activity with ventral root bursts during fictive locomotion. The beginning of the locomotor cycle, marked as 0 at the top of circular plots, was defined as the onset of flexor-related bursts recorded from upper lumbar ventral roots. Rayleigh’s test for uniformity was used to statistically assess whether cells were significantly coupled to bursts of locomotor related activity.
 
@@ -172,6 +317,6 @@ In single-cell voltage clamp recordings, changes in holding current were calcula
 
 Ventral root bursts were analyzed offline using DataView software. Bursts were identified from the integrated/rectified trace from which frequency and duration were measured. Burst amplitude was calculated from the respective segment of the raw trace. Data were averaged in 0.5 min time bins and normalized to a 10 min pre-control period to construct time course plots. Statistical comparisons were made on raw data averaged over 5 min periods in each condition.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are represented in the text as mean ± s.e.m. In the figures, values are depicted as box plots displaying the distribution of data as the minimum, first quartile, median, third quartile, and maximum value for each dataset. In patch-clamp and Ca2+ imaging experiments each ‘n’ corresponds to one cell whereas in ventral root recordings it corresponds to one whole spinal cord preparation. D'Agostino-Pearson omnibus tests were used to access normality. Repeated measures ANOVA with Tukey’s multiple comparison test (for normal distributed data) or Friedman test with Dunns’ post-test (for non-normal distributed data) were used for the analysis of ventral root bursts between control, drug and washout. Rayleigh’s test was used to assess the mean phasing of Pitx2+ interneuron activity relative to ventral root bursting. Paired t-test or Wilcoxon signed-rank test were used to compare data from single-cell experiments between control and drug. One-way ANOVA with Tukey’s post-test was used to compare properties of Pitx2+ interneurons between DREADD and control mice. Unpaired t-test or Mann-Whitney U-test were used to compare data from Ca2+ imaging, immunohistochemistry, ventral root duration and frequency, and properties of motoneurons from DREADD and control mice. Values of p<0.05 were considered statistically significant.

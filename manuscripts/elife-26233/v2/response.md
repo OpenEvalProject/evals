@@ -57,9 +57,7 @@ We meant to say that cdc28-as1 cells lacking Igo1,2 are larger. This is now clar
 
 Stb1 is apparently a cofactor of Whi5, and the authors should clearly explain this relationship. Of greater concern, the authors sometimes seem to say or imply that this protein is also a target of PP2A-Cdc55, but they have never looked at this protein on Western blots. The authors' approach to this cofactor needs to be made less confusing.
 
-We have now better explained the relationship between Whi5 and Stb1 in the text. We had performed Phos-tag analysis of Stb1 in cdc28-as1 cells lacking or not Igo1,2, which indicates that Stb1 phosphorylation is also delayed in igo1,2∆ cells (occurring at 73 fL instead of 57 fL). The blot, unfortunately not of “publication quality”, is provided as Author response image 1. We now refer to this experiment in the manuscript as data not shown.10.7554/eLife.26233.017Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.26233.017
-
-DOI: http://dx.doi.org/10.7554/eLife.26233.017
+We have now better explained the relationship between Whi5 and Stb1 in the text. We had performed Phos-tag analysis of Stb1 in cdc28-as1 cells lacking or not Igo1,2, which indicates that Stb1 phosphorylation is also delayed in igo1,2∆ cells (occurring at 73 fL instead of 57 fL). The blot, unfortunately not of “publication quality”, is provided as Author response image 1. We now refer to this experiment in the manuscript as data not shown.10.7554/eLife.26233.017Author response image 1.
 
 For the data in this paper to be convincing, it is essential that roughly 2X changes in Igo1 phosphorylation have consequence. Because of the presumed very tight association between the inhibitor and phosphatase, this should only be true if the concentration of PP2A-Cdc55 is in excess of the amount of phosphorylated Igo1,2 (see eLife. 2014 Mar 11;3:e01695). Shouldn't one in theory be able to mimic these results in diploid cells simply by comparing wild type with PP2A-Cdc55 heterozygotes? Here is a case where quantitation would clearly help make the authors' case stronger.
 

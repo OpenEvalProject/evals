@@ -28,9 +28,25 @@ The production of circRNAs can also arise due to the perturbed expression of tra
 
 ## Results
 
-## A core subset of circRNAs show conserved expression signatures but most are species-specific
+### A core subset of circRNAs show conserved expression signatures but most are species-specific
 
 To address the outstanding questions about the conservation and functional importance of circRNAs, we collected transcriptomic (RNA-seq) data (Peng et al., 2015; Pipes et al., 2013) from across nine tissues from eight primate species, consisting of three old-world monkeys, two hominoids, two new-world monkeys, and one prosimian (Supplementary file 1). These species were chosen on the basis of the quality of their genomes and their close evolutionary relationships enabling the evaluation of transcriptome changes between species ranging from <3 million years to >70 million years (see Figure 1A). For each species, we considered all primate-conserved internal exons as potential origins of back-spliced junctions (BSJs) with no restrictions on backward exon combination. Only canonical and annotated splice sites were used in analysis. RNA-seq reads were mapped to exon-exon junctions (EEJs) to determine ‘percent spliced in’ (PSI) for all circRNA with respect to the linear transcript. We also calculated PSI values for linear splicing of each internal exon and transcript per million (TPM) values to estimate gene expression. Orthology relationships between genes and exons were established to enable direct cross-species comparisons.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig1-v2.jpg)
+
+**Figure 1.:** (A) Phylogenetic tree of analyzed species with distance from human in millions of years (MYA) (divergence time according to TimeTree http://www.timetree.org/). Tissue datasets used in analysis identified on right with white squares denoting lack of dataset. (B) Clustering of samples based on expression values (transcripts per million). The variance of expression values was calculated, and the top 1000 most variable genes were used to calculate Pearson’s correlation (n = 1000 genes in 88 samples). Red colors indicate high correlation between samples, and blue describes low correlation. Vertical and horizontal adjacent heatmaps describe tissues (see A for key). (C) Barplot showing conservation of circRNAs based on back-spliced junction and based on occurrence within orthologous genes. (D) Clustering of conserved circRNAs based on percent spliced in (PSI) values. Clustered using Pearson’s correlation as in (B) (n = 149). Vertical and horizontal adjacent heatmaps describe tissues (inner heatmap; see A for key) and species (outer heatmap).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Clustering of circular RNAs (circRNAs) based on percent spliced in (PSI) values. Clustered using Pearson’s correlation as in Figure 1B (n = 19,005). Vertical heatmap indicates primate species. See Figure 1B for details of heatmap and Supplementary file 4 for data used. (B) Volcano plot of differential gene expression analysis between neuronal samples and non-neuronal samples. In blue are ‘not upregulated genes’ (n = 15,661), in purple are ‘upregulated genes’ (n = 4434), and in yellow the ‘genes with conserved circRNAs’ (n = 442). Likelihood of circRNA genes being enriched in differentially expression genes (p=0.036, hypergeometric test). FC: fold value. p-Value in figures calculated by quasi-likelihood-negative binomial test and corrected for multitesting (Bonferroni). (C) Clustering of alternative splicing events based on PSI of exons within conserved circRNAs shows no clustering by tissue (n = 1256). Vertical and horizontal adjacent heatmaps represent species. See Figure 1B for details of heatmap. (D) Cumulative distribution plot displaying the number of circRNAs found within same gene (see Figure 2D for description of cumulative distribution plots).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Plot showing the number of human RNase R samples analyzed (x-axis) and the sum of unique conserved circular RNAs (circRNAs) found across analyzed samples (y-axis). At the 74th sample, the highest number of conserved circRNAs is quantified (648 conserved circRNAs, 82.7%). (B) Plot showing the number of human RNase R samples analyzed (x-axis) and the sum of unique species-specific circRNAs found across analyzed samples (y-axis). At the 78th sample, the highest number of species-specific circRNA is quantified (7499 species-specific circRNAs, 62.3%). (C) A plot showing the comparison of the total number of human circRNAs found in the Rnase R dataset expressing at least five reads and with a percent spliced in (PSI) value ≥5 (57,037 circRNAs). Plot shows the number of human RNase R samples analyzed (x-axis) and the sum of unique circRNAs found in human dataset found across analyzed samples (y-axis). At the 78th sample, the highest number of human circRNAs is quantified (39,864 circRNAs, 69.9%). (D) A plot showing the comparison of the total number of human circRNAs found in the RNase R dataset with support of less than five reads and <5 PSI (71,820 circRNAs). Plot shows the number of human RNase R samples analyzed (x-axis) and the sum of unique circRNAs found in human dataset found across analyzed samples (y-axis). At the 78th sample, the highest number of human circRNAs is quantified (39,269 circRNAs, 54.7%). (E) Plot showing the number of macaque RNase R samples (x-axis) and the sum of unique conserved circRNAs in macaque quantified across samples (y-axis). At the 32nd sample, the highest number of conserved circRNAs is quantified (386 conserved circRNAs, 84.65%). (F) Plot showing the number of macaque RNase R samples (x-axis) and the sum of unique neuronal conserved circRNAs in macaque quantified across samples (y-axis). At the 31st sample, the highest number of neuronal conserved circRNAs is quantified (342 neuronal conserved circRNAs, 88.83%).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Barplot of computing time (measured in minutes) across circular RNA (circRNA) quantification programs (Whippet:1 hr 9 min and 20 s; CIRCexplorer3: 3 hr 26 min and 32 s; find_circ: 11 hr 31 min and 19 s; and CIRIquant: 23 hr 1 min and 36 s). (B) Barplot of computing memory(measured in Gbytes, Gb) across circRNA quantification programs (Whippet: 1.96 Gb; find_circ: 8.62 Gb; CIRIquant: 25.31 Gb; and CIRCexplorer3: 36.83 Gb). (C) Simulated dataset analysis. Barplots of percentages of circRNAs predicted by circRNA quantification programs (Whippet, CIRIquant, CIRCexplorer3, and find_circ) across different levels of sequencing depth in simulated datasets (10-, 20-, 30-, and 40-fold read depth). The x-axis is the percentage of predicted circRNAs and the y-axis is the names of the programs. At high depths, CIRCexplorer3 and CIRIquant had a similar rate of identification of circRNAs than Whippet. In contrast, at lower read depths circExoplorer 3 detection rate lowers to 77% and CIRIquant detection rate lowers to 82%. Find_circ detection rate was the most affected by the sequencing depth with a detection rate of 42% in the low read depth sample and 79% in the highest sequencing depth sample.
 
 The circRNA analysis was done using Whippet because, according to our benchmarking results (see Materials and methods for details), it is an accurate and fast circRNA quantification tool. Our analysis of both simulated and collected RNA-seq data found that Whippet has a low false positive rate (<2%, see Materials and methods for details), which is in line with other methods (Szabo et al., 2015, Gokool et al., 2020a), a high rate of circRNA identification even at low read depths (~90%; Figure 1—figure supplement 3C) and is faster (~69 min) with less computational overhead (<3 GB of memory on a single core) than other highly cited circRNA algorithms we compared with (CIRCexplorer3 [Ma et al., 2019], CIRIquant [Zhang et al., 2020], and find_circ [Memczak et al., 2013]; Figure 1—figure supplement 3A and B).
 
@@ -44,9 +60,27 @@ We next investigated the genes containing circRNAs. Many orthologous genes consi
 
 These observations suggest that a core set of circRNAs show conserved tissue-specific patterns across neural tissues. However, the great prevalence of circRNAs showing species-specific expression indicates that the cis-regulatory or trans-regulatory environments may differ between even very closely related species to promote the species-specific production of circRNAs.
 
-## Features of conserved circRNAs
+### Features of conserved circRNAs
 
 Our analysis (Figure 2A) reveals clear subsets of several hundred circRNAs exhibiting highly conserved circRNA expression. The circRNA ERC1 and many other examples from our data (Figure 2B, Supplementary file 2, and Figure 2—figure supplement 1A) demonstrate that circRNA expression can be conserved for tens of millions of years.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic overview of identification of back-spliced junctions (BSJ) between species. (B) Percent spliced in (PSI) values for conserved circRNAs (top) CACNA1C_chr12:2504436–2512984 and (bottom) ERC1_chr12:1180540–1204512 across tissues and species analyzed. PSI values only calculated for circRNAs with more than five reads support. Gene name is indicated in top right-hand corner. (C) Violin plot describing relative expression levels of conserved and species-specific circRNAs. Violin plots show probability densities of the data with internal boxplot. Boxplot displays the interquartile range as a solid box, 1.5 times the interquartile range as vertical thin lines and the median as a horizontal line. p-Value calculated using Wilcoxon rank-sum test (p<0.187). TpM: transcripts per million. (D) Cumulative distribution plot of change in PSI values across all conserved (yellow) and species-specific (gray) circRNAs. A cumulative distribution plot describes the proportion of data (y-axis) less than or equal to a specified value (x-axis). Cumulative distribution F(x), cumulative distribution function. p-Value calculated using Wilcoxon rank-sum test (p<3.38 × 10–74). (E) Cumulative distribution plots of circRNAs with different levels of conservation, as defined by consistent observation of BSJ across species indicated. See (D) for description of cumulative distribution plot. (F) Barplot describing number of exons per circRNA for conserved and species-specific circRNAs. Exons are defined by Ensembl and must show evidence of expression (PSI >5 and > 5 reads support) in tissue analyzed. (G) Barplot describing uniqueness of start (5′-splice site) and end (3′-splice site) for conserved and species-specific circRNAs. p-Values calculated from Fisher’s exact test (p<4.08 × 10-64;; unique start and end – also see Figure 2—figure supplement 3).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Extension of Figure 2B showing examples of identified circular RNAs (circRNAs). Coordinates for each circRNA are shown. PSI: percent spliced in. (B) UpSet plot of conserved circRNAs across primate species analyzed. An UpSet plot displays the intersections of a set. Each column corresponds to a set, and each row corresponds to one segment in a Venn diagram. Number of top of bars represents number in each overlap. The limited conservation of circRNAs to lemur may be influenced by low read depth of these samples (see Supplementary file 1). (C) UpSet plot of conserved circRNAs across primate species studied with at least 30 overlap (see B for description of UpSet plot).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Extension of Figure 2C showing violin plots (left) and scatterplots (right) across all human tissues. Axes on scatterplots are relative transcripts per million (TpM) values. (see Materials and methods). p-Value is calculated using Wilcoxon rank-sum test. (see Figure 2C for description of violin plots). (B) Extension of Figure 2D showing violin plots of percent spliced in (PSI) value differences across all individual tissues (see Figure 2C for description of violin plots).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Violin plots showing the distributions of gene expression of genes with conserved (yellow) and species-specific (gray) circular RNAs (circRNAs) across tissue samples. Gene expression is measured in log2(TPM). Differences in gene expression were statistically tested using the Wilcoxon rank-sum test for each tissue comparison. (B) Violin plots showing the distributions of median gene expression of tissue samples of genes with conserved (yellow) and species-specific (gray) circRNAs. Gene expression is measured in log2(TPM). The difference in gene expression was statistically tested using the Wilcoxon rank-sum test. (C) Violin plots describing the number of exons of conserved and species-specific circRNAs. Comparison of number of exons distributions was done using the Wilcoxon rank-sum test.
 
 To assess the phylogenetic distribution of circRNA across primates, we grouped them by PSI values requiring PSI ≥ 5 and at least five read support. Out of the approximately 56,000 internal exons with clear orthologs across primates, we identified a large set of circRNA expressing a ‘species-specific’ expression, as well as a set of ~773 ‘conserved circRNAs’ that shared expression across at least human, chimp, and baboon (Figure 2—figure supplement 1B and C). Using our transcriptomic data, we found that a circRNA identified in human was approximately five times more likely to be identified in baboon than in lemur, in line with the closer phylogenetic relationship of human to baboon than human to lemur.
 
@@ -56,15 +90,31 @@ Initial analysis of conserved circRNAs revealed enrichment within neural tissues
 
 Analysis of the exonic structure of conserved circRNAs showed that conserved circRNAs contain fewer exons (Figure 2F, Figure 2—figure supplement 4C, p = 2.23 × 10–20, Wilcoxon rank-sum test) with a significant enrichment to contain 2–3 exons (p-value = 4.17 × 10–08, Fisher’s exact test), which is in line with observations from previous studies (Ragan et al., 2019). Conserved circRNAs also rarely overlap with other circRNAs (Figure 2G, p=4.08 × 10–64, Fisher’s exact test; see Materials and methods) displaying back-splicing at unique 5′- and 3′-splice sites. This indicates a tight control of the number of exons within a circRNA and the BSJs used.
 
-## Conserved circRNAs have extensive downstream introns and are flanked by inverted repeat elements
+### Conserved circRNAs have extensive downstream introns and are flanked by inverted repeat elements
 
 To investigate the role of cis-regulatory elements within conserved circRNAs, we analyzed almost 150 features associated with circRNA formation including a multitude of trans- and cis-regulatory factors and all major groups of transposons (see Materials and methods and Supplementary file 3). To evaluate the influence of these features on defining conserved circRNAs, we used two background datasets (see Supplementary file 2 and Materials and methods). The first is a background set of randomly combined alternative (10 < PSI < 90) exons extracted from genes containing conserved circRNAs (background set). The second is the group of ‘species-specific circRNAs’ defined previously.
 
 Using logistic regression combined with a genetic algorithm for model selection taking into account multicollinearity (see Materials and methods), we initially sought to determine the relative contribution of this diverse range of features in defining conserved circRNAs. After initially training our model on a subset of conserved and background circRNAs (80%), we next assessed its performance on the rest of 20% cirRNAs and observed a high average true-positive rate of 86.7% (AUC, area under the receiver operating characteristic [ROC] curve; Figure 3—figure supplement 1A) for a model including 24 variables selected by feature analysis. This identifies a core set of 24 cis- and trans-regulatory features enriched within the conserved formation of circRNAs compared to our background set of introns (Figure 3A and B). This includes multiple features previously associated with conserved circRNAs, such as inverted repeat Alu elements (Jeck et al., 2013; Zhang et al., 2014), as well as exon and intron length (Ashwal-Fluss et al., 2014; Ivanov et al., 2015; Jeck et al., 2013; Liang et al., 2017).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig3-v2.jpg)
+
+**Figure 3.:** (A) Barplot describing feature importance for logistic regression model of conserved circRNAs compared to background. Colors represent positive or negative influence. Transparency reflects log10(p-value of z-statistic). Error bars represent standard error. ‘_1’ is relative to first exon of circRNA and ‘_2’ is relative to final exon of circRNA. ss3: 3´-splice site; ss5: 5´-splice site; Alt3ss: alternative 3´-splice sites. Inverted repeats are repetitive elements on opposite strands in introns adjacent to circRNAs. See Supplementary file 3 for details of features. (B) Barplot describing feature importance for logistic regression model of conserved circRNAs compared to species-specific circRNAs. See (A) for plot interpretation and descriptions. (C) Cumulative distribution plots describing (left; p<1.39 × 10–09) 5´-splice site strength at final exon of circRNAs and (right; p<1.37 × 10–05) distribution of nucleosomes on intron downstream of circRNA. p-Values calculated by Wilcoxon rank-sum test and corrected for multitesting (Bonferroni). See Figure 2D for interpretation of cumulative distribution plot. (D) Pyramid plot showing the mean fraction of circRNAs with selected inverted repeat retrotransposon elements in adjacent introns.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A receiving operating characteristic curve (ROC) plot displaying the sensitivity (true-positive rate) compared to the selectivity (false-positive rate) for the logistic regression model (conserved vs. background circular RNA [circRNA]). (B) An ROC plot for logistic regression model (conserved vs. species-specific circRNA). (C) Cumulative distribution plots comparing conserved versus background circRNAs of (left) alternative 3´-splice sites (ss) within first exon of the circRNA and (right) of serine/arginine (SR) RNA-binding peaks from CLiP data. p-Values calculated by Wilcoxon rank-sum test and corrected for multitesting (Bonferroni) (see Figure 2D for description of cumulative distribution plots). (D) Cumulative distribution plots comparing conserved versus species-specific circRNAs of (left) nucleosome peaks in downstream intron adjacent to circRNA and (right) of Alu element content in upstream intron adjacent to circRNA (see Figure 2D for description of cumulative distribution plots). p-Values calculated by Wilcoxon rank-sum test and corrected for multitesting (Bonferroni).
+
 We next used the same approach to determine features differentiating conserved and species-specific circRNAs. As expected, our model distinguished these categories less efficiently but was still able to achieve a true-positive rate of 65.4% (Figure 3—figure supplement 1B) driven by 12 features. Notable among these features was the depletion of nucleosomes in the downstream intron of the circRNA (Figure 3—figure supplement 1D, 1.57 × 10–03, Bonferroni-corrected Wilcoxon rank-sum test [BH-Wilcox] vs. species-specific) and the presence of a more defined 3′-splice site at the final exon (p=2.04 × 10–03, BH-Wilcox vs. species-specific). Introns adjacent to conserved circRNAs also exhibited a significant enrichment for repeat elements (Figure 3D, all p<1 × 10–5, BH-Wilcox vs. species-specific) in particular inverted-repeat L1 and AluJ retrotransposons (:Figure 3D, L1: p<1.22 × 10–23| AluJ: p<1.48 × 10–18, BH-Wilcox). A further key distinguishing feature of interest was intron length. Conserved circRNAs exhibited shorter introns downstream of the first exon and an extended intron downstream of the final exon (Figure 4A and B). In species-specific circRNA, this adjacent downstream intron has a median length of 4624 nucleotides whilst in conserved circRNA the median is almost twice as long at 9923 nucleotides (Figure 4B, p<1.07 × 10–35, BH-Wilcox). Finally, when comparing the major drivers of both models, we noticed over 90% (11/12) of features overlapped between the models. This suggests that conserved circRNAs are an extreme continuum of species-specific circRNAs. Therefore, understanding the processes contributing to circRNA conservation may also provide insight into the genesis of circRNAs across species.
 
-## Insertion of young transposons increases downstream intron length in conserved circRNAs
+![Figure 4.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig4-v2.jpg)
+
+**Figure 4.:** (A) Scatterplot of downstream intron length for conserved and species-specific circRNAs. (B) Boxplot describing lengths of intron immediately downstream of circRNA for conserved and species-specific circRNAs (see Figure 2C for description of boxplots). p-Values calculated by Wilcoxon rank-sum test and corrected for multitesting (Bonferroni). nt: nucleotide (C) Cumulative distribution plot of change of length of orthologous downstream introns of conserved, species-specific and background circRNAs from lemur to human (see Figure 2D for description of cumulative distribution plots). p-Values calculated by Wilcoxon rank-sum test and corrected for multitesting (Bonferroni). (D) Cumulative distribution plot of length of novel repeat elements within the orthologous downstream introns of conserved, species-specific and background circRNAs from lemur to human (see Figure 2D for description of cumulative distribution plots). p-Values calculated by Wilcoxon rank-sum test and corrected for multitesting (Bonferroni). (E) Pyramid plot of the proportion of repeat elements inserted into the downstream introns of conserved, species-specific and background circRNAs from lemur to human. *p<0.05; **p<0.005, ***p<1 × 10–5. p-Values calculated by Wilcoxon rank-sum test and corrected for multitesting (Bonferroni). (F) A schematic model of the results describing impact of our observations on circRNA formation. Boxes represent exons, straight lines are introns, repeat elements are red, arced lines represent back-spliced junction, and dashed lines represent RNA-RNA duplex.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69148/elife-69148-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cumulative distribution of length of introns adjacent to conserved circular RNAs (circRNAs) from lemur to human. Cumulative distribution of length of downstream (red) and upstream (cyan) introns from conserved circRNAs. p-Values calculated by Wilcoxon rank-sum test.
+
+### Insertion of young transposons increases downstream intron length in conserved circRNAs
 
 To investigate the evolutionary origins of the switch of conserved circRNAs from absence in prosimians and new-world monkeys to conservation within hominoids and old-world monkeys, we investigated the changes in intronic length for the orthologous introns between human (hominoids) and lemur (prosimians). In contrast to orthologous lemur introns, the human introns downstream of all identified circRNAs shows an almost fourfold expansion compared to background dataset of introns within circRNA containing genes (Figure 4C, p<3.84 × 10–23, Wilcoxon rank-sum) and the upstream adjacent intron (Figure 4—figure supplement 1A, p<1.02 × 10–10, Wilcoxon rank-sum). This difference is even greater in conserved circRNA, which display an almost twofold greater lengthening than species-specific circRNAs (or eightfold over background; Figure 4C, p<3.84 × 10–06, Wilcoxon rank-sum). These observations suggest that the expansion of the intron downstream of the circRNA may increase the proportion of back-splicing events increasing the likelihood of circRNA conservation.
 
@@ -84,15 +134,15 @@ In conclusion, our evolutionary analysis identifies that the noisy production of
 
 ## Materials and methods
 
-## Data processing
+### Data processing
 
 All fastq files were quality-checked using FastQC (Andrews, 2010). Adapters and low-quality sequences were removed using Cutadapt (Martin, 2011).
 
-## Datasets
+### Datasets
 
 Ribo-minus RNA-seq data was extracted from the publicly available Nonhuman Primate Reference Transcriptome Resource (NHPRTR) resource (http://www.nhprtr.org/; Peng et al., 2015). The analyzed samples were from chimpanzee, rhesus macaque, cynomolgus macaque mauritian, olive baboon, common marmoset, squirrel monkey, and mouse lemur to cover the ~70 millions of years (MYA) of primate evolution (Supplementary file 1). The primates samples of the above species were chosen based on the availability of chain files for LiftOver analysis. Human samples were retrieved from different publicly available Ribo-minus datasets searching for the SRA IDs in the circAtlas 2.0 database (http://circatlas.biols.ac.cn/; Wu et al., 2020; Supplementary file 1). Replicates of certain samples across the different primates data were merged to achieve a higher sequencing depth required for alternative splicing quantification (Supplementary file 5).
 
-## Alternative splicing, back-splice junction, and gene expression quantification
+### Alternative splicing, back-splice junction, and gene expression quantification
 
 Whippet (Sterne-Weiler et al., 2018) was used to analyze the RNA-seq samples to quantify cassette exon (CE) events, circRNAs (BSJs), and gene expression. To enable BSJ quantification, we used the setting with the --circ parameter when running Whippet-quant (https://github.com/timbitz/Whippet.jl, Timothy, 2021).
 
@@ -100,11 +150,11 @@ The splice graphs of all primates used for Whippet quantification were calculate
 
 Gene expression of orthologue genes was retrieved from the gene.tpm.gz files from Whippet-quant output. The correlations of gene expression of orthologue genes between tissue samples from all primates were calculated using Pearson’s correlation. Clustering of correlation values was assessed and visualized with a heatmap using the p.heatmap function in R.
 
-## Identification of expressed circRNAs and CEs
+### Identification of expressed circRNAs and CEs
 
 All the BSJ events present in orthologue genes between the species mentioned above were filtered to find conserved circRNAs identified by Whippet. The orthologue list of genes was retrieved from Ensembl using the bioMart R package (Smedley et al., 2009). Expressed BSJs were defined according to an expression and PSI cutoff of at least five reads and ≥5% of PSI, respectively. CE events from Whippet output were also filtered, keeping those present in orthologue genes and with PSI ≥ 10%.
 
-## Conservation analysis of circRNAs
+### Conservation analysis of circRNAs
 
 We defined a circRNA as conserved if the exon(s) that formed the BSJ are orthologous to the human exon(s) that also formed the BSJ. To achieve this, the exon coordinates of orthologue genes of each primate were retrieved from the GTF files downloaded from Ensembl (Supplementary file 6). Then, the exon coordinates from the GTF files were intersected with the CE coordinates from Whippet using bedtools intersect (Quinlan and Hall, 2010) with -wa parameter.
 
@@ -112,23 +162,27 @@ Then, the resulted exon coordinates (GTF-CE coordinates) were intersected with t
 
 The orthologue exons between primates and human were matched to human exon coordinates within the circRNAs coordinates in human to find conserved circRNAs. We defined if a circRNA was conserved between a primate and human if the exon(s) forming the BSJ of the circRNA were also conserved and if the exon(s) start and end coordinates were ≤100 nc from the start and end of the BSJ coordinate (see Figure 2 and S5 for schematic). We defined as non-conserved circRNAs all the human circRNAs that do not have orthologue exons forming the BSJ of the circRNA with other primates.
 
-## Conserved and tissue-conserved circRNAs
+### Conserved and tissue-conserved circRNAs
 
 The list of orthologous circRNAs was plotted in an UpSet plot to visualize the intersection of circRNAs between primates species. We defined the set of conserved circRNAs as the circRNAs within the intersections between primates species where human, chimpanzee, and baboon always appeared.
 
 The correlation of inclusion of conserved and tissue-conserved circRNAs between all samples was calculated using Pearson’s correlation. Then correlation values were plotted in a heatmap using the p.heatmap function in R.
 
-## Differential gene expression analysis and enrichment analysis of genes with conserved circRNAs
+### Differential gene expression analysis and enrichment analysis of genes with conserved circRNAs
 
 EdgeR (Robinson et al., 2010) library was used to perform the differential gene expression analysis between neuronal samples (brain, cerebellum, and frontal cortex) and non-neuronal samples (heart, skeletal muscle, liver, lung, spleen, and colon). This analysis showed 8817 differentially expressed genes according to a log fold change cutoff of log2(1.5) and FDR of 0.05.
 
 There were 212 genes of the conserved circRNAs (total of 442 genes) in the set of differentially expressed genes. The enrichment of genes with conserved circRNAs was statistically tested with a hypergeometric test using the phyper function in R. The parameters were q = 212, m = 8,817, n = 11,278, k = 442, and lower.tail = FALSE.
 
-## Conserved CEs in primates
+### Conserved CEs in primates
 
 All exon coordinates of orthologue genes from the GTF files and CE exon coordinates from Whippet were mapped to human coordinates using UCSC LiftOver (Navarro Gonzalez et al., 2021). The PSI values of orthologous exons in genes of conserved and tissue-conserved circRNAs were retrieved from all tissue samples of human, chimpanzee, and baboon and calculated Pearson’s correlation values. The correlation values were plotted in a heatmap using the p.heatmap function.
 
-Comparison of circRNAs expression and conservation circRNAs expression of conserved, tissue-conserved, and non-conserved circRNAs was calculated using relative transcripts per million (TpMs). Relative TpMs are the expression of circRNAs measured in TpMs. Relative TpMs were calculated as the proportion of gene expression measured in TpMs relative to the number of reads of the circRNA using the formulaRelativeTpMs=circRNAReads∗GeneTpMGeneReads
+Comparison of circRNAs expression and conservation circRNAs expression of conserved, tissue-conserved, and non-conserved circRNAs was calculated using relative transcripts per million (TpMs). Relative TpMs are the expression of circRNAs measured in TpMs. Relative TpMs were calculated as the proportion of gene expression measured in TpMs relative to the number of reads of the circRNA using the formula
+
+$$
+RelativeTpMs=\frac{circRNAReads∗GeneTpM}{GeneReads}
+$$
 
 where circRNA Reads refers to the number of reads in the BSJ/circRNA, Gene TpM refers to the TpM value of the gene with the exons of the circRNA, and Gene Reads refers to the number of reads of the gene with the exons of the circRNA.
 
@@ -142,23 +196,23 @@ The median PSI values of shared circRNAs between evolutionary interesting sets (
 
 Seven of our reported circRNAs from the lists of conserved and tissue-conserved circRNAs were of special interest as they were previously reported (Gokool et al., 2020a) to be highly expressed in human cerebellum and frontal cortex. The PSI values of such circRNAs were compared across all tissues in the eight primates species.
 
-## Comparison of the number of orthologue genes producing a circRNA and number of conserved circRNAs between species
+### Comparison of the number of orthologue genes producing a circRNA and number of conserved circRNAs between species
 
 The number of times an orthologue gene produces at least one circRNA in any of the analyzed species was counted, as well as the number of times a circRNA was shared between another primate. The percentage of shared genes or circRNAs between the eight species was calculated and plotted in a barplot using the ggplot2 library in R.
 
 Comparison of start and end position of circRNAs between conserved and non-conserved circRNAs circRNAs can be formed from unique start and end exons forming the BSJ, repeated start exons, repeated end exons, or repeated start and end exons (see Figure 2—figure supplement 3 for schematic). The percentage of conserved and non-conserved circRNAs that fall in the above categories was calculated and plotted using the ggplot2 library in R.
 
-## Generalized logistic regression
+### Generalized logistic regression
 
 All continuous data were normalized to ensure a fair comparison between features using scale() package in R environment. Multicollinearity was assessed using the vif() from the R package car.
 
 The dataset was split into training (80%) and test (20%). To optimize the selection of the model and the importance of each feature, we used the R package glmulti (Calcagno and De Mazancourt, 2010). To select from all possible models, the selection process used a genetic algorithm (method = ‘g’) with Akaike information criterion (AIC – crit = ‘aic’). To calculate the generalized logistic model, glmulti used the R module glm with family = binomial(). ROC curve was calculated using R’s pROC library with test data. Data extracted from this model is reported together with p-value and z-values in Supplementary file 7.
 
-## Background datasets
+### Background datasets
 
 Two background datasets were used in this study: background and species-specific (Supplementary file 2). The ‘background’ datasets consisted of exon combinations only within genes with circRNAs. The dataset was constructed by identifying alternative exons within gene of interest (10 < PSI < 90 l within any of the tissues studied) and using Python function random to assign these exons together. The ‘species-specific’ dataset was constructed as described above of human circRNA with no evidence of their BSJ being conserved in any other primate species. For both datasets, only genes with orthologous genes in all tested primates species were used (based on Ensembl annotation) and only orthologous exons (based on LiftOver – see above) were used.
 
-## circRNA features
+### circRNA features
 
 MaxEntScan (Yeo and Burge, 2004) was used to estimate the strength of 3′ and 5′-splice sites. 5′-splice site strength was assessed using a sequence including 3 nt of the exon and 6 nt of the adjacent intron. 3′-splice site strength was assessed using a sequence including −20 nt of the flanking intron and 3 nt of the exon. SVM-BPfinder (Corvelo et al., 2010) was used to estimate branchpoint and polyprimidine tract strength and other statistics. Scores were calculated using the sequence of introns to the 3′ end of exon between 20 and 500 nt.
 
@@ -170,29 +224,29 @@ All CLiP-seq data and CHiP-seq data were downloaded preprocessed bed data files 
 
 In feature analysis, only first and last exons of circRNA, and their surrounding introns, were included in the analysis. The upstream portion is considered as the region 5′ of elements (i.e., first exon) and downstream portion is 3′ of elements.
 
-## Overlap with known repeat elements
+### Overlap with known repeat elements
 
 Repeat elements identified by RepeatMasker were downloaded from UCSC table browser (Navarro Gonzalez et al., 2021) in bed format. Bedtools intersect (−wao) was used to identify overlap of transposons with novel exons.
 
 The frequency of transposable events is calculated as the proportion of transposons overlapping area of interest (i.e., exon 1). All transposons were grouped together into 12 categories (AluJ, AluS, AluY, L1, L2, L3, MIR, MER, FLAM, AT_rich, SINE, and everything else into ‘other’) based on annotation from RepeatMasker. Inverted repeat regions are defined as having the same transposable elements on different strands in both introns adjacent to the circRNA.
 
-## Intronic length and transposons comparison of human and lemur
+### Intronic length and transposons comparison of human and lemur
 
 Orthologous exons between human and lemur containing circRNAs were identified using the procedure described above. Intron length was determined based on the nearest exon from Ensembl annotation (Yates et al., 2020) with evidence from RNA-seq data of expression (PSI > 10). To identify regions unique to human, the intronic regions unique to human were split into windows of 20 nt. LiftOver was used to identify conserved regions between human and lemur genomes for each of these windows. Regions with no evidence of conservation were overlapped (using bedtools intersect –wao) with UCSC RepeatMasker (Navarro Gonzalez et al., 2021) annotation to identify novel transposon insertion.
 
 Previously reported circRNAs from circAtlas circRNAs reported in the circAtlas database were downloaded from their webserver (http://circatlas.biols.ac.cn/). As the circRNA coordinates in the bed file had all types of circRNAs, we used bedintersect to keep only those circRNAs from annotated exons (hg38 GENCODE). Using bedtools, the filtered exonic circRNAs from circAtlas were intersected with the conserved and species-specific circRNAs to calculate the percentage of shared circRNAs.
 
-## Benchmarking Whippet for circRNA detection
+### Benchmarking Whippet for circRNA detection
 
 Whippet has been previously benchmarked for the detection of linear splicing events (Sterne-Weiler et al., 2018). However, it has not been previously validated for detection of back-splicing events that create circRNAs. To benchmark Whippet’s performance on circRNA detection, we analyzed both circRNA detection and computational performance.
 
-## Simulated dataset comparison
+### Simulated dataset comparison
 
 CIRIsimulator (Gao et al., 2015) was used to make four simulated datasets with sequencing levels of 10-, 20-, 30-, and 40-fold read depth. Simulated sequencing data was generated using the chromosome 1 fasta from the hg19 human genome and its GTF annotation file obtained from the CIRI software repository (https://sourceforge.net/projects/ciri/). The parameters used were default insert length, 75 read length, and no sequencing errors.
 
 With the simulated datasets, we ran Whippet (Sterne-Weiler et al., 2018), CIRCexplorer3 (Ma et al., 2019), CIRIquant (Zhang et al., 2020), and find_circ (Memczak et al., 2013). Whippet parameters were the same as previously described (see Materials and methods). CIRCexplorer3 was run using CIRCexplorer2 output file (https://github.com/YangLab/CLEAR, Xiao-Ou, 2021). To run CIRCexplorer2, we used the ‘run with One Command’ option of CIRCexplorer2 (https://circexplorer2.readthedocs.io/en/latest/tutorial/one_step/). In line with recommendation from authors, we used STAR to map the RNA-seq reads according to defined parameters (https://circexplorer2.readthedocs.io/en/latest/tutorial/alignment/). CIRIquant and find_circ were run according to the recommended parameters for each program (Ma et al., 2019; Memczak et al., 2013; Sterne-Weiler et al., 2018; Zhang et al., 2020). The performance of the programs was evaluated by assessing the number of circRNAs found versus the number of circRNAs in the simulated datasets.
 
-## RNase R samples analysis
+### RNase R samples analysis
 
 RNase R samples from human and macaque were downloaded from SRA database after defining a curated list of potential samples to analyze. Info about SRA ID, the title of the sample, and sequencing depth is given in Supplementary file 1.
 
@@ -200,26 +254,48 @@ The quality of samples was analyzed with FastQC (Andrews, 2010) and, if needed, 
 
 Quantification of circRNAs using Whippet was done as previously described for each corresponding primate. In the case of human samples, for the set of species-specific circRNAs, there was 62.3% of overlap (Figure 1—figure supplement 2B).
 
-## Macaque RNase R samples analysis
+### Macaque RNase R samples analysis
 
 As the set of conserved circRNAs is defined as ‘all circRNAs present at least in human, chimpanzee, and baboon,’ we first filter all those conserved circRNAs that are present in the macaque samples. According to this filter, we found 454 conserved circRNAs also conserved in macaque (conserved-macaque circRNAs). From the total of conserved-macaque circRNAs, we calculated the percentage of shared conserved-macaque circRNAs in the RNase R dataset. circRNAs in the RNase R dataset were defined as expressed with a ≥2 reads cutoff.
 
 Conserved-macaque circRNAs were also filtered to keep those with neuronal tissue expression. Neuronal tissue expression of the circRNAs was defined as all those circRNAs that had a PSI value (in neuronal samples: cerebellum and frontal cortex samples) of at least 5%. From this filter, there are 385 conserved-macaque circRNAs with neuronal expression. The percentage of shared of circRNAs with the RNase dataset was also calculated. The circRNAs in the RNase R dataset was defined as expressed with a ≥2 reads cutoff.
 
-## False-positive rate
+### False-positive rate
 
 PolyA+ and ribodepleted strand RNA-seq data from human brain regions samples (Gokool et al., 2020a; Supplementary file 1) were analyzed with Whippet, CIRCexplorer3, CIRIquant, and find_circ using the recommended parameters for each program (Ma et al., 2019; Memczak et al., 2013; Sterne-Weiler et al., 2018; Zhang et al., 2020). Indices needed for mapping reads were built using the hg38 genome version and with default parameters. All circRNAs from all the programs were defined to be expressed with a ≥5 reads cutoff. The false-positive rate for each program was calculated as the percentage of circRNAs shared between polyA+ and ribodepleted samples. We calculated the FPR of Whippet, CIRCexplorer3, CIRIquant, and find_circ. The false-positive rate was calculated as the percentage of circRNAs shared between polyA+ and ribodepleted samples with previous reports showing FPR < 2 (Gokool et al., 2020b) and with other reports finding that polyA+-based FPR of many algorithms ranges from ~3% to 8% (Szabo et al., 2015).
 
-## Time and memory computation comparison
+### Time and memory computation comparison
 
 Quantification of time and memory used for each of the programs (Whippet [Sterne-Weiler et al., 2018], CIRCexplorer3 [Ma et al., 2019], CIRIquant [Zhang et al., 2020], and find_circ [Memczak et al., 2013]) was done using the built-in time function in GNU Linux, version 1.7, when analyzing the same sample (GOK5490A11_S15_ba9RD) from the ribodepleted dataset. The total run time was calculated as the sum of user time and system time from the time program output. The memory used for each program is the maximum resident set size value from the time program output. Time and memory quantification was done for each of the steps needed to get the final output of the circRNA quantification without considering building indices for each mapping program. Total time was transformed from seconds to minutes and total memory from kbytes to Gbytes.
 
-## Gene expression of genes with conserved and species-specific circRNAs
+### Gene expression of genes with conserved and species-specific circRNAs
 
 Gene expression of genes with exons from conserved circRNAs was compared with the gene expression of genes with exons from species-specific circRNAs. The gene expression comparison was done in each tissue and the median expression of all tissue samples (Supplementary file 1). In the case of each tissue comparison, the mean gene expression (TpM) was calculated for all replicates of each tissue.
 
 In all the gene expression comparisons (tissue-specific and median tissue expression), the set of gene expression of conserved circRNAs was statistically compared with the set of gene expression of species-specific circRNAs using the Wilcoxon rank-sum test. Gene expression distribution of both sets of genes was transformed to log2 and then plotted in violin plots.
 
-## Comparison of number of exons between conserved and species-specific circRNAs
+### Comparison of number of exons between conserved and species-specific circRNAs
 
 The number of exons in conserved and species-specific circRNAs was quantified according to the number of exons that were present in the BSJ of the circRNAs. The exon coordinates were defined according to Ensembl and all exons most have evidence of expression (≥ 5 reads and ≥5% PSI). The distribution of the number of exons was plotted in violin plots and statistically tested using Wilcoxon rank-sum test in R with the parameter alternative = ‘less’. To test if conserved circRNAs were enriched in circRNAs species with number of exons of 2–3, we performed Fisher’s exact test in R with the parameter alternative = ‘greater.’ For this analysis, we defined the below contingency table:
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>CircRNAs with 2–3 exons</th>
+      <th>CircRNAs with more or with less of 2–3 exons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Conserved</td>
+      <td>198</td>
+      <td>575</td>
+    </tr>
+    <tr>
+      <td>Species-specific</td>
+      <td>1966</td>
+      <td>9235</td>
+    </tr>
+  </tbody>
+</table>

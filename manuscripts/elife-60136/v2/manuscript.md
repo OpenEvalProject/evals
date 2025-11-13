@@ -56,21 +56,35 @@ To enable more direct comparison to previous research, we manually created the D
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/60136/elife-60136-fig2-v2.jpg)
 
-**Figure 2.:** Visible regions are numbered with Davi130 parcellation region numbers and correspond to names in the figure. Even numbers correspond to regions in the right hemisphere (as shown in the figure), while left hemisphere regions are odd numbers. A list of all Davi130 labels can be found at Figure 2—source data 1.Figure 2—source data 1.
+**Figure 2.:** Visible regions are numbered with Davi130 parcellation region numbers and correspond to names in the figure. Even numbers correspond to regions in the right hemisphere (as shown in the figure), while left hemisphere regions are odd numbers. A list of all Davi130 labels can be found at Figure 2—source data 1.
 
 Following successful CAT12 preprocessing, rigorous quality control (QC) was employed to identify individual MRI scans suitable for statistical analysis of brain aging and hemispheric asymmetry in chimpanzees. Our final sample consists of 194 chimpanzees including 130 females with an age range of 9–54 years and a mean age of 26.3 ± 9.9 years (Figure 3A). The linear regression model with GM fraction of total intracranial volume as the dependent variable and age, scanner field strength, sex, and rearing environment revealed a significant negative association between age and GM (p<0.0001) demonstrating age-related decline in overall GM density (Figure 3B). Both sex (p=0.004) and scanner field strength (p<0.0001) showed a significant effect on total GM volume. Therefore, the sample was split into male and female subjects and into 1.5T and 3T scanner, whereby, all sub-samples showed a significant age effect on GM (male: R2 = 0.17, p=0.0004; female R2 = 0.13, p<0.0001, 1.5T: R2 = 0.19, p<0.0001; 3T: R2 = 0.09, p=0.004). There were no significant sex differences of GM decline (p=0.3). The same analysis was conducted on a matched human sample from the IXI dataset (Figure 3C; https://brain-development.org/ixi-dataset/). The human sample was matched based on age, sex, and scanner field strength (n = 194, 128 females, 20–78 y/o, mean = 39.4 ± 14.0). As life span and aging processes are different between species, the human sample was matched to chimpanzees roughly by using a factor of 1.5* for age. A significant age-related decline in overall GM (p<0.0001) as well as a significant sex effect (p<0.0001) was also found in the human sample (Figure 3D). Similar to the chimpanzee sample, both males and female subjects show a significant age effect on total GM (male: R2 = 0.58, p<0.0001; female: R2 = 0.61, p<0.0001) but with no significant sex differences on GM decline (p=0.8). Although both species present a significant age-related GM decline, humans show a higher negative correlation between age and GM (chimpanzee: R2 = 0.12; human: R2 = 0.55) with less variance as compared to chimpanzees.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60136/elife-60136-fig3-v2.jpg)
+
+**Figure 3.:** (A) Distribution of age and sex in the final sample of 194 chimpanzees. (B) Linear relationship between GM and age with standard error for chimpanzee sample. (C) Distribution of age and sex in the human (IXI) matched sample of 194 humans. (D) Linear relationship between GM and age with standard error for human sample. Figure 3—figure supplement 1 presents the age and sex distribution of the whole sample (n = 223). Figure 3—figure supplement 2 presents the age and sex distribution of the whole IXI sample (n = 496).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60136/elife-60136-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60136/elife-60136-fig3-figsupp2-v2.jpg)
 
 Region-based morphometry analysis was applied to test for local effect of age on GM. Linear regression analyses identified 55 of 130 brain regions in the Davi130 parcellation across both hemispheres that were significantly associated with age after family-wise error (FWE) correction for multiple testing (Figure 4 and Figure 4—source data 1). Specifically, GM decline with age was found bilaterally in the superior frontal gyrus (SFG), posterior middle frontal gyrus (pMFG), posterior inferior frontal gyrus (pIFG), lateral orbitofrontal cortex (lOFC), middle and inferior precentral gyrus (PrCG), cingulate gyrus (ACC, MCC, PCC), posterior superior temporal gyrus (pSTG), anterior middle temporal gyrus (aMTG), precuneus (PCun), and lingual gyrus (LG) as well as unilaterally in the right anterior insula (aIns) and middle inferior frontal gyrus (mIFG), in addition to the left superior precentral gyrus (sPrCG), anterior transverse temporal gyrus (aTTG), posterior transverse temporal gyrus (pTTG), paracentral lobule (PCL) and the area around the calcarine sulcus (Calc) within the cerebral cortex. Subcortically, age-related GM decline was found in the bilateral putamen (Pu), caudate nucleus (CN), and the nucleus accumbens (NA), as well as in the superior cerebellum (CerVI, CerIV, CerVA, Cer VB, CerIV and right CrusII). Finally, to test for more fine grained effects of aging independently of our macroanatomical parcellation, the same sample was analyzed with VBM revealing additional clusters of GM that are significantly affected by age in chimpanzees (Figure 5) after FWE correction using threshold-free cluster enhancement (TFCE) (Smith and Nichols, 2009). On top of the regions identified by region-wise morphometry, we found extensive voxel-wise effects throughout the orbitofrontal cortex (OFC), inferior temporal gyrus (ITG), transverse temporal gyrus (TTG), frontal operculum (FOP), parietal operculum (POP), postcentral gyrus (PoCG), supramarginal gyrus (SMG), angular gyrus (AnG), and in parts of the superior parietal lobule (SPL), superior occipital gyrus (sOG), and in inferior parts of the cerebellum.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/60136/elife-60136-fig4-v2.jpg)
 
-**Figure 4.:** Red regions represent Davi130 regions that remained significant at p≤0.05 following FWE correction (Holm method). The T-statistic and p-value for all Davi130 labels can be found in Figure 4—source data 1. 1 and 2 – aSFG, 3 and 4 – mSFG, 5 and 6 – pSFG, 9 and 10 – pMFG, 14 – mIFG, 15 and 16 – pIFG, 19 and 20 – lOFC, 21 and 22 – ACC, 23 and 24 – MCC, 25 and 26 – PCC, 27 – sPrCG, 29 and 30 – mPrCG, 31 and 32 – iPrCG, 33 – PCL, 40 – aIns, 43 – aTTG, 49 and 50 – pSTG, 51 and 52 – aMTG, 83 and 84 – PCun, 85 – Cun, 87 and 88 – LG, 89 and 90 – Calc, 97 and 98 – CN, 99 and 100 – NA, 103 and 104 – Pu, 118 – CrusII, 119 and 120 – CerVI, 121 and 122 – CerVB, 123 and 124 – CerVB, 125 and 126 – CerIV.Figure 4—source data 1.
+**Figure 4.:** Red regions represent Davi130 regions that remained significant at p≤0.05 following FWE correction (Holm method). The T-statistic and p-value for all Davi130 labels can be found in Figure 4—source data 1. 1 and 2 – aSFG, 3 and 4 – mSFG, 5 and 6 – pSFG, 9 and 10 – pMFG, 14 – mIFG, 15 and 16 – pIFG, 19 and 20 – lOFC, 21 and 22 – ACC, 23 and 24 – MCC, 25 and 26 – PCC, 27 – sPrCG, 29 and 30 – mPrCG, 31 and 32 – iPrCG, 33 – PCL, 40 – aIns, 43 – aTTG, 49 and 50 – pSTG, 51 and 52 – aMTG, 83 and 84 – PCun, 85 – Cun, 87 and 88 – LG, 89 and 90 – Calc, 97 and 98 – CN, 99 and 100 – NA, 103 and 104 – Pu, 118 – CrusII, 119 and 120 – CerVI, 121 and 122 – CerVB, 123 and 124 – CerVB, 125 and 126 – CerIV.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60136/elife-60136-fig5-v2.jpg)
+
+**Figure 5.:** The significant clusters are found using TFCE with FWE correction at p≤0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60136/elife-60136-fig5-figsupp1-v2.jpg)
 
 Hemispheric asymmetry of the chimpanzee brain was assessed for each cortical Davi130 region with a total of 68% (44/65) exhibiting significant cortical asymmetry after FWE correction (Figure 6 and Figure 6—source data 1). The majority of regions were found with greater GM volume in the right hemisphere (n = 32) as compared to the left (n = 12). In the left hemisphere, we found more GM in the SFG, pMFG, insula, anterior TTG, and PCun within the cortex. Rightward cortical asymmetry was located in the anterior MFG, middle and posterior IFG, medial OFC, cingulate gyrus, amygdala, STG, MTG, posterior TTG, anterior and posterior fusiform gyrus (FFG), FOP, POP, middle PrCG, middle and inferior PoCG, SMG, AnG, Calc, as well as the middle occipital gyrus. Within the basal ganglia, leftward GM asymmetry was observed in the Pu, nucleus accumbens (NA), basal forebrain nucleus (BF), and globus pallidus (GP), while, rightward asymmetry in the caudate nucleus (CN) and thalamus (Th). The cerebellum exclusively showed rightward GM asymmetry in the posterior cerebellar lobe (CerIX, CerVIII, CrusI, CrusII, CerVI). The hemispheric asymmetry did not show a decipherable pattern.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/60136/elife-60136-fig6-v2.jpg)
 
-**Figure 6.:** Significant leftward (red) and rightward (green) asymmetrical regions are those with a p≤0.05 after FWE correction. The T-statistic and p-value for all Davi130 labels can be found in Figure 6—source data 1. 1 – aSFG, 3 – mSFG, 5 – pSFG, 8 – aMFG, 9 – pMFG, 12 – aIFG, 14 – mIFG, 16 – pIFG, 18 – mOFC, 22 – ACC, 24 – MCC, 26 – PCC, 30 – mPrCG, 36 – FOP, 38 – POP, 39 – aIns, 41 – pIns, 43 – aTTG, 46 – pTTG, 48 – aSTG, 50 – pSTG, 52 – aMTG, 54 – pMTG, 62 – aFFG, 64 – pFFG, 74 – mPoCG, 76 – iPoCG, 80 – SMG, 82, AnG, 83 – PCun, 90 – Calc, 94 – mOG, 98 – CN, 101 – BF, 103 – Pu, 108 – Th, 112 – CerIX, 114 – CerVIII, 115 –CrusI, 118 –CrusII, 120 – CerVI.Figure 6—source data 1.
+**Figure 6.:** Significant leftward (red) and rightward (green) asymmetrical regions are those with a p≤0.05 after FWE correction. The T-statistic and p-value for all Davi130 labels can be found in Figure 6—source data 1. 1 – aSFG, 3 – mSFG, 5 – pSFG, 8 – aMFG, 9 – pMFG, 12 – aIFG, 14 – mIFG, 16 – pIFG, 18 – mOFC, 22 – ACC, 24 – MCC, 26 – PCC, 30 – mPrCG, 36 – FOP, 38 – POP, 39 – aIns, 41 – pIns, 43 – aTTG, 46 – pTTG, 48 – aSTG, 50 – pSTG, 52 – aMTG, 54 – pMTG, 62 – aFFG, 64 – pFFG, 74 – mPoCG, 76 – iPoCG, 80 – SMG, 82, AnG, 83 – PCun, 90 – Calc, 94 – mOG, 98 – CN, 101 – BF, 103 – Pu, 108 – Th, 112 – CerIX, 114 – CerVIII, 115 –CrusI, 118 –CrusII, 120 – CerVI.
 
 ## Discussion
 
@@ -92,25 +106,84 @@ A substantial amount of regions presenting significant inter-hemispheric differe
 
 The NCBR offers the largest and richest openly available dataset of chimpanzee brain MRI scans acquired over a decade with 1.5T and 3T MRI at two locations, capturing valuable inter-individual variation in one large heterogeneous sample. To account for the scanner effect on GM estimation, field strength was modeled as a covariate of no interest for analyzing the age effect on GM volume. The focus of this study was the analysis of GM volume, even though the CAT12 image processing pipeline enables surface projection and analysis. Consequently, the next step will be the application of CAT12 to analyze cortical surface area, curvature, gyrification, and thickness of the chimpanzee brain, to include behavioral data and the quantitative comparison to humans and other species, as cortical surface projection permits a direct inter-species comparison due to cross-species registration.
 
-## Conclusion
+### Conclusion
 
 In conclusion, we present the new chimpanzee reference template Juna.Chimp, TPM’s, the Davi130 whole-brain parcellation, and the CAT12 preprocessing pipeline which is ready-to-use by the wider neuroimaging community. Investigations of age-related GM changes in chimpanzees using both region-wise and voxel-based morphometry showed substantial atrophy with age, which was also apparent in a matched human sample providing further evidence for human-like physiological aging processes in the chimpanzee brain. Examining population-based hemispheric asymmetry in chimpanzees showed a general rightward lateralization of higher GM volume without the presence of a distinct pattern like the ‘Yakovlevian torgue’ seen in humans.
 
 ## Materials and methods
 
-## Subject information and image collection procedure
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CAT12</td>
+      <td>http://www.neuro.uni-jena.de/cat/</td>
+      <td>RRID:SCR_019184</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NCBR</td>
+      <td>http://www.chimpanzeebrain.org/</td>
+      <td>RRID:SCR_019183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>http://www.mathworks.com/products/matlab/</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPM</td>
+      <td>http://www.fil.ion.ucl.ac.uk/spm/</td>
+      <td>RRID:SCR_007037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>http://www.rstudio.com/</td>
+      <td>RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>3D Slicer</td>
+      <td>http://slicer.org/</td>
+      <td>RRID:SCR_005619</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Subject information and image collection procedure
 
 This study analyzed structural T1w MRI scans of 223 chimpanzees (137 females; 9–54 y/o, mean age 26.9 ± 10.2 years, Figure 3—figure supplement 1) from the NCBR (http://www.chimpanzeebrain.org/). The chimpanzees were housed at two locations including, the National Center for Chimpanzee Care of The University of Texas MD Anderson Cancer Center (UTMDACC) and the Yerkes National Primate Research Center (YNPRC) of Emory University. The standard MR imaging procedures for chimpanzees at the YNPRC and UTMDACC are designed to minimize stress for the subjects. For an in-depth explanation of the imaging procedure please refer to Autrey et al., 2014. Seventy-six chimpanzees were scanned with a Siemens Trio 3 Tesla scanner (Siemens Medical Solutions USA, Inc, Malvern, Pennsylvania, USA). Most T1w images were collected using a three-dimensional gradient echo sequence with 0.6 × 0.6 × 0.6 resolution (pulse repetition = 2300 ms, echo time = 4.4 ms, number of signals averaged = 3). The remaining 147 chimpanzees were scanned using a 1.5T GE echo-speed Horizon LX MR scanner (GE Medical Systems, Milwaukee, WI), predominantly applying gradient echo sequence with 0.7 × 0.7 × 1.2 resolution (pulse repetition = 19.0 ms, echo time = 8.5 ms, number of signals averaged = 8).
 
-## DICOM conversion and de-noising
+### DICOM conversion and de-noising
 
 The structural T1w images were provided by the NCBR in their original DICOM format and converted into Nifti using MRIcron (Rorden and Brett, 2000). If multiple scans were available, the average was computed. Following DICOM conversion, each image was cleaned of noise (Manjón et al., 2010) and signal inhomogeneity and resliced to 0.6 mm isotropic resolution. Finally, the anterior commissure was manually set as the center (0,0,0) of all Nifti’s to aid in affine preprocessing.
 
-## CAT12 preprocessing segmentation
+### CAT12 preprocessing segmentation
 
 Structural image segmentation in CAT12 builds on the TPM-based approach employed by SPM12, whereby, the gray/white image intensity is aided with a priori tissue probabilities in initial segmentation and affine registration as it is in common template space. Another advantage of a TPM is that one has a template for initial affine registration, which then enables the segment maps to be non-linearly registered and spatially normalized to corresponding segment maps of the chimpanzee shooting templates. Lowering the possibility for registration errors improves the quality of the final normalized image. Improving upon SPM’s segmentation (Ashburner and Friston, 2005), CAT12 employs Local Adaptive Segmentation (LAS) (Dahnke et al., 2012), Adaptive Maximum A Posterior segmentation(AMAP) (Dahnke and Gaser, 2017; Gaser et al., 2020), and Partial Volume Estimation (PVE) (Tohka et al., 2004). LAS creates local intensity transformations for all tissue types to limit GM misclassification due to varying GM intensity in regions such as the occipital, basal ganglia, and motor cortex because of anatomical properties (e.g. high myelination and iron content). AMAP segmentation takes the initially segmented, aligned, and skull stripped image created utilizing the TPM and disregards the a priori information of the TPM, to conduct an adaptive AMAP estimation where local variations are modeled by slowly varying spatial functions (Rajapakse et al., 1997). Along with the classical three tissue types for segmentation (GM, WM, and CSF) based on the AMAP estimation, an additional two PVE classes (GM-WM and GM-CSF) are created resulting in an estimate of the fraction of each tissue type contained in each voxel. These features outlined above of our pipeline allow for more accurate tissue segmentation and therefore a better representation of macroanatomical GM levels for analysis.
 
-## Creation of chimpanzee templates
+### Creation of chimpanzee templates
 
 An iterative process as by Franke et al., 2017 was employed to create the Juna.Chimp template, with T1 average, Shooting registration template (Ashburner and Friston, 2011), as well as the TPM (Figure 7). Initially, a first-generation template was produced using the ‘greater_ape’ template delivered by CAT (Franke et al., 2017; Gaser et al., 2020) that utilizes data provided in Rilling and Insel, 1999. The final segmentation takes the bias-corrected, intensity-normalized, and skull-stripped image together with the initial SPM-segmentation to conduct an AMAP estimation (Rajapakse et al., 1997) with a partial volume model for sub-voxel accuracy (Tohka et al., 2004). The affine normalized tissue segments of GM, white matter (WM), and cerebrospinal fluid (CSF) were used to create a new Shooting template that consists of four major non-linear normalization steps allowing to normalize new scans. To create a chimpanzee-specific TPM, we average the different Shooting template steps to benefit from the high spatial resolution of the final Shooting steps but also include the general affine aspects to avoid over-optimization. Besides the brain tissues the TPM also included two head tissues (bones and muscles) and a background class for standard SPM12 (Ashburner and Friston, 2005) and CAT12 preprocessing. An internal CAT atlas was written for each subject and mapped to the new chimpanzee template using the information from the Shooting registration. The CAT atlas maps were averaged by a median filter and finally manually corrected. This initial template was then used in the second iteration of CAT segmentation to establish the final chimpanzee-specific Juna.Chimp template, which was imported into the standard CAT12 preprocessing pipeline to create the final data used for the aging and asymmetry analyses.
 
@@ -118,7 +191,7 @@ An iterative process as by Franke et al., 2017 was employed to create the Juna.C
 
 **Figure 7.:** The resulting chimpanzee-shooting template, TPM and CAT atlas establishes the robust and reliable base to segment and spatially normalize the T1w images utilizing CAT12’s processing pipeline (Dahnke and Gaser, 2017; Gaser et al., 2020).
 
-## Davi130 parcellation
+### Davi130 parcellation
 
 The average T1 and final Shooting template were used for a manual delineation of macro-anatomical GM structures. Identification and annotation of major brain regions were performed manually using the program, 3D Slicer 4.10.1 (https://www.slicer.org). The labeling enables automated, region-based analysis of the entire chimpanzee brain and allows for robust statistical analysis. Nomenclature and location of regions were ascertained by consulting both chimpanzee and human brain atlases (Bailey and Bonin GV, 1950; Mai et al., 2015). The labeling was completed by two authors (S.V. and R.D.) and reviewed by two experts of chimpanzee brain anatomy (C.C.S. and W.D.H.). A total of 65 GM structures within the cerebrum and cerebellum of the left hemisphere were annotated and then flipped to the right hemisphere. The flipped annotations were then manually adapted to the morphology of the right hemisphere to have complete coverage of the chimpanzee brain with 130 labels.
 
@@ -126,26 +199,26 @@ The location of macroscopic brain regions was determined based on major gyri of 
 
 Considering the limitations of macroscopic features present in T1w, we utilized distinct morphological representations to split large gyri, such as gyral/sulcal folds and continuation of sulci. If a distinguishable feature could not be determined, rough distance and regional size was employed as border defining criteria. The splits of the lateral temporal lobe, including the TTG, followed a continuation of the inferior portion of the postcentral sulcus that angles slightly posteriorly to better account for the increase in length of the gyri as it proceeds inferiorly. The central sulcus as well as the adjacent pre- and postcentral gyri contain a knob or U-shaped bend proceeding posteriorly. The superior beginning and inferior end of this bend were employed for the two splits of these gyri. Additionally, the central sulcus is the border between the frontal and parietal lobes, therefore, the FOP – POP split occurs at the termination of the central sulcus at the lateral fissure. Within the frontal cortex, the anterior posterior split of the MFG is at the meeting point of the middle frontal sulcus and the superior precentral sulcus, which translates to the inferior bend of the MFG. The tip of the fronto-orbito sulcus was used as an anchor point for the split of the pIFG and mIFG. The middle anterior split of the IFG was then determined by distance, whereby the remaining gyrus was separated into equally sized parts. The cingulate cortex anterior, middle, and posterior subdivisions were delineated by splits following the anterior and posterior bends of the gyrus around the corpus callosum. The cerebellum was divided into its major lobes which are quite similar across primates (Apps and Hawkes, 2009). Finally, splits within the OFC, SFG, and insula were based on equal size and/or distance.
 
-## Quality control
+### Quality control
 
 CAT12 provides quality measures pertaining to noise, bias inhomogeneities, resolution and an overall compounded score of the original input image. Using these ratings, poor images were flagged for visual inspection when they were two standard deviations (std) away from the sample mean of each rating. The preprocessed modulated GM maps were then tested for sample inhomogeneity separately for each scanner (3T and 1.5T) and those that have a mean correlation below two std were flagged for visual inspection. Once the original image was flagged, affine GM, and modulated GM maps were inspected for poor quality, tissue misclassification, artefacts, irregular deformations, and very high intensities. For the second and third iteration, the passed modulated GM maps were tested again for mean correlation as a complete sample, flagging the images below two std for visual inspection, looking for the same features as in the initial QC iteration. Following the three iterations of QC a total of 194 of 223 chimpanzee MRI’s (130 females, 9–54 y/o, mean = 26.2 ± 9.9) qualified for statistical analysis.
 
-## Age-related changes in total gray matter
+### Age-related changes in total gray matter
 
 A linear regression model was used to determine the effect of aging on total GM volume. Firstly, total GM volume for each subject was converted into a percentage of total intracranial volume (TIV) to account for the variation in head size. This was then entered into a linear regression model as the dependent variable with age, sex, scanner field strength, and rearing as the independents. Sex-specific models were conducted with males and females separately using age as the only dependent variable. The slope of each regression line was determined using R2 and a p-value of p≤0.05 was used to determine the significant effect of age and sex on total GM volume. The IXI brain development dataset (http://brain-development.org/ixi-dataset/) was utilized to compare the age effect on total GM volume between chimpanzees and humans, as it includes subjects with a wide age range and T1w images from MRI scanners of both 1.5T and 3T field strength. Prior to matching the IXI sample to the QC passed chimpanzee sample, all images collected from the Institute of Psychiatry (IOP) were removed to keep similarity to the chimpanzee sample of a single 1.5T scanner. After removing subjects without meta data, a total of 496 subjects (Figure 3—figure supplement 2) were used for matching to the chimpanzee sample regarding age, sex, and scanner field strength. To enable age matching between species, a factor of 1.5 of chimpanzee age was used to roughly calculate the comparable human age. This factor was chosen based on the comparable life span of the two species, because a chimpanzee 40+ years is considered elderly and so is a 60+ year old human, also a 60+ year old chimpanzee is very old and uncommon similarly to a human 90+ years old. Furthermore, the age of sexual maturity in humans is 19.5 years, while in chimps it is 13.5 years which is also approximately a difference of 1.5 (Robson and Wood, 2008). The sample matching was conducted using the ‘MatchIt’ (Ho et al., 2007) R package (https://cran.r-project.org/package=MatchIt) and utilizing the ‘optimal’ (Hansen and Klopfer, 2006) algorithm. The matched human sample contained 194 subjects (128 females, 20–78 y/o, mean = 39.4 ± 14.0) for statistical analysis.
 
-## Age-related changes in gray matter using Davi130 parcellation
+### Age-related changes in gray matter using Davi130 parcellation
 
 The Davi130 parcellation was applied to the modulated GM maps to conduct region-wise morphometry analysis. First, the Davi130 regions were masked with a 0.1 GM mask to remove all non-GM portions of the regions. Subsequently, the average GM intensity of each region for all QC-passed chimpanzees was calculated. A multiple regression model was conducted for the labels from both hemispheres, whereby, the dependent variable was GM volume and the predictor variables were age, sex, TIV, scanner strength, and rearing. Significant age-related GM decline was established for a Davi130 label with a p≤0.05, after correcting for multiple comparisons using FWE (Holm, 1979).
 
-## Voxel-based morphometry
+### Voxel-based morphometry
 
 VBM analysis was conducted using CAT12 to determine the effect of aging on local GM volume. The modulated and spatially normalized GM segments from each subject were spatially smoothed with a 4 mm FWHM (full width half maximum) kernel prior to analyses. To restrict the overall volume of interest, an implicit 0.4 GM mask was employed. As MRI field strength is known to influence image quality, and consequently, tissue classification, we included scanner strength in our VBM model as a covariate. The dependent variable in the model was age, with covariates of TIV, sex, scanner strength, and rearing. The VBM model was corrected for multiple comparisons using TFCE with 5000 permutations (Smith and Nichols, 2009). Significant clusters were determined at p≤0.05, after correcting for multiple comparisons using FWE.
 
-## Hemispheric asymmetry
+### Hemispheric asymmetry
 
 As for the age regression analysis, all Davi130 parcels were masked with a 0.1 GM mask to remove non-GM portions within regions. Cortical hemispheric asymmetry of Davi130 labels was determined using the formula Asym = (L - R) / (L + R) * 0.5 (Kurth et al., 2015; Hopkins et al., 2017), whereby L and R represent the average GM volume for each region in the left and right hemisphere, respectively. Therefore, the bi-hemispheric Davi130 regions were converted into single Asym labels (n = 65) with positive Asym values indicating a leftward asymmetry, and negative values, a rightward bias. One-sample t-tests were conducted for each region under the null hypothesis of Asym = 0, and significant leftward or rightward asymmetry was determined with a p≤0.05, after correcting for multiple comparisons using FWE (Holm, 1979).
 
-## Exemplar pipeline workflow
+### Exemplar pipeline workflow
 
 To illustrate the structural processing pipeline, we have created exemplar MATLAB SPM batch scripts that utilizes the Juna.Chimp templates in CAT12’s preprocessing workflow to conduct segmentation, spatial registration, and finally some basic age analysis on an openly available direct-to-download chimpanzee sample (http://www.chimpanzeebrain.org/). These scripts require the appropriate templates which can be downloaded from the Juna.Chimp web viewer (SPM/CAT_templates.zip) and then place the templates_animals/folder into the latest version CAT12 Toolbox directory (CAT12.7 r1609). The processing parameters are similar to those conducted in this study, although different DICOM conversions and denoising were conducted. Further information regarding each parameter can be viewed when opening the script in the SPM batch as well as the provided comments and README file. The code for the workflow in addition to the code used to conduct the aging effect and asymmetry analyses can be found here (https://github.com/viko18/JunaChimp; Vickery, 2020; copy archived at swh:1:rev:411f0610269416d4ee04eaf9670a9dc84e829ea0).

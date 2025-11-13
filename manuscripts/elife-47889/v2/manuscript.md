@@ -52,45 +52,575 @@ The present study is based on analysis of a resource single-cell RNA-seq dataset
 
 The Tasic 2018 single-cell RNA-seq data tables report the abundance of transcripts from individual neurons in both ‘counts per million reads’ (CPM) and ‘fragments per kilobase of exon per million reads mapped’ (FPKM) units. Our analysis of this data compares gene expression levels quantitatively, with two distinct use cases: (1) comparisons across large sets of different genes, and (2) comparisons of the same gene across different individual cells, cell types and brain areas. We have relied upon FPKM data (Mortazavi et al., 2008; Pimentel, 2014), for use case 1 (i.e., the Tables 1 comparisons across genes). For use case 2 (as in all figures below), we have preferred the CPM units, because these units were used to generate the Tasic 2018 neurotaxonomy. In any case, choice of CPM vs. FPKM units would have very little impact on the present outcomes.
 
-## Single-neuron expression profiles of 18 select neuropeptide precursor (NPP) genes
+### Single-neuron expression profiles of 18 select neuropeptide precursor (NPP) genes
 
 Table 1 lists results of analyzing the expression of 18 NPP genes in all 22,439 individual neurons represented in Tasic 2018. Here we have made use of the ‘peak FPKM’ (pFPKM) metric described in Materials and methods below to quantify the expression of specific genes in highly expressing subsets of single-cell populations that exhibit highly variant expression of that particular gene. Each of the 18 NPP genes on this list meets two conditions: (1) the included NPP gene is highly expressed (top quintile pFPKM over all protein-coding genes) across VISp and ALM cortical areas, and (2) at least one gene for an NP-GPCR selective for the predicted product of at least one of the 18 NPPs is highly expressed in neurons within the same local area of neocortex (see Table 2). The first requirement was imposed to increase the likelihood of active secretion of the NP product encoded by the candidate NPP gene. The second requirement, for ‘cognate’ pairing between each included NPP and a locally expressed NP-GPCR gene, was imposed to elevate the likelihood of paracrine NP signaling within a cortical local circuit volume, as envisioned in Introduction above. The process for selection of these 18 NPP genes is described in more detail in Materials and methods. Table 1 lists Peak FPKM values for each of the 18 NPP genes, percentile and absolute ranks of that Peak FPKM value across all protein-coding genes, the percentage of cells sampled in which expression of the listed gene is detectible, predicted neuropeptide product(s) encoded, and the NP-GPCR gene(s) fulfilling requirement (2) for that NPP gene. Gene ontology results for the 18 select NPP genes are provided by Supplementary file 1. The Peak FPKM ranking columns in Table 1 show that expression levels of most of the 18 NPP genes are extremely high in the range of values for all 21,931 protein-coding genes detected in all 22,439 neurons sampled. Of these genes, Npy, Sst, Vip and Tac2 rank as the top four overall in pFPKM values, while Cck, Penk and Crh also rank in the top ten. Eleven of these NPP genes rank in the top percentile and all 18 rank in the top quintile by pFPKM. To the simplest first approximation, very high abundance of a given protein-coding transcript implies the potential, at least, for a very high rate of synthesis of the encoded protein. The extremely high peak abundance of these NPP transcripts thus suggests that NP precursor proteins could be synthesized at very high rates in neurons exhibiting such peak abundance. In a steady state, a high rate of synthesis would then necessarily imply a correspondingly high overall rate of protein product elimination. For an NP precursor protein, processing and secretion of active neuropeptide would seem the obvious and most likely route of elimination. The high abundance of transcripts encoding these 18 NPPs might thus be construed as prima facie evidence for robust secretion of neuropeptide products.
+
+**Table 1.**
+ Single-cell RNA-seq expression statistics for 18 highly expressed neuropeptide precursor protein (NPP) genes cognate to locally expressed NP-GPCR genes (see Table 2).NPP genes are tabulated here along with peak single-cell expression levels as pFPKM (Peak FPKM, see Materials and methods), percentile and absolute ranking of these pFPKM values across pFPKMs for all 21,931 protein-coding genes, and the percentage of cells sampled in which transcripts of the given NPP gene were detected at > 1 CPM. The table also lists predicted neuropeptide products, and genes encoding the locally expressed G-protein-coupled receptors (NP-GPCRs) cognate to the NPP (see Table 2). NPP genes are listed here in descending order of Peak FPKM. Pastel color fills in the ‘Cognate NP-GPCR Genes’ column correspond to i/o (pink), s (light green) and q/11 (light blue) transduction families of associated G-protein and will be used to highlight these families consistently in all following figures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>NPP Gene</th>
+      <th>Peak FPKM</th>
+      <th>pFPKM Percentile</th>
+      <th>pFPKM Rank</th>
+      <th>% Cells</th>
+      <th>Predicted Neuropeptides</th>
+      <th colspan="2">Cognate NP-GPCR Genes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Npy</td>
+      <td>108,865</td>
+      <td>100.00</td>
+      <td>1</td>
+      <td>42</td>
+      <td>Neuropeptide Y</td>
+      <td colspan="2">Npy1r, Npy2r, Npy5</td>
+    </tr>
+    <tr>
+      <td>Sst</td>
+      <td>70,274</td>
+      <td>99.99</td>
+      <td>2</td>
+      <td>26</td>
+      <td>Somatostatins</td>
+      <td colspan="2">Sstr1, Sstr2, Sstr3, Sstr4</td>
+    </tr>
+    <tr>
+      <td>Vip</td>
+      <td>48,747</td>
+      <td>99.99</td>
+      <td>3</td>
+      <td>33</td>
+      <td>Vasoactive Intestinal Peptide</td>
+      <td colspan="2">Vipr1, Vipr2</td>
+    </tr>
+    <tr>
+      <td>Tac2</td>
+      <td>18,284</td>
+      <td>99.98</td>
+      <td>4</td>
+      <td>15</td>
+      <td>Neurokinin B</td>
+      <td colspan="2">Tacr3</td>
+    </tr>
+    <tr>
+      <td>Cck</td>
+      <td>16,396</td>
+      <td>99.97</td>
+      <td>6</td>
+      <td>69</td>
+      <td>Cholecystokinins</td>
+      <td colspan="2">Cckbr</td>
+    </tr>
+    <tr>
+      <td>Penk</td>
+      <td>11,160</td>
+      <td>99.96</td>
+      <td>8</td>
+      <td>26</td>
+      <td>Enkephalins</td>
+      <td colspan="2">Oprd1, Oprm1</td>
+    </tr>
+    <tr>
+      <td>Crh</td>
+      <td>9,118</td>
+      <td>99.95</td>
+      <td>10</td>
+      <td>17</td>
+      <td>Corticotropin-Releasing Hormone</td>
+      <td colspan="2">Crhr1, Crhr2</td>
+    </tr>
+    <tr>
+      <td>Cort</td>
+      <td>7,477</td>
+      <td>99.93</td>
+      <td>15</td>
+      <td>32</td>
+      <td>Cortistatin</td>
+      <td colspan="2">Sstr1, Sstr2, Sstr3, Sstr4</td>
+    </tr>
+    <tr>
+      <td>Tac1</td>
+      <td>5,728</td>
+      <td>99.92</td>
+      <td>18</td>
+      <td>11</td>
+      <td>Substance P, Neurokinin A</td>
+      <td colspan="2">Tacr1</td>
+    </tr>
+    <tr>
+      <td>Pdyn</td>
+      <td>2,813</td>
+      <td>99.69</td>
+      <td>68</td>
+      <td>8</td>
+      <td>Dynorphins</td>
+      <td colspan="2">Oprd1, Oprk1, Oprm1</td>
+    </tr>
+    <tr>
+      <td>Pthlh</td>
+      <td>1,656</td>
+      <td>99.29</td>
+      <td>156</td>
+      <td>18</td>
+      <td>Parathyroid-Hormone-Like Hormone</td>
+      <td colspan="2">Pth1r</td>
+    </tr>
+    <tr>
+      <td>Pnoc</td>
+      <td>698</td>
+      <td>97.68</td>
+      <td>509</td>
+      <td>23</td>
+      <td>Nociceptins</td>
+      <td colspan="2">Oprl1</td>
+    </tr>
+    <tr>
+      <td>Trh</td>
+      <td>510</td>
+      <td>96.51</td>
+      <td>766</td>
+      <td>3</td>
+      <td>Thyrotropin-Releasing Hormone</td>
+      <td colspan="2">Trhr, Trhr2</td>
+    </tr>
+    <tr>
+      <td>Grp</td>
+      <td>435</td>
+      <td>95.59</td>
+      <td>968</td>
+      <td>12</td>
+      <td>Gastrin-Releasing Peptide</td>
+      <td colspan="2">Grpr</td>
+    </tr>
+    <tr>
+      <td>Rln1</td>
+      <td>258</td>
+      <td>91.99</td>
+      <td>1757</td>
+      <td>7</td>
+      <td>Relaxin 1</td>
+      <td>Rxfp1, Rxfp2</td>
+      <td>Rxfp3</td>
+    </tr>
+    <tr>
+      <td>Adcyap1</td>
+      <td>165</td>
+      <td>87.29</td>
+      <td>2788</td>
+      <td>26</td>
+      <td>Adenylate Cyclase-Activating Polypeptides</td>
+      <td colspan="2">Adcyap1r1, Vipr1, Vipr2</td>
+    </tr>
+    <tr>
+      <td>Nts</td>
+      <td>121</td>
+      <td>82.14</td>
+      <td>3917</td>
+      <td>1</td>
+      <td>Neurotensin</td>
+      <td colspan="2">Ntsr1, Ntsr2</td>
+    </tr>
+    <tr>
+      <td>Nmb</td>
+      <td>112</td>
+      <td>80.53</td>
+      <td>4270</td>
+      <td>14</td>
+      <td>Neuromedin B</td>
+      <td colspan="2">Nmbr</td>
+    </tr>
+  </tbody>
+</table>
 
 Figure 1A quantifies differential expression of the 18 NPP genes listed in Table 1. Each of the 18 color-coded solid curves represents a distribution of single-neuron CPM values for one NPP gene. Curves were generated by plotting CPM for each individual neuron in descending rank order along a cell population percentile axis. Each curve exhibits a transition from high to very low (commonly zero) expression across the sampled neuron population, but these transitions occur over very different population percentile ranges, providing clear evidence for highly differential single-cell expression of these genes. Percentages of the sampled neuron population with detectible expression of a given NPP gene range from more than 65% for Cck down to ~1% for Nts. (Note, however, that the cell population sampled has been enriched for GABAergic cell types as described in Tasic 2018).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig1-v2.jpg)
 
-**Figure 1.:** (A) Different NPP genes show very different expression level distributions across the 22,439 VISp+ALM neurons sampled. Color-coded solid curves plot single-cell CPM values for the specified individual NPP genes in descending order along a cell population percentile axis. The 18 curves are segregated for clarity into three panels (I, ii, iii) sorted by cell population percentiles at which CPM values fall below 1. Large differences in fractions of cells expressing different NPP genes are evident. The dashed curve labeled ‘Max NPP Gene’ in panel A.i was generated by plotting CPM values of for the most abundant NPP transcript in each individual cell in descending order. (B) Fractions of cells expressing each NPP genes represented separately for 13,491 VISp neurons and 8,948 ALM neurons, showing conservation between areas of the patterning of NPP expression fractions detailed in panel A. (C) Histograms illustrating frequencies of various multiples of NPP genes co-expressed in individual neurons, represented separately for VISp and ALM neurons. The paired vertical bars show strong conservation of co-expression patterns between the two areas.Figure 1—source data 1.Figure 1—source data 2.
+**Figure 1.:** (A) Different NPP genes show very different expression level distributions across the 22,439 VISp+ALM neurons sampled. Color-coded solid curves plot single-cell CPM values for the specified individual NPP genes in descending order along a cell population percentile axis. The 18 curves are segregated for clarity into three panels (I, ii, iii) sorted by cell population percentiles at which CPM values fall below 1. Large differences in fractions of cells expressing different NPP genes are evident. The dashed curve labeled ‘Max NPP Gene’ in panel A.i was generated by plotting CPM values of for the most abundant NPP transcript in each individual cell in descending order. (B) Fractions of cells expressing each NPP genes represented separately for 13,491 VISp neurons and 8,948 ALM neurons, showing conservation between areas of the patterning of NPP expression fractions detailed in panel A. (C) Histograms illustrating frequencies of various multiples of NPP genes co-expressed in individual neurons, represented separately for VISp and ALM neurons. The paired vertical bars show strong conservation of co-expression patterns between the two areas.
 
 The RNA-seq data suggest that all, or at least very nearly all, neocortical neurons express at least one NPP gene. The dashed curve in Figure 1A, labeled ‘Max NPP Gene’, was generated by plotting CPM values of the NPP gene with the highest CPM in each individual cell in descending order along a cell population percentile axis. This curve therefore shows that 97% of the sampled mouse cortical neurons express at least one NPP gene at >1 CPM and that 80% express at least one NPP gene at >1,000 CPM, a very high level. When one takes into account the pulsatile nature of transcription (Suter et al., 2011) and the stochastic nature of RNA-seq transcript sampling (Fu and Pachter, 2016; Kim et al., 2015; Tasic et al., 2016), these numbers might be best understood as lower limits. The results summarized in Figure 1A may therefore be consistent with the proposition that every cortical neuron is peptidergic.
 
-## Conservation of NPP gene expression statistics between VISp and ALM
+### Conservation of NPP gene expression statistics between VISp and ALM
 
 The paired bars in Figure 1B represent fractions of cells expressing a given gene in each of the two cortical areas. It is obvious that the differential expression profiles in VISp and ALM are highly similar (ρ = 0.972, p<1.72E-11), in spite of stark differences in function and cytoarchitecture between these two areas. Conservation of expression fractions across so many genes in such divergent cortical areas suggests that these patterns have strong connections to conserved features of cortical function and argues against these patterns being secondary to more ephemeral variables such as neuronal activity patterns, which seem unlikely to be highly conserved between VISp and ALM areas. Figure 1C represents frequencies with which transcripts of various multiples drawn from the set of 18 NPP genes were detected in individual neurons. These data establish a remarkable degree of NPP gene co-expression in almost all individual cortical neurons. The modal number of co-expressed NPP genes detected is two in VISp and five in ALM, but both distributions are actually quite flat between 2 and 5, with broad plateaus out to seven co-expressed NPP genes per cell and a substantial tail out to 10. Figure 1C also reveals strong similarities of NPP co-expression distributions between VISp and ALM.
 
-## Single-neuron expression profiles of 29 select neuropeptide receptor (NP-GPCR) genes
+### Single-neuron expression profiles of 29 select neuropeptide receptor (NP-GPCR) genes
 
 Table 2 lists 29 NP-GPCR genes that are highly expressed in varied subsets of the 22,439 individual neurons sampled from cortical areas VISp and ALM. These 29 genes encode receptor proteins substantially selective for neuropeptide products encoded by the 18 NPP genes of Table 1 (cross-referenced from that table as ‘Cognate NP-GPCR Genes’). Table 2 provides quantitative information on expression levels of these 29 NP-GPCR genes, names the receptor proteins they encode, indicates the A-F GPCR class and expected primary Gα family and cross-references back to the cognate cortically-expressed NPP genes. As noted above, the 18 NPP genes and 29 NP-GPCR genes listed in Tables 1 and 2 were selected for focused analysis here due to their cognate pairing and the consequent implication of local intracortical signaling. Methods of NP-GPCR gene selection are described more fully in Materials and methods. A more complete listing of NP-GPCR genes with pFPKM values in provided by Table 2—﻿source data 1. Gene ontology results for the 29 select NPP genes are provided by Supplementary file 2. The ‘pFPKM Percentile’ column in Table 2 shows that most of these 29 NP-GPCR genes are expressed in cortex with Peak FPKM values well above median (50th percentile) for all protein coding genes. The range of cortical neuron pFPKM values for NP-GPCR genes does not match the extreme heights noted for NPP genes, but this is as expected given that NP-GPCR gene products are thought to be durable cellular components, unlikely to be rapidly disposed by secretion as expected for NPP gene products. Peak FPKM values for NP-GPCR transcripts are nonetheless quite high in the range of transcripts of other durable cellular component genes, suggesting a strong likelihood that they are indeed translated into functionally important protein products.
 
+**Table 2.**
+ Single-cell RNA-seq expression statistics for 29 neuropeptide-selective, G-protein-coupled receptor (NP-GPCR) genes cognate to locally expressed NPP genes (see Table 1).NP-GPCR gene peak FPPM values, percentile ranking, and percentage sampled as for NPP genes in Table 1. The table names encoded NP-GPCR proteins, A-F class of NP-GPCR, primary Gα signal transduction family (Alexander et al., 2017) and cognate NPP genes. Color fill in ‘primary Gα family’ column as in Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>NP-GPCR Gene</th>
+      <th>Peak FPKM</th>
+      <th>pFPKM Percentile</th>
+      <th>% Cells</th>
+      <th>Neuropeptide Receptor</th>
+      <th>GPCR Class</th>
+      <th>Primary Gα Family</th>
+      <th>Cognate NPP Genes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sstr2</td>
+      <td>413</td>
+      <td>95.3</td>
+      <td>42</td>
+      <td>Somatostatin Receptor 2</td>
+      <td>A4</td>
+      <td>Gi/o</td>
+      <td>Sst, Cort</td>
+    </tr>
+    <tr>
+      <td>Npy2r</td>
+      <td>291</td>
+      <td>93.1</td>
+      <td>10</td>
+      <td>Neuropeptide Y Receptor Y2</td>
+      <td>A9</td>
+      <td>Gi/o</td>
+      <td>Npy</td>
+    </tr>
+    <tr>
+      <td>Npy1r</td>
+      <td>272</td>
+      <td>92.4</td>
+      <td>50</td>
+      <td>Neuropeptide Y Receptor Y1</td>
+      <td>A9</td>
+      <td>Gi/o</td>
+      <td>Npy</td>
+    </tr>
+    <tr>
+      <td>Grpr</td>
+      <td>231</td>
+      <td>91</td>
+      <td>10</td>
+      <td>GRP Receptor</td>
+      <td>A7</td>
+      <td>Gq/11</td>
+      <td>Grp</td>
+    </tr>
+    <tr>
+      <td>Cckbr</td>
+      <td>210</td>
+      <td>90</td>
+      <td>52</td>
+      <td>Cholecystokinin B Receptor</td>
+      <td>A6</td>
+      <td>Gq/11</td>
+      <td>Cck</td>
+    </tr>
+    <tr>
+      <td>Ntsr2</td>
+      <td>161</td>
+      <td>86.9</td>
+      <td>17</td>
+      <td>Neurotensin Receptor 2</td>
+      <td>A7</td>
+      <td>Gq/11</td>
+      <td>Nts</td>
+    </tr>
+    <tr>
+      <td>Npy5r</td>
+      <td>152</td>
+      <td>86.1</td>
+      <td>28</td>
+      <td>Neurpeptide Y Receptor Y5</td>
+      <td>A9</td>
+      <td>Gi/o</td>
+      <td>Npy</td>
+    </tr>
+    <tr>
+      <td>Nmbr</td>
+      <td>123</td>
+      <td>82.4</td>
+      <td>8</td>
+      <td>Neuromedin B Receptor</td>
+      <td>A7</td>
+      <td>Gq/11</td>
+      <td>Nmb</td>
+    </tr>
+    <tr>
+      <td>Rxfp1</td>
+      <td>121</td>
+      <td>82</td>
+      <td>22</td>
+      <td>Relaxin Family Receptor 1</td>
+      <td>A5</td>
+      <td>Gs</td>
+      <td>Rln1</td>
+    </tr>
+    <tr>
+      <td>Sstr4</td>
+      <td>106</td>
+      <td>79.5</td>
+      <td>28</td>
+      <td>Somatostatin Receptor 4</td>
+      <td>A4</td>
+      <td>Gi/o</td>
+      <td>Sst, Cort</td>
+    </tr>
+    <tr>
+      <td>Trhr</td>
+      <td>101</td>
+      <td>78.4</td>
+      <td>3</td>
+      <td>TRH Receptor</td>
+      <td>A7</td>
+      <td>Gq/11</td>
+      <td>Trh</td>
+    </tr>
+    <tr>
+      <td>Sstr1</td>
+      <td>90</td>
+      <td>76</td>
+      <td>38</td>
+      <td>Somatostatin Receptor 1</td>
+      <td>A4</td>
+      <td>Gi/o</td>
+      <td>Sst, Cort</td>
+    </tr>
+    <tr>
+      <td>Adcyap1r1</td>
+      <td>89</td>
+      <td>75.8</td>
+      <td>71</td>
+      <td>ADCYAP1 Receptor 1</td>
+      <td>B1</td>
+      <td>Gs</td>
+      <td>Adcyap1, Vip</td>
+    </tr>
+    <tr>
+      <td>Crhr1</td>
+      <td>86</td>
+      <td>74.9</td>
+      <td>28</td>
+      <td>CRH Receptor 1</td>
+      <td>B1</td>
+      <td>Gs</td>
+      <td>Crh</td>
+    </tr>
+    <tr>
+      <td>Rxfp3</td>
+      <td>85</td>
+      <td>74.7</td>
+      <td>5</td>
+      <td>Relaxin Family Receptor 3</td>
+      <td>A5</td>
+      <td>Gi/o</td>
+      <td>Rln1</td>
+    </tr>
+    <tr>
+      <td>Oprl1</td>
+      <td>82</td>
+      <td>73.8</td>
+      <td>48</td>
+      <td>Opioid Receptor-Like 1</td>
+      <td>A4</td>
+      <td>Gi/o</td>
+      <td>Pnoc</td>
+    </tr>
+    <tr>
+      <td>Crhr2</td>
+      <td>72</td>
+      <td>70.7</td>
+      <td>3</td>
+      <td>CRH Receptor 2</td>
+      <td>B1</td>
+      <td>Gs</td>
+      <td>Crh</td>
+    </tr>
+    <tr>
+      <td>Tacr3</td>
+      <td>65</td>
+      <td>68</td>
+      <td>3</td>
+      <td>Tachykinin Receptor 3</td>
+      <td>A9</td>
+      <td>Gq/11</td>
+      <td>Tac2</td>
+    </tr>
+    <tr>
+      <td>Oprk1</td>
+      <td>64</td>
+      <td>67.4</td>
+      <td>3</td>
+      <td>Kappa-Opioid Receptor</td>
+      <td>A4</td>
+      <td>Gi/o</td>
+      <td>Pdyn</td>
+    </tr>
+    <tr>
+      <td>Tacr1</td>
+      <td>56</td>
+      <td>64.2</td>
+      <td>3</td>
+      <td>Tachykinin Receptor 1</td>
+      <td>A9</td>
+      <td>Gq/11</td>
+      <td>Tac1</td>
+    </tr>
+    <tr>
+      <td>Pth1r</td>
+      <td>51</td>
+      <td>61.6</td>
+      <td>15</td>
+      <td>PTH 1 Receptor</td>
+      <td>B1</td>
+      <td>Gq/11</td>
+      <td>Pthlh</td>
+    </tr>
+    <tr>
+      <td>Vipr1</td>
+      <td>41</td>
+      <td>56.1</td>
+      <td>28</td>
+      <td>VIP Receptor 1</td>
+      <td>B1</td>
+      <td>Gs</td>
+      <td>Vip, Adcyap1</td>
+    </tr>
+    <tr>
+      <td>Oprm1</td>
+      <td>35</td>
+      <td>52.1</td>
+      <td>43</td>
+      <td>Mu-Opioid Receptor</td>
+      <td>A4</td>
+      <td>Gi/o</td>
+      <td>Penk, Pdyn</td>
+    </tr>
+    <tr>
+      <td>Trhr2</td>
+      <td>30</td>
+      <td>48.9</td>
+      <td>10</td>
+      <td>TRH Receptor 2</td>
+      <td>A7</td>
+      <td>Gq/11</td>
+      <td>Trh</td>
+    </tr>
+    <tr>
+      <td>Vipr2</td>
+      <td>30</td>
+      <td>48.4</td>
+      <td>0.5</td>
+      <td>VIP Receptor 2</td>
+      <td>B1</td>
+      <td>Gs</td>
+      <td>Vip, Adcyap1</td>
+    </tr>
+    <tr>
+      <td>Rxfp2</td>
+      <td>28</td>
+      <td>47.3</td>
+      <td>4</td>
+      <td>Relaxin Family Receptor 2</td>
+      <td>A5</td>
+      <td>Gs</td>
+      <td>Rln1</td>
+    </tr>
+    <tr>
+      <td>Oprd1</td>
+      <td>26</td>
+      <td>45.8</td>
+      <td>13</td>
+      <td>Delta-Opioid Receptor</td>
+      <td>A4</td>
+      <td>Gi/o</td>
+      <td>Penk, Pdyn</td>
+    </tr>
+    <tr>
+      <td>Ntsr1</td>
+      <td>24</td>
+      <td>44.3</td>
+      <td>10</td>
+      <td>Neurotensin Receptor 1</td>
+      <td>A7</td>
+      <td>Gq/11</td>
+      <td>Nts</td>
+    </tr>
+    <tr>
+      <td>Sstr3</td>
+      <td>17</td>
+      <td>39.5</td>
+      <td>21</td>
+      <td>Somatostatin Receptor 3</td>
+      <td>A4</td>
+      <td>Gi/o</td>
+      <td>Sst, Cort</td>
+    </tr>
+  </tbody>
+</table>
+
 The single-cell RNA-seq data expose very highly differential expression of NP-GPCR genes in cortical neurons. Figure 2 represents expression patterns of the 29 NP-GPCR genes listed in Table 2 in the same manner as for the 18 NPP genes in Figure 1. Figure 2A establishes that each of the 29 NP-GPCR genes is expressed in highly differential fashion across the 22,439 mouse cortical neurons sampled, as was the case for the 18 NPP genes. As was noted for NPP genes in Figure 1, each of the curves in Figure 2A exhibits a transition from very high to very low (commonly zero) expression across the sampled neuron population. These transitions occur at very different population percentile points, again providing clear evidence for highly differential expression. Percentages of the sampled neuron population expressing a given NP-GPCR gene (at greater than 1 CPM) range from more than 72% for Adcyap1r1 down to 0.7% for Vipr2.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig2-v2.jpg)
+
+**Figure 2.:** (A) Different NP-GPCR genes show very different expression level distributions across the 22,439 VISp+ALM neurons sampled. Color-coded solid curves plot single-cell CPM values for the specified individual NP-GPCR genes in descending order along a cell population percentile axis. The 29 curves are segregated for clarity into five panels (i-v) sorted by cell population percentiles at which CPM values fall below 1. Large differences in fractions of cells expressing different NP-GPCR genes are evident. Dashed curve labeled ‘max NP-GPCR Gene’ in panel A. i was generated by plotting CPM values of the highest CPM NP-GPCR gene for each individual cell in descending order. (B) Fractions of cells expressing each NP-GPCR genes represented separately for 13,491 VISp neurons and 8,948 ALM neurons, showing strong conservation between areas of the patterning of NP-GPCR expression fractions documented in panel A. (C) Histograms illustrating frequencies of various multiples of NP-GPCR gene co-expression in individual neurons, represented separately for VISp and ALM neurons. The paired vertical bars illustrate strong conservation of co-expression patterns between the two cortical areas.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** A large fraction of cortical neurons co-express cognate NPP/NP-GPCR pairs, and conservation of these fractions between cortical areas VISp and ALM argues in favor of some important underlying biology and possible relevance to function. Annotations of primary Gα family on this graph also hint that both positive and negative feedback mechanisms might be considered. These predictions of autocrine feedback, particularly the functionally negative feedback likely associated with Gi signaling, suggest the intriguing possibility that peptide signaling might underlie some forms of cell-autonomous neuronal homeostasis.
 
 The RNA-seq data suggest that all, or at least very nearly all, neocortical neurons express at least one NP-GPCR gene. The dashed curve in the left panel of Figure 2A, generated similarly to the dashed curve for NPP genes in Figure 1A, shows that 98% of the sampled mouse cortical neurons express at least one NP-GPCR gene at >1 CPM and that 78% express at least one NP-GPCR gene at >100 CPM, lower than the comparable NPP curve in Figure 1, but still indicative of quite high expression. Again, these numbers must be understood as lower limits to percentages of cortical neurons actually expressing at least one of the 29 NP-GPCR genes, after taking into account the pulsatile transcription and stochastic sampling issues cited above. The results summarized in Figure 2A may thus be consistent with a conclusion that every cortical neuron expresses at least one NP-GPCR gene cognate to a cortically expressed NPP gene.
 
-## Conservation of NP-GPCR gene expression statistics between VISp and ALM
+### Conservation of NP-GPCR gene expression statistics between VISp and ALM
 
 Figure 2B provides evidence for strong conservation of differential NP-GPCR expression profiles between distant cortical areas VISp and ALM. The paired bars represent fractions of cells expressing a given gene in each of the two areas, again revealing strong similarities of differential expression profiles in the two very different neocortical areas (ρ = 0.959, p<2.2E-16). Figure 2C represents frequencies of NP-GPCR gene co-expression multiples detected in individual neurons. These data establish that multiple NP-GPCR genes are co-expressed in almost all cortical neurons and that numbers of genes co-expressed are even higher than those noted above for co-expression of NPP genes. Modal numbers of co-expressed NP-GPCR genes detected is six in both VISp and ALM with broad plateaus extending out to 12 co-expressed NP-GPCR genes per cell. The striking similarities of NP-GPCR co-expression distributions between the two otherwise divergent neocortical areas once again suggests that the patterning of NP-GPCR co-expression may have consequences for cortical function that are conserved because they are functionally important. As illustrated by Figure 2—figure supplement 1, it is furthermore common for individual neurons to co-express cognate NPP/NP-GPCR pairs, raising the intriguing possibility of cell-autonomous feedback mediated by an autocrine action of a secreted NP product on the secreting cell itself. Figure 2—figure supplement 1 additionally shows that cognate pair co-expression patterning is also highly conserved between areas VISp and ALM.
 
-## Neurotaxonomic profiling of NPP and NP-GPCR gene expression
+### Neurotaxonomic profiling of NPP and NP-GPCR gene expression
 
 The analysis so far has relied solely upon the genomic depth and single-cell resolution characteristics of the Tasic 2018 transcriptomic data. We now proceed to explore the analytical power of the transcriptomic neurotaxonomy developed as part of the Tasic 2018 study. This neurotaxonomy makes it possible to predict a protein ‘parts list’ for any neuron that can be mapped to a given transcriptomic taxon. Combined with tools for genetic access to transcriptomic taxa, transcriptomic taxonomy thereby offers rich prospects for experimental test of such predictions (see also Discussion below), The present analysis will make extensive use of the Tasic 2018 neurotaxonomy’s representation of 115 glutamatergic and GABAergic transcriptomic neuron types (see Figure 3—figure supplement 1).
 
 Figure 3 shows transcriptomic gene expression ‘heatmaps’, representing transcript abundance for each of 18 NPP (Figure 3A) and 29 NP-GPCR (Figure 3B) across all 115 glutamatergic and GABAergic neuron types by log10-scaled pseudocolor. These heatmaps show that expression of every one of these 47 genes is highly specific to particular neuron types, but that type specificity varies greatly from gene to gene. Note that CPM expression levels vary across neuron types by factors exceeding 10,000 for many NPP genes and 1000 for many NP-GPCR genes. These heat maps also show that every neuron type expresses multiple NPP and NP-GPCR genes and that each of the NPP and NP-GPCR genes is expressed in multiple neuron types (with Vipr2 in one Pvalb type as a near exception). These two heatmaps further show many cases where both an NPP gene and its cognate NP-GPCR receptor are expressed in the same neuron type, with the Cck/Cckbr and Adcyap1/Adcyap1 r1 pairs being particularly prominent examples. Quite intriguingly, these expression heat maps also suggest that each of the neuron types might be distinguished by a unique pattern of expression of these 47 NP genes. This possibility will be explored quantitatively in connection with Figure 4 below.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig3-v2.jpg)
+
+**Figure 3.:** Trimmed-mean (5% trim) CPM expression values for each of the 115 VISp+ALM glutamatergic and GABAergic neuron types (see Figure 3—figure supplement 1) are normalized per gene to maximum value indicated at right for each row and pseudocolored according to log10 scales at right. Note that these scales represent 5 (NPP) and 3 (NP-GPCR) orders of magnitude and that each gene spans the entire pseudocolor range across neuron types. Subclasses are called out here by labels (IT, PT, NP, CT, L6b for glutamatergic types; Lamp5, Sncg, Serpinf1, Vip, Chodl, Sst, Pvalb for GABAergic types) and demarcated on the heatmaps by thin gray lines. Gene rows are ordered here as in Tables 1 and 2. (C) Violin plots representing coefficients of CPM variation (CV) for 18 NPP genes across types pooled within each of the 11 subclasses indicated (Chodl not represented here as it is a singular neuron type) and globally across all cell types (‘All’). Callouts on each violin indicate genes of highest CVs within each subclass. Inset shows within-subclass CV/global CV demonstrating variation within subclasses is a significant fraction of global variability (dotted line mean = 0.239). See Figure 3—figure supplement 2 for individual gene statistics. (D) Similar for 29 NP-GPCR genes showing greater relative variability, mean CV = 0.427. See Figure 3—figure supplement 3 for individual gene statistics.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Tasic and co-workers (Tasic et al., 2018, Nature 563:72–78) generated the hierarchical taxonomy of glutamatergic and GABAergic neurons represented here by dimensionality reduction and iterative hierarchical clustering of data from single-cell RNA-Seq analysis of 22,439 mouse cortical neurons dissociated from areas VISp (13,491 neurons) and ALM (8948 neurons). This neurotaxonomy is rendered here in four different forms as used in Figures 3–7 to specify Tasic 2018 neuronal cell ‘types’ and/or ‘subclasses’ as indicated by column headings. Each rendering represents a Tasic 2018 cladogram, five glutamatergic subclasses, 6 GABAergic subclasses (since Chodl is a singular type, it is not counted as a subclass) and some number of neuron types. The rectangle fill colors and orderings here are used consistently in Figures 3–7 to denote neuronal subclasses and types: the deep color fills for the small type rectangles are as introduced by the Tasic 2018 publication; the pastel color fills for the larger subclass rectangles are derived by averaging and fading the deeper color fills of the types within each subclass. The Tasic 2018 type numbers, names (panel A only) and counts of cells clustered to each type are tabulated here. (A) 11 subclasses and 115 types clustered from single-cell RNA-seq transcriptomes from cells aggregated across VISp and ALM areas. (B) 11 subclasses and 93 types found in VISp neurons. (C) 11 subclasses and 84 types found in ALM neurons. Because most GABAergic types (58 out of 60) are shared between VISp and ALM, spacers (black-filled rectangles) are placed in this rendering between types 87 and 89 and types 111 and 113 to maintain linear registration of GABAergic types between VISp and ALM types in spite of absence of types 88 and 112 in ALM. (D) 11 subclasses and 84 types found in ALM neurons (without registration-preserving spacers).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Coefficient of variation (c.v. = standard deviation/mean) of expression for each NPP gene for Tasic et al., 2018 cell types pooled to 12 major types, glutamatergic types (IT, PT, NP, CT, L6b) and GABAergic types (Lamp5, Sncg, Serpinf1, Vip, Chodl, Sst, Pvalb). Chodl does not appear in the figure here or in main text as there is only one Tasic cell type in this class. The type types are sorted from left to right in decreasing average c.v. The variability is a substantial fraction of the global variation across all types indicating complex combinatorial expression patterns at the level of the Tasic et al ontology and the need to consider this level of resolution. Outlier genes are colored more orange and examples labelled in Figure 3 of the main manuscript. Mean c.v is shown in the barplot on top.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Coefficient of variation (c.v. = standard deviation/mean) of expression for each NP-GPCR gene for Tasic et al., 2018 cell types pooled to 12 major types, glutamatergic types (IT, PT, NP, CT, L6b) and GABAergic types (Lamp5, Sncg, Serpinf1, Vip, Chodl, Sst, Pvalb). Mean c.v is a higher percentage of total c.v. for NP-GPCR compared to NPP genes.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig4-v2.jpg)
+
+**Figure 4.:** (A) A two-dimensional latent space representation of 22,439 cells based on 6083 highly expressed (HE) genes obtained by an autoencoding neural network. Dots represent individual cells, colored according to the type-code assignments of Tasic et al. (2018) (see Figure 3—figure supplement 1). Cells of the same type appear as grouped into distinct islands, which suggests that classifiers trained to identify cell types would perform well with such low dimensional representations of gene expression. (B) Two-dimensional representation of neurons in such a latent space z2, based on the 47 NP genes. (C) Schematic of the network architecture used to train the second autoencoder that learns to represent neurons in a latent space z2 that is similar to z1. This second autoencoder represents cells in the latent space based on much smaller gene sets. (D) Inset illustrates resolution index (RI) associated with nodes on the hierarchical tree used in the per-cell RI calculation. RI distribution (see Materials and methods) for NP genes-based cell type classification shows that a vast majority of the cells can be correctly classified up to the type level (leaf nodes, RI = 1.0) of the Tasic 2018 hierarchy. Errors in classification (RI <1.0) at the type level are nevertheless resolved at the class level of the hierarchy, as indicated by the high values for RI for the remaining cells. High average RI for HE genes, and 4020 differentially expressed (DE) genes, and 47 DE genes indicates that the cell type classification procedure based on autoencoder representations is accurate. The average RI for cell type classification based on the 47 NP genes is significantly higher (p<0.01, bootstrap) than both, subsets of 47 genes selected randomly (Rand47, n = 100 subsets), and selected randomly but with expression levels matched to the NP genes (Rand47 ExpMatch, n = 100 subsets).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Results here compare classification based on 6,083 HE genes (dashed line) with results based on 47 NP genes (colored vertical bars). The resolution index (RI), as described in connection with Figure 4, generates a measure of autoencoder clustering agreement with the Tasic 2018 neurotaxonomy. Figure 4D represents resolution index distributions across all glutamatergic and GABAergic neurons represented in the Tasic 2018 dataset. This population is weighted, however, by the Tasic 2018 sampling process and does not represent the actual distribution of neuron types in cortex. As a check for possible anomalies related to this sampling process, we averaged resolution indices separately for each Tasic 2018 neuron type, as shown here. The single-type average resolution indices for both HE and NP gene sets are high across all types (>0.95 for HE and >0.8 for NP), confirming the adequacy of both gene sets in identifying all of the Tasic 2018 neuron types. Interestingly, this metric suggests that clustering performance using the 6,083 HE gene set is slightly worse for GABAergic than for glutamatergic types, while the reverse is true for the 47 NP gene set. Both effects are, however, quite small.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** To determine the latent space dimensionality for optimal HE gene representation, we performed hyperparameter tuning by varying the latent space dimensionality between 2 and 20 dimensions. The performance of each latent space was compared to the Tasic 2018 taxonomy using a supervised gaussian mixture model (GMM). An optimal dimensionality of 5 was chosen, which resulted in a peaking adjusted random index of 0.8672.
+
 The dashed vertical line spanning Figure 3A and B heatmaps divides glutamatergic and GABAergic neuron types and provides for ready comparison of NP gene expression patterns in these two broad neurotaxonomic classes. Figure 3A shows clearly that more NPP genes are expressed more strongly in GABAergic than in glutamatergic types. This differential is consistent with a long history of neuroscientific use of neuropeptide products as protein markers of GABAergic neuron subsets (e.g., VIP, SST, NPY, Substance P), which has no parallel in the marking of glutamatergic neuron subsets. Figure 3A nonetheless also shows that every glutamatergic type expresses at least one NPP genes at a very substantial level. Figure 3B shows that the broader expression of NPP genes in GABAergic over glutamatergic types is leveled or even reversed for NP-GPCR genes. That is, while GABAergic neurons clearly show the more prolific and varied expression of NPP genes, glutamatergic neurons may be somewhat more prolific expressors of NP-GPCR genes.
 
 Additional graphics on the Figure 3 heatmaps further delineate the Tasic 2018 neurotaxonomy. A cladogram reflects the hierarchical similarity progression from the broad GABAergic and glutamatergic classes to the 115 individual neuron types, as aggregated across VISp and ALM cortical areas. Tinted rectangles and labels call out the five glutamatergic and seven GABAergic subclasses (see also Figure 3—figure supplement 1). Thin gray vertical lines crossing both NPP and NP-GPCR heatmaps demarcate those same subclasses. This delineation of subclasses shows that expression of some genes tends to remain constant within some subclasses, but to change abruptly at subclass boundaries. This does not seem, however, to be a very general case. Many genes show expression that varies widely by type within subclass. Figure 3C quantifies such residual expression variation for all NPP and NP-GPCR genes within each subclass. These significant residuals justify the use of more narrowly defined taxa (e.g., the 115 neuron types) to adequately characterize cortical neuropeptide gene expression. Relationships between NP gene expression patterns and the Tasic 2018 neurotaxonomy will be examined more quantitatively in the following section.
 
-## Transcripts of 18 NPP and 29 NP-GPCR genes are exceptionally potent neuron-type markers
+### Transcripts of 18 NPP and 29 NP-GPCR genes are exceptionally potent neuron-type markers
 
 The strong marker patterning of the 47 NP gene expression profiles evident in Figure 3 suggests the possibility that each of the 115 glutamatergic and GABAergic neuron types might be distinguished by a unique combination of these 18 NPP and 29 NP-GPCR genes. To explore this possibility and compare NP transcriptomes to other transcriptome subsets quantitatively, we developed the analysis presented in Figure 4.
 
@@ -102,31 +632,366 @@ To quantify the type classification ability of different gene sets, we used Quad
 
 Figure 4D shows neuron type classification results based on five dimensional latent space representations of different subsets of genes (k = 13 fold cross validation). For the 6,083 HE genes and a set of 4020 genes most differentially expressed (DE genes) across neuron types, the latent space is obtained with the first autoencoder, and the RI distributions shown in blue have average values of 0.986 and 0.987, respectively, close to the theoretical maximum of 1.0 that can only be achieved with perfect type classification for all neurons in the dataset. For subsets of 47 genes, the latent representations were obtained with the second linked autoencoder, and the corresponding RI distributions are colored red. A set of 47 DE genes achieves average RI = 0.964. These results confirm the idea that autoencoder-based low dimensional representations of gene expression can be used for accurate type classification. The 47 NP genes can be used to classify neuron types well, with average RI = 0.925 and a majority of the neurons (62%) classified correctly at the type level (with nearly uniform performance across all neuron types, see Figure 4—figure supplement 1). This RI performance is significantly higher (p<0.01, bootstrap) than the average RI for of subsets of genes chosen randomly (0.641 ± 0.047, n = 100), and chosen randomly but with expression levels matched with the NP genes (0.843 ± 0.027, n = 100), with none of the individual randomly selected subsets reaching the NP gene index of 0.925. Note that genes in the 47 DE set were chosen with prior knowledge of the Tasic 2018 taxonomy, while the 47 NP gene set was not. This distinction thus makes the near match of the 47 NP to the 47 DE gene sets in average RI all the more striking. This demonstration of the exceptional power of NP genes to mark transcriptomic neuron types reinforces earlier indications of an especially close and fundamental connection between neuropeptide gene expression and neuron type identity.
 
-## Conservation of NPP and NP-GPCR gene expression profiles between VISp and ALM
+### Conservation of NPP and NP-GPCR gene expression profiles between VISp and ALM
 
 Figure 5 juxtaposes separate VISp and ALM expression profiles for NPP and NP-GPCR genes across 93 VISp neuron types (Figure 5A) and 84 ALM neuron types (Figure 5B). Similarities of expression profiles for the two areas are obvious in Figure 5, but there are also visible differences. The latter are rooted primarily in the substantial divergence of glutamatergic neuron taxonomies discussed at length in Tasic et al. (2018). Very strong similarities of both NPP and NP-GPCR expression profiles are most obvious for the GABAergic types, where the taxonomies are identical except for the absence of two GABAergic types in ALM (indicated by dark gray vertical placeholder bars in Figure 5B). The general conservation of neuron-type-specific expression patterns among common cell types between the two distant neocortical areas (NPP correlation: ρ = 0.974, p<2.2e-16, NP-GPCR: 0.877, p<2.2e-16) thus provides another indication of robust connection between NP gene expression and cortical neuron differentiation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig5-v2.jpg)
 
-**Figure 5.:** (A) Expression heatmap for 18 NPP and 29 NP-GPCR genes in 13,491 single VISp neurons classified by type. (B) Similar heatmap for 8948 single neurons harvested from ALM. Heatmaps generated and displayed as described in Figure 3, except for segregation here of VISp and ALM harvest areas. Heat maps are aligned horizontally here to match GABAergic neuron types between VISp and ALM. Vertical dark gray bars in Figure 5B are spacers marking the two GABAergic cell types absent in ALM. Glutamatergic neurotaxonomies are seen to differ substantially, but differences appear mainly at the finest, ‘leaf’ levels of the neurotaxonomic hierarchy (see Tasic 2018) and Figure 3—figure supplement 1).Figure 5—source data 1.Figure 5—source data 2.
+**Figure 5.:** (A) Expression heatmap for 18 NPP and 29 NP-GPCR genes in 13,491 single VISp neurons classified by type. (B) Similar heatmap for 8948 single neurons harvested from ALM. Heatmaps generated and displayed as described in Figure 3, except for segregation here of VISp and ALM harvest areas. Heat maps are aligned horizontally here to match GABAergic neuron types between VISp and ALM. Vertical dark gray bars in Figure 5B are spacers marking the two GABAergic cell types absent in ALM. Glutamatergic neurotaxonomies are seen to differ substantially, but differences appear mainly at the finest, ‘leaf’ levels of the neurotaxonomic hierarchy (see Tasic 2018) and Figure 3—figure supplement 1).
 
-## Prediction of local peptidergic signaling from expression of cognate NPP/NP-GPCR pairs
+### Prediction of local peptidergic signaling from expression of cognate NPP/NP-GPCR pairs
 
 Expression of an NPP gene in one neuron and a cognate NP-GPCR gene in another neuron nearby implies a possibility of directed paracrine signaling, with diffusion of a secreted peptide coupling the first neuron to the second. The present set of 47 cortical NP genes (18 NPP and 29 NP-GPCR) comprises the 37 distinct cognate NPP/NP-GPCR pairs enumerated in Table 3 and predicts accordingly 37 distinct peptidergic neuromodulation networks. As noted in the Introduction, expected neuropeptide diffusion distances suggest that any neuron within a local cortical area (e.g., VISp or ALM) might signal by diffusion to any other neuron within that same local area, but almost surely not to more distant areas (e.g., from VISp to ALM). In the following, we therefore make predictions of 74 (37 × 2) peptidergic distinct signaling networks, keeping separate consideration of signaling within VISp and within ALM.
 
-## Prediction of peptidergic networks from neurotaxonomic NP gene expression profiles
+**Table 3.**
+ The 18 NPP and 29 NP-GPCR genes of Tables 1 and 2 constitute 37 cognate NPP/NP-GPCR pairs and predict at least 37 potentially distinct peptidergic modulatory networks.The 37 pairs are enumerated here along with indications of the expected primary GPCR signal transduction class for each NP-GPCR (Alexander et al., 2017) and a fraction denoting frequency with which the given cognate pair occurs as a fraction of all neuron pairs surveyed. Pastel table fill colors denote G-protein transduction class as in Tables 1 and 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Cognate Pair Symbol</th>
+      <th>NPP Gene</th>
+      <th>NP-GPCR Gene</th>
+      <th>Primary Gα Family</th>
+      <th>Fraction of Type Pairs</th>
+      <th>#</th>
+      <th>Cognate Pair Symbol</th>
+      <th>NPP Gene</th>
+      <th>NP-GPCR Gene</th>
+      <th>Primary Gα Family</th>
+      <th>Fraction of Type Pairs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Npy→Npy1r</td>
+      <td>Npy</td>
+      <td>Npy1r</td>
+      <td>Gi/o</td>
+      <td>0.7805</td>
+      <td>19</td>
+      <td>Vip→Vipr1</td>
+      <td>Vip</td>
+      <td>Vipr1</td>
+      <td>Gs</td>
+      <td>0.496</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Npy→Npy2r</td>
+      <td>Npy</td>
+      <td>Npy2r</td>
+      <td>Gi/o</td>
+      <td>0.341</td>
+      <td>20</td>
+      <td>Vip→Vipr2</td>
+      <td>Vip</td>
+      <td>Vipr2</td>
+      <td>Gs</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Npy→Npy5r</td>
+      <td>Npy</td>
+      <td>Npy5r</td>
+      <td>Gi/o</td>
+      <td>0.8095</td>
+      <td>21</td>
+      <td>Crh→Crhr1</td>
+      <td>Crh</td>
+      <td>Crhr1</td>
+      <td>Gs</td>
+      <td>0.3925</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Sst→Sstr1</td>
+      <td>Sst</td>
+      <td>Sstr1</td>
+      <td>Gi/o</td>
+      <td>0.751</td>
+      <td>22</td>
+      <td>Crh→Crhr2</td>
+      <td>Crh</td>
+      <td>Crhr2</td>
+      <td>Gs</td>
+      <td>0.2035</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Sst→Sstr2</td>
+      <td>Sst</td>
+      <td>Sstr2</td>
+      <td>Gi/o</td>
+      <td>0.836</td>
+      <td>23</td>
+      <td>Rln1→Rxfp1</td>
+      <td>Rln1</td>
+      <td>Rxfp1</td>
+      <td>Gs</td>
+      <td>0.2465</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Sst→Sstr3</td>
+      <td>Sst</td>
+      <td>Sstr3</td>
+      <td>Gi/o</td>
+      <td>0.405</td>
+      <td>24</td>
+      <td>Rln1→Rxfp2</td>
+      <td>Rln1</td>
+      <td>Rxfp2</td>
+      <td>Gs</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Sst→Sstr4</td>
+      <td>Sst</td>
+      <td>Sstr4</td>
+      <td>Gi/o</td>
+      <td>0.806</td>
+      <td>25</td>
+      <td>Adcyap1→Adcyap1r1</td>
+      <td>Adcyap1</td>
+      <td>Adcyap1r1</td>
+      <td>Gs</td>
+      <td>0.284</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Penk→Oprd1</td>
+      <td>Penk</td>
+      <td>Oprd1</td>
+      <td>Gi/o</td>
+      <td>0.4955</td>
+      <td>26</td>
+      <td>Adcyap1→Vipr1</td>
+      <td>Adcyap1</td>
+      <td>Vipr1</td>
+      <td>Gs</td>
+      <td>0.1465</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Penk→Oprm1</td>
+      <td>Penk</td>
+      <td>Oprm1</td>
+      <td>Gi/o</td>
+      <td>0.9</td>
+      <td>27</td>
+      <td>Adcyap1→Vipr2</td>
+      <td>Adcyap1</td>
+      <td>Vipr2</td>
+      <td>Gs</td>
+      <td>0.0155</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Cort→Sstr1</td>
+      <td>Cort</td>
+      <td>Sstr1</td>
+      <td>Gi/o</td>
+      <td>0.6265</td>
+      <td>28</td>
+      <td>Tac2→Tacr3</td>
+      <td>Tac2</td>
+      <td>Tacr3</td>
+      <td>Gq/11</td>
+      <td>0.0955</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Cort→Sstr2</td>
+      <td>Cort</td>
+      <td>Sstr2</td>
+      <td>Gi/o</td>
+      <td>0.6965</td>
+      <td>29</td>
+      <td>Cck→Cckbr</td>
+      <td>Cck</td>
+      <td>Cckbr</td>
+      <td>Gq/11</td>
+      <td>0.6635</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Cort→Sstr3</td>
+      <td>Cort</td>
+      <td>Sstr3</td>
+      <td>Gi/o</td>
+      <td>0.338</td>
+      <td>30</td>
+      <td>Tac1→Tacr1</td>
+      <td>Tac1</td>
+      <td>Tacr1</td>
+      <td>Gq/11</td>
+      <td>0.119</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Cort→Sstr4</td>
+      <td>Cort</td>
+      <td>Sstr4</td>
+      <td>Gi/o</td>
+      <td>0.672</td>
+      <td>31</td>
+      <td>Pthlh→Pth1r</td>
+      <td>Pthlh</td>
+      <td>Pth1r</td>
+      <td>Gq/11</td>
+      <td>0.392</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Pdyn→Oprd1</td>
+      <td>Pdyn</td>
+      <td>Oprd1</td>
+      <td>Gi/o</td>
+      <td>0.2115</td>
+      <td>32</td>
+      <td>Trh→Trhr</td>
+      <td>Trh</td>
+      <td>Trhr</td>
+      <td>Gq/11</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Pdyn→Oprk1</td>
+      <td>Pdyn</td>
+      <td>Oprk1</td>
+      <td>Gi/o</td>
+      <td>0.0745</td>
+      <td>33</td>
+      <td>Trh→Trhr2</td>
+      <td>Trh</td>
+      <td>Trhr2</td>
+      <td>Gq/11</td>
+      <td>0.055</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Pdyn→Oprm1</td>
+      <td>Pdyn</td>
+      <td>Oprm1</td>
+      <td>Gi/o</td>
+      <td>0.4</td>
+      <td>34</td>
+      <td>Grp→Grpr</td>
+      <td>Grp</td>
+      <td>Grpr</td>
+      <td>Gq/11</td>
+      <td>0.113</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Pnoc→Oprl1</td>
+      <td>Pnoc</td>
+      <td>Oprl1</td>
+      <td>Gi/o</td>
+      <td>0.654</td>
+      <td>35</td>
+      <td>Nts→Ntsr1</td>
+      <td>Nts</td>
+      <td>Ntsr1</td>
+      <td>Gq/11</td>
+      <td>0.0225</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Rln1→Rxfp3</td>
+      <td>Rln1</td>
+      <td>Rxfp3</td>
+      <td>Gi/o</td>
+      <td>0.106</td>
+      <td>36</td>
+      <td>Nts→Ntsr2</td>
+      <td>Nts</td>
+      <td>Ntsr2</td>
+      <td>Gq/11</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>37</td>
+      <td>Nmb→Nmbr</td>
+      <td>Nmb</td>
+      <td>Nmbr</td>
+      <td>Gq/11</td>
+      <td>0.5655</td>
+    </tr>
+  </tbody>
+</table>
+
+### Prediction of peptidergic networks from neurotaxonomic NP gene expression profiles
 
 Figure 6 displays weighted adjacency matrix plots representing predictions of neuron-type-specific and neuron-subclass-specific peptidergic coupling from selections drawn from VISp and ALM of the 37 cognate NP gene pairs. The prediction matrices A-E are outer products (CPM*CPM units) of vectors representing expression (CPM units) of an NPP gene (columns) and a cognate NP-GPCR gene (rows) across all VISp or ALM neuron types. The predicted coupling matrices in F matrices are similar except that factor vectors are down-sampled by averaging neuron-type-specific CPM values within each of the subclasses (see Materials and methods for more details).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig6-v2.jpg)
+
+**Figure 6.:** Weighted adjacency matrix plots predicting local peptidergic coupling amongst neuron types (A–E) and subclasses (F). Matrices were computed as outer products (CPM*CPM units) of row and column factor vectors representing abundance (CPM units) of NPP and cognate NP-GPCR genes. Pseudocolor scales representing both expression (CPM) and coupling (CPM*CPM) are logarithmic. (A) 93 × 93 matrix predicting coupling amongst 93 VISp neuron types based on type-specific expression of the Npy gene and the cognate Npy1r NP-GPCR gene, as indicated by row and column vector ‘heat’ strips called out by curved arrows. (B) An 84 × 84 square matrix similarly representing Npy-Npy1r coupling, depicted as in (A), except based only on the 84 ALM neuron types. Dashed crosses demarcate the four quadrants of directed NPP/NP-GPCR pairing between glutamatergic (‘E’) and GABAergic (‘I’) neuron types, called out as (E→ E), (E→ I), (I→ I) and (I→ E). Light gray lines, pastel color blocks and labels flanking both axes demarcate higher, subclass levels of the Tasic 2018 neurotaxonomy (as in Figure 3A above). (C–E) Exemplar matrix predictions for a further sampling of the 37 VISp cognate NPP/NP-GPCR pairs from each of the three primary G-protein transduction families: (C) Gi/o; (D) Gs; (E) Gq/11. (F) Adjacency matrices similar to A-E, except row and column factor vectors were calculated as means of CPM values across neuron types comprising indicated subclasses. (Cladograms and taxonomic color codes as delineated in Figure 6—figure supplements 1–8). Links below point to source data files and similar plots for all 37 VISp and ALM type and subclass adjacency matrices, and to additional quantitative analysis of coupling matrix hierarchies (Figure 6—figure supplement 9) and morphologies and correlations (Figure 6—figure supplement 10).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Predictions for all 37 cognate pairs in both VISp and ALM cortical areas are grouped and color-coded according to Gα signal transduction family. All predictions were generated as described in connection with Figure 6 and represented as in Figure 6C–E for neuron types and in 6F for subclasses. Numbers at upper right indicate the maximum value to which each plot was normalized, in units of CPM*CPM.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Predictions for all 37 cognate pairs in both VISp and ALM cortical areas are grouped and color-coded according to Gα signal transduction family. All predictions were generated as described in connection with Figure 6 and represented as in Figure 6C–E for neuron types and in 6F for subclasses. Numbers at upper right indicate the maximum value to which each plot was normalized, in units of CPM*CPM.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Predictions for all 37 cognate pairs in both VISp and ALM cortical areas are grouped and color-coded according to Gα signal transduction family. All predictions were generated as described in connection with Figure 6 and represented as in Figure 6C–E for neuron types and in 6F for subclasses. Numbers at upper right indicate the maximum value to which each plot was normalized, in units of CPM*CPM.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Predictions for all 37 cognate pairs in both VISp and ALM cortical areas are grouped and color-coded according to Gα signal transduction family. All predictions were generated as described in connection with Figure 6 and represented as in Figure 6C–E for neuron types and in 6F for subclasses. Numbers at upper right indicate the maximum value to which each plot was normalized, in units of CPM*CPM.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** Predictions for all 37 cognate pairs in both VISp and ALM cortical areas are grouped and color-coded according to Gα signal transduction family. All predictions were generated as described in connection with Figure 6 and represented as in Figure 6C–E for neuron types and in 6F for subclasses. Numbers at upper right indicate the maximum value to which each plot was normalized, in units of CPM*CPM.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** Predictions for all 37 cognate pairs in both VISp and ALM cortical areas are grouped and color-coded according to Gα signal transduction family. All predictions were generated as described in connection with Figure 6 and represented as in Figure 6C–E for neuron types and in 6F for subclasses. Numbers at upper right indicate the maximum value to which each plot was normalized, in units of CPM*CPM.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig6-figsupp7-v2.jpg)
+
+**Figure 6—figure supplement 7.:** Predictions for all 37 cognate pairs in both VISp and ALM cortical areas are grouped and color-coded according to Gα signal transduction family. All predictions were generated as described in connection with Figure 6 and represented as in Figure 6C–E for neuron types and in 6F for subclasses. Numbers at upper right indicate the maximum value to which each plot was normalized, in units of CPM*CPM.
+
+![Figure 6—figure supplement 8.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig6-figsupp8-v2.jpg)
+
+**Figure 6—figure supplement 8.:** Predictions for all 37 cognate pairs in both VISp and ALM cortical areas are grouped and color-coded according to Gα signal transduction family. All predictions were generated as described in connection with Figure 6 and represented as in Figure 6C–E for neuron types and in 6F for subclasses. Numbers at upper right indicate the maximum value to which each plot was normalized, in units of CPM*CPM.
+
+![Figure 6—figure supplement 9.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig6-figsupp9-v2.jpg)
+
+**Figure 6—figure supplement 9.:** For area VISp (left) and ALM (right), the NPP, NP-GPCR coupling matrices C are linearized to vectors and then clustered using hierarchical clustering (average linkage) of the Pearson correlation between associated NPP, NP-GPCR vector pairs. The result of clustering the correlation matrix demonstrates consistent organization between ALM and VISp, with Sst-Sstr1, Sst-Sstr2, Sst-Sstr3, Sst-Sstr4,Npy-Npy5r showing greatest similarity of pattern. A singular value decomposition (SVD) of the associated ALM, VISp matrices shows 20 eigenvalues are required to explain 95% of variance for ALM, and 18 eigenvalues to explain 95% variance for VISp.The complexity of these patterns suggests a highly non-redundant combinatorial code. Text fill colors indicate primary Gα family.
+
+![Figure 6—figure supplement 10.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig6-figsupp10-v2.jpg)
+
+**Figure 6—figure supplement 10.:** To measure the extent to which each (NPP, NP-GPCR) pair p demonstrates localized signal in its coupling matrix $C_{R}^{P}$ in a region $R{ALM,VIS_{P}}$, we extract the top 10% percentile of $C_{R}^{P}$, then reduce the remaining expression signal to the pooled 12 × 12 major types matrix $P_{R}^{P}$. Let M be the maximum number of non-zero cells of $P_{R}^{t}$ over all pairs t. Define the localization score $L_{R}^{P}$ of the pair p as $L_{R}^{P}$ = {M - # non-zero cells of $P_{R}^{P}$}. Another informative metric is the Pearson correlation $(P_{ALM}^{P},P^{P}VIS_{p})$ between the 12 × 12 major types matrices $P_{ALM}^{P}$ and $P_{VIS_{P}}^{P}$. This figure shows the localization scores for each pair (NPP, NP-GPCR) for both ALM and VISp ordered by decreasing correlation $(P_{ALM}^{P},P^{P}VIS_{p})$. The result demonstrates a large number of localized pairs and localization that is generally independent of the correlation of the signal between ALM and VISp, suggesting reproducible localized signal across cortical regions.
 
 Figure 6C-E represents 8 more of the 37 cognate pair coupling matrices predicted for VISp. Along with Figure 6A and B, these exemplify the wide variety of neuron-type-specific coupling motifs resulting from transcriptomic prediction. Most coupling matrices (i.e., pairs 1, 9, 29), predict significant coupling over wide swaths of type-pairs, approaching 20% of the entire matrix. A few matrices at the other extreme, such as 6 and 34, predict very sparse coupling. Other predictions are intermediate in sparsity. As one might expect, similar patterns are evident in the downsampled, subclass level predictions of Figure 6F. Even from the small subset of the 37 coupling matrix plots shown in Figure 6, it is evident that both type-level and subclass-level matrices are densely tiled by predictions of connectivity. Inspection of Figure 6 and similar plots for the remainder of the 37 cognate pairs (Figure 6—figure supplements 1–8) also reveals that there is a great deal of cross-network redundancy, with multiple pairs covering a large majority of the coupled types and subclasses, sometimes within and sometimes crossing Gα family boundaries. These observations will be strengthened by the analysis of Figure 7 below.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/47889/elife-47889-fig7-v2.jpg)
 
-**Figure 7.:** (A) ISQ color maps representing coupling matrix predictions at the Tasic 2018 neurotaxonomy type level, merging Gi/o (red), Gs (green) and Gq/11 (blue) primary Gα family components. (B) Component primary Gα family (color) channels prior to merger displayed in (A). (C) Coupling matrix plots as in (A) and (B), except generated at the higher Tasic 2018 neurotaxonomy subclass level. Individual aggregate matrix components as in (B) are plotted at the right for both VISp and ALM. Dashed white crosses overlaying each matrix plot demarcate glutamatergic and GABAergic classes and the four corresponding matrix quadrants (E→ E, E→I, I→I and I→E) as in the individual matrix plots of Figure 6. (Cladograms and taxonomic color codes as delineated in Figure 3—figure supplement 1).Figure 7—source data 1.(archive containing three CSV files, one for each of Gi/o, Gs and Gq/11 families).Figure 7—source data 2.(archive containing three CSV files, one for each of Gi/o, Gs and Gq/11 families).
+**Figure 7.:** (A) ISQ color maps representing coupling matrix predictions at the Tasic 2018 neurotaxonomy type level, merging Gi/o (red), Gs (green) and Gq/11 (blue) primary Gα family components. (B) Component primary Gα family (color) channels prior to merger displayed in (A). (C) Coupling matrix plots as in (A) and (B), except generated at the higher Tasic 2018 neurotaxonomy subclass level. Individual aggregate matrix components as in (B) are plotted at the right for both VISp and ALM. Dashed white crosses overlaying each matrix plot demarcate glutamatergic and GABAergic classes and the four corresponding matrix quadrants (E→ E, E→I, I→I and I→E) as in the individual matrix plots of Figure 6. (Cladograms and taxonomic color codes as delineated in Figure 3—figure supplement 1).
 
 Finally, Figure 6 illustrates the tendency of coupling predictions from most cognate NP pairs to fall in contiguous ‘patches’ of the full coupling matrix. This is a natural reflection of the strong tendency of both NPP and NP-GPCR expression to align with early nodes in the Tasic 2018 hierarchical clustering which was also evident in Figures 3 and 5. The broadest example of coupling matrix patches reflecting hierarchical neurotaxonomy structure is provided by the observation that most sizable coupling patches fall strictly within single quadrants of glutamatergic-GABAergic neuron type pairing. Variations in coupling matrix structure across all 37 cognate NP pairs are represented in more quatitative terms by Figure 6—figure supplements 9 and 10. Additional details regarding the generation of the coupling matrices are provided in Materials and methods.
 
-## Prediction of second-messenger impacts from neurotaxonomic NP gene expression profiles
+### Prediction of second-messenger impacts from neurotaxonomic NP gene expression profiles
 
 For compact visualization of predicted signaling impacts of multiple distinct peptidergic networks and to facilitate empirical tests of such predictions based on calcium and cyclic AMP sensors (see Discussion), we developed the ‘ISQ’ graphic exemplified in Figure 7. This treatment makes use of the trichotomous G-protein primary transduction family approximation described in Introduction and delineated in Table 3 above: the Gi/o family (‘I’) inhibits production of cyclic AMP, the Gs family (‘S’) stimulates production of cyclic AMP) and the Gq/11 family (‘Q’) augments intracellular calcium dynamics. Such trichotomy is certainly an oversimplification, as it is known that downstream GPCR signal transduction is richly multifaceted (Weis and Kobilka, 2018) and that some GPCRs may signal via members of multiple Gα families, but we postulate here that this simplified scheme may nonetheless offer a first approximation useful for the design of exploratory experimentation and theory.
 
@@ -138,7 +1003,7 @@ The ISQ maps of Figure 7 exhibit a number of interesting features. (1) The aggre
 
 Light from single-cell transcriptomics is now beginning to illuminate dark corners of cellular neuroscience that have long resisted mechanistic and functional analysis (Fan et al., 2018; Fishell and Kepecs, 2019; Földy et al., 2016; Gokce et al., 2016; Luo et al., 2018; Okaty et al., 2011; Paul et al., 2017; Shekhar et al., 2016; Tasic et al., 2018; Tasic et al., 2016; Telley et al., 2016; Zeng and Sanes, 2017). Cortical neuropeptide signaling may be one such corner. While profound impacts of neuropeptide signaling are well-established in a wide range of non-mammalian and sub-cortical neural structures (Borbély et al., 2013; Burbach, 2011; Elphick et al., 2018; Grimmelikhuijzen and Hauser, 2012; Katz and Lillvis, 2014; Jan et al., 1979) and there certainly is an excellent literature on cortical neuropeptide signaling (Crawley, 1985; Férézou et al., 2007; Gallopin et al., 2006; Gomtsian et al., 2018; Hamilton et al., 2013; Liu et al., 2018; Mena et al., 2013; Mitre et al., 2018; Owen et al., 2013; Rossier and Chapouthier, 1982; Williams and Zieglgänsberger, 1981), published physiological results are surprisingly rare given the breadth of neuroscientific interest in cortex. The new transcriptomic data analyzed here suggest a possible explanation for this relative rarity. Though many NPP and cognate NP-GPCR genes are expressed abundantly in all or very nearly all neocortical neurons, such expression is highly differential, highly cell-type specific, and often redundant. These previously uncharted differential expression factors may have hindered repeatable experimentation. Our analysis supports this unwelcome proposition but may also point the way to more productive new perspectives on intracortical peptidergic neuromodulation.
 
-## Summary of findings
+### Summary of findings
 
 The present single-cell analysis establishes that mRNA transcripts from one or more of 18 NPP genes are detectible in over 97% of mouse neocortical neurons (Figure 1A,B) and that transcripts of one or more of 29 cognate NP-GPCR genes are detectible in over 98% (Figure 2A,B). Transcripts of at least one of the 18 NPP genes are present in the vast majority of cortical neurons at extremely high copy number (Table 1), suggesting the likelihood of brisk translation into neuropeptide precursor proteins. Brisk synthesis of precursor proteins further suggests brisk processing to active neuropeptide products and secretion of these products. Likewise, NP-GPCR transcripts rank high in abundance compared to most other transcripts of protein-coding genes (Table 2), supporting the likelihood of functional receptor products. Our observations thus support the proposition that all, or very nearly all, neocortical neurons, both glutamatergic and GABAergic, are also both neuropeptidergic and modulated by neuropeptides. We are not aware of any previous empirical support for quite such a strong conclusion.
 
@@ -150,7 +1015,7 @@ Following earlier indications that neurons may express multiple NPP genes, for 
 
 We also find that a modest set of 47 neuropeptide-signaling genes permits transcriptomic neuron type classification that is exceptionally precise in comparison to other similarly small gene sets (Figure 4). Connections between neuronal cell-type differentiation and differential expression of neuropeptides were first recognized by the widespread use of neuropeptide immunoreactivity to discriminate interneuron types (DeFelipe et al., 2013). The exceptional power of neuropeptide genes as cell type markers is also evident in the Tasic 2018 neuron-type nomenclature (see Tasic et al., 2018) and bold red type highlights in Figure 3—figure supplement 1) and is noteworthy in other recent single-cell transcriptomic analyses of mouse neuron differentiation (Huang and Paul, 2019; Paul et al., 2017; Sugino et al., 2019; Zeisel et al., 2018). The tight alignment of neuron type classifications based solely on neuropeptide-signaling gene expression with the classifications based on genome-wide expression patterns, as evident in Figure 4, offers an intriguing suggestion of a very deep and fundamental connection between the expression of evolutionarily ancient neuropeptide-signaling genes and the differentiation of neuron type identities during metazoan speciation.
 
-## The structures of predicted neuropeptidergic modulation networks
+### The structures of predicted neuropeptidergic modulation networks
 
 Our analysis delineates neuron-type-specific expression of 37 cognate pairs amongst the 18 NPP and 29 NP-GPCR genes analyzed (Table 3). Each of these pairs can be taken to predict a modulatory connection from cells expressing a particular NPP gene, via a secreted NP product, to cells expressing the particular NP-GPCR gene (Figure 6). Each pair thus establishes the prospect of a directed modulatory network with nodes defined by the neurotaxonomic identities of the transmitting NPP-expressing and the receiving NP-GPCR-expressing neurons. The analyses represented in Figures 1, 2, 3 and 5 and Table 3 establish that at least one of the 37 pairs directly involves every neuron sampled, and that the vast majority of neurons are directly involved in more than one of the 37 predicted networks. The nearly complete adjacency matrix tiling evident in Figures 6 and 7 remarkably suggests that at least one of the 18 peptides considered here may directly interconnect almost every cortical neuron type with almost every other neuron type. Because of this saturated, multiplexed coverage of all neurons and neuron types, we refer to these predicted neuropeptidergic networks as ‘dense’.
 
@@ -158,7 +1023,7 @@ Transcriptomic prediction of paracrine local signaling from GABAergic neuron sou
 
 Though our NP network predictions are entirely consistent with decades of pioneering work on peptidergic neuromodulation and cortical gene expression (Burbach, 2011; Hökfelt et al., 2013; van den Pol, 2012), it is only with the recent advent of single-cell and neurotaxonomics methods that such specific predictions have become possible and, most importantly, testable.
 
-## Testing peptidergic network predictions
+### Testing peptidergic network predictions
 
 The present predictions regrading cortical neuropeptidergic coupling are based on detection of cellular mRNA transcripts, but prediction from such data depends upon (1) extrapolation from cellular mRNA census to inference about rates of synthesis, processing, localization and functional status of cellular NPP and NP-GPCR proteins, (2) assumptions about neuropeptide diffusion and lifetime in cortical interstitial spaces, (3) assumptions about signaling consequences of neuropeptide binding to cortical NP-GPCR receptors. Though we have already discussed several factors that mitigate such concerns, we stipulate here that these uncertainties remain substantial. Nonetheless, we expact that these same uncertainties will define paths for very productive future research.
 
@@ -166,7 +1031,7 @@ Physiological and anatomical experimentation will be essential to testing transc
 
 A vast pharmacopeia of well-characterized specific ligands and antagonists for most NP-GPCRs (Alexander et al., 2017) will be bedrock for the functional analysis of neuron-type-specific peptide signaling. For analysis of type-specific neuropeptide signaling in network context (i.e., ex vivo slices and in vivo), newer optophysiological methods of calcium imaging and optogenetic stimulation/inhibition will certainly join electrophysiology as foundations for measurement of neuropeptide impacts. In addition, many new tools more specific to neuropeptide signaling are emerging. Super-resolution 3D immunohistologies like array tomography (Smith, 2018) and 3D single-molecule methods (Jia et al., 2014; von Diezmann et al., 2017) will enable imaging of dense-core vesicle localization and neuropeptide contents in type-specific network anatomical context. Genetically encoded fluorescent dense-core vesicle cargos will allow real-time detection of neuropeptide secretion (Ding et al., 2019), while genetically encoded sensors of extracellular GPCR ligands (Patriarchi et al., 2018; Sun et al., 2018), GPCR activation (Haider et al., 2019; Hill and Watson, 2018; Livingston et al., 2018; Ratnayake et al., 2017; Stoeber et al., 2018), G-protein mobilization (Ratnayake et al., 2017), cAMP concentration (Hackley et al., 2018; Ma et al., 2018), protein kinase activation (Chen et al., 2014) and protein phosphorylation (Haider et al., 2019) will enable fine dissection of NP dynamics and NP-GPCR signal transduction events (Spangler and Bruchas, 2017). In addition, new caged NP-GPCR ligands (Banghart et al., 2018) and antagonists (Banghart et al., 2013) will provide for precise spatial and temporal control for NP receptor activation. All of these tools have already been proved at least in principle, and all should be readily applicable to testing specific hypotheses derived from the type-specific peptidergic signaling predictions set forth here (Figures 6 and 7 and their supplements).
 
-## Prospects for elucidating cortical homeostasis, modulation and plasticity
+### Prospects for elucidating cortical homeostasis, modulation and plasticity
 
 Our results suggest that densely multiplexed peptidergic networks could play very significant roles in the homeostasis, modulation and plasticity of cortical synaptic networks. Due to the clearly formidable complexity of cortical networks, however, a real grasp of the myriad network interactions implicated is certain to require theoretical and computational approaches, in addition to experimental biophysics tests as outlined in the preceding section. Work at the fertile intersection of the neuroscience and the computer science of learning (Dayan and Abbott, 2001; Huh and Sejnowski, 2017; Koch and Segev, 1998; Lillicrap et al., 2016; Marblestone et al., 2016; Guerguiev et al., 2017; Song et al., 2000) seems particularly relevant to fathoming the possible significance of the neuropeptidergic networks we predict here.
 
@@ -178,60 +1043,93 @@ Deeper understanding of neuromodulation roles in adaptive cortical function seem
 
 **Figure 8.:** Multiple directed network graphs are predicted here for peptidergic networks from transcriptomic data (A–C) and for synaptic networks from connectomic data (D,E) to predict a modulated synaptic network (F). (A) Transcriptional heat maps representing expression of three fictitious NPP genes (Npp1,2,3) and three cognate NP-GPCR genes (Npr1,2,3) across a neurotaxonomy comprising seven fictitious neuron types (a-c excitatory; d-g inhibitory). (B) Adjacency matrices derived from expression data in (A) as outer products of column and row factor vectors representing NPP and NP-GPCR expression, respectively. (C) Directed network graphs representing the same three NP networks, diagramming paracrine coupling by three neuropeptides (NP1,2,3) with routing of broadcast diffusive signals determined by differential expression of peptide-receptor pairings. (D) Neurotaxonomic adjacency matrices expressing excitatory and inhibitory synaptic connection statistics. (E) Synaptic network graphs derived from (D). (F) Directed multigraph illustrating use neurotaxonomy to integrate the three modulatory graphs and two synaptic connectivity graphs.
 
-## Implications for psychopharmacology
+### Implications for psychopharmacology
 
 Neuropeptidergic signaling molecules have long beguiled as potential neuropsychiatric drug targets (Hökfelt et al., 2003; Hoyer and Bartfai, 2012). There seems to be some disappointment, however, in the returns on what has been rumoured to be very large research investments. The present study raises the possibility that both NP-targeted drug discovery and the reproducibility of physiological experimentation have been hindered by the same uncharted multiplicity, cell-type-specificity and redundancy of NPP and NP-GPCR expression. By charting these waters, single-neuron transcriptomic analysis may improve the odds substantially for both reproducible research and psychiatric drug development.
 
 Today’s psychiatric pharmaceuticals almost all target signaling by the monoamine neuromodulators dopamine, serotonin, noradrenaline and/or histamine and their selective GPCR receptors (Data-Franco et al., 2017; Hamon and Blier, 2013; Millan et al., 2015; Urs et al., 2014). Because they are so numerous, neuropeptide signaling systems may be much more neuron-type specific than monoamines. Greater neuron-type-specificity may translate to NP-targeting drugs being less troubled by side-effects and compensation (Hoyer and Bartfai, 2012). Moreover, while GPCRs have long been known as among the most ‘druggable’ of targets (Gurrath, 2001; Lundstrom, 2009), the ‘druggability’ of GPCRs is currently advancing very rapidly due to advances in GPCR structural biology and molecular dynamic simulations (Hilger et al., 2018; Koehl et al., 2018; Weis and Kobilka, 2018). It seems likely that new knowledge of the neuron-type-specificity of NP signaling gene expression will substantially advance the development of NP-targeting pharmaceuticals.
 
-## Conclusions
+### Conclusions
 
 Because single-cell RNA-seq data enable prediction of complete protein parts lists of individual neurons, they open powerful new perspectives on neuronal differentiation, function and network architectures. The power of these new perspectives has been further enhanced by parallel development of transcriptomic neurotaxonomies. Here we have exploited both a pioneering large-scale RNA-seq dataset and its data-driven neurotaxonomy to pursue a new perspective on local neuropeptidergic modulatory signaling in mouse cortex. This work has revealed a surprisingly highly structured and abundant expression of cortical NPP and NP-GPCR genes: dozens of neuropeptide signaling genes are expressed at very high levels in very distinctive and highly conserved patterns. While entirely consistent with previous bulk transcriptomic and proteomic observations, it is only with the advent of the RNA-seq combination of single-cell resolution with genomic depth that this extreme structure and abundance has come into focus. We have endeavored here to shape these findings into specific and testable peptidergic signaling predictions in the hopes of guiding fruitful experimentation based on emerging transcriptomic neurotaxonomies, new means for genetic access to specific neuron types and powerful new tools for biophysical analysis of neuropeptide actions. The observations presented here suggest the intriguing possibility that the homeostasis, modulation and plasticity of cortical circuitry may involve local neuropeptidergic signaling networks of previously unrecognized abundance and density.
 
 ## Materials and methods
 
-## Data and software resources
+### Data and software resources
 
 The present study is based on analysis of a resource single-cell mRNA-seq dataset acquired at the Allen Institute (Tasic et al., 2018) and available for download at http://celltypes.brain-map.org/rnaseq/ These RNA-seq data were acquired from a total of 22,439 isolated neurons, with detection of transcripts from a median of 9462 genes per cell ﻿(min = 1,445; max = 15,338) and an overall total of 21,931 protein-coding genes detected. Neurons were sampled from two distant and very different neocortical areas: 13,491 neurons from primary visual cortex (VISp), and 8948 neurons from anterior lateral motor cortex (ALM). Tasic et al., harvested tissue specimens from a variety of transgenic mice expressing fluorescent proteins to enable enrichment of samples for neurons and for relatively rare neuron types by FACS sorting after dissociation. This enrichment procedure resulted, by design, in a disproportionate representation of GABAergic neurons, canonically ~20% of neurons (Sahara et al., 2012), such that the sampled neuron population is roughly half GABAergic (47%) and half glutamatergic (53%). The resource publication (Tasic et al., 2018) should be consulted for full details of neuronal sample and library preparation, sequencing and data processing. Source data, spreadsheets, R scripts and other code used to generate all tables and figures presented here are available at https://github.com/AllenInstitute/PeptidergicNetworks (Gala, 2019; copy archived at https://github.com/elifesciences-publications/PeptidergicNetworks). A derived data set np_gpcr_cpm.csv was used for analyses summarizing CPM, region and metadata for the NPP and NP-GPCR genes. The primary Tasic 2018 data tables are available for download at http://celltypes.brain-map.org/rnaseq/.
 
-## Data metrics
+### Data metrics
 
 The Tasic 2018 single-cell RNA-seq data tables report the abundance of transcripts from individual neurons in both ‘counts per million reads’ (CPM) and ‘fragments per kilobase of exon per million reads mapped’ (FPKM) units. Our analysis of this data compares gene expression levels quantitatively, with two distinct use cases: (1) comparisons across large sets of different genes, and (2) comparisons of the same gene across different individual cells, cell types and brain areas. We have relied upon FPKM data (Mortazavi et al., 2008; Pimentel, 2014), for use case 1 (i.e., the Tables 1 and 2 comparisons across genes). For use case 2 (as in all figures below), we have preferred the CPM units, because these units were used to generate the Tasic 2018 neurotaxonomy. While choices between CPM and FPKM units here should have little impact upon outcomes, it would seem inconsistent to use FPKM units to compare across cell types discerned on the basis of CPM units.
 
 The NP signaling genes upon which the present analysis focuses are expressed very differentially across the sampled populations of individual mouse cortical neurons. That is, each gene is expressed at a high level in some subset of cells but at zero or very low levels in the remainder of the population. To compactly characterize such expression, we developed a ‘Peak FPKM’ (pFPKM) metric. This metric is generated by ranking single-cell FPKM values for a given gene across the entire population of 22,439 neurons sampled, then designating the FPKM value at the ascending 99.9th percentile point as pFPKM. This metric was designed to minimize effects of sporadic outliers and sample size while still closely approximating the actual peak expression value in even very small subsets of neurons expressing the gene in question. Figures 1A and 2A, and their Source data files provide very detailed additional information about the single-cell RNA-seq value distributions sampled by the pFPKM metrics.
 
-## Selection of the 18 NPP gene set
+### Selection of the 18 NPP gene set
 
 As noted in Introduction, usage and definitions of the term ‘neuropeptide’ vary widely across the current literature. It therefore seems unwise at present to claim that any attempted consensus list would accurately circumscribe all neuropeptides. For the purposes of the present work, we have relied therefore on the reasonably exhaustive list of 96 classical and candidate human and mouse NPP genes put forth in a widely cited publication (Burbach, 2010) and related website (http://neuropeptides.nl/, last accessed 10 October 2019). To reconcile this list to current mouse gene nomenclature, we used both the HGNC nomenclature ((https://www.genenames.org/, last accessed 10 October 2019) and the Mouse Genome Database (MGD) (http://www.informatics.jax.org, last accessed 10 October 2019). The result is the list of 94 putative mouse NPP genes presented in Supplementary file 3, which also tabulates the pFPKM values and percentile scores compiled for each NPP genes from the Tasic 2018 dataset. These 94 NPP genes were further segregated using a preliminary (early 2018) version of the Tasic 2018 neurotaxonomy to select NPP genes exhibiting median CPM expression levels > 10 in one or more neuron type in VISp and ALM cortex. This screening resulted in the list of 39 such NPP genes represented in Supplementary file 4, with most exceeding the 10 CPM threshold by a large margin (observed range was 24–4100 CPM). Supplementary file 4 also tabulates criteria that drove inclusion of only the 18 NPP genes represented in Table 1 while 21 other cortically expressed NPP genes were excluded. The 18 select NPP genes include all but two (Edn3 and Gal) genes for which transcripts ranked in the top quintile by pFPKM of the 94 putative NPP genes as tabulated in Supplementary file 3.
 
-## Selection of the 29 NP-GPCR gene set
+### Selection of the 29 NP-GPCR gene set
 
 The 18 select NPP genes listed in Table 1 were used to search manually for cognate NP-GPCRs expressed in mouse cortex, relying primarily on ligand/receptor pairing data retrieved from the IUPHAR/BPS Pharmacology website (http://www.guidetopharmacology.org, accessed in March, 2018) and the Tasic 2018 NP-GPCR expression data tabulated in Supplementary file 5. This process resulted in selection of the 29 mouse NP-GPCR genes listed in Table 2, which also lists for each the corresponding cognate NPP gene or genes used to root the search. The matching of NP-GPCR and NPP genes in Table 2 neglects a few receptor/ligand pairings rated on the IUPHAR/BPS website as very low in affinity compared to primary pairings.
 
-## Autoencoder-based classifier development and evaluation methods
+### Autoencoder-based classifier development and evaluation methods
 
-## Gene sets
+#### Gene sets
 
 Table of different sets of genes used for experiments shown in Figure 4:
 
-Gene setDescriptionNP47The combined set of 18 NPPs and 29 NP-GPCRsHE6083 genes selected based on maximum value across all neurons in the datasetDE4020 differentially expressed genes for Tasic 2018 neurotaxonomyDE4747 most variable genes selected from the set of DE genesRand47Random subsets of 47 genes drawn from the set of HE genesRand47 ExpMatchedRandom subsets of 47 genes such that the maximum expression value approximately matches that of the NP genes
+<table>
+  <thead>
+    <tr>
+      <th>Gene set</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NP47</td>
+      <td>The combined set of 18 NPPs and 29 NP-GPCRs</td>
+    </tr>
+    <tr>
+      <td>HE</td>
+      <td>6083 genes selected based on maximum value across all neurons in the dataset</td>
+    </tr>
+    <tr>
+      <td>DE</td>
+      <td>4020 differentially expressed genes for Tasic 2018 neurotaxonomy</td>
+    </tr>
+    <tr>
+      <td>DE47</td>
+      <td>47 most variable genes selected from the set of DE genes</td>
+    </tr>
+    <tr>
+      <td>Rand47</td>
+      <td>Random subsets of 47 genes drawn from the set of HE genes</td>
+    </tr>
+    <tr>
+      <td>Rand47 ExpMatched</td>
+      <td>Random subsets of 47 genes such that the maximum expression value approximately matches that of the NP genes</td>
+    </tr>
+  </tbody>
+</table>
 
-## Autoencoder network architecture
+#### Autoencoder network architecture
 
 Autoencoders are multi-layer, feedforward neural network models that consist of encoder/decoder subnetworks. In its basic realization, the encoder subnetwork learns to compress the high dimensional input into a low dimensional representation, from which the decoder subnetwork estimates the original input. We constructed a network with two autoencoders, with eight hidden layers each. The architecture of the first autoencoder (HE Genes autoencoder, Figure 4C) is Input(6083) → Dropout(0.8) → Dense(100) → Dense(100) → Dense(100) → Dense(100) → Dense(d) → Batch Normalization (latent representation z1) → Dense(100) → Dense(100) → Dense(100) → Dense(100) → Dense(6083), and the architecture of the second autoencoder (NP Genes autoencoder, Figure 4B) is Input(47) → Dropout(0) → Dense(x) → Dense(x) → Dense(x) → Dense(x) → Dense(d) → Batch Normalization (latent representation z2) → Dense(x) → Dense(x) → Dense(x) → Dense(x) → Dense(47). The numbers in parentheses of Dense denote the number of fully connected units in those layers. All Dense layer units use the rectified linear (ReLU) function as the nonlinear transformation except for those in the Dense(d) layers, which do not use a nonlinear transformation. For results using the NP genes autoencoder x = 50; tests with x = 25, led to qualitatively similar results (not shown) and did not change overall conclusions of the analyses. The Dropout layer (Srivastava, 2014) is used with dropout probability = 0.8 to regularize the HE Genes autoencoder and prevent over-fitting. The numbers of input/output units in each network match the number of input genes. The two dimensional representations (d = 2) shown in Figure 4A–B, and the five dimensional (d = 5) representations used in Figure 4D are the outputs of the Batch Normalization layer (Ioffe and Christian, 2015) for the respective networks. We determined the optimal latent space dimensionality d = 5 for the quantitative analysis by varying the latent space dimensionality of the HE Genes network between 2 and 20 dimensions and choosing the value that maximized the QDA analysis-based cell type classification accuracy for the HE genes (see Figure 4—figure supplement 2).
 
-## Autoencoder training
+#### Autoencoder training
 
 Both autoencoder networks were trained using the backpropagation algorithm with the Adam optimizer (Kingma and Ba, 2014) and a batch size of 956. The HE genes autoencoder was trained for 50,000 epochs using the mean squared error between the input and the output layers as the loss function. The NP genes autoencoder was trained for 10,000 epochs using L = R+λC as the loss function, where R denotes the mean squared reconstruction loss as in the HE genes network, C denotes the penalty for mismatch between the latent representations, and λ = 100 is the weighting scalar between the two terms. After training the HE genes network and obtaining the latent representation z1 for each cell, C calculates the mean squared error between the latent representation of the NP genes network z2 and z1, while simultaneously normalizing variance along the narrowest direction for z2. The two additive loss terms, R and C, together minimize the reconstruction error while attempting to match the representation learned using only the HE gene set. The same procedure was used for all small gene subsets including NP and random gene sets. Python implementations of the networks using the Tensorflow and Keras libraries are included in the code repository.
 
-## Quantifying abilities of gene sets to classify cell types
+#### Quantifying abilities of gene sets to classify cell types
 
 The neurotaxonomy of Tasic et al. (2018) defines hierarchical relationships of neuronal cell types. For each gene set, we used Quadratic Discriminant Analysis (QDA) to train multiple classifiers on the latent space representations to predict labels at different levels of the cell type hierarchy. The different levels (nodes) in the hierarchy were characterized in Tasic 2018 with a resolution index measure. Here we re-normalized that resolution index measure to have a value of 0.0 for the class of neurons (root node), and 1.0 for the 115 VISp+ALM cell types (leaf nodes, inset in Figure 4D). All intermediate nodes in the hierarchical classification tree have a positive resolution index that is less than 1.0. We used this property of nodes in the hierarchical classification tree to assign a resolution index (RI) value to each cell. The procedure starts with a classifier that was trained using all the leaf node labels, that is all the 115 VISp+ALM cell type labels. Test cells that are classified correctly at this level are assigned RI = 1.0, which corresponds to the resolution index measure of the leaf nodes. Test cells that are incorrectly classified at this level of detail are re-assigned labels by a classifier that was trained on successively merged labels along the hierarchical tree till they are correctly classified. These cells receive the resolution index value of the node for which they are assigned the correct label. This procedure was performed using 13 fold cross validation for all the different gene sets, and the results were pooled.
 
-## Peptidergic coupling matrices
+#### Peptidergic coupling matrices
 
-For a given cortical area A{ALM,VISP} , we denote by NPPA(g,t) the mean CPM expression matrix having entries NPP gene g and cell type t. Similarly, NPGPCRA(h,t) has as entries the expression of NP-GPCR gene h in type t. The coupling matrix C(g,t)A of the pair (g,h) in area A is then defined C(g,t)a(t,s)=log10(NPPA(g,t)×NPGPCRA(h,s)) for the fixed pair (g,h) in (NPP, NP-GPCR) as t,s range over all cell types in A. Matrices C(g,t)A are formally the (square matrix) outer product NPPANPGPCRA then presented in log10 units. Pooled representations are computed by averaging values of coupling matrices C(g,t)A over 12 major cell types prior to rendering.
+For a given cortical area $A{ALM,VIS_{P}}$ , we denote by $NPP_{A}(g,t)$ the mean CPM expression matrix having entries NPP gene g and cell type t. Similarly, $NPGPCR_{A}(h,t)$ has as entries the expression of NP-GPCR gene h in type t. The coupling matrix $C_{(g,t)}^{A}$ of the pair (g,h) in area A is then defined $C_{(g,t)}^{a}(t,s)=log_{10}(NPP_{A}(g,t)\timesNPGPCR_{A}(h,s))$ for the fixed pair (g,h) in (NPP, NP-GPCR) as t,s range over all cell types in A. Matrices $C_{(g,t)}^{A}$ are formally the (square matrix) outer product $NPP_{A}NPGPCR_{A}$ then presented in log10 units. Pooled representations are computed by averaging values of coupling matrices $C_{(g,t)}^{A}$ over 12 major cell types prior to rendering.
 
-## Transduction mode predictions
+#### Transduction mode predictions
 
 Peptidergic coupling matrices are summed, log10 scaled and maximum normalized independently according to Gi/o, Gs and Gq/11 family membership, then displayed in red, green and blue, respectively. Pooled representations are computed by averaging type-level data over subclasses before similar rendering.

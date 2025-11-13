@@ -135,9 +135,7 @@ Eogt[-/-] retinas were analyzed for vascular smooth muscle cells and pericytes b
 
 As is often the case with glycosyltransferases, endogenous EOGT levels are too low to be readily detected by Western analysis in CHO and HeLa cell lysates. Similarly, it has been shown that levels of glycosyltransferase gene transcripts may not reflect protein levels or enzyme activity. Thus, we decided that the best test of EOGT knockdown was reduction in
 
-O-GlcNAc (the product of EOGT activity), as detected by the anti-O-GlcNAc Ab CTD110.6. Western blots of each construct are shown in Author response image 1. All constructs showed reduced O-GlcNAc signal, consistent with the data from an independent experiment shown in Figure 3B for TA197 and TA198 shRNAs. The latter constructs were the most effective at reducing ligand-induced NOTCH1 activation as shown in Figure 3A, and so subsequent experiments were pursued with these two constructs. This explanation has been included in the revised text (subsection “Knockdown of EOGT reduces Notch signaling”, first paragraph).10.7554/eLife.24419.026Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.24419.026
-
-DOI: http://dx.doi.org/10.7554/eLife.24419.026
+O-GlcNAc (the product of EOGT activity), as detected by the anti-O-GlcNAc Ab CTD110.6. Western blots of each construct are shown in Author response image 1. All constructs showed reduced O-GlcNAc signal, consistent with the data from an independent experiment shown in Figure 3B for TA197 and TA198 shRNAs. The latter constructs were the most effective at reducing ligand-induced NOTCH1 activation as shown in Figure 3A, and so subsequent experiments were pursued with these two constructs. This explanation has been included in the revised text (subsection “Knockdown of EOGT reduces Notch signaling”, first paragraph).10.7554/eLife.24419.026Author response image 1.
 
 Characterization of Eogt-siRNA CHO cells were published in Tashima and Stanley, JBC, (2014) as mentioned in the last paragraph of the aforementioned subsection.
 

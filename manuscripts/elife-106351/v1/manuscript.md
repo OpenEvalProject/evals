@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/007ps6h72 Basic Sciences Division, Fred Hutchinson Cancer Center Seattle United States
-2. https://ror.org/006w34k90 Howard Hughes Medical Institute Chevy Chase United States
-3. https://ror.org/040gcmg81 Laboratory of Pathology, National Cancer Institute, National Institutes of Health Bethesda United States
+1. Basic Sciences Division, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+2. Howard Hughes Medical Institute Chevy Chase United States ([ROR:006w34k90](https://ror.org/006w34k90))
+3. Laboratory of Pathology, National Cancer Institute, National Institutes of Health Bethesda United States ([ROR:040gcmg81](https://ror.org/040gcmg81))
 
 † Corresponding author
 

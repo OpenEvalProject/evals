@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.40224.001 Human visual cortex is organized into multiple retinotopic maps. Characterizing the arrangement of these maps on the cortical surface is essential to many visual neuroscience studies. Typically, maps are obtained by voxel-wise analysis of fMRI data. This method, while useful, maps only a portion of the visual field and is limited by measurement noise and subjective assessment of boundaries. We developed a novel Bayesian mapping approach which combines observation–a subject’s retinotopic measurements from small amounts of fMRI time–with a prior–a learned retinotopic atlas. This process automatically draws areal boundaries, corrects discontinuities in the measured maps, and predicts validation data more accurately than an atlas alone or independent datasets alone. This new method can be used to improve the accuracy of retinotopic mapping, to analyze large fMRI datasets automatically, and to quantify differences in map properties as a function of health, development and natural variation between individuals.
+Human visual cortex is organized into multiple retinotopic maps. Characterizing the arrangement of these maps on the cortical surface is essential to many visual neuroscience studies. Typically, maps are obtained by voxel-wise analysis of fMRI data. This method, while useful, maps only a portion of the visual field and is limited by measurement noise and subjective assessment of boundaries. We developed a novel Bayesian mapping approach which combines observation–a subject’s retinotopic measurements from small amounts of fMRI time–with a prior–a learned retinotopic atlas. This process automatically draws areal boundaries, corrects discontinuities in the measured maps, and predicts validation data more accurately than an atlas alone or independent datasets alone. This new method can be used to improve the accuracy of retinotopic mapping, to analyze large fMRI datasets automatically, and to quantify differences in map properties as a function of health, development and natural variation between individuals.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ We publish with this paper a tool capable of implementing the method we describe
 
 Retinotopic mapping experiments were performed on eight subjects using fMRI. Twelve individual retinotopy scans were performed on each subject then combined into 21 ‘training’ datasets and 1 ‘validation’ dataset for cross-validation as well as one full dataset of all scans for detailed analysis (Supplementary file 1; see also Materials and methods). Predicted maps were then generated using the training datasets and compared to the validation dataset. The training and validation datasets are largely independent in that they are derived from separate scans; however, some dependency remains in that the different scans were obtained from the same scanning session, so that they share anything common to the session (viewing conditions, scanner hardware, etc.). We compared three methods for predicting retinotopic maps (Figure 1): (1) using the training data alone as a prediction (the ‘observed’ maps); (2) using the subject’s anatomy alone to apply an anatomically-defined template of retinotopy (the ‘prior’ maps); and (3) combining data with anatomy (observation with prior) using Bayesian inference (the ‘inferred’ maps). We then leverage the differences between these methods to characterize the pattern of individual differences in retinotopic maps across subjects. The prior map (Figure 2B), used for methods 2 and 3, was derived from fitting a template to a high-quality dataset derived from 181 subjects in the Human Connectome Project (Uğurbil et al., 2013; Van Essen et al., 2013; Benson et al., 2018) (Figure 2A).
 
-## Bayesian inference has the advantages of an anatomical atlas while also respecting individual differences
+### Bayesian inference has the advantages of an anatomical atlas while also respecting individual differences
 
 The inferred retinotopic maps, predicted by Bayesian inference, provide high-quality descriptions of the full retinotopic topology for each subject’s V1-V3 regions. These maps can be produced even in the absence of observed retinotopic measurements (i.e., using the prior alone), or by combination with retinotopic data. In this latter case, the inferred maps have all the advantages of the retinotopic prior (topologically smooth maps, predictions beyond the stimulus aperture, etc.), while also accounting for idiosyncrasies in individual maps. Three examples of maps that demonstrate this advantage are shown in Figure 3. The first two columns show maps in which, relative to the validation maps, the predictions made from data alone have highly curved iso-eccentricity contours. These contours reflect noise rather than true curvature in the iso-eccentricity contours, as shown by the validation data. For these two columns, the predictions from the prior alone have iso-eccentric contours that are too smooth (as compared to the validation data). The correct lines appear to lie between the training data and the prior. Hence when data is combined with the prior (Figure 3, third column) the iso-eccentric contours resemble those of the validation dataset. The third row of Figure 3 shows an instance in which, even lacking a coherent polar angle reversal to define the ventral V1/V2 boundary near the fovea in the predictions made from data alone, combination of the data with prior more accurately predicts that boundary in the validation dataset than the prior alone.
 
@@ -56,7 +56,7 @@ In constructing the Bayesian-inferred retinotopic map for a single hemisphere, w
 
 **Figure 4.:** Three methods of predicting retinotopic maps (as in Figure 1) for an example subject. (A) Predicted retinotopic maps based on training data alone are found by solving the pRF models for each voxel and projecting them to the cortical surface. The training data (left) and prediction (right) are identical. (B) To predict a retinotopic map using the prior alone, the subject’s cortical surface is aligned to FreeSurfer’s fsaverage anatomical atlas (represented by rectilinear checkerboards), bringing the subject’s anatomy into alignment with the anatomically-based prior, which is represented by iso-eccentricity contour lines in the figure (see also Supplementary file 2C). The model of retinotopy is then used to predict the retinotopic parameters of the vertices based on their anatomically-aligned positions. After the predictions have been made, the cortical surface is relaxed. Maps are shown as checkerboards in order to demonstrate the warping (insets show original data and curvature). (C) Bayesian inference of the retinotopic maps of the subject are made by combining retinotopic data with the retinotopic prior. This is achieved by first aligning the subject’s vertices with the fsaverage anatomical atlas (as in B) then further warping the vertices to bring them into alignment with the data-driven model of retinotopy (shown as iso-eccentricity contour lines). The warping was performed by minimizing a potential function that penalized both the deviation from from the prior (second column) as well as deviations between the retinotopic observations and the retinotopic model.
 
-## Individual differences in the V1-V3 structure-function relationship across subjects are substantial
+### Individual differences in the V1-V3 structure-function relationship across subjects are substantial
 
 The Bayesian model fitting allows us to parcellate two sources of variation between individuals: differences in surface anatomy (sulcal patterns) and differences in structure-to-function mapping, that is how retinotopic features map onto the surface anatomy. These two sources of variation map approximately to the two deformations in our atlas fitting: differences in surface anatomy are reflected in the deformation used for the surface alignment, and differences in structure-to-function mapping are reflected in the deformation for retinotopic alignment (the Bayesian fit). Note that in our implementation, both alignments are achieved by warping the individual subject’s vertices, the former to minimize error in surface curvature, the latter to minimize errors in retinotopic measures. (After the process is complete, the alignments can be reversed, thereby bringing the retinotopic predictions back into the native anatomical space.) Because both the anatomical alignment and retinotopic alignment are computed as changes in the position of surface vertices, it is straightforward to compare the two processes.
 
@@ -72,13 +72,162 @@ To quantify the two types of deformations, we calculated the mean 3 × 3 dista
 
 **Figure 6.:** (A) The mean deformation vectors, used to warp a surface vertex from its Native to its Anatomical (fsaverage-aligned) position and from its Anatomical to its Retinotopic position, are shown relative to each other. The wedges plotted beneath the mean arrows indicate ±1 standard deviation of the angle across subjects while the shaded regions at the end of the wedges indicate ±1 standard deviation of the lengths of the vectors. Note that because registration steps are always performed on a subject's inflated spherical hemispheres, these distances were calculated in terms of degrees of the cortical sphere and are not directly equivalent to mm of cortex. (B) The alignment of the V1-V3 region to the retinotopic prior increases the standard deviation of the surface curvature across subjects, suggesting that retinotopic alignment is not simply an improvement on FreeSurfer’s curvature-based alignment. Histograms show the probability density of the across-subject standard deviation of curvature values for all vertices in the V1-V3 region with a Bayesian-inferred eccentricity between 0 and 12°. (C) Bayesian-inferred iso-eccentricity lines and V1/V2/V3 boundaries plotted for all subjects simultaneously on the fsaverage spherical atlas. Lines are plotted with an opacity of 1/2 to visualize overlap. The left two plots and the right two plots share identical lines but have different colors. Iso-eccentricity lines are colored in magenta (1.5°), yellow (3°), and cyan (6°). Iso-angle lines are plotted in blue (upper vertical meridian), green (horizontal meridian), and red (lower vertical meridian).
 
+**Table 1.**
+ Summary statistics for each subject.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Hemisphere</th>
+      <th>V1 area (mm3)*</th>
+      <th>V1 volume (mm3)*</th>
+      <th>Anatomical RMSD†</th>
+      <th>Retinotopic RMSD†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S1201</td>
+      <td>RH</td>
+      <td>1308</td>
+      <td>3733</td>
+      <td>2.88</td>
+      <td>3.15</td>
+    </tr>
+    <tr>
+      <td>S1201</td>
+      <td>LH</td>
+      <td>1315</td>
+      <td>4133</td>
+      <td>1.82</td>
+      <td>2.47</td>
+    </tr>
+    <tr>
+      <td>S1202</td>
+      <td>RH</td>
+      <td>2024</td>
+      <td>3706</td>
+      <td>1.21</td>
+      <td>2.73</td>
+    </tr>
+    <tr>
+      <td>S1202</td>
+      <td>LH</td>
+      <td>2085</td>
+      <td>4199</td>
+      <td>1.28</td>
+      <td>2.65</td>
+    </tr>
+    <tr>
+      <td>S1203</td>
+      <td>RH</td>
+      <td>1574</td>
+      <td>3152</td>
+      <td>2.13</td>
+      <td>3.27</td>
+    </tr>
+    <tr>
+      <td>S1203</td>
+      <td>LH</td>
+      <td>1489</td>
+      <td>2941</td>
+      <td>2.06</td>
+      <td>3.77</td>
+    </tr>
+    <tr>
+      <td>S1204</td>
+      <td>RH</td>
+      <td>1906</td>
+      <td>3325</td>
+      <td>2.29</td>
+      <td>3.00</td>
+    </tr>
+    <tr>
+      <td>S1204</td>
+      <td>LH</td>
+      <td>1645</td>
+      <td>3015</td>
+      <td>2.18</td>
+      <td>3.10</td>
+    </tr>
+    <tr>
+      <td>S1205</td>
+      <td>RH</td>
+      <td>1995</td>
+      <td>3926</td>
+      <td>1.99</td>
+      <td>2.91</td>
+    </tr>
+    <tr>
+      <td>S1205</td>
+      <td>LH</td>
+      <td>1884</td>
+      <td>3372</td>
+      <td>1.76</td>
+      <td>3.31</td>
+    </tr>
+    <tr>
+      <td>S1206</td>
+      <td>RH</td>
+      <td>1647</td>
+      <td>3116</td>
+      <td>2.12</td>
+      <td>2.73</td>
+    </tr>
+    <tr>
+      <td>S1206</td>
+      <td>LH</td>
+      <td>1632</td>
+      <td>2692</td>
+      <td>1.63</td>
+      <td>3.22</td>
+    </tr>
+    <tr>
+      <td>S1207</td>
+      <td>RH</td>
+      <td>1648</td>
+      <td>3402</td>
+      <td>1.84</td>
+      <td>2.41</td>
+    </tr>
+    <tr>
+      <td>S1207</td>
+      <td>LH</td>
+      <td>1421</td>
+      <td>2764</td>
+      <td>1.74</td>
+      <td>3.15</td>
+    </tr>
+    <tr>
+      <td>S1208</td>
+      <td>RH</td>
+      <td>1712</td>
+      <td>3509</td>
+      <td>1.50</td>
+      <td>2.58</td>
+    </tr>
+    <tr>
+      <td>S1208</td>
+      <td>LH</td>
+      <td>1494</td>
+      <td>3083</td>
+      <td>1.89</td>
+      <td>3.08</td>
+    </tr>
+  </tbody>
+</table>
+
+_* The V1 boundary was determined from the Bayesian-inferred map constructed by combining the retinotopic prior with the full retinotopy dataset.† Units of the RMSD values are degrees of the cortical sphere; these are approximately equivalent to mm, but exact measurements in mm are distorted during inflation of the surface. ‘Anatomical’ RMSD refers to the deviation between the subject’s native anatomical sphere and the fsaverage-aligned sphere while ‘Retinotopic’ RMSD refers to the deviation between the fsaverage-aligned sphere and the retinotopically aligned sphere. The RMSD values were averaged over all vertices within the inner 12° of eccentricity of the V1-V3 region. Use of a larger patch of cortex (e.g., the flattened map projections in Figure 4A) does not qualitatively change the relationship between anatomical and retinotopic RMSD values._
+
 The retinotopic deformation distances were not significantly different than the the anatomical deformation distances, which were still substantial; this is true whether one calculates the mean deformation distance over the entire patch of cortex immediately around the occipital pole (shown in the maps in Figure 3) or over only the vertices that are predicted to be in V1-V3; Figure 6 is calculated over the latter of these two ROIs. Note that if the retinotopic deformation distances had been much larger, the prior anatomical atlases would have been less accurate. Had they been close to 0, then the anatomical atlas alone would have been as accurate as the Bayesian model.
 
 We interpret the warping performed to align retinotopic data to the anatomical prior (the retinotopic alignment) as evidence of individual differences in the way in which retinotopy maps to sulcal topology. An alternate possibility is that the retinotopic alignment corrects for incomplete or incorrect warping performed by FreeSurfer during alignment of each subject’s sulcal topology to that of the fsaverage hemispheres (the anatomical alignment). We have found FreeSurfer to be a well-vetted and reliable tool for functional alignment; however, no anatomical alignment process is optimal, and more improvements to alignment algorithms, such as those being pursued using the HCP database (Glasser et al., 2016), may reduce the length of our retinotopic alignment step. (Note, additionally, that though we use the fsaverage here, our tools are compatible with other possible alignments.) It is thus possible that we have overestimated the amount of functional variance remaining across subjects after anatomical alignment. Two observations suggest that the functional variance due to imperfect anatomical alignment is small, however. First, the angle between the alignments is roughly orthogonal, meaning that there is very little movement along the axis of the first (structural) alignment during the second (retinotopic) alignment. Had the first alignment been in the correct direction but too conservative, then we would have expected the retinotopic alignment to be in the same (or similar) direction, rather than orthogonal. Second, if the retinotopic alignment served to correct an incomplete or incorrect anatomical warping, then anatomical metrics such as curvature would become more uniform across subjects after retinotopic alignment compared to after only anatomical alignment. Figure 6B demonstrates that this explanation is unlikely by showing the distribution across surface vertices of the standard deviation of curvature across subjects. When curvature is compared across subjects without retinotopic or anatomical alignment (‘Native’ alignment in Figure 6B) the standard deviation is quite high. When subjects are compared after anatomical alignment, the standard deviations are much lower. After further alignment to the anatomical prior of retinotopy (Retinotopic alignment), the standard deviation of curvature across subjects is between these two extrema. This suggests that the retinotopic alignment is sacrificing some amount of structural uniformity across subjects in order to accommodate the individual differences in subjects’ structure-to-function mapping, and is consistent with our interpretation that there are substantial individual differences in the mapping between retinotopy and surface topology.
 
 The large individual differences that remain, even after structural co-registration (Figure 6C), point to the importance of using at least some individual subject functional data when inferring the maps, rather than assuming the atlas (prior) is correct. The specific nature of these deformations, and whether, for example, they fall into a few basic patterns, is an important question about the natural variation of individual brains. Our new method, combined with large datasets such as the HCP retinotopy data set (Benson et al., 2018) and new alignment tools such as MSMAll (Robinson et al., 2014), could be used to address this question.
 
-## The inferred maps make highly accurate predictions with very little data
+### The inferred maps make highly accurate predictions with very little data
 
 To quantify the accuracy of our Bayesian-inferred retinotopic maps, and to compare the accuracy against other predictions, we used a cross-validation scheme such that predictions from data alone, the prior alone, or via Bayesian inference were compared against independent validation datasets (Supplementary file 1). The validation datasets were derived from 6 of the 12 scans; the predictions from data alone and from Bayesian inference were derived from training datasets, which were comprised of various combinations of 1–6 independent scans (between 3.2 and 19.2 min of data). The predictions from the prior alone did not use training data.
 
@@ -100,7 +249,7 @@ The fact that the increased prediction accuracy from the Bayesian maps is almost
 
 Another significant advantage of the method is that it eliminates the need for human intervention in the process of delineating retinotopic maps and visual areas. In most studies that require retinotopic mapping data, one or more experimenters hand-label the visual area boundaries. While human raters are better able to understand atypical retinotopic boundaries than our method, they are nonetheless subject to inter-rater disagreement and human error. Furthermore, although expert human raters have a much more nuanced prior about retinotopic map organization than our method, and thus may sometimes draw boundaries better than our method, our method at least makes its prior explicit and quantifiable, and, thus, comparable and replicable across studies.
 
-## What is ground truth?
+### What is ground truth?
 
 The motivation for a Bayesian approach to retinotopic mapping can be found most clearly in the measured retinotopic maps themselves. In all of our measured retinotopic maps, there are numerous systematic imperfections (Figure 8A), and the literature contains many reports of similar errors (Winawer et al., 2010; Press et al., 2001; Gardner, 2010; Boubela et al., 2015). These imperfections can arise from a variety of sources, including partial voluming (Huettel et al., 2014), negative BOLD (Shmuel et al., 2002), and large, draining veins. Imperfections due to blood vessel artifacts can have effects over large distances (Winawer et al., 2010), and most perniciously, they may lead to large and reliable responses that nonetheless differ from the local neuronal activity in the voxel (Boubela et al., 2015). Such artifacts can be difficult to track down and are often not eliminated by typical methods of cleaning up maps such as smoothing, thresholding, or simply collecting larger datasets.
 
@@ -108,7 +257,7 @@ Although with large datasets (>19 min of scan time), the prediction accuracy for
 
 In short, since we do not correct for all of these potential sources of systematic error, we consider our estimates of error from the Bayesian-inferred maps to be conservative, and the estimate from the data-to-data predictions to be liberal.
 
-## The Bayesian model accurately predicts visual field positions not included in the training data
+### The Bayesian model accurately predicts visual field positions not included in the training data
 
 One important advantage of using the method of Bayesian inference outlined in this paper is that it provides predictions beyond the extent of the stimulus aperture in the retinotopy experiment. These peripheral predictions extend to 90° of eccentricity, even though the data used to derive the prior was based on stimuli that only extended to ~8° of eccentricity. Hence, it is important to ask whether the model makes accurate predictions in the periphery. We demonstrate this in two ways. First, when our registration algorithm is run using only a subset of the eccentricity range (e.g., only data within the first 3° or the first 6° of eccentricity), the predicted maps remain accurate to 12° of eccentricity (Figure 9A). Second, we compared wide-field retinotopy data, collected out to 48° of eccentricity from subject S1201 to the Bayesian-inferred map predictions made using our data with a 12°-aperture (Figure 9B). We find that in both cases, our method is highly accurate despite lacking training data for peripheral measurements (though note that in the latter case, the extrapolation was only tested on one subject; in principle, subjects with poorer data quality or unstable fixation could result in less accurate extrapolation). Because the extrapolations to untested eccentricities are generally accurate, we conclude that even if prediction accuracy within the measured regions were similar for the Bayesian model and the data-to-data predictions, the Bayesian model is advantageous because it includes predictions for regions of the visual field beyond training data.
 
@@ -116,7 +265,7 @@ One important advantage of using the method of Bayesian inference outlined in th
 
 **Figure 9.:** (A) In order to examine how accurately the retinotopic maps predicted using Bayesian inference describe the retinotopic arrangement outside of the range of the stimulus used to construct them we constructed maps from all datasets using only the inner 3° or 6° of eccentricity then compared the predictions to the full validation dataset. Eccentricity is well predicted out to 12° regardless of the eccentricity range used to construct the predicted map, indicating that our inferred maps are likely accurate beyond the range of the stimulus. In addition, we compared the wide-field retinotopic mapping data from subject S1201 to the inferred retinotopic maps (B) and the anatomical prior (C) using only the 12° stimulus; the inferred eccentricity is shown in terms of the validation eccentricity. The highest errors appear in the fovea (<3°), while predictions made by the inferred maps are most accurate in the periphery, indicating that eccentricity may be well-predicted far beyond the range of the stimulus (out to 48° of eccentricity in this case). Predictions of peripheral data are slightly less accurate when made by the prior than by the inferred maps, which suggests that the extrapolation is improved by the Bayesian inference.
 
-## The Bayesian inferred maps accurately reproduce systematic properties of the visual field maps
+### The Bayesian inferred maps accurately reproduce systematic properties of the visual field maps
 
 Another aspect in which our work here extends previous methods is the addition of the pRF size to the retinotopic quantities predicted by the model in the inferred maps—previous work predicted only the pRF centers (Benson et al., 2012; Benson et al., 2014). Here, we predict the pRF sizes for the vertices based on the eccentricity inferred from the Bayesian map and the assumed linear relationship between eccentricity and pRF size. The inferred pRF size of a vertex is the best linear fit to the measured pRF size versus the vertex’s inferred eccentricity (Figure 10A). While an approximately linear relationship is reasonable given the literature, the absolute scale is likely dependent on variety of measurement factors such as voxel size, stimulus spatial frequency, and subject fixation (Alvarez et al., 2015). Hence, we do not attempt to infer the slope or intercept based on prior measurements.
 
@@ -126,27 +275,96 @@ Another aspect in which our work here extends previous methods is the addition o
 
 Another metric inversely related to pRF size is the cortical magnification, usually measured in terms of mm2 of cortex representing one degree2 of the visual field. We summarize these measurements in Figure 10B and C. Our measurements of cortical magnification are broadly in agreement with previous work by Horton and Hoyt, 1991, shown by the dotted black line panels B-E of Figure 10. The cortical magnification of the inferred maps is quite similar to that of the observed retinotopic maps. In both cases, V1 has slightly lower cortical magnification than V2 and V3 near the fovea, but higher magnification in the periphery. This difference is slightly exaggerated in the inferred maps relative to the observed maps; although this difference is slight and is in agreement with previous examinations of cortical magnification (Schira et al., 2009); however, note that in our maps, the crossover between V1 cortical magnification and V2/V3 cortical magnification occurs at a higher eccentricity (~3°) than previously reported (~0.7–1°). This is emphasized in Figure 10D and E, which shows the curves from Figure 10C and D in terms of their difference from the prediction of Horton and Hoyt, 1991 (the black dashed line in panels B-E). Note that in the inferred maps, although the cortical magnification in V1 is lower than V2 below 3° of eccentricity, the difference between them is small between 1.5° and 3°.
 
-## The retinotopic prior and Bayesian-inferred maps include 12 visual areas
+### The retinotopic prior and Bayesian-inferred maps include 12 visual areas
 
 Previous research on the retinotopic organization of visual cortex used a model of V1, V2, and V3 retinotopy described by Schira et al. (2010) to produce a template of retinotopy that included only those visual areas. This ‘banded double-sech’ model accurately describes the anisotropic magnification of the visual field on the cortical surface, particularly near the fovea. However, we have observed, particularly in individual data, that retinotopic data from outside the V1-V3 region described by the Schira model has a large impact on the quality of the inferred map. Accordingly, in creating our retinotopic prior, we constructed a new model that includes nine additional visually active regions: hV4, VO1, VO2, V3a, V3b, LO1, LO2, TO1, and TO2. This model employed a new method of constructing 2D models of retinotopy that was specifically designed to accommodate the distortions caused by anatomical alignment, inflation, and flattening of the cortical surface. The new method is much simpler to extend to many more visual field maps, as it does not rely on an analytic description of the flattened (2D) retinotopic maps, which are only available for V1-V3. Rather, it requires as input a cortical map image on which estimates of the visual area boundaries have been drawn manually and labeled as either a foveal boundary, a peripheral boundary, an upper vertical meridian, a lower vertical meridian, or a horizontal meridian. A minimization technique is then used to fill in the retinotopic coordinates between the drawn boundaries (see Models of Retinotopy in Materials and methods). The new retinotopic prior, including all new areas can be seen in Supplementary file 3. Although we consider the addition of 9 retinotopic areas to be an important development, we consider these areas preliminary and do not analyze them in detail here. One reason for this is that the organizations of many of these areas remain under dispute. Additionally, the responses to our stimuli in these areas is of a considerably lower quality than in V1-V3; thus even were we to analyze the accuracy of the predictions in these ares, our validation dataset would be a particularly poor standard. We do, however, include these areas in the predictions made by the Bayesian inference method so that interested researchers may analyze or use them. These areas are included in the data provided with this paper, and predictions of these areas are included when using the tools provided in the Data Availability Statement.
 
-## Making the Bayesian inference explicit
+### Making the Bayesian inference explicit
 
-Our method has the advantage of allowing the retinotopic atlas to act as a prior constraint on new observed data. This is a Bayesian model in the general sense of combining a prior belief with a measurement in order to make an inference. The computation can be formulated in an explicit Bayesian framework. We define a hypothesis H to be a particular warping of the cortical surface, and we define the evidence E to be a particular set of retinotopic measurements. We then convert the cost functions from Table 2 into probabilities by assuming an exponential relationship. Hence, the prior probability of H is defined in terms of the deviation from the retinotopic prior: P(H)=exp(−(Fe(x)+Fθ(x)+Fp(x))), and the likelihood of the evidence under a given hypothesis, P(E|H), is defined in terms of the fit between the retinotopic model and the retinotopic measurements: P(E|H)=exp(−(Ee(x)+Fθ(x)+Fp(x))). During registration, we seek the hypothesis H that maximizes the posterior probability P(H|E)=P(E|H)P(H)/P(E). Because P(E) is a constant, we can ignore it and instead maximize the function given in Equation 1, which is equivalent to minimizing F(x). This operation is performed during registration. Thus, to derive our cost function from Bayes’ rule, we write:(1)P(H|E)=P(E|H)P(H)/P(E)P(H|E)∝P(E|H)P(H)P(H|E)∝exp(−Fφ(x))exp(−(Fe(x)+Fφ(x)+Fp(x)))P(H|E)∝exp(−(Fφ(x)+Fe(x)+Fφ(x)+Fp(x)))P(H|E)∝exp(−F(x))
+Our method has the advantage of allowing the retinotopic atlas to act as a prior constraint on new observed data. This is a Bayesian model in the general sense of combining a prior belief with a measurement in order to make an inference. The computation can be formulated in an explicit Bayesian framework. We define a hypothesis H to be a particular warping of the cortical surface, and we define the evidence E to be a particular set of retinotopic measurements. We then convert the cost functions from Table 2 into probabilities by assuming an exponential relationship. Hence, the prior probability of H is defined in terms of the deviation from the retinotopic prior: $P(H)=exp(−(F_{e}(x)+F_{\theta}(x)+F_{p}(x)))$, and the likelihood of the evidence under a given hypothesis, $P(E|H)$, is defined in terms of the fit between the retinotopic model and the retinotopic measurements: $P(E|H)=exp(−(E_{e}(x)+F_{\theta}(x)+F_{p}(x)))$. During registration, we seek the hypothesis $H$ that maximizes the posterior probability $P(H|E)=P(E|H)P(H)/P(E)$. Because $P(E)$ is a constant, we can ignore it and instead maximize the function given in Equation 1, which is equivalent to minimizing $F(x)$. This operation is performed during registration. Thus, to derive our cost function from Bayes’ rule, we write:
+
+$$
+P(H|E)=P(E|H)P(H)/P(E)P(H|E)∝P(E|H)P(H)P(H|E)∝exp(−F_{\phi}(x))exp(−(F_{e}(x)+F_{\phi}(x)+F_{p}(x)))P(H|E)∝exp(−(F_{\phi}(x)+F_{e}(x)+F_{\phi}(x)+F_{p}(x)))P(H|E)∝exp(−F(x))
+$$
 
 The explicit Bayesian formulation above clarifies several features of our model. First, the prior probability distributions assumed for vertex lengths are the same for all vertices (rows 1, 5, and six in Table 2; P(H) in Equation 1). If we had ground truth maps for a large population, we could, in principle, derive edge-specific probability distributions for Equation 1, and convert these to edge-edge-specific cost functions (Table 1) for the minimization process. We can get a sense of how these distributions might differ across occipital cortex by visualizing the warp fields from our data set (Supplementary file 1). These fields show that our registration process causes some vertices to move much more than others, at least in our small subject pool (n = 8). These warp fields are not sufficient to derive edge-specific priors because the number of subjects is small, and because we do not know the end-points of the registration reflect the ground truth maps. The use of a large dataset, such as the 181 HCP subjects (Benson et al., 2018) might be helpful in future work to derive edge-specific priors. A further challenge to incorporating realistic priors would be to capture the dependencies across edges in the prior distribution (the joint probability distribution, which would be a function of thousands of variables, one per edge, imposing an enormous computational burden).
+
+**Table 2.**
+ Components of the registration potential function
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Term</th>
+      <th>Description</th>
+      <th>Form</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Fe(x;x0,E)</td>
+      <td>Penalizes changes in the distances between neighboring vertices in the mesh.</td>
+      <td>He(x;x0,E)+Ge(x;x0,E)|E|</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Fϑ(x;x0,Θ)</td>
+      <td>Penalizes the changes in t he angles of the triangles in the mesh.</td>
+      <td>Hϑ(x;x0,Θ)+Gϑ(x;x0,Θ)|Θ|</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Fp(x;x0,P)</td>
+      <td>Penalizes any change in the positions of the vertices on the perimeter of the map.</td>
+      <td>12∑u∈P(x)u−(x0)u2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Fφ(x;Φ)</td>
+      <td>Decreases as a retinotopic vertex u approaches its anchor-point y in the retinotopy model.</td>
+      <td>∑(u,y,σ,w)∈Φw exp⁡(−(x)u−y2σ2)|Φ|</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>He(x;x0,E)</td>
+      <td>Harmonic component of the edge-length deviation penalty Fe(x;x0,E).</td>
+      <td>12∑(u,v)∈E(rx(u,v)−rx0(u,v))2</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Ge(x;x0,E)</td>
+      <td>Infinite-well component of the edge-length deviation penalty Fe(x;x0,E).</td>
+      <td>12∑(u,v)∈E((rx0(u,v)−q0rx(u,v)−q0−1)2+(q1−rx0(u,v)q1−rx(u,v)−1)2)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Hϑ(x;x0,Θ)</td>
+      <td>Harmonic component of the angle deviation penalty Fϑ(x;x0,Θ).Fp(x;x0,P)</td>
+      <td>12∑(a,b,c)∈Θ(αx(a,b,c)−αx0(a,b,c))2</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Gϑ(x;x0,Θ)</td>
+      <td>Infinite-well component of the angle deviation penalty Fϑ(x;x0,Θ).</td>
+      <td>12∑(a,b,c)∈Θ((αx0(a,b,c)αx(a,b,c)−1)2+(π−αx0(a,b,c)π−αx(a,b,c)−1)2)</td>
+    </tr>
+  </tbody>
+</table>
 
 A second feature of our method made explicit by the Bayesian formulation is that the prior probability distributions are 0 for solutions that violate the atlas topology. This assumption is implemented implicitly in the cost function, which rises to infinity as the length of an edge approaches 0 or the angle between edges approaches 0. This aspect of the cost function prevents vertices or edges from crossing, thus preserving topology. Because we assume that the cost function is the negative logarithm of the prior probability distribution, the infinite cost indicates an assumed probability of 0. If ground truth data contradicted this assumption (that is, if there were ground truth maps which violated the topology of the model), the prior probability distributions and corresponding cost functions could be changed accordingly.
 
 A third feature of the method is that the likelihood functions depend on the data quality. In Table 1, line 4, the weighting of each vertex (w) is proportional to the variance explained by the pRF model. PRF solutions with high variance explained lead to a higher cost when the atlas vertex is far from the corresponding data point. This part of the cost function shows up in the likelihood, Fφ(x), in the Bayesian formulation (Equation 1). The interpretation is that there is a low likelihood of observing a high-variance-explained pRF solution in a location far from the template solution. A more realistic likelihood calculation (but one that is beyond the scope of our current knowledge and computational resources) would require a noise model that allowed one to compute how likely a pattern of pRF solutions was given a hypothesized map.
 
-## Individual differences in structure-function relationship
+### Individual differences in structure-function relationship
 
 An important question in human neuroscience is the degree to which different brains, when brought into anatomical registration, share the same functional mapping. There is no single, agreed-upon method to register the brains of different individuals, but a general finding is that cortical function shows better inter-observer agreement when the brains are aligned based on sulcal topology (surface registration) rather than volume registration (Wang et al., 2015; Van Essen et al., 1998). Here, using surface registration, we find that substantial individual differences in functional mapping remains, for example as evidenced by the amount of additional warping needed to align individual brains to retinotopic measurements (Figure 6). These results are consistent with studies showing differences in structural and functional alignment of primate and human area MT (Large et al., 2016). They are also consistent with studies combining structural and functional alignment in the absence of a model or template of the underlying function (Frost and Goebel, 2013; Haxby et al., 2011). Such studies show that the extra warping driven by functional alignment leads to better predictions of functional responses in cross-validated data.
 
 The anatomical atlas, described previously (Benson et al., 2014), was adapted into the first step of our method (Figure 4C) and is equivalent to the prediction using the retinotopic prior alone that we present here (Supplementary file 2B). Consistent with previous results, we find that the prior alone produces reasonably good predictions for the retinotopic maps of most subjects (Figure 7). Additionally, maps predicted using the prior alone contain many of the advantages described here such as topological smoothness, complete coverage of the visual field, and prediction of peripheral retinotopy. However, the idiosyncrasies of individual subjects’ retinotopic maps are often not well predicted by the retinotopic prior alone (Figures 3, 5A and B). By combining both the retinotopic prior and a small amount of measured data, we are able to produce higher-quality predictions that not only share these advantages but also improve the prediction accuracy of the maps beyond that of the measurement error (Figure 7).
 
-## Limitations and biases of the inferred maps
+### Limitations and biases of the inferred maps
 
 We have shown in this paper that the application of Bayesian inference to retinotopic mapping data can yield substantial rewards for basic researchers interested in quantitative retinotopic analysis. However, a number of questions about the scope and limitations of the method remain. For one, it is unclear how our method, developed using data from a small subset of the population (eight subjects), would cope with subjects whose retinotopic organizations are much different than those that are typically assumed in vision science. Such edge-case subjects could include members of clinical populations, such as individuals lacking an optic chiasm (Hoffmann et al., 2012; Bao et al., 2015; Olman et al., 2018), or healthy individuals whose retinotopic boundaries are merely unusual (Van Essen and Glasser, 2018). We consider how our Bayesian models perform for edge-cases by fitting the models to two subjects from the Human Connectome Project whose retinotopic maps were recently noted for their peculiarity by Van Essen and Glasser (2018). The retinotopic maps for these subjects as well as the inferred iso-angular and iso-eccentricity lines in V1-V3 are shown in Supplementary file 5. Both of these subjects have atypical polar angle organization in their left hemisphere dorsal V2 and V3 maps. Regarding the limitations of the method as applied to subjects such as these, two things are clear: first, the method is unable to reproduce the precise topology of the subjects’ unusual dorsal maps, and, second, it is nonetheless capturing most of the maps accurately. In particular, the inferred eccentricity maps are highly accurate despite the mismatched polar angle maps. The polar angle maps cannot be accurately captured by the Bayesian model, because the Bayesian model assumes a prior probability of zero to any solutions that differ topologically from the template, such as these.
 
@@ -154,27 +372,27 @@ In the case of more extreme departures from typical retinotopic organization, su
 
 A separate but equally critical question about the method we present is whether it encapsulates any systematic biases about retinotopic organization. Given the field’s imperfect knowledge about precise retinotopic organization across individuals, this can be a difficult question to answer; however we note a number of features and assumptions along these lines. With respect to the retinotopic prior, one critical assumptions that was employed during its creation involves the structure of the polar angle reversals at map boundaries (e.g. the V1/V2 boundary or the V3/hV4 boundary). Our prior assumes that the polar angle at these boundaries lies on the vertical meridians (or horizontal meridians in the case of the V2/V3 boundaries). In the group-average retinotopic maps from the 181 HCP subjects (Supplementary file 3), however, it is clear that many polar angle reversals occur several degrees away from the vertical (or horizontal) meridian, differing from the prior. In these cases, our Bayesian maps differ systematically from the data. Because the Bayesian computation allows the vertex positions to change but does not allow the retinotopic quantities to change, all retinotopic locations contained in the prior are assigned to some cortical location in the Bayesian map, differing from the observed validation data, which is often missing representations of the vertical meridians. In addition, ‘notches’ of missing representation of the lower vertical meridian can be seen in several polar angle maps (for example, inSupplementary file 3A, black arrows). In both cases—maps that do not quite reach the vertical meridian and maps that have large notches along the boundaries—it is not yet known whether these properties reflect unusual features of the underlying neuronal maps or limits of the fMRI acquisition or analysis.
 
-## Method availability and usage
+### Method availability and usage
 
 The method described in this paper has been made publicly available in a number of ways in order to enable easy use by other researchers. The Bayesian inference method itself is implemented as part of a free software library called Neuropythy; we have publicly archived the version of this library used in the preparation of this manuscript at DOI:10.5281/zenodo.1312983. Additionally, we have created a universally executable Docker image and have publicly archived it at DOI:10.5281/zenodo.1313859. Detailed instructions for the use of both the library and the universally executable Docker image are available at the Open Science Foundation repository associated with this paper (https://osf.io/knb5g/). In brief, the method may be run with only a few inputs: a FreeSurfer directory for the subject (which can be generated from an anatomical image), and a set of files containing the measured retinotopic parameters for the subject’s cortical surface. The outputs produced are a similar set of files describing the inferred retinotopic parameters of the subject’s cortical surface. Runtime on a contemporary desktop computer is less than an hour per subject. Detailed instructions on how to use the tools documented in this paper are included in the Open Science Foundation website mentioned above.
 
 ## Materials and methods
 
-## Scientific transparency
+### Scientific transparency
 
 All source code and notebooks as well as all anonymized data employed in this Methods section and the preparation of this manuscript have been made publicly available at the Open Science Foundation: https://osf.io/knb5g/. Version 0.6.0 and later of the Neuropythy library can automatic download these data and interpret them into Python data structures.
 
-## Subjects
+### Subjects
 
 This study was approved by the New York University Institutional Review Board, and all subjects provided written consent. A total of eight subjects (4 female, mean age 31, range 26–46) participated in the experiment. All scan protocols are described below.
 
-## Magnetic resonance imaging
+### Magnetic resonance imaging
 
 All MRI data were collected at the New York University Center for Brain Imaging using a 3T Siemens Prisma scanner. Data were acquired with a 64-channel phased array receive coil. High resolution whole-brain anatomical T1-weighted images (1 mm3 isotropic voxels) were acquired from each subject for registration and segmentation using a 3D rapid gradient echo sequence (MPRAGE). BOLD fMRI data were collected using a T2*-sensitive echo planar imaging pulse sequence (1 s TR; 30 ms echo time; 75° flip angle; 2.0 × 2.0 × 2.0 mm3 isotropic voxels, multiband acceleration 6). Two additional scans were collected with reversed phase-encoded blips, resulting in spatial distortions in opposite directions. These scans were used to estimate and correct for spatial distortions in the EPI runs using a method similar to (Andersson et al., 2003) as implemented in FSL (Smith et al., 2004).
 
 Anatomical images were processed using the FreeSurfer image analysis suite, which is freely available online (http://surfer.nmr.mgh.harvard.edu/) (Dale et al., 1999; Fischl et al., 1999a; Fischl et al., 1999b; Fischl and Dale, 2000). Subject brains were inflated and aligned to FreeSurfer’s anatomical fsaverage atlas.
 
-## Stimulus protocols
+### Stimulus protocols
 
 Each subject participated in 12 retinotopic mapping scans using the same stimulus employed in the Human Connectome Project (Benson et al., 2018). Briefly, bar apertures on a uniform gray background swept gradually across the visual field at four evenly-spaced orientations while the subject maintained fixation. Bar apertures contained a grayscale pink noise background with randomly placed objects, faces, words, and scenes. All stimuli were presented within a circular aperture extending to 12.4° of eccentricity. The bars were a constant width (1.5°) at all eccentricities. Subjects performed a task in which they were required to attend to the fixation dot and indicate when its color changed.
 
@@ -182,21 +400,25 @@ The 12 scans were split into several subsets and analyzed as independent dataset
 
 Additionally, one previously published retinotopy dataset for with a wide field of view (48° of eccentricity) was re-analyzed (Wandell and Winawer, 2011) (their Figure 3). The subject for this dataset was also included in the newly acquired data, S1201. The wide-field-of-view dataset was used as a further validation set for models derived from the newly acquired data for S1201, as it enabled us to test the accuracy of model predictions in the far periphery from models derived from data with limited eccentricity.
 
-## FMRI processing
+### FMRI processing
 
 Spatial distortions due to inhomogeneities in the magnetic field were corrected using in-house software from NYU’s Center for Brain Imaging (http://cbi.nyu.edu/software). The data were then motion-corrected by co-registering all volumes of all scans to the first volume of the first scan in the session. The fMRI slices were co-registered to the whole brain T1-weighted anatomy, and the time series resampled via trilinear interpolation to the 1 mm3 voxels within the cortical ribbon (gray matter). Finally, the time series were averaged for each voxel across all scans with the same stimulus within a given dataset.
 
-## PRF solutions
+### PRF solutions
 
 Retinotopic maps were produced by solving linear, circularly symmetric population receptive field (pRF) models for each voxel using Vistasoft, as described previously (Dumoulin and Wandell, 2008). pRF models were solved using a two-stage coarse-to-fine approach on the time series in the 1 mm3 gray matter voxels. The first stage of the model fit was a grid fit, solved on time series that were temporally decimated (2×), spatially blurred on the cortical surface using a discrete heat kernel (approximately equal to a Gaussian kernel of 5 mm width at half height), and subsampled by a factor of 2. The decimation and blurring helps to find an approximate solution that is robust to local minima. The parameters obtained from the grid fit were interpolated to all gray matter voxels and used as seeds for the subsequent nonlinear optimization. Finally, the pRF parameters were projected from the volume to the cortical surface vertices for white, mid-gray, and pial surfaces using nearest-neighbor interpolation; values were then averaged across the three layers using a weighted-mean in which the fraction of BOLD signal variance explained by the pRF model was used as a weight. All vertices with a pRF variance explained fraction less than 0.1 were ignored.
 
-## Models of retinotopy
+### Models of retinotopy
 
-To generate our initial models of the retinotopic maps, we begin by hand-drawing boundaries for 12 retinotopic maps. These boundaries need only be drawn once for a single group-average retinotopic map. The boundaries are projected onto the cortical surface, and the retinotopic coordinates for each vertex on the surface are deduced via a minimization procedure. This minimization is motivated by two principles: (1) the retinotopic fields (polar angle and eccentricity) should be as orthogonal to each other as possible and (2) the retinotopic fields should be as smooth as possible. To this end, the minimization routine simultaneously maximizes both the smoothness of the retinotopic fields between vertices connected by edges in the mesh as well as the overall orthogonality between the polar angle field and the eccentricity field. The hand-drawn boundary values are held constant during the minimization. Equation 2 gives the function f that is minimized, where θ and ϱ represent vectors of the polar angle and eccentricity values, respectively; E represents the set of edges between vertices in the mesh; and x represents the matrix of vertex coordinates (i.e., xu represents the coordinate vector of the vertex u). During minimization the values of the polar angle and eccentricity vectors are scaled such that both fields ranged from −1 to 1 (e.g., polar angle boundary values of 0° and 180° were assigned values of −1 and 1, respectively) so that the fields could be evaluated easily for orthogonality; after the minimization, the polar angle was linearly rescaled back to the range 0°−180° while eccentricity was rescaled so as to have an exponential distribution that best fit the group-average. We employed this model generation routine using boundaries drawn over the group-average data (see Anatomically-defined Atlas of Retinotopy: Group Average, below) as well as the Wang et al. (2015) atlas and the Hinds et al. (2008) V1 boundary as rough guidelines.(2)f(θ,ρ)=(θ⋅ρ)2+∑(u,v)∈E(θu−θv)2+(ρu−ρv)22||(x)u−(x)v||
+To generate our initial models of the retinotopic maps, we begin by hand-drawing boundaries for 12 retinotopic maps. These boundaries need only be drawn once for a single group-average retinotopic map. The boundaries are projected onto the cortical surface, and the retinotopic coordinates for each vertex on the surface are deduced via a minimization procedure. This minimization is motivated by two principles: (1) the retinotopic fields (polar angle and eccentricity) should be as orthogonal to each other as possible and (2) the retinotopic fields should be as smooth as possible. To this end, the minimization routine simultaneously maximizes both the smoothness of the retinotopic fields between vertices connected by edges in the mesh as well as the overall orthogonality between the polar angle field and the eccentricity field. The hand-drawn boundary values are held constant during the minimization. Equation 2 gives the function $f$ that is minimized, where $\theta$ and $ϱ$ represent vectors of the polar angle and eccentricity values, respectively; $E$ represents the set of edges between vertices in the mesh; and $x$ represents the matrix of vertex coordinates (i.e., $x_{u}$ represents the coordinate vector of the vertex u). During minimization the values of the polar angle and eccentricity vectors are scaled such that both fields ranged from −1 to 1 (e.g., polar angle boundary values of 0° and 180° were assigned values of −1 and 1, respectively) so that the fields could be evaluated easily for orthogonality; after the minimization, the polar angle was linearly rescaled back to the range 0°−180° while eccentricity was rescaled so as to have an exponential distribution that best fit the group-average. We employed this model generation routine using boundaries drawn over the group-average data (see Anatomically-defined Atlas of Retinotopy: Group Average, below) as well as the Wang et al. (2015) atlas and the Hinds et al. (2008) V1 boundary as rough guidelines.
+
+$$
+f(\theta,ρ)=(\theta⋅ρ)^{2}+\sum(u,v)\inE\frac{(\theta_{u}−\theta_{v})^{2}+(ρ_{u}−ρ_{v})^{2}}{2||(x)_{u}−(x)_{v}||}
+$$
 
 A full description of the model, including how it can be projected onto an fsaverage spherical surface or an individual subject’s fsaverage-aligned spherical surface, is provided in the open source Neuropythy library (https://github.com/noahbenson/neuropythy).
 
-## Anatomically-defined atlas of retinotopy
+### Anatomically-defined atlas of retinotopy
 
 Construction of the anatomically-defined atlas of retinotopy is summarized in Supplementary file 2. Previous work employed a mass-spring-damper system combined with a nonlinear gradient-descent minimization in order to register group-average retinotopic data, averaged on FreeSurfer’s fsaverage_sym hemisphere (Greve et al., 2013), with a model of V1, V2, and V3 retinotopy (Schira et al., 2010). In this paper, we modify this technique slightly to bring it more in line with previous established methods such as those used by FreeSurfer for surface-based anatomical registration (Dale et al., 1999; Fischl et al., 1999a). In brief, retinotopy is measured in a group of subjects via fMRI; the subjects’ cortical meshes are aligned to the fsaverage surface via FreeSurfer’s surface registration; the retinotopic coordinates are then averaged across subjects at each vertex on a single atlas of the cortical surface; a 2D atlas of retinotopy is then placed on this cortical surface; and finally, the cortical surface is warped to match the retinotopic atlas as best as possible given constraints on the warping. Each of these steps is described in more detail below.
 
@@ -204,9 +426,13 @@ Group-average Data. Group-average retinotopic maps (Supplementary file 2B) were 
 
 Cortical Map Projection. The cortical surfaces of the fsaverage left and right hemispheres, on which the group-average data were constructed, were inflated both to a smooth hemisphere (FreeSurfer’s ‘inflated’ surface) as well as to a sphere (FreeSurfer’s ‘sphere’ surface); the vertices on the spherical surfaces were then flattened to 2D maps using an orthographic map projection. Precise parameters of this projection and the source code used to generate it are included in the Data Availability Statement. We refer to the 2D vertex coordinates in this resulting map as the ‘initial vertex coordinates’ because they precede the warping of the vertex coordinates that occurs during registration.
 
-Registration. The initial vertex coordinates of the map projections described above were warped in order to bring the polar angle and eccentricity measurements of the vertices into alignment with the 2D model’s predictions of retinotopy while maintaining topological constraints: that is preventing triangles in the triangle mesh representing the 2D cortical map from inverting and penalizing excessive stretching or compression of the map. This process was achieved by minimizing a potential function defined in terms of the edges of the triangle mesh, the angles of the triangle mesh, and the positions of the vertices with polar angle and eccentricity measurements above the weight threshold (see Group-Average Data, above). Equation 3 gives this potential function, F(x), which is further broken down into four components detailed in Table 2. Fundamentally, the potential function F is a sum of two kinds of penalties: penalties for deviations from the reference mesh and penalties for mismatches between the vertices with retinotopic coordinates and their positions in the retinotopic model. In the case of the former, the reference mesh is gi x0,E,Θ,P,andΦ and the potential of the deviations are defined by fe, fθ, and fp. The latter is described by fφ. In these functions, x represents the n × 2 matrix of the 2D-coordinates of each vertex while ×0 represents the same coordinates in the reference mesh; E represents the set of undirected edges (represented as (u,v) pairs such that (u,v) and (v,u) are not both in E) in the reference mesh; Θ represents the set of angle triples (a, b, c) such that the angle is between edge (a,b) and edge (a,c); P is the set of vertices that lie on the perimeter of the 2D map projection; rx(u,v) is the Euclidean distance between vectors (x)uand(x)v; and αx(a,b,c) is the counter-clockwise angle between vectors ((x)b−(x)a)and((x)c−(x)a);Φ represents the set of anchors defined by the retinotopic model in which each anchor is represented by a tuple (u,y,σ,w) where w is the weight of the anchor, u is the vertex drawn to the anchor, σ is the standard deviation of the anchor’s Gaussian potential well, and yy is the 2D point to which the anchor is attached; the constants q0andq1 are the minimum and maximum allowable edge lengths, respectively.(3)F(x;x0,E,Θ,Φ,P)=Fe(x;x0,E)+Fϑ(x;x0,Θ)+Fp(x;x0,P)+Fφ(x;x0,Φ)
+Registration. The initial vertex coordinates of the map projections described above were warped in order to bring the polar angle and eccentricity measurements of the vertices into alignment with the 2D model’s predictions of retinotopy while maintaining topological constraints: that is preventing triangles in the triangle mesh representing the 2D cortical map from inverting and penalizing excessive stretching or compression of the map. This process was achieved by minimizing a potential function defined in terms of the edges of the triangle mesh, the angles of the triangle mesh, and the positions of the vertices with polar angle and eccentricity measurements above the weight threshold (see Group-Average Data, above). Equation 3 gives this potential function, $F(x)$, which is further broken down into four components detailed in Table 2. Fundamentally, the potential function F is a sum of two kinds of penalties: penalties for deviations from the reference mesh and penalties for mismatches between the vertices with retinotopic coordinates and their positions in the retinotopic model. In the case of the former, the reference mesh is gi $x_{0},E,Θ,P,andΦ$ and the potential of the deviations are defined by $f_{e}$, $f_{\theta}$, and $f_{p}$. The latter is described by $f_{\phi}$. In these functions, $x$ represents the n × 2 matrix of the 2D-coordinates of each vertex while $\times_{0}$ represents the same coordinates in the reference mesh; E represents the set of undirected edges (represented as $(u,v)$ pairs such that $(u,v)$ and $(v,u)$ are not both in E) in the reference mesh; $Θ$ represents the set of angle triples (a, b, c) such that the angle is between edge $(a,b)$ and edge $(a,c)$; P is the set of vertices that lie on the perimeter of the 2D map projection; rx(u,v) is the Euclidean distance between vectors $(x)_{u}and(x)_{v}$; and $\alpha_{x}(a,b,c)$ is the counter-clockwise angle between vectors $((x)b−(x)a)and((x)c−(x)a);Φ$ represents the set of anchors defined by the retinotopic model in which each anchor is represented by a tuple $(u,y,\sigma,w)$ where w is the weight of the anchor, $u$ is the vertex drawn to the anchor, $\sigma$ is the standard deviation of the anchor’s Gaussian potential well, and $y$y is the 2D point to which the anchor is attached; the constants $q_{0}andq1$ are the minimum and maximum allowable edge lengths, respectively.
 
-The term of the potential function devoted to the retinotopic model is given in Fφ (Equation 3; Table 2). This potential term is a set of inverted-Gaussian potential wells called anchors. Each anchor represents the attraction of a single vertex u, with measured polar angle θ, eccentricity ϱ, and weight w, to a 2D point y, at which the retinotopic model predicts a polar angle value of θ and an eccentricity value of ϱ. Note that each visual area represents every point (θ,ϱ) in the visual field, there are multiple anchors per vertex with retinotopic data. In fact, the retinotopic model used in this paper defines nine maps in addition to the V1-V3 maps (see Model of Retinotopy, above), bringing the total number of anchors per retinotopic vertex to 12. The additional areas are intended partly to prevent vertices immediately outside of V1-V3 from being drawn incorrectly into the V1-V3 section of the model and are not analyzed in detail in this paper. Each anchor additionally defines a parameter σ; this value is the width (standard deviation) of the anchor’s Gaussian potential well; σ is defined as the minimum distance from the given anchor to any other anchor to which u is also attracted; this value was given a maximum value of 20ε where ε is the mean edge-length in the projected map.
+$$
+F(x;x_{0},E,Θ,Φ,P)=F_{e}(x;x_{0},E)+F_{ϑ}(x;x_{0},Θ)+F_{p}(x;x_{0},P)+F_{\phi}(x;x_{0},Φ)
+$$
+
+The term of the potential function devoted to the retinotopic model is given in Fφ (Equation 3; Table 2). This potential term is a set of inverted-Gaussian potential wells called anchors. Each anchor represents the attraction of a single vertex u, with measured polar angle $\theta$, eccentricity $ϱ$, and weight w, to a 2D point y, at which the retinotopic model predicts a polar angle value of $\theta$ and an eccentricity value of $ϱ$. Note that each visual area represents every point $(\theta,ϱ)$ in the visual field, there are multiple anchors per vertex with retinotopic data. In fact, the retinotopic model used in this paper defines nine maps in addition to the V1-V3 maps (see Model of Retinotopy, above), bringing the total number of anchors per retinotopic vertex to 12. The additional areas are intended partly to prevent vertices immediately outside of V1-V3 from being drawn incorrectly into the V1-V3 section of the model and are not analyzed in detail in this paper. Each anchor additionally defines a parameter σ; this value is the width (standard deviation) of the anchor’s Gaussian potential well; σ is defined as the minimum distance from the given anchor to any other anchor to which u is also attracted; this value was given a maximum value of 20ε where ε is the mean edge-length in the projected map.
 
 The potential function was minimized using a gradient descent algorithm sensitive to the singularities in the terms Ge, and Gθ (Table 2); whenever the singularity is accidentally crossed, the minimizer backtracks and chooses a smaller step-size. This approach prevents the inversion (from counter-clockwise ordering to clockwise ordering) of any triangle in the mesh, as such an inversion would require the minimization trajectory to pass through a singularity at the point where α = 0 or α = π. The source code used to minimize the potential function as well as specifications of the gradients of each term is provided in the open-source library included with the Neuropythy and Neurotica libraries (https://github.com/noahbenson/nben).
 
@@ -216,16 +442,16 @@ Prediction. The registered vertex coordinates, once obtained, give the alignment
 
 Because the group-average retinotopic data were used in the registration, the predicted map that results provides a reasonable estimate of any subject’s expected retinotopic map, as shown previously (Benson et al., 2012; Benson et al., 2014); although the predicted map does not account for further individual differences in the structure to function relationship, as we show in this paper. Additionally, because the predicted map from the group-averaged data is defined on the fsaverage subject’s cortical surfaces, a retinotopic map prediction for any new subject, for whom retinotopic mapping measurements may not be available, can be easily obtained: one can use FreeSurfer to align the new subject’s cortical surface with the fsaverage subject’s surface (anatomical structure alignment) then to project the retinotopic maps from the fsaverage subject to the new subject based on the anatomical similarity between them. Because of this, we refer to this group-average retinotopic prediction as the anatomically-defined atlas of retinotopy. This atlas is used as the prior for the Bayesian model fit, described below. The atlas is similar but not identical to one presented previously (Benson et al., 2014).
 
-## Bayesian retinotopic maps
+### Bayesian retinotopic maps
 
 The anatomically-defined atlas of retinotopy, while providing a good prediction for most subjects’ individual retinotopic maps, nonetheless does not account for individual differences in the mapping between anatomical location and retinotopic coordinates. Accordingly, predicted retinotopic maps for individual subjects were refined starting from the anatomically-defined atlas of retinotopy using a similar method as was used to generate the atlas originally; this process is detailed in Figure 4C. For each subject, their cortical surface was aligned based on anatomical structure to the fsaverage subject’s cortical surface using FreeSurfer, then their retinotopic data were projected to a map using the identical map projection described above in the section on the anatomically-defined atlas of retinotopy. Note that, in this case, the anatomical alignment to the fsaverage subject serves to make the map projections as similar as possible between individual subjects and the anatomically-defined atlas of retinotopy. If we were not interested in incorporating information obtained from the anatomically-defined atlas of retinotopy (which represents a prior belief of retinotopic organization based on group-average data), this step would not be necessary.
 
 The individual subject’s projected map is then arranged according to the registered vertex coordinates from the anatomically-defined atlas of retinotopy; this step reflects the prior belief that the group-average registration to the retinotopy model is generally accurate for an individual subject when that subject’s anatomical structure has been aligned to the fsaverage subject’s. Critically, none of the steps taken so far in processing the individual subject’s data relies on any measurements of retinotopy that might be associated with that subject. Rather, these steps have relied only on anatomical structure. If, for a subject, no retinotopic measurements are made, then there is no data with which to modify this prior belief; accordingly, the prediction of retinotopy for that subject would be identical to the prediction of retinotopy contained in the anatomically-defined atlas. In other words, without observation, the prior remains the prediction.
 
-The next step registers the individually measured retinotopy data to the anatomically-defined atlas. Before registration, the individual subject’s data is resampled onto a uniform triangular mesh, and each vertex whose retinotopic measurements are above threshold are given a weight, w, based on the variance explained, ω, of its pRF model solution. The mesh is resampled to the same uniform triangle mesh used as the initial vertex coordinates in the registration of the anatomically-defined atlas of retinotopy in order to speedup registration. Triangles that are tightly pinched (i.e., triangles with internal angles near 0 or π) can drastically slow the registration progress by forcing the minimizer to frequently backtrack steps; resampling makes such behavior much less likely during the initial minimization. Aside from the weight, other parameters tracked by the potential field, including anchors parameters used by the function Fφ(x), are obtained identically as with the anatomically-defined atlas of retinotopy. These anchors inherit the weight of the vertex to which they apply, but are reduced when the field sign of the triangles adjacent to the vertex does not match the field sign of the visual area to which it is tied by the anchor or when the pRF size predicted by the model does not match that of the vertex’s measured pRF. Details regarding the weights on anchors are provided in the neuropythy library.
+The next step registers the individually measured retinotopy data to the anatomically-defined atlas. Before registration, the individual subject’s data is resampled onto a uniform triangular mesh, and each vertex whose retinotopic measurements are above threshold are given a weight, w, based on the variance explained, $\omega$, of its pRF model solution. The mesh is resampled to the same uniform triangle mesh used as the initial vertex coordinates in the registration of the anatomically-defined atlas of retinotopy in order to speedup registration. Triangles that are tightly pinched (i.e., triangles with internal angles near 0 or π) can drastically slow the registration progress by forcing the minimizer to frequently backtrack steps; resampling makes such behavior much less likely during the initial minimization. Aside from the weight, other parameters tracked by the potential field, including anchors parameters used by the function Fφ(x), are obtained identically as with the anatomically-defined atlas of retinotopy. These anchors inherit the weight of the vertex to which they apply, but are reduced when the field sign of the triangles adjacent to the vertex does not match the field sign of the visual area to which it is tied by the anchor or when the pRF size predicted by the model does not match that of the vertex’s measured pRF. Details regarding the weights on anchors are provided in the neuropythy library.
 
 For each training dataset of each subject, minimization was run for 2500 steps using the same protocol that was used with the anatomically-defined atlas of retinotopy. Retinotopic map prediction, based on the positions of the registered vertex coordinates in the retinotopy model, were also computed identically to those in the anatomically-defined atlas. Identical minimization and prediction methods were run for each test dataset as well, but these results were not used to measure the accuracy or effectiveness of the prediction methods.
 
-## Cortical magnification
+### Cortical magnification
 
 Cortical magnification was calculated using both the observed retinotopic maps and the inferred maps that were produced by combining each subject’s full retinotopy dataset with the retinotopic prior. This combination of data should, in theory, produce the highest-quality retinotopic map predictions of which we are capable (see Results and Discussion). Cortical magnification was calculated by first projecting all vertices in a single visual area (such as V1) into the visual field based on their pRF centers. The cortical magnification of a particular polar angle and eccentricity is then the total white vertex surface-area (as calculated by FreeSurfer) of all pRF centers within a disk of some radius α, divided by the area of the disk (πα2). For an eccentricity ρ, we used a radius α = ρ/3.

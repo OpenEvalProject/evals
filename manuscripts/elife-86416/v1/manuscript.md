@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00rcxh774 Cologne Excellence Cluster on Cellular Stress Responses in Age‐Associated Diseases, and the Institute for Biochemistry, University of Cologne Cologne Germany
-2. https://ror.org/00rcxh774 Cologne Excellence Cluster on Cellular Stress Responses in Age‐Associated Diseases, the Faculty of Medicine and University Hospital of Cologne, the Center for Molecular Medicine Cologne, and the Institute for Genetics, University of Cologne Cologne Germany
+1. Cologne Excellence Cluster on Cellular Stress Responses in Age‐Associated Diseases, and the Institute for Biochemistry, University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
+2. Cologne Excellence Cluster on Cellular Stress Responses in Age‐Associated Diseases, the Faculty of Medicine and University Hospital of Cologne, the Center for Molecular Medicine Cologne, and the Institute for Genetics, University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
 
 † Corresponding author
 

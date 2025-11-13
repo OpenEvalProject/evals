@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.40314.001 Aging impairs the activation of stress signaling pathways (SSPs), preventing the induction of longevity mechanisms late in life. Here, we show that the antibiotic minocycline increases lifespan and reduces protein aggregation even in old, SSP-deficient Caenorhabditis elegans by targeting cytoplasmic ribosomes, preferentially attenuating translation of highly translated mRNAs. In contrast to most other longevity paradigms, minocycline inhibits rather than activates all major SSPs and extends lifespan in mutants deficient in the activation of SSPs, lysosomal or autophagic pathways. We propose that minocycline lowers the concentration of newly synthesized aggregation-prone proteins, resulting in a relative increase in protein-folding capacity without the necessity to induce protein-folding pathways. Our study suggests that in old individuals with incapacitated SSPs or autophagic pathways, pharmacological attenuation of cytoplasmic translation is a promising strategy to reduce protein aggregation. Altogether, it provides a geroprotecive mechanism for the many beneficial effects of tetracyclines in models of neurodegenerative disease. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+Aging impairs the activation of stress signaling pathways (SSPs), preventing the induction of longevity mechanisms late in life. Here, we show that the antibiotic minocycline increases lifespan and reduces protein aggregation even in old, SSP-deficient Caenorhabditis elegans by targeting cytoplasmic ribosomes, preferentially attenuating translation of highly translated mRNAs. In contrast to most other longevity paradigms, minocycline inhibits rather than activates all major SSPs and extends lifespan in mutants deficient in the activation of SSPs, lysosomal or autophagic pathways. We propose that minocycline lowers the concentration of newly synthesized aggregation-prone proteins, resulting in a relative increase in protein-folding capacity without the necessity to induce protein-folding pathways. Our study suggests that in old individuals with incapacitated SSPs or autophagic pathways, pharmacological attenuation of cytoplasmic translation is a promising strategy to reduce protein aggregation. Altogether, it provides a geroprotecive mechanism for the many beneficial effects of tetracyclines in models of neurodegenerative disease.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -41,41 +41,73 @@ In this study, we identified minocycline, a drug known to have neuroprotective a
 
 ## Results
 
-## Minocycline extends C. elegans lifespan in both young and old animals
+### Minocycline extends C. elegans lifespan in both young and old animals
 
 Previous studies have shown that the capacity for C. elegans to respond to stress declines with age (Bansal et al., 2015; Labbadia and Morimoto, 2015). To expand on previous studies and to define the age at which major SSPs lose their capacity to respond to stress, we exposed transcriptional GFP-reporter strains that respond to oxidative stress (gst-4p::GFP) or unfolded proteins in the endoplasmic reticulum (hsp-4p::GFP, UPRER), in the mitochondria (hsp-6p::GFP, UPRmt), or in the cytosol (hsp-16.2p::GFP) to their respective stressors -arsenite, tunicamycin, paraquat or heat- at increasing ages. On the first day as reproductive adults, herein defined as day 1, stressors increased GFP expression relative to untreated controls (Figure 1A,B). The exception was hsp-6p::GFP which was strongly activated at the L2 larval stage (Figure 1—figure supplement 1A) but responded poorly on day 1. By day 5 of adulthood, SSP activity was reduced and by day 8 was nearly undetectable (Figure 1A,B). Thus, 8 days after reaching adulthood C. elegans no longer induce SSPs in response to stress despite dying from its negative effects. We will refer to day 8 as the ‘post-stress-responsive’ age.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40314/elife-40314-fig1-v1.jpg)
+
+**Figure 1.:** (A) Scatter plots show fold induction of GFP fluorescence induced by stressors compared to untreated animals in gst-4p::GFP (oxidative stress), hsp-4p::GFP (UPRER), hsp-6p::GFP (UPRmt) and hsp-16.2p::GFP (heat stress) C. elegans at 1, 5 and 8 days of age. We define day 1 as the first day of adulthood. Error bars show mean ± S.D., each dot represents one animal with all n > 300 for each reporter strain and age. Significance determined by ANOVA followed by Dunett’s test. Total of four independent experiments. (B) Representative fluorescent microscopy images of 100 randomly selected animals for each condition and strain. Stressors indicated to right of each image panel. Images for each strain were taken in parallel on the same day using identical settings. Total of four independent experiments. (C) Bar graphs show % change in lifespan for 21 small molecules when treatment was initiated on day 1 of adulthood (gray) or on day 8 of adulthood (orange). Note that some compounds that extend lifespan when treatment is initiated on day 1 become slightly toxic at later ages. One independent experiment with at least 53 animals per condition. Significance determined by the log-rank test. (D) Structure of minocycline. (E) Survival curves for untreated (black line) and minocycline-treated wild-type N2 animals when treatment was initiated on day 1 (blue line) or day 8 (orange line) of adulthood. OP50 were killed by γ-irradiation to separate antibiotic from lifespan effects. Total of five independent experiments. Significance determined by the log-rank test. (F) Percent change in lifespan as a function of minocycline concentration for N2. OP50 were γ-irradiated. Total of four independent experiments. (G) Representative fluorescence microscopy images showing heads of C. elegans at increasing ages expressing the α-synuclein::YFP fusion protein. Top: water-treated control, bottom: minocycline-treated (100 μM). Note the increase in punctuate staining with age indicative of protein aggregation. (H) Graph shows the average number of α-synuclein::YFP aggregates per worm as a function of age for water- or minocycline-treated animals. Age when minocycline treatment is initiated for each color is shown right of the graph. Error bars indicate S.E.M. For each data point, n > 15. Total of four independent experiments. Asterisks indicate significance *<0.05, **<0.01, ***<0.001, n.s. not significant. Source data for N2 lifespan experiments are available in the Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40314/elife-40314-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Positive control to demonstrate that the lack of hsp-6p::GFP activation in adult animals (Figure 1A,B) is due to age and not due to a defective strain. Experimental timeline, fluorescent images and bar graphs depicting paraquat-induced (PQ) expression of hsp-6p::GFP when added at the L2 larval stage. (B) Survival curves for the bar graphs shown in Figure 1C. Small molecules screened for lifespan extension when added on day 1 (red line) or day 8 (orange line) compared to untreated (gray line). Significance determined by the log-rank test. (C) Confirmation of drug uptake for a subset of drugs tested in Figure 1. Overlay of bright field and fluorescent images to monitor the xenobiotic reporter, cyp-34A9p::GFP activation. Small molecules that activate cyp-34A9p::GFP in day 1 animals also do so in day 8 animals as visualized by GFP expression confirming drug uptake at both ages. (D and E) Representative survival and dose response curves showing minocycline extends lifespan of MAH93 glp-1(ar202), a strain that is sterile at 25°C, in the absence of FUDR (D) and with or without γ-irradiated OP50 dose-dependently (E). (F) Side-by-side comparison of 8-day-old NL5901 α-synuclein::YFP animals treated on day 1 with water (left three animals) or minocycline (right three animals). (G) Graph shows fraction of paralyzed 4-day-old adult C. elegans animals expressing Aβ1-42 after a 1 hr heat shock at 35°C. Pretreatment with minocycline (100 μM) reduces paralysis. Asterisks indicate significance *<0.05, **<0.01, ***<0.001, n.s. not significant.
 
 We next asked whether longevity and proteostasis mechanisms exist that remain drugable in post-stress-responsive adults. To this end, we treated 8-day-old C. elegans adults with 21 different molecules that we previously identified to extend lifespan (Ye et al., 2014). All 21 molecules extended lifespan when treatment was initiated on day 1 of adulthood. However, only minocycline extended lifespan when treatment was initiated on day 8 (Figure 1C; Figure 1—figure supplement 1B). For some of the inactive drugs, a xenobiotic-responsive cyp-34A9p::GFP strain was used to confirm drug uptake in old C. elegans (Figure 1—figure supplement 1C) (Anbalagan et al., 2012).
 
 Minocycline is a regulatory agency-approved tetracycline antibiotic used to treat acne vulgaris and has long been known to reduce tumor growth, inflammation and protein aggregation in mammals by an unknown MOA (Figure 1D) (Garrido-Mesa et al., 2013). Minocycline still extended lifespan when treatment was initiated on day 8, albeit by 22% instead of the 48% observed when treatment commenced on day 1 (Figure 1E). Subsequent control experiments showed that the lifespan extension by minocycline was independent of the method of sterilization, cultivation temperature (Figure 1—figure supplement 1D,E) and whether the animals were fed live or dead bacteria (OP50). Recording dose response curves we determined an EC50 of 22 μM and an optimal concentration of 50 – 100 μM, as compared to therapeutic concentrations measured in patient serum of 5 – 10 μM (Figure 1F; Figure 1—figure supplement 1E) (Agwuh and MacGowan, 2006; Garrido-Mesa et al., 2013). To investigate the MOA of minocycline independently of its antibiotic activity, all subsequent experiments were conducted using only dead, γ-irradiated bacteria. Taken together, minocycline extends lifespan independently of its antibiotic activity, even when treatment is initiated in old, post-stress-responsive C. elegans.
 
-## Minocycline attenuates protein aggregation in both young and old C. elegans
+### Minocycline attenuates protein aggregation in both young and old C. elegans
 
 We next tested minocycline for its ability to modulate protein aggregation, a common molecular characteristic of many neurodegenerative diseases. We treated animals that express human α-synuclein fused to YFP in the muscle (van Ham et al., 2008) with water or minocycline on day 1 of adulthood and imaged them on days 8, 11, 16 and 19. Minocycline suppressed the age-dependent increase in α-synuclein aggregation. It also reduced α-synuclein aggregation even when added to post-stress-responsive adults at a late age (day 8), when unfolded protein responses were no longer induced (Figure 1G,H; Figure 1—figure supplement 1F). To confirm this effect extended beyond α-synuclein aggregation, we tested another model of protein aggregation and determined minocycline also reduced the paralysis caused by temperature-induced Aβ1-42 misfolding that leads to aggregation in C. elegans’ body-wall muscle (Figure 1—figure supplement 1G) (Jiang et al., 2012; McColl et al., 2012). Thus, minocycline treatment reduced both age-dependent and temperature-induced protein aggregation in C. elegans.
 
-## Minocycline extends C. elegans lifespan in mutants defective for SSP or autophagy activation
+### Minocycline extends C. elegans lifespan in mutants defective for SSP or autophagy activation
 
 As minocycline extends lifespan of post-stress-responsive C. elegans, its activity should be independent of SSP activation. This prediction was tested in two ways. First, we repeated the GFP reporter-based stress response activation experiments, pretreating day-5-old adults for 2 hr with minocycline before subjecting them to stress (Figure 2A). As expected, minocycline alone did not induce any SSP reporter (Figure 2B,C). Unexpectedly, pretreatment with minocycline suppressed stressor-induced activation of all SSP reporters compared to stressor alone. This was particularly surprising as previous studies have shown that treating larvae with minocycline activates the hsp-6p::GFP reporter (Figure 2—figure supplement 1A,B) (Houtkooper et al., 2013). In contrast, in adults, minocycline inhibited the activation of all SSPs. Minocycline-induced inhibition of SSPs did not result in an increased susceptibility to stress. Minocycline-treated adults survived heat stress (35°C) much better than untreated adults, with 60% of the minocycline-treated animals still alive when nearly all control animals had died (Figure 2—figure supplement 1C). Furthermore, minocycline-treated adults were also much more resistant to paraquat-induced oxidative stress (Figure 2—figure supplement 1D). This is consistent with the observation that minocycline also protects neuronal-like rat pheochromocytoma (PC12) cells from paraquat-induced cell death (Huang et al., 2012). Thus, despite inhibiting SSP activation, minocycline protects from stress, suggesting a protective mechanism that bypasses SSP activation.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40314/elife-40314-fig2-v1.jpg)
+
+**Figure 2.:** (A) Experimental timeline to monitor stress response activation of 5-day-old adult C. elegans GFP-reporter strains induced by stressor and/or minocycline. Minocycline (100 μM) was added 2 hr prior to each stressor. (B) Scatter plots show fold induction of GFP fluorescence induced by stressors and/or minocycline treatment compared to untreated animals in 5-day-old adults. Pretreatment with minocycline suppresses stress response activation. Reporters: gst-4p::GFP (oxidative stress), hsp-4p::GFP (ER UPR), hsp-6p::GFP (UPRmt) and hsp-16.2p::GFP (heat stress). Error bars show mean ± S.D., each dot represents one animal with all n > 300. Significance determined by the Mann-Whitney t-test. At least three independent experiments. (C) Representative fluorescence microscopy images of 100 randomly selected animals for each condition and strain. Stressors indicated to the right of each panel. Images for each strain were taken in parallel on the same day using identical settings. (D) Survival curves. Minocycline significantly extends lifespan in strains carrying mutations in regulators of stress and proteostasis responses. Statistical significance determined by the log-rank test. Number of animals n ranging from 35 to 218. Total of at least three independent experiments per strain. (E) Survival curves. Minocycline significantly extends lifespan in two strains carrying mutations in regulators of lysosomal and autophagic pathways. Statistical significance determined by the log-rank test. Number of animals n ranging from 56 to 138. Total of at least three independent experiments per strain. Asterisks indicate significance *<0.05, **<0.01, ***<0.001, n.s. not significant. Source data for all lifespan experiments in (D) and (E) are available in the Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40314/elife-40314-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A and B) Fluorescence image and experimental timeline (A) and quantification (B) for hsp-6p::GFP induction by minocycline added to L3 larvae. While minocycline suppressed GFP induction of all stress reporters tested in adults, it activates the hsp-6p::GFP in larvae. Data are represented as mean ±S.D. Significance determined by the Mann-Whitney t-test. (C) Survival as a function of time in hours for water- or 100 μM minocycline-treated wild-type N2 C. elegans subjected to a continuous heat shock of 35°C. Data are represented as mean ±S.E.M. Significance determined by the Mann-Whitney t-test at each time point. Total of three independent experiments. (D) Survival of water- or 100 μM minocycline-treated wild-type N2 C. elegans 24 hr after addition of increasing concentrations of paraquat added on day 5. Data are represented as mean ±S.E.M. Significance determined by the Mann-Whitney t-test for each paraquat concentration. Total of three independent experiments. Asterisks indicate significance *<0.05, **<0.01, ***<0.001, n.s. not significant.
 
 Second, we measured the lifespan of water- and minocycline-treated strains carrying mutations in genes encoding transcription factors that regulate SSP activity, including the FOXO transcription factor daf-16, the UPRER transcriptional activator xbp-1, the UPRmt transcriptional activator atfs-1, the oxidative stress response factor skn-1, and the universally conserved heat shock transcription factor hsf-1. Minocycline extended lifespan in all C. elegans mutants (Figure 2D). Remarkably, minocycline extended lifespan in hsf-1(sy441) mutants by up to +159%, a relative extension clearly greater than what was observed in wild-type N2 animals and almost reaching absolute lifespans of minocycline-treated N2 animals (Figure 1E; Figure 2—source data 1). This enhanced extension suggests that minocycline not only extends lifespan as in N2 but also rescues some of the defects associated with mutated hsf-1(sy441).
 
 One way how minocycline could rescue hsf-1-associated defects would be to clear misfolded proteins by inducing autophagy and lysosomal pathways (Kumsta et al., 2017). To determine if autophagy is required for the lifespan extension by minocycline, we measured lifespan in minocycline-treated strains harboring mutations in the Atg1/ULK1 ortholog unc-51 and the TFEB ortholog hlh-30, key factors critical for autophagy and lysosomal activity. In both strains, minocycline significantly increased lifespan (Figure 2E). Despite the severe behavioral and morphological phenotypes observed in the unc-51(e369) mutants, the mutation did not reduce the ability of minocycline to extend lifespan. Minocycline also extended the lifespan of hlh-30(tm1978) mutants, but less than the 45% observed in N2. These genetic results, and the previous finding that activation of autophagy in already old C. elegans is likely to be detrimental (Wilhelm et al., 2017), are consistent with a mechanism of minocycline that acts independently of the activation of autophagy. However, as unc-51 is essential, the residual activity remaining in the unc-51(e369) mutants does not allow us to draw a definitive conclusion.
 
-## Minocycline reduces reactive cysteine labeling at the ribosome
+### Minocycline reduces reactive cysteine labeling at the ribosome
 
 In contrast to minocycline, lifespan extension induced in C. elegans by the conserved longevity paradigms including dietary restriction, reduced mitochondrial activity, germline ablation, sensory perception, reduced insulin signaling or the inhibition of mTOR all depend on at least one of the above tested factors (Steinkraus et al., 2008; Robida-Stubbs et al., 2012; Houtkooper et al., 2013; Lapierre et al., 2013; Weir et al., 2017). To gain insight into the MOA of minocycline, we conducted activity-based protein profiling using iodoacetamide (IA) as a probe, followed by isotopic tandem orthogonal proteolysis (isoTOP-ABPP). IA binds specifically to reactive cysteine residues, including catalytic sites within enzymes, post-translational modification sites, cysteine oxidation sites, and other types of regulatory or functional domains across the proteome (Roberts et al., 2017). We hypothesized that minocycline treatment would directly, by binding near a reactive cysteine, or indirectly, by modulating the activity of a pathway, alter IA labeling of reversible, post-translational cysteine modifications.
 
 To determine minocycline-induced changes in cysteine labeling patterns, 5-day-old adult C. elegans were treated with water or minocycline for 3 days and their proteome was subsequently labeled with the IA probe and analyzed by mass spectrometry (Figure 3—figure supplement 1A). Analysis of the isoTOP-ABPP data by the Cytoscape plugin ClueGO (Bindea et al., 2009), which allows visualization of biological terms for large clusters of genes in a functionally grouped network, showed that minocycline treatment reduced IA labeling of proteins involved in cytoplasmic translation, specifically proteins involved in ribosome assembly and peptide metabolic processes (Figure 3A). These results suggested that minocycline directly or indirectly targets cytoplasmic translation, an MOA consistent with lifespan extension and that explained how minocycline prevented SSP reporter induction (Figure 2B,C) (Vellai et al., 2003; Kapahi et al., 2004; Kaeberlein et al., 2005; Hansen et al., 2007; Pan et al., 2007; Syntichaki et al., 2007; McQuary et al., 2016).
 
-## Minocycline attenuates cytoplasmic mRNA translation in C. elegans
+![Figure 3.](https://cdn.elifesciences.org/articles/40314/elife-40314-fig3-v1.jpg)
+
+**Figure 3.:** (A) Network analysis by ClueGO of isoTOP-ABPP results corresponding to protein-probe labeling changes that decrease with minocycline treatment. Size of the circle is proportional to the number of proteins identified and the color represents significance. Total of three independent experiments. (B) Graph shows total number of offspring for water- or minocycline-treated C. elegans over 5 days after minocycline addition. Significance determined by the Mann-Whitney t test n = 15. Total of five independent experiments. (C) Graph shows C. elegans length in pixels as a function of age in hours after minocycline addition. Significance determined by the Mann-Whitney Student's t test n > 50. Total of five independent experiments. (D) Graphs show relative intensity ratios of 14N incorporation to total 14N +15N -labeled proteins in water (black circles) or minocycline-treated (blue circles) animals as a function of abundance in water-treated animals at different ages. Length and age of labeling indicated above each graph. Total of two independent experiments. Significance determined by a paired t test. Asterisks indicate significance *<0.05, **<0.01, ***<0.001, n.s. not significant. Source data for isoTOP-ABPP and quantitative mass spectrometry experiments are available in Figure 3—source datas 1 and 2, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40314/elife-40314-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic of the isoTOP-ABPP strategy to detect changes in minocycline interactions, expression or post-translational modifications in treated and untreated C. elegans lysate. (B) Same data as in Figure 3B, but showing number of offspring produced per day, in addition to cumulative total. Significance determined by the Mann-Whitney t test. (C) Bright-field images of water- and minocycline-treated adults on day 2 of adulthood. (D) Quantification of 20S proteasome activity from water- or minocycline-treated C. elegans protein extract. (E) Same data as in Figure 3D but analyzed to determine the fold reduction in translation caused by minocycline. Graphs plot the suppressive effect of minocycline (-log10 [intensitymino/intensitywater]) as a function of protein abundance (by rank from Figure 3D) with the correlation coefficient r shown in the upper right corner. Each circle corresponds to the -log10 [intensitymino/intensitywater] expression ratio for one protein. Yellow shading indicates 99% confidence interval. As the observed correlation is based on an expression ratio of the same protein under different conditions, the correlation is not explained by technical considerations like the greater ability of mass spectrometry to detect more abundant proteins. Asterisks indicate significance *<0.05, **<0.01, ***<0.001, n.s. not significant.
+
+### Minocycline attenuates cytoplasmic mRNA translation in C. elegans
 
 We next set out to determine the effect of minocycline treatment on cytoplasmic mRNA translation. Consistent with reducing translation, minocycline treatment reduced C. elegans growth and reproduction (Figure 3B,C; Figure 3—figure supplement 1B,C) (Hansen et al., 2007; Pan et al., 2007). To quantify mRNA translation in the presence or absence of minocycline, we measured incorporation of 14N and 15N -labeled amino acids into the proteome by quantitative mass spectrometry. In a first series of experiments, synchronized populations of animals at the L4 larval stage were treated for 24 hr with either water or minocycline and fed 14N-labeled bacteria. To quantify differences in protein levels, a 15N standard was added to determine a 14N to (14N + 15N) intensity ratio. The majority of proteins (85%) in the minocycline-treated samples showed a significant reduction in intensity compared to controls, revealing that minocycline treated animals contained ~24% less protein (Figure 3D,L4→ day 1). These effects on the proteome were not likely the result of increased protein degradation, as minocycline reduced rather than increased proteosomal activity (Figure 3—figure supplement 1D). At least in adult C. elegans these data were inconsistent with a model in which minocycline selectively reduced translation, as has been shown for ifg-1 (Rogers et al., 2011). The few factors that showed higher expression levels in minocycline-treated animals had no known link to stress resistance or were shown to increase lifespan when knocked down by RNAi.
 
 In a second series of experiments, we made use of a previous observation showing that mRNA translation rates in C. elegans decline with age (Gomez-Amaro et al., 2015). Thus, if minocycline acted by attenuating translation, its effect on 14N incorporation into the proteome should depend on the translation rate and should be smaller in 5-day-old adult animals than in young, L4 larvae. To test this prediction, we initiated minocycline treatment on day 5 of adulthood and harvested protein 24 hr and 72 hr later. As predicted, the effect of minocycline on mRNA translation depended on the age of the animals. While a 24 hr minocycline treatment initiated in L4 larvae reduced protein synthesis by ~24% (Figure 3D,L4→day 1), the same length of treatment initiated in day-5-old adults showed only an ~11% reduction on mRNA translation (Figure 3D, day 5→day 6). However, a 72-hr minocycline treatment initiated on day 5 allowed enough mRNA translation to occur to observe a significant suppression of ~24% (Figure 3D, day 5→day 8). In addition, we observed the suppressive effect of minocycline to correlate with protein abundance, suppressing the production of highly expressed proteins to a greater extent than lowly expressed proteins (Figure 3—figure supplement 1E). Taken together, these results show that minocycline-treated animals contain less protein, consistent with an attenuation of mRNA translation.
 
-## Minocycline attenuates mRNA translation in human cells
+### Minocycline attenuates mRNA translation in human cells
 
 To determine if minocycline treatment also can reduce mRNA translation in human cells, we measured basal mRNA translation by monitoring incorporation of [35S]-methionine/cysteine in untreated and minocycline-treated HeLa cells. A 6 hr pretreatment with minocycline reduced mRNA translation by ~30% at 100 μM as monitored by [35S]-methionine/cysteine incorporation (Figure 4A; Figure 4—figure supplement 1A). This experiment was repeated in murine NIH 3T3 cells with similar results (Figure 4—figure supplement 1B). The magnitude of the effect was similar to what we observed in C. elegans (Figure 3D), but less than the effect of cycloheximide (Figure 4A). As the bioavailability of minocycline is close to 100%, in vivo and in vitro concentrations are expected to be similar (Garrido-Mesa et al., 2013).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/40314/elife-40314-fig4-v1.jpg)
+
+**Figure 4.:** (A) Autoradiograph (top) monitoring 35S incorporation over 1 hr of HeLa cells treated for 6 hr with cycloheximide or increasing concentrations of minocycline. Coomassie gel (bottom) is shown as a loading control. Total of four independent experiments. (B) Polysome profile analysis of 12 hr water- (black) or minocycline-treated (blue) HeLa cells. High molecular weight polysomes (P) and 80S monosomes (M) regions are shaded in gray. An increase in monosomes and a decrease in high-molecular-weight polysomes are indicative of translation attenuation. Total of three independent experiments. (C) Immunoblots probing for HSP60 and HSP70 expression of water- or minocycline-treated (100 μM) HeLa cells after a 1 hr, 43°C heat shock. Total of three independent experiments. (D) qRT-PCR analysis of HSP60 and HSP70 mRNA expression in HeLa cells treated with or without minocycline (100 μM) before and after a 1 hr, 43°C heat shock. Minocycline treatment was initiated 12 hr prior to the heat shock. Data are represented as mean ± S.E.M. Significance determined by the Mann-Whitney t-test. Total of three independent experiments. (E) Immunoblots probing for BiP expression of water- or minocycline-treated (100 μM) HEK293DAX cells engineered to allow UPRER activation by trimethoprim treatment (TMP). Water or 100 μM minocycline was added alone or in combination with 20 uM trimethoprim for 12 hr prior to cell lysis. Samples were normalized by RNA concentration. Total of three independent experiments. (F) Bar graph shows change in protein aggregate formation, as measured by the ProteoStat assay, before and after a 1 hr, 43°C heat shock in control (black) and minocycline-treated (blue) HeLa cells. Data are represented as mean ± S.E.M. Significance determined by the Mann-Whitney t-test. Total of four independent experiments. (G) Autoradiograph (top) monitoring 35S incorporation of HeLa cells treated with the ISR inhibitor ISRIB (200 nM), minocycline (100 μM), thapsigargin (thaps, 200 nM) and a combination of the three. Coomassie gel (bottom) is shown as a loading control. Total of two independent experiments. Asterisks indicate significance *<0.05, **<0.01, ***<0.001, n.s. not significant. Figure 5. Lifespan extension by minocycline depends on cytoplasmic translation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40314/elife-40314-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Full gels shown from Figure 4A. Autoradiograph (top) monitoring 35S incorporation of HeLa cells treated with cycloheximide or increasing concentrations of minocycline. Coomassie gel (bottom) shown as loading control. (B) Autoradiograph (top) monitoring 35S incorporation of NIH 3T3 cells treated with cycloheximide or increasing concentrations of minocycline. Coomassie gel (bottom) is shown as a loading control. Total of 3 independent experiments. (C) qRT-PCR quantification of relative GFP mRNA (top) or hsp mRNAs (bottom) expression from untreated or minocycline-treated (100 μM) hsp-16.2p::GFP C. elegans before and after a 1.5 hr, 35°C heat shock. While heat shock fails to induce GFP fluorescence in hsp-16.2p::GFP reporter animals in the presence of minocycline (Figure 2B,C), it still induces the GFP mRNA, revealing the effect of minocycline on translation. Significance determined by the Mann-Whitney Student's t test. n = 1500 animals per condition. Total of three independent experiments. (D) Full gel shown from Figure 4E. Immunoblots probing for BiP expression of control or minocycline-treated (100 μM) HEK293DAX cells engineered to allow UPRER activation by trimethoprim treatment (TMP). (E) Full gels shown from Figure 4G. Autoradiograph (top) monitoring 35S incorporation of HeLa cells treated with the ISR inhibitor ISRIB, minocycline, thapsigargin (thaps) and a combination of the three. Coomassie gel (bottom) is shown as a loading control. (F) Comparison of the known tetracycline binding site in helix 34 (h34) of the E. coli 16S rRNA with the 18S rRNA of H. sapiens and C. elegans. Red squares indicate the tetracycline binding region with the interacting residues highlighted in red. Asterisks indicate significance *<0.05, **<0.01, ***<0.001, n.s. not significant.
 
 To gain further insight on how minocycline reduces mRNA translation, we recorded polysome profiles from untreated and minocycline-treated HeLa cells. Minocycline treatment caused a pronounced increase in the 80S monosome peak (M) indicative of stalled translation initiation (Figure 4B). It further showed a disproportionally strong reduction in the heavy polysome fraction (P), suggesting that minocycline reduced ribosomal load, the number of ribosomes per mRNA, of highly translated mRNAs. Thus, the observed reduction of ribosomal load by minocycline results in a substantial attenuation of highly translated mRNAs. The preferential effect on the heavy polysome fraction (P) provided a potential explanation for the greater inhibitory effect of minocycline on highly expressed proteins that we observed in the C. elegans metabolic labeling experiment (Figure 3—figure supplement 1E).
 
@@ -85,13 +117,21 @@ To extend these results to other stress responses such as the UPRER, we repeated
 
 As we did before in C. elegans, we asked if the suppression of stress responses by minocycline impaired the ability of a cell to deal with heat stress and protein aggregation (Figure 1—figure supplement 1G; Figure 2—figure supplement 1C). Using the aggregation-specific dye ProteoStat, we measured protein aggregation in HeLa cells before and after a 1 hr heat shock. The protein aggregate-induced fluorescence only increased in control cells upon heat shock (~12%), but not in minocycline-pretreated cells (Figure 4F). Thus, as already observed in C. elegans, minocycline treatment protects from heat-shock-induced protein aggregation despite suppressing activation of the heat-shock response (Figure 1—figure supplement 1G; Figure 2—figure supplement 1C).
 
-## Minocycline attenuates translation independent of the ISR
+### Minocycline attenuates translation independent of the ISR
 
 SSP activation leads to the phosphorylation of the eukaryotic translation initiation factor eIF2α, globally inhibiting translation initiation of all but a few mRNAs, generally referred to as the integrated stress response (ISR) (Pakos-Zebrucka et al., 2016). Minocycline could either attenuate translation through activation of the ISR or by directly targeting the cytoplasmic ribosome to interfere with translation. To distinguish between those possibilities, we made use of the ISR inhibitor ISRIB that prevents eIF2α phosphorylation-mediated translational inhibition (Sidrauski et al., 2015). If minocycline activates the ISR to attenuate translation, co-treatment with ISRIB should restore normal translation even in the presence of minocycline. HeLa cells were treated with ISRIB, minocycline or both agents. Monitoring translation by [35S]-methionine/cysteine incorporation showed that co-treatment with ISRIB did not impair the ability of minocycline to attenuate translation (Figure 4G; Figure 4—figure supplement 1E). In contrast, translation attenuation by thapsigargin, a known inducer of the ISR, was restored by the co-treatment with ISRIB (Sidrauski et al., 2015). Thus, minocycline attenuates translation by an ISR-independent mechanism. Comparing the bacterial 16S rRNA to the cytoplasmic 18S rRNA of C. elegans and H. sapiens revealed a conserved tetracycline binding site in helix 34 (h34) (Figure 4—figure supplement 1F) (Brodersen et al., 2000). A recent paper by the Meyers group identified doxycycline to directly bind to key 18S rRNA substructures of the cytoplasmic ribosome and showed different tetracyclines to discriminate between different 18S rRNA binding sites (Caballero et al., 2011; Mortison et al., 2018). Thus, we concluded that minocycline directly targets the 18S rRNA, leading to the observed stalled ribosomes (80S peak) and attenuation of translation (Figure 4A,B).
 
-## Minocycline extends lifespan by attenuating translation
+### Minocycline extends lifespan by attenuating translation
 
 Translation of mRNA is essential and ‘null’ mutants lacking 18S rRNA are not viable, preventing us from directly testing the necessity of mRNA translation for the minocycline-induced longevity. In contrast to our studies in C. elegans and human cells, studies investigating the effects of tetracyclic antibiotics in S. cerevisiae have shown them to only attenuate mitochondrial but not cytoplasmic translation. Consistent with a model in which minocycline needs to attenuate cytoplasmic translation to extend lifespan, minocycline did not extend replicative lifespan in S. cerevisiae, and at higher concentrations reduced it (Figure 5A) (Clark-Walker and Linnane, 1966; Caballero et al., 2011; McCormick et al., 2015).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40314/elife-40314-fig5-v1.jpg)
+
+**Figure 5.:** Data were analyzed using the Wilcoxon rank-sum test. (B) Depicts expected dose response curve shifts for mutants with lower (black curve) or higher (gray curve) translation rates treated with minocycline compared to wild-type (blue curve). As translation is essential, translation mutants must retain some translation activity, albeit less than in wild type. Thus, in mutants with reduced translation like rsks-1, less minocycline should be necessary to optimally lower translation and to increase lifespan resulting in a left-shifted dose-response curve. If minocycline targets the 18S rRNA, an excess of rRNA and an increase in translation as in ncl-1 mutants should result in a right-shifted dose-response curve. (C) Dose response curves show the % change in lifespan as a function of increasing minocycline concentrations for N2, rsks-1(ok1255) and ncl-1(e1865) mutants. Total of four independent experiments performed. Data are represented as mean ± S.E.M. (D) Survival curves for water- or minocycline- (100 μM) treated rsks-1(ok1255) C. elegans mutants. At least four independent experiments performed. (E) Survival curves for water- or minocycline- (100 μM) treated ncl-1(e1865) C. elegans mutants. Statistical significance determined by the log-rank test. Number of animals n ranging from 42 to 87, total of four independent experiments. Asterisks indicate significance *<0.05, **<0.01, ***<0.001, n.s. not significant. Source data for N2, rsks-1 and ncl-1 lifespan experiments are available in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40314/elife-40314-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Depicts expected effect on change in lifespan of a translation-independent toxic off-target. Too much translation attenuation by too much minocycline is likely to be detrimental. However, the minocycline concentration to reach this detrimental effect should depend on the endogenous translation rate of each strain and should occur at lower concentrations in rsks-1 mutants and at higher concentration in ncl-1 mutants. The observed detrimental effect however occurs in all strains, N2, ncl-1, rsks-1 at the same minocycline concentration irrespective of their endogenous translation rate. It is therefore more consistent with the engagement of a toxic off-target not related to translation. (B) Same as Figure 5C, showing the shift in dose-response curves and toxic off-target effect between 100 and 200 μM minocycline (shaded gray). Also note that 200 μM minocycline do not cause a drop in lifespan extension in skn-1 mutants (Figure 2) but further extend lifespan suggesting that the expression of the toxic off-target may be regulated by skn-1.
 
 To more directly link translation inhibition by minocycline to its effect on longevity, we reasoned that if minocycline extends lifespan by reducing translation directly at the ribosome, its dose-response curve should be shifted to the left in mutants with already reduced translation and shifted to the right in mutants with increased translation (Figure 5B).
 
@@ -125,35 +165,521 @@ Repurposing FDA-approved drugs such as minocycline using phenotypic screens reve
 
 ## Materials and methods
 
-## C. elegans strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>N2</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>RRID:WB-STRAIN:N2_(ancestral)</td>
+      <td>wild-type (Bristol)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>CL2166</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:CL2166</td>
+      <td>dvIs19 [(pAF15)gst -4p::GFP::NLS] III</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>SJ4005</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:SJ4005</td>
+      <td>zcIs4 [hsp-4::GFP] V</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>SJ4100</td>
+      <td>CGC</td>
+      <td>RRID:WB- STRAIN:SJ4100</td>
+      <td>zcIs13 [hsp-6::GFP]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>CL2070</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:CL2070</td>
+      <td>dvIs70 [hsp-16.2p::GFP + rol-6(su1006)]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>SJ17</td>
+      <td>CGC</td>
+      <td>RRID:WB-S TRAIN:SJ17</td>
+      <td>xbp-1(zc12) III; zcIs4 V</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>QV225</td>
+      <td>CGC</td>
+      <td>RRID:WB- STRAIN:QV225</td>
+      <td>skn-1(zj15) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>PS3551</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:PS3551</td>
+      <td>hsf-1(sy441) I</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>CF1038</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:CF1038</td>
+      <td>daf-16(mu86) I</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>CB369</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:CB369</td>
+      <td>unc-51(e369) V</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>RB1206</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:RB1206</td>
+      <td>rsks-1(ok1255) III</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>CB3388</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:CB3388</td>
+      <td>ncl-1(e1865) III</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>CL2006</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:CL2006</td>
+      <td>dvIs2(pCL12(unc-54:hu-Aβ 1–42)+pRF4)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>NL5901</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:NL5901</td>
+      <td>pkIs2386 [α-synuclein::YFP unc-119(+)]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>MAH93</td>
+      <td>Other</td>
+      <td></td>
+      <td>glp-1(ar202), unc-119(ed3), ItIs38[pAA1; pie-1/GFP::PH(PLCdelta1); unc-119 (+)] III; ItIs37[pAA64; pie-1/mCHERRY::his-58, unc-119 (+)]IV); gift from M. Hansen</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>MAH686</td>
+      <td>Other</td>
+      <td></td>
+      <td>hlh-30(tm1978) IV; gift from M. Hansen</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>CMH5</td>
+      <td>DOI: 10.1371/ journal.pone.0159989</td>
+      <td></td>
+      <td>atfs-1(tm4525) V</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>BC20306</td>
+      <td>Baillie Genome GFP Project, Simon Fraser University</td>
+      <td>RRID:WB:-STRAIN:BC20306</td>
+      <td>cyp-34A9::GFP</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>Cat # CCL-2, RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH 3T3</td>
+      <td>ATCC</td>
+      <td>Cat # CRL-1658, RRID:CVCL_0594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293DAX</td>
+      <td>DOI: 10.1016/j.celrep.2013.03.024</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-actin (mouse monoclonal)</td>
+      <td>MP Biomedicals</td>
+      <td>Cat # 08691001, RRID:AB_2335127</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Hsp60 (mouse monoclonal)</td>
+      <td>ThermoFisher</td>
+      <td>Cat # MA3-012, RRID:AB_2121466</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Hsp70/72 (mouse monoclonal)</td>
+      <td>Enzo</td>
+      <td>Cat # ADI-SPA-810, RRID:AB_10616513</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GRP78 (BiP) (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab21685, RRID:AB_2119834</td>
+      <td>(1:1000, from1 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW (secondary)</td>
+      <td>Li-Cor</td>
+      <td>Cat # 926–32210, RRID:AB_621842</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW (secondary)</td>
+      <td>Li-Cor</td>
+      <td>Cat # 926–32211, RRID:AB_621843</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HSP60 forward primer, 5'- GCAGAGTTCCTCAGAAGTTGG-3'</td>
+      <td>DOI: 10.1186/ s12974-016-0486-x</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>HSP60 reverse primer, 5'- GCATCCAGTAAGGCAGTTCTC-3'</td>
+      <td>DOI: 10.1186/ s12974-016-0486-x</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HSPA1A (HSP70) forward primer, 5'- GGAGGCGGAGAAGTACA-3'</td>
+      <td>DOI: 10.1021/ cb500062n</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HSPA1A (HSP70) reverse primer, 5'- GCTGATGATG GGGTTAACA-3'</td>
+      <td>DOI: 10.1021/cb500062n</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hsp-16.1/.11 forward primer, 5'- ACCACTATTTC CGTCCAGCT-3'</td>
+      <td>DOI: 10.7554/ eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hsp-16.1/.11 reverse primer, 5'- TGACGTTCCATCTGAGCCAT-3'</td>
+      <td>DOI: 10.7554/ eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hsp-16.2 forward primer, 5'- TCGATTGAAGCGCCAAAGAA-3'</td>
+      <td>DOI: 10.7554/eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hsp-16.2 reverse primer, 5'- TCTCTTCGACGATTGCCTGT-3'</td>
+      <td>DOI: 10.7554/ eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hsp-16.41 forward primer, 5'- TCTTGGACGAACTCACTGGA-3'</td>
+      <td>DOI: 10.7554/eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>hsp-16.41 reverse primer, 5'- AGAGACATCGAGTTGAACCGA-3'</td>
+      <td>DOI: 10.7554/eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hsp-16.48/.49 forward primer, 5'- CTCATGCTCCGTTCTCCATT-3'</td>
+      <td>DOI: 10.7554/ eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hsp-16.48/.49 reverse primer, 5'- GAGTTGTGATCAGCATTTCTCCA-3'</td>
+      <td>DOI: 10.7554/ eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GFP forward primer, 5'- GGTCCTTCTTGAGTTTGTAAC-3'</td>
+      <td>DOI: 10.1074/ jbc.C100556200</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>GFP reverse primer, 5'- CTCCACTGACA GAAAATTTG-3'</td>
+      <td>DOI: 10.1074/jbc.C100556200</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SDHA forward primer, 5'- TGGTGCTGGTTGTCTCATTA-3'</td>
+      <td>DOI: 10.1134/ S0003683813090032</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>SDHA reverse primer, 5'- ACCTTTCGCCTTGACTGTT-3'</td>
+      <td>DOI: 10.1134/ S0003683813090032</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>HSPC3 forward primer, 5'- ATGGAAGAGA GCAAGGCAAA-3'</td>
+      <td>DOI: 10.1134/ S0003683813090032</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HSPC3 reverse primer, 5'- AATGCAGCAAG GTGAAGACA-3'</td>
+      <td>DOI: 10.1134/ S0003683813090032</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>crn-3 forward primer, 5'- GAATGCACTCAT GAACAAAGTC-3'</td>
+      <td>DOI: 10.7554/ eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>crn-3 reverse primer, 5'- TAATGTTCGACT GATGAACCG-3'</td>
+      <td>DOI: 10.7554/ eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>xpg-1 forward primer, 5'- ATTGAGAACAG GATCATGAGG-3'</td>
+      <td>DOI: 10.7554/eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>xpg-1 reverse primer, 5'-ACTAGCA ACTCGTTTATCATCC-3'</td>
+      <td>DOI: 10.7554/ eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>rpl-6 forward primer, 5'-ACTAGCAACTCGTTTATCATCC-3'</td>
+      <td>DOI: 10.7554/eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>rpl-6 reverse primer, 5'- GACAGTCTTGGAATGTCCGA-3'</td>
+      <td>DOI: 10.7554/eLife.08833</td>
+      <td></td>
+      <td>qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>20S Proteasome Activity Assay Kit</td>
+      <td>Chemicon International</td>
+      <td>Cat # APT280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat # 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript RT-Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat # 170–8841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SsoAdvanced SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat # 172–5264</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PROTEOSTAT Prot. aggregation assay</td>
+      <td>Enzo</td>
+      <td>Cat # ENZ-51023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>minocycline</td>
+      <td>Mp Biomedicals</td>
+      <td>Cat # 0215571891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>methyl viologen hydrate (paraquat)</td>
+      <td>Acros Organics</td>
+      <td>Cat # 227320010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tunicamycin</td>
+      <td>LKT Laboratories</td>
+      <td>Cat # T8153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>thapsigargin</td>
+      <td>Cayman Chemical</td>
+      <td>Cat # 10522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ISRIB</td>
+      <td>R and D Systems</td>
+      <td>Cat # 5284/10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>levamisole</td>
+      <td>Mp Biomedicals</td>
+      <td>Cat # 0215522810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>sodium arsenite</td>
+      <td>Spectrum Chemical</td>
+      <td>Cat # S1135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cycloheximide</td>
+      <td>Alfa Aesar</td>
+      <td>Cat # J66901-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler</td>
+      <td>Broad Institute</td>
+      <td>RRID:SCR_007358</td>
+      <td>α-synuclein::YFP aggregate number and worm size analyses</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bio-Rad CFX Manager</td>
+      <td>Bio-Rad</td>
+      <td></td>
+      <td>qRT-PCR analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageQuant</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>RRID:SCR_014246</td>
+      <td>35S incorporation analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains
 
 The Bristol strain (N2) was used as the wild-type strain. The following worm strains used in this study were obtained from the Caenorhabditis Genetics Center (CGC; Minneapolis, MN) unless otherwise noted. CL2166 [dvIs19 [(pAF15)gst-4p::GFP::NLS]], SJ4005 [zcIs4 [hsp-4p::GFP]], SJ4100 [zcIs13 [hsp-6p::GFP]], CL2070 [dvIs70 [hsp-16.2p::GFP + rol-6(su1006)]], SJ17 [xbp-1(zc12); zcIs4], QV225 [skn-1(zj15)], PS3551 [hsf-1(sy441)], CF1038 [daf-16(mu86)], CB369 [unc-51(e369)], RB1206 [rsks-1(ok1255)], CB3388 [ncl-1(e1865)], CL2006 [dvIs2(pCL12(unc-54:hu-Aβ 1–42)+pRF4)], NL5901 [pkIs2386 [α-synuclein::YFP unc-119(+)]]. Strains were backcrossed at least three times prior to experimental analysis. MAH93 [glp-1(ar202), unc-119(ed3), ItIs38[pAA1; pie 1/GFP::PH(PLCdelta1); unc-119 (+)]; ItIs37[pAA64; pie-1/mCHERRY::his-58, unc-119 (+)]] and MAH686 [hlh-30(tm1978)] were gifts from Malene Hansen and Caroline Kumsta and atfs-1(tm4525) V was a gift from Cole Haynes (Nargund et al., 2012). BC20306 [cyp-34A9p::GFP] was received from Baillie Genome GFP Project (Simon Fraser University, Burnaby, Vancouver, Canada).
 
-## Worm stress imaging
+### Worm stress imaging
 
 1000 – 2000 age-synchronized L1 GFP reporter animals were plated into 6 cm culture plates with liquid medium (S-complete medium with 50 µg/ml carbenicillin and 0.1 μg/ml fungizone [Amphotericin B]) containing 6 mg/ml Escherichia coli OP50 (1.5 × 108 colony-forming units [cfu]/ml, carbenicillin-resistant to exclude growth of other bacteria), freshly prepared 4 days in advance, as previously described (Solis and Petrascheck, 2011), and were maintained at 20°C. The final volume in each plate was 7 ml. To prevent self-fertilization, 5-fluoro-2’-deoxyuridine (FUDR, 0.12 mM final) (Sigma-Aldrich, cat # 856657) was added 42 – 45 hr after seeding. With day 1 being the first day of young adulthood (first day past the L4 stage), various stressors were added to each strain at different time points: 0.5 mM arsenite to day 1/day 5/day 8 CL2166 gst-4p::GFP and imaged 5 hr later, 0.5 mM paraquat to the late L4/day 4/day 7 stage of SJ4100 hsp-6p::GFP and imaged 24 hr later, 5 μg/ml tunicamycin to day 1/day 5/day 8 SJ4005 hsp-4p::GFP and imaged 8 hr later and a 1.5 hr heat shock at 35°C followed by recovery at 20°C to day 1/day 5/day 8 CL2070 hsp-16.2p::GFP and imaged 8 hr later. Worm GFP intensity was quantified using a COPAS FP BIOSORT (Union Biometrica) and animals were sorted into 96-well plates and imaged using an ImageXpress Micro XL High-Content screening system (Molecular Devices) with a 2x objective. To determine minocycline’s affect on GFP expression, 100 μM minocycline was added 2 hr prior to each stressor at the day 4/day 5 stage.
 
-## Lifespan assay
+### Lifespan assay
 
 Age-synchronized C. elegans were prepared in liquid medium (S-complete medium with 50 µg/ml carbenicillin and 0.1 μg/ml fungizone) in flat-bottom, optically clear 96-well plates (Corning, cat # 351172) containing 150 μl total volume per well, as previously described (Solis and Petrascheck, 2011). Plates contained ~10 animals per well in 6 mg/ml OP50. All experiments with minocycline were prepared with γ-irradiated OP50. Age-synchronized animals were seeded as L1 larvae and grown at 20°C. Plates were covered with sealers to prevent evaporation. To prevent self-fertilization, FUDR (0.12 mM final) was added 42 – 45 hr after seeding. Drugs were added on the days indicated and survival was scored manually by visualizing worm movement using an inverted microscope 3x/week. When used, DMSO was kept to a final concentration of 0.33% v/v. Statistical analysis was performed using the Mantel–Haenszel version of the log-rank test as outlined in Petrascheck and Miller (Petrascheck and Miller, 2017).
 
-## α-synuclein::YFP imaging
+### α-synuclein::YFP imaging
 
 NL5901 (pkIs2386 [α-synuclein::YFP unc-119(+)]) age-synchronized animals were treated with water on day 1 or 100 μM minocycline on days 1, 5 or 8. On days 8, 11, 16 or 19, 10 – 15 water- and minocycline-treated animals of each treatment stage were transferred to glass slides containing 3% agarose pads and paralyzed by adding a drop of a 1 mM levamisole solution dissolved in M9 buffer. Brightfield and fluorescence images were taken with a 20x objective using the ImageXpress Micro XL. The number of α-synuclein aggregates in the pharynx region of each worm (25% of total body length) were determined by analyzing images using a custom pipeline created in CellProfiler software.
 
-## CL2006 abeta paralysis
+### CL2006 abeta paralysis
 
 Day 1 CL2006 (dvIs2(pCL12(unc-54:hu-Aβ 1–42)+pRF4)) synchronized animals were treated with water or 100 μM minocycline. On day 4, 50 – 100 animals each were transferred to three NGM plates and placed at 37°C for 2 hr. After heat shock, animals were scored to determine the number of paralyzed animals. Animals were marked as paralyzed if they did not show mid-body movement upon light touch to the pharynx with a worm pick.
 
-## Thermotolerance
+### Thermotolerance
 
 Age-synchronized N2 animals were prepared in 6 cm culture plates and treated with water or 100 μM minocycline on day 1. On evening day 4, 30 – 50 animals each were transferred to 6 cm NGM plates in triplicate for each condition and heat stress was induced at 35°C. The first survival measurement was taken 8 hr later by lightly touching animals with a worm pick and scoring for movement. Plates were kept at 35°C and measurements of survival were taken every 2 hr until nearly all water-treated N2s were dead.
 
-## Paraquat stress resistance assay
+### Paraquat stress resistance assay
 
 Resistance to oxidative stress was determined by measuring survival of untreated and minocycline-treated animals after a 24 hr exposure to the ROS-generator paraquat (methyl viologen hydrate; Acros Organics, cat # 227320010). Experimental C. elegans cultures were set up as described in Lifespan Assay. Water or 100 μM minocycline was added on day 1. Paraquat was added to a final concentration of 0, 15, 25, 50, 75 and 100 mM on day 5 of adulthood and survival of animals was assessed 24 hr after paraquat addition. It’s important to note, we only saw protection from paraquat-induced death when using dead, γ-irradiated OP50 and did not see protection when using live OP50.
 
-## Iodoacetamide isoTOP-ABPP
+### Iodoacetamide isoTOP-ABPP
 
 20,000 age-synchronized N2 C. elegans were grown in liquid culture in 15 cm culture plates (Corning, cat # 351058), two plates per condition. Animals were treated with water or 100 μM minocycline on day 5. Animals were collected on day 8, washed 3x with cold DPBS (Gibco, cat # 14190 – 136) and flash-frozen in liquid nitrogen. 50 μl 1.4 mm zirconium oxide beads (Precellys, cat # 03961-1-103) and 50 μl 0.5 mm glass beads (Precellys, cat # 03961-1-104) were added to each sample and animals were lysed using a Precellys 24 tissue homogenizer. Bradford assay (Bio-rad, cat # 5000002) was used to determine protein concentration for each sample for normalization. Proteome sample (1 mg) was treated with 100 mM IA-alkyne probe by adding 5 ml of a 10 mM probe stock (in DMSO). The labeling reactions were incubated at room temperature for 1 hr, after which the samples were conjugated to isotopically labeled, TEV-cleavable tags (TEV tags) by copper-catalyzed azide-alkyne cycloaddition (CuACC or ‘click chemistry’). Heavy click chemistry reaction mixture (60 ml) was added to the water-treated control sample, and light reaction mixture (60 ml) was added to the minocycline-treated sample. The click reaction mixture consisted of TEV tags [10 ml of a 5 mM stock, light (minocycline-treated) or heavy (water treated)], CuSO4 (10 ml of a 50 mM stock in water), and tris(benzyltriazolylmethyl) amine (30 ml of a 1.7 mM stock in 4:1 tBuOH/DMSO), to which tris(2- carboxyethyl)phosphine (10 ml of a 50 mM stock) was added. The reaction was performed for 1 hr at room temperature. The light- and heavy-labeled samples were then centrifuged at 16,000 x g for 5 min at 4°C to harvest the precipitated proteins. The resulting pellets were resuspended in 500 ml of cold methanol by sonication, and the heavy and light samples were combined pairwise. Combined pellets were then washed with cold methanol, after which the pellet was solubilized by sonication in DPBS with 1.2% SDS. The samples were heated at 90°C for 5 min and subjected to streptavidin enrichment of probe-labeled proteins, sequential on-bead trypsin and TEV digestion, and liquid chromatography–tandem mass spectrometry.
 
@@ -161,15 +687,15 @@ RAW Xtractor (version 1.9.9.2; available at http://fields.scripps.edu/ downloads
 
 The quantification of light/heavy ratios (isoTOP-ABPP ratios, R values) was performed by in-house CIMAGE software using default parameters (three MS1s per peak and a signal-to-noise threshold of 2.5). See Figure 3—source data 1 for additional filtering parameters.
 
-## Offspring assay
+### Offspring assay
 
 N2 animals were age-synchronized and allowed to grow in liquid medium in a 6 cm plate. By the L4 stage, a single worm was transferred into each well in the first column of a 96-well plate (eight animals) containing liquid medium without FUDR, two plates per condition. On day 1, animals were treated with water or 100 μM minocycline. Every 24 hr, the adult animals were transferred to the well in the next column over and progeny was scored from the previous well using an inverted microscope. This process was continued until day 5 of adulthood.
 
-## Worm size assay
+### Worm size assay
 
 Animals prepared as in the lifespan assay and treated with water or 100 μM minocycline on day 1 were imaged across 4 days using a 10x objective with the ImageXpress Micro XL and the length in pixels of each worm measured was determined using CellProfiler analysis software.
 
-## Metabolic mass spectrometry
+### Metabolic mass spectrometry
 
 Animals and bacteria were metabolically labeled with the desired nitrogen isotope (14N or 15N) as previously described (Gomez-Amaro et al., 2015). After a minimum of three generations, ~20,000 age-synchronized larvae per condition were transferred to 15 cm culture dishes and cultured in liquid medium plus metabolically labeled 14N (experimental) or 15N (mixed-population standard) bacteria (6 mg/ml). Water or 100 μM minocycline were added and animals were collected at different time points (L4→day 1, day 5→day 6, day 5→day 8). To control for differences in protein content due to minocycline treatment, samples were normalized by RNA concentration.
 
@@ -181,44 +707,44 @@ Conditions for the Eksigent nano-HPLC were as follows: Gradients were run with a
 
 Data were converted using the ABSCIEX conversion software to mgf format and MZML format. The peak list was generated by searching a SwissProt database using MASCOT, with the taxonomy set to C. elegans and E. coli simultaneously (Matrix Science). An MS/MS Ion search was performed using the 15N quantification, with a peptide mass tolerance of ±0.1 Da and a fragment mass tolerance of ±0.1 Da. The maximum number of missed cleavages was set to 2. MS1 scans for identified peptides were fit to three isotope distributions using ISODIST.
 
-## 20S proteasome assay
+### 20S proteasome assay
 
 2500 age-synchronized animals were grown on 10-cm culture plates (Corning, cat # 351029) per condition in liquid medium. Water or 100 μM minocycline were added on day 1. On day 5, animals were collected and washed 3x with cold DPBS, then once with 1x assay buffer (Chemicon International, cat # APT280). Animals were lysed with Precellys homogenizer and spun down at 12,000 x g for 5 min. Protein concentrations were measured and normalized using Bradford assay. 20S proteasome activity was measured for each lysate according to the protocol (Chemicon International, cat # APT280). 200 μg of samples were loaded with assay mixture into each well of a UV-transparent 96-well plate and incubated for 1 hr at 37°C. Fluorescence was measured on the Tecan Safire II with a 380/460 nm filter set.
 
-## Cell culture authentication and testing
+### Cell culture authentication and testing
 
 HeLa cells (ATCC CCL-2) or NIH 3T3 cells (ATCC CRL-1658) were directly obtained from ATCC. Mycoplasma testing was done every 6 months through TSRI. The identity of the HEK293DAX cells was verified by the induction of ATF6 through TMP.
 
-## 35S Incorporation
+### 35S Incorporation
 
 HeLa cells (ATCC CCL-2) or NIH 3T3 cells (ATCC CRL-1658) were grown at 37°C and plated onto a six-well plate (Corning, cat # 353046) in DMEM (Life Technologies, cat # 11995073) supplemented with 10% FBS (ATCC, cat # 30 – 2021) and penicillin-streptomycin and the indicated concentrations of cycloheximide or minocycline were added to 70% confluent cells and incubated for 6 hr. DMEM culture media was removed and wells were washed 2x with warm DPBS. 2 ml of a DMEM solution without methionine or cysteine (Life Technologies, cat # 21013024) supplemented with 10% dialyzed FBS (VWR Intl., cat # 101301 – 494) and [35S]-methionine/cysteine (PerkinElmer, cat # NEG772002MC) was added to each well for 1 hr. Media was removed and wells were washed 2x with cold DPBS and 200 μl of cold RIPA buffer (Fisher Scientific, cat # 507513771) with protease inhibitor (cOmplete mini EDTA-free, Sigma-Aldrich, cat # 11836170001) was added to each well for 15 min on ice. Lysates were collected and spun down at 5000 g for 10 min. Samples normalized by protein concentration, determined by Bradford assay, were run on an SDS-PAGE gel. The gel was stained with Coomassie Brilliant Blue G-250 (MP Biomedicals, cat # 0219034325), imaged for loading control, dried and exposed overnight to a phosphor screen and imaged again using a Typhoon 9400 imager. Lanes were quantified using ImageQuant software (GE Healthcare Life Sciences).
 
-## Polysome profile
+### Polysome profile
 
 HeLa cells were grown on 10 cm culture plates (Olympus Plastics, #25 – 202) at 37°C in DMEM culture media supplemented with 10% FBS and penicillin-streptomycin and water or 100 μM minocycline was added to 70% confluent cells for 12 hr. 100 μg/ml cycloheximide was added to each plate for 10 min. On ice, medium was removed, plates were washed 2x with cold wash buffer (DPBS supplemented with 100 μg/ml cycloheximide) and cells were removed in 1 ml wash buffer using a cell scraper. Cells were transferred to eppendorf tubes and spun down for 5 min at 2300 g at 4°C. Supernatant was removed and 300 μl cold hypotonic buffer (1.5 mM KCl, 10 mM MgCl2, 5 mM Tris-HCl, pH 7.4, 100 μg/ml cycloheximide) was added and gently mixed. 300 μl cold hypotonic lysis buffer (2% sodium deoxycholate, 2% Triton X-100, 2.5 mM DTT, 100 μg/ml cycloheximide, and 10 units of RNAsin/ml in hypotonic buffer) was added and cells were homogenized by using 10 strokes with a glass dounce homogenizer on ice. Samples were spun down at 2300 x g for 10 min at 4°C. Supernatants were transferred to fresh eppendorf tubes and RNA concentration was determined by measuring the A260. 2 mg RNA were loaded onto 17 – 51% sucrose gradients prepared with a gradient maker in SW41 tubes (Denville, cat # U5030). Tubes were centrifuged at 40,000 rpm for 2.5 hr at 4°C using an SW41 rotor. OD260 was measured for each sample using an online Isco Model UA-5 Absorbance/Fluorescence Monitor.
 
-## HSP western blot
+### HSP western blot
 
 HeLa cells were grown on 10 cm culture plates at 37°C in DMEM supplemented with 10% FBS and penicillin-streptomycin and water or 100 μM minocycline was added for 12 hr to 70% confluent cells. Cells were transferred to 43°C for a 1 hr heat shock, then returned to 37°C for a 6 hr recovery period. Plates were washed 2x with cold DPBS, then 500 μl cold RIPA buffer containing protease inhibitor was added for 15 min on ice. Lysates were collected, normalized by RNA concentration, run on an SDS-PAGE gel and transferred for immunoblot detection. Anti-actin (MP Biomedicals, cat # 08691001), anti-Hsp60 (ThermoFisher, cat # MA3-012) and anti-Hsp70/72 (Enzo, cat # ADI-SPA-810) primary antibodies and IRDye 800CW secondary antibody (Li-Cor, cat # 926 – 32210) were used for detection.
 
-## Quantitative real-time PCR (qRT-PCR) and data analysis
+### Quantitative real-time PCR (qRT-PCR) and data analysis
 
 All qRT-PCR experiments were conducted according to the MIQE guidelines (Bustin et al., 2009), except that samples were not tested in a bio-analyzer, but photometrically quantified using a Nanodrop. HeLa cells were grown as described above to 70% confluency and treated with or without 100 μM minocycline, two 10 cm plates per condition. 12 hr after treatment, one each of the untreated and minocycline-treated plates were subjected to a 1 hr heat shock at 43°C and returned to 37°C for a 3 hr recovery. Cells were collected and RNA was extracted as described in the Qiagen RNeasy mini kit protocol (Qiagen, cat # 74104). Cell culture plates were washed two times with warm DPBS, followed by addition of Buffer RLT. Cells were removed from plates with a cell scraper and collected in eppendorf tubes. RNeasy spin columns were used to purify RNA and on-column DNase digestion was performed. For C. elegans samples,~2000 age-synchronized day 1 CL2070 hsp-16.2p::GFP animals cultured in 10 cm plates were treated with water or 100 μM minocycline for 2 hr prior to inducing heat shock at 35°C for 1.5 hr, and harvested immediately after. Harvested animals were washed three times in ice cold DPBS and frozen in liquid nitrogen. To extract RNA, frozen animals were re-suspended in ice-cold Trizol (Qiagen, cat # 79306), zirconium beads, and glass beads in the ratio of 5:1:1 respectively, and disrupted in Precellys lysing system (6500 rpm, 3 × 10 s cycles) followed by chloroform extraction. RNA was precipitated using isopropanol and washed once with 75% ethanol followed by DNAse (Sigma-Aldrich, cat # AMPD1-1KT) treatment.
 
 For all RNA samples, reverse transcription was carried out using iScript RT-Supermix (Bio-Rad, cat # 170 – 8841) at 42°C for 30 min. Quantitative PCR reactions were set up in 384-well plates (Bio-Rad, cat # HSP3901), which included 2.5 µl Bio-Rad SsoAdvanced SYBR Green Supermix (cat # 172 – 5264), 1 µl cDNA template (2.5 ng/µl, to final of 0.5 ng/µl in 5 µl PCR reaction), 1 µl water, and 0.5 µl of forward and reverse primers (150 nM final concentration). Quantitative PCR was carried out using a Bio-Rad CFX384 Real-Time thermocycler (95°C, 3 min; 40 cycles of 95°C 10 s, 60°C 30 s; Melting curve: 95°C 5 s, 60–95°C at 0.5°C increment, 10 s). Gene expression was normalized to two references genes for the HeLa cell samples, SDHA and HSPC3, and three reference genes for C. elegans samples, crn-3, xpg-1 and rpl-6, using the Bio-Rad CFX Manager software. Statistical significance was determined using Student’s t-test
 
-## HEK293DAXwestern blot
+### HEK293DAXwestern blot
 
 HEK293DAX cells were grown on 6-well plates at 37°C in DMEM supplemented with 10% FBS and penicillin-streptomycin. Water or 100 μM minocycline was added with or without 20 uM trimethoprim for 12 hr to 70% confluent cells. Plates were washed 2x with cold DPBS, then 200 μl cold RIPA buffer containing protease inhibitor was added for 15 min on ice. Lysates were collected, normalized by RNA concentration, run on an SDS-PAGE gel and transferred for immunoblot detection. Anti-actin and anti-GRP78 BiP primary (Abcam, cat # ab21685) antibodies and IRDye 800CW (Li-Cor, anti-mouse, cat # 926 – 32210 and anti-rabbit, cat # 926 – 32211) secondary antibodies were used for detection.
 
-## ProteoStat aggregation assay
+### ProteoStat aggregation assay
 
 ~70% confluent HeLa cells plated on two 6-well plates were treated for 6 hr with water or 100 μM minocycline, three wells per treatment. One plate was heat shocked for 1 hr at 43°C followed by a 1 hr recovery period at 37°C. Wells were washed two times with cold DPBS and then incubated on ice for 15 min with cold RIPA +protease inhibitor. Lysate for each well was collected and spun down at 5000 x g for 10 min. Protein concentration was measured for each sample using and all samples were normalized. Aggregation was measured using the PROTEOSTAT detection reagent (Enzo, cat # ENZ-51023) for 10 μg protein of each sample. Fluorescence was measured with excitation of 550 nm and emission at of 600 nm on a Tecan Sapphire two plate reader over a 30-min period, with one reading per minute. Fluorescence values for each sample were averaged over the 30-min period to determine a corresponding aggregate value normalized to the water treated samples.
 
-## ISRIB translation
+### ISRIB translation
 
 HeLa cells were plated onto a 6-well plate in DMEM culture media supplemented with 10% FBS and penicillin-streptomycin and ISRIB (200 nM) (R and D Systems, cat # 5284/10). Minocycline (100 μM), thapsigargin (200 nM) (Cayman Chemical, cat # 10522) or different combinations of the three were added to 70% confluent cells and incubated for 3 hr (ISRIB and/or thapsigargin-treated samples) or 6 hr (minocycline-treated samples). 35S incorporation was measured using the protocol described above (35S incorporation).
 
-## Yeast lifespan assay
+### Yeast lifespan assay
 
 Yeast RLS assays were performed by isolating virgin daughter cells of the BY4741 strain and then allowed to grow into mother cells while their corresponding daughters were microdissected and counted, until the mother cell could no longer divide. Data were analyzed using the Wilcoxon rank-sum test.

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05rrcem69 Department of Medical Microbiology and Immunology, School of Medicine, University of California, Davis Davis United States
+1. Department of Medical Microbiology and Immunology, School of Medicine, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 
 † Corresponding author
 

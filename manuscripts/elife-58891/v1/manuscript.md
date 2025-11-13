@@ -35,7 +35,7 @@ To test whether a valence-dependent bias in belief updating, or the lack thereof
 
 ## Results
 
-## Belief update task
+### Belief update task
 
 Forty-five patients diagnosed with bipolar disorder (see Supplementary file 1 for patients’ demographics and characteristics) performed the belief update task while in the euthymic phase (Figure 1). Nine patients dropped out of the study before 5 years elapsed. The rest - 36 patients - were monitored for symptoms approximately every 2 months for the following 5 years. The task allows quantification of belief change in response to information that is better or worse than expected. The task and analysis employed here have been used numerous times before (Chowdhury et al., 2014; Garrett et al., 2018; Garrett et al., 2014; Garrett and Sharot, 2016; Garrett and Sharot, 2014; Kappes et al., 2018; Korn et al., 2014; Kuzmanovic et al., 2016; Kuzmanovic et al., 2014; Moutsiana et al., 2013; Moutsiana et al., 2015; Sharot et al., 2012b; Sharot et al., 2012a; Sharot et al., 2011). Participants were presented with 40 adverse life events (e.g. robbery, card fraud) and asked to estimate how likely the event was to happen to them in the future (this is referred to as the first estimate). They were then presented with the base rate of the event in a demographically similar population (this is referred to as information). For each trial, an estimation error term was calculated as the difference between the probability presented (information) and participants’ first estimate on that trial. In a second session, participants were asked again to provide estimates of their likelihood of encountering the same events (this is referred to as second estimate). Trials were divided into those in which participants received good news (i.e. the probability presented of encountering an aversive event was lower than the subject’s first estimate of their own probability; see Figure 1a) or bad news (i.e. the probability presented was higher than the subject’s first estimate of their own probability; see Figure 1b). While information can be better or worse than expected, all stimuli are negative life events. Thus, comparison is never between positive and negative stimuli, but between information that is better (thus subjectively positive) or worse (thus subjectively negative) than expected. Different methods of dividing trials in this task has shown to yield similar results (Garrett and Sharot, 2014), thus we used the original task design here.
 
@@ -51,7 +51,7 @@ At the end of the task, participants were asked to provide the actual probabilit
 
 The question we address here is whether the magnitude of the bias in belief updating (Update Bias) is associated with the patients’ prognosis. Patients were followed up for 5 years after they completed the update bias task and we logged their episode recurrence during this period. This enabled us to calculate the duration of time spent in euthymia for each participant from when they completed the task in a euthymic phase until their next episode (‘future time in euthymia’). We then examined if the future time in euthymia was predicted by their update bias score.
 
-## Belief update bias is associated with future duration of euthymia
+### Belief update bias is associated with future duration of euthymia
 
 We found an association between the update bias and future time in euthymia with a larger positive update bias related to longer time in euthymia. In particular, we implemented the linear regression with future time in euthymia as the dependent measure and update bias (our main measure of interest) as the independent measure. We also added (1) prior beliefs (mean first estimate) and the difference between good news trials and bad news trials on the following measures to control for possible confounds: (2) estimation errors (3) memory error (4) number of trials (5-6) reaction times at the first and second estimate and (7-11) all subjective ratings (that is ratings on familiarity, prior experience, vividness, emotional arousal and negativity) (see Materials and methods). The analysis revealed a significant effect of belief update bias (Beta = 0.589, p=0.004, bootstrapping on 10,000 samples, 95% CI = 0.122–1.129) with a larger bias predictive of greater future time in euthymia (Figure 2, Supplementary file 2a). To test whether this effect may have been attributed to multicollinearity within the model, we calculated the Variance Inflation Factor (VIF) of the update bias. This revealed a low VIF (=1.93), which indicates that the variable does not display collinearity with the other variables in the model. Lower first estimation (optimistic priors) was also associated with longer future time in euthymia (Beta = −2.74, p=0.003) along with the difference in the number of good and bad news trials (Beta = 2.02, p=0.003).
 
@@ -65,7 +65,7 @@ To test whether the update bias predicted future time in euthymia differently fo
 
 Finally, we examined if the update bias predicts time in euthymia while only controlling for variables for which significant differences exists between good news trials and bad news trials, as those differences may introduce noise that can obscure the effects of update bias if not controlled for. To identify these variables, we tested with paired sample t-test if any of the variables in Model 1 showed significant differences between good and bad news trials. This revealed significant effects for each subjective rating: past experience, familiarity, vividness, arousal, vividness and negativity (vividness t(34) = 3.96, p<0.001; familiarity t(34) = 3.38, p=0.002; prior experience t(34) = 3.304, p=0.002; emotional arousal t(34) = 3.971, p<0.001; negativity t(34) = 2.414, p=0.021). No other differences were found (Supplementary file 1a). We thus ran a linear regression with future time in euthymia as the dependent measure and update bias (our main measure of interest) as the independent measure controlling only for the subjective measures above. We found that Update Bias was significantly associated with time in euthymia (Beta = 0.351; p=0.047), with no multicollinearity (VIF = 1.098). In this model, ratings of emotional arousal (Beta = 0.775, p=0.016) and negativity (Beta = −0.576, p=0.026) were also significant predictors. Note, however, that these latter effects do not remain significant in the original model once controlling for other task variables whilst the update bias does.
 
-## Future time in euthymia is associated with greater updating in response to good news and less updating in response to bad news
+#### Future time in euthymia is associated with greater updating in response to good news and less updating in response to bad news
 
 Thus far, we have shown that patients with a greater, more optimistic, update bias experienced euthymia for longer, whilst those with a smaller bias relapsed faster. Since the update bias is a difference score (the difference between updating beliefs in response to good and bad news), the association could be due to a variation in belief updating in response to good news, bad news or both. To that end, we ran two separate linear regressions predicting future time in euthymia. These were exactly as described above except that in one (Model 1a), update in response to good news was an independent variable in place of update bias. In the other (Model 1b), update in response to bad news was the independent variable in place of update bias. We found that longer future time in euthymia was associated with greater updating from good news (Model 1a: good news Beta = 0.570, p=0.002, VIF = 1.673, Figure 3, Supplementary file 2b). Updating from bad news (Model 1b) showed a non-significant association in the opposite direction (Beta = −0.276, p=0.219, VIF = 2.038, Figure 4, Supplementary file 2c). When including both update for good news and bad news in the same linear regression, update for good news was again significantly associated with future time in euthymia (Beta = 0.543, p=0.004, VIF = 1.721) whilst update from bad news was not (Beta = −0.175; p=0.354, VIF = 2.097).
 
@@ -77,7 +77,7 @@ Thus far, we have shown that patients with a greater, more optimistic, update bi
 
 **Figure 4.:** Future time in euthymia showed a negative, non-significant, association with updating in response to bad news. The X-axis represents the residuals in predicting the Update score in response to bad news from all the independent variables included in the model as a control. These are the subjects’ prior beliefs represented by their mean first estimate and the difference between good news trials and bad news trials on estimation errors, memory error, number of trials, reaction times at the first and second estimate and all the subjective ratings. The Y-axis represents the residuals from predicting time in euthymia (logarithmic transformed to account for skewedness) from the same independent variables. The dotted lines represent 95% confidence intervals.
 
-## Update bias is associated with future time in euthymia beyond all other clinical indicators
+#### Update bias is associated with future time in euthymia beyond all other clinical indicators
 
 To examine if traditional clinical indicators also predicted future time in euthymia, we ran the same linear regression again (including all task controls as described above), but this time we included clinical and demographic variables. Specifically: age, education, gender, bipolar type (I or II), being on mood stabilizers (lithium, anticonvulsants), antipsychotics, antidepressants, history of psychotic symptoms, duration of illness and Beck Depression Inventory scores (Altamura et al., 2015; Lähteenvuo et al., 2018; Radua et al., 2017; Tundo et al., 2018).
 
@@ -89,7 +89,7 @@ As the update bias is a predictor of future time in euthymia, one may wonder whe
 
 The above results indicate that the relationship between update bias and future time in euthymia cannot be accounted for by demographics, clinical indicators of illness course or personality traits. Moreover, as we always control for task variables, the effect cannot be explained by attention or memory of the information received (as these are controlled for by adding memory in the linear regression), or by how familiar or experienced participants were with the stimuli presented (as ratings of these were included in the linear regression), nor by how negative they found the stimuli to be (again, these ratings were included).
 
-## Leave-one-out validation
+#### Leave-one-out validation
 
 Next, we tested the predictive validity of the above model using leave one out analysis in which the abovementioned linear regression was ran on all the data save for one participant which was held out from the analysis. We then used the regression betas to predict relapse of the left-out participant. This process was repeated so that each participants’ time to relapse was estimated from model parameters generated without using that participant to fit the data. Participants actual time to relapse (data) and their predicted time to relapse (estimation) were then correlated and also compared using a paired sample t-test. This analysis indicates whether the update bias is a good predictor of future time in euthymia.
 
@@ -117,7 +117,7 @@ In sum, we found that greater belief updating in response to positive informatio
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Patients were recruited at the Psychiatric University Clinic of Parma, a public community-based mental health service, from the 31st of January 2013 to the 26th of November 2014. A psychiatrist (PO) evaluated patients using a suitably structured socio-demographic interview to collect anamnestic and data concerning therapy and illness course.
 
@@ -127,55 +127,77 @@ The study design is observational and prospective. The patients were followed-up
 
 Participants were invited to participate in the study if they: (1) Fulfilled the diagnostic criteria for Bipolar Disorder I or II at the Structured Clinical Interview for DSM IV TR Disorders (First et al., 2002) in full remission. (2) Did not satisfy the criteria for Rapid Cycling (i.e. more than four episodes/year) (American Psychiatric Association, 2013); (5) Did not have any other major axis I diagnosis (i.e. Schizophrenia spectrum disorder, Obsessive Compulsive Disorder, Panic Disorder, Generalized Anxiety Disorder, Post Traumatic Stress Disorder, Anorexia Nervosa, Binge Eating Disorder). Specific Phobias and Personality Disorders were not considered because they are outside the study’s aim; (6) Did not reveal substance abuse/dependence or addictive disorder in the previous three months; (7) Did not show cognitive impairment, defined as score of less than 25 on the Mini Mental State Examination (Folstein et al., 1975).
 
-## Behavioral task
+### Behavioral task
 
 Behavioral task was adapted from our past study (Sharot et al., 2011). This task has been used numerous times in the literature (Chowdhury et al., 2014; Garrett et al., 2018; Garrett et al., 2014; Garrett and Sharot, 2016; Garrett and Sharot, 2014; Kappes et al., 2018; Korn et al., 2014; Kuzmanovic et al., 2016; Kuzmanovic et al., 2014; Ma et al., 2016; Moutsiana et al., 2015; Moutsiana et al., 2013; Sharot et al., 2012b; Sharot et al., 2012a; Sharot et al., 2011).
 
-## Stimuli
+#### Stimuli
 
 Forty short descriptions of negative life events (for example: domestic burglary, card fraud) were presented in a random order. The original English stimuli (Sharot et al., 2011) were translated into Italian by a native Italian speaker with English as a second language and approved by the author according to a back-translation model. Very rare or very common events were not included; all event probabilities lay between 10% and 70%. To ensure that the range of possible overestimation was equal to the range of possible underestimation, participants were told that the range of probabilities lay between 3% and 77% and were only permitted to enter estimates within this range. Participants were randomly assigned one of three possible lists of stimuli (each list comprised a different set of 40 stimuli).
 
-## Paradigm
+#### Paradigm
 
 All subjects completed a practice session of three trials before beginning the main experiment. On each trial, one of the 40 adverse life events were presented for 4 s. Participants were asked to estimate how likely the event was to happen to them in the future. Participants had up to 6 s to respond. If participants had already experienced an event, they were instructed to estimate the likelihood of that event happening to them again in the future. If the participant failed to respond, that trial was excluded from all subsequent analyses (mean trials with missing response = 4.73, s.d. = 4.03). Following presentation of a fixation cross, participants were presented with the probability of an event occurring in a demographically similar population for 2 s followed by a fixation cross. In a second session, immediately after the first, participants were asked again to provide estimates of their likelihood of encountering the same events so that we could assess how they updated their estimate in response to the information presented. Probabilities of the events occurring were not provided in this second session (Figure 1). After the task participants completed the Beck Depression Inventory (BDI-II) (Beck et al., 1996) and the Revised Life Orientation Test (LOT-R) to evaluate patients’ trait optimism (Scheier et al., 1994).
 
-## Memory control
+#### Memory control
 
-To control for memory effects, participants were asked at the end of the experiment to provide the actual probability previously presented for each event. Memory errors were calculated as the absolute difference between the probability previously presented and the participants’ recollection of that statistic:MemoryError=|ProbabilityPresented−RecollectionofProbabilityPresented|
+To control for memory effects, participants were asked at the end of the experiment to provide the actual probability previously presented for each event. Memory errors were calculated as the absolute difference between the probability previously presented and the participants’ recollection of that statistic:
 
-## Other controls
+$$
+MemoryError=|ProbabilityPresented−RecollectionofProbabilityPresented|
+$$
+
+#### Other controls
 
 Following previous studies papers adopting the same task in clinically depressed participants (Garrett et al., 2014; Korn et al., 2014) after completing the task, participants also rated all stimuli on familiarity [for the question ‘‘Regardless if this event has happened to you before, how familiar do you feel it is to you from TV, friends, movies, and so on?’’ the responses ranged from 1 (not at all familiar) to 6 (very familiar)], prior experience [for the question ‘‘Has this event happened to you before?’’ the responses ranged from 1 (never) to 6 (very often)], vividness [for the question ‘How vividly could you imagine this event?’ (1, not at all vivid, to 6, very vividly)], emotional arousal [for the question ‘When you imagine this event, how emotionally arousing do you find the image in your mind?’ (1, not at all arousing, to 6, very arousing)] and negativity [for the question ‘‘How negative would this event be for you?’’ the responses ranged from 1 (not negative at all) to 6 (very negative)].
 
 One subject interrupted the experiment during the last part when memory and other control variables were being registered resulting in missing values for these parameters.
 
-## Statistical analysis
+#### Statistical analysis
 
 Trials were partitioned into either ‘good news’ or ‘bad news’ according to participants’ first estimates. A trial was defined as good news when the probability presented was lower than the first estimate of their own probability (Figure 1a). Similarly, when the probability presented was higher, the trial was classified as bad news (Figure 1b). Trials for which first estimates were equal to the information provided were excluded from subsequent analyses, as these could not be categorized into either condition.
 
-Update was calculated for each trial such that positive updates indicated a change towards the probability presented and negative updates a change away from the probability presented:Update(GoodNews)=FirstEstimate−SecondEstimateUpdate(BadNews)=SecondEstimate−FirstEstimate
+Update was calculated for each trial such that positive updates indicated a change towards the probability presented and negative updates a change away from the probability presented:
 
-We then computed the average update for good and bad news separately for each participant, as done previously (Chowdhury et al., 2014; Garrett et al., 2018; Garrett et al., 2014; Garrett and Sharot, 2014; Kappes et al., 2018; Korn et al., 2014; Kuzmanovic et al., 2016; Kuzmanovic et al., 2014; Moutsiana et al., 2015; Moutsiana et al., 2013; Sharot et al., 2012a; Sharot et al., 2012b; Sharot et al., 2011). A participant’s update bias was then computed as the signed difference between these two scores:UpdateBias=AverageUpdate(GoodNews)−AverageUpdate(BadNews)
+$$
+Update(GoodNews)=FirstEstimate−SecondEstimate
+$$
+
+
+
+$$
+Update(BadNews)=SecondEstimate−FirstEstimate
+$$
+
+We then computed the average update for good and bad news separately for each participant, as done previously (Chowdhury et al., 2014; Garrett et al., 2018; Garrett et al., 2014; Garrett and Sharot, 2014; Kappes et al., 2018; Korn et al., 2014; Kuzmanovic et al., 2016; Kuzmanovic et al., 2014; Moutsiana et al., 2015; Moutsiana et al., 2013; Sharot et al., 2012a; Sharot et al., 2012b; Sharot et al., 2011). A participant’s update bias was then computed as the signed difference between these two scores:
+
+$$
+UpdateBias=AverageUpdate(GoodNews)−AverageUpdate(BadNews)
+$$
 
 A score of 0 indicates no bias in updating in either direction; positive scores indicate an optimistic bias in updating such that participants change their beliefs to a greater degree for good news relative to bad news. Negative scores indicate a pessimistic bias in updating such that participants change their beliefs to a greater degree for bad news relative to good news.
 
 This bias can be seen both when trials are classified according to the participants’ estimate of base rate or self-risk (Garrett and Sharot, 2014; Kuzmanovic et al., 2014). Similarly, this bias is not affected by the estimate being either the likelihood of the event happening or not happening to them (Garrett et al., 2014; Garrett and Sharot, 2014; Sharot et al., 2011). Hence, here we use the classic approach in which we elicited the estimation of an event happening to them.
 
-We also computed the differences between good and bad trials on all the other task related variables, that were included as covariates in all the following models.Δ(X)=AverageXgoodnews−AverageXbadnews
+We also computed the differences between good and bad trials on all the other task related variables, that were included as covariates in all the following models.
+
+$$
+Δ(X)=AverageX_{goodnews}−AverageX_{badnews}
+$$
 
 This deltas resulted in a set of new variables named Δ estimation error, Δ memory errors, Δ number of trials, Δ reaction times at the first and second estimate, Δ familiarity, Δ prior experience, Δ vividness, Δ emotional arousal and Δ negativity.
 
-## Future time in euthymia
+### Future time in euthymia
 
 For each subject, we calculated the time in months they spent in euthymia following task completion until the onset of the next episode up to 5 years. For those who did not relapse during the follow-up, time in euthymia was set to 60 months (n = 6).
 
 Bipolar disorder is a recurrent disorder with a mean distance between episodes of approximately 1.5 years with half of the patients relapsing in the following year (Radua et al., 2017). As future time in euthymia was not normally distributed (Skewness = 1.362; Kolmogorov-Smirnov normality test = 0.301, p<0.001), we log-transformed this variable resulting in a normal distribution of the values (Skewness = −0.338; Kolmogorov-Smirnov normality test = 0.118; p>0.05).
 
-## Update bias and future time in euthymia
+### Update bias and future time in euthymia
 
 We conducted a linear regression with future time in euthymia as the dependent variable and update bias as our predictor of interest. To control for possible confounds, we also added as independent variables the mean first estimate and the difference between good news trials and bad news trials on the following measures: estimation errors, memory error, number of trials, reaction times at the first and second estimate and the subjective ratings on familiarity, prior experience, vividness, emotional arousal and negativity. We also ran this regression with bootstrapping in SPSS (10,000 runs with replacement).
 
-## Model 1
+#### Model 1
 
 Log (Future time in euthymia)=b0 + b1* update bias + b2* mean first estimate + b3* Δ estimation error + b4* Δ memory errors + b5* Δ number of trials + b6* RT first estimate + b7* RT second estimate + b8* Δ familiarity +b9* prior experience +b10* Δ vividness + b11*Δ emotional arousal + b12* Δ negativity + error.
 
@@ -191,7 +213,7 @@ Because difference between good news trials and bad news trials in task-related 
 
 To control for all demographic and clinical variables, we then ran a second linear regression with the following controls: age, education, gender, bipolar type (I or II), in-range plasmatic dosage of mood stabilizer (lithium, valproate, lamotrigine and carbamazepine), antipsychotics or antidepressant prescription, history of psychotic symptoms, duration of illness, and the BDI-II scores.
 
-## Model 2
+#### Model 2
 
 Log (Future time in euthymia)=b0 + b1* update bias + b2* mean first estimate + b3* Δ estimation error + b4* Δ memory errors + b5* Δ number of trials + b6* RT first estimate + b7* RT second estimate + b8* Δ familiarity + b9* prior experience + b10* Δ vividness + b11* Δ emotional arousal + b12* Δ negativity + b13* age + b14* years of education + b15* gender + b16* bipolar type + b17* depressive symptoms at BDI-II + b18* mood stabilizers + b19* antidepressants + b20* antipsychotics + b21* lithium + b22* history of psychotic symptoms + b23* duration of illness + error.
 
@@ -199,7 +221,7 @@ Log (Future time in euthymia)=b0 + b1* update bias + b2* mean first estimate + b
 
 To test for multicollinearity, using the SPSS collinearity diagnostics we calculated the Variance Inflation Factor (VIF) for our variable of interest. The VIF quantifies the amount of multicollinearity in a set of regression variables. It is equal to the ratio of the overall model variance to the variance of a model that includes only that single independent variable. A high VIF indicates that the independent variable is highly collinear with the other variables in the model. A low VIF (less than 4) indicated it is not.
 
-## Leave-one-out validation
+### Leave-one-out validation
 
 Next, we tested the robustness of the Model 2 using leave one out cross validation. Model 2 was rerun on all data except for one subject. The regression betas are then used to predict the relapse of that left out participant. This process was repeated for each participant so that the leave-one-out reiteration resulted in two values for time in euthymia for each subject: the actual time in euthymia (data) and the predicted value (estimate). We then ran a Pearson correlation between the two values as well as compared them using a t-test.
 

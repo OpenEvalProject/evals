@@ -12,15 +12,15 @@
 
 ### Affiliations
 
-1. https://ror.org/04xs57h96 Institute of Infection, Veterinary and Ecological Sciences, University of Liverpool Liverpool United Kingdom
-2. https://ror.org/01ee9ar58 School of Life Sciences, University of Nottingham Nottingham United Kingdom
-3. https://ror.org/01tmqtf75 School of Environment and Life Sciences, University of Salford Salford United Kingdom
+1. Institute of Infection, Veterinary and Ecological Sciences, University of Liverpool Liverpool United Kingdom ([ROR:04xs57h96](https://ror.org/04xs57h96))
+2. School of Life Sciences, University of Nottingham Nottingham United Kingdom ([ROR:01ee9ar58](https://ror.org/01ee9ar58))
+3. School of Environment and Life Sciences, University of Salford Salford United Kingdom ([ROR:01tmqtf75](https://ror.org/01tmqtf75))
 
 † Corresponding author
 
 ## Abstract
 
-The genotype of an individual is an important predictor of their immune function, and subsequently, their ability to control or avoid infection and ultimately contribute offspring to the next generation. However, the same genotype, subjected to different intrinsic and/or extrinsic environments, can also result in different phenotypic outcomes, which can be missed in controlled laboratory studies. Natural wildlife populations, which capture both genotypic and environmental variability, provide an opportunity to more fully understand the phenotypic expression of genetic variation. We identified a synonymous polymorphism in the high-affinity Immunoglobulin E (IgE) receptor (GC and non-GC haplotypes) that has sex-dependent effects on immune gene expression, susceptibility to infection, and reproductive success of individuals in a natural population of field voles ( Microtus agrestis ). We found that the effect of the GC haplotype on the expression of immune genes differed between sexes. Regardless of sex, both pro-inflammatory and anti-inflammatory genes were more highly relatively expressed in individuals with the GC haplotype than individuals without the haplotype. However, males with the GC haplotype showed a stronger signal for pro-inflammatory genes, while females showed a stronger signal for anti-inflammatory genes. Furthermore, we found an effect of the GC haplotype on the probability of infection with a common microparasite , Babesia microti, in females – with females carrying the GC haplotype being more likely to be infected. Finally, we found an effect of the GC haplotype on reproductive success in males – with males carrying the GC haplotype having a lower reproductive success. This is a rare example of a polymorphism whose consequences we are able to follow across immunity, infection, and reproduction for both males and females in a natural population.
+The genotype of an individual is an important predictor of their immune function, and subsequently, their ability to control or avoid infection and ultimately contribute offspring to the next generation. However, the same genotype, subjected to different intrinsic and/or extrinsic environments, can also result in different phenotypic outcomes, which can be missed in controlled laboratory studies. Natural wildlife populations, which capture both genotypic and environmental variability, provide an opportunity to more fully understand the phenotypic expression of genetic variation. We identified a synonymous polymorphism in the high-affinity Immunoglobulin E (IgE) receptor (GC and non-GC haplotypes) that has sex-dependent effects on immune gene expression, susceptibility to infection, and reproductive success of individuals in a natural population of field voles (Microtus agrestis). We found that the effect of the GC haplotype on the expression of immune genes differed between sexes. Regardless of sex, both pro-inflammatory and anti-inflammatory genes were more highly relatively expressed in individuals with the GC haplotype than individuals without the haplotype. However, males with the GC haplotype showed a stronger signal for pro-inflammatory genes, while females showed a stronger signal for anti-inflammatory genes. Furthermore, we found an effect of the GC haplotype on the probability of infection with a common microparasite, Babesia microti, in females – with females carrying the GC haplotype being more likely to be infected. Finally, we found an effect of the GC haplotype on reproductive success in males – with males carrying the GC haplotype having a lower reproductive success. This is a rare example of a polymorphism whose consequences we are able to follow across immunity, infection, and reproduction for both males and females in a natural population.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ In a previous study of a natural population of M. agrestis, we found that males 
 
 We sampled a natural population of M. agrestis in Kielder Forest, Northumberland, UK, over 3 years (2015–2017) and across seven different sites. Our study involved a cross-sectional component (n = 317 destructively sampled voles) and a longitudinal component (n = 850 marked individuals monitored through time, with n = 2387 sampling points). We tested the consequences of the GC haplotype of the Fcer1a gene using both cross-sectional and longitudinal components of our study. As well as the GC haplotype (present at a frequency of 0.08), three other haplotypes were present in our study population: AC haplotype, AT haplotype, and GT haplotype, present at frequencies of 0.81, 0.10, and 0.01, respectively. The two single-nucleotide polymorphisms (SNPs) composing the haplotype were found to be tightly linked (r2 = 0.50; D’ = 0.70).
 
-## The GC haplotype has effects on inflammation that differ between sexes
+### The GC haplotype has effects on inflammation that differ between sexes
 
 In humans, naturally occurring polymorphisms in the Fcer1a gene have previously been linked to inflammatory disease (Hasegawa et al., 2003; Potaczek et al., 2006; Zhou et al., 2012; Niwa et al., 2010). Therefore, we used the cross-sectional component of our study to test the effects of the GC haplotype on inflammation in males and females. Differential gene expression (DGE) analysis was performed on unstimulated splenocytes taken from 53 males and 31 females assayed by RNASeq, with the aim of identifying individual genes that were differentially expressed between those individuals with and without a copy of the GC haplotype. This DGE analysis showed that the identity of top differentially expressed genes differed between the sexes. In males, the top differentially expressed immune gene was the cytokine, Il33 (log fold change [logFC] = 2.76, p<0.001, q < 0.001; Appendix 1—table 2) while in females it was the suppressor of cytokine signaling Socs3 (logFC = 1.07, p<0.001, q = 0.05; Appendix 1—table 3). Looking at the ranking of each top differentially expressed immune gene in the opposite sex strengthens the case for differing effects in males and females, with Il33 ranked markedly lower in females (rank = 8224/12904, logFC = 0.29, p=0.70, q = 1.00) and Socs3 markedly lower in males (rank = 10886/12904, logFC = –0.05, p=0.84, q = 1.00). Il33 is commonly associated with the anti-helminthic response (Liew et al., 2010) and Socs3 with regulation of the immune response more broadly (Carow and Rottenberg, 2014). Given the link between Il33 and the antihelminthic response (and more generally, IgE-mediated responses and the antihelminthic response), we repeated the DGE analysis while controlling for cestode burden, but this had little effect on our results (same top differentially expressed immune genes; see Appendix 1—table 4 and Appendix 1—table 5), suggesting that these effects were not driven by differences in cestode infection.
 
@@ -48,15 +48,15 @@ Both Il33 and Socs3 also share an association with the inflammatory response (Ca
 
 To further explore these effects on the inflammatory response, we used an independent dataset for males and females whose spleens were stimulated with two immune agonists and assayed by Q-PCR (for a panel of 18 immune genes with limited redundancy; see 'Materials and methods' for how these genes were selected). From this ex vivo assay, one can gain insight into the types of immune response that could be made to a pathogen in vivo (see 'Materials and methods' for details). Although our panel of genes did not include Il33 or Socs3, it did include other genes associated with the inflammatory response, including Il17a, Ifng, Il1b, Il6, and Tnfa. We found that the effect of the GC haplotype on the stimulated expression levels of Il17a, a pro-inflammatory cytokine involved in the antibacterial response, displayed a significant interaction with sex (genotype by sex interaction in follow-up linear mixed effects model [LMM], likelihood ratio test [LRT] p=0.001). While females with the GC haplotype expressed lower levels of Il17a (estimate = –0.12, 95% CI = −0.19 to −0.04), males with the GC haplotype did not differ in their expressed levels of Il17a (estimate = 0.03, 95% CI includes zero = –0.02 to 0.08; Appendix 1—table 6 and Appendix 1—table 7).
 
-## The GC haplotype affects oxidative stress
+### The GC haplotype affects oxidative stress
 
 Inflammation and oxidative stress are closely related and often lead to pathology (Biswas, 2016). To test whether the effects of the GC haplotype on inflammation may be having knock-on effects on oxidative stress, we again used the cross-sectional component of our study. We tested the effect of the GC haplotype on antioxidant superoxide dismutase 1 (SOD1) enzymatic activity in males and females. SOD1 is one of the main antioxidative enzymes within the antioxidative enzyme system (Sun et al., 1989). We found that (irrespective of sex) individuals with the AT haplotype had lower SOD1 activity compared with other haplotypes, including the GC haplotype (p=0.04; Appendix 1—table 8).
 
-## The GC haplotype affects susceptibility to Babesia infection in females
+### The GC haplotype affects susceptibility to Babesia infection in females
 
 We then used the longitudinal component of our study to test the effects of the GC haplotype on the probability of infection with common parasites known to infect our study population: two micro-parasites Babesia microti and Bartonella spp. and a range of macroparasites (ticks, fleas, and cestodes). We found an effect of the GC haplotype on the probability of infection with B. microti, which displayed a marginally significant interaction with sex (genotype by sex interaction, LRT p=0.048; Appendix 1—table 9). While females with the GC haplotype were more likely to be infected with B. microti (log odds ratio = 1.25, 95% CI = 0.44–2.07; Figure 1B, lower panel), males with the GC haplotype did not differ in their susceptibility to infection (log odds ratio = 0.14, 95% CI includes zero = –0.76 to 1.03; Figure 1B, upper panel). However, we found no effect of the haplotype (interactive or not) on the probability of infection with the other parasites in our population (Appendix 1—table 10, Appendix 1—table 11 and Appendix 1—table 17).
 
-## The GC haplotype reduces male reproductive success
+### The GC haplotype reduces male reproductive success
 
 We genotyped both cross-sectional and longitudinal voles for 114 SNPs and used this dataset to construct a pedigree. We estimated each individual's reproductive success by counting the number of offspring it produced according to this pedigree. We then tested the effects of the GC haplotype on this measure of reproductive success. We tried to run a single model with both sexes (as above) but resulting residual variances differed significantly between the sexes, which reflects the fact that male and female reproduction are inherently different traits. This made it impossible to formally test for a genotype by sex interaction, and so instead we ran a separate model for each sex. We found that males with the GC haplotype had an average of 2.2 fewer offspring than males without the haplotype (p=0.04; Appendix 1—table 12; Figure 1C, upper panel). Despite a larger sample size and lower variability in reproductive success, females with the GC haplotype did not differ significantly in their number of offspring (genotype term did not appear in best model; Appendix 1—table 13; Figure 1C, lower panel). This is suggestive of a significant genotype by sex interaction. We ran the same models including microparasite variables, but this had little effect on our results (see Appendix 1—table 14 and Appendix 1—table 15), suggesting that these effects were not driven by differences in microparasite infection.
 
@@ -80,65 +80,196 @@ There is a growing interest in human genomic (or precision) medicine, with the p
 
 We studied M. agrestis in Kielder Forest, Northumberland, UK, using live-trapping of individual animals from natural populations. Trapping was performed from 2015 to 2017 across seven different sites, each a forest clear-cut. Access to the sites was provided by the Forestry Commission. At each site, 150–197 Ugglan small mammal traps (Grahnab, Gnosjo, Sweden) were laid out in a grid, spaced approximately 3–5 m apart. Our study was divided into longitudinal and cross-sectional components.
 
-## Longitudinal data
+### Longitudinal data
 
 Every other week, traps were checked every day, once in the morning and once in the evening. Newly trapped field voles were injected with a Passive Integrated Transponder (PIT) tag (AVID, Uckfield, UK) for unique identification. This approach allowed us to build up a longitudinal record for voles that were caught on multiple occasions. A total of 850 voles were individually marked in this way. We also took a small tissue sample from the tail for genotyping of individuals and a drop of blood from the tail which we put into 500 μl of RNAlater (Fisher Scientific, Loughborough, UK) for use in parasite detection (see below).
 
-## Parasite detection
+#### Parasite detection
 
-We quantified infections by microparasites (B. microti and Bartonella spp.) in blood samples taken from longitudinal animals using SYBR green based two-step reverse transcription quantitative PCR (Q-PCR) targeted at pathogen ribosomal RNA genes. Expression values were normalized to two host endogenous control genes: Ywhaz and Actb. Blood samples were derived from tail bleeds. RNA was extracted from blood samples stored in RNAlater at –70°C using the Mouse RiboPure Blood RNA Isolation Kit (Thermo Fisher, Waltham, MA) according to the manufacturer’s instructions and DNAse treated. It was then converted to cDNA using the High-Capacity RNA-to-cDNA Kit (Thermo Fisher), according to the manufacturer’s instructions. B. microti primer sequences targeting the 18S ribosomal RNA gene were as follows CTACGTCCCTGCCCTTTGTA (forward primer sequence) and CCACGTTTCTTGGTCCGAAT (reverse primer sequence). Bartonella spp. primer sequences targeting the 16S ribosomal RNA gene were as follows: GATGAATGTTAGCCGTCGGG (forward primer sequence) and TCCCCAGGCGGAATGTTTAA (reverse primer sequences). Assays were pipetted onto 384-well plates by a robot (Pipetmax; Gilson, Middleton, WI) using a custom program and run on a QuantStudio 6-flex Real-Time PCR System (Thermo Fisher) at the machine manufacturer's default real-time PCR cycling conditions. Reaction size was 10 µl, incorporating 1 µl of template (diluted 1/20) and PrecisionFAST qPCR Master Mix (PrimerDesign, Chandler’s Ford, UK) with low ROX and SYBR green and primers at the machine manufacturer’s recommended concentrations. Alongside the pathogen assays, we ran assays for two host genes (see above) that acted as endogenous controls. For the pathogen assays, we used as a calibrator sample a pool of DNA extracted from 154 blood samples from different M. agrestis at our study sites in 2015 and 2016; these DNA extractions were carried out using the QIAamp UCP DNA Micro Kit (QIAGEN, Hilden, Germany) following the manufacturer’s instructions. For the Ywhaz and Actb assays, the calibrator sample was the same cDNA calibrator sample as described below for other host gene expression assays. Relative expression values (normalized to the two host endogenous control genes and presumed to relate to the expression of pathogen ribosomal RNA genes and in turn to the force of infection) used in analyses below are RQ values calculated by the QuantStudio 6-flex machine software according to the ∆∆Ct method, indexed to the calibrator samples. Melting curves and amplification plots were individually inspected for each well replicate to confirm specific amplification. We validated our diagnostic results by comparing our PCR RQ values to independent data for a subset of voles from the cross-sectional component of our study with mapped genus-level pathogen reads from RNASeq analysis of blood samples (n = 44), finding that the two datasets strongly corroborated each other (Bartonella spp., Spearman’s ρ = 0.79, p<0.001, n = 44; B. microti, Spearman’s ρ = 0.88, p<0.001, n = 43).
+We quantified infections by microparasites (B. microti and Bartonella spp.) in blood samples taken from longitudinal animals using SYBR green based two-step reverse transcription quantitative PCR (Q-PCR) targeted at pathogen ribosomal RNA genes. Expression values were normalized to two host endogenous control genes: Ywhaz and Actb. Blood samples were derived from tail bleeds. RNA was extracted from blood samples stored in RNAlater at –70°C using the Mouse RiboPure Blood RNA Isolation Kit (Thermo Fisher, Waltham, MA) according to the manufacturer’s instructions and DNAse treated. It was then converted to cDNA using the High-Capacity RNA-to-cDNA Kit (Thermo Fisher), according to the manufacturer’s instructions. B. microti primer sequences targeting the 18S ribosomal RNA gene were as follows CTACGTCCCTGCCCTTTGTA (forward primer sequence) and CCACGTTTCTTGGTCCGAAT (reverse primer sequence). Bartonella spp. primer sequences targeting the 16S ribosomal RNA gene were as follows: GATGAATGTTAGCCGTCGGG (forward primer sequence) and TCCCCAGGCGGAATGTTTAA (reverse primer sequences). Assays were pipetted onto 384-well plates by a robot (Pipetmax; Gilson, Middleton, WI) using a custom program and run on a QuantStudio 6-flex Real-Time PCR System (Thermo Fisher) at the machine manufacturer's default real-time PCR cycling conditions. Reaction size was 10 µl, incorporating 1 µl of template (diluted 1/20) and PrecisionFAST qPCR Master Mix (PrimerDesign, Chandler’s Ford, UK) with low ROX and SYBR green and primers at the machine manufacturer’s recommended concentrations. Alongside the pathogen assays, we ran assays for two host genes (see above) that acted as endogenous controls. For the pathogen assays, we used as a calibrator sample a pool of DNA extracted from 154 blood samples from different M. agrestis at our study sites in 2015 and 2016; these DNA extractions were carried out using the QIAamp UCP DNA Micro Kit (QIAGEN, Hilden, Germany) following the manufacturer’s instructions. For the Ywhaz and Actb assays, the calibrator sample was the same cDNA calibrator sample as described below for other host gene expression assays. Relative expression values (normalized to the two host endogenous control genes and presumed to relate to the expression of pathogen ribosomal RNA genes and in turn to the force of infection) used in analyses below are RQ values calculated by the QuantStudio 6-flex machine software according to the ∆∆Ct method, indexed to the calibrator samples. Melting curves and amplification plots were individually inspected for each well replicate to confirm specific amplification. We validated our diagnostic results by comparing our PCR RQ values to independent data for a subset of voles from the cross-sectional component of our study with mapped genus-level pathogen reads from RNASeq analysis of blood samples (n = 44), finding that the two datasets strongly corroborated each other (Bartonella spp., Spearman’s $ρ$ = 0.79, p<0.001, n = 44; B. microti, Spearman’s $ρ$ = 0.88, p<0.001, n = 43).
 
-## Cross-sectional data
+### Cross-sectional data
 
 For the cross-sectional component of the study (which ran from 2015 to 2016 only), animals were captured and returned to the laboratory where they were killed by a rising concentration of CO2, followed by exsanguination. As our UK Home Office license did not allow us to sample overtly pregnant females in this way, there are fewer females than males present in this dataset. This component of the study allowed us to take a more comprehensive set of measurements and to culture cells and perform stimulatory assays on them. A small tissue sample was taken from the ear of cross-sectional animals for genotyping (see below).
 
-## Parasite detection
+#### Parasite detection
 
 After culling, the fur of cross-sectional animals was examined thoroughly under a binocular dissecting microscope to check for ectoparasites, which were recorded as direct counts of ticks and fleas. Guts of cross-sectional animals were transferred to 70% ethanol, dissected, and examined under a microscope for gastrointestinal parasites. Direct counts of cestodes (by far the dominant endohelminths in biomass) were recorded.
 
-## SOD1 measurement
+#### SOD1 measurement
 
 Given the well-established link between inflammation, oxidative stress, and pathology (Biswas, 2016), we measured antioxidant enzymatic activity in blood samples taken from cross-sectional animals. We chose to measure superoxide dismutase 1 (SOD1) because it is one of the main antioxidative enzymes within the antioxidative enzyme system (Sun et al., 1989) and is clearly linked to changes in immune gene expression in laboratory mice (Marikovsky et al., 2003). Assays were carried out using the Cayman Superoxide Dismutase kit and following the manufacturer’s instructions except where otherwise indicated below. Blood pellets from centrifuged cardiac bleeds were stored at –70°C and thawed on ice prior to assay. A 20 μl aliquot from each pellet was lysed in 80 μl of ultrapure water and centrifuged (10,000 × g at 4 °C for 15 min) and 40 μl of the supernatant added to a 1.6× volume of ice-cold chloroform/ethanol (37.5/62.5 [v/v]) (inactivating superoxide dismutase 2). This mixture was then centrifuged (2500 × g at 4°C for 10 min) and the supernatant removed and immediately diluted 1:200 in kit sample buffer. A seven-point SOD activity standard was prepared (0, 0.005, 0.010, 0.020, 0.030, 0.040, and 0.050 U/ml) and the assay conducted on a 96-well microplate with 10 μl of standard or sample, 200 μl of kit radical detector solution, and 20 μl of xanthine oxidase (diluted as per the manufacturer’s instructions) per well. Plates were then covered with a protective film, incubated at room temperature for 30 min on an orbital shaker, and read at 450 nm on a VERSAmax tunable absorbance plate reader (Molecular Devices, San Jose, CA), subtracting background and fitting a linear relationship to the standard curve in order to estimate SOD activity in unknown samples.
 
-## Splenocyte cultures
+#### Splenocyte cultures
 
 Spleens of cross-sectional animals were removed, disaggregated, and splenocytes cultured under cell culture conditions equivalent to those used in Jackson et al., 2011. Unstimulated splenocytes, taken from 84 cross-sectional animals collected between July and October 2015, were initially used to assay expression by RNASeq (see below). We exposed splenocytes from the remaining cross-sectional animals to stimulation with anti-CD3 antibodies (Hamster Anti-Mouse CD3e, Clone 500A2 from BD Pharmingen, San Diego, CA) and anti-CD28 antibodies (Hamster Anti-Mouse CD28, Clone 37.51 from Tombo Biosciences, Kobe, Japan) at concentrations of 2 μg/ml and of 1 μg/ml, respectively, for 24 hr. Costimulation with anti-CD3 and anti-CD28 antibodies was used to selectively promote the proliferation of T-cells (Frauwirth and Thompson, 2002; Wanelik et al., 2020). We assumed that this would reflect the potential response of T-cell populations in vivo. Stimulated splenocytes were used to assay expression by Q-PCR.
 
-## RNASeq
+#### RNASeq
 
 Full details of the methods used for RNA preparation and sequencing can be found in Wanelik et al., 2018. Briefly, samples were sequenced on an Illumina HiSeq4000 platform. High-quality reads were mapped against a draft genome for M. agrestis (GenBank accession no. LIQJ00000000) and counted using featureCounts (Liao et al., 2014). Genes with average log counts per million, across all samples, of less than one were considered unexpressed and removed from the data (n = 8410). Following filtering, library sizes were recalculated, data were normalized, and MDS plots were generated to check for any unusual patterns in the data. The mean library size was 19 million paired-end reads (range = 3–71 million paired-end reads).
 
-## Q-PCR
+#### Q-PCR
 
 We used SYBR green-based Q-PCR to measure the expression levels of a panel of 18 genes (Appendix 1—table 16) in splenocytes, from our cross-sectional animals, that had been stimulated with T-cell agonist anti-CD3 and anti-CD28 antibodies. We did this, in part, to validate our RNASeq results in an independent dataset. We used the observed expression profile as a general measure of the potential responsiveness of the immune system to an inflammatory stimulation in vivo. We note that the genetic focus of our study, Fcer1a, codes for the alpha chain protein of the high-affinity IgE receptor that is expressed on cells such as eosinophils, basophils, and mast cells (Daeron and Nimmerjahn, 2014). Although the high-affinity IgE receptor may not be expressed significantly by the T-cells preferentially stimulated in our cultures (but see Schadt, 2009), the principle that genetic variants functionally expressed in one cell type may affect the function of other cell types through molecular interaction networks is embodied in the modern understanding of network biology (Schadt, 2009; Barabási et al., 2011). Thus, the effect of polymorphism in Fcer1a, expressed in cells such as eosinophils, basophils, or mast cells, either in vivo prior to isolation, or in the ex vivo cultured splenocyte population, could act indirectly on T-cells through various pathways, including via cytokine signaling (Rothenberg and Hogan, 2006; Akuthota et al., 2008; Villanueva, 2015). For example, eosinophils are known to promote helper T-cell activation and proliferation in ex vivo co-culture (Liu et al., 2006; Harfi et al., 2013) and in in vivo models (Shi et al., 2004). The choice of our panel of genes was informed by (i) known immune-associated functions in mice, combined with (ii) significant sensitivity to environmental or intrinsic host variables in our previous studies (Jackson et al., 2014; Jackson et al., 2011) or in a recent DGE analysis of RNASeq data (not reported here), and (iii) the aim of limited redundancy, with each gene representing a different immune pathway.
 
 Primers (20 sets, including 2 endogenous control genes) were designed de novo and supplied by PrimerDesign (16 sets) or designed de novo in-house (4 sets) and validated (to confirm specific amplification and 100 ± 10% PCR efficiency under assay conditions). All PrimerDesign primer sets were validated under our assay conditions before use. The endogenous control genes (Ywhaz and Sdha) were selected as a stable pairing from our previous stability analysis of candidate control genes in M. agrestis splenocytes (Jackson et al., 2011). We extracted RNA from splenocytes conserved in RNAlater using the RNAqueous Micro Total RNA Isolation Kit (Thermo Fisher), following the manufacturer’s instructions. RNA extracts were DNAse treated and converted to cDNA using the High-Capacity RNA-to-cDNA Kit (Thermo Fisher), according to the manufacturer’s instructions, including reverse transcription negative (RT-) controls for a subsample. SYBR green-based assays were pipetted onto 384-well plates by a robot (Pipetmax, Gilson) using a custom program and run on a QuantStudio 6-flex Real-Time PCR System (Thermo Fisher) at the machine manufacturer's default real-time PCR cycling conditions. Reaction size was 10 µl, incorporating 1 µl of template and PrecisionFAST qPCR Master Mix with low ROX and SYBR green (PrimerDesign) and primers at the machine manufacturer’s recommended concentrations. We used two standard plate layouts for assaying, each of which contained a fixed set of target gene expression assays and the two endogenous control gene assays (the same sets of animals being assayed on matched pairs of the standard plate layouts). Unknown samples were assayed in duplicate wells and calibrator samples in triplicate wells, and no template controls for each gene were included on each plate. Template cDNA (see above) was diluted 1/20 prior to assay. The calibrator sample (identical on each plate) was created by pooling cDNA derived from across all splenocyte samples. Samples from different sampling groups were dispersed across plate pairs, avoiding confounding of plate with the sampling structure. Gene relative expression values used in analyses are RQ values calculated by the QuantStudio 6-flex machine software according to the ∆∆Ct method, indexed to the calibrator sample. Melting curves and amplification plots were individually inspected for each well replicate to confirm specific amplification.
 
-## Longitudinal and cross-sectional data
+### Longitudinal and cross-sectional data
 
-## Genotyping
+#### Genotyping
 
 We genotyped both cross-sectional and longitudinal animals for 346 SNPs in 127 genes. See Wanelik et al., 2018 for details of the approach used to select these SNPs. Our list included two synonymous and tightly linked (r2 = 0.50; D’ = 0.70) SNPs in the gene Fcer1a (the alpha chain of the high-affinity receptor for IgE) on scaffold 582 (CADCXT010006977 in ENA accession GCA_902806775; see Appendix 1—table 1 for genomic location information), which we had previously identified as a candidate tolerance gene in a natural population of M. agrestis. In this previous work, we had identified four haplotypes at this locus present in our population: GC, AC, AT, and GT, at frequencies of 0.12, 0.76, 0.07, and 0.05, respectively. We had also identified the GC haplotype as being of particular interest, given its significantly lower expression level of the transcription factor GATA3 (a biomarker of tolerance to macroparasites in our population) compared to the other haplotypes (Wanelik et al., 2018). We concluded that this haplotype tagged a causal mutation in the coding sequence, or in the up- or downstream regulatory regions. DNA was extracted from a tail sample (longitudinal component) or an ear sample (cross-sectional component) taken from the animal using DNeasy Blood and Tissue Kit (QIAGEN). Genotyping was then performed by LGC Biosearch Technologies (Hoddesdon, UK; http://www.biosearchtech.com) using the KASP SNP genotyping system. This included negative controls (water) and duplicate samples for validation purposes. The resulting SNP dataset was used for two purposes: (i) genotyping individuals within the locus of interest and (ii) pedigree reconstruction (see below).
 
-## Pedigree reconstruction
+#### Pedigree reconstruction
 
 We used a subset of our SNP dataset to reconstruct a pedigree for both cross-sectional and longitudinal animals using the R package Sequoia (Huisman, 2017). SNPs that violated the assumptions of Hardy–Weinberg equilibrium were removed from the dataset. For pairs of SNPs in high linkage disequilibrium (most commonly within the same gene), the SNP with the highest minor allele frequency (MAF) was chosen. A minimum MAF cutoff of 0.1 and call rate of >0.7 was then applied, and any samples for which >50% of SNPs were missing were removed. This resulted in a final dataset including 114 SNPs – a sufficient number for very good performance of parentage assignment (Huisman, 2017).
 
 Life history information, namely, sex and month of birth, was inputted into Sequoia where possible. Juvenile voles weighing less than 12 g on first capture were assigned a birth date 2 weeks prior to capture. Juvenile voles weighing between 12 and 15 g on first capture were assigned a birth date 4 weeks prior to capture. Finally, adult voles breeding on first capture were assigned a birth date 6 weeks prior to capture (minimum age at first breeding) (Begon et al., 2009; Burthe et al., 2010). Adult voles not breeding on first capture could not be assigned a birth date as it was not known whether they had previously bred or not. Virtually all samples (99%) were assigned a sex, and approximately half (54%) were assigned a birth month. As we sampled individuals from across seven different clear-cut areas of the forest, each several kilometers apart, these were assumed to be independent, closed populations with negligible dispersal. Site-specific pedigrees were therefore generated.
 
-We assessed the accuracy of our reconstructed pedigrees by checking whether predicted parent–offspring pairs met expectations given the biology of M. agrestis. As expected, the majority of predicted parent–offspring pairs (87%) were born in the same year. We also expected parents and offspring to overlap in space. Again, as expected, the majority of predicted parent–offspring pairs (92%) were, at some point, found along the same transects (horizontal or vertical). We also inspected log10 likelihood ratios (LLRs) for parent pairs as recommended in the user manual for Sequoia. Almost all LLRs were positive (n = 698/720 or 97% of LLRs) indicating confidence in our assignments. Individuals with vs. without our haplotype of interest did not differ in their probability of appearing in a pedigree (χ2 = 0.09, d.f. = 1, p=0.76). For each individual that ended up in a pedigree, that is, with one or more relatives recorded (n = 652; site COL = 3; site BLB = 125; site GRD = 204; site CHE = 137; site RAV = 16; site SCP = 90; site HAM = 77), the number of offspring was counted to provide a measure of their reproductive success. Few individuals were first trapped as juveniles, with the majority trapped as adults that had already recruited into the population. Our measure of reproductive success then more closely resembles the number of recruited (rather than newborn) offspring per individual. Half of the individuals present in our pedigrees (n = 325) were found to have no offspring. We expect the majority of these to be true zeros (representing actual reproductive failure) as we generally sampled a large proportion of the total population within clear-cuts. We also minimized the chance of false zeros by excluding those individuals (e.g., at the periphery of a study grid) that did not end up in a pedigree because we identified no relatives (including offspring), likely because we had not sampled in the right place.
+We assessed the accuracy of our reconstructed pedigrees by checking whether predicted parent–offspring pairs met expectations given the biology of M. agrestis. As expected, the majority of predicted parent–offspring pairs (87%) were born in the same year. We also expected parents and offspring to overlap in space. Again, as expected, the majority of predicted parent–offspring pairs (92%) were, at some point, found along the same transects (horizontal or vertical). We also inspected log10 likelihood ratios (LLRs) for parent pairs as recommended in the user manual for Sequoia. Almost all LLRs were positive (n = 698/720 or 97% of LLRs) indicating confidence in our assignments. Individuals with vs. without our haplotype of interest did not differ in their probability of appearing in a pedigree ($χ^{2}$ = 0.09, d.f. = 1, p=0.76). For each individual that ended up in a pedigree, that is, with one or more relatives recorded (n = 652; site COL = 3; site BLB = 125; site GRD = 204; site CHE = 137; site RAV = 16; site SCP = 90; site HAM = 77), the number of offspring was counted to provide a measure of their reproductive success. Few individuals were first trapped as juveniles, with the majority trapped as adults that had already recruited into the population. Our measure of reproductive success then more closely resembles the number of recruited (rather than newborn) offspring per individual. Half of the individuals present in our pedigrees (n = 325) were found to have no offspring. We expect the majority of these to be true zeros (representing actual reproductive failure) as we generally sampled a large proportion of the total population within clear-cuts. We also minimized the chance of false zeros by excluding those individuals (e.g., at the periphery of a study grid) that did not end up in a pedigree because we identified no relatives (including offspring), likely because we had not sampled in the right place.
 
-## Statistical analyses
+### Statistical analyses
 
 Not all individuals appeared in all datasets; therefore, sample sizes (reported in Table 1) vary between analyses. All analyses were performed in R statistical software version 3.5.2 (R Development Core Team, 2018).
 
-## Differential gene expression analysis
+**Table 1.**
+ Model specifications including, for each main model, covariates included in the full model, datasets used, and sample sizes (F = included as a fixed effect; R = included as a random effect).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3"></th>
+      <th rowspan="3">DGE analysis</th>
+      <th colspan="4">Haplotype association analyses</th>
+    </tr>
+    <tr>
+      <th colspan="4">Response variable</th>
+    </tr>
+    <tr>
+      <th>Immune gene expression</th>
+      <th>Parasite infection</th>
+      <th>Reproductive success</th>
+      <th>SOD1activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CovariatesSnout-vent length</td>
+      <td></td>
+      <td>F</td>
+      <td></td>
+      <td></td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>Eye lens weight</td>
+      <td></td>
+      <td>F</td>
+      <td></td>
+      <td></td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>Reproductive status</td>
+      <td></td>
+      <td>F</td>
+      <td>F</td>
+      <td></td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>Body condition</td>
+      <td></td>
+      <td>F</td>
+      <td>F</td>
+      <td></td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>Birth month</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Culled or not</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Site</td>
+      <td></td>
+      <td>F; R (Il17a LMM)</td>
+      <td>F (Macro); R (Micro)</td>
+      <td>F</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>Year</td>
+      <td></td>
+      <td>F</td>
+      <td>F</td>
+      <td>F</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>Season</td>
+      <td></td>
+      <td>F; R (Il17a LMM)</td>
+      <td>F (Macro); R (Micro)</td>
+      <td></td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>Individual ID</td>
+      <td></td>
+      <td></td>
+      <td>R (Micro)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Assay plate</td>
+      <td></td>
+      <td>R (Il17a LMM)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dataset</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C (Macro)L (Micro)</td>
+      <td>C+L</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Sample size</td>
+      <td>♀31 ♂53</td>
+      <td>Il17a LMM: ♀73 ♂220</td>
+      <td>Macro: ♀82 ♂235B. microti: ♀1075 ♂1247Bartonella spp.: ♀1283 ♂1104</td>
+      <td>♀419♂232</td>
+      <td>♀81♂227</td>
+    </tr>
+  </tbody>
+</table>
+
+_C = cross-sectional; L = longitudinal; DGE = differential gene expression; LMM = linear mixed effects model._
+
+#### Differential gene expression analysis
 
 DGE analysis was performed on filtered and normalized count data using the R package edgeR (Robinson et al., 2010), the aim being to identify individual genes that were differentially expressed between those individuals with and without a copy of the GC haplotype (i.e., a dominant model). Only those individuals for which haplotype could be inferred with certainty could be included (n = 53 males and n = 31 females; none of which were known to have two copies of the GC haplotype, hence the choice of a dominant model). Samples from different sexes were analyzed together. To test whether the top differentially expressed genes differed between the sexes, we included a dummy variable with four levels (males with haplotype, males without haplotype, females with haplotype, females without haplotype) and inspected the contrasts of interest (males with versus without haplotype; females with versus without haplotype). As this was an exploratory analysis, used in conjunction with more targeted measurements of immune gene expression (see below), model specification was kept as simple as possible and no covariates were initially included. However, in a follow-up DGE analysis we controlled for a key parasite variable (cestode burden).
 
 Having confirmed a sex-dependent effect of the GC haplotype on the expression of some inflammatory genes (see 'Results') in the initial DGE analysis, we ran separate DGE analyses for males and females and tested more broadly for enrichment of pro- and anti-inflammatory genes in our results; more specifically, the Gene Ontology terms ‘positive regulation of inflammatory response’ (GO:0050729; n = 143) and ‘negative regulation of inflammatory response’ (GO:0050728; n = 149). The aim here was to answer the question: are pro- or anti-inflammatory genes more highly ranked relative to other genes, when we compare individuals with and without the GC haplotype, and does this also differ between the sexes? This GSEA was performed using the R package limma (Ritchie et al., 2015), and genes were ranked on log fold change.
 
-## Haplotype association analyses
+#### Haplotype association analyses
 
 Following the exploratory DGE analysis, the GC haplotype was tested for associations with (i) gene expression assayed by Q-PCR to validate these results, (ii) macro- and microparasite infection to test whether the GC haplotype predicted an individual’s susceptibility to infection, and (iii) reproductive success to test whether the GC haplotype was associated with any reproductive costs. Given the well-established link between inflammation and oxidative stress (Reuter et al., 2011; Collins, 1999), we also tested for an association between the GC haplotype and SOD1 activity.
 
@@ -148,19 +279,19 @@ However, there are some restrictions on model specification within hapassoc (e.g
 
 Table 1 provides a summary of (hapassoc or regression) model specifications. As we found evidence for sex-dependent effect in the initial DGE analysis, with the exception of the model for reproductive success (see below), all models included a genotype by sex interaction that was retained if it improved model fit. All models also accounted for other biological and technical covariates (the choice of which was informed by our previous work, the literature, and/or our experimental design). Full regression models (including all covariates and interactions of interest) were reduced using backward stepwise deletion of nonsignificant terms to minimize Akaike’s information criterion (AIC), following the drop1 function. This was not possible for hapassoc models. Summary tables, including all estimates, standard errors, and z-statistics, are included in Appendix 1. Associated significance values are also included in these tables, except for LMMs and GLMMs, for which significance values were based on LRTs and are reported in the main text. Throughout, residuals from regression models were checked for approximate normality and homoscedasticity, and all covariates were tested for independence using variance inflation factors (all VIFs < 3).
 
-## Association between GC haplotype and immune gene expression assayed by Q-PCR
+#### Association between GC haplotype and immune gene expression assayed by Q-PCR
 
 As we ran a total of 18 hapassoc models (one model per gene), the Benjamini and Hochberg method of correction was applied to all p-values (Benjamini and Hochberg, 1995). Resulting q-values (FDR-corrected p-values) are reported, alongside original p-values (Appendix 1—table 6). A hapassoc model including a genotype by sex interaction was tested against a null model without an interaction term. A Gamma error distribution and log link were used. Other covariates considered potential drivers of immune gene expression and included in both models were informed by our previous work (Jackson et al., 2011). These included snout-vent length (SVL), eye lens weight (categorized into seven intervals; SVL and eye lens weight capture the combined influence of age and historical growth trajectory), reproductive status (males were considered to be reproductively active if they had descended testes; females if they were pregnant or had perforate vaginas), and body condition (estimated by regressing body weight against life history stage, SVL, and its quadratic term). Site, year, and season (four levels, designated as spring [March and April], early summer [May and June], late summer [July and August], and autumn [September and October]) were included to account for any spatial and/or temporal autocorrelation. All covariates were included as fixed effects. We did not use a multidimensional approach (such as principal component analysis) because of limited redundancy in our panel of genes.
 
 In order to confirm these results, an LMM was run for a single immune gene for which expression appeared to be associated with genotype (q = 0.037). The LMM included random terms for site and season, as well as assay plate number (Table 1). The latter was included to account for nonindependence due to immunological assaying structure. All other covariates were the same as the hapassoc model. A Yeo-Johnson transformation (with λ = –2) was used to achieve more normal and homoscedastic residuals (Yeo and Johnson, 2000).
 
-## Association between GC haplotype and parasite infection
+#### Association between GC haplotype and parasite infection
 
 The three macroparasite measurements taken from cross-sectional animals (counts of ticks, fleas, and cestodes) were log-transformed (log10 [x+1]) and summarized as a single principal component (explaining 39% of total variation; Appendix 1—table 17) to avoid difficulties in interpretation due to multiple testing. See Wanelik et al., 2018 and Jackson et al., 2014 for full details of this approach. This combined measure of macroparasite burden was modeled using a hapassoc model with a Gaussian error distribution.
 
 Microparasite infection status was assessed multiple times for the majority of individuals in the longitudinal component of the study (mean = 2.8; range = 1–11). Due to these repeated measures, microparasite infection could not be modeled using hapassoc. Instead, to test for an association between the GC haplotype and the probability of an individual being infected with a microparasite, we ran a GLMM with a binary response (infected or not), log link, and a random term for individual. Other covariates, considered potential drivers of both macro- and microparasite infection, were, again, informed by our previous work (Wanelik et al., 2018; Jackson et al., 2014; Taylor et al., 2018). These included body condition, reproductive status, year, season, and site (Table 1). Season and site were included as random terms in the GLMM for microparasites, as was individual identity, to account for nonindependence due to repeat sampling.
 
-## Association between GC haplotype and reproductive success
+#### Association between GC haplotype and reproductive success
 
 Our measure of reproductive success was zero-inflated (50% zeros). This is consistent with a previous study of the closely related common vole (Microtus arvalis) (Wang et al., 2019). A Poisson error distribution was therefore deemed inappropriate, and it could not be modeled using hapassoc. Instead, to test for an association between the GC haplotype and reproductive success, we ran a GLM with a quasi-Poisson error distribution. This distribution has been previously used to model predictors of reproductive success in other organisms, and accounts for the overdispersion caused by excess zeros.
 
@@ -168,6 +299,6 @@ We only recorded a reproductive failure (i.e., zero reproductive success) for th
 
 As detailed in the 'Results,' we tried to run a single quasi-Poisson GLM with both sexes but resulting residual variances differed significantly between the sexes (F test to compare variances of two samples; p=0.02), making it impossible to formally test for a genotype by sex interaction. Instead, we ran a separate model for each sex. We included birth month as a covariate in this model, given that autumn-born voles (of the closely related common vole) have been shown to have a lower chance to reproduce than spring-born voles (Wang et al., 2019). Other covariates included in this model were whether or not an individual was culled for the cross-sectional component of this study (again, reducing the opportunity to reproduce), site, and the year in which an individual was most frequently captured (Table 1). In a follow-up analysis, we also controlled for B. microti and Bartonella spp. infection status. More specifically, we included the proportion of samples taken from an individual that were Babesia-positive and the proportion of samples taken from an individual that were Bartonella-positive. All covariates were included as fixed effects. Only a single female was trapped in one of the sites (COL) and consequently caused convergence problems in the female model. This female was therefore omitted.
 
-## Association between GC haplotype and SOD1 activity
+#### Association between GC haplotype and SOD1 activity
 
 SOD1 activity was modeled using a hapassoc model with a Gaussian error distribution. Other covariates, considered potential drivers of SOD1 activity, were informed by the literature. Previous studies on wild rodents have shown that antioxidant levels increase with both reproductive effort (Garratt et al., 2011) and with age (Hindle et al., 2010). Studies on birds have also shown that improvements in body condition are often accompanied by increases in antioxidant activity, for example, in response to supplemental feeding (Wilcoxen et al., 2015). We therefore included SVL, eye lens weight, reproductive status, and body condition as covariates in our model. As in other models, we included site, year, and season to account for spatial and/or temporal autocorrelation in our data (Table 1). All covariates were included as fixed effects.

@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.08352.001 Striatal dysfunction plays an important role in dystonia, but the striatal cell types that contribute to abnormal movements are poorly defined. We demonstrate that conditional deletion of the DYT1 dystonia protein torsinA in embryonic progenitors of forebrain cholinergic and GABAergic neurons causes dystonic-like twisting movements that emerge during juvenile CNS maturation. The onset of these movements coincides with selective degeneration of dorsal striatal large cholinergic interneurons (LCI), and surviving LCI exhibit morphological, electrophysiological, and connectivity abnormalities. Consistent with the importance of this LCI pathology, murine dystonic-like movements are reduced significantly with an antimuscarinic agent used clinically, and we identify cholinergic abnormalities in postmortem striatal tissue from DYT1 dystonia patients. These findings demonstrate that dorsal LCI have a unique requirement for torsinA function during striatal maturation, and link abnormalities of these cells to dystonic-like movements in an overtly symptomatic animal model. DOI: http://dx.doi.org/10.7554/eLife.08352.001
+Striatal dysfunction plays an important role in dystonia, but the striatal cell types that contribute to abnormal movements are poorly defined. We demonstrate that conditional deletion of the DYT1 dystonia protein torsinA in embryonic progenitors of forebrain cholinergic and GABAergic neurons causes dystonic-like twisting movements that emerge during juvenile CNS maturation. The onset of these movements coincides with selective degeneration of dorsal striatal large cholinergic interneurons (LCI), and surviving LCI exhibit morphological, electrophysiological, and connectivity abnormalities. Consistent with the importance of this LCI pathology, murine dystonic-like movements are reduced significantly with an antimuscarinic agent used clinically, and we identify cholinergic abnormalities in postmortem striatal tissue from DYT1 dystonia patients. These findings demonstrate that dorsal LCI have a unique requirement for torsinA function during striatal maturation, and link abnormalities of these cells to dystonic-like movements in an overtly symptomatic animal model.
 
 ## Introduction
 
@@ -44,113 +44,208 @@ To further explore this structure-function question as well as the potentially i
 
 ## Results
 
-## Conditional deletion of TorsinA from forebrain cholinergic and GABAergic neurons causes motor abnormalities during juvenile CNS maturation
+### Conditional deletion of TorsinA from forebrain cholinergic and GABAergic neurons causes motor abnormalities during juvenile CNS maturation
 
-We conditionally deleted
+We conditionally deleted Tor1a from precursors of forebrain GABAergic and cholinergic neurons by crossing Dlx5/6-Cre and Tor1a ‘floxed’ mice (Monory et al., 2006; Liang et al., 2014). Using mT/mG and Rosa26 LacZ Cre-reporter lines (Soriano, 1999; Muzumdar et al., 2007), we confirmed that Cre activity was restricted to forebrain structures (striatum, cortex, globus pallidus, basal forebrain, reticular thalamic nucleus), and included both direct and indirect pathway-projecting striatal neurons (Figure 1A). TorsinA immunohistochemistry confirmed the essentially complete deletion of torsinA protein from striatum, partial deletion from cortex (reflecting loss from GABAergic interneurons), and sparing of the thalamus–with the exception of the inhibitory neurons of the reticular thalamic nucleus (Figure 1B). Dlx5/6-Cre+;Tor1aflx/− mice (herein Dlx5/6 conditional KO ‘Dlx-CKO’) are born in the expected Mendelian ratio and are indistinguishable initially from littermate controls, including normal postnatal weight gain (Figure 1—figure supplement 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig1-v2.jpg)
 
-**Figure 1.:** (A) Dlx5/6-Cre expression is restricted to forebrain, as demonstrated by rosa26 LacZ and mT/mG reporter lines. (B) TorsinA immunohistochemistry demonstrates complete torsinA deletion in the striatum and partial deletion in the cortex. (C) Dlx-CKO mouse forebrain architecture appears normal (Nissl) and there is no evidence of gliosis (GFAP, s100β, Iba-1). (D–E) Gross striatal and cortical development appears normal. Cortical thickness: two-way ANOVA main effect of age F3,65 = 17.24; p < 0.0001, genotype F1,65 = 0.35; p = 0.55); striatal volume: main effect of age F3,65 = 307.0; p < 0.0001; genotype F1,65 = 0.724; p = 0.39. (F) The behavior of neonatal Dlx-CKO mice is normal. Negative geotaxis and forelimb suspension did not differ from littermate controls. Forelimb suspension: t-test t(92) = 0.753; p = 0.45). (G–H) Dlx-CKO mice develop severe forelimb and hindlimb clasping at P15 (Chi square test, Χ2 = 64.03; p < 0.0001), and a subset exhibits severe trunk twisting. (I) Dlx-CKO mice develop an inability to hang from a wire grid at 1 month of age (two-way ANOVA; main effect of genotype F1,269 = 16.63; p < 0.0001, time F6,269 = 6.613; p < 0.0001; and interaction F6,269 = 2.285; p = 0.036). Motor learning remains intact, as demonstrated by the accelerating rotarod test (two-way ANOVA main effect of trial F9,324 = 38.27 p < 0.0001, genotype: F1,36 = 3.591; p = 0.066).DOI: http://dx.doi.org/10.7554/eLife.08352.003
+**Figure 1.:** (A) Dlx5/6-Cre expression is restricted to forebrain, as demonstrated by rosa26 LacZ and mT/mG reporter lines. (B) TorsinA immunohistochemistry demonstrates complete torsinA deletion in the striatum and partial deletion in the cortex. (C) Dlx-CKO mouse forebrain architecture appears normal (Nissl) and there is no evidence of gliosis (GFAP, s100β, Iba-1). (D–E) Gross striatal and cortical development appears normal. Cortical thickness: two-way ANOVA main effect of age F3,65 = 17.24; p < 0.0001, genotype F1,65 = 0.35; p = 0.55); striatal volume: main effect of age F3,65 = 307.0; p < 0.0001; genotype F1,65 = 0.724; p = 0.39. (F) The behavior of neonatal Dlx-CKO mice is normal. Negative geotaxis and forelimb suspension did not differ from littermate controls. Forelimb suspension: t-test t(92) = 0.753; p = 0.45). (G–H) Dlx-CKO mice develop severe forelimb and hindlimb clasping at P15 (Chi square test, Χ2 = 64.03; p < 0.0001), and a subset exhibits severe trunk twisting. (I) Dlx-CKO mice develop an inability to hang from a wire grid at 1 month of age (two-way ANOVA; main effect of genotype F1,269 = 16.63; p < 0.0001, time F6,269 = 6.613; p < 0.0001; and interaction F6,269 = 2.285; p = 0.036). Motor learning remains intact, as demonstrated by the accelerating rotarod test (two-way ANOVA main effect of trial F9,324 = 38.27 p < 0.0001, genotype: F1,36 = 3.591; p = 0.066).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Dlx-CKO mice exhibit normal postnatal growth, minor differences in weight after weaning, and no differences after maturation (two-way ANOVA main effect of age F5,230 = 1022, p < 0.0001; genotype F1,230 = 7.903, p = 0.005; interaction F5,230 = 9.76, p < 0.0001; Sidak's multiple comparisons test).DOI: http://dx.doi.org/10.7554/eLife.08352.004
+**Figure 1—figure supplement 1.:** Dlx-CKO mice exhibit normal postnatal growth, minor differences in weight after weaning, and no differences after maturation (two-way ANOVA main effect of age F5,230 = 1022, p < 0.0001; genotype F1,230 = 7.903, p = 0.005; interaction F5,230 = 9.76, p < 0.0001; Sidak's multiple comparisons test).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A–I) results from digigait analysis. Genotype differences were present in stance width (two-way ANOVA main effect of genotype F1,62 = 16.51, p < 0.0001; limb F1,62 = 70.90, p < 0.0001; Interaction F1,62 = 0.381, p = 0.539, Sidak's multiple comparisons test), but no other abnormalities were observed.DOI: http://dx.doi.org/10.7554/eLife.08352.005
+**Figure 1—figure supplement 2.:** (A–I) results from digigait analysis. Genotype differences were present in stance width (two-way ANOVA main effect of genotype F1,62 = 16.51, p < 0.0001; limb F1,62 = 70.90, p < 0.0001; Interaction F1,62 = 0.381, p = 0.539, Sidak's multiple comparisons test), but no other abnormalities were observed.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** (A) Open field analysis of horizontal movements (two-way ANOVA main effect of genotype F1,35 = 16.29, p = 0.0003; time F11,385 = 12.72, p < 0.0001; interaction F11,385 = 1.713, p = 0.06, Bonferroni's multiple comparisons test). (B) Open field analysis of vertical movements (two-way ANOVA main effect of genotype F1,35 = 10.72, p = 0.002; time F11,385 = 4.176, p < 0.0001; interaction F11,385 = 1.07, p = 0.37, Bonferroni's multiple comparisons test).DOI: http://dx.doi.org/10.7554/eLife.08352.006
+**Figure 1—figure supplement 3.:** (A) Open field analysis of horizontal movements (two-way ANOVA main effect of genotype F1,35 = 16.29, p = 0.0003; time F11,385 = 12.72, p < 0.0001; interaction F11,385 = 1.713, p = 0.06, Bonferroni's multiple comparisons test). (B) Open field analysis of vertical movements (two-way ANOVA main effect of genotype F1,35 = 10.72, p = 0.002; time F11,385 = 4.176, p < 0.0001; interaction F11,385 = 1.07, p = 0.37, Bonferroni's multiple comparisons test).
 
 Nissl-stained brain sections of Dlx-CKO mice did not demonstrate gross or microscopic abnormalities of forebrain architecture, and immunostaining showed no evidence of reactive gliosis or neural injury (Figure 1C). Cortex and striatal development was normal, as assessed by size measurements throughout development (Figure 1D,E). Dlx-CKO pre-weaning motor function did not differ from littermate controls (Figure 1F). These data indicate that initial development and postnatal maturation of forebrain motor circuitry occurs normally in the absence of torsinA in forebrain cholinergic and GABAergic neurons.
 
 Dystonia in humans is commonly exacerbated by action, and may occur exclusively in particular settings or during specific motor tasks (e.g., runner's dystonia, dystonic writer's cramp). We assessed motor function during gait and during tail suspension, when mice vigorously kick their limbs and attempt to attain an upright body posture. Gait analysis was largely unremarkable (Figure 1—figure supplement 2). Dlx-CKO mice exhibited normal behavior during tail suspension up to 14 days of age, but nearly 100% of the animals developed severe forelimb and hindlimb clasping behaviors beginning at 15–17 days of age (Figure 1G). This abnormal behavior remained fixed for the duration of the animal's life, to at least 1 year of age (17 out of 18 Dlx-CKO mice clasped during tail suspension at 1 year). A subset of these mutants simultaneously developed severe abnormal twisting of the trunk (∼70% of mice; Figure 1H). Dlx-CKO mice also developed a defect in the ability to hang from a wire grid (Figure 1I, upper panel) that in some cases appeared related to abnormal hindpaw twisting. In contrast, motor learning and gross coordination appeared normal, as assessed by the ability to remain on an accelerating rotarod at 8 weeks of age (Figure 1I, lower panel). Dlx-CKO mice are also significantly hyperactive in the open field (Figure 1—figure supplement 3). These observations demonstrate that torsinA loss of function in forebrain GABAergic and cholinergic neurons is sufficient to cause action-induced abnormal twisting movements. The onset of these abnormal movements during juvenile CNS maturation and their persistence into adulthood broadly resembles the natural history and symptomatology of DYT1 dystonia (Dauer, 2014).
 
-## Anticholinergic treatment ameliorates abnormal twisting of Dlx-CKO mice
+### Anticholinergic treatment ameliorates abnormal twisting of Dlx-CKO mice
 
-Chronic antimuscarinic administration is a common therapy for DYT1 dystonia (
+Chronic antimuscarinic administration is a common therapy for DYT1 dystonia (Burke et al., 1986), prompting us to evaluate the ability of antimuscarinics to ameliorate the abnormal twisting movements in Dlx-CKO mice. Dlx-CKO mice were treated with once-daily injections of the antimuscarinic scopolamine (5 mg/kg, s.c.) or saline for 10 days. The duration of forelimb clasping, hindlimb clasping, and trunk twisting (Figure 2A) was assessed on videos by blinded observers. Scopolamine-treated animals exhibited significantly less limb clasping and twisting than saline-treated animals throughout the treatment period (Figure 2B; main effect of drug F1,141 = 36.17; p < 0.0001, Sidak's multiple comparisons test). The symptomatic improvement appeared to depend on the continued presence of scopolamine, as behavioral benefit disappeared following a 3-week washout period. The antimuscarinic trihexyphenidyl (THP) is the most commonly used agent to treat DYT1 dystonia and is clinically validated (Burke et al., 1986; Jankovic, 2013). Similar to scopolamine, THP (5 mg/kg, i.p.) significantly reduced clasping, and this effect resolved following a 3 week washout (Figure 2C; Main effect of drug F1,82 = 46.69; p < 0.0001, Sidak's multiple comparisons test). These data indicate that antimuscarinics effectively reduce clasping and twisting behaviors, and support the predictive validity of Dlx-CKO mice for the study of DYT1 dystonia.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig2-v2.jpg)
 
-**Figure 2.:** (A) Examples of forelimb clasping, hindlimb clasping, and trunk twisting that were evaluated during review of the videos by blinded raters. (B) Duration of clasping and twisting was significantly reduced by once-daily 5 mg/kg scopolamine administration (tail suspension recorded 45 min following drug treatment; two-way ANOVA: main effect of drug F1,141 = 36.14; p < 0.0001, Sidak's multiple comparisons test. n = 8 saline, n = 6 scopolamine. This study was also repeated in a second cohort). (C) Clasping and twisting duration was reduced by once-daily 5 mg/kg THP administration compared to saline-treated mice (tail suspension recorded 45 min following drug treatment; two-way ANOVA main effect of drug F1,82 = 46.69, p < 0.0001, Sidak's multiple comparison test. n = 6 saline, n = 8 THP).DOI: http://dx.doi.org/10.7554/eLife.08352.007
+**Figure 2.:** (A) Examples of forelimb clasping, hindlimb clasping, and trunk twisting that were evaluated during review of the videos by blinded raters. (B) Duration of clasping and twisting was significantly reduced by once-daily 5 mg/kg scopolamine administration (tail suspension recorded 45 min following drug treatment; two-way ANOVA: main effect of drug F1,141 = 36.14; p < 0.0001, Sidak's multiple comparisons test. n = 8 saline, n = 6 scopolamine. This study was also repeated in a second cohort). (C) Clasping and twisting duration was reduced by once-daily 5 mg/kg THP administration compared to saline-treated mice (tail suspension recorded 45 min following drug treatment; two-way ANOVA main effect of drug F1,82 = 46.69, p < 0.0001, Sidak's multiple comparison test. n = 6 saline, n = 8 THP).
 
-## Dlx-CKO mice exhibit selective alteration of striatal cholinergic function
+### Dlx-CKO mice exhibit selective alteration of striatal cholinergic function
 
-To assess the neural substrate of motor dysfunction in Dlx-CKO mice, we examined major markers of striatal signaling. Western blot analyses of microdissected striatum demonstrated a significant reduction in choline acetyltransferase (ChAT), but no significant alterations in glutamic acid decarboxylase (GAD67) or tyrosine hydroxylase (TH) expression (
+To assess the neural substrate of motor dysfunction in Dlx-CKO mice, we examined major markers of striatal signaling. Western blot analyses of microdissected striatum demonstrated a significant reduction in choline acetyltransferase (ChAT), but no significant alterations in glutamic acid decarboxylase (GAD67) or tyrosine hydroxylase (TH) expression (Figure 3A,B), suggesting a specific abnormality of cholinergic elements. Consistent with this possibility, the receptor tyrosine kinase TrkA, expressed specifically by striatal LCIs (Sobreviela et al., 1994), was reduced by approximately 50% (Figure 3A,C). In contrast, expression of the medium spiny projection neuron (MSN) marker DARPP-32 did not differ significantly between Dlx-CKO mice and littermate controls (Figure 3A,D).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig3-v2.jpg)
 
-**Figure 3.:** (A) Western blots of microdissected striatum from 10 week old control and Dlx-CKO mice for markers of cholinergic, GABAergic, and dopaminergic signaling. (B–D) Quantification of the western blots demonstrated a selective reduction of LCI markers choline acetyltransferase (t-test: t (8) = 2.683; p = 0.013) and TrkA (t(8) = 1.883; p = 0.048). No differences were observed for markers of GABAergic or dopaminergic neurons (GAD67; t(8) = 0.012; p = 0.99; TH; t(8) = 0.742; p = 0.47; DARPP-32; t(8) = 1.12; p = 0.29). (E) Microdialysis and HPLC-MS analysis demonstrates a significant reduction of ACh in dorsal striatum of Dlx-CKO mice (t-test: t(12) = 3.895; p = 0.002; data reported as dialysate concentration and represent the average of 3 fractions per animal following neostigmine perfusion; n = 6–8 probes/group from 4 mice/group). (F) Microdialysis followed by benzoyl chloride derivatization and analysis by LC-MS demonstrated no significant change in any dorsal striatal neurotransmitter examined (basal values measured in absence of Acetylcholinesterase (AChE) inhibitors). Data represent the average of 5 basal collections per animal (n = 7 probes/group from 4 mice/group and are normalized to control levels (two-way ANOVA for genotype: F1,190 = 0.0206; p = 0.88). (G) AChE histochemistry on fresh frozen brain sections demonstrates a significant reduction of striatal AChE in Dlx-CKO mice (t-test; t(22) = 5.16; p < 0.0001). Specificity of AChE reaction was confirmed using several methods (Figure 3—figure supplement 1).DOI: http://dx.doi.org/10.7554/eLife.08352.008
+**Figure 3.:** (A) Western blots of microdissected striatum from 10 week old control and Dlx-CKO mice for markers of cholinergic, GABAergic, and dopaminergic signaling. (B–D) Quantification of the western blots demonstrated a selective reduction of LCI markers choline acetyltransferase (t-test: t (8) = 2.683; p = 0.013) and TrkA (t(8) = 1.883; p = 0.048). No differences were observed for markers of GABAergic or dopaminergic neurons (GAD67; t(8) = 0.012; p = 0.99; TH; t(8) = 0.742; p = 0.47; DARPP-32; t(8) = 1.12; p = 0.29). (E) Microdialysis and HPLC-MS analysis demonstrates a significant reduction of ACh in dorsal striatum of Dlx-CKO mice (t-test: t(12) = 3.895; p = 0.002; data reported as dialysate concentration and represent the average of 3 fractions per animal following neostigmine perfusion; n = 6–8 probes/group from 4 mice/group). (F) Microdialysis followed by benzoyl chloride derivatization and analysis by LC-MS demonstrated no significant change in any dorsal striatal neurotransmitter examined (basal values measured in absence of Acetylcholinesterase (AChE) inhibitors). Data represent the average of 5 basal collections per animal (n = 7 probes/group from 4 mice/group and are normalized to control levels (two-way ANOVA for genotype: F1,190 = 0.0206; p = 0.88). (G) AChE histochemistry on fresh frozen brain sections demonstrates a significant reduction of striatal AChE in Dlx-CKO mice (t-test; t(22) = 5.16; p < 0.0001). Specificity of AChE reaction was confirmed using several methods (Figure 3—figure supplement 1).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Assay controls demonstrate that omitting substrate, substituting an alternate thiocholine substrate, or inhibiting AChE activity with neostigmine fully abolishes staining.DOI: http://dx.doi.org/10.7554/eLife.08352.009
+**Figure 3—figure supplement 1.:** Assay controls demonstrate that omitting substrate, substituting an alternate thiocholine substrate, or inhibiting AChE activity with neostigmine fully abolishes staining.
 
 To test if the alteration of cholinergic markers reflected abnormal cholinergic neurotransmission in vivo, we performed striatal microdialysis in awake, behaving mice (Song et al., 2012). Levels of extracellular acetylcholine (ACh) were significantly reduced in Dlx-CKO mice (∼73% reduction from control levels, performed in the presence of the acetylcholinesterase (AChE) inhibitor neostigmine; 1070 ± 231 nM in control [n = 6] vs 290 ± 33 nM in KO [n = 8]; t12 = 3.89; p = 0.0021; Figure 3E). In contrast, the basal extracellular concentrations of 16 other neurotransmitters and metabolites did not differ significantly from controls in a separate microdialysis study (n = 7 per group; Figure 3F). Consistent with the reduction of ACh, histochemical analysis demonstrated a significant reduction in striatal AChE activity, an effect that appeared most prominent in dorsolateral striatum (Figure 3G, assay controls in Figure 3—figure supplement 1).
 
-## Selective loss of dorsolateral striatal cholinergic interneurons in Dlx5/6-CKO mice
+### Selective loss of dorsolateral striatal cholinergic interneurons in Dlx5/6-CKO mice
 
-We previously reported a link between torsinA loss-of-function and developmental neurodegeneration (
+We previously reported a link between torsinA loss-of-function and developmental neurodegeneration (Liang et al., 2014). To determine if cholinergic abnormalities in Dlx-CKO mice reflect loss of LCIs, we quantified the number of LCIs in control and Dlx-CKO mice at 10 weeks of age, after all abnormal behaviors are fully established. Unbiased stereological quantification of striatal ChAT-positive neurons demonstrated 40% reduction in LCI number in Dlx-CKO compared to control mice (Figure 4A,B). To explore whether LCIs might be lost from a specific striatal sub-region reflecting a discrete circuit (Alexander et al., 1986), we subdivided the dorsal striatum into four quadrants and examined cell density throughout its rostro-caudal extent (Figure 4C). Cell loss was non-uniform, showing a clear predilection for dorsolateral (motor) striatum, and a rostro-caudal gradient of cell loss, with relative sparing of caudal regions. Strikingly, cell loss was roughly 6 times greater in dorsolateral compared to ventromedial striatum (57% vs 9% reduction; Figure 4C,D; Figure 4—figure supplement 1). Cell loss did not appear to be selective for the patch or matrix striatal subregions.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig4-v2.jpg)
 
-**Figure 4.:** (A, B) Stereological quantification of the number of ChAT-positive neurons in the striata of Dlx-CKO and littermate control mice (t-test: t(23) = 5.87; p < 0.0001). (C) Characterization of the topology of ChAT-positive cell loss in dorsal striatum. Significant decreases in ChAT-positive cells were observed only in the dorsal quadrants. Two-way ANOVA main effects of genotype: F1,56 = 38.17; p < 0.0001 and interaction: F3,56 = 6.405; p = 0.0008. (D) Pseudocolor representation of the degree of ChAT-positive cell loss in the dorsal striatum of Dlx-CKO mice. (E) Stereological quantification of the number of VAChT-positive and large (>20 μm diameter soma) Nissl-stained cells. VAChT t(13) = 3.305; p = 0.005, Nissl t(13) = 5.293; p = 0.0001. (F) Stereological quantification of the number of striatal small/medium (<20 μm diameter soma) nissl-positive cells (nissl+, t(13) = 0.606; p = 0.549), medium spiny neurons (DARPP-32+: t(22) = 1.14; p = 0.266), and SST- and PV-expressing inhibitory interneuron classes (PV+: t(23) = 2.806, p = 0.01 SST+: t(23) = 0.6865; p = 0.499). (G) Stereological quantification of the number of ChAT-positive neurons in basal forebrain nuclei (BFC—Basal Forebrain Complex, MS—Medial Septum, VDB—Vertical Limb of the Diagonal Band) of Dlx-CKO and littermate control mice (t(7) = 0.392; p = 0.706). (H) Stereological quantification of the number of cortical SST- and PV-expressing inhibitory interneuron classes (PV+: t(15) = 1.32; p = 0.206; SST+: t(15) = 1.18; p = 0.256).DOI: http://dx.doi.org/10.7554/eLife.08352.010
+**Figure 4.:** (A, B) Stereological quantification of the number of ChAT-positive neurons in the striata of Dlx-CKO and littermate control mice (t-test: t(23) = 5.87; p < 0.0001). (C) Characterization of the topology of ChAT-positive cell loss in dorsal striatum. Significant decreases in ChAT-positive cells were observed only in the dorsal quadrants. Two-way ANOVA main effects of genotype: F1,56 = 38.17; p < 0.0001 and interaction: F3,56 = 6.405; p = 0.0008. (D) Pseudocolor representation of the degree of ChAT-positive cell loss in the dorsal striatum of Dlx-CKO mice. (E) Stereological quantification of the number of VAChT-positive and large (>20 μm diameter soma) Nissl-stained cells. VAChT t(13) = 3.305; p = 0.005, Nissl t(13) = 5.293; p = 0.0001. (F) Stereological quantification of the number of striatal small/medium (<20 μm diameter soma) nissl-positive cells (nissl+, t(13) = 0.606; p = 0.549), medium spiny neurons (DARPP-32+: t(22) = 1.14; p = 0.266), and SST- and PV-expressing inhibitory interneuron classes (PV+: t(23) = 2.806, p = 0.01 SST+: t(23) = 0.6865; p = 0.499). (G) Stereological quantification of the number of ChAT-positive neurons in basal forebrain nuclei (BFC—Basal Forebrain Complex, MS—Medial Septum, VDB—Vertical Limb of the Diagonal Band) of Dlx-CKO and littermate control mice (t(7) = 0.392; p = 0.706). (H) Stereological quantification of the number of cortical SST- and PV-expressing inhibitory interneuron classes (PV+: t(15) = 1.32; p = 0.206; SST+: t(15) = 1.18; p = 0.256).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Percent cell density reductions in striatal quadrants as compared to control striata. Cell loss occurred in a dorsal to ventral gradient.DOI: http://dx.doi.org/10.7554/eLife.08352.011
+**Figure 4—figure supplement 1.:** Percent cell density reductions in striatal quadrants as compared to control striata. Cell loss occurred in a dorsal to ventral gradient.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** TorsinA and ChAT costains demonstrate torsinA expression in basal forebrain cholinergic projection neurons from control but not in Dlx-CKO mice.DOI: http://dx.doi.org/10.7554/eLife.08352.012
+**Figure 4—figure supplement 2.:** TorsinA and ChAT costains demonstrate torsinA expression in basal forebrain cholinergic projection neurons from control but not in Dlx-CKO mice.
 
 To address the possibility that the striatal abnormality reflects ChAT downregulation, we used stereology to quantify an independent marker of LCIs, vesicular acetylcholine transporter (VAChT). Dlx-CKO striata again appeared to contain 40–50% fewer VAChT+ LCIs (Figure 4E). To fully exclude the potential confound of phenotypic marker down regulation, we took advantage of the fact that cholinergic neurons are the largest striatal neurons, being approximately twice as large as GABAergic striatal neurons (Kreitzer, 2009). Stereological quantification of the number of Nissl-stained neuron profiles ≧20 µm demonstrated a ∼40% reduction in Dlx-CKO compared to littermate controls (Figure 4E).
 
 To examine if cell loss was specific to LCIs, we used unbiased stereology to quantify other GABAergic and cholinergic cell types from which torsinA is deleted in Dlx-CKO mice. LCIs are the only non-GABAergic neurons in the striatum, so we first quantified the number of small and medium sized Nissl-stained striatal cells (i.e., ≤20 µm), and found no significant difference in their numbers (Figure 4F). We next quantified well-characterized subpopulations of GABAergic interneurons in cortex and striatum. We found no significant abnormalities in the number of cortical or striatal fast-spiking (marked by parvalbumin; ‘PV’) or low-threshold spiking (marked by somatostatin; ‘SST’) interneurons (Figure 4F,H). Similarly, the number of striatal MSNs, (marked by DARPP-32) did not differ between 10 week-old Dlx-CKO and littermate striata (Figure 4F). In contrast to striatal LCIs, there is a normal number of basal forebrain cholinergic neurons (Figure 4G), despite the fact that these neurons also express Cre recombinase (Sanchez-Ortiz et al., 2012) and lack torsinA (Figure 4—figure supplement 2).
 
-## Striatal cholinergic neurons undergo apoptotic cell death during the onset of motor abnormalities in Dlx-CKO mice
+### Striatal cholinergic neurons undergo apoptotic cell death during the onset of motor abnormalities in Dlx-CKO mice
 
-We next explored the relationship between cholinergic cell loss and motor dysfunction. At P7, when motor function is normal (
+We next explored the relationship between cholinergic cell loss and motor dysfunction. At P7, when motor function is normal (Figure 1G,I), there were normal numbers of ChAT+ neurons (Figure 5A), and normal levels of ChAT and TrkA (Figure 5—figure supplement 1). Progressive loss of ChAT+ neurons occurred from 1 to 2 months of age, a time period partially overlapping with the onset of motor dysfunction. Numbers of ChAT+ neurons were not reduced further at the 6-month time point (Figure 5A), a time when motor abnormalities similarly plateaued.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig5-v2.jpg)
 
-**Figure 5.:** (A) Stereological quantification of the number of ChAT-positive neurons in the striata of Dlx-CKO and littermate control mice at time points between postnatal day 7 and 168. Two-way ANOVA main effects of age: F3,66 = 2.899; p = 0.04, genotype: F1,66 = 33.74; p < 0.0001, and interaction: F3,66 = 7.232; p = 0.0003; * represents time points where significant differences exist using Sidak's multiple comparison test. (B, C) Quantification of the number of ChAT-positive striatal neurons co-expressing cleaved caspase-3 between P10 and P24 in control and Dlx-CKO brain sections (two-way ANOVA main effects of age F2,21 = 43.68; p < 0.0001, genotype: F1,21 = 122.1; p < 0.0001, and interaction F2,21 = 32.91; p < 0.0001).DOI: http://dx.doi.org/10.7554/eLife.08352.013
+**Figure 5.:** (A) Stereological quantification of the number of ChAT-positive neurons in the striata of Dlx-CKO and littermate control mice at time points between postnatal day 7 and 168. Two-way ANOVA main effects of age: F3,66 = 2.899; p = 0.04, genotype: F1,66 = 33.74; p < 0.0001, and interaction: F3,66 = 7.232; p = 0.0003; * represents time points where significant differences exist using Sidak's multiple comparison test. (B, C) Quantification of the number of ChAT-positive striatal neurons co-expressing cleaved caspase-3 between P10 and P24 in control and Dlx-CKO brain sections (two-way ANOVA main effects of age F2,21 = 43.68; p < 0.0001, genotype: F1,21 = 122.1; p < 0.0001, and interaction F2,21 = 32.91; p < 0.0001).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** Western blot analysis demonstrates no differences in ChAT or TrkA levels at postnatal day 7, a time point when no behavioral or cellular deficits are present.DOI: http://dx.doi.org/10.7554/eLife.08352.014
+**Figure 5—figure supplement 1.:** Western blot analysis demonstrates no differences in ChAT or TrkA levels at postnatal day 7, a time point when no behavioral or cellular deficits are present.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** Although there are significantly more apoptotic cholinergic interneurons, there are no differences in the number of non-cholinergic apoptotic cells, as measured by expression of cleaved caspase-3 (two-way-ANOVA main effect of age F2,21 = 18.93, p < 0.0001; genotype F1,21 = 2.371, p = 0.13; interaction F2,21 = 0.04, p = 0.96).DOI: http://dx.doi.org/10.7554/eLife.08352.015
+**Figure 5—figure supplement 2.:** Although there are significantly more apoptotic cholinergic interneurons, there are no differences in the number of non-cholinergic apoptotic cells, as measured by expression of cleaved caspase-3 (two-way-ANOVA main effect of age F2,21 = 18.93, p < 0.0001; genotype F1,21 = 2.371, p = 0.13; interaction F2,21 = 0.04, p = 0.96).
 
 The temporal and spatial pattern of cell loss suggests that LCIs degenerate during postnatal striatal maturation. To confirm LCI cell death rather than altered cellular phenotype, we co-stained striatal sections for ChAT and cleaved caspase-3 (CC3; Figure 5C). We quantified the number of CC3+ and co-localized CC3/ChAT+ cells at 3 time points during striatal development. While CC3+ and CC3/ChAT+ cell numbers did not differ between mutant and littermate control mice at postnatal day 10, Dlx-CKO mice exhibited significantly more CC3/ChAT+ co-localized cells at postnatal days 12–14 and 24 (Figure 5B), precisely the time that abnormal movements emerge. There were no differences in the overall number of non-ChAT+ CC3 striatal cells (Figure 5—figure supplement 2).
 
-## Surviving cholinergic neurons in Dlx-CKO mice exhibit morphological, electrophysiological, and connectivity abnormalities
+### Surviving cholinergic neurons in Dlx-CKO mice exhibit morphological, electrophysiological, and connectivity abnormalities
 
-To determine whether there are abnormalities in the remaining LCIs, which could contribute the behavioral phenotype of Dlx-CKO mice, we examined the morphological and electrophysiological properties of these cells. Surviving LCIs exhibited significant cell soma hypertrophy (
+To determine whether there are abnormalities in the remaining LCIs, which could contribute the behavioral phenotype of Dlx-CKO mice, we examined the morphological and electrophysiological properties of these cells. Surviving LCIs exhibited significant cell soma hypertrophy (Figure 6A). The delayed time course of this phenotype following cell loss and rightward shift of the cell size frequency histogram (Figure 6B) support the likelihood that surviving neurons are becoming larger. In contrast, PV+, SST+, or DARPP-32+ neurons in striatum and cortex showed no changes in soma size (Figure 6C,D) and MSN dendritic structure was normal, as assessed by Golgi-Cox staining and Sholl analysis (Figure 6E–H).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig6-v2.jpg)
 
-**Figure 6.:** (A) Quantification of ChAT-positive cell soma area in dorsal striatum between postnatal day 7 and 168 (two-way ANOVA significant main effect of genotype F1,60 = 12.51; p = 0.0008 and time F3,60 = 117.8; p < 0.0001, Tukey's multiple comparison test). (B) Frequency histogram of cell soma area data at postnatal day 168. (C, D) Cell soma area of striatal and cortical GABAergic interneurons and striatal MSNs at postnatal day 168. (E) Example of Golgi-Cox-stained MSN and dendritic tree reconstruction. (F–H) Analysis of dendritic complexity (n = 69 control, 25 Dlx-CKO neurons). No differences observed in average highest dendritic branch order (one-way ANOVA F3,90 = 1.079; p = 0.36), dendritic length (one-way ANOVA F3,92 = 1.023; p = 0.386), or intersections on sholl analysis (two-way ANOVA F1,92 = 0.019; p = 0.89).DOI: http://dx.doi.org/10.7554/eLife.08352.016
+**Figure 6.:** (A) Quantification of ChAT-positive cell soma area in dorsal striatum between postnatal day 7 and 168 (two-way ANOVA significant main effect of genotype F1,60 = 12.51; p = 0.0008 and time F3,60 = 117.8; p < 0.0001, Tukey's multiple comparison test). (B) Frequency histogram of cell soma area data at postnatal day 168. (C, D) Cell soma area of striatal and cortical GABAergic interneurons and striatal MSNs at postnatal day 168. (E) Example of Golgi-Cox-stained MSN and dendritic tree reconstruction. (F–H) Analysis of dendritic complexity (n = 69 control, 25 Dlx-CKO neurons). No differences observed in average highest dendritic branch order (one-way ANOVA F3,90 = 1.079; p = 0.36), dendritic length (one-way ANOVA F3,92 = 1.023; p = 0.386), or intersections on sholl analysis (two-way ANOVA F1,92 = 0.019; p = 0.89).
 
-Electrophysiological analyses of surviving striatal LCIs performed after the full extent of cell loss support the possibility that abnormalities of these cells may contribute to the behavioral phenotype of Dlx-CKO mice. Spontaneous firing rates and coefficients of variation were similar for LCIs between Dlx-CKO and controls in cell-attached patch clamp mode (
+Electrophysiological analyses of surviving striatal LCIs performed after the full extent of cell loss support the possibility that abnormalities of these cells may contribute to the behavioral phenotype of Dlx-CKO mice. Spontaneous firing rates and coefficients of variation were similar for LCIs between Dlx-CKO and controls in cell-attached patch clamp mode (Figure 7A,B). However, cell capacitance measurements were significantly larger in Dlx-CKO LCIs than control (Figure 7C) when recorded at a membrane potential of −70 mV with a K-gluconate based internal recording solution, or using a cesium-methanesulfonate internal solution (data not shown). This finding is consistent with morphological evidence of larger cell somata (Figure 6A). The inputs to these larger cells also appear to be abnormal. Dlx-CKO LCIs displayed significantly more spontaneous inhibitory postsynaptic currents (sIPSCs) than control LCIs (Figure 7D,E) (p = 0.006). Although the mean spontaneous excitatory postsynaptic current (sEPSC) frequency also was greater for Dlx-CKO LCIs (Figure 7D,F) the difference from the control LCI mean was not statistically significant (p = 0.17). The sIPSC/sEPSC ratio was significantly higher in Dlx-CKO cells (Figure 7G) indicating that these cells receive abnormal synaptic input.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig7-v2.jpg)
 
-**Figure 7.:** (A) Sample cell-attached recordings from tonically active control and Dlx-CKO LCIs. (B) Mean frequencies of spontaneous firing (cell-attached) and coefficients of variation from control and Dlx-CKO LCIs. (C) Capacitance, input resistance, time constant, and resting membrane potential values from recordings with K-gluconate internal solution. (D) Sample recordings of sIPSCs and sEPSCs. (E) Mean sIPSC frequency from Dlx-CKO LCIs was significantly greater than that of control LCIs (p = 0.006). (F) Mean sEPSC frequencies from both genotypes were similar. (G) Ratio of sIPSC/sEPSC indicates that Dlx-CKO LCIs received significantly more inhibitory inputs than control LCIs (p = 0.05). (H) Examples of typical responses of control and Dlx-CKO LCIs to injected current pulses. Control LCIs generated more action potentials. (I) Mean numbers of action potentials are significantly reduced in Dlx-CKO LCIs at higher injected currents (two-way ANOVA with posthoc Bonferroni test, p < 0.001). (J) Sample traces of evoked EPSCs in control and Dlx-CKO LCIs. (K) Peak amplitudes of evoked EPSCs were significantly larger in Dlx-CKO LCIs (two-way ANOVA with posthoc Bonferroni test, p < 0.01).DOI: http://dx.doi.org/10.7554/eLife.08352.017
+**Figure 7.:** (A) Sample cell-attached recordings from tonically active control and Dlx-CKO LCIs. (B) Mean frequencies of spontaneous firing (cell-attached) and coefficients of variation from control and Dlx-CKO LCIs. (C) Capacitance, input resistance, time constant, and resting membrane potential values from recordings with K-gluconate internal solution. (D) Sample recordings of sIPSCs and sEPSCs. (E) Mean sIPSC frequency from Dlx-CKO LCIs was significantly greater than that of control LCIs (p = 0.006). (F) Mean sEPSC frequencies from both genotypes were similar. (G) Ratio of sIPSC/sEPSC indicates that Dlx-CKO LCIs received significantly more inhibitory inputs than control LCIs (p = 0.05). (H) Examples of typical responses of control and Dlx-CKO LCIs to injected current pulses. Control LCIs generated more action potentials. (I) Mean numbers of action potentials are significantly reduced in Dlx-CKO LCIs at higher injected currents (two-way ANOVA with posthoc Bonferroni test, p < 0.001). (J) Sample traces of evoked EPSCs in control and Dlx-CKO LCIs. (K) Peak amplitudes of evoked EPSCs were significantly larger in Dlx-CKO LCIs (two-way ANOVA with posthoc Bonferroni test, p < 0.01).
 
 Several abnormalities were also identified in the response of LCIs to various stimuli. Depolarizing current pulses (1 s duration, 25 pA increments) produced significantly fewer action potentials in LCIs from Dlx-CKO than control at 150–200 pA current intensities (Figure 7H,I; two-way ANOVA, interaction between current intensity and frequency of action potentials, p < 0.001). These findings indicate that Dlx-CKO LCIs may be less excitable than LCIs from control mice. However, evoked EPSCs from Dlx-CKO LCIs were significantly larger than those of control LCIs (Figure 7J,K) at higher stimulation intensities (two-way ANOVA, interaction between current intensity and response amplitude, p < 0.01). A subpopulation of Dlx-CKO LCIs displayed very large responses (>150 pA at 0.06 mA, 3/12) that were not observed in control LCIs. LCIs exhibiting large amplitude responses also had significantly larger membrane capacitances than cells that did not (134.8 ± 14.7 vs 97.0 ± 8.3 pF, p = 0.047), suggesting that increased numbers of synapses on the larger somata may account for the increased response amplitude. In support of this possibility, current density measurements of evoked responses (evoked response amplitude divided by cell capacitance) were not significantly different at all stimulation intensities (data not shown). These multiple disturbances of surviving LCIs function raise the possibility that the beneficial effect of anticholinergic agents may in part arise from suppressing their aberrant signaling.
 
-## DYT1 postmortem putamen shows a selective reduction of cholinergic markers
+### DYT1 postmortem putamen shows a selective reduction of cholinergic markers
 
-Our results suggest that the selective loss of LCIs may be a pathogenic event in DYT1 dystonia. We further explored this possibility by analyzing postmortem putamen from DYT1 subjects and controls. As DYT1 tissue is in very limited supply and in general not of sufficient quality to perform valid quantification of cell numbers, we analyzed whole cell lysates of this tissue for cholinergic (TrkA, VAChT and AChE), GABAergic (GAD67), and dopaminergic (TH) markers (
+Our results suggest that the selective loss of LCIs may be a pathogenic event in DYT1 dystonia. We further explored this possibility by analyzing postmortem putamen from DYT1 subjects and controls. As DYT1 tissue is in very limited supply and in general not of sufficient quality to perform valid quantification of cell numbers, we analyzed whole cell lysates of this tissue for cholinergic (TrkA, VAChT and AChE), GABAergic (GAD67), and dopaminergic (TH) markers (Figure 8A; Table 1). TrkA levels were significantly reduced in DYT1 putamen (Figure 8B; approximately 84% reduction). Similarly, the normalized mean expression levels of VAChT and AChE were reduced by 66% and 50% respectively (Figure 8B,C), but these differences did not reach statistical significance, likely because of the large variability between control subjects for these markers. There was also considerable variability in the expression levels of the biosynthetic enzymes for ACh, GABA, and dopamine. Mean ChAT expression levels were slightly higher in DYT1 patients as compared to control subjects (Figure 8A,D). GAD67 and TH levels were comparable between control and DYT1 dystonia subjects (Figure 8E,F). Consistent with our experimental studies, these results suggest dysregulation of cholinergic function and TrkA signaling in the putamen of DYT1 dystonia patients.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/08352/elife-08352-fig8-v2.jpg)
 
-**Figure 8.:** (A) Western Blot analysis of postmortem putamen samples from 3 dystonia patients and 3 age-matched control subjects. (B) Significant reductions in TrkA expression (t-test; t(4) = 4.413; p = 0.014). (B–F) No significant alterations in AChE (t(4) = 0.940; p = 0.400), VAChT (t(4) = 0.208; p = 0.208), ChAT (t(df = 4) = 1.766; p = 0.152), TH (t(4) = 0.7459; p = 0.497), or GAD67 (t(4) = 0580; p = 0.593).DOI: http://dx.doi.org/10.7554/eLife.08352.018
+**Figure 8.:** (A) Western Blot analysis of postmortem putamen samples from 3 dystonia patients and 3 age-matched control subjects. (B) Significant reductions in TrkA expression (t-test; t(4) = 4.413; p = 0.014). (B–F) No significant alterations in AChE (t(4) = 0.940; p = 0.400), VAChT (t(4) = 0.208; p = 0.208), ChAT (t(df = 4) = 1.766; p = 0.152), TH (t(4) = 0.7459; p = 0.497), or GAD67 (t(4) = 0580; p = 0.593).
+
+**Table 1.**
+ Human subject data
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Case I.D. number</th>
+      <th>Lane #</th>
+      <th>Status</th>
+      <th>Age (years)</th>
+      <th>Cause of death</th>
+      <th>Other neuro-pathology</th>
+      <th>Sex</th>
+      <th>PMI (hrs)</th>
+      <th>Time in storage</th>
+      <th>Race</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BBID100</td>
+      <td>1</td>
+      <td>Control</td>
+      <td>87</td>
+      <td>Unknown</td>
+      <td>–</td>
+      <td>Female</td>
+      <td>9</td>
+      <td>10 year 2 month</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>UMB1619</td>
+      <td>2</td>
+      <td>DYT1</td>
+      <td>87.8</td>
+      <td>Stroke</td>
+      <td>–</td>
+      <td>Female</td>
+      <td>23</td>
+      <td>12 year 4 month</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>BBID384</td>
+      <td>3</td>
+      <td>Control</td>
+      <td>89</td>
+      <td>Respiratory failure</td>
+      <td>–</td>
+      <td>Female</td>
+      <td>Not recorded</td>
+      <td>11 year 9 month</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>UMB4877</td>
+      <td>4</td>
+      <td>DYT1</td>
+      <td>90.3</td>
+      <td>Stroke</td>
+      <td>–</td>
+      <td>Female</td>
+      <td>2</td>
+      <td>6 year 6 month</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>BBID732</td>
+      <td>5</td>
+      <td>Control</td>
+      <td>91</td>
+      <td>Unknown</td>
+      <td>Lacunar infarctions, cerebellar microinfarctions, modest nigral cell loss, lewy bodies</td>
+      <td>Male</td>
+      <td>8</td>
+      <td>10 year 10 month</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>UMB5200</td>
+      <td>6</td>
+      <td>DYT1</td>
+      <td>88.8</td>
+      <td>‘complications of disorder’</td>
+      <td>–</td>
+      <td>Female</td>
+      <td>9</td>
+      <td>5 year 5 month</td>
+      <td>Caucasian</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -172,106 +267,451 @@ Our findings add to the emerging literature demonstrating a unique requirement f
 
 ## Materials and methods
 
-## Generation and maintenance of mice
+### Generation and maintenance of mice
 
 Tor1a floxed mice were generated as previously described (Liang et al., 2014). Dlx5/6-Cre mice were obtained from Jackson laboratories (Tg(dlx6a-Cre)1Mekk/J; stock number 008199) and then maintained in our mouse colony at the University of Michigan. Conditional Tor1a null animals were generated with the following breeding scheme: Cre+ Tor1a+/− X Tor1aflx/flx, with four possible offspring genotypes: Tor1aflx/+ (WT), Tor1aflx/− (Flx control), Cre+ Tor1aflx/+ (Cre control), and Cre+ Tor1aflx/− (Dlx-CKO). Mice were genotyped for Tor1a and the Cre transgene using the primers and PCR programs previously described (Liang et al., 2014). For electrophysiology experiments, a Chat(BAC)-eGFP allele (strain B6.Cg-Tg(RP23-268L19-EGFP)2Mik/J; Stock Number 007902) was bred into the Dlx-CKO cross to allow for visualization of LCIs. Mice were housed 2–4 per cage using microisolation technique, maintained in a temperature- and light-controlled room, and provided with food and water ad libitum. Mice of all genotypes were housed together to prevent environmental bias. The University of Michigan Committee on the Use and Care of Animals (UCUCA) approved all experiments involving animals. Age and sex-matched littermate mice were used for all experiments.
 
-## Behavioral analysis
+### Behavioral analysis
 
-## Pre-weaning behavioral observation
+#### Pre-weaning behavioral observation
 
 Mice were examined for motor reflexes between postnatal days 1 and 21. Surface righting reflex, postural reflex, negative geotaxis, and forelimb wire suspension were performed and quantified as previously described (Santos et al., 2007).
 
-## Tail suspension test
+#### Tail suspension test
 
 Mice were picked up by the tail, suspended in the air for 60 s, and were observed for forelimb and hindlimb clasping and trunk twisting. Mice were periodically tested for the presence of abnormal clasping and twisting behaviors between postnatal day 7 and 1 year of age. 2–3 investigators blinded to genotype rated the presence of abnormal clasping or twisting for each mouse cohort.
 
-## Open field
+#### Open field
 
 8-week-old mice were placed in one of four 43 × 43 cm2 square plexiglass cages equipped with infrared beams to detect horizontal movements and vertical rearing (MED Associates, St. Albans, VT) and were monitored for 60 min. All horizontal and vertical beam breaks were recorded. Data expressed as number of beam breaks per 5-min epoch.
 
-## Grid hang test
+#### Grid hang test
 
 Mice were tested for motor coordination and strength by placing them on a 21.5 × 21.5 cm wire grid (0.5 cm2 openings) and turning upside down 21 cm above the bench. Latency to fall was recorded, with a cut off time of 300 s. Mice were observed throughout the test as they readjusted grip and made new paw placements.
 
-## Accelerating rotarod
+#### Accelerating rotarod
 
 Motor coordination, endurance, and motor learning were assessed by placing mice on a stationary rod, and increasing speed of rotation from 4 to 40 rpm over the course of 5 min. Latency to fall was recorded, with a cut-off time of 5 min. Mice were tested in 5 consecutive trials per day for 2 days, with 1-min rest between trials.
 
-## Gait analysis
+#### Gait analysis
 
 8-week old mice were tested using a Digigait apparatus (Mouse Specifics Inc., Framingham, MA) with a treadmill speed of 24 cm/s. Dynamic gait signals were generated with digigait software, an investigator blinded to genotype and experimental design confirmed the accuracy of digital paw prints, and 10 gait indices were examined.
 
-## Response to anticholinergics
+#### Response to anticholinergics
 
 Repeated daily tail suspension tests were administered beginning at 10 weeks of age. Once-daily injections of scopolamine (3 mg/kg, s.c.; Sigma S0929) or saline (10 ml/kg) were administered for 10 days, and mice received 1-minute tail suspensions 45 min after each injection. A separate cohort of mice received once-daily injections of trihexyphenidyl (THP; 5 mg/kg, i.p.; Sigma T1516) or saline (10 ml/kg) for 5 days and was tested with 1-minute tail suspensions 45 min after each injection. Mice were tested again 3 weeks after the last injection for both experiments. Each tail suspension was recorded and 2 (for scopolamine study) or 3 (for THP study) observers blinded to experimental design, groups, and trial rated clasping behaviors. The presence of forelimb or hindlimb clasping and trunk twisting was timed, with a maximum value of 60 s.
 
-## Western blot analysis
+### Western blot analysis
 
-Mice were sacrificed with cervical dislocation, brains were rapidly removed, frozen over dry ice, and stored at −80°C. Fresh frozen brains were cut into 500 μm sections, were refrozen onto uncoated glass slides, and striatum samples were taken using a modified 16 gauge needle. Micropunch samples were placed into microcentrifuge tubes containing 100 μl lysis buffer (Tris Buffered Saline containing 1% Sodium Dodecyl Sulfate, 0.1 mM phenylmethanesulfonyl fluoride, 1 mM Dithiothreitol, and Halt Protease Inhibitor Cocktail [Life Technologies product 87786]) and were homogenized using a plastic plunger. Homogenates were centrifuged at 12,000 rpm for 5 min, pellets were discarded, and the supernatants were removed to a new tube. Bradford protein assay was performed and final lysates were prepared at 1 μg/μl, including sample-loading buffer (0.05% bromophenol blue, 0.1 M dithiothreitol, 10% glycerol, 2% SDS, and 5% β-mercaptoethanol), and were boiled for 5 min. 10 μg (10 μl) protein samples and Dual Precision Plus protein standards were run on 4–15% Biorad Mini Protean TGX precast polyacrylamide gels, underwent wet transfer to 0.22 μm PVDF membranes in transfer buffer containing 10% methanol (run for 2 hr at 400 mA at 4°C), and were processed for enhanced chemiluminescence as described below. Membranes were washed in tris buffered saline (TBS) containing 1% Tween-20 (TBS-T), blocked for 30 min in 5% non-fat dry milk in TBS-T, and incubated in primary antibody overnight at 4°C (see Table 2 for primary antibody details). Membranes were then washed in 5% milk/TBS-T, incubated for 1 hr in horseradish peroxidase-conjugated secondary antibody (Table 2), and rinsed in TBS-T. Bands were visualized using Supersignal West Pico, Dura, or Femto enhanced chemiluminescence substrates, underwent multiple exposures to Amersham hyperfilm ECL, and were developed and fixed with an x-ray film developer. Films were scanned using an Epson scanner, and band intensity was quantified in ImageJ. Serial dilutions of protein were examined for each antibody to determine optimal antibody dilutions before running experimental samples, and multiple exposures were examined to confirm that bands were in the linear range and not overexposed.10.7554/eLife.08352.020Table 2.Antibodies used for immunohistochemistry and western blotsDOI: http://dx.doi.org/10.7554/eLife.08352.020LevelAntigenHostConjugatedDilutionSourceIHCPrimaryTorsinARabbit–1:100Abcam ab34540PrimaryGFAPRabbit–1:2000Dako Z0334Primarys100βRabbit–1:2000Abcam ab41548PrimaryIba-1Rabbit–1:500Wako 019-19741PrimaryChATGoat–1:100Millipore AB144PPrimaryVAChTGoat–1:2000Millipore ABN100PrimaryDARPP-32Rabbit–1:300Cell Signaling #2302PrimaryPVMouse–1:500Swant #235PrimarySSTRabbit–1:500Abcam ab103790PrimaryCC3Rabbit–1:500Cell Signaling #9664Secondaryanti-mouseDonkeyAx4881:800Life Technologies A-31572Secondaryanti-mouseDonkeyAx5551:800Life Technologies A-21202Secondaryanti-mouseDonkeybiotin1:800Jackson Immunoresearch 115-065-003Secondaryanti-rabbitDonkeyAx4881:800Life Technologies A-21206Secondaryanti-rabbitDonkeyAx5551:800Life Technologies A-31572Secondaryanti-rabbitDonkeybiotin1:800Jackson Immunoresearch 711-065-152Secondaryanti-goatDonkeybiotin1:800Jackson Immunoresearch 705-065-003Western blotPrimaryChATRabbit–1:1000Abcam ab137349PrimaryGAD67Mouse–1:1000Millipore MAB5406PrimaryTHRabbit–1:2000Millipore AB152PrimaryActinMouse–1:6000Sigma A5316PrimaryTrkARabbit–1:4000Advanced Targeting Systems ABN03PrimaryDARPP-32Rabbit–1:2000Cell Signaling #2302PrimaryTorsinARabbit–1:10,000Abcam ab34540PrimaryCalnexinRabbit–1:20,000Enzo Life Sciences SPA-860PrimaryAChERabbit–1:200Santa Cruz sc-11409PrimaryVAChTGoat–1:1000Millipore ABN100PrimaryTrkA (for human)Rabbit–1:1000Cell Signaling #2505SecondaryAnti-goatRabbitHRP1:7500Pierce 31402Secondaryanti-mouseGoatHRP1:5000Jackson Immunoresearch 115-035-003Secondaryanti-rabbitGoatHRP1:10,000Jackson Immunoresearch 111-035-003
+Mice were sacrificed with cervical dislocation, brains were rapidly removed, frozen over dry ice, and stored at −80°C. Fresh frozen brains were cut into 500 μm sections, were refrozen onto uncoated glass slides, and striatum samples were taken using a modified 16 gauge needle. Micropunch samples were placed into microcentrifuge tubes containing 100 μl lysis buffer (Tris Buffered Saline containing 1% Sodium Dodecyl Sulfate, 0.1 mM phenylmethanesulfonyl fluoride, 1 mM Dithiothreitol, and Halt Protease Inhibitor Cocktail [Life Technologies product 87786]) and were homogenized using a plastic plunger. Homogenates were centrifuged at 12,000 rpm for 5 min, pellets were discarded, and the supernatants were removed to a new tube. Bradford protein assay was performed and final lysates were prepared at 1 μg/μl, including sample-loading buffer (0.05% bromophenol blue, 0.1 M dithiothreitol, 10% glycerol, 2% SDS, and 5% β-mercaptoethanol), and were boiled for 5 min. 10 μg (10 μl) protein samples and Dual Precision Plus protein standards were run on 4–15% Biorad Mini Protean TGX precast polyacrylamide gels, underwent wet transfer to 0.22 μm PVDF membranes in transfer buffer containing 10% methanol (run for 2 hr at 400 mA at 4°C), and were processed for enhanced chemiluminescence as described below. Membranes were washed in tris buffered saline (TBS) containing 1% Tween-20 (TBS-T), blocked for 30 min in 5% non-fat dry milk in TBS-T, and incubated in primary antibody overnight at 4°C (see Table 2 for primary antibody details). Membranes were then washed in 5% milk/TBS-T, incubated for 1 hr in horseradish peroxidase-conjugated secondary antibody (Table 2), and rinsed in TBS-T. Bands were visualized using Supersignal West Pico, Dura, or Femto enhanced chemiluminescence substrates, underwent multiple exposures to Amersham hyperfilm ECL, and were developed and fixed with an x-ray film developer. Films were scanned using an Epson scanner, and band intensity was quantified in ImageJ. Serial dilutions of protein were examined for each antibody to determine optimal antibody dilutions before running experimental samples, and multiple exposures were examined to confirm that bands were in the linear range and not overexposed.
 
-## In vivo microdialysis
+**Table 2.**
+ Antibodies used for immunohistochemistry and western blots
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Level</th>
+      <th>Antigen</th>
+      <th>Host</th>
+      <th>Conjugated</th>
+      <th>Dilution</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="17">IHC</td>
+      <td>Primary</td>
+      <td>TorsinA</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:100</td>
+      <td>Abcam ab34540</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>GFAP</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:2000</td>
+      <td>Dako Z0334</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>s100β</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:2000</td>
+      <td>Abcam ab41548</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>Iba-1</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:500</td>
+      <td>Wako 019-19741</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>ChAT</td>
+      <td>Goat</td>
+      <td>–</td>
+      <td>1:100</td>
+      <td>Millipore AB144P</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>VAChT</td>
+      <td>Goat</td>
+      <td>–</td>
+      <td>1:2000</td>
+      <td>Millipore ABN100</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>DARPP-32</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:300</td>
+      <td>Cell Signaling #2302</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>PV</td>
+      <td>Mouse</td>
+      <td>–</td>
+      <td>1:500</td>
+      <td>Swant #235</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>SST</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:500</td>
+      <td>Abcam ab103790</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>CC3</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:500</td>
+      <td>Cell Signaling #9664</td>
+    </tr>
+    <tr>
+      <td>Secondary</td>
+      <td>anti-mouse</td>
+      <td>Donkey</td>
+      <td>Ax488</td>
+      <td>1:800</td>
+      <td>Life Technologies A-31572</td>
+    </tr>
+    <tr>
+      <td>Secondary</td>
+      <td>anti-mouse</td>
+      <td>Donkey</td>
+      <td>Ax555</td>
+      <td>1:800</td>
+      <td>Life Technologies A-21202</td>
+    </tr>
+    <tr>
+      <td>Secondary</td>
+      <td>anti-mouse</td>
+      <td>Donkey</td>
+      <td>biotin</td>
+      <td>1:800</td>
+      <td>Jackson Immunoresearch 115-065-003</td>
+    </tr>
+    <tr>
+      <td>Secondary</td>
+      <td>anti-rabbit</td>
+      <td>Donkey</td>
+      <td>Ax488</td>
+      <td>1:800</td>
+      <td>Life Technologies A-21206</td>
+    </tr>
+    <tr>
+      <td>Secondary</td>
+      <td>anti-rabbit</td>
+      <td>Donkey</td>
+      <td>Ax555</td>
+      <td>1:800</td>
+      <td>Life Technologies A-31572</td>
+    </tr>
+    <tr>
+      <td>Secondary</td>
+      <td>anti-rabbit</td>
+      <td>Donkey</td>
+      <td>biotin</td>
+      <td>1:800</td>
+      <td>Jackson Immunoresearch 711-065-152</td>
+    </tr>
+    <tr>
+      <td>Secondary</td>
+      <td>anti-goat</td>
+      <td>Donkey</td>
+      <td>biotin</td>
+      <td>1:800</td>
+      <td>Jackson Immunoresearch 705-065-003</td>
+    </tr>
+    <tr>
+      <td rowspan="14">Western blot</td>
+      <td>Primary</td>
+      <td>ChAT</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:1000</td>
+      <td>Abcam ab137349</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>GAD67</td>
+      <td>Mouse</td>
+      <td>–</td>
+      <td>1:1000</td>
+      <td>Millipore MAB5406</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>TH</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:2000</td>
+      <td>Millipore AB152</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>Actin</td>
+      <td>Mouse</td>
+      <td>–</td>
+      <td>1:6000</td>
+      <td>Sigma A5316</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>TrkA</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:4000</td>
+      <td>Advanced Targeting Systems ABN03</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>DARPP-32</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:2000</td>
+      <td>Cell Signaling #2302</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>TorsinA</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:10,000</td>
+      <td>Abcam ab34540</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>Calnexin</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:20,000</td>
+      <td>Enzo Life Sciences SPA-860</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>AChE</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:200</td>
+      <td>Santa Cruz sc-11409</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>VAChT</td>
+      <td>Goat</td>
+      <td>–</td>
+      <td>1:1000</td>
+      <td>Millipore ABN100</td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>TrkA (for human)</td>
+      <td>Rabbit</td>
+      <td>–</td>
+      <td>1:1000</td>
+      <td>Cell Signaling #2505</td>
+    </tr>
+    <tr>
+      <td>Secondary</td>
+      <td>Anti-goat</td>
+      <td>Rabbit</td>
+      <td>HRP</td>
+      <td>1:7500</td>
+      <td>Pierce 31402</td>
+    </tr>
+    <tr>
+      <td>Secondary</td>
+      <td>anti-mouse</td>
+      <td>Goat</td>
+      <td>HRP</td>
+      <td>1:5000</td>
+      <td>Jackson Immunoresearch 115-035-003</td>
+    </tr>
+    <tr>
+      <td>Secondary</td>
+      <td>anti-rabbit</td>
+      <td>Goat</td>
+      <td>HRP</td>
+      <td>1:10,000</td>
+      <td>Jackson Immunoresearch 111-035-003</td>
+    </tr>
+  </tbody>
+</table>
+
+### In vivo microdialysis
 
 Custom made microdialysis probes with 1 mm polyacrylonitrile membrane length were implanted bilaterally into the dorsal striatum 24 hr before experiments with the following coordinates: Anteroposterior +1.1 mm, mediolateral +2.05 mm, dorsoventral −3.8 mm. On the day of experiments, artificial cerebrospinal fluid (aCSF) (composition in mM: CaCl2 1.2; KCl 2.7, NaCl 148 and MgCl2 0.85) was perfused through the microdialysis probe at 2 μl/min for 1 hr and then 1 μl/min for another hour for equilibration. For studies that only measured ACh concentrations (Figure 3E), three 5-min fractions were collected per animal following neostigmine addition (50 μM) to the aCSF perfusate. Dialysate samples were collected and analyzed following the addition of d4-ACh (20 nM) as internal standard. For comprehensive neurochemical analysis of basal differences between genotypes (Figure 3F), five 3-min fractions were collected per animal, and a benzoyl chloride derivatization scheme was employed (Song et al., 2012). Briefly, 2.5 μl borate buffer (100 mM), 2.5 μl 2% benzoyl chloride in acetonitrile, and 2.5 μl internal standard solution was added to each dialysate sample prior to analysis.
 
-## HPLC-MS analyses of neurochemistry
+### HPLC-MS analyses of neurochemistry
 
 Following sample collection, a Thermo Scientific Accela HPLC (Waltham, MA) system automatically injected 5 µl of the sample onto a Waters (Milford, MA) HSS T3 reverse phase HPLC column (1 mm × 100 mm, 1.8 µm) at 200 μl/min. For ACh analysis, a 2 min isocratic elution was employed (25/75 mobile phase A/B). Mobile phase A consisted of 10 mM ammonium formate and 0.15% formic acid. Mobile phase B was acetonitrile. Analytes were detected by a Thermo Scientific TSQ Quantum Ultra triple quadrupole mass spectrometer operating in multiple reaction monitoring mode. ACh was detected using the m/z transition 146‡87 while d4-ACh was detected using 151‡90. For comprehensive neurochemical analysis, samples were analyzed as previously described but with a 6 min HPLC gradient (Song et al., 2012).
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 Mice were deeply anesthetized with a lethal dose of ketamine/xylazine and received transcardial perfusion of 0.01 M phosphate buffered saline (PBS) followed by 4% paraformaldehyde in 0.1 M phosphate buffer (PB). Brains were postfixed in 4% paraformaldehyde for 2 hr and cryoprotected overnight in 20% sucrose in PB. Consecutive serial 40 μm brain sections through the forebrain were generated on a cryostat and stored in PBS. Free-floating brain sections were processed for fluorescence immunohistochemistry by washing in PBS containing 0.1% Triton-X-100 (PBS-Tx), blocking in 5% normal donkey serum (NDS), and incubating in primary antibody overnight at 4°C (see Table 2 for primary antibody details). Sections were washed in PBS-Tx followed by 1 hr in secondary antibodies conjugated to Alexafluor 488 or Alexafluor 555 (Table 2). Brain sections were mounted onto gelatin-coated slides, coverslipped with prolong gold antifade mounting medium, and imaged under epifluorescence microscopy. Free-floating brain sections were processed for DAB staining by washing in PBS-Tx, blocking with 0.3% H2O2 followed by 5% NDS, and incubating overnight in primary antibody overnight at 4°C (see Table 2). Sections were washed with PBS-Tx, incubated in biotinylated secondary antibody for 1 hour (Table 2), followed by 2 hr in avidin-biotin-peroxidase complex (Vectastain Elite ABC Kit Standard; PK6100, Vector Laboratories, Burlingame, CA). Sections were exposed to 3,3′ diaminobenzidine using Sigmafast DAB tablets (Sigma D4418) and were flooded with PBS to halt staining. Sections were mounted onto gelatin-coated slides, dried overnight, dehydrated in ethanol and xylenes, and were coverslipped with permount mounting medium. Staining for each experiment was performed in parallel by an investigator blinded to experimental group. Omitting the primary or secondary antibody from incubation prevented all staining. To process for Nissl staining, 40 μm brain sections were mounted onto gelatin-coated slides, were dried for 24 hr, incubated in successive decreasing concentrations of ethanol, followed by 3 min in 0.005% cresyl violet solution containing acetic acid, were dehydrated in ethanol followed by xylenes, and were coverslipped using permount mounting medium.
 
-## Cholinesterase histochemistry
+### Cholinesterase histochemistry
 
 Mice were anesthetized with ketamine/xylazine and sacrificed by cervical dislocation. Brains were removed, frozen over dry ice, and stored at −80°C.
 
 25 μm fresh frozen brain sections were generated on a cryostat, were adhered to gelatin-coated slides, dried at room temperature, and stored at −80°C. Sections were stained as previously described (Geneser, 1987). Sections were dehydrated with ethanol followed by xylenes, and were coverslipped with permount mounting medium. Brain sections were imaged using brightfield microscopy, and optical density of striatal staining was determined using ImageJ software. Values from the anterior commissure white matter tract were used for a background subtraction value. AChE specificity was confirmed by omitting substrate, substituting butyrylcholinesterase substrates, or including the AChE inhibitor neostigmine in the incubation medium (Figure 3—figure supplement 1).
 
-## Golgi-Cox staining and Sholl analysis
+### Golgi-Cox staining and Sholl analysis
 
 Mice were anesthetized with ketamine/xylazine and sacrificed with cervical dislocation. Brains were removed and immediately processed using the FD Rapid GolgiStain Kit (FD Neurotechnologies, Columbia, MD). Processed brains were frozen with dry ice-chilled isopentane, placed on dry ice, and 100 μm brain sections were generated on a cryostat. Brain sections were mounted onto gelatin-coated slides, stained according to the FD Rapid GolgiStain Kit, and coverslipped with permount mounting medium. Slides were observed under brightfield microscopy using a Zeiss Axiophot 2 microscope, first using a 5× objective lens. Striatal medium spiny neurons containing full golgi-cox impregnation without breaks along the dendrites, and no obstructions by neighboring cells were then used for analysis. Neurons were observed using a 63× objective lens, were traced, and reconstructed using Neurolucida software (MBF Bioscience, Williston, VT), and dendritic complexity was determined with Sholl analysis. 94 neurons from 25 animals were used for this study.
 
-## Cell counting
+### Cell counting
 
-## Stereology
+#### Stereology
 
-Striatal, motor cortex, and basal forebrain neuron subtypes and striatal volume were quantified with an unbiased stereological approach using the optical fractionator probe in Stereoinvestigator (MBF Bioscience, Williston, VT). Consecutive 40 μm serial sections through the forebrain were separated into a series of 6 wells and stained for ChAT, VAChT, DARPP-32, PV, SST, or Nissl as described above. Sections were observed using brightfield microscopy on a Zeiss Axiophot 2 microscope. Regions of interest were first outlined using a 5× objective lens. 8 sections were observed for each marker, with a section evaluation interval of 6. Cells within the outlined region were counted using a 63× oil immersion objective, with a 12 μm counting depth, and 1 μm guard zones. Counting frame and sampling grid sizes were determined in pilot studies such that the Gunderson coefficient of error was less than 0.1 for each marker in each brain region (see Table 3 for specific counting frame and grid sizes). The top of each stained cell body was the point of reference. The corpus callosum, anterior commissure, lateral ventricle, and globus pallidus were used as anatomical boundaries for the striatum. Motor cortical counts were normalized to the measured volume due to the lack of clear boundaries for regional outlining in the cortex.10.7554/eLife.08352.021Table 3.Optical fractionator parameters used for stereological cell countingDOI: http://dx.doi.org/10.7554/eLife.08352.021RegionMarkerCounting frame (μm)Grid size (μm)StriatumChAT100 × 100250 × 250VAChT100 × 100250 × 250PV120 × 120330 × 330SST120 × 120330 × 330Nissl (large)100 × 100250 × 250Nissl (small)20 × 20600 × 600DARPP-3220 × 20600 × 600Basal forebrainChAT (NBM)75 × 75250 × 250ChAT (MS/VDB)75 × 75150 × 150CortexPV75 × 75330 × 330SST75 × 75330 × 330
+Striatal, motor cortex, and basal forebrain neuron subtypes and striatal volume were quantified with an unbiased stereological approach using the optical fractionator probe in Stereoinvestigator (MBF Bioscience, Williston, VT). Consecutive 40 μm serial sections through the forebrain were separated into a series of 6 wells and stained for ChAT, VAChT, DARPP-32, PV, SST, or Nissl as described above. Sections were observed using brightfield microscopy on a Zeiss Axiophot 2 microscope. Regions of interest were first outlined using a 5× objective lens. 8 sections were observed for each marker, with a section evaluation interval of 6. Cells within the outlined region were counted using a 63× oil immersion objective, with a 12 μm counting depth, and 1 μm guard zones. Counting frame and sampling grid sizes were determined in pilot studies such that the Gunderson coefficient of error was less than 0.1 for each marker in each brain region (see Table 3 for specific counting frame and grid sizes). The top of each stained cell body was the point of reference. The corpus callosum, anterior commissure, lateral ventricle, and globus pallidus were used as anatomical boundaries for the striatum. Motor cortical counts were normalized to the measured volume due to the lack of clear boundaries for regional outlining in the cortex.
 
-## Cortical thickness
+**Table 3.**
+ Optical fractionator parameters used for stereological cell counting
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Marker</th>
+      <th>Counting frame (μm)</th>
+      <th>Grid size (μm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">Striatum</td>
+      <td>ChAT</td>
+      <td>100 × 100</td>
+      <td>250 × 250</td>
+    </tr>
+    <tr>
+      <td>VAChT</td>
+      <td>100 × 100</td>
+      <td>250 × 250</td>
+    </tr>
+    <tr>
+      <td>PV</td>
+      <td>120 × 120</td>
+      <td>330 × 330</td>
+    </tr>
+    <tr>
+      <td>SST</td>
+      <td>120 × 120</td>
+      <td>330 × 330</td>
+    </tr>
+    <tr>
+      <td>Nissl (large)</td>
+      <td>100 × 100</td>
+      <td>250 × 250</td>
+    </tr>
+    <tr>
+      <td>Nissl (small)</td>
+      <td>20 × 20</td>
+      <td>600 × 600</td>
+    </tr>
+    <tr>
+      <td>DARPP-32</td>
+      <td>20 × 20</td>
+      <td>600 × 600</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Basal forebrain</td>
+      <td>ChAT (NBM)</td>
+      <td>75 × 75</td>
+      <td>250 × 250</td>
+    </tr>
+    <tr>
+      <td>ChAT (MS/VDB)</td>
+      <td>75 × 75</td>
+      <td>150 × 150</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cortex</td>
+      <td>PV</td>
+      <td>75 × 75</td>
+      <td>330 × 330</td>
+    </tr>
+    <tr>
+      <td>SST</td>
+      <td>75 × 75</td>
+      <td>330 × 330</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Cortical thickness
 
 Slides were examined under brightfield microscopy using a Zeiss Axioskop 2 plus microscope under a 10× objective lens. Images were acquired and the motor cortex was observed from a series of 6 Nissl-stained sections per brain (10–15 brains per genotype). Four bilateral measurements from the dorsal boundary of the corpus callosum to the outer edge of cortical layer 1 were taken per brain section, and were averaged to generate mean cortical thickness (in μm) using Cellsens standard (Olympus, Center Valley, PA).
 
-## Cell size
+#### Cell size
 
 Striatal and cortical cell size measurements were quantified from images taken under a 40× oil immersion objective lens. Cell soma area was measured (μm2) by outlining the edge of each cell body profile in darkly stained neurons that were fully in focus. 300–500 neurons per genotype (from 8–9 brains per group) were measured.
 
-## Cell density
+#### Cell density
 
 8 serial sections through the striatum were quadrisected according to the boundaries of the corpus callosum and anterior commissure (vertically bisected at the midpoint of the corpus callosum, and horizontally bisected half way between the corpus callosum and the anterior commissure). The area of each striatal quadrant was determined and the number of soma profiles of ChAT-stained neurons was counted within each quadrant using Cellsens standard software. Heat maps were generated according to the cell density values, and were overlayed onto line drawings of the striatum to generate Figure 4D.
 
-## CC3/ChAT counts
+#### CC3/ChAT counts
 
 To quantify the number of apoptotic LCIs, a series of 8 striatal sections costained for ChAT/Cleaved Caspase-3 (CC3) were observed under epifluorescence microscopy. The total number of CC3+ and ChAT/CC3+ cells were quantified per section.
 
-## Electrophysiology
+### Electrophysiology
 
-## Brain slice preparation
+#### Brain slice preparation
 
 Detailed methods have been published (Cepeda et al., 2013). Dlx-CKO and control mice (86–168 days, 14 male and 12 female) were deeply anesthetized with isoflurane and perfused intracardially with an ice-cold sucrose slicing solution containing the following (in mM): 87 NaCl, 2.5 KCl, 0.5 CaCl2, 7 MgCl2, 1.25 NaH2PO4, 26 NaHCO3, and 75 sucrose, pH 7.2 (aerated with 95% O2/5% CO2, 290–300 mOsm/l). Mice were then decapitated and the brain rapidly removed and placed in the ice-cold sucrose slicing solution. Coronal slices of the striatum were cut (350 μm) using a vibrating microtome (VT1000S; Leica Microsystems, Germany), transferred to an incubating chamber containing aCSF (130 NaCl, 3 KCl, 1.25 NaH2PO4, 26 NaHCO3, 2 MgCl2, 2 CaCl2, and 10 glucose) oxygenated with 95% O2-5% CO2 (pH 7.2–7.4, 290–310 mOsm) at 32°C for 35 min and then allowed to recover at room temperature for an additional 30 min. All recordings were performed at room temperature using an upright microscope (Olympus BX51WI) equipped with differential interference contrast optics and fluorescence imaging (QIACAM fast 1394 with Q-Capture Pro software). Whole-cell patch clamp recordings were obtained from GFP-positive LCIs in the dorsolateral striatum using a MultiClamp 700A Amplifier (Molecular Devices, Sunnyvale, CA) and the pClamp 8.2 software. The patch pipette (3–5 MΩ) contained a cesium-based internal solution (in mM): 125 Cs-methanesulfonate, 4 NaCl, 1 MgCl2, 5 MgATP, 9 EGTA, 8 HEPES, 1 GTP-Tris, 10 phosphocreatine, and 0.1 leupeptin (pH 7.2 with CsOH, 270–280 mOsm) for voltage-clamp recordings or a K-gluconate-based solution containing the following (in mM): 112.5 K-gluconate, 4 NaCl, 17.5 KCl, 0.5 CaCl2, 1 MgCl2, 5 K2ATP, 1 NaGTP, 5 EGTA, 10 HEPES, pH 7.2 (270–280 mOsm/l) for cell attached and current clamp recordings. After breaking through the membrane, cell properties (capacitance, input resistance and time constant) were obtained while holding the membrane potential at −70 mV. Electrode access resistances during all whole cell recordings were maintained at <30 MΩ.
 
-## Spontaneous and evoked postsynaptic currents
+#### Spontaneous and evoked postsynaptic currents
 
 Spontaneous PSCs were recorded in gap-free mode, filtered at 1 kHz during acquisition and digitized at 100 μs. sIPSCs were recorded at +20 mV in standard aCSF. Spontaneous sEPSCs were recorded at −70 mV and in the presence of the GABAA receptor antagonist bicuculline (BIC, 10 μM, Tocris Bioscience, UK). To evoke synaptic currents, a monopolar stimulating electrode (glass-pipette filled with aCSF, impedance ∼1.5 MΩ) was placed in the corpus callosum, 150–200 μm from the recorded cell. QX-314 (4 mM, Tocris Bioscience) was included in the internal pipette solution to block activity-dependent sodium channels, and EPSCs were evoked with cells voltage-clamped at −70 mV in the presence of BIC. Test stimuli (0.5 ms duration) were applied every 20 s at increasing stimulus intensities (0.01–0.1 mA) to assess input–output functions and responses were averaged over three consecutive trials.
 
-## Data analysis
+#### Data analysis
 
 Spontaneous postsynaptic currents were analyzed off-line using the automatic detection protocol within the Mini Analysis Program (Synaptosoft, Decatur, GA) and subsequently checked manually for accuracy. Event analyses were performed blind to genotype. Analyses of individual postsynaptic responses obtained during evoked stimulation and all current clamp measurements were performed using Clampfit 10.2.
 
-## Human postmortem studies
+### Human postmortem studies
 
 Frozen postmortem putamen samples from three DYT1 patients were provided from University College London. Frozen putamen samples from three control subjects stored at the Michigan Brain Bank were obtained from Dr Roger Albin. Subjects were chosen to control for age, sex, and postmortem interval (see Table 1). Small putamen samples were taken with a razor blade, avoiding white matter tracts, and homogenates were prepared as described above for mouse striatum tissue. 10 µg protein lysates were run on 4–20% Biorad gels Mini Protean TGX precast polyacrylamide gels, were transferred to PVDF membranes, and were stained as described above (see Table 2 for antibody details). Bands were visualized using Supersignal West Pico, Dura, or Femto enhanced chemiluminescence substrates, underwent several exposures to Amersham hyperfilm ECL, and were developed and fixed with an x-ray film developer.
 
-## Statistics
+### Statistics
 
 Data are reported as mean ± SEM. Student's t-tests and Chi square tests were performed using Graphpad Prism software (version 6). One-way or two-way ANOVAs were performed using SPSS software (version 22), and post hoc Sidak's or Bonferroni's multiple comparisons tests were performed when significant main effects were observed (p < 0.05). All experiments were repeated at least once before effects were considered significant.

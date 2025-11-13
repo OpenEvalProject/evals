@@ -14,18 +14,18 @@
 
 ### Affiliations
 
-1. https://ror.org/03a1kwz48 Werner Reichardt Centre for Integrative Neuroscience, University of Tübingen Tübingen Germany
-2. https://ror.org/03a1kwz48 Institute for Ophthalmic Research, University of Tübingen Tübingen Germany
-3. https://ror.org/03a1kwz48 GRK 2381 ’cGMP: From Bedside to Bench’, University of Tübingen Tübingen Germany
-4. https://ror.org/000zhpw23 Institut de la Vision, Sorbonne Université, INSERM, CNRS Paris France
-5. https://ror.org/0107nyd78 Hertie Institute for AI in Brain Health, Tübingen AI Center, University of Tübingen Tübingen Germany
-6. https://ror.org/03a1kwz48 Bernstein Center for Computational Neuroscience, University of Tübingen Tübingen Germany
+1. Werner Reichardt Centre for Integrative Neuroscience, University of Tübingen Tübingen Germany ([ROR:03a1kwz48](https://ror.org/03a1kwz48))
+2. Institute for Ophthalmic Research, University of Tübingen Tübingen Germany ([ROR:03a1kwz48](https://ror.org/03a1kwz48))
+3. GRK 2381 ’cGMP: From Bedside to Bench’, University of Tübingen Tübingen Germany ([ROR:03a1kwz48](https://ror.org/03a1kwz48))
+4. Institut de la Vision, Sorbonne Université, INSERM, CNRS Paris France ([ROR:000zhpw23](https://ror.org/000zhpw23))
+5. Hertie Institute for AI in Brain Health, Tübingen AI Center, University of Tübingen Tübingen Germany ([ROR:0107nyd78](https://ror.org/0107nyd78))
+6. Bernstein Center for Computational Neuroscience, University of Tübingen Tübingen Germany ([ROR:03a1kwz48](https://ror.org/03a1kwz48))
 
 † Corresponding author
 
 ## Abstract
 
-Neuromodulators have major influences on the regulation of neural circuit activity across the nervous system. Nitric oxide (NO) has been shown to be a prominent neuromodulator in many circuits and has been extensively studied in the retina. Here, it has been associated with the regulation of light adaptation, gain control, and gap junctional coupling, but its effect on the retinal output, specifically on the different types of retinal ganglion cells (RGCs), is still poorly understood. In this study, we used two-photon Ca 2+ imaging and multi-electrode array (MEA) recordings to measure light-evoked activity of RGCs in the ganglion cell layer in the ex vivo mouse retina. This approach allowed us to investigate the neuromodulatory effects of NO on a cell type-level. Our findings reveal that NO selectively modulates the suppression of temporal responses in a distinct subset of contrast-suppressed RGC types, increasing their activity without altering the spatial properties of their receptive fields. Given that under photopic conditions, NO release is triggered by quick changes in light levels, we propose that these RGC types signal fast contrast changes to higher visual regions. Remarkably, we found that about one-third of the RGC types, recorded using two-photon Ca 2+ imaging, exhibited consistent, cell type-specific adaptational response changes throughout an experiment, independent of NO. By employing a sequential-recording paradigm, we could disentangle those additional adaptational response changes from drug-induced modulations. Taken together, our research highlights the selective neuromodulatory effects of NO on RGCs and emphasizes the need of considering non-pharmacological activity changes, like adaptation, in such study designs.
+Neuromodulators have major influences on the regulation of neural circuit activity across the nervous system. Nitric oxide (NO) has been shown to be a prominent neuromodulator in many circuits and has been extensively studied in the retina. Here, it has been associated with the regulation of light adaptation, gain control, and gap junctional coupling, but its effect on the retinal output, specifically on the different types of retinal ganglion cells (RGCs), is still poorly understood. In this study, we used two-photon Ca2+ imaging and multi-electrode array (MEA) recordings to measure light-evoked activity of RGCs in the ganglion cell layer in the ex vivo mouse retina. This approach allowed us to investigate the neuromodulatory effects of NO on a cell type-level. Our findings reveal that NO selectively modulates the suppression of temporal responses in a distinct subset of contrast-suppressed RGC types, increasing their activity without altering the spatial properties of their receptive fields. Given that under photopic conditions, NO release is triggered by quick changes in light levels, we propose that these RGC types signal fast contrast changes to higher visual regions. Remarkably, we found that about one-third of the RGC types, recorded using two-photon Ca2+ imaging, exhibited consistent, cell type-specific adaptational response changes throughout an experiment, independent of NO. By employing a sequential-recording paradigm, we could disentangle those additional adaptational response changes from drug-induced modulations. Taken together, our research highlights the selective neuromodulatory effects of NO on RGCs and emphasizes the need of considering non-pharmacological activity changes, like adaptation, in such study designs.
 
 ## Introduction
 
@@ -49,7 +49,7 @@ To investigate NO effects systematically on the retinal output, we performed pop
 
 **Figure 1.:** (a) Two-photon imaging of ganglion cell layer (GCL) somata in the whole-mounted ex vivo mouse retina. (b) Schematic ex vivo whole-mounted retina (dot marks optic disc; d, dorsal; t, temporal; v, ventral; n, nasal). (c) Two representative recording fields from (b) showing GCL somata loaded with Ca2+ indicator OGB-1 (Methods). (d) Representative Ca2+ activity from cells in the GCL (white circles in (c)) in response to chirp (left) and moving bar stimulus (right) (black, mean; gray, s.d.). (e) Timeline of experimental procedure; for details, see text. IPL, inner plexiform layer; INL, inner nuclear layer; OPL, outer plexiform layer; ONL, outer nuclear layer; OS + IS, outer and inner segments; DETA/NO, nitric oxide (NO) donor.
 
-## A protocol for sequential control/drug recordings
+### A protocol for sequential control/drug recordings
 
 Previous studies have shown that retinal responses recorded with two-photon Ca2+ imaging can be systematically affected by experimental factors, such as excitation laser-induced activity, photoreceptor bleaching, and temporal filtering due to Ca2+ buffering by the fluorescent indicator (Euler et al., 2019; Euler et al., 2009; Zhao et al., 2020). These changes can be summarized by the umbrella term ‘batch effects’ (a term coined in the molecular genetics field), which can confound the biological signal and potentially cause erroneous interpretations of the data (Gonschorek et al., 2021; Zhao et al., 2020). Such batch effects may play a role when, as in our study, data are recorded in a sequential manner to infer possible drug effects.
 
@@ -57,23 +57,43 @@ Because we wanted to detect potentially subtle NO effects, we devised a protocol
 
 Our sequential-recording protocol yielded paired data at the cell level, allowing us to track if and how each cell’s responses changed under the drug condition. Using this protocol, we recorded the following datasets: (i) a control-dataset to test response stability, i.e., Ctrl 1 and Ctrl 2, (ii) a strychnine-dataset to test the protocol for a drug with well-described effects, i.e., Ctrl 1 and Strychnine (1 µM), and (iii) a NO-dataset to infer NO-induced response changes, i.e., Ctrl 1 and NO (DETA/NO; 100 µM). The control-dataset was leveraged to reveal NO-induced effects on the background of potential non-specific response changes throughout the experiment. For the following analyses, we used 3975 RGCs (nCtrl = 1701; nNO = 1838, nStrychnine = 436) that fulfilled our response quality filtering (see Methods).
 
-## Identifying functional RGC types using a classifier
+### Identifying functional RGC types using a classifier
 
 The mouse retina contains more than 40 RGC types (Baden et al., 2016; Goetz et al., 2022). As we wanted to investigate if the tested drugs differentially affect the different retinal output channels, we applied an RGC type classifier (Figure 2a; Qiu et al., 2022), which had been trained and validated on a previously published RGC Ca2+ imaging dataset (Baden et al., 2016). The classifier predicts a GCL cell’s functional type based on soma size and the responses to chirp and moving bar stimuli (see Methods). The classifier also distinguishes between RGCs and displaced ACs. Here, we focused our analysis on the RGCs. To match the conditions under which the classifier’s training data was acquired as closely as possible, we predicted types based on the responses from the first control recording (Ctrl 1) and the cells retained their type over the course of their experiment (no re-typing). To minimize classification uncertainty, we additionally discarded cells with low confidence scores (< 0.25, see Methods for details).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/98742/elife-98742-fig2-v1.jpg)
+
+**Figure 2.:** (a) Illustration of the random forest classifier (RFC) to predict cell-type labels for Ctrl 1 of both datasets. For each cell, Ca2+ responses to chirp and moving bar, soma size, and p-value of permutation test for direction selectivity (left) constitute the input to the RFC (center) to predict a cell-type label, i.e., a type GX (right). For details, see Methods and Qiu et al., 2022. (b) Pooled heat map of unsorted cell responses to chirp and moving bar stimulus from both Ctrl 1 datasets after quality filtering (QIMB>0.6 or QIchirp>0.45, and classifier confidence score ≥ 0.25). The color bar indicates normalized response activity. (c) Heat map from (b), but sorted according to their assigned type. (d) Distribution of RGC types predicted by the RFC classifier for both Ctrl 1 of the control- (Ctrl 1 (Ctrl); solid black), of DETA/NO-dataset (Ctrl 1 (NO); dotted black), and for the dataset from Baden et al., 2016 (red). (e) Representative RGC type response averages to chirp and moving bar (Ctrl, black; training dataset, red). (f) Correlation matrix of type mean responses per RGC type between Ctrl and Baden et al., 2016, dataset for chirp (left) and moving bar (right). Dashed boxes indicate functional groups (Off, On-Off, Fast On, Slow On, and Uncertain RGCs; see Baden et al., 2016). The color bar indicates the Pearson correlation coefficient.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98742/elife-98742-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Autocorrelation matrix of average type responses per retinal ganglion cell (RGC) types of the Baden et al., 2016, dataset for responses to the chirp stimulus. Dashed boxes indicate functional groups (Off, On-Off, Fast On, Slow On, and Uncertain RGCs). Color bar indicates Pearson correlation coefficient. (b) As (a), but in response to the moving bar stimulus.
+
 We found that the distributions of the predicted RGC types in our datasets matched that of the earlier dataset quite well (Figure 2b–d). Also, the predicted mean traces for the individual RGC types were very similar to those in Baden et al., 2016 (Figure 2e), as indicated by the high correlations of their chirp and moving bar responses (Figure 2f, left and right, respectively). That the moving bar responses were more strongly correlated than the chirp responses is likely due to the lower complexity and shorter duration of the former stimulus. Nonetheless, we found the RGC classification overall to be robust and comparable to the original dataset (Figure 2—figure supplement 1a and b).
 
-## Testing the recording protocol
+### Testing the recording protocol
 
 In the mouse retina, glycine is released by small-field ACs, which relay inhibition vertically across the inner plexiform layer and thus, are involved in cross-over inhibition (Diamond, 2017; Weiss et al., 2008). Blocking cross-over inhibition between the On- and Off-pathways is therefore expected to have effects on many RGC circuits, which is why we chose the glycine receptor antagonist strychnine to test our recording protocol. Specifically, we focused on strychnine unmasking responses to the other stimulus polarity (Farajian et al., 2011). Indeed, we found that strychnine revealed additional On-response components in Off (e.g. G1, G2, G4, G6) and On-Off RGCs (e.g. G11, G12), as can be seen, for instance, in their leading-edge response to the moving bar (Figure 3—figure supplement 2). In On RGCs, we did not detect additional (Off) response components. Instead, some On RGCs exhibited slightly more sustained responses to light increments (e.g. G18, G20, G22). Together, the strychnine-dataset demonstrates that we can resolve drug-related effects on light responses at the RGC type-level.
 
-## Certain RGC types display adaptational response changes
+### Certain RGC types display adaptational response changes
 
 To test if our recording conditions were stable and to exclude major batch effects, we first compared the responses of the control-datasets (Ctrl 1 vs. Ctrl 2). To this end, we computed the difference between the Ctrl 1 and Ctrl 2 mean responses (ΔCtrl: ΔRCtrl2-Ctrl1) to chirp and moving bar stimuli for each cell of every RGC type. This allowed us to quantify if and how the responses changed over the time course of an experiment (cf. protocol in Figure 1e). Here, we only considered RGC types with >10 sequentially recorded cells (21/32).
 
 Surprisingly, while the majority of RGC types featured stable responses (e.g. G1, G21; Figure 3a), a substantial number of RGC types (9/21) changed their responses to chirp and/or moving bar stimuli in the absence of any pharmacological perturbation in a highly reproducible manner (Figure 3—figure supplement 1a and b). For instance, for Ctrl 2, G23 showed reduced responses, whereas G31 showed an increased response activity (Figure 3b). Interestingly, cells assigned to the functional groups of ‘Off’ RGC types displayed stable responses, whereas ‘On-Off’, ‘Fast On’, ‘Slow On’, and ‘Uncertain RGCs’ included types with changing responses (50% (2/4), 34% (1/3), 67% (4/6), and 67% (2/3), respectively). This diversity argues against a systematic effect (such as, e.g., general run-down) and for a cell type-specific phenomenon, which in the following we refer to as ‘adaptational response changes’.
 
-## NO affects retinal output in a highly type-specific manner
+![Figure 3.](https://cdn.elifesciences.org/articles/98742/elife-98742-fig3-v1.jpg)
+
+**Figure 3.:** (a) Left: Two representative mean Ca2+ responses of sequentially recorded RGC types showing no differences between Ctrl 1 (black) and Ctrl 2 (orange) (top: G1; bottom: G21). Right: Corresponding histograms displaying the differences between the average traces of the sequentially recorded cell of the respective cell types. Zero indicates no difference between the response of the same cell across both recordings, whereas negative values indicate a decreased and positive values an increased activity. n.s.: not significant; ***: p<0.001; one-sample t-test. (b) Two representative RGC types that show decreased (top: G23) and increased (bottom: G31) response activity during Ctrl 2. n.s.: not significant; ***: p<0.001; one-sample t-test. (c) As in (a), but between sequentially recorded Ctrl 1 (black) and DETA/NO (green) (top: G2; bottom: G17). n.s.: not significant; ***: p<0.001; one-sample t-test. (d) As (c), but showing two cell types that display a decreased (top: G28) and increased (bottom: G32) activity when perfused with DETA/NO. n.s.: not significant; ***: p<0.001; one-sample t-test. (e) Box plots of trace differences of all sequentially recorded cells of all RGC types from control- (ΔCtrl: ΔRCtrl2-Ctrl1; orange) and NO-dataset (ΔDETA/NO: ΔRNO-Ctrl1; green). Bold numbers indicate RGC types with >10 sequentially recorded cells per dataset and condition. Dashed line shows zero baselines, i.e., no difference between traces. Diamond symbols represent outliers. Gray and white background blocks summarize the larger functional groups for better visualization (Off, On-Off, Fast On, Slow On, Uncertain RGCs). ***: p<0.001; Mann-Whitney U-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98742/elife-98742-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Mean Ca2+ responses of sequentially recorded retinal ganglion cell (RGC) types to the chirp (left) and moving bar (middle) to the Ctrl 1 (black) and Ctrl 2 (orange) conditions showing their trace differences (right). ***: p<0.001; one-sample t-test. (b) Box plots of trace differences of all sequentially recorded cells of all RGC types from control-dataset (Ctrl 1 and Ctrl 2; orange). Bold numbers indicate RGC types with n>10 sequentially recorded cells per condition. Dashed line shows zero baselines, i.e., no difference between traces. Gray and white background blocks summarize the larger functional groups for better visualization (Off, On-Off, Fast On, Slow On, Uncertain RGCs). ***: p<0.001; one-sample t-test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98742/elife-98742-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Mean Ca2+ responses of sequentially recorded RGC types to the chirp (left) and moving bar (middle) to the Ctrl (black) and Strychnine (blue) conditions showing their corresponding On-Off indices for the Ctrl and Strychnine condition (right). RGC types with n>3 sequentially recorded cells per condition were included. ****: p<0.0001, ***: p<0.001, **: p<0.01, *: p<0.05, (*): p∼0.05; paired t-test.
+
+### NO affects retinal output in a highly type-specific manner
 
 Next, we investigated the effects of NO on the RGC responses. As with the control-dataset, we computed the cell-wise response differences between Ctrl 1 and NO responses (ΔDETA/NO: ΔRNO-Ctrl1). Similar to the control-dataset, the majority of RGC types displayed stable responses (e.g. G2, G17; Figure 3c), while ∼43% changed their responses significantly (e.g. G28, G32; Figure 3d) following the NO perfusion. We found that the percentage of changing types per functional group was similar to that in the control-dataset: ‘Off’ (0% (0/5)), ‘On-Off’ (50% (2/4)), ‘Fast On’ (34% (1/3)), ‘Slow On’ (66% (4/6)), and ‘Uncertain RGCs’ (66% (2/3)). This raised the question if the observed changes in the NO-dataset indeed reflected NO-induced modulations or mostly adaptational response changes (as observed in the control-dataset). We, therefore, tested for each RGC type if the response changes observed for control (ΔCtrl: ΔRCtrl2-Ctrl1) and NO (ΔDETA/NO: ΔRNO-Ctrl1) were significantly different (Figure 3e). To our surprise, this was only the case for two types: (1) G32 (‘Off suppressed 2’) RGC, which is characterized by a high baseline activity that is strongly suppressed below baseline during light increments and displays increased activity during light decrements, and (2) G18, which is considered as being a ‘Fast On’ type having a response to light increments with a fast response kinetic. This suggests highly type-selective NO effects – at least for temporal responses to chirp and moving bar stimuli.
 
@@ -89,17 +109,25 @@ In the previous analysis, G18 showed significant differences between the control
 
 Taken together, our analysis revealed that the adaptational and NO-induced effects occurred on a feature-specific as well as cell type-specific level. On the one hand, several ‘Slow On’ types showed adaptational effects in response to temporal frequency and contrast features, while other features were not affected. On the other hand, at least one distinct RGC type (G32) displayed a significantly increased response modulation of most features during the NO application; hence hinting toward an effect of NO on response suppression, as in the case of G32 is elicited by temporally changing stimulus contrast. Consequently, we focused on a more in-depth analysis of NO-induced effects on G32.
 
-## Clustering of G32 responses reveals three functionally distinct RGC types with different NO-sensitivity
+### Clustering of G32 responses reveals three functionally distinct RGC types with different NO-sensitivity
 
 According to Baden et al., 2016, G32 features a coverage factor of ∼4. As the average coverage factor of mouse RGCs was estimated to be ∼2 (Baden et al., 2016; Bae et al., 2018), G32 likely consists of several (functional) RGC types. This is in line with the high variation of G32 responses, which also supports the presence of multiple functional types (see Figure 3e).
 
 To test this, we performed Mixture of Gaussians clustering of the RGCs assigned to G32 (Figure 5a–c) using the Ctrl 1 responses to chirp and moving bar stimuli from both datasets (Figure 5a). Since the normalized Bayesian information criterion (BIC; Figure 5c, top; see Methods) values were close for n=2 and n=3 clusters, we used further tests to determine the optimal cluster number (Figure 5—figure supplement 1a and b). These showed that for n=3 the intra-cluster correlations were higher and more consistent across clusters than for n=2 (Figure 5—figure supplement 1c). Therefore, we concluded that G32 likely contains three distinct response types – all suppressed-by-contrast (SbC) but to different degrees (Figure 5d and e). All three G32 clusters showed little adaptation for the control-dataset, but displayed differential modulations in response to NO application, with cluster 1 exhibiting the strongest NO effect (Figure 5f and g, left) for both stimuli. The NO effect was statistically significant in clusters 1 (n=134) and 2 (n=126) – both for mean trace difference and correlation (Figure 5g, left and right, respectively) – but only for trace correlation in cluster 3 (n=77).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/98742/elife-98742-fig5-v1.jpg)
+
+**Figure 5.:** (a) Visual responses of G32 cells recorded from several experiments in response to the full-field chirp (left) and moving bar (right) stimuli. (b) Visual features extracted from chirp (top) and moving bar (bottom) stimuli using sparse principal component analysis (PCA) on the responses. Color indicates the weight of each feature. (c) Top: Bayesian information criterion (BIC) as function of number of clusters. Arrow indicates the lowest BIC and the number of clusters to choose. Bottom: Number of cells per predicted cluster. (d) Cells sorted according to their assigned cluster. Cells at the bottom were discarded. (e) Mean responses of the three corresponding clusters for the chirp (left) and moving bar (right). (f) Left: Sequentially recorded mean responses of the three clusters to Ctrl 1 (black) and Ctrl 2 (orange). Right: Cluster mean responses to Ctrl 1 (black) and DETA/NO (green). (g) Left: Trace difference between Ctrl 2 and Ctrl 1 (orange) and DETA/NO and Ctrl (green) for the three clusters (clusters 1–3 from top to bottom). Right: Correlation coefficient between Ctrl 2 and Ctrl 1 (orange) and DETA/NO and Ctrl 1 (green) for the three clusters. n.s.: not significant; **: p<0.01, ***: p<0.001; independent t-test and Mann-Whitney U-test. (h) Left: Suppression index (SI) computed for Ctrl 1 (gray), Ctrl 2 (orange), and DETA/NO (green) for the three clusters. n.s.: not significant; **: p<0.01, ***: p<0.001; Kruskal-Wallis test and Dunnett’s test. Right: Difference of SI between Ctrl 2 and Ctrl 1 (orange) and DETA/NO and Ctrl 1 (green). n.s.: not significant; **: p<0.01, ***: p<0.001; independent t-test and Mann-Whitney U-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98742/elife-98742-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Top: Mean response to the chirp (left) and moving bar (right) using n=2 clusters for the functional clustering. Bottom: Mean response to the chirp (left) and moving bar (right) using n=3 clusters for the functional clustering. (b) Top: Inter-cluster correlation matrix between the mean responses of cluster 1 and cluster 2 of the chirp (left) and moving bar (right) responses. Bottom: Same as ‘Top’, but for n=3 clusters. (c) Top: Mean intra-cluster correlation for n=2 clusters with s.d. Bottom: Mean intra-cluster correlation for n=3 clusters with s.d.
+
 Since the prominent feature of these RGC types is suppression by temporal stimulus contrast, we compared their suppression strength between the conditions using a suppression index (SI; see Methods). Here, we found that in cluster 1, SI marginally, yet significantly, changed between Ctrl 1 and Ctrl 2, but was strongly and significantly reduced by NO as ΔSI were significantly different (Figure 5h, top panel). Similar response behavior can be found in cluster 2, which displayed significant differences in SI and ΔSI in both control- and NO-dataset (Figure 5h, middle panel). In fact, with NO, these cells lost their suppressive feature and were rather excited than suppressed by the stimuli. In contrast, cluster 3 showed no significant differences of the SI between Ctrl 1 and Ctrl 2, but a clear modulation by NO (Figure 5h, bottom panel).
 
 Taken together, our data indicate that G32 may consist of three SbC RGC types and that in at least two of them, the contrast suppression is strongly modulated by NO.
 
-## NO does not affect RGC RF properties
+### NO does not affect RGC RF properties
 
 So far, we focused on effects in the temporal response domain, where we found that mainly G32 types were affected by an increase in NO levels. However, NO has been shown to affect electrical coupling, e.g., by reducing conductance between AII ACs and On-cone BCs (Mills and Massey, 1995), and hence may alter RF properties. Therefore, we next investigated the effects of NO on the sRFs of the individual RGC types. To this end, following the same experimental paradigm as described earlier, we recorded RGC responses to binary dense noise. Next, we computed their sRFs for both recording conditions (Figure 6a) using spike-triggered averaging (Chichilnisky, 2001), obtaining control and NO sRFs, and then fitted a Gaussian to each sRF’s center (Figure 6a). We focused the following analysis on RGC types with reliable sRF estimates (see Methods). These included types in all five larger RGC groups (Baden et al., 2016): G5 for ‘Off’; G11, G12, and G14 for ‘On-Off’; G17 for ‘Fast On’; G23, G24, G26, and G27 for ‘Slow On’; G31 and G32 for ‘Uncertain RGCs’. In these types, sRFs were very stable in both control and NO condition.
 
@@ -111,7 +139,7 @@ Using the difference in sRF center diameter between control and NO as a metric (
 
 Taken together, at least for the tested RGC types, we did not detect any significant NO effects neither on sRF center size nor surround strength.
 
-## NO affects the temporal response kinetics of G32 subtypes
+### NO affects the temporal response kinetics of G32 subtypes
 
 The high spatial resolution of two-photon imaging allowed us to record and identify individual RGCs. However, it is limited by having a low temporal resolution to capture subtle temporal response dynamics, which led us to record a complementary dataset using MEA recordings. Since we found that the temporal response domain of G32 and its subtypes were affected by NO, MEA recordings enabled us to further investigate subtle neuromodulatory effects with a higher temporal resolution.
 
@@ -123,6 +151,22 @@ In particular, we recorded light-induced RGC responses (n=391) from four retinae
 
 We focused the following analysis on RGCs classified as G32 (n=42). We found that, similar to the Ca2+-dataset (Figure 5), G32 showed reduced suppression during NO application (Figure 8a, top), which was not present anymore in the recording after wash-out, indicating that the NO-induced effect may be reversible (Figure 8a, bottom). Since we found in our Ca2+-dataset that G32 consists of three subtypes, we applied the same clustering approach to the electrically recorded RGCs assigned to G32, revealing also three clusters (Figure 8b, Figure 8—figure supplement 1). For all three clusters, we found NO-induced response modulations but to varying degrees. The NO effects were at least partially reversible (see wash-out condition; Figure 8c).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/98742/elife-98742-fig8-v1.jpg)
+
+**Figure 8.:** (a) Mean Ca2+-transformed responses to the chirp of the retinal ganglion cell (RGC) type G32. Top: Sequentially recorded RGC responses to the Ctrl (black) and DETA/NO (green) conditions. Bottom: Sequentially recorded RGC responses to the Ctrl (black) and Wash-Out (orange) conditions after DETA/NO application. (b) Left: Unclustered peristimulus time histograms (PSTHs) of cells assigned to type G32. Right: Cell’s PSTHs were clustered and sorted into three distinct clusters. (c) Sequentially recorded mean responses of three clusters to Ctrl (black), DETA/NO (green), and Wash-Out (orange). (d) Ellipse size of the fitted Gaussian of the spatial receptive field (sRF) of the three conditions (Ctrl: black; DETA/NO: green; Wash-Out: orange) for the three clusters (clusters i–iii; top to bottom). All tested conditions were not significant; two-sided t-test. (e) Left: temporal receptive field (tRF) kernels of the three conditions (Ctrl: black; DETA/NO: green; Wash-Out: orange) for three clusters (clusters i–iii; top to bottom). Right: Full width at half minimum (FWHM) of the temporal RF kernels of the three conditions (Ctrl: black; DETA/NO: green; Wash-Out: orange) for the three clusters. *: p<0.05; **: p<0.01, repeated measures ANOVA and Dunnett’s test.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/98742/elife-98742-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** BIC as function of number of clusters for the G32 identified in the MEA-dataset. Arrow indicates the lowest BIC and the number of clusters to choose.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/98742/elife-98742-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (a) Pseudo-calcium traces of clusters i–iii (left to right) in response to the chirp under Ctrl (black) and nitric oxide (NO) (green; top) as well as Ctrl and Wash-Out (orange; bottom) conditions. (b) Same clusters and conditions as (a), but peristimulus time histograms. (c) Cumulative firing rates of clusters i–iii (left to right) for the three conditions for four features (On step, Freq. step, Contrast, last On step).
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/98742/elife-98742-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** (a) Correlation matrix showing the correlation coefficients between the pseudo-calcium G32 cluster responses to the chirp and the Ca2+-dataset G32 clusters. Color bar indicates Pearson correlation coefficients. (b) Pseudo-calcium traces of G32 clusters (red) overlaid with the correlated Ca2+ G32 cluster traces (black).
+
 We also performed an analysis directly at the spike rate level from the peristimulus time histograms (PSTH) (Figure 8—figure supplement 2). We computed the cumulative firing rate for four time windows (features) of the chirp response, where the Ca2+-dataset suggests suppression (Figure 8—figure supplement 2a and b). We found for all three clusters an increase in cumulative firing rate during DETA/NO application – indicative of a reduction in suppression – for at least one feature (Figure 8—figure supplement 2c). That the NO effect was differential (e.g. compare ‘Freq. step’ and ‘On step’ between clusters) further supports the presence of multiple RGC types in G32.
 
 Based on the Ca2+-dataset, we did not detect significant effects of NO on RFs. However, as recording time, and hence stimulus presentation time, is limited per scan field, we repeated the RF analysis for the MEA-dataset. MEA recordings allow for much longer dense noise stimuli and, thus, can yield more precise RF estimates. In line with the Ca2+-dataset, we did not find any NO-induced modulation of sRF size in any of the clusters (Figure 8d). However, the temporal RF (tRF) kernels showed significantly faster response kinetics during NO application for all three clusters (Figure 8e). Also, the effects were reversible for two clusters (except for cluster iii). That we did not detect this effect in the Ca2+-dataset is likely due to the lower temporal resolution of the Ca2+ recordings. Note that the G32 subtypes identified in both datasets do not necessarily correspond to the same RGC types: While two clusters show high correlations between Ca2+ and MEA-data (clusters 2 vs. ii, 3 vs. i), one clearly differs in its temporal response (cluster 1 vs. iii; Figure 8—figure supplement 3a and b; see also Methods).
@@ -133,7 +177,7 @@ Taken together, our MEA-dataset confirms that G32 consists of three subtypes and
 
 We used two-photon Ca2+ imaging and MEA recordings to measure RGC responses to various visual stimuli to investigate the neuromodulatory effects of elevated NO levels on signal processing across RGC types in the mouse retina. To our surprise, even without pharmacological perturbation, we found that about one-third of the RGC types displayed highly reproducible and cell type-specific response changes during the course of an experiment – a finding of potentially high relevance especially for pharmacological experiments in the ex vivo retina using two-photon Ca2+ imaging. Accounting for these adaptational changes enabled us to isolate NO-related effects on RGC responses. Here, we revealed that mainly the RGCs assigned to G32 (‘Off suppressed 2’) were affected by NO, which strongly reduced the response suppression and rendered the cells more active. Further, we demonstrated that G32 likely consists of three types – consistent with its high coverage factor (Baden et al., 2016) – that were all differentially modulated by NO. Finally, for a representative subset of RGC types, we showed that elevating the NO level had no discernible effect on sRF size or surround strength. In addition, we were able to confirm those results using MEA recordings and showed that NO caused faster temporal response kinetics of these three subtypes and partially increased firing rates; these changes were mostly reversible. Together, our data suggest that NO specifically modulates response suppression and kinetics in a group of contrast-suppressed RGC types. Additionally, our study demonstrates the need for recording paradigms that take adaptational, non-drug-related response changes into account when analyzing potentially subtle pharmacological effects.
 
-## NO as a (neuro-)modulator in the retina
+### NO as a (neuro-)modulator in the retina
 
 nNOS has been detected in different retinal cell classes (Blom et al., 2009; Blute et al., 2000; Blute et al., 1997; Bredt et al., 1990; Dawson et al., 1991; Eldred and Blute, 2005; Palamalai et al., 2006; Yamamoto et al., 1993a; Yamamoto et al., 1993b) and the main NO-sensor (NO-GC), which connects NO to intracellular cGMP signaling (Blom et al., 2012; Blute et al., 1998; Eldred and Blute, 2005; Gotzes et al., 1998), is present in all retinal layers (Vielma et al., 2014). This and earlier findings of NO modulating the response gain of BCs (Snellman and Nawy, 2004; Tooker et al., 2013) and RGCs (Wang et al., 2003) suggest that NO constitutes a neuromodulatory system within the retina involved in light adaptation. However, in the light-adapted mouse retina, light stimulus-dependent NO production seems to mainly occur in specific AC types, with the nNOS-2 AC being the main source of endogenous NO (Jacoby et al., 2018). In particular, it releases NO in response to flickering light (i.e. fast changes in contrast) (Blom et al., 2012; Eldred and Blute, 2005; Jacoby et al., 2018; Vielma et al., 2012; Wang et al., 2007). Thus, it has been proposed that nNOS-2 ACs report fast contrast changes at photopic conditions (Jacoby et al., 2018; Vielma et al., 2012). This points at an interesting though speculative functional role of the NO-sensitivity in G32, namely that NO helps ‘highlighting’ changes in contrast by reducing suppression and accelerating response kinetics. Thereby, G32 RGCs could relay contrast changes to higher visual targets.
 
@@ -145,17 +189,17 @@ That natural stimuli can reveal novel nonlinear properties of retinal functions 
 
 Another important aspect to consider when studying NO neuromodulation in the retina is the level of light adaptation. Several studies proposed that NO facilitates the transition across light levels (Mills and Massey, 1995; Snellman and Nawy, 2004; Tooker et al., 2013), especially to photopic conditions (Jacoby et al., 2018). Since we employed two-photon imaging, which inevitably results in a certain level of background ‘illumination’ (see discussion in Euler et al., 2009), our experiments were performed in the low photopic range. Therefore, NO-mediated neuromodulation may serve additional light-level dependent functions: More globally during the transition from scotopic to mesopic/photopic, and more cell type-specific in the photopic regime, as we reported here.
 
-Finally, a gaseous neuromodulator like NO poses a additional problem when studying its effects: A donor is needed and the final concentration of the neuromodulator delivered to the cells depends on many factors (Beckman and Koppenol, 1996). We used the NO-donor DETA/NO, because its long half-life time (t1/2) of > 20 hr enables a steady delivery of NO within a tissue. Assuming for NO in tissue a t1/2 of 2 min, a freshly prepared DETA/NO solution of 100 µM is expected to release about 0.25 µM NO (Ramamurthi and Lewis, 1997). This is a conservative estimate; for longer NO half-life times, the concentrations would be higher. Estimates for the endogenous NO concentration in the retina range from a few 100 nM at the RGCs (Kalamkarov et al., 2016) to ∼1 µM at the vitreous boundary (Guthrie, 2014; Guthrie and Mieler, 2014). Therefore, the here applied concentration results in a small to moderate NO increase within the measured physiological range. The fact that this already resulted in a clear, type-specific effect, argues for NO having a potent neuromodulatory effect on the retinal output.
+Finally, a gaseous neuromodulator like NO poses a additional problem when studying its effects: A donor is needed and the final concentration of the neuromodulator delivered to the cells depends on many factors (Beckman and Koppenol, 1996). We used the NO-donor DETA/NO, because its long half-life time ($t_{1/2}$) of > 20 hr enables a steady delivery of NO within a tissue. Assuming for NO in tissue a $t_{1/2}$ of 2 min, a freshly prepared DETA/NO solution of 100 µM is expected to release about 0.25 µM NO (Ramamurthi and Lewis, 1997). This is a conservative estimate; for longer NO half-life times, the concentrations would be higher. Estimates for the endogenous NO concentration in the retina range from a few 100 nM at the RGCs (Kalamkarov et al., 2016) to ∼1 µM at the vitreous boundary (Guthrie, 2014; Guthrie and Mieler, 2014). Therefore, the here applied concentration results in a small to moderate NO increase within the measured physiological range. The fact that this already resulted in a clear, type-specific effect, argues for NO having a potent neuromodulatory effect on the retinal output.
 
 It has been reported for DETA/NO that the donor itself – independent of NO – may affect the electrical properties of cultured cerebellar granule cells by reversibly activating a cation-selective channels (Thompson et al., 2009). While we cannot exclude that this side-effect of DETA/NO may have contributed to the effects we observed in G32 RGCs, we consider this unlikely, because substantial side-effects were mainly observed by Thompson et al., 2009, at much higher DETA/NO concentrations (3 mM) than we used in our study.
 
-## SbC cells in the mouse retina
+### SbC cells in the mouse retina
 
 Functionally, RGC types referred to as ‘SbC’ are characterized by a decrease in their activity for both positive and negative temporal contrasts within their RF (Jacoby and Schwartz, 2018; Jacoby et al., 2015; Tien et al., 2016; Tien et al., 2015). In Baden et al., 2016, three functional RGC types were labeled SbC based on their light stimulus-evoked Ca2+ response being suppressed primarily by positive (On-SbC: G28) or negative temporal contrast (Off-SbCs: G31, G32).
 
 Notably, G32 (‘Off suppressed 2’) is also suppressed by the moving bar stimulus, suggesting that the cells are also sensitive to spatial contrast (i.e. an edge appearing in their RF). Coverage analysis indicated that G32 may contain several RGC types (Baden et al., 2016) – in line with our cluster analysis. It is still unclear if G32 contains one (or more) of the individually studied SbC types in mouse (Jacoby and Schwartz, 2018; Tien et al., 2016; Tien et al., 2015; Wienbar and Schwartz, 2022), yet, recently, Goetz et al., 2022, speculated if the novel bursty-SbC RGC (Wienbar and Schwartz, 2022) aligns with (a sub-cluster of) G32.
 
-## Adaptational, cell type-specific response changes
+### Adaptational, cell type-specific response changes
 
 Every recording method introduces technique-specific biases that have to be considered in the data analysis and interpretation. For two-photon imaging with fluorescent Ca2+ sensors, these potential biases include Ca2+ buffering, sensor bleaching by the excitation laser, and, in the case of bulk loading with synthetic dyes (as in our experiments; see also Briggman and Euler, 2011), slow leakage of the indicator from the cells. In retinal imaging, additional potentially confounding factors are an excitation laser-induced baseline activity and photoreceptor bleaching (Euler et al., 2019; Euler et al., 2009). These biases are expected to be systematic, e.g., causing a general decrease in signal-to-noise ratio across (RGC) responses. To account for this, our recording paradigm produced a control- and a NO-dataset consisting of sequentially recorded RGC responses.
 
@@ -163,7 +207,7 @@ When analyzing the control-dataset, we were surprised by finding response change
 
 Together, this strongly argues against a systematic, recording technique-related bias but rather for an adaptational effect. Currently, we can only speculate about the mechanism(s) underlying this type-specific adaptation. The most parsimonious explanation may be related to the ex vivo condition of the retina: While we allowed the tissue to settle and adapt to perfusion medium, light level, temperature, etc. for ∼25 min, extracellular signaling molecules, such as neuromodulators, may be depleted and washed out throughout the experiment, resulting in differential adaptation of various RGC types. In any case, as type-selective adaptations can confound the recorded responses in a complex manner, a sequential-recording paradigm as the one described here is recommended – in particular for pharmacological experiments.
 
-## Combining large-scale population recordings, RGC classification, and sequential recordings to study neuromodulation of retinal output
+### Combining large-scale population recordings, RGC classification, and sequential recordings to study neuromodulation of retinal output
 
 In this study, we investigated the neuromodulatory effects of NO on the retinal output signal. To this end, we combined experimental and computational approaches to dissect NO-mediated effects at the RGC type-level. The latter is important for understanding neuromodulator function for early vision because the visual information is sent to the brain via parallel feature channels, represented by >40 RGC types in the mouse retina (Baden et al., 2016; Bae et al., 2018; Goetz et al., 2022; Tran et al., 2019). We demonstrated that our approach enabled us to distinguish adaptational from actual NO-induced effects using a rather simple and straightforward linear analysis (i.e. focusing on mean trace or RF size differences), assuming that the adaptational and NO effects are independent and sum linearly, which means that we may have missed potential nonlinear effects.
 
@@ -171,105 +215,137 @@ The combination of two-photon Ca2+ imaging and MEA recordings allowed us to conf
 
 ## Methods
 
-## Animals and tissue preparation for two-photon Ca2+ imaging
+### Animals and tissue preparation for two-photon Ca2+ imaging
 
 All animals for the two-photon Ca2+ imaging experiments were conducted at the University of Tübingen and were performed according to the laws governing animal experimentation issued by the German Government as well as approved by the institutional animal welfare committee of the University of Tübingen. For all experiments, we used retinae (n=26) from C57Bl/6J mice (n=14; JAX 000664) of either sex between the age of 4 and 16 weeks. All animals were kept in the local animal facility and housed under the standard 12 hr/12 hr day/night cycle at 22°C and a humidity of 55%.
 
 The following procedures were carried out under very dim red (>650 nm) light. Before each imaging experiment, the animal was dark-adapted for >1 hr, then anesthetized with isoflurane (CP-Pharma) and sacrificed by cervical dislocation. Immediately after, the eyes were enucleated with a dorsal cut as orientation landmark and hemisected in carboxygenated (95% O2, 5% CO2) artificial cerebrospinal fluid (ACSF) solution containing (in mM): 125 NaCl, 2.5 KCl, 2 CaCl2, 1 MgCl2, 1.25 NaH2PO4, 26 NaHCO3, 20 glucose, and 0.5 L-glutamine at pH 7.4. Sulforhodamine-101 (SR101, 0.1 µM; Invitrogen) was added to the ACSF to reveal blood vessels and damaged GCL cells in the red fluorescence channel (Euler et al., 2009). The carboxygenated ACSF was constantly perfused through the recording chamber at 4 ml/min and kept at ∼36°C throughout the entire experiment. After the dissection, retinae were bulk-electroporated with the synthetic fluorescent calcium indicator Oregon-Green 488 BAPTA-1 (OGB-1; hexapotassium salt; Life Technologies) (Briggman and Euler, 2011). To electroporate the GCL, the dissected retina was flat-mounted with the GCL facing up onto an Anodisc (#13, 0.1 µm pore size, 13 mm diameter, Cytiva), and then placed between two 4 mm horizontal platinum disk electrodes (CUY700P4E/L, Nepagene/Xceltis). The lower electrode was covered with 15 µl of ACSF, while a 10 μl drop of 5 mM OGB-1 dissolved in ACSF was suspended from the upper electrode and lowered onto the retina. Then, nine electrical pulses (∼9.2 V, 100 ms pulse width, at 1 Hz) from a pulse generator/wide-band amplifier combination (TGP110 and WA301, Thurlby handar/Farnell) were applied and then, the electroporated retina on the Anodisc was transferred into the recording chamber, whereby the dorsal edge of the retina pointed away from the experimenter. The retina was left there for ∼30 min to recover, as well as adapted to the light stimulation by displaying a binary dense noise stimulus (20×15 matrix, 40×40 µm² pixels, balanced random sequence) at 5 Hz before the recordings started.
 
-## Two-photon Ca2+ imaging
+### Two-photon Ca2+ imaging
 
 For the functional Ca2+ imaging experiments, a MOM-type two-photon microscope (designed by W Denk, MPI, Heidelberg; purchased from Sutter Instruments/Science Products) (Euler et al., 2019; Euler et al., 2009) was employed. The microscope was equipped with a mode-locked Ti:Sapphire laser (MaiTai-HP DeepSee, Newport Spectra-Physics) tuned to 927 nm (ideal wavelength to excite OGB-1), two photomultiplier tubes serving as fluorescence detection channels for OGB-1 (HQ 510/84, AHF/Chroma) and SR101 (HQ 630/60, AHF), and a water immersion objective (CF175 LWD×16/0.8 W, DIC N2, Nikon, Germany). To acquire images, custom-made software (ScanM by M Müller and T Euler) running under IGOR Pro 6.3 for the operating system Microsoft Windows (WaveMetrics) was used and time-lapsed 64×64 pixel image scans (100×100 µm) at 7.8125 Hz were taken. Routinely, the optic nerve position and the scan field position were recorded to reconstruct their retinal positions. High-resolution images (512×512 pixel images) were recorded to support semi-automatic ROI detection.
 
-## Light stimulation for two-photon Ca2+ imaging
+### Light stimulation for two-photon Ca2+ imaging
 
 For the light stimulation of the retinal tissue, a digital light processing (DLP) projector (lightcrafter [LCr], DPM-E4500UVBGMKII, EKB Technologies Ltd) was used to display the visual stimuli through the objective onto the retina, whereby the stimulus was focused on the photoreceptor layer (Franke et al., 2019). The LCr was equipped with a light-guide port to couple in external, band-pass filtered green and UV light-emitting diodes (LEDs; green: 576 BP 10, F37-576; UV: 387 BP 11, F39-387; both AHF/Chroma). The band-pass filter was used to optimize the spectral separation of mouse M- and S-opsins (390/576 Dualband, F59-003, AHF/Chroma). Both LEDs were synchronized with the scan retracing of the microscope. Stimulator intensity (as photoisomerization rate, 103 P∗s−1 per cone) was calibrated to range from ∼0.5 (black image) to ∼20 for M- and S-opsins, respectively. Steady illumination of ∼104 P∗s−1 per cone was present during the scan recordings due to the two-photon excitation of photopigments (Euler et al., 2019; Euler et al., 2009).
 
 In total, three types of light stimuli were used for the imaging of Ca2+ in the GCL: (1) full-field chirp stimulus (700 µm ∅; see details here [Baden et al., 2016]), (2) bright moving bar (0.3×1 mm2) at 1 mm s−1 in eight directions to probe direction and orientation selectivity, and (3) random binary noise with a checkerboard grid of 20×15 checks and a check size of 40 µm at 5 Hz for 5 min to map RFs. Light stimulus center and scan field center were aligned. Before each stimulus was presented, the baseline was recorded after the laser started scanning for at least 30 s to avoid immediate laser-induced effects on the retinal activity (Euler et al., 2019; Euler et al., 2009; Szatko et al., 2020).
 
-## Animals and tissue preparation for electrophysiological recordings
+### Animals and tissue preparation for electrophysiological recordings
 
 Electrophysiological data were recorded from isolated retinae from four C57Bl/6J mice of 8–10 weeks. The experiment was performed in accordance with the institutional animal care standards of Sorbonne Université (Paris, France). The animals were housed in enriched cages with ad libitum food, and watering. The ambient temperature was between 22°C and 25°C, the humidity was between 50% and 70%, and the light cycle was 12–14 hr of light, 10–12 hr of darkness. After killing the animal, the eye was enucleated and transferred rapidly into oxygenated Ames medium (Sigma-Aldrich). Dissection was made under dim light condition as described previously (Marre et al., 2012; Yger et al., 2018).
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 For the electrophysiological recordings, we mounted a piece of retina onto a membrane and then lowered it with the ganglion cell side against a 252-channel MEA whose electrodes were spaced by 30 μm. During dissection and recordings, the tissue was perfused with oxygenated Ames solution and a peristaltic perfusion system with two independent pumps: PPS2 (Multichannel Systems GmbH). Mice retinae were kept at 35–37°C during the whole experiment. The data sampling rate was 20 kHz. The raw signal was acquired through MC Rack Multi-channel Systems software 4.6.2, it was high-pass filtered at 100 Hz, and the spikes were isolated using SpyKING CIRCUS 1.0.628 (Yger et al., 2018). Subsequent data analysis was done with custom-written Python codes. We extracted the activity of a total of 391 neurons. We kept cells with a low number of refractory period violations (<0.95%, with median <0.05% for all experiments, 2 ms refractory period) and whose template waveform could be well distinguished from the template waveforms of other cells. These constraints ensured a good quality of the reconstructed spike trains. In addition, we discarded neurons that showed no or almost no responses to chirp stimulus, preventing the correct cell classification.
 
-## Light stimulation for electrophysiological recordings
+### Light stimulation for electrophysiological recordings
 
 A white-mounted LED (MCWHLP1, Thorlabs Inc) was used as a light source, and the stimuli were displayed using a Digital Mirror Device (DLP9500, Texas Instruments) and focused on the photoreceptors using standard optics and an inverted microscope (Nikon). The light level corresponded to photopic vision: 4.9×104 and 1.4×105 isomerizations/(photoreceptor.s) for S-cones and M-cones, respectively. In total, we displayed two stimuli: (1) a random binary checkerboard with check size of 42 μm for 30–40 min at 30 Hz, and (2) a full-field chirp stimulus as used for the two-photon Ca2+ imaging experiments. It was played at 50 Hz, containing 20 repetitions of 32 s length.
 
-## Pharmacology
+### Pharmacology
 
 All used drugs were added to the carboxygenated, perfused ACSF solution 15 min prior to the second recording of the GCL scan fields. For the drugs, the respective concentrations were used (in µM): 100 (Z)-1-[N-(2-aminoethyl)-N-(2-ammonioethyl)amino]diazen-1-ium-1,2-diolate (DETA/NO) and 1 strychnine. The ACSF solution with and without drug application was always kept at ∼36°C.
 
-## Data analysis of two-photon Ca2+ imaging recordings
+### Data analysis of two-photon Ca2+ imaging recordings
 
 Image extraction and semi-automatic region-of-interest (ROI) detection were performed using Igor PRO 8. All analyses were organized and performed in a custom-written schema using DataJoint for Python (http://datajoint.github.io/; Yatsenko et al., 2015).
 
-## Preprocessing
+#### Preprocessing
 
-After the Ca2+ traces were extracted from individual ROIs, as described elsewhere (Baden et al., 2016; Szatko et al., 2020), the raw traces were detrended by subtracting a smoothed version rsmooth of the trace from the raw one. Detrending was necessary to remove slow drifts in the signal that were unrelated to the light-induced response. The smoothed trace rsmooth was computed by applying a Savitzky-Golay filter (Press and Teukolsky, 1990) of third polynomial order and a window length of 60 s using the Python SciPy implementation scipy.signal.savgol_filter (Virtanen et al., 2020).rdetrend=rraw−rsmooth
+After the Ca2+ traces were extracted from individual ROIs, as described elsewhere (Baden et al., 2016; Szatko et al., 2020), the raw traces were detrended by subtracting a smoothed version $r_{smooth}$ of the trace from the raw one. Detrending was necessary to remove slow drifts in the signal that were unrelated to the light-induced response. The smoothed trace $r_{smooth}$ was computed by applying a Savitzky-Golay filter (Press and Teukolsky, 1990) of third polynomial order and a window length of 60 s using the Python SciPy implementation $scipy.signal.savgol_filter$ (Virtanen et al., 2020).
 
-For the chirp and moving bar stimulus, detrended traces were averaged over repetitions; and in the case of the moving bar stimulus, reduced to the response average for the preferred motion direction of the cell (for details, see Baden et al., 2016). Finally, response averages were normalized by first subtracting the baseline activity (computed as the mean over the first second), and then by dividing by the maximum amplitude maxt(|r(t)|)=1. This normalization was performed independently for each ROI, stimulus, and condition.
+$$
+r_{detrend}=r_{raw}−r_{smooth}
+$$
 
-## Inclusion criterion
+For the chirp and moving bar stimulus, detrended traces were averaged over repetitions; and in the case of the moving bar stimulus, reduced to the response average for the preferred motion direction of the cell (for details, see Baden et al., 2016). Finally, response averages were normalized by first subtracting the baseline activity (computed as the mean over the first second), and then by dividing by the maximum amplitude $max_{t}(|r(t)|)=1$. This normalization was performed independently for each ROI, stimulus, and condition.
 
-To include reliable cell responses for the performed analyses, two consecutive quality filtering steps were applied. At first, the response quality criterion, also termed quality index (QI), was computed for the moving bar (QIMB > 0.6) and full-field chirp (QIchirp > 0.45). Cells that passed either one of these two QIs in both recording conditions were included, otherwise they were discarded in the following analyses. As in Baden et al., 2016, the QI is defined as follows:QI=Var[⟨C⟩r]t⟨Var[C]t⟩r
+#### Inclusion criterion
 
-where C is the T by R response matrix (time samples by stimulus repetitions) and ⟨⟩x and Var[]x denote the mean and variance across the indicated dimension x, respectively. As a second step, cells were assigned to an RGC group using the RGC classifier, which returned the RGC group index and a confidence score (i.e. assignment probability to the predicted RGC group by the random forest classifier [Qiu et al., 2022]). Only cells that were assigned to one of the RGC groups (i.e. RGC index 1–32) were included, whereas cells assigned to a displaced AC group (i.e. RGC index 33–46) were rejected. Cells that exceeded the confidence score threshold of >0.25 were included.
+To include reliable cell responses for the performed analyses, two consecutive quality filtering steps were applied. At first, the response quality criterion, also termed quality index (QI), was computed for the moving bar (QIMB > 0.6) and full-field chirp (QIchirp > 0.45). Cells that passed either one of these two QIs in both recording conditions were included, otherwise they were discarded in the following analyses. As in Baden et al., 2016, the QI is defined as follows:
 
-## Suppression index
+$$
+QI=\frac{Var[⟨C⟩_{r}]_{t}}{⟨Var[C]_{t}⟩_{r}}
+$$
 
-For each cell, the suppression index (SI) was measured by comparing the (absolute) negative area under the curve (AUCneg) of the chirp and moving bar responses with the total area under the curve (AUCneg+AUCpos) of the entire response trace. For the absolute AUCneg, the response was clipped for value <0.SI=|AUCneg||AUCneg|+|AUCpos|
+where $C$ is the $T$ by $R$ response matrix (time samples by stimulus repetitions) and $⟨⟩_{x}$ and $Var[]_{x}$ denote the mean and variance across the indicated dimension $x$, respectively. As a second step, cells were assigned to an RGC group using the RGC classifier, which returned the RGC group index and a confidence score (i.e. assignment probability to the predicted RGC group by the random forest classifier [Qiu et al., 2022]). Only cells that were assigned to one of the RGC groups (i.e. RGC index 1–32) were included, whereas cells assigned to a displaced AC group (i.e. RGC index 33–46) were rejected. Cells that exceeded the confidence score threshold of >0.25 were included.
 
-## Trace difference Δ
+#### Suppression index
+
+For each cell, the suppression index (SI) was measured by comparing the (absolute) negative area under the curve (AUCneg) of the chirp and moving bar responses with the total area under the curve (AUCneg+AUCpos) of the entire response trace. For the absolute AUCneg, the response was clipped for value <0.
+
+$$
+SI=\frac{|AUC_{neg}|}{|AUC_{neg}|+|AUC_{pos}|}
+$$
+
+#### Trace difference Δ
 
 To compute the trace difference between the sequentially recorded responses per cell, we subtracted the first response average to the chirp and moving bar stimuli, i.e., Ctrl 1, from the second recorded light-induced response, i.e., either NO or Ctrl 2. For the cell type-specific analysis, we computed the average trace differences per cell. For the feature-based analysis, we computed the average trace differences per feature and per cell type.
 
-## On-Off index
+#### On-Off index
 
-The On-Off index was computed asOOI=⟨ron⟩t−⟨roff⟩t⟨ron⟩t+⟨roff⟩t
+The On-Off index was computed as
 
-where ron and roff are defined as the separated time components of the moving bar response into its On- and Off-component. For each component, we computed the mean value of the discrete differences along the time axis clipped between 0 and 1 to estimate if there is a response to the particular feature.
+$$
+OOI=\frac{⟨r_{on}⟩_{t}−⟨r_{off}⟩_{t}}{⟨r_{on}⟩_{t}+⟨r_{off}⟩_{t}}
+$$
 
-## Classification of functional RGC types
+where $r_{on}$ and $r_{off}$ are defined as the separated time components of the moving bar response into its On- and Off-component. For each component, we computed the mean value of the discrete differences along the time axis clipped between 0 and 1 to estimate if there is a response to the particular feature.
+
+#### Classification of functional RGC types
 
 For the functional classification of RGC types, we used a previously published RGC classifier (Qiu et al., 2022). The classifier, which uses a random forest classifier, was trained, validated, and tested on previously published RGC type responses (Baden et al., 2016). As input to the classifier, we used the responses to the standard set of stimuli, i.e., full-field chirp and moving bar, as well as soma sizes (separates alpha and non-alpha types) and the p-values of the permutation test for direction selectivity (separates DS and Non-DS types). For every cell, the RGC classifier outputs its type index and the confidence scores for all 46 types. The confidence score, as described in ‘inclusion criterion’, was used as a quality criterion.
 
-## RF estimation
+#### RF estimation
 
-We mapped RFs of RGCs using the RF Python toolbox RFEst (Huang et al., 2021), following the procedure in Baden et al., 2016, with few modifications. The binary dense noise stimulus (20×15 matrix, (40 µm)2 pixels, balanced random sequence; 5 Hz) was centered on the recording field. We computed the temporal gradients of the Ca2+ signals from the detrended traces and clipped negative values:c˙=max(0,r˙detrend)
+We mapped RFs of RGCs using the RF Python toolbox RFEst (Huang et al., 2021), following the procedure in Baden et al., 2016, with few modifications. The binary dense noise stimulus (20×15 matrix, (40 µm)2 pixels, balanced random sequence; 5 Hz) was centered on the recording field. We computed the temporal gradients of the Ca2+ signals from the detrended traces and clipped negative values:
 
-The stimulus S(t) and the clipped temporal gradients c were upsampled to 10 times the stimulus frequency to compute the gradient-triggered average stimulus:F(x,y,τ)=∫t=0Tc˙(t)S(x,y,t+τ)
+$$
+c˙=max(0,r˙_{detrend})
+$$
 
-where S(x,y,t) is the stimulus, τ is the lag ranging from approximately −0.20 to 1.38 s, and T is the duration of the stimulus. We smoothed these raw RFs using a 5×5 pixel and 1 pixel standard deviation Gaussian window for each lag. Then, we decomposed the RF into a temporal (Ft(τ)) and spatial (Fs(x,y)) component using singular value decomposition and scaled them such that max(|Ft|)=1 and max(|Fs|)=max(|F|). RF quality was computed as:QIRF=1−Var[F(x,y,τ)−Ft(τ)Fs(x,y)]Var[F(x,y,τ)]
+The stimulus $S(t)$ and the clipped temporal gradients $c$ were upsampled to 10 times the stimulus frequency to compute the gradient-triggered average stimulus:
 
-Only RFs with QIRF>0.45 were used for the analysis.
+$$
+F(x,y,\tau)=\int_{t=0}^{T}c˙(t)S(x,y,t+\tau)
+$$
 
-For each sRF Fs, we fit a 2D Difference of Gaussians using the Python package astropy (Price-Whelan et al., 2018). The mean and covariance matrices of the center and surround Gaussian fits were tied, except for a linear scaling of the covariance matrix. We defined the polarity p∈{−1,1} of the sRF as the sign of the model fit at its mean. Next, we computed the center RF of the sRF as Fsc=max(0,p⋅Fs). The surround index was computed as:RFsurround=∑x,y(Fs−Fsc)∑x,y(|Fs|).
+where $S(x,y,t)$ is the stimulus, τ is the lag ranging from approximately −0.20 to 1.38 s, and $T$ is the duration of the stimulus. We smoothed these raw RFs using a 5×5 pixel and 1 pixel standard deviation Gaussian window for each lag. Then, we decomposed the RF into a temporal ($F_{t}(\tau)$) and spatial ($F_{s}(x,y)$) component using singular value decomposition and scaled them such that $max(|F_{t}|)=1$ and $max(|F_{s}|)=max(|F|)$. RF quality was computed as:
+
+$$
+QI_{RF}=1−\frac{Var[F(x,y,\tau)−F_{t}(\tau)F_{s}(x,y)]}{Var[F(x,y,\tau)]}
+$$
+
+Only RFs with $QI_{RF}>0.45$ were used for the analysis.
+
+For each sRF $F_{s}$, we fit a 2D Difference of Gaussians using the Python package astropy (Price-Whelan et al., 2018). The mean and covariance matrices of the center and surround Gaussian fits were tied, except for a linear scaling of the covariance matrix. We defined the polarity $p\in{−1,1}$ of the sRF as the sign of the model fit at its mean. Next, we computed the center RF of the sRF as $F_{s}^{c}=max(0,p⋅F_{s})$. The surround index was computed as:
+
+$$
+RF_{surround}=\frac{\sumx,y(F_{s}−F_{s}^{c})}{\sumx,y(|F_{s}|)}.
+$$
 
 To measure the center RF size, we fit a 2D Gaussian to the center RF, with the mean fixed to the one obtained from the Difference of Gaussians fit. The area covered by two standard deviations of this Gaussian fit was used as the RF size.
 
-## Functional clustering
+#### Functional clustering
 
 The functional clustering was based on a similar approach as in Baden et al., 2016. The clustering was only applied on RGC types previously classified as G32 and only recorded in Ctrl 1. First, visual features from the full-field chirp and moving bar Ca2+ responses were extracted using sparse principal component analysis (PCA) (Zou et al., 2006). After optimizing the alpha parameter for each stimulus, each cell’s dimensionality was reduced to 30 features, whereby the chirp covered 20 and the moving bar 10 features. Alpha was optimized in a way that every part of each stimulus was represented by one feature to increase interpretability. Each feature was standardized across cells before clustering. Then, the features were used to cluster the cells using a Mixture of Gaussian model. The ideal number of clusters was chosen based on the cross-validated BIC. Additionally, cluster coherence was computed and validated using intra- and inter-cluster correlation, as well as the influence of potential batch effects, i.e., a single cluster originates from a single retina or scan field, but is found across several ones. Then, the model was used to predict cell-type labels. Finally, cluster 3 showed a high signal-to-noise ratio, thus cells were re-clustered, which originated in three clusters, whereby two showed high variability in their chirp and moving bar responses. These cells were discarded in the further analysis to clean this cluster from potential contamination.
 
-## Statistical analysis
+#### Statistical analysis
 
 To quantify the differences between traces, a Shaprio-Wilk test was used to test for normality and then either the two-sided t-test (if normally distributed) or the non-parametric Wilcoxon signed-rank test (Mann-Whitney U-test). To determine α, Bonferroni correction was used, depending on the number of tests performed. To test the difference between traces against zero, we either used the t-test or the non-parametric Wilcoxon signed-rank test, depending on the distribution. A one-sampled t-test was performed to test the mean against a population mean of zero to quantify if the mean difference diverges from zero. For the statistical comparison of the suppression index between conditions per cluster, the non-parametric Kruskal-Wallis one-way analysis of variance and post hoc Dunnett’s test and Bonferroni correction to determine the statistical significance between conditions were used.
 
-## Data analysis of electrophysiological recordings
+### Data analysis of electrophysiological recordings
 
-## Functional clustering
+#### Functional clustering
 
 To cluster cells in different functional types, we based our analysis on the chirp and checkerboard stimulus responses and represented each RGC with a reduced vector. To obtain these vectors, first, we constructed PSTHs from the spikes evoked from the chirp stimulus, using a binning of 100 ms, and spike-triggered averages (STAs). Then, for each experiment, we z-scored all PSTHs and performed a PCA on them. We kept the number of components that were needed to explain 80% variance of the data (11–12 components for the PSTH). Second, we used the temporal profile (40 samples at 30 Hz) of each cell’s STA obtained using the checkerboard stimulus. We z-scored it and performed a PCA, keeping two components, which explains around 80% of the variance. This adds information about the classical STA polarity of the RGCs. Third, we used the area of the ellipse fitted to the classical STA, as the product value of their major and minor axis σ values. These areas were normalized from 0 to 1. In this way, we obtain a data vector of around 15 values, depending on the experiment, that describes each RGC according to their response to a chirp and a checkerboard. Then, we performed an agglomerative clustering, setting the threshold value in a way that all clusters looked homogeneous across PSTHs and STAs. This resulted in over-clustering producing between 12 and 44 RGC groups (from 29 to 149 cells in each experiment).
 
-## RF estimation
+#### RF estimation
 
 To estimate sRFs and tRFs, we displayed a random binary checkerboard with check size of 42 μm for 30–40 min at 30 Hz. A three-dimensional (3D) STA (x, y, and time) was sampled using 40 time samples. The spatial STA presented across all the figures was obtained as the 2D spatial slice at the maximum value after smoothing. The temporal STA is the 1D time slice at that same value. A double Gaussian fit was performed on the resulting spatial STA, and the ellipse corresponding to a 2σ contour of the fit was plotted for all the figures.
 
-## Pseudo-calcium transformation
+#### Pseudo-calcium transformation
 
 In the last step, we assigned each cluster to one of the 32 types described in Baden et al., 2016. To do this, we used the Ca2+-dataset to match it with the MEA-dataset. We based our analysis on their reported data in the Extended data from their Figure 1, where the authors link electrophysiology and Ca2+ imaging by means of a convolution between a Ca2+ event-triggered by a single spike.
 
@@ -277,10 +353,10 @@ We transformed the PSTHs by convolving them with a decaying exponential (see Fig
 
 With this procedure, we were able to match a majority of RGC types between those datasets, yet aligning the datasets is challenging. In fact, the cell types underlying the Ca2+ and MEA RGC clusters may not always be same. A caveat is that while Ca2+ is a proxy for spiking activity, other Ca2+ sources as well as sub-threshold membrane potential changes may affect the intracellular Ca2+, potentially in a cell type-specific way.
 
-## Functional cell typing of G32
+#### Functional cell typing of G32
 
 Once we obtained all the cells assigned to G32, we pooled the data from the four experiments and performed the same steps as before, to further distinguish sub-groups as we did with the Ca2+ imaging data. We first over-clustered again in this step and merged the similar sub-clusters in a last step. We obtained again, now in the electrophysiological data, three clearly differentiated subgroups. From an initial set of 46 cells, we obtained three subgroups of 17, 10, and 15 cells (Figure 8c), plus a non-homogeneous subgroup of four cells that did not fit into any of them and was discarded.
 
-## Statistical analysis
+#### Statistical analysis
 
 To quantify the ellipses of the sRFs, we used the two-sides t-test. To quantify if the full width at half minimum (FWHM) values of the tRFs were significantly different, we performed repeated measures ANOVA and post hoc Dunnett’s test. Only cells where we could compute sRFs or tRFs across the three conditions were used for these analyses.

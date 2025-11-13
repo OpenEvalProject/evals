@@ -12,15 +12,15 @@
 
 ### Affiliations
 
-1. https://ror.org/05csn2x06 Department of Axonal Signaling, Netherlands Institute for Neuroscience (NIN), Royal Netherlands Academy of Arts and Sciences (KNAW) Amsterdam Netherlands
-2. https://ror.org/018906e22 Department of Psychiatry, Erasmus Medical Centre Rotterdam Netherlands
-3. https://ror.org/04pp8hn57 Cell Biology, Neurobiology and Biophysics, Department of Biology, Faculty of Science, Utrecht University Utrecht Netherlands
+1. Department of Axonal Signaling, Netherlands Institute for Neuroscience (NIN), Royal Netherlands Academy of Arts and Sciences (KNAW) Amsterdam Netherlands ([ROR:05csn2x06](https://ror.org/05csn2x06))
+2. Department of Psychiatry, Erasmus Medical Centre Rotterdam Netherlands ([ROR:018906e22](https://ror.org/018906e22))
+3. Cell Biology, Neurobiology and Biophysics, Department of Biology, Faculty of Science, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
 
 † Corresponding author
 
 ## Abstract
 
-Parvalbumin-positive (PV + ) γ-aminobutyric acid (GABA) interneurons are critically involved in producing rapid network oscillations and cortical microcircuit computations, but the significance of PV + axon myelination to the temporal features of inhibition remains elusive. Here, using toxic and genetic mouse models of demyelination and dysmyelination, respectively, we find that loss of compact myelin reduces PV + interneuron presynaptic terminals and increases failures, and the weak phasic inhibition of pyramidal neurons abolishes optogenetically driven gamma oscillations in vivo. Strikingly, during behaviors of quiet wakefulness selectively theta rhythms are amplified and accompanied by highly synchronized interictal epileptic discharges. In support of a causal role of impaired PV-mediated inhibition, optogenetic activation of myelin-deficient PV + interneurons attenuated the power of slow theta rhythms and limited interictal spike occurrence. Thus, myelination of PV axons is required to consolidate fast inhibition of pyramidal neurons and enable behavioral state-dependent modulation of local circuit synchronization.
+Parvalbumin-positive (PV+) γ-aminobutyric acid (GABA) interneurons are critically involved in producing rapid network oscillations and cortical microcircuit computations, but the significance of PV+ axon myelination to the temporal features of inhibition remains elusive. Here, using toxic and genetic mouse models of demyelination and dysmyelination, respectively, we find that loss of compact myelin reduces PV+ interneuron presynaptic terminals and increases failures, and the weak phasic inhibition of pyramidal neurons abolishes optogenetically driven gamma oscillations in vivo. Strikingly, during behaviors of quiet wakefulness selectively theta rhythms are amplified and accompanied by highly synchronized interictal epileptic discharges. In support of a causal role of impaired PV-mediated inhibition, optogenetic activation of myelin-deficient PV+ interneurons attenuated the power of slow theta rhythms and limited interictal spike occurrence. Thus, myelination of PV axons is required to consolidate fast inhibition of pyramidal neurons and enable behavioral state-dependent modulation of local circuit synchronization.
 
 ## Introduction
 
@@ -30,17 +30,57 @@ Recent findings have shown that the proximal axons of PV+ interneurons are cover
 
 ## Results
 
-## Behavioral state-dependent increase in theta power and interictal epileptiform discharges
+### Behavioral state-dependent increase in theta power and interictal epileptiform discharges
 
 We investigated in vivo cortical rhythms by recording local field potential (LFP) in layer 5 (L5) together with surface electrocorticogram (ECoG) signals from both primary somatosensory (S1) and visual (V1) areas. Freely moving mice (C57BL/6, 7–9 weeks at the start of the experiment) were recorded in their home cage every second week (18–24 hr/week) across an 8-week cuprizone treatment, inducing toxic loss of oligodendrocytes in white- and gray matter areas (Clarner et al., 2012; Hamada and Kole, 2015; Kipp et al., 2009). Remarkably, after 6 weeks of cuprizone feeding we detected high-voltage spike discharges (approximately five times the baseline voltage and ~50–300 ms in duration, Figure 1a–c). These brief spike episodes on the ECoG and LFP (Figure 1c) occurred bilaterally and near synchronously in S1 and V1, resembling the interictal epileptiform discharges (also termed interictal spikes) that are a hallmark of epilepsy (Cohen et al., 2002; Dubey et al., 2018; Hoffmann et al., 2008; Tóth et al., 2018). Automated detection of interictal spikes in the raw ECoG–LFP signal was performed with a machine-based learning classifier (see Figure 1—figure supplement 1 and Materials and methods), revealing a progressively increasing number of interictal spikes, from ~5/hr at 4 weeks up to ~70/hr at 8 weeks of cuprizone treatment (Figure 1d). Interestingly, interictal spikes were highly dependent on vigilance state and present exclusively during quiet wakefulness (30 out of 30 randomly selected LFP segments from awake or quiet wakefulness, chi-square test p<0.0001, n = 6 cuprizone mice), with no other discernible association to specific behaviors (Figure 1—figure supplement 1b, Figure 1—video 1 ). Whether the pathological cortical oscillations were specific to certain frequency bands, including gamma (γ, 30–80 Hz), was examined by plotting the power spectrum density of the LFP in S1 during periods of quiet wakefulness or active movement (Figure 1e). During quiet wakefulness, LFP power in cuprizone-treated mice was selectively amplified in the theta frequency band (θ, 4–12 Hz, Šidák’s multiple comparisons test, p=0.0013, Figure 1e and f, Figure 1—figure supplement 1c). In contrast, during active states when mice were moving and exploring no differences were observed in the power spectrum, in none of the frequency bands (Šidák’s multiple comparisons test, p>0.166, Figure 1e and f, Source data 1). Finally, to more firmly establish whether interictal epileptiform discharges result from the lack of myelin, we analyzed ECoG signals in the dysmyelinated shiverer mice (MbpShi) lacking compact myelin due to a truncating mutation in Mbp (Readhead et al., 1987). Shiverer mice suffer progressively increasing number of epileptic seizures beginning at approximately 8 weeks of age (Chernoff, 1981; Readhead et al., 1987). ECoG recordings at 8 weeks showed that in addition to ictal discharges interictal spikes were detected with a rate of ~1/min, comparable to cuprizone-treated mice (Figure 1g and h, Figure 1—figure supplement 2). Although the waveform of interictal spikes in shiverer was substantially longer in duration (~100–500 ms), analysis of the power across the four frequency bands around interictal spikes revealed no difference in comparison to the cuprizone-treated mice (two-way analysis of variance [ANOVA] p=0.7875, n = 6 mice for both groups, Figure 1—figure supplement 2).
 
-## Loss of myelin impairs fast PV+ BC-mediated inhibition
+![Figure 1.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic of the electrocorticogram (ECoG) and local field potential (LFP) recordings in freely moving mice. Electrodes were placed right (SR) and left (SL) in the primary somatosensory cortex, and a left LFP electrode (SL-LFP) into layer 5 (L5). A similar array of electrodes was positioned in the primary visual cortex (VR, VL, and VL-LFP). One electrode was placed around neck muscle recording electromyography (EMG) and one used as reference (Ref). (b) Interictal spikes (*) appear from 4-week cuprizone and onward. Example raw LFP traces (SL-LFP). (c) Representative interictal spike example showing spatiotemporal synchronization of the spike across cortical areas and hemispheres. Higher magnification of interictal spikes (red, ~50–300 ms duration) overlaid with the average (black). (d) Cuprizone treatment caused a progressively increasing frequency of interictal spikes (mixed-effects two-way ANOVA). Time × treatment interaction p<0.0001, Šidák’s multiple comparisons tests, cupri vs. con; 4 weeks p=0.121, 6 weeks *p=0.0406 and 8 weeks **p=0.0054. (e) Power spectral content during two different brain states, awake and moving (am, dotted lines) and quiet wakefulness (qw, solid lines) in control (black) and cuprizone (red). Red arrow marks amplified theta band power (θ) during quite wakefulness in cuprizone mice (Cupr_qw). (f) Cuprizone amplifies selectively θ power during quiet wakefulness (two-way ANOVA treatment p<0.0001, Šidák’s multiple comparisons cupr vs. con; for δ, p=0.8118; θ, p=0.0013; β, p=0.8568 and for γ, p=0.9292) but not during moving (two-way ANOVA treatment p=0.0575). (g) Left: schematic of ECoG and LFP recordings from Mbp+/+ and MbpShi mice with example trace showing interictal spikes (*). Right: overlaid individual interictal spikes in MbpShi mice (red) combined with the population average (black). (h) Bar plot of interictal rate in MbpShi mice. Two-tailed Mann–Whitney test **p=0.0095. Data shown as mean ± SEM with gray lines (d) or open circles (h) individual mice.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Automated event detection library used for interictal classification. Three-dimensional projection metric space, showing coherence, spikiness, and signal power (a.u. = arbitrary units), with colors corresponding to interictal (red) and baseline/normal (black) events. The event library was constructed by an operator who classified events as ‘normal’ or interictal events. The blue domain represents the population of interictal events from MbpShi mice. (b) Example of a 30 s recording from multiple electrodes from 6-week cuprizone-treated mouse. Left: traces during the awake state, note the high-voltage electromyography (EMG) activity. Right: same mouse during quiet wakefulness with low EMG activity. Interictal discharge indicated with red asterisk (*). (c) Example traces showing raw local field potential (LFP) signals from S1 (top) and bandpass-filtered traces (bottom) at different brain states in control (black) and cuprizone (red) for delta (δ, 0.5–3.5 Hz), theta (θ, 4–12 Hz), beta (β, 12.5–25 Hz), and gamma (γ, 30–80 Hz).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Schematic drawing showing electrocorticogram (ECoG) and local field potential (LFP) recordings from S1 of Mbp+/+ and MbpShi mice. Example LFP trace showing pre-ictal and ictal discharge from 8-week-old MbpShi mouse (top). Bottom: higher temporal resolution of the top LFP trace showing ECoG activity with interictals (1) and ictal discharge (2 and 3). (b, c) Comparable power spectral content during interictal activity in cuprizone (red) and MbpShi (blue) (two-way ANOVA myelin models p<0.0001, Šidák’s multiple comparisons cuprizone vs. MbpShi; for δ, p=0.9952; θ, p>0.9999; β, p>0.9999 and for γ, p=0.9346). Data shown as mean ± SEM.
+
+### Loss of myelin impairs fast PV+ BC-mediated inhibition
 
 Increased power of sensory-driven slow oscillations and epileptiform activity in the neocortex of normally myelinated brains is also observed when PV+ interneurons are optogenetically silenced (Brill et al., 2016; Veit et al., 2017; Yang et al., 2017). To investigate how myelin loss affects the PV+ interneuron morphological and functional properties, we crossed the PvalbCre mouse line, having Cre recombinase targeted to Pvalb-expressing cells, with a tdTomato fluorescence (Ai14) Cre reporter line (hereafter called PV-Cre; Ai14 mice). The cytoplasmic fluorescence allowed quantification of PV+ cell bodies and their processes in the primary somatosensory cortex (Figure 2a and b, Figure 2—figure supplement 1a), and immunofluorescent labeling with myelin basic protein (MBP) revealed substantial myelination of large-diameter PV+ axons (mean ± SEM, 80.15% ± 9.95% along 83 mm of PV+ axons analyzed, n = 3 slices from two mice, z-stack with a volume of 7.66 × 105 μm3, Figure 2b, Figure 2—figure supplement 1a). Electron microscopy (EM) immunogold-labeled tdTomato showed that PV+ axons possessed multilamellar compact myelin sheaths (on average, 6.33 ± 0.80 myelin lamella) with 10.8 ± 0.76 nm distance between the major dense lines and a mean g-ratio (axon diameter/fiber diameter) of 0.74 ± 0.01 (n = 6 sheaths, Figure 2c). PV-Cre; Ai14 mice fed with 0.2% cuprizone for 6 weeks showed strongly reduced MBP in S1 and PV+ axons were largely devoid of myelin (Figure 2a and b, Figure 2—figure supplement 1b) while the total number of PV+ cell bodies across cortical layers remained constant (control density, 326 ± 14 cells mm–2 vs. cuprizone density, 290 ± 48 cells mm–2, n = 6 sections from N = 6 animals/group, Mann–Whitney test p=0.1649, Figure 2d). Further, single-cell analysis was performed on biocytin-filled PV-Cre+ interneurons that were re-sectioned and stained for MBP to identify the location of myelin and the axon morphology (Figure 2e, Figure 2—figure supplement 1c and d). Myelin was present on multiple proximal axonal segments of all control BCs (4/4 fully reconstructed axons, on average 2.8% ± 1.2% myelination). In contrast, none of the BCs from cuprizone-treated mice showed myelinated segments (0/6 axons). Furthermore, the total number of axon segments (~80 per axon, Mann–Whitney test p=0.3032, Figure 2f) as well as the total path length were unaffected by cuprizone treatment (on average ~4.5 mm in both groups, range 2.0–9.5 mm, Mann–Whitney test p=0.9871, Figure 2g, Figure 2—figure supplement 1c–f).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig2-v2.jpg)
+
+**Figure 2.:** (a) Left: confocal z-projected overview image of S1 in a PV-Cre; Ai14 mouse (tdTomato+, red) overlaid with myelin basic protein (MBP, cyan). Right: overview image showing loss of MBP after + weeks cuprizone. (b) Myelinated PV+ axons in control (left) and PV+ axons demyelination with cuprizone treatment (right). (c) Electron microscopy (EM) of transverse cut tdTomato+ immunogold-labeled axons (false-colored red). Right: higher magnification of immunogold particles and ultrastructure of the PV interneuron myelin sheath. (d) PV+ interneuron number across the cortical lamina was not affected by cuprizone treatment (two-way ANOVA, treatment effect p=0.6240). (e) Top: example of a high-resolution 3D reconstruction of a biocytin-labeled PV axon (red) labeled with MBP (cyan) of a control mouse, showing the first approximately six axonal branch orders. Bottom: control axonogram showing axon branch order and myelinated segments (cyan). (f, g) Total axon branch number and length are not changed by demyelination (Mann–Whitney tests p=0.3032 and p=0.8822, respectively). n.s., not significant. (h) Left: brightfield/fluorescence overlay showing patch-clamp recording from a tdTomato+ interneuron. Right: example PV+ interneuron APs from control (dotted line) and cuprizone-treated mice (continuous lines). (i) Steady-state sub- and suprathreshold voltage responses during 700 ms current injections. Firing rates near threshold reduced and the (j) rheobase current significantly increased in cuprizone (***p=0.0003). (k) PV+ basket cells (BCs) showed an ~4 mV hyperpolarized resting membrane potential (**p=0.0036). Data shown as mean ± SEM and open circles individual cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Left: confocal image of control staining in layer 5 (L5) of S1 showing a PV+ interneuron. Right: higher magnification of the image in right, illustrating the trajectory of a myelinated PV+ interneuron axon (yellow arrows). Note that also PV+ axon swellings are frequently myelinated. (b) A confocal z-stack image examples of the L5 region in control (left) and cuprizone (right)-treated mice. (c) Axonograms of a control and (d) a cuprizone axon. Myelinated segments indicated with cyan. (e, f) Segment number and length per branch order. Both number and length of axon segments were not significantly affected by cuprizone-induced demyelination (two-way ANOVA treatment × branch order interaction p=0.8028 and p=0.6236, respectively). Data shown as mean ± SEM.
 
 To examine whether myelin loss changes the intrinsic excitability of PV+ BCs, we made whole-cell recordings in slices from PV-Cre; Ai14 mice (Figure 2h). Recording of steady-state firing properties by injecting increasing steps of currents injections revealed an increase in the rheobase current (~90 pA, Figure 2i and j) and an ~50 Hz reduced firing frequency during low-amplitude current injections (two-way ANOVA, treatment p=0.0441, Šidák’s multiple comparisons post hoc test at 200 pA; p=0.0382, 250 pA; p=0.0058, 300 pA; p=0.0085) without a change in the maximum instantaneous firing rate (two-way ANOVA, Šidák’s multiple comparisons post hoc test, p=0.92, data not shown). However, neither the AP half-width (control, 290 ± 10 µs, n = 34 cells from 12 mice vs. cuprizone, 295 ± 10 µs, n = 15 cells from 7 mice, two-tailed Mann–Whitney U-test p=0.7113) nor AP amplitude was affected by cuprizone treatment (control 78.12 ± 1.66 mV, n = 34 cells from 12 mice vs. cuprizone, 80.13 ± 2.48 mV, n = 15 cells from 7 mice, p=0.4358). In contrast, the resting membrane potential (VRMP) of PV+ interneurons was on average ~4 mV significantly more hyperpolarized (Figure 2k) without a change in the apparent input resistance (control, 133.3 ± 8.55 MΩ, n = 42 cells from 21 mice vs. cuprizone 125 ± 8.96 MΩ, 27 cells out of 13 mice, p=0.5952). In addition to the hyperpolarization in VRMP, demyelinated PV+ interneurons also had an ~3 mV more hyperpolarized AP voltage threshold (control, –40.51 ± 0.97 mV, n = 34 cells from 12 mice) and cuprizone –43.65 ± 1.29 (n = 15 cells from 7 mice, Mann–Whitney test p=0.0269). Taken together, the results indicate that cuprizone treatment completely demyelinates proximal branches of PV+ interneuron axons, and while not affecting axon morphology, causes a net decrease in the intrinsic PV+ interneuron excitability.
 
 Is myelin required for PV+ BC-mediated inhibition? Single PV+ BCs typically make 5–15 synapses with a PN in a range of <200 µm, forming highly reliable, fast, and synchronized release sites (Micheva et al., 2021; Packer and Yuste, 2011; Tamás et al., 1997; Thomson et al., 1996). Intercellular variations in both myelin distribution and aberrant myelin patterns have been associated with conduction velocity changes (Benamer et al., 2020; Micheva et al., 2021). To examine the role of myelin on inhibitory transmission, we made paired recordings of PV+ BCs and L5 PNs with and without myelination, in control or cuprizone-treated PV-Cre; Ai14 mice, respectively (Figure 3). We evoked APs in PV+ BCs while recording unitary inhibitory postsynaptic currents (uIPSCs) under conditions of physiological Ca2+/ Mg2+ (2.0/1.0 mM in n = 78 pairs, Figure 3a and b). Concordant with optogenetic mapping of PV+ inputs onto L5 PNs in mouse S1 (Packer and Yuste, 2011), in control slices the probability of a given PV+ cell being connected to a nearby PN was high (~0.48, Figure 3c). In contrast, the connection probability was significantly lower in cuprizone-treated mice (~0.23, p=0.0182, Figure 3b and c). In 13 stable connected pairs, we examined unitary IPSC properties including failure rate and amplitude, as well as rise- and decay time, using automated fits of the uIPSCs (n > 80 trials per connection, Figure 3d). Cuprizone treatment led to a significant increase in the number of failures (from 0.05 to 0.26, Figure 3e) and an ~2.5-fold reduction in the average uIPSC peak amplitude (Figure 3f). To obtain an estimate of propagation speed, we determined on successful trials the latency between the AP peak and uIPSCs at 10% peak amplitude (Figure 3d). Interestingly, both the mean latency and the trial-to-trial latency variability remained unchanged (average ~800 µs; Mann–Whitney test p>0.999; SD in cuprizone 319 ± 65 µs, n = 7 pairs, SD in control, 276 ± 38 µs, n = 5 pairs, p>0.60, Figure 3g).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig3-v2.jpg)
+
+**Figure 3.:** (a) Immunofluorescence image of a connected control PV+ basket cell (BC) (red) and layer 5 (L5) pyramidal neuron (PN) (white). (b) Example traces of 10 single-trial uIPSC traces (gray) overlaid with mean average (>60 trials, black). Inset: uIPSCs abolished by gabazine (GABAA blocker, 4 µM). (c) Cuprizone-treated mice show significantly lower connection probability between PV+ BC and L5-PN (chi-square test *p=0.0182, n = 78 pairs). (d) Example fits (blue) of uIPSCs for rise- and decay time, amplitude, failure rate, amplitude, and latency analyses (δ, AP to 10% uIPSC peak amplitude). (e) Cuprizone increased failures by fivefold and the average peak amplitude by ~2.5-fold (Mann–Whitney test **p=0.012) and (f) reduces the mean amplitude (Mann–Whitney test *p=0.0256). (g) uIPSCs latency remained unchanged (Mann–Whitney test n.s., p>0.999). (h) Cuprizone impairs short-term facilitation. Dotted line indicates expected amplitude for uIPSC2 (scaled from uIPSC1). (i) Left: confocal z-projected image of a control PV+ axon (red) immunostained with Syt2 (green). Right: surface-rendered 3D image of the same axon. (j) Example sections of 3D reconstructions. (k) Cuprizone increased the Syt2+ puncta spacing by approximately twofold (Mann–Whitney test ****p<0.0001, n = 12). Data shown as mean ± SEM and open circles individual axons or pairs. n.s., not significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Left: example traces of miniature inhibitory postsynaptic currents (mIPSCs) at the soma of layer 5 (L5) pyramidal neurons in the presence of CNQX, d-AP5, and TTX in control (top) and demyelinated conditions (bottom). (b, c) Population data showing an approximately threefold mIPSC peak amplitude but not frequency reduction (Mann–Whitney test **p=0.0025; n.s., p=0.728). (d) Example images of maximum z-projection of a biocytin-filled L5 pyramidal neurons (PNs) (white) overlaid with PV immunofluorescence (red). Dotted lines indicate the soma borders with number indicating counted PV+ puncta. (e, f) Population analysis reveals a significant loss in the number of PV+ puncta at the L5 soma (Mann–Whitney test *p=0.0035) and the primary proximal apical dendrite (<200 µm, *p=0.0044). (g, h) Example confocal z-stack images of L5 in control (left) and cuprizone-treated mice (right) reveal a global significant reduction in PV immunofluorescence intensity. (i) Regression plot reveals the mean PV immunofluorescence intensity correlates with the number of PV+ boutons on large NeuN+ pyramidal neurons cell bodies (r2 = 0.755). NeuN+ immunofluorescent signals are not shown. The soma diameters of pyramidal neurons were unchanged (cuprizone 18.23 ± 0.99 µm, n = 6 vs. 18.37 ± 0.68 µm, Mann–Whitney U-test p=0.954, n = 9).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) A confocal z-projection of a biocytin-filled (cyan) layer 5 (L5) pyramidal neuron overlaid with βIV spectrin (green) and parvalbumin (+). (b) The number of putative chandelier PV+ boutons was preserved in cuprizone-treated mice (Mann–Whitney test p=0.96). Data are shown as mean ± SEM and open circles individual neurons. n.s., not significant.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Maximum z-projection of biocytin-filled layer 5 (L5) pyramidal neuron (PN) (white) overlaid with Syt2+ immunofluorescence (green). Numbers indicate the Syt2+ puncta counted at the soma. (b) Population analysis reveals a significant Syt2+ puncta loss (two-tailed Mann–Whitney U-test *p=0.0216). (c) Maximum z-projection of a biocytin-filled L5 soma (white) overlaid with Syt2+ immunofluorescence (green) from Mbp+/+ and MbpShi mice. (d) Population analysis shows a significant loss of Syt2+ puncta in the MbpShi mice (**p=0.0013). (e) Example traces of miniature inhibitory postsynaptic currents (mIPSCs) of L5 PNs in the presence of CNQX, d-AP5, and TTX in Mbp+/+ (top) and MbpShi mice (bottom). (f, g) mIPSCs’ peak amplitude was unaffected but frequency is reduced in MbpShi (n.s., p=0.797 and *p=0.019, respectively). Data are shown as mean ± SEM and open circles individual neurons. n.s., not significant.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (a) Left: schematic of whole-cell voltage-clamp recording for mEPSCs in identified parvalbumin interneurons in the PV-Cre; Ai14 mouse line. mEPSCs were recorded in control mice and mice with 6-week cuprizone feeding. (b, c) Population data of mEPSC recordings revealed no difference in amplitude (Mann–Whitney test, n.s., p=0.240) nor mEPSC frequency (Mann–Whitney test, n.s., p=0.937). Data are shown as mean ± SEM and open circles individual neurons. n.s., not significant.
 
 To further examine the properties of GABA release in demyelinated PV-BCs, we recorded uIPSCs during a train of five APs at 100 Hz (averaging >50 trials, Figure 3h). Consistent with the temporary facilitation in IPSCs of adult Purkinje cells (Turecek et al., 2016), uIPSC recordings in control PV BCs showed that paired-pulse ratios were on the second spike facilitated by 20% (uIPSC2/uIPSC1 1.20 ± 0.060) and gradually depressed on the subsequent spikes (spikes 3–5). In contrast, in cuprizone-treated mice uIPSCs were depressed during the second and subsequent pulses (two-way repeated-measures ANOVA pulse × treatment effect p<0.021, Šidák’s multiple comparisons tests for uIPSC2/uIPSC1 0.89 ± 0.041, p=0.0339, Figure 3h).
 
@@ -50,17 +90,33 @@ Cuprizone treatment did not affect PV+ axon length (Figure 2g, Figure 2—figure
 
 Thus, myelin loss reduces the number of presynaptic sites, causing an increase of GABA release failures and a frequency-dependent depression, ultimately limiting the fast component of BC to PN inhibitory transmission.
 
-## PV+ activation rescues interictal spikes and theta oscillations, but not the loss of gamma
+### PV+ activation rescues interictal spikes and theta oscillations, but not the loss of gamma
 
 To understand how myelin deficits and loss of fast PV-mediated inhibition of PNs impacts network dynamics, we used AAV1-mediated delivery of Cre-dependent channelrhodopsin-2 (ChR2) into L5 of PV-Cre; Ai14 mice (Figure 4a). The ChR2 transduction rate was comparable between control and cuprizone mice (~70%, Figure 4b and c). In acute slices, we voltage-clamped L5 PNs and optogenetically evoked IPSC (oIPSC) with full-field blue light illumination (Figure 4d). Consistent with S1 L5 PNs receiving converging input from >100 PV+ interneurons (Packer and Yuste, 2011), control oIPSCs rapidly facilitated to a peak amplitude of ~700 pA followed by rapid synaptic depression (Figure 4f and g). In slices from cuprizone mice, however, the oIPSC peak amplitude was significantly reduced (approximately twofold) while neither the steady-state amplitude during vesicle replenishment nor the total charge transfer reached a significant difference (control, –99.58 ± 28.5 pC vs. cuprizone, –54.3 ± 20.57 pC, p=0.236, n = 9 control and n = 8 cuprizone neurons, Figure 4f and h).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig4-v2.jpg)
 
-**Figure 4.:** +) basket cell (BC) inhibition of layer 5 (L5) pyramidal neurons (PNs).(a) Immunofluorescent image of AAV1-hChR2-YFP expression (green) injected into L5 of S1. (b) Confocal images of separate fluorescent channels showing td-Tomato+ cell bodies and neurites (red, top), the localization of AAV1-hChR2-YFP (green, middle), and the merge image (bottom). The majority of tdTomato+ cells were YFP+ (white arrows). (c) Average transfection rate of AAV1-hChR2-YFP in the L5 (>70%) is comparable in control and cuprizone conditions (Mann–Whitney test p=0.889, n = 5). (d) Schematic showing full-field blue light optogenetically evoked postsynaptic inhibitory currents (oIPSCs) in L5 PNs. (e) Example trace of a whole-cell current-clamp recording from a PV+ interneurons (bottom red) compared to a separate whole-cell voltage-clamp recordings from an L5 PN. A 1 s blue light field illumination (blue bar) produces sustained firing in PV-Cre AAV1-ChR2 interneurons. (f) Single trial oIPSCs (gray) from different experiments (1 s duration pulses) overlaid with the average oIPSC (black) revealing a lower peak amplitude in cuprizone (red arrow). (g) Population data revealed an approximately twofold reduction in oIPSCs’ peak amplitude (Mann–Whitney test p=0.0172). (h) Steady-state oIPSCs’ amplitude did not reach significance, n.s., Mann–Whitney test p=0.0789.
+**Figure 4.:** (a) Immunofluorescent image of AAV1-hChR2-YFP expression (green) injected into L5 of S1. (b) Confocal images of separate fluorescent channels showing td-Tomato+ cell bodies and neurites (red, top), the localization of AAV1-hChR2-YFP (green, middle), and the merge image (bottom). The majority of tdTomato+ cells were YFP+ (white arrows). (c) Average transfection rate of AAV1-hChR2-YFP in the L5 (>70%) is comparable in control and cuprizone conditions (Mann–Whitney test p=0.889, n = 5). (d) Schematic showing full-field blue light optogenetically evoked postsynaptic inhibitory currents (oIPSCs) in L5 PNs. (e) Example trace of a whole-cell current-clamp recording from a PV+ interneurons (bottom red) compared to a separate whole-cell voltage-clamp recordings from an L5 PN. A 1 s blue light field illumination (blue bar) produces sustained firing in PV-Cre AAV1-ChR2 interneurons. (f) Single trial oIPSCs (gray) from different experiments (1 s duration pulses) overlaid with the average oIPSC (black) revealing a lower peak amplitude in cuprizone (red arrow). (g) Population data revealed an approximately twofold reduction in oIPSCs’ peak amplitude (Mann–Whitney test p=0.0172). (h) Steady-state oIPSCs’ amplitude did not reach significance, n.s., Mann–Whitney test p=0.0789.
 
 Impaired phasic PV+ interneuron-mediated inhibition predicts a disrupted γ-rhythm. Experimental and computational studies show that in most cortical areas γ-rhythms are strongly shaped by electrically and synaptically coupled PV+ interneurons, which, by temporally synchronizing firing rates, synaptic inhibitory time constants (≅ 9 ms), and the recurrent excitatory feedback from PNs, give rise to network resonance in the 30–80 Hz bandwidth (Bartos et al., 2002; Cardin et al., 2009; Sohal et al., 2009; Traub et al., 1997; Wang and Buzsáki, 1996). To test the cellular and circuit properties of the γ-rhythm, we examined the extent of evoked γ-modulation by leveraging optogenetic activation of PV+ interneurons with AAV1-hChR2-YFP and introducing a laser fiber into L5 and recording the LFP (Figure 5a). Evoking brief pulses of blue light (1 ms at a low gamma frequency of 30 Hz) showed that local circuit currents were modulated and highly phase-locked in slices from control mice (bandpass filter 25 and 40 Hz, Figure 5b and c, Figure 5—figure supplement 1). In striking contrast, no modulation or entrainment was observed in cuprizone-treated mice, neither when using high laser power (up to 6.5 mW, Figure 5b–e, Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig5-v2.jpg)
+
+**Figure 5.:** (a) Schematic for chronic local field potential (LFP) recordings and in vivo optogenetic stimulation in freely moving PV-Cre; Ai14 mice. (b) Time frequency plot showing low gamma frequency (γ) entrainment (40 blue light pulses of 1 ms duration at 30 Hz) in control but not in cuprizone mice. (c) Raw LFP (top) and bandpass-filtered trace (25–40 Hz, bottom) from control and cuprizone during low-γ entrainment. (i) Population data of γ power with increasing laser power reveals impaired γ in cuprizone-treated mice. (d) Myelin-deficient mice low-γ band entrainment to optogenetic stimuli (two-way ANOVA followed by Šidák’s multiple comparisons cuprizone vs. control, 0 mW, p>0.999; 1.5 mW, p=0.979; 4.5 mW, *p=0.0221, 6.5 mW, **p=0.0046). (e) Data are shown as mean ± SEM with gray lines individual cells, gray lines individual mice. n.s., not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Raw local field potential (LFP) and low gamma (γ) 25–40 Hz bandpass-filtered trace during 30 Hz blue light stimulation in control (black) and cuprizone (red) mice. Blue light shifted the phase or extended the γ cycle in control mice. (b) Averaged power spectral density content of low-γ entrainment during light on (blue lines) or off (black lines). (c) 30 Hz blue light stimulation (blue lines) showed a lack of γ band entrainment in cortex of demyelinated mice (closed triangles) in comparison to the control mice (closed squares). Two-way ANOVA frequency × treatment p=0.0002, Šidák’s multiple comparisons tests; γ, ****p<0.0001; all other bands p>0.910. Data shown as mean ± SEM.
+
 Could the diminished PV+ BC activity cause the emergence of θ rhythm and interictal spikes during quiet behavioral states of wakefulness? To test the direct contribution of PV+ BCs, we activated ChR2 for 1 s duration pulses in PV-Cre; Ai14 mice to generate tonic GABA release (Figure 6a). In cuprizone-treated mice, we found that optically driving PV+ interneurons normalized the LFP power in the θ band to control levels, without affecting δ, β, and γ rhythms (two-way ANOVA treatment × light p=0.0124, Šidák’s multiple comparisons tests in cuprizone, light on vs. off; for δ, p=0.9975; θ, p=0.0076; β, p=0.9481; γ, p=0.9998, Figure 6a–c, Source data 1). Furthermore, activation of blue light significantly reduced the frequency of interictal epileptic discharge frequency (p=0.0089, Figure 6d and e, Figure 6—video 1). The normalization of cortical rhythms by elevating sustained PV+-mediated activity suggests that GABAA receptors are insufficiently activated in the demyelinated cortex. Finally, to directly examine the role of GABAA receptors agonism in dampening global interictal spikes we administered a nonsedative dose of diazepam (2 mg/kg i.p.), an allosteric modulator of postsynaptic GABAA receptors, in cuprizone-treated mice (7-week treatment). The results showed that diazepam significantly suppressed the interictal epileptiform discharges in cuprizone mice, indicating a prominent role of GABA in the deficits of circuit excitability (Figure 6f, Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig6-v2.jpg)
+
+**Figure 6.:** (a) Schematic drawing for chronic local field potential (LFP) and optogenetic stimulation in freely moving mice. A 1 s blue light pulse with 100 ms off periods activated PV+ interneurons. Blue light was switched on during high interictal activity (>10 spikes/min). (b) Power spectral content collected from 2 s epoch windows in control (black) and cuprizone (red) before (left) and during 3 min (right) optogenetic activation of PV+ interneurons. Insets: raw LFP signals (top) and θ content (bottom) in control (black) and cuprizone (red) condition. (c) Population data showing optogenetic activation of PV+ cells attenuated the amplified θ frequency in cuprizone mice to control levels (Šidák’s multiple comparisons test in cuprizone, light on vs. light off for θ, **p=0.0076). (d) Example time frequency plot (top) and raw LFP traces (below) showing suppression of interictal spikes during light on conditions. See also Figure 6—video 1. (e) Population data of transient optogenetic suppression of the interictal activity in 8-week cuprizone-treated mice (one-way ANOVA p=0.0165, Tukey’s multiple comparisons tests; off vs. on, **p=0.0089; on vs. off, p=0.0539; off vs. off, p=0.928). (f) 2 mg/kg i.p. injection of diazepam in cuprizone-treated mice reduces interictal rate for at least 10 hr (two-tailed Student’s t-test *p=0.024). Data shown as mean ± SEM and gray lines individual mice.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73827/elife-73827-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) The GABAA receptor agonist, diazepam, was injected i.p. at 7 weeks of cuprizone treatment, and local field potential (LFP) recordings performed 10 hr post diazepam injection. (b) Example time frequency plot before (left) and after diazepam injection (right) showing suppression of interictal epileptiform discharges in cuprizone-treated mice.
 
 ## Discussion
 
@@ -68,43 +124,291 @@ In this study, we identified that the cellular microarchitecture of myelination 
 
 A major limitation of the experimental toolbox available to experimentally study myelination is the lack of axon- or cell-type selectivity. Whether amplified theta- and abolished gamma-frequency oscillations are the consequence of PV+ axon demyelination, the loss of excitatory axon myelination or the combination thereof, remains to be further examined when more refined genetic or molecular methods become available to interrogate oligodendroglial myelination of specific cell types. In the absence of such strategies, however, our in vivo experiments optogenetically driving selectively PV+ interneurons or activating GABAA receptors (Figure 5) uncover important converging evidence for a role of interneurons in the amplification and synchronization of slow oscillations and epileptic discharges. Interestingly, while tonically driving action potential firing in myelin-deficient PV+ interneurons with optogenetic activation was able to rescue theta hypersynchrony, using a 30 Hz stimulation regime failed to entrain the LFP in the low-gamma frequency. This may suggest that for gamma, precisely timed spike generation of PV+ BCs alone is insufficient and may require in addition synchronized inhibitory synaptic transmission, which is selectively reduced in demyelinated PV+ BCs. Alternatively, a specific circuit connectivity or presynaptic GABA release dynamics may be lost in cuprizone-treated mice. In future studies, the role of myelination could be further examined by exploring whether remyelination restores the ability of PV+ interneurons to modulate gamma oscillations.
 
-## Myelination of PV+ axons determines synapse assembly and maintenance
+### Myelination of PV+ axons determines synapse assembly and maintenance
 
 The requirement of myelination of PV+ BCs to generate gamma rhythms is surprising in view of its sparse distribution in patches of ~25 µm across <5% of the total axon length (Micheva et al., 2021; Micheva et al., 2016; Stedehouder et al., 2019; Figure 2, Figure 2—figure supplement 1). The sparseness of interneuron myelination previously raised the question whether myelin speeds conduction velocity in these axon types (Micheva et al., 2016; Stedehouder et al., 2019; Stedehouder and Kushner, 2017). In a genetic mouse model with aberrant myelin patterns along fast-spiking interneuron axons, the inferred conduction velocity was reduced (Benamer et al., 2020). In contrast, we found that the average uIPSC latency (~800 µs) in completely demyelinated axons was normal and well within the range of previous paired recordings between myelinated PV+ BC and PNs (700–900 µs, Miles, 1990; Rossignol et al., 2013). Assuming a typical axonal path length of ~200 µm between the AIS and presynaptic terminals connected with a PN, combined with an ~250 µs delay for transmitter release, the calculated conduction velocity would be 0.4 m/s, consistent with optically recorded velocities in these axons (~0.5 m/s, Casale et al., 2015). Our paired recordings, made near physiological temperature (34–36°C), may have had a limited resolution to detect temporal differences and are not excluding changes in the order of microseconds. To study submillicecond changes, it may be necessary to employ simultaneous somatic and axonal whole-cell recording (Hu and Jonas, 2014) and/or high-resolution anatomical analysis of myelin along the axon path, which recently showed a small albeit positive correlation between percentage of myelination and conduction velocity (Micheva et al., 2021). Furthermore, conduction velocity tuning by myelination of GABAergic axons may become more readily apparent for long-range projections. Another constraint of the present study is the lack of information on the nodes of Ranvier along demyelinated PV+ BC axons. Aberrant interneuron myelin development, causing myelination of branch points, impairs the formation of nodes of Ranvier (Benamer et al., 2020). Reorganization of nodal voltage-gated ion channel clustering also occurs with the loss of myelin or oligodendroglial-secreting factors causing deficits in action potential propagation (Freeman et al., 2015; Lubetzki et al., 2020). How PV+ BC interneuron myelin loss changes the nodal ion channel distribution remains to be examined.
 
 Converging evidence from the two distinct models (shiverer and cuprizone) showed that interneuron myelination critically determines PV+ release site number, dynamics, and connection probability (Figure 3, Figure 3—figure supplement 3), concordant with the observed synapse loss in Purkinje axons of the les rat (Barron et al., 2018). The molecular mechanisms how compact myelination of proximal axonal segments establishes and maintains GABAergic terminals in the higher-order distal axon collaterals are not known but may relate to its role in supplying metabolites to the axon (Fünfschilling et al., 2012). The PV+ interneuron myelin sheath contains high levels of noncompact 2′,3′-cyclic nucleotide 3′-phosphodiesterase (CNP) protein (Micheva et al., 2018; Micheva et al., 2016), which is part of the inner cytoplasmic inner mesaxon (Edgar et al., 2009). In the absence of inner cytoplasmic loops of oligodendroglial myelin the interneuron axons may lack sufficient trophic support to maintain GABAergic presynaptic terminals. Another possibility is pruning of the presynaptic terminals by microglia (Chen et al., 2014; Favuzzi et al., 2021; Ramaglia et al., 2021). Microglia become increasingly activated during sub-demyelinating stages within the first week of cuprizone treatment (Caprariello et al., 2018; Skripuletz et al., 2013) and in aged Mbp+/– mice (Poggi et al., 2016). In future studies, it needs to be examined whether attenuation of microglia activation could protect against PV+ synapse loss and interictal epileptiform discharges.
 
-## Implications for cognitive impairments in gray matter diseases
+### Implications for cognitive impairments in gray matter diseases
 
 The identification of a cellular mechanism for interictal spikes may shed light on the role of PV+ axon myelination in cognitive impairments in MS (Benedict et al., 2020) and possibly other neurological disorders. In preclinical models of epilepsy and epilepsy patients, interictal spikes have been closely linked to disruptions of the normal physiological oscillatory dynamics such as ripples required to encode and retrieve memories (Cohen et al., 2002; Henin et al., 2021; Kleen et al., 2013; Kleen et al., 2010). Interictal epileptic discharges are also observed in other neurodegenerative diseases, including Alzheimer (Lam et al., 2017). Notably, reduced gray matter myelination and oligodendroglia disruption are reported in multiple epilepsy models and recently in Alzheimer (Chen et al., 2021; Drenthen et al., 2020). Therefore, the cellular and circuit functions controlled by PV+ interneurons may represent a common mechanism for memory impairments in neurological disease encompassing myelin pathology. In support of this idea, neuropathological studies in MS show a specific loss of PV+ interneuron synapses in both cortex and hippocampus (Ramaglia et al., 2021; Zoupi et al., 2021). In MS patients, increased connectivity and synchronization in delta and theta band rhythms during resting state or task-related behavior have been reported (Schoonheim et al., 2013; Tewarie et al., 2014) and low GABA levels in sensorimotor and hippocampal areas are correlated with impairments of information processing speed and memory (Cawley et al., 2015; Gao et al., 2018). Taken together with the present work, promoting PV+ interneuron myelination, and thereby strengthening fast inhibition, may provide important new therapeutic avenues to improve cognition.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male/female)</td>
+      <td>C57BL6</td>
+      <td>Janvier Labs</td>
+      <td>Cat# 2670020; RRID:MGI:2670020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male/female)</td>
+      <td>B6;129P2-Pvalbtm1(cre)Arbr/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock no: 008069;RRID:IMSR_JAX:008069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male/female)</td>
+      <td>B6;129S6-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock no: 007908;RRID:IMSR_JAX:007908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male/female)</td>
+      <td>C3Fe.SWV-Mbpshi/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock no: 001428;RRID:IMSR_JAX:001428</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct(M. musculus)</td>
+      <td>pAAV-EF1a-double-floxed-hChR2(H134)-EYFP-WPRE-HGHpA</td>
+      <td>Addgene.org</td>
+      <td>#20298;RRID:Addgene_20298</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal, anti-MBP</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-13564; RRID:AB_675707</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal, anti-PV</td>
+      <td>Swant</td>
+      <td>Cat# 235;RRID:AB_10000343</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal, anti-syt2</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 105223; RRID:AB_10894084</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal, anti-ßIV-spectrin</td>
+      <td>M.Ransband (BCM)</td>
+      <td>N/A</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Alexa 488-streptavidin</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# S32354;RRID:AB_2315383</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Alexa 633-streptavidin</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# S21375;RRID:AB_2313500</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bis(cyclohexanone)oxaldihydrazone</td>
+      <td>Merck</td>
+      <td>Cat# C9012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diazepam</td>
+      <td>CentrafarmNederland B.V</td>
+      <td>Cat# RVG56691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biocytin</td>
+      <td>Sigma</td>
+      <td>Cat# B4261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5</td>
+      <td>HelloBio</td>
+      <td>Cat# 0225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gabazine</td>
+      <td>Sigma</td>
+      <td>Cat# S106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNQX</td>
+      <td>HelloBio</td>
+      <td>Cat# HB0205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin (TTX) citrate</td>
+      <td>Tocris</td>
+      <td>Cat# 1069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neurolucida 360Neurolucida Explorer</td>
+      <td>MBF Bioscience</td>
+      <td>V2018.02;RRID:SCR_001775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Synaptic puncta quantification</td>
+      <td>FIJI (ImageJ)</td>
+      <td>V2.0, V.2.0.0-rc-65/1.5w;RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neuroarchiver tool</td>
+      <td>Open Source Instruments; Dubey et al., 2018</td>
+      <td>LWDAQ_8.5.29</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor pro 8</td>
+      <td>WaveMetrics</td>
+      <td>V8.04RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AxoGraph</td>
+      <td>AxoGraph</td>
+      <td>RRID:SCR_014284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad</td>
+      <td>Prism 8 and 9</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SP8 X (DM6000 CFS)</td>
+      <td>Leica application Suite</td>
+      <td>AF v3.2.1.9702;RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Electrode (90% Pt, 10% Ir)</td>
+      <td>Science Products</td>
+      <td>Cat# 101R-5T</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Optical fiber</td>
+      <td>Thorlabs</td>
+      <td>Cat# FP200URT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ceramic ferrule</td>
+      <td>Thorlabs</td>
+      <td>Cat# CFLC230-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fiber coupled blue laser</td>
+      <td>Shanghai Laser &amp; Optics Co.</td>
+      <td>Cat# 473 nm, DPSS Laser with fiber coupled (T3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cyclops LED driver</td>
+      <td>Open-ephys.org</td>
+      <td>Cat# Cyclops LED driver 3.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Patch-clamp amplifier</td>
+      <td>Dagan Corporates</td>
+      <td>BVC-700A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Patch-clamp amplifier</td>
+      <td>Molecular device</td>
+      <td>Axon Axopatch 200B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>In vivo Multi Channel Systems (Portable-ME-systems) amplifier</td>
+      <td>Multi Channel Systems</td>
+      <td>ME16-FAO-uPA</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 We crossed PvalbCre mice (B6;129P2-Pvalbtm1(cre)Arbr/J, stock no: 008069, Jackson Laboratory, RRID:IMSR_JAX:008069) with the Ai14 Cre reporter line B6;129S6-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J (stock no: 007908, Jackson Laboratory, RRID:IMSR_JAX:007908). For other experiments, we used C57BL/6 mice (Janvier Labs, Saint-Berthevin Cedex, France, RRID:MGI:2670020). Shiverer mice were obtained from Jackson (C3Fe.SWV-Mbpshi/J, stock no: 001428, RRID:IMSR_JAX:001428) and backcrossed with C57BL/6 mice for >10 generations. All mice were kept on a 12:12 hr light-dark cycle (lights on at 07:00, lights off at 19:00) with ad libitum food and water. For cuprizone treatment, either PV-Cre; Ai14 or C57BL/6 male or female mice, from 7 to 9 weeks of age, were fed ad libitum with normal chow food (control group) or were provided 0.2% (w/w) cuprizone (Bis(cyclohexanone)oxaldihydrazone, C9012, Merck) added either to grinded powder food or to freshly prepared food pellets (cuprizone group). Cuprizone-containing food was freshly prepared during every second or third day for the entire duration of the treatment (6–9 weeks). The average maximum weight loss during cuprizone feeding was ~11% (n = 31). All animal experiments were done in compliance with the European Communities Council Directive 2010/63/EU effective from 1 January 2013. The experimental design and ethics were evaluated and approved by the national committee of animal experiments (CCD, application number AVD 80100 2017 2426). The animal experimental protocols were designed to minimize suffering and approved and monitored by the animal welfare body (IvD, protocol numbers NIN17.21.04, NIN18.21.02, NIN18.21.05, NIN19.21.04, and NIN20.21.02) of the Royal Netherlands Academy of Arts and Science (KNAW).
 
-## In vitro electrophysiology
+### In vitro electrophysiology
 
 Mice were briefly anesthetized with 3% isoflurane and decapitated or received a terminal dose of pentobarbital natrium (5 mg/kg) and were transcardially perfused with ice-cold artificial CSF (aCSF) of the composition (in mM): 125 NaCl, 3 KCl, 25 glucose, 25 NaHCO3, 1.25 Na2H2PO4, 1 CaCl2, 6 MgCl2, 1 kynurenic acid, saturated with 95% O2 and 5% CO2, pH 7.4. After decapitation, the brain was quickly removed from the skull and parasagittal sections (300 or 400 µm) containing the S1 cut in ice-cold aCSF (as above) using a vibratome (1200S, Leica Microsystems). After a recovery period for 30 min at 35°C, brain slices were stored at room temperature. For patch-clamp recordings, slices were transferred to an upright microscope (BX51WI, Olympus Nederland) equipped with oblique illumination optics (WI-OBCD; numerical aperture, 0.8). The microscope bath was perfused with oxygenated (95% O2, 5% CO2) aCSF consisting of the following (in mM): 125 NaCl, 3 KCl, 25 D-glucose, 25 NaHCO3, 1.25 Na2H2PO4, 2 CaCl2, and 1 MgCl2. L5 PNs were identified by their typical large triangular shape in the infragranular layers and in slices from PV-Cre; Ai14 mice the PV+ interneurons expressing tdTomato were identified using X-Cite series 120Q (Excelitas) with a bandpass filter (excitation maximum 554 nm, emission maximum 581 nm). Somatic whole-cell current-clamp recordings were made with a bridge current-clamp amplifier (BVC-700A, Dagan Corporation, USA) using patch pipettes (4–6 MΩ) filled with a solution containing (in mM): 130 K-gluconate, 10 KCl, 4 Mg-ATP, 0.3 Na2-GTP, 10 HEPES, and 10 Na2-phosphocreatine, pH 7.4, adjusted with KOH, 280 mOsmol/kg, to which 10 mg/mL biocytin was added. Voltage was analog low-pass filtered at 10 kHz (Bessel) and digitally sampled at 50–100 kHz using an analog-to-digital converter (ITC-18, HEKA Electronic) and data acquisition software AxoGraph X (v.1.7.2, AxoGraph Scientific, RRID:SCR_014284). The access resistance was typically <20 MΩ and fully compensated for bridge balance and pipette capacitance. All reported membrane potentials were corrected for experimentally determined junction potential of –14 mV. Analysis for the electrophysiological properties includes PV+ interneuron recordings from cells in normal ACSF and in the presence of CNQX and d-AP5 with high chloride intracellular solution (see below).
 
-## mIPSC and mEPSC recordings
+### mIPSC and mEPSC recordings
 
 Whole-cell voltage-clamp recordings were made with an Axopatch 200B amplifier (Molecular Devices). Patch pipettes with a tip resistance of 3–5 MΩ were pulled from thins wall borosilicate glass. During recording, a holding potential of –74 mV was used. Both the slow- and fast pipette capacitance compensation were applied, and series resistance compensated to ~80–90%. Patch pipettes were filled with high chloride solution containing (in mM) 70 K-gluconate, 70 KCl, 0.5 EGTA, 10 HEPES, 4 MgATP, 4 K-phosphocreatine, 0.4 GTP, pH 7.3 adjusted with KOH, 285 mOsmol/kg and IPSCs isolated by the presence of the glutamate receptor blockers 6-cyano-7-nitroquinoxaline-2,3-dione (CNQX, 20 µM), d-2-amino-5-phosphonovaleric acid (d-AP5, 50 µM) and the sodium (Na+) channel blocker tetrodotoxin (TTX, 1 µM Tocris). Individual traces (5 s duration) were filtered with a high-pass filter of 0.2 Hz and decimated in AxoGraph software (RRID:SCR_014284). Chart recordings of mIPSCs were analyzed with a representative 30 ms IPSC template using the automatic event detection tool of AxoGraph. Detected events were aligned and averaged for further analysis of inter-event intervals (frequency) and peak amplitude. For mEPSC recordings from PV+ interneurons, we filled patch pipettes with a solution containing (in mM) 130 K-gluconate, 10 KCl, 4 Mg- ATP, 0.3 Na2-GTP, 10 HEPES, and 10 Na2-phosphocreatine, pH 7.4, adjusted with KOH, 280 mOsmol/kg and both gabazine (4 µM) and TTX (1 μM) were added to the bath solution. The mEPSCs were analyzed using events detection tool in AxoGraph. The recorded signals were bandpass filter (0.1 Hz to 1 kHz) and recordings analyzed with a representative 30 ms EPSC template, after which selected EPSCs aligned and averaged for further analysis of inter-event intervals (frequency) and peak amplitude.
 
-## uIPSC recording and analysis
+### uIPSC recording and analysis
 
 PV+ interneurons (visually identified in PV-Cre; Ai14 mice based on tdTomato fluorescence expression) were targeted for whole-cell current-clamp recording within a radius of 50 µm from the edge of the L5 soma recorded in voltage-clamp configuration. APs in PV+ interneurons were evoked with a brief current injection (1–3 ms duration) and uIPSCs recorded in the L5 PN from a holding potential of –74 mV. Only responses with 2× S.D. of baseline noise were considered being connected. Both fast and slow capacitances were fully compensated, series resistance compensation was applied to ~80–90%, and the current and voltage traces acquired at 50 kHz. For stable recordings with >50 uIPSCs, the episodes were temporally aligned to the AP and the uIPSCs were fit with a multiexponential function in Igor Pro. The curve fitting detected the baseline, uIPSC onset, rise time, peak amplitude, and decay time and was manually monitored. Fits were either accepted or rejected (e.g., when artifacts were present) and the number of uIPSC failures was noted for each recording.
 
-## In vitro optogenetics
+### In vitro optogenetics
 
 50 nL of AAV1 particles (titer 1 × 1012 cfu/mL) produced from pAAV-EF1a-double-floxed-hChR2(H134)-EYFP-WPRE-HGHpA (Addgene.org #20298, RRID:Addgene_20298) was injected into L5 of S1 (coordinates from bregma; AP 0.15 mm, ML 0.30 mm, and DL 0.75 mm) of 6–9-week-old PV-Cre; Ai14 mice. About 7 days after the injection, a subset of mice was placed on 0.2% cuprizone diet for 8–9 weeks. PV+ interneurons expressing hChR2 were identified using td-tom and YFP co-expression. Whole-cell voltage-clamp recordings were made from L5 PNs and oIPSCs were evoked with a X-cite 120Q, fluorescent lamp using filter BA460-510 (Olympus) in the presence of CNQX (50 µM) and dAP5 (20 µM) in the bath solution. The oIPSCs were evoked by illumination of large field with five light pulses of each 1 ms and 100 ms apart. Peak amplitude and area under the curve (charge) of oIPSC were quantified using AxoGraph. Only the first pulse was used for the quantification.
 
-## In vivo electrophysiology and automated event detection
+### In vivo electrophysiology and automated event detection
 
 Chronic ECoG and LFP recordings were performed using in-house-made electrodes of platinum-iridium wire (101R-5T, 90% Pt, 10% Ir, complete diameter of 200 µm with 127 µm metal diameter, Science Products). The perfluoroalkoxy alkanes (PFA)-coated wire platinum-iridium wire was only exposed at the tip to record the LFP. For placement of the recording electrode, animals were anesthetized with isoflurane (3%, flow rate 0.8 L/min with maintenance 1.5–1.8%, flow rate 0.6 L/min). A 1 cm midline sagittal incision was made starting above the interaural line and extending along the neck to create a pocket for subcutaneous placement of the transmitter along the dorsal flank of the animal. The recording electrodes in each hemisphere (stereotaxic coordinates relative to bregma: S1; –0.15 mm anterior and ±0.30 mm lateral; for LFP; ventral 0.75 mm, V1; 0.40 mm anterior and ±0.30 mm lateral; for LFP; ventral 0.75 mm) and ground electrode (6 mm posterior and 1 mm lateral) were implanted subdurally through small holes drilled in the skull, held in place with stainless steel screws (A2-70, Jeveka), and subsequently sealed with dental cement. Mice were provided with Metachem analgesic (0.1 mg per kg) after surgery and allowed to recover for 4–7 days before recordings. To obtain multiple hours recordings of ECoG-LFP at multiple weeks, mice remained in their home cage during an overnight recording session. ECoG-LFP data were collected using a ME2100-system (Multi Channel Systems); ECoG-LFP data were acquired at a sampling rate of 2 kHz using the multi-channel experimenter software (Multi Channel Systems). An additional 0.1–200 Hz digital bandpass filter was applied before data analysis. Large noise signals, due to excessive locomotion or grooming, were manually removed from the data. The ECoG and LFP recordings were processed offline with the Neuroarchiver tool (Open Source Instruments, http://www.opensourceinstruments.com/Electronics/A3018/Seizure_Detection.html). To detect interictal spikes, an event detection library was built as described previously (Dubey et al., 2018). During the initial learning phase of the library, the observer, if needed, overruled the identity of each new event by the algorithm until automated detection reached a false positive rate <1%. Subsequently, the ECoG-LFP data were detected by using a single library across all ECoG-LFP recordings. For determining the interictal rate, only S1 LFP signals were used for quantification.
 
-## In vivo optogenetics with simultaneous ECoG-LFP recordings
+### In vivo optogenetics with simultaneous ECoG-LFP recordings
 
 50 nL of AAV1 particles (titer 1 × 1012 cfu/mL) produced from pAAV-EF1a-double-floxed-hChR2(H134)-EYFP-WPRE-HGHpA (Addgene #20298, RRID:Addgene_20298) was injected unilaterally into the L5 of S1 (coordinates from bregma; AP 0.15 mm, ML 0.30 mm, and DL 0.75 mm) of 6–9-week-old PV-Cre; Ai14 mice. ECoG-LFP electrode (stereotaxic coordinates relative to bregma: –0.15 mm anterior and ±0.30 mm lateral; for LFP; ventral 0.75 mm) and ground electrode (6 mm posterior and 1 mm lateral) were implanted through small holes drilled in the skull, held in place with stainless steel screws (A2-70, Jeveka). Through the drilled hole, a polished multimode optical fiber (FP200URT, Thorlabs) held in ceramic ferrule (CFLC230-10, Thorlabs) was driven into layer 5 and ~50 µm above virus injection site. Once optical fiber and electrode were correctly placed, the drilled hole subsequently sealed with dental cement. A blue fiber-coupled laser (473 nm, DPSS Laser T3, Shanghai Laser & Optics Co.) was used to activate the ChR2. Cyclops LED Driver (Open Ephys), together with customized program, was used to design the on and off state of the laser. The driving signal from LED driver was also recorded at one of the empty channels in multichannel systems. This signal was used to estimate the blue light on or off condition. For gamma entrainment in S1, 40 pulses of blue light were flashed with 1 ms on and 28 ms off pulse.
 
@@ -112,26 +416,26 @@ To inhibit interictal spikes, 300 pulses of blue light were flashed with 1 s on 
 
 For pharmacology experiment, continuous LFP recordings of >10–12 hr duration from the circadian quiet phase (from 19:00 to 09:00) of six cuprizone mice (7-week treatment) and three control mice were used for the analysis. To activate GABAA receptors in cuprizone-treated mice, we used diazepam (Centrafarm Nederland B.V) prepared in a 10% solution of (2-hydroxypropyl)-β-cyclo-dextrin (Sigma-Aldrich). A nonsedative dose of 2 mg/kg diazepam was injected intraperitoneally, and data was acquired for a period of 10 hr, starting 15 min after injection of drug in control and cuprizone mice. The automated event detection library (Figure 1—figure supplement 1) was used to determine the event frequency before and after diazepam injection.
 
-## In vivo power spectrum analysis
+### In vivo power spectrum analysis
 
 Power spectral density (PSD) analysis was done using multitaper PSD toolbox from Igor Pro 8.0 (RRID:SCR_000325). The absence of high-voltage activity in the EMG electrode was classified as quiet wakefulness (Figure 1—figure supplement 1, Figure 1—video 1). For PSD analysis during interictal activity, a 2 s window was used to extract LFP signal epochs. Epochs from control animals were selected comparing the EMG activity with cuprizone EMG activity. The interictal activity itself was excluded from the analysis. Selected LFP epochs were bandpass filtered between different frequency bands; delta, δ (0.5–3 Hz), theta, θ (4–12 Hz), beta, β (12.5–25 Hz), and gamma, γ (30–80 Hz). Multitaper PSD function (Igor Pro 8.0) was applied to the filtered data to plot the power distribution within each frequency band. Area under the curve was measured for each frequency band to compare power density between the control and cuprizone groups.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 L5 PNs were filled with 10 mg/mL biocytin during whole-cell patch-clamp recording for at least 30 min. Slices were fixed for 30 min with 4% paraformaldehyde (PFA) and stored in 0.1 M phosphate buffered saline (PBS; pH 7.4) at 4°C. Fixed 400 μm slices were embedded in 20% gelatin (Sigma-Aldrich) and then sectioned with a Vibratome (VT1000 S, Leica Microsystems) at 80 μm. Sections were preincubated with blocking 0.1 M PBS containing 5% normal goat serum (NGS), 5% bovine serum albumin (BSA; Sigma-Aldrich), and 0.3% Triton-X (Sigma) during 2 hr at 4°C to make the membrane permeable. For biocytin-labeled cells, streptavidin biotin-binding protein (Streptavidin Alexa 488, 1:500, Invitrogen, RRID:AB_2315383) was diluted in 5% BSA with 5% NGS and 0.3% Triton-X overnight at 4°C. Sections including biocytin-filled cells were incubated again overnight at 4°C with primary antibody rabbit anti-ßIV-spectrin (1:200; gift from M.N. Rasband, Baylor College of Medicine), mouse anti-MBP (1:250; Covance), mouse anti-PV (1:1000; Swant, RRID:AB_10000343), rabbit anti-syt2 (1:500, Synaptic Systems, RRID:AB_108 94084) in PBS blocking solution containing 5% BSA with 5% NGS and 0.3% Triton-X. Secondary antibody were used to visualize the immunoreactions: Alexa 488-conjugated goat anti-rabbit (1:500; Invitrogen), Alexa 488 goat anti-mouse (1: 500; Sanbio), Alexa 488 goat anti- guinea pig, Alexa 555 goat anti-mouse (1:500; Invitrogen), Alexa 555 goat anti-rabbit (1:500; Invitrogen), Alexa 633 goat anti-guinea pig (1:500; Invitrogen), Alexa 633 goat anti-mouse (1:500; Invitrogen), and Alexa 633 goat anti-rabbit (1:500; Invitrogen). Finally, sections were mounted on glass slides and cover slipped with Vectashield H1000 fluorescent mounting medium (Vector Laboratories, Peterborough, UK) and sealed.
 
-## Confocal imaging
+### Confocal imaging
 
 A confocal laser-scanning microscope SP8 X (DM6000 CFS; acquisition software, Leica Application Suite AF v3.2.1.9702, RRID:SCR_013673) with a ×63 oil-immersion objective (1.3 NA) and with 1× digital zoom was used to collect images of the labeled L5 neurons and the abovementioned proteins. Alexa fluorescence was imaged using corresponding excitation wavelengths at 15 units of intensity and a z-step of 0.3 μm. Image analysis was performed with Fiji (ImageJ) graphic software (v.2.0.0-rc-65/1.5w, National Institutes of Health, RRID:SCR_002285).
 
-## Synaptic puncta counting and image analysis
+### Synaptic puncta counting and image analysis
 
 The intensity of PV+ or Syt2 immunostaining was measured with a z-axis profile, calculating the mean RGB value for each z-plane. When quantifying the axosomatic puncta, the soma was defined to extend into the apical dendrite maximally ~4 μm and a boundary was drawn around the maximum edges (ROI). For counting apical dendritic puncta, a 200 µm length of apical dendrite was selected as ROI. Linear immunofluorescent signals from ßIV-spectrin were identified as AIS and used as ROI. For all analyses, the RGB images were separated into single-color channels using the color deconvolution plugin in ImageJ. The single-color channel containing boutons signals was subjected to thresholding and particle filter of 0.5 μm. The threshold was saved and applied to all images in the same staining group. The boutons were selected by scanning through the 3D projection of ROI with 0.35 µm z-steps. Trained experimenters identified the boutons either by colocalization of the ROI and PV/Syt2 or direct contact of the two. The boutons were characterized as round spots with a minimal radius of 0.5 μm ranging to almost 2 μm. Three experimenters blinded to the identity of the experiment group independently replicated the results. All image analyses were done in Fiji (ImageJ) graphic software (v.2.0.0-rc-65/1.5w, National Institutes of Health, RRID:SCR_002285).
 
-## PV+ axon reconstruction and quantification
+### PV+ axon reconstruction and quantification
 
 For immunolabeling of biocytin-filled PV+ interneuron, 400 μm electrophysiology slices were incubated overnight at 4°C in PFA. Slices were rinsed with PBS followed by staining using streptavidin 488 (1:300, Jackson) diluted in PBS containing 0.4% Triton-X and 2% normal horse serum (NHS; Gibco) overnight at 4°C. Confocal images of 400-μm-thick slices were taken (see ‘Confocal imaging’) and immediately after thoroughly rinsed with 0.1 M PB and 30% sucrose at 4°C overnight. Next, slices were sectioned into 40 μm thick and preserved in 0.1 M PB before staining. Sections were preincubated in PBS blocking buffer containing 0.5% Triton-X and 10% NHS during 1 hr at room temperature. Sections were stained with primary mouse anti-MBP (1:300, Santa Cruz, RRID:AB_675707), rat anti-syt2 (RRID:AB_10894084) in 0.4% Triton-X, and 2% NHS with PBS solution for 72 hr. Alexa 488-conjugated secondary antibodies (1:300, Invitrogen) were added in PBS containing 0.4% Triton-X and 2% NHS, posterior to washing steps with PBS. Then, sections were mounted on slides and cover slipped with Vectashield H1000 fluorescent mounting medium, sealed, and imaged. Biocytin-labeled PV+ neurons were imaged using upright Zeiss LSM 700 microscope (Carl Zeiss) with ×10 and ×63 oil-immersion objectives (0.45 NA and 1.4 NA, respectively) and 1× digital zoom with step size of 0.5 µm. Alexa 488 and Alexa 647 were imaged using 488 and 639 excitation wavelengths, respectively. The 10× image was taken to determine the exact location of biocytin-filled cells. Subsequently, axonal images were taken at ×63 magnification. Axons were analyzed as described previously (Stedehouder et al., 2019) and identified by their thin diameter, smoothness, obtuse branching processes, and occasionally by the presence of the axon bleb. Images were opened in Neurolucida 360 software (v2018.02, MBF Bioscience, RRID:SCR_001775) for reconstruction using the interactive user-guided trace with the Directional Kernels method. Axon and myelinated segments were analyzed using Neurolucida Explorer (MBF Bioscience, RRID:SCR_001775). Axonal segments were accepted as myelinated when at least one MBP-positive segment colocalized with streptavidin across the internode length.
 
-## Statistics
+### Statistics
 
 All statistical tests were performed using Prism 8 or 9 (GraphPad Software, LLC, San Diego, CA, RRID:SCR_014284). For comparisons of two independent groups, we used two-tailed Mann–Whitney U-tests. For multiple group comparisons, data were initially assessed for normality and subsequently we either used ordinary one-way ANOVA followed by Tukey’s multiple comparisons or two-way ANOVA with repeated measures followed by Šidák’s multiple comparisons tests to correct for multiple comparisons. The level of significance was set to 0.05 for rejecting the null hypothesis. A detailed overview of the statistical analyses performed in this study, together with the numbers used for figures and statistical testing, is provided in Source data 1.

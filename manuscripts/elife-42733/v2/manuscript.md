@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.42733.001 The Sae2/CtIP protein is required for efficient processing of DNA double-strand breaks that initiate homologous recombination in eukaryotic cells. Sae2/CtIP is also important for survival of single-stranded Top1-induced lesions and CtIP is known to associate directly with transcription-associated complexes in mammalian cells. Here we investigate the role of Sae2/CtIP at single-strand lesions in budding yeast and in human cells and find that depletion of Sae2/CtIP promotes the accumulation of stalled RNA polymerase and RNA-DNA hybrids at sites of highly expressed genes. Overexpression of the RNA-DNA helicase Senataxin suppresses DNA damage sensitivity and R-loop accumulation in Sae2/CtIP-deficient cells, and a catalytic mutant of CtIP fails to complement this sensitivity, indicating a role for CtIP nuclease activity in the repair process. Based on this evidence, we propose that R-loop processing by 5’ flap endonucleases is a necessary step in the stabilization and removal of nascent R-loop initiating structures in eukaryotic cells.
+The Sae2/CtIP protein is required for efficient processing of DNA double-strand breaks that initiate homologous recombination in eukaryotic cells. Sae2/CtIP is also important for survival of single-stranded Top1-induced lesions and CtIP is known to associate directly with transcription-associated complexes in mammalian cells. Here we investigate the role of Sae2/CtIP at single-strand lesions in budding yeast and in human cells and find that depletion of Sae2/CtIP promotes the accumulation of stalled RNA polymerase and RNA-DNA hybrids at sites of highly expressed genes. Overexpression of the RNA-DNA helicase Senataxin suppresses DNA damage sensitivity and R-loop accumulation in Sae2/CtIP-deficient cells, and a catalytic mutant of CtIP fails to complement this sensitivity, indicating a role for CtIP nuclease activity in the repair process. Based on this evidence, we propose that R-loop processing by 5’ flap endonucleases is a necessary step in the stabilization and removal of nascent R-loop initiating structures in eukaryotic cells.
 
 ## Introduction
 
@@ -44,9 +44,21 @@ In this work we sought to understand the mechanistic basis of the hypersensitivi
 
 ## Results
 
-## Transcription termination factors rescue DNA damage sensitivity of sae2Δ and mre11 nuclease-deficient yeast cells
+### Transcription termination factors rescue DNA damage sensitivity of sae2Δ and mre11 nuclease-deficient yeast cells
 
 To test for an effect of transcriptional regulation on the sae2Δ phenotype in yeast, we overexpressed several different RNA Pol II-associated factors in the mutant strain. We found that overexpression of the termination factor Sen1 markedly improved survival of the sae2Δ strain to genotoxic agents (Figure 1A). S. cerevisiae SEN1 encodes a helicase that is responsible for unwinding RNA-DNA hybrids and also promotes transcription termination through direct contact with RNA Pol II as well as 3′ end processing of RNA (Porrua and Libri, 2015). We also found that PCF11, a component of the cleavage and polyadenylation complex (CPAC) (Grzechnik et al., 2015; Birse et al., 1998), improves the survival of yeast strains lacking SAE2 when tested for survival of CPT but there was little effect of overexpressing other proteins that also regulate transcription through RNA Pol II including SSU72, RTT103, NRD1, and YSH1 (Figure 1A and Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig1-v2.jpg)
+
+**Figure 1.:** (A) Full-length PCF11, SSU72, RTT103, SEN1, and sen1 mutants G1747D and R302W were expressed from a 2μ plasmid in sae2Δ cells. Fivefold serial dilutions of cells expressing the indicated Sae2 alleles were plated on nonselective media (control) or media containing camptothecin (CPT, 5.0 μg/ml) and grown for 48 hr (control) or 70 hr (CPT). (B) SEN1 was expressed from a 2μ plasmid in sae2Δ, mre11-H125N, and sae2Δ mre11-H125N cells and analyzed for CPT sensitivity as in (A). (C) Wild-type, sae2Δ, sen1-1(G1747D), and sae2Δ sen1-1(G1747D) strains were analyzed as in (A). (D) Wild-type, sae2Δ, Δrnh1 Δrnh201, and sae2Δ Δrnh1 Δrnh201 strains were analyzed as in (A). (E) sae2Δ strains with RNH1 expressed under the control of the GAL promoter were tested for sensitivity to CPT and MMS, on either galactose or glucose plates indicated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Overexpressed genes were expressed from a 2μ plasmid. Fivefold serial dilutions of yeast strains were plated on nonselective media (untreated) or media containing camptothecin or MMS and grown for 48 hr (untreated), 70 hr (CPT) or 90 hr (MMS) as indicated.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Wild-type, Δsae2, Δsae2 + wild type SAE2, and Δsae2 + SEN1 strains containing a galactose-inducible HO endonuclease and an HO cut site in a LEU2 cassette separated from a homologous LEU2 cassette 25 kb away (YMV80) (Vaze et al., 2002b) were tested for survival of growth on galactose by plating 5-fold serial dilutions on either glucose or galactose-containing plates as indicated. Previous work has shown that the survival deficit of Δsae2 strains in this context is due to a reduced level of DNA end resection (Clerici et al., 2005).
 
 The ability of Sen1 overexpression to partially alleviate the toxicity of CPT was also observed with the Mre11 nuclease-deficient mutant mre11-H125N (Moreau et al., 1999) and particularly with the double mutant sae2Δ mre11-H125N (Figure 1B). A mutation located in the conserved helicase domain of Sen1 (G1747D) reduces the ability of Sen1 to overcome CPT toxicity in the sae2Δ strain (Figure 1A) but there was no effect of R302W, a mutation reported to block binding to the Rpb1 subunit of RNA Pol II (Chinchilla et al., 2012; Finkel et al., 2010). The sen1-G1747D mutant is deficient in transcription termination but not in 3′ end processing of RNA (Mischo et al., 2011), thus we conclude that the termination function of the Sen1 enzyme is important for the rescue of CPT sensitivity in sae2Δ strains. In contrast, Sen1 overexpression in sae2Δ cells has no effect on the efficiency of resection (Figure 1—figure supplement 2), as measured in an assay for single-strand annealing (Vaze et al., 2002b) previously shown be dependent on SAE2 due to its importance in DNA end resection (Clerici et al., 2005).
 
@@ -58,11 +70,11 @@ RNA-DNA hybrids form at sites of RNA polymerase pausing and can generate collisi
 
 **Figure 2.:** (A) The survival of wild-type and sae2Δ strains was measured by exposing cells to camptothecin (100 μM for 2 hr) while in G1 phase or S phase and plating cells on rich media. The percentage of viable colonies is shown relative to cells exposed to DMSO only, with three biological replicates (error bars represent standard deviation). (B) The survival of wild-type and sae2Δ strains was measured in the absence or presence of active transcription by exposing S phase cells to thiolutin (2.5 μg/ml for 30 min) or DMSO prior to camptothecin exposure in S phase as in (A). (C) Representative examples of Sae2-ChIP at the FBA1, HIS3, ENO2, and ADH1 genes in sae2Δ cells expressing Flag-Sae2, in S phase with CPT exposure as in (A). Reads from the immunoprecipitated sample are shown (IP) in comparison to control immunoprecipitations performed in the absence of Flag antibody (bead control, BC). (D) Data from Sae2 ChIP-seq was compared to previous data on transcription levels in wild-type yeast cells (Nagalakshmi et al., 2008; Pelechano et al., 2010; Miura et al., 2008)(See Supplementary file 2). The overlap between peaks identified by Sae2 ChIP-seq were compared to the top 10% of transcribed genes (486 genes; excluding rDNA loci) or a randomly chosen set of genes. The randomized set comparison was performed 1000 times. (E) R-loops were quantified at various loci using S9.6 immunoprecipitation in wild-type, sae2Δ, and sae2Δ + SEN1 yeast strains, all with CPT treatment in S phase, as indicated. Levels of DNA sites enriched in S9.6 immunoprecipitations are shown relative to levels in wild-type cells using primers specific for ADH1 (ADH1-2), ENO2 (ENO2-3), and FBA1 (FBA1-2). Error bars represent standard deviation from four biological replicates. * indicates p < 0.05 comparing sae2Δ to wild-type (black asterisks) or comparing sae2Δ to sae2Δ plus SEN1 (red asterisks) using 2-tailed Student's t-tests. S9.6 immunoprecipitations were also performed with RNaseH pretreatment of chromatin, ‘+RNaseH’.
 
-## Sae2 occupancy is elevated at sites of high transcription in S phase cells
+### Sae2 occupancy is elevated at sites of high transcription in S phase cells
 
 To determine if the relationship between SAE2 deletion and transcription is direct, we sought to determine the genomic locations of Sae2 protein binding in yeast. We performed ChIP assays using Flag-tagged Sae2 and analyzed the peaks in relation to the bead control (no antibody). This analysis revealed small peaks of Sae2 enrichment, primarily in the S phase +CPT sample (176 peaks identified by Model-based Analysis of ChIP-Seq v.2 (MACS2) (Zhang et al., 2008) after removal of overlaps with bead control) (Figure 2C, Supplementary file 2). In contrast, only 45 peaks were identified by this criteria in S phase in the absence of DNA damage. The locations of the sites enriched with CPT treatment did not correlate with sites of replication origins but were enriched for highly transcribed genes, measuring the overlap between the binding sites and the top 10% of highly transcribed genes (Nagalakshmi et al., 2008; Pelechano et al., 2010; Miura et al., 2008) in comparison to a randomly selected subset (Figure 2D). The enrichment for Sae2 occupancy at sites of high transcription was only observed with cells in S phase, not with the G1 phase cells, and only in cells treated with CPT. Approximately 20% (9 of 45 Sae2 peaks in S phase and 36 of 176 Sae2 peaks in S phase with CPT) overlap with the sites of RNA-DNA hybrids measured in wild-type yeast cells in a previous study (Wahba et al., 2016).
 
-## sae2Δ cells accumulate R-loops and stalled RNA pol II during CPT exposure
+### sae2Δ cells accumulate R-loops and stalled RNA pol II during CPT exposure
 
 The results from these experiments suggested an involvement of transcription in the DNA damage sensitivity of sae2Δ cells, possibly related to an accumulation of R-loops. To test this hypothesis we used the S9.6 antibody to detect RNA-DNA hybrids (Boguslawski et al., 1986) in chromatin immunoprecipitation experiments comparing wild-type, sae2Δ, and sae2Δ with Sen1 overexpression. We synchronized yeast cells in S phase, exposed the cultures to CPT, and observed approximately 2-fold higher levels of R-loops in sae2Δ cells at the ADH1, ENO2, and FBA1 loci compared to the wild-type strain (Figure 2E). This signal was reduced with Sen1 expression and was sensitive to RNaseH treatment in vitro, consistent with this interpretation that R-loops accumulate at these loci in the absence of Sae2.
 
@@ -70,49 +82,85 @@ If Sae2 is localized to sites of high transcription and its loss is partially al
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig3-v2.jpg)
 
-**Figure 3.:** sae2Δ strains with DNA damage.(A) HTB-tagged Rpb2 (a component of RNA Pol II) levels were measured at various genes during S phase in wild-type and sae2Δ strains with or without CPT exposure and in the presence or absence of overexpressed Sen1, as indicated. Enrichment relative to input DNA is shown, with all values normalized to values obtained with the wild-type strain in the absence of damage. Error bars represent standard error from six immunoprecipitations, two biological samples with three technical replicates of the IP per sample. Approximate locations of primer sets relative to the gene are shown. * indicates p < 0.05, **p < .005, ***p < 0.0005, comparing sae2Δ to wild-type (black asterisks) or comparing sae2Δ to sae2Δ plus SEN1 (red asterisks) using 2-tailed Student's t-tests. (B) HTB-tagged Rpb2 levels were measured at various genes as in (A). SNR5 and SNR13 are non-coding nucleolar RNAs. (C) HTB-tagged Sen1 levels were measured at various genes as in (A) with CPT treatment. Primer sets used were ADH1-2, ENO2-4, and FBA1-3.
+**Figure 3.:** (A) HTB-tagged Rpb2 (a component of RNA Pol II) levels were measured at various genes during S phase in wild-type and sae2Δ strains with or without CPT exposure and in the presence or absence of overexpressed Sen1, as indicated. Enrichment relative to input DNA is shown, with all values normalized to values obtained with the wild-type strain in the absence of damage. Error bars represent standard error from six immunoprecipitations, two biological samples with three technical replicates of the IP per sample. Approximate locations of primer sets relative to the gene are shown. * indicates p < 0.05, **p < .005, ***p < 0.0005, comparing sae2Δ to wild-type (black asterisks) or comparing sae2Δ to sae2Δ plus SEN1 (red asterisks) using 2-tailed Student's t-tests. (B) HTB-tagged Rpb2 levels were measured at various genes as in (A). SNR5 and SNR13 are non-coding nucleolar RNAs. (C) HTB-tagged Sen1 levels were measured at various genes as in (A) with CPT treatment. Primer sets used were ADH1-2, ENO2-4, and FBA1-3.
 
 We also examined RNA Pol II occupancy at other genomic locations where transcription termination has previously been shown to be regulated by Sen1. We do observe CPT-induced RNA Pol II stalling at the PDC1 or NRD1 genes, both known to be dependent on Sen1 (Alzu et al., 2012; Grzechnik et al., 2015), albeit at a lower level than the genes identified in our Sae2 ChIP experiment. Obvious pausing of RNA Pol II in the absence of Sae2 was also induced by CPT at the snoRNA genes SNR13 and SNR5 and the associated gene TRS31 (Figure 3B), which have been shown to be transcribed by RNA Pol II and exhibit termination read-through, altered RNA Pol II occupancy, and R-loops in the absence of Sen1 function (Steinmetz et al., 2006; Grzechnik et al., 2015). Overall, these results are consistent with the hypothesis that Sae2 is present at a subset of highly transcribed genes during CPT exposure, and that high levels of toxic R-loops form at these sites in sae2Δ strains which can be reduced by Sen1.
 
 Based on these results we considered the possibility that Sen1 is dependent on Sae2 for recruitment to sites of stalled transcription. To examine this we used an HTB-tagged Sen1 strain (Creamer et al., 2011) and monitored Sen1 recruitment during CPT treatment at a subset of the genomic locations where we observed Sae2 occupancy and RNA polymerase accumulation. This showed that Sen1 is present at these sites (ADH1, ENO2, FBA1) in the absence of SAE2 (Figure 3C), thus the binding of the helicase to these sites is Sae2-independent.
 
-## The CPT sensitivity of CtIP deficient cells is rescued by over-expression of senataxin or inhibition of transcription
+### The CPT sensitivity of CtIP deficient cells is rescued by over-expression of senataxin or inhibition of transcription
 
 In mammalian cells, the Sae2 ortholog CtIP (Sartori et al., 2007) promotes resection of DNA double-strand breaks in conjunction with the MRN complex in mammalian cells (Makharashvili and Paull, 2015). It was previously shown that depletion of CtIP generates extreme sensitivity to topoisomerase poison induced DNA lesions, particularly CPT-induced DNA damage (Sartori et al., 2007; Huertas and Jackson, 2009; Nakamura et al., 2010; Makharashvili and Paull, 2015). To examine the role of CtIP in human cells we used a U2OS cell line with a stably integrated doxycycline-inducible CtIP shRNA cassette. The cells were complemented with either shRNA-resistant wild-type eGFP-CtIP, or with vector only (Figure 4—figure supplement 1). As expected, depletion of CtIP greatly diminishes cell survival in the presence of CPT, and re-expression of wild-type CtIP rescues the CPT sensitivity (Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig4-v2.jpg)
+
+**Figure 4.:** (A) CtIP-depleted U2OS cells complemented with vector only or constructs overexpressing eGFP-CtIP, PCF11, or Senataxin (C-terminus) as indicated were exposed to increasing concentrations of CPT (1 hr). Cell viability was determined by clonogenic survival assay in comparison to untreated cells. Results are shown from three biological replicates and error bars represent S. D. (B) Wild-type or CtIP-depleted U2OS cells were pre-treated with DRB (20 μM) prior to CPT exposure and cell viability was determined as in (A). (C) Live cell imaging was performed with U2OS cells stably expressing RNaseHD10R-E48R-mCherry. The circle indicates the site of laser damage. (D) CtIP-depleted U2OS cells were complemented with eGFP-CtIP, PCF11, or Senataxin (C-terminus) as indicated and RNaseHD10R-E48R-mCherry accumulation at the laser damage was quantified. The average of 4 cells is shown and error bars represent S. E. M. (E) RNaseHD10R-E48R-mCherry accumulation at laser damage sites was measured in CtIP-depleted U2OS cells complemented with wild-type or nuclease deficient (‘NA/HA’) eGFP-CtIP as in (D); n > 12, error bars represent S.E.M. (F) Wild-type or CtIP-depleted U2OS cells were pre-treated with DRB (20 μM) prior to measurement of RNaseHD10R-E48R-mCherry accumulation at laser damage sites as in (D); n > 5; error bars represent S.E.M. (G) RNaseHD10R-E48R-mCherry accumulation at laser damage sites was measured in wild-type or CtIP-depleted, XPG-depleted, or Senataxin (SETX)-depleted U2OS cells as in (D); n = 5; error bars represent S.E.M. (H) RNaseHD10R-E48R-mCherry accumulation at laser damage sites was measured in wild-type, CtIP-depleted, XPG-depleted, or both CtIP/XPG-depleted U2OS cells as in (D); n > 8, error bars represent S.E.M. Results shown are representative of several experiments performed.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) CtIP depletion and the expression of eGFP-tagged wild-type CtIP was monitored by western blot with antibody directed against CtIP (Active Motif, #61141). (B) CtIP depletion with shRNA was performed in U2OS cells and validated by western blot with antibody specific for human CtIP. The C-terminal domain of Senataxin (a.a. 1851–2677) with a V5 tag was induced from a tetracycline-induced promoter in a stably integrated transgene and verified with antibody directed against V5. (C) Cell viability assays were performed in U2OS cells with CtIP depletion and overexpression of Senataxin c-term or full-length PCF11 as indicated. * and *** denote p < 0.05 or 0.001, respectively, using Student's two-tailed T test with comparisons as indicated. (D) Global resection was monitored by western blot for phospho-S4/S8 RPA32 antibody in U2OS cells depleted of shCtIP and complemented with GFP-CtIP, PCF11, or C-term of Senataxin (E) Depletion of CtIP and expression of wild-type (wt), or nuclease deficient (NA/HA) CtIP was monitored by western blot with antibody directed against CtIP. (F) (G) Depletion of Senataxin, CtIP, and XPG were monitored by western blot with antibodies directed against CtIP, XPG (GeneTex, #GTX110609) and Senataxin (Novus Biologicals, #NB100-57542), respectively. (H) CtIP, XPG, or CtIP/XPG-depleted U2OS cells were exposed to increasing concentrations of CPT (1 hr). Cell viability was determined by clonogenic survival assay in comparison to untreated cells. Results are shown from three biological replicates and error bars indicate S.D.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Imaging of RNaseHD10R-E48R-mCherry or mCherry only was performed in U2OS cells with CtIP depletion as indicated. 7 and 3 cells were imaged for RNaseHD10R-E48R-mCherry and mCherry-only conditions, respectively. (B) Quantification of RNA/DNA hybrids using RNaseHD10R-E48R-mCherry or mCherry only, stably expressed in human U2OS cells by FACS in cells with CtIP depletion by shRNA. Cells were evaluated in G1, S, and G2 cell cycle phases as determined by DNA content (FxCycle Far Red Stain). ** and **** denote p < 0.01 or 0.0001, respectively, using Student's two-tailed T test with comparisons as indicated. (C) CtIP and XPG depletion with shRNA was performed in U2OS cells and validated by western blot with antibody specific for human CtIP or XPG, respectively. (D) CtIP depletion with shRNA and expression of wild-type or nuclease-deficient (NA/HA) mutant was performed in U2OS cells and validated by western blot with antibody specific for human CtIP. (E) CtIP and XPG depletion with shRNA was performed in U2OS cells and validated by western blot with antibody specific for human CtIP or XPG, respectively Figure 4—figure supplement 1.
+
 Based on the yeast experiments with SAE2, we hypothesized that overexpression of a helicase that specifically resolves RNA-DNA hybrids should rescue the sensitivity of CtIP-depleted cells to CPT exposure. To test this idea, we complemented the CtIP-depleted cells with the C-terminal domains (a.a. 1851–2677) of human Senataxin, the ortholog of yeast Sen1 that also acts to remove RNA-DNA hybrids and promotes transcription termination (Porrua and Libri, 2015). Remarkably, overexpression of Senataxin in the CtIP-depleted cells completely rescues the CPT sensitivity; however, unlike the yeast experiments, no effect of human PCF11 expression was detected (Figure 4A). Although Senataxin expression rescued the survival of CtIP-depleted cells after CPT exposure, only partial suppression of the defects in growth and DNA end resection were observed (Figure 4—figure supplement 1). These results also suggest that inhibition of transcription could rescue the CPT sensitivity of CtIP-depleted cells. Indeed, we observe that pre-treatment of the cells with DRB, an inhibitor of RNA polymerase II-dependent RNA synthesis, partially rescues the CPT sensitivity caused by CtIP deficiency (Figure 4B). Thus, similar to yeast, reduction of transcription during DNA damage exposure alleviates the effects of CtIP deficiency in human cells, suggesting a conserved mechanism for the repair of Top1 lesions associated with aberrant transcription.
 
-## CtIP deficiency induces accumulation of R-loops at laser micro-irradiation sites
+### CtIP deficiency induces accumulation of R-loops at laser micro-irradiation sites
 
 Similar to topoisomerase-DNA adducts, UVA laser-induced DNA crosslinks present a physical barrier to RNA polymerase that could stall transcription and promote the formation of complex DNA lesions including R-loops. We utilized a live cell assay with lentiviral expression of a bacterial RNaseH catalytic mutant fused to mCherry (RNaseHD10R-E48R-mCherry) that acts as a sensor for R-loops in the genome (Bhatia et al., 2014a). The RNaseHD10R-E48R-mCherry sensor was expressed in the wild-type or CtIP-depleted U2OS cells described above, which were laser micro-irradiated in a small area of the nucleus. Measurement of the accumulation of RNaseHD10R-E48R-mCherry signal over time in these cells showed that the recruitment of RNaseH occurs to a higher intensity in CtIP-depleted cells in comparison to cells complemented with wild-type CtIP, suggesting that higher levels of R-loops are formed in the absence of CtIP (Figure 4C,D). A similar control experiment examining mCherry alone did not show this pattern, confirming the effect is specific to the RNaseH fusion (Figure 4—figure supplement 2). Since we found that overexpression of Senataxin rescues the CPT sensitivity of CtIP-depleted cells, we reasoned that it might also rescue the higher levels of R-loop accumulation in the absence of CtIP. We expressed the C-terminal domains of human Senataxin in the CtIP-depleted cells, and measured the levels of laser-induced R-loops by the live cell imaging method. Here also we found that with Senataxin expression, the recruitment of RNaseH in the CtIP-depleted cells is reduced to the levels observed in cells expressing wild-type CtIP (Figure 4D). Similar to the CPT survival assay results, we found that the PCF11 was not able to rescue CtIP deficiency for reduction of R-loop levels after laser micro-irradiation.
 
 Previous work on CtIP in vitro identified mutants that exhibit lower levels of endonuclease activity on flap structures in comparison to the wild-type protein (Makharashvili et al., 2014; Wang et al., 2014). Here we used the N289A/H290A (NA/HA) mutant allele also containing shRNA-resistant mutations to complement CtIP-depleted cells and found that this mutant failed to reduce the increased RNaseH recruitment to damage sites that occurs in CtIP-deficient cells (Figure 4E, Figure 4—figure supplement 1). Thus the nuclease activity of CtIP appears to play a role in DNA damage recognition and/or processing that helps to prevent R-loop accumulation in human cells.
 
-## The accumulation of R-loops in CtIP deficient cells is dependent on transcription
+### The accumulation of R-loops in CtIP deficient cells is dependent on transcription
 
 To further test the role of active transcription in R-loop accumulation, we pre-treated cells with 5,6-dichloro-1-beta-D-ribofuranosylbenzimidazole (DRB), a RNA polymerase II inhibitor, and found that inhibition of transcription rescues the R-loop accumulation phenotype caused by CtIP deficiency (Figure 4F). As overexpression of Senataxin reduces R-loop formation in CtIP-depleted cells after DNA damage, we expected that depletion of this enzyme would have the opposite effect. Indeed, U2OS cells depleted of Senataxin also exhibit increased R-loop formation after laser-induced DNA damage (Figure 4G, Figure 4—figure supplement 1), consistent with previous observations of DNA damage sensitivity in Senataxin mutant cells (Suraweera et al., 2007; Lavin et al., 2013).
 
 The XPG protein, a component of nucleotide excision repair (Fagbemi et al., 2011), has been shown to be important in the resolution of R-loops (Sollier et al., 2014). As a comparison to CtIP, we also assessed whether the deficiency of this protein would also lead to high R-loop levels after DNA damage. As expected, we observed that the XPG deficient cells accumulate more R-loops after laser induced DNA breaks in comparison to wild-type cells (Figure 4G, S2G). Interestingly, however, concurrent depletion of both CtIP and XPG showed R-loops at levels comparable to wild-type untreated cells (Figure 4H). This result suggests that R-loops do not form efficiently in the absence of both CtIP and XPG, or that they are not recognized efficiently by the RNaseHD10R-E48R-mCherry protein in the absence of both CtIP and XPG.
 
-## R-loop accumulation in CtIP-depleted cells without exogenous damage
+### R-loop accumulation in CtIP-depleted cells without exogenous damage
 
 Considering that deletion of the gene encoding CtIP is cell-lethal even in the absence of exogenous damage (Polato et al., 2014; Chen et al., 2005), we also hypothesized that R-loops might accumulate in CtIP-depleted cells under normal growth conditions. To address this question, we again used the RNaseHD10R-E48R-mCherry sensor but in this case monitored its accumulation in undamaged cells by fluorescence activated cell sorting (FACS), using a modified technique reported previously with a fragment of RNaseH fused to GFP (Bhatia et al., 2014a). Using this procedure, unbound RNaseHD10R-E48R-mCherry protein is removed from the nucleoplasm by detergent extraction, while protein bound to chromatin is retained. This analysis showed a statistically significant increase in RNaseHD10R-E48R-mCherry fluorescence intensity in CtIP-depleted U2OS cells in all cell cycle phases (Figure 5A). Analysis of mCherry alone in these cells showed no differences with CtIP depletion (Figure 4—figure supplement 2). This was also observed in XPG-depleted cells, consistent with the observed effects of both XPG and CtIP with laser damage as shown in Figure 4. Similarly, we examined R-loop accumulation in CtIP-depleted cells complemented with the nuclease-deficient form of CtIP (N289A/H290A, NA/HA, Figure 4—figure supplement 2) and found the levels of RNaseHD10R-E48R-mCherry fluorescence intensity identical to that of CtIP-depleted cells (Figure 5B), suggesting that the nuclease activity of CtIP is necessary for R-loop resolution even in cells that are not exposed to exogenous damage.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig5-v2.jpg)
+
+**Figure 5.:** (A) DNA-RNA hybrids were quantified in undamaged U2OS cells by monitoring chromatin-bound RNaseHD10R-E48R-mCherry by FACS. 10,000 cells were counted in each of 3 biological replicates; error bars represent S.D. * and ** denote p < 0.05 or 0.01, respectively in Student's two-tailed T test with comparisons as indicated. (B) RNA/DNA hybrids were quantified in undamaged, CtIP-depleted U2OS cells complemented with either vector only, eGFP-CtIP(wt), or nuclease-deficient eGFP-CtIP(NA/HA) as in (A). 10,000 cells were counted in each of 3 biological replicates; error bars represent S. D. **** denotes p < 0.0001 using Student's two-tailed T test with comparisons as indicated. (C) S9.6 antibody was used to monitor RNA-DNA hybrids in wild-type or CtIP-depleted U2OS cells. Anti-Nucleolin was used as a marker for the nucleolus. (D) Quantification of S9.6 antibody signal in wild-type, CtIP-depleted, XPG-depleted, Senataxin-depleted, or double CtIP/XPG-depleted U2OS cells as indicated. Signal overlapping the nucleolin signal was excluded from the analysis; n > 50, Error bars represent S.E.M. *, **, and **** denote p < 0.05, 0.01, and 0.0001, respectively, using Student's two-tailed T test with comparisons as indicated. (E) Quantification of S9.6 antibody signal in wild-type, CtIP-depleted, or CtIP-depleted plus RNaseH overexpression in U2OS cells as in (D). (F) Wild-type or CtIP-depleted U2OS cells were exposed to CPT (5 µM) or were untreated before harvesting of cellular mRNA. Analysis of transcripts by RNA-seq and hierarchical clustering of transcripts from 21,412 genes is shown as a heat map (red for over-expressed, black for unchanged expression, and green for under-expressed genes) in comparison to wild-type undamaged cells (see Supplementary file 3). (G) Statistical comparisons of overlap between the top 100 differentially expressed genes as ranked by DESeq differential expression p-value and DRIPc-seq peaks from GEO dataset GSE70189. Randomly picked genes were compared to this dataset (‘randomized control’) with the average of 35.56% and standard deviation 4.76% (estimated from 1000 simulations). Genes with significant differences between wild-type and CtIP-depleted cells were identified in the absence of DNA damage (‘WT vs CtIP shRNA (-CPT’)) as well as with CPT treatment (‘WT vs CtIP shRNA (+CPT’)) and were compared with the DRIPc-seq dataset. All three values are above the 99% confidence intervals for the null hypothesis that the genes showing the most evidence of differential expression overlapped the peak regions at the same rate as randomly selected genes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) (B) Quantification of mRNA expression by RT-qPCR in U2OS cells with or without CtIP shRNA as indicated, measuring transcripts at the UBF and CD30 genes. (C) Quantification of mRNA expression in U2OS cells with or without CtIP shRNA as indicated, from the RNAseq dataset (Supplementary file 3). (D) Quantification of mRNA expression in U2OS cells with or without CtIP shRNA as indicated, using RT-qPCR. Data shown is an average of 6 replicates, with error bars indicating S. D. * and *** denote p < 0.05 or 0.001, respectively, using Student's two-tailed T test with comparisons as indicated.
+
 To confirm these results with a different technique, we also utilized the S9.6 antibody, which recognizes RNA-DNA hybrids and has been widely used as a probe for R-loops in cells (Santos-Pereira and Aguilera, 2015; Boguslawski et al., 1986; García-Rubio et al., 2018). We used immunofluorescence signal from S9.6 antibody in control as well as CtIP-depleted, XPG-depleted, and Senataxin-depleted U2OS cells and quantified the level of signal per cell. As this antibody also recognizes the components of nucleoli, the S9.6 signal that colocalized with these organelles was subtracted from the total signal, and the result was normalized by the area of the nucleus. We found that undamaged CtIP-depleted or XPG-depleted cells have significantly more R-loops than their wild-type counterparts (Figure 5C,D). These findings suggest that CtIP is responsible for the prevention and/or resolution of R-loops, in normally growing cells as well as in cells exposed to DNA damage. We also observed that concurrent depletion of CtIP and XPG resulted in a lower level of R-loop accumulation (Figure 5D), similar to the result with laser-induced damage (Figure 4H). This observation of lower RNA-DNA hybrids in the absence of both nucleases is thus not specific to laser damage or to the sensor used for R-loop detection.
 
-## Global patterns of transcription are altered with CtIP depletion
+### Global patterns of transcription are altered with CtIP depletion
 
 CtIP was originally identified as a binding partner of C-terminal Binding Protein (CtBP), a transcriptional co-regulator (Schaeper et al., 1998), and also binds directly to Rb and the tumor suppressor BRCA1 which also has been widely reported to affect transcription and R-loop formation (Monteiro et al., 1996; Scully et al., 1997; Takaoka and Miki, 2018; Yu et al., 1998; Hatchi et al., 2015). Considering our results with CtIP and R-loop accumulation, we asked whether depletion of CtIP has global effects on transcription patterns by analyzing mRNA using RNA-seq. We performed this analysis on U2OS cells expressing control or CtIP-specific shRNA and examined both CPT-treated and untreated conditions. RNA levels were quantified for 30,769 transcripts. CtIP depletion was found to alter 5013 (~16%) of these transcripts, with both increases (2,578) and decreases (2,435) observed relative to the control cells. Unsupervised hierarchical clustering was used to analyze the transcripts (Figure 5E) (Supplementary file 3). We found that there are transcriptional changes associated with CPT exposure in U2OS cells: 1285 transcripts were upregulated upon CPT treatment, and 1158 transcripts were downregulated. Interestingly, a comparison of the genes affected by CPT exposure to a previous dataset of genes showing R-loop accumulation indicates an overlap significantly higher than would be predicted by chance (Figure 5F). Over 60% of the genes affected by CPT (either up or down) overlap with R-loop prone regions of the genome (Ginno et al., 2012) (see ‘WT only, - vs +CPT’, Figure 5F), whereas less than 40% overlap with DNA-RNA immunoprecipitation (DRIP) positive genes occurs with a randomized control. A similar analysis of the gene set identified in CtIP-depleted cells compared to normal cells also indicates a higher than expected overlap (~50%), suggesting that depletion of CtIP has effects on transcription that are correlated with R-loop-prone regions of the genome.
 
-## Quantitation of RNA-DNA hybrids in CtIP-depleted cells
+### Quantitation of RNA-DNA hybrids in CtIP-depleted cells
 
 To investigate the role of CtIP in R-loop accumulation at specific loci, we first generated an inducible genomic cassette containing a mouse class switch region (Sγ3) that has previously been shown to accumulate R-loops (Huang et al., 2006). We performed DRIP with the S9.6 antibody followed by quantitative PCR for this locus in U2OS cells and found that the levels of R-loops increase with doxycycline-induced transcription, even in wild-type cells (Figure 6A). The DRIP signal was removed by RNaseH treatment, confirming the specificity of the S9.6 antibody. A much larger increase in R-loops was found in CtIP-depleted cells, however, while the overall levels of transcripts are similar in both cases (Figure 6A, Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig6-v2.jpg)
+
+**Figure 6.:** (A) RNA/DNA hybrids were quantified by DRIP-qPCR in U2OS cells containing a stably integrated, doxycycline-inducible transgene containing murine Sγ3 repeats. R-loop accumulation was measured by immunoprecipitation with the S9.6 antibody and qPCR for the Sγ3 region in the absence or presence of transcription (-/+Dox) in wild-type or CtIP-depleted cells; n > 6, error bars represent S.E.M. (B) Quantification of RNA/DNA hybrids in U2OS cells at endogenous loci using DRIP-qPCR. Levels of hybrids were measured at the ß-actin gene, with CtIP or XPG depletion, and with RNaseH overexpression in cells, as indicated; n > 3, error bars represent S. D. (C), (D), (E). DRIP-qPCR of sites in the RPL13A gene are shown with CtIP or XPG depletion and RNaseH overexpression in cells as indicated. In (F), CtIP-depleted cells were complemented with wild-type eGFP-CtIP or nuclease-deficient NA/HA mutant. (G) Senataxin ChIP was performed in cells containing the doxycycline-inducible transgene containing murine Sγ3 repeats. Levels of SETX occupancy were quantified in the presence or absence of doxycycline and with CtIP depletion as indicated and are represented as fold changes relative to wild-type cells in the absence of dox. n = 3, error bars represent standard deviation. * and ** denote p < 0.05 or 0.01, respectively, using Student's two-tailed T test with comparisons as indicated.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Quantification of mRNA expression by RT-qPCR. A dox-inducible construct with murine Sγ3 repeats was stably integrated in U2OS cells, and the levels of the Sγ3 mRNA transcripts were measured in the absence or presence of transcription (dox) under wild-type or CtIP-depleted conditions. n > 6, Error bars represent S.D.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Levels of RNA-DNA hybrids were measured with DRIP-qPCR as in Figure 6 at the CD30 (A) and the UBF (B) loci; n > 3, error bars represent S. D. * denotes p < 0.05 using Student's two-tailed T test with comparisons as indicated.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/42733/elife-42733-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Diagram of qPCR primer locations in the RPL13A gene. DRIP-qPCR was performed in wild-type and CtIP-depleted cells as in Figure 6. Half of the sample was treated with RNaseH in vitro before the addition of the S9.6 antibody, ‘+RNaseH’ as indicated. n = 3, error bars represent standard deviation. * denotes p < 0.05 using Student's two-tailed T test with comparisons as indicated. (B) Diagram of qPCR primer locations in the CD30 and UBF genes. DRIP-qPCR was performed in wild-type and CtIP-depleted cells as in Figure 6. Half of the sample was treated with RNaseH in vitro before the addition of the S9.6 antibody, ‘+RNaseH’ as indicated. n = 3, error bars represent standard deviation. * denotes p < 0.05 using Student's two-tailed T test with comparisons as indicated.
 
 We then examined several endogenous loci that have previously been reported to be prone to R-loop formation (Bhatia et al., 2014b; Hatchi et al., 2015). The β-actin gene has been reported to accumulate R-loops, particularly at the G-rich ‘pause’ sequences downstream of the coding region (Hatchi et al., 2015; Skourti-Stathaki et al., 2014). We observed higher levels of RNA-DNA hybrids at these regions in CtIP-depleted cells in the absence of exogenous DNA damage, which could be reduced to wild-type levels by overexpression of wild-type RNaseH (Figure 6B). We also tested XPG-depleted cells and observed an even higher level of R-loops under these conditions (Figure 6C). Similar results were observed on the UBF and CD30 genes (Figure 6—figure supplements 2 and 3), which we tested because levels of transcription are significantly lower in CtIP-depleted cells (Supplementary file 3, Figure 5—figure supplement 1). We also examined RPL13A, a gene that has been identified as a region prone to R-loop formation (Bhatia et al., 2014b; García-Rubio et al., 2018). We tested three locations throughout the body of the RPL13A gene and found significantly higher levels of R-loops in CtIP-depleted cells which were reduced by overexpression of RNaseH in cells (Figure 6D) or by treatment of genomic DNA with RNaseH in vitro prior to the immunoprecipitation (Figure 6—figure supplement 3). We also observed high levels of R-loops at this gene in XPG-depleted cells compared to wild-type (Figure 6E). Lastly, the nuclease-deficient NA/HA allele of CtIP was expressed in CtIP-depleted cells, and R-loops were found to be approximately 1.5 to 2-fold higher in these cells in comparison to cells expressing the wild-type allele, similar to our observations in uncomplemented cells (Figure 6F).
 
 Senataxin has been shown to localize at sites of transcription-replication conflicts and to travel with replication forks (Alzu et al., 2012).Here we asked whether Senataxin is recruited to R-loops in the absence of CtIP or XPG and found that depletion of either factor increases Senataxin occupancy at the inducible (Sγ3) locus (Figure 6G) by 3 to 5-fold, similar to our observations of Sen1 in yeast.
 
-## CtIP depletion leads to fewer DNA breaks after CPT treatment
+### CtIP depletion leads to fewer DNA breaks after CPT treatment
 
 Our results suggest that the CtIP and XPG nucleases help to either prevent R-loop formation in the genome or to resolve R-loops once they are formed. Since CtIP and XPG are both specific for 5ʹ flaps, we considered a model in which CtIP and XPG process 5ʹ flaps present in an R-loop structure (Figure 7). We hypothesize that this ssDNA cleavage event would result in extension and stabilization of the RNA-DNA hybrid, because the release of tension in one DNA strand would prevent spontaneous extrusion of the RNA. This conversion of the nascent lesion into an extended structure would also generate access for helicases to recognize and remove the RNA strand from the DNA. It is also possible that nuclease processing could convert the pre-lesion into double-strand breaks.
 
@@ -154,15 +202,158 @@ In conclusion, we have presented evidence supporting a role for Sae2/CtIP in pro
 
 ## Materials and methods
 
-## S. cerevisiae strains and expression constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (yeast)</td>
+      <td>yeast strains see supplementary file 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK-293T</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>U2OS T-RexTM Flp-in</td>
+      <td>Jeff Parvin</td>
+      <td>U2OS Flp-in</td>
+      <td>Invitrogen tet-on system</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pTP3146</td>
+      <td>this study</td>
+      <td>GFP-CtIP</td>
+      <td>see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pTP3663</td>
+      <td>this study</td>
+      <td>Flag-Bio-CtIP</td>
+      <td>see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pTP3665</td>
+      <td>this study</td>
+      <td>Flag-Bio-CtIP(N289A/H290A)</td>
+      <td>see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pTP3531</td>
+      <td>this study</td>
+      <td>C-term of Senataxin in pcDNA5/FRT/TO</td>
+      <td>see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pTP4195</td>
+      <td>this study</td>
+      <td>PCF11 in pcDNA5/FRT/TO</td>
+      <td>see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (E. Coli)</td>
+      <td>pTP3492</td>
+      <td>this study</td>
+      <td>wild-type RNaseH-mCherry in pcDNA5/FRT/TO</td>
+      <td>see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pTP3494</td>
+      <td>this study</td>
+      <td>mCherry only in pcDNA5/FRT/TO</td>
+      <td>see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (E. Coli)</td>
+      <td>pTP3493</td>
+      <td>this study</td>
+      <td>RNaseHI-D10R-E48R in pcDNA5/FRT/TO</td>
+      <td>see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (E. Coli)</td>
+      <td>pTP3660</td>
+      <td>this study</td>
+      <td>RNaseHI-D10R- E48R in lentivirus vector</td>
+      <td>see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pRSITEP--U6Tet-(sh)-EF1-TetRep-2A-shRNA-CtIP</td>
+      <td>Cellecta</td>
+      <td>inducible shRNA for CtIP</td>
+      <td>see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pTP3703</td>
+      <td>this study</td>
+      <td>inducible shRNA for XPG</td>
+      <td>see Materials  and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pTP3677</td>
+      <td>this study</td>
+      <td>inducible shRNA for SETX</td>
+      <td>see Materials  and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pTP4195</td>
+      <td>this study</td>
+      <td>Sγ3 sequence in pcDNA5/FRT/TO</td>
+      <td>see Materials  and methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>primers see supplementary file 4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### S. cerevisiae strains and expression constructs
 
 For yeast strains see supplementary file 1. Genomic deletions were made with standard lithium chloride transformations and integrations (Adams et al., 1997) and were verified by PCR. Full-length SEN1, SSU72, and RTT103 were cloned into the 2μ plasmid pRS425 (Christianson et al., 1992) by fusion PCR to create pTP3500, pTP3249, and pTP3498, respectively. A pRS425 derivative containing PCF11 was a gift from Steve Hanes. Mutations in SEN1 were made in pTP3500 by Quikchange mutagenesis (Stratagene). The sen1-1 strain and corresponding wild-type strain were gifts from Nicholas Proudfoot. The HTB-tagged Rpb2 and Sen1 strains were gifts from Jeff Corden. The rnh1 rnh201 mutant strain was a gift from David Tollervey. A high-copy vector containing the wild-type SAE2 gene with a 2xFLAG tag in pRS425 (61)‘FLAG-SAE2/2μ’ was a gift from John Petrini, and was used for the SAE2 ChIP experiment.
 
-## Yeast camptothecin survival assay
+### Yeast camptothecin survival assay
 
 Cells were grown to exponential phase (OD 0.5–0.6) and synchronized using alpha-factor for 3 hr at 30°C. Half of the cells were kept in alpha factor (G1), while the other half were washed and resuspended in fresh media (S). Previous studies have shown that all the cells enter S phase 30 min after the removal of alpha factor (Fu et al., 2014). Therefore 30 min after the release into fresh media, both G1 and S samples were treated with either 100 µM CPT or DMSO for two hours for an acute drug dose. At the end of the treatment, cells were washed and appropriate dilutions were plated on YPDA +glucose plates to obtain single colonies. Single colonies were counted after two days and survival efficiency was calculated as the number of colonies on the ‘+CPT’ plates divided by the number of colonies on the ‘no treatment’ plates. For thiolutin treatment, 15 min after the release into fresh media both G1 and S phase cells were treated with either DMSO or thiolutin (2.5 μg/mL final concentration). After another 15 min CPT or DMSO was added to the media at indicated concentration.
 
-## Chromatin immunoprecipitation in yeast
+### Chromatin immunoprecipitation in yeast
 
 Sae2: Yeast cells containing a FLAG-Sae2 expression cassette on a high copy number 2μ plasmid were grown to exponential phase in 2 L of appropriate minimal media to OD600 = 0.5–0.6. The cells were centrifuged and resuspended in 50 ml fresh media (concentrated 40-fold). Yeast mating pheromone alpha-factor was added to final concentration of 10 μM and cells were synchronized for 4 hr at 30°C. Half of the cells were kept in alpha factor (G1), while the other half were washed and resuspended in fresh media (S). After the wash, both G1 and S phase cells were further divided into two and treated with 100 μM camptothecin or DMSO for 50 min. At the end of the drug treatment cells were crosslinked by addition of formaldehyde (1% final concentration) at RT for 25 min, followed by glycine (125 mM final concentration) at RT for 5–10 min. The cells were harvested, washed with water and flash frozen until further processing. Thus 2L of starting culture was divided into four samples per strain with approximately 500 OD cells per sample.
 
@@ -178,66 +369,66 @@ Then relative fold of enrichment was calculated by normalizing the percentage of
 
 SEN1: Yeast cells containing a His6-Tev-Biotin (HTB)-tagged SEN1 allele in the genome were prepared, lysed and sonicated similar to RPB2 ChIP except that all samples were prepared with CPT exposure (100 μM camptothecin or DMSO for 50 min). The IP was performed with streptavidin linked M280 magnetic beads (Invitrogen). The fold enrichment over Input at different genomic loci was calculated using SYBR-Green based quantitative PCR. Samples were tested at various dilution factors to optimize a dilution factor for a CT value in the linear range. Then percentages of DNA enrichment of IP over the Input were calculated by using the following equation: (100%*2^(CT(input)-CT(IP)-log(dilution_factor,2)). The relative fold of enrichment was calculated by normalizing the percentage of DNA enrichment of IP of each group to WT cells.
 
-## DNA-RNA ImmunoPrecipitation (DRIP) in yeast
+### DNA-RNA ImmunoPrecipitation (DRIP) in yeast
 
 Yeast cells were grown as described for the Sae2 ChIP experiment, except there were no G2 cell samples and no formaldehyde crosslinking was done. DRIP was performed as previously described (Boguslawski et al., 1986); a detailed protocol is available on request. Briefly, 150–200 μg genomic DNA isolated using the Qiagen Genomic DNA kit (500G) was treated with S1 nuclease and precipitated in 130 μl TE. The DNA was sonicated using a Covaris sonicator, precipitated, and resuspended in 50 μl of nuclease-free water. Half of the sample was treated with RNaseH in vitro (Thermo Rnase H, 5 units per 10 μg DNA), overnight at 65°C. Then 350 μl of FA buffer (1% Triton X-100, 0.1% sodium deoxycholate, 0.1% SDS, 50 mM HEPES, 150 mM NaCl, 1 mM EDTA) was added to each DNA sample, and incubated for 90 min with 5 μg of S9.6 antibody prebound to magnetic protein A beads. Beads were then washed and the DNA eluted as described above. %RNA–DNA hybrid amounts were quantified using Sybr-Green based quantitative PCRs on DNA samples from DRIP and Input DNA. Q-PCR reactions were performed on ViiA7 Real-Time PCR System (ABI) under standard thermal cycling conditions for 40 cycles. Results were analyzed with ViiA7 software (ABI). For each sample, fold enrichment over Input was calculated by the following equation: Fold enrichment over input = 2^(CtInput - Log(dilution factor,2) - CtDRIP)
 
 Primer sequences used in this study were adapted from (Alzu et al., 2012; Grzechnik et al., 2015; El Hage et al., 2014) and are listed in Supplementary file 4. A mock IP with empty beads was done for each sample to control for non-specific binding and enrichment was calculated in the same way as the DRIP sample.
 
-## Statistical analysis of Sae2-ChIP-transcription overlap
+### Statistical analysis of Sae2-ChIP-transcription overlap
 
 For each sample, overlap between peaks identified from ChIP-seq data and the top 10% of highly transcribed genes in yeast (supplementary file 2) (Nagalakshmi et al., 2008; Pelechano et al., 2010; Miura et al., 2008) was assessed using Bedtools (Quinlan and Hall, 2010) and the fraction of peaks for which an overlap was detected was recorded. Also for each sample a background null distribution of overlap rates was estimated by repeatedly sampling a random set of coding sequences equal in number to those in the top 10% list from the Saccharomyces cerevisiae genome (equivalent to selection of top ORFs after random permutation) and then locating overlaps using bedtools. By comparing the overlap fraction to the estimated null distribution, we constructed 99% confidence intervals for the permutation test p-values (Ernst, 2004) of the null hypothesis that the overlap between ChIP-seq peaks and the top 10% of highly transcribed genes was equal to the rate at which the peaks overlapped randomly chosen coding sequences.
 
 Mammalian cell culture: Human U2OS and HEK-293T cells were grown and maintained in tetracycline-free DMEM containing 10% FBS media in a humidified 37°C incubator in the presence of 5% CO2. All cell lines were treated and maintained in plasmocin (InVivoGen) to ensure no mycoplasma contamination.
 
-## Mammalian expression constructs
+### Mammalian expression constructs
 
 Invitrogen Gateway pENTR223 donor vector for hSenataxin(∆1–1850) was obtained from DNASU (#HsCD00505781), and cloned into pcDNA5/FRT/TO (ThermoFisher) vector to make pTP3531. shRNA CtIP was custom-made by Cellecta (pRSITEP--U6Tet-(sh)-EF1-TetRep-2A-shRNA-CtIP) and includes the shRNA expression cassette 5ʹ-GAGCAGACCTTTCTTAGTATAGTTAATATTCATAGCTATACTGAGAAAGG
 
 TCTGCTCTTTT-3 ʹ. Dox-inducible elements were removed from pRSITEP--U6Tet-(sh)-EF1-TetRep-2A-shRNA-CtIP shRNA CtIP(-Dox) (pTP3914) using Q5 Site-Directed Mutagenesis (NEB, #E0554S). The N-terminal fusion of eGFP with CtIP (eGFP-CtIP) ORF was amplified from pC1-eGFP-CtIP (a generous gift from Steven Jackson), and cloned into pcDNA5/FRT/TO to make pTP3146. The A206K mutation in eGFP was made to prevent eGFP dimerization, and shRNA resistance mutations introduced to generate pTP3148. pcDNA5-flag-bio-CtIP(wt) (containing N-terminal Flag and biotinylation signal sequences) (pTP3663) was made by Q5 Site-Directed Mutagenesis to remove eGFP, and insert Flag and biotinylation signal sequences. pcDNA5-flag-bio-CtIP(N289A/H290A) (pTP3665) was made using QuikChange II Site-Directed Mutagenesis (Agilent Technologies). shRNA SETX1 (pRSITEP--U6Tet-(sh)-EF1-TetRep-2A-HYGRO) (pTP3677) and shRNA XPG (pRSITEP--U6Tet-(sh)-EF1-TetRep-2A-HYGRO) (pTP3703) were made from the pRSITEP--U6Tet-(sh)-EF1-TetRep-2A-shRNA-CtIP construct (Cellecta) using Q5 Site-Directed Mutagenesis, with the shRNA cassettes 5ʹ-GCCAGATCGTATACAATTATAGTTAATATTCATAGCTATAATTGTATACGATCTGGCTTTT-3 ʹ and 5ʹ-GAACGCACCTGCTGCTGTAGAGTTAATATTCATAGCTCTACAGCAGCAGGTGCGTTCTTTT-3 ʹ, respectively. pcDNA5 with with wild-type RnaseHI (rnhA from E. coli) containing an NLS and fused to mCherry (pTP3492) was generated from pcDNA5/FRT/TO (Invitrogen) and pICE-RNaseHI-mCherry (Addgene 60365, gift from Patrick Calsou). pcDNA5 with NLS-mCherry (pTP3494) was generated from pcDNA5/FRT/TO (invitrogen) and pICE-mCherry (Addgene # 60364). pcDNA5-RNaseHI-D10R-E48R-NLS-mCherry (pTP3493) was cloned using pcDNA5/FRO/TO and pICE-RNaseHID10R-E48R-NLS-mCherry (a gift from Patrick Calsou, Addgene # 60367 (Britton et al., 2014)). pLenti-PGK-RNaseHID10R-E48R-NLS-mCherry (pTP3660) was cloned using pLenti PGK GFP Blast (w510-5) which was a gift from Eric Campeau and Paul Kaufman (Addgene plasmid #19069 [Campeau et al., 2009]) and the RNaseHID10R-E48R-NLS-mCherry fragment from pICE-RNaseHID10R-E48R-NLS-mCherry. pBluescript-Sγ3 × 12 (pTW-121) was a generous gift from Michael Lieber. pcDNA5/FRT/TO-Sγ3 × 12 (pTP4195) was cloned using pcDNA5/FRT/TO and the Sγ3 region from pTW-121. pcDNA5/FRT/TO-hPCF11 (pTP4195) was cloned using pcDNA5/FRT/TO and the hPCF11 ORF containing plasmid, obtained from Kazusa (ORK06290). All constructs and mutations were confirmed by DNA sequencing. Details of plasmid construction available upon request.
 
-## Clonogenic survival assays
+### Clonogenic survival assays
 
 U2OS cells were harvested by trypsinization (0.25% trypsin; Life Technologies) and counted using Scepter (Millipore Sigma). 1,500 cells were seeded per 10 cm cell culture dish, and were allowed to adhere to the bottom of the plate for 36 hr. For experiments with tet-inducible CtIP shRNA, all cells were exposed to doxycycline (1 µg/mL) during seeding and gene depletion and/or over-expression and throughout the experimental course. After 36 hours cells were treated CPT for 1 hr, the CPT-containing media was replaced with fresh media, and cell recovery was allowed for 10 days. Colonies were stained with crystal violet (0.05% in 20% ethanol), destained with water, and counted using a scanner and Image J.
 
-## RNaseHD10R-E48R-mCherry Laser Micro-irradiation
+### RNaseHD10R-E48R-mCherry Laser Micro-irradiation
 
 U2OS cells were seeded in glass bottom petri dishes (35 × 10 mm, 22 mm glass, WillCo-dish, HBST-3522), and grown in DMEM/10% FBS media in the presence of 1 µg/mL doxycycline. After 36 hr, media was replaced with media containing 10 µM BrdU. After an additional 36 hr, laser micro-irradiation was performed with an inverted confocal microscope (FV1000; Olympus) equipped with a CO2 module and a 37°C heating chamber. A preselected spot within the nucleus was microirradiated with 20 iterations of a 405 nm laser with 100% power to generate localized DNA damage. Then, time-lapse images were acquired using a red laser at 1 min time intervals for 10 min. The fluorescence intensity of mCherry signal at the laser microirradiated sites was measured using the microscope’s software. Data collected from >10 cells were normalized to their initial intensity and plotted against time.
 
-## RNaseHD10R-E48R-mCherry FACS
+### RNaseHD10R-E48R-mCherry FACS
 
 U2OS cells were grown in DMEM/10% FBS media in the presence of 1 µg/mL doxycyclin in 10 cm dishes. After 3 days, the cells were harvested by trypsinization, rinsed in 5 mL cold PBS with Ca2+ (0.9 mM) and Mg2+ (0.5 mM), and centrifuged at 1000 g for 3 min. Unbound RNaseHD10R-E48R-mCherry was extracted with 1 mL Triton X-100 buffer (0.5% Triton X-100, 20 mM Hepes-KOH (pH 7.9), 50 mM NaCl, 3 mM MgCl2, 300 mM Sucrose) at 4°C for exactly 2 min and at 1300 g for 3 min. Cells were then rinsed twice in PBS at RT and fixed in 3.7% paraformaldehyde in PBS for 10 min at RT, rinsed twice in PBS at RT again, and stained with FxCycleTM FarRed stain (200 nM in PBS with 100 µg/mL RNaseA). Cells were kept in the staining solution at 4°C protected from light. The samples were analyzed in a flow cytometer without washing, using 633/5 nm excitation and emission collected in a 660/20 band pass or equivalent.
 
-## S9.6 immunostaining
+### S9.6 immunostaining
 
 U2OS cells were seeded into 8-well Nunc Lab-Tek II Chamber Slides (Nalge Nunc International, #154534) 48 hr before experiments. Prior to immunostaining, cells were washed with PBS, and preextracted with incubation in CSK buffer (10 mM PIPES, pH 7.0, 100 mM NaCl, 300 mM sucrose, and 3 mM MgCl2, 0.7% Triton X-100) twice for 3 min at room temperature. After preextraction, cells were washed with PBS and fixed with 2% paraformaldehyde for 10 min. Cells were then permeabilized for 5 min with PBS/0.2% Triton X-100, washed with PBS, and blocked with PBS/0.1% Tween 20 (PBS-T) containing 5% BSA. For immunostaining cells were incubated with primary antibodies (S9.6 and nucleolin) in PBS/5% BSA overnight, then washed with PBS-T and incubated with appropriate secondary antibodies coupled to Alexa Fluor 488 or 594 fluorophores (Life Technologies) in PBS-T/5% BSA. After washes in PBS-T and PBS, coverslips were incubated 30 min with 2 µg/ml DAPI in PBS. After washes in PBS, coverslips were rinsed with water and mounted on glass slides using ProLong Gold (Life Technologies).
 
-## DNA-RNA ImmunoPrecipitation (DRIP) in mammalian cells
+### DNA-RNA ImmunoPrecipitation (DRIP) in mammalian cells
 
 U2OS cells (one 150 mm dish per biological replicate) were harvested by trypsinization (0.25% trypsin; Life Technologies) and pelleted at 1,000 g for 5 min in 15 mL conical tubes. Cell pellets were washed with PBS and divided for RNA, DRIP or LM-PCR harvests. Cell pellets for DRIP were resuspended in 5 mL of PBS supplemented with 0.5% SDS, and digested with 2 mg of Proteinase K (GoldBio) at 37°C overnight. Cell lysates were then extracted once with 1 vol of equilibrated phenol pH 8 and twice with 1 vol of chloroform. DNA was precipitated with 1 vol of isopropanol, and spun down at 6,500 g for 15 min. The DNA pellet was transferred to a 1.7 mL eppendorf tube, washed with 1 mL of 70% ethanol, and rehydrated in 0.1x TE (1 mM Tris-HCl pH 8.0, 0.1 mM EDTA). Nucleic acids were digested using a restriction enzyme cocktail (20 units each of EcoRI, HindIII, BsrGI, XbaI) (New England Biolabs) overnight at 37°C in 1x NEBuffer 2.1. DNA concentration was measured using Qubit dsDNA HS kit (Thermo). For experiments with RNaseH treatment in vitro, RNaseH (Thermo) was added at a concentration of 5 units per 10 µg DNA and incubated overnight at 37°C. 10 µg of digested nucleic acids were then diluted in 1 mL final DRIP buffer (10 mM sodium phosphate, 140 mM sodium chloride, 0.05% Triton X-100) and 100 µg of S9.6 antibody (purified from ATCC HB-8730) and incubated at 4°C overnight. This and all wash steps were performed on a rotisserie mixer. 30 µL of Pierce Protein A/G Magnetic Beads (Fisher Scientific, 88803) was added and incubated for additional 2 hr, followed by washing three times with 1 mL of 1x IP buffer for 10 min at room temperature with constant rotation. After the final wash, the agarose slurry was resuspended in 100 µL of TE + 0.5% SDS 1 mg of Proteinase K for >1 hr at 37°C. 10 µL of 7.5 M Ammonium Acetate, 1 µg of glycogen, and 400 µL of 100% ice-cold Ethanol were added to the digested DRIP samples, and kept at −20°C for at least 2 hr (to overnight) to precipitate the immuno-precipitated material. The pellet was collected by centrifugation in a microcentrifuge at maximum speed for 30 min at 4°C, washed with cold 70% ethanol, air-dried, and resuspended in 100 µL of 0.1x TE. We used 10 µL reactions with PowerUp sybr green master mix (Applied Biosystems) for qPCR amplification of genomic loci (see Supplementary file 4). Reactions were incubated with the following program on a Viia 7 System cycler (Life Technologies): 50°C 2 min, 95°C 10 min, 40 cycles of 95°C 15 s, 64°C 1 min, followed by a melt curve: 95°C 15 s, 60°C 1 min, 0.05 °C/sec to 95°C 15 s. For each DRIP sample, linear range of amplification was identified by testing a wide range of dilutions. Fold enrichment for a given locus was calculated using the 2-ΔΔCT method (Schmittgen and Livak, 2008), and then normalizing the samples to the measurements of the wild-type results.
 
-## RT-qPCR
+### RT-qPCR
 
 U2OS cells (one 150 mm dish per biological replicate) were harvested by trypsinization (0.25% trypsin; Life Technologies) and pelleted at 1,000 g for 5 min in 15 mL conical tubes. Cell pellets were washed with PBS (Life Technologies) and divided for RNA, DRIP or LM-PCR harvests. RNA was either purified and retro-transcribed using RNA purification (Qiagen) and SuperScript IV Reverse Transcriptase (Thermo #8090050) kits, respectively, or using Fast Cells-to-CT kit (Thermo #4399003). qPCR was done using the same settings as those for DRIP-qPCR and LM-PCR methods, and GAPDH used as a reference gene.
 
-## mRNA-seq
+### mRNA-seq
 
 U2OS cells (one 150 mm dish per biological replicate) were harvested by trypsinization and pelleted at 1,000 RCF for 5 min in 15 mL Falcon tubes. mRNA was purified using Qiagen RNA purification kit, and mRNA was isolated using AMPure XP kit (Beckman Coulter, #A63880). mRNA-seq libraries were prepared with the NEBNext Multiplex Small RNA Library Prep Set for Illumina (#E7300S) according to manufacturer instructions. The library sequencing and analysis were done at New York Genome Center.
 
-## Statistical analysis of mRNA-seq DRIP data overlap
+### Statistical analysis of mRNA-seq DRIP data overlap
 
 For each statistical comparison, overlap between the top 100 genes as ranked by DESeq differential expression p-value and DRIPc-seq peaks from GEO dataset GSE70189 (Sanz 2016) was assessed using bedtools (Quinlan and Hall, 2010). For each comparison, we calculated the percentage of the top 100 genes for which such an overlap was found. These percentages were compared to a null distribution for overlap rates estimated using a permutation testing approach (Ernst, 2004) in which we repeatedly selected 100 genes at random from the list of all genes tested by DESeq (equivalent to selection of top 100 genes after randomly permuting DESeq p-values) and applied bedtools to calculate the DRIPc-seq overlap rate in the same manner. Using this approach we estimated 99% confidence intervals for the permutation test p-values of the null hypothesis that the genes showing the most evidence of differential expression overlapped the peak regions at the same rate as randomly selected genes.
 
-## Senataxin ChIP-qPCR
+### Senataxin ChIP-qPCR
 
 U2OS cells (one 150 mm dish per biological replicate) were crosslinked by addition of formaldehyde (1% final concentration) at RT for 15 min, followed by glycine (125 mM final concentration) at RT for 5 min. Cells were washed twice with cold PBS and harvested by scraping. Then cells were pelleted at 3,000 rpm for 30 min in 15 mL Falcon tubes. Each cell pellet was resuspended in 2 mL of RIPA buffer (50 mM Tris pH8, 150 mM NaCl, 2 mM EDTA, 0.1% SDS, 0.5% Sodium Deoxycholate, 1% NP40, and protease inhibitors (Pierce # A32955; 1 tablet per 10 mL)) and sonicated with a Bioruptor sonicator for 15–30 min at high power 10 s on and 10 s off. The extract was cleared with 13,000 rpm centrifugation at 4°C for 30 s and the supernatant was transferred to new tube. A small sample was treated with 1% SDS, 100 mM NaHCO3 and RNaseA and purified by Qiagen PCR purification kit to check DNA concentration with NanoDrop 2000 (Thermofisher). The chromatin was diluted to 50 μg/mL with RIPA buffer. A 50 μL aliquot of the lysate was saved as the ‘Input’ sample, and 1 mL of the lysate was used per immunoprecipitation sample. 2 μg of anti-SETX antibody (Novus Biologicals, NB100-57542) was added to all immunoprecipitation samples except the beads-only control and immunoprecipitated overnight with rotation at 4°C. 20 µL of Pierce Protein A/G Magnetic Beads (Fisher Scientific) was added and incubated for additional 2 hr, followed by washing 3 times each with wash buffer 1 (20 mM Tris pH8, 2 mM EDTA, 150 mM NaCl, 1% Triton, 0.1% SDS), wash buffer 2 (20 mM Tris pH8, 2 mM EDTA, 500 mM NaCl, 1% Triton, 0.1% SDS), wash buffer 3 (10 mM Tris pH8, 1 mM EDTA, 1% Sodium Deoxycholate, 250 mM LiCl, 1% NP40) and TE buffer (10 mM Tris pH8, 0.1 mM EDTA). 125 μl elution buffer (1% SDS, 100 mM NaHCO3) was added to the beads and kept shaking at 30°C for 30 min. The beads were then pelleted and the supernatant was transferred into fresh tube. The tube containing the supernatant was kept shaking overnight at 65°C. The DNA samples were purified (Qiagen PCR purification kit) and eluted with 50 μl of water (heated at 50°C and incubated for 30 min on column before spinning).
 
 We used 10 µl reactions with PowerUp sybr green master mix (Applied Biosystems) for qPCR amplification of genomic loci (see Supplementary file 4). Reactions were incubated with the following program on a Viia 7 System (Life Technologies): 50°C 2 min, 95°C 10 min, 40 cycles of 95°C 15 s, 64°C 1 min, followed by a melt curve: 95°C 15 s, 60°C 1 min, 0.05 °C/second to 95°C 15 s. For each ChIP sample, linear range of amplification was identified by testing a wide range of dilutions. Fold enrichment for a given locus was calculated using the 2-ΔΔCT method (Schmittgen and Livak, 2008), and then normalizing the samples to the measurements of the control.
 
-## Ligation-mediated PCR (LM-PCR)
+### Ligation-mediated PCR (LM-PCR)
 
 U2OS cells (one 150 mm dish per biological replicate) were harvested by trypsinization and pelleted at 1,000 g for 5 min in 15 mL conical tubes. Cell pellets were washed with PBS and divided for RNA, DRIP or LM-PCR harvests. Genomic DNA (gDNA) was purified using genomic DNA preparation kit (Zymo Research Quick-gDNA MiniPrep - Capped column, Genesee Scientific, 11-317AC) and gDNA concentration was determined using Nanodrop. 50 µL primer extension mix contained: 5 µL of 10X polymerase buffer (NEB, supplied with Deepvent(-Exo) enzyme), 4 µL MgSO4 (100 mM), 1 µL of Deepvent(-Exo) (NEB), 1 µL NTP mix (0.5 mM each final), 0.5 µL biotinylated primers (stock concentration 100 µM), and 1 µg of gDNA. Primer extension was done in a thermocycler in one round of primer extension: 15 min at 95°C, 30 s at 60°C, 5 min at 72°C. Control solution was made by dilution of 1 µg genomic DNA in 0.1x TE. Primer extension products were ligated to the phosphorylated asymmetric adaptor duplex overnight (oligonucleotides were phosphorylated with T4 polynucleotide kinase at 37°C for 3–4 hr, purified with a nucleotide removal kit (Qiagen), and annealed with boiling and slow cooling in the presence of 0.1 M NaCl). Ligation reactions were mixed with 30 µL of KilobaseBinder (Invitrogen) magnetic beads prepared according to the manufacturer’s protocol, total volume was adjusted to 100 µL, and incubated with genomic DNA samples overnight. Washes were performed on a magnetic stand: 3 × 10 min washing with wash buffer (50 mM Tris, pH 8, 0.1% (wt/vol) SDS and 150 mM NaCl), then 10 min washing with 0.1x TE. After the 0.1x TE wash, the beads were resuspended in 100 µL of 0.1x TE and 10 µL used for nested PCR. Nested PCR reaction contained: 5 µL of 10X polymerase buffer (NEB, supplied with Deepvent(-Exo) enzme), 4 µL MgSO4 (100 mM), 1 µL of Deepvent(-Exo), 1 µL NTP mix (0.5 mM each final), 1 µL each nested primers (stock concentration 100 µM), and 10 µL of beads. Nested PCR was done in a thermocycle with the following amplification steps: 1) one step of total denaturation: 15 min at 95°C; 2) 15 steps of amplification: 30 s at 95°C 30 s at 60°C, 5 min at 72°C; and 3) one step of extension: 5 min at 72°C. Nested reactions were diluted 50-fold in 0.1x TE, and serial dilutions were prepared to determine linear range of amplification. Fold enrichment for a given locus was calculated using the comparative Ct method, and then normalizing the samples to the measurements of the wild-type results.
 
-## Comet assay
+### Comet assay
 
 U2OS cells were grown in DMEM/10% FBS media in the presence of 1 µg/mL doxycyclin in 6-well plates at a very sparse seeding density. After 3 days, the cells were treated with DNA damaging agents, harvested by trypsinization, and rinsed in 1 mL cold PBS. Olive moments of damaged DNA were measured using OxiSelect Comet Assay Kit (3-Well Slides) (Cellbiolabs, #STA-350).

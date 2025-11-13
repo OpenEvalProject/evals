@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/010x8gc63 School of Environment and Sustainability, Global Institute for Water Security, University of Saskatchewan Saskatoon Canada
-2. https://ror.org/02yy8x990 Department of Biosystems and Technology, Swedish University of Agricultural Sciences Alnarp Sweden
+1. School of Environment and Sustainability, Global Institute for Water Security, University of Saskatchewan Saskatoon Canada ([ROR:010x8gc63](https://ror.org/010x8gc63))
+2. Department of Biosystems and Technology, Swedish University of Agricultural Sciences Alnarp Sweden ([ROR:02yy8x990](https://ror.org/02yy8x990))
 
 † Corresponding author
 

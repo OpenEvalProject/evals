@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01zkghx44 Interdisciplinary Graduate Program in Quantitative Biosciences, Georgia Institute of Technology Atlanta United States
-2. https://ror.org/01zkghx44 School of Biological Sciences, Georgia Institute of Technology Atlanta United States
+1. Interdisciplinary Graduate Program in Quantitative Biosciences, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))
+2. School of Biological Sciences, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))
 
 † Corresponding author
 

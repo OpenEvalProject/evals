@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.40048.001 ApoE4 genotype is the most prevalent and also clinically most important risk factor for late-onset Alzheimer’s disease (AD). Available evidence suggests that the root cause for this increased risk is a trafficking defect at the level of the early endosome. ApoE4 differs from the most common ApoE3 isoform by a single amino acid that increases its isoelectric point and promotes unfolding of ApoE4 upon endosomal vesicle acidification. We found that pharmacological and genetic inhibition of NHE6, the primary proton leak channel in the early endosome, in rodents completely reverses the ApoE4-induced recycling block of the ApoE receptor Apoer2/Lrp8 and the AMPA- and NMDA-type glutamate receptors that are regulated by, and co-endocytosed in a complex with, Apoer2. Moreover, NHE6 inhibition restores the Reelin-mediated modulation of excitatory synapses that is impaired by ApoE4. Our findings suggest a novel potential approach for the prevention of late-onset AD.
+ApoE4 genotype is the most prevalent and also clinically most important risk factor for late-onset Alzheimer’s disease (AD). Available evidence suggests that the root cause for this increased risk is a trafficking defect at the level of the early endosome. ApoE4 differs from the most common ApoE3 isoform by a single amino acid that increases its isoelectric point and promotes unfolding of ApoE4 upon endosomal vesicle acidification. We found that pharmacological and genetic inhibition of NHE6, the primary proton leak channel in the early endosome, in rodents completely reverses the ApoE4-induced recycling block of the ApoE receptor Apoer2/Lrp8 and the AMPA- and NMDA-type glutamate receptors that are regulated by, and co-endocytosed in a complex with, Apoer2. Moreover, NHE6 inhibition restores the Reelin-mediated modulation of excitatory synapses that is impaired by ApoE4. Our findings suggest a novel potential approach for the prevention of late-onset AD.
 
 ## Introduction
 
@@ -42,27 +42,35 @@ pH in the early endosome is maintained by the opposing functions of the proton p
 
 ## Results
 
-## ApoE interacts and colocalizes with Apoer2 in neurons
+### ApoE interacts and colocalizes with Apoer2 in neurons
 
 ApoE generically interacts with cysteine-rich ligand binding-type repeats that are ubiquitously present in all LDL receptor family members (Blacklow, 2007). We first investigated the interaction between ApoE and its ligand-receptor Apoer2 using a solid phase interaction assay. For this purpose, we used naturally secreted ApoE particles containing the three common ApoE isoforms in humans (ApoE2, ApoE3 and ApoE4). We found that ApoE3 and ApoE4 strongly interact with Apoer2, whereas ApoE2 binding was much weaker (Figure 1A and B). These results are consistent with the established similarly high-affinity binding of ApoE3 and ApoE4 to the LDL receptor and the 100-fold reduced affinity of ApoE2 (Rall and Mahley, 1992; Weisgraber, 1994). Thus, Apoer2 is a high-affinity ApoE receptor and immunofluorescence analysis of primary neurons treated with GFP-tagged ApoE3 accordingly showed co-localization of Apoer2 and ApoE3 in endosomes (Figure 1C, Videos 1 and 2).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/40048/elife-40048-fig1-v2.jpg)
 
-**Figure 1.:** (A and B) ApoE isoforms interact with ApoE receptor 2 (Apoer2) as tested by co-immunoprecipitation. ApoE3 and ApoE4 bind Apoer2 with similar affinity, whereas ApoE2 binding to Apoer2 is poor. ApoE-conditioned media (0, 0.1, 0.3, 1, 3 and 10 µg/ml ApoE) were incubated with Apoer2-Fc (secreted Apoer2 ectodomain fused to Fc) bound to protein-G beads and pulled down to perform immunoblotting for ApoE. Representative immunoblot images (A) and quantification (B) are shown. (C) Apoer2 co-localizes with ApoE in primary neurons. Primary cortical neurons were infected with lentiviral mCherry-Apoer2 (red) and subsequently treated with ApoE3-GFP-conditioned media (green). A single plane of a z-stack is shown with the orthogonal xz- and yz-views as indicated. White lines indicate the vertical and horizontal cuts. Boxed vesicles are shown enlarged in the panels below labeled ApoE, Apoer2 and Merge. Additionally 3D movies of the cells are provided online (Videos 1 and 2).10.7554/eLife.40048.004Figure 1—source data 1.
+**Figure 1.:** (A and B) ApoE isoforms interact with ApoE receptor 2 (Apoer2) as tested by co-immunoprecipitation. ApoE3 and ApoE4 bind Apoer2 with similar affinity, whereas ApoE2 binding to Apoer2 is poor. ApoE-conditioned media (0, 0.1, 0.3, 1, 3 and 10 µg/ml ApoE) were incubated with Apoer2-Fc (secreted Apoer2 ectodomain fused to Fc) bound to protein-G beads and pulled down to perform immunoblotting for ApoE. Representative immunoblot images (A) and quantification (B) are shown. (C) Apoer2 co-localizes with ApoE in primary neurons. Primary cortical neurons were infected with lentiviral mCherry-Apoer2 (red) and subsequently treated with ApoE3-GFP-conditioned media (green). A single plane of a z-stack is shown with the orthogonal xz- and yz-views as indicated. White lines indicate the vertical and horizontal cuts. Boxed vesicles are shown enlarged in the panels below labeled ApoE, Apoer2 and Merge. Additionally 3D movies of the cells are provided online (Videos 1 and 2).
 
-## ApoE4 selectively reduces cell surface expression of neuronal Apoer2
+![Video 1.](https://cdn.elifesciences.org/articles/40048/elife-40048-video1.mp4.jpg)
+
+**Video 1.:** N-terminal mCherry-labeled Apoer2 (red) and C-terminal GFP-labeled ApoE3 (green) co-localize intracellularly in primary neurons. Rat primary cortical neurons were infected with lentiviral mCherry-Apoer2 and subsequently exposed to ApoE3-GFP-conditioned media. Confocal microscopy was performed as described in the Materials and methods section.
+
+![Video 2.](https://cdn.elifesciences.org/articles/40048/elife-40048-video2.mp4.jpg)
+
+**Video 2.:** 3D View of Apoer2 co-localizes with Apoe in primary neurons. N-terminal mCherry-labeled Apoer2 (red) and C-terminal GFP-labeled ApoE3 (green) co-localize intracellularly in primary neurons. Rat primary cortical neurons were infected with lentiviral mCherry-Apoer2 and subsequently exposed to ApoE3-GFP-conditioned media. Confocal microscopy was performed as described in the Materials and methods section.
+
+### ApoE4 selectively reduces cell surface expression of neuronal Apoer2
 
 We have previously reported that the presence of receptor binding competent ApoE4 particles at physiological concentrations impairs the recycling and consequently surface expression of neuronal Apoer2 (Chen et al., 2010). To test whether other unrelated receptors that do not interact with ApoE may be also affected in their plasma membrane expression and recycling properties, we performed the cell surface biotinylation experiments outlined in Figure 2A. Briefly, primary rat cortical neurons were incubated in the absence (Figure 2B, lane 1) or presence of cell-derived, naturally secreted recombinant ApoE3 (lane 2) or ApoE4 (lane 3) particles for 1 hr at 37˚C, purified Reelin was then added to induce the rapid endocytosis of Apoer2, and after 30 min the cells were transferred to 4˚C and washed with ice-cold PBS. Cell surface biotinylation was performed, biotinylated proteins were isolated and detected by immunoblotting. While Apoer2 quickly recycled in the presence of ApoE3, its reappearance on the cell surface was greatly delayed in the presence of ApoE4 (Figure 2B,C). By contrast, other endocytic cell surface receptors that do not bind ApoE, such as the insulin receptor (IR) or the transferrin receptor (TfR), or that do not interact with Reelin and therefore do not undergo ligand-induced endocytosis (low-density lipoprotein receptor-related protein 1 (Lrp1) and low-density lipoprotein receptor (Ldlr)), were not significantly affected by the presence of ApoE (Figure 2B,C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/40048/elife-40048-fig2-v2.jpg)
 
-**Figure 2.:** (A) Timeline for experiment shown in B and C. (B and C) Apolipoprotein E (ApoE) isoforms reduce surface expression of Apoer2. ApoE-conditioned media treatment reduces the surface expression of Apoer2 in presence of Reelin in primary neurons. Apoer2 surface levels show a higher reduction with ApoE4 than ApoE3. Other ApoE receptors, such as low-density lipoprotein receptor-related protein 1 (Lrp1) and low-density lipoprotein receptor (Ldlr), as well as the endocytic receptor for transferrin (TfR) and insulin receptor (IR) exhibit comparable surface levels in the presence of ApoE3 or ApoE4. Levels of surface proteins and total proteins were analyzed by immunoblotting using antibodies raised against Apoer2, Lrp1, Ldlr, IR and TfR. Quantitative analysis of the ratio of surface and total receptor levels is shown (C). (D and E) Proteins from primary neurons incubated with ApoE-conditioned media were immunoprecipitated with anti-Apoer2 or control rabbit IgG and immunoblotted with anti-ApoE antibody. Input is shown in the right panel of (D) and quantification in (E). (F and G) ApoE4, but not ApoE3, induces phosphorylation of Dab1 independent of Reelin. Primary neurons were incubated with ApoE-conditioned media or Reelin and tested for phospho-Dab1 and total Dab1. Quantitative analysis is shown (G). All data are expressed as mean ± SEM from three independent experiments. *p<0.05, **p<0.01, ***p<0.001. Statistical analysis was performed using one-way ANOVA and Dunnett’s post-hoc test (C and G) or Student’s t-test (E).10.7554/eLife.40048.008Figure 2—source data 1
+**Figure 2.:** (A) Timeline for experiment shown in B and C. (B and C) Apolipoprotein E (ApoE) isoforms reduce surface expression of Apoer2. ApoE-conditioned media treatment reduces the surface expression of Apoer2 in presence of Reelin in primary neurons. Apoer2 surface levels show a higher reduction with ApoE4 than ApoE3. Other ApoE receptors, such as low-density lipoprotein receptor-related protein 1 (Lrp1) and low-density lipoprotein receptor (Ldlr), as well as the endocytic receptor for transferrin (TfR) and insulin receptor (IR) exhibit comparable surface levels in the presence of ApoE3 or ApoE4. Levels of surface proteins and total proteins were analyzed by immunoblotting using antibodies raised against Apoer2, Lrp1, Ldlr, IR and TfR. Quantitative analysis of the ratio of surface and total receptor levels is shown (C). (D and E) Proteins from primary neurons incubated with ApoE-conditioned media were immunoprecipitated with anti-Apoer2 or control rabbit IgG and immunoblotted with anti-ApoE antibody. Input is shown in the right panel of (D) and quantification in (E). (F and G) ApoE4, but not ApoE3, induces phosphorylation of Dab1 independent of Reelin. Primary neurons were incubated with ApoE-conditioned media or Reelin and tested for phospho-Dab1 and total Dab1. Quantitative analysis is shown (G). All data are expressed as mean ± SEM from three independent experiments. *p<0.05, **p<0.01, ***p<0.001. Statistical analysis was performed using one-way ANOVA and Dunnett’s post-hoc test (C and G) or Student’s t-test (E).
 
-## Prolonged retention and activation of Apoer2 by ApoE4
+### Prolonged retention and activation of Apoer2 by ApoE4
 
 The delayed recycling of Apoer2 was also apparent by the prolonged retention of cell-derived ApoE4 compared to cell-derived ApoE3 in Apoer2-containing intracellular compartments as shown by co-immunoprecipitation of neuronal lysates (Figure 2D,E). That this prolonged retention may be caused by the partial unfolding of ApoE4 is further supported by an experiment in which increasing amounts of naturally secreted, receptor binding-competent ApoE4 particles were added to primary cortical neurons and tyrosine phosphorylation of Dab1 was measured. Dab1 binds to the NPxY motif in the cytoplasmic domain of Apoer2 and when the receptors are clustered, for example by interacting with Reelin, Dab1 undergoes transphosphorylation on tyrosine residues (Hiesberger et al., 1999; Howell et al., 1997). We hypothesized that ApoE4 in its molten-globule state, that is in acidic endosomes, might similarly induce receptor clustering in a dose-dependent manner, whereas ApoE3 would not. When we treated primary neurons with ApoE4, Dab1 phosphorylation was indeed increased as expected (Figure 2F,G).
 
-## Pharmacological NHE inhibition and acidification of vesicular pH restores Apoer2 trafficking in the presence of ApoE4
+### Pharmacological NHE inhibition and acidification of vesicular pH restores Apoer2 trafficking in the presence of ApoE4
 
 The pioneering work of Weisgraber and colleagues revealed the propensity of ApoE4 to become structurally labile and undergo transformation to a molten-globule state in a low pH environment, while ApoE2 and ApoE3 were far more resistant to low pH-induced unfolding (Morrow et al., 2002). In addition, we noticed that the isoelectric point (IEP) of ApoE4 lies close to the pH in the early endosome (Figure 3A). Many proteins are known to lose hydrophilicity near their IEP. Indeed, the first purification of insulin depended upon this biophysical phenomenon (Wintersteiner and Abramson, 1933). We thus hypothesized that the structural lability of ApoE4, combined with a reduced solubility in the acidic endosomal environment, might be a driver for the resulting recycling block. pH regulation in the endosome is achieved by a combination of two primary mechanisms: the activity of the proton pump, that is v-ATPase and the exchange of protons for Na+ or K+ through the activity of Na+/H+ exchangers (NHEs) (Figure 3B). Functional disruption of the endosomal NHE6 isoform thus lowers endosomal pH (Brett et al., 2002) and would be predicted to restore ApoE4 solubility and thus vesicle trafficking (Figure 3C).
 
@@ -74,39 +82,39 @@ NHE6-specific inhibitors do not presently exist, however, there is a large numbe
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/40048/elife-40048-fig4-v2.jpg)
 
-**Figure 4.:** (A) Chemical structure of the NHE inhibitor EMD87580. (B and C) EMD87580 increases the Reelin-induced surface expression of Apoer2 in ApoE4-treated neurons in a dose-dependent manner. Primary neurons were pre-treated with EMD87580 at the indicated concentrations and then incubated with Reelin with or without cell-derived ApoE4. Surface and total Apoer2 levels were analyzed by immunoblotting. (D and E) The effect of EMD87580 on Reelin-induced Apoer2 trafficking in the presence of ApoE3 or ApoE4. Primary neuronal cells were treated with EMD87580, Reelin and either ApoE3- or ApoE4-conditioned media. (F and G) Bafilomycin, a proton pump inhibitor, counteracts the effect of EMD87580 on Apoer2 recycling in a dose-dependent manner. Primary neurons were pre-treated with or without bafilomycin in the presence or absence of EMD87580 and subsequently incubated with ApoE4 and Reelin. Surface and total Apoer2 levels were analyzed by immunoblotting. (H and I) Bafilomycin shifts the EMD87580 dose response curve of Apoer2 surface expression. All values are expressed as mean ±SEM from three independent experiments. *p<0.05, **p<0.01, ***p<0.001. Statistical analysis was performed using one-way ANOVA and Dunnett’s post-hoc test (C, E and G) or Student’s t-test (I).10.7554/eLife.40048.011Figure 4—source data 1.
+**Figure 4.:** (A) Chemical structure of the NHE inhibitor EMD87580. (B and C) EMD87580 increases the Reelin-induced surface expression of Apoer2 in ApoE4-treated neurons in a dose-dependent manner. Primary neurons were pre-treated with EMD87580 at the indicated concentrations and then incubated with Reelin with or without cell-derived ApoE4. Surface and total Apoer2 levels were analyzed by immunoblotting. (D and E) The effect of EMD87580 on Reelin-induced Apoer2 trafficking in the presence of ApoE3 or ApoE4. Primary neuronal cells were treated with EMD87580, Reelin and either ApoE3- or ApoE4-conditioned media. (F and G) Bafilomycin, a proton pump inhibitor, counteracts the effect of EMD87580 on Apoer2 recycling in a dose-dependent manner. Primary neurons were pre-treated with or without bafilomycin in the presence or absence of EMD87580 and subsequently incubated with ApoE4 and Reelin. Surface and total Apoer2 levels were analyzed by immunoblotting. (H and I) Bafilomycin shifts the EMD87580 dose response curve of Apoer2 surface expression. All values are expressed as mean ±SEM from three independent experiments. *p<0.05, **p<0.01, ***p<0.001. Statistical analysis was performed using one-way ANOVA and Dunnett’s post-hoc test (C, E and G) or Student’s t-test (I).
 
-## shRNA knockdown of NHE6 is sufficient to restore normal Apoer2 trafficking
+### shRNA knockdown of NHE6 is sufficient to restore normal Apoer2 trafficking
 
 More than 10 different NHEs exist in mammals (Fuster and Alexander, 2014), which function in intracellular, organellar and extracellular pH regulation in all cells of the body and in a variety of organs. EMD87580, as most other commercially available NHE inhibitors, was developed with the goal of inhibiting NHE1 (Chen et al., 2004) and its ability to cross inhibit other NHE forms is unknown. Because ApoE4 blocks Apoer2 and glutamate receptor recycling, and the early endosome is the first acidic organelle ApoE4 encounters during endocytosis, we suspected that the effect of EMD87580 to restore normal receptor trafficking is due to NHE6 inhibition. However, we could not exclude that other vesicular NHEs, in particular the NHE9, which resides in the Golgi and the late endosome, participate in the release of the recycling block. To determine whether NHE6 inhibition is sufficient to restore normal Apoer2 recycling, we used shRNAs designed against all the vesicular NHEs present in intracellular compartments which ApoE and Apoer2 might encounter during their passage through the recycling pathway. Figure 5A–D shows that of all NHEs (1 and 5 through 9) that were targeted by shRNA inhibition, only NHE6-specific shRNAs were able to completely restore Apoer2 expression at the plasma membrane in the presence of ApoE4 (Figure 5A, lane 6, 5C, lanes 8, 10, 12, and quantified in Panels B and D). Three different shRNAs directed against NHE6 were used in Figure 5C and D. None of the shRNAs directed against NHE1, 5, 7, 8 or 9 had any effect on surface Apoer2 expression, neither in the absence of ApoE4 or in its presence.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/40048/elife-40048-fig5-v2.jpg)
 
-**Figure 5.:** (A and C) shRNA knockdown of NHE6, but not other NHEs (NHE1, 5, 7, 8, 9) restores ApoE4-impaired Apoer2 recycling. Lentivirus-mediated shRNAs targeting NHE1, 5, 6, 7, 8, or 9 were applied to primary neurons. Cells were then treated with ApoE4-conditioned media and Reelin, and cell surface and total Apoer2 were determined by immunoblotting. Arrows indicate conditions with restored Apoer2 surface levels. Three different shRNA constructs against NHE6 showed significant attenuation of Apoer2 cell surface levels (shNHE6 a, b, c). (B and D) Quantitative analysis of (A) and (C). All data are expressed as mean ±SEM of three independent experiments. ***p<0.001. Statistical analysis was performed using Student’s t-test (B and D).10.7554/eLife.40048.013Figure 5—source data 1.
+**Figure 5.:** (A and C) shRNA knockdown of NHE6, but not other NHEs (NHE1, 5, 7, 8, 9) restores ApoE4-impaired Apoer2 recycling. Lentivirus-mediated shRNAs targeting NHE1, 5, 6, 7, 8, or 9 were applied to primary neurons. Cells were then treated with ApoE4-conditioned media and Reelin, and cell surface and total Apoer2 were determined by immunoblotting. Arrows indicate conditions with restored Apoer2 surface levels. Three different shRNA constructs against NHE6 showed significant attenuation of Apoer2 cell surface levels (shNHE6 a, b, c). (B and D) Quantitative analysis of (A) and (C). All data are expressed as mean ±SEM of three independent experiments. ***p<0.001. Statistical analysis was performed using Student’s t-test (B and D).
 
-## shRNA knockdown of NHE6 restores normal trafficking of Apoer2, AMPA and NMDA receptors in the presence of ApoE4
+### shRNA knockdown of NHE6 restores normal trafficking of Apoer2, AMPA and NMDA receptors in the presence of ApoE4
 
 Next, we determined whether shRNA-mediated inhibition of NHE6 function would also restore the normal recycling of AMPA and NMDA-type glutamate receptors in primary neurons treated with ApoE4 and Reelin. Three different shRNAs which efficiently reduced NHE6 protein expression by at least 90% (Figure 6A) and a scrambled control shRNA were used in the receptor surface recycling assay (Figure 6B, lanes 4 – 8). Pharmacological inhibition of NHE function with EMD87580 was used as a control (lane 3). EMD87580 and the NHE6-specific shRNAs completely restored Apoer2 and glutamate receptor surface expression, while the scrambled shRNA had no effect (Panel B and quantified in Panels C-F). These findings suggested that NHE6 inhibition might be effective in restoring a normal synaptic response in ApoE4 targeted replacement mice, which we have previously shown are completely resistant to long-term potentiation (LTP) enhancement by Reelin (Chen et al., 2010; Lane-Donovan et al., 2014).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/40048/elife-40048-fig6-v2.jpg)
 
-**Figure 6.:** (A) Lentiviral shRNA knockdown efficiency of NHE6 protein expression in primary rat cortical neurons. (B) Lentiviral shRNA directed against NHE6 restores the ApoE4-induced trafficking deficits of surface receptors. Primary cortical neurons were infected with three different lentiviral shRNAs directed against NHE6 (shNHE6 a, b and c; lanes 6–7) or scrambled shRNA control (lanes 4, 5). Infected cultures were treated without (lanes 1 and 4) or with (lanes 2, 3, 5–8) cell-derived ApoE4 and Reelin (all lanes) and the cell surface biotinylation assay was performed for Apoer2, GluN2B, GluA1 and GluA2/3. (D–F) Quantitative analysis of immunoblot signal from (B). All data are expressed as mean ±SEM from three independent experiments. *p<0.05, **p<0.01, ***p<0.001. Statistical analysis was performed using one-way ANOVA and Dunnett’s post-hoc test (C–F).10.7554/eLife.40048.015Figure 6—source data 1.
+**Figure 6.:** (A) Lentiviral shRNA knockdown efficiency of NHE6 protein expression in primary rat cortical neurons. (B) Lentiviral shRNA directed against NHE6 restores the ApoE4-induced trafficking deficits of surface receptors. Primary cortical neurons were infected with three different lentiviral shRNAs directed against NHE6 (shNHE6 a, b and c; lanes 6–7) or scrambled shRNA control (lanes 4, 5). Infected cultures were treated without (lanes 1 and 4) or with (lanes 2, 3, 5–8) cell-derived ApoE4 and Reelin (all lanes) and the cell surface biotinylation assay was performed for Apoer2, GluN2B, GluA1 and GluA2/3. (D–F) Quantitative analysis of immunoblot signal from (B). All data are expressed as mean ±SEM from three independent experiments. *p<0.05, **p<0.01, ***p<0.001. Statistical analysis was performed using one-way ANOVA and Dunnett’s post-hoc test (C–F).
 
-## Pharmacological NHE inhibition restores Reelin-enhanced LTP in the presence of ApoE4
+### Pharmacological NHE inhibition restores Reelin-enhanced LTP in the presence of ApoE4
 
 To test if restored glutamate receptor trafficking by NHE6 inhibition improves synapse function, we measured hippocampal LTP in acute slices of human ApoE targeted replacement mice: ApoE3-knockin (ApoE3-KI) and ApoE4-knockin (ApoE4-KI). Mice were treated with or without EMD87580 by simultaneous intraperitoneal and intranasal application, the brains were subsequently harvested and electrophysiological field recordings were performed. We chose to complement the intraperitoneal injections with intranasal delivery since EMD87580, as all existing guanidine-based NHEs, have poor blood-brain-barrier penetration and intranasal delivery of small molecules and peptides including insulin has been shown to increase their biological effect in the brain (Grassin-Delyle et al., 2012). Consistent with previous results (Rönicke et al., 2009), we found that EMD87580 increased input-output (I/O) ratios in the ApoE3-KI mice (Figure 7A). In the ApoE4-KI mice, baseline I/O ratios were higher and did not respond to EMD87580 (Figure 7B). As shown previously (Durakoglugil et al., 2009), LTP was increased in ApoE3-KI slices treated with Reelin (Figure 7C). ApoE3-KI slices treated with EMD87580 also showed increased LTP (Figure 7C). Interestingly, Reelin and EMD87580 have no additional synergistic effect and in fact increase LTP to a lesser extent than either EMD or Reelin alone. As shown previously (Durakoglugil et al., 2009), Reelin had no effect on LTP in ApoE4-KI slices (Figure 7D). In contrast to ApoE3-KI, ApoE4-KI slices treated with EMD87580 exhibited reduced LTP. Importantly, ApoE4-KI slices with EMD87580 readily responded to Reelin, and LTP was increased. Therefore, on the ApoE4 knockin background, EMD87580 restores electrophysiological parameters comparable to the ApoE3 and wild-type background.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/40048/elife-40048-fig7-v2.jpg)
 
-**Figure 7.:** Mice were pre-treated with EMD87580 in vivo and acute hippocampal slices were subsequently analyzed by recording extracellular field potentials (A and B) Input-output curves are shown for ApoE3-KI (A) and ApoE4-KI (B). (A) ApoE3-KI slices treated with Reelin or treated with EMD87580 and Reelin exhibited increased I/O slopes compared to control (Ctrl: 1.127 ± 0.18; EMD87580: 1.653 ± 0.15; Reelin: 1.97 ± 0.14; Reelin and EMD87580: 2.23 ± 0.16; F = 9.567, p<0.05). (B) I/O curves were increased in ApoE4-KI slices at baseline (1.86 ± 0.16) compared to ApoE3-KI control (1.127 ± 0.18). Neither EMD87580 nor Reelin significantly affected the I/O slopes in ApoE4-KI slices (EMD: 1.705 ± 0.10; Reelin: 1.43 ± 0.09; Reelin and EMD: 1.67 ± 0.09; F = 1.8, p=0.14). (C and D) Results from LTP recordings in ApoE3-KI (C) and ApoE4-KI (D). Representative traces before (solid line) and 40 min after (dashed line) theta-burst stimulation (TBS) for each treatment paradigm are shown in the top panels. Bottom panels depict LTP recordings and quantification of average LTP responses between 40 and 60 min after TBS (bar graphs). (C) ApoE3-KI slices treated with Reelin (152.4% ± 21.69, n = 5) and EMD87580 (149.30 ± 25.29, n = 7) had increased LTP compared to control slices (109.7% ± 9.7, n = 6). Combined Reelin treatment with EMD87580 increased LTP (129.4 ± 17.6, n = 7) compared to control. (D) Untreated ApoE4-KI slices showed enhanced LTP (140.80% ± 10.5, n = 12) when compared to untreated ApoE3-KI slices (109.7% ± 9.7, n = 6). ApoE4-KI slices treated with Reelin did not further potentiate LTP (134.70% ± 9.63, n = 14), whereas ApoE4-KI slices treated with EMD87580 exhibited reduced LTP (102 ± 11.9, n = 14). ApoE4-KI slices with EMD87580 show increased LTP when treated with Reelin (136.30 ± 11.87, n = 15) as compared to EMD87580 treatment alone. Open circles: no additions; Open squares: Reelin alone; Gray diamonds: EMD87580 alone; Filled triangles: Reelin and EMD87580 treated.10.7554/eLife.40048.017Figure 7—source data 1.
+**Figure 7.:** Mice were pre-treated with EMD87580 in vivo and acute hippocampal slices were subsequently analyzed by recording extracellular field potentials (A and B) Input-output curves are shown for ApoE3-KI (A) and ApoE4-KI (B). (A) ApoE3-KI slices treated with Reelin or treated with EMD87580 and Reelin exhibited increased I/O slopes compared to control (Ctrl: 1.127 ± 0.18; EMD87580: 1.653 ± 0.15; Reelin: 1.97 ± 0.14; Reelin and EMD87580: 2.23 ± 0.16; F = 9.567, p<0.05). (B) I/O curves were increased in ApoE4-KI slices at baseline (1.86 ± 0.16) compared to ApoE3-KI control (1.127 ± 0.18). Neither EMD87580 nor Reelin significantly affected the I/O slopes in ApoE4-KI slices (EMD: 1.705 ± 0.10; Reelin: 1.43 ± 0.09; Reelin and EMD: 1.67 ± 0.09; F = 1.8, p=0.14). (C and D) Results from LTP recordings in ApoE3-KI (C) and ApoE4-KI (D). Representative traces before (solid line) and 40 min after (dashed line) theta-burst stimulation (TBS) for each treatment paradigm are shown in the top panels. Bottom panels depict LTP recordings and quantification of average LTP responses between 40 and 60 min after TBS (bar graphs). (C) ApoE3-KI slices treated with Reelin (152.4% ± 21.69, n = 5) and EMD87580 (149.30 ± 25.29, n = 7) had increased LTP compared to control slices (109.7% ± 9.7, n = 6). Combined Reelin treatment with EMD87580 increased LTP (129.4 ± 17.6, n = 7) compared to control. (D) Untreated ApoE4-KI slices showed enhanced LTP (140.80% ± 10.5, n = 12) when compared to untreated ApoE3-KI slices (109.7% ± 9.7, n = 6). ApoE4-KI slices treated with Reelin did not further potentiate LTP (134.70% ± 9.63, n = 14), whereas ApoE4-KI slices treated with EMD87580 exhibited reduced LTP (102 ± 11.9, n = 14). ApoE4-KI slices with EMD87580 show increased LTP when treated with Reelin (136.30 ± 11.87, n = 15) as compared to EMD87580 treatment alone. Open circles: no additions; Open squares: Reelin alone; Gray diamonds: EMD87580 alone; Filled triangles: Reelin and EMD87580 treated.
 
-## NHE inhibition counteracts Aβ-induced LTP suppression in ApoE4-KI mice
+### NHE inhibition counteracts Aβ-induced LTP suppression in ApoE4-KI mice
 
 These data suggest that endosomal NHE inhibition can neutralize the effect of ApoE4 on vesicle trafficking and concomitant synaptic dysfunction. Can it also reverse the persistent synaptic suppression caused by oligomeric β-amyloid in the presence of ApoE4? Aβ42 oligomers potently suppress synaptic potentiation (Townsend et al., 2006), but this can be averted by preincubation of hippocampal slices with Reelin, which can by itself potentiate the synapse and thus counteract the Aβ induced suppression (Durakoglugil et al., 2009). In Figure 8, we repeated these experiments again in the absence as well as in the presence of EMD87580. As we had found previously, AD patient brain extracts containing Aβ oligomers, but not control brain extracts, potently suppressed LTP in hippocampal slices from ApoE3-KI and in ApoE4-KI mice. Reelin prevented this suppression in the ApoE3 slices, while the slices from ApoE4 mice were almost completely resistant to Reelin and LTP remained suppressed (Figure 8, solid triangles in Panels A and B). By striking contrast, this LTP suppression in the presence of Aβ and Reelin in ApoE4 slices was completely abolished when the slices were perfused with EMD87580 for 4 hr prior to LTP induction. In data not shown here we observed at 30-min preperfusion with EMD87580 a trend toward alleviating the ApoE4-mediated Reelin resistance that was, however, not yet significant. This may suggest that relief of the ApoE4 endosomal recycling block requires some time, perhaps to ‘flush out’ the vesicles that are already stuck and clog up the recycling route.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/40048/elife-40048-fig8-v2.jpg)
 
-**Figure 8.:** (A–D) Treatment of hippocampal slices with AD brain extracts impairs long-term potentiation (LTP) in ApoE3-KI and ApoE4-KI mice. Reelin can attenuate the LTP deficits induced by AD extracts in ApoE3-KI, but not ApoE4-KI mice. Inhibition of NHE counteracts the LTP deficits induced by AD extract in ApoE4-KI mice. Hippocampal slices were prepared from 2- to 3-month-old ApoE3-KI and ApoE4-KI mice. Extracellular field recordings were performed in slices treated with AD brain extract, Reelin and/or EMD87580. Control slices were treated with control brain extract. Theta burst stimulation (TBS) was performed 20 min after stable baseline was attained. Representative traces are shown in each panel, before TBS induction (black) and 40 min after TBS (grey). (C, D) Quantitative analysis of normalized fEPSP slopes at 40–60 min post TBS for (A), respectively (B). All data are expressed as mean ±SEM. *p<0.05, **p<0.01. Statistical analysis was performed using one-way ANOVA followed by Tukey’s post-hoc test (C, D).10.7554/eLife.40048.019Figure 8—source data 1.inhibition counteracts Aβ-induced LTP suppression in ApoE4-KI mice.
+**Figure 8.:** (A–D) Treatment of hippocampal slices with AD brain extracts impairs long-term potentiation (LTP) in ApoE3-KI and ApoE4-KI mice. Reelin can attenuate the LTP deficits induced by AD extracts in ApoE3-KI, but not ApoE4-KI mice. Inhibition of NHE counteracts the LTP deficits induced by AD extract in ApoE4-KI mice. Hippocampal slices were prepared from 2- to 3-month-old ApoE3-KI and ApoE4-KI mice. Extracellular field recordings were performed in slices treated with AD brain extract, Reelin and/or EMD87580. Control slices were treated with control brain extract. Theta burst stimulation (TBS) was performed 20 min after stable baseline was attained. Representative traces are shown in each panel, before TBS induction (black) and 40 min after TBS (grey). (C, D) Quantitative analysis of normalized fEPSP slopes at 40–60 min post TBS for (A), respectively (B). All data are expressed as mean ±SEM. *p<0.05, **p<0.01. Statistical analysis was performed using one-way ANOVA followed by Tukey’s post-hoc test (C, D).
 
 ## Discussion
 
@@ -132,23 +140,754 @@ In summary, we have shown that the conformational change of ApoE4 to a molten-gl
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>Thermo Fisher</td>
+      <td>R70507, RRID: CVCL_0045</td>
+      <td>Tested mycoplasma free annually, last test January 16,2018</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216, RRID: CVCL_0063</td>
+      <td>Tested mycoplasma free annually, last test January 16,2018</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse/ApoE3ki (B6.129P2- Apoetm2 (APOE*3)Mae N8)</td>
+      <td>(Knouff et al., 1999; Sullivan et al., 1997)</td>
+      <td>Originally provided by Dr. Nobuyo Maeda</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse/ApoE4ki (B6.129P2- Apoetm2 (APOE*4)Mae N8)</td>
+      <td>(Knouff et al., 1999;Sullivan et al., 1997)</td>
+      <td>Originally provided by Dr. Nobuyo Maeda</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>SD rat</td>
+      <td>Charles River</td>
+      <td>SC:400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti- ApoE, pAb</td>
+      <td>EMD Millipore</td>
+      <td>178479, RRID: AB_10682965</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Apoer2</td>
+      <td>Herz Lab, #2561</td>
+      <td></td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Dab1</td>
+      <td>Herz Lab, #5091</td>
+      <td></td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-FLAG M2</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3165, RRID: AB_259529</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-GluA1</td>
+      <td>Abcam</td>
+      <td>ab31232, RRID: AB_2113447</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-GluA2/3</td>
+      <td>EMD Millipore</td>
+      <td>07–598, RRID: AB_310741</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-GluN2B</td>
+      <td>Cell Signaling Technology</td>
+      <td>4207S, RRID: AB_1264223</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti -Insulin Receptor B (4B8), mAb</td>
+      <td>Cell Signaling Technology</td>
+      <td>3025, RRID: AB_ 2280448</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Lrp1</td>
+      <td>Herz Lab</td>
+      <td></td>
+      <td>1:5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Ldlr</td>
+      <td>Herz Lab</td>
+      <td></td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti -NHE6 (C-terminus)</td>
+      <td>Herz Lab</td>
+      <td></td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-phosphotyrosine (4G10) mAb</td>
+      <td>EMD Millipore</td>
+      <td>05–321, RRID: AB_309678</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Transferrin receptor</td>
+      <td>Abcam</td>
+      <td>Ab61134, RRID: AB_943620</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-B-Actin</td>
+      <td>Abcam</td>
+      <td>Ab8227, RRID: AB_2305186</td>
+      <td>1:3000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>6-cyano-7- nitroquinoxaline- 2,3-dione, CNQX</td>
+      <td>Sigma-Aldrich</td>
+      <td>C127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ApoE3, human</td>
+      <td>Sigma-Aldrich</td>
+      <td>SRP4696</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B-27 Supplement (50X), serum free</td>
+      <td>Thermo Fisher</td>
+      <td>17504044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafilomycin A1</td>
+      <td>Cayman Chemical</td>
+      <td>CAS88899-55-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Sigma-Aldrich</td>
+      <td>D6046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FuGENE</td>
+      <td>Promega</td>
+      <td>E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HBSS (1X)</td>
+      <td>Gibco</td>
+      <td>14175</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Glutamic acid (Glutamate)</td>
+      <td>Sigma-Aldrich</td>
+      <td>G1251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurobasal Medium (1X) Liquid without Phenol Red</td>
+      <td>Thermo Fisher</td>
+      <td>12348017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NeutrAvidin Agarose</td>
+      <td>Thermo Fisher</td>
+      <td>29201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nimodipine</td>
+      <td>Sigma- Aldrich</td>
+      <td>N3764</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NP-40 Alternative</td>
+      <td>EMD Millipore</td>
+      <td>492016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>32% Paraformaldehyde AQ solution</td>
+      <td>Fisher Scientific</td>
+      <td>15714S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PBS (1X)</td>
+      <td>Sigma- Aldrich</td>
+      <td>D8537</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin- Streptomycin Solution, 100X</td>
+      <td>Corning</td>
+      <td>30–002 CI</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphatase Inhibitor Cocktail</td>
+      <td>Thermo Fisher</td>
+      <td>78420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-D -Lysine Solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>A-003-M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protein A- Sepharose 4B</td>
+      <td>Thermo Fisher</td>
+      <td>101042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protein G- Sepharose 4B</td>
+      <td>Thermo Fisher</td>
+      <td>101142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>P8340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium- hydrogen exchanger inhibitor</td>
+      <td>Merck KGaA</td>
+      <td>EMD87580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sulfo-NHS- SS-biotin</td>
+      <td>Pierce</td>
+      <td>21331</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin</td>
+      <td>Sigma-Aldrich</td>
+      <td>T8024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma- Aldrich</td>
+      <td>CAS9002-93-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectashield with DAPI</td>
+      <td>Vector Labs</td>
+      <td>H-1200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-Zeo</td>
+      <td>Invitrogen</td>
+      <td>V79020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2</td>
+      <td>Addgene</td>
+      <td>12260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene</td>
+      <td>12259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLKO.1</td>
+      <td>Addgene</td>
+      <td>10878</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVXCMV100</td>
+      <td>(Dean et al., 2017)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pCrl, Reelin expression vector</td>
+      <td>(D'Arcangelo et al., 1997)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pcDNA3.1-Apoer2-Fc</td>
+      <td>(Hiesberger et al., 1999)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pcDNA3.1-ApoE2</td>
+      <td>(Chen et al., 2010)</td>
+      <td>N/A</td>
+      <td>progenitor pcDNA3.1-Zeo</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pcDNA3.1-ApoE3</td>
+      <td>(Chen et al., 2010)</td>
+      <td>N/A</td>
+      <td>progenitor pcDNA3.1-Zeo</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pcDNA3.1-ApoE4</td>
+      <td>(Chen et al., 2010)</td>
+      <td>N/A</td>
+      <td>progenitor pcDNA3.1-Zeo</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (shRNA construct)</td>
+      <td>pLKO.1-shRNA scramble</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>progenitor pLKO.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (shRNA construct)</td>
+      <td>pLKO.1-shNHE1</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000044651</td>
+      <td>progenitor pLKO.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (shRNA construct)</td>
+      <td>pLKO.1-shNHE5</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>progenitor pLKO.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (shRNA construct)</td>
+      <td>pLKO.1-shNHE6 a</td>
+      <td>Open Biosystem</td>
+      <td>TRC N000 0068828</td>
+      <td>progenitor pLKO.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (shRNA construct)</td>
+      <td>pLKO.1-shNHE6 b</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068830</td>
+      <td>progenitor pLKO.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (shRNA construct)</td>
+      <td>pLKO.1-shNHE6 c</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068832</td>
+      <td>progenitor pLKO.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (shRNA construct)</td>
+      <td>pLKO.1-shNHE7</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068812</td>
+      <td>progenitor pLKO.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (shRNA construct)</td>
+      <td>pLKO.1-shNHE8</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>progenitor pLKO.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (shRNA construct)</td>
+      <td>pLKO.1-shNHE9</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068856</td>
+      <td>progenitor pLKO.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pLVX-mCherry- Apoer2</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>progenitor pLVXCMV100</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pcDNA3.1- ApoE3-GFP</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>progenitor pcDNA3.1-Zeo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>Scramble shRNA forward</td>
+      <td>IDT Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5’-CCGGCCTAAGGTTAAGTCGCCCT CGCTC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>Scramble shRNA reverse</td>
+      <td>IDT Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-GAGCGAGGGCGACTTAACCTTAGG TTTTTG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE1 (SLC9A1) forward</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000044651</td>
+      <td>5’-CCGCCATC GGATCTTCCCTTCCTTACTCG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE1 (SLC9A1) reverse</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000044651</td>
+      <td>5'-AGTAAGGAAGGGAAGATCCGATGTTTTTG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE5 (SLC9A5) forward</td>
+      <td>IDT Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5’-CCGGAAGGACCACACTCATCTTAG TCTCG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent (oligo)</td>
+      <td>shRNA anti NHE5 (SLC9A5) reverse</td>
+      <td>IDT Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-AGACTAAGATGAGTGTGGTCCTTT TTTTG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE6 (SLC9A6) -a forward</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068828</td>
+      <td>5’-CCGGGCCGTTTATATGGCATAGGAACTC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE6 (SLC9A6)- a reverse</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068828</td>
+      <td>5'-GAGTTCCTATGCCATATAAACGGCTTTTTG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE6 (SLC9A6)-b forward</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068830</td>
+      <td>5’-CCGGCCCTTGTCTCTCTTACTTAATCTCG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE6 (SLC9A6)-b reverse</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068830</td>
+      <td>5'-AGATTAAGTAAGAGAGACAAGGGTTTTTG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE6 (SLC9A6)-c forward</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068832</td>
+      <td>5’-CCGGCCTTGGGTCTATCTTAGCATACTCG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE6 (SLC9A6)-c reverse</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068832</td>
+      <td>5'-AGTATGCTAAGATAGACCCAAGGTTTTTG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE7 (SLC9A7) forward</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068812</td>
+      <td>5’-CCGGCCATTGTACT ATCCTCGTCTACTCG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE7 (SLC9A7) reverse</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068812</td>
+      <td>5'-AGTAGACGAGGATAGTACAATGGTTTTTG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE8 (SLC9A8) forward</td>
+      <td>IDT Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5’-CCGGAAGGCTTCATGTGGTTGGATGCTC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE8 (SLC9A8) reverse</td>
+      <td>IDT Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-GAGCATCCAACCACAT GAAGCCTTTTTTTG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE9 (SLC9A9) forward</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068856</td>
+      <td>5’-CCGGCTGGGCAGAAA GCAGAAGATTCTC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>shRNA anti NHE9 (SLC9A9) reverse</td>
+      <td>Open Biosystem</td>
+      <td>TRCN0000068856</td>
+      <td>5'-GAGAATCTTCTGCTTT CTGCCCAGTTTTTG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>Apoer2 NT cloning site (sdm) forward</td>
+      <td>Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-TACAAATCTAGAGATCCG CTGCCGGGCGGCCAAG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>Apoer2 NT cloning site (sdm) reverese</td>
+      <td>Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-ACTCATGTCGACCGCTG CGGAGAGATG CTGAAGCTG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>mCherry (for mCherry-Apoer2) forward</td>
+      <td>Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-AAATTCGTCGACATGGTG AGCAAGGGCGA GGAGGATAAC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>mCherry (for mCherry-Apoer2) reverse</td>
+      <td>Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-GGGAACGTCTAGAG GACTTGTACAGCTC GTCCATG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>Apoer2 forward</td>
+      <td>Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-TGGAGCGCTAGCGC CACCATGGGCCGCCC AGAACTGG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>Apoer2 reverse</td>
+      <td>Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-AACCCGGAATTCTCA GGGCAGTCCAT CATCTTCAAGAC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>NheI-site removal (sdm) forward</td>
+      <td>Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-GTTTACCGTCGA CCTCTAGCTAG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>NheI-site removal (sdm) reverse</td>
+      <td>Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-AATGTCAAGGCCTCTCACTCTCTG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>CMVfull forward</td>
+      <td>Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-CAGTTTATCGATG GCCAGATATACGCG TTGACATTG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>CMVfull reverse</td>
+      <td>Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-TTTCCGCTAGCGGATCC CAGCTTGGGTCT CCCTATAGTGAGT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>ApoE3 (ApoE3-GFP) forward(</td>
+      <td>Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-ATCAGGGAATTCAAC CATGAAGGTTCTG TGGGCTGCG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligo)</td>
+      <td>GFP (ApoE3-GFP) reverse</td>
+      <td>Inegrated DNA Technologies</td>
+      <td>N/A</td>
+      <td>5'-ATTGGTGGATCCGCGT GATTGTCGCTG GGCACAG-3'</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Creative Cloud</td>
+      <td>Adobe</td>
+      <td>RRID: SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7.0</td>
+      <td>GraphPad Software</td>
+      <td>RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/ImageJ</td>
+      <td>NIH</td>
+      <td>RRID: SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabView7.0</td>
+      <td>National Instruments</td>
+      <td>RRID: SCR_014325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Odyssey Imaging System</td>
+      <td>LI-COR</td>
+      <td>RRID: SCR_014579</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustal Omega</td>
+      <td>EMBL-EBI</td>
+      <td>RRID: SCR_001591</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Leica TCS SPE</td>
+      <td>Leica</td>
+      <td>RRID: SCR_002140</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Request for reagents should be directed to Joachim Herz (Joachim.Herz@utsouthwestern.edu).
 
-## Animals
+### Animals
 
 ApoE3-KI or ApoE4-KI mice backcrossed to C57BL/6 were generously provided by Nobuyo Maeda and Patrick Sullivan (Knouff et al., 1999; Sullivan et al., 1997). Animals were group-housed on a standard 12 hr light/dark cycle and fed ad libitum standard mouse chow (Diet 7001; Harlan Teklad, Madison, WI, USA). Ethics Statement: All experimental procedures were performed according to the approved guidelines for Institutional Animal Care and Use Committee (IACUC) at the University of Texas Southwestern Medical Center at Dallas (Approval Number: A3472-01; 2015-101088).
 
-## Human cortical brain extracts
+### Human cortical brain extracts
 
 Deidentified human cortical brain extracts (IRB exempt) from a non-AD, normal subject (Control) and a clinically and histopathologically confirmed Alzheimer’s disease (AD) case were prepared as described previously (Durakoglugil et al., 2009). Briefly, control brain extract contained monomeric Aβ, but no detectable oligomers and only a trace amount of higher order aggregates; by contrast, AD brain extract contained monomeric Aβ in addition to Aβ dimers and higher order aggregates. One gram of brain tissue was homogenized in 4 ml of Tris buffered saline and centrifuged at 175,000 x g as described by Shankar et al. (2008). The supernatant was designated ‘extract’. The genotype of the brain tissue was ApoE3/3 for the control and ApoE3/4 for the AD tissue.
 
-## Primary neurons
+### Primary neurons
 
 Primary rat (Sprague-Dawley) cortical neurons (E18) were prepared as described previously (Chen et al., 2005) and cultured in six-well plates (1 million neurons/9 cm2) or on Poly-D-Lysine coated coverslips (30,000 neurons/1.1 cm2) in Neurobasal/B27 medium at 37°C and 5% CO2. At 9–14 days in vitro (DIV) primary neurons were used for experiments.
 
-## Plasmid constructs
+### Plasmid constructs
 
 All primers used for cloning are listed in the Key Resources Table.
 
@@ -156,49 +895,49 @@ pcDNA3.1-Apoer2-Fc: The mouse ApoER2-Fc construct (secreted Apoer2 ectodomain), 
 
 pLKO.1-shRNA constructs: pLKO.1-constructs containing shRNA targeting different NHE subtypes were purchased from Sigma or created by inserting aligned oligos (for shRNA sequence refer to Key Resources Table) into the pLKO.1-TRC, as described elsewhere (Moffat et al., 2006). pLVX-mCherry-Apoer2: SalI and XbaI cloning sites were inserted into a plasmid containing the Apoer2 full-length cDNA immediately downstream of the Apoer2 signal peptide (N-terminus, NT) by site-directed mutagenesis. In a second step, PCR-amplified mCherry was inserted into the newly created SalI and XbaI sites. NT-mCherry-Apoer2 was then amplified by PCR and cloned into the NheI and EcoRI sites of lentiviral vector that was generated by modifying pLVXCMV100 by removing an NheI site through site-directed mutagenesis and replacing the truncated CMV100 with a full length CMV promoter (inserted into the ClaI and NheI sites). pcDNA3.1-ApoE3-GFP: ApoE3 was PCR-amplified and inserted into pEGFP-N1 using EcoR1 and BamHI cloning sites.
 
-## Generation of recombinant proteins
+### Generation of recombinant proteins
 
-## Reelin
+#### Reelin
 
 HEK 293 cells stably expressing Reelin (pCrl) were cultured in DMEM medium (D'Arcangelo et al., 1995; Förster et al., 1998). Medium containing Reelin was harvested and purified as described previously (Weeber et al., 2002). Authenticated by their ability to secrete Reelin. Mycoplasma status ascertained annually, last negative result after submission of this manuscript.
 
 The ApoE used in this study was contained in lipoprotein particles naturally secreted from transfected cells in a minimally lipidated state and produced as follows: HEK 293 cells were transfected (FuGENE) with pcDNA3.1 vector containing full length human ApoE (ApoE2, ApoE3, ApoE4, ApoE4P, mutant ApoE3, or mutant ApoE4) cDNA or empty pcDNA3.1 (control). 24 hr post-transfection DMEM medium was replaced with Neurobasal medium. After 3 days, the medium containing the different ApoE isoforms was collected and analyzed on SDS-PAGE to calculate ApoE concentrations using commercial human ApoE3 as a standard. The proteins were immunoblotted for ApoE and detected with IRDye 800CW secondary antibody (Li-Cor). ApoE levels were quantified Odyssey infrared imaging.
 
-## Western blots
+### Western blots
 
 After treatment, neurons were washed three times with cold PBS, and lysed in RIPA buffer (50 mM Tris-HCl, pH 8.0; 150 mM NaCl; 1% Nonidet P-40; phosphatase and protease inhibitors) for 20 min on ice. Cellular debris was removed by centrifugation for 10 min at 14,000 rpm and 4°C in an Eppendorff centrifuge. Protein concentrations were measured using the Bradford Protein Assay (Bio-Rad). After adding 4x SDS loading buffer (0.1 M Tris-HCl, pH 6.8, 2% SDS, 5% β-mercaptoethanol, 10% glycerol, and 0.05% bromphenol blue) the samples were boiled at 95°C for 10 min. For immunoblotting of NHE6, samples were incubated for 30 min at room temperature instead of boiling. 4x SDS loading buffer was added to the media to detect secreted proteins. After boiling (95°C for 10 min) samples were loaded on SDS-PAGE. Proteins were transferred to a nitrocellulose membrane for western blotting with the indicated antibodies.
 
-## Confocal microscopy
+### Confocal microscopy
 
 For imaging DIV9 neurons on 12 mm coverslips were infected with lentiviral DNA encoding NT-mCherry-Apoer2. Lentivirus containing medium was removed 14 hr after infection. On DIV12 ApoE3-GFP containing supernatant of 293 cells transfected with pcDNA3.1-ApoE3-GFP (FuGENE) was added. On DIV13 neurons were washed 2x with PBS and fixed with 4% PFA. Coverslips were mounted using Vectashield Antifade Mounting Medium with DAPI. Z-stack images were obtained using a Confocal Zeiss LSM880 Airyscan microscope and a 63x objective and a step size of 1 µm. 3D projections and orthogonal views were generated using NIH Fiji/ImageJ software.
 
-## Surface biotinylation/Apoer2 recycling
+### Surface biotinylation/Apoer2 recycling
 
 Primary neurons were pre-treated for 30 min with ApoE-conditioned medium (5 μg/ml unless stated differently), then incubated with Reelin (2 μg/ml) for an additional 30 min (see timeline in Figure 2A). After treatment cells were washed with cold PBS and incubated in PBS containing sulfo-NHS-SS-biotin (1.0 mg/ml) for 30 min at 4°C. Excess reagent was quenched by rinsing the neurons with cold PBS containing 100 mM glycine. Neurons were lysed in 160 µl/9 cm2 lysis buffer (PBS with 0.1% SDS, 1% Triton X-100, and protease inhibitors) at 4°C for 20 min. Cell debris was removed by centrifugation for 10 min at 14,000 rpm at 4°C in an Eppendorff centrifuge. The protein concentration was measured using the Bradford Protein Assay (Bio-Rad) and 100 µg of total protein was incubated with 50 µl of NeutrAvidin agarose at 4°C for 1 hr. Agarose pellets were washed three times using washing buffer (500 mM NaCl; 15 mM Tris-HCl, pH 8.0; 0.5% Triton X-100), biotinylated surface proteins were eluted from agarose beads by boiling in 2x SDS sample loading buffer and loaded on SDS-PAGE for western blot analysis. For drug treatments, cells were pre-incubated with EMD87580 and/or Bafilomycin for 1 hr prior to ApoE and Reelin addition. 3 μM EMD87580 (3 mM stock in PBS) was used unless stated differently.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 Apoer2-Fc/ApoE interaction: Protein G Sepharose (50 µl) was added to 1 ml culture supernatant containing ApoER2-Fc from HEK 293 cells at 4°C overnight. Beads were then sedimented by brief centrifugation, and then 500 µl culture supernatant containing ApoE and CaCl2 (final concentration 1 mM) was added to the beads. The mixture was incubated for an additional 4 hr at 4°C. Beads were washed three times using washing buffer (500 mM NaCl, 15 mM Tris.HCl, 0.5% Triton X-100 (pH8.0)), and bound proteins were separated on 4 – 15% SDS-PAGE and immunoblotted for ApoE.
 
 Apoer2-ApoE interaction: ApoE-treated (5 µg/ml for 3 hr at 37°C) neurons were washed with ice cold PBS and lysed in RIPA buffer. For immunoprecipitation 600 µg of lysate were co-incubated with anti-Apoer2 rabbit serum or control rabbit serum and protein A-Sepharose beads at 4°C overnight. Precipitated beads were washed 3x in RIPA buffer, resuspended in 2x SDS sample buffer and boiled at 95°C for 10 min. Eluted proteins were probed for Apoer2 and ApoE.
 
-## Dab1 phosphorylation
+### Dab1 phosphorylation
 
 Primary neurons were treated with Reelin (2 µg/ml for 30 min) or ApoE3 or ApoE4 at 37°C for 3 hr. After treatment, neurons were lysed and prepared for western blotting as described above and probed with antibodies raised against total Dab1 and phospho-Tyrosine (4G10) to identify phospho-Dab1 (Masereel et al., 2003).
 
-## Preparation of lentiviral particles
+### Preparation of lentiviral particles
 
 HEK 293 T cells were co-transfected with psPAX2, pMD2.G, and the individual transfer constructs (pLKO.1-shRNA or pLVX-mCherry-Apoer2). Media was replaced after 12 – 15 hr. Viral particle containing media was collected and cell debris spun down. The virus was concentrated by ultra-centrifugation and re-suspension in DMEM (1/10th volume). To transfect neurons 100 µl of concentrated virus was added per ml of medium in the culture dish. Transduction media were replaced 12 – 15 hr after infection and neurons were incubated for 3 days before experiments were conducted.
 
-## In vivo EMD87580 treatment
+### In vivo EMD87580 treatment
 
 For in vivo treatment, mice were intraperitoneally injected with EMD87580 (1 mg/ml in PBS) at a dose of 5 mg/kg. Additionally, mice received intranasal application of 10 µl of 1 mg/ml EMD87580. Animals were treated twice a day for 2 consecutive days (in the morning and evening, 12 hr interval). On the third day, mice were treated with EMD87580 in the morning and sacrificed 2 hr later for extracellular field recordings of hippocampal slices.
 
-## Extracellular field recordings
+### Extracellular field recordings
 
 Hippocampal slices were prepared from 2 to 3 months old ApoE3-KI or ApoE4-KI mice. Brains were quickly removed and placed in cold high sucrose cutting solution (110 mM sucrose, 60 mM NaCl, 3 mM KCl, 1.25 mM NaH2PO4, 28 mM NaHCO3, 0.5 mM CaCl2, 5 mM glucose, 0.6 mM Ascorbic acid, 7 mM MgSO4). 400 µm transverse sections were cut using a vibratome. Slices were then transferred into an incubation chamber containing 50% aCSF (124 mM NaCl, 3 mM KCl, 1.25 mM NaH2PO4, 26 mM NaHCO3, 10 mM D-glucose, 2 mM CaCl2, 1 mM MgSO4) and 50% sucrose cutting solution. For electrophysiological recordings a final concentration of 3 µM EMD87580 was used. For combined treatment with Reelin, AD brain extract and EMD87580 (Figure 8), slices were pretreated with EMD87580 for 3 hr and that concentration was maintained during recording in the presence or absence of Reelin and/or AD extract. Slices were transferred to the interface recording chamber where they were kept in aCSF at 31°C and a flow rate of 2 – 3 ml/min. In the recording chamber, different combinations of treatment with AD brain extract, Reelin, and EMD87580 were used. Slices were perfused with the different final components for an additional ~30 min until they stabilized in the recording chamber before application of theta burst stimulation and one hour thereafter throughout the recording period. For stimulation concentric bipolar electrodes were used (FHC, Catalog no CBBRC75, 1201 Main St Bowdoin, ME 04287, USA) and placed into the stratum radiatum. Stimulus intensity was set at 40 – 60% maximum response and delivered through an Isolated Pulse Stimulator (A-M Systems, Model 2100. A custom written program in Labview 7.0 was used for recording and analysis of LTP experiments (courtesy of Dr Jay Gibson). A theta burst (TBS; train of 4 pulses at 100 Hz repeated 10 times with 200 ms intervals and again repeated 5 times at 10 s intervals) was used as conditioning stimulus. For input/output analysis data were binned and fitted linearly. Slopes were calculated using regression analysis.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data were expressed as the mean ± SEM and evaluated using two-tailed Student’s t test for two groups with one variable tested and equal variances, or one-way analysis of variance (ANOVA) with Dunnett’s post-hoc for multiple groups with only variable tested. The differences were considered to be significant at p<0.05 (*p<0.05, **p<0.01, ***p<0.001).
 

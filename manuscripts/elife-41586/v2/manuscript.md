@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.41586.001 Information processing by cerebellar molecular layer interneurons (MLIs) plays a crucial role in motor behavior. MLI recruitment is tightly controlled by the profile of short-term plasticity (STP) at granule cell (GC)-MLI synapses. While GCs are the most numerous neurons in the brain, STP diversity at GC-MLI synapses is poorly documented. Here, we studied how single MLIs are recruited by their distinct GC inputs during burst firing. Using slice recordings at individual GC-MLI synapses of mice, we revealed four classes of connections segregated by their STP profile. Each class differentially drives MLI recruitment. We show that GC synaptic diversity is underlain by heterogeneous expression of synapsin II, a key actor of STP and that GC terminals devoid of synapsin II are associated with slow MLI recruitment. Our study reveals that molecular, structural and functional diversity across GC terminals provides a mechanism to expand the coding range of MLIs.
+Information processing by cerebellar molecular layer interneurons (MLIs) plays a crucial role in motor behavior. MLI recruitment is tightly controlled by the profile of short-term plasticity (STP) at granule cell (GC)-MLI synapses. While GCs are the most numerous neurons in the brain, STP diversity at GC-MLI synapses is poorly documented. Here, we studied how single MLIs are recruited by their distinct GC inputs during burst firing. Using slice recordings at individual GC-MLI synapses of mice, we revealed four classes of connections segregated by their STP profile. Each class differentially drives MLI recruitment. We show that GC synaptic diversity is underlain by heterogeneous expression of synapsin II, a key actor of STP and that GC terminals devoid of synapsin II are associated with slow MLI recruitment. Our study reveals that molecular, structural and functional diversity across GC terminals provides a mechanism to expand the coding range of MLIs.
 
 ## Introduction
 
@@ -30,13 +30,49 @@ Given the abundance of GCs and the importance of STP at GC-MLI synapses for cere
 
 ## Results
 
-## Functional heterogeneity at unitary GC-MLI synapses during high-frequency stimulations
+### Functional heterogeneity at unitary GC-MLI synapses during high-frequency stimulations
 
 In order to study how information from single GC inputs is encoded by MLIs, we measured STP at unitary GC-MLI synapses in acute parasagittal slices by minimal electrical stimulation of PFs (10 pulses at 100 Hz), in the direct vicinity of the dendritic tree of a recorded MLI (Malagon et al., 2016; Miki et al., 2016). MLIs localized in the vermis (lobules IV-VI) were recorded in whole-cell voltage-clamp configuration and loaded with Atto-594 (n = 49) to visualize their dendritic tree and their morphology (Figure 1—figure supplement 1A). Using two-photon microscopy, the stimulation pipette was visually positioned above an isolated dendrite. The stimulating currents were carefully adjusted to stimulate only a single synaptic contac (see Materials and methods and Figure 1—figure supplement 1C–E). In 28 MLIs, we recorded synaptic responses from at least 2 GCs. STP profiles were highly heterogeneous across unitary GC-MLI contacts (n = 96) including unitary connections contacting the same MLI (Figure 1). To classify the STP profiles, we used principal component analysis (PCA) on the averaged and normalized synaptic charges in trains of EPSCs followed by a k-means clustering analysis (Figure 2—figure supplements 1 and 2). We identified four clusters that characterize STP at GC-MLI synapses (Figure 2A–B). The profiles differ by: (i) the quantity of neurotransmitter released at the first stimuli (Figure 2C, left), (ii) paired-pulse plasticity (Figure 2C, right), (iii) the STP profiles during the first four EPSCs, and (iv) the ability to sustain glutamate release after the fourth stimuli. Because high-frequency stimulation can change the excitability of PFs, it should be ensured that no additional PFs are recruited during the train. Given precautions made to select the lowest stimulation intensity (see Materials and methods), such recruitment occurs randomly during the train. Recruitment of additional PFs may strongly affect the profile of STP from one train to another during successive stimulations and skew the classification of inputs. We checked whether the profile of STP was conserved during 10 successive 100 Hz trains. The systematic narrow clustering of 10 recordings belonging to the same series of stimulations in the cloud of point of PCA transformation (Figure 2—figure supplement 2A,B) clearly indicated that the profiles of STP were conserved from one train to another during successive stimulations of the same synaptic contact. Recruitment of additional PFs might also depend on the intensity of stimulation. However, the lack of correlation between the charge of the first EPSCs, PPR, PC1 or PC2 and the stimulation current intensity indicated that STP profiles were not affected by this parameter (Figure 2—figure supplement 2C). Choosing intensities just above the threshold could also induce failure of fiber recruitment rather than presynaptic mechanisms. However, the classification of inputs using PCA transformation followed by k-mean clustering analysis was weakly affected when EPSCs at the first stimulus were excluded from the dataset (Figure 2—figure supplement 3). Hence, putative experimental errors due to unexpected changes in PF excitability did not influence the overall classification of inputs.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/41586/elife-41586-fig1-v2.jpg)
+
+**Figure 1.:** (A) Typical experiment showing the profile of STP during 100 trains at three unitary inputs recruited by local stimulation of PF at two different locations (Z1 to Z3). Figure shows post-hoc reconstruction of a recorded MLI. The left and right dashed lines represent the location of the Purkinje cell layer (PCL) and the pia, respectively. (B) Superimposed traces correspond to EPSCs recorded during trains of 10 stimuli at 100 Hz after minimal stimulation at Z1, Z2 and Z3 locations. Averaged traces from 10 successive stimulations are represented in purple (Z1), green (Z2) and blue (Z3). (C) Corresponding EPSC charges versus stimulus number at Z1, Z2 and Z3 locations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41586/elife-41586-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic showing the method used for minimal stimulation. Patch-pipettes were filled with Atto-594 to visualize the dendritic tree of the recorded MLI. To put the stimulating pipettes in close vicinity of MLI dendrite, those pipettes were also filled with Atto-594. Recordings were performed in parasagittal sections which optimized the visualization of MLI morphology. GCL: granule cell layer (B) Minimal configuration is used to stimulate unitary GC contacts. Intensity of stimulation was chosen as the lowest intensity enable to evoke reliable synaptic responses. The plot of the success rate versus stimulation current intensity was systematically performed for each GC-MLI contact. Current values were normalized with respect to the intensity chose for minimal stimulation (star-containing symbols). The plot profile of minimal stimulation was one of the criteria used to include or reject any recording in the dataset for further analysis. The graph displays the results of experiments that were included in the dataset for PCA and k-mean clustering analysis (Figure 2). (C) Representative experiment showing how current intensity was set to ensure the stimulation of a single synaptic contact. The graphs show amplitudes of EPSC#1 and EPSC#2 (cyan and orange points for individual responses and dark blue and red points for mean values) and the success rate (black squares) following stimulation of increasing intensities. In this example, current values of 15 µA, 20 µA and 25 µA were unable to induce reliable stimulation of GC-MLI contact; 15 µA and 20 µA currents were associated with systematic failures at the first and second stimulus and 25 µA currents were associated with a high failure rate at the second stimulus. The current value of 35 µA was chosen for minimal stimulation because the success rate and the mean amplitude of EPSC#1 reached a plateau at this intensity and because of absence of failure at the second stimulus. (D) Corresponding traces at the indicated current intensity. Blue traces correspond to responses associated with failures at the first and red traces correspond to averaged traces. (E) Estimation of current spread from stimulation pipette in cerebellar slices. Currents of increasing intensities were recorded at variable distances from the tip of the stimulation pipette. The graph shows the current drop at variable intensities (inset) plots again the distance from the stimulation pipette. Solid colored lines represent the fit to the data using biexponential decay functions. Current-distance constants were conserved at any current intensity. (F) The percentage of current drop could be fitted by a biexponential decay function with 93.4% ± 1.8 of current drop described with a current-distance constant of 12.1 µm ± 0.6 µm. (G) Current intensity histogram of values used in minimal stimulation experiments. Note that the median of current intensity used for minimal stimulations median was equal to 25 µA and that almost 80% of currents were inferior to 50 µA (inset). In MLI dendrites, intersynaptic distances were estimated to 10 µm (Soler-Llavina and Sabatini, 2006). In our experimental conditions, a current of 50 µA is supposed to drop to 22.16 µA at 10 µm away from the tip of the stimulation pipette.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/41586/elife-41586-fig2-v2.jpg)
+
+**Figure 2.:** (A) PCA transformation of GC-MLI STP profiles. Scatter plot of the first two principal components (PC1, PC2) obtained by analyzing EPSC properties during 100 Hz trains at numerous unitary GC-MLI synapses (n = 96). The first two components explain 69.4% of the total variance of STP. Synapses with negative PC1 values sustain glutamate release during the 10 EPSCs of the burst while PC1 with positive values synapses are depressing synapses. Positive PC2 synapses are depressing synapses while negative PC2 synapses are facilitating during EPSC #2 and EPSC #3. (B) Representative traces of the four classes of inputs (C1 to C4) determined by k-means clustering analysis during ten minimal stimulations of unitary inputs at 100 Hz. The corresponding values of averaged EPSC amplitudes plotted versus the stimulus number and normalized again the vector space model (see method) were displayed on the right panels. (C) Box plots of the charge of EPSC recorded at the first stimulus (left panel) and the paired pulse ratio (PPR) (right panel) according to the four categories of input. EPSC charges: C1 = 198.78 fC±23.46 fC, C2 = 124.96 fC±18.78 fC, C3 = 126.52 fC±22.10 fC, C4 = 74.41 fC±9.48 fC. PPR: C1 = 1.39 ± 0.07, C2 = 1.97 ± 0.19, C3 = 1.98 ± 0.19, C4 = 1.82 ± 0.14. Red bars refer to means and white bars to medians. Multiple comparisons were performed using one-way ANOVAs with Tukey post hoc tests. Only statistically significant differences between categories were shown above box plots (D) Mean values of normalized EPSC amplitudes during 100 Hz train according to the four categories of inputs. The circular diagram represents the relative proportion of each category of input from 96 unitary GC-MLI synapses.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41586/elife-41586-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Principal components 1 and 2 (PC1 and PC2) represent over 58.4% of the total variation of GC-MLI STP dataset. PC1 and PC2 explain the highest source of variability within the dataset (see Materials and methods). Thus, these two variables were used to illustrate different categories of GC-MLI STP behavior over a population of 99 synapses. A negative PC1 eigenvalue is correlated with phasic synapses while synapses displaying tonic glutamate release have a positive PC1 eigenvalue. However, PC2 is correlated to a facilitating glutamate release behavior between EPSC #2 and EPSC #4. (B) We determined the number of GC-MLI STP categories by increasing one-by-one the number of clusters obtained by k-Mean clustering method plotted against total variance for all individual observations. Using the ‘elbow method’, we chose a number of clusters ‘by eye’ above which variance of clustered observations does not increase substantially.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/41586/elife-41586-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Functional mapping of synaptic responses recorded during 100 Hz trains in 99 neurons (See Materials and methods). PCA transformation are computed independently for each train (n > 1000) based on the charge value of each EPSC in the train. Consecutive recordings from the same synaptic terminals are represented with the same color code (orange, purples blue or pink points). Note that these recordings are located in a very specific position inside the cloud of points indicating that the profile of STP is conserved during successive stimulation at 100 Hz of the same synaptic input. (B) Normalized EPSC charges plotted against the stimulus number for responses highlighted in A (same color code). Left panel, synaptic responses from synapses with the same behavior during 100 Hz train are clustered nearby inside the PCA transform. Right panel, synaptic responses from synapses with distinct behaviors during 100 Hz trains are positioned at distant positions in the PCA transform. (C) STP profile was not skewed by changes in PF excitability in minimal stimulation experiments. Potentially, high current values can recruit additional PFs during trains and low current values can be associated with failures of PF excitation. These non-synaptic phenomena can induce unexpected changes in the profile of STP. However, neither charges of EPSC at the first stimuli (blue points), PPR (green points), PC1 (purple point) or PC2 (orange points) could be correlated with stimulus intensities. The lack of valid relationships between these parameters and current intensity indicated that in the vast majority of experiments, STP profile was shaped by synaptic mechanisms rather than change in PF excitability.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/41586/elife-41586-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Scatter plot of PC1 and PC2 obtained by analyzing EPSC properties during 100 Hz train in WT mice (n = 96) either by taking in account the first response (left, same dataset as in Figure 2) or without taking in account the first response in the train (right). (B) Corresponding mean values of normalized EPSC amplitudes during 100 Hz train according to the four categories of inputs for both types of analysis. (C) Corresponding circular diagrams representing the relative proportion of each category for each type of analysis.
+
 Among the four groups identified, only C1 connections exhibited depression of glutamate release after the second pulse, while C2 and C3 connections exhibited facilitation (Figure 2D). C2 and C3 connections differed in their responses after the fourth stimulus: while C3 connections sustained release during the entire train, synaptic transmission at C2 connections depressed after the fourth stimuli. On the other hand, C4 connections were characterized by small but stable EPSCs (Figure 2C) suggesting that they correspond to boutons releasing one quanta per stimulation (Bender et al., 2009; Nahir and Jahr, 2013). MLI subtypes were identified in half of the recorded cells based on the presence or not of a basket in the Purkinje cell layer (n = 13 for BCs, n = 12 for SCs and n = 24 for non-identified MLI). Both MLI subtypes were contacted by functionally distinct GC inputs. Except for C3 connections (facilitating profiles) absent in BCs, all classes of GC inputs were found on SCs and BCs (Figure 3). The lack of target-cell dependence of STP at GC-MLI synapses was also confirmed using compound stimulations of GCs in the granule cell layer (Figure 3—figure supplement 1). The strict segregation of MLIs in two subclasses was challenged by several authors and studies (Jörntell et al., 2010; Rakic, 1972; Sotelo, 2015; Sultan and Bower, 1998). Nevertheless, morphological features of MLIs were found to be related to the position of each MLI’s soma in the deepness of the molecular layer (Sultan and Bower, 1998). Our analyses failed to establish correlations between STP profiles (evaluated by PC1 or PC2) and the position of MLIs’ soma (Figure 3—figure supplement 2A) or synaptic inputs (Figure 3—figure supplement 2B) in the molecular layer. Finally, since dendritic integration of excitatory responses in MLI may be influenced by the distance of the synapses from the soma (Tran-Van-Minh et al., 2016) we also checked whether the distances of excitatory inputs from MLI’s soma were correlated with STP parameters. Again, our analyses failed to establish a correlation between those parameters (Figure 3—figure supplement 2C). Our results indicate that the different classes of inputs recruited by minimal stimulations were randomly distributed within the molecular layer.
 
-## Syn II is heterogeneously expressed across GC-MLI presynaptic terminals
+![Figure 3.](https://cdn.elifesciences.org/articles/41586/elife-41586-fig3-v2.jpg)
+
+**Figure 3.:** (A) Post-hoc reconstruction of 2 recorded MLI using a two-photon microscope. SCs were identified by the absence of neuronal process reaching the PCL (left MLI) and by the absence of cut processes (transection of neuronal processes could be clearly identified by swelling at the tip end portion of processes). At the opposite, BCs were identified by the presence of processes entering in the PCL (right MLI). (B) Circular diagrams of the relative proportion of each category of input (determined by k-means clustering analysis during ten minimal stimulation of GC unitary inputs at 100 Hz) contacting BCs and SCs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41586/elife-41586-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Right, schematic of the experimental design used to probe STP profiles on a single MLI following compound stimulations of GC-MLI synapses. In this example, synaptic responses in a BC were recorded upon stimulations (10 pulses at 100 Hz) of three different clusters of GCs (stimulation in GCL, green symbols) and two different beams of PFs (red symbols). Left, Corresponding compound EPSC responses recorded in the BC following stimulations of the five different locations showed on the schematic. Depending of the location of the stimulation pipette, compound EPSC responses either facilitated or depressed. (B) Mean EPSC responses recorded in BC (triangles) or in SC (circles) following compound stimulations of beams of PFs (pink triangle for BCs, n = 9 and pink circles for SCs, n = 6) or clusters of GC soma (blue triangles for BCs, n = 11 and blue circles for SCs, n = 9).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/41586/elife-41586-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Left panel, schematic showing how the relative depth of cell’s soma in the molecular layer was measured. Right panels, scatter plots showing the lack of correlation between PC1 or PC2 with the relative depth of cell’s soma for all recorded MLIs. (B) Left panel, schematic showing how the relative depth of stimulated inputs in the molecular layer was measured. Right panels, scatter plots showing the lack of correlation between PC1 or PC2 with the relative depth of inputs. (C) Left panel, schematic showing how the distance of stimulated inputs from MLI soma was measured. Right panels, scatter plots showing the lack of correlation between PC1 with distance of stimulated inputs from the soma.
+
+### Syn II is heterogeneously expressed across GC-MLI presynaptic terminals
 
 Next, we aimed to uncover the role of Syn in functional heterogeneity. We first studied the presence of Syn I and Syn II in GCs boutons by immunohistochemistry using VGluT1 as specific marker of GC presynaptic terminals (Hioki et al., 2003; Zander et al., 2010). Triple staining of cerebellar sections from P20 ~ P22 CD1 mice (N = 4) revealed systematic overlap of VGluT1 with Syn I, but not with Syn II (Figure 4A,B). In presynaptic terminals, VGluT1 and Syn are supposed to be partially colocalized because VGluT1 is localized on synaptic vesicles while Syn are both cytosolic and associated with synaptic vesicles (Cesca et al., 2010). Quantitative analysis revealed a higher correlation between the fluorescence intensity of Syn I and VGluT1 than between the fluorescence intensity of VGlut1 and Syn II (RSyn I =0.584 +/- 0.057, RSyn II = 0.435 +/- 0.075, paired t-test: p<0.001; n = 52). Our results suggest that Syn I is present in all GC terminals while Syn II is restricted to a subpopulation of GC boutons.
 
@@ -46,7 +82,7 @@ Next, we aimed to uncover the role of Syn in functional heterogeneity. We first 
 
 Since most of GC synapses stained by VGluT1 actually correspond to GC-PC synapses, we could not exclude that Syn II is homogeneously expressed in GC-MLI synapses. We then performed pre-embedding immunogold labeling (Figure 4C) of Syn I and Syn II in parasagittal cerebellar sections. Asymmetrical GC-MLI synapses in the upper part of the molecular layer were identified by the presence of mitochondria within the postsynaptic compartment (Palay and Chan-Palay, 1974). Immunogold labeling confirmed the ubiquitous presence of Syn I in all GC-MLI and presence of Syn II in only 56% of GC terminals contacting MLI (Figure 4D).
 
-## Heterogeneous expression of Syn II generates diversities in the profile of STP at unitary GC-MLI synapses
+### Heterogeneous expression of Syn II generates diversities in the profile of STP at unitary GC-MLI synapses
 
 The heterogeneous expression of Syn II in GC terminals may contribute to the diversity of STP profiles across unitary GC-MLI synapses. To test this possibility, we reinvestigated STP diversity at unitary GC-MLI synapses in Syn II KO mice (Figure 5A,B). Absence of Syn II modified the responses of unitary GC-MLI synapses to 100 Hz stimulations. The mean EPSC charges of the first responses was strongly reduced in Syn II KO mice (Figure 5B,C). The percentage of failures at the first stimuli were increased in Syn II KO mice indicating that absence of Syn II decreased the probability of release (pr) of fully-releasable synaptic vesicles (that is, vesicles released by a single action potential, Doussau et al., 2017) (Figure 5D). The paired-pulse ratio was significantly increased in Syn II KO mice (mean/median PPR for WT = 1.1/1.1 ± 0.03, n = 96 and mean/median PPR for Syn II KO mice = 2.6/1.7 ± 0.08, n = 53, p<0.001, MWRST). We then analyzed STP profiles at unitary connections in Syn II KO as in Figure 2 and plotted individual profiles against the first two dimensions of a PCA based on the PCA fit of WT data (Materials and methods) and examined the spread of Syn II KO individual GC-MLI STP observations (Figure 5E). The four profiles of STP found at unitary GC-MLI synapses in WT mice were also found at unitary GC-MLI synapses in Syn II KO mice. However, the distribution of the four classes was strongly skewed toward C3 and C4 profiles (85.8% of the connections, n = 33) in Syn II KO mice (Figure 5E,F) while C1 and C2 connections almost disappeared (C1 connection 3.6%, C2 connections 10.7%) (Figure 5E). These results suggest Syn II lead to STP profiles corresponding to C1 and C2, whereas GC boutons displaying C3 and C4 profiles are devoid of Syn II.
 
@@ -62,9 +98,21 @@ We next studied the subcellular localization of synaptic vesicles at GC-MLI syna
 
 Altogether, our results suggest that the presence of Syn II positively regulate the number of docked synaptic vesicle and the pr of fully-releasable vesicles, thus enhancing the release glutamate at the onset of burst firing.
 
-## Diversity of STP profile at GC-MLI connections extends the coding range of MLI
+### Diversity of STP profile at GC-MLI connections extends the coding range of MLI
 
 The STP profile shapes the spike output pattern of MLIs following compound stimulation of GCs or PFs (Bao et al., 2010; Carter and Regehr, 2000). This suggests that each class of GC-MLI synapse should influence the MLI spike output pattern specifically. To address this hypothesis, we set out to correlate STP of specific GC units with the spike output pattern of the targeted MLI. We recorded the spike output pattern of MLIs in loose-patch configuration following photostimulation of unitary GC inputs by caged glutamate (Materials and methods and Figure 7—figure supplement 1). Photostimulation of individual GCs increased the MLI firing rate confirming that sufficient glutamate was released by unitary GC boutons during high-frequency stimulation to produce spikes in MLIs (Barbour, 1993; Carter and Regehr, 2002) (Figure 7A). Photostimulations produced burst in GCs with reproducible parameters (Figure 7—figure supplement 1) and were followed by an increase in MLI firing rate (mean baseline frequency: 12.75 ± 5 Hz; peak of acceleration: 33.7 ± 17 Hz, n = 32). Subsequently, EPSCs were recorded upon photostimulation of the same unitary GC-MLI synapse using whole-cell configuration (Figure 7A). Photostimulations yielded heterogeneous profile of STP. PCA followed by k-means clustering analysis revealed three distinct STP profiles (C1’, C2’ and C3’ connections different from C1 to C4 connections since the parameters of bursts elicited in GCs using minimal electrical stimulations and photostimulations are different) that differed by their time course and amplitude (Figure 7B–C). C1’ connections with positive PC1 values were characterized by large responses that peaked at the onset of GC bursts and then rapidly depressed (phasic profile) (averaged EPSC peak charge: −232.8 fC ± 55.2 fC reached at 33.2 ms ± 11.3, n = 14). C2’ connections with low PC1 values were also characterized by a phasic profile, but EPSCs have smaller amplitudes (averaged EPSC peak charge: −121.3 fC ± 21.6 fC reached at 59.7 ms ± 10.3, n = 30) than C1’ synapses. C3’ connections were characterized by smaller responses that peaked with longer delays than the ones of C1’ or C2’ synapses (EPSC peak charge: −133.4 fC ± 21.9 fC reached at 84.4 ms ± 5.4, n = 18).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/41586/elife-41586-fig7-v2.jpg)
+
+**Figure 7.:** (A) Left panel, schematic representing the design of photostimulation in the granule cell layer. Open circles represent the sites where RuBi-glutamate was uncaged and the blue circles represent the locations where photostimulation elicited responses in the recorded MLI. In this example, 2 GCs localized at distal positions in the granule cell layer contact the recorded MLI. Right panels, representative experiment showing the spike output pattern recorded in loose-patch configuration and EPSCs recording in whole cell configuration in the same MLI following photostimulation of two different locations in the granule cell layer. The white arrowheads and dashed lines represent the onset of photostimulation. Note that the onset of firing is time-locked to the first peak of EPSC charge for photostimulations in location #1 (upper panels) while the onset of firing was more variable for photostimulation in location #2 (lower panels). (B) PCA transformation of the evoked charge time course for 63 unitary contacts (see Materials and methods). The EPSC bursts could be differentiated depending on their tonic or phasic component into three different clusters using k-Means clustering analysis. (C) Representative traces of EPSCs and of the corresponding firing profiles recorded in singles MLI following stimulation of C1’, C2’ and C3’ connections. (D) The delays separating the onset of photostimulation and the time the recorded MLIs were firing at their maximum frequency (referred as delay to frequency peak, recorded in loose-patch configuration) and the delays separating the onset of photostimulation and the time EPSCs are reaching their maximum value (referred as delay to EPSC peak, recorded in voltage-clamp configuration) were measured for 12 GC-MLI synapses for which we were able to correlate the spike output pattern with STP profile (C1’, C2’ or C3’). Upper panel, the bar plot shows that stimulation of C1’ connections led to faster accelerations of MLI firing rate than stimulation of C2’ and C3’ connections. Lower panel, the scatter plot shows a clear correlation between the delay to EPSC peak and the delay to frequency peak recorded. Each experimental point was associated with its STP profile by using the same color code for categories than in the upper graph.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/41586/elife-41586-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Because the fine adjustment of the stimulation strength required to perform minimal stimulations cannot be achieved during MLI loose-patch recordings, individual GCs were activated by photostimulation of caged-glutamate (RuBi-glutamate, 100 µM; Materials and methods). (A) Schematics showing a GC activated following RubiGlutamate photo-dissociation upon GC layer illumination. Loose-patch clamp recordings from individual GCs show that RubiGlutamate uncaging induces reproducible bursts of APs. (B) Left, GC firing parameters following RubiGlutamate uncaging were very stable from one GC to another; in all recorded GCs, inter-spike intervals (ISIs) were restricted to 5–10 ms. Right, following RubiGlutamate uncaging, the firing frequencies of GC during the 10 first APs were highly conserved. (C) Left, Group data showing a lack of significant differences in the ISI and in firing variability (CV2) between recorded GC (n = 15). Right, Post-stimulus histogram of the different spikes from all trials of 15 different cells aligned on spike#1.Photostimulations induced bursts in GCs with a maximal delay of 34 ms (mean delay 31.8 ms ± 1.92 ms). These bursts were composed of an averaged number of 28 spike ± 4 spikes elicited with a mean frequency of 135 Hz ± 19 Hz.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/41586/elife-41586-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Unitary synaptic responses from three different GCs recruited by photostimulation were recorded on 2 BCs (left and middle graphs) and 1 SC (right graph). MLI subtype and position in the molecular layer were determined by post hoc reconstruction. The corresponding STP profile of each synaptic input was classified using PCA transformation of synaptic responses followed by k-mean clustering analysis. Our results show that either BCs or SCs were contacted by connections belonging to different classes. Photostimulation experiments confirm that the behavioral heterogeneity of excitatory synaptic inputs contacting same MLIs.
 
 In 12 unitary connections out of 62, we could correlate the spike output pattern recorded in loose-patch configuration with the STP profile recorded in whole-cell configuration (Figure 7D). We measured the time separating the onset of photostimulation and the time the recorded MLI is firing is at its maximum frequency (labeled as Delay to frequency peak in Figure 7D). Photostimulation of C1’ connections accelerated MLI firing rate with a very short delay (<50 ms) compared to C2’ and C3’ connections (delay > 60 ms) (Figure 7D). Our analysis also showed a clear relationship between PC1 and the peak frequency (Pearson coefficient, R = 0.7, p=0,008, n = 13). This indicates that a specific STP profiles determines the delay to the first spike in MLI in response to GC photostimulation. These results suggest that the behavior of glutamate release at GC-MLI synapses during high-frequency stimulations is a major determinant of the coding of sensorimotor inputs through the FFI pathway.
 
@@ -80,21 +128,21 @@ We next tested how Syn II deficiency affects the correlation between STP profile
 
 By combining molecular, ultrastructural and functional studies, we show that the firing pattern of MLIs is driven by distinct GC inputs that show distinct profile of STP. This functional heterogeneity caused, at least in part, by synapses-specific expression of Syn II expands the coding range of MLIs.
 
-## MLI subtype does not determine the profile of STP at unitary GC-MLI synapse
+### MLI subtype does not determine the profile of STP at unitary GC-MLI synapse
 
 The rules governing diversity in presynaptic release properties have been extensively studied in neocortical or hippocampal circuits. In most of cases, synaptic efficacy among boutons issued from a single axon varies with the identity of the postsynaptic cell (Blackman et al., 2013; Markram et al., 1998). Target-cell-dependent heterogeneity relies on differences in the probability of release (Koester and Johnston, 2005), responsiveness to neuromodulators (Buchanan et al., 2012; Delaney and Jahr, 2002; Pelkey et al., 2006; Scanziani et al., 1998) or the ability to co-release GABA and glutamate (Galván and Gutiérrez, 2017). Target-cell-dependent STP has also been described at cerebellar GC-MLI synapses by using stimulation of beam of PFs or clusters of GC somata; upon high-frequency stimulation, compound synaptic responses exhibit a facilitating profile at GC-SC synapses whereas these responses depress at GC-BC synapses (Bao et al., 2010). At the opposite, our results show rather heterogeneous unitary inputs to BCs (contacted by three different classes of inputs) or SCs (contacted by four different classes of inputs) (Figure 3). Although the lack of the main facilitating class of input (C3) on BCs may explain why compound GC-BC synaptic responses depress during high-frequency activities, our results argue against target-cell dependency of STP at GC synapses. It is likely that in compound responses, input classes associated with a strong synaptic strength mask the presence and influence of weak inputs exhibiting other profiles. Anyhow, our work suggests that the excitatory drive to MLIs and the tuning of the FFI pathway are more complex than expected.
 
-## Organization of synaptic diversity at unitary GC-MLI synapses
+### Organization of synaptic diversity at unitary GC-MLI synapses
 
 Heterogeneous expression and functions of Syn II in different cell types forming a same neural network have been reported previously (Bragina et al., 2010; Feliciano et al., 2017; Gitler et al., 2004; Kielland et al., 2006; Patton et al., 2016; Wei et al., 2011) but our findings bring the first evidence that expression of Syn II at a given connection can be heterogeneous. Syn II expression may be genetically determined at early developmental stages, leading to Syn II(+) and Syn II(-) subclones of GCs. It is interesting to note that clonally related GCs (that is, GCs issued from the same GC progenitors) stack their axons in a specific sub-layer in the molecular layer (Espinosa and Luo, 2008) suggesting that the presence or absence of Syn II may be organized in a beam-dependent way. Since beams of neighboring PFs are activated during sensory stimulations (Wilms and Häusser, 2015), recruitment of Syn II(+) or Syn II(-) connections may be related to the activation of a given sensorimotor task. Alternatively, Syn II targeting at individual PF boutons may be controlled by a complex interplay of mechanisms regulating the traffic of Syn in axons (Gitler et al., 2004) or organizing the assembly of the presynaptic active zone (Owald and Sigrist, 2009).
 
 Presynaptic diversity also arises from other parameters that probably expand the range of synaptic behaviors across GC boutons. Calcium imaging performed on single PFs revealed that Ca2+ dynamics and regulation of Ca2+ influx by neuromodulators in synaptic varicosities from a same PF are highly heterogeneous (Bouvier et al., 2016; Brenowitz and Regehr, 2007; Zhang and Linden, 2009; Zhang and Linden, 2012). Also, local retrograde release of endocannabinoid by MLI dendrites can affect the functioning of subsets of GC boutons upon sustained activity of PF (Beierlein and Regehr, 2006; Soler-Llavina and Sabatini, 2006). Hence, functional heterogeneities among GC terminals also originate from the history of firing of each GC. To summarize, the synaptic behavior of individual GC bouton may be tuned by an intermingled combination of factors including expression of Syn II, presynaptic receptor composition, presynaptic Ca2+ dynamic, number of active release sites, retrograde signaling and history of firing.
 
-## Control of glutamate release by Syn II in GC boutons
+### Control of glutamate release by Syn II in GC boutons
 
 At GC synapses, releasable synaptic vesicles are segregated in two pools, one with fully releasable vesicles and a second one with reluctant vesicles, which are differentially poised for exocytosis (Doussau et al., 2017). The fully-releasable pool supports glutamate release during single action potentials while the reluctant pool is recruited only by stimuli elicited at high frequencies (Doussau et al., 2017). In Syn II KO mice, synaptic transmission is characterized by a defect in glutamate release by single action potentials and by a rapid recovery of synaptic transmission by 100 Hz stimuli. This suggests that a lack of Syn II impair pr of fully-releasable vesicles without affecting the recruitment of reluctant vesicles. Potentially, Syn II may act with several partners to control the recruitment of fully-releasable vesicles. In GC terminals, Munc13-3 has been involved in superpriming steps that tightly couple synaptic vesicles with P/Q-type Ca2+ calcium channels (positional superpriming) or maturate the fusion machinery (molecular superpriming) (Ishiyama et al., 2014; Kusch et al., 2018; Schmidt et al., 2013). Munc13-3 may indirectly act with Rab3-interacting molecules (RIMs) which are well known organizers of calcium channel and synaptic vesicles in the active zone (Südhof, 2013). Since Syn II interacts with both Rab3 (Giovedì et al., 2004) and P/Q type calcium channels (Medrihan et al., 2013), it cannot be excluded that Munc13-3, Syn II, Rab3 and RIM act in concert to reduce the physical distance between fully-releasable vesicles and Ca2+ channels. Alternatively, Syn II-Rab3-RIM complex may directly regulate the influx of Ca2+ through strong inhibition of voltage-dependent inactivation of P/Q type Ca2+-channels (Hirano et al., 2017; Kintscher et al., 2013).
 
-## Physiological consequences
+### Physiological consequences
 
 At the input stage of the cerebellar cortex, single GCs receive a combination of MF inputs coding for different modalities (Arenz et al., 2008; Chadderton et al., 2014). The diversity of STP profiles across MFs from different origins provide temporal signatures for each combination of MFs converging on a single GC thus enhancing pattern decorrelation of sensory inputs (Chabrol et al., 2015). Here, we show that temporal coding in GCs is later extended in the FFI pathway by an input-specific control of first-spike latency in MLIs. The combination of heterogeneous presynaptic behaviors at the successive stages of cerebellar computation leading to consecutive temporal signatures, should refine the salient feature of a given combination of MF inputs and ultimately should enhances the representation of sensory information by PCs.
 
@@ -102,15 +150,158 @@ Considering the importance of delay coding for internal models of motor adjustme
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Syn II KO mice (CD1 backround)</td>
+      <td>PMID 7777057</td>
+      <td></td>
+      <td>See Material and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Syn I</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 106 104</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal anti-Syn II Clone 27E3</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 106 211</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal anti-Syn II Clone 19.4</td>
+      <td>Millipore</td>
+      <td>Cat# MABN 1573</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-VGluT1</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 135 304</td>
+      <td>IHC (1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit- Alexa 647</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-21070 RRID:AB_2535731</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mice Alexa-488</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-21141, RRID:AB_141626</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Guinea Pig Alexa-555</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-21435, RRID:AB_2535856</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin - GABAA-R blocker</td>
+      <td>Abcam</td>
+      <td>Cat# Ab120315</td>
+      <td>100 µM in ACSF</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CGP 52432 GABAB-R blocker</td>
+      <td>Abcam</td>
+      <td>Cat# Ab120330</td>
+      <td>10 µM in ACSF</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5 - NMDA-R blocker</td>
+      <td>Abcam</td>
+      <td>Cat# Ab120003</td>
+      <td>100 µM in ACSF</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AM251 CB1-R blocker</td>
+      <td>Abcam</td>
+      <td>Cat# Ab120088</td>
+      <td>1 µM in ACSF</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JNJ 16259685 – mGluR1 blocker</td>
+      <td>Tocris</td>
+      <td>Cat# 2333</td>
+      <td>2 µM in ACSF</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atto-594</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 08637</td>
+      <td>50 µM in internal solution</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Code used for analyzing MLI firing following photostimulation of single GC</td>
+      <td>This paper (Dorgans, 2019a)</td>
+      <td></td>
+      <td>Python code deposited on GitHub: https://github.com/Dorgans/eLife2018-STP-GC-MLI/blob/master/2017051_GC_photostimulation__MLI_FIRING_ANALYSIS.py</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Code used for analyzing EPSC charge following photostimulation of single GC</td>
+      <td>This paper (Dorgans, 2019b)</td>
+      <td></td>
+      <td>Python code deposited on GitHub: https://github.com/Dorgans/eLife2018-STP-GC-MLI/blob/master/20170711_GC_photostimulation_GC-MLI_CHARGE_ANALYSIS.py</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Code used for PCA transformation and k-mean clustering analysis of EPSC charges following photostimulation</td>
+      <td>This paper (Dorgans, 2019c)</td>
+      <td></td>
+      <td>Python code deposited on GitHub: https://github.com/Dorgans/eLife2018-STP-GC-MLI/blob/master/20170718_GC_photostim_MLI_SeqPatch_PCA%2Cclustering.py</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Code used for PCA transformation and k-mean clustering analysis of EPSC charges during high frequency stimulations</td>
+      <td>This paper (Dorgans, 2019d)</td>
+      <td></td>
+      <td>Python code deposited on GitHub: https://github.com/Dorgans/eLife2018-STP-GC-MLI/blob/master/20170718_GC_photostim_MLI_SeqPatch_PCA%2Cclustering.py</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 This study was carried out in strict accordance with the national and international laws for laboratory animal welfare and experimentation and was approved in advance by the Ethics Committee of Strasbourg (CREMEAS; CEEA35; agreement number/reference protocol: APAFIS#4354–20 16030212155187 v3). Mice were bred and housed in a 12 hr light/dark cycle with free access to food and water. Wild type (WT) or Synapsin II knock-out (Syn II KO) mice have CD1 genetic background. Syn II KO mice were first derived from synapsin triple knock-out mice (C57BL/6J genetic background, originating from the Italian Institute of Technology, Genova, Italy) (Gitler et al., 2004) bred with CD1 WT mice. Syn II KO hybrid mice were serially bred (10 backcrosses) with CD1 WT mice to obtain Syn II KO mice with CD1 genetic background.
 
-## Slice preparation
+### Slice preparation
 
 Acute cerebellar slices were prepared from CD1 mice or Syn II KO mice (Rosahl et al., 1995), aged 20 to 35 days. Mice were anesthetized by isoflurane inhalation and decapitated. The cerebellum was extracted in ice-cold (~1°C) artificial cerebrospinal fluid (ACSF) bubbled with carbogen (95% O2, 5% CO2) containing (in mM): 120 NaCl, 3 KCl, 26 NaHCO3, 1.25 NaH2PO4, 2.5 CaCl2, 2 MgCl2, 10 D-glucose and 0.05 mM minocyclin. Cerebella were sliced (Microm HM650V, Germany) in an ice-cold low-sodium and zero-calcium slicing buffer containing (in mM): 93, 2.5 KCl, 0.5 CaCl2, 10 MgSO4, 1.2 NaH2PO4, 30 NaHCO3, 20 HEPES, 3 Na-Pyruvate, 2 Thiourea, 5 Na-ascorbate, 25 D-glucose and 1 Kynurenic acid. Sagittal or horizontal slices 300 µm thick were immediately transferred for recovery in a bubbled ACSF for 30 min at 34°C and maintained at room temperature (~25°C) in bubbled ACSF before use.
 
-## Electrophysiology
+### Electrophysiology
 
 After at least 1 hour of recovery at room temperature (~25°C), slices were transferred in a recording chamber continuously perfused with 32 ~ 34°C bubbled ACSF. In order to block all forms of long-term synaptic plasticity and trans-synaptic signaling, blockers of GABAA-receptors (100 µM picrotoxin), GABAB-receptors 10 µm (3-[[(3,4-Dichlorophenyl)- methyl]amino]propyl(diethoxymethyl)phosphinic acid), NMDA-receptor (100 µM D-AP5; D-(-)−2-Amino-5-phosphonopentanoic acid), endocannabinoïd CB1 receptors (1 µM AM251 1-(2,4-Dichlorophenyl)−5-(4-iodophenyl)−4-methyl-N-(piperidin-1-yl)−1H-pyrazole-3-carboxamide) and mGluR1 receptor (2 µM JNJ16259685 (3,4-Dihydro-2H-pyrano[2,3-b]quinolin-7-yl)-(cis-4-methoxycyclohexyl)-methanone) were added in ACSF.
 
@@ -120,35 +311,35 @@ Minimal stimulation was used to monitor STP at unitary GC-MLI synapses in sagitt
 
 We performed glutamate-uncaging assays onto horizontal slices by using MOSAiC patterned illumination system (Andor Technologies). MLI were recorded in ACSF containing 100 µM RuBiGlutamate (Valera et al., 2016). In order to find connected pairs of GC-MLI, we first used full-field arrays composed of very small photostimulation areas (15 ~ 25 µm diameter) and patches of GC were sequentially illuminated with blue light (460 nm). We took advantage on horizontal slice configuration to stimulate GCs localized at distant locations from the recorded MLI. Considering the weak probability of connection between GC and MLI, synaptic activities evoked by photostimulation of small cluster of GCs localized far away of the recorded MLI are likely to originate from unitary GC-MLI synapses.
 
-## Post-hoc 3D reconstructions
+### Post-hoc 3D reconstructions
 
 After the experiments, two-photon Z-stacks (1 µm resolution) were done to reconstruct the recorded MLIs in sagittal configuration using the simple neurite tracer plugin (Longair et al., 2011) from ImageJ freeware (National Institute of Health, USA). Basket cells were identified by the basket-like features observed in the Purkinje cell layer (Palay and Chan-Palay, 1974).
 
-## Electron microscopy
+### Electron microscopy
 
 CD1 mice aged 20 days (WT and Syn II KO mice) were deeply anesthetized by intra-peritoneal injection of Ketamine (2 ml/kg) and Xylazine (0.5 ml/kg) and intracardiac perfusion was performed with 2.5% glutaraldehyde in phosphate buffer (0.1 M, pH 7.4). For immunogold labeling, the fixative solution was replaced by 0.1% glutaraldehyde and 4% paraformaldehyde in phosphate buffer. Transversal cerebellar vibratome sections (75 µm thick) were cut and processed either for ultrastructural analysis or for pre-embedding immunogold labeling. After three washes in phosphate buffer, sections were post-ﬁxed in phosphate buffer with 1% OsO4 for 1 hr. Slices were dehydrated in a graded alcohol series (ethanol 25%, 50%, 70%, 95% 100%; 10 min per bath) except for ethanol 100% (3 × 10 min) followed by an incubation in propylene oxide for 3 × 10 min. Then slices were embedded in Araldite M (wash in propylene oxide at 1:1 for 1 hr followed by Araldite M for 2 × 2 hr at room temperature; polymerization at 60°C for 3 days). Ultrathin sections were finally contrasted with uranyl acetate.
 
-## Pre-embedding immunogold labelling
+### Pre-embedding immunogold labelling
 
 Sections were permeabilised with 0.2% saponin in phosphate buffer saline (PBS) for 1 hour, rinsed in PBS and blocked in a blocking solution: 2% bovine serum albumin in PBS (PBS-BSA). The sections were incubated overnight with anti-Syn I (1/250) or anti-Syn II (1/100) antibodies (polyclonal, SynapticSystems) in 0.1% BSA in PBS. After washing in PBS-BSA, the sections were incubated in Ultra small nanogold F(ab′) fragments of goat anti-rabbit or goat anti-mouse immunoglobulin G (IgG) (H and L chains; Aurion) diluted 1/100 in PBS-BSA. After several rinses in PBS-BSA and in phosphate buffer (PB), sections were postﬁxed in glutaraldehyde 2% in PB before washing in PB and distilled water. Gold particles were then silver enhanced using the R-Gent SE-EM kit (Aurion) before being washed in distilled water and PB. Finally, the sections were post-ﬁxed in 0.5% OsO4 in PB for 10 min before classical processing for Araldite embedding (Sigma, St. Louis, MO) and ultramicrotomy. The ultrathin sections were counterstained with uranyl acetate and observed with a Hitachi 7500 transmission electron microscope (Hitachi High Technologies Corporation, Tokyo, Japan) equipped with an AMT Hamamatsu digital camera (Hamamatsu Photonics, Hamamatsu City, Japan). In control sections processed without anti-Syn I or anti-Syn II primary antibodies or gold-labeled secondary antibodies, no gold particles were observed.
 
-## Analysis of electron micrographs
+### Analysis of electron micrographs
 
 PF-MLI and PF-PC synapses are glutamatergic synapses that can be recognized by the presence of an obvious asymmetry with a large postsynaptic density (Korogod et al., 2015). GCs contact MLIs on their dendritic shaft and PCs on their dendritic spines. Since PC dendritic spines are devoid of mitochondrion (Palay and Chan-Palay, 1976), GC-MLI synapses stand out from the large majority of asymmetrical synapses in the cerebellar cortex by the presence on mitochondrion within the postsynaptic compartment. Also, we only took in account synapses located to the upper part of the molecular layer to avoid GC-Golgi cell synapses. Morphometric analyses were performed using ImageJ freeware (National Institute of Health). We binned the number of vesicles (with 50 nm distance bins) starting from the active zone cytomatrix as a reference point (0 nm). Synaptic vesicles within 50 nm of the active zone were considered as docked vesicles (Schikorski and Stevens, 2001).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 CD1 WT mice aged 20 to 25 days were deeply anaesthetized by intra-peritoneal injection of Ketamine (2 ml/kg) and Xylazine (0.5 ml/kg) and perfused with PBS containing 4% paraformaldehyde (PFA). After a 3 hr post-fixation, cerebella were sliced in sagittal configuration (50 µm thickness). Slices were washed in PBS (3 × 10 min). Membranes were permeabilized by 0,1% TritonX100 and non-specific antigens were blocked by 10% bovine serum albumin (BSA) and 1% goat serum albumin (GSA) during 6 hr. Synapses were stained using the same solution supplemented with anti-VGluT1 guinea pig polyclonal antibodies diluted at 1/600 (Synaptic Systems, Germany), polyclonal rabbit anti-Syn Ia/SynIb (Synaptic Systems, Germany) diluted at 1/500 and monoclonal anti-Syn IIa/Syn IIb antibodies. We used two different monoclonal anti-Syn IIa/Syn IIb antibodies both diluted at 1/500: clone 27E3 (Synaptic Systems) targeted again an epitope localized on domains C and clone 19.4 (Millipore) targeted again an epitope localized on domain A-B. Secondary antibodies (Abcam) were applied during 3 hr in a solution containing 10% BSA. Slices were mounted and visualized under confocal microscope (Leica SP5, II).
 
-## Data analysis
+### Data analysis
 
 Analysis were performed with home-made python routines (WinPython 3.3.5, Python Software Fundation) based on custom scripts. All statistical analyses were performed using SciPy plugin (https://scipy.org/) (Dorgans, 2019a; Dorgans, 2019b; Dorgans, 2019c; Dorgans, 2019d; see key resource table; copies archived at https://github.com/elifesciences-publications/eLife2018-STP-GC-MLI). Error bars represent ± SEMs of data distribution. Student’s t-test was used in the case of a normal distribution of data, Mann-Whitney Rank Sum Test (MWRST) was used in other cases. One way ANOVA with post hoc Tukey tests were used for multiple comparisons. The levels of significance are indicated as ns (not significant) when p>0.05, * when p<0.05, ** when p<0.01 and *** when p<0.001.
 
-## Principal component analysis
+### Principal component analysis
 
 PCA is a linear transformation algorithm that examines the main sources of variability inside a dataset composed of multiple observations in order to classify the dataset. PCA analyses covariance between the n variables of a dataset and transforms an original dataset in eigenvalues around a small number of dimensions representing the principal components. The first two Principal Components (PC1 and PC2) which explain the highest source of variance from the original dataset are represented in a scatter plot. We used PCA in order to classify STP in our datasets and extract the most relevant inter-individual differences. PCA were computed using the python-based sklearn plugin. Input variables were normalized and centered using Vector Space Model (VSM) that linearly scales the observations between 0 and 1 (Salton et al., 1975). While STP data from WT GC-MLI terminals was used for PCA computation, Syn II KO observations did not take part in the eigenvalue calculation. In order to compare STP heterogeneity between the two populations of synapses, Syn II KO observations were processed as additional values and overlaid to WT cloud of points.
 
-## Data processing
+### Data processing
 
 For STP analyses using minimal stimulation protocols, data was collected by estimating EPSC charges at any stimulus number from 7 (or more) consecutive trains at 100 Hz elicited every minutes. Failures were arbitrarily detected as signals below a threshold of 3 x σnoise, where σnoise is the standard deviation of the amplitude of the noise calculated on a 300 ms fixed temporal window preceding the stimulation. PCA transformations (Figures 2, 5 and 7) were performed on the median charge value of each EPSC from the 100 Hz train pulse for each synapse (n = 96). The charge of EPSCs evoked at unitary GC-MLI synapses by photostimulation was measured in a minimal number of 7 successive recordings. To calculate the average charge, values were binned (bin width = 5 ms) from the stimulation onset to 100 ms post-stimulus for each sweep (n = 1080) and PCA transformation was applied using the charge value for unitary dataset (Figures 6 and 7 n = 89). The delay of MLI peak frequency was estimated from the stimulation onset.
 

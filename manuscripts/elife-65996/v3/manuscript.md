@@ -37,7 +37,7 @@
 
 ## Abstract
 
-Preadipocytes are crucial for healthy adipose tissue expansion. Preadipocyte differentiation is altered in obese individuals, which has been proposed to contribute to obesity-associated metabolic disturbances. Here, we aimed at identifying the pathogenic processes underlying impaired adipocyte differentiation in obese individuals with insulin resistance (IR)/type 2 diabetes (T2D). We report that down-regulation of a key member of the major spliceosome, PRFP8 /PRP8, as observed in IR/T2D preadipocytes from subcutaneous (SC) fat, prevented adipogenesis by altering both the expression and splicing patterns of adipogenic transcription factors and lipid droplet-related proteins, while adipocyte differentiation was restored upon recovery of PRFP8 /PRP8 normal levels. Adipocyte differentiation was also compromised under conditions of endoplasmic reticulum (ER)-associated protein degradation (ERAD) hyperactivation, as occurs in SC and omental (OM) preadipocytes in IR/T2D obesity. Thus, targeting mRNA splicing and ER proteostasis in preadipocytes could improve adipose tissue function and thus contribute to metabolic health in obese individuals.
+Preadipocytes are crucial for healthy adipose tissue expansion. Preadipocyte differentiation is altered in obese individuals, which has been proposed to contribute to obesity-associated metabolic disturbances. Here, we aimed at identifying the pathogenic processes underlying impaired adipocyte differentiation in obese individuals with insulin resistance (IR)/type 2 diabetes (T2D). We report that down-regulation of a key member of the major spliceosome, PRFP8/PRP8, as observed in IR/T2D preadipocytes from subcutaneous (SC) fat, prevented adipogenesis by altering both the expression and splicing patterns of adipogenic transcription factors and lipid droplet-related proteins, while adipocyte differentiation was restored upon recovery of PRFP8/PRP8 normal levels. Adipocyte differentiation was also compromised under conditions of endoplasmic reticulum (ER)-associated protein degradation (ERAD) hyperactivation, as occurs in SC and omental (OM) preadipocytes in IR/T2D obesity. Thus, targeting mRNA splicing and ER proteostasis in preadipocytes could improve adipose tissue function and thus contribute to metabolic health in obese individuals.
 
 ## Introduction
 
@@ -51,9 +51,202 @@ Here, we set out an iTRAQ-LC-MS/MS proteomic approach for the analysis of subcut
 
 ## Results
 
-## Preadipocytes display distinct features in obesity-related IR/T2D
+### Preadipocytes display distinct features in obesity-related IR/T2D
 
 Preadipocytes from SC and OM adipose tissue were isolated from 78 morbidly obese subjects (BMI <40 kg/m2) (hereinafter referred to as obese individuals) (Table 1), who were subclassified into three groups [normoglycemic (NG Obese): Glucose <100 mg/dL, HbA1c < 5.7%; impaired fasting glucose (IFG Obese): Glucose 100–126 mg/dL, HbA1c 5.7–6.5%; and with type 2 diabetes (T2D Obese): Glucose >126 mg/dL, HbA1c > 6.5%], according to the criteria of the American Diabetes Association (ADA, 2021). IFG individuals exhibited significantly higher HOMA-IR values than NG individuals and they will be referred to as insulin-resistant (IR) subjects (Díaz-Ruiz et al., 2015; Tam et al., 2012). No significant differences were found among groups in blood pressure, inflammation, or lipid parameters except triglycerides, whose levels were enhanced in T2D vs. NG obese groups.
+
+**Table 1.**
+ Anthropometric and biochemical characteristics of study subjects from cohort 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>NG obese</th>
+      <th>IR obese</th>
+      <th>T2D obese</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>30</td>
+      <td>30</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Gender (female/male)</td>
+      <td>15 / 15</td>
+      <td>15 / 15</td>
+      <td>11 / 7</td>
+    </tr>
+    <tr>
+      <td>Post-menopause (n, %)</td>
+      <td>2 (13)</td>
+      <td>2 (13)</td>
+      <td>3 (27)</td>
+    </tr>
+    <tr>
+      <td>Lipid-lowering therapy (n, %)</td>
+      <td>0 (0)</td>
+      <td>5 (17)</td>
+      <td>4 (22)</td>
+    </tr>
+    <tr>
+      <td>Antidiabetic therapy (n, %)</td>
+      <td>0 (0)</td>
+      <td>3 (10)</td>
+      <td>8 (44)</td>
+    </tr>
+    <tr>
+      <td>Antihypertensive therapy (n, %)</td>
+      <td>1 (3)</td>
+      <td>6 (20)</td>
+      <td>5 (28)</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>43 ± 2</td>
+      <td>44 ± 2</td>
+      <td>46 ± 2</td>
+    </tr>
+    <tr>
+      <td>Weight (kg)</td>
+      <td>140.4 ± 7.0</td>
+      <td>153.4 ± 10.0</td>
+      <td>145.4 ± 7.5</td>
+    </tr>
+    <tr>
+      <td>Height (m)</td>
+      <td>1.67 ± 0.03</td>
+      <td>1.69 ± 0.02</td>
+      <td>1.65 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Body mass index (kg/m2)</td>
+      <td>50.2 ± 2.1</td>
+      <td>52.8 ± 2.9</td>
+      <td>52.9 ± 1.9</td>
+    </tr>
+    <tr>
+      <td>Fat mass (%)</td>
+      <td>43.1 ± 1.9</td>
+      <td>41.2 ± 2.0</td>
+      <td>42.1 ± 1.7</td>
+    </tr>
+    <tr>
+      <td>Lean mass (%)</td>
+      <td>39.1 ± 3.2</td>
+      <td>36.1 ± 1.1</td>
+      <td>35.0 ± 1.0</td>
+    </tr>
+    <tr>
+      <td>Water mass (%)</td>
+      <td>23.0 ± 3.5</td>
+      <td>22.7 ± 1.6</td>
+      <td>22.9 ± 1.3</td>
+    </tr>
+    <tr>
+      <td>Waist circumference (cm)</td>
+      <td>144.2 ± 5.9</td>
+      <td>156.1 ± 8.1</td>
+      <td>149.9 ± 4.6</td>
+    </tr>
+    <tr>
+      <td>Systolic pressure (mm/Hg)</td>
+      <td>128.1 ± 2.3</td>
+      <td>127.0 ± 3.5</td>
+      <td>122.1 ± 2.6</td>
+    </tr>
+    <tr>
+      <td>Diastolic pressure (mm/Hg)</td>
+      <td>78.5 ± 4.4</td>
+      <td>75.5 ± 3.1</td>
+      <td>71.5 ± 2.6</td>
+    </tr>
+    <tr>
+      <td>Fasting glucose (mg/dL)</td>
+      <td>89.1 ± 1.7</td>
+      <td>105.4 ± 2.0 aaa</td>
+      <td>157.3 ± 9.6 aaa, bbb</td>
+    </tr>
+    <tr>
+      <td>Fasting glucose (mmol/L)</td>
+      <td>4.95 ± 0.10</td>
+      <td>5.85 ± 0.11 aaa</td>
+      <td>8.73 ± 0.54 aaa, bbb</td>
+    </tr>
+    <tr>
+      <td>Fasting insulin (mU/L)</td>
+      <td>15.4 ± 1.8</td>
+      <td>25.9 ± 2.9 aa</td>
+      <td>17.9 ± 2.7 b</td>
+    </tr>
+    <tr>
+      <td>HbA1c (%)</td>
+      <td>5.44 ± 0.06</td>
+      <td>6.22 ± 0.10 aaa</td>
+      <td>8.43 ± 0.53 aaa, bb</td>
+    </tr>
+    <tr>
+      <td>HbA1c (mmol/mol)</td>
+      <td>32.2 ± 0.6</td>
+      <td>40.9 ± 1.2 aaa</td>
+      <td>64.8 ± 5.7 aaa, bb</td>
+    </tr>
+    <tr>
+      <td>HOMA-IR (units)</td>
+      <td>3.42 ± 0.44</td>
+      <td>6.77 ± 0.74 aa</td>
+      <td>6.74 ± 1.05 aa</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol (mg/dL)</td>
+      <td>167.4 ± 10.0</td>
+      <td>181.6 ± 8.3</td>
+      <td>198.1 ± 8.6</td>
+    </tr>
+    <tr>
+      <td>LDL cholesterol (mg/dL)</td>
+      <td>122.9 ± 11.1</td>
+      <td>112.9 ± 6.6</td>
+      <td>124.2 ± 8.5</td>
+    </tr>
+    <tr>
+      <td>HDL cholesterol (mg/dL)</td>
+      <td>39.5 ± 3.3</td>
+      <td>36.3 ± 2.1</td>
+      <td>36.7 ± 1.6</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mg/dL)</td>
+      <td>108.2 ± 7.0</td>
+      <td>132.7 ± 12.2</td>
+      <td>152.0 ± 12.9 a</td>
+    </tr>
+    <tr>
+      <td>Free fatty acids (mmol/L)</td>
+      <td>66.7 ± 6.3</td>
+      <td>74.4 ± 7.2</td>
+      <td>83.5 ± 6.2</td>
+    </tr>
+    <tr>
+      <td>C-reactive protein (mg/L)</td>
+      <td>9.61 ± 1.68</td>
+      <td>11.4 ± 2.3</td>
+      <td>17.4 ± 5.3</td>
+    </tr>
+    <tr>
+      <td>Uric acid (mg/dL)</td>
+      <td>6.30 ± 0.32</td>
+      <td>7.03 ± 0.36</td>
+      <td>6.85 ± 0.68</td>
+    </tr>
+  </tbody>
+</table>
+
+_NG, normoglycemic; IR, insulin-resistant; T2D, type 2 diabetes; LDL, low-density lipoprotein; HDL, high-density lipoprotein; HbA1c, glycated hemoglobin; HOMA-IR, homeostasis model assessment of insulin resistance. aP <0.05, aaP <0.01, aaaP <0.001 vs. NG Obese; bP <0.05, bbP <0.01, bbbP <0.001 vs. IR Obese. One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively) were used. Normality distribution was determined by Shapiro-Wilk normality test._
 
 Paired SC and OM adipose tissue samples were processed for the isolation of the stroma-vascular fraction (SVF) and mature adipocytes. Microscopic analysis of freshly isolated mature adipocytes revealed that these cells were larger in IR/T2D than in NG obese individuals (Figure 1—figure supplement 1A).
 
@@ -61,45 +254,93 @@ SC and OM preadipocytes were obtained after serial passaging (2–3 passages) of
 
 Microscopic observation of lipid droplets (LDs) showed that both SC and OM preadipocytes from NG obese subjects differentiated well, while those from IR/T2D obese groups differentiated poorly (Figure 1—figure supplement 1E). In this line, the mRNA levels of the adipocyte markers, PPARG, FABP4, and ADIPOQ were lower in IR obese subjects than in their NG counterparts throughout differentiation (Figure 1—figure supplement 1F).
 
-## Comparative proteomics of human obese preadipocytes
+### Comparative proteomics of human obese preadipocytes
 
 In order to identify marker pathogenic pathways of dysfunctional preadipocytes in obesity-associated metabolic disease, we employed iTRAQ proteomics of SC and OM preadipocytes from obese individuals with extreme metabolic phenotypes, NG vs. T2D. This study enabled the identification of a total of 1758 proteins that were present in both SC and OM fat from NG and T2D obese individuals, thus defining the human obese preadipocyte proteome. According to GO Biological Process annotation, 55.5% of these proteins were related to cellular and metabolic processes (Figure 1—figure supplement 2A), including metabolism of mRNA, proteins, glucose, and lipids (Figure 1—figure supplement 2B). All the proteomic data related to this study are available at the ProteomeXchange Consortium via the Proteomics IDEntifications (PRIDE) partner repository (Perez-Riverol et al., 2019) with the dataset identifier PXD015621.
 
 Comparison of proteomic data from SC and OM preadipocytes revealed marked differences between the two types of cells regarding the number of differentially expressed proteins and protein-related functional pathways (Figure 1—figure supplement 3, and Figure 1—source data 1). To investigate enrichment for functional pathways in each depot, canonical pathway analysis of the proteomic data was performed using IPA. Among the top ten IPA canonical pathways that were overrepresented in SC preadipocytes in T2D obesity (Figure 1—source data 2), the highest ranked down-regulated pathway was the spliceosomal cycle (Figure 1B). The unfolded protein response (UPR) was also modified in SC preadipocytes from T2D obese group (Figure 1B), while pathways related to ER stress were up-regulated in OM preadipocytes (Figure 1C) in T2D vs. NG obesity.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig1-v3.jpg)
+
+**Figure 1.:** Data correspond to individuals from cohort 1. (A) Venn diagrams showing overlap of differentially regulated proteins between T2D vs. NG obese subjects in SC and OM preadipocytes (left panel). Up-regulated and down-regulated proteins are indicated in the right panel. (B) Top10 over-represented canonical pathways in T2D vs. NG obese subjects in SC preadipocytes and (C) in OM preadipocytes according to Ingenuity Pathway Analysis (IPA). Blue and red bars indicate down-regulated and up-regulated pathways, respectively, in T2D vs. NG obese subjects. Numbers indicate the number of identified proteins/total proteins annotated to the pathway. Black line indicates -Log2(p value). Samples from wo to three individuals per group and fat depot were pooled and used for two separate iTRAQ experiments ( n = 5–6 subjects/group/fat depot). Data normality was tested by Shapiro-Wilk test and Student´s t test was used, a ± 1.5 fold change with p < 0.05 was set as the threshold for categorizing up- and down-regulated proteins. Canonical pathway analysis was performed using IPA (see Materials and ethods section). The online version of this article includes the following figure supplements for Figure 1, Figure 1—figure supplement 1, Figure 1—figure supplement 2, and Figure 1—figure supplement 3; and the following source data for Figure 1—source data 1 and Figure 1—source data 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Cell size of SC and OM mature adipocytes from NG, IR, and T2D morbidly obese subjects (cohort 1; = 6–8, 20 cells each). *p < 0.05, ***p < 0.001 vs. NG and/or IR obese subjects; ##p < 0.01, ###p < 0.001 vs SC preadipocytes from the same subjects. (B) Representative blot and protein level quantification of DLK1/PREF1, CD45, and CD14 in the stromal-vascular fraction (SVF) and preadipocytes (PreAds) from SC and OM adipose tissue from morbidly obese subjects (cohort 1; = 11, 1 technical replicate each). ***p < 0.001 vs. SVF. (C) mRNA levels of KI67 in SC and OM preadipocytes from NG, IR, and T2D morbidly obese subjects (cohort 1; n = 3–6, 1 technical replicate each). *p < 0.05, ***p < 0.001 vs NG and/or IR obese subjects; ##p < 0.01 vs. SC preadipocytes from the same subjects. (D) Proliferation rate of SC and OM preadipocytes from NG, IR, and T2D morbidly obese subjects (cohort 1; n = 20–22, 1 technical replicate each). #p < 0.05, ##p < 0.01 vs. SC preadipocytes from the same subjects. (E) Representative phase-contrast microscopy images (x100 magnification and zoom) during in vitro differentiation and representative confocal images at day 10 of differentiation of SC and OM preadipocytes from NG, IR and T2D morbidly obese subjects (cohort 1). Cells were stained with Oil Red-O (lipid droplets, red) and DAPI (nucleus, blue). Scale bar = 50 μm. (F) mRNA levels of FABP4, ADIPOQ, and PPARG during in vitro differentiation of SC and OM preadipocytes from NG and IR morbidly obese subjects (cohort 1); the values of the area under the curve (AUC) are also shown ( = 3–12, 3 technical replicates each). *p < 0.05, **p < 0.01, ***p < 0.001 vs. previous days; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. NG Obese. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively) were used for A, C, and D; unpaired t test or Mann Whitney test (for parametric or non-parametric data, respectively) were used for B and AUC values in F; and two-way ANOVA was used for time-course differentiation studies in F. Normality distribution was determined by Shapiro-Wilk normality test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Analysis of the proteins identified by iTRAQ-LC-MS/MS in the proteome of preadipocytes isolated from morbidly obese subjects (cohort 1). Samples from two to three individuals per group and fat depot were pooled and used for two separate iTRAQ experiments ( = 5–6 subjects/group/fat depot). (A) Proteins were categorized according to biological processes using GO PANTHER classification system (http://www.pantherdb.org/). (B) The bar chart represents the GO classification and fold enrichment of significantly over- and under-represented Biological Processes (p ≤ 0.05 Bonferroni test) in preadipocyte proteome. The black line represents the number of identified proteins per each GO term and the red line represents -Log2(p value).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Venn diagrams showing overlap of differentially regulated proteins between SC and OM preadipocytes from NG and T2D morbidly obese subjects (cohort 1). Over-represented canonical pathways in SC vs. OM preadipocytes from NG (B), and T2D (C) obese subjects according to Ingenuity Pathway Analysis (IPA). Blue and red bars indicate down- and up-regulated pathways, respectively, in SC vs. OM preadipocytes. Numbers indicate the number of identified proteins/total proteins annotated to the pathway. Black line indicates –Log2(p value). Samples from two to three individuals per group and fat depot were pooled and used for two separate iTRAQ experiments ( n = 5–6 subjects/group/fat depot). Data normality was tested by Shapiro-Wilk test and Student´s t test was used, a ± 1.5-fold change with p < 0.05 was set as the threshold for categorizing up- and down-regulated proteins. Canonical pathway analysis was performed using IPA (see Materials and Methods section).
+
 Based on these findings, we next characterized the splicing machinery and ER control system in preadipocytes and their contribution to adipocyte differentiation.
 
-## Splicing dysregulation as a marker of SC preadipocytes in obesity-related metabolic disease
+### Splicing dysregulation as a marker of SC preadipocytes in obesity-related metabolic disease
 
 To complement our proteomic observations, we assessed the expression of splicing-related genes in human preadipocytes using a microfluidic-based dynamic qPCR array comprising 45 splicing-related components (Gahete et al., 2018). Preadipocytes isolated from the SC and OM fat pads of NG, IR, and T2D obese individuals were employed for this study. Analysis of gene expression profiles by hierarchical clustering revealed a marked gene expression shift between NG and IR/T2D SC preadipocytes, which was not evident for OM preadipocytes (Figure 2A). SC preadipocytes from IR/T2D obese individuals exhibited lower expression levels of splicing-related genes than NG obese subjects, including components of major spliceosome (PRPF8, RNU5, SF3B1 tv1, TCERG1, and U2AF1), and splicing factors (CELF1, MAGOH, RBM3, RBM45, SFPQ, and SNW1) (Figure 2A and B, and Figure 2—figure supplement 1). Notably, only the minor spliceosome component, RNU12, was up-regulated in T2D vs. NG SC preadipocytes (Figure 2A and Figure 2—figure supplement 1B). No differences in OM preadipocytes were observed among the three groups of obese individuals (Figure 2 and Figure 2—figure supplement 1B). These observations were largely confirmed in a second independent subset of samples obtained from additional obese individuals using RT-PCR (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig2-v3.jpg)
+
+**Figure 2.:** (A) Hierarchical clustering dendrogram heatmap analysis of splicing-related genes in SC (green) and OM (red) preadipocytes from normoglycemic (NG), IR, and T2D morbidly obese subjects (cohort 1) ( n = 6, 1 technical replicate each) measured by qPCR dynamic array. Rows stand for splicing-related genes (white, mayor spliceosome; grey, minor spliceosome; black, splicing factors), while columns stand for subject groups. The scale in the colour bar represents -Log2(Fold Change). (B) mRNA levels of PRPF8 measured by qPCR dynamic array (upper graph) and representative blot and protein level quantification of PRP8 (lower graph) in SC and OM preadipocytes from NG, IR, and T2D morbidly obese subjects (cohort 1; n = 6, 1 technical replicate each) *p < 0.05, **p < 0.01 vs. NG and/or IR subjects, ##p < 0.01 vs. SC preadipocytes from the same subjects. (C) mRNA levels of PRPF8 in SC and OM preadipocytes from lean, and NG and T2D subjects with simple obesity (cohort 2; n = 5–11, 1 technical replicate each). *p < 0.05 vs. lean and/or NG obese subjects, #p < 0.05 vs. SC preadipocytes from the same subjects. (D) PRPF8 mRNA levels and area under the curve (AUC) during in vitro differentiation of SC and OM preadipocytes from NG and IR morbidly obese subjects (cohort 1; n = 6, 1 technical replicate each). *p < 0.05, ***p < 0.001 vs. PRPF8 mRNA levels at Day 0; ###p < 0.001 vs. PRPF8 mRNA levels at Day 3; $< 0.05, $$p < 0.01, $$$p < 0.001 vs. NG. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively) were used for B and C; two-way ANOVA was used for D. Normality distribution was determined by Shapiro-Wilk normality test. The online version of this article includes the following figure supplements for Figure 2—figure supplement 1, Figure 2—figure supplement 2, and Figure 2—figure supplement 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Only the genes from the microarray that were significantly regulated are represented (27 out of 42; PRPF8 is shown in Figure 2B). *p < 0.05, **p < 0.01, ***p < 0.001 vs. NG and/or IR subjects; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. SC preadipocytes from the same subjects. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively). Normality distribution was determined by Shapiro-Wilk normality test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** *< 0.05, **p < 0.01, ***p < 0.001 vs. NG and/or IR subjects; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. SC preadipocytes from the same subjects. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively). Normality distribution was determined by Shapiro-Wilk normality test.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** *p < 0.05 vs. lean and/or NG obese subjects; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. SC preadipocytes from the same subjects. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively). Normality distribution was determined by Shapiro-Wilk normality test.
+
 The splicing machinery was also investigated in preadipocytes from a second cohort (Supplementary file 2), comprising lean subjects (BMI <25 kg/m2) and NG and T2D individuals with simple obesity (BMI 30–35 kg/m2) (hereinafter referred to as simple obesity) (Figure 2C and Figure 2—figure supplement 3). These results revealed significantly higher expression levels of main components of the major spliceosome (PRPF8 and SF3B1 tv1) in SC preadipocytes from NG obese vs. lean individuals (Figure 2C and Figure 2—figure supplement 3A). A trend to increase was also observed for the minor spliceosome component, RNU12, and the splicing factors, CELF1 and SNW1, although this did not reach statistical significance (Figure 2—figure supplement 3B and C). Notably, and similar to that observed for morbidly obese individuals from cohort 1 (Figure 2A and Figure 2—figure supplements 1 and 2), a significant decrease in the expression levels of all the genes tested, except RNU12, was observed in T2D vs. NG individuals with simple obesity (Figure 2C and Figure 2—figure supplement 3). No differences were observed in OM preadipocytes when groups of cohort two were compared (Figure 2C and Figure 2—figure supplement 3).
 
-## PRPF8/PRP8 expression studies in human preadipocytes
+### PRPF8/PRP8 expression studies in human preadipocytes
 
 One of the most highly expressed genes in SC preadipocytes from NG obese individuals that was significantly down-regulated in both IR and T2D obese subjects as compared to NG SC preadipocytes, was PRPF8/PRP8. Specifically, mRNA and protein levels of this key component of the major spliceosome were reduced by 51% and 56%, respectively, in IR SC preadipocytes, and by 49% and 82% in T2D SC preadipocytes as compared to NG levels (Figure 2A and B). No differences in PRPF8/PRP8 expression were observed among groups in OM preadipocytes (Figure 2A and B). Differentiation studies revealed that while PRPF8 expression levels remained low throughout adipogenesis in IR preadipocytes, PRPF8 levels peaked at day 3 (D3) of differentiation and thereafter remained above D0 levels in NG preadipocytes (Figure 2D). PRPF8 mRNA remained constant or decreased at the end of differentiation of NG and IR OM preadipocytes, respectively (Figure 2D).
 
-## PRPF8/PRP8 down-regulation in SGBS preadipocytes impairs adipogenesis
+### PRPF8/PRP8 down-regulation in SGBS preadipocytes impairs adipogenesis
 
 We employed a siRNA strategy to down-regulate PRPF8 gene expression levels in preadipocytes to mimic the conditions found in IR/T2D obese SC preadipocytes as compared to NG obesity. These studies were carried out using the human SC adipocyte cell line, SGBS cells. As observed for NG SC human primary preadipocytes, PRPF8 mRNA levels reached a peak at early stages of SGBS cell differentiation (D4) (Figure 3A). siRNA treatment of SGBS preadipocytes (D4) decreased by 67% and 65% PRPF8 mRNA and protein levels, respectively, at day 3 post-transfection (D7), without changing cell viability (Figure 3—figure supplement 1A-C). Morphometric evaluation of Oil-Red O staining in confocal micrographs revealed that PRPF8-silenced preadipocytes accumulated more but smaller LDs than control cells, which resulted in an increase in the total lipid content in cells exposed to PRPF8 siRNA (Figure 3C). In silico analysis of CLIP_Seq data using ENCORI (The Encyclopedia of RNA Interactomes) (Li et al., 2014) revealed both adipogenic (PPARG and SREBF1) and LD biogenesis and growth markers (BSCL2, CIDEB, and CIDEC) as PRP8 target genes (Figure 3—source data 1). Enrichment analysis of PRP8-RNA interactions revealed pathways such as insulin signalling, adipokine signalling, and fatty acid metabolism to be significantly overrepresented (Figure 3—source data 1). Similarly, the HumanBase tool (Greene et al., 2015) identified several adipogenesis-related genes, including ADIPOQ, CAV1, and CD36, among the Top10 genes showing functional interactions with PRPF8 (Figure 3—source data 2). In accordance with the in silico data, expression of total PPARG and SREBF1 transcript contents and the abundances of some of their isoforms were altered in PRPF8-silenced cells (Figure 3D and E). In particular, mRNA and protein levels of the fat-specific PPARG isoform, PPARG-2, were up-regulated upon PRPF8 silencing (Figure 3D and E). Decreased levels and/or altered splicing patterns of BSCL2, CIDEB, and CIDEC, were also observed in silenced cells (Figure 3F). Other genes showing significant changes in PRPF8-silenced cells included enzymes involved in lipid synthesis (FAS and DGAT2), and the LD-associated protein, ADRP, while neither PLIN1 nor HSL/pHSL were modified (Figure 3G). PRPF8 silencing also activated stress responses in SGBS adipocytes, as indicated by the increased protein levels of the ER stress marker, CHOP, the immunoproteasome compkeonent, PSMB8, and CASP3/Pro-CASP3 ratio (Figure 3G). Contrarily to control cells, PRPF8-silenced cells did not respond to an insulin challenge (Figure 3H). Most of the effects depicted for silenced SGBS cells at D7 remained significant at D10 (Figure 3—figure supplement 1). Nevertheless, silenced cells at D10 still exhibited abundant LDs but of small size, thus resulting in a drastic decrease in the total amount of lipids stored in PRPF8 siRNA-treated cells as compared with controls (Figure 3I). PPARG-2 mRNA and protein, and the late adipocyte markers, ADIPOQ and FABP4, were down-regulated at D10 in PRPF8-silenced cells (Figure 3—figure supplement 1D, E and H).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig3-v3.jpg)
+
+**Figure 3.:** (A) PRPF8 mRNA levels in SGBS cells during adipogenesis. (B) Representative blot and protein quantification of PRP8 content in SGBS cells during adipogenesis. (4–6 replicate studies, 3 technical replicates each). (ND), non-detected. *p < 0.05, **p < 0.01, ***p < 0.001 vs. preceding differentiation days. (C) Representative confocal micrographs of SGBS adipocytes 3 days post-transfection (differentiation day 7) with control or PRPF8-siRNA stained with Oil Red-O [lipid droplets (LDs), red] and DAPI (nucleus, blue). Morphometric analysis of LDs was carried out using ImageJ software. Scale bar = 10 μm. (six replicate studies, 10 cells each). mRNA levels of splicing variants of the transcription factors, PPARG and SREBF1 (D), and representative blot and protein level quantification of PPARγ1 and PPARγ2 (E), and of the LD-related proteins, BSCL2, CIDEB, and CIDEC (F), in SGBS adipocytes 3 days post-transfection. (G) Representative blots and protein level quantification of ADRP, BiP, PSMB8, CHOP, DGAT2, FAS, PLIN1, pHSL(Ser563), HSL, Pro-caspase3, and Caspase-3 in SGBS adipocytes 3 days post-transfection. (3–6 replicate studies, 3 technical replicates each). *p < 0.05, **p < 0.01, ***p < 0.001 vs. control; ##p < 0.01 vs. PRPF8-siRNA; $p < 0.05 vs. PRPF8-pcDNA3.1. (H) Representative blots and protein level quantification of pAKT(Ser473) and AKT in SGBS adipocytes 3 days post-transfection treated with/without insulin (100 nmol/L, 15 min). (three replicate studies, 3 technical replicates each). ***p < 0.001 vs. Control-siRNA -Insulin; ###p < 0.001 vs. control-siRNA+ Insulin. (I) Representative confocal micrographs of SGBS adipocytes 5 days post-transfection (day 10 of differentiation) with control, PRPF8-siRNA or PRPF8-pcDNA3.1 alone, or in combination (PRPF8 Recovery) stained with Oil Red-O (LDs, red) and DAPI (nucleus, blue). Morphometric analysis of LDs was carried out using ImageJ software. Scale bar = 10 μm. (five replicate studies, 10 cells each). *p < 0.05, **p < 0.01, ***p < 0.001 vs. control; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. PRPF8-siRNA; $p < 0.05. $$p < 0.01 vs. PRPF8-pcDNA3.1. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively) were used for A and B; unpaired t test or Mann Whitney test (for parametric or non-parametric data, respectively) were used for C-G and I; and two-way ANOVA was used for H. Normality distribution was determined by Shapiro-Wilk normality test. The online version of this article includes the following figure supplements for Figure 3—figure supplement 1, Figure 3—figure supplement 2, and Figure 3—figure supplement 3, and the following source data for Figure 3—source data 1 and Figure 3—source data 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Cell viability of SGBS adipocytes at day 3 and day 5 post-transfection (six replicate studies, 3 technical replicates each) (C). mRNA levels of splicing variants of the transcription factors, PPARG and SREBF1 (three replicate studies, 4 technical replicates each) (D), representative blot and protein level quantification of PPARγ1 and PPARγ2 (three replicate studies, 3 technical replicates each) (E), and mRNA levels of splicing variants of the lipid droplet-related proteins, BSCL2, CIDEB, and CIDEC (three replicate studies, 4 technical replicates each) (F) in SGBS adipocytes 5 days post-transfection with control, PRPF8-siRNA or PRPF8-pcDNA3.1, alone or in combination (PRPF8 Recovery). *p < 0.05, **p < 0.01, ***p < 0.001 vs. control; # < 0.05, ##p < 0.01, ###p < 0.001 vs. PRPF8-siRNA; $p < 0.05, $$p < 0.01, $$$p < 0.001 vs. PRPF8-pcDNA3.1. Representative blots and protein level quantification of ADRP and BiP (six replicate studies, 3 technical replicates each) (G), and mRNA levels of the adipokines, FABP4 and ADIPOQ (six replicate studies, 4 technical replicates each) (H), in SGBS adipocytes at day 5 post-transfection. *p < 0.05 vs. control. Representative blot and protein level quantification of pAKT(Ser473) and AKT in SGBS adipocytes 5 days post-transfection treated with/without insulin (100 nmol/L, 15 min) (three replicate studies, 3 technical replicates each) (I). ***p < 0.001 vs. without Insulin; ###p < 0.001 vs. control-siRNA+ Insulin. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively, determined by Shapiro-Wilk normality test) were used for A-F; unpaired t test or Mann Whitney test (for parametric or non-parametric data, respectively) were used for G and H; and two-way ANOVA was used for I.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) mRNA levels of PRPF8 in hADSCs cells during differentiation (days 0–13) (six replicate studies, 4 technical replicates each). (B) mRNA levels of PRPF8 in hADSCs cells transfected with PRPF8-siRNA or Control-siRNA at day 1 of differentiation and observed at days 3-6-10 of differentiation; the values of the area under the curve (AUC) are also shown (three replicate studies, 4 technical replicates each). (C) Cytotoxicity assay of hADSCs cells transfected with PRPF8-siRNA or Control-siRNA (4–8 replicate studies, 3 technical replicates each). (D) Representative micrographs of hADSCs cells transfected with PRPF8-siRNA or Control-siRNA after staining with BODIPY (LDs, red) and Hoechst (nucleus, blue) (eight replicate studies, 9 cell fields each). mRNA levels of splicing variants of the transcription factors, PPARG and SREBF1 (E), and of the LD-related proteins, BSCL2, CIDEB, and CIDEC (F) (four replicate studies, 3 technical replicates each) in hADSCs cells transfected with PRPF8-siRNA or Control-siRNA. *p < 0.05, **p < 0.01, ***p < 0.001 vs. day 3 of differentiation; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. day 6 of differentiation; $p < 0.05, $$p < 0.01, $$$p < 0.001 vs. Control-siRNA of the same day of differentiation. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively) were used for A; two-way ANOVA was used for B-F; and unpaired t test or Mann Whitney test (for parametric or non-parametric data, respectively) were used for AUC values in F. Normality distribution was determined by Shapiro-Wilk normality test.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Representative confocal micrographs of SGBS cells after exposition of vehicle (DMSO; control) or pladienolide-B 10–8 M for 24 hr stained with Oil Red-O (LDs, red) and DAPI (nucleus, blue). Morphometric analysis of LDs was carried out using ImageJ software. Scale bar = 10 μm (five replicate studies, 10 cells each). mRNA levels of splicing variants of the transcription factors, PPARG and SREBF1 (B), and the LD-related proteins, BSCL2, CIDEB, and CIDEC (C) in SGBS cells after exposure to vehicle (DMSO; control) or pladienolide-B 10–8 M for 24 h. (three replicate studies, 4 technical replicates each). *p < 0.05, **p < 0.01, ***p < 0.001 vs. control. (D) Representative blot and protein level quantification of SFPQ in SGBS cells after transfection with control, SFPQ-siRNA or SFPQ-pcDNA3.1, alone or in combination (SFPQ-Recovery (three replicate studies, 3 technical replicates each)). (E) Representative confocal micrographs of SGBS cells after transfection with control, SFPQ-siRNA or SFPQ-pcDNA3.1, alone or in combination (SFPQ-Recovery) stained with Oil Red-O (LDs, red) and DAPI (nucleus, blue). Morphometric analysis of LDs was carried out using ImageJ software. Scale bar = 10 μm (5–6 replicate studies, 10 cells each). mRNA levels of splicing variants of the transcription factors, PPARG and SREBF1 (F), and the LD-related proteins, BSCL2, CIDEB, and CIDEC (G) of SGBS cells after transfection with control, SFPQ-siRNA or SFPQ-pcDNA3.1, alone or in combination (SFPQ-Recovery) (three replicate studies, 4 technical replicates each). *p < 0.05, **p < 0.01 vs. control; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. SFPQ-siRNA; $p < 0.05. $$p < 0.01 vs. SFPQ-pcDNA3.1; . Data are presented as mean ± standard error of the mean (S.E.M.). Unpaired t test or Mann Whitney test (for parametric or non-parametric data, respectively) were used for A-C; One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively) were used for D-G. Normality distribution was determined by Shapiro-Wilk normality test.
 
 Notably, recovery of PRP8 protein levels by co-transfection of PRPF8-silenced SGBS cells with an expression vector coding for this protein (PRPF8-pcDNA3.1) reverted the effects induced by PRPF8 silencing on adipocyte and LD markers, both at D7 (data not shown) and D10 (Figure 3—figure supplement 1). Silencing-induced changes in both LD number and size were also reverted in rescue experiments by PRPF8 re-expression (Figure 3I). Silencing experiments using human adipose-derived stem cells (hADSCs) gave similar results to those observed in SGBS cells (Figure 3—figure supplement 2).
 
 We also examined the contribution of other splicing genes to adipocyte differentiation, namely the SF3B complex and the splicing factor, SFPQ. Specifically, since SC preadipocytes from IR/T2D obese individuals showed diminished SF3B1 tv1 expression levels (Figure 3—figure supplements 1 and 2), we exposed SGBS cells to pladienolide-B, which binds to the SF3B complex and inhibits pre-mRNA splicing via targeting splicing factor SF3B1 (Aouida et al., 2016; Cretu et al., 2018). Exposure to pladienolide-B impaired lipid accumulation in SGBS cells (Figure 3—figure supplement 3A). This concurred with, among other changes, diminished expression levels of PPARG-1, PPARG-2, and both total SREBF1 and SREBF1-1, while PPARG-4 and BSCL2-2/3 expression increased (Figure 3—figure supplement 3B and C). On the other hand, SFPQ down-regulation by siRNA treatment of SGBS cells caused significant changes in the expression of only a few genes, i.e., up-regulation of total SREBF1 and SREBF1-1 and down-regulation of PPARG-4 (Figure 3—figure supplement 3D-G). Nevertheless, silenced SGBS cells exhibited reduced lipid content, mostly due to the increase in the number of LDs (2.4-fold), while LD size decreased as compared with control cells (2.7-fold) (Figure 3—figure supplement 3E).
 
-## Analysis of PRPF8/PRP8 effects on human primary preadipocytes
+### Analysis of PRPF8/PRP8 effects on human primary preadipocytes
 
 Based on our findings in SGBS preadipocytes, we carried out targeted silencing and overexpression studies of PRPF8/PRP8 in primary preadipocytes obtained from SC adipose tissue samples of NG, IR, and T2D obese individuals (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig4-v3.jpg)
 
-**Figure 4.:** PRPF8 silencing alters differentiation of human primary SC preadipocytes.Data corresponds to individuals from cohort 1. (A) Quantification of PRPF8 mRNA levels in subcutaneous (SC) preadipocytes from normoglycemic (NG), insulin resistant (IR), and with type 2 diabetes (T2D) morbidly obese individuals transfected with control, PRPF8-siRNA, or PRPF8-pcDNA3.1, alone or in combination (PRPF8 Recovery). (three replicate studies, 4 technical replicates each). (B) Representative confocal micrographs of SC preadipocytes from NG, IR, and T2D morbidly obese individuals after transfection with control, PRPF8-siRNA, or PRPF8-pcDNA3.1 alone or in combination (PRPF8 Recovery) stained with Oil Red-O [lipid droplets (LDs), red] and DAPI (nucleus, blue). Morphometric analysis of LDs was carried out using ImageJ software. Scale bar = 10 μm. (12 replicate studies, 10 cells each). mRNA levels of PPARG (C), and SREBF1 (D), and the LD-related proteins, BSCL2 (E), CIDEB (F), and CIDEC (G) and their splicing forms in SC preadipocytes from NG, IR, and T2D morbidly obese individuals after transfection with control, PRPF8-siRNA or PRPF8-pcDNA3.1, alone or in combination (PRPF8 Recovery). (three replicate studies, 4 technical replicates each). *p < 0.05, **p < 0.01, ***p < 0.001 vs. NG-Control; p < 0.05, #p < 0.01, ##p < 0.001 ###vs. PRPF8-siRNA; $p < 0.05. $$p < 0.01, $$$p < 0.001 vs. PRPF8-pcDNA3.1; p < 0.05, @p < 0.01, @@p < 0.001 @@@vs. corresponding basal. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively) were used. Normality distribution was determined by Shapiro-Wilk normality test.
+**Figure 4.:** Data corresponds to individuals from cohort 1. (A) Quantification of PRPF8 mRNA levels in subcutaneous (SC) preadipocytes from normoglycemic (NG), insulin resistant (IR), and with type 2 diabetes (T2D) morbidly obese individuals transfected with control, PRPF8-siRNA, or PRPF8-pcDNA3.1, alone or in combination (PRPF8 Recovery). (three replicate studies, 4 technical replicates each). (B) Representative confocal micrographs of SC preadipocytes from NG, IR, and T2D morbidly obese individuals after transfection with control, PRPF8-siRNA, or PRPF8-pcDNA3.1 alone or in combination (PRPF8 Recovery) stained with Oil Red-O [lipid droplets (LDs), red] and DAPI (nucleus, blue). Morphometric analysis of LDs was carried out using ImageJ software. Scale bar = 10 μm. (12 replicate studies, 10 cells each). mRNA levels of PPARG (C), and SREBF1 (D), and the LD-related proteins, BSCL2 (E), CIDEB (F), and CIDEC (G) and their splicing forms in SC preadipocytes from NG, IR, and T2D morbidly obese individuals after transfection with control, PRPF8-siRNA or PRPF8-pcDNA3.1, alone or in combination (PRPF8 Recovery). (three replicate studies, 4 technical replicates each). *p < 0.05, **p < 0.01, ***p < 0.001 vs. NG-Control; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. PRPF8-siRNA; $p < 0.05. $$p < 0.01, $$$p < 0.001 vs. PRPF8-pcDNA3.1; @p < 0.05, @@p < 0.01, @@@p < 0.001 vs. corresponding basal. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively) were used. Normality distribution was determined by Shapiro-Wilk normality test.
 
 First, we examined the effect of PRPF8 silencing in SC preadipocytes from obese NG patients using a specific siRNA as a mean to mimic the down-regulation of this gene found in SC preadipocytes from obese subjects with IR/T2D (Figure 2A and B, Figure 2—figure supplement 1 and 2). As shown in Figure 4B, SC preadipocytes from NG obese individuals exhibited lower lipid content and changes in LD size and number when silenced for PRPF8. In addition, PRPF8 down-regulation caused numerical decreases, that in most cases reached statistical significance, in the expression levels of both total PPARG and SREBF1 and their isoforms as compared to mock-transfected SC preadipocytes from NG obese subjects (Figure 4C–D). Notably, rescue experiments by transfection of silenced NG obese preadipocytes with the PRPF8-pcDNA3.1 expression vector showed restored expression of most of the genes tested, which was accompanied by a recovery of LD content (Figure 4).
 
 Second, in order to test whether recovery of PRPF8/PRP8 levels could improve the differentiation capacity of IR and T2D obese SC preadipocytes, overexpression studies using the PRPF8-pcDNA3.1 expression vector were carried out (Figure 4). After transfection, both IR and T2D obese SC preadipocytes exhibited PRPF8 expression levels comparable to those of SC preadipocytes from obese NG patients (Figure 4A). PRPF8 expression recovery upon PRPF8-pcDNA3.1 transfection increased the expression of several PPARG isoforms (PPARG-2, PPARG-3, PPARG-4, and γORF4) to control levels (i.e. SC preadipocytes in NG obesity), especially in IR preadipocytes (Figure 4C). Similar results were observed for both total SREBF1 and SREBF1-1 (Figure 4D). In all, these results indicate that the expression of PPARG and SREBF1 could be recapitulated in SC preadipocytes from obese IR/T2D patients by PRPF8 complementation. In line with these findings, confocal microscopy studies showed that PRPF8-pcDNA3.1 expression increased total lipid content in SC preadipocytes from obese subjects with IR/T2D by increasing LD size, while decreasing LD number (Figure 4B). Analysis of markers of LD biogenesis and growth (BSCL-2, CIDEB, CIDEC), showed similar trends to those observed for PPARG and SREBF1 upon manipulation of PRPF8 expression in SC preadipocytes from either NG or IR/T2D obese individuals (Figure 4E–G).
 
-## The UPR is altered in preadipocytes of IR/T2D obese subjects
+### The UPR is altered in preadipocytes of IR/T2D obese subjects
 
 As mentioned earlier, pathway analysis of iTRAQ proteomic data indicated that ER stress-related pathways were altered in both SC and OM preadipocytes from T2D obese individuals when compared to NG obese subjects (Figure 1B and C).
 
@@ -107,15 +348,27 @@ Immunoblotting studies of additional human preadipocyte samples to those employe
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig5-v3.jpg)
 
-**Figure 5.:** Data corresponds to individuals from cohort 1. Representative blots and protein level quantifications of BiP (A), ATF6αp90 and ATF6αp50 (B), pPERK(Thr980) and PERK (C), pEIF2α(Ser51) and EIF2α (D), CHOP €, pIRE1α(Ser724) and IRE1α (F), and PDI and GRP94 (H) in subcutaneous (SC) and omental (OM) preadipocytes from normoglycemic (NG), IR and T2D morbidly obese subjects ( = 6–12, 1 technical replicate each). (G) mRNA levels of XBP1s and XBP1u in SC and OM preadipocytes from NG, IR and T2D obese subjects ( = 12, 1 technical replicate each). *p < 0.05, **p < 0.01, ***p < 0.001 vs. NG and/or IR subjects; p < 0.05, #p < 0.01, ##p < 0.001 ###vs. SC preadipocytes from the same subjects. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively, determined by Shapiro-Wilk normality test) were used.
+**Figure 5.:** Data corresponds to individuals from cohort 1. Representative blots and protein level quantifications of BiP (A), ATF6αp90 and ATF6αp50 (B), pPERK(Thr980) and PERK (C), pEIF2α(Ser51) and EIF2α (D), CHOP €, pIRE1α(Ser724) and IRE1α (F), and PDI and GRP94 (H) in subcutaneous (SC) and omental (OM) preadipocytes from normoglycemic (NG), IR and T2D morbidly obese subjects ( = 6–12, 1 technical replicate each). (G) mRNA levels of XBP1s and XBP1u in SC and OM preadipocytes from NG, IR and T2D obese subjects ( = 12, 1 technical replicate each). *p < 0.05, **p < 0.01, ***p < 0.001 vs. NG and/or IR subjects; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. SC preadipocytes from the same subjects. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively, determined by Shapiro-Wilk normality test) were used.
 
-## Dysregulation of ER-associated protein degradation (ERAD) in IR/T2D obese preadipocytes
+### Dysregulation of ER-associated protein degradation (ERAD) in IR/T2D obese preadipocytes
 
 In association with the UPR, the ERAD represents a key quality-control machinery that recruits unfolded/misfolded ER proteins via ER chaperones and targets these proteins for cytosolic degradation by the proteasome (Christianson and Ye, 2014; Qi et al., 2017). Given our results on the UPR, we next explored the ERAD in human preadipocytes and observed a marked up-regulation of proteins involved in all the steps comprising this process, including protein recognition (BIP; Figure 6A), retrotranslocation through the ER membrane (DERL1, SEC61A1, STT3A, and STT3B; Figure 6B), ubiquitination (HRD1 and RNF185; Figure 6C), and targeting of misfolded proteins to the proteasome (RAD23A and UBQLN1; Figure 6D) in IR/T2D vs. NG obesity. These changes occurred in both SC and OM preadipocytes, which split into two clusters (NG and IR/T2D) when ERAD data was represented in a two-way hierarchical clustering heatmap (Figure 6E). In this line, when the ERAD process was explored during adipocyte differentiation, higher overall transcript contents of ERAD genes in IR preadipocytes than in NG preadipocytes (measured as AUC) were observed (Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig6-v3.jpg)
+
+**Figure 6.:** Data corresponds to individuals from cohort 1. mRNA levels of BIP (A), DERL1, SEC61A1, STT3A and STT3B (B), HRD1, RNF185 and SEL1L (C), and RAD23A and UBQLN1 (D), in subcutaneous (SC) and omental (OM) preadipocytes from normoglycemic (NG), IR and T2D morbidly obese subjects (n = 12, 1 technical replicate each). *p < 0.05, **p < 0.01, ***p < 0.001 vs. NG and/or IR subjects; #p < 0.05, #p < 0.01, ###p < 0.001 vs. SC preadipocytes from the same subjects. (E) Hierarchical clustering dendrogram heatmap analysis of ERAD-related genes in SC (green) and OM (red) preadipocytes from NG, IR, and T2D obese subjects. Rows stand for ERAD-related steps (white, recognition; light grey, retrotranslocation; dark grey, ubiquitination; black, targeting to proteasome), while columns stand for subject groups. The scale in the colour bar represents -Log2(Fold Change). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively, determined by Shapiro-Wilk normality test) were used. The online version of this article includes the following figure supplements for Figure 6—figure supplement 1 and Figure 6—figure supplement 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Area under the curve (AUC) is also shown. *p < 0.05, **p < 0.01, ***p < 0.001 vs. day 0 of differentiation; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. day 3 of differentiation; @@@p < 0.001 vs. day 6 of differentiation; $p < 0.05, $$p < 0.01, $$$p < 0.001 vs. NG Obese. Data are presented as mean ± standard error of the mean (S.E.M.). Two-way ANOVA was used; and unpaired t test or Mann Whitney test (for parametric or non-parametric data, respectively) was used for AUC values. Normality distribution was determined by Shapiro-Wilk normality test.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** *p < 0.05, **p < 0.01 vs. lean and/or NG obese subjects; #p < 0.05, ##p < 0.01 vs. SC preadipocytes from the same subjects. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively). Normality distribution was determined by Shapiro-Wilk normality test.
+
 Finally, when preadipocytes from individuals of cohort 2 (Supplementary file 2) were examined, a trend to increase in representative genes of ERAD in T2D individuals with simple obesity vs. their NG counterparts and lean individuals was observed (Figure 6—figure supplement 2). Nevertheless, the expression of some of these ERAD-related genes, such as RAD23A, which was higher in SC preadipocytes from NG individuals with simple obesity as compared to lean individuals, decreased in the transition from NG to T2D in obesity (Figure 6—figure supplement 2D), an effect that was also observed in morbid obesity (Figure 6D).
 
-## Regulation of ER proteostasis in preadipocytes
+### Regulation of ER proteostasis in preadipocytes
 
 In order to unveil the regulation of ERAD in preadipocytes, in vitro models of hyperglycaemia/hyperinsulinemia, inflammation, and hypertrophy due to lipid overload, were developed using SGBS cells (Figure 7—figure supplement 1). Specifically, preadipocytes were exposed to high concentrations of glucose and insulin (HGHI), TNFα, or fatty acids (palmitate or oleate), respectively (Díaz-Ruiz et al., 2015). None of the treatments compromised cell viability (data not shown) and, except for oleate, they impaired insulin-induced Akt phosphorylation (Figure 7—figure supplement 1C). Exposure to HGHI increased the expression of BiP and nearly all the other ERAD components tested (Figure 7—figure supplement 2A). As shown in Figure 7—figure supplement 2B, expression levels of ERAD genes enabled discrimination of HGHI-treated from control SGBS cells. Given these observations, we next examined the activity of the protein degradation machinery in the cytosol, the proteasome (Bard et al., 2018), in cells exposed to HGHI. These studies showed that hyperglycaemic/hyperinsulinemic conditions decreased the activity of the 26 S proteasome while increasing the amount of ubiquitinated proteins in SGBS preadipocytes (Figure 7—figure supplement 2C and H).
 
@@ -124,6 +377,22 @@ The naturally occurring bile acid, tauroursodeoxycholic acid (TUDCA), has been s
 Finally, TUDCA was also able to reduce the enhanced expression levels of ERAD-related genes and decreased mRNA levels of adipogenic markers induced by BiP overexpression in SGBS preadipocytes (Figure 7—figure supplement 3).
 
 Based on the results obtained in SGBS preadipocytes, we next tested whether exposure to HGHI could induce an IR-like phenotype in primary preadipocytes from OM adipose tissue of NG obese individuals (i.e., activation of ERAD). Figure 7 shows that, as for SGBS preadipocytes, exposure of OM preadipocytes from NG obese subjects to HGHI increased the expression levels of genes involved in all ERAD steps (recognition, retrotranslocation ubiquitination, and targeting to the proteasome) in these cells (Figure 7A–D). On the other hand, TUDCA, which did not alter essentially the expression of ERAD genes when administered alone, reduced HGHI-induced gene expression increases to control levels (i.e. OM preadipocytes from NG obese individuals exposed to medium alone) (Figure 7A–D). HGHI also increased the accumulation of ubiquitinated proteins in OM preadipocytes from NG obese individuals, while only a slight, not significant decrease in ubiquitin-conjugated proteins was observed when HGHI was combined with TUDCA (Figure 7E). Notably, the activity of the 26 S proteasome remained unchanged in all the experimental conditions tested (Figure 7F).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig7-v3.jpg)
+
+**Figure 7.:** Data correspond to individuals from cohort 1. mRNA levels of BIP (A), DERL1, SEC61A1, STT3A, and STT3B (B), HRD1, RNF185 and SEL1L (C), and RAD23A and UBQLN1 (D). (three replicate studies, 4 technical replicates each). Representative dot-blot and protein quantification of ubiquitin-conjugated proteins (E), and chymotrypsin-like peptidase activity of the 26 S proteasome (+ ATP) (F) in OM preadipocytes from NG, IR, and T2D morbidly obese individuals exposed 14 hr to 0.5 mg/mL TUDCA, 24 hr to HGHI conditions, and/or a combination of both. (3–9 replicate studies, 3 technical replicates each). (G) Representative confocal micrographs of OM preadipocytes from NG, IR, and T2D morbidly obese individuals under the indicated experimental conditions stained with Oil Red-O [lipid droplets (LDs), red] and DAPI (nucleus, blue). Morphometric analysis of LDs was carried out using ImageJ software. Scale bar = 10 μm. (12 replicate studies, 10 cells each). (H–I) mRNA levels of adipogenesis-related genes in OM preadipocytes from NG, IR and T2D morbidly obese individuals under the indicated experimental conditions. (three replicate studies, 4 technical replicates each). *p < 0.05, **p < 0.01. ***p < 0.001 vs. control; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. HGHI; $ < 0.05, $$p < 0.01 vs. TUDCA; @p < 0.05, @@p < 0.01, @@@p < 0.001 vs. corresponding basal. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively) were used. Normality distribution was determined by Shapiro-Wilk normality test. The online version of this article includes the following figure supplements for Figure 7—figure supplement 1, Figure 7—figure supplement 2, and Figure 7—figure supplement 3.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** Cells were stained with Oil Red-O (LDs, red) and DAPI (nucleus, blue). Morphometric analysis of LDs was carried out in untreated and treated SGBS preadipocytes using ImageJ software. Scale bar = 10 μm (five replicate studies, 10 cells each) (B). *p < 0.05, **p < 0.01, ***p < 0.001 vs. corresponding control. Representative blots and protein level quantification of pAKT(Ser473) and AKT in SGBS preadipocytes after exposure to insulin (100 nM, 15 min) or medium alone (three replicate studies, 3 technical replicates each) (C). **p < 0.01, ***p < 0.001 vs. corresponding control with insulin. Data are presented as mean ± standard error of the mean (S.E.M.). Unpaired t test or Mann Whitney test (for parametric or non-parametric data, respectively, determined by Shapiro-Wilk normality test) were used. Normality distribution was determined by Shapiro-Wilk normality test.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** (A) mRNA levels of ERAD-related genes in SGBS preadipocytes exposed during 30 h to high glucose (4.5 g/L)/high insulin (100 nmol/L) (HGHI; white), 5 nM TNFα (light grey), 500 μM Oleate (dark grey) or 500 μM Palmitate (black) (six replicate studies, 4 technical replicates each). *p < 0.05, **p < 0.01 vs. corresponding control. (B) Hierarchical clustering dendrogram heatmap analysis of ERAD-related genes in SGBS preadipocytes in control (green) and after exposure to HGHI, TNFα, Oleate or Palmitate (red). Rows stand for ERAD-related steps (white, recognition; light grey, retrotranslocation; dark grey, ubiquitination; black, targeting to proteasome), while columns stand for subject groups. The scale in the colour bar represents -Log2(Fold Change). (C) Chymotrypsin-like peptidase activity of the 26 S proteasome (+ ATP) and 20 S proteasome (+ SDS) (three replicate studies, 3 technical replicates each). mRNA levels of ERAD (D) and adipogenesis-related (E) genes (three replicate studies, 4 technical replicates each), and representative dot-blot and protein quantification of ubiquitin-conjugated proteins (three replicate studies, 3 technical replicates each) (F) in SGBS preadipocytes exposed 14 hr to 0.5 mg/mL TUDCA (TUDCA, grey), 30 h to HGHI conditions (white), or a combination of both (TUDCA + HGHI, black). (ND), non-detected. *p < 0.05, **p < 0.01. ***p < 0.001 vs. control; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. HGHI; $p < 0.05, $$p < 0.01 vs. TUDCA. Data are presented as mean ± standard error of the mean (S.E.M.). Unpaired t test or Mann Whitney test (for parametric or non-parametric data, respectively, determined by Shapiro-Wilk normality test) were used for A and C; one-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively) were used for D-F. Normality distribution was determined by Shapiro-Wilk normality test.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/65996/elife-65996-fig7-figsupp3-v3.jpg)
+
+**Figure 7—figure supplement 3.:** *p < 0.05, **p < 0.01. ***p < 0.001 vs. control; #p < 0.05, ##p < 0.01, ###p < 0.001 vs. pCMV-BIP; $p < 0.05, $$p < 0.01, $$$p < 0.001 vs. TUDCA. Data are presented as mean ± standard error of the mean (S.E.M.). One-way ANOVA with Tukey’s multiple comparisons test or Kruskal-Wallis with Dunn’s multiple comparisons test (for parametric or non-parametric data, respectively) were used. Normality distribution was determined by Shapiro-Wilk normality test.
 
 Morphometric quantification of micrographs from HGHI-treated OM preadipocytes revealed a decrease in total lipid content as compared to their control counterparts (Figure 7G). These changes were accompanied by significant reductions in the expression of total PPARG and PPARG-2 as well as of ADIPOQ and FABP4 mRNA levels (Figure 7H and I). Exposure to TUDCA reverted the effects of HGHI on both lipid content and on most of the adipogenic genes examined (Figure 7G–I).
 
@@ -151,37 +420,37 @@ In summary, our results unveil an important role for alternative splicing in SC 
 
 ## Materials and methods
 
-## Subjects (Cohort 1)
+### Subjects (Cohort 1)
 
 A total of 78 morbidly obese subjects (BMI >40 kg/m2) undergoing bariatric surgery were recruited at the General and Digestive Surgery Unit and the Lipids and Atherosclerosis Unit of the Reina Sofía University Hospital (HURS; Córdoba, Spain). Written consent was obtained from all the participants prior to recruitment, and the experimental protocol was approved by the Ethics and Research Committee of HURS following the Helsinki Declaration (Ethics Committee HURS, ref 3170). Anthropometric and biochemical parameters were obtained as described (Díaz-Ruiz et al., 2015). Subjects are of Caucasian origin, aged 18–60 years. Type 2 diabetes mellitus (T2D) in treatment with insulin, serious systemic disease not related to obesity (infectious disease, cancer, kidney disease, or severe liver disease) or major cardiovascular disease in the 6 months prior to the inclusion of the study, pregnancy, or breastfeeding and acute or chronic inflammatory diseases were considered as exclusion criteria.
 
 Subjects were matched by age and BMI and subclassified into three groups [normoglycemic (NG Obese, n = 30; 15 females and 15 males): Glucose <100 mg/dL and HbA1c < 5.7%; impaired fasting glucose (IFG Obese, n = 30; 15 females and 15 males): Glucose 100–126 mg/dL and HbA1c 5.7%–6.4%; and diagnosed with type 2 diabetes (T2D Obese, n = 18; 11 females and 7 males): Glucose >126 mg/dL and HbA1c > 6.4%], according to the criteria of the American Diabetes Association (ADA, 2021). The clinical characteristics of the subjects are shown in Table 1. IFG individuals exhibited significantly higher HOMA-IR values than NG individuals, as well as other clinical and plasma parameters that are within the cut-off points for identifying insulin resistance in hyperinsulinemia-euglycemic clamp studies (Tam et al., 2012). Thus, they will be referred to hereinafter as insulin-resistant (IR) subjects (Díaz-Ruiz et al., 2015).
 
-## Subjects (Cohort 2)
+### Subjects (Cohort 2)
 
 Forty-three subjects were recruited by the Endocrinology and Surgery departments at the University Hospital Joan XXIII (Tarragona, Spain) as reported previously (Ejarque et al., 2017). All subjects were of Caucasian origin and reported that their body weight had been stable for at least 3 months before the study. They had no systemic disease other than obesity, and all had been free of infection in the previous month before the study. Primary liver disease, cardiovascular disease, arthritis, acute inflammatory disease, infectious disease, neoplastic and renal diseases were specifically excluded by biochemical work-up. Subjects were classified by BMI according to World Health Organization criteria as lean (n = 18, BMI < 25 kg/m2) and obese (n = 25, BMI > 30 kg/m2). Obese subjects were subclassified into NG (n = 15) and T2D (n = 10) groups, as previously described (Serena et al., 2016). OM and SC adipose tissue samples were obtained during scheduled non-acute surgical procedures including laparoscopic surgery for hiatus hernia repair or cholecystectomies in non-morbid obese population. Anthropometric and biochemical variables from the cohort are presented in Supplementary file 2.
 
 The hospital ethics committee approved the study and informed consent for biobanking surgically removed tissue was obtained from all participants in accordance with the Declaration of Helsinki.
 
-## Adipose tissue processing
+### Adipose tissue processing
 
 Paired abdominal subcutaneous (SC) and omental (OM) adipose tissue biopsies were obtained during bariatric surgery and processed as previously described (Díaz-Ruiz et al., 2015; Peinado et al., 2010). Samples were washed with Dulbecco’s phosphate buffered saline (D-PBS) to remove blood contaminants and mechanically dispersed in DMEM/F-12 (1:1). Next, samples were enzymatically dispersed by incubation in DMEM/F-12 (1:1) containing 400 units/mL of collagenase type V at 37°C for 30 min in a shaking bath. Undigested tissue was removed by filtering through a sterile 100 μm pore Cell Strainer (BDFalcon, Cat#352360) and the remaining was centrifuged at 600 x g for 10 min to separate the floating mature adipocyte layer and the pelleted stromal-vascular fraction (SVF). SVF was resuspended in DMEM/F-12 (1:1), filtered through a 40 μm pore Cell Strainer (BDFalcon, Cat#352340) and centrifuged at 400 x g for 5 min. Then, pelleted SVF was resuspended in 500 μL of RBC Lysis Buffer and incubated for 3 min at room temperature (RT). After centrifugation at 400 x g for 10 min, SVF was frozen in liquid nitrogen and stored at –80°C for further analysis and/or seeded onto culture flasks.
 
 Freshly isolated mature adipocytes were washed with DMEM/F-12 (1:1) and added to lipolysis buffer [Krebs Ringer Phosphate (KRP) buffer: 0.9% NaCl, 15 mM NaH2PO4, 6 mM KCl, 1.5 mM MgSO4, 1.6 mM CaCl2 supplemented with 2% bovine serum albumin (BSA), 1 mg/mL glucose and 0.1 mg/mL ascorbic acid; pH 7.4]. Fat cell volume and weight was determined as described (Tchoukalova et al., 2003) and discussed (Lundgren et al., 2007). In brief, light microscopy images of 100 cells were captured with a coupled camera (Moticam 1080; Motic, Barcelona, Spain) and their diameters (d) were measured in micrometres using ImageJ 1.50b. Mature adipocytes are assumed to be spheres so that their volume (expressed in picolitres) was calculated as ([π×d3]/6) where d is the cell diameter in micrometres.
 
-## Human primary preadipocytes
+### Human primary preadipocytes
 
 Human primary preadipocytes were cultured as previously described (Serena et al., 2016; Guzmán-Ruiz et al., 2014). SVF cells obtained from fresh SC and OM adipose tissue samples were seeded in preadipocyte-proliferation medium DMEM/F-12 (1:1) supplemented with 8 mM biotin, 18 mM d-pantothenate acid, 100 mM ascorbate, and 1% penicillin-streptomycin, and 10% new-born calf serum (NCS) at 37 °C in a humidified atmosphere with 95% air: 5% CO2. Medium was replaced every 48 h until confluence. Once in confluence ( > 80%), the cells were detached with trypsin- EDTA solution and subcultured at 4,000 cells/cm2 2–3 times to purify and amplify the cell culture following established methods (Bunnell et al., 2008; Palumbo et al., 2018; Zhu et al., 2013). Thereafter, preadipocytes were collected and frozen in liquid nitrogen and stored at –80°C for immunophenotyping analysis, proliferation studies, or directly induced for adipogenic differentiation, as indicated in detail in the following sections.
 
-## Immunophenotyping analysis
+### Immunophenotyping analysis
 
 Freshly isolated SVF cells and cell cultures derived from SVF at passages 2–3 were processed for detection of preadipocyte markers and immune cell markers to assess the purity of the cell preparations employed for further analysis. To be more specific, the protein content of DLK1/PREF1 (preadipocyte marker), CD45 (leukocyte marker), and CD14 (macrophage marker) was assessed in extracts from the SVF and preadipocytes that were obtained from the same SC and OM adipose tissue samples following the procedures indicated in the ‘Quantitative immunoblotting’ section below.
 
-## In vitro differentiated human adipocytes
+### In vitro differentiated human adipocytes
 
 Preadipocytes were seeded at 4000 cells/cm2 in preadipocyte proliferation medium until they reached 70–80% of confluence. Then (day 0 of differentiation), primary preadipocytes were differentiated keeping them in differentiation medium: preadipocyte-proliferation medium with 3% NCS and 17.5 mM glucose, supplemented with 10 μg/mL insulin, 0.1 μM dexamethasone, 1 μM rosiglitazone, and 0.5 mM IBMX for the first 3 days. Then, medium was removed and replaced by differentiation medium supplemented with 10 μg/mL insulin and 0.1 μM dexamethasone for four more days (day 6), when the medium was refreshed and maintained until day 10. The adipogenic process was monitored by the appearance of doubly refractile lipid inclusions by light microscopy and images of the cultures were taken with a coupled camera (Moticam 1080; Motic, Barcelona, Spain). Experiments were carried out using cells from passages 3–4.
 
-## Human adipose tissue cells lines
+### Human adipose tissue cells lines
 
 In this study we employed SGBS cells, a human-derived preadipocyte cell line isolated from the SVF of SC adipose tissue from a 3 months male infant with Simpson-Gobali-Behmel syndrome, was kindly donated by Prof. Dr. Martin Wabitsch (Ulm University, Germany). This cell model has been largely used in studies pertaining to preadipocytes and differentiated adipocytes (Allott et al., 2012; Fischer-Posovszky et al., 2008; Kalkhof et al., 2020; Newell et al., 2006; Zandbergen et al., 2005). SGBS cells growth and differentiation into adipocytes were performed as previously described (Moure et al., 2016). Cells were seeded at a density of 4000 cells/cm2 and proliferated to 80% confluence in basal medium: DMEM/F12 (1:1) supplemented with 32.7 μM biotin, 16.78 μM d-panthothenic acid, and 1% penicillin-streptomycin.
 
@@ -193,43 +462,43 @@ Cells at day 0 of differentiation were differentiated keeping them in differenti
 
 All the cells used tested negative for mycoplasma contamination using a specific commercially available kit.
 
-## iTRAQ labelling and high-resolution LC-MS/MS
+### iTRAQ labelling and high-resolution LC-MS/MS
 
 A total of 1 × 106 human SC and OM preadipocytes from NG and T2D obese subjects were homogenized in lysis buffer containing 8 M urea, 4% CHAPS, 30 mM Tris base, sonicated, and quantified by RcDc assay kit. Reduction and alkylation were done by addition of 2 mM 1,4-dithiothreitol (DTT) and 7 mM iodoacetamide (IAA), respectively, for 15 min at RT. Then, samples from two to three individuals per group and fat depot were pooled and used for two separate iTRAQ experiments (n = 5–6 subjects per group and fat depot). Protein samples were precipitated using 10% trichloroacetic acid (TCA), diluted in tetraethylammonium bromide (TEAB) with 0.1% sodium dodecyl sulphate (SDS) and quantified. Samples were diluted 1:2 with TEAB and digested with 2% trypsin. Tryptic peptides (240 μg per group and fat depot) were employed for proteomic analysis using 4-plex isobaric tags for iTRAQ according to the manufacturer’s instructions. Samples were tagged with the corresponding iTRAQ reagent, mixed, desalted and fractionated by strong cation exchange (SCX).
 
 Six fractions were collected, and each fraction was desalted, evaporated to dryness, and diluted in 20 μL of injection phase. Then, 8 μL of extract were diluted with 5% methanol (MeOH)/1% formic acid and analysed by liquid chromatography-tandem mass spectrometry (LC-MS/MS). The MS system used was an Orbitrap XL (Thermo Scientific) equipped with a microESI ion source (Proxeon; Madrid, Spain) and coupled to an Agilent 1,200 series LC-system (Agilent Technologies; Madrid, Spain). The SCX-fractions were loaded onto a chromatographic system consisting of a C18 preconcentrating cartridge (Agilent Technologies) connected to a 15 cm long, 100 μm i.d. C18 column (Nikkyo Technos Co., Ltd.; Tokyo, Japan). The separation was performed at 0.4 μL/min in a 90 min acetonitrile gradient from 3% to 40% [solvent A: 0.1 % formic acid, solvent B: acetonitrile with 0.1 % formic acid]. The Orbitrap XL was operated in the positive ion mode with a spray voltage of 2 kV. The scan range for full scans was m/z 400–1800. The spectrometric analysis was performed in a data dependent mode, acquiring a full scan followed by 8 MS/MS scans of the four most intense signals detected in the MS scan. For each MS signal, two MS/MS spectra were acquired using higher energy collisional dissociation (HCD) and ion-trap-based collision-induced dissociation (CID) as fragmentation devices. The HCD spectra were used to measure the intensity of iTRAQ fragments and the CID spectra were used for database search and peptide identification. An exclusion time of 30 sec and a spectral count of 2 were included to avoid repetitive MS/MS analysis of the dominant MS signals.
 
-## Database search and protein identification
+### Database search and protein identification
 
 Peak lists were searched against the complete human proteome (UniProt release 2014_08, with 68049 proteins) using SEQUEST (Proteome Discoverer 1.3, ThermoFisher) as search engine. The search tolerances were set as follows: peptide mass tolerance 10 ppm, fragment tolerance 0.8 Da, with trypsin as enzyme (allowing up to two missed cleavages), methionine oxidation ( + 15.995 Da) and 4-plex iTRAQ (K, Y, N-terminal, + 144.102) as variable modifications, and cysteine carbamidomethylation ( + 57.021 Da) as fixed modification. Peptide identifications were filtered for 0.5% FDR and only proteins identified with two or more peptides were considered. All the raw data of mass spectrometry measurements, together with protein identification have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with the dataset identifier PXD015621.
 
-## Data normalization and statistical analysis
+### Data normalization and statistical analysis
 
 Protein intensities, for each of the two iTRAQ experiments, were normalized using protein median intensities in each comparison (iTRAQ reagents 115/116: 0.987, 115/117: 0.958, 116/114: 1.142, 117/114: 1.191 for replicate 1; and 115/116: 1.026, 115/117: 0.933. 116/114: 1.090, 117/114: 1.180 for replicate 2). Protein identified in the two replicates were matched. To discard duplicate proteins between replicates, the following parameters were considered: absence of missing values, # unique peptides, # peptide and coverage (the higher, the better). Proteins showing quantification values within a fixed average ratio ( ± 1.5) and a coefficient of variation (CV) under 20% were considered for further statistical analysis. Specifically, the Perl module ‘Statistic R’ was used to calculate the average, the standard deviation (SD), the coefficient of variation (CV), and the fold change ratios for each protein between groups. Data normality was tested by Shapiro-Wilk test, and a Student’s t test was performed to obtain the statistical significance (p-value).
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
 Gene Ontology (GO) analysis of the proteomic results was conducted using online open-source software PANTHER (Protein ANalysis THrough Evolutionary Relationships) classification system 14.1 that annotated proteins to biological processes (Mi et al., 2019). Significant over- and under-represented GO terms and pathways were identified by Fisher’s Exact with FDR multiple test correction <0.05 taking all the Homo sapiens genes in the data set as a reference list. To determine quantitative changes in this study, a ± 1.5 fold change, with p < 0.05 (determined by t-test) in two replicates, was set as the threshold for categorizing up-regulated and down-regulated proteins. Pathway and upstream regulator analysis were performed using IPA (Ingenuity Pathways Analysis) software 49309495. Canonical pathway analysis identified the pathways from the IPA library of canonical pathways that were most significant to the data set. The significance of the association between the data set and the canonical pathway was measured in two ways: (1) A ratio of the number of proteins from the data set that mapped to the pathway divided by the total number of proteins that mapped to the canonical pathway displayed. (2) Fisher’s exact test was used to calculate a p-value determining the probability that the association between the proteins in the dataset and the canonical pathway was explained by chance alone, and p < 0.05 was considered statistically significant. The authors thankfully acknowledge the computer resources, technical expertise and assistance provided by the PAB (Andalusian Bioinformatics Platform) centre located at the University of Málaga (http://www.scbi.uma.es). mRNA binding sites and adipose tissue-specific functional interactions of PRPF8, SF3B1, and SFPQ were investigated using ENCORI (The Encyclopedia of RNA Interactomes; http://starbase.sysu.edu.cn/index.php) (Li et al., 2014) or SpliceAid-F (http://srv00.recas.ba.infn.it/SpliceAidF/) (Giulietti et al., 2013) and HumanBase tool (https://hb.flatironinstitute.org/) (Greene et al., 2015), respectively.
 
-## Silencing studies in preadipocytes
+### Silencing studies in preadipocytes
 
 Primary human SC preadipocytes from NG obese individuals (cohort 1) and SGBS preadipocytes, cultured on 6-wells or 12-wells plates, were stably transfected at day 4 of differentiation with targeted double stranded siRNA oligonucleotides against the major spliceosome component, PRPF8, the splicing factor, SFPQ, or their corresponding specific negative control siRNA using Lipofectamine RNAiMAX Transfection Reagent following manufacturer’s instructions. Transfection efficiency was checked by RT-PCR, western blotting and, when possible, by cotransfecting cells with N-terminal end of phrGFP-N1, as a reporter (Moreno-Castellanos et al., 2017) using Lipofectamine 2000 Transfection Reagent. Briefly, the cells were washed twice with D-PBS and submerged into 1 mL of OPTI-MEM medium containing 100 nM of the corresponding siRNA and, when required, 3 μg of phrGFP-N1 during 24 hr. Thereafter, the transfection medium was removed, and fresh culture medium was added. Finally, after 3–5 days of transfection, silenced cells were stained with Oil Red-O. The effects of PRPF8 and SFPQ silencing were also explored by RT-PCR and quantitative immunoblotting. In another series of experiments, PRPF8 siRNA-treated SGBS cells were exposed to 100 mM insulin for 15 min.
 
 hADSCs were transfected one day before differentiation induction through electroporation by Kit Neon Transfection System (Kim et al., 2008). The cells were trypsinised and washed with D-PBS (without Ca2+ and Mg2+) and resuspended in Resuspension Buffer R at a final density of 1 × 106 cells/mL. The NEON system (Invitrogen) 10 μL electroporation tips were used with 106 cells per reaction. One pulse (1200 V, 40 ms) was used to transfect a final concentration of 40 nmol/L siRNA to cells, which were seeded in medium without antibiotic/antimycotic. Twenty-four hr after electroporation, the medium was replaced, and differentiation started following the standard protocol. Finally, the effects of PRPF8 silencing were evaluated at different days of differentiation (0, 3, 6, and 10 days of differentiation).
 
-## Overexpression studies in preadipocytes
+### Overexpression studies in preadipocytes
 
 Primary human SC preadipocytes from NG obese individuals (cohort 1) and SGBS preadipocytes, cultured on 6-wells or 12-wells plates, were stably transfected at day 3–4 of differentiation with a plasmid vector coding for PRPF8 (PRPF8-pcDNA3.1), SFPQ (SFPQ-pcDNA3.1), their corresponding empty plasmid vector alone (pcDNA3.1) as a negative control, or co-transfected in combination with their corresponding siRNA using Lipofectamine 2000 Transfection Reagent following manufacturer’s instructions. In another sets of experiments, SGBS preadipocytes were stably transfected with a plasmid vector coding for BIP (pCMV BiP-Myc-KDEL-wt) or its corresponding empty vector (pCMV-Myc), Transfection efficiency was checked by RT-PCR, western blotting and, when needed, by co-transfecting cells with N-terminal end of phrGFP-N1, as a reporter (Allott et al., 2012; Moreno-Castellanos et al., 2017). Briefly, the cells were washed twice with D-PBS and submerged into 1 mL of OPTI-MEM medium containing 3 μg of corresponding plasmid vector and 100 nM of the siRNA during 24 hr. Thereafter, the transfection medium was removed, and fresh culture medium was added. Finally, after 3–5 days of transfection, silenced cells were stained with Oil Red-O.
 
 The effects of PRPF8 overexpression were also explored in primary human SC preadipocytes from IR/T2D obese individuals (cohort 1) by RT-PCR and quantitative immunoblotting. These techniques were also employed to study the effects of BiP overexpression in SGBS preadipocytes. All constructs were verified by DNA sequencing.
 
-## Lipid droplet (LD) morphometric analysis
+### Lipid droplet (LD) morphometric analysis
 
 Oil Red-O staining of cellular lipids was performed in human preadipocytes and SGBS cells grown on glass coverslips under different conditions as previously described (Pulido et al., 2011). Cells were washed with D-PBS and fixed with 4% paraformaldehyde for 8 min at RT. Coverslips were washed with 60 % isopropanol and then left to dry completely. Subsequently, an Oil Red-O stock solution was prepared: 0.35 g Oil Red-O was dissolved in 100 mL 100 % isopropanol. Before use, the solution was diluted 6:4 with distilled water, allowed to stand for 10 min, and then filtered through Whatman no. 1 paper. Cells were exposed to this solution for 30 min at RT in darkness and the unbound dye was rinsed with distilled water. Images were captured with an inverted light microscope coupled to a camera. For morphometric studies of the lipid droplets (LDs), coverslips were mounted on slides with fluorescent mounting medium containing 1 μg/mL DAPI, to visualize the nuclei, and examined by confocal microscopy as described previously (Pulido et al., 2011). At least 30 cells were randomly selected for each experimental condition and the LD number and size were then estimated by using ImageJ 1.50b (Deutsch et al., 2014; Mohan et al., 2019). Analysis was performed by converting the 8-bit image into a binary image, that consists of the pixels comprising the LDs. Following binarization, the image was subjected to watershed object separation for image processing, which is used to identify borders of adjacent LDs (Abdolhoseini et al., 2019). After separation, the binary image was manually compared with the original image for consistency and correct binary conversion. After setting the scale of the image, the amount and individual size of the LDs in the image, displayed by ImageJ as surface area in μm2, were measured. Incomplete LDs located at the edge of the image were excluded. The sum of the areas of all the LDs present in a cell was used as the total lipid content.
 
 Staining of neutral lipid and DNA was performed in hADSCs cultured on 96-wells plates under PRPF8-silencing as previously described (Pettersson et al., 2015). hADSCs were washed with PBS and fixed with 4% paraformaldehyde solution (PFA) containing 0.123 mol/L NaH2PO4 × 2H2 O, 0.1 mol/L NaOH and 0.03 mol/L glucose for 10 min at RT. Fixed cells were washed with PBS and stained with Bodipy 500/510 (0.2 μg/ml PBS) and Hoechst (2 μg/ml PBS, Molecular probes) for 20 min at RT. After washing with PBS, accumulation of intracellular lipids (Bodipy staining) and cell number (Hoechst staining for nuclei) were quantified with Cell Insight CX5 High-Content Screening (HCS) Platform (Thermo Fisher Scientific) and High-Content Screening (HCS) Studio Cell Analysis Software 2.0. Total lipid content, LD number and size were normalised by cell number.
 
-## Experimental treatments
+### Experimental treatments
 
 To evaluate the contribution of the SF3B complex to adipogenesis, we employed pladienolide-B, a natural product that binds to this complex and inhibits pre-mRNA splicing via targeting splicing factor SF3B1 (Aouida et al., 2016; Cretu et al., 2018). SGBS cells at day 4 of differentiation were treated with pladienolide-B or vehicle for 24 hr (Jiménez-Vacas et al., 2019). Pladienolide-B was initially used in the 10–11 to 10–7 M range, being 10–8 M the higher dose that did not compromise cell viability (data not shown).
 
@@ -237,15 +506,15 @@ SGBS preadipocytes at day 4 of differentiation were exposed for 30 h, to differe
 
 In a second series of experiments, the effect of a bile acid known to reduce ER stress, tauroursodeoxycholic acid (TUDCA) (Uppala et al., 2017; Xia et al., 2017; Zhang et al., 2018), was tested in human OM preadipocytes from NG obese individuals and SGBS cells exposed to HGHI conditions as well as in human OM preadipocytes from IR/T2D obese individuals. To this end, cells at day 3–4 of differentiation were exposed to 0.5 mg/mL TUDCA for 14 h before culture in medium alone or in the presence of glucose (4.5 g/L) and insulin (100 nmol/L) (HGHI) for 24–30 h. At the end of the experiments, cells were processed for immunoblotting, RNA isolation, and Oil Red-O staining.
 
-## Confocal immunofluorescence microscopy
+### Confocal immunofluorescence microscopy
 
 Samples were visualized by confocal microscopy under an LSM 5 Exciter confocal microscope fitted with Immersol immersion oil. Depending on the cell depth, 5–8 stacks per channel were collected and projected in a single image. After acquisition, images underwent a deconvolution process with the software package Huygens Professional 2.4.4.
 
-## RNA extraction and real-time PCR (RT-PCR)
+### RNA extraction and real-time PCR (RT-PCR)
 
 Total RNA isolation and purification from human preadipocytes were performed using the RNeasy Kit. RNA from primary preadipocytes and SGBS cells under the different experimental conditions tested was isolated using TRIzol Reagent following the manufacturers’ protocols, and subsequently treated with DNase. Quantification of recovered RNA was assessed using NanoDrop2000 spectrophotometer. One μg of RNA was retrotranscribed to cDNA as previously described (Peinado et al., 2010) using with the Revertaid First Strand cDNA Synthesis kit. Transcript levels were quantified by RT-PCR with GoTaq qPCR Master Mix kit. Previously validated specific primers (Supplementary file 3) were designed using Primer3 Input 4.1.0 and purchased from Metabion (Steinkirchen, Germany). Primers or encompassing fragments of the areas from the extremes of two exons were designed to ensure the detection of the corresponding transcripts avoiding genomic DNA amplification. The cDNA was amplified with a thermal profile at the following conditions: hot-start activation at 95°C for 2 min, followed by 40 cycles of denaturation (95°C for 15 s), then annealing/extension (60°C for 60 s), and finally, a dissociation cycle (melting curve; 60°C to 95°C, increasing 0.5°C / 30 s) to verify that only one product was amplified, using the Light-Cycler 96 instrument (Roche; Basilea, Switzerland). The primer concentrations were 500 nM. To allow for variation in the amount of RNA used and the efficiency of the reverse-transcription reaction, all results were normalized by the expression of three house-keeping genes (ACTB, GAPDH, and HPRT) and relative quantification was calculated using the ΔCT formula (Catalán et al., 2007). All samples for each experiment were run in the same plate in triplicate and the average values were calculated.
 
-## qPCR dynamic array
+### qPCR dynamic array
 
 A qPCR dynamic array based on microfluidic technology for simultaneous determination of the expression of 45 transcripts in 36 samples (Fluidigm; San Francisco, CA) was employed (Del Río-Moreno et al., 2019). Specific primers for human transcripts including components of the major (n = 13) and minor spliceosome (n = 4), associated splicing factors (n = 28), and three housekeeping genes (ACTB, GAPDH, and HPRT) were specifically designed with the Primer3 software and StepOneTM Real-Time PCR System software v2.3 (Applied Biosystems, Foster City, CA). Preamplification, exonuclease treatment, and qPCR dynamic array based on microfluidic technology were implemented as recently reported (Gahete et al., 2018; Del Río-Moreno et al., 2019), following manufacturer’s instructions using the Biomark System and the Real-Time PCR Analysis Software (Fluidigm). The panel of splicing machinery components was selected on the basis of two main criteria: (1) the relevance of the given spliceosome components in the splicing process (such as the components of the spliceosome core), and (2) their demonstrated participation in the generation of splicing variants implicated in the pathophysiology of metabolic diseases (as is the case of the 28 splicing factors selected in this study) (Gahete et al., 2018; Del Río-Moreno et al., 2019).
 
@@ -253,26 +522,26 @@ Briefly, following manufacturer’s instructions, 12.5 ng of cDNA of each sample
 
 Finally, to control for variations in the efficiency of the retrotranscription reaction, mRNA copy numbers of the different transcripts analysed were adjusted by normalization factor (NF), calculated with the expression levels of the three housekeeping genes mentioned above using GeNorm 3.3 software. This selection was based on the stability of these housekeeping genes among the experimental groups to be compared, wherein the expression of these housekeeping genes was not significantly different among groups.
 
-## Quantitative immunoblotting
+### Quantitative immunoblotting
 
 Human preadipocytes isolated from SC and OM adipose tissue of NG, IR and T2D obese individuals were disrupted in BLC buffer containing 150 mM NaCl, 20 mM Tris-HCl pH 7.4, 1% Triton-X-100, 1 mM EDTA, and 1 µg/mL anti-protease cocktail CLAP (Chymostatin, Leupeptin, Antipain and Pepstatin A). Protein content was measured by Bradford assay and 30 mg of protein per sample were loaded into 4–20% precast SDS-PAGE gels (Bio-Rad) under denaturing conditions. SGBS cells were homogenized in SDS-DTT buffer containing 62.5 mM Tris-HCL pH 7.6, 2% SDS, 100 mM DTT, 20% Glycerol. Protein content was separated by 10% SDS-PAGE under denaturing conditions. In both cases, samples were transferred to nitrocellulose membranes (Bio-Rad). After Ponceau staining to ensure equal sample loading, membranes were blocked in Tris-buffer saline (TBS) consisting of 25 mM Tris, 150 mM NaCl with 0.05% Tween 20 (TTBS) containing 5% non-fat dry milk for 1 hr at RT. Blots were then incubated overnight at 4°C with the corresponding primary antibody (Appendix 1—key resource table). Immunoreactive bands were visualized using horseradish peroxidase (HRP)-conjugated secondary antibodies (Appendix 1—key resource table) and the enhanced chemiluminescence ECL Plus detection system. Quantification of band intensities was carried out on digital images of membrane samples provided by LAS4000 gel documentation system (GE Healthcare; Barcelona, Spain) using ImageJ software (1.50b, NIH, Bethesda, MA), and normalized with Ponceau density values as previously described (Jimenez-Gomez et al., 2013; Peinado et al., 2011). All comparative experiments were performed under identical conditions.
 
-## Proteasome activity assay
+### Proteasome activity assay
 
 The 26 S proteasome (ATP stimulated) and/or 20 S (SDS stimulated) activities were measured in primary human OM preadipocytes from NG, IR, and T2D obese individuals (cohort 1) and SGBS preadipocytes upon exposure to HGHI (Díaz-Ruiz et al., 2015; Bunnell et al., 2008). Assays for proteasome activity were performed using Suc-LLVY-AFC product, which is proteolyzed by the chymotrypsin-like (ChT-L) active site of the proteasome forming a fluorogenic substrate (AFC) (Keita et al., 2014).
 
 Cells were washed with D-PBS and scraped from plates in BLC buffer without DTT, TX-100 or protease inhibitors because these compounds interfere with the assay. The reaction was conducted in 250 μL of activity assay buffer in a 96-well plate containing 50 μg/ml protein lysate in Proteasome buffer (20 mM Tris–HCl, pH 7.8, 1 mM EDTA, 0.5 mM DTT, 5 mM MgCl2, and 50 μM Suc-LLVY-AFC) plus 2 mM ATP or 0.02% SDS for the determination of the 26 S or 20 S proteasome, respectively. In order to confirm the specificity of the findings for proteasome activity, parallel reactions containing the proteasome inhibitor, MG-132 (25 μM), were run as controls. The reaction mixture was incubated for 3 hr at 37°C and the fluorescence of the released AMC product was kinetically followed each 10 min in a Flex Station three at an emission wavelength of 355 nm and an excitation wavelength of 460 nm. The background fluorescence values obtained by incubating the lysates with MG132 were subtracted from activity values. Results were analysed with the SoftMax Pro 2.2.1 and the values reported for proteasome peptidase activity are expressed as relative fluorescence arbitrary units/min/mg of total protein.
 
-## Cell viability and cytotoxicity assays
+### Cell viability and cytotoxicity assays
 
 Cell viability of SGBS cell cultures was assessed by the MTT assay. Briefly, cells were incubated for 2 h with 0.1 mg/ml of 3-(4,5-dimetililtiazol-2-ilo)–2,5-difeniltetrazol de bromuro (MTT), dissolved in D-PBS. Washing with D-PBS (1 mL) was followed by the addition of DMSO (1 mL) and gentle shaking for 10 min so that complete dissolution was achieved. Aliquots (200 μL) of the resulting solutions were transferred to 96-well plates and absorbance was recorded at 570 nm using a Flex Station 3. Results were analysed with the SoftMax Pro 2.2.1 and are presented as percentage of the control siRNA values.
 
 Cytotoxicity of PRPF8-silencing in hADSCs was evaluated by Cytotoxicity Detection Kit Plus. The culture medium was aspirated and centrifugated at 3000 rpm for 10 min to obtain a cell free supernatant. Aliquots of media and warm reagent were mixed in a 96-well plate and absorbance was recorded using a microplate reader (Tecan Infinite 2000; Männedorf, Switzerland). Results were analysed with Magellan software 7.2 SP1.
 
-## Measurement of cell proliferation rate
+### Measurement of cell proliferation rate
 
 Cell counting in culture flasks was carried out to monitor growth rates of the preadipocytes in culture. At passage 3, cells were detached from the culture flasks and an aliquot was stained with trypan blue and cells were counted in a Neubauer chamber. Cell proliferation was calculated as the total number of live cells per initial seeding number (Morten et al., 2016).
 
-## Statistical analysis
+### Statistical analysis
 
 For in vitro experiments, at least three replicates were obtained for each condition. Data are presented as mean ± standard error of the mean (S.E.M.) and statistical analysis was performed using GraphPad Prism 7. To determine the normality distribution of the samples, Shapiro-Wilk normality test was used. To determine significance, either unpaired t test for parametric data or Mann Whitney test for non-parametric data were employed for comparisons between two groups. For comparison of more than two groups either one-way ANOVA with Tukey’s multiple comparisons test for parametric data or Kruskal-Wallis with Dunn’s multiple comparisons test for non-parametric were used. A two-way ANOVA was used to identify significant differences between experimental conditions in the response to insulin or during differentiation. Values were considered significant at p < 0.05. Statistical details and significance can be found in the figure legends.

@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/035t8zc32 Laboratory of Molecular Immunology, Immunology Frontier Research Center, Osaka University Suita Japan
-2. https://ror.org/035t8zc32 Department of Health Development and Medicine, Osaka University Graduate School of Medicine Suita Japan
-3. https://ror.org/035t8zc32 Department of Molecular Immunology, Research Institute for Microbial Diseases, Osaka University Suita Japan
-4. https://ror.org/035t8zc32 Center for Infectious Disease Education and Research (CiDER), Osaka University Suita Japan
+1. Laboratory of Molecular Immunology, Immunology Frontier Research Center, Osaka University Suita Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+2. Department of Health Development and Medicine, Osaka University Graduate School of Medicine Suita Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+3. Department of Molecular Immunology, Research Institute for Microbial Diseases, Osaka University Suita Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+4. Center for Infectious Disease Education and Research (CiDER), Osaka University Suita Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
 
 † Corresponding author
 
 ## Abstract
 
-SARS-CoV-2 vaccines have been used worldwide to combat COVID-19 pandemic. To elucidate the factors that determine the longevity of spike (S)-specific antibodies, we traced the characteristics of S-specific T cell clonotypes together with their epitopes and anti-S antibody titers before and after BNT162b2 vaccination over time. T cell receptor (TCR) αβ sequences and mRNA expression of the S-responded T cells were investigated using single-cell TCR- and RNA-sequencing. Highly expanded 199 TCR clonotypes upon stimulation with S peptide pools were reconstituted into a reporter T cell line for the determination of epitopes and restricting HLAs. Among them, we could determine 78 S epitopes, most of which were conserved in variants of concern (VOCs). After the 2nd vaccination, T cell clonotypes highly responsive to recall S stimulation were polarized to follicular helper T (Tfh)-like cells in donors exhibiting sustained anti-S antibody titers (designated as ‘sustainers’), but not in ‘decliners’. Even before vaccination, S-reactive CD4 + T cell clonotypes did exist, most of which cross-reacted with environmental or symbiotic microbes. However, these clonotypes contracted after vaccination. Conversely, S-reactive clonotypes dominated after vaccination were undetectable in pre-vaccinated T cell pool, suggesting that highly responding S-reactive T cells were established by vaccination from rare clonotypes. These results suggest that de novo acquisition of memory Tfh-like cells upon vaccination may contribute to the longevity of anti-S antibody titers.
+SARS-CoV-2 vaccines have been used worldwide to combat COVID-19 pandemic. To elucidate the factors that determine the longevity of spike (S)-specific antibodies, we traced the characteristics of S-specific T cell clonotypes together with their epitopes and anti-S antibody titers before and after BNT162b2 vaccination over time. T cell receptor (TCR) αβ sequences and mRNA expression of the S-responded T cells were investigated using single-cell TCR- and RNA-sequencing. Highly expanded 199 TCR clonotypes upon stimulation with S peptide pools were reconstituted into a reporter T cell line for the determination of epitopes and restricting HLAs. Among them, we could determine 78 S epitopes, most of which were conserved in variants of concern (VOCs). After the 2nd vaccination, T cell clonotypes highly responsive to recall S stimulation were polarized to follicular helper T (Tfh)-like cells in donors exhibiting sustained anti-S antibody titers (designated as ‘sustainers’), but not in ‘decliners’. Even before vaccination, S-reactive CD4+ T cell clonotypes did exist, most of which cross-reacted with environmental or symbiotic microbes. However, these clonotypes contracted after vaccination. Conversely, S-reactive clonotypes dominated after vaccination were undetectable in pre-vaccinated T cell pool, suggesting that highly responding S-reactive T cells were established by vaccination from rare clonotypes. These results suggest that de novo acquisition of memory Tfh-like cells upon vaccination may contribute to the longevity of anti-S antibody titers.
 
 ## Introduction
 
@@ -35,21 +35,1162 @@ In this study, both humoral and cellular immune responses were evaluated at 3, 6
 
 ## Results
 
-## SARS-CoV-2 mRNA vaccine elicits transient humoral immunity
+### SARS-CoV-2 mRNA vaccine elicits transient humoral immunity
 
 Blood samples were collected from a total of 43 individuals (Table 1) who had no SARS-CoV-2 infection history when they received two doses of SARS-CoV-2 mRNA vaccine BNT162b2. Samples were taken before and after the vaccination (Figure 1A). Consistent with the previous report (Polack et al., 2020), most participants exhibited more severe side effects after 2nd dose of vaccination than 1st dose locally (Table 2) and systemically (Table 3). At 3 weeks, anti-S IgG antibody titer increased in most participants. At 6 weeks, anti-S antibody titer was at its peak. S antibody titer gradually decreased over 24 weeks (Figure 1B). The antibody titer was reduced by 56.8% on average. Donors of different sexes or age groups showed no significant difference in anti-S antibody titer (Figure 1—figure supplement 1). The neutralization activity of the post-vaccinated sera showed similar tendency with the anti-S antibody titer during the study period (Figure 1C). The above results indicate that the mRNA vaccine effectively activated humoral immune responses in healthy individuals, but decreased by 24 weeks over time as reported (Levin et al., 2021; Pegu et al., 2021).
 
-## Antibody sustainers had highly expanded S-reactive Tfh clonotypes
+![Figure 1.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig1-v1.jpg)
+
+**Figure 1.:** (A) Vaccination and sampling timeline of blood donors in this study. (B) Anti-S IgG titer of serum samples was determined by ELISA. Mean ± SEM (left) and individual data (right) are shown. *, p<0.05 vs. Pre, 3 weeks, 24 weeks, respectively. (C) Neutralization activity (ID50) of serum samples was determined by pseudo-virus assay. Mean ± SEM (left) and individual data (right) are shown. *, p<0.05 vs 3 weeks, 24 weeks, respectively. Wks, weeks.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Anti-S IgG titer from all donors at 6 weeks after vaccination was compared between male and female vaccinees (A) or among different age groups (20–39, 40–49, 50–59, 60–69) (B).
+
+**Table 1.**
+ Demographic data of the participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Percentage (number)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total number</td>
+      <td>100% (43)</td>
+    </tr>
+    <tr>
+      <td>Age group</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20–39</td>
+      <td>39.5% (17)</td>
+    </tr>
+    <tr>
+      <td>40–49</td>
+      <td>30.2% (13)</td>
+    </tr>
+    <tr>
+      <td>50–59</td>
+      <td>25.6% (11)</td>
+    </tr>
+    <tr>
+      <td>60–69</td>
+      <td>4.7% (2)</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>60.5% (26)</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>39.5% (17)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Demographic data of the reported clinical adverse effects (at injection site).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Percentage (number)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Swelling (injection site)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>After 1st dose</td>
+      <td>27.9% (12)</td>
+    </tr>
+    <tr>
+      <td>After 2nd dose</td>
+      <td>51.2% (22)</td>
+    </tr>
+    <tr>
+      <td>Sore/pain (injection site)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>After 1st dose</td>
+      <td>88.4% (38)</td>
+    </tr>
+    <tr>
+      <td>After 2nd dose</td>
+      <td>86.0% (37)</td>
+    </tr>
+    <tr>
+      <td>Warmth (injection site)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>After 1st dose</td>
+      <td>32.6% (14)</td>
+    </tr>
+    <tr>
+      <td>After 2nd dose</td>
+      <td>41.9% (18)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Demographic data of the reported clinical adverse effects (systemic symptoms).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Percentage (number)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fever</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>After 1st dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild (37.5 °C ≥)</td>
+      <td>2.3% (1)</td>
+    </tr>
+    <tr>
+      <td>Severe (≥38.0 °C)</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>After 2nd dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild (37.5 °C ≥)</td>
+      <td>25.6% (11)</td>
+    </tr>
+    <tr>
+      <td>Severe (≥38.0 °C)</td>
+      <td>23.3% (10)</td>
+    </tr>
+    <tr>
+      <td>Fatigue</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>After 1st dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>18.6% (8)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>After 2nd dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>67.4% (29)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>18.6% (8)</td>
+    </tr>
+    <tr>
+      <td>Headache</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>After 1st dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>7.0% (3)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>After 2nd dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>32.6% (14)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>7.0% (3)</td>
+    </tr>
+    <tr>
+      <td>Chill</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>After 1st dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>4.7% (2)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>After 2nd dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>23.3% (10)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>9.3% (4)</td>
+    </tr>
+    <tr>
+      <td>Nausea</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>After 1st dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>After 2nd dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>4.7% (2)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>Diarrhea</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>After 1st dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>After 2nd dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>Muscle pain</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>After 1st dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>48.8% (21)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>After 2nd dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>55.8% (24)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>4.7% (2)</td>
+    </tr>
+    <tr>
+      <td>Joint pain</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>After 1st dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>4.7% (2)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>0% (0)</td>
+    </tr>
+    <tr>
+      <td>After 2nd dose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>25.6% (11)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>4.7% (2)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibody sustainers had highly expanded S-reactive Tfh clonotypes
 
 To address the role of T cells in maintaining the antibody titer, we analyzed the S-responsive T cells in the post-vaccination samples from eight donors, among whom four donors showed relatively sustained anti-S antibody titer during 6 weeks to 24 weeks (reduction <30%; sustainers, donors #8, #25, #27, and #28), while the other four donors showed largely declined anti-S antibody titer (reduction >80%; decliners, donors #4, #13, #15, and #17; Figure 2A and Figure 2—figure supplement 1A). The possibility of SARS-CoV-2 infection of sustainers was ruled out by analyzing anti-nucleocapsid protein (N) antibody titer in the sera samples at 24 weeks (Figure 2—figure supplement 1B). Antibody sustainability did not correlate with bulk T cell responses to S protein, such as IFNγ production (Figure 2—figure supplement 1C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig2-v1.jpg)
+
+**Figure 2.:** (A) Anti-S IgG titer of serum samples from sustainers and decliners is shown individually. (B, C, E, F) UMAP projection of T cells in single-cell analysis of post-vaccinated samples collected from all donors. Each dot corresponds to a single cell and is colored according to the samples from different time points of donors. All samples together with annotated cell types (B), samples grouped by donor type (decliners and sustainers) (C), top 16 expanded clonotypes (16 clonotypes that had the most cell numbers from each donor) grouped by donor type (E), and top 16 expanded clonotypes grouped by time point and donor type (F) are shown. Tcm, central memory T cells; Tem, effector memory T cells; Treg, regulatory T cells; γδT, γδ T cells. (D) Tfh signature score and expression levels of the canonical Tfh cell markers, IL21, ICOS, PDCD1 and CD200, are shown as heat maps in the UMAP plot.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Demographic data and magnitude of anti-S IgG titer reduction of the sustainers and decliners. Anti-S IgG titer reduction is calculated as the titers at (6 weeks – 24 weeks) /6 weeks. (B) Anti-N IgG titer of serum samples from sustainers at 24 weeks after vaccination. (C) S-specific IFNγ release from bulk CD4+ T cells (left) or CD4+ and CD8+ T cells (right) of sustainers (red) and decliners (blue) was measured using QuantiFERON.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) UMAP projection of single-cell analysis of post-vaccinated samples shown in individuals. (B) The percentage of circled cells in (A) in CD4+ T cells of each individual is shown. p value was calculated using t-test.
+
 To enrich the S-reactive T cells, we labeled the peripheral blood mononuclear cells (PBMCs) with a cell proliferation tracer and stimulated the PBMCs with an S peptide pool for 10 days. Proliferated T cells were sorted and analyzed by single-cell TCR- and RNA-sequencing (scTCR/RNA-seq). Clustering analysis was done with pooled samples of three time points from eight donors, and various T cell subtypes were identified (Figure 2B, Source code 1). We found that, overall, the S-reactive T cells did not skew to any particular T cell subset (Figure 2B). However, by grouping the cells from decliners and sustainers separately, we found difference in the frequency of the cells within the circled population (Figure 2C), and overall, the sustainer individuals had more cells in this region (Figure 2—figure supplement 2). These cells showed high Tfh signature scores and expressed characteristic genes of Tfh cells (Figure 2D). This tendency became more pronounced when we selected highly expanded (top 16) clonotypes in each donor (Figure 2E). In sustainers, S-specific Tfh clusters appeared from 6 weeks (Figure 2F), suggesting that vaccine-induced Tfh-like cells that have potency of deriving to Tfh cells were established immediately after 2nd vaccination.
 
-## Identification of dominant S epitopes recognized by vaccine-induced T cell clonotypes
+### Identification of dominant S epitopes recognized by vaccine-induced T cell clonotypes
 
 To elucidate the epitopes of the highly expanded clonotypes, we reconstituted their TCRs into a T cell hybridoma lacking endogenous TCRs and having an NFAT-GFP reporter gene. These cell lines were stimulated with S peptides using transformed autologous B cells as antigen-presenting cells (APCs). The epitopes of 53 out of 128 reconstituted clonotypes were successfully determined (Figure 3, Table 4, Figure 3—figure supplements 1 and 2). Epitopes of expanded Tfh cells were not limited in any particular region of S protein (Figure 3). About 72% of these epitopes conserved in Delta and Omicron variants (Tables 4 and 5). Within the rest of 28% of epitopes which were mutated in variants of concern (VOCs), although some mutated epitopes located in the receptor-binding domain (RBD) of VOCs lost antigenicity, recognition of most epitopes outside the RBD region was maintained or rather increased in the variants (Table 5 and Figure 3—figure supplement 3). These results suggest that the majority of S-reactive clonotypes after vaccination can respond to antibody-escaping VOCs.
 
-## Identification of S epitopes and cross-reactive antigens of pre-existing T cell clonotypes
+![Figure 3.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig3-v1.jpg)
+
+**Figure 3.:** T cell S epitopes recognized by top expanded TCR clonotypes in post-vaccinated samples from sustainers and decliners are mapped by their locations in S protein. Each short bar indicates a 15-mer peptide that activated the TCRs. Epitopes are shown in different colors according to the subsets of the T cells they activated. Relative frequencies of the T cell subsets are shown in pie charts. Numbers of identified epitopes recognized by a dominant T subset in sustainers (Tfh) are shown in blue bars. NTD, N-terminal domain; RBD, receptor-binding domain; FP, fusion peptide; HR1, heptad repeat 1; CH, central helix; CD, connector domain; HR2, heptad repeat 2; TM, transmembrane domain.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Reporter cells expressing TCR clonotypes expanded in sustainers (A) and decliners (B) were stimulated with different S peptide in the presence of APCs for overnight, and analyzed for GFP and CD69 expression. Data are representative of at least two independent experiments.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) Reporter cells expressing TCR clonotypes expanded in sustainers (A) and decliners (B) were stimulated with epitope peptides in the presence of APCs expressing various HLA alleles. Data are representative of at least two independent experiments.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A, B) Reporter cells expressing TCR clonotypes expanded in sustainers (A) and decliners (B) were stimulated with epitope peptides from the Wuhan strain and corresponding peptides from VOCs in the presence of APCs. Data are representative of at least two independent experiments.
+
+**Table 4.**
+ TCR clonotypes expanded in post-vaccinated samples and their TCR usages, epitopes and restricting HLAs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Donor</th>
+      <th>Clonotype</th>
+      <th>TRBV</th>
+      <th>CDR3β</th>
+      <th>TRBJ</th>
+      <th>TRAV</th>
+      <th>CDR3α</th>
+      <th>TRAJ</th>
+      <th>S epitope*</th>
+      <th>Restricting HLA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="10">#8</td>
+      <td>Post_4</td>
+      <td>11–2</td>
+      <td>CASSPTGTNEKLFF</td>
+      <td>1–4</td>
+      <td>13–1</td>
+      <td>CAGGADGLTF</td>
+      <td>45</td>
+      <td>SFSTFKCYGVSPTKL373–387†</td>
+      <td>DRA-DRB1*15:02</td>
+    </tr>
+    <tr>
+      <td>Post_5</td>
+      <td>19</td>
+      <td>CASSGRPEGPQHF</td>
+      <td>1–5</td>
+      <td>20</td>
+      <td>CAVLNQAGTALIF</td>
+      <td>15</td>
+      <td>FKIYSKHTPIN201–211</td>
+      <td>DRA-DRB1*09:01</td>
+    </tr>
+    <tr>
+      <td>Post_6</td>
+      <td>11–2</td>
+      <td>CASSLEGTEAFF</td>
+      <td>1–1</td>
+      <td>5</td>
+      <td>CAESRYMGRRALTF</td>
+      <td>5</td>
+      <td>FQFCNDPFLGVYYHK133–147</td>
+      <td>DPA1*01:03-DPB1*04:02</td>
+    </tr>
+    <tr>
+      <td>Post_7</td>
+      <td>2</td>
+      <td>CAGLAGVDTGELFF</td>
+      <td>2–2</td>
+      <td>5</td>
+      <td>CAERVGRRALTF</td>
+      <td>5</td>
+      <td>YSVLYNSASFSTFKC365–379</td>
+      <td>A*24:02</td>
+    </tr>
+    <tr>
+      <td>Post_8</td>
+      <td>20–1</td>
+      <td>CSATRDRRSYNEQFF</td>
+      <td>2–1</td>
+      <td>12–2</td>
+      <td>CAVLTNTGNQFYF</td>
+      <td>49</td>
+      <td>LLQYGSFCTQLNRAL753–767</td>
+      <td>DRA-DRB1*15:02</td>
+    </tr>
+    <tr>
+      <td>Post_9</td>
+      <td>7–9</td>
+      <td>CASSLLGEQYF</td>
+      <td>2–7</td>
+      <td>22</td>
+      <td>CAGAGGTSYGKLTF</td>
+      <td>52</td>
+      <td>KRFDNPVLPFN77–87</td>
+      <td>DPA1*02:02-DPB1*05:01</td>
+    </tr>
+    <tr>
+      <td>Post_10</td>
+      <td>6–1</td>
+      <td>CASSEGASNQPQHF</td>
+      <td>1–5</td>
+      <td>12–1</td>
+      <td>CVVNKGSSASKIIF</td>
+      <td>3</td>
+      <td>LLQYGSFCTQL753–763</td>
+      <td>DRA-DRB1*15:02</td>
+    </tr>
+    <tr>
+      <td>Post_12</td>
+      <td>20–1</td>
+      <td>CSAYSIYNEQFF</td>
+      <td>2–1</td>
+      <td>9–2</td>
+      <td>CALSMNTGFQKLVF</td>
+      <td>8</td>
+      <td>PPAYTNSFTRGVYYP25–39</td>
+      <td>DRA-DRB1*09:01</td>
+    </tr>
+    <tr>
+      <td>Post_14</td>
+      <td>19</td>
+      <td>CASRPNRGDNSPLHF</td>
+      <td>1–6</td>
+      <td>12–1</td>
+      <td>CVVSIGFGNVLHC</td>
+      <td>35</td>
+      <td>CSNLLLQYGSFCTQL749–763</td>
+      <td>DRA-DRB1*15:02</td>
+    </tr>
+    <tr>
+      <td>Post_15</td>
+      <td>28</td>
+      <td>CASSLMGGAYGYTF</td>
+      <td>1–2</td>
+      <td>8–6</td>
+      <td>CAVRRGGSGGSNYKLTF</td>
+      <td>53</td>
+      <td>SKRSFIEDLLFNKVT813–827</td>
+      <td>DPA1*01:03-DPB1*04:02</td>
+    </tr>
+    <tr>
+      <td rowspan="3">#25</td>
+      <td>Post_7</td>
+      <td>7–9</td>
+      <td>CAPSNANTGELFF</td>
+      <td>2–2</td>
+      <td>12–1</td>
+      <td>CVVNEADKLIF</td>
+      <td>34</td>
+      <td>YLQPRTFLLK269–278</td>
+      <td>A*02:01</td>
+    </tr>
+    <tr>
+      <td>Post_12</td>
+      <td>20–1</td>
+      <td>CSARDVEVGSGYTF</td>
+      <td>1–2</td>
+      <td>4</td>
+      <td>CLVGPYNQGGKLIF</td>
+      <td>23</td>
+      <td>TGVLTESNKKFLPFQ549–563</td>
+      <td>DRA-DRB1*14:54</td>
+    </tr>
+    <tr>
+      <td>Post_15</td>
+      <td>3–1</td>
+      <td>CASSPLSGSSYEQYF</td>
+      <td>2–7</td>
+      <td>12–1</td>
+      <td>CVVGTDSWGKLQF</td>
+      <td>24</td>
+      <td>TNGTKRFDNPVLPFN73–87</td>
+      <td>DPA1*02:02-DPB1*05:01/DPA1*01:03-DPB1*05:01</td>
+    </tr>
+    <tr>
+      <td rowspan="11">#27</td>
+      <td>Post_1</td>
+      <td>20–1</td>
+      <td>CSAIAGDADTQYF</td>
+      <td>2–3</td>
+      <td>9–2</td>
+      <td>CALTSAAGNKLTF</td>
+      <td>17</td>
+      <td>NQFNSAIGKIQ925–935</td>
+      <td>DRA-DRB1*09:01</td>
+    </tr>
+    <tr>
+      <td>Post_2</td>
+      <td>30</td>
+      <td>CAWNLGGGNQPQHF</td>
+      <td>1–5</td>
+      <td>8–2</td>
+      <td>CVVSERASSYKLIF</td>
+      <td>12</td>
+      <td>SKRSFIEDLLFNKVT813–827</td>
+      <td>DPA1*02:02-DPB1*04:02</td>
+    </tr>
+    <tr>
+      <td>Post_3</td>
+      <td>5–4</td>
+      <td>CASSQGQGSYGYTF</td>
+      <td>1–2</td>
+      <td>4</td>
+      <td>CLVGDSDTGRRALTF</td>
+      <td>5</td>
+      <td>NFTISVTTEIL717–727</td>
+      <td>DRA-DRB1*09:01</td>
+    </tr>
+    <tr>
+      <td>Post_5</td>
+      <td>7–2</td>
+      <td>CASGTGSYNEQFF</td>
+      <td>2–1</td>
+      <td>12–2</td>
+      <td>CAVKRGNQGGKLIF</td>
+      <td>23</td>
+      <td>STEIYQAGSTPCNGV469–483</td>
+      <td>DRA-DRB1*04:03</td>
+    </tr>
+    <tr>
+      <td>Post_7</td>
+      <td>6–6</td>
+      <td>CASRLPGNRAQPQHF</td>
+      <td>1–5</td>
+      <td>36/DV7</td>
+      <td>CAVESGSSNTGKLIF</td>
+      <td>37</td>
+      <td>KSNIIRGWIFGTTLD97–111</td>
+      <td>DRA-DRB4*01:03</td>
+    </tr>
+    <tr>
+      <td>Post_8</td>
+      <td>6–5</td>
+      <td>CASSYSGGTVTGELFF</td>
+      <td>2–2</td>
+      <td>41</td>
+      <td>CAVGIRGNEKLTF</td>
+      <td>48</td>
+      <td>KVFRSSVLHST41–51</td>
+      <td>DRA-DRB1*04:03</td>
+    </tr>
+    <tr>
+      <td>Post_9</td>
+      <td>20–1</td>
+      <td>CSARDGQTATNEKLFF</td>
+      <td>1–4</td>
+      <td>17</td>
+      <td>CATNAGGTSYGKLTF</td>
+      <td>52</td>
+      <td>EIRASANLAAT1017–1027</td>
+      <td>DRA-DRB1*04:03</td>
+    </tr>
+    <tr>
+      <td>Post_11</td>
+      <td>30</td>
+      <td>CAWSVKGFPSQHF</td>
+      <td>1–5</td>
+      <td>6</td>
+      <td>CALGSTSNTGKLIF</td>
+      <td>37</td>
+      <td>EIRASANLAAT1017–1027</td>
+      <td>DRA-DRB1*04:03</td>
+    </tr>
+    <tr>
+      <td>Post_13</td>
+      <td>5–6</td>
+      <td>CASSSRTGYNSPLHF</td>
+      <td>1–6</td>
+      <td>27</td>
+      <td>CAGAKGSGTYKYIF</td>
+      <td>40</td>
+      <td>STEIYQAGSTPCNGV469–483</td>
+      <td>DRA-DRB1*04:03</td>
+    </tr>
+    <tr>
+      <td>Post_15</td>
+      <td>5–5</td>
+      <td>CASSSDRNYGYTF</td>
+      <td>1–2</td>
+      <td>12–1</td>
+      <td>CVVNMVTGGYNKLIF</td>
+      <td>4</td>
+      <td>NFTISVTTEILPVSM717–731</td>
+      <td>DRA-DRB1*09:01</td>
+    </tr>
+    <tr>
+      <td>Post_16</td>
+      <td>7–9</td>
+      <td>CASSSQPGLAGVKIGNEQFF</td>
+      <td>2–1</td>
+      <td>5</td>
+      <td>CAEIPPPSNTGKLIF</td>
+      <td>37</td>
+      <td>ISGINASVVNIQKEI1169–1183</td>
+      <td>DRA-DRB1*04:03</td>
+    </tr>
+    <tr>
+      <td rowspan="6">#28</td>
+      <td>Post_5</td>
+      <td>3–1</td>
+      <td>CASSQGGSEKLFF</td>
+      <td>1–4</td>
+      <td>1–1</td>
+      <td>CAVGGNTDKLIF</td>
+      <td>34</td>
+      <td>LVKNKCVNFNF533–543</td>
+      <td>DRA-DRB3*03:01</td>
+    </tr>
+    <tr>
+      <td>Post_10</td>
+      <td>12–3</td>
+      <td>CASSSGRTGFGYTF</td>
+      <td>1–2</td>
+      <td>30</td>
+      <td>CGTEFGSEKLVF</td>
+      <td>57</td>
+      <td>VIRGDEVRQIA401–411</td>
+      <td>DRA-DRB3*03:01</td>
+    </tr>
+    <tr>
+      <td>Post_11</td>
+      <td>5–8</td>
+      <td>CASSLQKTTGPSYGYTF</td>
+      <td>1–2</td>
+      <td>8–6</td>
+      <td>CAVSPYTGRRALTF</td>
+      <td>5</td>
+      <td>SVYAWNRKRIS349–359</td>
+      <td>DRA-DRB1*13:02</td>
+    </tr>
+    <tr>
+      <td>Post_12</td>
+      <td>18</td>
+      <td>CASSASVDPTEAFF</td>
+      <td>1–1</td>
+      <td>1–1</td>
+      <td>CASFTGGGNKLTF</td>
+      <td>10</td>
+      <td>KSTNLVKNKCVNFNF529–543</td>
+      <td>DRA-DRB3*03:01</td>
+    </tr>
+    <tr>
+      <td>Post_14</td>
+      <td>7–6</td>
+      <td>CASSLSGTGGTGELFF</td>
+      <td>2–2</td>
+      <td>4</td>
+      <td>CLVGDMRSGGGADGLTF</td>
+      <td>45</td>
+      <td>PFGEVFNATRFASVY337–351</td>
+      <td>B*40:01</td>
+    </tr>
+    <tr>
+      <td>Post_15</td>
+      <td>6–2</td>
+      <td>CASSYPPSGGRTGFGEAFF</td>
+      <td>1–1</td>
+      <td>14/DV4</td>
+      <td>CAMRDIGFGNVLHC</td>
+      <td>35</td>
+      <td>WNRKRISNCVADYSV353–367</td>
+      <td>DRA-DRB4*01:03</td>
+    </tr>
+    <tr>
+      <td rowspan="7">#4</td>
+      <td>Post_2</td>
+      <td>25–1</td>
+      <td>CASTGDNYGYTF</td>
+      <td>1–2</td>
+      <td>21</td>
+      <td>CAINTGNQFYF</td>
+      <td>49</td>
+      <td>YYVGYLQPR265–273</td>
+      <td>A*33:03</td>
+    </tr>
+    <tr>
+      <td>Post_10</td>
+      <td>7–9</td>
+      <td>CASRPSGTSREQYF</td>
+      <td>2–7</td>
+      <td>29</td>
+      <td>CAGNNAGNMLTF</td>
+      <td>39</td>
+      <td>FIKQYGDCLGDIAAR833–847</td>
+      <td>A*33:03</td>
+    </tr>
+    <tr>
+      <td>Post_11</td>
+      <td>7–9</td>
+      <td>CASSTRTSGGGLSYEQYF</td>
+      <td>2–7</td>
+      <td>3</td>
+      <td>CAVNKAAGNKLTF</td>
+      <td>17</td>
+      <td>YSVLYNSASFSTFKC365–379</td>
+      <td>A*24:02</td>
+    </tr>
+    <tr>
+      <td>Post_13</td>
+      <td>20–1</td>
+      <td>CSASIEQGDLGYTF</td>
+      <td>1–2</td>
+      <td>23/DV6</td>
+      <td>CAASIPNSGYALNF</td>
+      <td>41</td>
+      <td>FIKQYGDCLGDIAAR833–847</td>
+      <td>DQA1*01:02-DQB1*05:03</td>
+    </tr>
+    <tr>
+      <td>Post_14</td>
+      <td>5–6</td>
+      <td>CASSPGQGILEQYF</td>
+      <td>2–7</td>
+      <td>24</td>
+      <td>CAFVPLSDGQKLLF</td>
+      <td>16</td>
+      <td>YIKWPWYIWL1209–1218</td>
+      <td>A*24:02</td>
+    </tr>
+    <tr>
+      <td>Post_15</td>
+      <td>7–3</td>
+      <td>CASGIHTGELFF</td>
+      <td>2–2</td>
+      <td>26–1</td>
+      <td>CIVNNAGNMLTF</td>
+      <td>39</td>
+      <td>TDNTFVSGNCDVVIG1117–1131</td>
+      <td>DQA1*01:02-DQB1*06:04</td>
+    </tr>
+    <tr>
+      <td>Post_16</td>
+      <td>7–6</td>
+      <td>CASSPGPSEADTQYF</td>
+      <td>2–3</td>
+      <td>1–1</td>
+      <td>CAVRDGDDKIIF</td>
+      <td>30</td>
+      <td>KSTNLVKNKCVNFNF529–543</td>
+      <td>DRA-DRB3*03:01</td>
+    </tr>
+    <tr>
+      <td rowspan="3">#13</td>
+      <td>Post_13</td>
+      <td>7–2</td>
+      <td>CASSVGQSKGKSAETQYF</td>
+      <td>2–5</td>
+      <td>22</td>
+      <td>CAVNEYSGAGSYQLTF</td>
+      <td>28</td>
+      <td>SKRSFIEDLLFNKVT813–827</td>
+      <td>DPA1*01:03-DPB1*02:01</td>
+    </tr>
+    <tr>
+      <td>Post_15</td>
+      <td>20–1</td>
+      <td>CSAGDTASTYGYTF</td>
+      <td>1–2</td>
+      <td>9–2</td>
+      <td>CALSDGAGNKLTF</td>
+      <td>17</td>
+      <td>NQFNSAIGKIQ925–935</td>
+      <td>DRA-DRB1*09:01</td>
+    </tr>
+    <tr>
+      <td>Post_16</td>
+      <td>30</td>
+      <td>CAWSLQGQRPQHF</td>
+      <td>1–5</td>
+      <td>38–1</td>
+      <td>CAFMKQRGGSEKLVF</td>
+      <td>57</td>
+      <td>FIEDLLFNKVTLADA817–831</td>
+      <td>DPA1*01:03-DPB1*02:01</td>
+    </tr>
+    <tr>
+      <td rowspan="9">#15</td>
+      <td>Post_1</td>
+      <td>12–4</td>
+      <td>CASSSHRDRGVEAFF</td>
+      <td>1–1</td>
+      <td>12–1</td>
+      <td>CVVNFDRGSTLGRLYF</td>
+      <td>18</td>
+      <td>TRGVYYPDKVF33–43</td>
+      <td>B*15:01</td>
+    </tr>
+    <tr>
+      <td>Post_6</td>
+      <td>3–1</td>
+      <td>CASSQQLNTGELFF</td>
+      <td>2–2</td>
+      <td>38–2/DV8</td>
+      <td>CAYRKTSGTYKYIF</td>
+      <td>40</td>
+      <td>WRVYSTGSNVF633–643</td>
+      <td>DRA-DRB1*15:02</td>
+    </tr>
+    <tr>
+      <td>Post_7</td>
+      <td>28</td>
+      <td>CASSFPDRYYSNQPQHF</td>
+      <td>1–5</td>
+      <td>1–2</td>
+      <td>CAVRAVGGNKLVF</td>
+      <td>47</td>
+      <td>TRGVYYPDKVF33–43</td>
+      <td>B*15:01</td>
+    </tr>
+    <tr>
+      <td>Post_9</td>
+      <td>27</td>
+      <td>CASSPGHEQYF</td>
+      <td>2–7</td>
+      <td>14/DV4</td>
+      <td>CAMSPIRTYKYIF</td>
+      <td>40</td>
+      <td>RSVASQSIIAY685–695</td>
+      <td>B*15:01</td>
+    </tr>
+    <tr>
+      <td>Post_11</td>
+      <td>3–1</td>
+      <td>CASSRELISEQYF</td>
+      <td>2–7</td>
+      <td>38–2/DV8</td>
+      <td>CAYKRTSGTYKYIF</td>
+      <td>40</td>
+      <td>WRVYSTGSNVF633–643</td>
+      <td>DRA-DRB1*15:02</td>
+    </tr>
+    <tr>
+      <td>Post_12</td>
+      <td>28</td>
+      <td>CASSSYGTSGGRAEQFF</td>
+      <td>2–1</td>
+      <td>16</td>
+      <td>CALSGGLTGGGNKLTF</td>
+      <td>10</td>
+      <td>LGDIAARDLICAQKF841–855</td>
+      <td>DRA-DRB1*08:02</td>
+    </tr>
+    <tr>
+      <td>Post_13</td>
+      <td>30</td>
+      <td>CAWRTGQGITSPLHF</td>
+      <td>1–6</td>
+      <td>8–2</td>
+      <td>CVVNNAGNMLTF</td>
+      <td>39</td>
+      <td>VFKNIDGYFKIYSKH193–207</td>
+      <td>DPA1*02:02-DPB1*05:01</td>
+    </tr>
+    <tr>
+      <td>Post_14</td>
+      <td>6–1</td>
+      <td>CASSEAGGSGANVLTF</td>
+      <td>2–6</td>
+      <td>9–2</td>
+      <td>CALSGTGTYKYIF</td>
+      <td>40</td>
+      <td>KKFLPFQQFGR557–567</td>
+      <td>DPA1*02:02-DPB1*05:01</td>
+    </tr>
+    <tr>
+      <td>Post_16</td>
+      <td>27</td>
+      <td>CASSLGTINTGELFF</td>
+      <td>2–2</td>
+      <td>17</td>
+      <td>CATAPAGGTSYGKLTF</td>
+      <td>52</td>
+      <td>IDGYFKIYSKHTPIN197–211</td>
+      <td>DRA-DRB1*08:02</td>
+    </tr>
+    <tr>
+      <td rowspan="4">#17</td>
+      <td>Post_4</td>
+      <td>6–2</td>
+      <td>CASTSTARGSYNEQFF</td>
+      <td>2–1</td>
+      <td>27</td>
+      <td>CAGHSNTGNQFYF</td>
+      <td>49</td>
+      <td>TRFASVYAWNRKRIS345–359</td>
+      <td>DRA-DRB1*08:02</td>
+    </tr>
+    <tr>
+      <td>Post_10</td>
+      <td>9</td>
+      <td>CASSKTSGAYNEQFF</td>
+      <td>2–1</td>
+      <td>9–2</td>
+      <td>CALDNARLMF</td>
+      <td>31</td>
+      <td>FIKQYGD833–839</td>
+      <td>DRA-DRB1*15:01</td>
+    </tr>
+    <tr>
+      <td>Post_11</td>
+      <td>20–1</td>
+      <td>CSARPPGGGNNEQFF</td>
+      <td>2–1</td>
+      <td>26–2</td>
+      <td>CILRDGTGANNLFF</td>
+      <td>36</td>
+      <td>QALNTLVKQLSSNFG957–971</td>
+      <td>DRA-DRB1*08:02</td>
+    </tr>
+    <tr>
+      <td>Post_15</td>
+      <td>7–9</td>
+      <td>CASSLARGNSPLHF</td>
+      <td>1–6</td>
+      <td>38–2/DV8</td>
+      <td>CAFVGSQGNLIF</td>
+      <td>42</td>
+      <td>AARDLICAQKFNGLT845–859</td>
+      <td>DRA-DRB1*08:02</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Overlapped epitope sequence is shown when a clonotype recognized two or three sequential peptides.†Number ranges indicate the location of peptides in the proteins._
+
+**Table 5.**
+ Reactivity of each clonotype to mutated epitopes in SARS-CoV-2 VOCs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Donor</th>
+      <th>Clonotype</th>
+      <th colspan="2">Mutated epitopes in VOCs</th>
+      <th>Domain</th>
+      <th>Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>#8</td>
+      <td>Post_4</td>
+      <td>Omicron BA.1Omicron BA.2, 4/5</td>
+      <td>PFFTFKCYGVSPTKL*PFFAFKCYGVSPTKL</td>
+      <td>RBD</td>
+      <td>↓↓</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Post_5</td>
+      <td>Omicron BA.1</td>
+      <td>FKIYSKHTPII</td>
+      <td>non-RBD</td>
+      <td>↑</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Post_6</td>
+      <td>Delta, Omicron BA.2, 4/5Omicron BA.1</td>
+      <td>FQFCNDPFLDVYYHKFQFCNDPFLD---HK</td>
+      <td>non-RBD</td>
+      <td>↓↓</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Post_7</td>
+      <td>Omicron BA.1Omicron BA.2, 4/5</td>
+      <td>YSVLYNLAPFFTFKCYSVLYNFAPFFAFKC</td>
+      <td>RBD</td>
+      <td>↓↓</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Post_8</td>
+      <td>Omicron BA1, 2, 4/5</td>
+      <td>LLQYGSFCTQLKRAL</td>
+      <td>non-RBD</td>
+      <td>↑</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Post_10</td>
+      <td>Omicron BA1, 2, 4/5</td>
+      <td>LLQYGSFCTQLKRAL</td>
+      <td>non-RBD</td>
+      <td>↑</td>
+    </tr>
+    <tr>
+      <td>#27</td>
+      <td>Post_5</td>
+      <td>DeltaOmicron BA.1, 2, 4/5</td>
+      <td>STEIYQAGSKPCNGVSTEIYQAGNKPCNGV</td>
+      <td>RBD</td>
+      <td>↓↓</td>
+    </tr>
+    <tr>
+      <td>#27</td>
+      <td>Post_13</td>
+      <td>DeltaOmicron BA.1, 2, 4/5</td>
+      <td>STEIYQAGSKPCNGVSTEIYQAGNKPCNGV</td>
+      <td>RBD</td>
+      <td>↓↓</td>
+    </tr>
+    <tr>
+      <td>#28</td>
+      <td>Post_5</td>
+      <td>Omicron BA.1</td>
+      <td>LVKNKCVNFNFNGLK</td>
+      <td>non-RBD</td>
+      <td>↑</td>
+    </tr>
+    <tr>
+      <td>#28</td>
+      <td>Post_10</td>
+      <td>Omicron BA.2, 4/5</td>
+      <td>VIRGNEVSQIA</td>
+      <td>RBD</td>
+      <td>↓</td>
+    </tr>
+    <tr>
+      <td>#28</td>
+      <td>Post_14</td>
+      <td>Omicron BA.1, 2, 4/5</td>
+      <td>PFDEVFNATRFASVY</td>
+      <td>RBD</td>
+      <td>↓</td>
+    </tr>
+    <tr>
+      <td>#4</td>
+      <td>Post_11</td>
+      <td>Omicron BA.1Omicron BA.2, 4/5</td>
+      <td>YSVLYNLAPFFTFKCYSVLYNFAPFFAFKC</td>
+      <td>RBD</td>
+      <td>↓↓</td>
+    </tr>
+    <tr>
+      <td>#15</td>
+      <td>Post_9</td>
+      <td>DeltaOmicron BA.1, 2, 4/5</td>
+      <td>RRRARSVASQSIIAYHRRARSVASQSIIAY</td>
+      <td>non-RBD</td>
+      <td>↑↑</td>
+    </tr>
+    <tr>
+      <td>#15</td>
+      <td>Post_16</td>
+      <td>Omicron BA.1</td>
+      <td>IDGYFKIYSKHTPII</td>
+      <td>non-RBD</td>
+      <td>→</td>
+    </tr>
+    <tr>
+      <td>#17</td>
+      <td>Post_11</td>
+      <td>Omicron BA.1, 2, 4/5</td>
+      <td>QALNTLVKQLSSKFG</td>
+      <td>non-RBD</td>
+      <td>↓</td>
+    </tr>
+    <tr>
+      <td>#17</td>
+      <td>Post_15</td>
+      <td>Omicron BA.1</td>
+      <td>AARDLICAQKFKGLT</td>
+      <td>non-RBD</td>
+      <td>↓</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Amino acids colored red indicate mismatches compared with corresponding S epitopes of Wuhan strain._
+
+### Identification of S epitopes and cross-reactive antigens of pre-existing T cell clonotypes
 
 Before the pandemic, T cells cross-reacting to S antigen were present in the peripheral blood (Grifoni et al., 2020; Le Bert et al., 2020; Mateus et al., 2020; Meckiff et al., 2020; Sekine et al., 2020). To characterize these pre-existing S-reactive cells, we analyzed the PBMCs collected from donors who consented to blood sample donation before vaccination (#4, #8, #13, #15, and #17). PBMCs were stimulated with the S peptide pool for 10 days, and proliferated T cells were sorted and analyzed by scTCR/RNA-seq. Similar to vaccine-induced S-reactive T cells (Figure 2B), characteristics of pre-existing S-reactive T cells were diverse (Figure 4A, Source code 1). To track the dynamics of cross-reactive clones after vaccination, we combined the single-cell sequencing data of pre- and post-vaccinated PBMCs and analyzed the clonotypes that have more than 50 cells in total (Figure 4B). We did find some cross-reactive clonotypes that were further expanded by vaccination, and most of these clonotypes had cytotoxic features, being CD8+ effector memory T cells (Tem) or minor CD4+ cytotoxic T cells (CTLs). In contrast, most of the cross-reactive CD4+ T cells became minor clonotypes after vaccination.
 
@@ -59,9 +1200,424 @@ Before the pandemic, T cells cross-reacting to S antigen were present in the per
 
 We also explored the epitopes of the top 16 expanded clonotypes in each pre-vaccinated donor by reconstituting the TCRs into reporter cell lines. We identified 18 epitopes from S protein and determined some possible cross-reactive antigens (Figure 5, Table 6, Figure 5—figure supplement 1). Most of these cross-reactive antigens originated from environmental or symbiotic microbes (Table 6). Furthermore, majority of the reactive T clonotypes showed regulatory T cell (Treg) signatures (Figure 5). Six of these 80 analyzed clonotypes could also be frequently detected in the public TCR database Adaptive (Emerson et al., 2017; Nolan et al., 2020). Notably, most of these clonotypes, except for one case, showed comparable frequencies between pre-pandemic healthy donors and COVID-19 patients (Figure 6), suggesting that these clonotypes did not expand upon SARS-CoV-2 infection, despite they were present before the pandemic. Thus, it is unlikely that these cross-reactive T clonotypes contribute to the establishment of S-reactive T cell pools during either vaccination or infection.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig5-v1.jpg)
+
+**Figure 5.:** S epitopes recognized by top expanded TCR clonotypes in pre-vaccinated samples are mapped by their locations in S protein. Each short bar indicates a 15-mer peptide that activated the TCRs. Epitopes are shown in different colors according to the subtypes of the T cells they activated. Relative frequencies of the T cell subtypes from all five donors are shown in the pie chart. Numbers of identified epitopes recognized by a dominant T subset of pre-existing clonotypes (Treg) from all donors are shown in green bars.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Reporter cells expressing TCRs were stimulated with 1 µg/ml of indicated S peptides in the presence of transformed B cells or HEK293T cells expressing indicated HLAs for overnight, and analyzed for GFP and CD69 expression. (A) Determination of S epitopes of T cell clonotypes. (B) Determination of restricting HLAs of T cell clonotypes. (C) Determination of cross-reactive epitopes of T cell clonotypes. Sequences of cross-reactive peptides are in Table 6. Data are representative of at least two independent experiments.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The only two clonotypes whose epitope sequences were relatively conserved in HCoV strains, donor #8-pre_9 and pre_10, were tested for their reactivity to the similar HCoV epitope counterparts. Reporter cell lines of these clonotypes were co-cultured with indicated peptides as well as APCs, and analyzed for GFP and CD69 expression. Data are representative of at least two independent experiments.
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/89999/elife-89999-fig6-v1.jpg)
 
 **Figure 6.:** TCRβ sequences of the top expanded clonotypes in pre-vaccinated samples were investigated in the Adaptive database. Frequencies of detected clonotypes are shown in box plot. Healthy, dataset from 786 healthy donors. COVID, dataset from 1485 COVID-19 patients.
+
+**Table 6.**
+ S-coss-reactive TCR clonotypes expanded in pre-vaccinated samples and their TCR usages, epitopes, restricting HLAs and cross-reactive epitopes in microbes other than SARS-CoV-2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Donor</th>
+      <th>Clonotype</th>
+      <th>TRBV</th>
+      <th>CDR3β</th>
+      <th>TRBJ</th>
+      <th>TRAV</th>
+      <th>CDR3α</th>
+      <th>TRAJ</th>
+      <th>S epitope</th>
+      <th>Restricting HLA</th>
+      <th>Cross-reactive antigen [species]</th>
+      <th>Cross-reactive peptide</th>
+      <th>Post-vaccinated expansion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>#4</td>
+      <td>Pre_5</td>
+      <td>6–6</td>
+      <td>CASSYPGGGGSETQYF</td>
+      <td>2–5</td>
+      <td>35</td>
+      <td>CAGVAVQGAQKLVF</td>
+      <td>54</td>
+      <td>LLALHRSYLTP241–251*</td>
+      <td>DRA-DRB1*14:54</td>
+      <td>Phosphoribosylformylglycinamidine cyclo-ligase [Firmicutes bacterium]</td>
+      <td>VAEALLAVHRSYLTP220-234†</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#4</td>
+      <td>Pre_7</td>
+      <td>6–6</td>
+      <td>CASSYPGGSGGELFF</td>
+      <td>2–2</td>
+      <td>21</td>
+      <td>CAVENSGNTPLVF</td>
+      <td>29</td>
+      <td>LLALHRSYLTP241–251</td>
+      <td>DQA1*01:04-DQB1*05:03</td>
+      <td>Phosphoribosylformylglycinamidine cyclo-ligase [Firmicutes bacterium]</td>
+      <td>VAEALLAVHRSYLTP220-234</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Pre_1</td>
+      <td>6–2</td>
+      <td>CASRPNRGRFRGNQPQHF</td>
+      <td>1–5</td>
+      <td>23/DV6</td>
+      <td>CAGEEKETSGSRLTF</td>
+      <td>58</td>
+      <td>NCTFEYVSQPFLMDL165–179</td>
+      <td>DRA-DRB1*15:02</td>
+      <td>Fumarylacetoacetate hydrolase family protein [Alcaligenes faecalis]Hypothetical protein [Planctomycetales bacterium]</td>
+      <td>ASLIEYVSQPFLLEP225-239AAGFEYVSQPFSLPL533-547</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Pre_2</td>
+      <td>6–1</td>
+      <td>CASIRDRVADTQYF</td>
+      <td>2–3</td>
+      <td>30</td>
+      <td>CGTETTDSWGKLQF</td>
+      <td>24</td>
+      <td>RFNGIGVTQNV905–915</td>
+      <td>DQA1*03:02-DQB1*03:03</td>
+      <td>SEL1-like repeat protein [Bacteroidaceae bacterium] ‡</td>
+      <td>LGVYYFNGIGVTQDQ236-250</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Pre_3</td>
+      <td>27</td>
+      <td>CATKGEANYGYTF</td>
+      <td>1–2</td>
+      <td>12–3</td>
+      <td>CAMSEMGTGFQKLVF</td>
+      <td>8</td>
+      <td>SIVRFPNITNL325–335</td>
+      <td>DRA-DRB1*15:02</td>
+      <td>LTA synthase family protein [Dechloromonas denitrificans]</td>
+      <td>LPGKSVVRWPNITNL330-344</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Pre_5</td>
+      <td>5–1</td>
+      <td>CASSLRTGELFF</td>
+      <td>2–2</td>
+      <td>8–1</td>
+      <td>CAVNGRNTGFQKLVF</td>
+      <td>8</td>
+      <td>NFTISVTTEILPVSM717–731</td>
+      <td>DRA-DRB1*09:01</td>
+      <td>Major capsid protein [Human papillomavirus 145] Periplasmic trehalase [Chlamydiia bacterium]</td>
+      <td>NFTISVTTDAGDINE350-364LSTIVTTEILPVDL288-301</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Pre_9</td>
+      <td>7–2</td>
+      <td>CASAAGGTGGETQYF</td>
+      <td>2–5</td>
+      <td>5</td>
+      <td>CAETPFLSGTYKYIF</td>
+      <td>40</td>
+      <td>YIKWPWYIWLGFIAG1209–1223</td>
+      <td>DRA-DRB5*01:02</td>
+      <td>Spike glycoprotein [Human coronavirus HKU1]</td>
+      <td>VKWPWYVWLLISFSF1297-1311</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Pre_10</td>
+      <td>6–6</td>
+      <td>CASSLGQGIHEQYF</td>
+      <td>2–7</td>
+      <td>26–1</td>
+      <td>CIVERGGSNYKLTF</td>
+      <td>53</td>
+      <td>SKRSFIEDLLFNKVT813–827</td>
+      <td>DPA1*01:03-DPB1*04:02</td>
+      <td>Hypothetical protein, partial [Acinetobacter baumannii] Spike protein [Feline coronavirus] Spike protein [Canine coronavirus]</td>
+      <td>GKRSAVEDLLFNKVV204-218 GKRSAVEDLLFNKVV980-994 GKRSAVEDLLFNKVV977-991</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Pre_14</td>
+      <td>4–3</td>
+      <td>CASSQRQGAGDTQYF</td>
+      <td>2–3</td>
+      <td>19</td>
+      <td>CALSEAGIQGAQKLVF</td>
+      <td>54</td>
+      <td>IDRLITGRLQSLQTY993–1007</td>
+      <td>DQA1*01:03-DQB1*06:01</td>
+      <td>Excinuclease ABC subunit UvrA [Lentisphaeria bacterium]</td>
+      <td>VDRLITGRLESSRLN208-222</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#8</td>
+      <td>Pre_15</td>
+      <td>20–1</td>
+      <td>CSAKDRIYGYTF</td>
+      <td>1–2</td>
+      <td>26–1</td>
+      <td>CIVRSPSGSARQLTF</td>
+      <td>22</td>
+      <td>MIAQYTSALLA869–879</td>
+      <td>DRA-DRB1*15:02</td>
+      <td>MATE family efflux transporter [Selenomonas noxia]</td>
+      <td>ATIIAQYTSALLALR242-256</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#13</td>
+      <td>Pre_5</td>
+      <td>4–3</td>
+      <td>CASSQVSTGTGITGANVLTF</td>
+      <td>2–6</td>
+      <td>5</td>
+      <td>CARRSSSASKIIF</td>
+      <td>3</td>
+      <td>QNVLYENQKLI913–923</td>
+      <td>DRA-DRB5*01:01</td>
+      <td>Hypothetical protein [Neobacillus vireti]</td>
+      <td>TNVLYENQKLFLNLF169-183</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#13</td>
+      <td>Pre_8</td>
+      <td>18</td>
+      <td>CASSPRAPPYEQYF</td>
+      <td>2–7</td>
+      <td>21</td>
+      <td>CAVRPAGGTGNQFYF</td>
+      <td>49</td>
+      <td>DKYFKNHTSPDVDLG1153–1167</td>
+      <td>DRA-DRB1*15:01</td>
+      <td>Type VI secretion system contractile sheath large subunit [Salmonella enterica]</td>
+      <td>DYYFDHTSPDVDLLG167-181</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#13</td>
+      <td>Pre_12</td>
+      <td>4–2</td>
+      <td>CASSQEGNTEAFF</td>
+      <td>1–1</td>
+      <td>20</td>
+      <td>CGCRGGTSYGKLTF</td>
+      <td>52</td>
+      <td>NVTWFHAIHVSGTNG61–75</td>
+      <td>DQA1*01:02-DQB1*06:02</td>
+      <td>Dihydrofolate synthase [Actinobaculum sp. 313]</td>
+      <td>PQRSFHAIHVTGTNG61-75</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#15</td>
+      <td>Pre_1</td>
+      <td>20–1</td>
+      <td>CSARDLTASAHGYTF</td>
+      <td>1–2</td>
+      <td>17</td>
+      <td>CATDAGQGGKLIF</td>
+      <td>23</td>
+      <td>SVTTEILPVSM721–731</td>
+      <td>DQA1*01:03-DQB1*06:01</td>
+      <td>Hypothetical protein [Myxococcales bacterium]</td>
+      <td>PVTTEILPVSDDPPG525-539</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#15</td>
+      <td>Pre_2</td>
+      <td>24–1</td>
+      <td>CATSDLDQPQHF</td>
+      <td>1–5</td>
+      <td>16</td>
+      <td>CALSGYGSGYSTLTF</td>
+      <td>11</td>
+      <td>SVTTEILPVSM721–731</td>
+      <td>DQA1*01:03-DQB1*06:01</td>
+      <td>Hypothetical protein [Myxococcales bacterium]</td>
+      <td>PVTTEILPVSDDPPG525-539</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#15</td>
+      <td>Pre_3</td>
+      <td>6–1</td>
+      <td>CASDPKNGGEQYF</td>
+      <td>2–7</td>
+      <td>29/DV5</td>
+      <td>CAASVGFGNVLHC</td>
+      <td>35</td>
+      <td>FKIYSKHTPIN201–211</td>
+      <td>DRA-DRB5*01:02</td>
+      <td>Uncharacterized protein APUU_31,289 S [Aspergillus puulaauensis]</td>
+      <td>CRAAFKLYSKHTPVE123-137</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#15</td>
+      <td>Pre_4</td>
+      <td>19</td>
+      <td>CASGLAGGNTGELFF</td>
+      <td>2–2</td>
+      <td>10</td>
+      <td>CVPSSGGYNKLIF</td>
+      <td>4</td>
+      <td>QALNTLVKQLS957–967</td>
+      <td>DRA-DRB1*08:02</td>
+      <td>4-hydroxybenzoate octaprenyltransferase [Pseudoduganella dura]</td>
+      <td>IQPLNTLVKQLSVAA112-126</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#15</td>
+      <td>Pre_5</td>
+      <td>6–5</td>
+      <td>CASSAGLAGGGNTQYF</td>
+      <td>2–3</td>
+      <td>5</td>
+      <td>CAVISGSARQLTF</td>
+      <td>22</td>
+      <td>QALNTLVKQLS957–967</td>
+      <td>DRA-DRB1*08:02</td>
+      <td>4-hydroxybenzoate octaprenyltransferase [Pseudoduganella dura]</td>
+      <td>IQPLNTLVKQLSVAA112-126</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#15</td>
+      <td>Pre_6</td>
+      <td>2</td>
+      <td>CASVGGNEQFF</td>
+      <td>2–1</td>
+      <td>9–2</td>
+      <td>CALTRFVGGATNKLIF</td>
+      <td>32</td>
+      <td>RTFLLKYNENGTITD273–287</td>
+      <td>DRA-DRB1*15:02</td>
+      <td>Unnamed protein product [Mytilus edulis]</td>
+      <td>NKKLLKYNENGTFIT277-291</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#15</td>
+      <td>Pre_7</td>
+      <td>4–1</td>
+      <td>CASSHDGTPPDTQYF</td>
+      <td>2–3</td>
+      <td>29/DV5</td>
+      <td>CAAYSNYQLIW</td>
+      <td>33</td>
+      <td>FKIYSKHTPIN201–211</td>
+      <td>DRA-DRB1*15:02</td>
+      <td>Uncharacterized protein APUU_31,289 S [Aspergillus puulaauensis]</td>
+      <td>CRAAFKLYSKHTPVE123-137</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#15</td>
+      <td>Pre_15</td>
+      <td>2</td>
+      <td>CASSETGRGTDTQYF</td>
+      <td>2–3</td>
+      <td>9–2</td>
+      <td>CALYRGTYKYIF</td>
+      <td>40</td>
+      <td>LQSLQTYVTQQLIRA1001–1015</td>
+      <td>DRA-DRB1*15:02</td>
+      <td>Dyp-type peroxidase [Acinetobacter sp.]</td>
+      <td>CTVLQTYVTQQLESV134-148</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#17</td>
+      <td>Pre_7</td>
+      <td>6–1</td>
+      <td>CASSLRGAFGYTF</td>
+      <td>1–2</td>
+      <td>35</td>
+      <td>CAGHLYGGSQGNLIF</td>
+      <td>42</td>
+      <td>NCTFEYVSQPFLMDL165–179</td>
+      <td>DPA1*01:03-DPB1*04:02</td>
+      <td>Fumarylacetoacetate hydrolase family protein [Alcaligenes faecalis]Hypothetical protein [Planctomycetales bacterium]</td>
+      <td>ASLIEYVSQPFLLEP225-239 AAGFEYVSQPFSLPL533-547</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#17</td>
+      <td>Pre_8</td>
+      <td>5–1</td>
+      <td>CASSLNSGANVLTF</td>
+      <td>2–6</td>
+      <td>13–1</td>
+      <td>CAASIVQDQKLVF</td>
+      <td>8</td>
+      <td>LTPTWRVYSTGSNVF629–643</td>
+      <td>DRA-DRB1*08:02</td>
+      <td>Hypothetical protein [Novosphingobium chloroacetimidivorans]</td>
+      <td>APGTPTWRVYSTART277-291</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#17</td>
+      <td>Pre_14</td>
+      <td>5–1</td>
+      <td>CASSLGAGLYNEQFF</td>
+      <td>2–1</td>
+      <td>38–1</td>
+      <td>CAFINNNAGNMLTF</td>
+      <td>39</td>
+      <td>QALNTLVKQLS957–967</td>
+      <td>DRA-DRB1*08:02</td>
+      <td>4-hydroxybenzoate octaprenyltransferase [Pseudoduganella dura]</td>
+      <td>IQPLNTLVKQLSVAA112-126</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>#17</td>
+      <td>Pre_15</td>
+      <td>7–2</td>
+      <td>CASSRTSGGTYEQYF</td>
+      <td>2–7</td>
+      <td>25</td>
+      <td>CAGQNTDKLIF</td>
+      <td>34</td>
+      <td>SIVRFPNITNL325–335</td>
+      <td>DRA-DRB1*15:01</td>
+      <td>LTA synthase family protein [Dechloromonas denitrificans]</td>
+      <td>LPGKSVVRWPNITNL330-344</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Number ranges indicate the location of peptides in the proteins.†Amino acids colored red indicate mismatches compared with corresponding S epitopes of Wuhan strain.‡Antigen names and peptide sequences in cells with gray background indicate inactive antigens of the corresponding T clonotypes._
 
 ## Discussion
 
@@ -77,42 +1633,157 @@ The limitation of this study is the number of individuals we analyzed. However, 
 
 ## Materials and methods
 
-## Sample collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human IgG HRP (Goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab97175</td>
+      <td>ELISA (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SARS-CoV-IgG WHO international Standard (Human polyclonal)</td>
+      <td>NIBSC</td>
+      <td>20/136</td>
+      <td>ELISA (10–31250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD3-FITC (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 300305</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TotalSeq-C anti-human Hashtags (mouse monoclonal, mixture)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 394661, etc</td>
+      <td>Single-cell sequencing (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD69-APC (armenian hamster monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 104513</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 Spike (trimeric)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#65444</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 Nucleocapsid protein</td>
+      <td>ACRO Biosystems</td>
+      <td>NUN-C5227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 (Spike Glycoprotein), PepMix</td>
+      <td>JPT Peptide Technologies GmbH</td>
+      <td>JER-PM-WCPV-S-1–2</td>
+      <td>S peptide pool</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Individual S peptide</td>
+      <td>Genscript</td>
+      <td></td>
+      <td>a peptide scan (15mers with 11 aa overlap) through S protein (Swiss-Prot ID: P0DTC2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMX-IRES-rat CD2 (plasmid)</td>
+      <td>Yamasaki et al., 2006</td>
+      <td></td>
+      <td>retroviral vector</td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethilops)</td>
+      <td>Vero E6/TMPRSS2</td>
+      <td>JCRB cell bank; Yoshida et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NFAT-GFP Reporter cell</td>
+      <td>Matsumoto et al., 2021</td>
+      <td></td>
+      <td>T cell hybridoma lacking endogenous TCR with an NFAT-GFP reporter gene</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Human gammaherpesvirus 4)</td>
+      <td>Epstein-Barr virus (EBV)</td>
+      <td>Kanda et al., 2015</td>
+      <td></td>
+      <td>For B cell transformation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software</td>
+      <td>GraphPad Prism 8</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Sample collection
 
 Samples (serum, whole blood, and PBMCs) were collected four times at 0–7 days before 1st dose vaccination as pre-vaccination, at 14–21 days after 1st dose vaccination as 3 weeks sample, at 35–49 days after 1st dose vaccination as 6 weeks sample, and at 154–182 days after 1st dose of vaccination as 24 weeks sample. At the same time of blood sampling, adverse event information was also collected from all participants. PBMCs were isolated using BD vacutainer CPT cell separation tube (Beckton Dickinson), according to manufacturers’ instructions. Isolated PBMCs were stored in the vapor phase of liquid nitrogen until use.
 
-## Antibody titer determination by enzyme-linked immunosorbent assay (ELISA)
+### Antibody titer determination by enzyme-linked immunosorbent assay (ELISA)
 
 Serum antibody titer was measured using ELISA. Briefly, recombinant ancestral S protein (S1 + S2, Cell Signaling Technology; 1 µg/ml) or recombinant nucleocapsid protein (Acrobiosystems; 1 µg/ml) was coated on 96-well plate at 4 °C overnight. On the second day, wells were blocked with goat serum (Gibco) for 2 hr at room temperature. The sera were diluted from 10 to 31,250 folds in blocking buffer and incubated overnight at 4 °C. The next day, wells were washed and incubated with horseradish peroxidase (HRP)-conjugated antibodies (Abcam) for 3 hr at room temperature. After being washed with PBS-T (0.05% tween 20), wells were incubated with the peroxidase chromogenic substrate 3,3’–5,5’-tetramethyl benzidine (Sigma-Aldrich) for 30 min at room temperature, then the reaction was stopped by 0.5 N sulfuric acid (Sigma Aldrich). The absorbance of wells was immediately measured at 450 nm with a microplate reader (Bio-Rad). The value of the half-maximal antibody titer of each sample was calculated from the highest absorbance in the dilution range by using Prism 8 software. The calculated antibody titer was converted to BAU/ml by using WHO International Standard 20/136 (NIBSC) for ancestral S-specific antibody titer.
 
-## Whole blood interferon-gamma release immune assay (IGRA) for SARS-CoV-2-specific T cell responses using QuantiFERON
+### Whole blood interferon-gamma release immune assay (IGRA) for SARS-CoV-2-specific T cell responses using QuantiFERON
 
 SARS-CoV-2 specific T cell immune responses were evaluated by QuantiFERON SARS-CoV-2 (Qiagen) (Jaganathan et al., 2021), according to manufacturer’s instructions, in which CD4+ T cells were activated by epitopes coated on Ag1 tube, and CD4+ and CD8+ T cells were activated by epitopes coated on Ag2 tube. Briefly, 1 ml of whole blood sample with heparin is added into each of Nil (negative control), Mito (positive control), Ag1, and Ag2 tubes, and incubated at 37 °C for 22–24 hr. Tubes were then centrifuged at 3000×g for 15 min for collecting plasma samples. IFNγ derived from activated T cells was measured with enzyme-linked immunosorbent assay (ELISA) (Qiangen) according to the manufacturer’s instructions. IFNγ concentration (IU/ml) was calculated with background (Nil tube) subtracted from values of Ag1 or Ag2 tubes.
 
-## Pseudo-typed virus neutralization assay
+### Pseudo-typed virus neutralization assay
 
 The neutralizing activity of serum antibodies was analyzed with pseudo-typed VSVs as previously described (Yoshida et al., 2021). Briefly, Vero E6 cells stably expressing TMPRSS2 were seeded on 96-well plates and incubated at 37 °C for 24 h. Pseudoviruses were incubated with a series of dilutions of inactivated serum for 1 hr at 37 °C, then added to Vero E6 cells. At 24 hr after infection, cells were lysed with cell culture lysis reagent (Promega), and luciferase activity was measured by Centro XS3 LB 960 (Berthold).
 
-## In vitro stimulation of PBMCs
+### In vitro stimulation of PBMCs
 
 Cryopreserved PBMCs were thawed and washed with warm RPMI 1640 medium (Sigma) supplemented with 5% human AB serum (GeminiBio), Penicillin (Sigma), streptomycin (MP Biomedicals), and 2-mercaptoethanol (Nacalai Tesque). PBMCs were labeled with Cell Proliferation Kit (CellTrace Violet, ThermoFisher) following the manufacturer’s protocol and were stimulated in the same medium with S peptide pool (1 μg/ml per peptide, JPT) for 10 days, with human recombinant IL-2 (1 ng/ml, Peprotech), IL-7 (5 ng/ml, BioLegend) and IL-15 (5 ng/ml, Peprotech) supplemented on day 2, day 5, and day 8 of the culture. On day 10 cells were washed and stained with anti-human CD3 and TotalSeq-C Hashtags antibodies. Proliferated T cells (CD3+CTVlow) were sorted by cell sorter SH800S (SONY) and used for single-cell TCR and RNA sequencing analyses.
 
-## Single-cell-based transcriptome and TCR repertoire analysis
+### Single-cell-based transcriptome and TCR repertoire analysis
 
 Single cell library was prepared using the reagents from 10x Genomics following the manufacturer’s instructions. After reverse transcription, cDNA was amplified for 14 cycles, and up to 50 ng of cDNA was used for construction of gene expression and TCR libraries. Libraries were sequenced in paired-end mode, and the raw reads were processed by Cell Ranger 6.0.0 (10x Genomics). Distribution of the mitochondrial gene percentage, n_counts and n_genes were fitted with a one-variable, two-component mixed Gaussian model using the Python package scikit-learn (Pedregosa et al., 2011) and divided into two distributions corresponding to high and low levels, respectively. The cutting threshold values were the middle value of the means of the two fitted Gaussian distributions. A package call Scrublet was also applied (Wolock et al., 2019), and the events whose main hashtag reads are less than 95% of the total hashtag reads were gated out before the UMAP plots were exported using BBrowser (Le et al., 2020). Tfh signature score was generated using canonical Tfh marker genes (IL21, ICOS, CD200, PDCD1, POU2AF1, BTLA, CXCR5, and CXCL13). Other cell populations were annotated using the following markers: Treg, CD4+FOXP3+; CD4T, CD3E+CD4+; CD8T, CD3E+CD8A+; central memory (cm) cells, SELL(CD62L)hi cells although sometimes CCR7 expression is vague; effector memory (em) cells, SELLlow/–CCR7– and IFNG-expressing cells containing populations; naïve cells, CCR7+TCF7+; cycling cells, MKI67hi; γδT, TRDC+; B cells, CD19+; Monocyte, CD14+; MAIT, CD3E+KLRB1+IL18R1+; Tfr, FOXP3+NRN1+ in cells with high Tfh score; CD4-CTL, GZMB+ in CD4T cells (Kaech et al., 2002; Meckiff et al., 2020; Sallusto et al., 2004; Wang et al., 2021).
 
-## Reporter cell establishment and stimulation
+### Reporter cell establishment and stimulation
 
 TCRα and β chain cDNA sequences were introduced into a mouse T cell hybridoma lacking TCR and having a nuclear factor of activated T-cells (NFAT)-green fluorescent protein (GFP) reporter gene (Matsumoto et al., 2021) using retroviral vectors (Lu et al., 2021; Yamasaki et al., 2006). TCR-reconstituted cells were co-cultured with 1 μg/ml of peptides in the presence of antigen-presenting cells (APCs). After 20 hr, cell activation was assessed by GFP and CD69 expression.
 
-## Antigen-presenting cells
+### Antigen-presenting cells
 
 Transformed B cells and HLA-transfected HEK293T cells used as APCs were generated as described (Lu et al., 2021). For transformed B cells, 3×105 PBMCs were incubated with the recombinant Epstein-Barr virus (EBV) suspension (Kanda et al., 2015) for 1 hr at 37 °C with mild shaking every 15 min. The infected cells were cultured in RPMI 1640 medium supplemented with 20% fetal bovine serum (FBS, CAPRICORN SCIENTIFIC GmbH) containing cyclosporine A (CsA, 0.1 μg/ml, Cayman Chemical). Immortalized B lymphoblastoid cell lines were obtained after 3 weeks of culture and used as APCs. For HLA-transfected HEK293T cells, plasmids encoding HLA class I/II alleles (Jiang et al., 2013) were transfected in HEK293T cells with PEI MAX (Polysciences).
 
-## Determination of epitopes and restricting HLA
+### Determination of epitopes and restricting HLA
 
 15-mer peptides with 11 amino acids overlap that cover the full length of S protein of SARS-CoV-2 were synthesized (GenScript). Peptides were dissolved in DMSO at 12 mg/ml and 12–15 peptides were mixed to create 26 different semi-pools. TCR-reconstituted reporter cells were stimulated with 1 μg/ml of S peptide pool (1 μg/ml per peptide, JPT), then 36-peptide pools that consist of three semi-pools each, then semi-pools, and then 12 individual peptides in the presence of autologous B cells to identify epitope peptides. To determine the restricting HLA, HLAs were narrowed down by co-culturing reporter cells with autologous and various heterologous B cells in the presence of 1 μg/ml of the epitope peptide. HLAs shared by activatable B cells were transduced in HEK239T cells and used for further co-culture to identify the restricting HLA.
 
-## Statistics
+### Statistics
 
 All values with error bars are presented as the mean ± SEM. One-way ANOVA followed by Turkey’s post hoc multiple comparison test was used to assess significant differences in each experiment using Prism 8 software (GraphPad Software). Differences were considered to be significant when p value was less than 0.05. p values in Figure 6 were calculated with t-test using the ‘stat_compare_means’ function in R (version 4.3.0 for arm64).

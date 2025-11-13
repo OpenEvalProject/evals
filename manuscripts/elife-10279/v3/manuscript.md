@@ -12,7 +12,7 @@
 
 ## Abstract
 
-10.7554/eLife.10279.001 A number of TP53-MDM2 inhibitors are currently under investigation as therapeutic agents in a variety of clinical trials in patients with TP53 wild type tumors. Not all wild type TP53 tumors are sensitive to such inhibitors. In an attempt to improve selection of patients with TP53 wild type tumors, an mRNA expression signature based on 13 TP53 transcriptional target genes was recently developed (Jeay et al. 2015). Careful reanalysis of TP53 status in the study validation data set of cancer cell lines considered to be TP53 wild type detected TP53 inactivating alterations in 23% of cell lines. The subsequent reanalysis of the remaining TP53 wild type cell lines clearly demonstrated that unfortunately the 13-gene signature cannot predict response to TP53-MDM2 inhibitor in TP53 wild type tumors. DOI: http://dx.doi.org/10.7554/eLife.10279.001
+A number of TP53-MDM2 inhibitors are currently under investigation as therapeutic agents in a variety of clinical trials in patients with TP53 wild type tumors. Not all wild type TP53 tumors are sensitive to such inhibitors. In an attempt to improve selection of patients with TP53 wild type tumors, an mRNA expression signature based on 13 TP53 transcriptional target genes was recently developed (Jeay et al. 2015). Careful reanalysis of TP53 status in the study validation data set of cancer cell lines considered to be TP53 wild type detected TP53 inactivating alterations in 23% of cell lines. The subsequent reanalysis of the remaining TP53 wild type cell lines clearly demonstrated that unfortunately the 13-gene signature cannot predict response to TP53-MDM2 inhibitor in TP53 wild type tumors.
 
 ## Introduction
 
@@ -22,17 +22,182 @@ Recently, Jeay et al., (2015) attempted to find a messenger RNA (mRNA) predictiv
 
 ## Results and discussion
 
-One potential explanation for the reported predictive ability of the Jeay et al., (2015) signature in a validation set of 52 cancer cell lines that were considered TP53 WT is the possibility that some of these cell lines have TP53 inactivating alterations that were missed during cell lines selection. TP53 could be inactivated by a variety of mechanisms including inactivating mutations, DNA loss and loss of mRNA expression. The CCLE provides sequencing, copy number and mRNA expression data, enabling careful examination of TP53 status in the set of 52 cancer cell lines used for validation by Jeay et al., (2015). Careful examination of TP53 status using publicly available CCLE mutation calls, copy number and mRNA expression (described in Materials and methods) identified 12 out of 52 cancer cell lines containing inactivating TP53 alterations, which are summarized in Table 1.10.7554/eLife.10279.003Table 1.List of 12 cell lines with inactivated TP53 in the validation set of 52 cancer cell lines considered to be TP53 wild-type by Jeay et al., (2015).DOI: http://dx.doi.org/10.7554/eLife.10279.003Cell line nameTP53 inactivating mutation(s)Alternative reads/reference readsTP53 mRNA (MAS5-150 201746_at)TP53 CN ratioJeay et al. 13-gene signature predictionNVP-CGM097 sensitivityKASUMI-1p. R248Q52/02650.54insensitiveinsensitiveCOLO-818p. C135R34/02571.14insensitiveinsensitiveIGR-37p. C229fs110/1190.59insensitiveinsensitiveHCC202p. T284fs35/4140.8insensitiveinsensitiveEFM-192Ap. F270fs7/1100.74insensitiveinsensitiveNCI-H1568p. H179R89/12020.82insensitiveinsensitiveCOLO-783p. P27L38/03041.05sensitiveinsensitiveGA-10p. I232N, p. P152L94/50, 52/764930.81insensitiveinsensitiveVMRC-RCWp. I332_splice192/68631.65insensitiveinsensitiveJHH-5p. PPQH190del107/412721.03insensitiveinsensitiveHDLM-210.94insensitiveinsensitiveRERF-LC-KJ251.3insensitiveinsensitive
+One potential explanation for the reported predictive ability of the Jeay et al., (2015) signature in a validation set of 52 cancer cell lines that were considered TP53 WT is the possibility that some of these cell lines have TP53 inactivating alterations that were missed during cell lines selection. TP53 could be inactivated by a variety of mechanisms including inactivating mutations, DNA loss and loss of mRNA expression. The CCLE provides sequencing, copy number and mRNA expression data, enabling careful examination of TP53 status in the set of 52 cancer cell lines used for validation by Jeay et al., (2015). Careful examination of TP53 status using publicly available CCLE mutation calls, copy number and mRNA expression (described in Materials and methods) identified 12 out of 52 cancer cell lines containing inactivating TP53 alterations, which are summarized in Table 1.
+
+**Table 1.**
+ List of 12 cell lines with inactivated TP53 in the validation set of 52 cancer cell lines considered to be TP53 wild-type by Jeay et al., (2015).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell line name</th>
+      <th>TP53 inactivating mutation(s)</th>
+      <th>Alternative reads/reference reads</th>
+      <th>TP53 mRNA (MAS5-150 201746_at)</th>
+      <th>TP53 CN ratio</th>
+      <th>Jeay et al. 13-gene signature prediction</th>
+      <th>NVP-CGM097 sensitivity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KASUMI-1</td>
+      <td>p. R248Q</td>
+      <td>52/0</td>
+      <td>265</td>
+      <td>0.54</td>
+      <td>insensitive</td>
+      <td>insensitive</td>
+    </tr>
+    <tr>
+      <td>COLO-818</td>
+      <td>p. C135R</td>
+      <td>34/0</td>
+      <td>257</td>
+      <td>1.14</td>
+      <td>insensitive</td>
+      <td>insensitive</td>
+    </tr>
+    <tr>
+      <td>IGR-37</td>
+      <td>p. C229fs</td>
+      <td>110/11</td>
+      <td>9</td>
+      <td>0.59</td>
+      <td>insensitive</td>
+      <td>insensitive</td>
+    </tr>
+    <tr>
+      <td>HCC202</td>
+      <td>p. T284fs</td>
+      <td>35/4</td>
+      <td>14</td>
+      <td>0.8</td>
+      <td>insensitive</td>
+      <td>insensitive</td>
+    </tr>
+    <tr>
+      <td>EFM-192A</td>
+      <td>p. F270fs</td>
+      <td>7/1</td>
+      <td>10</td>
+      <td>0.74</td>
+      <td>insensitive</td>
+      <td>insensitive</td>
+    </tr>
+    <tr>
+      <td>NCI-H1568</td>
+      <td>p. H179R</td>
+      <td>89/1</td>
+      <td>202</td>
+      <td>0.82</td>
+      <td>insensitive</td>
+      <td>insensitive</td>
+    </tr>
+    <tr>
+      <td>COLO-783</td>
+      <td>p. P27L</td>
+      <td>38/0</td>
+      <td>304</td>
+      <td>1.05</td>
+      <td>sensitive</td>
+      <td>insensitive</td>
+    </tr>
+    <tr>
+      <td>GA-10</td>
+      <td>p. I232N, p. P152L</td>
+      <td>94/50, 52/76</td>
+      <td>493</td>
+      <td>0.81</td>
+      <td>insensitive</td>
+      <td>insensitive</td>
+    </tr>
+    <tr>
+      <td>VMRC-RCW</td>
+      <td>p. I332_splice</td>
+      <td>192/68</td>
+      <td>63</td>
+      <td>1.65</td>
+      <td>insensitive</td>
+      <td>insensitive</td>
+    </tr>
+    <tr>
+      <td>JHH-5</td>
+      <td>p. PPQH190del</td>
+      <td>107/41</td>
+      <td>272</td>
+      <td>1.03</td>
+      <td>insensitive</td>
+      <td>insensitive</td>
+    </tr>
+    <tr>
+      <td>HDLM-2</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>0.94</td>
+      <td>insensitive</td>
+      <td>insensitive</td>
+    </tr>
+    <tr>
+      <td>RERF-LC-KJ</td>
+      <td></td>
+      <td></td>
+      <td>25</td>
+      <td>1.3</td>
+      <td>insensitive</td>
+      <td>insensitive</td>
+    </tr>
+  </tbody>
+</table>
 
 As can be seen in Table 1, the majority of 12 cell lines have inactivating TP53 point mutations, three cell lines with TP53 frame shift mutations exhibit loss of TP53 mRNA expression likely due to nonsense-mediated mRNA decay, two other cell lines also have loss of TP53 mRNA expression. (Gene expression and Copy Number (CN) cutoffs are defined in Materials and methods). Importantly, since only TP53 WT tumors have a chance of being sensitive to TP53-MDM2 inhibitors, all 12 cell lines are insensitive to NVP-CGM097.
 
-In order to re-evaluate the performance of the signature in TP53 WT settings, the 12 cancer cell lines with inactivated TP53 listed in Table 1 have been removed from the Jeay et al., (2015) validation list of cell lines, resulting in set of 40 likely WT cancer cell lines listed in Supplementary file 1A with information on sensitivity to NVP-CGM097 and Jeay et al., (2015) 13-gene signature prediction. Results of reevaluation of signature performance are listed in Table 2.10.7554/eLife.10279.004Table 2.Performance of Jeay et al., (2015) 13-gene signature prediction in validation set of 40 likely TP53 wild-type cancer cell lines.DOI: http://dx.doi.org/10.7554/eLife.10279.004Performance measureCell sensitivity defined by NVP-CGM097Sensitivity89% (24/27)Specificity15% (2/13) {DAN-G removal 8% (1/12) *}PPV68.6% (24/35)NPV40% (2/5) {DAN-G removal 25% (1/4) *}Response rate67.5% (27/40)* DAN-G has TP53 mRNA expression of 33 (MAS5-150 201746_at) indicating the probable loss of TP53 mRNA.(Stringent TP53 mRNA expression cutoff is set at 32 (MAS5-150 201746_at) to indicate loss of TP53 mRNA).NPV - negative predicted value; PPV - positive predicted value.
+In order to re-evaluate the performance of the signature in TP53 WT settings, the 12 cancer cell lines with inactivated TP53 listed in Table 1 have been removed from the Jeay et al., (2015) validation list of cell lines, resulting in set of 40 likely WT cancer cell lines listed in Supplementary file 1A with information on sensitivity to NVP-CGM097 and Jeay et al., (2015) 13-gene signature prediction. Results of reevaluation of signature performance are listed in Table 2.
+
+**Table 2.**
+ Performance of Jeay et al., (2015) 13-gene signature prediction in validation set of 40 likely TP53 wild-type cancer cell lines.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Performance measure</th>
+      <th>Cell sensitivity defined by NVP-CGM097</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sensitivity</td>
+      <td>89% (24/27)</td>
+    </tr>
+    <tr>
+      <td>Specificity</td>
+      <td>15% (2/13) {DAN-G removal 8% (1/12) *}</td>
+    </tr>
+    <tr>
+      <td>PPV</td>
+      <td>68.6% (24/35)</td>
+    </tr>
+    <tr>
+      <td>NPV</td>
+      <td>40% (2/5) {DAN-G removal 25% (1/4) *}</td>
+    </tr>
+    <tr>
+      <td>Response rate</td>
+      <td>67.5% (27/40)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* DAN-G has TP53 mRNA expression of 33 (MAS5-150 201746_at) indicating the probable loss of TP53 mRNA.(Stringent TP53 mRNA expression cutoff is set at 32 (MAS5-150 201746_at) to indicate loss of TP53 mRNA).NPV - negative predicted value; PPV - positive predicted value._
 
 As can be seen from Table 2, the 13-gene signature positive predicted value for NVP-CGM097 does not noticeably differ from the response rate to the inhibitor. Also the specificity and negative predicted value (NPV) are low and it is likely that the actual specificity and NPV are even lower considering that DAN-G cell line has TP53 mRNA expression just above cutoff for TP53 mRNA loss. (NVP-CFC218 is another TP53-MDM2 inhibitor used by Jeay et al., (2015) that is structurally and biochemically very similar to NVP-CGM097 and, as can be seen from Supplementary file 1B, signature has the same pattern of performance for NVP-CFC218 as for NVP-CGM097).
 
-![Figure 1.](https://cdn.elifesciences.org/articles/10279/elife-10279-fig1-v3.jpg)
+Figure 1 provides a visual overview of data used for evaluating the 13-gene signature performance for NVP-CGM097 in the validation set of 40 likely TP53 WT cancer cell lines. Figure 1 clearly illustrates that the Jeay et al., (2015) 13-gene signature cannot differentiate between sensitive and insensitive cell lines. Keeping in mind that DAN-G cell line may have TP53 mRNA loss, there is only one cell line, HCC-95, that is correctly predicted to be insensitive. The presented reanalysis of signature performance in this article strongly suggests that 13-gene signature is a proxy for TP53 status. In such case, one can put forward the hypothesis that HCC-95 may harbor an inactivating alteration(s) that has been missed. If this is the case, the Jeay et al., (2015) 13-gene signature has zero specificity and zero NPV in the validation set of TP53 WT cancer cell lines.
 
-**Figure 1.:** DOI: http://dx.doi.org/10.7554/eLife.10279.005
+![Figure 1.](https://cdn.elifesciences.org/articles/10279/elife-10279-fig1-v3.jpg)
 
 In clinical sequencing, special care is taken to make sure sufficient coverage is obtained across all target regions in order to reliably detect point mutations, insertions/deletions, fusions and copy number aberrations (Frampton et al., 2013). Often the additional step of manual review of sequencing analysis results is added to the workflow to detect false positive/negative calls due to particular sequence composition or computational pipeline artifacts. In preclinical sequencing, such detailed workflow is often too expensive to obtain. In the CCLE, RainDance technology (Mazutis et al., 2009) was used to fill some blind spots in the hybrid capture process, but such a process does not necessarily mitigate all problematic regions. This may explain the potentially missed TP53 inactivating alteration(s) in HCC-95.
 

@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.37248.001 Conformational dynamics underlie enzyme function, yet are generally inaccessible via traditional structural approaches. FRET has the potential to measure conformational dynamics in vitro and in intact cells, but technical barriers have thus far limited its accuracy, particularly in membrane proteins. Here, we combine amber codon suppression to introduce a donor fluorescent noncanonical amino acid with a new, biocompatible approach for labeling proteins with acceptor transition metals in a method called ACCuRET (Anap Cyclen-Cu 2+ resonance energy transfer). We show that ACCuRET measures absolute distances and distance changes with high precision and accuracy using maltose binding protein as a benchmark. Using cell unroofing, we show that ACCuRET can accurately measure rearrangements of proteins in native membranes. Finally, we implement a computational method for correcting the measured distances for the distance distributions observed in proteins. ACCuRET thus provides a flexible, powerful method for measuring conformational dynamics in both soluble proteins and membrane proteins.
+Conformational dynamics underlie enzyme function, yet are generally inaccessible via traditional structural approaches. FRET has the potential to measure conformational dynamics in vitro and in intact cells, but technical barriers have thus far limited its accuracy, particularly in membrane proteins. Here, we combine amber codon suppression to introduce a donor fluorescent noncanonical amino acid with a new, biocompatible approach for labeling proteins with acceptor transition metals in a method called ACCuRET (Anap Cyclen-Cu2+ resonance energy transfer). We show that ACCuRET measures absolute distances and distance changes with high precision and accuracy using maltose binding protein as a benchmark. Using cell unroofing, we show that ACCuRET can accurately measure rearrangements of proteins in native membranes. Finally, we implement a computational method for correcting the measured distances for the distance distributions observed in proteins. ACCuRET thus provides a flexible, powerful method for measuring conformational dynamics in both soluble proteins and membrane proteins.
 
 ## Introduction
 
@@ -38,17 +38,29 @@ Previous studies using FRET on membrane proteins have produced uncertain results
 
 **Figure 1.:** (A) X-ray crystal structure of MBP bound to maltose (PDB ID: 1N3X) showing the positions of the donor and acceptor FRET pairs at the top (295 and 237, respectively) and bottom (322 and 309, respectively) of the clamshell, with the distance represented by dashed lines. The distance separating the 295/237 FRET pair decreases and the 322/309 FRET pair increases with maltose binding (Video 1). (B) Soluble MBP was studied in a cuvette in a fluorometer (left), and membrane-bound MBP was studied in membranes of unroofed cells (right). The red dot represents bound metal, the blue side-chain represents L-Anap, and the squiggle at the membrane represents protein lipidation at the engineered CAAX site.
 
+![Video 1.](https://cdn.elifesciences.org/articles/37248/elife-37248-video1.mp4.jpg)
+
+**Video 1.:** Morph of the X-ray crystal structures of MBP in the apo (PDB ID: 1N3W) and maltose-bound (PDB ID: 1N3X) states. Shown are the measurements of the distances for the FRET pairs used in this study, MBP-295Anap-C (top) and MBP-322Anap-C (bottom). Maltose is shown in magenta.
+
 ## Results
 
-## Selection of FRET pairs in MBP
+### Selection of FRET pairs in MBP
 
 MBP is a clamshell shaped protein that undergoes a significant closure of the clamshell upon binding its ligand, maltose (Figure 1A; Video 1). In addition, maltose binding leads to a smaller opening of the backside of the clamshell. By introducing one FRET pair at the top of the clamshell and a second FRET pair on the backside of the clamshell, we can address the accuracy and precision of ACCuRET to measure absolute distances as well as ligand-dependent increases and decreases in distance.
 
 Our criteria for selection of FRET pairs were (1) the sites are solvent exposed, (2) the sites are on rigid secondary structural elements (α helices in MBP), (3) the distance between the sites is predicted to fall in the working range of tmFRET (~10–20 Å), and (4) the distance between sites undergoes a moderate change between apo and holo MBP. Our first FRET pair was at positions 295 (donor) and 237 (acceptor) on the outer lip of the clamshell (Figure 1A; Video 1). From β-carbon distances in the X-ray structures, these sites are 21 Å apart in the apo state and 13 Å apart in the holo state, a distance change of about −8 Å (shortening) with maltose binding. Our second FRET pair was at positions 322 (donor) and 309 (acceptor) on the backside of the clamshell (Figure 1A; Video 1). These sites are 13 Å apart in the apo state and 17 Å apart in the holo state, a distance change of +4 Å (lengthening) with maltose binding. In this study, we used these two FRET pairs to evaluate the accuracy and precision of ACCuRET with different acceptor metal-binding sites and different metals as well as for MBP in solution and bound to the membrane.
 
-## Specific labeling with fluorophore
+### Specific labeling with fluorophore
 
 ACCuRET requires the protein to be site-specifically labeled with a donor fluorophore and an acceptor transition metal ion. To achieve specific labeling of MBP with a small donor fluorophore, we used amber codon suppression to introduce the fluorescent noncanonical amino acid L-Anap (Figure 2A) (Chatterjee et al., 2013; Kalstrup and Blunck, 2013). Our amber codon suppression method required the use of two plasmids (Zagotta et al., 2016; Aman et al., 2016). One plasmid encodes MBP with a TAG stop codon (the amber codon) engineered at the site for L-Anap incorporation. The second plasmid, pAnap, developed by Peter Schultz’s lab (Chatterjee et al., 2013), encodes an evolved amino acyl tRNA synthetase and 4 copies of tRNA, which the cell uses to produce L-Anap-loaded tRNA complementary to the TAG codon (Figure 2A). HEK293T/17 cells were co-transfected with the two plasmids and incubated in a cell-permeable methyl ester (ME) version of L-Anap.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37248/elife-37248-fig2-v3.jpg)
+
+**Figure 2.:** (A) Cartoon representation of amber codon suppression strategy for site-specific incorporation of L-ANAP into MBP. (B–C) Full-length protein for MBP-TAG constructs, where TAG indicates that the construct includes an internal amber stop codon, was produced with L-ANAP-ME and increased with DN-eRF1 cotransfection. Western blots are shown of clarified lysates of cells cotransfected with (B) MBP-295TAG or (C) MBP-322TAG, pANAP, and either with (+) or without (-) DN-eRF1, and cultured with (+) or without (−) L-ANAP-ME in the medium. The blots were probed with an anti-FLAG antibody that recognizes both truncated and full length MBP. Vector only transfected cells (pcDNA3) were used as a negative control and wild-type MBP (wt) was used as a positive control. The amount of wild-type MBP loaded on the gel was less than the amount of the TAG mutations. As discussed in Materials and methods, all MBP constructs used in this work included an N-terminal FLAG epitope. (D–E) Quantitation of the percent of full-length product of (D) MBP-295TAG or (E) MBP-322TAG under the same conditions as B and C. Shown are mean ±SEM with n = 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37248/elife-37248-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Coomassie stained (left) and in-gel fluorescence (right) images of gel during the stages of purification of for MBP-295Anap-C and MBP-322Anap-C: cleared cell lysate, flow through, and elutant from M2-anti-FLAG beads. Similar fractions of the lysates were loaded for each stage, but 10 times more lysate was used for MBP-295Anap than MBP-322Anap. The absence of other bands in the lysate suggest strong specificity for Anap incorporation in MBP. Note, all constructs contain an N-terminal FLAG epitope, as described in Materials and methods.
 
 We achieved specific incorporation of L-Anap at donor positions 295 and 322 (Figure 1A). MBP-Anap was the primary band visible in gels of crude cell lysates using in-gel L-Anap fluorescence (Figure 2—figure supplement 1), indicating that L-Anap was not appreciably incorporated at other amber codon-containing sites. In addition, Western blots of FLAG-MBP containing the K295TAG or E322TAG mutation revealed full-length MBP only when the cells were incubated with L-Anap-ME (Figure 2B,C). However, even when L-Anap was present in the medium, a moderate amount of truncated product, in which translation terminated at the introduced stop codon, was observed for both MBP-295TAG and MBP-322TAG, as shown by the plots in Figure 2D,E (fraction of full-length MBP was 30% and 10%, respectively). These results indicate that L-Anap incorporation at positions 295 and 322 in MBP in HEK293T/17 cells was specific, but not particularly efficient.
 
@@ -60,7 +72,7 @@ L-Anap’s small size, short linker, and spectral properties makes it useful for
 
 **Figure 3.:** (A) Diagram illustrating tmFRET between L-Anap (left) and transition metal (right) for two different types of metal-binding sites: a standard HH site (top) and TETAC site (bottom). (B) Structure of TETAC, binding of Cu2+ (brown ball), and reaction with a cysteine in a protein. (C) Spectral properties of free L-ANAP and Cu2+-TETAC make them an ideal FRET pair for measuring small distances on the order of 10–20 Å. The emission spectrum from L-Anap (blue) is overlaid on the absorption spectra of Cu2+-TETAC (dashed black line), Cu2+-HH (black line), Co2+-HH (magenta line) and Ni2+ (green line). (D) Distance dependence of the FRET efficiency predicted with the Förster equation for each of the two FRET pairs, MBP-295Anap (red line) and MBP-322Anap (blue line), for both Cu2+-TETAC (dashed line) and Cu2+-HH (solid line).
 
-## Specific labeling with transition metal ion
+### Specific labeling with transition metal ion
 
 The standard method to introduce a transition metal ion acceptor for tmFRET uses a dihistidine (HH) motif with histidines introduced at positions i and i + 4 on an α helix (Figure 3A) or at i and i + 2 on a βstrand (Taraska et al., 2009a; Taraska et al., 2009b; Richmond et al., 2000; Puljung and Zagotta, 2013; Arnold and Haymore, 1991; Suh et al., 1991). These minimal metal binding sites can bind Ni2+, Co2+, and Cu2+ with affinities in the 1 to 100 µM range, and binding can be reversed with EDTA. Although this method places the transition metal ion very close to the protein backbone, the metal concentrations required are high, so that they are not fully biocompatible and are subject to off-target binding.
 
@@ -70,7 +82,7 @@ ACCuRET uses TETAC to introduce minimal metal binding sites. TETAC has many adva
 
 For each of our two FRET pairs (Figure 1A), we made three constructs: one with no metal-binding site, one with a standard HH-binding site, and one with a Cys, for modification by TETAC. For MBP-295Anap, the HH was introduced at positions 233 and 237 (MBP-295Anap-HH) and the Cys was introduced at position 237 (MBP-295Anap-C). For MBP-322Anap, the HH was introduced at positions 305 and 309 (MBP-322Anap-HH) and the Cys was introduced at position 309 (MBP-322Anap-C). For both donor sites, control constructs were also made with no introduced metal-binding sites (MBP-295Anap and MBP-322Anap) to measure other forms of energy transfer and nonspecific decreases in fluorescence, and correct the FRET efficiency measurements accordingly (see Materials and methods). These constructs were all expressed in HEK293T/17 cells as amino-terminal FLAG fusions and purified using anti-FLAG beads for subsequent analysis (Figure 2—figure supplement 1).
 
-## ACCuRET measures FRET and ligand-dependent changes in FRET
+### ACCuRET measures FRET and ligand-dependent changes in FRET
 
 ACCuRET was readily observed in both MBP-Anap-C constructs. We recorded emission spectra before and after application of 10 µM Cu2+-TETAC in a fluorometer (see Materials and methods and Approaches). As shown in Figure 4, Cu2+-TETAC produced a large decrease in fluorescence intensity for both MBP-295Anap-C (Figure 4A) and MBP-322Anap-C (Figure 4B). The emission spectra in the presence of Cu2+ were nearly identical in shape to the spectra without Cu2+-TETAC (Figure 4A–D, dashed traces) indicating the fluorescence quenching reflected a FRET mechanism as opposed to a change of environment of L-Anap or an inner filter effect (Lakowicz, 2006).
 
@@ -94,9 +106,17 @@ To quantify ACCuRET, we measured the time course of the fluorescence at a given 
 
 **Figure 6.:** (A–B) Time course and reversal of ACCuRET for (A) MBP-295Anap-C and (B) MBP-322Anap-C in the absence (open symbols) and presence (filled symbols) of 10 mM maltose. The fractional fluorescence of each construct was recorded every 10 s and normalized to the fractional fluorescence of the corresponding construct without an introduced cysteine. 10 µM Cu2+-TETAC and 1 mM DTT were added to the cuvette at the times indicated by the bars. Shown are mean ±SEM for n = 6–8. (C–D) Scattergrams of fractional fluorescence of (C) MBP-295Anap and (D) MBP-322Anap, with (Cys) and without (no Cys) the introduced cysteine, after addition of 10 µM Cu2+-TETAC in the absence (-) and presence (+) of 10 mM maltose. The amount of quenching was reproducible, maltose-dependent, construct-dependent, and nearly absent without the introduced cysteine.
 
-## tmFRET between L-Anap and transition metal bound to standard HH metal-binding sites
+### tmFRET between L-Anap and transition metal bound to standard HH metal-binding sites
 
 We compared tmFRET efficiencies measured with ACCuRET to those measured with Cu2+ bound to standard HH sites, using the same donor-acceptor positions on MBP. Addition of 100 µM Cu2+ caused a rapid quenching of both MBP-295Anap-HH and MBP-322Anap-HH fluorescence (Figure 7A,B). The quenching was nearly completely reversed upon addition of EDTA (Figure 7A,B) and negligible in the absence of the introduced HH sites (Figure 7C,D), indicating that it resulted from binding of Cu2+ to the introduced HH sites. For MBP-295Anap-HH, the quenching was greater in the presence of maltose, whereas for MBP-322Anap-HH the quenching was less in the presence of maltose (Figure 7), as observed with Cu2+-TETAC (Figure 6).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/37248/elife-37248-fig7-v3.jpg)
+
+**Figure 7.:** (A–B) Time course and reversal of tmFRET with HH sites for (A) MBP-295Anap-HH and (B) MBP-322Anap-HH in the absence (open symbols) and presence (filled symbols) of 10 mM maltose. The fractional fluorescence of each construct was recorded every 10 s and normalized to the fractional fluorescence of the corresponding construct without a HH site. 100 µM Cu2+ and 10 mM EDTA were added to the cuvette at the times indicated by the bars. Shown are mean ±SEM for n = 8. (C–D) Scattergrams of fractional fluorescence of (C) MBP-295Anap and (D) MBP-322Anap, with (HH) and without (no HH) the HH site, after addition of 100 µM Cu2+ in the absence (-) and presence (+) of 10 mM maltose. The amount of quenching with standard HH sites was similar to that with ACCuRET.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/37248/elife-37248-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A–B) Time course of tmFRET with HH sites for (A) MBP-295Anap-HH and (B) MBP-322Anap-HH with application of different concentrations of Cu2+ranging from 0 to 1 mM at the time of the bar. MBP-295Anap-HH was measured in the presence of 10 mM maltose and MBP-322Anap-HH was measure in the absence of maltose. The fluorescence of each construct was recorded every 10 s and normalized to the fluorescence in the absence of Cu2+. Shown are mean ±SEM for n = 3. (C–D) Plots of the concentration dependence of metal quenching for (C) MBP-295Anap and (D) MBP-322Anap. The quenching in shown for Cu2+ (black), Ni2+ (green), and Co2+ (magenta) for constructs with (filled symbols) or without (open symbols) a HH site. Shown are mean ±SEM for n = 3. The fits to the data correspond to a single binding isotherm and indicate that MBP-295Anap-HH has an affinity of 3 µM, 4 µM, and 30 µM for Cu2+, Ni2+, and Co2+, respectively, and MBP-322Anap-HH has an affinity of 17 µM for Cu2. The fractional fluorescence at saturating concentration for MBP-295Anap-HH was 0.2, 0.48, and 0.15 for Cu2+, Ni2+, and Co2+, respectively, and for MBP-322Anap-HH was 0.5 for Cu2.
 
 For both L-Anap sites, the quenching increased with increasing Cu2+ concentration, following a simple binding isotherm, with an apparent affinity corresponding to the affinity of the metal-binding site (Figure 7—figure supplement 1). For Cu2+ binding to MBP-295Anap-HH (in the presence of maltose), the affinity was 3 µM (Figure 7—figure supplement 1C), and for Cu2+ binding to MBP-322Anap-HH (in the absence of maltose) the affinity was 17 µM (Figure 7—figure supplement 1D). The quenching at saturating concentrations reflects the FRET efficiency between L-Anap and the bound metal. These data support the use of 100 µM Cu2+ as a saturating concentration for measuring tmFRET in these constructs.
 
@@ -104,7 +124,7 @@ Interestingly, at 1 mM Cu2+ there was some fluorescence quenching in MBP-295Anap
 
 One advantage of standard HH sites is the ability to use transition metals with different coordination chemistries and absorption profiles than Cu2+ (Figure 3C). These metals, including Co2+ and Ni2+, are expected to have different binding affinities for HH and endogenous sites as well as different R0 values. Co2+ produced a similar FRET efficiency to Cu2+ but exhibited about a 10-fold lower binding affinity (Figure 7—figure supplement 1C, pink). Ni2+, however, produced a substantially lower FRET efficiency at saturating concentration (Figure 7—figure supplement 1C, green). This reflects the lower R0 value predicted for Ni2+ and further supports a FRET mechanism for the energy transfer. More importantly, the lower R0 value for Ni2+ expands the useable range of tmFRET measurements to shorter distances. With standard HH sites, metals with different R0 values can be selected to match the distance of interest.
 
-## Determination of distances and distance changes using ACCuRET
+### Determination of distances and distance changes using ACCuRET
 
 FRET efficiency is steeply dependent on distance between the donor and acceptor, making FRET a molecular ruler for measurements of distances (Stryer and Haugland, 1967). Accurate distance measurements, however, have historically been a challenge for FRET studies because they are highly dependent on the conformational heterogeneity and dynamics of the fluorophores, the relative orientation of the fluorophores, and the labeling specificity and efficiency (Best et al., 2007; Schuler et al., 2005; Sobakinskaya et al., 2018). ACCuRET was designed to address these problems by using small probes with short linkers, a metal ion acceptor that is isotropic, and labeling methods that are orthogonal, specific, and efficient.
 
@@ -118,11 +138,19 @@ ACCuRET accurately measured intramolecular distances and distance changes, compa
 
 **Figure 8.:** (A–B) Distances from the X-ray crystal structures (X-ray) and determined using ACCuRET (Cu2+-TETAC) and standard HH sites (Cu2+-HH) from soluble (solution) and membrane-bound (membrane) MBP for the (A) MBP-295Anap and (B) MBP-322Anap FRET pairs. The distances determined using the Förster equation in the absence (open symbols) and presence (filled symbols) of maltose are shown and connected by a vertical line that reflects the maltose-dependent change in distance. Shown are mean ±SEM for n ≥ 8. The distances determined using the FCG model, assuming FWHM = 8 Å, are shown as asterisks.
 
-## ACCuRET measurements of distances in membrane proteins
+### ACCuRET measurements of distances in membrane proteins
 
 Membrane proteins present a major challenge for measuring protein structure and conformational dynamics. Compared to soluble proteins, membrane proteins typically express at much lower levels, are difficult to purify in their native state, and often require their native membrane environment to exhibit physiological structural and functional properties. ACCuRET is well suited to address these challenges because it leverages the exquisite sensitivity of fluorescence measurements, the efficient incorporation of L-Anap into proteins in mammalian cells, the ability to work on unpurified proteins, and the ability to record from proteins in their native membranes. We therefore set out to validate and optimize ACCuRET for measuring conformational dynamics of proteins in the membrane.
 
 To record fluorescence from native membranes we utilized a method called cell unroofing. Our implementation of this method utilizes a probe sonicator mounted on the stage of an inverted microscope to shear off the dorsal surface of cells and dislodge all soluble cellular contents and organelles (Figure 9; [Zagotta et al., 2016]). Cell unroofing leaves the ventral surface of cells intact as plasma membrane sheets attached to the coverslip for simple epifluorescence imaging. Cell unroofing also provides access to the intracellular surface of the membrane for application of transition metals and intracellular ligands. tmFRET measurements can then be made by recording the fluorescence from the unroofed cell before and after the application of Cu2+-TETAC or free transition metal.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/37248/elife-37248-fig9-v3.jpg)
+
+**Figure 9.:** (A) Diagram of the experimental setup used to unroof cells in a chamber on the microscope stage (left) with a cartoon of the unroofing process (right), as previously described (Zagotta et al., 2016). (B) An image of a field of unroofed HEK293T/17 cells transiently transfected with MBP-322TAG-CAAX and imaged with epifluorescence microscopy. The scale bar is 10 µm.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/37248/elife-37248-fig9-figsupp1-v3.jpg)
+
+**Figure 9—figure supplement 1.:** A bright field (left) and fluorescence image (center) of MBP-322TAG-CAAX is shown in intact cells, with the two-color merge shown at right. The scale bar is 10 µm.
 
 To validate and compare ACCuRET in unroofed cells, we made membrane-bound MBP constructs by adding a carboxy-terminal CAAX motif, which is then farnesylated in the cell (Farnsworth et al., 1989; Anderegg et al., 1988). These MBP-295TAG-CAAX and MBP-322TAG-CAAX constructs were each cotransfected into HEK293T/17 cells with pANAP and DN-eRF1 and incubated with L-Anap-ME in the medium, as described above. Both MBP-295Anap-CAAX and MBP-322Anap-CAAX expressed robustly and localized to the intracellular surface of the plasma membrane (Figure 9—figure supplement 1). Upon unroofing, the cells were no longer easily visible with bright field illumination. However, epifluorescence illumination showed plasma membrane sheets with relatively uniform L-Anap fluorescence (Figure 9) which were stable for >30 min (data not shown). Previously, we showed that these images look similar with total internal reflection fluorescence (TIRF) microscopy, confirming that most or all the fluorescence is from the plasma membrane (Zagotta et al., 2016). These results indicate that MBP-295Anap-CAAX and MBP-322Anap-CAAX proteins were stably associated with the membrane.
 
@@ -140,7 +168,7 @@ We compared tmFRET efficiencies measured with ACCuRET to those measured with Cu2
 
 From the FRET efficiencies, we calculated the distances between the donors and acceptors using the Förster equation as described above. Comparing our determination of distances from membrane-bound MBP to those predicted from the X-ray crystal structures of MBP (Figure 8) gives RMSD values of 2.9 Å for ACCuRET and 1.3 Å for tmFRET with standard HH sites, comparable to the values for MBP in solution. However, distances calculated from membrane-bound MBP-Anap constructs were systematically longer than those determined from MBP-Anap constructs in solution (see Discussion). Together, our data demonstrate that ACCuRET provides accurate determinations of distances and distance changes in both soluble proteins and membrane proteins.
 
-## Heterogeneity
+### Heterogeneity
 
 The Förster equation predicts a steep distance dependence for FRET efficiency (Figure 12A, black curve) and assumes that the donor and acceptor probes are a fixed distance apart (Figure 12B, black). However, the linkers between the probes and the protein backbone produce substantial heterogeneity and mobility of the probes that effect the measured FRET efficiency (Best et al., 2007; Schuler et al., 2005; Taraska et al., 2009b). This heterogeneity in distance, together with the nonlinear dependence of the FRET efficiency on distance, cause the distances closer to the R0 distance to be weighted more heavily. The distance dependence of FRET efficiency, therefore, becomes shallower than predicted by the Förster equation. Our approach to reduce this effect has been to minimize these linkers by using a fluorescent amino acid and minimal metal binding sites closely associate with the backbone (HH or TETAC). Still, we observed a small, systematic bias in our tmFRET measurements where the distances greater than R0 have somewhat greater FRET efficiency and the distances less than R0 have somewhat lower FRET efficiency than predicted by the Förster equation (Figure 12A). This manifests as an apparent shallowing of the distance dependence and an underestimation of the changes in distance with maltose.
 
@@ -166,7 +194,7 @@ The dearth of approaches for studying conformational dynamics of proteins in the
 
 ACCuRET mitigates a number of limitations that have hampered measurements of FRET efficiencies and calculations of absolute distances. Because ACCuRET measures L-Anap fluorescence in the absence and presence of the acceptor for both the apo and ligand-bound states, it accounts for any ligand-dependent changes in environment that would otherwise affect the calculation of FRET efficiency. Our measurements of the emission spectra of L-Anap incorporated at the two sites in MBP allowed us to use the R0 determined for each site in our calculations of distance. The difference in R0 between MBP-295Anap (17.7 Å) and MBP-322Anap (16.5 Å), however, was small and would not have substantially affected our estimates of distances or changes in distance. The difference in quantum yield between our two sites (MBP-295Anap:0.31 and MBP-322Anap:0.47) is larger than generally observed for the state-dependent changes in fluorescence at any given site, suggesting that state-dependent changes in R0 are not usually a concern.
 
-Experimental limitations that could compromise the accuracy of distance determinations include: a broad distance distribution between donor and acceptor; measuring distances (r) outside the range of ∼1.5R0 > r > R01.5 (Figure 12A); nonspecific labeling with the donor; incomplete labeling with the acceptor; and unexpected sources of background fluorescence. ACCuRET mostly overcomes these limitations. Using small probes with short linkers narrows the distance distribution, and FCG analysis improves distance determinations for distributed distances. The increase in absorption of Cu2+-TETAC, and the corresponding increase in R0 values, expands the utility of tmFRET over a broader distance range. Using amber codon suppression to introduce the donor substantially reduces nonspecific labeling with donor compared to using cysteine-reactive donors for labeling. Using a slight excess of Cu2+ with TETAC minimizes incomplete labeling with the acceptor. As discussed above, unexpected sources of background fluorescence appear to reduce the accuracy of distance measured for membrane-bound MBP, but this effect was small in our experiments.
+Experimental limitations that could compromise the accuracy of distance determinations include: a broad distance distribution between donor and acceptor; measuring distances (r) outside the range of $∼1.5R_{0} > r > \frac{R_{0}}{1.5}$ (Figure 12A); nonspecific labeling with the donor; incomplete labeling with the acceptor; and unexpected sources of background fluorescence. ACCuRET mostly overcomes these limitations. Using small probes with short linkers narrows the distance distribution, and FCG analysis improves distance determinations for distributed distances. The increase in absorption of Cu2+-TETAC, and the corresponding increase in R0 values, expands the utility of tmFRET over a broader distance range. Using amber codon suppression to introduce the donor substantially reduces nonspecific labeling with donor compared to using cysteine-reactive donors for labeling. Using a slight excess of Cu2+ with TETAC minimizes incomplete labeling with the acceptor. As discussed above, unexpected sources of background fluorescence appear to reduce the accuracy of distance measured for membrane-bound MBP, but this effect was small in our experiments.
 
 The distance dependence of FRET is, in practice, less steep than predicted by the Förster equation (Figure 12A). This is at least partly explained by the idealized assumption of the Förster equation that relative distances between donors and acceptors are homogeneous (Best et al., 2007; Schuler et al., 2005). In fact, proteins have been shown to exhibit significant heterogeneity (Frauenfelder et al., 1991), with distances between side-chains well described by normal distributions (Jeschke, 2012). Convolving the Förster equation with Gaussian distance distributions (FCS analysis) gives distance-dependence curves that are less steep than the Förster equation itself (Figure 12A). From DEER studies, the distribution of distances between Cu2+ ions bound to TETAC were well described by Gaussian distributions with FWHM values ranging from 6 to 9 Å (Cunningham et al., 2015). We used FCG analysis to convert FRET efficiencies to distances. These distances (Figure 8, asterisks calculated using FWHM = 8 Å) more closely match the donor-acceptor distances, as well as the maltose-induced distance changes, determined from the Cβ-Cβ values from X-ray crystal structures. Although we did not measure the distributions of donor-acceptor distance in our experiments, it seems clear that assuming a distribution of distances in the range found in the literature is a better assumption than assuming a fixed distance.
 
@@ -174,7 +202,45 @@ In summary, these experiments establish a new method called ACCuRET for measurin
 
 ## Materials and methods
 
-## Constructs, cell culture, and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T/17</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL-11268; RRID:CVCL_1926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pANAP</td>
+      <td>Addgene: DOI: 10.1021/ja4059553</td>
+      <td>Addgene: 48696;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DN-eRF1 (peRF1-E55D.pcDNA5-FRT)</td>
+      <td>Jason Chin: DOI: 10.1021/ja5069728</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Constructs, cell culture, and transfection
 
 All constructs were made in the pcDNA3.1 mammalian expression vector (Invitrogen, Carlsbad, CA), except as noted below. The amino acid sequence of MBP was based on the pMAL-c5x vector (New England Biolabs, Ipswich, MA), and was codon optimized for mammalian cell expression. To reduce the affinity of MBP for endogenous ligands and allow subsequent testing of maltose binding, we introduced a point mutation, W340A (Martineau et al., 1990), in all constructs. In addition, a FLAG epitope was added to the N-terminus of MBP. FLAG-MBP cDNA was synthesized by Bio Basic (Amherst, NY). The FLAG epitope is present in all constructs but is omitted from the construct names except in the discussion of western blot analysis. For membrane localization, the C-terminus of FLAG-MBP was fused to a CAAX domain with the following sequence: KMSKDGKKKKKKSKTKCVIM. The pAnap vector ([Chatterjee et al., 2013]; purchased from Addgene, Cambridge, MA) was used as previously described (Zagotta et al., 2016). The dominant negative eukaryotic release factor one construct (DN-eRF1) was kindly provided by Jason Chin (Cambridge, UK) and used in the provided pcDNATM5/FRT/TO vector (Schmied et al., 2014).
 
@@ -186,7 +252,7 @@ HEK293T/17 cells were plated in 6-well trays on glass coverslips treated with po
 
 For fluorometry or western blot experiments, cells were harvested approximately 24 hr after transfection. Cells were washed twice with PBS, and cell pellets, collected from 9 wells each, were stored at −20°C until use. For imaging experiments, the day after transfection, medium was removed from the wells and replaced with HEPES buffered Ringers (HBR) solution (in mM: NaCl 140; KCl 4; CaCl2 1.8; glucose 5; HEPES 10; pH 7.4). Cells were then placed on the bench top at room temperature for the remainder of the same day.
 
-## Protein purification and western blot analysis
+### Protein purification and western blot analysis
 
 For fluorometry experiments, between 1 and 4 frozen pellets were thawed and resuspended in 0.5–0.8 mL Stabilization Buffer Tris (SBT) (in mM: KCl 70; MgCl2 1; Trizma Base 30; pH 7.4) supplemented with cOmplete mini EDTA-free protease inhibitor cocktail (Sigma-Aldrich, St. Louis, MO). The suspension was sonicated using a Sonifier 450 with MicroTip (Branson, Danbury, CT) with settings of power = 4 and duty cycle = 50% for a total of 10 pulses. Lysed cells were then spun in a benchtop centrifuge at 13,000 rpm for 20 min at 4°C, and the cleared lysate was moved to a new tube.
 
@@ -194,7 +260,7 @@ Anti-FLAG M2 affinity gel (Sigma-Aldrich, St. Louis, MO) was prepared by rinsing
 
 For western blot analysis, 25 µL of lysis buffer per 10 mg cells were used to normalize the protein concentration for each experiment. Lysis buffer was made as follows: to 35 ml H2O, 185.7 mg triethanolamine, 876.6 mg NaCl, and 10 mL glycerol were added, then the pH was adjusted to 8.0 with NaOH. After bringing the volume up to 50 mL, 500 mg digitonin, 5 mM EDTA, and Halt protease inhibitor cocktail (ThermoFisher Scientific, Waltham, MA) were added. Cleared cell lysates were then were run on NuPage 10% bis-tris gels (ThermoFisher Scientific, Waltham, MA) with MOPS SDS running buffer (50 mM MOPS, 50 mM Tris, 3.5 mM SDS and 1 mM EDTA). Proteins were transferred to PVDF membranes using a BioRad Transblot SD (Hercules, CA) transfer cell with Bjerrum/Schafer-Nielsen transfer buffer with SDS (Bjerrum and Schafer-Nielsen, 1986). Membranes were blocked in 5% Milkman Instant Low Fat Dry Milk (Marron Foods, Harrison, NY) in TBS-T (20 mM Tris, 137 mM NaCl, 0.1% Tween20, pH 7.6) for either 1 hr at room temperature or overnight at 4°C. Anti-FLAG primary antibody (Sigma-Aldrich Cat F3165, St. Louis, MO) was used at a dilution of 1:20,000 and secondary antibody (Amersham Cat NA931, Pittsburgh, PA) HRP-linked anti mouse IgG was used at 1:30,000 dilution in TBS-T. Secondary antibodies were visualized with Super Signal West Femto Substrate (ThermoFisher, Waltham, MA) and imaged with a Proteinsimple gel imager (San Jose, CA). Densitometry was performed using ImageJ (Schneider et al., 2012). Regions of interest were drawn around each band and paired with adjacent background regions of the same size. The mean gray value within each background region was subtracted from the mean gray value within its corresponding band. We attempted to achieve similar intensities for wild-type and L-Anap incorporating MBP by loading different amounts of lysate for the different constructs. In all cases, the dilution of samples was taking into account after densitometry to allow comparisons to be made among lanes.
 
-## Fluorometry and spectrophotometry
+### Fluorometry and spectrophotometry
 
 Starna (Atascadero, CA) sub-micro fluorometer cells (100 µL) were used for both fluorometry and spectrophotometry. Fluorometry experiments were performed using a Jobin Yvon Horiba FluoroMax-3 spectrofluorometer (Edison, NJ). For emission spectra of L-Anap, we used an excitation wavelength of 370 nm and 5 nm slits for excitation and emission, except for experiments to measure quantum yield in which 1 nm slits were used. For time course measurements, we excited samples at 370 nm and recorded the emission at 480 nm every 10 s using anti-photobleaching mode of the instrument. Reagents (transition metals, Cu2+-TETAC, and DTT) were added manually as 100x stocks during the interval between measurements by pipetting up and down in the cuvette without removing it from the instrument.
 
@@ -202,7 +268,7 @@ Protein samples were diluted 1:10 to 1:200 in SBT to keep the fluorescence inten
 
 Absorption measurements were made using a Beckman Coulter DU 800 (Brea, CA). To measure the absorption of Cu2+ and Co2+ bound to HH, we used an α-helical peptide with the following sequence: Ac-ACAAKHAAKHAAAAKA-NH2, which was custom synthesized by Sigma-Aldrich (St. Louis, MO) (Taraska et al., 2009b). The peptide was dissolved in SBT to a final concentration of 1 mM. N-ethyl maleimide was prepared as a 200 mM stock in DMSO and added to the peptide solution at a final concentration of 2 mM to prevent the peptide from precipitating upon addition of Cu2+. To determine the extinction coefficient of Cu2+-TETAC, we measured the absorption spectrum of 2 mM Cu2+-cyclen.
 
-## Calculation of quantum yield
+### Calculation of quantum yield
 
 Because the emission spectrum of L-Anap is sensitive to its environment, we measured the emission spectrum and quantum yield for L-Anap incorporated into each of our two sites in MBP. The emission spectrum of MBP-322Anap was blue shifted relative to that of MBP-295Anap by about 20 nm, suggesting that the L-Anap in MBP-322 is in a somewhat more hydrophobic environment (Figure 13A). To measure the quantum yield for each L-Anap position in MBP, we identified a solvent condition for free L-Anap that would mimic the environment of the fluorophores at each of the two sites. We measured the emission spectra of free L-Anap in SBT/ethanol mixtures that ranged from 0% to 100% ethanol. As shown in Figure 13B, both the peak wavelength and amplitude of the emission spectra were sensitive to ethanol. We found that the emission spectrum of MBP-295TAG matched most closely to the emissions spectrum of free L-Anap in 20% ethanol (Figure 13A, red), whereas the emission spectrum of MBP-322Anap matched most closely to free L-Anap in 85% ethanol (Figure 13A, blue).
 
@@ -210,28 +276,58 @@ Because the emission spectrum of L-Anap is sensitive to its environment, we meas
 
 **Figure 13.:** (A) Normalized emission spectra of MBP-295Anap (red line) and MBP-322Anap (blue line) showing the emission of Anap at 322 is blue shifted relative to that of Anap at 295. Also shown are the normalized emission spectra of free L-Anap in 20% ethanol (dashed red line), closely matching Anap at 295, and 85% ethanol (dashed blue line), closely matching Anap at 322. (B) Emission spectra of free L-Anap in different ethanol concentrations showing the environmental sensitivity of L-Anap. Over this range, as the environment becomes more hydrophobic, the peak fluorescence becomes larger and blue shifted. (C) Plot of fluorescence intensity versus absorption of free L-Anap in different ethanol concentrations. The quantum yield, calculated using the slope of these plots, increases with increasing ethanol concentration. The quantum yield of free L-Anap in 20% and 85% ethanol were used to estimate the quantum yield of Anap incorporate at the 295 and 322 sites, respectively.
 
-Next, we measure the quantum yield of L-Anap in the different SBT/ethanol mixtures. Samples of L-Anap were prepared in SBT, 20% ethanol in SBT, 85% ethanol in SBT, and 100% ethanol. The fluorescence intensity (excitation at 370 nm and emission at 480 nm) and absorption (at 370 nm) of each sample were measured as described above and plotted against each other in Figure 13C. The quantum yield of L-ANAP in each of the mixtures was calculated relative to the reference quantum yield of L-ANAP in ethanol (0.48) (Chatterjee et al., 2013) using the following equation (31):QM=QEtOHslopeMslopeEtOHηM2ηEtOH2where Q is the quantum yield of L-Anap, slope refers to the slope of the linear fits to the data, and η is the refractive index. Quantum yield values were 0.23, 0.31, and 0.47 for 0%, 20%, and 85% ethanol, respectively. We therefore estimated the quantum yield for MBP-295Anap of 0.31 and for MBP-322Anap of 0.47. These estimates assume that EtOH:SBT mixtures mimic the L-Anap environment in MBP and that there are no endogenous quenchers within MBP.
+Next, we measure the quantum yield of L-Anap in the different SBT/ethanol mixtures. Samples of L-Anap were prepared in SBT, 20% ethanol in SBT, 85% ethanol in SBT, and 100% ethanol. The fluorescence intensity (excitation at 370 nm and emission at 480 nm) and absorption (at 370 nm) of each sample were measured as described above and plotted against each other in Figure 13C. The quantum yield of L-ANAP in each of the mixtures was calculated relative to the reference quantum yield of L-ANAP in ethanol (0.48) (Chatterjee et al., 2013) using the following equation (31):
 
-## FRET efficiency analysis
+$$
+Q_{M}=Q_{EtOH}\frac{slope_{M}}{slope_{EtOH}}\frac{η_{M}^{2}}{η_{EtOH}^{2}}
+$$
 
-For each time course experiment in the fluorometer, an averaged background trace from six to eight experiments that did not contain protein, but to which Cu2+-TETAC and DTT, or Cu2+ and EDTA, were added, was subtracted from the protein-containing trace. The fraction of fluorescence quenching (F) was defined as follows:F=Fluoresence with metalFluorescence without metal
+where Q is the quantum yield of L-Anap, slope refers to the slope of the linear fits to the data, and η is the refractive index. Quantum yield values were 0.23, 0.31, and 0.47 for 0%, 20%, and 85% ethanol, respectively. We therefore estimated the quantum yield for MBP-295Anap of 0.31 and for MBP-322Anap of 0.47. These estimates assume that EtOH:SBT mixtures mimic the L-Anap environment in MBP and that there are no endogenous quenchers within MBP.
 
-To determine the FRET efficiency, E, we corrected for other sources of energy transfer (e.g. solution quenching) using the following equations:E=1−11+1FCys−1Fno CysorE=1−11+1FHH−1Fno HH,where FCys and Fno Cys are the fractional quenching by Cu2+-TETAC in protein with and without cysteines respectively, and FHH and Fno HH are the fraction of quenching by Cu2+ in protein with and without HH sites, respectively. We also analyzed our data using simplified equations, which would account for nonspecific decreases in fluorescence (e.g. bleaching or loss of protein) but not energy transfer:E=1−FCysFno CysorE=1−FHHFno HH.
+### FRET efficiency analysis
+
+For each time course experiment in the fluorometer, an averaged background trace from six to eight experiments that did not contain protein, but to which Cu2+-TETAC and DTT, or Cu2+ and EDTA, were added, was subtracted from the protein-containing trace. The fraction of fluorescence quenching (F) was defined as follows:
+
+$$
+F=\frac{Fluoresence with metal}{Fluorescence without metal}
+$$
+
+To determine the FRET efficiency, E, we corrected for other sources of energy transfer (e.g. solution quenching) using the following equations:
+
+$$
+E=1−\frac{1}{1+\frac{1}{F_{Cys}}−\frac{1}{F_{no Cys}}}orE=1−\frac{1}{1+\frac{1}{F_{HH}}−\frac{1}{F_{no HH}}},
+$$
+
+where FCys and Fno Cys are the fractional quenching by Cu2+-TETAC in protein with and without cysteines respectively, and FHH and Fno HH are the fraction of quenching by Cu2+ in protein with and without HH sites, respectively. We also analyzed our data using simplified equations, which would account for nonspecific decreases in fluorescence (e.g. bleaching or loss of protein) but not energy transfer:
+
+$$
+E=1−\frac{F_{Cys}}{F_{no Cys}}orE=1−\frac{F_{HH}}{F_{no HH}}.
+$$
 
 The values of E produced by the two analysis methods were similar because of the low degree of background quenching. For clarity, only the results of analysis with the latter equations are shown. To calculate the mean and standard error of the mean for E, we used the mean and standard error of the mean for our F measurements (i.e. FHH, FNo HH, FCys, and FNo Cys) in Monte Carlo resampling (1 × 106 cycles; NIST Uncertainty Machine v1.3.4; [Lafarge and Possolo, 2015]).
 
-## Imaging and unroofing
+### Imaging and unroofing
 
 Cells were imaged and unroofed as previously described (Gordon et al., 2016; Zagotta et al., 2016). Briefly, coverslips were mounted in a homemade chamber on a microscope stage and perfused for several minutes with HBR via gravity-flow perfusion. Poly-lysine solution (0.1 mg/mL 30,000–70,000 MW in PBS) was then added to the chamber and the cells were incubated for 15 s. A 1:3 dilution of SBT was then added to the chamber, and the cells were incubated for 30 s. The solution was then replaced with SBT and the cells immediately exposed to a single pulse from a Branson Sonifier 450 with MicroTip with power = 2 and duty cycle = 50%. Unroofed cells were then perfused with SBT for at least 2 min to remove debris from the chamber before images were collected.
 
 Experiments were performed using a Nikon Ti-E inverted microscope (Melville, NY) and a Nikon CFI Apo TIRF 60x oil immersion objective. Excitation light was provided by a Xenon arc lamp (model Lambda LS, Sutter Instrument Co., Novato, CA). For L-Anap excitation we used a 375/28 nm excitation filter and a 480/50 nm emission filter. Each experiment commenced with a pre-bleaching step, comprised of a 7-s exposure of the coverslip to L-Anap excitation light. Pre-bleaching has been previously shown to reduce small, non-specific L-Anap dependent background fluorescence (Gordon et al., 2016). Images for analysis were collected using exposures ranging from 100 ms to 500 ms, depending on sample intensity, using a QuantEM EMCCD camera (Photometrics, Tuscon, AZ) with readout speed of 5 MHz and the multiplier set to 20. The illumination and camera settings were the same for all fluorescence images acquired for a given field of view. Different metal concentrations and EDTA were applied via gravity perfusion. Cu2+-TETAC and DTT were applied directly to the chamber via a transfer pipette. Five times the chamber volume was added in each case to ensure complete changeover of the solution.
 
-## Image analysis
+### Image analysis
 
 Images were imported into ImageJ (Schneider et al., 2012) for analysis. Regions of interest were drawn by hand to include most of a given cell, but excluding any regions that appeared only partially unroofed, which tended to occur at the cell edges. For each cell, a background region was selected nearby that did not contain cells. The mean gray value of the background region of interest was subtracted from the mean gray value of the region of interest of the corresponding cell. This background subtraction was repeated for each image collected in an experiment using the same regions of interest. The mean and standard error of the mean for the FRET efficiency were calculated as described above.
 
-## Distance calculations
+### Distance calculations
 
-The R0 values for each L-Anap site paired with each type of bound metal (i.e. Cu2+ or Cu2+-TETAC) were calculated using the measured emission spectrum and quantum yield of L-Anap at each site and the measured absorption spectra for each type of bound metal using the following equation (Lakowicz, 2006):R0=C(JQη−4κ2)6where C is a scaling factor, J is the normalized spectral overlap of the emission of the donor and absorption of the acceptor, Q is the quantum yield of L-Anap at the given site (see above), η is the index of refraction (1.33 in our case), and κ2 is the orientation factor, assumed to be 2/3, a reasonable assumption for an isotropic acceptor (15). Distances were calculated from the FRET measurements using the Förster equation:r=R01E−16
+The R0 values for each L-Anap site paired with each type of bound metal (i.e. Cu2+ or Cu2+-TETAC) were calculated using the measured emission spectrum and quantum yield of L-Anap at each site and the measured absorption spectra for each type of bound metal using the following equation (Lakowicz, 2006):
+
+$$
+R_{0}=C\sqrt[6]{(JQη^{−4}κ^{2})}
+$$
+
+where C is a scaling factor, J is the normalized spectral overlap of the emission of the donor and absorption of the acceptor, Q is the quantum yield of L-Anap at the given site (see above), η is the index of refraction (1.33 in our case), and κ2 is the orientation factor, assumed to be 2/3, a reasonable assumption for an isotropic acceptor (15). Distances were calculated from the FRET measurements using the Förster equation:
+
+$$
+r=R_{0}\sqrt[6]{\frac{1}{E}−1}
+$$
 
 FRET efficiencies assuming a Gaussian distribution of distances between donor and acceptor, with FWHM = 8 Å (i.e. σ=3.4) were determined by numerically convolving the Förster equation with the Gaussian function in Microsoft (Redmond, WA) Excel 2016. The corrected distances were then determined from plots of the FRET efficiency vs. the mean distance of the Gaussian distribution.

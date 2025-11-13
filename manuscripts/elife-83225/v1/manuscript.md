@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00cvxb145 Department of Physiology and Biophysics, University of Washington Seattle United States
-2. https://ror.org/00t9vx427 Department of Biophysics, UT Southwestern Medical Center Dallas United States
-3. https://ror.org/00t9vx427 Department of Biochemistry, UT Southwestern Medical Center Dallas United States
-4. https://ror.org/00cvxb145 Department of Biochemistry, University of Washington Seattle United States
+1. Department of Physiology and Biophysics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+2. Department of Biophysics, UT Southwestern Medical Center Dallas United States ([ROR:00t9vx427](https://ror.org/00t9vx427))
+3. Department of Biochemistry, UT Southwestern Medical Center Dallas United States ([ROR:00t9vx427](https://ror.org/00t9vx427))
+4. Department of Biochemistry, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -34,13 +34,25 @@ Previously, we developed an assay for measuring forces and displacements generat
 
 ## Results
 
-## Measuring outward curling of protofilaments from bovine brain microtubules
+### Measuring outward curling of protofilaments from bovine brain microtubules
 
 We previously measured the mechanical and energetic properties of protofilaments as they curled outward from recombinant yeast-tubulin microtubules (Driver et al., 2017). In our wave assay, a laser trap applies force against the curling protofilaments, via beads tethered to the microtubule lattice through a single His6 tag on the C-terminus of β-tubulin (Johnson et al., 2011). Linkage through a single β-tubulin C-terminal tail creates a strong, flexible tether approximately 36 nm in length, which probably helps to avoid interference between the tethered bead and the curling protofilaments (Driver et al., 2017). To extend our approach to untagged mammalian brain tubulin, we modified the assay by introducing anti-His beads pre-decorated sparsely with the recombinant His6-tagged yeast tubulin into chambers containing coverslip-anchored microtubules growing from free bovine brain tubulin. The decoration density of yeast tubulin on the beads was kept very low, around one tubulin per bead, by limiting the amount of anti-His antibody on the beads (see Materials and methods). The bead-linked yeast tubulin was incorporated into the assembling bovine microtubules, resulting in beads tethered to the sides of the filaments (Murray et al., 2022; Figure 1a). As in our previous work (Driver et al., 2017), the low density of antibody on the beads ensured that most beads were tethered by a single antibody. Continuous tension, directed toward the plus end, was applied to a microtubule-tethered bead using feedback control. The tension pressed the bead against the microtubule lattice at a secondary contact point and suppressed Brownian motion, which facilitated tracking the bead with high spatiotemporal resolution. The microtubule plus end was then severed with laser scissors to induce disassembly (Franck et al., 2010). As the disassembling tip passed the secondary contact point, protofilament curls pushed laterally on the bead, causing it to rotate about its tether. This rotation produced a brief (100–400 ms) pulse of bead movement against the force of the laser trap, which was followed by bead detachment after further disassembly released the tether (Figure 1b). The pulses were parameterized by their amplitude relative to the baseline bead position (Figure 1—figure supplement 1), which is directly related to the lateral height that the protofilament curls project from the surface of the microtubule lattice (Figure 1—figure supplement 2) (Driver et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic of the wave assay: a bead is tethered to the microtubule lattice via an engineered tether composed of recombinant His6-tagged yeast tubulin, a biotinylated anti-penta-His antibody, and streptavidin. Tethering by a single anti-penta-His antibody is ensured by keeping the density of antibodies on the beads very low. Using a laser trap, the bead is tensioned toward the (+)-end, pressing it against the microtubule lattice at a secondary contact point. The stabilizing GTP cap is trimmed off the microtubule with laser scissors to initiate disassembly. Curling protofilaments at the disassembling microtubule tip form a conformational wave that pushes laterally on the bead, causing it to rock back about its tether. This rocking action produces a pulse of bead movement against the force of the laser trap. (b) Records of force (black) and bead position (red) versus time for three different bead-microtubule pairs. As the trapping force on the bead was increased, pulse heights decreased, consistent with spring-like behavior of the protofilament curls.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Example record of bead position and trapping force versus time, measured during disassembly of a bovine brain tubulin microtubule in 1 mM magnesium. The bead position trace (red, top graph) prior to the pulse is characterized by a baseline noise. The pulse is parameterized by a risetime, the duration over which the signal increases from the baseline to the pulse peak. The height of the pulse from the baseline is defined as the pulse amplitude. After the pulse, the bead detaches from the microtubule, and the trap pulls the bead rapidly in the direction of applied force. Corresponding force trace (black, bottom graph) shows that the force is clamped (maintained at a steady level) until bead detachment.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Leverage given geometric constraints of bead and tether. Protofilament curl height, h, is amplified to a larger horizontal distance, a. (b) Relationship between pulse amplitude and curl height from the lattice given three different tether lengths (t=25, 36, and 50 nm). Based on the composition of the tether, we estimate a length of t=36 nm.
+
 At 2 pN of trapping force, 59% of disassembly events yielded measurable pulses, with a mean amplitude of 19.2±2.7 nm. At higher forces, pulse amplitudes became smaller (Figure 1b), consistent with spring-like elasticity of the curling protofilaments, as we previously observed for yeast tubulin protofilament curls (Driver et al., 2017). Pulse amplitudes generated by bovine microtubules were smaller than those we measured previously from yeast microtubules at identical force levels (e.g. 19.2±2.7 vs 51±7 nm on average at 2 pN) (Driver et al., 2017). This observation suggests that bovine protofilament curls might be shorter than yeast curls, consistent with reports that disassembly products released from mammalian brain microtubules are shorter than their yeast-derived counterparts (Howes et al., 2018). Nevertheless, our findings confirm that pulses from bovine microtubules can be reliably measured using our modified wave assay.
 
-## Adding magnesium enlarges the pulses generated by curling protofilaments
+### Adding magnesium enlarges the pulses generated by curling protofilaments
 
 Divalent cations have long been known to affect tubulin self-association (Nogales et al., 1995; Olmsted and Borisy, 1975; Weisenberg, 1972) and influence microtubule dynamics (Rosenfeld et al., 1976; Weisenberg, 1972). These effects occur partly through interactions of magnesium ions with the unstructured C-terminal tails of tubulin (Fees and Moore, 2018; Serrano et al., 1984b) and with the exchangeable and non-exchangeable nucleotide binding sites (Lee and Timasheff, 1975). Early cryo-electron microscopy of disassembling microtubules showed that magnesium lengthens protofilament curls at disassembling tips (Mandelkow et al., 1991). Based on these prior observations, we predicted that pulses recorded in our wave assay might become larger and more energetic with added magnesium.
 
@@ -48,17 +60,53 @@ As previously observed (Fees and Moore, 2018), we found that adding magnesium ac
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig2-v1.jpg)
 
-**Figure 2.:** (a) Time-lapse differential interference contrast images of individual microtubules disassembling in the presence of 1 or 12 mM magnesium. Arrowheads (red) indicate locations of disassembling tips. (b) Mean disassembly speed plotted against magnesium concentration. Error bars represent 95% confidence intervals, defined as ± (t∙SEM), where t is drawn from Student’s t-distribution (with ν=N – 1 degrees of freedom and N=34–51 samples per mean). (c) Records of force (black) and bead position (red) versus time for four bead-microtubule pairs, at two different magnesium concentrations. Pulse amplitudes were larger at the higher magnesium level. (d) Mean pulse amplitudes across four different magnesium concentrations, 1, 6, 12, and 20 mM. Error bars represent 95% confidence intervals (defined as in (b), with ν=N – 1 degrees of freedom and N=25–40 samples per mean). Data in (c) and (d) were collected at 2 pN trap force.Figure 2—source data 1.These source data are provided in an excel spreadsheet.
+**Figure 2.:** (a) Time-lapse differential interference contrast images of individual microtubules disassembling in the presence of 1 or 12 mM magnesium. Arrowheads (red) indicate locations of disassembling tips. (b) Mean disassembly speed plotted against magnesium concentration. Error bars represent 95% confidence intervals, defined as ± (t∙SEM), where t is drawn from Student’s t-distribution (with ν=N – 1 degrees of freedom and N=34–51 samples per mean). (c) Records of force (black) and bead position (red) versus time for four bead-microtubule pairs, at two different magnesium concentrations. Pulse amplitudes were larger at the higher magnesium level. (d) Mean pulse amplitudes across four different magnesium concentrations, 1, 6, 12, and 20 mM. Error bars represent 95% confidence intervals (defined as in (b), with ν=N – 1 degrees of freedom and N=25–40 samples per mean). Data in (c) and (d) were collected at 2 pN trap force.
 
-## Adding magnesium increases work output from protofilament curls
+### Adding magnesium increases work output from protofilament curls
 
 To determine whether adding magnesium affects the mechanochemical work output from curling protofilaments, we measured pulse amplitudes across a variety of trapping forces and magnesium concentrations (Figure 3 and Figure 3—figure supplement 1). Measuring pulse amplitude as a function of force enables estimation of the total capacity for mechanical work output in the assay, which is given by the area under the amplitude vs force curve (Figure 3a; Driver et al., 2017). Based on a line fit to the data, we estimated work output from the bovine brain microtubules in 1 mM magnesium at 107±69 pN·nm (Figure 3b). Adding magnesium increased the work output monotonically, raising it to 177±0.1 pN·nm at 20 mM magnesium (Figure 3b). This magnesium-induced increase was mainly due to enlargement of the pulses measured at low trapping force; extrapolating the line fits to zero force suggested that the unloaded pulse amplitude (i.e. the amplitude that would be measured in the absence of opposing trap force) increased 57% from 23.3±0.9 nm at 1 mM magnesium to 36.6±0.1 nm at 20 mM magnesium (Figure 3c). By contrast, extrapolating the linear fits to higher forces suggested relatively little change in the maximum force at which the pulses were completely suppressed (~9 pN) (Figure 3a). Altogether, these observations show that magnesium increases mechanical work output from curling protofilaments while also increasing the lateral height that they project from the microtubule wall.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig3-v1.jpg)
+
+**Figure 3.:** (a) Mean pulse amplitudes (black squares) plotted against trapping force at the four indicated magnesium concentrations. Error bars represent 95% confidence intervals, defined as ± (t∙SEM), where t is drawn from Student’s t-distribution (with ν=N – 1 degrees of freedom and N=9–43 samples per mean). The capacity of protofilament curls to perform mechanical work in the assay was estimated at each magnesium concentration by fitting the amplitude versus force data with a line and then calculating the area under the line (colored triangular areas). To estimate unloaded pulse amplitudes, the line-fits were extrapolated to the y-intercept (open circles). (b) Mechanical work output, based on the colored areas shown in (a), plotted against magnesium concentration. Error bars represent 95% confidence intervals (estimated from the best-fit parameters, as explained in Materials and methods). (c) Unloaded amplitudes, based on extrapolation of the line-fits in (a), plotted versus magnesium concentration. Error bars represent 95% confidence intervals (estimated as explained in Materials and methods).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Cumulative distributions of pulse amplitude grouped together according to the trapping forces at which they were measured. Magnesium concentrations are denoted by color as indicated. (b) Cumulative distributions of pulse amplitude grouped together according to the magnesium concentrations at which they were measured. Trapping forces are denoted by color as indicated.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The table provides p-values for all possible comparisons of the work outputs estimated at 1, 6, 12, and 20 mM magnesium (i.e. the four work outputs plotted in Figure 3b), calculated based on Student’s t-distribution.
+
 Notably, the mechanical work output from bovine microtubules was about threefold less than we measured previously from microtubules composed entirely of recombinant yeast tubulin under similar conditions (~300 pN·nm at 1 mM magnesium) (Driver et al., 2017). This difference, like magnesium-dependent differences, could reflect altered contour lengths, bending stiffnesses, average curvatures, numbers of curling protofilaments pushing on the beads, or a combination thereof.
 
-## Curl elongation alone explains the magnesium-dependent increase in work output
+### Curl elongation alone explains the magnesium-dependent increase in work output
 
 To develop a deeper understanding of how magnesium increases the mechanical work output from curling protofilaments, we created a simple model of protofilament bending. The model relates structural aspects of protofilament curls, such as their relaxed curvature and the average number of dimers they contain, together with an estimate of their flexural rigidity, to predict the force-deflection behavior of a group of curls projecting radially outward from a microtubule tip. In real protofilaments, elastic bending energy can be distributed throughout the α- and β-tubulin core structures, as well as at both the inter- and intra-dimer interfaces. Rather than modeling this complexity, we placed all the compliance of the model into single bending springs located at the inter-dimer interfaces (Figure 4a). This simplification was important for our analyses, because it allowed data-fitting to provide good constraints on the model parameter values. (A model with more parameters would fit the data just as well or better but would not allow meaningful estimation of parameter values, due to degeneracy.) And while our model cannot address in detail how strain might be distributed across the inter- and intra-dimer interfaces (nor across the α- and β-tubulin core structures), it can describe the overall force-deflection behavior of protofilament curls, and it provides a simple way to estimate stored strain per dimer. In essence, our model convolves all the potential contributions to elastic bending strain together into a single element (an inter-dimer spring) that provides an effective flexural rigidity per dimer.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig4-v1.jpg)
+
+**Figure 4.:** (a) Model for bending of a single protofilament. Tubulin dimers are represented as rigid rods linked by Hookean torsion springs with relaxed angles of 23°. An external force, F, perpendicular to the microtubule long-axis, is applied at the protofilament tip. The balance between F and the torsion at each bending node, τn, is used to calculate the contour shape of the protofilament (i.e. the angles θn). (b) Calculated shapes for a single protofilament at different levels of external force (indicated by the color legend). Model for deflection of multiple protofilaments at a microtubule tip, seen end-on. Single protofilaments, modeled as in (a), are arranged radially according to the geometry of a 13-protofilament microtubule. The bead is modeled as a flat rigid surface, pushed downward onto the protofilaments to predict a force-deflection relationship. Cartoon at right shows distribution of protofilament deflections for an arbitrary bead height. (c) Amplitude versus force curves predicted by the multi-protofilament model, after fitting to measured pulse data (symbols) at indicated magnesium concentrations. Bovine data are recopied from Figure 3a. Yeast data combine new measurements with data previously published in Driver et al., 2017. (d) Two fitted parameters, the mean contour length and bending stiffness (flexural rigidity) of protofilament curls, plotted versus magnesium concentration. The fitted contour length increases with added magnesium and is larger for yeast microtubules, while the apparent flexural rigidity remains unchanged.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Model solutions for protofilament contour lengths of 2–5 segments, under a range of forces. Color indicates magnitude of force. (b) Deflection of the protofilament tip as a function of force for protofilaments of 2–5 segments. (c) Deflection of the tip for protofilaments 2 and 4 segments in length, with the stiffness per dimer varied twofold and fourfold above that used in Figure 4. (d) Deflection of the tip for protofilaments 2 and 4 segments in length, with the relaxed dimer angle varied across 10, 15, 23, and 30°.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Cropped two-dimensional cryo-electron microscopy micrographs from Mandelkow et al., 1991, showing curling protofilaments used to estimate curvature for various levels of magnesium. (b) Plot relating quantifications of curvatures from images shown in (a), estimated by measuring the diameter of the curl. Curvature per dimer is plotted for two different magnesium concentrations.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Protofilament tip deflection versus force for a single protofilament, with 1–5 segments. (b) Bead height versus force for a multi-protofilament model with protofilaments arranged in a 13-protofilament configuration, oriented such that two protofilaments initially contact the bead simultaneously. (c) Bead height versus force for a multi-protofilament model with the same arrangement of protofilaments as in (b) but rotated such that a single protofilament establishes bead contact first.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Yeast tubulin disassembles fourfold faster than bovine tubulin in the presence of 1 mM magnesium. Points are means. Error bars represent 95% confidence interval for the mean (based on Student’s t-distribution).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (a) Table of p-values for all possible comparisons of protofilament curl contour lengths estimated for bovine microtubules at 1, 6, 12, and 20 mM magnesium and for yeast microtubules at 1 mM magnesium (i.e. the five contour lengths plotted in the left graph of Figure 4d). (b) Table of p-values for all possible comparisons of protofilament bending stiffness estimated for bovine microtubules at 1, 6, 12, and 20 mM magnesium and for yeast microtubules at 1 mM magnesium (i.e. the five bending stiffnesses plotted in the right graph of Figure 4d). All p-values were calculated based on Student’s t-distribution.
 
 Contour shapes for the individual protofilaments were solved by balancing the external force applied at their tips with the opposing bending spring torques at each inter-dimer node (Figure 4b, left). To model the force-deflection behavior of a group of protofilaments, single protofilaments were arranged radially, according to a 13-protofilament geometry (Figure 4b, right) (Amos and Klug, 1974). The bead was modeled as a rigid, flat surface since its curvature is negligible compared to that of the microtubule tip. Prior cryo-electron tomography studies of disassembling microtubules found almost all the variation in protofilament shape to occur in the radial direction (i.e. within a plane coincident with both the relaxed contour and the long axis of the microtubule) (McIntosh et al., 2018). Therefore, protofilament bending in our model was limited to the radial direction. Given these assumptions, deflection of individual protofilaments varied according to their orientation relative to the bead surface (Figure 4b, right). A detailed analysis of changes in the force-deflection profile that occur with respect to changes in the average curvature, average dimers per curl, and flexural rigidity is shown in the supplemental material (Figure 4—figure supplement 1).
 
@@ -66,11 +114,11 @@ To fit the behavior of this multi-protofilament model to the measured pulse ampl
 
 The fitted contour lengths of protofilaments increased monotonically with added magnesium, from 2.3±0.5 dimers at 1 mM magnesium to 3.2±0.2 dimers at 20 mM. However, the fitted bending stiffness per dimer, 176±15 pN∙nm∙rad–1, did not appreciably change with added magnesium (Figure 4d). These results suggest that magnesium increases pulse amplitude and work output by lengthening the protofilament curls, without eliciting any change in their intrinsic stiffness or curvature.
 
-## Curl elongation alone explains the larger pulses from yeast microtubules
+### Curl elongation alone explains the larger pulses from yeast microtubules
 
 To understand why yeast microtubules generated larger, more energetic pulses relative to bovine microtubules, we fit our multi-protofilament model to the amplitude versus force data measured from microtubules composed entirely of recombinant yeast tubulin (Figure 4c). As in our analysis of the bovine microtubule data, we allowed both the curl contour length and the stiffness of the bending springs to vary while keeping the relaxed angle per dimer fixed at 23°, consistent with cryo-electron tomograms of kinetochore microtubules in yeast (McIntosh et al., 2018). The contour length that best fit the yeast data, 4.4±0.5 dimers per curl, was 1.9-fold higher than the contour length inferred at identical magnesium concentration (1 mM) from the bovine data, 2.3±0.5 dimers per curl (Figure 4d). The bending stiffness per dimer that best fit the yeast data, 206±44 pN∙nm∙rad–1, was statistically indistinguishable from that inferred from the bovine data (Figure 4d). These observations suggest that protofilament curls at yeast microtubule tips are longer but have the same intrinsic mechanical rigidity as the curls at bovine microtubule tips.
 
-## Removing the β-tubulin tail suppresses magnesium’s enhancement of disassembly speed but not of pulse amplitude
+### Removing the β-tubulin tail suppresses magnesium’s enhancement of disassembly speed but not of pulse amplitude
 
 Prior studies have suggested that longer protofilament curls might arise simply as a consequence of faster disassembly speeds (Tran et al., 1997). Consistent with this view, when we increased magnesium from 1 to 20 mM, we observed a threefold increase in disassembly speed (Figure 2b) concomitant with a 1.6-fold increase in pulse amplitude (Figures 2d and 4c). Likewise, yeast microtubules disassembled fourfold faster than bovine microtubules at 1 mM magnesium (Figure 4—figure supplement 4) and generated threefold larger pulses (Figure 4c). Faster disassembly speeds imply that GDP-tubulins lose their lateral bonds more quickly, which equivalently can be viewed as an accelerated rate of growth of the protofilament curls at disassembling tips. However, curl size is dictated not only by curl growth but also by curl breakage; the mean steady state curl length will depend on a kinetic balance between the rates of curling and breakage (Tran et al., 1997) . In principle, both these rates could vary in a magnesium-dependent manner. To distinguish the potential influence of magnesium on curl breakage from its obvious effect on disassembly speed (and therefore on curl growth rate), we sought a method to slow bovine microtubule disassembly at elevated levels of magnesium. A recent discovery pointed to one such method. Fees and Moore found that removing the β-tubulin C-terminal tail, by treating microtubules with the protease subtilisin, suppresses the effect of magnesium on disassembly speed (Fees and Moore, 2018). Thus, at high magnesium concentration, subtilisin-treated microtubules disassemble much more slowly than untreated microtubules. If magnesium lengthens protofilament curls solely because it accelerates disassembly, then subtilisin treatment should suppress the magnesium-dependent enlargement of pulses in the wave assay.
 
@@ -78,82 +126,192 @@ Contrary to this prediction, however, subtilisin treatment did not reduce pulse 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/83225/elife-83225-fig5-v1.jpg)
 
-**Figure 5.:** (a) Proteolytic products of tubulin treated with subtilisin for the indicated times (in minutes), before quenching with 1 mM phenylmethylsulfonyl fluoride, visualized by Coomassie staining (top image) or Western blotting (bottom image). αTub DM1A:FITC mouse conjugate 1:1000 and βTub CST 9F3 rabbit 1:1000 were used for primary antibody staining. (b) Mean disassembly speeds, measured after treatment of tubulin with subtilisin for the indicated durations and plotted versus magnesium concentration. The large magnesium-dependent acceleration of disassembly seen with untreated tubulin (orange symbols) was suppressed after 10–20 min subtilisin treatment (dark red symbols). Error bars represent 95% confidence intervals, defined as ± (t∙SEM), where t is drawn from Student’s t-distribution (with ν=N – 1 degrees of freedom and N=5–51 samples per mean). Data for untreated tubulin are recopied from Figure 2b. (c) Pulse amplitudes, measured in the wave assay at 2 pN trapping force after treatment of tubulin with subtilisin, plotted versus magnesium concentration. Symbol colors indicate subtilisin treatment times according to the legend of (a). Treatment with subtilisin did not suppress the effect of magnesium on pulse amplitude. Error bars represent 95% confidence intervals, defined as ± (t∙SEM), where t is drawn from Student’s t-distribution (with ν=N – 1 degrees of freedom and N=28–44 samples per mean).Figure 5—source data 1.This image is provided as a JPG file with relevant lanes labeled.Figure 5—source data 2.This image is provided as a JPG file with relevant lanes labeled.Figure 5—source data 3.This image is provided as a JPG file with relevant lanes labeled.Figure 5—source data 4.These source data are provided in an excel spreadsheet.Figure 5—source data 5.This full raw unedited image is provided as a PNG file.Figure 5—source data 6.This full raw unedited image is provided as a TIF file.Figure 5—source data 7.This full raw unedited image is provided as a TIF file.
+**Figure 5.:** (a) Proteolytic products of tubulin treated with subtilisin for the indicated times (in minutes), before quenching with 1 mM phenylmethylsulfonyl fluoride, visualized by Coomassie staining (top image) or Western blotting (bottom image). αTub DM1A:FITC mouse conjugate 1:1000 and βTub CST 9F3 rabbit 1:1000 were used for primary antibody staining. (b) Mean disassembly speeds, measured after treatment of tubulin with subtilisin for the indicated durations and plotted versus magnesium concentration. The large magnesium-dependent acceleration of disassembly seen with untreated tubulin (orange symbols) was suppressed after 10–20 min subtilisin treatment (dark red symbols). Error bars represent 95% confidence intervals, defined as ± (t∙SEM), where t is drawn from Student’s t-distribution (with ν=N – 1 degrees of freedom and N=5–51 samples per mean). Data for untreated tubulin are recopied from Figure 2b. (c) Pulse amplitudes, measured in the wave assay at 2 pN trapping force after treatment of tubulin with subtilisin, plotted versus magnesium concentration. Symbol colors indicate subtilisin treatment times according to the legend of (a). Treatment with subtilisin did not suppress the effect of magnesium on pulse amplitude. Error bars represent 95% confidence intervals, defined as ± (t∙SEM), where t is drawn from Student’s t-distribution (with ν=N – 1 degrees of freedom and N=28–44 samples per mean).
 
 ## Discussion
 
-## Yeast and mammalian microtubules store similar lattice strain energies
+### Yeast and mammalian microtubules store similar lattice strain energies
 
 Fitting our wave assay data with the multi-protofilament model has allowed us to directly estimate a key biophysical property of curling protofilaments at disassembling microtubule tips: their flexural rigidity. Previously, this property was only inferred indirectly, from static cryo-electron tomograms (McIntosh et al., 2018) or from stiffness measurements of intact microtubules (Hawkins et al., 2010; Kononova et al., 2014; Molodtsov et al., 2005; VanBuren et al., 2005). Our fitted estimate for bending stiffness, 176±15 pN∙nm∙rad–1, implies that fully straightening a protofilament from its relaxed curvature into a lattice-compatible state would require approximately 17 kBT of work energy per tubulin dimer, or 10 kcal/mol. This represents a very substantial fraction (~80%) of the free energy available from GTP hydrolysis, ~12.3 kcal/mol (Desai and Mitchison, 1997; Howard, 1996), consistent with previous suggestions that most of the energy derived from hydrolysis is stored as curvature strain in the microtubule lattice (Caplow et al., 1994), and consistent with our previous lower-bound estimate (Driver et al., 2017). Moreover, our analysis suggests that the flexural rigidity of curling protofilaments is conserved between yeast and bovine tubulin, and therefore that the amount of strain energy stored per tubulin dimer in the microtubule lattice is probably also conserved.
 
 The idea that protofilament flexural rigidity and stored lattice strain are conserved, despite a billion years of evolution separating yeast and vertebrates, suggests that these biophysical properties are crucial to microtubule function. Indeed, most current models assume that microtubule dynamic instability arises from the counteracting influences of lateral bonding versus lattice strain, which tend to stabilize and destabilize the polymer, respectively (Gudimchuk et al., 2020; McIntosh et al., 2018; VanBuren et al., 2005; VanBuren et al., 2002). Given the importance of dynamic instability for cell viability, there may be strong selective pressure to maintain a specific lattice strain energy.
 
-## Protofilament curl length can affect mechanical work output
+### Protofilament curl length can affect mechanical work output
 
 In contrast to their consistent flexural rigidity, the average length of protofilament curls at disassembling microtubule tips can vary widely depending on tubulin species and buffer conditions (McIntosh et al., 2018; McIntosh et al., 2013). By our estimates, the average curl length grew ~50% as magnesium was increased from 1 to 20 mM. And curls at yeast microtubule tips were ~twofold larger than those at bovine microtubule tips. These curl enlargements were associated with greater mechanical work output in the wave assay, as expected, since longer curls store more elastic energy and can push the bead laterally farther away from the microtubule surface. We suggest that longer protofilament curls might similarly enhance microtubule-driven motility in vivo. In budding yeast, where each kinetochore attaches a single microtubule tip (Winey et al., 1995), and where robust tip-coupling depends on the ring-forming Dam1 complex (Miranda et al., 2005; Umbreit et al., 2014; Westermann et al., 2005; Westermann et al., 2006), a minimum curl length might be required for microtubule-encircling Dam1 rings to efficiently harness curl energy via the conformational wave mechanism (Molodtsov et al., 2005). In other species whose kinetochores attach numerous microtubule tips and lack any ring-forming complexes, coupling might depend less on the conformational wave mechanism and instead might rely on biased diffusion (Asbury et al., 2011). An attractive idea is that the larger and more energetic pulses produced by yeast microtubules in the wave assay, as compared to bovine microtubules, might reflect stronger selective pressure to maintain long protofilament curls, because yeast might depend more heavily on long curls for mitosis.
 
 Another possibility suggested by our work is that cells might actively tune protofilament curl properties in order to enhance microtubule-driven motility. Because free magnesium is generally thought to be buffered around 1 mM inside eukaryotic cells (Grubbs, 2002; Hille, 2001; Romani and Scarpa, 1992), we have viewed magnesium primarily as a biochemical tool, rather than a physiological mechanism for tuning curl properties. Interestingly, however, transient increases in free magnesium have recently been seen during metaphase and anaphase in dividing HeLa cells, where they apparently contribute to chromosome condensation (Maeshima et al., 2018). But the estimated concentrations remain too low (0.3–1 mM) to significantly enlarge pulses in our wave assay. Therefore, we currently favor the idea that plus end-binders (+TIPs) and other microtubule-associated proteins known to alter microtubule tip morphology (Cassimeris et al., 2001; Desai et al., 1999; Farmer et al., 2021; Girão et al., 2020; Kerssemakers et al., 2006) could enlarge or stiffen protofilament curls, potentially enhancing their mechanical work output in a spatiotemporally regulated manner. We hope to investigate the effects of +TIPs on wave assay pulses in the future.
 
-## Magnesium directly inhibits the breakage of protofilament curls
+### Magnesium directly inhibits the breakage of protofilament curls
 
 Our measurements also reveal new information about the relationship between disassembly speed and protofilament curl length, and about the mechanisms by which magnesium affects these tip properties. Classic work suggested that elongation of protofilament curls by magnesium might be a simple indirect consequence of its acceleration of disassembly (Tran et al., 1997). However, in 20 mM magnesium, subtilisin-treated microtubules disassembled threefold more slowly than untreated controls, and yet their pulse amplitudes remained consistently elevated, at well over 30 nm on average. Likewise, we previously showed that microtubules composed of a hyperstable T238V mutant tubulin disassemble sevenfold more slowly, and yet they generated pulses with amplitudes indistinguishable from wild-type (Driver et al., 2017). These observations indicate that disassembly speed and curl length are not strictly coupled, and that magnesium-dependent enlargement of protofilament curls is not simply a consequence of accelerated disassembly. Rather, magnesium must directly inhibit the breakage of protofilament curls.
 
 The effects of magnesium on disassembly speed and on curl length appear to be mediated by different interaction sites on tubulin. Magnesium’s acceleration of disassembly depends on the β-tubulin C-terminal tail, since this effect is suppressed upon removal of the β-tail by subtilisin (Fees and Moore, 2018). But subtilisin treatment did not suppress the effect of magnesium on pulse amplitudes in the wave assay, indicating that magnesium inhibits curl breakage through another interaction site (or sites), outside the β-tail. The C-terminal tail on α-tubulin is more resistant to subtilisin proteolysis and was left partially intact by our treatment (Figure 5a). Therefore, one possibility is that magnesium stabilizes protofilament curls by interacting with the α-tubulin tail. Alternatively, the effect might depend on an interaction with GDP in the exchangeable nucleotide-binding site, which is located at the inter-dimer interface. The affinity of magnesium for GDP in the exchangeable site is reportedly in the millimolar range (Correia et al., 1987; Mejillano and Himes, 1991), which is much weaker than its affinity for GTP, and near the range where we measured increased pulse amplitudes.
 
-## Tuning curl properties could facilitate rigorous testing of their importance for kinetochore motility
+### Tuning curl properties could facilitate rigorous testing of their importance for kinetochore motility
 
 The ability to tune protofilament curl properties by adjusting magnesium levels or tubulin isoforms suggests new approaches for testing the importance of curling protofilaments in kinetochore motility. If curling protofilaments exert force to drive kinetochore movement, as proposed in conformational wave-based models, then elongating the curls could enable protofilaments to push more productively against the kinetochore, potentially changing the processivity, attachment strength, or switching behavior of the kinetochore-microtubule interface. In addition, we anticipate using our wave assay and the analytical tools described here to explore other methods for modifying biophysical properties of protofilament curls. In particular, the ability to tune bending stiffness or intrinsic curvature would provide additional ways to test the importance of protofilament curls in microtubule-based motility.
 
 ## Materials and methods
 
-## Purification of tubulin from bovine brain
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated anti-penta-His mouse monoclonal IgG1</td>
+      <td>R&amp;D Systems Inc.clone # AD1.1.10</td>
+      <td>BAM050 - His Tag Biotinylated Antibody</td>
+      <td>Used for preparing anti-His beads as described under Bead and slide preparation for wave assay, below.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin coated polystyrene particles, 0.44 µm in diameter</td>
+      <td>Spherotech Inc.</td>
+      <td>SVP-05–010</td>
+      <td>Used for preparing anti-His beads as described under Bead and slide preparation for wave assay, below.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Biotinylated porcine brain tubulin</td>
+      <td>Cytoskeleton Inc.</td>
+      <td>T333 - Tubulin Protein (Biotin): Porcine Brain</td>
+      <td>Used for preparing coverslip-anchored microtubule seeds as described under Bead and slide preparation for wave assay, below.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Avidin</td>
+      <td>Vector Laboratories</td>
+      <td>A-3100–1</td>
+      <td>Used for preparing coverslip-anchored microtubule seeds as described under Bead and slide preparation for wave assay, below.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Biotinylated bovine serum albumin</td>
+      <td>Vector Laboratories</td>
+      <td>B-2007–10</td>
+      <td>Used for preparing coverslip-anchored microtubule seeds as described under Bead and slide preparation for wave assay, below.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Odyssey Blocking Buffer</td>
+      <td>LI-COR Biosciences</td>
+      <td>927–40000</td>
+      <td>Used as described under Western blotting, below.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Subtilisin protease</td>
+      <td>Sigma-Aldrich</td>
+      <td>P5380 - Proteinase from Bacillus licheniformis, Subtilisin A</td>
+      <td>Used to cleave C-terminal tubulin tails as described under Digestion of tubulin with subtilisin, below.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-tubulin rabbit monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Anti-β-tubulin (9F3) Rabbit mAb #2128</td>
+      <td>Used at 1:1000 as described under Western blotting, below. (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-tubulin mouse monoclonal</td>
+      <td>Sigma-Aldrichclone DM1A</td>
+      <td>F2168 - Anti-α-tubulin-FITC Mouse mAb</td>
+      <td>Used at 1:1000 as described under Western blotting, below. (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit polyclonal</td>
+      <td>LI-COR Biosciences</td>
+      <td>926–32211IRDye 800CW secondary</td>
+      <td>Used at 1:5000 as described under Western blotting, below. (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse polyclonal</td>
+      <td>LI-COR Biosciences</td>
+      <td>926–68070IRDye 800CW secondary</td>
+      <td>Used at 1:5000 as described under Western blotting, below. (1:5000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Purification of tubulin from bovine brain
 
 Tubulin was purified from bovine brain using two cycles of polymerization and depolymerization to a final concentration of 200 µM (Castoldi and Popov, 2003). Samples were frozen in liquid N2 and stored at –80°C.
 
-## Purification of recombinant His6-tubulin from yeast
+### Purification of recombinant His6-tubulin from yeast
 
 Plasmids to express wild-type yeast αβ-tubulin with a His6 tag fused to the C-terminus of β-tubulin were previously described (Ayaz et al., 2014; Ayaz et al., 2012; Johnson et al., 2011). The integrity of all expression constructs was confirmed by DNA sequencing. Wild-type yeast αβ-tubulin was purified from inducibly overexpressing strains of Saccharomyces cerevisiae using nickel affinity and ion exchange chromatography (Ayaz et al., 2014; Ayaz et al., 2012; Johnson et al., 2011). Tubulin samples for the laser trap assays were prepared at UT Southwestern, aliquoted, and snap-frozen in storage buffer (10 mM PIPES pH 6.9, 1 mM MgCl2, 1 mM EGTA), containing 50 µM GTP, shipped on dry ice to the University of Washington, and stored at –80°C.
 
-## Bead and slide preparation for wave assay
+### Bead and slide preparation for wave assay
 
 To prepare anti-His beads, ~30 pM of streptavidin-coated polystyrene microspheres (Spherotech Inc, SVP-05–10) was incubated with 30 pM biotinylated anti-penta-His antibodies (R&D Systems Inc, BAM050) for 30 min, washed extensively, and then stored at 4°C for up to several months. For each experiment, a small channel ~1 mm wide was formed by bonding a KOH-cleaned glass coverslip to a clean glass slide using two parallel strips of double-stick tape. Biotinylated bovine serum albumin (Vector Laboratories, B-2007–10) was incubated in the channel for 15 min, then washed out with 80 µL warm BRB80 (80 mM PIPES, 120 mM K+, 1 mM MgCl2, and 1 mM EGTA, pH 6.8). Avidin DN (Vector Laboratories, A-3100–1) was incubated in the channel for 5 min, then washed out with 40 µL warm BRB80. GMPCPP-stabilized, biotinylated microtubule seeds were assembled from bovine brain tubulin (Castoldi and Popov, 2003) and biotinylated porcine brain tubulin (Cytoskeleton, Cat #T333), and incubated in the channel for 5 min before washing with growth buffer (1 mM GTP in BRB80). Just prior to each experiment, a small aliquot of anti-His beads was pre-incubated with a mixture of plain and biotinylated BSA (at 10 and 0.1 mg mL–1, respectively) for 30 min, then decorated with His6-yeast tubulin, and then added to growth buffer containing 10–25 µM bovine tubulin. This reaction mixture was added to the seed-decorated coverslip, the slide was then sealed with nail polish, and mounted on the optical trap. Pre-incubation of the anti-His beads with biotinylated BSA was important for preventing non-specific attachment of the beads to the microtubules. Control experiments with beads lacking anti-His antibody confirmed that the attachments were specific after the BSA pre-incubation.
 
 To ensure that most beads attached via single antibodies, the molar ratio of antibodies to beads was kept very low, ~1:1, such that the fraction of tubulin-decorated beads that would attach to the growing end of a microtubule under manual manipulation was typically less than 10%. Active beads attached readily to growing ends but not to the sides of microtubules. Their exclusive preference for growing ends is expected because the anti-His antibodies on the bead become quickly occupied by individual, unpolymerized tubulin dimers upon initial mixing with the His6-tagged yeast tubulin. Laterally attached beads, which are required for the wave assay, arise by the incorporation of bead-tethered yeast tubulin dimers into the growing ends of microtubules (which can be composed either of bovine or yeast tubulin, depending on the experiment) followed by polymerization of the microtubules past the beads. A detailed protocol for slide preparation is given in our recent publication (Murray et al., 2022).
 
-## Trapping instrument
+### Trapping instrument
 
 The optical trap instrument used for this assay has been described in previous work (Franck et al., 2010). The instrument was based around a Nikon inverted microscope (TE2000) with a Nikon 100×1.4 NA oil Plan Apo IR CFI objective. A 1064 nm Nd:YVO4 laser (Spectra Physics J20-BL10-106Q) was used as a trapping beam, focused at the center of the field of view. A 473 nm laser (LaserPath Technologies, DPSS-473–100) was used as a microtubule cutting beam, focused into an ellipse at an intermediate distance between the trap center and edge of the field of view. Both lasers were actuated by shutters (Vincent Associates, VS25S2ZMO). Microtubules and beads were visualized by video enhanced differential interference contrast (VE-DIC), with illumination by a mercury arc lamp (X-Cite 120) and accomplished through two standard Wollaston prisms and polarizers (Walker et al., 1988). Motion control and force-feedback were implemented through servo-control of a three-axis piezo stage with internal capacitive position sensors (Physik Instrumente, P-517.3CL) and a piezo controller (Physik Instrumente, E-710). Custom software written in LabVIEW (National Instruments) was used for instrument control and data acquisition. The source code is publicly available at https://github.com/casbury69/laser-trap-control-and-data-acquisition (Asbury, 2021). Briefly, analog signals from the position sensor were sampled at 40 kHz using an analog-to-digital conversion board (National Instruments, PCI-6251). Commands were sent to the piezo stage controller through a GPIB digital interface (National Instruments, GPIB-USB-B). Both the bead and stage positions were downsampled to 200 Hz for file storage.
 
-## Measurement of pulses driven by protofilament curling
+### Measurement of pulses driven by protofilament curling
 
 Suitable beads laterally attached to coverslip-anchored microtubules were identified. Suitable microtubules were firmly anchored by one end to the slide surface, and able to freely rotate about their surface anchor, without other interfering microtubules bundled alongside or crossing along their length. To establish the initial loaded state, the laterally attached bead was trapped, and the microtubule and bead were pulled in the opposite direction of the tether, toward the cutting laser location. The beads were raised slightly above the coverslip surface to ensure the surface did not interfere with measurement. The force clamp was initiated, and microtubule depolymerization was triggered by trimming off the stabilizing cap using the cutting laser. Position signals from the trapped bead were recorded using the force clamp software (described above under Trapping instrument), including the static baseline position and the pulse driven by protofilament curling motion. Candidate pulses were evaluated for inclusion in data analysis on the basis of their amplitude relative to the standard deviation of the baseline noise; a detection threshold of three times the standard deviation was used to accept or reject pulses. For most records this threshold was 6–10 nm, as detailed in our prior publication (Murray et al., 2022). The fraction of events that yielded measurable pulses in bovine microtubule experiments was lower than in yeast microtubule experiments mainly because the pulses were smaller on average, and therefore more of them fell below our detection threshold.
 
 Average pulse amplitudes are reported in the text as mean ± 95% confidence interval, which was estimated as ± (t∙SEM), where t is drawn from Student’s t-distribution using ν=N – 1 degrees of freedom. The number of samples per mean ranged from N=9 to 43, as indicated in the legends of Figures 2 and 3. All the individual pulse amplitude values are included in excel spreadsheet format as supplemental source data files. They are also publicly available as a MATLAB (Mathworks) data file at https://github.com/protofilamentdude/Protofilament-Bending-Models (Murray, 2022). Uncertainties in the measured work outputs shown in Figure 3b were estimated by propagating uncertainty in the parameters of the best-fit lines of Figure 3a through the calculation of area under each line. (Uncertainties in the best-fit line parameters were assumed to be uncorrelated.)
 
-## Measurement of microtubule disassembly speeds
+### Measurement of microtubule disassembly speeds
 
 Slides for measuring disassembly speeds were prepared as described above (in Bead and slide preparation for wave assay) but without the addition of yeast-tubulin decorated beads. Microtubules were visualized by VE-DIC and recorded using a digital video disc recorder (Toshiba, DR430). The stabilizing GTP-caps of microtubules were trimmed off using laser scissors to induce disassembly. Disassembly speeds of individual microtubules were measured using imageJ and mTrackJ (Meijering et al., 2012).
 
-## Multi-protofilament model
+### Multi-protofilament model
 
-Single protofilaments were modeled as a series of rigid rods linked by Hookean bending springs with an angular spring constant, κ, a non-zero relaxed angle, θi (Figure 4a), and a segment length, r=8.2 nm. A downward force at the protofilament tip was balanced by the torque at each spring node to yield a system of nonlinear equations (see Equations 1–3 below for a 4-node, 3-segment system).(1)τ3= Frcos⁡θ1+θ2+θ3-κθ3-θi(2)τ2= Frcos⁡θ1+θ2+cos⁡θ1+θ2+θ3-κθ2-θi(3)τ1= Frcos⁡θ1+cos⁡θ1+θ2+cos⁡θ1+θ2+θ3-κθ1-θi
+Single protofilaments were modeled as a series of rigid rods linked by Hookean bending springs with an angular spring constant, κ, a non-zero relaxed angle, θi (Figure 4a), and a segment length, r=8.2 nm. A downward force at the protofilament tip was balanced by the torque at each spring node to yield a system of nonlinear equations (see Equations 1–3 below for a 4-node, 3-segment system).
+
+$$
+\tau_{3}= Frcos⁡\theta_{1}+\theta_{2}+\theta_{3}-κ\theta_{3}-\theta_{i}
+$$
+
+
+
+$$
+\tau_{2}= Frcos⁡\theta_{1}+\theta_{2}+cos⁡\theta_{1}+\theta_{2}+\theta_{3}-κ\theta_{2}-\theta_{i}
+$$
+
+
+
+$$
+\tau_{1}= Frcos⁡\theta_{1}+cos⁡\theta_{1}+\theta_{2}+cos⁡\theta_{1}+\theta_{2}+\theta_{3}-κ\theta_{1}-\theta_{i}
+$$
 
 The system of non-linear equations was solved numerically for the angle at each node (θ1, θ2, θ3,...) using a variant of the Powell dogleg method (Powell, 1970), for a range of forces and a given set of parameters κ and θi. Using the angles (θ1, θ2, θ3,...), the deflection of the protofilament tip was calculated at each force. This method was repeated for modeled protofilaments of lengths 1–5 segments.
 
 The force-deflection relationship for multiple protofilaments at a microtubule tip interacting with a bead was calculated as follows: the bead was assumed to be an infinitely flat, rigid surface because the 440 nm beads used in experiments were nearly 20-fold larger in diameter than the microtubules. Protofilaments were assumed to be distributed radially about the microtubule axis in a 13-protofilament configuration. Bending was only allowed in the plane traversed by the microtubule axis and the protofilament axis because it has been observed in electron microscopy that such a plane includes most deviations in protofilament position (McIntosh et al., 2018). The position of the bead surface was varied from where it contacted the most apical (upward pointing) protofilaments, down to the microtubule wall. Accordingly, groups of protofilaments were engaged sequentially based on their distribution around the microtubule tip (Figure 4b, right). This sequential engagement of protofilaments manifested as slight ripples in the force-deflection curve and changed slightly depending on the rotational angle of the microtubule tip (Figure 4—figure supplement 3). To consider a variety of possible rotational angles, the force-deflection curves for the two microtubule tip rotations depicted in Figure 4—figure supplement 3 were averaged together prior to fitting. The model was implemented with custom code written in MATLAB (Mathworks) that is publicly available at https://github.com/protofilamentdude/Protofilament-Bending-Models (Murray, 2022).
 
-## Multi-protofilament model fitting
+### Multi-protofilament model fitting
 
 To fit the multi-protofilament model to the pulse amplitude versus force data, the amplitude data was first converted to bead-to-microtubule surface height, assuming a 36 nm tether length (Figure 1—figure supplement 2). The model was fit to the data using a Levenberg-Marquardt nonlinear least-squares algorithm with inverse-variance weights, yielding the fitted force-deflection relationship, and parameters for the stiffness per tubulin dimer and the average contour length. 95% confidence intervals were calculated using the Jacobian for each parameter. Fitting was performed using custom code written in MATLAB (Mathworks) and available publicly at https://github.com/protofilamentdude/Protofilament-Bending-Models (Murray, 2022).
 
-## Digestion of tubulin with subtilisin
+### Digestion of tubulin with subtilisin
 
 To cleave the C-terminal tails from tubulin, bovine brain tubulin was thawed quickly, and mixed to a final concentration of 100 µM with 1% subtilisin (Sigma Aldrich P5380) in a buffer containing 1 mM GTP, 8 mg/mL BSA, 80 mM PIPES, pH 6.8, 1 mM MgCl2, 1 mM EGTA, and immediately placed at 30°C. To halt the cleavage reaction, phenylmethylsulfonyl fluoride was added to a final concentration of 1 mM, and the cleavage product placed on ice.
 
-## Western blotting
+### Western blotting
 
 Samples were run on a 7.5% Bis-Tris SDS-PAGE gel and transferred to polyvinylidene difluoride membranes. The membranes were blocked for 1 hr with 1:1 1× PBS and Odyssey Blocking Buffer (Licor Biosciences, 927–40000;). Primary and secondary antibodies were diluted in 1:1 1× PBS and Odyssey Blocking Buffer. The blots were incubated for 1 hr with the following primary antibodies: βTub (Cell Signaling Technology, 9F3) rabbit 1:1000, αTub DM1A:FITC (Sigma, F2168) mouse conjugate 1:1000. The blots were washed 3× with PBST (1× PBS and 0.01% Tween-20). The blots were incubated with secondary antibodies diluted in 1:1 1× PBS and Odyssey Blocking Buffer, IRDye 680RD goat anti-mouse IgG secondary antibody (Licor, 926–68070) 1:5000, IRDye 800CW goat anti-rabbit IgG secondary antibody (Licor, 926–32211) 1:5000. The blots were washed 3× with PBST and 1× with PBS, then imaged with a Licor Odyssey DLx imaging system. Images were adjusted for brightness and contrast with Image-J software.
 
-## Data availability
+### Data availability
 
 All data generated and analyzed during this study are included in the manuscript and supporting files. Source data files are provided with all the individual wave amplitude values and disassembly speeds for Figures 1—5 and their supplements. A source data file with all the individual wave amplitude values is also publicly available at https://github.com/protofilamentdude/Protofilament-Bending-Models (Murray, 2022), which includes custom MATLAB (Mathworks) code for fitting these data with the multi-protofilament model. The custom LabView (National Instruments) code that we use for control of our laser trapping instruments is publicly available at https://github.com/casbury69/laser-trap-control-and-data-acquisition (Asbury, 2021).

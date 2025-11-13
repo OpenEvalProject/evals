@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00rs6vg23 Department of Neuroscience, College of Medicine, The Ohio State University Columbus United States
-2. https://ror.org/00rs6vg23 Neuroscience Graduate Program, The Ohio State University Columbus United States
-3. https://ror.org/00rs6vg23 Campus Chemical Instrument Center, Mass Spectrometry and Proteomics Facility, The Ohio State University Columbus United States
+1. Department of Neuroscience, College of Medicine, The Ohio State University Columbus United States ([ROR:00rs6vg23](https://ror.org/00rs6vg23))
+2. Neuroscience Graduate Program, The Ohio State University Columbus United States ([ROR:00rs6vg23](https://ror.org/00rs6vg23))
+3. Campus Chemical Instrument Center, Mass Spectrometry and Proteomics Facility, The Ohio State University Columbus United States ([ROR:00rs6vg23](https://ror.org/00rs6vg23))
 
 † Corresponding author
 
@@ -30,9 +30,17 @@ Pro-inflammatory signaling represses reprogramming of mouse MG by promoting reac
 
 ## Results
 
-## S1P signaling regulates the formation of MGPCs in damaged retinas
+### S1P signaling regulates the formation of MGPCs in damaged retinas
 
 We first probed for patterns of expression of S1P-related genes in a large aggregate scRNA-seq library of >180,000 cells isolated from retinas treated with saline, NMDA, or two or three doses insulin + FGF2 and the combination of NMDA and insulin + FGF2 (Figure 1a), as described previously (Clark et al., 2019; Campbell et al., 2022; El-Hodiri et al., 2022). MGPC formation can be induced in retinas damaged by NMDA or undamaged retinas treated with repeated doses of insulin + FGF2 (Fischer, 2005; Fischer et al., 2002). Merging of libraries revealed patterns of gene expression in MG and MGPCs that are treatment-dependent. Retinal cell types ordered into different uniform manifold approximation and projection (UMAP) clusters were identified based on well-established markers (Figure 1b, c), as described in the methods. S1PR1 was most prominently expressed by resting MG and MG returning to a resting state, whereas S1PR3 was detected in relatively few scattered cells in clusters of MG, ganglion cells, horizontal cells, bipolar cells, amacrine cells, photoreceptors, oligodendrocytes, microglia, and NIRG cells (Figure 1d). NIRG cells, or non-astrocytic inner retinal glial cells, are a distinct type of glial cell that arise from optic nerve progenitors (Rompani and Cepko, 2008) and have described in retinas of chicks (Zelinka et al., 2012) and some species of reptiles (Todd et al., 2019). S1PR2 was not widely expressed in retinal cells (Figure 1d). SPHK1 was detected in scattered cells in all cell types (Figure 1e). SGPL1 was detected in scattered cells in all cell types with prominent expression in rod photoreceptors (Figure 1e). ASAH1 (encoding acid ceramidase enzyme) was prominently expressed in microglia and cone photoreceptors, with expression in cells scattered in all other types of retinal cells (Figure 1f). Genes encoding ceramide synthase enzymes showed variable patterns of expression. CERS6 was prominently detected in all types of inner retinal neurons (Figure 1f), whereas CERS5 was detected in relatively few cells scattered across clusters of different types of cells (Figure 1f).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/102151/elife-102151-fig1-v1.jpg)
+
+**Figure 1.:** scRNA-seq was used to identify patterns of expression of S1P-related factors among retinal cells with the data presented in UMAP (a, b, d–h, k, l) or dot plots (c, j, m, n). Aggregate scRNA-seq libraries were generated for cells from (i) control retinas and retinas 24, 48, and 72 hr after NMDA-treatment, retinas treated with two or three doses of insulin and FGF2, and retinas treated with insulin, FGF2 and NMDA (a–f). MG were bioinformatically isolated and analyzed from the large aggregate library (g–i), and control retinas and retinas 3, 12, and 48 hr after NMDA (k–l). UMAP-ordered cells formed distinct clusters of neuronal cells, resting MG, early activated MG, activated MG, and Müller glia-derived progenitor cells (MGPCs) based on distinct patterns of gene expression (see methods and Figure S1). UMAP heatmap plots illustrate patterns and levels of expression of S1P receptors S1PR1 and S1PR3 (d), S1P metabolism and transport genes SPHK1, SGPL1, and SPNS2 (e), and ceramide metabolism genes ASAH1, CERS5, and CERS6 (f) illustrate levels and patterns of expression across the whole retina. Dot plots illustrate relative levels of expression (heatmap) and percent expression (dot size) in MG, activated MG, and MGPCs (j, m), whole retina, and other cell types (n) in different UMAP clusters. Significance of difference was determined by using a Wilcox rank sum with Bonferoni correction. Abbreviations: MG – Müller glia, NMDA – N-methyl-D-aspartate, UMAP – uniform manifold approximation and projection.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102151/elife-102151-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Aggregate scRNA-seq libraries were generated for cells from (i) control retinas and retinas 24, 48, and 72 hr after NMDA-treatment, retinas treated with two or three doses of insulin and FGF2, and retinas treated with insulin, FGF2 and NMDA (a–l). UMAP heatmap plots illustrate patterns and levels of expression of S1P receptors S1PR1 (d), S1PR2 (e), and S1PR3 (f), S1P metabolism and transport genes SPHK1 (g), SGPL1 (h), and SPNS2 (i), and ceramide metabolism genes ASAH1 (j), CERS5 (k), and CERS6 (l) illustrate levels and patterns of expression across the whole retina. Aggregate scRNA-seq libraries were generated for cells from (i) control retinas and retinas 3, 12, and 48 hr after NMDA-treatment (m–r). UMAP heatmap plots illustrate patterns and levels of expression of GLUL and RLBP1 in resting MG (o), TGFB2 and PMP2 in activated MG (p), CDK1 and TOP2A in MGPCs (q), and S1PR1 (r). Abbreviations: MG – Müller glia, NMDA – N-methyl-D-aspartate, UMAP – uniform manifold approximation and projection.
 
 We bioinformatically isolated the MG (>70,000 cells) and re-embedded these cells into a UMAP plot (Figure 1g). The UMAP ordering of MG revealed clusters that were comprised of cells from distinct treatments and different times after treatment (Figure 1h, i). We find that S1P-related genes are dramatically up- or downregulated in MG in damaged retinas and during the formation of MGPCs. Dynamic changes of mRNA levels are strongly correlated with changes in protein levels and function (Liu et al., 2016). We found that levels of S1PR1 and CERS6 were very high in resting MG and significantly downregulated in MG and MGPCs from treated retinas (Figure 1j; Figure 1—figure supplement 1d, l; Figure 1—source data 1). S1PR3 was significantly higher in MGPCs, namely the MGPC2 cluster, compared to MG in all other UMAP clusters (Figure 1j; Figure 1—figure supplement 1f; Figure 1—source data 1). Levels of SPHK1 were relatively high in resting MG and significantly downregulated in MG and MGPCs from retinas treated with NMDA and/or insulin + FGF2 (Figure 1j; Figure 1—figure supplement 1g; Figure 1—source data 1). CERS5 was significantly upregulated in MG at 24 hr after NMDA and MGPCs compared to resting MG and MG treated with insulin and FGF2 (Figure 1j; Figure 1—figure supplement 1k; Figure 1—source data 1).
 
@@ -40,15 +48,15 @@ We next analyzed the expression of S1P-related genes in a scRNA-seq database tha
 
 In microglia, levels of ASAH1 and SGPL1 were significantly increased at 48 hr after NMDA-treatment (Figure 1n; Figure 1—source data 1). In cone photoreceptors, only ASAH1 was significantly decreased following NMDA-treatment (Figure 1; Figure 1—source data 1). In bipolar cells, there were significant decreases in levels of S1PR1 and CERS6 following NMDA-treatment (Figure 1n; Figure 1—source data 1). In amacrine cells, there were significant decreases in levels of S1PR1, ASAH1, and CERS6 following NMDA-treatment (Figure 1n; Figure 1—source data 1). In RGCs, there were significant decreases in expression levels of CERS6 and SGPL1 at different times after NMDA-treatment (Figure 1; Figure 1—source data 1). There were no significant changes in S1P-related genes in rod photoreceptors or horizontal cells in damaged retinas (not shown). Collectively, these findings indicate that there is dynamic expression of genes related to S1P synthesis and degradation in retinal neurons, and this may impact signaling through S1PR1 in MG.
 
-## Validation of patterns of expression of S1PR1, S1PR3, and SPHK1
+### Validation of patterns of expression of S1PR1, S1PR3, and SPHK1
 
 To validate some of the findings from scRNA-seq libraries, we performed fluorescence in situ hybridization (FISH) on normal and NMDA-damaged retinas. We applied antibodies to S1pr1 and Sphk1 (Santa Cruz, sc-48356; Novus, NB120-11424; Bioss, bs-2652R), but these antibodies did not reveal plausible patterns of labeling (not shown). By comparison, FISH for S1PR1 revealed distinct puncta that were concentrated around the Sox2-positive nuclei of resting MG in undamaged retinas, consistent with scRNA-seq data (Figure 2a, b). 100% of the Sox2-positive MG nuclei in the inner nuclear layer (INL) were associated with S1PR1 FISH puncta (Figure 2b). In damaged retinas at 3 HPI (hour post injury), S1PR1 was significantly reduced in the INL and very few puncta were observed in close proximity to MG nuclei (Figure 2b). At 48 and 72 HPI, S1PR1 signal increased and was observed with Sox2+ nuclei of MG that were delaminated away from the middle of the INL (Figure 2b). In undamaged retinas, we found very few S1PR3 FISH puncta associated with MG nuclei and across the retina (Figure 2c, d). In contrast, we identified S1PR3 puncta associated with some MG nuclei at 48 HPI; these results are consistent with scRNA data (Figure 2d). In undamaged retinas, we found SPHK1 FISH puncta associated with MG nuclei, consistent with scRNA-seq data (Figure 2e, f). At 48HPI, we observed an increase in SPHK1 FISH puncta associated with delaminating MG nuclei, which was similar to findings from scRNA-seq data (Figure 2e, f).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/102151/elife-102151-fig2-v1.jpg)
 
-**Figure 2.:** S1PR1, S1PR3, and SPHK1.Retinas were obtained from undamaged, saline-treated eyes and eyes injected with NMDA at 3, 48, or 72 hr after treatment. Retinal sections were labeled with antibodies to Sox2 (red) or FISH probes to S1PR1 (green puncta; b), S1PR3 (cyan puncta; d), or SPHK1 (green puncta; f). Dot plots illustrate the average expression (heatmap) and percent expressed (dot size) for S1PR1, S1PR3, and SPHK1 in Müller glia (MG) from different treatments and replicates (rep1 or rep2) (a, c, e). Significance of difference was determined by using a Wilcox rank sum with Bonferoni correction. Hollow arrows indicate MG nuclei labeled for Sox2 alone and solid arrows indicate MG nuclei associated with numerous FISH puncta. Calibration bars in panels b, d ,and f represent 50 µm. Areas indicated by cyan or yellow are enlarged twofold in adjacent panels. Abbreviations: ONL – outer nuclear layer, INL – inner nuclear layer, IPL – inner plexiform layer, GCL – ganglion cell layer, ns – not significant, NMDA – N-methyl-D-aspartate.
+**Figure 2.:** Retinas were obtained from undamaged, saline-treated eyes and eyes injected with NMDA at 3, 48, or 72 hr after treatment. Retinal sections were labeled with antibodies to Sox2 (red) or FISH probes to S1PR1 (green puncta; b), S1PR3 (cyan puncta; d), or SPHK1 (green puncta; f). Dot plots illustrate the average expression (heatmap) and percent expressed (dot size) for S1PR1, S1PR3, and SPHK1 in Müller glia (MG) from different treatments and replicates (rep1 or rep2) (a, c, e). Significance of difference was determined by using a Wilcox rank sum with Bonferoni correction. Hollow arrows indicate MG nuclei labeled for Sox2 alone and solid arrows indicate MG nuclei associated with numerous FISH puncta. Calibration bars in panels b, d ,and f represent 50 µm. Areas indicated by cyan or yellow are enlarged twofold in adjacent panels. Abbreviations: ONL – outer nuclear layer, INL – inner nuclear layer, IPL – inner plexiform layer, GCL – ganglion cell layer, ns – not significant, NMDA – N-methyl-D-aspartate.
 
-## Activation of cell signaling pathways by S1P
+### Activation of cell signaling pathways by S1P
 
 S1P signaling is known to activate different cell signaling pathways including MAPK and PI3K/mTor, and crosstalk with pro-inflammatory pathways such as NFκB (reviewed by Cui et al., 2022). Alternatively, activation of S1PRs can activate Jak/Stat signaling, which upregulates the immediate early gene Egr1 (Gurgui et al., 2010; Liang et al., 2013; Sato et al., 2000). To probe for the activation of different cell signaling pathways in the retina, we delivered S1P to undamaged eyes and collected retinas 24 hr later. In retinas treated with exogenous S1P, levels of pS6 and pSTAT3 levels were significantly increased in MG (Figure 3a, b). By comparison, levels of pERK1/2 and cFos were unaffected by S1P-treatment (Figure 3a, b). We did not observe significant changes in the total number of microglia in the retina, indicating that S1P delivery did not initiate any recruitment of macrophages into the retina (Figure 3c, d). However, we found that S1P-treatment significantly increased the accumulation of microglia to the inner limiting membrane (Figure 3c, d). Collectively, these data indicate that the signaling pathways activated by S1P include Jak/Stat and mTOR, but not MAPK. These pathways are predominantly activated in MG, and high levels of S1P may elicit a migratory response in resident retinal microglia. S1P receptor transcripts are not highly expressed in microglia (see Figure 1); it is most probable that this response is elicited indirectly through S1PRs expressed by MG and secondary production of chemotactic signaling. There are no reliable cell-level readouts of NFκB signaling in the chick retina (Palazzo et al., 2020). Thus, we did not probe for activation of NFκB in retinas treated with S1P.
 
@@ -56,9 +64,29 @@ S1P signaling is known to activate different cell signaling pathways including M
 
 **Figure 3.:** Retinas were obtained from eyes injected with vehicle or S1P at P7 and P8, and harvested 4 hr after the last injection. Retinal sections were labeled with antibodies to Sox2 (red) and pS6 (green), pStat3 (green), or pERK1/2 (a), or antibodies to CD45 (green) or DNA stain (Draq5; red) (c). Arrows indicate the nuclei of Müller glia (MG). Calibration bars in panels a and c represent 50 µm. Areas indicated by cyan or yellow are enlarged twofold in adjacent panels. The histograms in (b) illustrate the mean (bar ± SD) fluorescence intensity sum for pS6, pStat3, pERK1/2, and cFos in MG. The histograms in (d) illustrate the mean (bar ± SD) numbers of CD45+ microglia in the GCL–ONL, at the INL, or whole retina. Each dot represents one biological replicate and blue lines connect replicates from control and treated retinas from one individual. Significance of difference (p-values) was determined by using a paired t-test. Abbreviations: ONL – outer nuclear layer, INL – inner nuclear layer, IPL – inner plexiform layer, GCL – ganglion cell layer, ns – not significant.
 
-## S1P signaling and the formation of proliferating MGPCs
+### S1P signaling and the formation of proliferating MGPCs
 
 We next investigated how activation or inhibition of S1P-signaling influences the formation of proliferating MGPCs in damaged retinas. To test how S1P-signaling influences the formation of MGPCs, we applied different small molecule agonists and antagonists to different enzymes and receptors involved in S1P signaling before, with and after NMDA-treatment (Figure 4a). We found significantly reduced numbers of EdU+Sox2+ MGPCs in damaged retinas treated with S1PR1 agonist (SEW2871) (Figure 4a, c). Conversely, we found significantly increased numbers of proliferating MGPCs in damaged retinas treated with S1PR1 antagonists (MT1303 or NIBR0213) (Figure 4a, d, e). Similarly, S1PR1/3 inhibition (VPC23019) increased numbers of proliferating MGPCs (Figure 4a, f), but S1PR3 inhibition alone (TY52156) had no effect on numbers of proliferating MGPCs (data not shown).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/102151/elife-102151-fig4-v1.jpg)
+
+**Figure 4.:** Schematic diagram of the receptors and enzymes involved in S1P signaling (a). The diagram includes the different agonists and antagonists that were applied to target the different components of the S1P pathway (a). Eyes were injected with vehicle or drug at P6 and P7, NMDA ± drug at P8, EdU ± drug at P9, EdU at P10, and retinas harvested at P11. Retinal sections were labeled for EdU incorporation and antibodies to Sox2 (b) or Sox9, neurofilament, and phospho-histone H3 (k). Arrows indicate Müller glia (MG), small double arrows indicate presumptive EdU-labeled microglia, and hollow arrow-heads indicate presumptive proliferating NIRG cells. The calibration bar represents 50 µm (b, k). Histograms (c–j, m–p) illustrate the mean (bar ± SD), each dot represents one biological replicate, and blue lines connect counts from control and treated retinas from one individual. Significance of difference (p-values) was determined by using a paired t-test. Abbreviations: ONL – outer nuclear layer, INL – inner nuclear layer, IPL – inner plexiform layer, GCL – ganglion cell layer, ns – not significant, NMDA – N-methyl-D-aspartate, EdU – 5-ethynyl-2-deoxyuridine.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/102151/elife-102151-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Arrows indicate Müller glia (MG), small double arrows indicate EdU-labeled microglia, and hollow arrow-heads indicate proliferating NIRG cells. The calibration bar represents 50 µm (b). Histograms (c–j) illustrate the mean (bar ± SD), each dot represents one biological replicate and blue lines connect counts from control and treated retinas from one individual. Significance of difference (p-values) was determined by using a paired t-test. Abbreviations: ONL – outer nuclear layer, INL – inner nuclear layer, IPL – inner plexiform layer, GCL – ganglion cell layer, NIRG – non-astrocytic inner retinal glial cell, ns – not significant, EdU – 5-ethynyl-2-deoxyuridine.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/102151/elife-102151-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Dying cells were labeled for fragmented DNA using the TUNEL method (red), and all nuclei were labeled with DAPI (blue) (a). Arrows indicate TUNEL-positive nuclei of dying cells. The calibration bar represents 50 µm. Histograms (b–h) illustrate the mean (bar ± SD), each dot represents one biological replicate, and blue lines connect counts from control and treated retinas from one individual. Significance of difference (p-values) was determined by using a paired t-test. Abbreviations: ONL – outer nuclear layer, INL – inner nuclear layer, IPL – inner plexiform layer, GCL – ganglion cell layer, ns – not significant.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/102151/elife-102151-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Eyes were injected with vehicle or drug at P6 and P7, NMDA at P8, EdU at P9 and P10, and retinas harvested at P11. Retinal sections were labeled for EdU and antibodies to Sox2 and CD45. Dying cells were labeled for fragmented DNA using the TUNEL method. Histograms represent the mean (bar ± SD) and each dot represents one biological replicate (blue lines connect data points from control and treated retinas from the same individual). Significance of difference (p-values) was determined by using a paired t-test. Abbreviations: EdU – 5-ethynyl-2-deoxyuridine, NMDA – N-methyl-D-aspartate.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/102151/elife-102151-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Eyes were injected with vehicle ± drug at P6 and P7, NMDA ± drug at P8, EdU ± drug at P9, EdU at P10, and retinas harvested 24 hr later at P11. Arrows indicate Müller glia (MG), small double arrows indicate EdU-labeled microglia, and hollow arrow-heads indicate proliferating NIRG cells (a). The calibration bar represents 50 µm. Histograms (b) illustrate the mean (bar ± SD), each dot represents one biological replicate and blue lines connect replicates from control and treated retinas from one individual. Significance of difference (p-values) was determined by using a paired t-test. Abbreviations: INL – inner nuclear layer, ns – not significant, EdU – 5-ethynyl-2-deoxyuridine.
 
 We also applied FTY720 (Fingolimod), which has been used in clinical applications. FTY720 is known to act as an agonist at S1P receptors and then induce internalization and deactivation after continuous exposure, whereas other agonists are believed to induce persistent changes in signaling through S1P receptors (Jo et al., 2005; Sykes et al., 2014). FTY720 treatment significantly reduced numbers of proliferating MGPCs (Figure 4a, h). Finally, we targeted the metabolism of S1P with inhibitors to SPHK1 or SGPL1, enzymes that synthesize and degrade S1P, respectively. Inhibition of SPHK1 (PF543 or SKI-II), which is expected to decrease levels of S1P, significantly increased numbers of proliferating MGPCs (Figure 4a, h, i) By comparison, inhibition of SGPL1 with S1PL-in-31, which is expected to increase levels of S1P, significantly decreased in numbers of proliferating MGPCs (Figure 4a, b, j).
 
@@ -70,13 +98,21 @@ Ceramide synthesis and ceramidase genes have variable patterns of expression in 
 
 MG reprogramming remains robust in mature chick retinas from P7 and up to P30, but the zones of proliferation become increasingly confined to the peripheral regions of retina (Fischer and Reh, 2003b). In post-hatch chick retina, it is likely that MG ‘maturation’ occurs in a central-to-peripheral gradient, much like the process neuronal differentiation in the embryonic retina. Accordingly, a zone of regeneration-competent MG persists in the retinal periphery in maturing chicks. We have previously shown that the expression of Notch-related genes differs by retinal region and chick age, and Notch inhibition suppresses numbers of MGPCs in central but not peripheral regions (Ghai et al., 2010). By comparison, we observed that SPHK1 expression was low in the central retina at 48 HPI, whereas SPHK1 expression was high in peripheral retina (Figure 4—figure supplement 4a). Patterns of S1PR1 expression in MG were similar in central and peripheral retinal regions (data not shown). Consistent with these patterns of expression, we observed increased numbers of MGPCs in central retinas treated with S1PR1 inhibitor, whereas SPHK1 inhibitor had no effect on numbers of proliferating MGPCs in the central retina (Figure 4—figure supplement 4b). We conclude that as MG mature the ability to upregulate SPHK1 in response to damage is lost in central regions of the retina.
 
-## Cell signaling downstream of SPHK1 inhibition in damaged retinas
+### Cell signaling downstream of SPHK1 inhibition in damaged retinas
 
 There are several known downstream targets of S1PR1 signaling which may be active in MG after retinal damage. To identify second messenger pathways that were affected by diminished levels of S1P in damaged retinas, we applied SPHK1 inhibitor before, with and after NMDA-treatment and collected retinas 24 HPI. We found a significant decrease in levels of ATF3, pS6, and pSmad1/5/9 in MG in damaged retinas treated with SPHK1 inhibitor (Figure 5a–e). By comparison, phosphorylated ERK1/2 and cFos were not significantly different in MG in damaged retinas treated with SPHK1 inhibitor (Figure 5—figure supplement 1). These findings were relatively consistent with our previous findings, where mTOR activation was observed with exogenous S1P-treatment, but there was no change to pERK1/2 or immediate early gene cFOS (Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/102151/elife-102151-fig5-v1.jpg)
+
+**Figure 5.:** Eyes were injected with vehicle or PF543 at P7, NMDA ± PF543 at P8, EdU ± PF543 P9, and retinas harvested 4 hr after the last injection. Sections of the retina were labeled for DNA (Draq5; red), ATF3 (green), pS6 (green), Sox2 (red), and pSmad1/5/9 (green) (a). Draq5 and Sox2 are included as a partial-field overlay (red, a). Arrows indicate the nuclei of Müller glia (MG). Calibration bar represents 50 µm (a). Eyes were injected with vehicle, PF543, or NMDA at P7, treated with vehicle or PF543 at P8, and harvested 4 hr later (e). LC/MS was used to quantify levels of S1P in retinas treated with saline, NMDA, PF543, NMDA + PF543, or NMDA + SGPL-in-31. Histograms (b–f) illustrate the mean (bar ± SD), each dot represents one biological replicate and blue lines connect counts from control and treated retinas from one individual. Significance of difference (p-values) in b, c, and d was determined by using a paired t-test. Significance of difference (p-values) in e and f was determined using a one-way ANOVA with Šidák correction for multiple comparisons. Abbreviations: ONL – outer nuclear layer, INL – inner nuclear layer, IPL – inner plexiform layer, GCL – ganglion cell layer, ns – not significant, NMDA – N-methyl-D-aspartate, EdU – 5-ethynyl-2-deoxyuridine.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/102151/elife-102151-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Eyes were injected with vehicle or drug at P7, NMDA at P8, vehicle or drug at P9, and harvested 4 hr later. Retinal sections were labeled with DAPI and for antibodies to Sox2, cFos, GS, and pERK (a). Histograms represent the mean (bar ± SD) and each dot represents one biological replicate (blue lines connect data points from control and treated retinas from the same individual) (b, c). Significance of difference (p-values) was determined by using a paired t-test. Abbreviations: EdU – 5-ethynyl-2-deoxyuridine, NMDA, N-methyl-D-aspartate.
+
 Next, we sought to validate S1P levels using liquid chromatography–mass spectrometry (LC/MS). We collected whole retinas 48 hr after saline treatment, Sphk1 inhibitor (PF543) treatment, NMDA-treatment, NMA + PF543 treatment, or NMDA + S1P lyase inhibitor (S1PLin31) treatment. As predicted, Sphk1 inhibitor treatment decreased levels of S1P in undamaged retinas (Figure 5e). We found that S1P levels increased in NMDA-treated retinas, which correlated well with increased Sphk1 transcript levels after damage. Surprisingly, SPHK1 inhibitor treatment was not sufficient to ameliorate high levels of S1P induced by NMDA. It is possible that the effects of PF-543 (koff t1/2 = 8.5 min) subsided in the 24 hr prior to tissue collection. Alternatively, this observation may reflect the rapid and transient nature of SPHK1 activity after damage, which is consistent with prior experimental observations; we found that S1P/S1PR1-targeting drugs had to be applied prior to NMDA damage to produce robust effects on MGPC proliferation (data not shown). S1P lyase inhibitor treatment robustly boosted levels of S1P in damaged retinas (Figure 5f). In summary, differences in levels of S1P between undamaged retinas and NMDA-treatment are consistent with observed Sphk1 RNA levels (Figure 2e, f). Further, we validated the targeting activity of two drugs, PF543 and S1PLin31.
 
-## Inhibition of S1P signaling and neurogenesis
+### Inhibition of S1P signaling and neurogenesis
 
 We next investigated whether S1P signaling affects the neural differentiation of MGCPs after NMDA-treatment. We find that levels of S1PR1 were rapidly downregulated in activated MG but later rose in MG returning to resting, and S1PR3 was highly expressed in a percent of MGPCs (see Figure 1). We hypothesized that S1P receptor activity during this period of cell-fate specification of MGPC progeny may restrict neural differentiation. We applied S1P pathway inhibitors starting 2 days after NMDA, after MG have committed to cell-cycle re-entry (Fischer and Reh, 2003a). We found that SPHK1, S1PR1, and S1PR1/3 inhibitors applied after NMDA had no significant effect on the proliferation of MGPCs (Figure 6a, b). We found a significant increase in EdU+ amacrine-like cells that express HuC/D (Figure 6c, d). There was no significant difference in new Calretinin+ (Figure 6e, f) or Ap2a+ neurons (not shown) across treatment groups. Further, we found that while many EdU+ progeny migrated distally into the ONL, these cells did not co-label for the photoreceptor marker visinin (Figure 6g). These findings suggest that inhibiting S1P synthesis or receptor activity enhances the neural differentiation of MGPC progeny to differentiate into HuC/D+ amacrine-like neurons after retinal damage. However, the increase in differentiation of amacrine-like cells did not include differentiation of subsets of amacrine cells that express Ap2a or calretinin.
 
@@ -84,13 +120,13 @@ We next investigated whether S1P signaling affects the neural differentiation of
 
 **Figure 6.:** Eyes were injected with NMDA at P7, EdU at P9, vehicle or drug at P10 and P11, and retinas harvested at P12. Retinas sections were labeled for EdU (red; a, c, e, g) and antibodies to HuC/D (green; c), calretinin (green; e), or visinin (green; g). Arrows indicate the nuclei of regenerated neurons. Calibration bars in panels a, c, e, and g represent 50 µm. Histograms represent the mean (bar ± SD) and each dot represents one biological replicate (blue lines connect data points from control and treated retinas from the same individual) (b, d, f). Significance of difference (p-values) was determined by using a paired t-test. Abbreviations: ONL – outer nuclear layer, INL – inner nuclear layer, IPL – inner plexiform layer, GCL – ganglion cell layer, ns – not significant, NMDA – N-methyl-D-aspartate, EdU – 5-ethynyl-2-deoxyuridine.
 
-## Inhibition of S1P signaling rescues MGPC proliferation in damaged retinas missing microglia
+### Inhibition of S1P signaling rescues MGPC proliferation in damaged retinas missing microglia
 
 In chicks and zebrafish, depletion of microglia prior to damage stunts the formation of MGPCs and neural regeneration in the retina (Fischer et al., 2014; Huang et al., 2012). We have previously identified several factors that can ‘rescue’ reprogramming in the absence of microglia, including NFκB activators, FGF2, and HBEGF (El-Hodiri et al., 2023; Palazzo et al., 2020). In addition, we have found increased numbers of dying cells in NMDA-damaged retinas missing microglia (Todd et al., 2019). Given that S1P signaling is known to be involved in regulating inflammatory responses involving immune cells (Obinata and Hla, 2019), we sought to determine whether the ablation of microglia/macrophages from the retina influenced the expression of S1P-related genes. Accordingly, we probed scRNA-seq libraries of normal and damaged retinas with and without microglia (saline and clodronate saline, respectively); the generation of these libraries has been described previously (El-Hodiri et al., 2023), In short, eyes were treated with saline or clodronate liposomes at P6, treated with saline or NMDA at P10, and retinas were harvested at P11. Consistent with previous reports (Fischer et al., 2014; Zelinka et al., 2012), a single intravitreal injection of clodronate liposomes effectively eliminated >99% of microglia from the retina (not shown). Analyses of scRNA-seq libraries of MG from undamaged and NMDA-damaged retinas with and without microglia showed that many components of S1P signaling were upregulated in resting MG in undamaged retinas (Figure 7a–I; Figure 7—source data 1). These genes included S1PR1, S1PR3, SPHK1, SGPL1, and ASAH1 (Figure 7d–i). Notably, S1PR1 expression was significantly diminished in undamaged retinas treated with clodronate (microglia-ablated) (Figure 7d, j; Figure 7—source data 1). Interestingly, CERS6 was significantly upregulated in MG and other retinal cells in undamaged saline-clodronate retinas (Figure 7j–m; Figure 7—source data 1). In MG other S1P-related factors that were up- or downregulated with NMDA-treatment were not significantly affected by the ablation of microglia. However, in neuronal cells many factors (including SPGL1) normally upregulated with NMDA showed diminished levels of expression when microglia were absent, indicating that microglial reactivity is a driver of S1P metabolism in retinal neurons (Figure 7k–m; Figure 7—source data 1).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/102151/elife-102151-fig7-v1.jpg)
 
-**Figure 7.:** Retinas were obtained from eyes injected with saline or clodronate liposomes at P6, saline or NMDA at P10, and tissues harvested at 24 hr after the last injection. UMAP ordering of cells is displayed for libraries of origin and distinct clusters of cells (a, b). Number of cells in each UMAP cluster and library of origin are listed in panel c. The identities of clusters of cells in UMAP plots were well-established markers (see methods). UMAP heatmap plots illustrate the patterns and levels of expression of S1PR1, S1PR2, S1PR3, SPHK1, SGPL1, and ASAH1 (d–i). Different cell types, including Müller glia (MG) (j), amacrine cells (k), bipolar cells (ON and OFF cells; l), and retinal ganglion cells (RGCs; m) were bioinformatically isolated and dot plots were generated to assess levels of expression by treatment (library of origin). Dot plots illustrate the percentage of expressing cells (dot size) and significant (p < 0.01) changes in expression levels (heatmap) for genes for cells from retinas treated with saline versus saline-clodronate and NMDA versus NMDA-clodronate. Significance of difference was determined by using a Wilcox rank sum with Bonferoni correction. Abbreviations: NMDA – N-methyl-D-aspartate, UMAP – uniform manifold approximation and projection.Figure 7—source data 1.
+**Figure 7.:** Retinas were obtained from eyes injected with saline or clodronate liposomes at P6, saline or NMDA at P10, and tissues harvested at 24 hr after the last injection. UMAP ordering of cells is displayed for libraries of origin and distinct clusters of cells (a, b). Number of cells in each UMAP cluster and library of origin are listed in panel c. The identities of clusters of cells in UMAP plots were well-established markers (see methods). UMAP heatmap plots illustrate the patterns and levels of expression of S1PR1, S1PR2, S1PR3, SPHK1, SGPL1, and ASAH1 (d–i). Different cell types, including Müller glia (MG) (j), amacrine cells (k), bipolar cells (ON and OFF cells; l), and retinal ganglion cells (RGCs; m) were bioinformatically isolated and dot plots were generated to assess levels of expression by treatment (library of origin). Dot plots illustrate the percentage of expressing cells (dot size) and significant (p < 0.01) changes in expression levels (heatmap) for genes for cells from retinas treated with saline versus saline-clodronate and NMDA versus NMDA-clodronate. Significance of difference was determined by using a Wilcox rank sum with Bonferoni correction. Abbreviations: NMDA – N-methyl-D-aspartate, UMAP – uniform manifold approximation and projection.
 
 We next tested whether intravitreal injections of inhibitors to SPHK1 and S1PR1 rescued the deficit in MGPC proliferation and increased cell death in damaged retinas missing microglia. As described previously, delivery of clodronate liposomes prior to damage dramatically reduced numbers of EdU+ MGPCs (Figure 8a–d). However, injections of S1PR1 or SPHK1 inhibitors with and following NMDA significantly increased numbers of proliferating MGPCs in retinas missing microglia (Figure 8a–d). However, the number of proliferating MGPCs in S1P inhibitor-treated retinas was significantly lower than in NMDA-treated retinas with activated microglia (Figure 8b–d), indicating a partial rescue of MGPC proliferation. Reactive microglia appear to support neuroprotection in the mouse retina (Todd et al., 2019), but exacerbate NMDA-induced cell death in the chick retina (Fischer et al., 2015). Interestingly, we found that there were differences in cell death between different S1PR1 inhibitors. Similar to retinas where microglia were present (Figure 7—source data 1), there were significantly fewer TUNEL+ nuclei in retinas treated with MT1303 compared to numbers seen in control clodronate/NMDA retinas (Figure 8e). However, NIBR0213-treated retinas without microglia contained higher numbers of TUNEL+ nuclei (Figure 8f), suggesting that the two S1PR1 inhibitors may have different specificities or toxicities. We found that SPHK1 inhibitor-treated retinas had less cell death compared to clodronate/NMDA retinas (Figure 8g). In summary, these findings indicate that S1P signaling is regulated by signals produced by microglia in the retina, and inhibition of S1P signaling is partially rescues the proliferation of MGPCs and reduces cell death in microglia-depleted retinas.
 
@@ -104,7 +140,7 @@ In retinas where microglia have been ablated, levels of S1PR1 may be transcripti
 
 **Figure 9.:** Retinas were obtained from eyes injected with vehicle or SIS3 at P7 and P8, and harvested at P9. Retinal sections were labeled with antibodies to Sox2 (red) and FISH probes to S1PR1 (green puncta; a). Solid arrows indicate MG nuclei associated with numerous FISH puncta. Calibration bar represents 50 µm. Histograms (c–j) illustrate the mean (bar ± SD), each dot represents one biological replicate and blue lines connect replicates from control and treated retinas from one individual. Significance of difference (p-values) was determined by using a paired t-test. Abbreviations: ONL – outer nuclear layer, INL – inner nuclear layer, IPL – inner plexiform layer, GCL – ganglion cell layer, MG – Muller glia, ns – not significant.
 
-## Patterns of expression for S1P-related genes in human and zebrafish retinas
+### Patterns of expression for S1P-related genes in human and zebrafish retinas
 
 Comparative analyses of expression have proven useful in implicating important genes with highly conserved patterns of expression. For example, we have reported that NFIA and NFIB show similar patterns of expression in MG of zebrafish, chicks, mice, and large mammals early after retinal damage (Clark et al., 2019; El-Hodiri et al., 2022; Hoang et al., 2020). However, Nfib is upregulated in non-neurogenic mouse MG returning to a resting state after NMDA, whereas NFIA/B/X expression is lowered in late neurogenic MGPCs of chicks and zebrafish (Hoang et al., 2020). These comparative studies led to the development of Nfia/b/x;Rbpj cKO mice in which ~45% of targeted MG transdifferentiate into neurons without retinal damage (Le et al., 2023). Accordingly, we sought to compare patterns and levels of expression of S1P-related genes in human and zebrafish retinas.
 
@@ -120,11 +156,11 @@ We next interrogated snRNA-seq libraries of zebrafish retinas recently described
 
 Pro-inflammatory signaling acts differentially across species to influence the regenerative capacity of MG after damage. It is important to understand how pro-inflammatory signaling fits into the complex network of pathways that control MG reprogramming. We provide evidence that S1P signaling is among the network of pro-inflammatory pathways the regulate the responses of MG to retinal damage. Here, we report patterns of expression of S1P-signaling components and the effects of activating or inhibiting S1P signaling on regeneration in the chick retina. This study highlights the significant role of S1PR1, which is highly expressed in resting MG and non-neurogenic MGPCs, in suppressing damage-dependent MGPC proliferation and neuronal differentiation. Inhibition of S1PR1 promoted MGPC cell-cycle re-entry and enhanced the number of regenerated amacrine-like cells after retinal damage. Inhibition of S1P synthesis produced similar effects to inhibiting S1PR1 to promote MGPC formation, and inhibiting S1P degradation produced similar effects to activating S1PR1 to inhibit MGPC formation.
 
-## Specificity of drugs
+### Specificity of drugs
 
 We report cell-specific effects of different agonists and antagonists that increase or decrease S1P signaling that is centered on the MG. Since we compare cell-level effects within contralateral eyes wherein one retina is exposed to vehicle and the other is exposed to vehicle plus drug, it seems highly likely that the drugs are responsible for eliciting effects upon the MG. It seems unlikely that the cellular responses that we describe resulted from drugs acting at extra-retinal tissues which secondarily release factors that selectively impact the MG and elicit cellular responses that are inferred by the different agonists/antagonists and consistent with patterns of expression for S1P-related genes. For example, using scRNA-seq and FISH, we find that S1PR1 and S1PR3 expression is predominant in MG. Thus, we expect that S1PR1/3 inhibitors directly act on MG and this is consistent with readouts of cell signaling with injections of S1P in undamaged retinas. We show that SPHK1 and SGPL1, which encode the enzymes that synthesize or degrade S1P, are expressed by different retinal cell types, including the MG. The efficacy of the drugs that target SPHK1 and SGPL1 was supported by findings that inhibition of S1P synthesis significantly decreased levels of S1P in normal retinas, whereas inhibition of S1P degradation increased levels of S1P in damaged retinas. Further, inhibition of SPHK1 (to decrease levels S1P) results in decreased levels of ATF3, pS6 (mTor), and pSMAD1/5/9 in MG, consistent with the notion that reduced levels of S1P in the retina impacts signaling at S1PR1/3 that are expressed by MG. Finally, we find similar cellular responses to chemically different agonists or antagonists that target the same protein, and we find opposite cellular responses to agonists and antagonists that target the same protein, which is expected to be complimentary if the drugs are acting specifically at the intended targets.
 
-## Regulation of S1PR1 expression
+### Regulation of S1PR1 expression
 
 The identity of factors that downregulate S1PR1 in MG in damaged retinas remains uncertain. Similarly, the identity of the factors that maintain S1PR1 expression in MG in undamaged resting retinas remains uncertain. Previous studies have found S1P production and S1P receptor activation are regulated by several growth factor receptors, including EGFR and VEGFR (Igarashi et al., 2003; Paugh et al., 2008; Sukocheva et al., 2006). In the current study, FGF and insulin treatment were sufficient to downregulate S1PR1 without retinal damage. Further, we found that TGFβ-dependent Smad3 activity stimulates S1PR1 expression in resting retinas. These findings support prior in vitro studies which report that TGFβ treatment robustly drives upregulation of S1PR1-3 mRNA and protein (Lin et al., 2022; Yang et al., 2018). We have previously reported that TGFβ1 is expressed by microglia and TGFβ3 is expressed by neurons in resting retinas, and TGFβ-treatment in damaged retinas suppresses MGPC formation (El-Hodiri et al., 2023; Todd et al., 2017). Thus, homeostatic TGFβ/Smad2/3 signaling between microglia and MG may maintain S1PR1 expression to promote quiescence in MG.
 
@@ -132,7 +168,7 @@ Several TFs have been found to influence S1PR1 expression. KLF2, FOXF1, STAT1, a
 
 S1P synthesis in MG in damaged retinas may be a symptom of glial maturation and loss of the ability to reprogram into progenitor-like cells. Unlike MG in peripheral regions of retina, SPHK1 is not increased in MG and inhibition of SPHK1 does not stimulate the formation of MGPCs in central regions of retina (Figure 4—figure supplement 4). Similarly, we have previously reported that Notch-related genes show different patterns of expression in the central and peripheral regions of the retina, and expression levels differentially change at P0, P7, and P21 (Ghai et al., 2010). We reported that Notch inhibition reduced cell death and numbers of MGPCs in central regions but not peripheral regions. Because retinal differentiation occurs in a central-to-peripheral gradient and zones of MGPC proliferation become increasingly confined to the periphery in post-hatch birds (Fischer, 2005), we hypothesize that maturing MG undergo a shift in maturity or reprogramming competence in a central-to-peripheral gradient. Notch and S1P signaling may be components of this maturation process, but spatial transcriptomic analyses are needed to reveal key differences in signaling pathway gene expression which confer a persistent competence for MG-mediated regeneration in the periphery of chick retinas.
 
-## S1PR1 activation and downstream inflammatory signaling
+### S1PR1 activation and downstream inflammatory signaling
 
 We and others have reported that inflammatory cytokine signaling is necessary for the initiation of MG cell-cycle re-entry in chicks and zebrafish (Fischer et al., 2014; Silva et al., 2020), but persistent microglial reactivity and NFκB signaling suppress MG reprogramming (Palazzo et al., 2020; White et al., 2017). In the current study, we report that S1PR1 activity suppresses MGPC proliferation and neurogenesis without impacting microglia. We report differential activation of Jak/Stat, mTOR, and Smad pathways in MG treated with exogenous S1P or SPHK1 inhibitor. These pathways are activated following NMDA-treatment and are necessary for MGPC formation (Todd et al., 2016a; Todd et al., 2017; Zelinka et al., 2016).
 
@@ -140,82 +176,358 @@ S1PR1 inhibitors and NFκB inhibitors produce similar effects on MGPC proliferat
 
 Although S1P signaling has been shown to activate the NFκB pathway, we find distinct differences between the impacts of S1P and NFκB signaling on cell signaling in MG, neuronal differentiation of the progeny of MGPCs and neuronal survival in damaged retinas. In the current study we demonstrate that intravitreal injections of S1P activate mTor (pS6) and Jak/Stat3 (pStat3) signaling in MG. Further, inhibition of S1P synthesis decreased ATF3, mTor (pS6) and pSmad1/5/9 levels in activated MG in damaged retinas. By contrast, inhibition of NFκB signaling in damaged chick retinas did not impact the above-mentioned cell signaling pathways (Palazzo et al., 2020). However, we cannot exclude the possibility of cross-talk between NFκB and different cell signaling pathways. Further, inhibition of NFκB signaling potently decreases numbers of dying cells and increases numbers of surviving ganglion cells (Palazzo et al., 2020). Consistent with these findings, a TNF orthologue, which activates NFκB signaling, exacerbates cell death in damage chick retinas (Palazzo et al., 2020). By contrast, five different drugs targeting S1P signaling had no effect on numbers of dying cells and only one S1PR1 inhibitor modestly decreased numbers of dying cells (current study). Although different inhibitors of NFκB-signaling suppressed the proliferation of microglia in damaged retinas (Palazzo et al., 2020), all of the S1P-targeting drugs had no effect upon the proliferation of microglia (current study). In addition, inhibition of NFκB does not influence the neurogenic potential of MGPCs (Palazzo et al., 2020), whereas inhibition of S1P receptors or inhibition of S1P synthesis increased the differentiation of amacrine-like neurons in damaged retinas (current study). Collectively, our findings indicate that S1P signaling through S1PR1 and S1PR3 in MG has distinct effects upon cell signaling pathways, neuronal regeneration and cell survival compared to the effects of pro-inflammatory cytokines and NFκB-signaling in the retina.
 
-## S1P and neuronal differentiation
+### S1P and neuronal differentiation
 
 We found that inhibitors to SPHK1, S1PR1, or S1PR1/3 increased numbers of cells that differentiated as amacrine-like cells that expressed HuC/D. However, none the progeny of MGPCs differentiated into cells that expressed calretinin (a subset of amacrine cells) or visinin (photoreceptors). There is currently no evidence that MGPCs in the chick retina can produce progeny that differentiate into photoreceptors. By contrast, we recently reported that inhibition of ID factors enhances neuronal differentiation of calretinin-expressing MGPC-derived cells (Taylor et al., 2024). Calretinin may be expressed by a subset of amacrine cells not specified by inhibition of S1P receptors. Alternatively, the progeny of MGPC do not fully differentiate to the point where calretinin is expressed when S1P signaling is diminished. Control over the differentiation of MGPC progeny is regulated by different cell signaling pathways. For example, activation of retinoic acid receptors stimulates neuronal differentiation (Todd et al., 2018), whereas signaling through Notch (Ghai et al., 2010; Hayes et al., 2007), glucocorticoid receptors (Fischer et al., 2014), and Jak/Stat3 pathway (Todd et al., 2016b) suppress neuronal differentiation. It is possible that activation of S1P receptors acts through Jak/Stat3 or possibly NFκB to suppress the neuronal differentiation of MGPC progeny. Our data indicate that S1PR1 is downregulated by activated MG and proliferating MGPCs. However, S1PR3 is upregulated in MGPCs and, thus, it is likely that signaling through S1PR3 mediates the cell-fate specification of MGPC progeny.
 
-## S1P signaling and neuroprotection
+### S1P signaling and neuroprotection
 
 The current study provides evidence that inhibition of the S1P pathway supports neuron survival in the damaged chick retinas. In retinas where microglia were absent, we found that SPHK1 inhibitor PF543 and S1PR1 inhibitor MT1303 alleviated retinal cell death. In retinas where microglia were present, only MT1303 significantly reduced numbers of dying cells. As mentioned previously, NFκB-related genes are regulated in a similar pattern to S1P-related genes; inhibiting NFκB signaling supports inner retinal cell and retinal ganglion cell survival (Palazzo et al., 2020). In contrast, we recently reported that Inhibitor of DNA-binding 4 (ID4) factor is transiently upregulated in MG after NMDA and may support the survival of inner retinal neurons (Taylor et al., 2024). Other factors such as fatty acid binding proteins (FABPs) and Midkine are also rapidly upregulated in activated MG and these factors are neuroprotective (Carlson et al., 2006; Campbell et al., 2022).
 
 Interestingly, one of the S1PR1 inhibitors, NIBR0213, increased cell death in damaged retinas where microglia were absent. This disparity might be explained by differences in inhibitor specificity. MT1303 is a potent functional antagonist which induces receptor internalization and degradation, whereas NIB0213 is slightly less potent and does not drive internalization (Quancard et al., 2012; Shimano et al., 2019). Further, MT1303 is a prodrug (requiring phosphorylation) and has an elimination half-life of several days, whereas direct-acting NIBR0213 has a half-life of a few hours (Quancard et al., 2012; Shimano et al., 2019). Studies in mice suggest that sphingosine kinase and receptor inhibition ameliorate the death of retinal ganglion cells following NMDA-treatment (Basavarajappa et al., 2023; Nakamura et al., 2021). Interestingly, studies have described the neuroprotective effects of fingolimod (S1PR1 modulator) in models of glaucoma in rodents (Shiwani et al., 2021). However, we did not find any effect of fingolimod on cell death.
 
-## S1P activity in retinal neurons and microglia
+### S1P activity in retinal neurons and microglia
 
 Although S1PR1 expression was predominantly observed in MG, S1P-signaling components were not restricted to these glial cells. We found that SPHK1, which catalyzes the synthesis of S1P from sphingosine, was expressed by cells scattered across different types of retinal cells. Further, SGPL1, which catalyzes the degradation of S1P, had dynamic patterns of expression following NMDA-treatment in different types of retinal cells, including amacrine cells and microglia. These finding suggest that S1P is secreted by these cells to bind to S1P receptors on MG. S1P:S1PR paracrine signaling has been observed between neural cells and astrocytes and is hypothesized to be necessary for proper astrocyte morphogenesis during synapse formation (Alam et al., 2023; Singh et al., 2022). Another possibility is that S1P produced by SPHK2. However, SPHK2 is not annotated in the Gallus gallus genome, and we could not identify any genes that aligned significantly with SPHK2 from other bird species. Further, this gene was not expressed at significant levels in scRNA libraries created from mouse, zebrafish, or pig retinas. A final possibility is that changes in S1P metabolism in retinal neurons are a byproduct of the recycling of other sphingolipid molecules in response to NMDA damage.
 
-## The sphingolipid ‘rheostat’ in the retina
+### The sphingolipid ‘rheostat’ in the retina
 
 S1P synthesis is dependent on the availability of ceramides and ceramide-related enzymes like acid ceramidase (ASAH1). Whereas S1P-signaling triggers cell-cycle re-entry, ceramide accumulation drives cellular senescence (Simón et al., 2019). Similarly, the protective effects of S1P are countered by ceramides, which activate intrinsic and extrinsic apoptotic pathways (Simón et al., 2019). There is significant evidence that ceramide production must be tightly restricted by acid ceramidase, which converts ceramide into sphingosine, for retinal neurons to survive excitotoxic and hypoxic stress (Lewandowski et al., 2022; Nakamura et al., 2021; Sugano et al., 2019; Yu et al., 2019). Multiple groups have found that Cer 16:0 and CERS5 are markers for astrocytic inflammation and that astrocytic ceramide production is stimulated by TNF-α (de Wit et al., 2019; Fan et al., 2021; Kimura et al., 2000). In the current study, we observed dynamic regulation of ASAH1 expression after damage in the chick retina. However, application of a small molecule inhibitor to acid ceramidase had no significant effect on numbers of MGPCs or dying cells (Figure 4—figure supplement 3). Many studies have described the effects of ceramides on neuron survival, but additional research is needed to investigate the functional role of ceramides as part of the inflammatory and apoptotic signaling cascades in glial cells.
 
-## Conclusions
+### Conclusions
 
 In summary, our findings indicate that S1P:S1PR1 signaling plays significant roles in the initiation of MG dedifferentiation, formation of proliferating of MGPCs and specification of progeny toward a neurogenic identity. Our findings suggest that S1PR1 activity maintains quiescence in MG and acts to drive activate toward a resting phenotype. The expression of S1PR1 is regulated by microglia, neuronal damage and TGFβ/Smad3 signaling. Inhibitors to S1P synthesis or S1PR1 signaling promoted MGPC cell-cycle re-entry and enhanced neural differentiation. Interestingly, patterns of expression of S1P-related genes are highly conserved across vertebrates, namely high levels of expression of S1PR1 in the MG in chick, fish and human retinas. Activation of S1PR1 in MG is one of the key pro-inflammatory signaling pathways that control glial responses to neuronal damage, microglial activation, and the ability of MG to reprogram into neurogenic progenitor-like cells.
 
 ## Methods
 
-## Animals
+### Animals
 
 The animal use approved in these experiments was in accordance with the guidelines established by the National Institutes of Health and IACUC at The Ohio State University (protocol # 2009A0139-R5). Newly hatched P0 wildtype leghorn chicks (Gallus gallus domesticus) were obtained from Meyer Hatchery (Polk, Ohio). Post-hatch chicks were maintained in a regular diurnal cycle of 12 hr light, 12 hr dark (8:00 AM to 8:00 PM). Chicks were housed in stainless-steel brooders at 25°C and received water and Purina chick starter ad libitum.
 
-## Intraocular injections
+### Intraocular injections
 
 Chicks were anesthetized with 2.5% isoflurane mixed with oxygen from a non-rebreathing vaporizer. The technical procedures for intraocular injections were performed as previously described (Fischer et al., 1998). With all injection paradigms, both pharmacological and vehicle treatments were administered to the right and left eyes, respectively. Compounds were injected in 20 μl sterile saline. Hydrophobic compounds were injected with 20% DMSO in saline, according to solubility data provided by the vendors. Sphingosine and sphingosine-1 phosphate were injected with 0.05 mg/ml bovine serum albumin added as a carrier. 5-Ethynyl-2′-deoxyuridine (EdU) was injected into the vitreous chamber to label proliferating cells. Compounds included in this study are described in Table 1. For chicks between P7 and P14, we estimated volumes of 100 µl of liquid vitreous and 800 µl gel vitreous, and an average eye weight of 0.9 g (Oishi and Murakami, 1985; Prashar et al., 2009). Table 1 includes the ranges of reported in vivo ED50’s (50% effective dose; mg/kg) and the calculated initial maximum dose (mg/kg equivalent per eye). Doses were chosen based on estimates of the initial maximum ocular dose that were within the range of reported ED50’s. The S1P-targetting drugs are classified as BDDCS Class II, indicating low solubility but high cell permeability. Thus, it is highly probable that they diffuse across the inner limiting membrane to act within the retina, but it is also likely that their bioavailability is limited, requiring a higher dose, repeated doses and delivery in 20% DMSO. Injection paradigms are included in each figure.
 
-## Preparation of clodronate liposomes
+**Table 1.**
+ Pharmacological compounds.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Drug name</th>
+      <th>Dose (µg)</th>
+      <th>Source</th>
+      <th>Catalog number</th>
+      <th>ED50 (mg/kg)</th>
+      <th>Initial max dose (mg/kg equivalent per eye)</th>
+      <th>Vehicle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NMDA</td>
+      <td>73</td>
+      <td>Sigma</td>
+      <td>M3262</td>
+      <td>N/A</td>
+      <td>81.1</td>
+      <td>Saline</td>
+    </tr>
+    <tr>
+      <td>5-Ethynyl-2′-deoxyuridine</td>
+      <td>2</td>
+      <td>Thermo Fisher</td>
+      <td>A10044</td>
+      <td>N/A</td>
+      <td>2.2</td>
+      <td>Saline</td>
+    </tr>
+    <tr>
+      <td>Sphingosine (d18:1)</td>
+      <td>5</td>
+      <td>Avanti</td>
+      <td>860490P</td>
+      <td>N/A</td>
+      <td>5.5</td>
+      <td>Saline 1% BSA</td>
+    </tr>
+    <tr>
+      <td>Sphingosine-1 phosphate (d18:1)</td>
+      <td>5</td>
+      <td>Cayman</td>
+      <td>62570</td>
+      <td>0.02</td>
+      <td>5.5</td>
+      <td>Saline 1% BSA</td>
+    </tr>
+    <tr>
+      <td>Amiselimod (MT1303)</td>
+      <td>5</td>
+      <td>Cayman</td>
+      <td>20970</td>
+      <td>0.1–10.0</td>
+      <td>5.5</td>
+      <td>20% DMSO in saline</td>
+    </tr>
+    <tr>
+      <td>Defensamide (MHP)</td>
+      <td>5</td>
+      <td>Selleck</td>
+      <td>S6512</td>
+      <td>N/A</td>
+      <td>5.5</td>
+      <td>20% DMSO in saline</td>
+    </tr>
+    <tr>
+      <td>Fingolimod (FTY720)</td>
+      <td>10</td>
+      <td>Sigma</td>
+      <td>SML0700</td>
+      <td>0.1–2.3</td>
+      <td>11.1</td>
+      <td>20% DMSO in saline</td>
+    </tr>
+    <tr>
+      <td>NIBR0213</td>
+      <td>4</td>
+      <td>Cayman</td>
+      <td>21513</td>
+      <td>0.2–15.0</td>
+      <td>4.4</td>
+      <td>20% DMSO in saline</td>
+    </tr>
+    <tr>
+      <td>PF-543 (hydrochloride)</td>
+      <td>5</td>
+      <td>Cayman</td>
+      <td>17034</td>
+      <td>1.0–7.5</td>
+      <td>5.5</td>
+      <td>20% DMSO in saline</td>
+    </tr>
+    <tr>
+      <td>SKI-II</td>
+      <td>5</td>
+      <td>Sigma</td>
+      <td>S5696</td>
+      <td>1.0</td>
+      <td>5.5</td>
+      <td>20% DMSO in saline</td>
+    </tr>
+    <tr>
+      <td>S1PL-in-31</td>
+      <td>6</td>
+      <td>Aobious</td>
+      <td>AOB31664</td>
+      <td>2.0–10.0</td>
+      <td>6.7</td>
+      <td>20% DMSO in saline</td>
+    </tr>
+    <tr>
+      <td>SEW2871</td>
+      <td>5</td>
+      <td>Cayman</td>
+      <td>10006440</td>
+      <td>5–20</td>
+      <td>5.5</td>
+      <td>20% DMSO in saline</td>
+    </tr>
+    <tr>
+      <td>TY 52156</td>
+      <td>5</td>
+      <td>Cayman</td>
+      <td>19119</td>
+      <td>0.3–10</td>
+      <td>5.5</td>
+      <td>20% DMSO in saline</td>
+    </tr>
+    <tr>
+      <td>VPC 23019</td>
+      <td>4</td>
+      <td>Cayman</td>
+      <td>13240</td>
+      <td>0.1–1.0</td>
+      <td>4.4</td>
+      <td>20% DMSO in saline</td>
+    </tr>
+  </tbody>
+</table>
+
+### Preparation of clodronate liposomes
 
 Clodronate liposomes were prepared as described previously (Fischer et al., 2014; Van Rooijen, 1989). In short, 50 ng cholesterol (Sigma C3045) and 8 mg L-α-phosphatidyl-DL-glycerol sodium salt (Sigma P8318) were dissolved in chloroform and evaporated into a thin film in a round-bottom flask. Then, the liposome film was dissolved in sterile PBS containing 158 mg dichloro-methylene diphosphonate (Sigma D4434). The clodronate was encapsulated by the liposomes via sonication at 42,000 Hz. The clodronate liposomes in PBS were centrifuged at 10,000 RCF, gently resuspended in 150 ml sterile PBS, and injected 20 µl/eye immediately. Our previous studies have shown that this method ablates >99% of microglia/macrophages 2 days after intraocular injection (El-Hodiri et al., 2023).
 
-## Fixation, sectioning, and immunocytochemistry
+### Fixation, sectioning, and immunocytochemistry
 
 Retinas were fixed, sectioned, and immunolabeled as described previously (Fischer et al., 1998). To identify MG, we labeled sections for Sox2 or Sox9. Antibodies to Sox2 and Sox9 are known to label the nuclei or MG in the INL and the nuclei of astrocytes at the vitread surface of the retina (Ghai et al., 2010). None of the observed labeling was due to non-specific labeling of secondary antibodies or auto-fluorescence because sections labeled with secondary antibodies alone were devoid of fluorescence. Primary antibodies used in this study are described in Table 2. Secondary antibodies included donkey-anti-goat-Alexa488/594/647 (Life Technologies A11055; A11058; A21447), donkey-anti-rabbit-Alexa488/594 (Life Technologies A21206; A21207); and goat-anti-mouse-Alexa488/568 (Life Technologies A11001; A-11004) diluted to 1:1000 in PBS plus 0.2% Triton X-100. Nuclear staining was accomplished using DRAQ5 (Thermo 62251).
 
-## Labeling for EdU
+**Table 2.**
+ Antibody table – antigen, dilution, host, and sources of antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Dilution</th>
+      <th>Host</th>
+      <th>Clone/catalog number</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ATF3</td>
+      <td>1:200</td>
+      <td>Rabbit</td>
+      <td>NBP2-85816</td>
+      <td>NOVUS</td>
+    </tr>
+    <tr>
+      <td>Calretinin</td>
+      <td>1:1000</td>
+      <td>Rabbit</td>
+      <td>CR7697</td>
+      <td>Swant Immunochemicals</td>
+    </tr>
+    <tr>
+      <td>CD45</td>
+      <td>1:300</td>
+      <td>Mouse</td>
+      <td>HIS-C7</td>
+      <td>Cedi Diagnostic</td>
+    </tr>
+    <tr>
+      <td>cFos</td>
+      <td>1:200</td>
+      <td>Rabbit</td>
+      <td>K-25</td>
+      <td>Santa Cruz</td>
+    </tr>
+    <tr>
+      <td>ERK1/2</td>
+      <td>1:600</td>
+      <td>Rabbit</td>
+      <td>137F5</td>
+      <td>Cell Signaling</td>
+    </tr>
+    <tr>
+      <td>Glutamine synthetase</td>
+      <td>1:1000</td>
+      <td>Mouse</td>
+      <td>610517</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td>HuD/C</td>
+      <td>1:300</td>
+      <td>Mouse</td>
+      <td>A21271</td>
+      <td>Invitrogen</td>
+    </tr>
+    <tr>
+      <td>Neurofilament</td>
+      <td>1:2000</td>
+      <td>Mouse</td>
+      <td>RT97</td>
+      <td>DSHB</td>
+    </tr>
+    <tr>
+      <td>pHisH3</td>
+      <td>1:600</td>
+      <td>Rabbit</td>
+      <td>06–570</td>
+      <td>Millipore</td>
+    </tr>
+    <tr>
+      <td>pERK1/2</td>
+      <td>1:800</td>
+      <td>Rabbit</td>
+      <td>4370</td>
+      <td>Cell Signaling</td>
+    </tr>
+    <tr>
+      <td>pS6</td>
+      <td>1:750</td>
+      <td>Rabbit</td>
+      <td>2215</td>
+      <td>Cell Signaling</td>
+    </tr>
+    <tr>
+      <td>pSmad1/5/9</td>
+      <td>1:250</td>
+      <td>Rabbit</td>
+      <td>D5B10</td>
+      <td>Cell Signaling</td>
+    </tr>
+    <tr>
+      <td>pSTAT3</td>
+      <td>1:300</td>
+      <td>Rabbit</td>
+      <td>9131</td>
+      <td>Cell Signaling</td>
+    </tr>
+    <tr>
+      <td>Sox2</td>
+      <td>1:1000</td>
+      <td>Goat</td>
+      <td>KOY0418121</td>
+      <td>R&amp;D Systems</td>
+    </tr>
+    <tr>
+      <td>Sox9</td>
+      <td>1:2000</td>
+      <td>Rabbit</td>
+      <td>AB5535</td>
+      <td>Millipore</td>
+    </tr>
+    <tr>
+      <td>Visinin</td>
+      <td>1:50</td>
+      <td>Mouse</td>
+      <td>7G4</td>
+      <td>DSHB</td>
+    </tr>
+  </tbody>
+</table>
+
+### Labeling for EdU
 
 For the detection of nuclei that incorporated EdU, immunolabeled sections were fixed in 4% formaldehyde in 0.1 M PBS pH 7.4 for 5 min at room temperature. Samples were washed for 5 min with PBS, permeabilized with 0.5% Triton X-100 in PBS for 1 min at room temperature and washed twice for 5 min in PBS. Sections were incubated for 30 min at room temperature in a buffer consisting of 100 mM Tris, 8 mM CuSO4, and 100 mM ascorbic acid in dH2O. The Alexa Fluor 647 Azide (Thermo Fisher Scientific A10277) was added to the buffer at a 1:500 dilution.
 
-## Terminal deoxynucleotidyl transferase dUTP nick end labeling (TUNEL)
+### Terminal deoxynucleotidyl transferase dUTP nick end labeling (TUNEL)
 
 The TUNEL method was used to identify dying cells with fragmented DNA. We used an in-situ Cell Death Detection kit from Roche (Fluorescein, 11684795910) according to the manufacturer’s instructions.
 
-## Fluorescent in situ hybridization
+### Fluorescent in situ hybridization
 
 Standard procedures were used for FISH, as described previously (Carlson et al., 2006). In short, retinas from P9 eyes were fixed for 4 hr RT in 4% paraformaldehyde buffered in 0.1 M dibasic sodium phosphate, washed in PTW (PBS + 0.2% Tween), and incubated in 30% sucrose at 4°C overnight. The retinas were embedded in OCT-compound and cryosectioned at 12 µm. Tissue sections were processed for in situ hybridization with a split-initiator probe pair (Molecular Instruments) according to the manufacturer’s protocol for fresh/fixed frozen tissues. For slides in which immunocytochemistry was conducted with FISH, primary antibodies incubated overnight with the hairpin amplification buffer solution, and secondary antibodies incubated for 1 hr the next day. Slides were mounted with glycerol and glass coverslips.
 
-## Measurement of S1P with LC–MS/MS
+### Measurement of S1P with LC–MS/MS
 
-## Sample preparation
+#### Sample preparation
 
 After intraocular injections of saline, NMDA, saline + PF-543, NMDA + PF543, or NMDA + SGPL-in-31, whole retinal tissue samples were collected into a tenfold volume of methanol acidified with 0.1% formic acid. Sphingosine-1-shosphate (d18:1) (S1P) and sphingosine (d17:1) (Avanti Polar Lipids) were used as internal standards. Retinal samples were extracted with 80% methanol at a ratio of 1:20 (wt/vol) in a 2-ml Eppendorf tube. The samples were vortexed for 30 s, sonicated in water bath for 10 min, and followed by centrifugation at 10,000 rcf for 5 min at room temperature. One hundred microliters of supernatant was transferred out to a 2-ml HPLC vial and spiked with sphingosine to a final concentration of 100 ppb. All the samples were analyzed in triplicates.
 
 The matrix blank sample was prepared exactly as samples. Standard addition calibration levels were subsequently prepared by spiking 10, 25, 50, 100, 250, and 500 ppb of S1P into the matrix blank supernatant with final volume of 100 µl. The internal standard of sphingosine was spiked in each calibration levels at 100 ppb. Finally, 5 µl of the standard addition levels were injected and analyzed by LC–MS/MS.
 
-## Quantification
+#### Quantification
 
 Quantification was carried out on a Vanquish UHPLC coupled to an Orbitrap Exploris 480 mass spectrometer (Thermo Fisher, MA, USA). The analytes were separated on a Accucore C18 2.6 μm 2.1 × 100 mm column using the binary solvents of 0.1% formic acid in water (vol/vol) (solvent A), and 0.1% formic acid in acetonitrile (vol/vol) (solvent B). The gradient was as follows: 0–0.5 min, holding at 10% B; 0.5–6 min, 10–95% B; 6–8 min, holding at 95% B; 8–8.01 min, 95–10% B; 8.01–10 min, holding at 10% B. The flow rate was 0.4 ml/min.
 
 The following mass spectrometer instrument settings were used: ion source = H-ESI; positive ion = 3500 V; sheath gas = 35; aux gas = 7; ion transfer tube temperature = 320°C; vaporizer temperature = 275°C; HCD collision energy = 50%; RF lens = 40%. The S1P and sphingosine were quantified using the transition from 380.2560 to 264.27 m/z, and transition from 286.2741 to 268.26 m/z, respectively.
 
-## Results
+#### Results
 
 The standard addition curves demonstrated great linearity with R2 above 0.99. Significance of difference was determined using a one-way ANOVA with Šidák correction for multiple comparisons.
 
-## Photography, immunofluorescence measurements, and statistics
+#### Photography, immunofluorescence measurements, and statistics
 
 Wide-field photomicroscopy was performed using a Leica DM5000B microscope equipped with epifluorescence and Leica DC500 digital camera. Confocal images were obtained using a Leica SP8 imaging system at the Department of Neuroscience Imaging Facility at the Ohio State University. Images were optimized for color, brightness, and contrast, multiple channels over laid and figures constructed using Adobe Photoshop. Cell counts were performed on representative images. To avoid the possibility of region-specific differences within the retina, cell counts were consistently made from the same region of retina for each dataset. Peripheral regions of the retina were designated as 1–3 mm from the circumferential marginal zone, and central regions of the retina were designated as within 3 mm of the posterior pole of the eye in the nasotemporal plane.
 
 The sample size for this study was determined through a power analysis. Animal subjects were randomly assigned to control and treatment groups. Where significance of difference was determined between two treatment groups accounting for inter-individual variability (means of treated-control values) we performed a two-tailed, paired t-test. Where significance of difference was determined between two treatment groups, we performed a two-tailed, unpaired t-test. Significance of difference between multiple groups was determined using ANOVA followed by Tukey’s test. GraphPad Prism 6 was used for statistical analyses and generation of histograms and bar graphs.
 
-## scRNA-seq
+#### scRNA-seq
 
 We analyzed scRNA-seq libraries that were generated and characterized previously (Clark et al., 2019; Campbell et al., 2022; Campbell et al., 2021a; El-Hodiri et al., 2022; El-Hodiri et al., 2023; El-Hodiri et al., 2022; Hoang et al., 2020; Li et al., 2023; Campbell et al., 2021b). Dissociated cells were loaded onto the 10X Chromium Cell Controller with Chromium 3′ V2, V3, or Next GEM reagents. Using Seurat toolkits (Powers and Satija, 2015; Satija et al., 2015), UMAP for dimensional reduction plots were generated from nine separate cDNA libraries, including two replicates of control undamaged retinas, and retinas at different times after NMDA-treatment. Seurat was used to construct gene lists for differentially expressed genes, violin/scatter plots, and dot plots. Significance of difference in violin/scatter plots was determined using a Wilcoxon rank sum test with Bonferroni correction. Genes that were used to identify different types of retinal cells included the following: (1) MG: GLUL, VIM, SCL1A3, RLBP1, (2) MGPCs: PCNA, CDK1, TOP2A, ASCL1, (3) microglia: C1QA, C1QB, CCL4, CSF1R, TMEM22, (4) ganglion cells: THY1, POU4F2, RBPMS2, NEFL, NEFM, (5) amacrine cells: GAD67, CALB2, TFAP2A, (6) horizontal cells: PROX1, CALB2, NTRK1, (7) bipolar cells: VSX1, OTX2, GRIK1, GABRA1, (8) cone photoreceptors: CALB1, GNAT2, GNB3, OPN1LW, and (9) rod photoreceptors: RHO, NR2E3, ARR3. The MG have an over-abundant representation in the scRNA-seq databases. This likely resulted from fortuitous capture-bias and/or tolerance of the MG to the dissociation process.

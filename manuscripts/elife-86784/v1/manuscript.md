@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Departments of Molecular and Cellular Physiology, and Structural Biology, Stanford University School of Medicine Stanford United States
-2. https://ror.org/00f54p054 Howard Hughes Medical Institute, Stanford University School of Medicine Stanford United States
+1. Departments of Molecular and Cellular Physiology, and Structural Biology, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+2. Howard Hughes Medical Institute, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
@@ -29,21 +29,45 @@ Here, we report the 3.9 Å resolution structure of the GC-C–Hsp90–Cdc37 regu
 
 ## Results
 
-## Structure of the GC-C–Hsp90–Cdc37 regulatory complex
+### Structure of the GC-C–Hsp90–Cdc37 regulatory complex
 
 Membrane receptor guanylyl cyclases have been largely recalcitrant to structural analysis by x-ray crystallography and electron microscopy, apart from various crystal structures of both liganded and unliganded ECDs (He et al., 2001; He et al., 2006; Ogawa et al., 2004; Ogawa et al., 2010; van den Akker et al., 2000). Given the relative disparity of our structural understanding, we sought to develop a stable construct to image and gain a crucial understanding of the regulatory and functional aspects of mGCs which occur intracellularly. By replacing the ligand-responsive ECD with a homodimeric leucine zipper, we mimic the ligand-activated geometry of the ECD (He et al., 2001), while reducing complexity of the imaged complex and increasing stability (Figure 1A). This complex was recombinantly expressed in mammalian cells, purified with anti-FLAG affinity chromatography, and vitrified on grids for cryo-EM analysis.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/86784/elife-86784-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cartoon representation of the components of guanylyl cyclase C (GC-C) signaling and Hsp90–Cdc37 regulation and the zippered and activated GC-C. GC-C is colored in red, guanylin/uroguanylin (Gn/Uro) in yellow, Hsp90 in blue and teal, and Cdc37 in purple. Extracellular domains (ECD), transmembrane domain (TM), pseudokinase domain (PK), dimerization domain (DD), and guanylyl cyclase domain (GC) are labeled. In the rightmost cartoon, the regions unobserved in the cryo-EM density are in a lighter shade with a dashed outline. (B) The refined and sharpened cryo-EM density map of GC-C–Hsp90–Cdc37, colored as in A, with a transparent overlay of an unsharpened map with additional DD density resolved. Cdc37 coil-coiled and middle domain (MD) are labeled. (C) Reference-free 2D averages for the GC-C–Hsp90–Cdc37 complex. (D) The refined and sharpened cryo-EM density map of GC-C–Hsp90–Cdc37, colored as in A and B, labeled with all domains as in A and B, with the addition of Hsp90 N-terminal domain (NTD), middle domain (MD), and C-terminal domain (CTD). (E) Ribbon representation of a model of GC-C–Hsp90–Cdc37 complex, colored and labeled as in A, B, and C.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86784/elife-86784-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Workflow for cryo-EM data processing. SDS-PAGE gel, representative micrograph, reference-free 2D averages, and cryo-EM maps at the various stages of processing. (B) Local resolution estimation of the finalized cryo-EM map. (C) FSC curve of the reconstruction using gold-standard refinement calculated from unmasked and masked half maps. Map-model FSC curve. (D) Orientational distribution of the reconstruction. (E) Directional FSC curves from 3DFSC (Aiyer et al., 2021).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86784/elife-86784-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative density of heat shock protein 90 (Hsp90). (B) Representative density of Cdc37. (C) Representative density of guanylyl cyclase C (GC-C).
 
 The purified sample had a substantial portion of imaged particles for which the native regulatory heat shock protein, Hsp90, and its co-chaperone, Cdc37, are bound. The Cricetulus griseus HSP90β and Cdc37 show remarkable sequence conservation in comparison to the human equivalents, at 99.7 and 94.2% identity, respectively. This native pulldown strategy contrasts with the structures of Hsp90–Cdc37 in complex with soluble kinases (García-Alonso et al., 2022; Oberoi et al., 2022; Verba et al., 2016), for which Hsp90 and Cdc37 had to be overexpressed to obtain complex suitable for imaging. Three-dimensional reconstruction of our GC-C–Hsp90–Cdc37 particles generated a 3.9 Å resolution map of the regulatory complex (Figure 1, Figure 1—figure supplements 1 and 2). A second, unsharpened map from subsequent heterogeneous refinement resolves additional density for the dimerization domain, extending outward from the PK domain (Figure 1B, Figure 1—figure supplement 1).
 
 The resultant GC-C–Hsp90–Cdc37 complex is a hetero-tetramer formed by one resolved monomer of the GC-C receptor bound to a dimer of Hsp90 and one Cdc37 co-chaperone (Figure 1D). As observed with most Hsp90–client structures, the bulk of the complex is composed of the C2 pseudosymmetric, ATP bound, closed state Hsp90 dimer. Building on this dimeric core, the Cdc37 protrudes outward from one side with its characteristic long, coiled-coil, α-hairpin. On one face of the Hsp90 dimer core, Cdc37 interacts with the PK domain of GC-C, while an extended β-sheet wraps around to the other face, lying across and extending a β-sheet in the middle domain (MDHsp90) of one Hsp90 monomer. At the opposite face, the globular and α-helical Cdc37 middle domain (MDCdc37) is formed. The C-lobe of the GC-C PK domain packs against the N-terminal region of Cdc37 on one face of the dimeric Hsp90 core, with the N-lobe unfolding through the dimer core to interface with the MDCdc37 on the opposite face. N-terminal to the PK N-lobe is the TM region, the density for which was unobserved in our reconstructions. C-terminal to the PK C-lobe, we observe some poorly resolved density for the likely mobile dimerization domain in our unsharpened map. This would precede the GC domain, which is not observed in the density of our reconstructions (Figure 1B). Together, we can use our understanding of mGC topology and our reconstruction to orient the complex as it would sit on a membrane (Figure 1B), providing insight into how Hsp90 is able to access and regulate membrane protein clients. No density is observed for the second GC-C of the dimer, though it is sterically unlikely that an additional regulatory complex is forming on the second GC-C in a concurrent fashion, given the large size of the first Hsp90–Cdc37 and the requisite proximity of the second GC-C. In addition, this disruption of the native state of GC-C, as observed in our structure, would likely leave GC domains out of each other’s proximity, precluding their catalytic activity while Hsp90 is bound.
 
-## Cdc37 mediated GC-C recruitment and Hsp90 loading
+### Cdc37 mediated GC-C recruitment and Hsp90 loading
 
 Despite the recognized plasticity of Cdc37 co-chaperone binding to approximately 60% of kinases (Taipale et al., 2012), the importance of the Hsp90–Cdc37 complex for pseudokinase domain-containing proteins in the human proteome is not well studied. Thus, the structural basis for how Cdc37 can recruit GC-C to the Hsp90 regulatory complex is of particular interest. In our structures, we see that Cdc37 is displacing the N-lobe of the pseudokinase domain of GC-C, binding to the C-lobe at the N–C interface, and guiding the unfolded N-lobe into the Hsp90 dimer (Figure 2). The Cdc37–GC-C interface is relatively modest in size, with a calculated mean surface area of 689 Å2 (as calculated by PISA Krissinel and Henrick, 2007). This interface is partly driven to form via charge complementarity, with positive contributions from a cluster of arginine residues on Cdc37 (R30, R32, R39) at the periphery of the interaction interface interacting with D609 and the polar residues Y580 and T586 (Figure 2B). Beyond this, the interface is likely largely driven via shape-complementarity, due to a minimal contribution from hydrogen bonding, salt-bridge formation, and aromatic packing contributions – in line with the ability of Cdc37 to chaperone such a diverse array of clients and client sequences.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/86784/elife-86784-fig2-v1.jpg)
+
+**Figure 2.:** (A) Ribbon representation of a model of GC-C–Hsp90–Cdc37 complex. GC-C is colored in red, Hsp90 in blue and teal, and Cdc37 in purple. Pseudokinase (PK), coil-coiled, middle (MD), C-terminal (CTD), and N-terminal (NTD) domains are labeled. (B) The Cdc37–GC-C interface in ribbon representation, with interacting residues drawn in sticks, colored as in A. (C) The unfolded N-lobe of GC-C PK domain as it passes between the Hsp90 dimer, in ribbon representation, with interacting residues drawn in sticks, colored as in A and B. This region’s sequence is: VKLDTMIFGVIEYCERG.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86784/elife-86784-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Ribbon representation of a model of client–Hsp90β–Cdc37 complexes. Guanylyl cyclase C (GC-C) is colored in red, Cdk4 in yellow (5FWK), RAF1 in green (7Z37), B-raf in orange (7ZR0), Hsp90β in light blue and teal, and Cdc37 in light purple. (B) A structural overlay of the structures in A. (C) A sequence alignment of the pseudokinase domain of GC-C and the kinase domains of Cdk4, RAF1, and B-raf. Sequence numbering per GC-C, with a blue line depicting regions resolved in the cryo-EM density.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86784/elife-86784-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** A schematic of mGC ligand-induced activity, phosphorylation, and destabilization, leading to the formation of the mGC–Hsp90–Cdc37 complex structurally characterized in this work. This core regulatory complex would then lead to refolding of the pseudokinase domain (PK) and reactivation of the receptor (i), recruitment of PP5 and dephosphorylation of the receptor (ii), or recruitment of E3 ligases and removal of the receptor (iii). An mGC is depicted in red, ligand in yellow, heat shock protein 90 (Hsp90) in blue and teal, Cdc37 in purple, a phosphatase in green, and an E3 ligase in orange.
+
 As the unfolded PK N-lobe extends away from Cdc37, it enters the channel formed at the interface between the dimer of Hsp90 (Figure 2C). Here, GC-C residues 528–544 (VKLDTMIFGVIEYCERG) lie across the upper region of the Hsp90 CTDs, which form the floor of the channel. These CTDs form the bulk of the interaction interface as the unfolded N-lobe passes through this channel, yet there are minor contributions from the loop regions of the β-sheet from the MDHsp90 which extend downward into this channel region. The unfolded region is relatively poorly resolved in the density, with some reconstructions from earlier refinement having no resolvable density in this channel region – indicative of the low stability and high mobility of the unfolded N-lobe as it passes through this region.
 
-## Conservation of Cdc37 mediated Hsp90 regulation
+### Conservation of Cdc37 mediated Hsp90 regulation
 
 The core structural principles of Cdc37 mediated client recruitment to Hsp90 appear to remain constant across its large range of client diversity. Across other clients–Hsp90–Cdc37 complexes with canonical soluble kinase clients (Cdk4, RAF1, B-raf) (García-Alonso et al., 2022; Oberoi et al., 2022; Verba et al., 2016), we see a conserved role for Cdc37 in client recruitment by associating with the C-lobe at the N-, C-lobe interface (Figure 2—figure supplement 1A, B). In these complexes, we see high levels of structural conservation for the Hsp90–Cdc37 (Cα RMSDs of 1.4–3.3 Å for Hsp90 and 1.5–2.5 Å for Cdc37), while the client is structurally most homogenous at the interface with Cdc37, though less structurally conserved overall (Cα RMSDs of 3.5–11.6 Å). Perhaps unsurprisingly, GC-C is one of the most divergent of these clients from a sequence perspective (Figure 2—figure supplement 1C), with sequence homology between the GC-C PK domain and the other client kinase domains ranging from 19 to 25% identity and 31 to 41% homology. This highlights the plasticity required of this system which can service such a vast array of clients across a broad range of sequence variations, yet more restricted fold architecture.
 
@@ -59,22 +83,283 @@ The regulation of mGC is influenced by a network of factors working in harmony t
 
 ## Methods
 
-## Cloning and protein expression
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>Chinese hamster ovary kidney cells</td>
+      <td>GIBCO</td>
+      <td>ExpiCHO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pD649-GCN4-TM-GC-C_ICD (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See: Methods - Cloning and protein expression</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Data collection software</td>
+      <td>SerialEM</td>
+      <td>SerialEM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Data processing software</td>
+      <td>Structura Biotechnology Inc.</td>
+      <td>cryoSPARC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Data sharpening software</td>
+      <td>Sanchez-Garcia et al., 2021</td>
+      <td>DeepEMhancer</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Initial modeling software</td>
+      <td>Jumper et al., 2021</td>
+      <td>AlphaFold</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphics software</td>
+      <td>Pettersen et al., 2021</td>
+      <td>UCSF ChimeraX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Modeling and refinement software</td>
+      <td>Adams et al., 2010</td>
+      <td>Phenix</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Modeling and refinement software</td>
+      <td>Emsley and Cowtan, 2004</td>
+      <td>Coot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Model validation software</td>
+      <td>Chen et al., 2010</td>
+      <td>MolProbity</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning and protein expression
 
 For cryo-EM studies, a construct containing an HA secretion signal (MKTIIALSYIFCLVFA), a FLAG peptide (DYKDDDD), linker and 3 C cleavage site (KGSLEVLFQGPG), GCN4 homodimeric zipper (RMKQLEDKVEELLSKNYHLENEVARLKKLVGER), human GC-C regions corresponding to the small extracellular linker region, TM, and intracellular domains (residues 399–1,053), a second linker and 3 C cleavage site (AAALEVLFQGPGAA), a Protein C epitope tag (EDQVDPRLIDGK), and an 8 x His tag were cloned into a pD649 mammalian expression vector. This construct contains all domains of the native GC-C, with the exception of the ECD (Supplementary file 1). Protein was expressed using ExpiCHO Expression System Kit (Thermo Fisher). Briefly, ExpiCHO cells were maintained in ExpiCHO Expression Media at 37 °C with 5% CO2 and gentle agitation, and transiently transfected by the expression construct and cultured according to the manufacturer’s protocol. Cells were pelleted and stored at –80 °C.
 
-## Protein purification
+### Protein purification
 
 Cells were resuspended in 20 mM HEPES-Na pH 8.0, 300 mM NaCl, 1 mM TCEP, protease inhibitor cocktail (Sigma), and benzonase (Sigma). Cells were lysed by Dounce homogenizer and cellular debris was pelleted by low-speed centrifugation at 500 × g. Membranes were collected by centrifugation at 46,000 × g and stored at –80 °C until use. Membranes were thawed and solubilized with the addition of 1% n-dodecyl β-D-maltoside (DDM) and 0.1% cholesteryl hemisuccinate (CHS) (10:1) (Anatrace). Debris and unsolubilized membranes were pelleted by centrifugation at 46,000 × g. The supernatant was subsequently used in FLAG affinity chromatography. The supernatant was applied to M1 anti-FLAG resin. The resin was washed with 20 bed volumes of 20 mM HEPES-Na pH 8.0, 300 mM NaCl, 1 mM TCEP, 0.005% lauryl maltose neopentyl glycol (LMNG), 0.0005% CHS (10:1) (Anatrace), and 5 mM ATP. The protein complex was eluted with the addition of 200 μg/mL of FLAG peptide (DYKDDDD) (GenScript). Protein was subsequently concentrated to >2 mg/mL and used for cryo-EM imaging.
 
-## Cryo-electron microscopy
+### Cryo-electron microscopy
 
 Aliquots of 3 μL of complex were applied to glow-discharged 300 mesh UltrAuFoil (1.2/1.3) grids. The grids were blotted for 3 s at 100% humidity with an offset of 3 and plunged frozen into liquid ethane using a Vitrobot Mark IV (Thermo Fisher). Grid screening and dataset collection occurred at Stanford cEMc on a 200 kV Glacios microscope (Thermo Fisher) equipped with a K3 camera (Gatan). Movies were collected at a magnification corresponding to a 0.9273 Å per physical pixel. The dose was set to a total of 58.8 electrons per Å2. Automated data collection was carried out using SerialEM with a nominal defocus range set from –0.8 to –2.0 μM.
 
-## Image processing
+### Image processing
 
 All processing was performed in cryoSPARC (Punjani et al., 2017) unless otherwise noted (Figure 1—figure supplement 1). 8788 movies were motion-corrected using patch motion correction. The contrast transfer functions (CTFs) of the flattened micrographs were determined using patch CTF and an initial stack of particles was picked using Topaz picker (Bepler et al., 2019). Successive rounds of reference-free 2D classification were performed to generate a particle stack of 165,635 particles. These particles were then used in ab-initio reconstruction, followed by non-uniform refinement (Punjani et al., 2020) and finally local refinement with a loose mask around the entire complex. This resulted in a 3.9 Å reconstruction of the GC-C–Hsp90–Cdc37 complex which was sharpened with deepEMhancer (Sanchez-Garcia et al., 2021). These particles were also used in a 4-class heterogeneous refinement to pull out a volume containing some resolved density for the dimerization domain of GC-C.
 
-## Model building and refinement
+### Model building and refinement
 
 The Cdk4–Hsp90β–Cdc37 (PDB 5FWK), PP5–B-Raf–Hsp90β–Cdc37 (PDB 7ZR5), and AlphaFold models for GC-C (Jumper et al., 2021; Mirdita et al., 2022) were docked into the map using UCSF Chimera X (Pettersen et al., 2021). A resultant hybrid model was then manually curated to contain the correct Cricetulus griseus sequences for Hsp90β–Cdc37 and run through Namdinator (Kidmose et al., 2019). This was followed by automated refinement using Phenix real space refine (Adams et al., 2010) and manual building in Coot (Emsley and Cowtan, 2004). The final model produced a favorable MolProbity score of 2.14 (Chen et al., 2010) with 0.4% Ramachandran outliers (Table 1). Model building and refinement software was installed and configured by SBGrid (Morin et al., 2013).
+
+**Table 1.**
+ Cryo-EM data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>GC-C–Hsp90–Cdc37 complexPDB 8FX4EMD-29523</th>
+      <th>GC-C–Hsp90–Cdc37 complex with DD density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nominal magnification</td>
+      <td colspan="2">45,000</td>
+    </tr>
+    <tr>
+      <td>Acceleration voltage (kV)</td>
+      <td colspan="2">200</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td colspan="2">58.8</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td colspan="2">0.8–2.0</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td colspan="2">0.9273</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td colspan="2">C1</td>
+    </tr>
+    <tr>
+      <td>Final particle images</td>
+      <td>165,635</td>
+      <td>48,283</td>
+    </tr>
+    <tr>
+      <td>Map resolution FSC threshold</td>
+      <td colspan="2">0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>3.9</td>
+      <td>6.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB)</td>
+      <td>5FWK, 7ZR5, AlphaFold</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model resolution FSC threshold (Å)</td>
+      <td>0.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>4.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model Composition</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>13,478</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>1,654</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B-factors (Å2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>119.49</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>102.85</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>2.14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>13.88</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.67</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>92.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>7.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.4</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

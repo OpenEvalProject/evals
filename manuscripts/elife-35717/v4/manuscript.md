@@ -15,11 +15,19 @@
 
 ## Abstract
 
-10.7554/eLife.35717.001 The budding of tubular organs from flat epithelial sheets is a vital morphogenetic process. Cell behaviours that drive such processes are only starting to be unraveled. Using live-imaging and novel morphometric methods, we show that in addition to apical constriction, radially oriented directional intercalation of cells plays a major contribution to early stages of invagination of the salivary gland tube in the Drosophila embryo. Extending analyses in 3D, we find that near the pit of invagination, isotropic apical constriction leads to strong cell-wedging. Further from the pit cells interleave circumferentially, suggesting apically driven behaviours. Supporting this, junctional myosin is enriched in, and neighbour exchanges are biased towards the circumferential orientation. In a mutant failing pit specification, neither are biased due to an inactive pit. Thus, tube budding involves radially patterned pools of apical myosin, medial as well as junctional, and radially patterned 3D-cell behaviours, with a close mechanical interplay between invagination and intercalation.
+The budding of tubular organs from flat epithelial sheets is a vital morphogenetic process. Cell behaviours that drive such processes are only starting to be unraveled. Using live-imaging and novel morphometric methods, we show that in addition to apical constriction, radially oriented directional intercalation of cells plays a major contribution to early stages of invagination of the salivary gland tube in the Drosophila embryo. Extending analyses in 3D, we find that near the pit of invagination, isotropic apical constriction leads to strong cell-wedging. Further from the pit cells interleave circumferentially, suggesting apically driven behaviours. Supporting this, junctional myosin is enriched in, and neighbour exchanges are biased towards the circumferential orientation. In a mutant failing pit specification, neither are biased due to an inactive pit. Thus, tube budding involves radially patterned pools of apical myosin, medial as well as junctional, and radially patterned 3D-cell behaviours, with a close mechanical interplay between invagination and intercalation.
 
 ## Introduction
 
 During early embryonic development, simple tissue structures are converted into complex organs through highly orchestrated morphogenetic movements. We use the formation of a simple tubular epithelial structure from a flat epithelial sheet as a model system to dissect the processes and forces that drive this change. Many important organ systems in both vertebrates and invertebrates are tubular in structure, such as lung, kidney, vasculature, digestive system and many glands. The formation of the salivary glands from an epithelial placode in the Drosophila embryo constitutes such a simple model of tubulogenesis (Girdler and Röper, 2014; Sidor and Röper, 2016). Each of the two placodes on the ventral side of the embryo (Figure 1A) consists of about 100 epithelial cells, and cells in the dorso-posterior corner of the placode begin the process of tube formation through constriction of their apical surfaces, leading to the formation of an invagination pit through which all cells eventually internalise (Girdler and Röper, 2014; Sidor and Röper, 2016).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig1-v4.jpg)
+
+**Figure 1.:** (A, A’). Schematic of a stage 11 Drosophila embryo highlighting the position of the salivary gland placode (green) in lateral (A) and ventral (A’) views; A: anterior, P: posterior; D: dorsal; V: ventral. (B, B’). Surface and cross-section views of the salivary gland placode just prior to the first tissue bending (B) and once the initial pit of invagination has formed (B’). Lateral membranes are labelled by ScribbleGFP (green) and apical cell outlines by Crumbs (magenta). Scale bars are 5 µm. (C-F) Workflow of the morphometric analysis. Early salivary gland placode morphogenesis is recorded by time-lapse analysis using markers of cell outlines (C), cells are segmented and tracked over time (D; exemplary tracks of individual cells are indicated by coloured lines). Data are recorded and expressed in a radial coordinate system with the invaginating pit as the origin (E; ‘rad’ is the vectorial contribution radially towards the pit, ‘circ’ is the vectorial circumferential contribution). Various derived measures are projected onto the radial coordinate system. Here, example projected small domain deformation (strain) rates are shown (F; contraction in green, expansion in magenta; see Figure 2B). See also Videos 1 and 2. (G-H) Cumulative time-resolved analysis of apical area change for nine embryos (G’), the cumulative area strain is plotted, grouping the placodal cells into radial stripes (G) for the analysis. This reveals a clear split in behaviour between cells far from the pit (H, top; negligible area change) and cells near the pit (H, bottom; constriction, consistently negative area change). See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** For an example movie with perfect tracking (ExpID0356) the change in apical area is shown for even-width radial stripes (defined at t = −7.5 min, A). Stripes S1-S5 correspond to the radial stripes 1–5 in Figure 1G,G’. (A) Start of movie at t = −7.5 min; (B) end of movie at t = 20.0 min. Apical area is colour-coded according to the legend.
 
 Apical constriction, a cell behaviour of epithelial cells that can transform columnar or cuboidal cells into wedge-shaped cells and can thereby induce and assist tissue bending, has emerged as a key morphogenetic module utilised in many different events ranging from mesoderm invagination in flies, Xenopus and zebrafish to lens formation in the mouse eye (Lee and Harland, 2007; Martin and Goldstein, 2014; Martin et al., 2009; Plageman et al., 2011). Apical constriction relies on the apical accumulation of actomyosin, that when tied to junctional complexes can exert pulling forces on the cell cortex and thereby reduce apical cell radius (Blanchard et al., 2010; Mason et al., 2013). Two pools of apical actomyosin have been identified: junctional actomyosin, closely associated with apical adherens junctions, as well as apical-medial actomyosin, a highly dynamic pool underlying the free apical domain (Levayer and Lecuit, 2012; Röper, 2015).
 
@@ -35,15 +43,118 @@ In addition, we compare quantitative planar strain rate analysis at different ap
 
 ## Results
 
-## Apical cell constriction is organised in a radial pattern in the salivary gland placode
+### Apical cell constriction is organised in a radial pattern in the salivary gland placode
 
 Upon specification of the placode of cells that will form the embryonic salivary gland at the end of embryonic stage 10, the first apparent change within the apical domain of placodal cells is apical constriction at the point that will form the first point of invagination or pit (Figure 1A,B; [Booth et al., 2014; Myat and Andrew, 2000b]). Apical constriction at this point in fact preceded actual tissue bending (Figure 1B). We have previously shown that apical constriction is clustered around the pit and is important for proper tissue invagination and tube formation (Booth et al., 2014). In order to discover if any further cell behaviours in addition to apical constriction contribute to tissue bending and tube invagination in the early placode, we employed quantitative morphometric tools to investigate the process in comparable wild-type time-lapse movies using strain rate analysis (Blanchard et al., 2009). We imaged embryos expressing a lateral plasma membrane label in all epidermal cells as well as a marker that allows identification of placodal cells (Figure 1C and Video 1; for genotypes see Table 1). Time-lapse movies were segmented and cells tracked using previously developed computational tools that allow for the curvature of the tissue to be taken into account (Figure 1C–F) (Blanchard et al., 2009; Booth et al., 2014). The cells of the salivary gland placode that will later form the secretory part of the gland are organised into a roughly circular patch of tissue prior to invagination and maintain this shape during the process (Figure 1C). Within this circular patch, the invagination pit is located at the dorsal-posterior edge rather than within the centre of the placode. We therefore employed a radial coordinate system, with the forming pit as its origin, in which to analyse and express any changes (Figure 1E). We locally projected 2D strain (deformation) rates and other oriented measures onto these radial (‘rad’) and circumferential (‘circ’) axes (Figure 1F).
 
+**Table 1.**
+ Number of cells in time-lapse experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Cells</th>
+      <th>Number of embryos</th>
+      <th>number of cells per time point at [−18, −13.5, −9, −4.5, 0, 4.5, 9, 13.5, 18] min</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 2</td>
+      <td>Apical cells near to pit</td>
+      <td>9</td>
+      <td>[123, 599, 724, 1132, 980, 737, 468, 219, 80]</td>
+    </tr>
+    <tr>
+      <td>Figure 2</td>
+      <td>Apical cells far from pit</td>
+      <td>9</td>
+      <td>[156, 837, 1183, 1880, 1731, 1484, 1151, 744, 319]</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>Basal cells near to pit</td>
+      <td>6</td>
+      <td>[260, 453, 726, 569, 546, 506, 360, 89]</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>Basal cells far from pit</td>
+      <td>6</td>
+      <td>[382, 762, 1309, 1200, 1145, 1133, 770, 247]</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>3D proxy cells near to pit</td>
+      <td>5</td>
+      <td>[36, 307, 420, 479, 336, 410 260 148 58]</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>3D proxy cells far from pit</td>
+      <td>5</td>
+      <td>[37, 350, 515, 652, 479, 564, 394, 243, 131]</td>
+    </tr>
+    <tr>
+      <td>Figure 8</td>
+      <td>Apical fkh6 cells near to pit</td>
+      <td>5</td>
+      <td>[27, 161, 248, 269, 215, 238, 233, 186, 85]</td>
+    </tr>
+    <tr>
+      <td>Figure 8</td>
+      <td>Apical fkh6 cells far from pit</td>
+      <td>5</td>
+      <td>[52, 343, 626, 735, 615, 706, 655, 550, 239]</td>
+    </tr>
+    <tr>
+      <td>Figure</td>
+      <td>Cells</td>
+      <td>Number of embryos</td>
+      <td>number of cells per time point at [−13.5, −9, −4.5, 0, 4.5, 9, 13.5, 18] min</td>
+    </tr>
+    <tr>
+      <td>Figure 7</td>
+      <td>Uni and Bi-polarity WT</td>
+      <td>4</td>
+      <td>[207, 522, 1115, 918, 1091, 1125, 1047, 484]</td>
+    </tr>
+    <tr>
+      <td>Figure 9</td>
+      <td>Uni- and Bi-polarity fkh6</td>
+      <td>5</td>
+      <td>[528, 783, 815, 712, 809, 786, 708, 307]</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/35717/elife-35717-video1.mp4.jpg)
+
+**Video 1.:** Embryo of the genotype Scribble-GFP/fkhGal4::UAS-palmYFP as shown if Figure 1C and Figure 3A. Time stamp indicates time before and after initiation of tissue bending at t = 0. Scale bar 20 µm.
+
 We focused our analysis on the early stages of tissue bending and invagination, defining as t = 0 the time point before the first curvature change at the point of invagination at the tissue level could be observed. Dynamic analysis of the changes in apical area of placodal cells, in the time interval of 18 min prior to and 18 min after the first tissue bending, revealed distinct zones of apical cell behaviour. Grouping the placodal cells into ~ 2 cell-wide stripes concentric to the pit for apical area change analysis (Figure 1G; Figure 1—figure supplement 1 and Video 2) revealed a split into cells whose apical area over this time interval did not change or changed only slightly (Figure 1G’, red, yellow and green lines) and cells whose apical area progressively decreased (Figure 1G’, blue and purple lines). The clear split into two zones of differing cell behaviours, defined by radial distance from the invagination point at zero minutes (when the pit starts to invaginate), prompted us to analyse these regions independently in our strain rate analyses (Figure 1H).
 
-## Both apical constriction and cell intercalation are prominent during the early stages of tube morphogenesis
+![Video 2.](https://cdn.elifesciences.org/articles/35717/elife-35717-video2.mp4.jpg)
+
+**Video 2.:** Movie ExpID0356 with 100% tracking, is shown. Cell identities are randomly colour-coded on the left, apical area on the right. Area colour codes are identical to Figure 8C, please refer to this scale. Time stamp indicates time before and after initiation of tissue bending at t = 0. Scale bar 20 µm.
+
+### Both apical constriction and cell intercalation are prominent during the early stages of tube morphogenesis
 
 Methods have been developed previously to calculate strain (deformation) rates for small patches of tissue, and to further decompose these into the additive contributions of the rates of cell shape change and of the continuous process of cell rearrangement (intercalation) (Blanchard, 2017; Blanchard et al., 2009) (Figure 2A,B). The levels of both contributions vary dramatically between different morphogenetic processes (Blanchard et al., 2010; Bosveld et al., 2012; Butler et al., 2009; Etournay et al., 2015; Guirao et al., 2015). Cell divisions have ceased in the placode around the time of specification, and there is also no cell death, therefore none of these processes contributed to the overall tissue deformation in this case. Upon segmentation of cell outlines, the rate of tissue deformation was calculated from the relative movement of cell centroids in small spatio-temporal domains of a central cell surrounded by its immediate neighbours and over three movie frames (~6 min). Independently, for the same domains, rates of cell shape change were calculated mapping best-fitted ellipses to actual cell shapes over time. The rate of cell intercalation could then be deduced as the difference between these two measures (Figure 2A,B and Video 3; see Materials and methods for a detailed description). The three types of strain rate measure were then projected onto our radial coordinate system.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig2-v4.jpg)
+
+**Figure 2.:** (A–A’’) During early salivary gland placode development the change in tissue shape (A) can be accounted for by cell shape changes (A’), cell intercalation (A’’) or any combination of the two. During this phase, cell division and gain or loss of cells from the epithelium (other than cells invaginating into the pit) do not occur. (B) For small domains of a focal cell and its immediate neighbours, tissue shape change is the sum of two additive contributions, cell shape change and cell intercalation (Blanchard et al., 2009). Both tissue shape change and cell shape change can be measured directly from the segmented and tracked time-lapse movies, so the amount of cell intercalation can be deduced. Strain rates are depicted as orthogonal lines, with contraction in green and expansion in magenta, and the length of the line proportional to the rate of strain (grey circles mark 2 and 4% change per minute). The last panel shows the group of cells (central cell and first corona of neighbours) for which the example strain rates in (B) were calculated, with orthogonal lines indicating the lengths of the major and minor axes of the cells. The vertical contraction in the group of cells can be clearly seen as a combination of vertical cell shortening and continuous rearrangement/intercalation (evidenced by one topological change). (C–C’’’) Spatial maps summarising the strain rate analysis covering 18 min prior to 18 min post commencement of tissue bending. Mapped onto the shape of the placode (C) the strain rate contribution towards the pit (‘rad’) is shown, quantified from data from nine embryos (see Figure 2—figure supplement 1). (C’) Tissue contraction (green) dominates near the pit, with expansion (magenta) towards the periphery. The tissue contraction near the pit is mostly due to cell constriction near the pit (C’’), whereas the tissue expansion is contributed to by both cell expansion and cell intercalation far from the pit (magenta in C’’ and C’’’). Strain rates are given in proportion (pp) of change per minute. (D–E’’) Regional breakdown of time-resolved cumulative strain. In the area near the pit (D’’) tissue constriction dominates (grey curves in D and D’) and is due to isotropic constriction at the cell level (green curves in D and D’), whilst intercalation only plays a minor role in this region (orange curves in D, D’). Far from the pit (E’’), the tissue elongates towards the pit (E, grey curve), with a corresponding contraction circumferentially (E’, grey curve), and this is predominantly due to cell intercalation (orange curves in E and E’). Statistical significance based on a mixed-effects model (see Materials and methods) and a p<0.05 threshold (calculated for instantaneous strain rates [see Figure 2—figure supplement 1]), is indicated by shaded boxes at the top or bottom of each panel (tissue vs cell shape is green and tissue vs intercalation is orange). See also Video 3. Cumulative strains here and in all subsequent plots are calculated as the exponent of the cumulative instantaneous strain rates, which are shown in Figure supplements.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig2-figsupp1-v4.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of time windows covered by the time-lapse movies analysed for the apical strain rate calculations. (B–B’’) Spatial maps summarising the strain rates projected onto the circumferential orientation, covering 18 min prior to 18 min post-commencement of tissue bending. (C–C’) Cumulative strain of all pooled placodal cells. Overall, the tissue elongates a little radially towards the pit whilst contracting circumferentially (grey curves). Cell shapes constrict nearly isotropically (green curves), with intercalation extending the tissue towards the pit and contracting it circumferentially (orange curves). (D–E’) Instantaneous strain rates corresponding to the cumulative strain plots in Figure 2D–E’’. Error bars show an indicative confidence interval of the mean, calculated as the mean of within-embryo variances. Statistical significance based on a mixed-effects models and a p<0.05 threshold is indicated by shaded boxes at the top of each panel (see Materials and methods for details of statistics): tissue vs cell shape (green) and tissue vs intercalation (orange). The same conventions for displaying confidence intervals and statistical significance are used in all subsequent instantaneous strain rate plots. (F) Example placode showing the radial organisation of intercalation strain rates. Intercalation strain rates calculated between the first (−7.5 min) and last (+20 min) frames of placode movie ExplD0356 are shown, drawn on a segmented image of the central time point of the time-lapse movie. Strain rates are calculated for small domains of a focal cell (on which the strain rate is drawn) and its immediate neighbours and visualised here projected onto the central cell. Magenta indicates expansion and green contraction, the length of the line is proportional to the rate of strain in a given direction. The overall circumferential tissue convergence (green) and radial expansion (magenta) due to intercalation is clearly visible. Strain rates were not calculated for cells that disappeared into the pit before the end of the movie.
+
+![Video 3.](https://cdn.elifesciences.org/articles/35717/elife-35717-video3.mp4.jpg)
+
+**Video 3.:** Local strain rates are extracted from segmented and tracked movies. Rates of tissue shape change (left), cell shape change (centre) and intercalation (right) are shown. Green vectors represent contraction and magenta vectors represent expansion. Time stamp indicates time before and after initiation of tissue bending at t = 0. See also Figure 2.
 
 Strain rate analysis of changes within the apical domain of the epithelial cells in the early salivary gland placode clearly confirmed the existence of two distinct zones of cell behaviour. Spatial plots summarising ~ 36 mins of data centred around the first tissue bending event (combined from the analysis of 9 wild-type embryos; Figure 2—figure supplement 1A) revealed strong isotropic tissue contraction near the invagination pit (Figure 2C’ and Figure 2—figure supplement 1B, green) that was mainly contributed by apical cell constriction (Figure 2C’’ and Figure 2—figure supplement 1B’). At a distance from the pit, tissue elongation dominated in the radial direction (Figure 2C’, magenta) and was contributed mostly by cell intercalation (Figure 2C’’,C’’’). The split in behaviour and the strong contribution of cell intercalation to the early invagination and tube formation was even more apparent from time resolved strain rate analyses. At the whole tissue level, apical cell constriction began more than 10 min before any curvature change at the tissue level (Figure 2—figure supplement 1C,C’, green curve), and this change was most pronounced in the cells near the invagination pit (Figure 2D,D’ versus E, E’, green curve). In addition, cell intercalation also commenced about 10 min prior to tissue bending (Figure 2—figure supplement 1C,C’, orange curve), but in this case, the stronger contribution came from cells far from the pit (Figure 2E,E’ versus D,D’, orange curve).
 
@@ -51,19 +162,43 @@ Although constriction was isotropic near the pit, with equally large magnitudes 
 
 Thus, in addition to apical constriction, directional cell intercalation constitutes a major second cell behaviour occurring during tissue bending and invagination of a tube. Furthermore, the amount of both cell behaviours occurring was radially patterned across the placode. However, it was not clear whether both these behaviours were entirely being driven by active apical mechanisms, or whether further basal events contributed, so we next investigated the 3D behaviours of placode cells.
 
-## A quasi-3D tissue analysis at two depths shows coordination of cell behaviours in depth
+### A quasi-3D tissue analysis at two depths shows coordination of cell behaviours in depth
 
 The apical constriction as observed in the placodal cells near the pit is indicative of a redistribution of cell volume more basally, which could result in a combination of cell wedging and/or cell elongation in depth. The 3D-cell behaviour of acquiring a wedge-like shape is of particular interest in the placode because it is capable of tissue bending. Apical constriction (coupled with corresponding basal expansion if cell volume is maintained, as in the case of the salivary gland placode [data not shown]) is known to deform previously columnar or cuboidal epithelial cells into wedge-shaped cells (Martin and Goldstein, 2014; Wen et al., 2017a). This is also true in the salivary gland placode, where cross-sections in xz of fixed samples and time-lapse movies confirm the change from columnar to wedged morphology (Figure 1B,B') (Girdler and Röper, 2014; Myat and Andrew, 2000b). Most analyses of morphogenetic processes are conducted with a focus on events within the apical domain given the prevalent apical accumulation of actomyosin and junctional components (Figure 3A,A’) (Bosveld et al., 2012; Butler et al., 2009; Martin et al., 2009; Rauzi et al., 2010; Simões et al., 2010). However, this apico-centric view neglects most of the volume of the cells. For instance, in the case of the salivary gland placode, cells extend up to 15 µm in depth (Figure 3B). We thus decided to analyse cell and tissue behaviour during early stages of tube formation from the placode in a 3D context. Automated cell segmentation and tracking of 3D behaviours is still unreliable in the case of tissues with a high amount of curvature, such as in the salivary gland placode once invagination begins. To circumvent this issue, we used strain rate analysis at different depth as a proxy for a full 3D analysis (Figure 3A’,C). After accounting for the overall curvature of the tissue, we segmented and tracked placodal cells not only within the apical region (as shown in Figures 1 and 2; Figure 3A’,C pink), but also at a more basal level, ~8 µm below the apical domain (Figure 3A’,C blue), and repeated the strain rate analysis at this depth (Figure 3D–E’’ and Figure 3—figure supplement 1 and Figure 3—figure supplement 2). We used the same radial coordinate system with the pit as the origin for both layers, so we were able to compare cell behaviours between depths. Segmentation and analysis at the most-basal level of placodal cells was not reliably possible due low signal-to-noise ratio of all analysed membrane reporters at this depth (data not shown).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig3-v4.jpg)
+
+**Figure 3.:** (A–B) Epithelial cells of the placode are about 2–5 µm in apical diameter but extend about 15 µm into the embryo along their apical-basal axis. To assess behaviour of the tissue and cells at depth, we analysed a mid-basal level, about 8 µm basal to the apical surface. Scale bars are 5 µm. (C) Illustration of the method used: we segmented and tracked cells at a depth of ~8 µm, and repeated the strain rate analysis at this mid-basal level (blue) to compare with apical (pink). (D–D’) Comparison of apical (pink, as shown in Figure 2) and basal (blue) cumulative strains, for cell shape changes (D, E) and cell intercalation (D’, E’), near the pit (D,D’) and far from the pit (E,E’). Note how cell shape changes apical versus basal near the pit suggest progressive cell wedging as apices contract isotropically more rapidly than basally (D), and how the rate of cell intercalation across the tissue is highly coordinated between apical and basal, especially in the cells far from the pit (D’,E’). Statistical significance based on a mixed-effects model and a p<0.05 threshold (calculated for instantaneous strain rates [see Figure 2—figure supplement 1 and Figure 3—figure supplement 2]), is indicated by shaded boxes at the top of each panel: apical ‘rad’ vs basal ‘rad’ (dark grey) and apical ‘circ’ vs basal ‘circ’ (light grey).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig3-figsupp1-v4.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic of time windows covered by the time-lapse movies analysed for the basal strain rate calculations. (B–C’’) Spatial summary of the basal strain rates (calculated from −15 to + 18 min), showing circumferential contribution (B–B’’, circ) and radial contribution, (C–C’’, ‘rad’). Constriction (green) still dominates the pit region at the tissue level (B, C), due to cell constriction (B’, C’), with strong expansion (magenta) towards the pit radially, predominantly due to cell intercalation (C’’). (D–D’) Comparison of the average basal and apical cumulative strain of all pooled placodal cells. Overall, basally (blue curves) the tissue elongates towards the pit whilst contracting circumferentially, in a more isotropic fashion than apically (pink curves). Basally, cell shape change is weakly contractile radially, like apical, while it is near zero circumferentially, unlike apical (D’), with intercalation extending the tissue towards the pit and contracting it circumferentially almost identically in apical and basal (D’’). (E, F). Comparison of apical (pink, as shown in Figure 2) and basal (blue) cumulative strain, for tissue shape change (E, F). Statistical significance based on a mixed-effects model and a p<0.05 threshold (calculated for instantaneous strain rates [Figure 2—figure supplement 1 and Figure 3—figure supplement 2]), is indicated by shaded boxes at the top of each panel: apical ‘rad’ vs basal ‘rad’ (dark grey) and apical ‘circ’ vs basal ‘circ’ (light grey).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig3-figsupp2-v4.jpg)
+
+**Figure 3—figure supplement 2.:** (A–B’) Instantaneous mid-basal strain rates corresponding to the cumulative strain plots in Figure 3D–E’ and Figure 3—figure supplement 1E,F. Error bars depict the mean of within-embryo variance of six movies. Significance using a mixed-effects model of p<0.05 is indicated by shaded boxes at the top of each panel: tissue vs cell shape (green) and tissue vs intercalation (orange). See Materials and methods for details of statistics.
 
 Overall, the spatial pattern of change at mid-basal level was similar to changes within the apical domain during 33 min centred around the start of tissue bending (Figure 3—figure supplement 1B,C). Isotropic tissue contraction at mid-basal depth was clustered around the position of the invagination pit (Figure 3—figure supplement 1B,C, green), and this was due to cell constriction at this level (Figure 3—figure supplement 1B’,C’), whereas the tissue expansion at a distance from the pit in the radial direction (Figure 3—figure supplement 1C) was due primarily to cell intercalation (Figure 3—figure supplement 1C’’). Similarly to events at the apical level, this radial expansion towards the pit was accompanied by a circumferential contraction, again due primarily to cell intercalation in the region away from the pit (Figure 3—figure supplement 1B,B’’).
 
 Comparing apical and basal strain rates at the cell and tissue level with respect to their radial and circumferential contributions revealed an interesting picture. In temporally resolved plots, isotropic cell constriction dominated apically in cells near the pit (Figure 3D, pink), but with a slower rate of constriction at the mid-basal depth (Figure 3D, blue). This was confirmed by cross-section images that show that, near the pit and once tissue-bending had commenced, the basal surface of the cells was displaced even further basally than in the rest of the placode, and cells were expanded at this level, leading to an overall wedge-shape (Figure 1B’). In cells away from the pit, similar to the apical region, cell shapes did not change much (Figure 3E). In contrast to cell shape changes that diverged at depth at least in the cells near the pit, intercalation behaviour appeared to be highly coordinated between apical and basal levels with near identical contributions at both particularly in cells far from the pit (Figure 3D’, E’ and Figure 3—figure supplement 1D’’).
 
-## Patterns of cell wedging, interleaving and tilt in the placode
+### Patterns of cell wedging, interleaving and tilt in the placode
 
 In cells near to the pit, the faster rate of apical constriction implies that cell wedging is occurring, but we have not confirmed this in the same dataset by measuring the relative sizes of apical and basal cell diameters. Similarly, although the rates of apical and basal intercalation are remarkably similar, this does not rule out that the actual arrangement of cells at one level is ‘tipped’ ahead of the other, through interleaving in depth (akin to a T1 transition along the apical-basal axis, see z-sections in Figure 4C and Figure 4—figure supplement 1Dd'’). For example, if cell rearrangement is being driven by an active apical mechanism (see below and Figure 6), we predict that apical cell contours would be intercalating ahead of basal cell contours, even while their rates remain the same. Both wedging (Figure 4B) and interleaving (Figure 4C) have implications for the tilt, or lean, of cells relative to epithelial surface normals (Figure 4D and Figure 4—figure supplement 1A–C), with a gradient of tilt expected for constant wedging or interleaving in a flat epithelium. We therefore set out to quantify 3D wedging, interleaving and cell tilt with new methods.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig4-v4.jpg)
+
+**Figure 4.:** (A) Illustration of the method used for calculating 3D domain geometries using tracked cells at apical and mid-basal levels throughout the salivary placode. Although for simplicity only two matched cells are shown here (green outlines in both z-levels), all cells were matched accurately between levels (see text and Video 4). Small domains of a focal cell and its immediate neighbours were used to calculate local rates of wedging, interleaving and tilt (from cell ‘in-lines’, pink dashed lines) using z-strain rate methods (see text and Figure 4—figure supplement 1A–D). Measures were projected onto the pit-centred radial (dotted black lines) and circumferential axes. In this tilted side-view cartoon, the z distance between apical and mid-basal levels has been exaggerated. (B) Schematic of cell wedging in a cross-section and as individual z-levels (z1–z3) in the marked red cell. (B’) Cell wedging is patterned across the placode, increasing most strongly in cells near to the pit, in accordance with the isotropic apical constriction observed here (orange lines). Away from the pit, wedging contributes mainly in the circumferential direction (purple dashed line). (C) Schematic of cell interleaving in a cross-section and as individual z-levels (z1–z3) in the group of marked red cells. (C’) Radial cell interleaving (solid line) is always more positive than circumferential interleaving (dashed lines), often significantly so. Interleaving contributes to a radial expansion apically and a concomitant circumferential contraction. (D) Schematic of cell tilt in a cross-section and as individual z-levels (z1–z3) in the marked red cell. (D’) Cell tilt increased continuously in the radial direction (solid lines) apically towards the pit over the period of our analysis. A stronger rate of tilt was observed for the cells further from the pit (purple solid line), which is expected from the radial wedging seen near the pit. (B’, C’, D’) Error bars show the mean of the within-embryo variances for five movies. Significance at p<0.05 using a mixed-effect model (see Materials and methods) is depicted as shaded boxes at the top of the panel: B’) wedging in radial orientation, near to vs far from pit (dark grey, ‘rad’) and wedging in circumferential orientation, near to vs far from pit (light grey, ‘circ). (C’) Interleaving near to the pit, radial vs circumferential (orange, ‘near’) and interleaving far from the pit, radial vs circumferential (purple, ‘far’). (D’) Tilt in radial orientation, near to vs far from pit (dark grey, ‘rad’) and tilt in circumferential orientation, near to vs far from pit (light grey, ‘circ).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig4-figsupp1-v4.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic illustrating wedging and tilt definitions in the context of a single cell. (B) Illustration of cell arrangement in an example movie (ExpID0141) at time point t = −9.85 min showing segmented apical cell outlines in magenta and segmented basal cell outlines in black. Green lines are cell inlines, connecting centroid positions between z-levels, thereby giving an indication of the cell tilt, whereas mis-match between apical and mid-basal outlines give an indication of wedging interleaving. (C) Illustration of cell wedging in an example movie (ExpID0141) at t = −9.85 min, with amounts of individual cell wedging shown for each cell (mapped onto segmented apical cell outlines). An expansion of an individual cell from basal to apical is shown in magenta, and a contraction of an individual cell from basal to apical is shown in green. The extent of change is proportional to the length of the lines shown. (D) For domains of small numbers of cells, z-strain rates are calculated analogously to t-strain rates. Overall tissue deformation in depth (b’) is addition of wedging (c’) and interleaving (d’), just as tissue shape change (b) over time is the addition of cell shape change (c) and cell intercalation (d). Translation in 2D (a) equates to cell tilt in z, and cell rotation in 2D (e) is represented by tissue twist in z (e’). Tissue and cell schematics are shown in top views in (a–e) and in both top and side views in (a’–e’). (E) Total strain rate in z, representing the sum of the wedging and interleaving strain rates shown in Figure 4B’, C’. Confidence intervals and representation of statistics are as in Figure 4.
+
 We used the placodes (n = 5) for which we have tracked cells at both apical and mid-basal levels. First, we developed a semi-automated method to accurately match cell identities correctly between depths (Figure 4A, Video 4, and see Materials and methods). We then borrowed ideas from recent methods developed to account for epithelial curvature in terms of the additive contributions of cell wedging and interleaving in depth (Deacon, 2012). In the early developing salivary gland placode, average tissue curvature is very slight, so we simplified the above methods for flat epithelia. We applied exactly the same methods that we have used in Figures 2 and 3 to calculate strain rates for small cell domains, but rather than quantifying rates of deformation over time, now we quantify rates of deformation in depth (see z-level illustrations in Figure 4B,C,D and Figure 4—figure supplement 1D). The cell shape strain rate becomes a wedging strain in depth, in units of proportional shape change per micron in z (Figure 4B,B’ and Figure 4—figure supplement 1Dc, c'), the intercalation strain rate becomes the interleaving strain in depth, in the same units (Figure 4C,C’ and Figure 4—figure supplement 1Dd, d'), and translation velocity becomes the cell tilt (Figure 4D,D’ and Figure 4—figure supplement 1A,Da,a’; see Materials and methods for details). Once again, we projected the z-strain rates and tilt onto our radial coordinate system.
+
+![Video 4.](https://cdn.elifesciences.org/articles/35717/elife-35717-video4.mp4.jpg)
+
+**Video 4.:** Apical cell identities matched to basal cell identities are shown within the placode. Stamp refers to the depth in the tissue. Scale bar 20 µm. See also Figure 4.
 
 Cells across the placode started out at −18 min before pit invagination unwedged and mostly untilted in radial and circumferential orientations (Figure 4B’,D’). Cells near the pit became progressively wedge-shaped over the next 30 min, with smaller apices (Figure 4B’, orange lines; Figure 4—figure supplement 1C). Cell wedging was reasonably isotropic, but with circumferential wedging always stronger than radial. Away from the pit, progressive wedging was less rapid, again with a strong circumferential contribution but nearly no radial contribution (Figure 4B’, purple lines). That cells were less wedged radially might be because this is the orientation in which cells move into the pit, releasing radial pressure due to apical constriction near the pit.
 
@@ -73,21 +208,45 @@ Cell tilt, a measure of the divergence of a cell’s in-line from the surface no
 
 Hence, the relatively isotropic rates of apical constriction near the pit and the very similar rates of intercalation apically versus basally were in fact grounded in anisotropic wedging near the pit and in an interleaving difference between apical and basal. 3D tissue information such as wedging, interleaving and tilt are therefore essential to fully understand planar cell behaviours such as cell shape change and intercalation. Overall, our combined analysis so far suggests that isotropic apical constriction near the pit combines with an apically led circumferential contraction mechanism. We now investigate the possible origins of the latter.
 
-## Radially polarised T1 and rosette formation and resolution underlie cell intercalation in the placode
+### Radially polarised T1 and rosette formation and resolution underlie cell intercalation in the placode
 
 Our strain rate analysis has revealed that the intercalation strain rate, representing the continuous process of slippage of cells past each other, was a major contributor to early tube formation and was highly coordinated between apical and basal domains. 3D domain interleaving further revealed that cell rearrangement convergence is more advanced apically in the circumferential orientation. Both these findings are measured from small groups of cells across the placode but are agnostic about neighbour exchange events or more complicated multi-neighbour exchanges. Neighbour exchanges or cell intercalations are usually thought to occur through one of two mechanisms: groups of four cells can exchange contacts through the formation of a transient four-cell vertex structure, in a typical T1 exchange (Figure 5A), whereas groups of more than four cells can form an intermediary structure termed a rosette, followed by resolution of the rosette to create new neighbour contacts (Figure 5B). During convergence and extension of tissues in both vertebrates and invertebrates, the formation and resolution of these intermediate structures tend to be oriented along embryonic axis, with the resolution occurring perpendicular to the formation (Blankenship et al., 2006; Lienkamp et al., 2012). We therefore decided to also analyse intercalation in the placode by following individual events to identify the underlying mechanistic basis.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig5-v4.jpg)
+
+**Figure 5.:** (A,B) Depending on the number of cells involved, intercalation can proceed through formation and resolution of a four-cell vertex, a so-called T1-exchange (A), or through formation and resolution of a rosette-like structure than can involve 5–10 or more cells (B). (C–C’’) Quantification of neighbour gains as a measure of T1 and intercalation events, with an example of a circumferential neighbour gain (leading to radial tissue expansion) shown in (C). (C’) Circumferential neighbour gains dominate over radial neighbour gains. (C’’) Rate of productive gains, defined as the amount of circumferential neighbour gains leading to radial tissue elongation and expressed as a proportion (pp) of cell-cell interfaces tracked at each time point. Data are pooled from seven embryo movies. (D) Represented for a single exemplary movie analysed (ExpID0356), interfaces that will be lost (blue) or have been gained (red) are shown, mapped onto a segmented version of the placode at the start of the movie for future losses (t = −7.5 min) and at the end of the movie for past gains (t = +20.0 min). Note that lost interfaces are mostly oriented circumferentially, whereas gained interfaces are mostly radial (see alternative visualisation in Figure 5—figure supplement 1). (E) Stills of two time-lapse movies used for the strain rate analysis, illustrating the appearance of rosette structures prior to (t= −11:44 min) and after (t = +5:18 min) tissue bending. (E’) The majority of rosettes observed in the salivary gland placode consist of five to six cells. Data are pooled from three embryo movies. (F–H) Stills of a time-lapse movie of an example of rosette formation-resolution. (F) The cluster of cells contracts along the circumferential direction of the placode, and resolution from the six-cell-vertex is oriented towards the pit (arrow). Label is Ubi-RFP-CAAX. (G,H) The same rosette as in (F) in close-up, showing Ubi-RFP-CAAX to label membranes in magenta (G) and myosin II-GFP (sqhGFP) in green (H). Note the prominent but transient myosin accumulation at the centre of the rosette-forming group of cells. (I) is a schematic of the rosette formation-resolution analysed in (F–H). See also Video 5. Scale bars in (E, F, H) are 5 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig5-figsupp1-v4.jpg)
+
+**Figure 5—figure supplement 1.:** For an exemplary movie (ExpID0356) neighbour losses and gains are shown. (A) Future neighbour losses are shown on the segmented cell outlines of the initial time point (t = −7.5 min). (B) Past neighbour gains are shown on the segmented cell outlines of the last time point (t = +20.0 min). Red lines connecting centroids indicate radial losses or gains of the shared interface, blue lines connecting centroids indicate circumferential losses or gains of the shared interface.
 
 From our database of apical cell tracks and their connectivity, we identified all T1 transitions, classifying the time point when pairs of cells become new neighbours as ‘neighbour gains’. We further sub-classified neighbour gains as being either radially or circumferentially oriented, depending on which orientation was closest to the centroid-centroid line of two cells involved in a neighbour gain (Figure 5C). T1s occurred at a constant rate over our study period, and we observed T1s in both orientations, revealing that neighbour connectivity was quite dynamic (Figure 5C’,D). Nevertheless, over two-thirds of neighbour gains were oriented circumferentially, a bias that correlates with the intercalation strain rate contraction circumferentially (see for example Figure 2E’). This bias was also evident when visualising interface losses and gains over time for an individual placode, with losses preferentially occurring for circumferential interfaces and gains for radial interfaces (Figure 5D and Figure 5—figure supplement 1). We defined the number of productive neighbour gains as the difference between circumferential and radial gains, since equal numbers of both would cancel each other out. In order to control for any variability between placodes or between the number of cells tracked per placode, we expressed the number of productive gains as a proportion of the number of cell-cell contacts that were available to perform a circumferential T1 per time step (see Materials and methods). The proportion of productive circumferential gains was approximately constant, which lead to a steady net gain over time (Figure 5C’’). Furthermore, the cumulative strain attributable to discrete T1s calculated here (e0.09 = 1.09) is in good agreement with the cumulative strain over the same time window that is attributed to the continuous process of intercalation (1.1 in Figure 2E).
 
 In addition to typical T1 exchanges, multicellular rosette structures could easily be identified amongst the placodal cells (Figure 5E–F). Rosette formation began prior to the first sign of tissue-bending, but the number of rosettes per placode increased afterwards (Figure 5E,E’). Rosettes were usually formed of five to seven cells, with most involving only five cells (Figure 5E’, F). By contrast, rosettes observed during Drosophila germband extension can be formed of up to 12 cells (Blankenship et al., 2006). The strain rate analysis already indicated that, overall, intercalation events should be polarised to produce a contraction in the circumferential orientation with the corresponding expansion polarised towards the pit (Figure 2C–E’). Analysis of rosette formation and resolution in our time-lapse datasets of embryos expressing a membrane marker demonstrated that groups of cells contracted in a circumferential orientation to form a rosette, the resolution of which then moved individual cells towards the invaginating pit (Figure 5F and Video 5), thereby leading to the expansion observed in the strain rate analysis.
 
+![Video 5.](https://cdn.elifesciences.org/articles/35717/elife-35717-video5.mp4.jpg)
+
+**Video 5.:** Embryo of the genotype sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX, only the UbiRFP label is shown. A group of cells going through rosette formation/resolution is highlighted, still of the movie are shown in Figure 5F. Time stamp indicates time before and after initiation of tissue bending at t = 0. Scale bar 20 µm.
+
 Non-muscle myosin II is the major driver of cell shape changes in many different contexts (Levayer and Lecuit, 2012; Röper, 2013, 2015), and it has been shown to play an important role in T1 transitions and in rosette formation driving the convergence and extension events during germband extension in the Drosophila embryo (Blankenship et al., 2006; Fernandez-Gonzalez et al., 2009; Rauzi et al., 2010). We imaged embryos expressing palmitoylated RFP (Ubi-TagRFP-CAAX) as a membrane label and a GFP-tagged version of non-muscle myosin II regulatory light chain (called spaghetti squash, sqh, in Drosophila) under control of its own promoter in the null mutant background (sqhAX[3]; sqhGFP42) to assess myosin II distribution and intensity as a proxy for myosin activity (Video 6). In all individual rosette formation-resolution examples analysed (n = 29), junctional myosin II appeared particularly enriched in the form of short cable-like structures at the central contact sites of the rosette (Figure 5G,H). These cables initially spanned several cell diameters and shortened concomitant with the cells being drawn into a central vertex (Figure 5I). The orientation of the short myosin cables correlated with the direction of rosette-formation, but in contrast to germband extension was not always oriented parallel to the dorsal-ventral axis, but rather following the circumferential coordinates of the placode.
+
+![Video 6.](https://cdn.elifesciences.org/articles/35717/elife-35717-video6.mp4.jpg)
+
+**Video 6.:** Embryo of the genotype sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX used for the myosin II uni- and bi-polarity quantifications as shown in Figure 7. Time stamp indicates time before and after initiation of tissue bending at t = 0. Scale bar 20 µm.
 
 We now investigated whether these circumferential intercalations were actively driven within the apical domain to promote invagination.
 
-## Analysis of signatures of active versus passive cell intercalation
+### Analysis of signatures of active versus passive cell intercalation
 
 Even though the quasi-3D analysis detailed above strongly indicates that the intercalation of cells far from the pit initiates from the apical domain, the process of initiation itself could be either actively driven or a passive response. Intercalation far from the pit would be active if it arose as an intrinsic property of this part of the tissue and actively drove circumferential contraction of the tissue (Figure 6A; red curved arrows). The capacity of these cells for such active behaviour would likely be achieved through genetic patterning. Intercalation would be passive if the active apical constriction near the pit drove a passive ‘funnelling’ of far cells towards the pit, the radial pull leading to passive polarised intercalations (Figure 6A’; blue arrows).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig6-v4.jpg)
+
+**Figure 6.:** (A, A’). Cell intercalation in cells far from the pit could either be an active process, helping to draw cells together circumferentially and to extend tissue towards the pit (A), or the active pulling from the contractile pit could lead to a passive funnelling of cells towards the pit with associated passive intercalations (A’). We considered four measures should allow to distinguish between the above active and passive mechanisms. (B, B’) The lengths of actively shrinking circumferential junctions we predicted would be shorter than equivalent junction lengths of a Voronoi tessellation seeded with real cell centroid locations. We used the Voronoi tessellation as a proxy for ‘relaxed’ (not actively or passively altered) junction lengths and angles. Junctions pulled radially by the pit would be longer than predicted by Voronoi tessellation. (C,C’) Angles at vertices opposite actively shrinking circumferential junctions we predicted to be more acute than angles derived from a relaxed Voronoi tessellation, with the opposite predicted for pulled radial junctions. (D, D’) Active intercalation should lead to circumferential elongation of cells connected at vertices to shrinking junctions, whereas pulling from the pit would lead to radial cell elongation. (E, E’) Junctional actomyosin is predicted to be enriched in circumferential junctions that are actively shrinking. A response to pulling from the pit could lead to no enrichment or radially enriched junctional myosin (see text). (F) The junction lengths of both circumferentially and radially oriented junctions undergoing a T1 exchange showed an active signature (shorter than expected) compared to similarly oriented non-intercalating junctions. N = 135, 523, 78 and 618 junctions for the four distributions, respectively, from seven embryos. (G) Circumferentially oriented junctions far from the pit had an active signature of their vertex angles being more acute compared to radially oriented junctions, though junctions undergoing a T1 did not have more acute angles than junctions not directly involved in a T1. N = 139, 571, 84 and 675 junctions for the four distributions, respectively, from seven embryos. (F) Cells far from the pit had an active signature of being more elongated in the circumferential orientation. Cells at the ends of junctions involved in a T1 did not behave differently to junctions not involved in a T1. N = 135, 523, 78 and 618 junctions for the four distributions, respectively, from seven embryos. Error bars in (F–H) are ±SD.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig6-figsupp1-v4.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Shortening of interfaces in the run up to a neighbour exchange event (t = 0 min). We used data in the window −4 to −2 min as T1 data to compare to non-intercalating baseline junctions. (B–D) Signatures of non-intercalating junctions (baseline) over developmental time. Non-intercalating junctions were defined as those that were more than 10 min away from being involved in a T1, or were never involved in a T1. All interface length deviation from Voronoi (B), vertex angle deviation from Voronoi (C) and cell elongation of cells opposite junctions (D) showed no temporal trend to their baseline (see Materials and methods).
 
 In order to distinguish between an active mechanism and a passive mechanism, we made four predictions (Figure 6B–E’), comparing metrics of junction length, angles at vertices, cell elongation and junctional myosin II accumulation. For each metric, we compared circumferentially oriented junctions with radial junctions. We also distinguished whether junctions were or were not shrinking junctions, about to be involved in a T1 event (see Materials and methods). We compared T1 data with similarly oriented non-T1 data to ask if there was a more active signature to shrinking junctions. We also compared radial versus circumferential non-T1 data to ask whether junctions as a whole in one orientation had a more active signature.
 
@@ -101,31 +260,51 @@ These three geometrical measures for cells far from the pit, where intercalation
 
 We also predicted that active circumferential junction contraction would be driven by myosin II accumulation at circumferential junctions (Figure 6E). Recent studies have indicated that in some tissues, as response to mechanical pulling, myosin II accumulates and becomes polarised at junctions parallel to the pulling force (Duda et al., 2018; Fernandez-Gonzalez et al., 2009). Hence if intercalation occurred as a passive response, we would expect either no myosin II polarisation or mechanically induced localisation to radially oriented junctions (Figure 6E’). The localisation and increase in myosin II observed at the central junctions during rosette formation/resolution in the placode, as shown above (Figure 5G–I), indicated that some junctional myosin II was circumferentially enriched. We now set out to analyse junctional myosin II distribution systematically across the whole placode.
 
-## Myosin is enriched in circumferential junctions across the placode
+### Myosin is enriched in circumferential junctions across the placode
 
 When apical junctional myosin intensity was quantified in fixed samples of sqhGFP embryos across the early placode, a clear enrichment of myosin II was apparent in circumferentially compared to radially oriented junctions (Figure 7A,B). Such tissue-wide circumferential versus radial polarisation of myosin clearly supported an active mechanism of cell intercalation, with circumferential myosin II likely assisting both rosette and T1 vertex formation during the polarised cell intercalation events.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig7-v4.jpg)
 
-**Figure 7.:** (A–B) Example of junctional myosin II intensity, visualised using sqh[AX3]; sqhGFP in fixed embryos; (A) shows a heat map of intensity. (B) Quantification of apical junctional myosin polarisation, depicted as the ratio of junctional intensity (circumferential or radial) over embryo average (5 placodes from 5 embryos, 83 circumferential junctions versus 83 radial junctions; significance calculated using unpaired t-test; embryo average is average apical myosin intensity in the epidermis outside the placode). (C, C’) Myosin II enrichment was quantified from segmented and tracked time-lapse movies. (C) depicts the sqhGFP signal from a single time point of a movie, (C’) shows the calculated junctional myosin II intensity. See also Videos 6 and 7. (D–F) Myosin enrichment at junctions can occur in two flavours: (D’, E) Myosin II bi-polarity is defined as myosin II enrichment at two parallel oriented junctions of a single cell, calculated as the magnitude of a vector pointing at the enrichment (D’). Circumferential myosin II bi-polar enrichment (i.e. the radial bi-polarity vector, green in (D’) pointing at myosin II enrichment), increases between −15 min and + 18 min (E), green curve). (D’’, F) Myosin II unipolarity is defined as myosin II enrichment selectively on side of a cell (D’’). Circumferential myosin II uni-polar enrichment (i.e. the radial uni-polarity vector, green, in (D’’) pointing at myosin II enrichment), increases between −15 min and +18 min (F), green curve), whereas radial uni-polar enrichment (i.e. the circumferential uni-polarity vector in magenta in D’’), does not increase (F), magenta curve). (E, F) Error bars represent the mean of within-embryo variances of four movies, and significance between radial and circumferential bi- and uni-polarity at p<0.05 using a mixed-effects model (see Materials and methods) is depicted as shaded boxes at the bottom of panels E and F. See also Video 7. (G–H’’’) Examples of myosin II and Bazooka/Par3 polarisation in fixed embryos, two different regions of two placodes are shown. Note the complementary localisation of myosin II (green) and Bazooka (magenta). Scale bars are 5 µm. (I) Quantification of myosin II and Bazooka/Par3 polarisation in areas of strong junctional myosin II enrichment at circumferential junctions as shown in (G’) and (H’). Both circumferential (yellow arrows in H’) and radial (turquoise arrows in H’) fluorescence intensity are shown as ratios over embryo average, both for myosin II and Bazooka in the same junctions (from five embryos; mean and SEM are shown; paired t-test for comparison in the same junctions, unpaired t-tests for comparison of circumferential myo vs radial myo and circumferential Baz vs radial Baz; N = 33 circumferential junctions and N = 38 radial junctions across five embryos; embryo average is average apical myosin II or bazooka intensity in the epidermis outside the placode). (J, K) In contrast to the well-documented A-P/D-V polarity of cells in the Drosophila germband during elongation in gastrulation (J), the salivary gland placode appears to show a radial tissue polarisation, with a radial-circumferential molecular pattern imprinted onto it that instructs the morphogenesis (K).10.7554/eLife.35717.035Figure 7—source data 1.Related to Figure 7B,E,F and I.
+**Figure 7.:** (A–B) Example of junctional myosin II intensity, visualised using sqh[AX3]; sqhGFP in fixed embryos; (A) shows a heat map of intensity. (B) Quantification of apical junctional myosin polarisation, depicted as the ratio of junctional intensity (circumferential or radial) over embryo average (5 placodes from 5 embryos, 83 circumferential junctions versus 83 radial junctions; significance calculated using unpaired t-test; embryo average is average apical myosin intensity in the epidermis outside the placode). (C, C’) Myosin II enrichment was quantified from segmented and tracked time-lapse movies. (C) depicts the sqhGFP signal from a single time point of a movie, (C’) shows the calculated junctional myosin II intensity. See also Videos 6 and 7. (D–F) Myosin enrichment at junctions can occur in two flavours: (D’, E) Myosin II bi-polarity is defined as myosin II enrichment at two parallel oriented junctions of a single cell, calculated as the magnitude of a vector pointing at the enrichment (D’). Circumferential myosin II bi-polar enrichment (i.e. the radial bi-polarity vector, green in (D’) pointing at myosin II enrichment), increases between −15 min and + 18 min (E), green curve). (D’’, F) Myosin II unipolarity is defined as myosin II enrichment selectively on side of a cell (D’’). Circumferential myosin II uni-polar enrichment (i.e. the radial uni-polarity vector, green, in (D’’) pointing at myosin II enrichment), increases between −15 min and +18 min (F), green curve), whereas radial uni-polar enrichment (i.e. the circumferential uni-polarity vector in magenta in D’’), does not increase (F), magenta curve). (E, F) Error bars represent the mean of within-embryo variances of four movies, and significance between radial and circumferential bi- and uni-polarity at p<0.05 using a mixed-effects model (see Materials and methods) is depicted as shaded boxes at the bottom of panels E and F. See also Video 7. (G–H’’’) Examples of myosin II and Bazooka/Par3 polarisation in fixed embryos, two different regions of two placodes are shown. Note the complementary localisation of myosin II (green) and Bazooka (magenta). Scale bars are 5 µm. (I) Quantification of myosin II and Bazooka/Par3 polarisation in areas of strong junctional myosin II enrichment at circumferential junctions as shown in (G’) and (H’). Both circumferential (yellow arrows in H’) and radial (turquoise arrows in H’) fluorescence intensity are shown as ratios over embryo average, both for myosin II and Bazooka in the same junctions (from five embryos; mean and SEM are shown; paired t-test for comparison in the same junctions, unpaired t-tests for comparison of circumferential myo vs radial myo and circumferential Baz vs radial Baz; N = 33 circumferential junctions and N = 38 radial junctions across five embryos; embryo average is average apical myosin II or bazooka intensity in the epidermis outside the placode). (J, K) In contrast to the well-documented A-P/D-V polarity of cells in the Drosophila germband during elongation in gastrulation (J), the salivary gland placode appears to show a radial tissue polarisation, with a radial-circumferential molecular pattern imprinted onto it that instructs the morphogenesis (K).
 
 To compare and correlate junctional myosin II dynamics with the above strain rate analysis, we analysed myosin II polarisation dynamically across the whole tissue (Figure 7C,C’). Quantitative tools that allow junctional polarisation of myosin and other players to be quantified have previously been established (Figure 7D,D’’; [Tetley et al., 2016]). Myosin II polarisation at circumferential junctions could either occur through enrichment at two opposite junctions or sides, termed bi-polarity (Figure 7D’ and Video 7), or through enrichment at a single junction or side within a cell, termed unipolarity (Figure 7D’’ and Video 7). Starting about 10 min prior to tissue bending, bi-polar enrichment of myosin II at circumferential junctions was significantly stronger than at radial junctions when measured across the whole placode (Figure 7E). Similarly, starting ~ 5 min later, unipolar enrichment of myosin II at circumferential junctions dominated over radial enrichment when measured across the whole placode (Figure 7F). This clear and increasing circumferential junctional polarisation of myosin II together with the geometrical signatures discussed above strongly supported an active mechanism of T1 vertex and rosette formation (Figure 6A). Less clear is whether the resolution of rosettes and vertices is equally actively driven. Instead, this part of the intercalation events could respond to cell-extrinsic cues, such as the pulling of the invaginating pit, akin to the role of the posterior midgut invagination during germ band extension (Collinet et al., 2015; Lye et al., 2015) or pulling forces generated through micro-aspiration re-orienting intercalations in embryonic mouse tissues (Wen et al., 2017b).
+
+![Video 7.](https://cdn.elifesciences.org/articles/35717/elife-35717-video7.mp4.jpg)
+
+**Video 7.:** Myosin II uni-polarity vectors (left) and bi-polarity vectors (right) are shown. Junctions are colour coded according to their myosin II intensity levels as shown in Figure 7C’ (middle). Time stamp indicates time before and after initiation of tissue bending at t = 0. Scale bar 20 µm. See also Figure 7.
 
 In cell intercalation events during germband extension, myosin polarisation is complementary to enrichment of Par3/Bazooka (Baz) as well as Armadillo/β-catenin, with both enrichments controlled by the upstream patterning and positioning of transmembrane Toll receptors and Rho-kinase (Rok) (Blankenship et al., 2006; Paré et al., 2014; Simões et al., 2010). We therefore analysed whether such complementarity was also present in the early salivary gland placode. Antibody labelling of Baz often showed a complementarity in membrane enrichment to myosin II (Figure 7G–I), most pronounced where myosin II was organised into circumferential mini cables during intercalation events (Figure 7G,H). Baz was enriched at radially oriented junctions where myosin II was low, and vice versa at circumferential junctions, though in contrast to germband extension, the Baz polarisation did not extend uniformly across the tissue and was overall less strong than the myosin II polarisation (Figure 7I).
 
 Thus, in order to adapt to a circular tissue geometry and to the need for ordered invagination through a focal point during the process of tube budding, a conserved molecular pattern of myosin-Baz complementarity is apparently imprinted onto the salivary gland placode in a radial coordinate pattern, rather than the prevailing A-P/D-V pattern of the earlier embryo during germband extension (Figure 7J,K).
 
-## Resolution but not initiation of cell intercalation is disrupted in the absence of Forkhead
+### Resolution but not initiation of cell intercalation is disrupted in the absence of Forkhead
 
 In order to address how the radial pattern of behaviours and molecular factors across the placode is established, we analysed mutants in a key factor of salivary gland tube invagination, the transcription factor Fork head (Fkh). Fkh is expressed just upon specification of the placodal cells in a dynamic pattern spreading across the whole placode (Figure 8—figure supplement 1A–C), directly downstream of the homeotic factor Scr (Zhou et al., 2001). In fkh mutants, invagination of the placode fails, and towards the end of embryogenesis salivary gland-fated cells undergo apoptosis as Fkh appears to prevent activation of pro-apoptotic factors (Jürgens and Weigel, 1988; Myat and Andrew, 2000a). Previous studies have concluded that Fkh promotes cell shape changes important for invagination, in particular apical constriction (Chung et al., 2017; Myat and Andrew, 2000a). Fkh is not the only transcription factor important for correct changes during invagination, but works in parallel to for example Huckebein (Hkb), the lack of which also confers significant problems with apical cell shape changes and invagination (Myat and Andrew, 2000b, 2002).
 
 We combined a fkh null mutant (fkh[6]) with markers allowing membrane labeling and cell segmentation (Ubi-TagRFP-CAAX) as well as myosin II quantification (sqhGFP; see Video 8). When fkh mutant placodes were compared to wild-type ones at late stage 11 (beyond the time window analysed here) then fkh mutant placodes showed no sign of a dorsal-posterior invagination point (Figure 8A–B’; Figure 8—figure supplement 1D–E’’). In fact, many placodes beyond late stage 11 showed a centrally located shallow depression (Figure 8A,A’, yellow dotted lines). Strain rate analysis of five segmented movies of fkh[6] mutant placodes, spanning the equivalent time period to the wild-type movies analysed above (Figure 8—figure supplement 2C), showed that there was no constriction at the tissue level near the pit (Figure 8C–E and Figure 8—figure supplement 2D,D’). In fact, if anything, there was a slight tissue expansion (Figure 8E) caused by a slight expansion at the cell level (Figure 8E’), with zero intercalation (Figure 8E’’). Away from the pit fkh[6] mutant placodes expanded slightly (Figure 8F and Figure 8—figure supplement 2E,E’), again mostly due to cell shape changes (Figure 8F’, F’’).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig8-v4.jpg)
+
+**Figure 8.:** (A–B’) Examples of fkh mutant and wild-type placodes illustrating the lack of pit formation. A control placode at early stage 11 shows clear constriction and pit formation in the dorsal-posterior corner (yellow dotted line in cross-sections in B, B’), whereas even at late stage 11 a fkh mutant placode (beyond the time frame of our quantitative analysis) does not show a pit in the dorsal-posterior corner, instead a shallow central depression forms with some constricted central apices (yellow dotted line in cross-sections in A), (A’). Myosin II (sqhGFP) is in green and DE-Cadherin in magenta, white dotted lines in main panels outline the placode boundary. (C, D) Stills of segmented and tracked time lapse movies for control (C) and fkh[6] mutant (D) placodes, apical cell outlines are shown and colour-coded by apical cell area. Note the lack of contraction at the tissue and cell level in the fkh[6] mutant. (E–F’’) Analysis of cumulative apical strains in fkh mutant placodes (from five movies) in comparison to the analysis of wild-type embryos (as shown in Figure 2). Over the first 36 min of tube budding centred around the first appearance of tissue-bending in the wild-type and an equivalent time point in the fkh mutants, the fkh mutant placodes show only a slight expansion at the tissue level in the cells far from the predicted pit position (F) due to cell shape changes (F’) with very little intercalation contributing to the change (E’’, F’’). Statistical significance based on a mixed-effects model and a p<0.05 threshold (calculated for instantaneous strain rates [see Figure 2—figure supplement 1 and Figure 8—figure supplement 2]), is indicated by shaded boxes at the top of each panel: wt ‘rad’ vs fkh ‘rad’ (dark grey) and wt ‘circ’ vs fkh ‘circ’ (light grey).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig8-figsupp1-v4.jpg)
+
+**Figure 8—figure supplement 1.:** (A–C) Fkh expression (magenta in A, B) initiates around the future point of invagination in the dorsal-posterior corner at late stage 10 (A’) and then spreads radially across the secretory part of the placode in early stage 11 (B’). (C) Schematic of radially expanding expression pattern of Fkh. (D–E’’) Comparison of Crumbs (red) and myosin II (sqhGFP; green) localisation in control (D–D’’) and fkh mutant (E–E’’) placodes. In the control, Crumbs is strongest near the invagination point and levels drop with radial distance from the pit, whereas in the fkh[6] mutant beyond late stage 11 Crumbs is stronger in the central shallow depression, with less towards the periphery. Areas of remaining circumferential myosin II polarisation are visible in the fkh[6] mutant (E’’). (F–G) Example fkh[6] mutant placode showing remaining myosin II (green) and Bazooka (magenta) polarisation, (G) shows a schematic representation of the area magnified in (F’–F’’’). Dotted lines in panels indicate the placode boundary. Scale bars in (A, B, D, E and F) are 5 µm.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig8-figsupp2-v4.jpg)
+
+**Figure 8—figure supplement 2.:** (A–B’’) Spatial summary of average apical strain rates in fkh[6] mutants covering 15 min prior to 18 min post-commencement of tissue bending, showing the radial (A–A’’) as well as circumferential (B–B’’) contributions, expressed as proportion (pp) change per minute. Expansion is magenta, contraction is green. (C) Schematic of time windows covered by the time-lapse movies analysed for the apical strain rate calculations in fkh[6] mutant embryos. (D–E’) Instantaneous apical strain rates in fkh[6] mutants corresponding to the cumulative plots in Figure 8E–F’’. Error bars depict the mean of within-embryo variances of five movies. Significance using a mixed-effects model of p<0.05 is indicated by shaded boxes at the top of each panel: tissue vs cell shape (green) and tissue vs intercalation (orange), see Materials and methods for details of statistics.
+
+![Video 8.](https://cdn.elifesciences.org/articles/35717/elife-35717-video8.mp4.jpg)
+
+**Video 8.:** Embryo of the genotype sqh::sqhGFP42, UbiRFP-CAAX; fkh[6] used for the myosin II uni- and bi-polarity quantifications as shown in Figure 9. Time stamp indicates time before and after initiation of tissue bending at t = 0. Scale bar 20 µm.
+
 Is this strong reduction of cell behaviours due to a complete ‘freezing’ of the placode in the fkh[6] mutants? We analysed whether junctional myosin II was still polarised in the fkh[6] mutant placodes. In fixed and live samples, fkh[6] mutant placodes still showed the circumferential actomyosin cable surrounding the placode (Figure 8—figure supplement 1E’’, compare to D’’; [Röper, 2012]). When myosin II unipolarity and bi-polarity were quantified from five segmented and tracked movies, at the tissue-level there was a strong and significant reduction in myosin II polarisation, with no difference between radial and circumferential orientations in either measure and myosin II bi-polarity indistinguishable from zero (Figure 9A,B). Nonetheless, cells were not static but in fact neighbour exchanges were present, both in form of T1 exchanges and rosettes (Figure 9C–F). The quantitative analysis of neighbour gains from segmented and tracked movies in the fkh[6] mutant revealed that gains accumulated both circumferentially as well as radially, at a rate comparable to that observed in the control (Figure 9E). However, in contrast to the control, where circumferential gains significantly outweighed radial neighbour gains leading to a positive net rate of productive circumferential gains (Figure 9F, green line), in the fkh[6] mutant circumferential and radial gains occurred in equal amounts (Figure 9E) leading to a near zero net gain (Figure 9F, pink line). Interestingly, when focusing on individual events such as rosettes, despite a loss of tissue-wide myosin II polarisation, myosin II was still enriched at the central constricting junctions (Figure 9Cd’), and in fixed embryos smaller regions of myosin II-Baz complementarity could be identified (Figure 8—figure supplement 1F–G).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/35717/elife-35717-fig9-v4.jpg)
 
-**Figure 9.:** (A,B) Analysis of myosin II unipolarity (A) and bi-polarity (B) in fkh[6] mutant placodes compared to wild-type (as shown in Figure 7, see also Videos 7 and 8). Overall myosin II levels in fkh[6] mutant placodes are lower (not shown) and both unipolarity and bi-polarity are decreased, with bi-polarity near zero (B, solid curves). Error bars show intra-embryo variation of five embryo movies for fkh[6] and four embryo movies for wt. Statistical significance at p<0.05 using a mixed-effect model is indicated as shaded boxed at the bottom of the panels: wt vs fkh[6] for the radial vector/circumferential enrichment (green, ‘rad’) and wt vs fkh for the circumferential vector/radial enrichment (purple, ‘circ’). (C–F) Neighbour exchanges still occur in fkh[6] mutant placodes. (C) Sill pictures from a tracked and segmented movie of a fkh[6] mutant placode (labelled with membrane-RFP), frames (labelled a–j) are 1:55 min apart; the full placode view in (D) is from time point (a, d’) shows the myosin accumulation at the centre of the rosette structure observed in (d). (E) In comparison to wt where circumferential neighbour gains dominate over radial ones (dashed lines), in the fkh[6] mutant placodes both occur with equal frequency (solid lines). This leads to nearly no productive circumferential neighbour gains in the mutant, significantly fewer than in the wt (F); Kolmogorov-Smirnov two sample test D = 0.5833, p=0.0191).10.7554/eLife.35717.044Figure 9—source data 1.fkh[6] mutant.Related to Figure 9A–B and E–F.
+**Figure 9.:** (A,B) Analysis of myosin II unipolarity (A) and bi-polarity (B) in fkh[6] mutant placodes compared to wild-type (as shown in Figure 7, see also Videos 7 and 8). Overall myosin II levels in fkh[6] mutant placodes are lower (not shown) and both unipolarity and bi-polarity are decreased, with bi-polarity near zero (B, solid curves). Error bars show intra-embryo variation of five embryo movies for fkh[6] and four embryo movies for wt. Statistical significance at p<0.05 using a mixed-effect model is indicated as shaded boxed at the bottom of the panels: wt vs fkh[6] for the radial vector/circumferential enrichment (green, ‘rad’) and wt vs fkh for the circumferential vector/radial enrichment (purple, ‘circ’). (C–F) Neighbour exchanges still occur in fkh[6] mutant placodes. (C) Sill pictures from a tracked and segmented movie of a fkh[6] mutant placode (labelled with membrane-RFP), frames (labelled a–j) are 1:55 min apart; the full placode view in (D) is from time point (a, d’) shows the myosin accumulation at the centre of the rosette structure observed in (d). (E) In comparison to wt where circumferential neighbour gains dominate over radial ones (dashed lines), in the fkh[6] mutant placodes both occur with equal frequency (solid lines). This leads to nearly no productive circumferential neighbour gains in the mutant, significantly fewer than in the wt (F); Kolmogorov-Smirnov two sample test D = 0.5833, p=0.0191).
 
 Therefore, although at the tissue level fkh[6] mutant placodes appear near static, the close analysis of individual events revealed a highly dynamic but unpolarised intercalation behaviour across the mutant placodes. Without an actively invaginating pit and focussed apical constriction taking place in the fkh[6] mutant, the unpolarised intercalation events are not being resolved radially because of the absence of the pull from the pit. This finding therefore also suggests an active intercalation mechanism, where the remaining local increases in junctional myosin II still support formation of T1 vertices and rosettes, but without any overall directionality to their resolution.
 
@@ -151,11 +330,147 @@ In summary, our work uncovers a dynamic interplay of highly patterned cell behav
 
 ## Materials and methods
 
-## Fly stocks and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>Fork Head</td>
+      <td>NA</td>
+      <td>FLYB:FBgn0000659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>non-muscle myosin II/sqh</td>
+      <td>NA</td>
+      <td>FLYB:FBgn0003514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>Bazooka/Par3</td>
+      <td>NA</td>
+      <td>FLYB:FBgn0000163</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Scribble-GFP</td>
+      <td>Kyoto Drosophila Genomic Research Centre</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>fkh-Gal4</td>
+      <td>PMID:10625560</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Fkh-Gal4::UAS-palmYFP</td>
+      <td>PMID:10625560, PMID:21297621 and this study</td>
+      <td></td>
+      <td>stock generated upon recombination of Brainbow Cassette stock</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sqh[AX3]; sqh::sqhGFP42</td>
+      <td>PMID:14657248</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>Kyoto Drosophila Genomic Research Centre Number 109822</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>fkh[6]</td>
+      <td>Bloomington Drosophila Stock Center, PMID:2566386</td>
+      <td>FLYB:FBal0004012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DE-Cadherin (rat monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank at the University of Iowa</td>
+      <td>DSHB:DCAD2</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Crumbs (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank at the University of Iowa</td>
+      <td>DSHB:Cq4</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Bazooka (rabbit polyclonal)</td>
+      <td>PMID:10591216</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Forkhead (guinea pig plyclonal)</td>
+      <td>PMID:2566386</td>
+      <td></td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488/549/649- coupled secondary antibodies</td>
+      <td>Molecular Probes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-, Cy5- coupled secondary antibodies</td>
+      <td>Jackson Immuno Research</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>otracks</td>
+      <td>PMID:19412170, PMID:24914560</td>
+      <td></td>
+      <td>Software file (custom software written in IDL)</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>nd-safir</td>
+      <td>PMID:19900849</td>
+      <td></td>
+      <td>Denoising algorithm. Available at http://serpico.rennes.inria.fr/doku.php?id=software:nd-safir:index</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and husbandry
 
 The following transgenic fly lines were used: sqhAX3; sqh::sqhGFP42 (Royou et al., 2004) and fkhGal4 (Henderson and Andrew, 2000; Zhou et al., 2001) [kind gift of Debbie Andrew]; Scribble-GFP (DGRC Kyoto), UAS-palmYFP (generated from membrane Brainbow; [Hampel et al., 2011]), y1 w* cv1 sqhAX3; P{w+mC = sqh-GFP.RLC}C-42 M{w+mC = Ubi-TagRFP-T-CAAX}ZH-22A (Kyoto DGRC Number 109822, referred to as sqhAX3;sqhGFP; UbiRFP); P{w + mC = sqh-GFP.RLC}C-42 M{w + mC = Ubi-TagRFP-T-CAAX}ZH-22A; fkh[6]/TM3 Sb Twi-Gal4::UAS-GFP (fkh[6] allele from Bloomington). See Table 1 for details of genotypes used for individual figure panels.
 
-## Embryo immunofluorescence labelling, confocal, and time-lapse
+### Embryo immunofluorescence labelling, confocal, and time-lapse
 
 Embryos were collected on apple juice-agar plates and processed for immunofluorescence using standard procedures. Briefly, embryos were dechorionated in 50% bleach, fixed in 4% formaldehyde, and stained with primary and secondary antibodies in PBT (PBS plus 0.5% bovine serum albumin and 0.3% Triton X-100). anti-Crumbs and anti-E-Cadherin antibodies were obtained from the Developmental Studies Hybridoma Bank at the University of Iowa; anti-Baz was a gift from Andreas Wodarz (Wodarz et al., 1999); anti-Fkh was a gift from Herbert Jäckle (Weigel et al., 1989). Secondary antibodies used were Alexa Fluor 488/Fluor 549/Fluor 649 coupled (Molecular Probes) and Cy3 and Cy5 coupled (Jackson ImmunoResearch Laboratories). Samples were embedded in Vectashield (Vectorlabs).
 
@@ -163,13 +478,332 @@ Images of fixed samples were acquired on an Olympus FluoView 1200 or a Zeiss 780
 
 For live time-lapse experiments embryos from [Scribble-GFP,UAS-palmYFP fkhGal4], [sqhAX3; sqhGFP,UbiRFP] or [sqhGFP,UbiRFP; fkh[6]] were dechorionated in 50% bleach and extensively rinsed in water. Embryos were manually aligned and attached to heptane-glue coated coverslips and mounted on custom-made metal slides; embryos were covered using halocarbon oil 27 (Sigma) and viability after imaging after 24 h was controlled prior to further data analysis. Time-lapse sequences were imaged under a 40x/1.3NA oil objective on an inverted Zeiss 780 Laser scanning system, acquiring z-stacks every 0.8–2.6 min with a typical voxel xyz size of 0.22 × 0.22 × 1 μm. Z-stack projections to generate movies in Supplementary Material were assembled in ImageJ or Imaris. The absence of fluorescent Twi-Gal4::UAS-GFP was used to identify homozygous fkh[6] mutant embryos. During the early stages of salivary gland placode morphogenesis analysed here, fkh[6] mutants showed no reduction in cell number or initiation of apoptosis (data not shown). The membrane channel images from time-lapse experiments were denoised using nd-safir software (Boulanger et al., 2010).
 
-## Cell segmentation and tracking
+### Cell segmentation and tracking
 
 Cell tracking was performed using custom software written in IDL (code provided in (Blanchard et al., 2009) or by email from G.B.B.). First, the curved surface of the embryonic epithelium was located by draping a ‘blanket’ down onto all image volumes over time, where the pixel-detailed blanket was caught by, and remained on top of binarised cortical fluorescence signal. Different quasi-2D image layers were then extracted from image volumes at specified depths from the surface blanket. We took image layers at 1–3 and 7–8 μm for the apical and mid-basal depths, respectively. Image layers were local projections of 1–3 z-depths, with median, top-hat or high/low frequency filters applied as necessary to optimise subsequent cell tracking.
 
 Cells in image layers at these two depths were segmented using an adaptive watershedding algorithm as they were simultaneously linked in time. Manual correction of segmented cell outlines was performed for all fixed and time-lapse data. The segmentation of all the movies used in this study was manually corrected to ensure at least 90% tracking coverage of the placode at all times. Tracked cells were subjected to various quality filters (lineage length, area, aspect ratio, relative velocity) so that incorrectly tracked cells were eliminated prior to further analysis. The number of embryos analysed and number of cells can be found in Tables 1 and 2 (also see Figure 2—figure supplement 1 (WT apical), Figure 3—figure supplement 1 (WT basal) and Figure 8—figure supplement 1(f, K, h)).
 
-## Mobile radial coordinate system for the salivary placode
+**Table 2.**
+ Genotypes used for Figure Panels.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Panel</th>
+      <th>Embryo genotypes</th>
+      <th>Number of embryos used for quantitative analysis</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 1</td>
+      <td>B, B'</td>
+      <td>Scribble-GFP</td>
+      <td>panel representative of genotype (&gt;30 embryos inspected)</td>
+      <td>fixed</td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td>C</td>
+      <td>fkhGal4,UASpalm-YFP/Scribble-GFP</td>
+      <td>panel representative of genotype (&gt;30 embryos inspected)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td>G,G’</td>
+      <td>fkhGal4,UASpalm-YFP/Scribble-GFP and sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>1 and 8 (i.e. 9 in total)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 2</td>
+      <td>C,D,E</td>
+      <td>fkhGal4,UASpalm-YFP/Scribble-GFP and sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>1 and 8 (i.e. 9 in total)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>A,B</td>
+      <td>fkhGal4,UASpalm-YFP/Scribble-GFP</td>
+      <td>panels representative of genotype (&gt;30 embryos inspected)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>D,E,F</td>
+      <td>sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>5</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>C,E,G</td>
+      <td>fkhGal4,UASpalm-YFP/Scribble-GFP and sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>1 and 4 (i.e. 5 in total)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>C',C'', C'''</td>
+      <td>fkhGal4,UASpalm-YFP/Scribble-GFP and sqh[AX3]; sqh::sqhGFP42, UbiRFP</td>
+      <td>1 and 6 (i.e. 7 in total)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>E,E'</td>
+      <td>sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>3</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>F,G,H</td>
+      <td>sqh[AX3];sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>panels representative of genotype (&gt;30 embryos inspected)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>F,G,H</td>
+      <td>fkhGal4,UASpalm-YFP/Scribble-GFP and sqh[AX3]; sqh::sqhGFP42, UbiRFP</td>
+      <td>1 and 6 (i.e. 7 in total)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 7</td>
+      <td>A</td>
+      <td>sqh[AX3]; sqh::sqhGFP42</td>
+      <td>panel representative of genotype (&gt;30 embryos inspected)</td>
+      <td>fixed</td>
+    </tr>
+    <tr>
+      <td>Figure 7</td>
+      <td>B</td>
+      <td>sqh[AX3]; sqh::sqhGFP42</td>
+      <td>5</td>
+      <td>fixed</td>
+    </tr>
+    <tr>
+      <td>Figure 7</td>
+      <td>C</td>
+      <td>sqh[AX3]; sqh::sqhGFP42 UbiRFP-CAAX</td>
+      <td>panels representative of genotype (&gt;30 embryos inspected)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 7</td>
+      <td>E,F</td>
+      <td>sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>4</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 7</td>
+      <td>G</td>
+      <td>sqh[AX3]; sqh::sqhGFP42</td>
+      <td>panels representative of genotype (&gt;30 embryos inspected)</td>
+      <td>fixed</td>
+    </tr>
+    <tr>
+      <td>Figure 7</td>
+      <td>H</td>
+      <td>sqh[AX3]; sqh::sqhGFP42</td>
+      <td>panels representative of genotype (&gt;30 embryos inspected)</td>
+      <td>fixed</td>
+    </tr>
+    <tr>
+      <td>Figure 7</td>
+      <td>I</td>
+      <td>sqh[AX3]; sqh::sqhGFP42</td>
+      <td>5</td>
+      <td>fixed</td>
+    </tr>
+    <tr>
+      <td>Figure 8</td>
+      <td>A</td>
+      <td>sqh::sqhGFP42, UbiRFP-CAAX; fkh[6]</td>
+      <td>panels representative of genotype (&gt;30 embryos inspected)</td>
+      <td>fixed</td>
+    </tr>
+    <tr>
+      <td>Figure 8</td>
+      <td>B</td>
+      <td>sqh::sqhGFP42, UbiRFP-CAAX; fkh[6]/TM3</td>
+      <td>panels representative of genotype (&gt;30 embryos inspected)</td>
+      <td>fixed</td>
+    </tr>
+    <tr>
+      <td>Figure 8</td>
+      <td>C</td>
+      <td>sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>panels representative of genotype (&gt;30 embryos inspected)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 8</td>
+      <td>D</td>
+      <td>sqh::sqhGFP42, UbiRFP-CAAX; fkh[6]</td>
+      <td>panels representative of genotype (&gt;30 embryos inspected)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 8</td>
+      <td>E,F (as in Figure 2C,D,E)</td>
+      <td>fkhGal4,UASpalm-YFP/Scribble-GFP and sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>1 and 8 (i.e. 9 in total)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 8</td>
+      <td>E,F</td>
+      <td>sqh::sqhGFP42, UbiRFP; fkh[6]</td>
+      <td>5</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 9</td>
+      <td>A,B</td>
+      <td>sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>4</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 9</td>
+      <td>A,B</td>
+      <td>sqh::sqhGFP42, UbiRFP-CAAX; fkh[6]</td>
+      <td>5</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 9</td>
+      <td>C,D</td>
+      <td>sqh::sqhGFP42, UbiRFP-CAAX; fkh[6]</td>
+      <td>3</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 9</td>
+      <td>E</td>
+      <td>sqh[AX3];sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>6</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 9</td>
+      <td>E</td>
+      <td>sqh::sqhGFP42, UbiRFP-CAAX; fkh[6]</td>
+      <td>5</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 9</td>
+      <td>F</td>
+      <td>fkhGal4,UASpalm-YFP/Scribble-GFP and sqh[AX3]; sqh::sqhGFP42, UbiRFP</td>
+      <td>1 and 6 (i.e. 7 in total)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 9</td>
+      <td>F</td>
+      <td>sqh::sqhGFP42, UbiRFP-CAAX; fkh[6]</td>
+      <td>5</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure Supplement</td>
+      <td>Panel</td>
+      <td>Embryo genotype</td>
+      <td>Number of embryos used for quantitative analysis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 1</td>
+      <td>B-E'</td>
+      <td>fkhGal4,UASpalm-YFP/Scribble-GFP and sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>1 and 8 (i.e. 9 in total)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 1</td>
+      <td>F</td>
+      <td>sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>1</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1</td>
+      <td>B-F</td>
+      <td>sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>5</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 2</td>
+      <td>A-B’</td>
+      <td>sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>5</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>B,C</td>
+      <td>sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>1</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>E</td>
+      <td>fkhGal4,UASpalm-YFP/Scribble-GFP and sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>1 and 4 (i.e. 5 in total)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1</td>
+      <td>A,B</td>
+      <td>sqh[AX3]; sqh::sqhGFP42, UbiRFP-CAAX</td>
+      <td>1</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 6—figure supplement 1</td>
+      <td></td>
+      <td>fkhGal4,UASpalm-YFP/Scribble-GFP and sqh[AX3]; sqh::sqhGFP42, UbiRFP</td>
+      <td>1 and 6 (i.e. 7 in total)</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 1</td>
+      <td>A-B'</td>
+      <td>sqh::sqhGFP42</td>
+      <td>panels representative of genotype (&gt;30 embryos inspected)</td>
+      <td>fixed</td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 1</td>
+      <td>D-F’’’</td>
+      <td>sqh::sqhGFP42, UbiRFP-CAAX; fkh[6]</td>
+      <td>panels representative of genotype (&gt;30 embryos inspected)</td>
+      <td>fixed</td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 2</td>
+      <td>A-E'</td>
+      <td>sqh::sqhGFP42, UbiRFP-CAAX fkh[6]</td>
+      <td>5</td>
+      <td>live</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mobile radial coordinate system for the salivary placode
 
 WT movies were aligned in time using as t = 0 min the frame just before the first sign of invagination of cell apices at the future tube pit was evident. fkh[6] mutants were aligned using as a reference of embryo development the level of invagination of the tracheal pits that are not affected in the fkh[6] mutant as well as other morphological markers such as appearance and depth of segmental grooves in the embryo. Cells belonging to the salivary placode (without the future duct cells that comprise the two most ventral rows of cells in the primordium) were then manually outlined at t = 0 mins using the surrounding myosin II cable as a guide and ramified forwards and backwards in time. Only cells of the salivary placode were included in subsequent analyses.
 
@@ -177,7 +811,7 @@ At t = 0 min, the centre of the future tube pit was specified manually as the 
 
 The radial coordinate system was ‘mobile’, in the sense that its origin tracked the centre of the pit, forwards and backwards in time, as the placode translated within the field of view due to embryo movement or to on-going morphogenesis.
 
-## Morphogenetic strain rate analysis
+### Morphogenetic strain rate analysis
 
 Detailed spatial patterns of the rates of deformation across the placode and over time quantify the outcome of active stresses, viscoelastic material properties and frictions both from within and outside the placode. We quantified strain (deformation) rates over small spatio-temporal domains composed of a focal cell and one corona of immediate neighbours over a ~5 min interval ([Blanchard et al., 2009] and reviewed in [Blanchard, 2017]). On such 2D domains, strain rates are captured elliptically, as the strain rate in the orientation of greatest absolute strain rate, with a second strain rate perpendicular to this (Figure 2B).
 
@@ -187,13 +821,13 @@ The three types of elliptical strain rate were projected onto our radial coordin
 
 We calculated strain rates in layers at two depths for WT placodes. Because we applied a radial coordinate system originating in the centre of the future tube pit to both depths, and used the same reference t = 0 min, we were able to compare strain rates at the same spatio-temporal locations on the placode between the depths.
 
-## Matching cells between apical and mid-basal layers
+### Matching cells between apical and mid-basal layers
 
 We also wanted to characterise the 3D geometries of cells within small domains, using the cell shapes and arrangements in the two depths we had tracked. To do this, we needed to correctly match cells between apical and mid-basal depths. We manually seeded 3–5 apico-basal cell matches per placode, then used an automated method to fill out the remaining cell matches across the placode and over time.
 
 We did this by sequentially looking at all unmatched apical cells that were next to one or more matched cell. The location of the unmatched basal centroid was predicted by adding the vector between matched and unmatched apical cell centroids to the matched basal centroid. The nearest actual basal centroid to this predicted basal centroid location was chosen as the match, on condition that the prediction accuracy was within 0.25 of the apical centroid distance. Information from multiple matched neighbours was used, if available, improving the basal centroid prediction. Progressively matching cells out from known matched cells filled out placodes for all embryos. We visually checked apical-basal matches for each embryo in movies of an overlay of apical and basal cell shapes with apico-basal centroid connections drawn (Video 3).
 
-## z-strain rates: 3D domain geometries
+### z-strain rates: 3D domain geometries
 
 Having matched cells between apical and mid-basal layers, we have access to information about approximate 3D cell shapes. For single cells, we can measure how wedged the cell shape is in any orientation and how tilted is the apical centroid to basal centroid ‘in-line’ relative to the surface normal (Figure 4A). In particular, we are interested in the amount of wedging and tilt in our radial and circumferential placode orientations (Figure 4A). However, an important aspect is missing which is that cells can be arranged differently apically versus basally, independently of any cell wedging. That is they can be to a greater or less extent interleaved. Interleaving in depth is completely analogous to cell intercalation in time (Figure 4—figure supplement 1D). The degree of interleaving is a multi-cell phenomenon, so we return to our small domains of a cell and its immediate neighbours. Within these small domains we want to quantify the amount of cell wedging, interleaving and cell tilt.
 
@@ -205,13 +839,13 @@ The cell shape strain rate is equivalent to the wedging z-strain rate (Figure 4B
 
 The units of wedging and interleaving are proportional size change per µm in z, and tilt is simply a rate (xy µm/z µm). We use the convention that change is from basal to apical, so a bottle-shape has negative cell wedging. The number of embryos and cells analysed for 3D cell geometries can be found in Tables 1 and 2.
 
-## Neighbour exchange analysis
+### Neighbour exchange analysis
 
 We used changes in neighbour connectivity in our tracked cell data to identify neighbour exchange events (T1 processes). Neighbour exchange events were defined by the identity of the pair of cells that lost connectivity in t and the pair that gained connectivity at t + 1. The orientation of gain we defined as the orientation of the centroid-centroid line of the gaining pair at t + 1. We further classified gains as either radially or circumferentially oriented, depending on which the gain axis was most closely aligned to locally. We did not distinguish between solitary T1s and T1s involved in rosette-like structures.
 
 From visual inspection, we knew that some T1s were subsequently reversed, so we characterised not only the total number of gains in each orientation but also the net gain in the circumferential axis, by subtracting the number of radial gains. Furthermore, when comparing embryos and genotypes, we controlled for differences in numbers of tracked cells by expressing the net circumferential gain per time step as a proportion of half of the total number of tracked cell-cell interfaces in that time step. We accumulated numbers of gains, net gains, and proportional rate of gain over time for WT (Figure 5C) and fkh (Figure 9E,F) embryos. Two sample Kolmogorov-Smirnov test was used to determine significance at p<0.05 for data in Figure 9F.
 
-## Calculation of signatures of active versus passive intercalation
+### Calculation of signatures of active versus passive intercalation
 
 In the region of the placode away from the pit, we considered that active circumferential intercalation driven by junctional shortening would produce a different signature in the geometries of cells from a pull from the actively constricting cells at the pit (as depicted in Figure 4A,A’). We took an approach that avoided using simplistic raw measures of junction lengths and angles as these do not take into account differences in the geometry of cells immediately surrounding a junction.
 
@@ -225,17 +859,17 @@ We classified junctions as being in the run up to a T1 (T1 data) or not involved
 
 For statistical tests, we again employed the mixed-effects models (see Statistics section below). In order to avoid using temporally correlated data in the comparisons we selected one time point for each data set we compared. For baseline data, we could choose any developmental time point because the baseline data for all three measures did not vary with developmental time (Figure 6—figure supplement 1B–D). We therefore chose the time point −2–0 min from the start of pit invagination, which maximised the number of placodes (see Figure 2—figure supplement 1A) and hence N cells. For T1 data we chose −3 min from neighbour exchange, near the middle of the time window before exchange where junction length proceeds consistently to extinction (Figure 6—figure supplement 1A).
 
-## Fluorescence intensity quantifications of Myosin and Bazooka
+### Fluorescence intensity quantifications of Myosin and Bazooka
 
 Embryos of the genotype sqhAX3; sqh::sqhGFP42 (Royou et al., 2004) were labelled with either with anti-Bazooka and anti-DE-Cadherin or anti-DE-Cadherin and phalloidin to highlight cell membranes. For Figure 7B, myosin II signal intensity of junctions oriented either circumferentially or radially from five placodes was quantified using Image J. For Figure 7I fluoresce intensity of myosin II and Bazooka of junctions such as the ones indicated by arrows in Figure 7H’, that were oriented either circumferentially or radially from 10 placodes was quantified using Image J. 3-pixel wide lines were manually drawn along each junction. Intensity values were normalised to average fluorescence outside the placodes. We used a paired t-test for comparison of intensities within in the same junction, unpaired t-tests for comparison of circumferential myosin II vs radial myosin II and circumferential Baz vs radial Baz.
 
-## Automated myosin II quantification and polarity
+### Automated myosin II quantification and polarity
 
 Whereas previously we quantified apicomedial Myosin II (Booth et al., 2014), here we focused on junctional Myosin II. We extracted a quasi-2D layer image from the Myosin II channel at a depth that maximised the capture of the junctional Myosin. We background-subtracted the Myosin images and quantified the average intensity of Myosin along each cell-cell interface within the placode. To calculate the average intensity, we set the width of cell-cell interfaces as the cell edge pixels plus two pixels in a perpendicular direction either side. This captured the variable width of Myosin signal at interfaces.
 
 We further summarised the uni- and bipolarity of Myosin for each cell. Methods to calculate Myosin II unipolarity and bipolarity are described in detail in Tetley et al. (2016). Briefly, the average interface fluorescence intensity around each cell perimeter as a function of angle is treated as a periodic signal and decomposed using Fourier analysis. The amplitude component of period two corresponds to the strength of Myosin II bipolarity (equivalent to planar cell polarity) (Figure 7D’). Similarly, the amplitude of period one is attributed to myosin unipolarity (junctional enrichment in a particular interface) (Figure 7D”). The extracted phase of periods 1 and 2 (bi/uni-polarity) represent the orientation of cell polarity. We projected both polarities onto our radial coordinate system. Both polarity amplitudes are expressed as a proportion of the mean cell perimeter fluorescence. Cells at the border of the placode neighbouring the supra-cellular actomyosin cable were excluded from the analysis. The number of embryos and number of cells analysed can be found in Tables 1 and 2.
 
-## Statistical analysis of time-lapse data
+### Statistical analysis of time-lapse data
 
 Statistical tests to determine significance of data shown are indicated in the figure legends. Significance in time-lapse movies was calculated for bins of 4.5 min using a mixed-effects model implemented in R (‘lmer4’ package as in [Butler et al., 2009; Lye et al., 2015]) with a significance threshold of p<0.05.
 

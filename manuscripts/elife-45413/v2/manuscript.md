@@ -52,15 +52,39 @@ In normal epithelia, a junction between neighbouring cells usually appears as a 
 
 We designed and validated a semi-automated system (Figure 2), Junction Mapper, that builds from our quantitative analysis of images from RNAi screens (Erasmus et al., 2016). Our previous software defines an E-cadherin mask to calculate the intensity specifically around junctions as a percentage of thresholded area of the whole original image. The E-cadherin mask is also used to subtract an ROI from an image of a distinct marker (i.e. F-actin), so that mostly the signal localized at contacts is considered. Junction Mapper implements novel quantification tools (corners, length and area) and a variety of novel primary and secondary parameters expressed per individual junction.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig2-v2.jpg)
+
+**Figure 2.:** The original grey scale image stained for a junctional marker (E-cadherin) is uploaded in the program, which identifies the edge map of each cell semi-automatically to define the cell boundaries onto which measurements are made (skeleton, one pixel wide). This is superimposed onto the images to allow correction of missing boundaries and small errors interactively by the user. The image is then segmented to identify each cell to be quantified. A threshold is set to remove non-specific staining, and the skeleton is dilated (pixels) to select the area to be quantified that includes all staining at cell–cell contacts. Finally, cell corners are defined automatically or manually. Thresholded images are then quantified using the dilated mask and results are shown in Excel files as individual measurements of specific junctions as defined by the pairing of two different corners. Detailed steps are described in Figure 2—figure supplement 1 and Appendix 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Snapshot images of Junction Mapper user interface showing the sequential steps (automatic and user-controlled) to obtain the edge map of cell–cell contacts in a monolayer.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Three different noise levels were applied to two original images (epithelial (A) or endothelial (B) monolayers) stained for E-cadherin (A) or VE-cadherin (B). The original and modified images (left column) were analysed with Junction Mapper to identify the edge map for quantification. The primary skeleton (identified automatically by the software) is shown in the middle column and the modified edge map (after dilation and erosion to a pixel-width skeleton, but without manual corrections) is shown in the right column. The peak signal to noise ratio values (PSNR) are shown on the top right of each modified image. The higher the noise in the image, the worse is the ability of the program to identify the edge map. *, denotes cells expressing activated Rac1.
+
 The main advantage of Junction Mapper is to efficiently segment junctions in a variety of cell types and of different junction patterns, from linear to fragmented or disrupted contacts. The software detects the contacting interface between two cells and obtains a skeletonized edge map (summarised stepwise in Figure 2—figure supplement 1; see Materials and methods). Although semi-automated, users can adjust the outline manually by removing incorrect or adding missing lines, with subsequent refinement of the line location and geometry by the software algorithm (detailed in Appendix 1). A dilation step is applied (user controlled) to define the area to be quantified around the skeletonized map (Figure 2—figure supplement 1). To identify individual junctions for further quantification, the software then automatically identifies each cell–cell corner (i.e. point of contact between three or more cells, see its mathematical definition in Appendix 1). The number and location of corners in each cell can also be manually adjusted by the user (Appendix 1).
 
 Images obtained at different resolutions can be used for analyses in Junction Mapper (Supplementary file 1). However, the highest quality images possible should be used, as resolution may impact the ability to detect individual clusters of the junction marker. For defining the automated skeletonized edge of each image, a suitable signal-to-noise ratio is necessary to ensure enough contrast to differentiate staining at junctions from the cytoplasm (Figure 2—figure supplement 2). The higher the Peak Signal to Noise ratio, the easier it is for the program to automatically delineate the cell outline skeleton. For efficient skeleton definition the ratio should be above 22 dB (Figure 2—figure supplement 2). Using the automated skeleton as a start point, the user can refine the cell outline map by manually drawing or removing lines to close any gaps or correct deviations, particularly in cells with reduced staining at cell–cell contacts (Figure 2—figure supplement 1 to 2). The higher the fragmentation of junctions in the image, the more user input is necessary to define the final skeleton outline for quantification.
 
 User-controlled threshold selection is done by inspection of the image with a slider component on the software interface (Appendix 1). Thresholding aims to reduce background without removing pixels from contact areas. The skeleton obtained is then projected onto the original thresholded image to segment the area of interest and proceed with quantification of each junction for up to two different junctional markers per image (see below). The measurement of the different parameters is performed simultaneously and automatically, in an unbiased manner (Figure 2). The output per junction is produced as an Excel file that contains the selected image, skeleton and the quantification of pre-designed measurements and parameters (see below).
 
-## Primary parameters and validation
+### Primary parameters and validation
 
 We envisage that different phenotypes of junction perturbation may require a distinct set of parameters to appropriately capture the disruption features (Figure 1). Towards this goal, we propose a variety of parameters to be used as bona fide readouts and measure information that is based on intensity, area and length of the interface and cell–cell contact (Figure 3A; Appendix 2). The following concepts are defined and used herein. Interface is the contacting membrane between two neighbouring cells and delimited by cell–cell corners. A cell–cell contact or junction is the region of the interface covered by adhesion receptors (e.g. cadherin staining). Junctions may or may not extend to the whole of the interface (corner-to-corner), and can appear fragmented or dotted (Figure 1, Figure 3A). Area is the dilated region around the skeleton and is set to encompass the width of a junctional marker staining (which can vary in thickness). Contour is the length measurement of the outline of the skeleton between defined points (interface or junction). Finally, the straight-line length is defined as the shortest distance (Euclidian distance) between corners that form the boundaries of one junction or interface.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig3-v2.jpg)
+
+**Figure 3.:** (A) Diagram highlighting the concepts that underpin the primary parameters measured by the software. An image of a cell with a hypothetical disruption of E-cadherin at cell–cell contacts is shown: stars mark the corners delimiting each contacting interface, and rhombus shapes mark the edges of each fragment of cadherin staining that we define as junctions. In each cell, measurements are made to assess the properties of each interface (corner-to-corner) and each junction (may be adjoining or disrupted in multiple fragments): the hypothetical length (straight line interface length or Euclidian distance between two points), the contour (connection of brightest pixels along the curvature of the staining/interface) and area (defined dilated region around cell–cell borders). Intensity is also measured within the dilated area. (B-D) The primary parameters were validated to assess measurements were as predicted from their definition. Selected junctions from cells expressing activated H-Ras or controls (B) were quantified for length-based measurements (C, contours of interface, junction or fragmented junctions) or area-based measurements (D, areas of interface or junction). Diagrams at the bottom of graphs in C and D show the measurements performed. Coloured arrows point to selected junctions quantified. Each contacting interface is delimited by corners visualized by yellow squares. Scale bar = 10 μm. Detailed steps are described in Appendix 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A-D) Epithelial cells expressing active Rac1 (A) or controls (B) were stained for cadherin receptors. Screenshots of Junction Mapper analyses shows different dilation values (green outline of different widths). Corners delimiting each contacting interface are shown as yellow squares. Selected junctions were quantified with different dilation settings and impact on primary parameters is exemplified on length-based measurements (C, Interface Contour, Fragmented Junction Length) and area-based parameters (D, E-cadherin Area, E-cadherin intensity). Increasing the dilation values modifies the area-based (D) but not the length-based measurements (C). (E-H) Similar analyses were performed on images of endothelial cells treated with thrombin (E) or controls (F) and corresponding graphs show the primary parameters quantifications (G,H). Junction undulation caused by thrombin treatment is not captured by the edge map, which is seen as a comparatively straight line (G). Larger dilation values obtained higher VE-cadherin area measurements at the undulated contacts (H). Values obtained are from selected junctions shown and under the different conditions applied.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A-D) Epithelial cells expressing active Rac1 (A) or controls (B) were stained for E-cadherin receptors. Screenshots of Junction Mapper analyses shows different thresholding values (0–150). Skeletons are shown as a pixel-width red line and corners delimiting each contacting interface are seen as yellow squares. Selected junctions were quantified with the different settings and impact on primary parameters are shown for the length-based measurements (C, Interface Contour, Fragmented Junction Length) and area-based parameters (D, E-cadherin Area, E-cadherin intensity). Increasing thresholding levels did not interfere with interface contour length, as it is defined by the position of corners (C). The fragmented junction length was reduced by increasing thresholding (C), similar to what was observed with the E-cadherin area and intensity (D). (E-H) Similar analyses and results were obtained from VE-cadherin staining images of endothelial cells treated with thrombin (E) or controls (F) and corresponding graphs show the primary parameters quantifications (G,H). Values obtained are from selected junctions shown and under the different conditions applied.
 
 Primary parameters obtain the basic metrics (area, contour and straight-line length) of each interface and junction selected in the monolayer (Figure 3A, Appendix 2). A key innovation of the Junction Mapper is its ability to quantify junction marker staining that is not contiguous and that does not extend to both corners. New parameters assess area or contour occupied by fragments of the junctional staining (Fragmented Junction Contour and Junction Area). To validate the length-based measurements, individual contacts disrupted by H-Ras expression were quantified and, as predicted, decreasing values for the contour of the interface, junction or fragmented junction were revealed for each assessed junction (Figure 3B–C). Although measurements of contacts of control cells also decline between these three parameters, they did not decline to the same extent as the ones of junctions from expressing cells (Figure 3C). The area-based measurements Interface Area and Junction Area of the same junctions followed similar pattern (Figure 3D). We envisage that the primary parameters are useful to show extension or retraction of the contacting interface/junctions, increased fragmentation of the staining of junction marker or fluctuations of global staining intensity at cell–cell contacts.
 
@@ -68,7 +92,7 @@ We next assessed the impact of user-defined settings (dilation and threshold) on
 
 The effect of thresholding was tested using the same images (Figure 3—figure supplement 2A–B,E–F). Of note is that the precise outline of VE-cadherin zig-zag staining was not recognized by the edge map produced (red line, Figure 3—figure supplement 2E–F). Increasing the threshold applied to the original images decreased the measured cadherin area and intensity (Figure 3—figure supplement 2D, H) and the length of junction fragments was severely reduced (Figure 3—figure supplement 2C,G; see definition in Appendix 2). The interface contour values were not affected by thresholding, as the interface is delimited by corners and independent of intensity values (Figure 3—figure supplement 2C,G). Taken together, we concluded that the primary parameters measure the length and area of various features as predicted and are selectively modulated by user-controlled settings in accordance to their definition (Appendix 1).
 
-## Secondary parameters
+### Secondary parameters
 
 The availability of a repertoire of parameters is a unique advantage of the software for mapping distinct phenotypes. Secondary parameters (Scheme 1, Appendix 2) are derived from the primary metrics above and aim to normalise the measurements to the size of each junction or contacting interface (length or area). The Linearity Index measures how straight an interface between two cells is, as proposed by Takeichi and colleagues (Otani et al., 2006). Coverage Index is a length measurement of the percentage of the interface length that is covered by the junction marker staining and has been previously used manually in the lab (Lozano et al., 2008). Three different parameters quantify the distribution of a junctional marker along the interface. First, Interface Occupancy, measures the area occupied by the marker within the Interface Area of each junction. Second, Junction Protein Intensity per Interface area calculates the fluorescence intensity within the Interface Area. Finally, Cluster Density is the junction protein intensity level within the area delimited by its staining (i.e. Fragmented Junction Area, which considers any fragmentation of the staining; additional parameters are described in Appendix 2). We predict that the secondary parameters are more useful to compare the accumulation or removal of specific markers, their density and relative changes when comparing across different samples.
 
@@ -80,7 +104,7 @@ The Coverage Index parameter calculated by Junction Mapper was validated by manu
 
 Thus, the parameters give results as expected from previous manual methods. In addition, the reproducibility of secondary parameters was assessed in independent biological replicates by the same user. Across biological replicates of cells overexpressing active Rac1, the absolute values obtained for each sample were slightly different (Scheme 1B-D). However, the overall result is the same between replicates: a reduction of Coverage Index and Interface Occupancy of E-cadherin at junctions from Rac1 expressing cells (Scheme 1B-D). Comparison of control values between biological replicates (or between Rac1 expressing cells) was not statistically different.
 
-## User-bias validation
+### User-bias validation
 
 The robustness of Junction Mapper with respect to user bias was tested by: (i) defining the skeleton and corners and (ii) quantifying the same samples by different users. First, the quality control of skeleton and corners is subjective (Supplementary file 3A-B). Confluent epithelial monolayers with clearly defined junctions and corners produced less output variability from different users than images with disrupted contacts (Supplementary file 3A-D). We found that a particular hot spot for differences was the identification of cell corners in disrupted contacts, where corners are often not covered by cadherin staining (Supplementary file 3B). Second, pair-wise comparison of primary parameters of matched epithelial junctions obtained independently by two users showed significant differences (Supplementary file 3C-D).
 
@@ -88,9 +112,17 @@ However, when secondary parameters were calculated, the profiles obtained by the
 
 We conclude that, in addition to the impact of dilation and thresholding settings, Junction Mapper results are impacted by user influence on the cell edge map. This influence is stronger in cell images with disrupted cell–cell contacts, where higher frequency of inaccurate corner and skeleton detection occurs. Hence more manual edge correction is required the more robust secondary parameter measurements should be considered. Furthermore, absolute comparisons can not be made between experiments. Instead, normalization of secondary parameters to controls in each replicate will facilitate comparisons.
 
-## Distinct oncogenes trigger different patterns of junction disruption in epithelia
+### Distinct oncogenes trigger different patterns of junction disruption in epithelia
 
 We addressed whether Junction Mapper parameters could identify distinct features and patterns of junction disruption by different stimuli. We tested images of epithelial cells transfected with oncogenic Rac (H-RasG12V; Figure 4A), constitutively activated Rac1 (RacQ61L) or activated Src (SrcY527F; Figure 4—figure supplement 1). Previous visual analysis indicated that perturbation of cell–cell contacts occurs more efficiently between two RacQ61L-expressing neighbouring keratinocytes (Braga et al., 1997; Lozano et al., 2008). To validate this quantitatively, junctions were classified into two groups (i) between two expressing cells (ee) and (ii) between one expressing and one non-expressing cell (en). Control junctions from the same image were quantified from cells without oncogenic H-Ras expression. Measurements of the primary parameters (Figure 3) confirmed that junction contour and area were more severely disrupted when two neighbouring cells contained exogenous H-RasG12V (Figure 4D–E). The interface of mosaic contacts shared by expressing and non-expressing cells (en) were not significantly different from controls (Figure 4B,C,F).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig4-v2.jpg)
+
+**Figure 4.:** (A) Human normal keratinocytes were transfected with pRK5-myc-H-RasG12V, fixed and stained with anti-E-cadherin and anti-myc antibodies. Images are shown of E-cadherin staining and myc staining as a marker of transfected cells. Coloured rectangles mark areas shown as a zoom on the left of the images and highlight control junctions (orange), junctions between expressing and non-expressing cells (en, purple) or between two transfected cells (ee, red). Arrowheads point to E-cadherin staining. (B-F) Quantification of the primary parameters using Junction Mapper. Graphs are plotted showing values of each parameter (Y axis) versus different junction types (X-axis). The parameter name is at the top of each graph and a diagram representing the quantification is shown on the left of its corresponding graph. Data is from one experiment (technical replicate) and the number of junctions analysed for each condition is found at the bottom of the graphs, below each scatter box plot. Statistical analysis was performed using One-way ANOVA, followed by Games-Howell post-hoc test. Non-significant (ns) and significant p-values (<0.05) are placed inside graphs. Scale bar = 20 μM or 10 μM (zoom images).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, G) Human normal keratinocytes expressing myc-Rac1Q61L or GFP-SrcY527F were fixed and stained with anti-E-cadherin antibodies. Images are shown of E-cadherin staining and GFP or myc as a marker of expressing cells. Coloured rectangles mark areas shown as a zoom on the left of the images and highlight control junctions (orange), junctions between expressing and non-expressing cells (en, purple) or between two transfected cells (ee, red). Arrowheads point to E-cadherin staining. (B-F), (H-L) Quantification of the primary parameters using Junction Mapper. Graphs are plotted showing values of each parameter (Y axis) versus different junction types (X-axis). The parameter name is at the top of each graph and a diagram representing the quantification is shown on the left of its corresponding graph. Technical replicates (Rac1) or biological replicates (Src, N = 2) were quantified. Number of junctions analysed in each condition is found at the bottom of the graphs, below each scatter plot. Statistical analysis was performed using One-way ANOVA, followed by Games-Howell post-hoc test. Non-significant (ns) and significant p-values (<0.05) are placed inside graphs. Scale bar = 20 μM or 10 μM (zoom images).
 
 The interface between cells containing oncogenic H-Ras (ee) was significantly longer and larger than control cells (Interface Contour and Interface Area, Figure 4B,C). Irrespective of the longer contacting interface, the contour and the area of E-cadherin stained fragments were considerably altered upon expression of H-RasG12V (Fragmented Junction Contour and E-cadherin Area, Figure 4D,E). Finally, the length between cell–cell corners was significantly longer between controls and two adjacent transfected cells (Straight-line Interface Length, Figure 4F). Based on the quantification of the primary parameters, oncogenic H-Ras expression induces a longer contacting interface between cells and a progressive fragmentation of E-cadherin staining.
 
@@ -98,7 +130,7 @@ The primary parameter measurements following expression of activated Rac1Q61L or
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig5-v2.jpg)
 
-**Figure 5.:** Human normal keratinocytes were transfected with pRK5-myc-H-RasG12V (A), pEGFP-SrcY527F (C) or pRK5-myc-Rac1Q61L (E). Cells were fixed and stained with anti-E-cadherin and, for (A) and (E), anti-myc antibodies. Images are shown of E-cadherin and transfected cells (anti-myc or GFP). Coloured rectangles mark areas shown as a zoom on the left of the images and highlight control junctions (orange), junctions between expressing and non-expressing cells (en, purple) or between two transfected cells (ee, red). Arrowheads point to E-cadherin staining. (B, D, F) Quantification of different parameters obtained with Junction Mapper. Graphs are plotted to show values of each parameter (Y-axis) versus different junction types (X-axis) for H-RasG12V (B), SrcY527F (D) and Rac1Q61L (F). The parameter name and a diagram representing the quantification are shown on top of each graph. Technical (H-Ras, Rac1) or biological replicates (Src, N = 2) were analysed. Number of junctions quantified in each condition is shown at the bottom of the graphs, below each scatter box plot. Statistical analysis was performed using One-way ANOVA, followed by Games-Howell post-hoc test. Non-significant (ns) and significant p-values (<0.05) are placed inside graphs. Scale bar = 20 μM or 10 μM (zoom images).Figure 5—source data 1.Figure 5 graphs.
+**Figure 5.:** Human normal keratinocytes were transfected with pRK5-myc-H-RasG12V (A), pEGFP-SrcY527F (C) or pRK5-myc-Rac1Q61L (E). Cells were fixed and stained with anti-E-cadherin and, for (A) and (E), anti-myc antibodies. Images are shown of E-cadherin and transfected cells (anti-myc or GFP). Coloured rectangles mark areas shown as a zoom on the left of the images and highlight control junctions (orange), junctions between expressing and non-expressing cells (en, purple) or between two transfected cells (ee, red). Arrowheads point to E-cadherin staining. (B, D, F) Quantification of different parameters obtained with Junction Mapper. Graphs are plotted to show values of each parameter (Y-axis) versus different junction types (X-axis) for H-RasG12V (B), SrcY527F (D) and Rac1Q61L (F). The parameter name and a diagram representing the quantification are shown on top of each graph. Technical (H-Ras, Rac1) or biological replicates (Src, N = 2) were analysed. Number of junctions quantified in each condition is shown at the bottom of the graphs, below each scatter box plot. Statistical analysis was performed using One-way ANOVA, followed by Games-Howell post-hoc test. Non-significant (ns) and significant p-values (<0.05) are placed inside graphs. Scale bar = 20 μM or 10 μM (zoom images).
 
 The secondary parameters (Scheme 1) were designed so that the distribution of a junctional marker is normalised to the area or length of the interface or junction between neighbouring cells. Although Intensity is a primary parameter, it was also included here for comparison with other published studies. The patterns of the secondary parameters Interface Occupancy and Cadherin Intensity at Interface Area essentially followed the corresponding primary parameters E-cadherin Area and E-Cadherin Intensity (Figures 4 and 5). Yet, the differences between groups are more apparent in the secondary parameters: data are less scattered with fewer outliers when compared to primary parameters (Figure 5).
 
@@ -112,13 +144,13 @@ These data are summarized as a diagram in Scheme 2. We concluded that Junction M
 
 **Scheme 2.:** Different parameters are normalised to controls (junctions from non-expressing cells) arbitrarily set as 100 (orange colour). Values are represented as circles of proportional sizes for junctions between two expressing cells (red colour). Non-significant values are shown in pink colour (ns).
 
-## Dynamic range of the measurements of cell–cell contact phenotypes
+### Dynamic range of the measurements of cell–cell contact phenotypes
 
 Disassembly of junctions by oncogenes is a severe phenotype, often leading to complete dissolution of contacts. However, other stimuli (i.e. differentiation, protein depletion, growth factor or drug treatment) may induce a milder phenotype that is not easily quantified. We asked whether the Junction Mapper could efficiently detect small changes in E-cadherin levels or distribution under different conditions (Figure 6). Datasets were obtained where the role of actin-regulatory proteins in junction formation was investigated in normal keratinocytes (Erasmus et al., 2016). Depletion of CIP4 (a regulator of cadherin trafficking) (Leibfried et al., 2008; Rolland et al., 2014), VAV2 (an exchange factor for Rho, Rac2 and Cdc42) (Vigil et al., 2010) or EEF1A (an actin bundling protein) (Mateyak and Kinzy, 2010) results in modest, but significant fluctuations in E-cadherin at junctions (20%–30%) using a thresholding method (Erasmus et al., 2016).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig6-v2.jpg)
 
-**Figure 6.:** (A) Human normal keratinocytes were depleted of different cytoskeleton-associated proteins using siRNA against CIP4 (A), EEF1A (C) or VAV2 (E). Cells were fixed and stained for E-cadherin, and images acquired for control (non-targeting oligos) and depleted cells. Areas marked by coloured rectangles are shown as a zoom underneath the images. Arrowheads point to E-cadherin staining. (B, D, F) Quantification of different parameters obtained with Junction Mapper. Graphs are plotted with values on the Y-axis and control and siRNA samples on the X-axis for CIP4 (B), EEF1A (D) and VAV2 (F). The parameter name and a diagram representing the quantification are shown on top of each graph. Junctions analysed in each condition were obtained from technical replicates and numbers assessed is shown at the bottom of the graphs, below each scatter box plots. Statistical analysis was performed using Mann-Whitney U-test. Non-significant (ns) and significant p-values (<0.05) are placed inside graphs. Scale bar = 20 μM or 10 μM (zoom images).Figure 6—source data 1.Figure 6B, D and F.
+**Figure 6.:** (A) Human normal keratinocytes were depleted of different cytoskeleton-associated proteins using siRNA against CIP4 (A), EEF1A (C) or VAV2 (E). Cells were fixed and stained for E-cadherin, and images acquired for control (non-targeting oligos) and depleted cells. Areas marked by coloured rectangles are shown as a zoom underneath the images. Arrowheads point to E-cadherin staining. (B, D, F) Quantification of different parameters obtained with Junction Mapper. Graphs are plotted with values on the Y-axis and control and siRNA samples on the X-axis for CIP4 (B), EEF1A (D) and VAV2 (F). The parameter name and a diagram representing the quantification are shown on top of each graph. Junctions analysed in each condition were obtained from technical replicates and numbers assessed is shown at the bottom of the graphs, below each scatter box plots. Statistical analysis was performed using Mann-Whitney U-test. Non-significant (ns) and significant p-values (<0.05) are placed inside graphs. Scale bar = 20 μM or 10 μM (zoom images).
 
 When analysed with Junction Mapper, CIP4, VAV2 or EEF1A siRNA did not interfere with the linearity of the contacting interface (Figure 6B,D,F), in line with the appearance of normal, linear junctions. Consistent with our previous findings (Erasmus et al., 2016), a small decrease in E-cadherin intensity was observed in both CIP4- and VAV2-depleted cells (Figure 6B,F), while EEF1A siRNA promoted the unusual phenotype of higher levels of cadherin receptors (Figure 6D). These distinct patterns were also seen when E-cadherin intensity and area were normalized to the interface area (Intensity per Interface Area and Interface Occupancy, respectively). Strikingly, despite the similar reduction in E-cadherin intensity levels following VAV2 and CIP4 depletion, receptors were removed in different ways from junctions. The clusters of cadherin receptors were less dense with lower levels of CIP4, while upon VAV2 siRNA, the density of the clusters slightly increased (Cluster density, Figure 6B,F).
 
@@ -128,11 +160,19 @@ Thus, the discrete changes in junctions result from reduced cadherin levels thro
 
 **Scheme 3.:** Different parameters are normalised to controls (junctions from cells treated with non-targeting oligos) arbitrarily set as 100 (orange colour). Values are represented as circles of proportional sizes for targeting siRNA-treated samples (blue colour) relative to controls. Non-significant values are shown in light blue colour (ns).
 
-## Endothelial junctions and cardiomyocyte intercalated discs
+### Endothelial junctions and cardiomyocyte intercalated discs
 
 We next asked whether the software would be applicable to endothelial cells and cardiomyocytes that can have junctions differently shaped when compared with epithelial contacts. Both types of junctions are considerably more fragmented than epithelial contacts, and thus it was not clear whether the parameters quantified by the Junction Mapper would be suitable.
 
 Thrombin is a serine protease that stimulates protease-activated receptor (PAR) in endothelial cells to increase vascular permeability in inflammation and injury (Figure 7A) (Kumar et al., 2009). Visually, the junctions of endothelial cells treated with thrombin are quite distinct (Malinova and Huveneers, 2018), but so far it has not been possible to evaluate differences quantitatively. There were no significant changes in the Interface Linearity Index (Figure 7A,B), consistent with the limitation of Junction Mapper to skeletonize zig-zagged junctions and thus measure their length (Figure 3—figure supplement 2E–F).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig7-v2.jpg)
+
+**Figure 7.:** (A) HUVEC were treated with thrombin for 10 min, fixed and stained for VE-cadherin as a marker of endothelial contacts. Inverted images and a zoom are shown. Arrowheads show VE-cadherin staining. (B-F) Quantification of different parameters obtained with Junction Mapper. Graphs are plotted with values on the Y-axis and samples (control or thrombin-treated) on the X-axis. The parameter name is shown on top of each graph and a diagram representing the quantification on the left of each graph. Number of junctions analysed in each condition is shown at the bottom of the graphs, below each scatter box plots. Junctions were obtained from biological replicates (N = 2). Statistical analysis was performed using Mann-Whitney U-test. Non-significant (ns) and significant p-values (<0.05) are placed inside graphs. Scale bar = 20 μM or 10 μM (zoom images).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A-B) Representative images of a selected subset of endothelial cells stained for VE-cadherin (first column) were processed by two users independently (user A and user B), setting up the skeleton, corners, dilation, thresholding values. Middle column show the overlay of the skeletons obtained by user A and user B; arrows point to misaligned regions. Last column shows the overlay of added corners to the skeleton. Blue arrowheads show corners that are not co-localized. (A) Control non-stimulated endothelial cells. (B) Endothelial cells treated with thrombin. (C) Pairwise comparison of individual junction values of primary parameters obtained by user A (dilation 6, threshold 16) and user B (dilation 7, threshold 50). (D-F) Graphs of selected parameters obtained from the analyses by user A or user B. The overall result and profile comparing control and treated samples from each user is similar, although, because of the lower number of junctions in each sample, not all comparisons reached significance. Values obtained are from the number of junctions shown on the top right of graphs (panel C) and, for panels D-F, numbers are shown below the scatter plots for each condition and user inside the graph in panel F. Statistical analyses were performed by Wilcoxson matched-pairs signed rank test (C) or Mann-Whitney test (D-F).
 
 However, with appropriate dilation values (Supplementary file 1, Figure 3—figure supplement 1), alterations were detected for area-based measurements. In thrombin-treated cells, VE-cadherin distribution along the interface area (Interface Occupancy), intensity of VE-cadherin staining and normalised intensity per contacting interface were substantially higher (Figure 7C–E). The density of VE-cadherin clusters was also enhanced upon treatment with thrombin (Figure 7F), implying that a higher number of receptors is recruited per contact area. Of note is that the analysis of stimulated endothelial cells, with their typical junction morphology and gaps, was strongly influenced by the user-controlled settings (Figure 7—figure supplement 1A–C). Yet, although raw values of each junction varied with different user settings, the overall trend and conclusion remained the same (Figure 7—figure supplement 1D–F), consistent with our previous comparative analyses (Supplementary files 2–3).
 
@@ -140,7 +180,7 @@ Rat neonatal cardiomyocytes were treated with phenylephrine (PE) as a model to i
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/45413/elife-45413-fig8-v2.jpg)
 
-**Figure 8.:** (A) Rat neonatal cardiomyocytes were stimulated with phenylephrine for 48 hr and stained with anti-β-catenin or anti-connexin 43 antibodies. Inverted images for each marker and a zoom of merged staining are shown. The arrowhead points to β-catenin staining and the arrow shows connexin 43 clusters. (B-C) Images were processed with Junction Mapper and quantification of selected parameters is shown here for β-catenin (B) or connexin 43 (C). Diagrams on top of each graph summarize how each parameter was measured. Values were obtained from one technical replicate. Number of junctions analysed in each condition is shown below each scatter box plot. Statistical analysis was performed using Mann-Whitney U-test. Non-significant (ns) and significant p-values (<0.05) are placed inside graphs. Scale bar = 10 μM.Figure 8—source data 1.Figure 8 graphs.
+**Figure 8.:** (A) Rat neonatal cardiomyocytes were stimulated with phenylephrine for 48 hr and stained with anti-β-catenin or anti-connexin 43 antibodies. Inverted images for each marker and a zoom of merged staining are shown. The arrowhead points to β-catenin staining and the arrow shows connexin 43 clusters. (B-C) Images were processed with Junction Mapper and quantification of selected parameters is shown here for β-catenin (B) or connexin 43 (C). Diagrams on top of each graph summarize how each parameter was measured. Values were obtained from one technical replicate. Number of junctions analysed in each condition is shown below each scatter box plot. Statistical analysis was performed using Mann-Whitney U-test. Non-significant (ns) and significant p-values (<0.05) are placed inside graphs. Scale bar = 10 μM.
 
 The software used the skeleton and dilated area of β-catenin as a mask as described by Erasmus et al. (2016) to segment the area where connexin 43 was localised. The Interface Linearity Index of β-catenin (Figure 8B) or connexin 43 (Figure 8C) was not significantly altered upon induction of hypertrophy in cellulo. Instead, hypertrophy stimulation promoted higher Interface Occupancy and higher levels of β-catenin and connexin 43 at junctions (raw intensity or corrected by the interface area; Figure 8B,C). However, the density of β-catenin clusters was significantly reduced, while connexin 43 density was augmented in PE-treated cells, in a small but significant manner. Thus, the two markers are modulated differently by hypertrophy stimulation in cellulo. Increased levels of β-catenin are achieved by less dense clusters spread along the interface, while connexin 43 molecules are clustered more densely, suggesting localised stimulation of gap junction formation. These data demonstrate the use of Junction Mapper for multiple cell types and its power to correlate the distribution of different proteins at cell–cell junctions. The data from cardiomyocytes and endothelial cells are summarized in Scheme 4. A heuristic approach on how to define the user-dependent settings and the parameters to use for these cell types are described in Supplementary file 4.
 
@@ -168,13 +208,128 @@ Clearly, further investigation is necessary to ascertain the profiling and biolo
 
 We foresee the potential of Junction Mapper in distinct research areas, due to its innovative and in-depth approach to quantify cell–cell contacts. The detailed fine mapping of junction properties forms a basis to distinguish between disassembly mechanisms and infer cellular processes such as intracellular trafficking, receptor clustering or modulation of contraction at junctions. As multiple cellular processes contribute to junction stability, the fingerprinting of junction phenotypes after different stimuli is a powerful tool in pathway inference and guides rescue and translational experiments. Despite its limitations, Junction Mapper’s broad dynamic range, repertoire of novel parameters and applicability to quantify junctions in various cell types will have a significant impact on studies in numerous model systems.
 
-## Source data
+### Source data
 
 Numerical data used to prepare graphs in each figure. Data for each graph are listed in separate sheets in the Excel files. Explanations can be found in the first sheet of each Excel file.
 
 ## Materials and methods
 
-## Cell culture and treatment
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent Type</th>
+      <th>Designation</th>
+      <th>Reference</th>
+      <th>RRID</th>
+      <th>Catalogue number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>β-catenin (rabbit polyclonal)</td>
+      <td>Thermo-Fischer</td>
+      <td>RRID:AB_88035</td>
+      <td>Cat# 71–2700</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Connexin 43</td>
+      <td>Millipore</td>
+      <td>RRID:AB_11210474</td>
+      <td>Cat# MAB3067</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-myc</td>
+      <td>Sigma</td>
+      <td>RRID:AB_439695</td>
+      <td>Cat# B7554</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>E-cadherin (HECD1)</td>
+      <td>own hybridoma stock</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>VE-cadherin (clone 75)</td>
+      <td>BioSciences</td>
+      <td>RRID:AB_2276073</td>
+      <td>Cat# 610252</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP- Src Y527F</td>
+      <td>activated Src</td>
+      <td></td>
+      <td>gift Prof M Frame</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRK5-myc H-Ras G12V</td>
+      <td>activated H-Ras</td>
+      <td></td>
+      <td>(Braga et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRK5myc- Rac1 Q61L</td>
+      <td>activated Rac1</td>
+      <td>RRID:Addgene_12983</td>
+      <td>(Lamarche et al., 1996)</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>siRNA duplexes</td>
+      <td>CIP4, VAV2 and EEF1A</td>
+      <td></td>
+      <td>(Erasmus et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ</td>
+      <td>http://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism</td>
+      <td>https://graphpad.com</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Adobe Illustrator</td>
+      <td>http://www.adobe.com/products/illustrator.html</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Adobe Photoshop</td>
+      <td>https://www.adobe.com/products/photoshop.html</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Rstudio</td>
+      <td>http://www.rstudio.com/</td>
+      <td>RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and treatment
 
 Primary keratinocytes were grown as described elsewhere (Braga et al., 1997). Cells were transfected with activated Src (pEGFP-SrcY527F, 1 μg/ml for 8 hr) or constitutively active GTPases Ras (pRK5myc-RasG12V, 0.5 μg/ml for 8 hr) or Rac1 (pRK5myc-Rac1Q61L, 0.5 μg/ml, overnight) using JetPrime (Polyplus). For RNAi experiments, normal keratinocytes were seeded in standard calcium medium as above (containing 1.8 mM CaCl2), transferred to low calcium medium (0.1 mM CaCl2 and foetal calf serum depleted from divalent cations) and grown until confluence (Braga et al., 1997). For replicate validation, cells were treated with non-targeting oligos, and then transfected with pRK5myc-Rac1Q61L. RNAi transfection was performed with oligonucleotide duplexes (at 50 nM) to deplete EEF1A (72 hr), VAV2 or CIP4 (48 hr) using Interferin (Polyplus) or Metafectene transfection reagents (Biontex Laboratories GmbH) (Erasmus et al., 2016).
 
@@ -182,7 +337,7 @@ Pooled Human Umbilical Vein Endothelial Cells (HUVEC) from different donors (Lon
 
 Neonatal rat cardiomyocytes were freshly isolated from 1- to 3 day old Sprague-Dawley rats, using Neonatal Heart Dissociation Kit and the protocol provided by the company (www.miltenyibiotec.com/protocols, Miltenyi Biotec). Cells were plated on 13 mm laminin-coated glass cover slips and cultured in 199 Medium (M199, Sigma) supplemented with 10% neonatal calf serum (NCS, Biosera), 1% Vitamin B12 (Sigma), 1% L-Glutamine (Sigma), 0.5% antibiotics. On the day after plating, cardiomyocyte cultures were exposed to 10 μM phenylephrine for 48 hr to induce hypertrophy (Miragoli et al., 2011).
 
-## Immunostaining and microscopy
+### Immunostaining and microscopy
 
 Normal keratinocytes were fixed for 10 min with 3% paraformaldehyde and permeabilized with 0.1% Triton X-100 and blocked with 10% FCS for 10 min and stained as described (Braga et al., 1997). Cells were stained with anti-E-cadherin antibodies (mouse monoclonal HECD1) and anti-myc (mouse monoclonal 9E10, Sigma-Aldrich Cat# B7554, AB_439695 from RRID https://scicrunch.org/resources). DNA was labelled with DAPI (Sigma, 1:3000). Secondary antibodies were bought from Jackson ImmunoResearch. After treatment, control and hypertrophy-induced neonatal rat cardiomyocytes were fixed and stained with antibodies against β-catenin (rabbit polyclonal 1:50, Thermo-Fischer Cat# 71–2700, RRID:AB_88035) and connexin43 (mouse monoclonal 1:1000, Millipore Cat# MAB3067, RRID:AB_11210474).
 
@@ -190,7 +345,7 @@ A summary of the types of images used for different experiments, type of replica
 
 Endothelial cells (HUVEC) were fixed for 15 min in 4% paraformaldehyde, permeabilized with 0.4% Triton X-100 for 15 min and blocked in 2% BSA for 1 hr. Mouse monoclonal anti-VE-cadherin (clone 75, BD Biosciences Cat# 610252, RRID:AB_2276073) antibody and secondary fluorescence antibody (Molecular Probes) incubations were performed in 2% BSA for 1 hr. Coverslips were mounted in Mowiol/DABCO solution. Coverslips were imaged using an inverted wide-field microscope (NIKON Eclipse Ti) equipped with a 60 × 1.49 N.A. Apo TIRF (oil) objective and Luca-R EMCCD camera (Andor).
 
-## Software development
+### Software development
 
 Junction Mapper is an open access, standalone and downloadable software developed in Java. The Junction Mapper code has been deposited in GitHub (license GNU GENERAL PUBLIC LICENSE; https://github.com/ImperialCollegeLondon/Junction_Mapper; copy archived at https://github.com/elifesciences-publications/Junction_Mapper) and the software, instructions and its documentation can be downloaded from https://dataman.bioinformatics.ic.ac.uk/junction_mapper. The software uses algorithms that are mostly available open access, with some added innovation (i.e. fragmented length calculation). The novelty of Junction Mapper lays in the integration of distinct measurements, calculations of new parameters and consolidation of all parameters in a single system. In addition to junction measurements, we also developed a ‘Nucleus Tool’ to quantify the inter-nuclei distances of scattering epithelial cells – this tool will be described elsewhere.
 
@@ -204,19 +359,19 @@ To evaluate distinct perturbations of junctions, primary parameters calculated t
 
 Secondary parameters were derived to assess different phenotypes of perturbed contacts by normalizing measurements per length or area of each junction or contacting interface (Figure S3). First, the software calculates how straight an interface or junction is using two parameters: (i) Interface Linearity Index (ratio between Interface Contour and Straight-line Interface Length, unitless) and (ii) Junctional Linearity index (ratio between Junction Contour and Straight-line Junction Length, unitless). Second, to estimate the proportion of the interface between cells that is covered by adhesion receptors, two parameters are calculated: (i) a length-based parameter, Coverage Index (ratio between Fragmented Junction Contour and Interface Contour, unit %) and (ii) an area-based parameter, Interface Occupancy (ratio between Junctional area and Interface area, unit %). The latter would be more appropriate to account for variable thickness of the junctional marker staining. Third, secondary parameters that address the specific distribution of junctional markers between neighbouring cells are: ‘junction marker 1’ intensity per interface area (ratio between ‘junction marker 1’ Intensity and Interface Area, unit A.U./pixel2) and Cluster Density (ratio between ‘junction marker 1’ and Junction area, unit A.U./pixel2).
 
-## Software validation
+### Software validation
 
 Validation of the length and area measurements of the interface, junctions and fragmented junctions was performed on selected junctions. The impact of user-controlled settings (dilation and thresholding) was tested by increasing the dilation or thresholding values during the analyses and comparing the effects on primary parameters of selected junctions. The coverage index was validated manually using FIJI and the active Rac1 expressing data set, on the same junctions quantified by Junction Mapper. The manual calculation (Lozano et al., 2008) has been traditionally done using the Euclidian distance (straight-line length) rather than the more precise contours measured by Junction Mapper. To estimate the impact of different users subjectivity on the data obtained with Junction Mapper, a random subset of images from three different data sets (siCIP4, H-Ras, endothelial cells) was analysed independently by a separate user without knowledge of the settings used for analysis by user A. Each user independently set up the corners, skeleton corrections, dilation and thresholding.
 
 For estimation of signal to noise ratio required for the skeleton recognition by Junction Mapper, random noise was added to the original (high quality) image using Fiji (Gaussian (normally) distributed with a mean of zero and standard deviation of 25; https://imagejdocu.tudor.lu/gui/process/noise) (Ferreira and Rasband, 2012). The quality of images was then estimated using the peak signal-to-noise ratio (PSNR) expressed in decibels (dB). The PSNR was calculated with the SNR Fiji plugin (Sage and Unser, 2003) by comparing original image to the images with added noise to the junction marker channel, since only this channel was used to create the skeleton. A heuristics approach on how to optimize analyses with Junction Mapper can be found in Supplementary file 4.
 
-## Image analysis – quality control and exclusions
+### Image analysis – quality control and exclusions
 
 Junction Mapper quantifies images in a variety of formats and resolutions. A summary of the image dataset and user-controlled values used in each experiment can be found in Supplementary file 1. Images obtained from different experiments were subjected to quality control before quantification: junctions were excluded if they have blurry areas, artefacts or large gaps between cells. Regions were also excluded that contained (i) junctions of cells overlapping or on top of each other (different focal plane) (ii) multinucleated cells (iii) cells that were not fully surrounded by neighbours (i.e. at the border of the image or epithelial colony), (iv) junctions of cells overexpressing high levels of protein. As values are obtained per junction and a junction is shared by two cells, duplicated measurements of junctions are removed from the dataset.
 
 For expression of different oncogenes, junctions were classified as those between (i) control cells (between two non-transfected cells), (ii) between two expressing cells (ee) or (iii) junctions shared by one expressing and a non-expressing cell (en). For the analyses of endothelial cells - junctions in blurry parts of the picture, with artefacts or large gaps between junctions and junctions at the border of a endothelial colony were excluded. For cardiomyocytes, the same criteria were applied as for endothelial cells and the parts of the image where the staining seemed very scattered and chaotic, with no clear trace of a junction were also excluded.
 
-## Statistical analysis
+### Statistical analysis
 
 Normality test was performed in each dataset using Kolmogorov-Smirnov normality test and Shapiro-Wilk test. Data from SrcY527F, H-RasG12V and Rac1Q61L experiments were analysed using ANOVA with the Games-Howell post-hoc test from the ‘userfriendlyscience’ in RStudio. Despite the data being non-parametric, the large number of junctions in each sample (>100 junctions) allows for the use of ANOVA with Games-Howell post-hoc test, which corrects for unequal sample sizes and variances between groups and for data with non-parametric distribution. Significance was set at p<0.05. Data with a single treatment group and control group (this includes siRNA experiments in epithelial cells, cardiomyocytes and endothelial cells) were non-parametric and hence were analysed using the Mann-Whitney U-test in GraphPad PRISM. Pair-wise comparison was analysed with Wilcoxon matched paired test. The summary of the types of data used and statistical analyses can be found in the Supplementary files 1 and 4, respectively.
 

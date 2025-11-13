@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02crff812 Institute of Veterinary Physiology, University of Zurich Zurich Switzerland
+1. Institute of Veterinary Physiology, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
 
 † Corresponding author
 

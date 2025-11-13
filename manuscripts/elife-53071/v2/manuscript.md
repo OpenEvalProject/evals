@@ -41,9 +41,17 @@ In this study, we address the reutilization of IGF signaling in neonatal heart r
 
 ## Results
 
-## Endocardial IGF2 is required for neonatal mouse heart regeneration
+### Endocardial IGF2 is required for neonatal mouse heart regeneration
 
 In the embryonic heart, Igf2 mRNA is expressed in the epicardium and endocardium, although not in the myocardium (Li et al., 2011). As noted above, genetic analysis demonstrated that only epicardial Igf2 has a required role in heart development. We confirmed that the same expression pattern persists into the early postnatal period, although epicardial expression decreased noticeably from the middle of the first postnatal week and was essentially absent by postnatal day P7 (Figure 1A,B; Figure 1—figure supplement 1A). Endocardial Igf2 expression at the RNA level was diminished quantitatively by P7, although was still clearly expressed. At no point was myocardial expression of Igf2 detected.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53071/elife-53071-fig1-v2.jpg)
+
+**Figure 1.:** (A) RT-PCR analysis of Igf2 mRNA level in whole ventricle tissue at embryonic (E) and postnatal (P) stages, using beta-actin as a reference for sample quality and quantity. (B) Igf2 expression in uninjured neonatal heart ventricle visualized by in situ hybridization (red signal). Expression is detected in epicardium (epi), endocardium (endo), and endothelium of coronary blood vessels (CBV). The first panel (sense probe) indicates the level of tissue background. (C) RT-PCR analysis showing that P1 apex resection injury does not change Igf2 expression at the RNA level at 1 day post resection (dpr) or at 7dpr, relative to sham operated mice. (D) In situ hybridization analysis showing that P1 apex resection injury does not change the spatial pattern of Igf2 expression at 7dpr. (E) Western blot of whole ventricle protein from sham-operated and resected hearts; quantitation of three independent blots (Figure 1—figure supplement 1B) shows no difference in IGF2 expression. Scale bars in panels B and D: 100µ.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53071/elife-53071-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Igf2 expression detected by in situ hybridization in the uninjured postnatal heart, focusing on the decline of epicardial expression from P4 to P7. The same sections are shown with (upper) and without (lower) the cardiomyocyte staining channel for clarity. Scale bars: 500µ. (B) Quantification from three independent Western blots of IGF2 protein at 1, 3, 5, and 7 days after sham (s) or resection (r) surgery. To allow comparison between blots, the signals from 1 day sham operated hearts were defined as 1.0. (B’) Statistical analysis of the data of panel B.
 
 Apical resection of the neonatal mouse heart at P1 is followed by robust cardiomyocyte proliferation and efficient regeneration (Porrello et al., 2011). We noted that apical resection did not affect Igf2 expression, spatially or quantitatively (Figure 1C–D). Interestingly, the total amount of ventricular IGF2 protein was unchanged from birth through P7 and regardless of injury (Figure 1E; Figure 1—figure supplement 1B), despite the loss of epicardial Igf2 expression and the diminished level of endocardial Igf2 expression. The protein present at P7 may have been translated several days earlier, and may be stabilized and/or sequestered by binding proteins. In the uninjured heart, there is no apparent requirement for this protein in postnatal heart biology, as genetic Igf2 manipulation with several Cre lines (Shen et al., 2015) had no recognizable postnatal consequence.
 
@@ -51,15 +59,106 @@ In our previous studies (Li et al., 2011; Shen et al., 2015), we used Nkx2.5-Cre
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/53071/elife-53071-fig2-v2.jpg)
 
-**Figure 2.:** Nkx2.5-Cre/Igf2 mutants.(A-C), at P1; D-F, at P21. (A,D) Histology showing normal heart morphology. Scale bars: 1 mm. (B,E) Calculation of heart weight to body weight ratio. Differences are not statistically significant. (C,F) Ventricular cardiomyocyte area shown as a box and whiskers plot (median, middle quartiles, and full range of the data indicated; no outliers excluded), based on n = 110 (Nkx2.5-Cre P1), n = 110 (Nkx2.5-Cre/Igf2 P1); n = 115 (Nkx2.5-Cre P21), n = 116 (Nkx2.5-Cre/Igf2 P21) cells. Differences are not statistically significant. (G,H) Calculation of ventricular mononuclear cardiomyocyte frequency (G) and the nuclear ploidy of the mononuclear cardiomyocyte subpopulation (H) in cellular preparations from neonates at P3 and P7 as indicated. All pups were on an identical B6AF1 genetic background. The measured difference in mononuclear cardiomyocyte percentage at P7 is statistically significant although of uncertain biological relevance (see text). Differences in nuclear ploidy are not statistically significant (at P3, p=0.19; at P7, p=0.38). (I) Images of cell preparations from the same analysis shown in panels G-H, stained for the cardiomyocyte marker TNNC (green) and DAPI to visualize nuclei; scale bar for all panels = 100µ.
+**Figure 2.:** (A-C), at P1; D-F, at P21. (A,D) Histology showing normal heart morphology. Scale bars: 1 mm. (B,E) Calculation of heart weight to body weight ratio. Differences are not statistically significant. (C,F) Ventricular cardiomyocyte area shown as a box and whiskers plot (median, middle quartiles, and full range of the data indicated; no outliers excluded), based on n = 110 (Nkx2.5-Cre P1), n = 110 (Nkx2.5-Cre/Igf2 P1); n = 115 (Nkx2.5-Cre P21), n = 116 (Nkx2.5-Cre/Igf2 P21) cells. Differences are not statistically significant. (G,H) Calculation of ventricular mononuclear cardiomyocyte frequency (G) and the nuclear ploidy of the mononuclear cardiomyocyte subpopulation (H) in cellular preparations from neonates at P3 and P7 as indicated. All pups were on an identical B6AF1 genetic background. The measured difference in mononuclear cardiomyocyte percentage at P7 is statistically significant although of uncertain biological relevance (see text). Differences in nuclear ploidy are not statistically significant (at P3, p=0.19; at P7, p=0.38). (I) Images of cell preparations from the same analysis shown in panels G-H, stained for the cardiomyocyte marker TNNC (green) and DAPI to visualize nuclei; scale bar for all panels = 100µ.
 
 To address the role of Igf2 in neonatal heart regeneration, we performed apex resection on neonatal pups at P1, and evaluated heart morphology after 3 weeks using Sirius red staining in which collagen-rich scar appears bright red and normal myocardium stains yellow. As in other studies (Mahmoud et al., 2015; Wodsedalek et al., 2019), we distinguished regeneration failure by the presence of transmural scar at the resection point, a partial phenotype by the presence of interspersed scar with abundant myocardium also present, and full regeneration by the absence of scar (examples shown in Figure 3 and Figure 3—figure supplement 1). Because of experimental variability between animals in the amount of apex tissue resected, some variability in outcome is expected, as has been previously documented (Bryant et al., 2015). Control mice, all carrying either Nkx2.5-Cre or another Cre line described below but all wild-type for Igf2, predominantly had no scar or in a small number of cases had interspersed scar (Figure 3, Figure 3—figure supplement 1B, Table 1). In contrast, all Nkx2.5-Cre/Igf2 mutants had transmural scar (Figure 3, Figure 3—figure supplement 1A, Table 1). The presence of scar per se demonstrates only that there is excess and abnormal deposition of matrix. The absence of restoration of the ventricular myocardium, coupled with observations described below of a cardiomyocyte-specific proliferative response, indicate that this phenotype is the manifestation of regeneration failure. Thus, under these typical experimental circumstances, IGF2 signaling is required for neonatal heart regeneration. Furthermore, because of the cardiac mesoderm-restricted recombination domain of Nkx2.5-Cre, the source of IGF2 is within rather than from outside the heart.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/53071/elife-53071-fig3-v2.jpg)
+
+**Figure 3.:** For each heart, serial sections were taken and stained with Sirius red to visualize collagen, and the section with the most extensive degree of staining at the injury site was used to define the degree of regeneration. Additional examples are shown in Figure 3—figure supplement 1, and all outcomes are compiled in Table 1. The boxed region in each upper panel is shown at higher magnification below. Scale bars: upper, 1 mm; lower, 200µ.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53071/elife-53071-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A genetic control and an Nkx2.5-Cre/Igf2 mutant, stained with trichrome rather than Sirius red. Transmural scar (blue staining) is equally evident by this visualization. (B) Two genetic controls that were scored as having interspersed scar. (C) Both of the two Tbx18-Cre/Igf2 mutants that had transmural scar; this was an atypical outcome. (D) The one Myh6-Cre/Igf1r mutant showing transmural scar; this was an atypical outcome. (E) An Nfatc1-Cre/Igf2 mutant showing interspersed scar. This heart comes from a littermate of one of the mCAT transgenic rescued Nfatc1-Cre/Igf2 mutants shown in Figure 6B. Scale bars: upper panels, 1 mm; lower panels A-D, 200µ; lower panel E, 100µ.
+
+**Table 1.**
+ Regeneration after P1 heart apex resection in neonates of various genotypes.Hearts were evaluated 21 days after resection. Examples of each class of outcome are shown in the figures. Control neonates carried one of the Cre alleles listed in the table but were wild-type for the Igf2 gene. Some Nfatc1-Cre/Igf2 mutants in this table were nontransgenic littermate controls of the Nfatc1-Cre/Igf2/mCAT neonates in Figure 6B.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Total</th>
+      <th>No scar</th>
+      <th>Interspersed scar</th>
+      <th>Transmural scar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control</td>
+      <td>23</td>
+      <td>20</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Nkx2.5-Cre/Igf2</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Tek-Cre/Igf2</td>
+      <td>7</td>
+      <td>2</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Nfatc1-Cre/Igf2</td>
+      <td>7</td>
+      <td>0</td>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Tbx18-Cre/Igf2</td>
+      <td>8</td>
+      <td>6</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Myh6-Cre/Insr</td>
+      <td>7</td>
+      <td>0</td>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Myh6-Cre/Igf1r</td>
+      <td>5</td>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
 To define the tissue specific requirements for Igf2 function during neonatal heart regeneration, we also analyzed conditional Igf2 mutants using a number of additional Cre lines. Tek-Cre (also commonly called Tie2-Cre) is active in all endothelium, including endocardium, and Nfatc1-Cre is active in endocardium and coronary endothelium. We previously showed that Tek-Cre/Igf2 mutants had no embryonic heart phenotype (Shen et al., 2015), and Tek-Cre/Igf2 and Nfatc1-Cre/Igf2 mutant mice are both seemingly normal through both prenatal and postnatal life. Collectively, the majority of resected neonates with Igf2 conditionally deleted in the endocardium and coronary endothelium completely (10/14) or partially (2/14) failed to regenerate (Figure 3, Table 1). In contrast, the majority (6/8) of resected neonates with Igf2 conditionally deleted in the epicardium using Tbx18-Cre were fully restored 3 weeks later. These results strongly implicate the endocardium and coronary endothelium as the primary if not exclusive lineage source of IGF2 needed for neonatal heart regeneration. This is particularly surprising because the sole source of IGF2 in the embryonic heart that supports normal embryonic cardiomyocyte proliferation is the epicardium, with no apparent embryonic role whatsoever for Igf2 expressed in the endocardial/endothelial lineage (Shen et al., 2015).
 
-## Insulin receptor mediates IGF2 action in neonatal heart regeneration
+### Insulin receptor mediates IGF2 action in neonatal heart regeneration
 
 IGF2 can signal through the insulin receptor (INSR) and through the IGF1 receptor (IGF1R) (Scalia et al., 2001). In the embryonic myocardium, only IGF1R is required to mediate IGF2 signaling, despite the seemingly comparable expression of the INSR (Wang et al., 2019). In testing the function of these receptors in neonatal heart regeneration, we unexpectedly found that only the insulin receptor is required; there was little if any impact of Igf1r deficiency alone (Table 1, Figure 4A). The use of cardiomyocyte-specific Myh6-Cre in this analysis also demonstrates that INSR function in cardiomyocytes mediates IGF2 response.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53071/elife-53071-fig4-v2.jpg)
+
+**Figure 4.:** (A) Sirius red staining of P21 hearts after P1 resection, as in Figure 3. (B) Immunofluorescence detection of phosphorylated INSR at 7dpr is eliminated when Igf2 is conditionally mutated; there is no signal in the absence of injury (sham). (C) No detectable phosphorylation of IGF1R regardless of injury or Igf2 status in the 7dpr neonatal heart. Cardiomyocytes in B and C were labeled with antibodies for MYL2 (ventricular myosin light chain) or TNC (troponin C), respectively. See similar results at 3dpr for both INSR and IGF1R in Figure 4—figure supplements 1 and 2. A positive control for pIGF1R antibody quality is shown in Figure 4—figure supplement 3. (D) Western blot using ventricular lysates from P1 uninjured and resected hearts at 3dpr, comparing control to Insr conditional mutants. The phospho-specific antibody recognizes both pINSR and pIGF1R and so is labeled here simply as phospho-R. Antibodies uniquely recognizing total INSR and total IGF1R (both are approx. 95 kDa), and b-actin as a loading comparison, are also shown. The initial phospho-R blot was stripped and reprobed with the t-INSR antibody; a separate blot run at the same time using the same amount of sample was used for t-IGF1R and actin.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53071/elife-53071-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Immunostaining for phosphorylated receptor 3dpr, similar result as at 7dpr shown in Figure 4B–C. (B) A high magnification view showing adjacent cardiomyocytes at 3dpr that are either positive (gray arrow) or negative (white arrow) for phospho-INSR staining. (C) pINSR staining is present throughout the myocardium at 7dpr after P1 injury. The heart and section shown here is the same as shown in the middle column of Figure 4B. Scale bars: upper row of A and first panel of C, 500µ; lower row of A and right panels of C, 100µ.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53071/elife-53071-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Low magnification images showing each individual channel (DAPI, Myl2, pINSR) and the merged image are grouped above, the boxed region in each is shown at higher magnification below. Scale bars in all panels are 10µ. The injured myocardium in the injury adjacent images are slightly beyond the frame of these images. As in Figure 4, note positive pINSR staining in resected control but not in uninjured (sham) control or in resected Nkx2.5-Cre/Igf2 mutant hearts.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/53071/elife-53071-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Staining of embryonic day E12.5 hearts with the same anti-phospho-specific receptor antibodies as used in Figure 4 and Figure 4—figure supplements 1 and 2, showing positive reactivity for pIGF1R and only faint signal with pINSR. This result repeats what we have shown previously (Wang et al., 2019); the sections shown here were newly stained in this study and done alongside those shown in Figure 4. (B,C) Expression of the two Insr splice variants, detected by RT-PCR using primers from the two common exons that flank the included or excluded exon, over developmental and postnatal time in uninjured hearts (B) and unchanged by P1 injury (C).
 
 INSR and IGF1R are both members of the receptor tyrosine kinase family, and are autophosphorylated in response to ligand as the first step in initiating intracellular signaling. By immunofluorescence using antibodies specific for phospho-INSR and for phospho-IGF1R, at 3 and 7 days following sham surgery, there was no basal level of phosphorylation of either receptor, indicating that the activity of the IGF/insulin signaling axis in the normal uninjured neonatal heart is below detection using this method (Figure 4B,C; Figure 4—figure supplements 1A and 2). IGF2 protein is present in the heart during this period (Figure 1E; Figure 1—figure supplement 1B), but seemingly in a manner that does not activate a substantial level of signaling (see below and Discussion). Resection caused prominent INSR phosphorylation (Figure 4B, Figure 4—figure supplements 1A and 2), in a pattern that was somewhat heterogeneous even among nearby cardiomyocytes (Figure 4—figure supplement 1B); the explanation for this heterogeneity is unknown. INSR phosphorylation was prominent in cardiomyocytes adjacent to the resection plane as well as distal to the injury (Figure 4B, Figure 4—figure supplements 1C and 2), which is consistent with the observation that cardiomyocyte proliferation is activated throughout the myocardium after neonatal injury (Porrello et al., 2011). Importantly, INSR phosphorylation was eliminated in Nkx2.5-Cre/Igf2 conditional ligand mutants (Figure 4B, Figure 4—figure supplement 2), confirming that IGF2 is the ligand that activates INSR during neonatal heart regeneration. Because IGF2 expression at the RNA and protein level is not changed by injury (Figure 1; Figure 1—figure supplement 1B), we assume that injury releases the block that prevents signaling in the uninjured heart. We observed no IGF1R phosphorylation in injured (or uninjured) neonatal hearts (Figure 4C, Figure 4—figure supplement 1A), which correlates with the absence of genetic requirement for this receptor in regeneration (Table 1). Absence of IGF1R phosphorylation in injured conditional Igf2 mutants also demonstrates that IGF1 (which signals only through the IGF1R) does not compensate for loss of IGF2. As a positive control for reagent quality and specificity, we detected IGF1R phosphorylation but no activation of the INSR in embryonic heart (Figure 4—figure supplement 3A), consistent with our previous observations (Wang et al., 2019).
 
@@ -67,7 +166,7 @@ To confirm these results, we performed Western blotting (Figure 4D) using ventri
 
 The insulin receptor gene is transcribed into two isoforms that differ only by the inclusion or exclusion of a 36 bp alternatively spliced exon 11, resulting in proteins that differ by 12 amino acids in an extracellular domain of the receptor (Frasca et al., 1999). The shorter form, called INSR-A, mediates signals by both insulin and IGF2, whereas the longer form, called INSR-B, responds to only insulin (Frasca et al., 1999; Scalia et al., 2001). Throughout the neonatal period, the ratio of the A and B isoforms was roughly equal, and was not obviously altered after resection (Figure 4—figure supplement 3B,C). Although analyzed here only at the RNA level, it is unlikely that the two transcripts are differentially translated (because they differ only in one internal exon), and the two proteins have a similar stability when expressed in transfected cells (Pandini et al., 2002). Thus, the insulin receptor A isoform that mediates IGF2 signals is present during the time when IGF2-INSR signaling is required for neonatal heart regeneration, and as demonstrated above is activated by IGF2 after neonatal heart injury.
 
-## Igf2 deficiency distinguishes cardiomyocyte cell cycle entry and cardiomyocyte proliferation
+### Igf2 deficiency distinguishes cardiomyocyte cell cycle entry and cardiomyocyte proliferation
 
 Neonatal heart apex resection induces cardiomyocyte proliferation as a key element of the regenerative response (Porrello et al., 2011). To better understand the requirement for IGF2 signaling in this process, we performed an analysis (Figure 5) using the marker phospho-histone H3 (pH3), which labels the nuclei of cycling cells starting at the early prophase stage of mitosis. We colabeled with NKX2.5, which at the protein level is only present in cardiomyocyte nuclei. Three days after P1 sham surgery, a basal level of pH3+ staining was observed, reflecting the ongoing entry of cardiomyocytes into cell cycle that is followed in most cases by polyploidization (Soonpaa et al., 1996). There was no difference in control (Cre-only) vs. Igf2-deficient hearts in the uninjured 3dpr level of pH3+ cardiomyocytes (Figure 5B).
 
@@ -81,9 +180,17 @@ In genetic control mice (Cre-only), the level of pH3+ staining 7 days after sham
 
 Phospho-histone H3 is a marker of cells in early mitosis, and does not necessarily indicate that cytokinesis will ensue. It is well established that injury in the adult heart induces cell cycle entry, including S-phase DNA replication and induction of pH3+ staining, but followed mostly by a failure to complete cytokinesis, resulting in cardiomyocytes with increased ploidy rather than an increased number of cardiomyocytes (Zebrowski et al., 2016). For the same reason, injury at P7 in wild-type pups is not followed by enough proliferation to support myocardial restoration, as observed in previous studies (Porrello et al., 2011; Puente et al., 2014). Our data support an interpretation that neonatal heart regeneration requires cardiomyocyte proliferation, that proliferation occurs during the first few days after P1 resection when a high percentage of cardiomyocytes are still able to divide, and that IGF2 acting as a typical mitogen is required during these first few days to induce cell cycle entry that then culminates in proliferation. In contrast, even though there is abundant cell cycle activity (e.g., pH3+ staining) at later times (e.g., at 7dpr), this is not followed by enough cytokinesis (proliferation) to support myocardial restoration. Presumably, the main outcome of cell cycle activity at P7 is to increase the ploidy level of preexisting cardiomyocytes, rather than to increase the number of cardiomyocytes by proliferation.
 
-## Delayed cardiomyocyte cell cycle arrest and increased mononuclear diploid cardiomyocyte percentage rescue neonatal heart regeneration in Igf2 mutants
+### Delayed cardiomyocyte cell cycle arrest and increased mononuclear diploid cardiomyocyte percentage rescue neonatal heart regeneration in Igf2 mutants
 
 Several experimental manipulations that lower the level of reactive oxygen were previously shown to prolong the postnatal window during which cardiomyocytes remain proliferative (Puente et al., 2014). One method was to raise newborn pups in a mildly hypoxic environment (15% oxygen). We adapted this protocol to address the influence of IGF2 and other activities in heart regeneration in the early and later phases of the first postnatal week. Pregnant females were switched to a 15% oxygen environment just prior to birth, with apex resection of the pups at P1 and evaluation at P21. Regeneration in genetic control mice (n = 9) was unaffected by mild hypoxia (i.e., occurred effectively), just as under normoxic conditions. Impressively, as evaluated by histology, mild hypoxia was sufficient to rescue heart regeneration in Nkx2.5-Cre/Igf2 mutants: 4/5 displayed no scar and 1/5 displayed interspersed scar 21 days after resection (Figure 6A). This contrasts to pups raised in normoxic conditions, where all Nkx2.5-Cre/Igf2 mutants showed transmural scar (Table 1). The amount of scar was quantified to confirm the significant effect of mild hypoxia in mutant hearts (Figure 6D; group 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/53071/elife-53071-fig6-v2.jpg)
+
+**Figure 6.:** All analyzed hearts of the indicated genotypes and treatments are shown. As in Figure 3, the most extensive degree of Sirius red staining for each heart at the injury site is shown. (A) Nkx2.5-Cre/Igf2 mutant hearts after mild hypoxia. Heart #5 was scored as having interspersed scar, shown at high magnification in the expanded panel; the other four were scored as having full regeneration. (B) Nfatc1-Cre/Igf2 mutants also transgenic for the mCAT transgene. All three show full regeneration. (C) Nkx2.5-Cre/Igf2 mutants in the A/J strain background. #1 is classified as interspersed scar, the other two are scored as full regeneration. Scale bars: upper rows, 1 mm; lower rows, 100µ. (D) Scar size was quantitated for Nkx2.5-Cre/Igf2 and Nfatc1-Cre/Igf2 mutants and for all of the rescued hearts shown in panels A-C.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53071/elife-53071-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Comparison of mononuclear cardiomyocyte level in wild-type control and mCAT transgenic C57BL/6J-inbred littermate pups at P7. (B) Comparison of mononuclear cardiomyocyte percentage in uninjured strains A/J (red) and C57BL/6J (black) at P7, P10, and P21. Average values for P0 and adult (8 weeks) for both strains were taken from Patterson et al. (2017) and were not newly measured in this study.
 
 Transgenic expression of catalase directed to mitochondria (mCAT) lowers oxidative stress, and like mild hypoxia was previously shown to prolong cardiomyocyte proliferation (Puente et al., 2014). Here, we combined the mCAT transgene with conditional Nfatc1-Cre/Igf2 mutation under normoxic conditions, and after P1 injury observed complete regeneration in 3 of 3 pups (Figure 6B,D). Rescue of heart regeneration after P1 injury in Igf2 mutant neonates by mild hypoxia and by expression of the mCAT transgene minimizes the likelihood of an explanation for either other than through their common established mechanism to lower oxidative stress and thereby delay the postnatal onset of cardiomyocyte cell cycle arrest. Since the early (P3) IGF2-dependent mitogenic activity is absent in Igf2 mutants (Figure 5B), one explanation for rescue of regeneration is a more effective proliferative response to the later mitogenic activity that is present around P7 even in mutants (Figure 5C).
 
@@ -93,13 +200,13 @@ In our recent analysis (Patterson et al., 2017), we demonstrated that strain A/J
 
 We utilized the A/J strain background to further test the influence of mononuclear diploid cardiomyocyte frequency on neonatal heart regeneration. For this purpose, the Nkx2.5-Cre and conditional Igf2 alleles (which are unlinked) were backcrossed for seven generations to the A/J background, which on theoretical grounds results in mice that are 98% homozygous for A/J alleles across the genome other than near the Nkx2.5-Cre and Igf2 loci. Male mice heterozygous for the Nkx2.5-Cre and conditional Igf2 alleles on the A/J background were crossed to wild-type female A/J mice, with heart resection performed on neonatal pups at P1 as above. To confirm procedures on this strain background, three genetic control pups (Cre-only) were evaluated at 21dpr and all had regenerated, as expected. Importantly, all of 3 Nkx2.5-Cre/Igf2 pups had also regenerated (Figure 6C,D). Thus, even without environmental or transgenic manipulation, when the number of mononuclear diploid cardiomyocytes at P7 is elevated (e.g., here by strain background), the mitogenic (cell cycle entry) activity present around that time (Figure 5C) is able to drive a sufficient degree of cardiomyocyte response to accomplish heart regeneration even in P1-injured Igf2 mutants.
 
-## Myocardial infarction in the adult heart induces Igf2 reexpression
+### Myocardial infarction in the adult heart induces Igf2 reexpression
 
 Unlike the early neonatal heart, in which regenerative capacity is robust, injury to the adult mammalian heart is not followed by substantial cardiomyocyte proliferation and therefore is not effectively regenerated. In the uninjured adult heart, Igf2 expression was not detectable by in situ hybridization, and was barely detectable by RT-PCR (Figure 7A,B). After adult heart injury (permanent coronary artery ligation), we observed that Igf2 expression was reexpressed in the endocardium in the infarcted zone, strongly at 6 days and continuing although to a declining level at 20 days. This was however not associated with INSR phosphorylation (activation) (Figure 7C). This resembles the situation in the uninjured neonatal heart, where Igf2 is expressed and the protein is present but does not induce receptor activation, and where cardiomyocyte proliferation is minimal.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/53071/elife-53071-fig7-v2.jpg)
 
-**Figure 7.:** Igf2 expression.(A) Sections of adult hearts that were uninjured or at 6 days and 20 days after coronary artery ligation. In the injured hearts, the infarction region is evident by absence of cardiomyocyte autofluorescence (green). Igf2 is not expressed in the uninjured heart, but is expressed after infarction in the endocardium. (B) RT-PCR analysis of Igf2 expression normalized to 18S rRNA, showing minimal expression in uninjured heart and induction after injury. The first lane is a size marker. (C) No activation of INSR phosphorylation after adult heart injury.
+**Figure 7.:** (A) Sections of adult hearts that were uninjured or at 6 days and 20 days after coronary artery ligation. In the injured hearts, the infarction region is evident by absence of cardiomyocyte autofluorescence (green). Igf2 is not expressed in the uninjured heart, but is expressed after infarction in the endocardium. (B) RT-PCR analysis of Igf2 expression normalized to 18S rRNA, showing minimal expression in uninjured heart and induction after injury. The first lane is a size marker. (C) No activation of INSR phosphorylation after adult heart injury.
 
 ## Discussion
 
@@ -131,38 +238,251 @@ A major reason for interest in the very efficient process of neonatal heart rege
 
 ## Materials and methods
 
-## Statistical analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background Mus musculus male and female</td>
+      <td>C57BL/6J, A/J</td>
+      <td>JAX</td>
+      <td>000664, 000646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>conditional Igf1r/Insr</td>
+      <td>PMID:18650937</td>
+      <td></td>
+      <td>Laboratory (noncommercial) source</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>conditional Igf2</td>
+      <td>PMID:22674894</td>
+      <td></td>
+      <td>Laboratory (noncommercial) source</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Nkx2.5-Cre</td>
+      <td>PMID:11783008</td>
+      <td></td>
+      <td>Laboratory (noncommercial) source</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Tbx18-Cre</td>
+      <td>PMID:18480752</td>
+      <td></td>
+      <td>Laboratory (noncommercial) source</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Tek-Cre</td>
+      <td>PMID:11161575</td>
+      <td></td>
+      <td>Laboratory (noncommercial) source; also commonly called Tie2-Cre</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Nfatc1-Cre</td>
+      <td>PMID:11786533</td>
+      <td></td>
+      <td>Laboratory (noncommercial) source</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Myh6-Cre</td>
+      <td>JAX</td>
+      <td>011038</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>mCAT</td>
+      <td>JAX</td>
+      <td>016197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-IGF1R (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>SC101703</td>
+      <td>for immuno-fluorescence (IF) (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Troponin C (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab30807</td>
+      <td>for IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-Insulin receptor (goat polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>SC25103</td>
+      <td>for IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MYL2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab79935</td>
+      <td>for IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit (donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>AlexaFluor 488 and 546</td>
+      <td>for IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat (donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>AlexaFluor 488 and 546</td>
+      <td>for IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pH3 (rabbit polyclonal)</td>
+      <td>Upstate</td>
+      <td>06–570</td>
+      <td>for IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NKX2.5 (goat polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>SC8697</td>
+      <td>for IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-IGF2 (goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF792</td>
+      <td>for Westerns (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-IGF1R/INSR (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>700393</td>
+      <td>for Westerns; 1.5 µg/ml final concentration</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-total INSR (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>3025S</td>
+      <td>for Westerns (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-total-IGF1R (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>3027S</td>
+      <td>for Westerns (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-beta-actin (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>SC47778</td>
+      <td>for Westerns (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TnT (troponin T) (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab8295</td>
+      <td>for cell staining (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD31 (Pecam1) (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>553370</td>
+      <td>for cell staining (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Insr-F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GGTGTACTGGGAGAGGCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Insr-R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CGGTACCCAGTGAAGTGTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Igf2-F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GGCCTTCGCCTTGTGCTGCATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Igf2-R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GGATCCACGATCAGGGGACGATGACG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analysis
 
 Primary data are provided in each figure. An unpaired, two-tailed Student t-test, or ANOVA in the case of multiple comparisons, was used to assess statistical significance. By nature of the studies involved, a sample size was not predefined. The number of biological replicate neonates assessed was based on the (random) distribution of genotypes in litters; no technical replicates were included in this study. No outliers in any experimental evaluation were excluded from analysis. ISH and immunostaining assays were conducted on at least six sections per sample and at least three samples per condition (genotype, time, etc.).
 
-## Mice
+### Mice
 
 All animal aspects of this study adhered to the NIH Guide for the Care and Use of Laboratory Animals, and were overseen by the IACUC committee of the University of Southern California. Conditional Igf1r/Insr (Stachelscheid et al., 2008), conditional Igf2 (Haley et al., 2012), Nkx2.5-Cre (Moses et al., 2001), Tbx18-Cre (Cai et al., 2008), Tek-Cre (Kisanuki et al., 2001), Nfatc1-Cre (Zhou et al., 2002), and Myh6-Cre (Agah et al., 1997) alleles used in this study were also used in our prior work (Li et al., 2011; Cavallero et al., 2015; Shen et al., 2015). For most experiments, alleles were maintained on a mixed and unspecified strain background. For convenience, mutant backgrounds are designated simply by the name of the Cre line and the conditional gene separated by a diagonal slash. Because the Igf2 gene is imprinted, conditional Igf2 mutants were always heterozygous with the conditional Igf2 allele paternally inherited; all other mutant backgrounds were homozygous. Male mice heterozygous for both Nkx2.5-Cre and conditional Igf2 alleles were mated for seven generations to A/J females (purchased from The Jackson Laboratory, stock number 000646) for studies involving the A/J strain background. Myh6-Cre and the mCAT transgenic line were purchased from The Jackson Laboratory (stock numbers 011038 and 016197, respectively) and were maintained on a C57BL/6J background unless crossed with alleles carried by mice on outbred backgrounds. Cardiomyocyte ploidy in A/J, C57BL/6J, and C57BL/6J-congenic mCAT transgenic mice was evaluated in neonatal mice maintained on these inbred backgrounds. Cardiomyocyte nucleation and nuclear ploidy status in P7 Nkx2.5-Cre vs Nkx2.5-Cre/Igf2 neonates was performed on F1 mice derived by mating A/J-inbred Nkx2.5-Cre/Igf2 males to wild-type C57BL/6J females.
 
-## Heart injury
+### Heart injury
 
 The day when newborn pups were observed was defined as P0. The following day, P1 neonatal mice were anesthesized on a bed of ice for 3.5–5 min. After blunt dissection at the left fourth intercostal space, the heart was exposed by gentle squeezing on the body wall. The heart apex was then amputated using iridectomy scissors; sham-operated mice had their hearts exposed without amputation. After surgery, the heart was returned to the body cavity by gentle elevation of the body wall, which was then sutured with 7–0 prolene suture and the skin wound closed with tissue adhesive. Neonates were resuscitated on a warming water bed. In most studies, all neonates of a litter were resected, and genotypes were determined retrospectively at the time of analysis as there is no visible distinction for any of the genotypes studied in this project. In studies comparing sham vs. resected hearts, an equal number of pups within a litter were randomly chosen for either procedure, sham-operated pups were marked by snipping a small piece of tail, and genotypes were determined retrospectively at the time of analysis. For hypoxia treatment, pregnant females were put into a 15% oxygen chamber (BioSpherix) one day before delivery. P1 apical resection was performed in room air (normal oxygen), and pups were returned to the hypoxic chamber after recovery. Adult mice were injured by permanent left anterior descending coronary artery ligation exactly following procedures described previously (Patterson et al., 2017).
 
-## In situ hybridization
+### In situ hybridization
 
 Digoxygenin-labelled probes were made as described previously (Shen et al., 2015). Heart samples were fixed with 4% paraformaldehyde in PBS at 4°C overnight. After cryoprotection in 10% and 30% sucrose, hearts were embedded and frozen in OCT, and then cryosectioned frontally at 8µ thickness. Sections were fixed in 4%PFA in PBS, washed with PBS, and treated with proteinase K and then triethanolamine in acetic anhydride. Hybridization was performed at 65°C for at least 16 hr. Unhybridized probe was removed by RNaseA digestion. Signal was detected by POD-coupled anti-DIG primary antibody (Roche) and TSAplus Fluorescent Substrate Kit (PerkinElmer).
 
-## Histological studies
+### Histological studies
 
 Heart samples were dehydrated through increasing ethanol concentrations and then embedded in paraffin. 10µ sections were used for histological studies. To visualize collagen, Picro Sirius red staining (Sigma-Aldrich 365548) or Masson trichrome stain kit (Richard-Allen Scientific) were used. Evaluation of scar at the P21 time of evaluation as transmural, interspersed, or no scar was made from serial sections of each heart; the section with the most extensive degree of Picro Sirius red staining at the injury site was used to define the degree of regeneration. Quantitation of scar was determined by summing the area of scar using ImageJ over complete serial sections through the injury area. Investigators were blinded to genotype at the time of surgery but not at the time of evaluation of extent of scar.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Heart samples were fixed with 4% paraformaldehyde in PBS at 4°C overnight. After cryoprotection in 10% and 30% sucrose, hearts were embedded and frozen in OCT. 8µ sections were used for IF. Slides were briefly fixed with 4% PFA, then washed and permeabilized with PBS containing 0.1% Triton X-100 at room temperature for three times, 5 min each. After blocking with 10% normal donkey serum and 1% BSA at room temperature for 1 hr, 0.03% Sudan black for 30 min at room temperature was used to block cardiomyocyte autofluorescence. Thereafter, sections were incubated in rabbit anti-phospho-IGF1R (Santa Cruz SC101703; 1:50) and goat anti-Troponin C (Abcam ab30807; 1:500), or goat anti-phospho-Insulin receptor (Santa Cruz SC25103; 1:50) and rabbit anti-MYL2 (Abcam ab79935; 1:200) in PBS containing 1% BSA and 10% donkey serum at 4°C overnight. The secondary antibodies (all used at 1:500) donkey anti-rabbit (Invitrogen Alexa Fluor 546) and donkey anti-goat (Invitrogen Alexa Fluor 488), or donkey anti-goat (Invitrogen Alexa Fluor 546) and donkey anti-rabbit (Invitrogen Alexa Fluor 488) were used to detect pIGF1R and Troponin C, or pINSR and MYL2 with 1 hr incubation at room temperature. For detecting proliferation, primary antibodies used were anti-pH3 (Upstate 06–570; 1:500) and anti-NKX2.5 (Santa Cruz, SC8697; 1:200). Secondary antibodies (1:500) were donkey anti-goat (Invitrogen Alexa Fluor 647) and donkey anti-rabbit (Invitrogen Alexa Fluor 546). Slides were mounted with mounting media containing DAPI. Fluorescent and confocal (1µ optical sections) images were captured at the same settings and at the same time for all sections of an experimental group.
 
-## Polymerase chain reaction
+### Polymerase chain reaction
 
 RNA was extracted from heart ventricle using Quick-RNA Mini Prep Kit (Zymo Research). Equal amounts of RNA were used to synthesize cDNA using M-MLV reverse transcriptase (Invitrogen). The following primer sequences were used to amplify Insr cDNA to detect splicing: 5′-GGTGTACTGGGAGAGGCAAG-3′ and 5′-CGGTACCCAGTGAAGTGTCT-3′. For Igf2, primer sequences were: 5’-GGCCTTCGCCTTGTGCTGCATC-3’ and 5’-GGATCCACGATCAGGGGACGATGACG-3’. Beta-actin was used as an internal control.
 
-## Western blot
+### Western blot
 
 Proteins separated on SDS-PAGE gels were transferred to polyvinylidene difluoride membranes (Biorad). Membranes were blocked in PBS-Tween with 5% nonfat dry milk. Antibody against IGF2 was from R&D (AF792) used at 1:1000 dilution. Bound primary antibodies were visualized using secondary antibodies conjugated to horseradish peroxidase (1:2000, Santa Cruz Biotechnology) and chemiluminescent substrate (ECL Plus, Thermo Scientific). For quantitation, Western blot images were opened in Image J and using the plot lanes function. All IGF2 bands were normalized to the corresponding bands of beta-tubulin from same membrane. Normalized signal measurement values were analyzed by GraphPad Prism using one-way ANOVA (alpha = 0.05). For evaluation of INSR phosphorylation, Nkx2.5-Cre with conditional Insr (both alleles heterozygous) adults were mated to homozygous conditional Insr partners, and hearts from P4 pups were collected and frozen and then retrospectively genotyped. Western blots prepared as above were probed with anti-phospho-INSR/IGF1R (Invitrogen 700393, 1.5 µg/ml final), anti-INSR (Cell Signaling 3025S (4B8), 1:1000), anti-IGF1R (Cell Signaling 3027S, 1:1000), and beta-actin (Santa Cruz sc-47778, 1:1000), and visualized as above.
 
-## Cardiomyocyte isolation and mononuclear and mononuclear ploidy quantitation
+### Cardiomyocyte isolation and mononuclear and mononuclear ploidy quantitation
 
 Because strain background strongly influences both nuclear ploidy and mononuclear cardiomyocyte level, mice for this analysis were all on a uniform B6AF1 strain background (described above). P3 and P7 neonatal mouse hearts were rapidly excised after decapitation and gently cleaned to remove blood in ice-cold Kruftbrühe (KB) solution (Malliaras et al., 2013). Hearts were mounted to a Langendorff perfusion apparatus, perfused with 37°C oxygenated calcium‐free Tyrode's solution at 1 ml/min for 1 min, then digested with 37°C oxygenated calcium‐free Tyrode's solution containing 1 mg/ml collagenase type II (Gibco 17101–015) at 1 ml/min for 5 min. After digestion, atria and valves were removed and ventricular tissue alone was excised and triturated in KB solution. The resulting cell suspension was filtered through a 250 μm mesh, stained with LiveDead Fixable (ThermoFisher, L10120) for 20 min at room temperature, then fixed in 2% PFA at room temperature for 15 min. Fixed cell suspensions were stained for cTnT (1:1,000, Abcam ab8295) overnight at 4°C followed by goat anti-mouse secondary (1:500, ThermoFisher A11001) and DAPI. Cell suspensions were pipetted across a slide and coverslipped. Cardiomyocyte nucleation was quantified on an Olympus BX41 fluorescence microscope with a 20x objective. Only live cardiomyocytes were counted; at least 300 cells were counted per heart. For nuclear ploidy analysis, cell preparations prepared as above were also stained with anti-CD31 antibody (BD Pharmingen 553370; 1:250) to label endothelial cells and photographed. Using ImageJ software, nuclei were identified and outlined with a standard threshold requirement, and DAPI fluorescence intensity of individual nuclei in mononuclear cardiomyocytes and in endothelial cells was calculated. The median value of DAPI fluorescence intensity of CD31+ endothelial cell nuclei was used as a diploid nucleus standard, and cardiomyocyte nuclei were defined as being diploid if their normalized intensity values were within a 0.5–1.5x range of this standard. Investigators were blinded to genotype at the onset of and through the completion of this analysis.

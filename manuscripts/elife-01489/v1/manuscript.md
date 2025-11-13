@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.01489.001 Mitochondrial antiviral signaling (MAVS) protein is required for innate immune responses against RNA viruses. In virus-infected cells MAVS forms prion-like aggregates to activate antiviral signaling cascades, but the underlying structural mechanism is unknown. Here we report cryo-electron microscopic structures of the helical filaments formed by both the N-terminal caspase activation and recruitment domain (CARD) of MAVS and a truncated MAVS lacking part of the proline-rich region and the C-terminal transmembrane domain. Both structures are left-handed three-stranded helical filaments, revealing specific interfaces between individual CARD subunits that are dictated by electrostatic interactions between neighboring strands and hydrophobic interactions within each strand. Point mutations at multiple locations of these two interfaces impaired filament formation and antiviral signaling. Super-resolution imaging of virus-infected cells revealed rod-shaped MAVS clusters on mitochondria. These results elucidate the structural mechanism of MAVS polymerization, and explain how an α-helical domain uses distinct chemical interactions to form self-perpetuating filaments. DOI: http://dx.doi.org/10.7554/eLife.01489.001
+Mitochondrial antiviral signaling (MAVS) protein is required for innate immune responses against RNA viruses. In virus-infected cells MAVS forms prion-like aggregates to activate antiviral signaling cascades, but the underlying structural mechanism is unknown. Here we report cryo-electron microscopic structures of the helical filaments formed by both the N-terminal caspase activation and recruitment domain (CARD) of MAVS and a truncated MAVS lacking part of the proline-rich region and the C-terminal transmembrane domain. Both structures are left-handed three-stranded helical filaments, revealing specific interfaces between individual CARD subunits that are dictated by electrostatic interactions between neighboring strands and hydrophobic interactions within each strand. Point mutations at multiple locations of these two interfaces impaired filament formation and antiviral signaling. Super-resolution imaging of virus-infected cells revealed rod-shaped MAVS clusters on mitochondria. These results elucidate the structural mechanism of MAVS polymerization, and explain how an α-helical domain uses distinct chemical interactions to form self-perpetuating filaments.
 
 ## Introduction
 
@@ -35,113 +35,530 @@ Viral infection of host cells triggers innate and adaptive immune responses that
 
 RIG-I and MDA5 are two DExD/H-box helicases that belong to the superfamily 2 of RNA helicases (Yoneyama et al., 2004; Fairman-Williams et al., 2010). Both proteins contain N-terminal tandem caspase activation and recruitment domains (CARDs), a central RNA helicase, and a C-terminal regulatory domain (CTD). Despite sharing a similar domain structure, RIG-I and MDA5 are activated by complementary sets of viral RNA ligands through distinct mechanisms (Kato et al., 2008; Loo et al., 2008; Iwasaki, 2012). RIG-I recognizes short blunt ends of dsRNA with 5′-triphosphate caps (Hornung et al., 2006; Schlee et al., 2009), as well as long dsRNAs (Kohlway et al., 2013; Patel et al., 2013; Peisley et al., 2013). Ligand binding to the helicase domain and CTD induces a conformational change that liberates RIG-I from an autoinhibited state and exposes its N-terminal tandem CARDs (Hou et al., 2011; Kowalinski et al., 2011; Luo et al., 2011). In contrast, MDA5 detects long dsRNAs made of hundreds to thousands of base pairs (Kato et al., 2008). The helicase domain and CTD of MDA5 cooperatively assemble into helical filaments along the dsRNA, leaving the tandem CARDs of MDA5 flexibly exposed on the periphery of the filament (Peisley et al., 2011; Berke and Modis, 2012; Wu et al., 2013). The exposed CARDs of RIG-I and MDA5 subsequently bind to unanchored lysine-63 (K63) polyubiquitin chains and form oligomers. The latter gain a high capacity of activating MAVS on mitochondria, presumably through CARD–CARD interactions (Zeng et al., 2010; Jiang et al., 2012). The exact mechanism for the polyubiquitin-dependent interaction between active RIG-I and inactive MAVS is not well defined.
 
-MAVS is ubiquitously expressed on the outer membrane of mitochondria. It consists of an N-terminal CARD domain, a proline-rich region (PRR) preceding a poorly structured middle segment, and a monotopic transmembrane (TM) domain at the very C-terminus (
+MAVS is ubiquitously expressed on the outer membrane of mitochondria. It consists of an N-terminal CARD domain, a proline-rich region (PRR) preceding a poorly structured middle segment, and a monotopic transmembrane (TM) domain at the very C-terminus (Figure 1A). Recent studies have shown that upon activation, MAVS molecules polymerize themselves into functional aggregates (Hou et al., 2011). These high molecular weight aggregates behave like prion fibers, because they are detergent-resistant, protease-resistant and self-perpetuating by inducing inactive MAVS to form functional aggregates. The N-terminal CARD domain of MAVS is necessary and sufficient for forming active MAVS aggregates. It shares some homology with the first CARD domains in both MDA5 and RIG-I (25% and 20% sequence identity respectively). A crystal structure of the MAVS CARD, fused to a maltose-binding protein (MBP), exhibits a typical helical bundle of six antiparallel α-helices (Potter et al., 2008). However, the isolated MAVS CARD without the MBP self-assembles into filamentous structures, which can promote endogenous, inactive MAVS to form highly active aggregates (Hou et al., 2011). How the CARD domain triggers MAVS aggregation remains poorly understood.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig1-v1.jpg)
 
-**Figure 1.:** (A) Diagrams of the domain organization in MAVS and deletion mutants used in this study. (B) Flag-MAVS CARD purified from HEK293T cells analyzed by silver stained SDS-PAGE and cryoEM imaging. The cryoEM image is displayed in reversed contrast (protein in black) for better visualization. (C) Left: a side view of the final 3D reconstruction of MAVS CARD filament. The X-ray crystal structure model of the human MAVS CARD (PDB: 2VGQ) was docked into the cryoEM map. Three strands are colored differently. Right: the rod-like densities at the periphery of the cryoEM density map allowed positioning of H1, H4, H3 and H6 without modification (top; see Video 2). When a front part of the density map was sectioned off with a clipping plane (red mesh), the H1 helix (blue) fitted into a rod-like density very well (bottom). (D) Pseudoatomic model of MAVS CARD filament. Dashed lines indicate the inter- (red) and intra-strand (yellow) interaction interfaces.DOI: http://dx.doi.org/10.7554/eLife.01489.003
+**Figure 1.:** (A) Diagrams of the domain organization in MAVS and deletion mutants used in this study. (B) Flag-MAVS CARD purified from HEK293T cells analyzed by silver stained SDS-PAGE and cryoEM imaging. The cryoEM image is displayed in reversed contrast (protein in black) for better visualization. (C) Left: a side view of the final 3D reconstruction of MAVS CARD filament. The X-ray crystal structure model of the human MAVS CARD (PDB: 2VGQ) was docked into the cryoEM map. Three strands are colored differently. Right: the rod-like densities at the periphery of the cryoEM density map allowed positioning of H1, H4, H3 and H6 without modification (top; see Video 2). When a front part of the density map was sectioned off with a clipping plane (red mesh), the H1 helix (blue) fitted into a rod-like density very well (bottom). (D) Pseudoatomic model of MAVS CARD filament. Dashed lines indicate the inter- (red) and intra-strand (yellow) interaction interfaces.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Left, summed power spectrum from a set of horizontally centered particles; right, summed power spectrum from 360 projections of the final cryoEM map of MAVS CARD filament. To better exhibit the weak signal within the resolution range of 16.8 to 8.2 Å (red circle), the power spectrum from the cryoEM map (right side) was presented after the application of a square root function. The red arrows point to the four characteristic layer lines that were seen in the raw data (left panel). (B) The first 12 Eigen images after the multivariate statistical analysis of the boxed segments from individual MAVS CARD filaments. (C and D) Convergence of the two helical symmetry parameters: the azimuthal rotation (ΔΦ in C) and the axial rise (Δz in D). In the middle of the refinement, changes in axial rise were manually imposed twice to check the robustness of the convergence. (E) The Fourier shell correlation (FSC) between two 3D reconstructions that were calculated independently from the top and bottom halves of the dataset (‘Materials and methods’). The estimated resolution at FSC = 0.5 is 9.6 Å. (F) Representative class averages of MAVS CARD filaments after multivariate statistical analysis and hierarchical classification. (G) When the four-start helical symmetry (n=4; −4 was the mirrored symmetry) was used in the IHRSR, the refinement did not converge to the correct axial rise (17.1 instead of 16.7 Å as in 1A). Full refinements with n=−4 led to maps with densities averaged out, and no features corresponding to the secondary structures showed up either.DOI: http://dx.doi.org/10.7554/eLife.01489.004
+**Figure 1—figure supplement 1.:** (A) Left, summed power spectrum from a set of horizontally centered particles; right, summed power spectrum from 360 projections of the final cryoEM map of MAVS CARD filament. To better exhibit the weak signal within the resolution range of 16.8 to 8.2 Å (red circle), the power spectrum from the cryoEM map (right side) was presented after the application of a square root function. The red arrows point to the four characteristic layer lines that were seen in the raw data (left panel). (B) The first 12 Eigen images after the multivariate statistical analysis of the boxed segments from individual MAVS CARD filaments. (C and D) Convergence of the two helical symmetry parameters: the azimuthal rotation (ΔΦ in C) and the axial rise (Δz in D). In the middle of the refinement, changes in axial rise were manually imposed twice to check the robustness of the convergence. (E) The Fourier shell correlation (FSC) between two 3D reconstructions that were calculated independently from the top and bottom halves of the dataset (‘Materials and methods’). The estimated resolution at FSC = 0.5 is 9.6 Å. (F) Representative class averages of MAVS CARD filaments after multivariate statistical analysis and hierarchical classification. (G) When the four-start helical symmetry (n=4; −4 was the mirrored symmetry) was used in the IHRSR, the refinement did not converge to the correct axial rise (17.1 instead of 16.7 Å as in 1A). Full refinements with n=−4 led to maps with densities averaged out, and no features corresponding to the secondary structures showed up either.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** (A) A cross-eye stereo view of the cryoEM map of the MAVS CARD filament with multiple copies of the MAVS CARD X-ray models (PDB: 2VGQ) docked in position, showing the left-handed three-stranded helix. Colored arrows mark the three strands. (B) The projection image calculated from a 2.7 nm slice out of the cryo-ET reconstruction as viewed from the outer surface of the filaments. Yellow arrows point to portions of multiple filaments where apparent helical stripes were resolved. Three zoomed views from filaments of different orientations display a well-matched left-handedness and groove dimension with the cryo-EM map. The measured distance spanning four stripes (∼7 layers) is ∼118 angstroms and the measured angle between the helical strips and the helical axis is ∼50°, both consistent with the cryoEM map.DOI: http://dx.doi.org/10.7554/eLife.01489.005
+**Figure 1—figure supplement 2.:** (A) A cross-eye stereo view of the cryoEM map of the MAVS CARD filament with multiple copies of the MAVS CARD X-ray models (PDB: 2VGQ) docked in position, showing the left-handed three-stranded helix. Colored arrows mark the three strands. (B) The projection image calculated from a 2.7 nm slice out of the cryo-ET reconstruction as viewed from the outer surface of the filaments. Yellow arrows point to portions of multiple filaments where apparent helical stripes were resolved. Three zoomed views from filaments of different orientations display a well-matched left-handedness and groove dimension with the cryo-EM map. The measured distance spanning four stripes (∼7 layers) is ∼118 angstroms and the measured angle between the helical strips and the helical axis is ∼50°, both consistent with the cryoEM map.
 
 The unique filamentous structure of MAVS CARD probably results from its distinct chemical properties not shared by other CARDs. To understand the structural basis underlying the filament formation, we solved the 3D structure of MAVS CARD filaments at 9.6 Å resolution by cryo-electron microscopy (cryoEM) and iterative helical real space refinement (IHRSR) (Frank, 2006; Egelman, 2007). Based on the cryoEM map and the crystal structure of the individual MAVS CARD, we built a pseudoatomic model of the filament and identified two new CARD–CARD interfaces that are important for filament formation. Mutations of residues found at the two interfaces disrupted MAVS self-association and abrogated the activation of the signaling pathway in cells. In order to understand the domain arrangement of the native MAVS aggregates, we obtained a 16.4 Å cryoEM map of a nearly full-length MAVS protein without part of the proline-rich region (PRR) and the C-terminal transmembrane domain (MAVSΔProTM). The cryoEM map of the MAVSΔProTM filament has the same CARD filament in the center, which is surrounded by extra fragmented densities in the periphery. This arrangement makes the CARD filament the organization center of the MAVS aggregates, and suggests a novel mechanism to expose the central segments of MAVS for downstream signaling effector recognition and signal amplification. To visualize the full-length MAVS filaments in virus-infected cells, we obtained three-dimensional Structured Illumination Microscopic (3D-SIM) images that achieved a sufficiently high resolution for us to discern the rod-shaped ultrathin MAVS filaments. These native thin filaments are on average ∼400 nm long and usually seen among mitochondrial membranes. In accordance with the cryoEM studies, point mutations that disrupted MAVS filament formation abrogated the redistribution and aggregation of MAVS on mitochondrial membrane and blocked the induction of interferon-β (IFNβ) in response to RNA virus infection. These results elucidate the structural mechanism for the formation of functional MAVS filaments.
 
 ## Results
 
-## MAVS CARD forms three-stranded helical filaments
+### MAVS CARD forms three-stranded helical filaments
 
 Our previous electron microscopic (EM) images of negatively stained specimens suggested that the MAVS CARD assembles into a filament-like structure in vitro (Hou et al., 2011). To further uncover the molecular mechanism governing the MAVS CARD self-association, we utilized cryoEM to determine the molecular structure of the CARD filament. Flag-tagged MAVS CARD (residues 1–100) was expressed in HEK293T cells and purified to apparent homogeneity (Figure 1B). The purified protein formed filaments that eluted from gel filtration column in the void volume. CryoEM images of the purified filaments showed helical diffraction (Figure 1—figure supplement 1A, left). We selected good EM micrographs and high-quality Falcon Direct Detector images, and built a large dataset for IHRSR analysis. IHRSR describes the helical symmetry with a general definition of azimuthal rotation (ΔΦ) and axial displacement (Δz) per subunit relative to the helical axis.
 
-Individual datasets from different sessions of data collection were first analyzed separately to confirm that the total power of centered particles in each dataset showed the typical layer lines (Figure 1—figure supplement 1A, left). Good datasets showed a clear meridional line at ∼16.7 Å (layer line #9), which is a good estimate of Δz. Different datasets were scaled and merged into a large set by their symmetry parameters (Δz; details in the ‘Materials and methods’). The final dataset contained 48,884 particles. Multivariate statistical analysis of the images revealed obvious helical properties and imperfection in some of the Eigen images (Figure 1—figure supplement 1B). The IHRSR analysis of the dataset started with a featureless cylinder as the initial reference and converged to a stable solution (Figure 1—figure supplement 1C,D). After sorting the filaments to consider variations in helical symmetry and accounting for the filaments that may be tilted out of the horizontal plane by up to 15°, we calculated a final map from 15,366 boxed segments of filaments. The resolution of the map was estimated to be 9.6 Å from Fourier Shell Correlation (FSC) between two independently calculated 3D reconstructions (FSC = 0.5; Figure 1C, Figure 1—figure supplement 1E,F; and Video 1). The cryoEM map shows a three-stranded helical assembly with a central pore that is about 18 Å in diameter. Neighboring subunits in each strand are related by an azimuthal rotation angle (ΔΦ) of 53.6° and an axial rise (Δz) of 16.8 Å along the helical axis (Figure 1C).10.7554/eLife.01489.006Video 1.3D reconstruction of the MAVS CARD filament.DOI: http://dx.doi.org/10.7554/eLife.01489.006
+Individual datasets from different sessions of data collection were first analyzed separately to confirm that the total power of centered particles in each dataset showed the typical layer lines (Figure 1—figure supplement 1A, left). Good datasets showed a clear meridional line at ∼16.7 Å (layer line #9), which is a good estimate of Δz. Different datasets were scaled and merged into a large set by their symmetry parameters (Δz; details in the ‘Materials and methods’). The final dataset contained 48,884 particles. Multivariate statistical analysis of the images revealed obvious helical properties and imperfection in some of the Eigen images (Figure 1—figure supplement 1B). The IHRSR analysis of the dataset started with a featureless cylinder as the initial reference and converged to a stable solution (Figure 1—figure supplement 1C,D). After sorting the filaments to consider variations in helical symmetry and accounting for the filaments that may be tilted out of the horizontal plane by up to 15°, we calculated a final map from 15,366 boxed segments of filaments. The resolution of the map was estimated to be 9.6 Å from Fourier Shell Correlation (FSC) between two independently calculated 3D reconstructions (FSC = 0.5; Figure 1C, Figure 1—figure supplement 1E,F; and Video 1). The cryoEM map shows a three-stranded helical assembly with a central pore that is about 18 Å in diameter. Neighboring subunits in each strand are related by an azimuthal rotation angle (ΔΦ) of 53.6° and an axial rise (Δz) of 16.8 Å along the helical axis (Figure 1C).
+
+![Video 1.](https://cdn.elifesciences.org/articles/01489/elife-01489-media1.mp4.jpg)
 
 In order to determine the handedness of the helical assembly of MAVS CARD, we obtained cryo-electron tomograms (cryo-ET) of the CARD filaments (‘Materials and methods’). Figure1—figure supplement 2B shows a 2.7 nm-thick slice of the tomogram as viewed from the outer surface of the filaments. Apparent helical stripes observed in multiple filaments of different orientations suggest that the actual helical structure is left-handed. The measured distance between the helical strands from the cryo-ET reconstruction matches well with the cryo-EM reconstruction of MAVS CARD filament (Figure 1—figure supplement 2A).
 
-## Pseudo-atomic model of MAVS CARD filament
+### Pseudo-atomic model of MAVS CARD filament
 
-Although the MAVS filaments share some features with prion fibers, such as self-perpetuation, they could not be stained with Congo red, a dye commonly used to label β sheet-rich insoluble amyloid aggregates formed by most prions (Hou et al., 2011). MAVS CARD lacks the glutamine/asparagine-rich regions that are responsible for forming the parallel β-sheet structures of most amyloid fibers (Michelitsch and Weissman, 2000; Nelson et al., 2005). There is no evidence that during filament formation MAVS CARD undergoes a helix-to-beta-sheet transition in its secondary structure. We therefore built a model of MAVS oligomer by directly fitting the crystal structure of individual MAVS CARD into the cryoEM density map (Video 2; Potter et al., 2008).10.7554/eLife.01489.007Video 2.Building a pseudoatomic model from the cryoEM map.The cryoEM map of the MAVS CARD filament is shown at two different density levels together with the pseudoatomic model, and individual units are assembled into a long filament.DOI: http://dx.doi.org/10.7554/eLife.01489.007
+Although the MAVS filaments share some features with prion fibers, such as self-perpetuation, they could not be stained with Congo red, a dye commonly used to label β sheet-rich insoluble amyloid aggregates formed by most prions (Hou et al., 2011). MAVS CARD lacks the glutamine/asparagine-rich regions that are responsible for forming the parallel β-sheet structures of most amyloid fibers (Michelitsch and Weissman, 2000; Nelson et al., 2005). There is no evidence that during filament formation MAVS CARD undergoes a helix-to-beta-sheet transition in its secondary structure. We therefore built a model of MAVS oligomer by directly fitting the crystal structure of individual MAVS CARD into the cryoEM density map (Video 2; Potter et al., 2008).
+
+![Video 2.](https://cdn.elifesciences.org/articles/01489/elife-01489-media2.mp4.jpg)
+
+**Video 2.:** The cryoEM map of the MAVS CARD filament is shown at two different density levels together with the pseudoatomic model, and individual units are assembled into a long filament.
 
 At the peripheral surface of the cryoEM map, three rod-shaped EM densities are clearly discernable (Figure 1C; Video 2), which are likely contributed by three of the six α-helixes of each CARD molecule. These features enabled us to determine a unique orientation of the crystal structure of the MAVS CARD (residues 1–93) in the cryoEM map. Recognition of these structural features also allowed for independent confirmation of the chirality to the cryoEM map because only the left-handed map allowed the three helices (H1, H4 and H3) to be positioned well into the density map without modification (Video 2). After the docking of these three helices, the 6th helix (H6) was naturally fit into a rod-shaped feature next to the H1. Rigid body refinement using SITUS (Wriggers, 2010) then locally optimized the agreement between the X-ray model and the cryoEM map (insets in Figure 1C; Video 2). Even though both H2 and H5 are contained in the density map, there is a small discrepancy between their orientations and the density features lining the inner pore of the filament (Video 2), suggesting a possible local rearrangement of the CARD domain upon filament formation (Figure 1C). Because the rearrangement of H2 and H5 is not well defined by the density features and there was a small density next to H5 that is not fully accounted for due to probably inexact segmentation of the helical density map into individual units, we did not use flexible fitting to optimize the local positions of these two helices. Helical symmetry operations and threefold symmetry were subsequently applied to generate a pseudo-atomic model for the CARD filament (Figure 1C; Video 2).
 
 Overall the MAVS CARD filament adopts a densely packed structure containing three intertwined helical strands. Each turn of one helical strand contains 6.7 (360/53.6) CARD monomers. The first (H1) and last (H6) helices of the CARD are positioned at the outer surface of the filament (Figure 1C; Video 2). This arrangement provides the structural basis for other domains to be connected to the filaments in the center, in keeping with previous observations that a N-terminal small ubiquitin-like modifier (SUMO) tag and other domains added to the C-terminus of CARD did not prevent filament formation (Hou et al., 2011). There is some unoccupied density at the surface of the EM map next to the N- and C-termini of the docked CARD model. This may be attributed to the residual density from the N-terminal Flag tag and the additional seven residues at the C-terminus in the protein used for preparing the cryoEM specimens, but not in the crystal structure (Figure 1C).
 
-## Chemical basis for the assembly of MAVS CARD filaments
+### Chemical basis for the assembly of MAVS CARD filaments
 
 In the structural model of the filament, each MAVS CARD monomer directly interacts with four nearby monomers: two from the same strand and the other two respectively from two adjacent strands (Figure 1D). Within one layer perpendicular to the helical axis, the three subunits do not make direct contact with each other. Two types of interfaces are involved in the packing interactions. The intra-strand interface makes contacts between adjacent CARDs within the same strand (Figure 1D, Figure 1—figure supplement 2A) while the inter-strand interface holds the three strands together.
 
-## The inter-strand interaction interface
+### The inter-strand interaction interface
 
-At the inter-strand interface, the positive and negative charges are alternately distributed at two opposite ends of each CARD subunit, indicating that the inter-strand interaction is mainly electrostatic (
+At the inter-strand interface, the positive and negative charges are alternately distributed at two opposite ends of each CARD subunit, indicating that the inter-strand interaction is mainly electrostatic (Figure 2A,B). The positively charged residues R37 in the 3rd helix (H3), R64 and R65 in the loop between the 4th and 5th helices (H4 and H5) from the CARD in a lower layer (purple in Figure 2B) are in close proximity to the negatively charged residues D23 in the loop between the 1st and 2nd helices (H1b and H2) and E26 in the 2nd helix (H2) of another CARD molecule (cyan in Figure 2B) in the upper layer. E26, R64 and R65 are highly conserved among MAVS molecules from different species, but D23 and R37 are less so (Figure 2A). Replacement of D23 with a histidine residue and R37 with either an asparagine or a serine residue in the MAVS orthologs introduces good H-bonders to these less conserved positions, and may compensate for the lost electrostatic pairs.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig2-v1.jpg)
 
-**Figure 2.:** (A) Sequence alignment of the MAVS CARD from 10 different species with the secondary structures based on the X-ray model of human MAVS CARD. The alignment was generated with ClustalW (http://www.ebi.ac.uk/clustalw/) and formatted using ESPript (http://espript.ibcp.fr/ESPript/ESPript/). The colored arrowheads mark the residues mutated in this study: pink, key negatively charged residues at the inter-strand interface; blue, key positively charged residues at the inter-strand interface; cyan, key residues at the intra-strand interface; black, residues showing normal activity when substituted with alanine. (B) MAVS CARD hexamer model with key residues at the inter-strand interface between two subunits (purple and cyan) shown as yellow sticks. The inset on the right side is an expanded view of these residues. The side chains of these residues (D23, E26, R37, R64 and R65) in the model were optimized by testing different rotamers in Coot. (C) Effects of mutating the residues at the inter-strand interface and other conserved charged residues on MAVS activity. Wild-type MAVS and CARD mutants at different positions were transiently expressed in HEK293T-IFNβ-luciferase reporter cells. Cells were lysed 24 hr later, and the MAVS signaling was tested by luciferase reporter assay in a dose-dependent manner. Western blot was done to monitor the expression level of the transfected MAVS proteins with α-tubulin as loading controls. (D) A stereo view of MAVS CARD model with the surface-exposed, conserved charged residues shown as sticks (blue, positively charged residues; red, negatively charged residues). Mutations of these surface residues, which are not involved in the inter-strand interactions, do not impair MAVS signaling.DOI: http://dx.doi.org/10.7554/eLife.01489.008
+**Figure 2.:** (A) Sequence alignment of the MAVS CARD from 10 different species with the secondary structures based on the X-ray model of human MAVS CARD. The alignment was generated with ClustalW (http://www.ebi.ac.uk/clustalw/) and formatted using ESPript (http://espript.ibcp.fr/ESPript/ESPript/). The colored arrowheads mark the residues mutated in this study: pink, key negatively charged residues at the inter-strand interface; blue, key positively charged residues at the inter-strand interface; cyan, key residues at the intra-strand interface; black, residues showing normal activity when substituted with alanine. (B) MAVS CARD hexamer model with key residues at the inter-strand interface between two subunits (purple and cyan) shown as yellow sticks. The inset on the right side is an expanded view of these residues. The side chains of these residues (D23, E26, R37, R64 and R65) in the model were optimized by testing different rotamers in Coot. (C) Effects of mutating the residues at the inter-strand interface and other conserved charged residues on MAVS activity. Wild-type MAVS and CARD mutants at different positions were transiently expressed in HEK293T-IFNβ-luciferase reporter cells. Cells were lysed 24 hr later, and the MAVS signaling was tested by luciferase reporter assay in a dose-dependent manner. Western blot was done to monitor the expression level of the transfected MAVS proteins with α-tubulin as loading controls. (D) A stereo view of MAVS CARD model with the surface-exposed, conserved charged residues shown as sticks (blue, positively charged residues; red, negatively charged residues). Mutations of these surface residues, which are not involved in the inter-strand interactions, do not impair MAVS signaling.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Size-exclusion chromatography of recombinant wild-type human MAVS CARD and the E26R mutant. Aliquots of the fractions were analyzed by silver staining (left) or Coomassie blue staining (right). Wild-type MAVS CARD eluted at the void volume (∼0.8 ml), while the soluble mutant E26R eluted at ∼1.9 ml. (B) Negative-stained EM images of human MAVS CARD E26R. No filaments were observed. Scale bar, 100 nm. (C) Superimposition of the crystal structure of wild-type human MAVS CARD (PDB: 2VGQ, yellow) with those of the horse MAVS CARD E26R (PDB: 4O9L, magenta) and R64C mutants (PDB: 4O9F, blue). The Cα atoms of E26R and R64C in the crystal structures are shown in sphere representations (red and blue, respectively). (D) Mapping of the important residues for MAVS polymerization obtained from solubility screen to the crystal structure. Most of them are located at the two interfaces of the MAVS CARD filament.DOI: http://dx.doi.org/10.7554/eLife.01489.009
+**Figure 2—figure supplement 1.:** (A) Size-exclusion chromatography of recombinant wild-type human MAVS CARD and the E26R mutant. Aliquots of the fractions were analyzed by silver staining (left) or Coomassie blue staining (right). Wild-type MAVS CARD eluted at the void volume (∼0.8 ml), while the soluble mutant E26R eluted at ∼1.9 ml. (B) Negative-stained EM images of human MAVS CARD E26R. No filaments were observed. Scale bar, 100 nm. (C) Superimposition of the crystal structure of wild-type human MAVS CARD (PDB: 2VGQ, yellow) with those of the horse MAVS CARD E26R (PDB: 4O9L, magenta) and R64C mutants (PDB: 4O9F, blue). The Cα atoms of E26R and R64C in the crystal structures are shown in sphere representations (red and blue, respectively). (D) Mapping of the important residues for MAVS polymerization obtained from solubility screen to the crystal structure. Most of them are located at the two interfaces of the MAVS CARD filament.
 
-To test the energetic contributions of these charged residues to the stability of the filament and the in vivo MAVS signaling activity, we mutated them individually to an alanine residue or residues with reversed charges. The cDNAs encoding these MAVS mutants were transiently expressed in HEK293T cells together with an IFNβ luciferase reporter plasmid. IFNβ induction was measured by a luciferase assay. Compared with the wild-type MAVS, which potently induced IFNβ in a dose-dependent manner, point mutations at multiple locations of the inter-strand interface abolished MAVS activity (Figure 2C). The gel-filtration profiles (E26R as an example in Figure 2—figure supplement 1A) and the EM images of the negatively stained proteins (Figure 2—figure supplement 1B) verified that these mutations impaired the filament formation of the MAVS CARD. X-ray crystallographic studies of several horse MAVS CARD mutants, which were monomeric in solution and yielded well diffracting crystals, showed that they adopt almost exactly the same structure as the wild-type protein (e.g., Figure 2—figure supplement 1C for the horse E26R and R64C structures; Table 1), suggesting that these mutations did not disrupt the filament by changing the structural fold of each subunit, but instead by altering the interface chemistry.10.7554/eLife.01489.010Table 1.Summary of MAVS CARD mutantsDOI: http://dx.doi.org/10.7554/eLife.01489.010HumanHorseResiduesMutantsScreenSolubilityActivityMutantsScreenSolubilityCrystalF16F16ANF16HYF16I✓++D23D23APD23N✓E26E26A++NE26R+++NE26R++✓E26R/R64ENY30Y30ANY30FYY30HYY30C✓+R37R37ANR37K✓A44A44D✓A44T++A44T✓++✓L48L48AYL48DNL48KNR52R52APD53D53ANW56W56A++NW56FYW56YYW56DNW56E+++W56R✓++R64R64ANR64E+++NR64Q✓++R64C++R64C✓+++✓R64S✓+++✓R65R65ANR65ENR65Q✓R65S✓++R65H✓*Solubility is based on the estimated final yield of the purified protein per liter of bacterial culture. +++: >5 mg/L; ++: 1–5mg/L; +: <1 mg/L.†Activity: N, no activity; P, partial activity; Y, activity close to wild-type.
+To test the energetic contributions of these charged residues to the stability of the filament and the in vivo MAVS signaling activity, we mutated them individually to an alanine residue or residues with reversed charges. The cDNAs encoding these MAVS mutants were transiently expressed in HEK293T cells together with an IFNβ luciferase reporter plasmid. IFNβ induction was measured by a luciferase assay. Compared with the wild-type MAVS, which potently induced IFNβ in a dose-dependent manner, point mutations at multiple locations of the inter-strand interface abolished MAVS activity (Figure 2C). The gel-filtration profiles (E26R as an example in Figure 2—figure supplement 1A) and the EM images of the negatively stained proteins (Figure 2—figure supplement 1B) verified that these mutations impaired the filament formation of the MAVS CARD. X-ray crystallographic studies of several horse MAVS CARD mutants, which were monomeric in solution and yielded well diffracting crystals, showed that they adopt almost exactly the same structure as the wild-type protein (e.g., Figure 2—figure supplement 1C for the horse E26R and R64C structures; Table 1), suggesting that these mutations did not disrupt the filament by changing the structural fold of each subunit, but instead by altering the interface chemistry.
+
+**Table 1.**
+ Summary of MAVS CARD mutants
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Human</th>
+      <th colspan="4">Horse</th>
+    </tr>
+    <tr>
+      <th>Residues</th>
+      <th>Mutants</th>
+      <th>Screen</th>
+      <th>Solubility</th>
+      <th>Activity</th>
+      <th>Mutants</th>
+      <th>Screen</th>
+      <th>Solubility</th>
+      <th>Crystal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">F16</td>
+      <td>F16A</td>
+      <td></td>
+      <td></td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F16H</td>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F16I</td>
+      <td>✓</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">D23</td>
+      <td>D23A</td>
+      <td></td>
+      <td></td>
+      <td>P</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D23N</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">E26</td>
+      <td>E26A</td>
+      <td></td>
+      <td>++</td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E26R</td>
+      <td></td>
+      <td>+++</td>
+      <td>N</td>
+      <td>E26R</td>
+      <td></td>
+      <td>++</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>E26R/R64E</td>
+      <td></td>
+      <td></td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Y30</td>
+      <td>Y30A</td>
+      <td></td>
+      <td></td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Y30F</td>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Y30H</td>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Y30C</td>
+      <td>✓</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">R37</td>
+      <td>R37A</td>
+      <td></td>
+      <td></td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R37K</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">A44</td>
+      <td>A44D</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A44T</td>
+      <td></td>
+      <td>++</td>
+      <td></td>
+      <td>A44T</td>
+      <td>✓</td>
+      <td>++</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td rowspan="3">L48</td>
+      <td>L48A</td>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L48D</td>
+      <td></td>
+      <td></td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L48K</td>
+      <td></td>
+      <td></td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R52</td>
+      <td>R52A</td>
+      <td></td>
+      <td></td>
+      <td>P</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D53</td>
+      <td>D53A</td>
+      <td></td>
+      <td></td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="6">W56</td>
+      <td>W56A</td>
+      <td></td>
+      <td>++</td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>W56F</td>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>W56Y</td>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>W56D</td>
+      <td></td>
+      <td></td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>W56E</td>
+      <td></td>
+      <td>+++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>W56R</td>
+      <td>✓</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="5">R64</td>
+      <td>R64A</td>
+      <td></td>
+      <td></td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R64E</td>
+      <td></td>
+      <td>+++</td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R64Q</td>
+      <td>✓</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R64C</td>
+      <td></td>
+      <td>++</td>
+      <td></td>
+      <td>R64C</td>
+      <td>✓</td>
+      <td>+++</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>R64S</td>
+      <td>✓</td>
+      <td>+++</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td rowspan="5">R65</td>
+      <td>R65A</td>
+      <td></td>
+      <td></td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R65E</td>
+      <td></td>
+      <td></td>
+      <td>N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R65Q</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>R65S</td>
+      <td>✓</td>
+      <td>++</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>R65H</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Solubility is based on the estimated final yield of the purified protein per liter of bacterial culture. +++: >5 mg/L; ++: 1–5mg/L; +: <1 mg/L.†Activity: N, no activity; P, partial activity; Y, activity close to wild-type._
 
 To test the specificity of the electrostatic interactions at the MAVS CARD assembly interface, we mutated several charged residues outside the interface and assessed their effects on MAVS activity. E70 and R77 in the H5, E80 in the H5-H6 loop, as well as D86 and E87 in the H6 are outside the interfaces (Figure 2D). Their replacement with alanine or reversely charged residues still allowed potent induction of IFNβ production in HEK293T cells (Figure 2C). In contrast, D40, R41 and R43 are located in the H3 and very close to the inter-strand interface. Their mutations did exert strong negative effects on MAVS signaling (Figure 2C). The exact packing of these three residues and their contribution to the inter-strand interface require better resolution of the cryoEM map.
 
-## The intra-strand interaction interface
+### The intra-strand interaction interface
 
-The cryoEM model predicts that the intra-strand interface is stabilized mainly by hydrophobic interaction or hydrogen bonds among residues F16, W56, Y30, D53 and L48 (
+The cryoEM model predicts that the intra-strand interface is stabilized mainly by hydrophobic interaction or hydrogen bonds among residues F16, W56, Y30, D53 and L48 (Figure 3A). W56 is well conserved (leucine residue in horse). In the crystal structure of MAVS CARD, the side chain of W56 adopts different conformations, with a major conformer (60% occupancy) exposed to solvent and stacked against the ring structure of residue F16 in immediate vicinity (magnified view on the right side of Figure 3A) (Potter et al., 2008). Y30 is a fairly conserved residue (histidine in cattle) that protrudes to the close proximity of W56 in the other CARD molecule at the interface. Even though the atomic details of the side chain packing are not fully resolved, the three ring structures from these three residues appear to be important for the intra-strand stability. Single alanine substitution of F16, W56 or Y30 almost completely abolished MAVS activity (Figure 3B), but mutations of some of the residues next to them (R52 and S49 as examples) had little effect (Figure 2C, Figure 3B). Interestingly, when we introduced different ring-containing residues to these positions, such as F16H, W56F, W56Y, Y30F and Y30H, we were able to largely rescue MAVS activity (Figure 3B). These results support that the hydrophobic packing among the three ring-containing residues is important for the intra-strand interface. D53 is one helical turn below W56, and its side chain sits at the boundary between the aqueous phase and the hydrophobic core packing of F16, W56 and Y30. When we introduced an alanine to this position, it completely abolished the MAVS activity (Figure 3B), suggesting that the charged D53 may enforce the hydrophobic interaction above the aqueous surface. Close to the central pore of the helical filament, residue L48 appears in close contact with a group of short chain residues and contributes to a separate hydrophobic patch. Even though atomic details in side chain packing are unclear, substitution of L48 with charged residues (D or K), but not alanine, completely abolished MAVS activity (Figure 3B), suggesting that this second hydrophobic patch is also important for intra-strand interaction.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig3-v1.jpg)
 
-**Figure 3.:** (A) MAVS CARD hexamer model with interacting residues at the intra-strand interface shown as yellow sticks. Residues that showed normal activity when substituted with alanine are displayed in brown. (B) MAVS proteins with point mutations at the intra-strand interface were tested for IFNβ induction and protein expression as in Figure 2C.DOI: http://dx.doi.org/10.7554/eLife.01489.011
+**Figure 3.:** (A) MAVS CARD hexamer model with interacting residues at the intra-strand interface shown as yellow sticks. Residues that showed normal activity when substituted with alanine are displayed in brown. (B) MAVS proteins with point mutations at the intra-strand interface were tested for IFNβ induction and protein expression as in Figure 2C.
 
 To further test whether these mutations impaired the MAVS signaling activity because they interfered with CARD polymerization, CARD mutants were purified from Escherichia coli and their oligomerization states were examined. Unlike the wild-type MAVS CARD, which eluted at the void volume in gel filtration chromatography, W56A, W56E and W56R mutants eluted as monomers (Table 1; Figure 3A). These results indicate that mutations that abrogate hydrophobic interactions at the intra-strand interface prevent MAVS CARD oligomerization and abolish MAVS activity.
 
 According to our pseudoatomic model, residues in the first helix (H1) are not in direct contact with any adjacent molecule (Figure 1C; Video 2). This agrees with our previous finding that deletion of the first ten residues in MAVS CARD did not impair its filament formation (Hou et al., 2011). In addition, no cysteine pairs are at the interface, which explains the prior observation that MAVS filaments were not disrupted by a high concentration of reducing agent DTT (Hou et al., 2011).
 
-## Probing the oligomerization interfaces of MAVS by a solubility screen
+### Probing the oligomerization interfaces of MAVS by a solubility screen
 
 As an alternative verification of the key residues for MAVS CARD self-association, we searched for mutants that disrupt the CARD polymerization in E. coli (Table 1). We performed random mutagenesis and screened for soluble CARD mutants by using a recently developed solubility screen (Harada et al., 2008). Mutated CARDs fused to murine dihydrofolate reductase (mDHFR) were expressed. While mDHFR fused to wild-type CARD appeared in inclusion bodies due to CARD oligomerization, it remained soluble when it was fused a CARD mutant that failed to oligomerize. Expression of soluble mDHFR-CARD was selected by trimethoprim, which specifically inhibits bacterial DHFR, but not mDHFR. Our screen recognized multiple sites that are important for CARD oligomerization (Table 1; Figure 2—figure supplement 1D). Biochemical analysis confirmed that most mutants from the screen were expressed as soluble proteins, and eluted as homogenous monomers in gel-filtration chromatography (e.g., Figure 2—figure supplement 1A). Almost all the mutations out of the solubility screen are conserved and at the protein surface. They can be mapped to the two interfaces identified in the cryoEM model (Figures 2 and 3).
 
-## CARD serves as the organization center for MAVS filaments
+### CARD serves as the organization center for MAVS filaments
 
 Previously we have shown that a deletion mutant of MAVS (MAVSΔProTM; Figure 1A) lacking part of the proline-rich region (PRR, residues 103–153) and the C-terminal transmembrane domain (TM; residues 461–540) allowed the production of a large amount of protein from E. coli, and remained capable of inducing wild-type MAVS to form fibers and potently activate IRF3 dimerization in cytosolic extracts (Hou et al., 2011). Compared to full-length MAVS, MAVSΔProTM is soluble when fused with SUMO, and can form functional polymers after removal of SUMO. Because MAVSΔProTM resembles the soluble part of the wild-type MAVS, its filament structure probably closely represents the polymerization of endogenous MAVS on mitochondria.
 
-When we compared the EM images of the MAVSΔProTM filaments with those of the CARD filaments, the former apparently had extra mass and were larger in diameter than the latter (
+When we compared the EM images of the MAVSΔProTM filaments with those of the CARD filaments, the former apparently had extra mass and were larger in diameter than the latter (Figure 4A, Figure 4—figure supplement 1). We built a cryo dataset of 8909 boxed segments (particles) out of individual MAVSΔProTM filaments. The summed power spectrum of the raw particles exhibited a similar pattern of layer lines as the CARD filaments (Figure 4—figure supplement 1B vs Figure 1—figure supplement 1A). We calculated a cryoEM map of MAVSΔProTM at a nominal 16.4 Å resolution (FSC0.5; Figure 4—figure supplement 1C). Despite the extra mass, the MAVSΔProTM map is surprisingly similar to that of the CARD filament (Figure 4B). When a 90 Å-thick portion in the middle of the MAVSΔProTM map was compared with the map of the CARD filament (gray surface vs purple mesh in Figure 4B), the two overlapped very well at various threshold levels, suggesting that the core of the MAVSΔProTM fiber takes the same left-handed three-stranded helical structure. The symmetry parameters, a rotational angle of 52.9° and an axial rise of 16.9 Å, are almost the same as those of the CARD filament (Figure 1C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig4-v1.jpg)
 
-**Figure 4.:** (A) Segments from negative-stain EM images of (1) Flag-MAVS CARD and (2) MAVSΔProTM and those from cryoEM images of (3) Flag-MAVS CARD and (4) MAVSΔProTM. For better visualization, protein is black in the cryoEM images. Yellow arrows point to the extra mass that made the MAVSΔProTM filaments larger in diameter. (B) Side and top views of the cryoEM reconstruction of MAVSΔProTM filament (gray, surface), which has the same helical symmetry as the MAVS CARD filament (purple, mesh). Only the middle 90 Å portion of the MAVSΔProTM map is shown. (C) Side and top views of the full MAVSΔProTM map (gray, surface) whose threshold was set at a proper level to overlap well with the CARD-only map (purple, mesh). A cylindrical sheet of extra density appeared at ∼15 Å away from the central CARD filament. (D) Schematic view of the helical packing of MAVSΔProTM with the sequences C-terminal to the CARD shown as dashed coils.DOI: http://dx.doi.org/10.7554/eLife.01489.012
+**Figure 4.:** (A) Segments from negative-stain EM images of (1) Flag-MAVS CARD and (2) MAVSΔProTM and those from cryoEM images of (3) Flag-MAVS CARD and (4) MAVSΔProTM. For better visualization, protein is black in the cryoEM images. Yellow arrows point to the extra mass that made the MAVSΔProTM filaments larger in diameter. (B) Side and top views of the cryoEM reconstruction of MAVSΔProTM filament (gray, surface), which has the same helical symmetry as the MAVS CARD filament (purple, mesh). Only the middle 90 Å portion of the MAVSΔProTM map is shown. (C) Side and top views of the full MAVSΔProTM map (gray, surface) whose threshold was set at a proper level to overlap well with the CARD-only map (purple, mesh). A cylindrical sheet of extra density appeared at ∼15 Å away from the central CARD filament. (D) Schematic view of the helical packing of MAVSΔProTM with the sequences C-terminal to the CARD shown as dashed coils.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** (A) A typical cryoEM image of MAVSΔProTM filaments (protein is black). Scale bar, 100 nm. (B) Summed power spectrum of boxed segments of MAVSΔProTM filaments after central alignment along X-axis (left) is compared with the modulus image (square root of power spectrum) of the averaged power spectrum calculated from 360 projections of the final 3D map (right). Similar to Figure 1–figure supplement 1A, the square root function enhanced the signal to noise ratio for the resolution range beyond 16.8 Å. The red arrows point to the characteristic layer lines seen in the power spectrum of the raw data. (C) Fourier Shell Correlation (FSC) between two independently calculated maps from two halves of the data. The estimated resolution is 16.4 Å at FSC = 0.5. (D) 10 class averages after 5-round hierarchical classification of the dataset. Outside the central CARD filament density, there were clear densities at the neighboring region (red arrow heads), which were probably contributed by the intervening segment between the CARD and the TM domain. (E) Two views of the 3D map of MAVSΔProTM before symmetry imposition. The helical symmetry is relatively robust, and the extra density surrounding the CARD filament is fairly strong (bottom panel). The scale bars in both panels = 12 nm.DOI: http://dx.doi.org/10.7554/eLife.01489.013
+**Figure 4—figure supplement 1.:** (A) A typical cryoEM image of MAVSΔProTM filaments (protein is black). Scale bar, 100 nm. (B) Summed power spectrum of boxed segments of MAVSΔProTM filaments after central alignment along X-axis (left) is compared with the modulus image (square root of power spectrum) of the averaged power spectrum calculated from 360 projections of the final 3D map (right). Similar to Figure 1–figure supplement 1A, the square root function enhanced the signal to noise ratio for the resolution range beyond 16.8 Å. The red arrows point to the characteristic layer lines seen in the power spectrum of the raw data. (C) Fourier Shell Correlation (FSC) between two independently calculated maps from two halves of the data. The estimated resolution is 16.4 Å at FSC = 0.5. (D) 10 class averages after 5-round hierarchical classification of the dataset. Outside the central CARD filament density, there were clear densities at the neighboring region (red arrow heads), which were probably contributed by the intervening segment between the CARD and the TM domain. (E) Two views of the 3D map of MAVSΔProTM before symmetry imposition. The helical symmetry is relatively robust, and the extra density surrounding the CARD filament is fairly strong (bottom panel). The scale bars in both panels = 12 nm.
 
 When the whole MAVSΔProTM reconstruction is presented at a proper contour level so that the middle CARD filament has the same volume as the CARD-only filament, a cylindrical sheet of periodic densities appears at a distance of ∼15 Å away from the perimeter of the central filament (Figure 4C, Figure 4—figure supplement 1D,E). MAVSΔProTM has ∼300 extra residues C-terminal to its CARD. Some of these extra residues most likely contribute to the peripheral densities in the cryoEM map. These extra densities were clearly visible in the class averages calculated from the aligned filament images (red arrowheads in Figure 4—figure supplement 1D). Because of the intrinsic disorder in the segment between the CARD and the TM domain of MAVS, the majority of the extra residues did not produce significant density in the cryoEM map. A key conclusion from this comparison is that the CARD filament is in the center of the MAVS aggregates and the rest of the molecule is connected to the peripheral surface of the filament. Because the C-terminal TM domain is integrated in the mitochondrial membrane, the CARD filament and the membrane anchor the two ends of each MAVS molecule so that the intervening region is exposed to recruit cytosolic signaling effector molecules such as the TRAF (tumor necrosis factor receptor-associated factor) proteins (Liu et al., 2013; Figure 4D).
 
-## CARD is crucial for the MAVS filament formation in cells
+### CARD is crucial for the MAVS filament formation in cells
 
 To visualize the filament formation of full-length MAVS, we stably reconstituted Mavs-null murine embryonic fibroblasts (MEFs) with Flag-tagged wild-type MAVS or its mutants. Although transient expression of wild-type MAVS resulted in constitutive signaling (Kawai et al., 2005; Meylan et al., 2005; Seth et al., 2005; Xu et al., 2005), the low expression level in the stable cell lines did not lead to constitutive activation of downstream target genes. Like endogenous protein, Flag-tagged MAVS was properly localized to the mitochondrial membranes, as demonstrated by its co-localization with either MitoTracker or TOM20, a 20 kDa subunit of the translocase in the outer mitochondrial membrane (Figure 5—figure supplement 1, 3A, Mock). Infection by Sendai virus induced the redistribution of MAVS protein and the formation of densely packed, speckled MAVS puncta on the surface of mitochondria, along with the nuclear translocation of NF-κB subunit p65 and induction of interferon-β (IFNβ; Figure 5—figure supplement 1, 3). In addition, Sendai virus also induced MAVS aggregation, which was detected by semi-denaturing detergent agarose electrophoresis (SDD-AGE; Figure 5—figure supplement 3D; Hou et al., 2011). Based on the nuclear translocation of p65 after viral infection, these bright MAVS puncta were observed in a majority of virus-infected cells (Figure 5—figure supplement 3B). In contrast, the bright puncta did not form in cells expressing MAVS mutants that failed to form filaments (Figure 5—figure supplement 1, 2 and 3A). As negative controls, mutants (E80A and F16H) that do not affect the MAVS filament formation were found to have normal puncta formation (Figure 5—figure supplement 1, 2 and 3C). Together these results support that the CARD-mediated aggregate formation is the key structural element for activating MAVS signaling in cells (Figure 5—figure supplement 3C,D).
 
-Because the confocal fluorescent images of the MAVS aggregates did not have enough resolution to reveal the shape of the puncta in virus-infected cells, we next performed the experiments by Super-Resolution Structured Illumination Microscopy (SR-SIM) (
+Because the confocal fluorescent images of the MAVS aggregates did not have enough resolution to reveal the shape of the puncta in virus-infected cells, we next performed the experiments by Super-Resolution Structured Illumination Microscopy (SR-SIM) (Gustafsson et al., 2008). The resolution of conventional fluorescence microscopy is limited to ∼200 nm in lateral (x, y) dimensions, and ∼500 nm along the optical axis. SR-SIM increases both the lateral and axial resolutions by a factor of two (Gustafsson et al., 2008). SR-SIM images of Flag-tagged wild-type MAVS showed a fairly uniform distribution on the surface of mitochondria as it appeared in concentric rings around almost every MitoTracker-stained mitochondrion (Figure 5A, the last image in the top row). In cells infected with Sendai virus, the SR-SIM images revealed a clear redistribution of MAVS into rod-shaped clusters that interfaced with only a small fraction of mitochondria (e.g., white arrowheads in the rightmost image of the bottom row in Figure 5A). Because the expression level of MAVS in cells remained the same before and after viral infection (Figure 5—figure supplement 3D and references) (Hou et al., 2011; Liu et al., 2013), the redistribution of MAVS from one mitochondrion to another during the puncta formation may result from mitochondrial fusion (Yasukawa et al., 2009; Castanier et al., 2010; Koshiba et al., 2011). Alternatively, MAVS aggregates on some mitochondria may be degraded through an unknown mechanism, which is less likely because of the unchanged level of MAVS protein. The diameter of the rod-shaped MAVS clusters is probably less than 100 nm, the lateral resolution limit of SR-SIM.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig5-v1.jpg)
 
-**Figure 5.:** (A) Mavs−/− MEF cells stably expressing Flag-tagged wild-type MAVS were mock-treated or infected with Sendai virus (SeV) for 12 hr and stained with MitoTracker (Mitochondria; red) and anti-Flag antibody (Flag-MAVS; green). Redistribution of MAVS among mitochondria was examined using SR-SIM. Expanded views of the areas within the yellow windows in the merged images were shown on the right. The SeV-infected cells contain bright foci of Flag-MAVS. The white arrowheads in the rightmost image of the bottom row highlight a few bright rod-shaped MAVS clusters. Scale bars, 5.0 μm. (B) 3D reconstruction of MAVS clusters (green) on the surface of mitochondria (red). Scale bar, 1.0 μm. The areas within the yellow windows in the merged image (right most) were expanded to show a few clusters that appear to bridge between mitochondrial membranes. (C) Histogram and Gaussian fit (black curve) of the length distribution that was measured from the SIM images of individual MAVS clusters as in panel A (SeV; N = 74) in virus-infected cells.DOI: http://dx.doi.org/10.7554/eLife.01489.014
+**Figure 5.:** (A) Mavs−/− MEF cells stably expressing Flag-tagged wild-type MAVS were mock-treated or infected with Sendai virus (SeV) for 12 hr and stained with MitoTracker (Mitochondria; red) and anti-Flag antibody (Flag-MAVS; green). Redistribution of MAVS among mitochondria was examined using SR-SIM. Expanded views of the areas within the yellow windows in the merged images were shown on the right. The SeV-infected cells contain bright foci of Flag-MAVS. The white arrowheads in the rightmost image of the bottom row highlight a few bright rod-shaped MAVS clusters. Scale bars, 5.0 μm. (B) 3D reconstruction of MAVS clusters (green) on the surface of mitochondria (red). Scale bar, 1.0 μm. The areas within the yellow windows in the merged image (right most) were expanded to show a few clusters that appear to bridge between mitochondrial membranes. (C) Histogram and Gaussian fit (black curve) of the length distribution that was measured from the SIM images of individual MAVS clusters as in panel A (SeV; N = 74) in virus-infected cells.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Mavs−/− MEF cells stably expressing Flag-tagged wild-type MAVS or its mutants were mock-treated or infected with SeV for 12 hr and stained with MitoTracker (Mitochondrial matrix; red), anti-Flag antibody (Flag-MAVS; green), anti-p65 antibody (grey) and DAPI (blue). MAVS redistribution was examined using confocal microscopy. Areas within the yellow windows in the merged images are expanded and shown in the rightmost images. MAVS puncta are highlighted by white arrowheads. WT and E80A MAVS showed strong puncta formation and clear p65 nuclear translocation, whereas E26A, a mutation at the inter-strand interface, did not. E80A is a conserved charged residue as a control. Scale bar, 5.0 μm.DOI: http://dx.doi.org/10.7554/eLife.01489.015
+**Figure 5—figure supplement 1.:** Mavs−/− MEF cells stably expressing Flag-tagged wild-type MAVS or its mutants were mock-treated or infected with SeV for 12 hr and stained with MitoTracker (Mitochondrial matrix; red), anti-Flag antibody (Flag-MAVS; green), anti-p65 antibody (grey) and DAPI (blue). MAVS redistribution was examined using confocal microscopy. Areas within the yellow windows in the merged images are expanded and shown in the rightmost images. MAVS puncta are highlighted by white arrowheads. WT and E80A MAVS showed strong puncta formation and clear p65 nuclear translocation, whereas E26A, a mutation at the inter-strand interface, did not. E80A is a conserved charged residue as a control. Scale bar, 5.0 μm.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** Similar to the Figure 5—figure supplement 1, mutations of two important residues (F16 and Y30) at the intra-strand interface were tested in a similar fashion. Scale bar, 5.0 μm.DOI: http://dx.doi.org/10.7554/eLife.01489.016
+**Figure 5—figure supplement 2.:** Similar to the Figure 5—figure supplement 1, mutations of two important residues (F16 and Y30) at the intra-strand interface were tested in a similar fashion. Scale bar, 5.0 μm.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig5-figsupp3-v1.jpg)
 
-**Figure 5—figure supplement 3.:** Mavs −/− MEF cells stably expressing Flag-tagged wild-type MAVS or its mutants were mock-treated or infected with SeV for 12 hr. (A) As in Figure 5—figure supplement 1, MAVS puncta formation and redistribution were examined using confocal microscopy. Mitochondria were stained by TOM20 antibody (mitochondrial outer membrane). Areas within the yellow windows in the merged images are expanded and shown in the rightmost images. MAVS puncta are highlighted by white arrowheads. Scale bars, 5.0 μm. (B) Statistical analysis of the correlation between nuclear translocation of p65 and SeV-induced MAVS puncta formation in Mavs−/− MEF cells expressing wild-type MAVS. No p65 nuclear translocation was seen in uninfected cells. Among cells showing clear p65 translocation, only those showing large MAVS puncta (probably > 0.4 μm) were classified as positive. Even with such strict constraints, more than 70% of the cells were positive. (C) IFNβ production was rescued by expressing MAVS wild-type and mutants (E80A and F16H) that retain the capability of forming MAVS puncta, but not those (E26A, F16A and Y30A) that failed to form puncta (Figure 5—figure supplement 1). The IFNβ mRNA level was quantified by q-RT-PCR. (D) MAVS proteins in the mitochondrial extracts from different cells were separated by SDD-AGE (top) or SDS-PAGE (bottom) followed by western blotting. Cells expressing wild-type MAVS and mutants (E80A, L48A, F16H, W56Y, Y30F and R77A) that rescued IFNβ production gave rise to strong aggregate signal in the SDD-AGE assay, whereas those expressing MAVS mutants defective in forming puncta or inducing IFNβ (E26A, R64A, R65A, F16A or Y30A) did not form aggregates. Y30A showed slightly higher basal aggregation signal, independent of viral infection.DOI: http://dx.doi.org/10.7554/eLife.01489.017
+**Figure 5—figure supplement 3.:** Mavs −/− MEF cells stably expressing Flag-tagged wild-type MAVS or its mutants were mock-treated or infected with SeV for 12 hr. (A) As in Figure 5—figure supplement 1, MAVS puncta formation and redistribution were examined using confocal microscopy. Mitochondria were stained by TOM20 antibody (mitochondrial outer membrane). Areas within the yellow windows in the merged images are expanded and shown in the rightmost images. MAVS puncta are highlighted by white arrowheads. Scale bars, 5.0 μm. (B) Statistical analysis of the correlation between nuclear translocation of p65 and SeV-induced MAVS puncta formation in Mavs−/− MEF cells expressing wild-type MAVS. No p65 nuclear translocation was seen in uninfected cells. Among cells showing clear p65 translocation, only those showing large MAVS puncta (probably > 0.4 μm) were classified as positive. Even with such strict constraints, more than 70% of the cells were positive. (C) IFNβ production was rescued by expressing MAVS wild-type and mutants (E80A and F16H) that retain the capability of forming MAVS puncta, but not those (E26A, F16A and Y30A) that failed to form puncta (Figure 5—figure supplement 1). The IFNβ mRNA level was quantified by q-RT-PCR. (D) MAVS proteins in the mitochondrial extracts from different cells were separated by SDD-AGE (top) or SDS-PAGE (bottom) followed by western blotting. Cells expressing wild-type MAVS and mutants (E80A, L48A, F16H, W56Y, Y30F and R77A) that rescued IFNβ production gave rise to strong aggregate signal in the SDD-AGE assay, whereas those expressing MAVS mutants defective in forming puncta or inducing IFNβ (E26A, R64A, R65A, F16A or Y30A) did not form aggregates. Y30A showed slightly higher basal aggregation signal, independent of viral infection.
 
 When a series of SR-SIM images were combined in IMARIS to reconstruct a 3D volume of MAVS and mitochondria in virus-infected cells (Figure 5B), it became clear that the MAVS aggregates were not evenly distributed around individual mitochondria, but were clustered into narrow regions on the surface of mitochondria (the rightmost image in Figure 5B). Many of these rod-shaped clusters bridge between two or more mitochondrial membranes, suggesting that MAVS molecules from multiple mitochondria may contribute to the formation of one MAVS filament (magnified insets of Figure 5B).
 
@@ -149,11 +566,11 @@ To quantify the average number of MAVS molecules for the rod-shaped clusters, we
 
 ## Discussion
 
-The pseudoatomic model for the MAVS CARD filaments from our cryoEM study suggests that after viral infection, activated MAVS molecules on the mitochondrial surface interact with each other at both the intra- and inter-strand interfaces between their CARD domains (
+The pseudoatomic model for the MAVS CARD filaments from our cryoEM study suggests that after viral infection, activated MAVS molecules on the mitochondrial surface interact with each other at both the intra- and inter-strand interfaces between their CARD domains (Figure 6). The MAVS aggregates in cells are indeed rod-shaped clusters that may contain MAVS molecules from multiple mitochondria. The CARD filaments form the central elements of the MAVS aggregates, and can promote their own growth by attracting new CARDs into the pre-poised interaction interfaces. The filaments are localized on the mitochondrial surface and the MAVS TM domains are embedded inside the outer mitochondrial membranes. These two ends of each MAVS molecule provide important spatial constraints that may force the intervening coiled sequence to be well extended and exposed for recruiting down-stream signaling molecules (Liu et al., 2013; Figure 6). Bioinformatic analysis suggests that the middle segment of MAVS forms random coils, which, if present by themselves in aqueous phase, would not likely be fully extended and thus may deter efficient binding of multiple positive or negative regulators of MAVS. The spatial arrangement between the CARD filament and the mitochondrial membrane provides a good solution to this problem of intrinsic disorder. The prion-like filament formation of MAVS thus uses very different chemistry than other prion proteins, and orchestrates the signaling domains of MAVS into a high-affinity platform for rapid and efficient signaling.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/01489/elife-01489-fig6-v1.jpg)
 
-**Figure 6.:** Detection of 5’-pppRNA by RIG-I or dsRNA by MDA5 or RIG-I triggers the formation of RIG-I (or MDA5)/RNA/polyUb complex. The CARD domains of individual complexes are poised properly to attract three MAVS CARD domains and support the nucleation of the filament. In the resting state, MAVS CARD is sequestered and has a low probability of forming polymers. The RIG-I (or MDA5)/RNA/polyUb complexes stabilize the MAVS CARDs in the exposed state and bring three copies together to initiate the filament formation. Once started, a short MAVS CARD filament promotes its own elongation by attracting more MAVS CARDs into the assembly. The filament can form on the surface of one mitochondrion or between two or more mitochondrial membranes. Inset, one or more mitochondria might be involved in MAVS filament formation.DOI: http://dx.doi.org/10.7554/eLife.01489.018
+**Figure 6.:** Detection of 5’-pppRNA by RIG-I or dsRNA by MDA5 or RIG-I triggers the formation of RIG-I (or MDA5)/RNA/polyUb complex. The CARD domains of individual complexes are poised properly to attract three MAVS CARD domains and support the nucleation of the filament. In the resting state, MAVS CARD is sequestered and has a low probability of forming polymers. The RIG-I (or MDA5)/RNA/polyUb complexes stabilize the MAVS CARDs in the exposed state and bring three copies together to initiate the filament formation. Once started, a short MAVS CARD filament promotes its own elongation by attracting more MAVS CARDs into the assembly. The filament can form on the surface of one mitochondrion or between two or more mitochondrial membranes. Inset, one or more mitochondria might be involved in MAVS filament formation.
 
 The filament formation of MAVS CARDs is based on collective interactions at the four interfaces of each subunit (Figures 1D, 2B and 3A). These interfaces maintain the tight and dense packing of individual CARDs in the filaments, which, together with the strong inter-strand electrostatic interactions, probably make the filaments detergent-resistant. During filament formation, there are counter-acting forces, such as decrease in entropy and possible structural adjustment at the pore-lining surface of the CARD filament (Figure 1C; Video 2), which would increase the energy level of the filaments. The net decrease in free energy supporting the filament formation is due to the four interaction interfaces for every CARD. But the counter-balance of these positive and negative energy terms likely makes the filaments fairly sensitive to mutations. Indeed, the four interfaces appear to be dominated by hot spots because point mutations in multiple positions are capable of destabilizing the filaments. The open ends of the CARD filaments provide three binding sites for each incoming CARD molecule. Because of the net gain in free energy for each CARD, the longer filaments are expected to be more stable than the shorter ones, leading to the filaments that are up to 10 microns long under cryoEM conditions. Inside virus-infected cells, the average length of the rod-shaped MAVS clusters is merely ∼400 nm. The physical length of MAVS filaments in cells may be limited by the number of MAVS molecules in each mitochondrion and by the dynamics of mitochondrial fusion and fission (Onoguchi et al., 2010; Figure 5C).
 
@@ -167,27 +584,27 @@ In summary, our structural and functional studies of the MAVS polymerization rev
 
 ## Materials and methods
 
-## Reagents and standard methods
+### Reagents and standard methods
 
 Mouse antibody against Flag-tag (M2) and M2-conjugated agarose were purchased from Sigma-Aldrich (St. Louis, MO); rabbit antibodies against TOM20 and the p65 subunit of NF-κB were from Santa Cruz Biotechnology (Dallas, TX); Alexa Fluor 488 conjugated goat anti-mouse and anti-rabbit antibodies, Alexa Fluor 568 conjugated goat anti-mouse antibody, and Alexa Fluor 633 conjugated goat anti-rabbit antibody were from Invitrogen (Carlsbad, CA). Sendai virus (SeV, Cantell strain, Charles River Laboratories) was used at 100 hemagglutination (HA) units/ml culture media. HEK293T, HEK293T-IFNβ-luciferase, Mavs−/− MEF cells and derivatives were cultured in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10% (v/v) cosmic calf serum (Hyclone, Thermo Fisher Scientific, Waltham, MA) with penicillin (100 U/ml) and streptomycin (100 μg/ml). Other chemicals and reagents were from Sigma-Aldrich unless otherwise specified.
 
-## Protein expression and purification
+### Protein expression and purification
 
 cDNA encoding Flag-tagged MAVS CARD (1–100) has been described previously (Hou et al., 2011). For protein expression, pcDNA3-Flag-MAVS CARD was transiently transfected into HEK293T cells. Cells were harvested 36 hr after transfection and lysed in a buffer containing 20 mM Tris–HCl (pH 8.0), 150 mM NaCl, 10% glycerol, 0.10% Triton X-100, 1.0 mM DTT, and EDTA-free protease inhibitor cocktail (Roche, Basel, Switzerland). After centrifugation at 10,000×g for 10 min, Flag-MAVS CARD was selectively bound to M2-antibody-conjugated agarose beads and eluted by Flag peptide. The eluate was fractionated on a Superdex 200 PC 3.2/30 column (GE Healthcare, Uppsala, Sweden) equilibrated in a buffer containing 20 mM Tris–HCl (pH 7.5), 50 mM NaCl and 1.0 mM DTT. Fractions were analyzed by SDS-PAGE and silver staining.
 
 cDNA encoding the MAVSΔProTM mutant lacking the proline-rich region (103–153) and the C terminal transmembrane domain (461–540) has been described previously (Hou et al., 2011). The bacterial expression vector pET-28a-His6-Sumo-MAVSΔProTM was transformed into BL21 (pLys). Protein expression was induced with 0.20 mM IPTG at 18°C for four hours. After sonication in a lysis buffer containing 10 mM Tris–HCl (pH 8.0), 500 mM NaCl, 0.50 mM DTT, 5.0% glycerol, 0.50 mM PMSF and 10 mM imidazole, cell lysates were centrifuged at 50,000×g for 30 min. His6-Sumo-MAVSΔProTM in the supernatant was purified using Ni-NTA affinity resin (QIAGEN, Limburg, Netherlands). Subsequently, the protein was loaded onto HiTrap Q HP column (GE Healthcare), and then eluted with a gradient of NaCl varying from 0.10 M to 0.50 M in a buffer made of 10 mM Tris–HCl (pH 7.5), 5.0% glycerol, 2.0 mM DTT, 1.0 mM EDTA and 0.50 mM PMSF. The fractions containing His6-Sumo-MAVSΔProTM, which were eluted with 300 mM NaCl, were pooled together and applied to a Superdex 200 HR 10/30 column (GE Healthcare) equilibrated with a buffer made of 10 mM Tris–HCl (pH 8.0), 150 mM NaCl, 1.0 mM DTT, 1.0 mM EDTA and 0.50 mM PMSF. His6-Sumo-MAVSΔProTM was then digested with SUMO protease at 4.0°C overnight. The His6-SUMO tag was removed by running the reaction mixture in a Superdex 200 PC 3.2/30 column (GE Healthcare), which was equilibrated in a buffer containing 10 mM Tris–HCl (pH 8.0), 150 mM NaCl and 1.0 mM DTT. The peak fraction of the protein was collected for EM studies.
 
-## Negative-stain electron microscopy
+### Negative-stain electron microscopy
 
 Copper grids (Ted Pella Inc., Redding, CA) coated with a layer of thin carbon film (3–5 nm) were rendered hydrophilic by negative glow discharge in air. A 2-4 μl aliquot of the purified MAVS sample was loaded onto the grids. After 30 s of incubation on the grid at room temperature, the sample was stained with 2.0% phosphotungstic acid (PTA) at pH 8.0 and blotted dry. Samples were imaged in a JEOL 2200FS FEG electron microscope operated at 200 kV with a nominal magnification of 50,000 × (2.84 Å/pixel at the detector level) using a defocus range of −0.7 to −1.5 μm. Images were recorded with an electron dose of 20 e−/Å2 on a 2K × 2K Tietz slowscan Charge Coupled Device (CCD) camera.
 
-## CryoEM sample preparation and data collection
+### CryoEM sample preparation and data collection
 
 Quantifoil R2/2 grids (Quantifoil Micro Tools GmbH, Jena, Germany) were coated with a thin carbon film (1–3 nm) in order to retain more filaments for imaging. Right before use, the grids were negatively glow-discharged in air. 2.5 μl purified MAVS was loaded onto the grids. Grids were blotted in 100% humidity at 4°C for 5 s before being plunge-frozen into liquid ethane bathed in liquid nitrogen inside a Vitrobot (FEI, Hillsboro, OR). After the specimens were transferred into and kept frozen inside the JEOL 2200FS FEG electron microscope, images were recorded on SO163 films (Eastman Kodak, Rochester, NY) with a nominal magnification of 60,000 × under low-dose conditions (∼20 e−/Å2). A Gatan K2 Summit Direct Detector (Gatan, Pleasanton, CA) was used for testing specimens in the later phase of the project. A total of 358 films were developed using full-strength D19 (Kodak) solution. Micrographs were digitized with a PhotoScan film Scanner (Z/I Imaging GmbH, Germany) at a step size of 7.0 μm. After 2 × 2 binning, the pixel size was 2.33 Å on the specimen. The magnification calibration at the nominal 60,000 × was 61,950 × and the actual pixel size was 2.26 Å. Datasets from other imaging conditions were scaled to this condition after the axial rise of each dataset was independently determined through IHRSR. A total of 30,384 segments were boxed from film data using the EMAN2 program HelixBoxer (Ludtke et al., 1999).
 
 To accelerate data collection, we sent the grids of the MAVS CARD filaments to the HHMI Janelia Farm Research Campus, and collected ∼2,100 images with a 4K × 4K Falcon Direct Detector in a Titan Krios microscope. The microscope was operated at 300 kV and was equipped with a Cs corrector. Automatic data collection was run by proprietary software, EPU (FEI, Hillsboro, OR). Images were taken under −2.5 to −4.0 microns of defocus at 29,000 ×, which gave rise to a calibrated pixel size of 2.30 Å at the specimen level. The density of filaments in the cryo specimens was fairly low so that we had to collect a large number of images. After the evaluation of their power spectra, 1,088 Falcon images were selected, and a total of 18,500 short filaments were boxed out for analysis.
 
-## EM image processing
+### EM image processing
 
 The analysis of the datasets of both the MAVS CARD filaments and the MAVSΔProTM filaments followed the IHRSR method developed by Dr Edward Egelman’s group at University of Virginia. The method was implemented in SPIDER. Dr Egelman kindly provided the programs in SPIDER, and the HSEARCH_LORENTZ/HIMPOSE programs. All SPIDER programs were rewritten in order to run with SPIDER Version 19.08 in a Linux cluster that runs the Redhat Enterprise 5.0. Besides, new SPIDER programs were written to refine the map for out-of-plane tilting of the filaments and for local optimization in angle assignment. Extensive technical details could be found in reference (Mukherjee et al., 2014). Briefly, from all images obtained in one session of data collection, the filaments were boxed out into 200 pixel segments (∼45.2 nm long at the specimen level) with 90% overlapping between neighboring ones from the same long filament. Filaments shorter than 200 pixels were discarded. The filament helical axis was always positioned roughly along the Y-axis. The defocus and astigmatism information for each image were determined by CTFFIND2 in the MRC package (IMAGE2010). The filament particles (boxed segments out of the raw filaments) were phase-flipped and band-pass filtered. We also tested the Wiener-filtering with a constant of 0.2 (1/SNR), and did not find significant difference from the phase-flipped dataset. Afterwards the filaments from different images out of one cryo session were pooled together as a subdataset. To start the analysis, we made sure that the summed power spectrum of each subdataset showed a faint (usually fuzzy) layer line at the position of the first meridional line (layer line 9; Figure 1—figure supplement 1A, Figure 4—figure supplement 1B). The diameter of individual filaments was estimated from the raw images. A cylindrical volume that had the estimated diameter was generated in SPIDER and projected along Y-axis to be used as the first reference. The individual filaments were compared with the projection from the cylindrical volume. The shift in X-direction for each boxed segment (particle) was rounded to the nearest integer and applied to center the particle horizontally. The total power spectrum was calculated from all X-centered particles in the dataset. The four layer lines (LL = 1, 4, 5, and 9) were measured to prepare a (LL, Z*) table. The peak positions were indexed to make a table of (n, R). The n was estimated from a numeric table of Bessel functions from 0 to 14th orders. The helical indexing led to the initial guess of a 3-start helix (n = 3 or −3), with some uncertainty of a 4-start one (n = 4 or −4). We then tested the refinement for both a 3-start helix and 4-start one separately, and found that the model with a 3-start helical symmetry was able to converge to a 3D map with the right axial rise, but not the one with a 4-start symmetry (Figure 1—figure supplement 1C,D,G). Full refinement with n = −4 was done to confirm this point. We therefore concluded that n = 3 was probably right (n = −3 is the mirror and equally possible). With this information, we did the initial analysis of all subdatasets from different cryo sessions independently in order to obtain the rotation angle (ΔΦ) and the axial rise (Δz) for each subdataset. The axial rises for individual datasets collected at different magnifications or from different microscopes were brought together and compared to find the right parameters for interpolating the images in the different datasets and scaled them all together into one large dataset that contained 48,884 particles. The refinement of the large dataset against a cylindrical volume of a diameter of 90 Å quickly led to a stable solution (Figure 1—figure supplement 1C,D) with the symmetry parameters of ΔΦ = 53.6° and Δz = 16.5 Å. To test the robustness of the parameters, we also introduced 1.0 Å deviation to the axial rise in the middle of the refinement, and observed the quick recovery of the refinement to the stable solution (Figure 1—figure supplement 1D). This test suggested that the solution was quite stable.
 
@@ -197,36 +614,36 @@ To estimate the resolution by FSC, the sorted dataset (20,825 particles) was sep
 
 Analysis of the MAVSΔProTM dataset followed the same procedure. The dataset had only 8,909 particles (Figure 4—figure supplement 1A,D,E). We therefore did not sort them against models with varying symmetry parameters. The FSC calculation gave rise to the resolution estimate of 16.4 Å (Figure 4—figure supplement 1C).
 
-## Cryo-electron tomography (cryo-ET)
+### Cryo-electron tomography (cryo-ET)
 
 Energy-filtered electron cryo-tomography on the MAVS CARD filaments was carried out from a dataset collected with an FEI Titan Krios cryo-EM at HHMI Janelia Farm Research Campus. The tomography tilt series were collected in a Gatan K2 Summit direct electron detector installed behind a GIF Quantum energy filter. A narrow energy slit of 5 eV was used together with a small objective aperture (50 microns) to enhance image contrast. The data were collected at a nominal magnification of 42,000 ×, corresponding to 2.7 Å per pixel on the K2 camera. The tilt range spans from −60 to +60° with a step size of 3°. The defocus level was set at −6.0 microns. Tomographic reconstruction was carried out using the standard weighted back projection procedure implemented in IMOD (Yu et al., 2013). The tilt series were aligned using patch tracking due to the absence of fiducial gold particles. A non-linear anisotropic diffusion filter was applied to the reconstruction. For better resolution of the helical stripes, five slices that cover the top surfaces of multiple filaments in the tomogram were used to calculate a projection image (Figure 1—figure supplement 2B), and the view was from above the filaments. The boxed segments were cropped out and the distance between stripes was measured in the image. The angle between the stripes and the helical axis was estimated manually.
 
-## Docking the MAVS CARD crystal structure into the EM map
+### Docking the MAVS CARD crystal structure into the EM map
 
 The crystal structure of MAVS CARD (PDB Code: 2VGQ) was first docked into the cryoEM density map manually in UCSF Chimera. We tested the docking in the original map and its mirror, and found that the docking to the mirrored map, which has left-handed symmetry, allowed us to position three α-helices of the X-ray model directly into the density features in the map (Figure 1C). Recognition of these surface features led to a fairly unique position for the X-ray model and resolved the ambiguity in chirality, consistent with the cryoET results. After one CARD was docked into the map, a hexamer model was built by applying symmetry operations. We segmented the cryoEM density and extracted a portion that represents a hexamer formed by two layers of protein subunits using the segmentation tools in UCSF Chimera. Subsequently, the hexamer model was optimized using SITUS (Wriggers, 2010) to find a local best position with the symmetry constraints. The side chains of a few charged residues (D23, E26, R37, R64 and R65) at the inter-strand interface in the model were optimized by testing different rotamers in Coot to produce the model in Figure 2B (Emsley et al., 2010).
 
 The two videos were made with Chimera.
 
-## Screen for soluble MAVS CARD mutants in E. coli
+### Screen for soluble MAVS CARD mutants in E. coli
 
 Creation and solubility screen of mutant libraries of the human and horse CARDs were performed as described previously (Harada et al., 2008). Briefly, the coding regions of the MAVS CARD (residues 2–98) were randomly mutagenized by using error-prone PCR, and sub-cloned into the pBAD/DHFR vector (kindly provided by Dr James Bowie at UCLA) between the NcoI/SalI restriction sites. Plasmids were transformed into Top10 cells (Invitrogen) to express CARD mutants fused to the C-terminus of DHFR. Cells were grown on M9 minimal medium plates containing 100 μg/ml ampicillin, 0.20% arabinose and with or without 1 μg/ml trimethoprim at 37°C for 72 hr. Colonies that grew in the presence of trimethoprim were candidate clones expressing soluble CARD mutants. Plasmids from these clones were sequenced to identify their mutations in the CARD domain. The mutants were subsequently subcloned into a modified pET28a vector that encodes an N-terminal His6-tag and a cleavage site of human rhinovirus C3 protease (He et al., 2009), and expressed in the bacterial strain BL21 DE3 using a standard procedure. Proteins were purified using Ni-NTA and gel filtration chromatography. The N-terminal tag was removed by treatment of human rhinovirus C3 protease. Mutants were identified as soluble if the proteins could be purified and behaved as a homogenous monomeric peak in gel filtration chromatography.
 
-## Crystallization and structure determination of soluble MAVS CARD mutants
+### Crystallization and structure determination of soluble MAVS CARD mutants
 
 Well-behaving CARD mutants were concentrated and subjected to crystallization trials. Many mutants of horse CARD crystallized in multiple conditions, many of which belonged to the same crystal form as shown by preliminary diffraction experiments. The E26R and R64C mutants, both mapped to the electrostatic interface for mediating MAVS oligomerization, were chosen for structure determination. Crystals of E26R at 1.1 mg/ml grew in 0.10 M MES (pH6.5), 30%PEG 5000 MME, 0.20 M ammonium sulfate at 20°C. Crystals of R64C at 1.5 mg/ml grew in Bis-Tris (pH6.5), 25% PEG 3350, 0.20 M ammonium acetate at 20°C. Crystals were flash-cooled in liquid nitrogen in their crystallization buffers supplemented with 25% glycerol. Diffraction data for E26R were collected at 100 K in Beamline 19ID of the Advanced Photon Source (Argonne National Laboratory). Data for R64C were collected at 100 K with a Rigaku X-ray source using a Raxis IV detector. Diffraction data were indexed, integrated and scaled by using HKL2000 (Otwinowski and Minor, 1997). The structure of the human MAVS CARD (PDB ID: 2VGQ) was used as the search model for molecular replacement using Phaser in the Phenix package (Adams et al., 2002; McCoy et al., 2007). Iterative model building and refinement were performed in Phenix and Coot, respectively (Emsley and Cowtan, 2004). The data collection and refinement statistics were summarized in Supplementary file 1.
 
-## Interferon-β luciferase reporter assay
+### Interferon-β luciferase reporter assay
 
 HEK293T cells stably expressing both Renilla luciferase (as an internal control) and IFNβ promoter driving firefly luciferase were transfected with the indicated amounts of cDNAs for Flag-tagged wide-type MAVS or its mutants. 24 hr after transfection, cells were harvested to measure the expression of luciferase using a dual luciferase assay kit (Promega, Madison, WI).
 
-## Confocal and SR-SIM imaging
+### Confocal and SR-SIM imaging
 
 Mavs−/− MEFs stably expressing wide-type MAVS or its mutants were grown on sterile glass coverslips in 12-well plates. 12 hr after Sendai virus infection, cells were first stained with MitoTracker Red according to the manufacturer’s instructions (Invitrogen). Cells were then fixed with 4.0% paraformaldehyde in PBS for 15 min, permeabilized in PBS containing 0.10% Triton X-100 for 5 min, and blocked in PBS containing 0.10% Triton X-100 and 10% BSA for 30 min at room temperature. After blocking, the cells were incubated with specific primary antibodies for 1 hr, washed and then incubated with suitable Alexa Fluor 488 (or Alexa Fluor 568 or Alexa Fluor 633)-conjugated secondary antibodies for another hour. After careful wash, the slides were mounted with the VECTASHIELD mounting medium with DAPI (Vector Laboratories). Imaging of the cells was carried out using a Zeiss LSM510 META laser scanning Confocal Microscope or a Zeiss ELYRA PS.1 Super-Resolution Structured Illumination Microscope (SR-SIM). Z-stacks with an interval of 110 nm were used to section the whole cell for 3D-SR-SIM. Images were analyzed using the Zen2011 software (Zeiss) or ImageJ. Alignment and reconstruction of 3D-SIM images were performed using IMARIS (Bitplane).
 
-## Quantitative reverse transcription PCR (q-RT-PCR)
+### Quantitative reverse transcription PCR (q-RT-PCR)
 
 Total RNA was isolated using TRIzol (Invitrogen). 0.1 μg of total RNA was reverse-transcribed into cDNA with iScript cDNA synthesis kit (Bio-Rad, Hercules, CA). The resulting cDNAs served as the templates for Quantitative-PCR analysis using iTaq Universal SYBR Green Supermix (Bio-Rad) and ViiTM7 Real-Time PCR System (Applied Biosystems Inc., Foster City, CA). Primers for specific genes are: Mouse β-actin, 5′-TGACGTTGACATCCGTAAAGACC-3′ and 5′-AAGGGTGTAAAACGCAGCTCA-3′; Mouse IFNβ, 5′-CCCTATGGAGATGACGGAGA-3′ and 5′-CTGTCTGCTGGTGGAGTTCA-3′.
 
-## Semi-denaturing detergent agarose gel electrophoresis (SDD-AGE)
+### Semi-denaturing detergent agarose gel electrophoresis (SDD-AGE)
 
 The formation of prion-like aggregates of MAVS and its mutants was analyzed by SDD-AGE as previously described (Hou et al., 2011).

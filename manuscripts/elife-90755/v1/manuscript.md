@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03wmf1y16 Department of Physiology and Biophysics, University of Colorado Anschutz Medical Campus Aurora United States
+1. Department of Physiology and Biophysics, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
 2. University of Arizona College of Medicine Tuscon United States
 
 † Corresponding author
@@ -36,9 +36,17 @@ To determine the conformational changes that the intracellular domains of ASIC1a
 
 Our approach needed to satisfy a number of criteria. (1) We needed to be able to site-specifically attach a fluorophore that is appropriate for tmFRET to our channel. (2) We needed to have a method for incorporating metal ions into our channel. (3) The probes we used cannot be sensitive to changes in pH. (4) The distance range over which our probes work needed to correspond with the distances between the intracellular domains. To accomplish all of this we adapted multiple methods to suit our needs for developing short distance probes for ASICs.
 
-## Site-specific labeling of ASICs with an unnatural amino acid
+### Site-specific labeling of ASICs with an unnatural amino acid
 
 To site specifically incorporate a small molecule fluorophore compatible with FRET utilizing a transition metal, we opted to incorporate the fluorescent unnatural amino acid (UAA) 3-[(6-acetyl-2-naphthalenyl)amino]-L-alanine (L-ANAP) at sites in the channel. L-ANAP, a derivative of prodan, has several advantages for measuring short intramolecular distances within an ion channel. First, L-ANAP has a small side chain, similar in size to a tryptophan (Figure 1A). This reduces artifacts in FRET measurements associated with the large size of fluorescent proteins (FP) and organic dyes, as well as long linkers that attach these chromophores to the protein of interest. In addition, its modest spectral overlap with the absorbance spectra of transition metals makes it well suited as a donor for measuring FRET over shorter distances. L-ANAP has been used to measure conformational dynamics in multiple ion channels and other proteins (Gordon et al., 2018; Kalstrup and Blunck, 2013; Shandell et al., 2019; Suárez-Delgado et al., 2023; Zagotta et al., 2016).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/90755/elife-90755-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cartoon schematic illustrating L-ANAP incorporation into rASIC1a using the amber suppression method. Gray star indicates the location of the TAG mutation where L-ANAP can be incorporated when rASIC1a is co-transfected with pANAP and the media is supplemented with free L-ANAP (Created with Biorender.com). (B) Schematic of rASIC1a construct used for tmFRET experiments. Cytosolic N- and C-termini are in blue and red, respectively. mCitrine is conjugated to the C-terminus using a linker based on a loop region in DNA polymerase (DP). (C) Fluorescent and bright field images of rASIC1a-S24TAG expressed in CHO-K1 cells. Left column shows mCitrine fluorescence while the middle columns shows the L-ANAP fluorescence signal. Images were collected either in the presence or absence of L-ANAP and pANAP. Images were collected 24 hr after transfection at 20 x. The scale bar in the top left is 50 μm and applies to all panels in C.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90755/elife-90755-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Amino acid translation is above in red.
 
 We used the amber suppression method to attach L-ANAP at specific sites on the NTD and CTD of ASIC1a (Figure 1A; Chatterjee et al., 2013; Lee et al., 2009). This approach utilizes two plasmids. The first encodes the channel with a TAG stop codon engineered at the desired site of labelling. The second plasmid, developed by Peter Schultz’s lab and termed pANAP, encodes 4 copies of a tRNA as well as an evolved tRNA synthetase that together allows for the loading of a tRNA complementary to the TAG codon with L-ANAP (Chatterjee et al., 2013). These two plasmids were co-transfected into CHO-K1 cells that were incubated in cell-permeable methyl ester version of L-ANAP (see Methods for details of the incorporation protocol).
 
@@ -48,15 +56,57 @@ Figure 1C shows representative images of rASIC1a-S24TAG with a single intracellu
 
 To further ensure that full-length channels are only produced in the presence of the UAA, western blots were performed containing a number of potential TAG positions in the NTD, re-entrant loop, and CTD of the channel. Positions were excluded if no channels were seen on the blot or if a substantial signal was detected in the absence of L-ANAP in the media. Figure 2A shows two western blots that contain four different TAG mutation sites along with our pseudo wild-type construct, C469 WT, which has a single intracellular cysteine at position 469 and no introduced TAG mutation. Position S485TAG shows no expression even in the presence of L-ANAP in the growth media. Position H515TAG shows channel expression in both the presence and absence of L-ANAP. These are each an example of positions we did not pursue further. S464TAG and M505TAG, however, show robust ASIC1a expression only when L-ANAP is present in the media making these suitable positions to move forward with. Representative western blots for every position we tested can be seen in Figure 2—figure supplement 1.
 
-## Incorporation of L-ANAP into ASIC1a does not dramatically alter channel function
+![Figure 2.](https://cdn.elifesciences.org/articles/90755/elife-90755-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative western blots for rASIC1a expressed in CHO-K1 cells with a single TAG mutation at denoted position, blotted with an anti-GFP antibody. Each TAG mutant was cultured both with L-ANAP (10 μM) and without L-ANAP supplementation. Expression of channels with L-ANAP incorporated is seen with bands at ~75 kDa. Higher molecular weight bands are likely channel oligomers (dimer, trimer) and bands below are likely free mCitrine. Neither the higher nor lower bands make up a significant portion of channel expressed. Less protein was loaded in the WT (no TAG) control C469 WT. (B) Representative whole-cell recordings of TAG mutants with single cysteine at C469 (colors) and C469 WT construct (black) elicited by solution switch from pH 8 to pH 5.5. (C) pH dependence of activation for rASIC1a TAG mutants with single cysteine at C469 (colors) and the C469 WT construct (black). Data were fit to a modified Hill equation. Fit results found in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90755/elife-90755-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Westerns were blotted with an anti-GFP antibody that recognizes the terminal mCitrine. Each TAG mutant was cultured both with L-ANAP (10 μM) and without L-ANAP supplementation. Westerns in this figure were run on Bis-Tris gels, whereas the westerns in Figure 2 were run on Tris-Glycine gels, which results in ASIC running slightly differently between the 2 gel types.
+
+### Incorporation of L-ANAP into ASIC1a does not dramatically alter channel function
 
 We performed whole-cell patch clamp experiments for each position to ensure that the channel remained functional despite the incorporation of L-ANAP. Each mutant channel showed a robust current when L-ANAP was present in the media (Figure 2B). Each mutant showed the typical rapid activation upon a fast switch from pH 8 to pH 5.5 followed by channel desensitization. While rASIC1a-G11TAG showed a slightly altered desensitization rate, all mutants show complete desensitization in less than 10 s. In addition, we measured the pH dependence of channel activation. Our pseudo wild-type construct, C469 WT, showed a half-activating pH of 6.52 similar to our previously measured pH0.5 for WT ASIC1a (Klipp and Bankston, 2022). The pH0.5 values for the mutants all fell between 6.42 and 6.67 indicating that normal pH-dependent gating remains largely intact in each mutant (Figure 2C). The normal function of these mutant channels, we believe, makes these well-suited to continue examining rearrangements that occur in the NTD and CTD of the channel.
 
-## pH does not alter L-ANAP fluorescence or metal ion absorbance
+### pH does not alter L-ANAP fluorescence or metal ion absorbance
 
 To measure conformational changes in these regions, we employed two different tmFRET methodologies. The first, termed ACCuRET (ANAP Cyclen-Cu2+ resonance energy transfer), incorporates metal ions at specific sites on the channel using a cysteine reactive metal chelator, 1-(2-pyridin-2-yldisulfanyl)ethyl)–1,4,7,10-tetraazacyclododecane (TETAC, Figure 3A; Gordon et al., 2018). TETAC has a short linker connected to a cyclen ring that binds transition metals with a sub-nanomolar affinity (Mutsuo Kodama et al., 1977). The second method involved attaching the metal to the plasma membrane using a synthesized lipid with a metal-chelating head group called stearoyl-nitrilotriacetic acid (C18-NTA, Figure 3B; Gordon et al., 2016). We termed this method memFRET for clarity. Using TETAC and C18-NTA allowed us to introduce transition metal ions at a specific site within the protein (TETAC) or scattered across the plasma membrane (C18-NTA).
 
 For each of these approaches we calculated the expected FRET efficiency between L-ANAP and the coordinated metal ion. Figure 3C shows the emission spectrum of L-ANAP along with the extinction coefficient of Cu2+-TETAC. The extinction coefficient was determined by measuring the absorbance of Cu2+-TETAC across the appropriate wavelengths (see methods for calculation). Similarly, Figure 3D shows the same data for Co2+-NTA. Using these data and assuming a quantum yield of 0.22 (Gordon et al., 2018; Gordon et al., 2016) and κ2 of 2/3 (Fung and Stryer, 1978; Loura, 2012), we calculate an R0 for ACCuRET of 17.6 Å and for memFRET of 12.4 Å at pH 8 where we expect all the channels to be in the resting state (Table 1).
+
+**Table 1.**
+ R0 values calculated for Cu2+-TETAC and Co2+-C18-NTA using Equation 3 at pH 8 and pH 6.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>pH 8</th>
+      <th>pH 6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ACCuRET</td>
+      <td>17.6</td>
+      <td>17.2</td>
+    </tr>
+    <tr>
+      <td>memFRET</td>
+      <td>12.4</td>
+      <td>12.6</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 3.](https://cdn.elifesciences.org/articles/90755/elife-90755-fig3-v1.jpg)
+
+**Figure 3.:** (A) Chemical structure of free TETAC. (B) Chemical structure of C18-NTA. (C) Spectral properties of L-ANAP bound to agarose beads and Cu2+-TETAC. Absorption spectra of TETAC-Cu2+ at pH 8 (blue) and pH 6 (green) were measured and spectral properties plotted along with emission spectra from L-ANAP bound to agarose beads at pH 8 (black) and pH 6 (red). (D) Spectral properties of L-ANAP bound to agarose beads and Co2+-C18-NTA. Absorption spectra of Co2+-C18-NTA at pH 8 (blue) and pH 6 (green) were measured and spectral properties plotted along with emission spectra from L-ANAP bound to agarose beads at pH 8 (black) and pH 6 (red).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90755/elife-90755-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Absorbance spectrum (converted to extinction coefficient) shown for Zinc bound to TETAC and C18-NTA. There is no absorbance seen in the visibile spectrum.
 
 L-ANAP has been previously shown to not be pH sensitive when incorporated into the protein backbone (Suárez-Delgado et al., 2023). We confirmed that result here by mimicking incorporation of L-ANAP into the protein by conjugating L-ANAP to amine reactive agarose beads and measuring the emission spectra for L-ANAP on the same microscope setup used for the subsequent experiments. The emission spectrum of L-ANAP did not differ in either our rest (pH 8) or acidification (pH 6) buffers (Figure 3C and D). In addition, the extinction coefficient of Cu2+-TETAC and Co2+-NTA also do not change when the pH of the solution is changed (Figure 3C and D respectively). This results in a minimal change in R0 values between pH 8 and pH 6 for ACCuRET (17.6 Å and 17.2 Å, respectively) and for memFRET (12.4 Å and 12.6 Å, respectively).
 
@@ -66,7 +116,7 @@ Finally, in order to apply either of these metal labels to the CTD or the inner 
 
 **Figure 4.:** (A) Cartoon schematic of unroofing method used. Cultured CHO-K1 cells are washed with DPBS before being subjected to a constant stream of buffer using a needle and syringe to remove the non-adhered portion of the cells (Created with Biorender.com). (B) Representative fluorescent and bright field images at 60 x of whole cell (top) and unroofed (bottom) expressing rASIC1a-G11TAG. The scale bar in the top left is 10 μm and applies to all panels in B.
 
-## Measuring the distance between the N- and C- termini
+### Measuring the distance between the N- and C- termini
 
 With these methodologies in place, we can directly measure rearrangements within the intracellular domains of ASIC1a. The ACCuRET approach (Figure 5A) is particularly well-suited for measuring the distance between the NTD and the CTD for several reasons. (1) The R0 for our FRET pairs is on the order of ~17–18 Å which is ideal for measuring distances between the intracellular domains as the distance between the bottom of TM1 and TM2 in the channel is on the order of 10–20 Å. (2) We can measure these distances in intact channels embedded in native membranes. (3) The fluorophore and metal ion are small and have relatively few bonds connecting them to the protein backbone making them good proxies for the position of the NTD and CTD relative to one another.
 
@@ -82,7 +132,420 @@ ACCuRET between L-ANAP at E8 and Cu2+-TETAC at C469, the two residues immediatel
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90755/elife-90755-fig6-v1.jpg)
 
-**Figure 6.:** (A) Normalized FRET efficiency between L-ANAP on the NTD and Cu2+-TETAC at position C469 at pH 8 (black) and pH 6 (red). FRET efficiencies, SEM, N and calculated distances are summarized in Table 2. Zn2+-TETAC negative control for positions E8 and G11 shows that the changes in signal measured with Cu2+-TETAC are due the presence of Cu2+ and not due to any other changes. (B) Normalized FRET efficiency between L-ANAP on the NTD and Cu2+-TETAC at position C477 at pH 8 (black) and pH 6 (red). The inset cartoons show the position of L-ANAP denoted by a blue star and the single cysteine denoted by an orange circle. Box and whisker plot with whiskers ranging from minimum to maximum values and the bottom and top edges of the box denoting the 25th and 75th quartiles, respectively. Statistical significance shown using two-way ANOVA with Tukey’s multiple comparisons test are denoted between relevant comparison using appropriate asterisks. Ns indicates p>0.05, * indicates p≤0.05, ** indicates p≤0.01, *** indicates p≤0.001, **** indicates p≤0.0001. 6<N<21 for conditions shown here. Table 2 and source data show exact N for each condition.Figure 6—source data 1.P values were calculated using a two-way ANOVA with Tukey’s multiple comparisons test.
+**Figure 6.:** (A) Normalized FRET efficiency between L-ANAP on the NTD and Cu2+-TETAC at position C469 at pH 8 (black) and pH 6 (red). FRET efficiencies, SEM, N and calculated distances are summarized in Table 2. Zn2+-TETAC negative control for positions E8 and G11 shows that the changes in signal measured with Cu2+-TETAC are due the presence of Cu2+ and not due to any other changes. (B) Normalized FRET efficiency between L-ANAP on the NTD and Cu2+-TETAC at position C477 at pH 8 (black) and pH 6 (red). The inset cartoons show the position of L-ANAP denoted by a blue star and the single cysteine denoted by an orange circle. Box and whisker plot with whiskers ranging from minimum to maximum values and the bottom and top edges of the box denoting the 25th and 75th quartiles, respectively. Statistical significance shown using two-way ANOVA with Tukey’s multiple comparisons test are denoted between relevant comparison using appropriate asterisks. Ns indicates p>0.05, * indicates p≤0.05, ** indicates p≤0.01, *** indicates p≤0.001, **** indicates p≤0.0001. 6<N<21 for conditions shown here. Table 2 and source data show exact N for each condition.
+
+**Table 2.**
+ Mean normalized FRET efficiency ± SEM for each TAG position relative to each cysteine (ACCuRET) or the membrane (memFRET) measured at pH 8 and pH 6.Distances were calculated with Equation 4.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="4">pH 8</th>
+      <th colspan="4">pH 6</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>TETAC Position</th>
+      <th>TAG position</th>
+      <th>mean normalized FRET efficiency</th>
+      <th>SEM</th>
+      <th>N</th>
+      <th>Distance (Å)</th>
+      <th>mean normalized FRET efficiency</th>
+      <th>SEM</th>
+      <th>N</th>
+      <th>Distance (Å)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>E8TAG</td>
+      <td>0.20</td>
+      <td>0.03</td>
+      <td>13</td>
+      <td>22</td>
+      <td>0.27</td>
+      <td>0.01</td>
+      <td>17</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>G11TAG</td>
+      <td>0.18</td>
+      <td>0.02</td>
+      <td>11</td>
+      <td>23</td>
+      <td>0.32</td>
+      <td>0.02</td>
+      <td>6</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Q14TAG</td>
+      <td>0.29</td>
+      <td>0.02</td>
+      <td>18</td>
+      <td>20</td>
+      <td>0.43</td>
+      <td>0.02</td>
+      <td>15</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>C469</td>
+      <td>S24TAG</td>
+      <td>0.45</td>
+      <td>0.02</td>
+      <td>10</td>
+      <td>18</td>
+      <td>0.57</td>
+      <td>0.01</td>
+      <td>8</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>I33TAG</td>
+      <td>0.37</td>
+      <td>0.02</td>
+      <td>21</td>
+      <td>19</td>
+      <td>0.58</td>
+      <td>0.01</td>
+      <td>17</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>A44TAG</td>
+      <td>0.43</td>
+      <td>0.02</td>
+      <td>6</td>
+      <td>19</td>
+      <td>0.27</td>
+      <td>0.02</td>
+      <td>14</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>G11TAG</td>
+      <td>0.26</td>
+      <td>0.02</td>
+      <td>20</td>
+      <td>21</td>
+      <td>0.38</td>
+      <td>0.03</td>
+      <td>7</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>C477</td>
+      <td>Q14TAG</td>
+      <td>0.28</td>
+      <td>0.02</td>
+      <td>11</td>
+      <td>21</td>
+      <td>0.31</td>
+      <td>0.03</td>
+      <td>12</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>ACCuRET</td>
+      <td></td>
+      <td>S24TAG</td>
+      <td>0.35</td>
+      <td>0.02</td>
+      <td>22</td>
+      <td>20</td>
+      <td>0.49</td>
+      <td>0.04</td>
+      <td>9</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>E8TAG</td>
+      <td>0.11</td>
+      <td>0.02</td>
+      <td>22</td>
+      <td>25</td>
+      <td>0.26</td>
+      <td>0.03</td>
+      <td>13</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>C485</td>
+      <td>G11TAG</td>
+      <td>0.28</td>
+      <td>0.02</td>
+      <td>14</td>
+      <td>21</td>
+      <td>0.59</td>
+      <td>0.02</td>
+      <td>10</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Q14TAG</td>
+      <td>0.21</td>
+      <td>0.04</td>
+      <td>27</td>
+      <td>22</td>
+      <td>0.58</td>
+      <td>0.02</td>
+      <td>23</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>S24TAG</td>
+      <td>0.32</td>
+      <td>0.04</td>
+      <td>16</td>
+      <td>19</td>
+      <td>0.57</td>
+      <td>0.01</td>
+      <td>13</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>E8TAG</td>
+      <td>0.27</td>
+      <td>0.01</td>
+      <td>12</td>
+      <td>21</td>
+      <td>0.37</td>
+      <td>0.02</td>
+      <td>13</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>C505</td>
+      <td>Q14TAG</td>
+      <td>0.41</td>
+      <td>0.02</td>
+      <td>6</td>
+      <td>19</td>
+      <td>0.43</td>
+      <td>0.03</td>
+      <td>13</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>E8TAG</td>
+      <td>0.08</td>
+      <td>0.01</td>
+      <td>14</td>
+      <td>26</td>
+      <td>0.24</td>
+      <td>0.01</td>
+      <td>9</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>C515</td>
+      <td>Q14TAG</td>
+      <td>0.20</td>
+      <td>0.02</td>
+      <td>7</td>
+      <td>22</td>
+      <td>0.45</td>
+      <td>0.01</td>
+      <td>7</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ACCuRET Zn2+ controls</td>
+      <td rowspan="2">C469</td>
+      <td>E8TAG</td>
+      <td>–0.06</td>
+      <td>0.01</td>
+      <td>6</td>
+      <td>N/A</td>
+      <td>0.04</td>
+      <td>0.01</td>
+      <td>8</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>G11TAG</td>
+      <td>–0.03</td>
+      <td>0.01</td>
+      <td>8</td>
+      <td>N/A</td>
+      <td>–0.05</td>
+      <td>0.01</td>
+      <td>10</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>E8TAG</td>
+      <td>0.42</td>
+      <td>0.03</td>
+      <td>11</td>
+      <td>10</td>
+      <td>0.40</td>
+      <td>0.03</td>
+      <td>14</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>G11TAG</td>
+      <td>0.46</td>
+      <td>0.03</td>
+      <td>9</td>
+      <td>10</td>
+      <td>0.48</td>
+      <td>0.01</td>
+      <td>15</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>N/A</td>
+      <td>Q14TAG</td>
+      <td>0.44</td>
+      <td>0.02</td>
+      <td>10</td>
+      <td>10</td>
+      <td>0.60</td>
+      <td>0.03</td>
+      <td>7</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>S24TAG</td>
+      <td>0.74</td>
+      <td>0.04</td>
+      <td>4</td>
+      <td>≤5</td>
+      <td>0.72</td>
+      <td>0.02</td>
+      <td>24</td>
+      <td>≤5</td>
+    </tr>
+    <tr>
+      <td>memFRET</td>
+      <td></td>
+      <td>I33TAG</td>
+      <td>0.52</td>
+      <td>0.02</td>
+      <td>8</td>
+      <td>8</td>
+      <td>0.71</td>
+      <td>0.03</td>
+      <td>9</td>
+      <td>≤5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>S464TAG</td>
+      <td>0.69</td>
+      <td>0.02</td>
+      <td>15</td>
+      <td>≤5</td>
+      <td>0.63</td>
+      <td>0.02</td>
+      <td>10</td>
+      <td>≤5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>N/A</td>
+      <td>M505TAG</td>
+      <td>0.75</td>
+      <td>0.02</td>
+      <td>8</td>
+      <td>≤5</td>
+      <td>0.48</td>
+      <td>0.02</td>
+      <td>14</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td rowspan="4">MemFRETZn2+ controls</td>
+      <td rowspan="4">N/A</td>
+      <td>E8TAG</td>
+      <td>–0.13</td>
+      <td>0.01</td>
+      <td>8</td>
+      <td>N/A</td>
+      <td>–0.15</td>
+      <td>0.02</td>
+      <td>9</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>G11TAG</td>
+      <td>–0.03</td>
+      <td>0.01</td>
+      <td>8</td>
+      <td>N/A</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>9</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>S464TAG</td>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>6</td>
+      <td>N/A</td>
+      <td>0.01</td>
+      <td>0.03</td>
+      <td>10</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>M505TAG</td>
+      <td>–0.12</td>
+      <td>0.04</td>
+      <td>6</td>
+      <td>N/A</td>
+      <td>–0.12</td>
+      <td>0.03</td>
+      <td>9</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
 
 ACCuRET for two more positions along the NTD of ASIC1a (G11TAG and Q14TAG) relative to the same C469 have similar results to the E8TAG position. Modest FRET signals are measured again consistent with distances 20–22 Å range (Figure 6A, Table 2). Upon acidification, a slight increase in FRET efficiency is seen for all three positions, consistent with the NTD and CTD moving slightly closer together under these conditions. In addition, we moved the site of TETAC incorporation out of the putative binding site to residue 477 and remeasured ACCuRET between G11TAG and Q14TAG at this new position. Again, we measured only modest FRET efficiencies consistent with distances in the ~20 Å range and a trend towards increased FRET at pH 6 (Figure 6B, Table 2).
 
@@ -90,19 +553,27 @@ To confirm that the quenching we see is from the transition metals is due to FRE
 
 It is possible that the CTD binding site for the NTD is at a more distal position along the CTD than originally speculated. To test this, we again moved the Cu2+-TETAC-labelled cysteine to residues further along the CTD. Cu2+-TETAC at C485 shows similar FRET at pH 8, but, interestingly, shows a larger movement (~6 Å) towards the NTD at pH 6 (Figure 7A). Again, this movement towards one another is likely inconsistent with a model where the termini are in complex at rest and move apart during acidification. Finally, the most distal positions we measured (C505, C515), also display modest FRET signals at pH 8 with 515 showing a larger (~5 Å) movement towards the NTD upon acidification (Figure 7B and C, Table 2).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/90755/elife-90755-fig7-v1.jpg)
+
+**Figure 7.:** (A) Normalized FRET efficiency between L-ANAP on the NTD and Cu2+-TETAC at position C485 at pH 8 (black) and pH 6 (red). FRET efficiencies, SEM, N and calculated distances are summarized in Table 2. (B) Normalized FRET efficiency between L-ANAP on the NTD and Cu2+-TETAC at position C505 at pH 8 (black) and pH 6 (red). (C) Normalized FRET efficiency between L-ANAP on the NTD and Cu2+-TETAC at position C515 at pH 8 (black) and pH 6 (red). (D) Representative binding curve for peptides of the NTD and CTD generated using MST. No indication of binding up to 250 μM. Box and whisker plot with whiskers ranging from minimum to maximum values and the bottom and top edges of the box denoting the 25th and 75th quartiles, respectively. Statistical significance shown using two-way ANOVA with Tukey’s multiple comparisons test are denoted between relevant comparison using appropriate asterisks. Ns indicates p>0.05, * indicates p≤0.05, ** indicates p≤0.01, *** indicates p≤0.001, **** indicates p≤0.0001. 6<N<27 for conditions shown here. Table 2 and source data show exact N for each condition.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/90755/elife-90755-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Normalized FRET efficiency between L-ANAP in the reentrant loop and Cu2+-TETAC at position C469 at pH 8 (black) and pH 6 (red). FRET efficiencies, SEM, N and calculated distances are summarized in Table 2. (B) Normalized FRET efficiency between L-ANAP incorporated at S24 and Cu2+-TETAC at either C477 or C485. Box and whisker plot with whiskers ranging from minimum to maximum values and the bottom and top edges of the box denoting the 25th and 75th quartiles, respectively. Statistical significance shown using two-way ANOVA with Tukey’s multiple comparisons test are denoted between relevant comparison using appropriate asterisks. Ns indicates p>0.05, * indicates p≤0.05, ** indicates p≤0.01, *** indicates p≤0.001, **** indicates p≤0.0001. 6<N<21 for conditions shown here. Table 2 and source data show exact N for each condition.
+
 In addition to the three positions on the cytosolic portion of the NTD, we also incorporated L-ANAP into three positions into the re-entrant loop of the channel. At the onset of this project, these positions were thought to be part of the cytosolic region as well, but newer Cryo-EM structures have demonstrated that residues ~19–41 are part of a loop that reinserts itself into the plasma membrane (Yoder and Gouaux, 2020). In each case, the FRET efficiency at rest is slightly higher than the efficiencies we measured between the NTD and CTD suggesting perhaps that the CTD might be somewhat closer to the re-entrant loop, and the membrane, than it is to the NTD (Figure 7—figure supplement 1). Measurements at pH 6 reveal that the CTD moves closer to the re-entrant loop with the notable exception of the position at A44TAG which is the only position we measure that shows a modest decrease in FRET with acidification.
 
-## Peptides of the N- and C-termini do not bind in solution
+### Peptides of the N- and C-termini do not bind in solution
 
 While ACCuRET is a powerful tool for looking at changes in intracellular domains in intact channels in real membranes, it is not a direct measure of binding. To look for direct interaction between the NTD and CTD, we employed microscale thermophoresis (MST; Figure 7D). MST is an immobilization-free, solution-based method that measures biomolecular interactions (Wienken et al., 2010). This approach measures the motion of a fluorescent molecule along a microscopic temperature gradient created by an IR laser. This motion depends on a number of factors including the size and chemical environment of the molecule. Any binding between the molecule attached to the fluorophore and second molecule result in a change in the motion. To perform MST, we synthesized peptides for the NTD and CTD of ASIC1a from rat. The NTD peptide contained residues 1–17 with an additional C-terminal cysteine to which Alexa-647 was conjugated. The CTD peptide contained residues 460–526 with the endogenous cysteine residues mutated to serine. The labelled NTD peptide was kept at a constant 2.5 nM concentration with increasing amounts of the CTD. Little to no change in fluorescence signal was seen at any concentration of CTD. Using this approach, we see no signs of binding between the two domains up to 250 μM providing additional evidence that a complex between these two domains does not form.
 
-## memFRET suggest termini reside in close proximity to the plasma membrane
+### memFRET suggest termini reside in close proximity to the plasma membrane
 
 Since our data suggest that the intracellular domains of the channel likely do not bind at rest and subsequently unbind during prolonged acidification, we decided to determine the topology of the NTD and CTD and then examine what sort of rearrangements these domains make during acidification. To do this, we employed a second tmFRET method that again uses L-ANAP as the FRET donor and metal ions as FRET acceptors but with the metal ions coordinated by membrane imbedded lipids instead of conjugated onto the channel which we termed memFRET (Figure 8A). By doing this, we measure distances between a single distinct L-ANAP position within a protein relative to the plasma membrane. We utilize a lipid with an NTA head group (stearoyl-nitrilotriacetic acid, C18-NTA) which introduces high-affinity metal binding sites throughout the plasma membrane. The R0 for this pair is shorter than seen in ACCuRET (12.4 Å at pH 8) and distances are calculated taking into consideration the presence of multiple acceptors (see Methods). We found no difference in the distance between E8TAG, G11TAG, and Q14TAG and the plasma membrane under resting conditions suggesting that the NTD may lay parallel to the membrane. L-ANAP at Q14TAG moved nearly ~4 Å closer at pH 6 but we did not detect a change at the other two positions (Figure 8B, Table 2). Not surprisingly, L-ANAP at S24TAG and I33TAG, which are within the bilayer, both showed very large FRET efficiency with metal in the membrane with I33TAG displaying a lower FRET efficiency at rest compared to S24TAG at both pH 8 and pH 6, as well as itself at pH 6 (Figure 8C). A number of the FRET efficiency values that we measured here were so large that they exceeded the resolvable range of memFRET. While we cannot determine a precise distance from the membrane, they are likely in very close proximity. (Table 2).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/90755/elife-90755-fig8-v1.jpg)
 
-**Figure 8.:** (A) Cartoon illustrating memFRET in unroofed cells between L-ANAP incorporated into the protein backbone and multiple C18-Co2+ incorporated into the plasma membrane (Created with Biorender.com). (B) Normalized FRET efficiency from memFRET experiments between L-ANAP at two sites in the re-entrant loop very near the plane of the intracellular leaflet of the plasma membrane. (C) Normalized FRET efficiency from memFRET experiments between L-ANAP on the NTD and Co2+-C18-NTA at pH 8 (black) and pH 6 (red). Zn2+-C18-NTA negative control for positions E8TAG and G11TAG shows that the changes in signal measured with Co2+-C18 are primarily due the presence of Co2+ and not to any other changes. (D) Normalized FRET efficiency from memFRET experiments between L-ANAP on the CTD and Co2+-C18-NTA at pH 8 (black) and pH 6 (red). Each data point represents FRET efficiency measured within a single cell at either pH 8 in black or pH 6 in red. FRET efficiencies, SEM, N and calculated distances are summarized in Table 2. Statistical significance shown using two-way ANOVA with Tukey’s multiple comparisons test are denoted between relevant comparison using appropriate asterisks. Ns indicates p>0.05, * indicates p≤0.05, ** indicates p≤0.01, *** indicates p≤0.001, **** indicates p≤0.0001. 6<N<15 for conditions shown here. Table 2 and source data show exact N for each condition.Figure 8—source data 1.p Values were calculated using a two-way ANOVA with Tukey’s multiple comparisons test.
+**Figure 8.:** (A) Cartoon illustrating memFRET in unroofed cells between L-ANAP incorporated into the protein backbone and multiple C18-Co2+ incorporated into the plasma membrane (Created with Biorender.com). (B) Normalized FRET efficiency from memFRET experiments between L-ANAP at two sites in the re-entrant loop very near the plane of the intracellular leaflet of the plasma membrane. (C) Normalized FRET efficiency from memFRET experiments between L-ANAP on the NTD and Co2+-C18-NTA at pH 8 (black) and pH 6 (red). Zn2+-C18-NTA negative control for positions E8TAG and G11TAG shows that the changes in signal measured with Co2+-C18 are primarily due the presence of Co2+ and not to any other changes. (D) Normalized FRET efficiency from memFRET experiments between L-ANAP on the CTD and Co2+-C18-NTA at pH 8 (black) and pH 6 (red). Each data point represents FRET efficiency measured within a single cell at either pH 8 in black or pH 6 in red. FRET efficiencies, SEM, N and calculated distances are summarized in Table 2. Statistical significance shown using two-way ANOVA with Tukey’s multiple comparisons test are denoted between relevant comparison using appropriate asterisks. Ns indicates p>0.05, * indicates p≤0.05, ** indicates p≤0.01, *** indicates p≤0.001, **** indicates p≤0.0001. 6<N<15 for conditions shown here. Table 2 and source data show exact N for each condition.
 
 Finally, to look at rearrangements of the CTD during acidification, we introduced TAG codons at two positions along the length of the CTD: 464 near the membrane and 505 nearer the end of the CTD. Surprisingly, at pH 8, both positions showed large FRET signals suggesting that the longer CTD, including the distal portion, may dwell near the plasma membrane (Figure 8D, Table 2). During acidification, however, the CTD appears to begin to move away from the plasma membrane with the more distal position moving farther than the more proximal position.
 
@@ -120,7 +591,7 @@ Making the same measurements with L-ANAP at positions along the CTD, we found th
 
 **Figure 9.:** (A) Cartoon schematic of axial movements of the N- and C-termini relative to the membrane at rest and prolonged acidification. The proximal NTD moves slightly closer to the membrane while the proximal CTD moves away during acidification.
 
-## Comparison to previous studies
+### Comparison to previous studies
 
 There have been two previous studies that have looked at potential rearrangements in the intracellular domains of ASIC1a. The first used CFP and YFP attached to the NTD and CTD and measured a change in the ratio of YFP/CFP intensity over time as a measure of FRET between the two domains. They found a slow pH dependent decrease in that ratio (Wang et al., 2020). The second study repeated this measurement with FPs that are not sensitive to pH in the pH 6–8 range and found that there was no change in the ratio of acceptor/donor fluorescence with prolonged acidification (Couch et al., 2021). YFP has a pKa of around 6.9 and its fluorescence changes dramatically between pH 7.4 and 6 (Llopis et al., 1998).
 
@@ -134,7 +605,7 @@ This same study mapped the topography of the intracellular termini of ASIC1a com
 
 Their results from the CTD quenching experiments are somewhat in contrast to what we see here. Our results suggest that the distal portion of the CTD spends significant time near the plasma membrane: enough to generate the large quenching signal we measure. The DPA quenching experiments suggest the proximal portion of the CTD is ~12–16 Å from the plasma membrane and the more distal portions extend down into the cytosol. Determining the motion of the CTD is complicated by the biphasic nature of the distance dependence curves for DPA quenching. The authors conclude that the CTD moves towards the membrane during acidification but acknowledge that their data could also be consistent with a move away, similar to what we see. There are a number of potential sources of the differences in our measurements. First, the previous study used ASIC1 from chicken whereas we used ASIC1a from rat. The sequences of the termini are largely conserved but the conformational changes that surround prolonged acidification could differ. It is well established, for instance, that ASIC1a from rat (and human) undergo a slow inactivation process during acidosis called tachyphylaxis that is absent in the chicken isoform (Chen and Gründer, 2007; Rook et al., 2020). Second, insertion of large FPs into a relatively short CTD could impact the ability of the CTD to position itself near the plasma membrane.
 
-## Limitations to our approach
+### Limitations to our approach
 
 It is important to note that our approaches has limitations that need to be considered when thinking about our results. A number of controls are required when attempting to incorporate UAAs. The western blots and function give us confidence that we are primarily measuring full-length ANAP-incorporated ASIC1a. Given the position of the N-terminal TAG mutations, premature truncation at any of these positions would yield very short peptides that are not capable of forming functional channels. We only see bands in the presence of -LANAP in our western blots suggesting that readthrough, where the ribosome inserts a natural amino acid instead of L-ANAP, should not present a major problem. However, it is possible that premature truncation at positions in the CTD yield truncated subunits capable of forming functional channels. These truncated subunits could co-assemble with other truncated subunits and full-length L-ANAP containing subunits. The truncated channels would be invisible to the memFRET measurement but it is possible that co-assembled truncated channels could alter the position of the CTD.
 
@@ -146,7 +617,7 @@ Our memFRET approach is also potentially impacted by non-specific fluorescence a
 
 We would argue that these limitations may impact the precise measurements made here but are unlikely to impact the overall trends. For instance, the dynamic nature of the NTD might mean we overestimate the proximity of the domain to the plasma membrane but is less likely to impact the conclusion that the proximal portion of this region spends a portion of its time mostly parallel to the membrane surface. Similarly, the distances we report for the position of the CTD relative to the membrane may be closer than reality, but the observation the acidification moves the domain away from the membrane is less likely impacted. Finally, the major goal of this project was to test the hypothesis that the NTD and CTD interact at rest and unbind during acidification and none of these caveats to our approach seem to suggest that our conclusion should be anything other than the N- and C-termini do not bind at resting pH.
 
-## Conclusion
+### Conclusion
 
 We believe the simplest interpretation of our results is that the NTD and CTD of ASIC1a do not interact at rest and that some other factor must be preventing RIPK1 binding under resting conditions. In addition, these data are most consistent with a model where the intracellular domains both spend significant time in close proximity to the plasma membrane with the CTD perhaps moving away during acidification. There is precedence for intracellular domains laying largely parallel to the plasma membrane. AMPA receptors are thought to have C-termini that are largely parallel to the membrane surface (Zachariassen et al., 2016) and the NTD of P2X receptors appears to lay along the plasma membrane across the pore region and form a ‘cap’ on the permeation pathway which can impact selectivity (Gonzales et al., 2009; Tam et al., 2023; Yoder and Gouaux, 2020). Given the structural relationship between P2X channels and ASICs and the results we show here, it will be interesting to see if perhaps the NTD of ASIC could act in a similar way.
 
@@ -154,35 +625,154 @@ Together our data suggest an alternative hypothesis for the inhibition of RIPK1 
 
 ## Methods
 
-## Molecular biology- constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>CHO-K1</td>
+      <td>ATCC</td>
+      <td>ATCC CCL-61 RRID:CVCL_0214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pANAP</td>
+      <td>Addgene: DOI: 10.1021/ja4059553</td>
+      <td>Addgene: 48696</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>peRF1-E55D</td>
+      <td>Jason Chin Laboratory, MRC Laboratory of Molecular Biology, DOI: 10.1021/ja5069728</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rASIC1acDPCitrine.pCMV</td>
+      <td>Twist Bioscience</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rASIC1acDPCitrine.pCMV TAG and Cysteine mutants</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers available upon request</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Purified Rabbit Anti-GFP, polyclonal</td>
+      <td>Torrey Pines Biolabs</td>
+      <td>Torrey Pines Biolabs Cat# TP401 071519, RRID:AB_10013661</td>
+      <td>Western blots (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680Rd Goat anti-Rabbit IgG, polyclonal</td>
+      <td>LI-COR Biosciences</td>
+      <td>LI-COR Biosciences Cat# 926–68071, RRID:AB_10956166</td>
+      <td>Western blots (1:15,000)</td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>1-(2-pyridin-2-yldisulfanyl)ethyl)–1,4,7,10-tetraazacyclododecane (TETAC)</td>
+      <td>Toronto Research Chemicals</td>
+      <td>Toronto Research Chemicals Cat#P991915</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>N2,N2-bis(carboxymethyl)-N6-(1-oxooctadecyl)-l-lysine, C18-NTA</td>
+      <td>Toronto Research Chemicals</td>
+      <td>Toronto Research Chemicals Cat#S686540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>L-ANAP-OMe</td>
+      <td>AsisChem Inc.</td>
+      <td>AsisChem Inc Cat#0146</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>rASIC1a C-terminus</td>
+      <td>LifeTein</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>pClamp and clampfit</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Graphpad Prism 8</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH DOI: https://doi.org/10.1038/nmeth.2089</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular biology- constructs
 
 A CMV vector containing ASIC1a from rat with conservative mutations listed in Figure 1—figure supplement 1, a short proline rich linker based on a flexible region from DNA polymerase, previously shown to have minimal effect of ASIC3 gating (Klipp et al., 2020), followed by an mCitrine tag on the C-terminus was synthesized (Twist Bioscience; San Francisco, CA). TAG and cysteine mutations were introduced using oligonucleotide-based mutagenesis with KOD Hot Start Master Mix according to manufacturer’s instructions (Merk Millipore; Burlington, MA). All sequences were confirmed with DNA sequencing (ACGT DNA Sequencing Services; Wheeling, IL). pANAP was a gift from Peter Schultz (Addgene plasmid # 48696; http://n2t.net/addgene:48696; RRID:Addgene_48696; Chatterjee et al., 2013). peRF1-E55D was a kind gift from the Chin Laboratory (MRC Laboratory of Molecular Biology, Cambridge UK).
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 CHOK-1 cells were obtained from ATCC (CCL-61 lot # 70029706). Chinese Hamster Ovary cells were purchased from ATCC and used within 2 years of purchase date. Cells were frozen at passage 2 and thawed and used until passage 14. Cell morphology, growth rate, and transfection efficiency, and growth rate were monitored to ensure that the cell lines did not change over time. Cells tested negative for mycoplasm contamination. Cells were cultured in F-12 Ham’s Media with 1 mM Glutamine (Gibco; New York) supplemented with 10% Fetal Bovine Serum (FBS) and 1% Antibiotic-Antimycotic (Gibco) at 37 C in a humidified atmosphere of 5% Carbon dioxide. Media was replaced every 2–3 days. Cells were transfected by using the nucleofector (Lonza; Basel). Prior to detachment cells were washed with Dulbecco’s Phosphate Buffered Saline (DPBS, Gibco; New York) without calcium and magnesium. Cells were detached with TrypLE Express, 1.5 mL for a T75 flask for 5 min at 37 ° C and resuspended in 80 μL of SF cell line solution (Lonza; Basel) per flask. Twenty μL of cell solution was transferred to Eppendorf tube containing DNA (1.7 ug of rASIC-TAG, 1.7 μg pANAP and 1.7 μg eRF) to mix and immediately transferred to 20 μL Nucleovette strip for transfection using CHO-K1 protocol, DT-133, on the 4D-Nucleofector. We settled on a 1:1:1 ratio of channel: pANAP: eRF with a total of 5 μg DNA as the best ratio and total amount of DNA to get robust channel expression with the least readthrough- data not shown. eRF is critical for high yield of L-ANAP expressing full-length channels (Schmied et al., 2014). Cells were immediately transferred to prewarmed media and then split into 3–4 wells containing 25 mm poly-lysine treated coverslips and 10 μM ANAP. Cells were cultured at 30 ° C/ 5% CO2 overnight which has been shown to increase protein production and arrest cell proliferation (Kaufmann et al., 1999). Cells were imaged 24–48 hr after transection. Six-well plates were wrapped in aluminum foil to protect from light. Cell passage number never exceeded P15 to ensure robust transient expression.
 
-## Chemicals
+### Chemicals
 
 L-ANAP-Me (AsisChem Inc; Waltham, MA) stocks were made by dissolving in DMSO. These stocks were wrapped in aluminum foil and stored at 3 mM at – 20 °C. Individual aliquots were frequently freshly thawed and freeze/thaw cycles were avoided. For use, 10 μL of L-ANAP stock was added to 3 mL of media which was then added to the cells.
 
-## Western blot
+### Western blot
 
 CHO-K1 cells were transfected with rASIC-TAG, pANAP and eRF and supplemented with 10 µM L-ANAP. Transfection was performed in a similar fashion with only one minor difference. The larger 100 μL nuclecuvette was used and a single 10 cm dish of cells was resuspended in 100 μL of Ingenio electroporation solution for nucleofection (Mirus; Madison, WI). Approximately 18 hr after transfection, cells were harvested for western blot analysis. Media was aspirated and cells were washed with ice-cold DPBS. Cells were removed using a cell scraper and collected by centrifugation at 1000 xg for 5 min. Protein concentration was first normalized using cell pellet weights and resuspended using 25 μL of lysis buffer (300 mM NaCl, 20 mM TEA, 2 mM EDTA, 20% glycerol, 1% DDM) per 10 mg cells. DDM and Halt Protease inhibitor (Thermo Fisher Scientific; Waltham, MA) were added at time of use. Cells were lysed via end-over-end mixing for 1 hr at 4 °C followed by a 45 min centrifugation at 17,000 xg. Cleared lysates were loaded by normalizing to total protein concentration using A280. Samples were run on either 4–12% Bis-Tris precast gels (Thermo Fisher Scientific; Waltham, MA) or Novex WedgeWell precast 4–12% Tris-Glycine gels (Thermo Fisher Scientific; Waltham, MA) at 200 V for 30–45 min. Protein was transferred to a PDVF membrane using Trans-Blot Turbo Transfer System (Bio-Rad; Hercules, CA) at 7 V, 1.3 A for 7 min. Membrane was incubated in blocking buffer (TBS-T, 5% milk) at room temperature for 1 h. Membrane was then incubated overnight in TBS-T (20 Tris, 137 NaCl, 0.1% Tween20) supplemented with 1:5000 primary antibody, purified rabbit anti-GFP TP401, (Torrey Pines Biolabs; Houston, TX). Membrane was washed 5x5 min with TBS-T followed by incubation with 1:15,000 secondary antibody for 1 hr at RT while keeping protected from light, IRDye 680RD Goat anti-Rabbit 925–681817 (Licor; Lincoln, NE). Membrane was washed 5x5 min with TBS-T and imaged using Licor Odessey FC.
 
-## Electrophysiology
+### Electrophysiology
 
 Experiments were performed in the whole-cell patch clamp configuration 18 hr after nucleofection. Borosilicate glass pipettes (Harvard Apparatus) were pulled to a resistance of 3–7 MΩ (P-1000; Sutter Instrument) and filled with an internal solution containing (in mM) 20 EGTA, 10 HEPES, 50 CsCl, 10 NaCl, and 60 CsF, pH 7.2. Extracellular solution contained (in mM) 110 NaCl, 5 KCl, 40 NMDG, 10 MES, 10 HEPES, 5 glucose, 10 Trizma base, 2 CaCl2, and 1 MgCl2, and pH was adjusted as desired with HCl or NaOH. An Axopatch 200B amplifier and pCLAMP 10.7 (Axon Instruments) were used to record whole-cell currents. Solution changes were achieved through rapid perfusion using a SF-77B Fast-Step perfusion system (Warner Instruments) and Fluorescence was visualized on an Olympus IX73 microscope with a CoolLED pE-4000 illumination system. Recordings were performed at a holding potential of −80 mV with a 5 kHz low-pass filter and sampling at 10 kHz.
 
-To measure the pH dependence of activation, rapid solution changes from pH 8 to seven separate test pH values were performed on each cell. Test pH values were applied for 1.5 s, typically followed by 35 s at resting pH of 8. Longer holding times (up to 90 s) at resting pH were necessary in some cases to ensure minimal tachyphylaxis which was controlled by monitoring current amplitudes for each individual cell for at least two full recordings. Test pH currents were normalized to the maximally activating condition (pH 5.5) for each recording. Normalized data from a minimum of three separate cells for each construct was averaged and SEM was calculated to generate pH plots. Half- maximally activating pH values, pH0.5, were calculated by fitting to a Hill-Type equation:(1)I= 11+10[(pH0.5-pHx)n]
+To measure the pH dependence of activation, rapid solution changes from pH 8 to seven separate test pH values were performed on each cell. Test pH values were applied for 1.5 s, typically followed by 35 s at resting pH of 8. Longer holding times (up to 90 s) at resting pH were necessary in some cases to ensure minimal tachyphylaxis which was controlled by monitoring current amplitudes for each individual cell for at least two full recordings. Test pH currents were normalized to the maximally activating condition (pH 5.5) for each recording. Normalized data from a minimum of three separate cells for each construct was averaged and SEM was calculated to generate pH plots. Half- maximally activating pH values, pH0.5, were calculated by fitting to a Hill-Type equation:
+
+$$
+I= \frac{1}{1+10^{[(pH0.5-pHx)n] }}
+$$
 
 Where n=Hill number.
 
-## Microscale thermophoresis
+### Microscale thermophoresis
 
 Peptides were synthesized by LifeTein (Somerset, NJ) and resuspended according to manufacturer instructions and stored in individual aliquots at –80° C. rASIC-CT was titrated to 5 nM rASIC-NT647 using a 2 x dilution series between 3 mM and 4.8 μM in 50 mM Tris (pH 7.4), 150 mM NaCl, 0.005% Tween in a total volume of 16 μL. After 5 min incubating at room temperature, the mixtures were transferred to Monolith NT.115 series premium coated capillaries. MST using a Monolith NT.115Pico instrument was performed using Pico-RED channel, 10% excitation power, medium MST power at room temperature (NanoTemper Technologies; Munich Germany).
 
-## Cell unroofing and imaging
+### Cell unroofing and imaging
 
 Coverslips were washed 5 times with DPBS before adding 1 mL swell buffer (1 part Stabilization Buffer Tris (SBT) pH 8 : 3 parts water) for 30 s-2 min. Swell buffer was removed and cells were subjected to a mechanical force of liquid using 1.5 mL SBT pH 8 (15 mM Tris, 15 mM MES, 70 mM KCl, 1 mM MgCl) in a 5 mL syringe with a 22Gx1.5 inch PrecisionGlide needle attached (Becton, Dickinson; Franklin Lakes, NJ). Coverslip was subjected to a gentle steady stream of buffer, with the needle 1–2 inches away. Buffer was removed and cells were washed 5 x with SBT pH 8 or pH 6.
 
@@ -190,42 +780,54 @@ tmFRET experiments with unroofed cells were performed using an Olympus IX83 inve
 
 25 mm coverslips that had already been unroofed were mounted onto Quick Exchange Platform with a RC-40LP chamber (Warner; Hollistan MA) on the microscope stage. All solutions were applied directly to the chamber with a pipette. 1 mL x 5 was added for all washes to ensure complete washout of the chamber. TETAC, C18, DTT and EDTA were added in the amounts noted in the following sections.
 
-## Labeling with C18-NTA
+### Labeling with C18-NTA
 
 C18-NTA (N2,N2-bis(carboxymethyl)-N6-(1-oxooctadecyl)-l-lysine) was made into individual 10 mM stocks in DMSO and stored at –20 °C. C18-NTA was diluted to 10 μM in Stabilization Buffer Tris (SBT) for tmFRET experiments. Individual aliquots were freshly thawed for each experiment and freeze/thaw cycles were avoided.
 
 A typical memFRET experiment followed these steps. Cells were unroofed as described in unroofing section. Coverslip was searched using mCitrine to look for unroofed cells expressing rASIC-TAG and these cells were marked using the Stage Navigator position finder in cellSens software (Olympus; Shinjuku, Japan). Initial images were taken at either pH 8 or pH 6. Solution is removed and 1 mL of 10 μM C18-NTA is added for 5 min x2. C18-NTA was removed, and coverslip was washed 5 x with SBT. 1 mL of 11 μM CoSO4 was added for 1 min x2. Coverslip was washed 5 x with SBT at intended pH prior to taking the FRET image to remove any unbound or loosely bounded cobalt. FRET image was taken in appropriate pH SBT. One mL 10 mM EDTA was added for 1–2 min and removed. Coverslip was washed 5 x with SBT at intended pH and the final image was taken in appropriate pH SBT.
 
-## Labeling with Cu2+-TETAC
+### Labeling with Cu2+-TETAC
 
 TETAC was made into individual 100 mM stocks in DMSO and stored at –20 °C. For tmFRET experiments, 1 μL TETAC stock and 1 μL of 110 mM CuSO4 were mixed together and incubated for 1 min. The solution turned a deep blue, indicating that the Cu2+ was bound to the TETAC cyclen ring. This mixture was diluted to 1 mM TETAC and 1.1 mM CuSO4 by adding 98 μL of SBT. This solution was then brought up to 10 mL so that the Cu2+-TETAC was used at a final concentration of 10 μM. There is a 10% over-abundance of Cu2+ to ensure saturation of the TETAC. Individual aliquots were freshly thawed for each experiment and freeze/thaw cycles were avoided.
 
 A typical ACCuRET experiment followed the ensuing steps. Cells were unroofed as described in unroofing section. Coverslip was searched using mCitrine to look for unroofed cells expressing rASIC-TAG and these cells were marked using the Stage Navigator position finder in cellSens software (Olympus; Shinjuku, Japan). Initial image was taken with either pH 8 or pH 6 SBT. Solution is removed and 1 mL of pre-reacted 10 μM Cu2+-TETAC was applied for 1 min x2. Coverslip was washed 5 x with SBT at intended pH prior to taking the FRET image to remove any unreacted Cu2+-TETAC. FRET image was taken in intended pH SBT. 1 mL 1 mM DTT was added for 1–2 min and removed. Coverslip was washed 5 x with SBT at intended pH and the final image was taken in intended pH SBT.
 
-## Image analysis
+### Image analysis
 
-Images were analyzed using ImageJ (National Institutes of Health; Bethesda, MD; Schneider et al., 2012). Regions of interest (ROI) were selected by thresholding the image based on the mCitrine channel and using the wand tool to automatically select the cell perimeter. Regions of the cell that were not unroofed were omitted from the selected ROI. For each cell, a nearby background region containing no cell or debris was selected. The mean gray value of the background ROI was subtracted from the mean gray value of the ROI for the corresponding cell. Photobleaching was measured by performing mock experiments at multiple TAG positions where no metal was added but washes and time between imaged remained the same at both pH 8 and pH 6. L-ANAP fluorescence was normalized to the first image. The normalized L-ANAP fluorescence of the second images, which represents the FRET image, were averaged together across multiple images and multiple experiments. We report our FRET as FRET efficiency (E) and correct the ANAP fluorescence for bleaching at pH 8 and pH 6 using the following equation:(2)E=1-FFRETFbleach
+Images were analyzed using ImageJ (National Institutes of Health; Bethesda, MD; Schneider et al., 2012). Regions of interest (ROI) were selected by thresholding the image based on the mCitrine channel and using the wand tool to automatically select the cell perimeter. Regions of the cell that were not unroofed were omitted from the selected ROI. For each cell, a nearby background region containing no cell or debris was selected. The mean gray value of the background ROI was subtracted from the mean gray value of the ROI for the corresponding cell. Photobleaching was measured by performing mock experiments at multiple TAG positions where no metal was added but washes and time between imaged remained the same at both pH 8 and pH 6. L-ANAP fluorescence was normalized to the first image. The normalized L-ANAP fluorescence of the second images, which represents the FRET image, were averaged together across multiple images and multiple experiments. We report our FRET as FRET efficiency (E) and correct the ANAP fluorescence for bleaching at pH 8 and pH 6 using the following equation:
+
+$$
+E=1-\frac{F_{FRET}}{F_{bleach}}
+$$
 
 We confirmed there were no significant additional sources of energy transfer (mCitrine quenching, solution quenching etc) by performing the tmFRET experiments with zinc rather than copper and cobalt. Zinc has been shown to be coordinated by TETAC and NTA and does not measurably absorb light (Lacerda et al., 2007). We chose to not adjust the data to account for this nonspecific quenching because the measurements showed there was no notable additional quenching, however, do include these measurements on our FRET graphs (Figures 6A and 8D).
 
-## Spectrophotometry/fluorometry measurements
+### Spectrophotometry/fluorometry measurements
 
 Absorption measurements for Cu2+, Co2+, Zn2+ free in solution, as well as bound to either TETAC or C18-NTA were made using a NanoDrop Onec (ThermoFisher Scientific; Waltham, MA). The absorption spectra of 2 mM Cu2+-TETAC and 2 mM Co2+-C18-NTA were measured in both pH 6 and pH 8 SBT. Measurements were repeated at least three times and the data were averaged together. The extinction coefficient was calculated using the averaged absorbances.
 
 In order to most closely mimic L-ANAP being incorporated into the protein backbone, we reacted L-ANAP with amine reactive agarose beads according to manufacturer’s protocol. (ThermoFisher). We then measured L-ANAP spectra at pH 8 and pH 6 using an IsoPlane 160 (Princeton Instruments, Trenton, NJ) attached to our same microscope configuration from our tmFRET experiments.
 
-## Distance calculations for ACCuRET
+### Distance calculations for ACCuRET
 
-The R0 for L-ANAP with Cu2+-TETAC was calculated using the following equation. The R0 describes the distance that predicts 50% energy transfer between the donor and acceptor. We calculate two different R0 values for our two pH conditions (Cu2+-TETAC pH 8, Cu2+-TETAC pH 6):(3)R0=C(JQη-4κ2)6
+The R0 for L-ANAP with Cu2+-TETAC was calculated using the following equation. The R0 describes the distance that predicts 50% energy transfer between the donor and acceptor. We calculate two different R0 values for our two pH conditions (Cu2+-TETAC pH 8, Cu2+-TETAC pH 6):
 
-C is a scaling factor, J is the normalized spectral overlap of ANAP emission at pH 8 or pH 6 with either Cu2+-TETAC pH 8 or Cu2+-TETAC pH 6, Q is the quantum yield of L-ANAP, n is the index of refraction, which is 1.33 here, and κ2 is the orientation factor which we assumed to be 2/3 based on the assumption of dynamic isotropic orientation. For Q, we use 0.22 based on previous determination of L-ANAP quantum yield in SBT (Zagotta et al., 2016). Distances for each TAG position relative to the plasma membrane or to the singular cysteine in the CTD was calculated using the Förster equation:(4)r= R01E-16
+$$
+R_{0}=C\sqrt[6]{(JQη^{-4}κ^{2})}
+$$
 
-## Distance calculations for memFRET
+C is a scaling factor, J is the normalized spectral overlap of ANAP emission at pH 8 or pH 6 with either Cu2+-TETAC pH 8 or Cu2+-TETAC pH 6, Q is the quantum yield of L-ANAP, n is the index of refraction, which is 1.33 here, and κ2 is the orientation factor which we assumed to be 2/3 based on the assumption of dynamic isotropic orientation. For Q, we use 0.22 based on previous determination of L-ANAP quantum yield in SBT (Zagotta et al., 2016). Distances for each TAG position relative to the plasma membrane or to the singular cysteine in the CTD was calculated using the Förster equation:
+
+$$
+r= R_{0}\sqrt[6]{\frac{1}{E}-1}
+$$
+
+### Distance calculations for memFRET
 
 To determine the distances for our memFRET approach, we needed to determine the relationship between distance and FRET efficiency using the theoretical dependence of FRET efficiency on closes approach distance. To do this, we used a previously published approach (Gordon et al., 2016) which was based on Förster’s distance-dependent model of energy transfer (Förster, 1949) as described for the FRET pair rhodamine B and Co2+. To do this, we calculated the R0 for ANAP and Co2+-C18-NTA (See below for values) again using 0.22 for the quantum yield, 2/3 for κ, and a refraction index of 1.33. The density of Co2+-C18-NTA in the membrane was assumed to be ~0.002 molecules/ Å2. This assumption came from two sources. First, this value was previously determined by measuring the quenching of rhodamine B in the membrane by the same Co2+-C18-NTA (Gordon et al., 2016). We confirmed this result by repeating the same experiment and arrived at the same density of Co2+-C18-NTA in the membrane (data not shown).
 
 R0 values calculated for ACCuRET and memFRET were:
 
-## Statistics
+### Statistics
 
 Data for tmFRET experiments are expressed as mean ± SEM of n independent unroofed cells. Statistical tests were performed in GraphPad Prism version 9.3.1 for Windows (GraphPad Software; San Diego, CA). Significance was determined using two-way ANOVA with a Tukey’s post-hoc test for multiple comparisons unless otherwise noted. Significance levels: ns indicates p>0.05, * indicates p≤0.05, ** indicates p≤0.01, *** indicates p≤0.001, **** indicates p≤0.0001. p-Values are all reported in the Source Data files associated with each figure. All replicates in this study are biological replicates. All data generated or analyzed are included in the figures.

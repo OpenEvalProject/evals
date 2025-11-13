@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03te2zs36 Cognitive Science and Allied Health School, Beijing Language and Culture University Beijing China
-2. https://ror.org/03te2zs36 Speech and Hearing Impairment and Brain Computer Interface LAB, Beijing Language and Culture University Beijing China
+1. Cognitive Science and Allied Health School, Beijing Language and Culture University Beijing China ([ROR:03te2zs36](https://ror.org/03te2zs36))
+2. Speech and Hearing Impairment and Brain Computer Interface LAB, Beijing Language and Culture University Beijing China ([ROR:03te2zs36](https://ror.org/03te2zs36))
 
 † Corresponding author
 

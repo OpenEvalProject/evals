@@ -16,25 +16,25 @@
 
 ### Affiliations
 
-1. https://ror.org/035b05819 University of Copenhagen Copenhagen Denmark
+1. University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
 2. Scientist Rebellion Denmark Copenhagen Denmark
-3. https://ror.org/02nkf1q06 University of Essex Colchester United Kingdom
+3. University of Essex Colchester United Kingdom ([ROR:02nkf1q06](https://ror.org/02nkf1q06))
 4. Scientist Rebellion Italy Rome Italy
 5. Scientist Rebellion UK Colchester United Kingdom
-6. https://ror.org/0495fxg12 Institut Pasteur Paris France
+6. Institut Pasteur Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
 7. Scientist Rebellion France Paris France
-8. https://ror.org/01c27hj86 Universidade de Lisboa Lisbon Portugal
+8. Universidade de Lisboa Lisbon Portugal ([ROR:01c27hj86](https://ror.org/01c27hj86))
 9. Scientist Rebellion Portugal Lisboa Portugal
-10. https://ror.org/05xg72x27 Norwegian University of Science and Technology Trondheim Norway
+10. Norwegian University of Science and Technology Trondheim Norway ([ROR:05xg72x27](https://ror.org/05xg72x27))
 11. Scientist Rebellion Norway Trondheim Norway
-12. https://ror.org/01xtthb56 University of Oslo Oslo Norway
+12. University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
 13. Scientist Rebellion Turtle Island Turtle Island United States
-14. https://ror.org/022fs9h90 University of Fribourg Fribourg Switzerland
+14. University of Fribourg Fribourg Switzerland ([ROR:022fs9h90](https://ror.org/022fs9h90))
 15. Scientist Rebellion Switzerland Fribourg Switzerland
-16. https://ror.org/035b05819 University of Copenhagen Copenhagen Denmark
-17. https://ror.org/00xkeyj56 University of Kent Canterbury United Kingdom
+16. University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
+17. University of Kent Canterbury United Kingdom ([ROR:00xkeyj56](https://ror.org/00xkeyj56))
 18. Scientist Rebellion UK Canterbury United Kingdom
-19. https://ror.org/041kmwe10 Imperial College London United Kingdom
+19. Imperial College London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
 20. Scientist Rebellion UK London United Kingdom
 
 † Corresponding author
@@ -63,35 +63,35 @@ Thus, for both personal and professional reasons, many life scientists have been
 
 Yet, our societies have not developed the radical, collective and co-ordinated systems change that a planetary-scale emergency would require. Given the level of urgency, it is critical to ask how effective scientific efforts have been at producing such change and/or at galvanising politicians to take action. Here we discuss five areas where we think life scientists have failed in this regard: biodiversity conservation; food security; global public health; mental health; and life sciences education and dissemination. Each area has garnered enormous attention from life scientists, yet the situation in each gets dramatically worse every year.
 
-## Biodiversity and conservation
+### Biodiversity and conservation
 
 Nearly one out of every eight species is threatened with extermination, and many more have dramatically declining populations (IPBES, 2019). This issue has touched virtually all research in ecology, which is increasingly morphing into a science of extinction and risk assessment (Gardner and Bullock, 2021). The biodiversity crisis garnered public attention in the 1960s with the publication of Silent Spring by Rachel Carson (Carson, 1962). The following decades saw some success stories, such as the Endangered Species Act in the US and the global ban on whaling, largely as a consequence of activism (Raymond, 2018; Mackenzie, 2018). Yet, these efforts were far from enough, and the preservation of biodiversity is currently at the bottom of the list of political concerns (Bradshaw et al., 2021).
 
 The amount of funding dedicated to conservation reflects this stark reality; the spending on global protected areas is estimated to be approximately equal to the total money spent on beard-grooming products around the world (Gardner and Bullock, 2021; Waldron et al., 2020; Thomas and Deshmukh, 2019). Out of the 20 global targets agreed in 2010 as part of the Convention on Biological Diversity, zero were met by 2020 (Convention on Biological Diversity, 2020). This is despite repeated calls from researchers for increased environmental protections and the creation of research and policy organisations such as the IPBES and the International Union for the Conservation of Nature. Research papers, media opinion pieces and conference reports are clearly not creating the impact needed to stop (or even slow down) species loss and population declines (Gardner et al., 2021; Green, 2021).
 
-## Food security
+### Food security
 
 The climate and ecological crises are deeply linked to threats to food security, as the life-support systems on which humans are dependent are jointly disrupted by ecosystem decimation and climate breakdown (FAO, 2019). Out of the world’s agricultural land, 77% is used to support livestock, which is not only one of the largest sources of greenhouse gas emissions (Rojas-Downing et al., 2017; IATP, GRAIN, Heinrich Böll Stiftung, 2017) and global habitat destruction (Mundy, 2021), but also makes up only 18% of the world’s caloric supply, predominantly in high-income nations (FAO, 2022). In addition, humans are now massively reliant on a select set of commodity crops, produced via industrial-scale monoculture farming and traded by a few corporations through international markets: maize, rice and wheat provide approximately 40% of humanity’s chemical energy. They are predominantly grown in unevenly distributed continental grassland areas, which are particularly vulnerable to climate breakdown and consequent water scarcity (Dai, 2013; Smaje, 2020). Rising temperatures are directly reducing crop growth duration, effectively reducing yield (Zhao et al., 2017). Our crop production also relies on insect pollination, natural pest control and nutrient recycling by arthropods, all of which are threatened by the ongoing collapse of invertebrate populations (Wagner, 2020). These issues have been exhaustively documented (Arora, 2019; Hatfield and Prueger, 2015; Gourdji et al., 2013) and have been the topic of discussion at large international organisations (FAO, 2019).
 
 After all this reporting and debate, are governments working to secure resilient food systems and decrease the risk of crop failures for the years ahead? The evidence points squarely against this. The rate of fossil fuel emissions has never been higher, taking us rapidly away from the planetary safe zone in which our agricultural systems have existed for millennia (IPCC, 2021). A number of studies predict declines in global crop yields of between 20% and 90% within just a few decades, as a consequence of climate change, soil erosion and the decline in key pollinator populations (Schlenker and Roberts, 2009; Arora, 2019; Hatfield and Prueger, 2015; Gourdji et al., 2013). Meanwhile, governments are neglecting to develop resilient and equitable food production and distribution strategies at the scale needed to prevent simultaneous crop collapses and famine (Tigchelaar et al., 2018; Gaupp et al., 2019). For example, a recent study showed that much of the research funded by the US Department of Agriculture is completely unrelated to sustainable agriculture, instead focusing on (unsustainable) animal farming or enhancing monoculture technologies: projects with a focus on agroecology and socioeconomic sustainability constitute just between 5% and 10% of allocated public funds (DeLonge et al., 2016).
 
-## Global public health
+### Global public health
 
 The biospheric emergency is linked to the deterioration of human health, through increasing exposure to extreme climate events (Romanello et al., 2021; Vicedo-Cabrera et al., 2021; Gasparrini et al., 2015), and our decreasing ability to effectively respond to epidemics (WHO, 2021). As governments and corporations are demolishing the biosphere, they are forcing species to coexist in new ways, including new interactions between pathogens and potential hosts (Schmeller et al., 2020; Carlson et al., 2022). More than half of human pathogenic diseases are predicted to be aggravated by climate change. Emerging epidemics in livestock and crops, as well as direct effects of climate change on food production, will also increase the risk of malnutrition and famine (Romanello et al., 2021; Mora et al., 2022); undernutrition and disease will thus be overlapping threats to an increasingly vulnerable number of people worldwide.
 
 In light of this knowledge, is the world getting ready for the impact that the biospheric emergency will have on global public health? The answer appears to be “no”. Recent studies have highlighted a remarkable lack of preparedness for future pandemics (Gibb et al., 2020; Romanello et al., 2021), with the last author on one of these studies (Kate Jones of UCL) painting a bleak picture: “We’ve been warning about this for decades. Nobody paid any attention” (Tollefson, 2020). Moreover, it is unusual for research programmes in public health and medicine to consider the potential impact of rising temperatures and extreme weather on public health. Similarly, policymakers are neglecting to account for premature deaths related to heat stress (Gasparrini et al., 2015), which has already claimed thousands of victims in 2022 (Coi and Weise, 2022).
 
-## Mental health
+### Mental health
 
 There are also growing concerns about the impact of the climate and ecological crises on mental health (Hayward and Ayeb-Karlsson, 2021; Kelman et al., 2021; Royal College of Psychiatrists, 2021). A recent IPCC report found that climate change has already had a negative impact on mental health around the world, and this is expected to get worse (IPCC, 2022a). To illustrate this, we performed a Web of Science search for research articles on the topics of “eco-anxiety,” “climate anxiety” and “ecological grief”, and found that these have skyrocketed in recent years: no articles were found for any year before 2010 and there were fewer than two articles per year between 2010 and 2017. However, there were 49 such articles in 2021, and as of 13 September the figure for 2022 was 43. Indeed, despite some taxonomic confusion (Clayton, 2020), studies suggest an increasing range of negative emotions are associated with awareness of climate change (Brosch, 2021). In the US, for example, a poll found that almost half of the adults aged 18–34 reported that the stress they feel about climate change affects their daily lives (APA, 2020). More frequent exposure to intense heat is also contributing to increased aggressivity and suicide rates (Miles-Novelo and Anderson, 2019; Thompson et al., 2018).
 
 Meanwhile, there is an ongoing shortfall in global mental health investment (WHO, 2020), and calls to action have been made for professionals to urgently address these issues (Cunsolo and Ellis, 2018; APA, 2020). Even as numerous research studies are published on the topic, funding for mitigation and adaptation strategies in this area is still nowhere near the scale needed (Berrang-Ford et al., 2021; Hayes et al., 2018).
 
-## Life science education and dissemination
+### Life science education and dissemination
 
 To top things off, universities do little to teach about the impacts that the climate and ecological crises will have on these subjects, and on the careers of the students who study them. Students are rarely taught about scientific advocacy or the relationship between scientific behaviours and social change (Gardner et al., 2021; Green, 2021; Leal Filho et al., 2021; Steinberger, 2022). Instead, universities have largely emphasised responding to these crises via changes in individual behaviour rather than collective action and institutional accountability (Wynes and Nicholas, 2017; Stevenson et al., 2017; Robottom and Hart, 1995). Indeed, as higher education institutions have adopted corporate structures and goals (Kleinman and Vallas, 2001), they have shifted the blame to individuals, and disincentivized modes of collective action and organising. As a result, both staff and students are left feeling hopeless and defeated at a time when, in fact, systemic change is entirely within our grasp (Stoddard et al., 2021).
 
-## The consequences of the failure of scientific engagement
+### The consequences of the failure of scientific engagement
 
 Whether we talk about threats to food security, global health or biodiversity, scientific messaging is either not getting through to the public (de Bruin et al., 2021), or is being drowned out by sophisticated misinformation campaigns (Lewandowsky, 2020). There are now entire think tanks dedicated to occluding or misinterpreting scientific findings related to the biospheric emergency (Dunlap and Jacques, 2013; Jacques et al., 2008; Lamb et al., 2020; Lewandowsky, 2021), and recent research highlights that accurate information about climate and ecology can easily be eroded by misinformation (Nyhan et al., 2022). To make matters worse, scientific responses to misinformation campaigns tend to be dispassionate and directed at those in power (who are keen to maintain the status quo), rather than passionate and directed at the people being misinformed: in short, a recipe for disaster (Steinberger, 2019).
 
@@ -127,7 +127,7 @@ Scientists can also work to transition away from the unsustainable patterns of t
 
 Most critically, research in the biospheric emergency needs to involve local stakeholders across all stages of the process, including those who are most directly affected by climate and ecological breakdown (Funtowicz and Ravetz, 1993). It is vital for life scientists to listen to, collaborate with, and co-produce with social scientists, humanities scholars and indigenous communities: we must engage in meaningful dialogue with those who have been historically excluded or exploited by colonialism and neo-colonialism. For example, past and ongoing land-grabs, arrests and assassinations of Indigenous activists (Global Witness, 2018) have been key enablers of the climate and ecological crises, by silencing modes of thinking and understanding our world that questioned the socioeconomic norms violently imposed on other cultures (Salomon et al., 2018; Stein et al., 2021).
 
-## Speaking clearly
+### Speaking clearly
 
 Finally, if we are to provide society with an honest assessment of the problems at hand, we cannot shy away from naming the forces behind the climate and ecological crises. Statements that vaguely ascribe land degradation or species loss to “human activities” are often found in the academic literature: however, not all humans are equally responsible, nor are all human activities destructive of nature. Indeed, the people and countries most affected by climate change and ecological breakdown are also the least responsible for them (Gore, 2020; Oswald et al., 2020). Overly vague statements draw attention away from the specific social, economic and political systems that are driving the biospheric emergency. These systems include:
 

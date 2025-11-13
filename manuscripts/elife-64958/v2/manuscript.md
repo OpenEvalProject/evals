@@ -38,15 +38,15 @@ Analysis was performed for 36 PCR-confirmed COVID-19 (+) and 36 (−) human plas
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64958/elife-64958-fig1-v2.jpg)
 
-**Figure 1.:** (A) Comprehensive matrix of relevancy to CSS of all variables assessed by mutual information algorithm, relevancy scores computed for not-yet selected variables are shown in each column, and variables are ordered to place maximum local scores on the diagonal, yielding a list in decreasing order from the upper left of variable relevancy. Warmer colors indicate higher relevancy, while cooler colors indicate higher redundancy. (B) COVID Severity Score Table with breakdown of categories as well as sample size per category.Figure 1—source data 1.
+**Figure 1.:** (A) Comprehensive matrix of relevancy to CSS of all variables assessed by mutual information algorithm, relevancy scores computed for not-yet selected variables are shown in each column, and variables are ordered to place maximum local scores on the diagonal, yielding a list in decreasing order from the upper left of variable relevancy. Warmer colors indicate higher relevancy, while cooler colors indicate higher redundancy. (B) COVID Severity Score Table with breakdown of categories as well as sample size per category.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64958/elife-64958-fig2-v2.jpg)
 
-**Figure 2.:** (A) The y-axis is CSS, and the x-axis is age in years with points colored by chest x-ray status. (B) The y-axis is M-CSF concentration in pg/mL, and the x-axis is age in years, with points colored based on CSS. See individual legends below graphs. (C) Receiver operating characteristic (ROC) curve predicting CSS 4–5 using age, M-CSF, IP-10, IL-18, and IL-1RA, and ROC curve predicting CSS 4–5 using only age.Figure 2—source data 1.
+**Figure 2.:** (A) The y-axis is CSS, and the x-axis is age in years with points colored by chest x-ray status. (B) The y-axis is M-CSF concentration in pg/mL, and the x-axis is age in years, with points colored based on CSS. See individual legends below graphs. (C) Receiver operating characteristic (ROC) curve predicting CSS 4–5 using age, M-CSF, IP-10, IL-18, and IL-1RA, and ROC curve predicting CSS 4–5 using only age.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64958/elife-64958-fig3-v2.jpg)
 
-**Figure 3.:** Cytokines ordered by row from upper left corner based on mutual information relevancy matrix (upper left being most relevant and lower right being least relevant). The x-axis is CSS, and the y-axis is analyte concentration in pg/mL. One-way ANOVA F values and p values are listed on each plot. Source code 1. R code with sections to apply the varrank package to the source data, create a receiver operating characteristic curve, and calculate analysis of variance for each cytokine.Figure 3—source data 1.Source Data Table 1. Mutual algorithm criteria table. *Documented obesity or overweight for height < 99th percentile. Source Data Table 2. Patient information.
+**Figure 3.:** Cytokines ordered by row from upper left corner based on mutual information relevancy matrix (upper left being most relevant and lower right being least relevant). The x-axis is CSS, and the y-axis is analyte concentration in pg/mL. One-way ANOVA F values and p values are listed on each plot. Source code 1. R code with sections to apply the varrank package to the source data, create a receiver operating characteristic curve, and calculate analysis of variance for each cytokine.
 
 ## Discussion
 
@@ -58,22 +58,74 @@ Steroids have shown a survival benefit for COVID-19, likely by suppressing such 
 
 ## Materials and methods
 
-## Biobank samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological samples (Human)</td>
+      <td>Human plasma</td>
+      <td>Lifespan Brown COVID-19 Biobank</td>
+      <td>See data table</td>
+      <td>48 unique patients</td>
+    </tr>
+    <tr>
+      <td>Biological samples (Human)</td>
+      <td>Human plasma</td>
+      <td>Lee BioSolutions</td>
+      <td>991–58-PS</td>
+      <td>24 unique patients</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MILLIPLEX MAP Human Immunology Multiplex Assay</td>
+      <td>Millipore Sigma</td>
+      <td>15-Plex # HCYTA-60K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Project for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Luminex 100/200 System assay platform</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>https://www.luminexcorp.com/luminex-100200</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Biobank samples
 
 COVID-19 (+) and (−) human plasma samples were received from the Lifespan Brown COVID-19 Biobank from Brown University at Rhode Island Hospital (Providence, RI). All biobank samples were collected on patients’ arrival in the Emergency Department at Rhode Island Hospital. All patient samples were deidentified but included the available clinical information as described in Results. It is unknown if any patients were blood relatives. The IRB study protocol ‘Pilot Study Evaluating Cytokine Profiles in COVID-19 Patient Samples’ did not meet the definition of human subjects research by either the Brown University or the Rhode Island Hospital IRBs. All samples were thawed and centrifuged at 14,000 rpm for 10 min following the manufacturer protocol included with the Luminex kit to remove cellular debris immediately before the assay was run.
 
-## Donor samples
+### Donor samples
 
 Normal, healthy, COVID-19 (−) samples were commercially available from Lee BioSolutions (991–58-PS-1, Lee BioSolutions, Maryland Heights, MO). All samples were thawed and centrifuged at 14,000 rpm for 10 min following the manufacturer protocol included with the Luminex kit to remove cellular debris immediately before the assay was run.
 
-## Cytokine and chemokine measurements
+### Cytokine and chemokine measurements
 
 A MilliPlex MILLIPLEX MAP Human Cytokine/Chemokine/Growth Factor Panel A – Immunology Multiplex Assay (HCYTA-60K-13, Millipore Sigma, Burlington, MA) was run on a Luminex 200 Instrument (LX200-XPON-RUO, Luminex Corporation, Austin, TX) according to the manufacturer’s instructions. Plasma levels of granulocyte colony-stimulating factor (G-CSF), IFN-γ, interleukin one alpha (IL-1α), interleukin-1 receptor antagonist (IL-1RA), IL-2, IL-6, IL-7, IL-12, IP-10, monocyte chemoattractant protein-1 (MCP-1), M-CSF, macrophage inflammatory protein-1 alpha (MIP-1α), and tumor necrosis factor alpha (TNF-α) were measured. Data pre-processing: values below limit of detection were re-coded as half the limit of detection. A single extreme outlier value in IFN-y levels was removed after confirming outlier status via Hampel and Grubbs outlier testing (both p<0.01).
 
-## Clinical variables
+### Clinical variables
 
 Available deidentified clinical variables were collected from patients and from chart review during their time in the emergency department. Clinical variables were categorized to create combined variables such as the number of chronic conditions or the number of presenting symptoms. The full breakdown of clinical variable categorization can be found in Figure 2—source data 1.
 
-## Data analysis
+### Data analysis
 
 Data analysis and visualization were generated using R (R Development Core Team, 2020). The varrank package (Kratzer and Furrer, 2020) was used to apply a minimum-redundancy maximum-relevance mutual information algorithm. The algorithm classifies the amount of information each cytokine and clinical variable can provide about the outcome variable, CSS. Each cytokine variable was discretized into two clusters – either high or low analyte concentration in pg/mL – using k-means clustering to minimize within-variable entropy and, thus, over-fitting. This algorithm partitions each data point into the cluster (high or low analyte concentration) with the nearest mean. Clinical variables and cytokine levels were used to predict CSS. The first variable was selected for local optimum relevance by a greedy algorithm. All subsequent variables were ordered to maximize relevancy and minimize redundancy. The ordering was robust to leave-one-out cross-validation. For each cytokine, one-way ANOVA with Tukey’s honest significant difference test and Šidák correction for multiple comparisons was used to compare plasma cytokine levels among CSS groups.

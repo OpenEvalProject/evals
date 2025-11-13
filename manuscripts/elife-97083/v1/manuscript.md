@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00pd74e08 Institute for Biomagnetism and Biosignal Analysis, University of Münster Münster Germany
-2. https://ror.org/00pd74e08 Otto-Creutzfeldt-Center for Cognitive and Behavioral Neuroscience, University of Münster Münster Germany
+1. Institute for Biomagnetism and Biosignal Analysis, University of Münster Münster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))
+2. Otto-Creutzfeldt-Center for Cognitive and Behavioral Neuroscience, University of Münster Münster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))
 
 † Corresponding author
 
@@ -69,7 +69,7 @@ Finally, we examined the relationship between the connectivity patterns from the
 
 The present study utilized multivariate Granger causality analysis to investigate the frequency-specific neural representations of the internal forward model during continuous speaking and listening. Our results revealed significant connectivity from bilateral higher-order cortical areas to bilateral auditory areas (STG and STS) in lower-frequency bands (up to beta) during speaking, and in the opposite direction in gamma frequencies. Notably, subcortical areas also contributed to the internal forward model, with directional communication observed from the right cerebellum lobule VI (R-CB6) to the left auditory area below 30 Hz. Conversely, in frequencies above 30 Hz, we observed reverse signaling from the left auditory areas to the right cerebellum.
 
-## Directed connectivity in speech production and perception
+### Directed connectivity in speech production and perception
 
 In this study, we aimed to investigate directional connectivity in speech production and perception. Using the automatic meta-analysis provided by neurosynth.org, we included cortical and subcortical brain regions involved in these processes. Our multivariate Granger causality analysis suggests a potential role for predictive coding implemented through distinct frequency channels in the auditory–motor domain during both continuous speaking and listening. This analysis revealed stronger connectivity from higher-order brain regions (including the cerebellum) to the auditory area at slower frequencies (below 40 Hz). This connectivity pattern might reflect the influence of these regions’ predictions on auditory processing. Conversely, the analysis showed stronger connectivity in the opposite direction, from the auditory area to these regions, at faster frequencies (above 40 Hz). This pattern could potentially be indicative of prediction error signals being relayed back for updating predictions. Our study builds upon our previous work, which demonstrated top–down signaling in low frequencies from higher-order cortical areas to STG and STS and the reverse pattern in higher frequencies. Our findings are also supported by previous studies showing distinct frequency channels for feedforward and feedback communication between two hierarchically different auditory areas (Fontolan et al., 2014) and demonstrating that prediction errors are represented in gamma power while predictions are represented in lower-frequency beta power (Sedley et al., 2016).
 
@@ -87,50 +87,135 @@ Our latest findings underscore that both speech production and perception involv
 
 ## Methods
 
-## Participants
+### Participants
 
 Thirty native German-speaking participants (15 males, mean age 25.1 ± 2.8 years [M ± SD], range 20–32 years) were recruited for this study. Prior written informed consent was obtained before measurements and participants received monetary compensation after partaking. The study was approved by the local ethics committee and conducted in accordance with the Declaration of Helsinki. This study additionally re-analyzes data previously collected for a study published in Abbasi et al., 2023.
 
-## Recordings
+### Recordings
 
 MEG, EMG, and speech signals were recorded simultaneously. The speech recording had a sampling rate of 44.1 kHz, whereas the MEG, a 275-channel, whole-head sensor system (OMEGA 275, VSM Medtech Ltd, Vancouver, BC, Canada) was sampled with 1200 Hz.
 
 In order not to cause any artifacts by the microphone used for capturing audio data, it was placed at a distance of 155 cm from the participants mouth. Three pairs of EMG surface electrodes were placed after tactile inspection to find the correct location to capture muscle activity from the m. genioglossus, m. orbicularis oris, and m. zygomaticus major (for exact location see Figure 1 in Abbasi et al., 2021). One pair of electrodes was used for each muscle with about 1 cm between electrodes. A low-pass online filter with a 300-Hz cut-off was applied to the recorded MEG and EMG data.
 
-## Paradigm
+### Paradigm
 
 Participants were asked to sit relaxed while performing the given tasks and to keep their eyes on a white fixation cross. The experiment was split in two separate parts: The first one consisted of answering given questions, each for 60 s, thus recording overt speech. Participants had to answer seven questions covering neutral topics, such as ‘What does a typical weekend look like for you?’. A color change from white to blue fixation cross indicated the beginning of the time period in which participants should speak and the end was marked by a color change back to white. The second part focused on perceiving speech in the way that participants listened to their own answers from part one. The list of questions as well as further details of the paradigm presented can be found in Abbasi et al., 2023.
 
-## Preprocessing and data analysis
+### Preprocessing and data analysis
 
 Prior to data analysis, MEG data were visually inspected. No jump artifacts or bad channels were detected. A discrete Fourier transform filter was applied to eliminate 50 Hz line noise from the continuous MEG and EMG data. Moreover, EMG data were highpass-filtered at 20 Hz and rectified. Continuous head position and rotation were extracted from the fiducial coils placed at anatomical landmarks (nasion, left, and right ear canals). MEG, EMG, and head movement signals were downsampled to 256 Hz and segmented to non-overlapping 60 s trials corresponding to each of their overt answers. In the preprocessing and data analysis steps, custom-made scripts in Matlab R2020 (The Mathworks, Natick, MA, USA) in combination with the Matlab-based FieldTrip toolbox (Oostenveld et al., 2011) were used in accord with current MEG guidelines (Gross et al., 2013a).
 
-## Artifact rejection
+### Artifact rejection
 
 For removing the speech-related artifacts we used the pipeline presented in Abbasi et al., 2021. In a nutshell, the artifact rejection comprises four major steps: (1) Head movement-related artifact was initially reduced by incorporating the head position time-series into the general linear model using regression analysis (Stolk et al., 2013). (2) To further remove the residual artifact, SVD was used to estimate the spatial subspace (components) containing the speech-related artifact from the MEG data. (3) Artifactual components were detected via visual inspections and MI analysis and then removed from the single-trial data (Abbasi et al., 2016). (4) Finally, all remaining components were back-transformed to the sensor level.
 
-## Source localization
+### Source localization
 
 For source localization we aligned individual T1-weighted anatomical MRI scans with the digitized head shapes using the iterative closest point algorithm. Then, we segmented the MRI scans and generated single-shell volume conductor models (Nolte, 2003), and used this to create forward models. For group analyses, individual MRIs were linearly transformed to an MNI template provided by Fieldtrip. Next, the linearly constrained minimum variance algorithm was used to compute time-series for each voxel on a 5-mm grid. The time-series were extracted for each dipole orientation, resulting in three time-series per voxel. The reduced version of the HCP brain atlas as well as AAL atlas were applied on the source space time-series in order to reduce the dimensionality of the data, resulting in 230 cortical parcels (Tait et al., 2020) and 116 subcortical parcels, respectively. Since the HCP atlas only covers cortical areas we used the AAL atlas for subcortical areas. Finally, we extracted the first three components of an SVD of time-series from all dipoles in this parcel, explaining most of the variance.
 
-## ROI selection
+### ROI selection
 
 In this study, we focused on the brain regions that are involved in speech production and perception. In order to find the areas involved in speech production and perception network, we utilized the automatic meta-analysis provided by neurosynth.org using the term ‘speech’ that resulted in a meta-analysis of 642 fMRI studies highlighting the brain areas involved in speech production and perception (Yarkoni et al., 2011). We extracted the MNI coordinates of active areas from the presented map, found their corresponding voxels and identified the respective parcels on HCP and AAL atlases where these voxels are located. This resulted in 14 cortical and subcortical parcels (see Figure 1 and Table 1).
 
-## Connectivity analysis
+**Table 1.**
+ Selected ROI labels from HCP and AAL atlases.
 
-We performed connectivity analysis by using an mGC approach (Schaum et al., 2021; Dhamala et al., 2008). We computed the mGC to determine the directionality of functional coupling between all the detected involved parcels, in pairwise steps, during speech production and perception. Initially, the source signals were divided into trials of 4 s, with 500 ms overlap. We used the fast Fourier transform in combination with multitapers (2 Hz smoothing) to compute the cross-spectral density matrix of the trials. Next, using a blockwise approach, we considered the first three SVD components of each parcel as a block and estimated the connectivity between STG and other parcels. Finally, we computed the directed influence asymmetry index (DAI) defined by Bastos et al., 2015 asDAI=mGCparcel→STG-mGC(STG→parcel)mGCparcel→STG+mGC(STG→parcel)
+
+<table>
+  <thead>
+    <tr>
+      <th>1</th>
+      <th>L-FOP</th>
+      <th>Left frontal opercular area</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>R-PEF+6v</td>
+      <td>Right premotor eyefield + ventral area 6</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>L-SCEF</td>
+      <td>Left supplementary and cingulate eyefield</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>R-SCEF</td>
+      <td>Right supplementary and cingulate eyefield</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>L-3b</td>
+      <td>Left primary somatosensory cortex</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>R-3b</td>
+      <td>Right primary somatosensory cortex</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>L-STS</td>
+      <td>Left superior temporal sulcus</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>L-TPOJ1</td>
+      <td>Left TemporoParietoOccipital Junction 1</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>L-A5</td>
+      <td>Left auditory complex 5</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>R-A5</td>
+      <td>Right auditory complex 5</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>L-TH</td>
+      <td>Left thalamus</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>R-CB-Cruss2</td>
+      <td>Right cerebellum crus 2</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>L-CB-6</td>
+      <td>Left cerebellum 6</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>R-CB-6</td>
+      <td>Right cerebellum 6</td>
+    </tr>
+  </tbody>
+</table>
+
+### Connectivity analysis
+
+We performed connectivity analysis by using an mGC approach (Schaum et al., 2021; Dhamala et al., 2008). We computed the mGC to determine the directionality of functional coupling between all the detected involved parcels, in pairwise steps, during speech production and perception. Initially, the source signals were divided into trials of 4 s, with 500 ms overlap. We used the fast Fourier transform in combination with multitapers (2 Hz smoothing) to compute the cross-spectral density matrix of the trials. Next, using a blockwise approach, we considered the first three SVD components of each parcel as a block and estimated the connectivity between STG and other parcels. Finally, we computed the directed influence asymmetry index (DAI) defined by Bastos et al., 2015 as
+
+$$
+DAI=\frac{mGCparcel→STG-mGC(STG→parcel)}{mGCparcel→STG+mGC(STG→parcel)}
+$$
 
 Therefore, a positive DAI for a given frequency indicates that the selected parcel conveys feedforward influences to STG in this frequency, and a negative DAI indicates feedback influences. Note that for the connectivity analysis, we used MEG data with 1200 Hz sampling rate without downsampling.
 
-## Statistical analysis
+### Statistical analysis
 
 We determined significant connectivity patterns (DAI values) in both speaking and listening conditions using nonparametric cluster-based permutation tests (Maris and Oostenveld, 2007). First, we estimated the statistical contrast of connectivities during speaking and listening compared to zero for each parcel and participant. Second, the DAI values in the speaking condition were contrasted with DAI values in the listening condition at the group level. The statistical analysis was conducted for different frequency bands (Delta/Theta (0–7 Hz), alpha (7–13 Hz), beta (15–30 Hz), gamma (30–60 Hz), and high gamma (60–90 Hz)) using a dependent-samples t-test. We used a cluster-based correction to account for multiple comparisons across frequencies and parcels. We performed 5000 permutations and set the critical alpha value at 0.05.
 
-## Speech–brain coupling
+### Speech–brain coupling
 
 For each parcel, we calculated the complex-valued spectral estimates of the three SVD components using multitaper analysis with ±2 Hz spectral smoothing on 2-s windows with 50% overlap. Subsequently, we estimated the MI between the speech envelope and the combined spectral information from all three time-series using Gaussian Copula MI. This approach resulted in a single MI value per parcel, reflecting speech–brain coupling specifically at the chosen 130 ms lag.
 
-## Correlation analysis
+### Correlation analysis
 
 To examine the potential relationship between our connectivity findings from all the parcels to R-CB6 and speech–STG coupling, we conducted nonparametric cluster-based permutation tests. Our first step was to calculate top–down connectivity values for selected parcels and frequency bands, then to compute speech–STG couplings for each frequency band. To account for multiple comparisons across parcels, we employed the Pearson method implemented in the ft_statfun_correlationT function in Fieldtrip, with cluster-based correction. Our analysis was repeated for different frequency bands. Therefore, our results are not corrected across frequencies. We performed 5000 permutations and set the critical alpha value at 0.05.

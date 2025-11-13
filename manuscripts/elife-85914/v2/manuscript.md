@@ -30,21 +30,21 @@
 
 ### Affiliations
 
-1. https://ror.org/03zjqec80 Autoimmunity and Inflammation Program, Hospital for Special Surgery Research Institute New York United States
-2. https://ror.org/02r109517 Department of Microbiology and Immunology, Weill Cornell Medical College New York United States
-3. https://ror.org/03zjqec80 David Z. Rosensweig Genomics Research Center, Hospital for Special Surgery Research Institute New York United States
-4. https://ror.org/03zjqec80 Arthritis and Tissue Degeneration Program, Hospital for Special Surgery Research Institute New York United States
-5. https://ror.org/02r109517 Physiology, Biophysics, and Systems Biology Program, Weill Cornell Graduate School of Medical Sciences New York United States
-6. https://ror.org/01z71je29 Department of Medicine, AMPEL BioSolutions Charlottesville United States
-7. https://ror.org/03zjqec80 Pediatric Rheumatology, Department of Medicine, Hospital for Special Surgery New York United States
-8. https://ror.org/02r109517 Department of Pediatrics, Weill Cornell Medical College New York United States
-9. https://ror.org/03zjqec80 Rheumatology, Department of Medicine, Hospital for Special Surgery New York United States
-10. https://ror.org/02r109517 Department of Dermatology, Weill Cornell Medical College New York United States
-11. https://ror.org/02r109517 Weill Cornell/Rockefeller/Sloan-Kettering Tri-Institutional MD-PhD Program, Weill Cornell Medical College New York United States
-12. https://ror.org/02r109517 Immunology and Microbial Pathogenesis Program, Weill Cornell Graduate School of Medical Sciences New York United States
-13. https://ror.org/0464eyp60 Department of Dermatology, University of Massachusetts Medical School Worcester United States
-14. https://ror.org/0420db125 Laboratory of Investigative Dermatology, Rockefeller University New York United States
-15. https://ror.org/02r109517 Department of Physiology, Biophysics, and Systems Biology, Weill Cornell Medical College New York United States
+1. Autoimmunity and Inflammation Program, Hospital for Special Surgery Research Institute New York United States ([ROR:03zjqec80](https://ror.org/03zjqec80))
+2. Department of Microbiology and Immunology, Weill Cornell Medical College New York United States ([ROR:02r109517](https://ror.org/02r109517))
+3. David Z. Rosensweig Genomics Research Center, Hospital for Special Surgery Research Institute New York United States ([ROR:03zjqec80](https://ror.org/03zjqec80))
+4. Arthritis and Tissue Degeneration Program, Hospital for Special Surgery Research Institute New York United States ([ROR:03zjqec80](https://ror.org/03zjqec80))
+5. Physiology, Biophysics, and Systems Biology Program, Weill Cornell Graduate School of Medical Sciences New York United States ([ROR:02r109517](https://ror.org/02r109517))
+6. Department of Medicine, AMPEL BioSolutions Charlottesville United States ([ROR:01z71je29](https://ror.org/01z71je29))
+7. Pediatric Rheumatology, Department of Medicine, Hospital for Special Surgery New York United States ([ROR:03zjqec80](https://ror.org/03zjqec80))
+8. Department of Pediatrics, Weill Cornell Medical College New York United States ([ROR:02r109517](https://ror.org/02r109517))
+9. Rheumatology, Department of Medicine, Hospital for Special Surgery New York United States ([ROR:03zjqec80](https://ror.org/03zjqec80))
+10. Department of Dermatology, Weill Cornell Medical College New York United States ([ROR:02r109517](https://ror.org/02r109517))
+11. Weill Cornell/Rockefeller/Sloan-Kettering Tri-Institutional MD-PhD Program, Weill Cornell Medical College New York United States ([ROR:02r109517](https://ror.org/02r109517))
+12. Immunology and Microbial Pathogenesis Program, Weill Cornell Graduate School of Medical Sciences New York United States ([ROR:02r109517](https://ror.org/02r109517))
+13. Department of Dermatology, University of Massachusetts Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+14. Laboratory of Investigative Dermatology, Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))
+15. Department of Physiology, Biophysics, and Systems Biology, Weill Cornell Medical College New York United States ([ROR:02r109517](https://ror.org/02r109517))
 
 † Corresponding author
 
@@ -64,9 +64,17 @@ Here, we consider LC dysfunction in the context of the high IFN levels in lupus,
 
 ## Results
 
-## Non-lesional skin from human lupus and murine models share an IFN-rich environment
+### Non-lesional skin from human lupus and murine models share an IFN-rich environment
 
 To understand mechanisms that lead to the LC defects seen in non-lesional skin of SLE mouse models and human SLE (Shipman et al., 2018), we assessed the non-lesional skin transcriptomic profiles from human lupus patients and multiple murine models. We examined a non-lesional skin microarray dataset from a CLE cohort with the discoid form of CLE (DLE) that had not been previously analyzed and was part of a cohort whose lesional skin was shown to have a Th1 signature when compared to healthy controls and psoriatic skin (Jabbari et al., 2014). The gene expression profile of the non-lesional DLE skin was significantly different from that of healthy skin (Supplementary file 1), lesional skin, and psoriatic skin (Figure 1A). Differential pathway analysis via Quantitative Set Analysis for Gene Expression (QuSAGE) showed that IFN, IFN-I and IFN-γ pathways were among the upregulated pathways in non-lesional DLE skin compared to normal controls (Figure 1B and Supplementary file 2). The IFN-I pathway was more prominent than the IFNg pathway, with upregulation of a number of IFN-I-associated transcription factors such as IRF1, 6, 7, 8 and IFN-stimulated genes including MX1, MX2, XAF1, IFI27, and ISG15 in non-lesional skin (Figure 1C–D, Figure 1—figure supplement 1). Comparison of non-lesional skin with lesional skin showed that this IFN response was overall less dramatic in non-lesional skin (Figure 1D, Figure 1—figure supplement 1), consistent with findings of previous studies (Billi et al., 2022; Martínez et al., 2022; Psarras et al., 2020). The more muted response did not apply to every gene in the pathway, however, with ADAR, IRF6, and PTPN1 expressed at higher levels in non-lesional skin (Figure 1D, Figure 1—figure supplement 1) and suggesting a distinct biology in non-lesional and lesional skin. These data are consistent with that from other cohorts (Billi et al., 2022; Der et al., 2017; Der et al., 2019; Psarras et al., 2020) showing that non-lesional skin, similar to lesional skin, has an IFN-rich environment.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/85914/elife-85914-fig1-v2.jpg)
+
+**Figure 1.:** (A–H) Microarray analysis of gene expression from non-lesional skin of DLE (n=7, this manuscript), lesional DLE (n=7), psoriasis patients (n=17), and healthy controls (n=13) (Jabbari et al., 2014). In (A, D–F), analyses include lesional DLE or both lesional and psoriasis samples. (A) Principal component analysis (PCA) of patient samples using top 500 genes. (B) Differentially expressed pathways in control and non-lesional DLE skin were determined using QuSAGE pathway analysis against Molecular Signatures Database (MSigDB). (C) Volcano plot of differentially expressed genes. Genes from IFN-α/β (red), IFN-γ (blue) pathways, and IRF transcription factors (green) are marked. (D) Heatmap of z-score transformed gene expression in the IFN-α/β signaling pathway. (E–H) Gene Set Variation Analysis (GSVA) of gene sets relevant to lupus (Martínez et al., 2022), with (G–H) comparing only control and non-lesional skin. (F, H) GSVA using gene sets comprising specific IFN subtypes. (E–H) *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 by unpaired t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85914/elife-85914-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Log-transformed expression fold change for genes in the IFN α/β pathway for human DLE skin.
 
 We also analyzed the DLE data using Gene Set Variation Analysis (GSVA) to examine expression of defined lupus-relevant gene sets. We had previously used this approach to analyze publicly available bulk transcriptomic data from non-lesional and lesional CLE skin that included the DLE lesional skin data (Martínez et al., 2022). Reanalysis of the lesional skin here reiterated the GSVA results of multiple datasets (Martínez et al., 2022), showing enrichment of immune cell gene sets including plasma cells, T cells, monocyte/myeloid cells, neutrophils, and plasmacytoid dendritic cells (pDCs) when compared to controls (Figure 1E; Supplementary file 3). The LC gene set was de-enriched in lesional skin, echoing the LC loss seen in other studies (Billi et al., 2022; Bos et al., 1986; Sontheimer and Bergstresser, 1982), and this effect was more dramatic than the LC de-enrichment in lesional psoriatic skin (Figure 1E). Lesional DLE samples were also enriched for inflammatory cytokine gene sets, including IL12, IL21, IL23, TNF, and a highly upregulated IFN gene signature as previously seen (Figure 1E; Martínez et al., 2022). The upregulation of IFN response genes in lesional DLE skin extended to gene signatures indicative of response to specific IFNs, including IFN-Is (IFN-α, β, κ, and ω) and type II IFNs (IFN-γ; Figure 1F). The IFN-γ signature is consistent with the Th1 signature identified in the original study examining these gene expression data along with cellular phenotyping (Jabbari et al., 2014).
 
@@ -74,11 +82,27 @@ Non-lesional skin also showed upregulation of the IFN gene set in GSVA when comp
 
 We next examined non-lesional ear skin from MRL/lpr, B6.Sle1yaa, and imiquimod (IMQ) SLE mouse models by RNAseq. The photosensitive MRL/lpr model has a Fas gene mutation and develops a lupus-like phenotype especially well on the MRL genetic background (Menke et al., 2008; Theofilopoulos and Dixon, 1985). MRL/lpr mice have reduced LC ADAM17 sheddase function and LC Adam17 mRNA, and topical EGFR ligand supplementation ameliorated photosensitivity (Shipman et al., 2018). Although the differences in gene expression between MRL/lpr mice and control MRL-MpJ (MRL/+) mice by RNAseq involved fewer genes than those in the human cohort (Figures 1A–D ,–2A–D; Supplementary file 4), QuSAGE pathway analysis showed that the IFN-α/β and IFN-γ pathways were among the most highly expressed in MRL/lpr mice compared to control MRL/+mice (Figure 2B and Supplementary file 5). Consistent with the activation of IFN pathways, IRF 1, 2, 7, and 9 transcription factors and a number of their targets were expressed at higher levels in MRL/lpr mice (Figure 2C–D and Figure 2—figure supplement 1A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85914/elife-85914-fig2-v2.jpg)
+
+**Figure 2.:** (A–I) RNAseq analysis of gene expression and pathway analyses from MRL/lpr (LPR) and control MRL/+ (MRL) (A–D), B6.Sle1yaa and control B6 mice (E), and IMQ and control B6 mice (F–I). For the IMQ model, mice were painted on one ear (ipsilateral) and the unpainted ear (contralateral) was taken as the non-lesional ear. (A, E, F) PCA using top 500 genes. (B, G) Differentially expressed pathways determined by QuSAGE pathway analysis against MSigDB. (C, H) Volcano plot of differentially expressed genes. Genes from IFN-α/β (red), IFN-γ (blue), and IRF transcription factor (green) pathways are marked. (D, I) Heatmap of z-score transformed gene expression in the IFN α/β signaling pathway. (A, E, F) Each symbol represents one mouse.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85914/elife-85914-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Log-transformed expression fold change for genes in the IFN α/β pathway for skin of MRL/lpr (A) and IMQ (B) model mice. (C) Genes from yaa locus are expressed at a higher levels in B6.Sle1yaa mice. (D) IRF transcription factors and their targets are expressed at a higher levels and CD207 is expressed at lower level in B6.Sle1yaa mice compared to controls.
+
 The B6.Sle1yaa lupus model is driven by the Sle1 lupus susceptibility locus derived from lupus-prone NZB2410 mice in combination with the Y chromosome autoimmune accelerator locus whose effects are attributed to Tlr7 duplication (Pisitkun et al., 2006; Subramanian et al., 2006). B6.Sle1yaa mice are photosensitive and have reduced LC Adam17 mRNA expression (Shipman et al., 2018). As expected, compared to B6 controls, B6.Sle1yaa mice expressed elevated levels of several lupus related genes from the Yaa locus including Tlr7 (Figure 2—figure supplement 1C). Although differences between the B6 and B6.Sle1yaa transcriptomes were modest (Figure 2E; Supplementary file 6), several genes involved in the regulation of and response to IFN were expressed at higher levels, including Irf7, Irf9, Isg15, Xaf1, Selp, and Ube2l6 (Figure 2—figure supplement 1D). LC numbers as a proportion of total cells were not different at 10 months of age when this model is fully diseased (Shipman et al., 2018), but Cd207 expression was downregulated in these younger (5 month old) diseased mice when compared to B6 controls (Figure 2—figure supplement 1D), potentially hinting at either reduced LC numbers at this time point or altered CD207 expression on LCs.
 
 The IMQ model is induced by 4–5 weeks of topical IMQ, a TLR 7/8 agonist, resulting in autoantibody production, enlarged spleen and lymph nodes, nephritis, and photosensitivity characteristic of SLE (Ambler et al., 2022; Goel et al., 2020; Yokogawa et al., 2014). The model can be induced in B6 mice, allowing for the use of transgenic models to assess for effects on lupus features without crossing onto a different genetic background. We applied IMQ to only one ear of B6 mice and assessed gene expression by RNAseq in both the painted ipsilateral ear and the unpainted contralateral ‘non-lesional’ ear. Similar to non-lesional skin in the MRL/lpr mice, the contralateral ear in IMQ mice demonstrated an IFN-I signature, with upregulation of a number of ISGs and IRF 7 and 9 (Figure 2F–I, Figure 2—figure supplement 1B, Supplementary file 7, Supplementary file 8). In contrast to MRL/lpr mice, IFN gamma pathways were not upregulated in IMQ mice. By QuSAGE analysis, then, the non-lesional skin of MLR/lpr, B6.Sle1yaa, and IMQ SLE models showed similarities to human non-lesional skin in demonstrating an IFN-rich environment.
 
 By GSVA using lupus-relevant murine gene sets (Supplementary file 9), MRL/lpr mice showed increased enrichment of a number of inflammatory cell and cytokine gene sets including T cells, myeloid cells, neutrophils, pDCs, IFN, IL1, IL21, and TNF (Figure 3A). The keratinocyte signature was enriched in MRL/lpr mice, in contrast to the de-enrichment of this gene set in human DLE (Figure 1G, Figure 3A). The LC signature did not show any quantitative changes; assuming that this gene set could in part reflect LC numbers, this result was consistent with unchanged LC numbers in the skin of MRL/lpr mice (Shipman et al., 2018). Similar to human DLE, the IFN gene set upregulation in MRL/lpr non-lesional skin was broad, with significant enrichment of gene signatures induced by stimulation from multiple IFNs (Figure 3B). B6.Sle1yaa mice showed less dramatic differences than the MRL/lpr model, but also showed upregulation of the IFN gene set without a particular contribution from any one IFN (Figure 3C–D). The LC gene set was de-enriched in B6.Sle1yaa mice (Figure 3C), driven in part by the reduction in Cd207 (Figure 2—figure supplement 1C), potentially reflecting decreased LC numbers or altered LC phenotypes. The contralateral ‘non-lesional’ ears from IMQ-treated mice also exhibited significant upregulation of the IFN gene signature and were similar to MRL/lpr mice in showing enriched gene signatures of myeloid cells, IL21, and TNF (Figure 3E). T cell genes were uniquely de-enriched in IMQ skin (Figure 3E). The LC gene set was not altered (Figure 3E), although there was de-enrichment in IMQ-painted ipsilateral skin (Figure 3—figure supplement 1). Similar to human DLE and MRL/lpr mice, the IFN signature in non-lesional IMQ skin reflected enrichment of multiple IFN-I gene sets (Figure 3F). Interestingly, the overall IFN gene set was not enriched in the IMQ-painted ipsilateral skin (Figure 3—figure supplement 1), although there was enrichment in two of the specific IFN signatures (IFNB1 and IFNW1; Figure 3—figure supplement 1). This suggested a distinct biology such as tissue damage in the skin that received repeated direct exposure to IMQ. Together, the gene expression analysis revealed unique transcriptomic profiles across multiple murine SLE models and pointed to a shared IFN signature across non-lesional skin of all models and human DLE.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85914/elife-85914-fig3-v2.jpg)
+
+**Figure 3.:** (A–F) The RNAseq data from Figure 2 of MRL/lpr (A–B), B6.Sle1yaa (C–D), and IMQ (E–F) models were analyzed by GSVA. (A, C, E) GSVA of gene sets relevant to lupus, adapted for murine models (Kingsmore et al., 2021). (B, D, F) GSVA of gene signatures specific to distinct IFN subtypes. (A–F) Each symbol represents one mouse. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 by unpaired t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85914/elife-85914-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** GSVA of skin from ipsilateral IMQ painted ears and contralateral unpainted “non-lesional” ear of IMQ-treated mice.
 
 We assessed for common upregulated genes in human DLE, MRL/lpr, and IMQ datasets. While a direct compassion was complicated by the difference in data acquisition methods (microarray versus RNAseq), species and the magnitude of response between mouse models and human patients, utilizing a common size effect (logFC = 0.5) and FDR cutoffs (<0.05) yielded a small group of upregulated genes common to all three datasets (Figure 4A). All of these genes (Sprr1b, Isg15, Ddx60, Bst2, Xaf1, Rsad2, Slc7a8, Ifit3) were interferon-inducible genes. Similarly, in pairwise set overlaps (DLE – MRL/lpr, MRL/lpr – IMQ or IMQ – MRL/lpr) large proportion of overlapping genes were IFN-inducible targets including Ifi genes (Ifi44, 203, 204), IRF transcription factors (Irf 1,2,7, 8, and 9), Oas 2,3 and L2, Mx1 (Supplementary file 10).
 
@@ -88,9 +112,17 @@ We assessed for common upregulated genes in human DLE, MRL/lpr, and IMQ datasets
 
 Comparisons of the GSVA analyses of non-lesional skin among the datasets (Figure 4B) also emphasized the prominent enrichment of IFN genes in human DLE and MRL/lpr, B6.Sle1yaa, and B6 IMQ SLE models. Notably, IFN upregulation correlated with loss of LCs in human DLE and B6.Sle1yaa mice but not in MRL/lpr and IMQ mice (Figure 4B). The lack of correlation in IMQ mice also extended to the painted ipsilateral ear, where there was a reduced LC signature in the absence of IFN upregulation (Figure 3—figure supplement 1). Overall, these data are consistent with the idea that, similar to human lupus skin, non-lesional skin in multiple SLE models is characterized by an IFN-rich environment that potentially primes the skin for photosensitive responses. These data also suggest that LCs sit within an IFN-rich environment in both human lupus and multiple murine models that may cause their dysfunction.
 
-## IFN-I inhibits LC ADAM17 sheddase function
+### IFN-I inhibits LC ADAM17 sheddase function
 
 We examined the effects of IFN-I on UVR-induced LC ADAM17-mediated shedding and also sought to assess the extent to which altered sheddase activity reflected altered LC ADAM17 protein expression. We had previously established a facs-based LC ADAM17-mediated shedding assay by quantifying UVR-induced cell surface TNFR receptor 1 (TNFR1) loss at 45 min after UVR exposure, extensively validating that this loss reflected shedding activity, paralleled shedding of EGFR ligands into the supernatant, and was dependent on LC ADAM17 (Shipman et al., 2018). As we had studied LC ADAM17 sheddase activity using isolated LCs, we confirmed here that UVR treatment of a mixture of digested epidermal cells also induced LC cell surface TNFR1 loss (Figure 5A). This effect was LC ADAM17-dependent (Figure 5A), validating UVR-induced LC cell surface TNFR1 loss as a readout of LC ADAM17 activity in the context of a mixture of epidermal cells.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/85914/elife-85914-fig5-v2.jpg)
+
+**Figure 5.:** (A) Epidermal cell suspensions from WT and LCAd17 mice lacking ADAM17 in LCs were assayed for LC ADAM17 sheddase activity as indicated by the extent of UVR-induced cell surface TNFR1 loss. Percent change in cell surface TNFR1 mean fluorescence intensity (MFI) after UVR (left); relative LC ADAM17 activity calculated by normalizing TNFR1 loss to that of vehicle controls (right). (B) Representative histograms from cell surface ADAM17 staining of WT and LCAd17 epidermal cell suspensions. assayed. (C–P) Murine and human epidermal cell suspensions were treated ex vivo or mice were treated in vivo with IFN-I prior to assaying for UVR-induced LC ADAM17 sheddase activity (C, F, I, K, N), LC ADAM17 levels (D, G, L, O), and LC numbers (E, H, J, M, P). (C–J) Cells from WT mice were treated with IFN-κ or vehicle (C–E), with or without tofacitinib (F–H), or with IFN-βor vehicle (I–J). (K–M) IFN-κ or vehicle was applied topically to ears of WT mice 16–20 hr prior to examination. (N–P) Suction blister epidermal cell suspensions from healthy human donors were treated with IFN-β or vehicle. In (N), lines connect samples from the same donor. (A,C–P) Each symbol represents cells from a single mouse or donor, bars represent average values, and error bars are SD. n=3–10 per condition over 3–5 independent experiments. *p<0.05, **p<0.01, ***p<0.001, n.s.=not significant by paired (A, C, F, I, K, N (left)) or unpaired (A, C, F, I, K, N (right)), (D–E, G–H, J, L–M, O–P) t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85914/elife-85914-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic of suction blistering and sample collection. (B) Gating of Langerhans cells in blister. fluid and in epidermal roof cell suspension. (C) Langerhans cell abundance in blister fluid and. epidermal roof samples. Each symbol represents 1 healthy donor. ****p<0.0001 unpaired t-test.
 
 Anti-murine ADAM17 antibodies to quantify cell surface ADAM17 have not been available until one recently described by our group (Lora et al., 2021). This antibody was able to detect cell surface ADAM17 on LCs and other cells digested from skin, and this signal was specific, as it was lost from LCs in cells from mice lacking LC ADAM17 (Figure 5B; Shipman et al., 2018). Using the validated LC ADAM17 sheddase assay and new anti-murine ADAM17, we proceeded to examine the role of IFN-I in regulating LC ADAM17 activity and expression.
 
@@ -98,13 +130,13 @@ IFN-κ, an IFN-I that is highly expressed by lupus keratinocytes (Tsoi et al., 2
 
 We also asked how IFN-I affects human LCs. While LCs can be obtained from skin biopsies or discarded tissues associated with surgical procedures, these tissues often require lengthy enzymatic digestion to dissociate the cells (Shipman et al., 2018), which has the potential to disrupt cell function. We found that epidermal roofs yielded from suction blistering could be digested for a short amount of time to obtain an epidermal cell mixture containing LCs (Figure 5—figure supplement 1; Strassner et al., 2017). Addition of IFN-β reduced LC ADAM17 activity by 62% without altering ADAM17 expression or LC viability (Figure 5N–P). Together, these results suggested that IFN-I can inhibit LC ADAM17 sheddase function in both murine and human LCs and supported the idea that high levels of IFN-I could potentially contribute to LC ADAM17 dysfunction in disease.
 
-## IFNAR is important for LC ADAM17 dysfunction in multiple lupus models
+### IFNAR is important for LC ADAM17 dysfunction in multiple lupus models
 
 We asked whether IFN-I was an important regulator of LC ADAM17 function in lupus models. Consistent with previous findings (Shipman et al., 2018), MRL/lpr mice showed a 42% reduction in LC ADAM17 sheddase activity when compared to control MRL/+mice (Figure 6A). LC ADAM17 protein levels, however, were less affected, showing a 21% reduction (Figure 6B). Intraperitoneal (i.p.) anti-IFNAR treatment of MRL/lpr mice at 500 μg/dose restored UVR-induced LC TNFR1 loss (Figure 6A), suggesting restoration of LC ADAM17 sheddase activity. Anti-IFNAR did not alter cell surface ADAM17 protein expression (Figure 6B), suggesting that IFN-I regulated LC ADAM17 sheddase function rather than expression. A lower 125 μg/dose of anti-IFNAR had similar effects in restoring LC ADAM17 sheddase activity without affecting LC ADAM17 protein levels (Figure 6C–D). These results together suggested that IFN-I is important for inhibiting LC ADAM17 sheddase function in the MRL/lpr model.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/85914/elife-85914-fig6-v2.jpg)
 
-**Figure 6.:** (A–I) MRL/lpr (A–D), B6.Sle1yaa (E–F), and IMQ (G–I) lupus model mice and their controls were treated twice with anti-IFNAR or isotype control at indicated doses over 6 days prior to collection of non-lesional epidermal cells. (A, C, E, G) UVR-induced LC ADAM17 sheddase activity as in Figure 5. (B, D, F, H) Relative cell surface ADAM17 levels. (I) Relative LC numbers. (A–I) Each symbol represents a mouse, bars represent average values, and error bars are SD. n=3–9 per condition over 3–8 independent experiments. *p<0.05, **p<0.01, ***p<0.001, n.s.=not significant by paired (A, C, E, G (left)) or unpaired (A, C, E, G (right)), (B, D, F, H–I) t-test.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A–I) MRL/lpr (A–D), B6.Sle1yaa (E–F), and IMQ (G–I) lupus model mice and their controls were treated twice with anti-IFNAR or isotype control at indicated doses over 6 days prior to collection of non-lesional epidermal cells. (A, C, E, G) UVR-induced LC ADAM17 sheddase activity as in Figure 5. (B, D, F, H) Relative cell surface ADAM17 levels. (I) Relative LC numbers. (A–I) Each symbol represents a mouse, bars represent average values, and error bars are SD. n=3–9 per condition over 3–8 independent experiments. *p<0.05, **p<0.01, ***p<0.001, n.s.=not significant by paired (A, C, E, G (left)) or unpaired (A, C, E, G (right)), (B, D, F, H–I) t-test.
 
 LCs from the B6.Sle1yaa model showed a 63% reduction in UVR-induced TNFR1 loss when compared to control B6 mice without a corresponding change in cell surface ADAM17 protein levels (Figure 6E–F), suggesting reduced LC ADAM17 sheddase function in this SLE model. Similar to MRL/lpr mice, anti-IFNAR restored LC ADAM17 activity in B6.Sle1yaa mice without increasing ADAM17 protein expression (Figure 6E–F). These results suggest that IFN-I is an important inhibitor of LC ADAM17 sheddase function in the B6.Sle1yaa model.
 
@@ -112,25 +144,102 @@ Similar to the B6.Sle1yaa model, IMQ model mice showed reduced UVR-induced TNFR1
 
 We summarized the alterations in LC numbers, ADAM17 protein levels, and ADAM17 sheddase activity and effects of IFN-I modulation shown in Figures 5–6 and Shipman et al., 2018 to assess for consistent changes. While LC ADAM17 protein levels were not consistently affected and LC numbers were unchanged in the three lupus models examined, LC ADAM17 sheddase activity was consistently reduced (Table 1). Furthermore, manipulation of IFNAR signaling in these models, similar to treating human and murine LCs with IFN-I, consistently regulated only LC ADAM17 sheddase activity (Table 1). The uncoupling of IFN-I-mediated regulation of LC ADAM17 sheddase activity from LC numbers and LC ADAM17 expression suggests that IFN-I regulates LC ADAM17 sheddase function and points to an IFN-LC ADAM17 sheddase function axis as a potential mediator of IFN-I effects in skin.
 
-## Anti-IFNAR reduces photosensitivity in a manner dependent on EGFR signaling and LC ADAM17
+**Table 1.**
+ IFN inhibition of LC ADAM17 sheddase activity is uncoupled from LC numbers and LC ADAM17 surface expression.Results from Figures 5–6 and shows that IFN-mediated alterations in LC ADAM17 sheddase activity do not correlate consistently with changes in LC numbers or surface LC ADAM17 expression.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LC numbers</th>
+      <th>LC ADAM17 sheddase activity</th>
+      <th>LC ADAM17 cell surface levels</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>In vitro IFN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Human skin +IFN</td>
+      <td>Unchanged</td>
+      <td>Down</td>
+      <td>Unchanged</td>
+    </tr>
+    <tr>
+      <td>Murine skin +IFN</td>
+      <td>Unchanged</td>
+      <td>Down</td>
+      <td>Modestly down</td>
+    </tr>
+    <tr>
+      <td>In vivo IFN (murine)</td>
+      <td>Unchanged</td>
+      <td>Down</td>
+      <td>Modestly down</td>
+    </tr>
+    <tr>
+      <td>MRL/lpr model</td>
+      <td>Unchanged</td>
+      <td>Down</td>
+      <td>Modestly down</td>
+    </tr>
+    <tr>
+      <td>Anti-IFNAR</td>
+      <td></td>
+      <td>Restored</td>
+      <td>Unchanged</td>
+    </tr>
+    <tr>
+      <td>B6.Sle.1yaa model</td>
+      <td>Unchanged</td>
+      <td>Down</td>
+      <td>Unchanged</td>
+    </tr>
+    <tr>
+      <td>Anti-IFNAR</td>
+      <td></td>
+      <td>Restored</td>
+      <td>Unchanged</td>
+    </tr>
+    <tr>
+      <td>IMQ model</td>
+      <td>Unchanged</td>
+      <td>Down</td>
+      <td>Unchanged</td>
+    </tr>
+    <tr>
+      <td>Anti-IFNAR</td>
+      <td>Unchanged</td>
+      <td>Restored</td>
+      <td>Unchanged</td>
+    </tr>
+  </tbody>
+</table>
+
+### Anti-IFNAR reduces photosensitivity in a manner dependent on EGFR signaling and LC ADAM17
 
 We next asked whether the anti-IFNAR-mediated restoration of LC ADAM17 sheddase activity impacted photosensitive skin responses. Anti-IFNAR treatment at 500 μg/dose reduced ear swelling in MRL/lpr mice (Figure 7A–B) but did not reduce epidermal permeability, a readout of skin barrier function (Figure 7C). Surprisingly, in control MRL/+mice, anti-IFNAR actually increased UVR-induced ear swelling and epidermal permeability (Figure 7B–C), suggesting that anti-IFNAR at this dose-induced photosensitivity in non-lupus mice. These results echoed findings by other groups that IFNAR deficiency in non-lupus B6 mice induced photosensitivity (Sontheimer et al., 2017) and reduced skin wound healing (Gregorio et al., 2010; Wolf et al., 2022), and we considered the possibility that the 500 μg anti-IFNAR dose perhaps mimicked complete IFNAR deficiency and disrupted normal skin functions, thus obscuring the effects of LC ADAM17 activity restoration. Reducing anti-IFNAR to 125 μg/dose still increased UVR-induced MRL/+ear swelling but no longer increased epidermal permeability (Figure 7D–E), suggesting a decreased pathologic effect on physiologic skin functions. This lower dose, which was sufficient to restore LC ADAM17 activity in MRL/lpr mice (Figure 6C), was sufficient to reduce both UVR-induced skin swelling and epidermal permeability (Figure 7D–E) and limit neutrophil and monocyte infiltration after UVR exposure (Figure 7F). Thus, anti-IFNAR at 125 μg/dose that restored LC ADAM17 sheddase function also reduced UVR-induced skin swelling, epidermal permeability, and inflammatory infiltrates in MRL/lpr mice.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/85914/elife-85914-fig7-v2.jpg)
 
-**Figure 7.:** (A–L) MRL/lpr (A–I) and LCAd17 (J–L) mice and controls were treated according to schematics in (A, G, J) and non-lesional ears were harvested. (B, D, H) Ear thickness. (C, E, I) Epidermal permeability as indicated by toluidine blue retention. (F, K) Neutrophils and monocytes, and (L) LCs per ear. (B–F, H–I, K–L) n=4–10 per condition over four to six independent experiments. *p<0.05, **p<0.01, ***p<0.001, n.s.=not significant by paired (B, D, H) and unpaired (C, E, F, I, K–L) t-test.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A–L) MRL/lpr (A–I) and LCAd17 (J–L) mice and controls were treated according to schematics in (A, G, J) and non-lesional ears were harvested. (B, D, H) Ear thickness. (C, E, I) Epidermal permeability as indicated by toluidine blue retention. (F, K) Neutrophils and monocytes, and (L) LCs per ear. (B–F, H–I, K–L) n=4–10 per condition over four to six independent experiments. *p<0.05, **p<0.01, ***p<0.001, n.s.=not significant by paired (B, D, H) and unpaired (C, E, F, I, K–L) t-test.
 
 We sought to understand the extent to which the anti-IFNAR-driven reduction in photosensitivity reflected the rescue of LC ADAM17 activity. As LC ADAM17 limits photosensitivity by stimulating EGFR (Shipman et al., 2018), we blocked EGFR signaling upon anti-IFNAR treatment of MRL/lpr mice (Figure 7G). The small molecule EGFR tyrosine kinase inhibitor PD168393 (PD16) abrogated the anti-IFNAR-mediated reduction in ear swelling and epidermal permeability (Figure 7H–I), suggesting that anti-IFNAR requires EGFR signaling to ameliorate photosensitivity in MRL/lpr mice. These data are consistent with the idea that anti-IFNAR reduces photosensitivity by restoring LC ADAM17 sheddase function.
 
 IMQ mice were characterized by monocyte accumulation while neutrophils were lower in number (Figure 7J–K). Anti-IFNAR reduced the monocyte cell infiltrate in UVR-treated skin and had no effect on neutrophil numbers (Figure 7K). LC numbers were unaffected (Figure 7L). In IMQ-treated LCAd17 mice lacking ADAM17 in LCs (Shipman et al., 2018), however, anti-IFNAR failed to reduce monocyte accumulation (Figure 7K), suggesting that the ameliorative effects of anti-IFNAR on UVR-induced inflammation are, in part, dependent on LC ADAM17. That anti-IFNAR reduction of photosensitive responses across two lupus models depended on EGFR signaling and LC ADAM17 provided strong support for the idea that IFN-I contributes to photosensitivity at least in part by promoting LC ADAM17 sheddase dysfunction.
 
-## IFN-I inhibits UVR-induced LC ROS expression
+### IFN-I inhibits UVR-induced LC ROS expression
 
 UVR has been shown to trigger ADAM17 sheddase activity in fibroblasts via ROS generation (Singh et al., 2009), and we asked if IFN-I modulation of ROS was associated with changes in LC ADAM17 activity. We observed the expected UVR-induced ROS generation in LCs from WT skin (Figure 8A; de Jager et al., 2017). Skin from IMQ-treated mice showed a reduction in UVR-induced LC ROS generation when compared to control skin, and anti-IFNAR treatment of IMQ mice restored UVR-driven ROS generation (Figure 8A). Assessment of cytoplasmic versus mitochondrial LC ROS showed that UVR exposure upregulated mainly cytoplasmic ROS (Figure 8B–C). These results suggested that IFN-I could potentially limit UVR-induced LC cytoplasmic ROS to inhibit LC ADAM17 sheddase function.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/85914/elife-85914-fig8-v2.jpg)
 
-**Figure 8.:** (A) Epidermal cell suspensions from control or IMQ mice treated with IgG or anti-IFNAR were exposed to UVR. Cells were loaded with the general ROS indicator CM-H2DCFDA prior to staining for LC markers for flow cytometry analysis. Representative histograms (left), CM-H2DCFDA signal MFI (middle), and fold change with UVR exposure (right). (B–C) Healthy B6 epidermal cells were loaded with the cytoplasmic ROS indicator CellROX (B) or mitochondrial ROS indicator MitoSOX (C) prior to UVR exposure and staining of LC markers. Signal was calculated by dividing the ROS indicator MFI by the MFI of its respective negative control. Each symbol represents one mouse, bars represent average values, and error bars are SD. n=5–6 per condition over four to five experiments. *p<0.05, **p<0.01, n.s.=not significant by paired A (left), (B, C) and unpaired (A (right)) t-test.Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A) Epidermal cell suspensions from control or IMQ mice treated with IgG or anti-IFNAR were exposed to UVR. Cells were loaded with the general ROS indicator CM-H2DCFDA prior to staining for LC markers for flow cytometry analysis. Representative histograms (left), CM-H2DCFDA signal MFI (middle), and fold change with UVR exposure (right). (B–C) Healthy B6 epidermal cells were loaded with the cytoplasmic ROS indicator CellROX (B) or mitochondrial ROS indicator MitoSOX (C) prior to UVR exposure and staining of LC markers. Signal was calculated by dividing the ROS indicator MFI by the MFI of its respective negative control. Each symbol represents one mouse, bars represent average values, and error bars are SD. n=5–6 per condition over four to five experiments. *p<0.05, **p<0.01, n.s.=not significant by paired A (left), (B, C) and unpaired (A (right)) t-test.
 
 ## Discussion
 
@@ -152,29 +261,29 @@ High IFN-I states are also seen in viral infections, genetic interferonopathies,
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 The purpose of the study was to understand how LC function is regulated by the environment in non-lesional skin to contribute to photosensitivity. The subjects are both humans and mice. We used gene expression analyses to understand the gene expression profiles in human lupus and murine lupus models. We used ex vivo flow cytometry-based assays, assessment of epidermal permeability, and skin swelling assays to understand the effects of IFN on LC function and implications for photosensitivity. Sample sizes and replicate numbers are provided in each figure legend. Sample sizes were determined based on previous similar types of experiments. Mice were randomly assigned to treatment groups. No criteria were set for excluding certain data points and no data points were excluded. No specific confounder variables such as order of treatments or cage location were controlled for except that our experiments used multiple independent cohorts of mice over replicate experiments. Assessments and analyses were not blinded. ARRIVE reporting guidelines Percie du Sert et al., 2020 have been used.
 
-## Mice
+### Mice
 
 Eight- to 16-week-old mice were used unless otherwise specified. Mice were sex and age-matched. For C57Bl/6 mice, LCAd17 (Langerin-cre; Adam17 f/f) mice (Shipman et al., 2018), and wildtype littermate controls, males and females were used. Unless otherwise indicated, for MRL/+and MRL/lpr mice, females were used at 8–12 weeks, while males were used at 12–16 weeks as females present with a disease phenotype earlier than males. For B6.Sle1yaa mice and their B6 controls, only males were used because the model depends on the autoimmune accelerator locus located on the Y chromosome. B6 mice were either bred in-house or purchased from Jackson Laboratory (Bar Harbor, ME). MRL/+, MRL/lpr mice, B6.Sle1yaa mice, and their B6 controls were either bred in-house or purchased from Jackson Laboratory. LCAd17 mice were bred in-house. Mice were kept in a specific pathogen-free barrier facility and all animal procedures including protocols to reduce pain, suffering, and distress were performed in accordance with the regulations of the Institutional Animal Care and Use Committee at Weill Cornell Medicine (New York, NY; protocol number 2015–0067).
 
-## Mouse treatments
+### Mouse treatments
 
 For IFN-κ painting, 37.5 ng IFN-κ (R&D Systems, Minneapolis, MN) was dissolved in DMSO (Sigma-Aldrich, St. Louis, MO) was applied topically onto each ear (18.75 ng on dorsal and ventral sides, each). For anti-IFNAR1 treatments, mice were injected IP with 500 µg/dose or 125 µg/dose of anti-IFNAR1 (MAR1-5A3) or isotype control (MOPC-21; Bio X Cell, West Lebanon, NH). For UVR treatments, mice were exposed to 1000 J UVB/m2 (100 mJ/cm2) daily for 4 consecutive days using a bank of four FS40T12 sunlamps that emitted a combination of UVA and UVB radiation, similar to described (Shipman et al., 2018). Timing of UVR exposure was made based on lamp emission of 1.31 mW/cm2 UVB and distance of 9 cm away from lamp. To measure ear swelling after UVR exposure, a caliper (Mitutoyo, Aurora, IL) was used to take three measurements throughout each ear, and the reported value is the average of both ears. Each measurement was taken 22–24 hr after the previous measurement. For the IMQ-induced lupus mouse model, mice were painted on the dorsal and ventral sides of the right (ipsilateral) ear with 5% imiquimod cream (42 mg/ear/mouse) 3 x/week for 4–6 weeks (Yokogawa et al., 2014) prior to, and continued through experiments. The unpainted (contralateral) left ear was taken as non-lesional skin for flow cytometry experiments. For RNAseq, the painted ipsilateral ear and the unpainted contralateral ‘non-lesional’ left ear were taken and analyzed separately. Indicated MRL/lpr mice received 2.95 mg of the irreversible EGFR inhibitor PD168393 (0.74 mg on dorsal and ventral sides, each; Selleck Chem, Pittsburgh, PA).
 
-## Human subjects
+### Human subjects
 
 For microarray analysis, seven discoid CLE patients were examined. Both lesional and non-lesional skin were collected and the gene expression data from lesional tissue of these patients have been published, and patient characteristics are described (Jabbari et al., 2014). Healthy controls include the three that were previously described (Jabbari et al., 2014). All human tissue collection and research use adhered to protocols approved by the Institutional Review and Privacy Boards at the Rockefeller University (IRB# AJA-00740) and New York University (IRB# 10–02117), where participants signed written informed consents.
 
 For suction blistering, one male and three female healthy participants between the ages of 23 and 55 participated. All human tissue collection and research use adhered to protocols approved by the Institutional Review and Privacy Board at the Hospital for Special Surgery (IRB# 2019–1998), where participants signed written informed consents.
 
-## Human skin cell collection and preparation
+### Human skin cell collection and preparation
 
 Suction blistering was performed as previously described (27). Eight 5 mm suction blisters were generated with a negative pressure instrument (NP-4 model, Electronic Diversities, Finksburg, MD) on the arm of healthy donors over 30–60 min. The blister fluid was then collected by aspiration, and epidermal roofs were collected. After collection, epidermal roofs from suction blisters were digested with dispase (2.42 U/mL; Thermo Fisher Scientific, Waltham, MA), collagenase type II (616 U/mL; Worthington Biochemical Corporation, Lakewood, NJ), and DNAseI (80 μg/mL; Sigma Aldrich, St. Louis, MO) for 40 min to generate single cell suspensions that were used for the ADAM17 sheddase assay.
 
-## Skin cell collection and flow cytometry staining and quantification
+### Skin cell collection and flow cytometry staining and quantification
 
 For murine epidermal single cell suspensions, skin on the trunk was excised and subcutaneous fat scraped off. Skin was incubated in dispase (2.42 U/mL) at 37 °C. The epidermis was then gently peeled, finely minced, digested in type II collagenase (616 U/mL) and DNAse I (80 μg/mL).
 
@@ -184,7 +293,7 @@ For human LC TNFR1 staining for the ADAM17 sheddase activity assay, single cell 
 
 For antibodies used, please see Supplementary file 11.
 
-## Ex vivo ADAM17 sheddase activity assay
+### Ex vivo ADAM17 sheddase activity assay
 
 For murine skin, cell suspensions of epidermis were suspended at 200,000–500,000 cells/mL medium. For MRL/LPR and B6.Sle1yaa skin, medium was RPMI with 2% FBS, HEPES buffer, L-glutamine, penicillin-streptomycin (all Thermo Fisher Scientific, Waltham, MA). For IMQ mice skin, medium was phenol red-free RPMI (Corning, Edison, New Jersey), no serum, with HEPES buffer, L-glutamine, penicillin-streptomycin. Cells were exposed to 2000 (LPR and B6.Sle1yaa model mice) or 1000 (IMQ model mice) J/m2 UVR incubated for 45 min, and then stained for cell surface markers described above. For IFN-κ treatment, 3.125 ng/mL murine IFN-κ (R&D Systems, Minneapolis, MN) was added to the epidermal cell suspension that were incubated for 16–20 hr prior to UVR exposure. Indicated cells were treated with 1 nM tofacitinib (Selleck Chem, Pittsburgh, PA) during IFN-κ incubation. For IFN-β treatment, 30 ng/ml murine IFN-β (R&D Systems) was added to the epidermal cell suspensions and assessed as above.
 
@@ -192,25 +301,25 @@ For human skin, cells were incubated for 1 hr with recombinant human IFN-β (35.
 
 Calculating the relative change in cell surface TNFR1 levels upon UVR exposure was as previous (Shipman et al., 2018). The geometric MFI of TNFR1 was divided by the MFI for the isotype control to generate a relative MFI. The percent TNFR1 MFI change was calculated by setting the relative MFI of the control sample to 1 and normalizing the value from the experimental samples to that control. In experiments with more than one control sample, the control values were averaged, and the experimental samples were each normalized to the averaged value.
 
-## Epidermal permeability assay
+### Epidermal permeability assay
 
 Epidermal barrier function was assessed as described (Shipman et al., 2018). Ear skin was dehydrated and rehydrated in graded methanol and then incubated in 0.1% toluidine blue dye (Sigma Aldrich, St. Louis, MO). The dye was extracted with a buffer consisting of 95% methanol, 2.5% sulfuric acid, and 2.5% water and quantified with a colorimeter at 620 nm. Dye concentration was calculated using a standard curve.
 
-## Ex vivo ROS assays
+### Ex vivo ROS assays
 
 Epidermal cell suspensions in serum-free, phenol red-free DMEM/F-12 media were exposed to 1000 J/m2 UVR and the general ROS indicator 5-(and-6)-chloromethyl-2’,7’-dichlorodihydrofluorescein diacetate, acetyl ester (CM-H2DCFDA) (Invitrogen, Waltham, MA) at 10 uM was added immediately after UVR exposure. CM-H2DCFDA oxidation by ROS inside the cells leads to fluorescence. Cells were further incubated for 45 min prior to cell surface marker staining to identify LCs by flow cytometry.
 
 To assess cytoplasmic vs mitochondrial sources of ROS, epidermal cell suspensions were incubated with MitoSOX Green superoxide indicator (Thermo Fisher) and CellROX Deep Red Reagent (Thermo Fisher; final concentration of 5 µM for each) or vehicle (DMF and DMSO, respectively). Fifteen minutes after addition of reagents, cells were exposed to 750 J/m2 UVR, incubated another 15 min, and then washed three times with warm PBS prior to staining for extracellular surface markers for flow cytometry.
 
-## RNA extraction
+### RNA extraction
 
 Female MRL/+and MRL/lpr 12–14 weeks old, 12-week-old B6 and B6.Sle1yaa male mice, and 12- to 14-week-old IMQ mice were used for RNA sequencing. RNA was extracted from ear skin using an RNEasy Kit (Qiagen, Germantown, MD) and quality confirmed on a BioAnalyzer 2100 (Agilent Technologies, Santa Clara, CA).
 
-## RNA sequencing
+### RNA sequencing
 
 Libraries were prepared with non-stranded and poly-A selection TruSeq RNA Sample Preparation kits. Sequencing libraries were sequenced by the Genomics Core Facility at Weill Cornell Medicine using a HiSeq 2500 (MRL/lpr, MRL/+samples) and NovaSeq 6000 (samples from B6.Sle1yaa and IMQ models and their controls) at a depth of 15–30 million mappable paired-end reads per sample.
 
-## Computational analyses of gene expression data
+### Computational analyses of gene expression data
 
 Microarray analysis was performed using healthy controls and DLE lesional skin samples from an existing GEO dataset (GSE52471) obtained from GEO using GEOquery and combined with previously unpublished, unsubmitted non-lesional skin sample data obtained as part of the original study (Jabbari et al., 2014). Microarray data were normalized with gcRMA normalization using the gcrma R package (Wu et al., 2021). Differential gene expression analysis was performed with limma using the empirical bayes method (Ritchie et al., 2015) and controlling for microarray hybridization kit and sex. Batch correction was performed using ComBat (Kammers et al., 2021). Visualizations were generated using ComBat corrected data with plotly and ggplot2 in R.
 
@@ -220,6 +329,6 @@ Differentially regulated pathways were identified using R QuSAGE 2.22.0 package 
 
 The R/Bioconductor package, GSVA (Hänzelmann et al., 2013) (v1.36.3), was utilized as a non-parametric, unsupervised method to estimate enrichment of pre-defined gene sets in gene expression data from human DLE skin and non-lesional skin from MRL/lpr, B6.Sle1yaa, and IMQ mice. The inputs for GSVA were a matrix of expression values for all samples and curated gene sets describing select immune/tissue cell types and inflammatory cytokines. For the analysis of human DLE microarray data, low-intensity probes were filtered out if the interquartile range (IQR) of their expression values across all samples was not greater than 0 prior to the analysis. Enrichment scores were calculated using a Kolgomorov Smirnoff (KS)-like random walk statistic and represented the greatest deviation from zero for a particular sample and gene set. Scores across all samples were normalized to values between –1 (indicating no enrichment) and +1 (indicating enrichment). Gene sets used as input for GSVA are listed inSupplementary files 3 and 9. The human gene sets were previously published (Martínez et al., 2022). The mouse plasma cell, T cell, myeloid cell, neutrophil, pDC, dendritic cell, and keratinocyte gene sets were derived from Mouse CellScan, a tool for the identification of cellular origin of mouse gene expression datasets. The mouse IFN gene sets have been previously described (Kingsmore et al., 2021). The mouse cytokine signatures were generated by an iterative process involving derivation through literature mining and GO term definitions provided by the Mouse Genome Informatics (MGI) GO Browser (Bult et al., 2019).
 
-## Statistical analyses
+### Statistical analyses
 
 We determined the normality of data distribution using the Shapiro-Wilk test. For normally distributed data, we used two-tailed unpaired and paired Student’s t-tests for comparisons between two conditions to evaluate p-values as indicated. For data that were not normally distributed, the Mann-Whitney test was used for unpaired and Wilcoxon matched-pairs signed rank test for paired comparisons. Significance was defined as p<0.05. GraphPad Prism software was used. For figures showing normalized values, the control sample was set to one, and the experimental samples were normalized relative to the control for that experiment. For experiments that contained more than one control sample, the mean was obtained for the control samples, and the individual control and experimental samples were calculated relative to this mean.

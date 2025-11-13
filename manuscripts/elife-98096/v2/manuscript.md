@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02feahw73 Univ. Côte d’Azur (UniCA), CNRS, Inserm, Institut de Biologie Valrose (iBV) Nice France
-2. https://ror.org/0015ws592 GenomEast platform, Institut de Génétique et de Biologie Moléculaire et Cellulaire (IGBMC) Illkirch France
+1. Univ. Côte d’Azur (UniCA), CNRS, Inserm, Institut de Biologie Valrose (iBV) Nice France ([ROR:02feahw73](https://ror.org/02feahw73))
+2. GenomEast platform, Institut de Génétique et de Biologie Moléculaire et Cellulaire (IGBMC) Illkirch France ([ROR:0015ws592](https://ror.org/0015ws592))
 
 † Corresponding author
 
@@ -31,53 +31,133 @@ Self-organizing human brain organoids offer an unprecedented tool for modeling e
 
 ## Results
 
-## An optimized 2D/3D organoid protocol allows a fast and reproducible generation of telencephalic cells
+### An optimized 2D/3D organoid protocol allows a fast and reproducible generation of telencephalic cells
 
 Based on previous methods (Chambers et al., 2009; Qian et al., 2018), we optimized a human brain organoid protocol to study how FGF8 signaling impacts neuronal development and differentiation (Figure 1A). For fast and efficient induction of neural progenitors, we employed a dual inhibition of SMAD signaling paradigm (Chambers et al., 2009) by treating confluent 2D hiPSC cultures with TGFβ and BMP inhibitors (SB-431542 and LDN-193189, respectively). As endogenous WNT factors can inhibit the acquisition of an anterior fate (Bertacchi et al., 2015b; Lupo et al., 2013), a chemical WNT inhibitor (XAV-939) was added for optimal induction of telencephalic regional identity. Around day5-6, clusters of radially organized neural progenitors (i.e. neural rosettes) were visible in brightfield microscopy (Figure 1—figure supplement 1). Consistently with the appearance of rosettes, analysis of key markers for pluripotency and neural differentiation by real-time qRT-PCR showed efficient neural induction by day7 (Figure 1B), with down-regulation of stemness markers OCT4 and NANOG and upregulation of a molecular signature characteristic of antero-dorsal telencephalic neural progenitors (NPs; SOX2, PAX6, SIX3 and OTX2). Notably, only NPs treated with XAV-939 (WNT inhibition; WNTi hereafter) efficiently upregulated the telencephalic marker FOXG1 at day10 compared to control samples (CTRL; Figure 1B), as further confirmed by immunostaining (Figure 1C and D). To obtain 3D organoids, we dissociated day7 neural rosettes and re-aggregated early NPs into spherical aggregates (embryoid bodies, EBs; Figure 1—figure supplement 1), which were included 24 hr later in Matrigel droplets. For optimal nutrient and oxygen distribution, EB-containing Matrigel droplets (named ‘cookies’; Qian et al., 2018) were cultured in miniaturized spinning bioreactors (Qian et al., 2018; Qian et al., 2016). After a few additional days of 3D culture, NPs spontaneously re-organized as multiple radially structured rosettes (Figure 1E–F’), but only WNTi organoids showed a significantly higher number of FOXG1+ rosettes compared to CTRL ones (Figure 1E–I). After 10–15 days (day35) of culture in neural differentiation medium (NDM), SOX2+ FOXG1+ NP rosettes started to be surrounded by differentiating neurons (Figure 1J and J’). From this stage onwards, the culture medium was supplemented with pro-survival and anti-apoptotic elements to provide optimal conditions for long-term cultures (long-term survival medium, LTSM). At around day50, FOXG1+ NR2F1+ SOX2+ NP rosettes were surrounded by differentiated neurons (Figure 1K–M’), which were positive for neural-Tubulin (NTUB) staining (Figure 1K and K’) and expressed markers of cortical layers such as TBR1 and CTIP2 (Figure 1M and M’). In summary, by combining previous protocols for the induction of human brain cells, we associated the high yield and rapidity of 2D neural induction with the optimized growth of 3D neural structures in spinning bioreactors, obtaining anterior NPs in 7 days and highly organized telencephalic organoids in 1 month of culture.
 
-## FGF8 treatment modulates telencephalic target genes in brain organoids
+![Figure 1.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the hybrid 2D/3D method for generating telencephalic/cortical human organoids in vitro, using a triple inhibition of TGFβ, BMP, and WNT pathways (SB-431542, 5 µM; LDN-193189, 0.25 µM; XAV-939, 2 µM). On day 7, cells are dissociated and re-aggregated in 96-well plates. One day later, embryoid bodies (EBs) are embedded in Matrigel droplets (10 µL per droplet containing 1–4 EBs). These droplets, termed ‘cookies’, are then cultured in spinning bioreactors. (B) Real-time qRT-PCR analysis quantifying pluripotency markers (NANOG, OCT4) and telencephalic neural progenitor (NP) markers (SOX2, PAX6, FOXG1, SIX3, and OTX2) in undifferentiated HMGU1 hiPSCs and in day7 and day10 control (CTRL) and WNT-inhibited (WNTi) samples, as indicated. n=2 culture wells per condition, pooled prior to RNA extraction. (C,D) Immunostaining for FOXG1 (red) and SOX2 (green) in day10 2D neural cultures under control (CTRL) conditions (C) or following WNT inhibition (WNTi) (D). (E–I) Immunostaining for FOXG1 (red) and SOX2 (green) in day14 (E-F’) and day21 (G-H’) organoids under CTRL or WNTi conditions, as indicated. White arrowheads in high-magnification images point to neural progenitor (NP) rosettes. The graph (I) shows quantification of FOXG1 pixel intensity in CTRL and WNTi samples across time points. n≥7 sections from n≥4 organoids from n=2 independent batches (except day52-69 CTRL sample, n=2 sections from 1 batch). (J,J’) FOXG1 (red) and SOX2 (green) immunostaining in day35 WNTi organoids. White arrowheads in high-magnification images indicate NP neural rosettes, while arrows highlight differentiating neurons surrounding the rosettes. (K-M’) Immunostaining for FOXG1 (red) and NTUB (green) (K, K’), NR2F1 (red) and SOX2 (green) (L, L’), and TBR1 (red) and CTIP2 (green) (M, M’) in day53 WNTi organoids. High-magnification images highlight FOXG1+ SOX2+ NR2F1+ NP rosettes/neuroepithelia (K-L’; indicated by white arrowheads) surrounded by TBR1+ CTIP2+ NR2F1+ differentiating cortical neurons (L’-M’; indicated by white arrows). Scale bars: 100 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Brightfield microscope images showing, from top left to bottom right: undifferentiated and confluent HMGU1 cells at the starting day of the neural differentiation protocol; day7 neural progenitors organized in groups of radially oriented cells (arrowheads) and surrounded by non-neural cells; dissociated NPs at day7, spinned at the bottom of 96-well plates; day7 dissociated NPs at the bottom of a single well; embryoid body (EB) at day8, 24 hr after dissociation; day10 EB included in Matrigel; EB at day16, with some rosettes and neural epithelia becoming visible on the borders; day65 organoid.
+
+### FGF8 treatment modulates telencephalic target genes in brain organoids
 
 In the developing mouse brain, distinct sources of diffusing FGF8 fine-tune the expression of several genes. In WNTi human organoids, we found that early FGF8 treatment (starting at day5; Figure 2—figure supplement 1A and B) reduced FOXG1 expression, in line with early FGF8 inducing posterior rather than anterior identity (Stevens et al., 2010). The addition of FGF8 to the culture medium starting at day10-11 (Figure 2A) or later at day20 did not affect FOXG1 expression (Figure 2—figure supplement 1A and B), indicating preservation of telencephalic identity. However, day20 FGF8 treatment was less efficient in modulating the FGF8-target NR2F1 (Figure 2—figure supplement 1C and D), suggesting that earlier treatment was more appropriate for efficient FGF8 pathway modulation. Hence, we chose day10-11 as the starting time point for FGF8 treatment (hereafter referred to as WNTi + FGF8 condition), which preserved FOXG1 expression while efficiently modulating FGF8 target genes. Real-time qRT-PCR analysis of known FGF8 target genes (SPRY4, DUSP6, ETV4, ETV1, and ETV5) confirmed that our set-up efficiently activated FGF signaling in day20 and day30 organoids (Figure 2B). As a specific read-out of FGF8 treatment on the expression of telencephalic targets, we stained control (WNTi) and treated (WNTi + FGF8) organoids for NR2F1 and FOXG1 at different time points (Figure 2C–I and Figure 2—figure supplement 2). NR2F1 expression, still low on day19 but higher on day26, was efficiently modulated by FGF8 (Figure 2—figure supplement 2A–H’). Real-time qRT-PCR confirmed FGF8-mediated inhibition of NR2F1 on day20 and day30 cultures (Figure 2C), while FOXG1 levels were partially affected upon FGF8 treatment on day30 (Figure 2C). Despite this, WNTi + FGF8 organoids still largely expressed FOXG1 at later stages (day35 and day53; Figure 2D–F and Figure 2—figure supplement 2I–J’) alongside efficient modulation of NR2F1 protein levels (Figure 2G–I and Figure 2—figure supplement 2K–L’). FGF8 was maintained in the culture medium until day ~60 to prevent any increase of NR2F1 expression back to normal levels (Figure 2—figure supplement 2M–P’). Thus, our FGF8 culture conditions efficiently modulate NR2F1 in telencephalic organoids starting at day19-21 and until day69-74, while maintaining FOXG1 expression at high levels (Figure 2—figure supplement 2Q and R), validating the efficacy of FGF8 treatment in vitro and suggesting an evolutionary conservation of the NR2F1-FGF8 regulatory molecular axis from mice to humans.
 
-## Single-cell RNA sequencing (scRNAseq) reveals multiple progenitor and neuronal classes present in human organoids
+![Figure 2.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of the hybrid 2D/3D method for applying FGF8 treatment on telencephalic/cortical human organoids in vitro. FGF8 (100 ng/mL) was added to the neural progenitor patterning medium (NPPM) beginning on day10-11 (blue bar) and maintained through subsequent culture steps until approximately day50-60. (B) Real-time qRT-PCR analysis of FGF8 target gene expression (SPRY4, DUSP6, ETV4, ETV1, and ETV5) in day20 and day30 organoids treated with WNT inhibition alone (WNTi) or in combination with FGF8 (WNTi + FGF8), as indicated. n=3 organoids per condition, pooled prior RNA extraction. (C) Real-time qRT-PCR quantification of FOXG1 (telencephalic marker) and NR2F1 (caudal telencephalic marker and FGF8 target) expression in day20 and day30 control (CTRL), WNT-inhibited (WNTi), and FGF8-treated (WNTi + FGF8) samples, as indicated. FGF8 treatment effectively downregulates NR2F1 expression in WNTi + FGF8 organoids compared with WNTi organoids. n=3 organoids per condition, pooled prior RNA extraction. (D–F) Immunostaining for FOXG1 (red) and SOX2 (green) in day35 WNTi and WNTi + FGF8 organoids, as indicated. FGF8 treatment does not significantly alter FOXG1 expression. White arrowheads in high-magnification images indicate SOX2+ NR2 F1+ NPs within rosettes. Graph (F) shows pixel intensity quantification of FOXG1 staining in WNTi and WNTi + FGF8 organoids at different time points. n≥8 sections from n≥4 organoids from n≥2 distinct batches. (G–I) NR2F1 and NTUB (red and green, respectively, in G-H’) immunostainings on day35 WNTi and WNTi + FGF8 organoids, as indicated. FGF8 treatment efficiently modulates NR2F1 expression (compare G and H). High-magnification images (G’ and H’) show neural rosettes (NTUBlow, indicated by white arrowheads) and differentiating neurons (NTUBhigh, indicated by white arrows), both expressing NR2F1 (red) in WNTi organoids, but lacking NR2F1 in WNTi + FGF8 organoids. Graph (I) displays pixel intensity quantification of NR2F1 staining in WNTi and WNTi + FGF8 organoids over time. n≥6 sections from n≥4 organoids from n≥2 distinct batches. Scale bars: 100 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A,B) Panel showing FOXG1 (red) and SOX2 (green) immunostaining in control (CTRL), WNT inhibited (WNTi) and FGF8 treated (WNTi + FGF8) day 30 organoids, as indicated. FGF8 was added at day5, at day10 or at day20; when added at day5, FGF8 partially inhibited FOXG1 expression, suggesting interference with induction of telencephalic identity (pixel intensity in graph B). (C,D) Panel showing NR2F1 (red) and SOX2 (green) immunostaining in WNT inhibited (WNTi) and FGF8 treated (WNTi + FGF8) day 30 organoids, as indicated. FGF8 treatment starting at day10 efficiently downregulated NR2F1, while treatment starting at a later time point (day20) failed to restrain NR2F1 expression (pixel intensity in graph D). For both graphs in B and D: n≥8 sections from n≥4 organoids from n=1 batch. Scale bars: 50 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A-H’) FOXG1 and NTUB (red and green, respectively, in A-B’ and in E-F’) and NR2F1 and SOX2 (red and green, respectively, in C-D’ and in G-H’) immunostainings on day19 or on day26 WNTi and WNTi + FGF8 organoids, as indicated. FGF8 treatment did not significantly interfere with FOXG1 expression (A-B’, E-F’), while NR2F1 (which started to be detectable at low levels by immunostaining at day19 in WNTi organoids) was down-regulated by FGF8 (compare C,C’ with D,D’ or G,G’ with H,H’). (I-L’) FOXG1 and NTUB (red and green, respectively, in I-J’) and NR2F1 and SOX2 (red and green, respectively, in K-L’) immunostainings on day53 WNTi and WNTi + FGF8 organoids, as indicated. (M-P’) NR2F1 (red) and SOX2 (green) immunostaining in day74 (M-N’) and in day107 (O-P’) WNTi and WNTi + FGF8 organoids, showing that NR2F1 is still efficiently modulated by FGF8 20–25 days after end of the treatment (N, N’) but is gradually upregulated back to control levels in long-term cultured organoids (day107; P-P’). (Q) Graph shows pixel intensity quantification of FOXG1 levels after immunostaining of WNTi and WNTi + FGF8 organoids at different time points, as indicated. n≥8 sections from n≥4 organoids from n≥1 batch. (R) Graph shows pixel intensity quantification of NR2F1 immunostaining in WNTi and WNTi + FGF8 organoids at different time points, as indicated. NR2F1 level was efficiently downregulated by FGF8 treatment from day26 to day74, while it raised back at later time points. n≥6 sections from n≥4 organoids from n≥1 batch. Scale bars: 100 µm.
+
+### Single-cell RNA sequencing (scRNAseq) reveals multiple progenitor and neuronal classes present in human organoids
 
 To investigate the transcriptomic signature of cerebral organoids upon FGF8 treatment, we employed a scRNAseq approach to compare control organoids (WNTi) with FGF8-treated telencephalic organoids (WNTi + FGF8). Two distinct batches of both WNTi and WNTi + FGF8 organoids showed high reproducibility in terms of cell cluster compositions (Figure 3A), allowing us to pool together individual batches to achieve a higher number of cells per cluster (n° of cells per cluster in Figure 3—figure supplement 1A). Bioinformatic analysis of the whole cell population (WNTi and WNTi + FGF8 cells together) identified 15 distinct cellular clusters (shown as UMAP projections; Figure 3B), whose composition was determined via the expression of well-known reference markers as a read-out of cell identity (Figure 3C and Figure 3—figure supplement 1B). Cell clusters comprised NPs (NESTIN+, SOX2+, and HES5+ cells in clusters 2, 5, 8, 9, 12, 13, 14, and 15), some of which were actively proliferating (KI67+ and TOP2A+), and neurons (MAPT+ cells in clusters 1, 3, 4, 6, 7, 10, and 11). Expression of neurogenic (NEUROD4 and NEUROG1) and post-mitotic neuronal markers (DCX, RBFOX3, and MAPT) highlighted the existence of both differentiating and differentiated neurons (Figure 3C and Figure 3—figure supplement 1B). EOMES (also known as TBR2) expression identified intermediate progenitors, while expression of HOPX, TNC, and FAM107A indicated both apical and basal radial glia (Pollen et al., 2015). Interestingly, a bona fide marker for late truncated radial glia (CRYAB; Nowakowski et al., 2016), which is normally expressed in the neocortex in vivo starting at 14.5 post-conceptional weeks (PCW), was specifically expressed in NP cluster 13 (Figure 3C). We reasoned that multiple NP and neuronal types co-existed in telencephalic organoids, and trajectory analysis confirmed that NP clusters (clusters 2, 5, 8, 9, 12, and 15) gradually converted into post-mitotic neurons (clusters 1, 3, 4, 6, and 7; Figure 3D), suggesting that key steps of human brain development were recapitulated in vitro.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig3-v2.jpg)
+
+**Figure 3.:** (A) Experimental setup for scRNA-seq analysis of control (WNTi) and FGF8-treated (WNTi + FGF8) telencephalic organoids at day 69. Two independent batches of WNTi and WNTi + FGF8 organoids (each containing 2–3 organoids) were dissociated into single cells and processed using Chromium (10 X Genomics technology). Cells were clustered and visualized in 2D space using t-SNE and UMAP algorithms. (B) UMAP clustering of WNTi and WNTi + FGF8 cells, identifying 15 distinct clusters. (C) Expression levels of known markers for different cell types, including neural progenitor cells (NPs: NESTIN, SOX2, HES5), proliferating progenitors (KI67, TOP2A), intermediate progenitors (IPs: EOMES), apical and basal radial glia cells (aRGs and bRGs: HOPX, TNC, FAM107A, CRYAB), and differentiating/differentiated neurons (NEUROD4 and MAPT, respectively). (D) Trajectory analysis showing the most probable developmental progression from NP clusters (2, 5, 8, 9, 12, 15) to post-mitotic cell types (notably clusters 1, 3, 4, 6, 7). (E) Expression level and cluster distribution of dorsal glutamatergic markers EMX1 and SLC17A7 (also called VGLUT1) and ventral GABAergic markers GSX2 and SLC32A1 (also called VGAT), indicating the coexistence of both glutamatergic and GABAergic NPs and neurons within FOXG1+ telencephalic organoids. (F, G) UMAP clustering of WNTi and WNTi + FGF8 cells shown separately, illustrating 15 distinct clusters and their respective proportions in each condition. Panel (G) shows the number of cells in each cluster originating from WNTi (yellow) or WNTi + FGF8 (blue) organoids. (H) UMAP projection of day69 organoid scRNA-seq data, identifying four cellular groups through sub-clustering analysis on WNTi + FGF8 clusters 8 and 9. Center and right panels display expression levels of markers for the forebrain (FOXG1), ventral telencephalon (GSX2, ASCL1 and DLX2), forebrain/midbrain (OTX2), diencephalon/mesencephalon (IRX3), and mesencephalon (EN1, EN2) across the four sub-clusters. (I-I’’) Immunostaining for FOXG1 (red) and OTX2 (green) in day69 WNTi + FGF8 organoids, showing distinct FOXG1+ and FOXG1- regions. White arrows indicate FOXG1- OTX2+ non-telencephalic areas (high magnification in I’), while arrowheads denote FOXG1+ OTX2low telencephalic areas (high magnification in I’’). Ctx, cortex; MGE, medial ganglionic eminence; LGE, lateral ganglionic eminence.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Number of cells per cluster after scRNAseq of day69 organoids. (B) Expression level of known markers identifying neural progenitor cells (NPs; VIMENTIN and HES1), proliferating progenitors (CCNA2 and CCNB1), differentiating neurons (NEUROG1) and post-mitotic neurons (DCX and RBFOX3, also called NEUN). Additional markers are illustrated in Figure 3C. (C) VoxHunt similarity map showing similarity correlation index (white to violet) of each cluster to reference databases of mouse regional brain atlases. (D) VoxHunt heatmap of similarity score showing the similarity degree (blue color code) between the expression profile of clusters (lines) and distinct regions of the mouse embryonic brain (columns). Note the high similarity between clusters 1/2/3/4/5/12/14/15 and dorsal-anterior pallium (neocortex). Clusters 6 and 7, on the contrary, show high similarity to ventral subpallial regions (ganglionic eminences). Legend on the right shows the brain area associated to each color. Pall: pallium; Spall: Subpallium; POTel: Preoptic telencephalon; Hyp: hypothalamus; D: diencephalon; M: mesencephalon; PPH: Prepontine hindbrain; PH: Pontine hindbrain; MH: Medullary hindbrain. (E) Trajectory analysis evaluating the most probable developmental trajectory linking all cell progenitor clusters (left), glutamatergic NPs and neurons (center) or GABAergic NPs and neurons (right). NP clusters can either convert into one another (suggesting plasticity to switch between dorsal and ventral telencephalic identity), either differentiate into post-mitotic neurons. In all cases, progenitors can also enter in a developmental ‘bottleneck’ represented by cluster 13 (CRYAB+ truncated aRGs).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) Expression level and percentages of positive cells per cluster for FOXG1 in control (WNTi) and treated (WNTi + FGF8) organoids, as indicated. Despite a partial reduction of FOXG1 average expression (A), most of the cells in different clusters still express FOXG1 after FGF8 treatment (B). (C) Real time qRT-PCR quantification of telencephalic/diencephalic (SIX3), prosencephalic/midbrain (OTX2) and midbrain/hindbrain (EN2) markers in day20 or day30 control (CTRL), WNT inhibited (WNTi) or FGF8-treated (WNTi + FGF8) organoids, as indicated. FGF8 induces loss of SIX3 expression and increase of diencephalon/midbrain markers (OTX2, EN2), suggesting that long term FGF8 treatment can induce additional -more posterior- regional identities together with FOXG1+ cells. n=3 organoids per condition, pooled before RNA extraction. (D) At the top left of the panel, an early fetal brain scheme shows FGF8 sources (blue) in the anterior telencephalon, in the diencephalon and at the midbrain/hindbrain border, and their presumable diffusing gradients (arrows). The panel illustrates expression levels of distinct brain regional markers in UMAP projections of WNTi or WNTi + FGF8 single cell RNA sequencing samples, as indicated. Mouse brain images at embryonic day (E) 13.5 obtained from the Allen Brain Atlas show the main domains where these markers are found. (E) Graph showing the percentage of cells expressing different markers (indicated on x-axis) in clusters 8 and 9 of WNTi + FGF8 organoids. Clusters 8/9 indicate high percentage of cells expressing telencephalic (FOXG1, SFRP1, GAS1, SFRP2) and diencephalic/midbrain genes (SIX3, OTX2, LEF1, IRX3, IRX2, EN2). Very few or no cells express markers for the medial ganglionic eminence (GBX2, LHX8, NKX2-1, OLIG2), for the ventral midbrain (FOXP2, ISL1, LMX1A, FOXA2) or for more posterior regions (HOXA2).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A-D’) FOXG1 (red) and OTX2 (green) immunostaining in control (WNTi; A, A’, C, C’) and treated (WNTi + FGF8; B, B’, D, D’) organoids, showing the presence of FOXG1+ telencephalic domains and of OTX2+ FOXG1- diencephalic/mesencephalic domains at day52 (A-B’) and at day74 (C-D’). White arrowheads point to FOXG1- OTX2+ non-telencephalic areas in FGF8-treated organoids (high magnifications in B’ and D’). (E, F) Artificial intelligence analysis by HALO software of marker distribution in day52 and in day74 control or treated organoids, as indicated. Exemplificative images of automatically detected OTX2+ (green), FOXG1+ (red) and necrotic (black) regions are illustrated. Graph in F shows the percentages of OTX2+ surfaces in organoid sections, at different time points as indicated (quantified by HALO software; n≥8 sections from n≥3 organoids from n≥1 batch for each time point).
+
 To assign the identities of distinct cell clusters in a more unbiased way, we used the VoxHunt spatial brain mapping and heatmap of similarity score tools (Fleck et al., 2021; Figure 3—figure supplement 1C and D), which evaluate the similarity between the expression profile of each cluster and those of spatial and single-cell transcriptome reference datasets. We established a high resemblance of most clusters to the dorsal telencephalon (pallium), with clusters 2, 5, 12, 14, and 15 showing high similarity scores with progenitors, while clusters 1, 3, and 4 included cortical neurons (Figure 3—figure supplement 1C and D). However, some ventral telencephalic (subpallium) clusters were also present (clusters 6 and 7), consistent with previous reports showing that ventral GABAergic identity can spontaneously arise in dorsally patterned organoids (Velasco et al., 2019). Notably, clusters 8, 9, 10, and 11 showed a mixed identity, as they scored high for both dorsal and ventral telencephalon characteristics and/or for more posterior brain regions (Figure 3—figure supplement 1D). Analysis of known glutamatergic and GABAergic markers substantiated the D/V identity of organoid NPs and neurons, which could be subdivided into two pools of glutamatergic (EMX1+ and SLC17A7+) and GABAergic (GSX2+ and SLC32A1+) cells (Figure 3E). Additionally, trajectory analysis of different clusters highlighted a dynamic state of developmental trajectories (Figure 3—figure supplement 1E). Together, our 2 months-old organoid model displays a transcriptomics signature of mixed dorsal (glutamatergic) and ventral (GABAergic) cellular identities, reflecting the cellular and molecular properties of a 14.5 PCW human neocortex.
 
-## FGF8 treatment increases brain regional heterogeneity
+### FGF8 treatment increases brain regional heterogeneity
 
 While widespread FOXG1 expression supported the general telencephalic identity of both WNTi and WNTi + FGF8 treated organoids (Figure 3—figure supplement 2A and B), qRT-PCR showed a partial reduction of the anterior marker SIX3, induction of OTX2 a telencephalic marker at early stages (Ostermann et al., 2019) before becoming restricted to more posterior regions at later stages (Puelles et al., 2004), and induction of the mesencephalic marker EN2 in WNTi + FGF8 organoids (Figure 3—figure supplement 2C), suggesting that long-term FGF8 treatment might induce the formation of regions other than the forebrain. Hence, we explored the expression of key markers of A/P regional identity by focusing on clusters 8 and 9, as these cellular populations were almost absent in control (WNTi) organoids and only appeared in treated (WNTi + FGF8) samples (Figure 3F and G and Figure 3—figure supplement 2D and E). Although cluster 8/9 cells were largely positive for telencephalic markers such as FOXG1 (50% positive cells) and SFRP1 (70% positive cells) (Figure 3—figure supplement 2A–E), they also displayed expression of the diencephalic gene SIX3 (>40% positive cells) and mesencephalic markers OTX2 (>30% positive cells), IRX3 (20% positive cells), and EN2 (10% positive cells) upon FGF8-treatment (Figure 3—figure supplement 2D and E). These data indicate that clusters 8 and 9, which are only present in FGF8-treated organoids, are mainly composed of telencephalic progenitors (FOXG1+, SFRP1+, GAS1+, and FZD8+) but also contain some diencephalic (SIX3+) and mesencephalic (IRX3+, OTX2+, EN2+) cells (Figure 3—figure supplement 2E), suggesting concomitant FGF8-driven induction of non-telencephalic regional identities.
 
 To further distinguish cell types in scRNAseq clusters 8 and 9, we performed a sub-clustering analysis, which detected four main cellular groups (Figure 3H). While two sub-clusters expressed FOXG1 together with ventral telencephalic markers (GSX2, DLX2 and ASCL1), the remaining two were negative for FOXG1 but positive for OTX2, IRX3, EN1 and/or EN2 (Figure 3H). To directly visualize the co-existence of distinct organoid domains, we performed double staining for FOXG1 (telencephalon) and OTX2 (diencephalon/mesencephalon) on treated (WNTi + FGF8) organoids (Figure 3I–I’’) and confirmed that FOXG1-negative domains were indeed positive for OTX2, most probably corresponding to the diencephalic/mesencephalic clusters 8 and 9 identified in scRNAseq data. Quantification of OTX2 expression revealed that a variable portion of the organoid mass (approximately 15%, reaching a maximum of ~30% in some organoids) is occupied by OTX2+ FOXG1- non-telencephalic domains in late-cultured multi-regional organoids (Figure 3—figure supplement 3). Collectively, our data suggest that while WNTi organoids develop as uniform FOXG1+ telencephalic organoids predominantly expressing cortical markers, FGF8-treated organoids form distinct and segregated regional domains. Therefore, elevated levels of FGF8 can enhance the complexity of human cultured organoids in vitro by promoting the formation of multi-regional structures, where distinct brain regions co-exist and develop concurrently within a single aggregate.
 
-## FGF8 alters dorso/ventral cell specification of telencephalic domains
+### FGF8 alters dorso/ventral cell specification of telencephalic domains
 
 While the expression of diencephalic/mesencephalic markers was limited to clusters 8 and 9 only (Figure 3—figure supplement 2D and E), most of the remaining clusters expressed high levels of FOXG1 (Figure 3—figure supplement 2A and B). Therefore, we focused on the effect of FGF8 treatment on these more abundant FOXG1-expressing telencephalic populations. Comparison of control (WNTi) and treated (WNTi + FGF8) samples in terms of cell abundance per cluster revealed an increased cell count in clusters 6 and 7 -representing cells of ventral identity- in response to FGF8 treatment (Figure 3F and G). In contrast, clusters associated with glutamatergic NPs (clusters 2, 5, 12, 14, and 15) and neurons (clusters 1, 3, and 4) were more abundantly populated in control organoids but less represented in FGF8-treated ones (Figure 3F and G). The differing abundance of cell clusters in control and treated organoids suggested a change in cellular composition following FGF8 treatment, prompting us to explore the expression of key dorsal glutamatergic and ventral GABAergic markers on WNTi and WNTi + FGF8 UMAP projections (Figure 4A and B). Glutamatergic NP and neuronal markers such as EMX1, NEUROD6, NEUROD2, TBR1, SOX5, BCL11B, LHX2, NEUROG2, NF1A, and SLC17A7 were highly reduced in FGF8-treated organoids (Figure 4A and Figure 4—figure supplement 1A), consistent with a lower cell number in clusters 1, 3, and 4. Notably, the upper cortical layer marker SATB2 was completely absent in WNTi + FGF8 cluster 1 (Figure 4—figure supplement 1A). Conversely, ventral GABAergic markers such as ASCL1, DLX1, DLX2, PBX3, GAD1, and GAD2 were increased in clusters 6, 7, 8, and 9 (Figure 4B and Figure 4—figure supplement 1B), supporting a ventralization of FGF8-treated samples compared to non-treated ones. An unbiased VoxHunt analysis of the correlation score with brain areas confirmed that FGF8 treatment decreased dorsal (pallial) while increasing ventral (subpallial) telencephalic properties (Figure 4—figure supplement 1C and D). Interestingly, ventral medial ganglionic eminence (MGE) transcripts (SHH, LHX8, and NKX2-1) were not induced in WNTi + FGF8 organoids, whereas lateral ganglionic eminence (LGE)-enriched ones (EBF1, GSX2, and PBX3), particularly those associated with striatal fate (MEIS2, and TLE4), were expressed at higher levels than in control samples (Figure 4C and D and Figure 4—figure supplement 1B), suggesting that addition of FGF8 promotes a ventral LGE but not an MGE identity. Altogether, these data support an FGF8-mediated effect on the acquisition of a ventral LGE-like GABAergic identity at the expense of a dorsal glutamatergic one in telencephalic organoids.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) Expression levels of markers identifying dorsal glutamatergic NPs and neurons (Panel A; EMX1, NEUROD6, SLC17A7) and ventral GABAergic NPs and neurons (Panel B; ASCL1, DLX1, GAD2). Black arrowheads highlight clusters with the most notable changes in marker and cell abundance after FGF8 treatment. (C,D) Expression levels of known markers identifying ventral GABAergic NPs and neurons in the lateral ganglionic eminence (LGE) (Panel C; EBF1, GSX2, MEIS2 and TLE4) and the medial ganglionic eminence (MGE) (Panel D; NKX2-1 and LHX8). Black arrowheads in C highlight clusters with the largest differences in LGE marker and cell abundance following FGF8 treatment. (E-F’) GAD1 (red) and SLC17A7 (green) immunostaining in day53 control (WNTi) and treated (WNTi + FGF8) organoids, as indicated. The distribution of these markers in vivo is shown in the brain scheme on the left. (G–I) HALO software artificial intelligence (AI) analysis of marker distribution in day53 and day74 organoids. Representative images display areas automatically identified as SLC17A7+ (green), GAD1+ (red), and necrotic (black). Graphs in H and I show the proportions of SLC17A7+ (H) and GAD1+ (I) surface areas in day 74 organoid sections, as quantified by HALO AI; n≥8 sections from n≥4 organoids from n=1 batch per time point. (J-K’) Immunostaining for SATB2 (yellow) in day74 WNTi and WNTi + FGF8 organoids, as indicated. The left schematic depicts the in vivo distribution of SATB2+ neurons, and Figure 4—figure supplement 2 quantifies SATB2+ neuron density in these and additional samples. (L-M’) Immunostaining for ASCL1 (red) in day69 WNTi and WNTi + FGF8 organoids, as indicated. Left schematic shows the in vivo distribution of ASCL1+ ventral progenitors, with cell density detailed in Figure 4—figure supplement 2. Scale bars: 100 µm. Ctx, cortex; MGE, medial ganglionic eminence; LGE, lateral ganglionic eminence.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A,B) Expression level of known markers identifying dorsal glutamatergic NPs and neurons (panel A; NEUROD2, TBR1, SOX5, BCL11B -also called CTIP2-, SATB2, LHX2, NEUROG2 and NF1A) or ventral GABAergic NPs and neurons (panel B; DLX2, PBX3, SHH and GAD1). FGF8 treatment causes an increase of ventral GABAergic cells at the expense of dorsal glutamatergic ones. Empty arrowheads indicate clusters showing the greatest differences in cell and marker abundance following FGF8 treatment. (C) VoxHunt similarity map showing correlation index (white to violet color code) of WNTi (left) or WNTi + FGF8 (right) organoids to reference databases of mouse regional brain atlases. For this analysis, all WNTi cells and all WNTi + FGF8 cells are evaluated. FGF8-treated organoids show lower similarity to dorso-lateral pallium (black arrowheads) and increased similarity to subpallial domains (blue arrowheads), compared to control samples. (D) VoxHunt heatmap illustrating the similarity score (blue color code) among the expression profile of organoid samples (WNTi -upper line- and WNTi + FGF8 -lower line-) and distinct mouse brain regions (columns). FGF8-treated organoids show lower similarity to dorsal pallium and increased similarity to subpallial regions, compared to control samples. Pall: pallium; Spall: Subpallium; POTel: Preoptic telencephalon; Hyp: hypothalamus; D: diencephalon; M: mesencephalon; PPH: Prepontine hindbrain; PH: Pontine hindbrain; MH: Medullary hindbrain.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–F) GAD1 (also called GAD67; red) and SLC17A6 (also called VGLUT2; green) immunostaining in day53 and in day74 control (WNTi) and treated (WNTi + FGF8) organoids, as indicated. The distribution of these markers in vivo is illustrated in the brain scheme on the left. Graph in C displays GAD1 pixel intensity quantification at day52-60 and at day69-74, while F shows exemplificative images of automatically detected SLC17A6 (green) and GAD1 (red) marker distribution in day74 organoids (HALO software). n≥13 sections from n≥4 organoids from n=2 batches. (G-H’) Co-staining of SLC17A6 (green) with TBR1 and CTIP2 (red and blue in G,G’) and SATB2 (red in H,H’), highlighting co-expression of SLC17A6 with neocortical markers. (I-M’) TBR1 (red) and CTIP2 (green) immunostaining in day53 (I–J) or day74 (L-M’) control (WNTi) and treated (WNTi + FGF8) organoids, as indicated. The distribution of these markers in vivo is depicted in the brain schemes on the left. Note that TBR1 and CTIP2 can be co-expressed dorsally (in cortical layers) during development; TBR1 is exclusively dorsal, whereas CTIP2 is also expressed in the ventral telencephalon. Graph in K shows the percentage of TBR1+ (red), CTIP2+ (green) or double TBR1+/CTIP2+ (yellow) cells in WNTi or WNTi + FGF8 organoids at different steps (day53 in H and day74 in I), as indicated. (N) GAD67 (red) and CTIP2 (green) immunostaining in day74 WNTi + FGF8 organoids with double CTIP2+ GAD67+ cells. (O–Q) SATB2 (yellow) immunostaining in day107 control (WNTi) and treated (WNTi + FGF8) organoids, as indicated. The distribution of SATB2+ neurons in vivo is illustrated in the brain scheme on the left, while graph in Q displays cell density at day69, day74 or day107. SATB2 cell density was measured as number of SATB2+ cells per 150X150 µm square; n≥4 sections from n≥2 organoids from n=1 batch per time point/condition. (R–T) ASCL1 (also known as MASH1; red) immunostaining in day107 control (WNTi) and treated (WNTi + FGF8) organoids, as indicated. Quantification of the cell density (number of cells per organoid section) of ASCL1+ progenitors at day69 or day107 is shown in the graph in T; n≥5 sections from n≥2 organoids from n=1 batch per time point/condition. Scale bars: 100 µm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A-E’) Immunostaining of key neural and regional markers on day69 WNTi control organoids; FOXG1 (red in A,A’), NR2F1 (red in B,B’) and SOX2+ NPs (green in B,B’). Glutamatergic/cortical markers SLC17A6 (also called VGLUT2; green in C,C’), TBR1 (green in D,D’ or red in E,E’) and CTIP2 (green in E,E’) are abundant, indicating neocortical identity. (F-J’’) Immunostaining of the same key neural and regional markers showed in A-E’, but on sections of day69 WNTi + FGF8 treated organoids. Insets represent magnification from a FOXG1-negative non-telencephalic region (F’, G’, H’, I’, J’) or from a FOXG1+ telencephalic region (F’’, G’’, H’’, I’’, J’’). NR2F1 (red in G-G’’) show high intensity, i.e. no response to FGF8 treatment, in FOXG1-negative non-telencephalic areas. Only FOXG1+ telencephalic domains exhibit FGF8-mediated reduction of NR2F1 levels (G, G’’), associated with induction of ventral markers GAD1 (red in H,H’’) and ASCL1 (red in I,I’’) at the expense of dorsal cortical markers TBR1 (green in I-I’’). No dorsal cortical markers such as TBR1 and CTIP2 are detectable in FOXG1-negative regions (I’, J’), illustrating that efficient acquisition of anterior identity is necessary for production of cortical neurons in organoids. Insets indicated by asterisks in F (*) and G (**) are showed at high magnification in M. Scale bars: 100 µm. (K,L) Expression level and percentages of positive cells per cluster for NR2F1 in control (WNTi) and treated (WNTi + FGF8) organoids, as indicated. NR2F1 transcript levels are greatly reduced by FGF8 (K); however, clusters 8 and 9 fail to respond to FGF8 treatment by downregulating NR2F1 (L) and still contain >60% NR2F1+ cells. (M) Schematic representation of distinct domains in control (WNTi; left) and FGF8-treated (WNTi + FGF8; right) organoids. FOXG1+ telencephalic WNTi organoids (left) have high levels of the glutamatergic marker SLC17A6 and abundant SATB2+ and TBR1/CTIP2 double positive cortical neurons. Upon FGF8 treatment, WNTi + FGF8 organoids (right) develop co-existing FOXG1+ telencephalic domains (light red areas), in which ventral GABAergic markers GAD1 and ASCL1 are upregulated at the expense of dorsal genes, and FOXG1-/OTX2+ diencephalic/midbrain domains (light green areas). Immunostaining magnifications on the right (magnification * and ** from images in F and G, respectively) show a neural rosette located at the border between a FOXG1+ domain (upper half of the rosette; arrowheads) and an adjacent FOXG1- low expressing domain (lower half; arrows). This highlights that NR2F1 is down-regulated by FGF8 only in the telencephalic SOX2+ domain (upper half of the rosette), indicating that FGF8 target genes can respond in a different way depending on the regional identity of organoid domains. Scale bars: 100 µm.
+
 To directly visualize a change in D/V identity in telencephalic organoids, we performed immunostainings for key GABAergic (GAD1 and ASCL1) and glutamatergic (SLC17A7, SLC17A6, and SATB2) markers (Figure 4E–M’ and Figure 4—figure supplement 2). Consistent with scRNAseq data, FGF8-treated organoids showed increased GAD1 levels at the expense of SLC17A7 and SLC17A6 protein expression (Figure 4E–I and Figure 4—figure supplement 2A–F). Notably, as SLC17A6 is also expressed in non-telencephalic brain regions (Fremeau et al., 2004), we verified its dorsal glutamatergic identity by co-staining with the cortical markers TBR1, CTIP2, and SATB2 in control organoids (Figure 4—figure supplement 2G–H’). Artificial intelligence analysis using HALO software estimated a ~40% coverage of GAD1+ tissue in FGF8-treated organoids versus a 1.8% coverage in control ones (Figure 4G–I). Among key dorsal telencephalic proteins, double TBR1+ CTIP2+ cells (deep layer cortical neurons) decreased upon FGF8 treatment (Figure 4—figure supplement 2I–M’), whereas CTIP2+ TBR1- cells were still largely present in FGF8-treated organoids. Since these CTIP2+ cells also expressed GAD1 (Figure 4—figure supplement 2N), we classified them as GABAergic interneurons, similar to what was previously reported in mice (Nikouei et al., 2016). Furthermore, expression of the cortical marker SATB2 was highly downregulated in WNTi + FGF8 organoids at both the transcript and protein levels (Figure 4J–K’, Figure 4—figure supplement 1A and Figure 4—figure supplement 2O–Q), consistent with a partial loss of dorsal glutamatergic identity in favor of a ventral GABAergic identity. Among the ventral markers evaluated in scRNAseq, we detected an increased number of ASCL1+ ventral progenitors in WNTi + FGF8 organoids compared to WNTi organoids (Figure 4L–M’ and Figure 4—figure supplement 2R–T). Notably, FGF8-mediated induction of ventral GAD1 and ASCL1 markers, along with the concomitant reduction of dorsal SLC17A6, TBR1, and SATB2 ones, was observed only in FOXG1+ telencephalic and not in non-telencephalic OTX2+ regions of multi-regional organoids, as supported by comparison of sequential cryostat sections of control and treated organoids (Figure 4—figure supplement 3A–J’’). Furthermore, we found that FGF8-mediated downregulation of NR2F1 was present only in FOXG1+ telencephalic regions, whereas NR2F1 was not modulated by FGF8 in non-telencephalic OTX2+ regions corresponding to clusters 8 and 9 (Figure 4—figure supplement 3G–G’’, K, L). This indicates that FGF8-mediated target gene modulation follows distinct genetic rules depending on the regional identity acquired by NPs and neurons (Figure 4—figure supplement 3M). Together, our results indicate a robust, telencephalon-specific effect of FGF8 on determining the dorsal/ventral (D/V) identity—glutamatergic versus GABAergic—of neural progenitors and neurons during human brain development in vitro.
 
-## FGF8 treatment results in altered neural network activity
+### FGF8 treatment results in altered neural network activity
 
 To assess whether changes in D/V neuronal composition would affect functional neuroelectric activity, we used a multi-electrode array (MEA) system on 4- and 7-month-old FGF8-treated organoids (Figure 5). Striking differences in spontaneous activity were detected in WNTi + FGF8 organoids compared to non-treated ones (Figure 5; representative spike traces in Figure 5—figure supplement 1A and B). Notably, WNTi + FGF8 organoids showed lower spike frequency (firing rate) and decreased spike amplitude, indicating reduced electrical activity compared to WNTi organoids (Figure 5A–C). The network analysis, which assesses the synchronicity of spike events and serves as a read-out of neural network formation (Trujillo et al., 2019), also highlighted differences between the two types of organoids (Figure 5D–F). While WNTi organoids displayed a consistent degree of network formation with a high percentage of spikes occurring within bursts (indicating a well-organized and synchronous network activity), WNTi + FGF8 organoids showed lower synchronicity, with a higher percentage of random spikes falling outside of bursts. Analysis of burst metrics also revealed a higher number of spikes per burst and peak firing rates in control organoids (Figure 5D and F), whereas FGF8-treated organoids displayed lower activity levels in terms of the number and frequency of spikes per burst (Figure 5E and F). Nevertheless, synchronous events were still detected in WNTi + FGF8 organoids, and the average burst frequency remained unchanged (Figure 5E and F), suggesting a good level of spontaneous circuitry organization and maturation despite lower activity levels. Furthermore, axonal tracking identified efficient signal transduction along tracts originating from WNTi organoids, which expanded across the MEA electrodes with high conduction velocity and high latency of signal propagation (Figure 5G–I). In contrast, FGF8-treated organoids generated lower amplitude signals at the initiation site, which struggled to propagate over long distances (Figure 5H and I), suggesting intrinsic inhibition that reduced the propagation of spontaneous signals. Axonal tracking analysis performed at different maturation time points also showed that most differences between control and treated organoids remained stable over time (Figure 5—figure supplement 1C–G). Given that low spike frequency, low spike amplitudes, and a high percentage of random activity outside synchronous events are consistent with the inhibitory activity of GABAergic neurons (Mossink et al., 2022), we performed double immunostaining for SLC17A6 and GAD1 on organoids detached from MEA chips. This allowed us to correlate our functional recordings with the cellular and molecular identity of recorded neurons, confirming an increased number of GABAergic neurons in FGF8-treated samples (Figure 5J). Finally, to challenge the role of GABAergic inhibitory neurons in complex 3D organoid circuits, we tested the effects of transient GABA-A receptor inactivation on WNTi + FGF8 organoids via Bicuculline treatment (Figure 5—figure supplement 2). In the presence of 10 µM Bicuculline, WNTi + FGF8 organoids showed increased spike amplitudes (Figure 5—figure supplement 2A–C) along with a significant increase in spikes occurring within bursts (Figure 5—figure supplement 2D–F), suggesting that GABA release contributes to the lower spike amplitude and decreased network synchronicity in 3D organoids. These data strongly indicate that prolonged FGF8 exposure affects neuronal identity and function (in terms of glutamatergic versus GABAergic balance and activity), consequently influencing the spontaneous electrical activity of neuronal circuits developing in 3D organoids.
 
-## FGF8 alters dorso/ventral specification of glutamatergic and GABAergic populations
+![Figure 5.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig5-v2.jpg)
+
+**Figure 5.:** (A–C) Spontaneous activity maps showing mean spike amplitude in 4-month-old (day136; upper row) and 7-month-old (day215; lower row) control (WNTi; A) and treated organoids (WNTi + FGF8; B), 2–3 weeks post-plating on high-density MEA chips. Mean activity metrics from three independent batches are summarized in (C), showing a general reduction in spike amplitude, percentage of active electrodes, and firing rate in FGF8-treated organoids. White arrowheads in electrode images indicate organoids fully or partially adhered to the MEA recording surface; note that high activity levels are observed at the organoid edges, where axonal tracts extend. (D–F) Temporal raster plots displaying firing events recorded by the 1024 most active electrodes (upper graphs) and their synchronicity indicative of network activity (lower graphs) in 7-month-old controls (WNTi; D) and FGF8-treated organoids (WNTi + FGF8; E), 3 weeks post-plating. Note that the instrument automatically sets the detection threshold (black bar) at varying levels, based on the average baseline activity specific to each sample (see Materials and methods). Graphs in (F) show network metrics (Burst frequency; Spikes within bursts) and burst metrics (number of spike per burst, burst peak firing rate, burst duration, inter-spike interval within bursts). (G–I) Overview fields of axon tracts (upper row) and representative images of individual neuronal tracts (lower rows) extending from organoids on the MEA surface, as detected using the automatic axon tracking function in WNTi (G) and WNTi + FGF8 (H) samples at day215. Graphs in (I) present axon tracking metrics (network conduction velocity, total axon or branch lengths, longest signal latency, maximum distance from initiation site, and signal amplitude), showing reduced signal amplitude and spatial propagation in FGF8-treated organoids. Additional axon tract images at different stages of differentiation are provided in Figure 5—figure supplement 1. (J) Immunostaining for GAD1 (red) and SLC17A6 (green) in day 145 control (WNTi) and treated (WNTi + FGF8) organoids, following detachment from MEA chips post-recording. Percentages of GAD1- and SLC17A7-positive tissue in organoids are indicated. For all graphs: data represent n=3 distinct batches (each with 2–4 organoids on the MEA chip, see Materials and methods).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Footprints of action potentials in control WNTi (A; left column) and treated WNTi + FGF8 (B; right column) organoids, as automatically detected by MaxOne software. Progressive higher magnifications of propagating spikes are displayed in red and blue boxes, while representative traces displaying the shape of action potentials are shown in the bottom row (green boxes). (C, D) Overview fields of axon tracts extending from organoids on MEA surface, as detected by the automatic axon tracking function, in WNTi (C) and WNTi + FGF8 (D) samples at day136. (E, F) Exemplificative images of single neuronal tracts extending from organoids on MEA surface, in WNTi (left) and WNTi + FGF8 (right) samples at day134 (E) and at day213 (F). Note the progressive increase in complexity and length of axons, suggesting maturation of the organoids, which is more limited after treatment with FGF8. (G) Graphs show axon tracking metrics (network conduction velocity, total axon or total branch lengths, longest signal latency, longest distance from and signal amplitude at the initiation site), in control (orange columns) and in FGF8-treated organoids (blue columns) at different developmental stages, as indicated. For graphs in G: data from n=2 distinct batches at two different differentiation times (each batch including 2–4 organoids on the MEA chip, see Materials and methods).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–C) Spontaneous activity maps showing the mean spike amplitude of 6-month-old WNTi + FGF8 organoids, before (left) or after (right) treatment with 10 µM Bicuculline, a chemical inhibitor of GABA-A receptor. Mean values of activity metrics are shown in C and highlight a slight but significant increase of spike amplitudes. White arrowheads in the electrode image on the top left point to organoids adhering totally or partially on the MEA recording surface. (D–F) Temporal raster plots showing firing events recorded by the 1024 most active electrodes (upper graphs) and their synchronicity suggestive of network activity (lower graphs), as detected from untreated (left) or Bicuculline-treated (right) WNTi + FGF8 organoids. Note that the background noise due to random activity falling outside of synchronous bursts (red dotted boxes) is decreased upon treatment with Bicuculline, as also visible in high magnification insets (* and **; before and after Bicuculline treatment, respectively). Graphs in F depict network metrics (Burst frequency and Spikes within bursts), highlighting a significant increase of percentage of spikes within synchronous network bursts. For all graphs: data from n=2 distinct batches (each including 2–4 organoids on the MEA chip, see Materials and methods).
+
+### FGF8 alters dorso/ventral specification of glutamatergic and GABAergic populations
 
 As the abundance of cells in specific clusters was highly impacted upon FGF8 treatment, we reasoned that the modulation of specific D/V genes (Figure 4) could result from two overlapping factors: (i) a varying number of cells per cluster and (ii) a differential expression level of D/V genes within a given cellular population. To disentangle these parameters, we performed an analysis of differentially expressed genes (DEGs) on specific cell populations (clusters) by comparing WNTi to WNTi + FGF8 organoids, visualizing the most strongly up- or down-regulated genes in volcano-plots (Figure 6). This analysis allows for normalization of gene expression levels to minimize potential bias from differences in cell abundance between control and treated organoids.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig6-v2.jpg)
+
+**Figure 6.:** (A) DEG analysis comparing control (WNTi) and treated (WNTi + FGF8) organoids, highlighting the most strongly (x-axis, average log2 fold change) and most significantly (y-axis, adjusted p-value in -log10) differentially expressed genes (DEGs) in clusters 12/15 (proliferating glutamatergic progenitors; left volcano plot) or clusters 2/5 (non-proliferating glutamatergic progenitors; right volcano plot). Red dots indicate significantly (adjusted P-value <0.05) regulated genes, with the names of the 20 most significant ones displayed (see source data material for a complete list of DEGs). (B) Expression level of ZIC1 (left) and ZIC3 (right) in UMAP projections of WNTi and WNTi + FGF8 samples, as indicated. Black arrowheads point to increased ZIC1 and ZIC3 expression in glutamatergic progenitor clusters following FGF8 treatment. (C) Expression level of GSX2 (upper panel) and DLX2 (lower panel) in UMAP projections of WNTi or WNTi + FGF8 samples, as indicated. Black arrowheads indicate increased GSX2 and DLX2 expression in proliferating glutamatergic progenitors upon FGF8 treatment. (D) DEG analysis comparing control (WNTi) and treated (WNTi + FGF8) organoids, highlighting the most significantly regulated genes in cluster 3 (early differentiating glutamatergic neurons; left volcano plot) or clusters 1/4 (differentiated glutamatergic neurons; right volcano plot). (E) DEG analysis comparing control (WNTi) and treated (WNTi + FGF8) organoids, showing the most significantly regulated genes in clusters 6/7 (volcano plot), corresponding to GABAergic neurons. The panel below shows the expression level of NR2F2 in UMAP projections of WNTi and WNTi + FGF8 samples, as indicated. The black arrowhead points to decreased NR2F2 expression in GABAergic cells following FGF8 treatment. Red boxes highlight FGF target genes or genes noted in OMIM as disease-related. Brain schematics with gene expression patterns are based on embryonic day 13.5 stainings from the Mouse Allen Brain Atlas.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Results of enrichment analysis of the biological process GO terms performed with the gene set enrichment analysis (GSEA) method. Each graph shows the results relative to a specific cluster or subset of clusters, as indicated. Red to blue color code corresponds to adjusted p-value, while the circle size indicates the number of genes that belong to a specific GO term listed on the left of each graph.
+
 By comparing WNTi and WNTI + FGF8 samples on proliferating (clusters 12 and 15) and non-proliferating (clusters 2 and 5) glutamatergic progenitors, NR2F1 emerged as the most strongly down-regulated gene upon FGF8 treatment, both in terms of fold change and p-value (Figure 6A). Another down-regulated gene in glutamatergic progenitors was FGFR3, which, together with NR2F1, is a primary target of FGF8 signaling and a key effector in regulating neocortical areal identity (Garel et al., 2003; Inglis-Broadgate et al., 2005; Mott et al., 2010). Gene ontology (GO) enrichment analysis showed that many DEGs were related to cell proliferation (DNA replication) or differentiation (nervous system development; cell differentiation) categories (Figure 6—figure supplement 1). Among FGF8-induced genes, ZIC1 and ZIC3 (Figure 6A and B) are known to maintain neural precursor cells in an undifferentiated state in the mouse medial telencephalon (Inoue et al., 2007). Most importantly, genes typically expressed only in ventral progenitors, such as DLX2 and GSX2, were significantly upregulated in dorsal glutamatergic progenitor clusters (Figure 6A and C), suggesting a misspecification of glutamatergic progenitors towards a ventral identity. Similarly, post-mitotic differentiating (cluster 3) and differentiated (clusters 1 and 4) glutamatergic neurons (Figure 6D) showed a clear imbalance in D/V gene expression, including reduced glutamatergic markers (NF1B, NEUROD6 and SOX5) and induction of DLX2, confirming that FGF8 can influence the establishment of a glutamatergic molecular network by inducing ectopic GABAergic marker expression. DEGs in clusters 1, 3, and 4 were generally associated with neural differentiation GO categories (axonogenesis; neurogenesis; neuron differentiation; axon guidance; cell differentiation, among others; Figure 6—figure supplement 1), consistent with a post-mitotic neural identity of these clusters. Among FGF8-induced genes in glutamatergic neurons, we identified ETV1 (Cholfin and Rubenstein, 2008), a known target serving as an internal control for FGF8 efficiency, and again, NR2F1 as the most significantly down-regulated gene (Figure 6D). Additionally, other factors modulated by FGF8 in both NPs and neurons included AUTS2, NFIB, ZIC1, ZIC3, FOXP2, CCND2, MEIS2, and SOX5, which are known to be mutated in NDDs (Figure 6A and D). Finally, we focused on DEG changes in ventral GABAergic cells (clusters 6 and 7; Figure 6E). Gene enrichment analysis revealed GO categories associated with neuronal differentiation and migration (forebrain development; CNS development; neuron migration; nervous system development, among others; Figure 6—figure supplement 1). FGF8 treatment affected the expression levels of NR2F1, NTRX2, TUBB3, ZIC1, ZIC2, and MEIS2, and notably, the NR2F1 homolog NR2F2 emerged as a highly modulated FGF8 target gene (Figure 6E). Together, our DEG analyses suggest FGF8-dependent misspecification of glutamatergic and GABAergic progenitors and neurons, along with the dysregulation of several genes related to normal and pathological brain development.
 
-## FGF8 treatment modulates A/P neocortical identity and areal-specific factor expression
+### FGF8 treatment modulates A/P neocortical identity and areal-specific factor expression
 
 As the DEG analysis revealed downregulation of posterior factors such as NR2F1 and FGFR3 and upregulation of anterior genes ZIC1 and ZIC3 following FGF8 treatment, we hypothesized that FGF8 might also modulate the A/P identity of telencephalic cells, in addition to its effects on D/V identity. Notably, NR2F1 is positioned at the top of a regulatory hierarchy controlling other region-specific factors, including EMX2, FGFR3, SP8, and PAX6 (Bertacchi et al., 2019; Figure 7—figure supplement 1A). VoxHunt Similarity brain maps indicated that FGF8-treated organoids maintained a high similarity score with the anterior-most sections of the dorsal telencephalon, while similarity to posterior regions was nearly lost (Figure 7—figure supplement 1B). This suggests that FGF8 treatment preferentially supports the expression of anterior cortical genes. To further investigate the impact of FGF8 on A/P patterning, we quantified the percentage of cells positive for selected A/P master genes (Cadwell et al., 2019; Figure 7A–C) in both glutamatergic NP (clusters 2/5/12/14/15) or neurons (clusters 1/3/4). Anterior genes, including PAX6, ETV1, ZIC1, and ZIC3, showed increased expression in progenitors and/or neurons following FGF8 treatment (Figures 6B and 7B–D). Vice versa, and consistent with the upregulation of anterior markers, posterior ones such as NR2F1, FGFR3, and EMX1 were efficiently down-regulated by FGF8 in both NPs and neurons (Figures 4A and 7B–D). However, some anterior genes (e.g. ETV5) and posterior genes (e.g. CRYM, TSHZ2, EMX2, and ODZ3) displayed minimal changes (Figure 7B and C). These data suggest that FGF8 selectively modulates a subset of areal-specific genes within glutamatergic clusters, while other markers may be regulated via alternative mechanisms. To achieve a more comprehensive and unbiased assessment of A/P identity in telencephalic organoids, we used a SingleR approach to compare the transcriptomic profiles of control and FGF8-treated organoids against a reference dataset of distinct human fetal brain regions at 16 post-conception weeks (PCWs), including parietal, motor, prefrontal, somatosensory, temporal, and visual cortices (Bhaduri et al., 2020; Eze et al., 2021; Nowakowski et al., 2017; Speir et al., 2021; Figure 7—figure supplement 1C). Notably, WNTi and WNTi + FGF8 organoid samples (each subdivided into NP clusters or differentiated neuron clusters) showed high similarity to 16 PCW pre-frontal and somatosensory cortices (Figure 7—figure supplement 1C, left graph). Specifically, by visualizing the SingleR annotation scores between organoid samples and fetal brain areas (Figure 7—figure supplement 1C, right graph), we found that neural progenitors, regardless of FGF8 treatment, predominantly resembled the fetal somatosensory cortex, while differentiated neurons exhibited greater similarity to either the prefrontal cortex or somatosensory cortex. Despite these findings, FGF8 treatment had a detectable effect on A/P identity, marked by a slight increase in the similarity of WNTi + FGF8 NPs to the transcriptional profile of the prefrontal cortex. Conversely, WNTi + FGF8 NPs and neurons showed reduced similarity to the fetal visual cortex and temporal areas (Figure 7—figure supplement 1C, right graph). Collectively, our data suggest that FGF8 modulates areal patterning by promoting the expression of genes associated with an anterior (prefrontal) cortical identity while reducing markers of a posterior (visual) identity.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig7-v2.jpg)
+
+**Figure 7.:** (A) Glutamatergic neural progenitor (NPs; clusters 2/5/12/14/15) and glutamatergic neurons (clusters 1/3/4) are highlighted on the UMAP projection of day69 organoid scRNAseq data. (B,C) Images on the right display the clusters selected for analysis, as described in A. The graphs show the percentages of cells expressing anterior-posterior (A/P) cortical markers within the two highlighted cluster groups: NPs (top graph) and neurons (bottom graph). The percentage of cells positive for anterior markers (PAX6, ER81, ETV5) and posterior markers (WNT7B, EMX2, NR2F1, FGFR3, CRYM, TSHZ2, ODZ3) is shown in yellow for control (WNTi) organoids and in blue for FGF8-treated (WNTi + FGF8) organoids. (D) Expression level of key posterior (NR2F1, FGFR3, WNT7B, EMX2) and anterior (ETV1, PAX6) genes in UMAP projections of WNTi or WNTi + FGF8 day69 organoid samples, as indicated. Black arrowheads in the NR2F1 and FGFR3 UMAP projections point to decreased expression in proliferating glutamatergic progenitors upon FGF8 treatment, while arrowheads in the ETV1 UMAP projection indicate increased expression in FGF8-treated glutamatergic neurons. Brain schematics with gene expression patterns are based on embryonic day 13.5 staining data from the Mouse Allen Brain Atlas.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/98096/elife-98096-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Schematic drawing of the mammalian developing brain showing FGF8 sources (blue) in the anterior telencephalon and at the midbrain/hindbrain border, and their presumable diffusing gradients (arrows). The red inset illustrates a sagittal section of the telencephalon with the two opposite FGF8 (blue) and NR2F1 (orange) gradients. (B) VoxHunt Similarity Map showing similarity correlation index (white to violet color code) of control (WNTi) and treated (WNTi + FGF8) organoids on virtual brain coronal sections. The color code in the first left column of brain virtual sections identifies different brain regions, listed in the legend at the bottom. Blue arrowheads point to the dorsal-most region of the pallium. (C) Cell-level (left) and cluster-level (right) heatmaps of the SingleR assignment scores (i.e. the confidence of the predicted labels across the dataset; dark blue to yellow color code) as well as the corresponding inferred annotation for the clusters/cells in the ‘Labels’ top bar. Cell/cluster annotation was obtained by using SingleR to evaluate the similarity between control (WNTi) or FGF8-treated (WNTi + FGF8) samples against a 16 post conceptional week (PCW) fetal brain dataset. Glutamatergic progenitors correspond to clusters 2/5/12/14/15, while neurons corresponded to clusters 1/3/4. The reference dataset corresponds to primary cells dataset published by Speir et al., 2021 and where only cells belonging to 16 PCW and not to the hippocampus were kept. In the left graph, the ‘Cls’ top bar identifies the organoid cells. Note that most of the organoid cells (columns) are annotated as pre-fontal cortex (PFC; light blue) or somatosensory cortex (green), based on transcriptional similarity. In the graph on the right, the average annotation score per sample is depicted; control and treated progenitors show high annotation score to somatosensory cortex, while control and treated neurons resemble the PFC. Despite this, note that FGF8 treatment decreases the annotation score to caudal V1 (visual) and temporal areas, while slightly increasing the annotation score to the rostral PFC, indicating anteriorization of cell identity.
+
 ## Discussion
 
-## A hybrid 2D/3D cerebral organoid protocol enables rapid and reproducible generation of telencephalic progenitors and neurons
+### A hybrid 2D/3D cerebral organoid protocol enables rapid and reproducible generation of telencephalic progenitors and neurons
 
 Over the last decade, 3D human organoids have emerged as a powerful tool for modeling both normal and pathological embryonic brain development. In this study, we adapted previous protocols to introduce a novel experimental approach that combines efficient 2D NP induction (Chambers et al., 2009) with 3D culture in spinning bioreactors (Qian et al., 2018). While dual SMAD inhibition in 2D allows rapid neural induction in just 7 days, subsequent steps in 3D culture promote the formation of reproducible brain-like cellular architectures, including rosettes and neural epithelia, which gradually mature into neurons organized in a cortical plate-like structure. As early NPs are dissociated and re-aggregated to form 3D embryoid bodies, this hybrid 2D/3D method could be particularly beneficial for experimental approaches that aim to mix different NP types or cells with distinct genetic backgrounds. It is important to note that the use of a ROCK inhibitor was necessary during early NP dissociation, as significant cell death occurred within 24 hr in its absence, indicating that early human progenitor cells are susceptible to apoptosis when cell contacts are lost, similar to undifferentiated hiPSCs. In late culture samples, our scRNAseq data revealed the presence of distinct types of human NPs, including HOPX+ outer radial glia (RG) cells (Pollen et al., 2015) and, notably, CRYAB+ apical truncated RG cells, which, to our knowledge, have only been identified in a few protocols (Nowakowski et al., 2016). This high cellular heterogeneity is likely promoted by the dual SMAD inhibition approach combined with WNT inhibition, a condition known to enhance NP amplification and diversity (Rosebrock et al., 2022).
 
-## FGF8-induced cellular heterogeneity leads to the formation of segregated co-developing domains in multi-regional organoids
+### FGF8-induced cellular heterogeneity leads to the formation of segregated co-developing domains in multi-regional organoids
 
 The regionalization of the embryonic brain is a multi-step process that operates both sequentially and simultaneously, primarily regulated by localized sources of various signaling molecules that function as organizing centers to pattern neighboring regions and create distinct molecular domains (Borello and Pierani, 2010; Takahashi and Liu, 2006). From E8.5 in the mouse, FGF8 is expressed at the boundary between the midbrain and hindbrain, playing a crucial role in posterior brain patterning and strongly promoting midbrain identity (Harada et al., 2016; Liu et al., 1999; Martinez et al., 1999). This is why protocols designed to generate midbrain neurons in vitro employ early FGF8 treatment (Chambers et al., 2009; Perrier et al., 2004). Consistently, our findings revealed that the early addition of FGF8 to the culture media resulted in the abolition of FOXG1 expression, thereby preventing telencephalic induction. Importantly, our data indicate that in human brain organoids, day10-11 represents the optimal window for FGF8 application, allowing for the preservation of FOXG1 expression and telencephalic identity while effectively modulating FGF8 target genes such as NR2F1. In contrast, initiating FGF8 treatment from day20 maintained FOXG1 expression but was less effective in regulating NR2F1. Consequently, we only treated organoids with FGF8 after a minimum of 10 days of neural induction to avoid early interference with telencephalic development. Despite this precaution, some regions resembling diencephalic and mesencephalic structures still formed in our organoids, likely due to the presence of unspecified NPs at day10, which might remain responsive to the mesencephalon-inducing effects of FGF8. We propose that FGF8 can play multiple roles in human cells in vitro, depending on the competence, developmental state, and regional identity of NPs exposed to it. Early in development, when acting on unspecified progenitors, FGF8 serves as a potent inducer of posteriorized identity, capable of specifying discrete diencephalic/mesencephalic-like domains in brain organoids. However, as development progresses and FOXG1 expression becomes established, consolidating a telencephalic fate, FGF8 acts as a regulator of A/P and D/V identities in forebrain cells. Interestingly, the ability of FGF8 to modulate target genes can also vary based on the regional identity of the FGF8-exposed cells.
 
@@ -85,7 +165,7 @@ The co-presence of various regional domains in FGF8-treated organoids - specific
 
 In this study, we demonstrate that the addition of patterning cues (FGF8 in this case) to the culture medium - even when applied in a non-polarized manner - is sufficient to instruct the development of additional regional fates that co-exist and co-develop within the same organoid while maintaining spatial segregation. Notably, we identified FOXG1+ telencephalic areas containing both TBR1+ dorsal cortical neurons and ventral GABAergic cells, alongside more posterior OTX2+ FOXG1- diencephalic/mesencephalic-like domains. By enhancing organoid complexity, FGF8 signaling enables the formation of more biologically realistic models of human brain assembly in vitro. Multi-regional organoids present an opportunity to investigate how different brain regions self-organize and interact, thus eliminating the need for manual assembly of pre-patterned organoids into assembloids. We propose that the simple addition of instructing cues (morphogens) to the culture medium can enhance the complexity of brain organoids, providing a compromise between maintaining a certain degree of spontaneous self-organization while inducing multiple brain regions in a reproducible manner.
 
-## FGF8 signaling as a key driver of lateral ganglionic eminence specification in D/V telencephalic patterning
+### FGF8 signaling as a key driver of lateral ganglionic eminence specification in D/V telencephalic patterning
 
 Within the telencephalon, FGF8 forms a gradient from its anterior source, the ANR, acting as a morphogen that triggers distinct cellular responses relative to its concentration. In mice, reduced Fgf8 levels cause progressive telencephalic hypoplasia (Storm et al., 2006), as described in Fgf8 hypomorphic and conditional mutants, which show smaller telencephalons due to decreased proliferation, increased apoptosis, and altered expression of areal patterning genes such as Nr2f1, Pax6, Emx2, and Sp8 (Storm et al., 2006; Storm et al., 2003; Garel et al., 2003). Notably, severe Fgf8null mutants exhibit a marked reduction of antero-ventral structures, likely impacting adjacent signaling centers expressing Bmp4, Wnt8b, and/or Shh. Conversely, conditional Fgf8 mutants, where Fgf8 is inactivated at a later stage, display a milder phenotype, with reduced frontal cortex and ventral structures and an expanded dorso-posterior molecular profile (Storm et al., 2006; Garel et al., 2003). Severe phenotypic alterations and cross-regulation between anterior (FGF), dorsal (BMP, WNT), and/or ventral (SHH) patterning centers in genetic loss-of-function (LOF) animal models obscure the specific role of FGF8 signaling in telencephalic development. Therefore, a system with controlled FGF8 signaling modulation is preferable.
 
@@ -93,13 +173,13 @@ In this study, we investigated the exclusive, long-term effects of FGF8 signalin
 
 Interestingly, we observed that certain genes upregulated by FGF8, such as MESI2, TLE4, and PBX3, are specific to the ventral lateral ganglionic eminence (LGE), a region ventral to the lateral pallium, and, particularly, are characteristic of striatal precursors (Shi et al., 2021). This FGF8-induced effect does not extend to medial ganglionic eminence (MGE) markers such as SHH, LHX8, and NKX2-1. To our knowledge, the striatal-promoting effect of FGF8 has been little documented before; it could be interesting to test the combined influence of FGF8 with SHH, known to promote medium spiny neuron production in vitro (Delli Carri et al., 2013). Notably, the ‘ventral’ marker ASCL1, which is upregulated by FGF8 treatment in our organoids, is also expressed in a subset of glutamatergic progenitors in rodents (Britz et al., 2006) and humans (Alzu’bi and Clowry, 2019). This suggests that ASCL1 is not exclusively a marker of cells of ventral origin, particularly within the human telencephalon (Delgado et al., 2022; Kim et al., 2023), where lineage-tracing studies reveal that dorsal progenitors expressing LGE-like markers can also differentiate into GABAergic neurons (Delgado et al., 2022; Alzu’bi et al., 2017b). In this context, FGF8 may enhance an inherent GABAergic-producing capacity in human telencephalic progenitors by promoting the expression of LGE markers. Thus, FGF8-induced ventral LGE identity in human organoids may reflect a species-specific feature: the intrinsic potential of human glutamatergic progenitors to produce GABAergic neurons with an LGE-like molecular profile.
 
-## FGF8-mediated control of A/P areal identity and unified role of FGF8 as an ‘antero-ventral’ inducer
+### FGF8-mediated control of A/P areal identity and unified role of FGF8 as an ‘antero-ventral’ inducer
 
 FGF8 is a well-established key regulator of anterior versus posterior identity, directing cortical area specification in the mouse neocortex (Alfano and Studer, 2013). Its gradient diffuses from anterior to posterior along the neocortical epithelium, promoting prefrontal while inhibiting more occipital cortical areas, like the visual cortex. Although human cerebral organoids do not develop segregated functional areas as in the developing neocortex (Cadwell et al., 2019; Bhaduri et al., 2020), we observed that FGF8 can downregulate the expression of posterior cortical genes, like FGFR3 and NR2F1, while inducing anterior ones, such as ETV1. This suggests that beyond controlling D/V cell identity, FGF8 may also influence A/P areal-specific gene expression in human cerebral organoids. However, the global identity of both FGF8-treated and untreated organoids, based on transcriptional similarity to human fetal brain areas, remained aligned with somatosensory and pre-frontal cortical regions, indicating only a limited effect on full A/P areal specification. Optimizing FGF8 doses or timing could enhance A/P areal identity control in telencephalic organoids. A promising approach may involve introducing a polarized FGF8 source to better mimic physiological gradients, as done with SHH-expressing organoids (Cederquist et al., 2019), where an endogenous signaling center generates distinct D/V identities in a dose-dependent manner. Establishing a localized FGF8 source adjacent to polarized forebrain organoids could expose telencephalic cells to varying concentrations of FGF8, potentially improving in vitro modeling of areal patterning by inducing distinct A/P areal identities and ultimately establishing neocortical axes. The introduction of discrete morphogen sources in polarized organoids has been explored in recent reports (Bosone et al., 2024; Xue et al., 2024).
 
 In summary, our study shows that FGF8 influences both D/V and A/P regional identity in telencephalic organoids. Although we analyzed the A/P and D/V axes separately, these induction and patterning processes are likely interconnected. For instance, specific neocortical areas along the A/P axis have varying populations of ventrally-generated GABAergic interneurons (Molnár et al., 2019). Interestingly, the anterior-most prefrontal cortex has a higher relative proportion of GABAergic neurons (Molnár et al., 2019; Zhong et al., 2018), although the mechanisms originating this property remain unclear. Given the antero-ventral position of the ANR in the early telencephalon, FGF8 could be considered an ‘antero-ventral’ inducer. This might explain the dual role of FGF8 in cerebral organoids, promoting both ventral (LGE-like) and anterior brain identities, generating new hypotheses about the role of FGF8 in linking cortical areal identity with the abundance and subtype of GABAergic interneurons. It is tempting to speculate that, rather than relying solely on migration from ventral regions, these interneurons could be locally generated by cortical progenitors exposed to distinct, areal-specific doses of FGF8.
 
-## FGF8 signaling impacts NDD-related developmental trajectories
+### FGF8 signaling impacts NDD-related developmental trajectories
 
 Through long-term treatment of human organoids, we identified a correlation between FGF signaling activation and the modulation of several developmental and/or neurodevelopmental disorder (NDD)-related genes. Among the FGF8-regulated genes, NR2F1 was the most significantly affected, suggesting that it may be a primary effector of FGF8 signaling in telencephalic development. In addition to NR2F1, other FGF8-responsive genes detected in the DEG analysis are implicated in human brain malformations and/or NDDs. For example, dysregulation of FGFR3 leads to Thanatophoric dysplasia, a fatal form of chondrodysplastic dwarfism, characterized by temporal lobe enlargement, abnormal sulci, and hippocampal dysplasia, resulting in cognitive impairments and reduced synaptic plasticity in both patients and mouse models (Hevner, 2005). ZIC1, which was significantly up-regulated in FGF8-treated organoids, is implicated in complex syndromes involving cortical, callosal, and cerebellar malformations associated with intellectual disability (Twigg et al., 2015; Vandervore et al., 2018). Moreover, haploinsufficiency of NFIB results in macrocephaly and impaired intellectual development, similar to what has been described in Nfib mutant mice (Schanze et al., 2018). We also identified other disease genes, including AUTS2 (linked to autism; Hori et al., 2021), FOXP2 (associated with speech and language disorders; Fisher and Scharff, 2009), and SOX5 (linked to developmental delay or intellectual disability; Zawerton et al., 2020). Finally, FOXG1, normally induced by FGF8, is implicated in a range of brain disorders, including the congenital variant of Rett syndrome, infantile spasms, microcephaly, autism spectrum disorder, and schizophrenia (Hou et al., 2020). In our organoid model, however, early FGF8 treatment led to a decrease in FOXG1 levels rather than an increase, suggesting that FGF8-mediated regulation of FOXG1 in NPs and neurons could be time- and region-dependent. In summary, our findings highlight an FGF8-dependent effect on regional identity, along with the modulation of several NDD-related targets, including an evolutionarily conserved FGF8-NR2F1 molecular axis.
 
@@ -107,62 +187,424 @@ In conclusion, we propose that FGF8-mediated modulation of key developmental gen
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HMGU1; Human induced pluripotent stem cells</td>
+      <td>kind gift ofDr. Drukker</td>
+      <td>HMGU1; source cells: BJ (ATCC CRL-2522)</td>
+      <td>MTA approval was obtained from the Helmholtz Zentrum München (HMGU), Germany</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human/Mouse FGF-8b Protein</td>
+      <td>R&amp;D</td>
+      <td>423-F8-025/CF</td>
+      <td>(100 ng/ML)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BDNF</td>
+      <td>PeproTech</td>
+      <td>#450–02</td>
+      <td>10 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>hPSC genetic Analysis kit</td>
+      <td>Stem Cell Technologies</td>
+      <td>#07550</td>
+      <td>hiPSCs culture</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoSpin RNA II columns</td>
+      <td>Macherey-Nagel</td>
+      <td>740902.50</td>
+      <td>hiPSCs culture</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Reverse Transcriptase Core Kit</td>
+      <td>Eurogentec</td>
+      <td>RT-RTCK-03</td>
+      <td>hiPSCs culture</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Matrigel</td>
+      <td>Corning</td>
+      <td>354234</td>
+      <td>5–10 µl matrigel dissolved in 1 ml cold DMEM-F12 for each well of a 6-well culture plate</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mTeSR1 medium</td>
+      <td>STEMCELL Technologies</td>
+      <td>#85850</td>
+      <td>hiPSCs culture</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ROCK inhibitor Y-27632</td>
+      <td>MedChemExpress; or Stem Cell Technologies</td>
+      <td>MedChemExpress HY-10583; or Stem Cell Technologies #72304</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM/F12</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#31331028</td>
+      <td>hiPSCs culture</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-2 Supplement 100X</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>17502–048</td>
+      <td>hiPSCs culture</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B-27 Supplement 50X, minus vitamin A</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>12587–010</td>
+      <td>hiPSCs culture</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LDN-193189</td>
+      <td>Sigma</td>
+      <td>SML0559-5MG</td>
+      <td>0.25 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB-431542</td>
+      <td>Sigma</td>
+      <td>S4317-5MG</td>
+      <td>5 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>XAV-939</td>
+      <td>Stem cell technologies</td>
+      <td>72674</td>
+      <td>2 µM</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CTIP2, FOXG1, GAD1, OTX2, MAP2, ASCL1, NR2F1, NTUB (ACETILATED TUBULIN), OCT-3/4, PAX6, SATB2, SOX2, TBR1, TUJ1, SLC17A6, SLC17A7 antibodies</td>
+      <td>See Table 2 for supplier information and antibody host species</td>
+      <td>See Table 2 for reference codes</td>
+      <td>See Table 2 for antibody dilution</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DUSP6, EN2, ETV1, ETV4, ETV5, FOXG1, GAPDH, NANOG, NR2F1, OCT4, OTX2, PAX6, SIX3, SOX2, SPRY4, B-ACTIN primers</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>See Table 1 for sequence of forward and reverse primers</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 1.**
+ Primer sequences used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>gene</th>
+      <th>forward sequence</th>
+      <th>reverse sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DUSP6</td>
+      <td>AACCTGTCCCAGTTTTTCCCT</td>
+      <td>GCCAAGCAATGTACCAAGACAC</td>
+    </tr>
+    <tr>
+      <td>EN2</td>
+      <td>TCTACTGTACGCGCTACTCG</td>
+      <td>CGCTTGTCCTCTTTGTTCGG</td>
+    </tr>
+    <tr>
+      <td>ETV1</td>
+      <td>CCAATAGTCAGCGTGGGAGAA</td>
+      <td>TTCTGCAAGCCATGTTTCCTGT</td>
+    </tr>
+    <tr>
+      <td>ETV4</td>
+      <td>TCAAACAGGAACAGACGGACTT</td>
+      <td>AGGTTTCTCATAGCCATAGCCCA</td>
+    </tr>
+    <tr>
+      <td>ETV5</td>
+      <td>ACACGGGTTCCAGTCACCAA</td>
+      <td>GCTGCTGGAGAAATAACCCCC</td>
+    </tr>
+    <tr>
+      <td>FOXG1</td>
+      <td>GCCAAGTTTTACGACGGGAC</td>
+      <td>AAGGGTTGGAAGAAGACCCC</td>
+    </tr>
+    <tr>
+      <td>GAPDH</td>
+      <td>CGTGGAAGGACTCATGACCA</td>
+      <td>CAGTCTTCTGGGTGGCAGTGA</td>
+    </tr>
+    <tr>
+      <td>NANOG</td>
+      <td>CAAAGGCAAACAACCCACTT</td>
+      <td>TCTGCTGGAGGCTGAGGTAT</td>
+    </tr>
+    <tr>
+      <td>NR2F1</td>
+      <td>TGGCAATGGTAGTTAGCAGCT</td>
+      <td>TTGAGGCACTTCTTGAGGCG</td>
+    </tr>
+    <tr>
+      <td>OCT4</td>
+      <td>GTGGAGGAAGCTGACAACAA</td>
+      <td>ATTCTCCAGGTTGCCTCTCA</td>
+    </tr>
+    <tr>
+      <td>OTX2</td>
+      <td>CCTCACTCGCCACATCTACT</td>
+      <td>CTTGGTGGGTGGGTTTGGAG</td>
+    </tr>
+    <tr>
+      <td>PAX6</td>
+      <td>AGTGAATCAGCTCGGTGGTGTCTT</td>
+      <td>TGCAGAATTCGGGAAATGTCGCAC</td>
+    </tr>
+    <tr>
+      <td>SIX3</td>
+      <td>CAGCAAGAAACGCGAACTGG</td>
+      <td>AATGGCCTGGTGCTGGA</td>
+    </tr>
+    <tr>
+      <td>SOX2</td>
+      <td>AGGATAAGTACACGCTGCCC</td>
+      <td>TAACTGTCCATGCGCTGGTT</td>
+    </tr>
+    <tr>
+      <td>SPRY4</td>
+      <td>CGGCTTCAGGATTTACACAGAC</td>
+      <td>CTGCAAACCGCTCAATACAGG</td>
+    </tr>
+    <tr>
+      <td>β-Actin</td>
+      <td>CTTCGCGGGCGACGAT</td>
+      <td>ACATAGGAATCCTCCTGACCC</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Primary antibodies used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primary antibody</th>
+      <th>species</th>
+      <th>Concentration used</th>
+      <th>Brand</th>
+      <th>ref</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CTIP2</td>
+      <td>Rat monoclonal</td>
+      <td>(1:1000)</td>
+      <td>Abcam</td>
+      <td>ab18465</td>
+    </tr>
+    <tr>
+      <td>FOXG1</td>
+      <td>Rabbit polyclonal</td>
+      <td>(1:1000)</td>
+      <td>Abcam</td>
+      <td>ab18259</td>
+    </tr>
+    <tr>
+      <td>GAD1</td>
+      <td>Mouse monoclonal</td>
+      <td>(1:1000)</td>
+      <td>Millipore</td>
+      <td>MAB5406</td>
+    </tr>
+    <tr>
+      <td>OTX2</td>
+      <td>Goat polyclonal</td>
+      <td>(1:1000)</td>
+      <td>R&amp;D</td>
+      <td>AF1979</td>
+    </tr>
+    <tr>
+      <td>MAP2</td>
+      <td>Mouse monoclonal</td>
+      <td>(1:1000)</td>
+      <td>Sigma</td>
+      <td>M4403</td>
+    </tr>
+    <tr>
+      <td>ASCL1 (MASH1)</td>
+      <td>Mouse monoclonal</td>
+      <td>(1:1000)</td>
+      <td>BD Biosciences</td>
+      <td>556604</td>
+    </tr>
+    <tr>
+      <td>NR2F1 (COUP TF1)</td>
+      <td>Rabbit monoclonal</td>
+      <td>(1:1000)</td>
+      <td>Abcam</td>
+      <td>ab181137</td>
+    </tr>
+    <tr>
+      <td>NTUB</td>
+      <td>Mouse monoclonal</td>
+      <td>(1:1000)</td>
+      <td>Sigma</td>
+      <td>T6793</td>
+    </tr>
+    <tr>
+      <td>OCT-3/4</td>
+      <td>Mouse monoclonal</td>
+      <td>(1:500)</td>
+      <td>Santa Cruz</td>
+      <td>sc-5279</td>
+    </tr>
+    <tr>
+      <td>PAX6</td>
+      <td>Rabbit polyclonal</td>
+      <td>(1:1000)</td>
+      <td>Millipore</td>
+      <td>AB2237</td>
+    </tr>
+    <tr>
+      <td>SATB2</td>
+      <td>Mouse monoclonal</td>
+      <td>(1:1000)</td>
+      <td>Abcam</td>
+      <td>ab51502</td>
+    </tr>
+    <tr>
+      <td>SOX2</td>
+      <td>Mouse monoclonal</td>
+      <td>(1:1000)</td>
+      <td>R&amp;D</td>
+      <td>MAB2018</td>
+    </tr>
+    <tr>
+      <td>TBR1</td>
+      <td>Rabbit polyclonal</td>
+      <td>(1:1000)</td>
+      <td>Abcam</td>
+      <td>ab31940</td>
+    </tr>
+    <tr>
+      <td>TUJ1 (TUBB3)</td>
+      <td>Rabbit polyclonal</td>
+      <td>(1:1000)</td>
+      <td>BioLegend</td>
+      <td>802001</td>
+    </tr>
+    <tr>
+      <td>SLC17A6 (VGLUT2)</td>
+      <td>Guinea Pig polyclonal</td>
+      <td>(1:1000)</td>
+      <td>Millipore</td>
+      <td>AB2251</td>
+    </tr>
+    <tr>
+      <td>SLC17A7</td>
+      <td>Rabbit polyclonal</td>
+      <td>(1:1000)</td>
+      <td>Invitrogen</td>
+      <td>48–2400</td>
+    </tr>
+  </tbody>
+</table>
+
 Human induced pluripotent stem cells (hiPSCs) used in this study are the HMGU1 cell line, derived from fibroblasts established from skin taken from normal foreskin from a neonatal male (ATCC number CRL-2522, designation BJ), mycoplasma-free and a kind gift of Dr. Drukker. MTA approval was obtained from the Helmholtz Zentrum München (HMGU), Germany. HMGU1 hiPSCs were cultured on Matrigel-coated plates (Corning, 354234; 5–10 µl matrigel dissolved in 1 ml cold DMEM-F12 for each well of a six-well culture plate) in mTeSR1 medium (STEMCELL Technologies; #85850). Medium was changed daily. HMGU1 cells were passaged with Versene (Thermo Fisher Scientific; 15040066) as previously described Beers et al., 2012; briefly, cells were washed with 1 ml PBS1x (Thermo Fisher Scientific 14190169; or Sigma D8537), treated with Versene for up to 5 min, then detached by gently pipetting with 1 ml mTeSR1 medium. Alternatively, when single cell dissociation and cell counting were needed, HMGU1 cells were passaged with Accutase (Sigma; A6964). Single cells passaging required addition of 10 µM dihydrochloride ROCK inhibitor Y-27632 (MedChemExpress HY-10583; or Stem Cell Technologies #72304) to prevent apoptosis. ROCK inhibitor was removed 24 hr after dissociation. For immunostaining, cells were grown on glass coverslips (Epredia X1000 Round Coverslip dia. 13 mm, Product Code: 10513234) with the same medium and coating treatment.
 
-## hiPSCs quality controls
+### hiPSCs quality controls
 
 HMGU1 cells were checked for mycoplasma contamination once per year, while amplifying and preparing multiple cryovial aliquots that were used during the following months. Genetic/chromosomic analysis was performed by using the hPSC genetic Analysis kit (Stem Cell Technologies; #07550) by following the manufacturer’s instructions. Two different hiPSC lines (WT-T12, kind gift of Dr. Magdalena Laugsch, and PGP1, purchased from Synthego) were used as controls to be compared with HMGU1 cells. Briefly, hiPSC cell pellets were lysed with lysis buffer (1 M TRIS HCL pH8, 5 M NaCL, 0.5 M EDTA, 10% SDS in milli-Q H2O) supplemented with 10 mg/mL Proteinase K (Sigma, 0311580); lysis incubation was performed at 58 °C for 30 min. Genomic DNA was obtained by Isopropanol precipitation and 70% Ethanol cleaning. We detected frequent mutations in the HMGU1 cell line, and found that extended culture of hiPSCs caused chromosomal abnormalities to further accumulate in sensitive regions. To prevent this, we did not use HMGU1 cells after passage 26. Finally, pluripotency was checked by OCT4 immunostaining.
 
-## Neural differentiation into telencephalic organoids
+### Neural differentiation into telencephalic organoids
 
 HMGU1 cells were seeded in Matrigel-coated 24 well-plates at a density of 25,000–50,000 cells per well and cultured in mTeSR1 medium till high confluency, which is key for efficient neural induction in this protocol (Chambers et al., 2009). When highly confluent (90–95% surface covered), hiPSCs were washed with pre-warmed DMEM/F12 (Thermo Fisher Scientific; #31331028) then medium was switched to neural progenitor patterning medium (NPPM). NPPM consisted of DMEM/F12 supplemented with N2 (N-2 Supplement 100X; Thermo Fisher Scientific 17502–048), B27 (B-27 Supplement 50X, minus vitamin A; Thermo Fisher Scientific 12587–010), GlutaMAX (Thermo Fisher Scientific 35050038), Non-Essential Amino-Acid (NEAA; Thermo Fisher Scientific 11140–035), Sodium Pyruvate (NaPyr; Thermo Fisher Scientific #11360070), 50 µM 2-mercaptoethanol (Thermo Fisher Scientific 31350–010), 2 µg/mL Heparin (Sigma H3149) and Penicillin/Streptomycin (Biozol ECL-EC3001D). The latter could be substituted by Antibiotic/Antimycotic solution (Sigma A5955). Neural induction was boosted by adding a BMP inhibitor (0.25 µM LDN-193189; Sigma SML0559-5MG) and a TGFβ inhibitor (5 µM SB-431542; Sigma S4317-5MG) for the control condition (‘CTRL’ in figures); telencephalic induction also required use of a WNT inhibitor (2 µM XAV-939; Stem cell technologies 72674; ‘WNTi’ in figures). On day 7 (max on day 8) of the protocol, cells were dissociated by Accutase (Sigma; A6964) and seeded in 96 U-bottom well plates (Corning #7007; or Sarstedt 83.3925500) at a concentration of 60,000 cells/well, in NPPM medium containing ROCK inhibitor. A gentle centrifugation of the 96-well plate (1 min at 1000 rpm) allowed quick accumulation of the cells at the bottom of the wells. The day after, the embryoid bodies (EBs) were collected and transferred in Matrigel droplets (Corning 354234; 70 µl Matrigel for 16 EBs) to generate ‘cookies’, distributed on parafilm and incubated 30 min at 37 °C for Matrigel to solidify, then transferred in SpinΩ mini-rotors (Qian et al., 2018) in NPPM medium (still supplemented with SB + LDN ± XAV; 2.5 ml per well in a 12-well plate). On day9 (max on day10), most of the medium was removed and replaced with NPPM without SB-431542 and LDN-193189, but still containing WNT-inhibitor. Starting on day10, FGF8 (100 ng/ML; Recombinant Human/Mouse FGF-8b Protein; R&D 423-F8-025/CF) could be added to NPPM medium, that was then changed every 2–3 days, to create the treated condition (referred to in the text and figures as ‘WNTi + FGF8’). If medium showed excessively yellow color indicating pH acidification, cookies were diluted by redistributing in multiple wells to have a maximum of five cookies per well. At day 20, medium was switched for Neural Differentiation Medium (NDM) containing 50% DMEM-F-12 medium and 50% Neurobasal medium (ThermoFisher scientific 21103049) supplemented with N2, Glutamax, NEAA, NaPyr, 50 µM Beta-mercaptoethanol, 2 µg/mL Heparin and Insulin (25 µl per 100 ML medium; Sigma #19278). At day30 (max at day35), NDM was substituted with Long-term pro-Survival Medium (LTSM) consisting in Neurobasal medium supplemented with N2, B27 without Vitamin A, Glutamax, NEAA, NaPyr, 50 µM Beta-mercaptoethanol, 2 µg/mL Heparin, 1% Serum (Fetal Bovine Serum, ThermoFisher scientific 10270–106; inactivated for 30 min at 56 °C then aliquoted and stored at –20 °C), 10 ng/mL BDNF (PeproTech #450–02) and dissolved Matrigel (final concentration in the medium: 0.1%). Medium was changed every 3–4 days, until the desired differentiation stage. Starting at day50-60, bigger organoids were sliced with a sterile blade under the stereomicroscope (typically once per month), which allows for better survival and reduces the formation of an inner necrotic core (Qian et al., 2020). Organoids were cultured up to 110 days.
 
-## Real time qRT-PCR
+### Real time qRT-PCR
 
 Cell pellets or organoids (typically cell pellets from two independent wells or three organoids) were pooled and spun in 1.5 ml Eppendorf tubes, then frozen at –80 °C. Total RNA was extracted with NucleoSpin RNA II columns (Macherey-Nagel; 740902.50). RNA quantity and quality were assessed with Nanodrop and gel electrophoresis. For each sample, 200/500 ng of total RNA were reverse transcribed using random nonamers (Reverse Transcriptase Core Kit, Eurogentec, qRT-RTCK-03); qRT-PCR was performed using GoTaq SYBR Green qPCR Mix (Promega A6001) or KAPA SYBRR FAST (KAPA Biosystems; KK4610) on LightCycler (Roche). cDNA (stored at –20 °C) was diluted so that each reaction contained 2 ng. Amplification take-off values were evaluated using the built-in LightCycler relative quantification analysis function, and relative expression was calculated with the 2-ΔΔCt method as previously described (Bertacchi et al., 2015a), normalizing to the housekeeping genes GAPDH or β-Actin. Standard errors for error bars were obtained from the error propagation formula (Bertacchi et al., 2015a). For each genotype/time point, 2–3 organoids/cell pellets (biological replicates) were pooled together before RNA extraction, while at least two reactions were assembled per sample/gene analyzed during qRT-PCR amplification (technical replicates).
 
-## Immunostaining on cryostat sections
+### Immunostaining on cryostat sections
 
 Organoids were collected in 2 ml Eppendorf tubes and fixed in 2 ml of 4% PFA at 4 °C for 3–4 hr in gentle agitation, then washed twice with PBS 1 X and dehydrated in 10% sucrose (Sigma-Aldrich, S9378-1KG; dissolved in PBS1x; minimum 4 hr to maximum over-night) followed by 25% sucrose (dissolved in PBS1x; overnight at 4 °C). Most of the sucrose was removed and substituted with OCT resin (Leica Tissue Freezing Medium, 14020108926; or Cryomatrix, 6769006) with a 10 min wash with gentle rotation, then organoids were transferred in embedding molds in clean OCT and stored at –80 °C. Cryostat 12 µm sections (Leica cryostat, model: CM3050S) were collected on glass slides (Thermo Fisher Scientific, Superfrost Plus, J1800AMNZ, or VWR SuperFrost Plus, 631–0108) and stored at –80 °C. Prior starting immunostaining, sections were dried at RT for 10–15 min, then washed two times with PBS1x (10 min each) to remove traces of OCT resin. All antibodies required antigen retrieval prior to incubation (unmasking: 10 min at 95 °C in pH = 6 0.1 M sodium citrate solution). After a 5-min PBS1x wash to remove unmasking solution, pre-blocking solution was added on the slides for 1 hr, containing PBS1x with 5% serum (Sheep serum, Sigma, S2263-100ML; in case of primary antibodies raised in sheep or goat: Newborn Calf Serum, Thermo Fisher Scientific, 16010–167) and 0.3% Triton (Sigma-Aldrich, T8787-250ML). For primary antibody incubation (from a minimum of 4 hr at RT to a maximum of over-night at 4 °C), blocking solution consisted in PBS1x supplemented with 1% serum and 0.1% Triton. Primary antibodies used in this study are listed in Table 2. Alexa Fluor 488, 555, 594, and 647 anti-mouse, anti-rabbit, anti-rat, anti-goat, anti-guinea pig or anti-sheep IgG conjugates (Thermo Fisher Scientific, all diluted at 1:500) were used as secondary antibodies (incubation time: from a minimum of 2 hr at RT to a maximum of over-night at 4 °C). Secondary antibody solution also contained 1:1.000 Hoechst 33342 for nuclei staining (Invitrogen, H3570). After final washes (3 times, 10 min each, in PBS 1 x), organoid sections were covered with mounting solution (80% glycerol, 2% N-propyl gallate in PBS1x) and glass coverslips, which were sealed with nail polish on the edges. Stained sections were stored at –20 °C. Images were acquired at an Apotome Zeiss, using the AxioVision software, and exported as TIF files. Alternatively, images were collected using a Vectra Polaris slide scanner (Akoya Biosciences) and then underwent artificial intelligence-driven analysis by HALO software (Indica Labs).
 
-## Immunostaining of cultured cells
+### Immunostaining of cultured cells
 
 For immunostaining, cells were cultured on Matrigel coated round glass coverslip. The immunostaining protocol is the same used for cryostat sections, except fixation with 4% paraformaldehyde lasted only 15 min at room temperature, no antigen retrieval was performed, and PBS1x for washes always contained 1% serum to limit cell detachment.
 
-## Statistical analysis
+### Statistical analysis
 
 All data were statistically analyzed and graphically represented using Microsoft Office Excel software or GraphPad Prism (Version 7.00). Quantitative data are shown as the mean ± SEM. For cell percentage/number quantification after immunostaining, measurements were performed on at least five sections coming from two to three different organoids, unless otherwise stated. Organoid sections with damaged histology were excluded from any further analysis/processing; the inner necrotic core of the organoid, when present, was excluded from counting. Microscope images were processed with Photoshop or ImageJ software, by randomly overlapping fixed-width (100 µm) square boxes on the area of interest [e.g. organoid surface], then quantifying positive cells inside the boxes. When calculating percentages over the total cell number, the latter was quantified by counting Hoechst+ nuclei, unless otherwise specified. Data were analyzed using the Mann–Whitney U-test or two-tailed Student’s t-test (when comparing two data groups), or by two-way ANOVA for comparison of three or more groups. Statistical significance was set as follows: *p<0.05; **p<0.01; ***p<0.001.
 
-## MEA recordings
+### MEA recordings
 
 For MEA recordings, we used the high-density MEA system (HD-MEA) from MaxWell (Model: MaxOne; Chips: MaxOne single-well chips). Prior recordings, organoids were plated on electrodes by following the MaxWell ‘Brain organoid plating protocol, version 1’, with few modifications. Briefly, MEA chips were cleaned with 1% Terg-a-zyme solution for minimum 2 hr at RT, washed in distilled water and sterilized with 70% Ethanol. A first coating with Poly-L-ornithine hydrobromide (20 µg/ml in distilled water for 5 hr at 37 °C, Sigma P3655) was followed by a second one with Laminin (25 µg/ml in PBS1x, Santa Cruz, sc-29012). After a pre-incubation with LTSM medium (minimum 2 hr, maximum O/N at 37 °C; pre-conditioning medium was prepared as detailed in Neural differentiation into telencephalic organoids and supplemented with additional 5 µl Matrigel per 1 ml of medium) to pre-condition the chip surface, organoids were transferred on MEA chips (n=3/5 organoids per chip) and let deposit by gravity in the incubator, while avoiding any vibration for the next 24 hr. Medium was delicately changed every 3 days during a 2 week incubation on chip; during the second week, medium was gradually switched to LTSM that was prepared using BrainPhys (Stem Cell Technologies, #05790) as a base medium where to dilute the supplements. The organoids underwent complete adhesion within 1–2 weeks and interconnected with bundles of axons, a condition known to promote complex and oscillatory activity (Osaki et al., 2024). Medium was always changed 1 day before the recording to promote electric activity. Recordings were performed with the MaxOne software, by using in-built protocol ‘Activity Scan Assay’ to detect active areas and to measure mean firing rate and mean spike amplitude, followed by the ‘Network Assay’ to evaluate firing synchronicity and by the ‘Axon Tracking Assay’ to detect signal propagation along axonal tracts. Average data were obtained by recording from the whole chip surface, hence pooling active electrodes from 3/4 organoids per condition. For statistical analysis (GraphPad; 2-way ANOVA), recording data were pooled from control (WNTi) and treated (WNTi + FGF8) samples from three distinct batches (each including 2–4 organoids on the MEA chip active surface), including three different developmental stages in vitro (Batch1: days 131–143; Batch2: days 202–215; Batch3: days 153–187). For the detection of synchronous events (bursts) in the ‘Network Assay’, the threshold was automatically determined by the MEA system. This threshold depended on a fixed multiplying factor that was consistent across both control and treated samples; the factor was then multiplied by the basal average activity of each individual sample. This method allowed for the detection of bursts as synchronized activity emerging from the basal noise, which varies in every sample. For the ‘Axon Tracking Assay’, a total of 170 WNTi and 165 WNTi + FGF8 axonal tracts were detected and analyzed from the three batches (see Figure 5). An ‘Axon Tracking Assay’ analysis was also performed separately at different developmental stages to investigate axonal maturation (see Figure 5—figure supplement 1). For Bicuculline treatment on WNTi + FGF8 organoids (10 µM Bicuculline; Abcam, ab120107), 200 µl of medium were collected from the electrode, mixed with Bicuculline, added back to the MEA chip and gently mixed by pipetting. Recordings were conducted before (control condition) and after (treatment condition) the addition of Bicuculline, with a minimum drug incubation period of 15 minutes before starting the treatment condition recording.
 
-## Cell dissociation for single-cell RNA sequencing and flow cytometry analysis
+### Cell dissociation for single-cell RNA sequencing and flow cytometry analysis
 
 Day69 control (WNTi) and treated (WNTi + FGF8) organoids were dissociated using an enzymatic Papain Dissociation System (Serlabo technologies LK003150 or Worthington, #LK003150), by following manufacturer’s instructions. Low-bind Eppendorf tubes were used to limit material loss. Two to three organoids per batch were isolated in Eppendorf tubes containing 1 ml of pre-warmed Papain solution supplemented with DNase. Total incubation lasted 70 min, with manipulations every ten minutes that consisted in gentle mixing by tube inversion (first 2 rounds) then gentle pipetting (following rounds), ending up with addition of Ovomucoid solution for Papain inactivation. Samples were filtered (Cell Strainer 40 µm Nylon, FALCON, 352340) to remove undissociated cells, spinned down (1200 rpm, corresponding to 170 g, for 5 minutes) and resuspended in PBS1x supplemented with 0.1% BSA (Jackson, 001-000-161). Cell viability upon dissociation was checked by Propidium Iodide (PI) staining in flow cytometry in an independent experiment, where Papain was compared with Accutase and with ReLeSR (Stem Cell Technologies, #100–0483). For flow cytometry, cells were stained with Propidium Iodide (40 µg/ML, Sigma, P4170) in PBS1x for 15 min at RT, washed twice with PBS1x supplemented with 1% Serum, then analysed with BD LSRFortessa and FACSDiva software (Becton Dickinson) to measure dying cells which incorporated PI. Cells were analysed on the basis of 10,000 total events (debris excluded). Cell viability was tested again by Trypan blue staining just prior cell counting for library preparation, and samples were considered suitable for single cell RNA sequencing only when damaged cells detected by Trypan blue or by PI staining were ≤10% of the total population.
 
-## Single-cell RNA sequencing: library preparation and sequencing
+### Single-cell RNA sequencing: library preparation and sequencing
 
 Single-cell RNA sequencing experiment was performed by using 10 X Genomics technology. Dissociated cells were processed following the manufactures’ instruction of Chromium Next GEM Single Cell 3ʹ Reagent Kits v3.1 (Dual Index). Briefly, they were resuspended in ice-cold PBS containing 0.1% BSA at a concentration of 1000 cells/μl, and approximately 17,400 cells per channel (corresponding to an estimated recovery of 10,000 cells per channel) were loaded onto a Chromium Single Cell 3′ Chip (10 x Genomics, PN 2000177) and processed through the Chromium controller to generate single-cell gel beads in emulsion (GEMs). scRNA-seq libraries were prepared with the Chromium Single Cell 3′ Library & Gel Bead Kit v.2 (10x Genomics, PN-120237). Final cDNA libraries were checked for quality and quantified using 2100 Bioanalyzer (High Sensitivity DNA Assay; Agilent Technologies). Libraries were sequenced using Illumina HiSeq 4000 system in Paired-End mode with 100 or 28 bases for read 1 and 100 bases for read 2, following Illumina’s instructions. Image analysis and base calling were performed using RTA version 2.7.2 and Cell Ranger version 3.0.2.
 
-## Single-cell RNA sequencing: analysis
+### Single-cell RNA sequencing: analysis
 
-## Primary analysis
+#### Primary analysis
 
 FastQ files of each sample were processed with Cell Ranger count pipeline (10 X Genomics) version 6.1.1, that performs alignment, filtering, barcode counting, and UMI counting, using the pre-processed Homo sapiens reference GRCh38-2020-A (GENCODE v32/Ensembl 98) from 10 X Genomics. Data were then aggregated using Cell Ranger aggr tool which normalizes counts to the same sequencing depth and then recomputing the feature-barcode matrices and analysis (dimensionality reduction, i.e. UMAP, and clustering) on the combined data (24,651 cells).A subset of cells expressing endoderm or mesoderm markers (1662 cells, corresponding to 6.7% of the total population) and a subset of cells expressing high levels of stress markers (4399 cells, corresponding to 17.8% of the total population) were excluded, and analysis (dimensionality reduction and clustering) was performed again after exclusion of these non-neural and/or sub-optimally differentiated cell populations using Cell Ranger reanalyse tool, resulting a set of 18,590 cells regrouped in 15 clusters. More information about Cell ranger software can be found on the manufacturer website (https://support.10xgenomics.com/single-cell-gene-expression/software/overview/welcome).
 
-## Trajectory analysis
+#### Trajectory analysis
 
 Count data were normalized with the log normalize method using Seurat R package version 4.0.5 then filtered by keeping only genes with more than 5 UMI counts detected in at least 10 cells. Four analyses were performed: one with all cells (clusters 1–15), final data used in the analysis contained 18,590 cells and 7133 genes; one for ventral progenitors (only WNTi + FGF8 cells belonging to clusters 6, 7, 8, 9, and 13) with 4608 cells and 5382 genes; one for dorsal progenitors (only WNTi cells belonging to clusters 1, 2, 3, 4, 5, 12, 13, 14, and 15) with 8246 cells and 5827 genes; and the last one for all progenitors (dorsal + ventral; cells belonging to clusters 2, 5, 8, 9, 12, 13, 14, and 15) with 8876 cells and 6452 genes. Trajectory inference analyses were performed using slingshot method (Street et al., 2018) implemented in the dyno package (Saelens et al., 2019).
 
-## VoxHunt analysis
+#### VoxHunt analysis
 
 Similarity maps between single-cell data and the public Allen Developing Mouse Brain Atlas expression data, stage E13, were computed using the VoxHunt R package version 1.0.1 (Fleck et al., 2021).
 
-## Analyses of differentially expressed genes (DEGs) and Gene enrichment
+#### Analyses of differentially expressed genes (DEGs) and Gene enrichment
 
 Count data were normalized with the log normalize method using Seurat R package version 4.0.5 before performing the analysis (Butler et al., 2018). Differential gene expression analyses, realized with Seurat, between clusters of interest are performed using a Wilcoxon test whose performance for single-cell differential expression analysis has been evaluated in a previous report (Soneson and Robinson, 2018) and resulting p-values were adjusted for multiple testing using a Bonferroni correction. Enrichment analyses were performed on differentially expressed genes previously identified using cluster Profiler R package version 4.2.0 with Gene Set Enrichment Analysis (GSEA) method (Subramanian et al., 2005). Genes were ranked by their log2 Fold-Change. Enrichment analyses are performed on the three domains of GO (Gene Ontology) terms: biological process; molecular function; and cellular component.
 
-## Cluster annotation with SingleR
+#### Cluster annotation with SingleR
 
 Annotation of Neurones_CTRL (clusters 1, 3, and 4 of WNTi cells), Neurones_FGF8 (clusters 1, 3, and 4 of WNTi + FGF8 cells), Progeniteurs_CTRL (clusters 2, 5, 12, 14, and 15 of WNTi cells) and Progeniteurs_FGF8 (clusters 2, 5, 12, 14, and 15 of WNTi + FGF8 cells) cells at the cluster and cell levels were performed with SingleR version 2.0.0 R package (Aran et al., 2019) using a previously published primary cell dataset (Speir et al., 2021). In this reference dataset, only cells corresponding to 16 PCW age and not to hippocampus area were kept. Before performing the annotation both datasets were normalized using the LogNormalize method implemented in the Seurat R package version 4.3.0 (Hao et al., 2021). Figure 7—figure supplement 1C shows a heatmap of the SingleR assignment scores as well as the corresponding inferred annotation for the clusters/cells. Scores allows users to inspect the confidence of the predicted labels across the dataset. Ideally, each cell/cluster (i.e. column of the heatmap) should have one score that is obviously larger than the rest, indicating that it is unambiguously assigned to a single label. A spread of similar scores for a given cell/cluster indicates that the assignment is uncertain, although this may be acceptable if the uncertainty is distributed across similar cell/cluster types that cannot be easily resolved.

@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.11182.001 Human γ-secretase is an intra-membrane protease that cleaves many different substrates. Aberrant cleavage of Notch is implicated in cancer, while abnormalities in cutting amyloid precursor protein lead to Alzheimer's disease. Our previous cryo-EM structure of γ-secretase revealed considerable disorder in its catalytic subunit presenilin. Here, we describe an image classification procedure that characterizes molecular plasticity at the secondary structure level, and apply this method to identify three distinct conformations in our previous sample. In one of these conformations, an additional transmembrane helix is visible that cannot be attributed to the known components of γ-secretase. In addition, we present a γ-secretase structure in complex with the dipeptidic inhibitor N-[N -(3,5-difluorophenacetyl)- L -alanyl]- S -phenylglycine t -butyl ester (DAPT). Our results reveal how conformational mobility in the second and sixth transmembrane helices of presenilin is greatly reduced upon binding of DAPT or the additional helix, and form the basis for a new model of how substrate enters the transmembrane domain. DOI: http://dx.doi.org/10.7554/eLife.11182.001
+Human γ-secretase is an intra-membrane protease that cleaves many different substrates. Aberrant cleavage of Notch is implicated in cancer, while abnormalities in cutting amyloid precursor protein lead to Alzheimer's disease. Our previous cryo-EM structure of γ-secretase revealed considerable disorder in its catalytic subunit presenilin. Here, we describe an image classification procedure that characterizes molecular plasticity at the secondary structure level, and apply this method to identify three distinct conformations in our previous sample. In one of these conformations, an additional transmembrane helix is visible that cannot be attributed to the known components of γ-secretase. In addition, we present a γ-secretase structure in complex with the dipeptidic inhibitor N-[N-(3,5-difluorophenacetyl)-L-alanyl]-S-phenylglycine t-butyl ester (DAPT). Our results reveal how conformational mobility in the second and sixth transmembrane helices of presenilin is greatly reduced upon binding of DAPT or the additional helix, and form the basis for a new model of how substrate enters the transmembrane domain.
 
 ## Introduction
 
@@ -33,89 +33,321 @@ In this paper, we set out to gain further insights into the proteolytic mechanis
 
 ## Results
 
-## Approach
+### Approach
 
 A powerful method of dealing with structural heterogeneity in cryo-EM data sets is to 'focus' refinement on a defined region of the protein complex of interest. In this approach one masks out part of the reference during 3D refinement, thereby effectively ignoring structural variability in less interesting parts. For example, we used masked refinements to deal with variability in the relative orientations of ribosomal subunits (Amunts et al., 2014; Wong et al., 2014). Similarly, masked multi-reference refinement may be used as a clustering tool, i.e. to separate experimental particle images based on differences in a defined region of interest. We refer to this approach as masked 3D classification. However, masked 3D classifications aimed at analyzing the conformational landscape of γ-secretase in its apo-state were unsuccessful. An initial data set of 400,000 particles gave rise to a 3.5 Å map. Using different masks on the transmembrane domain, masked 3D classification consistently yielded only a single class showing good density. Although this approach did result in the selection of 160,000 particles from which we could calculate a better 3.4 Å map, it did not reveal the nature of conformational freedom within the catalytic subunit (Bai et al., 2015a).
 
-A fundamental problem with masked refinements is that one compares projections of a partial map with experimental projections of the entire particle (
+A fundamental problem with masked refinements is that one compares projections of a partial map with experimental projections of the entire particle (Figure 1). This leads to inconsistencies in the comparisons that underlie the refinement procedure. For example, one might want to focus classification on the part of the particle that is depicted in red in Figure 1A, and ignore any variations in the yellow part. Masking away the yellow part from the reconstruction in masked refinements (Figure 1C) yields reference projections that only contain the red part (Figure 1F). However, each experimental image (Figure 1D) contains signal coming from the entire particle, i.e. from both the yellow and the red parts. Therefore, the yellow part of the signal will act as an additional source of noise in the comparison between the experimental image and the masked reference projection. It will depend on the signal-to-noise ratio in the original image and on the size of the part of the complex that is masked away, whether this additional noise will affect the refinement. For large particles, high signal-to-noise ratios in the data make masked refinements relatively robust, but even for ribosomes masked refinements of the small subunit proved much more difficult than for the large subunit (Wong et al., 2014).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig1-v2.jpg)
 
-**Figure 1.:** (A) A 3D model of a complex of interest. (B) The part of the complex one would like to ignore in masked classification (V1) is shown in yellow. (C) The part of the complex one would like to focus classification on (V2) is shown in red. (D) An experimental particle image is assumed to be a 2D projection of the entire complex in panel A that is affected by the contrast transfer function (CTF), and to which experimental noise (N, shown in grey) has been added. (E) A CTF-affected 2D projection of V1. (F) A CTF-affected 2D projection of V2. Previous approaches to masked classification in RELION (Amunts et al., 2014; Wong et al., 2014) compared experimental particles (panel D), with reference projections of only V2 (panel F). This results in inconsistent comparisons. (G) In the modified masked classification approach, one subtracts the CTF-affected 2D projection of V1 (panel E) from the experimental particle (panel D). This results in a modified experimental particle image that only contains experimental noise and the CTF-affected projection of V2, so that comparison with the reference projection in panel F becomes consistent.DOI: http://dx.doi.org/10.7554/eLife.11182.003
+**Figure 1.:** (A) A 3D model of a complex of interest. (B) The part of the complex one would like to ignore in masked classification (V1) is shown in yellow. (C) The part of the complex one would like to focus classification on (V2) is shown in red. (D) An experimental particle image is assumed to be a 2D projection of the entire complex in panel A that is affected by the contrast transfer function (CTF), and to which experimental noise (N, shown in grey) has been added. (E) A CTF-affected 2D projection of V1. (F) A CTF-affected 2D projection of V2. Previous approaches to masked classification in RELION (Amunts et al., 2014; Wong et al., 2014) compared experimental particles (panel D), with reference projections of only V2 (panel F). This results in inconsistent comparisons. (G) In the modified masked classification approach, one subtracts the CTF-affected 2D projection of V1 (panel E) from the experimental particle (panel D). This results in a modified experimental particle image that only contains experimental noise and the CTF-affected projection of V2, so that comparison with the reference projection in panel F becomes consistent.
 
 To reduce the inconsistency in image comparison, we explored a modification of the masked classification approach. Using the example in Figure 1, if the noisy experimental image were to contain only signal from the red part, then a masked refinement would be consistent. To emulate this situation, we subtract projections of the yellow part of the reconstruction (Figure 1B,E) from every experimental image. This requires knowledge about the relative orientation of each particle, which is obtained from a consensus refinement of the entire data set against a single, unmasked reference. Also, we apply the CTF of each experimental image to the projection of the yellow part prior to the subtraction. The resulting, modified experimental particle image (Figure 1G) then ideally only contains the signal from the red part of the particle, and the only inconsistency in the image comparison is the original experimental noise. Therefore, using the subtracted experimental particle images in masked refinements that are focused on the red part of the signal will be better than using the original images.
 
-## Masked classification with signal subtraction on the apo-state data set
+### Masked classification with signal subtraction on the apo-state data set
 
-Because the PS1 subunit showed the highest level of disorder in our high-resolution structure, we decided to perform masked classification on PS1 with subtraction of the signal from the rest of the complex. Since the total molecular weight of the ordered part of PS1 in our previous map was less than 30 kDa, we reasoned that the remaining signal in the subtracted experimental images would probably not be strong enough to allow the determination of their relative orientations. Therefore, we performed masked classification on the set of 400,000 particles, while keeping all orientations fixed at the values determined in the refinement of the 3.5 Å consensus map. Classification into eight classes yielded three majority classes that showed good density (
+Because the PS1 subunit showed the highest level of disorder in our high-resolution structure, we decided to perform masked classification on PS1 with subtraction of the signal from the rest of the complex. Since the total molecular weight of the ordered part of PS1 in our previous map was less than 30 kDa, we reasoned that the remaining signal in the subtracted experimental images would probably not be strong enough to allow the determination of their relative orientations. Therefore, we performed masked classification on the set of 400,000 particles, while keeping all orientations fixed at the values determined in the refinement of the 3.5 Å consensus map. Classification into eight classes yielded three majority classes that showed good density (Figure 2). Five smaller classes gave suboptimal reconstructions, and the particles from these classes were discarded. The (original, non-subtracted) particles from the good classes were then subjected to separate 3D auto-refinement runs (Scheres, 2012), all of which were started from the same 40 Å low-pass filtered reference to avoid model bias. The resulting maps were very similar in the nicastrin and Aph-1 subunits, but obvious differences were present in the PS1 and Pen-2 subunits. The maps had resolutions in the range of 4.0–4.3 Å, which allowed reliable main-chain tracing, but left density for many side chains less well defined (Table 1, Figure 3, Figure 3—figure supplement 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig2-v2.jpg)
 
-**Figure 2.:** (A) From a masked 3D classification run on the PS1 subunit, the three largest classes (in cyan and blue, labeled class 1–3) showed good density. The five smallest classes (in grey) were ignored in further analyses as they showed suboptimal density. (B) Superposition of classes 1 and 2 and of classes 2 and 3 reveals the different orientations of TM6 in all three classes (indicated with red arrows), and the fact that TM2 (indicated with a red dashed box) is only ordered in class 1.DOI: http://dx.doi.org/10.7554/eLife.11182.004
+**Figure 2.:** (A) From a masked 3D classification run on the PS1 subunit, the three largest classes (in cyan and blue, labeled class 1–3) showed good density. The five smallest classes (in grey) were ignored in further analyses as they showed suboptimal density. (B) Superposition of classes 1 and 2 and of classes 2 and 3 reveals the different orientations of TM6 in all three classes (indicated with red arrows), and the fact that TM2 (indicated with a red dashed box) is only ordered in class 1.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** A 10Å low-pass filtered version of the map from class 3 (left) was refined against the particle subset identified for class 1. The resulting map (right) is undistinguishable from the original map from class 1, indicating that artifacts due to model bias did not play a role.DOI: http://dx.doi.org/10.7554/eLife.11182.005
+**Figure 2—figure supplement 1.:** A 10Å low-pass filtered version of the map from class 3 (left) was refined against the particle subset identified for class 1. The resulting map (right) is undistinguishable from the original map from class 1, indicating that artifacts due to model bias did not play a role.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A) From a masked 3D classification run on the Aph-1 subunit with subtraction of the residual signal, all eight classes look very similar. (B) A superposition of all eight maps.DOI: http://dx.doi.org/10.7554/eLife.11182.006
+**Figure 2—figure supplement 2.:** (A) From a masked 3D classification run on the Aph-1 subunit with subtraction of the residual signal, all eight classes look very similar. (B) A superposition of all eight maps.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** Resulting maps from masked classifications on PS1 with subtraction of the residual signal using (A) six instead of eight classes; (B) a different random seed; and (C) ten classes and a slightly different mask from the run shown in Figure 2. The classes similar to the three largest classes shown in Figure 2 are highlighted in the same cyan and blue colors.DOI: http://dx.doi.org/10.7554/eLife.11182.007
+**Figure 2—figure supplement 3.:** Resulting maps from masked classifications on PS1 with subtraction of the residual signal using (A) six instead of eight classes; (B) a different random seed; and (C) ten classes and a slightly different mask from the run shown in Figure 2. The classes similar to the three largest classes shown in Figure 2 are highlighted in the same cyan and blue colors.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig2-figsupp4-v2.jpg)
 
-**Figure 2—figure supplement 4.:** (A) Three examples of experimental particle images. (B) Three examples of simulated particle images. In total, 50,000 images of particles from Class 1 and 50,000 images of particles from Class 2 were simulated (also see Methods). (C) Resulting maps for a masked classification with signal subtraction on the catalytic subunit using two references. (D) Distribution of the simulated particles in the resulting classes: 93% of the particles were clustered correctly.DOI: http://dx.doi.org/10.7554/eLife.11182.008
+**Figure 2—figure supplement 4.:** (A) Three examples of experimental particle images. (B) Three examples of simulated particle images. In total, 50,000 images of particles from Class 1 and 50,000 images of particles from Class 2 were simulated (also see Methods). (C) Resulting maps for a masked classification with signal subtraction on the catalytic subunit using two references. (D) Distribution of the simulated particles in the resulting classes: 93% of the particles were clustered correctly.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig3-v2.jpg)
 
-**Figure 3.:** (A) The reconstructed density for the three classes. Nicastrin is shown in green, Aph-1 in orange, PS1 in cyan, and Pen-2 in yellow. α-Helical density that is unaccounted for by the γ-secretase model is shown in purple. The same color code is used throughout this paper. (B) Schematic representation of the γ-secretase atomic models. TMs of PS1 are numbered. The active site aspartates are shown in red. The purple dashed box highlights TM2 of PS1, which is only ordered in class 1. The purple arrows indicate the orientation of TM6, which is different in each class.DOI: http://dx.doi.org/10.7554/eLife.11182.009
+**Figure 3.:** (A) The reconstructed density for the three classes. Nicastrin is shown in green, Aph-1 in orange, PS1 in cyan, and Pen-2 in yellow. α-Helical density that is unaccounted for by the γ-secretase model is shown in purple. The same color code is used throughout this paper. (B) Schematic representation of the γ-secretase atomic models. TMs of PS1 are numbered. The active site aspartates are shown in red. The purple dashed box highlights TM2 of PS1, which is only ordered in class 1. The purple arrows indicate the orientation of TM6, which is different in each class.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) FSC between the refined atomic models and the maps. (B) FSC between reconstructions from independently refined halves of the data sets.DOI: http://dx.doi.org/10.7554/eLife.11182.010
+**Figure 3—figure supplement 1.:** (A) FSC between the refined atomic models and the maps. (B) FSC between reconstructions from independently refined halves of the data sets.
+
+**Table 1.**
+ Refinement and model statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Class1</th>
+      <th>Class2</th>
+      <th>Class3</th>
+      <th>DAPT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Particles</td>
+      <td>63,873</td>
+      <td>79,263</td>
+      <td>66,720</td>
+      <td>51,366</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.4</td>
+      <td>1.4</td>
+      <td>1.4</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>0.7–3.2</td>
+      <td>0.7–3.2</td>
+      <td>0.7–3.2</td>
+      <td>0.6–2.8</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron dose (e-/Å−2)</td>
+      <td>40</td>
+      <td>40</td>
+      <td>40</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Map features</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Density TM2</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Cα-Cα distance D257– D385 (Å)</td>
+      <td>9.5</td>
+      <td>12.7</td>
+      <td>9.1</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <td>Conformation Pen-2</td>
+      <td>in</td>
+      <td>in</td>
+      <td>out</td>
+      <td>in</td>
+    </tr>
+    <tr>
+      <td>α-helical density</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>10,443</td>
+      <td>9,922</td>
+      <td>9,916</td>
+      <td>10,543</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>1,315</td>
+      <td>1,245</td>
+      <td>1,247</td>
+      <td>1,329</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>4.1</td>
+      <td>4.0</td>
+      <td>4.3</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor (Å2)</td>
+      <td>−100</td>
+      <td>−100</td>
+      <td>−130</td>
+      <td>−130</td>
+    </tr>
+    <tr>
+      <td>Fourier Shell Correlation</td>
+      <td>0.8236</td>
+      <td>0.8818</td>
+      <td>0.8050</td>
+      <td>0.8602</td>
+    </tr>
+    <tr>
+      <td>Rfactor</td>
+      <td>0.2917</td>
+      <td>0.3028</td>
+      <td>0.2816</td>
+      <td>0.3426</td>
+    </tr>
+    <tr>
+      <td>Rms deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bonds (Å)</td>
+      <td>0.0112</td>
+      <td>0.0095</td>
+      <td>0.0120</td>
+      <td>0.0093</td>
+    </tr>
+    <tr>
+      <td>Angles (°)</td>
+      <td>1.7352</td>
+      <td>1.6083</td>
+      <td>1.7922</td>
+      <td>1.6186</td>
+    </tr>
+    <tr>
+      <td>Model geometry</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>3.17</td>
+      <td>2.89</td>
+      <td>3.16</td>
+      <td>3.22</td>
+    </tr>
+    <tr>
+      <td>Clashscore (all atoms)</td>
+      <td>17.35</td>
+      <td>9.31</td>
+      <td>13.26</td>
+      <td>18.15</td>
+    </tr>
+    <tr>
+      <td>Good rotamers (%)</td>
+      <td>89.6</td>
+      <td>90.9</td>
+      <td>86.6</td>
+      <td>88.9</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>85.1</td>
+      <td>84.4</td>
+      <td>84.2</td>
+      <td>84.3</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>10.9</td>
+      <td>12.3</td>
+      <td>11.5</td>
+      <td>11.8</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>4.0</td>
+      <td>3.3</td>
+      <td>4.3</td>
+      <td>3.9</td>
+    </tr>
+  </tbody>
+</table>
 
 As a control for model bias we performed a cross-refinement, where the 10 Å low-pass filtered map from class 3 was used as initial reference for refinement of the particles assigned to class 1 (Figure 2—figure supplement 1). The initial reference did not influence convergence, as the cross-refinement yielded a map that was indistinguishable from the one obtained for class 1 in Figure 3. As a negative control, we performed masked classification with signal subtraction using eight classes on the Aph-1 subunit (Figure 2—figure supplement 2). The density for this subunit in the consensus map was very well defined, indicating that this subunit is much more rigid than PS1. In this case, the eight resulting classes attracted similar numbers of particles and all eight classes gave rise to very similar reconstructions. Finally, in a third control to test reproducibility we performed multiple different masked classifications on the PS1 subunit (Figure 2—figure supplement 3). We used different numbers of classes (six and ten instead of eight), a different random seed, or slightly different masks on PS1. In all cases, although the class distributions and the structural details varied, the resulting classes revealed similar differences for TM2 and TM6. In addition, we tested our method on a simulated set of images containing a mixture of projections from the maps of classes 1 and 2 in Figure 3. For these simulations we used similar signal-to-noise ratios, CTF parameters and orientational distributions as observed in our experimental data set (also see Methods). Masked classification with signal subtraction on the PS1 subunit correctly identified 93% of the simulated particles (Figure 2—figure supplement 4).
 
-Comparison of the three structures that were identified in the experimental data set using masked classification on the PS1 subunit (Table 1, Videos 1–2) explained observations made in the consensus structure. In the high-resolution structure, density for the cytoplasmic side of TM6 was weak, while density for TM2 was only visible after applying a 7 Å low-pass filter. This agrees with the observation that TM2 is only ordered in class 1, whereas TM6 adopts different orientations in all three classes. Control classifications with variations in the number of classes, random seeds or masks revealed even more variations in the conformation of TM6 (e.g. see Figure 2—figure supplement 3). Probably, TM6 adopts a wide range of conformations in solution and our classification merely provides discrete snapshots of a continuum.10.7554/eLife.11182.012Video 1.A morph between the atomic models from class 1 and 2 of the apo-state ensemble.DOI: http://dx.doi.org/10.7554/eLife.11182.01210.7554/eLife.11182.013Video 2.A morph between the atomic models from class 2 and 3 of the apo-state ensemble.DOI: http://dx.doi.org/10.7554/eLife.11182.013
+Comparison of the three structures that were identified in the experimental data set using masked classification on the PS1 subunit (Table 1, Videos 1–2) explained observations made in the consensus structure. In the high-resolution structure, density for the cytoplasmic side of TM6 was weak, while density for TM2 was only visible after applying a 7 Å low-pass filter. This agrees with the observation that TM2 is only ordered in class 1, whereas TM6 adopts different orientations in all three classes. Control classifications with variations in the number of classes, random seeds or masks revealed even more variations in the conformation of TM6 (e.g. see Figure 2—figure supplement 3). Probably, TM6 adopts a wide range of conformations in solution and our classification merely provides discrete snapshots of a continuum.
+
+![Video 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-media1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/11182/elife-11182-media2.mp4.jpg)
 
 Despite the fact that we did not focus our classification on Pen-2, we also observe significant variations in the conformation of Pen-2. Compared to classes 1 and 2, Pen-2 in class 3 has rotated away from PS1. This rotation concurs with a large conformational change in PS1, where TM3 and TM4 rotate in the same direction as Pen-2, TM5 and TM6 move towards the extracellular space, and TM6 rotates towards TM7 (see Video 2). The rotation and upward motion of TM6 positions the two catalytic aspartates within close enough distance of each other to potentially catalyze proteolysis (although we do not see density for the aspartate side chains).
 
-When the high-resolution consensus map was low-pass filtered to 7 Å, besides density for TM2 a second, unidentified rod-shaped density was also observed in the cavity formed by TM2, TM3 and TM5 of PS1 (
+When the high-resolution consensus map was low-pass filtered to 7 Å, besides density for TM2 a second, unidentified rod-shaped density was also observed in the cavity formed by TM2, TM3 and TM5 of PS1 (Bai et al., 2015a). A similar density that could not be attributed to any of the known γ-secretase components is also visible in classes 1 and 2, but not in class 3. The rod-shaped density is best defined in class 1, where it shows clear features of α-helical pitch. We modeled this density as an α-helix with an almost 90-degree kink at the extracellular side of the transmembrane domain (Figure 4). The kink of this helix is in close proximity of the loop of residues 240–244 of nicastrin, and then extends into the membrane through the cavity formed by TM2, TM3 and TM5 of PS1, until it disappears just before reaching the active site. The density closest to the active site looks less helical, and in this region we modeled it as an extended chain. The entire cavity in which the helix is present is lined with residues from TM2, TM3 and TM5 of PS1 that have been implicated in FAD. The cryo-EM density was not of sufficient quality to allow the identification of this helix. Mass spectrometry analysis suggested the presence of multiple proteins with a single predicted transmembrane helix in our sample, and the presence of three of these proteins was further confirmed by Western blot analysis (Figure 4—figure supplement 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig4-v2.jpg)
 
-**Figure 4.:** (A–C) Three different views of the map and the atomic model are shown. The kinked α-helix that is unaccounted for by the γ-secretase model is shown in purple. PS1 residues that interact with this helix are labeled.DOI: http://dx.doi.org/10.7554/eLife.11182.014
+**Figure 4.:** (A–C) Three different views of the map and the atomic model are shown. The kinked α-helix that is unaccounted for by the γ-secretase model is shown in purple. PS1 residues that interact with this helix are labeled.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) The lower part of a Coomassie blue-stained SDS-PAGE gel of the γ-secretase sample that was also used for cryo-EM imaging was cut out and submitted for mass spectrometric analysis. Besides known γ-secretase components (bold text), several proteins with a single predicted transmembrane helix were also identified. (B) Western blot analyses confirmed the presence of at least three of the identified proteins in the sample. Arrowheads indicate their expected molecular weights.DOI: http://dx.doi.org/10.7554/eLife.11182.015
+**Figure 4—figure supplement 1.:** (A) The lower part of a Coomassie blue-stained SDS-PAGE gel of the γ-secretase sample that was also used for cryo-EM imaging was cut out and submitted for mass spectrometric analysis. Besides known γ-secretase components (bold text), several proteins with a single predicted transmembrane helix were also identified. (B) Western blot analyses confirmed the presence of at least three of the identified proteins in the sample. Arrowheads indicate their expected molecular weights.
 
-## Binding of DAPT rigidifies the catalytic subunit
+### Binding of DAPT rigidifies the catalytic subunit
 
-In order to gain further insights into the plasticity of the catalytic subunit, we also performed cryo-EM single-particle analysis on γ-secretase in complex with DAPT (
+In order to gain further insights into the plasticity of the catalytic subunit, we also performed cryo-EM single-particle analysis on γ-secretase in complex with DAPT (Figure 5, Figure 5—figure supplement 1). Despite collecting a comparable amount of micrographs as we did for the apo-state complex, 2D and 3D classification approaches selected less than 20% of the complexes as suitable for high-resolution reconstruction. This contrasts with a selection of approximately 40% for the apo-state data set. Because the overall appearance of the micrographs for both data sets was similar, it could be that either DAPT or the dimethyl sulfoxide (DMSO) in which DAPT was dissolved interfered with the structural integrity of the complex. Nonetheless, from the selected 51,366 particles we calculated a 4.2 Å map, which was of sufficient quality to build a reliable main-chain model, although the density for many side chains was less clear. For these data, masked classifications with signal subtraction revealed only a single class with good density for the transmembrane helices, and this class did not show any helical-like density in the cavity between TM2, TM3 and TM5 of PS1 (Figure 5—figure supplement 2).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig5-v2.jpg)
 
-**Figure 5.:** (A) The reconstructed density for the entire complex. Density attributed to DAPT is shown in blue. (B) Schematic representation of the atomic model. TMs of PS1 are numbered. (C) Two approximately orthogonal close-ups of the DAPT-binding site. Residues that interact with DAPT, as well as His163 and Glu280 are labeled.DOI: http://dx.doi.org/10.7554/eLife.11182.016
+**Figure 5.:** (A) The reconstructed density for the entire complex. Density attributed to DAPT is shown in blue. (B) Schematic representation of the atomic model. TMs of PS1 are numbered. (C) Two approximately orthogonal close-ups of the DAPT-binding site. Residues that interact with DAPT, as well as His163 and Glu280 are labeled.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A) FSC curves of the refined atomic model versus the map it was refined against (in black); of a model refined in the first of the two independently refined half-maps versus that same map (in red); and of a model refined in the first of the two independent half-maps versus the second half-map (in green). (B) FSC between the two independently refined half-maps.DOI: http://dx.doi.org/10.7554/eLife.11182.017
+**Figure 5—figure supplement 1.:** (A) FSC curves of the refined atomic model versus the map it was refined against (in black); of a model refined in the first of the two independently refined half-maps versus that same map (in red); and of a model refined in the first of the two independent half-maps versus the second half-map (in green). (B) FSC between the two independently refined half-maps.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** Using either masks around the PS1 subunit (top row) or the entire transmembrane domain (bottom row), masked classification with signal subtraction revealed only a single majority class (pink) that showed good density for the transmembrane helices (corresponding to 23% and 26% of the particles, respectively). In these maps, no helical-like density was observed in the cavity between TM2, TM3 and TM5 of PS1DOI: http://dx.doi.org/10.7554/eLife.11182.018
+**Figure 5—figure supplement 2.:** Using either masks around the PS1 subunit (top row) or the entire transmembrane domain (bottom row), masked classification with signal subtraction revealed only a single majority class (pink) that showed good density for the transmembrane helices (corresponding to 23% and 26% of the particles, respectively). In these maps, no helical-like density was observed in the cavity between TM2, TM3 and TM5 of PS1
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig5-figsupp3-v2.jpg)
 
-**Figure 5—figure supplement 3.:** Two orthogonal views of a cartoon representation of the transmembrane domain of the DAPT-bound structure are shown. Those parts of the atomic model that were built in this structure but were disordered in the high-resolution consensus structure of the apo-state are shown in red. The density attributed to the DAPT molecule is shown in blue.DOI: http://dx.doi.org/10.7554/eLife.11182.019
+**Figure 5—figure supplement 3.:** Two orthogonal views of a cartoon representation of the transmembrane domain of the DAPT-bound structure are shown. Those parts of the atomic model that were built in this structure but were disordered in the high-resolution consensus structure of the apo-state are shown in red. The density attributed to the DAPT molecule is shown in blue.
 
 ![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig5-figsupp4-v2.jpg)
 
-**Figure 5—figure supplement 4.:** Two orthogonal views of an overlay of the DAPT-bound PS1 structure (in cyan) and class 1 of the apo-state ensemble (in grey) are shown. The catalytic aspartates in the DAPT-bound structure are shown in red.DOI: http://dx.doi.org/10.7554/eLife.11182.020
+**Figure 5—figure supplement 4.:** Two orthogonal views of an overlay of the DAPT-bound PS1 structure (in cyan) and class 1 of the apo-state ensemble (in grey) are shown. The catalytic aspartates in the DAPT-bound structure are shown in red.
 
 Upon inhibitor binding, there are no prominent changes in Aph-1 and nicastrin, and Pen-2 is in a very similar conformation as in classes 1 and 2 of the apo-state ensemble. The largest changes occur in PS1, which is much better ordered in the complex with DAPT. TM2 and its linkers with TM1 and TM3, the cytoplasmic ends of TM3 and TM6, and part of the long linker between TM6-7 all become ordered upon DAPT binding (Figure 5—figure supplement 3). The linker between TM1 and TM2 sticks partially into the transmembrane region to fold back out again to connect to TM2. This helix contains 32 residues and runs at an angle of approximately 40 degrees with the plane of the membrane. At the cytoplasmic side of the membrane a short linker connects TM2 to TM3, and TM3 extends 7 residues longer than in the apo-state. Interestingly, apart from local changes in the cytoplasmic sides of TM2 and TM6, the overall conformation of PS1 in the DAPT-bound structure is very similar to class 1 from the apo-state ensemble, and the two structures overlap with a root mean squared deviation (r.m.s.d.) of 0.4 Å between 265 Cα atom pairs (Figure 5—figure supplement 4).
 
@@ -133,15 +365,15 @@ Our analysis of the structure in complex with DAPT provides complementary insigh
 
 TM2 of PS1 is well ordered in both the DAPT-bound structure and in class 1 of the apo-state, whereas it is invisible in the other apo-state classes. This helix only seems to be ordered when something is bound in the large cavity that is lined with FAD-derived mutations between TM2, TM3 and TM5. In the inhibitor-bound structure this cavity contains the density that we attribute to DAPT, while density for a kinked α-helix is visible in class 1 of the apo-state. Although the density for the kinked α-helix was not of sufficient quality for unambiguous identification, mass spectrometry and Western blot analyses suggest that a mixture of different proteins with a single transmembrane helix may be present in our sample. Four of the proteins that were identified by mass spectrometry had also previously been observed to co-purify with γ-secretase: TMP21/p23, p24a, Vamp-8 and Sec22B (Wakabayashi et al., 2009). TMP21 was also observed to be a component of the γ-secretase complex that acts as a negative regulator of γ-cleavage, while leaving ε-cleavage intact (Chen et al., 2006).
 
-We hypothesize that the kinked α-helix in our structure arises from a mixture of co-purified proteins in our sample that bind to the γ-secretase complex in a manner that mimics substrate binding. This hypothesis is in good agreement with previous biochemical observations about an 'initial substrate-binding site' that is distinct from the active site (
+We hypothesize that the kinked α-helix in our structure arises from a mixture of co-purified proteins in our sample that bind to the γ-secretase complex in a manner that mimics substrate binding. This hypothesis is in good agreement with previous biochemical observations about an 'initial substrate-binding site' that is distinct from the active site (Beher et al., 2003; Das et al., 2003; Esler et al., 2002; Tian et al., 2002). Photolabeling experiments suggest that the initial substrate-binding site partially overlaps with the DAPT-binding site (Kornilova et al., 2003; Morohashi et al., 2006), and mutational analysis identified TM2 and TM6 to be involved in substrate binding (Watanabe et al., 2010). Experiments with photoaffinity probes based on α-helical substrate-like inhibitors showed that DAPT could not displace a 10-residue long helical probe, suggesting spatially separated binding sites of the substrate and the inhibitor. This however was not the case for a 13-residue long peptide, for which addition of DAPT led to a strong reduction in photolabeling. Because this peptide also prevented labeling of a transition-state mimicking photoprobe, the longer α-helical probe probably also interacts with the active site (Kornilova et al., 2005). Our hypothesis explains these data well. A superposition of the kinked α-helix on top of the DAPT structure shows that after the kink, the α-helix extends for 10 residues into the transmembrane domain, before its four C-terminal residues overlap with the DAPT-binding site and almost reach the active site (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig6-v2.jpg)
 
-**Figure 6.:** (A) A superposition of the kinked α-helix from class 1 and the DAPT-density and atomic model for PS1 from the DAPT-bound structure. The lower end of the kinked helix and the DAPT density overlap. The recently identified residues that interact with a phenylimidazole-like γ-secretase modulator are shown with spheres. (B) Ensemble of NMR-models for an Aβ42 peptide in an aqueous solution of fluorinated alcohols. (C) Hypothetical model for how APP (one of the NMR models is shown in pink) binds to γ-secretase.DOI: http://dx.doi.org/10.7554/eLife.11182.021
+**Figure 6.:** (A) A superposition of the kinked α-helix from class 1 and the DAPT-density and atomic model for PS1 from the DAPT-bound structure. The lower end of the kinked helix and the DAPT density overlap. The recently identified residues that interact with a phenylimidazole-like γ-secretase modulator are shown with spheres. (B) Ensemble of NMR-models for an Aβ42 peptide in an aqueous solution of fluorinated alcohols. (C) Hypothetical model for how APP (one of the NMR models is shown in pink) binds to γ-secretase.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/11182/elife-11182-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** APP and proteins that were identified by mass spectrometry to be present in the cryo-EM sample contain a large, positively charged residue (boxed) next to the N-terminus of their predicted transmembrane helix (indicated with a purple cylinder). TMP21 is the product of the TMED10 gene; P24a is the product of the TMED2 gene. The products of the TMED1, TMED4, TMED9, VAMP2 and VAMPB genes were observed after additional mass-spectrometric analysis of specific gel bands.DOI: http://dx.doi.org/10.7554/eLife.11182.022
+**Figure 6—figure supplement 1.:** APP and proteins that were identified by mass spectrometry to be present in the cryo-EM sample contain a large, positively charged residue (boxed) next to the N-terminus of their predicted transmembrane helix (indicated with a purple cylinder). TMP21 is the product of the TMED10 gene; P24a is the product of the TMED2 gene. The products of the TMED1, TMED4, TMED9, VAMP2 and VAMPB genes were observed after additional mass-spectrometric analysis of specific gel bands.
 
 Furthermore, the NMR structure of the Aβ42 peptide in an aqueous solution of fluorinated alcohols shows a strikingly similar 90-degree kink in its α-helical structure, which is positioned right after Lys699 (Figure 6B). A superposition of the NMR model on the kinked α-helix in our structure places its N-terminus flat on the extracellular side of the membrane, while the cleavage site that would result in the formation of Aβ42 peptides is placed in close proximity to the active site (Figure 6C). Interestingly, all the proteins that were both identified in our sample by mass spectrometry and that had also previously been observed to co-purify with γ-secretase (Wakabayashi et al., 2009) contain either an arginine or a lysine just before their predicted transmembrane helix (Figure 6—figure supplement 1). It is therefore tempting to speculate that the large, positively charged residue together with the kink in the α-helix act as an anchor to delimit the cleavage position in the substrate. This would explain why mutations in Lys699 have a marked effect on the length of the Aβ cleavage products (Kukar et al., 2011). In addition, the kink in the α-helix is positioned next to the recently mapped binding site of a phenylimidazole-like γ-secretase modulator (highlighted with spheres in Figure 6A), which could explain how this modulator affects cleavage in the distant active site through changes in the substrate conformation (Takeo et al., 2014). It could also explain why replacement of Lys699 or increasing the positive charge at Gly700 has been observed to block or attenuate the effects of γ-secretase modulators (Jung et al., 2014).
 
@@ -149,11 +381,11 @@ In conclusion, we show that masked cryo-EM image classification combined with th
 
 ## Materials and methods
 
-## Electron microscopy
+### Electron microscopy
 
 The sample preparation procedure and imaging conditions for the apo-state data were described previously (Bai et al., 2015a). To prepare the complex with DAPT, we incubated 20 μl of the same γ-secretase sample for 20 min at 4°C with 0.2 μl of a 10 mM solution of DAPT in 100% DMSO (yielding an approximate concentration of 4 μM γ-secretase, 100 μM DAPT and 1% DMSO). Subsequently, aliquots of 3 μl were applied to previously glow-discharged holey carbon grids (Quantifoil Au R1.2/1.3, 300 mesh), and flash frozen in liquid ethane using an FEI Vitrobot. The imaging conditions were kept identical as for the apo-state data. In brief, zero-energy loss images were recorded manually on an FEI Titan Krios microscope at 300 kV, using a slit width of 20 eV on a GIF-Quantum energy filter. A Gatan K2-Summit detector was used in super-resolution counting mode at a calibrated magnification of 35,714× (yielding a pixel size of 1.4 Å), and a dose rate of ~2.5 electrons/Å2/s (~5 electrons/pixel/s). Exposures of 16 s were dose-fractionated into 20 movie frames. Defocus values in the DAPT-bound data set ranged from 0.6–2.8 µm.
 
-## Image processing
+### Image processing
 
 Similar image processing procedures were employed for the apo-state and the DAPT-bound data sets. We used MOTIONCORR (Li et al., 2013) for whole-frame motion correction, CTFFIND4 (Rohou and Grigorieff) for estimation of the contrast transfer function parameters, and RELION-1.4 (Scheres, 2012) for all subsequent steps. References for template-based particle picking (Scheres, 2015) were obtained from 2D class averages that were calculated from a manually picked subset of the micrographs. A 20 Å low-pass filter was applied to these templates to limit model bias. All low-pass filters employed were cosine-shaped and fell to zero within 2 reciprocal pixels beyond the specified frequency. To discard false positives from the picking, we used initial runs of 2D and 3D classification to remove bad particles from the data. The selected particles were then submitted to 3D auto-refinement, particle-based motion correction and radiation-damage weighting (Scheres, 2014). The resulting 'polished particles' were used for masked classification with subtraction of the residual signal as described in the main text, and the original particle images from the resulting classes were submitted to a second round of 3D auto-refinement. All 3D classifications and 3D refinements were started from a 40 Å low-pass filtered version of the high-resolution consensus structure. Fourier Shell Coefficient (FSC) curves were corrected for the effects of a soft mask on the FSC curve using high-resolution noise substitution (Chen et al., 2013). Reported resolutions are based on gold-standard refinement procedures and the corresponding FSC=0.143 criterion (Scheres and Chen, 2012). Prior to visualization, all density maps were corrected for the modulation transfer function (MTF) of the detector, and then sharpened by applying a negative B-factor that was estimated using automated procedures (Rosenthal and Henderson, 2003).
 
@@ -161,7 +393,7 @@ For the apo-state data set, the template-based algorithm picked 1.8 million part
 
 For the DAPT-bound state, 1.4 million particles were picked from 2,206 micrographs, and initial classification selected 271,361 particles. After particle polishing, this subset gave rise to a 4.3 Å resolution map with relatively poor density in the transmembrane domain. Application of the masked classification procedure with residual signal subtraction into eight classes identified a single class with good density. After 3D auto-refinement, the corresponding 51,366 particles gave a map with a resolution of 4.2 Å, which showed improved density in the transmembrane domain.
 
-## Instructions for masked classification with subtraction of residual signal
+### Instructions for masked classification with subtraction of residual signal
 
 To expedite application of the modified classification procedures proposed in this paper by others, we describe these steps in more detail. The mask for masked classification on the PS1 subunit (the red part of the signal in Figure 1) was generated by converting the atomic model of the PS1 subunit from the high-resolution consensus structure (including a poly-alanine model for TM2) into a density map using the program e2pdb2mrc.py from EMAN2 (Tang et al., 2007). This map was then converted into a soft-edged mask using relion_mask_create. A mask around the entire γ-secretase complex, including the belt of fuzzy density from the amphipols, was generated using standard auto-masking from the RELION post-processing procedure. Subtraction of the PS1 mask from the mask of the entire complex using relion_image_handler yielded a mask containing only nicastrin, Aph-1, Pen-2 and the amphipol belt (the yellow part of the signal in Figure 1). This mask was applied to the 3.5 Å map that was calculated from a consensus refinement using all 400 thousand selected apo-state particles. The resulting masked map (yellow.mrc) was used for subtraction of the signal from the experimental particles as outlined in Figure 1. The corresponding program has been available in RELION from release 1.3 onwards and is used as follows:
 
@@ -169,7 +401,7 @@ relion_project --i yellow.mrc --subtract_exp --angpix 1.4 --ctf --ang Refine3D/r
 
 The Refine3D/run1_data.star file was produced by the consensus refinement and contains the orientation and CTF parameters of all 400 thousand particles. The command generates a new particle image stack called newparticles.mrcs and a new STAR-file with all relevant metadata called newparticles.star. The latter is used directly as input in the masked classification run, which may be launched from the RELION GUI using standard inputs, and providing the mask around the PS1 subunit as 'Reference mask' on the Optimisation tab. Because of the small size of the PS1 subunit, we chose to set the 'Perform image alignment' option on the Sampling tab to 'No'.
 
-## Simulation of particle images
+### Simulation of particle images
 
 To generate the simulated particle images described in Figure 2—figure supplement 4, we also used the relion_project program:
 
@@ -177,14 +409,14 @@ relion_project --i Refine3D/run1_class001.mrc --osimulated_run1 --ctf --angpix 1
 
 By providing the data.star file (option --ang) and final map (option --i) from the refinements of the classes described in Figure 3, we generated simulated particles with similar orientational distributions and CTF parameters as those observed for the experimental data. By using the estimated power spectra of the noise for the experimental images (as provided through the --model_noise option), also the simulated spatial frequency-dependent signal-to-noise ratios are similar to those in the experimental data.
 
-## Atomic modeling
+### Atomic modeling
 
 Model building for the three apo-state classes and the DAPT-bound structure was started from the coordinates that were built in our 3.4 Å apo-state consensus structure (PDB ID: 5A63). Nearly all of the residues from Aph-1 and nicastrin fitted well into the four maps, but parts of PS1 and Pen-2 had to be manually adjusted in COOT (Emsley et al., 2010). Building of TM2 and the lower part of TM6 in PS1 was started from idealized α-helices, and sequence assignment of TM2 was guided by comparison with the structure of PSH (PDB ID: 4HYC) and by recognizable side chain features for Phe and Tyr residues. All models were refined in REFMAC (Murshudov et al., 1997), using modified procedures for cryo-EM maps (Brown et al., 2015) and secondary structure restraints generated by ProSMART (Nicholls et al., 2014). Overfitting of the atomic model for the DAPT-bound structure was monitored by refining the model in one of the half-maps from the gold-standard refinement approach, and testing the resulting model against the other half-map (Amunts et al., 2014). The same relative weight between the EM-density and geometric terms that resulted in good fits to the density without overfitting for the DAPT-bound structure was used for the final refinement of all four structures.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Protein samples (5 μg purified γ-secretase) were resolved by sodium dodecyl sulphate polyacrylamide gel electrophoresis (SDS-PAGE) on 4–12% Bis-Tris gels (Life Technologies, Carlsbad, CA) using MES running buffer (Formedium, UK) for 32 min at 200V. The gel was stained with InstantBlue protein stain (Expedeon, San Diego, CA) for direct protein visualization. Gel slices were prepared for mass spectrometric analysis using the Janus liquid handling system (PerkinElmer, UK). Briefly, the excised protein gel pieces were placed in a well of a 96-well microtitre plate and destained with 50% v/v acetonitrile and 50 mM ammonium bicarbonate, reduced with 10 mM DTT, and alkylated with 55 mM iodoacetamide. After alkylation, proteins were digested with 6 ng/µl trypsin (Promega, UK) overnight at 37°C. The resulting peptides were extracted in 2% v/v formic acid, 2% v/v acetonitrile. The digest was analysed by nano-scale capillary LC-MS/MS using an Ultimate U3000 HPLC (ThermoScientific Dionex, San Jose, USA) to deliver a flow of approximately 300 nl/min. A C18 Acclaim PepMap100 5 µm, 100 µm x 20 mm nanoViper (ThermoScientific Dionex, San Jose, USA), trapped the peptides prior to separation on a C18 Reprosil-pur 3 µm, 75 µm x 105 mm PicoCHIP (New Objectives, MA, USA). Peptides were eluted with a gradient of acetonitrile. The analytical column outlet was directly interfaced with a hybrid linear quadrupole fourier transform mass spectrometer (LTQ Orbitrap XL, ThermoScientific, San Jose, USA). Data-dependent analysis was carried out, using a resolution of 30,000 for the full MS spectrum, followed by five MS/MS spectra in the linear ion trap. LC-MS/MS data were then searched against a protein database (UniProt KB) using the Mascot search engine programme (Matrix Science, UK) (Perkins et al., 1999). Database search parameters were set with a precursor tolerance of 10 ppm and a fragment ion mass tolerance of 0.8 Da. One missed enzyme cleavage was allowed and variable modifications for oxidized methionine, carbamidomethyl cysteine, pyroglutamic acid, phosphorylated serine, threonine and tyrosine were included. MS/MS data were validated using the Scaffold programme (Proteome Software Inc., USA) (Keller et al., 2002). All data were additionally interrogated manually.
 
-## Western blotting
+### Western blotting
 
 Protein samples (1.6 μg purified γ-secretase) were resolved by SDS-PAGE on 4–12% Bis-Tris gels (Life Technologies) using MES running buffer (Formedium) for 32 min at 200V. The gel was transferred to Immobilon-P 0.45 µm PVDF membrane (Millipore, Germany) in 1X transfer buffer (Life Technologies) supplemented with 20% methanol for 1 hr at 65V. The membrane was subsequently blocked for 1 hr at room temperature in 5% bovine serum albumin/Tris-buffered saline and Tween-20 (TBST) prior to incubation with indicated primary antibodies (anti-TMP21, ab133771, 1:500, Abcam, UK; anti-VAMP-8, ab76021, 1:5000 Abcam, UK; anti-Miner1, 13318-AP, 1:500, Proteintech, UK) overnight at 4°C. The membrane was washed with TBST and incubated with horseradish peroxidase-linked goat anti-rabbit IgG (NA934VS, GE Healthcare) for 1 hr at room temperature. The membrane was washed extensively with TBST and target proteins detected on FUJI Medical X-Ray Super RX film (100 NIF 18 x 24, Fujifilm, UK) using Amersham ECL Western Blotting Detection Reagent (GE Healthcare, UK).

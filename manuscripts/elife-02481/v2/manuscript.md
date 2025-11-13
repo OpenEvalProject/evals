@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.02481.001 The hexameric AAA+ chaperone ClpB reactivates aggregated proteins in cooperation with the Hsp70 system. Essential for disaggregation, the ClpB middle domain (MD) is a coiled-coil propeller that binds Hsp70. Although the ClpB subunit structure is known, positioning of the MD in the hexamer and its mechanism of action are unclear. We obtained electron microscopy (EM) structures of the BAP variant of ClpB that binds the protease ClpP, clearly revealing MD density on the surface of the ClpB ring. Mutant analysis and asymmetric reconstructions show that MDs adopt diverse positions in a single ClpB hexamer. Adjacent, horizontally oriented MDs form head-to-tail contacts and repress ClpB activity by preventing Hsp70 interaction. Tilting of the MD breaks this contact, allowing Hsp70 binding, and releasing the contact in adjacent subunits. Our data suggest a wavelike activation of ClpB subunits around the ring. DOI: http://dx.doi.org/10.7554/eLife.02481.001
+The hexameric AAA+ chaperone ClpB reactivates aggregated proteins in cooperation with the Hsp70 system. Essential for disaggregation, the ClpB middle domain (MD) is a coiled-coil propeller that binds Hsp70. Although the ClpB subunit structure is known, positioning of the MD in the hexamer and its mechanism of action are unclear. We obtained electron microscopy (EM) structures of the BAP variant of ClpB that binds the protease ClpP, clearly revealing MD density on the surface of the ClpB ring. Mutant analysis and asymmetric reconstructions show that MDs adopt diverse positions in a single ClpB hexamer. Adjacent, horizontally oriented MDs form head-to-tail contacts and repress ClpB activity by preventing Hsp70 interaction. Tilting of the MD breaks this contact, allowing Hsp70 binding, and releasing the contact in adjacent subunits. Our data suggest a wavelike activation of ClpB subunits around the ring.
 
 ## Introduction
 
@@ -34,31 +34,31 @@ While some other members of the Hsp100 family have been crystallised in their ol
 
 The MD confers unique disaggregase ability to ClpB/Hsp104 (Kedzierska et al., 2003; Mogk et al., 2003) and is required for species-specific cooperation with the DnaK-DnaJ(DnaKJ)/Hsp70-Hsp40 system (Sielaff and Tsai, 2010; Miot et al., 2011; Seyffer et al., 2012). A direct interaction between the ClpB MD and DnaK has been shown by NMR spectroscopy and site-specific crosslinking and involves the motif 2 tip of the MD and the ATPase domain of DnaK (Seyffer et al., 2012; Rosenzweig et al., 2013). The MD acts to repress ClpB disaggregase activity, and DnaK binding relieves this repression (Oguchi et al., 2012; Seyffer et al., 2012). Point mutations in the MD show that interactions between motif 2 and AAA-1 are critical for regulating ATPase and disaggregase activities (Haslberger et al., 2007; Oguchi et al., 2012; Seyffer et al., 2012; Lipinska et al., 2013). Thus, the MD plays an essential role in coupling Hsp70 interaction to ATPase regulation and substrate disaggregation in ClpB/Hsp104. It is therefore important to understand its structural role in ClpB/Hsp104 hexamers and in the context of the ClpB-DnaKJ bi-chaperone machinery.
 
-To address the ambiguities in domain arrangement and to elucidate the working principle of the MD, we performed single particle EM studies of ClpB under conditions where its orientation could be determined more reliably than in previous studies. We used BAP (ClpB with the ClpA tripeptide for ClpP binding), a chimera engineered to bind the ClpP protease via the replacement of a C-terminal ClpB segment with the ClpP binding region of ClpA (
+To address the ambiguities in domain arrangement and to elucidate the working principle of the MD, we performed single particle EM studies of ClpB under conditions where its orientation could be determined more reliably than in previous studies. We used BAP (ClpB with the ClpA tripeptide for ClpP binding), a chimera engineered to bind the ClpP protease via the replacement of a C-terminal ClpB segment with the ClpP binding region of ClpA (Weibezahn et al., 2004). This construct has been extensively used to study the ClpB disaggregation mechanism by monitoring substrate proteolysis after delivery to ClpP (Weibezahn et al., 2004; Haslberger et al., 2008; Tessarz et al., 2008; Mizuno et al., 2012; Rosenzweig et al., 2013; Figure 1A). Therefore, BAP is suitable for structural studies and has allowed us to obtain maps with visible MD densities that shed light on its regulatory mechanisms.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic of the complex showing the threading of a polypeptide. ClpB domains are in yellow, N-terminus; red/orange, AAA-1 domain; green, MD and blue/cyan, AAA-2 domain. ClpP is in grey. (B) Negative stain EM image (left panel), class averages of 2:2 BAP-ClpP (upper right panel) and cut out 1:1 BAP-ClpP particles (bottom right panel). Scale bars are 150 Å. (C) BAP-ClpP structure with a fitted ClpB monomer (left) and central slice with fitted atomic coordinates (right). (D) AAA-1 and AAA-2 layers. (E) Two adjacent AAA-1 domains from the hexameric fit viewed in the plane of the ring. One monomer is in colour and the other in grey. Residues involved in engineered disulphide bonds are shown as spheres. Residues involved in intermolecular cross-links are labeled. The separation between cross-linking Cα pairs ranges from 8 to 14 Å.DOI: http://dx.doi.org/10.7554/eLife.02481.003
+**Figure 1.:** (A) Schematic of the complex showing the threading of a polypeptide. ClpB domains are in yellow, N-terminus; red/orange, AAA-1 domain; green, MD and blue/cyan, AAA-2 domain. ClpP is in grey. (B) Negative stain EM image (left panel), class averages of 2:2 BAP-ClpP (upper right panel) and cut out 1:1 BAP-ClpP particles (bottom right panel). Scale bars are 150 Å. (C) BAP-ClpP structure with a fitted ClpB monomer (left) and central slice with fitted atomic coordinates (right). (D) AAA-1 and AAA-2 layers. (E) Two adjacent AAA-1 domains from the hexameric fit viewed in the plane of the ring. One monomer is in colour and the other in grey. Residues involved in engineered disulphide bonds are shown as spheres. Residues involved in intermolecular cross-links are labeled. The separation between cross-linking Cα pairs ranges from 8 to 14 Å.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) BAP and ClpP form a stable complex during HX experiments causing stabilization of BAP. Protein samples preincubated with ATPγS (BAP, BAP-ClpP) were diluted 20-fold into D2O buffer and incubated for 60 s before quenching the proton-deuteron exchange reaction. The mass of full length BAP after deuteron incorporation was determined. Complex formation with ClpP protects 30 amide protons in BAP from exchange. (B) ClpB, BAP and BAP-ClpP were incubated with ATPγS and HX values of peptic peptides were determined after 60 s. Peptide 746–754 (*, KKIFRPEFI) includes the ClpP-binding loop of ClpA and is only present in BAP. Relative (%) deuterium incorporation levels are given for each peptide.DOI: http://dx.doi.org/10.7554/eLife.02481.004
+**Figure 1—figure supplement 1.:** (A) BAP and ClpP form a stable complex during HX experiments causing stabilization of BAP. Protein samples preincubated with ATPγS (BAP, BAP-ClpP) were diluted 20-fold into D2O buffer and incubated for 60 s before quenching the proton-deuteron exchange reaction. The mass of full length BAP after deuteron incorporation was determined. Complex formation with ClpP protects 30 amide protons in BAP from exchange. (B) ClpB, BAP and BAP-ClpP were incubated with ATPγS and HX values of peptic peptides were determined after 60 s. Peptide 746–754 (*, KKIFRPEFI) includes the ClpP-binding loop of ClpA and is only present in BAP. Relative (%) deuterium incorporation levels are given for each peptide.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Class averages of BAP-ClpP. The arrows indicate the N-terminal (yellow), AAA-1 (red), AAA-2 (blue) and ClpP (black) tiers. (B) Eigen images showing that high variance is localized in the N-terminal ring. Scale bars are 50 Å.DOI: http://dx.doi.org/10.7554/eLife.02481.005
+**Figure 1—figure supplement 2.:** (A) Class averages of BAP-ClpP. The arrows indicate the N-terminal (yellow), AAA-1 (red), AAA-2 (blue) and ClpP (black) tiers. (B) Eigen images showing that high variance is localized in the N-terminal ring. Scale bars are 50 Å.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** For each sample, FSC curves of C6 and C1 reconstructions are plotted together. The C1 curves show lower resolution in each pair. Example class averages are shown in the left column with corresponding re-projections on the right. Scale bar is 50 Å. FSC plots were deposited in the 3D-EM database EM (www.emdatabank.org).DOI: http://dx.doi.org/10.7554/eLife.02481.006
+**Figure 1—figure supplement 3.:** For each sample, FSC curves of C6 and C1 reconstructions are plotted together. The C1 curves show lower resolution in each pair. Example class averages are shown in the left column with corresponding re-projections on the right. Scale bar is 50 Å. FSC plots were deposited in the 3D-EM database EM (www.emdatabank.org).
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** E. coli ClpB and EM based model.(A) Superimposed chains of E. coli ClpB and T. thermophilus crystal structures. For clarity, the N-terminus is not shown. (B) Comparison between the ClpB coordinates fitted into the EM maps (in colours) and the ClpB crystal structure (grey). In the EM model the MD is more tilted than in the crystal structures. AAA-2 is rotated by ∼25°, and the N-terminus is rotated by 45° in the plane of the ring.DOI: http://dx.doi.org/10.7554/eLife.02481.007
+**Figure 1—figure supplement 4.:** (A) Superimposed chains of E. coli ClpB and T. thermophilus crystal structures. For clarity, the N-terminus is not shown. (B) Comparison between the ClpB coordinates fitted into the EM maps (in colours) and the ClpB crystal structure (grey). In the EM model the MD is more tilted than in the crystal structures. AAA-2 is rotated by ∼25°, and the N-terminus is rotated by 45° in the plane of the ring.
 
 ## Results
 
-## Three-dimensional (3D) reconstruction of negatively stained BAP-ClpP shows clear density for the middle domain
+### Three-dimensional (3D) reconstruction of negatively stained BAP-ClpP shows clear density for the middle domain
 
 Using the BAP complex facilitates orientation determination in EM reconstruction, as previously observed for ClpA-ClpP (Effantin et al., 2010). Side views of the elongated BAP-ClpP complex are easily recognisable (Figure 1B) whereas in 2D projections of ClpB alone, which has a globular shape, it is hard to distinguish side from tilted views. By restricting the dataset to side views the angle assignment is more reliable, and these views are sufficient to generate the full 3D structure (Figure 1C). Using H/D exchange experiments, which report on the solvent accessibility and structural flexibility of amide hydrogens, we found that BAP, either alone or bound to ClpP, displays the same protection pattern as ClpB, implying the same MD conformation (Figure 1—figure supplement 1).
 
@@ -66,7 +66,119 @@ The BAP-ClpP complexes formed by mixing BAP and ClpP at a 1:1 molar ratio of hex
 
 The BAP hexamer has overall outer dimensions of ∼150 × 100 Å, similar to previous structures of ClpB/Hsp104 (Parsell et al., 1994; Lee et al., 2003; Wendler et al., 2007, 2009; Figure 1C). It encloses a ∼30 Å wide central channel, comparable in size to that in the crystal structure of ClpC (Wang et al., 2011; Figure 1C,D). In the reconstruction it is possible to identify regions accounting for all the domains, such as L-shaped densities for the AAA+ domains and a rod-like density for the coiled-coil MD.
 
-To interpret the domain interactions, we fitted ClpB atomic coordinates into the EM density. We determined the crystal structure of an ND truncation of E. coli ClpB (residues 159 to 858; E279A/E432A/E678A mutation; Table 1). The subunit structure is very similar to that of T. thermophilus ClpB (Figure 1—figure supplement 4). Since none of the available crystal structure conformations fit in the EM map, domains were fitted as separate rigid bodies connected at hinge regions (Figure 1C). For the AAA-1 ring, it was possible to build a hexamer model based on the crystal structure of hexameric ClpC (Wang et al., 2011) (PDB code 3PXG), a homologue that also displays disaggregation activity in vitro (Schlothauer et al., 2003). The resulting ClpB AAA-1 hexamer model was automatically docked into the AAA-1 layer as a rigid body (Figure 1D). This strategy was chosen over the fitting of a single subunit followed by hexamerisation because it is expected to provide a more accurate picture of the subunit interface, which is difficult to determine at the resolution of our EM map. However, this approach did not work for the AAA-2 layer since the ClpB AAA-2 hexamer based on the ClpC crystal structure was not compatible with the density. In this case a ∼40° tilt of the monomers into the plane of the ring was required to obtain the optimal fit, which resembles the pseudo-atomic model of the homologue ClpA AAA-2 ring (Effantin et al., 2010). Coordinates of the E. coli ClpB ND (residues 1 to 148) were obtained from the PDB (1KHY). A single N domain was fitted manually, maintaining the connection to AAA-1, and then hexamerised by applying symmetry in Chimera (Pettersen et al., 2004).10.7554/eLife.02481.008Table 1.X-ray data collection and refinement statisticsDOI: http://dx.doi.org/10.7554/eLife.02481.008ProteinClpB E279A/E432A/E678A (SeMet) + ATPWavelength (Å)0.9794Space groupP65Unit cell (Å,°)127.34, 127.34, 119.86, 90, 90, 120Molecules1Resolution (Å)81.15–3.50 (3.69–3.50)Reflections measured202965Unique reflections14024Rmerge8.8 (53.2)Rpim3.0 (14.9)I/σI16.8 (5.4)Completeness (%)99.9 (100)Redundancy14.5 (14.8)Rwork/Rfree (%)22.5/24.5Protein residues657 (5257 atoms)ADP2Rmsd bond lengths (Å)0.004Rmsd bond angles (°)0.94Average B-Factor Protein99.6Average B-Factor ADP87.7Ramachandran plot statistics Favored (%)95.5 Allowed (%)4.1 Generous (%)0.4 Disallowed (%)0 PDB entry code4CIU
+To interpret the domain interactions, we fitted ClpB atomic coordinates into the EM density. We determined the crystal structure of an ND truncation of E. coli ClpB (residues 159 to 858; E279A/E432A/E678A mutation; Table 1). The subunit structure is very similar to that of T. thermophilus ClpB (Figure 1—figure supplement 4). Since none of the available crystal structure conformations fit in the EM map, domains were fitted as separate rigid bodies connected at hinge regions (Figure 1C). For the AAA-1 ring, it was possible to build a hexamer model based on the crystal structure of hexameric ClpC (Wang et al., 2011) (PDB code 3PXG), a homologue that also displays disaggregation activity in vitro (Schlothauer et al., 2003). The resulting ClpB AAA-1 hexamer model was automatically docked into the AAA-1 layer as a rigid body (Figure 1D). This strategy was chosen over the fitting of a single subunit followed by hexamerisation because it is expected to provide a more accurate picture of the subunit interface, which is difficult to determine at the resolution of our EM map. However, this approach did not work for the AAA-2 layer since the ClpB AAA-2 hexamer based on the ClpC crystal structure was not compatible with the density. In this case a ∼40° tilt of the monomers into the plane of the ring was required to obtain the optimal fit, which resembles the pseudo-atomic model of the homologue ClpA AAA-2 ring (Effantin et al., 2010). Coordinates of the E. coli ClpB ND (residues 1 to 148) were obtained from the PDB (1KHY). A single N domain was fitted manually, maintaining the connection to AAA-1, and then hexamerised by applying symmetry in Chimera (Pettersen et al., 2004).
+
+**Table 1.**
+ X-ray data collection and refinement statistics
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Protein</td>
+      <td>ClpB E279A/E432A/E678A (SeMet) + ATP</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9794</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P65</td>
+    </tr>
+    <tr>
+      <td>Unit cell (Å,°)</td>
+      <td>127.34, 127.34, 119.86, 90, 90, 120</td>
+    </tr>
+    <tr>
+      <td>Molecules</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>81.15–3.50 (3.69–3.50)</td>
+    </tr>
+    <tr>
+      <td>Reflections measured</td>
+      <td>202965</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>14024</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>8.8 (53.2)</td>
+    </tr>
+    <tr>
+      <td>Rpim</td>
+      <td>3.0 (14.9)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>16.8 (5.4)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.9 (100)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>14.5 (14.8)</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree (%)</td>
+      <td>22.5/24.5</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>657 (5257 atoms)</td>
+    </tr>
+    <tr>
+      <td>ADP</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Rmsd bond lengths (Å)</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Rmsd bond angles (°)</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>Average B-Factor Protein</td>
+      <td>99.6</td>
+    </tr>
+    <tr>
+      <td>Average B-Factor ADP</td>
+      <td>87.7</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran plot statistics</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>95.5</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <td>Generous (%)</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PDB entry code</td>
+      <td>4CIU</td>
+    </tr>
+  </tbody>
+</table>
 
 The AAA+ rings have a central opening of ∼30 Å and therefore are not as compact as in one of the previous models (Lee et al., 2003, 2007, 2010), but not as expanded as in the other (Wendler et al., 2007). The Arg-fingers are at the interface between subunits, available to catalyse hydrolysis as expected from mutational studies (Mogk et al., 2003; Yamasaki et al., 2011; Biter et al., 2012).
 
@@ -76,13 +188,13 @@ In this position, the MD contacts the neighbouring AAA-1 via its motif 1, while 
 
 Moreover, intramolecular disulphide cross-links engineered between AAA-1 and motif 2 residues in TthClpB, EcoClpB and yeast Hsp104 are also compatible with the fitted structure (Figure 1E; K476C/E358C, Oguchi et al., 2012; G175C/R484C, H362C/Q473C E. coli numbering, Lee et al., 2003; G175C/S499C, Haslberger et al., 2007; Hsp104 K358C/D484C, Lipinska et al., 2013). However, this arrangement is not compatible with some of the engineered disulphide bonds observed in yeast Hsp104 (Desantis et al., 2014) (D427C/E475C, D427C/E471C and E320C/N467C).
 
-To investigate possible species-specific structural differences we reconstructed the functional yeast homologue HAP (Hsp104 with the ClpA tripeptide for ClpP binding) in complex with ClpP. Using ∼10,000 particles and analyzing the data as described above, an independent map of HAP was obtained at ∼21 Å resolution (
+To investigate possible species-specific structural differences we reconstructed the functional yeast homologue HAP (Hsp104 with the ClpA tripeptide for ClpP binding) in complex with ClpP. Using ∼10,000 particles and analyzing the data as described above, an independent map of HAP was obtained at ∼21 Å resolution (Figure 2A, Figure 1—figure supplement 3). The three-layered structure is comparable to BAP and there is density accounting for all domains including the MD, which surrounds the AAA-1 ring. The atomic coordinates of the ND and AAA+ rings obtained from the BAP analysis were fitted as rigid bodies. In order to fit the density, the MD must adopt a more horizontal orientation (Figure 2A). In summary, HAP shows overall the same structural organisation as its bacterial homologue ClpB.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig2-v2.jpg)
 
-**Figure 2.:** (A) Negative stain EM map of HAP-ClpP. From left to right: surface side-view, AAA-1 layer and AAA-2 layer. The central channel enclosed by the AAA-2 ring is filled with density. (B) Cryo EM map of BAP-ClpP formed with the BAP variant that traps the substrate inside. (C) Cryo EM map of wild type ClpB alone.DOI: http://dx.doi.org/10.7554/eLife.02481.009
+**Figure 2.:** (A) Negative stain EM map of HAP-ClpP. From left to right: surface side-view, AAA-1 layer and AAA-2 layer. The central channel enclosed by the AAA-2 ring is filled with density. (B) Cryo EM map of BAP-ClpP formed with the BAP variant that traps the substrate inside. (C) Cryo EM map of wild type ClpB alone.
 
-## Cryo EM reconstructions of ClpB with and without ClpP support the negative stain maps
+### Cryo EM reconstructions of ClpB with and without ClpP support the negative stain maps
 
 Since negative stain EM of ClpB (BAP) in complex with ClpP gave a clear result different from all previous cryo EM maps of ClpB and Hsp104, we collected cryo EM data on BAP-ClpP as well as on ClpB alone. The same strategy of using only clearly identifiable side views was applied. Complexes were imaged in the presence of ATPγS and independent maps were obtained by de novo angular reconstitution in each case (Figure 2B,C).
 
@@ -92,29 +204,25 @@ In the case of isolated ClpB, side views were sorted on the basis of multivariat
 
 Both maps show overall dimensions and density distributions comparable to the negative stain structure of BAP in complex with ClpP, confirming that the ClpB hexamer structure is not significantly altered either by negative staining or by binding to ClpP. The atomic model derived by fitting the negative stain BAP-ClpP map could be docked as a rigid body into both cryo EM reconstructions, but the MD assumes a more horizontal orientation, similar to that in HAP (Figure 2).
 
-## ClpB activity mutants show altered MD orientations
+### ClpB activity mutants show altered MD orientations
 
-E432A and Y503D are ClpB point mutations at opposite ends of the MD coiled-coil, which result in repressed (E432A) and hyperactive (Y503D) states (
+E432A and Y503D are ClpB point mutations at opposite ends of the MD coiled-coil, which result in repressed (E432A) and hyperactive (Y503D) states (Oguchi et al., 2012; Seyffer et al., 2012). Repressed ClpB-E432A is deficient in DnaK interaction and cannot be activated by its Hsp70 partner. Hyperactive ClpB-Y503D shows high ATPase and substrate unfolding activity even in the absence of Hsp70 (Oguchi et al., 2012; Seyffer et al., 2012). We collected negative stain EM datasets of the BAP-ClpP complexes of these variants and obtained 3D reconstructions of BAP-E432A and BAP-Y503D at 18 Å and 20 Å, respectively (Figure 3, Figure 1—figure supplement 3). Starting models were independently generated by angular reconstitution and refined with sixfold symmetry (Figure 3—figure supplement 1). Both mutants assemble into three layers similar to the wild type and show high variability in the ND ring. Atomic coordinates of the AAA+ rings can be fitted as described for the wild type, using the ClpC hexamer as starting point. Some rearrangement was necessary to fit the ND into density (Figure 3). The most notable difference between the two maps is a ∼30° difference in orientation of the motif 1 blade of the MD and the loss of the motif 2 density in the hyperactive state (Figure 4A,B). Another difference observed upon alignment of the AAA-1 ring in the repressed, wild-type and hyperactive maps is a ∼15° rotation of the wild-type AAA-2 ring relative to the mutants.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig3-v2.jpg)
 
-**Figure 3.:** (A) Side view (left) and 35 Å section (right) of the BAP-E432A map with the ClpB hexamer fit. (B) Fitting of the BAP-E432A AAA+ rings. (C) Side view (left) and 35 Å section of the fitted BAP-Y503D structure. MD is only partially in density and is more tilted than in the wild type and the BAP-E432A repressed mutant. The ND is smeared out as in all BAP forms due to disorder, but has a more vertical orientation in the hyperactive state. (D) Fitting of the BAP-Y503D AAA+ rings. The motif 2 region protrudes from the density.DOI: http://dx.doi.org/10.7554/eLife.02481.010
+**Figure 3.:** (A) Side view (left) and 35 Å section (right) of the BAP-E432A map with the ClpB hexamer fit. (B) Fitting of the BAP-E432A AAA+ rings. (C) Side view (left) and 35 Å section of the fitted BAP-Y503D structure. MD is only partially in density and is more tilted than in the wild type and the BAP-E432A repressed mutant. The ND is smeared out as in all BAP forms due to disorder, but has a more vertical orientation in the hyperactive state. (D) Fitting of the BAP-Y503D AAA+ rings. The motif 2 region protrudes from the density.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.02481.011
-
 ![Figure 4.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig4-v2.jpg)
 
-**Figure 4.:** (A) Repressed (red), wild-type (yellow) and hyperactive (green) forms of BAP-ClpP with a fitted subunit. (B) Distances (D) are shown between Cα atoms of Q427 (motif 1) and Q502 (motif 2) of neighbouring subunits based on the symmetrised EM reconstructions of wild-type ClpB and MD mutants. (C) Fluorescence energy transfer between motif 1 and motif 2 of adjacent ClpB subunits. Emission spectra of ClpB-Q427W-Q502C-IAEDANS in the monomeric (high salt), oligomeric (low salt) and ATP state (2 mM ATP) are shown. Effects of MD mutations on FRET efficiency were determined. The ratio of acceptor to donor fluorescence (derived from the areas under the curves) was calculated as readout for FRET efficiency. (D) Intermolecular disulfide crosslinking between MD motif 1 and motif 2 of adjacent subunits. Reduced and oxidized ClpB-K431C-S499C and repressed (E432A) and hyperactive (Y503D) variants were analyzed by non-reducing SDS-PAGE. Positions of monomers (1) and crosslinked dimers (2), trimers (3), tetramers (4), pentamers (5) and hexamers (6) are indicated. A protein standard is given. CoPhe at 25 µM was used as oxidizing agent.DOI: http://dx.doi.org/10.7554/eLife.02481.012
+**Figure 4.:** (A) Repressed (red), wild-type (yellow) and hyperactive (green) forms of BAP-ClpP with a fitted subunit. (B) Distances (D) are shown between Cα atoms of Q427 (motif 1) and Q502 (motif 2) of neighbouring subunits based on the symmetrised EM reconstructions of wild-type ClpB and MD mutants. (C) Fluorescence energy transfer between motif 1 and motif 2 of adjacent ClpB subunits. Emission spectra of ClpB-Q427W-Q502C-IAEDANS in the monomeric (high salt), oligomeric (low salt) and ATP state (2 mM ATP) are shown. Effects of MD mutations on FRET efficiency were determined. The ratio of acceptor to donor fluorescence (derived from the areas under the curves) was calculated as readout for FRET efficiency. (D) Intermolecular disulfide crosslinking between MD motif 1 and motif 2 of adjacent subunits. Reduced and oxidized ClpB-K431C-S499C and repressed (E432A) and hyperactive (Y503D) variants were analyzed by non-reducing SDS-PAGE. Positions of monomers (1) and crosslinked dimers (2), trimers (3), tetramers (4), pentamers (5) and hexamers (6) are indicated. A protein standard is given. CoPhe at 25 µM was used as oxidizing agent.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.02481.013
-
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** High salt (400 mM KCl) prevents ClpB oligomerisation.DOI: http://dx.doi.org/10.7554/eLife.02481.014
+**Figure 4—figure supplement 2.:** High salt (400 mM KCl) prevents ClpB oligomerisation.
 
 In the BAP-E432A repressed mutant the MD is clearly visible around the AAA-1 ring. It has a horizontal orientation so that motif 2 forms a contact with motif 1 of the neighbouring MD (Figure 3B, Figure 4B). This packing of the MD is supported by biochemical data showing overprotection of motif 2 in this mutant (Oguchi et al., 2012). Moreover, a very similar intersubunit motif 1-motif 2 contact is seen in all the ClpB crystal structures, in which ClpB monomers are arranged in a spiral assembly (TthClpB, 1QVR, Lee et al., 2003; EcoClpB current study) (Figure 4—figure supplement 1).
 
@@ -126,37 +234,37 @@ To confirm the close proximity of motif 1 and motif 2 of neighbouring MDs we per
 
 Furthermore, to test for direct interaction between motif 1 and motif 2, we introduced cysteine residues into motif 1 (K431C) and motif 2 (S499C) and analyzed whether intermolecular crosslinks form under oxidizing conditions. Low Cu-Phenanthrolin concentrations (25 μM) yielded a ladder of crosslink products from ClpB dimers to hexamers. Although non-specific dimer formation was observed in single cysteine variants, higher oligomers were only found in double cysteine variants (Figure 4D). Introducing the activating (Y503D) mutation to ClpB-K431C/S499C decreased but did not abolish crosslink formation, suggesting rapid fluctuation of MDs between different conformations even in the hyperactive state (Figure 4D). These findings support the interaction of MD motifs 1 and 2 from adjacent subunits as observed in the EM reconstructions and strengthening or loosening of the contact in repressed and hyperactive states, respectively.
 
-## Motif 1 is essential for keeping ClpB in the repressed state
+### Motif 1 is essential for keeping ClpB in the repressed state
 
-Mutating MD motif 1 can impair Hsp70 interaction and consequently protein disaggregation (
+Mutating MD motif 1 can impair Hsp70 interaction and consequently protein disaggregation (Oguchi et al., 2012; Seyffer et al., 2012). On the other hand a ClpB motif 1 deletion variant retains substantial disaggregation activity (Seyffer et al., 2012; del Castillo et al., 2011), providing no clarification of its role in protein disaggregation. Our EM structural data indicate that motif 1 acts as a crucial component of ClpB regulation by stabilizing MDs in a horizontal position through interaction with an adjacent motif 2. Indeed, ClpB-ΔM1 (ΔE410-Y455) shows hyperstimulation of ATPase activity in the presence of the substrate casein compared to wild-type ClpB, resembling the deregulated ATPase activity of hyperactive ClpB variants lacking motif 2 or the entire MD (Oguchi et al., 2012; Figure 5A). The basal ATPase activity of ClpB-ΔM1 was reduced in comparison to wild type due to partial oligomerization defects, in agreement with earlier reports (Oguchi et al., 2012; del Castillo et al., 2011). ClpB-ΔM1 oligomerization defects were more pronounced than in ClpB-ΔM1/M2, suggesting that motif 2 in absence of motif 1 might impede hexamer formation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig5-v2.jpg)
 
-**Figure 5.:** (A) Basal and substrate-stimulated ATPase activities of ClpB wild type and indicated MD deletions were determined in the absence and presence of casein. Relative ATPase activations by casein were calculated (inset). (B) Unfolding of Casein-YFP by BAP wild type and indicated MD deletions in the presence of ClpP was monitored by YFP fluorescence. Initial YFP fluorescence was set to 100%. ΔM1: ΔE410-Y455, ΔM2: ΔS456-E520, ΔM1/M2: ΔE410-E520. (C) E. coli ΔclpB cells expressing the indicated plasmid-encoded clpB alleles under control of an IPTG-regulatable promoter were grown overnight at 30°C. Various dilutions (10−1–10−7) were spotted on LB plates containing the indicated IPTG concentration and incubated at 37°C for 24 hr.DOI: http://dx.doi.org/10.7554/eLife.02481.015
+**Figure 5.:** (A) Basal and substrate-stimulated ATPase activities of ClpB wild type and indicated MD deletions were determined in the absence and presence of casein. Relative ATPase activations by casein were calculated (inset). (B) Unfolding of Casein-YFP by BAP wild type and indicated MD deletions in the presence of ClpP was monitored by YFP fluorescence. Initial YFP fluorescence was set to 100%. ΔM1: ΔE410-Y455, ΔM2: ΔS456-E520, ΔM1/M2: ΔE410-E520. (C) E. coli ΔclpB cells expressing the indicated plasmid-encoded clpB alleles under control of an IPTG-regulatable promoter were grown overnight at 30°C. Various dilutions (10−1–10−7) were spotted on LB plates containing the indicated IPTG concentration and incubated at 37°C for 24 hr.
 
 Next we tested whether hyperstimulation of ATPase activity is linked to high unfolding power. We employed BAP variants of the respective deletion constructs and tested for unfolding and degradation of casein-YFP in presence of ClpP. BAP-ΔM1 unfolds the YFP moiety of casein-YFP, an activity only observed for hyperactive BAP variants but not wild type BAP (Oguchi et al., 2012; Figure 5B). Loss of ClpB regulation in ClpB-ΔM1 was also linked to severe toxicity upon expression in E. coli ΔclpB mutant cells (Figure 5C). However, higher expression levels of ClpB-ΔM1 than of ClpB-Y503D are required to observe the same degree of toxicity probably because deletion of motif 1 results in oligomerisation defects (Oguchi et al., 2012; Figure 5C). In conclusion ClpB-ΔM1 exhibits the three major characteristics of hyperactive ClpB variants (high ATPase and unfolding activities linked to cellular toxicity), demonstrating the crucial regulatory role for motif 1 in interacting with an adjacent motif 2 to ensure tight activity control of ClpB.
 
-## Asymmetric reconstructions show variable orientations of the MD around the ring
+### Asymmetric reconstructions show variable orientations of the MD around the ring
 
 As mentioned above, we imposed 6-fold symmetry as a first approximation, to simplify the alignment and reconstruction problem. Nevertheless, crystal structures of the AAA+ protein ClpX show that the homo-hexameric assembly can be markedly asymmetric (Glynn et al., 2009; Kon et al., 2012; Stinson et al., 2013). We therefore reanalysed our negative stain EM data without imposing symmetry, in order to study the conformational variability within the hexamer.
 
-Using ∼15,000, ∼10,000 and ∼9000 particles for wild-type BAP, BAP-E432A and BAP-Y503D we obtained asymmetric maps at 21 Å, 21 Å and 25 Å resolution, respectively (
+Using ∼15,000, ∼10,000 and ∼9000 particles for wild-type BAP, BAP-E432A and BAP-Y503D we obtained asymmetric maps at 21 Å, 21 Å and 25 Å resolution, respectively (Figure 6A, Figure 1—figure supplement 3, Figure 6—figure supplement 1). Although the numbers of particles were similar to those used for sixfold analysis, the resolution is only slightly worse and the maps are comparable in quality to the symmetrised ones, consistent with the structure being asymmetric. The structure of the hyperactive mutant is less defined and has lower resolution than the other two, particularly for the MDs, probably owing to their higher mobility. Therefore, only wild-type BAP and BAP-E432A were used for further analysis.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig6-v2.jpg)
 
-**Figure 6.:** (A) Asymmetric reconstructions of repressed BAP-E432A, wild type BAP-ClpP and hyperactive BAP-Y503. (B) Side views of the BAP-ClpP wild type structure rotated successively 60°. Red MDs are oriented horizontally and make motif 1 to motif 2 contact as in the repressed state. Yellow MDs have slightly tilted orientations similar to the wild type. Green MDs are tilted as in the hyperactive state. One of the MDs contacts AAA-2 of the same subunit (last right panel). (C) Equivalent views of the BAP E432A-ClpP repressed mutant structure. Color code for the MD orientations is the same as above.DOI: http://dx.doi.org/10.7554/eLife.02481.016
+**Figure 6.:** (A) Asymmetric reconstructions of repressed BAP-E432A, wild type BAP-ClpP and hyperactive BAP-Y503. (B) Side views of the BAP-ClpP wild type structure rotated successively 60°. Red MDs are oriented horizontally and make motif 1 to motif 2 contact as in the repressed state. Yellow MDs have slightly tilted orientations similar to the wild type. Green MDs are tilted as in the hyperactive state. One of the MDs contacts AAA-2 of the same subunit (last right panel). (C) Equivalent views of the BAP E432A-ClpP repressed mutant structure. Color code for the MD orientations is the same as above.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** Angle search was done with 2° sampling. The equatorial band reflects the Euler angle distribution around the BAP-ClpP central axis.DOI: http://dx.doi.org/10.7554/eLife.02481.017
+**Figure 6—figure supplement 1.:** Angle search was done with 2° sampling. The equatorial band reflects the Euler angle distribution around the BAP-ClpP central axis.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** (A) Superimposition of an open (blue) and a closed (grey) nucleotide pocket (ClpX 3HWS). ADP is depicted in green spheres. (B) EcoClpB AAA-2 dimers built with open, intermediate and closed conformations based on ClpX crystallographic dimers. (C) AAA-1 and AAA-2 layers of asymmetric wild-type ClpB reconstruction plus indication of nucleotide occupancy.DOI: http://dx.doi.org/10.7554/eLife.02481.018
+**Figure 6—figure supplement 2.:** (A) Superimposition of an open (blue) and a closed (grey) nucleotide pocket (ClpX 3HWS). ADP is depicted in green spheres. (B) EcoClpB AAA-2 dimers built with open, intermediate and closed conformations based on ClpX crystallographic dimers. (C) AAA-1 and AAA-2 layers of asymmetric wild-type ClpB reconstruction plus indication of nucleotide occupancy.
 
 ![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig6-figsupp3-v2.jpg)
 
-**Figure 6—figure supplement 3.:** (A–D) Instrumental responses of successive injections of ADP (8.39 mM, 1.92 mM, 5.82 mM and 4.05 mM ADP for ClpB-WT, ClpB-K212A, ClpB-E432A, ClpB-Y503D, respectively) into a solution of ClpB-WT (678 μM), ClpB-K212A (239 μM), ClpB-E432A (467 μM) and ClpB-Y503D (396 μM). The molar ratio of ADP to ClpB hexamer is indicated. Raw isothermal titration calorimetry data are shown. Integrated data after base-line-correction and fitting to the respective binding isotherms to a single-site binding model are given (lower panel). The number of ADP binding sites was calculated.DOI: http://dx.doi.org/10.7554/eLife.02481.019
+**Figure 6—figure supplement 3.:** (A–D) Instrumental responses of successive injections of ADP (8.39 mM, 1.92 mM, 5.82 mM and 4.05 mM ADP for ClpB-WT, ClpB-K212A, ClpB-E432A, ClpB-Y503D, respectively) into a solution of ClpB-WT (678 μM), ClpB-K212A (239 μM), ClpB-E432A (467 μM) and ClpB-Y503D (396 μM). The molar ratio of ADP to ClpB hexamer is indicated. Raw isothermal titration calorimetry data are shown. Integrated data after base-line-correction and fitting to the respective binding isotherms to a single-site binding model are given (lower panel). The number of ADP binding sites was calculated.
 
 The asymmetric structures show similar density distributions in the AAA+ rings, even though not all six subunits in a ring can be aligned simultaneously owing to 5°–15° variations in rotational orientation. This rotational variability may explain the apparent ∼15° rotation of the AAA-2 wild-type ring relative to the mutants observed in the symmetrised reconstructions. As expected from the eigenimage analysis, the ND ring is not very well defined and the density does not account for all six NDs. Therefore, we did not attempt any atomic structure fitting into this region. Docking of the atomic structures of AAA-1, AAA-2 and MD was performed as follows.
 
@@ -172,11 +280,11 @@ In the asymmetric reconstruction of the repressed state, five MDs are found in t
 
 The BAP construct of ClpB complexed with ClpP, combined with a conservative approach of using only clearly identifiable side views and basing the analysis mainly on negative stain images (with independent confirmation from cryo EM) enabled us to unambiguously locate all subunit domains in the oligomer, including the coiled-coil MD propeller. Although the quoted resolutions for some previous structures of ClpB and Hsp104 were better, the globular shape, flexibility and asymmetry of these hexamers reduce the reliability of orientation assignment. Moreover, previous published structures of ClpB/Hsp104 were obtained by cryo EM only, which provides a lower signal-to-noise ratio (SNR) than negative stain data.
 
-Rigid body fitting of
+Rigid body fitting of E. coli ClpB atomic coordinates (PDB code 4CIU) into our new maps reveals that the MD is not projecting outwards from the hexamer (Lee et al., 2003, 2007, 2010) nor intercalated between subunits (Wendler et al., 2007, 2009), but is instead lying on the surface of the ClpB hexameric ring with a variable degree of tilt (Figure 4A, Figure 6B,C). A similar position of the MD is seen for Hsp104, underlining the conserved activity and mechanism of these disaggregases. This new MD arrangement is in excellent agreement with recent, extensive biochemical analysis of the MD (Oguchi et al., 2012). It was proposed that the MD works as a molecular toggle switching from a repressed state in which both motif 1 and 2 ends of the propeller are protected, to an active state where motif 2 is deprotected, exposing the binding site for DnaK/Hsp70 (Oguchi et al., 2012; Seyffer et al., 2012; Rosenzweig et al., 2013). Our EM reconstructions of repressed, hyperactive and wild type ClpB reveal a lever-like movement of the MD that switches from the repressed state with head-to-tail motif 1-motif 2 binding between adjacent subunits, to a mobile, activated state with motif 2 free and available for binding to DnaK (Figure 7A). The wild type conformation is intermediate between these states and thus poised for switching.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/02481/elife-02481-fig7-v2.jpg)
 
-**Figure 7.:** (A) Binding of DnaK is only possible when the MD is tilted (green). DnaK cannot bind when two adjacent MDs occupy a more horizontal position (red) as it would clash with motif 1 of the neighbouring ClpB subunit. (B) Cartoon of an opened-out ClpB ring with two DnaK molecules bound. The MDs involved in DnaK binding are shown in green, and those that cannot bind to DnaK are shown in red. Release of the ends of the MD favours activation of adjacent subunits, and the active cluster can move around the ring in a wave-like manner. The model of DnaK binding to the MD is based on the NMR study in Seyffer et al. (2012).DOI: http://dx.doi.org/10.7554/eLife.02481.020
+**Figure 7.:** (A) Binding of DnaK is only possible when the MD is tilted (green). DnaK cannot bind when two adjacent MDs occupy a more horizontal position (red) as it would clash with motif 1 of the neighbouring ClpB subunit. (B) Cartoon of an opened-out ClpB ring with two DnaK molecules bound. The MDs involved in DnaK binding are shown in green, and those that cannot bind to DnaK are shown in red. Release of the ends of the MD favours activation of adjacent subunits, and the active cluster can move around the ring in a wave-like manner. The model of DnaK binding to the MD is based on the NMR study in Seyffer et al. (2012).
 
 Our data thus explain the critical role of motif 1, which regulates the accessibility of motif 2 and consequently ClpB activity. Confirming its important regulatory role, deletion of motif 1 results in hyperactive ATPase and unfolding activity of ClpB-ΔM1 as well as cell toxicity (Figure 5), representing key characteristics of the hyperactive state (Oguchi et al., 2012). Moreover, our maps suggest that motif 1, through its contacts with either the adjacent motif 2 or AAA-1, plays a key role in direct communication between neighbouring subunits, which must therefore act in a coordinated manner.
 
@@ -186,17 +294,17 @@ The cryo EM reconstruction of wild-type ClpB suggests that the various MD confor
 
 ## Material and methods
 
-## Strains, plasmids and proteins
+### Strains, plasmids and proteins
 
 E. coli strains used were derivatives of MC4100. Mutant derivatives of ClpB/BAP were generated by PCR mutagenesis and standard cloning techniques in pDS56 and were verified by sequencing. Wild type and mutant ClpB were purified using Ni-IDA (Macherey–Nagel) and size exclusion chromatography (Superdex S200, Amersham) following standard protocols. Purifications of DnaK, DnaJ, GrpE, ClpP, Luciferase and Casein-YFP were performed as described previously (Oguchi et al., 2012). Pyruvate kinase and α–casein were purchased from Sigma. Protein concentrations were determined with the Bio-Rad Bradford assay.
 
-## Electron microscopy of negatively stained and vitrified specimens
+### Electron microscopy of negatively stained and vitrified specimens
 
 BAP(HAP)-ClpP complexes were formed in 20 mM Tris–HCl, pH 7.5, 20 mM KCl, 15 mM MgCl2, 1 mM DTT and 2 mM ATPγS. Proteins were applied to glow-discharged carbon coated grids (EM sciences), previously coated with 5 kDa poly-lysine (Sigma-Aldrich, UK) to positively charge the surface. Samples were stained with 2% uranyl acetate.
 
 For cryo-EM imaging, BAPtrap-ClpP was applied to holey carbon grids coated with a thin carbon film and pretreated with poly-lysine while ClpB specimens were loaded onto lacey carbon grids. Cryo-EM specimens were vitrified in a Vitrobot (FEI, UK). Images were recorded on a 4k Gatan (UK) CCD camera at a magnification of 50,000Χ for negatively stained specimens (pixel size 2.2 Ε; underfocus range: 0.5–1.2 μm) and of 80,000 × for cryo specimens (pixel size 1.4 Å; underfocus range: 1.5 µM–4 μm). All data were collected on a Tecnai F20 FEG operated at 200 kV under low dose conditions.
 
-## Single particle processing
+### Single particle processing
 
 The contrast transfer function (CTF) for each CCD frame was determined with CTFFIND3 (Mindell and Grigorieff, 2003) and corrected by phase flipping using Bshow1.6 (Heymann and Belnap, 2007). Side views of BAP-ClpP 2:2 complexes were manually picked using Boxer (Ludtke et al., 1999) and extracted into 256 × 256 boxes. The boxed particles were band-pass filtered between 300 and 10 Å for the negative stain dataset and between 300 and 5 Å for the cryo dataset. They were then normalized to the same mean and standard deviation. Particles were initially aligned to the total sum of 10–20 vertically oriented particles using SPIDER (Frank et al., 1996). Individual 1:1 BAP-ClpP complexes were extracted with circular masks and classified by MSA in IMAGIC-5 (van Heel et al., 1996) to remove images that did not represent BAP-ClpP, yielding 17,470 particles of wild type BAP-ClpP, 12,588 of BAP-E432A-ClpP, 9436 of BAP-Y503D-ClpP and 12,568 of HAP-ClpP. The BAPtrap-ClpP cryo dataset included 4592 particles. At this stage, particles were high-pass filtered to 160 Å and initial class averages of 20–30 images each were obtained by MSA. All alignments of 1:1 BAP-ClpP complexes were done limiting the in-plane rotation to ±20°. Upon further classification, 5–10 good classes were used to generate a starting model by angular reconstitution (van Heel et al., 2000). Alternative starting models were also created by applying sixfold symmetry to single classes and then using the resultant 3D map, generally composed of three discs corresponding to the three layers of the molecule, to generate an anchor set for Euler angle assignment. A low-resolution density map was independently created for each dataset by angular reconstitution with sixfold symmetry. Particle orientations were refined in multiple cycles of AP SHC alignment in SPIDER, MSA and angular reconstitution in IMAGIC and the resulting 3D reconstruction, filtered to 30 Å, was used as an initial model for projection matching in SPIDER. By applying a rectangular mask, only the AAA+ layers were refined. After 8–10 cycles of projection matching, using progressively smaller angular sampling steps (4°–1°) and filtering the 3D to the estimated resolution at each cycle, final structures were generated of the whole complex and their resolution was estimated by Fourier shell correlation with a 0.5 correlation cutoff. Based on cross correlation coefficient, around 70–80% of each dataset was included in the final reconstruction.
 
@@ -206,13 +314,13 @@ For cryo EM of ClpB alone, the views were randomly oriented and the initial stra
 
 For the reconstructions without imposed symmetry, particle orientations were determined using either the sixfold symmetrised map filtered to 50 Å or a sphere obtained from the average of all particles as a starting model. Subsequently, particle orientations were refined with ∼10 cycles of projection matching without imposed symmetry. The particle orientations were well distributed around the BAP-ClpP central axis (Figure 6—figure supplement 1). The resolution was estimated by Fourier shell correlation (FSC) at 0.5 (Figure 1—figure supplement 3).
 
-## Atomic structure fitting
+### Atomic structure fitting
 
 Docking was done using the crystal structures of E. coli ClpB-E432A (current study, PDB code: 4CIU) and E. coli ClpB ND (PDB code 1KHY). A homology model of Hsp104, obtained using Phyre2 (Kelley and Sternberg, 2009) was used for fitting into the HAP reconstruction.
 
 A hexameric ClpB/Hsp104 AAA-1 ring was modelled on the ClpC hexamer crystal structure (PDB code 3PXG) and was automatically fitted as a rigid body into the symmetrised maps using the UCSF Chimera package (Pettersen et al., 2004). The N-terminal, the middle and the AAA-2 domains were first fitted manually and then local fitting was optimized in Chimera, followed by symmetrisation. In the asymmetric reconstructions, dimers of adjacent ClpB subunits were modelled on crystal structures of ClpX hexamers and fitted as rigid bodies in Chimera.
 
-## Biochemical assays
+### Biochemical assays
 
 Steady-state ATP hydrolysis rates were determined in buffer A (50 mM Tris pH 7.5, 5 mM MgCl2, 20 mM KCl, 2 mM DTT) as described (Haslberger et al., 2007). ClpB disaggregation activities were determined by following the refolding of aggregated firefly Luciferase according to published protocols (Haslberger et al., 2007). Chaperones were used at the following concentrations: 1 μM ClpB (wild type or derivatives), 1 μM DnaK, 0.2 μM DnaJ, 0.1 μM GrpE. Oligomerisation of ClpB variants was tested as described previously (Mogk et al., 2003; Haslberger et al., 2007).
 
@@ -222,18 +330,18 @@ For formation of disulfide bridges ClpB cysteine variants were first dialyzed to
 
 Casein-YFP unfolding and degradation assays were carried out using 6 μM BAP (wild type or variants), 9 μM ClpP and 0.5 μM Casein-YFP. Degradation of Casein-YFP was determined by monitoring YFP fluorescence at 535 nm (excitation wavelength 515 nm) at a Perkin–Elmer LS50B spectrofluorimeter.
 
-## Spot tests
+### Spot tests
 
 E. coli cells harbouring plasmid-encoded clpB alleles were grown in the absence of IPTG overnight at 30°C. Serial dilutions were prepared, spotted on LB-plates containing different IPTG concentrations and incubated for 24 hr at 37°C.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 ClpB wild type and variants were extensively dialyzed against low salt buffer A (50 mM Tris [pH 7.5], 25 mM KCl, 20 mM MgCl2, 5% glycerol). Isothermal titration calorimetry (ITC) was performed using an ITC calorimeter (iTC200Microcalorimeter, MicroCal, Germany). Consecutive injections of nucleotide into a 300 μl cell containing ClpB were performed after sample equilibration at 30°C. Integration and fitting of ITC data were performed using ORIGIN software (GE, Germany). ClpB and ADP concentrations were determined by UV absorbance at 280 nm.
 
-## Hydrogen-exchange experiments
+### Hydrogen-exchange experiments
 
 HX-MS experiments were performed similar to those described earlier (Oguchi et al., 2012). Briefly, ClpB (100 pmol), BAP (100 pmol) or BAP-ClpP complex (100 pmol and 200 pmol respectively) were incubated for 3 min at 30°C in low salt buffer A (50 mM Tris, pH 7.5, 25 mM KCl, 20 mM MgCl2, 2 mM DTT) in presence of ATP or ATPγS and diluted 20-fold into D2O-based MDH buffer to initiate amide proton-deuteron exchange. The exchange reaction was stopped after 1 min by the addition of 1 volume of ice-cold quench buffer (0.4 M K-phosphate buffer, pH 2.2). Quenched samples were immediately injected into the HPLC setup, with (peptide analysis) or without (full length protein analysis) online peptic digest, and analyzed on an electrospray ionization quadrupole time-of-flight mass spectrometer (QSTAR Pulsar, Applied Biosystems) as described in Rist et al. (2003). Analysis of deuteron incorporation into peptide was performed by using AnalystQS software (Applied Biosystems/MDS SCIEX, Germany).
 
-## Accession numbers
+### Accession numbers
 
 The EM maps have been deposited in the 3D-EM database (www.emdatabank.org) with accession codes EMD-2555 (BAP-E432A C6), EMD-2556 (BAP-E432A C1), EMD-2557 (BAP wild type C6), and EMD-2558 (BAP wild type C1), EMD-2559 (BAP-Y503D C6), EMD-2560 (BAP-Y503D C1), EMD-2561 (HAP), EMD-2562 (BAPtrap cryo) and EMD-2563 (ClpB wild type cryo). The corresponding FSC curves have also been deposited. The crystal structure atomic coordinates of E. coli ClpB E279A/E432A/E678A + ATP have been deposited in the PDB database (http://www.ebi.ac.uk/pdbe/) with entry code 4CIU. PDB models based on the EM maps have also been deposited with codes 4D2Q (BAP-E432A C6); 4D2U (BAP wild type C6) and 4D2X (BAP-Y503D C6).

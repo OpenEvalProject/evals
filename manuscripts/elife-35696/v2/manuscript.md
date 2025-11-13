@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.35696.001 Given that complex behavior evolved multiple times independently in different lineages, a crucial question is whether these independent evolutionary events coincided with modifications to common neural systems. To test this question in mammals, we investigate the lateral cerebellum, a neurobiological system that is novel to mammals, and is associated with higher cognitive functions. We map the evolutionary diversification of the mammalian cerebellum and find that relative volumetric changes of the lateral cerebellar hemispheres (independent of cerebellar size) are correlated with measures of domain-general cognition in primates, and are characterized by a combination of parallel and convergent shifts towards similar levels of expansion in distantly related mammalian lineages. Results suggest that multiple independent evolutionary occurrences of increased behavioral complexity in mammals may at least partly be explained by selection on a common neural system, the cerebellum, which may have been subject to multiple independent neurodevelopmental remodeling events during mammalian evolution.
+Given that complex behavior evolved multiple times independently in different lineages, a crucial question is whether these independent evolutionary events coincided with modifications to common neural systems. To test this question in mammals, we investigate the lateral cerebellum, a neurobiological system that is novel to mammals, and is associated with higher cognitive functions. We map the evolutionary diversification of the mammalian cerebellum and find that relative volumetric changes of the lateral cerebellar hemispheres (independent of cerebellar size) are correlated with measures of domain-general cognition in primates, and are characterized by a combination of parallel and convergent shifts towards similar levels of expansion in distantly related mammalian lineages. Results suggest that multiple independent evolutionary occurrences of increased behavioral complexity in mammals may at least partly be explained by selection on a common neural system, the cerebellum, which may have been subject to multiple independent neurodevelopmental remodeling events during mammalian evolution.
 
 ## Introduction
 
@@ -41,9 +41,94 @@ Phylogenetic scaling of lateral to medial cerebellar volume indicates a positive
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/35696/elife-35696-fig2-v2.jpg)
 
-**Figure 2.:** Figure 3), and of lateral-medial cerebellar reorganization to a measure of domain-general cognition in primates (right pane).The original measure of domain-general cognition (Deaner et al., 2006) is inversely related to cognitive ability (low scores indicate high cognitive ability). Here, for the purposes of visualization, we inversed this measure so that higher scores indicate a higher cognitive ability. Phylogenetic confidence intervals were computed following Smaers and Rohlf (Smaers and Rohlf, 2016).10.7554/eLife.35696.005Figure 2—source data 1.
+**Figure 2.:** The original measure of domain-general cognition (Deaner et al., 2006) is inversely related to cognitive ability (low scores indicate high cognitive ability). Here, for the purposes of visualization, we inversed this measure so that higher scores indicate a higher cognitive ability. Phylogenetic confidence intervals were computed following Smaers and Rohlf (Smaers and Rohlf, 2016).
 
 The evolutionary history of lateral-medial cerebellar reorganization was quantified using a Bayesian reversible-jump Ornstein-Uhlenbeck (‘OU’) approach (Uyeda and Harmon, 2014) (Figure 3). This analysis indicates five shifts in mean value with a posterior probability (‘PP’)>0.8. These regime shifts occurred at the root branches of the apes, the cetartiodactyls, the cetaceans (note that our sample includes toothed whales only), the pinnipeds, and the feliformes (Figure 3, Figure 3—figure supplement 1). The signal-to-noise ratio of this estimated pattern is 52.34, demonstrating that the analysis has high effect size and high power. Phylogenetic analysis of covariance (Smaers and Rohlf, 2016) indicates that these shifts represent significant differences in the intercept of lateral to medial cerebellar scaling (i.e. grade shifts; Table 1). Specifically, apes, toothed whales and pinnipeds are not significantly different from each other, but each (and as a group) are significantly different from others. Furthermore, feliformes and artiodactyls are not significantly different from each other, but each (and as a group) are significantly different from others. These results demonstrate that the six regimes identified by OU modelling constitute three significantly different grades (in order of magnitude of relative lateral to medial cerebellar size): apes, toothed whales, and pinnipeds (grade 1); rest of the sample (grade 2); artiodactyls and feliformes (grade 3). The equality of slopes assumption of analysis of covariance is upheld (grade 1 versus grade 2: F = 0.009, p=0.925; grade 1 versus grade 3: F = 0.088, p=0.771; grade 2 versus grade 3: F = 0.836, p=0.367).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/35696/elife-35696-fig3-v2.jpg)
+
+**Figure 3.:** Best-fit adaptive regimes were estimated using a Bayesian reversible-jump procedure for fitting OU models (Uyeda and Harmon, 2014) and confirmed as significant grade shifts using a phylogenetic ANCOVA (Smaers and Rohlf, 2016). Posterior probabilities (PP) of regime shifts were estimated using the Bayesian reversible-jump procedure. Nodal values for the ancestral phenogram were estimated using a multiple variance Brownian motion approach (Smaers et al., 2016). Green data points and branches comprise the convergent regimes of apes, toothed whales and pinnipeds, blue data points and branches comprises those of feliformes and artiodactyls.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35696/elife-35696-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/35696/elife-35696-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/35696/elife-35696-fig3-figsupp3-v2.jpg)
+
+**Table 1.**
+ Results from a phylogenetic analysis of covariance (Smaers and Rohlf, 2016).Results relate to tests of differences in intercept among groups with the slope held constant. ‘Others’ refers to all species in the sample not included in the other allocated groups. The analysis includes the comparison of multiple treatment groups (group a ‘versus’ group b) to a control group (‘|’ group c). High, medium, low indicates which groups have the highest, medium, and lowest trait values.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">pANCOVA</th>
+    </tr>
+    <tr>
+      <th colspan="2">Group allocation</th>
+      <th>df</th>
+      <th>F</th>
+      <th colspan="2">P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Convergence among regimes</td>
+    </tr>
+    <tr>
+      <td colspan="2">Apes versus toothed whales, pinnipeds | others</td>
+      <td>1,46</td>
+      <td>0.810</td>
+      <td>0.373</td>
+      <td>Ns</td>
+    </tr>
+    <tr>
+      <td colspan="2">Toothed whales versus apes, pinnipeds | others</td>
+      <td>1,46</td>
+      <td>3.488</td>
+      <td>0.068</td>
+      <td>Ns</td>
+    </tr>
+    <tr>
+      <td colspan="2">Pinnipeds versus apes, toothed whales | others</td>
+      <td>1,46</td>
+      <td>0.195</td>
+      <td>0.661</td>
+      <td>Ns</td>
+    </tr>
+    <tr>
+      <td colspan="2">Artiodactyls versus feliformes | others</td>
+      <td>1,46</td>
+      <td>1.911</td>
+      <td>0.174</td>
+      <td>Ns</td>
+    </tr>
+    <tr>
+      <td colspan="6">3 grade model</td>
+    </tr>
+    <tr>
+      <td colspan="2">Apes, toothed whales, pinnipeds versus others versus artiodactyls, feliformes</td>
+      <td>2,46</td>
+      <td>28.819</td>
+      <td>&lt;0.001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td colspan="2">Apes, toothed whales, pinnipeds versus others | artiodactyls, feliformes</td>
+      <td>1,46</td>
+      <td>35.980</td>
+      <td>&lt;0.001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td colspan="2">Artiodactyls, feliformes versus others | apes, toothed whales, pinnipeds</td>
+      <td>1,46</td>
+      <td>8.374</td>
+      <td>0.006</td>
+      <td>**</td>
+    </tr>
+  </tbody>
+</table>
 
 The evolutionary history of lateral-medial cerebellar reorganization was also examined by visualizing the evolutionary trait space in an ancestral phenogram (Figure 3). Ancestral states were inferred using a multiple variance Brownian motion (‘mvBM’) approach (Smaers et al., 2016). Results using a standard BM and a reversible-jump BM method yielded similar results (Figure 3—figure supplement 2). Lineage-specific amounts of evolutionary change were also estimated using the mvBM approach and compared against a null model of gradual evolution to obtain estimates of how much faster lineages evolve relative to a gradual model of evolution. These results are visualized in Figure 3 and presented in full in Figure 3—figure supplement 3. Results using a reversible-jump BM method yielded similar results (Figure 3—figure supplement 3).
 
@@ -53,7 +138,7 @@ The difference in rate of evolution between lateral-medial cerebellar reorganiza
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/35696/elife-35696-fig4-v2.jpg)
 
-**Figure 4.:** σ) for relative cerebellum size and lateral-medial cerebellar reorganization (left panel), and medial and lateral cerebellar volume (right panel) as estimated by a standard Brownian motion model (2Revell, 2012).Rate ratios and P values are calculated using Q-mode rate analysis (Adams, 2014). Reversible-jump (Venditti et al., 2011) and multiple variance (Smaers et al., 2016) Brownian motion models yield equivalent results.
+**Figure 4.:** Rate ratios and P values are calculated using Q-mode rate analysis (Adams, 2014). Reversible-jump (Venditti et al., 2011) and multiple variance (Smaers et al., 2016) Brownian motion models yield equivalent results.
 
 We also assessed potential grade shifts in the size of the medial cerebellum relative to the rest of the brain in order to ascertain whether the described convergent trend between apes, toothed whales and pinnipeds may be confounded by different patterns of evolution in the medial cerebellum (e.g. the medial may be exceptionally small in some clades but not others, confounding the lateral to medial comparison). Results indicate that apes, toothed whales and pinnipeds are not significantly different in relative medial cerebellum size (apes versus toothed whales and pinnipeds: F = 1.06, p=0.31; toothed whales versus apes and pinnipeds: F = 1.11, p=0.30; pinnipeds versus apes and toothed whales: F = 0.07, p=0.79). Furthermore, analysis of lateral cerebellum size versus rest of brain size yields similar results as the lateral to medial comparison in that apes, toothed whales and pinnipeds are not significantly different from each other, but are different from other mammals (apes versus toothed whales and pinnipeds: F < 0.01, p=0.96; toothed whales versus apes and pinnipeds: F = 1.13, p=0.29; pinnipeds versus apes and toothed whales: F = 0.56, p=0.45; apes, toothed whales and pinnipeds versus others (holding constant artiodactyls and feliforms): F = 5.06, p=0.01). These results confirm that the convergent lateral to medial reorganization among these clades is not due to a differential effect on medial and/or lateral cerebellum size, but rather, that it is due to a similarly convergent pattern of lateral to medial reorganization.
 
@@ -77,7 +162,7 @@ The interpretation of the nature of structural volumetric reorganization in brai
 
 The occurrence of significant changes in cerebellar structural reorganization in the mammalian macroevolutionary landscape (Figure 3), combined with the higher rate of evolution for changes in lateral-medial cerebellar organization over changes in relative cerebellar size (Figure 4) draws attention to a new avenue of adaptive brain evolution. Across mammals, the total number of cerebellar neurons (excluding Purkinje neurons) correlates significantly with the number of cerebral neurons, leading to the suggestion that coordinated processing networks with the neocortex constrain cerebellar evolution(Herculano-Houzel, 2010) To date, however, such analyses have rarely accounted for modular reorganization within gross anatomical structures (such as the cerebellum and the neocortex) independently of overall size (but see Balsters et al. (2010)). The significant grade shifts in cerebellar reorganization observed here show that not all scaled up cerebella are anatomically homologous. A comparison of observed to allometrically predicted values indicate that apes, toothed whales, and pinnipeds have lateral cerebellar hemispheres that are 2.3 to 4.4 times larger than predicted relative to the medial cerebellum, while artiodactyls have lateral cerebella that are 3.3 to 4.4 times smaller than predicted. Given near isometric scaling of number of neurons and mass in the cerebellum, this implies that the relative number of neurons dedicated to automating either higher cerebral association processing (lateral cerebellum), or basic motor skills and proprioception (medial cerebellum) is similarly unevenly distributed in apes, toothed whales, and pinnipeds versus artiodactyls. Moreover, the artiodactyls in our sample have similarly sized brains than apes and pinnipeds, further demonstrating the importance of modular reorganization patterns that are independent of brain size. Other aspects of cerebellar microstructural anatomy may also exhibit functionally significant phylogenetic variation. For instance, cerebellar cells (mostly granule cells) are more densely packed in eulipotyphlans, primates, and elephants, compared to other mammals investigated (Herculano-Houzel et al., 2015). And remarkable differences in the ratio of granule cells to Purkinje neurons have been reported, with the greatest proportions of granule cells per Purkinje neuron found in primates, toothed whales, and elephants (Lange, 1975). Additionally, Golgi impregnation studies have demonstrated that cerebellar neuron morphologies vary across mammals, showing strikingly extensive dendritic branching of Lugaro cells in elephants (Jacobs et al., 2014). The functional impact of such species differences in microstructure is yet to be fully understood, but should be considered alongside volumetric reorganization in a comprehensive model of cerebellar evolution.
 
-## Conclusions
+### Conclusions
 
 Further work is needed to expand the detail of the cerebellar delineations, the breadth of the comparative neuroanatomical sample, and the range of behavioral measures on associative learning abilities across mammals. Expanding the detail of cerebellar delineations would allow evaluating the extent to which the currently observed macroevolutionary pattern of convergence towards lateral-medial cerebellar reorganization may be driven by different patterns of modularity within the lateral cerebellum across different clades (e.g. lobule HVII in apes and pinnipeds, lobule HIX in toothed whales). Further expanding the breadth of the comparative sample and the detail of neurobiological measurements will allow increasing the resolution of evolutionary inference, expanding our understanding of neurobiological modification in relation to different body plans and life styles, and consequently, refining our understanding of the evolutionary pathways that have shaped intelligent behavior in vertebrates. Some outstanding questions on species that are not covered by our current sample include the putative expansion of lateral cerebellar hemisphere in bats (in relation to echolocation and the expansion of the paraflocculus [Larsell, 1970; Larsell and Dow, 1935]), and potential differences in lateral cerebellar expansion in baleen versus toothed whales (baleen whales do not echolocate and may therefore not indicate an expansion of lobule HIX, as observed in toothed whales [Jansen and Jansen, 1969]).
 
@@ -85,19 +170,19 @@ We conclude that a tendency for distantly related mammalian species to converge 
 
 ## Materials and methods
 
-## Data
+### Data
 
 Brain data were taken from MacLeod et al. (2003), Smaers et al. (2011), and Maseko et al. (2012). For the anthropoid data, preference was given to data presented in MacLeod et al. (2003) because it includes more individuals per species. Data for anthropoid species not presented in MacLeod et al. (2003) were then taken from Smaers et al. (2011). Smaers et al. (2011) used the same delineation protocol as MacLeod et al. (2003), and also used brains processed in the same lab (Zilles et al., (2011). Maseko et al. (2012) collected additional data using both histological sections (using similar delineation criteria as MacLeod et al. 2003] and MRI images (for the elephant and harbor porpoise only). The comparability between MRI and histological data likely involves a degree of error, although this error was suggested by Maseko et al. (2012) to be minimal. Data are presented in Figure 2—source data 1. Behavioral data were taken from Deaner et al. (2006). Other data sets of domain-general cognition were considered (Benson-Amram et al., 2016; MacLean et al., 2014), but found to have a limited overlap with the available neuroanatomical data (≤7 species).
 
-## Phylogeny
+### Phylogeny
 
 The phylogeny was adjusted from Faurby and Svenning (2015), who used a novel heuristic-hierarchical Bayesian approach for estimating a species-rich (>4100 species) phylogeny of mammals. In their approach, species with a large amount of sequence data are freely placed in a standard Bayesian MCMC procedure. The phylogenetic placements of species with decreasing data quantities are estimated with increasing restrictions on their possible placement. Finally, species with no sequence data are placed based on morphological trees or existing taxonomy. Additional details can be found in the authors’ full description of their procedure. The result of their procedure is a sample of 1000 trees from the final posterior distribution. We chose to use the 4160 species tree as this represents the largest possible tree of species all with unambiguous placement in the phylogeny. Faurby and Svenning estimated branch lengths on these final trees using a two-step process where some higher-level divergences were manually incorporated from other sources and the remaining branch lengths simulated using the age of the clade and either a Yule or Birth-Death model of evolution. Our analysis required a single resolved tree. A typical consensus of the 1000 sampled trees would result in negative branch lengths. We instead used the maximum clade credibility tree (MCC) from the sample, as estimated using TreeAnnotator v2.3.1 (Drummond et al., 2012). The resulting tree is presented in Figure 3—source data 1. For the purposes of our analyses, this tree was pruned to contain only those species in our sample.
 
-## Measure of relative size
+### Measure of relative size
 
 To evaluate whether a particular brain structure is enlarged relative to other structures (or the rest of the brain), the standard approach has been to fit a (phylogenetic) regression line through a comparative sample and to calculate to what extent predicted values correspond to observed values (Passingham, 1973). The focus of our study lies on the comparison between the lateral and medial cerebellum. This measure quantifies changes within the cerebellum between its two major constituent partitions that are functionally, connectionally, and developmentally distinct. Whereas the medial (vermis and paravermis) cerebellum is involved in basic motor control, proprioception and autonomic functions, the lateral hemispheres are the site of integration for multiple streams of cerebral information processing (Glickstein et al., 2011). We also ran analyses using an alternative measure that considers the comparison of overall cerebellar size relative to the size of the rest of the brain. Although this latter measure is the most commonly used in previous research, it overlooks modularity within the cerebellum. Moreover, this measure also does not account for the fact that the cerebellum is highly interconnected with much of the rest of the brain. A comparison against the rest of the brain thus performs a statistical control for much of what is neurobiologically relevant. We primarily focus on the measure of lateral to medial cerebellum because it represents the cerebellum’s modular organization and is therefore more relevant to understanding the underpinnings of neural information processing (Passingham and Smaers, 2014).
 
-## Evolutionary modelling
+### Evolutionary modelling
 
 To identify the evolutionary dynamics of brain region enlargement we utilize phylogenetic comparative methods that reveal the tempo, mode, and history of trait evolution. Using a phylogenetic tree and observed information from contemporary tip taxa, these methods employ statistical and mathematical models of evolution to describe the pattern and rate of trait change along individual branches of a phylogeny. As such, these methods infer the temporal origin and rate of evolution of a trait across a phylogenetic landscape.
 
@@ -107,34 +192,34 @@ The standard BM model is, however, less well suited for estimating the evolution
 
 It is clear that these different approaches have different strengths and weaknesses, and should therefore be used within the constraints of what they aim to do. OU modelling approaches, for example, are commonly agreed to be a very powerful approach for modelling trait diversification, though recent research has pointed towards some challenges when using such models. Specifically, the theoretical properties of the maximum-likelihood estimators for OU parameters can result in non-uniqueness and inaccuracy causing traditional model selection criteria to favor overly complex scenarios (Lst and Ané, 2014). More recent Bayesian (Uyeda and Harmon, 2014) and least-squares (Khabbazian et al., 2016) procedures, however, have proposed adjustments to traditional procedures that overcome these difficulties. Also multi-rate BM models have clear limitations. Such approaches are commonly highly parameterized (Lst and Ané, 2014) and therefore less suitable for hypothesis testing (Smaers and Mongle, 2017). Such models are, however, particularly useful for providing best-fit estimates of evolutionary history (Smaers and Mongle, 2017).
 
-## Estimating changes in mean value
+### Estimating changes in mean value
 
 We modeled changes in mean values along individual branches of the phylogeny using a Bayesian reversible-jump OU procedure (Uyeda and Harmon, 2014; Uyeda and Eastman, 2014). This procedure estimates a best-fit adaptive regime configuration of cerebellar reorganization (more info in SI), whereby ‘regimes’ are defined as a group of lineages with a similar mean value (θ in the OU model framework). By using a Bayesian parameter estimation procedure this approach avoids the non-uniqueness of parameter estimation inherent to maximum likelihood procedures (Lst and Ané, 2014). To avoid overfitting this procedure uses a conditional Poisson distribution as a prior on the number of shifts (ranging from zero to half the number of tips). Furthermore, this procedure allows the posterior probability (‘PP’) threshold to call a shift to be adjusted so as to provide more liberal (PP ≥0.2) or more conservative (PP ≥0.8) estimations. A more liberal PP threshold hereby tends to result in high recall rates (many of the true shifts are detected) and low precision (many false positives are detected), while a more conservative PP threshold tends to result in low recall rates (some true shifts are not detected) and high precision (few false positives are detected).
 
-## Estimating ancestral values
+### Estimating ancestral values
 
 Ancestral values were inferred using a multiple variance BM (‘mvBM’) approach (Smaers et al., 2016; Smaers and Mongle, 2018). Code to implement mvBM and phylogenetic ANCOVA is available from the 'evomap' R package (Smaers and Mongle, 2018; copy archived at https://github.com/elifesciences-publications/evomap). This procedure provides an estimate of evolutionary history that is based on lineage-specific rates of evolution (visualized in the ancestral phenogram Figure 3b). This approach has been shown to provide estimates equivalent to standard BM when the trait evolves according to that model, and to outperform it when the trait does not adhere to standard BM by improving the estimation of trait evolution in those location where the evolutionary process deviates from standard BM (Smaers et al., 2016; Smaers and Mongle, 2017). In Figure 3—figure supplement 2 and 3 we also report results obtained using a reversible-jump BM (‘rjBM’) method, which is a different multi-rate BM approach (Venditti et al., 2011; Pagel and Meade, 2013). This different approach provides equivalent results for the analyses presented here. Both these methods were used in a Bayesian MCMC framework using 10 million iterations and sampling every 100th iteration, which rendered normal distribution of log likelihood values for all analyses.
 
-## Estimating lineage-specific rates of evolution
+### Estimating lineage-specific rates of evolution
 
 Lineage-specific variation was compared to a baseline expectation given a standard BM model to provide estimates of how much faster evolution in a particular lineage is estimated to be relative to a gradual model. The amount of change observed at each branch (the difference between descendant and ancestral branches as inferred using the mvBM and rjBM approaches) was compared with a neutral scenario in which all the species in the phylogeny were simulated to evolve at a constant rate (Gómez-Robles et al., 2017). For these analyses, the original phylogeny was transformed to generations. Age at first reproduction as obtained from PanTHERIA database (Jones et al., 2009) was used as a proxy for generation time. When this variable was not available for a given species included in our dataset, the value corresponding to the closest species with known age at first reproduction was used. The time-based phylogeny was rescaled to generations by dividing each branch length by the generation time corresponding to their descendant species or descendant inferred node. A per-generation rate of evolution was calculated based on available data (Martins, 1994), and it was later used to simulate evolution over the studied phylogeny at that constant rate (Polly, 2017; Polly, 2004). Simulations were repeated 100 times for each trait and differences between descendant and ancestral values were calculated. The average of those differences for each branch were used as the neutral expectation of the amount of change that each branch would have accumulated had all the branches evolved at the same rate. The ratio between observed and simulated amounts of change per branch is lower than one for slow-evolving branches and greater than one for fast-evolving branches.
 
-## Testing estimated changes in mean value
+### Testing estimated changes in mean value
 
-Because estimation of evolutionary patterns is inherently uncertain we translated the estimated model from the Bayesian reversible-jump OU procedure into a least-squares framework. Least-squares analysis allows testing whether the patterning of the extant variation suggested by the evolutionary estimation is significant. We hereby used the least-squares solution to phylogenetic analysis of covariance (pANCOVA) (Smaers and Rohlf, 2016) to test for differences in slopes and intercepts among the extant values of the estimated regimes. This implementation of pANCOVA includes additional indicator variables describing group membership to the standard generalized least-squares procedure (y=Xb+ϵ) (Smaers and Rohlf, 2016). This procedure calculates the change associated with the clades of interest in the residual variance simultaneously with the phylogenetic regression parameters, and hereby allows for a direct test of whether a model with multiple grades (assuming multiple groups with different mean trait values) provides a significantly better fit to the data than a model with only a single grade (assuming that no particular group indicates a significantly different mean trait value). Technical details and examples of implementation are available in Smaers and Rohlf (2016). Code to implement pANCOVA is available from the ‘evomap’ R package (Smaers and Mongle, 2018). We further include the λ parameter in order to account for the degree of phylogenetic signal in the data (Pagel, 1997). Considering the uncertainties involved in reversible-jump and Ornstein-Uhlenbeck modelling, this step provides a crucial confirmation that the estimated results from the modelling analyses are indeed significant.
+Because estimation of evolutionary patterns is inherently uncertain we translated the estimated model from the Bayesian reversible-jump OU procedure into a least-squares framework. Least-squares analysis allows testing whether the patterning of the extant variation suggested by the evolutionary estimation is significant. We hereby used the least-squares solution to phylogenetic analysis of covariance (pANCOVA) (Smaers and Rohlf, 2016) to test for differences in slopes and intercepts among the extant values of the estimated regimes. This implementation of pANCOVA includes additional indicator variables describing group membership to the standard generalized least-squares procedure ($y=Xb+ϵ$) (Smaers and Rohlf, 2016). This procedure calculates the change associated with the clades of interest in the residual variance simultaneously with the phylogenetic regression parameters, and hereby allows for a direct test of whether a model with multiple grades (assuming multiple groups with different mean trait values) provides a significantly better fit to the data than a model with only a single grade (assuming that no particular group indicates a significantly different mean trait value). Technical details and examples of implementation are available in Smaers and Rohlf (2016). Code to implement pANCOVA is available from the ‘evomap’ R package (Smaers and Mongle, 2018). We further include the λ parameter in order to account for the degree of phylogenetic signal in the data (Pagel, 1997). Considering the uncertainties involved in reversible-jump and Ornstein-Uhlenbeck modelling, this step provides a crucial confirmation that the estimated results from the modelling analyses are indeed significant.
 
-## Testing for differences in rate of evolution among traits
+### Testing for differences in rate of evolution among traits
 
 To test for differences in rate among different measures of cerebellar reorganization, we use the procedure proposed by Adams et al (Adams, 2014; Denton and Adams, 2015; Adams and Otárola-Castillo, 2013). This method uses a distance-based approach (Q-mode) to quantifying evolutionary rate. Q-mode approaches provide estimates of evolutionary rates that are numerically identical to those obtained using covariance-based implementations (R-mode). The advantage of the Q-mode approach is that it can be extended to high-dimensional data while maintaining appropriate Type I error and high statistical power for detecting differences in σ2 (25). This approach assumes a standard BM model of evolution. Hypothesis testing is performed by comparing the observed ratio of evolutionary rates with a distribution of possible ratios obtained under the null hypothesis that there is no rate difference between traits.
 
-## Model uncertainty, reliability, and effect size
+### Model uncertainty, reliability, and effect size
 
 Estimating patterns of evolution along individual lineages given comparative trait data and a phylogeny is an inherently uncertain endeavor (Lst and Ané, 2014). Several steps can, however, be taken to confirm the reliability of the estimated patterns (Smaers et al., 2017).
 
 First, when possible results should be translated to least-squares analysis. Least-squares analysis allows for hypothesis testing and can hereby confirm or falsify the patterning of the extant variation that is suggested by evolutionary modelling. This is particularly true for bivariate allometric analyses. The phylogenetic regression (‘pGLS’ [Rohlf, 2001]) and its extensions towards more complex generalized linear models (e.g. pANCOVA [Smaers and Rohlf, 2016]) are the most powerful hypothesis testing approaches for comparative data. Although least-squares analysis does not allow confirming lineage-specific evolutionary patterns, it is clear that the patterning of the extant variation as suggested by evolutionary modelling analysis is expected to produce significant results when used in least-squares analysis. Because observed power is a simple function of the observed P-value in least-squares analysis (Hoenig and Heisey, 2001), tests that produce significant results can be considered to have high power.
 
-Second, proxies of effect size can be calculated for evolutionary patterns that have been estimated using OU modelling. Cressler et al. (2015) demonstrated that a signal-to-noise ratio (ηϕ) provides a better predictor of power than sample size. This ratio compares the minimum difference in mean value among regimes (multiplied by the strength of directional change among regimes) with a measure of noise intensity. Cressler et al. (2015) demonstrated that when ηϕ≫1, high statistical power can be inferred. Such measures of effect size are crucial indicators of reliability and can thus be used to build confidence in the accuracy of estimated patterns.
+Second, proxies of effect size can be calculated for evolutionary patterns that have been estimated using OU modelling. Cressler et al. (2015) demonstrated that a signal-to-noise ratio ($\sqrt{η}ϕ$) provides a better predictor of power than sample size. This ratio compares the minimum difference in mean value among regimes (multiplied by the strength of directional change among regimes) with a measure of noise intensity. Cressler et al. (2015) demonstrated that when $\sqrt{η}ϕ≫1$, high statistical power can be inferred. Such measures of effect size are crucial indicators of reliability and can thus be used to build confidence in the accuracy of estimated patterns.
 
 Third, reliability of the estimated patterns can further be confirmed by testing the same hypothesis using different methods with different model assumptions. If the same result is obtained regardless off methods used or models assumed, it can be concluded that the results are reliable.
 
-We followed these three steps to confirm the patterns estimated by the Bayesian reversible-jump OU procedure. We confirmed the statistical significance of differences in intercept among three grades using pANCOVA (Figure 3), demonstrated that ηϕ≫1 is true for the results presented in Figure 3, and that the pattern presented in Figure 3 is confirmed using pANCOVA, mvBM ancestral and rate estimation and rjBM ancestral and rate estimation.
+We followed these three steps to confirm the patterns estimated by the Bayesian reversible-jump OU procedure. We confirmed the statistical significance of differences in intercept among three grades using pANCOVA (Figure 3), demonstrated that $\sqrt{η}ϕ≫1$ is true for the results presented in Figure 3, and that the pattern presented in Figure 3 is confirmed using pANCOVA, mvBM ancestral and rate estimation and rjBM ancestral and rate estimation.

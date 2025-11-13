@@ -14,4 +14,4 @@
 
 ## Abstract
 
-Deleting a gene called Sema5A , which has been linked to autism in humans, causes neurons to form more connections in mice, and also alters how these mutant mice interact with other mice.
+Deleting a gene called Sema5A, which has been linked to autism in humans, causes neurons to form more connections in mice, and also alters how these mutant mice interact with other mice.

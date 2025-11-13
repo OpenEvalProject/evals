@@ -19,12 +19,12 @@
 
 ### Affiliations
 
-1. https://ror.org/0431v7h69 Fundación Instituto Leloir-CONICET Buenos Aires Argentina
-2. https://ror.org/056tb7j80 Centro de Investigaciones en Bioquímica Clínica e Inmunología, CIBICI-CONICET, Departamento de Bioquímica Clínica, Facultad de Ciencias Químicas, Universidad Nacional de Córdoba Córdoba Argentina
+1. Fundación Instituto Leloir-CONICET Buenos Aires Argentina ([ROR:0431v7h69](https://ror.org/0431v7h69))
+2. Centro de Investigaciones en Bioquímica Clínica e Inmunología, CIBICI-CONICET, Departamento de Bioquímica Clínica, Facultad de Ciencias Químicas, Universidad Nacional de Córdoba Córdoba Argentina ([ROR:056tb7j80](https://ror.org/056tb7j80))
 3. OncoPrecision Córdoba Argentina
-4. https://ror.org/03d1wq758 Center for Molecular Medicine, Maine Medical Center Research Institute Scarborough United States
-5. https://ror.org/01xsqw823 GlaxoSmithKline-Trust in Science, Global Health R&D Stevenage United Kingdom
-6. https://ror.org/025vn3989 GlaxoSmithKline-Trust in Science, Global Health R&D Upper Providence United States
+4. Center for Molecular Medicine, Maine Medical Center Research Institute Scarborough United States ([ROR:03d1wq758](https://ror.org/03d1wq758))
+5. GlaxoSmithKline-Trust in Science, Global Health R&D Stevenage United Kingdom ([ROR:01xsqw823](https://ror.org/01xsqw823))
+6. GlaxoSmithKline-Trust in Science, Global Health R&D Upper Providence United States ([ROR:025vn3989](https://ror.org/025vn3989))
 
 † Corresponding author
 
@@ -46,7 +46,7 @@ In this study, we present findings indicating that BRCA2-deficient cells are hig
 
 ## Results
 
-## BRCA2-deficient cells are sensitive to ROCK inhibition
+### BRCA2-deficient cells are sensitive to ROCK inhibition
 
 In a previous work (Carbajosa et al., 2019), we developed a phenotypic survival screening method to evaluate the differential sensitivity of BRCA1-deficient cells against 680 ATP-competitive kinase inhibitors provided by GlaxoSmithKline (Drewry et al., 2017; Elkins et al., 2016). Briefly, the screening was performed using HCT116p21-/- cell lines in which BRCA1 or BRCA2 were stably downregulated using shRNA (Figure 1A). This strategy allowed a comparison of BRCA-proficient vs BRCA-deficient cell lines on an isogenic background. In addition, HCT116p21-/- cells are easy to grow and tolerate low seeding densities compatible with long-term (i.e. 6 days) survival analysis. Additionally, we used a p21 knockout background, which attenuates the cell cycle arrest that otherwise would mask the cytotoxic phenotypes during the screening time frame.
 
@@ -56,15 +56,108 @@ In a previous work (Carbajosa et al., 2019), we developed a phenotypic survival 
 
 In this work, we analyzed the screening results of the BRCA2-deficient cell population. BRCA2 depletion by shRNA in HCT116p21-/- cells was sufficient to trigger increased sensitivity to olaparib (Figure 1B–C). For the analysis, we focused on compounds that induced SL exclusively in the BRCA2-deficient population and were not toxic to control samples or BRCA1-deficient cells (Figure 1D). Interestingly, BRCA2-deficient cells showed remarkable sensitivity to three inhibitors of ROCK kinases (ROCK) (Figure 1E and Table 1). The selective activity of all ROCK inhibitors was further validated at a higher dose (Table 1) and in a dose-response curve for the three most potent ones (Figure 1F).
 
+**Table 1.**
+ Phenotypic screening identifies ROCK kinases as potential targets for synthetic lethality in BRCA2 cells.(A) Table listing all ROCK inhibitors from the PKIS2 library and their corresponding survival difference at 0.1 and 1 μM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Survival difference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Inhibitor</td>
+      <td>0.1 µM</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>GSK180736A</td>
+      <td>0</td>
+      <td>8.15</td>
+    </tr>
+    <tr>
+      <td>GSK248233B</td>
+      <td>47.57</td>
+      <td>41.99</td>
+    </tr>
+    <tr>
+      <td>GSK269962B</td>
+      <td>25.58</td>
+      <td>28.49</td>
+    </tr>
+    <tr>
+      <td>GSK270822A</td>
+      <td>0</td>
+      <td>38.12</td>
+    </tr>
+    <tr>
+      <td>GSK429286A</td>
+      <td>0.29</td>
+      <td>18.11</td>
+    </tr>
+    <tr>
+      <td>GSK466314A</td>
+      <td>0</td>
+      <td>25.41</td>
+    </tr>
+    <tr>
+      <td>GSK534911A</td>
+      <td>25.5</td>
+      <td>33.72</td>
+    </tr>
+    <tr>
+      <td>GSK534913A</td>
+      <td>0</td>
+      <td>32.50</td>
+    </tr>
+    <tr>
+      <td>SB-772077-B</td>
+      <td>0</td>
+      <td>67.80</td>
+    </tr>
+  </tbody>
+</table>
+
 To test the sensitivity of BRCA2-depleted cells to ROCK inhibition, we took advantage of three commercially available ROCK inhibitors (ROCKi). Two of them are fasudil and ripasudil, which are approved for diseases other than cancer (Garnock-Jones, 2014; Shi and Wei, 2013). Both are ATP-competitive inhibitors targeting ROCK1 and ROCK2 (Nakagawa et al., 1996). In addition, we used the inhibitor SR 3677 dihydrochloride, which is a newer ROCK inhibitor that has interesting advantages such as a low IC50 and high potency in biochemical and cell-based assays as well as high selectivity for ROCK (Feng et al., 2008). We performed survival assays with fasudil in several cellular models of BRCA2 deficiency, including the HCT116p21-/- cell line used in the screening (Figure 2A). We also tested survival in DLD-1/DLD-1BRCA2-/- paired cell lines, which are BRCA2 knockout (Figure 2B) and the PEO4/PEO1, V-C8 #13 /V-C8 paired cell lines (see description of cell lines in the methods section - Figure 2C–D). SL was observed in all BRCA2-deficient cell line models following fasudil treatment (Figure 2A–D). Cell death was confirmed using SYTOX green, a dye that only enters cells when cellular membranes have been compromised (Figure 2E) and in clonogenic survival assays (Figure 2—figure supplement 1). Similar differences between control and BRCA2-deficient counterparts were observed with ripasudil and SR 3677 dihydrochloride, two other ROCKi (Figure 2—figure supplement 2A–C). In contrast, the BRCA1-deficient cell line HCC1937 (Tomlinson et al., 1998), which is sensitive to olaparib (Figure 2—figure supplement 2D), did not exhibit increased sensitivity to fasudil or ripasudil compared to the complemented HCC1937BRCA1 cell line (Treszezamsky et al., 2007; Figure 2—figure supplement 1E–F). Similar results were observed using HCT116 cellular models depleted from BRCA1 (Figure 2—figure supplement 2G–I). The unique sensitivity of BRCA2-deficient cells to ROCKi suggests that the SL observed is likely independent of the homologous recombination function of BRCA2.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig2-v2.jpg)
+
+**Figure 2.:** (A) Relative cell number (%) of shScramble and shBRCA2 HCT116p21-/- cells after 6 days of treatment with fasudil (N=3). (B) Relative cell number (%) of DLD-1WTand DLD-1BRCA2-/- after 6 days of treatment with fasudil (N=2). (C) Relative cell number (%) of V-C8#13 and V-C8 cells after 6 days of treatment with fasudil (N=3). (D) Relative cell number (%) of PEO4 and PEO1 cells after 6 days of treatment with fasudil (N=4). Panels A-D: the cell cartoon shows the BRCA2 status caused by the modification introduced at last in each pair of cell lines (see Materials and methods for further details). Black borders indicate that the modification generated a BRCA2 proficient status and blue borders aBRCA2 deficiency. (E) FACS analysis of SYTOX green-stained PEO4 and PEO1 cells 6 days after fasudil treatment (128 μM, N=2). Statistical analysis was performed with a two-way ANOVA test followed by a Bonferroni post-test (*p<0.05, **p<0.01, ***p<0.001). Data in A-D are shown as the average of independent experiments with the standard error of the mean.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Scheme of the experimental design for the clonogenic assay. (B) Cell colony number of fasudil-treated shScramble and shBRCA2 HCT116 p21-/- cells (N=2). Representative images are shown on the right. Statistical analysis was performed with a two-way ANOVA test followed by a Bonferroni post-test (*p<0.05, **p<0.01, ***p<0.001).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Relative cell number (%) of V-C8#13 and V-C8 cells after 6 days of treatment with ripasudil (N=1). (B) Relative cell number (%) of PEO4 and PEO1 cells after 6 days of treatment with ripasudil (N=2). (C) Relative cell number (%) of PEO4 and PEO1 cells after 6 days of treatment with SR 3677 dihydrochloride (N=2). (D) Relative cell number (%) of HCC1937BRCA1 and HCC1937 cells after 6 days of treatment with olaparib (N=3). (E) Relative cell number (%) of HCC1937BRCA1 and HCC1937 cells after 6 days of treatment with fasudil (N=3). (F) Relative cell number (%) of BRCA1-proficient HCC1937BRCA1 and BRCA1-deficient HCC1937 cells after 6 days of treatment with ripasudil (N=2). (G) Quantitative real-time PCR of BRCA1 in shScramble and shBRCA1 HCT116p21-/- cells. (H) Relative cell number (%) of shScramble and shBRCA1 HCT116p21-/- cells after 6 days of treatment with olaparib (N=2). (I) Relative cell number (%) of shScramble and shBRCA1 HCT116p21-/- cells after 6 days of treatment with fasudil (N=2). Statistical analysis was performed with a two-way ANOVA test followed by a Bonferroni post-test (*p<0.05, **p<0.01, ***p<0.001). Data in A-F; H-I are shown as the average of independent experiments with the standard error of the mean. Panels A-F and H-I: the cartoon cells show the BRCA2 or BRCA1 status of the modification introduced at last in each pair of cell lines (see Materials and methods for further details). Black borders indicate that the modification generated a BRCA2 or BRCA1 proficient status, the blue borders indicate BRCA2 deficiency and the red borders represent BRCA1 deficiency.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Relative cell number (%) of shScramble and shBRCA2 HCT116p21-/- (N=2), DLD-1WT and DLD-1BRCA2-/- (N=2), and V-C8#13 and V-C8 (N=3) cells after 6 days of treatment with olaparib. (B) Relative cell number (%) of PEO4 and PEO1 cells after 6 days of treatment with olaparib (N=2). (C) Nucleotide sequence (TAC, tyrosine) of aminoacid #1655 of the BRCA2 reference sequence NM_000059.3, and the nucleotide sequences found in PEO1 (TAG, stop codon) and PEO4 (TAT, tyrosine). Schematic of a fragment sequence of BRCA2 showing the primers (highlighted in magenta) used to amplify a 694 bp fragment around aminoacid #1655. The PEO1 mutation site TAG is highlighted in red. The DrdI enzyme digestion site is highlighted in yellow. (D) Agarose gel showing undigested and digested (DrdI enzyme) products of a 694 bp fragment of the BRCA2 gene from PEO4 and PEO1 cells (Black arrow head). The nonsense mutation in PEO1 (BRCA2-deficient cell lines) generates a restriction site for the DrdI enzyme giving rise to two digestion products of 480 bp and 214 bp (blue arrow head). (E) Relative cell number (%) of PEO4 and PEO1 cells treated with cisplatin (24 hr) followed by 5 days of growth in cisplatin-free media (N=2). Data are shown as the average of three technical replicates with the standard deviation. Panels A-E: Statistical analysis was performed using a t-test (*p<0.05, **p<0.01, ***p<0.001).
 
 Importantly, we observed strong SL by ROCKi in growing conditions that triggered only mild sensitivity to PARPi. While HCT116p21-/- shBRCA2, V-C8 and DLD-1BRCA2-/- were all sensitive to olaparib (Figure 2—figure supplement 3A), PEO1 showed only modest sensitivity to olaparib in our experimental conditions (Figure 2—figure supplement 3B), despite reports indicating sensitivity to PARPi (Sakai et al., 2009; Stukova et al., 2015; Whicker et al., 2016). We confirmed that PEO1 were BRCA2-deficient. The BRCA2 mutation in PEO1 (5193C>G) creates a premature stop codon and also a digestion site for the enzyme DrdI. In contrast, the reversion mutation in PEO4 (5193C>T) abolishes this site (Figure 2—figure supplement 3C). Consistent with their expected point mutation, following DrdI digestion PEO1 cells showed two DNA fragments (480 bp and 214 bp), which were not observed in PEO4 cell lines (Figure 2—figure supplement 3D). Additionally, as previously reported for BRCA2-deficient cell lines (Sakai et al., 2009; Stronach et al., 2011; Stukova et al., 2015; Whicker et al., 2016) PEO1 cells are sensitive to cisplatin (Figure 2—figure supplement 3E). Our results suggest that while clonogenic assays and other approaches may better expose the sensitivity of PEO1 to olaparib, strong SL induced by ROCKi is observed in growing conditions that reveal only mild sensitivity to PARPi. Hence, synthetic lethal avenues that diverge from PARPi could provide efficient therapeutic alternatives for treating BRCA2-deficient cancer cells.
 
-## Replication stress is not the major driver of SL between BRCA2 deficiency and ROCK inhibition
+### Replication stress is not the major driver of SL between BRCA2 deficiency and ROCK inhibition
 
 The SL observed between BRCA deficiency and PARPi is preceded by the accumulation of acute replication stress caused by PARP trapping on the DNA (Murai et al., 2012; Schoonen et al., 2017). As BRCA-deficient cells keep progressing across S phase in the presence of PARPi, PARP/DNA adducts exacerbate replication stress resulting from fork stalling, gap formation and fork collapse (Kolinjivadi et al., 2017; Lemaçon et al., 2017; Mijic et al., 2017; Panzarino et al., 2021; Schlacher et al., 2011; Taglialatela et al., 2017). Consistent with those reports, the treatment of HCT116p21-/- shBRCA2 cells with olaparib caused the acute accumulation of replication stress markers such as γH2AX and 53BP1 nuclear foci, which represent sites of DSB formation in S phase (Figure 3A–C and Figure 3—figure supplement 1A–B). In striking contrast to olaparib, no increase in 53BP1 or γH2AX foci was induced by fasudil treatment in HCT116p21-/- shBRCA2 cells (Figure 3A–C and Figure 3—figure supplement 1A–B) at this time. These results were also validated in PEO cells (Figure 3D and Figure 3—figure supplement 1C). In line with the lack of acute replication stress, we did not observe alterations in DNA replication parameters, such as nascent DNA track length or the frequency of origin firing after fasudil treatment (Figure 3F–G and positive controls in Figure 3—figure supplement 1D). We also did not observe differences in the percentage of BrdU+ cells after 3 or 6 days of fasudil treatment compared to untreated cells (Figure 3E). Additionally, the intensity of BrdU, a parameter than reveals subtle alterations of the DNA replication program undetectable by the DNA fiber assay (Calzetta et al., 2021), was also unaffected (Figure 3—figure supplement 1E). Given that the synthetic lethality of fasudil was more evident 6 days post-treatment, we evaluated whether fasudil causes replicative stress at that time, and observed no evidence of augmented γH2AX intensity or 53BP1 focal organization in HCT116p21-/- shBRCA2 and PEO1 (BRCA2-/-) 6 days post-treatment (Figure 3—figure supplement 2). These findings point toward a cell death mechanism independent from the accumulation of DNA damage in S phase.
 
-## ROCK inhibition induces mitotic defects in BRCA2-deficient cells
+![Figure 3.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig3-v2.jpg)
+
+**Figure 3.:** (A) yH2AX intensity/cell of shScramble or shBRCA2 HCT116p21-/- cells (N=2). (B) Representative images of yH2AX intensity in single cells. (C) Number of 53BP1 foci/cell in shScramble and shBRCA2 HCT116p21-/- cells (N=2). (D) yH2AX intensity/cell in PEO1 or PEO4 cells (N=2). (E) Percentage of PEO4 and PEO1 cells stained with BrdU at 3 and 6 days after fasudil treatment (128 μM, N=2). A total of 500 cells were analyzed for each sample. Representative images of PEO1 cells after 3 days of fasudil treatment (BrdU shown in green, DAPI shown in blue). (F) Labelling scheme and IdU track lengths of shScramble and shBRCA2 HCT116p21-/- cells, treated with fasudil for 48 h (N=2). Representative images of individual DNA fibers are shown on the left side of the panel. (G) Origin firing frequency (percentage) of shScramble or shBRCA2 HCT116p21-/- cells in samples showed in E (N=2). Statistical analysis was performed using a two-way ANOVA test followed by a Bonferroni post-test (*p<0.05, **p<0.01, ***p<0.001). Data are shown as the average of independent experiments with the standard error of the mean.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Percent of shScramble or shBRCA2 HCT116p21-/- cells with >5 53BP1 foci (N=3) and representative images of the treatments. A total of 300–400 cells were analyzed per independent experiment. Cells were treated for 48 hr. (B) Percent of shScramble or shBRCA2 HCT116p21-/- cells with >35 γH2AX foci (N=3) and representative images of the treatments. A total of 300–400 cells were analyzed per independent experiment. Cells were treated for 48 hr. (C) Percent of PEO4 and PEO1 cells with >35 γH2AX foci (N=2). A total of 300–400 cells were analysed per independent experiment. (D) Labelling scheme and IdU track lengths of shScramble and shBRCA2 HCT116p21-/- cells treated with HU for 4 h (N=2). On the right-hand side of the panel are representative images of individual DNA fibers. (E) BrdU intensity in experiments from Figure 3D. PEO4 (grey circles) and PEO1 (blue circles) cells after 3 or 6 days of fasudil treatment (128 μM, N=2). A total of 500 cells were analyzed for each sample. Individual intensity values per cell are displayed as a scatter plot and the average and standard deviation of each population are shown. Statistical analysis in A-D were performed with a two-way ANOVA test followed by a Bonferroni post-test (*p<0.05, **p<0.01, ***p<0.001). Statistical analysis in E was done with a Kruskal-Wallis non-parametric test followed by a Dunn’s multiple comparison test (*p<0.05, **p<0.01, ***p<0.001).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) γH2AX intensity/cell of shBRCA2 HCT116p21-/- and PEO1 (BRCA2-/-) cells after 6 days of fasudil treatment (N=2). Cells were divided according to their number of nuclei (mono, bi, and multinucleated cells). (B) Number of 53BP1 foci/nuclei in shBRCA2 HCT116p21-/- and PEO1 (BRCA2-/-) cells (N=2). Statistical analysis was performed with a one-way ANOVA test followed by a tuckey post-test (*p<0.05, **p<0.01, ***p<0.001). Data are shown as the average of independent experiments.
+
+### ROCK inhibition induces mitotic defects in BRCA2-deficient cells
 
 To further characterize such a replication stress-independent SL, we analyzed cell cycle profiles with propidium iodide staining. Consistent with reduced survival at 6 days (Figure 2), in BRCA2-deficient cells, we observed a sub-G1 peak after fasudil treatment indicative of apoptotic cell death (Figure 4A–B). In terms of cell cycle distribution, BRCA2-deficient cells treated with fasudil exhibited an accumulation of cells in G2/M indicative of a G2/M arrest (Figure 4A–B). Intriguingly, BRCA2-deficient cells also exhibited a peak of >4N polyploid cells (Figure 4A–B). By performing a detailed time course in which samples were collected in 24 h intervals, we observed that the polyploidy phenotype was cumulative (Figure 4C). While the G2/M arrest in BRCA2-deficient cells appeared as early as 24 h post-treatment, polyploidy became strongly evident after 72 h (i.e.: 3 days). The sub-G1 population was also evident as early as 24 h post-treatment but increased at longer time points after polyploidy detection (i.e.: after 3 days). These data suggest that the accumulation of cells in G2/M precedes both polyploidy and cell death.
 
@@ -76,27 +169,59 @@ The concomitant accumulation of cells in G2/M (which could also include G1 cells
 
 Aberrant metaphases can be triggered by unresolved DNA replication defects accumulated after DNA replication stress (Gelot et al., 2015), but can also be prompted within M phase as a consequence of aberrant mitotic spindle organization or disorganized chromosome alignment (Bakhoum et al., 2009; Shindo et al., 2021; Siri et al., 2021). Aberrant anaphases (bridges and lagging chromosomes; Figure 5A) can also be triggered either by replication defects not resolved before M phase entry or intrinsic mitotic defects dissociated from S phase (Bakhoum et al., 2009; Shindo et al., 2021). We documented an increase in chromosome bridges, but not in lagging chromosomes, after fasudil treatment of BRCA2-deficient cells (Figure 5B–C). To confirm the increase of chromosome bridges observed with fasudil, we used commercially available siRNAs against ROCK1 and ROCK2 (Figure 5D). Similarly to ROCKi, ROCK1 and ROCK2 (ROCK1/2) depletion promoted the accumulation of anaphase bridges in BRCA2-deficient cells (Figure 5E). Importantly, when resulting from unresolved replication defects, anaphase aberrations are typically accompanied by chromosome aberrations (i.e. breaks, exchanges) and micronuclei (Finardi et al., 2020; Utani et al., 2010). However, we did not find any indication of chromosome aberrations or micronuclei in fasudil-treated BRCA2-deficient cells (Figure 5—figure supplement 1A–B), suggesting that the trigger for anaphase bridge formation following fasudil treatment is a defect intrinsic to M phase.
 
-## ROCK inhibition causes cytokinesis failure in BRCA2-deficient cells
+![Figure 5.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative images of normal and abnormal anaphases with bridges and lagging chromosomes. (B) Percentage of anaphases with chromosomes bridges and lagging chromosomes in PEO4 and PEO1 cells treated with fasudil (128 μM). Fifty to 70 anaphases per sample were analyzed in two independent experiments (N=2). (C) Percentage of anaphases with chromosomes bridges and lagging chromosomes in shScramble- or shBRCA2-transduced HCT116p21-/- cells treated with fasudil. 50–70 anaphases per sample were analyzed per independent experiment (N=3). (D) Quantitative real-time PCR of ROCK1 and ROCK2 in shBRCA2 HCT116p21-/- cells transfected with 150 μM of siROCK1 or siROCK2 (N=2). (E) Percentage of anaphases with chromosomes bridges and laggards in shBRCA2 HCT116p21-/- cells transfected with siROCK (1+2). A total of 50–70 anaphases per sample were analyzed in three independent experiments (N=2). The statistical analysis of the data was performed with a two-way ANOVA test followed by a Bonferroni post-test (*p<0.05, **p<0.01, ***p<0.001). Data are shown as the average of independent experiments with the standard error of the mean.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Frequency of chromosome aberrations in shScramble or shBRCA2 HCT116p21-/- cells following treatment with olaparib (0.5 μM) or fasudil (32 μM) (N=3). A total of 50 metaphases were analyzed per condition. Chromosome aberrations include chromatid breaks and chromatid exchanges. Representative images of a chromatid break and a chromatid exchange are shown on the right. (B) Percent of shScramble or shBRCA2 HCT116p21-/- cells with micronuclei in binucleated cells (N=2). On the right are representative images of binucleated cells with and without micronuclei. Twenty-four h after seeding, cells were treated with the indicated inhibitors and 24 h later with cytochalasin B for 30 hr. A total of 300–400 cells were analyzed per independent experiment. Statistical analysis of all figures were performed with a two-way ANOVA test followed by a Bonferroni post-test (*p<0.05, **p<0.01, ***p<0.001). Data are shown as the average of independent experiments with the standard error of the mean.
+
+### ROCK inhibition causes cytokinesis failure in BRCA2-deficient cells
 
 Since BRCA2-deficient cells treated with ROCKi accumulate M phase defects, we explored the link between ROCK and mitosis. ROCK are crucial regulators of the actin cytoskeleton (Julian and Olson, 2014). ROCK have been implicated in regulating the contraction of the actin cytoskeleton towards the end of mitosis and its downregulation or absence induces multinucleation due to cytokinesis failure (Daniels et al., 2004; Jonsdottir et al., 2009; Mondal et al., 2012; Shive et al., 2010). On the other hand, BRCA2 localizes to the midbody during cytokinesis and its downregulation or absence was also reported to induce multinucleation (Lekomtsev et al., 2010). To explore whether a convergent defect triggers cytokinesis failure after ROCK inhibition in BRCA2-deficient cells, we stained the actin cytoskeleton with phalloidin to distinguish the cytoplasm of individual cells and analyzed the formation of binucleated as well as multinucleated cells after fasudil treatment (Figure 6A). We observed a marked increase of binucleation in BRCA2-deficient cells following fasudil treatment (Figure 6B–C). Also, we documented an increase of multinucleation in BRCA2-deficient cells transfected with siROCK (Figure 6—figure supplement 1A–B). Consistent with the polyploidy (>4N) observed with flow cytometry, fasudil treatment also increased the percentage of multinucleated cells with 3, 4, or 5+ nuclei (Figure 6B–C). Similar to the polyploidy observed in the cell cycle profiles, the proportion of multinucleated cells was more severe at later endpoints (Figure 6B–C), suggesting that despite cytokinesis failure, binucleated cells continue to cycle, thus further increasing their DNA content. Indeed, the percentage of BRCA2-deficient binucleated cells transiting S phase, as revealed by cyclin A staining, was between 30 and 40% irrespective of ROCKi. This result indicates that despite their diploid DNA content, BRCA2-deficient cells treated with fasudil were able to start a new cell cycle and transit through a second S phase (Figure 6—figure supplement 1C–D).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative pictures of PEO1 cells after fasudil treatment. Nuclei are stained with DAPI (shown in blue), and the cytoplasm of individual cells is stained with phalloidin which stains the actin cytoskeleton (shown in green). (B) Percent of binucleated and multinucleated PEO4 and PEO1 cells after 3 days of fasudil treatment (N=3, 128 μM). (C) Percent of binucleated and multinucleated number of PEO4 and PEO1 cells after 6 days of fasudil treatment (N=3, 128 μM). A total of 200 cells were analyzed per sample. (D) Representative pictures of PEO1 metaphases showing cells with normal and abnormal mitotic spindles. DNA, centrosomes, and microtubules are shown in blue, red, and green, respectively. (E) Percent of metaphases in PEO4 and PEO1 cells with multipolar spindles after 3 days of fasudil treatment (N=3, 128 μM). (F) Percent of metaphase in PEO4 and PEO1 cells with multipolar spindles after 6 days of fasudil treatment (N=2, 128 μM). Mitotic spindles were visualized by staining centrosomes (γ-tubulin) and microtubules (α-tubulin) and DNA was stained with DAPI. Cells were classified as having multipolar spindle (3, 4, or 5 or more spindles). A total of 100 metaphases were analyzed per sample. Statistical analysis was performed using a two-way ANOVA test followed by a Bonferroni post-test (*p<0.05, **p<0.01, ***p<0.001). Data are shown as the average of independent experiments with the standard error of the mean.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Percent of binucleated PEO1 cells transfected with siROCK (1+2) or treated with fasudil (N=2). (B) Percent of binucleated shBRCA2 HCT116p21-/- cells transfected with siROCK (1+2) or treated with fasudil (N=2). (C) Representative PEO1 cells stained with DAPI, Cyclin A (S phase marker, red) and Phalloidin (actin cytoskeleton, green) after fasudil treatment (3 days, 128 μM). (D) Quantification of cyclin A positive cells in each group: mononucleated; binucleated. The percentage of mononucleated or binucleated over total cells is shown in the lower part of the panel. Statistical analysis was performed using a two-way ANOVA test followed by a Bonferroni post-test (*p<0.05, **p<0.01, ***p<0.001). Data are shown as the average of two independent experiments with the standard error of the mean.
+
 One immediate consequence of cytokinesis failure is that the resulting cell contains two centrosomes instead of one (Ganem et al., 2007). Normal cells harbor one centrosome, which duplicates only once during S phase. During normal mitosis, duplicated centrosomes form a bipolar mitotic spindle ensuring equal chromosome distribution in daughter cells (Nigg, 2007). In contrast, multiple centrosomes can lead to multipolar mitosis and cell death (Ganem et al., 2009). We stained cells for gamma-tubulin and alpha-tubulin, central components of centrosomes and microtubules, respectively (Brinkley, 1997; Fuller et al., 1995) and focused the analysis on mitotic cells. BRCA2-deficient cells treated with fasudil exhibited increased numbers of multipolar mitosis that correlated with increased centrosome number (i.e.:>2; Figure 6D–F). Similar to previously observed phenotypes, such as aberrant metaphases, binucleated cells and polyploidy, the percentage of multipolar mitosis increased at later endpoints (Figure 6F). Together, these results suggest that the cytokinesis failure and altered centrosome numbers lead to multipolar mitosis, which could trigger cell death in fasudil-treated BRCA2-deficient cells.
 
-## Cytokinesis failure sensitizes BRCA2-deficient cells to cell death
+### Cytokinesis failure sensitizes BRCA2-deficient cells to cell death
 
 The results described in Figure 4A–C, Figure 6—figure supplement 1C–D, and Figure 6 indicate that the treatment of BRCA2-deficient cells with ROCKi causes cytokinesis failure and triggers the accumulation of binucleated cells with proliferation capacity. The implications are that cells with >4N DNA content die when attempting to duplicate aberrantly duplicated DNA or when assembling aberrant mitotic spindles in the subsequent mitosis. Supporting such a model is the time course in Figure 7A–C. A significant change in the binucleation of BRCA2-deficient cells was observed as early as 24 h post-fasudil (Figure 7A), while a significant increase of aberrant anaphases and mitosis was detected later on, at 48 h (Figure 7B–C). Surprisingly, binucleation-related cell death is not triggered in control cells, even at doses of ROCKi that kill BRCA2-proficient cells (Figure 7—figure supplement 1A–B). Hence, these results support the likelihood of cytokinesis failure as the trigger for the SL caused by ROCK inhibition in BRCA2-deficient cells.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig7-v2.jpg)
+
+**Figure 7.:** (A) Percent of binucleated PEO1 and PEO4 cells treated with fasudil at the indicated time points after treatment (N=2). (B) Percent of aberrant anaphases in PEO1 and PEO4 cells treated with fasudil at the indicated time points after treatment (N=2). (C) Percent of mitotic aberrations in PEO1 and PEO4 cells treated with fasudil at the indicated time points after treatment (N=2). For panels A to C, statistical analysis was performed using a two-way ANOVA test followed by a Bonferroni post-test (*p<0.05, **p<0.01, ***p<0.001). Data are shown as the average of independent experiments with the standard error of the mean. (D) Representative scheme of the results obtained in A-C.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Relative cell number (%) of PEO4 and PEO1 cells at 6 days after treatment with different doses of fasudil (N=2). (B) Percent of binucleated PEO4 cells treated with different doses of fasudil (N=2). The percentage of binucleated in PEO1 cells was only quantified in fasudil 128 μM to serve as a positive control of binucleated cells. Statistical analysis was performed using a two-way ANOVA test followed by a Bonferroni post-test (*p<0.05, **p<0.01, ***p<0.001). Data are shown as the average of independent experiments with the standard error of the mean.
+
 If cytokinesis defects caused by ROCKi are the trigger of BRCA2-deficient SL, targeting other factors that regulate cytokinesis should also induce cell death. To test this hypothesis, we downregulated Citron Rho-interacting kinase (CITK), an enzyme that is highly enriched in the midbody during cytokinesis (Madaule et al., 1998; Sahin et al., 2019; Figure 8A). CITK is required for proper RhoA localization at the cleavage site during late cytokinesis (Sahin et al., 2019). Similar to the phenotypes of siROCK1/2, CITK downregulation reduced cell survival of BRCA2-deficient cells (Figure 8B and Figure 8—figure supplement 1A). In addition, and recapitulating the effect of ROCK inhibition or depletion, CITK downregulation increased the number of multinucleated cells in BRCA2-deficient cells (Figure 8C). Most remarkably, combined silencing of CITK and ROCK1/2 was not additive/synergic (Figure 8B), suggesting that ROCK and CITK depletion induce synthetic lethality in BRCA2-deficient cells. Together, these findings indicate that cytokinesis failure by multiple sources could induce death in BRCA2-deficient cells.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig8-v2.jpg)
+
+**Figure 8.:** (A) Quantitative real-time PCR of CITK in shBRCA2 HCT116p21-/- cells transfected with 150 μM of siCITK (N=2). (B) Relative cell number (%) of PEO4 and PEO1 after 6 days of being transfected with siROCK (1+2), siCITK or siROCK (1+2)/siCITK and representative images of the transfected cells (N=2). (C) Percent of binucleated PEO1 cells transfected with siROCK (1+2), CITK or siROCK (1+2)/siCITK (N=2). (D) Quantitative real-time PCR of EMI1 in shBRCA2 HCT116p21-/- cells transfected with 150 μM of siEMI1 (N=2). (E) Relative cell number (%) of PEO4 and PEO1 after 6 days of being transfected with siEMI1 and treated with fasudil (N=2). Representative images of the transfected and treated cells. (F) Cell cycle analysis of PEO1 cells following transfection with siEMI1 for 48hs (N=2). Cells were stained with propidium iodide and DNA content was analyzed via FACS (10,000 events per sample). (G) Model depicting the events leading to BRCA2-deficient cell death after fasudil treatment. The inhibition or depletion of ROCK in BRCA2-deficient cells leads to cytokinesis failure. As a result, the daughter cells are binucleated (4N) and have extra centrosomes (two instead of one). We speculate that after a subsequent DNA duplication, these cells can attempt mitosis. Mitosis entry with increased DNA content and extra centrosomes may frequently give rise to abnormal and multipolar spindles, leading to misaligned chromosomes and mitotic failure due to multipolar spindle formation. Alternatively, cytokinesis may fail again, and cells may temporarily survive as multinucleated cells, possibly facing cell death during subsequent mitotic attempts.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/80254/elife-80254-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Relative cell number (%) of shScramble and shBRCA2 HCT116p21-/- cells at 6 days after transfection with siCITK or siROCK (1+2) (N=2). Representative images are shown on the right. (B) Relative cell number (%) of shScramble and shBRCA2 HCT116p21-/- cells at 6 days after transfection with siEMI1. Samples were treated with fasudil when indicated (N=2). Representative images are shown on the right. Statistical analysis was performed using a two-way ANOVA test followed by a Bonferroni post-test (*p<0.05, **p<0.01, ***p<0.001). Data are shown as the average of independent experiments with the standard error of the mean.
 
 If aberrant transit through mitosis is the origin of the cell death triggered by ROCKi, then the bypass of mitosis should protect those cells from cell death. To this end, we downregulated Early mitotic inhibitor-1 (EMI1), an anaphase-promoting complex (APC) inhibitor that has a crucial role in the accumulation of mitosis activators, including B-type cyclins (Reimann et al., 2001). When transfecting siEMI1, we observed a 65% reduction in EMI1 expression (Figure 7D) and, as reported by others (Robu et al., 2012; Shimizu et al., 2013; Verschuren et al., 2007), accumulation of cells with G2/M DNA content or higher (Figure 8E). EMI1 depletion prevented the SL effect of ROCKi on different BRCA2-deficient cells (Figure 8F and Figure 8—figure supplement 1B). Therefore, these results indicate that BRCA2-deficient cells that die upon ROCK inhibition do so after transiting an aberrant mitosis.
 
 ## Discussion
 
-## Targeting mitosis as an alternative SL strategy
+### Targeting mitosis as an alternative SL strategy
 
 In this work, we used a novel screening platform developed and validated by our group (Carbajosa et al., 2019; García et al., 2020) to identify ROCK as novel targets for SL induction in BRCA2-deficient cells. Using commercially available, and clinically relevant, ROCKi (i.e.: fasudil, ripasudil and SR 3677 dihydrochloride) (Feng et al., 2016; Feng et al., 2008; Lee et al., 2019), we observed a dose-dependent SL-induction in multiple BRCA2-deficient cell lines which showed no signs of DNA replication stress. In contrast, these cells exhibited strong mitotic defects due to the cytokinesis failure induced by ROCKi. Remarkably, cell death by ROCK inhibition or depletion was recapitulated by inhibiting another enzyme that facilitates cytokinesis, CITK, supporting a model in which binucleation precedes multinucleation and SL (Figure 8G). In fact, robust evidence in the literature indicates that highly abnormal metaphases/anaphases, such as the ones we observed, are incompatible with cell viability (Ganem et al., 2009) and are, therefore, the most plausible cause for the SL induced by ROCKi in BRCA2-deficient cells. While still viable, multinucleated cells are highly vulnerable. The presence of extra DNA content and centrosomes, increases the chances of abnormal spindle polarity, as well as the number of chromosomes that need to be properly aligned. In fact, attempts to trigger cell division in such states is incompatible with viability (Ganem et al., 2009; Dale Rein et al., 2015; Schoonen et al., 2017). We, therefore, postulate that the cytokinesis failure of a cell with 4N or more DNA content is the major driver for BRCA2-deficient cell death following ROCK inhibition. Because we have not identified the molecular target of ROCK which dysregulation triggers SL in BRCA2-deficient cells, further research on the mitotic functions of BRCA2 will be necessary to fully understand this SL pathway. However, we believe it is valuable to report that targeting mitosis alone in the absence of increased replication stress may suffice to kill BRCA2-deficient cells.
 
-## BRCA2-deficient cells can be killed in a manner that is independent from the induction of replication stress
+### BRCA2-deficient cells can be killed in a manner that is independent from the induction of replication stress
 
 In addition to the well-documented replication stress-mediated toxicity of PARPi in BRCA-deficient cells, a recent report indicates that BRCA2-deficient cells can also be killed by mild replication defects which do not cause γH2AX accumulation in S phase (Adam et al., 2021). This cell death depends on the transmission of under-replicated DNA from S to M phase triggered by BRCA1 or BRCA2 deficiency and the lack of CIP2A-TOPBP1 complex formation in M phase. In the absence of this complex, under-replicated DNA is aberrantly processed into acentric chromosomes and micronuclei, which are the source of SL (Adam et al., 2021). Our present work reveals yet another weakness of BRCA2-deficient cells: cytokinesis. Strikingly, this SL is not preceded by the accumulation of broken chromosomes or micronuclei and is independent of canonical players of the DDR, as it is observed after ROCK or CITK inhibition.
 
@@ -104,7 +229,7 @@ Intriguingly, while the triggers of SL by PARPi, CIP2A-TOPBP1 complex disruption
 
 It should also be mentioned that our experimental analysis does not rule out that background levels of replication stress or increased levels of under-replicated DNA induced by BRCA2 deficiency could contribute to the cell death triggered by ROCK inhibition. As previously suggested by Adam et al., 2021, it is possible that BRCA2-deficient cells rely more on M phase due to their propensity to accumulate defects in DNA synthesis, making them more susceptible to a suboptimal M phase (e.g. triggered by ROCKi). However, if the source of SL was solely associated with DNA synthesis events, then it would also be present in BRCA1-deficient backgrounds, which we did not observe. Importantly, BRCA1-deficient backgrounds are also vulnerable during M phase, as we previously observed SL between BRCA1 and PLK1 inhibitors (Carbajosa et al., 2019). The identification of synthetic lethal interactions specific for BRCA1 or BRCA2, indicates that HR impairment is not the only possible trigger of SL in BRCA1- and BRCA2-deficient backgrounds that could be therapeutically exploited. In the future, M phase may provide a window of opportunity for novel treatments in patients that do not respond to PARPi therapy.
 
-## Cytokinesis failure as the trigger of the SL between BRCA2-deficiency and ROCK inhibition
+### Cytokinesis failure as the trigger of the SL between BRCA2-deficiency and ROCK inhibition
 
 We believe that DNA replication defects are not the main trigger for the SL observed with ROCKi, and that defects intrinsic to M phase are more likely to account for ROCKi-induced cell death of BRCA2-deficient cells. Intriguingly, BRCA2 and ROCK functions converge at cytokinesis. ROCK kinases accumulate at the cleavage furrow (Kosako et al., 2000; Yokoyama et al., 2005), regulate furrow ingression, and their knockdown induces multinucleation (Yokoyama et al., 2005). Similarly, CITK localizes to the cleavage furrow, and its downregulation or inhibition also causes multinucleation (Kosako et al., 2000; Sahin et al., 2019). Cytokinesis defects have also been reported for BRCA2-deficient cells (Daniels et al., 2004; Jonsdottir et al., 2009; Mondal et al., 2012; Rowley et al., 2011). However, BRCA2 localizes to a different cytokinesis structure than ROCK, the midbody (Daniels et al., 2004; Jonsdottir et al., 2009; Mondal et al., 2012; Rowley et al., 2011). Remarkably, previous reports suggest that the effect of BRCA2 downregulation on cytokinesis regulation may be very mild (Lekomtsev et al., 2010). Given ROCK and BRCA2 localize to cytokinesis structures that are also separated in time (furrow and midbody), the deficiency in both functions may potentiate cytokinesis failure and cell death. Supporting cytokinesis failure as the SL trigger between ROCK and BRCA2 deficiency backgrounds, we observed that binucleation significantly accumulates at 24 h of treatment, when other mitotic defects have not yet significantly increased.
 
@@ -112,76 +237,76 @@ SL can be enhanced by the formation of multipolar spindles due to centrosome amp
 
 ## Materials and methods
 
-## Screening
+### Screening
 
 Stable HCT116p21-/- cell lines tagged with fluorescent proteins (CFP, iRFP or mCherry) and expressing Scramble, BRCA1, or BRCA2 shRNAs (Carbajosa et al., 2019) were co-cultured in equal proportions in 96-well plates for 6 days in the presence (0.1 μM) of each of the 680 compounds of the Protein Kinase Inhibitor Set 2 (PKIS2) library (Drewry et al., 2017; Elkins et al., 2016). At the end of treatment, the final cell number for each cell population was assessed with an automated flow cytometer Attune NxT acoustic focusing cytometer (Thermo Fisher). olaparib (#S1060, SelleckChem) at 100 nM was used as a positive control in each screening plate.
 
 For each tested compound, two scenarios are possible: (A) non-selective effect, where the ratio of the populations remains unchanged. The non-selective compounds can either be non-toxic (the number of cells in all populations remains the same) or toxic (the number of cells from each population decreases similartestly); (B) synthetic lethal: selective toxicity against the BRCA2-deficient population, thus changing the relative abundance and ratio between the different populations. Additionally, a compound was considered a ‘hit’ if it exhibited a>5 standard deviation on two values: (1) Fold of SL induction, calculated from the ratios of the different populations in each well; and (2) Survival difference, calculated from the differential survival when comparing a given treatment to the untreated wells in the same plate. For more extensive details on the screening platform and calculations used for the analysis, please refer to Carbajosa et al., 2019.
 
-## Lentiviral production
+### Lentiviral production
 
 Lentiviral shRNA vectors were generated by cloning shBRCA2 (sequence) or shScramble (5′-GTTAACTGCGTACCTTGAGTA) into the pLKO.1-TRC vector (Grotsky et al., 2013). HEK293T cells were transfected with pLKO.1 and packaging plasmids (psPAX, and pMD2.G) 24 h post-seeding using JetPrime transfection reagent (Polyplus). After another 24 hr, media was changed. Forty-eight h after, media was collected, centrifuged, and supernatants were aliquoted and stored at –80 °C. Optimal viral titers were tested by serial dilutions and selected based on the minimal toxicity observed in the target cells.
 
-## Generation of HCT116p21-/- shRNA stable cell lines
+### Generation of HCT116p21-/- shRNA stable cell lines
 
 HCT116p21-/- cells (a kind gift from Bert Volgelstein, Johns Hopkins University) were used to generate stable shScramble or shBRCA2 HCT116p21-/- cells using lentiviral transduction. For viral transduction cells were seeded in 60 mm dishes, and 24 h post-seeding they were transduced using optimal viral titer and 8 μg/ml polybrene (#sc-134220, Santa Cruz Biotechnology). Transduced cells were selected with 1 μg/ml puromycin (#P8833, Sigma-Aldrich) 24 h post-transduction, and amplified for later freezing. Frozen stocks were not used for more than three weeks after thawing. BRCA2 knockdown was confirmed using quantitative real-time PCR.
 
-## Other cell lines and culture conditions
+### Other cell lines and culture conditions
 
 PEO1/PEO4: PEO1 is a BRCA2-deficient ovarian cell line derived from the ascites fluid of a patient (Langdon et al., 1988; Wolf et al., 1987). PEO4 derives from the same patient after the development of chemotherapy resistance and BRCA2 function recovery (Sakai et al., 2009; Wolf et al., 1987). V-C8 and V-C8#13: V-C8 (a kind gift from Bernard Lopez, Gustave Roussy Cancer Center) is a BRCA2-deficient Chinese hamster lung cell line, while V-C8#13 has restored BRCA2 function via one copy of human chromosome 13 harboring BRCA2 (Kraakman-van der Zwet et al., 2002). DLD-1/DLD-1BRCA2-/- cell lines (# HD PAR-008 and #HD 105–00, Horizon Discovery Ltd.): DLD-1 cell lines are human colorectal cancer cell lines, while the BRCA2-deficient DLD-1BRCA2-/- cell line has BRCA2 exon 11 disrupted with rAAV gene editing technology (Hucl et al., 2008).
 
 PEO4/PEO1 and DLD-1/DLD-1BRCA2-/- cell lines were grown in RPMI (#31800–089, Gibco) supplemented with 10% fetal bovine serum (Natocor) and 1% penicillin/streptomycin. V-C8#13 /V-C8, HCC1937BRCA1/HCC1937 (ATCC) and HEK293T (a kind gift from Alejandro Schinder, Fundación Instituto Leloir) were grown in DMEM (#12800082, Gibco) supplemented with 10% fetal bovine serum (Natocor) and 1% penicillin/streptomycin. All cell lines were maintained in a humidified, 5% CO2 incubator and passaged as needed. Cell lines were regularly checked for mycoplasma contamination. The BRCA2 and BRCA1 status of all cell lines was checked, and none of the used cell lines is in the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee.
 
-## Drugs and treatments
+### Drugs and treatments
 
 Cells were treated 24 h post-seeding. Treatment times for each experiment, ranging from 24 h to 6 days, are specified below or in the figure legends. olaparib (#S1060, SelleckChem) was resuspended in DMSO and stored at –20 °C. ROCK inhibitors, fasudil HCl (#A10381, Adooq), SR 3677 dihydrochloride (A12674) and ripasudil (#S7995, SelleckChem) were resuspended in water and stored at –80 °C. BrdU (Sigma-Aldrich) was resuspended in DMSO and stored at –20 °C. BrdU-containing media (10 μM) was added to cell cultures 15 min before harvest. Cisplatin was resuspended in 0.9% NaCl and stored at –20 °C (#P4394, Sigma-Aldrich). Cisplatin was added to cell cultures for 24 hr. All drug stocks were filter-sterilized (0.2 μM). Unless otherwise stated, all experiments were performed three times.
 
-## Survival assay
+### Survival assay
 
 To perform a survival assay that can be directly compared with the phenotypic screening used in this report we plated in each single well from a 96-well plate, a number of cells that would reach 90% confluence at the time of finalization of the assay (6 days). HCT116p21-/- cell lines were seeded at 1500 cells/well, V-C8 at 500 cells/well, PEO at 2500 cells/well and DLD-1/DLD-1BRCA2-/- at 500 and 1500 cells/well, respectively. Cells were treated with the indicated reagents 24 h post-seeding. Each treatment had three technical replicates. The last day, cells were fixed with 4% paraformaldehyde/ 2% sucrose and stained with DAPI (#10236276001, Roche). Plates were photographed with the IN Cell Analyzer 2200 high content analyzer (GE Healthcare), using a ×10 objective. A total of nine pictures per individual well were taken, and all nuclei in the image were automatically counted to assess cell numbers for each well. Cell number (%) after each treatment was calculated relative to the total number of cells in untreated wells in the same plate. In this way and similarly to the phenotypic screening, cells were counted directly and no indirect metabolic parameter, sub G1 populations or other parameters were monitored. Also, variables such as extreme dilutions (e.g.: used in clonogenic survival) were not introduced by this assay.
 
-## Restriction enzyme digestion
+### Restriction enzyme digestion
 
 Genomic DNA from PEO4 and PEO1 cell lines was extracted using phenol-chloroform-isoamyl alcohol (#P3803, Sigma-Aldrich). A fragment of 694 bp within the BRCA2 gene was PCR amplified using specific primers (Forward primer: AGATCACAGCTGCCCCAAAG, Reverse primer: TTGCGTTGAGGAACTTGTGAC). PCR fragments were gel purified, and equal amounts of DNA were subject to DrdI (New England Biolabs) enzyme digestion following the manufacturer’s instructions. Digestion products were run on an agarose gel and stained with ethidium bromide to visualize the band pattern.
 
-## Chromosome aberration analysis
+### Chromosome aberration analysis
 
 Cells were seeded and treated 24 h post-seeding, and 0.08 μg/ml colcemid (KaryoMAX, Invitrogen) was added 20 h before harvest. Following trypsinization, cell pellets were incubated in hypotonic buffer (KCl 0.0075 M) at 37 °C for 4 min and fixed with Carnoy’s fixative solution (3:1 methanol: glacial acetic acid). Cells were dropped onto slides and air-dried before staining with 6% Giemsa in Sorensen’s buffer (2:1 67 mM KH2PO4:67 mM Na2HPO4, pH 6.8) for 2 min. Pictures of metaphases were taken using an automated Applied Imaging Cytovision microscope (Leica Biosystems). Fifty metaphase spreads per independent experiment were analyzed for chromosome gaps, breaks and exchanges.
 
-## Anaphase aberration assay
+### Anaphase aberration assay
 
 Cells were fixed with 2% paraformaldehyde/ 2% sucrose for 20 min and stained with DAPI (#10236276001, Roche) to visualize anaphases and quantify anaphase aberrations (bridges and lagging chromosomes). At least 50 anaphases/sample were analyzed. Z-stacks were acquired with a Zeiss LSM 510 Meta confocal microscope and were combined for image generation. Maximum intensity projections were generated using FIJI (ImageJ) Imaging Software.
 
-## Micronuclei assay
+### Micronuclei assay
 
 Micronuclei (MN) analyses were performed using protocols previously described by us (Federico et al., 2016). Briefly, cells were seeded at low density, treated and incubated with cytochalasin B (4.5 μg/ml, Sigma-Aldrich) for 40 hr. Cells were washed twice with PBS and fixed with PFA/sucrose 2% for 20 min. Phalloidin and DAPI staining were used to visualize whole cells and nuclei, respectively. A total of 300 binucleated cells were analyzed, and the frequency was calculated as MN/binucleated cells.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were seeded on coverslips, treated, fixed for 20 min with 2% paraformaldehyde/ 2% sucrose and permeabilized for 15 min with 0.1% Triton-X 100. Following 1 h blocking with 2.5% donkey serum in 0.05% PBS/Tween, coverslips were incubated as needed with primary antibodies: γH2AX S139 (1:1500, #05–636-I, Millipore), 53BP1 (1:1500, #sc-22760, Santa Cruz Biotechnology), cyclin A (1:1000, #GTX-634–420, GeneTex) or Phalloidin (1:50, #A12379, Invitrogen). For BrdU staining (1:500, #RPN20AB, GE Healthcare), cells were fixed with ice-cold methanol (40 s) and acetone (20 s), followed by DNA denaturing in 1.5 N HCl for 40 min. For staining of centrosomes (1:1000, #T6557, Sigma-Aldrich) and microtubules (1:1000, #T9026, Sigma-Aldrich), cells were fixed for 10 min with ice-cold methanol, followed by hydration with PBS. Following 1 h of incubation with primary antibodies, cells were washed (3 x/10 min each) with 0.05% PBS/Tween, incubated for 1 h with anti-donkey Alexa 488 or 546 (1:200, Invitrogen), washed, stained with DAPI (#10236276001, Roche) and mounted on slides with Mowiol (Sigma-Aldrich). Slides were analyzed with ×40 or100 x objectives using an Axio Observer microscope (Zeiss).
 
-## Number of 53BP1 foci
+### Number of 53BP1 foci
 
 Cells were seeded on coverslips and treated as described in the immunofluorescence section above. The quantification of foci/cell was executed using the protocol used by Kilgas et al., 2021. For the experiment in Figure 3—figure supplement 2, in which cells were treated for 6 days, because of the presence of bi and multinucleation, the number of 53BP1 foci per cell was normalised according to their number of nuclei, resulting in the number of 53BP1 foci/nuclei informed.
 
-## Colony Assay
+### Colony Assay
 
 shScramble and shBRCA2 HCT116p21-/- cells were treated with fasudil for 24 hr. Samples were washed and the cells attached to the plate were trypsinized, counted and seeded at extremely low density in 24-well plates. After 10–12 days of culture, the media was removed, and crystal violet staining solution was added for colony visualization. The crystal violet staining solution was washed with ddH2O. The colony assay was performed utilizing for different cell dilutions. The cell colony number was determined as described in Joray et al., 2017.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Cells were seeded, treated and harvested at different time points (24 hr-6 days). For propidium iodide staining, cells were trypsinized, fixed with ice-cold ethanol overnight, and stained with a solution of 100 μg/ml RNase (#10109142001, Roche) and 50 μg/ml propidium iodide (#P4170, Sigma-Aldrich). A total of 10,000 events were recorded using a FACSCalibur (BD Biosciences). Cell cycle distribution was analyzed with the Cytomation Summit software (Dako version 4.3). To assess cell death using SYTOX Green, cells were treated and harvested at different time points. Following trypsinization, samples were stained with SYTOX Green staining following manufacturer’s instructions (#S34860, Invitrogen). 10,000 events were recorded and analyzed using a FACSAria (BD Biosciences).
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA was extracted with TRIzol reagent (Invitrogen), following the manufacturer’s instructions. A total of 2 μg of RNA was used as a template for cDNA synthesis using M-MLV reverse transcriptase (#28025, Invitrogen) and oligo-dT as primer. Quantitative real-time PCR was performed in a LightCycler 480 II (Roche) using the 5 X HOT FIREPol EvaGreen q PCR Mix Plus (#08-24-00001, Solis BioDyne).
 
 To calculate relative expression levels, samples were normalized to GAPDH expression. Forward (FW) and reverse (RV) primers were as follows: BRCA2 (FW: AGGGCCACTTTCAAGAGACA, RV:TAGTTGGGGTGGACCACTTG), ROCK1 (FW: GATATGGCTGGAAGAAACAGTA, RV:TCAGCTCTATACACATCTCCTT), ROCK2 (FW:AGATTATAGCACCTTGCAAAGTA, RV:TATCTTTTTCACCAACCGACTAA), CITK (FW:CAGGCAAGATTGAGAACG, RV:GCACGATTGAGACAGGGA), EMI1 (FW:TGTTCAGAAATCAGCAGCCCAG, RV:CAGGTTGCCCGTTGTAAATAGC) and GAPDH (FW:AGCCTCCCGCTTCGCTCTCT, RV GAGCGATGTGGCTCGGCTGG).
 
-## siRNA transfection
+### siRNA transfection
 
 siRNAs were transfected using JetPrime transfection reagent (Polyplus) following the manufacturer’s instructions. Unless otherwise stated, cells were transfected for a total of 48 hr. siROCK1 (#sc-29473 Santa Cruz Biotechnology) and siROCK2 (#sc-29474, Santa Cruz Biotechnology) were used at 100 nM. siEMI1 (#sc-37611 Santa Cruz Biotechnology) and siCITK (#sc-39214 Santa Cruz Biotechnology) were both used at 100 nM.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism 5.0 was used for all statistical analyses. Regular two-way ANOVA, followed by a Bonferroni post-test or Student’s t-tests were used as appropriate. BrdU intensity was analyzed with a Kruskal-Wallis non-parametric test followed by a Dunn’s multiple comparison test. Statistical significance was set at p<0.05.

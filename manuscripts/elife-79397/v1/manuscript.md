@@ -9,11 +9,11 @@
 
 ### Affiliations
 
-1. https://ror.org/035b05819 Department of Gastroenterology, Herlev Hospital, University of Copenhagen Herlev Denmark
-2. https://ror.org/011335j04 Department of Gastroenterology, Hospital Universitari Mutua Terrassa Barcelona Spain
-3. https://ror.org/03cn6tr16 Centro de Investigación Biomédica en Red de enfermedades hepáticas y digestivas CIBERehd Spain
-4. https://ror.org/02kn6nx58 Department of Gastroenterology, Keio University School of Medicine Tokyo Japan
-5. https://ror.org/03zzw1w08 Division of Gastroenterology and Hepatology, Mayo Clinic Rochester United States
+1. Department of Gastroenterology, Herlev Hospital, University of Copenhagen Herlev Denmark ([ROR:035b05819](https://ror.org/035b05819))
+2. Department of Gastroenterology, Hospital Universitari Mutua Terrassa Barcelona Spain ([ROR:011335j04](https://ror.org/011335j04))
+3. Centro de Investigación Biomédica en Red de enfermedades hepáticas y digestivas CIBERehd Spain ([ROR:03cn6tr16](https://ror.org/03cn6tr16))
+4. Department of Gastroenterology, Keio University School of Medicine Tokyo Japan ([ROR:02kn6nx58](https://ror.org/02kn6nx58))
+5. Division of Gastroenterology and Hepatology, Mayo Clinic Rochester United States ([ROR:03zzw1w08](https://ror.org/03zzw1w08))
 
 † Corresponding author
 
@@ -57,11 +57,11 @@ The pathogenesis of microscopic colitis is still poorly elucidated, but it is li
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/79397/elife-79397-fig2-v1.jpg)
 
-## Alteration of microbiota
+### Alteration of microbiota
 
 The bacterial flora in the colon is an important luminal factor that directly or indirectly interacts with colonic epithelium, and thus, its alteration might contribute to the pathogenesis of microscopic colitis. Although microscopic colitis is considered as a noninfectious colitis, recent advances in sequencing analysis have demonstrated an alteration of intestinal bacterial composition, referred to as dysbiosis. Thus, a recent sequencing study showed microbiota from microscopic colitis to be significantly less diverse and compositionally distinct from healthy controls due to depletion of members of Clostridiales; enriched for Prevotella and more likely dominated by this genus (Hertz et al., 2022). Two recent metagenomic studies revealed a lowered intestinal bacterial diversity and a reduction in the abundance of several genera in microscopic colitis, including Akkermansia and Ruminococcus (Carstens et al., 2019; van Hemert et al., 2018). The de-enrichment of Akkermansia muciniphila was additionally observed in a study using PCR (Fischer et al., 2015). A. muciniphila adheres to the intestinal epithelium and strengthens enterocyte monolayer integrity in vitro, suggesting that a reduction may cause intestinal barrier dysfunction (Reunanen et al., 2015). More recently, a team of researchers found a higher long-term risk of developing microscopic colitis in patients whose stool carried Campylobacter concisus (Aagaard et al., 2021; Nielsen et al., 2020). Campylobacter concisus is a commensal of the human oral microbiota, which occasionally may be isolated from stool samples. C. concisus is associated with epithelial sodium channel dysfunction and claudin-8-dependent barrier dysfunction (Nattramilarasu et al., 2020), suggesting their involvement in the pathogenesis of microscopic colitis. Notably, the intake of PPI and smoking influences bacterial flora (Fujimori, 2015; Shanahan et al., 2018), especially the former may especially increase the abundance of oral microbes, such as C. concisus (Schlenker and Surawicz, 2009), suggesting that dysbiosis may be the mechanism by which these factors cause microscopic colitis. Meanwhile, diarrhea itself might also change the bacterial composition (Li et al., 2021). Therefore, it remains unclear whether the dysbiosis is causal or secondary to microscopic colitis. Nevertheless, an altered intestinal microbiota composition is driven toward the composition of healthy controls once patients are in remission (Rindom Krogsgaard et al., 2019).
 
-## Genetic susceptibility
+### Genetic susceptibility
 
 A genetic component is of importance as well, and a recent genetic immunochip study with 4299 controls reported an association between the human leukocyte antigen (HLA) ancestral 8.1 haplotype and well-established collagenous colitis (314 patients) (Westerlind et al., 2017) but not with lymphocytic colitis (122 patients) (Westerlind et al., 2016). Furthermore, a significant genetic overlap was observed between ulcerative colitis and Crohn’s disease when comparing disease-associated single-nucleotide polymorphisms (SNPs) (Westerlind et al., 2017).
 
@@ -95,6 +95,49 @@ When examining tissue specimens, the upper limit of the width of the normal coll
 
 **Figure 3.:** (A) Typical colonic biopsy from a patient with collagenous colitis with a subepithelial collagenous band of more than 10 μM. The surface epithelium is flattened, and mucin depleted, and a mixed inflammatory infiltrate is present in the lamia propria. H&E ×20. (B) Typical colonic biopsy from a patient with lymphocytic colitis with 20 or more intraepithelial lymphocytes per 100 surface epithelial cells. A mixed inflammatory infiltrate is present in the lamia propria. H&E ×20. (C) Lymphocytic colitis, immunohistochemistry stain for CD3 high-lighting lymphocytic infiltration of the epithelium.
 
+**Table 1.**
+ Key histological findings in microscopic colitis: differences between collagenous and lymphocytic colitis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Collagenous colitis</th>
+      <th>Lymphocytic colitis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intraepithelial lymphocytes</td>
+      <td>Normal or increased number</td>
+      <td>&gt;20 per 100 epithelial cells</td>
+    </tr>
+    <tr>
+      <td>Surface epithelium</td>
+      <td>Marked change (flattening, detachment)</td>
+      <td>Slight change (vacuolization, flattening, mucin depletion)</td>
+    </tr>
+    <tr>
+      <td>Subepithelial collagenous band</td>
+      <td>Thickening (≥10 μm)</td>
+      <td>Normal or slightly increased (&lt;10 μm)</td>
+    </tr>
+    <tr>
+      <td>Inflammatory infiltrate in the lamina propria</td>
+      <td colspan="2">Increased infiltrate (lymphocytes and plasma cells) with homogenous distribution throughout the colon</td>
+    </tr>
+    <tr>
+      <td>Crypt architecture</td>
+      <td colspan="2">Little or no distortion</td>
+    </tr>
+    <tr>
+      <td>Inflammatory bowel disease-type focal changes</td>
+      <td colspan="2">Occasional cryptitis and Paneth cell metaplasia</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Treatment
 
 In routine clinical practice, there is no difference in the treatment of lymphocytic colitis and collagenous colitis, as demonstrated by the approach of current European and American guidelines (Miehlke et al., 2021; Pardi et al., 2016; Nguyen et al., 2016). No significant differences exist in treatment response with regard to commonly used medications between younger (i.e., ≤50 years) and older (i.e., >50 years) patients with microscopic colitis (Sonnenberg and Genta, 2022 ; Kamboj et al., 2022).
@@ -103,9 +146,9 @@ The primary treatment goal is to achieve a clinical remission of microscopic col
 
 The first step in management is to consider elimination of exacerbating factors; that is, to encourage smoking cessation and withdraw any culprit medications, that is, drugs with a suspected chronological relationship between drug introduction and onset of diarrhea. Although discontinuation of the offending drug leads to disease improvement in the majority of cases, (Hamdeh et al., 2021), there is no clear evidence yet of how it might predictably alter the disease course.
 
-## First-line therapy
+### First-line therapy
 
-## Budesonide
+#### Budesonide
 
 Budesonide, a synthetic, locally acting glucocorticoid with topical effects in the GI tract, is the mainstay for induction and maintenance of remission in this disorder, based on randomized placebo-controlled trials and meta-analyses. (Chande et al., 2017; Kafil et al., 2017; Sebastian et al., 2019).
 
@@ -115,51 +158,51 @@ Budesonide administered orally has been assessed for induction of remission in f
 
 As recurrence is a frequent phenomenon after a short-term budesonide therapy (Sebastian et al., 2019), maintenance therapy may be considered. Randomized trials of maintenance therapy, in which 4.5 or 6 mg of budesonide was administered per day for 6–12 months after remission, revealed that remission was sustained in 60–75% of patients, and that treatment was well-tolerated without any specific safety issues (Bonderup et al., 2009; Miehlke et al., 2008). Nevertheless, in one study, around 80% of patients were reported to have relapsed after withdrawal of long-term budesonide therapy (Münch et al., 2016). In the event of relapse, the patient should accordingly be reassessed and retreated, aiming to taper to the lowest possible dose of budesonide, for example, 3 mg alternate days, but the duration of any maintenance therapy is yet unknown. Moreover, as long-term use of glucocorticoids is controversial, calcium and vitamin D supplementation should be recommended to the subgroup of patients requiring budesonide maintenance. Physicians often consider monitoring bone mineral density in patients treated with budesonide maintenance therapy, although budesonide may have less impact on bone density than a traditional glucocorticoid like prednisolone (Schoon et al., 2005), and a recent study reported a low risk of metabolic bone disease (and other steroid-related side effects) that was not significantly different from patients not treated with budesonide (Tome et al., 2022a).
 
-## Second-line therapy
+### Second-line therapy
 
 In case patients with microscopic colitis fail to respond to budesonide to induce and maintain clinical remission, and in those who develop significant side effects, additional therapies, such as loperamide, bile acid sequestrants, bismuth subsalicylate, thiopurines, and biologicals, may be considered.
 
-## Loperamide
+#### Loperamide
 
 Even though there is not enough evidence to recommend loperamide, as this antidiarrheal medication has never been systematically studied in relation to microscopic colitis, loperamide might, however, be an option as symptomatic therapy in patients with urgency as well as mild microscopic colitis. However, in one large case series, antidiarrheal therapy by itself was able to induce remission in only a small fraction of patients (Pardi et al., 2002). Thus, loperamide may have a better role as combination therapy when symptoms do not respond completely to a medication such as budesonide.
 
-## Bile acid sequestrants
+#### Bile acid sequestrants
 
 Cholestyramine (a bile acid-binding resin used for diarrhea due to bile acid malabsorption) may be helpful, especially in the substantial number of patients with microscopic colitis and coexisting bile acid malabsorption (Fernandez-Bañares et al., 2001; Ung et al., 2000). Moreover, bile acid sequestrant therapy may be effective in decreasing budesonide dependence in half the patients with microscopic colitis (Northcutt et al., 2022). Thus, cholestyramine, at a dose of 4 g 3–4 times per day (starting with a dose of 8 g per day and increased slowly over time depending on clinical response), may be of benefit in such cases or as an option following budesonide induction (Northcutt et al., 2022). Furthermore, since the selenium homocholic acid taurine abdominal retention test is not available in all countries, and since the antidiarrheal effect of cholestyramine is nonspecific, it may be prudent to try this medication prior to escalating therapy with an immunomodulatory or biological agent. A recent study suggested that a serum marker of bile acid malabsorption, 7-α-hydroxy-4-cholesten-3-one, may predict response to colesevelam in microscopic colitis (Saha et al., 2020). Colesevelam is a bile acid sequestrant shown to be efficacious in bile acid malabsorption in Crohn’s disease (Beigel et al., 2014).
 
-## Bismuth subsalicylate
+#### Bismuth subsalicylate
 
 Bismuth subsalicylate, having antisecretory and anti-inflammatory properties, reduces diarrhea in microscopic colitis. However, the antidiarrheal mechanism of action still has to be determined (Ericsson et al., 1990).
 
 Bismuth subsalicylate (nine tablets [262 mg each] per day in three divided doses) performed better than placebo in a randomized trial (Fine et al., 1999). In another study, the clinical response and recurrence rates in 94 patients (median age of 69 years; 91% females, 52% with lymphocytic colitis) treated with this drug were assessed (Tariq et al., 2017). The daily dose of bismuth subsalicylate was six tablets in 12 patients, eight tablets in 20 patients, and nine tablets in 62 patients. Overall, 57% patients showed complete response, 21% had partial response, and 21% had no response. In this context, it is noteworthy that long-term use of this drug is associated with the risk of neurotoxicity (Borbinha et al., 2019). Nevertheless, to determine the true benefit of bismuth subsalicylate, well-powered, prospective, placebo-controlled studies stratified by disease severity and subtypes need to be performed.
 
-## Thiopurines
+#### Thiopurines
 
 When symptoms are truly refractory and considerably impact the quality of life, immunomodulating therapy with thiopurines (i.e., azathioprine [2–2.5 mg/kg per day] or mercaptopurine [1–1.5 mg/kg per day]) for maintenance of clinical remission may be initiated, but as the onset of action is delayed (10–12 weeks), thiopurines are not indicated as induction therapy (Nielsen et al., 2013).
 
 In a cohort study of budesonide-refractory, -dependent, or -intolerant patients (Cotter et al., 2017), thiopurines were used in 49 patients for a median duration of 4 months (IQR 1.5–15.0). Complete or partial responses were observed in 43% of patients with collagenous colitis and 22% with lymphocytic colitis. In a multicenter and retrospective case series, 13 (28%) of 46 patients treated with azathioprine achieved and maintained clinical remission for up to 57 months, whereas 31 (67%) patients developed intolerance causing treatment cessation (Münch et al., 2013). Thirteen of these patients were subsequently switched to mercaptopurine, among whom six (46%) regained clinical remission. Thus, overall, 19 (41%) patients responded to the treatment. Although it is still not clear as to how long thiopurines should be administered in case of a beneficial response, it is recommended that they should be administered for a minimum of 1 year, and perhaps even longer.
 
-## Biologicals
+#### Biologicals
 
 In recent years, TNF inhibitors (Nielsen and Ainsworth, 2013) (infliximab and adalimumab) have been introduced for the management of microscopic colitis (Cotter et al., 2017; Münch et al., 2012; Anderson and Makins, 2016; Daferera et al., 2019; Pola et al., 2013), together with the α4β7 anti-integrin, vedolizumab (Hollier et al., 2022; Shipley et al., 2022; Abu-Sbeih et al., 2018; Rivière et al., 2019) and recently the anti-IL-12/IL-23 antibody, ustekinumab (Abughazaleh et al., 2019). A meta-analysis of 11 articles (four with infliximab and adalimumab, two with adalimumab, and five with vedolizumab), including 75 patients with severe microscopic colitis, showed a response rate of 77% at 3–6 weeks and 67% at 12–16 weeks, and 55% were able to achieve remission at 12–16 weeks (Taneja et al., 2021). As only one case study exists for ustekinumab, a response rate must await further studies. Moreover, a recent multicenter cohort study was the first to show that about half of the patients treated with TNF inhibitors for microscopic colitis achieved clinical remission following budesonide failure (Boivineau et al., 2022).
 
-## Therapy with other anti-inflammatory or antidiarrheal drugs
+#### Therapy with other anti-inflammatory or antidiarrheal drugs
 
 Additional agents may be trialed as alternatives. However, some of these drugs are less well-studied, and they were not all recommended by the latest European (2021) guidelines for the management of microscopic colitis (Miehlke et al., 2021).
 
-## Small molecules
+#### Small molecules
 
 So far it is unknown whether the new small molecules like selective second-generation Janus kinase inhibitors (acting as cytokine inhibitors) (Soendergaard et al., 2018) or sphingosine-1-phosphate receptor modulators that ‘trap’ lymphocytes in the lymph nodes (Nielsen et al., 2017) could be an option in microscopic colitis (e.g., the latter of potential relevance for lymphocytic colitis).
 
-## Prednisolone
+#### Prednisolone
 
 Prednisolone is a glucocorticoid often used for classical IBD. However, current research, including only one placebo-controlled trial with prednisolone (Munck et al., 2003), a population-based cohort study, (Gentile et al., 2013), and a meta-analysis (Stewart et al., 2011), suggests that prednisolone is less effective than budesonide for both collagenous and lymphocytic colitis. Accordingly, this drug is not recommended for use in microscopic colitis (Miehlke et al., 2021).
 
-## Methotrexate
+##### Methotrexate
 
 One study has indicated an effect of methotrexate in microscopic colitis (Cotter et al., 2017). However, 75% of the patients in the study received concomitant budesonide, which limits the conclusions to be drawn about methotrexate as monotherapy. Meanwhile, other studies have described a relative ineffectiveness of methotrexate in microscopic colitis (Münch et al., 2013; Münch et al., 2012). Therefore, this drug is not recommended for microscopic colitis management.
 
-## Mesalazine
+### Mesalazine
 
 Mesalazine administered in a dose of 3 g per day for 8 weeks was not superior to placebo in patients with collagenous colitis (Miehlke et al., 2014) or lymphocytic colitis (Miehlke et al., 2018b). Based on these data and supported by real-life experience for induction of remission in both collagenous and lymphocytic colitis (no studies for the maintenance of remission are available) (Bohr et al., 1996), 5-aminosalicylic acid is not recommended as a therapeutic option.
 

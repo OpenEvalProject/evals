@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.49252.001 Spinal cord patterning is orchestrated by multiple cell signalling pathways. Neural progenitors are maintained by Notch signalling, whereas ventral neural fates are specified by Hedgehog (Hh) signalling. However, how dynamic interactions between Notch and Hh signalling drive the precise pattern formation is still unknown. We applied the PHRESH ( PH otoconvertible RE porter of S ignalling H istory) technique to analyse cell signalling dynamics in vivo during zebrafish spinal cord development. This approach reveals that Notch and Hh signalling display similar spatiotemporal kinetics throughout spinal cord patterning. Notch signalling functions upstream to control Hh response of neural progenitor cells. Using gain- and loss-of-function tools, we demonstrate that this regulation occurs not at the level of upstream regulators or primary cilia, but rather at the level of Gli transcription factors. Our results indicate that Notch signalling maintains Hh responsiveness of neural progenitors via a Gli-dependent mechanism in the spinal cord.
+Spinal cord patterning is orchestrated by multiple cell signalling pathways. Neural progenitors are maintained by Notch signalling, whereas ventral neural fates are specified by Hedgehog (Hh) signalling. However, how dynamic interactions between Notch and Hh signalling drive the precise pattern formation is still unknown. We applied the PHRESH (PHotoconvertible REporter of Signalling History) technique to analyse cell signalling dynamics in vivo during zebrafish spinal cord development. This approach reveals that Notch and Hh signalling display similar spatiotemporal kinetics throughout spinal cord patterning. Notch signalling functions upstream to control Hh response of neural progenitor cells. Using gain- and loss-of-function tools, we demonstrate that this regulation occurs not at the level of upstream regulators or primary cilia, but rather at the level of Gli transcription factors. Our results indicate that Notch signalling maintains Hh responsiveness of neural progenitors via a Gli-dependent mechanism in the spinal cord.
 
 ## Introduction
 
@@ -29,13 +29,53 @@ Here, we determine the interaction between Notch and Hh signalling during spinal
 
 ## Results
 
-## Generation of a Notch signalling reporter
+### Generation of a Notch signalling reporter
 
 Spinal cord patterning is a dynamic process with complex interactions of cell signalling pathways in both space and time. To visualise the signalling events in a spatiotemporal manner, we have previously developed the PHRESH (PHotoconvertible REporter of Signalling History) technique (Huang et al., 2012). This analysis takes advantage of the photoconvertible properties of the Kaede fluorescent protein to visualise the dynamics of cell signalling response at high temporal and spatial resolution. We have utilised the PHRESH technique to visualise Hh signalling dynamics during spinal cord patterning (Huang et al., 2012). To apply the same technique to Notch signalling, we generated a reporter line for her12, a target gene of Notch signalling (Bae et al., 2005). This target was chosen because among other Notch target genes co-expressed with her12, such as her2, her4, and hes5, her12 had the highest level of expression throughout the spinal cord (Figure 1—figure supplement 1). By BAC (bacteria artificial chromosome) recombineering, we generated a her12:Kaede reporter by replacing the first coding exon of her12 with the coding sequence for the photoconvertible fluorescent protein Kaede (Figure 1A). The resulting her12:Kaede BAC contains 135 kb upstream and 63 kb downstream regulatory sequences. The her12:Kaede reporter line faithfully recapitulated endogenous her12 expression (Figure 1B). This reporter also responded to different Notch pathway manipulations (Figure 1C–E). The zebrafish mindbomb mutant is unable to activate Notch signalling due to an inability to endocytose the Delta ligand (Itoh et al., 2003). As expected, the expression of her12:Kaede was completely absent in the spinal cord of mindbomb mutants (Figure 1C). Similarly, inhibition of Notch signalling with the small molecule γ-secretase inhibitor LY-411575 (Fauq et al., 2007) completely abolished her12 expression within 4 hr (Figure 1D; Figure 1—figure supplement 2). By contrast, ectopic expression of NICD (Notch intracellular domain) using the hsp:Gal4; UAS:NICD line (Scheer and Campos-Ortega, 1999) resulted in upregulation and expansion of the her12:Kaede expression domain (Figure 1E). These results demonstrate that her12:Kaede is a sensitive reporter for Notch pathway activity in the spinal cord. The combination of small molecule inhibitors and the her12:Kaede reporter allows us to manipulate and monitor Notch signalling dynamics in a tightly controlled temporal manner.
 
-## Notch and Hh signalling display similar dynamics during spinal cord patterning
+![Figure 1.](https://cdn.elifesciences.org/articles/49252/elife-49252-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic drawing of the her12:Kaede BAC reporter. A BAC containing the her12 locus and surrounding regulatory elements was modified to replace the first exon of her12 with a cassette containing the coding sequence of Kaede and a Kanamycin resistance gene. her12 coding exons are highlighted in blue. (B) her12:Kaede expression, shown by immunohistochemistry using the Kaede antibody (red), recapitulated endogenous her12 expression, shown by fluorescent in situ hybridisation using the her12 probe (green). n = 8 embryos. (C) her12:Kaede expression was completely lost in mindbomb mutants at 36 hpf. n = 6 embryos per genotype. (D) Inhibition of Notch signalling by LY-411575 from 20 to 30 hpf completely abolished her12 expression compared to DMSO treated controls. n = 20 embryos per staining. (E) Activation of Notch signalling by hsp:Gal4; UAS:NICD at 13 hpf resulted in expanded and increased her12:Kaede expression at 27 hpf when compared to sibling controls. n = 4 embryos per genotype. Brackets in B-E denote the extent of the spinal cord. Scale bars: 20 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49252/elife-49252-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Whole-mount double fluorescent in situ hybridisation was performed in wild-type embryos at 24 hpf for her2 and her12 (A), her4 and her12 (B) and hes5 and her12 (C). Brackets in lateral views and dotted lines in transverse views denote the extent of the spinal cord. Note that her2 and her4 expression in notochord cells is indicated by asterisks. n = 6 embryos per staining. Scale bars: 20 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49252/elife-49252-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Wild-type embryos were treated with LY-411575 or cyclopamine for 0, 1, 2, 4, 6, 8, or 10 hr, and fixed at 24 hpf. Whole mount in situ hybridisation was then performed for her12 in LY-411575 treated embryos and ptc2 in cyclopamine treated embryos. Brackets denote the extent of the spinal cord. n = 15 embryos per staining. Scale bar: 20 μm.
+
+### Notch and Hh signalling display similar dynamics during spinal cord patterning
 
 Using the her12:Kaede reporter of Notch response (Figure 1) in parallel with the previously described ptc2:Kaede reporter of Hh response (Huang et al., 2012), we can observe the timing and duration of both pathway activities in vivo (Figure 2A). All responding cells are initially labelled by green-fluorescent Kaede (Kaedegreen), which can be photoconverted to red-fluorescent Kaede (Kaedered) at any specific time (t0). If the cell has finished its signalling response prior to t0, only perduring Kaedered will be detected. Conversely, if the cell begins its response after t0, only newly synthesised, unconverted Kaedegreen will be present. Finally, if the cell continuously responds to the signalling both before and after t0, a combination of newly-synthesised Kaedegreen and perduring Kaedered can be observed and the cell will appear yellow. Thus, Kaedered represents ‘past response’ before t0, Kaedegreen indicates ‘new response’ after t0, whereas Kaedered+green corresponds to ‘continued response’ through t0 (Figure 2A; Video 1). For example, if the embryo is photoconverted at 36 hpf (hours post-fertilization) and imaged 6 hr post-conversion at 42 hpf (36 hpf + 6 hr), Kaedered cells have terminated their signalling response before 36 hpf, Kaedegreen cells initiate the signalling response between 36 and 42 hpf, while Kaedered+green cells have sustained signalling response from before 36 hpf and up to a point before 42 hpf. In our experiments, we photoconverted both ptc2:Kaede and her12:Kaede embryos at 6 hr intervals throughout spinal cord development, and imaged their Kaede fluorescent profiles 6 hr post-conversion of each time point. The time interval of 6 hr was chosen as it allowed time for higher levels of Kaedegreen to be synthesised while still providing high temporal resolution. We used 3D reconstruction of lateral z-stacks to generate transverse views in order to analyse both the dorsoventral and mediolateral signalling profiles at each time point. Through quantifying Kaedegreen fluorescence intensity along the dorsoventral (DV) and mediolateral (ML) axes at multiple points along the anterior-posterior axis, we generated representative signalling profiles at each stage to further visualise and compare the spatial dynamics of active signalling response (Figure 2B–D, graphs). Importantly, these signalling profiles were largely similar throughout the anterior-posterior axis of the photoconverted region (Videos 2 and 3) and between different embryos (Figure 2—figure supplement 1). Through changing the timing of photoconversion, we were able to create a comprehensive spatiotemporal map of cell signalling dynamics in live embryos (Figure 2B–D; Figure 2—figure supplement 1; Figure 2—figure supplement 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/49252/elife-49252-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic representation of the experimental design. A section of the spinal cord above the yolk extension was photoconverted by the UV light at t0 and the fluorescent profile was analysed after 6 hours. 3D reconstruction of the spinal cord allowed the identification of cells that have either new signalling response after t0 (green), continued response from before and after t0 (yellow), or have ended signalling response before t0 (red). The graphical signalling profiles were generated from the dorsoventral axis (DV) and the mediolateral axis (ML) where indicated. (B–D) Time course of Hh and Notch signalling dynamics by PHRESH analysis. ptc2:Kaede and her12:Kaede embryos were photoconverted at specific time points (t0, indicated by hpf) and imaged at 6 hr post photoconversion. Lateral views of confocal projections and transverse views of single slices are shown. Kaedeg panels show de novo synthesised Kaedegreen after t0, while the merge panels show both previous Kaedered expression and new Kaedegreen expression. The graphs show the Kaedeg fluorescent intensity along the DV and ML axes for each representative embryo. The max intensity axes are 0–50% while the DV/ML axes display the full extent of the transverse section. The dotted lines in the graphs represent the position of the spinal canal. Three distinct phases of signalling response were observed: ‘signalling activation’ phase between 24 hpf and 42 hpf (B); ‘signalling consolidation’ phase between 42 hpf and 60 hpf (C); and ‘signalling termination’ phase between 60 hpf and 78 hpf (D). Arrows in C indicate ventral cells that have terminated response. Arrows in D highlight medial cells right above the spinal canal that remain responsive. Brackets in lateral views and dotted lines in transverse views denote the extent of the spinal cord. n = 4 embryos per condition. Scale bars: 20 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49252/elife-49252-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** ptc2:Kaede and her12:Kaede embryos were photoconverted at 24 hpf (A), 48 hpf (B) and 72 hpf (C) and imaged 6 hr post-conversion. Each line (grey) represents Kaedegreen fluorescent intensity along the mediolateral or dorsoventral axis (see Figure 2A) of one embryo. The red line denotes the average profile of all embryos (n = 4). The max intensity axes are 0–50%, while the DV/ML axes display the full extent of the transverse section. The position of the spinal canal in the dorsoventral profiles is denoted by a dotted line. (A) The signalling profiles during the ‘signalling activation’ phase. (B) The signalling profiles during the ‘signalling consolidation’ phase. (C) The signalling profiles during the ‘signalling termination’ phase. (D) The average profiles of all three phases plotted together. The relevant spinal canal position in the dorsoventral profile is marked by the matching coloured dotted line.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49252/elife-49252-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Continuation of the time course described in Figure 2, where her12:Kaede and ptc2:Kaede embryos were photoconverted at 84 hpf or 90 hpf, and imaged 6 hr post-conversion. Lateral views of confocal projections and transverse views of single slices are shown. Kaedeg panels show de novo synthesised Kaedegreen after the time of photoconversion, while the merge panels show both previous Kaedered expression and new Kaedegreen expression. Brackets in lateral views and dotted lines in transverse views denote the extent of the spinal cord. n = 4 embryos per timepoint. Scale bars: 20 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/49252/elife-49252-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Whole-mount double fluorescent in situ hybridisation was performed in wild-type embryos for her12 and ptc2 (A), sox2 and her12 (B), and sox2 and ptc2 (C) at either 24, 48, or 72 hpf. Dotted lines denote the extent of the spinal cord. n = 6 embryos per staining. Scale bars: 20 μm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/49252/elife-49252-video1.mp4.jpg)
+
+**Video 1.:** A ptc2:Kaede embryo was photoconverted at 28 hpf and then underwent time-lapse imaging for 18 hr. The vertical line indicates the boundary between photoconverted and unconverted regions at the start of the movie. Bracket indicates the extent of the spinal cord. n = 2 embryos. Scale bar: 20 μm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/49252/elife-49252-video2.mp4.jpg)
+
+**Video 2.:** ptc2:Kaede embryos were photoconverted at 48 hpf and imaged 6 hr after. Individual transverse sections generated by 3D reconstruction were prepared into a video. The first frame is the most anterior slice and each subsequent frame moves further posterior through the embryo. The merge (left) and Kaedegreen (right) channels are shown. The spinal cord is denoted by solid lines and the active signalling domain (Kaedegreen) above the spinal canal is indicated by an arrowhead. Note that Figure 2C shows one single slice in the middle of the converted region. n = 4 embryos. Scale bar: 20 μm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/49252/elife-49252-video3.mp4.jpg)
+
+**Video 3.:** her12:Kaede embryos were photoconverted at 48 hpf and imaged 6 hr after. Individual transverse sections generated by 3D reconstruction were prepared into a video. The first frame is the most anterior slice and each subsequent frame moves further posterior through the embryo. The merge (left) and Kaedegreen (right) channels are shown. The spinal cord is denoted by solid lines and the active signalling domain (Kaedegreen) above the spinal canal is indicated by an arrowhead. Note that Figure 2C shows one single slice in the middle of the converted region. n = 4 embryos. Scale bar: 20 μm.
 
 Based on spatiotemporal maps of Notch and Hh response, we divided the signalling dynamics of spinal cord development into three general phases: ‘signalling activation’ phase from 24 to 42 hpf, ‘signalling consolidation’ phase from 42 to 66 hpf, and ‘signalling termination’ phase from 66 to 78 hpf. In the first ‘signalling activation’ phase, active Notch response occurred along the entire dorsoventral axis of the spinal cord (Figure 2B, right), while active Hh response constituted roughly the ventral 75% of the spinal cord in a graded manner (Figure 2B, left). Both pathways had a wide peak of response across the majority of the mediolateral axis, with the weakest response occurring at the lateral edges of the spinal cord. This pattern is consistent with the model that Notch signalling maintains neural progenitor domains, whereas Hh signalling patterns the ventral spinal cord. Interestingly, we found that the signalling response was not entirely homogeneous. In her12:Kaede embryos, the majority of cells showed continued Notch response throughout the ‘signalling activation’ phase, but there were some isolated cells in which Kaede expression was completely absent. In ptc2:Kaede embryos, some cells had terminated their Hh response (marked by Kaedered), while the majority of cells with the same dorsoventral positioning had continued Hh response. The differential Hh response at the same dorsoventral axis is reminiscent of the differentiation of the lateral floor plate domain (Huang et al., 2012).
 
@@ -47,9 +87,17 @@ Comparison of spatiotemporal signalling profiles reveals that Hh and Notch signa
 
 Together, our PHRESH analysis reveals that Hh signalling response follows similar spatiotemporal kinetics as Notch signalling response during spinal cord patterning, raising the possibility that there is a functional relationship between these two signalling pathways.
 
-## Notch signalling maintains Hh response
+### Notch signalling maintains Hh response
 
 To explore the interaction between the Notch and Hh signalling pathways, we first performed loss-of-function experiments combining small molecule inhibitors with PHRESH analysis (Figure 3A). We used the Smo antagonist cyclopamine (Chen et al., 2002) and the γ-secretase inhibitor LY-411575 to block Hh and Notch signalling, respectively, in a temporally controlled manner. Cyclopamine significantly reduced ptc2 expression within 4 hr, whereas LY-411575 dramatically downregulated her12 expression within 2 hr, and completely abolished it after 4 hr of incubation (Figure 1—figure supplement 2). To ensure complete inhibition of signalling response by the point of photoconversion, ptc2:Kaede and her12:Kaede embryos were incubated with the inhibitors starting from 20 hpf, photoconverted at 24 hpf and then imaged at 30 hpf, comprising 10 hr of total drug inhibition. As expected, cyclopamine treated ptc2:Kaede embryos displayed a marked reduction in the amount of de novo synthesised Kaedegreen compared to controls at 30 hpf (Figure 3A). Similarly, LY-411575 treated her12:Kaede embryos showed an almost complete loss of Kaedegreen. In the reciprocal experiments, when her12:Kaede embryos were treated with cyclopamine, there was little effect on the levels of Kaedegreen. However, LY-411575 treated ptc2:Kaede embryos showed a dramatic reduction in the levels of Kaedegreen, reminiscent of cyclopamine treated ptc2:Kaede embryos (Figure 3A). These results suggest that Notch signalling is required for maintaining Hh response, but not vice versa. Interestingly, despite the inhibition of Notch signalling, cells outside of the spinal cord in ptc2:Kaede embryos maintained their normal Hh response, indicated by Kaedegreen expression (Arrowheads in Figure 3A). This result suggests that regulation of Hh response by Notch signalling is tissue specific.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49252/elife-49252-fig3-v2.jpg)
+
+**Figure 3.:** (A) ptc2:Kaede and her12:Kaede embryos were incubated with DMSO, cyclopamine (Cyc) or LY-411575 from 20 to 30 hpf, photoconverted at 24 hpf and imaged at 30 hpf. Lateral views of confocal projections and transverse views of single slices are shown. Kaedeg panels show de novo synthesised Kaedegreen, while the merge panels show both previous Kaedered expression and new Kaedegreen expression. Arrowheads highlight Kaedegreen cells with active Hh response surrounding the notochord. (B) Wild-type embryos were treated with DMSO, cyclopamine, or LY-411575 from 20 to 30 hpf, and stained with ptc2 or her12. Arrows indicate ptc2 expression in somites. Brackets in lateral views and dotted lines in transverse views in A and B denote the extent of the spinal cord. The n number for each staining is shown. Scale bars: 20 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49252/elife-49252-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Whole-mount in situ hybridisation was performed in mindbomb mutants or their sibling controls for ptc2 expression at 30 hpf. n = 15 embryos per staining. (B) Embryos were injected with the morpholino targeting both rbpja and rbpjb (rbpja/bMO) at the one-cell stage, and whole mount in situ hybridisation was performed in rbpja/bMO-injected and uninjected control embryos for ptc2 expression at 24 hpf. n = 35 embryos per staining. Brackets in the lateral views and dotted lines in the transverse views denote the extent of the spinal cord. Arrows indicate ptc2 expression in somites. Scale bars: 20 μm.
 
 To confirm these observations from our PHRESH analysis, we performed RNA in situ hybridisation following small molecule inhibition (Figure 3B). Wild-type embryos were treated with cyclopamine or LY-411575 from 20 to 30 hpf. When Hh signalling was inhibited by cyclopamine, ptc2 expression in the spinal cord was significantly reduced but not abolished, while her12 expression in the spinal cord remained unchanged. By contrast, blocking Notch signalling by LY-411575 resulted in complete loss of both her12 and ptc2 expression in the spinal cord. As seen in the PHRESH analysis, ptc2 expression in cells outside of the spinal cord, such as the somites, was largely intact even after Notch inhibition. To confirm the effects of LY-411575 treatment, we examined ptc2 expression in mindbomb mutants as well as embryos injected with morpholinos targeting both rbpja and rbpjb. rbpja/b genes (previously known as Su(H)1 and Su(H)2) encode DNA-binding transcription factors required for Notch response (Echeverri and Oates, 2007; Sieger et al., 2003). In both cases, ptc2 expression was abolished in the spinal cord but largely unaffected in somites (Figure 3—figure supplement 1A–B), resembling the phenotype of LY-411575-treated embryos. Together, these results are consistent with our model that Notch signalling regulates Hh response specifically in the spinal cord. It is also interesting to note that cyclopamine treated embryos showed residual levels of ptc2 expression in the spinal cord, whereas LY-411575 treatment completely eliminated ptc2 expression (Figure 3B). It has been shown that zebrafish smoothened mutants maintain low-level gli1 expression in the spinal cord independent of Hh signalling, similar to cyclopamine treated embryos (Karlstrom et al., 2003). The complete loss of ptc2 expression after Notch inhibition suggests that in contrast to cyclopamine, Notch signalling controls Hh response via a different mechanism, likely downstream of Smo.
 
@@ -67,15 +115,15 @@ As inhibition of Notch signalling is known to drive premature differentiation of
 
 Combining our results from the loss- and gain-of-function experiments and the temporal differences between ptc2 and sox2 expression following Notch inhibition, we conclude that Notch signalling is required to maintain Hh response, specifically in the spinal cord.
 
-## Notch signalling regulates Hh response downstream of Smo
+### Notch signalling regulates Hh response downstream of Smo
 
 Our results suggest that Notch signalling regulates Hh response during spinal cord patterning. To explore the molecular mechanisms by which Notch signalling controls Hh response, we determined whether activation of Hh signalling at different points of the pathway can bypass the absence of Notch signalling when the small molecule inhibitor LY-411575 is present (Notchoff embryos). We first utilised the previously mentioned hsp:rSmoM2-tRFP transgenic line to activate Hh signalling at the Smo level (Figure 6A). Wild-type control or hsp:rSmoM2-tRFP embryos were heat-shocked at 20 hpf, treated with DMSO or LY-411575 for 10 hr, and assayed for gene expression at 30 hpf (Figure 6B–C). In DMSO treated embryos, induction of rSmoM2 resulted in substantial expansion of ptc2 expression in both the somites and the spinal cord (Figure 6C). Consistent with this result, activation of Hh signalling by rSmoM2 also led to an expansion of the motor neuron precursor domain, marked by olig2 expression (Figure 6C). By contrast, when Notch signalling was inhibited by LY-411575, induction of both ptc2 and olig2 expression by rSmoM2 was still completely blocked in the spinal cord, similar to LY-411575 treated wild-type controls (Figure 6C). This result suggests that ectopic activation of Hh signalling at the Smo level is not sufficient to restore Hh response in Notchoff spinal cords and further implies that Notch signalling likely regulates Hh response downstream of Smo. Interestingly, induction of rSmoM2 did cause an expansion of ptc2 expression in the surrounding somites despite Notch inhibition (Figure 6C). This observation is consistent with our previous experiments and suggests that this Smo independent mechanism of control is specific to the spinal cord.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/49252/elife-49252-fig6-v2.jpg)
 
-**Figure 6.:** off spinal cords.(A) Schematic representation of the manipulation to the Hh pathway caused by ectopic expression of rSmoM2-tRFP. The point of manipulation is highlighted in green with an asterisk. (B) Experimental design in C. (C) hsp:rSmoM2-tRFP or wild-type control embryos were heat shocked at 20 hpf, and then incubated in either DMSO or LY-411575 until fixation at 30 hpf. Whole mount in situ hybridisation was performed for ptc2 and olig2. Brackets in lateral views and dotted lines in transverse views denote the extent of the spinal cord. Arrows indicate ptc2 expression in somites. The n number for each staining is shown. Scale bars: 20 μm.
+**Figure 6.:** (A) Schematic representation of the manipulation to the Hh pathway caused by ectopic expression of rSmoM2-tRFP. The point of manipulation is highlighted in green with an asterisk. (B) Experimental design in C. (C) hsp:rSmoM2-tRFP or wild-type control embryos were heat shocked at 20 hpf, and then incubated in either DMSO or LY-411575 until fixation at 30 hpf. Whole mount in situ hybridisation was performed for ptc2 and olig2. Brackets in lateral views and dotted lines in transverse views denote the extent of the spinal cord. Arrows indicate ptc2 expression in somites. The n number for each staining is shown. Scale bars: 20 μm.
 
-## Notch signalling regulates Hh response independent of primary cilia
+### Notch signalling regulates Hh response independent of primary cilia
 
 Vertebrate canonical Hh signalling requires the integrity of primary cilia (Eggenschwiler and Anderson, 2007). To test whether Notch signalling feeds into the Hh pathway via primary cilia, we utilised the iguana mutant which lacks primary cilia due to a mutation in the centrosomal gene dzip1 (Glazer et al., 2010; Huang and Schier, 2009; Kim et al., 2010; Sekimizu et al., 2004; Tay et al., 2010; Wolff et al., 2004). In zebrafish, the complete loss of primary cilia, such as in iguana mutants, results in reduction of high-level Hh response concomitant with expansion of low-level Hh pathway activity (Ben et al., 2011; Huang and Schier, 2009). This expanded Hh pathway activation is dependent on low level activation of endogenous Gli1, but does not require upstream regulators of the Hh pathway, such as Shh, Ptc and Smo (Huang and Schier, 2009) (Figure 7A). Thus, the iguana mutant also allows us to determine whether low level activation of the endogenous Gli1 transcription factor is able to restore Hh response in Notchoff spinal cords. iguana mutant embryos or their sibling (heterozygous or wild-type) controls were incubated with DMSO or LY-411575 from 20 hpf and assayed for gene expression at 30 hpf (Figure 7B–C). As shown previously (Huang and Schier, 2009), DMSO treated iguana mutants showed a reduction of the highest level of ptc2 expression in the ventral spinal cord, but displayed an overall expansion of the ptc2 expression domain in both the spinal cord and somites (Figure 7C). The low level Hh pathway activation in iguana mutants was sufficient to induce and expand the olig2 domain. Remarkably, we found that Hh pathway activation in iguana mutants was completely blocked by Notch inhibition (Figure 7C). When iguana mutants were treated with LY-411575 at 20 hpf for 10 hr, ptc2 expression in the spinal cord was completely abolished at 30 hpf, similar to LY-411575 treated sibling controls (Figure 7C). This is in contrast with the somites where ptc2 expression remained expanded in LY-411575 treated iguana mutants similar to DMSO treated iguana mutants. Consistent with the loss of ptc2 expression in the spinal cord, LY-411575 treated iguana mutants showed almost no olig2 expression with only rare scattered olig2 expressing cells (Figure 7C). Combined with observations from rSmoM2 experiments, these results suggest that Notch signalling likely functions, in a tissue-specific manner, downstream of Smoothened and the primary cilium in its control of Hh response.
 
@@ -83,9 +131,17 @@ Vertebrate canonical Hh signalling requires the integrity of primary cilia (Egge
 
 **Figure 7.:** (A) Schematic representation of the manipulation to the Hh pathway caused by the loss of primary cilia in iguana mutants. The point of manipulation is highlighted in green with an asterisk. (B) Experimental design in C. (C) iguana mutant and sibling control embryos were incubated in either DMSO or LY-411575 at 20 hpf until fixation at 30 hpf. Whole mount in situ hybridisation was performed for ptc2 and olig2. Brackets in lateral views and dotted lines in transverse views denote the extent of the spinal cord. Arrows indicate ptc2 expression in somites. The n number for each staining is shown. Scale bars: 20 μm.
 
-## Ectopic expression of Gli1 partially rescues Hh response in Notchoff spinal cords
+### Ectopic expression of Gli1 partially rescues Hh response in Notchoff spinal cords
 
 Since low level constitutive activation of endogenous Gli1 in iguana mutants is not sufficient to restore Hh response in Notchoff spinal cords, we hypothesised that Notch signalling regulates Hh response by maintaining gli1 expression. To test this possibility, we treated wild-type embryos with DMSO, cyclopamine, or LY-411575 at 20 hpf for 10 hr, then assayed for gli1 gene expression at 30 hpf (Figure 8A). In DMSO treated controls, gli1 expression was present throughout the ventral spinal cord and in the somites. In cyclopamine treated embryos, gli1 expression was dramatically reduced, but a low level remained in the spinal cord, corresponding to Hh-independent gli1 transcription (Karlstrom et al., 2003). By contrast, LY-411575 treatment completely abolished gli1 expression in the spinal cord. Strikingly, gli1 expression in surrounding tissues remained largely unaffected. These results suggest that Notch signalling is required to maintain Hh-independent gli1 expression in the spinal cord. Interestingly, similar experiments demonstrated that expression of other members of the gli genes, gli2a, gli2b and gli3, in the spinal cord, was also largely abolished by LY-411575 treatment (Figure 8—figure supplement 1), suggesting that Notch signalling controls the expression of all Gli transcription factors.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/49252/elife-49252-fig8-v2.jpg)
+
+**Figure 8.:** (A) Whole-mount in situ hybridisation for gli1 was performed on wild-type embryos treated with DMSO, cyclopamine, or LY-411575 from 20 to 30 hpf. (B) Schematic representation of the manipulation of the Hh pathway caused by ectopic EGFP-Gli1 expression. The point of manipulation is highlighted in green with an asterisk. (C) Experimental design in D-E. (D–E) hsp:EGFP-Gli1 and wild type control embryos were heat shocked at 20 hpf, and then incubated in either DMSO or LY-411575 until fixation at 30 hpf. Whole mount in situ hybridisation was performed for ptc2 and olig2. The extent of the olig2+ expression domain was measured and plotted as a percentage of the spinal cord in D. Each data point represents the average expression domain of one embryo. n = 7–8 embryos per condition. Data are plotted with mean ± SD. Statistics: Mann-Whitney U test. Asterisks representation: p-value<0.01 (**) and p-value<0.001 (***). Brackets in lateral views and dotted lines in transverse views in A and E denote the extent of the spinal cord. Arrows in A and E indicate ptc2 expression in somites. The n number for each staining is shown in A and E. Scale bars: 20 μm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/49252/elife-49252-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Wild-type embryos were treated with DMSO, cyclopamine, or LY-411575 from 20 to 30 hpf, and stained with gli2a, gli2b or gli3 probes. Brackets in lateral views and dotted lines in transverse views denote the extent of the spinal cord. Arrows indicate gli2a expression in somites. Note that in LY-411575 treated embryos, gli3 expression is absent in most of the ventral spinal cord but is maintained in the very dorsal region. n = 15 embryos per staining. Scale bars: 20 μm.
 
 We next examined whether overexpression of ectopic Gli1 was sufficient to rescue Hh response in Notchoff spinal cords (Figure 8B). We used an EGFP-Gli1 transgene under the control of a heat shock inducible promoter (hsp:EGFP-Gli1) (Huang and Schier, 2009). Similar to previous experiments, wild type control or hsp:EGFP-Gli1 embryos were heat shocked at 20 hpf, treated with DMSO or LY-411575 for 10 hr, and assayed for gene expression at 30 hpf (Figure 8C). Induction of ectopic EGFP-Gli1 resulted in the ptc2 expression domain expanding further dorsally and throughout the spinal cord and the olig2 domain was also 25% larger than controls (Figure 8D–E), a similar phenotype to rSmoM2 induction in DMSO treated embryos. Strikingly, when EGFP-Gli1 induction was followed by LY-411575 treatment, we observed significant ptc2 expression in the spinal cord, although at a slightly lower level compared to DMSO treated hsp:EGFP-Gli1 embryos (Figure 8E). Critically, the ectopic Gli1-mediated Hh pathway activation in LY-411575 treated hsp:EGFP-Gli1 embryos was able to restore olig2 expression to about 63% of the wild-type level (Figure 8D–E). Together, these results suggest that, in the spinal cord, Notch signalling regulates Hh response by modulating the Gli1 transcription factor, as ectopic Gli1 can partially rescue the Hh response in Notchoff spinal cords. This regulation is partly through transcriptional control of gli1 expression. However, since the ectopic EGFP-Gli1 was unable to rescue the highest level of Hh response and cannot fully restore olig2 expression in Notchoff spinal cords, it is possible that Notch signalling plays additional roles in regulating Gli1 activity at the post-transcriptional level, or alternatively, EGFP-Gli1 expression may not be able to fully specify the olig2 fate in the absence of additional activity from Gli2a, Gli2b and Gli3.
 
@@ -93,19 +149,19 @@ We next examined whether overexpression of ectopic Gli1 was sufficient to rescue
 
 We provide in vivo evidence for cross-talk between two conserved developmental signalling pathways, Notch and Hh signalling, in the zebrafish spinal cord. Through the PHRESH technique, we observe shared spatiotemporal dynamics of pathway activity throughout spinal cord patterning, highlighting a role for Notch and Hh interaction in neural progenitor maintenance and specification. Using both gain- and loss-of function techniques, we establish a primary cilium-independent mechanism by which Notch signalling permits neural progenitors to respond to Hh signalling via gli maintenance.
 
-## Studying cell signalling dynamics using PHRESH
+### Studying cell signalling dynamics using PHRESH
 
 We have previously developed the PHRESH technique to study the dynamics of Hh signalling in vivo (Huang et al., 2012). In this study, we demonstrate the versatility of the PHRESH method by correlating the dynamics of Hh and Notch signalling in vivo using the ptc2:Kaede reporter and a new her12:Kaede reporter. Traditional transcriptional GFP reporters fail to provide temporal information due to GFP perdurance, whereas destabilised fluorescent protein reporters can only provide current activity at the expense of signalling history. By contrast, the PHRESH technique utilises Kaede photoconversion to delineate the cell signalling history in any given time window by comparing newly synthesised Kaedegreen (new signalling) with photoconverted Kaedered (past signalling). We envision that PHRESH analysis could be combined with cell transplantation and time-lapse imaging to simultaneously analyse cell lineage and signalling dynamics at single cell resolution. Similar approaches can easily be adapted to study other dynamic events by using photoconvertible fluorescent reporters.
 
-## Spatiotemporal dynamics of Hh and Notch signalling
+### Spatiotemporal dynamics of Hh and Notch signalling
 
 Using the PHRESH technique, we created a spatiotemporal map of signalling dynamics for the Hh and Notch pathways during spinal cord patterning. Strikingly, Notch and Hh signalling display similar activity profiles. We have characterised these profiles into three general phases: ‘signalling activation’, ‘signalling consolidation’, and ‘signalling termination’. In the early ‘signalling activation’ phase, Notch signalling is active throughout the spinal cord, while active Hh response occurs in the ventral ~75% of the spinal cord. During ‘signal consolidation’, the responsive domain of both pathways sharpens into a small medial domain dorsal to the spinal canal; in ‘signalling termination’ the response to both pathways returns to a basal level. Our detailed time course reveals three key features of Notch and Hh signalling dynamics. First, early active Hh signalling shows a graded response with the highest level in the ventral domain, as predicted by the classical morphogen model (Briscoe and Small, 2015). By contrast, active Notch response does not appear to be graded along the ventral-dorsal axis. Second, despite showing the highest level of Hh response early, the ventral spinal cord terminates Hh response earlier than the more dorsal domains. Therefore, the ventral domain shows higher level Hh response for a shorter duration, whereas the dorsal domain shows lower level response for a longer duration. Our observation is reminiscent of the floor plate induction in chick and mouse embryos, where the specification of the floor plate requires an early high level of Hh signalling and subsequent termination of Hh response (Ribes et al., 2010). Our result suggests that Hh signalling dynamics is also evolutionarily conserved. Third, lateral regions of the spinal cord lose both Notch and Hh response before the medial domains. As the active signalling response consolidates into the medial domain, so does the expression of sox2, a neural progenitor marker, suggesting that neural differentiation is accompanied by the attenuation of Notch and Hh response. Our observation is consistent with the notion that neural progenitors occupy the medial domain of the spinal cord and that as they differentiate they move laterally.
 
-## Notch signalling regulates Hh response
+### Notch signalling regulates Hh response
 
 The loss of Hh response is a necessary step for fate specification, as shown in the chick during floor plate induction (Ribes et al., 2010) and in post-mitotic motor neuron precursors (Ericson et al., 1996). We have previously shown that the time at which cells attenuate their Hh response is crucial for fate specification in the zebrafish ventral spinal cord (Huang et al., 2012). How do neural progenitor cells in the spinal cord maintain their Hh responsiveness until the correct time in order to achieve their specific fates? Multiple lines of evidence indicate that Notch signalling is likely part of this temporal attenuation mechanism controlling Hh responsiveness. First, PHRESH analysis reveals that active Hh response correlates with Notch signalling activity spatially and temporally. The active Hh signalling domain initially constitutes part of the active Notch response domain before following similar kinetics in 'signalling consolidation' and 'signalling termination' phases. This result is consistent with the model that Notch signalling is necessary to maintain Hh responsiveness. Second, loss of Notch signalling either by genetic mutants or by small molecule inhibition results in loss of active Hh response in the spinal cord. In contrast, inhibition of Hh signalling does not affect Notch pathway activity. Critically, upon Notch inhibition, Hh responsiveness in the spinal cord is quickly extinguished prior to the loss of neural progenitor identity, suggesting that the loss of the competence to respond to Hh signals might trigger neuronal differentiation. This idea is supported by the role Notch signalling plays in the transcriptional control of the gli genes. In particular, gli2a and gli3 genes are not direct targets of Hh signalling and yet their expression is absent in Notchoff spinal cords, suggesting a direct role for Notch signalling in controlling the Hh signalling pathway. Indeed, constitutive activation of Notch signalling leads to enhanced Hh pathway activation. Together, our results suggest that Notch signalling functions upstream of Hh signalling in controlling Hh responsiveness during spinal cord patterning.
 
-## Notch signalling gates Hh responsiveness at the level of Gli transcription factors
+### Notch signalling gates Hh responsiveness at the level of Gli transcription factors
 
 How does Notch signalling control Hh response? Previous reports have implicated Notch signalling in the regulation of ciliary trafficking of Smo and Ptc (Kong et al., 2015; Stasiulewicz et al., 2015), thereby modulating cellular responsiveness to Hh signals. However, our previous work in zebrafish has shown that KA" interneuron precursors can turn off their Hh response even when the Hh pathway is constitutively activated by the overexpression of rSmoM2 or by the depletion of ptc1 and ptc2 (Huang et al., 2012). Similarly, our current work shows that ectopic expression of rSmoM2 is not sufficient to restore Hh response in Notchoff spinal cords. These results suggest that regulation at the Ptc/Smo level is unlikely the only mechanism that terminates Hh responsiveness. Indeed, we show that in the absence of primary cilia in iguana mutants, the low level Hh response remaining due to constitutive Gli1 activation can be completely blocked by Notch inhibition. This result suggests that Notch signalling can regulate Hh response in a primary cilium independent manner, likely at the Gli level. It should be noted that previous studies (Kong et al., 2015; Stasiulewicz et al., 2015) did not examine the effects of Notch activation and inhibition on the Gli genes, so it is plausible that the cilium-dependent mechanism functions in parallel with the cilium-independent mechanism to provide redundant control of Hh responsiveness in neural progenitor cells. Alternatively, since zebrafish ciliary mutants display slightly different effects on Hh response compared to mouse due to differential regulation of gli genes (Huang and Schier, 2009), it is also possible that this cilium-independent mechanism is specific to zebrafish. In zebrafish, Gli1 functions as the main activator downstream of Hh signalling, although Gli2a, Gli2b and Gli3 also contribute to the activator function (Karlstrom et al., 2003; Ke et al., 2008; Tyurina et al., 2005; Vanderlaan et al., 2005; Wang et al., 2013). Indeed, inhibition of Notch signalling abolishes both Hh-dependent and Hh-independent gli1 expression in the spinal cord. Similarly, gli2a, gli2b and gli3 expression in the spinal cord is largely eliminated in Notchoff spinal cords. These results demonstrate that Notch signalling controls the transcription or mRNA stability of all members of the Gli family in the spinal cord. It is possible that gli genes are direct targets of Notch signalling, as shown in mouse cortical neural stem cells where N1ICD/RBPJ binding regulates Gli2 and Gli3 expression (Li et al., 2012). Our model is also consistent with previous work on floor plate induction where the down-regulation of Gli2 expression has been implicated in the loss of Hh response in mouse and chick floor plate cells (Ribes et al., 2010), suggesting that regulation of the transcription of gli genes might be an evolutionarily conserved mechanism to terminate Hh response. Importantly, while ectopic expression of Gli1 from the hsp:EGFP-Gli1 transgene can re-establish Hh response as indicated by ptc2 expression in Notchoff spinal cords, it is unable to fully restore the olig2 motor neuron precursor domain. This finding suggests two non-mutually exclusive scenarios. The first possibility is that the expression of Gli2a, Gli2b and Gli3 are also required to achieve a full rescue since Notch inhibition abolishes the expression of all gli genes in the ventral spinal cord. Alternatively, Notch signalling might play additional roles in regulating Gli1 protein level or activity. A similar mechanism has been suggested in Müller glia of the mouse retina, where Notch signalling controls Gli2 protein levels and therefore Hh response (Ringuette et al., 2016). Interestingly, the study by Ringuette et al. favours a translation or protein stability model because Notch manipulation does not alter the Gli2 transcript level. Together, our work demonstrates that Notch signalling functions to permit neural progenitors to respond to Hh signalling via gli transcriptional regulation and potentially Gli protein maintenance. It is conceivable that Notch signalling regulates the Hh pathway at the level of both Ptc/Smo ciliary trafficking and the Gli transcription factors. This dual regulation might ensure efficient termination of Hh response during neuronal differentiation. Intriguingly, the regulation of Hh response by Notch signalling appears to be specific to the neural tissue. The Hh response in the somites is largely unaffected by Notch manipulations, whereas activation of Hh signalling results in an expansion of her12 expression in the blood vessels, suggesting Notch response is likely downstream of Hh signalling in the vasculature.
 
@@ -113,40 +169,152 @@ In summary, we demonstrate that Notch and Hh signalling share similar spatiotemp
 
 ## Materials and methods
 
-## Zebrafish strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource type</th>
+      <th>Designation</th>
+      <th>Source/Reference</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Zebrafish strain (Danio rerio)</td>
+      <td>hsp:Gal4</td>
+      <td>Scheer and Campos-Ortega, 1999, PMID: 10072782</td>
+      <td>RRID:ZFIN_ZDB-ALT-020918-6</td>
+    </tr>
+    <tr>
+      <td>Zebrafish strain (Danio rerio)</td>
+      <td>UAS:NICD</td>
+      <td>Scheer and Campos-Ortega, 1999, PMID: 10072782</td>
+      <td>RRID:ZFIN_ZDB-ALT-020918-8</td>
+    </tr>
+    <tr>
+      <td>Zebrafish strain (Danio rerio)</td>
+      <td>hsp:rSmoM2-tRFP</td>
+      <td>This paper.</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Zebrafish strain (Danio rerio)</td>
+      <td>hsp:EGFP-Gli1</td>
+      <td>Huang and Schier, 2009 PMID: 19700616</td>
+      <td>RRID:ZFIN_ZDB-ALT-110207-11</td>
+    </tr>
+    <tr>
+      <td>Zebrafish strain (Danio rerio)</td>
+      <td>iguts294 (iguana)</td>
+      <td>Sekimizu et al., 2004; Wolff et al., 2004 PMIDs: 15115751; 15198976</td>
+      <td>RRID:ZFIN_ZDB-ALT-980203-1553</td>
+    </tr>
+    <tr>
+      <td>Zebrafish strain (Danio rerio)</td>
+      <td>mib1ta52b (mindbomb)</td>
+      <td>Itoh et al., 2003 PMID: 12530964</td>
+      <td>RRID:ZFIN_ZDB-ALT-980203-1374</td>
+    </tr>
+    <tr>
+      <td>Zebrafish strain (Danio rerio)</td>
+      <td>her12:Kaede</td>
+      <td>This paper: Generated using BAC clone zK5I17 (DanioKey)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Zebrafish strain (Danio rerio)</td>
+      <td>ptc2:Kaede</td>
+      <td>Huang et al., 2012 PMID: 22685423</td>
+      <td>RRID:ZFIN_ZDB-ALT-120810-2</td>
+    </tr>
+    <tr>
+      <td>Morpholino oligonucleotide</td>
+      <td>rbpja/bMO (Previously Su(H)1+2 MO)</td>
+      <td>Gene Tools, LLC</td>
+      <td>ZFIN ID: ZDB- MRPHLNO-070410–11</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Kaede</td>
+      <td>MBL International</td>
+      <td>Cat# PM012, RRID:AB_592060</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG, Alexa Fluor 555</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21428, RRID:AB_2535849</td>
+    </tr>
+    <tr>
+      <td>DNA dye</td>
+      <td>Draq5</td>
+      <td>Biostatus</td>
+      <td>Cat# DR50050, RRID:AB_2314341</td>
+    </tr>
+    <tr>
+      <td>Small molecule inhibitor</td>
+      <td>Cyclopamine</td>
+      <td>Toronto Chemical</td>
+      <td>Cat# C988400</td>
+    </tr>
+    <tr>
+      <td>Small molecule inhibitor</td>
+      <td>LY-411575</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# 209984-57-6</td>
+    </tr>
+    <tr>
+      <td>Software package</td>
+      <td>Fiji-ImageJ</td>
+      <td>Schindelin et al., 2012 PMID: 22743772 https://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+    </tr>
+    <tr>
+      <td>Software package</td>
+      <td>Graphpad Prism</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td>RRID:SCR_002798</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish strains
 
 All zebrafish strains used in this study were maintained and raised under standard conditions. All procedures were conducted in accordance with the principles outlined in the current Guidelines of the Canadian Council on Animal Care. All protocols were approved by the Animal Care Committee at the University of Calgary (#AC17-0128). The transgenic strains used were: her12:Kaede, hsp:EGFP-Gli1 (Huang and Schier, 2009), hsp:Gal4 (Scheer and Campos-Ortega, 1999), hsp:rSmoM2-tRFP, ptc2:Kaede (Huang et al., 2012), UAS:NICD (Scheer and Campos-Ortega, 1999). The hsp:rSmoM2-tRFP transgenic line was generated by standard Tol2-mediated transgenesis. The mib1ta52b (mindbomb) (Itoh et al., 2003) and iguts294 (iguana) (Sekimizu et al., 2004; Wolff et al., 2004) mutant strains were maintained as heterozygotes, and homozygous embryos were generated by intercrossing heterozygous carriers.
 
-## Generation of the her12:Kaede BAC transgenic line
+### Generation of the her12:Kaede BAC transgenic line
 
 To generate the her12:Kaede transgenic line, BAC clone zK5I17 from the DanioKey library that contains the her12 locus and surrounding regulatory elements was selected for bacteria-mediated homologous recombination following the standard protocol (Bussmann and Schulte-Merker, 2011). zK5I17 contains 135 kb upstream and 63 kb downstream regulatory sequences of her12. First, an iTol2-amp cassette containing two Tol2 arms in opposite directions flanking an ampicillin resistance gene was recombined into the vector backbone of zK5I17. Next, a cassette containing the Kaede open reading frame and the kanamycin resistance gene was recombined into the zK5I17-iTol2-amp to replace the first exon of the her12 gene. Successful recombinants were confirmed by PCR analysis. The resulting her12:Kaede BAC was co-injected with tol2 transposase mRNA into wild-type embryos and stable transgenic lines were established through screening for Kaede expression.
 
-## Morpholino injection
+### Morpholino injection
 
 To block Notch signalling, morpholino oligonucleotides (Gene Tools, LLC) targeting both rbpja (Su(H)1) and rbpjb (Su(H)2) genes (rbpja/bMO: 5’-CAA ACT TCC CTG TCA CAA CAG G-3’) (Echeverri and Oates, 2007; Sieger et al., 2003) were injected at 0.25 mM into one-cell stage embryos with 1 nl per embryo. Injected embryos were fixed at appropriate stages for in situ analysis.
 
-## In situ hybridisation and immunohistochemistry
+### In situ hybridisation and immunohistochemistry
 
 All whole-mount in situ hybridisation and immunohistochemistry in this study were performed using standard protocols. We used the following antisense RNA probes: gli1, gli2a, gli2b, gli3, her2, her4, her12, hes5, olig2, ptc2 and sox2. For double fluorescent in situ hybridisation, both dinitrophenyl (DNP) and digoxigenin (DIG) labelled probes were used with homemade FITC and Cy3 tyramide solutions (Vize et al., 2009). For immunohistochemistry, rabbit polyclonal antibody to Kaede (1:1000, MBL) was used. The appropriate Alexa Fluor-conjugated secondary antibodies were used (1:500, Thermo Fisher) for fluorescent detection of antibody staining and Draq5 (1:10,000, Biostatus) was used for nuclei staining. All staining was performed in two or more replicates with 15–60 embryos per condition.
 
-## PHRESH analysis
+### PHRESH analysis
 
 All fluorescent imaging was carried out using the Olympus FV1200 confocal microscope and the Fluoview software. Photoconversion was carried out using the 405 nm laser with a 20x objective. ptc2:Kaede and her12:Kaede embryos at the appropriate stages were anaesthetised with 0.4% tricaine and then embedded in 0.8% low melting agarose. To achieve complete conversion over a large area, a rectangular area of 1000 by 300 pixels was converted by scanning the area twice with 50% 405 nm laser at 200 μs per pixel. Following confirmation of Kaedered expression, embryos were recovered in E3 water with phenylthiourea for 6 hr post-conversion before imaging. Appropriate imaging parameters were established using the unconverted region as a reference to avoid over or under exposure of the Kaedegreen signal. Cross-sections were generated using Fiji-ImageJ software (Schindelin et al., 2012) to create a 3D reconstruction of the image, then ‘resliced’ to yield transverse views of the spinal cord.
 
 To generate PHRESH signalling profiles from the reconstructed transverse views along the dorsoventral axis, three lines were drawn directly through the spinal canal and the fluorescent intensity of Kaedegreen was measured along the lines. Measurements were taken from one section per somite for five neighbouring somites, and the average of the three lines and the five somites was presented in the graph. Similarly, to generate signalling profiles along the mediolateral axis, one line was drawn directly dorsal to the spinal canal and the Kaedegreen fluorescent intensity was analysed in the same manner as described above. In order to control for transgene variability between embryos, the intensity was normalised to the maximum intensity of Kaedegreen in the unconverted region. These profiles were generated using Fiji-ImageJ software then graphically represented using Microsoft Excel.
 
-## Drug treatment
+### Drug treatment
 
 Embryos at the appropriate stage were treated with cyclopamine (Toronto Chemical, 100 μM), LY-411575 (Sigma, 50 μM), or DMSO control in E3 fish water. For PHRESH analysis, embryos were treated from 4 hr prior to the point of conversion until 6 hr post-conversion. To match this, all other drug treatments took place between 20 hpf and 30 hpf except the indicated timecourse experiments.
 
-## Heat shock experiments
+### Heat shock experiments
 
 To induce expression from the heat shock promoter, embryos at the relevant stage were placed in a 2 ml micro-centrifuge tube in a heat block set to 37°C for 30 min. After heat shock, embryos were transferred back into E3 water in a petri dish and recovered at 28.5°C. For drug treatment after heat shock, embryos were transferred directly from the heat shock to E3 water containing the appropriate drug.
 
-## Cryosectioning
+### Cryosectioning
 
 To obtain transverse sections after whole-mount in situ hybridisation, embryos were cryoprotected with 30% sucrose at 4°C before being embedded in OCT compound (VWR) and frozen in the −80°C freezer. Sections were cut between 10–16 μm using a Leica cryostat. Sections were taken from the region of the trunk dorsal to the yolk extension.
 
-## Quantification of expression domains
+### Quantification of expression domains
 
 To quantify the expression domains of ptc2, sox2 and olig2, 6–10 cryosections were imaged from each of 7–8 representative embryos. The areas of the expression domain and the corresponding spinal cord were measured using Fiji-ImageJ software. The percentage of the expression domain was calculated by dividing the area of the expression domain by the area of the entire spinal cord. All graphs and statistical analyses were generated using the GraphPad Prism software. For quantifications, standard deviation of the mean was calculated. To analyse significance between two samples, P values were determined by performing the Mann-Whitney U test.

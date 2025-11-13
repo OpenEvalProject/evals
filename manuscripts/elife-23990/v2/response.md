@@ -49,9 +49,7 @@ As per the reviewers’ suggestion to mutate the compensating residues in Fam20A
 
 Can the authors also confirm that ATP concentrations used in the Fam20C kinase assay are sufficiently low that the S346E mutant would not be able to bind ATP?
 
-The Kdapp of Fam20A-S346E for ATP is ~50 μM, and we used 100 μM ATP previously in the kinase assay. In order to make sure ATP concentration is low enough so that Fam20A-S346E does not bind ATP, we have repeated the kinase assay using 10 μM ATP (and 10 μM of Mn2+). Fam20A-S346E can still efficiently activate Fam20C under this condition (Author response image 1). This result suggests that the ability of Fam20A-S346E to activate Fam20C is likely not due to its residual ATP-binding capability.10.7554/eLife.23990.012Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.23990.012
-
-DOI: http://dx.doi.org/10.7554/eLife.23990.012
+The Kdapp of Fam20A-S346E for ATP is ~50 μM, and we used 100 μM ATP previously in the kinase assay. In order to make sure ATP concentration is low enough so that Fam20A-S346E does not bind ATP, we have repeated the kinase assay using 10 μM ATP (and 10 μM of Mn2+). Fam20A-S346E can still efficiently activate Fam20C under this condition (Author response image 1). This result suggests that the ability of Fam20A-S346E to activate Fam20C is likely not due to its residual ATP-binding capability.10.7554/eLife.23990.012Author response image 1.
 
 5) The authors should discuss whether other kinases or pseudokinases have been identified that bind ATP in the equivalent inverted orientation as Fam20A? Can this inverted binding be linked to any evolutionary hypothesis or ancestor protein that these ATP binding proteins might have evolved?
 

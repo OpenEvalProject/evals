@@ -33,13 +33,13 @@ Like mammalian brains, the Drosophila brain is compartmentalized; different comp
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig1-v2.jpg)
 
-**Figure 1.:** Drosophila brain.(A–C) Schematic representation of larval (A) and adult (B) Drosophila brains. Antennal lobes (AL, tomato), ellipsoid body (EB, orange), fan-shaped body (FB, teal), mushroom body (MB, fuchsia), calyx (CA, violet), and protocerebral bridge (PB, cyan) are shown. Major neuropils of the central brain are also shown separately (C). Anterior ←→ posterior (A←→P). Dorsal ←→ ventral (D←→V). (D–H) Anterior view of the midbrain region of the larval brain (D) and frontal views of the pupal (E–G) and adult (H) brains stained with antibodies against Dg (green) and the homophilic cell adhesion molecule Fasciclin II (FasII, magenta). Expression patterns for FasII and Dg are also shown in separate channels. Scale bar 20 µm. (D) In the larval brain, FasII is expressed in the γ lobes of the MB neuropil, which are formed in early larval stages. At L3 stage, α′/β′ lobe formation takes place. These lobes can be seen by Dg expression (arrow) and the absence of FasII expression. (E) After the pupa is formed, MB neuroblasts give rise to α/β lobe neurons that are positive for FasII. Dg expression is observed in newly generated neurons of α/β lobes (yellow arrows). In addition, a distinct Dg pattern is seen in neurons forming the FB (blue arrow) neuropil. (F) At mid-pupal stage, Dg expression remains in inner MB α/β lobe neurons (freshly generated differentiating axons, yellow arrow) and disappears from outer α/β neurons, which were born at earlier pupal stages (FasII marker demonstrates their belonging to α/β MB lobe). In addition, the Dg pattern diminishes from the FB but appears in the developing EB (blue arrow). (G) In final pupal stages, when most neuropils, except for MB α/β lobe neurons, are established, Dg protein is enriched in a small subset of inner α/β lobe axons (yellow arrows) and significantly reduced in other neuropils. Note the diminished Dg staining in fully formed FB and EB neuropils. (H) In the adult brain, Dg expression is visibly reduced.
+**Figure 1.:** (A–C) Schematic representation of larval (A) and adult (B) Drosophila brains. Antennal lobes (AL, tomato), ellipsoid body (EB, orange), fan-shaped body (FB, teal), mushroom body (MB, fuchsia), calyx (CA, violet), and protocerebral bridge (PB, cyan) are shown. Major neuropils of the central brain are also shown separately (C). Anterior ←→ posterior (A←→P). Dorsal ←→ ventral (D←→V). (D–H) Anterior view of the midbrain region of the larval brain (D) and frontal views of the pupal (E–G) and adult (H) brains stained with antibodies against Dg (green) and the homophilic cell adhesion molecule Fasciclin II (FasII, magenta). Expression patterns for FasII and Dg are also shown in separate channels. Scale bar 20 µm. (D) In the larval brain, FasII is expressed in the γ lobes of the MB neuropil, which are formed in early larval stages. At L3 stage, α′/β′ lobe formation takes place. These lobes can be seen by Dg expression (arrow) and the absence of FasII expression. (E) After the pupa is formed, MB neuroblasts give rise to α/β lobe neurons that are positive for FasII. Dg expression is observed in newly generated neurons of α/β lobes (yellow arrows). In addition, a distinct Dg pattern is seen in neurons forming the FB (blue arrow) neuropil. (F) At mid-pupal stage, Dg expression remains in inner MB α/β lobe neurons (freshly generated differentiating axons, yellow arrow) and disappears from outer α/β neurons, which were born at earlier pupal stages (FasII marker demonstrates their belonging to α/β MB lobe). In addition, the Dg pattern diminishes from the FB but appears in the developing EB (blue arrow). (G) In final pupal stages, when most neuropils, except for MB α/β lobe neurons, are established, Dg protein is enriched in a small subset of inner α/β lobe axons (yellow arrows) and significantly reduced in other neuropils. Note the diminished Dg staining in fully formed FB and EB neuropils. (H) In the adult brain, Dg expression is visibly reduced.
 
 Considering the evolutionary conservation of functional brain compartmentalization and the similarity of the observed dystroglycanopathy brain pathologies in humans and flies, the advantageous Drosophila cobblestone lissencephaly model (Yatsenko et al., 2014b) was used to get a deeper insight about the factors that contribute to Dg function in the nervous system. Firstly, neuroanatomical studies of the pre-adult and adult brains were performed to analyze the Dg expression pattern. In the developing brain, Dg expression is spatiotemporally dynamic. It is more abundant during the pre-adult stages of brain development. In particular, Dg is present in the axonal projections of differentiating neurons assembling various brain compartments, suggesting a function in neuropil formation. Secondly, brain anatomy of mutants that have abnormal Dg expression was analyzed. It revealed that proper levels of Dg are required for proper brain compartmentalization and fasciculation of various major neuropils. Thirdly, using mass spectrometry, the neuronal Dg interactome was determined. In silico analyses of identified factors demonstrated that the majority of them have human disease-linked homologs and have never been shown to interact with Dg. By clustering Dg interactors into functional groups, multiple proteins of the exocyst complex were found. Finally, the data show that in neurons the exocyst regulates Dg membrane trafficking. A genetic interaction approach demonstrated that components of the exocyst complex functionally interact with Dg in brains. Moreover, there are temporal requirements in exocyst–Dg regulation for the establishment of brain compartments. Since exocyst–Dg regulation depends on the developmental stage, these findings propose that neuronal cells have different requirements for exocyst-regulated Dg trafficking at various stages of differentiation. Further analysis of identified neuronal Dg interactors in a Drosophila model should help to decipher neural-specific molecular functions of this key ECM receptor and provide important insights into the molecular mechanisms leading to the development of congenital muscular dystrophies in humans.
 
 ## Results
 
-## In the developing brain, Dg is dynamically expressed in differentiating neuropils
+### In the developing brain, Dg is dynamically expressed in differentiating neuropils
 
 To get an insight into the temporal dynamics of Dg expression in the pre-adult brain, the Dg protein localization was analyzed in the same midbrain region at larval (L3), pupal (24 and 48 hr after puparium formation [APF]), and pharate (96 hr APF) developmental stages. In the larval central brain (CB), Dg is expressed in patches of axonal projections (Figure 1D). Some fascicles can be visualized by antibodies raised against the homophilic cell adhesion molecule Fasciclin II (FasII). The largest FasII-expressing CB structure is the MB, which contains three sequentially produced neuronal subtypes whose axons cluster differentially to form MB lobes. First, the γ lobe is produced (FasII-positive), its neurons born during embryonic and early larval stages; next, α′/β′ lobe neurons are generated during mid-late larval stages (FasII-negative); and finally, the α/β lobe (FasII-positive) is formed during pupal stages (Ito and Hotta, 1992; Lee et al., 1999). At the L3 larval stage, Dg is seen in FasII-negative MB neurons, corresponding to α′/β′ lobe neurons (Figure 1D).
 
@@ -49,33 +49,41 @@ Moreover, during later pupal stages, Dg’s expression pattern in the α/β MB l
 
 In summary, this analysis shows that the Dg expression pattern has a spatially and temporally dynamic character. It is strongly expressed in axons of the recently born, differentiating neurons (Figure 1D–G) and diminishes after the differentiation/maturation process is completed (Figure 1H). Thus, Dg’s targeted expression in developing neuropils suggests that it could be involved in neuropil formation and brain compartmentalization. Therefore, the next experiments addressed whether and how these processes are affected upon Dg misexpression.
 
-## Dg dysregulation affects architecture of neuropils
+### Dg dysregulation affects architecture of neuropils
 
 First, neuroanatomical studies of adult brains dissected from loss- and gain-of-function Dg mutants were performed. In particular, trans-allelic DgO55/DgO86 animals and mutants that had Dg overexpressed in the neurons, insc>Dg (for Dg protein expression, see Figure 2—figure supplement 1), were examined. Analyses of histological sections showed gross abnormalities in the brain organization, which included the lumpy brain surface and atypical compartmentalization of various brain neuropils (Figure 2A–C, arrows).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) Hematoxylin and eosin (H&E) stained histological sections of adult brains of control, Dg loss- and gain-of-function mutants (A: w1118/OregonR; B: DgO55/DgO86; and C: insc>Dg). Note the appearance of the cobblestone brain phenotype in Dg mutants and abnormal formation of brain neuropils (yellow arrows). OL: optic lobe; CA: calyx; CB: central brain. (D–F) Frontal-anterior view of adult brains of control, Dg loss- and gain-of-function mutants (D: w1118/OregonR; E: DgO86; and F: insc>Dg). Anti-discs large (Dlg, green) antibody marks septate junctions and is used to label membranes of neuronal cell bodies, neuronal fibers, and synapses, while DAPI (magenta) marks nuclei. Note that midbrain neuropils are abnormal in mutants with deregulated dystroglycan (Dg) expression (white arrows). MB: mushroom body; AL: antennal lobe. (G–I) Frontal-anterior view of the central brain in control, Dg loss- and gain-of-function mutants (G: w1118/OregonR; H: DgO55/DgO86; and I: insc>Dg). Anti-Dlg – grayscale. Upper panels show the α/β (bright) and γ (dim) MB lobes marked with anti-Dlg marker. Note that upon Dg deregulation ALs and MB neuropils (green and yellow arrows, respectively) are disorganized. Lower panels show the frontal-posterior views of adult brains showing abnormal shape of MB calyces (CA, magenta arrows) and the protocerebral bridge (PB, white arrows) in Dg loss- and gain-of-function mutants in comparison to the control. Yellow vertical line shows the midline. Scale bar 50 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–A’) Expression of Dg protein in the middle section of the brain (A) or at the brain surface in wild-type larvae. (B–B’) As a result of Dg overexpression using the insc-Gal4 driver, neuroblasts and their progeny have dramatically increased levels of Dg (B’). Note the cobblestone-like brain appearance in insc>Dg mutants (B’, arrows). (C–C’) In Dg loss-of-function mutant brains, Dg protein is undetectable. (D) In the adult brain of mutant flies expressing Dg under control of insc-Gal4, Dg protein persists in mushroom bodies (MBs) (yellow arrows), while in the adult brain of controls, Dg is no longer detected (Figure 1H). Dg (red), Fasciclin II (FasII) marks MBs (green), and DAPI marks nuclei (blue). (A–C) show middle sections of larval brain, scale bar 50 µm. (A’–C’) show the surface of the larval brain, scale bar 5 µm. (D) shows the central brain in adults, scale bar 25 µm.
+
 Importantly, the histochemical analyses of the brains dissected from the rare survivors with Dg deficiency or Dg neuron-specific upregulation demonstrate that in comparison to controls the appearance of their major midbrain neuropils is noticeably perturbed (Figure 2D–F). The most prominent structures that can be visualized in the frontal view of adult brains are the ALs and the MB. In particular, the olfactory memory centers (ALs) display abnormal shapes (Figure 2G–I, green arrows). Similarly, MB and PB neuropils show major abnormalities. The PB is positioned posteriorly from the protocerebral neuropil between the calyces of the MB. Normally, the PB is an elongated structure reminiscent of a bicycle handlebar with slightly ventrally bent ends. In Dg mutants, the PB handles are compressed toward the midline (Figure 2H, I, white arrows). Moreover, the MB of Dg mutants also appears highly disorganized; the form of MB calyces is altered (Figure 2H, I, magenta arrows), and the size and shape of the lobes as well as their neuronal projections look abnormal. For example, β- and β′ lobes often cross the midline (Figure 2H, yellow arrowheads) and α- and α′ lobes appear to be underdeveloped (Figure 2H, I, yellow arrows). These data suggest that Dg is involved in the establishment of brain compartments.
 
-## Proper levels of Dg are important for MB fasciculation
+### Proper levels of Dg are important for MB fasciculation
 
 Next, to measure the impact of Dg expression levels on neuropil formation, the architecture of the last-born α/β MB lobes was analyzed. These lobes could be marked by FasII and easily scored for distinct phenotypes (Figure 3A). In Dg-deficient brains, 20% of α/β lobes analyzed are misguided and more than 30% are underdeveloped (Figure 3B, C, I; for quantifications, see Supplementary file 1). These phenotypes are even more prominent in Dg gain-of-function mutants: less than 10% of α/β lobes appear normal, whereas 30% are dramatically underdeveloped and 60% are completely misguided with their neuronal projections emerging in atypical parts of the brain (Figure 3D–F, I, Supplementary file 1). These data suggest that the proper levels of Dg are critical for brain neuropil formation and axonal pathfinding.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig3-v2.jpg)
 
-**Figure 3.:** (A–H) Fasciclin II (FasII) staining of adult mutant brains reveals various morphological α/β lobe defects upon Dg deficiency (B: Dg; O55/DgO86C: Dg), pan-neuronal Dg upregulation (O86insc>Dg, D–F), and γ and α/β MB neuron-specific Dg down- or upregulation (201Y>Dg, RNAiG, and 201Y>Dg, H). In Dg mutants, axons of α lobe neurons stop migration prematurely or abnormally project into β lobe space, forming underdeveloped α lobes. Axons of β lobe neurons are improperly clustered and misguided, projecting into γ lobe space or overshooting the midline to form a fused β lobe. Note that misguided and underdeveloped α/β lobe phenotypes are more dramatic when Dg is overexpressed in all neuronal cells. (I) Quantification of the observed MB phenotypes (see also Supplementary file 1). For comparison of the observed phenotypes, χ2 test was used. ***p≤0.001; **p≤0.01; *p≤0.05; n.s.: not significantly different.
+**Figure 3.:** (A–H) Fasciclin II (FasII) staining of adult mutant brains reveals various morphological α/β lobe defects upon Dg deficiency (B: DgO55/DgO86; C: DgO86), pan-neuronal Dg upregulation (insc>Dg, D–F), and γ and α/β MB neuron-specific Dg down- or upregulation (201Y>DgRNAi, G, and 201Y>Dg, H). In Dg mutants, axons of α lobe neurons stop migration prematurely or abnormally project into β lobe space, forming underdeveloped α lobes. Axons of β lobe neurons are improperly clustered and misguided, projecting into γ lobe space or overshooting the midline to form a fused β lobe. Note that misguided and underdeveloped α/β lobe phenotypes are more dramatic when Dg is overexpressed in all neuronal cells. (I) Quantification of the observed MB phenotypes (see also Supplementary file 1). For comparison of the observed phenotypes, χ2 test was used. ***p≤0.001; **p≤0.01; *p≤0.05; n.s.: not significantly different.
 
 To address if these phenotypes are due to an intrinsic requirement for Dg in MB neurons, Dg was up- and downregulated (UAS-Dg and UAS-DgRNAi) specifically in MB neurons using c309-Gal4 (pan-MB + eye and antennal disc expression) and 201Y-Gal4 (γ and α/β) drivers (Aso et al., 2009). Importantly, Dg up- or downregulation in MB neurons results in the appearance of defects like those observed in Dg mutant α/β lobes: α/β lobes are significantly underdeveloped and often misguided (Figure 3A, B, Supplementary file 1). Notably, the phenotypes caused by Dg deregulation in MB neurons are less dramatic than the axon misguidance phenotypes observed upon Dg misexpression in the entire brain (compare Figure 3D, F and G, H), suggesting that for the proper assembly of the brain, Dg expression must be controlled in multiple neurons. Together, these data show that the precise expression of the ECM receptor Dg specifically in the developing neurons is critical for their proper axonal pathfinding and establishment of brain neuropils. Since these phenotypes are similar to the anatomical brain defects of human dystroglycanopathy patients, it suggests that analysis of Dg signaling in a Drosophila model could give important insights into the molecular mechanisms leading to the development of congenital muscular dystrophies.
 
-## Identification of Dg interactome in neurons
+### Identification of Dg interactome in neurons
 
 Drosophila offers a unique possibility to study the Dg interactome since tagged Dg protein can be expressed in a tissue-specific manner to isolate Dg complexes. Previously, using this technique, Dg interactors were identified in muscles (Yatsenko et al., 2020). Here, the idea was to isolate Dg interactors in neurons. Because continuous overexpression of Dg during development with pan-neuronal drivers is lethal (Yatsenko et al., 2014b), a pilot screen to identify Dg interactions just in the adult nervous system was performed. To avoid the high lethality rate caused by Dg overexpression during development, Dg was overexpressed only in adult animals by using the switchable Gal4/Gal80ts genetic system. In particular, GFP-tagged, full-length Dg was overexpressed in adult neuronal cells using the pan-neuronal driver elav-Gal4. Young adults were kept for 5 days at restrictive temperature (29°C) to ensure the sufficient expression of the tagged protein for mass spectrometry (for details, see Materials and methods). Dg complexes from adult Drosophila heads were immune-isolated in order to detect precipitated proteins by mass spectrometry analysis (Figure 4A). Results were verified in duplicates (Figure 4B), and all immunoprecipitated proteins enriched at least twofold in comparison to controls are reported as Dg interactors (Figure 4B, C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig4-v2.jpg)
 
-**Figure 4.:** (A) Scheme represents experimental techniques carried out to identify neuronal proteins that interact with Dg. GFP-tagged full-length Dg was expressed specifically in neurons by driving expression of UAS-Dg::GFP with elav-Gal4 using the Gal4/Gal80 system. Dg::GFP protein was immunoprecipitated with GFP-Trap beads containing anti-GFP antibodies. Proteins that form complexes with Dg in neuronal tissue were detected by mass spectrometry analysis. (tsB) Coomassie blue-stained gel confirms increased protein levels in samples immunoprecipitated from protein extracts from Dg-overexpressing adult animal heads. Experiments were performed in duplicate. (C) Cartoon represents neuronal cell with subcellular compartments, where red squares and numbers indicate identified Dg-associated proteins and their reported subcellular localization. See also Supplementary files 2 and 4. (D) Dg-associated components placed into a protein interaction network. Colored shapes outline functional groups. Nodes symbolize identified proteins, lines show previously reported associations, and line thickness represents confidence of association. Non-dashed lines show protein complexes identified by Markov clustering algorithm. See also Supplementary file 5. Source data file. Mass spec data for neuronal Dg interactome https://doi.org/10.5061/dryad.8sf7m0cmf.
+**Figure 4.:** (A) Scheme represents experimental techniques carried out to identify neuronal proteins that interact with Dg. GFP-tagged full-length Dg was expressed specifically in neurons by driving expression of UAS-Dg::GFP with elav-Gal4 using the Gal4/Gal80ts system. Dg::GFP protein was immunoprecipitated with GFP-Trap beads containing anti-GFP antibodies. Proteins that form complexes with Dg in neuronal tissue were detected by mass spectrometry analysis. (B) Coomassie blue-stained gel confirms increased protein levels in samples immunoprecipitated from protein extracts from Dg-overexpressing adult animal heads. Experiments were performed in duplicate. (C) Cartoon represents neuronal cell with subcellular compartments, where red squares and numbers indicate identified Dg-associated proteins and their reported subcellular localization. See also Supplementary files 2 and 4. (D) Dg-associated components placed into a protein interaction network. Colored shapes outline functional groups. Nodes symbolize identified proteins, lines show previously reported associations, and line thickness represents confidence of association. Non-dashed lines show protein complexes identified by Markov clustering algorithm. See also Supplementary file 5. Source data file. Mass spec data for neuronal Dg interactome https://doi.org/10.5061/dryad.8sf7m0cmf.
 
 To gain insights into the biological roles of Dg in the central nervous system (CNS) and the pathways with which it interacts in this system, intensive bioinformatic analyses of identified proteins were performed to address their cellular localization (Figure 4C), molecular function, and associated biological processes (Figure 4D), as well as human homologs and disease associations (Supplementary file 2). Importantly, the human disease-association enrichment analysis identified that human homologs of Dg-interacting proteins detected in this study have significantly enriched associations with nervous system diseases and mental disorders (Supplementary file 3). These analyses distinguished functional groups that include ECM components; proteins that mediate membrane transport; regulators of synaptic and other types of cytoplasmic vesicles; elements associated with ER, Golgi, or mitochondria; nuclear envelope factors; components that regulate protein degradation; nuclear and cytoplasmic RNA exosome complexes; and chromatin remodeling factors (Figure 4C, Supplementary files 2 and 4). To better characterize the identified factors, they were placed in a protein interaction network, grouped based on the reported molecular functions and clustered into protein complexes by utilizing the Markov clustering algorithm (MCL, Figure 4D, Supplementary file 5).
 
-## Dg functional interaction network includes disease-associated elements
+### Dg functional interaction network includes disease-associated elements
 
 Currently, few interactors have been identified as Dg interactors in any organism, especially in the nervous system. Apart from several components of the DGC per se, only a small number of ECM proteins, such as agrin, pikachurin, perlecan, and laminins, have been shown to bind to Dg. Encouragingly, a Drosophila homolog of agrin, eyes shut (Eys), was also detected in the protein interaction network. It clustered together with the other two known Dg interactors, Kibra and Vimar (Figure 4D, red, see also Supplementary files 2 and 5; Kucherenko et al., 2011; Marrone et al., 2011a; Yatsenko et al., 2020). This group includes several proteins that play a role in eye morphogenesis in Drosophila and humans (Jukam and Desplan, 2011; Mahato et al., 2018; Marrone et al., 2011a; Ray et al., 2020). Moreover, these factors are not only associated with various ocular dystrophies but also involved in cancer development and regulation of stem cell maintenance and differentiation, cell growth, and metabolism (Cehajic-Kapetanovic et al., 2019; Collison et al., 2019; Jamal et al., 2020; Lu et al., 2019; Priedigkeit et al., 2021; Wu et al., 2020). For example, in Drosophila, prominin (Prom), a homolog of human CD133, maintains mitochondrial function, regulates body size and weight, and influences animal longevity by controlling insulin and TOR signaling (Ryu et al., 2019; Wang et al., 2019; Zheng et al., 2019). These functions resonate with the previously described functions for Dg in control of neuronal stem cell proliferation and differentiation, establishment of cellular polarity, maintenance of cellular homeostasis, and – at the organismal level – control of embryogenesis, stress response, adult animal metabolism, and longevity (Kreipke et al., 2017; Kucherenko et al., 2010; Marrone et al., 2011b; Shcherbata et al., 2007; Yatsenko and Shcherbata, 2014; Yatsenko et al., 2014a). Recently, Dg has been shown to interact with Kibra in both vertebrates and invertebrates (Iyer et al., 2019; Morikawa et al., 2017; Vita et al., 2018; Yatsenko et al., 2020). Kibra was also detected in this screen, suggesting that a Dg–Hippo signaling interaction might be also important in the nervous system. These data propose that in the nervous system the transmembrane protein Dg also acts as a scaffold that brings together different signaling components to the membrane. This idea is supported by previous studies in other tissues, for example, studies that show that Dg acts as a signaling hub in promoting nitric oxide syntase-histone deacethylase (NOS-HDAC) signaling, and Hippo and insulin signaling pathways in muscles (Cacchiarelli et al., 2010; Eid Mutlak et al., 2020; Marrone et al., 2012; Marrone and Shcherbata, 2011; Vita et al., 2018; Watt et al., 2015; Yatsenko et al., 2020; Yatsenko et al., 2014b).
 
@@ -85,9 +93,25 @@ Interestingly, Dg interaction with agrins modulates the assembly of synapses (Ba
 
 Also, there were several unexpected functional association groups, namely proteins of the Brahma complex involved in chromatin remodeling, mitochondria-targeting factors, membrane-associated receptors, and importins, functional interactions of which with Dg are less apparent and must be confirmed through follow-up experiments. In general, the biological value of the Dg protein interaction network identified here should provide prognosis of new Dg functions in the nervous system and aid in understanding complex phenotypes observed upon congenital dystrophies.
 
-## Exocyst mediates delivery of Dg-carrying cytoplasmic vesicles to the plasma membrane
+### Exocyst mediates delivery of Dg-carrying cytoplasmic vesicles to the plasma membrane
 
 As the identified Dg neuronal interactome was largely novel, one of the most prominent functional groups was followed up to test whether the results of the mass spectrometric analysis have biological relevance. In particular, the focus was set on Dg association with exocyst complex proteins as this group was one of the most prominent clusters identified by the MCL algorithm. The exocyst is an octameric protein complex involved in tethering and spatial targeting of post-Golgi vesicles to the plasma membrane preceding SNARE-mediated fusion (Ahmed et al., 2018). It is evolutionarily conserved and involved in the regulation of multiple cell processes such as establishment of cell polarity, exocytosis, cell migration, and growth (Langevin et al., 2005). Of the eight subunits of the complex, the six proteins Sec5, Sec6, Sec8, Sec10, Exo70, and Exo84 were co-purified together with Dg (Figure 4D, Supplementary file 4 and 5). Considering that Dg is a transmembrane protein that is heavily glycosylated prior to its delivery to the membrane, the hypothesis can be put forward that the exocyst might be involved in mediating Dg’s trafficking from the Golgi to the plasma membrane. Alternatively, Dg and exocyst complex proteins may interact at the membrane site. In this case, Dg could serve as a signal that guides secreting vesicle fusion to the specific location at the plasma membrane (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig5-v2.jpg)
+
+**Figure 5.:** (A) Scheme of a potential Dg–exocyst interaction hypothesized based on the reported data on functions and subcellular localizations of Dg and exocyst complex proteins. The hypothesis predicts either Dg’s function in mediating membrane-targeting of exocytic vesicles through interaction with the exocyst at the membrane site or exocyst-mediated Dg delivery to the cell membrane. Black circles outline proteins of the exocyst complex found to interact with Dg in the mass spectrometry screen. (B) Larval brain with GFP-negative Dg loss-of-function clones (outlined with yellow) immunostained with anti-Sec5. GFP and Sec5 are shown in separate channels. No obvious changes are observed in Sec5 protein levels or localization in Dg mutant clones when compared to GFP-positive control cells. Sec5 (red), GFP (green), and DAPI (blue). (C) GFP-negative Sec151 mutant clones in larval brains show altered Dg localization when compared to neighboring control cells (GFP-positive). Dg (red), GFP (green), and DAPI (blue). (D) GFP-negative Sec5E10 mutant clones show an impaired Dg expression pattern in neuronal cells marked with the neuron-specific marker Elav. Dg (red), GFP (green), and Elav (blue). Elav, GFP, and Dg are also shown in separate channels. Yellow dashed line outlines Dg-/Dg- clonal area. (E) The surface of the larval brain showing control and Sec15 clonal neuronal stem cells and their progeny. Note that in mutant cells (GFP-negative, yellow arrows) Dg protein is enriched in cytoplasmic puncta, more randomly distributed, and not properly delivered to the membrane in comparison to controls (green arrows). Dg (red), GFP (green), and Cad (blue). Scale bar 5 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Larval brain with GFP-negative Dg loss-of-function clones (outlined with yellow) immunostained with anti-Sec5. GFP, Sec5, and DAPI shown in separate channels. No obvious changes exist in Sec5 protein levels or localization in Dg mutant clones when compared to GFP-positive control cells. Scale bar 50 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Larval salivary gland stained with anti-Dg (A’) and anti-Sec5 (A”) shows co-localization of both proteins at the membrane. (B) The bar graph shows relative intensities of Dg staining at the membranes of control (GFP+) and Sec151 and Sec6KG08199 mutant (GFP-) salivary gland cells. n = 20 and 15 for control and Sec151, respectively, p=8.4×10−18 and n = 64 and 25 for control and Sec6KG08199, respectively, p=1.4×10−20. Two-tailed Student’s t-test was applied for statistical analyses. (C) Single z-section image of larval salivary gland with cells mutant for exocyst subunit Sec15 (GFP-negative clone outlined with yellow). (C’) GFP signal shown in a separate channel. (C’’) Dg staining reveals strong downregulation of Dg protein at the membranes of Sec15 mutant cells when compared to control (GFP-positive) cells. (D, E) Single z-section image of larval and pupal salivary glands with cells mutant for exocyst subunit Sec6 (GFP-negative clone outlined with yellow). (D’, E’) GFP signal shown in a separate channel. (D’’, E”) Dg staining shown in separate channel reveals strong downregulation of Dg protein at the membranes of Sec6 mutant cells when compared to control (GFP-positive cells). (F, F’), Maximum intensity projection image of the salivary gland shown in (F). Scale bar 25 µm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A–E) Analyses of the expression patterns of various cell adhesion proteins in brains containing sec15 mutant clones: Discs large 1 (Dlg, A, A’); αPS2 integrin (αPS2, B, B’); DE-Cadherin (Cad, C, C’); its binding partner Armadillo (Arm; D, D’); and Fasciclin II (FasII, E, E’). Note that at the level of light microscopy the protein localization of Dlg, αPS2, Cad, and Arm was not altered upon sec15 deficiency. (E, E’) FasII protein was enriched in cytoplasmic puncta, more randomly distributed, and not properly delivered to the membrane. Compare protein distribution in controls (green arrows) and sec15 mutant cells (yellow arrows). (A–E) show larval brain hemispheres, scale bar 25 µm. (A’–E’) show the surface of the larval brain, scale bar 5 µm.
 
 First, to test whether loss of Dg in brain cells affects expression and/or localization of the exocyst complex, during early larval stages, DgO86 homozygous loss-of-function clones were induced, in which the expression pattern of a core component of the exocyst complex, Sec5 protein was analyzed (Mott et al., 2003). No obvious changes in either Sec5 protein expression levels or subcellular localization were observed in Dg mutant clones (visualized by the absence of GFP) in comparison to GFP-positive control areas in L3 larval brains (Figure 5B, Figure 5—figure supplement 1). This result suggests that exocyst-mediated vesicle trafficking is unlikely to be regulated by Dg protein.
 
@@ -97,13 +121,13 @@ Next, to investigate whether exocyst-dependent regulation of Dg expression indee
 
 To further confirm that loss of exocyst function indeed causes a decrease in Dg at the cell membrane, Dg localization in the larger cells of the salivary glands was analyzed. In these cells, Dg and Sec5 proteins show clear co-localization at the membrane (Figure 5—figure supplement 2A). Clones deficient in the exocyst components Sec6 or Sec15 show a strong reduction in membrane-associated Dg (Figure 5—figure supplement 2B–F), implying that loss of exocyst function could result in Dg downregulation or loss. Also, since Dg localization was perturbed in the brain and salivary gland, it suggests that the exocyst-mediated membrane trafficking of Dg is not neuron specific.
 
-## Exocyst-mediated trafficking of Dg exhibits some specificity
+### Exocyst-mediated trafficking of Dg exhibits some specificity
 
 The exocyst complex has been shown to be involved in polarized secretion as its deficiencies result in mislocalization of specific cell adhesion and signaling molecules in photoreceptor neurons and sensory organ precursors (Jafar-Nejad et al., 2005; Mehta et al., 2005). It was important to address whether the exocyst-dependent delivery of Dg in the brain is a general function in the secretory pathway or if it is Dg specific. Therefore, next, the distribution of various cell adhesion proteins in brains containing sec15 mutant clones was studied. In particular, Discs large (Dlg1), Integrin PS2, Inflated (If), DE-Cadherin (Cad), its binding partner Armadillo (Arm), and a neural cell adhesion molecule (NCAM), Fasciclin II (FasII), were tested.
 
 Discs large 1 (Dlg1) is a modular scaffolding protein that is expressed at specialized zones of the plasma membrane to regulate cell polarity through assembly of specific multiprotein complexes, which include signaling proteins, receptors, and ion channels (Walch, 2013). For example, the major ECM receptors, integrins, exist in a physical complex with the DLG scaffold in mammals (Beumer et al., 2002). It has been shown that, similar to Dg, integrins play important roles during brain morphogenesis, and defects in their functions result in the development of congenital muscular dystrophies (Barraza-Flores et al., 2020). The other factors critical for nervous system development are the cadherin family and the immunoglobulin-related superfamily of cell adhesion molecules, NCAMs (Cammarota et al., 2020; Dumstrei et al., 2003; Fung et al., 2009; Neuert et al., 2020). Cadherins connect cells with each other via adherens junctions, while NCAMs act as neuronal recognition molecules in the regulation of selective axon fasciculation. Surprisingly, it was found that in clones lacking one of the Sec proteins, localization of most of these cell adhesion molecules was not altered at the level of light microscopy (Figure 5—figure supplement 3A–D). The only protein that displayed aberrant localization in sec15 clones was FasII. It aggregated in cytoplasmic foci in mutant cells, in contrast to the strict membrane localization in controls (Figure 5—figure supplement 3E, arrows). These results agree with previously published data that demonstrate the specific effect of the exocyst complex on the localization of various transmembrane cell adhesion and cell signaling proteins required for proper photoreceptor development (Mehta et al., 2005). One explanation for such specificity could be that both Dg and FasII proteins are glycosylated in the process of post-translation modification (Dempsey et al., 2019; Nakamura et al., 2010; Parkinson et al., 2013; Patel et al., 1987; Snow et al., 1989), while glycosylation has not been reported for any other tested here proteins. These data demonstrate that the function of the exocyst complex in Dg trafficking is rather specific and suggest that it might include transport of other proteins undergoing glycosylation, implying that the exocyst-dependent vesicular trafficking mechanism exists to spatiotemporally target a specific subset of cell adhesion molecules in neurons.
 
-## Dg and exocyst expression levels and patterns correlate in the developing brain
+### Dg and exocyst expression levels and patterns correlate in the developing brain
 
 During differentiation, axons grow out from the neuronal cell body, select the correct pathway for migration, choose specific target region within which they terminate, and recognize other cells to form synapses. All of these processes require robust protein trafficking within the neuron to result in the directional delivery of proteins to the axonal termini. Since the exocyst controls polarized secretion, and exocyst subunits have been implicated in neurite outgrowth and cell polarity (Koon et al., 2018; Lira et al., 2019), one possibility is that exocyst-mediated regulation of Dg trafficking takes place at specific stages, ensuring a temporally dynamic Dg protein expression pattern necessary for proper neuronal differentiation.
 
@@ -111,13 +135,29 @@ To understand Dg–exocyst relations in the brain, next, the expression patterns
 
 These data show that Sec5 has a temporal expression pattern reminiscent of Dg during development and a similar yet broader spatial pattern (Figure 6—figure supplements 1 and 2). This is consistent with involvement of Dg and the exocyst in a regulatory relationship. These data also suggest that exocyst–Dg regulations would take place predominantly in the developing brain, where the processes of neuronal and glial differentiation and neuropil formation occur.
 
-## Exocyst-mediated Dg regulation is required for proper MB assembly
+### Exocyst-mediated Dg regulation is required for proper MB assembly
 
 Next, to determine if exocyst-dependent Dg trafficking has a functional role in brain development, the assembly of the MB was investigated. This neuropil was particularly interesting for this research since the MB exhibits a temporal sequence in layer formation, in which younger neurons project first into the core and shift to the surrounding layers as they differentiate. In humans, to form the layered brain cortex, neurons migrate into different layers, and the migration process depends on the timing of when these neurons were born. Drosophila neurons do not migrate; however, MB cell bodies and their axonal projections are organized into layers, which also depends on the MB neuron birth timing (Kurusu et al., 2002; Li et al., 2018). The brain of dystroglycanopathy patients is characterized as cobblestone brain – a significant anomaly of cortical layering caused by neuronal overmigration. The expression data show that Dg tends to be expressed at higher levels in the youngest neurons, suggesting that the MB could be a good model to understand whether the exocyst and Dg functionally interact during brain compartmentalization and layer formation.
 
 To test for functional interaction of the exocyst complex with Dg, the architecture of MBs of trans-heterozygous mutants with a reduced copy number of Dg and one of the exocyst complex components was analyzed. In particular, the exocyst components that were found in the mass spectrometry screen to directly interact with Dg as well as one additional exocyst component, Sec15, were studied (Figure 5A, red circles outlined in black). In addition, trans-heterozygous mutants with one functional copy of Sec15 and Sec5, Sec6, or Sec10 were examined.
 
 Importantly, reduction by one copy of Sec components in a Dg heterozygous background results in a significant increase of both underdeveloped and misguided MB phenotypes when compared to just Dg/+ heterozygous animals (Figure 6A, B and Supplementary file 1, see also Figure 6—figure supplement 3). The appearance and frequency of these phenotypes are similar to MB abnormalities observed in Dg loss-of-function mutants (Figure 3A, B). These data show that in the brain, the exocyst complex genetically interacts and cooperates with Dg to control proper brain compartmentalization. Furthermore, simultaneous reduction by one copy of two genes encoding exocyst components also causes MB phenotypes, which additionally confirms that exocyst-mediated trafficking plays a role in the assembly of MB lobes (Figure 6A, B, Figure 6—figure supplement 3, Supplementary file 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig6-v2.jpg)
+
+**Figure 6.:** (A) Abnormal MB lobe architecture phenotypes are observed in trans-heterozygous animals carrying only one copy of Dg and one copy of Sec (DgO86/+; Sec10f03085/+ and DgO86/Sec6Ex15), confirming a Dg–exocyst functional interaction in the process of MB morphogenesis (compare to Figure 3G–H). Viable combination of mutations in different exocyst subunits (Sec6KG08199/+; Sec151/+) results in similar phenotypes. The MB lobes are marked with Fasciclin II (FasII). Scale bar 50 µm. For more phenotypes, see also Figure 6—figure supplement 3. (B) Bar graph presents the quantification of the phenotypes observed in the genetic interaction analysis (see also Supplementary file 1). Reduction by one copy of any two of the analyzed genes significantly affects MB morphogenesis. For comparison of MB phenotypes, χ2 test was used. ***p≤0.001; **p≤0.01. See also Supplementary file 1. (C) In differentiating neurons, the Dg protein is loaded into the exocyst-positive secretory vesicle where it may be glycosylated (1). Then, the vesicle transports the glycoprotein Dg to the membrane. Upon vesicle fusion with the membrane (2), Dg is localized at the membrane where it acts as the extracellular matrix receptor (3). Exocyst-mediated delivery of Dg is necessary for the establishment of brain compartments and proper neuronal networking.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Enlarged image of L3 brain shows co-localization of Dg and Sec5. Yellow arrow points to axonal extensions, where enriched Dg and Sec5 levels are detected. (A’) Zoomed-in region from A. In differentiating neural cells (cyan arrow), Dg can be found in speckles located in very close proximity to Sec5-positive puncta. Nb: neuroblast. (B) Image of fully differentiated segmental nerves (SNs) connected to ventral nerve cord (VNC) of third instar larva stained with anti-Dg and anti-Sec5. (B’) Enlarged view of area marked by white rectangle in B. SNs have a strong Dg expression and rarer scattered Sec5-positive speckles. Arrow points to a speckle positive for both proteins. From the enlarged images, it is evident that a gross pool of Dg protein is scattered in Sec5-positive puncta and enriched at the cell body periphery of differentiating neural cells (cyan arrows) and along projecting axonal tracts (yellow arrows). Scale bar 10 µm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Brain lobe of a third instar larva (L3) immunostained with antibodies against Dg and Sec5, a subunit of the octameric exocyst complex, showing similar expression patterns. CB: central brain; OL: optic lobe. (B) Brain at 72 hr after puparium formation. Co-localization of Dg and Sec5 is seen in the midbrain neuropils: antennal lobe (AL), mushroom body (MB), superior medial protocerebrum (SMP), subesophageal ganglion (SOG), and the ellipsoid body (EB). (C) In adult brains, both proteins’ expression is strongly reduced compared to pre-adult stages, and strong enrichment in the neuropils is no longer observed. Scale bar 25 µm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/63868/elife-63868-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Viable combination of mutations in different exocyst subunits (Sec6KG08199/+; Sec151/+ and Sec5E10/Sec10f03085) results in abnormal MB lobe architecture (compare to controls in Figures 3A and 6A). Similar phenotypes are observed in trans-heterozygous animals carrying one copy of Dg and one copy of Sec (DgO86/+; Sec151/+ and DgO86/Sec6Ex15), confirming a functional interaction between Dg and the exocyst in the process of MB morphogenesis. Arrows point to the observed morphological abnormalities of MB lobes. The MB lobes are marked with Fasciclin II. Scale bar 50 µm.
 
 Together, the genetic interaction data support the findings from the mass spectrometry analysis about Dg–exocyst interaction and demonstrate that the exocyst complex plays a role in Dg transport in differentiating neurons (Figure 6C). These results also emphasize the importance of precise regulation of the expression and subcellular localization of Dg for the correct fasciculation of the MB lobes and brain compartmentalization.
 
@@ -137,7 +177,493 @@ This study shows that in Dg and exocyst mutants MB lobes were dramatically under
 
 ## Materials and methods
 
-## Experimental model
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dg (rabbit polyclonal)</td>
+      <td>Gift from Hannele Ruohola-Baker (Deng et al., 2003)</td>
+      <td>Dg</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sec5 (mouse monoclonal)</td>
+      <td>Gift from Thomas Schwarz (Langevin et al., 2005)</td>
+      <td>Sec5</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab, 13970</td>
+      <td>IF(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FAsII (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# 1D4</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dlg (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# 4F3</td>
+      <td>IF(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Elav (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# 9F8A9</td>
+      <td>IF(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Arm (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# N2 7A1</td>
+      <td>IF(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-integrin alphaPS2 (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# CF.2C7</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DE-Cad (rat monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# DCAD2</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IG1 Cy3 (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 115-165-205</td>
+      <td>Secondary antibody IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 568 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11011</td>
+      <td>Secondary antibody IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 488 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11039</td>
+      <td>Secondary antibody IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>w[1118]</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 5905 FBgn0003996</td>
+      <td>Wild-type strain</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Oregon-R-C</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 5 FBgn0003996</td>
+      <td>Wild-type strain</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>insc-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 8751</td>
+      <td>w[*]; P{w[+mW.hs]=GawB}insc[Mz1407]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>C305a-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 30829</td>
+      <td>w[*]; P{w[+mW.hs]=GawB}Cka[c305a]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>C309-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 6906</td>
+      <td>w[*]; P{w[+mW.hs]=GawB}c309</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>201Y-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 4440</td>
+      <td>w[1118]; P{w[+mW.hs]=GawB}Tab2[201Y]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>elav-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 458</td>
+      <td>w[1118], elavGal4; tubGal80ts (temperature sensitive)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT40A GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 5629</td>
+      <td>hsFlp; Ubi GFP FRT 40A/CyO (clone induction line)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT G13 GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 5826</td>
+      <td>hsFlp; FRTG13 GFP/CyO (clone induction line)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT 82B GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 5827</td>
+      <td>hsFlp; +; FRT 82B GFP/TM3 (clone induction line)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dg::GFP</td>
+      <td>Gift from Marie-Laure Parmentier (Bogdanik et al., 2008)</td>
+      <td>Dg</td>
+      <td>UAS-Dg::GFP (Dg tagged GFP under control of UAS promoter)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dg</td>
+      <td>Gift from Hannele Ruohola-Baker (Deng et al., 2003)</td>
+      <td>Dg</td>
+      <td>UAS-Dg (Dg gene under control of UAS promoter)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DgRNAi</td>
+      <td>Gift from Hannele Ruohola-Baker (Deng et al., 2003)</td>
+      <td>Dg</td>
+      <td>UAS-DgRNAi (Dg RNAi construct under control of UAS promoter)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DgO86/CyO</td>
+      <td>Gift from Robert Ray (Christoforou et al., 2008)</td>
+      <td>Dg</td>
+      <td>DgO86/CyO (premature stop codon at 87 aa, strong hypomorph or null)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DgO55/CyO</td>
+      <td>Gift from Robert Ray (Christoforou et al., 2008)</td>
+      <td>Dg</td>
+      <td>DgO55/CyO (premature stop codon at 653 aa, strong hypomorph or null)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT G13 DgO55/CyO</td>
+      <td>Gift from Robert Ray (Christoforou et al., 2008)</td>
+      <td>Dg</td>
+      <td>w[*]; FRT G13 DgO86/SM6a (line for Dg mutant clone induction line)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT40A, Sec5E10/CyO</td>
+      <td>Gift from Yohanns Bellaiche (Langevin et al., 2005)</td>
+      <td>Sec5</td>
+      <td>w[*]; FRT40A, Sec5E10/CyO (null)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT82B Sec151/TM3</td>
+      <td>Gift from Yohanns Bellaiche (Langevin et al., 2005)</td>
+      <td>Sec15</td>
+      <td>w[*]; FRT82B Sec151/TM3 (premature stop codon, strong hypomorph or null)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT G13, Sec6KG08199/CyO</td>
+      <td>Gift from Yohanns Bellaiche (Langevin et al., 2005)</td>
+      <td>Sec6</td>
+      <td>w[*]; FRT G13, Sec6KG08199/CyO (P-element insertion, null)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT 82B, Sec10f03085/TM6, Tb</td>
+      <td>Gift from Yohanns Bellaiche (Langevin et al., 2005)</td>
+      <td>Sec10</td>
+      <td>FRT 82B, Sec10f03085/TM6, Tb (PBac-element insertion, null)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT G13 Sec6Ex15/CyO</td>
+      <td>Gift from Mark Metzstein (Jones et al., 2014)</td>
+      <td>Sec6</td>
+      <td>w[*]; FRT G13 Sec6Ex15/CyO, Act-GFP (null)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe</td>
+      <td>Adobe CC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen 2011</td>
+      <td>Carl Zeiss</td>
+      <td>Zen 2011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant software 1.3.0.5</td>
+      <td>Cox and Mann, 2008</td>
+      <td>MaxQuant</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Markov clustering algorithm</td>
+      <td>https://micans.org/mcl/</td>
+      <td>MLC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Human disease-association enrichment analysis</td>
+      <td>http://ctdbase.org/tools</td>
+      <td>Disease Association</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Protein domain structure analysis</td>
+      <td>http://smart.embl-heidelberg.de</td>
+      <td>SMART</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Functional protein-association network clustering</td>
+      <td>https://string-db.org/ (Szklarczyk et al., 2015)</td>
+      <td>String v.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brilliant Blue R</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 27816-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 27225-1 L-M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroform</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 288306–2L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycerol</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# G6279-1L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium azide</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# S2002-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde, 16%</td>
+      <td>Polysciences Inc</td>
+      <td>Cat# 18814-20</td>
+      <td>Methanol free, ultra pure</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RealTime ready Cell Lysis Kit</td>
+      <td>Roche</td>
+      <td>Cat# 06366 821001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GFP-Trap A Kit</td>
+      <td>Chromotek</td>
+      <td>Cat# 5062685</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# D9542-10MG</td>
+      <td>IF concentration used: 1 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Normal Goat Serum</td>
+      <td>Abcam</td>
+      <td>Cat# ab7481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Trans-Blot Turbo Mini PVDF Transfer Packs 0.2 µm</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1704156</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Immun-Blot PVDF/Filter Paper Sandwiches</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1620218</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Precision Plus Protein Kaleidoscope Prestained Protein Standard</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1610375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>10× Tris/Glycine/SDS Running Buffer</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1610772</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NuPAGE Novex 4–12% Protein Gels</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# NP0321PK2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PicoFrit Columns</td>
+      <td>New Objective</td>
+      <td>Cat# PF360-75-15-N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Paraplast Plus</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 76258-1KG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Casein Blocking Buffer 10x</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# B6429-500ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hematoxylin Solution, Mayer’s</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# MHS16-500ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Eosin Y solution, aqueous</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# HT110232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DPX Mountant for histology</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 06522-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PBS buffer (10× Dulbecco's)</td>
+      <td>AppliChem</td>
+      <td>Cat# A0965,9010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LSM700 confocal laser-scanning microscope</td>
+      <td>Carl Zeiss</td>
+      <td>LSM700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hyrax M25 microtome</td>
+      <td>Carl Zeiss</td>
+      <td>Hyrax M25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ReproSil-Pur analytical column 120 C18-AQ</td>
+      <td>Dr. Maisch GmbH</td>
+      <td>ReproSil-Pur</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nanoflow liquid chromatography system EASY n-LC 1000</td>
+      <td>Thermo Scientific</td>
+      <td>Nanoflow</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Q Exactive Hybrid Quadrupole-Orbitrap</td>
+      <td>Thermo Scientific</td>
+      <td>Orbitrap</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model
 
 Drosophila stocks and crosses were kept on standard corn-meal, yeast, glucose agar medium at 25°C under 12 hr∶12 hr light∶dark cycles.
 
@@ -149,35 +675,35 @@ To address Dg expression in exocyst mutants and Sec5 expression in Dg mutant, br
 
 In genotypes carrying expressing flippase under control of the heat-shock gene promoter (hs-Flp), clone generation was induced by exposing 1st–2nd instar larval progeny to 1 hr heat shocks (37°C) for two consecutive days. Brain and salivary gland clones carrying mutations in either exocyst complex components or Dg were analyzed at L3 larval, pupal, and adult developmental stages. Note that the exocyst mutant clones in brain did not survive until adulthood.
 
-## Co-immunoprecipitation and western blot analysis
+### Co-immunoprecipitation and western blot analysis
 
 Whole lysates for general co-immunoprecipitation were prepared from heads of approximately 1-week-old flies. Tissue was homogenized with VWRR Disposable Pellet Mixers and lysed in RIPA buffer containing 50 mM Tris-HCl (pH 7.5), 125 mM NaCl, 5% glycerol, 0.5% NP40, 0.25% Na-deoxycholate, 1.5 mM MgCl2, 1 mM dithiothreitol, 25 mM NaF, 1 mM Na3VO4, 1 mM EDTA, 2 mM EGTA, and protease inhibitors. Samples were then centrifuged at 15,000 g for 15 min at 4°C, and then 1.3 mg of supernatants were immunoprecipitated with GFP-Trap beads coupled with anti-GFP antibody (ChromoTek) following the manufacturer’s instructions. Four percent of total protein extracts used for immunoprecipitation was loaded as input.
 
-## Coomassie Brilliant Blue (CBB) staining
+### Coomassie Brilliant Blue (CBB) staining
 
 The CBB staining was performed as previously described (Lawrence and Besir, 2009). In brief, CBB G-250 was dissolved in double-distilled water in a concentration of 60–80 mg/L and 35 mM HCl was added as the only other compound in the staining solution. The gel from SDS-PAGE was rinsed with double-distilled water and incubated in CBB staining solution overnight at room temperature with gentle shaking. Next, the stained gel was de-stained through washing with double-distilled water.
 
-## Gel electrophoresis, in-gel digestion, and mass spectrometry (LC-MS/MS)
+### Gel electrophoresis, in-gel digestion, and mass spectrometry (LC-MS/MS)
 
 Proteins were separated by one-dimensional SDS-PAGE (4–12% NuPAGE Bis-Tris Gel, Invitrogen) and stained with Coomassie Blue G-250 (Sigma). The complete gel lanes were cut into 23 equally sized slices. Proteins were digested as described previously (Shevchenko et al., 2006). Briefly, proteins were reduced with 10 mM DTT for 50 min at 50°C, then alkylated with 55 mM iodoacetamide for 20 min at 26°C. In-gel digestion was performed with Lys-C (Roche Applied Science) overnight. Extracted peptides from gel slices were loaded onto the in-house packed C18 trap column (ReproSil-Pur 120 C18-AQ, 5 µm, Dr. Maisch GmbH; 20 × 0.100 mm) at a flow rate of 5 μL/min loading buffer (2% acetonitrile, 0.1% formic acid). Peptides were separated on the analytical column (ReproSil-Pur 120 C18-AQ, 3 µm, Dr. Maisch GmbH; 200 × 0.050 mm, packed in-house into a PF360-75-15-N PicoFrit capillary, New Objective) with a 90 min linear gradient from 5% to 40% acetonitrile containing 0.1% formic acid at a flow rate of 300 nL/min using a nanoflow liquid chromatography system (EASY n-LC 1000 Thermo Scientific) coupled to hybrid quadrupole-Orbitrap (Q Exactive, Thermo Scientific). The mass spectrometer was operated in data-dependent acquisition mode where survey scans acquired from m/z 350–1600 in the Orbitrap at resolution settings of 70,000 FWHM at m/z 200 at a target value of 1 × 10e6. Up to 15 most abundant precursor ions with charge states 2+ or more were sequentially isolated and fragmented with higher collision-induced dissociation (HCD) with normalized collision energy of 28. Dynamic exclusion was set to 18 s to avoid repeating the sequencing of the peptides.
 
-## Mass spectrometry data analysis
+### Mass spectrometry data analysis
 
 The generated raw mass spectrometry files were analyzed with MaxQuant software (Cox and Mann, 2008) (version 1.3.0.5, using Andromeda search engine) against UniProtKB Drosophila melanogaster database containing 18,826 entries (downloaded in April 2013) supplemented with common contaminants and concatenated with the reverse sequences of all entries. The following Andromeda search parameters were set: carbamidomethylation of cysteines as a fixed modification, oxidation of methionine and N-terminal acetylation as a variable modification, and Lys-C specificity with no proline restriction and up to two missed cleavages. The MS survey scan mass tolerance was 7 ppm and for MS/MS 20 ppm. For protein identification, minimum of five amino acids per identified peptide and at least one peptide per protein group were required. The false discovery rate was set to 1% at both peptide and protein levels. ‘Re-quantify’ was enabled, and ‘keep low scoring versions of identified peptides’ was disabled. A twofold increase in any protein in Dg::GFP sample in comparison to control obtained from two independent biological replicates was considered as Dg-interacting protein.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Larval, pupal, and adult brains were rapidly dissected in PBS and fixed in 4% formaldehyde (Polysciences, Inc), larval for 15 min and pupal-adult for 30 min. Staining was performed as described (Kucherenko et al., 2012). Samples were mounted in 70% glycerol. The following antibodies were used: polyclonal rabbit anti-Dg 1:1000 (Deng et al., 2003), polyclonal chicken anti-GFP 1:2000 (Invitrogen), monoclonal mouse anti-Sec5 1:50 (gift from Thomas Schwarz [Langevin et al., 2005]), and anti-FasII 1:20, anti-Dlg 1:20, anti-Elav 1:20, anti-Arm 1:50, anti-FasII 1:50, anti-αPS2 1:50, and rat anti-DE-cadherin 1:50 from Developmental Studies Hybridoma Bank. Alexa 488, 568, goat, anti-rabbit, and anti-chicken 1:500 (Molecular Probes). To visualize nuclei, a 10-min-long incubation with 1× DAPI (Sigma Aldrich) in PBS was performed.
 
-## Histology of Drosophila brains
+### Histology of Drosophila brains
 
 For analysis of adult brain morphology, 7 μm paraffin-embedded sections were cut from fly heads. To prepare Drosophila brain sections, the fly heads were immobilized in collars in the required orientation and fixed in Carnoy fixative solution (6:3:1 = ethanol:chloroform:acetic acid) at 4 °C overnight. Tissue dehydration and embedding in paraffin was performed as described previously (Kucherenko et al., 2010). Histological sections were prepared using a Hyrax M25 (Zeiss) microtome and stained with hematoxylin and eosin as described previously (Shcherbata et al., 2007). All chemicals for these procedures were obtained from Sigma Aldrich.
 
-## Bioinformatic analyses
+### Bioinformatic analyses
 
 To arrange identified interactors in the functional protein-association network, STRING v10 database was used (Szklarczyk et al., 2015), with medium confidence score (0.04), and prediction methods that included neighborhood, gene fusion, co-occurrence, co-expression, experiments, databases, and text mining. Network is presented in a ‘confidence’ view, where thickness of lines connecting nodes represents confidence of association. The interaction scores of high confidence (0.700) were considered. Lines connect components clustered by MCL into protein complexes using the inflation parameter (3). Dashed lines show associations between components that do not form protein complexes. To assign protein cellular localization and molecular function and find human orthologs, the FB2016_02 release from FlyBase was applied. To search for human disease associations, the sites http://www.flyrnai.org (Hu et al., 2011) and http://www.genecards.org were used. For human disease-association enrichment analysis, the entry of 118 human genes (orthologs of identified Dg-interacting components) was examined with http://ctdbase.org/tools (Disease) tool. If p<0.001, the disease enrichment was considered as significant.
 
-## Microscopy and image analyses
+### Microscopy and image analyses
 
 Images were obtained using a Zeiss LSM700 confocal laser-scanning microscope. Protein expression patterns and protein co-localizations were analyzed from confocal images taken in a z-stacks (1 µm step). Images were processed with ZEN Lite and Adobe Photoshop software. All parameters characterizing brain structure such as neuropils’ area, length, and width were measured with tools of ZEN 2011 software.
 

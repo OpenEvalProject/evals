@@ -35,7 +35,7 @@ Here, we aim to map amphibian species in trade, complementing previous regional 
 
 We split our assessment of the trade into contemporary trade and all trade. Contemporary trade used three trade inventories which could be examined for trade dynamics (LEMIS 2000–2014, CITES 1975–2019, and Online trade 2004–2020). All trade also included two additional datasets reporting species presence in trade (IUCN Redlist species assessments; Mohanty and Measey, 2019).
 
-## Dimensions of trade
+### Dimensions of trade
 
 Our online search efforts successfully examined a total of 139 amphibian selling websites and retrieved 2766 web pages to be searched (mean of 19.91 ± 3.95 pages per website; range 1–302). Our temporal online sample (2004–2019) added an additional 4568 pages, meaning our complete online species list is based on searches across 7334 pages in total. We detected 480 keywords (i.e., amphibian scientific names and synonyms) that equated to 442 species in the 2020 snapshot, and 486 keywords that equated to 443 species in the temporal sample, resulting in a total of 575 species detected in the Online trade.
 
@@ -49,13 +49,57 @@ Whilst the majority of species in trade in CITES have a CITES appendix (95%), th
 
 Mapping reveals a global exploitation of amphibians. However, the number of species exploited in different regions varies dramatically (Figure 2; Figure 2—figure supplement 1). Both LEMIS and Online trade highlight high numbers of species across the tropics, especially in the Amazon. However, LEMIS highlights more traded species in Africa and Southeast Asia, and CITES misses almost all areas with only a fraction of species in the Amazon (poison dart frogs) covered (Figure 2—figure supplement 2 and 3). Particularly high proportions of species were in trade, not only in less diverse regions, but also across tropical Asian regions. In addition, particularly high percentages of species are in trade in South Cambodia and areas of Madagascar (Figure 2—figure supplement 2 and 3).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70086/elife-70086-fig2-v2.jpg)
+
+**Figure 2.:** Also see Figure 2—figure supplements 1, 2, 3, and 4 for patterns of individual countries and inventories.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70086/elife-70086-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The number of amphibian species present in a country. (B) The number of species present in that country and also present in the trade. (C) The % of species found in a country that are traded.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70086/elife-70086-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70086/elife-70086-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Redlist status and Convention on International Trade in Endangered Species (CITES) listing in trade.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/70086/elife-70086-fig2-figsupp4-v2.jpg)
+
 Many traded species categorised as Vulnerable or worse originate from East and Southeast Asia, in addition to the Mediterranean and various parts of South America (Figure 2—figure supplement 2 and 4), whereas small-ranged species are in trade from across the tropics and various islands. At the national level, countries across the Middle East and Southeast Asia had more than half their species in trade classed as either threatened or Data Deficient/unassessed. South America, Madagascar, and the Caribbean have even higher percentages of threatened species in trade. South America and Southeast Asia have the highest numbers of species in trade without CITES regulations.
 
 The LEMIS trade inventory provides us with greater insights into the source of the amphibians being traded. Of the trade described in LEMIS 2000–2014, and constituting/representing single individual animals, 99.9% is not from seizure and enters the USA (69,688,337/69,771,677), and the vast majority is for commercial purposes (69,492,478/69,771,677; 99.6%). Of the 69,771,677 amphibians imported into the USA, recorded by LEMIS, 57.2% (39,921,289) are listed as captive sourced, leaving 42.3% (29,522,128) as originating from the wild (the remaining 0.47%, 328,260, classed as other or with an ambiguous source). The wild capture volumes and percentages vary among genera, from millions of individuals to fewer than 100 (Figure 3—figure supplements 1–6). The vast majority of imported genera are impacted by wild capture (254/259) with 141 genera exclusively wild-sourced; five genera are fully sourced from captive operations (Peltophryne, Ranitomeya, Calyptocephalella, Cryptophyllobates, Samandrella; Figure 3—figure supplements 1–6). On average 84.2% of each genera’s individuals come from the wild, and a per genera median of 100% is likely driven by the large number of genera exclusively taken from the wild but in much lower volumes (e.g., fewer than 100 individuals, or fewer than 10 individuals per year given the 2000–2014 timeframe; Figure 3—figure supplement 6).
 
-## Trends over time
+### Trends over time
 
 Whilst the CITES trade has remained relatively consistent over time between 2000 and 2020 at around 50 species a year with a gradual increase of species, LEMIS shows an increase up to 2014 (the limit of available data) at 310 species (Figure 3A). The Online trade shows much more interannual variation (likely exaggerated by sampling effort fluctuations), increasing to 200 species in 2010, decreasing up to 2014 at under 100 species, then increasing again up to over 200 species in 2019. The number of pages scraped for online trade also followed this trend, peaking at over 1250 pages in 2014, decreasing to under 200 in 2014 then increasing to over 1000 in 2018 (Figure 3B). The residuals from a linear regression accounting for the number of pages searched suggests a steady increase in species (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70086/elife-70086-fig3-v2.jpg)
+
+**Figure 3.:** (A) Trends over time of Online, LEMIS, and CITES datasets: (1) Raw counts of numbers of species detected in each year. (2) The number of species traded only in a particular year. (B) Exploration of trends in online trade: (1) Residuals from the linear regression of number of species detected against number of pages (df = 13, intercept = 58.73, number of pages coef. = 0.13). (2) Number of species per year. (3) Number of archived pages retrieved and searched. Generated using Source code 9 and Source data 7, 9, and 10. Also see Figure 3—figure supplements 1–6 for a breakdown of how many individuals are coming from the wild for taxa traded at different volumes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70086/elife-70086-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Data from Law Enforcement Management Information System (LEMIS) 2000–2014. Red indicates those originating from the wild. Blue indicates those originating from captive operations (animals bred in captivity, commercially bred, and originating from a ranching operation). Labels top and bottom show the percentage of that genera from the wild or captive sources. Summary statistics per genera are provided in the caption.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70086/elife-70086-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Data from Law Enforcement Management Information System (LEMIS) 2000–2014. Red indicates those originating from the wild. Blue indicates those originating from captive operations (animals bred in captivity, commercially bred, and originating from a ranching operation). Labels top and bottom show the percentage of that genera from the wild or captive sources. Summary statistics per genera are provided in the caption.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/70086/elife-70086-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Data from Law Enforcement Management Information System (LEMIS) 2000–2014. Red indicates those originating from the wild. Blue indicates those originating from captive operations (animals bred in captivity, commercially bred, and originating from a ranching operation). Summary statistics per genera are provided in the caption.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/70086/elife-70086-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Data from Law Enforcement Management Information System (LEMIS) 2000–2014. Red indicates those originating from the wild. Blue indicates those originating from captive operations (animals bred in captivity, commercially bred, and originating from a ranching operation). Summary statistics per genera are provided in the caption.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/70086/elife-70086-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Data from Law Enforcement Management Information System (LEMIS) 2000–2014. Red indicates those originating from the wild. Blue indicates those originating from captive operations (animals bred in captivity, commercially bred, and originating from a ranching operation). Summary statistics per genera are provided in the caption.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/70086/elife-70086-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Data from Law Enforcement Management Information System (LEMIS) 2000–2014. Red indicates those originating from the wild. Blue indicates those originating from captive operations (animals bred in captivity, commercially bred, and originating from a ranching operation). Summary statistics per genera are provided in the caption.
 
 Thirty-eight species described since 1999 (1.38% of the 2747 amphibian species described after 1999; Figure 4A and B) appeared in trade based on our three inventories (and 41 with the addition of two further species described in 2018 and listed for sale in 2020; Altherr and Lameter, 2020). Eight only appeared in the 2019 snapshot, so are discounted from time lag calculations, leaving 30 species with connected trade years and a mean time lag of 6.5±0.78 years between species description and appearance in the trade. Of the 38 species, 12 are Least Concern, 10 are unevaluated, three are Data Deficient, and 13 are threatened (one of which is Critically Endangered). One species was in trade the year after it was described, but four were in trade in the second year, four in the third year, and seven within 4–5 years (Figure 4C). We cannot differentiate instances of rapid exploitation after species description from instances of name updates pertaining to species already traded. Although it should be noted that even in these cases given the smaller population sizes and distributions of split species, they may be more vulnerable to population declines resulting from wild-harvest, as populations and ranges are likely to be smaller than currently known.
 
@@ -63,7 +107,7 @@ Thirty-eight species described since 1999 (1.38% of the 2747 amphibian species d
 
 **Figure 4.:** (A) The species described post-1999 detected in the trade displaying the year of description and the year detected in the trade. (B) Species described post-1999 but were only detected in the 2020 snapshot. Alongside species names in A and B are their IUCN Redlist status; the Convention on International Trade in Endangered Species (CITES) appendix (where listed) is shown on the right of the plot. (C) Frequency plot showing the count of time lags between description and trade, with colours corresponding to broad summaries of IUCN Redlist status. Generated using Source code 11 and 12, and Source data 4, 7, and 10.
 
-## Language markets
+### Language markets
 
 Different language searches returned different species lists, with all languages containing species unique to that language. English and German detected the most species by far (293, 289), and each also contained the highest rates of unique species (81, 97). German produced a larger list of species, despite similar sampling efforts as Spanish, French, Japanese, and Portuguese (Figure 5). The top websites in terms of species were mostly commercial (six out of the top ten), two of which prominently advertised wholesale options. The remaining four top websites (including the top website with 278 species) were hosting classified advertisements.
 
@@ -71,7 +115,7 @@ Different language searches returned different species lists, with all languages
 
 **Figure 5.:** Light blue shows the total number of species per language, and percentage of the overall online species list. Dark blue shows the number of species unique to a particular language and the percentage of that language’s species that are unique. Lollipop alongside bars describe the number of websites sampled. Generated using Source code 10 and Source data 1 and 3.
 
-## Drivers of demand
+### Drivers of demand
 
 To better capture all the species traded, we combined our contemporary analyses from the three data sources (Online trade, LEMIS, and CITES trade database) with the analyses from Mohanty and Measey, 2019, and the IUCN Redlist assessments. Comparisons reveal that different sources detected different species in the trade, and no single source is sufficient to detect all species traded (Figure 6). Combining all sources yielded a total of 1500 amphibian species in trade before synonyms were removed, and 1215 once synonyms were removed, equivalent to 17% of amphibian species.
 
@@ -89,7 +133,7 @@ Mapping out these patterns also revealed a variety of trends among different use
 
 ## Discussion
 
-## Scale, scope, and vulnerability
+### Scale, scope, and vulnerability
 
 Amphibian declines are often considered to provide an early warning of potential declines in other taxa as they are sensitive to pollution and habitat loss making their absence an early warning sign of habitat degradation; sensitivity to change combined with trade, and disease risk creates the perfect storm threatening future amphibian survival.
 
@@ -103,13 +147,13 @@ We show 22% of the 1215 species in trade are threatened (i.e., IUCN Redlist stat
 
 Global monitoring continues to be inadequate; the lack of specificity hinders the utility of global data from the World Customs Organization (Chan et al., 2015). Calls for improvements and increased specificity were made at the IUCN’s 5th World Conservation Congress (WCC-2012-Res020) in 2012. Changes remain elusive, with details on updates in the World Customs Organization, 2020, edition failing to address animal trade (World Customs Organization, 2020). Thus, a decade has passed and reasonable actions for the conservation of biodiversity are still ignored in economically orientated databases. The dearth of reliable/accessible data (both for baseline population and trade volumes) undermines efforts to determine trade sustainability for the vast majority of non-CITES species (i.e., the vast majority of all amphibian species). The trade of Endangered and range-limited species, paired with the high rates of wild capture (especially given that this is higher for pets than for other purposes), would suggest much of the trade could be unsustainable and damaging the future survival of species.
 
-## Trade and disease
+### Trade and disease
 
 To date, 94 cases out of the 159 extinct and potentially extinct species from the 2008 Global Amphibian Assessment are at least partially attributed to Batrachochytrium dendrobatidis (Bd) (MacCulloch, 2008; Picco and Collins, 2008), and suggestions that Bd is likely to be responsible for up to 500 species declines (Scheele et al., 2019; but see Lambert et al., 2020 for discussion on the 500+ estimate). Furthermore Bd, Batrachochytrium salamandrivorans (Bsal), Ranavirus and a range of other diseases, carried by amphibians and fish, can spread into naïve populations and move between aquatic taxa (Bayley et al., 2013; Mao et al., 1999; Densmore and Green, 2007). With millions of individuals exported annually (peaking at around 5575K kg from Indonesia alone in a single year in the early 1990s, and fluctuating between 3600K and 5000K kg most years based on LEMIS), no systemic mechanism to ensure correct identity, and poor biosafety standards, water contamination resulting from continued unrestricted/uncontrolled trade is likely to lead to further disease spread, and population declines. Rates of Bd in live exports can be high (over 60% of individuals), with studies linking the spread of Bd and Bsal to the trade of live animals in the pet trade (Fitzpatrick et al., 2018; Kriger and Hero, 2009; Yuan et al., 2018). As a consequence of this risk of disease, areas like the European Union have initiated the TRACES (TRAde Control and Expert System) programme to attempt to monitor what is imported and associated disease risk. Yet, such data is challenging to access and is unlikely to enable proactive monitoring for ecosystem health, despite the development of organisations such as the World Organisation for Animal Health (OIE) (Martel et al., 2020). However, regional networks have been developed for specific cases such as Bd such as spatialepidemiology. net (Aanensen, 2009).
 
 The risk of both recognised and novel invasive pathogens should not be underestimated. Whilst we did not separately map it here, various amphibians are sold commercially as bait. Previous studies show that not only do the live animals kept in bait shops frequently carry fungal and viral pathogens, but they are also frequently released into the wild after use (Picco and Collins, 2008). Given that over 40% of individuals in this study are shown to come directly from the wild, the potential for spread of pathogens to spread to new areas must be addressed to avoid severely impacting native aquatic vertebrate communities (Price et al., 2017).
 
-## The necessity for change
+### The necessity for change
 
 Many papers have highlighted the inadequacies of a CITES paper-based system for monitoring trade (Berec et al., 2018). In the context of amphibians, the discrepancies on reporting (such as species exported from the wild from countries to which they are not native; Auliya et al., 2016) are well documented. Here again, we highlight that CITES fails to provide adequate safeguards both for species which are included, and more so for the 97.5% of amphibian species that are not.
 
@@ -119,7 +163,122 @@ Whilst developing sustainable quotas for offtake are impossible for species with
 
 ## Materials and methods
 
-## Website sampling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Other</td>
+      <td>Data S1 – Target Websites Censored.csv</td>
+      <td>Self-generated via the use of http://www.google.com/ and http://www.bing.com/</td>
+      <td>Data S1</td>
+      <td>Website review and sampling</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Data S2. Original AmphibiaWeb data (‘AmphibiaWeb 2020-08-29.csv’)</td>
+      <td>AmphibiaWeb: https://amphibiaweb.org/amphib_names.txt</td>
+      <td>Data S2</td>
+      <td>Original AmphibiaWeb Data: Accessed 2020-08-29</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Data S3. Snapshot Online Data.csv</td>
+      <td>Self-generated</td>
+      <td>Data S3</td>
+      <td>Online search results from the contemporary sample</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Data S4 Temporal Online Data.csv</td>
+      <td>Self-generated via the Internet Archive’s Wayback Machine API and Terraristika (https://www.terraristik.com)</td>
+      <td>Data S4</td>
+      <td>Online search results from the temporal sample</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Data S5 new_list_amp_jan_FINAL.csv</td>
+      <td>Self-generated</td>
+      <td>Data S5</td>
+      <td>Species listed purposes from each data source</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Data S6 supplement_trade_keywords.csv</td>
+      <td>Self-generated</td>
+      <td>Data S6</td>
+      <td>List of keywords associated the importers and exporters</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Data S7 LEMIS Data AmphiNames.csv</td>
+      <td>Self-generated by combining aspects of Data S1 and data from LEMIS: Eskew EA, White AM, Ross N, Smith KM, Smith KF, Rodríguez JP, Zambrana-Torrelio C, Karesh WB, Daszak P. 2019. United States LEMIS wildlife trade data curated by EcoHealth Alliance. Zenodo Dataset. doi:10.5281/zenodo.3565869</td>
+      <td>Data S7</td>
+      <td>Filtered LEMIS data with AmphibiaWeb compatible names: Retrieved using the lemis package: Ross N, Eskew EA, White AM, Zambrana-Torrelio C. 2019. lemis: The LEMIS Wildlife Trade Database.https://github.com/ecohealthalliance/lemis#readme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Data S8 Index_of_CITES_Species_[CUSTOM]_2020-09-20 15_51.csv</td>
+      <td>CITES: http://checklist.cites.org/#/en</td>
+      <td>Data S8</td>
+      <td>Filter CITES appendix data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Data S9 gross_imports_2020-09-20 15_25_comma_separated.csv</td>
+      <td>CITES: https://trade.cites.org/#</td>
+      <td>Data S9</td>
+      <td>Filtered CITES data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Data S10 Amphibians_in_trade.csv</td>
+      <td>Self-generated using aspects of Data S2–S4, S7–S9</td>
+      <td>Data S10</td>
+      <td>The final dataset</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Data S11. Amphibians_in_trade_METADATA.csv</td>
+      <td>Self-generated</td>
+      <td>Data S11</td>
+      <td>The final dataset metadata</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Core Team</td>
+      <td></td>
+      <td>Please see appropriate code listed in text</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ArcGis</td>
+      <td>ESRI</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>IUCN species polygons</td>
+      <td>iucnredlist.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Website sampling
 
 We used Google and Bing search engines to discover contemporary websites selling amphibians. We targeted amphibian selling websites in English, French, German, Japanese, Portuguese, and Spanish, to cover the largest herpetofauna pet trade markets. We used appropriately localised versions of the search engines for each language we searched in (Google: https://www.google.com/, https://www.google.fr/, https://www.google.de/, https://www.google.jp/, https://www.google.pt/, https://www.google.es/; Bing: https://www.bing.com/?cc=en, https://www.bing.com/?cc=fr, https://www.bing.com/?cc=de, https://www.bing.com/?cc=jp, https://www.bing.com/?cc=pt, https://www.bing.com/?cc=es). Each localised search engine and language was searched with a Boolean search string:
 
@@ -131,27 +290,27 @@ We reviewed each website with the goal of determining whether the site sells liv
 
 The above sampling process was preregistered on 2020-08-29 (osf.io/x5gse). On 2020-09-11, we completed the preregistered sampling and review of 856 websites; we determined that 104 sites would be suitable for searching. However, this was considerably lower than the 151 websites used in previous work (Marshall et al., 2020). Therefore, we completed a second search using a simpler search term (‘amphibians for sale’, and translations) taking the first five pages from both search engines. The new URLs located in the simpler search were reviewed bringing the total reviewed websites to 1069 and the suitable websites to 139 (906 excluded because they did not sell amphibians, 13 specifically stated no automated searching of the website, 6 were duplicates, and the remaining 5 had issues with access).
 
-## Website searching
+### Website searching
 
 We used five methods to collect data from websites, applied hierarchically to minimise server load and the number of irrelevant pages searched (Source code 2).
 
-## Single page collection
+#### Single page collection
 
 We retrieved a single page, or PDF, for sites that listed the entire stock in a single location. We used the downloader v.0.4 package (Chang, 2015) for the html page retrieval and pdftools v.2.3.1 (Ooms, 2019) to review manually downloaded PDF stock lists.
 
-## Cycling through multi-page lists
+#### Cycling through multi-page lists
 
 When stock lists existed on multiple pages, arranged sequentially (e.g., when a website’s internal search functions return ‘all amphibians’), we systematically cycled through pages. We identified the maximum search page during website review and ended page cycling when that maximum was reached or the URL returned an error (e.g., 404 error).
 
-## Cycling through multi-page lists, followed by level 1 crawl
+#### Cycling through multi-page lists, followed by level 1 crawl
 
 If stock lists existed on multiple pages, and the scientific names were only listed behind links on each sequential page, we used the systematically collected pages as a start point for level 1 crawls retrieving all connected pages (i.e., pages holding individual listings or stock details). We used the Rcrawler v.0.1.9.1 package to perform the crawls (Khalil, 2018). We followed the same stop criteria as the basic cycling collection method (method 2).
 
-## Base level 1 crawl
+#### Base level 1 crawl
 
 When stock was split between groups, we made use of a level 1 crawl to retrieve all pages (Khalil, 2018), setting the page hosting all group links as the start URL.
 
-## Base level 2 crawl
+#### Base level 2 crawl
 
 When stock was split into multiple levels of groups, we used a level 2 crawl to collect data at each level (Khalil, 2018). For example, stock may be split into ‘Frogs’ and ‘Salamanders’, and within ‘Frogs’ exists links to lists of ‘Toads’, ‘Tree Frogs’, and ‘Other Frogs’.
 
@@ -159,7 +318,7 @@ For methods including crawling, where possible, we selected keywords in the URL 
 
 In addition to the contemporary sampling of websites, we also sampled for archived web pages originally hosted on Terraristika (https://www.terraristik.com; Source code 3). We selected Terraristika to explore the temporal trends in amphibian trade for two reasons: the size of the website and number of species detected in prior contemporary search efforts, and the number of archived web pages available (Marshall et al., 2020). We retrieved archive web pages using the Internet Archive’s Wayback Machine API (The Internet Archive, 2013; The Internet Archive, 2019), by adapting code from the wayback package (Rudis, 2017). We modified the wayback code using the downloader v.0.4 (Chang, 2015), httr v.1.4.2 Wickham, 2018, jsonlite v.1.7.0 (Ooms, 2014), lubridate v.1.7.9 (Grolemund and Wickham, 2011), and tibble v.3.0.3 packages (Müller and Wickham, 2019).
 
-## Keyword usage
+### Keyword usage
 
 We used species data from AmphibiaWeb as our taxonomic backbone (AmphibiaWeb, 2020; https://amphibiaweb.org/amphib_names.txt; accessed 2020-08-29; 2). We created a species list that included all current scientific names and all scientific synonyms. We excluded common names from the keyword list because we did not have common names for all languages nor species, and previous work has shown that common names provide only marginal gains in online data collection efforts (Marshall et al., 2020). We also made no attempt to search for partial names or abbreviations (e.g., Duttaphrynus melanostictus listed as D. melanostictus or D melanostictus).
 
@@ -169,7 +328,7 @@ We used case-insensitive fixed string matching, with stringr v.1.4.0 package (Wi
 
 Upon searching a web page for species names, we recorded whether a keyword (species) was present, what accepted species the detected species corresponded to, the page number of the web page, and the website ID (Source code 4; Source data 3 and 4). We combined final results from the online search with data from LEMIS and CITES (Source code 5; retrieved via the R package lemis v.1.1.0 (Eskew et al., 2019; Eskew et al., 2020; Ross et al., 2019), and https://trade.cites.org/#, respectively).
 
-## Mapping impacts
+### Mapping impacts
 
 To understand the dimensions of trade, and how regions may be impacted with different types of trade, we included an additional two data sources (the Mohanty and Measey data based on a collation of published literature, and the IUCN listings of species which state if the species is threatened by trade). We compiled all species on a spreadsheet with the listed purpose from each data source (Source data 5). All species for sale in online stores, we classified as ‘pet trade’, whereas the Mohanty and Measey data we classified as ‘other’ and only used these in the total analysis.
 
@@ -179,7 +338,7 @@ For both CITES and LEMIS data, the purpose was collated from the commercially im
 
 For LEMIS summaries of wild capture and captive rearing (Source code 6 and 7; Source data 7), we filtered the data to only include items that represented single individuals: whole dead animal (LEMIS code = BOD), live eggs (EGL), dead specimen (DEA), live specimen (LIV), specimen (SPE), whole skin (SKI), entire animal trophy (TRO), following the process described in Hierink et al., 2020, and Marshall et al., 2020. We define non-commercial trade as that termed by LEMIS as: Biomedical research (M), Scientific (S), and Reintroduction/introduction into the wild (Y); whereas captive origin covered Animals bred in captivity (C and F), Commercially bred (D), and Specimens originating from a ranching operation (R); and wild origin only included those listed as Specimens taken from the wild (W). We included all amphibians in origin/purpose summaries, but we only included species detected in LEMIS in final species counts if the full species name listed in LEMIS could be matched to an AmphibiaWeb name or synonym. We relied on LEMIS listing of genus for genera summaries, excluding non-applicable terms (e.g., Non-CITES entry, Anura, Bufonidae, Tadpole).
 
-## Mapping and visualisation
+### Mapping and visualisation
 
 All mapping, bar Figure 2—figure supplement 2 and 1 (which used on AmphibiaWeb ISOCC country data; Source code 8), was completed in ArcMap 10.3. Amphibian data range maps were downloaded from the IUCN (iucnredlist.org) and then species in trade, once corrected for synonyms joined to the shapefile using joins and relates. Individual species maps were then converted into rasters with a resolution of 1 km using the conversion tools. Mosaic to new raster was then used to quantify the species in trade both altogether, or based upon subsets of data such as endangerment, data source (CITES: Source code 8, LEMIS: Source data 7, Online: Source data 3 and 4) or use (pet, meat, research, medicinal/pharmaceutical) to provide global maps depicting each type of pressure.
 
@@ -187,11 +346,11 @@ We also explored temporal trends in CITES, LEMIS, and Online data, plotting chan
 
 To calculate the level of coverage on and trade on a national basis, the IUCN maps were intersected with each country to give a country list, and species lacking range maps were compiled to a national level using AmphibiaWeb data. Endangerment and CITES status for species in trade and not traded were associated with this data using the joins and relates function, and quantified using summary statistics before being rejoined to a global map to assay the level of coverage for species in trade at a national level.
 
-## Years of species description
+### Years of species description
 
 We retrieved all species years of description from the amphibian species of the world database (accessed 2020-10-02; Frost, 2020). We used rvest v.0.3.6 (Wickham, 2019c) and xml2 v.1.3.2 (Yuan et al., 2018) to call and retrieve the top search result from the database on a species-by-species basis (each AmphibiaWeb species binomial being used a search term), saving the full character string detailing the species authority (Source code 10 and 11). We double-checked the retrieved species authority contained the required species binomial. In cases where species binomial was not included (174), we used similiars v.0.1.0 (Sjoberg, 2020, 2020) to detect minor spelling differences. Ultimately, we found 12 species with non-matching authorities and were detected in the trade; for these 12 species we manually found the appropriate authority. We used LEMIS, CITES (Source data 9), and the Online sampling to determine the earliest instance of a species appearing in the trade.
 
-## Software availability
+### Software availability
 
 We completed all keyword searches and data review in R v.3.6.3 (R Core Development Team, 2020) and R Studio v.1.4.669 (R Studio Team, 2020). During data manipulation, we also made use of R packages: dplyr v.1.0.2 (Wickham et al., 2020) and tidyr v.1.1.2 (Wickham and Henry, 2019); for data visualisation we used cowplot v.1.1.0 (Wilke, 2019), ggplot2 v.3.3.2 (Wickham, 2016), ggpubr v.0.4.0 (Kassambara, 2018), ggtext v.0.1.1 (Wilke, 2020), glue v.1.4.2 (Hester, 2020), maps v.3.3.0 (Becker and Wilks, 2018), scico v.1.2.0 (Pedersen and Crameri, 2018), and UpSetR v.1.4.0 (Gehlenborg, 2019). We added additional details to the upset plot using Affinity Designer v.1.8.5.703 (Serif, 2020).
 

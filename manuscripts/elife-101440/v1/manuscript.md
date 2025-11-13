@@ -8,10 +8,10 @@
 
 ### Affiliations
 
-1. https://ror.org/04j1n1c04 RIKEN Center for Brain Science Saitama Japan
-2. https://ror.org/02s376052 Neuroengineering Laboratory, Brain Mind Institute & Interfaculty Institute of Bioengineering, EPFL Lausanne Switzerland
-3. https://ror.org/04j1n1c04 RIKEN CBS-KAO Collaboration Center Saitama Japan
-4. https://ror.org/057zh3y96 Graduate School of Arts and Sciences, The University of Tokyo Tokyo Japan
+1. RIKEN Center for Brain Science Saitama Japan ([ROR:04j1n1c04](https://ror.org/04j1n1c04))
+2. Neuroengineering Laboratory, Brain Mind Institute & Interfaculty Institute of Bioengineering, EPFL Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
+3. RIKEN CBS-KAO Collaboration Center Saitama Japan ([ROR:04j1n1c04](https://ror.org/04j1n1c04))
+4. Graduate School of Arts and Sciences, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
 
 † Corresponding author
 
@@ -29,31 +29,79 @@ Here, we investigated the impact of odors on feeding behavior and found direct c
 
 ## Results
 
-## Odors alone evoke PER
+### Odors alone evoke PER
 
 To examine how odors affect PER, we built a behavioral recording setup in which a tastant and multiple odors with diverse innate values (Badel et al., 2016) can be applied to individual, tethered flies (Figure 1A). To quantify the movement of proboscis, we used a deep learning-based, markerless pose estimation algorithm (Mathis et al., 2018) and tracked the trajectory of three segments constituting the proboscis. The angles made between the segments (rostrum, haustellum, and labellum angles) were subsequently calculated over time to detect PER (Figure 1A–C; see Methods for the definition of PER). The results of this quantification and manual scoring of PER were comparable (Figure 1—figure supplement 1C). Unexpectedly, we found that the odors alone evoked repetitive PER without an application of a tastant (Figure 1D–G, and Figure 1—video 1). Different odors evoked PER with different probability (Figure 1E), latency (Figure 1—figure supplement 1A), and duration (Figure 1F and G, Figure 1—figure supplement 2). Stimulus-triggered PER was not observed in response to solvents or air (Figure 1D–G). Odors evoked PER even at the concentration of 10–2, which induces stimulus-specific activity in the olfactory pathway (Badel et al., 2016; Endo et al., 2020; Kato et al., 2023). The level of PER did not correlate with the innate value of odors, previously determined by quantifying the odor preference of flies in a behavioral arena (Badel et al., 2016; Pearson’s R=0.33, p=0.52). Odor-evoked PER was observed in other genetic backgrounds and another Drosophila species as well, albeit at a lower level with different tuning (Figure 1—figure supplement 3).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic for recording odor-evoked PER. (B) Six points on the head are tracked by DeepLabCut. The movement of the proboscis was characterized by the positions of three segments of the proboscis and the angles between the segments, namely the rostrum angle (R), haustellum angle (H), and labellum angle (L). (C) Example odor-evoked PER. Top, images of a proboscis in a retracted (0.2 s), fully extended (3.1 s), and partially extended (5.5 s) state. Bottom, the three angles over time. Green bar indicates an odor application period. Odor is ethyl butyrate. (D) PER to nine odors in an example fly. Each row corresponds to a trial and each tick mark indicates the timing of PER. The odors used are as follows: ethyl butyrate (EBR), 2-pentanone (2PT), isopentyl acetate (IPA), 4-methylcyclohexanol (MCH), benzaldehyde (BNZ), 3-octanol (OCT), and mineral oil (MO). (E) PER probability in wild-type flies in response to different concentrations of odors. The same stimulus was used for air, mineral oil, and water controls. n=21, 26, 27, and 28 flies for 10–4, 10–2, 10–1, and 0.5 concentration groups, respectively. Error bar, standard error of the mean. PER probability was different between odor concentrations and identities (p=3.0e-05 and 2.0e-7 for odor concentration and identity factors, Scheirer–Ray–Hare test). (F) PER duration in wild-type flies. The black lines indicate the mean and the shaded areas indicate the standard error of the mean. n=28 flies. (G) Integrated PER duration in wild-type flies in response to different concentrations of odors. The data is from the same flies as in E. Integrated PER duration was different between odor concentrations and identities (p=3.6e-13 and 3.5e-11 for odor concentration and odor identity factors, Scheirer–Ray–Hare test). Box plots indicate the median (gray line), mean (black dot), quartiles (box), and 5–95% range (bar).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Latency to the first odor-evoked PER in wild-type flies. Odor concentration was 0.5 (n=28 flies). Green bar indicates the odor application period. p=1.0e-4, one-way ANOVA. Box plots indicate the median (gray line), mean (black dot), quartiles (box), and 5–95% range (bar). (B) K-medoid clustering of odor- and sucrose-evoked proboscis extensions based on the rostrum and haustellum angles over time in wild-type flies. All the trajectories during PER and partial proboscis extensions were clustered into five clusters (color coded), and the representative trajectory closest to each cluster medoid was plotted for each stimulus. The green trajectories represent full extensions that qualify the definition of PER (see Methods). Note that these green trajectories are observed in response to sucrose and all the odors (except for the controls), suggesting that the movement of proboscis during odor-evoked PER is similar to that during sucrose-evoked PER. (C) Integrated PER duration in response to different odors in wild-type flies analyzed by DeepLabCut or manual scoring. The values measured by the two methods were similar (p=0.94 and 5.5e-3 for scoring method and odor identity factors, Scheirer-Ray-Hare test). Odor concentration is 0.1. Box plots indicate the median (gray line), mean (black dot), quartiles (box), and 5–95% range (bar).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Integrated PER duration in wild-type flies in response to 1-hexanol, ethyl acetate, yeast odor, fenchone, isoamyl alcohol, phenethyl alcohol, air, mineral oil, and water. In this experiment, flies were fixed in a vertical position following a protocol in a previous study (Oh et al., 2021). Box plots indicate the median (gray line), mean (black dot), quartiles (box), and 5–95% range (bar).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Integrated PER duration in different flies n = 20, 28, and 25 in (A-C). Box plots indicate the median (gray and red lines), mean (black and red dots), quartiles (box), and 5-95% range (bar).
 
 Odor-evoked PER resembled taste-evoked PER in multiple aspects. First, its trajectory was similar to that of taste-evoked PER (Figure 1—figure supplement 1B, Figure 1—video 1) and was consistent with the reported movement of proboscis during sucrose-evoked PER (Schwarz et al., 2017). The trajectories were indistinguishable between the tested odors (Figure 1—figure supplement 1B). Second, it showed concentration dependency (Dethier, 1976; Wang et al., 2004). The probability and duration of PER increased as a function of stimulus concentration (Figure 1E and G). Third, it depended on the metabolic state just as taste-evoked PER (Inagaki et al., 2014). The duration of PER was higher in starved as compared to fed flies (Figure 2—figure supplement 1).
 
 In sum, odors initiate feeding behavior in Drosophila.
 
-## Odors evoke PER through GRNs
+### Odors evoke PER through GRNs
 
 To confirm that this behavior is mediated by the olfactory system, we repeated the experiment after removing the sensory organs housing the olfactory receptor neurons, namely the antennae and the maxillary palps. However, this manipulation only attenuated and did not eliminate odor-evoked PER (Figure 2A), suggesting that the olfactory system modulates but is not required for odor-evoked PER.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig2-v1.jpg)
+
+**Figure 2.:** (A) Integrated PER duration in intact (n=28) and olfactory organs removed (n=32) wild-type flies. Flies with olfactory organs removed show less PER compared to control flies (p=0.0079 and 0.10 for group and odor factors, Scheirer–Ray–Hare test). (B–F) Integrated PER duration in UAS control UAS-Kir2.1/+, n=20, (B), GRN silenced (Gr5a-Gal4>UAS-Kir2.1, n=25 for C; Gr66a-Gal4>UAS-Kir2.1, n=24 for D; Ppk28-Gal4>UAS-Kir2.1, n=28 for E; Ir94e-Gal4>UAS-Kir2.1, n=23 for F) and Gal4 control flies (Gr5a-Gal4/+, n=31 for C; Gr66a-Gal4/+, n=21 for D; Ppk28-Gal4/+, n=28 for E; Ir94e-Gal4/+, n=30 for F). Each silenced line was compared to the UAS control in B (p=4.9e-5, 0.49, 0.17, 0.11, and 0.12, 0.0014, 0.55, 1.2e-5 for genotype and odor factors for C-F, Scheirer–Ray–Hare test). Data were also compared between each silenced line and its Gal4 control (p=1.0e-15, 0.28, 0.00062, 0.14, and 0.71, 0.0012, 0.56, 5.6e-9 for genotype and odor factors for C-F, Scheirer–Ray–Hare test). (G) Integrated PER duration in control (UAS-Kir2.1/+, n=21) and Gr66a GRN-silenced (Gr66a-Gal4>UAS-Kir2.1, n=21) flies in a fed state. Silencing of Gr66a GRNs enhances odor-evoked PER in a fed state (p=1.8e-4 and 0.041 for genotype and odor factors, Scheirer–Ray–Hare test). Odor concentration was 10–1. (H) Integrated PER duration in control (n=29) and Gr5a mutant (n=29) flies. PER is severely reduced in mutant flies (p=1.1e-4 and 0.32 for genotype and odor factors, Scheirer–Ray–Hare test). Control: EP(x)496 flies. Mutant: ΔEP(x)–5 flies. (I–K) Integrated PER duration in control and Obp RNAi flies. Obp57d/e RNAi flies show reduced (I, n=33 and 25 for control and RNAi, p=0.039 and 0.48 for genotype and odor factors, Scheirer–Ray–Hare test), Obp49a RNAi flies show enhanced (J, n=24 and 20 for control and RNAi, p=0.0066 and 0.16 for genotype and odor factors, Scheirer–Ray–Hare test), and Obp19b RNAi flies show similar levels of PER (K, n=24 and 21 for control and RNAi, p=0.24 and 0.26 for genotype and odor factors, Scheirer–Ray–Hare test) as compared to their respective controls, which are tubulin-Gal4/y,w1118;P{attP,y[+],w[3']} (for I), tubulin-Gal4/w1118;P{VDRCsh60200}attP40 (for J), and tubulin-Gal4/w1118 (for K). Box plots indicate the median (gray and red lines), mean (black and red dots), quartiles (box), and 5–95% range (bar).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Integrated PER duration in starved (n = 28) and fed (n = 19) wild-type flies (p = 0.88 and 5.6e-3 for state and odor factors, Scheirer–Ray–Hare test). Odor concentration is 0.5. (B) Same as in a but for odor concentration of 10-1. PER is enhanced in a starved state (p = 1e-6 and 0.74 for state and odor factors, Scheirer–Ray–Hare test). (C) PER probability in wild-type fed flies in response to different concentrations of odors. n = 19 and 28 for 10-1 and 0.5 concentration groups, respectively. Error bar, standard error of the mean. Box plots indicate the median (gray and red lines), mean (black and red dots), quartiles (box), and 5-95% range (bar).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Integrated PER duration in wing-removed Orco-Gal4>UAS-Kir2.1 flies (n = 26). GRNs in wings were dispensable for PER to certain odors (p = 6.0e-9, Kruskal-Wallis test, p = 0.0020, 0.0011, 0.75, 0.089, 0.00071, 0.58, 0.84, and 0.94 for comparison between mineral oil (MO) control vs EBR, 2PT, IPA, MCH, BNZ, OCT, Air, and Water, Dunn’s post-hoc tests with Benjamini–Hochberg false discovery rate correction). (B) Integrated PER duration in wing- and leg-removed, Orco-Gal4>UAS-Kir2.1 flies (n = 27). GRNs in wings were dispensable for PER to certain odors (p = 0.004, Kruskal-Wallis test, p = 0.39, 0.029, 0.18, 0.18, 0.029, 0.44, 0.88, and 0.71 for comparison between mineral oil (MO) control vs EBR, 2PT, IPA, MCH, BNZ, OCT, Air, and Water, Dunn’s post-hoc tests with Benjamini–Hochberg false discovery rate correction). Box plots indicate the median (gray line), mean (black dot), quartiles (box), and 5-95% range (bar).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A, B) Integrated PER duration in control (tubulin-Gal4/w1118) and Obp56g RNAi flies. These flies show similar levels of PER (n = 24 and 23 for control and RNAi, p = 0.58 and 0.0017 for group and odor factors, Scheirer–Ray–Hare test). (C-H) Integrated PER duration in control (tubulin-Gal4/y,w1118;P{attP,y[+],w[3']}) and OBP RNAi flies. Obp18a RNAi and Obp57e RNAi flies show reduced level of PER as compared to control (n = 33, 25, 22, 25, 27, and 28 flies for C-H, p = 0.050, 0.36, 0.18, 1.9e-4, 0.92 and 0.10, 0.48, 0.063, 0.045, 0.022 for group and odor factors for (D-H), Scheirer–Ray–Hare test). Box plots indicate the median (gray and red lines), mean (black and red dots), quartiles (box), and 5-95% range (bar).
 
 We thus turned to another chemosensory system, the gustatory system. To examine its involvement in odor-evoked PER, we expressed Kir2.1 (Paradis et al., 2001) in different types of GRNs using type-specific Gal4 drivers, each of which mediates a specific taste modality (Scott, 2018). Gr5a GRNs detect sugar and mediate food acceptance behaviors, including PER (Dahanukar et al., 2001; Wang et al., 2004). Suppression of Gr5a GRNs significantly reduced odor-evoked PER, indicating that sweet-sensing neurons detect odors and drive PER (Figure 2B and C). Bitter-sensing Gr66a GRNs, on the other hand, have been shown to inhibit sweet-evoked PER (Wang et al., 2004). However, expression of Kir2.1 in these neurons had little effect (Figure 2B and D). We hypothesized that this is due to our use of starved flies because Gr66a pathway is reported to be downregulated in a starved condition (Devineni et al., 2019; Inagaki et al., 2014). Indeed, flies of the same genotype showed increased PER to odors in a fed state (Figure 2G), indicating that Gr66a GRNs counteract PER. Two other tastes, water and low salt can also induce PER (Cameron et al., 2010; Wang et al., 2004), which are detected by Ppk28 and Ir94e GRNs, respectively (Cameron et al., 2010; Jaeger et al., 2018). However, suppression of these cell types did not affect odor-evoked PER (Figure 2B, E and F). Together, Gr5a GRNs enhance, whereas Gr66a GRNs inhibit odor-evoked PER.
 
 As GRNs are housed in multiple external organs, including the labella at the tip of proboscis, the legs, the wing margins, and the ovipositor (Scott, 2018), we next sought to narrow down the GRNs responsible for odor-evoked PER. We found that removal of the legs and wings did not abolish the behavior (Figure 2—figure supplement 2). Moreover, activation of the ovipositor induces egg laying rather than PER (Dethier, 1976). These results suggest that GRNs act predominantly in the labella to induce odor-evoked PER.
 
-## Gustatory receptors and olfactory binding proteins mediate odor-evoked PER
+### Gustatory receptors and olfactory binding proteins mediate odor-evoked PER
 
 We have shown that Gr5a GRNs tuned to tastes trigger PER in response to a wide range of odors. Because GRNs do not express olfactory receptors (Davie et al., 2018; Li et al., 2021; Scott et al., 2001), either gustatory receptors or some other molecules are likely to interact with odorants (Jones et al., 2007; Kwon et al., 2007). Gr5a receptor is a primary candidate as Gr5a GRNs drive odor-evoked PER (Figure 2B and C). Consistent with this hypothesis, odor-evoked PER was nearly undetectable in the Gr5a mutant but spared in the control (Figure 2H). This demonstrates that Gr5a receptor is necessary for odor-evoked PER.
 
 Odorant binding proteins (OBPs) are another set of molecules that could mediate odor detection by GRNs. They are thought to bind and help transport hydrophobic odorants to chemosensory receptors through aqueous lymph (Larter et al., 2016). OBPs are expressed in taste as well as olfactory sensilla (Galindo and Smith, 2001) and modulate sugar-evoked PER (Swarup et al., 2014), raising the possibility that those in the taste sensilla also mediate odorant detection. To test this, we conducted a genetic screen by expressing individual Obp RNAi constructs with tubulin-Gal4. We targeted 9 Obp genes that are expressed highly in the labella (Cameron et al., 2010) but in trace amounts in the antenna (Larter et al., 2016) to examine the function of OBPs in the taste sensilla. Knockdown of Obp18a, Obp57d/e, and Obp57e genes decreased, whereas that of Obp49a gene increased odor-evoked PER (Figure 2I﻿﻿ and J, Figure 2—figure supplement 3). Knockdown of Obp19b, Obp56g, Obp56h, Obp57a/c, and Obp83c genes did not have a significant effect on odor-evoked PER (Figure 2K, Figure 2—figure supplement 3). The increased PER following Obp49a knockdown likely reflects disinhibition of sweet-sensing GRNs as Obp49a mediates the inhibitory impact of bitter chemicals on the activity of sweet-sensing GRNs (Jeong et al., 2013). These results suggest that OBPs modulate odor detection by GRNs.
 
-## GRNs directly respond to odors
+### GRNs directly respond to odors
 
 To gain direct evidence that GRNs respond to odors, we performed two-photon calcium imaging and single-sensillum electrophysiological recording that have complementary properties (Figures 3 and 4). Calcium imaging of GRN axons using a cell-specific driver reports the population activity of neurons but can unambiguously ascribe the signals to genetically identified GRNs. On the other hand, while single-sensillum electrophysiology cannot uniquely ascribe the signals to genetically defined GRNs, it is sensitive and fast enough to detect individual spikes.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic for two-photon calcium imaging of GRN axon termini in the subesophageal zone. The top image shows an anterior view of a brain of Gr5a-Gal4>UAS-GCaMP6s fly. White rectangle indicates the target region of calcium imaging. Scale bar: 50 μm. (B) Example response (ΔF/F) to ethyl butyrate. Green bar indicates an odor application period. Odor concentration was 10–1 for all the odors in all the experiments described in this figure. (C) Summary responses of Gr5a GRNs to nine odors. Green bar indicates an odor application period. ΔF/F of GCaMP6s fluorescence is color coded according to the scale bar (n=5). (D) Trial-averaged peak responses of Gr5a GRNs to individual odors. Covering the labella with glue reduced odor responses as compared to control (n=5 and 4 for control and labella covered, p=2.6e-15 and 5.1e-3 for organ condition and odor factors, mixed two-way ANOVA) but covering the maxillary palps had no effects (n=5 and 4 for control and palps covered, p=0.69 and 0.055 for organ condition and odor factors, mixed two-way ANOVA). (E, F) Same as in C, D, but for Gr66a GRNs. As in Gr5a GRNs, covering the labella with glue reduced odor responses as compared to control (n=6 and 5 for control and labella covered, p=3.0e-16 and 1.1e-7 for organ condition and odor factors, mixed two-way ANOVA) but covering the maxillary palps had no effects (n=6 and 5 for control and palps covered, p=0.48 and 4.2e-11 for organ condition and odor factors, mixed two-way ANOVA). (G) A linear combination of Gr5a and Gr66a GRN responses well predicted the magnitude of odor-evoked PER. PER was measured in Gr5a-Gal4>UAS-GCaMP flies. Each dot represents an odor. Coefficient of determination = 0.81. Weights for Gr5a and Gr66a GRNs are 5.0e-4 and −2.3e-5, indicating that the former and the latter contributes to enhancement and suppression of PER, respectively. (H) Odor responses are severely reduced in Gr5a GRNs in a Gr5a receptor mutant background (n=5 and 8 for control and mutant, P=8.0e-06 and 0.037 for genotype and odor factors, mixed two-way ANOVA). Box plots indicate the median (gray and red lines), mean (black and red dots), quartiles (box), and 5–95% range (bar).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Image of a brain of Gr5a-Gal4>UAS-GCaMP6s fly, stained with anti-GFP to reveal Gr5a neurons (green) and nc82 to reveal synapses (magenta). Scale bar, 50 μm. (B) Baseline fluorescence intensity of GCaMP6s in Gr5a GRNs. Fluorescence (arbitrary unit) is color-coded according to the scale bar. (C) Peak fluorescence intensity of GCaMP6s in the same fly as shown in B after stimulation with 4-methylcyclohexanol. Fluorescence is color-coded according to the scale bar. The ROI used for ΔF/F calculation is indicated by a white rectangle. Scale bar, 20 μm. (D–F) Same as in A-C, but for Gr66a-Gal4>UAS-GCaMP6s fly and benzaldehyde stimulation. (G) Trial-averaged peak responses of Gr5a GRNs to different concentrations of ethyl butyrate (EBR) and benzaldehyde (BNZ). n = 5 flies. (H) Same as in G, but for Gr66a GRNs. (I) Responses to 4-methylcyclohexanol are positively correlated with that to sucrose (0.25%) in Gr5a GRNs (R2 = 0.73, p = 0.031). Each dot corresponds to a fly. (J) Trial-averaged peak responses of Ppk28 GRNs to individual odors. These neurons do not respond to odors. n = 5 flies. (K) Same as in J, but for Ir94e GRNs. n = 9 flies. Box plots indicate the median (gray line), mean (black dot), quartiles (box), and 5-95% range (bar).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Time course of calcium responses (ΔF/F) to odors in Gr5a GRNs. Responses to nine odors in each fly are shown in one panel (n=5 flies). Odor application period is 5–7 s, and each odor was applied three times (different trials are shown in different colors). (B) Same as in A, but for Gr66a GRNs.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Integrated PER duration in response to a banana odor presented at various concentrations in wild-type flies. n = 21 flies. Box plots indicate the median (gray line), mean (black dot), quartiles (box), and 5-95% range (bar). (B) Trial averaged peak responses of Gr5a GRNs in response to various concentrations of banana odor in Gr5a-Gal4>UAS-GCaMP6s flies. n = 5 flies. Error bar, standard error of the mean. Box plots indicate the median (gray line), mean (black dot), quartiles (box), and 5-95% range (bar).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig4-v1.jpg)
 
@@ -69,11 +117,19 @@ For electrophysiology, we measured odor-evoked responses from individual taste s
 
 In sum, recording from specific types of GRNs using calcium imaging and specific types of taste sensilla using tip recording together demonstrates that GRNs in the labella sense odors in line with a recent study using a different electrophysiological technique (Dweck and Carlson, 2023).
 
-## Odor-taste integration in single taste sensillum
+### Odor-taste integration in single taste sensillum
 
 We investigated whether GRNs integrate multisensory stimuli when they are presented together. We presented sucrose, banana odor, or a mixture of the two to individual taste sensilla during tip recording. We found that the responses to a mixture were stronger than those to component stimuli (Figure 5). While the strength of responses varied across sensilla, responses to banana odor and sucrose recorded in the same sensillum were positively correlated (Figure 5—figure supplement 1). These results suggest that GRNs function as an odor-taste multisensory integrator.
 
-## GRNs integrate multisensory input to enhance PER and food consumption
+![Figure 5.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig5-v1.jpg)
+
+**Figure 5.:** (A) Example responses of an L-type taste sensillum to sucrose (0.25%, top), banana odor (0.1%, middle), and the mixture of the two (bottom). Traces show the activity between 200 and 700 ms after the stimulus onset. Each gray dot indicates a spike. Bar indicates 50 ms. (B) Average responses of L-type sensilla. Responses to the mixture are significantly larger than those to components (n=14 flies, p=0.001, repeated measures ANOVA followed by paired t-tests with Bonferroni correction, p=0.0030 and 0.0032 for sucrose and banana compared to mixture). Box plots indicate the median (gray line), mean (black dot), quartiles (box), and 5–95% range (bar). Asterisk indicates p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101440/elife-101440-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Spike responses to banana odor (0.01%) are positively correlated with those to sucrose (0.25%) in L-type sensilla. Each dot corresponds to a fly (R2 = 0.62, p = 0.00044).
+
+### GRNs integrate multisensory input to enhance PER and food consumption
 
 We finally asked if GRNs can enhance PER and subsequent food consumption through multisensory integration. We decided to apply a mix of banana odor and sucrose as a mimic of multisensory food stimuli in the natural environment. We confirmed that the banana odor can evoke PER and GRN responses in a concentration-dependent manner (Figure 3—figure supplement 3). We then presented sucrose solution mixed with or without a low concentration (10–4) of banana odor locally to the labella (Figure 6A). Although banana odor could not evoke PER on its own at this concentration (Figure 3—figure supplement 3A), we found that the addition of banana odor increased PER to sucrose, especially at low concentrations where sucrose alone can only induce unreliable PER (Figure 6B). Importantly, this enhancement was observed even after removing the olfactory organs (Figure 6B), indicating that the superadditive integration takes place in GRNs. Similar results were obtained when sucrose was mixed with different monomolecular odorants (Figure 6C and D).
 
@@ -97,9 +153,404 @@ Although odor detection by GRNs through gustatory receptors has not previously b
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## Drosophila strains
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-pentanone</td>
+      <td>Wako</td>
+      <td>Cat#: 133–03743; CAS: 107-87-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Banana essence</td>
+      <td>Narizuka corporation</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mineral oil</td>
+      <td>nacalai tesque</td>
+      <td>Cat#: 23334–85; CAS: 64741-97-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethyl butyrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: E15701; CAS: 105-54-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isopentyl acetate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 016–03646; CAS: 123-92-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-methylcyclohexanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 153095; CAS: 589-91-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-octanol</td>
+      <td>Tokyo Chemical Industry</td>
+      <td>Cat#: O0121; CAS: 589-98-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benzaldehyde</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 418099; CAS: 100-52-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-hexanol</td>
+      <td>Tokyo Chemical Industry</td>
+      <td>H0130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethyl acetate</td>
+      <td>Tokyo Chemical Industry</td>
+      <td>A0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Yeast</td>
+      <td>nacalai tesque</td>
+      <td>M1E8921</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fenchone</td>
+      <td>Tokyo Chemical Industry</td>
+      <td>F0164</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoamyl alcohol</td>
+      <td>Tokyo Chemical Industry</td>
+      <td>I0289</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenethyl alcohol</td>
+      <td>Tokyo Chemical Industry</td>
+      <td>P0084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TCC</td>
+      <td>Sigma-Aldrich</td>
+      <td>C0330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP</td>
+      <td>Nacalai Tesque</td>
+      <td>00404–84</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat CF488A</td>
+      <td>Biotium</td>
+      <td>20023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CF633</td>
+      <td>Biotium</td>
+      <td>20120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>phosphate-buffered saline</td>
+      <td>Nacalai Tsque</td>
+      <td>2757531</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4% paraformaldehyde in PBS</td>
+      <td>Nacalai Tesque</td>
+      <td>915414</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Goat serum</td>
+      <td>Invitrogen</td>
+      <td>50197Z</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>nacalai tesque</td>
+      <td>3550102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectashield</td>
+      <td>Vector laboratories</td>
+      <td>H-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Dickinson wild-type</td>
+      <td>Gift from Michael Dickinson</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. simulans)</td>
+      <td>D. simulans</td>
+      <td>Kyoto Drosophila Stock Center</td>
+      <td>DGGR #900001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Tubulin-GAL4</td>
+      <td>Bloomington</td>
+      <td>BDSC #5138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Orco-GAL4</td>
+      <td>Bloomington</td>
+      <td>BDSC #26818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Gr66a-GAL4</td>
+      <td>Bloomington</td>
+      <td>BDSC #57670</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Ir94e-GAL4</td>
+      <td>Bloomington</td>
+      <td>BDSC #60725</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Ppk28-GAL4</td>
+      <td>Bloomington</td>
+      <td>BDSC #60725</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-GCaMP6s</td>
+      <td>Bloomington</td>
+      <td>BDSC #42746</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-GCaMP6s</td>
+      <td>Bloomington</td>
+      <td>BDSC #42749</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Obp49a RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC #330599</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Obp19b RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC #1823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Obp56g RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC #23206</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Obp56h RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC #102562</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Obp18a RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC #101628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Obp83c RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC #106866</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Obp57d/e RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC #101783</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Obp57e RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC #105001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Obp57a/c RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC #107489</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>w1118</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC #60000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>w1118;P{VDRCsh60200attP40</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC #60200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>y,w1118;P{attP,y[+],w[3']}</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC #60100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Gr5a-GAL4</td>
+      <td>Gift from Kristin Scott</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>ΔEP(x)–5</td>
+      <td>Gift from Anupama Dahanukar</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>EP(x)496</td>
+      <td>Gift from Anupama Dahanukar</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Kir2.1AAE-GFP</td>
+      <td>Gift from Graeme Davis</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://fiji.sc/</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Project for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Python Software</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEISS ZEN Imaging Software</td>
+      <td>Carl Zeiss, Oberkochen, Germany</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepLabCut v2.0</td>
+      <td>Mathis et al., 2018; Mathis, 2021; https://github.com/DeepLabCut/Docker4DeepLabCut2.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### Drosophila strains
 
 Flies were maintained on standard cornmeal agar under a 12 hr light, 12 hr dark cycle at 25 °C. All experiments were performed on adult females 2–6 days after eclosion. Flies were obtained as described in the key resources table.
 
@@ -107,7 +558,134 @@ Fly stocks used in this study are as follows: Dickinson wild-type (Michael Dicki
 
 Detailed genotypes of flies used in each experiment are listed in Table 1.
 
-## Examination of odor-evoked PER
+**Table 1.**
+ Genotypes used to generate data presented in each figure.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figures 1B–G–2A, 4—6, Figure 1—figure supplement 1, Figure 1—figure supplement 2, Figure 2—figure supplement 1, Figure 3—figure supplement 3A</td>
+      <td>Dickinson Wild-type</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3A</td>
+      <td>w1118; P{y[+t7.7] w[+mC]=GAL4.1Uw}attP2</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3B</td>
+      <td>w1118; P{y[+t7.7] w[+mC]=p65.AD.Uw}attP40; P{y[+t7.7] w[+mC]=GAL4.DBD.Uw}attP2</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3C</td>
+      <td>D. simulans</td>
+    </tr>
+    <tr>
+      <td>Figure 2B</td>
+      <td>UAS-Kir2.1/+</td>
+    </tr>
+    <tr>
+      <td>Figure 2C</td>
+      <td>Gr5a-Gal4/UAS-Kir2.1Gr5a-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 2D</td>
+      <td>Gr66a-Gal4/UAS-Kir2.1Gr66a-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 2E</td>
+      <td>Ppk28-Gal4/UAS-Kir2.1Ppk28-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 2F</td>
+      <td>Ir94e-Gal4/UAS-Kir2.1Ir94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 2G</td>
+      <td>Gr66a-Gal4/UAS-Kir2.1UAS-Kir2.1/+</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 2</td>
+      <td>Orco-Gal4 &gt;UAS-Kir2.1</td>
+    </tr>
+    <tr>
+      <td>Figure 2H</td>
+      <td>ΔEP(x)–5EP(x)496</td>
+    </tr>
+    <tr>
+      <td>Figure 2I</td>
+      <td>tubulin-Gal4/y,w1118;P{attP,y[+],w[3']} tubulin-Gal4/UAS-Obp57d/e RNAi</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>tubulin-Gal4/y,w1118;P{attP,y[+],w[3']}</td>
+    </tr>
+    <tr>
+      <td>Figure 2J</td>
+      <td>tubulin-Gal4/w1118;P{VDRCsh60200}attP40tubulin-Gal4/UAS-Obp49a RNAi</td>
+    </tr>
+    <tr>
+      <td>Figure 2K</td>
+      <td>tubulin-Gal4/w1118tubulin-Gal4/UAS-Obp19b RNAi</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>tubulin-Gal4/w1118</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>tubulin-Gal4/UAS-Obp56g RNAi</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>tubulin-Gal4/UAS-Obp18a RNAi</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>tubulin-Gal4/UAS-Obp56h RNAi</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>tubulin-Gal4/UAS-Obp83c RNAi</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>tubulin-Gal4/UAS-Obp57e RNAi</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>tubulin-Gal4/UAS-Obp57a/c RNAi</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1J</td>
+      <td>UAS-GCaMP6s;Ppk28-Gal4</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1K</td>
+      <td>UAS-GCaMP6s;Ir94e-Gal4</td>
+    </tr>
+    <tr>
+      <td>Figure 3A-D, G, Figure 3—figure supplement 1A-C, G, I, Figure 3—figure supplement 2A, Figure 3—figure supplement 3B</td>
+      <td>Gr5a-Gal4;UAS-GCaMP6s</td>
+    </tr>
+    <tr>
+      <td>Figure 3E, F, Figure 3—figure supplement 1D-F, Figure 3—figure supplement 2B</td>
+      <td>UAS-GCaMP6s;Gr66a-Gal4</td>
+    </tr>
+    <tr>
+      <td>Figure 3H</td>
+      <td>ΔEP(x)–5;Gr5a-Gal4;UAS-GCaMP6sEP(x)496;Gr5a-Gal4;UAS-GCaMP6s</td>
+    </tr>
+  </tbody>
+</table>
+
+### Examination of odor-evoked PER
 
 Virgin females that had been raised on food for 1–3 days were starved for 24–28 hr in vials with water supplied through a wet piece of Kimwipe. Individual flies were briefly anesthetized on ice and their dorsal side of the thorax was attached to a cover glass with ultraviolet-curing adhesive (NOA 63, Norland), after which the flies were allowed to rest for an hour. Prior to recording odor-evoked PER, flies were water-satiated until they did not consume any more. Subsequently, 100 mM sucrose solution, which acted as a positive control stimulus, was applied either on the fly’s legs or proboscis (without letting the fly consume it) to examine if the fly could exhibit tastant-evoked PER. Flies were discarded if they did not exhibit PER to this stimulus. Flies showing excessive spontaneous PER before the assay were also discarded. The tethered fly was positioned horizontally in air facing an odor delivery tube (Figure 1A) except for the experiment in Figure S2 where the fly was positioned vertically to mimic the preparation used in a previous study (Oh et al., 2021). The tip of the odor tube was placed 10 mm away from the fly. A monochrome camera (Lu070M, Lumenera Corporation) taking a lateral view of the fly at 20 Hz was used to record the movement of proboscis in response to odors.
 
@@ -117,15 +695,15 @@ To examine the contribution of GRNs on wings and legs to odor-evoked PER (Figure
 
 Individual flies went through an experiment consisting of three blocks. In each block, six odors (see below), two solvent controls (mineral oil and water), and another control stimulus (air) were applied for 2 s per trial in a randomized order with a 15 s inter-trial interval.
 
-## Olfactory stimulation
+### Olfactory stimulation
 
 Odors were delivered with a custom-made, multi-channel olfactometer controlled by a PC as previously described (Badel et al., 2016). Briefly, an air stream (300 ml/min) was passed through 4 ml of odor solution diluted with mineral oil (Nacalai Tesque, 23334–85) or water. The concentration of odor was varied between 10–4, 10–2, 10–1, and 0.5 (v/v), but the default was 0.5 unless otherwise noted. The odorized air was further diluted by mixing it with a main air stream (500 ml/min), a small portion of which was delivered frontally to the fly through an outlet placed 10 mm away from the fly. The speed of odorized air flow at the position of the fly was 0.6 m/s. Using the photoionization detector (200B miniPID, Aurora Scientific Inc), the time odors reach the position of the fly was estimated to be 1.1 s after the odor valve opening. The odors used in the study and their abbreviations are as follows: 2-pentanone (2PT, Wako, 13303743), 3-octanol (OCT, Tokyo Chemical Industry, O0121), 4-methylcyclohexanol (MCH, Sigma-Aldrich, 153095), banana essence (Narizuka Corporation), benzaldehyde (BNZ, Sigma-Aldrich, 418099), ethyl butyrate (EBR, Sigma-Aldrich, E15701), and isopentyl acetate (IPA, Wako, 016–03646), 1-hexanol (Tokyo Chemical Industry, H0130), ethyl acetate (Tokyo Chemical Industry, A0030), yeast (nacalai tesque, M1E8921), fenchone (Tokyo Chemical Industry, F0164), isoamyl alcohol (Tokyo Chemical Industry, I0289), phenethyl alcohol (Tokyo Chemical Industry, P0084).
 
-## Examination of multisensory PER
+### Examination of multisensory PER
 
 To examine how flies respond to odor-taste multimodal stimuli presented to GRNs in the labella, individual flies were gently attached to a cover glass vertically by wrapping their thorax with a piece of parafilm, and multimodal stimuli were applied by touching the ventral part of the labellum with a wick made of Kimwipe immersed in a sucrose solution with or without odors (Figure 4A; Shiraiwa, 2008). A constant air stream (0.5–0.7 m/s) was applied with an air pump (eAir6000, GEX) from behind the wick. The legs of the flies were tucked under the parafilm to prevent them from touching the wick. The flies were allowed to rest for an hour after fixation. The concentration of sucrose was varied between 0.25–2% (v/v, Figure 6B) or fixed at 0.25% (Figure 6C and D) depending on the experiment. When the concentration of sucrose was varied, the stimuli were applied in an ascending order to avoid adaptation. The concentration of the added odor was 10–4 for all the tested stimuli. Each stimulus was applied three times with an inter-trial interval of 15 s. PER was manually scored when the proboscis was fully extended within ~2 s from the stimulation.
 
-## Quantification of PER
+### Quantification of PER
 
 A markerless pose estimation algorithm, DeepLabCut v2.0 was used to quantify the movement of the proboscis. The position and orientation of three segments of the proboscis, the rostrum, the haustellum, and the labellum were characterized by tracking six points, namely the proximal end of the antenna, the distal end of the antenna, the rostrum apex, the rostrum-haustellum joint, the haustellum-labellum joint, and the distal end of the labellum (Figure 1B and C). These six points were manually labeled on the lateral view of the fly to generate the training dataset, which consisted of 1465 labeled frames in video data from 19 flies. The ResNet50-based pose estimation neural network was trained for about 200,000 iterations, after which the six points were automatically tracked in all the frames in video data.
 
@@ -135,34 +713,316 @@ Because repetitive, spontaneous PER occurring at regular intervals represented a
 
 To examine if the movement of the proboscis is similar between odor-evoked and tastant-evoked PER, as well as between PER evoked by different odors, temporal sequences of the rostrum and the haustellum angles during PER and partial proboscis extensions were clustered with K-medoids clustering (Park and Jun, 2009). PER and partial proboscis extensions were detected from the baseline subtracted rostrum angle using hysteresis thresholding with a lower threshold of 5° and an upper threshold of 15°. Because the length of a temporal sequence is different between PER, the data were converted to a distance metric using dynamic time warping (Mearns et al., 2020; Sakoe and Chiba, 1978) with a warping window of 0.25 s prior to clustering. The optimal number of clusters was determined using the elbow method.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 To examine the expression pattern of Gal4 driver lines, we performed immunohistochemistry as described previously (Badel et al., 2016) using rat anti-GFP (1:1,000, Nacalai Tesque, 04404–84) and mouse nc82 (1:20, Developmental Studies Hybridoma Bank at the University of Iowa) as primary antibodies, and anti-rat CF488A (1:250, Biotium, 20023), and anti-mouse CF633 (1:250, Biotium, 20120) as secondary antibodies. Brains were dissected out from the head capsule in phosphate-buffered saline (PBS, nacalai tesque, 2757531), fixed with 4% paraformaldehyde in PBS (nacalai tesque, 915414) for 90 min on ice, and incubated in blocking solution containing 5% normal goat serum (Invitrogen, 50197Z) in PBST (0.2% Triton X-100 (nacalai tesque, 3550102) in PBS) for 30 min. Primary antibodies were then added and incubated at 4°C for ~48 hr. After removing antibodies and washing for over an hour, the brains were incubated in a solution of secondary antibodies at 4°C for 24 hr. The brains were immersed in Vectashield (Vector Laboratories, H-1000), sealed with a cover glass, and imaged with a confocal microscope (FV3000, Olympus). Images were analyzed with Fiji (Schindelin et al., 2012).
 
-## Fly preparation for calcium imaging
+### Fly preparation for calcium imaging
 
 Individual flies starved for 24–28 hr with water were anesthetized on ice, and their dorsal side of the thorax was fixed to a piece of parafilm with ultraviolet-curing adhesive (NOA 63, Norland). The legs of the fly were covered with another piece of parafilm. The fly was subsequently attached to a custom-made recording plate in a vertical position such that the anterior part of the head was accessible through a small hole on the recording plate (Figure 3A). The proboscis was pulled out gently with forceps and immobilized in an extended position using a strip of parafilm with the labella exposed to the air. After covering the head with saline containing 103 mM NaCl, 3 mM KCl, 5 mM N-tris (hydroxymethyl) methyl-2-aminoethane-sulfonic acid, 8 mM trehalose, 10 mM glucose, 26 mM NaHCO3, 1 mM NaH2PO4, 1.5 mM CaCl2, and 4 mM MgCl2 (osmolarity adjusted to 270–275 mOsm), the antennae and the associated cuticle were removed to expose the subesophageal zone. Saline was bubbled with 95% O2/5% CO2 and perfused at a rate of 2 ml/min during the recording. To examine the contribution of ORNs in the maxillary palps and GRNs in the labellum, each of these sensory organs were covered with UV-curable glue (Figure 3D and F).
 
-## Two-photon calcium imaging
+### Two-photon calcium imaging
 
 Calcium imaging of GRN axons in the subesophageal zone was conducted using a two-photon microscope (LSM 7 MP, Zeiss) equipped with a piezo motor (P-725.2CD PIFOC, PI) that drives a water immersion objective lens (W Plan-Apochromat, 20 x, numerical aperture 1.0) along the z-axis. The fluorophore was excited with a titanium:sapphire pulsed laser (Chameleon Vision II, Coherent) mode-locked at 930 nm. The laser power measured at the back aperture of the objective lens was below 20 mW. Fluorescence was collected with a GaAsP detector through a bandpass emission filter (BP470-550). Five optical slices separated by 5 μm were scanned every 500 ms. The odor delivery system was identical to that used in behavioral experiments. Sucrose was presented by a syringe whose movement was controlled by an actuator.
 
-## Image processing
+### Image processing
 
 Calcium imaging data were analyzed using custom code written in MATLAB (MathWorks). Images were registered within and across trials to correct for movement in the x-y plane as well as in depth by determining the shift along three dimensions that maximizes the correlation between the images. The region of interest (ROI) was set to cover the GRN axons in the subesophageal zone. The size of ROI was 80×60 μm for Gr5a GRNs, 60×40 μm for Gr66a GRNs, 80×60 μm for Ir94e GRNs, and 80×40 μm for Ppk28 GRNs, respectively. The average pixel intensity within the ROI was calculated for each time frame. The average of five frames preceding a stimulus was used as the baseline signal to calculate ΔF/F for each time frame. The peak stimulus response was quantified by averaging ΔF/F across five frames at the peak, followed by averaging across three trials for each stimulus. Odor stimulation began at frame 11, and the frames used for peak quantification were 12–16.
 
-## Quantifying the relationship between GRN activity and PER
+### Quantifying the relationship between GRN activity and PER
 
 A linear model in Figure 3G was generated using Python scikit-learn to quantify the relationship between GRN odor responses and PER. The weights for Gr5a and Gr66a GRNs were estimated using the LinearRegression function. The performance of the model was quantified by calculating the coefficient of determination.
 
-## Electrophysiological recording from taste sensilla on the proboscis
+### Electrophysiological recording from taste sensilla on the proboscis
 
 Odor and taste responses of individual taste sensilla on the proboscis were measured using tip recording (Hodgson et al., 1955). Virgin females that had been raised on food for 1–2 days were starved for 24–28 hr in vials with water supplied through a wet piece of Kimwipe. Individual flies were immobilized at the end of a pipette tip. The proboscis was fixed at an extended position using ultraviolet-curing adhesive (NOA 63, Norland). A saline-filled reference electrode was inserted into the eye. Individual taste sensilla were stimulated for ~2 s with a capillary electrode containing the stimulus and an electrolyte, 30 mM TCC. The recording electrode was connected to an amplifier (Multiclamp 700B, Molecular Devices). Signals were bandpass filtered at 100–1000 Hz, and digitally sampled at 10 kHz using a data acquisition module (NI cDAQ9178, NI 9215, National Instruments). The intensity of the response was measured by counting the number of spikes generated between 200 and 700ms after the stimulus contact following the convention to avoid the contamination of motion artifact (Dahanukar and Benton, 2023; Delventhal et al., 2014; Hiroi et al., 2002). Responses to sucrose, banana odor, MCH, and TCC were recorded from L- and I-type sensilla. Sucrose and odors were dissolved in TCC (30 mM) solution. Each stimulus was applied to the same sensillum for two or three times, with 1 min inter-stimulus interval. To examine odor-taste integration in each sensillum, banana odor and sucrose solution were presented individually or simultaneously in a mixture. Recordings were made from L2 and L6 sensilla. Each stimulus was presented twice, with 1 min inter-stimulus interval, in a random order.
 
-## Food consumption assay
+### Food consumption assay
 
 Food consumption was quantified in principle as described in a previous study (Reisenman and Scott, 2019). Briefly, virgin females that had been raised on food for 1–2 days were starved for 24–28 hr in vials with water supplied through a wet piece of Kimwipe. Flies were then transferred to a custom-made vial (n=10–15 per vial) with a filter paper (3 cm in diameter) on the top and a small mesh tube attached laterally near the top (Figure 6E). The filter paper on the top was impregnated with sucrose solution (0.1%, 150 µl) containing blue dye blue, Kyoritsu-Foods, and a small piece of filter paper (0.5×1 cm) placed in the mesh tube was impregnated with odor (1%, 10 µl) or control solution. Flies were allowed to consume sucrose solution for 5 min after which the vials were placed in the freezer (–20°C) for at least 1 hr. The extent of sucrose consumption by individual flies was quantified under the microscope based on the amount of blue dye in the abdomen, which was scored using the five-point scale ranging from 0 to 2 (Reisenman and Scott, 2019). The scorer was blind to the experimental condition (whether the filter paper in the mesh tube was impregnated with odor or control solvent). For the examination of olfactory organs-removed flies, their third antennal segments and maxillary palps were removed with forceps before starvation.
 
-## Statistical analysis
+#### Statistical analysis
 
 Statistical analyses were performed using Python (3.8.8) or R (4.0.2). The statistical tests used, and the sample sizes are listed in figure legends and Table 2. We predetermined sample sizes not using any statistical methods but based on effect sizes and sample-by-sample variability observed in pilot experiments.
+
+**Table 2.**
+ Summary of statistical tests.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Results of multi-factorial statistical tests</th>
+      <th></th>
+      <th colspan="3">P-values for individual factors and their interaction</th>
+    </tr>
+    <tr>
+      <th>Figure</th>
+      <th>Statistical test</th>
+      <th>Concentration</th>
+      <th>Identity</th>
+      <th>Interaction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 1E</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>3.0E-05</td>
+      <td>2.0E-07</td>
+      <td>2.0E-10</td>
+    </tr>
+    <tr>
+      <td>Figure 1G</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>3.6E-13</td>
+      <td>3.5E-11</td>
+      <td>2.8E-21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Method</td>
+      <td>Odor</td>
+      <td>Interaction</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1C</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.94</td>
+      <td>5.5E-03</td>
+      <td>2.8E-03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>State</td>
+      <td>Odor</td>
+      <td>Interaction</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 1A</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.88</td>
+      <td>5.6E-03</td>
+      <td>1.8E-03</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 1B</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>1.0E-06</td>
+      <td>0.74</td>
+      <td>2.7E-03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Genotype</td>
+      <td>Odor</td>
+      <td>Interaction</td>
+    </tr>
+    <tr>
+      <td>Figure 2A</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.0079</td>
+      <td>0.10</td>
+      <td>0.0020</td>
+    </tr>
+    <tr>
+      <td>Figure 2B and C (comparison to UAS control)</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>4.9E-05</td>
+      <td>0.12</td>
+      <td>3.5E-05</td>
+    </tr>
+    <tr>
+      <td>Figure 2B and D (comparison to UAS control)</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.49</td>
+      <td>0.0014</td>
+      <td>6.6E-04</td>
+    </tr>
+    <tr>
+      <td>Figure 2B and E (comparison to UAS control)</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.17</td>
+      <td>0.55</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>Figure 2B and F (comparison to UAS control)</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.11</td>
+      <td>1.2E-05</td>
+      <td>2.0E-07</td>
+    </tr>
+    <tr>
+      <td>Figure 2C</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>1.0E-15</td>
+      <td>0.71</td>
+      <td>1.0E-16</td>
+    </tr>
+    <tr>
+      <td>Figure 2D</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.28</td>
+      <td>0.0012</td>
+      <td>3.0E-05</td>
+    </tr>
+    <tr>
+      <td>Figure 2E</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>6.2E-04</td>
+      <td>0.56</td>
+      <td>0.0036</td>
+    </tr>
+    <tr>
+      <td>Figure 2F</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.14</td>
+      <td>5.6E-09</td>
+      <td>1.7E-08</td>
+    </tr>
+    <tr>
+      <td>Figure 2G</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>1.8E-04</td>
+      <td>0.041</td>
+      <td>2.6E-05</td>
+    </tr>
+    <tr>
+      <td>Figure 2H</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>1.1E-04</td>
+      <td>0.32</td>
+      <td>0.00015</td>
+    </tr>
+    <tr>
+      <td>Figure 2I</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.039</td>
+      <td>0.48</td>
+      <td>0.0083</td>
+    </tr>
+    <tr>
+      <td>Figure 2J</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.0066</td>
+      <td>0.16</td>
+      <td>0.0051</td>
+    </tr>
+    <tr>
+      <td>Figure 2K</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.24</td>
+      <td>0.26</td>
+      <td>0.0032</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3A and B</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.58</td>
+      <td>0.0017</td>
+      <td>0.0011</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3C and D</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.050</td>
+      <td>0.10</td>
+      <td>0.0060</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3C and E</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.36</td>
+      <td>0.48</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3C and F</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.18</td>
+      <td>0.063</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3C and G</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>1.9E-04</td>
+      <td>0.045</td>
+      <td>8.0E-06</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3C and H</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.92</td>
+      <td>0.022</td>
+      <td>0.0072</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Organ condition</td>
+      <td>Odor</td>
+      <td>Interaction</td>
+    </tr>
+    <tr>
+      <td>Figure 3D (control vs labella covered)</td>
+      <td>Mixed two-way ANOVA</td>
+      <td>2.6E-15</td>
+      <td>5.1E-03</td>
+      <td>9.8E-03</td>
+    </tr>
+    <tr>
+      <td>Figure 3D (control vs palps covered)</td>
+      <td>Mixed two-way ANOVA</td>
+      <td>0.69</td>
+      <td>0.055</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>Figure 3F (control vs labella covered)</td>
+      <td>Mixed two-way ANOVA</td>
+      <td>3.0E-16</td>
+      <td>1.1E-07</td>
+      <td>1.9E-07</td>
+    </tr>
+    <tr>
+      <td>Figure 3F (control vs palps covered)</td>
+      <td>Mixed two-way ANOVA</td>
+      <td>0.48</td>
+      <td>4.2E-11</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>Figure 3H</td>
+      <td>Mixed two-way ANOVA</td>
+      <td>8.0E-06</td>
+      <td>0.037</td>
+      <td>0.070</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Odor identity</td>
+      <td>Sucrose concentration</td>
+      <td>Interaction</td>
+    </tr>
+    <tr>
+      <td>Figure 6B (intact)</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>4.6E-04</td>
+      <td>2.1E-07</td>
+      <td>0.057</td>
+    </tr>
+    <tr>
+      <td>Figure 6B (olfactory organs removed)</td>
+      <td>Scheirer–Ray–Hare</td>
+      <td>0.035</td>
+      <td>0.0070</td>
+      <td>0.93</td>
+    </tr>
+  </tbody>
+</table>

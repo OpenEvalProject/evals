@@ -12,7 +12,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04b6nzv94 Department of Neurology, Brigham and Women’s Hospital Boston United States
+1. Department of Neurology, Brigham and Women’s Hospital Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
 2. Program in Neuroscience, Harvard Medical School Boston United States
 
 † Corresponding author
@@ -31,9 +31,31 @@ In this study, we investigate whether LRRK2 and its functional homolog LRRK1 pla
 
 ## Results
 
-## Generation and molecular characterization of the floxed and deleted Lrrk1 and Lrrk2 alleles
+### Generation and molecular characterization of the floxed and deleted Lrrk1 and Lrrk2 alleles
 
 LRRK2 and its homolog LRRK1 share several functional (LRRs, GTPase Roc, COR, and kinase) domains (Figure 1A). To investigate the intrinsic role of LRRK in DA neurons, we generated floxed Lrrk1 (Lrrk1F/F) and floxed Lrrk2 (Lrrk2F/F) mice, which permit deletions of Lrrk1 and Lrrk2 selectively in DA neurons by the Slc6a3-Cre KI allele (Slc6a3Cre/+), in which Cre recombinase is expressed under the control of the endogenous promoter of the dopamine transporter gene Slc6a3 (Bäckman et al., 2006). We introduced two loxP sites in introns 26 and 29 of Lrrk1 through homologous recombination and site-specific recombination by FLP recombinase to remove the positive selection Pgk-neo cassette, which is flanked by two FRT sites (Figure 1B and C; Supplementary file 1; Figure 1—figure supplement 1). The embryonic stem (ES) cells carrying the targeted allele or the floxed allele were identified and validated by Southern analysis using the 5' and 3' external probes as well as the neo probe (Figure 1D, Figure 1—figure supplement 2). The validated ES cells carrying the Lrrk1F/+ allele were injected into mouse blastocysts to generate Lrrk1F/+ mice, which were further confirmed by Southern using the 5' and 3' external probes (Figure 1D). In the presence of Cre recombinase, the floxed Lrrk1 genomic region containing part of intron 26 (1288 bp), exons 27–29, which encode the kinase domain, and part of intron 29 (1023 bp) is deleted (Figure 1C), and the removal of exons 27–29 (625 bp) results in a frameshift of downstream codons.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic illustrations of human LRRK1 and LRRK2 proteins showing similar functional domains. LRRK12015 protein is derived from exons 2–34 (Ensembl Genome Database: ENSG00000154237). LRRK22527 protein is derived from exons 1–51 (ENSG00000188906). LRR: leucine-rich repeats; Roc: Ras-of-complex; COR: C-terminal of Roc; KIN: kinase domain. (B) Schematic illustrations of the gene structures of mouse Lrrk1 and Lrrk2. The boxes in blue are exons that encode the LRRK1 and LRRK2 proteins, and the gray boxes represent the 5' and 3' UTRs. The exons are not drawn in scale. The start codon ATG is in exon 2 of Lrrk1 and exon 1 of Lrrk2. The exons 27–29 of Lrrk1 and the promoter/exons 1–2 of Lrrk2 are flanked with loxP sites (green arrowheads). (C) Targeting strategy for the generation of the targeted, floxed, and deleted Lrrk1 alleles. The red boxes represent the targeted exons 27–29, and the blue boxes represent the untargeted exons. The locations and sizes of the 5' and 3' external probes are shown. The targeting vector contains the 5' and 3' homologous regions (marked by dashed lines) and the middle region (from intron 26 to intron 29), which includes a loxP site (green arrowhead) in intron 26 (1288 bp upstream of exon 27) and the Pgk-neo selection cassette flanked by two FRT (FLP recognition target) sequences (gray circles) followed by another loxP site in intron 29 (1023 bp downstream of exon 29). A negative selection cassette encoding diphtheria toxin fragment A (DTA) is also included in the targeting vector to reduce embryonic stem (ES) cells bearing randomly inserted targeting vectors. ES cells carrying the correctly targeted Lrrk1 allele were transfected with pCAG-FLP to remove the Pgk-neo cassette and generate the floxed Lrrk1 allele. Floxed Lrrk1 mice were bred with CMV-Cre transgenic mice to generate germline deleted Lrrk1 mice. Detailed strategy for generating targeting vector and DNA sequence of floxed Lrrk1 allele can be found in Figure 1—figure supplement 1 and Supplementary file 1, respectively. (D) Southern analysis of the targeted and floxed Lrrk1 alleles. Genomic DNA from ES cells or mouse tails was digested with HindIII and hybridized with the 5' or 3' external probe. For the 5' probe, the resulting 17.0 kb and 4.8 kb bands represent the wild-type (WT) and the targeted (T) or floxed (F) alleles, respectively. For the 3' probe, the resulting 17.0 kb and 12.2 kb bands represent the WT and the floxed alleles, respectively. Detailed Southern strategy can be found in Figure 1—figure supplement 2. (E) Targeting strategy for the generation of the targeted, floxed, and deleted Lrrk2 alleles. The red boxes represent Lrrk2 exons 1 and 2, and the start codon ATG resides in exon 1. The locations and sizes of the 5' and 3' external probes are shown. The targeting vector contains the 5' and 3' homologous regions (marked by dashed lines) and the middle region (from the promoter to intron 2), which includes a loxP site (green arrowhead) upstream (1768 bp) of the transcription initiation site and the Pgk-neo selection cassette flanked by two FRT sequences (gray circles) and two loxP sites (green arrowheads) in intron 2 (878 bp downstream of exon 2). A negative selection cassette encoding DTA is also included in the targeting vector. Mice carrying the correctly targeted Lrrk2 allele were crossed with Actin-FLP deleter mice to generate floxed Lrrk2 mice, which were bred with CMV-Cre transgenic mice to generate germline deleted Lrrk2 mice. Detailed strategy for generating targeting vector and the DNA sequence of the floxed Lrrk2 allele can be found in Figure 1—figure supplement 3, respectively. (F) Southern analysis of the targeted and floxed Lrrk2 alleles. Genomic DNA from ES cells or mouse tails was digested with NheI and hybridized with the 5' or 3' external probe. For the 5' probe, the resulting 11.5 kb and 3.6 kb bands represent the wild-type (WT) and the targeted (T) or floxed (F) alleles, respectively. For the 3' probe, the resulting 11.5 kb and 5.2 kb bands represent the WT and the floxed Lrrk2 alleles, respectively. Detailed Southern strategy can be found in Figure 1—figure supplement 4. (G) Northern analysis of poly(A)+RNA prepared from the lung of Lrrk1Δ/Δ mice carrying homozygous germline deleted (Δ/Δ) Lrrk1 alleles derived from Lrrk1F/F mice using the cDNA probe of exons 2–3 (left) and exons 27–29 (right). Using the upstream exons 2–3 probe, the Lrrk1 transcripts in wild-type mice are the expected size of ~7.4 kb, whereas the detected Lrrk1 transcripts in Lrrk1Δ/Δ mice are truncated, consistent with the deletion of exons 27–29 (625 bp), which results in a frameshift, and are expressed at lower levels, likely due to nonsense-mediated degradation of the truncated Lrrk1 mRNA. Using a probe specific for exons 27–29, there is no Lrrk1 transcript in Lrrk1Δ/Δ mice, as expected. Both blots were hybridized with a GAPDH probe as loading controls. Detailed northern strategy and full-size blots are included in Figure 1—figure supplements 5 and 6, respectively. Extensive RT-PCR analysis of Lrrk1 transcripts in Lrrk1Δ/Δ mice is shown in Figure 1—figure supplement 7. (H) Northern analysis of total RNA prepared from the neocortex of Lrrk2Δ/Δ mice carrying homozygous germline Lrrk2 deleted (Δ/Δ) alleles using the cDNA probe of exons 1–5 shows the absence of Lrrk2 transcripts. The blot was hybridized with a GAPDH probe as a loading control. The full-size blot is included in Figure 1—figure supplement 8. RT-PCR analysis of Lrrk2 transcripts in Lrrk2Δ/Δ mice is shown in Figure 1—figure supplement 9. (I) Left: western analysis of wild-type (+/+) and homozygous Lrrk1Δ/Δ (Δ/Δ) brains shows the absence of LRRK1 protein. Right: western analysis of the neocortex of wild-type (+/+) and homozygous Lrrk2Δ/Δ (Δ/Δ) mice shows the absence of LRRK2 protein. Vinculin was used as a loading control. Full-size blots can be found in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig1-figsupp3-v1.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig1-figsupp4-v1.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig1-figsupp5-v1.jpg)
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig1-figsupp6-v1.jpg)
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig1-figsupp7-v1.jpg)
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig1-figsupp8-v1.jpg)
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig1-figsupp9-v1.jpg)
 
 The Lrrk2 targeting vector contains the 5' homologous region, a loxP site 1768 bp upstream of the transcription initiation site, exons 1–2, the Pgk-neo cassette flanked by two loxP sites and two FRT sequences, and the 3' homologous region (Figure 1B and E; Supplementary file 2; Figure 1—figure supplement 3). The ES cell clones carrying the targeted allele were identified and validated by Southern analysis using the 5' external probe (Figure 1F, Figure 1—figure supplement 4) and genomic PCR followed by sequencing. Mice carrying the Lrrk2 targeted allele were further verified by Southern analysis using the 5' and 3' external probes (Figure 1—figure supplement 4) as well as the neo probe and were then crossed with the Actin-FLP mice (Rodríguez et al., 2000) to remove the Pgk-neo cassette flanked by two FRT sites to generate Lrrk2F/+ mice (Figure 1E). The resulting Lrrk2F/+ mice were confirmed by Southern analysis using the 5' and 3' external probes (Figure 1F). In the presence of Cre recombinase, the floxed Lrrk2 region containing the promoter and exons 1–2 are deleted, likely resulting in a null allele, as we previously targeted a very similar region (~2.5 kb upstream of the transcription initiation site and exons 1–2) to generate germline deletion of Lrrk2 (Tong et al., 2010).
 
@@ -43,19 +65,27 @@ We then performed northern analysis of Lrrk1 using both an upstream probe specif
 
 Similarly, northern analysis of Lrrk2 using a probe specific for exons 1–5 and RT-PCR followed by sequencing confirmed the absence of Lrrk2 mRNA in Lrrk2Δ/Δ brains and normal Lrrk2 transcripts in Lrrk2F/F brains (Figure 1H, Figure 1—figure supplements 8 and 9). Furthermore, western analysis confirmed the absence of LRRK1 and LRRK2 proteins in the brain of Lrrk1Δ/Δ and Lrrk2Δ/Δ mice, respectively (Figure 1I). Taken together, our northern, RT-PCR followed by sequencing, and western analyses demonstrated that deletion of the floxed Lrrk1 and Lrrk2 alleles results in null mutations. Thus, floxed Lrrk1 and Lrrk2 alleles can be used to generate DA neuron-specific Lrrk cDKO mice.
 
-## Generation and molecular characterization of DA neuron-specific Lrrk cDKO mice
+### Generation and molecular characterization of DA neuron-specific Lrrk cDKO mice
 
 To generate DA neuron-specific Lrrk cDKO mice, we used Slc6a3Cre/+ KI mice, which express Cre recombinase under the control of the dopamine transporter gene Slc6a3 (Bäckman et al., 2006). To confirm if Cre-mediated recombination occurs broadly and specifically in DA neurons of the SNpc, we crossed Slc6a3Cre/+ mice with the Rosa26CAG-LSL-ZsGreen1 reporter mouse (Madisen et al., 2010). Upon Cre expression, Cre recombinase removes the floxed ‘stop’ cassette, resulting in the expression of EGFP. We found that Cre-mediated recombination (GFP+) occurs in TH+ cells in the SNpc (Figure 2A). Quantification of GFP+ and/or TH+ cells in the SNpc showed that 99% of TH+ DA neurons are also GFP+, demonstrating that Cre-mediated recombination takes place in essentially all DA neurons in the SNpc (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig2-v1.jpg)
 
-**Figure 2.:** Lrrk conditional double knockout (cDKO) mice.(A) Immunostaining of GFP and/or TH in the SNpc of Slc6a3 mice at 2 months of age. Cre recombinase is expressed under the control of the Cre/+; Rosa26CAG-LSL-ZsGreen1/+Slc6a3 endogenous promoter and removes the floxed ‘stop’ cassette, resulting in the expression of EGFP under the control of the ubiquitous CAG promoter. (B) Quantification of GFP+/TH+ and TH+ cells shows that 99% of TH+ DA neurons (722 ± 46 TH+ cells) in the SNpc are also GFP+ (713 ± 46 cells), indicating that Slc6a3-Cre mediated recombination occurs in essentially all TH+ DA neurons. N = 3 mice, three comparable sections per hemisphere, 320 μm apart. (C) Similar body weight between Lrrk cDKO mice and littermate controls at all ages examined (F1,68 = 0.001310, p=0.9712; 2M, 20M: p>0.9999; 15M: p=0.7857, 25M: p=0.8084, two-way ANOVA with Bonferroni’s post hoc multiple comparisons). (D) Similar brain weight between Lrrk cDKO and control mice (F1,68 = 3.603, p=0.0619; 2M: p=0.3893; 15M: p>0.9999; 20M: p>0.9999; 25M: p=0.3223, two-way ANOVA with Bonferroni’s post hoc multiple comparisons). (E) Western analysis of LRRK1 and LRRK2 proteins in the dissected cerebral cortex (CTX) and ventral midbrain (vMB) of Lrrk cDKO and littermate controls at 2 months of age. (F) Quantification shows significant decreases in LRRK1 and LRRK2 in the dissected ventral midbrain of Lrrk cDKO mice (LRRK1, p=0.0432; LRRK2, p=0.0162, Student’s t-test), compared to controls, but not in the dissected cortex of cDKO mice (LRRK1: p=0.7648; LRRK2: p=0.2325). The number in the column indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. *p<0.05. Scale bar: 100 μm.
+**Figure 2.:** (A) Immunostaining of GFP and/or TH in the SNpc of Slc6a3Cre/+; Rosa26CAG-LSL-ZsGreen1/+ mice at 2 months of age. Cre recombinase is expressed under the control of the Slc6a3 endogenous promoter and removes the floxed ‘stop’ cassette, resulting in the expression of EGFP under the control of the ubiquitous CAG promoter. (B) Quantification of GFP+/TH+ and TH+ cells shows that 99% of TH+ DA neurons (722 ± 46 TH+ cells) in the SNpc are also GFP+ (713 ± 46 cells), indicating that Slc6a3-Cre mediated recombination occurs in essentially all TH+ DA neurons. N = 3 mice, three comparable sections per hemisphere, 320 μm apart. (C) Similar body weight between Lrrk cDKO mice and littermate controls at all ages examined (F1,68 = 0.001310, p=0.9712; 2M, 20M: p>0.9999; 15M: p=0.7857, 25M: p=0.8084, two-way ANOVA with Bonferroni’s post hoc multiple comparisons). (D) Similar brain weight between Lrrk cDKO and control mice (F1,68 = 3.603, p=0.0619; 2M: p=0.3893; 15M: p>0.9999; 20M: p>0.9999; 25M: p=0.3223, two-way ANOVA with Bonferroni’s post hoc multiple comparisons). (E) Western analysis of LRRK1 and LRRK2 proteins in the dissected cerebral cortex (CTX) and ventral midbrain (vMB) of Lrrk cDKO and littermate controls at 2 months of age. (F) Quantification shows significant decreases in LRRK1 and LRRK2 in the dissected ventral midbrain of Lrrk cDKO mice (LRRK1, p=0.0432; LRRK2, p=0.0162, Student’s t-test), compared to controls, but not in the dissected cortex of cDKO mice (LRRK1: p=0.7648; LRRK2: p=0.2325). The number in the column indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. *p<0.05. Scale bar: 100 μm.
 
 Having confirmed Lrrk1F/F and Lrrk2F/F mice as well as Slc6a3Cre/+ mice, we then bred them together to generate Lrrk cDKO mice (Lrrk1F/F; Lrrk2F/F; Slc6a3Cre/+), which were further bred with Lrrk1F/F; Lrrk2F/F mice to generate cDKO and littermate controls (Lrrk1F/F; Lrrk2F/F). It was previously reported that germline Lrrk DKO mice failed to gain weight as they aged (Giaime et al., 2017). However, DA neuron-specific Lrrk cDKO and littermate control mice have similar body and brain weights at the ages of 2–24 months (Figure 2C and D). Western analysis showed a significant reduction of LRRK1 and LRRK2 proteins in the dissected ventral midbrain but not in the cerebral cortex of DA neuron-specific Lrrk cDKO mice at 2–3 months of age, relative to littermate controls (Figure 2E and F), further validating these DA neuron-specific Lrrk cDKO mice.
 
-## Age-dependent loss of TH+ DA neurons in the SNpc of Lrrk cDKO mice
+### Age-dependent loss of TH+ DA neurons in the SNpc of Lrrk cDKO mice
 
 To determine whether the inactivation of LRRK selectively in DA neurons of the SNpc affects their survival, we performed TH immunostaining and quantified TH+ DA neurons in the SNpc of Lrrk cDKO mice and littermate controls using stereological methods. The morphology of TH+ DA neurons in Lrrk cDKO mice at the ages of 15, 20, and 24 months appears normal (Figure 3A). Quantification of TH+ neurons in the SNpc using serial sections emcompassing the entire SNpc revealed that the number of DA neurons in the SNpc at the age of 15 months is similar between cDKO mice (10,000 ± 141) and littermate controls (10,077 ± 310; F1,46 = 16.59, p=0.0002, two-way ANOVA with Bonferroni’s post hoc multiple comparisons, p>0.9999; Figure 3B). However, at the age of 20 months, the number of TH+ neurons in the SNpc of cDKO mice (8948 ± 273) is significantly reduced compared to controls (10,244 ± 220; p=0.0041), and is further decreased at the age of 24 months (control: 9675 ± 232, cDKO: 8188 ± 452; p=0.0010; Figure 3B). Similar genotypic differences were observed in an independent quantification by another investigator, also conducted in a genotype-blind manner, using the fractionator and optical dissector to randomly sample 25% area of the SNpc (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig3-v1.jpg)
+
+**Figure 3.:** (A) TH immunostaining shows TH+ DA neurons in the SNpc of Lrrk cDKO and littermate controls at the age of 15, 20, and 24 months. Higher power views of the boxed areas show grossly normal DA neuron morphology in Lrrk cDKO mice. (B) Quantification of TH+ DA neurons in the SNpc reveals similar numbers of DA neurons in Lrrk cDKO mice (10,000 ± 141) and littermate controls (10,077 ± 310, p>0.9999) at 15 months of age. At 20 months of age, the number of DA neurons in the SNpc of Lrrk cDKO mice (8948 ± 273) is significantly reduced compared to control mice (10,244 ± 220, F1,46 = 16.59, p=0.0002; p=0.0041, two-way ANOVA with Bonferroni’s post hoc multiple comparisons). By 24 months of age, the reduction of DA neurons in the SNpc of Lrrk cDKO mice (8188 ± 452) relative to controls (9675 ± 232, p=0.0010) is greater compared to 20 months of age. Raw quantification data are included in Figure 3—source data 1. (C) Immunohistological analysis of TH and NeuN shows TH+ DA neurons (green) and NeuN+ neurons (red) in the SNpc of Lrrk cDKO mice and controls at 24 months of age. (D) Quantification of NeuN+ cells in the SNpc shows that the number of NeuN+ neurons in Lrrk cDKO mice (17,923 ± 813) is significantly lower than that in control mice (21,907 ± 469, p=0.0006, Student’s t-test), indicating loss of neurons in the SNpc of Lrrk cDKO mice. All TH+ cells are NeuN+. The number of TH+/NeuN+ cells in the SNpc of Lrrk cDKO mice (10,500 ± 644) is also lower compared to control mice (14,102 ± 310, p=0.0001). There is no significant difference in the number of NeuN+/TH- neurons between littermate controls (7804 ± 249) and cDKO mice (7423 ± 344, p=0.3747). The number in the column indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. **p<0.01, ***p<0.001. Scale bar: 100 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantification of TH+ DA neurons in the SNpc by an independent investigator using stereological methods sampling 25% areas of the SNpc. There are similar numbers of DA neurons in Lrrk cDKO mice (13,180 ± 585) and littermate controls (13,293 ± 500, p>0.9999) at 15 months of age. At 20 months of age, the number of DA neurons in the SNpc of Lrrk cDKO mice (10,936 ± 477) is significantly reduced compared to control mice (12,576 ± 497, F1,47=12.40, p=0.0003; p=0.0423, two-way ANOVA with Bonferroni’s post hoc multiple comparisons). By 24 months of age, the reduction of DA neurons in the SNpc of Lrrk cDKO mice (8600 ± 355) is more severe compared to controls (11,105 ± 435, p=0.0015). The number in the column indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. *p<0.05, **p<0.01.
 
 We further performed TH and NeuN double immunostaining of Lrrk cDKO and control mice at 24 months of age (Figure 3C). Quantification of NeuN+ and TH+/NeuN+ cells in the SNpc using serial sections encompassing the entire SNpc showed that the number of NeuN+ neurons is also significantly reduced in the SNpc of cDKO mice (17,923 ± 813) compared to controls (21,907 ± 469, p=0.0006, Student’s t-test; Figure 3D). The number of TH+/NeuN+ cells is also lower in the SNpc of Lrrk cDKO mice (10,500 ± 644) compared to control mice (14,102 ± 310, p=0.0001; Figure 3D). These data indicate that the reduction in TH+ cells is not due to decreases in TH expression in DA neurons, but rather a result of the loss of DA neuron cell bodies in the SNpc of Lrrk cDKO mice.
 
@@ -63,47 +93,47 @@ We further evaluated apoptosis in the SNpc of Lrrk cDKO and littermate controls 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig4-v1.jpg)
 
-**Figure 4.:** Lrrk conditional double knockout (cDKO) mice.(A) Representative images of TH and active Caspase-3 immunostaining show TH+ DA neurons (green) and active Caspase-3+ apoptotic cells (red) in the SNpc of Lrrk cDKO and control mice at the age of 24 months. (B) Quantification of active Caspase-3+/TH+ cells shows significant increases in apoptotic DA neurons in the SNpc of Lrrk cDKO mice (323 ± 38) at 24 months of age, relative to controls (157 ± 8, p=0.0004, Student’s t-test). Raw quantification data are included in Figure 4—source data 1. The number in the column indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. ***p<0.001. Scale bar: 100 μm.Figure 4—source data 1.Lrrk conditional double knockout (cDKO) and control mice.
+**Figure 4.:** (A) Representative images of TH and active Caspase-3 immunostaining show TH+ DA neurons (green) and active Caspase-3+ apoptotic cells (red) in the SNpc of Lrrk cDKO and control mice at the age of 24 months. (B) Quantification of active Caspase-3+/TH+ cells shows significant increases in apoptotic DA neurons in the SNpc of Lrrk cDKO mice (323 ± 38) at 24 months of age, relative to controls (157 ± 8, p=0.0004, Student’s t-test). Raw quantification data are included in Figure 4—source data 1. The number in the column indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. ***p<0.001. Scale bar: 100 μm.
 
-## Age-dependent loss of TH+ DA terminals in the striatum of Lrrk cDKO mice
+### Age-dependent loss of TH+ DA terminals in the striatum of Lrrk cDKO mice
 
 To determine whether loss of DA neurons in the SNpc is accompanied with loss of DA terminals in the striatum, we performed TH immunostaining and quantified TH immunoreactivity in the striatum of Lrrk cDKO and littermate control mice at the ages of 15 and 24 months (Figure 5A). Quantitative analysis showed normal levels of TH immunoreactivity in the striatum of cDKO mice at 15 months of age but reduced levels of TH immunoreactivity in the striatum of cDKO mice at 24 moths of age (–19%, p=0.0215, Student’s t-test), suggesting an age-dependent loss of TH+ dopaminergic terminals in the striatum (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig5-v1.jpg)
 
-**Figure 5.:** Lrrk conditional double knockout (cDKO) mice.(A) Representative TH immunostaining images in the striatum of Lrrk cDKO mice and littermate controls at the ages of 15 and 24 months. (B) Quantification of TH immunoreactivity in the striatum of Lrrk cDKO and control mice shows similar TH immunoreactivity at the age of 15 months (p=0.8766, Student’s t-test), but there is a significant decrease in TH immunoreactivity in the striatum of Lrrk cDKO mice at 24 months of age (–19%, p=0.0215) compared to controls. The number in the column indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. *p<0.05. Scale bar: 1 mm.
+**Figure 5.:** (A) Representative TH immunostaining images in the striatum of Lrrk cDKO mice and littermate controls at the ages of 15 and 24 months. (B) Quantification of TH immunoreactivity in the striatum of Lrrk cDKO and control mice shows similar TH immunoreactivity at the age of 15 months (p=0.8766, Student’s t-test), but there is a significant decrease in TH immunoreactivity in the striatum of Lrrk cDKO mice at 24 months of age (–19%, p=0.0215) compared to controls. The number in the column indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. *p<0.05. Scale bar: 1 mm.
 
-## Unaffected TH+ noradrenergic neurons in the LC of Lrrk cDKO mice
+### Unaffected TH+ noradrenergic neurons in the LC of Lrrk cDKO mice
 
 Previously, we reported the reduction of noradrenergic neurons in the locus coeruleus (LC) of Lrrk DKO mice (Giaime et al., 2017). We therefore quantified TH+ noradrenergic neurons in the LC of Lrrk cDKO mice at the age of 24 months. The number of TH+ cells in the LC is similar between cDKO and littermate controls (control: 3418 ± 86, cDKO: 3350 ± 99, p=0.6110, Student’s t-test; Figure 6A and B). Further examination of the GFP reporter line crossed with Slc6a3Cre/+ showed the lack of Cre-mediated recombination in the LC (Figure 6C), supporting the cell-intrinsic nature of DA neuron loss in the SNpc of aged Lrrk cDKO mice.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig6-v1.jpg)
 
-**Figure 6.:** Lrrk conditional double knockout (cDKO) mice.(A) Representative images of TH+ noradrenergic neurons in the LC of Lrrk cDKO mice and littermate controls at 24 months of age. (B) Quantification of TH+ cells shows similar number of TH+ noradrenergic neurons in the LC of Lrrk cDKO mice (3350 ± 99) and controls (3418 ± 86, p=0.6110, Student’s t-test). (C) Top: immunostaining of TH and GFP in the LC of Slc6a3 mice at 2 months of age. There is no GFP+ (green) cell in the LC, indicating that Cre/+; Rosa26CAG-LSL-ZsGreen1/+Slc6a3-Cre is not expressed in the LC. Bottom: higher power views of the boxed areas. The number in the column indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. Scale bar: 100 μm.
+**Figure 6.:** (A) Representative images of TH+ noradrenergic neurons in the LC of Lrrk cDKO mice and littermate controls at 24 months of age. (B) Quantification of TH+ cells shows similar number of TH+ noradrenergic neurons in the LC of Lrrk cDKO mice (3350 ± 99) and controls (3418 ± 86, p=0.6110, Student’s t-test). (C) Top: immunostaining of TH and GFP in the LC of Slc6a3Cre/+; Rosa26CAG-LSL-ZsGreen1/+ mice at 2 months of age. There is no GFP+ (green) cell in the LC, indicating that Slc6a3-Cre is not expressed in the LC. Bottom: higher power views of the boxed areas. The number in the column indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. Scale bar: 100 μm.
 
-## Quantitative EM analysis of the SNpc in Lrrk cDKO mice
+### Quantitative EM analysis of the SNpc in Lrrk cDKO mice
 
 We previously reported age-dependent increases in electron-dense autophagic and autolysosomal vacuoles as well as the presence of large lipofuscin granules in the surviving SNpc neurons of Lrrk DKO mice beginning at 10 moths of age (Giaime et al., 2017; Huang et al., 2022). To determine whether selective inactivation of LRRK in DA neurons similarly results in the accumulation of electron-dense vacuoles in the SNpc, we performed EM analysis in the SNpc of Lrrk cDKO mice and littermate controls at the age of 25 months (Figure 7). We observed various electron-dense double membrane autophagosomes and single-membrane autolysosomes as well as lipofuscin granules composed of lipid-containing residues of lysosomal digestion in the SNpc of Lrrk cDKO and littermate control mice (Figure 7C–F). Interestingly, the number of electron-dense vacuoles in the SNpc is similar between Lrrk cDKO mice and littermate controls at the age of 25 months (control: 6.72 ± 0.43, cDKO: 6.99 ± 0.52, p=0.6839, Student’s t-test; Figure 7G). We also found no significant difference in the area of electron-dense vacuoles in the SNpc between Lrrk cDKO and littermate controls (control: 4.43 ± 0.44 μm2; cDKO: 4.60 ± 0.49 μm2, p=0.8048; Figure 7G). The difference in accumulation of electron-dense vacuoles in the SNpc between germline DKO mice and DA neuron-restricted cDKO suggests that LRRK in non-DA neurons, possibly microglia, may play a more prominent role in the regulation of the autophagy-lysosomal pathway.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig7-v1.jpg)
 
-**Figure 7.:** Lrrk conditional double knockout (cDKO) mice.(A, B) Representative electron microscopy (EM) images showing electron-dense vacuoles (arrowheads) in SNpc neurons of cDKO mice and littermate controls at the age of 25 months. (C–F) Higher power views showing various electron-dense vacuoles, autolysosomes (single arrows), autophagosomes (double arrows), and lipid-containing vacuoles (asterisks) in SNpc neurons of littermate control (C, D) and cDKO (E, F) mice. (G) Left: the average number of electron-dense vacuoles (>0.5 μm in diameter) in the SNpc neuronal profiles per mouse is not significantly different between Lrrk cDKO mice and littermate controls at the age of 25 months (control: 6.72 ± 0.43; cDKO: 6.99 ± 0.52, p=0.6839, Student’s t-test). Right: the total area of electron-dense vacuoles (>0.5 μm in diameter) in the SNpc neuronal profiles per mouse is similar between Lrrk cDKO and littermate controls (control: 4.43 ± 0.44 μm2; cDKO: 4.60 ± 0.49 μm2, p=0.8048). The value in parentheses indicates the number of mice (left) and neuron profiles (right) used in the quantification. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. Scale bar: 1 μm.
+**Figure 7.:** (A, B) Representative electron microscopy (EM) images showing electron-dense vacuoles (arrowheads) in SNpc neurons of cDKO mice and littermate controls at the age of 25 months. (C–F) Higher power views showing various electron-dense vacuoles, autolysosomes (single arrows), autophagosomes (double arrows), and lipid-containing vacuoles (asterisks) in SNpc neurons of littermate control (C, D) and cDKO (E, F) mice. (G) Left: the average number of electron-dense vacuoles (>0.5 μm in diameter) in the SNpc neuronal profiles per mouse is not significantly different between Lrrk cDKO mice and littermate controls at the age of 25 months (control: 6.72 ± 0.43; cDKO: 6.99 ± 0.52, p=0.6839, Student’s t-test). Right: the total area of electron-dense vacuoles (>0.5 μm in diameter) in the SNpc neuronal profiles per mouse is similar between Lrrk cDKO and littermate controls (control: 4.43 ± 0.44 μm2; cDKO: 4.60 ± 0.49 μm2, p=0.8048). The value in parentheses indicates the number of mice (left) and neuron profiles (right) used in the quantification. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. Scale bar: 1 μm.
 
-## Enhanced microgliosis in the SNpc of Lrrk cDKO mice
+### Enhanced microgliosis in the SNpc of Lrrk cDKO mice
 
 To determine whether selective inactivation of LRRK in DA neurons results in elevated microgliosis in the SNpc of Lrrk cDKO mice, we performed immunohistochemical analysis of Iba1, which labels microglia, and TH, which marks DA neurons and processes, thus showing the boundary of the SNpc (Figure 8A–C). We found that the number of Iba1+ microglia is significantly increased in the SNpc of Lrrk cDKO mice at 15 months of age (2541 ± 193), compared to controls (1737 ± 83; F1,45 = 102.6, p<0.0001, two-way ANOVA with Bonferroni’s post hoc multiple comparisons, p=0.0017; Figure 8A and D). The number of Iba1+ microglia in the SNpc of Lrrk cDKO is further increased compared to controls at the age of 20 (control: 2426 ± 68, cDKO: 3639 ± 127, p<0.0001; Figure 8B and D) and 25 months (control: 2640 ± 187, cDKO: 4089 ± 100, p<0.0001; Figure 8C and D). These results show that despite the selective inactivation of LRRK in DA neurons of Lrrk cDKO mice, microgliosis accompanies DA neuronal loss in the SNpc.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig8-v1.jpg)
 
-**Figure 8.:** Lrrk conditional double knockout (cDKO) mice.(A–C) Representative images of Iba1+ microglia (red, marked by yellow arrowheads) and TH+ dopaminergic neurons (green) in the SNpc of Lrrk DKO mice and controls at 15 (A), 20 (B), and 24 (C) months of age. (D) Quantification of Iba1+ microglia shows significant increases in the number of Iba1+ microglia in the SNpc of Lrrk cDKO mice compared to control mice at the ages of 15 months (control: 1737 ± 83, cDKO: 2541 ± 193; F1,45 = 102.6, p<0.0001, p=0.0017, two-way ANOVA with Bonferroni’s post hoc multiple comparisons), 20 months (control: 2426 ± 68, cDKO: 3639 ± 127, p<0.0001), and 24 months (control: 2640 ± 187, cDKO: 4089 ± 100, p<0.0001). Raw quantification data are included in Figure 8—source data 1. The number in the column indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. **p<0.01, ****p<0.0001. Scale bar: 100 μm.Figure 8—source data 1.Lrrk conditional double knockout (cDKO) and control mice.
+**Figure 8.:** (A–C) Representative images of Iba1+ microglia (red, marked by yellow arrowheads) and TH+ dopaminergic neurons (green) in the SNpc of Lrrk DKO mice and controls at 15 (A), 20 (B), and 24 (C) months of age. (D) Quantification of Iba1+ microglia shows significant increases in the number of Iba1+ microglia in the SNpc of Lrrk cDKO mice compared to control mice at the ages of 15 months (control: 1737 ± 83, cDKO: 2541 ± 193; F1,45 = 102.6, p<0.0001, p=0.0017, two-way ANOVA with Bonferroni’s post hoc multiple comparisons), 20 months (control: 2426 ± 68, cDKO: 3639 ± 127, p<0.0001), and 24 months (control: 2640 ± 187, cDKO: 4089 ± 100, p<0.0001). Raw quantification data are included in Figure 8—source data 1. The number in the column indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. **p<0.01, ****p<0.0001. Scale bar: 100 μm.
 
-## Impaired motor coordination of Lrrk cDKO mice
+### Impaired motor coordination of Lrrk cDKO mice
 
 To determine whether Lrrk cDKO mice show motor deficits, we performed behavioral analysis of Lrrk cDKO and littermate controls at the ages of 10 and 22 months using two versions of the elevated beam walk test with varying width of the beam (Figure 9). Lrrk cDKO mice at 10 months of age displayed significantly more hindlimb slips/errors (4.4 ± 0.5) and longer traversal time (7.3 ± 0.3) in the 10 mm beam walk test, relative to littermate controls, which exhibited fewer slips (2.0 ± 0.3, p=0.0005, Student’s t-test) and shorter traversal time (5.8 ± 0.4, p=0.0075; Figure 9A). In the 20 mm beam walk, which is less challenging than the narrower beam walk, both Lrrk cDKO (1.5 ± 0.2) and littermate controls (1.0 ± 0.2, p=0.0733) at 10 months of age performed well with few hindlimb slips and with no difference between Lrrk cDKO and control mice. In addition, the traversal time is similar between Lrrk cDKO (5.2 ± 0.3) and control littermates (5.1 ± 0.4, p=0.9796; Figure 9A). These results show that Lrrk cDKO mice at 10 months of age already exhibit deficits in motor coordination. However, in the pole test Lrrk cDKO and control mice showed similar turning time (control: 1.2 ± 0.1; cDKO: 1.5 ± 0.1; p=0.1219) and descending time (control: 4.7 ± 0.1; cDKO: 4.7 ± 0.2; p=0.8620; Figure 9B). The Lrrk cDKO and control mice at 10 months of age exhibit similar body weight (Figure 9C).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/92673/elife-92673-fig9-v1.jpg)
 
-**Figure 9.:** Lrrk conditional double knockout (cDKO) mice.(A) In the 10 mm beam walk test, compared to control mice, Lrrk cDKO mice at 10 months of age exhibit markedly more hindlimb slips (control: 2.0 ± 0.3; cDKO: 4.4 ± 0.5; p=0.0005, Student’s t-test) and longer traversal time (control: 5.8 ± 0.4; cDKO: 7.3 ± 0.3; p=0.0075). In the less challenging 20 mm beam walk test, there is no significant difference in the number of hindlimb slips (control: 1.0 ± 0.2; cDKO: 1.5 ± 0.2; p=0.0733) and traversal time (control: 5.1 ± 0.4; cDKO: 5.2 ± 0.3; p=0.9796) between Lrrk cDKO and control mice. (B) In the pole test, Lrrk cDKO and control mice at 10 months of age display similar turning time (control: 1.2 ± 0.1; cDKO: 1.5 ± 0.1; p=0.1219) and descending time (control: 4.7 ± 0.1; cDKO: 4.7 ± 0.2; p=0.8620). (C) Lrrk cDKO (31.1 ± 1.3) and control (32.0 ± 1.5; p=0.6410) mice at 10 months of age show similar body weight. (D) Lrrk cDKO mice and control mice at 22 months of age in the 10 mm beam walk test show similar hindlimb slips (control: 12.0 ± 3.0; cDKO: 13.8 ± 3.3; p=0.7022) and traversal time (control: 15.3 ± 2.0; cDKO: 16.2 ± 2.8; p=0.8139). In the 20 mm team walk test, there is also no difference in hindlimb slips (control: 4.8 ± 1.6; cDKO: 4.1 ± 1.0; p=0.7142) and traversal time (control: 8.7 ± 1.6; cDKO: 6.4 ± 0.7; p=0.2223) between Lrrk cDKO and control mice. (E) In the pole test, Lrrk cDKO mice at 22 months of age exhibit similar turning time (control: 1.7 ± 0.2; cDKO: 2.8 ± 0.7; p=0.1184) and descending time (control: 6.6 ± 0.7; cDKO: 5.4 ± 0.3; p=0.1413) compared to control mice. (F) Lrrk cDKO mice (34.8 ± 1.5) have similar body weight as control mice (39.6 ± 2.4; p=0.1194). The number in parentheses indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. **p<0.01, ***p<0.001. Raw behavior data are included in Figure 9—source data 1.Figure 9—source data 1.Lrrk conditional double knockout (cDKO) and control mice.
+**Figure 9.:** (A) In the 10 mm beam walk test, compared to control mice, Lrrk cDKO mice at 10 months of age exhibit markedly more hindlimb slips (control: 2.0 ± 0.3; cDKO: 4.4 ± 0.5; p=0.0005, Student’s t-test) and longer traversal time (control: 5.8 ± 0.4; cDKO: 7.3 ± 0.3; p=0.0075). In the less challenging 20 mm beam walk test, there is no significant difference in the number of hindlimb slips (control: 1.0 ± 0.2; cDKO: 1.5 ± 0.2; p=0.0733) and traversal time (control: 5.1 ± 0.4; cDKO: 5.2 ± 0.3; p=0.9796) between Lrrk cDKO and control mice. (B) In the pole test, Lrrk cDKO and control mice at 10 months of age display similar turning time (control: 1.2 ± 0.1; cDKO: 1.5 ± 0.1; p=0.1219) and descending time (control: 4.7 ± 0.1; cDKO: 4.7 ± 0.2; p=0.8620). (C) Lrrk cDKO (31.1 ± 1.3) and control (32.0 ± 1.5; p=0.6410) mice at 10 months of age show similar body weight. (D) Lrrk cDKO mice and control mice at 22 months of age in the 10 mm beam walk test show similar hindlimb slips (control: 12.0 ± 3.0; cDKO: 13.8 ± 3.3; p=0.7022) and traversal time (control: 15.3 ± 2.0; cDKO: 16.2 ± 2.8; p=0.8139). In the 20 mm team walk test, there is also no difference in hindlimb slips (control: 4.8 ± 1.6; cDKO: 4.1 ± 1.0; p=0.7142) and traversal time (control: 8.7 ± 1.6; cDKO: 6.4 ± 0.7; p=0.2223) between Lrrk cDKO and control mice. (E) In the pole test, Lrrk cDKO mice at 22 months of age exhibit similar turning time (control: 1.7 ± 0.2; cDKO: 2.8 ± 0.7; p=0.1184) and descending time (control: 6.6 ± 0.7; cDKO: 5.4 ± 0.3; p=0.1413) compared to control mice. (F) Lrrk cDKO mice (34.8 ± 1.5) have similar body weight as control mice (39.6 ± 2.4; p=0.1194). The number in parentheses indicates the number of mice used in the study. Red-filled and open circles represent data obtained from individual male and female mice, respectively. All data are expressed as mean ± SEM. **p<0.01, ***p<0.001. Raw behavior data are included in Figure 9—source data 1.
 
 We then performed the beam walk test in another group of naïve Lrrk cDKO and control mice at 22 months of age (Figure 9D). The aged Lrrk cDKO and control mice performed similarly in hindlimb errors (p=0.7022) and traversal time (p=0.8139) in 10 mm beam walk test. The hindlimb slips (control: 12.0 ± 3.0; cDKO: 13.8 ± 3.3) and traversal time (control: 15.3 ± 2.0; cDKO: 16.2 ± 2.8) of both genotypic groups were much higher compared to the respective groups of younger mice (p<0.0001; Figure 9D). Moreover, higher percentage of the aged mice (2–3 out of 8–9 per genotypic group) failed the test compared to the younger mice (0–2 mice out of 18–20 per genotypic group, Figure 9A and D). These results show that aged mice of both genotypes perform poorly in the challenging narrow beam walk test, suggesting that it is not optimal to reveal subtle differences in motor coordination between the genotypic groups at this age. The performance of Lrrk cDKO and control mice at 22 months of age in the 20 mm beam walk test was also not significantly different with similar hindlimb errors (p=0.7142) and traversal time (p=0.2223; Figure 9D). In the pole test, Lrrk cDKO mice and littermate controls also displayed similar turning time (p=0.1184) and descending time to their home cage (p=0.1413; Figure 9E) as well as body weight (Figure 9F).
 
@@ -125,15 +155,368 @@ Genetically, it is well known that missense mutations may gain a toxic function 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Lrrk1</td>
+      <td>Ensembl Genome Database: ENSMUSG00000015133</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Lrrk2</td>
+      <td>Ensembl Genome Database: ENSMUSG00000036273</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6129SF1/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:101043</td>
+      <td>Strain #101043</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Floxed Lrrk1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Maintained in B6/129 hybrid background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Floxed Lrrk2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Maintained in B6/129 hybrid background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.SJL-Slc6a3tm1.1(cre)bkmn/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:006660</td>
+      <td>Strain # 006660;common name: DATIREScre</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.Cg-Tg(ACTFLPe)9205Dym/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:005703</td>
+      <td>Strain # 005703;common name: ACTB:FLPe B6J</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.C-Tg(CMV-cre)1Cgn/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:006054</td>
+      <td>Strain # 006054;common name: CMV-Cre</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm6(CAG-ZsGreem1)Hze/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:007906</td>
+      <td>Strain # 007906;common name: Ai6RCL-ZsGreen</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MKV6.5 embryonic stem cells</td>
+      <td>A gift from Dr. Rudy Jaenisch’s lab at MIT</td>
+      <td></td>
+      <td>B6129SF1/J</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pLM8</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details provided in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pLRRK2#8</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details provided in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LRRK1 (rabbit polyclonal)</td>
+      <td>Alomone Lab</td>
+      <td>Cat# ANR-101; RRID:AB_2756700</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LRRK2 (rabbit monoclonal)</td>
+      <td>abcam</td>
+      <td>Cat# Ab133474; RRID:AB_2713963</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-Vinculin (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# 05-386; RRID:AB_309711</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (rabbit polyclonal)</td>
+      <td>abcam</td>
+      <td>Cat# ab290; RRID:AB_303395</td>
+      <td>IF: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TH (mouse monoclonal)</td>
+      <td>SantaCruz</td>
+      <td>Cat# Sc-25269; RRID:AB_628422</td>
+      <td>IF: 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TH (rabbit polyclonal)</td>
+      <td>abcam</td>
+      <td>Cat# Ab112; RRID:AB_297840</td>
+      <td>IHC: 1:750</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NeuN (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 12943S; RRID:AB_2630395</td>
+      <td>IF: 1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved caspase-3 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9661; RRID:AB_2341188</td>
+      <td>IF: 1:150</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Iba1 (rabbit polyclonal)</td>
+      <td>Wako</td>
+      <td>Cat# 019-19741; RRID:AB_839504</td>
+      <td>IF: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit (goat IgG, IRdye800 coupled)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926-32211; RRID:AB_2651127</td>
+      <td>WB: 1:20,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse (goat IgG, IRdye680 coupled)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926-68020; RRID:AB_2651128</td>
+      <td>WB: 1:20,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse (goat polyclonal, Alexa Fluor 488 conjugated)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11001; RRID:AB_2534069</td>
+      <td>IF: 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit (goat polyclonal, Alexa Fluor 555 conjugated)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-32732; RRID:AB_2633281</td>
+      <td>IF: 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit (goat polyclonal, Alexa Fluor 488 conjugated)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11034; RRID:AB_2576217</td>
+      <td>IF: 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse (goat polyclonal, Alexa Fluor 555 conjugated)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21424; RRID:AB_141780</td>
+      <td>IF: 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit (goat IgG, Biotinylated)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BA-1000; RRID:AB_2313606</td>
+      <td>IHC: 1:250</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEM-T (vector)</td>
+      <td>Promega</td>
+      <td>Cat# A1360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PgkneoF2L2DTA (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_13445</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-flpE-puro (Plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_20733</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBluescript II KS (+) (vector)</td>
+      <td>Agilent</td>
+      <td>Part number: 212207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LFNT-tk/pBS (Plasmid)</td>
+      <td>A gift from Dr. Susumu Tonegawa’s lab at MIT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>See Appendix 1—table 1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Poly(A)Purist MAG Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# AM1922</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Prime-It II random labeling Kit</td>
+      <td>Agilent</td>
+      <td>Cat# 300385</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DAB peroxidase substrate kit</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# SK-4100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRI reagent</td>
+      <td>MilliporeSigma</td>
+      <td>T9424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Superscript III reverse transcriptase</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 18080093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease inhibitor cocktail</td>
+      <td>Sigma</td>
+      <td>Cat# P8340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphatase inhibitor cocktail</td>
+      <td>Sigma</td>
+      <td>Cat# P0044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectastain elite ABC reagent</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# SK-6100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad</td>
+      <td>9.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellSens Entry</td>
+      <td>Olympus</td>
+      <td>1.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image-Studio</td>
+      <td>Odyssey</td>
+      <td>5.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ Fiji</td>
+      <td>NIH</td>
+      <td>1.50i</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amersham Hybond-nylon membrane</td>
+      <td>GE Healthcare</td>
+      <td>RPN303N</td>
+      <td>Used for RNA transfer in northern (see ‘Materials and methods’ for the details)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Autoradiography film, Hyperfilm</td>
+      <td>Amersham</td>
+      <td>E3018</td>
+      <td>Used for detection of radioactive signals in northern (see ‘Materials and methods for the details)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal use was approved by the IACUC committees of Harvard Medical School and Brigham and Women’s Hospital (#2016N000120) and conformed to the USDA Animal Welfare Act, PHS Policy on Humane Care and Use of Laboratory Animals, the ‘ILAR Guide for the Care and Use of Laboratory Animals’, and other applicable laws and regulations. Mice were housed in constant humidity- and temperature-controlled rooms and maintained on a 12 hr light/dark cycle and were given standard rodent chow and water. Mice of both sexes at multiple ages, from 2 months to 25 months, were used. Lrrk1F/F and the resulting germline deleted Lrrk1Δ/Δ mice, and Lrrk2F/F and the resulting germline deleted Lrrk2Δ/Δ mice were generated and thoroughly validated at the genomic DNA, mRNA, and protein levels. Slc6a3-Cre (The Jackson Laboratory, IMSR_JAX:006660), ACTB-FLPe (IMSR_JAX:005703), CMV-Cre (IMSR_JAX:006054), and Rosa26CAG-LSL-ZsGreen1 (IMSR_JAX:007906) mice used in the current study were previously characterized and reported (Bäckman et al., 2006; Rodríguez et al., 2000; Schwenk et al., 1995; Madisen et al., 2010). Lrrk1/Lrrk2 cDKO mice (Lrrk1F/F; Lrrk2F/F; Slc6a3Cre/+) and littermate controls (Lrrk1F/F; Lrrk2F/F) were obtained from multiple breeding cages of Lrrk1F/F; Lrrk2F/F and cDKO mice. All mice were maintained on the C57BL6 and 129 hybrid genetic background (F1: IMSR_JAX:101043). All phenotypic analyses were performed in a genotype-blind manner, as previously described (Kang et al., 2021).
 
-## Generation of targeted and floxed Lrrk1 and Lrrk2 alleles
+### Generation of targeted and floxed Lrrk1 and Lrrk2 alleles
 
 The generation and validation of the Lrrk1 and Lrrk2 targeting vectors, the targeted, floxed, and deleted Lrrk1 and Lrrk2 alleles by Southern, northern, RT-PCR, and the sequences of the floxed Lrrk1 and Lrrk2 alleles are included in Figure 1—figure supplements 1–9, Supplementary files 1 and 2.
 
-## Lrrk1
+### Lrrk1
 
 To generate the Lrrk1 targeting vector, we first PCR amplified the left middle homologous region (2079 bp) containing partial intron 26, exon 27, and partial intron 27 of Lrrk1 from mouse BAC DNA (clone RP23-213J23, BACPAC Resources Center) using primers P3 and P4. The PCR fragment was subcloned into the pGEM-T vector (A1360, Promega) to generate pLM1 (for details, see ). The right middle homologous region (3403) containing Lrrk1 genomic region from partial intron 27 to partial intron 29 was amplified by PCR using primers P5 and P6, and then subcloned into the pGEM-T vector (pLM2). The left middle homologous region containing pGEM-T plasmid was then digested with NotI and KpnI (endogenous KpnI site in the intron 27) and subcloned into the NotI and KpnI sites of the right middle homologous region containing pGEM-T plasmid (pLM3). Then, the middle homologous region (5.5 kb), from partial intron 26 to partial intron 29, was released by NotI and SacII digestions and was blunted by Klenow, and then subcloned into the SmaI site of PgkneoF2L2DTA vector (#13445, Addgene) to generate the middle homologous region-PgkneoF2L2DTA plasmid (pLM4).
 
@@ -143,7 +526,7 @@ The left homologous region in the PgkneoF2L2DAT vector (pLM5) was digested with 
 
 The Lrrk1 targeting vector was linearized by XhoI digestion, and then electroporated into MKV6.5 ES cells (a gift from R. Jaenisch), which were derived from B6/129 F1 mice (The Jackson Laboratory, IMSR_JAX:101043). G418 was applied to the culture at 150 μg/ml 24 hr later, and after 6 d of G418 selection, the surviving ES clones (480) were picked and screened by Southern analysis using HindIII digestion of genomic DNA followed by hybridization with the 5' external and 3' external probes to confirm proper recombination events in the 5' and 3' homologous regions, respectively. Twenty-five ES cell clones were confirmed to carry the proper homologous recombination events at the 5' homologous region, giving rise to the 17.0 kb and the 4.8 kb bands, which represent the wild-type and the targeted allele, respectively (Figure 1D), and the 3' homologous region, giving rise to the 17.0 kb and the 14.1 kb bands, which represent the wild-type and the targeted allele, respectively. We then expanded the selected four ES cell clones (3A11, 3D8, 3H1, and 3H6) and further verified by Southern analysis using the 5' and 3' external, and neo probes. Two ES cell clones (3D8 and 3H6) were transfected with pCAGGS-flpE-puro (#20733, Addgene) to delete the Pgk-neo cassette by FLP recombinase. Three resulting ES cell clones (3D8C5, 3D8E5, and 3H6G7) were confirmed by Southern analysis using the 5' and 3' external probes and the neo probe to confirm the floxed Lrrk1 allele by the deletion of the Pgk-neo cassette.
 
-## Lrrk2
+### Lrrk2
 
 To generate the Lrrk2 targeting vector, the left homologous region (2579 bp) containing the Lrrk2 promoter region was PCR amplified from mouse BAC DNA (clone RP23-526A2, BACPAC Resources Center) using primers P9 and P10 and subcloned into the pGEM-T vector to generate pLRRK2#1 (for details, see ). The BamHI-loxP-NheI-SpeI fragment (56 bp), which was generated by annealing two complementary oligos, P39 and P40, was introduced to the BamHI and SpeI sites of pLRRK2#1 to generate pLRRK2#2. The middle homologous region, containing genomic sequences from the promoter region to partial intron 2, was PCR amplified from mouse BAC DNA (clone RP23-526A2) using primers P11 and P12, digested with XbaI and NotI, and subcloned into the XbaI and NotI sites of the pGEM-T vector to generate pLRRK2#3, which was digested with XbaI and NotI, and subcloned into the XbaI and NotI sites of pLRRK2#2 to generate pLRRK2#4.
 
@@ -153,17 +536,17 @@ The Lrrk2 targeting vector was linearized by AhdI digestion and then electropora
 
 Three (3D8C5, 3A11, 3H6) and one (N24) ES clones for Lrrk1 and Lrrk2, respectively, were microinjected into C57BL/6 mouse blastocysts to generate chimera mice, which were bred with B6/129 F1 mice to produce heterozygous floxed Lrrk1 and targeted Lrrk2 mice. Floxed Lrrk1 mice were confirmed by Southern analysis using the 5' and 3' external probes (Figure 1D). Targeted Lrrk2 mice were confirmed by Southern analysis (data shown in Figure 1—figure supplement 4; NheI digestion followed by hybridization with the 5' external probe and SphI digestion followed by hybridization with the 3' external probe). Targeted Lrrk2 mice were then bred with Actin-FLP deleter mice (IMSR_JAX:005703) (Rodríguez et al., 2000) to generate floxed Lrrk2 mice, which were confirmed by Southern analysis using the 5' and 3' external probes following NheI digestion (Figure 1F). Heterozygous Lrrk1F/+ and Lrrk2F/+ mice were crossed with each other to obtain homozygous single-floxed mice (Lrrk1F/F and Lrrk2F/F) and double-floxed mice (Lrrk1F/F; Lrrk2F/F).
 
-## Generation of deleted Lrrk1/Lrrk2 alleles and DA neuron-specific cDKO mice
+### Generation of deleted Lrrk1/Lrrk2 alleles and DA neuron-specific cDKO mice
 
 In order to ensure that Cre-mediated deletion of the floxed Lrrk1 and Lrrk2 alleles results in null alleles, we crossed Lrrk1F/F and Lrrk2F/F mice with germline deleter, CMV-Cre mice (B6.C-Tg(CMV-Cre)1Cgn/J; IMSR_JAX:006054) (Schwenk et al., 1995), to generate Lrrk1 deleted (Δ/Δ) mice (by removing exons 27–29) and Lrrk2 deleted (Δ/Δ) mice (by removing the promoter region and exons 1–2) for further molecular characterization. To generate DA neuron-specific Lrrk1/Lrrk2 cDKO mice, we used Slc6a3-Cre KI mice (B6.SJL-Slc6a3tm1.1(cre)Bkmn/J; IMSR_JAX:006660), which express Cre recombinase under the control of the endogenous Slc6a3 promoter (Bäckman et al., 2006). We crossed double-floxed mice with Slc6a3Cre/+ mice to generate Lrrk cDKO mice (Lrrk1F/F; Lrrk2F/F; Slc6a3Cre/+). Lrrk cDKO and littermate control mice used in the phenotypic analysis were obtained by crossing Lrrk1F/F; Lrrk2F/F; Slc6a3Cre/+ with Lrrk1F/F; Lrrk2F/F mice. We only used cDKO and control mice that carry all floxed Lrrk1 and Lrrk2 alleles (Lrrk1F/F; Lrrk2F/F) for phenotypic analysis.
 
-## Southern analysis
+### Southern analysis
 
 For the identification and validation of the targeted and floxed Lrrk1 alleles, we used the 5' external, 3' external, and neo probes. Genomic DNA from ES cells or mouse tails was digested with HindIII. The 5' external probe (377 bp), which is 839 bp upstream of the 5' homologous region, was PCR amplified from mouse BAC DNA (clone RP23-213J23) using primers P15 and P16. The 3' external probe (305 bp), which is 2736 bp downstream of the 3' homologous region, was PCR amplified from mouse BAC DNA (clone RP23-213J23) using primers P17 and P18. The neo probe (363 bp) was PCR amplified from pSoriano plasmid using primers P23 and P24. Following HindIII digestion, the presence of the 17.0 kb product using either the 5' or 3' external probe represents the wild-type allele, whereas the 4.8 kb (the 5' external probe) and the 12.2 kb (the 3' external probe) products represent the floxed Lrrk1 allele. Genomic DNA digested by HindIII and hybridized with the neo probe further confirmed the wild-type and floxed alleles (no band) and the targeted Lrrk1 allele (14.1 kb).
 
 For the identification and validation of the targeted and floxed Lrrk2 alleles, we used the 5' and 3' external probes as well as the neo probe. Genomic DNA from ES cells or mouse tails was digested with NheI or SphI followed by hybridization with the 5' or 3' external probe or the neo probe. The 5' external probe (753 bp), which is 84 bp upstream of the 5' homologous region, was PCR amplified from mouse BAC DNA (clone RP23-526A2) using primers P19 and P20. The 3' external probe (622 bp), which is 38 bp downstream of the 3' homologous region, was PCR amplified from mouse BAC DNA (clone RP23-526A2) using primers P21 and P22. Following NheI digestion, the presence of the 11.5 kb product using either the 5' or 3' external probe represents the wild-type allele, whereas the 3.6 kb (the 5' external probe) and the 5.2 kb (the 3' external probe) products represent the floxed Lrrk2 allele.
 
-## PCR genotyping
+### PCR genotyping
 
 Genomic PCR was performed to determine the presence of the deleted, the floxed, and/or the wild-type alleles. For Lrrk1, the following primers were used: P25 (5'-ATTGGTCTTTGAAGAGACAGCATCTGG, forward primer, 392 nt downstream of exon 26), P26 (5'-TTTCCCTGAGGTGGAGAAGTGACTGG, reverse primer, 567 nt downstream of exon 26), and P27 (5'-TCACGTCGTCTAAGCCTCCT, reverse primer, 1218 nt downstream of exon 29). The PCR products from P25 and P26 are 266 bp and 405 bp, which represent the wild-type and the floxed Lrrk1 alleles, respectively, whereas the PCR product from P25 and P27 is 583 bp, which represents the deleted Lrrk1 allele.
 
@@ -171,7 +554,7 @@ For Lrrk2, the following primers were used: P28 (5'-CTTCCTCAGAAGTTAGGTAAACATTGAG
 
 For Slc6a3-IRES-Cre, the following primers were used: JKM1823 (5'-TGGCTGTTGGTGTAAAGTGG, forward primer at exon 16 and 3'-UTR), JKM1824 (5'-GGACAGGGACATGGTTGACT, reverse primer at 3'-UTR), and JKM1825 (5'-CCAAAAGACGGCAATATGGT, reverse primer at IRES sequence). The PCR product from JKM1823 and JKM1824 is 264 bp, which represents the wild-type allele, whereas the PCR product from JKM1823 and JKM1825 is 152 bp, which represents the Slc6a3-IRES-Cre KI allele.
 
-## Northern analysis
+### Northern analysis
 
 Total RNA was isolated from brains, kidneys, or lungs using TRI reagent (T9424, MilliporeSigma) according to the manufacturer’s instruction. For the Lrrk1 northern analysis, polyA+ RNA was enriched from ~500 μg total RNA using the Poly(A)Purist MAG Kit (AM1922, Thermo Fisher) according to the manufacturer’s instruction. For the Lrrk2, ~10 μg of total RNA was used for northern analysis. RNA was separated in formaldehyde agarose gel and transferred into Amersham Hybond-nylon membrane (RPN303N, GE Healthcare). Probes were synthesized using Prime-It II random labeling kit (#300385, Agilent) and then used for membrane hybridization at 55°C overnight.
 
@@ -181,15 +564,15 @@ The cDNA probe specific for Lrrk2 exons 1–5 (437 bp) was PCR amplified using p
 
 Hybridization was performed using α-32P-dCTP-labeled probes specific to each gene. Specific signals were detected using autoradiography with Hyperfilm (E3018, Amersham).
 
-## RT-PCR
+### RT-PCR
 
 Total RNA was isolated from brains, kidneys, or lungs using TRI reagent (T9424, MilliporeSigma) according to the manufacturer’s instruction. Approximately 1 μg of RNA was reverse-transcribed using Superscript III (18080093, Thermo Fisher Scientific) according to the manufacturer’s instructions. For RT-PCR analysis of Lrrk1 transcripts in mice carrying the homozygous floxed or deleted alleles, we used primers P53 and P54 for exons 4–8 (714 bp), P57 and P58 for exons 11–17 (818 bp), P63 and P64 for exons 20–25 (922 bp), or P41 and P42 for exons 25–31 to confirm normal splicing of Lrrk1 mRNA in Lrrk1F/F mice and truncated Lrrk1 transcripts lacking exons 27–29 in Δ/Δ mice (for details, see Figure 1—figure supplement 7). For RT-PCR analysis of Lrrk2 transcripts, we used primers P35 and P36 in exons 1–5 to confirm normal splicing of Lrrk2 mRNA (437 bp) in Lrrk2F/F mice and the absence of RT-PCR products in Lrrk2Δ/Δ mice (Figure 1—figure supplement 9). The identity of the PCR products was conﬁrmed by sequencing.
 
-## Western analysis
+### Western analysis
 
 Fresh tissues were collected and homogenized in an ice-cold stringent RIPA buffer (50 mM Tris–Cl [pH 7.6], 150 mM NaCl, 0.5 mM EDTA, 1% NP40, 0.5% sodium deoxycholate, 0.1% SDS, 1 mM PMSF supplement with protease inhibitor cocktail [P8340, Sigma], and phosphatase inhibitor cocktail [P0044, Sigma]), followed by sonication. Homogenates were centrifuged at 14,000 × g for 20 min at 4°C to separate supernatants (RIPA buffer-soluble fraction). An equal amount (10–40 μg per lane) of total proteins from each preparation were loaded and separated on NuPAGE gels (Invitrogen), then transferred to nitrocellulose membranes. The membranes were blocked in Intercept (TBS) Blocking Buffer (927-60001, LI-COR) for 1 hr at room temperature and incubated at 4°C overnight with specific primary antibodies. Primary antibodies used were rabbit anti-LRRK1 (ANR-101, Alomone Lab, RRID:AB_2756700), rabbit anti-LRRK2 (ab133474, abcam, RRID:AB_2713963), and mouse anti-α-Vinculin (05-386, Millipore, RRID:AB_309711). Membranes were then incubated with dye-coupled secondary antibodies, goat anti-mouse IRdye680 (#925-68070, LI-COR, RRID:AB_2651128), or goat anti-rabbit IRdye800 (#925-32211, LI-COR, RRID:AB_2651127). Signals were quantified using the Odyssey Infrared Imaging System (LI-COR).
 
-## Histological analysis
+### Histological analysis
 
 Mice were anesthetized with ketamine (100 mg/kg) + xylazine (10 mg/kg) + acepromazine (3 mg/kg), and transcardially perfused with phosphate-buffered saline solution (PBS, pH 7.4) containing 0.25 g/l heparin (H3149, Sigma) and 5 g/l procaine (P9879, Sigma). Brains were post-fixed in 4% formaldehyde in PBS (pH 7.4) (15710, Electron Microscopy Sciences) at 4°C overnight and then processed for paraffin embedding following standard procedures. For frozen sections, post-fixed brains were immersed in a sucrose series solution (15 and 30% sucrose in PBS) at 4°C overnight for cryoprotection, and then brains were embedded in an OCT compound (4583, Sakura). Serial coronal sections (16 µm) of paraffinized brains or frozen brains were obtained using Leica RM2235 or Leica CM1860, respectively. Coronal sections containing the SNpc or LC were selected for immunohistochemical analysis.
 
@@ -201,36 +584,36 @@ For immunofluorescence staining of cryopreserved sections, coronal brain section
 
 The number of GFP+ and GFP+/TH+ cells in the SNpc of Slc6a3Cre/+; Rosa26CAG-LSL-ZsGreen1/+ reporter mice was quantified using three comparable coronal sections (16 µm in thickness, spaced 320 μm apart) per brain (n = 3 brains, one hemisphere). The percentage of GFP+ DA neurons in the SNpc was obtained by dividing the sum of GPF+/TH+ neurons by the sum of total TH+ neurons quantified.
 
-## Quantification of DA neurons in the SNpc
+### Quantification of DA neurons in the SNpc
 
 Quantification of TH+ DA neurons in the SNpc or LC was performed as previously described (Giaime et al., 2017; Huang et al., 2022; Kang et al., 2021; Yamaguchi and Shen, 2013). Briefly, TH+ neurons in the SNpc, which were marked based on morphological features as previously described (Nelson et al., 1996), were quantified in every 10th serial coronal section (16 µm in thickness) throughout the SNpc (a total of 6–9 sections, spaced 160 µm apart). Total number of TH+ cells in the SNpc was calculated as follows: [total number of TH+ DA neurons quantified in all 6–9 sections] × 10 (every 10th section sampled) × 2 (both hemispheres). Total number of TH+ noradrenergic neurons in the LC (a total of 6–9 sections, spaced 80 µm apart) was calculated as follows: [total number of TH+ noradrenergic neurons quantified in all 6–9 sections] × 5 (every 5th section sampled) × 2 (both hemispheres).
 
 DA neuron quantification was also performed independently by another investigator, also in a genotype-blind manner, using stereological quantification of 25% of the SNpc area. The fractionator with 100 μm × 100 μm was set up in the SNpc, and TH+ DA neurons were counted using the optical dissector method with 50 μm × 50 μm sample box (25% of the total area). Total number of TH+ cells in the SNpc was calculated as follows: [total number of TH+ DA neurons quantified in sample boxes of all 6–9 sections] × 10 (every 10th section sampled) × 4 (1/4 area sampled: 50 × 50/100 × 100) × 2 (both hemispheres).
 
-## Quantification of NeuN+ neurons, apoptotic cells, and Iba1+ microglia in the SNpc
+### Quantification of NeuN+ neurons, apoptotic cells, and Iba1+ microglia in the SNpc
 
 NeuN+, active Caspase-3+, or Iba1+ cells in the SNpc, which was marked by TH immunoreactivity, were quantified using serial coronal sections (16 μm in thickness, every 10th section, a total of 6–9 sections per brain). Compared to DAB immunostaining followed by counting under the stereomicroscope, which captures TH-positive DA neurons in a single-cell layer of the brain section, immunofluorescent staining picks up more cells (e.g., TH+ or NeuN+) in multiple layers of the brain section under the confocal microscope by the maximal intensity projection mode. Thus, more TH-positive DA neurons in the SNpc were captured and quantified under confocal microscopy compared to DAB staining. The total number of NeuN+ cells in the SNpc was calculated by multiplying the [total number of NeuN+ cells in all sections counted] × 10 (every 10th section sampled) × 2 (both hemispheres). The total number of active Caspase-3+ or Iba1+ cells in the SNpc, which was marked by TH immunoreactivity, was calculated as follows: [total number of active Caspase-3+ or Iba1+ cells in all sections counted from one hemisphere] × 10 (every 10thth section sampled).
 
-## Quantification of TH+ DA terminals in the striatum
+### Quantification of TH+ DA terminals in the striatum
 
 For quantification of TH immunoreactivity in the striatum, we performed immunostaining using every 10th serial coronal sections (16 µm in thickness) throughout the entire striatum (a total of 12–15 sections, spaced 160 µm apart). The images of TH immunoreactivity in the striatum were captured under 2× objective lens (Olympus BX40, 8-bit RGB camera) using identical exposure time, sensitivity, brightness, contrast, and gamma (CellSens Entry Software) and then analyzed using the Fiji version of ImageJ, and the optical density was determined as previously described (Huang et al., 2022; Ventruto et al., 1975; Schindelin et al., 2012). The mean value of TH immunoreactivity in the striatum of control mice of each age group was set as 100%.
 
-## Quantitative EM analysis
+### Quantitative EM analysis
 
 The collection and quantification of the EM images were performed as described previously (Giaime et al., 2017; Huang et al., 2022). Mice were perfused with PBS containing 0.25 g/l heparin and 5 g/l procaine followed by a fixative solution containing 2.5% paraformaldehyde and 2.5% glutaraldehyde in 0.1 M sodium cacodylate buffer (pH 7.4) (#1549, Electron Microscopy Sciences). Brains were dissected and post-fixed overnight in a fixative solution at 4°C. The dissected tissues were trimmed to 1–2 mm3 cubes followed by osmication and uranyl acetate staining, dehydration in graded alcohol, and embedded in TABB 812 Resin (Marivac Ltd) at the Harvard Medical School EM facility. 0.5 μm sections were stained with toluidine blue and viewed under the light stereomicroscope (Nikon Eclips E600) to find the SNpc area for EM viewing. Then adjacent sections were cut with 80 nm in thickness with the Leica Ultracut S microtome, picked up on formvar-carbon-coated slot copper grids, stained with 0.2% lead citrate, and viewed and imaged under the JEOL 1200× electron microscope. A minimum of 10 micrographs containing the entire cell body in the SNpc area were analyzed for each brain. The image was analyzed using the Fiji version of ImageJ. The number of electron-dense autophagic and lysosomal vacuoles (>0.5 μm in diameter) in individual neuronal profiles was quantified. We previously calculated the diameter of electron-dense autophagic/lysosomal vacuoles by measuring the longest side manually (Giaime et al., 2017; Huang et al., 2022). In the current study, we used Feret’s diameter (Walton, 1948) to accurately measure the longest distance between any of the two points in the electron-dense autophagic/lysosomal vacuoles, resulting in a higher number of electron-dense vacuoles quantified. The number and the area of electron-dense vacuoles (>0.5 μm in diameter) in individual neuronal profiles were quantified, and the average number or area of vacuoles per mouse was calculated. Experiments were done in a genotype-blind manner (after scarifying mice, the brain samples were coded and sent to the Harvard Medical School EM Core, where the images were captured, and the vacuoles were quantified by another independent experimenter).
 
-## Behavioral analysis
+### Behavioral analysis
 
 Naive Lrrk cDKO mice and littermate controls at 10 and 22 months of age were used. Mice were acclimated in the behavior facility for a minimum of 7 d and were then individually handled daily for five consecutive days before testing. Mice were coded, so the experimenter was unaware of their genotypes until the data analysis was complete. In the beam walk test, a Plexiglas beam of 100 cm in length (Plastic Zone), 20 mm or 10 mm in width, was raised 60 cm above a table, and safety bedding was placed under the beam to avoid any harm in case of falls. Mice were placed onto the starting point of the beam in bright light, and the time (in seconds) to reach their home cage on the other darker side of the beam (~80 cm in distance) as well as the hindpaw slips (number of hindlimb errors) was recorded. Mice were trained three trials per day for two consecutive days to traverse the 20 mm beam (without the wire mesh) to their home cage. On the test day, mice were trained further with two additional trials on the 20 mm beam (without the wire mesh). Mice were then tested in two successive trials on the 20 mm beam (with the wire mesh) followed by two consecutive test trials on the 10 mm beam (with the wire mesh). All test trials were videotaped, and the travel time and the number of hindlimb errors were recorded. Between-trials mice were placed in the home cage for 2 min to rest. Mice that fell off the beam during both trials or stalled on the beam for more than 120 s during the test were excluded.
 
 In the pole test, mice were placed on the top of the pole (60 cm in height, 10 mm in diameter) with their head facing upward, and the base of the pole was placed in the home cage. Mice were trained three trials per day for 2 d to traverse the pole to the cage floor and were further trained two trials before testing on the test day. Mice were then tested for two trials, and the time to turn around (turning time) and the time to descend the pole (descending time) were recorded. Between trials, mice were placed in the home cage for 2 min to rest. Mice that stalled on the top of the pole for more than 120 s were excluded.
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
 All experiments were performed in a genotype-blind manner with the exception of molecular analysis (Southern, northern, RT-PCR, and western). All statistical analyses were performed using Prism 9 (GraphPad Software) or Excel (Microsoft). All data are presented as the means ± SEM. The exact sample size of each experiment is indicated in the figure or the legend. The slight difference in sample size among various histological analyses (e.g., at 24M, 11 control and 8 cDKO brains analyzed for TH+ cells but 9 control and 8 cDKO analyzed for NeuN+, Caspase-3+, Iba1+ cells in the SNpc) is due to the paraffin blocks used for quantification (each paraffin block contains seven brains of mixed genotypes; for details, see source data files) or specific brain sections being damaged, thus, excluded in the analysis.
 
 Statistical analyses were conducted using an unpaired two-tailed Student’s t-test for the comparison of a given variable in two genotypes or two-way ANOVA followed by Bonferroni’s post hoc comparisons for the comparison of more than two conditions. Statistical outliers were identified and excluded using the ROUT method with 1% the maximum desired false discovery rate developed by Prism, and the only statistical outliers of the current study were identified in the behavioral analysis and are marked in Figure 9—source data 1. All statistical analyses were performed on data from ≥4 mouse brains per genotype per age group, and experiments were performed and repeated on different days, often by independent investigators. Statistical significance is indicated as *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, and values not significantly different are often not noted.
 
-## Materials availability
+### Materials availability
 
 Requests for materials generated in the current study such as the floxed Lrrk1 and Lrrk2 mice should be directed to and will be fulfilled by Dr. Jie Shen (jshen@bwh.harvard.edu).

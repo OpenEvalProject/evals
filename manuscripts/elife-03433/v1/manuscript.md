@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.03433.001 In a previous Research article ( Froelich et al., 2014 ), we suggested an MCM helicase activation mechanism, but were limited in discussing the ATPase domain because it was absent from the crystal structure. Here we present the crystal structure of a nearly full-length MCM hexamer that is helicase-active and thus has all features essential for unwinding DNA. The structure is a chimera of Sulfolobus solfataricus N-terminal domain and Pyrococcus furiosus ATPase domain. We discuss three major findings: 1) a novel conformation for the A-subdomain that could play a role in MCM regulation; 2) interaction of a universally conserved glutamine in the N-terminal Allosteric Communication Loop with the AAA+ domain helix-2-insert (h2i); and 3) a recessed binding pocket for the MCM ssDNA-binding motif influenced by the h2i. We suggest that during helicase activation, the h2i clamps down on the leading strand to facilitate strand retention and regulate ATP hydrolysis. DOI: http://dx.doi.org/10.7554/eLife.03433.001
+In a previous Research article (Froelich et al., 2014), we suggested an MCM helicase activation mechanism, but were limited in discussing the ATPase domain because it was absent from the crystal structure. Here we present the crystal structure of a nearly full-length MCM hexamer that is helicase-active and thus has all features essential for unwinding DNA. The structure is a chimera of Sulfolobus solfataricus N-terminal domain and Pyrococcus furiosus ATPase domain. We discuss three major findings: 1) a novel conformation for the A-subdomain that could play a role in MCM regulation; 2) interaction of a universally conserved glutamine in the N-terminal Allosteric Communication Loop with the AAA+ domain helix-2-insert (h2i); and 3) a recessed binding pocket for the MCM ssDNA-binding motif influenced by the h2i. We suggest that during helicase activation, the h2i clamps down on the leading strand to facilitate strand retention and regulate ATP hydrolysis.
 
 ## Introduction
 
@@ -25,45 +25,188 @@ Our previous crystal structure of the Pyrococcus furiosus MCM N-terminal domain 
 
 ## Results and discussion
 
-We identified a chimera of the N-terminal domain of
+We identified a chimera of the N-terminal domain of Sulfolobus solfataricus (Sso) and the AAA+ domain of PfMCM, Sso-PfMCM (Figure 1A) with a robust DNA unwinding activity (Figure 1B; Figure 1—figure supplement 1). We present an analysis of the crystal structure of the Sso-PfMCM hexamer bound to Mg/ADP (Table 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03433/elife-03433-fig1-v1.jpg)
 
-**Figure 1.:** Sso-PfMCM.(A) Sequence alignment showing the construction of the Sso-PfMCM chimera. The N-terminal domain of SsoMCM (residues 1–269, top sequence) was fused to the AAA+ domain of PfMCM (starting at residue 257, bottom sequence) to yield the chimera (middle sequence). (B) The Sso-PfMCM chimera shows enhanced unwinding activity when compared to wild-type SsoMCM. Helicase reactions were performed at 69°C for 60 min with a Y-shaped DNA substrate with a 5ʹ-fluorescein label on one strand. Unwinding reactions were in the presence of 4 mM ATP and contained 0, 50, 100, 150, 200, 300, 400, or 500 nM protein. Views of the Sso-PfMCM hexamer crystal structure parallel (C) and perpendicular (D) to the central channel with each subunit uniquely colored. The magnesium ions are magenta spheres, and ADP molecules are shown as cyan stick. (C) View down the crystallographic threefold axis with the unique and symmetry-derived chains labeled. The ATPase domains are projected out of the page. (D) View perpendicular to the channel axis. The ATPase domains are located at the top, and the N-terminal domains are located at the bottom. The Zn ions are light grey spheres at the bottom.DOI: http://dx.doi.org/10.7554/eLife.03433.002
+**Figure 1.:** (A) Sequence alignment showing the construction of the Sso-PfMCM chimera. The N-terminal domain of SsoMCM (residues 1–269, top sequence) was fused to the AAA+ domain of PfMCM (starting at residue 257, bottom sequence) to yield the chimera (middle sequence). (B) The Sso-PfMCM chimera shows enhanced unwinding activity when compared to wild-type SsoMCM. Helicase reactions were performed at 69°C for 60 min with a Y-shaped DNA substrate with a 5ʹ-fluorescein label on one strand. Unwinding reactions were in the presence of 4 mM ATP and contained 0, 50, 100, 150, 200, 300, 400, or 500 nM protein. Views of the Sso-PfMCM hexamer crystal structure parallel (C) and perpendicular (D) to the central channel with each subunit uniquely colored. The magnesium ions are magenta spheres, and ADP molecules are shown as cyan stick. (C) View down the crystallographic threefold axis with the unique and symmetry-derived chains labeled. The ATPase domains are projected out of the page. (D) View perpendicular to the channel axis. The ATPase domains are located at the top, and the N-terminal domains are located at the bottom. The Zn ions are light grey spheres at the bottom.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03433/elife-03433-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** MCM unwinding activity was observed as a function of protein concentration (left column; 0, 50, 100, 150, 200, 300, 400, and 500 nM protein) or time (right column; 1, 5, 10, 20, 30, 40, 60, and 90 min). A Y-shaped substrate (3.7 nM) was incubated at 69°C with the protein and 4 mM ATP. Time courses were collected by quenching independent samples (final composition of quench solution is 8% (vol/vol) glycerol, 1% (wt/vol) SDS, and 10 mM EDTA). Lanes marked with ‘−’ or ‘+’ are control samples without reaction (‘−’) or boiled at 98°C (‘+’), respectively. At left, the positions of intact Y-shaped substrate (red and blue) and displaced ssDNA (red) are indicated. The Sso-PfMCM chimera shows an enhanced unwinding acivity relative to SsoMCM, and the Sso-PfMCM Q198A mutant shows no apparent defect in unwinding.DOI: http://dx.doi.org/10.7554/eLife.03433.003
+**Figure 1—figure supplement 1.:** MCM unwinding activity was observed as a function of protein concentration (left column; 0, 50, 100, 150, 200, 300, 400, and 500 nM protein) or time (right column; 1, 5, 10, 20, 30, 40, 60, and 90 min). A Y-shaped substrate (3.7 nM) was incubated at 69°C with the protein and 4 mM ATP. Time courses were collected by quenching independent samples (final composition of quench solution is 8% (vol/vol) glycerol, 1% (wt/vol) SDS, and 10 mM EDTA). Lanes marked with ‘−’ or ‘+’ are control samples without reaction (‘−’) or boiled at 98°C (‘+’), respectively. At left, the positions of intact Y-shaped substrate (red and blue) and displaced ssDNA (red) are indicated. The Sso-PfMCM chimera shows an enhanced unwinding acivity relative to SsoMCM, and the Sso-PfMCM Q198A mutant shows no apparent defect in unwinding.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/03433/elife-03433-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** Sso-PfMCM significantly differ from previous monomeric crystal structures.Two monomeric MCM crystal structures (3F8T, Bae et al., 2009, left; and 3F9V, Brewster et al., 2008, right) were superimposed on two subunits of the Sso-PfMCM hexamer (at opposite sides of the channel) crystal structure based on the OB-fold subdomain. For the corresponding AAA+ domain positions, the differences in rotation and center-of-mass position were calculated and expressed in degrees and Å (middle). The AAA+ domains of Sso-PfMCM are rotated further from the N-terminal domain, which is necessary to prevent clashes that would occur among the six AAA+ domains if six copies of a monomeric structure were superimposed on each OB-fold of the Sso-PfMCM hexamer.DOI: http://dx.doi.org/10.7554/eLife.03433.004
+**Figure 1—figure supplement 2.:** Two monomeric MCM crystal structures (3F8T, Bae et al., 2009, left; and 3F9V, Brewster et al., 2008, right) were superimposed on two subunits of the Sso-PfMCM hexamer (at opposite sides of the channel) crystal structure based on the OB-fold subdomain. For the corresponding AAA+ domain positions, the differences in rotation and center-of-mass position were calculated and expressed in degrees and Å (middle). The AAA+ domains of Sso-PfMCM are rotated further from the N-terminal domain, which is necessary to prevent clashes that would occur among the six AAA+ domains if six copies of a monomeric structure were superimposed on each OB-fold of the Sso-PfMCM hexamer.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/03433/elife-03433-fig1-figsupp3-v1.jpg)
 
-**Figure 1—figure supplement 3.:** PfMCMAAA.(A) An unwinding experiment with varying protein concentrations analogous to Figure 1 (0, 50, 100, 150, 200, 300, 400, and 500 nM protein) showed negligible unwinding. (B) The crystal structure of PfMCMAAA (see ‘Materials and methods’) reveals a double-octamer architecture and an unusual topology for the h2i to mediate the interface between the octamers. The unusual h2i topology is not observed the Sso-PfMCM hexamer. A non-hexameric architecture or an unusual h2i topology could contribute to the inactivity of this domain.DOI: http://dx.doi.org/10.7554/eLife.03433.005
+**Figure 1—figure supplement 3.:** (A) An unwinding experiment with varying protein concentrations analogous to Figure 1 (0, 50, 100, 150, 200, 300, 400, and 500 nM protein) showed negligible unwinding. (B) The crystal structure of PfMCMAAA (see ‘Materials and methods’) reveals a double-octamer architecture and an unusual topology for the h2i to mediate the interface between the octamers. The unusual h2i topology is not observed the Sso-PfMCM hexamer. A non-hexameric architecture or an unusual h2i topology could contribute to the inactivity of this domain.
 
-## MCM:Mg/ADP hexamer crystal structure
+**Table 1.**
+ Data collection and refinement statistics
 
-The
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Sso-PfMCM:MgADP Hexamer</th>
+      <th>PfMCMAAA:MgADP Double-octamer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Data collection</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P63</td>
+      <td>P1</td>
+    </tr>
+    <tr>
+      <td colspan="3">Cell dimensions</td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>118.902, 118.902, 199.317</td>
+      <td>124.956, 127.082, 128.025</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 120</td>
+      <td>71.852, 72.819, 80.392</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–2.70 (2.80–2.70)</td>
+      <td>50–3.80 (3.94–3.80)</td>
+    </tr>
+    <tr>
+      <td>Rsym</td>
+      <td>0.107 (0.750)</td>
+      <td>0.169 (0.429)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>14.8 (1.79)</td>
+      <td>8.3 (2.41)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.8 (98.3)</td>
+      <td>98.9 (97.0)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>6.8 (5.0)</td>
+      <td>3.3 (2.6)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–2.70 (2.80–2.70)</td>
+      <td>50–3.80 (3.94–3.80)</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>39,044/1976 (2042/123)</td>
+      <td>69,126/3486 (6206/357)</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.263/0.295 (0.360/0.353)</td>
+      <td>0.301/0.314 (0.367/0.368)</td>
+    </tr>
+    <tr>
+      <td colspan="3">No. atoms</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>9432</td>
+      <td>2429 (1/16 of ASU)</td>
+    </tr>
+    <tr>
+      <td>ADP</td>
+      <td>54</td>
+      <td>27 (1/16 of ASU)</td>
+    </tr>
+    <tr>
+      <td>ions</td>
+      <td>10</td>
+      <td>1 (1/16 of ASU)</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="3">B-factors</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>60</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td>ADP</td>
+      <td>118</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>ions</td>
+      <td>75</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="3">R.m.s. deviations</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.010</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.488</td>
+      <td>1.597</td>
+    </tr>
+  </tbody>
+</table>
+
+### MCM:Mg/ADP hexamer crystal structure
+
+The Sso-PfMCM hexamer (Figure 1C–D; Video 1, 0:00) forms a ring with a channel large enough to accommodate double-stranded DNA (dsDNA) (see ‘Materials and methods’). The Sso-PfMCM structure therefore could mechanistically represent the structure of the MCM hexamer prior to loading (no DNA), after it loads to encircle dsDNA, or after its activation (encircling ssDNA). The two-tiered structure is consistent with electron microscopy studies (Chong et al., 2000; Pape et al., 2003; Gomez-Llorente et al., 2005; Costa et al., 2006; Bochman and Schwacha, 2007; Remus et al., 2009; Costa et al., 2011). The N-terminal tier has three subdomains, A–C (Fletcher et al., 2003; Liu et al., 2008; Froelich et al., 2014) with the A-subdomains in a different orientation (Figure 2A; Video 1, 0:20; see below) than observed previously. The relative positions of MCMN and MCMAAA differ considerably compared to monomeric and filament MCM crystal structures (Brewster et al., 2008; Bae et al., 2009; Slaymaker et al., 2013) (Figure 1—figure supplement 2). This difference is needed to prevent serious clashes that would occur among the ATPase domains.
+
+![Video 1.](https://cdn.elifesciences.org/articles/03433/elife-03433-media1.mov.jpg)
+
+**Video 1.:** The video illustrates the arrangement of the subunits in the hexamer and the positions of the subdomains. The A-subdomain conformation is animated to transform to that observed in other crystal structures of MCMN to illustrate how they differ. The different A-subdomain conformations correlate with the conformation of a proline (P104) at the junction between the A- and C-subdomains. The relative position of the mcm5-bob1 mutation is noted. Several central channel modules are highlighted, including the ps1β, h2i, β-turn, MSSB, and the interaction of ACL Q198 with the h2i. The ATPase site is compared to that of papillomavirus E1 (Enemark and Joshua-Tor, 2006), and several key residues are highlighted for MCM. The MSSB location is shown in a surface representation to illustrate that it sits at a recessed binding pocket where the ssDNA (green) of the aligned PfMCMN:ssDNA crystal structure (Froelich et al., 2014) would position snugly.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03433/elife-03433-fig2-v1.jpg)
 
-**Figure 2.:** Sso-PfMCM crystal structure details.(A) The A-subdomains (rainbow) of Sso-PfMCM adopt a unique conformation that is rotated 150° compared to other crystal structures of hexameric MCMN such as SsoMCMN (Liu et al., 2008). The distinct conformations correlate with the conformation of P104 that is located at the junction between the A- and C-subdomains (boxed). In both conformations, P104 packs against the aromatic residue F49. (B) The modules of the central channel. The cartoon is colored with the AAA+ domain in yellow, the Zn-binding B-subdomain in green, and the OB-fold C-subdomain in magenta. The ps1β projects a conserved lysine, K785, into the channel. This lysine packs against W741 of the h2i, which sits adjacent to R734 of the h2i. The MSSB is recessed and sits below the h2i and above the β-turn. The N-terminal domain is tethered to the h2i by a universally conserved glutamine in the ACL, Q198. (C) Surface representation of Sso-PfMCM colored by electrostatic potential. The surface is clipped with a vertical plane through the center to illustrate the central channel features. A cartoon representation of the protein with select modules labeled is colored as in Figure 2B with the helical A-subdomain in blue. The MSSB sits at a recessed pocket. The ssDNA from the aligned PfMCMN:ssDNA structure (Froelich et al., 2014) would be snugly positioned in this pocket. (D) Comparison of the Sso-PfMCM ATPase site (left) with that of E1 (Enemark and Joshua-Tor, 2006, right). The Walker-A and Walker-B residues of one subunit (yellow) are positioned at the left side of the site while three positively charged residues of the adjacent subunit (cyan) line the right side of the site. An acidic residue of the cyan subunit sits below the site. Based on the superposition (middle), we predict that the MCM subunits need to approach each other more closely to generate a competent ATPase site.DOI: http://dx.doi.org/10.7554/eLife.03433.008
+**Figure 2.:** (A) The A-subdomains (rainbow) of Sso-PfMCM adopt a unique conformation that is rotated 150° compared to other crystal structures of hexameric MCMN such as SsoMCMN (Liu et al., 2008). The distinct conformations correlate with the conformation of P104 that is located at the junction between the A- and C-subdomains (boxed). In both conformations, P104 packs against the aromatic residue F49. (B) The modules of the central channel. The cartoon is colored with the AAA+ domain in yellow, the Zn-binding B-subdomain in green, and the OB-fold C-subdomain in magenta. The ps1β projects a conserved lysine, K785, into the channel. This lysine packs against W741 of the h2i, which sits adjacent to R734 of the h2i. The MSSB is recessed and sits below the h2i and above the β-turn. The N-terminal domain is tethered to the h2i by a universally conserved glutamine in the ACL, Q198. (C) Surface representation of Sso-PfMCM colored by electrostatic potential. The surface is clipped with a vertical plane through the center to illustrate the central channel features. A cartoon representation of the protein with select modules labeled is colored as in Figure 2B with the helical A-subdomain in blue. The MSSB sits at a recessed pocket. The ssDNA from the aligned PfMCMN:ssDNA structure (Froelich et al., 2014) would be snugly positioned in this pocket. (D) Comparison of the Sso-PfMCM ATPase site (left) with that of E1 (Enemark and Joshua-Tor, 2006, right). The Walker-A and Walker-B residues of one subunit (yellow) are positioned at the left side of the site while three positively charged residues of the adjacent subunit (cyan) line the right side of the site. An acidic residue of the cyan subunit sits below the site. Based on the superposition (middle), we predict that the MCM subunits need to approach each other more closely to generate a competent ATPase site.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/03433/elife-03433-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** The N-terminal domains of each hexamer are represented in different shades of green, and the AAA+ domains are represented in yellow. A double-hexamer initially encircles dsDNA (blue and red strands). In the ATP-bound state (left), the ps1β and h2i modules are located further from the ACL than in the ADP state (right) as identified previously for the ACL/ps1β of SsoMCM (Barry et al., 2009). ATP-hydrolysis could drive the h2i/ps1β inward to generate strand separation that is captured by the MSSB as shown in Figure 7 of (Froelich et al., 2014). In this position, ACL Q198 is able to interact with the h2i, clamping down on the bound portion of ssDNA (cyan and magenta portions of ssDNA). ATP hydrolysis stops until the h2i is able to return to the starting ‘ATP’ position, potentially after an important activation criteria is reached. This species is ultimately converted to a strand-excluded complex able to unwind DNA (bottom).DOI: http://dx.doi.org/10.7554/eLife.03433.009
+**Figure 2—figure supplement 1.:** The N-terminal domains of each hexamer are represented in different shades of green, and the AAA+ domains are represented in yellow. A double-hexamer initially encircles dsDNA (blue and red strands). In the ATP-bound state (left), the ps1β and h2i modules are located further from the ACL than in the ADP state (right) as identified previously for the ACL/ps1β of SsoMCM (Barry et al., 2009). ATP-hydrolysis could drive the h2i/ps1β inward to generate strand separation that is captured by the MSSB as shown in Figure 7 of (Froelich et al., 2014). In this position, ACL Q198 is able to interact with the h2i, clamping down on the bound portion of ssDNA (cyan and magenta portions of ssDNA). ATP hydrolysis stops until the h2i is able to return to the starting ‘ATP’ position, potentially after an important activation criteria is reached. This species is ultimately converted to a strand-excluded complex able to unwind DNA (bottom).
 
-## A-subdomain is in a different orientation than in previous structures
+### A-subdomain is in a different orientation than in previous structures
 
 The A-subdomains of Sso-PfMCM are rotated 150° compared to those in SsoMCMN (Liu et al., 2008) (Figure 2A). The previously identified A-subdomain conformation seems fully possible in our present structure (see Video 1, 0:20), and we suggest that different A-subdomain conformations might play a role in MCM regulation. A similar A-subdomain rotation has been suggested for Methanothermobacter thermautotrophicus (Mt) MCMN based on electron microscopy (Chen et al., 2005) and was suggested to dictate helicase activity (Chen et al., 2005). We suggest the different conformations might regulate interaction with other factors: the A-subdomain might be stabilized against the OB-fold during one cell cycle stage, masking an interaction surface that becomes exposed by a conformational switch. In Sso-PfMCM, the change correlates with a conformer change in P104 at the junction of the A/C-subdomains (phi/psi = −48.5/133.0 in Sso-PfMCM vs −78.0/−14.9 in SsoMCMN, Liu et al., 2008). This proline and an associated aromatic residue, F49 (Figure 2A; Video 1, 0:35), are conserved in Mcm2 and Mcm6 (Video 1, 0:47), suggesting these subunits could be particularly specialized conformational switches. Interestingly, the A-subdomain of Mcm2 interacts with Cdc45 (Costa et al., 2011), providing a potential link between A-subdomain conformation and CMG assembly. While we expect A-subdomain conformations to be more flexible without a proline, proline is not required to attain the conformation in our structure, and the corresponding residue in MtMCM is a serine. As noted previously (Chen et al., 2005), A-subdomain rotation is a conceptual extension of the ‘domain-push’ mechanism described for mcm5-bob1 (Hardy et al., 1997) where the A- and C-subdomain interaction is weakened by bulky side-chains (Fletcher et al., 2003). In our structure, as suggested for MtMCM (Chen et al., 2005), the A/C subdomain interaction is not only weakened, it is broken altogether. Changes in A-subdomain conformation might be driven by MCM phosphorylation, such as phosphorylation of the ScMcm4 N-terminal serine/threonine-rich domain by DDK (Sheu and Stillman, 2006) that serves both inhibitory and facilitating roles in replication (Sheu and Stillman, 2010).
 
-## Central channel modules
+### Central channel modules
 
 Several modules are directed into the central channel where they could interact with encircled DNA (Figure 2B; Video 1, 1:19). The pre-sensor-1-β-hairpin (ps1β) projects a universally conserved lysine, K785, that is essential for unwinding by SsoMCM (McGeoch et al., 2005). The helix-2-insert (h2i), required for helicase activity in MtMCM (Jenkinson and Chong, 2006), prominently directs R734 and W741 into the central channel. These residues are conserved in a family-specific fashion for Mcms (Video 1, 1:32). The h2i and ps1β are located further from the N-terminal domain than predicted by monomeric crystal structures (Figure 1—figure supplement 2) due to interdomain differences (see above). The h2i projects further into the channel than the ps1β and appears to divide the AAA+ and N-terminal DNA-binding regions. As viewed in Figure 2B, the ps1β and the h2i direct their putative DNA-binding residues above the h2i, while the MSSB is below the h2i. The h2i creates a DNA-binding pocket at the MSSB where ssDNA was observed previously (Froelich et al., 2014). In SsoMCM, alanine mutants of lysine residues in this pocket (K129A and K194A) show severe DNA-binding and unwinding defects (Pucci et al., 2004). While the MSSB pocket of Sso-PfMCM appears poised to bind ssDNA in the fashion observed previously (Figure 2C), some remodeling of h2i side-chains or the ssDNA would be necessary to avoid clashes, particularly involving F737.
 
-## Allosteric Communication Loop
+### Allosteric Communication Loop
 
 In each subunit of our Sso-PfMCM hexamer crystal structure, residues 198–212 comprise a conserved loop of the OB-fold that projects towards the h2i of the same subunit and the ps1β of an adjacent subunit. This loop has been termed the ‘Allosteric Communication Loop’ (ACL) (Barry et al., 2009) due to its predicted proximity to the AAA+ domain and its observed influence on unwinding (Sakakibara et al., 2008; Barry et al., 2009). Although the ATPase domain alone is sufficient to generate DNA unwinding in SsoMCM (Barry et al., 2007; Pucci et al., 2007) and in Aeropyrum pernix MCM (Atanassova and Grainge, 2008), several mutants located on this loop show unwinding defects (Sakakibara et al., 2008; Barry et al., 2009). In our hexamer structure, the proximity of the ACL to the h2i and ps1β, highly significant AAA+ modules (see above), strongly supports an ACL role in N- and C-terminal domain communication. The ACL position near the ps1β of an adjacent subunit is also consistent with previous studies (Barry et al., 2009).
 
@@ -71,17 +214,17 @@ We tested the DNA unwinding activity of PfMCMAAA to compare with that of the Sso
 
 We next examined the Sso-PfMCM structure for interdomain interactions that could be conserved in native proteins. The structure reveals a fully conserved glutamine, Q198, of the ACL interacts with the main-chain amide atoms of the h2i (Figure 2B; Video 1, 1:50). This interaction could occur in any MCM protein because the constituent atoms are fully conserved. The Q198:h2i interaction is not required for DNA unwinding because no unwinding defects are observed for the Q198A mutant (Figure 1—figure supplement 1), and in the corresponding alanine mutant of MtMCM (Sakakibara et al., 2008). We suggest that the glutamine-h2i interaction functions prior to unwinding to lock the h2i in a holding position. The movement of DNA proposed previously to facilitate initial strand separation (Froelich et al., 2014) could occur by ATP-hydrolysis-driven inward movement of the h2i bound to DNA (Figure 2—figure supplement 1). After the h2i modules reach the position observed in our structure, they would be locked in place by interaction with Q198. This would tighten the grasp on one strand while the opposing strand exits the open Mcm2/5 gate (Bochman and Schwacha, 2007; Costa et al., 2011). With the h2i modules fixed in this position, the ATPase sites would be unable to adopt a productive hydrolysis conformation because each ATPase site is fundamentally tied to h2i position, potentially to prevent further ATPase activity during an important activation event. ATP hydrolysis inhibition by fixed h2i is directly analogous to inhibition of ATP hydrolysis in ϕ12 P4, an RNA-translocating hexamer, by cross-linked RNA-binding loops (Kainov et al., 2008).
 
-## ATPase active site
+### ATPase active site
 
 The ATPase active site structurally resembles the ATPase site of the AAA+ helicase E1 (Enemark and Joshua-Tor, 2006) (Figure 2D, Video 1, 2:04) with Walker-A/B residues (Abrahams et al., 1994; Neuwald et al., 1999) of one subunit, and three positively charged residues of the adjacent subunit. The three positive residues consist of sensor-2 (Neuwald et al., 1999), the arginine finger (Neuwald et al., 1999), and residues that we classify as sensor-3 (Enemark and Joshua-Tor, 2006). Although not typical for AAA+ proteins, the placement of sensor-2 in an ATPase site among Walker-A/B residues of the neighboring subunit (in trans) was predicted for MCM proteins in defining AAA+ Clade 7 (Erzberger and Berger, 2006). Biochemical experiments (Moreau et al., 2007) and MCM structure-based predictions (Bae et al., 2009) are also consistent with this arrangement. Based on comparison of the ATPase site with the tight ‘ATP-like’ configuration of E1 (Enemark and Joshua-Tor, 2006), we expect MCM subunits must approach more closely to generate a competent ATPase site. In this state, the h2i and ps1β are predicted to move upward in the view shown in Figure 2—figure supplement 1 to increase the distance between the ACL and the ps1β as identified by DEER-spectroscopy (Barry et al., 2009). ATP-hydrolysis would drive the h2i/ps1β downward to translocate one ssDNA strand with expected polarity and orientation (McGeoch et al., 2005) while the complementary strand is excluded from the ring (Fu et al., 2011). Our present structural findings cannot differentiate several mechanistic details such as hydrolysis order or timing (reviewed in Singleton et al., 2007). We speculate that the MCM helicase unwinds DNA with helically-arranged h2i/ps1β modules analogous to E1 (Enemark and Joshua-Tor, 2006) and Rho (Thomsen and Berger, 2009), but the six non-identical subunits of Eukaryotic Mcm2-7 could operate asymmetrically during unwinding. Indeed, the ATPase modules of the different Mcm2-7 subunits show distinct roles and specialization during different functional stages (Coster et al., 2014; Kang et al., 2014). Elucidation of how the AAA+ domain interacts with DNA in an unwinding conformation will help reveal more details of the MCM unwinding mechanism.
 
 ## Materials and methods
 
-## Cloning, mutagenesis, expression, and purification
+### Cloning, mutagenesis, expression, and purification
 
 The chimera protein construct consists of SsoMCMN, (SsoMCM aa 1–269) fused to PfMCMAAA (PfMCM aa 257–361/729–966 = aa 257–966 with its intein, aa 362–728, removed). It corresponds to a full-length MCM protein lacking the short (aa 967–1049) C-terminal helix-turn-helix domain (Aravind and Koonin, 1999) that is dispensible for unwinding activity in MtMCM (Jenkinson and Chong, 2006) and in SsoMCM (Barry et al., 2007). All expression constructs were prepared as N-terminal His6-SUMO fusions. The original SUMO vector was the generous gift of Dr Christopher D Lima (Mossessova and Lima, 2000). The PfMCM gene contains an intein, aa 362–728 (Yoshimochi et al., 2008) in the helix-2-insert region of ATPase domain. We genetically removed the intein by sequentially cloning two fragments (amplified from P. furiosus genomic DNA, ATCC) incorporating a silent NotI mutation at the junction. This plasmid served as the PCR template to generate constructs of Sso-PfMCM (SsoMCM aa 1–269/PfMCM aa 257–361/729–966, pJM001.3) and PfMCMAAA (aa 263–361/729–966, pEE021.1 = crystallized construct; and PfMCM aa 252–361/729–1049 = construct of unwinding experiments). The Sso-PfMCM chimera construct was generated by overlap extension of PCR fragments encoding the N-terminal domain of SsoMCM (amplified from S. solfataricus genomic DNA, ATCC) and PfMCMAAA that had 93 bases of overlap at the junction. The full-length SsoMCM expression construct (pEE045.1) was prepared via PCR amplification of the full SsoMCM gene. The Q198A mutant (pJM005.5) was generated by site-directed mutagenesis of pJM001.3. DNA sequencing verified the integrity of the coding region of all constructs. Proteins were purified as described previously (Froelich et al., 2014), including removal of the SUMO tag by digestion by Ulp1 protease (the Ulp1 protease plasmid was the generous gift of Dr Christopher D Lima) (Mossessova and Lima, 2000).
 
-## Crystallization, data-collection, structure-solution, and refinement
+### Crystallization, data-collection, structure-solution, and refinement
 
 Prior to crystallization, purified Sso-PfMCM was dialyzed into buffer containing 25 mM HEPES, pH 7.6; 10 mM NaCl; and 5 mM Mg(OAc)2. Crystals of Sso-PfMCM with Mg/ADP grew by hanging drop by mixing 2 μl of protein:ADP solution (10.8 mg/ml Sso-PfMCM; 5 mM ADP) and 2 μl of well solution (100 mM HEPES, pH 7.6; 350 mM MgCl2; 3% (wt/vol) PEG 3350). Crystals were cryoprotected by quickly passing through a 1:3 ethylene glycol:well solution and flash frozen in liquid nitrogen. Data were collected at SER-CAT beamline 22-ID. Data were collected at 1.0 Å wavelength in 0.25° oscillations for 112.5° at a temperature of 100 K. All data were scaled and integrated using the HKL-2000 software package (Otwinowski and Minor, 1997) to 2.70 Å resolution.
 
@@ -91,11 +234,11 @@ Crystallographic datasets for crystals grown in the presence of several nucleoti
 
 The crystal structure of PfMCMAAA was pivotal in obtaining the crystal structure of Sso-PfMCM (above), and we therefore include the details of its structure determination. However, the resolution of PfMCMAAA, (3.80 Å) limits the overall detail of the structure. Crystals of PfMCMAAA with Mg/ADP grew by hanging drop by mixing 2 μl protein/Mg/ADP (6 mg/ml; 5 mM ADP; 50 mM MgCl2; 18 mM HEPES, pH 7.6; 180 mM NaCl; 4.5 mM β-mercaptoethanol) with 2 μl well solution (50 mM sodium cacodylate, pH 6.0; 50 mM magnesium acetate; 30% MPD; 5% glycerol). A Crystal was flash frozen in liquid nitrogen and data were collected at SER-CAT beamline 22-BM at 1.0 Å wavelength in 0.5° oscillations for 360° at a temperature of 100 K. The data were scaled and integrated using the HKL-2000 software package (Otwinowski and Minor, 1997) to 3.80 Å resolution. A weak molecular replacement solution was obtained with the program Phaser (McCoy et al., 2007), which placed 16 monomers of the AAA+ portion of PDB 4FDG (Slaymaker et al., 2013) as a double-octamer. The MCM complex is not presumed to adopt an octameric assembly in vivo, but we note that a hypothetical hexamer generated by removing two adjacent subunits from the octameric ring would correspond to an open hexameric ring with an opening large enough to permit entry of B-form dsDNA. Initial electron density maps were greatly improved by 16-fold NCS-averaging and solvent flattening with the program Resolve (Terwilliger, 2000, 2004), which revealed obvious side-chain positions. The sequence was assigned to the structure based upon the location of selenium positions (7 per subunit) for a selenomethionine derivative in an NCS-averaged anomalous difference Fourier map generated with the Resolve-improved phases, and by alignment with the 1.90 Å resolution structure of a monomeric MCM homolog (Bae et al., 2009). The selenomethionine derivative was expressed in B834(DE3) cells (EMD Millipore, Darmstadt, Germany) in LeMaster's media (Hendrickson et al., 1990), and anomalous difference data were collected at SER-CAT beamline 22-ID at 0.97915 Å wavelength in 0.5° oscillations for 260° at a temperature of 100 K. The data were scaled and integrated using the HKL-2000 software package (Otwinowski and Minor, 1997) to 4.0 Å resolution. The anomalous signal was too weak to generate starting phases, but readily identified the selenium positions by an NCS-averaged anomalous difference fourier map generated with the Resolve-improved molecular replacement phases (see above). The structure was refined with a strict 16-fold NCS protocol in CNS (Brunger et al., 1998; Brunger, 2007) and manually improved with Coot (Emsley and Cowtan, 2004). Following refinement of the higher resolution structure of Sso-PfMCM (above), the coordinates were updated, and the h2i region was rebuilt. The structure was subjected to coordinate and group B-factor refinement with strict 16-fold NCS in CNS (Brunger et al., 1998; Brunger, 2007) to yield the final model. The h2i is folded differently than in other AAA+ proteins to mediate a β-sheet interface with the ps1β of a subunit in the other octamer. Twofold symmetric dimers are arranged around an eightfold symmetry axis to yield approximate D8-symmetry. A total of 16 of these β-sheet interfaces occur around the ring. This h2i structure is not compatible with the position of the N-terminal domain seen in Sso-PfMCM, and it is therefore almost certainly an artifact of removing the N-terminal domain in the PfMCMAAA construct. The precise sequence registry for these h2i residues is not clearly defined, and the residues have been modeled as poly-alanine in our best assessment of the polypeptide direction. A Ramachandran plot calculated by Procheck (Laskowski et al., 1993) indicated the following statistics: core: 213 (74.7%); allowed: 56 (19.6%); generously allowed: 8 (2.8%); disallowed: 8 (2.8%).
 
-## Helicase assay
+### Helicase assay
 
 All unwinding experiments were performed with a Y-shaped DNA substrate with a 55-mer double-stranded region, a 50-mer poly-dT 3ʹ-arm, and a 30-mer 5ʹ-arm with a fluorescein label at the 5ʹ- end. The substrate was prepared by annealing a 5ʹ-fluorescein-labeled oligonucleotide (5ʹ-TTGAACCACCCCCTTGTTAAATCACTTCTACTTGCATGCCTGCAGGTCGACTCTAGAGGATCCCCGGGTACCGAGCTCGAATTCG–3ʹ with an unlabeled oligonucleotide (5ʹ- CGAATTCGAGCTCGGTACCCGGGGATCCTCTAGAGTCGACCTGCAGGCATGCAAGTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT-3ʹ), Sigma–Aldrich, St. Louis, MO). The 85-mer oligonucleotide was identical to a previously published substrate that had been annealed to M13 plasmid ssDNA to study SsoMCM unwinding (Pucci et al., 2004). Helicase activity assays were prepared in 20 μl reaction mixtures with 25 mM HEPES (pH = 7.6), 100 mM Na(OAc), 5 mM Mg(OAc)2, 4 mM ATP, and 3.7 nM fluorescein-labeled DNA substrate. For protein concentration titrations, the protein concentration ranged from 0 to 500 nM (monomer), and reactions were incubated at 69°C for 60 min. For time-course experiments, 500 nM protein was incubated at 69°C for 1 to 90 min. Prior to the addition of ATP to initiate unwinding, time points were incubated at 69°C for 5 min to allow for thermal equilibration. For all samples, reactions were stopped by the addition of 5 μl of loading buffer containing 40% (vol/vol) glycerol, 5% (wt/vol) sodium dodecyl sulfate (SDS), and 50 mM ethylenediaminetetraacetic acid (EDTA), and a 20 μl aliquot was loaded on a 4–20% 1× TBE gradient PAGE gel (Biorad, Berkeley, CA) and run at 150 V for 90 min. Gel imaging was performed with a Fuji LAS-4000 using a 15-min exposure time and a SYBR-Green filter.
 
-## Definition of central channel axis, mathematical analysis
+### Definition of central channel axis, mathematical analysis
 
 We conclude that the central channel of our structure of the Sso-PfMCM hexamer is sufficiently large to accommodate dsDNA based on a channel radius minimum of 12.7 Å for its polyalanine model. For comparison, the polyalanine model of BPV E1:ssDNA (encircles ssDNA; Enemark and Joshua-Tor, 2006; Lee et al., 2014) has a minimum radius of 6.1 Å (PDB: 2GXA, hexamer 1, Enemark and Joshua-Tor, 2006); topoisomerase I:dsDNA (tightly encircles dsDNA) has a minimum radius of 7.5 Å (PDB: 1A35, Redinbo et al., 1998); and PCNA (encircles dsDNA but can slide) has a minimum radius of 16.0 Å (PDB: 1PLQ, Krishna et al., 1994). Based on these comparisons, the channel diameter in our structure of Sso-PfMCM is large enough to accommodate dsDNA, but might not slide over dsDNA as readily as PCNA. The details of these calculations are provided below.
 

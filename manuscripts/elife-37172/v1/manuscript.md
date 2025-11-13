@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.37172.001 Stable mutualism between a host and its resident bacteria requires a moderated immune response to control bacterial population size without eliciting excessive inflammation that could harm both partners. Little is known about the specific molecular mechanisms utilized by bacterial mutualists to temper their hosts’ responses and protect themselves from aggressive immune attack. Using a gnotobiotic larval zebrafish model, we identified an Aeromonas secreted immunomodulatory protein, AimA. AimA is required during colonization to prevent intestinal inflammation that simultaneously compromises both bacterial and host survival. Administration of exogenous AimA prevents excessive intestinal neutrophil accumulation and protects against septic shock in models of both bacterially and chemically induced intestinal inflammation. We determined the molecular structure of AimA, which revealed two related calycin-like domains with structural similarity to the mammalian immune modulatory protein, lipocalin-2. As a secreted bacterial protein required by both partners for optimal fitness, AimA is an exemplar bacterial mutualism factor.
+Stable mutualism between a host and its resident bacteria requires a moderated immune response to control bacterial population size without eliciting excessive inflammation that could harm both partners. Little is known about the specific molecular mechanisms utilized by bacterial mutualists to temper their hosts’ responses and protect themselves from aggressive immune attack. Using a gnotobiotic larval zebrafish model, we identified an Aeromonas secreted immunomodulatory protein, AimA. AimA is required during colonization to prevent intestinal inflammation that simultaneously compromises both bacterial and host survival. Administration of exogenous AimA prevents excessive intestinal neutrophil accumulation and protects against septic shock in models of both bacterially and chemically induced intestinal inflammation. We determined the molecular structure of AimA, which revealed two related calycin-like domains with structural similarity to the mammalian immune modulatory protein, lipocalin-2. As a secreted bacterial protein required by both partners for optimal fitness, AimA is an exemplar bacterial mutualism factor.
 
 ## Introduction
 
@@ -37,35 +37,413 @@ Using the gnotobiotic zebrafish model, we identified a potent immune modulatory 
 
 ## Results
 
-## Aeromonas secretes a protein that modulates the intestinal neutrophil response
+### Aeromonas secretes a protein that modulates the intestinal neutrophil response
 
 Based on the mutualism between Aeromonas and zebrafish (Stephens et al., 2016), we hypothesized that Aeromonas would use specific secreted factors to co-exist with its host. We tested this hypothesis by comparing the zebrafish intestinal neutrophil response to mono-association with an Aeromonas isolate, A. veronii strain Hm21 (Maltz and Graf, 2011), versus mono-association with an isogenic mutant lacking the type two secretion system (T2SS)(ΔT2)(Table 1), a major system for secretion in Gram-negative bacteria (Maltz and Graf, 2011). We colonized each bacterial strain in zebrafish from 4 dpf to 6 dpf and measured the number of intestinal neutrophils that accumulated in response to each colonizing bacterial strain. In these experiments we compared the ΔT2 strain to a genetically complemented strain, ΔT2C, previously shown to restore T2SS function (Maltz and Graf, 2011), which allowed us to rule out the possibility that phenotypes associated with the ΔT2 strain were due to polar or second site mutations. The ΔT2C and ΔT2 colonized the zebrafish intestine to similar levels in mono-associations (Figure 1—figure supplement 1), however the ΔT2 mutant induced a greater intestinal neutrophil response than the ΔT2C (Figure 1A). This result suggests that A. veronii strain Hm21 secretes a product that decreases the neutrophil response to its colonization. The increased neutrophil response to ΔT2 was rescued by concurrent treatment with cell-free supernatant (CFS) collected from the ΔT2C strain, but not CFS collected from ΔT2 (Figure 1A). To identify the factor produced by ΔT2C and not from the ΔT2 strain that resulted in fewer intestinal neutrophils, we performed mass-spectrophotometry on the CFS from these two strains and determined which proteins were enriched in the ΔT2C compared to the ΔT2 strain. This analysis resulted in a list of 22 proteins that were enriched by greater than 10 counts in the ΔT2C CFS (Supplemental file 1). We narrowed down the potential candidates further by performing ammonium sulfate fractionation on the ΔT2C CFS and adding fractions to fish mono-associated with ΔT2. We found neutrophil modulating activity primarily in the 40–60% salt fraction, but also saw some activity in the 20–40% salt fraction (Figure 1A). An SDS PAGE gel of these fractions revealed a similar banding pattern for each fraction, except the bands in the 20–40% fraction were considerably weaker. We observed two prominent bands at 33 kDa and 55 kDa. These sizes corresponded to two proteins on our list of proteins enriched in the ΔT2C CFS, an uncharacterized protein (UP) and a chitin binding protein (CBP), respectively (Supplemental file 1). To test whether either of these proteins modulated the neutrophil response to ΔT2 colonization, we cloned the sequence for each gene into an overexpression vector and induced expression in Escherichia coli, resulting in E. coli CFS that was heavily dominated by the protein of interest (Figure 1B). We treated zebrafish mono-associated with ΔT2 with the CFS resulting from overexpression of each protein of interest and found neutrophil modulating activity in the E. coli CFS with the 33 kDa UP and not with CBP or control CFS from E. coli containing an empty expression vector (Figure 1C). We named this neutrophil-modulating protein Aeromonas immune modulator A (AimA).
 
-## The AimA protein has two distinct calycin domains with related folds
+![Figure 1.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig1-v1.jpg)
+
+**Figure 1.:** (A) Intestinal neutrophil response to conventional (CV), germ free (GF), and mono-associations of wild-type Aeromonas (Aer ΔT2C), and an isogenic mutant of the type II secretion system (ΔT2). ΔT2 induces a greater neutrophil response that is rescued by addition of cell free supernatant (CFS) from the wild-type Aeromonas strain. Ammonium sulfate fractionation narrowed potential candidates down to two proteins, an unidentified protein (UP) or chitin binding protein (CBP). (B) E. coli BL21 carrying pET21b expression vector overexpression of the candidate proteins of interest. (C) Addition of CFS containing UP rescued the increased neutrophil response induced by ΔT2. EV: empty vector control CFS. Letters denote p<0.05, ANOVA followed by Tukey’s post hoc test. Each box represents the first to third quartiles, center bar the median, and whiskers the maximum and minimum. Each dot represents one fish; data collected from at least two independent experiments; n ≥ 24.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) veronii strain Hm21 isolates ΔT2, the type two secretion mutant, and ΔT2C, the compliment isolate with a wild-type phenotype, colonize the fish to similar levels. Each dot represents one fish. n ≥ 24, from two independent experiments.
+
+**Table 1.**
+ Strain table.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Characteristics</th>
+      <th>Ref. or source</th>
+      <th>Manuscript abbreviation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hm21S</td>
+      <td>Parent strain, SmR</td>
+      <td>Graf, 1999</td>
+      <td>Aer</td>
+    </tr>
+    <tr>
+      <td>HE-1095</td>
+      <td>Hm21S::interrupted exeM mTn5 KmR SmR</td>
+      <td>Maltz and Graf, 2011</td>
+      <td>Aer ΔT2</td>
+    </tr>
+    <tr>
+      <td>HEC-1344</td>
+      <td>HE-1095::Tn7 containing TpR exeMN + promoter region</td>
+      <td>Maltz and Graf, 2011</td>
+      <td>Aer ΔT2C</td>
+    </tr>
+    <tr>
+      <td>ASRC7</td>
+      <td>Hm21S aimA::cmR</td>
+      <td>This study</td>
+      <td>Aer ΔaimA</td>
+    </tr>
+    <tr>
+      <td>ASRD5</td>
+      <td>Hm21S ΔaimB</td>
+      <td>This study</td>
+      <td>Aer ΔaimB</td>
+    </tr>
+    <tr>
+      <td>ASRD4</td>
+      <td>Hm21S aimA::cmR; ΔaimB</td>
+      <td>This study</td>
+      <td>Aer ΔAΔB</td>
+    </tr>
+    <tr>
+      <td>ZOR0001</td>
+      <td>Zebrafish Aeromonas isolate</td>
+      <td>Stephens</td>
+      <td>ZF Aer</td>
+    </tr>
+    <tr>
+      <td>ASRC9</td>
+      <td>ZOR0001 aimA::cmR</td>
+      <td>This study</td>
+      <td>ZF Aer ΔaimA</td>
+    </tr>
+  </tbody>
+</table>
+
+### The AimA protein has two distinct calycin domains with related folds
 
 DNA and amino acid homology searches revealed that no homologues to AimA exist outside of the Aeromonas genera. Further, analysis of the amino acid sequence of AimA with the N terminal amino acid secretion signal removed revealed a lack of sequence identity with known domains or structurally characterized proteins and therefore offered little insight into the structure or function of AimA. Thus, to gain insight into the mechanism of AimA, we constructed a His-tagged version that was purified from E. coli, and we crystallized the protein. We determined the molecular structure of AimA using a heavy atom derivative and Single-wavelength Anomalous Dispersion (SAD) phasing to a resolution of 2.3 Å (PDB 6B7L; Table 2).
 
+**Table 2.**
+ Data Collection and Refinement Statistics for Deposited Model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th>Iodide</th>
+      <th></th>
+      <th></th>
+      <th>Native</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>space group</td>
+      <td>P622</td>
+      <td></td>
+      <td></td>
+      <td>P622</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>unit cell a, b, c (Å)</td>
+      <td>161.4</td>
+      <td>161.4</td>
+      <td>66.6</td>
+      <td>160.5</td>
+      <td>160.5</td>
+      <td>66.2</td>
+    </tr>
+    <tr>
+      <td>alpha, beta, gamma (degrees)</td>
+      <td>90</td>
+      <td>90</td>
+      <td>120</td>
+      <td>90</td>
+      <td>90</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>resolution (Å)</td>
+      <td>50.0–2.7 (2.75–2.70)</td>
+      <td></td>
+      <td></td>
+      <td>41.1–2.30</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>completeness (%)</td>
+      <td>100 (100)</td>
+      <td></td>
+      <td></td>
+      <td>100 (100)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>no. unique reflections</td>
+      <td>14772 (711)</td>
+      <td></td>
+      <td></td>
+      <td>22818 (3244)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>multiplicity</td>
+      <td>37.7 (38.1)</td>
+      <td></td>
+      <td></td>
+      <td>70.2 (71.6)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I/sigma&gt;</td>
+      <td>44.2 (3.5)</td>
+      <td></td>
+      <td></td>
+      <td>16.1 (1.4)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>1</td>
+      <td>0.861</td>
+      <td></td>
+      <td>1.0 (0.9)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CC1/2 anomolous</td>
+      <td>1</td>
+      <td>0.873</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R merge (%)</td>
+      <td>19.6 (486)</td>
+      <td></td>
+      <td></td>
+      <td>19.1 (574)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R work (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>17.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R free (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>20.4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>no. of molecules in the asymetric unit</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>no. protein residues</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>290</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>no. of waters</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>69</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>rmsd for lengths (Å)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>rmsd for angles (deg)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>preferred</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>96.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>allowed</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3.4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>outliers</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Avg. B factor (Å^2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mainchain*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>81</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waters</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>75</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>new PDB entry</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>6B7L</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_* Several loop regions display high mobility but have been modeled due to a visible chain path in the electron density, resulting in an increase in the average observed B-factors of the main chain_
+
 The structure of AimA revealed two domains connected by a short linker (Figure 2A,B). β-strands dominate each domain with the carboxy terminal (C-term) domain forming a complete β-barrel and the amino terminal (N-term) domain containing a curved β-sheet. Structural homology searches of full length AimA against all Protein Data Bank-deposited structures using PDBeFold resulted in structures that aligned to only one domain or the other, with the majority aligning with the C-term domain (Krissinel et al., 2004; Berman et al., 2000). Therefore, we performed structural homology searches against each domain separately, which revealed that both domains had similarity to proteins in the calycin superfamily (Supplemental file 2 and Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig2-v1.jpg)
+
+**Figure 2.:** (A) The 2.3 Å structure of AimA displays two calycin domains (PDB ID 6B7L). (B) The amino terminal domain (orange) of AimA is connected by a short linker to the carboxy terminal domain (teal) and both contain an eight-stranded full (C-term) or partial (N-term) β-barrel.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Structural overlay of N-term domain of AimA with top structural homology hit from PDBeFold search (Supplemental Table 2), Streptomyces avindinii streptavidin (PDB ID 1KL3). (B) Structural overlay of C-term domain of AimA with top structural homology hit from PDBeFold search (Supplemental Table 2), Gallus gallus avidin (PDB ID 1LEL). (C) Schematic of the biotin binding colorimetric assay. Biotin has higher affinity for avidins than HABA does, so it replaces HABA in the binding site, thereby decreasing the absorbance at 500 nm. (D) Results from the biotin binding colorimetric assay. Biotin replaces HABA binding in avidin, corresponding to a decrease in absorbance when biotin is present. With AimA, there is no difference in absorbance with or without biotin, indicating no biotin binding.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Shown are Rfree (black line, solid squares), Rwork, (gray line, solid triangles), and Rfree-Rwork (dotted line, open circles) calculated at 2.9 Å for paired refinements in which the model was first refined against either 2.9, 2.7, 2.5, or 2.3 Å data. The chosen resolution cutoff of 2.3 Å (highlighted in yellow) show a decrease in Rfree and increase in Rwork, which proves that using the extra resolution improves the model.
 
 The calycin superfamily of proteins contains members from all domains of life and includes lipocalins, fatty acid binding proteins, and avidins. This superfamily is defined by an anti-parallel β-barrel with a repeated +1 topology (Flower, 1996). Notably, the calycin superfamily is known for structural conservation without high amino acid sequence conservation (Flower, 1996; Lakshmi et al., 2015), consistent with a lack of sequence homology between AimA and other calycin family members. The N-term domain of AimA has an incomplete β-barrel, but maintains some structural homology to streptavidin. Streptavidin binds biotin tightly, but we found no evidence that AimA binds biotin (Figure 2—figure supplement 1). The C-term domain of AimA has structural homology both to avidins and lipocalins (Supplemental file 2).
 
-## In a model of intestinal inflammation, AimA reduces neutrophil influx
+### In a model of intestinal inflammation, AimA reduces neutrophil influx
 
 AimA’s structural similarity to lipocalin proteins was intriguing because of these proteins’ known roles in modulating neutrophil behavior (Moschen et al., 2017). Based on this structural similarity, we wondered whether AimA’s influence on intestinal neutrophil numbers was specific to Aeromonas colonization or whether it acts as a more general immunoregulatory molecule to influence neutrophil behavior. To test whether AimA modulates neutrophil numbers in response to stimuli other than Aeromonas mono-association, we employed the zebrafish model of soysaponin-induced inflammation. Farmed fish, such as salmon and carp, fed soybean meal as a protein source are well known to develop intestinal inflammation, and zebrafish are a good model of this irritation (Hedrera et al., 2013). We fed conventionally raised zebrafish larvae Zeiglers fish food with 0.3% soysaponin from 4 dpf to 6 dpf and saw a significant increase in the number of intestinal neutrophils in response to the soysaponin, as expected (Figure 3A). When we treated the fish with 100 ng/mL purified AimA concurrently with soysaponin, AimA prevented the increase in neutrophil influx in response to soysaponin (Figure 3A). This result demonstrates that AimA alone can inhibit pro-inflammatory signaling pathways elicited by stimuli other than Aeromonas.
 
-## Presence of mouse lipocalin-2 inhibits AimA function
+![Figure 3.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig3-v1.jpg)
+
+**Figure 3.:** (A) Feeding zebrafish soy saponin induces increased intestinal neutrophil response, and treating those fish with 100 ng/mL purified AimA prevents the increased intestinal neutrophil response. Letters indicate significantly different groups; ANOVA with multiple comparisons. Each dot represents one fish; data collected from at least two independent experiments; n ≥ 24. (B) Structural overlay of mouse lipocalin (PDB ID 3S26) and AimA C-term domain using PDBeFold. Qscore is a structural overlay quality score that takes into account both the root mean standard deviation (RMSD) of the Cα carbons and the alignment length. Qscore of 1 is perfect alignment, 0 is no alignment. The residues highlighted in orange are conserved in both the sequences and the structures (see table below). Displayed are the sequences of Structurally Conserved Regions (SCR) 1 and 3 of a representative set of kernel and outlier lipocalins, with PDB IDs in parenthesis. The C-term domain of AimA is included and contains a subset of conserved SCR residues. Bold residues are conserved across the sequences. Orange residues are conserved across the sequences and in the structures of mLCN and the C-term domain of AimA. (C) Treatment of conventionally raised (CV) fish with soysaponin and lipocalin prevents AimA from reducing the neutrophil response. Each dot represents one fish; n ≥ 20 from at least three independent experiments. Letters indicate significantly different groups; ANOVA with multiple comparisons.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Shown is a ribbon diagram of the structure of human LCN2 (PDB ID 1L6M) with ferric enterobactin bound. Enterobactin is shown in pink with oxygen in red, nitrogen in blue, and iron as a yellow ball. (B) After overlay with LCN2 from panel A, shown is a ribbon diagram of the structure of AimA N-term domain in the same orientation. The regions colored black indicate residues that would occlude enterobactin binding. (C) After overlay with LCN2 from panel A, shown is a ribbon diagram of the structure of AimA C-term domain in the same orientation. The regions colored black indicate residues that would occlude enterobactin binding. (D–F) Shown are the surface representations of LCN2, N-term AimA and C-term AimA from panels A-C, respectively. Note the deep calyx formed by LNC2 for enterobactin binding is missing in both the N-term and C-term AimA domains. (G) E. coli K12 grown in the presence of the iron chelator dipyridyl experiences a dose dependent growth inhibition upon addition of purified mouse LCN2 protein (left), but does not experience growth inhibition upon addition of the same range of purified AimA concentrations to the E. coli cultures (right).
+
+### Presence of mouse lipocalin-2 inhibits AimA function
 
 Because AimA reduces neutrophil influx in a model of intestinal inflammation and the C-term domain has structural homology to lipocalin proteins (Figure 3A, Supplementary file 2), we hypothesized that the neutrophil reducing capacity of AimA was related to its lipocalin-like structure. Lipocalins are defined by three key structurally conserved regions, SCR1, SCR2, and SCR3; of these, SCR1 contains four key residues and is the most conserved (Figure 3B) (Flower, 1996; Lakshmi et al., 2015). The SCR1 in the C-term domain of AimA overlaps structurally with the SCR1 of mouse lipocalin-2 (mLCN2) and shares some related amino acids (Figure 3B). Given this structural similarity, we hypothesized that AimA may function in the same pathways as mLCN2. Thus, we asked whether the presence of mLCN2 protein would alter the capacity of AimA to reduce the neutrophil response to soysaponin. We found that the addition of mLCN2 concurrently with soysaponin did not influence the neutrophil response to soysaponin (Figure 3C); however, addition of mLCN2 in conjunction with AimA blocked the protective effect of AimA against soysaponin-induced inflammation. This result suggests that mLCN2 may interfere with AimA’s activity by direct binding, competing for the same host receptor, or acting in a competing pathway.
 
 LCN2’s immunomodulatory activity is mediated, at least in part, by binding iron-sequestering siderophores, including enterobactin from E. coli (Xiao et al., 2017), thus we explored whether AimA had a similar enterobactin-binding activity. The original evidence for LCN2’s enterobactin binding came from the protein crystal structure of human LCN2, in which enterobactin was co-crystalized (Goetz et al., 2002). We did not find enterobactin in the AimA structure, which was expected because the E. coli strain, BL21 DE3, which we used to express AimA, does not produce enterobactin. However, in comparison to the wide enterobactin-binding cleft (calyx) of LCN2, the homologous regions of the N- and C-term domains of AimA are much narrower, are occluded by loops or a helix, and lack the enterobactin-interacting residues of LCN (Figure 3—figure supplement 1A–F). To test whether AimA binds enterobactin, we grew E. coli K12 strain (MG1655) under iron limiting conditions that make it dependent on the siderophore function of its secreted enterobactin, which can be sequestered by exogenously added LCN2 (Goetz et al., 2002). As predicted, when we grew E. coli K12 in the presence of the iron chelator dipyridyl to limit available iron, we observed a dose dependent inhibition of E. coli growth upon addition of purified mouse LCN2 protein (Figure 3—figure supplement 1G). In contrast, when we added the same range of concentrations of purified AimA protein to the E. coli cultures, we saw no growth inhibition (Figure 3—figure supplement 1G), suggesting that AimA does not bind and sequester enterobactin in a similar manner to LCN2.
 
-## Each individual domain of AimA retains neutrophil regulating capacity
+### Each individual domain of AimA retains neutrophil regulating capacity
 
 Human LCN2 exists both as a monomer and a homodimer, and while the functional distinction between the two forms is unknown, the homodimer is the major molecular form secreted by neutrophils (Cai et al., 2010). Both the C- and N-terminal domains of AimA have structural homology to proteins in the calycin superfamily. Although they share only 17% amino acid identity, a structural overlay between the two domains reveals some structural conservation (Figure 4A and Figure 4—figure supplement 1A). Because human LCN2 exists as both a monomer and homodimer and the two domains of AimA each have a lipocalin-like fold, we asked if each domain alone was sufficient to alter the intestinal neutrophil response. The individual domains were not as soluble as full-length AimA, but we were able to crudely purify each domain. Concurrently with soysaponin, we added approximately 100 ng/mL of the domain of interest to zebrafish from 4 to 6 dpf. We found that both the N- and C-term domains alone were sufficient to reduce the neutrophil response in the soysaponin model of intestinal inflammation (Figure 4B). An in depth analysis of the structural overlay between the N- and C-term domains revealed that seven out of eight β-strands in the barrels align well; however, only seven total residues are in analogous functional positions across the two domains (Figure 4—figure supplement 1). Of these seven residues, two—Val 60/201 and Thr 117/265—stand out as possible candidates to interact with a hydrophobic ligand that could bind inside the barrel cavity. The other five residues may overlap by coincidence or they may be positioned to interact with a promiscuous protein or ligand partner. Furthermore, given the overall structural similarity between the N- and C-term domains, it is possible that critical residues are in a flexible loop region that could become structured upon binding (Figure 4A and Figure 4—figure supplement 1A). Interestingly, both AimA domains have comparable structural similarity with mLCN2 (Figure 4C). While the mLCN2 binding cleft for enterobactin is not conserved in the domains of AimA, the majority of the β-strands in the barrels overlap in all three domains, which suggests these domains could interact with the same binding partner(s) (Figure 4C).
 
-## AimA controls host neutrophil response and promotes Aeromonas colonization
+![Figure 4.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig4-v1.jpg)
+
+**Figure 4.:** (A) Overlay of C-term and N-term domains of AimA using PDBeFold. (B) Conventionally raised (CV) fish fed soysaponin (SS) and treated with either purified full-length AimA or purified N-term (NT) or C-term (CT). Each dot represents the average percent of neutrophil influx in a flask of 15 fish from the average neutrophil influx of a control flask (soysaponin only) of 15 fish. n ≥ 9 flasks from at least three independent experiments. Letters indicate significantly different groups; ANOVA with multiple comparisons. (C) Overlay of C- and N-term domains of AimA and mLCN using PDBeFold.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Structure-based sequence alignment of N-term and C-term domains of AimA. Black text indicates regions that don’t align in the structures, colored text are regions that do. Blue arrows, β-strands, and red cylinders, α-helices, above the text represent the secondary structure, with the top symbols corresponding to the N-term domain. Stars show the seven residues that align in the structures, with red stars indicating the Val and Thr that may be functionally relevant. (B) Overlay of N-term (orange) and C-term (teal) domain of AimA. The seven structurally conserved residues are mapped on and shown as sticks (gray = carbon, red = oxygen, blue = nitrogen). (C) Full length AimA structure with the seven structurally conserved regions shown as sticks.
+
+### AimA controls host neutrophil response and promotes Aeromonas colonization
 
 With a clear understanding that AimA controls the host intestinal neutrophil response, we next asked whether the activity of AimA also increases Aeromonas fitness, thus facilitating a mutualistic relationship with the host. We began by asking how prevalent AimA was across bacterial genomes. Knowing that proteins in the calycin superfamily have low sequence conservation, we were not surprised to find AimA homologues by sequence similarity only within the Aeromonas genus (Figure 5—figure supplement 1A). We found an almost identical homologue (99%) to AimA in a zebrafish intestinal Aeromonas isolate, ZOR0001, referred to here as ZF Aer (Table 1) (Stephens et al., 2016). Some Aeromonas species, including A. veronii strain Hm21 (Table 1), have both AimA and a second copy, which we named AimB. AimB is distantly related to AimA by amino acid sequence conservation (27%), yet a model generated by the Iterative Threading ASSEmbly Refinement (I-TASSER) program of the structure of AimB overlays directly on the structure of AimA (Figure 5A) (Yang et al., 2015; Roy et al., 2010; Zhang, 2008). A reexamination of our mass spectrometry analysis of the ΔT2C CFS uncovered peptides corresponding to AimB that were enriched in the sample from ΔT2C compared to the ΔT2 mutant, although the difference between the two samples was less than our original threshold (Supplemental file 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig5-v1.jpg)
+
+**Figure 5.:** (A) Structural overlay (PDBeFold) of AimA (blue) and the model of AimB (purple) generated by I-TASSER using AimA as a threading structure. (B) Colonization level of wild-type ZF Aeromonas and ZF Aer ΔAimA. The colonization defect of ZF Aer ΔAimA is rescued by treatment with 100 ng/mL purified AimA. (C) Colonization level of wild-type Aeromonas, ΔAimA, ΔAimB, and ΔAΔB. Each of the single mutants colonizes as well as wild type, while the double mutant has a significantly reduced colonization level. This phenotype is rescued by treatment with 100 ng/mL purified AimA. (D) Intestinal neutrophil response to ZF Aer and the colonization defect of ZF Aer ΔAimA. (E) Intestinal neutrophil response to wild-type Aeromonas, ΔAimA, ΔAimB, and ΔAΔB. Each of the single mutants induces a similar neutrophil response to wild type, while the double mutant induces significantly greater response. This phenotype is rescued by treatment with 100 ng/mL purified AimA for both Aeromonas isolates. For all graphs, each dot represents one fish; n ≥ 23 from at least three independent experiments. Letters indicate significantly different groups, ANOVA with multiple comparisons.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Clustal Omega alignment of six AimA homologues with AimA. The predicted secretion signal, the linker between the N- and C-term, and two possible lipocalin SCRs are indicated on the alignment. (B) In vitro growth curves of Aer ΔaimA, Aer ΔaimB, and Aer ΔAΔB in A. veronii strain Hm21, and ZF Aer ΔaimA in the zebrafish Aeromonas background do not have growth defects in vitro. (C) In vitro growth curves of wild type Aeromonas (Aer) and Aer ΔAΔB grown in iron limiting conditions (+dipyridyl) or with a vehicle control (DMSO).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Comparison of WT ZF Aeromonas (ZOR001) and ZF Aer ΔAimA colonizing the zebrafish intestine for 24 hr (4–5 dpf), 48 hr (4–6 dpf), or 72 hr (4–7 dpf). *p<0.05, Students T test. N > 14, from at least two independent experiments.
 
 To determine whether the bioactive protein AimA and its homologue AimB benefit Aeromonas, we constructed deletion strains of each gene individually and of both genes in A. veronii strain Hm21 (Aer ΔaimA, Aer ΔaimB, and Aer ΔAΔB) and an AimA deletion in the ZF Aer background (ZF Aer ΔaimA). All of these mutants displayed normal growth in vitro in rich media (Figure 5—figure supplement 1B). Because AimA has structural homology to LCN2, which binds siderophores, and Aeromonas species make several siderophores, including enterobactin (Maltz et al., 2015), we asked whether AimA functions in iron acquisition for Aeromonas by testing the ability of wild type Hm21 and the Aer ΔAΔB mutant to grow in iron depleted media containing dipyridyl. We found that the two strains had identical growth curves when grown under iron starvation (Figure 5—figure supplement 1C), suggesting that AimA and AimB do not function in iron acquisition for Aeromonas.
 
@@ -75,13 +453,13 @@ We next tested whether colonization defects of the aim deficient strains could b
 
 Because purified AimA reduces the intestinal neutrophil response (Figure 3A,C), we hypothesized that the aim deletion strains would induce more inflammation, and thus upon mono-association could create a less hospitable intestinal environment for Aeromonas colonization. To test our hypothesis, we quantified intestinal neutrophil numbers in response to Δaim mono-associations at 7 dpf, corresponding to the time point when the bacterial colonization deficit for ZF Aer ΔaimA was apparent (Figure 5—figure supplement 2). We found that zebrafish mono-associated with ZF Aer ΔaimA exhibited significantly higher intestinal neutrophil counts as compared with those colonized with wild-type ZF Aer (Figure 5D), despite carrying a lower bacterial load (Figure 5B). Similarly, zebrafish colonized with the double mutant, Aer ΔAΔB, had significantly higher neutrophil counts than fish colonized with wild-type Aer (Figure 5E), despite being colonized at a lower level (Figure 5C). Notably, the Aer ΔaimA and Aer ΔaimB single mutants, which did not exhibit decreased colonization in mono-associations, also did not induce higher intestinal neutrophil numbers (Figure 5E). For both Aeromonas lineages, when exogenous AimA was added to the flasks of fish mono-associated with inflammation-inducing Δaim strains, the protein reduced neutrophil numbers back to normal levels (Figure 5D,E) and at the same time restored colonization levels (Figure 5B,C).
 
-## AimA promotes host survival of inflammatory challenge
+### AimA promotes host survival of inflammatory challenge
 
 We previously showed that resident zebrafish bacterial species can vary dramatically in their per capita impact on host response to bacterial colonization (Rolig et al., 2015). By extrapolating the number of neutrophils elicited per 104 colonizing bacteria, we calculated that Aer ΔAΔB is much more immuno-stimulatory that the wild-type strain, recruiting nearly twice the number of neutrophils, on average, for the same number of bacteria (Figure 6A). This suggests that the Aim proteins function to reduce Aeromonas’ immune stimulation, allowing it to reach high colonization density without eliciting a strong inflammatory response.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/37172/elife-37172-fig6-v1.jpg)
 
-**Figure 6.:** Aeromonas ΔAΔB causes decreased survival rate.(A) The per capita effect of wild-type Aeromonas, ΔAimA, ΔAimB, and ΔAΔB. Each dot represents the average neutrophil response from a flask of 15 fish divided by the average colonization level from a flask of 15 fish, normalized to 104. (B) Survival curve of zebrafish mono-associated with wild-type A. veronii (N = 163), ΔAimA (N = 139), ΔAimB (N = 174), ΔAΔB (N = 148), and ΔAΔB + AimA (N = 60). *indicates significant difference from the survival curve with wild-type Aeromonas, Mantel-Cox test. (C) myd88-/- transgenic fish lack a neutrophil response to bacteria. Each dot represents one fish. (D) ΔAΔB colonization is rescued to wild-type colonization levels in myd88-/- transgenic fish. Further, both wild-type Aeromonas and ΔAΔB reach significantly higher colonization levels in the myd88-/- transgenic fish compared to wild-type fish, indicating that the innate immune response limits commensal bacterial growth. (E) Survival curves of myd88-/- zebrafish over a 3 day infection. GF myd88-/- (N = 45), CV myd88-/- (N = 120), Aer myd88-/- (N = 100), ΔAΔB myd88-/- (N = 124). (F) Survival curve of conventionally raised (CV) fish treated with LPS (N = 163), with LPS and AimA (N = 163), with LPS and AimB (N = 121), or with LPS and mLCN (N = 69). Letters next to key indicate significant difference between the survival curves, Mantel-Cox test. For all graphs, letters indicate significance by ANOVA with multiple comparisons.10.7554/eLife.37172.026Figure 6—source data 1.Aeromonas ΔAΔB causes decreased survival rate.
+**Figure 6.:** (A) The per capita effect of wild-type Aeromonas, ΔAimA, ΔAimB, and ΔAΔB. Each dot represents the average neutrophil response from a flask of 15 fish divided by the average colonization level from a flask of 15 fish, normalized to 104. (B) Survival curve of zebrafish mono-associated with wild-type A. veronii (N = 163), ΔAimA (N = 139), ΔAimB (N = 174), ΔAΔB (N = 148), and ΔAΔB + AimA (N = 60). *indicates significant difference from the survival curve with wild-type Aeromonas, Mantel-Cox test. (C) myd88-/- transgenic fish lack a neutrophil response to bacteria. Each dot represents one fish. (D) ΔAΔB colonization is rescued to wild-type colonization levels in myd88-/- transgenic fish. Further, both wild-type Aeromonas and ΔAΔB reach significantly higher colonization levels in the myd88-/- transgenic fish compared to wild-type fish, indicating that the innate immune response limits commensal bacterial growth. (E) Survival curves of myd88-/- zebrafish over a 3 day infection. GF myd88-/- (N = 45), CV myd88-/- (N = 120), Aer myd88-/- (N = 100), ΔAΔB myd88-/- (N = 124). (F) Survival curve of conventionally raised (CV) fish treated with LPS (N = 163), with LPS and AimA (N = 163), with LPS and AimB (N = 121), or with LPS and mLCN (N = 69). Letters next to key indicate significant difference between the survival curves, Mantel-Cox test. For all graphs, letters indicate significance by ANOVA with multiple comparisons.
 
 Knowing that loss of the Aim proteins resulted in both a significantly increased per capita effect and intestinal neutrophil response, we explored whether the increased neutrophil response led to other downstream consequences for the host by monitoring the survival rate of mono-associated fish. By 72 hr post-inoculation, the survival rate of zebrafish colonized with wild-type Aer was 92% (n = 163). We observed a significant decline in the survival of fish mono-associated with Aeromonas lacking Aim genes [Aer ΔaimA (n = 139), Aer ΔaimB (n = 174), and Aer ΔAΔB (n = 148)], with survival rates of 64%, 73%, and 55%, respectively (Figure 6B). Remarkably, this decreased survival rate was rescued back to 90% by the presence of purified AimA protein (n = 60; Figure 6B). These data demonstrate that the Aim proteins act to promote both bacterial colonization and host survival, identifying AimA as a key mediator of host-bacterial mutualism.
 
@@ -91,7 +469,7 @@ Given the increase in bacterial colonization and fish death in the myd88-/- fish
 
 ## Discussion
 
-## A universal feature of animals is their co-existence with resident microbial communities.
+### A universal feature of animals is their co-existence with resident microbial communities.
 
 Appropriate modulation of host immune responses to resident microbes is critical for maintaining health, with too muted a response leaving hosts susceptible to microbial overgrowth (Dukowicz et al., 2007; Rolig et al., 2017) and too aggressive a response wreaking havoc on both host tissue and resident microbiota (Huttenhower et al., 2014). Fitness effects of host-bacterial interactions are often considered from the host perspective, yet it is essential to examine both sides of these partnerships to understand how these interactions evolve and persist. Here we describe the discovery of AimA, a bacterial immunomodulatory protein secreted by Aeromonas that is required during bacterial colonization of larval zebrafish to prevent an intestinal inflammatory response that is detrimental to both partners. We determined the molecular structure of AimA and show that it consists of two structurally similar lipocalin-like domains, each of which acts to suppress intestinal inflammation. We demonstrate that purified AimA protein is protective against host intestinal inflammation and LPS intoxication and simultaneously rescues Aeromonas growth in the context of inflammation. When the inflammatory response is attenuated in myd88 deficient hosts, then the bacterial colonization advantage associated with AimA production is eliminated, indicating that it is AimA’s anti-inflammatory activity that benefits Aeromonas.
 
@@ -107,37 +485,187 @@ Given the constraints of bacterial-host coexistence in the vertebrate intestine,
 
 ## Materials and methods
 
-## Gnotobiotic zebrafish husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 DE3</td>
+      <td>New England Biolabs</td>
+      <td>C2527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>K12 strain (MG1655)</td>
+      <td>doi: 10.1128/JB.188.3.928–933.2006</td>
+      <td></td>
+      <td>Dr. Matthew Mulvey, Univ. of Utah</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aeromonas veronii)</td>
+      <td>HM21S; Aer; Aeromonas Hm21; Hm21</td>
+      <td>doi:10.1128/AEM.01621–10</td>
+      <td></td>
+      <td>Parent strain, SmR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (A. veronii)</td>
+      <td>HE-1095; Aer DT2</td>
+      <td>doi:10.1128/AEM.01621–10</td>
+      <td></td>
+      <td>Hm21S::interrupted exeM mTn5 KmR SmR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (A. veronii)</td>
+      <td>HEC-1344; Aer DT2C</td>
+      <td>doi:10.1128/AEM.01621–10</td>
+      <td></td>
+      <td>HE-1095::Tn7 containing TpR exeMN + promoter region</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (A. veronii)</td>
+      <td>ASRC7; Aer DaimA</td>
+      <td>this study</td>
+      <td></td>
+      <td>Hm21S aimA::cmR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (A. veronii)</td>
+      <td>ASRD5; Aer DaimB</td>
+      <td>this study</td>
+      <td></td>
+      <td>Hm21S DaimB</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (A. veronii)</td>
+      <td>ASRD4; Aer DADB</td>
+      <td>this study</td>
+      <td></td>
+      <td>Hm21S aimA::cmR; DaimB</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (A. veronii)</td>
+      <td>ZOR0001; ZF Aer</td>
+      <td>doi:10.1038/ismej.2015.140</td>
+      <td></td>
+      <td>Zebrafish Aeromonas isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (A. veronii)</td>
+      <td>ZOR0001; ZF Aer DaimA</td>
+      <td>this study</td>
+      <td></td>
+      <td>ZOR0001 aimA::cmR</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>AB x Tu strain; wild type zebrafish</td>
+      <td>UO Zebrafish facility</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>myd88-/-</td>
+      <td>PMID: 28973938</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(BACmpx:GFP) i114; mpx:GFP</td>
+      <td>doi:10.1182/blood -2006-05-024075</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET21B</td>
+      <td>Genscript</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LPS, E. Coli O111:B4</td>
+      <td>Sigma</td>
+      <td>L2630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Lipocalin 2, LCN2, Siderocalin</td>
+      <td>Biolegend</td>
+      <td>588002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>AimA</td>
+      <td>this study</td>
+      <td>NCBI hypothetical protein WP_021230730.1</td>
+      <td>see Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>AimB</td>
+      <td>this study</td>
+      <td>NCBI hypothetical protein WP_021230165.1</td>
+      <td>see Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>mLCN2</td>
+      <td>this study</td>
+      <td>NCBI gene NM_008491.1</td>
+      <td>see Materials and Methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Gnotobiotic zebrafish husbandry
 
 All zebrafish experiments were performed following protocols approved by the University of Oregon Institutional Animal Care and Use Committee and followed standard zebrafish protocols (Westerfield, 2000). Conventionally-raised (CV) wild-type (AB x Tu strain), Tg(BACmpx:GFP)i114 (referred to as mpx:GFP) (Renshaw et al., 2006) and myd88-/- (Burns et al., 2017) were maintained as described (Westerfield, 2000). Zebrafish embryos were derived germ free (GF) as previously described (Melancon et al., 2017). Subsequently, 15 GF embryos were transferred to sterile tissue culture flasks (25 cm2, Techno Plastic Products, Trasadingen, Switzerland) with 15 mL embryo medium (EM) (Melancon et al., 2017). Monoassociated zebrafish were generated by inoculating flasks with 4 dpf GF zebrafish with 106 colony forming units (CFU)/mL of each bacterial strain. GF flasks were chosen at random for their respective treatment, and the researcher was blinded to the treatment group until after data collection. Bacteria used for monoassociations were zebrafish isolate Aeromonas ZOR0001 (Stephens et al., 2016), Aeromonas ZOR0001ΔaimA, Aeromonas ZOR0001 ΔaimA complement, Aeromonas HE-1095 (ΔT2) (Maltz and Graf, 2011), Aeromonas HEC-1344 (ΔT2C) (Maltz and Graf, 2011), Aeromonas Hm21S (Graf, 1999), Hm21S ΔaimA, Hm21S ΔaimB, and HM21S ΔaimAΔaimB. Control CV fish were prepared GF, as above, and inoculated with 1 mL of fish facility water on 4 dpf. All manipulations to the GF flasks were performed under a class II A/B3 biological safety cabinet. The flasks were kept at 28° C until analysis of fluorescent myeloperoxidase positive (MPX+) cells on 7 dpf.
 
 Aeromonas mutants were created using plasmids and protocols as described in Wiles et al. (2018). Briefly, Aeromonas mutants were constructed using homologous recombination of 1 kb regions upstream and downstream of the aimA gene to replace aimA with a chloramphenicol resistance gene. The aimB mutant was constructed in a similar manner, except as a markerless deletion by first generating a merodiploid strain.
 
-## Histology and quantification of neutrophils
+### Histology and quantification of neutrophils
 
 Zebrafish larvae were fixed in 4% paraformaldehyde (PFA) overnight. Whole larvae were stained with Myeloperoxidase kit (Sigma) following the manufacturer’s protocol and processed and analyzed as previously described (Bates et al., 2007), except that MPO +cells were quantified in whole dissected intestines rather than tissue sections. For analysis of neutrophils in mpx:GFP fish, GFP +cells in the intestine were quantified as previously described (Rolig et al., 2015). Briefly, the mpx:GFP zebrafish were anesthetized in Tricaine (Western Chemical, Inc., Ferndale, WA) and mounted in 4% methylcellulose (Fisher, Fair Lawn, NJ), and their intestines were sterilely dissected. The number of GFP-positive cells was quantified visually for each fish using a fluorescent microscope (SteREO Discovery.V8, Zeiss).
 
-## Microbiota quantification
+### Microbiota quantification
 
 To determine the CFU/intestine, dissected zebrafish intestines were placed in 100 μL sterile EM, homogenized in a bullet blender (Next Advance), diluted, and cultured on tryptic soy agar (TSA, BD, Sparks MD). The TSA plates were incubated at 30° C overnight and then colonies were counted.
 
-## Concentration and fractionation of cell-free supernatant
+### Concentration and fractionation of cell-free supernatant
 
 Aeromonas HEC-1344 or E. coli BL21 were grown overnight to stationary phase. Then 500 μL of the overnight culture was used to inoculate a 50 mL culture, which was kept shaking at 30° C for 2 hr, until the bacteria had grown through exponential and into stationary phase (OD of approximate 0.6). To overexpress proteins of interest, 1 mM of IPTG was added to the cultures during exponential growth phase and allowed to grow for an additional 2 hr at 30° C. To prepare the CFS, the 50 mL cultures were centrifuged at 7000 x g for 10 min at 4° C. Subsequently, the supernatant was filtered through a 0.22 μm sterile tube top filter (Corning Inc., Corning, NY). The sterile supernatant was concentrated at 4° C for 1 hr at 3000 x g with a centrifugal device that has a 10 kDa weight cut off (Pall Life Sciences, Ann Arbor, MI). The concentration of the supernatant was determined with a Nanodrop and inoculated into the flasks at a final concentration of 500 ng/mL.
 
 Ammonium sulfate fractionation experiments were done as previously described (Hill et al., 2016). Briefly, unconcentrated CFS from a 50 mL overnight culture of Aeromonas HEC-1344 was fractionated by slowly adding cold 100% ammonium sulfate until solutions reached 20%, 40%, and 60% ammonium sulfate. Precipitated proteins were collected by centrifugation at 4° C, 15000 g for 15 min. Recovered proteins were resuspended in cold EM, dialyzed for 2–3 hr at 4° C, then added to mono-associated fish flasks at a concentration of 500 ng/mL.
 
-## Mass spectrophotometry
+### Mass spectrophotometry
 
 The protein constituents of concentrated cell free supernatants from Aeromonas HE-1095 and Aeromonas HEC-1344 (Maltz and Graf, 2011) were determined by analysis of peptide MS/MS spectra at the Proteomics Shared Resource Facility at Oregon Health and Sciences University in Portland, Oregon.
 
-## Inflammatory assays
+### Inflammatory assays
 
 Soysaponin (Sigma) was mixed with Zieglers fish food at a concentration of 0.3%. Ten CV zebrafish were maintained 10 mL EM in 60 × 15 mm petri dishes. Larval fish were fed once daily from 4 dpf to 6 dpf. During each feeding, the larvae had access to the food for 3–4 hr before being washed into fresh EM. For experiments with mLCN2, recombinant mouse LCN2 (Biolegend) was added to the fish EM at a concentration of 100 ng/mL after the soysaponin feeding on 4 dpf and 5 dpf after the fish were moved into fresh EM.
 
 To induce LPS intoxication, CV zebrafish were treated with 600 μg/mL LPS (Sigma) on 5 dpf and monitored for survival for the following 2 days. In additional treatment groups, 100 ng/mL AimA, AimB, or mLCN (purified as described below) were added on 4 dpf.
 
-## AimA, AimB, and mLCN2 protein purification
+### AimA, AimB, and mLCN2 protein purification
 
 The aimA gene was PCR amplified from gDNA excluding the 5’ 66 nucleotide (22 amino acid) secretion signal and cloned into pET21b using NdeI and XhoI restriction sites. The resultant gene product (NCBI hypothetical protein WP_021230730.1) expressed well in E. coli BL21 DE3 as a C-terminal 6X His tagged protein of 300 amino acids long (including His tag and linker).
 
@@ -147,13 +675,13 @@ The aimB gene, excluding the 5’ 57 nucleotide (19 amino acid) secretion signal
 
 The mouse lipocalin2 gene (NCBI gene NM_008491.1), excluding the 5’ 63 nucleotide (21 amino acids) secretion signal, was cloned into pET21b (GenScript), using Nde1 and Xho1 restriction sites. Mouse LCN2 with a C-term 6X His tag expressed well in E. coli BL21 DE3 using 0.25 mM IPTG at 18° C overnight. mLCN2 was purified using Ni-NTA agarose resin (Qiagen) in a gravity column with increasing concentrations of imidazole from 10 to 30 mM, and eluted with 50 mM imidazole. The resultant 22 kDa protein (189 amino acids including His tag and linker) was dialyzed into 300 mM NaCl, 50 mM potassium phosphate pH 7 and 5 mM BME. The dialyzed protein was concentrated and confirmed to be >95% pure by SDS PAGE.
 
-## AimA protein crystallization
+### AimA protein crystallization
 
 Purified AimA with C-terminal 6x His tag was concentrated to 10.9 mg/mL and set up in hanging drops as 1 μL protein: 1 uL well solution at room temperature. AimA crystallized in thick hexagons in 3.5 M sodium formate, 75 mM NaCl, 25 mM HEPES pH 7.9 and 2.5 mM BME. One to two weeks after the crystals grew, they were transferred to wells containing 3.8 M sodium formate to toughen them up for approximately one week. The heavy atom derivative crystals were then transferred to drops with 3.8 M sodium formate, 0.5 M NaI (for iodide data set) and 15% glycerol (as a cryoprotectant) for several hours before being scooped and flash frozen in liquid nitrogen for data collection at the Advanced Light Source in Berkeley, CA, beamline 5.0.2 using the Pilatus detector at a wavelength of 1.0 Å. The native crystals were transferred to 3.8 M sodium formate and 15% PEG 200 briefly, then flash frozen in liquid nitrogen for data collection as described for the iodide soaked crystals.
 
-## Structure determination of AimA
+### Structure determination of AimA
 
-## Data processing
+#### Data processing
 
 The heavy atom derivative was solved by the single-wavelength anomalous diffraction (SAD) method from a single crystal derivatized with I-, with data collected at wavelength λ = 1 Å. The data set was integrated and scaled to resolution 2.7 Å using HKL3000 (Minor et al., 2006) with the merging analysis indicating the P622 space group. Although data were isotropic, diffraction spots were smeared in a manner indicating the presence of order-disorder. In addition, the scaling B-factor increase of ~40 Å2, which is equivalent to a dose of ~40 MGy, indicated severe radiation damage. Therefore, it was necessary to apply the ‘automatic corrections’ computational procedure to optimize the error model (Borek et al., 2010; Borek et al., 2013; Borek et al., 2007), and this was essential for the success of the experimental phasing described below.
 
@@ -161,14 +689,14 @@ The estimated level of anomalous signal was ~3.6% of the native intensity. The 
 
 Two native AimA datasets from separate crystals were indexed and integrated with iMosflm 7.2.1 (Battye et al., 2011) and scaled using SCALA (Collaborative Computational Project, Number 4, 1994). The two datasets were found to be isomorphous, and were combined using POINTLESS (Collaborative Computational Project, Number 4, 1994). The high-resolution cutoff was determined by the method of Karplus and Diederichs (Karplus and Diederichs, 2012) using a CC1/2 of >0.3 and completeness of >50% in the highest resolution shell. This method has been utilized in numerous other studies (Perkins et al., 2016; Evans and Murshudov, 2013; Kern et al., 2013) and has been cited over 900 times since its publication in Science in 2012. Using this criteria the correlation between two halves of the data are used to determine the point at which signal falls away into noise (Evans and Murshudov, 2013), and Rmerg values can rise to values much higher than what has traditionally been thought of as allowable. Using this strategy we were able to extend the resolution from 2.9 Å (where the data would have been cut based on Rmerg ~0.6) to 2.3 Å. To further test the validity of using this noisy high-resolution data to refine the model, a series of paired refinements were conducted (Karplus and Diederichs, 2012). The model was first refined using data out to 2.9, 2.7, 2.5, or 2.3 Å and then, since R values are only comparable when calculated at the same resolution (Karplus and Diederichs, 2012), R and Rfree were calculated for each refined model at 2.9 Å (Figure 2—figure supplement 2). The extra resolution improves both R (higher value) and Rfree (lower value), showing that the model is improved in predictive quality and is less overfit using the extended resolution cutoff. In this case CC1/2 remains quite high at 0.9 in the high-resolution shell, and the <I/σ >at 1.4 is not far below a traditional cutoff of 2.0. Data statistics are summarized in Table 2.
 
-## Structure refinement
+### Structure refinement
 
 Manual model building was performed using Coot 0.8.1.6 (Emsley and Cowtan, 2004) and refinement was carried out using PHENIX 1.12–2829 (Adams et al., 2010). Initial rigid body refinement resulted in R/Rfree values of 26.5/28.3%. Using the extended resolution improved the electron density maps and allowed placement of additional water molecules, two formate molecules (present at 3.5 M in the crystallization buffer), N-terminal residues 1–8, and an alternate chain path for residues 153–165, improving R/Rfree to 20.9/24.8%. Residues 180–181 are at the tip of a disordered loop and were not modeled, and residues 293–294 and the C-terminal His-tag beyond it are not visible in the electron density. Electron density is weak in several regions including the N-terminus and several loops, but the chain path was clear enough to build at least the backbone atoms for these residues. In late stages of refinement, TLS was implemented using one group per chain, dropping R/Rfree to 17.9/20.9%. B-factor weights were optimized in the final refinement step, yielding final R/Rfree of 17.2/20.4% for the final AimA model (Table 2).
 
-## E.coli and Aeromonas growth curves
+### E.coli and Aeromonas growth curves
 
 E. coli and Aeromonas cultures were grown overnight (37° C and 30° C, respectively) from a glycerol freezer stock in Luria Bertani (LB) broth to stationary phase. The cultures were back-diluted 1:100 the next morning in LB and loaded into a transparent 96-well plate. We used a total volume of 200 μL per well. 2,2’-dipyridyl (Sigma-Aldrich) titrations in DMSO were administered in 10 μL treatments for the Aeromonas growth curves. For the E. coli growth curves, AimA and mLCN titrations were administered in 20 μL treatments, with dipyridyl added to 300 μM in the LB 1:100 back-dilution. Controls for the Aeromonas and E. coli growth curves were treatments of DMSO or protein buffer (300 mM NaCl, 50 mM potassium phosphate pH 7, 5 mM BME), respectively. Growth (OD 600 nm) at 30° C was monitored using a FLUOStar Omega (BMG LABTECH) plate reader. Readings were taken every 1 hr for up to 36 hr. Replicate curves (three or four) were plotted with standard deviation using Prism (GraphPad).
 
-## Statistical analysis
+### Statistical analysis
 
 The appropriate sample size for experiments quantifying intestinal neutrophils and bacterial colonization level was estimated a priori using a power of 84% and a significance level of 0.05. From previously published data on intestinal neutrophil quantification (Rolig et al., 2015) and zebrafish gut bacterial mono-association colonization (Rolig et al., 2015; Hill et al., 2016) we estimated a effect size of 0.24 for neutrophil influx and 0.35 for bacterial colonization. These parameters suggested using an n of 40 and 23 in order to detect significant changes between treatment groups for either neutrophil influx or bacterial colonization, respectively. Each experiment described herein contains about 10–15 biological replicates (individual fish per treatment group). These experiments of 10–15 fish were repeated multiple times (technical replicates), resulting in pooled data sets ranging from 20 to 70 biological replicates. Grubbs statistical outlier test was applied to the data and data points that met the criteria for a statistical outlier were removed. In the figures, these data are presented as box and whisker plots, which display the data median (line within the box), first and third quartiles (top and bottom of the box), and minimum and maximum values (whiskers). All data points that generate the box and whisker plots are presented as individual points within the plot. These pooled data were analyzed through the statistical software Prism Graphpad software. For experiments measuring a single variable with multiple treatment groups, a single factor ANOVA with post hoc means testing (Tukey) was utilized. A p-value of less than 0.05 was required to reject the null hypothesis that no difference existed between groups of data. For survival curves a Mantel-Cox test was used to determine significance.

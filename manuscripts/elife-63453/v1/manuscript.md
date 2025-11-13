@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Mitochondrial activity determines aging rate and the onset of chronic diseases. The mitochondrial permeability transition pore (mPTP) is a pathological pore in the inner mitochondrial membrane thought to be composed of the F-ATP synthase (complex V). OSCP, a subunit of F-ATP synthase, helps protect against mPTP formation. How the destabilization of OSCP may contribute to aging, however, is unclear. We have found that loss OSCP in the nematode Caenorhabditis elegans initiates the mPTP and shortens lifespan specifically during adulthood, in part via initiation of the mitochondrial unfolded protein response (UPR mt ). Pharmacological or genetic inhibition of the mPTP inhibits the UPR mt and restores normal lifespan. Loss of the putative pore-forming component of F-ATP synthase extends adult lifespan, suggesting that the mPTP normally promotes aging. Our findings reveal how an mPTP/UPR mt nexus may contribute to aging and age-related diseases and how inhibition of the UPR mt may be protective under certain conditions.
+Mitochondrial activity determines aging rate and the onset of chronic diseases. The mitochondrial permeability transition pore (mPTP) is a pathological pore in the inner mitochondrial membrane thought to be composed of the F-ATP synthase (complex V). OSCP, a subunit of F-ATP synthase, helps protect against mPTP formation. How the destabilization of OSCP may contribute to aging, however, is unclear. We have found that loss OSCP in the nematode Caenorhabditis elegans initiates the mPTP and shortens lifespan specifically during adulthood, in part via initiation of the mitochondrial unfolded protein response (UPRmt). Pharmacological or genetic inhibition of the mPTP inhibits the UPRmt and restores normal lifespan. Loss of the putative pore-forming component of F-ATP synthase extends adult lifespan, suggesting that the mPTP normally promotes aging. Our findings reveal how an mPTP/UPRmt nexus may contribute to aging and age-related diseases and how inhibition of the UPRmt may be protective under certain conditions.
 
 ## Introduction
 
@@ -36,49 +36,93 @@ In C. elegans, mild mitochondrial perturbations early in life can extend lifespa
 
 ## Results
 
-## Loss of OSCP/atp-3 during adulthood induces mPTP characteristics
+### Loss of OSCP/atp-3 during adulthood induces mPTP characteristics
 
 The opening of the mPTP is characterized by a loss of MMP as well as an increase in cytosolic Ca2+ and responsiveness to the mPTP inhibitor, CsA. We observed that a reduction in the abundance of OSCP/atp-3 by RNA interference (RNAi) during adulthood caused a loss of MMP as measured by the mitochondrial dye, tetramethylrhodamine methyl ester (TMRM), while RNAi of other OXPHOS subunits from complex I, IV, and V had no effect on the MMP (Figure 1A, B). RNAi of OSCP/atp-3 during adulthood also caused an increase in cytosolic Ca2+ as measured by the intestinal FRET-based Ca2+ reporter, KWN190, while RNAi of subunits from complex IV and complex V did not (Figure 1D, E). CsA rescued the loss of MMP and suppressed the rise of cytosolic Ca2+ caused by RNAi of OSCP/atp-3 during adulthood (Figure 1C, F). Loss of OSCP/atp-3 also induced mitochondrial swelling and fragmentation compared to control, which was rescued by CsA (Figure 1G–J). To determine if a loss of MMP during adulthood was sufficient to recapitulate mPTP characteristics, we tested the effects of FCCP, a potent mitochondrial uncoupler. FCCP induced a loss of MMP when administered during adulthood, but did not lead to an increase in cytosolic Ca2+ (Figure 1—figure supplement 1A, B), suggesting that a loss in MMP is not sufficient to recapitulate mPTP characteristics. Similarly, loss of OSCP/atp-3 RNAi during development, which leads to a loss of MMP, did not lead to an increase in cytosolic Ca2+ (Figure 1—figure supplement 1C, D), demonstrating that phenotypes that result from a loss of OSCP/atp-3 are distinct during adulthood versus development. Overall, these results suggest that loss of OSCP/atp-3 during adulthood uniquely induces the mPTP in C. elegans.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63453/elife-63453-fig1-v1.jpg)
+
+**Figure 1.:** (A) Photomicrographs of mitochondrial membrane potential (MMP) as measured by tetramethylrhodamine methyl ester (TMRM) after RNA interference (RNAi) of OXPHOS subunits. RNAi and TMRM were administered for 48 hr beginning at young adulthood. Representative micrographs shown. (B) Quantification of TMRM intensity from (A). Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. **p≤0.01 by Student’s t-test. I, IV, and V correspond to OXPHOS complexes. a.u.: arbitrary units. (C) Quantification of MMP after RNAi of OSCP/atp-3 and treatment with cyclosporin A (CsA: 15 μM). RNAi and CsA were administered beginning at young adulthood for 24 hr. Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. *p≤0.05, **p≤0.01 by Student’s t-test. (D) Confocal micrograph of intestinal cytosolic Ca2+ as measured by the FRET-based calcium indicator protein D3cpv/cameleon after OSCP/atp-3 RNAi. RNAi was administered for 48 hr beginning at young adulthood. Representative micrograph shown. (E) Quantification of FRET YFP/CFP ratio after RNAi of OXPHOS subunits. RNAi was administered for 48 hr beginning at young adulthood. Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. **p≤0.01 by Student’s t-test. (F) Quantification of FRET YFP/CFP ratio after RNAi of OSCP/atp-3 and treatment with CsA (15 μM). RNAi and CsA were administered beginning at young adulthood for 48 hr. Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. **p≤0.01 by Student’s t-test. (G–J) Confocal micrographs of intestinal mitochondria labeled with GFP (pges-1::GFPmt) in young adults. RNAi and CsA were administered for 48 hr beginning at young adulthood, then worms were removed from the RNAi and CsA and aged until day 7 of adulthood followed by collection for microscopy. Top panels: fluorescent channel; bottom panels: rendering of individual mitochondria. CV: control vector; Ctrl: solvent control; CsA: 15 μM. See Materials and methods for details on rendering.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63453/elife-63453-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) FCCP, the mitochondrial uncoupler, significantly induces a loss in mitochondrial membrane potential (MMP). FCCP was administered for 24–48 hr beginning at young adulthood (YA). Data are the mean ± SEM of ≤ 15 animals from three biological experiments. ***p≤0.0001 by Student’s t-test. (B) FCCP does not affect significantly alter cytosolic Ca2+ using the FRET-based calcium indicator protein D3cpv/cameleon. Data are the mean ± SEM of ≤ 15 animals from three biological experiments. (C) Developmental RNAi of OSCP/atp-3 induces a loss in MMP. RNAi was administered beginning from eggs for 72 hr. Tetramethylrhodamine methyl ester (TMRM) was spotted on seeded plates. ***p≤0.0001 by Student’s t-test. (D) Developmental RNAi of OSCP/atp-3 does not significantly alter cytosolic Ca2+ using the FRET-based calcium indicator protein D3cpv/cameleon compared to post-developmental RNAi. Developmental RNAi was administered beginning from eggs for 72 hr. Post-developmental RNAi was administered for 48 hr beginning from YA. **p≤0.01 by Student’s t-test. (E) qPCR from N2 worms after RNAi of subunits from complex I, IV, and V. RNAi was administered for 48 hr beginning at YA. Data are the mean ± SD ≤ 150 animals combined from two experiments. **p≤0.01, ***p≤0.0001 by Student’s t-test. (F) Immunoblots from N2 worms after RNAi of subunits from complex I and V. RNAi was administered for 48 hr beginning at YA. Representative immunoblots from two biological experiments. Actin was used as a loading control. (G) Fragments per kilobase of transcript per million (FPKM) expression values of various OXPHOS subunits collected at L1 larval stage or YA from wormbase.org.
+
 To determine if RNA expression levels of OSCP/atp-3 may be higher during adulthood compared to other OXPHOS subunits, which would sensitize it to RNAi, we examined available RNAseq data from wormbase.org. Fragments per kilobase of transcript per million (FPKM) expression values of various OXPHOS subunits collected at young adulthood (YA) showed that OSCP/atp-3 did not display higher expression compared to other subunits, and that its expression during larval stages (L1) and YA was also comparable (Figure 1—figure supplement 1G). To verify that the lack of a phenotypes from the other OXPHOS subunits was not due to inefficient RNAi, we checked for RNAi efficiency via qPCR. We observed efficient mRNA reduction for all tested subunits, suggesting that the RNAi was effective (Figure 1—figure supplement 1E). We also examined protein levels for subunits in which antibodies were available and observed that RNAi of the complex I subunit NUO-2 and complex V subunits ATP-1 and ATP-2 resulted in significant knockdown of protein levels (Figure 1—figure supplement 1F, Figure 1—figure supplement 1—source data 1–3). These findings support our conclusions that loss of OSCP/atp-3 uniquely recapitulates mPTP characteristics during adulthood.
 
-## Loss of OSCP/atp-3 during adulthood induces a unique UPRmt
+### Loss of OSCP/atp-3 during adulthood induces a unique UPRmt
 
 A recent study showed that a loss of MMP in C. elegans during development is associated with induction of the UPRmt (Rolland et al., 2019). To determine if RNAi of OSCP/atp-3 selectively induces the UPRmt during adulthood due to its observed loss in MMP (Figure 1A, B), we utilized a GFP reporter under the promoter of the UPRmt chaperone, hsp-6 (phsp-6::GFP) (Yoneda et al., 2004), and compared it to select representative OXPHOS genes encoding complex I, III, IV, and V subunits. RNAi of OXPHOS subunits induced little to no UPRmt if initiated after the last larval stage (L4), which we termed the post-developmental UPRmt (pdvUPRmt) (Figure 2A,B, Figure 2—source data 1). The exception was RNAi of OSCP/atp-3, which induced a robust UPRmt in young adults (Figure 2A, B, Figure 2—source data 1), the timing of which corresponded with the loss in MMP (Figure 1A, B). In contrast, RNAi of all the same genes induced a robust UPRmt if initiated during the early larval stages (L1, L2, and L3) of development (dvUPRmt) (Figure 2A, B). These results are consistent with previous reports demonstrating that the UPRmt is robustly induced during development but poorly induced during adulthood in C. elegans (Durieux et al., 2011; Labbadia and Morimoto, 2015). Treating worms with FCCP during adulthood did not induce the UPRmt (Figure 2—figure supplement 1A), indicating that loss of MMP per se is not sufficient to induce the UPRmt during adulthood. Post-developmental loss of OSCP/atp-3 increased endogenous transcript levels of hsp-6 as well as endogenous HSP-6/mtHSP70 protein levels (Figure 2—figure supplement 1B, C, Figure 2—figure supplement 1—source data 1). Post-developmental loss of OSCP/atp-3 mildly induced the mitochondrial chaperone reporter phsp-60::GFP (Figure 2—figure supplement 1D, E). Neither the UPRER nor the HSR were induced by post-developmental loss of OSCP/atp-3 (Figure 2—figure supplement 1E). RNAi of other mitochondrial genes that are known to induce a dvUPRmt, clk-1 (coenzyme Q hydroxylase), mrps-5 (mitochondrial ribosome), and tomm-22 (translocase of outer mitochondrial membrane) (Baker et al., 2012; Bennett et al., 2014; Houtkooper et al., 2013), did not induce the pdvUPRmt (Figure 2—source data 1). Importantly, we found that the pdvUPRmt was dependent on the master UPRmt transcription factor, atfs-1 (Figure 2C; Haynes et al., 2010), demonstrating that the pdvUPRmt is regulated similarly to the previously described dvUPRmt. Thus, loss of OSCP/atp-3 induces a robust and specific pdvUPRmt, which is dependent on the conserved transcription factor ATFS-1.
 
-## Loss of OSCP/atp-3 during adulthood shortens lifespan
+![Figure 2.](https://cdn.elifesciences.org/articles/63453/elife-63453-fig2-v1.jpg)
+
+**Figure 2.:** (A) Photomicrographs of phsp-6::GFP reporter after developmental or post-developmental RNA interference (RNAi) of OXPHOS subunits. For developmental treatment, worms were exposed to RNAi beginning from eggs for 72 hr. For post-developmental treatment, worms were exposed to RNAi beginning from young adulthood for 48 hr. CV: control vector; dev: development; post-dev: post-development. (B) Quantification of GFP intensity from (A). Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. *p≤0.05, **p≤0.01, and ***p≤0.0001 by Student’s t-test. dv: development; pdv: post-development; I, III, IV, and V refer to OXPHOS complexes. (C) Photomicrographs of the phsp-6::GFP reporter after RNAi of OSCP/atp-3 and atfs-1. Worms were exposed to RNAi beginning from young adulthood for 48 hr. Bar graph represents quantification of GFP intensity. Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. **p≤0.01 by Student’s t-test. CV: control vector RNAi; pdv: post-development. (D) Survival curves of wild-type N2 animals on CV or OSCP/atp-3 RNAi. For developmental RNAi, worms were treated continuously since eggs. For post-developmental RNAi, worms were treated for 48 hr beginning at young adulthood. Representative curves selected from three biological experiments. ***p≤0.0001 by log rank (Mantel–Cox). (E–H) Survival curves of wild-type N2 animals on indicated RNAi initiated at young adulthood for 48 hr. Representative curves selected from three biological experiments. **p≤0.01 by log rank (Mantel–Cox). (I) Survival curves of atfs-1(tm4525) when OSCP/atp-3 RNAi is initiated at young adulthood for 48 hr. Representative curves selected from three biological experiments. **p≤0.01 by log rank (Mantel–Cox). Bar graph is a quantification of percent change in lifespan of N2 or atfs-1(tm4525) mutant. **p≤0.01 by Student's t-test is the mean of the percent change in lifespan ± SEM from three biological experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63453/elife-63453-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Dose–response of FCCP, the mitochondrial uncoupler, on the phsp-6::GFP reporter. Quantification of the two highest doses of FCCP from the phsp-6::GFP. (B) qPCR of hsp-6 and hsp-60 from N2 worms on post-developmental CV or OSCP/atp-3 RNAi. Data are the mean ± SEM of ≤ 150 animals combined from four biological experiments. **p≤0.01, n.s. not significant by Student’s t-test. CV: control vector RNAi. (C) Western blot of mtHSP70/HSP-6 and tubulin (loading control) from worms on post-developmental CV or atp-3 RNAi. Representative blot from three biological experiments. (D) Quantification of phsp-6::GFP and phsp-60::GFP reporters from (E). Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. **p≤0.01, *p≤0.05 by Student’s t-test. (E) Post-developmental RNAi of OSCP/atp-3 mildly induced the mitochondrial phsp-60::GFP reporter but not the UPRER phsp-4::GFP or heat shock response (HSR) phsp-16.2::GFP reporters. Left panel: fluorescent channel; right panel: bright-field channel. (F) Survival curves of wild-type N2 treated with or without developmental COX5B/cco-1 RNAi (from eggs until young adulthood) followed by post-developmental treatment with OSCP/atp-3 RNAi (for 48 hr and then transferred to regular nematode growth medium (NGM) plates for the remainder of the lifespan). Lifespan curves from two pooled biological replicates. dev: developmental; pdev: post-developmental.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63453/elife-63453-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Post-developmental RNA interference (RNAi) of OSCP/atp-3 or COX5B/cco-1 RNAi that was initiated at L4, young adult, and adult stages using the phsp-6::GFP reporter at 25°C. GFP expression was assessed 48 hr after RNAi initiation. Representative pictures from two biological experiments. (B) The phsp-6::GFP reporter worms were treated with developmental or post-developmental OSCP/atp-3 RNAi. Worms were removed from HT115 RNAi bacteria and placed onto OP50 bacteria and GFP expression was assessed at indicated timepoints. Representative pictures from two biological experiments.
+
+### Loss of OSCP/atp-3 during adulthood shortens lifespan
 
 Previous reports have shown that loss of OSCP/atp-3 initiated during development robustly increases lifespan in C. elegans (Dillin et al., 2002), but how loss of OXPHOS subunits during adulthood affects lifespan has not been well studied. We initiated OSCP/atp-3 RNAi during both development and post-development. As previously reported, we found that continuous RNAi treatment initiated during development (beginning from eggs) led to lifespan extension (Figure 2D, Figure 2—source data 2). Worms continuously exposed to OSCP/atp-3 RNAi during post-development experienced a high incidence of matricide (data not shown). To circumvent this outcome, we administered OSCP/atp-3 RNAi to young adults for 48 hr of adulthood and observed approximately a 38% decrease in lifespan independent of matricide (Figure 2D, Figure 2—source data 2). Loss of other OXPHOS subunits had little or no effect on lifespan when administered during adulthood for 48 hr (Figure 2E–H, Figure 2—source data 2). Surprisingly, when putative null atfs-1(tm4525) mutants were exposed to OSCP/atp-3 RNAi during adulthood for 48 hr, we observed only about a 19% decrease in lifespan, suggesting that the initiation of the pdvUPRmt via atfs-1 contributes to reduced lifespan (Figure 2I, Figure 2—source data 2). Thus, we have identified that loss of OSCP/atp-3 has distinct effects in lifespan depending on if RNAi is initiated during adulthood versus development, which has not been previously described in C. elegans.
 
 To further probe the developmental versus post-developmental effects on longevity from the loss of OSCP/atp-3, we tested how post-developmental RNAi of OSCP/atp-3 would affect the longevity of worms treated with COX5B/cco-1 RNAi during development, which has been shown to be sufficient to extend lifespan (Durieux et al., 2011). Developmental treatment with COX5B/cco-1 RNAi followed by post-developmental treatment with OSCP/atp-3 RNAi did not significantly alter the long-lived lifespan (Figure 2—figure supplement 1F, Figure 2—source data 2), suggesting that the effects of developmental COX5B/cco-1 RNAi override the post-developmental effects of OSCP/atp-3 RNAi, potentially due to the epigenetic remodeling that occurs during development (Merkwirth et al., 2016; Tian et al., 2016; Zhu et al., 2020; Shao et al., 2020).
 
-## The post-developmental UPRmt is temporally confined and reversible
+### The post-developmental UPRmt is temporally confined and reversible
 
 Given that the UPRmt has not been studied during adulthood in C. elegans, we sought to determine the window of the UPRmt during adulthood. We initiated RNAi of OSCP/atp-3 beginning at the last larval stage (L4 stage) and every few hours thereafter into adulthood. GFP expression was examined 48 hr after RNAi initiation (Figure 2—figure supplement 2A). We observed that the pdvUPRmt was initiated up to 6 hr after the L4 stage, after which RNAi of OSCP/atp-3 no longer induced the UPRmt. In contrast, RNAi of COX5B/cco-1 of complex IV had no effects on the UPRmt at any of these stages (Figure 2—figure supplement 2A). For all subsequent post-development experiments, RNAi was therefore administered at the young adult stage corresponding to 4 hr after the L4 stage. Thus, the pdvUPRmt is confined to pre-gravid stages of adulthood, corresponding with previous reports showing a global decline in stress responses at the onset of egg-laying (Labbadia and Morimoto, 2015).
 
 Previous studies have shown that developmental RNAi of COX5B/cco-1 RNAi leads to persistent activation of the UPRmt into adulthood, even after removal from RNAi (Durieux et al., 2011). Similarly, we observed that developmental RNAi of OSCP/atp-3 initiated a UPRmt that persisted into adulthood, even after removal from OSCP/atp-3 RNAi (Figure 2—figure supplement 2B). In contrast, removal from post-developmental OSCP/atp-3 RNAi treatment led to a steady decline in the GFP signal (Figure 2—figure supplement 2B), suggesting the activation of the pdvUPRmt is reversible.
 
-## The post-developmental UPRmt is dependent on mPTP factors
+### The post-developmental UPRmt is dependent on mPTP factors
 
 To determine if the pdvUPRmt is initiated in response to the mPTP, we tested pharmacological and genetic modulators of the mPTP on induction of the pdvUPRmt. CsA binds cyclophilins, which in the cytoplasm regulates calcineurin signaling (Liu et al., 1991; Takahashi et al., 1989), while in the mitochondria inhibits the mPTP (Nicolli et al., 1996). To parse out the mitochondrial versus cytoplasmic functions of CsA, we also tested the cytoplasmic-only immunosuppressive drug, FK506, which acts similarly to CsA in that it modulates calcineurin signaling in the cytoplasm (Liu et al., 1991). We observed that CsA strongly inhibited the pdvUPRmt but not dvUPRmt in a dose-dependent manner (Figure 3A, C, Figure 3—figure supplement 1A). In contrast, we found that FK506 had no effect on the pdvUPRmt (Figure 3A, C, Figure 3—figure supplement 1B), demonstrating that CsA acts in the mitochondria to suppress the pdvUPRmt. The mPTP has been shown to be regulated by adenine nucleotide translocases (ANTs) of the inner mitochondrial membrane and loss of ANTs helps prevent the mPTP (Karch et al., 2019). We tested ant-1.1, which is ubiquitously expressed in C. elegans, and ant-1.2, which is expressed predominantly in the pharynx and intestines (Farina et al., 2008). RNAi of ant-1.1 moderately suppressed the pdvUPRmt (Figure 3E) while RNAi of ant-1.2 strongly suppressed the pdvUPRmt, but not the dvUPRmt (Figure 3B, D). In mammals, CsA acts in the mitochondria to inhibit the mPTP by binding and sequestering cyclophilin D, a peptidyl prolyl isomerase (Nicolli et al., 1996). C. elegans contains 17 poorly defined cyclophilins, of which two are predicted to be mitochondrially localized, cyn-1 and cyn-17 (Figure 3—source data 1). RNAi of cyn-1 did not inhibit the pdvUPRmt (Figure 3F) while cyn-17 did (Figure 3B, D) suggesting that cyn-17 may act similarly to cyclophilin D in mediating a conformation change that leads to the mPTP. RNAi of cyn-17 did not affect the dvUPRmt (Figure 3B, D). Finally, we observed that CysA was able to reverse the lifespan shortening caused by OSCP/atp-3 RNAi (Figure 3G), demonstrating that inhibition of the UPRmt can be beneficial under certain conditions. Together, these results show that the pdvUPRmt is regulated by canonical pharmacological and genetic mPTP factors.
 
-## Loss of F-ATP synthase ATPases induces a post-developmental UPRmt
+![Figure 3.](https://cdn.elifesciences.org/articles/63453/elife-63453-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) Photomicrographs of phsp-6::GFP reporter after developmental or post-developmental RNA interference (RNAi) and drug treatments (cyclosporin A (CsA) and FK506, 15 μM). For developmental treatment, worms were treated beginning from eggs for 72 hr. For post-developmental treatment, worms were treated beginning from young adulthood for 48 hr. dev: development; post-dev: post-development. (C, D) Quantification of GFP intensity from (A, B). Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. *p≤0.05,***p≤0.0001 by Student’s t-test; n.s., not significant; CV: control vector. (E, F) Quantification of GFP intensity from phsp-6::GFP reporter after RNAi treatment for 48 hr beginning from young adulthood. (G) Survival curves of wild-type N2 animals on CV or OSCP/atp-3 RNAi with either solvent control or CsA (15 μM). RNAi and CsA were administered beginning at young adulthood for 48 hr and then transferred to regular nematode growth medium (NGM) plates for the remainder of the lifespan. Representative curves selected from three biological experiments. ***p≤0.0001 by log rank (Mantel–Cox).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63453/elife-63453-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Dose–response of cyclosporin A (CsA) administered during development or post-development on OSCP/atp-3 RNA interference (RNAi)-treated phsp-6::GFP reporter worms. Developmental RNAi was administered beginning from eggs for 72 hr. Post-developmental RNAi was administered for 48 hr beginning from young adulthood. (B) Dose–response of FK506 administered during post-development on OSCP/atp-3 RNAi-treated phsp-6::GFP reporter worms. Post-developmental RNAi was administered for 48 hr beginning from young adulthood.
+
+### Loss of F-ATP synthase ATPases induces a post-developmental UPRmt
 
 F-ATP synthase is composed of a membrane-bound proton-driving rotor (Fo), a catalytic ATPase that converts ADP to ATP (F1), and peripheral stalk and supernumerary subunits that help bridge these two portions together (Figure 4E). OSCP/atp-3 sits on the ATPase and helps tether it to the peripheral stalk subunits. We systematically tested via RNAi whether loss of F-ATP synthase subunits other than OSCP/atp-3 could induce a pdvUPRmt. During development, loss of rotor subunits, ATPase subunits, or peripheral stalk and supernumerary subunits all induced a robust UPRmt (Figure 4A, C). In contrast, during adulthood, loss of rotor subunits (c-ring/Y82E9BR.3), peripheral stalk or supernumerary subunits (F6/atp-4, d/atp-5, b/asb-2, e/R04F11.2, f/R53.4), induced little to no UPRmt (Figure 4B, D, Figure 4—source data 1). Loss of the ATPase subunits (α/atp-1, β/atp-2, δ/F58F12.1, ε/hpo-18) induced a mild to moderate UPRmt, though none as robustly as loss of OSCP/atp-3. We observed that post-developmental loss of the α/atp-1 ATPase subunit exhibited the second most robust pdvUPRmt (Figure 4B, D) but did not induce a loss of MMP or a rise in cytosolic Ca2+ (Figure 1A–C). Consistently, we observed a minor shortening of survival due to post-developmental RNAi of α/atp-1 (Figure 4F). These findings support our hypothesis that loss of OSCP/atp-3, but not other F-ATP synthase subunits, activates an mPTP that is coupled to a maladaptive pdvUPRmt.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63453/elife-63453-fig4-v1.jpg)
 
-**Figure 4.:** mt.(A) Developmental RNA interference (RNAi) of all ATP synthase subunits tested induced the phsp-6::GFP reporter. For developmental treatment, worms were exposed to RNAi beginning from eggs for 72 hr. (B) Post-developmental RNAi of ATPase and c-ring subunits but not peripheral stalk or supernumerary subunits of the F-ATP synthase induced the phsp-6::GFP reporter. Worms were exposed to RNAi beginning from young adulthood for 48 hr. post-dev: post-development. (C) Quantification of GFP intensity from (A). Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. ***p≤0.0001 by Student’s t-test. dv: developmental. (D) Quantification of GFP intensity from (B). Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. *p≤0.05, **p≤0.01, and ***p≤0.0001 by Student’s t-test. pdv: post-developmental. (E) Schematic of monomeric F-ATP synthase. White subunits: ATPase; black subunits: H+-rotor/c-ring; gray subunits: peripheral stalk and supernumerary subunits; red subunit: oligomycin sensitivity-conferring protein (OSCP/atp-3). (F) Survival curves of wild-type N2 animals on CV or α/atp-1 RNAi initiated at young adulthood for 48 hr. Pooled survival curves from four biological experiments. **p≤0.01 by log rank (Mantel–Cox). CV: control vector.Figure 4—source data 1.mt (dvUPRmt) or post-developmental UPRmt (pdvUPRmt).
+**Figure 4.:** (A) Developmental RNA interference (RNAi) of all ATP synthase subunits tested induced the phsp-6::GFP reporter. For developmental treatment, worms were exposed to RNAi beginning from eggs for 72 hr. (B) Post-developmental RNAi of ATPase and c-ring subunits but not peripheral stalk or supernumerary subunits of the F-ATP synthase induced the phsp-6::GFP reporter. Worms were exposed to RNAi beginning from young adulthood for 48 hr. post-dev: post-development. (C) Quantification of GFP intensity from (A). Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. ***p≤0.0001 by Student’s t-test. dv: developmental. (D) Quantification of GFP intensity from (B). Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. *p≤0.05, **p≤0.01, and ***p≤0.0001 by Student’s t-test. pdv: post-developmental. (E) Schematic of monomeric F-ATP synthase. White subunits: ATPase; black subunits: H+-rotor/c-ring; gray subunits: peripheral stalk and supernumerary subunits; red subunit: oligomycin sensitivity-conferring protein (OSCP/atp-3). (F) Survival curves of wild-type N2 animals on CV or α/atp-1 RNAi initiated at young adulthood for 48 hr. Pooled survival curves from four biological experiments. **p≤0.01 by log rank (Mantel–Cox). CV: control vector.
 
-## Loss of F-ATP synthase subunits important for the formation of the mPTP suppresses the post-developmental UPRmt
+### Loss of F-ATP synthase subunits important for the formation of the mPTP suppresses the post-developmental UPRmt
 
 Current models posit that the F-ATP synthase forms a pore that is capable of releasing Ca2+ under conditions of high oxidative stress, leading to rupturing of the mitochondria and initiation of cell death cascades. Some models suggest that F-ATP synthase dimers form the mPTP (Figure 5E) and that peripheral and supernumerary subunits are essential for pore formation (Carraro et al., 2014; Giorgio et al., 2013; Guo et al., 2019; Urbani et al., 2019). Other models demonstrate that F-ATP synthase monomers are sufficient for the mPTP and specify the c-ring proton-driving rotor as the actual pore-forming component (Figure 5F; Alavian et al., 2014; Azarashvili et al., 2014; Bonora et al., 2013; Bonora et al., 2017; Mnatsakanyan et al., 2019; Neginskaya et al., 2019). To determine whether the structural integrity of F-ATP synthase subunits was required for the pdvUPRmt, we systematically knocked down OSCP/atp-3 as well as one additional F-ATP synthase subunit via RNAi. When we knocked down the c-ring subunits (color coded black) as well as peripheral and supernumerary subunits (color coded gray) via RNAi in adults, we observed nearly complete inhibition of the OSCP/atp-3 RNAi-mediated pdvUPRmt (Figure 5B, D). When we knocked down the ATPase subunits (color coded white) in adults, we observed that loss of the β/atp-2 subunit robustly suppressed the OSCP/atp-3 RNAi-mediated pdvUPRmt, possibly due to its role in modulating Ca2+ in the mPTP, while loss of α/atp-1 moderately inhibited the pdvUPRmt (Figure 5B, D). Loss of the ATPase subunits δ/F58F12.1 or ε/hpo-18 in adults did not affect the pdvUPRmt (Figure 5B, D). In contrast, dual loss of subunits during development all robustly activated the dvUPRmt (Figure 5A, C). Dual loss of subunits from other OXPHOS complexes (NDUFS3/nuo-2, complex I; COX5B/cco-1, complex IV) had no effect or slightly increased the dvUPRmt and the pdvUPRmt (Figure 5—figure supplement 1A, B). Thus, we find subunits critical for dimerization (peripheral and supernumerary subunits) and proton translocation (c-ring rotor) are required to transduce the OSCP/atp-3 RNAi-mediated pdvUPRmt. We also find that the β/atp-2 subunit, previously found to play an important role in Ca2+ mediated mPTP (Giorgio et al., 2017), is required to transduce the OSCP/atp-3 RNAi-mediated pdvUPRmt. Taken together, these findings support a model in which inhibition of the mPTP via deletion of critical F-ATP synthase subunits inhibits the pdvUPRmt.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63453/elife-63453-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Concomitant RNA interference (RNAi) of OSCP/atp-3 and individual F-ATP synthase subunits during developmental (A) or post-developmental (B) modulated the UPRmt to varying degrees in the phsp-6::GFP reporter strain. (C, D) Quantification of GFP intensity from (A, B). Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. **p≤0.001, ***p≤0.0001 compared to control vector (CV) + atp-3 condition by Student’s t-test. dv: developmental; pdv: post-developmental. (E, F) Models of F-ATP synthase forming a dimeric mPTP (E) or monomeric mPTP (F). White subunits: ATPase; black subunits: H+ rotor/c-ring; gray subunits: peripheral stalk and supernumerary subunits; red subunit: oligomycin sensitivity-conferring protein (OSCP/atp-3).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63453/elife-63453-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Concomitant developmental (A) or post-developmental (B) RNA interference (RNAi) of atp-3 and either cco-1 or nuo-2 induced the phsp-6::GFP reporter. For developmental treatment, worms were exposed to RNAi beginning from eggs for 72 hr. For post-developmental treatment, worms were exposed to RNAi from young adulthood for 48 hr. Bar graphs are the mean ± SEM of ≤ 15 animals combined from three biological experiments. ** p≤0.0001, ***p≤0.0001 by Student’s t-test. n.s., no significant differences from control vector (CV) + atp-3 condition; dvUPRmt: development; pdv: post-development. (C) Dual-RNAi effectively knocks down ATP-3 protein synthesis as measured by the translational patp-3::ATP-3::GFP reporter. (i) 10× photomicrographs of homozygous and heterozygous (bright pharyngeal GFP expression) worms. (ii) 40× photomicrographs of head region of control homozygous worms. (iii) 40× photomicrographs of mid-region of control homozygous worms. (iv) 40× photomicrographs of tail region of control homozygous worms. (D) RNAi of α/atp-1 induces a post-developmental UPRmt similar to OSCP/atp-3 in the phsp-6::GFP reporter. Representative results from two biological experiments. Immunoblot of ATP-1 from phsp-6::GFP reporter worms after dual-RNAi treatment for 48 hr. Representative blots from two biological experiments.
+
 To verify that the use of dual-RNAi did not interfere with knockdown of OSCP/atp-3, we assessed an endogenously expressing patp-3::ATP-3::GFP translational reporter generated via CRISPR-Cas-9 (Figure 5—figure supplement 1C). We observed efficient knockdown of ATP-3 via RNAi in the presence of either β/atp-2 or d/atp-5 RNAi, two subunits that suppress the pdvUPRmt. These findings demonstrate that inhibition of the pdvUPRmt is not due to ineffective RNAi of OSCP/atp-3 but rather the functional consequence of removing additional F-ATP synthase subunits. To examine the effects of dual-RNAi another way, we examined how loss of F-ATP synthase subunits impacted the pdvUPRmt after α/atp-1 RNAi, which induced the second most robust pdvUPRmt (Figure 4B, D). Remarkably, we see the same pattern of pdvUPRmt activation and inhibition as with loss of OSCP/atp-3: loss of the ATPase subunit β/atp-2 and peripheral stalk subunit d/atp-5 suppressed the α/atp-1 RNAi-mediated pdvUPRmt while loss of NDUFS3/nuo-2 and COX5B/cco-1 had no effect (Figure 5—figure supplement 1D). Importantly, immunoblots against α/atp-1 showed similar protein knockdown under all conditions (Figure 5—figure supplement 1—source data 1), confirming that dual-RNAi is an effective method to assess the structural components of the F-ATP synthase.
 
-## Loss of F-ATP synthase subunits important for the formation of the mPTP reverses mPTP characteristics and regulates longevity
+### Loss of F-ATP synthase subunits important for the formation of the mPTP reverses mPTP characteristics and regulates longevity
 
 Based on our observations that loss of peripheral stalk subunits is capable of suppressing the pdvUPRmt, we tested if their loss would also suppress mPTP characteristics. RNAi of peripheral stalk subunits (F6/atp-4, d/atp-5) or the proton-driving rotor c-ring/Y82E9BR.3 rescued the loss in MMP, suppressed the rise in cytosolic Ca2+, and rescued the shortened lifespan caused by RNAi of OSCP/atp-3 (Figure 6A–G, Figure 2—source data 2). Interestingly, RNAi of b/asb-2 did not rescue the loss in membrane potential but did inhibit the rise in cytosolic Ca2+ and rescued lifespan (Figure 6A–D, Figure 2—source data 2). We further examined the intestinal mitochondrial morphology in worms dually treated with OSCP/atp-3 and either F6/atp-4, d/atp-5, or c-ring/Y82E9BR.3 RNAi. Though RNAi of the peripheral and rotor subunits on its own caused aberrant mitochondrial morphology distinct from controls, RNAi treatment rescued the rounded and swollen mitochondrial morphology observed due to OSCP/atp-3 RNAi (Figure 6I–L). Thus, inhibition of key subunits of F-ATP synthase generally reverses the detrimental effects associated with the mPTP/pdvUPRmt nexus.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63453/elife-63453-fig6-v1.jpg)
+
+**Figure 6.:** (A) Testing for epistatic interactions between OSCP/atp-3 and F-ATP synthase subunits on the mitochondrial membrane potential (MMP). RNA interferences (RNAis) were concomitantly administered beginning at young adulthood for 48 hr. Tetramethylrhodamine methyl ester (TMRM) was spotted on seeded plates. Data are the mean ± SEM of ≤ 15 animals combined from four biological experiments. *p≤0.05, **p≤0.01 by Student’s t-test. CV: control vector. (B) Testing for epistatic interactions between OSCP/atp-3 and F-ATP synthase subunits on cytosolic Ca2+ using the FRET-based calcium indicator protein D3cpv/cameleon. RNAis were concomitantly administered beginning at young adulthood for 48 hr. Data are the mean ± SEM of ≤ 15 animals combined from three biological experiments. **p≤0.01 by Student’s t-test. (C–G) Testing for epistatic interactions between OSCP/atp-3 and F-ATP synthase subunits on the survival. Survival curves of wild-type N2 animals treated with RNAi beginning at young adulthood for 48 hr and then transferred to regular nematode growth medium (NGM) plates for the remainder of the lifespan. Lifespan curves from two pooled biological replicates. ***p≤0.0001 by log rank (Mantel–Cox). (H) Survival curves of wild-type N2 animals on CV or CV/c-ring subunit. Lifespan curves from two pooled biological replicates. ***p≤0.0001 by log rank (Mantel–Cox). CV: control vector RNAi. (I–L) Testing for epistatic interactions between OSCP/atp-3 and F-ATP synthase subunits on mitochondrial morphology. Confocal micrographs of intestinal mitochondria labeled with GFP (pges-1::GFPmt) treated with RNAi for 48 hr beginning at young adulthood. Worms were then removed from the RNAi and aged until day 7 of adulthood followed by collection for microscopy. Top panels: fluorescent channel; bottom panels: rendering of individual mitochondria. See Materials and methods for details on rendering.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63453/elife-63453-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Survival curves of wild-type N2 worms on indicated RNA interference (RNAi). RNAi was administered starting from young adulthood for 48 hr and then transferred to regular nematode growth medium (NGM) plates for the remainder of the lifespan. Pooled survival curves from two biological experiments.
 
 While testing the epistatic relationship of the F-ATP synthase subunits, we observed that post-developmental RNAi of c-ring/Y82E9BR.3 on its own was sufficient to significantly extend lifespan (Figure 6H), while the loss of the b/asb-2, F6/atp-4, and d/atp-5 peripheral stalk subunits did not (Figure 6—figure supplement 1, Figure 2—source data 2). Similarly, we had previously observed that loss of the α/atp-1 and β/atp-2 ATPase subunits had minor lifespan shortening effects (Figures 2H and 3F). Thus, loss of the proton-driving c-ring during adulthood uniquely extends lifespan, which is particularly intriguing due to the fact that a plethora of evidence supports a role for the c-ring as the pore-forming component of mPTP (Alavian et al., 2014; Azarashvili et al., 2014; Bonora et al., 2013; Bonora et al., 2017; Mnatsakanyan et al., 2019; Neginskaya et al., 2019) and its involvement in disease (Amodeo et al., 2021; Licznerski et al., 2020; Morciano et al., 2021).
 
@@ -96,54 +140,330 @@ AD and PD both display evidence of the mPTP, and in some instances, elevated UPR
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>N2 Bristol</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>Wild-type</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>SJ4100</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>hsp-6p::GFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>SJ4058</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>hsp-60p::GFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>SJ4005</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>hsp-4p::GFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>CL2070</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>hsp-16.2p::GFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>KWN190</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>rnyEx109[nhx-2p::D3cpv + pha-1(+)], pha-1(e2123) III; (him-5(e1490)V)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>ZC376.7</td>
+      <td>National BioResource Project</td>
+      <td>atfs-1(tm4525)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>PHX1826</td>
+      <td>SunyBiotech</td>
+      <td>qIs48[atp-3(syb1826)]/hT2[bli-4(e937) let-?(q782)]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>SJ4143</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>ges-1p::GFP(mt)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>GL347</td>
+      <td>This study</td>
+      <td>SJ4100 backcrossed 6× to N2 Bristol</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GRP 75 (D9) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-133137</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β tubulin (D-10) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-5274</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (8H10D10) (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3700</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATP5A1 (15H4C4) (mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Catalog # 43-9800</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATP synthase beta (3D5AB1) (mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Catalog # A-21351</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Anti-NDUFS3 (17D95) (mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Catalog # 43-9200</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FCCP (trifluoromethoxycarbonylcyanidephenylhydrazone)</td>
+      <td>Cayman Chemical</td>
+      <td>Item # 15218</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FK506 (tacrolimus)</td>
+      <td>Cayman Chemical</td>
+      <td>Item # 10007965</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetramethylrhodamine methyl ester (perchlorate) (TMRM)</td>
+      <td>Cayman Chemical</td>
+      <td>Item # 21437</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyclosporin A</td>
+      <td>Cayman Chemical</td>
+      <td>Item # 12088</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>v.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>ImageJ http://imagej.nih.gov/ij/</td>
+      <td>1.52A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MitoFates tool</td>
+      <td>http://mitf.cbrc.jp/MitoFates/cgi-bin/top.cgi (Fukasawa et al., 2015).</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>act-1, forward</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>ACGACGAGTCCGGCCCATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>act-1, reverse</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>GAAAGCTGGTGGTGACGATGGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>atp-2, forward</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>GAAGGACAAATCTCCCCACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>atp-2, reverse</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>CGCCACATTCTTCCTTTTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>atp-4, forward</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>AATATGTTGCCTCCCGTGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>atp-4, reverse</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>GGAACAAAAACGTTCATTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>atp-5, forward</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>TCTTCGACGTGCCGACAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>atp-5, reverse</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>AAATGGTAGGAGAGCGATAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>nuo-2, forward</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>TGAAGTTGCTGAGCCAACAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>nuo-2, reverse</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>TCCACACTAACAGAAAATGAGTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cco-1, forward</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>TTTCGGCTATTGTTCGCATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cco-1, reverse</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>GCCGTCTTAGCAAGTTGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>atp-3p::ATP-3::GFP</td>
+      <td>http://www.sunybiotech.com/</td>
+      <td>sgRNA target site</td>
+      <td>Sg1: CCCTTGCCACCGCCATCTAAatt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>atp-3p::ATP-3::GFP</td>
+      <td>http://www.sunybiotech.com/</td>
+      <td>sgRNA target site</td>
+      <td>Sg2:CCGCCATCTAAatttttcccaaa</td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contacts, Gordon Lithgow, glithgow@buckinstitute.org, Julie Andersen, jandersen@buckinstitute.org, and Suzanne Angeli, suzanne.angeli@gmail.com.
 
-## Nematode and bacterial culture conditions
+### Nematode and bacterial culture conditions
 
 Nematodes were maintained on nematode growth medium (NGM) plates. NGM plates were seeded with Escherichia coli OP50 obtained from CGC that was grown in LB broth at 37°C for 18 hr shaking at 225 rpm. Plates with bacteria were dried for 48 hr before use.
 
 For RNAi experiments, E. coli HT115 (DE3) bacteria obtained from the Ahringer and Vidal RNAi Library were used (Kamath et al., 2003; Rual et al., 2004). All RNAi clones were verified via sequencing (Eurofins). RNAi plates were prepared by cooling NGM to 55°C and supplementing with a final concentration of 50 μg/ml carbenicillin and 1 mM Isopropyl β-d-1-thiogalactopyranoside (IPTG). RNAi bacteria were inoculated with one colony of RNAi bacteria into LB with 50 μg/ml carbenicillin and were grown shaking overnight for 18 hr at 37° at 225 rpm.
 
-## Post-developmental timing
+### Post-developmental timing
 
 To achieve synchronous nematode populations, day 1 adult nematodes were allowed to lay eggs for 2 hr on seeded NGM plates. For convenience, nematodes were developed at 25°C on E. coli OP50 until worms were visibly past the L4 stage (loss of crescent) but not yet gravid, approximately 45 hr for wild-type (although the time it takes for the worms to reach the young adult stage varies by strain). Nematodes were shifted to 20°C once they reached adulthood.
 
-## RNAi treatment
+### RNAi treatment
 
 For developmental treatments, synchronized eggs were moved onto plates seeded with RNAi bacteria and developed at 20°C for 72 hr. Nematodes were then either collected for analysis or for lifespans, remained on RNAi bacteria for the remainder of their life for survival analysis. For post-developmental treatments, synchronized eggs were developed on plates with E. coli OP50 at 25°C until the young adult stage and then transferred to RNAi plates at 20°C. Nematodes were collected after 48 hr for analysis or for lifespans, moved onto E. coli OP50 for the remainder of their life.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Approximately 300 adult nematodes were collected; nematode pellets were resuspended in 300 μL RNA Lysis Buffer and frozen. Pellets was thawed, vortexed, and snap frozen three times. Zymo Research Quick-RNA MiniPrep kit was used to extract RNA.
 
-## Lifespans
+### Lifespans
 
 Day 1 adult nematodes were allowed to lay eggs for 2 hr on seeded NGM plates to obtain a synchronous aging population. 5-fluoro-2-deoxyuridine (FUdR) was omitted from plates due to its potentially confounding effects (Angeli et al., 2013). Worms are transferred to freshly seeded bacterial plates every day for the first 7 days of adulthood and then as needed afterwards. Worms were scored as dead when they failed to respond to gentle prodding with a platinum wire. Worms that experienced matricide or bagging were censored.
 
-## TMRM staining
+### TMRM staining
 
 Plates were prepared by spotting seeded NGM plates with a TMRM solution diluted in water to a final concentration of 0.1 μM in the plates. Water was used as a solvent control. Plates were allowed to dry for 24 hr before use. For developmental experiments, synchronized eggs were placed on plates for 72 hr and then nematodes were collected for analysis. For post-developmental experiments, young adult nematodes were placed on plates for 48 hr and then collected for analysis.
 
-## CsA treatment
+### CsA treatment
 
 Plates were prepared by spotting seeded NGM plates with a CsA (stock solution in DMSO) solution diluted in 100% ethanol. Comparable amounts of DMSO and ethanol were used as solvent controls. Plates were allowed to dry for 24 hr before use. For developmental experiments, synchronized eggs were placed on plates for 72 hr and then nematodes were collected for analysis. For post-developmental experiments, young adult nematodes were placed on plates for 48 hr and then collected for analysis; for lifespans, worms were moved to regular NGM plates for the remainder of their life after 48 hr on drug-treated RNAi bacteria.
 
-## Microscopy
+### Microscopy
 
 Worms were anesthetized with 2 mM levamisole and mounted on 2% agarose pads on glass slides. Fluorescence micrographs of GFP and TMRM were taken using a Zeiss Imager A2 at 5× magnification with 600 ms exposure using the ZEN software. GFP expression was enhanced using the brightness/contrast tool in Photoshop. The same parameters were used for all images.
 
 Confocal micrographs of mitochondrially targeted GFP and the cytosolic calcium sensor D3cpv (Zhang et al., 2016) were taken using a Zeiss LSM780 laser scanning confocal microscope using a 63× Plan Apochromat NA1.4. To visualize outlines of mitochondria, Image Analyst MKII (Image Analyst Software, Novato, CA) was used. Selected rectangular regions of interest (ROIs) from the worm intestine were segmented and converted to outlines by a modification of the ‘Segment mitochondria’ pipeline. Emission ratio images of D3cpv were excited at 440 nm and captured at 450–490 nm and 520–560 nm and analyzed in Image Analyst MKII. Images were Wiener filtered, and the ratio of the 540 nm over the 470 nm channel, indicative of cytosolic calcium concentration, was calculated and showed in pseudo-color coding. Emission ratios were determined in ROIs in the posterior intestine by the Plot Ratio function.
 
-## Western blot
+### Western blot
 
 Approximately 30–50 adult worms were collected in S-basal buffer. Supernatant was removed and nematodes were flash-frozen. Worms pellets were resuspended in 2% SDS sample buffer with 2.5% β−mercaptoethanol and samples were boiled for 10 min. Samples were subjected to SDS-PAGE using 4–12% SDS gels (Invitrogen) and transferred to Immun-Blot PVDF Membrane (Bio-Rad) using Bio-Rad western blot criterion apparatus. Membranes were blocked with 5% non-fat dry milk blocking solution; concentrations for antibodies were 1:1000 for primary antibodies and 1:2000 for secondary antibodies.
 
-## Statistics
+### Statistics
 
 Significance between control and experimental groups was determined by using two-tailed Student’s t-test. Asterisks denote corresponding statistical significance: *p<0.05; **p<0.01; ***p<0.0001. Error bars were generated using the standard error of the mean (SEM), typically from three pooled biological replicates. GraphPad Prism 7 was used to plot survival curves. Log rank (Mantel–Cox) test in Prism was used to determine significance between the control and experimental groups.
 
-## GFP quantification
+### GFP quantification
 
 GFP intensity of worms was quantified using ImageJ 1.52A. The ‘integrated density’ of GFP expression and length of worms was measured using ImageJ tools. Integrated density value was normalized by number of worms and average length of worms. The final value is in arbitrary units.

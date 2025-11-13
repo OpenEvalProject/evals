@@ -46,9 +46,17 @@ Here, we address this hypothesis by first establishing that TGFβ/Activin/Nodal 
 
 ## Results
 
-## TGFβ signalling pathway is active in human naïve pluripotent cells
+### TGFβ signalling pathway is active in human naïve pluripotent cells
 
 To assess whether the key effectors of the TGFβ signalling pathway are expressed in naïve hPSCs and to evaluate the cell heterogeneity in their expression (Figure 1a; Figure 1—figure supplement 1a,b), we performed single cell transcriptomic analysis (scRNA-seq) in naïve and primed hPSCs (Figure 1b; Figure 1—figure supplement 1c). As expected, naïve and primed hPSCs clustered separately based on their transcriptomes. All cells expressed pan-pluripotency genes, such as POU5F1 (also known as OCT4), NANOG and SOX2, however, naïve cells uniquely expressed known naïve cell markers, such as DPPA5 and KLF4, and primed cells expressed CD24 and ZIC2 (Figure 1c,d; Figure 1—figure supplement 1c). In addition, differential expression analysis confirmed the specific expression of naïve hPSCs genes, such as KLF4, DPPA3, and TFCP2L1, and primed hPSCs factors including DUSP6, ZIC2, and TCF4 (Figure 1d). Importantly, we found that most TGFβ pathway effectors, such as Activin receptors (ACVRs) and SMAD2-4, are expressed at similar levels in both pluripotent cell types (Figure 1e). Interestingly, several components, including NODAL and GDF3, have higher expression levels in naïve compared to primed hPSCs (Figure 1e).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/67259/elife-67259-fig1-v1.jpg)
+
+**Figure 1.:** (a) Overview of the TGFβ signalling pathway. Extracellular ligands ACTIVIN and NODAL bind to type I (ACVR2A/2B) and type II transmembrane receptors (ALK4/7), and TGFβ binds to TβRI and TβRII/ALK5. NODAL requires the additional transmembrane co-receptor TDGF1 (CRIPTO1). The activated receptor complex phosphorylates the linker region of SMAD2 and SMAD3, which enter the nucleus in complex with SMAD4. They act as transcriptional regulators and induce or repress the transcription of their target loci by recruiting other transcription factors (TF) and epigenetic modifiers. Several negative regulators of the signalling pathway are also shown: LEFTY1/2 block the signalling pathway by binding to the receptors; Cerberus (CER) and Follistatin (FST) block the ligands; SMAD7 inhibits the SMAD2/3 complex. (b) 10X RNA-seq data of naïve and primed hPSCs represented on a UMAP plot. (c) UMAP visualisation of naïve and primed hPSCs reporting the relative expression of respective pluripotent state markers, KLF4 and ZIC2. (d) Heatmap reporting the expression values of selected naïve and primed marker genes divided in pan-pluripotency markers, and naïve- and primed-specific markers within the top 250 differentially expressed genes. (e) Violin plots of the 10X RNA-seq data comparing the transcript expression of TGFβ effectors in naïve and primed hPSCs. (f) Heatmap summarising the transcript expression of TGFβ effectors and pluripotency genes. RNA-seq datasets shown are: in vitro-cultured naïve and primed hPSCs (Collier et al., 2017), hPSCs undergoing naïve to primed state capacitation (Rostovskaya et al., 2019), human pre-implantation embryos (Petropoulos et al., 2016), and epiblast cells within a 3D human blastocyst culture system (Xiang et al., 2020). X8c: 8-cell stage; MOR: morula; eICM: early-ICM; eTE: early-trophectoderm; EPI: epiblast; PE: primitive endoderm; TE: trophectoderm. Dpf: days post-fertilisation. (g) Heatmaps summarising protein abundance levels determined by cell-surface proteomics (Wojdyla et al., 2020) and whole cell proteomics (Di Stefano et al., 2018) for TGFβ effectors in naïve and primed hPSCs. (h) Western blot analysis of TGFβ signalling pathway activation in H9 primed hPSCs (cultured in E8 medium) and in three naïve hPSC lines cultured in t2iLGö medium: embryo-derived HNES1, chemically reset cR-H9, and transgene-reset H9 NK2. Blots show SMAD2 phosphorylation signal (pSMAD2-Ser465/Ser467) and total SMAD2/3 levels in normal conditions (-), and following 1 hr and 24 hr of SB-431542 supplementation to their culture media. Vinculin (VCL) used as a loading control.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67259/elife-67259-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Overview of the conditions used for culturing naïve and primed hPSCs and representative phase-contrast images. (b) RT-qPCR expression analysis of pan-pluripotency genes (Pluri), naïve markers (naïve) and early-stage germ cell layer markers (Diff) in naïve and primed hPSCs. Data show the mean ± SD of three biological replicates, relative to the housekeeping gene RPLP0. (c) UMAP visualisation of naïve and primed cells reporting the relative expression of pluripotency marker SOX2, naïve marker DPPA5, and primed marker CD24. (d) Protein abundance levels for several TGFβ receptors (upper; Wojdyla et al., 2020) and transduction proteins (lower; Di Stefano et al., 2018) in naïve and primed hPSCs. The upper charts show the mean ± SD of three (naïve) or four (primed) biological replicates and were compared using a LIMMA-moderated t test with Benjamini-Hochberg correction (ns, q > 0.05, *q < 0.05, **q < 0.01, ***q < 0.001, ****q < 0.0001). The lower charts show protein abundance of one biological replicate per cell type. (e) Expanded western blot from Figure 1h comparing TGFβ pathway activation in primed H9 cells (cultured in E8 medium) and in three naïve hPSC lines cultured in t2iLGö medium: embryo-derived HNES1, chemically reset cR-H9, and transgene-reset H9 NK2 naïve cells. Blots show SMAD2 phosphorylation signal and total SMAD2/3 in normal conditions (-), and following 1 hr and 24 hr of SB-431542 supplementation to their culture media. Two separate exposures are shown. Vinculin (VCL) used as loading control. (f) Relative quantification of western blot from Figure 1h performed using the software Fiji (ImageJ) reporting the pSMAD2 / Vinculin (VCL) ratio.
 
 We next examined RNA-seq datasets that covered different stages of human pluripotency in stem cell lines and in embryos (Figure 1f). We first compared naïve and primed hPSCs (Collier et al., 2017) and, consistent with our scRNA-seq data, we found that most ligands, transduction proteins and receptors of the TGFβ pathway are expressed at similar levels in the two cell types (Figure 1f). Higher expression of the TGFβ ligands NODAL and GDF3 and the co-receptor TDGF1 was again detected in naïve hPSCs. Interestingly, the expression of pathway inhibitors differed, whereby LEFTY1 and LEFTY2 were higher in naïve hPSCs, whereas CER1 and FST were higher in primed hPSCs. We then looked at gene expression changes that occur during the process of capacitation, because the transition from naïve to primed hPSCs recapitulates pre- to post-implantation epiblast cell development (Rostovskaya et al., 2019). We found that most of the effectors of the TGFβ pathway are expressed throughout the entire developmental series, and also confirmed that NODAL and GDF3 are expressed at higher levels in the early stages (Figure 1f).
 
@@ -56,9 +64,17 @@ To examine transcriptional events directly in human embryos, we next looked at s
 
 To further confirm these observations at the protein level, we examined cell-surface proteomic (Wojdyla et al., 2020) and whole-cell proteomic (Di Stefano et al., 2018) data in naïve and primed hPSCs. This revealed that most Activin/TGFβ receptors and downstream effectors of the pathways are expressed at very similar levels in the two cell types (Figure 1g; Figure 1—figure supplement 1d). Finally, to directly assess TGFβ pathway activation, we performed western blot analysis and found that phospho-SMAD2 (pSMAD2), the activated form of SMAD2, is detectable in multiple embryo-derived and reprogrammed naïve hPSCs lines, and at comparable levels to primed cells (Figure 1h; Figure 1—figure supplement 1e,f). The phosphorylation signal was rapidly diminished following the treatment of the cells with SB-431542 (SB), a potent and selective inhibitor that blocks TGFβ/Activin receptors ALK5, ALK4, and ALK7 (Inman et al., 2002; Figure 1h; Figure 1—figure supplement 1e,f). Taken together, these results establish that the TGFβ signalling pathway is active in naïve hPSCs. Because primed hPSCs rely on this pathway to maintain pluripotency, our findings raise the possibility that naïve hPSCs might also require TGFβ signalling to sustain their undifferentiated state.
 
-## SMAD2/3 binding is enriched at active enhancers in human naïve cells
+### SMAD2/3 binding is enriched at active enhancers in human naïve cells
 
 Having established that the TGFβ signalling pathway is active in naïve hPSCs, we next profiled the genome-wide occupancy of the main downstream effectors – SMAD2/3 – using chromatin immunoprecipitation combined with genome-wide sequencing (ChIP-seq) in naïve and primed hPSCs. This analysis revealed that SMAD2/3 binding is enriched in naïve cells to a similar degree as in primed cells, as shown by independent peak calling in the two cell types (Figure 2a; Figure 2—figure supplement 1a). Here, we observed regions bound by SMAD2/3 in both cell types, and also a substantial number of loci that appear to have cell-type-specific binding. Importantly, canonical target genes, such as LEFTY1/2, NODAL, NANOG, and SMAD7, were bound by SMAD2/3 in both cell types (Figure 2b; Figure 2—figure supplement 1b), suggesting that TGFβ is active and it signals through the canonical cascade in both naïve and primed hPSCs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67259/elife-67259-fig2-v1.jpg)
+
+**Figure 2.:** (a) Heatmap displaying normalised SMAD2/3 (S23) ChIP-seq reads ±2 kb from the centre of SMAD2/3-bound peaks that were independently defined in naïve (H9 NK2 line cultured in t2iLGö medium) and primed (H9 line cultured in E8 medium) hPSCs; two biological replicates per cell line. Top panel shows the regions identified as SMAD2/3-bound peaks in naïve cells; lower panel shows SMAD2/3-bound peaks in primed cells. (b) Genome browser tracks reporting SMAD2/3 (S23) binding (this study) and chromatin accessibility (ATAC-seq; Pastor et al., 2018) at the LEFTY1/2 and NANOG loci in naïve and primed hPSCs. Input tracks are shown as controls. (c) Normalised average meta-plots of SMAD2/3 (S23) ChIP signal ±2 kb from the centre of the peaks in naïve and primed hPSCs, compared to a randomly-selected subset of regions. (d) Heatmap displaying regions that are differentially bound by SMAD2/3 in naïve and primed hPSCs in two biological replicates (R1 and R2). (e) Genome browser tracks reporting expression (RNA-seq), chromatin accessibility (ATAC-seq), and ChIP-seq datasets of SMAD2/3 (S23), histone marks for enhancers (H3K27ac) and promoters (H3K4me3, H3K27me3), and transcription factors (OCT4, SOX2, NANOG) at the DNMT3L, TBXT, KLF4, OTX2 loci. Input tracks are shown as controls. The following data sets are shown: ATAC-seq (Pastor et al., 2018); H3K4me3 (Theunissen et al., 2014); H3K4me1 (Chovanec et al., 2021; Gifford et al., 2013); H3K27me3 (Theunissen et al., 2014); H3K27ac (Ji et al., 2016); OCT4 (Ji et al., 2016); SOX2 (Chovanec et al., 2021); NANOG (Chovanec et al., 2021; Gifford et al., 2013), and RNA-seq (Takashima et al., 2014). (f) Heatmap showing the frequency of SMAD2/3 peak centre locations with respect to ChromHMM states in naïve and primed hPSCs (Chovanec et al., 2021). SMAD2/3 peaks in naïve and primed hPSCs were annotated with their respective ChromHMM states. The annotations associated with the randomly-selected control regions reflect the overall genomic representation of chromatin states. (g-i) Density coloured scatter plots showing indicated ChIP-seq and ATAC-seq values (log2 RPM) in naïve versus primed hPSCs. Each dot corresponds to one naïve-specific SMAD2/3 peak. (j) Differential motif enrichment reporting the top four motifs (ranked by p-value) at SMAD2/3-binding sites in naïve hPSCs that are enriched compared to motifs identified at SMAD2/3-binding sites in primed hPSCs.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67259/elife-67259-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Heatmap displaying normalised SMAD2/3 ChIP-seq signal ±2 kb from the centre of the peaks in a randomly selected subset of regions, complementing Figure 2a. (b) Genome browser tracks overlapping SMAD2/3 (S23) binding sites in naïve and primed cells with chromatin accessibility (ATAC-seq) at the NODAL and SMAD7 loci. Input is shown as control. (c) Correlation heatmap reporting the clustering of SMAD2/3 ChIP-seq replicates (R1 and R2) for each cell type, based on the count scores. (d) Volcano plot reporting the fold change in SMAD2/3 ChIP-seq signal at SMAD2/3 peaks between naïve and primed cells and the associated false discovery rate. Each dot represents a SMAD2/3 peak. Dots highlighted in pink are significantly differentially bound sites (log10 FDR ≤ 0.05; log2 fold changes ≥ 1.5). (e) Genome browser tracks exemplify the overlap between SMAD2/3 (S23) ChIP-seq binding sites in naïve and primed cells with chromatin accessibility (ATAC-seq), histone marks for active enhancers (H3K27ac), and OCT4 and NANOG ChIP-seq signal. Input is shown as control. (f) Bar plot reporting the log2 enrichment of SMAD2/3 peaks at ChromHMM-defined promoter and enhancer regions compared to other genomic regions. Related to Figure 2f.
 
 In addition to the shared targets, differential binding analyses revealed over 2000 SMAD2/3-bound sites that differed between the two cell types (Figure 2c,d; Figure 2—figure supplement 1c,d). Excitingly, further examination of these differential sites revealed that in naïve hPSCs SMAD2/3 uniquely bound near to naïve-specific pluripotency genes including DNMT3L, TFAP2C, CBFA2T2, KLF4, and CDK19 (Figure 2e; Figure 2—figure supplement 1d,e). Interestingly, these sites often overlapped with accessible chromatin regions and H3K27ac marks, which are signatures that are associated with active enhancers (Heintzman et al., 2009; Figure 2e; Figure 2—figure supplement 1e). In contrast, primed-specific SMAD2/3 sites were located near to genes that regulate mesendoderm differentiation, such as TBXT, EOMES, and GATA4, or primed-state pluripotency, such as OTX2 (Figure 2e; Figure 2—figure supplement 1e). These sites correspond mostly to accessible chromatin and to regions marked by H3K4me3 and H3K27me3 signals, which typically mark the promoters of developmental genes (Azuara et al., 2006; Bernstein et al., 2006; Heintzman et al., 2009; Figure 2e; Figure 2—figure supplement 1e). These findings are supported by global analysis using ChromHMM-based chromatin state annotations (Chovanec et al., 2021), where we found that most SMAD2/3 peaks are indeed within active chromatin regions, consisting mainly of gene promoters and enhancers (Figure 2f). Interestingly, naïve-specific SMAD2/3 peaks are slightly more enriched at active enhancers compared to primed-specific peaks (30.6% vs 21.4%), and primed-specific SMAD2/3 peaks are instead more enriched at promoters (46% vs 26.5%) (Figure 2f; Figure 2—figure supplement 1f).
 
@@ -68,9 +84,17 @@ To obtain a more complete view of the pluripotency transcriptional network, we a
 
 Altogether, these data suggest that SMAD2/3, the main effector of TGFβ pathway, is integrated in the naïve pluripotency network by targeting OSN-bound active enhancers that are in close proximity to key regulators of naïve pluripotency.
 
-## Inhibiting TGFβ signalling induces loss of pluripotency in human naïve cells
+### Inhibiting TGFβ signalling induces loss of pluripotency in human naïve cells
 
 After establishing that the TGFβ signalling pathway could maintain directly the transcriptional network characterising human pluripotency, spanning from naïve to primed states, we next examined whether the pathway is functionally required to sustain naïve hPSCs in an undifferentiated state. We first measured the transcriptional changes that occurred in response to SB-mediated loss of pSMAD2 and inhibition of the TGFβ pathway (Figure 3a; Figure 3—figure supplement 1a,b). After only 2 hours of SB treatment (t2iLGö medium supplemented with SB), naïve hPSCs showed a significant reduction in the expression of the pluripotency gene NANOG, which is a short time frame that is consistent with NANOG being a direct target of SMAD2/3 signalling (Vallier et al., 2009; Xu et al., 2008; Figure 3a; Figure 3—figure supplement 1a). Other canonical downstream target genes, such as LEFTY1/2 and SMAD7, were also strongly downregulated and their expression was completely abolished after 24 hr in the case of LEFTY1/2. Excitingly, naïve pluripotency marker genes that are bound by SMAD2/3 including DPPA3, DPPA5, KLF4, and DNMT3L were also downregulated following SB treatment, indicating that the naïve state is disrupted in these conditions (Figure 3a; Figure 3—figure supplement 1a). These results were independently validated by depleting SMAD2/3 expression using the OPTiKD system (Bertero et al., 2016). Here, we generated stable naïve hPSCs with tetracycline (TET) inducible co-expression of shRNAs that target SMAD2 and SMAD3 transcripts (Figure 3b). Treating these cells with TET induced the rapid loss of SMAD2/3 mRNA (Figure 3c), and a concomitant and significant downregulation in the expression of SMAD2/3 target genes, such as LEFTY2, NODAL, and NANOG (Figure 3c). We also detected a significant decrease in POU5F1 expression following SMAD2/3 knockdown and after SB treatment, suggesting that naïve hPSCs are destabilised and are exiting the pluripotent state (Figure 3a,c).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67259/elife-67259-fig3-v1.jpg)
+
+**Figure 3.:** (a) RT-qPCR expression analysis of pluripotency-associated genes and TGFβ-associated genes in naïve hPSCs (H9 NK2 line) following SB-431542 treatment (t2iLGö + SB). Expression levels are shown as fold changes relative to day 0. (b) Schematic showing the integration of a single-step optimised inducible knock-down targeting construct into the AAVS1 locus of H9 hPSCs, enabling the expression of SMAD2 and SMAD3 short hairpin RNAs (shRNAs) under the control of a tetracycline inducible promoter. ZFN: zinc-finger nucleases; 5’-HAR/3’-HAR: upstream/downstream homology arm; H1-TO: Tetracycline-inducible H1 Pol III promoter carrying one tet operon after the TATA box; CAAG: CMV early enhancer, chicken β-actin and rabbit β-globin hybrid promoter; TetR: Tetracycline-sensitive repressor protein; SA: splice acceptor; Puro, Puromycin resistance; pA, polyadenylation signal. Schematic adapted from Bertero et al., 2016. (c) RT-qPCR analysis of gene expression levels in SMAD2/3 inducible knock-down (iKD) H9 naïve hPSCs following 5 days of tetracycline (tet) treatment. Expression levels are shown for each gene as fold change relative to iKD -tet. Cells were cultured in t2iLGö medium. (d) Phase contrast pictures of H9 NK2 naïve hPSCs after 5, 7, and 10 days of SB treatment in t2iLGö medium. Scale bars: 400 µm. (e) RT-qPCR analysis of trophoblast (HAND1, TP63, MMP2, and SDC1) and pluripotency (POU5F1, NANOG) gene expression levels in naïve hPSCs following long-term (14 days) SB treatment in t2iLGö medium. Expression levels are shown as fold changes relative to day 0 samples, n = two biological replicates. (f) Immunofluorescence microscopy showing the downregulation of NANOG (green) in naïve hPSCs following 3 and 5 days of SB treatment. DAPI signal in blue. White arrowheads indicate colonies displaying heterogeneous expression of NANOG. Scale bars: 50 µm. (g) Immunofluorescence microscopy for OCT4 (red), HAND1 (green), GATA3 (cyan), and DAPI (blue) in naïve hPSCs following 3 and 5 days of SB treatment in t2iLGö medium. Scale bars: 50 µm. (h) Immunofluorescence microscopy for GATA3, HLA-G, SDC1 (magenta), CK19 and CK7 (yellow), and DAPI (blue) in naïve-derived trophoblast stem cells (TS), extravillous trophoblast (EVT), and syncytiotrophoblast (STB). Scale bars: 50 µm. (i) RT-qPCR analysis of gene expression levels in naïve-derived trophoblast stem cells (TS), extravillous trophoblast (EVT) and syncytiotrophoblast (STB) compared to undifferentiated naïve hPSCs. Expression levels are shown for each gene relative to the housekeeping gene RPLP0. RT-qPCR data show the mean ± SD of three biological replicates (unless specified otherwise) and were compared to their relative control using an ANOVA with Tukey's or Šídák's multiple comparisons test (*p ≤ 0.05, **p≤ 0.01, ***p≤ 0.001, ****p≤ 0.0001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67259/elife-67259-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Heatmap reporting RT-qPCR expression analysis of pluripotency genes and TGFβ-associated genes in naïve cells following the addition of SB to the culture medium (t2iLGö), related to Figure 3a. Data show the mean of three biological replicates as fold changes compared to day 0. (b) Western blot showing TGFβ pathway activation in H9 NK2 naïve cells through the phosphorylation of SMAD2 (pSMAD2) and also total SMAD2/3 in normal conditions (-), after 1 hr and 2 hr of fresh media change (t2iLGö), and following 1 hr and 24 hr of SB treatment (t2iLGö+SB). Alpha-tubulin (α-tub) used as loading control. (c) Phase-contrast images of H9 NK2 naïve cells at day 0 (t2iLGö) and following 5, 7, 8, and 10 days of SB supplementation to the t2iLGö medium. Scale bars: 400 µm. (d) Phase-contrast images of chemically-reset cR-H9 naïve cells after 7 days of SB treatment. (e) Immunofluorescence microscopy of H9 NK2 naïve hPSCs for NANOG (red/green), and DAPI (blue), after 7 days of SB treatment in chemically-reset cR-H9 naïve cells, matching the phase-contrast images in (d). White arrowheads indicate colonies displaying heterogeneous NANOG expression. Scale bars: 50 µm. (f) Immunofluorescence microscopy complementing Figure 3g showing (left) OCT4 (magenta) and HAND1 (yellow) overlap, or (right) OCT4 (magenta) and GATA3 (cyan) overlap after 3 and 5 days of SB treatment. Scale bars: 50 µm. (g) Immunofluorescence microscopy of H9 NK2 naïve hPSCs for OCT4 (red), HAND1 (green), GATA3 (cyan) and DAPI (blue) after 3 (upper) and 5 (lower) days of SB treatment. Scale bars: 50 µm.
 
 Interestingly, adding SB to naïve culture media also induced a change in cell morphology whereby naïve hPSCs lost their typical dome-shaped morphology after 3 to 5 days, and this was accompanied by the appearance of flat colonies that gradually took over the culture (Figure 3d; Figure 3—figure supplement 1c). This striking phenotypic change was confirmed in a second naïve hPSCs line (Figure 3—figure supplement 1d). Intriguingly, the morphology of these flat colonies resembles human trophoblast cells (Okae et al., 2018). To further investigate this, we grew naïve hPSCs for 14 days in the presence of SB and then examined the expression of trophoblast marker genes (Figure 3e). We found there was a strong upregulation in the expression of the trophectoderm marker HAND1 and also of TP63, MMP2, and SDC1 that mark cytotrophoblast (CTB), extravillous trophoblast (EVT) and syncytiotrophoblast (STB) cell types, respectively (Figure 3e). These results were further supported by the clear reduction in NANOG protein expression following 3–5 days of treating naïve hPSCs with SB, in correspondence with the exit from naïve pluripotency and the appearance of the trophoblast-like colonies (Figure 3f). NANOG downregulation together with the appearance of trophoblast-like colonies was also observed in a second naïve cell line upon SB treatment (Figure 3—figure supplement 1e). Importantly, the flat cell colonies also expressed typical trophoblast-associated proteins – GATA3 and HAND1 (Figure 3g; Figure 3—figure supplement 1f,g).
 
@@ -78,9 +102,17 @@ To further characterise these cells and to investigate their ability to differen
 
 Taken together, these results show that blocking TGFβ signalling in naïve hPSCs rapidly destabilises the pluripotency network and allows the cells to undergo differentiation toward trophoblast-like cells, including those that can give rise to multipotent, proliferative TSCs.
 
-## Single-cell transcriptional analysis reveals a trophoblast-like population arising in response to TGFβ inhibition in human naïve cells
+### Single-cell transcriptional analysis reveals a trophoblast-like population arising in response to TGFβ inhibition in human naïve cells
 
 We next sought to investigate the processes in which TGFβ pathway inhibition drives naïve hPSCs out of their pluripotent state and towards a trophoblast phenotype. Following SB treatment, we observed that the early-stage cultures contained a heterogeneous mixture of cell morphologies that included naïve-like colonies and the flat, TSC-like colonies described above (Figure 3d; Figure 3—figure supplement 1c,d). The proportion of NANOG-positive cells declined following SB treatment, with variable expression within individual colonies (Figure 3f). We also observed heterogeneous colonies that contained cells expressing the pluripotency marker OCT4 and TSC-like markers HAND1/GATA3 (Figure 3g). Because the population heterogeneity could mask important changes in cell phenotype, we used scRNA-seq to examine the effect of TGFβ inhibition over 7 days of SB treatment in naïve hPSCs (Figure 4a). In addition, to better characterise the divergent developmental potential between different human pluripotent states, we compared this response to the response when primed hPSCs were treated with SB. Our aim was to investigate the trajectory of naïve hPSCs moving into a putative TSC-like population, in contrast with the neuroectodermal differentiation that is induced in primed hPSCs when TGFβ is inhibited (Vallier et al., 2009).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67259/elife-67259-fig4-v1.jpg)
+
+**Figure 4.:** (a) Overview of the experimental procedure. Naïve and primed hPSCs were cultured in the presence of SB-431542 (SB), a potent TGFβ inhibitor, and samples were collected at days 0, 1, 3, 5, and 7. Single-cell transcriptomes were obtained by 10X sequencing. (b) UMAP visualisation of naïve and primed cells during the SB time-course experiment, separated by days of treatment. (c) UMAP visualisation of the combined naïve and primed data set, separated by days of SB treatment (indicated by the number in the labels). N, naïve; P, primed. (d) Dot plot of selected gene expression values in naïve and primed cells during the SB time-course experiment, plotted by days of treatment (in rows). Each dot represents two values: mean expression within each category (visualised by colour) and fraction of cells expressing the gene (visualised by the size of the dot). Genes are indicative of pluripotent cells (Pluri), trophoblast stem cells (TSC), and neuroectoderm cells (NE). (e) UMAP visualisation of naïve hPSCs during the SB time-course experiment, separated by Louvain clustering (five clusters, A to E). (f) UMAP visualisation of naïve cells during the SB time-course experiment, showing the relative expression of pluripotency markers, NANOG, POU5F1, KLF4, and DPPA5; TGFβ effectors, NODAL; and trophoblast markers, CDX2, HAND1, GATA3. (g) Dot plot of expression values in naïve cells during the SB time-course experiment, separated by the five Louvain clusters. The genes shown represent a subset of the top 25 differentially expressed genes between the five clusters, as reported in Figure 5—figure supplement 1e. Each dot represents two values: mean expression within each category (visualised by colour) and fraction of cells expressing the gene (visualised by the size of the dot). (h) Scatter plot reporting pseudobulk RNA-seq values (from 10X data) for cells in Louvain clusters A and E. Each dot represents one gene. Genes that have SMAD2/3 ChIP-seq peaks (log2 RPM > 5) within 12 kb of their transcription start site (TSS) are highlighted in blue and annotated. Several differentially expressed genes that are the closest gene to a SMAD2/3 peak (but are further away than 12 kb) are also named. (i) Scatter plot showing SMAD2/3 ChIP-seq peak strength (log2 RPM) versus the expression difference (cluster A – cluster E; log2 CPM) of the gene nearest to the SMAD2/3 peak. Upregulated genes, red; downregulated genes, green. (j) SMAD2/3 peaks were annotated with their nearest genes. Bar plot showing the percentage of genes that are the closest gene to a SMAD2/3 peak for genes that are upregulated (red) or downregulated (green) between cells in clusters A and E. A randomly selected set of control genes are shown in grey. The number of closest genes and the set size are reported within the bars. Statistical testing was performed using Chi-square test with Yates continuity and Bonferroni multiple testing correction.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67259/elife-67259-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) PCA and partition-based graph abstraction (PAGA) connectivity visualisation of the 10X RNA-seq data in naïve and primed hPSCs during the SB time-course, separated by days of treatment. (b) UMAP visualisation of the combined naïve and primed cell 10X dataset during the SB time-course experiment, separated by Louvain clustering. (c) UMAP visualisation of the combined naïve and primed cell 10X dataset reporting the relative expression of pluripotency markers NANOG, POU5F1, KLF4, trophoblast marker GATA3, and neuroectoderm markers PAX6, SOX10. (d) PAGA connectivity visualisation of naïve and primed cells during the SB time-course experiment, separated by Louvain clustering. (e) Summarised results showing the top 25 differentially expressed genes between Louvain clusters, identified by applying a Wilcoxon-Rank-Sum test. Black arrows highlight informative genes relative to each cluster. (f) Violin plots reporting the expression of a subset of genes identified in Figure 4g and (e). (g) Dot plot of expression values in naïve cells during the SB time-course experiment, separated by the five Louvain clusters. The genes shown represent a subset of amnion marker genes reported in Guo et al., 2021; Io et al., 2021; Zhao et al., 2021. Note that some genes are also expressed in trophoblast cells. Each dot represents two values: mean expression within each category (visualised by colour) and fraction of cells expressing the gene (visualised by the size of the dot).
 
 In both cell types, there was a clear transcriptional trajectory moving from day 0 to day 7 of SB treatment (Figure 4b; Figure 4—figure supplement 1a). Importantly, there was little overlap in their trajectories (Figure 4c), confirming that the inhibition of TGFβ signalling in these two different developmental stages results in divergent differentiation processes. Louvain clustering of the combined datasets also showed separated clusters in the naïve and primed time course samples (Figure 4—figure supplement 1b). Specifically, TGFβ inhibition in naïve hPSCs induced the expression of TSC-like markers, such as HAND1, GATA2, and GATA3, whereas inhibition in primed hPSCs induced neuroectoderm markers, such as SOX10, PAX6, and LEF1 (Figure 4d; Figure 4—figure supplement 1c). Interestingly, Louvain clustering of the naïve cell dataset initially follows the day 0 (Cluster A) and day 1 (Cluster B) timepoints and then resolves the mixed population at days 3, 5, and 7 into three separate clusters (C, D, and E) (Figure 4e; Figure 4—figure supplement 1d). This analysis suggests that the mixed population is formed from an early differentiating population (cluster C), a transition population (cluster D), and a later-stage differentiated population (cluster E), thereby confirming a stepwise process marked by different intermediate stages.
 
@@ -92,9 +124,17 @@ To dissect the impact of TGFβ pathway inhibition on the transcriptional changes
 
 Taken together, scRNA-seq in primed and naïve cells shows that both developmental stages rely on TGFβ signalling to maintain their undifferentiated state but, upon pathway inhibition, each cell type diverges towards different trajectories. Primed cells differentiate into neuroectoderm cells whereas, in contrast, naïve cells exit pluripotency and acquire a TSC-like fate expressing trophoblast markers and this is triggered by the deregulation of target genes that are downstream of SMAD2/3.
 
-## TGFβ inhibition in naïve hPSCs recapitulates the transcriptome of early trophoblast specification in human embryos
+### TGFβ inhibition in naïve hPSCs recapitulates the transcriptome of early trophoblast specification in human embryos
 
 Having established that naïve hPSCs respond to TGFβ inhibition by shutting down the naïve pluripotency network, thereby allowing the onset of trophoblast differentiation, we next investigated whether this differentiation process follows a developmental trajectory. To do this, we applied diffusion pseudotime to our 10X scRNA-seq data (Figure 5—figure supplement 1a) and examined the pseudotime trajectory across the Louvain clusters (Figure 5a). Consistent with the prior UMAP analysis, we found that the time points (days) and the clusters progressively populate the trajectory following a similar pattern from cluster A, through B and C, towards a transition population in cluster D, and lastly the more differentiated counterpart in cluster E (Figure 5a). Overlaying the diffusion pseudotime maps with the expression of known markers reveals the initial downregulation of pluripotency genes, such as NANOG, was followed by a sequential upregulation of trophoblast markers, such as CDX2, HAND1, and GATA3 (Figure 5b; Figure 5—figure supplement 1b). Interestingly, the transitional cell population in cluster D contains a substantial proportion of cells (~15–25%) that co-express low levels of the pluripotency gene POU5F1 and trophoblast markers, such as CDX2 and HAND1 (Figure 5c). We confirmed this co-expression at the protein level using immunofluorescent microscopy (Figure 5—figure supplement 1c). These results indicate that trophoblast cells arise in the population through the transition of pluripotent cells to a trophoblast fate.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/67259/elife-67259-fig5-v1.jpg)
+
+**Figure 5.:** (a) Diffusion maps of naïve cells during the SB time-course experiment, separated by days of treatment (left) and Louvain clustering (right). (b) Overlay of the diffusion maps with the relative expression of pluripotency markers NANOG, and POU5F1, and trophoblast markers CDX2, HAND1, GATA3. (c) Heatmap of the expression values of genes reported in (b) separated by the Louvain clusters. Note the overlap in the expression of pluripotency and trophoblast markers in cells within cluster D. (d) Correlation plot between pseudobulk data from Louvain clusters A/D/E and EPI (Epiblast), ICM (Inner Cell Mass), and TE+CTB (Trophectoderm+Cytotrophoblast) from cultured human pre-gastrulation embryos (Xiang et al., 2020). (e) PCA plot overlapping 200 randomly selected cells from each of the Louvain clusters A/D/E (individual dots) and data from 3D-cultured human pre-gastrulation embryos (Xiang et al., 2020), based on EPI, ICM, and TE+CTB cells (contour lines). PC1 variance 2.15, PC2 variance 1.41. (f) Heatmaps visualising the expression of genes in EPI, ICM, and TE+CTB (Xiang et al., 2020) and cells in Louvain clusters A/D/E. Note that the genes are in the same order for both plots. (g) Diffusion maps of naïve cells during the SB time-course experiment showing the relative expression of CTB markers – VGLL1 and PGF. (h) We propose there is a continuum of TGFβ/Activin/Nodal signalling that spans a developmental window of human pluripotent states from naïve to primed. In both states, active TGFβ signalling promotes the expression of common pluripotency genes, such as NANOG and POU5F1, and contributes to the maintenance of pluripotency. SMAD2/3 are additionally required in naïve hPSCs to sustain the expression of naïve pluripotency factors, including KLF4 and DNMT3L. Inactivating TGFβ signalling in naïve hPSCs leads to the downregulation of pluripotency genes, thereby enabling the induction of trophoblast differentiation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67259/elife-67259-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Diffusion maps of naïve hPSC 10X scRNA-seq data during the SB time-course, reporting diffusion pseudotime scores. (b) Diffusion map visualisation of naïve cells during the SB time-course reporting the relative expression of additional pluripotency markers KLF4 and DPPA5, TGFβ effector NODAL, and trophoblast markers CDX1, MARCKS, and GATA2. (c) Immunofluorescence microscopy for OCT4 (magenta), HAND1 (yellow), GATA3 (cyan) and DAPI (blue) in H9 NK2 naïve cells following 3 days of SB supplementation to t2iLGö medium. White arrowheads indicate cells that co-express low levels of OCT4 and HAND1 or GATA3. Scale bars: 50 µm. (d) Correlation heatmap between the pseudobulked datasets from all Louvain clusters (A/B/C/D/E) and the identified cell lineages from the cultured human pre-gastrulation embryos (Xiang et al., 2020). CTB: Cytotrophoblast; EVT: Extravillous trophoblast; STB: Syncytiotrophoblast; EPI: Epiblast; ICM: Inner Cell Mass; PrE: Primitive Endoderm, TE: Trophectoderm. (e) Heatmap reporting the expression in the Louvain clusters A, D, and E of the top 20 differentially expressed genes between EPI, ICM, and CTB cell lineages (based on data published by Xiang et al., 2020).
 
 To further investigate the transition from naïve pluripotency to trophoblast specification, we compared our scRNA-seq data to human embryo transcriptional datasets (Xiang et al., 2020). Correlation analysis showed that cells in clusters A, B, and C are transcriptionally closest to epiblast cells, in keeping with their undifferentiated status (Figure 5—figure supplement 1d). The transitional population classified as cluster D has the highest correlation with ICM and TE (Figure 5—figure supplement 1d). Cells in cluster E have the highest correlation with trophoblast derivatives from the pre- and early-postimplantation embryo (Figure 5—figure supplement 1d).
 
@@ -116,7 +156,269 @@ To conclude, our results establish a central role for TGFβ/Activin/Nodal signal
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SMAD2</td>
+      <td>GenBank</td>
+      <td>Gene ID:4087</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SMAD3</td>
+      <td>GenBank</td>
+      <td>Gene ID:4088</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>NODAL</td>
+      <td>GenBank</td>
+      <td>Gene ID:4838</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>POU5F1</td>
+      <td>GenBank</td>
+      <td>Gene ID:5460</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>NANOG</td>
+      <td>GenBank</td>
+      <td>Gene ID:79923</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>KLF4</td>
+      <td>GenBank</td>
+      <td>Gene ID:9314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>GATA3</td>
+      <td>GenBank</td>
+      <td>Gene ID:2625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>CDX2</td>
+      <td>GenBank</td>
+      <td>Gene ID:1045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>WA09/H9</td>
+      <td>WiCell</td>
+      <td>RRID:CVCL_9773</td>
+      <td>Human Embryonic Stem Cell line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HNES1</td>
+      <td>DOI:10.1016/j.stemcr.2016.02.005</td>
+      <td>RRID:CVCL_9R98</td>
+      <td>Human Embryonic Stem Cell line</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>SMAD2 shRNA</td>
+      <td>Sigma</td>
+      <td>TRCN0000010477</td>
+      <td>CCGGCAAGTACTCCTTGCTGGATTGCTCGAGCAATCCAGCAAGGAGTACTTGTTTTTG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>SMAD3 shRNA</td>
+      <td>Sigma</td>
+      <td>TRCN0000330055</td>
+      <td>CCGGGCCTCAGTGACAGCGCTATTTCTCGAGAAATAGCGCTGT CACTGAGGCTTTTTG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SMAD2/3 (Goat polyclonal)</td>
+      <td>R&amp;D</td>
+      <td>AF3797; RRID:AB_2270778</td>
+      <td>ChIP 10 µg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SMAD2/3 (Rabbit monoclonal Biotinylated)</td>
+      <td>Cell signaling</td>
+      <td>12470S; RRID:AB_2797930</td>
+      <td>WB 1:5,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pSMAD2 (Rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>3108S; RRID:AB_490941</td>
+      <td>WB 1:1,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Tubulin (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>T6199; RRID:AB_477583</td>
+      <td>WB 1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Vinculin (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>SAB4200080; RRID:AB_10604160</td>
+      <td>WB 1:20,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GATA3 (D13C9) (Rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>5852S; RRID:AB_10835690</td>
+      <td>IF 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NANOG (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab21624; RRID:AB_446437</td>
+      <td>IF 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>OCT3/4 (C-10) (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-5279; RRID:AB_628051</td>
+      <td>IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HAND1 (Goat polyclonal)</td>
+      <td>R&amp;D</td>
+      <td>AF3168; RRID:AB_2115853</td>
+      <td>IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CK7 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab68459; RRID:AB_1139824</td>
+      <td>IF 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CK19 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab7754; RRID:AB_306048</td>
+      <td>IF 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SDC1 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab34164; RRID:AB_778207</td>
+      <td>IF 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HLA-G (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-21799; RRID:AB_627938</td>
+      <td>IF 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Secondary antibodies</td>
+      <td></td>
+      <td></td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RT-qPCR primers</td>
+      <td></td>
+      <td></td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB-431542</td>
+      <td>Tocris</td>
+      <td>1614</td>
+      <td>10–20 µM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://doi.org/10.1038/nmeth.2019</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>http://www.graphpad.com/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SeqMonk</td>
+      <td>http://www.bioinformatics.babraham.ac.uk/projects/seqmonk/</td>
+      <td>RRID:SCR_001913</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>http://www.rstudio.com/</td>
+      <td>RRID:SCR_000432</td>
+      <td>R packages used specified in Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellRanger</td>
+      <td>https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger</td>
+      <td>RRID:SCR_017344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scanpy</td>
+      <td>https://github.com/theislab/scanpy</td>
+      <td>RRID:SCR_018139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td>0.1 µg/ml</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Transgene-reset WA09/H9 NK2, embryo-derived HNES1 and chemically reset cR-H9 naïve hPSCs (Guo et al., 2017; Guo et al., 2016; Takashima et al., 2014) were kindly provided by Dr. Austin Smith with permission from WiCell and the UK Stem Cell Bank Steering Committee. Cells were maintained in t2iLGö (Takashima et al., 2014) or in PXGL (Bredenkamp et al., 2019b; Rostovskaya et al., 2019) in hypoxia (5% O2) at 37°C. The N2B27 base medium contained a 1:1 mixture of DMEM/F12 and Neurobasal, 0.5X N-2 supplement, 0.5X B-27 supplement, 2 mM L-Glutamine, 0.1 mM β-mercaptoethanol (all from ThermoFisher Scientific), 0.5X Penicillin/Streptomycin. For t2iLGö, the base medium was supplemented with 1 µM PD0325901, 1 µM CHIR99021, 20 ng/ml human LIF (all from WT-MRC Cambridge Stem Cell Institute) and 2 µM Gö6983 (Tocris). For PXGL, N2B27 medium was supplemented with 1 µM PD0325901, 2 µM XAV939, 2 µM Gö6983 and 10 ng/ml human LIF. Naïve hPSCs were maintained on a layer of irradiated mouse fibroblasts that were seeded at a density of two million cells per six-well plate. All experiments have been performed on naïve hPSCs that were grown in the absence of mouse fibroblasts for at least two passages using Growth Factor Reduced Matrigel-coated plates (Corning). For TGFβ inhibition experiments, 20 µM SB-431542 (Tocris) was added to the medium for the specified length of the experiment.
 
@@ -126,43 +428,43 @@ TSCs, EVT, and STB cells were generated as previously described (Dong et al., 20
 
 Authentication of hPSCs was achieved by confirming the expression of pluripotency genes and protein markers (NANOG and OCT4). Cells were routinely verified as mycoplasma-free using broth and PCR-based assays. The cell lines are not on the list of commonly misidentified cell lines (International Cell Line Authentication Committee).
 
-## Western blotting
+### Western blotting
 
 For whole cell lysates, cells were washed once in D-PBS and resuspended in ice cold RIPA buffer (150 mM NaCl, 50 mM Tris, pH8.0, 1% NP-40, 0.5% sodium deoxycholate, 0.1% sodium dodecyl sulfate) containing protease and phosphatase inhibitors for 10 min. Protein concentration was quantified by a BCA assay (Pierce) following the manufacturer’s instructions using a standard curve generated from BSA and read at 600 nm on an EnVision 2104 plate reader. Samples were prepared by adding 4x NuPAGE LDS sample buffer (ThermoFisher Scientific) plus 1% β-mercaptoethanol and heated at 95°C for 5 min. 5–10 µg of protein per sample was run on a 4–12% NuPAGE Bis-Tris Gel (ThermoFisher Scientific) and then transferred to PVDF membrane by liquid transfer using NuPAGE Transfer buffer (ThermoFisher Scientific). Membranes were blocked for 1 hr at RT in PBS 0.05% Tween-20 (PBST) supplemented with 4% non-fat dried milk and incubated overnight at 4°C with primary antibodies diluted in the same blocking buffer, or 5% BSA in case of phosphor-proteins. After three washes in PBST, membranes were incubated for 1 hr at RT with horseradish peroxidase (HRP)-conjugated secondary antibodies diluted in blocking buffer, then washed a further three times before being incubated with Pierce ECL2 Western Blotting Substrate (ThermoFisher Scientific) and exposed to X-Ray Film. Membranes were probed with antibodies in Supplementary file 1. Relative quantification was performed using Fiji (ImageJ). Western blots were performed in three different lines, with the NK2 line in biological duplicate (Figure 1; Figure 1—figure supplement 1 and Figure 3—figure supplement 1).
 
-## RNA extraction and quantitative reverse transcription PCR (RT-qPCR)
+### RNA extraction and quantitative reverse transcription PCR (RT-qPCR)
 
 Total RNA was extracted with the GeneElute Total RNA kit (Sigma). The on-column DNase digestion step was performed (Sigma) to remove any genomic DNA contamination. Of total RNA, 500 ng was used to synthesize cDNA with SuperScript II (ThermoFisher Scientific) using Random primers (Promega) following manufacturer’s instructions. cDNA was diluted 30-fold and 2.5 µl was used to perform Quantitative PCR using Kapa SYBR fast Low-Rox (Sigma) in a final reaction volume of 7.5 µl on a QuantStudio 5 384 PCR machine (ThermoFisher Scientific). Samples were run in technical duplicate as two wells in the same qPCR plate and results were analysed using PBGD/RPLP0 as housekeeping genes. All experiments were run in biological triplicate unless specified in the figure legends. Biological replicates were defined as separate experiments using the same line from three different passages performed at different times. All primer pairs were validated to ensure only one product was amplified and with a PCR efficiency of 100% (±10%). Primer sequences used are displayed in Supplementary file 2.
 
-## SMAD2/3 iKD line and reprogramming
+### SMAD2/3 iKD line and reprogramming
 
 Validated short hairpin RNA (shRNA) against SMAD2 and SMAD3 were obtained from Sigma and the sequences are shown in the Key Resources Table. Construction and transfection of the sOPTiKD plasmid as well as cloning were carried out as described in Bertero et al., 2018. GeneJuice Transfection Reagent (Sigma) was used for transfection.
 
 Primed SMAD2/3 inducible knockdown hPSCs were reprogrammed to a naïve state in 5i/L/A conditions (Theunissen et al., 2014). Primed hPSCs were dissociated into single cells with Accutase and 1.2 million cells per 10 cm tissue culture dish were plated in primed hPSCs media with 10 µM Y-27632 (Cell Guidance Systems) onto MEF seeded at a density of 4 million cells per 10 cm dish. The following day, media was changed to 5i/L/A comprising of a 1:1 mixture of DMEM/F12 and Neurobasal, 1X N-2 supplement, 1X B-27 supplement, 1% nonessential amino acids, 2 mM GlutaMAX, 50 U/ml and 50 µg/ml penicillin-streptomycin (all from ThermoFisher Scientific), 0.1 mM β-mercaptoethanol (Millipore), 50 μg/ml bovine serum albumin (ThermoFisher Scientific), 0.5% Knockout Serum Replacement (ThermoFisher Scientific), 20 ng/ml recombinant human LIF, 20 ng/ml ActivinA, 1 µM PD0325901 (all from WT-MRC Cambridge Stem Cell Institute), 1 µM IM-12, 1 µM WH-4–023, 0.5 µM SB590885 and 10 µM Y-27632 (all from Cell Guidance Systems). Cells were passaged with Accutase on days 5 and 10. Knockdown was induced by adding 1 µg/ml Tetracycline (Sigma) dissolved in Embryo Transfer Water (Sigma) to the media.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were grown on glass coverslips coated with either Matrigel or Vitronectin XF and fixed with 4% PFA for 10 min at RT, rinsed twice with PBS, and permeabilised for 20 min at RT using PBS/0.25% Triton X-100 (Sigma). Cells were blocked for 30 min at RT with blocking solution (PBS-0.25% Triton X-100 plus BSA 1%). Primary and secondary antibodies (listed in Supplementary file 1) were diluted in blocking solution and incubated for 1 hr at 37°C. Cells were washed twice with blocking solution after each antibody staining, and stained with DAPI for 5 min at RT (0.1 µg/ml DAPI in PBS-0.1% Triton). Finally, coverslips were mounted on slides using ProLong Gold antifade reagent (ThermoFisher Scientific) and imaged using an LSM 700 confocal microscope (Zeiss). To image STB cells, cell aggregates were collected by gentle centrifugation (100 x g for 30 s) and fixed in 4% PFA for 20 min. Cells were rinsed twice with PBS and resuspended in 100 µl of PBS and dried overnight on plus-charged slides (SuperFrost Plus Adhesion slides, Fisher Scientific). The area containing the dried cells was circled with a PAP pen and the cells were permeabilised for 5 min at RT with 100 µl of 0.1% Triton-X100 in PBS, and then blocked for 1 hr at RT with 100 µl of 0.1% Triton-X100 plus 0.5% BSA. Primary antibodies (listed in Supplementary file 1) were diluted in blocking solution and incubated overnight at 4°C. Cells were washed three times with blocking solution for 5 min, and stained with secondary antibodies for 1 hr at RT. Cells were then washed for 15 min with PBS, followed by a second PBS wash supplemented with DAPI (0.1 µg/ml) and a third with PBS. Finally, coverslips were mounted using ProLong Gold antifade reagent (ThermoFisher Scientific) and imaged using an LSM 700 confocal microscope (Zeiss). Images processed using the software Fiji (ImageJ). At least four different fields from each experiment were imaged and representative ones are shown in the figures.
 
-## Chromatin immunoprecipitation (ChIP) sequencing
+### Chromatin immunoprecipitation (ChIP) sequencing
 
 Chromatin immunoprecipitation (ChIP) was performed as previously described (Brown et al., 2011), using HEPES buffer containing 1% formaldehyde at room temperature, 10 mM Dimethyl 3,3′-dithiopropionimidate dihydrochloride (DTBP, Sigma) and 2.5 mM 3,3′-Dithiodipropionic acid di(N-hydroxysuccinimide ester) (DSP, Sigma) for the crosslinking step. Experiments were performed on biological duplicates, carried out at different times with cells from two different passages. 10 µg of SMAD2/3 antibody (Supplementary file 1) was used per ChIP, and samples were purified using the iPure v2 bead kit (Diagenode). Libraries were constructed using the MicroPlex Library Preparation Kit v2 (Diagenode) following the manufacturer’s instructions, 10 ng of input and all of the ChIP DNA was used as the starting material. Libraries were quantified using KAPA Library Quantification Kit (Roche) following the manufacturer’s instructions and by BioAnalyser. Sequencing was performed at the Babraham Institute’s Next-Generation Sequencing Facility. Equimolar amounts of each library were pooled, and eight samples were multiplexed on one lane of a NextSeq500 HighOutput 75 bp Single End run.
 
-## Data processing
+### Data processing
 
 Reads were quality and adapter trimmed using Trim Galore! (version 0.5.0_dev, Cutadapt version 1.15), and aligned to GRCh38 using Bowtie 2 (version 2.3.2).
 
-## Data analysis
+### Data analysis
 
 All analyses were performed using SeqMonk (https://www.bioinformatics.babraham.ac.uk/projects/seqmonk/, version 1.46.0) or R (https://www.R-project.org/, version 4.0.2). For quantitation, read lengths were extended to 300 bp and regions of coverage outliers were excluded. SMAD2/3 peaks were called using a SeqMonk implementation of MACS (Zhang et al., 2008) with parameters p<10E-6, sonicated fragment size = 300. Peaks were called individually for both replicates and the overlap of peaks used for annotation. Control regions were randomly selected from 700 bp tiles not overlapping excluded regions.
 
 Differential binding analysis was performed using the R package Diffbind, and analysis of motifs that are relatively enriched in naïve compared to primed was performed using the MEME suit tool AME.
 
-## Single-cell RNA-seq (10X chromium single cell)
+### Single-cell RNA-seq (10X chromium single cell)
 
 H9 NK2 naïve and H9 primed hESCs were grown in presence of 20 µM (naïve) and 10 µM (primed) of SB-431542 for 7 days. Cells during the time-course were collected at day 0 (control, no SB) and at days 1, 3, 5, and 7 of treatment and dissociated with Accutase (ThermoFisher Scientific) for 5 min at 37°C in hypoxia (5% O2), and resuspended until single-cell suspension was obtained. Accutase was blocked by adding PBS/BSA 0.5% with the respective media, and after a wash pellets were resuspended at a concentration of ~1000 cells/µl in the respective media. A total of 3000 cells/sample were loaded on a Chromium Chip B Single Cell following the manufacturer's instruction to generate Gel Beads-in-emulsion (GEMs) using a Reagent kit v3. Final Chromium Single Cell 3’ Gene Expression library was generated using standard Illumina paired-end constructs with P5 and P7 primers.
 
-## Data analysis
+### Data analysis
 
 Cell Ranger pipeline (version 3.0.2) was used to align reads to GRCh38 assembly and generate feature-barcode matrices for further gene expression analyses. Quality control, normalisation, dimensionality reduction analyses and all downstream analyses were carried out using the python-based library Scanpy (Wolf et al., 2018). Genes with read counts > 0 in at least three cells and cells expressing at least 200 genes were maintained for downstream analysis. Low-quality cells were removed based on the percentage of unique molecular identifiers (UMIs) mapping to the mitochondrial genome and the number of genes detected. Logarithmic normalisation was performed, highly variable genes were selected, the total number of UMIs per cell was regressed out from log-normalised data and the regressed expression values were scaled. The dimensionality reduction was performed using Principal Component Analysis (PCA) and the neighborhood graph of cells was calculated using the PCA representation of the scaled data matrix. Clustering was performed on scaled data using the Louvain method. This graph was embedded in two dimensions using Uniform Manifold Approximation and Projection (UMAP).
 

@@ -37,7 +37,15 @@ Finally, we investigated how the divisive nature of 5-HT modulation affects evok
 
 To trigger the activation of 5-HT neurons in the DRN with precise timing, we used a transgenic ePet-Cre mouse line (Scott et al., 2005), which allows expression of Channelrhodopsin2 (ChR2) in 5-HT neurons by Cre-dependent expression of double-floxed adeno-associated virus (AAV, see Materials and methods). This enabled real-time activation of 5-HT neurons via photostimulation (Li et al., 2005; Figure 1) in vivo (see Figure 1—figure supplement 1 for an example of extracellular recordings in the DRN). In order to simultaneously record activity of a large number of neurons across V1, we employed wide-field optical imaging of Ca2+ signals, shown to reflect suprathreshold population activity across upper cortical layers (Kim et al., 2016; Lütcke et al., 2013; Lütcke et al., 2010; Wallace et al., 2008; Xiao et al., 2017). Specifically, we used the red-shifted fluorescent probe RCaMP (Akerboom et al., 2013; Dana et al., 2016; Figure 1a) to minimize interference with the blue light employed to activate serotonergic neurons in the DRN (Figure 1b) and to reduce light scattering caused by hemodynamic signals in comparison to GCaMP.
 
-## Photostimulation of 5-HT neurons in the DRN suppresses neuronal responses in primary visual cortex (V1)
+![Figure 1.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig1-v1.jpg)
+
+**Figure 1.:** (ai) Viral injection of RCaMP in V1 and adjacent cortical areas and injection of ChR2-mCherry into DRN of ePet-Cre mice. (aii) Coronal section of V1, showing expression of RCaMP. (aiii) Schematic of the experimental setup. DRN photostimulation was performed via an implanted optic fiber and wide-field imaging was achieved through the thinned skull. Stimuli were displayed on a monitor at 30 cm distance to the eye contralateral to the recorded hemisphere. Animals were anesthetized and head-fixed. (aiv) Vascular pattern (left) of the imaged cortical region showing activation across V1 and neighboring visual areas after visual stimulation (right). 1: V1; 2: V2Lateral; 3: V2Medio-Lateral; 4: V2Medio-Medial; 5: somatosensory cortex; 6: auditory cortex; 7: PtA (parietal association area). (bi) Coronal section at the DRN injection site after expression of Cre-dependent tdTomato (red). Most subnuclei including dorsal (DRD), ventral (DRV), and interfascicular (DRI) parts of the DRN, and the median raphe nucleus (MnR) show fluorescent labeling of serotonergic cells. (bii-iii) Magnified view of the area outlined in (bi). Labeling with fluorescent reporter tdTomato (bii, top), antibody labeling against tryptophan hydroxylase (TPH, (bii), bottom), and their co-localization (biii); Aq: aquaduct.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Schematic of optrode placement in the DRN. (b) Immunohistochemical identification of ChR2-expressing 5-HT neurons in the DRN (red) co-labeled for cFos (green). Higher magnification picture of the boxed region indicates that ChR2-expressing neurons were positive for cFos after optical stimulation. (c) MUA, showing activation following onset of photostimulation (16 s of 20 Hz, blue light pulses of 25 ms pulse width). (d) Upper: Representative trial of one photostimulation period (blue bar). Corresponding spike waveforms (25 overlaid spikes) are shown at upper left. Lower: Magnified picture of the boxed region in the upper panel. Blue bars indicate individual 25 ms light pulses. (e) Peristimulus time histograms (bin size 1 s) and raster plots of five trials.
+
+### Photostimulation of 5-HT neurons in the DRN suppresses neuronal responses in primary visual cortex (V1)
 
 As control conditions we recorded evoked responses to visual stimuli (vertical grating with 100% contrast, presented 10 times at intervals of 3 s with 200 ms duration) and spontaneous activity over a total of 30 s (Figure 2ai, [V] and Figure 2aiii [S], respectively). In addition, we recorded the activity during these conditions with photostimulation (16 s train of 470 nm light pulses at 20 Hz and 50% duty cycle, marked as blue bars in Figure 2aii, [Vph] and Figure 2aiv, [Sph]) to activate 5-HT neurons in the DRN. For each condition, Figure 2a shows the time course of RCaMP signals as mean spatial averages across V1 (25–50 trials per condition) derived from eight animals under anesthesia. Under control conditions without DRN photostimulation, activation over V1 shows each stimulus occurrence as a rapid ramp-up of the RCaMP signal followed by a slower decay towards baseline level (Figure 2ai). In contrast, after the onset of photostimulation, a strong suppression of evoked visual responses is observed, succeeded by a subsequent increase of the Ca2+ signal above pre-stimulation levels after cessation of photostimulation (Figure 2aii).
 
@@ -47,9 +55,17 @@ As control conditions we recorded evoked responses to visual stimuli (vertical g
 
 Importantly, 5-HT-mediated suppression of cortical activity is present without external visual input; that is, following photostimulation, ongoing cortical activity rapidly declines below baseline levels (Figure 2aiv). This suppression of spontaneous activity includes cortical areas beyond V1 (white contours in Figure 2b, 4th row; for assignment of cortical areas, see Figure 1aiv), suggesting 5-HT affects spontaneous drive through widespread ascending projections from the DRN across the entire cortex (Hale and Lowry, 2011).
 
-## Suppression of ongoing activity
+### Suppression of ongoing activity
 
 We next quantified the effects of DRN photostimulation on spontaneous cortical activity. The traces in Figure 3ai depict spatial averages of Ca2+ signals over V1. A comparison between spontaneous activity under control conditions (black stippled lines) and upon DRN photostimulation (Sph, light blue line) reveals a significant suppression (−0.10±0.02, n=8 animals, p=0.039; one-sample t test; Figure 3aii, left bar). The suppression is significant 680 ms (8 animals, p=0.04; paired t test with permutation correction) after the onset of DRN photostimulation, then it reaches a local minimum followed by an increase in activity (Figure 3ai). This later elevation in the RCaMP signal could indicate an increase of intracellular Ca2+ levels (Eickelbeck et al., 2019) associated with the 5-HT-receptor-mediated activation of the Gq/11 pathway (Millan et al., 2008) and concomitant activation of store-operated channels (Celada et al., 2013). By restricting the averaging window to the period where suppression of the RCaMP signal is significant (as marked with red rectangle in Figure 3ai), the amount of suppression increased to −0.33±0.02 (8 animals, p<0.001, one-sample t test; Figure 3aii, right bar).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig3-v1.jpg)
+
+**Figure 3.:** (ai) Ca2+ imaging of spontaneous activity. Traces were derived after spatial averaging and depict mean across eight animals, each experiment comprising 25–50 trials (light blue area marks SEM). Black stippled lines indicate spontaneous activity without photostimulation (S). Blue solid line shows spontaneous activity with concurrent DRN photostimulation (Sph). Blue background marks time window of photostimulation. Red rectangle encircles a time window in which Sph is significantly lower than S (see main text). (aii) Average of S (black bar) and Sph (light blue bar) over the entire time of photostimulation and over the time window marked by the red rectangle in ai. (bi) MUA recordings, same conditions as shown in a. Data are based on 104 multi-units over 25 different recordings (10–20 trials) in nine animals at cortical depths between 250 and 750 µm. (bii) Similar quantification as in aii (for details see Methods). All values in the panels are mean ± SEM. Color legend in bi applies to all panels. ***p<0.001, **p<0.01, and *p<0.05, one-sample and paired t test. For a single example of MUA recording see Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Upper: Raster plot of MUA in V1 across 10 trials for the S control condition. Middle: Same as S with photostimulation of the DRN (Sph). Bottom: Histograms of the raster plots depicted above. The overlaid traces (smoothed with a moving average filter of length 5) show the spike rate (right y-axis).
 
 To investigate whether the observed suppression is indeed sustained during photostimulation and whether it reflects a decrease in spiking output of V1, we recorded multi-unit activity (MUA), n=9 animals, 104 MUAs, using the same experimental paradigm as in the wide-field RCaMP imaging. Similar to RCaMP imaging, spontaneous activity revealed by MUAs is significantly (below two times standard deviation of pre-photostimulation activity) suppressed after 750±184 ms of DRN photostimulation in comparison to baseline spontaneous firing (Figure 3bi, light blue and stippled black line, respectively) when averaged over the early phase (red rectangle in Figure 3ai and 3bi) of suppression (−0.48±0.07, n=9 animals, p<0.001, one-sample t test; Figure 3bii, right bar). Note that in contrast to the RCaMP signal, spiking activity is devoid of a subsequent elevation. Instead, the suppression remains highly significant throughout photostimulation (−0.43±0.08; n=9 animals, p<0.001; one-sample t test; Figure 3bii, left bar). This further suggests that the observed rise of the RCaMP signal may represent intracellular accumulation of Ca2+, rather than increase in spiking activity. The assumption is also supported by subsequent 5-HT receptor blocking experiments (see below). Altogether, it can be inferred that augmented activity of 5-HT neurons via DRN photostimulation results in suppression of spontaneous activity in the visual cortex. Additional analysis using linear regression shows that this suppression is divisive (Figure 4).
 
@@ -57,9 +73,25 @@ To investigate whether the observed suppression is indeed sustained during photo
 
 **Figure 4.:** (a) Average of spontaneous activity across MUA recordings (41, MUA with pre photostimulation firing rates between 1 and 20 Hz). Pre- and post-photostimulation time windows used for analysis are marked (the length of each window is 4 s). Both traces are normalized to pre-stimulus firing rate, for details see Materials and methods. (b) Comparison between the mean of Sph pre and Sph post photostimulation for each unit (light blue circles) and the same comparison for S (black circles); data points normalized over all units. Solid lines represent the linear regression for Sph (blue) and S (black) and red lines show x=y. Equations of the regressor lines are shown with corresponding colors. The boxed region is a zoom in of the outlined area shown in left panel. (c) Bars show the regression coefficients (mean ± SEM); ***p<0.001, one-sample t test.
 
-## Suppression of visually evoked activity
+### Suppression of visually evoked activity
 
 Next, we compared the conditions with visual input (V and Vph). While visually evoked responses of control conditions are characterized by repeated increase of the Ca2+ signal with a small adaptive decrease in the response amplitudes over time (Figure 5ai and 5bii, black trace), the amplitude of activity declines toward negative values in the presence of DRN photostimulation (Figure 5aii, dark blue trace). Note that both the amplitude of the evoked responses and their baseline are reduced. To assess how much of the suppression in amplitude is due to the suppression of its baseline level, we subtracted image frames obtained under Sph conditions from those under Vph conditions (pixelwise and across single trials). The outcome (Figure 5aii, gray trace) is the photostimulation-induced suppression of the evoked response independent of suppression in spontaneous activity, that we refer to as the evoked component.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig5-v1.jpg)
+
+**Figure 5.:** (ai) Visually evoked responses in the control condition (V). Traces show spatial averages across the center of activity in V1 (see black circle in Figure 2b, second row) after repetitive visual stimulation (onsets and numbering at top; n=8 animals, each experiment comprises 25–50 trials). Traces are normalized to the maximum of the first visual response. Inset: w1 refers to 400 ms time window around peak value and w2 marks 200 ms time window before the onset of each visual stimulus. Stippled black lines show spontaneous activity without visual input and without photostimulation. (aii) Visually evoked response with concurrent DRN photostimulation (Vph, blue trace) and evoked component (i.e. after subtraction of spontaneous activity (Sph) from Vph, gray trace). (bi) Amplitude values: average of activity in w1 for each visual stimulus. (bii) Baseline values: average of activity over w2 for each visual stimulus. Light blue curve shows the same calculation for Sph shown in Figure 3ai. (biii) Magnitude values: absolute difference between baseline values bii and amplitude values bi for each visual stimulus. (ci) Summary of amplitude differences between photostimulated conditions (Vph [blue] and Vph-Sph [gray]) and control condition (V), see legend. Bars show the average of amplitude difference during the time of photostimulation (stimulus interval #2–7, shown in bi). Ca2+ imaging: left blue and gray bars, mean ± SEM, n=8 animals. Extracellular recordings: right blue and gray bars, mean ± SEM, n=9 animals, 104 MUA. (cii) Same as ci for magnitude values shown in biii. All the traces depict mean values across animals, shaded areas (in ai and aii) as well as error bars (in bi-biii) represent SEM. Color legend in ai applies to all panels. ***p<0.001, **p<0.01, and *p<0.05, paired t test with permutation correction for multiple comparisons (bi-biii) and one-sample and paired t test (ci and cii). For sham control see Figure 5—figure supplement 3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Identical paradigms, calculations, and color codes as used in Figure 5. Same database as in Figure 3b. (ai) Control condition (V). (aii) Same as ai with concurrent DRN photostimulation (Vph, blue). Evoked component (Vph-Sph,) is shown as gray trace. (bi) Amplitude values (N.SpR = Normalized Spike Rate). (bii) Baseline values. The close overlap of both dark and light blue traces indicates that baseline suppression of the evoked response (Vph, dark blue) is largely explained by suppression of spontaneous activity (Sph, light blue). Note that the traces are normalized to maximum activity in response to visual stimulation, including large changes in evoked firing rates from baseline. Therefore, the relative scale of suppression in the spontaneous component appears less prominent as when normalizing to pre photostimulation level (Figure 3). The averaging window for baseline calculation (w2) is 1 s to include more samples (bin size 200 ms). (biii) Magnitude values. (ci), Raster plot of MUA of an example recording across 10 trials for the control condition. Vertical bars on top depict the timing of visual stimulation. (cii) Same as ci, with photostimulation of the DRN. (ciii) Histograms for the raster plots depicted above for each condition (see legend). **p<0.01 and *p<0.05, paired t test with permutation correction for multiple comparisons.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Identical paradigms and color codes as used in Figure 5. Traces show normalized activity across recordings of 41 MUAs (same database as in Figure 4). The black rectangles, mark pre- and post-photostimulation averaging time windows, each lasting 400 ms. (b) Left: Comparison between the mean of visually evoked activity in the pre- and post-averaging windows for each unit (Vph, dark blue circles); data points are normalized over all units. Black circles depict the same comparison for the control condition (V, i.e., visual stimulation without photostimulation). Solid lines represent the linear regression for V and Vph, coloring of equations refers to conditions. (b) Right: Mean of regression coefficients (± SEM). (c) Same as b for evoked component (Vph-Sph). ***p<0.001, one- sample t test.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Traces show mean responses of 4 ePet-Cre mice injected with saline solution (see Materials and methods). Same paradigms and analysis as depicted in Figure 5a and b was used. (ai) Visually evoked responses. (aii) The same as ai with concurrent DRN photostimulation (Vph, dark blue trace). Evoked component (gray trace), i.e. after subtraction of spontaneous activity (Sph, light blue trace) from Vph. (b) Magnitude values (see main text).
 
 To quantify these observations, three measurements are depicted in Figure 5b. (see Methods for details). The first measurement is the amplitude of evoked activity, defined as an average over the time window w1 (Figure 5ai inset). Following DRN photostimulation, amplitudes of evoked responses (Figure 5bi dark blue curve) and evoked component (Figure 5bi gray curve) are significantly lower than those of the control condition (Figure 5bi black curve; p<0.05; paired t test with permutation correction). In the early part of the photostimulation window (stimulus #2–4), however, amplitudes of evoked responses are also significantly below amplitudes of the evoked component (p<0.05; paired t test with permutation correction). Using a second measurement, that is, the baseline of the traces (averaged over a 200 ms time window before the onset of each visual stimulus (w2, Figure 5ai inset) indicates that this difference arises from additional suppression seen in spontaneous activity (Figure 3ai). Indeed, the time course of the baseline in the evoked responses during photostimulation is analogous to spontaneous activity during photostimulation (Figure 5bii, cf. dark blue and light blue traces, respectively); both are characterized by an initial suppression followed by the previously referred rise in RCaMP signal. We, therefore, define the baseline of the evoked response as the baseline component and it is approximated via spontaneous activity.
 
@@ -69,7 +101,7 @@ Extracellular recordings of MUA in V1 substantiate the observed suppressive effe
 
 Figure 5c summarizes a comparison between Ca2+ imaging data and MUA data using average of amplitude and magnitude values during the period of photostimulation (stimulus #2–7) after subtraction of controls. Evoked responses (blue) and evoked component (gray), obtained with Ca2+ imaging and MUA indicate a highly significant reduction in amplitude (Figure 5ci, Ca2+ imaging data: −0.450.02 [blue] and −0.39±0.02 [gray], n=8 animals, p<0.001, one-sample t test; MUA data: −0.55±0.04 [blue] and −0.41±0.04 [gray], n=9 animals, p<0.001, one-sample t test). The smaller suppression in the amplitude of the Ca2+ signal compared to MUA data reflects that the chosen averaging window also includes the rising baseline of the Ca2+ signal (Figure 5bii). Consequently, the magnitude of the responses which is independent from baseline changes reveals a similar significant reduction in Ca2+ and MUA data (Figure 5cii, Ca2+ imaging data: −0.38±0.01 [blue], −0.41±0.01 [gray], n=8 animals, p<0.001, one-sample t test; MUA data: −0.38±0.02 [blue], −0.39±0.02 [gray], n=9 animals, p<0.001, one-sample t test). This again demonstrates that 5-HT-induced reduction in the gain of evoked activity is independent of the reduction of ongoing activity and is well-captured by response magnitude in both recording methods. Analogous to spontaneous activity, using linear regression, we found that the suppression of the evoked component is divisive (Figure 5—figure supplement 2). Altogether, these results suggest that increasing activity of 5-HT neurons in the DRN affects cortical activity in a divisive manner via two suppressive components: one suppressing ongoing activity and another reducing the gain of visually evoked activity.
 
-## Distinct and independent contribution of 5-HT2A and 5-HT1A receptors to suppression of evoked and spontaneous activity
+### Distinct and independent contribution of 5-HT2A and 5-HT1A receptors to suppression of evoked and spontaneous activity
 
 We next asked whether the observed two suppressive components might be mediated via different 5-HT receptors (Hannon and Hoyer, 2008; Leysen, 2004; Santana et al., 2004). After blocking 5-HT2A receptors via microiontophoresis of MDL (see Methods) and parallel photostimulation of 5-HT neurons in the DRN, the amplitude of the evoked response remains suppressed, while its magnitude is only slightly reduced (Figure 6ai, blue). Hence, after subtraction of the spontaneous component (Figure 6ai, light blue), the trace of the evoked component (Figure 6aii, gray) is nearly identical to control conditions (Figure 6aii, black) with no significant difference between magnitude values (Figure 6bi) except for a period immediately after onset of drug application (Figure 6bi, stimulus #2). This is most likely due to delayed onset of the drug effect. In contrast, the suppression of the baseline is preserved (Figure 6bii, dark blue) and is similar to spontaneous activity during photostimulation and MDL treatment (Figure 6bii, light blue). It is noteworthy that the rising part of the RCaMP signal in the Sph condition during MDL application (Figure 6bii, light blue, values #5:7) is significantly reduced as compared to Sph without MDL treatment (Figure 5bii, light blue; p=0.04, two-sample t test on the detrended traces). This suggests a reduction of the aforementioned intracellular Ca2+ accumulation (Eickelbeck et al., 2019) by effectively blocking 5-HT2A receptors. However, the continued rise of the RCaMP signal after the initial dip suggests contribution of further 5-HT receptor types (Jang et al., 2012; Millan et al., 2008) involved in intracellular Ca2+ accumulation that remain active during MDL application (Villalobos et al., 2005; Varga et al., 2009).
 
@@ -87,25 +119,73 @@ To compare 5-HT-induced effect on evoked and spontaneous components with and wit
 
 Together these results establish 5-HT1A and 5-HT2A receptors as major contributors to the suppression of activity in V1 induced by activation of 5-HT neurons in the DRN with separable impact on the gain of evoked and spontaneous components.
 
-## Intensity of visual input is scaled by 5-HT-induced normalization of cortical activity
+### Intensity of visual input is scaled by 5-HT-induced normalization of cortical activity
 
 To explore how sensitively 5-HT-induced suppression affects scaling of cortical activity, we employed the well-studied sensitivity of neurons in V1 to different stimulus contrasts. To obtain a contrast response function for different stimulus intensities, we presented gratings at 100, 50, 25, 12.5, and 6.25% contrast. Responses were imaged under control conditions (Figure 8ai) interleaved with conditions in which the DRN was photostimulated (Figure 8aii). As expected from earlier studies in mice (Porciatti et al., 1999), visual responses progressively decline in amplitude with decreasing contrast. To obtain an objective measure of the underlying contrast tuning the maximum of evoked response (peak) for each contrast is fitted to the Naka-Rushton function (Equation 6 in Materials and methods). The resulting fit is shown in Figure 8di as solid black curve (R2=0.93). Upon photostimulation of the DRN, we found that overall amplitudes for each contrast are systematically suppressed (Figure 8aii, dark blue traces), leading to a strong downward shift of the fitted tuning curve (Figure 8di, solid blue, R2=0.93). Furthermore, we found a systematic increase in the latency and significant decrease in the duration of evoked response (Figure 8—figure supplement 1). In addition, we confirmed the suppression of spontaneous activity independent of visual input (Figure 8aii, light blue trace). Above we showed that this suppressive spontaneous component contributes additively to the 5-HT-induced overall suppression of visual responses (Figure 5). Note that the evoked component is obtained by subtraction of the spontaneous component from the evoked responses for each contrast (Figure 8aiii). Therefore, the fitted tuning curve of the evoked component (Figure 8di, solid gray, R2=0.92) shows a shift toward tuning of control conditions that reflects the portion of suppression in the evoked response (Figure 8di, solid blue) attributed to the spontaneous component.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig8-v1.jpg)
+
+**Figure 8.:** (ai) Control conditions (V): visually evoked response to stimulation with gratings of different contrast. Values are scaled to the maximum amplitude at 100% contrast (n=18 animals). Grating icons identify the timing of visual stimulation and its corresponding contrast. Black dashed lines show activity devoid of photostimulation and visual input. (aii) Same as ai with concurrent DRN photostimulation. Dark blue trace depicts visually evoked response (Vph), light blue trace is for spontaneous activity (Sph). (aiii) Evoked component (Vph-Sph) of the traces shown in aii. (bi) Magnitude differences between photostimulated conditions (Vph [blue] and Vph-Sph [gray]) and control condition (V) for each grating contrast. (bii) Average of spontaneous activity (S, black) and Sph (light blue) over the entire time window of photostimulation (wph). (ci) Scaling the traces in aii to the maximum of the trace at 100% contrast. (cii) Same as ci for the evoked component as shown in aiii. (di) Solid lines: Peak values of traces shown in ai-aiii fitted to the Naka-Rushton function (see Methods). Stippled lines: Fit of the peak values of the normalized traces shown in ci and cii to the Naka-Rushton function. (dii) Contrast tuning obtained from extracellular recordings (3 animals, 108 MUA). Similar to di, the peak values of traces for each contrast and condition are fitted to Naka-Rushton function (all traces are shown in Figure 8—figure supplement 2ai—aiii, ci and cii). **p<0.01 and ***p<0.001, one-sample t test.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (a) Schematic of the calculation used to determine latency and duration (for details see Materials and methods, Data analysis). (bi) Response duration as a function of contrast. (bii) Latency as a function of contrast. Black: Controls. Blue: Evoked responses during photostimulation (mean ± SEM, n=18 animals). ***p<0.001 and **p<0.01, two-sample t test.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Identical paradigms, calculations, and color codes as used in Figure 8. (ai) Control conditions (V). (aii) same as ai with concurrent photostimulation of DRN. (aiii) Evoked component of traces in aii (Vph-Sph). (bi) Magnitude differences between photostimulated conditions (Vph [blue] and Vph-Sph [gray]) and control condition (V) for each grating contrast. (bii) Difference of Sph and S over the entire time of photostimulation (wph). Traces of S and Sph are shown at right side. (ci) Scaling the traces in aii to the maximum of the trace at 100% contrast. (cii) Scaling the traces in aiii. to the maximum of the trace at 100% contrast. (d) Similar to Figure 8dii, here using data that include MUA with average spontaneous firing rate in the pre photostimulation window above 1 Hz (n=3 animals, 41 units) to account for possible floor effects. **p<0.01, one-sample t test.
 
 Next, to account for normalization the traces of evoked responses (Figure 8aii) and evoked component (Figure 8aiii) are scaled by their maximum value at 100% contrast (Figure 8ci and cii, respectively). Such divisive scaling fails to fully replicate contrast tuning of controls (Figure 8di, solid black curve) when considering evoked responses, particularly at low stimulus contrasts (Figure 8di, blue stippled curve, R2=0.92). This is because of a significant contribution of the spontaneous component to the overall suppression (i.e., gain) of evoked responses at low stimulus contrasts: Whereas the magnitude of the evoked component shows no further reduction at these lower contrasts (Figure 8bi, two right gray bars), the corresponding suppression in the magnitude of evoked responses (which include the suppression in spontaneous activity) are significant (Figure 8bi, two right blue bars; 12%: −0.19±0.005, p<0.001; 6%: −0.15±0.003, p<0.01; n=18 animals, one-sample t test). This indicates that at low contrast suppression is mainly due to the suppression in the spontaneous component. Also note that the suppression at these lower contrasts is similar to 5-HT-induced suppression of spontaneous activity (Sph; −0.17±0.02, n=18 animals, p<0.001, one-sample t test; Figure 8bii). Consequently, fitting the Naka-Rushton function to the added values of evoked and spontaneous components (Figure 8di, gray stippled curve; R2=0.93) reveals a close match to contrast tuning of control conditions (Figure 8di, solid black curve), indicating normalization across all contrasts. Importantly, following the same experimental paradigm and quantification methods, MUA recordings leads to equivalent findings (Figure 8dii, 108 MUAs, n=3 animals; see Figure 8—figure supplement 2 for response traces and similar analysis). We conclude that in the anesthetized state, 5-HT-induced normalization of visual responses to different stimulus intensities is achieved by a linear combination of 5-HT-induced suppression of spontaneous and evoked components of cortical activity.
 
 Finally, we explored the extent to which the above conclusion depends on the cortical state. Previous studies suggest that during awake state the cortical 5-HT levels are increased (Mukaida et al., 2007; Portas et al., 2000). Because our results characterize 5-HT-induced suppression as divisive, both for spontaneous and evoked activity (Figure 4 and Figure 5—figure supplement 2, respectively), 5-HT baseline levels may crucially affect the quantity of inducible suppression. Hence, the impact of activating the DRN on cortical activity may differ under wakeful conditions compared to conditions where the animals are anesthetized. Therefore, we recorded cortical activity of awake mice (5) that were head-fixed and habituated to walk and stay on a treadmill (using the same experimental paradigm as shown in Figure 8). Figure 9a depicts the time traces of spatially averaged RCaMP signals across V1, evoked by different stimulus contrasts. As in anesthetized animals, following DRN photostimulation cortical activity was suppressed as compared to controls (Figure 9ai and aii, blue and black (control) traces, respectively). In comparison to the anesthetized state, however, suppression at higher contrast (100%–25%) is significantly reduced (100%: p=0.010, 50%: p=0.012, 25%: p=0.019, 12%: p=0.392, 6%: p=0.694, n=5 animals, two-paired t test; Figure 9—figure supplement 1 shows the data derived from the same animals when they were anesthetized). Importantly, in the awake state, the contrast-dependent decline in the magnitudes is not different between suppression of evoked activity and evoked component (Figure 9bi, blue and gray bars, respectively; p>0.31, paired t test). This suggests that normalization is largely controlled without the contribution of the spontaneous component (Figure 9ci, blue (R2=0.98) and gray (R2=0.95) curves for evoked response and evoked component, respectively). Indeed, fitting normalized data (i.e. traces scaled by their maximum value at 100% contrast) to the Naka-Rushton function reveals a similar contrast tuning function for evoked responses and evoked component (Figure 9cii, stippled blue (R2=0.97) and gray (R2=0.98) curves, respectively) as controls (Figure 9cii, solid black curve). Thus, in the awake state, suppression of spontaneous activity (−0.11±0.3, n=5 animals, p=0.022, one-sample t test; Figure 9bii, left blue bar), even though similarly significant as in the anesthetized state (−0.17±0.04, n=5 animals, p=0.005, one-sample t test; Figure 9bii, right blue bar), constitutes an independent component with little influence on the magnitude and consequently, on normalization of stimulus-evoked responses.
 
-## The weight of spontaneous activity in response normalization differs between awake and anesthetized states
+![Figure 9.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig9-v1.jpg)
 
-To understand the different relative impact of spontaneous activity on response normalization in the two cortical states, the amount of 5-HT-induced suppressive gain should be considered as a crucial adjusting factor. This factor influences not only the weight of the evoked component but also the weight of the spontaneous component. Assuming that the control visual response (V) can be approximated by the visual response during photostimulation (Vph) and the 5-HT-induced gain (i.e. the inverse of c), it can be formalized:(1)VphV=c→V=1c×Vph
+**Figure 9.:** Same conventions as in Figure 8: (a) Visually evoked responses (ai) Control conditions (V). (aii) same as ai with concurrent photostimulation of the DRN (Vph, dark blue). Light blue trace shows spontaneous activity during photostimulation (Sph). (bi) Magnitude differences between photostimulated conditions (Vph [blue] and Vph-Sph [gray]) and control condition (V) for each grating contrast. (bii) Average of spontaneous activity (S, black) and spontaneous activity with photostimulation (Sph, light blue) in awake and anesthetized state. Values are averaged across the time window of photostimulation (wph). **p<0.01, and *p<0.05, one-sample t test. (ci) Peak values of traces shown in ai and aii fitted to the Naka-Rushton function. Line colors correspond to colors of traces in ai and aii, gray depicts peak values and fit of the evoked component (traces not shown). (cii) Same as ci with normalized peak values. All data summarize recordings in five awake mice. Traces of matched animals in the anesthetized state are shown in Figure 9—figure supplement 1. For differences in the contribution of evoked and baseline components in normalization see Figure 9—figure supplement 2.
 
-Our main hypothesis here is that Vph is a linear combination of the evoked component (Eph) and its baseline component (bph). As shown in Figure 5bii, bph is approximately equal to the suppression in spontaneous activity (Sph). Furthermore, we show (Figure 5bi) that the general effect of photostimulation is suppressive (i.e., g>1):(2){Vph=Eph+bphbph≅Sph1c=g→c<1g>1
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig9-figsupp1-v1.jpg)
 
-Thus, under these considerations Equation 1 can be rewritten as:(3)V=g(Eph+Sph)(4)V=g×Eph+g×Sphformalizing that the gain (g) affects the relative contributions of both the evoked and the spontaneous component.
+**Figure 9—figure supplement 1.:** Same conventions as in Figure 9. (a) Visually evoked responses. (b) Peak values fitted to the Naka-Rushton function: in (bi) for the traces shown in a (gray curve depicts evoked component, data not shown) and in (bii) for normalized values (traces are not shown). Note that 5-HT-induced contrast normalization is almost identical to the group of anesthetized animals (18) that were measured in a separate row of experiments (Figure 8), indicating high reproducibility of the obtained results.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/53552/elife-53552-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (ai) Evoked visual responses to gratings (100% contrast) in anesthetized (solid traces) and awake mice (stippled traces). Control condition (V, black), condition with concurrent photostimulation of the DRN (Vph, dark blue). Light blue traces depict spontaneous activity with photostimulation (Sph), dotted black traces around zero show baselines without any input. Green and black circles mark the amount of Sph at time to peak (tpk), i.e. the time where Vph reaches maximum values (green = awake (aw): -0.09±0.03, n=5, p<0.01, one-sample t test); black = anesthetized (an): -0.17±0.03, n=18, p<0.001, one-sample t test); g refers to the 5-HT-induced gain (i.e. the inverse of c, $c=\frac{V_{ph}}{V}$); gaw<gan with gaw : 1.35±0.2, n=5 and gan : 2.20±0.7 n=18, p<0.01, two-sample t test. Rectangle at right is a magnified view of the area marked in left panel. (aii) Traces shown in ai, normalized by the ratio equal to their corresponding g . Magnified view at right demonstrates the resulting relative change of Sph values after normalization. Note the difference between the awake and the anesthetized state: transparent dots (copied from ai) are values before normalization and solid dots values after normalization. (bi), Relative weights of evoked component (gray bars) at each grating contrast in comparison to the weight of the baseline component (blue bars) in the anesthetized state after normalization (Equation 4 in main text). (bii) Same as bi in the awake state. (biii) same as bii, assuming (i.e. simulating) the amount of Sph in the awake state (Sph aw) being equal to the value of Sph in the anesthetized state (Sph an=-0.17). Note that also in this case, the weight of the spontaneous component in the awake state (g×Sph)aw remains significantly smaller (-0.22±0.03, n=5, blue bars in biii) than the spontaneous component (g×Sph)an in the anesthetized state (-0.36±0.11, n=18, blue bars in bi), p<0.001 two-sample t test. ***p<0.001, **p<0.01, and *p<0.05, one-sample and two-sample t test.
+
+### The weight of spontaneous activity in response normalization differs between awake and anesthetized states
+
+To understand the different relative impact of spontaneous activity on response normalization in the two cortical states, the amount of 5-HT-induced suppressive gain should be considered as a crucial adjusting factor. This factor influences not only the weight of the evoked component but also the weight of the spontaneous component. Assuming that the control visual response (V) can be approximated by the visual response during photostimulation (Vph) and the 5-HT-induced gain (i.e. the inverse of c), it can be formalized:
+
+$$
+\frac{V_{ph}}{V}=c→V=\frac{1}{c}\timesV_{ph}
+$$
+
+Our main hypothesis here is that Vph is a linear combination of the evoked component (Eph) and its baseline component (bph). As shown in Figure 5bii, bph is approximately equal to the suppression in spontaneous activity (Sph). Furthermore, we show (Figure 5bi) that the general effect of photostimulation is suppressive (i.e., g>1):
+
+$$
+{V_{ph}=E_{ph}+b_{ph}b_{ph}≅S_{ph}\frac{1}{c}=g→c<1g>1
+$$
+
+Thus, under these considerations Equation 1 can be rewritten as:
+
+$$
+V=g(E_{ph}+S_{ph})
+$$
+
+
+
+$$
+V=g\timesE_{ph}+g\timesS_{ph}
+$$
+
+formalizing that the gain (g) affects the relative contributions of both the evoked and the spontaneous component.
 
 Next, we focus on how normalization affects the relative weight of the baseline component (g×Sph) dependent on the cortical state (Figure 9—figure supplement 2ai and aii). In the anesthetized state, the weight of the baseline component is significantly larger (-0.36±0.11, n=18) than in the awake condition (-0.11±0.02, n=5; p<0.001, two-sample t test). This influences normalization particularly at low contrasts, where the weights of the baseline and the evoked components are not significantly different from each other (Figure 9—figure supplement 2bi). Thus, in the anesthetized state, the baseline component is a likely candidate for an additive contribution to normalization (Figure 8di). In contrast, in the awake state, the linear summation of both components (Equation 4) is significantly (p<0.01, one-sample t test) biased towards the evoked component, with negligible contributions of the baseline component across all stimulus intensities (Figure 9—figure supplement 2bii).
 
-One might argue that the reduced contribution of the baseline component in the awake state is merely due to the smaller value of baseline suppression (i.e. Sph aw<Sph an) at the time of the peak (tpk) of the evoked response. In fact, we find that Vph in the awake state reaches peak intensities significantly earlier than in the anesthetized state (mean over all contrasts: 311±32 ms (n=5 awake mice), 441±41 ms (n=18 anesthetized mice), p<0.001 two-sample t test; Figure 9—figure supplement 2ai). Note, however, that the amount of suppression in Sph at tpk in the awake state, is still significant (-0.09±0.03, n=5, p<0.01, one-sample t test), although less than in the anesthetized state (-0.17±0.03, n=18, p<0.001, two-sample t test). In any case, as shown in Figure 9bii, the overall amount of suppression of Sph in both states is not significantly different when averaged over the entire time of photostimulation. Therefore, first, it follows that suppression in spontaneous activity in the awake state is strictly either lower or equal than in the anesthetized state (Equation 5, first line).(5){Sphaw≤Sphangaw<gan
+One might argue that the reduced contribution of the baseline component in the awake state is merely due to the smaller value of baseline suppression (i.e. Sph aw<Sph an) at the time of the peak (tpk) of the evoked response. In fact, we find that Vph in the awake state reaches peak intensities significantly earlier than in the anesthetized state (mean over all contrasts: 311±32 ms (n=5 awake mice), 441±41 ms (n=18 anesthetized mice), p<0.001 two-sample t test; Figure 9—figure supplement 2ai). Note, however, that the amount of suppression in Sph at tpk in the awake state, is still significant (-0.09±0.03, n=5, p<0.01, one-sample t test), although less than in the anesthetized state (-0.17±0.03, n=18, p<0.001, two-sample t test). In any case, as shown in Figure 9bii, the overall amount of suppression of Sph in both states is not significantly different when averaged over the entire time of photostimulation. Therefore, first, it follows that suppression in spontaneous activity in the awake state is strictly either lower or equal than in the anesthetized state (Equation 5, first line).
+
+$$
+{S_{phaw}\leqS_{phan}g_{aw}<g_{an}
+$$
 
 Second, we find that suppression of the magnitude is constant during photostimulation (Figure 5biii) and always lower in the awake (0.78±0.1, n=5) as compared to the anesthetized state (0.52±0.2, n=18, p<0.001, two-sample t test; Figure 8bi and Figure 9bi). Together, it is conclusive that the 5-HT-induced gain is smaller in the awake than in the anesthetized state (gaw<gan, Equation 5, second line).
 
@@ -133,17 +213,125 @@ In summary, joint action of 5-HT1A and 5-HT2A receptors unfold a separable and p
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>ePet-Cre (B6.Cg-Tg(Fev-cre)1Esd/J)</td>
+      <td>Scott et al., 2005 Jackson laboratory</td>
+      <td>JAX: 012712</td>
+      <td>Breeded by the group of Dr. Stefan Herlitze and Dr. Melanie D. Mark (Ruhr University Bochum)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV1.EF1.dflox.hChR2(H134R)-mCherry.WPRE.hGH</td>
+      <td>Addgene</td>
+      <td>Addgene number: 20297-AAV1</td>
+      <td>AAV virus constructed to express in the Cre-expressing cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV1.syn.jRCaMP1a.WPRE.SV40</td>
+      <td>Addgene Akerboom et al., 2013</td>
+      <td>Addgene number: 10848-AAV1</td>
+      <td>AAV virus constructed to express in both excitatory and inhibitory neurons, due to the Synapsin promoter.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-TPH (monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T0678-100ul</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse DyLight 488 (donkey polyclonal)</td>
+      <td>Abcam</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c fos (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-52</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 488 (donkey polyclonal)</td>
+      <td>Life Technology</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-HT2A receptor antagonist MDL-100907</td>
+      <td>Sigma-Aldrich</td>
+      <td>M3324-5MG</td>
+      <td>5-HT2A receptor antagonist, 20 mM in 0.9% NaCl, pH 10</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-HT1A receptor antagonist WAY-100135</td>
+      <td>Sigma-Aldrich</td>
+      <td>W1895-5MG</td>
+      <td>5-HT1A receptor antagonist, 5 mM in 0.9% NaCl pH 4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Inkscape</td>
+      <td>Inkscape (http://inkscape.org/)</td>
+      <td>RRID:SCR_014479</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Imager 3001</td>
+      <td>Optical Imaging Inc, Mountainside, NY, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Adult ePet-Cre mice [ePet-Cre is a transgene with Cre recombinase driven by a serotonergic specific ePet-1 enhancer region (Scott et al., 2005) were used in this study. After preparatory surgery (as detailed below), mice were housed individually and kept in 12 h light/dark cycle with food and water ad libitum.
 
-## Viral injections and implant of optical fiber
+### Viral injections and implant of optical fiber
 
 Cre-dependent AAV [AAV1.EF1.dflox.hChR2(H134R)-mCherry.WPRE.hGH, Addgene number: 20297] was injected into the DRN of ePet-Cre transgenic mice (Figure 1ai) and a viral construct of the red-shifted calcium indicator RCaMP [AAV1.syn.jRCaMP1a.WPRE.SV40 Addgene number: 10848] (Akerboom et al., 2013) was injected into visual and somatosensory cortex based on stereotactic coordinates (Lowery and Majewska, 2010; Paxinos and Franklin, 2004). All viral constructs were obtained from the University of Pennsylvania (100 µL at titer ≥1×1013 vg/mL).
 
 Animals were anesthetized with isoflurane (4% induction and 2% for maintenance) via a nose mask and received a 0.25 ml subcutaneous bolus of isotonic 0.9% NaCl solution mixed with Buprenorphine (10 µg/ml) and Atropine (5 µg/ml). A heating pad (37°C) was placed below the animal during surgery and experiments to maintain body temperature. Before sagittal incision along the midline, 2% Lidocaine was applied to provide additional local anesthesia. The skull was thinned until surface blood vessels became visible. Next, a small craniotomy was made, −0.5 mm Anteroposterior [AP] to Lambda and 0 mediolateral [ML] to Bregma. Using a micromanipulator, a customized glass pipette attached to a 20 ml syringe was lowered into the brain to a depth of 2.5 mm below the brain surface to target the DRN. The viral solution containing ChR2 construct was delivered via small pressure injections (100 µm steps upwards until the depth of 1.7 mm, with an injection interval of 5 min). After injections, a custom-made optical fiber (200 µm, 0.37 NA, Thorlabs) attached to a ceramic ferrule (Thorlabs) was implanted in the brain tissue in depth of −1.5 mm below the cortical surface and 0.5 mm anteroposterior (AP) to Lambda. After implantation, the ferrule was secured to the skull with transparent dental cement (Super Bond C and B set, Hentschel-Dental, Germany). The viral solution containing RCaMP construct was injected at two locations in the visual cortex (−4.2 AP, 2.5 ML, and −3.5 AP, 2 ML to Bregma; all values in mm) and at one location in somatosensory cortex (−1.5 AP, 2.5 ML to Bregma; values in mm). At each of these cortical injection sites, 0.5 µl of the viral solution was delivered at the cortical depth of ~600 µm and 300 µm in four steps with 10 min intervals between each injection step. The thinned and exposed skull was covered with transparent dental cement and nail polish. Finally, a head holder was attached (Pi-Ku-Plast HP 36, Breedent) to the skull in order to provide a clear and easily accessible imaging window for chronic experiments. Control animals matching genetic background and age received injections with 0.9% NaCl solutions.
 
-## Visual stimuli and DRN photostimulation
+### Visual stimuli and DRN photostimulation
 
 For photostimulation of serotonergic neurons in the DRN, pulses of blue light (20 Hz, 25 ms pulse width, 470 nm, using a LED driver and emitter system, Plexon) was delivered via an optical fiber attached to the implant. Photostimulation started 2.5 s after the onset of data recording and lasted for 16 s. The power of light at the tip of the fiber was ~1 mW. The used photostimulation frequency and duration have been shown to evoke a robust and sustained increase of activity in the DRN above the baseline (Dugué et al., 2014; Grandjean et al., 2019).
 
@@ -153,21 +341,21 @@ In the set of experiments where different visual contrasts were used (100, 50, 2
 
 During all recordings in the anesthetized state, mice were kept under mild anesthesia (0.5–1% isoflurane) delivered via a nose mask.
 
-## Imaging of fluorescent RCaMP signals
+### Imaging of fluorescent RCaMP signals
 
 Image frames (one pixel covered ~67 µm of the cortical surface followed by an additional 3×3 binning online) were collected at a rate of 100 Hz using an Imager 3001 system (Optical Imaging Inc, Mountainside, NY). The camera was focused on ~300 μm below the cortical surface. To record changes in fluorescence of the RCaMP indicator, the brain was illuminated with the excitation wavelength (560±20 nm), and the emission light (>585 nm) was collected via a dichroic mirror followed by a bandpass filter (630±37 nm). Pre-processing and further data analysis were performed offline using custom-written scripts in MATLAB.
 
-## Pharmacology
+### Pharmacology
 
 Microiontophoresis of MDL-100907 (Sigma-Aldrich; 5-HT2A antagonist, 20 mM in 0.9% NaCl, pH 10) or WAY-100135 (Sigma-Aldrich; 5-HT1A antagonist, 5 mM in 0.9% NaCl pH 4) was performed via a pipette inserted to the brain tissue in the region of interest (ROI). Although WAY has been found to act as an agonist at 5-HT1B and 5-HT1D receptors as well (Davidson et al., 1997), it is currently the most specific agent available to block 5-HT1A receptors (Fletcher et al., 1995; Forster et al., 1995). Before microiontophoresis, a ROI was selected manually as the region within V1 that showed the highest activity levels in response to a short (200 ms) visual stimulus recorded over 3 s. A small craniotomy was then made within the ROI, and the pipette, filled with MDL or WAY solutions, was inserted 300 µm below the surface of the brain. Microiontophoresis was performed concurrently with RCaMP imaging and DRN photostimulation keeping all conditions unaltered. The drug solution was retained in the pipette by applying a −10 nA retention current using a constant-current pump (Union-40 microiontophoresis pump; Kation Scientific). To apply the drugs, ejection current was delivered at 60 nA one second before the onset of DRN photostimulation and delivered continuously for 18 s. Like all other conditions, the interval between conditions was 60 s. We noticed that in each trial, the response to the first visual stimulus of the stimulus train was identical (also to controls), indicating that the inter-trial interval was of enough time to allow the abolishment of antagonists between each trial. Control experiments were done by microiontophoresis of 0.9% of NaCl solution with a pH of 4.
 
-## In vivo extracellular multi-unit recording
+### In vivo extracellular multi-unit recording
 
 A fraction of the extracellular multi-unit activity (MUA) was recorded using tungsten electrodes (0.127 mm diameter, 1 MΩ, WPI, FL, USA), at cortical depths between 250 and 750 µm. Neuronal activity was amplified 1,000× and band-pass filtered (0.2–5 kHz, Thomas Recording, Germany). The signal was recorded at a sampling rate of 20 kHz using a CED Micro1401 controlled by the Spike two software (Cambridge Electronics Design, Cambridge, UK). Spike detection was performed with the Spike two software, using a threshold above and (or) below the baseline. Additional MUA was recorded using acute 16-channel silicon probes (ASSY-1 E-1, Cambridge NeuroTech, Cambridge, UK). Signals were amplified with a 16-channel amplifier board (RHD2132, Intan Technologies, CA) and recorded using a multichannel electrophysiology acquisition board (Open Ephys, Siegle et al., 2017) filtered between 600 to 6 kHz. Isolated spikes were detected and clustered using the Klusta suite (Rossant et al., 2016; https://github.com/klusta-team/klustakwik) with default configuration parameters.
 
 Traces of spike counts were averaged over time (200 ms bins) and across trials for each recorded condition. To normalize spontaneous activity, the individual traces of spontaneous activity with and without photostimulation were divided by the average spike counts over 1 s after the onset of recording. In order to normalize the evoked responses, an average spike count over 1 s after the onset of recordings was subtracted from each trace. For further normalization, the traces for each condition were divided by the response amplitude to the first stimulus in control (visually evoked, V) condition. The normalized traces were then averaged over all the units and animals. The evoked component of Vph in Figure 5—figure supplement 1aii was isolated through subtraction of the Sph from the Vph, before baseline subtraction.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemical analysis of virus expression in combination with identification of 5-HT neurons via tryptophan-hydroxylase immunohistochemistry (mouse anti TPH antibody, dilution 1:200; Sigma-Aldrich with secondary antibody DyLight 488 donkey anti-mouse) was performed after four weeks of virus expression. Mouse brains were fixated for 2 h following perfusion with 4% paraformaldehyde in phosphate buffered saline (PBS, pH 7.4) and stored in cryoprotectant solution (30% sucrose in PBS). Coronal sections (30 µM) were collected in 24-well plates in tris-buffered saline (TBS, pH 7.5). Sections were rinsed three times in TBS and subsequently blocked with 0.1% TBST (TBS + Triton X-100) with 3% normal donkey serum (NDS, pH 7.2) for one hour at room temperature. The blocking serum was aspirated, and sections were incubated overnight at 4°C on an orbital shaker with primary antibodies diluted in 1.5% NDS in 0.1% TBST. Brain slices were washed with TBS three times and incubated with anti–species-specific secondary antibodies (DyLight 488 donkey anti-mouse, 1:500) in 1.5% NDS in 0.1% TBST for one hour at room temperature. Sections were mounted onto Superfrost/Plus Microscope Slides (Thermo Scientific) and coverslipped using Roti-Mount FluorCare (Carl Roth).
 
@@ -175,7 +363,7 @@ Immunohistochemical analysis of virus expression in combination with cFos staini
 
 Digital images were acquired from brain sections using a Leica TCS SP5 confocal laser scanning microscope interfaced with a personal computer running Leica Application Suite AF 2.6 software. Objectives of 10×0.3 NA and 20×0.7 NA were used to capture images. Sequential Z-stacks were created for each section. Captured images were transferred into ImageJ 1.45 s (National Institutes of Health) for processing and image overlay.
 
-## Data analysis
+### Data analysis
 
 RCaMP signals were averaged across trials. In order to remove differences in noise levels due to spatial inhomogeneity in illumination, pixels were divided by the average of pre-stimulus activity (comprising 200 ms after the onset of recording). Furthermore, average blank conditions (see above) were subtracted from all conditions to remove non-neuronal signals related to heartbeat and breathing. Dividing the outcome to the mean blank signal leads to a unitless relative signal of fluorescence, denoted by Δf/f. In some cases, independent component analysis was used as a second pre-processing step to remove heartbeat and respiratory artifacts (Maeda et al., 2001; Spors and Grinvald, 2002), as well as the photostimulation artifact with a distinct 20 Hz frequency component. These steps were applied to each trial separately and then averaged. The resulting averaged signals were smoothed using a two-dimensional Gaussian filter (σ=20 pixels) and a high-pass Butterworth filter (order 4, cut-off frequency σ=33 pixels). All spatially averaged traces shown are averages across pixels in the selected ROI, and each response trace is normalized to the first peak in response to the first visual stimulus in control conditions. These data were then averaged across trials, experiments, and mice.
 
@@ -183,12 +371,22 @@ The amplitude of the evoked responses (Figure 5bi) is calculated as the average 
 
 Latency and duration. Response latency was calculated as the point in time where responses reach the significance threshold, which is defined as the time when activity is 2xSD above mean of activity over 700 ms before stimulus onset. Response duration was calculated as the time during which activity levels are >50% of peak activity (red dots and the dark grey area in Figure 8—figure supplement 1a, t50).
 
-Contrast tuning function. Evoked responses to different visual contrasts were normalized to the peak of the evoked response at 100% grating contrast. Peak maxima of each contrast response (mean over experiments) were fitted using the Naka-Rushton function (Naka and Rushton, 1966):(6)R=Rmaxcn(cn+c50n)+R0in which Rmax is the maximum response, c is the fractional contrast, c50 is the contrast at which its response is half of the maximum response, n is proportional to the slope of the curve at c50 and R0 is the offset of responses R.
+Contrast tuning function. Evoked responses to different visual contrasts were normalized to the peak of the evoked response at 100% grating contrast. Peak maxima of each contrast response (mean over experiments) were fitted using the Naka-Rushton function (Naka and Rushton, 1966):
 
-Linear regression. In order to test how the firing rates of neurons are scaled with photostimulation, we calculated average firing rates during pre- and post photostimulation time intervals. Using a linear regressor, Equation 7, the average firing rate in the post photostimulation time window was fitted:(7)frpost=b1+b2×ph+b3×frpre+b4×frpre×ph
+$$
+R=R_{max}\frac{c^{n}}{(c^{n}+c_{50}^{n})}+R_{0}
+$$
+
+in which Rmax is the maximum response, c is the fractional contrast, c50 is the contrast at which its response is half of the maximum response, n is proportional to the slope of the curve at c50 and R0 is the offset of responses R.
+
+Linear regression. In order to test how the firing rates of neurons are scaled with photostimulation, we calculated average firing rates during pre- and post photostimulation time intervals. Using a linear regressor, Equation 7, the average firing rate in the post photostimulation time window was fitted:
+
+$$
+fr_{post}=b_{1}+b_{2}\timesph+b_{3}\timesfr_{pre}+b_{4}\timesfr_{pre}\timesph
+$$
 
 Where frpost and frpre are the average firing rates in the post and pre photostimulation windows, respectively. Ph stands for photostimulation and is equal to 0 for the control condition and 1 for conditions with photostimulation. Also, b1 and b2 form the intercepts and b3 and b4 form the slope of the line fitting to the data. Therefore b2 and b4 are the subtractive and divisive terms, respectively, accounting for suppression effects due to photostimulation. Firing rates of all recorded units are normalized by the maximum pre-firing rate. To avoid floor effects, units with a pre-firing rate of less than 1 Hz were excluded from analysis (using units with higher pre-firing rate produce even stronger suppression).
 
-## Statistical analysis
+### Statistical analysis
 
 In this study, one sided t test: one-sample, two-sample, and paired t test with permutation correction for multiple comparisons, are used to assess the significance of the values (mean ± SEM) if not stated otherwise.

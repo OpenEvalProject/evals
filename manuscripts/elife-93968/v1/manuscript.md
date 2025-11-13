@@ -30,16 +30,16 @@
 
 ### Affiliations
 
-1. https://ror.org/015w4v032 Chemokine Signaling group, Department of Immunology and Oncology, Centro Nacional de Biotecnología/CSIC, Campus de Cantoblanco Madrid Spain
-2. https://ror.org/05ynxx418 Division of Diagnostics and Specialist Medicine, Department of Health, Medical and Caring Sciences, Linköping University Linköping Sweden
-3. https://ror.org/04advdf21 Centro de Investigaciones Biológicas Margarita Salas (CIB-CSIC) Madrid Spain
-4. https://ror.org/015w4v032 Biocomputing Unit, Centro Nacional de Biotecnología (CNB-CSIC), Campus de Cantoblanco Madrid Spain
-5. https://ror.org/03cg5md32 Department of Immunology, Instituto de Investigación Sanitaria Hospital Universitario de La Princesa (IIS-Princesa) Madrid Spain
-6. https://ror.org/02fa3aq29 Department of Medicine, McMaster Immunology Research Centre (MIRC), Schroeder Allergy and Immunology Research Institute, McMaster University Hamilton Canada
-7. https://ror.org/03ha64j07 Faculty of Experimental Sciences, Universidad Francisco de Vitoria (UFV) Madrid Spain
-8. https://ror.org/015w4v032 B Lymphocyte Dynamics, Department of Immunology and Oncology, Centro Nacional de Biotecnología (CNB)/CSIC, Campus de Cantoblanco Madrid Spain
-9. https://ror.org/00ca2c886 Neurodegenerative Diseases Biomedical Research Network Center (CIBERNED), Instituto de Salud Carlos III Madrid Spain
-10. https://ror.org/015w4v032 X-ray Crystallography Unit, Department of Macromolecules Structure, Centro Nacional de Biotecnología/CSIC, Campus de Cantoblanco Madrid Spain
+1. Chemokine Signaling group, Department of Immunology and Oncology, Centro Nacional de Biotecnología/CSIC, Campus de Cantoblanco Madrid Spain ([ROR:015w4v032](https://ror.org/015w4v032))
+2. Division of Diagnostics and Specialist Medicine, Department of Health, Medical and Caring Sciences, Linköping University Linköping Sweden ([ROR:05ynxx418](https://ror.org/05ynxx418))
+3. Centro de Investigaciones Biológicas Margarita Salas (CIB-CSIC) Madrid Spain ([ROR:04advdf21](https://ror.org/04advdf21))
+4. Biocomputing Unit, Centro Nacional de Biotecnología (CNB-CSIC), Campus de Cantoblanco Madrid Spain ([ROR:015w4v032](https://ror.org/015w4v032))
+5. Department of Immunology, Instituto de Investigación Sanitaria Hospital Universitario de La Princesa (IIS-Princesa) Madrid Spain ([ROR:03cg5md32](https://ror.org/03cg5md32))
+6. Department of Medicine, McMaster Immunology Research Centre (MIRC), Schroeder Allergy and Immunology Research Institute, McMaster University Hamilton Canada ([ROR:02fa3aq29](https://ror.org/02fa3aq29))
+7. Faculty of Experimental Sciences, Universidad Francisco de Vitoria (UFV) Madrid Spain ([ROR:03ha64j07](https://ror.org/03ha64j07))
+8. B Lymphocyte Dynamics, Department of Immunology and Oncology, Centro Nacional de Biotecnología (CNB)/CSIC, Campus de Cantoblanco Madrid Spain ([ROR:015w4v032](https://ror.org/015w4v032))
+9. Neurodegenerative Diseases Biomedical Research Network Center (CIBERNED), Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
+10. X-ray Crystallography Unit, Department of Macromolecules Structure, Centro Nacional de Biotecnología/CSIC, Campus de Cantoblanco Madrid Spain ([ROR:015w4v032](https://ror.org/015w4v032))
 
 † Corresponding author
 
@@ -61,9 +61,21 @@ Here, we used this signal domain of CXCR4 as a base to search for new CXCR4 anta
 
 ## Results
 
-## Screening for small compounds targeting CXCR4 that block CXCL12-induced CXCR4 nanoclustering
+### Screening for small compounds targeting CXCR4 that block CXCL12-induced CXCR4 nanoclustering
 
 The propagation domain of CXCR4, which links ligand binding to the residues involved in G-protein association, includes residues bounded by the transmembrane helices TMV and TMVI, which enclose a cleft of 870 Å3 (Wescott et al., 2016) is surface-exposed for interactions with the plasma membrane, as it contains residues involved in lipid binding (Di Marino et al., 2023), and also includes residues implicated in receptor activation and in the transmission of conformational changes through the TM helix domains (Wescott et al., 2016; Figure 1A). Additionally, the cleft contains the residues K239, V242, and L246, the mutation of which prevents CXCL12-mediated receptor oligomerization (Martínez-Muñoz et al., 2018). We thus screened for allosteric modulators that fit into this cleft and the cavity formed by TMV and TMVI but do not interfere with the CXCL12 binding site. Virtual screening was performed using the Medicinal and Biological Chemistry (MBC) library (CIB-CSIC) (Sebastián-Pérez et al., 2017) comprises more than 2000 small heterocyclic compounds with drug-like properties. As a template for modeling CXCR4 we used the atomic structure of the receptor solved in complex with the inhibitor IT1t (PDB code: 3ODU). As this included T4 lysozyme inserted between helices TMV and TMVI to increase the stability of the protein (Figure 1A), a common strategy to facilitate crystallogenesis of GPCRs (Zou et al., 2012), we first generated (Di Marino et al., 2023; Wu et al., 2010) a CXCR4 homology model using the SWISS_MODEL server (Waterhouse et al., 2018). The compounds were then prepared and docked against the modeled CXCR4 structure using ‘Glide’, and those identified were ranked by docking score, that is, by the minimal interaction energy given by Glide and visualization of the poses. The results were confirmed using a second strategy based on the CXCR4 model predicted by AlphaFold (Jumper et al., 2021) and the sequence available under UniProt entry P61073.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cartoon and surface representation of CXCR4 and the cleft identified between TMV and TMVI. The protein structure is shown in gray, with TMV and TMVI colored in blue and pink, respectively. In green, residues involved in CXCL12 binding. The cavity identified by SurfNet is shown in orange. Volume for the cavity is measured and shown in Å3. T4 lysozyme inserted between TMV and TMVI in the crystallized version of CXCR4 (PDB: 3ODU) is also shown in yellow. (B) Dose-response curve of the selected antagonists in Jurkat cell migration experiments in response to 12.5 nM CXCL12. Data are shown as percentage of migrating cells (mean ± SD; n=5; *≤0.05, *** p≤0.001, **** p≤0.0001). (C) Chemical structure of the selected compounds (AGR1.131, AGR1.135 and AGR1.137). The differences between the lateral chains of the three compounds are shaded in green.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Migration of Jurkat cells, untreated or treated with the selected small compounds (50 μM) or DMSO (vehicle) in the previous in silico screening, in response to 12.5 nM CXCL12. Data shown as percentage of migrating cells (mean ± SD; n = 5; *p ≤0.05, **p ≤0.01, ***p ≤0.001, ****p ≤0.0001, ns : not significant).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Cell cycle analysis using propidium iodide incorporation and flow cytometry of Jurkat cells treated with AGR1.131, AGR1.135 and AGR1.137 (2 hours, 37ºC) or with DMSO (vehicle), H2O2 (10%) and staurosporine (10 mM) as controls. The percentage of cells in each cycle stage is shown. (B) Summary of the percentage of treated cells in each cell cycle phase.
 
 The top 40 candidates with the best docking score in the region of interest were chosen and were selected for functional analysis (Figure 1—source data 1). We first screened their ability to block CXCL12-induced cell dependent migration in Transwell chambers.
 
@@ -71,27 +83,55 @@ Jurkat cells that were either untreated or treated with different concentrations
 
 Based on these results, we selected two compounds, AGR1.135 and AGR1.137, which showed reproducible dose-dependent inhibitory effects on CXCR4-induced cell migration (Figure 1B) and had the highest docking score on the cleft between TMV and TMVI (–51.4 and –37.2 kcal /mol, respectively). As a control for further analysis, we used AGR1.131, which shares a common scaffold with the other compounds and interacts with TM domains of CXCR4, but did not affect CXCL12-promoted cell migration. It also theoretically targeted the same motif on CXCR4 as AGR1.135 and AGR1.137 (-39.8 kcal/mol), but showed a better docking score on a pocket between TMI and TMVII (–43.6 kcal/mol). Under these experimental conditions, none of the selected compounds were toxic against Jurkat cells, as shown by propidium iodide incorporation and cell cycle analysis (Figure 1—figure supplement 2). The structures of the three selected compounds was verified by NMR analysis (Figure 1—source data 2) and were characterized by the presence of a common core (4-(1-benzyl-1H-1,2,3-triazol-4-yl)phenyl) methanol, linked through a benzamide group to a lateral chain bearing amines of different length and chemical nature. AGR1.131 bears a simple benzylamine, AGR1.135 contains a complex lateral chain due to the presence of the 1-(2-nitro-4-(trifluoromethyl)phenyl)piperazine, and AGR1.137 incorporates ethyl piperidine-4-carboxylate (Figure 1C).
 
-## AGR1.135 and AGR1.137 block CXCL12-mediated CXCR4 nanoclustering and dynamics
+### AGR1.135 and AGR1.137 block CXCL12-mediated CXCR4 nanoclustering and dynamics
 
 We next evaluated whether the selected compounds altered CXCL12-mediated CXCR4 nanoclustering and dynamics. To do this, we utilized SPT-TIRF on CXCR4-deficient Jurkat cells (JK-/-) transiently transfected with CXCR4 fused to the AcGFP monomeric protein (CXCR4-AcGFP) and pretreated or not with 50 μM of the selected small compounds (Figure 2—videos 1–8), a concentration that inhibited CXCL12-induced cell migration by 50–75% (Figure 1B). The compounds had no effect on DMSO-stimulated cells, and we observed mainly receptor monomers and dimers (~82–98%), with a very low percentage of complexes with >3 receptors (~2–18%; Figure 2A). Accordingly, the basal mean spot intensity (MSI) of CXCR4 was similar in all cases (~1500 a.u.; Figure 2B). Under these experimental conditions, most of the particles corresponded to mobile particles (~88%; Figure 2C), and none of the selected compounds affected the short time-lag diffusion coefficient (D1-4) for CXCR4 trajectories, with a median value of ~0.02 μm2/s (Figure 2D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig2-v1.jpg)
+
+**Figure 2.:** Single-particle tracking analysis of JK−/− cells transiently transfected with CXCR4 (JK−/−-X4) treated with DMSO (control), AGR1.131, AGR1.135 or AGR1.137 on fibronectin (FN)- or FN +CXCL12-coated coverslips (DMSO: 581 particles in 59 cells on FN; 1365 in 63 cells on FN +CXCL12; AGR1.131: 1019 particles in 71 cells on FN; 1291 in 69 cells on FN +CXCL12; AGR1.135: 862 particles in 70 cells on FN; 1003 in 77 cells on FN +CXCL12; AGR1.137: 477 particles in 66 cells on FN; 566 in 64 cells on FN +CXCL12) n=3. (A) Frequency of CXCR4-AcGFP particles containing monomers plus dimers (≤2) or nanoclusters (≥3),± SEM, calculated from mean spot intensity values of each particle as compared with the value of monomeric CD86-AcGFP (n=3; n.s., not significant; ****p≤0.0001). (B) Intensity distribution (arbitrary units, a.u.) from individual CXCR4-AcGFP trajectories on unstimulated and CXCL12-stimulated JK−/−-X4 cells pretreated or not with the indicated compounds or vehicle (DMSO). Graph shows the distribution of all trajectories (gray outline), with the mean value of each experiment (black circles) and the mean of all experiments ± SD (red lines) (n=3; n.s., not significant; ***p≤0.001, ****p≤0.0001). (C) Percentage of mobile and immobile CXCR4-AcGFP particles at the membrane of cells treated as indicated. (D) Diffusion coefficients (D1–4) of mobile single particle trajectories at the membrane of cells treated as indicated, represented by box-and-whiskers plots (Tukey method) with median (black line) indicated. (n.s., not significant, ****p≤0.0001).
 
 We next examined how pre-treatment with the selected compounds affected receptor dynamics upon CXCL12 stimulation. Pre-treatment with AGR1.135 and AGR1.137, but not with AGR1.131, significantly altered CXCL12-mediated receptor nanoclustering (32–69% of nanoclusters with ≥3 receptors/particle in untreated and in AGR1.131-treated cells versus 7–22% in cells pretreated with AGR1.135 or AGR1.137; Figure 2A), with an MSI of 3219 a.u. for CXCR4 in untreated cells and 3,618 a.u. in AGR1.131-treated cells versus 1611 a.u. in AGR1.135- and 1403 a.u. in AGR1.137-treated cells (Figure 2B). This effect was also evident when we evaluated the dynamic parameters of CXCR4. Under control conditions (untreated or AGR1.131-treated cells), CXCL12 significantly increased the percentage of immobile particles (12% in untreated cells versus 25% in untreated cells +CXCL12 and 18% in AGR1.131-treated cells +CXCL12) (Figure 2C), whereas AGR1.135 and AGR1.137 pretreatment had no effect on the percentage of immobile particles after CXCL12 stimulation (14% for both AGR1.135 and AGR1.137). Moreover, the expected reduction in CXCR4 diffusivity triggered by CXCL12 in untreated (median D1-4 = 0.0088 μm2/s) or AGR1.131-treated (median D1-4 = 0.0099 μm2/s) cells was abolished with AGR1.135 (D1-4 = 0.0169 μm2/s) and AGR1.137 (D1- 4 = 0.0165 μm2/s) treatments (Figure 2D).
 
 Altogether, these results suggest that AGR1.135 and AGR1.137 behave as negative allosteric modulators of CXCR4 and alter the CXCL12-mediated receptor nanoclustering and dynamics.
 
-## AGR1.135 and AGR1.137 incompletely abolish CXCR4-mediated responses in Jurkat cells
+### AGR1.135 and AGR1.137 incompletely abolish CXCR4-mediated responses in Jurkat cells
 
 CXCR4 internalizes in response to CXCL12, a process that mediates receptor desensitization (Haribabu et al., 1997). This process is associated with clathrin-mediated endocytosis of chemokine receptors (Venkatesan et al., 2003), and requires receptor aggregation. Our previous results indicate that CXCR4 nanoclustering and the aggregates involved in receptor internalization are independent processes (Martínez-Muñoz et al., 2018). Indeed, CXCL12 triggers CXCR4mut internalization but fails to promote receptor nanoclustering (Martínez-Muñoz et al., 2018). We thus tested whether the selected antagonists affected CXCL12-mediated CXCR4 internalization. Jurkat cells treated with vehicle or the selected compounds were stimulated with CXCL12 and receptor internalization was evaluated by flow cytometry using anti-CXCR4 antibodies. Neither AGR1.135 nor AGR1.137 treatment altered the internalization of CXCR4 that was observed in untreated Jurkat cells or in AGR1.131-treated cells (Figure 3A). These data suggest that none of the allosteric modulators block CXCL12 binding to CXCR4, supporting the in silico screening strategy of preserving ligand binding integrity. Indeed, using flow cytometry analysis and CXCL12-ATTO 700 (Ameti et al., 2018) we confirmed that none of the selected compounds blocked ligand binding, whereas this was blocked by the ligand-binding inhibitor AMD3100 (Figure 3B, Figure 3—figure supplement 1). Taken together, the data indicate that the selected compounds do not abrogate ligand binding or receptor internalization, but blocked other functions such as cell migration.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig3-v1.jpg)
+
+**Figure 3.:** (A) Cell surface expression of CXCR4 in Jurkat cells after stimulation with CXCL12 (12.5 nM) at different time points and analyzed by flow cytometry using an anti-CXCR4 antibody in nonpermeabilized cells. Results show mean ± SEM of the percentage of CXCR4 expression at the cell surface (n=4; n.s. not significant; **p≤0.01, ***p≤0.001, **** p≤0.0001). (B) CXCL12-Atto-700 binding on untreated or Jurkat cells pre-treated with DMSO (vehicle), AGR1.131, AGR1.135, AGR1.137 or with AMD3100 as a control, followed by flow cytometry analysis. Results are expressed as mean fluorescence intensity (MFI) values (arbitrary units). Negative corresponds to basal cell fluorescence in the absence of CXCL12-Atto-700 (mean ± SD, n=3 n.s. not significant; ****p≤0.0001). (C) Cells untreated or pretreated with the small compounds (50 μM, 30 min 37 °C) or AMD3100 (1 μM, 30 min 37 °C) were stimulated with CXCL12 (50 nM, 5 min, 37 °C) followed by forskolin (10 μM, 10 min, 37 °C). Cells were then lysed and cAMP levels were determined (mean ± SD; n=3; n.s. not significant; *p≤0.05, **p≤0.01, ***p≤0.001). (D) Western blot analysis of phospho (p) Akt and pERK in Jurkat cells pre-treated with DMSO, AGR1.131, AGR1.135 or AGR1.137, in response to CXCL12. As a loading control, membranes were re-blotted with an anti-Akt antibody. Representative experiments are shown (n=4). (E, F) Densitometry evaluation of the specific bands in D (mean ± SD; n=4).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Cells were pre-incubated for 30 min at 37ºC with the indicated antagonists, followed by incubation with CXCL12- ATTO700 (30 min 37ºC). CXCL12 binding was determined in flow cytometry. A representative experiment of 4 performed is shown.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Cells were pre-incubated for 30 min at 37ºC with AMD3100 or DMSO (vehicle) as control, stimulated with CXCL12 and analyzed by western blot using specific antibodies. (B) Densitometry analysis of the western blot images in (A) using Image J software.
 
 Because CXCL12 promotes Gi-protein activation, we analyzed the effects of the selected compounds on CXCL12-mediated inhibition of cAMP production, a canonical signaling pathway downstream of CXCR4 activation. In contrast to AMD3100, an orthosteric antagonist of CXCR4, none of the compounds affected CXCL12-mediated Gi protein activation (Figure 3C). We next evaluated their effects on other signaling pathways such as ERK1/2 phosphorylation and PI3K activation (Ganju et al., 1998). Jurkat cells treated with vehicle or the selected compounds were activated with CXCL12 (50 nM) for different time periods and cell lysates were analyzed by western blotting using anti-P-ERK1/2 and -P-AKT antibodies. Neither AGR1.135 nor AGR1.137 nor the control AGR1.131 treatment inhibited CXCL12-mediated activation of the two signaling pathways (Figure 3D–F, Figure 3—figure supplement 2), whereas AMD3100 treatment as a positive control did so (Figure 3—figure supplement 2). Overall, the data indicate that the selected compounds inhibit CXCL12-induced chemotaxis in Transwell assays, but do not affect G protein activation or other ligand-mediated signaling pathways such as ERK1/2 or PI3K.
 
 Alterations in actin cytoskeletal dynamics are linked to deficiencies in ligand-mediated receptor nanoclustering and to defects in the ability of cells to sense chemoattractant gradients. Cells treated with latrunculin A, an actin polymerization inhibitor (Martínez-Muñoz et al., 2018), and cells expressing CXCR4WHIMR334X, which fail to properly control actin dynamics (García-Cuesta et al., 2022; Gardeta et al., 2022), have defective CXCL12-mediated nanoclustering and are unable to properly sense chemoattractant gradients. Using flow cytometry and phalloidin staining of Jurkat cells treated with vehicle or the selected compounds, we detected altered actin polymerization in cells treated with AGR1.135, with AGR1.137, and with AMD3100 (Figure 4A). These data were corroborated by immunostaining and confocal analysis (Figure 4B and C). Whereas Jurkat cells treated with vehicle or AGR1.131 were correctly polarized after CXCL12 activation, AGR1.135 and AGR1.137 treatments promoted a reduction in the number of polarized cells. As a control, AMD3100 treatment also abolished CXCL12-mediated cell polarization (Figure 4B and C). None of the compounds affected anti-CD3 mediated actin polymerization, ruling out a direct effect of the modulators on actin or actin-binding proteins Figure 4—figure supplement 1.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig4-v1.jpg)
+
+**Figure 4.:** (A) Actin polymerization in response to CXCL12 as determined by F-actin (phalloidin-TRITC) staining in Jurkat cells treated with DMSO (vehicle) or the indicated modulators. Statistical significance of the different time points in comparison with the control (DMSO) is shown in the table (mean ± SD; n=3; n.s. not significant; *p≤0.05, **p≤0.01, ***p≤0.001). (B) Percentage of polarized T cell blasts adhered to fibronectin and treated or not with CXCL12 in the presence of the indicated antagonists, as analyzed by immunostaining with anti-ICAM3-Alexa fluor 488 and phalloidin-TRITC. More than 500 cells were analyzed in each condition. Data are presented as percentage of polarized cells (mean ± SD; n=3; n.s. not significant; ****p<0.0001). (C) Representative images of T cell blasts adhered to fibronectin and treated or not with CXCL12 in the presence of the indicated antagonists, as analyzed by immunostaining with anti-ICAM3-Alexa fluor 488 and phalloidin-TRITC as in B. (D) CD4+ T cells pretreated with AGR1.131, AGR1.135 or AGR1.137 were perfused in flow chambers coated with ICAM-1-containing lipid bilayers, alone or CXCL12-coated, and analyzed for cell contacts with the substrate. Data are presented as percentage of adhered cells (mean ± SD; n=3; n.s. not significant; ****p≤0.0001). (E) Cells in D were analyzed for cell migration. Data are presented as percentage of migrating cells (mean ± SD; n=3; n.s. not significant; ****p≤0.0001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** F-actin (Phalloidin-TRITC) staining of Jurkat cells treated with the indicated compounds or DMSO (vehicle), adhered to fibronectin and stimulated with anti-CD3 antibody, as indicated (mean ± SD; n = 3).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Migration of Jurkat cells in response to 12.5 nM CXCL12, 50 μM AGR1.131, 50 μM AGR1.135 or 50 μM AGR1.137. Data shown as percentage of migrating cells (mean ± SD; n = 5; n.s. not significant, **** p ≤0.0001).
+
 CXCR4 nanoclustering has been recently associated with the migratory phenotype of T cell blasts (García-Cuesta et al., 2022; Gardeta et al., 2022). To explore how the allosteric modulators affect the phenotype of migrating cells, we added T cell blasts previously treated with vehicle or with the selected compounds to a 2D lipid bilayer system with embedded ICAM-1, alone or with CXCL12. We observed that treatment with AGR1.135, AGR1.137, or AMD3100 (control), but not with AGR1.131, abolished CXCL12-induced cell migration and cell adhesion (Figure 4D and E).
 
 As the antagonistic effects of AGR1.135 and AGR1.137 are also compatible with a partial agonist behavior, we used Transwell chambers to evaluate the ability of the selected compounds to promote Jurkat cell migration. None of the compounds induced cell migration (Figure 4—figure supplement 2). Overall, our results suggest that AGR1.135- and AGR1.137-driven modulation of CXCR4 nanoclustering blocks certain receptor-associated functions, including actin dynamics, directional cell migration, integrin-mediated adhesion and migration, while leaving other functions unaffected (receptor internalization, inhibition of cAMP production and ERK1/2 activation).
 
-## AGR1.135 and AGR1.137 antagonists act by direct binding on CXCR4
+### AGR1.135 and AGR1.137 antagonists act by direct binding on CXCR4
 
 We developed a fluorescence spectroscopy strategy and FRET assays to formally examine the ability of the compounds to bind CXCR4, but our efforts were unsuccessful. AGR1.135 exhibited a yellow color that interfered with these techniques, and AGR1.137 did not alter the FRET efficiency of CXCR4 dimers (Figure 5). Therefore, we designed an in silico approach including a final step of molecular dynamics (MD) analysis, which allowed us to define the CXCR4 residues involved in the binding of the compounds, and to generate point mutant receptors to determine the inhibitory effect of AGR1.135, AGR1.137, and AGR1.131 (control) on CXCL12-mediated chemotaxis. We initially performed a binding-site search using PELE software, a Monte Carlo-based technique (Borrelli et al., 2005), to identify the most promising CXCR4 binding sites of the selected compounds. AGR1.135 and AGR1.137 exhibited one of the most stable trajectories (less than 0.25 Å2 RMSD fluctuation) upon binding to the cleft formed by TMV and TMVI (Figure 6A and B). By contrast, the most stable trajectories for AGR1.131 corresponded to the binding to a contiguous region located between TMI and TMVII (Figure 6C). Once the binding site of the compounds was confirmed, we performed docking studies to identify the best poses as a starting point for further studies.
 
@@ -99,17 +139,41 @@ We developed a fluorescence spectroscopy strategy and FRET assays to formally ex
 
 **Figure 5.:** FRET efficiency in HEK-293 cells transiently transfected with CXCR4-YFP/ CXCR4-CFP (ratio 15:9), in the presence of 50 μM AGR1.131, 50 μM AGR1.135, 50 μM AGR1.137 or vehicle (DMSO). Data shows FRET efficiency (a.u.) (mean ± SD; n=6; n.s. not significant, **** p≤0.0001).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig6-v1.jpg)
+
+**Figure 6.:** In the ribbon and sticks representations, the TMV helix is colored in blue and TMVI in pink. Figures show the binding of ligands AGR1.135 (A) and AGR1.137 (B) Zoom images showing the residues involved in the interaction of both compounds are also shown (right panels).(C) Binding of AGR1.131 represented as sticks with carbon atoms in yellow, oxygen in red, nitrogen in blue and fluorine in green. CXCR4 residues involved in CXCL12 engagement and initial signal transmission are represented as green spheres.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The protein structure is shown in gray, with TMV and TMVI colored in blue and pink, respectively. Cavities associated to AGR1.135 (A) and AGR1.137 (B) binding were identified by SurfNet software are shown in orange and green. Volumes for each cavity are measured (Å3).
+
 Results showed that AGR1.135 and AGR1.137 shared a similar binding mode (Figure 6A and B) and might interact with CXCR4 in a molecular cavity between TMV and TMVI. Specifically, AGR1.135 formed hydrogen bonds with residues G207, Y256 and R235, although a pi-cation interaction was also possible in the latter case (Figure 6A). Additionally, AGR1.135 could interact hydrophobically with several residues in TMV and TMVI, comprising two independent cavities of 434 and 1,381 Å3, respectively (Figure 6—figure supplement 1), which were not connected to the orthosteric site as indicated by SURFNET analysis (Laskowski, 1995) included in the PDBsum server (Laskowski et al., 1997; Figure 6—figure supplement 1). AGR1.137 could use the carboxyl group of V124 in TMIII and overlap with AGR1.135 binding in the cavity, interacting with the other 19 residues scattered between TMV and VI to create several interaction surfaces of 790 and 580 Å3 (Figure 6B; Figure 6—figure supplement 1). AGR1.137 did not have the phenyl ring present in AGR1.135, likely explaining why it did not interact with residue R235 (Figure 1C, Figure 6B). Regarding AGR1.131, its best binding site was the pocket between helices TMI and TMVII (Figure 6C), which is likely the reason why this compound had no effect on receptor oligomerization. These results were also confirmed using the CXCR4 model predicted by AlphaFold (Jumper et al., 2021) and the sequence available under UniProt entry P61073.
 
 To confirm the putative binding sites for AGR1.135 and AGR1.137, we generated several point mutations in CXCR4 using the identified residues that were not critical for signal transduction processes. These included the G207I, L208K, R235L, F249L and Y256F mutants. We also included the mutations I204K, S260A as controls, as they are located in the same region (TMV-TMVI cleft) but did not interfere with compound binding or the CXCL12 binding site. All CXCR4 mutants were normally expressed at the cell surface, as demonstrated by flow cytometry (Figure 7—figure supplement 1), and were fully functional in CXCL12-mediated cell chemotaxis assays (Figure 7—figure supplement 1).
 
 We next used transient transfection of JK-/- cells with each of the mutants or with wild-type CXCR4 treated with AGR1.131, AGR1.135 or AGR1.137 (50 μM) prior to assessing migration to CXCL12 gradients in Transwell chambers. The antagonistic effect of AGR1.135 was reversed in cells transfected with CXCR4 carrying the specific point mutations L208K or Y256F (Figure 7A). Similarly, the antagonistic effect of AGR1.137 was reversed in cells expressing G207I, L208K, R235L, F249L, or Y256F mutants (Figure 7A). Collectively, these data indicate that the selected compounds bind directly to CXCR4, that the L208 and Y256 residues in the CXCR4 TMVI domain are critical for the allosteric modulation activities of AGR1.135 and AGR1.137, and that other residues, G207, R235 and F249, are also important for the effect of AGR1.137 (Figure 7A–D).
 
-## AGR1.137 treatment reduces tumor volume and dissemination in a zebrafish xenograft model
+![Figure 7.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig7-v1.jpg)
+
+**Figure 7.:** (A) CXCL12-induced migration of AGR1.131- AGR1.135- or AGR1.137- pretreated JK−/− cells transiently transfected with CXCR4wt or the different mutants described. Data are shown as the mean percentage ± SD of input cells that migrate (n=4; n.s. not significant, **p≤0.01, ****p≤0.0001). (B) Cartoon representation of Y256 and its intramolecular interactions in the CXCR4 X-ray solved structure 3ODU. (C, D) Cartoon representation of the interaction of CXCR4 F249L mutant with AGR1.135 and AGR1.137, respectively. The two most probable conformations of leucine rotamers are represented in cyan. Van der Waals interactions are depicted in cyan dashed lines and hydrogen bonds in black dashed lines.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Flow cytometry analysis of cells transiently transfected with the indicated CXCR4 mutants or wt CXCR4, coupled to AcGFP and their expression was determined 24 hours after transfection by GFP detection in flow cytometry. A representative experiment of 4 performed is shown. (B) CXCL12-induced migration of CXCR4-defficient Jurkat cells (JK-/-) transiently transfected with CXCR4wt or its mutants, CXCR4I204K, CXCR4G207I, CXCR4L208K, CXCR4R235L, CXCR4F249L, CXCR4Y256F and CXCR4S260A. Data are shown as the mean ± SD percentage of input cells that migrate (n = 3).
+
+### AGR1.137 treatment reduces tumor volume and dissemination in a zebrafish xenograft model
 
 Finally, to determine the in vivo activity of the selected compounds, we considered the role of CXCR4 in tumor growth and metastasis (Müller et al., 2001; Orimo et al., 2005) and the transparency of zebrafish larvae to develop a tumor xenograft (ZTX) model. ZTX models have proven to be a powerful complementary in vivo system for research in oncology and tumor biology (Rouhi et al., 2010; Xiao et al., 2020), particularly for early tumor invasion and dissemination.
 
 We used HeLa cells, which are derived from a human cervical tumor that expresses functional CXCR4 (Figure 8A and B; Figure 8—figure supplement 1), and which have been used previously in ZTX models (Brown et al., 2017; You et al., 2020). HeLa cells respond to CXCL12 gradients in directional cell migration assays (Figure 8A and B) and, as in Jurkat cells, their treatment with AGR1.137 but not with AGR1.131 (control) abolished directional cell migration toward a CXCL12 gradient (Figure 8A and B, Figure 8—videos 1–4). As a control for specificity, CXCL2-driven HeLa cell migration was unaffected by AGR1.137 treatment but was blocked by the specific CXCR2 inhibitor AZD5069 (Figure 8C and D).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig8-v1.jpg)
+
+**Figure 8.:** (A–D) Migration of HeLa cells treated with vehicle (DMSO) or with the selected small compounds or inhibitor as indicated, on μ-chambers in response to a CXCL12 (A, B) or CXCL2 (C, D) gradient (n=2, in duplicate, with at least 50 cells tracked in each condition). Panels (A) and (C) show representative spider plots with the trajectories of tracked cells migrating along the gradient (black) or moving in the opposite direction (red). Black and red dots in the plots represent the final position of each single tracked cell. (B, D) Quantification of the Forward Migration Index of experiments performed in (A) and (C) (mean ± SD; n=3; n.s. not significant, ****p≤0.0001). (E) Representative fluorescent images of DiI-labeled HeLa cells in zebrafish larvae treated with vehicle (DMSO), AGR1.131 50 μM, AGR1.137 50 μM or AMD3100 10 μM at 0 or 3 days post-implantation and treatment. Quantitation of the relative tumor size at day 3 compared with that of day 0 normalized to the relative tumor size in the DMSO control group, is shown for each experimental group (mean ± SD; n=20; n.s. not significant, **p≤0.01). (F) Representative fluorescent images of the caudal hematopoietic plexus of larvae from the same groups as shown in E at 3 days postimplantation. Quantitation of the relative amount of metastasized cells in each group relative to DMSO-controls is shown (mean ± SD; n=20, n.s. not significant, * p≤0.05, *** p≤0.001).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/93968/elife-93968-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) CXCR4 expression on the surface of HeLa cells, analyzed by flow cytometry using a specific anti-CXCR4 antibody. Data show a representative experiment of 6 performed. (B) Effect of the indicated compounds on HeLa cells growth. Cells (0.5x106) were plated on 48 well plates in the presence of 100 mM of the compounds, which were added freshly every 24 hours. Cells were counted at every 24 hours and maintained for 72 h. The mean ± SD (n=3) is shown.
 
 DiI-labeled HeLa cells treated with vehicle, AMD3100, AGR1.135, AGR1.137, or AGR1.131 (control) were implanted subcutaneously into the perivitelline space of 2-day-old zebrafish larvae. Images of each tumor-bearing larva were taken immediately after implantation and 3 days later, and the relative change in tumor size was determined. AGR1.135 was discarded because most of the treated larvae died, indicating a toxic effect. By contrast, AGR1.137 was not toxic to embryos, as shown by visual inspection of the larvae at the end of the experiment, and no other non-lethal toxic phenotypes (e.g. pericardial edema, head and tail necrosis, head or tail malformation, brain hemorrhage, or yolk sac edema) were evident. AGR1.137 10 μM had no effect but 50 μM significantly reduced the size of high-intensity red fluorescent tumors (~40%), whereas the control AGR1.131 had no effect on tumor size as compared with vehicle-treated fish, and AMD3100 reduced tumor size to a similar extent as AGR1.137 (Figure 8E). These data demonstrate an antiproliferative effect of AGR1.137 on HeLa cells. As a control, AGR1.137 also reduced HeLa cell proliferation in in vitro assays mimicking the in vivo experimental conditions in zebrafish (addition of compounds every 24 hr for 3 days; Figure 8—figure supplement 1). We next evaluated the ability of the compounds to block cell dissemination by determining the number of labeled HeLa cells that appeared in the main metastatic niche at the caudal hematopoietic plexus. AGR1.137 50 μM treatment of HeLa cells reduced cell dissemination by ~40% (Figure 8F), strongly suggesting that this compound exerts anti-metastatic effects. As control AMD3100 (10 μM) treatment also reduced cell dissemination (~30%). The combined ability of AGR1.137 to reduce proliferation and dissemination in vivo is likely to have therapeutic value.
 
@@ -151,9 +215,65 @@ Our data support the notion that CXCR4 is a flexible protein that can adopt a sp
 
 ## Materials and methods
 
-## Cells and reagents
+### Cells and reagents
 
 HeLa cells (CCL-2) and HEK293T cells (CRL-11268) were obtained from the American Type Culture Collection (Rockville, MD). Jurkat human leukemia CD4+ cells were kindly provided by Dr. J. Alcamí (Centro Nacional de Microbiología, Instituto de Salud Carlos III, Madrid, Spain). Where indicated, Jurkat cells lacking endogenous CXCR4 (JK-/-) (García-Cuesta et al., 2022) were transiently transfected with plasmids expressing wild-type or mutant CXCR4-AcGFP receptors (20 μg), as described (García-Cuesta et al., 2022). CXCR4 mutants were generated by PCR using the QuikChange site-directed mutagenesis kit (Stratagene, La Jolla, CA) with full-length CXCR4-AcGFP serving as a template, and specific primers (Table 1).
+
+**Table 1.**
+ Oligonucleotides used to generate the CXCR4 mutants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutation</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CXCR4 G207I</td>
+      <td>cac atc atg gtt att ctt atc ctg cct</td>
+      <td>agg cag gat aag aat aac cat gat gtg</td>
+    </tr>
+    <tr>
+      <td>CXCR4 R235L</td>
+      <td>ggc cac cag aag tta aag gcc ctc aag</td>
+      <td>CTT GAG GGC CTT TAA CTT CTG GTG GCC</td>
+    </tr>
+    <tr>
+      <td>CXCR4 Y256F</td>
+      <td>TGG CTG CCT TAC TTT ATT GGG ATC AGC</td>
+      <td>GCT GAT CCC AAT AAA GTA AGG CAG CCA</td>
+    </tr>
+    <tr>
+      <td>CXCR4 S260A</td>
+      <td>TACTACATTGGGATCgccATCGACTCCTTCATC</td>
+      <td>GATGAAGGAGTCGATggcGATCCCAATGTAGTA</td>
+    </tr>
+    <tr>
+      <td>CXCR4 L208K</td>
+      <td>CACATCATGGTTGGCAAGATCCTGCCTGGTATT</td>
+      <td>AATACCAGGCAGGATCTTGCCAACCATGATGTG</td>
+    </tr>
+    <tr>
+      <td>CXCR4 I204K</td>
+      <td>TTCCAGTTTCAGCACAAGATGGTTGGCCTTATC</td>
+      <td>GATAAGGCCAACCATCTTGTGCTGAAACTGGAA</td>
+    </tr>
+    <tr>
+      <td>CXCR4 G212F</td>
+      <td>GCCCTTATCCTGCCTTTCATTGTCATCCTGTCC</td>
+      <td>GGACAGGATGACAATGAAAGGCAGGATAAGGCC</td>
+    </tr>
+    <tr>
+      <td>CXCR4 F249L</td>
+      <td>GTCATCCTCATCCTGGCTTTCTGCCTGTTGGCTGCCT</td>
+      <td>AGGCAGCCAACAGGCCAGGAAAGCCAGGATGAGGATGAC</td>
+    </tr>
+  </tbody>
+</table>
 
 Human peripheral blood mononuclear cells isolated from buffy coats were activated in vitro for 1 week with 20 U/ml of IL-2 (Teceleukin; Roche, Nutley, NJ) and 5 μg/ml phytohemagglutinin (Roche) to generate T cell blasts (Gardeta et al., 2022).
 
@@ -163,19 +283,19 @@ Unless otherwise indicated, cells were pre-treated with 50 μM of the selected s
 
 Binding experiments were performed using CXCL12-Atto-700 (Ameti et al., 2018), kindly donated by Prof. Marcus Thelen (Institute for Research in Biomedicine, Università della Svizzera italiana, Bellinzona, Switzerland).
 
-## Compounds database
+### Compounds database
 
 All the compounds used in the present study were synthesized in the Centro de Investigaciones Biológicas Margarita Salas (CIB-CSIC, Madrid) following previously described procedures (Sebastián-Pérez et al., 2017). Synthetic and analytical data are shown as Supplementary information. All the compounds have a purity ≥95% determined by high-performance liquid chromatography. Compounds are collected in the MBC library (CIB-CSIC) (Sebastián-Pérez et al., 2017), which contains more than 2,000 drug-like compounds.
 
-## Computational studies of CXCR4 modulators
+### Computational studies of CXCR4 modulators
 
-## Protein modeling
+#### Protein modeling
 
 The CXCR4 model was built on the SWISS-MODEL server (Waterhouse et al., 2018) using the human CXCR4 sequence and the crystallographic structure of a CXCR4 dimer in complex with the small molecule IT1t as template (PDB code: 3ODU Wu et al., 2010). At the time we performed these analyses, several crystallographic structures of CXCR4 in complex with different molecules and peptides were deposited in the PDB. None of them were fully resolved because the N- and C-terminal ends of CXCR4 are very flexible loops. In addition, the CXCR4 constructs contained T4 lysozyme inserted between helices TMV and TMVI to increase the stability of the protein; this was a common strategy to facilitate crystallogenesis of GPCRs (Zou et al., 2012). Therefore, a CXCR4 homology model was generated using the SWISS-MODEL server (Waterhouse et al., 2018). This program reconstructed the loop between TMV and TMVI, a domain of particular importance in this study and not present in any of the crystal structures available in the PDB.
 
 The model was further optimized by adding hydrogens, ionizing the structure at pH 7.2, and adjusting size chain positions using the Maestro Protein Preparation Wizard tool included in the Schrödinger software package (Madhavi Sastry et al., 2013).
 
-## Virtual screening
+#### Virtual screening
 
 Virtual screening of ligands was performed from the compounds included in the MBC library using the “Glide” module as a docking tool on the CXCR4 model using standard-position (SP) and extra-position (XP) scoring functions. The center of the catalytic pocket was selected as the centroid of the grid. In the grid generation, a scaling factor of 1.0 in van der Waals radius scaling and a partial charge cutoff of 0.25 were used. A rescoring of the SP poses of each compound was then performed with the XP scoring function of Glide. The XP mode in Glide was used in the virtual screening, the ligand sampling was flexible, epik state penalties were added, and an energy window of 2.5 kcal/mol was used for ring sampling. In the energy minimization step, the distance dependent dielectric constant was 4.0 with a maximum number of minimization steps of 100,000. In the clustering, poses were considered as duplicates and discarded if both RMS deviation is less than 0.5 Å and maximum atomic displacement is less than 1.3 Å.
 
@@ -183,80 +303,80 @@ Simulations were calculated with an Asus 1151 h170 LVX-GTX-980Ti workstation, wi
 
 The computational sequential workflow applied in this project included: (i) Protein model construction, (ii) Virtual screening (Glide), (iii) PELE, (iv) Docking (autoDock and Glide) and (v) MD (AMBER).
 
-## PELE
+#### PELE
 
 A Protein Energy Landscape Exploration (Borrelli et al., 2005) study was carried out for the control molecule IT1t, which is a small druglike isothiourea derivative that has been crystallized in complex with CXCR4 (PDB code: 3ODU). PELE is a method to explore the energy landscape of a protein that can perform unconstrained ligand exploration to search its binding site. PELE combines a Monte Carlo stochastic approach with protein structure prediction algorithms. The script ‘Unconstrained ligand exploration and binding search’ was used to calculate 20 PELE trajectories for each ligand of the PELE program, yielding 20 PELE trajectories for each ligand. From the best five trajectories, two of them presented clearly better binding energies, and corresponded to almost the same predicted pose of the molecule. Although the predicted binding mode was not exactly the same as that in the crystal structure, the approximation was very good, allowing the approach validation. Although PELE is a suitable technique to find potential binding sites, the predicted poses must be subsequently refined using docking programs.
 
-## Docking studies
+#### Docking studies
 
 All compounds were adjusted to a pH of 7.2±0.2 using the Maestro LigPrep tool LigPrep, 2016. The processed geometry of these ligands was optimized using Gaussian09 software (Frisch, 2016), which calculates RESP (Restrained ElectroStatic Potential) charges and other molecular properties. The method used for calculations was Hartree-Fock/6–311++G(2d,2p), using the tight option to ensure adequate convergence. Subsequently, all ligands were parameterized using Antechamber (Wang et al., 2006). In this work, docking calculations were performed using Autodock v4.2 (Morris et al., 2009).
 
 All docking assays were performed using a box that contained the intracellular half of the protein. The CXCL12 binding pocket was excluded from the search based on the experimental results showing that none of these molecules prevent CXCL12 binding (unpublished results). The grid was formed by 126×126 × 126 points with a spacing of 0.310 Å (~39 × 39×39 Å3). Ligand posing was performed using a stochastic search with Lamarckian Genetic Algorithms (GAs). GAs use a population of poses and combine them to generate offspring that are evaluated with the scoring function to select the best ones to create the next generation. The GA parameters were 200 runs, a population size of 150 and 2,500,000 evaluations The results were analyzed clustering the best 200 poses with a Root Mean Square Deviation (RMSD) of 2.0 Å.
 
-## Molecular dynamics
+#### Molecular dynamics
 
 The most promising docking poses from the docking studies were further studied using MD simulations to determine their stability and interactions with the receptor. The CXCR4-IT1t complex was used as a control to validate the protocol. Simulations were performed using AMBER14 (Case et al., 2014) with ff14SB (Maier et al., 2015) and lipid14 (Dickson et al., 2014) force fields in the NPT thermodynamic ensemble (constant pressure and temperature). All bonds involving hydrogen atoms were constrained with the SHAKE algorithm (Lippert et al., 2007). To stabilize CXCR4 and more accurately reproduce the real environment in the MD simulation, the system was embedded in a lipid bilayer using the Membrane Builder tool (Jo et al., 2009) from the CHARMM-GUI server. The membrane was composed of 175 molecules of the fatty acid 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) in each leaflet. The protein-membrane complex was solvated with TIP3 water molecules. Chloride ions were added up to a concentration of 0.15 M in water, and sodium ions were added to neutralize the system. Minimization was performed using 3500 Steepest Descent steps and 4500 Conjugate Gradient steps three times, firstly considering only hydrogens, then considering only water molecules and ions, and finally minimizing all atoms. Equilibration raises system temperature from 0 to 300 K at a constant volume, fixing everything but ions and water molecules. After thermalization, several density equilibration phases were performed. In the production phase 50 ns MD simulations without position restraints were calculated using a time step of 2 fs. Trajectories of the most interesting poses were extended to 150 ns. ‘Stable trajectories’ have been defined to refer to those trajectories of the ligand-protein complexes whose RMSD does not fluctuate more than 0.25 Å. To estimate the affinity of the ligands for CXCR4, the binding energy of each representative structure obtained with the principal components analysis was calculated using the PRODIGY-LIGAND server (Vangone and Bonvin, 2017).
 
-## Virtual screening validation
+#### Virtual screening validation
 
 We also used a strategy based on the model of CXCR4 predicted by AlphaFold (Jumper et al., 2021) and the sequence available under UniProt entry P61073 to validate our studies. We prepared the ligands using the OpenBabel (O’Boyle et al., 2011), with a gasteiger charge assignment, and generated 10 conformers for each input ligand using OpenBabel. We then prepared the target structure with Openmm, removing all water and possible heteroatoms, and adding all missing atoms. We next predicted the target binding pockets with fPocket (Le Guilloux et al., 2009), p2rank (Krivák and Hoksza, 2018), and AutoDock autosite (Ravindranath and Sanner, 2016). We chose only those pockets between TMV and TMVI. We merged the results of the three programs into so-called consensus pockets, as two pockets are said to be sufficiently similar if at least 75% of their surfaces are shared (Del Hoyo et al., 2023). From the consensus pockets, one pocket was significantly larger than the others and was, therefore, selected. We then docked the ligand conformers in this pocket using AutoDock GPU (Santos-Martins et al., 2021), LeDock (Liu and Xu, 2019), and Vina (Eberhardt et al., 2021). The number of dockings varied from 210 to 287 poses. We scored each pose with the Vina score using ODDT (Wójcikowski et al., 2015). Then, we clustered the different solutions into groups whose maximum RMSD was 1 Å. This resulted in 40 clusters; the representative of each cluster was the one with maximum Vina score, and confirmed that the selected compounds bound this pocket. When required, we calculated the binding affinity using Schrodinger’s MM-GBSA procedure (Greenidge et al., 2013) in two ways: first, assuming that the ligand and target are fixed; second, with an energy minimization of all the atoms within a distance of 3 Å from the ligand.
 
-## Cleft volume calculations
+### Cleft volume calculations
 
 Once we detected that several compounds bound CXCR4 in the target region, the cleavage properties were calculated by subtracting the compound structure. The resulting PDB was analyzed using the PDBsum server (Laskowski et al., 2018). Volume calculations were obtained using the SURFNET server to analyze surface clefts (Laskowski, 1995). The theoretical interaction surface between the selected compounds and CXCR4 and the atomic distances between the protein residues and the compounds was calculated using the PISA server (Krissinel and Henrick, 2007).
 
-## Transwell migration assay
+### Transwell migration assay
 
 Cells (3×105) in 0.1 ml of RPMI medium containing 10 mM HEPES and 0.1% BSA were placed in the upper wells of 5 μm pore size transmigration chambers (Transwell, Costar, Corning, NY). CXCL12 (12.5 nM) or CCL17 (50 nM) in 0.6 ml of the same medium was added to the lower well. Cell migration was evaluated as described (120 min, 37 °C, 5% CO2) (García-Cuesta et al., 2022).
 
-## Cell cycle analysis
+### Cell cycle analysis
 
 Cells (5×105 cells/well) were collected from microplates and washed twice in PBS and then resuspended in 50 μl of detergent (DNA-Prep Reagent Kit; Beckman Coulter, Brea, CA) containing 10 ng/ml propidium iodide (DNA-Prep Reagent Kit; 30 min, 37 °C). Cell cycle phases were analyzed by flow cytometry on a Beckman Coulter FC500 flow cytometer and results were expressed as the percentage of stained cells. H2O2 (10%) and staurosporine (10 μM) treatments were used as positive controls of cell death.
 
-## Single molecule TIRF imaging and analysis
+### Single molecule TIRF imaging and analysis
 
 Transfected cells expressing 8500–22,000 receptors/cell (<4.5 particles/μm2) were plated on glass-bottomed microwell dishes (MatTek Corp., Ashland, MA) coated with fibronectin (Sigma-Aldrich, St. Louis, MO: 20 μg/ml, 1 hr, 37 °C) as a substrate for cell adhesion and to facilitate image aquisition, as TIRF determinations are restricted to the cell membrane in contact with the coverslip. These are conditions corresponding to the unstimulated cells. To observe the effect of the ligand, we coated dishes with CXCL12 (100 nM, 1 hr, 37 °C); stimulated cells were incubated (20 min, 37 °C, 5% CO2) before image acquisition. Experiments were performed at 37 °C with 5% CO2 using a total internal reflection fluorescence microscope (Leica AM TIRF inverted microscope; Leica Microsystems, Wetzlar, Germany). Image sequences of individual particles (500 frames) were then acquired at 49% laser power (488 nm diode laser) with a frame rate of 10 Hz (100 ms/frame). The penetration depth of the evanescent field was 90 nm. Particles were detected and tracked using the U-Track2 algorithm (Jaqaman et al., 2008) implemented in MATLAB, as described (Sorzano et al., 2019). Mean spot intensity (MSI), number of mobile and immobile particles and diffusion coefficients (D1-4) were calculated from the analysis of thousands of single trajectories over multiple cells (statistics provided in the respective figure captions) using described routines (Sorzano et al., 2019). The receptor number along individual trajectories was determined as reported (Martínez-Muñoz et al., 2018), using the intensity of the monomeric protein CD86-AcGFP as a reference (Dorsch et al., 2009). Briefly, for each particle detected we measured the intensity of pixels around the particle (in a 3×3 pixel matrix whose central position is given by the coordinates x, y obtained by U-Track2), in each frame along its trajectory. We also estimated the particle background (K0) for each frame. K0 for each frame was calculated by locating the cell in the video and analyzing the intensities of the cell background in each frame. K0 was chosen as the gray value at a given quantile of this distribution (80%). The intensity value for each particle is then given by the difference between particle intensity and the background in each frame. To minimize photon fluctuations within a given frame, we considered the particle intensity as the average value (background subtracted) obtained over the first 20 frames. To ensure that no photobleaching events occurred within this range of frames that would affect the quantitation of the data, we measured the photobleaching times (s) from individual CD86-AcGFP (electroporated in Jurkat CD4 + cells, Dorsch et al., 2009) particles that exclusively showed a single photobleaching step. Fitting of the distribution to a single exponential decay renders a τ0 value of ∼5 s, which corresponds to 50 frames (100 ms/frame). The total number of receptors/particles was finally estimated by dividing the average particle intensity by the particle intensity arising from individual AcGFP molecules. To unequivocally identify the intensity emitted by an individual AcGFP, we used as a calibrator Jurkat CD4+ cells electroporated with the monomeric CD86-AcGFP. We performed SPT experiments on CD86-AcGFP and analyzed the data in similar way as described above. Distribution of monomeric particle intensities was analyzed by Gaussian fitting, rendering a mean value of 980 ± 89 a.u. This value was then used as the monomer reference to estimate CXCR4-AcGFP particle size.
 
-## Internalization and flow cytometry studies
+### Internalization and flow cytometry studies
 
 Cells (5×105 cells/well) were activated with CXCL12 (50 nM) at the indicated time points at 37 °C. After incubation, cells were washed twice with staining buffer and receptor internalization was determined by flow cytometry using an anti-CXCR4 mAb (clone 44717, 30 min, 4 °C), followed by secondary staining with PE-coupled goat anti-mouse IgG (30 min, 4 °C). Results are expressed as a percentage of the mean fluorescence intensity of treated cells relative to that of untreated cells. When required, cells were pretreated with the small compounds (50 μM, 30 min, 37 °C) or AMD3100 (1 μM, 30 min, 37 °C) before activation with CXCL12.
 
-## Western blotting
+### Western blotting
 
 Cells (3×106) were activated with CXCL12 (50 nM) at the time points indicated and then lysed in RIPA detergent buffer supplemented with 1 mM PMSF, 10 μg/ml aprotinin, 10 μg/ml leupeptin and 10 μM sodium orthovanadate, for 30 min at 4 °C. Extracts were analyzed by western blotting using specific antibodies. Densitometric evaluation of blots was performed using ImageJ (NIH, Bethesda, MD). When required, cells were pretreated with the small compounds (50 μM, 30 min, 37 °C) or AMD3100 (1 μM, 30 min, 37 °C) before activation with CXCL12.
 
-## cAMP determination
+### cAMP determination
 
 cAMP levels were determined using the cAMP-Glo Max Assay (Promega, Madison, WI, in cells 5×105 cells/well) untreated or pre-treated with CXCL12 (50 nM, 5 min, 37 °C) followed by the addition of forskolin (10 μM, 10 min, 37 °C). When required, cells were pretreated with the small compounds (50 μM, 30 min, 37 °C) or AMD3100 (1 μM, 30 min, 37 °C) before activation with CXCL12.
 
-## CXCL12 binding
+### CXCL12 binding
 
 Cells (5×105 cells/well) were incubated with CXCL12 ATTO-700 (Ameti et al., 2018), (30 min, 37 °C) and maintained at 4 °C before analyzing the bound fluorescence in a Beckman Coulter Cytoflex flow cytometer. Results are expressed as mean fluorescence intensity. When required, cells were pretreated with the small compounds (50 μM, 30 min, 37 °C) or AMD3100 (1 μM, 30 min, 37 °C) before activation with CXCL12.
 
-## Fluorescence resonance transfer analysis by sensitized emission
+### Fluorescence resonance transfer analysis by sensitized emission
 
 HEK-293T cells transiently transfected at a fixed CXCR4-YFP:CXCR4-CFP ratio (15 μg and 9 μg, respectively) were treated or not with the compounds (50 μM, 30 min, 37 °C) or their vehicle (DMSO), and FRET efficiency was evaluated (n=3, mean ± SEM, p≤0.001). Emission light was quantified using the Wallac Envision 2104 Multilabel Reader (Perkin Elmer, Foster City, CA) equipped with a high-energy xenon flash lamp (donor: receptor fused to C-CFP, 8 nm bandwidth excitation filter at 405 nm; acceptor:receptor fused to YFP, 10 nm bandwidth excitation filter at 510 nm).
 
-## Actin polymerization
+### Actin polymerization
 
 Cells (5×105 cells/well) were incubated with CXCL12 (50 nM, 37 °C) or anti-CD3 (1 μg/ml, 37 °C) at the indicated time periods and then fixed with 2% paraformaldehyde and transferred to ice for 10 min. Fixed cells were permeabilized with 0.01% saponin (10 min, 4 °C) and labeled with Phalloidin-TRITC (Merck, 30 min, 4 °C). After washing, bound fluorescence was analyzed by flow cytometry on a Beckman Coulter FC500 flow cytometer. When required, cells were pretreated with the small compounds (50 μM, 30 min, 37 °C) or AMD3100 (1 μM, 30 min, 37 °C) before activation with CXCL12.
 
-## Immunofluorescence analyses
+### Immunofluorescence analyses
 
 Cells on fibronectin (20 μg/ml, Sigma)-coated glass slides were stimulated or not with 100 nM CXCL12 (5 min at 37  °C), fixed with 4% paraformaldehyde (10 min), permeabilized with 0.25% saponin (10 min), and stained with phalloidin-TRITC (Sigma-Merck; 30 min), all at room temperature (RT). Preparations were analyzed using a Leica TCS SP8 confocal multispectral microscope. When required, cells were pretreated with the small compounds (50 μM, 30 min, 37 °C) or AMD3100 (1 μM, 30 min, 37 °C) before activation with CXCL12.
 
-## Cell adhesion/migration on planar lipid bilayers
+### Cell adhesion/migration on planar lipid bilayers
 
 Planar lipid bilayers were prepared as reported (Carrasco et al., 2004). Briefly, unlabeled GPI-linked intercellular adhesion molecule 1 (ICAM-1) liposomes were mixed with 1,2-dioleoyl-phosphatidylcoline. Membranes were assembled in FCS2 chambers (Bioptechs, Butler, PA), blocked with PBS containing 2% FCS for 1 hr at RT, and coated with CXCL12 (200 nM, 30 min, RT). Cells (3×106 cells/ml) in PBS containing 0.5% FCS, 0.5 g/l D-glucose, 2 mM MgCl2 and 0.5 mM CaCl2 were then injected into the pre-warmed chamber (37 °C). Confocal fluorescence, differential interference contrast (DIC) and interference reflection microscopy (IRM) images were acquired on a Zeiss Axiovert LSM 510-META inverted microscope with a 40×oil-immersion objective. Imaris 7.0 software (Bitplane, Zurich, Switzerland) and ImageJ 1.49 v were used for qualitative and quantitative analysis of cell dynamics parameters, fluorescence and IRM signals. The fluorescence signal of the planar bilayer in each case was established as the background fluorescence intensity. The frequency of adhesion (IRM+ cells) per image field was estimated as [n° of cells showing IRM contact/total n° of cells (estimated by DIC)]×100; similarly, we calculated the frequency of migration (cells showing and IRM contact and moving over time). When required, cells were pretreated with the small compounds (50 μM, 30 min, 37 °C) or AMD3100 (1 μM, 30 min, 37 °C) before activation with CXCL12.
 
-## Directional cell migration
+### Directional cell migration
 
 Pre-treated cells were diluted to 10×106 cell/ml in RPMI medium containing 1% BSA and 20 mM HEPES (chemotaxis medium) and then seeded into the channel of a chemotaxis slide (μ-Slide Chemotaxis System, 80326; Ibidi, Munich, Germany) (1 hr, 37 °C, 5% CO2). The reservoirs were then filled with chemotaxis medium containing 50 μM AGR1.137 or AGR1.131, or vehicle (DMSO) as a control condition, and 100 nM CXCL12 or CXCL2 was added to the right reservoir. Phase-contrast images were recorded over 20 hrs with a time lapse of 15 min using a Microfluor inverted microscope (Leica) with a 10×objective and equipped with an incubation system set to 5% CO2 and 37 °C. Single-cell tracking was evaluated by selecting the center of mass in each frame using the manual tracking plug-in tool in ImageJ. Spider plots, representing the trajectories of the tracked cells, forward migration index (FMI), and straightness values, were obtained using the Chemotaxis and Migration Tool (ImageJ).
 
-## Drug efficacy assay in zebrafish
+### Drug efficacy assay in zebrafish
 
 HeLa cells were labeled with 8 μg/ml Fast-DiI oil (Cat #D3899; Thermo Fisher Scientific, Waltham, MA) in RPMI medium supplemented with 2% FBS for 30 min at 37 °C. Cells were then washed and filtered, and cell viability was determined using trypan blue-exclusion. Transgenic zebrafish Tg(fli1a:EGFP)y1 (Lawson and Weinstein, 2002) were bred naturally and maintained in E3 embryo medium (deionized water containing 0.5 mM NaCl, 0.4 mM CaCl2, 0.7 mM MgSO4 and 0.2 mM KCl, pH 7.2) supplemented with 0.2 mM PTU (E3/PTU) at 28.5 °C. DiI-labeled HeLa cells were implanted into the dorsal perivitelline space of 2-day-old embryos, as described (Rouhi et al., 2010). Tumors were imaged within 2 hrs of implantation and tumor-baring embryos were treated with either vehicle (DMSO), AMD-3100 (1 and 10 μM) or with AGR1.131 or AGR1.137 (10 and 50 μM) for 3 days, followed by re-imaging. Changes in tumor size were evaluated as tumor area at day 3 divided by tumor area at day 0, and metastasis was evaluated as the number of cells disseminated to the caudal hematopoietic plexus.
 
-## Statistical analyses
+### Statistical analyses
 
 All data were analyzed with GraphPad Prism software version 9 (GraphPad Inc, San Diego, CA). Cell migration in Transwell assays and in planar lipid bilayers and directional cell migration assays and cell polarization under the various conditions were analyzed to determine significant differences between means using one-way analysis of variance (ANOVA) followed by Tukey’s multiple comparison test. A two-tailed Mann-Whitney non-parametric test was used to analyze the diffusion coefficient (D1-4) of single particles. We used contingency tables to compare two or more groups of categorical variables, such as the percentages of mobile or immobile particles, and these were compared using a Chi-square test with a two-tailed p-value. Statistical differences were reported as n.s.=not significant p>0.05, *p≤0.05, **p≤0.01, ***p≤0.001 and ****p≤0.0001.

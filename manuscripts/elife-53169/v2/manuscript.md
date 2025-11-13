@@ -18,7 +18,7 @@
 
 ## Abstract
 
-A vaccine protective against diverse HCV variants is needed to control the HCV epidemic. Structures of E2 complexes with front layer-specific broadly neutralizing antibodies (bNAbs) isolated from HCV-infected individuals, revealed a disulfide bond-containing CDRH3 that adopts straight (individuals who clear infection) or bent (individuals with chronic infection) conformation. To investigate whether a straight versus bent disulfide bond-containing CDRH3 is specific to particular HCV-infected individuals, we solved a crystal structure of the HCV E2 ectodomain in complex with AR3X, a bNAb with an unusually long CDRH2 that was isolated from the chronically-infected individual from whom the bent CDRH3 bNAbs were derived. The structure revealed that AR3X utilizes both its ultralong CDRH2 and a disulfide motif-containing straight CDRH3 to recognize the E2 front layer. These results demonstrate that both the straight and bent CDRH3 classes of HCV bNAb can be elicited in a single individual, revealing a structural plasticity of VH1-69 -derived bNAbs.
+A vaccine protective against diverse HCV variants is needed to control the HCV epidemic. Structures of E2 complexes with front layer-specific broadly neutralizing antibodies (bNAbs) isolated from HCV-infected individuals, revealed a disulfide bond-containing CDRH3 that adopts straight (individuals who clear infection) or bent (individuals with chronic infection) conformation. To investigate whether a straight versus bent disulfide bond-containing CDRH3 is specific to particular HCV-infected individuals, we solved a crystal structure of the HCV E2 ectodomain in complex with AR3X, a bNAb with an unusually long CDRH2 that was isolated from the chronically-infected individual from whom the bent CDRH3 bNAbs were derived. The structure revealed that AR3X utilizes both its ultralong CDRH2 and a disulfide motif-containing straight CDRH3 to recognize the E2 front layer. These results demonstrate that both the straight and bent CDRH3 classes of HCV bNAb can be elicited in a single individual, revealing a structural plasticity of VH1-69-derived bNAbs.
 
 ## Introduction
 
@@ -36,6 +36,18 @@ The most likely scenario resulting in the insertion into the CDRH2 of AR3X invol
 
 We evaluated the binding of AR3X and AR3X variants to a panel of E2 ectodomain (E2ecto) proteins representing the E2 envelopes from 19 HCV genotype 1 strains. We also tested the binding of AR3X and AR3X variants to E2ecto proteins from genotypes 2, 3, 4, 5, and 6 strains. AR3X recognized all 19 E2 envelopes from genotype 1 including the 1a116 strain, which was not recognized by other front layer-specific bNAbs that include the CDRH3 disulfide motif (Figure 2A, Figure 2—figure supplement 1; Flyak et al., 2018). AR3X also recognized E2 envelopes from genotypes 2, 3, 4, 5, and 6 (Figure 2A). In contrast to mature AR3X, the AR3X ΔINS protein that lacks the CDRH2 insertion bound only 4 of the 25 variants, indicating that the CDRH2 insertion mediates the breath of binding. While AR3Xrua failed to bind any E2ecto proteins, AR3Xrua + INS recognized 1 of the 25 variants, further highlighting the importance of the CDRH2 insertion in initial recognition of the E2 antigen by naïve B cells. The fact that AR3Xrua + INS only bound to one HCV strain, whereas mature AR3X recognized all strains, indicated that somatic mutations, in addition to the CDRH2 insertion, are required for breath of binding and optimal E2 recognition. Consistent with our previous studies in which the strain 1a157 E2ecto envelope was recognized by HEPC3, HEPC74, AR3C and their germline precursors (Flyak et al., 2018), AR3X and two AR3X variants (AR3X ΔINS, AR3Xrua + INS) also bound to 1a157, suggesting that immunogens based on the genotype 1 1a157 ectodomain sequence could be used to stimulate the development of potent front layer-specific bNAbs (Figure 2A, Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53169/elife-53169-fig2-v2.jpg)
+
+**Figure 2.:** (a) Heat map showing the binding of AR3X and its variants to a panel of HCV E2ecto proteins. The EC50 value for each E2ecto-mAb combination is shown, with dark red, orange, yellow, or white shading indicating high, intermediate, low, or no detectable binding, respectively. The > symbol indicates EC50s greater than 10 µg/mL or EC50s in which the OD450 values at the highest antibody concentration tested were lower than 0.5. One experiment representative of two independent experiments is shown. (b) Heat map showing neutralization activities of AR3X and AR3X variants measured using a panel of genotype 1 HCVpp. IC50 values for each virus-mAb combination are shown. The > symbol indicates IC50s greater than 100 µg/mL or IC50s in which the percent neutralization at the highest antibody concentration tested was lower than 50%.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53169/elife-53169-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Values shown are means ± s.d. of duplicates. One experiment representative of two independent experiments is shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53169/elife-53169-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Values shown are means ± s.d. of duplicates.
+
 To evaluate the neutralization breadth of AR3X variants, we evaluated antibodies in an in vitro neutralization assay using a panel of 19 genotype 1 HCV pseudoparticles (HCVpp) that represents 94% of the amino acid polymorphisms present at >5% frequency in a reference panel of 643 genotype 1 HCV isolates from GenBank (Munshaw et al., 2012). Only mature AR3X exhibited neutralization activity, neutralizing 17 of 19 HCV strains (Figure 2B, Figure 2—figure supplement 2). The neutralization breadth of AR3X (89%) was slightly lower than the breath of AR3C bNAb (100%) (Flyak et al., 2018), which was isolated from the same HCV-infected individual (Law et al., 2008). AR3X variants failed to neutralize HCV isolates, suggesting that both the CDRH2 insertion and somatic mutations are required for the broad neutralization activity of AR3X.
 
 We and others described two classes of VH1-69 bNAbs with a CDRH3 disulfide motif: bNAbs with a straight CDRH3 (HEPC3 and HEPC74) and bNAbs with a kinked CDRH3 (AR3A and AR3C) (Flyak et al., 2018; Kong et al., 2013; Tzarum et al., 2019; Figure 3). To determine to which class AR3X belongs, we determined the crystal structure of AR3X in complex with E2ecto from the 1b09 HCV strain (Figure 4, Figure 4—figure supplement 1). The 2.2 Å AR3X-E2ecto structure demonstrated that, similar to previously-characterized HCV bNAbs that recognize the neutralizing face of E2 (Flyak et al., 2018; Kong et al., 2013; Tzarum et al., 2019), AR3X binds to the conserved epitope in the E2 front layer (Figure 4A). The AR3X CDRH3 loop contains two cysteines that form a disulfide bond, as seen in multiple other E2 front layer-binding bNAbs, and the AR3X CDRH3 adopts the straight conformation we previously described in the HEPC3 and HEPC74 bNAbs that were isolated from an individual who cleared HCV infection (Flyak et al., 2018; Figure 3). By contrast, the CDRH3s of AR3A and AR3C, which were isolated from the same HCV-infected individual as AR3X (Law et al., 2008), are bent (Kong et al., 2013; Tzarum et al., 2019). The tip of the AR3X CDRH3 loop interacts with the same conserved residues in the front layer of E2 as the CDRH3 tips in the other HCV bNAbs (Figure 4e, Figure 4—figure supplement 2).
@@ -43,6 +55,14 @@ We and others described two classes of VH1-69 bNAbs with a CDRH3 disulfide motif
 ![Figure 3.](https://cdn.elifesciences.org/articles/53169/elife-53169-fig3-v2.jpg)
 
 **Figure 3.:** Fab structures in liganded state of AR3A (PDB 6BKB), AR3C (PDB 4MWF), AR3X (this paper), HEPC3 (PDB 6MEI), and HEPC74 (PDB 6MEH). The structures were superimposed on their VH domains. Protein backbones are shown as ribbons and CDR loops are purple (CDRH1), orange (CDRH2), and blue (CDRH3).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53169/elife-53169-fig4-v2.jpg)
+
+**Figure 4.:** (a) Crystal structure of the AR3X-E2ecto complex. E2ecto is shown as a cartoon representation within a transparent surface with N-glycans highlighted as sticks and disulfide bonds shown as yellow sticks. The AR3X Fab is shown in a surface representation with highlighted CDRs. (b) Comparison of buried surface areas (BSAs) of E2ecto on the HC and LC of AR3X. (c) Percentage of BSA contributed from CDRH loops of the total BSA on the AR3X HC. The portion of CDRH2 within the CDRH2 insertion is separated from the main pie chart. (d) Length distribution of human CDRH2s. Human CDRH2 lengths were extracted from the online abYsis system (http://www.bioinf.org.uk/abysis/) using the Kabat numbering scheme Kabat and National Institutes of Health (U.S.). Office of the Director, 1991). (e) Interactions of AR3X heavy chain CDRs with E2ecto. CDRs are purple (CDRH1), orange (CDRH2), and blue (CDRH3) tubes. Disulfide bonds are shown as yellow sticks. (f) CDRH2 interactions with E2ecto. Interacting residues are shown as sticks. AR3X CDRH1 – purple, AR3X CDRH2 – orange, and AR3X CDRH3 – blue. Disulfide bonds are shown as yellow sticks. Potential H-bonds are shown as black dashed lines, and residues at the interface are indicated. (g) CDRH3 interactions with E2ecto. Interacting residues shown as sticks. For clarity, only the CDRH3 of AR3X is shown. Disulfide bonds are shown as yellow sticks and E2 glycans are shown as sticks with light blue, red, and dark blue colors for carbon, oxygen, and nitrogen atoms, respectively. Potential H-bonds and salt bridges are shown as black or red dashed lines, respectively. Residues at the interface are indicated.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53169/elife-53169-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53169/elife-53169-fig4-figsupp2-v2.jpg)
 
 Overall, AR3X has a similar binding footprint to the footprints of HEPC3, HEPC74, AR3C, and AR3A, sharing multiple contact residues in the front layer and CD81 receptor-binding loop (Figure 4—figure supplement 2). As also found for these other front layer-specific bNAbs, AR3X’s contacts with E2ecto almost exclusively involved VH domain residues, burying 1,250 Å2 (98% of the total Fab buried surface area; BSA) (Figure 4B), with the CDRH3 accounting for 44.5% (556 Å2) of the total BSA on the VH domain (Figure 4B, Figure 4—figure supplement 2). However, in contrast to other front layer-specific bNAbs in which the CDRH3 plays a dominant role in the interactions with E2 envelope (Flyak et al., 2018; Kong et al., 2013; Tzarum et al., 2019), the main contributor to the AR3X-E2ecto binding interface was CDRH2, which accounted for 48.2% (602 Å2) of the total BSA of the VH domain, with the majority of the binding footprint provided by the CDRH2 insertion (45.4% or 567 Å2 of total BSA of the VH domain) (Figure 4C).
 
@@ -52,7 +72,7 @@ Although the CDH3s of AR3X, AR3A, AR3C, HEPC3, and HEPC74 CDRH3s make similar bi
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/53169/elife-53169-fig5-v2.jpg)
 
-**Figure 5.:** VH1-69-derived bNAbs with the CDRH3 disulfide motif.(Top) Surface representations of AR3X-E2 and other bNAb-E2 structures. E2, gray; AR3A-HC, red; AR3A-LC, light red; AR3C-HC, orange; AR3C-LC, yellow; AR3X-HC, green; AR3X-LC, light green; HEPC3-HC, blue; HEPC3-LC, light blue; HEPC74-HC, purple; HEPC74-LC, pink. (Bottom) Comparison of AR3A (red), AR3C (orange), AR3X (green), HEPC3 (blue), and HEPC74 (purple) epitopes. Epitopes on the E2 front layer (surface representation) were defined as residues in E2 containing an atom within 4 Å of the bound Fab.
+**Figure 5.:** (Top) Surface representations of AR3X-E2 and other bNAb-E2 structures. E2, gray; AR3A-HC, red; AR3A-LC, light red; AR3C-HC, orange; AR3C-LC, yellow; AR3X-HC, green; AR3X-LC, light green; HEPC3-HC, blue; HEPC3-LC, light blue; HEPC74-HC, purple; HEPC74-LC, pink. (Bottom) Comparison of AR3A (red), AR3C (orange), AR3X (green), HEPC3 (blue), and HEPC74 (purple) epitopes. Epitopes on the E2 front layer (surface representation) were defined as residues in E2 containing an atom within 4 Å of the bound Fab.
 
 A feature of VH1-69-derived antibodies is the presence of two hydrophobic residues at the tip of the CDRH2 loop that facilitate interactions with hydrophobic epitopes. The CDRH2s of AR3A and AR3C contain an Ile/Val-Pro-Met/Leu-Phe motif in which hydrophobic residues interact with the E2 front layer and CD81 binding loop (Chen et al., 2019). The CDRH2s of HEPC3 and HEPC74 are less hydrophobic and contain a Thr/Ser-Pro-Ile-Phe/Ser motif (Chen et al., 2019). In addition to hydrophobic interactions with the E2 front layer, the HEPC3 CDRH2 also makes a single hydrogen bond with E2 (Flyak et al., 2018). By contrast, AR3X is a not a typical VH1-69 antibody in which hydrophobic residues in CDRH2 mediate the binding to hydrophobic residues in E2 (Chen et al., 2019). Instead, the AR3X CDRH2 forms eight hydrogen bonds with the E2 glycoprotein, four of which are mediated by AR3X residue Arg52g (AR3X-E2ecto: Pro52c-His445, Pro52e-Thr444, Arg52g-Ala440, Arg52g-Phe442, Arg52g-Tyr443, Arg52g-Pro612, Asn52n-Tyr443, Trp52i-Tyr613) (Figure 4F, Figure 4—figure supplement 2). Notably, these differences in binding interactions have functional implications, as these mAbs differ in potency of neutralization of individual HCV strains in the HCVpp panel. For example, the AR3X neutralization IC50 for strain 1b21 is ~17 fold lower than the IC50 of HEPC3 (1.2 vs. 20.5 µg/mL). In contrast, the AR3X neutralization IC50 for strain 1a142 is ~9 fold higher than the IC50 of HEPC3 (16.2 vs. 1.9 µg/mL) (Figure 2; Flyak et al., 2018).
 
@@ -68,32 +88,182 @@ Nucleotide insertions and deletions play an important role in diversification of
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEK293-6E</td>
+      <td>National Research Council of Canada</td>
+      <td>11565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Expi293F</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A14527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Hep3B2.1–7</td>
+      <td>ATCC</td>
+      <td>HB-8064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human IgG-HRP (Goat polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>2040–05</td>
+      <td>1:4000 dilution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTT5 mammalian expression vector (used to express IgGs and Fabs)</td>
+      <td>National Research Council of Canada</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>1-Step Ultra TMB-ELISA Substrate Solution</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>34028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PEGRx HT</td>
+      <td>Hampton Research</td>
+      <td>HR2-086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PEG/Ion HT</td>
+      <td>Hampton Research</td>
+      <td>HR2-139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>JCSG-plus HT-96</td>
+      <td>Molecular Dimensions</td>
+      <td>MD1-40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kifunensine</td>
+      <td>Sigma</td>
+      <td>K1140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>Schrödinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>(Adams et al., 2010)</td>
+      <td>https://www.phenix-online.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>(Emsley and Cowtan, 2004)</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PDBePISA</td>
+      <td>(Krissinel and Henrick, 2007)</td>
+      <td>http://www.ebi.ac.uk/pdbe/pisa/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>abYsis system</td>
+      <td></td>
+      <td>http://www.bioinf.org.uk/abysis/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 200 Increase 10/300 GL</td>
+      <td>GE Healthcare</td>
+      <td>17517501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HisTrap FF column</td>
+      <td>GE Healthcare</td>
+      <td>17531901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiTrap Protein A HP column</td>
+      <td>GE Healthcare</td>
+      <td>17040301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HCV 1b09 strain E1E2 sequence</td>
+      <td>GenBank</td>
+      <td>KJ187984.1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 HEK293-6E cells were obtained from National Research Council of Canada. Expi293F cells were obtained from Thermo Fisher Scientific. Hep3B cells were obtained from American Type Culture Collection (ATCC). Hep3B cells were tested for mycoplasma contamination. Neither cell line is among the list of commonly misidentified cell lines.
 
-## IgG expression and purification
+### IgG expression and purification
 
 Genes encoding the VH and VL domains of the AR3X bNAb called antibody ‘A’ in Supplemental Table 1 in Law et al. (2008) were synthesized as gBlocks gene fragments (IDT) and cloned into pTT5-based expression vectors (NRC Biotechnology Research Institute). Reverted unmutated ancestor (rua) variants of AR3X and the location of the insertion were inferred with IMGT/V-QUEST using complete sequences of heavy and light chain variable domains. IgGs were produced in Expi293F cells (National Research Council of Canada) by co-transfecting appropriate heavy and light chain plasmids. HiTrap Protein A HP column (GE Healthcare) was used to isolate IgGs from filtered culture supernatants followed by purification by size exclusion chromatography (SEC) using a Superdex 200 Increase 10/300 GL column (GE Healthcare).
 
-## Expression and purification of E2 constructs
+### Expression and purification of E2 constructs
 
 For ELISA experiments, His-tagged E2ecto proteins (residues 384–643) were expressed by transiently transfecting Expi293F cells (National Research Council of Canada) and purified from clarified supernatants using a HisTrap FF column (GE Healthcare) followed by SEC on a Superdex 200 Increase 10/300 GL column (GE Healthcare) to separate monomeric E2ecto proteins from oligomeric species. For structural studies, the His-tag was removed from an expression vector encoding a strain 1b09 E2 ectodomain.
 
-## Expression and purification of an E2-Fab complex
+### Expression and purification of an E2-Fab complex
 
 AR3X Fab-1b09 E2ecto complexes for structural studies were produced in HEK293-6E or Expi293F cells (National Research Council of Canada) in the presence of 5 μM kifunensine (Sigma) by co-transfecting expression vectors encoding His-tagged Fab and untagged E2ecto to allow isolation of stable Fab-E2 complexes (Flyak et al., 2018). AR3X-E2 complex was purified from supernatants using Ni-NTA chromatography on HisTrap HP column (GE Healthcare) followed by SEC on a Superdex 200 Increase 10/300 GL column (GE Healthcare).
 
-## Crystallization, data collection and structure determinations
+### Crystallization, data collection and structure determinations
 
 Commercially-available screens (Hampton Research and Molecular Dimensions) were used to screen initial crystallization conditions by vapor diffusion in sitting drops. AR2X-E2ecto crystals were grown using 0.2 µL of protein complex in TBS and 0.2 µL of mother liquor (0.25 M ammonium tartrate dibasic pH 7.0, 20% PEG 3,350) and cryoprotected in mother liquor supplemented with 20% (w/v) glycerol. X-ray diffraction data from cryopreserved crystals were collected at the Stanford Synchrotron Radiation Lightsource on beamline 12–2 using a PILATUS 6M detector. Images were processed and scaled using iMosflm (Battye et al., 2011) and Aimless as implemented in the CCP4 software suite (Evans and Murshudov, 2013). The AR3X-E2 complex structure was solved by molecular replacement using the AR3C (PDB 4MWF) and 1b09 HCV E2ecto (PDB 6MEI) structures as search models. The models were refined and validated using Phenix.refine (Adams et al., 2010). Iterative manual model building and corrections were performed using Coot (Emsley and Cowtan, 2004). Glycans were initially interpreted and modeled using Fo – Fc maps calculated with model phases contoured at 2σ, followed by 2Fo – Fc simulated annealing composite omit maps generated in Phenix in which modeled glycans were omitted to remove model bias (Adams et al., 2010). The quality of the final models was examined using MolProbity (Chen et al., 2010).
 
 Models were superimposed and figures rendered using the PyMOL molecular visualization system (Version 1.7, Schrödinger, LLC). Buried surface areas (BSAs) were determined using the PDBePISA web-based interactive tool (Krissinel and Henrick, 2007). Potential hydrogen bonds were assigned using criteria of a distance of <4.0 Å and an A-D-H angle of >90°, and the maximum distance allowed for a van der Waals interaction was 4.0 Å. Rmsd calculations were done in PyMOL following pairwise Cα alignments without excluding outliers. AR3X residues were numbered according to the Kabat numbering scheme, and Kabat definitions of CDRs were used throughout the paper (Kabat and National Institutes of Health (U.S.). Office of the Director, 1991). Values to show the length distribution of CDRH2 in humans were extracted from the online abYsis system (http://www.bioinf.org.uk/abysis/) using the Kabat numbering scheme.
 
-## ELISA binding analyses
+### ELISA binding analyses
 
 Soluble forms of full-length E2 ectodomains were coated overnight onto 96-well plates (Corning) at 1 μg/mL. Plates were blocked with 1% goat serum and 1% powdered milk in TBST buffer (TBS with 0.05% Tween-20) for 1 hr. Purified IgGs were assayed in duplicate at 4-fold serial dilutions, starting at 10 µg/mL. IgGs-E2ecto complexes were detected using goat anti-human IgG horseradish peroxidase-conjugated secondary antibody (Southern Biotech, 1:4000 dilution) and 1-Step Ultra TMB-ELISA substrate (Thermo Fisher Scientific) and reading the optical density read at 450 nm after stopping the reaction with 1M HCl. A non-linear regression analysis was performed on the resulting curves using Prism version 5 (GraphPad) to calculate EC50 values.
 
-## HCVpp production and neutralization assays
+### HCVpp production and neutralization assays
 
 HCVpp were produced by lipofectamine-mediated transfection of HCV E1E2 and pNL4-3.Luc.R-E- plasmids into HEK293T cells as described (Hsu et al., 2003; Logvinoff et al., 2004). A panel of 19 heterologous genotype 1 HCVpp has been described previously (Bailey et al., 2015; Osburn et al., 2014). Neutralization assays were performed as described (Dowd et al., 2009). Briefly, IgGs were serially diluted five-fold, starting at a concentration at 100 µg/ml and incubated with HCVpp for one hour prior to addition to Hep3B hepatoma cells. Luciferase activity was measured after three days and compared to that of HCVpp in media alone.

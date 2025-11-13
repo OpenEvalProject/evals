@@ -12,12 +12,12 @@
 
 ### Affiliations
 
-1. https://ror.org/007ps6h72 Computational Biology Program, Fred Hutchinson Cancer Center Seattle United States
-2. https://ror.org/00cvxb145 Department of Biostatistics, University of Washington Seattle United States
-3. https://ror.org/01kg8sb98 Department of Statistics, Indiana University Bloomington United States
-4. https://ror.org/006w34k90 Howard Hughes Medical Institute Seattle United States
-5. https://ror.org/00cvxb145 Department of Genome Sciences, University of Washington Seattle United States
-6. https://ror.org/00cvxb145 Department of Statistics, University of Washington Seattle United States
+1. Computational Biology Program, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+2. Department of Biostatistics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+3. Department of Statistics, Indiana University Bloomington United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
+4. Howard Hughes Medical Institute Seattle United States ([ROR:006w34k90](https://ror.org/006w34k90))
+5. Department of Genome Sciences, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+6. Department of Statistics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -43,29 +43,112 @@ In this article, we develop new models using modern frameworks and provide a com
 
 ## Results
 
-## Overview of data preparation and objective
+### Overview of data preparation and objective
 
 We will begin with an overview of our models and data. Full details are provided in ‘Materials and methods’.
 
 Our objective in this project is to predict the probability of observed SHM in a child sequence relative to a parent sequence. We follow previous work (Spisak et al., 2020) in overall goal and data setup. Specifically, we predict mutations in BCR sequences that are out-of-frame, that is, such that the sequence cannot code for a productive receptor. Because the data is out-of-frame, this means that the sequences under consideration are less likely to have undergone selective pressure in the germinal centers and instead provide more information about the SHM process. We also provide more relevant parent sequences and predict finer-scale events by using phylogenetic reconstruction and ancestral sequence inference on sequences clustered into clonal families (Figure 1a). We split the tree with ancestral sequences into pairs of parent and child sequences, which we call parent–child pairs. We also experiment with using synonymous mutation data by masking mutations from the loss function that are not synonymous (below; details in ‘Materials and methods’).
 
-In all models, the distribution of mutations at a particular site is assumed to be independent of mutations at all other sites (but not independent of context). We follow many authors starting from Yaari et al., 2013 in estimating a per-site rate, as well as a per-site probability distribution among the non-identical bases describing the base selected in the event of a mutation. We will call this the conditional substitution probability (CSP). For each site i\begin{document}$i$\end{document}, we assume that the mutation process is an exponential waiting time process with rate λi\begin{document}$\lambda_{i}$\end{document}. Once the mutation occurs, we assume that the base is selected according to a categorical distribution with probabilities pi\begin{document}$\mathbf{p}_{i}$\end{document}. Similar assumptions have been made previously (Levinstein Hallak and Rosset, 2022; Levinstein Hallak et al., 2018; Rosset, 2007; Spisak et al., 2020). To accommodate evolutionary time in our model, we include offsets in our exponential model—if t\begin{document}$t$\end{document} is a branch length parameter for a sequence pair, we use parameter λ~=tλ\begin{document}$\tilde\lambda=t\lambda$\end{document} for model inference so that the model is able to learn λ\begin{document}$\lambda$\end{document} irrespective of evolutionary time on a particular branch. This parameter t\begin{document}$t$\end{document} is frequently the normalized mutation count (Spisak et al., 2020) but can be optimized as part of a joint optimization.
+![Figure 1.](https://cdn.elifesciences.org/articles/105471/elife-105471-fig1-v1.jpg)
+
+**Figure 1.:** (a) Out-of-frame sequences are clustered into clonal families. Trees are built on clonal families and then ancestral sequences are reconstructed using a simple sequence model. The prediction task is to predict the location and identity of mutations of child sequences given parent sequences. (b) Strategy for ‘thrifty’ convolutional neural networks with relatively few parameters. We use a trainable embedding of each 3-mer into a space; downstream convolutions happen on sequential collections of these embeddings. The ‘width’ of the k-mer model is determined by the size of the convolutional kernel, which in this cartoon is 3. This would give us effectively a 5-mer model because the 3-mer model adds one base on either side of a convolution of length 3. For the sake of simplicity, the probability distribution of the new base conditioned on there being a substitution (which we call the conditional substitution probability [CSP]) is not shown. The CSP output can emerge in several ways (Figure 1—figure supplement 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/105471/elife-105471-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Our three strategies for estimating the per-site rate and CSPs. In the joined version, the two outputs come directly out of the convolutional layer. In the hybrid version, the two outputs share the embedding layer. In the independent version, the two outputs are estimated separately.
+
+In all models, the distribution of mutations at a particular site is assumed to be independent of mutations at all other sites (but not independent of context). We follow many authors starting from Yaari et al., 2013 in estimating a per-site rate, as well as a per-site probability distribution among the non-identical bases describing the base selected in the event of a mutation. We will call this the conditional substitution probability (CSP). For each site $i$, we assume that the mutation process is an exponential waiting time process with rate $\lambda_{i}$. Once the mutation occurs, we assume that the base is selected according to a categorical distribution with probabilities $p_{i}$. Similar assumptions have been made previously (Levinstein Hallak and Rosset, 2022; Levinstein Hallak et al., 2018; Rosset, 2007; Spisak et al., 2020). To accommodate evolutionary time in our model, we include offsets in our exponential model—if $t$ is a branch length parameter for a sequence pair, we use parameter $\lambda~=t\lambda$ for model inference so that the model is able to learn $\lambda$ irrespective of evolutionary time on a particular branch. This parameter $t$ is frequently the normalized mutation count (Spisak et al., 2020) but can be optimized as part of a joint optimization.
 
 We used two data sets, which we will call the briney and tang data sets. The briney data (Briney et al., 2019) consists of samples from nine individuals, but two of these samples resulted in many more sequences than the rest. Thus, we will use a test–train split in which these two samples form the training data and the other seven samples form the testing data. We acknowledge the important work the Spisak et al., 2020 team did in processing the briney data. The tang data (Vergani et al., 2017; Tang et al., 2020) will be a further test set. Details on data processing appear in ‘Materials and methods’. In ‘Materials and methods’, we describe our attempts to find additional data sets.
 
-## Models
+### Models
 
 We use the following strategy to combine the predictive power of local-context models without having the parameter penalty (Figure 1b). Each 3-mer is mapped into an embedding space of a fixed dimension, and these embedding locations are trainable parameters of the model. The idea is that the embedding abstracts some SHM-relevant characteristics of that 3-mer. Each sequence is then represented as a matrix with (sequence length) rows and (embedding dimension) columns. We then apply convolutional filters to these matrices, with taller convolutional filters effectively increasing the context of the model. For example, a kernel size of 11 gives effectively a 13-mer model (because of the additional base on either side of the 3-mer). We then apply a simple linear layer to the result of this step in order to get a mutation rate estimate for each site.
 
 As described above, this class of models predicts both the per-site rate of SHM as well as the probability of alternate bases after mutation (called the CSP as above). We make these two model outputs in three ways (Figure 1, Figure 1—figure supplement 1): they can share everything except for the final layer (‘joined’ model), or they can share the embedding layer (‘hybrid’ model), or they can be estimated separately (‘independent’ model). A key difference with a full k-mer model is that when we increase the size of the kernel, the number of parameters increases linearly, not exponentially. In this way, the thriftiest well-performing model is effectively a 13-mer model with fewer parameters than a 5-mer model; however, one can scale these models among a variety of dimensions (Table 1).
 
+**Table 1.**
+ Selected model shapes and dropout probabilities.The release name of the model is the name of the trained model released in the GitHub repository. The paper name is the name of the model used in this article, which describes more about its architecture. ‘Kernel’: the size of the convolutional kernel used in the model. ‘Embed’: the size of the embedding used for each 3-mer. Because there is one additional base on either side of a 3-mer, a model with kernel size 9 is effectively an 11-mer model, and a model with kernel size 11 is effectively a 13-mer model. The ‘Medium’ and ‘Large’ labels in the paper name designate the settings for Kernel, Embed, Filters, and Dropout.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Release name: paper name</th>
+      <th>Kernel</th>
+      <th>Embed</th>
+      <th>Filters</th>
+      <th>Dropout</th>
+      <th>Params</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ThriftyHumV0.2-20: CNN Joined Large</td>
+      <td>11</td>
+      <td>7</td>
+      <td>19</td>
+      <td>0.3</td>
+      <td>2057</td>
+    </tr>
+    <tr>
+      <td>5mer</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>3077</td>
+    </tr>
+    <tr>
+      <td>Spisak</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>3576</td>
+    </tr>
+    <tr>
+      <td>ThriftyHumV0.2-45: CNN Indep Medium</td>
+      <td>9</td>
+      <td>7</td>
+      <td>16</td>
+      <td>0.2</td>
+      <td>4539</td>
+    </tr>
+    <tr>
+      <td>ThriftyHumV0.2-59: CNN Indep Large</td>
+      <td>11</td>
+      <td>7</td>
+      <td>19</td>
+      <td>0.3</td>
+      <td>5931</td>
+    </tr>
+  </tbody>
+</table>
+
 We implemented our models in PyTorch (Paszke, 2019). Because of the small size of these models, they are fast to train and use. The hyperparameters for the models (Table 1) were selected with a run of Optuna (Akiba et al., 2019) early in the project and then fixed. Further optimization was not pursued because of the limited performance differences between the existing models.
 
-## Thrifty CNNs give a modest performance improvement
+### Thrifty CNNs give a modest performance improvement
 
-In order to evaluate our proposed methods and compare to previous work, we first characterized the models in terms of predictive performance using area under the ROC curve (AUROC), area under the precision-recall curve (AUPRC), R-precision, and substitution accuracy. AUROC can be interpreted as the probability that the model correctly identifies sites that mutate as having higher mutability than those that do not. In fact, if one randomly selects a positive–negative pair, the AUROC is the probability that the positive example is assigned a higher probability than the negative example. However, this measure is sensitive to class imbalance, and we are in the imbalanced setting here because mutations are relatively rare. AUPRC provides an alternative that is less sensitive to class imbalance effects (Ozenne et al., 2015; Saito and Rehmsmeier, 2015) because the precision is the fraction of positive predictions that are true positives. R-precision gives a sense of how accurate the model is among sites that are most mutable. Specifically, if a given pair of parent and child sequences had R\begin{document}$R$\end{document} mutations, R-precision is the precision of the predictions of mutability at the R\begin{document}$R$\end{document} sites that are ranked as being most mutable. To evaluate performance at predicting per-base substitution probabilities (given a mutation occurred), we report substitution accuracy: how frequently is the predicted-most-likely base the one to which a site mutates?
+In order to evaluate our proposed methods and compare to previous work, we first characterized the models in terms of predictive performance using area under the ROC curve (AUROC), area under the precision-recall curve (AUPRC), R-precision, and substitution accuracy. AUROC can be interpreted as the probability that the model correctly identifies sites that mutate as having higher mutability than those that do not. In fact, if one randomly selects a positive–negative pair, the AUROC is the probability that the positive example is assigned a higher probability than the negative example. However, this measure is sensitive to class imbalance, and we are in the imbalanced setting here because mutations are relatively rare. AUPRC provides an alternative that is less sensitive to class imbalance effects (Ozenne et al., 2015; Saito and Rehmsmeier, 2015) because the precision is the fraction of positive predictions that are true positives. R-precision gives a sense of how accurate the model is among sites that are most mutable. Specifically, if a given pair of parent and child sequences had $R$ mutations, R-precision is the precision of the predictions of mutability at the $R$ sites that are ranked as being most mutable. To evaluate performance at predicting per-base substitution probabilities (given a mutation occurred), we report substitution accuracy: how frequently is the predicted-most-likely base the one to which a site mutates?
 
 We found that the thrifty convolutional neural network (CNN) models gave a modest performance improvement for these predictive metrics compared to existing models (Figure 2, Figure 2—figure supplement 1). Specifically, we compared to a 5-mer model trained in exactly the same way, as well as a reimplementation of the model of Spisak et al., 2020. We confirmed that our reimplementation infers very similar parameters to the previous implementation, although we add a slight regularization to avoid some aspects of the original model fit that appear to be artifacts (Figure 2—figure supplement 2). Because the Spisak et al., 2020 model fits a per-site rate, and the briney data does not have full sequence coverage, we limited all evaluation to a region well covered by the briney data: positions 80 to 319, inclusive.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/105471/elife-105471-fig2-v1.jpg)
+
+**Figure 2.:** Note that the two rows use different x-axis scales. The integer in parentheses indicates the number of parameters of the model. Each model has multiple points, each corresponding to an independent model training. This is a subset of the models for clarity; see Figure 2—figure supplement 1 for all models.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105471/elife-105471-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Performance results for all the models: held-out individuals from the briney data (upper row) and the tang data (lower row). The ‘Small’ thrifty models have settings (7, 6, 14, 0.1) for hyperparameters (Kernel, Embed, Filters, Dropout), as described in Table 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/105471/elife-105471-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** There is good agreement between the originally inferred shmoof coefficients and our re-implementation, both in the motif mutability terms and the per-position mutabilities. The primary exception is that we infer more reasonable values when sequencing coverage is weak or absent and avoid an extreme value at site 67. These are due to a slight regularization to the per-position mutabilities. This analysis can be reproduced using the reshmoof.ipynb notebook.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/105471/elife-105471-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Performance plot including the original S5F model (vertical black lines) for held-out individuals from the briney data (upper row) and on a separate sequencing experiment (tang data, lower row).
 
 We were surprised to find that all metrics except substitution accuracy were better on data from a distinct sequencing experiment (tang data) than on held-out samples from the same sequencing experiment (briney data). We attribute this to there being a difference in sequencing error between the two experiments. The briney data allowed sequences with only a single UMI representative (Spisak et al., 2020) while the tang data required at least two sequences per UMI (Tang et al., 2020). If our model is successfully learning substitution probabilities due to SHM rather than the sequencing error, we would expect our model to underestimate the number of substitutions at positions with a low probability of substitution in the briney data (which we expect to have more sequencing error) but not in the tang data (which we expect to have less sequencing error). This is in fact what we see in our characterization of model fit below. We were also surprised to find that the per-site rate did not seem to help the 5-mer model on held-out data, despite the results of Spisak et al., 2020; see ‘Discussion’.
 
@@ -73,21 +156,126 @@ We did not see a substantial performance improvement by increasing the number of
 
 We also compared our work to a previous deep neural network model of SHM (Tang et al., 2022), which was trained on the tang data set. A DeepSHM model consists of a pair of CNN models, one for estimating mutation frequencies and another for CSPs; this is akin to our ‘independent’ model configuration. Each of these CNNs has over 250,000 parameters, so in total is about 100 times larger than the largest CNN model we trained. These CNNs are also slow to evaluate: because they make predictions one k-mer at a time, one must iterate over the sequence and obtain predictions for every site. Because the DeepSHM model cannot handle ambiguous nucleotides, we had to remove these from the evaluation. The authors found the best performance is achieved with 15-mers, which is comparable with the 11-mers and 13-mers in our thrifty models. We evaluated the DeepSHM 15-mer model on the subset of the briney data and found it performs better than S5F but comparable to our models (Table 2). Specifically, our models performed comparably when trained on the tang data only, but when trained on the combined tang data and briney two largest repertoires, our models performed slightly better on the briney held-out repertoires.
 
+**Table 2.**
+ Performance evaluation on held-out briney data for S5F, DeepSHM, and thrifty models.The * on S5F indicates that this model was trained using synonymous mutations on a distinct data set to those considered here. The †on tang † is to signify that this is the tang data but with a different preprocessing scheme (Tang et al., 2022).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Training data</th>
+      <th>AUROC</th>
+      <th>AUPRC</th>
+      <th>R-prec</th>
+      <th>Sub. acc.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S5F</td>
+      <td>*</td>
+      <td>0.775</td>
+      <td>0.0698</td>
+      <td>0.0290</td>
+      <td>0.514</td>
+    </tr>
+    <tr>
+      <td>CNN Joined Large</td>
+      <td>tang</td>
+      <td>0.787</td>
+      <td>0.0850</td>
+      <td>0.0406</td>
+      <td>0.510</td>
+    </tr>
+    <tr>
+      <td>CNN Indep Medium</td>
+      <td>tang</td>
+      <td>0.786</td>
+      <td>0.0848</td>
+      <td>0.0407</td>
+      <td>0.528</td>
+    </tr>
+    <tr>
+      <td>CNN Indep Large</td>
+      <td>tang</td>
+      <td>0.786</td>
+      <td>0.0852</td>
+      <td>0.0406</td>
+      <td>0.524</td>
+    </tr>
+    <tr>
+      <td>DeepSHM</td>
+      <td>tang†</td>
+      <td>0.786</td>
+      <td>0.0876</td>
+      <td>0.0421</td>
+      <td>0.537</td>
+    </tr>
+    <tr>
+      <td>CNN Joined Large</td>
+      <td>tang+briney</td>
+      <td>0.793</td>
+      <td>0.0923</td>
+      <td>0.0439</td>
+      <td>0.551</td>
+    </tr>
+    <tr>
+      <td>CNN Indep Medium</td>
+      <td>tang+briney</td>
+      <td>0.793</td>
+      <td>0.0919</td>
+      <td>0.0441</td>
+      <td>0.560</td>
+    </tr>
+    <tr>
+      <td>CNN Indep Large</td>
+      <td>tang+briney</td>
+      <td>0.794</td>
+      <td>0.0926</td>
+      <td>0.0450</td>
+      <td>0.562</td>
+    </tr>
+  </tbody>
+</table>
+
+_AUPRC, area under the precision-recall curve; AUROC, area under the ROC curve; R-prec, R-precision; sub. acc., substitution accuracy._
+
 We next characterized models in terms of out-of-sample model fit. For each site in the parent of each parent–child pair (PCP) of sequences, we computed the probability of a nucleotide substitution at that site in the corresponding child. We then compared the sum of those probabilities to the actual number of substitutions that were observed at each site in the PCPs (Figure 3). If the observed and expected counts match, then the model is doing a good job, on average, of predicting site-specific probabilities of substitution. We assessed matching using an ‘overlap’ metric, which quantifies the size of the intersection of the histograms divided by the average area of the histograms. We also assessed model log likelihood. These assessments were performed after branch length optimization to maximize likelihood.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/105471/elife-105471-fig3-v1.jpg)
+
+**Figure 3.:** Observed mutations in held-out data are placed in bins according to their probability of mutation. For every bin, the points show the observed number of mutations in that bin, while the bars show the expected number of mutations in that bin. The overlap metric is the area of the intersection of the observed and expected divided by the average area between the two.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/105471/elife-105471-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Comparison of held-out log likelihoods between the models.
 
 We found that, as with the predictive metrics, all models gave similar performance, the differences of which were smaller than the differences between data sets. The overlap metric was better on the 5-mer model for the held-out briney data, but was better for the CNN models for the tang data. The log likelihood was slightly better for the CNN model for all held-out data sets (Figure 3—figure supplement 1).
 
-## Further model elaborations did not improve out of sample performance
+### Further model elaborations did not improve out of sample performance
 
 We tried adding a per-site rate to our CNN models, as well as other elaborations such as a transformer model directly on the amino acid embeddings, and a transformer combined with a CNN. We also tried adding a positional encoding to the input for the CNN model, which does not require additional parameters, but rather perturbs the input embeddings in a way that indicates their position in the sequence (Vaswani et al., 2017). None of these elaborations improved performance on held-out data. All of these experiments can be found in notebooks in the GitHub repository associated with this article.
 
 We also found that jointly optimizing branch lengths along with model parameters did not improve out-of-sample performance.
 
-## Out-of-frame evolution and synonymous mutations give different results
+### Out-of-frame evolution and synonymous mutations give different results
 
 We conclude from the above that the richness of these models is limited by data volume, but unfortunately we were not able to find additional data sets with many out-of-frame sequences (see end of ‘Materials and methods’). This raised the question of if we can use synonymous mutations of productive sequences to augment our data set. To do so, we trained models using a combination of the original training using the briney data but also with the tang data where the loss function was restricted to fourfold synonymous sites.
 
 We found that adding these synonymous mutations to the training set reduced performance on the held-out out-of-frame data (Figure 4). Furthermore, when we train in the usual way using the briney data and evaluate on synonymous data, we do significantly worse than the S5F model, which was trained on synonymous mutations (Figure 4, Figure 4—figure supplements 1 and 2). Our conclusion is that these two sources of data capture the effect of different processes.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/105471/elife-105471-fig4-v1.jpg)
+
+**Figure 4.:** Thus, adding in synonymous mutations to the training set does not help predict on held-out out-of-frame data. Results shown for briney data (upper row) and tang data (lower row).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105471/elife-105471-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** S5F performs better for mutation position prediction on synonymous mutations in the jaffe data than any model trained on out-of-frame data. The performance plot is as before, but the black vertical bar indicates the performance of the S5F model, and all models evaluated on synonymous mutations in the jaffe data.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/105471/elife-105471-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** S5F performs better for mutation position prediction on synonymous mutations in the tang data than any model trained on out-of-frame data. Performance plot is as before, but the black vertical bar indicates the performance of the S5F model, and all models evaluated on synonymous mutations in the tang data.
 
 ## Discussion
 
@@ -97,7 +285,7 @@ Specifically, by using an overlapping 3-mer embedding approach, we can parameter
 
 Our first main result is that these models are better than previous models using a 5-mer context, but only slightly so. This is interesting given that more distant effects are well motivated biologically, both in terms of the consensus model of SHM involving DNA damage, stripping, and repair (Pilzecker and Jacobs, 2019), as well as more recent results showing that the mesoscale environment of the BCR is important for SHM (Wang et al., 2023). Although another model formulation may be able to pick up these features, the present approach should be able to pick up features such as a nearby AID hotspot.
 
-We found that adding a per-site rate to our models did not help predict on out-of-sample data. This is in contrast to recent work of Spisak et al., 2020 suggesting that a per-site rate was helpful to predict SHM. We suspect that this contrast may be because of the means of evaluating this model. The Spisak et al., 2020 paper quantifies an improved model fit over a 5-mer model by calculating a Pearson r2\begin{document}$r^{2}$\end{document} for each region comparing the model prediction to the aggregated mutation count per site for sites in that region. The Spisak et al., 2020 model is itself parameterized in a per-site way, and so it is not surprising that the model has excellent fit according to this metric (Figure 4J of Spisak et al., 2020). Although they did a data-splitting exercise, this data split was on the level of parent–child pairs (not specified in the original paper; clarified via personal communication), which means that many of the parent sequences in the training set were very similar to parent sequences (Spisak et al., 2020) and actually not to a separately trained 5-mer model, but to the 5-mer component γw\begin{document}$\gamma_{w}$\end{document} of the joint model (typo in the original paper; clarified via personal communication).
+We found that adding a per-site rate to our models did not help predict on out-of-sample data. This is in contrast to recent work of Spisak et al., 2020 suggesting that a per-site rate was helpful to predict SHM. We suspect that this contrast may be because of the means of evaluating this model. The Spisak et al., 2020 paper quantifies an improved model fit over a 5-mer model by calculating a Pearson $r^{2}$ for each region comparing the model prediction to the aggregated mutation count per site for sites in that region. The Spisak et al., 2020 model is itself parameterized in a per-site way, and so it is not surprising that the model has excellent fit according to this metric (Figure 4J of Spisak et al., 2020). Although they did a data-splitting exercise, this data split was on the level of parent–child pairs (not specified in the original paper; clarified via personal communication), which means that many of the parent sequences in the training set were very similar to parent sequences (Spisak et al., 2020) and actually not to a separately trained 5-mer model, but to the 5-mer component $\gamma_{w}$ of the joint model (typo in the original paper; clarified via personal communication).
 
 We tried other means of adding per-site rates to the model, such as positional encoding and a transformer component, but these did not help. Although it is quite possible that sites evolve differently according to their absolute position in the sequence, our work shows that this is not necessary as part of a predictive model. Due to commonalities between neighborhoods of sites in sequences, it is difficult or perhaps impossible to disentangle the effect of a per-site rate from the effect of the motif model given a sufficiently rich motif model.
 
@@ -109,7 +297,7 @@ Overall, we have presented and tested a variety of new models with test–train 
 
 ## Materials and methods
 
-## Data sets and data processing
+### Data sets and data processing
 
 Our primary data set is the one introduced by Spisak et al., 2020 in their recent work on modeling SHM. The data consists of human, out-of-frame IgH sequences sampled from several individuals (Briney et al., 2019), aligned using pRESTO (Vander Heiden et al., 2014). The resulting data comes to us as a collection of trees, one for each clonal family with at least six observed sequences in an individual, complete with (ancestral and observed) sequences and branch lengths, as well as a collection of metadata annotating, among other things, the identity and position of the V gene in the sequence. Starting from the clonal family clustering and multiple sequence alignments from Spisak et al., 2020, we remove sequences containing gaps to avoid ambiguity of site positions due to insertions or deletions. Resulting clonal families with less than six observed sequences are discarded. Phylogenetic inference in each clonal family is then redone with IQ-TREE (Minh et al., 2020). We apply the K80 (Kimura, 1980) substitution model and use the germline sequence as an outgroup, following the method of Spisak et al., 2020, and additionally allow for mutation rate heterogeneity among sites with a four-category FreeRate model Soubrier et al., 2012; Yang, 1995. The edges of the inferred phylogenetic trees are taken as parent–child pairs, except for the edge containing the naive sequence outgroup.
 
@@ -121,7 +309,68 @@ The jaffe data set (Jaffe et al., 2022) consists of paired heavy chain and light
 
 The data sets used in this article are summarized in Table 3.
 
-## Models
+**Table 3.**
+ Data used in this article.briney data is from Briney et al., 2019 after processing done by Spisak et al., 2020. tang data is from Vergani et al., 2017; Tang et al., 2020 and was sequenced using the methods of Vergani et al., 2017. Out-of-frame sequences from briney and tang are used. For productive sequences from tang, only fourfold synonymous sites are used. jaffe data is from Jaffe et al., 2022 sequenced using 10X, where only fourfold synonymous sites of productive sequences are used. The ‘read/cell’ column is the sequencing depth listed as average number of reads per cell. ‘Samples’ is the number of individual samples in the data set; in these data sets, each sample is from a distinct individual. ‘CFs’ is the number of clonal families in the data set. ‘PCPs’ is the number of parent–child pairs in the data set. ‘Median mutations’ is the median number of mutations per PCP in the data set.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Sequencing methods</th>
+      <th>Read/cell</th>
+      <th>Samples</th>
+      <th>CFs</th>
+      <th>PCPs</th>
+      <th>Median mutations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>briney</td>
+      <td>Out-of-frame</td>
+      <td>Bulk</td>
+      <td>∼1</td>
+      <td>9</td>
+      <td>3903</td>
+      <td>52,915</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>tang</td>
+      <td>Out-of-frame</td>
+      <td>Single cell</td>
+      <td>∼40</td>
+      <td>21</td>
+      <td>3209</td>
+      <td>9984</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>tang</td>
+      <td>Productive</td>
+      <td>Single cell</td>
+      <td>∼40</td>
+      <td>21</td>
+      <td>157,863</td>
+      <td>820,837</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>jaffe</td>
+      <td>Productive</td>
+      <td>Single cell</td>
+      <td>∼5000</td>
+      <td>4</td>
+      <td>67,304</td>
+      <td>282,732</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Models
 
 In all the models we propose, we model SHM using a two-part model. First, we assume that the occurrence of point mutations follows a per-site exponential waiting time that is dependent entirely on the parent sequence. Furthermore, we assume that all mutations occur simultaneously, so that we can ignore how the order of point mutations along a branch affects likelihood computations. The other output of the model is the prediction of base identity. We interpret the normalized version of these rates as conditional probabilities given that the mutation has occurred.
 
@@ -129,39 +378,43 @@ For the ‘thrifty’ models, we have an embedding of each 3-mer along the seque
 
 All models are implemented in PyTorch (Paszke, 2019) and can be found in the GitHub repository associated with this article.
 
-## Model training
+### Model training
 
 Our loss functions are the likelihood of child mutation locations using offset, as well as a categorical cross-entropy loss for the base identity. We sum these log losses together using a weight of 0.01 on the cross-entropy loss to approximately even out the contributions of these two sources of loss.
 
 Models were trained for 100 epochs, with the Poisson offset simply being the normalized count of mutations in the child sequence. We also tried a more sophisticated approach of joint optimization of branch length and model parameters.
 
-## Model evaluation
+### Model evaluation
 
-## AUROC
+#### AUROC
 
-The receiver operating characteristic (ROC) curve is a method of visualizing the tradeoff between true-positive rate (TPR=TPTP+FN\begin{document}${\rm TPR}=\frac{\text{TP}}{\text{TP}+\text{FN}}$\end{document}) and false-positive rate (FPR=FPTN+FP\begin{document}${\rm FPR}=\frac{{FP}}{{TN}+{FP}}$\end{document}) as we vary the cutoff value we use for separating positive and negative predictions. Notice that the denominators in each statistic depend only on the true labels, so the tradeoff parallels the one between true positives and false positives. Given a random classifier, the TPR is expected to be equal to FPR, meaning that the ROC would be a diagonal line from (0, 0) to (1, 1).
+The receiver operating characteristic (ROC) curve is a method of visualizing the tradeoff between true-positive rate ($TPR=\frac{TP}{TP+FN}$) and false-positive rate ($FPR=\frac{FP}{TN+FP}$) as we vary the cutoff value we use for separating positive and negative predictions. Notice that the denominators in each statistic depend only on the true labels, so the tradeoff parallels the one between true positives and false positives. Given a random classifier, the TPR is expected to be equal to FPR, meaning that the ROC would be a diagonal line from (0, 0) to (1, 1).
 
 In order to reduce the ROC curve to a single quantity for performance assessment, one can compute the AUROC, which, when compared to 0.5, gives a sense of how well the classifier is doing when compared with a random classifier. Hanley and McNeil, 1982 show that AUROC is equivalent to the probability that the classifier correctly ranks a randomly chosen pair of points, one from the negative and one from the positive class.
 
-## AUPRC
+#### AUPRC
 
-Class imbalance, where we have many more negative examples than positive examples, can muddle performance evaluation of a classifier. Specifically, a large number of correctly identified negative examples can obscure the relatively poor performance of a classifier on a class that is under-represented in the data. Another approach is to instead consider precision and recall (Saito and Rehmsmeier, 2015). Analogous to the ROC curve, the principle here is to track the precision (TPTP+FP\begin{document}$\frac{{TP}}{{TP}+{FP}}$\end{document}) and recall (TPTP+FN\begin{document}$\frac{{TP}}{{TP}+{FN}}$\end{document}) as we vary the cutoff parameter and plot the resulting points. Similar to before, we can distill the information of this curve down to a single number in the unit interval by computing the AUPRC. The precision of a classifier that uniformly assigns sites to the positive and negative classes will beρ=# mutated sites# sites\begin{document}$$\displaystyle \rho = \frac{\# \text{ mutated sites}}{\# \text{ sites}}$$\end{document}
+Class imbalance, where we have many more negative examples than positive examples, can muddle performance evaluation of a classifier. Specifically, a large number of correctly identified negative examples can obscure the relatively poor performance of a classifier on a class that is under-represented in the data. Another approach is to instead consider precision and recall (Saito and Rehmsmeier, 2015). Analogous to the ROC curve, the principle here is to track the precision ($\frac{TP}{TP+FP}$) and recall ($\frac{TP}{TP+FN}$) as we vary the cutoff parameter and plot the resulting points. Similar to before, we can distill the information of this curve down to a single number in the unit interval by computing the AUPRC. The precision of a classifier that uniformly assigns sites to the positive and negative classes will be
 
-in expectation. Thus, if we exclude pathologically bad classifiers, ρ\begin{document}$\rho$\end{document} forms a baseline minimum value of the AUPRC. In contrast with the AUROC, neither precision nor recall is affected by the addition or removal of true negative (i.e., non-mutated sites that were predicted not to mutate) examples, and in fact the relationship is driven by the tradeoff between false positives and false negatives.
+$$
+ρ=\frac{# mutated sites}{# sites}
+$$
 
-## R-precision
+in expectation. Thus, if we exclude pathologically bad classifiers, $ρ$ forms a baseline minimum value of the AUPRC. In contrast with the AUROC, neither precision nor recall is affected by the addition or removal of true negative (i.e., non-mutated sites that were predicted not to mutate) examples, and in fact the relationship is driven by the tradeoff between false positives and false negatives.
 
-In order to characterize the ability of our classifiers to correctly identify sites that will mutate, we consider another metric: R-precision. This is the easiest to explain by first introducing top-k\begin{document}$k$\end{document} precision, in which we take the k\begin{document}$k$\end{document} ‘hottest’ (i.e., predicted to mutate with the highest probability) sites according to our classifier and compute the precision on those sites. We can refine top-k\begin{document}$k$\end{document} precision above to R\begin{document}$R$\end{document}-precision, which is the top-k\begin{document}$k$\end{document} precision when k\begin{document}$k$\end{document} is set equal to the expected or observed number of mutations. This value can be interpreted in the following way: an R\begin{document}$R$\end{document}-precision of 0.1 means that if the classifier is told to predict the correct sites to mutate given their count, 10% of them will have actually mutated. As with AUPRC, a random classifier will have an R\begin{document}$R$\end{document}-precision of ρ\begin{document}$\rho$\end{document}.
+#### R-precision
 
-## Substitution accuracy
+In order to characterize the ability of our classifiers to correctly identify sites that will mutate, we consider another metric: R-precision. This is the easiest to explain by first introducing top-$k$ precision, in which we take the $k$ ‘hottest’ (i.e., predicted to mutate with the highest probability) sites according to our classifier and compute the precision on those sites. We can refine top-$k$ precision above to $R$-precision, which is the top-$k$ precision when $k$ is set equal to the expected or observed number of mutations. This value can be interpreted in the following way: an $R$-precision of 0.1 means that if the classifier is told to predict the correct sites to mutate given their count, 10% of them will have actually mutated. As with AUPRC, a random classifier will have an $R$-precision of $ρ$.
+
+#### Substitution accuracy
 
 As described above, when evaluating performance at predicting per-base substitution probabilities (given a mutation occurred), we report accuracy: how frequently is the predicted-most-likely base the one to which a site mutates?
 
-## Software
+### Software
 
 Our work is released in an open-source Python package https://github.com/matsengrp/netam (Matsen and Dumm, 2025), with a simple API that makes it easy to train and evaluate models. We release trained models and their weights. Our analysis for this article is reproducible via https://github.com/matsengrp/thrifty-experiments-1(copy archived at Sung, 2025), which includes notebooks that reproduce the figures and tables in this article. We used the following software: PyTorch (Paszke, 2019), pandas (McKinney, 2010), matplotlib (Hunter, 2007), seaborn (Waskom, 2021), snakemake (Mölder, 2021), pytest (Krekel et al., 2004), and biopython (Cock et al., 2009).
 
-## Attempts to find additional full-length, out-of-frame sequences
+### Attempts to find additional full-length, out-of-frame sequences
 
 While the primary data set used here and originally by Spisak et al., 2020 provides a large number of out-of-frame human IgH sequences, the sequencing methods used resulted in minimal coverage at the start of the V gene and thus limited information for that region (Briney et al., 2019). Alternatively, the Tang data set provides relatively high coverage along the full IgH sequence, but is limited in the amount of unique sequences sampled. We sought to supplement this data with additional full-length, out-of-frame human IgH sequences. Full-length IgH data is generally limited by design in common sequencing approaches. Even productive IgH data show low coverage at the start of the V gene, as evidenced by over 40% of the sequences in the Observed Antibody Space (OAS) database lacking sequence data for the first 15 amino acids (Olsen et al., 2022b; Kovaltsuk et al., 2018; Olsen et al., 2022a). We focus our efforts on data sets from recent studies focused on full-length antibody sequencing (Ford et al., 2023; Soto et al., 2019; Rodriguez et al., 2023). For all data sets, we implemented the partis-IQ-TREE pipeline as previously described on pre-processed data and extracted parent–child pairs for all clonal families of size 2+. Overall, out-of-frame sequences make up a relatively small proportion of sequence data (with this proportion varying by study/sequencing protocols), and none of the data sets considered had enough depth to extract a meaningful amount of out-of-frame sequence data for our purposes. The details of these efforts are described below.
 

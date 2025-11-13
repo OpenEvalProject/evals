@@ -34,7 +34,7 @@ In the present work, we selectively traced regenerating proprio-/mechanoreceptiv
 
 ## Results
 
-## Intraganglionic AAV2-GFP selectively labels proprioceptive and mechanoreceptive axons
+### Intraganglionic AAV2-GFP selectively labels proprioceptive and mechanoreceptive axons
 
 Conventional assessment of DR regeneration has relied heavily on immunolabeling of tissue sections and consequently was subject to labeling artifacts and limited sensitivity. We initiated the present study by identifying a viral tracer that intensely and reliably labels regenerating DR axons. We tested various recombinant viral vectors carrying fluorescent reporters by microinjecting them into cervical DRGs of uninjured adult mice. Of those we examined at 2 weeks post-injection, AAV2-GFP (self-complementary adeno-associated virus serotype 2-enhanced green fluorescent protein) almost exclusively transduced neurons, revealing brightly labeled cell bodies and axons (Figure 1A). After optimizing the virus titer, dosage, and microinjection technique, we were able to infect >70% neurons in most injections of DRGs (Figure 1B). Infected neurons included the three broadly classified subtypes of DRG neurons: large, neurofilament (NF)+ neurons, small- and medium-sized IB4+ non-peptidergic neurons and small CGRP+ peptidergic neurons (Figure 1C). Notably, a majority of the transduced, GFP-expressing neurons were NF+ (Figure 1D). In contrast, IB4+ neurons rarely were GFP+ and ~30% of GFP+ neurons were CGRP+ (Figure 1D), indicating that NF+ neurons were disproportionately transduced by AAV2-GFP. Consistent with the preferential infection of NF+ neurons, brightly labeled, large-diameter axons projected into the deeper layers of the dorsal horn (layer III–V) and into ventral horn, where large, myelinated axons terminate (Figure 1E). In contrast, superficial laminae of the dorsal horn, where small-diameter unmyelinated axons terminate (layer I, II), lacked GFP fluorescence (Figure 1E’, E”), showing that AAV-GFP labels few if any IB4+ and CGRP+ axons. These findings are the first demonstration that AAV2-GFP predominantly transduces NF+ neurons and selectively reveals their proprio-/mechanoreceptive axons within the spinal cord.
 
@@ -44,7 +44,7 @@ Conventional assessment of DR regeneration has relied heavily on immunolabeling 
 
 NF+ neurons extend large-diameter myelinated axons that relay proprioception or mechanoreception via second-order neurons located deep in the spinal cord and in distant DC nuclei in the medulla (Niu et al., 2013). In contrast, IB4+ and CGRP+ neurons relay nociception through small-diameter unmyelinated axons that innervate secondary neurons in the superficial dorsal horn. Therefore, proprio-/mechanoreceptive axons require far more robust long-distance regeneration than nociceptive axons for functional recovery. Moreover, myelinated proprio-/mechanoreceptive axons regenerate more poorly than nonmyelinated nociceptive axons (Tessler et al., 1988; Guseva and Chelyshev, 2006; Han et al., 2017). Therefore, AAV2-GFP provides a unique opportunity to study selective regeneration of proprio-/mechanoreceptive axons whose regenerative capacity is particularly weak and needs robust augmentation.
 
-## Strategies for complete lesions and comprehensive evaluation of DR regeneration
+### Strategies for complete lesions and comprehensive evaluation of DR regeneration
 
 Regeneration studies in animals suffer from conflicting and non-reproducible results, in part due to incomplete lesions which lead to mistakenly interpreting spared axons as regenerating axons (Steward et al., 2003; Steward et al., 2012). Completely crushing a DR is particularly demanding because DRs are tightly attached to spinal cord surfaces in flat, transparent layers (Han et al., 2012; Son, 2015). Various surgical methods have been applied to facilitate complete lesions, such as repetitive and bidirectional crushing of a root (Romero et al., 2001; Steinmetz et al., 2005; Wu et al., 2016). However, there have been no assays that would confirm that a nerve crush surgery was successful.
 
@@ -52,33 +52,45 @@ We used two strategies to avoid spared axons. In one, we first crushed DRs and t
 
 The wholemounts also enabled us to examine an unprecedented number of regenerating proprio-/mechanoreceptive axons from multiple injured roots. After a complete root crush in a wildtype (WT) mouse, hundreds of GFP+ axons all terminated at similar locations along the length of the dorsolateral spinal cord (Figure 2B, Figure 2—figure supplement 1). These GFP+ axons crossed the astrocyte:PNS border marked by GFAP (dotted lines) and terminated mostly within ~200 μm of the border, forming a narrow front of axon tips (Figure 2D). Following wholemount assessment, we prepared serial transverse sections and evaluated regeneration of DR axons, across the DREZ and within the spinal cord. In WT mice, axons frequently grew dorsally along the growth-permissive pia matter (Figure 2E, arrowheads). We occasionally observed axons located subdurally several hundred microns past the astrocyte:PNS border (Figure 2E, arrow). Most axons, however, were located within ~100 μm of the border and only a few axons reached ~200 μm (Figure 2F). In the present comparative analyses, we considered axons that grew farther than 100 μm from the border as having penetrated the DREZ (Figure 2F). When astrocytes could not be co-immunostained, the astrocyte:PNS border was identified by DAPI staining of cell nuclei that accumulate much more densely in the PNS than CNS. The borders delineated by GFAP and DAPI overlap closely with each other (Figure 2E). DAPI also delineate boundaries closely overlapped with those identified by laminin (Figure 2—figure supplement 2; see also Figure 6—figure supplement 1), another marker of the CNS:PNS border (Ramer et al., 2004; Hoeber et al., 2017), validating further our use of DAPI as an alternative boundary marker.
 
-## Genetic deletion of Nogo, MAG, and OMgp elicits little regeneration across the DREZ
+### Genetic deletion of Nogo, MAG, and OMgp elicits little regeneration across the DREZ
 
 We first investigated the effects of simultaneous genetic deletion of myelin-associated inhibitors by examining global tKO mice lacking Nogo/Reticulon-4 isoforms (A, B, C), MAG, and OMgp. These mice were initially raised on a mixed background, extensively characterized, and used to study spinal cord regeneration (Lee et al., 2010). Our examination of these non-congenic tKO mutants revealed no enhanced regeneration of DR axons across the DREZ (data not shown). To overcome possible complications due to genetic background (Montagutelli, 2000; Tedeschi et al., 2017), we subsequently obtained Rtn4/Omg double KO and Mag KO mice raised on a C57BL/6 background and bred them to generate congenic Rtn4/Mag/Omg tKO mice (Figure 3A). Congenic tKO mice were viable and fertile, with no gross abnormalities. They were intercrossed to generate additional 2–3-month-old tKO mice; age-matched C57BL/6 mice were used as controls.
 
 To examine DR regeneration, we unilaterally crushed L4 and L5 DRs ~3–5 mm from the DREZ and then microinjected high-titer AAV2-GFP into the ipsilateral L4 and L5 DRGs (Figure 3B). In this crush injury model, proximal axons of large, NF+ neurons are capable of regenerating across the injury site and growing along the root at ~1.5 mm/day until they are rapidly immobilized at the DREZ, ~4 days post injury (Di Maio et al., 2011). We examined WT and tKO at 2 wpi, which provides axons sufficient time to penetrate the DREZ if they are competent to do so. Wholemount examination of Rtn4/Mag/Omg tKO mice revealed many brightly labeled axons that extended along the L4 and L5 roots (Figure 3D), as they did also in WT mice (Figure 2B, Figure 3C). In both tKO and WT mice, however, most GFP+ axons terminated at similar longitudinal locations near the astrocyte:PNS border. Some axons extended substantially longer processes dorsally toward the spinal cord midline (Figure 3D, arrows). However, similar axons were also frequent in WT (Figure 3C, arrows), and their incidence and length were not noticeably different in tKO and WT mice. We next examined serial transverse sections of L4 and L5 spinal cords prepared from tKO mice. No sections revealed GFP+ axons that crossed the DREZ and grew deep into the spinal cord. Most axons stopped at the DREZ, within ~100 μm of the astrocyte:PNS border, as in WT (Figure 3E–G). Axons that extended longer distances grew along the growth-permissive pia matter (Figure 3F, arrowheads), as in WT (Figure 2E, Figure 3E) Thus, in contrast to the earlier studies that reported robust regeneration of DR axons after pharmacological targeting of myelin signaling, genetic elimination of three major myelin inhibitors did not enable GFP+ axons to cross the DREZ. These results suggest that inhibiting myelin inhibitors alone is not sufficient to induce regeneration of proprio-/mechanoreceptive axons across the DREZ.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/63050/elife-63050-fig2-v2.jpg)
+
+**Figure 2.:** DR regeneration in wildtype (WT) mice assessed in wholemounts (A–D) and transverse sections (E, F) 2 weeks after L4 and L5 DR crush. (A) Schematic illustration of crushing roots prior to intraganglionic AAV2-GFP injections to avoid labeling of degenerating distal stump axons. (B) Wholemount view of completely crushed L4 and L5 DRs illustrating hundreds of GFP+ axons terminated at the entrance of spinal cord. (B’, B”) Enlarged views illustrating most axons terminated near the border. (C–C”) Wholemount views of incompletely crushed DRs showing spared axons with long intraspinal projections. Spared axons are easily detectable in wholemounts and commonly observed in the outermost dorsal rootlets (arrows). (D) Wholemount view of L4 dorsal root entry zone (DREZ) illustrating GFP+ axons that crossed the astrocyte: PNS border (dotted line) and terminated nearby. The astrocytic border is identified by GFAP immunostaining of astrocytes (red). Yellow line denotes spinal cord midline recognized by the midline vein. (E) Four-color immunolabeling of transverse sections illustrating limited penetration of GFP+ or CGRP+ axons through the DREZ. White dotted lines approximate the peripheral boundary of the DREZ (astrocyte: PNS border) by locating peripherally projecting astrocytic processes (red) or by greater abundance of cell nuclei in the PNS (blue). Axons rarely extended >200 μm beyond the border. Arrowheads denote frequently observed axons that grew along the growth-permissive dura. Arrow denotes occasionally observed subdural axons located several hundred microns past the border. (F) Quantitative analysis of DR regeneration on transverse sections (13 sections, three mice). ~90% GFP+ axons terminated within ~100 μm of the border. Axons growing farther than 100 μm are considered as having penetrated the DREZ. DH: dorsal horn; S.C.: spinal cord. Scale bars = 200 μm (B–B”, C–C”, D, E).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63050/elife-63050-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Representative wholemount and transverse sections of wildtype (WT) and Rtn4/Mag/Omg triple knockout (tKO) groups with or without additional removal of chondroitin sulfate proteoglycans (CSPGs) and/or nerve conditioning lesion. Arrows in wholemounts of tKO + glial cell line-derived neurotrophic factor (GDNF) and tKO + GDNF + chondroitinase ABC (ChABC) groups denote intensely fluorescent areas due to abundant subdural GFP+ axons. wpi, weeks post injury; CL: conditioning lesion; dCL: double conditioning lesion. Scale bars = 200 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63050/elife-63050-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Two sets of wildtype (WT) transverse sections at 2 weeks post injury (wpi) (A–A”’, B–B”’), co-labeled for laminin (A, B), DAPI (A’, B’), and GFAP (A”’, B”’), illustrating that DAPI reveals the astrocyte:PNS border because cell nuclei are much more densely accumulated in the PNS than CNS. The astrocyte:PNS border (dotted line) delineated by laminin, DAPI, and GFAP overlaps closely. Arrowheads in (B) denote radicular arteries also labeled for laminin, which can obscure precise delineation of the boundary. Arrows in (B”) denote astrocytic processes that invaded the PNS after root injury but are readily distinguished from parental astrocytes in CNS territory. Small and large asterisks indicate enlarged views of (B–B”’). Scale bars = 200 μm.
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/63050/elife-63050-fig3-v2.jpg)
 
-**Figure 3.:** Dorsal root (DR) regeneration in Rtn4/Mag/Omg triple knockout (tKO) mice assessed in wholemounts (D) or transverse sections (F) 2 weeks after L4 and L5 DR crush. (A) Identification of triple null mutants (red) lacking Nogo (A, B, C), MAG, and OMgp. (B) Schematic illustration of the experimental procedures. (C) Wholemount view of a wildtype (WT) mouse. (C’, C”) Enlarged views of L4 and L5 dorsal root entry zone (DREZ) in (C). Arrows denote axons extending longer processes past the DREZ. (D) Wholemount views of a tKO mouse illustrating termination of hundreds of GFP+ axons near the astrocyte:PNS border (dotted line), as in WT mice. The astrocyte:PNS border is identified by GFAP immunostaining of astrocytes (red). (D’, D”) Enlarged views of L4 and L5 DREZ in (D). Arrows denote axons extending longer processes past the DREZ, which were also frequently observed in WT mice. (E) Representative transverse sections of WT mice. (F) Representative transverse sections of Rtn4/Mag/Omg tKO mice illustrating little if any enhanced regeneration of GFP+ axons across the DREZ. Arrows denote axons that grew dorsally along the pia matter, as also observed in WT mice. (G) Quantitative comparisons illustrating no significant difference in WT and Rtn4/Mag/Omg tKO mice. 100 μm, p=0.9738, df = 162; 200 μm, p=0.5046, df = 162; 300 μm, p=0.1454, df = 162. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (WT: 13 sections, three mice; tKO: 16 sections, five mice). S.C.: spinal cord; ns: not significant. Scale bars = 200 μm (C–C”, D–D”, E, F).Figure 3—source data 1.This Excel file contains raw data used for quantitative analysis shown in Figure 3G.
+**Figure 3.:** Dorsal root (DR) regeneration in Rtn4/Mag/Omg triple knockout (tKO) mice assessed in wholemounts (D) or transverse sections (F) 2 weeks after L4 and L5 DR crush. (A) Identification of triple null mutants (red) lacking Nogo (A, B, C), MAG, and OMgp. (B) Schematic illustration of the experimental procedures. (C) Wholemount view of a wildtype (WT) mouse. (C’, C”) Enlarged views of L4 and L5 dorsal root entry zone (DREZ) in (C). Arrows denote axons extending longer processes past the DREZ. (D) Wholemount views of a tKO mouse illustrating termination of hundreds of GFP+ axons near the astrocyte:PNS border (dotted line), as in WT mice. The astrocyte:PNS border is identified by GFAP immunostaining of astrocytes (red). (D’, D”) Enlarged views of L4 and L5 DREZ in (D). Arrows denote axons extending longer processes past the DREZ, which were also frequently observed in WT mice. (E) Representative transverse sections of WT mice. (F) Representative transverse sections of Rtn4/Mag/Omg tKO mice illustrating little if any enhanced regeneration of GFP+ axons across the DREZ. Arrows denote axons that grew dorsally along the pia matter, as also observed in WT mice. (G) Quantitative comparisons illustrating no significant difference in WT and Rtn4/Mag/Omg tKO mice. 100 μm, p=0.9738, df = 162; 200 μm, p=0.5046, df = 162; 300 μm, p=0.1454, df = 162. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (WT: 13 sections, three mice; tKO: 16 sections, five mice). S.C.: spinal cord; ns: not significant. Scale bars = 200 μm (C–C”, D–D”, E, F).
 
-## Supplementary CSPG removal slightly increases regeneration across the DREZ in tKO mice
+### Supplementary CSPG removal slightly increases regeneration across the DREZ in tKO mice
 
 The limited regeneration across the DREZ in Rtn4/Mag/Omg tKO could be due to redundant inhibition by CSPGs that by themselves might be capable of arresting axons at the DREZ. Conversely, CSPG removal might induce only minimal regeneration (Steinmetz et al., 2005; Wu et al., 2016) due to redundant and potent inhibition by other inhibitors. To test this possibility, we attenuated CSPGs in Rtn4/Mag/Omg tKO using lentivirus encoding chondroitinase ABC (LV-chABC) (Jin et al., 2011). ChABC promotes axon regrowth by digesting growth-inhibitory glycosaminoglycan (GAG) chains on CSPGs (Muir et al., 2019). We unilaterally crushed L4 and L5 DRs of tKO mice, microinjected AAV2-GFP into the L4 and L5 DRGs, and injected high-titer LV-ChABC into the ipsilateral dorsal horn at multiple locations rostrocaudally along the L4–L5 DREZ (Figure 4A). Two weeks after injury, wholemounts of ChABC-expressed tKO mice appeared similar to those of WT mice: most GFP+ axons terminated near the astrocytic border (Figure 4B, C). We used CS56 antibody immunostaining to confirm that LV-ChABC effectively removed the inhibitory sulfated GAG chains on CSPGs (Figure 4E). Consistent with previous observations (Han et al., 2017), CSPG degradation was restricted to the dorsal horn on the injected side of the spinal cord (Figure 4E, asterisks). Notably, CSPGs were rapidly and markedly upregulated in Schwann cells after DR crush, resulting in far brighter CS-56 immunoreactivity in the PNS than in the CNS (data not shown). We observed considerable CS-56 immunoreactivity associated with Schwann cells near the DREZ in ChABC-expressed tKO mice (Figure 4E’, arrowheads). However, the intensity of immunoreactivity was markedly reduced compared to that in non-treated tKO mice, further suggesting that CSPGs at the DREZ were markedly attenuated by LV-ChABC.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63050/elife-63050-fig4-v2.jpg)
 
-**Figure 4.:** Dorsal root (DR) regeneration in chondroitinase ABC (ChABC)-expressed Rtn4/Mag/Omg tKO mice assessed in wholemounts (C) and transverse sections (E–E’) 2 weeks after L4 and L5 DR crush. (A) Schematic illustration of the experimental procedures. LV-ChABC was injected into ipsilateral dorsal horn at multiple locations rostrocaudally along the L4–L5 DREZ. (B) Wholemount views of a wildtype (WT) mouse. (C) Wholemount views of a ChABC-expressed tKO showing hundreds of GFP+ axons in L4 and L5 roots terminated near the astrocyte:PNS border (dotted line), as in WT and tKO mice. The astrocyte:PNS border is identified by GFAP immunostaining of astrocytes (red). (D) Representative transverse sections of a WT mouse. (E) Representative transverse sections of a ChABC-expressed tKO illustrating effective degradation of CSPGs and modestly enhanced intraspinal regeneration. CS-56 immunoreactivity is very low in ipsilateral dorsal horn (asterisks), indicating effective removal of inhibitory GAG chains of CSPGs. Arrowheads denote Schwann cell-associated CS-56 immunoreactivity, which is markedly reduced but discernible in ChABC-expressed tKO. (E’) Enlarged views showing a few GFP+ axons that penetrated the DREZ and are located at the top of the dorsal horn (arrows); such axons were not observed in WT or Rtn4/Mag/Omg tKO mice. (F) Quantitative comparisons illustrating modestly improved regeneration in ChABC-expressed Rtn4/Mag/Omg tKO mice: ~15% GFP+ penetrated the dorsal root entry zone (DREZ) and remained within ~200 μm of the border. ChABC-expressed tKO vs. WT: 100 μm, **p=0.0022, df = 186; 200 μm, ***p=0.0003, df = 186; 300 μm, p=0.4818, df = 186. ChABC-expressed tKO vs. tKO: 100 μm, **p=0.0086, df = 186; 200 μm, **p=0.0099, df = 186; 300 μm, p=0.9262, df = 186. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (WT: 13 sections, three mice; tKO: 16 sections, five mice; ChABC-tKO: 14 sections, three mice). S.C.: spinal cord; ns: not significant. Scale bars = 200 μm (B, C, D, E–E’).Figure 4—source data 1.This Excel file contains raw data used for quantitative analysis shown in Figure 4F.
+**Figure 4.:** Dorsal root (DR) regeneration in chondroitinase ABC (ChABC)-expressed Rtn4/Mag/Omg tKO mice assessed in wholemounts (C) and transverse sections (E–E’) 2 weeks after L4 and L5 DR crush. (A) Schematic illustration of the experimental procedures. LV-ChABC was injected into ipsilateral dorsal horn at multiple locations rostrocaudally along the L4–L5 DREZ. (B) Wholemount views of a wildtype (WT) mouse. (C) Wholemount views of a ChABC-expressed tKO showing hundreds of GFP+ axons in L4 and L5 roots terminated near the astrocyte:PNS border (dotted line), as in WT and tKO mice. The astrocyte:PNS border is identified by GFAP immunostaining of astrocytes (red). (D) Representative transverse sections of a WT mouse. (E) Representative transverse sections of a ChABC-expressed tKO illustrating effective degradation of CSPGs and modestly enhanced intraspinal regeneration. CS-56 immunoreactivity is very low in ipsilateral dorsal horn (asterisks), indicating effective removal of inhibitory GAG chains of CSPGs. Arrowheads denote Schwann cell-associated CS-56 immunoreactivity, which is markedly reduced but discernible in ChABC-expressed tKO. (E’) Enlarged views showing a few GFP+ axons that penetrated the DREZ and are located at the top of the dorsal horn (arrows); such axons were not observed in WT or Rtn4/Mag/Omg tKO mice. (F) Quantitative comparisons illustrating modestly improved regeneration in ChABC-expressed Rtn4/Mag/Omg tKO mice: ~15% GFP+ penetrated the dorsal root entry zone (DREZ) and remained within ~200 μm of the border. ChABC-expressed tKO vs. WT: 100 μm, **p=0.0022, df = 186; 200 μm, ***p=0.0003, df = 186; 300 μm, p=0.4818, df = 186. ChABC-expressed tKO vs. tKO: 100 μm, **p=0.0086, df = 186; 200 μm, **p=0.0099, df = 186; 300 μm, p=0.9262, df = 186. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (WT: 13 sections, three mice; tKO: 16 sections, five mice; ChABC-tKO: 14 sections, three mice). S.C.: spinal cord; ns: not significant. Scale bars = 200 μm (B, C, D, E–E’).
 
 Most of the serial transverse sections of L4 and L5 DREZ also showed DR axons arrested at the DREZ and were virtually indistinguishable from those of WT mice (Figure 4D, E). Some sections exhibited a few GFP+ axons located slightly deeper in the dorsal funiculus; such axons were not observed in WT or tKO (Figure 4E’, arrows). The number of axons at the DREZ was slightly increased in tKO compared to WT, as measured at 100 μm past the astrocyte:PNS border (Figure 4F), presumably reflecting locally enhanced axon outgrowth following degradation of endoneurial CSPGs at or near the DREZ (Zuo et al., 1998; Graham and Muir, 2016). Those axons that extended across the DREZ were within 200 μm of the astrocyte:PNS border and constituted only ~10% of GFP+ axons (Figure 4F), however, suggesting that additional attenuation of CSPGs in Rtn4/Mag/Omg tKO only modestly promoted regeneration across the DREZ. Thus, these findings, based on the first simultaneous targeting of myelin inhibitors and CSPGs, indicate that the limited regeneration in the absence of myelin inhibitors is unlikely because of CSPGs that by themselves might be capable of arresting most axons at the DREZ.
 
-## Chronic regeneration failure at the DREZ despite absence of Nogo/MAG/OMgp and CSPGs
+### Chronic regeneration failure at the DREZ despite absence of Nogo/MAG/OMgp and CSPGs
 
 Concurrent ablation of myelin inhibitors and CSPGs only slightly enhanced regeneration, as assessed at 2 wpi, enabling only ~10% GFP+ axons to reach intraspinally ~100 μm past the DREZ. Additional axons may continue to penetrate the DREZ and grow within the spinal cord lacking myelin inhibitors and CSPGs. To investigate this possibility and the chronic effects of targeting myelin inhibitors and CSPGs, we next examined WT, Rtn4/Mag/Omg tKO, and ChABC-expressed tKO mice at 4 wpi (Figure 5A). Consistent with earlier studies of WT mice that demonstrated rapid and persistent immobilization of DR axons at the DREZ (Golding et al., 1996; Di Maio et al., 2011), we observed no enhanced regeneration across the DREZ at 4 wpi in WT mice, as examined in wholemounts (Figure 5B) or in transverse sections (Figure 5C). There was, however, a statistically insignificant increase in DR axons at the DREZ (Figure 5D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/63050/elife-63050-fig5-v2.jpg)
 
-**Figure 5.:** Dorsal root (DR) regeneration in wildtype (WT) (A–D), Rtn4/Mag/Omg triple knockout (tKO) (E–G), and chondroitinase ABC (ChABC)-expressed Rtn4/Mag/Omg tKO mice (H–K) analyzed 4 weeks after L4 and L5 DR crush. (A) Schematic illustration of the experimental procedures. (B) Wholemount view of L5 DREZ in a WT mouse showing no noticeably enhanced regeneration into the spinal cord. (C, C’) Transverse sections showing no improved penetration of GFP+ (green) and CGRP+ axons (magenta) through the DREZ. (D) Quantitative comparisons of WT mice at 2 weeks post injury (wpi) and 4 wpi illustrating no significant difference. 100 μm, p=0.5292, df = 102. Two-way repeated-measured ANOVA with Sidak’s multiple comparisons test (WT-2 wpi: 13 sections, three mice; WT-4 wpi: 14 sections, four mice). (E) Wholemount view of L4–L5 DREZ in a tKO showing no marked increase in intraspinal regeneration. (F, F’) Transverse sections of a tKO mouse showing GFP+ (green) and CGRP+ axons (magenta) remaining at the DREZ at 4 wpi. (G) Quantitative comparisons of tKO mice at 2 wpi and 4 wpi illustrating no significant difference. 100 μm, p=0.5067, df = 168; 200 μm, p>0.9999, df = 168; 300 μm, p>0.9999, df = 168. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (tKO-2 wpi: 16 sections, five mice; tKO-4 wpi: 14 sections, five mice). (H) Wholemount view of L4–L5 DREZ in a ChABC-expressed tKO showing no noticeably enhanced intraspinal regeneration. (I, I’) Transverse sections of a ChABC-expressed tKO showing GFP+ (green) and CGRP+ axons (magenta) remaining at the DREZ at 4 wpi. (J) Quantitative comparisons of ChABC-expressed tKO mice at 2 wpi and 4 wpi illustrating no significant increase in GFP+ axons that penetrated the DREZ. 100 μm, p=0.0027, df = 60; 200 μm, p=0.936, df = 60; 300 μm, p>0.9999, df = 60. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (ChABC-tKO-2 wpi: 14 sections, three mice; ChABC-tKO-4 wpi: 12 sections, three mice). (K) Quantitative comparisons of WT, tKO, and ChABC-expressed tKO at 4 wpi showing no significant difference in GFP+ axons crossing the DREZ. ChABC-expressed tKO vs. WT: 100 μm, ***p=0.0001, df = 144; 200 μm, p=0.668, df = 144; 300 μm, p=0.7582, df = 144. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test. Scale bars = 200 μm (B, C–C’, E–F’, H–I’).Figure 5—source data 1.This Excel file contains raw data used for quantitative analysis shown in Figure 4D, G, J, K.
+**Figure 5.:** Dorsal root (DR) regeneration in wildtype (WT) (A–D), Rtn4/Mag/Omg triple knockout (tKO) (E–G), and chondroitinase ABC (ChABC)-expressed Rtn4/Mag/Omg tKO mice (H–K) analyzed 4 weeks after L4 and L5 DR crush. (A) Schematic illustration of the experimental procedures. (B) Wholemount view of L5 DREZ in a WT mouse showing no noticeably enhanced regeneration into the spinal cord. (C, C’) Transverse sections showing no improved penetration of GFP+ (green) and CGRP+ axons (magenta) through the DREZ. (D) Quantitative comparisons of WT mice at 2 weeks post injury (wpi) and 4 wpi illustrating no significant difference. 100 μm, p=0.5292, df = 102. Two-way repeated-measured ANOVA with Sidak’s multiple comparisons test (WT-2 wpi: 13 sections, three mice; WT-4 wpi: 14 sections, four mice). (E) Wholemount view of L4–L5 DREZ in a tKO showing no marked increase in intraspinal regeneration. (F, F’) Transverse sections of a tKO mouse showing GFP+ (green) and CGRP+ axons (magenta) remaining at the DREZ at 4 wpi. (G) Quantitative comparisons of tKO mice at 2 wpi and 4 wpi illustrating no significant difference. 100 μm, p=0.5067, df = 168; 200 μm, p>0.9999, df = 168; 300 μm, p>0.9999, df = 168. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (tKO-2 wpi: 16 sections, five mice; tKO-4 wpi: 14 sections, five mice). (H) Wholemount view of L4–L5 DREZ in a ChABC-expressed tKO showing no noticeably enhanced intraspinal regeneration. (I, I’) Transverse sections of a ChABC-expressed tKO showing GFP+ (green) and CGRP+ axons (magenta) remaining at the DREZ at 4 wpi. (J) Quantitative comparisons of ChABC-expressed tKO mice at 2 wpi and 4 wpi illustrating no significant increase in GFP+ axons that penetrated the DREZ. 100 μm, p=0.0027, df = 60; 200 μm, p=0.936, df = 60; 300 μm, p>0.9999, df = 60. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (ChABC-tKO-2 wpi: 14 sections, three mice; ChABC-tKO-4 wpi: 12 sections, three mice). (K) Quantitative comparisons of WT, tKO, and ChABC-expressed tKO at 4 wpi showing no significant difference in GFP+ axons crossing the DREZ. ChABC-expressed tKO vs. WT: 100 μm, ***p=0.0001, df = 144; 200 μm, p=0.668, df = 144; 300 μm, p=0.7582, df = 144. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test. Scale bars = 200 μm (B, C–C’, E–F’, H–I’).
 
 Similarly, in Rtn4/Mag/Omg tKO at 4 wpi (Figure 5E–G), we found no qualitative or quantitative evidence that two additional weeks after injury enabled more axons to penetrate the DREZ. This finding suggests that DR axons were chronically immobilized as they entered the DREZ despite the absence of myelin inhibitors.
 
@@ -88,23 +100,31 @@ We also examined regeneration of CGRP+ nociceptive axons, which are not discerni
 
 Collectively, these studies, which represent the first evaluation of DR regeneration in the prolonged and concurrent absence of myelin inhibitors and CSPGs, demonstrate that both myelinated and unmyelinated DR axons stop at the DREZ and continue to be immobilized, even if myelin inhibitors and CSPGs are simultaneously removed. Therefore, the minimal regeneration observed in earlier studies targeting CSPGs alone was not due to redundant inhibition by myelin inhibitors. Instead, our findings suggest that neither myelin inhibitors nor CSPGs, by themselves or even together, are sufficiently potent to prevent regeneration of most DR axons across the DREZ.
 
-## DR axons fail to penetrate the DREZ in Rtn4/Mag/Omg tKO even after a nerve conditioning lesion
+### DR axons fail to penetrate the DREZ in Rtn4/Mag/Omg tKO even after a nerve conditioning lesion
 
 Although genetic deletion of myelin inhibitors alone does not permit DR axons to grow through the DREZ, it may enable conditioned axons with enhanced growth capacity to do so. To test this possibility, we performed a single nerve crush conditioning lesion that alone fails to enhance regeneration across the DREZ (Chong et al., 1999; Zhang et al., 2007; Di Maio et al., 2011) by crushing the sciatic nerve 10 days before crushing the L4 and L5 roots (Figure 6A). At 2 wpi, wholemounts of GFP+ axons in conditioned Rtn4/Mag/Omg tKO mice did not show noticeably enhanced penetration of the DREZ (Figure 6C). Accordingly, serial transverse sections occasionally exhibited a few axons that reached dorsolateral gray matter (Figure 6E, arrow), but most GFP+ axons failed to penetrate the DREZ (Figure 6E, F). Dorsal funiculus lacked CGRP immunoreactivity, suggesting that conditioning lesioned CGRP+ axons also failed to penetrate the DREZ. Compared to WT and tKO mice (Figure 6F, see also Figure 2—figure supplement 1), conditioned tKO mice exhibited significantly more axons at the DREZ, presumably reflecting enhanced regeneration in the peripheral portion of the DR (Di Maio et al., 2011). We rarely observed axons extended more than >200 μm from the astrocyte:PNS border in conditioned tKO mice, as in WT and non-conditioned tKO mice (Figure 6F). Therefore, removal of myelin inhibitors does not enable nerve crush conditioned axons to regenerate beyond the DREZ.
 
-## Double conditioning lesion modestly enhances regeneration of DR axons across the DREZ in WT mice
+![Figure 6.](https://cdn.elifesciences.org/articles/63050/elife-63050-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic illustration of the experimental procedures. Rtn4/Mag/Omg tKO mice received a nerve conditioning lesion 10 days before L4 and L5 dorsal root (DR) crush and were assessed at 2 weeks post injury (wpi). (B) Wholemount view of a wildtype (WT) mouse. (C) Wholemount view of a conditioned tKO showing hundreds of GFP+ axons terminated near the astrocyte:PNS border (dotted line), as in WT and tKO mice. (D) Transverse sections of a WT mouse. (E, E’) Transverse sections of a conditioned tKO illustrating little if any enhanced regeneration of GFP+ (green) or CGRP+ axons (magenta) across the DREZ. An arrow denotes occasionally observed GFP+ axons that reached dorsolateral gray matter. (F) Quantitative comparisons illustrating no significant difference in WT, tKO, and conditioned tKO mice. tKO vs. conditioned tKO: 100 μm, ****p<0.0001, df = 220; 200 μm, p=0.9991, df = 220; 300 μm, p>0.9999, df = 220. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (WT: 13 sections, three mice; tKO: 16 sections, five mice; conditioned-tKO: 11 sections, three mice). ns: not significant. Scale bars = 200 μm (B, C, D, E, E’).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63050/elife-63050-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic illustration of the experimental procedures. WT mice received two conditioning lesions (WT + dCL [double conditioning lesion]); the ipsilateral sciatic nerve was transected 3 days before and 7 days after L4 and L5 dorsal root (DR) crush. Mice were assessed at 2 weeks post injury (wpi). Wholemount and transverse section views of double lesioned WT mice (D, G, H) are presented side-by-side with those of WT (B, E), single lesioned triple knockout (tKO) (C, F), and glial cell line-derived neurotrophic factor (GDNF)-expressed WT mice (I). (B) Wholemount view of a WT that received no conditioning lesion. (C) Wholemount view of a Rtn4/Mag/Omg tKO mouse that received a single nerve crush conditioning lesion. (D) Wholemount view of a WT mouse that received two conditioning lesions showing hundreds of GFP+ axons terminated near the astrocyte:PNS border (dotted line), as in WT and single lesioned tKO mice. (E) Transverse sections of a WT that received no conditioning lesion. (F) Transverse sections of a Rtn4/Mag/Omg tKO mouse that received a single conditioning lesion. (G, H) Transverse sections of a WT mouse that received two conditioning lesions. Arrows indicate occasional GFP+ axons that enter dorsal gray matter. (I) Transverse sections of a GDNF-expressed WT showing numerous GFP+ axons that enter gray matter. See also Figure 8. (J) Quantitative comparisons illustrating modest regeneration of double conditioned DR axons through the DREZ: ~10% GFP+ axons extended ~100 μm past the DREZ. 100 μm, ****p<0.0001, df = 426 (WT vs. WT + dCL, WT + dCL vs. WT + GDNF), p=0.8369, df = 426 (WT + dCL vs. tKO + CL); 200 μm, *p=0.0239, df = 426 (WT vs. WT + dCL), ****p<0.0001, df = 426, p=0.2695, df = 426 (WT + dCL vs. tKO + CL); 300 μm, p=0.6437; df = 426 (WT vs. WT + dCL), ****p<0.0001, df = 426 (WT + dCL vs. WT + GDNF); p=0.7119, df = 426 (WT + dCL vs. tKO + CL); 400 μm, **p=0.0030, df = 426 (WT + dCL vs. WT + GDNF). Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (WT: 13 sections, three mice; tKO+CL: 11 sections, three mice; WT + dCL: 37 sections, four mice; WT + GDNF: 15 sections, three mice). Scale bars = 200 μm (B–I).
+
+### Double conditioning lesion modestly enhances regeneration of DR axons across the DREZ in WT mice
 
 A single nerve crush does not provide maximal mechanical conditioning of DRG neurons. Neumann et al., 2005 observed that double conditioning lesions dramatically enhance regeneration of DC axons after spinal cord injury, presumably because the second nerve injury at 1 wpi sustains the enhanced growth capacity of DRG neurons. Because the effects of double conditioning lesions on DR regeneration have not been studied, we investigated whether regeneration across the DREZ is enhanced. Following the double conditioning paradigm of Neumann et al., we transected the ipsilateral sciatic nerve 3 days before and 7 days after L4 and L5 DR crush in WT mice (Figure 6—figure supplement 1A). At 2 wpi, wholemounts of GFP+ axons in double lesioned WT mice did not show enhanced penetration of the DREZ (Figure 6—figure supplement 1D) compared to WT or tKO mice conditioned by a single nerve crush (Figure 6—figure supplement 1B, C). Notably, however, serial transverse sections frequently exhibited axons that entered dorsolateral gray matter (Figure 6—figure supplement 1G, H, arrows). Nonetheless, most GFP+ axons (>90%) failed to penetrate the DREZ and only a few reached 200 μm beyond the DREZ (Figure 6—figure supplement 1J). Quantitative comparisons indicate that the double conditioning lesion enhanced regeneration in WT mice to a level comparable to or slightly greater than a single crush conditioning lesion in Rtn4/Mag/Omg tKO mice (Figure 6—figure supplement 1J). However, it was far less efficacious than intraspinally expressed GDNF, which enabled many more GFP+ axons (>40%) to cross the DREZ and extend deeper in the spinal cord (Figure 6—figure supplement 1I, J; see also Figure 8D). Thus, like a single nerve crush conditioning lesion with supplementary removal of myelin inhibitors, a double conditioning lesion, although reported to markedly enhance regeneration of DC axons, failed to enable most DR axons to cross the DREZ after DR injury.
 
-## Supplementary CSPG removal minimally enhances regeneration of conditioning lesioned axons across the DREZ in tKO mice
+### Supplementary CSPG removal minimally enhances regeneration of conditioning lesioned axons across the DREZ in tKO mice
 
 We next asked whether additional attenuation of CSPGs in Rtn4/Mag/Omg tKO mice would enable robust penetration of conditioned axons through the DREZ. To test this possibility, we injected LV-ChABC rostrocaudally in dorsal horns along the L4–L5 DREZ in Rtn4/Mag/Omg tKO mice that received a single nerve crush conditioning lesion 10 days before crushing L4 and L5 roots (Figure 7A). Surprisingly, at 2 wpi, despite the concurrent degradation of CSPGs, conditioned axons of Rtn4/Mag/Omg tKO mice largely remained near the astrocyte:PNS border in wholemounts (Figure 7C, Figure 2—figure supplement 1). CS-56 antibody immunostaining confirmed effective removal of CSPGs in dorsal horns (Figure 7E, asterisk). Serial transverse sections occasionally revealed GFP+ axons that reached dorsolateral gray matter (Figure 7F, arrows), but most axons remained at the DREZ within ~100 μm of the border (Figure 7G). Similarly, we observed no noticeably enhanced regeneration of CGRP+ axons in conditioned/ChABC-expressed Rtn4/Mag/Omg tKO (Figure 7F). These results demonstrate that additional removal of CSPGs did not enable significantly more GFP+ axons to penetrate the DREZ in conditioned tKO mice. In sum, CSPG degradation and/or a nerve conditioning lesion increases the number of axons at the DREZ in Rtn4/Mag/Omg tKO, but most axons (>90%) fail to extend across the DREZ (Figure 7H). CSPG removal improves penetration of conditioned or unconditioned axons in tKO mutant, but the effect is modest, enabling only ~10% axons to extend ~100 μm past the DREZ (Figure 7H). These findings collectively suggest that the inhibitory role of myelin inhibitors and CSPGs at the DREZ, by themselves or even together, is moderate: they are not the primary factors that arrest even conditioning lesioned DR axons at the DREZ.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/63050/elife-63050-fig7-v2.jpg)
 
-**Figure 7.:** (A) Schematic illustration of the experimental procedures. LV-chondroitinase ABC (LV-ChABC) was injected into Rtn4/Mag/Omg tKO mice that received a conditioning lesion 10 days before L4 and L5 dorsal root (DR) crush. (B) Wholemount view of a wildtype (WT) mouse. (C) Wholemount view of a ChABC/conditioned tKO showing hundreds of GFP+ axons that remain near the border (dotted line). (D) Transverse sections of a WT mouse. (E–E’) Transverse sections of a ChABC/conditioned tKO illustrating effective CSPG degradation confirmed by the lack of CS-56 immunoreactivity (asterisks) and little if any intraspinal regeneration of GFP+ axons. (F–F’) Additional transverse sections of a ChABC/conditioned tKO illustrating limited intraspinal regeneration of GFP+ or CGRP+ axons (magenta). Arrows denote occasionally observed GFP+ axons that enter dorsal gray matter. (G) Quantitative comparisons illustrating no significant difference in ChABC/conditioned tKO and conditioned tKO mice. 100 μm, p=0.7629, df = 114; 200 μm, p=0. 2671, df = 114. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (conditioned tKO: 11 sections, three mice; ChABC/conditioned tKO: 10 sections, four mice). (H) Quantitative summary illustrating minimal intraspinal regeneration of even conditioned axons after concurrent removal of myelin inhibitors and CSPGs; only ~10% GFP+ axons extended ~100 μm past the dorsal root entry zone (DREZ). 100 μm, *p=0.0488, df = 300 (WT vs. ChABC expressed tKO), ****p<0.0001, df = 300 (WT vs. conditioned tKO, WT vs. ChABC/conditioned tKO); 200 μm, *p=0.014, df = 300 (WT vs. ChABC expressed tKO), **p=0.0024, df = 300 (WT vs. ChABC/conditioned tKO); 300 μm, p>0.9999; df = 300. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test. Scale bars = 200 μm (B, C, D, E–E’, F–F’).Figure 7—source data 1.This Excel file contains raw data used for quantitative analysis shown in Figure 7G, H.
+**Figure 7.:** (A) Schematic illustration of the experimental procedures. LV-chondroitinase ABC (LV-ChABC) was injected into Rtn4/Mag/Omg tKO mice that received a conditioning lesion 10 days before L4 and L5 dorsal root (DR) crush. (B) Wholemount view of a wildtype (WT) mouse. (C) Wholemount view of a ChABC/conditioned tKO showing hundreds of GFP+ axons that remain near the border (dotted line). (D) Transverse sections of a WT mouse. (E–E’) Transverse sections of a ChABC/conditioned tKO illustrating effective CSPG degradation confirmed by the lack of CS-56 immunoreactivity (asterisks) and little if any intraspinal regeneration of GFP+ axons. (F–F’) Additional transverse sections of a ChABC/conditioned tKO illustrating limited intraspinal regeneration of GFP+ or CGRP+ axons (magenta). Arrows denote occasionally observed GFP+ axons that enter dorsal gray matter. (G) Quantitative comparisons illustrating no significant difference in ChABC/conditioned tKO and conditioned tKO mice. 100 μm, p=0.7629, df = 114; 200 μm, p=0. 2671, df = 114. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (conditioned tKO: 11 sections, three mice; ChABC/conditioned tKO: 10 sections, four mice). (H) Quantitative summary illustrating minimal intraspinal regeneration of even conditioned axons after concurrent removal of myelin inhibitors and CSPGs; only ~10% GFP+ axons extended ~100 μm past the dorsal root entry zone (DREZ). 100 μm, *p=0.0488, df = 300 (WT vs. ChABC expressed tKO), ****p<0.0001, df = 300 (WT vs. conditioned tKO, WT vs. ChABC/conditioned tKO); 200 μm, *p=0.014, df = 300 (WT vs. ChABC expressed tKO), **p=0.0024, df = 300 (WT vs. ChABC/conditioned tKO); 300 μm, p>0.9999; df = 300. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test. Scale bars = 200 μm (B, C, D, E–E’, F–F’).
 
-## Nogo/MAG/OMgp removal markedly enhances intraspinal regeneration of GDNF-stimulated DR axons
+### Nogo/MAG/OMgp removal markedly enhances intraspinal regeneration of GDNF-stimulated DR axons
 
 Our findings that conditioning lesioned axons penetrate only modestly through the DREZ in ChABC-expressed tKO mice suggest that myelin inhibitors and CSPGs do not strongly inhibit DR axons. We also found that a double conditioning lesion fails to elicit robust DR regeneration, indicating that mechanical conditioning does not sufficiently enhance the intrinsic growth capacity of DR axons to cross the DREZ. If myelin inhibitors and CSPGs indeed play only a moderate inhibitory role at the DREZ, greater enhancement of intrinsic growth capacity may be essential for robust penetration in their absence. In addition, myelin inhibitors and CSPGs may hinder regeneration within the spinal cord, although their inhibition is insufficient to block most axons at the DREZ. To test further the efficacy of myelin inhibitors and CSPGs, we applied a treatment that enabled many axons to penetrate the DREZ and then examined if their intraspinal regeneration was altered in Rtn4/Mag/Omg tKO mice with or without additional attenuation of CSPGs. Intraspinal expression of neurotrophic factors elevates regenerative capacity and chemotropically attracts DR axons, enabling them to cross the DREZ (Ramer et al., 2000; Iwakawa et al., 2001; Kelamangalath et al., 2015). When expressed virally within the spinal cord of WT mice, GDNF promoted penetration of many large-diameter DR axons through the DREZ and further into the spinal cord (Kelamangalath et al., 2015; Han et al., 2017).
 
@@ -112,19 +132,19 @@ We microinjected lentivirus expressing GDNF (LV-GDNF), extensively used in earli
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/63050/elife-63050-fig8-v2.jpg)
 
-**Figure 8.:** GDNF-induced intraspinal regeneration analyzed in wildtype (WT) (A–D) and Rtn4/Mag/Omg triple knockout (tKO) mice (E–H) 2 weeks after L4 and L5 DR crush. (A) Schematic illustration showing intraspinal injections of LV-GDNF at the time of root crush and AAV2-GFP injections in WT mice. (B) Wholemount view of a GDNF-expressed WT illustrating hundreds of GFP+ axons largely remaining near the border. (C–C’) Transverse sections of a GDNF-expressed WT showing a number of GFP+ (green) or CGRP+ axons (magenta) that cross the DREZ and extend further into the dorsal funiculus and gray matter. (D) Quantitative comparisons illustrating significantly enhanced penetration of GFP+ axons across the DREZ. 100 μm, 200 μm, and 300 μm, ****p<0.0001, df = 156; 400 μm, p=0.2446, df = 156. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (WT: 13 sections, three mice; GDNF-expressed WT: 15 sections, three mice). (E) Schematic illustration of the experimental procedures in Rtn4/Mag/Omg tKO mice. (F) Wholemount view of a GDNF-expressed tKO mouse revealing intensely fluorescent area of the L4 and L5 DREZ (arrows), likely due to densely accumulated subdural GFP+ axons. (G–G’) Transverse sections of a GDNF-expressed tKO mouse displaying numerous GFP+ axons regenerating deep into dorsal horn. Asterisks denote CGRP immunoreactivity in deep dorsal laminae (magenta), presumably indicating enhanced regeneration of CGRP+ axons in GDNF-expressed tKO, as compared to that in GDNF-expressed WT. (H) Quantitative comparisons illustrating markedly greater intraspinal growth of GFAP-labeled axons in GDNF-expressed tKO than in GDNF-expressed WT mice. 100 μm and 200 μm, ****p<0.0001, df = 174; 300 μm, *p=0.028, df = 174; 400 μm, p=0.9975, df = 174. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (GDNF-expressed WT: 15 sections, three mice; GDNF-expressed tKO: 16 sections, five mice). ns: not significant. Scale bars = 200 μm (B, C, C’, F, G, G’).Figure 8—source data 1.This Excel file contains raw data used for quantitative analysis shown in Figure 8D, H.
+**Figure 8.:** GDNF-induced intraspinal regeneration analyzed in wildtype (WT) (A–D) and Rtn4/Mag/Omg triple knockout (tKO) mice (E–H) 2 weeks after L4 and L5 DR crush. (A) Schematic illustration showing intraspinal injections of LV-GDNF at the time of root crush and AAV2-GFP injections in WT mice. (B) Wholemount view of a GDNF-expressed WT illustrating hundreds of GFP+ axons largely remaining near the border. (C–C’) Transverse sections of a GDNF-expressed WT showing a number of GFP+ (green) or CGRP+ axons (magenta) that cross the DREZ and extend further into the dorsal funiculus and gray matter. (D) Quantitative comparisons illustrating significantly enhanced penetration of GFP+ axons across the DREZ. 100 μm, 200 μm, and 300 μm, ****p<0.0001, df = 156; 400 μm, p=0.2446, df = 156. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (WT: 13 sections, three mice; GDNF-expressed WT: 15 sections, three mice). (E) Schematic illustration of the experimental procedures in Rtn4/Mag/Omg tKO mice. (F) Wholemount view of a GDNF-expressed tKO mouse revealing intensely fluorescent area of the L4 and L5 DREZ (arrows), likely due to densely accumulated subdural GFP+ axons. (G–G’) Transverse sections of a GDNF-expressed tKO mouse displaying numerous GFP+ axons regenerating deep into dorsal horn. Asterisks denote CGRP immunoreactivity in deep dorsal laminae (magenta), presumably indicating enhanced regeneration of CGRP+ axons in GDNF-expressed tKO, as compared to that in GDNF-expressed WT. (H) Quantitative comparisons illustrating markedly greater intraspinal growth of GFAP-labeled axons in GDNF-expressed tKO than in GDNF-expressed WT mice. 100 μm and 200 μm, ****p<0.0001, df = 174; 300 μm, *p=0.028, df = 174; 400 μm, p=0.9975, df = 174. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (GDNF-expressed WT: 15 sections, three mice; GDNF-expressed tKO: 16 sections, five mice). ns: not significant. Scale bars = 200 μm (B, C, C’, F, G, G’).
 
 Compared to GDNF-expressed WT mice, wholemounts of GDNF-expressed Rtn4/Mag/Omg tKO mice more frequently revealed areas of the DREZ that exhibited conspicuously intense GFP fluorescenc, due to densely accumulated subdural GFP+ axons (Figure 8F, arrows; see also Figure 2—figure supplement 1). Indeed, serial sections often displayed abundant GFP+ axons at and beyond the DREZ, indicating markedly enhanced regeneration of GDNF-stimulated axons across the DREZ in tKO mice (Figure 8G). We also observed bright CGRP+ immunoreactivity in deep dorsal laminae that are usually devoid of residual CGRP+ staining, presumably indicating greatly enhanced regeneration of nociceptive axons in tKO mice (Figure 8G, asterisk). The number of axons that crossed the DREZ far exceeded that observed in GDNF-expressed WT mice, nearly tripling the number of GFP+ axons at 200 μm from the astrocyte:PNS border (Figure 8H). Therefore, elimination of myelin inhibitors enabled many more GDNF-stimulated axons to extend across the DREZ. It was also notable that the number of axons crossing the DREZ at 100 μm far exceeded the number of axons that entered the DREZ at 0 μm (i.e., astrocyte:PNS border) (Figure 8H). The number of intraspinal axons at 200 μm was also significantly greater than the number of axons crossing the DREZ at 100 μm. These findings suggest that elimination of myelin inhibitors enhanced intraspinal regeneration of GDNF-stimulated axons, largely by promoting regenerative sprouting or additional branch formation of parental axons at and beyond the DREZ.
 
 Collectively, these findings indicate that myelin inhibitors are indeed inhibitory to DR axons and can restrict their regeneration at the DREZ and beyond it within the spinal cord. They also demonstrate that genetic elimination of myelin inhibitors alone or combined with a conditioning lesion promotes minimal regeneration across the DREZ, reflecting their incomplete inhibitory effect. It can markedly enhance regeneration only in combination with a treatment that sufficiently enhances intrinsic growth capacity of DR axons.
 
-## CSPG removal further enhances intraspinal regeneration of GDNF-stimulated axons in tKO mice
+### CSPG removal further enhances intraspinal regeneration of GDNF-stimulated axons in tKO mice
 
 Lastly, we investigated the synergistic effect of CSPG degradation on intraspinal regeneration of GDNF-stimulated axons in Rtn4/Mag/Omg tKO mice. We microinjected LV-GDNF and LV-ChABC into dorsal horns and AAV2-GFP into DRGs at the time of L4 and L5 root crush (Figure 9A). At 2 wpi, wholemounts of GDNF/ChABC-expressed tKO mice revealed far broader areas of densely populated GFP+ axons growing into the CNS beyond the astrocyte:PNS border (Figure 9C, arrows) than in GDNF-expressed WT (Figure 9B, arrow) or in GDNF-expressed tKO mice (Figure 8F; see also Figure 2—figure supplement 1). Moreover, many GFP+ axons extended rostrocaudally close to the midline (Figure 9C, arrowheads), further evidence of enhanced intraspinal penetration and regeneration in GDNF/ChABC-expressed tKO mice. CS-56 antibody immunostaining confirmed effective removal of CSPGs in dorsal horns (Figure 9E). Serial transverse sections frequently showed GFP+ axons densely filling a broader and deeper area of the dorsal horn in GDNF/ChABC-expressed tKO mice (Figure 9E, F) than in GDNF-expressed WT (Figure 9D) or in GDNF-expressed tKO mice (Figure 8G; see also Figure 2—figure supplement 1). CGRP immunoreactivity on some sections was conspicuously bright, dense, and notably restricted to the superficial laminae, like CGRP immunoreactivity on the contralateral uninjured side (Figure 9F). Quantification indicated ~20% further increase in GFP+ axons crossing the DREZ at 100 μm, presumably reflecting enhanced regenerative sprouting, and ~60% increase in GFP+ axons at 400 μm in deeper portions of the dorsal horn in GDNF/ChABC-expressed tKO mice, compared to GDNF-expressed tKO mice (Figure 9G). These findings show that additional removal of CSPGs markedly and synergistically enhanced regeneration of GDNF-stimulated axons across the DREZ in Rtn4/Mag/Omg tKO mice. Therefore, like myelin inhibitors, CSPGs partially restrict DR axons at and beyond the DREZ, and their removal can significantly enhance regeneration across the DREZ only when combined with an intervention that sufficiently enhances intrinsic growth capacity of DR axons.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/63050/elife-63050-fig9-v2.jpg)
 
-**Figure 9.:** (A) Schematic illustration of the experimental procedures. LV-chondroitinase ABC (LV-ChABC) and LV-GDNF were injected into dorsal horn along the L4–L5 dorsal root entry zone (DREZ) in Rtn4/Mag/Omg tKO mice. (B) Wholemount view of a GDNF-expressed wildtype (WT) mouse. (C) Wholemount view of a ChABC/GDNF-expressed tKO showing broader areas of the DREZ and the CNS with densely accumulated GFP+ axons (arrows). Arrowheads denote numerous axons extending rostrocaudally close to the midline. (D) Transverse sections of a GDNF-expressed WT mouse. (E–E’) Transverse sections of a ChABC/GDNF-expressed tKO showing effective degradation of CSPGs confirmed by CS-56 immunoreactivity and many GFP+ axons densely filling broad and deep areas of the dorsal horn. (F) Transverse sections of a ChABC/GDNF-expressed tKO showing enhanced intraspinal regeneration of GFP+ axons and CGRP+ axons (magenta). CGRP+ immunoreactivity is bright, dense, and remarkably restricted to the superficial laminae. (G) Quantitative comparisons illustrating significantly more GFP+ axons in deeper portions of the dorsal horn in ChABC/GDNF-expressed tKO. 100 μm, p=0.5389, df = 210; 200 μm, p=0.9891, df = 210; 300 μm, p=0.2358, df = 210; 400 μm, p=0.0074, df = 210; 500 μm, p=0.5805, df = 210. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (ChABC/GDNF-expressed tKO: 19 sections, eight mice; GDNF-expressed tKO: 16 sections, five mice). ns: not significant. Scale bars = 200 μm (B, C, D, E–E’, F).Figure 9—source data 1.This Excel file contains raw data used for quantitative analysis shown in Figure 9G.
+**Figure 9.:** (A) Schematic illustration of the experimental procedures. LV-chondroitinase ABC (LV-ChABC) and LV-GDNF were injected into dorsal horn along the L4–L5 dorsal root entry zone (DREZ) in Rtn4/Mag/Omg tKO mice. (B) Wholemount view of a GDNF-expressed wildtype (WT) mouse. (C) Wholemount view of a ChABC/GDNF-expressed tKO showing broader areas of the DREZ and the CNS with densely accumulated GFP+ axons (arrows). Arrowheads denote numerous axons extending rostrocaudally close to the midline. (D) Transverse sections of a GDNF-expressed WT mouse. (E–E’) Transverse sections of a ChABC/GDNF-expressed tKO showing effective degradation of CSPGs confirmed by CS-56 immunoreactivity and many GFP+ axons densely filling broad and deep areas of the dorsal horn. (F) Transverse sections of a ChABC/GDNF-expressed tKO showing enhanced intraspinal regeneration of GFP+ axons and CGRP+ axons (magenta). CGRP+ immunoreactivity is bright, dense, and remarkably restricted to the superficial laminae. (G) Quantitative comparisons illustrating significantly more GFP+ axons in deeper portions of the dorsal horn in ChABC/GDNF-expressed tKO. 100 μm, p=0.5389, df = 210; 200 μm, p=0.9891, df = 210; 300 μm, p=0.2358, df = 210; 400 μm, p=0.0074, df = 210; 500 μm, p=0.5805, df = 210. Two-way repeated-measures ANOVA with Sidak’s multiple comparisons test (ChABC/GDNF-expressed tKO: 19 sections, eight mice; GDNF-expressed tKO: 16 sections, five mice). ns: not significant. Scale bars = 200 μm (B, C, D, E–E’, F).
 
 ## Discussion
 
@@ -150,38 +170,237 @@ A single sciatic nerve conditioning lesion of DRG neurons has been extensively u
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Rtn4/Omg double knockout</td>
+      <td>Dr. Binhai Zheng (UCSD) Lee et al., 2010</td>
+      <td>RRID:MGI:3624445 RRID:MGI:3821705</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mag knockout</td>
+      <td>Dr. Jae K. Lee (U.Miami)</td>
+      <td>Stock # 006865; RRID:IMSR JAX:006865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock # 000664; RRID:IMSR JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vectashield</td>
+      <td>Vector Laboratories, Burlingame</td>
+      <td>H-100 RRID:AB2336789</td>
+      <td>Mounting medium</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>scAAV2-eGFP</td>
+      <td>Dr. George M. Smith (Temple University)</td>
+      <td></td>
+      <td>AAV construct to transfect and express eGFP (Liu et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>LV-chABC</td>
+      <td>Dr. George M. Smith (Temple University)</td>
+      <td></td>
+      <td>Lentiviral construct to transfect and express chABC (Curinga et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>LV-GDNF</td>
+      <td>Dr. George M. Smith (Temple University)</td>
+      <td></td>
+      <td>Lentiviral construct to transfect and express GDNF (Zhang et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NF200 (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>#N4142 RRID:AB477272</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isolectin B4, biotin conjugate</td>
+      <td>Sigma</td>
+      <td>#L2140 RRID:AB2313663</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CGRP (rabbit polyclonal)</td>
+      <td>Peninsula Labs</td>
+      <td>#T4032 RRID:AB2307330</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (mouse monoclonal)</td>
+      <td>Avés Labs Inc</td>
+      <td>#GFP-1020 RRID:AB10000240</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFAP (rabbit polyclonal)</td>
+      <td>Agilent</td>
+      <td>#N1506 RRID:AB10013482</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647-goat anti-rabbit IgG secondary antibody</td>
+      <td>Invitrogen</td>
+      <td>#31573 RRID:AB2536183</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fluorescein (FITC)-conjugated goat anti-rabbit IgG secondary antibody</td>
+      <td>Millipore</td>
+      <td>#AP307F RRID:AB92652</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568-conjugated goat anti-mouse IgG1 secondary antibody</td>
+      <td>Invitrogen</td>
+      <td>#A21124 RRID:AB141611</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rhodamine (TRITC)-conjugated streptavidin secondary antibody</td>
+      <td>Jackson ImmunoResearch Labs Inc</td>
+      <td>#016-020-084 RRID:AB2337237</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa-Fluor 568-conjugated goat anti-rabbit secondary antibody</td>
+      <td>Invitrogen</td>
+      <td>#A11011 RRID:AB143157</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-donkey anti-chicken IgG secondary antibody</td>
+      <td>Jackson ImmunoResearch Labs Inc</td>
+      <td>#703-545-155 RRID:AB2340375</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#D1306 RRID:AB2629482</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nissl substance stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#N21482 RRID:AB2620170</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaMorph Image Analysis Software</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR002368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AxioVision Imaging System</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR002677</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Axio Imager</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR018876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe Inc</td>
+      <td>RRID:SCR014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PRISM 8.0</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal care and procedures were conducted in accordance with the National Research Council’s Guide for the Care and Use of Laboratory Animals and approved by the Institutional Animal Care and Use Committee at Lewis Katz School of Medicine at Temple University (animal protocol #4919), Philadelphia, PA, USA. Congenic Rtn4/Mag/Omg tKO mice were generated by breeding congenic lines of Rtn4/Omg double knockout mice obtained from Dr. Binhai Zheng (University of California at San Diego) and of MAG single knockout mice obtained from Dr. Jae K. Lee (University of Miami). Male and female, 2–3-month-old Rtn4-/-/Omg-/-/Mag-/- mice and age-matched C57BL/6J mice (The Jackson Laboratory) were used. Mice were genotyped at the time of weaning by tail clipping and PCR analysis using the primers described in earlier studies (Li et al., 1994; Lee et al., 2010).
 
-## Dorsal root crush
+### Dorsal root crush
 
 Mice were anesthetized with an intraperitoneal injection of xylazine (8 mg/kg) and ketamine (120 mg/kg). Supplements were given during the procedure as needed. Following a 2- to 3-cm-long incision in the skin of the back, the spinal musculature was reflected and the L3–S1 spinal cord segments exposed by hemilaminectomies to prepare for unilateral L4–L5 root crush. The cavity made by the laminectomies was perfused with warm sterile Ringer’s solution. A small incision was made in the dura overlying the L4 and L5 DR. A fine forceps (Dumont #5; Fine Science Tools, Foster City, CA) was introduced subdurally and the DR crushed for 10 s. To avoid scar formation and possible compression, we applied a piece of thin SILASTIC membrane (Biobrane, Bertek Pharmaceuticals, Sugarland, TX) over the laminectomy site and covered it with a layer of thicker artificial dura (Gore Preclude MVP Dura Substitute, W.L. Gore and Associates, Flagstaff, AZ). The overlying musculature was closed with 5-0 sutures, and the skin closed with wound clips. All animals received subcutaneous injections of saline (0.9% w/v NaCl) and buprenorphine (0.05 mg/kg) for postoperative pain management and remained on a heating pad until fully recovered from anesthesia. Mice were perfused 2 or 4 weeks after the crush, and axon regeneration was analyzed in cryostat sections or in thin dorsal slice preparations of whole spinal cord.
 
-## Nerve conditioning lesion
+### Nerve conditioning lesion
 
 DRG neurons were preconditioned by crushing the sciatic nerve in the lateral thigh of the ipsilateral hind leg 10 days before the DRs were crushed. Animals were anesthetized as described above; the skin and superficial muscle layer of the midthigh were opened; and the sciatic nerve was crushed for 10 s with fine forceps (Dumont #5; Fine Science Tools). The muscle and skin were then closed in layers and the animals allowed to recover on a heating pad until fully awake. For a double conditioning lesion, the sciatic nerve was completely transected with microscissors (Fine Science Tool) 3 days before the unilateral L4–L5 root crush and again, ~1 cm proximal to the site of the first transection, 7 days after DR crush. This sequence of a double conditioning lesion paradigm has been reported to enhance regeneration of DRG axons ascending in the DCs after spinal cord injury (Neumann et al., 2005).
 
-## Production and microinjection of AAV2-GFP, LV-chABC, and LV-GDNF
+### Production and microinjection of AAV2-GFP, LV-chABC, and LV-GDNF
 
 Recombinant self-complementary adeno-associated virus 2 (scAAV2) carrying eGFP was generated by helper virus-free system (Ayuso et al., 2010) as described previously (Liu et al., 2014). Replication-deficient lentiviruses encoding either chABC (LV-chABC) or GDNF (LV-GDNF) used a pBOB lentiviral expression vector with CMV-enhanced chicken β-actin (CAG) promoter. The procedures to generate the viruses and their efficacy were described before: LV-chABC (Curinga et al., 2007; Jin et al., 2011; Han et al., 2017); LV-GDNF (Zhang et al., 2009a; Deng et al., 2013; Zhang et al., 2013; Kelamangalath et al., 2015; Han et al., 2017). AAV2-GFP was microinjected into lumbar DRGs using a micropipette pulled to a diameter of 0.05 mm and a nanoinjector (World Precision Instruments, Sarasota, FL). The viruses were injected at the time of DR crush. For each injection, the micropipette was introduced 0.5 mm into the DRG and a total volume of AAV (0.8 μl) containing >2 × 1012 GC/ml injected over a 10 min period. The glass needle was left in place for 2 min after each injection. For LV-GDNF, five injections of 0.3 μl lentivirus (a total of 2 × 107 viral particles) were equally spaced rostrocaudally along the L4–L5 DREZ. Injections were made at a rate of 100 nl/min at a depth of 0.25 mm from the spinal cord dorsal surface.
 
-## Tissue processing, selection, and immunohistochemistry
+### Tissue processing, selection, and immunohistochemistry
 
 Two or four weeks after DR crush, mice were sacrificed by an overdose of Euthasol and perfused transcardially with 0.9% saline followed by 4% paraformaldehyde (PFA) in 0.1 M phosphate buffer (PBS, pH=7.4). The spinal cords with attached DRs and DRGs were removed and examined in wholemounts to exclude those tissues with poor transduction of AAV2-GFP and/or spared axons. Properly lesioned and GFP+ tissues were first examined in wholemounts to assess DR regeneration across the DREZ. Tissues were then processed for analysis on cryostat sections. One or two representative tissues were processed for immunohistochemistry in spinal cord wholemounts. For analysis on cryostat sections, spinal cords were post-fixed in 4% PFA overnight at 4°C and cryoprotected in 30% sucrose for 1–2 days. The tissues were then embedded in M-1 Embedding Matrix (Thermo Fisher Scientific, Waltham, MA), transversely sectioned at 20 μm using a cryostat (Leica Microsystems, Germany), and mounted directly on slides (Superfrost Plus, Fisher Scientific, Pittsburgh, PA). For immunolabeling, sections were rinsed three times in PBS for 30 min followed by 10 min incubation with 0.1 M glycine in PBS, and 15 min incubation with 0.2% Triton X-100, 2% bovine serum albumin (BSA) in PBS (TBP). Sections were incubated with primary antibodies overnight at 4°C, washed three times for 30 min with 2% BSA in PBS, and incubated with secondary antibodies for 1 hr at room temperature. After three rinses with PBS, sections were mounted in Vectashield (Vector Laboratories, Burlingame, CA) and stored at –20°C until examination. For wholemount immunostaining of spinal cords, spinal cords with attached DRs were post-fixed in 4% PFA for 2 hr at 4°C and the dura mater removed. The spinal cord was then rinsed three times with PBS for 30 min, incubated for 10 min in 0.1 M glycine in 2% BSA/PBS, and permeabilized with pre-cooled methanol at –20°C for 10 min. After extensive rinsing in PBS, the spinal cord was incubated with primary antibody diluted in TBP at room temperature overnight, rinsed thoroughly in TBP the following day, and incubated with secondary antibodies for 2 hr at room temperature. After rinsing in PBS, a thin slice of dorsal spinal cord (~2 mm thick) with attached DR stumps was cut with a microscissor and mounted on slides in Vectashield (Vector Laboratories).
 
-## Antibodies
+### Antibodies
 
 Primary antibodies were used at the following concentrations for immunohistochemistry: rabbit anti-NF200 (1:500, Sigma, St. Louis, MO, #N4142), IB4-biotin conjugate (1:200, Sigma, #L2140), rabbit anti-CGRP (1:2000, Peninsula Labs, San Carlos, CA, #T4032), chicken anti-GFP (1:1000, Avés Labs Inc, Davis, CA, #GFP-1020), and rabbit anti-GFAP (1:500, Agilent, Santa Clara, CA, #N1506). Secondary antibodies used were Alexa Fluor 647-goat anti-rabbit IgG (1:400, Invitrogen, Indianapolis, IN, #31573), fluorescein (FITC)-conjugated goat anti-rabbit IgG (1:400, Millipore, Temecula, CA, AP307F), Alexa Fluor 568-conjugated goat anti-mouse IgG1 (1:400, Invitrogen, A21124), Alexa-Fluor 568-conjugated goat anti-rabbit (1:400, Invitrogen, #A11011), rhodamine (TRITC) streptavidin (1:400, Jackson ImmunoResearch Labs Inc, West Grove, PA, #016-020-084), or Alexa Fluor 488-donkey anti-chicken IgG (1:400, Jackson ImmunoResearch Labs Inc, #703-545-155). DAPI nucleic acid stain (1:1000, Thermo Fisher Scientific, Pittsburgh, PA, #D1306) for cell nuclei or Nissl substance stain (1:200, Thermo Fisher Scientific, #N21482) for neuronal cells was used to counterstain prior to final wash steps in PBS.
 
-## Microscopy and image acquisition
+### Microscopy and image acquisition
 
 An Olympus BX53 microscope equipped with Orca-R2 CCD camera (Hamamatsu, Japan) controlled by MetaMorph Image Analysis Software (Molecular Devices, San Jose, CA) was used to examine serial cryostat sections and dorsal wholemounts. Z stacked images were acquired using the Axio Imager (Zeiss, Germany) upright fluorescence microscope and AxioVision Imaging System (Zeiss, Germany) software or a SP8 confocal microscope (Leica Microsystems, Buffalo Grove, IL). All images were processed using Imaris (Bitplane, Windsor, CT) and Adobe Photoshop (Adobe Inc, San Jose, CA).
 
-## Analysis of regeneration across the DREZ
+### Analysis of regeneration across the DREZ
 
 The location of the DREZ, where DR axons stop their regeneration at the entrance of spinal cord, was demarcated by GFAP immunostaining of astrocytes. The white dotted lines (e.g., Figure 1D, E) denote the location of the outer (peripheral) boundary of the DREZ, as defined by GFAP immunolabeling of astrocytic processes that extend peripherally (termed here ‘astrocyte:PNS border’ or ‘astrocytic border’). When GFAP was not immunolabeled, the astrocyte:PNS border was identified based on the greater abundance of cell nuclei in the PNS than CNS. For comparative evaluation of regeneration across the DREZ, we considered that DR axons penetrated into the CNS when they extended at least 100 μm beyond the astrocyte:PNS border. For quantitative analysis, digital images were captured from 3 to 6 representative, non-adjacent sections taken from L4 and L5 segments of each mouse (n = 3–8 mice per cohort). A raw image was converted to a binary image using ImageJ with a threshold that appropriately separated GFP and background fluorescence. Lines were drawn at 100 μm before the border (in PNS territory), at the DREZ outer border, and at 100 μm intervals into CNS territory. The number of intersections of GFP+ axons at these distances was counted. The number of axons that crossed the outer border was normalized by the number of GFP+ axons counted at 100 μm before the border in the PNS, and then averaged by the number of evaluated sections and animals. This quantification resulted in the ‘axon number index’ that indicated the relative number and distance of axons that regenerated into the CNS in each group of mice.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using PRISM 8.0 (GraphPad, San Diego, CA). Statistical analysis was by two-way repeated-measures analysis of variance (ANOVA) with Tukey’s multiple comparison tests. All data are presented as mean ± SD. Results were considered statistically significant if the p-value was < 0.05.

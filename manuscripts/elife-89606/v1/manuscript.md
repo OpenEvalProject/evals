@@ -9,14 +9,14 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Department of Biological Chemistry, University of Michigan Medical School Ann Arbor United States
-2. https://ror.org/00jmfr291 Cellular and Molecular Biology Program, University of Michigan Medical School Ann Arbor United States
+1. Department of Biological Chemistry, University of Michigan Medical School Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+2. Cellular and Molecular Biology Program, University of Michigan Medical School Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
 ## Abstract
 
-Degrons are minimal protein features that are sufficient to target proteins for degradation. In most cases, degrons allow recognition by components of the cytosolic ubiquitin proteasome system. Currently, all of the identified degrons only function within the cytosol. Using Saccharomyces cerevisiae , we identified the first short linear sequences that function as degrons from the endoplasmic reticulum (ER) lumen. We show that when these degrons are transferred to proteins, they facilitate proteasomal degradation through the endoplasmic reticulum associated degradation (ERAD) system. These degrons enable degradation of both luminal and integral membrane ER proteins, expanding the types of proteins that can be targeted for degradation in budding yeast and mammalian tissue culture. This discovery provides a framework to target proteins for degradation from the previously unreachable ER lumen and builds toward therapeutic approaches that exploit the highly conserved ERAD system.
+Degrons are minimal protein features that are sufficient to target proteins for degradation. In most cases, degrons allow recognition by components of the cytosolic ubiquitin proteasome system. Currently, all of the identified degrons only function within the cytosol. Using Saccharomyces cerevisiae, we identified the first short linear sequences that function as degrons from the endoplasmic reticulum (ER) lumen. We show that when these degrons are transferred to proteins, they facilitate proteasomal degradation through the endoplasmic reticulum associated degradation (ERAD) system. These degrons enable degradation of both luminal and integral membrane ER proteins, expanding the types of proteins that can be targeted for degradation in budding yeast and mammalian tissue culture. This discovery provides a framework to target proteins for degradation from the previously unreachable ER lumen and builds toward therapeutic approaches that exploit the highly conserved ERAD system.
 
 ## Introduction
 
@@ -30,9 +30,17 @@ Here, we have identified the first short luminal degrons of the Hrd1-centric ERA
 
 ## Results
 
-## Identification of ER-localized degrons
+### Identification of ER-localized degrons
 
 The ER is the primary location for protein quality control within the secretory pathway, but how ER protein quality control systems distinguish folded from unfolded proteins is unclear. We wanted to understand the degrons recognized within the ER lumen and started by designing an ER-targeted reporter of protein stability. We targeted a tandem fluorescent protein timer (tFT) to the ER to function as a reporter of protein stability (ER-tFT, Figure 1A and Figure 1—figure supplement 1A). tFTs contain a fast-maturing fluorescent protein (here, superfastGFP; Fisher and DeLisa, 2008) and a slower-maturing fluorescent protein (here, mCherry; Shaner et al., 2004) and have been used effectively to identify N-terminal degrons that function in the cytosol and nucleus (Khmelinskii et al., 2012; Kats et al., 2018). By measuring the ratio of mCherry to GFP fluorescence, a protein’s stability can be assessed; the lower the ratio, the more unstable the protein. To test whether the ER-tFT could successfully distinguish stable from unstable proteins, we compared the ER-tFT to a well-characterized, unstable, luminal ERAD substrate, KHN, tagged with the tFT (KHN-tFT, Figure 1A). Using a cycloheximide chase followed by immunoblotting, we found the ER-tFT was quite stable, while the KHN-tFT was degraded with a half-life of less than 30 min (Figure 1B), consistent with previous reports (Vashist et al., 2001). Using flow cytometry, the two proteins were also distinguishable following cycloheximide treatment (Figure 1C and D and Figure 1—figure supplement 1B). After establishing the tFT reporter could distinguish protein stability within the ER, we turned our attention to identifying luminal degrons.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic depicting the ER-tandem fluorescent protein timer (tFT) and KHN-tFT constructs, which contain an ER-targeting signal sequence (SS), mCherry (red), superfastGFP (green), and the HDEL ER retention sequence. KHN-tFT functions as a quickly degraded ER associated degradation (ERAD) substrate (a positive control for degradation). (B) Wild-type yeast expressing the constructs described in (A) were treated with cycloheximide (CHX) for 0, 30, 60, or 90 min, harvested, and protein levels were assessed by immunoblotting using anti-GFP antibodies. Total protein was visualized in gel using stain-free technology (Loading). (C) Flow cytometry of yeast expressing the constructs in (A) treated with CHX for 2 hr. The mCherry/GFP fluorescence intensity ratio of each cell was calculated and plotted. (D) Quantification of the mean mCherry/GFP ratio of four biological replicates as in (C). (E) Overview of the pentapeptide library generation and isolation of unstable variants using fluorescence-activated cell sorting (FACS). A DNA fragment containing the pentapeptide-ER-tFT library was electroporated with linearized ER-tFT plasmid. The resulting yeast library contains a mixture of variants that are separated by FACS, with less stable variants having decreased mCherry/GFP fluorescence intensity compared to stable variants. (F) Heatmap of amino acid enrichments at each position within the unstable pentapeptide library. Values are displayed relative to either codon usage (left) or relative to the input library (right). (G) As in (C) with strains expressing either ER-tFT (yellow fill), KHN-tFT (green fill), individual FACS isolates from the ‘unstable’ pentapeptide sequences (green lines), or randomly selected pentapeptide-ER-tFT sequences from the input library (gray lines). (H) Quantification of at least two biological replicates conducted as in (G). The unstable groups (green) and random groups (gray) were significantly different from each other using a one-way ANOVA and Tukey’s multiple comparisons tests. (I) As in (C) with strains expressing either ER-tFT (yellow fill), KHN-tFT (green fill), a single IHPYW (1X), 2X repeat of IHPYW (2X), or 4X repeat of IHPYW at the N-terminus of ER-tFT. (J) Quantification of two to three biological replicates of (I).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The tandem fluorescent protein timer (tFT) was targeted to the endoplasmic reticulum (ER) with two different signal peptides, either that of mating factor alpha (Matα) or of Ost1. The GFP and mCherry fluorescence were displayed as a contour plot (left panel). The mCherry/GFP fluorescence intensity ratio of each cell was calculated displayed as a histogram (right panel). Based on the superior brightness of cells expressing the mating factor alpha signal sequence, we selected this signal peptide for further experimentation. (B) Flow cytometry of yeast strains expressing an ER-tFT and endoplasmic reticulum associated degradation (ERAD)-substrate KHN-tFT treated with cycloheximide for 2 hr. (C) Schematic of the PCR-mediated library generation (left) using degenerate primers (upper right) and homologous recombination in yeast (lower right). (D) Heatmap of input library amino acid enrichments at each position displayed relative to codon frequency. (E) Gating strategy for analyzing single cells by flow cytometry. (F) Sorting bins defined relative to ER-tFT and KHN-tFT. (G) Comparison of mCherry/GFP ratios for alternate signal sequences on ER-tFT and IHPYW-tFT.
 
 To identify degrons that function within the ER lumen, we generated a library of short, linear peptide sequences embedded into the ER-tFT. Using PCR with degenerate primers, we generated an unbiased pentapeptide library encoded in a DNA fragment to use for homologous recombination in cells (Figure 1E, Figure 1—figure supplement 1C and D). The theoretical amino acid diversity of a pentapeptide library is 3.2 million (205). We transformed the library into wild-type yeast and obtained 1.2 million transformants. Using fluorescence-activated cell sorting we separated cells expressing the pentapeptide-ER-tFT by their mCherry/GFP ratio (Figure 1—figure supplement 1E and F). We collected an ‘unstable’ bin (exhibiting a low mCherry/GFP ratio), which encompassed 4% of the sorted cells, for sequencing (Figure 1—figure supplement 1F).
 
@@ -40,9 +48,21 @@ The sequencing results of the unstable sorted bin illuminated an enrichment of p
 
 We compared the stability of six different pentapeptides with isoleucine or leucine at position one to ER-tFT alone, to KHN-tFT, and to a set of randomly selected pentapeptides. KHN-tFT was the least stable, followed by pentapeptides selected from the unstable bin and containing isoleucine or leucine at position one. Several of the randomly selected pentapeptides exhibited a slight reduction in stability, relative to ER-tFT alone, but pentapeptides selected from the unstable bin were consistently less stable (Figure 1G and H, and Figure 1—figure supplement 1G). Encouraged by our results, we sought to find a peptide sequence that would match KHN-tFT instability. We found that repeats of IHPYW, one of the most unstable sequences, dramatically decreased protein stability, with a 20 amino acid 4X(IHPYW) repeat successfully resembling the KHN control (Figure 1I and J). On the other hand, simply repeating a stable control sequence (GNRWG) did not destabilize the protein (control variant 1 [ConV1], Figure 1J). Based on these results, we concluded that the 4X(IHPYW) sequence, which we called DegV1 (Degron Variant 1), functions as an ER-localized degron.
 
-## DegV1 is an ERAD-dependent degron degraded by the proteasome
+### DegV1 is an ERAD-dependent degron degraded by the proteasome
 
 We next tested whether DegV1 functioned as an ER luminal degron by transferring it from the original ER-tFT reporter (Figure 1) to a second protein known to fold in the ER lumen. We targeted the LaG16 anti-GFP nanobody (Fridy et al., 2014) to the ER using the mating factor alpha signal sequence and an ER retention signal (ER-NbGFP, Figure 2—figure supplement 1A). First, to ensure the signal sequence was removed and did not contribute to the DegV1 degron, we compared the molecular weight of a cytosolic NbGFP (without signal sequence), a cytosolic DegV1-NbGFP (without signal sequence), and the ER-DegV1-NbGFP (with signal sequence) (Figure 2A). Based on the size of the ER-DegV1-NbGFP compared to DegV1-NbGFP, we concluded that ~90% of the ER-targeted construct had the signal sequence removed and uncleaved signal sequence was unlikely to factor into the function of DegV1 (Figure 2A). Using a cycloheximide chase, the ER-NbGFP protein alone was quite stable, but embedding DegV1 after the N-terminal signal sequence destabilized ER-NbGFP with a half-life of approximately 30 min (Figure 2B). This result validated DegV1 as the first, relatively short, degron sequence that can be used for targeting ER luminal substrates for degradation. Next, we tested if DegV1 could also function as an internal or C-terminal degron. To test whether the DegV1 sequence worked within internal loops, we used the same nanobody scaffold but replaced the complementary determining region 3 with DegV1 and found that the presence of an internal DegV1 made no difference in protein stability when compared to the nanobody alone (Figure 2C and Figure 2—figure supplement 1A). Testing DegV1 at the C-terminus of the NbGFP was complicated by the requirement for an ER retention signal. We integrated the DegV1 sequence immediately before the HDEL retention signal, and, again, this resulted in no change in the stability of the NbGFP target protein (Figure 2D and Figure 2—figure supplement 1A). The ER retention signal is an important component of this construct’s innate stability, because loss of the HDEL signal, with or without the DegV1 sequence at the extreme C-terminus, results in degradation in the vacuole or secretion from the cell (Figure 2D). Together, these results suggest that the DegV1 degron was capable of acting as an ER luminal degron, but only when positioned at the N-terminus of ER-localized proteins.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig2-v1.jpg)
+
+**Figure 2.:** (A) The apparent molecular weight of anti-GFP nanobodies were assessed (NbGFP-Flag) either with or without signal sequence, in the presence or absence of DegV1, were assessed by SDS-PAGE electrophoresis followed by immunoblotting with anti-Flag antibody. This panel is representative of two biological replicates. (B) The degradation of ER-targeted anti-GFP nanobodies (ER-NbGFP-Flag) either with, or without, DegV1 were monitored following addition of cycloheximide (CHX), using SDS-PAGE and immunoblotting. Loading controls were visualized by stain-free technology. (C) The degradation of ER-NbGFP-Flag with DegV1 replacing the CDR3 region was analyzed as in (B). (D) The degradation of a nanobody with DegV1 located either directly preceding the C-terminal HDEL ER retention signal (left) or directly at the C-terminus of the nanobody (right) was analyzed as in (B). (E) Degradation of the ER-targeted proteins ER-GFP (top panel), ER-DegV1-GFP (middle panel), or ER-ConV1-GFP (bottom) were analyzed in a pdr5Δ strain by flow cytometry following either ethanol (EtOH) or CHX treatment for 2 hr. Where indicated, cells were pretreated with bortezomib (Btz) for 2 hr. (F) As in (E), but in a hrd1Δpdr5Δ strain. (G) Degradation of ER-DegV1-NbGFP was followed in pdr5Δ or hrd1Δpdr5Δ strain as in (B). Where indicated, cells were pretreated with Btz for 2 hr. (H) Quantification of (G) with error bars representing the standard deviation. (I) Degradation of ER-ConV1-NbGFP (top panel) or ER-DegV1-NbGFP (bottom panel) was followed in of ERAD component deletion strains as in (B). This panel is representative of two independent biological replicates. (J) The degradation of ER-ConV-GFP (left), or ER-DegV-GFP (right), were analyzed in the indicated ERAD component deletion strains by flow cytometry following cycloheximide treatment for 2 hr. All panels in this figure are representative of at least three independent biological replicates, unless otherwise indicated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Linear diagram of degradation constructs used in this work. SS, mating factor alpha signal sequence; AS, alanine and serine dipeptide linker; NbGFP, LaG16 anti-GFP nanobody; HDEL, endoplasmic reticulum (ER) retention signal. (B) Localization of ER-targeted GFP proteins (ER-ConV1-GFP and ER-DegV1-GFP) in wild-type yeast cells. Proteins were observed in both the ER and vacuolar localization. The scale bar is 5 µm. (C) The degradation of ER-targeted GFP proteins (ER-GFP (top), ER-DegV1-GFP (middle), or ER-ConV1-GFP (bottom)) were analyzed by flow cytometry following either ethanol (EtOH) or with bortezomib (Btz) for 2 hr. (D) As in (C), but in a hrd1Δpdr5Δ strain. (E) Degradation of ER-targeted GFP with an ER retention signal (HDEL) with, or without, DegV1 was followed in a hrd1Δ strain complemented with either an empty vector or with Hrd1 on a centromeric plasmid. Using a cycloheximide chase and immunoblotting, we found in the absence of Hrd1, we observe transport of the proteins to the vacuole, where free GFP accumulates. The asterisk indicates the vacuolar-localized GFP fragment. (F) As in (E), except with CPY*-GFP-HDEL. The asterisk indicates the vacuolar-localized GFP fragment. (G) Degradation of ER-DegV1-NbAlfa, ER-DegV1-NbGFP, or ER-NbGFP was followed using a cycloheximide chase in the presence or absence of Btz in a pdr5Δ or hrd1Δpdr5Δ strain. All panels in this figure are representative of at least three independent biological replicates.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Degradation of a cytosolically localized anti-GFP nanobody (cytosolic NbGFP) or with DegV1 (cytosolic DegV1-NbGFP) was followed in pdr5Δ or hrd1Δpdr5Δ strains with, or without, bortezomib (Btz) using a cycloheximide (CHX) chase. Note that Hrd1 is not required for the degradation of cytosolic DegV1-NbGFP. (B) Quantification of three independent biological replicates from (A). Error bars represent the standard deviation.
 
 DegV1 was able to actively target proteins for degradation from the ER lumen. The majority of protein degradation occurs at the proteasome, so we next tested whether DegV1-tagged proteins were degraded by the proteasome. We confirmed ER-GFP was ER-localized (Figure 2—figure supplement 1B) and examined the stability of the fluorescent ER-localized construct GFP alone, or with DegV1 or ConV1 in cells treated for 2 hr with the proteasomal inhibitor bortezomib and/or cycloheximide. The stability of ER-GFP alone was similar either in the presence (dashed outline) or absence (solid outline) of bortezomib (panel 1, Figure 2E). Appending DegV1 immediately after the signal sequence resulted in degradation of ER-GFP (solid blue line), which was inhibited by adding bortezomib (dashed line, panel 2, Figure 2E). This indicated DegV1 targets the luminal ER-GFP for proteasomal degradation. As expected, appending a control sequence (ConV1) of the same length was similarly stable to ER-GFP alone and stability was not affected by bortezomib (solid line versus dashed line, panel 3, Figure 2E, see also Figure 2—figure supplement 1C). Therefore, DegV1-targeted luminal ER substrates were degraded by the proteasome.
 
@@ -56,17 +76,17 @@ In these experiments, we confirmed that DegV1 targets heterologously expressed E
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig3-v1.jpg)
 
-**Figure 3.:** (A) The degradation of an endogenous secretory protein with a C-terminal Flag (ER-Suc2-Flag) containing either DegV1 or ConV1 was monitored following addition of cycloheximide (CHX), using SDS-PAGE and immunoblotting. Loading controls were visualized by stain-free technology. (B) The degradation of a single transmembrane segment ER resident protein (Big1) with the N-terminus in the ER lumen, appended with either DegV1 or ConV1, was followed as in (A). (C) The degradation of polytopic integral membrane ER resident protein (Elo1) with the N-terminus in the ER lumen, appended with either DegV1 or ConV1, was followed as in (A). (D) The degradation of Big1 with DegV1 or ConV1 was followed as in (A) but following a 2 hr pretreatment with either ethanol (EtOH) or bortezomib (Btz) in a pdr5Δ strain. (E) The degradation of Elo1 with DegV1 or ConV1 was followed as in (D). All panels in this figure are representative of at least three independent biological replicates.Figure 3—source data 1.Figure 3.Figure 3—source data 2.Figure 3.
+**Figure 3.:** (A) The degradation of an endogenous secretory protein with a C-terminal Flag (ER-Suc2-Flag) containing either DegV1 or ConV1 was monitored following addition of cycloheximide (CHX), using SDS-PAGE and immunoblotting. Loading controls were visualized by stain-free technology. (B) The degradation of a single transmembrane segment ER resident protein (Big1) with the N-terminus in the ER lumen, appended with either DegV1 or ConV1, was followed as in (A). (C) The degradation of polytopic integral membrane ER resident protein (Elo1) with the N-terminus in the ER lumen, appended with either DegV1 or ConV1, was followed as in (A). (D) The degradation of Big1 with DegV1 or ConV1 was followed as in (A) but following a 2 hr pretreatment with either ethanol (EtOH) or bortezomib (Btz) in a pdr5Δ strain. (E) The degradation of Elo1 with DegV1 or ConV1 was followed as in (D). All panels in this figure are representative of at least three independent biological replicates.
 
 Soluble, luminal DegV1-containing proteins are targeted to the proteasome by the Hrd1-ERAD pathway (Figure 2E–J). To test whether DegV1-containing integral membrane proteins are also degraded by the proteasome, we followed Big1 and Elo1 degradation after treatment with cycloheximide and bortezomib. Both membrane proteins were significantly stabilized upon treatment with bortezomib (Figure 3D and E). Therefore, DegV1 targets both luminal and integral membrane ER proteins for recognition by ERAD and subsequent degradation by the proteasome.
 
-## DegV1 is a functional degron in mammalian cells
+### DegV1 is a functional degron in mammalian cells
 
 DegV1 is a degron facilitating degradation from the ER lumen and also represents the first short, portable degron tag (<180 amino acids; Carvalho et al., 2010) identified for the Hrd1-ERAD system. We turned our attention to the possibility of using DegV1 as a tool in mammalian cells. To determine whether DegV1 functioned as an ER degron in mammalian cells, we generated an ER-targeted mNeonGreen (Shaner et al., 2013) by appending an N-terminal BiP signal sequence, the HA epitope tag, and the C-terminal ER retention peptide (KDEL) (ER-HA-mNG). We transfected U2OS cells with the ER-mNG containing either ConV1 or DegV1. The addition of DegV1, but not ConV1, reduced the steady-state ER-mNG levels compared to the control (Figure 4A, compare lanes 1, 4, and 7). When we inhibited translation with emetine, we found that ER-mNG and ER-ConV1-mNG were quite stable (Figure 4A and B). In contrast, ER-DegV1-mNG was unstable, with a half-life of approximately 4 hr (Figure 4A and B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig4-v1.jpg)
 
-**Figure 4.:** (A) Endoplasmic reticulum (ER)-targeted mNeonGreen (ER-HA-mNG) was expressed alone (-), with ConV1, or DegV1 in U-2 OS cells by transient transfection. The degradation of ER-mNG was followed by immunoblotting with anti-HA antibody after treatment with 50 μM emetine. β-Actin was used as a loading control. (B) Anti-HA band intensities from (A) were quantified and normalized to the corresponding β-actin level. (C) As in (A) but after treatment with 50 nM bortezomib (Btz) for the indicated times. (D) Quantification of (C) normalized to the control protein (ER-HA-mNG). (E) As in (A) but after treatment with 1 µM CB5083, a p97 inhibitor, for the indicated times. (F) Quantification of (E) normalized to the control protein (ER-HA-mNG). (G) ER-HA-mNG with either ConV1 (left panel) or DegV1 (right panel) were expressed in U-2 OS pretreated with either 50 nM Btz or 1 µM CB5083 for 16 hr prior to an emetine chase. (H) The degradation of ER-HA-mNG with either ConV1 or DegV1 was followed in HEK293T cells or HRD1 cells using an emetine chase. (-/-I) Quantification of (H). All panels in this figure are representative of at least three independent biological replicates and the quantification is presented as the mean ± standard deviation.Figure 4—source data 1.Figure 4.Figure 4—source data 2.Figure 4.Figure 4—source data 3.Figure 4.
+**Figure 4.:** (A) Endoplasmic reticulum (ER)-targeted mNeonGreen (ER-HA-mNG) was expressed alone (-), with ConV1, or DegV1 in U-2 OS cells by transient transfection. The degradation of ER-mNG was followed by immunoblotting with anti-HA antibody after treatment with 50 μM emetine. β-Actin was used as a loading control. (B) Anti-HA band intensities from (A) were quantified and normalized to the corresponding β-actin level. (C) As in (A) but after treatment with 50 nM bortezomib (Btz) for the indicated times. (D) Quantification of (C) normalized to the control protein (ER-HA-mNG). (E) As in (A) but after treatment with 1 µM CB5083, a p97 inhibitor, for the indicated times. (F) Quantification of (E) normalized to the control protein (ER-HA-mNG). (G) ER-HA-mNG with either ConV1 (left panel) or DegV1 (right panel) were expressed in U-2 OS pretreated with either 50 nM Btz or 1 µM CB5083 for 16 hr prior to an emetine chase. (H) The degradation of ER-HA-mNG with either ConV1 or DegV1 was followed in HEK293T cells or HRD1-/- cells using an emetine chase. (I) Quantification of (H). All panels in this figure are representative of at least three independent biological replicates and the quantification is presented as the mean ± standard deviation.
 
 In S. cerevisiae, DegV1 degradation was dependent on the proteasome and mediated through ERAD. In U-2 OS cells, we tested whether degradation of DegV1 was also proteasome-dependent. We treated cells with bortezomib and found that, after an 8 hr treatment, ER-mNG and ER-ConV1-mNG levels remained largely unchanged, but after 24 hr we observed an ~50% increase. In contrast, for ER-DegV1-mNG proteasomal inhibition resulted in a dramatic accumulation of protein within 8 hr of treatment (Figure 4C and D). Remarkably, at 24 hr of bortezomib treatment ER-DegV1-mNG accumulated to similar levels compared to ER-ConV1-mNG, suggesting that the low steady-state level of ER-DegV1-mNG was caused by continuous degradation, rather than a general expression problem.
 
@@ -84,19 +104,386 @@ Here, we have created the first tool that can be used to begin to answer these o
 
 ## Methods
 
-## Yeast strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>HRD1</td>
+      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>
+      <td>YOL013C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>HRD3</td>
+      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>
+      <td>YLR207W</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>USA1</td>
+      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>
+      <td>YML029W</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>DER1</td>
+      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>
+      <td>YBR201W</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>YOS9</td>
+      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>
+      <td>YDR057W</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBC7</td>
+      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>
+      <td>YMR022W</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>DOA10</td>
+      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>
+      <td>YIL030C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>PDR5</td>
+      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>
+      <td>YOR153W</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>SUC2</td>
+      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>
+      <td>YIL162W</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>BIG1</td>
+      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>
+      <td>YHR101C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>ELO1</td>
+      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>
+      <td>YJL196C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>For strains, see Supplementary file 1</td>
+      <td>This study</td>
+      <td>NA</td>
+      <td>For strains, see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293</td>
+      <td>Shi et al., 2017</td>
+      <td>NA</td>
+      <td>Ling Qi lab (University of Virginia)</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293 Hrd1 Knockout</td>
+      <td>Shi et al., 2017</td>
+      <td>NA</td>
+      <td>Ling Qi lab (University of Virginia)</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>U-2 OS</td>
+      <td>ATCC</td>
+      <td>ATCC HTB-96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected constructs (H. sapiens)</td>
+      <td>For plasmids, see Supplementary file 2</td>
+      <td>This study</td>
+      <td>NA</td>
+      <td>For plasmids, see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Transfected constructs (S. cerevisiae)</td>
+      <td>For plasmids, see Supplementary file 2</td>
+      <td>This study</td>
+      <td>NA</td>
+      <td>For plasmids, see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>For plasmids, see Supplementary file 2</td>
+      <td>This study</td>
+      <td>NA</td>
+      <td>For plasmids, see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>For primers, see Supplementary file 3</td>
+      <td>This study</td>
+      <td>NA</td>
+      <td>For primers, see Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>THE DYKDDDDK Tag Antibody, mAb (mouse monoclonal)</td>
+      <td>GenScript</td>
+      <td>A00187; RRID:AB_1720813</td>
+      <td>Used at 1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(rabbit polyclonal)</td>
+      <td>GenScript</td>
+      <td>A01704; RRID:AB_2622199</td>
+      <td>Used at 1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA High Affinity antibody (clone 3F10) (rat monoclonal)</td>
+      <td>Roche</td>
+      <td>11867423001; RRID:AB_390918</td>
+      <td>Used at 1:2500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>THE V5 Tag Antibody, mAb, (mouse monoclonal)</td>
+      <td>GenScript</td>
+      <td>A01724; RRID:AB_2622216</td>
+      <td>Used at 1:2500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Amersham ECL Rat IgG, HRP-linked whole antibody (from goat) (polyclonal secondary)</td>
+      <td>Cytiva</td>
+      <td>NA935; RRID:AB_772207</td>
+      <td>Used at 1:4000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Amersham ECL Rabbit IgG, HRP-linked whole Ab (from donkey) (polyclonal secondary)</td>
+      <td>Cytiva</td>
+      <td>NA934; RRID:AB_772206</td>
+      <td>Used at 1:4000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Amersham ECL Mouse IgG, HRP-linked whole Ab (from sheep) (polyclonal secondary)</td>
+      <td>Cytiva</td>
+      <td>NA931; RRID:AB_772210</td>
+      <td>Used at 1:4000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor Plus 800 (polyclonal secondary)</td>
+      <td>Invitrogen</td>
+      <td>A32730; RRID:AB_2633279</td>
+      <td>Used at 1:4000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin</td>
+      <td>Cell Signaling</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Phusion High-Fidelity DNA Polymerase</td>
+      <td>New England Biolabs</td>
+      <td>M0530S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Zymolyase 100T</td>
+      <td>AMSBIO</td>
+      <td>120493-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ECL Select Western Blotting Detection Reagent</td>
+      <td>Cytiva</td>
+      <td>RPN2235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>BCA assay</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEBuilder HiFi DNA Assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>E2621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>QIAquick PCR Purification Kit</td>
+      <td>QIAGEN</td>
+      <td>28104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Invitrogen dsDNA HS assay</td>
+      <td>Invitrogen</td>
+      <td>Q32854</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma-Aldrich</td>
+      <td>239763</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Emetine</td>
+      <td>Calbiochem</td>
+      <td>324693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CB-5083</td>
+      <td>Cayman Chemicals</td>
+      <td>19311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bortezomib</td>
+      <td>APExBIO</td>
+      <td>A2614</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYTOX Blue Nucleic Acid Stain - 5 mM Solution in DMSO</td>
+      <td>Invitrogen</td>
+      <td>S11348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Invitrogen UltraPure Salmon Sperm DNA Solution</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal Bovine Serum, Regular, USDA Approved Origin</td>
+      <td>Corning</td>
+      <td>35-010-CV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM (Dulbecco’s Modified Eagle’s Medium)</td>
+      <td>Corning</td>
+      <td>10-013-CV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000 Transfection Reagent</td>
+      <td>Invitrogen</td>
+      <td>11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Sigma-Aldrich</td>
+      <td>D2650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Schneider et al., 2012</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageLab version 6.1</td>
+      <td>Bio-Rad</td>
+      <td>https://www.bio-rad.com/en-us/product/image-lab-software?ID=KRE6P5E8Z</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo version 10.7.1</td>
+      <td>Becton, Dickinson and Company</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>Dotmatics</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/products/illustrator.html</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and plasmids
 
 Yeast were cultured at 30°C in synthetic complete medium (SC) supplemented with the appropriate amino acids. The hrd1Δ and pdr5Δ strain used in this study were derivatives of BY4741 (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0) or BY4742 (MATα his3Δ1 leu2Δ0505lys2Δ0 ura3Δ0). The hrd1Δpdr5Δ strain was generated by crossing hrd1Δ and pdr5Δ strains, sporulating the diploids, and screening the appropriate loci by PCR. For a list of yeast strains used in this study, see Supplementary file 1. For a list of plasmids used in this study, see Supplementary file 2. Plasmids were constructed using restriction enzyme cloning or NEB HiFi assembly. Plasmids used in this study were either centromeric (Sikorski and Hieter, 1989) or custom integrating plasmids (Hwang et al., 2023). For a list of primers used to generate the pentapeptide library, see Supplementary file 3. Plasmids were transformed into yeast using the LiAc/PEG method (Gietz and Schiestl, 2007). Following transformation into yeast, three to four independent transformants were passaged one to two times on selection media before using in experiments.
 
-## Mammalian cell culture and transfection
+### Mammalian cell culture and transfection
 
 U-2 OS and HEK293 cells were cultured in DMEM containing 4.5 g/L glucose and L-glutamine, and supplemented with 10% fetal bovine serum (Corning) at 37°C and 5% CO2. Cells at 60–80% confluence were transiently transfected with the indicated plasmids using Lipofectamine 2000 (Invitrogen, 11668019) according to the manufacturer’s protocols. After 24 hr, cells were split for emetine chase or chemical treatment assays.
 
-## Mammalian cell lysis
+### Mammalian cell lysis
 
 Cells were treated with a translation inhibitor, 50 μM emetine (Calbiochem, 324693) for the indicated time periods. For chemical treatments, cells were either mock treated with DMSO, treated with 50 nM bortezomib (APExBIO, A2614), or treated with 1 μM CB5083 (Cayman Chemicals, 19311) for the indicated time periods prior to collection. For combination treatments, cells were pretreated with either bortezomib, or CB5083, for 16 hr prior to emetine chase. The cells were collected and washed once in 1× PBS (0.01 M phosphate buffered saline, pH 7.4, 0.138 M NaCl, 0.0027 M KCl) before lysis in 50 mM Tris, pH 7.4, 150 mM NaCI, 1% Triton X-100, 1 mM PMSF, and protease inhibitor cocktail for 10–20 min at 4°C. The lysates were cleared by centrifugation at 20,000×g for 10 min at 4°C. Protein concentrations were determined using a BCA assay (Thermo Fisher Scientific, 23225). Cell lysates were normalized to the same concentrations in Laemmli sample buffer and heated to 65°C for 5 min prior to separation by SDS-PAGE, transferred to a PVDF membrane, immunoblotted with antibodies (anti-HA from Roche, anti-β-actin from Cell Signaling, HRP-linked ECL rabbit-IgG and rat-IgG from Cytiva), and detected by chemiluminescence (ECL Select Western blotting detection reagent, Cytiva) using a ChemiDoc MP (Bio-Rad). For quantification of the immunoblot band intensities, we used ImageLab version 6.1 (Bio-Rad). Band intensities were normalized to β-actin protein in the sample quantified within each lane.
 
-## Yeast pentapeptide library generation
+### Yeast pentapeptide library generation
 
 We designed an in vivo gap repair strategy for cloning our pentapeptide libraries into the ER-tFT. The plasmid backbone was based on pRS416 (Christianson et al., 1992) and contained a TDH3 promoter (also known as GPD or GAPDH), the signal sequence from mating factor alpha, mCherry, GFP, an HDEL ER retention signal, and the CYC1 terminator. To prevent the peptide library from potentially disrupting signal sequence cleavage, two amino acids (Ala and Ser) after the signal sequence cleavage site were left upstream of the library. The final N-terminal amino acid sequence of the ER-tFT library after translocation and signal peptide cleavage is ASXXXXX.
 
@@ -110,30 +497,30 @@ The library transformation into yeast strain yRB203 was performed as previously 
 
 Electroporated cells were grown for ~18 hr while shaking at 30°C until reaching 0.5 OD600/mL. Control strains expressing ER-tFT (pRP01) and KHN-tFT (pRP08) were also cultured in parallel. The strains and library were then treated with DMSO only (Sigma-Aldrich, D2650) or 50 µg/mL cycloheximide (EMD Millipore, 239763) for 2 hr. After treatment, the cells were pelleted, washed once in 1× PBS, resuspended in 1× PBS containing 1 µM Sytox Blue (Invitrogen, S11348), and incubated at 4°C prior to cell sorting.
 
-## Fluorescence-activated cell sorting
+### Fluorescence-activated cell sorting
 
 Cells were sorted on a MoFlo Astrios Cell Sorter (Beckman Coulter) running Summit software. The instrument was set with a 100 µm tip, 405 nm laser with 448/59 nm bandpass filter, 488 nm laser with 514/20 nm bandpass filter, and 561 nm laser with 620/29 nm bandpass filter. Events were gated to select for yeast cell-sized events, single cells, live cells, and mCherry-GFP positive cells (Figure 1—figure supplement 1A). The mCherry/GFP ratio for each cell in the final gated population was displayed as a histogram. The ER-tFT and KHN-tFT controls were used to help define where to draw the low mCherry/GFP ratio (unstable) bin for sorting (Figure 1—figure supplement 1D). In total, 13 million mCherry-GFP positive events were sorted from the pentapeptide-ER-tFT library, >10 times over the library size. The sorted cells were grown at 30°C with shaking in 5 mL of SC dropout media for 24 hr and expanded to 25 mL cultures overnight. 10 OD600 of both the ‘unstable’ bin and unsorted pentapeptide-ER-tFT library were pelleted and flash-frozen in liquid nitrogen and stored at –80°C prior to DNA extraction.
 
-## DNA extraction and amplicon sequencing preparation
+### DNA extraction and amplicon sequencing preparation
 
 DNA extraction was performed essentially as previously described (Kats et al., 2018). The frozen 10 OD600 pellets were resuspended in 500 µL of 10 mM K2HPO4 pH 7.2, 10 mM EDTA, 50 mM 2-mercaptoethanol and incubated with 50 mg/mL zymolyase 100T (AMSBIO) at 37°C for 30–60 min until the mixture became clear. 100 µL of lysis buffer (25 mM Tris-HCl pH 7.5, 25 mM EDTA, 2.5% SDS [wt/vol]) was added and the suspension was incubated at 65°C for 45 min. Proteins were precipitated by adding 166 µL of 3 M potassium acetate and incubating on ice for 10 min. Samples were then centrifuged at 21,000×g for 10 min at 4°C. The supernatant containing DNA was collected and the DNA was precipitated by the addition of 800 µL of 100% ethanol, followed by centrifugation at 21,000×g for 10 min at 4°C. Precipitated DNA was washed with 70% (vol/vol) ethanol and resuspended in 80 µL of water.
 
 Next, 5 µL of the isolated DNA solution to amplify a 217 bp fragment encompassing the pentapeptide sequences. Partial adapters for Illumina sequencing were added by 25 cycles of PCR using primers prRP37 and prRP38 (annealing temperature of 60°C using Phusion DNA polymerase). PCR products were purified (QIAGEN, 28104), normalized to 20 ng/µL using a QuBit 3 (Invitrogen, Q32854), and sent for amplicon sequencing using Genewiz Amplicon-EZ (now Azenta Life Sciences).
 
-## Amplicon-EZ analysis
+### Amplicon-EZ analysis
 
 Sequences from the two Amplicon-EZ samples (unstable bin and input library) were analyzed for quality, trimmed, aligned, and translated by Genewiz (now Azenta Life Sciences). The sequences and translations can be found in Source data 1, sheets labeled Library Data and Sorted Bin Data. From the translated sequences, the pentapeptide region was isolated and divided into positions #1–5 (P1-P5). The amino acid count was the sum of occurrences for each amino acid at each position (Source data 1, AA Analysis Sheet). We then divided the amino acid frequency at each position for the library or unstable sorted bin by the expected amino acid frequency based on the number of codons that encode a given amino acid. This gave us the relative enrichment of each amino acid at each of the five positions (Figure 1F).
 
-## Flow cytometry-based degradation assays
+### Flow cytometry-based degradation assays
 
 For each experiment, two biological replicates were transferred into SC dropout media in a 96-well plate (Fisherbrand, 12566611) sealed with gas-permeable membranes (Sigma-Aldrich, Z763624) and grown overnight shaking at 1000 rpm at 30°C. Overnight cell density was typically around ~4–5 OD600/mL. In the morning, cells were diluted to 0.2 OD600/mL in SC dropout media and grown at 30°C shaking at 1000 rpm for ~5 hr or until the OD600/mL of the cultures was ≥0.5. Cells were pelleted at 3200×g and the supernatant was removed by aspiration prior to resuspension in SC dropout media at 2 OD600/mL. For experiments using cells treated with 50 µg/mL cycloheximide or 50 µM bortezomib, cells were transferred directly into new 96-well plates (Grenier Bio-One, 650185). To account for slowed growth by these treatments, in the same plates the untreated/DMSO-treated cells were diluted by ⅓ with fresh media. During the treatment periods, cells were incubated at 30°C while shaking at 600 rpm. After treatment, cells were pelleted at 3200×g, washed once with 1× PBS, and resuspended in 1× PBS with 1 µM Sytox Blue (Invitrogen). Cells were maintained at 4°C during flow cytometry analysis on a MACSQuant VYB (Miltenyi) running MACSQuantify software (version 2.13.2). Sytox Blue was followed using the 405 nm laser and 452/45 nm emission filters. SuperfastGFP was followed using the 488 nm laser and 452/45 nm emission filters. mCherry was followed using the 561 nm laser 615/20 nm emission filters. Downstream analyses were performed in FlowJo (version 10.7.1) with event gating to select yeast cell-sized events, single cells, live cells, and mCherry-GFP positive cells (Figure 1—figure supplement 1A). The mCherry/GFP ratio of mCherry-GFP positive cells was calculated in FlowJo and analyzed using a one-way ANOVA and Tukey’s multiple comparisons tests in GraphPad Prism.
 
-## Immunoblotting-based degradation assays
+### Immunoblotting-based degradation assays
 
 Cycloheximide-chase degradation assays were performed as described previously (Hwang et al., 2023; Peterson et al., 2023) with the following modifications. Starter cultures were grown overnight in SC dropout media while shaking at 30°C. Cultures were diluted to 0.2 OD600/mL in SC dropout media and grown for 4–5 hr to mid-log phase (0.4–1.0 OD600/mL). Cultures were pelleted at 3200×g for 5 min and resuspended to 2.0 OD600/mL in fresh media before treatment with 50 µg/mL cycloheximide. Samples were incubated at 30°C with shaking and, at the indicated time points, shifted to 4°C and collected by centrifugation at 21,000×g for 5 min. The supernatant was removed and cell pellets were incubated on dry ice prior to storage at –80°C or cell lysis. For experiments with bortezomib treatment, cells were pretreated with 50 µM bortezomib for 15 min prior to cycloheximide addition.
 
 Cells were resuspended in SUME lysis buffer (1% SDS, 8 M urea, 10 mM MOPS, pH 6.8, 10 mM EDTA) (Gardner et al., 1998) at 20 OD600/mL with acid-washed glass beads (0.1 mm, Bio-Spec). Cells were vortexed for 2 min and an equal volume of sample buffer (4% SDS, 8 M urea, 125 mM Tris pH 6.8, 10% β-mercaptoethanol, 0.02% bromophenol blue) was added and briefly vortexed. The samples were incubated at 65°C for 5 min, separated by SDS-PAGE, transferred to a PVDF membrane, immunoblotted with antibodies (anti-GFP from GenScript, anti-DYKDDDK from GenScript, anti-HA from Roche, anti-V5 from GenScript, HRP-linked ECL rabbit-IgG and mouse-IgG from Cytiva, Goat anti-Mouse IgG Alexa Fluor Plus 800 from Invitrogen), and detected by chemiluminescence (ECL Select Western Blotting Detection Reagent, Cytiva) or by Dylight800 fluorescence using a ChemiDoc MP (Bio-Rad). For quantification of the immunoblot band intensities, we used ImageLab version 6.1 (Bio-Rad). Band intensities were normalized to total protein in the sample quantified within each lane using Stain-Free Dye Imaging (Bio-Rad).
 
-## Materials availability statement
+### Materials availability statement
 
 Further information and requests for resources should be directed to and will be fulfilled by the lead contact, Ryan Baldridge (ryanbald@umich.edu).

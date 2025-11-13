@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.23421.001 Medical imaging can visualize characteristics of human cancer noninvasively. Radiomics is an emerging field that translates these medical images into quantitative data to enable phenotypic profiling of tumors. While radiomics has been associated with several clinical endpoints, the complex relationships of radiomics, clinical factors, and tumor biology are largely unknown. To this end, we analyzed two independent cohorts of respectively 262 North American and 89 European patients with lung cancer, and consistently identified previously undescribed associations between radiomic imaging features, molecular pathways, and clinical factors. In particular, we found a relationship between imaging features, immune response, inflammation, and survival, which was further validated by immunohistochemical staining. Moreover, a number of imaging features showed predictive value for specific pathways; for example, intra-tumor heterogeneity features predicted activity of RNA polymerase transcription (AUC = 0.62, p=0.03) and intensity dispersion was predictive of the autodegration pathway of a ubiquitin ligase (AUC = 0.69, p < 10 -4 ). Finally, we observed that prognostic biomarkers performed highest when combining radiomic, genetic, and clinical information (CI = 0.73, p<10 -9 ) indicating complementary value of these data. In conclusion, we demonstrate that radiomic approaches permit noninvasive assessment of both molecular and clinical characteristics of tumors, and therefore have the potential to advance clinical decision-making by systematically analyzing standard-of-care medical images. DOI: http://dx.doi.org/10.7554/eLife.23421.001
+Medical imaging can visualize characteristics of human cancer noninvasively. Radiomics is an emerging field that translates these medical images into quantitative data to enable phenotypic profiling of tumors. While radiomics has been associated with several clinical endpoints, the complex relationships of radiomics, clinical factors, and tumor biology are largely unknown. To this end, we analyzed two independent cohorts of respectively 262 North American and 89 European patients with lung cancer, and consistently identified previously undescribed associations between radiomic imaging features, molecular pathways, and clinical factors. In particular, we found a relationship between imaging features, immune response, inflammation, and survival, which was further validated by immunohistochemical staining. Moreover, a number of imaging features showed predictive value for specific pathways; for example, intra-tumor heterogeneity features predicted activity of RNA polymerase transcription (AUC = 0.62, p=0.03) and intensity dispersion was predictive of the autodegration pathway of a ubiquitin ligase (AUC = 0.69, p<10-4). Finally, we observed that prognostic biomarkers performed highest when combining radiomic, genetic, and clinical information (CI = 0.73, p<10-9) indicating complementary value of these data. In conclusion, we demonstrate that radiomic approaches permit noninvasive assessment of both molecular and clinical characteristics of tumors, and therefore have the potential to advance clinical decision-making by systematically analyzing standard-of-care medical images.
 
 ## Introduction
 
@@ -42,75 +42,423 @@ Here, we present a broad radiomic-genomic analysis in independent and large coho
 
 ## Results
 
-To uncover the mechanistic connections between radiomic phenotypes, molecular pathways, and clinical information, we performed an integrated radiomic-genomic analysis of a lung cancer discovery cohort (Dataset1,
+To uncover the mechanistic connections between radiomic phenotypes, molecular pathways, and clinical information, we performed an integrated radiomic-genomic analysis of a lung cancer discovery cohort (Dataset1, n = 262), and validated our results on an independent validation cohort (Dataset2, n = 89). We defined and extracted 636 radiomic features from CT scans (Figure 1A) quantifying tumor intensity, shape, and texture (Figure 1B), detailed in Supplementary file 1. Our approach to integrate radiomic, genomic, and clinical data is outlined in Figure 2 and clinical cohort characteristics are given in Table 1. Dataset1 can be downloaded as Figure 2—source data 1 and Dataset2 can be downloaded as Figure 2—source data 2.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23421/elife-23421-fig1-v2.jpg)
 
-**Figure 1.:** (A) Workflow of extracting radiomic features: (I) A lung tumor is scanned in multiple slices. (II) Next, the tumor is delineated in every slice and validated by an experienced physician. This allows creation of a 3D representation of the tumor outlining phenotypic differences of tumors. (III) Radiomic features are extracted from this 3D mask, and (IV) integrated with genomic and clinical data. (B) Representative examples of lung cancer tumors. Visual and nonvisual differences in tumor shape and texture between patients can be objectively defined by radiomics features, such as entropy of voxel intensity values (‘How heterogeneous is the tumor?') or sphericity of the tumor (‘How round is the tumor?').DOI: http://dx.doi.org/10.7554/eLife.23421.003
+**Figure 1.:** (A) Workflow of extracting radiomic features: (I) A lung tumor is scanned in multiple slices. (II) Next, the tumor is delineated in every slice and validated by an experienced physician. This allows creation of a 3D representation of the tumor outlining phenotypic differences of tumors. (III) Radiomic features are extracted from this 3D mask, and (IV) integrated with genomic and clinical data. (B) Representative examples of lung cancer tumors. Visual and nonvisual differences in tumor shape and texture between patients can be objectively defined by radiomics features, such as entropy of voxel intensity values (‘How heterogeneous is the tumor?') or sphericity of the tumor (‘How round is the tumor?').
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/23421/elife-23421-fig2-v2.jpg)
 
-**Figure 2.:** Two independent lung cancer cohorts (D1 and D2) with radiomic (R), genomic (G), and clinical (C) data were analyzed. D1 (n = 262) was used as a discovery cohort and D2 (n = 89) was used to validate our findings. A gene set enrichment analysis (GSEA) approach assessed scores for radiomic-pathway associations. These scores were biclustered to modules that contain features and pathways with coherent expression patterns. These modules may overlap and vary in size. Clinical association to overall survival (red), pathologic histology (purple), and TNM stage (yellow) was statistically tested in both datasets, and results were combined in a meta-analysis to investigate relationships of modules.DOI: http://dx.doi.org/10.7554/eLife.23421.00410.7554/eLife.23421.005Figure 2—source data 2.Spreadsheet containing radiomic data, normalized gene expression, and clinical data of the validation cohort.DOI: http://dx.doi.org/10.7554/eLife.23421.00510.7554/eLife.23421.006Figure 2—source data 1.Spreadsheet containing radiomic data, normalized gene expression, and clinical data of the discovery cohort.DOI: http://dx.doi.org/10.7554/eLife.23421.006
+**Figure 2.:** Two independent lung cancer cohorts (D1 and D2) with radiomic (R), genomic (G), and clinical (C) data were analyzed. D1 (n = 262) was used as a discovery cohort and D2 (n = 89) was used to validate our findings. A gene set enrichment analysis (GSEA) approach assessed scores for radiomic-pathway associations. These scores were biclustered to modules that contain features and pathways with coherent expression patterns. These modules may overlap and vary in size. Clinical association to overall survival (red), pathologic histology (purple), and TNM stage (yellow) was statistically tested in both datasets, and results were combined in a meta-analysis to investigate relationships of modules.
 
-## Association modules of radiomic features and molecular pathways
+**Table 1.**
+ Proportions of clinical characteristics in Dataset1 and Dataset2, Figure 2.Histology and TNM stage were based on pathology were available.
 
-To investigate the main associations of radiomics and underlying molecular pathways, we developed association modules describing radiomic-pathway coherency. Bi-clustering allowed simultaneous grouping of coherently expressed features and pathways into a single module, thereby reducing dimensionality. Using this approach, we identified thirteen radiomic-pathway modules in Dataset1 that were independently validated in Dataset2 (FDR < 0.05).
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Dataset1</th>
+      <th>Dataset2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gender</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>100 (45%)</td>
+      <td>59 (68%)</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>124 (55%)</td>
+      <td>28 (32%)</td>
+    </tr>
+    <tr>
+      <td>Histology</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Adenocarcinoma</td>
+      <td>129 (58%)</td>
+      <td>42 (48%)</td>
+    </tr>
+    <tr>
+      <td>Squamous</td>
+      <td>61 (27%)</td>
+      <td>33 (38%)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>34 (15%)</td>
+      <td>12 (14%)</td>
+    </tr>
+    <tr>
+      <td>Stage</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>123 (55%)</td>
+      <td>39 (45%)</td>
+    </tr>
+    <tr>
+      <td>II</td>
+      <td>35 (15%)</td>
+      <td>26 (30%)</td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>46 (21%)</td>
+      <td>12 (14%)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>20 (9%)</td>
+      <td>10 (11%)</td>
+    </tr>
+    <tr>
+      <td>Smoking Status</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Current</td>
+      <td>66 (29%)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Former</td>
+      <td>141 (63%)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>17 (8%)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Tumor site</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>224 (100%)</td>
+      <td>87 (100%)</td>
+    </tr>
+    <tr>
+      <td>Endpoints</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Overall survivals</td>
+      <td>134 (60%)</td>
+      <td>41 (47%)</td>
+    </tr>
+    <tr>
+      <td>Overall deaths</td>
+      <td>90 (40%)</td>
+      <td>46 (53%)</td>
+    </tr>
+    <tr>
+      <td>Follow up (median months)</td>
+      <td>32</td>
+      <td>31</td>
+    </tr>
+  </tbody>
+</table>
+
+### Association modules of radiomic features and molecular pathways
+
+To investigate the main associations of radiomics and underlying molecular pathways, we developed association modules describing radiomic-pathway coherency. Bi-clustering allowed simultaneous grouping of coherently expressed features and pathways into a single module, thereby reducing dimensionality. Using this approach, we identified thirteen radiomic-pathway modules in Dataset1 that were independently validated in Dataset2 (FDR < 0.05). Figure 3A and Table 2 summarize these modules, while a detailed version of every module is given in Figure 3—source data 1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/23421/elife-23421-fig3-v2.jpg)
 
-**Figure 3.:** (A) Clustering of significantly validated radiomic-pathway association modules (FDR < 0.05). Normalized enrichment scores (NESs) have been biclustered to coherently expressed modules. Every heatmap in this figure corresponds to a module (M1 - M13) with radiomic features in columns and pathways in rows. Heatmap sizes are proportional to module sizes. Elements are NESs given in Z-scores across features, and are displayed in blue when positive and green when negative. Horizontal color bars above every module indicate radiomic feature groups (black = first order statistics, orange = texture, purple = shape, red = wavelet, and pink = Laplace of Gaussian). Representative molecular pathways are displayed. (B) Clinical module network. We investigated if modules were associated with overall survival (red), stage (yellow), histology (purple), or no clinical factor (white). Relationships of modules based on their number of shared radiomic features (thickness of blue lines) are displayed by a network. While we found that most modules yield clinical information, overlaps of modules did not indicate relationships to similar clinical factors.DOI: http://dx.doi.org/10.7554/eLife.23421.00810.7554/eLife.23421.009Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.23421.009
+**Figure 3.:** (A) Clustering of significantly validated radiomic-pathway association modules (FDR < 0.05). Normalized enrichment scores (NESs) have been biclustered to coherently expressed modules. Every heatmap in this figure corresponds to a module (M1 - M13) with radiomic features in columns and pathways in rows. Heatmap sizes are proportional to module sizes. Elements are NESs given in Z-scores across features, and are displayed in blue when positive and green when negative. Horizontal color bars above every module indicate radiomic feature groups (black = first order statistics, orange = texture, purple = shape, red = wavelet, and pink = Laplace of Gaussian). Representative molecular pathways are displayed. (B) Clinical module network. We investigated if modules were associated with overall survival (red), stage (yellow), histology (purple), or no clinical factor (white). Relationships of modules based on their number of shared radiomic features (thickness of blue lines) are displayed by a network. While we found that most modules yield clinical information, overlaps of modules did not indicate relationships to similar clinical factors.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/23421/elife-23421-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.23421.010
-
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/23421/elife-23421-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.23421.011
+**Table 2.**
+ Summary of common themes in all of the identified radiomic-pathway association modules. Columns 1–3 display the module name, the number of radiomic features (nr), and pathways (np), respectively. Columns 4–5 hold the radiomic and pathway themes present in each module.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Module</th>
+      <th>nr</th>
+      <th>np</th>
+      <th>Radiomic</th>
+      <th>Pathway</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M1</td>
+      <td>6</td>
+      <td>7</td>
+      <td>Wavelet texture gray-level runs</td>
+      <td>Lipid and lipoprotein metabolism, Notch signaling, circadian clock</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+      <td>58</td>
+      <td>5</td>
+      <td>Wavelet intensity entropy; Laplace of Gaussian intensity standard deviation</td>
+      <td>Immune system, p53</td>
+    </tr>
+    <tr>
+      <td>M3</td>
+      <td>4</td>
+      <td>17</td>
+      <td>Wavelet minimum intensity</td>
+      <td>Neural system, axon guidance</td>
+    </tr>
+    <tr>
+      <td>M4</td>
+      <td>25</td>
+      <td>14</td>
+      <td>Intensity variance and mean; wavelet minimum intensity min</td>
+      <td>Biological oxidations, signaling by insulin receptor, signaling by GPCR, neuronal system</td>
+    </tr>
+    <tr>
+      <td>M5</td>
+      <td>58</td>
+      <td>8</td>
+      <td>Wavelet texture gray-level runs; wavelet intensity range and median; (wavelet) texture information correlation and cluster tendency</td>
+      <td>Axon guidance and synaptic transmission, lipoprotein metabolism, cell type determination</td>
+    </tr>
+    <tr>
+      <td>M6</td>
+      <td>64</td>
+      <td>7</td>
+      <td>Laplace of Gaussian standard deviation; wavelet texture gray-level runs; wavelet texture cluster tendency</td>
+      <td>Circadian clock, signaling by Notch</td>
+    </tr>
+    <tr>
+      <td>M7</td>
+      <td>39</td>
+      <td>8</td>
+      <td>Laplace of Gaussian intensity entropy; wavelet intensity variance; Laplace of Gaussian texture information correlation</td>
+      <td>Mitochondria, Pol III transcription</td>
+    </tr>
+    <tr>
+      <td>M8</td>
+      <td>20</td>
+      <td>17</td>
+      <td>Laplace of Gaussian standard deviation</td>
+      <td>TCA cycle and electron transport, TGF-beta receptor signaling, response to stress, transcription regulation, protein synthesis,</td>
+    </tr>
+    <tr>
+      <td>M9</td>
+      <td>8</td>
+      <td>30</td>
+      <td>Intensity variance; wavelet intensity variance</td>
+      <td>Immune system, p53, cell cycle regulation checkpoints, cell-cell interaction, circadian clock</td>
+    </tr>
+    <tr>
+      <td>M10</td>
+      <td>5</td>
+      <td>83</td>
+      <td>Shape surface (SH); wavelet texture gray-level runs</td>
+      <td>Axon guidance, neuronal system, (innate) immune system, hemostasis, FGFR signaling, TGF-beta receptor signaling, Notch signaling, circadian clock</td>
+    </tr>
+    <tr>
+      <td>M11</td>
+      <td>17</td>
+      <td>66</td>
+      <td>Wavelet intensity range; wavelet texture information correlation</td>
+      <td>Hemostasis, neural system</td>
+    </tr>
+    <tr>
+      <td>M12</td>
+      <td>32</td>
+      <td>27</td>
+      <td>Wavelet texture entropy; intensity variance; wavelet texture cluster tendency</td>
+      <td>P53, immune system</td>
+    </tr>
+    <tr>
+      <td>M13</td>
+      <td>39</td>
+      <td>26</td>
+      <td>Intensity entropy</td>
+      <td>Gene expression regulation, Pol II/III transcription</td>
+    </tr>
+  </tbody>
+</table>
 
 In general, we found that distinct radiomic features were associated with distinct biological processes. For example, texture entropy and cluster features, as well as voxel intensity variance features were associated with the immune system, the p53 pathway, and other pathways involved in cell cycle regulation in modules M2, M9, and M12 (Table 2 and Figure 3A). In another module (M8), we found those features to also be associated with transforming growth factor beta (TGF-β) receptor signaling.
 
 Further examples for radiomic-pathway links included two modules (M13 and M7) that were highly enriched for pathways involved in mitochondrial pathways, transcription, translation, and RNA regulatory mechanisms; with only one exception, all features in the larger module (M13) were voxel intensity entropy features. In addition to this feature type, the smaller module (M7) contained mainly textural variance and information correlation features.
 
-## Clinical information contained in modules
+### Clinical information contained in modules
 
-For every module, we assessed prognostic association to overall survival (OS) and associations to stage and histology based on the radiomic features of a module (Figure 3B and Table 3). Three modules (M2, M9, and M12) were significantly prognostic for OS (p<0.02), ten modules (M2, M4-8, and M10-13) were significantly associated with stage (p<0.01), and five modules (M5, M6, and M10-12) were significantly associated with histology (p<0.05). The exact p-values of all modules are given in Supplementary file 2.10.7554/eLife.23421.013Table 3.Pathway prediction and clinical association. For every module, the independent validation performance of the strongest radiomic based pathway predictors is indicated per module by the area under the curve (AUC) of the receiver operator characteristic. In addition, we highlight whether a module was significantly associated with overall survival (OS), TNM stage (ST), or pathologic histology (HI) (p<0.05).DOI: http://dx.doi.org/10.7554/eLife.23421.01310.7554/eLife.23421.014Table 3—source data 1.Radiomic pathway predictors.DOI: http://dx.doi.org/10.7554/eLife.23421.014ModuleStrongest radiomic based pathway predictionAUCOSSTHI M1Wavelet (HHH) texture (GLCM) correlation → Cholesterol biosynthesis0.64, p=0.014 M2Laplace of Gaussian intensity standard deviation → Autodegration of the E3 Ubiquitin ligase COP10.69, p=8e-4xx M3Wavelet minimum intensity → Trafficking of GLUR2 containing AMPA receptors0.67, p=0.003 M4Wavelet intensity minimum → Glutathione conjugation0.68, p=9e-4x M5Texture information correlation → Trafficking of GLUR2 containing AMPA receptors0.69, p=7e-4xx M6Wavelet texture cluster prominence → Notch1 intracellular domain regulation of transcription0.66, p=0.007xx M7Laplace of Gaussian intensity entropy → RNA polymerase III transcription0.62, p=0.031x M8Laplace of Gaussian intensity standard deviation → Pyruvate metabolism and citric acid TCA cycle0.72, p=6e-5x M9Wavelet intensity variance → Trafficking of GLUR2 containing AMPA receptors0.64, p=0.020x M10Shape compactness and shape sphericity → TRAF6 mediated NFkB activation0.66, p=0.003xx M11Wavelet texture cluster tendency → Platelet aggregation plug formation0.69, p=6e-4xx M12Wavelet texture entropy → G0 and early G10.65, p=0.007xxx M13Laplace of Gaussian intensity entropy → RNA polymerase II transcription initiation and promoter opening0.68, p=0.001x
+For every module, we assessed prognostic association to overall survival (OS) and associations to stage and histology based on the radiomic features of a module (Figure 3B and Table 3). Three modules (M2, M9, and M12) were significantly prognostic for OS (p<0.02), ten modules (M2, M4-8, and M10-13) were significantly associated with stage (p<0.01), and five modules (M5, M6, and M10-12) were significantly associated with histology (p<0.05). The exact p-values of all modules are given in Supplementary file 2.
+
+**Table 3.**
+ Pathway prediction and clinical association. For every module, the independent validation performance of the strongest radiomic based pathway predictors is indicated per module by the area under the curve (AUC) of the receiver operator characteristic. In addition, we highlight whether a module was significantly associated with overall survival (OS), TNM stage (ST), or pathologic histology (HI) (p<0.05).Table 3—source data 1.Radiomic pathway predictors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Module</th>
+      <th>Strongest radiomic based pathway prediction</th>
+      <th>AUC</th>
+      <th>OS</th>
+      <th>ST</th>
+      <th>HI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M1</td>
+      <td>Wavelet (HHH) texture (GLCM) correlation → Cholesterol biosynthesis</td>
+      <td>0.64, p=0.014</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M2</td>
+      <td>Laplace of Gaussian intensity standard deviation → Autodegration of the E3 Ubiquitin ligase COP1</td>
+      <td>0.69, p=8e-4</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M3</td>
+      <td>Wavelet minimum intensity → Trafficking of GLUR2 containing AMPA receptors</td>
+      <td>0.67, p=0.003</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M4</td>
+      <td>Wavelet intensity minimum → Glutathione conjugation</td>
+      <td>0.68, p=9e-4</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M5</td>
+      <td>Texture information correlation → Trafficking of GLUR2 containing AMPA receptors</td>
+      <td>0.69, p=7e-4</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>M6</td>
+      <td>Wavelet texture cluster prominence → Notch1 intracellular domain regulation of transcription</td>
+      <td>0.66, p=0.007</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>M7</td>
+      <td>Laplace of Gaussian intensity entropy → RNA polymerase III transcription</td>
+      <td>0.62, p=0.031</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M8</td>
+      <td>Laplace of Gaussian intensity standard deviation → Pyruvate metabolism and citric acid TCA cycle</td>
+      <td>0.72, p=6e-5</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M9</td>
+      <td>Wavelet intensity variance → Trafficking of GLUR2 containing AMPA receptors</td>
+      <td>0.64, p=0.020</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M10</td>
+      <td>Shape compactness and shape sphericity → TRAF6 mediated NFkB activation</td>
+      <td>0.66, p=0.003</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>M11</td>
+      <td>Wavelet texture cluster tendency → Platelet aggregation plug formation</td>
+      <td>0.69, p=6e-4</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>M12</td>
+      <td>Wavelet texture entropy → G0 and early G1</td>
+      <td>0.65, p=0.007</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>M13</td>
+      <td>Laplace of Gaussian intensity entropy → RNA polymerase II transcription initiation and promoter opening</td>
+      <td>0.68, p=0.001</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 We examined and summarized the relationships of clinical status, module size, and overlap of modules in a network (Figure 3B and Table 3). We found that smaller modules tended not to be associated with the tested clinical factors. The total number of shared features or pathways was generally low (mean Jaccard index 0.22, range [0.01, 0.59]). Interestingly, certain modules with higher overlap still showed different clinical associations.
 
-## Radiomic predictors of pathway status
+### Radiomic predictors of pathway status
 
 To test whether radiomic features can predict if a pathway is activated or deleted in individual patients, we fitted univariate models of radiomic features on Dataset1 and selected for every module the strongest predictor in Dataset1 according to the area under the curve (Fawcett, 2006) (AUC) for validation in Dataset2. As shown in Table 3 and Table 3—source data 1, the overall biological and radiomic themes in a module were well represented by these individual predictors. For example, a Laplace of Gaussian intensity standard deviation feature was predictive of the autodegration pathway of the E3 ubiquitin ligase COP1 (AUC = 0.69, p<10−4) in module M2, which was also associated with p53. Importantly, COP1 mediates p53 and may interact with autophagy (Rabbani et al., 2014; Kobayashi et al., 2013), which are known drivers of tumorigenesis. Indeed, this module M2 was associated with OS. We found further examples of this radiomic-genomic-clinical link to be important: For example, a texture feature (information correlation) predicted trafficking of GLUR2 containing AMPA receptors (AUC = 0.69, p<10−4) in module 5, which was associated with lipoprotein metabolism and stage. Further, two shape features (sphericity and compactness) predicted TRAF6 mediated NFkB activation (AUC = 0.66, p=0.003) in module 10, which was also associated with axon guidance and histology.
 
 Furthermore, we assessed these representative features in terms of their predictive value for driver mutations in the discovery cohort; based on a subset of 60 patients whose tumors were profiled with Sanger sequencing, we estimate that the prevalence of mutated EGFR, KRAS, and TP53 are 15%, 35%, and 20%, respectively. In particular, we found strong performance for mutations in EGFR and KRAS by several features, but only one considerable performance for TP53 (Figure 3—figure supplement 1). Interestingly, predictive value for EGFR and KRAS were selective in that features had relatively high performance for one gene but not both. Predictive power for smoking history was low to moderate (Figure 3—figure supplement 2).
 
-## Immunohistochemical investigation
+### Immunohistochemical investigation
 
-To further investigate putative connections between radiomics, immune response pathways, and OS we performed immunohistochemical staining of 22 tumors for CD3, a T-cell co-receptor. These tumors were predicted to show relatively high or low immune response by a radiomics feature selected from the three modules (M2, M9, and M12) that were associated with OS. As represented in
+To further investigate putative connections between radiomics, immune response pathways, and OS we performed immunohistochemical staining of 22 tumors for CD3, a T-cell co-receptor. These tumors were predicted to show relatively high or low immune response by a radiomics feature selected from the three modules (M2, M9, and M12) that were associated with OS. As represented in Figure 4, we found agreement between radiomics and pathology; cases that were pathologically scored to have high CD3 enrichment also expressed significantly higher radiomic values (one-sided Wilcoxon rank sum test, p=0.008). Furthermore, we tested the extent to which radiomic predictors of inflammation can be reproduced immunohistochemically. We built on our previous results suggesting that the radiomic shape feature sphericity predicts NFkB activation (module 10) and analyzed 24 stained tumors that were predicted to have relatively high or low NFkB activity for RelA, the p65 subunit of NFkB (Figure 4—figure supplement 1). Pathological assessment of enrichment for RelA revealed that those cases that indicated high RelA enrichment on average also had higher radiomic feature scores (one-sided Wilcoxon rank sum test, p=0.06).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/23421/elife-23421-fig4-v2.jpg)
 
-**Figure 4.:** Two representative cases are shown where radiomic predictions of immune response were confirmed by immunohistochemical staining for nuclear CD3 highlighting lymphocytes in brown. Each case is displayed in 0.6X and 2.0X magnification of the tumor slides, and an axial slice of the corresponding diagnostic CT scan and the total tumor volume is given for comparison. Automated quantifications of lymphocytes are displayed in addition to the radiomics score incorporated to classify into high and low responders.DOI: http://dx.doi.org/10.7554/eLife.23421.015
+**Figure 4.:** Two representative cases are shown where radiomic predictions of immune response were confirmed by immunohistochemical staining for nuclear CD3 highlighting lymphocytes in brown. Each case is displayed in 0.6X and 2.0X magnification of the tumor slides, and an axial slice of the corresponding diagnostic CT scan and the total tumor volume is given for comparison. Automated quantifications of lymphocytes are displayed in addition to the radiomics score incorporated to classify into high and low responders.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/23421/elife-23421-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.23421.016
+### Prognostic value of radiomic signatures
 
-## Prognostic value of radiomic signatures
-
-To build on previously published results, we investigated prognostic value of an existing radiomic signature for survival of lung cancer. We fitted a Cox proportional-hazards model of this signature on Dataset1 and observed significant validation by the concordance-index (CI) on Dataset2 (CI = 0.60, Noether p=0.04). Furthermore, we tested combinations of clinical, genetic, and radiomic data and observed that the combinations of data types tended to result in higher performances than given by the individual data alone (
+To build on previously published results, we investigated prognostic value of an existing radiomic signature for survival of lung cancer. We fitted a Cox proportional-hazards model of this signature on Dataset1 and observed significant validation by the concordance-index (CI) on Dataset2 (CI = 0.60, Noether p=0.04). Furthermore, we tested combinations of clinical, genetic, and radiomic data and observed that the combinations of data types tended to result in higher performances than given by the individual data alone (Figure 5). In particular, the performance of a clinical model increased from CI = 0.65 (Noether p=0.001) to CI = 0.73 (p=2×10−9) when adding the radiomic and an existing gene signature (Hou et al., 2010); this increase was significant at p=0.001 by permutation test. This combined radiomic-genetic-clinical model also performed significantly better than the combined radiomic-clinical model (p=0.007) and the clinical-genetic model (p=0.01). Adding radiomics to clinical data alone did not result in a significant increase (p=0.3). We repeated this analysis with a novel radiomic survival signature and other published gene signatures (Yuan et al., 2004; Chen et al., 2007; Hsu et al., 2009), and found that the clinical-genetic-radiomic models consistently yielded the highest performances in nearly all cases (Figure 5—figure supplement 1 and Figure 5—figure supplement 2).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/23421/elife-23421-fig5-v2.jpg)
 
-**Figure 5.:** We tested combinations of clinical, genomic, and radiomic signatures. To a clinical Cox proportional-hazards regression model with stage and histology, we first added a published gene signature and next a published radiomic signature. These models were fitted on Dataset1 and evaluated with the C-index (CI) on Dataset2. An asterisk indicates significance (p<0.05). Combining different data types resulted in increased prognostic performances. By adding radiomic and genomic information, the initial performance of the clinical model was increased from CI = 0.65 (Noether p=0.001) to CI = 0.73 (p=2×10−9).DOI: http://dx.doi.org/10.7554/eLife.23421.017
+**Figure 5.:** We tested combinations of clinical, genomic, and radiomic signatures. To a clinical Cox proportional-hazards regression model with stage and histology, we first added a published gene signature and next a published radiomic signature. These models were fitted on Dataset1 and evaluated with the C-index (CI) on Dataset2. An asterisk indicates significance (p<0.05). Combining different data types resulted in increased prognostic performances. By adding radiomic and genomic information, the initial performance of the clinical model was increased from CI = 0.65 (Noether p=0.001) to CI = 0.73 (p=2×10−9).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/23421/elife-23421-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.23421.018
-
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/23421/elife-23421-fig5-figsupp2-v2.jpg)
-
-**Figure 5—figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.23421.019
 
 ## Discussion
 
@@ -138,7 +486,7 @@ In conclusion, this study presented novel and consistent associations between ra
 
 ## Materials and methods
 
-## Discovery and validation data
+### Discovery and validation data
 
 Data underlying this study is made publically available with this article; Dataset1 can be downloaded as Figure 2—source data 1 and Dataset2 can be downloaded as Figure 2—source data 2. We analyzed two cohorts of patients with non-small cell lung cancer (NSCLC), Dataset1 and Dataset2, each consisting of pretreatment diagnostic computed tomography (CT) scans, gene expression profiles, and clinical data. While the larger cohort Dataset1 (North American) is novel and served as a discovery cohort, Dataset2 (European) has been previously published with CT scans and gene expression data (Aerts et al., 2014), and was used for independent validation of our findings. Patients in Dataset1 were treated in the Thoracic Oncology Program at the H. Lee Moffitt Cancer Center, Tampa, Florida, USA; we included patients with diagnosed primary tumors who underwent surgical resection and collected contrast-enhanced CT scans obtained within 60 days of the diagnosis between years 2006 and 2009. Patients in Dataset2 were treated at MAASTRO clinical, Maastricht, NL; we included patients with confirmed primary tumors who received surgery. Further details of Dataset2 are given by Aerts et al. (2014). The majority of CT scans were recorded to be contrast-enhancing (89% and 71% of patients in Dataset1 and Dataset2, respectively).
 
@@ -146,25 +494,25 @@ For analyses involving CT scans and gene expression data, 262 and 89 patients we
 
 For tumors in both cohorts, expression of 60,607 probes was measured on a custom Rosetta/Merck Affymetrix 2.0 microarray chipset (HuRSTA_2a520709.CDF, GEO accession number GPL15048) by the Moffitt Cancer Center. Gene expression of Dataset2 is available also at Gene Expression Omnibus (GEO) through accession number GSE58661. Gene expression values were normalized with the robust multi-array average (RMA) algorithm (Irizarry et al., 2003) implemented in the ‘affy’ Bioconductor package (Gautier et al., 2004). Probes have been curated by choosing the most variant representative among probes mapping to the same gene identifier (Entrez Gene) resulting in a total of 21,766 unique genes.
 
-## Radiomic features
+### Radiomic features
 
 We extracted 636 features grouped into I) tumor intensity (voxel statistics), II) shape, III) texture, IV) wavelet, and V) Laplace of Gaussian features. Group I-IV features have been defined as specified by Aerts et al. (2014). In addition, we added new features to Group III (see GLSZM below). Group I features are first-order statistics (e.g. mean, skewness) of all voxel intensity values in the tumor volume mask. Group II features describe the shape and size of a tumor (e.g. compactness). Group III features quantify texture in tumor images describing clustering of voxels with similar appearance by means of a gray-level co-occurrence matrix (GLCM), a run-length gray-level matrix (RLGL), or a gray-level size-zone matrix (GLSZM). These features quantify how frequent voxels of same gray-level are adjacent to each other (GLCM), how many voxels of the same gray-level appear in a consecutive run (RLGL), or the sizes of flat zones, areas of same gray-level in all directions (GLSZM). Group IV features are Group I-III features (except GLSZM) assessed after a wavelet decomposition of the image, which highlights sharp transitions in the intensity frequency spectrum. Group V consists of Group I features that have been calculated after applying a Laplace of Gaussian transformation to the image, which highlights edge structures. Detailed description and analytical definitions of the features added to the Aerts et al. (2014) feature set (n = 440) are given in Supplementary file 1. Features were calculated in 3D. For normalization, slice thicknesses of all scans were interpolated to a voxel sizes of 1 × 1×1 mm3.
 
-## Pathway analysis
+### Pathway analysis
 
 To test if a radiomic feature was associated with a molecular pathway, Spearman’s rank correlation coefficient rho was calculated for the expression of every gene across all patients and weighted by -log10(p), where p is the p-value of rho. The resulting gene rank was input to a preranked gene set enrichment analysis (GSEA) algorithm (Subramanian et al., 2005) version 2.0.14 on the C2 collection version 4 of the Molecular Signature Database (MSigDB) (Liberzon et al., 2011). This collection contains the expert-curated set of pathways from the Reactome database (Joshi-Tope et al., 2005). Those 511 out of 674 pathways were considered that contained at least 15 and at most 500 genes. GSEA reports normalized enrichment scores (NESs) for every pathway, which we further analyzed.
 
-## Radiomic-pathway association modules
+### Radiomic-pathway association modules
 
 To identify coherently expressed expressed features and pathways, a matrix holding an NESs for every pair of radiomic feature and Reactome pathway was biclustered with the Iterative Signature Algorithm (ISA) using the ‘isa2’ and ‘eisa’ packages in R and Bioconductor (Bergmann et al., 2003; Csárdi et al., 2010). As a result, each bicluster contains a set of coherently expressed features and pathways and is referred to as module. Potential module redundancy was limited using the ‘isa.unique’ function in the ‘isa2’ package with a maximum correlation threshold of 0.3. To avoid parameter sensitivity with ISA, row and column clustering seed thresholds were set to a liberal sequence of 1.5 to 2.5 by 0.5 to include all potential signals. This procedure yielded 20 putative modules. To validate these modules, we developed and applied a correlation based statistic r:=mean(CX)+mean(CY), where CX and CY are the Spearman rank correlations of all pairs of features and pathways in a module, respectively. The true r was calculated for every module in Dataset1 and validated on Dataset2 with random permutation tests (N = 1000). After correcting for multiple-hypothesis testing with the false-discovery-rate (FDR) (Benjamini and Hochberg, 1995), the validation resulted in 13 significantly enriched modules (FDR < 0.05). In total, the modules captured the associations between 210 radiomic features and 206 pathways.
 
 Module size was defined as n/N + m/M, where n and m are the number of features and pathways in a module, respectively, and N = 636 and M = 511 are the total numbers of features and pathways across all modules, respectively. Overlap of two modules was defined by the Jaccard index (Theodoridis and Koutroumbas, 2008), which is the size of union of features divided by the size of intersection of features of two module. Hereby, same feature names under different transformations were considered equivalent.
 
-## Pathway predictions
+### Pathway predictions
 
 To test radiomic pathway predictors, we used gene set variation analysis (GSVA) in Bioconductor (Hänzelmann et al., 2013) to calculate pathway enrichment scores per patient. Next, we fitted univariate logistic regression models of every feature to predict the NES sign of pathways (which corresponded to activation or deletion) in Dataset1. We assessed the concordance between the predicted probabilities of the pathway sign and the true sign with the area under the curve (AUC) of the receiver operator characteristic (ROC) (Bradley, 1997). The strongest predictor of each module according to the AUCs in Dataset1 was evaluated on Dataset2 for validation; significance of AUCs was calculated according to Noether for binary outcomes (Pencina and D'Agostino, 2004).
 
-## Associations to clinical factors
+### Associations to clinical factors
 
 Associations to OS were assessed by calculating the mean concordance-index (Harrell et al., 1982) of all features in a module univariately using the ‘survcomp’ package in Bioconductor (Schröder et al., 2011), and by validating this statistic with repeated random permutation tests (N = 1000). Similarly, associations to stage and histology were assessed by the mean of Kruskal-Wallis chi square statistics and permutation tests. As clinical information was not part of the module identification process, a meta-analysis of the results in Dataset1 and Dataset2 was conducted to account for sample size differences and other dataset specific variations. For this, a Fisher Z-transformation (Whitlock, 2005) of the independent p-values in both datasets was employed for every module with weights equal to the respective sample sizes in Dataset1 and Dataset2.
 
@@ -172,14 +520,14 @@ We tested additive prognostic effects of integrating radiomic, gene expression, 
 
 All statistical analyses were carried out using the R software (R Development Core Team, 2013) version 3.1.0 on a Linux operating system. Details of version numbers of utilized packages are available in Supplementary file 2.
 
-## Immunohistochemical staining for CD3
+### Immunohistochemical staining for CD3
 
 We selected 25 cases each that were predicted to have high and low immune response by using the value of the radiomic feature in the prognostic modules M2, M9, and M12 that showed the highest absolute correlation to the mean expression of genes in the CTLA4 inhibitory pathway that is supported to be associated with immune activity (Postow et al., 2015; Pardoll, 2012; Wolchok and Saenger, 2008). In total, 22 cases were available with enough tumor tissue and sufficient staining quality. Tumor cross section slides were stained using a Ventana Discovery XT automated system (Ventana Medical Systems, Tucson, AZ) as per manufacturer's protocol with recommended reagents. Briefly, slides were deparaffinized with EZ Prep solution (Ventana) and a heat-induced antigen retrieval method was used under mild cell conditioning using CC1 antigen retrieval buffer (Ventana). A rabbit primary antibody for CD3, (790–4341, Ventana) was used at supplied concentration and incubated for 16 min. Next a Ventana OmniMap Anti-Rabbit Secondary Antibody was applied to the samples for 16 min and the Ventana ChromoMap kit was used as the detection system. Slides were then counterstained with Hematoxylin and dehydrated. Finally, the slides were cover slipped as per normal laboratory protocol.
 
-## Immunohistochemical staining for RelA
+### Immunohistochemical staining for RelA
 
 We selected 25 cases each that were predicted to have high and low NFkB activity. The same procedure as for the CD3 staining was applied, with the exception that a standard cell conditioning was used with CC2 antigen retrieval buffer (Ventana). Furthermore, a rabbit polyclonal primary antibody for RelA (NFkB p65), (Spring Biosciences E2750) was used at 1:600 dilution* and incubated for 32 min. In total, 24 cases were available with enough tumor tissue and sufficient staining quality.
 
-## Evaluation a immunostained slide
+### Evaluation a immunostained slide
 
 The lymphocytes are highlighted by brown nuclear staining of CD3. The staining pattern was analyzed by a board-certified pathologist (MB) and scored into low and high enrichment. The percentage and intensity (weak 1+, moderate 2+ and intense 3+) of staining were recorded as well as the number and size of clustering of CD3 positive cells. The pathologist also chose the appropriate area from each sample for image analysis. We observed that the tissue section that has a complete cross section of the tumor with a complete rim of adjacent benign lung parenchyma is most ideal for image analysis. This is because the lymphocytic infiltration is commonly present at the periphery of the tumor. In addition to this assessment by a pathologist, a computational system was implemented for automatic evaluation (Supplementary file 3).

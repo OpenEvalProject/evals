@@ -13,4 +13,4 @@
 
 ## Abstract
 
-HOAP is a telomere-binding protein that has a conserved role in Drosophila , but it also needs to evolve quickly to restrict telomeric retrotransposons.
+HOAP is a telomere-binding protein that has a conserved role in Drosophila, but it also needs to evolve quickly to restrict telomeric retrotransposons.

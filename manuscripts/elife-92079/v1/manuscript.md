@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00t3r8h32 Center of Brain, Behavior, and Metabolism, University of Lübeck Lübeck Germany
-2. https://ror.org/00t3r8h32 Department of Psychology, University of Lübeck Lübeck Germany
+1. Center of Brain, Behavior, and Metabolism, University of Lübeck Lübeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))
+2. Department of Psychology, University of Lübeck Lübeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))
 
 † Corresponding author
 
@@ -36,6 +36,14 @@ Using auditory cognition as a model system, we here aim to overcome this limitat
 
 We here aim to fill this gap by analysing 2-year changes in the sensory, neural, and behavioural domain in a longitudinal subsample (N = 105; 39–82 y) of the original AUDADAPT cohort (Tune et al., 2021; Figure 2A). We apply a combination of advanced cross-sectional and longitudinal modelling strategies to address the following specific research questions (Figure 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig2-v1.jpg)
+
+**Figure 2.:** (A) Longitudinal cohort of healthy middle-aged and older adults measured twice, 2 y apart. Circles represent individual participants at a given measurement time (dark grey: timepoint [T] 1, light grey: T2, white: dropouts after T1). Bottom: age distribution at T1 and T2 across 5-year bins. (B) Left: T1(N = 155) air conduction hearing thresholds per individual (thin grey lines) and age group (thick coloured lines). Note that for didactic purposes, throughout the article, thresholds are expressed as –dB HL to highlight the decrease in hearing acuity with age (left). Right: Pure-tone average hearing acuity (0.5, 1, 2, and 4 kHz across both ears; higher is better) negatively correlates with age (N = 155; r = –0.43, p=3.73 × 10–6). (C) Participants listened to two sentences presented simultaneously to the left and right ear. In 50% of trials, a preceding visual cue indicated the to-be-attended target sentence. Listening behaviour is quantified via the accuracy and speed in identifying the final word of the target sentence. (D) Left: neural speech tracking as a proxy of an individual’s neural filtering ability. Stimulus envelopes of attended and ignored sentences were reconstructed from source-localised electroencephalogram (EEG) activity in auditory cortex (see ‘Materials and methods’ for details) and correlated with the actual envelopes. Right: better neural filtering results from stronger neural tracking of attended compared to ignored speech. We analysed neural filtering derived from the entire sentence presentation period.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Trial structure of dichotic listening task. In each trial, participants listened to two dichotically presented short sentences spoken by the same speaker. They had to identify the final word in one of the two sentences. Sentence presentation was preceded by two visual cues. (B) 2 × 2 design in which the presentation of the spatial-attention and semantic cue was fully crossed. Each cue was presented in either an informative or uninformative neural version. (C) Prior to the listening task, we recorded resting-state electroencephalogram (EEG) data. The listening task was presented in six blocks of 60 trials with break in between.
+
 First, by focusing on each domain individually, we ask how sensory, neural, and behavioural functioning evolve cross-sectionally across the middle and older adult lifespan (Figure 1B). More importantly, we also ask how they change longitudinally across the studied 2-year period (Figure 1C, Q1), and whether ageing individuals differ significantly in their degree of change (Q2). We expect individuals’ hearing acuity and behaviour to decrease from T1 to T2. Since we previously observed inter-individual differences in neural filtering to be independent of age and hearing status, we did not expect any systematic longitudinal change in neural filtering.
 
 Second, we test the longitudinal stability of the previously observed age- and hearing-loss-independent effect of neural filtering on both accuracy and response speed (Figure 1A). To this end, we analyse the multivariate direct and indirect relationships of hearing acuity, neural filtering, and listening behaviour within and across timepoints.
@@ -54,9 +62,17 @@ We extracted individuals’ mean accuracy and response speed (calculated as the 
 
 We follow a three-step analysis strategy to address our specific research questions. First, we provide a largely descriptive overview of the observed average 2-year change per studied domain. Second, we follow up on this fundamental analysis with a causal mediation analysis (Imai et al., 2010) and single-trial mixed-effect model analysis geared to assess the longitudinal stability of our recently reported effects of age, hearing acuity, and neural filtering on listening task performance. Third, we integrate and extend the first two analysis perspectives in a joint LCSM (McArdle, 2009) to most directly probe the role of neural filtering ability as a predictor of future attentive listening ability. Addressing our key change-related research questions at the latent rather than the manifest level supersedes the manual calculation of notoriously noisy differences scores and effectively removes the influence of each metric’s reliability on the estimation of change-related relationships (McArdle, 2009; Kievit et al., 2018; McArdle and Nesselroade, 1994).
 
-## Listening performance remains stable despite decreased hearing acuity
+### Listening performance remains stable despite decreased hearing acuity
 
 In a first analysis (Figure 3), we characterised how hearing acuity, neural filtering, and listening performance change across the middle to older adult lifespan. Additionally, we analysed longitudinal change from timepoint 1 (T1) to timepoint 2 (T2). We used the same linear mixed-effect models to test cross-sectional effects of age and longitudinal changes with time. We additionally quantified each measure’s test–retest reliability as their T1–T2 Pearson’s correlation.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig3-v1.jpg)
+
+**Figure 3.:** For each domain, coloured vectors (colour coding four age groups for illustrative purposes, only) in the respective left subpanels show an individual’s change from T1 to T2 (N = 105), along with the cross-sectional trend plus 95% confidence interval (CI) separately for T1 (dark grey) and T2 (light grey). Top right subpanels: correlation of T1 and T2 as a measure of test–retest reliability along with the 45° line (grey) and individual data points (black circles). Bottom right panels: mean longitudinal change per age group (coloured vectors) and grand mean change (grey). Note that accuracy is expressed here as proportion correct for illustrative purposes, but was analysed logit-transformed or by applying generalised linear models.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mean progression of hearing loss from T1 to T2 as calculated from 2-year differences in the individual pure-tone average hearing thresholds at 0.5, 1,2, and 4 kHz. Coloured dots represent the single-subject difference across four age groups (total N = 105 participants), while black dots and error bars indicate grand-average and bootstrapped 95% confidence interval (CI). Box plots show median centre line, 25th to 75th percentile hinges, whiskers indicate minimum and maximum within 1.5× interquartile range. (B) Analogue to panel (A) but showing the projected hearing loss progression (increase in db HL per decade) assuming a constant rate of change per individual.
 
 Note that throughout the article and all analyses, we reversed the sign of pure-tone average (PTA) values to express them as an index of hearing acuity rather than hearing loss (i.e. higher values indicating better acuity). Similarly, for more intuitive interpretation, accuracy is visually presented as mean proportion correct but was logit-transformed for all statistical analyses to satisfy model assumptions.
 
@@ -70,7 +86,7 @@ We also assessed the reliability of two established neural traits using resting-
 
 The temporal instability of neural filtering challenges its status as a candidate trait-like neural marker of attentive listening ability. At the same time, irrespective of the degree of reliability of neural filtering itself, across individuals it may still be reliably linked to the behavioural outcome (Figure 1). This will be addressed next.
 
-## Neural filtering reliably supports listening performance independent of age and hearing status
+### Neural filtering reliably supports listening performance independent of age and hearing status
 
 On the basis of the full (T1 and T2) dataset, we aimed to replicate our key T1 results and test whether the previously observed between-subjects brain–behaviour relationship would hold across time: we expected an individual’s neural filtering ability to impact their listening performance (accuracy and response speed) independently of age or hearing status (Tune et al., 2021). Given the moderately strong correlation of age and hearing acuity (r = –0.43; p<0.001; Figure 2B), we employed causal mediation analysis to model the direct as well as the hearing-acuity-mediated effect of age on the behavioural outcome (Imai et al., 2010). To formally test the stability of direct and indirect relationships across time, we used a moderated mediation analysis. In this analysis, the inclusion of interactions by timepoint tested whether the influence of age, sensory acuity, and neural filtering on behaviour varied significantly across time.
 
@@ -90,7 +106,7 @@ Lending credibility to our previous results, stronger single-trial neural filter
 
 **Figure 4.:** Causal mediation analysis of age, hearing acuity, and neural filtering on response speed (A) and logit-transformed accuracy (B) of N = 105 individuals. Graphs next to each path indicate standardised coefficients plus 95% confidence interval (CIs) separately for the full dataset (black), T1 (dark grey), and T2 (light grey). We did not find any significant modulation of the observed effects with time (see text for results). (C) Neural filtering strength was found to be predictive of accuracy at the single-trial level at both T1 (top) and T2 (bottom). Grey lines show individual effects, while blue thick line shows the group-level fixed effect along with 95% CI. OR = odds ratio, **p<0.01.
 
-## Accuracy is longitudinally stable but speed and neural filtering increase at T2
+### Accuracy is longitudinally stable but speed and neural filtering increase at T2
 
 Having established the longitudinal stability of the beneficial impact of intact neural filtering on listening performance, we turned to our final, most comprehensive analysis.
 
@@ -104,9 +120,21 @@ We then constructed univariate LCSMs to test for significant mean change in each
 
 On average, listening task accuracy remained stable (b0 = 0.053, SE = 0.045, Δχ2(df = 1) = 1.33, p=0.25). Response speed, on the other hand, showed a significant mean increase over time (b0 = 0.13, SE = 0.03, Δχ2(df = 1) = 12.79, p<0.001; Figure 5A). Similarly, the model of neural filtering showed a (marginally) significant mean increase (b0 = 0.24, SE = 0.11, Δχ2(df = 1) = 2.98, p=0.08; Figure 5A).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig5-v1.jpg)
+
+**Figure 5.:** (A) Univariate latent change score models (LCSM) for response speed (left) and neural filtering (right). All paths denoted with Latin letters refer to freely estimated but constrained to be equal parameters of the respective measurement models. Greek letters refer to freely estimated parameters of the structural model. Highlighted in black is the estimated mean longitudinal change from T1 to T2. Scatterplots in the top-left corner illustrate how capturing T1 and T2 neural and behavioural functioning as latent factors improves their respective test–retest reliability. (B) LCSM relating 2-year changes in neural filtering strength to changes in response speed. Black arrows indicate paths or covariances of interest. Solid black arrows reflect freely estimated and statistically significant effects, while dashed black arrows reflect non-significant effects. All estimates are standardised. Grey arrows show paths that were freely estimated or fixed as part of the structural model but that did not relate to the main research questions. For visual clarity, manifest indicators of the measurement model and all symbols relating to the estimated mean structure are omitted but are identical to those shown in panel (A). ***p<0.001, **p<0.01, *p<0.05, ✝p=0.08. (C) Scatterplots of model-predicted factor scores that refer to the highlighted paths in panel (B). Top panel shows that baseline-level neural filtering did not predict 2-year change in behavioural functioning, while bottom panel shows the absence of a significant change–change correlation. All panels include data of N = 105 individuals.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Model estimated brain–behaviour baseline–change (via regression) and change–change (via their covariance) relationship. First-order latent variables (T1, T2) were constructed from manifest neural and behavioural metrics extracted from the first and second half of the experiment, respectively. M, mean; COV, covariance; REG, regression path; RES, residual; λ,factor loading; Δ, change. Residuals and covariances of manifest variables of the same metric were each set to be equal.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Bottom: N = 105 individuals sorted by their change in neural filtering. Positive values indicate an increase in neural filtering over time, while negative values indicae a decrease. Applying the same ordering to individuals’ longitudinal change in response speed (top) does not uncover a systematic relationship in cross-domain changes.
+
 As a proof of principle, we extracted latent factor scores for T1/T2 neural filtering and response speed from their respective univariate LCSM. By correlating T1 and T2 factor scores per domain, we show how the explicit modelling of measurement errors helps to improve the test–retest reliability compared to that observed at the level of manifest variables (see insets in Figure 5A; neural filtering: r = 0.65, p<0.001, response speed: r = 0.75, p<.001).
 
-## Baseline neural functioning does not predict future change in listening behaviour
+### Baseline neural functioning does not predict future change in listening behaviour
 
 Based on the univariate results, we then connected the two metrics that showed a significant mean change, namely speed and neural filtering, in a bivariate model of change (Figure 5B; see also Figure 5—figure supplement 1 for full model details).
 
@@ -120,13 +148,13 @@ We also observed that participants’ age at T1 covaried with the individual deg
 
 Importantly, however, an individual’s latent T1 level of neural filtering strength was not predictive of the ensuing latent T1–T2 change in response speed (β = 0.02, SE = 0.16, Δχ2(df = 1) = 0.02, p=0.90). We did not have any a priori hypotheses on the influence of T1 speed on the individual T1–T2 change in neural filtering. Still, in a control analysis that freely estimated the respective path, we found that an individual’s latent T1 level of response speed was not predictive of the ensuing latent T1–T2 change in neural filtering (β = –0.11, SE = 0.21, Δχ2(df = 1) = 0.31, p=0.58).
 
-## Neural filtering ability and listening behaviour follow independent developmental trajectories in later adulthood
+### Neural filtering ability and listening behaviour follow independent developmental trajectories in later adulthood
 
 Finally, we turn to the last piece in our investigation where we address the question of whether individual differences in the neural and behavioural longitudinal change are connected. In other words: Are the contemporaneous changes along the two studied domains correlated or do they occur largely independently of one another?
 
 Change score modelling revealed that longitudinal change in the neural and the behavioural domain occurred largely independent of one another despite their systematic relationship within each separate measurement timepoint (ϕ = 0.25, SE = 0.15, Δχ2(df = 1) = 2.74, p=0.1). In other words, those individuals who showed the largest change in neural filtering were not necessarily the ones who also changed the most in terms of their behavioural functioning (see Figure 5C, bottom panel, and Figure 5—figure supplement 2).
 
-## Control analyses: The weak correlation of behavioural and neural change is robust against different quantifications of neural filtering
+### Control analyses: The weak correlation of behavioural and neural change is robust against different quantifications of neural filtering
 
 Taken together, our main analyses revealed that inter-individual differences in behavioural change could only be predicted by baseline age and baseline behavioural but not neural functioning, and did not correlate with contemporaneous neural changes.
 
@@ -135,6 +163,18 @@ However, one could ask in how far core methodological decisions taken in the cur
 To evaluate the impact of these consideration on our main findings, we conducted two additional control analyses. First, we repeated the main analyses using the neural filtering index (and response speed) averaged across selective-attention trials, only. Second, we repeated the main analyses focused on the neural tracking of attended speech only, again averaged across selective-attention trials.
 
 As shown in Figure 6, taken together, the control analyses provide compelling empirical support for the robustness of our main results: linking response speed and neural filtering under selective attention strengthened their relationship at T1 (ϕ = 0.54, SE = 0.15, Δχ2(df = 1) = 2.74, p=0.1; Figure 6B; see also Figure 6—figure supplement 1) but did not yield any significant effects for the influence of T1 neural filtering on behavioural change (β = 0.13, SE = 0.21, Δχ2(df = 1) = 0.43, p=0.51), or for the relationship of neural and behavioural change (ϕ = 0.26, SE = 0.14, Δχ2(df = 1) = 3.1, p=0.08; please note the close correspondence to path estimates reported in Figure 5).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig6-v1.jpg)
+
+**Figure 6.:** Cross-sectional and longitudinal change in neural filtering (A) and neural tracking of attended speech (C) averaged across selective-attention trials, only. Coloured vectors (colour coding four age groups for illustrative purposes, only) in the left subpanels show individual T1–T2 change along with the cross-sectional trend plus 95% confidence interval (CI) separately for T1 (dark grey) and T2 (light grey). Top right: correlation of T1 and T2 as a measure of test–retest reliability along with the 45° line (grey) and individual data points (black circles). Bottom right: mean longitudinal change per age group and grand mean change (grey). (B, D) Latent change score model (LCSM) relating 2-year changes in neural filtering (B) /neural tracking (D) strength to changes in response speed. Black arrows show the paths or covariances of interest that were freely estimates, while grey arrows show paths that were freely estimated or fixed as part of the structural model but did not relate to the main research questions. Solid arrows indicate statistically significant effects, while dashed arrows reflect non-significant paths. All estimates are standardised. ***p<0.001, **p<0.01, *p<0.05. All panels include data from N = 105 individuals.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Coloured vectors (colour coding four age groups for illustrative purposes, only) in the left subpanels show individual T1–T2 change in N = 105 individuals along with the cross-sectional trend plus 95% confidence interval (CI) separately for T1 (dark grey) and T2 (light grey). Top right: correlation of T1 and T2 as a measure of test–retest reliability along with the 45° line (grey) and individual data points (black circles). Bottom right: mean longitudinal change per age group and grand mean change (grey).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Coloured vectors (colour coding four age groups for illustrative purposes, only) in the left subpanels show individual T1–T2 change in N = 105 individuals along with the cross-sectional trend plus 95% confidence interval (CI) separately for T1 (dark grey) and T2 (light grey). Top right: correlation of T1 and T2 as a measure of test–retest reliability along with the 45° line (grey) and individual data points (black circles). Bottom right: mean longitudinal change per age group and grand mean change (grey).
 
 The second control analysis revealed a substantially higher manifest-level test–retest reliability of neural tracking of attended speech (r = 0.65, p<0.001; Figure 6C, see also Figure 6—figure supplement 2 for neural tracking of ignored speech) compared to that of the neural tracking index. However, when linked to longitudinal changes in response speed, this analysis provided even less evidence for systematic change-related relationships: baseline levels of attended-speech tracking did not predict future change in response speed (β = 0.18, SE = 0.11, Δχ2(df = 1) = 2.73, p=0.10), and changes in neural and behavioural functioning occurred independently of one another (ϕ = –0.03, SE = 0.12, Δχ2(df = 1) = 0.06, p=0.81).
 
@@ -150,7 +190,7 @@ Over 2 y from T1 to T2, individuals’ hearing ability worsened as expected (Lin
 
 Crucially, however, momentary states of neural functioning were not predictive of future behavioural change, and the dynamics of longitudinal change at the neural and behavioural level appear to follow largely independent trajectories. Notably, these key findings hold for different definitions of neural-attentional filtering and under different spatial-attention conditions (see ‘Control analyses’).
 
-## Neural filtering fidelity as a trait-like neural marker of individual attentive listening ability?
+### Neural filtering fidelity as a trait-like neural marker of individual attentive listening ability?
 
 In recent years, the enhanced representation of behaviourally relevant sounds via their prioritised neural tracking has been reported in numerous listening studies investigating different acoustic environments, participant populations, and stages of auditory processing (Tune et al., 2021; O’Sullivan et al., 2015; Fiedler et al., 2019; Kaufman and Zion Golumbic, 2023; Kraus et al., 2021; Brodbeck et al., 2020; Forte et al., 2017; Fuglsang et al., 2020).
 
@@ -166,7 +206,7 @@ Under this interpretation, the stable link of neural filtering to listening beha
 
 What does this mean for the potential translational value of neural tracking? Their highly dynamic nature gives neural tracking-based metrics value as online neural indicators of a listener’s momentary attentional focus. As such, they could serve as critical neural read-outs in novel brain–computer interfaces such as neurally steered hearing aids (Van Eyndhoven et al., 2017; Ceolini et al., 2020; O’Sullivan et al., 2017). At the same time, however, their non-stationarity over time limits their potential as translational targets for diagnosis and therapeutic intervention (Panela et al., 2024; Gillis et al., 2021; Di Liberto et al., 2022).
 
-## Individual trajectories of listening behaviour cannot be explained by changes within a single domain
+### Individual trajectories of listening behaviour cannot be explained by changes within a single domain
 
 As a second central query of the current study, we went beyond the establishment of robust brain–behaviour relationships and directly probed the potency of neural filtering to predict behavioural change over time (Woo et al., 2017). We asked whether individual trajectories of listening behaviour could be predicted by past levels of neural filtering or by co-occurring changes in neural filtering.
 
@@ -186,17 +226,17 @@ Not least, there are a number of methodological choices that might constrain the
 
 The conclusion stands, though, that individual trajectories in listening behaviour cannot be explained by longitudinal change along a single dimension. Instead, a better understanding of the influences shaping individual listening behaviour across the adult lifespan will critically rely on uncovering the relative contribution and age-dependent dynamics of sensory, neural, and cognitive factors.
 
-## Conclusion
+### Conclusion
 
 The results presented here support the role of attention-guided neural filtering as a readout of an individual’s neural attentional state. At the same time, the state-like nature of neural tracking-based metrics limits their translational potential as predictors of longitudinal change in listening behaviour over middle to older adulthood. Our data caution against explaining audiology-typical listening performance solely from changes in aspects of neural functioning as listening behaviour and neural filtering ability follow largely independent developmental trajectories. Our results critically inform translational efforts aimed at the preservation and restoring of speech comprehension abilities in ageing individuals.
 
 ## Materials and methods
 
-## Data collection
+### Data collection
 
 The analysed data are part of a large-scale longitudinal study on the neural and cognitive mechanisms supporting adaptive listening behaviour in a prospective cohort of healthy middle-aged and older adults (‘The listening challenge: How ageing brains adapt (AUDADAPT)’; https://cordis.europa.eu/project/rcn/197855_en.html). This project encompassed the collection of different demographic, audiological, behavioural, and neurophysiological measures across initially two timepoints spaced approximately 2 y apart. The analyses carried out on the data aim at relating adaptive listening behaviour to changes in different neural dynamics. Given the longitudinal nature of the current study, all procedures concerning data collection, as well as EEG recording and analysis, are identical to those detailed in our recently published analysis of T1 data using the same experimental paradigm (Figure 2—figure supplement 1; Tune et al., 2021).
 
-## Participants and procedure
+### Participants and procedure
 
 We here report on a total N = 105 right-handed German native speakers (median age at T2 63 y; age range 39–82 y; 61 females) who underwent audiological, behavioural, and EEG assessment at two separate timepoints. On average, the measurement timepoints were spaced 23.2 (± SD 4.0) mo apart.
 
@@ -210,7 +250,7 @@ At each measurement timepoint, participants underwent detailed pure-tone and spe
 
 Participants gave written informed consent and received financial compensation (10€ per hour). Procedures were approved by the ethics committee of the University of Lübeck and were in accordance with the Declaration of Helsinki.
 
-## Dichotic listening task
+### Dichotic listening task
 
 At each timepoint, participants performed a previously established dichotic listening task (Alavash et al., 2019). We provide full details on trial structure, stimulus construction, recording, and presentation in our previously published study on the first (N = 155) wave of data collection (but see also Figure 2—figure supplement 1; Tune et al., 2021).
 
@@ -218,7 +258,7 @@ In short, in each of the 240 trials, participants listened to two competing, dic
 
 To account for differences in hearing acuity within our group of participants, all stimuli were presented 50 dB above the individual sensation level.
 
-## EEG recording and analysis
+### EEG recording and analysis
 
 The approach for EEG recording, pre-processing, and subsequent analysis is identical to the procedures carried out for T1 data collection and analysis (Tune et al., 2021).
 
@@ -228,19 +268,19 @@ We then calculated a neural filtering index across the entire sentence presentat
 
 The EEG analyses were carried out in MATLAB 2016b using the Fieldtrip toolbox (v. 2017-04-28), the Human Connectome Project Workbench software (v1.5), FreeSurfer (v.6.0), and the multivariate temporal response function (mTRF) toolbox (v1.5) (Crosse et al., 2016).
 
-## Behavioural and audiological data analysis
+### Behavioural and audiological data analysis
 
 We evaluated participants’ behavioural performance in the listening task with respect to accuracy and response speed. For the binary measure of accuracy, we excluded trials in which participants failed to answer within the given 4 s response window (‘timeouts’). Spatial stream confusions, that is, trials in which the sentence-final word of the to-be-ignored speech stream were selected, and random errors were jointly classified as incorrect answers. The analysis of response speed, defined as the inverse of reaction time, was based on correct trials only.
 
 We defined participants’ hearing acuity as their PTA composed of (air-conduction) hearing thresholds at the frequencies of 0.5, 1, 2, and 4 kHz. Individual PTA values were then averaged across the left and right ear.
 
-## Statistical analysis
+### Statistical analysis
 
 For statistical analyses focused on between-participant (‘trait-level’) effects, behavioural performance metrics and neural filtering index values were averaged across all trials and experimental conditions to arrive at one trait-level estimate per participants. This approach was also motivated by previous results based on T1 data: here, we had observed that stronger neural speech tracking led to overall faster and to more trials with accurate responses irrespective of the specific cue-cue condition (Tune et al., 2021). Accuracy was logit-transformed for statistical analysis but expressed as proportion correct for illustrative purposes. Similarly, for more intuitive interpretation, we reversed the sign of PTA values for higher values to correspond to better hearing ability.
 
 All analyses were performed in R (v.4.2.2; R Development Core Team, 2019) using the packages lme4 (v.1.1-31; Bates et al., 2015), mediation (v4.5.0; Tingley et al., 2014), lavaan (v0.6-12; Rosseel, 2012), and OpenMx (v2.21.8; Neale et al., 2016).
 
-## Linear mixed-effect modelling
+### Linear mixed-effect modelling
 
 As the first step of our three-part analysis approach, we applied general linear mixed-effect models to test for cross-sectional and longitudinal changes in trait-level sensory acuity, neural filtering, and listening performance. These models included age, timepoint, and their interaction as fixed effect regressors and allowed random participant-specific intercepts.
 
@@ -250,15 +290,15 @@ To tease apart state-level (i.e. within-participant) and trait-level (i.e. betwe
 
 We used deviation coding for categorical predictors and z-scored all continuous regressors. p-Values for individual model terms in general linear mixed-effect models are based on the Satterthwaite approximation for degrees of freedom, and on z-values and asymptotic Wald tests for the generalised linear mixed-effect model of accuracy (Luke, 2017).
 
-## Causal mediation analysis
+### Causal mediation analysis
 
 We performed causal mediation analysis to model the direct as well as the hearing-acuity-mediated effect of age on accuracy and response speed (Imai et al., 2010). Critically, these models also included a direct (i.e. independent of age and hearing loss) path of neural filtering on behaviour. To formally test the stability of direct and indirect relationships across time, we used a moderated mediation analysis (Preacher et al., 2007). In this analysis, the inclusion of interactions by timepoint tested whether the influence of age, sensory acuity, and neural functioning on behaviour varied across time. We z-scored all dependent and independent variables, and estimated the magnitude of direct and mediated effects along with percentile-based confidence intervals on the basis of 1000 replications.
 
-## Bayes factor calculation
+### Bayes factor calculation
 
 To facilitate interpretation of non-significant effects, we calculated the Bayes factor (BF) based on the comparison of Bayesian information criterion (BIC) (Wagenmakers, 2007). We report log Bayes factors, with a log BF01 of 0 representing equal evidence for and against the null hypothesis; log BF01 with a positive sign indicating relatively more evidence for the null hypothesis than the alternative hypothesis, and vice versa. Magnitudes >1 are taken as moderate, >2.3 as strong evidence for either of the alternative or null hypotheses, respectively (Lee and Wagenmakers, 2014).
 
-## Latent change score modelling
+### Latent change score modelling
 
 In the third and final step of our analysis approach, we used structural equation modelling (SEM) to investigate the role of neural filtering as a predictor of behavioural change. We used LCSM (McArdle, 2009; Kievit et al., 2018) to test (i) whether an individual’s T1 neural filtering strength can be predictive of 2-year changes in behaviour, and (ii) whether 2-year changes in neural filtering and listening behaviour are systematically related. All models were specified and fitted with the R-based package lavaan (Rosseel, 2012) using maximum likelihood estimation.
 

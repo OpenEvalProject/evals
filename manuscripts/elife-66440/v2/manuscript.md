@@ -27,6 +27,18 @@ WNT signaling is one of the most ancient pattern-forming cell signaling cascades
 
 The key regulatory event in WNT/CTNNB1 signaling (traditionally known as ‘canonical WNT signaling’) is the accumulation and nuclear translocation of the transcriptional co-activator β-catenin (Catenin beta-1, hereafter abbreviated as CTNNB1) (Figure 1A). In the absence of WNT signaling, rapid turnover by the so-called destruction complex maintains low levels of CTNNB1. This cytoplasmic complex consists of the scaffold proteins Adenomatous Polyposis Coli Protein (APC) and Axis Inhibition Proteins 1 and 2 (AXIN), which bind CTNNB1, and the serine/threonine kinases Casein kinase I isoform alpha (CSNK1A1) and Glycogen Synthase Kinase-3 alpha and beta (GSK3), which subsequently phosphorylate residues S45, T41, S37, and S33 (Amit et al., 2002; Liu et al., 2002). This primes CTNNB1 for ubiquitination by E3 Ubiquitin Protein Ligase beta-TrCP 1 and 2 (BTRC and FBXW11) and subsequent proteasomal degradation (Aberle et al., 1997; Latres et al., 1999). In the current working model for WNT/CTNNB1 signaling, binding of WNT ligands to the Frizzled (FZD) and low-density lipoprotein receptor-related protein 5 and 6 (LRP) receptor complex sequesters and inhibits the destruction complex at the membrane in a process that involves Disheveled (DVL) (Bilic et al., 2007; Kan et al., 2020; Ma et al., 2020; Schwarz-Romond et al., 2007). This allows newly synthesized CTNNB1 to accumulate and translocate to the nucleus, where CTNNB1 binds to TCF/LEF transcription factors (TCF7, TCF7L1, TCF7L2, and LEF1) to regulate target gene transcription as part of a larger transcriptional complex (Behrens et al., 1996; Fiedler et al., 2015; Molenaar et al., 1996; van Tienen et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cartoon depicting the current model of the WNT/CTNNB1 pathway. In the absence of WNT ligands (left, ‘OFF’), free cytoplasmic CTNNB1 is captured by the destruction complex consisting of AXIN, APC, CSNK1A1, and GSK3, which leads to its phosphorylation, BTRC-mediated ubiquitination and subsequent proteasomal degradation, resulting in low levels of CTNNB1 in the cytoplasm and nucleus. Binding of the WNT protein (right, ‘ON’) to the FZD and LRP receptors inhibits the destruction complex through DVL. CTNNB1 accumulates in the cytoplasm and subsequently translocates to the nucleus, where it promotes the transcription of target genes, such as AXIN2, as a co-activator of TCF/LEF transcription factors. (B) Cartoon depicting exon 2 of the CTNNB1 locus, which contains the start codon, and the CTNNB1 protein before (top) and after (bottom) introduction of the SGFP2 by CRISPR/Cas9-mediated homology directed repair. (C) Schematic of the experimental workflow and timeline for generating HAP1SGFP2-CTNNB1 clones. Cas9, gRNA and repair templates are transfected as plasmids. The repair template contains the coding sequence of SGFP2 surrounded by 800 bp homology arms on either side and lacks the gRNA recognition site (see supplement 2 of this figure). A short puromycin selection step is included from 24 to 48 hr after transfection to enrich for transfected cells. Haploid, GFP-positive cells are sorted, and single cell clones are expanded for further analysis. (D–F) FACS plots illustrating control (D) and SGFP2-CTNNB1-tagged cells (E–F). (D) Cells transfected with Cas9 and gRNA in the absence of a repair template were used to set the gate for SGFP2-positive events. (E) A small population of cells expressing low levels of SGFP2 can be detected when cells are transfected with Cas9, gRNA, and repair template. (F) Treatment for 24 hr of cells similar to those depicted in (D) with 8 μM CHIR99021 does not change the amount of cells that are SGFP2 positive, but increases the SFP2 signal, most likely reflecting an increase in SGFP2-tagged beta catenin levels on a per cell basis and supporting the notion that the gated events indeed represent successfully tagged cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Detailed view of CTNNB1 exon two depicting gRNA design relative to the wildtype (top) and repaired (bottom) CTNNB1 allele. Note that the repair template contains the same sequence as the repaired allele depicted here. CTNNB1 sequences are shown in capital letters, SGFP2 sequences shown in lowercase. 5’ UTR, SGFP2 and CTNNB1 and intron regions are indicated below the colored boxes. The gRNA (white arrow box above sequence) overlaps the start codon (depicted in bold), resulting in a Cas9-mediated double-strand break in the 5’UTR (predicted cut site indicated by dotted line and scissor, PAM site underlined). After successful homologous recombination, most of the gRNA-binding site is destroyed, thus minimizing the chance of cutting the repair template or re-cutting the repaired allele. PCR-based screening confirmed that 22/23 single-cell sorted clones indeed showed an integration of the expected size at the CTNNB1 locus. Complete sequence coverage of the insertion site in exon 2 was obtained for 9/11 sequenced clones, of which eight showed the desired repair, and one clone showed an additional point mutation in the repaired locus. (B–C) Sequencing of three independent HAP1SGFP2-CTNNB1 clones on the 5’ (B) and the 3’ (C) end of SGFP2 integration in exon 2 of CTNNB1. Sanger sequencing of the endogenous CTNNB1 locus of clone 1, clone 2, and clone 3 shows an exact match to the design and thus correct homology directed repair.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) Single-cell gating based on forward scatter (FSC) and side scatter (SSC). (D) Live cell gating based on DAPI exclusion. (E–F) Haploid cell sorting based on Vibrant live-cell DNA dye. (E) Haploid cell cycle profile. Only cells in G1 can be confidently identified as haploid (1 n). The second gate contains both G2/M haploid cells, as well as diploid (2 n) and polyploid events. Of note, the depicted HAP1WT population is mainly haploid. (F) Back-gating of the haploid G1 population from E onto the forward and side scatter plot. A stringent gate is set based on cell size to ensure only G1 (1 n) cells qualify for sorting.
+
 The working model for WNT/CTNNB1 signaling described above is the result of almost 40 years of research. The use of traditional genetic and biochemical approaches has allowed identification of the core players, as well as dissection of the main signaling events. However, multiple aspects of WNT/CTNNB1 signaling remain poorly understood. For instance, the exact molecular composition of the destruction complex as well as the mechanism for its inhibition remain unclear (reviewed in Tortelote et al., 2017). How WNT/CTNNB1 signaling regulates the subcellular distribution of CTNNB1 also requires further scrutiny.
 
 Most biochemical techniques lead to loss of spatial information and averaging of cell-to-cell heterogeneity, since proteins are extracted from their cellular context. Additionally, temporal information is usually limited to intervals of several minutes or hours. Live-cell microscopy offers better spatiotemporal resolution. Currently, however, many of these studies are conducted by overexpressing the protein(s) of interest. This can severely affect activation, localization, and complex formation (Gibson et al., 2013; Mahen et al., 2014). Although stabilization of CTNNB1 by WNT signaling has been extensively studied, very few studies have focused on the spatiotemporal dynamics of this process – especially at the endogenous level (Chhabra et al., 2019; Massey et al., 2019; Rim et al., 2020).
@@ -35,7 +47,7 @@ Here, we use CRISPR/Cas9-mediated genome editing in haploid cells to generate cl
 
 ## Results
 
-## Generation and functional validation of clonal HAP1SGFP2-CTNNB1 cell lines
+### Generation and functional validation of clonal HAP1SGFP2-CTNNB1 cell lines
 
 To visualize and quantify the spatiotemporal dynamics of WNT/CTNNB1 signaling at the endogenous level, we fluorescently tagged CTNNB1 in mammalian cells using CRISPR/Cas9-mediated homology directed repair (Ran et al., 2013; Figure 1). To preserve the existing (epi)genetic control mechanisms of CTNNB1 expression, only the coding sequence for SGFP2, a monomeric, bright and photostable green fluorescent protein (Kremers et al., 2007), was seamlessly inserted at the starting ATG of the CTNNB1 coding sequence in HAP1 cells, a WNT-responsive near haploid cell line (Figure 1B, Figure 1—figure supplement 1A; Andersson et al., 1987; Carette et al., 2011; Kotecki et al., 1999; Lebensohn et al., 2016). The choice for this haploid cell line ensured tagging of the complete CTNNB1 protein pool (Figure 1C), thus overcoming the limitations of polyploid cell lines where genome editing often results in a combination of correctly and incorrectly edited alleles (Canaj et al., 2019).
 
@@ -43,39 +55,254 @@ We isolated clonal cell lines with the desired modification by FACS sorting (Fig
 
 To verify that the SGFP2 tag did not interfere with CTNNB1 function, three clonal HAP1SGFP2-CTNNB1 cell lines were further characterized using established experimental readouts for WNT/CTNNB1 signaling (Figure 2 and Figure 2—figure supplement 1). Western blot analysis confirmed that the HAP1SGFP2-CTNNB1 clones did not contain any untagged CTNNB1 but only expressed the SGFP2-CTNNB1 fusion protein (Figure 2A). Moreover, the total levels of SGFP2-CTNNB1 in tagged cell lines increased to the same extent as wild-type CTNNB1 in untagged cells in response to CHIR99021 treatment (Figure 2A–B). Similarly, untagged and tagged CTNNB1 induced target gene expression in equal measure, as measured by a TCF/LEF responsive luciferase reporter (Hu et al., 2007; Figure 2C), and increased transcription of the universal WNT/CTNNB1 target AXIN2 (Lustig et al., 2002; Figure 2D). Finally, while unstimulated cells mainly showed SGFP2-CTNNB1 localization at adherens junctions, treatment with purified WNT3A protein (Figure 2E) and CHIR99021 (Figure 2—figure supplement 1E) increased SGFP2-CTNNB1 levels in the cytoplasm and nucleus consistent with its signaling function.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig2-v2.jpg)
+
+**Figure 2.:** (A) Western blot, showing CTNNB1 (HAP1WT) and SGFP2-CTNNB1 (HAP1SGFP2-CTNNB1 clones 1, 2, and 3) accumulation in response to CHIR99021 treatment. All panels are from one blot that was cut at the 70 kDa mark and was stained with secondary antibodies with different fluorophores for detection. Top: HAP1WT cells express CTNNB1 at the expected wild-type size. Each of the three clonal HAP1SGFP2-CTNNB1 cell lines only express the larger, SGFP2-tagged form of CTNNB1, that runs at the expected height (~27 kDa above the wild-type CTNNB1). Middle: Only the tagged clones express the SGFP2-CTNNB1 fusion protein, as detected with an anti-GFP antibody at the same height. Bottom: alpha-Tubulin (TUBA) loading control. A representative image of n=3 independent experiments is shown. (B) Quantification of Western blots from n=three independent experiments, including the one in (A), confirming that the accumulation of CTNNB1 in response to WNT/CTNNB1 pathway activation is comparable between HAP1WT and HAP1SGFP2-CTNNB1 cells. Horizontal bar indicates the mean. (C) Graph depicting the results from a MegaTopflash dual luciferase reporter assay, showing comparable levels of TCF/LEF reporter gene activation for HAP1WT and HAP1SGFP2-CTNNB1 cells in response to CHIR99021 treatment. Data points from n=3 independent experiments are shown. Horizontal bar indicates the mean. Values are depicted relative to the DMSO control, which was set to one for each individual cell line. (D) Graph depicting AXIN2 mRNA induction in response to CHIR99021 treatment, demonstrating that induced expression of an endogenous target gene is comparable between HAP1WT and HAP1SGFP2-CTNNB1 cells. Data points represent n=3 independent experiments. Horizontal bar represents the mean. HPRT was used as a reference gene. Values are depicted relative to the HAP1WT DMSO control, which was set to 1. (E) Representative confocal microscopy images of the three HAP1 SGFP2-CTNNB1 clones after 4 hr vehicle control or 100 ng/ml WNT3A treatment from n=1 biological experiment, revealing intracellular accumulation of SGFP2-CTNNB1 (green). Nuclei were counterstained with SiR-DNA dye (magenta). Scale bar is 10 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Graph depicting AXIN2 qRT-PCR results from HAP1WT cells treated with the indicated range of CHIR99021 (1–10 µM) or DMSO vehicle control (0 µM) for 24 hr. HPRT was used as a reference gene. Error bars represent standard deviation within technical triplicates from n=1 biological experiment. Based on this, we selected 4 μM and 8 µM as intermediate and high levels of WNT/CTNNB1 pathway induction for follow up experiments. (B) Western blot, showing the increase in total (top) and non-phosphorylated (i.e. active) CTNNB1 levels (middle) in response to pathway stimulation. HAP1WT cells were treated for 24 hr with 4 or 8 µM CHIR99021, or DMSO vehicle control (0 µM). Alpha-Tubulin (TUBA, bottom) serves as a loading control. (C–D) Quantification of the western blot from (B) depicting the relative fold change of total CTNNB1 (C) or non-phosphorylated CTNNB1 (D) to DMSO control corrected for Tubulin loading. (E) Representative confocal microscopy images of three independent HAP1SGFP2-CTNNB1 clones, treated for 24 hr with 4 or 8 µM CHIR99021, or DMSO vehicle control. Scalebar is 10 µm.
+
 Taken together, WNT-responsive changes in CTNNB1 levels, localization and activity are preserved after CRISPR/Cas9-mediated fluorescent tagging of the entire CTNNB1 protein pool. Although there is some variation between the three clones with respect to CTNNB1 stabilization and target gene activation, this is likely due to the sub-cloning of these cell lines rather than the targeting per se.
 
-## Live imaging of endogenous SGFP2-CTNNB1 during WNT pathway activation
+### Live imaging of endogenous SGFP2-CTNNB1 during WNT pathway activation
 
 To better understand the temporal dynamics of endogenous CTNNB1 stabilization, we performed live-cell imaging over 12 hr in HAP1SGFP2-CTNNB1 clone 2 (Figure 3, Video 1; Video 2; Video 3) with different levels of WNT stimulation. Unstimulated cells showed a stable CTNNB1 signal at the cell membrane throughout the imaging time course (Figure 3A, Video 1). The membrane localization of CTNNB1 is consistent with its structural role in adherens junctions (Valenta et al., 2012; Yap et al., 1997), which we will not consider further in the current study. Stimulation with different concentrations of purified WNT3A resulted in a heterogeneous response pattern, with some cells in the population showing a far more prominent increase in CTNNB1 levels in the cytoplasm and nucleus than others (Figure 3A, Figure 3—figure supplement 1A–B, Video 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative stills from confocal time-lapse experiments corresponding to Videos 1–2, showing an increase of SGFP2-CTNNB1 after treatment with 100 ng/ml WNT3A (bottom) relative to a vehicle control (BSA)-treated sample (top). Scale bar = 20 μm. (B–D) Quantification of time-lapse microscopy series, using the segmentation pipeline shown in (E). Arrow indicates the moment of starting the different treatments (T, see legend in B for details). (B–C) Graph depicting the normalized intensity of SGFP2-CTNNB1 in the cytoplasm (B) or nucleus (C) over time. Solid lines represent the mean normalized fluorescence intensity and shading indicates the 95% confidence interval. n=155–393 cells for each condition and time point, pooled data from n=three independent biological experiments. (D) Graph depicting the nuclear/cytoplasmic ratio of SGFP2-CTNNB1 over time, calculated from raw intensity values underlying (B) and (C). (E) Segmentation of nuclei (top) and cytoplasm (bottom) based on the SiR-DNA signal and SGFP2-CTNNB1 signal. Scale bar = 20 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Plots depicting the relative intensity (left) and the difference in relative intensity to BSA treated cells (right) in the cytoplasm (A) and nucleus (B) after 4 hr of treatment. Circles indicate the median value and bars indicate the 95% CI. In the relative intensity plot (left), the distribution is built from individual data points in a violin-type fashion to faithfully represent the distribution of data. In the difference plot (right) the distribution of differences is represented in a half violin plot. If the 95% CI in the difference plot does not overlap the zero line, which indicates no difference, the sample is significantly different from BSA control condition. (C–D) Plots depicting the difference in relative intensity in the cytoplasm (C) and nucleus (D) between the moment of addition and 1 hr of treatment. Titles indicate the time (hh:mm). The distribution of differences is represented in a half violin plot. Circles indicate the median value and bars indicate the 95% CI. If the 95% CI does not overlap the zero line, which indicates no difference, the sample is significantly different from the BSA control condition.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Stills of this experiment are shown in Figure 3C. Segmentation was performed as described in Figure 4. Arrow indicates the moment of starting the different treatments (BSA in red or 100 ng/ml WNT3A in blue). Solid lines represent the mean normalized intensity and shading the 95% confidence interval in the cytoplasm (A) or nucleus (B). Line pattern indicates the three different clones. n=13–158 cells for each condition and time point for n=one biological experiment.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Graphs showing the unnormalized fluorescence intensities quantified for a single biological replicate shown in Figure 3. The vertical black lines indicate the moment of starting the different treatments (as indicated on top of each graph). Solid lines represent the mean unnormalized intensity and shading the 95% confidence interval in the cytoplasm (blue) or nucleus (red). n=64–148 cells for each condition and time point.
+
+![Video 1.](https://cdn.elifesciences.org/articles/66440/elife-66440-video1.mp4.jpg)
+
+**Video 1.:** Time of addition is at 00:00:00 (indicated at the top left). Scale bar in the lower right represents 20μm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/66440/elife-66440-video2.mp4.jpg)
+
+**Video 2.:** Time of addition is at 00:00:00 (indicated at the top left). Scale bar in the lower right represents 20μm.
+
 To quantify these dynamic changes, we developed a custom-built automated segmentation pipeline in CellProfiler (Figure 3D). Quantification showed that the temporal dynamics of CTNNB1 accumulation were independent of the dose of WNT3A (Figure 3B–C, Videos 4–5), although this could be different for lower doses and other cell types (Massey et al., 2019). Treatment with 100 ng/ml WNT3A increased SGFP2-CTNNB1 fluorescence 1.74-fold (mean, 95% CI 1.73–1.76) in the cytoplasm and 3.00-fold (mean, 95% CI 2.97–3.03) in the nucleus, with similar results in the other two HAP1SGFP2-CTNNB1 clones (Figure 3—figure supplement 2).
+
+![Video 3.](https://cdn.elifesciences.org/articles/66440/elife-66440-video3.mp4.jpg)
+
+**Video 3.:** Time of addition is at 00:00:00 (indicated at the top left). Scale bar in the lower right represents 20μm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/66440/elife-66440-video4.mp4.jpg)
+
+**Video 4.:** Time of addition of the indicated substances is at 00:00:00 (indicated at the top left). The left graph represents the raw data (colored dots, each dot is one cell, n=155–400 cells for each condition and time point), the median (black circle) and the 95% CI of the median (black bar). The right graph represents the median difference (black circle) from the treatments to the control (BSA). When the 95% CI (black bar) does not overlap 0, the difference between the two conditions is significant. Significant changes in intensity can first be observed after 40 min of 8 µM CHIR99021, and after 70–80 min of 4 µM CHIR99021 or 25–100 ng/ml WNT3A treatment.
+
+![Video 5.](https://cdn.elifesciences.org/articles/66440/elife-66440-video5.mp4.jpg)
+
+**Video 5.:** Time of addition of the indicated substances is at 00:00:00 (indicated at the top left). The left graph represents the raw data (colored dots, each dot is one cell, n=155–400 cells for each condition and time point), the median (black circle) and the 95% CI of the median (black bar). The right graph represents the median difference (black circle) from the treatments to the control (BSA). When the 95% CI (black bar) does not overlap 0, the difference between the two conditions is significant. Significant changes in intensity can be observed for all treatments (but not controls) after 20–50 min.
 
 Our quantification further shows that nuclear accumulation of CTNNB1 is favored over a cytoplasmic increase (compare the fold-changes in Figure 3B–C). Moreover, the first statistically significant increases in fluorescence intensity in the cytoplasm could be detected after ~45 min of treatment (Video 4, Figure 3—figure supplement 1C), whereas in the nucleus an increase was first statistically significant after ~30 min (Video 5, Figure 3—figure supplement 1D). To examine the relation between the cytoplasmic and nuclear CTNNB1 pools more closely, we calculated the ratio between nuclear and cytoplasmic intensities of SGFP2-CTNNB1 (Figure 3D, Video 6). In untreated cells, the nuclear/cytoplasmic ratio was 0.652 (mean [3–5 hr], 95% CI 0.649–0.657), showing that SGFP2-CTNNB1 was preferentially localized to the cytoplasm (Figure 3D, Figure 3—figure supplement 3). For the first 3 hr after WNT3A, nuclear CTNNB1 levels rose considerably faster than cytoplasmic CTNNB1 levels until the nuclear/cytoplasmic ratio showed a slight nuclear enrichment of 1.08 (mean [3–5 hr] 95% CI 1.07–1.10) for 100 ng/ml WNT3A. This indicates that not only the turn-over, but also the subcellular localization of CTNNB1 is actively regulated both before and after WNT pathway activation.
 
-## Establishing a fitting model for SGFP2-CTNNB1 diffusion
+![Video 6.](https://cdn.elifesciences.org/articles/66440/elife-66440-video6.mp4.jpg)
+
+**Video 6.:** At each time point showing all individual cells from three biological experiments. Time of addition of the indicated substances is at 00:00:00 (indicated at the top left). The left graph represents the raw data (colored dots, each dot is one cell, n=155–400 cells for each condition and time point), the median (black circle) and the 95% CI of the median (black bar). The right graph represents the median difference (black circle) from the treatments to the control (BSA). When the 95% CI (black bar) does not overlap 0, the difference between the two conditions is significant. Significant changes in the nuclear-cytoplasmic ratio can be observed for all treatments (but not controls) after 20–50 min.
+
+### Establishing a fitting model for SGFP2-CTNNB1 diffusion
 
 Having measured the relative changes in the cytoplasmic and nuclear levels of CTNNB1 in response to WNT3A stimulation, we next sought to exploit our experimental system to quantify additional molecular properties of CTNNB1 in each of these subcellular compartments using Fluorescence Correlation Spectroscopy (FCS). FCS is a powerful method to measure the mobility and absolute levels of fluorescent particles in a nanomolar range, compatible with typical levels of signaling proteins in a cell (reviewed in Hink, 2014). It has for instance been used to gain insight into the assembly of DVL3 supramolecular complexes (Yokoyama et al., 2012), the endogenous concentrations and mobility of nuclear complexes (Holzmann et al., 2019; Lam et al., 2012), and most recently, to quantify ligand-receptor binding reactions in the WNT pathway (Eckert et al., 2020). In point FCS, the fluorescence intensity is measured in a single point (Figure 4A,D–E). Diffusion of labeled particles, in this case SGFP2-CTNNB1, causes fluctuation of the fluorescence signal over time (Figure 4B). By correlating the fluorescence intensity signal to itself over increasing time-intervals, an autocorrelation curve is generated (Figure 4C). To extract relevant biophysical parameters, such as mobility (a measure for size) and the absolute numbers of the fluorescent particles (corresponding to their concentration), this autocorrelation curve is fitted with an appropriate model.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic representation of the point FCS technique, depicting the confocal volume with fluorescent particles diffusing in and out. Particles in FCS are defined by their coherent movement; therefore, a particle can be made up of monomers or multimers in isolation or complexed to unlabeled molecules. (B) Schematic representation of intensity fluctuations over time as measured in the confocal volume. Fluctuations are the result of both photo-physics (e.g. blinking of the fluorophore), diffusion and the number of particles in the confocal volume. (C) Graphical representation of the two diffusion-component fitting model used for our autocorrelation curves. Ttrip describes the blinking of the SGFP2 fluorophore and the after-pulsing artefact. Tdiff1 and Tdiff2 describe the monomeric and complexed form of SGFP2-CTNNB1, respectively. Details of all fitting parameters are described in Materials and methods. (D) Representative confocal images of HAP1SGFP2-CTNNB1 cells treated for 4 hr with BSA (left) or 100 ng/ml WNT3A (right). (E) Zoom in of the white rectangle in (D), with representative locations of FCS measurement points for cytoplasm (C) and nucleus (N) indicated with white crosses in the SGFP2-CTNNB1 channel and transmission channel. (F–G) Fitting of a representative autocorrelation curve with one unfixed diffusion-component (F) or a two diffusion-component model (G), where the first diffusion component was fixed to the speed of free monomeric SGFP2-CTNNB1 (14.9 µm2/s) and the second diffusion component was unfixed. The black line represents the autocorrelation curve generated from the FCS measurement; the red line represents the fitted model. The residuals after fitting of 25 individual curves are shown in the upper right corner of the graphs.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Graph depicting the first (i.e. fast) diffusion coefficient in SGFP2-CTNNB1 cells (treated with BSA or WNT3A, data as in Figures 4 and 5) in a two diffusion component model where both the first and second diffusion time were unfixed (see Materials and methods for details). The red dotted line shows the theoretically established diffusion coefficient (14.9 μm2/s) overlapping with the median (black line, 14.8 μm2/s) of the unfixed first diffusion coefficient found in this unfixed model.
+
 We first attempted to fit the autocorrelation curves obtained with point FCS measurements in HAP1SGFP2-CTNNB1 cells with a one-component model (i.e. containing one single diffusion speed for SGFP2-CTNNB1). This model was unable to fit most of our data (Figure 4F). The current literature suggests that while a large portion of CTNNB1 is present as a monomer (Gottardi and Gumbiner, 2004; Maher et al., 2010), CTNNB1 is also present in multiprotein complexes in the cytoplasm and in the nucleus (reviewed in Gammons and Bienz, 2018). We therefore tested the fit of a two-component model. To this end, we deduced the theoretical diffusion speed of monomeric, unbound SGFP2-CTNNB1 to be 14.9 µm2/s. This theoretical speed was confirmed by fitting an unbiased two-component model to our experimental data (Figure 4—figure supplement 1). To limit variability due to noise in the measurements, we proceeded with the two component model in which the first diffusion component was fixed to the theoretically determined diffusion speed of monomeric SGFP2-CTNNB1 (14.9 µm2/s) and with the second diffusion component limited to slower speeds compatible with point-FCS imaging (see Materials and methods for details). This model provided good fits for our autocorrelation curves obtained in both cytoplasmic and nuclear point FCS measurements (Figure 4G). Together this is consistent with the presence of free monomeric CTNNB1 (first, fast component) and larger CTNNB1 containing complexes (second, slow component) in both the nucleus and cytoplasm.
 
-## Quantification of absolute SGFP2-CTNNB1 concentrations
+### Quantification of absolute SGFP2-CTNNB1 concentrations
 
 Using this fitting model, we determined, for the first time, the absolute concentrations of endogenous CTNNB1 in living cells in presence and absence of a physiological WNT stimulus (Figure 5A, Table 1). In the absence of WNT3A, we determined the total concentration of SGFP2-CTNNB1 to be 180 nM (median, 95% CI 127–218) in the cytoplasm and 122 nM (median, 95% CI 91–158) in the nucleus. This is consistent with the nuclear exclusion we observed with confocal imaging (Figure 3).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig5-v2.jpg)
+
+**Figure 5.:** Details on sample size and statistics can be found in Supplementary file 1. (A) Graph depicting the total concentration of SGFP2-CTNNB1 particles (monomeric plus complexed) as measured with FCS. (B) Graph depicting the concentration of SGFP2-CTNNB1 particles with the fast diffusion component (i.e. free monomeric). (C) Graph depicting the concentration of SGFP2-CTNNB1 containing particles with the slow diffusion component (i.e. complex associated). (D–E) Graphs depicting the fraction (D) and speed (E) of the second diffusion component (i.e. SGFP2-CTNNB1 containing complex) measured by FCS. (F) Example of typical regions of interest in two cells used in N and B analysis. Solid line represents the analysis ROI, dashed line, marks the outline of the nuclear envelope. (G) Schematic representation of a confocal volume with different brightness species. On the left are six monomers with a brightness of 1, on the right two trimers with a brightness of 3, both result in a fluorescence of 6. N and B analysis is able to extract the number and the brightness of such samples, for more detail see supplement 1 of this figure. (H) Graph depicting the molecular brightness of SGFP2-CTNNB1 in the cytoplasm and nucleus relative to controls as measured with N and B in the same subcellular compartments. EGFP monomer was used for normalization and EGFP dimer as a control for N and B measurements.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Details on sample size and statistics can be found in Supplementary file 1. (A) Graph depicting the total number of SGFP2-CTNNB1 particles as measured with N and B. (B) Graph depicting the average fluorescence intensity at the start of the FCS measurement. The increase in SGFP2-CTNNB1 fluorescence in the cytoplasm (2.1-fold) exceeds the increase in the SGFP2-CTNNB1 concentration (1.1-fold, Figure 5A), but does correspond to the relative increase measured by time-lapse imaging (1.7-fold, Figure 4C). (C) Graph depicting fluorescence lifetimes calculated from the FCS measurements. The Fluorescence lifetime of SGFP2-CTNNB1 is independent of the subcellular compartment and treatment. Therefore, photophysical effects are not the cause for the difference between the fold-change in fluorescence and concentrations of the FCS measurements as described in (B).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) A series of images are acquired over time (t) (B-C) Representation of the confocal volume in a single pixel of the image in (A) representing monomers with a brightness of 1 (B) and trimers with a brightness of 3 (C) both confocal volumes emit a fluorescence of 6. (D–E) Graph depicting the variation in fluorescence, measured by an APD in counts/s, in a single pixel over time for the monomer (D) and trimer (E). With a higher brightness the variation around the average becomes larger. Note that the timescale in N and B is much larger than in FCS (Figure 4A–C) due to the use of images rather than a single point and therefore the variation is no longer dependent on diffusion kinetics. (F–G) Graph depicting the distribution of fluorescence observed in a single pixel. The average (red line) in our case is the same for six monomers (F) or two trimers (G), but the standard deviation (blue line) is much larger for the trimer. The average and standard deviation are used to calculate the number of molecules and their relative brightness.
+
+**Table 1.**
+ Total number of SGFP2-CTNNB1 molecules in the confocal volume and corresponding calculated concentrations obtained from FCS measurements in n=3 independent experiments.The concentration is calculated from the number of molecules in the confocal volume and the calibrated confocal volume (see Materials and methods). The number of molecules is consistent with those measured with N and B analysis (Figure 5—figure supplement 1A, Supplementary file 1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th></th>
+      <th colspan="2">Number of molecules</th>
+      <th colspan="2">Concentration (nM)</th>
+    </tr>
+    <tr>
+      <th>Compartment</th>
+      <th>Treatment</th>
+      <th>N</th>
+      <th>Median</th>
+      <th>95% CI</th>
+      <th>Median</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Cytoplasm</td>
+      <td>BSA</td>
+      <td>21</td>
+      <td>80</td>
+      <td>70–116</td>
+      <td>180</td>
+      <td>127–218</td>
+    </tr>
+    <tr>
+      <td>WNT3A</td>
+      <td>21</td>
+      <td>95</td>
+      <td>85–122</td>
+      <td>221</td>
+      <td>144–250</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Nucleus</td>
+      <td>BSA</td>
+      <td>21</td>
+      <td>63</td>
+      <td>53–72</td>
+      <td>122</td>
+      <td>91–158</td>
+    </tr>
+    <tr>
+      <td>WNT3A</td>
+      <td>18</td>
+      <td>135</td>
+      <td>127–150</td>
+      <td>240</td>
+      <td>217–325</td>
+    </tr>
+  </tbody>
+</table>
 
 In the presence of WNT3A, we measured a 1.2-fold increase in the total SGFP2-CTNNB1 concentration to 221 nM (median, 95% CI 144–250 nM) in the cytoplasm. This increase was smaller than expected from fluorescence intensity measurements (Figure 3B). We excluded that this was caused by photo-bleaching and other photophysical effects, and currently have no explanation for this discrepancy (Figure 5—figure supplement 1, see also Materials and methods and discussion). In the nucleus the concentration increased 2.0-fold to 240 nM (median, 95% CI 217–325) upon pathway activation. Nuclear concentrations of SGFP2-CTNNB1 therefore exceed cytoplasmic concentrations after WNT3A treatment, consistent with the nuclear accumulation observed with live imaging (Figure 3). These concentrations are in a similar range as those previously determined by quantitative mass spectrometry in different mammalian cell lines (Kitazawa et al., 2017; Tan et al., 2012). Of note, the exact concentrations will likely vary between cell types and their calculated values may also be dependent on the intricacies and assumptions that underlie each individual measurement technique.
 
 Our two-component fitting model also allowed us to discriminate between pools of SGFP2-CTNNB1 with different mobility (Table 2), that is fast diffusing monomeric CTNNB1 (Figure 5B) and slow diffusing complexed CTNNB1 (Figure 5C). In the nucleus, the concentration of fast moving CTNNB1 increased 2.0-fold from 87 nM (median, 95% CI 78–119) to 170 nM (median, 95% CI 147–214), while slow moving CTNNB1 concentration increased 3.9-fold from 22 nM (median, 95% CI 4–40) to 86 nM (median, 95% CI 67–114). This is also reflected by the increase in the bound fraction of SGFP2-CTNNB1 the nucleus (Figure 5D). The preferential increase of the slow-moving fraction is consistent with the notion that upon WNT stimulation CTNNB1 will become associated with the chromatin in a TCF-dependent transcriptional complex (or ‘WNT enhanceosome’).
 
+**Table 2.**
+ Number of SGFP2-CTNNB1 molecules in the confocal volume and corresponding calculated concentration of SGFP2-CTNNB1 molecules with the fast or slow diffusion coefficient obtained from FCS measurements in n=3 independent experiments.The concentration is calculated from the number of molecules and the calibrated confocal volume (see Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th></th>
+      <th colspan="4">Fast SGFP2-CTNNB1</th>
+      <th colspan="4">Slow SGFP2-CTNNB1</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="2">Number of molecules</th>
+      <th colspan="2">Concentration (nM)</th>
+      <th colspan="2">Number of molecules</th>
+      <th colspan="2">Concentration (nM)</th>
+    </tr>
+    <tr>
+      <th>Compartment</th>
+      <th>Treatment</th>
+      <th>n</th>
+      <th>Median</th>
+      <th>95% CI</th>
+      <th>Median</th>
+      <th>95% CI</th>
+      <th>Median</th>
+      <th>95% CI</th>
+      <th>Median</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Cytoplasm</td>
+      <td>BSA</td>
+      <td>21</td>
+      <td>51</td>
+      <td>40–63</td>
+      <td>91</td>
+      <td>66–139</td>
+      <td>29</td>
+      <td>20–37</td>
+      <td>57</td>
+      <td>38–76</td>
+    </tr>
+    <tr>
+      <td>WNT3A</td>
+      <td>21</td>
+      <td>60</td>
+      <td>47–80</td>
+      <td>145</td>
+      <td>76–168</td>
+      <td>35</td>
+      <td>30–41</td>
+      <td>68</td>
+      <td>57–76</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Nucleus</td>
+      <td>BSA</td>
+      <td>21</td>
+      <td>48</td>
+      <td>41–66</td>
+      <td>87</td>
+      <td>78–119</td>
+      <td>13</td>
+      <td>2–22</td>
+      <td>22</td>
+      <td>4–40</td>
+    </tr>
+    <tr>
+      <td>WNT3A</td>
+      <td>18</td>
+      <td>96</td>
+      <td>81–101</td>
+      <td>170</td>
+      <td>147–214</td>
+      <td>47</td>
+      <td>37–49</td>
+      <td>86</td>
+      <td>64–104</td>
+    </tr>
+  </tbody>
+</table>
+
 Of note, in the cytoplasm, the concentration of both fast and slow SGFP2-CTNNB1 increased upon WNT3A treatment (Figure 5B–C), with the fraction of bound SGFP2-CTNNB1 remaining equal between stimulated (median 0.38, 95% CI 0.29–0.46) and unstimulated cells (median 0.34, 95% CI 0.31–0.4) (Figure 5D). The fact that a large portion of CTNNB1 remains in a complex after WNT stimulation, challenges the notion that mainly monomeric CTNNB1 accumulates, as commonly depicted in the textbook model (Figure 1A).
 
-## Quantification of SGFP2-CTNNB1 mobility
+### Quantification of SGFP2-CTNNB1 mobility
 
 While we cannot determine the exact composition of the SGFP2-CTNNB1 complex, we do obtain biophysical parameters that are linked to its size. For instance, the diffusion coefficient of the nuclear SGFP2-CTNNB1 complex was 0.17 μm2s−1 (median, 95% CI 0.14–0.22) in cells treated with purified WNT3A (Figure 5E). This is comparable to the diffusion coefficients measured for other chromatin-bound transcriptional activators (Lam et al., 2012), which further supports that this pool represents the WNT enhanceosome.
 
 In the cytoplasm, we determined the second diffusion coefficient of SGFP2-CTNNB1 to be 0.13 μm2s−1 (median, 95% CI 0.13–0.17) in the absence of WNT3A stimulation (Figure 5E). This is indicative of very large complexes containing SGFP2-CTNNB1 that move with diffusion kinetics comparable to those previously observed for the 26S proteasome (Pack et al., 2014). Of note, the speed of the cytoplasmic complex increased 3.5-fold to 0.46 μm2s−1 (95% CI of the median 0.37–0.57) after WNT3A treatment. Because changes in diffusion coefficient are typically indicative of much larger changes in molecular weight (i.e. three-dimensional protein complex size, see Materials and methods section FCS data acquisition and analysis for details), this indicates that the size of the cytoplasmic CTNNB1 complex drastically changes when the WNT pathway is activated. Thus, although the fraction of CTNNB1 that resides in a complex remains the same (34–38%), the identity of the cytoplasmic complex is quite different in unstimulated and WNT3A-stimulated cells.
 
-## Determining the multimerization status of SGFP2-CTNNB1
+### Determining the multimerization status of SGFP2-CTNNB1
 
 Recent work suggests that the CTNNB1 destruction complex (also known as the ‘degradosome’) is a large and multivalent complex, mainly as the result of AXIN and APC multimerization (reviewed in Schaefer and Peifer, 2019). The speed of the slow CTNNB1 component, determined by the second diffusion coefficient in our FCS measurements (Figure 5E), is consistent with this model. Such a large, multivalent destruction complex would be expected to have multiple CTNNB1-binding sites. To measure the number of bound SGFP2-CTNNB1 molecules within this cytoplasmic complex, we performed Number and Brightness (N and B) analysis (Figure 5F–G, Figure 5—figure supplement 2). N and B is a fluorescence fluctuation spectroscopy technique similar to point FCS, but it makes use of image stacks acquired over time rather than individual point measurements (Digman et al., 2008). By quantifying the variance in fluorescence intensity of this stack, not only the number of particles but also their brightness can be determined.
 
@@ -83,25 +310,291 @@ Because brightness is an inherent property of a fluorophore, a change in brightn
 
 First, we confirmed that the number of particles we determined using N and B, were highly similar to those obtained with FCS (compare Figure 5—figure supplement 1A with Table 1). Second, we observe that the total pool of SGFP2-CTNNB1 in both the cytoplasm and nucleus has a brightness similar to EGFP and SGFP2 monomers (Figure 5H, Table 3). Because we found a substantial fraction (34–38%) of SGFP2-CTNNB1 to reside in a large complex using point FCS (Figure 5C–D), this suggests that few, if any, of these complexes contain multiple SGFP2-CTNNB1 molecules. If the cytoplasmic SGFP2-CTNNB1 containing complex indeed represents a large, multivalent destruction complex, this would imply that under physiological conditions, quite unexpectedly, most CTNNB1-binding sites are unoccupied in both the absence and presence of WNT3A.
 
-## A minimal computational model of WNT/CTNNB1 signaling
+**Table 3.**
+ Brightness of SGFP2-compared relative to EGFP-monomer and -dimer controls in n=2 independent experiments. N is the number of analyzed cells.p-Values were calculated using PlotsOfDifferences that uses a randomization test (Goedhart, 2019).Note that only the EGFP-dimer is significantly different to the EGFP-monomer control, while SGFP2-CTNNB1 is not.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fluorophore</th>
+      <th>Compartment</th>
+      <th>Treatment</th>
+      <th>N</th>
+      <th>Median</th>
+      <th>95 CI median</th>
+      <th>p-value to matched control (EGFP monomer in the nucleus or cytoplasm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EGFP-monomer</td>
+      <td>Cytoplasm</td>
+      <td>NA</td>
+      <td>15</td>
+      <td>1</td>
+      <td>0.79–1.34</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>EGFP-dimer</td>
+      <td>Cytoplasm</td>
+      <td>NA</td>
+      <td>14</td>
+      <td>1.4</td>
+      <td>1.29–1.60</td>
+      <td>0.011*</td>
+    </tr>
+    <tr>
+      <td>SGFP2-CTNNB1</td>
+      <td>Cytoplasm</td>
+      <td>BSA</td>
+      <td>69</td>
+      <td>0.92</td>
+      <td>0.83–1.00</td>
+      <td>0.738</td>
+    </tr>
+    <tr>
+      <td>SGFP2-CTNNB1</td>
+      <td>Cytoplasm</td>
+      <td>100 ng/ml WNT3A</td>
+      <td>46</td>
+      <td>1.01</td>
+      <td>0.93–1.11</td>
+      <td>0.919</td>
+    </tr>
+    <tr>
+      <td>EGFP-monomer</td>
+      <td>Nucleus</td>
+      <td>NA</td>
+      <td>15</td>
+      <td>1</td>
+      <td>0.91–1.07</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>EGFP-dimer</td>
+      <td>Nucleus</td>
+      <td>NA</td>
+      <td>14</td>
+      <td>1.62</td>
+      <td>1.44–1.69</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>SGFP2-CTNNB1</td>
+      <td>Nucleus</td>
+      <td>BSA</td>
+      <td>69</td>
+      <td>0.87</td>
+      <td>0.78–0.96</td>
+      <td>0.192</td>
+    </tr>
+    <tr>
+      <td>SGFP2-CTNNB1</td>
+      <td>Nucleus</td>
+      <td>100 ng/ml WNT3A</td>
+      <td>46</td>
+      <td>1.05</td>
+      <td>0.95–1.15</td>
+      <td>0.578</td>
+    </tr>
+  </tbody>
+</table>
+
+### A minimal computational model of WNT/CTNNB1 signaling
 
 Quantitative measurements and physical parameters of WNT pathway components and their interactions remain limited (Kitazawa et al., 2017; Lee et al., 2003; Tan et al., 2012), especially in living cells. As we obtained absolute measurements of different functional pools of CTNNB1, we next sought to integrate these biophysical parameters in a minimal computational model of WNT signaling to identify the critical nodes of regulation of subcellular CTNNB1 distribution (Figure 6A, Tables 4–5, Materials and methods). This minimal model is based on a previous model of Kirschner and colleagues (Lee et al., 2003), and incorporates the new data obtained in our study, supplemented with parameters from the literature (Lee et al., 2003; Tan et al., 2012).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig6-v2.jpg)
 
-**Figure 6.:** Tables 1–2).(A) Schematic overview of the model. DC=destruction complex, DC* = DVL-inactivated DC, CB=cytoplasmic CTNNB1, CB*=phosphorylated CB, NB=nuclear CTNNB1, TCF=TCF/LEF transcription factors, DVL=WNT-activated DVL. In WNT OFF, w=0, and therefore k5/k4 does not play a role and no inactivated destruction complex is formed. In WNT ON, w=1, and k5/k4 is put into action, resulting in an increase in DC* at the expense of DC. Under the assumption that k3 remains equal and given that CB*-DC was experimentally determined to be the same in WNT ON and WNT OFF, removal of DC, results in an increase in CB. Changes in k6/k7 and k9/8 further increase NB and NB-TCF in WNT ON. Note that CB* is degraded and therefore plays no role in the model. (B) Graph depicting the modeled concentrations of cytoplasmic components over time. The black line indicates total concentration of cytoplasmic CTNNB1, corresponding to Figure 3B. (C) Graph depicting the modeled concentrations of nuclear components over time. The black line indicates total concentration of nuclear CTNNB1, corresponding to Figure 3C. (D) Graph depicting the ratio of total nuclear and cytoplasmic CTNNB1 over time, corresponding to the measurements in Figure 3D. (E) Graph depicting the DC-bound CTNNB1 fraction ratio over time. (F) Graph depicting the TCF-bound CTNNB1 fraction ratio over time.
+**Figure 6.:** (A) Schematic overview of the model. DC=destruction complex, DC* = DVL-inactivated DC, CB=cytoplasmic CTNNB1, CB*=phosphorylated CB, NB=nuclear CTNNB1, TCF=TCF/LEF transcription factors, DVL=WNT-activated DVL. In WNT OFF, w=0, and therefore k5/k4 does not play a role and no inactivated destruction complex is formed. In WNT ON, w=1, and k5/k4 is put into action, resulting in an increase in DC* at the expense of DC. Under the assumption that k3 remains equal and given that CB*-DC was experimentally determined to be the same in WNT ON and WNT OFF, removal of DC, results in an increase in CB. Changes in k6/k7 and k9/8 further increase NB and NB-TCF in WNT ON. Note that CB* is degraded and therefore plays no role in the model. (B) Graph depicting the modeled concentrations of cytoplasmic components over time. The black line indicates total concentration of cytoplasmic CTNNB1, corresponding to Figure 3B. (C) Graph depicting the modeled concentrations of nuclear components over time. The black line indicates total concentration of nuclear CTNNB1, corresponding to Figure 3C. (D) Graph depicting the ratio of total nuclear and cytoplasmic CTNNB1 over time, corresponding to the measurements in Figure 3D. (E) Graph depicting the DC-bound CTNNB1 fraction ratio over time. (F) Graph depicting the TCF-bound CTNNB1 fraction ratio over time.
+
+**Table 4.**
+ Variables Minimal Model of WNT signaling.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model name</th>
+      <th>Variable</th>
+      <th>Compound</th>
+      <th>Values obtained from</th>
+      <th>WNT OFF (nM)</th>
+      <th>WNT ON (nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CB</td>
+      <td>x1</td>
+      <td>Free cytoplasmic CTNNB1</td>
+      <td>FCS data this report</td>
+      <td>91</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <td>DC</td>
+      <td>x2</td>
+      <td>Free destruction complex</td>
+      <td>Model equations</td>
+      <td>82.4</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>CB*-DC</td>
+      <td>x3</td>
+      <td>DC-bound phosphorylated CTNNB1</td>
+      <td>FCS data this report*</td>
+      <td>62.5*</td>
+      <td>62.5*</td>
+    </tr>
+    <tr>
+      <td>DC*</td>
+      <td>x4</td>
+      <td>Inactivated destruction complex</td>
+      <td>Model equations</td>
+      <td>0**</td>
+      <td>30.5**</td>
+    </tr>
+    <tr>
+      <td>NB</td>
+      <td>x5</td>
+      <td>Free nuclear CTNNB1</td>
+      <td>FCS data this report</td>
+      <td>87</td>
+      <td>170</td>
+    </tr>
+    <tr>
+      <td>TCF</td>
+      <td>x6</td>
+      <td>Free TCF</td>
+      <td>Model equations</td>
+      <td>81</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>NB-TCF</td>
+      <td>x7</td>
+      <td>TCF-bound nuclear CTNNB1</td>
+      <td>FCS data this report</td>
+      <td>22.2</td>
+      <td>86</td>
+    </tr>
+    <tr>
+      <td>TCF0</td>
+      <td>TCF0</td>
+      <td>Total TCF</td>
+      <td>x7 and Tan et al., 2012 - Figure 11</td>
+      <td>103</td>
+      <td>103</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Under the assumption that k3 does not change, the levels of CB*-DC remain equal. Since there was no significant difference between the concentration of slow SGFP2-CTNNB1 in the absence or presence of WNT3A (57 nM versus 68 nM, not significant, Table 2) the average of both medians (62.5 nM) was used. ** In WNT OFF, w=0, and no inactivated destruction complex is formed. In WNT ON, w=1, which induces the formation of inactivated destruction complex at the expense of free destruction complex (see Equations 7a and 9 in the model description in Materials and methods)._
+
+**Table 5.**
+ Equilibrium conditions for the Minimal Model of WNT signaling.All rates are multiplied with factor R=20, so that the equilibrium is reached at 4.5 hr according to Figure 4C–D.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rate constant</th>
+      <th></th>
+      <th>Biological process</th>
+      <th>Values based on</th>
+      <th>Wnt off</th>
+      <th>Wnt on</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>b</td>
+      <td>nMmin−1</td>
+      <td>CTNNB1 synthesis</td>
+      <td>v12 from Lee</td>
+      <td>0.423</td>
+      <td>0.423</td>
+    </tr>
+    <tr>
+      <td>k2k1</td>
+      <td>nM</td>
+      <td>Binding to and phosphorylation by the destruction complex of cytoplasmic CTNNB1</td>
+      <td>K8 from Lee</td>
+      <td>120</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>k3</td>
+      <td>min−1</td>
+      <td>Dissociation and degradation of phosphorylated CTNNB1 from the destruction complex</td>
+      <td>Deduced from b and x3</td>
+      <td>0.0068</td>
+      <td>0.0068</td>
+    </tr>
+    <tr>
+      <td>k5k4</td>
+      <td>nM</td>
+      <td>Inactivation of the destruction complex by activated DVL</td>
+      <td>Fitted to x1 and x7</td>
+      <td>N.A.*</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>k6k7</td>
+      <td></td>
+      <td>Ratio between nuclear import and export of CTNNB1</td>
+      <td>Deduced from x1 and x5</td>
+      <td>0.96</td>
+      <td>1.17</td>
+    </tr>
+    <tr>
+      <td>k9k8</td>
+      <td>nM</td>
+      <td>Dissociation of nuclear CTNNB1 from TCF</td>
+      <td>Deduced from x5, TCF0, x7</td>
+      <td>320</td>
+      <td>33.6</td>
+    </tr>
+  </tbody>
+</table>
+
+_*In WNT OFF, w=0, and no inactive destruction complex is formed. Only in WNT ON, w=1, which induces the formation of inactivated destruction complex at the expense of free destruction complex (see Equations 7a and 9 in the model description in Materials and methods)._
 
 Our model diverges from the model presented by Lee et al. on two major points. First, the model is simplified by replacing the details of the destruction complex formation cycle and the individual actions of APC and AXIN with a single, fully formed destruction complex. We chose this option because our study does not provide new quantitative data on the formation and dynamics of the destruction complex, but does provide absolute concentrations of CTNNB1 in a bound state in the cytoplasm. Second, we explicitly include shuttling of CTNNB1 between the cytoplasm and nucleus in both directions (Schmitz et al., 2013; Tan et al., 2014).
 
-Thus, our model (Figure 6A) describes the binding of cytoplasmic CTNNB1 (‘CB’) to the destruction complex (‘DC’) leading to its phosphorylation and degradation (described by k3), which releases the DC. Transport of CTNNB1 from the cytoplasm to the nucleus, allows nuclear CTNNB1 (‘NB’) to bind to TCF/LEF forming a transcriptional complex (‘NB-TCF’). When WNT is present in the system, we describe the inactivation of the destruction complex (‘DC*’) by DVL through the parameter w (see Materials and methods section model description). The model is available as interactive app at https://wntlab.shinyapps.io/WNT_minimal_model/ and allows users to explore the effects of modulating different equilibria and constants in an intuitive way.
+Thus, our model (Figure 6A) describes the binding of cytoplasmic CTNNB1 (‘CB’) to the destruction complex (‘DC’) leading to its phosphorylation and degradation (described by k3), which releases the DC. Transport of CTNNB1 from the cytoplasm to the nucleus, allows nuclear CTNNB1 (‘NB’) to bind to TCF/LEF forming a transcriptional complex (‘NB-TCF’). When WNT is present in the system, we describe the inactivation of the destruction complex (‘DC*’) by DVL through the parameter $w$ (see Materials and methods section model description). The model is available as interactive app at https://wntlab.shinyapps.io/WNT_minimal_model/ and allows users to explore the effects of modulating different equilibria and constants in an intuitive way.
 
 Our model faithfully recapitulates the dynamic changes observed with functional imaging (compare Figure 6B–F to Figures 3 and 5). Moreover, it reveals two critical regulatory nodes in addition to the requisite inactivation of the destruction complex (described by k5/k4). The first additional node of regulation is nuclear import and export (or ‘shuttling’, described by k6/k7). Upon WNT stimulation, the ratio of k6/k7 (nuclear shuttling) needs to increase in order for the model to match the free CTNNB1 concentrations we measured by FCS (Table 5, Figure 5B). Thus, the balance shifts from nuclear export before WNT, to nuclear import after WNT. The second additional node of regulation is the association of CTNNB1 with the TCF transcriptional complex (or ‘retention’), described by k9/k8. Upon WNT stimulation, the ratio of k9/k8 (nuclear retention) needs to decrease by almost a factor of 10 in order for the model to reproduce the concentrations of free and bound CTNNB1 in the nucleus as measured by FCS (Table 5, Figure 6F, Figure 5B–C). Thus, association of CTNNB1 to the TCF transcriptional complex is favored after WNT stimulation. In summary, our model suggests that WNT/CTNNB1 signaling is regulated at three distinct levels of the signal transduction pathway: destruction complex inactivation, nucleocytoplasmic shuttling and nuclear retention. How WNT signaling influences nuclear shuttling and nuclear retention is an open question and both are areas of active research (Anthony et al., 2020; Söderholm and Cantù, 2020).
 
-## Perturbing the system to mimic oncogenic WNT signaling
+### Perturbing the system to mimic oncogenic WNT signaling
 
 WNT signaling is often disrupted in cancer (reviewed in Polakis, 2000; Zhan et al., 2017), frequently due to inactivating mutations in negative regulators or due to activating mutations in CTNNB1 itself (Bugter et al., 2021). One of the earliest identified mutations in CTNNB1 was a substitution of serine-45 for a phenylalanine (S45F) (Morin et al., 1997). This mutation removes the CSNK1A1 priming phosphorylation site on CTNNB1 that is needed for sequential phosphorylation by GSK3, and thus blocks its proteasomal degradation (Amit et al., 2002; Liu et al., 2002).
 
 We generated the S45F mutation in one of our HAP1SGFP2-CTNNB1 cell lines through a second step of CRISPR/Cas9-mediated genome editing (Figure 7—figure supplement 1A–D). As expected, the mutation resulted in higher CTNNB1 levels (Figure 7—figure supplement 1E–F) and constitutive downstream activation of the pathway (Figure 7—figure supplement 1G–H). Next, we used this cell line for two purposes. First, we used FCS and N and B to compare the complex-state of wild-type and mutant CTNNB1 in the cytoplasm (Figure 7). Second, we reproduced the same perturbation in silico to strengthen the link between our experimental data and the computational model (Figure 8).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig7-v2.jpg)
+
+**Figure 7.:** The S45F mutant was introduced using CRISPR (see Figure 7—figure supplement 1) and CHIR treated and control cells were measured after 24 hr. Details on sample size and statistics can be found in Supplementary file 1. (A) Graph depicting the fraction of particles with the second diffusion component (i.e. SGFP2-CTNNB1 containing complex) measured by FCS for S45F mutant (B) Graph depicting the speed of the second diffusion component (i.e. SGFP2-CTNNB1 containing complex) measured by FCS for S45F mutant. (C).Graph depicting the fraction of particles with the second diffusion component (i.e. SGFP2-CTNNB1 containing complex) measured by FCS after 24 hr treatment with CHIR99021 (C) Graphs depicting the speed of the second diffusion component (i.e. SGFP2-CTNNB1 containing complex) measured by FCS after 24 hr treatment with CHIR99021. (E–F) Graphs depicting the molecular brightness of SGFP2-CTNNB1 in the cytoplasm relative to controls as measured with N and B in the same subcellular compartments for S45F mutant CTNNB1 (E) or after 24 hr of CHIR99021 treatment (F). EGFP monomer was used for normalization and EGFP dimer and trimer as controls for N and B measurements.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A–C) FACS graphs showing the selection strategy for HAP1SGFP2-CTNNB1(S45F) cells. HAP1SGFP2-CTNNB1 clone one was transfected with CRISPR constructs similar to Figure 1C, see Materials and methods for details. Transfection with a guide RNA in the third exon of CTNNB1 resulted in a population with reduced SGFP2 fluorescence and a population with increased fluorescence (B) compared to a Cas9 only control (A). Co-transfection of a single-stranded oligo repair, led to a reduction in the population with decreased SGFP2 fluorescence (representing cells repaired with NHEJ that resulted in a loss of the SGFP2-CTNNB1 fusion protein) and an increase in the population with increased SGFP2 fluorescence (representing cells repaired with NHEJ that resulted in a stabilizing SGPF2-CTNNB1 truncation, mutation, insertion or deletion as well as cells with the correct HDR resulting in the stabilizing S45F mutation). Cells with increased fluorescence were sorted as single haploid cells (see Figure 1—figure supplement 2) and expanded for further analysis (D) Graphical representation of part of the 3rd exon of SGFP2-CTNNB1 before (top) and after (bottom) CRISPR/Cas9-mediated mutagenesis. Sanger sequencing is shown for one correctly targeted clone. The mutation changes the 45th serine to a phenylalanine (S45F) and additionally removes the gRNA-binding site and a silent mutation that introduces a HpaII restriction site for screening purposes. Mutated bases are indicated in light red. Fourteen of 32 single-cell clones showed the expected genotyping fragment size and 7/32 showed large insertions or deletions. Seven of 14 clones showed the expected genotyping band contained the HpaII restriction site, 3/14 did not. Sanger sequencing coverage for the exon3 locus was obtained for 6/7 clones and all showed correct targeting (as shown for one clone here). Five clones were further analyzed; Clone 2, 3, 16, and 24 are from one single transfection, clone 27 from an independent transfection. (E) Western blot, showing SGFP2-CTNNB1WT (WT) and SGFP2-CTNNB1S45F (S45F clone) protein levels. All panels are from one blot that was cut at the 70 kDa mark. Top: HAP1SGFP2-CTNNB1(WT)and HAP1SGFP2-CTNNB1(S45F) clones express the SGFP2-CTNNB1 protein at the expected height. Bottom: alpha-Tubulin (TUBA) loading control. A representative image of n=3 independent experiments is shown. (F) Quantification of Western blots from n=3 independent experiments, including the one in (E), normalized to the SGFP2-CTNNB1WT DMSO control, showing that the S45F clones express higher levels of SGFP2-CTNNB1 than their HAP1SGFP2-CTNNB1(WT) parental line, even after 24 hr treatment with 8 µM CHIR99021. Horizontal bar indicates the mean. (G) Graph depicting the results from a MegaTopflash dual luciferase reporter assay, showing increased levels of TCF/LEF reporter gene activation for and HAP1SGFP2-CTNNB1(S45F), comparable to HAP1SGFP2-CTNNB1(WT) cells treated for 24 hr with 8 µM CHIR99021 treatment. Data points from n=three independent experiments are shown. Horizontal bar indicates the mean. Values are depicted relative to the HAP1SGFP2-CTNNB1(WT) DMSO control, which was set to 1. (H) Graph depicting AXIN2 mRNA induction activation for and HAP1SGFP2-CTNNB1(S45F) and HAP1SGFP2-CTNNB1(WT), showing increased levels of AXIN2 expression for HAP1SGFP2-CTNNB1(S45F), exceeding those in HAP1SGFP2-CTNNB1(WT) cells treated for 24 hr with 8 µM CHIR99021 treatment. Data points from n=3 independent experiments are shown. Horizontal bar indicates the mean. Values are depicted relative to the HAP1SGFP2-CTNNB1(WT) DMSO control, which was set to 1.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig8-v2.jpg)
+
+**Figure 8.:** Details on experimental sample size and statistics can be found in Supplementary file 1. (A) Representative confocal images of HAP1-SGFP2WT (WT, top) and HAP1-SGFP2S45F (S45F, bottom) cells acquired with the same image settings. The S45F mutation leads to the accumulation and nuclear enrichment of CTNNB1 in the cell. (B) Graph depicting the total concentration of SGFP2-CTNNB1 particles (monomeric plus complexed) as measured with FCS. (C–D) Inhibition of CTNNB1 degradation is modelled as a reduction in the value of k3. (C) Graph depicting the predicted total cytoplasmic CTNNB1 concentration as a function of k3. A reduction in k3 from 0.0068 (Table 5, WNT ON and WNT OFF conditions) to ~0.0043 (dotted line) corresponds to the cytoplasmic concentration observed (solid line). (D) Graph depicting the predicted total nuclear CTNNB1 concentration as a function of k3. The solid horizontal line indicates the concentration measured for the S45F mutant by FCS. Note that the value of k3 that matches the observed cytoplasm concentration (dotted line) does not match the experimentally determined concentration in the nucleus (solid line). (E–F) Graphs depicting the fraction of particles with the second diffusion component (i.e. SGFP2-CTNNB1 containing complex) measured by FCS for wild-type and S45F mutant (E) and after 24 hr CHIR99021 treatment (F). The increase in the bound fraction in the oncogenic mutant or after GSK3 inhibition we find, is comparable to what we observed in WNT3A stimulated cells (Figure 5D). (G) Graph showing the predicted nuclear bound fraction of CTNNB1as a function of k3 with the TCF/CTNNB1 binding affinity of the model (Table 4) for WNT OFF (k9/k8 = 320, pink line) and for WNT ON (k9/k8=33.5, blue line). Note that for WNT ON, the value for the nuclear bound fraction approximates the experimentally determined slow fraction for the S45F mutant (solid line, panel E) at the value for k3 that matches the cytoplasmic concentration of CTNNB1 (dotted line). (H) Graph showing the predicted nuclear/cytoplasmic (N/C)-ratio as a function of k3 with TCF/CTNNB1 binding affinity of the model (Table 4) for WNT OFF (k9/k8=320, pink line) and WNT ON (k9/k8=33.5, blue line). Note that, although for WNT ON the value of the N/C-ratio increases with k3, there is still nuclear exclusion (N/C-ratio lower than 1, dashed line) at the value of k3 that matches the cytoplasmic CTNNB1-concentration (dotted line). (I–K) The N/C-ratio as measured by FCS for wild-type and S45F mutant (I), after 24 hr CHIR99021 treatment (J) and after 4 hr WNT3A treatment (K). Note that all perturbations lead to nuclear accumulation (N/C-value exceeding 1). (L) Graph showing the predicted N/C-ratio as a function of k3 with the WNT ON value for k9/k8 with the nuclear shuttling ratio of the model (k6/k7 Table 4),corresponding to WNT OFF (k6/k7=0.96, pink line) and WNT ON (k6/k7=1.17, blue line), respectively. Note that the WNT ON value of k6/k7 increases the N/C-ratio to nuclear accumulation at the value for k3 that matches the cytoplasmic concentration (dotted line). (M) Graph depicting the predicted total cytoplasmic CTNNB1 concentration as a function of k3 with WNT ON and WNT OFF values for k9/k8 and k6/k7. Note that modulation of k9/k8 and k6/k7 has virtually no effect on the predicted cytoplasmic concentration of CTNNB1, resulting in overlapping points and lines in the graph. The horizontal solid line is the experimentally determined cytoplasmic CTBNN1 concentration (cf. panel B); the vertical dotted line is at the value of k3 that best reproduces this experimental finding in the model. (N) Graph depicting the predicted total nuclear CTNNB1 concentration as a function of k3 for WNT ON and WNT OFF values for k9/k8 and k6/k7. Note that if both k9/k8 and k6/7 are changed from their WNT OFF values the predicted nuclear concentration of CTBNN1 better matches the experimentally determined concentration (horizontal solid line) at the value for k3 that matches the cytoplasm concentration (vertical dotted line).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative stills from confocal time-lapse experiments corresponding to Video 3, showing an increase of SGFP2-CTNNB1 after treatment with 8 µM CHIR99021. Scale bar = 20 μm. (B–D) Quantification of time-lapse microscopy series, using the segmentation pipeline shown in Figure 3E. Arrow indicates the moment of starting the different treatments (T, see legend in B for details). (B–C) Graph depicting the normalized intensity of SGFP2-CTNNB1 in the cytoplasm (B) or nucleus (C) over time. Solid lines represent the mean normalized fluorescence intensity and shading indicates the 95% confidence interval. n=166–400 cells for each condition and time point, pooled data from n=three independent biological experiments. (D) Graph depicting the nuclear/cytoplasmic ratio of SGFP2-CTNNB1 over time, calculated from raw intensity values underlying (B) and (C). This experiment was recorded simultaneously with the data shown in Figure 3. Additional data representation of this experiment is found in Figure 3—figure supplement 1 and Videos 4–6.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/66440/elife-66440-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** The S45F mutant was introduced using CRISPR (see Figure 7—figure supplement 1) and CHIR-treated and control cells were measured after 24 hr. Details on sample size and statistics can be found in Supplementary file 1. (A–B) Graph depicting the total number of SGFP2-CTNNB1 particles as measured with N and B upon S45F mutation (A) or CHIR99021 stimulation (B). (C) Graph depicting the total concentration of SGFP2-CTNNB1 particles (monomeric plus complexed) as measured with FCS upon CHIR99021 treatment. (D–E) Graphs depicting the speed of the second diffusion component (i.e. SGFP2-CTNNB1 containing complex) in the nucleus measured by FCS for S45F mutant (D) or 24 hr CHIR99021 treatment (E). (F-G) Graph depicting the molecular brightness of SGFP2-CTNNB1 in the nucleus relative to controls as measured with N and B for S45F mutant (F) or 24-hour CHIR99021 treatment (G). EGFP monomer was used for normalization and EGFP dimer and trimer as controls for N and B measurements.
 
 Similar to the situation detected under physiological conditions (Figure 5D, slow fraction: median 0.38), we find a large fraction (median 0.402, 95% CI 0.363–0.471) of SGFP2-CTNNB1S45F to reside in a cytoplasmic complex (Figure 7A). As observed for physiological stimulation with WNT3A (Figure 5E), the speed of this complex is significantly increased (approximately threefold) in SGFP2-CTNNB1S45F (median 0.589 μm2s−1, 95% CI 0.585–0.691) compared to unstimulated HAP1SGFP2-CTNNB1 cells (median 0.191 μm2s−1, 95% CI 0.115–0.29) (Figure 7B). We find similar behavior when we block the GSK3-mediated phosphorylation of wild-type CTNNB1 using CHIR99021 (Figure 7C–D). The reduction in cytoplasmic complex size therefore must occur downstream of CTNNB1 phosphorylation. Intriguingly, our N and B analyses suggest that these smaller S45F mutant cytoplasmic complexes have a higher occupancy of CTNNB1 (Figure 7E) than the those in WNT3A (Figure 5H) or CHIR99021 (Figure 7F) stimulated wildtype cells. The S45F mutant (median 1.304, 95% CI 1.139–1.418, p=0.002) was significantly brighter than the SGFP2 monomer control (median 0.866, 95% CI 0.573–0.949), where the WT-tagged HAP1 cells again did not diverge from the monomer (0.886, 95% CI 0.722–1, p=0.845) (file 1). Thus, under oncogenic conditions more binding sites in the cytoplasmic CTNNB1 complex may be occupied than in physiological circumstances.
 
@@ -121,7 +614,7 @@ WNT signaling is critical for tissue development and homeostasis. Although most 
 
 Here, we generated functional HAP1SGFP2-CTNNB1 knock-in cell lines to study the dynamic behavior and subcellular complex state of endogenous CTNNB1 in both a physiological and oncogenic context. Importantly, this allowed us to measure hitherto unknown biophysical parameters of WNT/CTNNB1 in individual living human cells for the first time. Using live-cell microscopy and automated cell segmentation, we observe that endogenous CTNNB1 levels increase only 1.7-fold in the cytoplasm and 3.0-fold in the nucleus after WNT3A treatment, which is consistent with the literature (Jacobsen et al., 2016; Kafri et al., 2016; Massey et al., 2019). Next, we used state-of-the-art, quantitative microscopy to measure the absolute concentration of CTNNB1 within different subcellular compartments and in different complex states in living cells. The findings from these experiments definitively challenge the still prevailing view that mainly monomeric CTNNB1 accumulates upon WNT pathway stimulation (Nusse and Clevers, 2017). Moreover, our integrative approach of quantitative imaging and computational modeling revealed three critical nodes of CTNNB1 regulation, namely CTNNB1 degradation, nuclear shuttling and nuclear retention, which together describe the CTNNB1 turnover, subcellular localization and complex status under both physiological and oncogenic conditions.
 
-## Cytoplasmic regulation of CTNNB1
+### Cytoplasmic regulation of CTNNB1
 
 Using FCS, we determined that in unstimulated HAP1 cells a substantial fraction (~30–40%) of SGFP2-CTNNB1 is associated with a very large, slow-diffusing cytoplasmic complex (Figures 4–5 and 7). The main known cytoplasmic complex containing CTNNB1 is the destruction complex. The combined weight of the individual destruction complex components (AXIN, APC, CSNK1A1, and GSK3) would be expected to result in a much higher mobility than that displayed by the cytoplasmic CTNNB1-containing complex we observed. However, evidence is growing that the destruction complex forms large phase separated assemblies (also termed biomolecular condensates) (reviewed in Schaefer and Peifer, 2019). Oligomerization of AXIN and APC underlies the formation of these assemblies, and this in turn appears to be required for efficient degradation of CTNNB1 (Fiedler et al., 2011; Kunttas-Tatli et al., 2014; Pronobis et al., 2017; Spink et al., 2000). There is some evidence that these biomolecular condensates form at (near) endogenous levels (Fagotto et al., 1999; Faux et al., 2008; Mendoza-Topaz et al., 2011; Pronobis et al., 2015; Schaefer et al., 2018; Thorvaldsen et al., 2015), but it is still an open question what the exact composition and size of the destruction complex is in a physiological context. It should be noted that our imaging does not visualize punctae, which are typically associated with these biomolecular condensates (Figure 3A). In addition, our N and B data indicate that most of the slow diffusing CTNNB1 complexes contain one or very few SGFP2-CTNNB1 molecules in either the absence or presence of WNT3A stimulation. In view of the above-mentioned destruction complex oligomerization and its presumed multivalency, this finding was quite unexpected. Several mechanisms could explain this apparent discrepancy. On the one hand, destruction complex multimerization at endogenous levels might be more subtle than previously thought. For example, quantification of AXIN polymerization in vitro showed that even at exceedingly high concentration (24 μM), AXIN polymers typically contained only eight molecules (Kan et al., 2020). On the other hand, even if the multivalent destruction complex offers multiple CTNNB1 binding sites, occupancy at any one time might be low, due to the continuous and high turnover of CTNNB1. In this respect, the CTNNB1 bindings sites in the destruction complex could be envisioned to act similar to the wooden vanes in the paddle wheel of an old-fashioned watermill: like the water in the analogous example, CTNNB1 would be continuously scooped up (for phosphorylation) and dropped off (for degradation).
 
@@ -133,7 +626,7 @@ The substantial fraction of slow diffusing CTNNB1 that remains upon physiologica
 
 We show that the cytoplasmic CTNNB1 complex in WNT3A or CHIR99021 treated cells as well as in S45F mutant cells has an over threefold increased mobility compared to control cells. Therefore, while the diffusion coefficient is still very low (indicating that the remaining complex is still very large), this implies it is a vastly different complex than that observed in the absence of WNT stimulation. The precise nature of these complexes remains unknown, but could be consistent with a reduced destruction complex size after WNT treatment, as also recently observed in Drosophila for AXIN complexes (Schaefer et al., 2018), or with the formation of inactivated destruction complexes (‘transducer complexes’) in response to WNT/CTNNB1 pathway activation (Hagemann et al., 2014; Lybrand et al., 2019). The fact that cells in which GSK3 phosphorylation is inhibited through S45F mutation or CHIR99021 treatment show similar behavior, suggests that the size of the cytoplasmic complex is directly linked to the phosphorylation status of CTNNB1. The destruction complex has been shown to associate with (parts of) the ubiquitin and proteasome machinery (Li et al., 2012; Lui et al., 2011; Schaefer et al., 2020; Thorvaldsen et al., 2015). One interesting possibility, therefore, is that phosphorylated CTNNB1 is required for coupling the destruction complex to the ubiquitination and proteasome machinery. In fact, although not explicitly mentioned in the main text, supplementary table 1 of Li et al., 2012 shows that in HEK293 cells, which harbor no mutation in the core components of the WNT pathway, CTNNB1 was found to interact with subunits of the proteasome, whereas in the S45F-CTNNB1 mutant cell line Ls174T these interactions were not detected. In conclusion, although we do not directly determine its identity, our measured biophysical parameters of the cytoplasmic CTNNB1 complex are consistent with it representing a large, multivalent destruction complex that is coupled to the proteasome as long as CTNNB1 is being phosphorylated.
 
-## Nuclear regulation of CTNNB1
+### Nuclear regulation of CTNNB1
 
 The key function of CTNNB1 downstream of WNT is to regulate transcription of TCF/LEF target genes (Doumpas et al., 2019; Schuijers et al., 2014). Proteomic analyses have shown that the WNT enhanceosome consists of CTNNB1, TCF/LEF, Pygopus Homologs 1 and 2 (PYGO) and B-cell CLL/lymphoma nine protein (BCL9) and several other large proteins (Fiedler et al., 2015; van Tienen et al., 2017). Using FCS, we show that CTNNB1 resides in a nuclear complex with a diffusion coefficient that is compatible with such a DNA-bound transcriptional complex (Figure 5E; Lam et al., 2012).
 
@@ -141,19 +634,19 @@ Although CTNNB1 is known to associate with TCF/LEF factors in response to WNT/CT
 
 However, upon pathway activation through WNT3A, CHIR99021 or S45F mutation we see a consistent increase in the fraction and absolute levels of this slow-diffusing nuclear CTNNB1 complex (Figure 5E, Figure 8E–F), compatible with increased CTNNB1 binding to its target sites. Upon WNT stimulation, the concentration of bound SGFP2-CTNNB1 in the nucleus increased to ~90 nM, which corresponds to something in the order of 20,000 bound CTNNB1 molecules in one nucleus, assuming a nuclear volume of 0.36 picoliter (Tan et al., 2012). Published CHIPseq studies report many CTNNB1 DNA binding sites, ranging from several hundred to several thousand sites in mammalian cells (Cantù et al., 2018; Doumpas et al., 2019; Schuijers et al., 2014). It is therefore highly likely that at least part of the slow-diffusing CTNNB1 particles we measure indeed represents CTNNB1 that is associated with the WNT enhanceosome.
 
-## Regulation of CTNNB1 nuclear accumulation
+### Regulation of CTNNB1 nuclear accumulation
 
 In HAP1 cells, endogenous CTNNB1 is excluded from the nucleus in the absence of WNT. Our live imaging data reveal an immediate and preferential increase in nuclear CTNNB1 upon WNT3A stimulation, until an equilibrium is reached between the cytoplasmic and nuclear levels (Figure 3D). This is consistent with previous observations in HEK293 cells stably overexpressing low levels of YFP-CTNNB1 (Kafri et al., 2016).
 
 Intriguingly, CTNNB1 does not contain nuclear import or export signals and can translocate independently of classical importin and exporter pathways (Fagotto et al., 1998; Wiechens et al., 2001; Yokoya et al., 1999). Hence, the molecular mechanism of CTNNB1 subcellular distribution remains incompletely understood. Evidence from Fluorescence Recovery After Photobleaching (FRAP) studies suggest that the increase in nuclear CTNNB1 is due to changes in binding to its interaction partners in the cytoplasm and nucleus (retention) rather than active changes in nuclear import and export rates (shuttling) (Jamieson et al., 2011; Krieghoff et al., 2006). We argue that the two are not mutually exclusive, as our experimental data and computational model show that WNT regulates both nucleocytoplasmic shuttling and nuclear retention of CTNNB1. Indeed, we see an increase of nuclear CTNNB1 complexes in the nucleus (Figure 5C–D) and the dissociation of CTNNB1 from TCF is reduced almost 10-fold in WNT signaling conditions in our computational model (Table 5). Our model predicts that this increased nuclear retention indeed also increases the nuclear/cytoplasmic ratio (Figure 8H). However, to reconcile our computational prediction with our experimental observations, we additionally need to include a shift from nuclear export to nuclear import upon pathway activation (Figure 6, Figure 8). Our integrated experimental biology and computational modeling approach thus reveals that WNT signaling not only regulates the absolute levels of CTNNB1 through destruction complex inactivation, but also actively changes its subcellular distribution through nuclear retention and shuttling. The fact that direct inhibition of GSK3-mediated phosphorylation of CTNNB1 results in the same behavior, indicates that the phosphorylation status of CTNNB1 plays a critical role. This further emphasizes the importance of posttranslational modifications and conformational changes in CTNNB1 for its subcellular localization and function (Gottardi and Gumbiner, 2004; Sayat et al., 2008; Valenta et al., 2012; van der Wal and van Amerongen, 2020; Wu et al., 2008).
 
-## Differences and similarities in physiological and oncogenic WNT signaling
+### Differences and similarities in physiological and oncogenic WNT signaling
 
 As discussed above, several behaviors of CTNNB1 are conserved between the different modes of stimulation. For instance, WNT3A treatment, GSK3 inhibition and the oncogenic S45F mutation all result in (1) increased overall levels of CTNNB1; (2) a substantial fraction of CTNNB1 in a faster, albeit still very large complex in the cytoplasm; (3) increased nuclear accumulation of CTNNB1; and (4) increased retention of CTNNB1 in nuclear complexes. Our computational modeling further confirms that in addition to regulation of CTNNB1 turnover – either by removal of activated destruction complex or through inhibition of phosphorylation and ubiquitination – nuclear shuttling and nuclear retention are equally important regulatory nodes in oncogenic (CHIR99021 treatment or S45F mutation) and physiological (WNT3A stimulation) signaling.
 
 However, the absolute levels of CTNNB1 and the resulting transcriptional activation are distinct in each of these conditions: Cells treated with a GSK3 inhibitor continue to accumulate CTNNB1 after 4 hr, when WNT3A treated cells reach a plateau. The latter is likely due to the fact that negative feedback mechanisms kick in, such as reconstitution of the destruction complex by AXIN2 or internalization of WNT-bound receptor complexes (Agajanian et al., 2019; Lustig et al., 2002), both of which function upstream of GSK3. Alternatively, it could reflect the notion that physiological WNT signaling does not turn the destruction complex off completely, but rather ‘turns it down’, as our N and B data support the fact that under physiological conditions the destruction complex itself provides a surplus reservoir of CTNNB1-binding sites that may only become occupied when WNT signaling is hyperactivated. As a combined result, GSK3 inhibition or S45F mutation of CTNNB1 can result in higher total intracellular levels of CTNNB1. Indeed, concentrations of SGFP2-CTNNB1 in S45F mutated cells exceed those in WNT3A treated cells in both the cytoplasm (1.6-fold) and the nucleus (1.8-fold). This subtle increase in CTNNB1 levels is likely amplified at the transcriptional level (Jacobsen et al., 2016), consistent with the well-known fact that constitutive activation of the pathway through different mechanisms, including APC mutation, results in higher pathway activation than physiological stimuli.
 
-## Challenges and opportunities for fluorescence fluctuation spectroscopy techniques
+### Challenges and opportunities for fluorescence fluctuation spectroscopy techniques
 
 Using fluorescence fluctuation spectroscopy techniques (FCS and N and B), we have quantified endogenous CTNNB1 concentrations and complexes in living cells for the first time, which provided novel and long-awaited biophysical parameters for computational modeling. Moreover, our approach has also yielded novel insights into CTNNB1 regulation that challenge current dogmas in the field. If we are correct, this has important consequences. First, if only part of the cytoplasmic CTNNB1 pool is present in an uncomplexed (i.e. free or monomeric) state, regardless of whether the WNT/CTNNB1 pathway is off or on (either via physiological WNT3A stimulation or via oncogenic activation), this is a rewrite of the textbook model. Second, if the slow-diffusing cytoplasmic CTNNB1 complex indeed represents a proteasome-associated destruction complex, this would fuel a debate that has remained unresolved for many years (Li et al., 2012; Verkaar et al., 2012). As more studies will use image-based techniques to determine biophysical properties of WNT/CTNNB1 signaling events (Ambrosi et al., 2020; Eckert et al., 2020), the field will undoubtedly learn how to interpret these findings.
 
@@ -165,17 +658,442 @@ The biophysical parameters we obtained from point FCS and N and B have taught us
 
 ## Materials and methods
 
-## DNA constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HAP1</td>
+      <td>Whitehead Institute</td>
+      <td>Cellosaurus: CVCL_Y019</td>
+      <td>kind gift from Thijn Brummelkamp (NKI)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HAP1SGFP2-CTNNB1</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HAP1SGFP2-CTNNB1(S45F)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pSpCas9(BB)−2A-Puro (PX459) V2.0</td>
+      <td>Ran et al., 2013</td>
+      <td>RRID:Addgene_62988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>MegaTopflash</td>
+      <td>Hu et al., 2007</td>
+      <td></td>
+      <td>kind gift from Christophe Fuerer and Roel Nusse, Stanford University</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>CMV Renilla</td>
+      <td>Promega</td>
+      <td>E2261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pSGFP2-C1</td>
+      <td>Kremers et al., 2007</td>
+      <td>RRID:Addgene_22881</td>
+      <td>kind gift from Dorus Gadella</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pmScarlet-i_C1</td>
+      <td>Bindels et al., 2017</td>
+      <td>RRID:Addgene_85044</td>
+      <td>kind gift from Dorus Gadella</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pSYFP2-C1</td>
+      <td>Kremers et al., 2006</td>
+      <td>RRID:Addgene_22878</td>
+      <td>kind gift from Dorus Gadella</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>mTurquoise2-C1</td>
+      <td>Goedhart et al., 2012</td>
+      <td>RRID:Addgene_54842</td>
+      <td>kind gift from Dorus Gadella</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEGFP</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEGFP2</td>
+      <td>Pack et al., 2006</td>
+      <td></td>
+      <td>kind gift from Masataka Kinjo</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEGFP3</td>
+      <td>Pack et al., 2006</td>
+      <td></td>
+      <td>kind gift from Masataka Kinjo</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pBluescript II KS(+)</td>
+      <td>Stratagene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pX459-CTNNB1-ATG</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_153429</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pX459-CTNNB1-S45</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_164587</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pRepair-SGFP2-CTNNB1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_153430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRepair-mScI-CTNNB1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_153431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRepair-SYFP2-CTNNB1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_153432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRepair-mTq2-CTNNB1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_153433</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR99021</td>
+      <td>Biovision</td>
+      <td>1677–5</td>
+      <td>6 mM stock in DMSO</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Mouse Wnt-3a</td>
+      <td>R and D systems</td>
+      <td>1324-WN-002</td>
+      <td>10 µg/ml stock solution in 0.1% BSA in PBS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dapi</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vybrant DyeCycle Violet Stain</td>
+      <td>Invitrogen</td>
+      <td>V35003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vybrant DyeCycle Ruby Stain</td>
+      <td>Invitrogen</td>
+      <td>V10273</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Non-phosphorylated (Active) β-catenin clone D13A1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>8814S RRID:AB_11127203</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Total β-catenin clone 14 (mouse monoclonal)</td>
+      <td>BD</td>
+      <td>610153 RRID:AB_397554</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Tubulin clone DM1A (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9026 RRID:AB_477593</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP Antibody (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A-6455 RRID:AB_221570</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680LT Goat anti-Rabbit IgG</td>
+      <td>LI-COR</td>
+      <td>926–68021 RRID:AB_10706309</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW Donkey anti-Mouse IgG</td>
+      <td>LI-COR</td>
+      <td>926–32212 RRID:AB_621847</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SiR-DNA</td>
+      <td>Spirochrome</td>
+      <td>SC007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 488 NHS Ester</td>
+      <td>Molecular probes</td>
+      <td>A20000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler pipeline</td>
+      <td>This paper</td>
+      <td></td>
+      <td>available at https://osf.io/6pmwf/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI/ImageJ</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FFS Dataprocessor version 2.3</td>
+      <td>SSTC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ptu converter</td>
+      <td>Crosby et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ macro script</td>
+      <td>modified from Crosby et al., 2013</td>
+      <td></td>
+      <td>available at https://osf.io/ys5qw/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PlotsOfDifferences</td>
+      <td>Goedhart, 2019</td>
+      <td></td>
+      <td>https://huygens.science.uva.nl/PlotsOfDifferences/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R script</td>
+      <td>This paper</td>
+      <td></td>
+      <td>available at https://osf.io/sxakf/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R shiny app</td>
+      <td>This paper</td>
+      <td>WNT_minimal_model_v2.4.R</td>
+      <td>app available at https://wntlab.shinyapps.io/WNT_minimal_model/, source script available at https://osf.io/27ya6/</td>
+    </tr>
+  </tbody>
+</table>
+
+### DNA constructs
 
 The following constructs were used: pSpCas9(BB)−2A-Puro (PX459) V2.0 (Ran et al., 2013, a kind gift from Feng Zhang, available from Addgene, plasmid #62988), MegaTopflash (Hu et al., 2007, a kind gift from Christophe Fuerer and Roel Nusse, Stanford University), CMV Renilla (E2261, Promega, Madison, WI), pSGFP2-C1 (Kremers et al., 2007, a kind gift from Dorus Gadella, available from Addgene, plasmid #22881), pmScarlet-i_C1 (Bindels et al., 2017, a kind gift from Dorus Gadella, available from Addgene, plasmid #85044), pSYFP2-C1 (Kremers et al., 2006, a kind gift from Dorus Gadella, available from Addgene, plasmid #22878), mTurquoise2-C1 (Goedhart et al., 2012, a kind gift from Dorus Gadella, available from Addgene, plasmid #54842), pEGFP (Clontech, Mountain View, CA), pEGFP2 and pEGFP3 (Pack et al., 2006, a kind gift from Masataka Kinjo), and pBluescript II KS(+) (Stratagene, La Jolla, CA).
 
 The gRNA targeting the start codon in exon2 of human CTNNB1 was designed using the MIT webtool (crispr.mit.edu) and cloned into pX459. Oligos RVA567 and RVA568 (Table 6), encoding the gRNA, were annealed and ligated into BbsI-digested pX459 plasmid as previously described (Ran et al., 2013) to obtain pX459-CTNNB1-ATG. The gRNA targeting codon 3 of CTNNB1 for mutagenesis of Serine 45 to Phenylalanine (S45F) was similarly designed and cloned by introducing RVA561 and RVA562 (Table 6) into pX459, yielding pX459-CTNNB1-S45.
 
+**Table 6.**
+ primers/oligonucleotides used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>primer</th>
+      <th>sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RVA24</td>
+      <td>CAAGTTTGTTGTAGGATATGCCC</td>
+    </tr>
+    <tr>
+      <td>RVA25</td>
+      <td>CGATGTCAATAGGACTCCAGA</td>
+    </tr>
+    <tr>
+      <td>RVA124</td>
+      <td>AGTGTGAGGTCCACGGAAA</td>
+    </tr>
+    <tr>
+      <td>RVA125</td>
+      <td>CCGTCATGGACATGGAAT</td>
+    </tr>
+    <tr>
+      <td>RVA555</td>
+      <td>GCCAAACGCTGGACATTAGT</td>
+    </tr>
+    <tr>
+      <td>RVA558</td>
+      <td>AGACCATGAGGTCTGCGTTT</td>
+    </tr>
+    <tr>
+      <td>RVA561</td>
+      <td>CACCGTTGCCTTTACCACTCAGAGA</td>
+    </tr>
+    <tr>
+      <td>RVA562</td>
+      <td>AAACTCTCTGAGTGGTAAAGGCAAC</td>
+    </tr>
+    <tr>
+      <td>RVA567</td>
+      <td>CACCGTGAGTAGCCATTGTCCACGC</td>
+    </tr>
+    <tr>
+      <td>RVA568</td>
+      <td>AAACGCGTGGACAATGGCTACTCAC</td>
+    </tr>
+    <tr>
+      <td>RVA581</td>
+      <td>tgctcaccatggtggGATTTTCAAAACAGTTGTATGGTATACTTC</td>
+    </tr>
+    <tr>
+      <td>RVA582</td>
+      <td>actgttttgaaaatcCCACCATGGTGAGCAAGGGC</td>
+    </tr>
+    <tr>
+      <td>RVA583</td>
+      <td>agtagccattgtccaCTTGTACAGCTCGTCCATGCCG</td>
+    </tr>
+    <tr>
+      <td>RVA584</td>
+      <td>gacgagctgtacaagTGGACAATGGCTACTCAAGGTTTG</td>
+    </tr>
+    <tr>
+      <td>RVA618</td>
+      <td>atacgactcactatagggcgaattggagctGATGCAGTTTTTTTCAATATTGC</td>
+    </tr>
+    <tr>
+      <td>RVA619</td>
+      <td>ttctagagcggccgccaccgcggtggagctCTCTCTTTTCTTCACCACAACATTTTATTTAAAC</td>
+    </tr>
+    <tr>
+      <td>RVA622</td>
+      <td>AAGAGAGAGCTCCACCGCGGTGGCGGCCG</td>
+    </tr>
+    <tr>
+      <td>RVA623</td>
+      <td>TGCATCAGCTCCAATTCGCCCTATAGTGAGTCG</td>
+    </tr>
+    <tr>
+      <td>RVA1616</td>
+      <td>tgtccacgctgGATTTTCAAAACAGTTGTATGG</td>
+    </tr>
+    <tr>
+      <td>RVA1617</td>
+      <td>atacaactgttttgaaaatccagcgtggacaATGGTGAGCAAGGGCGAG</td>
+    </tr>
+    <tr>
+      <td>RVA1618</td>
+      <td>cacaaaccttgagtagccatCTTGTACAGCTCGTCCATGC</td>
+    </tr>
+    <tr>
+      <td>RVA1619</td>
+      <td>ATGGCTACTCAAGGTTTGTGTCATTAAATC</td>
+    </tr>
+    <tr>
+      <td>RVA2540</td>
+      <td>CTTACCTGGACTCTGGAATCCATTCTGGTGCCACTACCACAGCTCCTTTCCTGTCCGGTAAAGGCAATCCTGAGGAAGAGGATGTGGATACCTCCCAAGT</td>
+    </tr>
+  </tbody>
+</table>
+
 The repair plasmid for SGFP2-CTNNB1 (pRepair-SGFP2-CTNNB1) was cloned using Gibson cloning (Gibson et al., 2009). SGFP2 was chosen for its favorable brightness, maturation and photo-stability (Kremers et al., 2007). First, a repair plasmid including the Kozak sequence from the pSGFP2-C1 plasmid was generated (pRepair-Kozak-SGFP2 -CTNNB1). For this, 5’ and 3’ homology arms were PCR amplified from genomic HEK293A DNA with primers RVA618 and RVA581 (5’ arm) or RVA619 and RVA584 (3’ arm). SGFP2 was amplified with Gibson cloning from pSGFP2-C1 with primers RVA582 and RVA583 and the backbone was amplified from SacI digested pBlueScript KS(+) with primers RVA622 and RVA623. The final repair construct (pRepair-SGFP2-CTNNB1) contains the endogenous CTNNB1 Kozak sequence before the SGFP2 ATG. To obtain pRepair-SGFP2-CTNNB1, the backbone and homology regions were amplified from pRepair-SGFP2-Kozak-CTNNB1 with primers RVA1616 and RVA1619, and an SGFP2 without the Kozak sequence was amplified from pSGFP2-C1 with primers RVA1617 and RVA1618. To generate color variants of the repair plasmid SYFP2, mScarlet-i and mTurquoise2 (not used in this publication, but available from Addgene, see below) were also amplified from their respective C1 vectors with primers RVA1617 and RVA1618. PCR products were purified and assembled with a Gibson assembly master mix with a 1:3 (vector:insert) molar ratio. Gibson assembly master mix was either purchased (E2611S, NEB) or homemade (final concentrations: 1x ISO buffer (100 mM Tris-HCL pH 7.5, 10 mM MgCl2, 0.2M dNTPs (R0181, Thermo Scientific), 10 mM DTT (10792782, Fisher), 5% PEG-8000 (1546605, Sigma-Aldrich, St Louis, MO), 1 mM NAD+ (B9007S, NEB)), 0.004 U/µl T5 exonuclease (M0363S, NEB), 0.5 U/µl Phusion DNA Polymerase (F-530L, Thermo Scientific) and 4 U/µl Taq DNA ligase (M0208S, NEB)).
 
 The following plasmids are available from Addgene: pX459-CTNNB1-ATG (#153429), pX459-CTNNB1-S45 (#164587), pRepair-SGFP2-CTNNB1 (#153430), pRepair-mScI-CTNNB1 (#153431), pRepair-SYFP2-CTNNB1 (#153432), pRepair-mTq2-CTNNB1 (#153433).
 
-## Cell culture, treatment, and transfection
+### Cell culture, treatment, and transfection
 
 HAP1 cells (a kind gift from Thijn Brummelkamp (NKI), acknowledging the Whitehead Institute as the source of the material) were maintained in full medium (colorless IMDM (21056023, Gibco, Thermo Fisher Scientific, Waltham, MA) supplemented with 10% FBS (10270106, Gibco) and 1X Glutamax (35050061, Gibco)) under 5% CO2 at 37°C in humidifying conditions and passaged every 2–3 days using 0.25% Trypsin-EDTA (25200056, Gibco). Cells were routinely tested for mycoplasma. We verified the haploid identity of the parental HAP1WT by karyotyping of metaphase spreads. To maintain a haploid population, cells were resorted frequently (see below) and experiments were performed with low passage number cells.
 
@@ -183,7 +1101,7 @@ Where indicated, cells were treated with CHIR99021 (6 mM stock solution in DMSO)
 
 Cells were transfected using Turbofect (R0531, ThermoFisher, Thermo Fisher Scientific, Waltham, MA), X-tremeGene HP (6366546001, Roche, Basel, Switzerland), or Lipofectamine 3000 (L3000001, Invitrogen, Thermo Fisher Scientific, Waltham, MA) in Opti-MEM (31985070, Gibco) according to the manufacturer’s instructions.
 
-## HAP1SGFP2-CTNNB1 and HAP1SGFP2-CTNNB1(S45F) generation
+### HAP1SGFP2-CTNNB1 and HAP1SGFP2-CTNNB1(S45F) generation
 
 800,000 HAP1 cells/well were plated on six-well plates. The following day, cells were transfected with Turbofect and 2000 ng DNA. pX459-CTNNB1-ATG and pRepair-SGFP2-CTNNB1 were transfected in a 2:1, 1:1, or 1:2 ratio. pSGFP2-C1, pX459, or pX459-CTNNB1-ATG were used as controls. From 24 to 48 hr after transfection, cells were selected with 0.75 µg/ml puromycin (A1113803, Gibco). Next, cells were expanded and passaged as needed until FACS sorting at day 9. For FACS analysis and sorting, cells were washed, trypsinized, resuspended with full medium and spun down at 1000 rpm for 4 min. For sorting, cells were stained with 1 µg/ml Dapi (D1306, Invitrogen) in HF (2% FBS in HBSS (14175053, Gibco)), washed with HF and resuspended in HF. To determine the haploid population, a separate sample of cells was stained with 5 μM Vybrant DyeCycleTM Violet Stain (V35003, Invitrogen) in full medium for 30 min at 37°C and kept in vibrant containing medium. Cells were filtered with a 70 µm filter and then used for FACS sorting and analysis on a FACSARIA3 (BD, Franklin Lanes, NJ). Vybrant-stained cells were analyzed at 37° and used to set a size gate only containing haploid cells. Dapi-stained cells were single cell sorted at 4°C into 96-well plates, that were previously coated overnight with 0.1% gelatin (G9391, Sigma-Aldrich) in MQ and contained full medium supplemented with 1% penicillin/streptomycin (15140122, Gibco) and 0.025 M HEPES (H3375 Sigma-Aldrich, 1 M stock solution, pH 7.4, filter sterilized). The three independent clones used in this study were obtained from separate transfections of the same parental cell line. Clones were genotyped and sanger sequenced using primers RVA555 and RVA558 (Table 6).
 
@@ -193,45 +1111,79 @@ Resorting of the cell lines was also performed with the same FACS procedure, wit
 
 FACS data were analyzed and visualized with FlowJo.
 
-## Luciferase assay
+### Luciferase assay
 
 For luciferase assays, 100,000 cells per well were seeded on a 24-well plate. Cells were transfected with 1 µl X-tremeGene HP and 400 ng MegaTopflash reporter and 100 ng CMV-Renilla, or 500 ng SGFP2-C1 as a negative control 24 hr later. Cells were treated with the indicated concentration of CHIR99021 24 hr after transfection and after another 24 hr medium was removed and the cells were harvested with 50 µl Passive Lysis Buffer (E1941, Promega). Luciferase activity was measured on a GloMax Navigator (Promega), using 10 µl lysate in a black OptiPlate 96-well plate (6005279, Perkin Elmer, Waltham, MA) and 50 μL homemade firefly and luciferase reagents (according to Fuerer et al., 2014; Hampf and Gossen, 2006).
 
 For luciferase assays, three technical replicates (i.e. three wells transfected with the same transfection master mix) were pipetted and measured for each sample in each experiment. For each technical triplicate, the average MegaTopflash activity was calculated and depicted as a single dot in Figure 2C and Figure 7—figure supplement 1G. Three independent biological experiments, each thus depicted as an individual dot, were performed. To calculate MegaTopflash activity, Renilla and Luciferase luminescence values were corrected by subtracting the average background measured in the SGFP2-transfected control. MegaTopflash activity was calculated as the ratio of corrected Firefly and Renilla luminescence and normalized to the average reporter activity of the relative DMSO control (Figure 2C) or WT DMSO control (Figure 7—figure supplement 1G).
 
-## Western blot
+### Western blot
 
 The remaining lysates from the technical triplicates of the luciferase assay were combined and they were cleared by centrifugation for 10 min at 12,000 g at 4°C. Western blot analysis was performed and quantified as previously described (Jacobsen et al., 2016). Antibodies were used with the following dilutions, 1:1000 Non-phosphorylated (Active) β-catenin clone D13A1 (8814S, Cell Signaling, Danvers, MA), 1:2000 total β-catenin clone 14 (610153, BD), 1:1000 α-Tubulin clone DM1A (T9026, Sigma-Aldrich), 1:1000 GFP polyclonal (A-6455, Invitrogen), 1:20,000 IRDye 680LT Goat anti-Rabbit IgG (926–68021, LI-COR, Lincoln, NE), 1:20,000 IRDye 800CW Donkey anti-Mouse IgG (926–32212, LI-COR). Raw data for all blots have been made available at https://osf.io/vkexg/.
 
-## qRT-PCR
+### qRT-PCR
 
 For qRT-PCR analysis, 100,000 HAP1 cells per well were seeded on a 24-well plate. After 48 hr, cells were treated with indicated concentrations of CHIR99021. Cells were harvested 24 hr after treatment. RNA was isolated with Trizol (15596018, Invitrogen) according to the manufacturer’s instructions. cDNA was synthesized using SuperScriptIV (18090010, Invitrogen) according to the manufacturer’s instructions. qRT-PCR was performed with SyberGreen (10710004, Invitrogen). The endogenous WNT target gene AXIN2 was amplified using primers RVA124 and RVA125, and HPRT housekeeping control was amplified using primers RVA24 and RVA25.
 
 For qRT-PCR experiments, three technical replicates (i.e. three reactions with the same cDNA) were pipetted and measured for each sample in each experiment. For each technical triplicate, the mean fold-change in AXIN2 expression was calculated and depicted as a single dot in Figure 2D and Figure 7—figure supplement 1H. Three independent biological experiments, each thus depicted as an individual dot, were performed. Relative expression levels of AXIN2 were calculated using the comparative Delta-Ct method (Livak and Schmittgen, 2001; Schmittgen and Livak, 2008). Briefly, AXIN2 expression was normalized for HPRT expression and then the relative fold-change to a WT DMSO sample was calculated for all clones and conditions.
 
-## Time-lapse imaging
+### Time-lapse imaging
 
 The day before imaging, 88,000 cells/well were seeded on an eight-well chamber slide with glass bottom (80827–90, Ibidi, Gräfelfing, Germany). HAP1SGFP2-CTNNB1 clone 2 was used for the main Figure 3, all three clones were used for Figure 3—figure supplement 2. HAP1SGFP2-CTNNB1(S45F) clone 2 was imaged for Figure 8A. Approximately 6 hr before imaging, medium was replaced with full medium supplemented with 1% penicillin/streptomycin, 0.025M HEPES and 500 nM SiR-DNA (SC007, Spirochrome, Stein am Rhein, Switzerland). Time lapse experiments were performed on an SP8 confocal microscope (Leica Microsystems, Wetzlar, Germany) at 37°C with a HC PL APO CS2 63x/1.40 oil objective (15506350, Leica), 488 and 633 lasers, appropriate AOBS settings, using HyD detectors for fluorescent signal with a 496–555 bandpass for SGFP2-CTNNB1 and 643–764 bandpass for SiR-DNA, and a transmission PMT. Using multi-position acquisition, up to 24 images were captured every 5 min. Focus was maintained using AFC autofocus control on demand for every time point and position. Automated cell segmentation and intensity quantification was performed using a custom CellProfiler pipeline (made available at https://osf.io/6pmwf/). Output data was further analyzed in R/RStudio. Cells with a segmented cytoplasmic area of less than 10 pixels were excluded. Intensities were normalized per position to the average intensity in the cellular compartment (nucleus or cytoplasm) for that position before the addition of the compounds. The imaging settings resulted in low signal in regions not occupied by cells (~10% of the nuclear intensity, and ~5% of the cytoplasmic intensity in untreated cells), and the data was therefore not background corrected. The nuclear cytoplasmic ratio was calculated by dividing the raw nuclear intensity by the raw cytoplasmic intensity. Videos and still images were extracted with FIJI/ImageJ.
 
-## FCS and N and B cell preparation and general settings
+### FCS and N and B cell preparation and general settings
 
 Two days before FCS and N and B experiments, 44,000 cells/well were seeded on an eight-well chamber slide with a glass bottom (80827–90, Ibidi). For low, FFS-compatible expression of control samples, HAP1WT cells were transfected with ~5 ng pSGFP2-C1, pEGFP (monomer), pEGFP2 (dimer), or pEGFP3 (trimer) and ~200 ng pBlueScript KS(+) per well with Turbofect, X-tremeGene HP or Lipofectamine 3000 the day before the experiment. Lipofectamine 3000 yielded the best transfection efficiency. For Figures 4, 5 and 8K and accompanying supplements, HAP1SGFP2-CTNNB1 clone 2 was used. For Figures 7 and 8 and accompanying supplements, CHIR99021 data was recorded and pooled for all three HAP1SGFP2-CTNNB1 clones, and S45F data was recorded and pooled from HAP1SGFP2-CTNNB1(S45F) clones 2, 24, and 27 and HAP1SGFP2-CTNNB1 clone 1 (the parental line for these S45F mutant clones) was used as the wild-type control.
 
 FCS and N and B measurements were performed on an Olympus FV-1000 equipped with SepiaII and PicoHarp 300 modules (Picoquant, Berlin, Germany) at room temperature. An Olympus 60x water immersed UPLS Apochromat (N.A. 1.2) objective was used for FCS acquisition and Figure 3—figure supplement 2E, and an Olympus 60x silicon immersed UPLS Apochromat (N.A. 1.4) objective was used for N and B measurements. Green fluorophores were excited with a 488 nm diode laser (Picoquant) pulsing at 20 MHz and detected through a 405/480-488/560/635 nm dichroic mirror (Chroma, Bellows Falls, VT) and 525df45 nm bandpass filter (Semrock, Rochester, NY) with an Avalanche Photodiode (APD) (MPD, Bolzano, Italy). For Figure 2—figure supplement 1E and for FCS and N and B reference images, the same laser and dichroic were used, but the signal was detected through a 505–540 bandpass filter with an internal PMT of the FV-1000 Olympus microscope.
 
-## FCS data acquisition and analysis
+### FCS data acquisition and analysis
 
 For FCS measurements, a confocal image was recorded. In this reference image, a single pixel was set as region of interest (ROI), based on its localization in the cytoplasm or nucleus as judged by the transmission image. In this ROI, the fluorescence intensity was measured over time using an APD, for typically 120 s.
 
-FCS measurements were analyzed in FFS Dataprocessor version 2.3 (SSTC, Minsk, Belarus). The autocorrelation curve (G) was calculated from the measured intensity (I) according to Equation 1. Intensity traces with significant photobleaching, cell movement or focal drift were excluded from further analysis (see Supplementary file 1 – tab FCS measurements and fitting). From other traces, a portion of the trace with minimal (less than 10%) intensity drift or bleaching was selected to generate autocorrelation curve (AC).(1)G()=1+<δI(t)∗δI(t+τ)><I>2
+FCS measurements were analyzed in FFS Dataprocessor version 2.3 (SSTC, Minsk, Belarus). The autocorrelation curve ($G$) was calculated from the measured intensity (I) according to Equation 1. Intensity traces with significant photobleaching, cell movement or focal drift were excluded from further analysis (see Supplementary file 1 – tab FCS measurements and fitting). From other traces, a portion of the trace with minimal (less than 10%) intensity drift or bleaching was selected to generate autocorrelation curve (AC).
 
-The resulting AC was fitted with a Triplet-state-diffusion model, described in Equation 2. G∞ accounts for offset in the AC for example by intensity drift. N is the average of the number of particles that reside in the confocal volume. Ftrip and τtrip describe the fraction of molecules in the dark state and the relaxation of this dark state respectively. Of note, in this case, Ftrip and τtrip account both for blinking of the fluorescent molecules and for the afterpulsing artefact of the APD. τdiff,i describes the diffusion rate of the fluorescent molecules with the corresponding fraction, Fi. This diffusion time depends on the structural parameter (sp), which is defined as the ratio of the axial (ωz) over the radial axis (ωxy) of the observation volume.(2)G(τ)=G∞+1<N>∗Ftrip1−Ftripe−ττtrip∗∑jFi(1+ττdiff,i)1+ττdiff,i∗sp2
+$$
+G()=1+\frac{<\deltaI(t)∗\deltaI(t+\tau)>}{<I>^{2}}
+$$
+
+The resulting AC was fitted with a Triplet-state-diffusion model, described in Equation 2. G∞ accounts for offset in the AC for example by intensity drift. N is the average of the number of particles that reside in the confocal volume. Ftrip and τtrip describe the fraction of molecules in the dark state and the relaxation of this dark state respectively. Of note, in this case, Ftrip and τtrip account both for blinking of the fluorescent molecules and for the afterpulsing artefact of the APD. τdiff,i describes the diffusion rate of the fluorescent molecules with the corresponding fraction, Fi. This diffusion time depends on the structural parameter (sp), which is defined as the ratio of the axial (ωz) over the radial axis (ωxy) of the observation volume.
+
+$$
+G(\tau)=G_{∞}+\frac{1}{<N>}∗\frac{F_{trip}}{1−F_{trip}}e^{\frac{−\tau}{\tau_{trip}}}∗\sumj\frac{F_{i}}{(1+\frac{\tau}{\tau_{diff,i}})\sqrt{1+\frac{\tau}{\tau_{diff,i}∗sp^{2}}}}
+$$
 
 The apparent particle numbers (Napa) for SGFP2-CTNNB1 were corrected for autofluorescence and bleaching (Equation 3). The autofluorescence (Iautofluorescence) of HAP1 cells in the nucleus and cytoplasm was measured in untransfected HAP1 cells using the same settings as for FCS measurements. The correction for moderate bleaching is based on the intensity of the selected portion of the intensity trace for AC calculation (Iana) and the intensity at the start of the measurement (Istart).
 
-The size and shape of the observation volume was calibrated daily by measuring Alexa Fluor 488 NHS Ester (A20000, Molecular probes, Thermo Scientific, stock dilution in MQ) in PBS in a black glass-bottom cell imaging plate with 96 wells (0030741030, Eppendorf, Hamburg, Germany). From the FCS measurements of Alexa488, the τdiff and sp were determined by fitting with a single diffusion and blinking component. The diffusion coefficient (D) of Alexa488 in aqueous solutions at 22.5°C is 435 μm2s−1 (Petrásek and Schwille, 2008). From these parameters, the axial diameter can be determined with Equation 4 and the volume can be approximated by a cylinder (Equation 5). This allows for transformation of particle numbers to concentrations (Equation 6) and diffusion times to diffusion coefficients (Equation 4) that are independent of measurement settings and small daily changes in alignment of the microscope.(3)Ncorr=Napa*1-IautofluorescenceItotal2*IstartIana(4)τdiff=ωxy24D(5)V=2πωxy3*sp(6)C=NcorrV*NA
+The size and shape of the observation volume was calibrated daily by measuring Alexa Fluor 488 NHS Ester (A20000, Molecular probes, Thermo Scientific, stock dilution in MQ) in PBS in a black glass-bottom cell imaging plate with 96 wells (0030741030, Eppendorf, Hamburg, Germany). From the FCS measurements of Alexa488, the $\tau_{diff}$ and sp were determined by fitting with a single diffusion and blinking component. The diffusion coefficient (D) of Alexa488 in aqueous solutions at 22.5°C is 435 μm2s−1 (Petrásek and Schwille, 2008). From these parameters, the axial diameter can be determined with Equation 4 and the volume can be approximated by a cylinder (Equation 5). This allows for transformation of particle numbers to concentrations (Equation 6) and diffusion times to diffusion coefficients (Equation 4) that are independent of measurement settings and small daily changes in alignment of the microscope.
 
-The model to fit SGFP2-CTNNB1 measurements contained two diffusion components. The first diffusion component was fixed to the speed of monomeric SGFP2-CTNNB1. To estimate the speed of monomeric SGFP2-CTNNB1, the speed of free floating SGFP2, transfected in HAP1 cells, was measured to be 24.1 µm2s−1 using FCS. Subsequently, this speed was used to calculate the speed of monomeric SGFP2-CTNNB1 with Einstein-Stokes formula (Equation 7).(7)D=kBT6πηr
+$$
+N_{corr}=N_{apa}*1-\frac{I_{autofluorescence}}{I_{total}}^{2}*\frac{I_{start}}{I_{ana}}
+$$
+
+
+
+$$
+\tau_{diff}=\frac{\omega_{xy}^{2}}{4D}
+$$
+
+
+
+$$
+V=2\pi\omega_{xy}^{3}*sp
+$$
+
+
+
+$$
+C=\frac{N_{corr}}{V*N_{A}}
+$$
+
+The model to fit SGFP2-CTNNB1 measurements contained two diffusion components. The first diffusion component was fixed to the speed of monomeric SGFP2-CTNNB1. To estimate the speed of monomeric SGFP2-CTNNB1, the speed of free floating SGFP2, transfected in HAP1 cells, was measured to be 24.1 µm2s−1 using FCS. Subsequently, this speed was used to calculate the speed of monomeric SGFP2-CTNNB1 with Einstein-Stokes formula (Equation 7).
+
+$$
+D=\frac{k_{B}T}{6\piηr}
+$$
 
 As the temperature (T), dynamic viscosity (η) and Boltzmann’s constant (kB) are equal between SGFP2 and SGFP2-CTNNB1 measurements, the expected difference in diffusion speed is only caused by the radius (r) of the diffusing molecule assuming a spherical protein. The difference in radius was approximated by the cubic root of the ratio of the molecular weight of the SGFP2-CTNNB1 fusion protein (88 + 27=115 kDa) and the size of the SGFP2 protein (27 kDa), thus expecting a 1.62 times lower diffusion coefficient (compared to free floating SGFP2) of 14.9 µm2s−1 for SGFP2-CTNNB1.
 
@@ -241,7 +1193,7 @@ In the fitting model, the structural parameter was fixed to the one determined b
 
 To validate the obtained first diffusion coefficient of 14.9 µm2s−1 for SGFP2-CTNNB1, the data were tested with an unfixed two-component model where both the first and the second diffusion coefficient were fitted (shown in Figure 4—figure supplement 1). The following limits were set; G∞[0.5–1.5], N [0.001, 500], τtrip [1*10−6-0.05 ms], τdiff1[0.5–10 ms], τdiff2[10–150 ms]. This resulted in a median diffusion time for the first component of 14.8 µm2s−1 (Figure 4—figure supplement 1), which was in line with our calculated diffusion coefficient of 14.9 µm2s−1. All analyses were performed with the two-component model with the fixed first component to reduce variability.
 
-## N and B data acquisition and analysis
+### N and B data acquisition and analysis
 
 As a control, and to optimize acquisition settings, HAP1 cells transfected with SGFP2, EGFP monomer, dimer or trimer were measured alongside HAP1SGFP2-CTNNB1 cells treated with BSA, WNT3A, DMSO or CHIR99021, or HAP1SGFP2-CTNNB1(S45F) cells. SGFP2 and EGFP are highly similar in sequence (with only four amino acid changes) and in spectral and biochemical characteristics. SGFP2 has a slightly higher quantum yield (+7%), lower extinction coefficient (−27%), and enhanced protein expression and maturation compared to EGFP (Kremers et al., 2007). The resulting brightness of monomeric SGFP2 in comparison to monomeric EGFP is slightly lower (−5%). In cellular measurements, this difference is within the biological and technical variation and therefore SGFP2 and EGFP controls can be considered synonymous in these experiments.
 
@@ -249,46 +1201,142 @@ For N and B analysis, 50 images were acquired per measurement with a pixel time 
 
 Data were further analyzed in R/RStudio. Brightness was normalized to the median value of the EGFP-monomer brightness measured on the same day in the same cellular compartment (nucleus/cytoplasm). Of note, FCS and N and B analysis models assume a different confocal volume. In FCS we assume a cylinder with factor γ=1, whereas in N and B we assume a 3D-Gauss with factor γ=0.3536. To be able to compare particle numbers obtained with both techniques, particle numbers obtained with N and B were divided by the factor γ=0.3536.
 
-## Data representation and statistical analysis
+### Data representation and statistical analysis
 
 Data processing and representation were performed in RStudio (version 1.1.456 running R 3.5.1 or 3.6.1). 95% confidence intervals of the median mentioned in the text and shown in Tables 1–2 and Supplementary file 1 were calculated using PlotsOfDifferences (Goedhart, 2019). The p-values in Table 3 and Supplementary file 1 were also calculated using PlotsOfDifferences, which uses a randomization test and makes no assumption about the distribution of the data. Representation of the imaging data in Figure 3—figure supplement 1 and in Videos 4-6 were generated in RStudio using a script based on PlotsOfDifferences (made available at https://osf.io/sxakf/).
 
-## Model description
+### Model description
 
 We developed a minimal model for WNT signaling based on a previous model from the Kirschner group (Lee et al., 2003). The model is available as an interactive app at and the R https://wntlab.shinyapps.io/WNT_minimal_model/ source code of the model is available at https://osf.io/27ya6/ (WNT_minimal_model_v2.4.R).
 
-Our minimal model comprises the following reactions:(1a)CB+DC⇋k2k1CB∗−DCBinding of cytoplasmic CTNNB1 (CB) to destruction complex(2a)CB∗−DC→k3DC+CB∗Release of phosphorylated CB (CB∗) and recycling of the destruction complex(3a)DVL+DC⇋k5k4DC∗Inactivation of the destruction complex by DVL(4a)CB⇋k7k6NBNucleocytoplasmic shuttling of CB to and from the nucleus(5a)NB+TCF⇋k9k8NB−TCFBinding of NB to TCF
+Our minimal model comprises the following reactions:
 
-Below, we show the differential equations that govern the concentrations of the different compounds over time for the reactions described above. Table 4 in the main text gives the correspondence between the variables (i.e. x1) in the differential equations and the model name (i.e. CB) in the reactions. The parameter w in Equation 7a and Equation 9 is w=0 in the absence of WNT and w=1 if WNT is present, that is in our minimal model the inactive form of the destruction complex (DC*) is only present if WNT is present. The parameter b in Equation 6a represents the constant production of CTNNB1, corresponding to v12 in Lee et al., 2003.(6a)dx1dt=-k1x1x2+k2x3-k6x1+k7x5+b(7a)dx2dt=-k1x1x2+k2+k3x3-w(k4x2-k5x4)(8)dx3dt=k1x1x2-k2+k3x3(9)dx4dt=w(k4x2-k5x4)(10)dx5dt=k6x1-k7x5-k8x5x6+k9x7(11)dx6dt=-k8x5x6+k9x7(12)dx7dt=k8x5x6-k9x7
+$$
+CB+DC⇋k2k1CB^{∗}−DCBinding of cytoplasmic CTNNB1 (CB) to destruction complex
+$$
 
-## Equilibrium conditions without WNT
+
+
+$$
+CB^{∗}−DC→k3DC+CB^{∗}Release of phosphorylated CB (CB∗) and recycling of the destruction complex
+$$
+
+
+
+$$
+DVL+DC⇋k5k4DC^{∗}Inactivation of the destruction complex by DVL
+$$
+
+
+
+$$
+CB⇋k7k6NBNucleocytoplasmic shuttling of CB to and from the nucleus
+$$
+
+
+
+$$
+NB+TCF⇋k9k8NB−TCFBinding of NB to TCF
+$$
+
+Below, we show the differential equations that govern the concentrations of the different compounds over time for the reactions described above. Table 4 in the main text gives the correspondence between the variables (i.e. $x_{1}$) in the differential equations and the model name (i.e. CB) in the reactions. The parameter $w$ in Equation 7a and Equation 9 is $w=0$ in the absence of WNT and $w=1$ if WNT is present, that is in our minimal model the inactive form of the destruction complex (DC*) is only present if WNT is present. The parameter $b$ in Equation 6a represents the constant production of CTNNB1, corresponding to $v_{12}$ in Lee et al., 2003.
+
+$$
+\frac{dx_{1}}{dt}=-k_{1}x_{1}x_{2}+k_{2}x_{3}-k_{6}x_{1}+k_{7}x_{5}+b
+$$
+
+
+
+$$
+\frac{dx_{2}}{dt}=-k_{1}x_{1}x_{2}+k_{2}+k_{3}x_{3}-w(k_{4}x_{2}-k_{5}x_{4})
+$$
+
+
+
+$$
+\frac{dx_{3}}{dt}=k_{1}x_{1}x_{2}-k_{2}+k_{3}x_{3}
+$$
+
+
+
+$$
+\frac{dx_{4}}{dt}=w(k_{4}x_{2}-k_{5}x_{4})
+$$
+
+
+
+$$
+\frac{dx_{5}}{dt}=k_{6}x_{1}-k_{7}x_{5}-k_{8}x_{5}x_{6}+k_{9}x_{7}
+$$
+
+
+
+$$
+\frac{dx_{6}}{dt}=-k_{8}x_{5}x_{6}+k_{9}x_{7}
+$$
+
+
+
+$$
+\frac{dx_{7}}{dt}=k_{8}x_{5}x_{6}-k_{9}x_{7}
+$$
+
+#### Equilibrium conditions without WNT
 
 The parameters in our model can in part be determined from our measurements of the equilibrium concentrations of CB, NB and their complexes, see Tables 4–5 in the main text. Where we could not determine the parameters from our measurements, we used published values as indicated.
 
-Under equilibrium conditions, the concentrations of the compounds do not change with time and the left-hand side of Equations 6a - 12 is zero. From Equations 10 and 11, we can determine the ratio of the rate constants k6 and k7 from the measured values of x1 and x5:(13)k6x1=k7x5⇔k6k7=x5x1=8791=0.96
+Under equilibrium conditions, the concentrations of the compounds do not change with time and the left-hand side of Equations 6a - 12 is zero. From Equations 10 and 11, we can determine the ratio of the rate constants $k_{6}$ and $k_{7}$ from the measured values of $x_{1}$ and $x_{5}$:
 
-From Equations (6a), (8), (10) and (11) we have:(14)−k3x3+b=0⇔k3=bx3=0.42362.5=0.0068min−1
+$$
+k_{6}x_{1}=k_{7}x_{5}⇔\frac{k_{6}}{k_{7}}=\frac{x_{5}}{x_{1}}=\frac{87}{91}=0.96
+$$
 
-Our reaction (1) corresponds closely to step 8 in Lee et al. therefore, we use the value of the dissociation constant K8=120 nM from Lee et al. for our dissociation constant K1=k2k1.
+From Equations (6a), (8), (10) and (11) we have:
 
-The concentration of the destruction complex is obtained from Equation (1a) under equilibrium conditions using Equations (6a), (8), (10), (11) and (14)-k1x1x2+k2x3+b=0
+$$
+−k_{3}x_{3}+b=0⇔k_{3}=\frac{b}{x_{3}}=\frac{0.423}{62.5}=0.0068min^{−1}
+$$
 
-The value of b is assumed to be small compared to the two other terms, so we calculate the concentration of the destruction complex as:
+Our reaction (1) corresponds closely to step 8 in Lee et al. therefore, we use the value of the dissociation constant $K_{8}=120$ nM from Lee et al. for our dissociation constant $K_{1}=\frac{k_{2}}{k_{1}}$.
 
-x2=K1x3x1=12062.591=82.4nM. It was then verified in our interactive app that this value for the destruction complex is indeed consistent with the equilibrium conditions without WNT stimulation.
+The concentration of the destruction complex is obtained from Equation (1a) under equilibrium conditions using Equations (6a), (8), (10), (11) and (14)
 
-To calculate the dissociation constant for the NB-TCF complex, we estimate an equilibrium concentration for free TCF (x6) from Tan et al., 2012. From their Figure 11, it is seen that the bound TCF concentration in equilibrium in the presence of WNT has about the same value as the initial free TCF concentration and that no initial bound TCF is present. However, we measured NB-TCF also in the initial state. Therefore, we consider the free TCF concentration value from Tan et al. as a lower bound for the estimate of total TCF. Also, from Figure 11 of Tan et al., 2012, we estimate that of the initial free TCF, a fifth remains in the nucleus as free TCF after WNT is turned on. We measured 86 nM NB-TCF in the nucleus after the application of WNT. This leads to an estimate of the total concentration of TCF, TCF0, in the nucleus of: [TCF0]=86+0.2×86=103nM. If we assume that the total TCF concentration does not change by the application of WNT, we calculate the dissociation constant of the NB-TCF complex from Equation 12:(15)k8x5(TCF0−x7)=k9x7⇒k9k8=K2=x5(TCF0−x7)x7=87∗8122=320nM
+$$
+-k_{1}x_{1}x_{2}+k_{2}x_{3}+b=0
+$$
 
-## Equilibrium conditions with WNT
+The value of $b$ is assumed to be small compared to the two other terms, so we calculate the concentration of the destruction complex as:
 
-We model the action of WNT by deactivation of the destruction complex by DVL through reaction 3 by setting w=1 in Equations 7a and 9. The dissociation constant of CB*-DC, K1, is assumed not to change in the presence of WNT. The measurements of free CB and NB in equilibrium (see Table 2) give for the ratio of k6 and k7:(16)k6x1=k7x5⇔k6k7=x5x1=170145=1.17
+$x_{2}=K_{1}\frac{x_{3}}{x_{1}}=120\frac{62.5}{91}=82.4nM$. It was then verified in our interactive app that this value for the destruction complex is indeed consistent with the equilibrium conditions without WNT stimulation.
 
-The value of the rate of decay of the phosphorylated complex CB*-DC, k3, is found to be the same for the 'without WNT' situation:(17)−k3x3+b=0⇔k3=bx3=0.42362.5=0.0068min−1
+To calculate the dissociation constant for the NB-TCF complex, we estimate an equilibrium concentration for free TCF ($x_{6}$) from Tan et al., 2012. From their Figure 11, it is seen that the bound TCF concentration in equilibrium in the presence of WNT has about the same value as the initial free TCF concentration and that no initial bound TCF is present. However, we measured NB-TCF also in the initial state. Therefore, we consider the free TCF concentration value from Tan et al. as a lower bound for the estimate of total TCF. Also, from Figure 11 of Tan et al., 2012, we estimate that of the initial free TCF, a fifth remains in the nucleus as free TCF after WNT is turned on. We measured 86 nM NB-TCF in the nucleus after the application of WNT. This leads to an estimate of the total concentration of TCF, TCF0, in the nucleus of: $[TCF^{0}]=86+0.2\times86=103nM$. If we assume that the total TCF concentration does not change by the application of WNT, we calculate the dissociation constant of the NB-TCF complex from Equation 12:
 
-To uniquely determine the ratio of k4 and k5, we need the concentrations of the destruction complex DC and DC* neither of which we have access to. We can, however, fit this ratio with our model to the measured values of x1 and x7 and find k4/k5=1.7.
+$$
+k_{8}x_{5}(TCF^{0}−x_{7})=k_{9}x_{7}⇒\frac{k_{9}}{k_{8}}=K_{2}=\frac{x_{5}(TCF^{0}−x_{7})}{x_{7}}=\frac{87∗81}{22}=320nM
+$$
 
-We again calculate the dissociation constant of the NB-TCF complex from Equation (12), using the concentrations for NB and NB-TCF obtained with FCS.(18)k8x5(TCF0−x7)=k9x7⇒k9k8=K2=x5(TCF0−x7)x7=170∗1786=33.6nM
+#### Equilibrium conditions with WNT
 
-Notice that we determined the ratios of the rate constants from the measured equilibrium values of free and bound CTNNB1 in the cytoplasm and the nucleus. This means that our rate constants are determined up to a multiplicative factor: the equilibrium equations do not change if all rate constants ki and the parameter b are multiplied by the same factor, Rate. The factor Rate determines how fast our model system reaches equilibrium. By comparing the times equilibrium was reached by the cytoplasmic and nuclear SGFP2-CTNNB1 signals (Figure 3B, C) of about 4.5 hr, we fitted a factor Rate=20 for our model.
+We model the action of WNT by deactivation of the destruction complex by DVL through reaction 3 by setting $w=1$ in Equations 7a and 9. The dissociation constant of CB*-DC, $K_{1}$, is assumed not to change in the presence of WNT. The measurements of free CB and NB in equilibrium (see Table 2) give for the ratio of $k_{6}$ and $k_{7}$:
 
-Our model shows that the ratios of k6/k7 and k9/k8 are different for the conditions without and with WNT stimulation, suggesting a change in mechanism for nuclear shuttling of CTNNB1 and nuclear retention of CTNNB1 in going from the WNT ‘off’ situation to the WNT ‘on’ situation. It seems likely that such changes do not occur instantaneously. In our model we therefore allow a gradual rise in k5/k4 and a gradual transition of the ratios of k6/k7 and k9/k8 from WNT ‘off’ to the WNT ‘on’. In our model, this is included by setting a parameter (‘Steep’) that indicates the time after application of WNT the transition from WNT ‘off’ parameter values to WNT ‘on’ parameter values is complete. The value that gives a good approximation of the experimentally observed concentration curves is Steep = 150 minutes (Figure 6B-F).
+$$
+k_{6}x_{1}=k_{7}x_{5}⇔\frac{k_{6}}{k_{7}}=\frac{x_{5}}{x_{1}}=\frac{170}{145}=1.17
+$$
+
+The value of the rate of decay of the phosphorylated complex CB*-DC, $k_{3}$, is found to be the same for the 'without WNT' situation:
+
+$$
+−k_{3}x_{3}+b=0⇔k_{3}=\frac{b}{x_{3}}=\frac{0.423}{62.5}=0.0068min^{−1}
+$$
+
+To uniquely determine the ratio of $k_{4}$ and $k_{5}$, we need the concentrations of the destruction complex DC and DC* neither of which we have access to. We can, however, fit this ratio with our model to the measured values of $x_{1}$ and $x_{7}$ and find $k_{4}/k_{5}=1.7$.
+
+We again calculate the dissociation constant of the NB-TCF complex from Equation (12), using the concentrations for NB and NB-TCF obtained with FCS.
+
+$$
+k_{8}x_{5}(TCF^{0}−x_{7})=k_{9}x_{7}⇒\frac{k_{9}}{k_{8}}=K_{2}=\frac{x_{5}(TCF^{0}−x_{7})}{x_{7}}=\frac{170∗17}{86}=33.6nM
+$$
+
+Notice that we determined the ratios of the rate constants from the measured equilibrium values of free and bound CTNNB1 in the cytoplasm and the nucleus. This means that our rate constants are determined up to a multiplicative factor: the equilibrium equations do not change if all rate constants $k_{i}$ and the parameter $b$ are multiplied by the same factor, $Rate$. The factor $Rate$ determines how fast our model system reaches equilibrium. By comparing the times equilibrium was reached by the cytoplasmic and nuclear SGFP2-CTNNB1 signals (Figure 3B, C) of about 4.5 hr, we fitted a factor $Rate=20$ for our model.
+
+Our model shows that the ratios of $k_{6}/k_{7}$ and $k_{9}/k_{8}$ are different for the conditions without and with WNT stimulation, suggesting a change in mechanism for nuclear shuttling of CTNNB1 and nuclear retention of CTNNB1 in going from the WNT ‘off’ situation to the WNT ‘on’ situation. It seems likely that such changes do not occur instantaneously. In our model we therefore allow a gradual rise in $k_{5}/k_{4}$ and a gradual transition of the ratios of $k_{6}/k_{7}$ and $k_{9}/k_{8}$ from WNT ‘off’ to the WNT ‘on’. In our model, this is included by setting a parameter (‘Steep’) that indicates the time after application of WNT the transition from WNT ‘off’ parameter values to WNT ‘on’ parameter values is complete. The value that gives a good approximation of the experimentally observed concentration curves is Steep = 150 minutes (Figure 6B-F).

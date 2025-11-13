@@ -34,6 +34,14 @@ The SUV39 clade of the SET-domain family of protein lysine methyltransferases re
 
 The mechanisms regulating SUV39 proteins to specifically deposit H3K9me2/3 in heterochromatic regions are not well understood. The fission yeast Schizosaccharomyces pombe heterochromatin system, closely related to the metazoan systems, with its sole SUV39 protein Clr4, serves as a paradigm for studying the role of this enzyme class in heterochromatin establishment and maintenance. Ectopic tethering experiments with Clr4 have established that H3K9me2/3 can support stable epigenetic transmission of transcriptional states (Audergon et al., 2015; Ragunathan et al., 2015). Clr4 has further served as a valuable tool to understand its animal orthologs, which share a very similar domain architecture consisting of an N-terminal chromodomain and a C-terminal catalytic SET domain (Figure 1A). The chromodomain binds the H3K9me2/3 mark and is critical for spreading the H3K9me2/3 mark across genomic domains (Melcher et al., 2000; Müller et al., 2016; Zhang et al., 2008). Recent evidence also suggests that an autoinhibitory loop in the post-SET domain regulates spreading of H3K9me2/3 by Clr4 (Iglesias et al., 2018).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62682/elife-62682-fig1-v1.jpg)
+
+**Figure 1.:** (A) Domain organization of the Clr4 protein. CD: chromodomain; NT: N-terminal domain; SET: Su-var39/enhancer of zeste/trithorax domain; KMT: lysine methyltransferase domain. (B) Methyltransferase time course on H3K14ub versus unmodified H3 peptides shows strong stimulation of full-length Clr4 and the isolated KMT domain by H3K14ub. Peptide concentration was held constant at 20 μM, 3H-SAM was used as methyl donor with 20 nM enzyme. CBB: Coomassie Brilliant Blue. (C) Stimulation of methyltransferase activity of Clr4 (20 nM) comparing indicated substrates with unmodified H3 peptide by radiometric filter binding assay with 3H-SAM as methyl donor. (D) Michaelis–Menten kinetics of SAH production of the Clr4 KMT domain on unmodified versus H3K14ub peptides. Measured using TR-FRET competition assay (Cisbio EPIgeneous Methyltransferase Assay kit). (E) Ubiquitin competition assay demonstrates the specificity of Clr4 for ubiquitin and shows that covalent linkage in cis is required for activation. (C–E) Error bars indicate standard error of the mean, N = 3 unless indicated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62682/elife-62682-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Scheme for synthesis of ubiquitinated peptides. (B, C) Reverse-phase HPLC chromatography and electrospray ionization mass spectrometric (ESI-MS) analysis of ubiquitinated, purified peptides P1″ (B) and P2″ (C). (D) Protein preparations analyzed by SDS-PAGE that were used for activity assays in Figure 1B and C. (E, F) Full-size images for data shown in Figure 1B. (G) Representation of data in Figure 1C as rates derived from 3H incorporation by filter binding and scintillation counting. (H) Methyltransferase assays with indicated Clr4 truncation constructs on ubiquitinated versus unmodified H3 peptides. Measured using a TR-FRET competition assay (Cisbio EPIgeneous Methyltransferase Assay kit). (I) Protein preparations analyzed by SDS-PAGE that were used for activity assays in Figure 1D and E and Figure 1—figure supplement 1H. Asterisk indicates a contaminating band.
+
 Clr4 is a key part of S. pombe heterochromatin, which is found at pericentromeres, telomeres, and the mating type locus and depends on the tightly interconnected pathways of the nuclear RNA interference machinery and an array of chromatin modifiers (Grewal, 2010). Small RNAs are generated from a limited set of repeat sequences in heterochromatic regions and guide the RNAi machinery in the form of the RNA-induced initiation of transcriptional gene silencing complex (RITS) to nascent heterochromatic transcripts (Verdel et al., 2004; Bühler et al., 2007; Schalch et al., 2011; Shimada et al., 2016). RITS recruits Clr4 and its associated Cullin4-RING ubiquitin ligase complex, the CLRC complex (Zhang et al., 2008; Bayne et al., 2010), thereby driving the deposition of H3K9me2/3 marks, which provides a platform for binding of HP1 proteins that in turn recruit further transcriptional gene silencing complexes (Motamedi et al., 2008; Fischer et al., 2009; Leopold et al., 2019). Heterochromatin formation is further strongly dependent on deacetylation of H3K14 (Alper et al., 2013; Bjerling et al., 2002; Buscaino et al., 2013; Yamada et al., 2005), with H3K14 acetylation being strongly associated with active gene expression in euchromatin (Wang et al., 2012).
 
 Even though it has long been recognized that rik1 plays an essential role in the S. pombe heterochromatin system (Ekwall and Ruusala, 1994; Allshire et al., 1995; Nakayama et al., 2001; Zhang et al., 2008), its molecular mechanism has remained elusive. Rik1 is a paralog of the DNA repair protein DDB1 and forms the central scaffold of the CLRC complex that includes the cullin protein Cul4, the WD-40 β-propeller proteins Dos1/Raf1, the RING finger protein Pip1, as well as the replication focus targeting sequence (RFTS) protein Dos2/Raf2 and Clr4 (Hong et al., 2005; Horn et al., 2005; Jia et al., 2005; Li et al., 2005; Thon et al., 2005). CLRC features the hallmarks of an intact CRL4-type E3 ligase, which uses the subunit Dos1/Raf1 as a substrate adapter (Buscaino et al., 2012; Horn et al., 2005; Jia et al., 2005; Kuscu et al., 2014). Recent work has revealed that the preferred substrate for ubiquitylation by CLRC is lysine 14 on histone H3, yielding H3K14ub (Oya et al., 2019), and that H3K14ub controls the activity of Clr4. However, how H3K14ub regulates Clr4 and its role in heterochromatin formation remain to be determined.
@@ -42,7 +50,7 @@ We combined biochemical and structural methods to decipher the molecular mechani
 
 ## Results
 
-## The catalytic domain of Clr4 senses the presence of H3K14-linked ubiquitin
+### The catalytic domain of Clr4 senses the presence of H3K14-linked ubiquitin
 
 To understand the enzymatic reaction underlying the stimulation of Clr4 by H3K14ub, we set out to determine the domains of Clr4 that mediate this effect. Clr4’s domain architecture comprises an N-terminal chromodomain, which is connected by a linker region to the catalytic lysine methyltransferase (KMT) domain (Figure 1A). The KMT domain contains the N-terminal, pre-SET, SET, and post-SET regions and its structure has been determined (Min et al., 2002; Iglesias et al., 2018). To determine the role of the chromodomain and linker region, we recombinantly expressed both the full-length Clr4 and the isolated KMT domain and quantified their methyltransferase activity using two different assays: (1) incorporation of tritium-labeled methyl groups from a 3H-SAM donor into histone proteins and (2) fluorescence-based measurement of SAH generation (Cisbio EPIgeneous Methyltransferase Assay kit). As substrates we used unmodified H3 peptide (1–21) and H3 peptide ubiquitinated on K14 (H3K14ub) or K18 (H3K18ub) generated by native chemical ligation procedures. These branched peptides are identical to a native ubiquitin linkage except for a glycine to alanine change in the C-terminal residue of ubiquitin that is covalently linked to K14 (Figure 1—figure supplement 1A).
 
@@ -50,39 +58,366 @@ Figure 1B shows fluorographs of methyltransferase assays for Clr4 full-length an
 
 To fully characterize the H3K14ub-mediated stimulation, we measured enzyme kinetics of Clr4KMT on H3K14ub vs. the unmodified peptide (Figure 1D). An approximately hundred-fold difference for the Michaelis–Menten (KM) constants was measured with 0.33 ± 0.06 µM for H3K14ub and 28.1 ± 8.0 µM for H3. The turnover number (kcat) was about three times higher in the presence of H3K14ub (0.81 ± 0.03 min–1) compared with unmodified H3 (0.28 ± 0.02 min–1). This leads to an increase in overall enzymatic efficiency measured by the specificity constant ksp = kcat/KM of 250-fold (Table 1). Comparison of the kinetic parameters between H3K14ub and H3 substrate indicates that the presence of ubiquitin on lysine 14 leads to a tighter enzyme-substrate complex and to conformational changes in the active site that increase the rate of the methyltransferase reaction.
 
+**Table 1.**
+ Enzyme kinetics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clr4KMT</th>
+      <th>Substrate</th>
+      <th>KM(µM)</th>
+      <th>kcat(min–1)</th>
+      <th>kcat/KM(mM–1 min–1)</th>
+      <th>Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>H3(1–21)</td>
+      <td>28.1 ± 8.0</td>
+      <td>0.277 ± 0.024</td>
+      <td>9.86 ± 2.18</td>
+      <td>Figure 1D</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>H3K14ub</td>
+      <td>0.329 ± 0.060</td>
+      <td>0.809 ± 0.029</td>
+      <td>2456 ± 405</td>
+      <td>Figure 1D</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>H3(1–19)</td>
+      <td>124 ± 26</td>
+      <td>0.713 ± 0.085</td>
+      <td>5.75 ± 0.59</td>
+      <td>Figure 3G</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>H3K14ub</td>
+      <td>0.234 ± .0.068</td>
+      <td>3.85 ± 0.29</td>
+      <td>16459 ± 3,796</td>
+      <td>Figure 3G</td>
+    </tr>
+    <tr>
+      <td>3FA</td>
+      <td>H3(1–19)</td>
+      <td>76.8 ± 17.5</td>
+      <td>0.406 ± 0.045</td>
+      <td>5.29 ± 0.68</td>
+      <td>Figure 3G</td>
+    </tr>
+    <tr>
+      <td>3FA</td>
+      <td>H3K14ub</td>
+      <td>4.00 ± 1.60</td>
+      <td>2.49 ± 0.32</td>
+      <td>623 ± 180</td>
+      <td>Figure 3G</td>
+    </tr>
+    <tr>
+      <td>GS253</td>
+      <td>H3(1–19)</td>
+      <td>121 ± 29</td>
+      <td>0.548 ± 0.071</td>
+      <td>4.53 ± 0.52</td>
+      <td>Figure 3G</td>
+    </tr>
+    <tr>
+      <td>GS253</td>
+      <td>H3K14ub</td>
+      <td>10.4 ± 1.2</td>
+      <td>3.83 ± 0.21</td>
+      <td>370 ± 25</td>
+      <td>Figure 3G</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values represent fitting estimates and corresponding standard error._
+
 To determine whether H3K14ub uses an allosteric site for ubiquitin on Clr4, we challenged the methyltransferase reaction with increasing amounts of free ubiquitin. While we observed no significant increase in activity for unmodified H3, we observed a drop in the activity for H3K14ub at high concentrations of free ubiquitin (Figure 1E). This experiment failed to produce evidence of an allosteric site for free ubiquitin on Clr4, and we conclude that the stimulation of kcat is likely to depend on an induced-fit mechanism triggered by binding of H3K14ub to the Clr4KMT domain.
 
-## H3K14 ubiquitin mark affects the structural dynamics of Clr4
+### H3K14 ubiquitin mark affects the structural dynamics of Clr4
 
 To understand the structural basis for the regulation of Clr4 by H3K14ub, we performed hydrogen/deuterium exchange coupled to mass spectrometry (HDX-MS) analysis on the free Clr4KMT domain and on Clr4KMT in complex with H3- and H3K14ub peptides. HDX-MS measures protein dynamics based on the rate of exchange of protein amide protons with the solvent (Kochert et al., 2018). Changes in HDX rates upon complex formation identify regions of the protein that are affected by the formation of the complex. Comparing the dynamics for Clr4KMT alone and in the presence of excess H3K14ub or unmodified H3 peptides, we observed a strong and unique reduction of the HDX rate for residues 243–261 of Clr4 in the presence of H3K14ub (Figure 2A and B, Figure 2—figure supplement 1, Supplementary files 2-4). A further region between residues 291–305 showed significant amide protection by both H3 and H3K14ub substrates, the latter peptide showing a more intense protection (Figure 2B, bottom graph). These results suggest that the H3 peptide interacts with residues 291–305, while the ubiquitin moiety binds to a region involving residues 243–261. The H3K14ub binding region identified by HDX-MS maps to the NT domain just before it transitions into the pre-SET domain, and we will refer to this region as UBR (Figure 2A). The UBR forms a ridge along the ‘back’ of Clr4, opposite to the active site pockets where cofactor and the substrate peptide bind (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62682/elife-62682-fig2-v1.jpg)
+
+**Figure 2.:** (A) Differences in Clr4 hydrogen/deuterium exchange (HDX) rates upon binding of H3 and H3K14ub peptides are shown for each analyzed peptide. Values are plotted as the product of [deuteration percentage] * [number of deuterons] to minimize the influence of peptide length on the results. Domain diagram indicates the regions showing stabilization upon interaction with H3 peptides in general (cyan) and more specifically with H3K14ub (blue). (B) Uptake plot for two peptides representative of regions showing differences in HDX rate of Clr4 upon peptide binding. (C) Surface representation of Clr4 structure (PDBID:6BOX) and cartoon representation of ubiquitin (PDBID:1UBQ). UBR: ubiquitin binding region. (D) Differences in ubiquitin HDX rates for the H3-K14ub peptide in the absence and presence of Clr4. Results are shown as in (A). (E) Uptake plot for peptide 25–43 of ubiquitin linked to H3K14 showing a marked reduction in HDX rate at 30 s and 300 s incubation time in deuterated buffer.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62682/elife-62682-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Peptide map of Clr4 peptides used for hydrogen deuterium exchange mass spectrometry (HDX-MS) analysis of Clr4. (B) Peptide map showing peptides used for the HDX-MS analysis of H3K14ub dynamics. (C) Selection of Clr4 peptides comparing the deuteration levels for Clr4 alone (Clr4) or when in complex with H3K14ub peptide (Clr4-H3K14ub) or with H3 unmodified peptide (Clr4-H3). Values shown as percentage deuteration compared to a theoretical maximal level.
+
 We also compared HDX-MS rates of isolated H3K14ub peptide with the H3K14ub-Clr4 complex and found that amino acids 25–43 on ubiquitin were protected from exchange upon interaction with Clr4 (Figure 2D and E, Figure 2—figure supplement 1, Supplementary file 3). These residues map to the α-helix of ubiquitin, indicating that this surface interacts with Clr4.
 
-## UBR mutants lose affinity for H3K14ub
+### UBR mutants lose affinity for H3K14ub
 
 To determine the functional importance of the UBR, we designed mutations that specifically disrupt the Clr4-H3K14ub interaction. While substitutions of residues 243–251 yielded unstable protein, substitution of residues 253–256 (sequence DPNF to GGSG, referred to as Clr4-GS253) resulted in a stable protein. Based on the Clr4 structure and sequence conservation, we further chose to mutate three phenylalanines that intersect orthogonally with the GS253 mutations on the surface of Clr4 (F256A, F310A, and F427A, referred to as Clr4-3FA).
 
 We used isothermal titration calorimetry (ITC) to determine the effect of the mutations on the affinity of the Clr4-H3K14ub interaction. Consistent with the low KM observed previously, Clr4 binds to the H3K14ub peptide with a dissociation constant (Kd) of 80 ± 6 nM in a reaction that is dominated by enthalpy (Figure 3A). In contrast, Clr4-GS253 and Clr4-3FA showed complete loss of binding to H3K14ub under the same conditions (Figure 3B and C). We also attempted to determine the Kd for unmodified H3 peptides, but were unable to observe binding. The ITC data confirm that H3K14ub binds with high affinity to the KMT domain of Clr4 and that the UBR mutants disrupt the Clr4-H3K14ub enzyme-substrate complex.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/62682/elife-62682-fig3-v1.jpg)
+
+**Figure 3.:** (A–C) Thermodynamic parameters of H3K14ub substrate binding to wild-type and mutant Clr4KMT proteins were measured using isothermal titration calorimetry (ITC). Heat rates (top panel) were integrated and plotted as a binding isotherm (bottom panel). Fit to a one-site model is shown as a solid line where fitting was possible. (D) Overview and detail view of superimposition of Clr4-3FA crystal structure (shades of teal) to wild-type Clr4 (yellow) (PDBID:6BOX) indicate absence of major differences in global folding. Residues 243–262 are colored in blue. Mutated residues (orange) and SAH co-factor are shown in stick representation. (E) Superposition of mutated region in stick representation for Clr4-3FA (orange) and Clr4 (gray) (PDBID:6BOX). (F) Methyltransferase kinetics of wild-type and Clr4KMT mutants measured by detection of 3H incorporation on SDS-PAGE gels shows loss of stimulation by H3K14ub for GS253 and 3FA mutants. To observe sufficient signal, differing enzyme concentrations of 20 and 200 nM were used for H3K14ub and H3 peptides, respectively. (G) Michaelis–Menten kinetics for Clr4 wild-type, 3FA, and GS253 mutants measured using the Promega MTase-Glo methyltransferase assay. Error bars correspond to standard error of mean based on three or four measurements.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62682/elife-62682-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative protein preparations of Clr4 mutants analyzed by SDS-PAGE and Coomassie Brilliant Blue staining that were used for isothermal titration calorimetry (ITC) and activity assays in Figure 3. (B) Detail of Clr4-3FA electron density map in the region containing the mutations F256A/F310A/F427A. (C) Stimulation by H3K14ub and H3K18ub is shown as relative rates of 3H incorporation quantified by filter binding and scintillation counting using the same experimental setup as in Figure 1C. Error bars indicate standard error of mean.
+
 The Clr4-3FA mutant showed very stable biochemical behavior and crystallized readily. To determine the effect of the 3FA mutations on the folding of Clr4, we solved the structure by X-ray crystallography. These efforts resulted in a 2.46 Å structure of Clr4-3FA (Table 2). The packing of the molecules in these crystals is similar to the packing observed in the structure of the autoinhibited Clr4, despite a difference in space group (PDBID:6BOX) (Iglesias et al., 2018). When comparing with previous X-ray structures of Clr4, we observed no significant difference in global or local protein folding between the wild-type Clr4 KMT domains and the Clr4-3FA mutant (RMSD = 0.37 Å) (Figure 3D and E, Figure 3—figure supplement 1). This indicates that the Clr4-3FA mutations do not induce significant structural changes.
+
+**Table 2.**
+ Crystallographic table.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Native</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.97950</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>70.68–2.46 (2.68–2.46)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 21 21 2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Unit-cell parameters (Å, °)</td>
+      <td>92.44, 110.29, 70.68, 90.00, 90.00, 90.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total reflections</td>
+      <td>120,264 (3409)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>19,571 (979)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>6.1 (3.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Completeness (%) spherical</td>
+      <td>72.2 (16.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Completeness (%) ellipsoidal</td>
+      <td>93.1 (56.9)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean I/σ(I)</td>
+      <td>6.6 (1.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wilson B factor (Å2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.214 (0.898)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rmeas</td>
+      <td>0.233 (1.046)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rpim</td>
+      <td>0.093 (0.525)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.993 (0.627)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>0.998 (0.878)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution range</td>
+      <td>2.46</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total number of reflections</td>
+      <td>18,561</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of reflections in test set</td>
+      <td>973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rwork (%)</td>
+      <td>23.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rfree (%)</td>
+      <td>24.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CC (work)</td>
+      <td>0.923</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CC (free)</td>
+      <td>0.910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. of non-hydrogen atoms</td>
+      <td>4495</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Macromolecule</td>
+      <td>4411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>62</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. of protein residues</td>
+      <td>549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R.m.s.d., bonds (Å)</td>
+      <td>0.014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R.m.s.d., angles (°)</td>
+      <td>1.73</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran favored (%)</td>
+      <td>96.54</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran allowed (%)</td>
+      <td>3.46</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>2.42</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Average B factor (Å2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Macromolecule</td>
+      <td>31.85</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>24.61</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>21.63</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Statistics for the highest resolution shell are shown in parentheses._
 
 To establish the impact of the mutants on the methyltransferase activity, we performed enzymatic assays using 3H-SAM and gel-based read-out. These assays show that the mutants lose activity on H3K14ub when compared to wild-type Clr4KMT (Figure 3F). To establish that the UBR mutants specifically target H3K14ub-mediated stimulation of Clr4 but not activity on unmodified peptide, we determined Michaelis–Menten kinetics for the Clr4-GS253 and Clr4-3FA mutants using a luminescence-based assay (Figure 3G, Table 1). Comparison of the specificity constants ksp shows that the efficiency of the UBR mutants on H3K14ub drops approximately 27-fold for Clr4-3FA and 48-fold for Clr4-GS253 compared to the wild-type. This drop in activity is caused by a corresponding drop in KM, consistent with the ITC results. The difference between Clr4-3FA and Clr4-GS253 is not statistically significant, but is consistent with small differences observed in the radioactive gel-based and filter-binding assays (Figure 3F, Figure 3—figure supplement 1C).
 
 In contrast to the enzymatic activity on H3K14ub, the activity on unmodified H3 peptides is only mildly affected resulting in a ksp, that is, 91% of wild-type for Clr4-3FA and 78% for Clr4-GS253 (Figure 3G, Table 1). We conclude that the enzymatic and affinity measurements establish that both UBR mutants target the Clr4-H3K14ub interaction with high specificity.
 
-## Clr4 loss-of-function mutants affect heterochromatin
+### Clr4 loss-of-function mutants affect heterochromatin
 
 In S. pombe, heterochromatin formation depends strongly on the H3K9me2/3 methyltransferase activity of Clr4. Clr4 knock-out and mutant strains are defective for transcriptional gene silencing and display hyperacetylated heterochromatic regions (Nakayama et al., 2001; Bannister et al., 2001; Gerace et al., 2010; Iglesias et al., 2018). The UBR mutants, therefore, provide a unique opportunity to investigate the functional importance of the H3K14ub-mediated stimulation for the S. pombe heterochromatin system. We introduced the Clr4-GS253 and Clr4-3FA mutations at the endogenous clr4 locus and crossed them into a dual reporter (imr1L::ura4+/otr1R::ade6+) background for evaluating heterochromatin silencing using comparative growth assays (Ekwall et al., 1997). Strains with a functional silencing machinery are able to repress transcripts from these two centromeric reporters, and wild-type cells therefore show restricted growth on medium lacking uracil and turn red on medium containing low concentrations of adenine. Elevated levels of ura4, however, render the strains sensitive to growth on media containing 5-fluoroorotic acid (FOA), which is converted into the toxic product fluorodeoxyuridine when ura4 is expressed at elevated levels. The clr4-GS253 mutant showed increased growth on medium lacking uracil, no growth on FOA plates, and white colonies on low adenine, comparable to the clr4Δ mutant, which indicates a severe loss of transcriptional gene silencing (Figure 4A). The clr4-3FA mutant also showed a growth phenotype very similar to clr4Δ. However, the slightly pinkish color on low Ade plates suggests that the silencing defect is less severe than in clr4-GS253 or clr4Δ. The clr4 mutants are expressed at normal levels, and co-IP experiments with Rik1 show that they remain associated with the CLRC complex (Figure 4B and C). To get a quantitative measure of the loss of transcriptional gene silencing, we analyzed endogenous heterochromatic transcripts at centromeric dg/dh repeats and the subtelomeric tlh1 locus by RT-qPCR (Figure 4D). The levels of these transcripts were greatly elevated in the clr4-GS253 mutant, similar to clr4Δ. In contrast, the 3FA mutant showed a more nuanced silencing defect with high transcript levels for centromeric dh and telomeric transcripts, and a modest ~10-fold increase for centromeric dg. These findings are consistent with the weaker silencing defect of clr4-3FA observed in the growth assays and with the weaker loss of enzymatic stimulation in vitro. To test if the loss of gene silencing is associated with loss of H3K9 methylation, we performed chromatin immunoprecipitation (ChIP) against H3K9me1, H3K9me2, and H3K9me3 (Figure 4E and F). Both H3K9me2 and H3K9me3 were completely abolished in clr4-GS253 and clr4-3FA strains at centromeric dg/dh repeats, being indistinguishable from clr4Δ. Currently, we cannot explain why the dg transcripts in the 3FA mutant are only slightly elevated while completely losing H3K9me2/3. clr4-GS253 and clr4Δ also showed elevated levels of H3K9me1 when compared to wild-type clr4+, while this was not observed for clr4-3FA. The elevated H3K9me1 marks support the hypothesis that another unidentified methyltransferase could be depositing this mark (Jih et al., 2017). We further found that in agreement with the increased transcript levels RNA polymerase II occupancy at dh repeats was strongly increased.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62682/elife-62682-fig4-v1.jpg)
 
-**Figure 4.:** (A) Serial dilution growth assays of wild-type and the Clr4 mutants. Strains were assessed for growth on PMG media, PMG-ura to monitor imr1L::ura4 expression, and PMG+FOA to monitor silencing of +imr1L::ura4. Expression of +otr1R::ade6 was tested on PMG containing low adenine. (+B) Immunoblot for FLAG-Clr4 on cell lysates from clr4 mutant strains. Asterisk indicates a non-specific band. (C) Co-IP experiment to assess the stability of the CLRC complex in clr4-GS253 and clr4-3FA mutants. (D) Changes in steady-state transcript levels in clr4 mutant strains relative to wild-type cells were measured by RT-qPCR for centromeric dg, dh repeats, and tlh1 transcripts at telomeres. act1 was used as an internal standard for all measurements. (E) ChIP for wild-type and indicated mutant strains against FLAG-Clr4 and H3K9me2 at centromeric dg, dh repeats, and telomeric tlh1. Enrichment was normalized to clr4Δ. (F) ChIP for H3K9me1, H3K9me2 and H3K9me3, and RNA polymerase II at centromeric dh repeats. act1 was used as an internal standard for all measurements. Mean and standard errors in (D–F) were calculated from a minimum of three independent biological replicates.
+**Figure 4.:** (A) Serial dilution growth assays of wild-type and the Clr4 mutants. Strains were assessed for growth on PMG media, PMG-ura to monitor imr1L::ura4+ expression, and PMG+FOA to monitor silencing of imr1L::ura4+. Expression of otr1R::ade6+ was tested on PMG containing low adenine. (B) Immunoblot for FLAG-Clr4 on cell lysates from clr4 mutant strains. Asterisk indicates a non-specific band. (C) Co-IP experiment to assess the stability of the CLRC complex in clr4-GS253 and clr4-3FA mutants. (D) Changes in steady-state transcript levels in clr4 mutant strains relative to wild-type cells were measured by RT-qPCR for centromeric dg, dh repeats, and tlh1 transcripts at telomeres. act1 was used as an internal standard for all measurements. (E) ChIP for wild-type and indicated mutant strains against FLAG-Clr4 and H3K9me2 at centromeric dg, dh repeats, and telomeric tlh1. Enrichment was normalized to clr4Δ. (F) ChIP for H3K9me1, H3K9me2 and H3K9me3, and RNA polymerase II at centromeric dh repeats. act1 was used as an internal standard for all measurements. Mean and standard errors in (D–F) were calculated from a minimum of three independent biological replicates.
 
 In summary, we observe defects in transcriptional gene silencing and heterochromatin formation for the UBR mutants that are very similar to clr4Δ. Furthermore, the severity of the phenotype correlates with the degree of loss of enzymatic function on H3K14ub in vitro, consistent with Clr4’s KMT domain mediating the crosstalk between H3K14ub and H3K9me2/3 as an essential step in heterochromatin formation and maintenance.
 
-## H3K14ub stimulation is conserved in mammalian SUV39H2
+### H3K14ub stimulation is conserved in mammalian SUV39H2
 
 To investigate if stimulation of H3K9 methylation by H3K14ub is a conserved process, we purified the KMT domains of both human G9a and SUV39H2, as well as plant SUVH4/KRYPTONITE and performed methyltransferase assays to investigate the substrate preference of these enzymes by radiometric and fluorescence-based assays (Figure 5A, Figure 5—figure supplement 1B and C). SUV39H1 and SUV39H2 are the closest human homologs of Clr4 and are tightly associated with constitutive heterochromatin. In contrast, G9a regulates H3K9me2/3 deposition in euchromatin and directly regulates gene expression. SUVH4 is one of 10 SUVH genes in Arabidopsis and is involved in the maintenance of DNA methylation. Of our candidate enzymes, SUV39H2, consistently showed stimulation by H3K14ub, while we could not detect stimulation for G9a or SUVH4. These results suggest that the H3K14ub-mediated stimulation is conserved in a subset of SUV39 family proteins in higher eukaryotes, and that H3K14ub is potentially implicated in the regulation of H3K9 methylation in mammalian heterochromatin.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62682/elife-62682-fig5-v1.jpg)
+
+**Figure 5.:** (A) Methyltransferase rates of human G9a and human SUV39H2 and Arabidopsis SUVH4 on indicated substrates were determined by quantifying 3H-methyl incorporation using filter binding assays. Error bars correspond to standard error of mean. (B) Schematic of how H3K14 ubiquitylation licenses H3K9me2/3 deposition and how H3K14ac specifically prevents this. (C, D) Overview and detail view of the Clr4-H3K14ub model calculated with HADDOCK using restraints obtained by HDX-MS and mutagenesis.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62682/elife-62682-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) SDS-PAGE of protein preparations used for methyltransferase assays in Figure 5A. (B) Methyltransferase activity of human G9a and SUV39H2 versus indicated H3 peptides. Measured using the TR-FRET competition assay (Cisbio EPIgeneous Methyltransferase Assay kit). (C) Representation of data in Figure 5A as rates for SUV39 proteins derived from 3H incorporation by filter binding and scintillation counting. Standard errors of the mean were calculated from the indicated number of replicates. (D) Multiple sequence alignment of representative fungal species that show conservation in the UBR (green shaded region). (E) Motifs identified by Hidden Markov Model search (JACKHMMER [Potter et al., 2018]) with S. pombe Clr4, human SUV39H2, human G9A, and Arabidopsis SUVH4 sequence covering the regions corresponding to the Clr4 UBR.
 
 ## Discussion
 
@@ -98,19 +433,479 @@ Bioinformatic analysis of the UBR sequence using Hidden Markov Models suggests t
 
 ## Materials and methods
 
-## Generation of S. pombe strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (S. pombe)</td>
+      <td>clr4</td>
+      <td>PomBase</td>
+      <td>SPBC428.08c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. pombe)</td>
+      <td>rik1</td>
+      <td>PomBase</td>
+      <td>SPCC11E10.08</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h + leu1-32 ura4DS/E ade6-M210 imr1R(NcoI)::ura4 ori1</td>
+      <td>Allshire et al., 1995</td>
+      <td>FY498</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- mat1m::cyhS smtO rpl42-P56Q (cyhR) ade6M210 leu1-32 ura4-D18</td>
+      <td>Roguev et al., 2007</td>
+      <td>P392</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h− ade6-M210 his1-102 leu1-32 ura4-D18 otr1R(dg-glu)Sph1::ade6 imr1L(Nco1)::ura4</td>
+      <td>Ekwall et al., 1997</td>
+      <td>FY1191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h + ade6 DN/N leu1-32 ura4-DS/E imr1L(Nco1)::ura4 otr1R(Sph1)::ade6</td>
+      <td>Ekwall et al., 1997</td>
+      <td>FY2002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- ura4-D18</td>
+      <td>Simanis Lab</td>
+      <td>S.057</td>
+      <td>Figure 4D and E</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- 3xFLAG-Clr4 imrlR(NcoI)::ura4 ade6-M210 leu1-32 ura4DS/E oriI</td>
+      <td>This study*</td>
+      <td>S.0AT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h + rpl42-P56Q (cyhR) ade6M210 ura4-D18 clr4Δ::rpl42-natMX</td>
+      <td>This study*</td>
+      <td>S.0CT</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h + rpl42-P56Q (cyhR) ade6M210 ura4-D18 clr4Δ::KanMX</td>
+      <td>This study*</td>
+      <td>S.0D7</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- clr4Δ::KanMX ura4-D18</td>
+      <td>This study*</td>
+      <td>S.0H1</td>
+      <td>Figure 4D andE</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- rik1::rik1-13myc-KanR</td>
+      <td>This study*</td>
+      <td>S.0JE</td>
+      <td>Figure 4C</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h + rik1::rik1-13myc-KanR ura4-D18 his2-? leu1-32</td>
+      <td>This study*</td>
+      <td>S.0JL</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- 3xFLAG-clr4-D253G/P254G/N255S/F256G imr1R(NcoI)::ura4 oriI ade6-M210 leu1-32 ura4DS/E</td>
+      <td>This study*</td>
+      <td>S.0KK</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- 3xFLAG-Clr4 ade6-M210 leu1-32 ura4-D18</td>
+      <td>This study*</td>
+      <td>S.0LL</td>
+      <td>Figure 4C, D and E</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- 3xFLAG-clr4-D253G/P254G/N255S/F256G ade6-M210 ura4-D18</td>
+      <td>This study*</td>
+      <td>S.0LN</td>
+      <td>Figure 4C, D and E</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- 3xFLAG-Clr4 imr1L(Nco1)::ura4 otr1R(Sph1)::ade6 ade6-? leu1-32 ura4-DS/E</td>
+      <td>This study*</td>
+      <td>S.0LP</td>
+      <td>Figure 4A and B</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- 3xFLAG-clr4-D253G/P254G/N255S/F256G imr1L(Nco1)::ura4 otr1R(Sph1)::ade6 ade6-? leu1-32 ura4-DS/E</td>
+      <td>This study*</td>
+      <td>S.0LS</td>
+      <td>Figure 4A and B</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h + clr4Δ::KanMX ade6-DN/N ura4-?</td>
+      <td>This study *</td>
+      <td>S.0MS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h + rik1::rik1-13myc-KanR 3xFLAG-Clr4 his2-? leu1-32 ura4-D18</td>
+      <td>This study*</td>
+      <td>S.0MT</td>
+      <td>Figure 4C</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- rik1-13myc 3xFLAG-clr4-D253G/P254G/N255S/F256G his2-? leu1-32 ura4-D18</td>
+      <td>This study*</td>
+      <td>S.0MU</td>
+      <td>Figure 4C</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- 3xFLAG-clr4-F256A/F310A/F427A rpl42-P56Q (cyhR) ade6M210 ura4-D18</td>
+      <td>This study*</td>
+      <td>S.0MX</td>
+      <td>Figure 4C</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- clr4Δ::KanMX otr1R(dg-glu)Sph1::ade6 imr1L(Nco1)::ura4 ade6-? leu1-32 ura4-?</td>
+      <td>This study*</td>
+      <td>S.0NC</td>
+      <td>Figure 4A</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- 3xFLAG-clr4-F256A/F310A/F427A otr1R(dg-glu)Sph1::ade6 imr1L(Nco1)::ura4 ade6-M210 ura4-D18</td>
+      <td>This study*</td>
+      <td>S.0ND</td>
+      <td>Figure 4A and B</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>h- 3xFLAG-clr4-F256A/F310A/F427A rik1::rik1-13myc-KanR ade6-M210 ura4-D18</td>
+      <td>This study*</td>
+      <td>S.0NF</td>
+      <td>Figure 4C, D and E</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligonucleotides</td>
+      <td>Supplementary file 1A</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Peptides</td>
+      <td>Supplementary file 1B</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNAs</td>
+      <td>Supplementary file 1C</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSMT3 (6xHIS tag)</td>
+      <td>Chris Lima – Cornell University Mossessova and Lima, 2000</td>
+      <td></td>
+      <td>6xHIS-Sumo tagging plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSMT3_Clr4(1-490)</td>
+      <td>This study*</td>
+      <td>P.0PI</td>
+      <td>Figure 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSMT3_Clr4KMT(192-490)</td>
+      <td>This study*</td>
+      <td>P.0QW</td>
+      <td>Figures 1 and 2, and 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSMT3_Clr4KMT(192-490)-GS253</td>
+      <td>This study*</td>
+      <td>P.18B</td>
+      <td>Figure 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSMT3_Clr4KMT(192-490)–3FA</td>
+      <td>This study*</td>
+      <td>P.18C</td>
+      <td>Figure 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSumo-RSFDuet SUVH4 (93–624)</td>
+      <td>Steven Jacobsen – University of California Los Angeles Du et al., 2014</td>
+      <td></td>
+      <td>Figure 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pet28a_SUV39H2</td>
+      <td>Addgene, Cheryl Arrowsmith</td>
+      <td>RRID:Addgene_25115</td>
+      <td>Figure 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET38a_G9a</td>
+      <td>Addgene, Cheryl Arrowsmith</td>
+      <td>RRID:Addgene_25503</td>
+      <td>Figure 5</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-H3K9me1</td>
+      <td>Abcam</td>
+      <td>ab8896</td>
+      <td>(ChIP: 1 µg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-H3K9me2</td>
+      <td>Abcam</td>
+      <td>ab1220</td>
+      <td>(ChIP: 1 µg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Recombinant monoclonal anti-H3K9me3</td>
+      <td>Diagenode</td>
+      <td>C15500003</td>
+      <td>(ChIP: 1 µg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-RNA PolII</td>
+      <td>Abcam</td>
+      <td>ab817</td>
+      <td>(ChIP: 1 µg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-FLAG-M2</td>
+      <td>Sigma</td>
+      <td>F1804</td>
+      <td>(ChIP: 1 µg, WB: 1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit recombinant monoclonal anti-H3K14ac</td>
+      <td>Abcam</td>
+      <td>ab52946</td>
+      <td>(ChIP: 1 µg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Myc-Tag</td>
+      <td>Cell Signaling Technology</td>
+      <td>9B11</td>
+      <td>(WB: 1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-γ-Tubulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>T6557</td>
+      <td>(WB: 1:5000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Fluoroorotic acid (FOA)</td>
+      <td>US Biological</td>
+      <td>F5050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Geneticin (G418 sulfate)</td>
+      <td>Invitrogen</td>
+      <td>10131019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Alfa Aesar</td>
+      <td>J66901.03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nourseothricin</td>
+      <td>Werner Bioagents</td>
+      <td>5.001.000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde</td>
+      <td>Sigma-Aldrich</td>
+      <td>F8775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethylene glycol bis-succinimidyl succinate (EGS)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>21565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynabeads Protein A</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10001D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynabeads MyOne Streptavidin C1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>65001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete EDTA free</td>
+      <td>Roche</td>
+      <td>11873580001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Myc-Trap</td>
+      <td>Chromotek</td>
+      <td>ytma-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosyl-L-methionine, S-[methyl-3H]/SAM</td>
+      <td>Perkin Elmer</td>
+      <td>NET155V250UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphocellulose paper 541</td>
+      <td>Jon Oakhill, St Vincent’s Institute of Medical Research, Melbourne, Australia</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EvoScript Universal cDNA Master</td>
+      <td>Roche</td>
+      <td>07912439001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LightCycler 480 SYBR Green I Master</td>
+      <td>Roche</td>
+      <td>04707516001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EPIgeneous Methyltransferase Assay kit</td>
+      <td>Cisbio</td>
+      <td>62SAHPEB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MTase-Glo Methyltransferase Assay</td>
+      <td>Promega</td>
+      <td>V7601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>RStudio, Inc</td>
+      <td>Version 1.2.5042</td>
+      <td>Fitting enzyme kinetics and plotting graphs</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Foundation</td>
+      <td>Version 3.6.3</td>
+      <td>Fitting enzyme kinetics and plotting graphs</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Reagent is available upon request from the authors._
+
+### Generation of S. pombe strains
 
 S. pombe strains were grown and manipulated using standard techniques unless differently stated. The list of strains used in this study can be found in the Key resources table. Strains were crossed and analyzed either by tetrad dissection or random spore analysis. For tetrad dissection, only spores from complete tetrads were further analyzed. In the absence of any selection markers, the genotype was analyzed by colony PCR. The strain clr4Δ::kanMX was generated by transforming a wild-type strain with a DNA fragment containing the kanMX cassette plus 80 bp of sequence found upstream and downstream of clr4 ORF. The transformants were selected on YES plates containing 100 µg/ml of G418, and correct integration was confirmed by PCR and sequencing. The strain 3xFLAG-clr4 was generated by CRISPR mutagenesis of a wild-type strain using as homologous repair template a fragment of DNA containing the 3xFLAG tag plus 500 bp of homology flanking the cleavage site and a silent point mutation disrupting the PAM site. The 3xFLAG-clr4-GS253 strain was generated with the same approach by transforming the 3xFLAG-clr4 strain with DNA containing the desired mutations and homologies. The sgRNA sequences used for CRISPR are indicated in Supplementary file 1C. The clr4Δ::rpl42-natMX strain was generated by transformation of a rpl42.sP56Q host strain with a DNA fragment containing the rpl42-natMX cassette plus 500 bp of homology for sequences flanking clr4 ORF. The integrants were selected by rounds of positive selection on rich media containing 100 µg/ml nourseothricin, and followed by negative selection on plates containing 100 µg/ml cycloheximide. The integrations were tested by PCR and sequencing. To generate the 3xFLAG-clr4-3FA mutant strain, the clr4Δ::rpl42-natMX strain was transformed with a DNA fragment containing the desired mutations and 500 bp homology arms outside the rpl42-natMX cassette. The strain was selected with rounds of positive and negative selection on YES plates containing cycloheximide and nourseothricin, respectively. The strain rik1-13xmyc-kanR was generated by transformation of a wild-type strain with a 13xmyc-kanR cassette with homology for the 3'end of rik1. The strain was selected on plates containing G418. All transformants were analyzed by PCR, sequenced, and the strains were outcrossed at least once. For plate-based silencing assays, reporter strains were generated by crossing the strains of interest with strains containing the marker genes ura4+ and ade6+ integrated at the centromere I (imr1L::ura4+, otr1R::ade6+).
 
-## Silencing assays in S. pombe
+### Silencing assays in S. pombe
 
 Strains were grown overnight at 30°C in YES to a density of 5 × 106 cells/ml. Cells were harvested by centrifugation and resuspended in water. 10-fold serial dilutions were spotted onto PMG, PMG-Ura, and PMG +1 mg/ml 5-FOA, with 1 × 104 cells in the highest density spots.
 
-## RT-qPCR
+### RT-qPCR
 
 RT-qPCR was performed as previously described (Leopold et al., 2019). Briefly, strains were grown in YES to a density of 5 × 106 cells/ml, harvested by centrifugation, washed with water, and frozen at –70°C until further usage. RNA was purified by Trizol extraction followed by phenol/chloroform extraction and ethanol precipitation. Contaminant DNA was removed by DNaseI treatment and phenol/chloroform extraction followed by ethanol precipitation. cDNA was generated with Evo-Script Universal cDNA Master kit (Roche) and qPCR performed using SYBR Green I Master kit on LightCycler 480 instrument (Roche). qPCR primers used in this study are listed in Supplementary file 1A, and act1+ was used for normalization. Data were analyzed using the ΔΔCt method (Yuan et al., 2006).
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 ChIP was performed as previously described with some modifications (Leopold et al., 2019). Briefly, cells for ChIP were grown in 50 ml of YES medium to a density of 2 × 107 cells/ml. For RNA Polymerase II, H3K9me1, H3K9me2, and H3K9me3, cells were fixed in 1% formaldehyde for 30 min. For 3xFLAG-Clr4, a dual-crosslinking approach was employed as previously described (Tian et al., 2012). Cells were incubated at 18°C for 2 hr, resuspended in 5 ml PBS, and crosslinked at room temperature (RT) with 1.5 mM ethylene glycol bis-succinimidyl succinate (EGS, Thermo Scientific). After 30 min of incubation, 1% formaldehyde was added and cells were crosslinked for further 30 min. The residual formaldehyde was quenched with 125 mM glycine for 5 min. Cells were washed and stored at –70°C until further usage.
 
@@ -118,106 +913,106 @@ Pellets were resuspended in ChIP Buffer (50 mM HEPES/KOH pH 7.6, 150 mM NaCl, 1 
 
 The bead/protein complex was washed three times with ChIP Buffer, once with high salt buffer (50 mM HEPES/KOH pH 7.6, 500 mM NaCl, 1 mM EDTA), once with LiCl buffer (5 mM Tris-Cl pH 8, 250 mM LiCl, 0.5% Triton X-100, 0.05 % Tween 20), and once with TE (10 mM Tris-Cl pH 8, 1 mM EDTA). The protein-DNA complex was eluted in elution buffer (50 mM Tris-Cl pH 8, 10 mM EDTA, 1% SDS) at 65°C for 15 min, and the crosslinking reversed overnight at 65°C. The samples were then treated with proteinase K, and DNA was purified by phenol-chloroform. qPCR was performed using the primers given in Supplementary file 1A; act1+ was used as internal control.
 
-## Co-immunoprecipitation from S. pombe cells
+### Co-immunoprecipitation from S. pombe cells
 
 Cells were grown overnight at 30°C to a density of 1.0 x 107 cells/ml, washed once with PBS, and the pellet frozen at –70°C until further usage. Pellets were resuspended in co-IP buffer (50 mM HEPES/KOH pH 7.5, 300 mM NaCl, 1 mM EDTA, 5 mM CHAPS, 10 mM DTT) supplemented with cOmplete EDTA free (Roche). The cells were mixed with the same volume of 0.5 mm glass beads and ruptured by bead beating in a Fastprep24 (MP Biomedical). Cell debris was removed by centrifugation and the supernatant incubated with Myc-Trap magnetic beads (ChromTek) for 1 hr at 4°C. The unbound fraction was removed, and the beads were washed five times with co-IP buffer. The bound proteins were eluted by boiling in PGLB (125 mM Tris-HCl, 4% SDS, 50% glycerol, 0.2% Orange G) supplemented with 100 mM DTT. The proteins of interest were analyzed by Western blot.
 
-## Western blotting
+### Western blotting
 
 Samples were run on 10% Bis-Tris gels and transferred to nitrocellulose membrane (Bio-Rad). Proteins were detected by Western blotting using antibodies against either tag or protein of interest, followed by incubation with secondary antibodies labeled with the DyLight fluorophores, and scanning with the Odyssey Imaging System (LI-COR).
 
-## Protein expression in Escherichia coli
+### Protein expression in Escherichia coli
 
 All Clr4 protein constructs were cloned as N-terminal fusions to a 6xHIS-SUMO-tag in pSMT3 using Gibson cloning (Gibson et al., 2009; Mossessova and Lima, 2000). All constructs were expressed in the Rosetta2(DE3) strain. Cells were grown at 37°C to log-phase in 2xTY media supplemented with 2% ethanol, cooled down on ice, and induced with 0.4 mM IPTG at 16°C for 18 hr. Pellets were resuspended in NiNTA wash buffer (50 mM Tris-HCl pH 8.0, 300 mM NaCl, 20 mM imidazole pH 7.5, 1 mM β-mercaptoethanol) supplemented with protease inhibitor cocktail (PIC) (2 μM pepstatin, 2 µM leupeptin, 1 mM PMSF, 1 mM Benzamidine, 1 µg/ml aprotinin) and frozen at –80°C until further usage.
 
-## Protein purification from E. coli
+### Protein purification from E. coli
 
 For purification, frozen cells were quickly thawed at 37°C, supplemented with PIC, and ruptured by using either sonication or the Emulsiflex homogenizer. Cell debris was removed by centrifugation. The cleared lysate was filtered through a 0.45 µm filter and loaded on a HisTrap HP column (GE Healthcare). The full-length Clr4 was enriched from the cleared lysate by fractionation with 40% NH4SO4. The pellet containing Clr4 was then resuspended in NiNTA wash buffer (50 mM Tris-HCl pH 8.0, 300 mM NaCl, 20 mM imidazole pH 7.5, 1 mM β-mercaptoethanol), filtered through a 0.45 µm filter, and loaded on a HisTrap HP column. After washing with NiNTA wash buffer, the proteins were eluted by either gradient or step elution in elution buffer (50 mM Tris-HCl pH 8.0, 300 mM NaCl, 300 mM imidazole pH 7.5, 1 mM β-mercaptoethanol). All proteins containing a 6xHIS-SUMO-tag were treated with Ulp1 while being dialyzed overnight in cleavage buffer (5 mM Tris-HCl pH 8.0, 150 mM NaCl, 2 mM β-mercaptoethanol). SUV39H2 and G9a were treated with thrombin to remove the 6xHIS-tag and dialyzed into cleavage buffer. The cleaved tags and Ulp1 were removed by negative purification on a HisTrap HP column. All proteins were further purified by SEC (Superdex75 or Superdex200, GE Healthcare) in gel filtration buffer (5 mM Tris-HCl pH 8.0, 150 mM NaCl, 5 mM DTT). Peak fractions were concentrated as needed in Amicon Ultra spin concentrators. For methyltransferase assays, the concentrated proteins were mixed 1:1 with glycerol, frozen in liquid nitrogen, and stored at –80°C until further usage. Clr4FL, SUV39H2, and SUVH4 were frozen without glycerol.
 
-## Materials for peptide synthesis
+### Materials for peptide synthesis
 
 All solvents and reagents were purchased from commercial sources and used without further purification. All amino acid derivatives, 2-chlorotrityl chloride (2 Cl Trt) resin and 2-(7-Aza-1H-benzotriazole-1-yl)–1,1,3,3-tetramethyluronium hexafluorophosphate (HATU) were purchased from Novabiochem, Merck (Darmstadt, Germany). N,N-Dimethylformamide (DMF), N,N-diisopropylethylamine (DIEA), and piperidine were from Acros Organics (Geel, Belgium). O-(6-Chlorobenzotriazol-1-yl)-N,N,N′,N′-tetramethyluronium hexafluorophosphate (HCTU) was from Carl Roth GmbH (Karsruhe, Netherlands). Hydrazine monohydrate was purchased from Alfa Aesar (Heysham, UK), acetonitrile (ACN) from Avantor Performance Materials (USA). Tentagel S RAM resin, hydroxybenzotriazole (HOBt), tris(2-carboxyethyl)phosphine (TCEP), diethylether, phenylsilane, tetrakis(triphenylphosphine)palladium(0), trifluoroacetic acid (TFA), dichloromethane (DCM), triisopropylsilane (TIS), L-glutathione reduced (GSH), sodium diethyldithiocarbamate trihydrate, and methyl thioglycolate (MTG) were from Sigma-Aldrich (Taufkirchen, Germany). 2,2'-Azobis[2-(2-imidazolin-2-yl)propane]dihydrochloride (VA-044) was purchased from Wako Pure Chemical Industries, Ltd. (Osaka, Japan). All other commonly used chemical reagents and buffer components were from Applichem (Darmstadt, Germany) and Fisher Scientific (Reinach, Switzerland).
 
-## Instrumentation for peptide synthesis and purification
+### Instrumentation for peptide synthesis and purification
 
 Reaction vessels for manual peptide synthesis as well as the automated Tribute peptide synthesizer were from Protein Technologies Inc. Analytical RP-HPLC analysis was performed on an Agilent 1260 series instrument using an analytical Agilent Zorbax C18 column (column dimensions: 150 mm × 4.6 mm, 5 μm particle size) at a flow rate of 1 ml/min. All RP-HPLC analyses were done with 0.1% (v/v) TFA in H2O (RP-HPLC solvent A) and 90% ACN and 0.1% (v/v) TFA in H2O (RP-HPLC solvent B) as mobile phases. Typically, a gradient from 0% to 70% solvent A to solvent B over 30 min was used for analytical RP-HPLC analyses unless otherwise stated. Purification of proteins on a semi-preparative scale were performed on an Agilent 1260 series instrument using a semi-preparative Agilent Zorbax C18 column (column dimensions: 250 mm × 9.4 mm, 5 μm particle size) at a flow rate of 4 ml/min. Lyophilization was carried out with a Telstar LyoQuest freeze dryer. Electrospray ionization mass spectrometric (ESI-MS) analysis was conducted on a Shimadzu MS2020 single quadrupole instrument connected to a Nexera UHPLC system. Mass spectra were acquired by electrospray ionization in positive ion mode in the mass range of 200–2000 m/z.
 
-## Preparation of Fmoc-Aa-hydrazine-Cl-trityl-resin
+### Preparation of Fmoc-Aa-hydrazine-Cl-trityl-resin
 
 Preparation of Fmoc-Arg(Pbf)-NHNH-Cl-Trt-resin was performed as reported previously (Stavropoulos et al., 1996). In general, 0.50 g 2-Cl-Trt-resin (substitution: 1.63 mmol/g, 1.00 eq., 0.82 mmol) were swollen in 3.00 ml DMF for 30 min at RT. Subsequently, the resin was allowed to cool to 0°C and 1.00 ml of a solution containing DIEA (3.00 eq., 2.45 mmol, 427 μl) and hydrazine monohydrate (2.00 eq., 1.64 mmol, 80 μl) in DMF was added dropwise. The reaction mixture was stirred 1 hr at RT. 100 μl methanol (MeOH) was added, the resin was stirred 10 min at RT, transferred to a reaction vessel for manual peptide synthesis, and washed thoroughly with DMF.
 
 Due to the low stability of the hydrazine resin, the first amino acid Fmoc-Arg(Pbf)-OH was coupled manually by standard Fmoc chemistry (Atherton and Sheppard, 1989). The loading of the 2-Cl-Trt-resin with hydrazine was assumed to be 50% (1.00 eq., 0.41 mmol). Fmoc-Arg(Pbf)-OH (5.00 eq., 2.05 mmol) was activated with 3.90 ml of a 0.50 M HATU solution (4.76 eq., 1.95 mmol) in DMF followed by 2 min incubation at RT. Then, 714 μl DIEA (10.00 eq., 4.10 mmol) were added and the reaction mixture was incubated another 1 min at RT. The activated amino acid was added to the resin, incubated 30 min at RT, and washed with DMF. To ensure high yield, the coupling procedure was repeated. Finally, the resin was washed with DMF, DCM, and MeOH and dried under vacuum. Resin substitution was determined by treating a defined amount of resin with 20% piperidine in DMF for 30 min at RT, followed by spectrophotometric quantification of released dibenzofulven-related species (resin loading: 0.51 mmol/g).
 
-## Automated solid phase peptide synthesis (SPPS)
+### Automated solid phase peptide synthesis (SPPS)
 
 The sequences of the two peptides synthesized by Fmoc-SPPS are summarized in Supplementary file 1B. The synthetic procedures and analytical data are presented in the following. General protocol: the peptides were synthesized by the Tribute peptide synthesizer (PTI) on the previously prepared Fmoc-Arg(Pbf)-hydrazine-Cl-Trt-resin (peptide P1) or on Tentagel S RAM resin (peptide P2) yielding peptides with C-terminal hydrazide (peptide P1) or amide (peptide P2). The syntheses were performed on 0.1 mmol scale using Fmoc chemistry. The following base-resistant groups were employed to protect amino acid side chains: Arg(Pbf), Thr(tBu), Lys(Boc), Gln(Trt), Asn(Trt), Ser(tBu). Of note, Lys14 (peptide P1) and Lys18 (peptide P2) were protected with Alloc protecting group. To maximize synthesis yield, pseudoproline dipeptide building blocks were used and amino acids were double coupled where necessary.
 
 Briefly, the N-terminal Fmoc-group was deprotected with 20% (v/v) piperidine in DMF. Activation of amino acid (5.00 eq., 0.50 mmol) was achieved by addition of HCTU (4.76 eq. 0.48 mmol) and DIEA (10.00 eq., 1.00 mmol). The coupling step was performed by adding the activated amino acid to the resin, followed by 30 min incubation at RT. When the full-length peptides were assembled, the peptidyl-resin was washed with DMF, DCM, and MeOH and dried under vacuum. Importantly, the N-terminal Fmoc protecting group was not removed at this stage to allow further manipulation of the peptide.
 
-## Alloc deprotection
+### Alloc deprotection
 
 The peptidyl-resin was swollen for 30 min in DCM. Alloc deprotection of Lys14 (peptide P1) or Lys18 (peptide P2) was initiated by addition of 1.00 ml of dry DCM and PhSiH3 (24 eq., 24 mmol), followed by Pd(PPh3)4 (0.25 eq., 0.025 mmol) in 3.00 ml dry DCM. The peptidyl-resin was incubated for 30 min at RT and washed with DCM. The deprotection reaction with PhSiH3 and Pd(PPh3)4 was repeated two more times. The resin was thoroughly washed with DCM followed by washing with 0.5% (v/v) DIEA in DMF; 0.5% (w/v) sodium-diethyldithiocarbamate in DMF; 50% (v/v) DCM in DMF; 0.5% (w/v) HOBt in DMF and extensively washed with DMF.
 
-## Manual coupling of Boc-Cys(Trt)-OH
+### Manual coupling of Boc-Cys(Trt)-OH
 
 The cysteine residue was coupled manually to the ε-amino group of Lys14 (peptide P1) or Lys18 (peptide P2), yielding peptides P1′ and P2′ respectively (Figure 1—figure supplement 1A). Boc-Cys(Trt)-OH (5 eq., 0.50 mmol) was activated by addition of 0.95 ml of a 0.50 M HATU solution (4.76 eq., 0.48 mmol) in DMF, followed by 2 min incubation at RT. 172 μl DIEA (10 eq., 1 mmol) were added and the reaction mixture was incubated another 1 min at RT. The activated amino acid was added to the peptidyl-resin, incubated 30 min at RT, and washed with DMF. To ensure high yield, the coupling procedure was repeated. Finally, the resin was washed thoroughly with DMF.
 
-## N-terminal Fmoc deprotection and cleavage from the resin
+### N-terminal Fmoc deprotection and cleavage from the resin
 
 Fmoc deprotection was achieved by treating the peptidyl-resin with 10.00 ml 20% (v/v) piperidine in DMF for 5 min. The deprotection step was repeated.
 
 The peptides were cleaved from the resin using either 95% (v/v) TFA, 2.5% (v/v) TIS, and 2.5% (v/v) H2O. The crude peptides were precipitated by addition of ice-cold diethyl ether, recovered by centrifugation, dissolved in 50% (v/v) acetonitrile in H2O, flash-frozen, and lyophilized.
 
-## Preparation of ubiquitin-MESNa
+### Preparation of ubiquitin-MESNa
 
 Ubiquitin (G76C) was expressed in Rosetta2(DE3) cells as a C-terminal fusion to the N-terminal half of the Npu split intein, followed by a hexahistidine tag (Kilic et al., 2018). Bacterial cells were resuspended in lysis buffer (50 mM Na-phosphate buffer pH 7.0, 300 mM NaCl, 40 mM imidazole pH 7.0) and ruptured by sonication. Ubiquitin-NpuN-6xHIS was purified by Ni-affinity chromatography and eluted with 300 mM imidazole. The ubiquitin thioester was generated by intein derivatization with 100 mM sodium 2-mercaptoethanesulfonate (MESNa). The reaction was allowed to proceed for 16 hr at RT. Imidazole was removed by diafiltration and ubiquitin-MESNa was further purified by negative Ni-affinity chromatography to remove the NpuN-6xHIS tag. Finally, ubiquitin-MESNa was diafiltrated against 0.1% TFA, lyophilized, and stored at –20°C.
 
-## One-pot ligation and desulfurization
+### One-pot ligation and desulfurization
 
 Ubiquitin-MESNa (1.00 eq., 1.16 μmol) was dissolved in 115.80 μl ligation buffer (6.00 M GmdHCl, 0.20 M sodium phosphate, pH 7, degassed) to a final concentration of 10.00 mM and 0.77 μl MTG (7.50 eq., 8.70 μmol) were added to the solution. The thiol-thioester exchange reaction was allowed to proceed for 20 min at RT. Ligation between ubiquitin-MTG thioester and the cysteine residue coupled to Lys14 (peptide P1) or Lys18 (peptide P2) was initiated by addition of peptide P1′ or peptide P2′ (1.30 eq., 1.51 μmol), followed by addition of 5.80 μl of 0.50 M TCEP solution in ligation buffer. The ligation mixture was incubated at 25°C for 16 hr. The progress of the reaction was monitored by RP-HPLC and ESI-MS analysis.
 
 When the ligation was complete, radical desulfurization of the cysteine at the ligation site was performed in the same reaction tube without prior purification of the ligation product. TCEP desulfurization buffer (0.50 M TCEP, 6.00 M GdmHCl, 0.20 M phosphate, pH 7) was added to a final TCEP concentration of 0.25 M. The desulfurization reaction was initiated by addition of VA-044 and GSH to a final concentration of 30 mM and 40 mM, respectively. The reaction mixture was incubated at 42° C for 6 hr, and the progress of the reaction was monitored by RP-HPLC and ESI-MS analysis, yielding ubiquitin adducts P1′′ and P2′′ (Figure 1—figure supplement 1).
 
-## Purification of H3K14ub (P1′′) and H3K18ub (P2′′)
+### Purification of H3K14ub (P1′′) and H3K18ub (P2′′)
 
 The ubiquitin adduct peptides P1′′ and P2′′ were purified by semi-preparative RP-HPLC on a linear gradient from 25% to 55% solvent B over 40 min. Pure fractions were pooled, lyophilized, and analyzed by analytical RP-HPLC and ESI-MS (Figure 1—figure supplement 1B and C).
 
-## Tritium-based histone methyltransferase assay
+### Tritium-based histone methyltransferase assay
 
 The HMT assays were performed in a total volume of 10 µl by mixing the substrates with the indicated constructs in reaction buffer (25 mM sodium phosphate pH 8.0, 100 mM NaCl, 10% v/v glycerol, 2.9 µM (0.5 µCi) S‐[Methyl‐3 H]‐adenosyl‐L-methionine [1 mCi/mL, Perkin Elmer]) and incubated at 30°C. Measurements were performed with 20 µM of substrate, and 20 nM or 200 nM of each enzyme. Assay-specific concentrations and incubation times are indicated in the text and captions. For gel-based assays, the reactions were stopped by addition of 5 µl of PGLB, 100 mM DTT and the unreacted SAM was removed by SDS-PAGE. The gels were stained with Coomassie Brilliant Blue, imaged, and incubated for 30 min in EN3HANCE (Perkin Elmer) prior to drying. The methylated histones were detected by fluorography.
 
 For filter binding assays, the reactions were stopped by addition of 5 µl 75% acetic acid, and 10 µl of each mixture was spotted onto phosphocellulose filter paper disks. Each filter was washed for 5 min in 2 ml 100 mM sodium bicarbonate pH 9.0 for a total of three times. The activity on each disk was quantified in a liquid scintillation counter after 1 hr incubation in 3 ml ULTIMA GOLD F cocktail.
 
-## TR-FRET-based methyltransferase assay
+### TR-FRET-based methyltransferase assay
 
 The assays were performed using the EPIgeneous Methyltransferase kit (Cisbio). The reactions were performed by mixing the Clr4 constructs (30 nM) with the indicated substrates (1 nM –-200 µM for Figure 1D, 2 µM in Figure 1E, and 20 µM in Figure 5—figure supplement 1B) in Mtase Buffer (25 mM sodium phosphate pH 8.0, 100 mM NaCl, 10% v/v glycerol) supplemented with 10 µM SAM and incubated at 30°C for 15 min, unless differently stated. The reactions were stopped and measured using a TECAN SPARK plate reader. Detection was performed at 620 and 665 nm wavelength. The 665/620 signal ratio was used to extrapolate the concentration of SAH from a standard curve.
 
-## Bioluminescence-based methyltransferase assay
+### Bioluminescence-based methyltransferase assay
 
 Methyltransferase assays were performed with wild-type and mutant Clr4KMT domains on H3K14ub (using 20 nM Clr4) and unmodified H3 (using 1 µM Clr4) in Mtase Buffer supplemented with SAM (10 µM for H3K14ub, 100 µM for H3). Reactions were stopped by addition of TFA to 0.1% and the production of SAH was measured using the MTase-Glo Methyltransferase Assay kit (Promega) according to the manufacturer’s instructions using a Hidex Sense microplate reader.
 
-## Hydrogen deuterium exchange mass spectrometry (HDX-MS)
+### Hydrogen deuterium exchange mass spectrometry (HDX-MS)
 
 HDX reactions were done in 50 µl volumes with a final protein concentration of 3 µM of enzyme. The dynamics of Clr4 was compared in three different conditions: (i) soluble Clr4, (ii) complex of Clr4 bound to ubiquitinated H3 peptide, and (iii) Clr4 in the presence of an excess of H3 peptide. Dynamics of ubiquitinated H3 peptide was investigated by comparing its D2O incorporation alone or when in complex with Clr4. Protein or protein complexes were prepared in 5 µl volume, and deuterium exchange was initiated by addition of 45 µl of deuterated buffer (10 mM Tris-HCl pH 7.4/150 mM NaCl/10 mM DTT). For the condition of Clr4 with an excess of H3 peptide, the deuterated buffer was supplemented with H3 peptide (from lyophilized powder). Exchange was carried out at RT for four timepoints (3 s, 30 s, 300 s, 3000 s) and terminated by the addition of 20 µl ice-cold quench buffer (3 M guanidine – HCl/100 mM NaH2PO4 pH 2.5/1% formic acid). All experiments were repeated in duplicates. Samples were immediately frozen in liquid nitrogen and stored at –80°C for up to 2 weeks.
 
 Protein samples were thawed and injected in a UPLC system immersed in ice. The protein was digested via two immobilized pepsin columns (Thermo #23131), and peptides were collected onto a VanGuard precolumn trap (Waters). The trap was subsequently eluted and peptides separated with a C18, 300 Å, 1.7 µm particle size Fortis Bio column 100 × 2.1 mm over a gradient of 8–30%B over 18 min at 90 µl/min (Buffer A: 0.1% formic acid; buffer B: 100% acetonitrile/0.1% formic acid). Mass spectra were acquired on an Orbitrap Velos Pro (Thermo), for ions from 400 to 2200 m/z using an electrospray ionization source operated at 160°C, 5 kV of ion spray voltage. Peptides were identified by data-dependent acquisition after MS/MS, and data were analyzed by Mascot. Deuterium incorporation levels were quantified using HD examiner software (Sierra Analytics), and the quality of every peptide was checked manually. Results are presented as a percentage of maximal deuteration, with a theoretical maximal deuteration level of 86.3%. All experimental details and data of percentage deuterium incorporation for all peptides can be found in Supplementary files 2–4. Differences in exchange in a peptide were considered significant if they met all three of the following criteria: (1) for Clr4: ≥7% change in exchange, ≥ 0.6 Da difference in exchange, and a p-value<0.05 using a two-tailed Student’s t-test; and (2) for ubiquitin: ≥9% change in exchange, ≥1.3 Da difference in exchange, and a p-value<0.05 using a two-tailed Student’s t-test.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 ITC experiments were performed at 23°C using a MicroCal VP-ITC calorimeter (Malvern Panalytical). All proteins and peptides used were dialyzed overnight against ITC buffer (25 mM sodium phosphate pH 8.0, 100 mM NaCl, 10% v/v glycerol, 0.5 mM TCEP) prior to experiments. 10 μl of the indicated Clr4 constructs at 50 µM were injected in 180 s time intervals in the cell containing the H3K14ub peptide at 5 μM. After subtracting heat enthalpies for titrations of the respective proteins into buffer, the ITC data were analyzed using the Origin software provided by the manufacturer.
 
-## Molecular docking
+### Molecular docking
 
 Molecular docking was performed using Clr4KMT192-490 (PDBID:1MVH), ubiquitin (PDBID:1UBQ), and a peptide comprising residues 7–17 of histone H3. The input peptide was derived by extension of the H3 peptide bound to N. crassa DIM-5 (PDBID:1PEG). Docking was performed with a local version of HADDOCK 2.0 using the interaction interface identified by HDX-MS as restraint.
 
-## Crystallization of Clr4-3FA
+### Crystallization of Clr4-3FA
 
 Clr4-3FA was purified as described above. Clr4-3FA at 20 mg/ml was mixed with H3K14ub peptide and S-adenosyl-homocysteine to a ratio of 1:1.2:10 (protein:peptide:SAH) and diluted to a concentration of 10 mg/ml. Protein was diluted 1:1 with reservoir solution (71.4 mM MES, 28.6 mM imidazole, 20% PEG 10 K, 30 mM magnesium acetate, 6.6% v/v MPD, 6.6% v/v PEG 1000, 6.6% v/v PEG 3350) and incubated at 18°C in sitting-drop vapor diffusion setup. Crystals were directly frozen in liquid nitrogen.
 
-## Crystallographic data collection and structure determination
+### Crystallographic data collection and structure determination
 
 X-ray diffraction data were collected at the Diamond Light Source beamline I04 (Didcot, Oxford, UK) at a wavelength of 0.97950 Å. The datasets were analyzed using XDS and the CCP4 suite (Kabsch, 2010; Winn et al., 2011). Data were corrected for anisotropy using the STARANISO server (http://staraniso.globalphasing.org). Molecular replacement was performed using MOLREP and the coordinates from PDBID 6BOX (chain A) as search model (Vagin and Teplyakov, 2010). Refinement was performed using REFMAC, and Coot was used to build the Clr4-3FA model (Emsley et al., 2010; Murshudov et al., 2011). Structural alignments and figures were generated in PyMOL Molecular Graphics System, version 1.8, Schrödinger, LLC. Data collection and refinement statistics are presented in Table 2.
 
-## Accession codes
+### Accession codes
 
 Coordinates and structure factors have been deposited in the Protein Data Bank under accession code 6Z2A.

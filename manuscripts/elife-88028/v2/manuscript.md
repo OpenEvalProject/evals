@@ -19,18 +19,18 @@
 
 ### Affiliations
 
-1. https://ror.org/026stee22 Department of Migration, Max Planck Institute of Animal Behavior Konstanz Germany
-2. https://ror.org/0546hnb39 Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany
-3. https://ror.org/0546hnb39 Department of Biology, University of Konstanz Konstanz Germany
-4. https://ror.org/026stee22 Department for the Ecology of Animal Societies, Max Planck Institute of Animal Behavior Konstanz Germany
-5. https://ror.org/0546hnb39 Zukunftskolleg, University of Konstanz Konstanz Germany
-6. https://ror.org/026stee22 Department of Collective Behaviour, Max Planck Institute of Animal Behavior Konstanz Germany
-7. https://ror.org/049s0rh22 Department of Anthropology, Dartmouth College Hanover United States
-8. https://ror.org/02ks53214 Max Planck Research Group Predators and Toxic Prey, Max Planck Institute for Chemical Ecology Jena Germany
-9. https://ror.org/00453a208 Advanced Science Research Center and Program in Psychology, Graduate Center of the City University of New York New York United States
-10. https://ror.org/0190ak572 Department of Anthropology, New York University New York United States
-11. https://ror.org/03yjb2x39 Department of Anthropology and Archaeology, University of Calgary Calgary Canada
-12. https://ror.org/03yjb2x39 Alberta Children’s Hospital Research Institute, University of Calgary Calgary Canada
+1. Department of Migration, Max Planck Institute of Animal Behavior Konstanz Germany ([ROR:026stee22](https://ror.org/026stee22))
+2. Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+3. Department of Biology, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+4. Department for the Ecology of Animal Societies, Max Planck Institute of Animal Behavior Konstanz Germany ([ROR:026stee22](https://ror.org/026stee22))
+5. Zukunftskolleg, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+6. Department of Collective Behaviour, Max Planck Institute of Animal Behavior Konstanz Germany ([ROR:026stee22](https://ror.org/026stee22))
+7. Department of Anthropology, Dartmouth College Hanover United States ([ROR:049s0rh22](https://ror.org/049s0rh22))
+8. Max Planck Research Group Predators and Toxic Prey, Max Planck Institute for Chemical Ecology Jena Germany ([ROR:02ks53214](https://ror.org/02ks53214))
+9. Advanced Science Research Center and Program in Psychology, Graduate Center of the City University of New York New York United States ([ROR:00453a208](https://ror.org/00453a208))
+10. Department of Anthropology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+11. Department of Anthropology and Archaeology, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))
+12. Alberta Children’s Hospital Research Institute, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))
 
 † Corresponding author
 

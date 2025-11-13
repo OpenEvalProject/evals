@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/024mw5h28 Departments of Public Health and Human Genetics, University of Chicago Chicago United States
-2. https://ror.org/024mw5h28 Department of Human Genetics, University of Chicago Chicago United States
+1. Departments of Public Health and Human Genetics, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+2. Department of Human Genetics, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 

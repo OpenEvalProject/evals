@@ -7,17 +7,25 @@
 
 ### Affiliations
 
-1. https://ror.org/00thqtb16 Department of Pathology, Microbiology, and Immunology, College of Medicine, University of Nebraska Medical Center Omaha United States
+1. Department of Pathology, Microbiology, and Immunology, College of Medicine, University of Nebraska Medical Center Omaha United States ([ROR:00thqtb16](https://ror.org/00thqtb16))
 
 † Corresponding author
 
 ## Abstract
 
-The obligate intracellular bacterium Chlamydia alternates between two functional forms during its developmental cycle: elementary body (EB) and reticulate body (RB). However, the molecular mechanisms governing the transitions between these forms are unknown. Here, we present evidence that cyclic di-AMP (c-di-AMP) is a key factor in triggering the transition from RB to EB (i.e., secondary differentiation) in the chlamydial developmental cycle. By overexpressing or knocking down expression of c-di-AMP synthase genes, we made strains producing different levels of c-di-AMP, which we linked to changes in secondary differentiation status. Increases in c-di-AMP resulted in an earlier increase in transcription of EB-associated genes, and this was further manifested in earlier production of EBs. In contrast, when c-di-AMP levels were decreased, developmental cycle progression was delayed. Based on these data, we conclude there is a threshold level of c-di-AMP needed to trigger secondary differentiation in Chlamydia . This study identifies a mechanism by which secondary differentiation is initiated in Chlamydia and reveals a critical role for the second messenger signaling molecule c-di-AMP in this process.
+The obligate intracellular bacterium Chlamydia alternates between two functional forms during its developmental cycle: elementary body (EB) and reticulate body (RB). However, the molecular mechanisms governing the transitions between these forms are unknown. Here, we present evidence that cyclic di-AMP (c-di-AMP) is a key factor in triggering the transition from RB to EB (i.e., secondary differentiation) in the chlamydial developmental cycle. By overexpressing or knocking down expression of c-di-AMP synthase genes, we made strains producing different levels of c-di-AMP, which we linked to changes in secondary differentiation status. Increases in c-di-AMP resulted in an earlier increase in transcription of EB-associated genes, and this was further manifested in earlier production of EBs. In contrast, when c-di-AMP levels were decreased, developmental cycle progression was delayed. Based on these data, we conclude there is a threshold level of c-di-AMP needed to trigger secondary differentiation in Chlamydia. This study identifies a mechanism by which secondary differentiation is initiated in Chlamydia and reveals a critical role for the second messenger signaling molecule c-di-AMP in this process.
 
 ## Introduction
 
 Chlamydia species are major pathogens of humans and animals. These obligate intracellular bacteria share one key feature: their unique developmental cycle (see Abdelrahman and Belland, 2005). During this cycle, Chlamydia transitions between two different functional and morphological forms: the elementary body (EB), an infectious but non-dividing cell, and the reticulate body (RB), a dividing but non-infectious cell (Figure 1A). A third form, the intermediate body (IB) is a transitional form from the RB to EB. Besides these characteristics, EBs and RBs differ in other ways. For example, EBs are small (~0.3 μm), have a highly disulfide-crosslinked outer membrane (Everett and Hatch, 1991), and have DNA condensed by histone-like proteins (Hackstadt et al., 1991). In contrast, RBs are larger (~1 μm), have a Gram-negative cell envelope that lacks peptidoglycan (Moulder, 1993; Fox et al., 1990; Barbour et al., 1982), and have a dispersed chromosome. RBs divide by an asymmetric polarized division mechanism dependent on MreB-directed peptidoglycan synthesis specifically at the septum (Abdelrahman et al., 2016; Liechti et al., 2016; Ouellette et al., 2012; Lee et al., 2020). Not surprisingly, Chlamydia expresses genes in a temporally defined manner that corresponds broadly with its developmental cycle (Belland et al., 2003; Ouellette et al., 2006). ‘Early’ genes (e.g., euo) are expressed immediately upon entry into a target host cell and are likely involved in establishing the intracellular niche of Chlamydia, the inclusion, and mediating primary differentiation from EB to RB. ‘Mid’ cycle genes (e.g., mreB, clpPX) facilitate RB replication and division and inclusion growth. ‘Late’ genes (e.g. hctA, omcB) are expressed when secondary differentiation is initiated to trigger EB formation. Although developmental gene expression has been characterized for decades, the signals or events that initiate differentiation from one form to the other are not known.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig1-v1.jpg)
+
+**Figure 1.:** (A) Defining characteristics of chlamydial elementary bodies (EBs) and reticulate bodies (RBs). (B) A hypothetical model representing the correlation between c-di-AMP levels and the timing of secondary differentiation. The dashed line represents a threshold level of c-di-AMP needed to drive secondary differentiation in a given RB. hpi = hours post-infection. (C) Measurement of c-di-AMP concentrations in uninfected (-Ctr) and infected (+Ctr) HeLa cell lysates. For infected HeLa cells, C. trachomatis serovar L2 (434/Bu) transformed with an mCherry-encoding construct was infected into HeLa cells, and expression of mCherry was induced at 10 hpi with 5 nM anhydrotetracycline (aTc). All samples were harvested at 16 and 24 hpi. (D) A schematic diagram of the constructs used in this study. All constructs used are aTc-inducible as shown by the Ptet promoter. The location of the 6xH tag and the approximate location of the crRNA for the CRISPRi vectors are shown as well as the transmembrane domain of DacA. Diagram is not to scale. (E) Measurement of c-di-AMP concentrations in infected cell lysates from the strains shown in panel (D). C. trachomatis serovar L2 (434/Bu) transformed with the indicated constructs was infected into HeLa cells. At 10 hpi, expression of the construct was induced with 5 nM aTc, and the infected cells were harvested at 16 or 24 hpi. Levels of c-di-AMP in the supernatant were measured using ELISA. The left and right panels show the levels of c-di-AMP in the indicated strains at 16 and 24 hpi, respectively, on a log2 scale. For reference, 210=1024, 215=32,768, and 220=1,048,576. The dashed line in both graphs represents the c-di-AMP level of the 24 hpi mCherry-expressing control that is associated with EB production. N=3. *p<0.05, **p<0.001, NS: Not significant via two-sample equal variance t-test compared to the mCherry control.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Transmembrane domains in DacA (A) and YbbR (B) were predicted with TOPCONS (https://topcons.cbr.su.se/) (Tsirigos et al., 2015). The red and blue lines represent cytosolic and periplasmic domains, respectively.
 
 In a 2013 study, another defining characteristic of EBs and RBs was identified: their relative levels of the second messenger signaling molecule cyclic di-AMP (c-di-AMP) (see Barker et al., 2013). Barker et al. studied how IFNβ production is activated in cells infected with C. trachomatis. The authors identified a role for the innate immune response protein, STING, which recognizes c-di-AMP. Chlamydia encodes a diadenylate cyclase enzyme, DacA, associated with c-di-AMP production, that had not been characterized. As part of their study, the authors determined that c-di-AMP accumulates over the course of the chlamydial developmental cycle, that EBs have high levels of this molecule whereas RBs have low levels, and that DacA is a diadenylate cyclase. It is unlikely that Chlamydia produces c-di-AMP only to signal host immune responses. Rather, the parsimonious interpretation is that Chlamydia uses this signaling molecule to regulate some aspect of its physiology and that activation of host signaling is ‘accidental’ – similar to activation of NOD2 by chlamydial peptidoglycan (Girardin et al., 2003; Packiam et al., 2015). However, no direct function of c-di-AMP in chlamydial biology has been defined.
 
@@ -29,7 +37,7 @@ There are three principal mechanisms to regulate c-di-AMP levels: through synthe
 
 ## Results
 
-## Cyclic di-AMP levels increase at later stages of the developmental cycle and in bacteria that overexpress both DacA and YbbR
+### Cyclic di-AMP levels increase at later stages of the developmental cycle and in bacteria that overexpress both DacA and YbbR
 
 To verify that EBs have higher levels of c-di-AMP compared to RBs, we infected HeLa cells at a multiplicity of infection (MOI) of 1 with a transformant of C. trachomatis L2 carrying a shuttle plasmid with inducible mCherry. This strain serves as a control for subsequent overexpression experiments, and we induced mCherry expression with 5 nM aTc at 10 hr post-infection (hpi). We collected uninfected and infected HeLa cell lysates at 16 and 24 hpi and measured c-di-AMP levels by ELISA (Figure 1C). As expected, only basal amounts (<100 pg/mL) of c-di-AMP were detected in uninfected HeLa cells at either timepoint (Figure 1C). In infected cells, the 16 hpi timepoint is characterized by predominantly an RB population whereas the 24 hpi timepoint is characterized by ongoing secondary differentiation and a mixture of RBs, IBs, and EBs. We observed that c-di-AMP levels were significantly higher at 24 hpi (~1700 pg/mL) compared to 16 hpi (~250 pg/mL) and increased approximately sevenfold over this timeframe (Figure 1C). These results are in agreement with the Barker et al. study indicating higher levels of c-di-AMP in EBs (Barker et al., 2013). From these data, we infer that the concentration of c-di-AMP in our culture conditions necessary to trigger conversion of RBs to EBs is at most 1700 pg/mL.
 
@@ -41,9 +49,37 @@ When DacA and YbbR_6xH were co-overexpressed, c-di-AMP levels increased by appro
 
 For the dacA-KD strain, the c-di-AMP level was unchanged at 16 hpi and reduced a statistically significant ~ fivefold at 24 hpi (~500 pg/mL; roughly twice the level of the 16 hr mCherry-expressing control but below the EB threshold). The loss of c-di-AMP production in this strain was restored in the complemented dacA-KDcom strain, which showed a phenotype similar to the dacAop overexpression strain with c-di-AMP levels above the EB threshold at both timepoints assessed (~3700 pg/mL at 16 hpi;~10,000 pg/mL at 24 hpi). Based on these data, we conclude that both DacA and YbbR are necessary for optimal c-di-AMP synthesis in Chlamydia. Importantly, our collection of strains that are high or low producers of c-di-AMP give us an opportunity to test our overarching hypothesis (Figure 1B).
 
-## Overexpression of membrane-localized DacA isoforms, but not YbbR, disrupts chlamydial growth and development
+### Overexpression of membrane-localized DacA isoforms, but not YbbR, disrupts chlamydial growth and development
 
 To begin exploring the impact of altering dacA and/or ybbR expression on chlamydial growth, we performed a series of experiments to assess their protein localization in chlamydiae. We also measured impacts of overexpressing each individually on chlamydial growth and development. To observe the localization of DacA and YbbR, we infected HeLa cells with transformants encoding dacA or ybbR_6xH alone and induced expression of the constructs at 10 hpi with 5 nM aTc. At 24 hpi, infected cells were fixed, and we performed an indirect immunofluorescence assay (IFA) by labeling the chlamydial major outer membrane protein (MOMP) and DacA or 6xH. We observed that both DacA and YbbR localized at the bacterial membrane as expected (Figure 2A and Figure 2—figure supplement 1). When DacA was overexpressed, the inclusion size was significantly reduced in area (~ sixfold) with larger individual organisms (~ twofold) than those in the uninduced control (Figure 2—figure supplement 2). Similarly, overexpressing the inactive DacA(D164N) mutant resulted in smaller inclusions similar to overexpressing wild-type DacA (Figure 2B). We did not quantify effects of YbbR_6xH overexpression on inclusion or bacterial size since the measured phenotypes indicated no differences from the uninduced control (see below; Figure 2—figure supplement 3).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig2-v1.jpg)
+
+**Figure 2.:** HeLa cells were infected with C. trachomatis transformed with a plasmid encoding an anhydrotetracycline (aTc)-inducible DacA or DacA(D164N) (i.e., dacA or dacA(D164N), respectively; see Figure 1D). At 10 hpi, expression of the construct was induced or not with 5 nM aTc, and DNA and RNA samples were collected at 10, 14, and 24 hpi. Immunofluorescence analysis (IFA) and inclusion-forming units (IFU) samples were collected at 24 hpi. For IFA images, the green color represents chlamydial major outer membrane protein (MOMP), which shows the chlamydial cell morphology, and the red color represents DacA or DacA(D164N). (A &B) IFA images of the dacA(A) and dacA(D164N) (B) strains at 24 hpi. Shown are individual panels of a representative inclusion for the strains with DacA and MOMP labeling as well as the merged image. IFA images were acquired on a Zeiss AxioImager.Z2 equipped with an Apotome2 using a 100 X lens objective. Scale bar: 1 µm (A) or 2 µm (B). (C &D) Quantification of IFUs (C) and genomic DNA copy number (D) from uninduced and induced samples of dacA at 24 hpi. (E &F) Quantification of IFUs (E) and genomic DNA copy number (F) from uninduced and induced samples of dacA(D164N) at 24 hpi. (G &H) Quantification of transcripts by RT-qPCR for dacA, ybbR, euo, hctA, and omcB from uninduced and induced samples of dacA (G) and dacA(D164N) (H) UI = uninduced (i.e. -aTc); I=induced (i.e. +aTc) for all sample types. N=3. *p<0.05; **p<0.001 via two-sample equal variance t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** C. trachomatis encoding DacA_6xH or YbbR_6xH was infected into HeLa cells. At 4 hpi, expression of the constructs was induced with 5 nM aTc. At 10.5 hpi, the infected cells were fixed with an aldehyde fixing solution (3.2% Formaldehyde, 0.022% Glutaraldehyde in 1 X PBS) for 2 min and permeabilized with 90% MeOH for 1 min. The images were acquired on a Zeiss Imager.Z2 equipped with an Apotome2 using a 100 X lens objective.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Inclusion area of the dacA strain. We measured the area of 56 inclusions (from n=3 replicates). (B) Cell diameter of the dacA strain. We measured the diameter of 142 (uninduced = UI) or 119 (induced = I) bacteria (from n=3 replicates). (C) Inclusion area of the dacA(D164N) strain. We measured the area of 54 inclusions (from n=3 replicates). (D) Cell diameter of the dacA(D164N) strain. We measured the diameter of 143 (UI) or 145 (I) bacteria (from n=3 replicates). The inclusion area and cell diameter were measured using Fiji software. **p<0.001 via two-sample equal variance t-test.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** HeLa cells were infected with C. trachomatis transformed with a plasmid encoding an anhydrotetracycline-inducible YbbR_6xH (i.e., ybbR_6xH; see Figure 1D). At 10 hpi, expression of the construct was induced or not with 5 nM aTc, and immunofluorescence assay (IFA), inclusion-forming unit (IFU), DNA, and RNA samples were collected. (A) IFA images of ybbR_6xH strain at 24 hpi. (B) Quantification of IFU from uninduced and induced samples at 24 hpi. (C) Quantification of genomic DNA copy number by qPCR in uninduced and induced samples. (D) Quantification of transcripts by RT-qPCR for dacA, ybbR, euo, hctA, and omcB. IFA images were acquired on a Zeiss AxioImager.Z2 equipped with an Apotome2 using a 100 X lens objective. Scale bar: 1 µm. UI = uninduced (i.e. -aTc); I=induced (i.e. +aTc) for all sample types. N=3. *p<0.05 via two-sample equal variance t-test.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** HeLa cells were infected with C. trachomatis transformed with a plasmid encoding an anhydrotetracycline-inducible mCherry. At 10 hpi, expression of the construct was induced or not with 5 nM aTc, and the EB samples (IFU - inclusion forming unit) were collected at 18, 20, 22, 24, 32, and 48 hpi.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** HeLa cells were infected with C. trachomatis transformed with a plasmid encoding an anhydrotetracycline (aTc)-inducible DacA_6xH. At 10 hpi, expression of the construct was induced or not with 5 nM aTc, and DNA and RNA samples were collected at 10, 14, and 24 hpi. Immunofluorescence analysis (IFA) and inclusion-forming units (IFU) samples were collected at 24 hpi. (A) IFA images of the dacA_6xH strain at 24 hpi. Shown are individual panels for DacA_6xH and major outer membrane protein (MOMP) labeling as well as the merged image. IFA images were acquired on a Zeiss AxioImager.Z2 equipped with an Apotome2 using a 100 X lens objective. Scale bar: 1 µm. (B) Quantification of IFUs from uninduced and induced samples at 24 hpi. (C) Quantification of genomic DNA copy number by qPCR in uninduced and induced samples. (D) Quantification of transcripts by RT-qPCR for dacA, ybbR, euo, hctA, and omcB from uninduced and induced samples. UI = uninduced (i.e. -aTc); I=induced (i.e. +aTc) for all sample types. N=3. *p<0.05; **p<0.001 via two-sample equal variance t-test.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** STING-KO HeLa cells were infected with C. trachomatis transformed with a plasmid encoding an anhydrotetracycline (aTc)-inducible (A) DacA_6xH and/or (B). CRISPRi-dCas12 system targeting the dacA promoter. At 10 hpi, expression of the construct was induced or not with 5 nM aTc, and DNA and RNA samples were collected at 10, 14, and 24 hpi.
 
 To investigate the effects of DacA isoforms or YbbR_6xH overexpression on chlamydial growth, we measured EB progeny production using an inclusion-forming unit (IFU) assay and genomic DNA copy number (a proxy for total bacteria, i.e., EB+RB) by qPCR. To quantify IFUs, a lysate from a primary infection is prepared and used to infect a fresh monolayer of cells. Any inclusions in the secondary infection are derived from viable EBs present in the primary infection. The vector control strain showed no differences in IFUs when overexpressing mCherry (Figure 2—figure supplement 4). At 24 hpi, both IFUs and genome copy numbers were significantly decreased in the DacA overexpression strain (Figure 2C and D). We obtained similar results when overexpressing wild-type DacA with a 6xHis tag in wild-type or STING KO cells, indicating that a C-terminal tag does not impact these phenotypes in Chlamydia (Figure 2—figure supplement 5 and Figure 2—figure supplement 6). We also performed the same experiments with the inactive isoform of DacA, DacA(D164N). Like overexpression of the wild-type DacA, overexpression of DacA(D164N) also negatively affected IFU production and resulted in reduced genome copy numbers even though c-di-AMP levels were reduced under these conditions (Figure 2E and F). YbbR_6xH overexpression did result in a statistically significant, ~ twofold decrease in IFU production (Figure 2—figure supplement 3). This reflects one division cycle difference from the uninduced control and, in the absence of any other phenotypic discrepancy, is not considered biologically relevant. No differences were noted in genome copy number when overexpressing YbbR_6xH (Figure 2—figure supplement 3).
 
@@ -53,21 +89,41 @@ Given that overexpression of either the wild-type or mutant isoform of DacA gave
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig3-v1.jpg)
 
-**Figure 3.:** HeLa cells were infected with C. trachomatis transformed with a plasmid encoding an anhydrotetracycline (aTc)-inducible ΔTMDacA or ΔTMDacA(D164N) (i.e. ΔTMdacA and ΔTMdacA (D164N); see Figure 1D). At 10 hpi, expression of the construct was induced or not with 5 nM aTc, and DNA and RNA samples were collected at 10, 14, and 24 hpi. Immunofluorescence analysis (IFA) and inclusion-forming units (IFU) samples were collected at 24 hpi. For IFA images, the green color represents chlamydial major outer membrane protein (MOMP), which shows the chlamydial cell morphology, and the red color represents ΔTMDacA or ΔTMDacA(D164N). (A & B) IFA images of ΔTMdacA(A) and ΔTMdacA(D164N)(B) strains at 24 hpi. Shown are individual panels of a representative inclusion for the strains with DacA and MOMP labeling as well as the merged image. IFA images were acquired on a Zeiss AxioImager.Z2 equipped with an Apotome2 using a 100 X lens objective. Scale bar: 2 µm. (C & D) Quantification of IFUs (C) and genomic DNA copy number (D) from uninduced and induced samples of ΔTMdacA at 24 hpi. (E & F) Quantification of IFUs (E) and genomic DNA copy number (F) from uninduced and induced samples of ΔTMdacA(D164N). (G & H) Quantification of transcripts by RT-qPCR for dacA, ybbR, euo, hctA, and omcB from uninduced and induced samples of ΔTMdacA (G) and ΔTMdacA(D164N) (H) UI = uninduced (i.e. -aTc); I=induced (i.e. +aTc) for all sample types. N=3. *p<0.05 via two-sample equal variance t-test.Figure 3—source data 1.Figure 3.
+**Figure 3.:** HeLa cells were infected with C. trachomatis transformed with a plasmid encoding an anhydrotetracycline (aTc)-inducible ΔTMDacA or ΔTMDacA(D164N) (i.e. ΔTMdacA and ΔTMdacA (D164N); see Figure 1D). At 10 hpi, expression of the construct was induced or not with 5 nM aTc, and DNA and RNA samples were collected at 10, 14, and 24 hpi. Immunofluorescence analysis (IFA) and inclusion-forming units (IFU) samples were collected at 24 hpi. For IFA images, the green color represents chlamydial major outer membrane protein (MOMP), which shows the chlamydial cell morphology, and the red color represents ΔTMDacA or ΔTMDacA(D164N). (A & B) IFA images of ΔTMdacA(A) and ΔTMdacA(D164N)(B) strains at 24 hpi. Shown are individual panels of a representative inclusion for the strains with DacA and MOMP labeling as well as the merged image. IFA images were acquired on a Zeiss AxioImager.Z2 equipped with an Apotome2 using a 100 X lens objective. Scale bar: 2 µm. (C & D) Quantification of IFUs (C) and genomic DNA copy number (D) from uninduced and induced samples of ΔTMdacA at 24 hpi. (E & F) Quantification of IFUs (E) and genomic DNA copy number (F) from uninduced and induced samples of ΔTMdacA(D164N). (G & H) Quantification of transcripts by RT-qPCR for dacA, ybbR, euo, hctA, and omcB from uninduced and induced samples of ΔTMdacA (G) and ΔTMdacA(D164N) (H) UI = uninduced (i.e. -aTc); I=induced (i.e. +aTc) for all sample types. N=3. *p<0.05 via two-sample equal variance t-test.
 
-## A low level of c-di-AMP decreases the transcript levels of late genes
+### A low level of c-di-AMP decreases the transcript levels of late genes
 
 As mentioned above, the dacA-KD strain displayed a lower c-di-AMP level compared to that of the control strain at 24 hpi, whereas the dacA-KDcom complemented strain exhibited high levels of c-di-AMP at this timepoint and at 16 hpi (Figure 1E). The complemented strain encodes not only the dacA-knockdown system but also the dacA-ybbR_6xH operon as a transcriptional fusion with dCas12. To observe effects of knockdown or complementation on the developmental cycle, we first examined inclusion and bacterial morphology by IFA. When the knockdown system was induced, bacterial cell size was enlarged (~ twofold), but we observed no change in inclusion area as compared to that of the uninduced control (Figure 4A, Figure 4—figure supplement 1). In the complemented strain, induction of dCas12 and YbbR_6xH was confirmed by IFA under inducing conditions (Figure 4B). We expected that co-expressing DacA and YbbR_6xH would complement the dacA-KD to the wild-type phenotype. However, the inclusion area was reduced (~ threefold) with slightly larger organisms (~1.4 fold) as compared to the uninduced control (Figure 4—figure supplement 1), indicating this is not the case.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig4-v1.jpg)
+
+**Figure 4.:** HeLa cells were infected with C. trachomatis transformed with a plasmid encoding an anhydrotetracycline (aTc)-inducible CRISPRi-dCas12 system targeting the dacA promoter (dacA-KD) or dacA-KD system and DacA/YbbR_6xH (i.e., dacA-KDcom; see Figure 1D). At 10 hpi, knockdown was induced or not with 5 nM aTc, and DNA and RNA samples were collected at 10, 14, and 24 hpi. Immunofluorescence analysis (IFA) and inclusion-forming units (IFU) samples were collected at 24 hpi. (A & B) IFA images of the dacA-KD (A) and dacA-KDcom (B) strains at 24 hpi. Shown are individual panels of a representative inclusion for the strains for dCas12, YbbR_6xH, and major outer membrane protein (MOMP) labeling as well as the merged image. IFA images were acquired on a Zeiss AxioImager.Z2 equipped with an Apotome2 using a 100 X lens objective. Scale bar: 2(A) or 1(B) µm. (C & D) Quantification of IFUs (C) and genomic DNA copy number (D) from uninduced and induced samples of dacA-KD at 24 hpi. (E and F) Quantification of IFUs (E) and genomic DNA copy number (F) in uninduced and induced samples of dacA-KDcom. (G & H) Quantification of transcripts by RT-qPCR for dacA, ybbR, euo, hctA, and omcB from uninduced and induced samples of dacA-KD (G) and dacA-KDcom (H) UI = uninduced (i.e. -aTc); I=induced (i.e. +aTc) for all sample types. N=3. *p<0.05; **p<0.001 via two-sample equal variance t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Inclusion area of the dacA-KD strain. We measured the area of 30 (uninduced = UI) and 29 (induced = I) inclusions (from n=3 replicates). (B) Cell diameter of the dacA-KD strain. We measured the diameter of 126 (UI) or 129 (induced = I) bacteria (from n=3 replicates). (C) Inclusion area of the dacA-KDcom strain. We measured the area of 62 (UI) and 60 (I) inclusions (from n=3 replicates). (D) Cell diameter of the dacA-KDcom strain. We measured the diameter of 149 (UI) and 142 (I) bacteria (from n=3 replicates). The inclusion area and cell diameter were measured using Fiji software. **p<0.001 via two-sample equal variance t-test.
+
 In addition, we also measured the amount of EB progeny (IFUs) and genome copy numbers. Although genome copy numbers were the same, IFUs decreased by approximately 80% compared to that of the uninduced sample at 24 hpi in the knockdown strain (Figure 4C and D), suggesting more RBs are present in the sample. IFUs and genome copies showed an approximate twofold reduction at 24 hpi in the complemented strain (Figure 4E and F). The data for the knockdown strain suggest that low levels of c-di-AMP are detrimental for secondary differentiation. As genome copies alone cannot assess the ratio of RBs to EBs, we performed RT-qPCR to quantify transcripts of relevant gene targets. When dCas12 was induced, both dacA and ybbR transcript levels decreased (Figure 4G). Since dacA and ybbR are transcribed in an operon, this result is not surprising. Consistent with reduced EB yields, transcripts of the late genes omcB and hctA were decreased at 24 hpi. In contrast, transcripts of the early gene euo were slightly elevated at 24 hpi. We have previously observed no effects on genome levels or transcription of these genes when overexpressing the dCas12 gene alone (Ouellette et al., 2021), indicating these effects are specific to dacA-KD and that dacA knockdown reduces or delays expression of late gene transcripts. For the complemented strain, both dacA and ybbR transcripts were increased compared to the dacA-KD strain (Figure 4H), and transcript levels for these genes were increased beyond the ‘wild-type’ uninduced control levels, again suggesting the ‘complemented’ strain did not return to a wild-type phenotype. Nonetheless, transcripts for the early gene euo were indistinguishable to levels measured in the uninduced strain (Figure 4H). Surprisingly, hctA transcripts were increased ~10 fold at 14 hpi compared to that of the uninduced sample, and omcB transcripts were slightly, but not significantly, increased at 14 and 24 hpi (Figure 4H). These data suggest that overexpressing DacA and YbbR_6xH, with associated increases in c-di-AMP levels (Figure 1), may alter the timing of secondary differentiation.
 
-## High levels of c-di-AMP induce late gene expression
+### High levels of c-di-AMP induce late gene expression
 
 To clarify the effect of DacA and YbbR_6xH overexpression on secondary differentiation, we next evaluated the phenotype of the dacAop strain in contrast with the dacAopMut strain, in which the active site residue of DacA has been mutated. When we induced expression of the wild-type constructs, we confirmed the induction of DacA and YbbR_6xH and their colocalization at the membrane Figure 5A; Pearson correlation coefficient of 0.713±0.109 from 20 inclusions measured by JACoP Plugin of ImageJ; values near 1 indicate colocalization (Bolte and Cordelières, 2006; Dunn et al., 2011). This is not surprising as both proteins are critical for c-di-AMP synthesis based on our c-di-AMP measurements (Figure 1E). Organism and inclusion morphology were similar to the dacA-KDcom complemented strain (Figures 4B and 5A; Figure 5—figure supplement 1). The bacterial morphology of the dacAopMut strain indicated larger organisms (~1.8 fold) in smaller inclusions (~2.5 fold) after inducing expression (Figure 5B; Figure 5—figure supplement 1). We next assessed whether the overexpressed DacA and YbbR_6xH affected IFU production and replication. IFUs were reduced roughly twofold for the dacAop strain and 1000-fold in the dacAopMut strain after inducing overexpression (Figure 5C&E). Again, the genome copy data for dacAop overexpression closely phenocopied the complemented knockdown strain, showing a decrease at 24 hpi (Figure 5D). Similarly, genome copy numbers for the dacAopMut strain showed a significant drop at 24 hpi after inducing expression (Figure 5F).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig5-v1.jpg)
+
+**Figure 5.:** HeLa cells were infected with C. trachomatis transformed with an aTc-inducible plasmid encoding wild-type DacA/YbbR_6xH or DacA(D164N)/YbbR_6xH (i.e., dacAop and dacAopMut, respectively; see Figure 1D). At 10 hpi, expression of the constructs was induced or not with 5 nM aTc, and DNA and RNA samples were collected at 10, 14, and 24 hpi. Immunofluorescence analysis (IFA) samples were collected at 24 hpi. (A &B). IFA images of the dacAop (A) and dacAopMut (B) at 24 hpi. Shown are individual panels of a representative inclusion for the strains for DacA and YbbR_6xH as well as the merged image with major outer membrane protein (MOMP) labeling. The arrowheads represent the co-localization of DacA and YbbR. IFA images were acquired on a Zeiss AxioImager.Z2 equipped with an Apotome2 using a 100 X lens objective. Scale bar: 2 µm. (C & D) Quantification of IFUs (C) and genomic DNA copy number (D) from uninduced and induced samples of dacAop at 24 hpi. (E & F). Quantification of IFUs (E) and genomic DNA copy number (F) from uninduced and induced samples of dacAopMut. (G & H). Quantification of transcripts by RT-qPCR for dacA, ybbR, euo, hctA, and omcB from uninduced and induced samples of dacAop (G) and dacAopMut (H). UI = uninduced (i.e. -aTc); I=induced (i.e. +aTc) for all sample types. N=3. *p<0.05 two-sample equal variance t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Inclusion area of the dacAop strain. We measured the area of 52 (uninduced = UI) and 58 (induced = I) inclusions (from n=3 replicates). (B) Cell diameter of the dacAop strain. We measured the diameter of 125 (UI) or 131 (induced = I) bacteria (from n=3 replicates). (C) Inclusion area of the dacAopMut strain. We measured the area of 50 (UI) and 52 (I) inclusions (from n=3 replicates). (D). Cell diameter of the dacAopMut strain. We measured the diameter of 124 (UI) and 150 (I) bacteria (from n=3 replicates). The inclusion area and cell diameter were measured using Fiji software. **p<0.001 via two-sample equal variance t-test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** HeLa cells were infected with C. trachomatis transformed with a dacAop overexpression construct encoding SpcR. At 10 hpi, expression of the construct was induced or not with 5 nM aTc, and DNA and RNA samples were collected at 10, 14, and 24 hpi. Immunofluorescence analysis (IFA) samples were collected at 24 hpi. (A) IFA images of the dacAop strain at 24 hpi. Shown are individual panels for DacA, YbbR_6xH, and major outer membrane protein (MOMP) labeling as well as the merged image. (B) Quantification of genomic DNA copy number by qPCR in uninduced and induced samples. (C) Quantification of transcripts by RT-qPCR for dacA, ybbR, euo, hctA, and omcB. IFA images were acquired on a Zeiss AxioImager.Z2 equipped with an Apotome2 using a 100 X lens objective. Scale bar: 2 µm. UI = uninduced (i.e. -aTc); I=induced (i.e. +aTc) for all sample types. N=3. *p<0.05 via two-sample equal variance t-test.
+
 We then quantified transcripts for the developmentally regulated genes euo, hctA, and omcB as well as for dacA and ybbR (Figure 5G&H). Not surprisingly, dacA and ybbR transcripts were elevated at the timepoints assessed under inducing conditions for both the dacAop and dacAopMut strains. Transcripts for euo were not statistically changed but trended higher at the 24 hpi timepoint, whereas omcB transcripts were slightly, but not significantly, increased at 14 and 24 hpi during dacAop overexpression. Once again, we observed that hctA transcripts were increased over 10-fold at 14 hpi in the developmental cycle (Figure 5G), similar to what we measured for the complemented knockdown strain (Figure 4H). These data reinforce that elevated c-di-AMP levels (Figure 1E) in these strains lead to increased expression of the late gene hctA at an earlier timepoint (14 hpi) in the developmental cycle. As further validation of this dacAop overexpression strain that was constructed in a beta-lactamase producing background, we also generated a spectinomycin-resistant dacAop overexpression strain and validated that induction of the dacA operon resulted in earlier accumulation of hctA transcripts (Figure 5—figure supplement 2). In assessing developmentally regulated transcripts for the dacAopMut strain, euo levels were maintained, albeit not significantly so, at 24 hpi (Figure 5H). In contrast to the c-di-AMP overproducing strains, transcripts for hctA and omcB were decreased at 24 hpi (Figure 5H). The transcriptional results of the developmentally regulated genes in the dacAopMut strain were very similar to the dacA-KD strain (Figure 4G), suggesting that blocking c-di-AMP accumulation interferes with developmental cycle progression.
 
-## Elevated c-di-AMP levels result in increased transcript levels of genes necessary for secondary differentiation
+### Elevated c-di-AMP levels result in increased transcript levels of genes necessary for secondary differentiation
 
 Given the surprising finding that, in strains overproducing c-di-AMP, hctA transcripts were 10-fold higher at a timepoint not associated with secondary differentiation, we asked the question whether all genes related to secondary differentiation were increased after inducing production of c-di-AMP. Conversely, we wanted to explore whether reducing c-di-AMP levels would delay expression of genes related to secondary differentiation. Thus, to further investigate how c-di-AMP affects transcription of such genes, we performed RNA sequencing on both the dacAop overexpression and dacA-KD strains and compared the transcriptome between uninduced and induced samples within the given strain at the given timepoint. HeLa cells were infected with these transformants, and overexpression or knockdown was induced or not at 10 hpi with 5 nM aTc. For the dacAop strain, RNA was collected at 16 hpi, a time at which late genes are beginning to be expressed (as opposed to 14 hpi) but remain near a basal level of transcription (Belland et al., 2003). The rationale for this was to determine whether high c-di-AMP levels result in increased late gene transcripts at this timepoint above and beyond the levels of the control, uninduced condition. For the dacA-KD strain, RNA was collected at 24 hpi, a time at which late genes are peaking in their expression. The rationale for this was to determine whether late gene transcription was decreased, which could not otherwise be reliably assessed at the 16 hpi timepoint.
 
@@ -77,13 +133,335 @@ RNA sequencing results were statistically analyzed by the UNMC Bioinformatics Co
 
 **Figure 6.:** RNA sequencing was performed from HeLa cells infected with either the dacAop or dacA-KD strains. RNA samples were collected at 16 hpi for dacAop and 24 hpi for dacA-KD after inducing expression of the relevant constructs at 10 hpi. Shown is a volcano plot of the RNA sequencing results with the vertical dashed lines indicating a twofold change in transcript levels as compared to the respective uninduced control for the given strain and the horizontal lines indicating a p-value of 0.05. The plot was made using GraphPad Prism software. Green spots represent genes demonstrating a statistically significant twofold change in transcription levels between uninduced and induced samples. Red dots represent genes with significant changes in transcript levels less than twofold. Blue dots represent genes not significantly different but more than twofold changed between the conditions. Black dots represent genes not significantly different and less than twofold changed between the conditions. See also Table 1 and Supplementary file 1 and Supplementary file 2 for more details.
 
-## Alterations in c-di-AMP levels impact the timing of EB production
+**Table 1.**
+ Genes impacted by cyclic di-AMP levels.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+      <th>Canonical late genes</th>
+      <th colspan="2">Fold change</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Gene ID</th>
+      <th>Ctr D ORF</th>
+      <th>Name</th>
+      <th>Protein names</th>
+      <th>dacAop_OE</th>
+      <th>dacA-KD</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CTL0112</td>
+      <td>CT743</td>
+      <td>hctA</td>
+      <td>Histone H1-like protein HC1</td>
+      <td>6.70</td>
+      <td>–3.47</td>
+      <td>Belland et al., 2003; Fahr et al., 1995</td>
+    </tr>
+    <tr>
+      <td>CTL0302</td>
+      <td>CT046</td>
+      <td>hct2</td>
+      <td>Histone H1-like protein HC2</td>
+      <td>3.52</td>
+      <td>–5.96</td>
+      <td>Belland et al., 2003; Yu et al., 2006</td>
+    </tr>
+    <tr>
+      <td>CTL0336</td>
+      <td>CT080</td>
+      <td>ltuB</td>
+      <td>Late transcription unit B protein</td>
+      <td>4.00</td>
+      <td>–3.61</td>
+      <td>Belland et al., 2003; Fahr et al., 1995</td>
+    </tr>
+    <tr>
+      <td>CTL0700</td>
+      <td>CT441</td>
+      <td>tsp</td>
+      <td>Carboxy-terminal processing protease</td>
+      <td>6.18</td>
+      <td>–6.62</td>
+      <td>Yu et al., 2006</td>
+    </tr>
+    <tr>
+      <td>CTL0702</td>
+      <td>CT443</td>
+      <td>omcB</td>
+      <td>Large cysteine-rich periplasmic protein</td>
+      <td>5.00</td>
+      <td>–4.04</td>
+      <td>Belland et al., 2003; Soules et al., 2020b</td>
+    </tr>
+    <tr>
+      <td>CTL0703</td>
+      <td>CT444</td>
+      <td>omcA</td>
+      <td>Small cysteine-rich outer membrane protein</td>
+      <td>5.93</td>
+      <td>–3.71</td>
+      <td>Belland et al., 2003; Soules et al., 2020b</td>
+    </tr>
+    <tr>
+      <td>CTL0716</td>
+      <td>CT456</td>
+      <td>tarp</td>
+      <td>Translocated actin-recruiting phosphoprotein</td>
+      <td>6.06</td>
+      <td>–5.97</td>
+      <td>Hatch and Ouellette, 2023; Soules et al., 2020b</td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+      <td>Membrane organization associated</td>
+      <td colspan="2">Fold change</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene ID</td>
+      <td>Ctr D ORF</td>
+      <td>Name</td>
+      <td>Protein Names</td>
+      <td>dacAop_OE</td>
+      <td>dacA-KD</td>
+      <td>Reference</td>
+    </tr>
+    <tr>
+      <td>CTL0082</td>
+      <td>CT713</td>
+      <td>ompB</td>
+      <td>Outer membrane protein B</td>
+      <td>2.73</td>
+      <td>–2.15</td>
+      <td>Nicholson et al., 2003</td>
+    </tr>
+    <tr>
+      <td>CTL0248</td>
+      <td>CT869</td>
+      <td>pmpE</td>
+      <td>Polymorphic outer membrane protein</td>
+      <td>1.99</td>
+      <td>–2.04</td>
+      <td>Hatch and Ouellette, 2023; Nicholson et al., 2003</td>
+    </tr>
+    <tr>
+      <td>CTL0249</td>
+      <td>CT870</td>
+      <td>pmpF</td>
+      <td>Polymorphic outer membrane protein</td>
+      <td>3.03</td>
+      <td>–2.23</td>
+      <td>Hatch and Ouellette, 2023; Nicholson et al., 2003</td>
+    </tr>
+    <tr>
+      <td>CTL0250</td>
+      <td>CT871</td>
+      <td>pmpG</td>
+      <td>Polymorphic outer membrane protein</td>
+      <td>2.03</td>
+      <td>–1.55</td>
+      <td>Belland et al., 2003; Nicholson et al., 2003</td>
+    </tr>
+    <tr>
+      <td>CTL0429</td>
+      <td>CT177</td>
+      <td>dsbA</td>
+      <td>Disulfide bond chaperone</td>
+      <td>2.79</td>
+      <td>–2.47</td>
+      <td>Hatch and Ouellette, 2023</td>
+    </tr>
+    <tr>
+      <td>CTL0610</td>
+      <td>CT356</td>
+      <td>dsbH</td>
+      <td>Thioredox_DsbH domain-containing protein</td>
+      <td>3.07</td>
+      <td>–2.11</td>
+      <td>Belland et al., 2003; Nicholson et al., 2003</td>
+    </tr>
+    <tr>
+      <td>CTL0670</td>
+      <td>CT413</td>
+      <td>pmpB</td>
+      <td>Polymorphic outer membrane protein</td>
+      <td>4.17</td>
+      <td>–1.74</td>
+      <td>Hatch and Ouellette, 2023; Nicholson et al., 2003</td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+      <td>Gene Regulation associated</td>
+      <td colspan="2">Fold change</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene ID</td>
+      <td>Ctr D ORF</td>
+      <td>Name</td>
+      <td>Protein Names</td>
+      <td>dacAop_OE</td>
+      <td>dacA-KD</td>
+      <td>Reference</td>
+    </tr>
+    <tr>
+      <td>CTL0044</td>
+      <td>CT675</td>
+      <td>mcsB</td>
+      <td>Protein-arginine kinase</td>
+      <td>3.52</td>
+      <td>–2.21</td>
+      <td>Hatch and Ouellette, 2023</td>
+    </tr>
+    <tr>
+      <td>CTL0045</td>
+      <td>CT676</td>
+      <td>mcsA</td>
+      <td>UVR domain-containing protein</td>
+      <td>2.53</td>
+      <td>–2.92</td>
+      <td>Hatch and Ouellette, 2023</td>
+    </tr>
+    <tr>
+      <td>CTL0727</td>
+      <td>CT467</td>
+      <td>atoS</td>
+      <td>Two component regulator, histidine kinase</td>
+      <td>3.33</td>
+      <td>–1.80</td>
+      <td>Hatch and Ouellette, 2023</td>
+    </tr>
+    <tr>
+      <td>CTL0728</td>
+      <td>CT468</td>
+      <td>atoC</td>
+      <td>Two-component system response regulator</td>
+      <td>7.95</td>
+      <td>–2.78</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CTL0894</td>
+      <td>CT630</td>
+      <td>chxR</td>
+      <td>Atypical response regulator protein ChxR</td>
+      <td>3.68</td>
+      <td>–2.93</td>
+      <td>Yang et al., 2017</td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+      <td>Glycogen synthesis</td>
+      <td colspan="2">Fold change</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene ID</td>
+      <td>Ctr D ORF</td>
+      <td>Name</td>
+      <td>Protein Names</td>
+      <td>dacAop_OE</td>
+      <td>dacA-KD</td>
+      <td>Reference</td>
+    </tr>
+    <tr>
+      <td>CTL0167</td>
+      <td>CT798</td>
+      <td>glgA</td>
+      <td>Glycogen synthase</td>
+      <td>9.58</td>
+      <td>–2.86</td>
+      <td>Belland et al., 2003; Nicholson et al., 2003</td>
+    </tr>
+    <tr>
+      <td>CTL0342</td>
+      <td>CT087</td>
+      <td>malQ</td>
+      <td>4-alpha-glucanotransferase</td>
+      <td>9.43</td>
+      <td>–4.29</td>
+      <td>Hefty and Stephens, 2007</td>
+    </tr>
+    <tr>
+      <td>CTL0500</td>
+      <td>CT248</td>
+      <td>glgP</td>
+      <td>Alpha-1,4 glucan phosphorylase</td>
+      <td>2.70</td>
+      <td>–1.71</td>
+      <td>Nicholson et al., 2003</td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+      <td>Type III Secretion System</td>
+      <td colspan="2">Fold change</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene ID</td>
+      <td>Ctr D ORF</td>
+      <td>Name</td>
+      <td>Protein Names</td>
+      <td>dacAop_OE</td>
+      <td>dacA-KD</td>
+      <td>Reference</td>
+    </tr>
+    <tr>
+      <td>CTL0041</td>
+      <td>CT672</td>
+      <td>sctQ</td>
+      <td>Type III secretion component, basal body</td>
+      <td>1.93</td>
+      <td>–1.76</td>
+      <td>Hefty and Stephens, 2007</td>
+    </tr>
+    <tr>
+      <td>CTL0043</td>
+      <td>CT674</td>
+      <td>cdsC</td>
+      <td>Type III secretion structural protein</td>
+      <td>1.79</td>
+      <td>–1.56</td>
+      <td>Hefty and Stephens, 2007</td>
+    </tr>
+    <tr>
+      <td>CTL0343</td>
+      <td>CT088</td>
+      <td>scc1</td>
+      <td>Type III secretion chaperone</td>
+      <td>4.48</td>
+      <td>–3.78</td>
+      <td>Hefty and Stephens, 2007</td>
+    </tr>
+    <tr>
+      <td>CTL0824</td>
+      <td>CT561</td>
+      <td>sctL</td>
+      <td>Type III secretion system protein</td>
+      <td>2.18</td>
+      <td>–1.75</td>
+      <td>Hatch and Ouellette, 2023</td>
+    </tr>
+  </tbody>
+</table>
+
+_OE = overexpression.KD = knockdown._
+
+### Alterations in c-di-AMP levels impact the timing of EB production
 
 The phenotypic effect of increased late gene transcription should be an increase in EB production. However, if EB production is initiated at an earlier time in the developmental cycle when there are fewer non-infectious RBs to convert, then overall EB production should be decreased with a concomitant decrease in genome copies since only the RB replicates DNA. Conversely, delayed expression of late genes should be associated with a delay in EB production. Therefore, to test these predictions, we quantified EB production at 2 hr intervals from 18 to 24 hpi to assess EB production during earlier phases of the developmental cycle, as well as at 32 and 48 hpi to assess overall EB yields (Figure 7). We did not detect any EBs at 16 hpi or earlier (not shown). Cells were infected with the dacAop, dacAopMut, and dacA-KD strains and induced or not at 10 hpi with 5 nM aTc as previously noted. Consistent with the transcriptional data, we measured higher EB yields at 18 and 20 hpi during dacAop overexpression that quickly plateaued by 24 hpi (Figure 7A). Conversely, when c-di-AMP accumulation was blocked by reducing the expression of DacA and YbbR (dacA-KD), we observed delayed EB production (Figure 7B). We also measured lower EB yields when c-di-AMP levels were decreased by overexpression of the DacA(D164N) isoform and YbbR (dacAopMut; Figure 7C). The uninduced control conditions for each strain showed a steady accumulation of EBs throughout the course of the experiment, as expected. The vector control strain expressing mCherry showed no differences as previously noted (Figure 2—figure supplement 4). From these data, we conclude that earlier production of c-di-AMP results in earlier production of EBs.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig7-v1.jpg)
 
-**Figure 7.:** (A–C) HeLa cells were infected with the chlamydial transformants dacAop (A), dacA-KD (B), or dacAopMut (C). Expression of the constructs was induced or not with 5 nM aTc at 10 hpi. At 18, 20, 22, 24, 32, and 48 hpi, infected cell lysates were harvested for inclusion-forming unit (IFU) quantification. UI = uninduced (i.e. -aTc); I=induced (i.e. +aTc) for all sample types. #: Non-detected from the induced samples. N=3. *p<0.05; **p<0.001 via two-sample equal variance t-test.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A–C) HeLa cells were infected with the chlamydial transformants dacAop (A), dacA-KD (B), or dacAopMut (C). Expression of the constructs was induced or not with 5 nM aTc at 10 hpi. At 18, 20, 22, 24, 32, and 48 hpi, infected cell lysates were harvested for inclusion-forming unit (IFU) quantification. UI = uninduced (i.e. -aTc); I=induced (i.e. +aTc) for all sample types. #: Non-detected from the induced samples. N=3. *p<0.05; **p<0.001 via two-sample equal variance t-test.
 
 ## Discussion
 
@@ -105,42 +483,42 @@ Even though diverse functions of c-di-AMP in other bacteria have been reported p
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/104240/elife-104240-fig8-v1.jpg)
 
-**Figure 8.:** C. trachomatis.(A) During reticulate body (RB) division, there is a gradient of c-di-AMP that forms between the mother and daughter cell. The lighter blue represents lower levels of c-di-AMP, the darker blue represents higher levels of c-di-AMP. In the depicted scenario, the daughter cell is able to divide again, having not reached a critical threshold of c-di-AMP. In contrast, the mother cell accumulates sufficient c-di-AMP to trigger secondary differentiation to an EB. (B) A model illustrating how c-di-AMP levels impact secondary differentiation progression. Shown is the ‘normal’ condition of wild-type bacteria, bacteria overexpressing DacA and YbbR (higher cyclic di-AMP), and bacteria expressing the CRISPRi system targeting the dacA promoter (lower cyclic di-AMP). Depending on the amount of c-di-AMP produced, secondary differentiation can either be triggered earlier or later as shown. The black dots represent EBs; the bigger and blue-colored circles show the RB cells. The brightness of blue reflects the c-di-AMP level.
+**Figure 8.:** (A) During reticulate body (RB) division, there is a gradient of c-di-AMP that forms between the mother and daughter cell. The lighter blue represents lower levels of c-di-AMP, the darker blue represents higher levels of c-di-AMP. In the depicted scenario, the daughter cell is able to divide again, having not reached a critical threshold of c-di-AMP. In contrast, the mother cell accumulates sufficient c-di-AMP to trigger secondary differentiation to an EB. (B) A model illustrating how c-di-AMP levels impact secondary differentiation progression. Shown is the ‘normal’ condition of wild-type bacteria, bacteria overexpressing DacA and YbbR (higher cyclic di-AMP), and bacteria expressing the CRISPRi system targeting the dacA promoter (lower cyclic di-AMP). Depending on the amount of c-di-AMP produced, secondary differentiation can either be triggered earlier or later as shown. The black dots represent EBs; the bigger and blue-colored circles show the RB cells. The brightness of blue reflects the c-di-AMP level.
 
 ## Materials and methods
 
-## Organisms, cell lines, and cell culture
+### Organisms, cell lines, and cell culture
 
 Wild-type (ATCC, Manassas, VA) and STING KO (Dr. Frank van Kuppeveld; Utrecht University) HeLa, human cervical epithelial-derived, and McCoy (kind gift of Dr. Harlan Caldwell, NIH), mouse fibroblast-derived, cell lines were cultured at 37 °C with 5% CO2 in Dulbecco’s Modified Eagle Medium (DMEM; Gibco, Waltham, MA, #10-569-044) containing 10% fetal bovine serum (FBS; Hyclone, Logan, UT, #SH30396.03) and 10 μg/mL gentamicin (Gibco, Waltham, MA, #15710072). Cell lines were verified by STR profiling (ATCC) and monitoring of cell morphology. C. trachomatis serovar L2 (434/Bu) lacking the endogenous plasmid (-pL2; kind gift of Dr. Ian Clarke, Univ. Southampton) was used for transformation. All cell cultures and chlamydial stocks were routinely tested for Mycoplasma contamination using the Mycoplasma PCR detection kit and confirmed negative (Sigma, St. Louis, MO, #MP0035-1KT). For E. coli, NEB10β competent cells (New England Biolabs, Ipswich, MA, #C3019H) were used for the amplification of pBOMB-derivative vectors. E. coli was grown at 30 °C in LB media. All chemicals and antibiotics were obtained from Sigma unless otherwise noted.
 
-## Cloning
+### Cloning
 
 The list of the vectors and primers used in this study is detailed in Supplementary file 3. Target genes were amplified by PCR with Phusion DNA polymerase (NEB, #M0530L) using 10 ng C. trachomatis L2 genomic DNA or appropriate vectors as a template. Some DNA segments were directly synthesized as a gBlock fragment (Integrated DNA Technologies, Coralville, IA). If plasmids were used as a template, then we treated the PCR product with DpnI enzyme to remove templates. The PCR products were purified using a PCR purification kit (Qiagen, Hilden, Germany, #28506). The HiFi Assembly reaction master mix (NEB, #E2621X) was used following the manufacturer’s manual in conjunction with plasmids pBOMB (Ouellette et al., 2021) linearized with EagI and KpnI or pBOMBL12CRia (empty vector) linearized with BamHI. The linearized plasmids were also dephosphorylated with FastAP (ThermoFisher, #EF0652). The products of the HiFi reaction were transformed into NEB10β competent cells (NEB) and plated on LB agar with appropriate antibiotics. Plasmids were subsequently isolated using a mini-prep kit (Qiagen, #27106) and verified by plasmid digest and sequencing from individual colonies grown overnight in LB broth with appropriate antibiotic selection.
 
-## Transformation of Chlamydia trachomatis
+### Transformation of Chlamydia trachomatis
 
 McCoy cells were plated in a six-well plate the day before beginning the transformation procedure. C. trachomatis serovar L2 without plasmid (-pL2) resuspended with Tris-CaCl2 buffer (10 mM Tris-Cl pH 7.5, 50 mM CaCl2) was incubated with 2 μg plasmid at room temperature for 30 min. During this step, McCoy cells were washed with 2 mL Hank’s Balanced Salt Solution (HBSS) media containing Ca2+ and Mg2+ (Corning, Corning, NY #21–023-CV). After that, McCoy cells were infected with the transformants in 2 mL HBSS per well. The plate was centrifuged at 400 × g for 15 min at room temperature and incubated at 37 °C for 15 min. The inoculum was aspirated, and 2 mL 1 X DMEM containing 10% FBS and 10 μg/mL gentamicin was added per well. At 8 hr post- infection (hpi), 1 μg/mL cycloheximide and either 1 or 2 U/mL penicillin G or 500 μg/mL spectinomycin were added, and the plate was incubated at 37 °C until 48 hpi. At 48 hpi, the transformants were harvested and infected onto a new McCoy cell monolayer. These harvest and infection steps were repeated every 44–48 hpi until fluorescent, antibiotic-resistant inclusions were observed.
 
-## (RT-)qPCR
+### (RT-)qPCR
 
 HeLa cells were infected with chlamydial transformants at an MOI of 0.5. At 10 hpi, 5 nM anhydrotetracycline (aTc) was added or not to the culture medium. Total RNA and DNA were harvested at this time point from duplicate wells not treated with aTc. At 14 and 24 hpi, total RNA and DNA were collected using Trizol (Invitrogen, #15596018) and DNeasy Tissue (Qiagen, #69506) kit, respectively, as described elsewhere (Hatch and Ouellette, 2023). After DNase (Invitrogen, #69506) treatment of total RNA, cDNA was synthesized using Superscript III reverse transcriptase (Invitrogen, #18-080-085). After diluting the cDNA 10-fold, 5 μl of the diluted cDNA was used as a template for qPCR. Equal masses of genomic DNA were used from each of the samples to quantify chlamydial genomes, which were used to normalize transcript data as described (Ouellette et al., 2005). For both cDNA and gDNA samples, triplicate qPCR reactions were prepared using 2 X SYBR Green (Applied Biosystems, #A25778) in a total volume of 25 μL per well. Standard cycling conditions were used with a melting curve analysis to verify products. Transcripts and genome copies were assessed from at least three biological replicates.
 
-## Indirect immunofluorescence assay (IFA)
+### Indirect immunofluorescence assay (IFA)
 
 HeLa cells were infected with chlamydial transformants as above. At 10 hpi, 5 nM aTc was added or not, and the infected cells were fixed with fixing solution (3.2% formaldehyde and 0.022% glutaraldehyde in 1 X DPBS) for 2 min and permeabilized with 90% MeOH for 1 min at 10.5 hpi or 24 hpi. The fixed cells were labeled with primary antibodies, including rabbit anti-DacA (custom anti-peptide antibody targeting the C-terminal TRNERKTNPIISWMRKK prepared by Pacific Immunology, Ramona, CA), goat anti-major outer-membrane protein (MOMP; Meridian, Memphis, TN), and mouse or rabbit anti-six histidine tag (Genscript, Piscataway, NJ, #A00186-100 and Abcam, Cambridge, UK, #AB213204, respectively). To visualize the primary antibodies, donkey anti-goat (488) (Invitrogen, #A32814) donkey anti-mouse (405) (Invitrogen, #A48257), or donkey anti-rabbit antibodies (594) (Invitrogen, #A21207) were used as secondary antibodies. Coverslips were observed using a Zeiss AxioImager.Z2 with Apotome2 as noted in the figure legends.
 
-## IFU measurement
+### IFU measurement
 
 HeLa cells were infected with chlamydial transformants as above. At 10 hpi, 5 nM aTc was added or not to the culture medium. At the indicated times, infected cells were harvested in 1 mL 2SP media then frozen at –80 °C. After thawing the lysates, the samples were serially 1:10 diluted and used to infect HeLa cells seeded in 24-well plates. At 24 hpi, the number of GFP- expressing inclusions was counted from 30 fields of view to calculate the IFUs from the original sample. Three biological replicates were performed.
 
-## Cyclic di-AMP measurement
+### Cyclic di-AMP measurement
 
 HeLa cells were infected with the indicated chlamydial transformants as above. At 10 hpi, expression of the constructs was induced or not with 5 nM aTc, and, at 16 and 24 hpi, samples were prepared for measuring the level of cyclic di-AMP. After aspirating the media, the infected cell monolayers were washed with 1 X PBS and resuspended with B-Per Bacterial Cell Lysis Buffer (Pierce, Appleton, WI, #PI90078). Samples were vortexed for 1 min and then centrifuged at 13,300×g for 15 min at 4℃. The levels of cyclic di-AMP from the supernatants of the cell lysates were quantified using the Cyclic di-AMP ELISA kit (Cayman, Ann Arbor, MI, #501960-STRIP) following the manufacturer’s instructions (Underwood et al., 2014).
 
-## Preparation of RNA sequencing samples
+### Preparation of RNA sequencing samples
 
 Samples were prepared as reported previously (Hatch and Ouellette, 2023). Briefly, the transformants of dacAop and dacA-KD were infected into HeLa cells. At 10 hpi, the constructs were induced or not with 5 nM aTc. RNA samples were prepared from dacAop-infected cells and dacA-KD-infected cells at 16 hpi and 24 hpi, respectively. 20 μg RNA samples were treated with DNase to remove DNA contamination using DNA-free Turbo kit (Invitrogen, #AM1907) according to the manufacturer’s instructions. Ribosomal RNA was depleted from samples using the MICROBEnrich (Thermo, #AM1901) and MICROBExpress kits (Thermo, AM1905) following the manufacturer’s instructions. RNA samples were processed for sequencing by the UNMC Genomics Core Facility. The resultant libraries from the individual samples were multiplexed and subjected to 100 bp paired-read sequencing to generate approximately 60 million pairs of reads per sample on an Illumina NovaSeq 6000 sequencer in the UNMC Genomics Core facility. The original fastq format reads were trimmed by fqtirm tool (https://ccb.jhu.edu/software/fqtrim) to remove adapters, terminal unknown bases (Ns) and low quality 3’ regions (Phred score <30). The trimmed fastq files were processed by FastQC (Andrews, 2010) for quality control. Chlamydia trachomatis 434/Bu bacterial reference genome and annotation files were downloaded from Ensembl (http://bacteria.ensembl.org/Chlamydia_trachomatis_434_bu/Info/Index). Sequencing data were analyzed by the Bioinformatics and Systems Biology Core (BSBC). The trimmed fastq files were mapped to Chlamydia trachomatis 434/Bu by CLC Genomics Workbench 23 for RNAseq analyses.
 
-## Statistical analysis
+### Statistical analysis
 
 To analyze the statistical significance between uninduced and induced samples of qPCR and IFU data, we used two-sample equal variance Student’s t-test. For the levels of cyclic di-AMP data, we used two-sample equal variance Student’s t-test.

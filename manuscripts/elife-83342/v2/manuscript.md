@@ -14,16 +14,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04xfq0f34 Department of Cell Biology, Institute of Biomedical Engineering, RWTH Aachen University Medical School Aachen Germany
-2. https://ror.org/04xfq0f34 Helmholtz Institute for Biomedical Engineering, RWTH Aachen University Aachen Germany
-3. https://ror.org/04xfq0f34 Institute for Computational Genomics, RWTH Aachen University Medical School Aachen Germany
-4. https://ror.org/04xfq0f34 Department of Hematology, Oncology, Hemostaseology, and Stem Cell Transplantation, Faculty of Medicine, RWTH Aachen University Aachen Germany
+1. Department of Cell Biology, Institute of Biomedical Engineering, RWTH Aachen University Medical School Aachen Germany ([ROR:04xfq0f34](https://ror.org/04xfq0f34))
+2. Helmholtz Institute for Biomedical Engineering, RWTH Aachen University Aachen Germany ([ROR:04xfq0f34](https://ror.org/04xfq0f34))
+3. Institute for Computational Genomics, RWTH Aachen University Medical School Aachen Germany ([ROR:04xfq0f34](https://ror.org/04xfq0f34))
+4. Department of Hematology, Oncology, Hemostaseology, and Stem Cell Transplantation, Faculty of Medicine, RWTH Aachen University Aachen Germany ([ROR:04xfq0f34](https://ror.org/04xfq0f34))
 
 † Corresponding author
 
 ## Abstract
 
-Transcription factors play a determining role in lineage commitment and cell differentiation. Interferon regulatory factor 8 (IRF8) is a lineage determining transcription factor in hematopoiesis and master regulator of dendritic cells (DC), an important immune cell for immunity and tolerance. IRF8 is prominently upregulated in DC development by autoactivation and controls both DC differentiation and function. However, it is unclear how Irf8 autoactivation is controlled and eventually limited. Here, we identified a novel long non-coding RNA transcribed from the +32 kb enhancer downstream of Irf8 transcription start site and expressed specifically in mouse plasmacytoid DC (pDC), referred to as lncIrf8 . The lncIrf8 locus interacts with the lrf8 promoter and shows differential epigenetic signatures in pDC versus classical DC type 1 (cDC1). Interestingly, a sequence element of the lncIrf8 promoter, but not lncIrf8 itself, is crucial for mouse pDC and cDC1 differentiation, and this sequence element confers feedback inhibition of Irf8 expression. Taken together, in DC development Irf8 autoactivation is first initiated by flanking enhancers and then second controlled by feedback inhibition through the lncIrf8 promoter element in the +32 kb enhancer. Our work reveals a previously unrecognized negative feedback loop of Irf8 that orchestrates its own expression and thereby controls DC differentiation.
+Transcription factors play a determining role in lineage commitment and cell differentiation. Interferon regulatory factor 8 (IRF8) is a lineage determining transcription factor in hematopoiesis and master regulator of dendritic cells (DC), an important immune cell for immunity and tolerance. IRF8 is prominently upregulated in DC development by autoactivation and controls both DC differentiation and function. However, it is unclear how Irf8 autoactivation is controlled and eventually limited. Here, we identified a novel long non-coding RNA transcribed from the +32 kb enhancer downstream of Irf8 transcription start site and expressed specifically in mouse plasmacytoid DC (pDC), referred to as lncIrf8. The lncIrf8 locus interacts with the lrf8 promoter and shows differential epigenetic signatures in pDC versus classical DC type 1 (cDC1). Interestingly, a sequence element of the lncIrf8 promoter, but not lncIrf8 itself, is crucial for mouse pDC and cDC1 differentiation, and this sequence element confers feedback inhibition of Irf8 expression. Taken together, in DC development Irf8 autoactivation is first initiated by flanking enhancers and then second controlled by feedback inhibition through the lncIrf8 promoter element in the +32 kb enhancer. Our work reveals a previously unrecognized negative feedback loop of Irf8 that orchestrates its own expression and thereby controls DC differentiation.
 
 ## Introduction
 
@@ -45,13 +45,49 @@ Frequently, chromatin data, including ATAC-seq and/or ChIP-seq data, are used to
 
 ## Results
 
-## lncIrf8 marks a pDC-specific Irf8 enhancer element
+### lncIrf8 marks a pDC-specific Irf8 enhancer element
 
 Irf8 expression in DC development is subject to complex epigenetic regulation. Here, we used an integrated approach with RNA-seq, ATAC-seq, ChIP-seq and Capture-C to track the dynamics of gene expression, histone modification and chromatin conformation in the sequel MPP, CDP, pDC, cDC1, and cDC2 (Figure 1, Figure 1—figure supplements 1 and 2).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig1-v2.jpg)
+
+**Figure 1.:** (A) Gene expression and epigenetic signatures of Irf8 downstream region in MPP, CDP, pDC, all cDC, cDC1, and cDC2 are visualized by IGV browser. Gene expression was measured by RNA-seq, chromatin accessibility by ATAC-seq, H3K27ac and IRF8 binding by ChIP-seq. Positions of Irf8 3’ end, Irf8 enhancers, pDC specific lncIrf8 and cDC1 specific Tcons_00190258 lncRNA are indicated. For RNA-seq - and +strands are shown. Scale bar: 5 kb. (B) Physical interactions of Irf8 promoter with flanking sequences in MPP, CDP, pDC, cDC1, and cDC2 by nuclear-titrated (NuTi) Capture-C (turquoise), and CTCF binding by ChIP-seq in DC (Garber et al., 2012). Mean numbers of unique interactions normalized to a 300 kb region around the Irf8 promoter viewpoint (green triangle) and scaled by a factor of 1,000,000 are shown (n=2). The orientations of CTCF binding are indicated with blue and red arrows. Tcons_00190258 refers to the cDC1-specific lncRNA shown in (A). Scale bar: 100 kb. (C) Comparations of the chromatin interactions with Irf8 promoter in pDC, cDC1 and cDC2. Differential tracks were created by subtraction of the mean normalized tracks of (B). Pairwise comparisons are shown and color coded. Turquoise and orange tracks represent specific interactions with the Irf8 promoter in the indicated cell types. Scale bar: 100 kb. Purple bars and lines indicate the position of flanking enhancers relative to Irf8 TSS. The purple bars from left to right represent –50 kb, –34 kb, –26 kb, –16 kb,+27 kb,+32 kb,+38 kb,+41 kb,+47 kb,+56 kb and +62 kb enhancer, respectively (panels B and C). Irf8 +32 kb enhancer is highlighted by purple box.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Gene expression and epigenetic signatures of Irf8 gene and its flanking regions in MPP, CDP, pDC, all cDC, cDC1, and cDC2 are visualized by IGV browser. Gene expression by RNA-seq, chromatin interactions with Irf8 promoter by Capture-C, chromatin accessibility by ATAC-seq, histone modification (H3K27ac, H3K4me3, H3K4me1, H3K9me3) and TF binding (CTCF, IRF8 and PU.1) by ChIP-seq are as in Figure 1A and B. Positions of upstream and downstream Irf8 enhancers are in purple, Capture-C viewpoint (green triangle), Irf8 gene, pDC-specific lncIrf8 and cDC1 specific Tcons_00190258 lncRNA are indicated. The orientation of CTCF binding is indicated with blue and red arrows. pDC and cDC super enhancers (Grajales-Reyes et al., 2015) are indicated with black boxes. For RNA-seq – and +strands are shown. Scale bar: 20 kb.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) HoxB8 MPP were obtained by infection of bone marrow MPP with HoxB8 retrovirus and cultured in growth medium with SCF, Flt3L, hyper-IL-6, IGF-1, and β-estradiol (E2) (MPP/CDP culture). DC differentiation is induced in growth medium plus high concentration of Flt3L and reduced E2 for 2 days (transition phase). Then growth factors and E2 are removed and cells are further differentiated into DC with high concentration of Flt3L only (DC differentiation). (B) For nuclear-titrated (NuTi) Capture-C FACS sorted cells were fixed with formaldehyde and nuclei were isolated (step 1 and 2). Nuclei were permeabilized with SDS and digested with DpnII (step 3). DNA fragments in nuclei were re-ligated by T4 ligase (step 4) and DNA was extracted to obtain 3C libraries (step 5). The 3C libraries were subjected to sonication (~200 bp fragments), sequencing adaptors were added and DNA was then hybridized with 70 bp biotinylated oligos of the viewpoint, followed by streptavidin bead pull-down and PCR amplification (steps 6–10). Steps 8–10 were repeated to increase capture efficiency. Finally, the captured DNA was subjected to next-generation sequencing (step 11). This scheme was adapted from Figure 1A of Downes et al., 2022. (C) Comparison of the chromatin interactions with the Irf8 promoter by Capture-C (viewpoint, green triangle) between MPP, CDP, pDC, cDC1, and cDC2. Positions of Irf8 enhancers are indicated (purple). Pairwise comparisons are shown and color coded (turquoise vs orange) as in Figure 1C. Differential tracks were created by subtraction of the mean normalized tracks of Figure 1B. Scale bar: 100 kb.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A and B) UMAPs show the expression of lncIrf8 and Tcons_00190258 lncRNA and the indicated marker genes in BM and splenic pDC (Lin- CD11c+ Bst2+ Siglec-H+) from scRNA-seq data (GSE114313) (Rodrigues et al., 2018). pDC marker genes, Tcf4, Bst2 and Siglec-H; cDC marker genes, Zbtb46, Cx3cr1 and Xcr1. (C) Gene expression of lncIrf8 and Tcons_00190258 lncRNA in splenic DC subsets in vivo and in DC subsets generated in in vitro BM Flt3L culture. Bulk RNA-seq data of splenic pDC (CD11cint CD317hi CD11b-), cDC1 (CD11chi CD317low CD8+ CD11b-), and cDC2 (CD11chi CD317low CD8- CD11b-) were obtained from GSE188992 (Pang et al., 2022). The bulk RNA-seq data of DC from Flt3L culture are from this study. Gene expression is visualized by IGV browser. Positions of Irf8 3’ end, Irf8 enhancers, pDC-specific lncIrf8 and cDC1 specific Tcons_00190258 lncRNA are indicated. Scale bar: 5 kb.
 
 We performed de novo transcript assembly of the RNA-seq data and detected two previously unknown transcripts without coding potential downstream of Irf8: a pDC specific lncRNA (Tcons_00190250) in the following referred to as lncIrf8 and a cDC1 specific lncRNA (Tcons_00190258; Figure 1A and Figure 1—figure supplement 1). lncIrf8 and Tcons_00190258 show the same expression pattern in pDC and cDC1, respectively, in BM and spleen (Figure 1—figure supplement 3), as revealed by reanalyzing scRNA-seq and bulk RNA-seq data (Pang et al., 2022; Rodrigues et al., 2018). lncIrf8 is transcribed within an enhancer region located 32 kb downstream of the Irf8 TSS labeled by H3K27ac and H3K4me1 and occupied by DC differentiation-associated TF, such as IRF8 and PU.1 (Figure 1A and Figure 1—figure supplement 1). This region is largely devoid of H3K9me3, a chromatin modification frequently associated with heterochromatin, indicating an open chromatin configureuration in DC (Figure 1—figure supplement 1). In addition, sequences of this region have been implicated in DC development and referred to as +32 kb enhancer (Durai et al., 2019). Thus, we proceeded to study lncIrf8 in detail.
 
 ATAC-seq analysis revealed further details of the lncIrf8 region in CDP, pDC, cDC1 and cDC2 (Figure 1A, Figure 2A and Figure 1—figure supplement 1). In cDC1 the prominent ATAC-seq and IRF8 peaks mark the cDC1 specific +32 kb enhancer (Durai et al., 2019). In pDC the ATAC-seq peak is smaller and shifted further towards downstream but aligns well with the valley in the prominent H3K27ac peak. This ATAC-seq peak marks the lncIrf8 promoter and aligns with p300 (Durai et al., 2019) and H3K4me3 (Figure 2A and Figure 1—figure supplement 1). All this indicates that this chromatin region is open and transcriptionally active in pDC, enabling lncIrf8 transcription.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig2-v2.jpg)
+
+**Figure 2.:** (A) Genomic anatomy of lncIrf8 locus determined by 3’ and 5’ RACE PCR. Blue box, exon 2 and 3 (48 bp and 468 bp, respectively). The 1010 bp intron and polyA tail are shown. Data of RNA-seq, ATAC-seq, ChIP-seq of H3K27ac (enhancer mark) and H3K4me3 (active promoter mark, near TSS) are visualized by IGV browser for the indicated cell populations (pDC, all cDC, cDC1 and cDC2). Grey box, lncIrf8 promoter KO region; open box, cDC1 specific +32 kb enhancer by Durai et al., 2019. Irf8 +32 kb enhancer based on the H3K27ac enhancer mark is indicated with a purple line. Scale bar: 1 kb. (B) Gene expression of lncIrf8 and Irf8 in lncIrf8 promoter KO and control at day 0, 5, and 7 of Flt3L directed DC differentiation. Gene expression was determined by RT-qPCR and normalized to GAPDH. n=4. (C) Representative flow cytometry analysis of Flt3L directed DC differentiation of lncIrf8 promoter KO HoxB8 MPP and control (Lutz et al., 2022; Xu et al., 2022). pDC, all cDC, cDC1, and cDC2 were gated as in Figure 2—figure supplement 1E and are shown. Bar diagrams depict quantification of pDC, cDC1 and cDC2 normalized to living single cells on DC differentiation day 0, 3, 5, 7, and 9. n=6–7. (D) Representative phase-contrast microscopy images of lncIrf8 promoter KO HoxB8 MPP and control on day 7 of Flt3L directed DC differentiation. Scale bar: 200 μm. (E) Representative flow cytometry analysis of spontaneous DC differentiation of lncIrf8 promoter KO HoxB8 MPP and control with growth factors but without E2 (Lutz et al., 2022; Xu et al., 2022) at day 8. Gr1+ monocytes and CD11c+ DC are shown. Quantification of Gr1+ monocytes of living single cells on day 3, 6, 8, and 10 of spontaneous DC differentiation. n=6, lncIrf8 promoter KO; n=4, control. Empty gRNA vector or non-targeting gRNA vector HoxB8 MPP were used as controls. Data represent mean ± SD of at least three independent experiments with different HoxB8 MPP clones of lncIrf8 promoter KO and control without deletion. *p<0.05, **p<0.01, ***p<0.001, multiple t-tests. Data that have no difference (p>0.05) are not labeled.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mx-Cas9-GFP HoxB8 MPP were infected with 2 gRNA in RFP and RFP657 lentiviral vectors. Mouse interferon α (mIFNα) was applied for 4 hours to induce Cas9 and GFP expression. Cells were cultured for another 2 days and FACS sorted for GFP+ RFP+ RFP657+ cells and 3000 FACS sorted HoxB8 MPP were subjected to limiting dilution to obtain single cell colonies. Single cell HoxB8 MPP were genotyped by genomic PCR and clones with homozygous deletions in the lncIrf8 promoter were used for further studies. (B) Mx-Cas9-GFP mice contain a mIFNα inducible Cre recombinase that removes the stop cassette and allows Cas9 and GFP expression. Cas9 and GFP protein are separated by the 2 A self-cleaving peptide (P2A) and thus all GFP+ cells express Cas9. (C and D) Representative genotyping of lncIrf8 promoter KO in single-cell Mx-Cas9-GFP HoxB8 MPP. Homozygous deletions in lncIrf8 promoter (red) were detected by PCR and agarose gel electrophoresis (C). lncIrf8 promoter deletions determined by Sanger sequencing in three representative KO clones of (C) are depicted in (D). lncIrf8-F and lncIrf8-R refers to primers for genotyping and Sanger sequencing, and sequences for both directions, referred to F and R, of clones 19, 21, and 24 are shown. Positions of gRNA1 and gRNA2, which were used for generating the deletion in the lncIrf8 promoter, are indicated. (E) Gating strategy for Flt3L directed DC differentiation. CD11c+ DC were gated on CD11b- B220+ pDC, CD11b+ B220- cDC, CD11blow/- XCR1+ cDC1, and CD11b+ XCR1- cDC2. (F and G) Quantification of CD11c+ DC and cDC of panel (E) of living single cells in lncIrf8 promoter KO HoxB8 MPP and control on Flt3L directed DC differentiation at day 0, 3, 5, 7, and 9. n=6–7. Data represent mean ± SD of at least three independent experiments with different HoxB8 MPP clones of lncIrf8 promoter KO and control. *p<0.05, multiple t-tests. Data that have no difference (p>0.05) are not labeled.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic representation of lncIrf8 locus. The sequences deleted in the lncIrf8 promoter KO are indicated by a grey filled box and multiple potential IRF8 and PU.1 binding sites are depicted. The cDC1 specific +32 kb enhancer by Durai et al., 2019 is shown by an open box. Gene expression was by RNA-seq and IRF8 and PU.1 TF binding was by ChIP-seq as in Figure 1A, Figure 2A and Figure 1—figure supplement 1. Scale bar: 500 bp. (B) Sequence of lncIrf8 promoter and cDC1 specific +32 kb enhancer. Sequences underlined in black indicate gRNAs used for generating the deletions. Sequence motives for AP1-IRF composite elements (AICE), IRF8, PU.1, and BATF3 were indicated with green, orange, purple, and blue lines, respectively. lncIrf8 exon 2 is in turquoise; arrow indicates lncIrf8 transcriptional start site and direction. The shaded sequences represent the KO region of lncIrf8 promoter and the cDC1 specific +32 kb enhancer by Durai et al., 2019.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Gating strategy for spontaneous DC differentiation. Gr1+ monocytes, and the pDC, all cDC, cDC1 and cDC2 subsets from Gr1- CD11c+ cells were gated as in Figure 2—figure supplement 1E. (B) Representative phase-contrast microscopy images of lncIrf8 promoter KO HoxB8 MPP and control on spontaneous DC differentiation (-E2) day 8. Scale bar: 200 μm. (C–G) Quantification of CD11c+ DC, pDC, all cDC, cDC1 and cDC2 of panel (A) of living single cells in lncIrf8 promoter KO HoxB8 MPP and control on spontaneous DC differentiation (-E2) day 3, 6, 8, and 10. n=6 for lncIrf8 promoter KO; n=4 for KO control. Data represent mean ± SD of at least three independent experiments with different HoxB8 MPP clones of lncIrf8 promoter KO and control without deletion. *p<0.05, **p<0.01, ***p<0.001, multiple t-tests. Data that have no difference (p>0.05) are not labeled. (H) Quantification of cDC2 normalized to CD11c+ cells of (G) at days 6, 8, and 10. Spontaneous DC differentiation of control cells progressed slower than differentiation of lncIrf8 promoter KO cells and therefore a lower frequency of cDC2 was observed at day 6. At later time points lncIrf8 promoter KO left cDC2 differentiation unaffected. (I) Gating strategy for identification of Gr1+ monocytes upon spontaneous DC differentiation in panel (A) and Figure 2E. Mouse BM cells were used and Gr1+ monocytes (Mo) were gated as 7-AAD- CD11b+ CD11c- Ly6C+ Ly6G-. Neutrophils (Neut) were gated as 7-AAD- CD11b+ CD11c- Ly6Clow/- Ly6G+ . (J) Representative flow cytometry analysis of Gr1+ monocytes at day 6 of spontaneous DC differentiation of lncIrf8 promoter KO and control. Cells were gated as in panel (I).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Position of cDC1 specific +32 kb enhancer. Data of ATAC-seq, ChIP-seq of H3K27ac (enhancer mark) are visualized by IGV browser for the indicated cell populations (pDC, all cDC, cDC1, and cDC2). Open box, cDC1 specific +32 kb enhancer by Durai et al., 2019; grey box, lncIrf8 promoter KO region; Irf8 +32 kb enhancer based on the H3K27ac enhancer mark is indicated with a purple line. Scale bar: 1 kb. (B and C) Representative genotyping of cDC1 specific +32 kb enhancer KO in single-cell Mx-Cas9-GFP HoxB8 MPP. Homozygous deletions in cDC1 specific +32 kb enhancer KO (red) were detected by PCR and agarose gel electrophoresis (B). cDC1 specific +32 kb enhancer KO deletions determined by Sanger sequencing in five representative KO clones of (B) are depicted in (C). cDC1 +32 kb-F1 and cDC1 +32 kb-R refers to primers for genotyping. Sanger sequencing was performed from on both DNA strands: cDC1 +32 kb-F2 and cDC1 +32 kb-R was used for forward and reverse sequencing, respectively. Clones 1–14, 1–35, 1–51, 1–61, and 2–56 are shown. Positions of gRNAs used for generating the deletion of cDC1 +32 kb enhancer KO are indicated. gRNA-KO1-5' and gRNA-KO1-3' are from Durai et al., 2019; gRNA-KO2-5' and gRNA-KO2-3' were designed in the present study. (D) Gene expression of lncIrf8 and Irf8 in cDC1 specific +32 kb enhancer KO and control at day 0 and 7 of Flt3L directed DC differentiation. n=6, cDC1 specific +32 kb enhancer KO; n=4, control. (E) Representative flow cytometry analysis of Flt3L directed DC differentiation of cDC1 specific +32 kb enhancer KO HoxB8 MPP and control. pDC, all cDC, cDC1, and cDC2 were gated as in Figure 2—figure supplement 1E and are shown. Bar diagrams on the left depict quantification of pDC, cDC1 and cDC2 normalized to CD11c+ cells on DC differentiation day 7 and 9. Bar diagrams on the right depict CD11c+ DC and all cDC. CD11c+ DC were gated on living single cells. Frequencies of pDC were compromised in +32 kb enhancer KO at day 7, however this was not statistically significant. n=6, cDC1 specific +32 kb enhancer KO; n=4, control. (F) Representative flow cytometry analysis of spontaneous DC differentiation of cDC1 specific +32 kb enhancer KO and control with growth factors but without E2 at day 8. Gr1+ monocytes and CD11c+ DC are shown. Quantification of Gr1+ monocytes of living single cells on days 3, 6, 8, and 10 of spontaneous DC differentiation. n=6, cDC1 specific +32 kb enhancer KO; n=4, control. Empty gRNA vector or non-targeting gRNA vector HoxB8 MPP were used as controls. Data represent mean ± SD of three independent experiments with different HoxB8 MPP clones of cDC1 specific +32 kb enhancer KO and control without deletion. Differentiation kinetics of clones were normatized to control without deletion if required. *p<0.05, **p<0.01, ****p<0.0001, multiple t-tests. Data that have no difference (p>0.05) are not labeled.
 
 Next, we determined the chromatin conformation of the Irf8 locus and the lncIrf8 region. We generated interaction profiles by nuclear-titrated (NuTi) Capture-C in MPP, CDP, pDC, cDC1, and cDC2 (Figure 1—figure supplement 2A and B) using Irf8 promoter as viewpoint. The Irf8 promoter shows multiple interactions with regions spanning up to ~100 kb upstream and downstream of Irf8 (Figure 1B and Figure 1—figure supplement 1). In pDC, the Irf8 promoter interactions are stronger with the upstream sequences than with downstream sequences (Figure 1C and Figure 1—figure supplement 2C). In cDC1 Irf8 promoter interactions are more confined to the regions downstream of Irf8 compared to MPP, CDP and pDC (Figure 1C and Figure 1—figure supplement 2C). This suggests that upstream and downstream sequences of Irf8 gene are involved in differentially regulating Irf8 expression and controlling the development of pDC and cDC1, respectively.
 
@@ -61,7 +97,7 @@ Surprisingly, in pDC H3K27ac at the lncIrf8 promoter is high, but this locus sho
 
 These observations warrant further studies and we thus proceeded to investigate the lncIrf8 locus in detail.
 
-## lncIrf8 promoter KO compromises pDC and cDC1 development
+### lncIrf8 promoter KO compromises pDC and cDC1 development
 
 First, we annotated lncIrf8. Our de-novo transcript assembly of RNA-seq data revealed different isoforms of lncIrf8, with the most prominent isoform comprising exon 2 and 3 (Figure 1A, Figure 2A and Figure 1—figure supplement 1). Additionally, 3' end and 5' end RACE PCR confirmed the anatomy of this lncIrf8 isoform: two exons, one intron, and a polyA tail (Figure 2A). As expected lncIrf8 is not conserved across species (data not shown), which is in line with the general characteristics of lncRNA. Then second, we deleted 300 bp in the lncIrf8 promoter by CRISPR/Cas9 editing in conditionally immortalized HoxB8 MPP (Figure 2A and Figure 2—figure supplement 1A–D). The lncIrf8 promoter is located in the Irf8 +32 kb enhancer region and is in close proximity to the cDC1 specific +32 kb enhancer (Durai et al., 2019; Figure 2A and Figure 2—figure supplement 2). The 300 bp deletion comprises the H3K4me3 promoter mark and is confined to open chromatin identified by ATAC-seq and positioned in the valley of the H3K27ac mark (Figure 2A). Additionally, it contains binding sites for IRF8, PU.1, and BATF3 TF, which are important for DC development (Figure 2A and Figure 2—figure supplement 2B).
 
@@ -75,11 +111,27 @@ The lncIrf8 promoter element is in close proximity to the cDC1 specific +32 kb e
 
 Given the novel phenotype of the lncIrf8 promoter KO, we proceeded to investigate the impact of the lncIrf8 promoter KO on DC differentiation in vivo in mice. We transplanted CD45.2 lncIrf8 promoter KO and CD45.2 control HoxB8 MPP into irradiated CD45.1 recipient mice (Figure 3—figure supplement 1A). DC in bone marrow and spleen were analyzed by flow cytometry on day 7 and 14 after cell transplantation (Figure 3, Figure 3—figure supplement 1A, B). In bone marrow, lncIrf8 promoter KO cells mostly differentiated into Gr1+ monocytes, and lower frequencies of all DC subsets were observed on day 7 for lncIrf8 promoter KO cells compared to control (Figure 3A–F). In spleen, frequencies of cell populations from lncIrf8 promoter KO and control were similar to bone marrow, including lower frequencies of all DC subsets for lncIrf8 promoter KO (Figure 3G–L). CD45.2 donor HoxB8 cells were largely lost at day 14 after cell transplantation (Figure 3B–F and Figure 3H–L).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative flow cytometry analysis of CD45.2 lncIrf8 promoter KO and control HoxB8 MPP in BM at day 7 after cell transplantation (for details see Figure 3—figure supplement 1A, B). Donor cell populations were gated from 7-AAD- CD45.2+ Lin- cells and Gr1+ monocytes, pDC, cDC1 and cDC2 are shown. (B–F) Quantification of Gr1+ monocytes, MHCII+ CD11c+ DC, pDC, cDC1, and cDC2 of living single cells in BM on day 7 and 14 after cell transplantation (n=3–4). (G) Representative flow cytometry analysis of lncIrf8 promoter KO and control HoxB8 MPP in spleen at day 7 after cell transplantation. Gating was as in panel (A). (H–L) Quantification of Gr1+ monocytes, MHCII+ CD11c+ DC, pDC, cDC1 and cDC2 on day 7 and 14 after cell transplantation (n=3–4). Data represent mean ± SD from 3 to 4 mice. *p<0.05, **p<0.01, ***p<0.001, multiple t-tests. Data that have no difference (p>0.05) are not labeled.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Workflow of HoxB8 MPP transplantation. CD45.1 recipient mice were sublethal irradiated and injected with CD45.2 lncIrf8 promoter KO and control HoxB8 MPP. Seven and 14 days after cell transplantation, mice were sacrificed and cells from bone marrow and spleen were isolated and subjected to flow cytometry analysis for DC subsets. (B) Gating strategy for CD45.2 DC subsets following transplantation of CD45.2 lncIrf8 promoter KO HoxB8 MPP into CD45.1 recipient mice. 7-AAD- CD45.2+ lineage- donor cells were gated on Gr1+ monocytes, Gr1- Siglec H+ pDC, and Gr1-Siglec H- CD11c+ MHCII+ DC, and further on cDC1 and cDC2 subsets. cDC1 are Gr1- Siglec H- MHCII+ CD11c+ CD11blow/- XCR1+ and cDC2 are Gr1- Siglec H- MHCII+ CD11c+ CD11b+ XCR1-. The lineage cocktail (Lin) was: Ter119, CD19, CD3e, NK1.1, F4/80.
+
 Thus, lncIrf8 promoter KO compromised pDC and cDC1 development both in vitro and in vivo.
 
-## lncIrf8 acts as an indicator of Irf8 +32 kb enhancer activity in pDC
+### lncIrf8 acts as an indicator of Irf8 +32 kb enhancer activity in pDC
 
 Knockout of lncIrf8 promoter and thus abolishment of lncIrf8 expression severely diminished pDC and cDC1 development in vitro and in vivo. The lncIrf8 promoter is located within Irf8 +32 kb enhancer (Durai et al., 2019) and thus it was important to determine whether lncIrf8 itself plays a role in regulating pDC and cDC1 development. To address this question, we (i) overexpressed lncIrf8 in wild-type MPP and (ii) re-expressed lncIrf8 in lncIrf8 promoter KO MPP and monitored its impact on DC development (Figure 4 and Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig4-v2.jpg)
+
+**Figure 4.:** (A and B) Schematic representation of lncIrf8 overexpression in WT HoxB8 MPP and of plncIrf8-pA (lncIrf8 overexpression) and pGFP-pA (control) plasmids. A polyA signal AATAAA for transcription termination was inserted at the 3’ end of lncIrf8 and GFP. (C) Gene expression of lncIrf8 and Irf8 in plncIrf8-pA and pGFP-pA HoxB8 MPP on day 0, 3, 5, and 7 of Flt3L directed DC differentiation (n=4–5). Gene expression was by RT-qPCR and normalized to GAPDH. (D) Representative flow cytometry of DC subsets at day 5 and 9 of Flt3L directed DC differentiation of plncIrf8-pA and pGFP-pA HoxB8 MPP. Quantification of pDC and cDC1 of living single cells on Flt3L directed DC differentiation day 0, 3, 5, 7, and 9 (n=5) is shown. Gating for pDC and cDC1 was as in Figure 2—figure supplement 1E. (E) Heatmap representation of DC subsets of panel (D) at day 0, 3, 5, 7, and 9 of DC differentiation. Red, high frequency; white, intermediate frequency and blue, low frequency. Data represent mean ± SD of at least three independent experiments with different HoxB8 MPP clones of plncIrf8-pA and pGFP-pA. *p<0.05, **p<0.01, ***p<0.001, multiple t-tests. Data that have no difference (p>0.05) are not labeled.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) WT HoxB8 MPP were infected with plncIrf8-pA (lncIrf8 overexpression) and pGFP-pA (control) lentiviral particles, followed by limiting dilution to obtain single cell colonies. HoxB8 MPP clones were screened by genomic PCR and the positive colonies were subjected to DC differentiation. (B–D) Quantification of CD11c+ DC, all cDC and cDC2 of living single cells in plncIrf8-pA and pGFP-pA HoxB8 MPP on day 0, 3, 5, 7, and 9 of Flt3L directed DC differentiation (n=5). Gating was as in Figure 2—figure supplement 1E. Data represent mean ± SD of at least three independent experiments with different HoxB8 MPP clones of plncIrf8-pA and pGFP-pA. Data were calculated by multiple t-tests and data that have no difference (p>0.05) are not labeled. (E) Schematic representation of lncIrf8 rescue in lncIrf8 promoter KO HoxB8 MPP (bulk). (F) Gene expression of lncIrf8 in lncIrf8 promoter KO and KO rescue HoxB8 MPP. Gene expression was by RT-qPCR and normalized to GAPDH. Data represent mean ± SD of at least three independent experiments and were calculated by unpaired t test. *p<0.05. (G) Representative flow cytometry analysis of DC subsets pDC, cDC1 and cDC2 at day 5 and 9 of Flt3L directed DC differentiation of lncIrf8 promoter KO rescue and control (KO). (H) DC subsets pDC, all cDC, cDC1 and cDC2 were calculated in percent of living single cells in lncIrf8 promoter KO and KO rescue on day 0, 3, 5, 7, and 9 of Flt3L directed DC differentiation and data are represented in heat map format; n=3–4 from at least three independent experiments. Red, high frequency; white, intermediate frequency and blue, low frequency.
 
 lncIrf8 cDNA was cloned into a polyA lentivirus vector. An ‘AATAAA’ stop signal (Alvarez-Dominguez et al., 2015) was inserted at the 3’ end of lncIrf8 to avoid longer transcripts than lncIrf8 (plncIrf8-pA, Figure 4B). The respective pGFP-pA vector was used as control. lncIrf8 overexpressing single-cell clones were generated by limiting dilution (Figure 4—figure supplement 1A), expanded and subjected to DC differentiation. As expected lncIrf8 expression was markedly increased in plncIrf8-pA infected cells compared to control, while there were no significant differences in Irf8 expression between the two groups during DC differentiation (Figure 4C). Further, there were no differences in the frequencies of pDC, cDC1, and cDC2 between plncIrf8-pA infected cells and controls (Figure 4D and E, Figure 4—figure supplement 1B–D), indicating that lncIrf8 overexpression has no effect on Irf8 expression and DC differentiation.
 
@@ -87,9 +139,17 @@ To further extend this observation we performed a lncIrf8 rescue in lncIrf8 prom
 
 In a nutshell, lncIrf8 overexpression and rescue had no effects on pDC and cDC1 development. This strongly suggests that lncIrf8 has no activity on its own in DC differentiation but rather acts as an indicator for the activation state of sequences within the Irf8 +32 kb enhancer. In addition, the lncIrf8 promoter comprises a sequence element with impact on pDC and cDC1 development.
 
-## Activation of lncIrf8 promoter promotes cDC1 development
+### Activation of lncIrf8 promoter promotes cDC1 development
 
 Next, we proceeded to study the impact of the sequence element within lncIrf8 promoter on Irf8 expression and DC differentiation using CRISPR activation by dCas9-VP64 (Figure 5A and Figure 5—figure supplement 1). dCas9-VP64 is a mutated Cas9 deficient in nuclease activity, which is fused to the VP64 effector domain and confers gene activation. Targeting of dCas9-VP64 to the lncIrf8 promoter was achieved with specific gRNAs (Figure 5—figure supplement 1I). We also included targeting dCas9-VP64 to the Irf8 promoter to study the interplay with the lncIrf8 promoter. FACS sorted HoxB8 MPP expressing dCas9-VP64 and gRNA were subjected to DC differentiation and analyzed for lncIrf8 and Irf8 expression and DC subset composition (Figure 5B–E and Figure 5—figure supplement 1A–E).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic representation of lncIrf8 and Irf8 promoter activation (top and middle, respectively) by CRISPR activation with dCas9-VP64. gRNAs were positioned upstream of lncIrf8 and Irf8 TSS for gene activation. dCas9-VP64 cells with non-targeting gRNA were used as control (bottom). Green and purple wavy lines represent Irf8 and lncIrf8 RNA, respectively. The number of wavy lines indicates levels of gene transcription determined by RT-qPCR in (C). Different length of blue arrows represents the frequencies of pDC and cDC1 according to panel B, D and E. Nc, No change; Ctrl, Control. (B) Representative flow cytometry analysis of CRISPR activation targeting the lncIrf8 and Irf8 promoters at day 7 and 9 of Flt3L directed DC differentiation. Two non-targeting gRNAs were used as controls and one representative non-targeting gRNA is shown (Non-targeting-VP64). Top row, CD11b+ B220- cDC and CD11b- B220+ pDC at day 7 of Flt3L directed DC differentiation; bottom row, CD11blow/- XCR1+ cDC1 and CD11b+ XCR1- cDC2 at day 9 of DC differentiation. For gating strategy see Figure 5—figure supplement 1B. (C) Gene expression of lncIrf8 and Irf8 in lncIrf8-VP64, Irf8-VP64 and non-targeting-VP64 HoxB8 MPP on day 0, 5, 7, and 9 of Flt3L directed DC differentiation (n=3). Gene expression analysis was by RT-qPCR and data are normalized to GAPDH. Data represent mean ± SD of three independent experiments. *p<0.05, **p<0.01, ****p<0.0001, two-way ANOVA, Tukey’s multiple comparisons test. Data that have no difference (p>0.05) are not labeled. (D and E) Quantification of pDC and cDC1 in percent of living single cells as in panel (B) on various days of Flt3L directed DC differentiation (n=3). Non-targeting-VP64 refers to both non-targeting-VP64 controls (n=6). Data represent mean ± SD of 3 independent experiments. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-way ANOVA, Tukey’s multiple comparisons test. Data that have no difference (p>0.05) are not labeled.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) WT HoxB8 MPP were infected with dCas9-VP64-GFP and KRAB-dCas9-GFP lentiviral vectors followed by 1st FACS sorting for GFP+ cells to obtain dCas9-VP64-GFP and dCas9-KRAB-GFP HoxB8 MPP. Gene targeting of dCas9-VP64 and dCas9-KRAB was achieved by infection of MPP with specific gRNA vectors and 2nd FACS sorting for GFP+ RFP+ cells. (B) Gating strategy for DC subsets in CRISPR/dCas9 HoxB8 MPP upon DC differentiation. DC subsets were gated from 7-AAD- CD11c+ cells, and further gated on all cDC, cDC1, cDC2 and pDC as in Figure 2—figure supplement 1E. (C–H) Quantification of CD11c+ cells, all cDC, and cDC2 of panel (B) in percent of living single cells in dCas9-VP64 cells and dCas9-KRAB cells on day 0, 3, 5, 7, and 9 of Flt3L directed DC differentiation (n=3). Non-targeting-VP64 and Non-targeting-KRAB refers to non-targeting-VP64 and KRAB controls, respectively (n=6). Data represent mean ± SD of 3 independent experiments. *P<0.05, **P<0.01, ***P<0.001, ****P<0.0001, two-way ANOVA, Tukey’s multiple comparisons test. Data that have no difference (P>0.05) are not labeled. (I) Gene expression and epigenetic landscape of Irf8 gene and its flanking regions in MPP, CDP, pDC, all cDC, cDC1 and cDC2 are depicted as in Figure 1A and Figure 1—figure supplement 1. Irf8 +27 kb and +32 kb enhancer (purple line and box, respectively), transcription start sites of Irf8 (Irf8-TSS) and lncIrf8 (lncIrf8-TSS) are indicated. Bottom, positions of gRNAs used in this study: gRNA1 and gRNA2, lncIrf8 promoter KO by the CRISPR/Cas9 system; Irf8-VP64 and KRAB gRNAs for activation and repression of Irf8 promoter, respectively; lncIrf8-VP64 and KRAB gRNAs for activation and repression of lncIrf8 promoter, respectively.
 
 Activation of the lncIrf8 promoter by dCas9-VP64 caused a massive increase of lncIrf8 expression at DC differentiation day 0 (Figure 5C). The activation of the lncIrf8 promoter led also to Irf8 upregulations at DC differentiation day 5, 7, and 9 compared to non-targeting control (Figure 5A and C). This demonstrates the positive impact of the lncIrf8 promoter element on Irf8 expression during DC differentiation and is in accord with the physical interaction of lncIrf8 and Irf8 promoters by Capture-C (Figure 1B and Figure 1—figure supplement 1).
 
@@ -99,13 +159,13 @@ Activation of Irf8 promoter by dCas9-VP64 increased Irf8 expression at DC differ
 
 Taken together our CRISPR activation of the lncIrf8 and Irf8 promoters by dCas9-VP64 suggest a negative feedback loop of Irf8 for pDC and cDC1 development.
 
-## Negative feedback regulation of lncIrf8 and Irf8 promoters controls DC differentiation
+### Negative feedback regulation of lncIrf8 and Irf8 promoters controls DC differentiation
 
 To directly investigate the negative feedback loop of Irf8 regulation, we repressed lncIrf8 and Irf8 promoters by targeted repression with dCas9-KRAB and analyzed the DC subsets during DC differentiation (Figure 6A–F and Figure 5—figure supplement 1A, B, F-H). dCas9-KRAB is a nuclease deficient Cas9 fused to the KRAB effector domain, which confers gene repression when positioned with specific gRNA (Figure 5—figure supplement 1I).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig6-v2.jpg)
 
-**Figure 6.:** lncIrf8 promoter compromises pDC and cDC1 development.(A) Schematic representation of lncIrf8 and Irf8 promoter repression (top and middle, respectively) by CRISPR interference with dCas9-KRAB. gRNAs were positioned downstream of lncIrf8 and Irf8 TSS to block gene transcription. dCas9-KRAB cells with non-targeting gRNA were used as control (bottom). Green and purple wavy lines represent Irf8 and lncIrf8 RNA, respectively. The number of wavy lines indicates levels of gene transcription determined by RT-qPCR in (C). (B) Representative flow cytometry analysis of CRISPR interference targeting the lncIrf8 and Irf8 promoters at day 5 and 7 of Flt3L directed DC differentiation. Two non-targeting gRNAs were used as controls and one representative non-targeting gRNA is shown (Non-targeting-KRAB). cDC and pDC at day 5 and cDC1 and cDC2 at day 7 of Flt3L directed DC differentiation are shown similar to Figure 5B. (C) Gene expression of lncIrf8 and Irf8 in lncIrf8-KRAB, Irf8-KRAB and non-targeting-KRAB HoxB8 MPP on day 0, 3, 5, and 7 of Flt3L directed DC differentiation (n=3). Gene expression analysis was by RT-qPCR and data are normalized to GAPDH. Data represent mean ± SD of three independent experiments. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-way ANOVA, Tukey’s multiple comparisons test. Data that have no difference (p>0.05) are not labeled. (D and E) Quantification of pDC and cDC1 in percent of living single cells as in panel (B) on various days of Flt3L directed DC differentiation (n=3). Non-targeting-KRAB refers to both non-targeting-KRAB controls (n=6). Data represent mean ± SD of three independent experiments. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-way ANOVA, Tukey’s multiple comparisons test. Data that have no difference (p>0.05) are not labeled. (F) Representative phase-contrast microscopy image of lncIrf8-KRAB, Irf8-KRAB and non-targeting-KRAB on day 7 of Flt3L directed DC differentiation. Scale bar: 200 μm.
+**Figure 6.:** (A) Schematic representation of lncIrf8 and Irf8 promoter repression (top and middle, respectively) by CRISPR interference with dCas9-KRAB. gRNAs were positioned downstream of lncIrf8 and Irf8 TSS to block gene transcription. dCas9-KRAB cells with non-targeting gRNA were used as control (bottom). Green and purple wavy lines represent Irf8 and lncIrf8 RNA, respectively. The number of wavy lines indicates levels of gene transcription determined by RT-qPCR in (C). (B) Representative flow cytometry analysis of CRISPR interference targeting the lncIrf8 and Irf8 promoters at day 5 and 7 of Flt3L directed DC differentiation. Two non-targeting gRNAs were used as controls and one representative non-targeting gRNA is shown (Non-targeting-KRAB). cDC and pDC at day 5 and cDC1 and cDC2 at day 7 of Flt3L directed DC differentiation are shown similar to Figure 5B. (C) Gene expression of lncIrf8 and Irf8 in lncIrf8-KRAB, Irf8-KRAB and non-targeting-KRAB HoxB8 MPP on day 0, 3, 5, and 7 of Flt3L directed DC differentiation (n=3). Gene expression analysis was by RT-qPCR and data are normalized to GAPDH. Data represent mean ± SD of three independent experiments. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-way ANOVA, Tukey’s multiple comparisons test. Data that have no difference (p>0.05) are not labeled. (D and E) Quantification of pDC and cDC1 in percent of living single cells as in panel (B) on various days of Flt3L directed DC differentiation (n=3). Non-targeting-KRAB refers to both non-targeting-KRAB controls (n=6). Data represent mean ± SD of three independent experiments. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-way ANOVA, Tukey’s multiple comparisons test. Data that have no difference (p>0.05) are not labeled. (F) Representative phase-contrast microscopy image of lncIrf8-KRAB, Irf8-KRAB and non-targeting-KRAB on day 7 of Flt3L directed DC differentiation. Scale bar: 200 μm.
 
 Targeted repression of the Irf8 promoter decreased Irf8 expression as expected but massively increased lncIrf8 expression compared to non-targeting control (Figure 6A and C). This is very much in line with Irf8 impacting lncIrf8 expression by a negative feedback loop. Positioning the dCas9-KRAB repressor in the IncIRF8 promoter led to downregulation of both Irf8 and lncIrf8 expression, which confirms the lncIrf8 promoter element acting on the Irf8 promoter (Figure 6A and C).
 
@@ -115,7 +175,7 @@ All these findings support a model of Irf8 regulating its own expression by a ne
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/83342/elife-83342-fig7-v2.jpg)
 
-**Figure 7.:** Irf8 through +32 kb enhancer governs DC differentiation.(A) Schematic representation of Irf8 gene regulation during DC differentiation. Irf8 transcription is induced at the CDP stage by its flanking enhancers, including the +32 kb enhancer, and is further increased in pDC and cDC1 (green wavy lines; the number of wavy lines indicates levels of gene transcription as in Figure 5A and Figure 6A). The increase in Irf8 expression is due to an increase in the interactions of the Irf8 promoter with upstream and downstream sequences. Irf8 promoter interactions with upstream sequences are stronger in pDC and Irf8 promoter interactions with downstream sequences are stronger in cDC1. In pDC the +32 kb enhancer marked by lncIrf8 is less repressed by IRF8 repressor complex compared to cDC1, resulting in particularly high Irf8 expression and lncIrf8 transcription in pDC (purple wavy lines). This negative feedback inhibition of IRF8 on the +32 kb enhancer allows Irf8 to regulate its own expression and thus DC differentiation. (B) Negative feedback regulation of Irf8 through the +32 kb enhancer in cDC1 and pDC specification as described in panel (A). The RNA-seq and IRF8 ChIP-seq data are shown as in Figure 1A, Figure 1—figure supplement 1 and Figure 2—figure supplement 2A. (C) Recapitulating Irf8 and lncIrf8 transcription by repression and activation of the Irf8 +32 kb enhancer in HoxB8 MPP by targeted dCas9-KRAB and dCas9-VP64, respectively. Green and purple wavy lines represent gene expression as described in Figure 5A and Figure 6A.
+**Figure 7.:** (A) Schematic representation of Irf8 gene regulation during DC differentiation. Irf8 transcription is induced at the CDP stage by its flanking enhancers, including the +32 kb enhancer, and is further increased in pDC and cDC1 (green wavy lines; the number of wavy lines indicates levels of gene transcription as in Figure 5A and Figure 6A). The increase in Irf8 expression is due to an increase in the interactions of the Irf8 promoter with upstream and downstream sequences. Irf8 promoter interactions with upstream sequences are stronger in pDC and Irf8 promoter interactions with downstream sequences are stronger in cDC1. In pDC the +32 kb enhancer marked by lncIrf8 is less repressed by IRF8 repressor complex compared to cDC1, resulting in particularly high Irf8 expression and lncIrf8 transcription in pDC (purple wavy lines). This negative feedback inhibition of IRF8 on the +32 kb enhancer allows Irf8 to regulate its own expression and thus DC differentiation. (B) Negative feedback regulation of Irf8 through the +32 kb enhancer in cDC1 and pDC specification as described in panel (A). The RNA-seq and IRF8 ChIP-seq data are shown as in Figure 1A, Figure 1—figure supplement 1 and Figure 2—figure supplement 2A. (C) Recapitulating Irf8 and lncIrf8 transcription by repression and activation of the Irf8 +32 kb enhancer in HoxB8 MPP by targeted dCas9-KRAB and dCas9-VP64, respectively. Green and purple wavy lines represent gene expression as described in Figure 5A and Figure 6A.
 
 In our model, we propose an IRF8 repressor complex that differentially acts on the Irf8 +32 kb enhancer element in a DC subset specific manner to limit Irf8 autoactivation. In cDC1 the +32 kb enhancer is repressed by the IRF8 repressor complex through negative feedback inhibition (prominent IRF8 binding in cDC by ChIP-seq; Figure 7A and B), which limits Irf8 autoactivation and expression. Conversely, in pDC there is less IRF8 repressor complex binding to the +32 kb enhancer, which results in high Irf8 and lncIrf8 transcription (Figure 7A and B). Recapitulating the IRF8 repressor complex with dCas9-KRAB and targeting lncIrf8 promoter in the +32 kb enhancer reduced Irf8 expression (Figure 7C). Conversely, activation of the +32 kb enhancer boosted lncIrf8 and Irf8 expression (Figure 7C). Thus, an intricate feedback loop of IRF8 on the +32 kb enhancer orchestrates Irf8 expression and thus DC differentiation.
 
@@ -141,19 +201,19 @@ In conclusion, by analyzing the gene expression and epigenetic profiles of the I
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 Wild type C57BL/6, Mx-Cas9-GFP knock-in mice (Kühn et al., 1995; Platt et al., 2014; Xu et al., 2022), and CD45.1 recipient C57BL/6 mice were used in this study. Mice were kept under specific pathogen-free conditions in the central animal facility of RWTH Aachen University Hospital, Aachen, Germany. All the animal experiments were approved by the local authorities of the German State North Rhine-Westphalia, Germany according to the German animal protection law (reference number: 81–02.04.2018 .A228).
 
-## Cell culture
+### Cell culture
 
 Multipotent progenitors (MPP) were obtained from mouse bone marrow and expanded in vitro with a two-step protocol as described in Felker et al., 2010. Conditionally immortalized HoxB8 MPP were generated by retrovirus infection of bone marrow cells from wild-type or Mx-Cas9-GFP knock-in mice with an estrogen (E2) inducible HoxB8 estrogen receptor (ER) fusion gene (HoxB8-ER) (Redecke et al., 2013; Xu et al., 2022). MPP were grown in RPMI 1640 medium with 10% FCS (Gibco, 10270106), 100 U/ml penicillin/streptomycin, 2 mM L-glutamine and 50 μM β-ME with a four-cytokine cocktail of SCF, Flt3 ligand (Flt3L), IGF-1, and IL-6/soluble IL-6 receptor fusion protein (hyper-IL-6) as before (referred to as MPP growth medium) (Felker et al., 2010; Lutz et al., 2022; Xu et al., 2022) (Appendix 1-key resources table). E2 (1 µM) was added to activate HoxB8-ER and to maintain the conditionally immortalized state of HoxB8 MPP. Cell density was adjusted to 1.5 million cells/ml every day. HEK293T cells for retrovirus and lentivirus production were grown in DMEM supplemented with 10% FCS (PAA, A01125-499), 100 U/ml penicillin/streptomycin, 2 mM L-glutamine (Appendix 1-key resources table).
 
-## In vitro DC differentiation with HoxB8 MPP
+### In vitro DC differentiation with HoxB8 MPP
 
 HoxB8 MPP were differentiated into DC using a two-step protocol modified from Felker et al., 2010 and described in Lutz et al., 2022; Xu et al., 2022. In brief, 0.75 million cells/ml were grown in MPP growth medium with 50 ng/ml Flt3L (Peprotech, 300–19) and reduced E2 (0.01 μM) for two days and cell density was kept to 0.75 million cells/ml. To induce DC differentiation, HoxB8 MPP were then washed with PBS to remove cytokines and E2, and cultured in RPMI 1640 medium supplemented with FCS, penicillin/streptomycin, L-glutamine, β-ME (same concentrations as above), and Flt3L (50 ng/ml, Peprotech) (referred to as DC differentiation day 0). Partial medium changes were performed on differentiation day 3 and 6. Spontaneous DC differentiation of HoxB8 MPP was achieved simply by removing E2 from growth medium (SCF, Flt3L, IGF1 and hyper-IL6), and culturing the cells at 1.5 million cells/ml (Lutz et al., 2022; Xu et al., 2022).
 
-## Nuclear-Titrated (NuTi) Capture-C
+### Nuclear-Titrated (NuTi) Capture-C
 
 Wild-type bone marrow cell-derived MPP, CDP, cDC1, cDC2, and pDC were generated in vitro with the two-step protocol as described in Felker et al., 2010. Cell populations were sorted by BD FACSAria IIu or BD FACSMelody, MPP are Gr1- CD117hi CD135low/-, CDP are Gr1- CD117int CD135+ CD115+, cDC1 are CD11c+ CD11blow/- XCR1+, cDC2 are CD11c+ CD11b+ XCR1-, pDC are CD11c+ CD11b- B220+.
 
@@ -163,31 +223,31 @@ For Irf8 promoter viewpoint 2 oligonucleotide probes targeting Irf8 promoter wer
 
 To enrich for fragments containing ligation events with Irf8 promoter viewpoint, NuTi Capture-C was performed as previously described (Downes et al., 2021; Downes et al., 2022). Briefly, the 3 C libraries prepared from MPP, CDP, cDC1, cDC2 and pDC were sonicated using Covaris S220 to an average size of ~200 bp using standard settings recommended by the manufacturer (time: 180 s, duty cycle: 10%, peak incident power: 175 W, cycles per burst: 200, temperature: 5–9°C). End repair was performed with the NEBNext Ultra II kit (New England Biolabs, E7645S) using 2 µg of sonicated 3 C library in duplicate for each sample. Illumina NEBNext Indices (New England Biolabs, E7500S, and E7335S) were added with a total of 6 cycles of amplification to allow for multiplexing. After this step, duplicates were pooled to increase sample complexity. We enriched samples as per NuTi Capture-C protocol, with two capture rounds in a multiplexed reaction, using 2 µg of each indexed sample as an input for the first capture. The hybridization with biotinylated probes was performed with the KAPA Hyper Capture Reagent Kit (Roche, 9075828001). Each ssDNA biotinylated probe was used at a concentration of 2.9 nM, with a final pool concentration of 5.8 nM, and 4.5 µl of the pooled oligonucleotides were used per sample. Captured DNA was pulled-down with M-270 Streptavidin Dynabeads (Invitrogen, 65305), washed and amplified off the beads with a total of PCR 14 cycles. The DNA obtained after the first capture was used as an input in the second capture round. The experiments were performed for the first and the second biological replicate separately, and then sequenced with NextSeq 550 Illumina System with 300 paired-end or 150 paired-end, respectively.
 
-## NuTi Capture-C data analysis
+### NuTi Capture-C data analysis
 
 The Capture-C data was analyzed with CapCruncher (v0.1.1a1) pipeline (https://github.com/sims-lab/CapCruncher; sims-lab, 2022) in capture mode (Downes et al., 2022). The reads were aligned to the mm9 genome assembly with Bowtie2 (Langmead and Salzberg, 2012), with specific options: -p6--very-sensitive. Viewpoint coordinates used were: chr8:123,259,948–123,260,530, 1000 bp around viewpoint was excluded. The data were normalized to ~300 kb region around the viewpoint (chr8:123,132,865–123,433,117).
 
 The Capture-C profiles in Figure 1 and Figure 1—figure supplement 1 show the mean number of unique interactions in two biological replicates, normalized to ~300 kb region around the viewpoint. Differential tracks were created by subtraction of the mean normalized tracks.
 
-## ATAC-seq, ChIP-seq, RNA-seq, and scRNA-seq
+### ATAC-seq, ChIP-seq, RNA-seq, and scRNA-seq
 
 ATAC-seq analysis of MPP, CDP, cDC1, cDC2, and pDC was performed by Omni-ATAC-seq (Corces et al., 2017) with minor modifications as described in Li et al., 2019. RNA-seq analysis and ChIP-seq analysis was done as previously described (Allhoff et al., 2016; Lin et al., 2015).
 
 To determin lncRNA expression in mouse ex-vivo pDC, scRNA-seq data of BM and splenic pDC were downloaded from GSE114313 (Rodrigues et al., 2018) and BAM files were converted back into FASTQ files using bamtofastq (https://support.10xgenomics.com/docs/bamtofastq). For visualization of lncRNA expression, we created a custom reference genome of mm9 by following the tutorial: available here. Cellranger pipeline was then processed to generate an expression count matrix of pDC. We next used scanpy (Wolf et al., 2018) to analyze the scRNA-seq data. We filtered cells based on the number of detected genes (<200 or>3500), and the proportion of mitochondrial genes (>10%). After data quality control, we retained 7044 cells for splenic pDC and 8158 cells for BM pDC, respectively. We then log-normalized the count matrix using a scaling factor of 10,000 and selected the top 3000 highly variable genes, which were used for dimensionality reduction based on principle component analysis. The cells were visualized using uniform manifold approximation and projection (UMAP) (Becht et al., 2019).
 
-## Plasmids
+### Plasmids
 
 psPAX2 (Addgene #12260) and pMD2.G (Addgene #12259) for lentiviral packaging and envelope expressing plasmids were kind gifts from Didier Trono, EPFL, Lausanne, Switzerland. The gRNA expressing vector pLKO5.sgRNA.EFS.tRFP (Addgene #57823) and pLKO5.sgRNA.EFS.tRFP657 (Addgene #57824) were kind gifts from Benjamin Ebert, Harvard Medical School, Boston, USA (Heckl et al., 2014).
 
 For lncIrf8 overexpression and rescue, lncIrf8 cDNA was introduced into polyA containing lentivirus vector pGFP-pA to generate plncIrf8-pA. pGFP-pA was constructed from pCIG3 (Addgene #78264; Caviness et al., 2014) by Gibson Assembly (New England Biolabs, E5510S; Gibson et al., 2009). In brief, the WPRE element was removed and a polyA signal ‘AATAAA’ was inserted at the 3’ end of GFP to construct pGFP-pA. lncIrf8 cDNA was sub-cloned into pGFP-pA using XhoI and SalI with the primers shown in Appendix 1-key resources table to obtain plncIrf8-pA. CRISPR activation and repression of lncIrf8 and Irf8 promoters were achieved by dCAS9-VP64_GFP (Addgene #61422) (Konermann et al., 2015) and pTet-KRAB-dCas9-GFP (Xu et al., 2022), respectively.
 
-## Lentivirus infection
+### Lentivirus infection
 
 gRNAs, lncIrf8, dCas9-VP64-GFP, and KRAB-dCas9-GFP were delivered into HoxB8 MPP by lentiviral infection. Briefly, lentiviral particles were produced by calcium phosphate transfection (Graham and van der Eb, 1973) of HEK293T cells with psPAX2, pMD2.G, and the lentiviral transfer vector. At 48 and 72 hours after HEK293T cell transfection, supernatant containing virus particles was collected and concentrated using chondroitin sulfate sodium salt (CSS) and polybrene precipitation (Landazuri et al., 2007; Appendix 1-key resources table). HoxB8 MPP were infected twice with concentrated virus and subjected to Ficoll (Pancoll) purification to remove precipitate and dead cells.
 
-## Genetically modified HoxB8 MPP cell lines
+### Genetically modified HoxB8 MPP cell lines
 
-## lncIrf8 promoter and cDC1 specific +32 kb enhancer KO:
+#### lncIrf8 promoter and cDC1 specific +32 kb enhancer KO:
 
 Mx-Cas9-GFP HoxB8 MPP were used to generate lncIrf8 promoter and cDC1 specific +32 kb enhancer knockout (KO) HoxB8 MPP by CRISPR/Cas9. Briefly, pairs of gRNAs each for lncIrf8 promoter KO and cDC1 specific +32 kb enhancer KO (Appendix 1-key resources table) were designed with the IDT online gRNA design tool. For cDC1 specific +32 kb enhancer KO we additionally used the same gRNA sequences from Durai et al., 2019 listed in Appendix 1-key resources table. gRNAs were cloned into pLKO5.sgRNA.EFS.tRFP and pLKO5.sgRNA.EFS.tRFP657 vectors (Heckl et al., 2014) using BsmBI-v2 (Appendix 1-key resources table), respectively.
 
@@ -197,37 +257,167 @@ The gRNA expressing lentiviral particles were used to infect 3 million Mx-Cas9-G
 
 Single-cell clones were genotyped by genomic PCR with primers listed in Appendix 1-key resources table. PCR products were sequenced by Eurofins Genomics and sequences were analyzed by SnapGene. Potential off-targets were routinely predicted by online software tools such as CRISPR-Cas9 gRNA checker (https://eu.idtdna.com/site/order/designtool/in-dex/CRISPR _SEQUENCE). For lncIrf8 promoter KO, 5 out of 71 single-cell colonies with homozygous deletions were subjected to off-target analysis. The top 2–5 predicted coding or non-coding targets were selected and HoxB8 MPP clones without off-target effects, or where off-target effects occurred in genes that were not expressed in MPP, CDP and DC subsets, were used for further studies (Table 1). For cDC1 specific +32 kb enhancer KO, 5 out of 165 single-cell clones with homozygous deletions were subjected to DC differentiation and further analyzed. Potential off-target genes of self-designed gRNAs for cDC1 +32 kb enhancer KO were not expressed in MPP, CDP, and DC subsets, and thus these gRNAs were used in the study.
 
-## lncIrf8 overexpression and lncIrf8 knockout rescue
+**Table 1.**
+ Off-target analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="3">Potential off-targets</th>
+      <th rowspan="2">KO bulk(100 cells)</th>
+      <th colspan="5">KO single-cell clones</th>
+      <th colspan="4">Gene expression</th>
+    </tr>
+    <tr>
+      <th>6</th>
+      <th>7</th>
+      <th>19</th>
+      <th>21</th>
+      <th>24</th>
+      <th>MPP</th>
+      <th>CDP</th>
+      <th>cDC</th>
+      <th>pDC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">gRNA1</td>
+      <td>Chr 13: –48032179</td>
+      <td>Gm36101</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Chr 2: –131293076</td>
+      <td>Non-coding</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="5">gRNA2</td>
+      <td>Chr 1: –136050990</td>
+      <td>AsCl5</td>
+      <td>16 bp deletion</td>
+      <td>16 bp deletion</td>
+      <td>16 bp deletion</td>
+      <td>No</td>
+      <td>1 bp insertion</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Chr 6:+119352090</td>
+      <td>CACNA2D4</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Chr 3:+33982811</td>
+      <td>Non-coding</td>
+      <td>3–29 bp deletion;1–3 bp insertion</td>
+      <td>3–29 bp deletion</td>
+      <td>3 bp deletion</td>
+      <td>1–2 bp insertion</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Chr 2: –132060887</td>
+      <td>Non-coding</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Chr 2: –150624255</td>
+      <td>Non-coding</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+_Top potential off-targets of gRNA1 and gRNA2 predicted by CRISPR-Cas9 gRNA checker (see Materials and methods) were analyzed in lncIrf8 promoter KO bulk culture and KO single-cell clones by PCR analysis of genomic DNA. Potential off-target genes (coding) and non-coding sequences are listed. The absence of off-targets (No) and off-target deletions/insertion are shown._
+
+#### lncIrf8 overexpression and lncIrf8 knockout rescue
 
 lncIrf8 overexpression was performed in wild-type HoxB8 MPP. Lentiviral particles expressing lncIrf8 were produced from ten 6 cm dishes (Bio-One), each consisting of 0.75 million HEK293T cells (70–80% confluency) in 5 ml DMEM with supplements (see above). HEK293T cells were transfected with 5 μg plncIrf8-pA or pGFP-pA, 2.5 μg psPAX2, and 2.5 μg pMD2.G. Lentivirus particles were concentrated as above and used to infect 0.5 million HoxB8 MPP; single-cell clones were generated by limiting dilution and genotyped using the primers listed in Appendix 1-key resources table. Two out of 47 HoxB8 MPP colonies with plncIrf8-pA and 3 out of 19 HoxB8 MPP colonies with pGFP-pA (control) were expanded and subjected to Flt3L-directed DC differentiation.
 
 lncIrf8 knockout rescue was carried out in lncIrf8 promoter KO HoxB8 MPP. FACS sorted cells that genotyped as lncIrf8 promoter KO homozygous deletion cells, were infected with lentiviral particles expressing lncIrf8. Lentiviral infection conditions were the same as for lncIrf8 overexpression in wild-type HoxB8 MPP (see above).
 
-## CRISPR activation and CRISPR interference
+#### CRISPR activation and CRISPR interference
 
 CRISPR activation and CRISPR interference were performed by infecting wild-type HoxB8 MPP with lentiviral particles expressing dCAS9-VP64_GFP and pTet-KRAB-dCas9-GFP, respectively. The virus particles were produced as in the lncIrf8 overexpression experiments. In brief, virus particles from ten 6 cm dishes were used to infect 0.5 million wild-type HoxB8 MPP, followed by FACS sorting for GFP+ cells expressing dCas9-VP64 or dCas9-KRAB. Doxycycline (1 μg/ml) was used to induce dCas9-KRAB expression 2 days before cell sorting.
 
 gRNAs targeting lncIrf8 and Irf8 promoters were cloned into pLKO5.sgRNA.EFS.tRFP as above. The dCas9-VP64-GFP and dCas9-KRAB-GFP HoxB8 MPP were then infected with specific gRNAs for gene activation and repression. The conditions for gRNA infection were the same as in lncIrf8 promoter KO experiments. Doxycycline (1 μg/ml) was given to the sorted dCas9-KRAB-GFP cells every 3 days to ensure sustained dCas9-KRAB expression.
 
-## Flow cytometry analysis and cell sorting
+### Flow cytometry analysis and cell sorting
 
 DC subsets were analyzed by flow cytometry using FACS Canto II or LSR Fortessa (both from BD Biosciences). The information for flow cytometry antibodies is shown in Appendix 1-key resources table. For live/dead staining, cells were incubated with 3 μl 7-AAD per test for 5–10 min before flow cytometry measurement. Cells were sorted by FACS Aria IIu or FACS Melody, and flow cytometry data were analyzed by FlowJo V10 (all from BD Biosciences). Data on DC frequencies were subjected to the hierarchical clustering and represented in heatmap format using the online tool MORPHEUS (https://software.broadinstitute.org/morpheus/).
 
-## Cell transplantation
+### Cell transplantation
 
 CD45.1 recipient mice were sublethal irradiated (6.0 Gy, CP-160 Faxitron) 1 day before transplantation. lncIrf8 promoter KO and control HoxB8 MPP (single-cell clones) were expanded in vitro as described above. Cells were injected into recipient mice via the tail vein (5 million cells in 100 μl PBS per mouse). Donor cells from bone marrow and spleen were subjected to flow cytometry analysis at 7 and 14 days after cell transplantation.
 
-## RT-qPCR
+### RT-qPCR
 
 RNA was isolated by using the NucleoSpin RNA kit (Macherey-Nagel, 740955.250) according to the manufacturer’s instructions. RNA was subjected to cDNA synthesis using the High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems, 4368814) with Murine RNase Inhibitor (New England Biolabs, M0314S) (Appendix 1-key resources table). RT-qPCR was performed by a StepOnePlus Real-Time PCR system (Applied Biosystems) with SYBR-green fluorescence (Applied Biosystems, 4385610). The primers for qPCR were listed in Appendix 1-key resources table. Mouse GAPDH was used for normalization of lncIrf8 and Irf8 gene expression.
 
-## Identification of lncIrf8
+### Identification of lncIrf8
 
 De-novo transcript assembly of RNA-seq data was used to search for unknown transcripts with no coding potential and this identified the pDC specific lncRNA Tcons_00190250 (referred to as lncIrf8) and the cDC1-specific lncRNA Tcons_00190258. In brief, paired end 2×100 bps reads from RNA-seq of MPP, CDP, cDC1, cDC2, and pDC were aligned to mm9 genome using Star aligner (version 2.4) (Dobin et al., 2013) and run for Cufflinks (version 2.0; Trapnell et al., 2012). Data were subjected to lenient filtering with the parameters: min isoform fraction 0.1% and pre-RNA-fraction of 0.1%, and ribosomal genes were also filtered. Next, all the predicted transcripts were merged with cuffmerge and all transcripts with no overlap with known transcripts in mouse GENCODE were selected for further analysis (Frankish et al., 2019). The coding potential and conservation of coding elements of the lncRNAs were checked with CPAT (Wang et al., 2013) and PhyloCSF (Lin et al., 2011), respectively. lncIrf8 (Tcons_00190250) and Tcons_00190258 show low scores in both analyses, which faithfully supports their role as non-coding genes and exhibit low cross-species conservation.
 
 To further characterize the major transcripts of lncIrf8, 3' and 5' end Rapid Amplification of cDNA Ends (RACE) PCR was performed using template-switching RT enzyme mix (New England Biolabs, M0466) and TA cloning kit (Thermo Fisher Scientific, K202020) (Appendix 1-key resources table). The primers (listed in Appendix 1-key resources table) used for RACE PCR were synthesized by Eurofins Genomics except for 5' RACE-TSO, which was from IDT.
 
-## 3' RACE PCR
+### 3' RACE PCR
 
 Reverse transcript (RT) and template-switching: 4 μl (10 ng to 1 μg) total RNA (from DC differentiation day 5) were incubated at 80°C for 3 min and cooled rapidly on ice. RNA was then incubated with template-switching RT buffer, 1 mM dNTP, 5 mM DTT, 10 μM QT primer (Scotto-Lavino et al., 2006) and 1 μl RT enzyme in 10 μl at room temperature for 5 min, followed by 1 hr at 42°C, 10 min at 50°C, and 85°C for 5 min to inactive the RT enzyme mix and sample was then kept at 4°C and diluted with 20 μl MilliQ water.
 
@@ -235,14 +425,14 @@ First-round PCR: 1 μl of diluted sample was subjected to the first round PCR wi
 
 A-tailing and TA cloning: a reaction containing 5 μl of PCR clean-up product in Taq buffer, 1 mM MgCl2, 0.4 mM dATP and 1 μl Taq DNA polymerase in 25 μl was prepared and incubated at 70°C for 20 min for A-tailing of PCR products. Five μl of the A-tailed products were subjected to TA cloning into pCR2.1 vector according to the manufacturer’s instruction followed by Sanger sequencing.
 
-## 5' RACE PCR
+### 5' RACE PCR
 
 In order to identify the TSS of lncIrf8, template RNA from bone marrow cell-derived pDC was used to perform 5' RACE PCR using template-switching RT enzyme mix (New England Biolabs, M0466) according to the manufacturer’s instructions. Template switching was by 5' RACE-GSP-lncIrf8-R2 primer (10 μM) and template switching oligo (TSO) (75 μM). Similar to the 3' RACE PCR, two rounds of PCR were used to improve PCR specificity. In brief, 5' RACE-GSP-lncIrf8-R2 (10 μM) and TSO-specific primer (10 μM) were used to perform the first-round PCR, 5' RACE-GSP-lncIrf8-R1 primer (10 μM) and the TSO-specific primer (10 μM) were used to perform the second round PCR, followed by fragments A-tailing, TA cloning, and Sanger sequencing as described above for 3' RACE PCR.
 
-## Identification of transcription factor binding sites
+### Identification of transcription factor binding sites
 
 Transcription factor binding sites (TFBS) in the Irf8 +32 kb enhancer were predicted using a motif matching tool based on the MOODS (Korhonen et al., 2009) and position weight matrixes (PWMs) were obtained from the JASPAR database (Fornes et al., 2020). The bit-score cut-off thresholds were determined by applying the dynamic programming approach as described in Wilczynski et al., 2009 with an FPR of 0.0001. DC TF were considered and are depicted.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using Prism (GraphPad). Unpaired t test and Multiple t-tests were used to compare data from two groups, two-way ANOVA with Tukey’s multiple comparisons test was used to analyze data from more than two groups.

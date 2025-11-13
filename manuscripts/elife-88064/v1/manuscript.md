@@ -10,12 +10,12 @@
 
 ### Affiliations
 
-1. https://ror.org/04mhzgx49 School of Zoology, Faculty of Life Sciences, Tel Aviv University Tel Aviv Israel
-2. https://ror.org/004rbbw49 College of Life Sciences, Hebei Normal University Shijiazhuang China
-3. https://ror.org/004rbbw49 Hebei Collaborative Innovation Center for Eco-Environment, Hebei Normal University Shijiazhuang China
-4. https://ror.org/03qryx823 Faculty of Architecture and Town Planning, Technion, Israel Institute of Technology Haifa Israel
-5. https://ror.org/04mhzgx49 The Steinhardt Museum of Natural History, National Research Center for Biodiversity Studies, Tel-Aviv University Tel Aviv Israel
-6. https://ror.org/04mhzgx49 Sagol School of Neuroscience, Tel Aviv University Tel Aviv Israel
+1. School of Zoology, Faculty of Life Sciences, Tel Aviv University Tel Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))
+2. College of Life Sciences, Hebei Normal University Shijiazhuang China ([ROR:004rbbw49](https://ror.org/004rbbw49))
+3. Hebei Collaborative Innovation Center for Eco-Environment, Hebei Normal University Shijiazhuang China ([ROR:004rbbw49](https://ror.org/004rbbw49))
+4. Faculty of Architecture and Town Planning, Technion, Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))
+5. The Steinhardt Museum of Natural History, National Research Center for Biodiversity Studies, Tel-Aviv University Tel Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))
+6. Sagol School of Neuroscience, Tel Aviv University Tel Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ We performed our study around the first lockdown period in Israel (March-May 202
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88064/elife-88064-fig1-v1.jpg)
 
-**Figure 1.:** (A) The seventeen sampling sites (Grey square: road; Blue square: residence; Green square: Park). The total activity for each species at each location is shown in bars for the lockdown (red) and no-lockdown (blue) periods. Different sampling sites are represented by different symbols. (B) Spectrograms of vocalizations with Hooded crow, Rose-ringed parakeet, and Graceful prinia vocalizations. (C) An example of a heat-map indicating the activity of Hooded crows at site 11 monitored continuously between March 31 and May 28 (without the dates between April 9 – April 23, May 4 – May 6, May 17 – May 20, depicted by white gaps). The x-axis depicts the time of day (not normalized to sunrise). The y-axis is the date. The red horizontal line separates lockdown from no lockdown periods. The figure also suggests an overall seasonal increase in activity, but our models suggest a lockdown effect on top of this seasonal effect.Figure 1—source data 1.(A) Study area and (B) recording site. The yellow star refers to the audiomoth’s location. (C) Heatmap indicating the activity of Corvus corone cornix along the day. The x-axis refers to the time of day. The y-axis is the date. The numbers in parentheses for dates represent the total number of events detected during the day. The orange line separates lockdown from no lockdown periods.Figure 1—source data 2.(A) Study area and (B) recording site. The yellow star refers to the audiomoth’s location. (C) Heatmap indicating the activity of Psittacula krameri along the day. The x-axis refers to the time of day. The y-axis is the date. The numbers in parentheses for dates represent the total number of events detected during the day. The orange line separates lockdown from no lockdown periods.Figure 1—source data 3.(A) Study area and (B) recording site. The yellow star refers to the audiomoth’s location. (C) Heatmap indicating the activity of Prinia gracilis along the day. The x-axis refers to the time of day. The y-axis is the date. The numbers in parentheses for dates represent the total number of events detected during the day. The orange line separates lockdown from no lockdown periods.
+**Figure 1.:** (A) The seventeen sampling sites (Grey square: road; Blue square: residence; Green square: Park). The total activity for each species at each location is shown in bars for the lockdown (red) and no-lockdown (blue) periods. Different sampling sites are represented by different symbols. (B) Spectrograms of vocalizations with Hooded crow, Rose-ringed parakeet, and Graceful prinia vocalizations. (C) An example of a heat-map indicating the activity of Hooded crows at site 11 monitored continuously between March 31 and May 28 (without the dates between April 9 – April 23, May 4 – May 6, May 17 – May 20, depicted by white gaps). The x-axis depicts the time of day (not normalized to sunrise). The y-axis is the date. The red horizontal line separates lockdown from no lockdown periods. The figure also suggests an overall seasonal increase in activity, but our models suggest a lockdown effect on top of this seasonal effect.
 
 We quantified birds’ presence and found changes in bird activity during the lockdown period that were species and habitat specific. We found that human following (exploiter) species probably moved their activity to residential areas during the lockdown, in contrast to a human aversive species (an adapter) that seemingly increased its activity in all habitats in the absence of humans. Other environmental factors, such as ambient temperature, also influenced bird activity, but the effect of the lockdown was central even after controlling for these variables. Our results thus demonstrate the importance of micro-habitats within the urban environment and highlight the complexity of nature’s response to a dramatic shift in human activity.
 
@@ -45,9 +45,878 @@ We quantified birds’ presence and found changes in bird activity during the lo
 
 We analyzed 388,080 audio recordings accounting for a total duration of 3234 hr from 17 sites (Figure 1A). In total we detected 52,080 files with 72,824 syllables of Hooded crows, 33,654 files with 73,445 syllables of Rose-ringed parakeets and 21,800 files with 117,982 syllables of Graceful prinias. The distribution of the audio recordings along the sampling periods can be found in Supplementary file 1a-c. A detailed summary of the activity of each species at each site can be found in Figure 1—source data 1–3 (and in Figure 1A). We used these vocalizations to assess birds’ spatio-temporal activity. We referred to the total number of events (i.e. files) detected per species as its total daily activity. We also estimated daily activity variability by calculating the coefficient of variance of number of daily events. Dynamic illustrations of the changes in bird activity are presented in Videos 1–3. In addition, human activity significantly increased in residential areas by 49% during the lockdown and significantly decreased in parks by 31% as visiting parks was forbidden as expected (Figure 2A; Supplementary file 1d).
 
-## Bird activity
+![Video 1.](https://cdn.elifesciences.org/articles/88064/elife-88064-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/88064/elife-88064-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/88064/elife-88064-video3.mp4.jpg)
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88064/elife-88064-fig2-v1.jpg)
+
+**Figure 2.:** Boxplots show the activity of (A) Human activity, (B) Hooded crow, (C) Rose-ringed parakeet, and (D) Graceful prinia for each site category during no lockdown and during lockdown. Green box plot: park; Grey box plot: road; Blue box plot: residence; Black box plot: overall. Note that human activity was assessed based on human speech so the increase observed during lockdowns in roads represents pedestrian and not car activity. Box plot lower and upper box boundaries show the 25th and 75th percentiles, respectively, with the median inside. The lower and upper error lines depict the 10th and 90th percentiles, respectively. Outliers of the data are shown as black dots. Different sampling sites represented by different symbols. Except for roads (GLMM, p=0.632), there were significant differences in human activity between no lockdown period and lockdown period for all sites (GLMM, p<0.0001), for parks (GLMM, p=0.002) and for residential sites (GLMM, residential sites: p<0.0001). In [B], [C] and [D] post hoc tests are indicated with significance levels: *p<0.05, **p<0.01, ***p<0.001, not significant [ns]. n indicates the number of sampling days.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88064/elife-88064-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Boxplots show the activity of (A) Human activity, (B) Hooded crow, (C) Rose-ringed parakeet, and (D) Graceful prinia for each site category during no lockdown and during lockdown. Green box plot: park; Grey box plot: road; Blue box plot: residence; Black box plot: overall. Note that human activity was assessed based on human speech so the increase observed during lockdowns in roads represents pedestrian and not car activity. Box plot lower and upper box boundaries show the 25th and 75th percentiles, respectively, with the median inside. The lower and upper error lines depict the 10th and 90th percentiles, respectively. Outliers of the data are shown as black dots. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88064/elife-88064-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Boxplots show the activity of (A) Human activity, (B) Hooded crow, (C) Rose-ringed parakeet, and (D) Graceful prinia for each site category during no lockdown and during lockdown. Green box plot: park; Grey box plot: road; Blue box plot: residence; Black box plot: overall. Note that human activity was assessed based on human speech so the increase observed during lockdowns in roads represents pedestrian and not car activity. Box plot lower and upper box boundaries show the 25th and 75th percentiles, respectively, with the median inside. The lower and upper error lines depict the 10th and 90th percentiles, respectively. Outliers of the data are shown as black dots. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/88064/elife-88064-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Boxplots show the activity of (A) Human activity, (B) Hooded crow, (C) Rose-ringed parakeet, and (D) Graceful prinia for each site category during no lockdown and during lockdown. Green box plot: park; Grey box plot: road; Blue box plot: residence; Black box plot: overall. Note that human activity was assessed based on human speech so the increase observed during lockdowns in roads represents pedestrian and not car activity. Box plot lower and upper box boundaries show the 25th and 75th percentiles, respectively, with the median inside. The lower and upper error lines depict the 10th and 90th percentiles, respectively. Outliers of the data are shown as black dots. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/88064/elife-88064-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Boxplots show the activity of (A) Human activity, (B) Hooded crow, (C) Rose-ringed parakeet, and (D) Graceful prinia for each site category during no lockdown and during lockdown. Green box plot: park; Grey box plot: road; Blue box plot: residence; Black box plot: overall. Note that human activity was assessed based on human speech so the increase observed during lockdowns in roads represents pedestrian and not car activity. Box plot lower and upper box boundaries show the 25th and 75th percentiles, respectively, with the median inside. The lower and upper error lines depict the 10th and 90th percentiles, respectively. Outliers of the data are shown as black dots. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/88064/elife-88064-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Boxplots show the activity of (A) Human activity, (B) Hooded crow, (C) Rose-ringed parakeet, and (D) Graceful prinia for each site category during no lockdown and during lockdown. Green box plot: park; Grey box plot: road; Blue box plot: residence; Black box plot: overall. Note that human activity was assessed based on human speech so the increase observed during lockdowns in roads represents pedestrian and not car activity. Box plot lower and upper box boundaries show the 25th and 75th percentiles, respectively, with the median inside. The lower and upper error lines depict the 10th and 90th percentiles, respectively. Outliers of the data are shown as black dots. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/88064/elife-88064-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** Boxplots show the activity of (A) all species, (B) Hooded crow, (C) Rose-ringed parakeet, and (D) Graceful prinia for each site category during no lockdown and during lockdown. Green box plot: park; Grey box plot: road; Blue box plot: residence; Black box plot: overall. Box plot lower and upper box boundaries show the 25th and 75th percentiles, respectively, with the median inside. The lower and upper error lines depict the 10th and 90th percentiles, respectively. Outliers of the data are shown as black dots. Asterisks indicate significant differences between no lockdown and lockdown periods. *p<0.05, **p<0.01, ***p<0.001.
+
+### Bird activity
 
 When analyzing the activity of all species together, we found that the bird species and site type (park, road, residential) had a significant effect on activity, and moreover, that the interaction between the lockdown status and the species was also significant (Table 1). Below, we thus analyze the effect of the lockdown status on each species of bird separately. However, a few general patterns were observed from the analysis of all species together. Bird activity (number of daily events) was overall always highest in parks (62% more than near roads and 53% more than in residential areas, Table 1). Bird activity significantly decreased with an increase in ambient noise levels (Table 1). The average effect size was a reduction of 6% in activity per 1 dB of noise. As expected, ambient noise levels during the lockdown were significantly lower than during the non-lockdown period by an average of ca. 1.5 dB for crows, 1.7 dB for parakeets, and 1.7 dB for Prinia (LMM: –1.5<estimate < –1.3,–7.5<t < –5.2, p<0.0001; the noise was estimated for each species in its call’s peak frequency, Figure 3—figure supplement 1), but this reduction in noise was not enough to explain changes in bird activity during the lockdown (Table 1). The overall bird activity also significantly increased with an increase in temperature (by 5% per degree, Table 1).
+
+**Table 1.**
+ Effects of predictor variables on birds’ activity based on generalized and general linear mixed models (GLMM and LMM).Estimates were calculated in % per day for the following units: Temperature – per degree, Noise – per dB, Human activity – per 1 talking event, Lockdown related parameter – per existence of the lockdown (yes/no).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Dependent variable</th>
+      <th>Predictors</th>
+      <th>Estimate</th>
+      <th>z</th>
+      <th>p</th>
+      <th>95% CI</th>
+      <th>Percent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="28">All species</td>
+      <td rowspan="14">Activity-Number of events/day</td>
+      <td>(Intercept)</td>
+      <td>7.850</td>
+      <td>22.541</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Bird_species</td>
+      <td>–0.623</td>
+      <td>–84.742</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>46.367</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status</td>
+      <td>–0.404</td>
+      <td>–2.623</td>
+      <td>0.009</td>
+      <td>-</td>
+      <td>33.236</td>
+    </tr>
+    <tr>
+      <td>Human_activity</td>
+      <td>–0.00001</td>
+      <td>–0.539</td>
+      <td>0.590</td>
+      <td>-</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>–0.062</td>
+      <td>–20.625</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>6.012</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>0.045</td>
+      <td>4.194</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>4.649</td>
+    </tr>
+    <tr>
+      <td>Site_category_residence</td>
+      <td>–0.739</td>
+      <td>–2.764</td>
+      <td>0.006</td>
+      <td>-</td>
+      <td>53.286</td>
+    </tr>
+    <tr>
+      <td>Site_category_road</td>
+      <td>–0.923</td>
+      <td>–3.558</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>62.075</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Count_down*</td>
+      <td>0.008</td>
+      <td>3.820</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>0.835</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_residence*</td>
+      <td>–0.072</td>
+      <td>–3.435</td>
+      <td>0.001</td>
+      <td>-</td>
+      <td>7.294</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_road*</td>
+      <td>0.094</td>
+      <td>4.074</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>10.447</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Noise*</td>
+      <td>–0.007</td>
+      <td>–2.723</td>
+      <td>0.006</td>
+      <td>-</td>
+      <td>0.746</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Human_activity*</td>
+      <td>0.0003</td>
+      <td>14.074</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <td>Bird_species Lockdown_status*</td>
+      <td>0.253</td>
+      <td>29.155</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>31.379</td>
+    </tr>
+    <tr>
+      <td rowspan="14">†Activityvariability-CV of the number of events/day</td>
+      <td>(Intercept)</td>
+      <td>–0.963</td>
+      <td>5.975</td>
+      <td>&lt;0.001</td>
+      <td>−1.282,–0.618</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Bird_species</td>
+      <td>0.208</td>
+      <td>16.877</td>
+      <td>&lt;0.001</td>
+      <td>0.184, 0.233</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status</td>
+      <td>0.565</td>
+      <td>4.238</td>
+      <td>&lt;0.001</td>
+      <td>0.269, 0.839</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>0.025</td>
+      <td>8.554</td>
+      <td>&lt;0.001</td>
+      <td>0.0198, 0.030</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Site_category_residence</td>
+      <td>0.170</td>
+      <td>2.403</td>
+      <td>0.016</td>
+      <td>0.030, 0.310</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Site_category_road</td>
+      <td>0.224</td>
+      <td>3.238</td>
+      <td>0.001</td>
+      <td>0.089, 0.361</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Human_activity</td>
+      <td>–0.00004</td>
+      <td>1.150</td>
+      <td>0.250</td>
+      <td>–0.0001, 0.00003</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>–0.010</td>
+      <td>3.394</td>
+      <td>0.001</td>
+      <td>−0.016,–0.004</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Bird_species Lockdown_status*</td>
+      <td>–0.057</td>
+      <td>3.888</td>
+      <td>&lt;0.001</td>
+      <td>−0.086,–0.028</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Count_down Lockdown_status*</td>
+      <td>–0.001</td>
+      <td>1.503</td>
+      <td>0.133</td>
+      <td>–0.003, 0.0004</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Noise*</td>
+      <td>–0.008</td>
+      <td>3.157</td>
+      <td>0.002</td>
+      <td>−0.013,–0.003</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Human_activity*</td>
+      <td>–0.00005</td>
+      <td>1.308</td>
+      <td>0.191</td>
+      <td>–0.00018, 0.00003</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_residence*</td>
+      <td>0.023</td>
+      <td>0.641</td>
+      <td>0.522</td>
+      <td>–0.048, 0.098</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_road*</td>
+      <td>0.036</td>
+      <td>0.995</td>
+      <td>0.320</td>
+      <td>–0.042, 0.106</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="24">Hooded crow</td>
+      <td rowspan="12">†Activity-Number of events/day</td>
+      <td>(Intercept)</td>
+      <td>7.475</td>
+      <td>20.026</td>
+      <td>&lt;0.001</td>
+      <td>6.743, 8.206</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status</td>
+      <td>–0.647</td>
+      <td>4.508</td>
+      <td>&lt;0.001</td>
+      <td>−0.928,–0.366</td>
+      <td>47.639</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>–0.045</td>
+      <td>12.324</td>
+      <td>&lt;0.001</td>
+      <td>−0.052,–0.038</td>
+      <td>4.400</td>
+    </tr>
+    <tr>
+      <td>Site_category_residence</td>
+      <td>–0.790</td>
+      <td>2.374</td>
+      <td>0.018</td>
+      <td>−1.443,–0.1386</td>
+      <td>54.616</td>
+    </tr>
+    <tr>
+      <td>Site_category_road</td>
+      <td>–0.738</td>
+      <td>2.284</td>
+      <td>0.022</td>
+      <td>−1.372,–0.105</td>
+      <td>52.193</td>
+    </tr>
+    <tr>
+      <td>Human_activity</td>
+      <td>–0.0001</td>
+      <td>3.376</td>
+      <td>0.001</td>
+      <td>−0.0002,–0.00004</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Count_down Lockdown_status*</td>
+      <td>0.017</td>
+      <td>6.542</td>
+      <td>&lt;0.001</td>
+      <td>0.012, 0.022</td>
+      <td>1.749</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_residence*</td>
+      <td>–0.064</td>
+      <td>2.288</td>
+      <td>0.022</td>
+      <td>−0.119,–0.009</td>
+      <td>6.385</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_road*</td>
+      <td>0.221</td>
+      <td>7.606</td>
+      <td>&lt;0.001</td>
+      <td>0.164, 0.278</td>
+      <td>25.722</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Human_activity*</td>
+      <td>0.0004</td>
+      <td>10.456</td>
+      <td>&lt;0.001</td>
+      <td>0.0003, 0.0004</td>
+      <td>0.042</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Noise*</td>
+      <td>–0.002</td>
+      <td>0.682</td>
+      <td>0.495</td>
+      <td>–0.009, 0.0056</td>
+      <td>0.212</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>–0.009</td>
+      <td>0.645</td>
+      <td>0.519</td>
+      <td>–0.037, 0.019</td>
+      <td>0.959</td>
+    </tr>
+    <tr>
+      <td rowspan="12">†Activity variability-CV of the number of events/day</td>
+      <td>(Intercept)</td>
+      <td>–1.447</td>
+      <td>7.373</td>
+      <td>&lt;0.001</td>
+      <td>−1.827,–1.023</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status</td>
+      <td>0.889</td>
+      <td>5.473</td>
+      <td>&lt;0.001</td>
+      <td>0.534, 1.217</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>0.033</td>
+      <td>9.604</td>
+      <td>&lt;0.001</td>
+      <td>0.026, 0.040</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Site_category_residence</td>
+      <td>0.293</td>
+      <td>2.958</td>
+      <td>0.003</td>
+      <td>0.095, 0.486</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Site_category_road</td>
+      <td>0.236</td>
+      <td>2.479</td>
+      <td>0.013</td>
+      <td>0.048, 0.423</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Human_activity</td>
+      <td>0.00004</td>
+      <td>0.999</td>
+      <td>0.318</td>
+      <td>–0.00005, 0.0001</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Noise*</td>
+      <td>–0.015</td>
+      <td>4.618</td>
+      <td>&lt;0.001</td>
+      <td>−0.021,–0.008</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Human_activity</td>
+      <td>–0.0001</td>
+      <td>2.959</td>
+      <td>0.003</td>
+      <td>−0.0002,–0.00005</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>–0.003</td>
+      <td>1.074</td>
+      <td>0.283</td>
+      <td>–0.010, 0.003</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Count_down Lockdown_status*</td>
+      <td>–0.001</td>
+      <td>1.032</td>
+      <td>0.302</td>
+      <td>–0.003, 0.001</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_residence*</td>
+      <td>0.045</td>
+      <td>1.000</td>
+      <td>0.317</td>
+      <td>–0.0414, 0.141</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_road*</td>
+      <td>–0.009</td>
+      <td>0.204</td>
+      <td>0.838</td>
+      <td>–0.095, 0.082</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="24">Rose-ringed parakeet</td>
+      <td rowspan="12">†Activity-Number of events/day</td>
+      <td>(Intercept)</td>
+      <td>6.320</td>
+      <td>11.848</td>
+      <td>&lt;0.001</td>
+      <td>5.272, 7.373</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status</td>
+      <td>–0.106</td>
+      <td>0.379</td>
+      <td>0.704</td>
+      <td>–0.656, 0.443</td>
+      <td>10.058</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>–0.061</td>
+      <td>10.900</td>
+      <td>&lt;0.001</td>
+      <td>−0.072,–0.050</td>
+      <td>5.918</td>
+    </tr>
+    <tr>
+      <td>Site_category_residence</td>
+      <td>–0.493</td>
+      <td>1.175</td>
+      <td>0.240</td>
+      <td>–1.314, 0.329</td>
+      <td>38.921</td>
+    </tr>
+    <tr>
+      <td>Site_category_road</td>
+      <td>–1.201</td>
+      <td>2.949</td>
+      <td>0.003</td>
+      <td>−1.999,–0.403</td>
+      <td>69.911</td>
+    </tr>
+    <tr>
+      <td>Human_activity</td>
+      <td>–0.0003</td>
+      <td>6.891</td>
+      <td>&lt;0.001</td>
+      <td>−0.0004,–0.0002</td>
+      <td>0.030</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>0.060</td>
+      <td>3.990</td>
+      <td>&lt;0.001</td>
+      <td>0.031, 0.089</td>
+      <td>6.307</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Noise</td>
+      <td>–0.016</td>
+      <td>3.268</td>
+      <td>0.001</td>
+      <td>−0.026,–0.006</td>
+      <td>1.635</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_residence</td>
+      <td>0.408</td>
+      <td>9.968</td>
+      <td>&lt;0.001</td>
+      <td>0.328, 0.488</td>
+      <td>52.396</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_road</td>
+      <td>0.574</td>
+      <td>13.488</td>
+      <td>&lt;0.001</td>
+      <td>0.491, 0.658</td>
+      <td>81.412</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Human_activity</td>
+      <td>0.001</td>
+      <td>15.304</td>
+      <td>&lt;0.001</td>
+      <td>0.0006, 0.0008</td>
+      <td>0.106</td>
+    </tr>
+    <tr>
+      <td>Count_down Lockdown_status</td>
+      <td>0.004</td>
+      <td>1.234</td>
+      <td>0.217</td>
+      <td>–0.002, 0.011</td>
+      <td>0.429</td>
+    </tr>
+    <tr>
+      <td rowspan="12">†Activity variability-CV of the number of events/day</td>
+      <td>(Intercept)</td>
+      <td>–0.460</td>
+      <td>3.225</td>
+      <td>0.001</td>
+      <td>−0.751,–0.178</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status</td>
+      <td>0.249</td>
+      <td>2.775</td>
+      <td>0.006</td>
+      <td>0.065, 0.442</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>0.020</td>
+      <td>8.303</td>
+      <td>&lt;0.001</td>
+      <td>0.015, 0.025</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Site_category_residence</td>
+      <td>0.090</td>
+      <td>1.054</td>
+      <td>0.292</td>
+      <td>–0.078, 0.256</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Site_category_road</td>
+      <td>0.196</td>
+      <td>2.376</td>
+      <td>0.018</td>
+      <td>0.032, 0.357</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Human_activity</td>
+      <td>0.00001</td>
+      <td>0.419</td>
+      <td>0.675</td>
+      <td>–0.00005, 0.00007</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>–0.007</td>
+      <td>2.331</td>
+      <td>0.020</td>
+      <td>−0.012,–0.001</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Count_down Lockdown_status*</td>
+      <td>–0.003</td>
+      <td>4.333</td>
+      <td>&lt;0.001</td>
+      <td>−0.005,–0.002</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_residence*</td>
+      <td>–0.051</td>
+      <td>1.818</td>
+      <td>0.069</td>
+      <td>–0.105, 0.005</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_road*</td>
+      <td>–0.109</td>
+      <td>3.915</td>
+      <td>&lt;0.001</td>
+      <td>−0.164,–0.053</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Human_activity*</td>
+      <td>–0.0001</td>
+      <td>3.108</td>
+      <td>0.002</td>
+      <td>−0.0002,–0.00004</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Noise*</td>
+      <td>–0.002</td>
+      <td>0.866</td>
+      <td>0.387</td>
+      <td>–0.008, 0.0033</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="24">Graceful prinia</td>
+      <td rowspan="12">Activity-Number of events/day</td>
+      <td>(Intercept)</td>
+      <td>3.314</td>
+      <td>2.245</td>
+      <td>0.025</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status</td>
+      <td>–0.352</td>
+      <td>–0.595</td>
+      <td>0.552</td>
+      <td>-</td>
+      <td>29.672</td>
+    </tr>
+    <tr>
+      <td>Human_activity</td>
+      <td>0.00017</td>
+      <td>2.367</td>
+      <td>0.018</td>
+      <td>-</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>–0.165</td>
+      <td>–17.114</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>15.211</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>0.365</td>
+      <td>6.533</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>44.051</td>
+    </tr>
+    <tr>
+      <td>Site_category_residence</td>
+      <td>–1.012</td>
+      <td>–1.440</td>
+      <td>0.150</td>
+      <td>-</td>
+      <td>64.287</td>
+    </tr>
+    <tr>
+      <td>Site_category_road</td>
+      <td>–1.484</td>
+      <td>–2.164</td>
+      <td>0.030</td>
+      <td>-</td>
+      <td>78.874</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Count_down*</td>
+      <td>–0.104</td>
+      <td>–14.979</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>10.174</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_residence*</td>
+      <td>–0.062</td>
+      <td>–1.159</td>
+      <td>0.247</td>
+      <td>-</td>
+      <td>6.252</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_road*</td>
+      <td>–1.203</td>
+      <td>–13.290</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>73.469</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Noise*</td>
+      <td>0.066</td>
+      <td>7.072</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>7.232</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Human_activity*</td>
+      <td>0.003</td>
+      <td>3.513</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>0.300</td>
+    </tr>
+    <tr>
+      <td rowspan="12">†Activity variability-CV of the number of events/day</td>
+      <td>(Intercept)</td>
+      <td>0.920</td>
+      <td>1.496</td>
+      <td>0.135</td>
+      <td>–0.284, 2.100</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status</td>
+      <td>–0.194</td>
+      <td>0.655</td>
+      <td>0.513</td>
+      <td>–0.782, 0.425</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>0.018</td>
+      <td>1.823</td>
+      <td>0.068</td>
+      <td>–0.002, 0.038</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Site_category_residence</td>
+      <td>0.210</td>
+      <td>0.946</td>
+      <td>0.344</td>
+      <td>–0.227, 0.643</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Site_category_road</td>
+      <td>0.556</td>
+      <td>2.452</td>
+      <td>0.014</td>
+      <td>0.117, 1.009</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>–0.031</td>
+      <td>2.592</td>
+      <td>0.010</td>
+      <td>−0.054,–0.007</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Count_down Lockdown_status*</td>
+      <td>0.005</td>
+      <td>1.578</td>
+      <td>0.115</td>
+      <td>–0.001, 0.011</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_residence*</td>
+      <td>0.172</td>
+      <td>1.461</td>
+      <td>0.144</td>
+      <td>–0.058, 0.406</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Site_category_road*</td>
+      <td>0.274</td>
+      <td>2.089</td>
+      <td>0.037</td>
+      <td>0.0163, 0.532</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Noise*</td>
+      <td>–0.005</td>
+      <td>0.403</td>
+      <td>0.687</td>
+      <td>–0.029, 0.020</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Human_activity</td>
+      <td>–0.00004</td>
+      <td>0.437</td>
+      <td>0.662</td>
+      <td>–0.0003, 0.0002</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lockdown_status Human_activity*</td>
+      <td>0.00007</td>
+      <td>0.394</td>
+      <td>0.694</td>
+      <td>–0.0003, 0.0004</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_CV: coefficient of variance.*Interaction effect. 95% confidence intervals of the parameters that did not overlap zero are indicated in bold.†model average._
 
 We also examined the variability of the activity for all species together. Note that a reduction in the coefficient of variance per day means that activity is more constant, or less variable during the day. Overall, the coefficient of variance showed opposite patterns in comparison with the activity, that is, whenever we observed more activity, we observed less variability and vice versa. When analyzing all species together, we found that the activity in roads and residential areas was significantly more variable than in parks (Table 1 and Supplementary file 1e). Moreover, the variability significantly increased with an increase in noise, it increased during the lockdown periods, and it significantly decreased with an increase in temperature (Table 1 and Supplementary file 1e). As with the total activity, the patterns were species and site specific, as analyzed and detailed below.
 
@@ -61,9 +930,119 @@ We ran two models to control for the effect of our uneven sampling of the lockdo
 
 To assess the relative importance of the various parameters which contributed to the best explanatory model, we used the parameters of the best model (site category, ambient noise, human activity, temperature and lockdown status) and ran a discriminant function analysis (DFA) aiming to classify the level of bird activity (see Materials and methods). The DFA’s managed to significantly classify bird activity for all three species 62.7% for Hooded crows, 80.7% for Rose-ringed parakeets and 82.5% for Gracefull prinias (binomial test: p<0.001 and see Supplementary file 1g for the full details). Analyzing the result showed that the first discriminant function explained a great majority of the variance and that it was affected (almost equally) by all for five parameters in a species-specific manner (see Supplementary file 1g).
 
-## Bird acoustics
+### Bird acoustics
 
 In light of several studies that have reported changes in bird vocal acoustics during COVID-19 lockdowns, we also tested this for the three species we studied, examining call intensity and peak frequency (the most intense frequency) for the recorded syllables (Table 2). All species seemed to produce louder vocalizations as ambient noise level increased. However, because they increased call intensity to a lesser degree than the additional noise, we suggest that this apparent increase was probably an artifact of the additional noise in the recordings rather than a real increase in source level. Specifically, we measured an increase of 0.35 dB/noise dB for crows, 0.47 dB/noise dB for parakeets, and 0.84 dB/noise dB for prinias (Figure 3, note that all slopes are ≤ 1; LMM: all p<0.0001 for all species; Table 2). We did not find any significant change in call frequency due to the lockdown (the vocalizations of rose-ringed parakeet had significantly lower peak frequencies during lockdown, but the difference was negligible: ~4 Hz, Table 2).
+
+**Table 2.**
+ Effects of predictor variables on the root mean square (RMS) and peak frequency in three bird species based on the linear mixed models (LMM).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Dependent variable</th>
+      <th>Predictors</th>
+      <th>Estimate</th>
+      <th>t</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Hooded crow</td>
+      <td rowspan="2">RMS</td>
+      <td>Lockdown_status</td>
+      <td>0.064</td>
+      <td>0.148</td>
+      <td>0.883</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>0.354</td>
+      <td>7.054</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Peak frequency</td>
+      <td>Lockdown_status</td>
+      <td>–5.99E-04</td>
+      <td>–0.601</td>
+      <td>0.552</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>9.17E-05</td>
+      <td>0.728</td>
+      <td>0.468</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Rose-ringed parakeet</td>
+      <td rowspan="2">RMS</td>
+      <td>Lockdown_status</td>
+      <td>1.065</td>
+      <td>3.290</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>0.470</td>
+      <td>7.772</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Peak frequency</td>
+      <td>Lockdown_status</td>
+      <td>3.93E-03</td>
+      <td>3.235</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>1.34E-04</td>
+      <td>0.783</td>
+      <td>0.435</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Graceful prinia</td>
+      <td rowspan="2">RMS</td>
+      <td>Lockdown_status</td>
+      <td>0.208</td>
+      <td>0.475</td>
+      <td>0.635</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>0.844</td>
+      <td>9.449</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Peak frequency</td>
+      <td>Lockdown_status</td>
+      <td>1.31E-04</td>
+      <td>0.083</td>
+      <td>0.935</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>2.40E-03</td>
+      <td>0.928</td>
+      <td>0.357</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88064/elife-88064-fig3-v1.jpg)
+
+**Figure 3.:** (B) Rose-ringed parakeets and (C) Graceful prinia. Red colors and blue colors represent data collected during no lockdown and during lockdown, respectively (each point represents the average over 1 day). Square: Residences; Circle: Roads; Triangle: Parks. The lines represent regression lines (solid line: Lockdown and No lockdown together; black dashed line: Lockdown; red black dashed line: No lockdown). The equations of the linear fits: y=0.124 x – 10.554 (Hooded crow; Lockdown; n=264); y=0.075 x – 10.877 (Hooded crow; No lockdown; N=119); y=0.521 x+1.705 (Rose-ringed parakeet; Lockdown; n=184); y=0.143 x – 9.204 (Rose-ringed parakeet; No lockdown; n=82); y=0.993 x+8.354 (Graceful prinia; Lockdown; n=108); y=0.876 x+5.110 (Graceful prinia; No lockdown; n=49). There were significant and positive relationships between ambient noise levels and vocal intensity for all bird species (LMM, Hooded crows: n=448; t=7.054, p<0.0001; Rose-ringed parakeets: n=266; t=7.772, p<0.0001; Graceful prinia: n=157; t=9.449, p<0.0001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88064/elife-88064-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88064/elife-88064-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A-C) Car noise; (D) Motorcycle noise. Oscillograms (above), power spectrum (left) and spectrograms (below).
 
 ## Discussion
 
@@ -83,39 +1062,39 @@ Our results picture a complex and dynamic urban ecological system where animal a
 
 ## Materials and methods
 
-## Study site, species, and period
+### Study site, species, and period
 
 The study was conducted at 17 different sites in Tel-Aviv, Israel (Figure 1A and Figure 1—source data 1–3). The sites represent three different common habitats in this area: small parks, residential areas, and roads. They were randomly selected so that they are evenly distributed within the region of the study. We sampled four parks (sites 9, 10, 11, 15), seven roads (sites 7, 12, 13, 14, 16, 17, 18) and six residential sites (sites 3, 4, 5, 6, 8, 19). A device placed in a fifth park was stolen. We focused on three bird species that are common in this urban environment, that is Hooded crow, Rose-ringed parakeet and Graceful prinia. The vocalizations of these species are loud, highly repeatable and stereotypic (Figure 1B), making them rather easy for automatic recognition based on template matching (see next section).
 
 Spreading over a 2-month period, the first lockdown in which we performed our recordings had different levels of severity. In the beginning, the restrictions were strictly enforced with traffic on the roads decreasing almost to zero and with severe limitations imposed on human activity including a curfew preventing people from moving more than 100 m from home. Use of the parks was also not allowed and accordingly, they were empty. Over time though, the enforcement was loosened, and human activity gradually returned to normal until the official removal of the lockdown. Using acoustic monitoring and automatic identification of three bird species, we compared bird and human activity during lockdown to a short period immediately after lockdown assuming that changes in activity between these adjacent time periods might be attributed to the lockdown (rather than to other environmental factors). We also account for seasonality by including environmental parameters (e.g. ambient temperature) in our models. It is important to note that all recordings were made during the breeding season of the three species. We would like to note that in terms of breeding, all birds were within the same state during both the lockdown and the non-lockdown periods. Parakeets and crows have a long breeding season Feb-end of June with one cycle. They will stay around the nest throughout this season and especially in the peak of the season March-May. Prinias start slightly later at the beginning of March with 2–3 cycles till end of June.
 
-## Acoustic survey
+### Acoustic survey
 
 At each site, we installed one recording device, Audiomoth (Hill et al., 2018), on a tree trunk or a hedge at 2–4 m above the ground. We set the recorders to record 30 s every 2 min (30 s of recording, 1.5 min of pause) continuously during day and night with a sampling frequency of 192 kHz. Recording was performed in 4 time-bouts during spring 2020, the peak of birds breeding season. Three of the sampling periods were during the lockdown: 25.3.2020–9.4.2020 (15 days), 24.4.2020–3.5.2020 (10 days) and 7.5.2020–16.5.2020 (10 days) and one sampling period was immediately after the removal of the lockdown 21.5.2020–30.5.2020 (10 days). We only sampled 10 days after the lockdown to minimize seasonal changes. We also controlled for the uneven lockdown/no lockdown sampling periods by randomly choosing five sub-samples of 10 lockdown days each, and comparing them to the no-lockdown period. This sampling generated an audio dataset of 388,080 files (30 seconds each). Detailed sampling times for each site are provided in Supplementary file 1p and q.
 
-## Automatic acoustic identification and bird activity
+### Automatic acoustic identification and bird activity
 
 Because we only focused on birds (whose call frequencies remain below 10 kHz), to ease file handling, all audio files were first resampled to 22.05 kHz before further analysis (following low-pass-filtering to avoid aliasing). We also high-pass filtered the files with a cutoff at 1 kHz to minimize the interference of low-frequency noise (this was not applied when estimating ambient noise). For each species, we selected a very common syllable (Figure 1B) which is typically used for conspecific communication, mostly serving as alarm or attachment calls in C. corone and P. krameri and as territorial songs in P. gracilis. To build an automatic identifier, we first manually selected 138 syllables of C. corone cornix, 173 syllables of P. krameri and 140 syllables of P. gracilis from a worldwide citizen science database of bird recordings (xeno-canto; http://www.xeno-canto.org/). These syllables were used as acoustic templates. We then used spectrogram image cross-correlation to automatically classify sound recordings using Avisoft SASLab Pro 5.1 (R. Specht, Avisoft Bioacoustics, Glienicke, Germany). Spectrogram image cross-correlations is a method for measuring maximum similarity between the spectrograms of the template and the recordings at different time shifts. The output similarity index is a value ranging from 0 to 1. The higher the similarity index, the higher the similarity between template and audio (with 1 meaning that the two spectrograms are identical), and hence the higher the probability that the bird vocalization occurs in the recording. We set the identification threshold to 0.5, and then we manually scrutinized all files with vocalizations above this threshold to make sure that no calls were missed. This high threshold also ensured that we only used high Signal-to-Noise-Ration vocalizations as very weak vocalizations did not correlate with our high-quality templates.
 
 We referred to each file (30 s long) as an ‘event’. That is, if we detected a vocalization of one of the three focal species within the file – we considered this as one occurrence of that species. The daily number of events was then used as a proxy for activity in our models (below). Hence, we used three variables to quantify bird activity: (1) The daily number of audio files, which included bird vocalizations of a specific species, was used as a proxy for the daily activity of this species and (2) the daily coefficient of variance (the standard deviation divided by the mean) of the number of audio files estimated in 30 min bins as a proxy of activity variability. (3) We also tested another model in which we used the total number of syllables per file (and not a binary 0/1 value) as the measurement of bird activity.
 
-## Vocalization analysis
+### Vocalization analysis
 
 Because our results showed that the ambient noise levels during no lockdown were higher than during lockdown (see Results section), we further investigated whether birds modified their vocalizations to mitigate noise interference. We measured two acoustic parameters: (1) To assess changes in calling intensity, we estimated the root mean square (RMS) sound pressure computed over a window defined by a threshold of 20 dB below the peak of the vocalization and (2) To estimate changes in song pitch, we estimated the peak frequency of the vocalizations, that is the frequency with maximum amplitude. Both parameters were estimated from spectrograms computed with the following parameters: Fast Fourier transform with a 512 window; a Hamming window and a 75% overlap between windows, resulting in a temporal resolution of 5.8ms and a frequency resolution: 43 Hz. Vocalizations were analyzed using Avisoft SASLab Pro 5.1.
 
-## Environmental data
+### Environmental data
 
 We estimated two environmental parameters in the study area: (1) the ambient temperature, (2) the ambient noise level. The environment’s temperature was obtained from the Israeli Meteorological service (https://ims.gov.il/en). The temperature was recorded every 10 min. The average temperature of each day was used for the analysis. To estimate ambient noise, we used the average daily sound power as a proxy for ambient noise (at each site). For each bird species, we assessed the noise at the peak-frequency of its vocalization, thus estimating the relevant noise for the species (i.e. Hooded crow: 1600 Hz; Rose-ringed parakeet: 4000 Hz; Graceful prinia: 5000 Hz). We also examined another noise parameter where the noise was estimated as the power under 1 kHz for all species but this did not alter the results (see Supplementary file 1r and s).
 
-## Human activity
+### Human activity
 
 To quantify human activity, we ran a random forest classifier implemented using the ‘TreeBagger’ Matlab function. Firstly, we randomly chose a set of 5960 one second samples from the recording data (taken from all sites). In each site, samples were taken over a 24 hr period from a random day (from both lockdown and no lockdown periods). Second, the content of each of these 5960 samples was identified by listening and identifying the presence of human speech sounds. In total, there were 1294 speech samples and 4666 samples without speech. Third, the 5960 samples were divided into a ‘training’ set (80% of the samples) and a ‘test’ set (20% of the samples). The balanced accuracy of the classifier was 75%. Notably, this is far above chance, but more importantly, the accuracy was the same for lockdown and non-lockdown periods so that the comparison between them was fair (and this was our main interest). Finally, we ran the classifier on all recordings and counted the number of speech sounds per 30 s as a proxy for human activity. Note that this method assesses human pedestrian (and not car) activity while the noise measurement (previous section) refers mostly to car noise (Figure 3—figure supplement 2).
 
-## Discriminant function analysis
+### Discriminant function analysis
 
 DFA analysis was run in SPSS v20.0 (SPSS Inc, Chicago, IL, U.S.A.) using a leave-one-out-cross-validation procedure. Activity was normalized across sites to a range between 0–1 and we defined 5 levels of activity 0–0.2, 0.2–0.4, 0.4–0.6, 0.6–0.8 and 0.8–1.0. The success of the DFA was determined with a binomial test comparing the DFA’s classification performance to a random classification (i.e. chance level of 20%). The prior probabilities of the DFA classes were adjusted to be equal.
 
-## Statistics
+### Statistics
 
 To assess the effects of different predictor factors on activity, we run generalized linear mixed models (GLMM) with a Poisson distribution using the function ‘glmer’ in the R package ‘lmerTest’ (Kuznetsova et al., 2017). We tested the following predictors: the lockdown status (yes/no), ambient temperature, ambient noise, bird species (removed when analyzing each species separately), site category (road, park, residential), human activity and the following interactions: the lockdown status and bird species (removed when analyzing each species separately), the lockdown status and site category, the lockdown status and the count-down (the count-down variable represented the days from the beginning of each lockdown phase to account for temporal dependencies and to represent accumulated effects), the lockdown status and noise. Bird activity was used as the response variable, and the sampling site and sampling time were used as random effects.
 

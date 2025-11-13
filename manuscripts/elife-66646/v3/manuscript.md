@@ -19,15 +19,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01rxvg760 Department of Periodontology, Nanjing Stomatological Hospital, Medical School of Nanjing University Nanjing China
-2. https://ror.org/045pn2j94 BGI Genomics, BGI-Shenzhen Shenzhen China
-3. https://ror.org/02v51f717 Academy for Advanced Interdisciplinary Studies, Peking University Beijing China
+1. Department of Periodontology, Nanjing Stomatological Hospital, Medical School of Nanjing University Nanjing China ([ROR:01rxvg760](https://ror.org/01rxvg760))
+2. BGI Genomics, BGI-Shenzhen Shenzhen China ([ROR:045pn2j94](https://ror.org/045pn2j94))
+3. Academy for Advanced Interdisciplinary Studies, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
 
 † Corresponding author
 
 ## Abstract
 
-Hereditary gingival fibromatosis (HGF) is the most common genetic form of gingival fibromatosis which is featured as a localized or generalized overgrowth of gingivae. Currently two genes ( SOS1 and REST ), as well as four loci (2p22.1, 2p23.3–p22.3, 5q13–q22, and 11p15), have been identified as associated with HGF in a dominant inheritance pattern. Here, we report 13 individuals with autosomal-dominant HGF from a four-generation Chinese family. Whole-exome sequencing followed by further genetic co-segregation analysis was performed for the family members across three generations. A novel heterozygous missense mutation (c.2812G > A) in zinc finger protein 862 gene ( ZNF862 ) was identified, and it is absent among the population as per the Genome Aggregation Database. The functional study supports a biological role of ZNF862 for increasing the profibrotic factors particularly COL1A1 synthesis and hence resulting in HGF. Here, for the first time we identify the physiological role of ZNF862 for the association with the HGF.
+Hereditary gingival fibromatosis (HGF) is the most common genetic form of gingival fibromatosis which is featured as a localized or generalized overgrowth of gingivae. Currently two genes (SOS1 and REST), as well as four loci (2p22.1, 2p23.3–p22.3, 5q13–q22, and 11p15), have been identified as associated with HGF in a dominant inheritance pattern. Here, we report 13 individuals with autosomal-dominant HGF from a four-generation Chinese family. Whole-exome sequencing followed by further genetic co-segregation analysis was performed for the family members across three generations. A novel heterozygous missense mutation (c.2812G > A) in zinc finger protein 862 gene (ZNF862) was identified, and it is absent among the population as per the Genome Aggregation Database. The functional study supports a biological role of ZNF862 for increasing the profibrotic factors particularly COL1A1 synthesis and hence resulting in HGF. Here, for the first time we identify the physiological role of ZNF862 for the association with the HGF.
 
 ## Introduction
 
@@ -43,6 +43,290 @@ This four-generation pedigree with HGF was shown in Figure 1A. Visual inspection
 
 **Figure 1.:** (A) The black arrow indicates the proband. The affected individuals are indicated with black-filled boxes in this family. Whole-exome sequencing (WES) was performed for the proband and nine other members (numbers indicated in red color). (B) The photographs of gingival overgrowth are revealed by intraoral examination in affected members compared with in the unaffected member in this family. (C) In this family, all affected individuals harbor the heterozygous variant (c.2812G > A) whereas the unaffected individuals are wild-type. (D) Schematic structure with putative domains of ZNF862 protein and the localization of the novel variant (red arrows). Green rectangles indicate KRAB (krueppel-associated box) domains; yellow rectangles indicate ZnF_TTF (zinc finger in transposases and transcription factors) domains; blue rectangle indicates Dimer_Tnp_hAT (hAT family C-terminal dimerization region) domain.
 
+**Table 1.**
+ Clinical Characteristics of the individuals in this family.NA = Not available.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Members</th>
+      <th>Identified variant</th>
+      <th>Age at last exam</th>
+      <th>Gender</th>
+      <th>Gingival fibromatosis</th>
+      <th>Age of onset</th>
+      <th>Exposure to medication</th>
+      <th>Gingivectomy/recurrence</th>
+      <th>Other clinical finding</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ⅱ–1</td>
+      <td>Wild type</td>
+      <td>67 years</td>
+      <td>Male</td>
+      <td>−</td>
+      <td>–</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅱ–2</td>
+      <td>p.A938T (ZNF862)</td>
+      <td>70 years</td>
+      <td>Female</td>
+      <td>+</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>Hypertension</td>
+    </tr>
+    <tr>
+      <td>II-3</td>
+      <td>p.A938T (ZNF862)</td>
+      <td>66 years</td>
+      <td>Male</td>
+      <td>+</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>II-4</td>
+      <td>Wild type</td>
+      <td>66 years</td>
+      <td>Female</td>
+      <td>−</td>
+      <td>–</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>II-5</td>
+      <td>Wild type</td>
+      <td>64 years</td>
+      <td>Male</td>
+      <td>−</td>
+      <td>–</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>II-6</td>
+      <td>Wild type</td>
+      <td>64 years</td>
+      <td>Female</td>
+      <td>−</td>
+      <td>–</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅱ–7</td>
+      <td>Wild type</td>
+      <td>62 years</td>
+      <td>Male</td>
+      <td>−</td>
+      <td>–</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅱ–8</td>
+      <td>p.A938T (ZNF862)</td>
+      <td>60 years</td>
+      <td>Female</td>
+      <td>+</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅱ–9</td>
+      <td>Wild type</td>
+      <td>54 years</td>
+      <td>Female</td>
+      <td>−</td>
+      <td>–</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅲ–1</td>
+      <td>Wild type</td>
+      <td>49 years</td>
+      <td>Female</td>
+      <td>−</td>
+      <td>–</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅲ–2</td>
+      <td>p.A938T (ZNF862)</td>
+      <td>47 years</td>
+      <td>Male</td>
+      <td>+</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅲ–3</td>
+      <td>p.A938T (ZNF862)</td>
+      <td>45 years</td>
+      <td>Female</td>
+      <td>+ (mild)</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅲ–4</td>
+      <td>p.A938T (ZNF862)</td>
+      <td>41 years</td>
+      <td>Male</td>
+      <td>+</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅲ–5</td>
+      <td>Wild type</td>
+      <td>36 years</td>
+      <td>Female</td>
+      <td>−</td>
+      <td>–</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅲ–6</td>
+      <td>p.A938T (ZNF862)</td>
+      <td>36 years</td>
+      <td>Male</td>
+      <td>+</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>III-7</td>
+      <td>p.A938T (ZNF862)</td>
+      <td>34 years</td>
+      <td>Female</td>
+      <td>+</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>III-8</td>
+      <td>Wild type</td>
+      <td>32 years</td>
+      <td>Female</td>
+      <td>−</td>
+      <td>–</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅲ–9</td>
+      <td>Wild type</td>
+      <td>30 years</td>
+      <td>Male</td>
+      <td>−</td>
+      <td>–</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅳ–1</td>
+      <td>p.A938T (ZNF862)</td>
+      <td>26 years</td>
+      <td>Male</td>
+      <td>+</td>
+      <td>6–7 years</td>
+      <td>No</td>
+      <td>+/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅳ–2</td>
+      <td>p.A938T (ZNF862)</td>
+      <td>22 years</td>
+      <td>Female</td>
+      <td>+</td>
+      <td>6–7 years</td>
+      <td>No</td>
+      <td>+/+ (mild)</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅳ–3</td>
+      <td>p.A938T (ZNF862)</td>
+      <td>13 years</td>
+      <td>Female</td>
+      <td>+</td>
+      <td>2–3 years</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅳ–4</td>
+      <td>Wild type</td>
+      <td>11 years</td>
+      <td>Female</td>
+      <td>−</td>
+      <td>–</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ⅳ–5</td>
+      <td>p.A938T (ZNF862)</td>
+      <td>7 years</td>
+      <td>Male</td>
+      <td>+</td>
+      <td>2–3 years</td>
+      <td>No</td>
+      <td>-/-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Whole-exome sequencing (WES) was performed for the proband and nine other members (numbers indicated in red color in Figure 1A) in the family according to previously described protocols (Zhang et al., 2015). After analyzing all single nucleotide variants (SNVs) and indels for each gene including the promoter region, exons, splicing sites, introns, and untranslated region (UTR), only three variants ATP7B (c.3403G > A), CDADC1 (c.83–13G > T), ZNF862 (c.2812G > A) were identified to be co-segregated with the phenotype among the 10 family members who underwent WES. To further screen and validate the potential disease-causing variants co-segregation with the phenotype in this pedigree, conventional PCR was performed for sanger sequencing evaluation. Eventually, only ZNF862 (c.2812G > A), no any other variant, was validated to be co-segregated with the phenotype in all 23 alive members in this family, as is shown in Figure 1C.
 
 ZNF862 gene harbors eight exons, encodes a 1169-amino acid protein, and is located on chromosome 7q36.1. It does not escape our notice that ZNF862 does not map to any one of the loci that were reported previously as be associated with HGF. ZNF862 is a predicted intracellular protein which function, to the best of our knowledge, is not yet clearly identified, as a zinc finger protein it may be involved in transcriptional regulation. ZNF862 is expressed ubiquitously across tissues (Fagerberg et al., 2014), it may play various roles under different physiological condition. Schwartz et al., 2019, suggested a plausible role of ZNF862 in matrix-producing metaplastic carcinoma. Peng et al., 2018, reported ZNF862 associated with IgE-mediated type-I hypersensitivity in children. The WES-identified heterozygous variant (p.A938T) in our study located close to and upstream of the Dimer_Tnp_hAT (hAT family C-terminal dimerization region) domain of ZNF862 protein (Figure 1).
@@ -50,6 +334,22 @@ ZNF862 gene harbors eight exons, encodes a 1169-amino acid protein, and is locat
 The pathophysiological mechanisms underlying HGF remain largely elusive. Nevertheless, overproduction of extracellular matrix, particularly the major component collagen type I (COL1A1), may account for the gingival fibroblast overgrowth phenotype; meanwhile increased synthesis of TIMP-1 seems to be associated with COL1A1 excessive accumulation in HGF gingival fibroblasts (Gawron et al., 2018; Roman-Malo et al., 2019). Besides, Martelli-Junior et al. reported that overexpression of TGF-β1 and IL-6 in gingival fibroblasts play pivotal roles in increasing the synthesis of the COL1A1 along with other specific growth factors (Martelli-Junior et al., 2003). Systematically, transcriptomic analysis of HGF patients and controls performed by Han et al., 2019, demonstrated that regulatory network connection of TGF-β/SMAD signaling pathway and craniofacial development processes contributes to the molecular mechanism of clinical-pathological manifestations.
 
 Aiming to explore the underlying mechanism related to the ZNF862 mutation, RNA sequencing was performed according to previously described protocols (Liang et al., 2019). The primary fibroblasts were isolated from fibromatic gingival specimens obtained from two patients who underwent gingivectomy (IV-1 and IV-2) using standard explant culture as described previously (de Andrade et al., 2001), while control cells were obtained from four independent age- and gender-matched controls who underwent crown lengthening surgery for the restorative purpose. The genes expression profiling and changes in patients over controls were summarized in Supplementary file 1, the samples average counts per million mapped reads (CPM) for each gene is shown, the expression fold-change (FC) and their statistical significance false discovery rate (FDR) are also provided. The expression profiling of attested profibrotic genes (Gao et al., 2019), which may be involved in HGF, was interrogated (Figure 2A). A part of such genes, including COL1A1, TGFB1/2, and SMAD1, was up-regulated in HGF fibroblasts compared with controls; whereas another part was down-regulated, suggesting that the special HGF in our study was attributed to a corresponding part of profibrotic factors, including TGF-β/SMAD1 signaling pathway and COL1A1. Besides RNA sequencing, the in vitro cultured gingival fibroblasts from control 1 underwent adenovirus-mediated delivery of short hairpin RNA (shRNA) targeting ZNF862. The expression of four most significant genes ACTA2, FOS, SMAD1, AGT, as well as COL1A1, under shRNA treatment were investigated (Figure 2B), the knockdown of ZNF862 in control gingival fibroblasts leads to the profibrotic genes up-regulation, reminiscent of the expression in the patients. Here, we speculate that the ZNF862 mutation in patients attenuate the protein function, similar with the ZNF862 shRNA, and promote special profibrotic genes expression to result in the HGF trait. Meanwhile, it did not escape our notice that the causative gene SOS1 was mildly down-regulated, which may be associated with the phenotype (Figure 2 and Figure 2—figure supplement 3). Nevertheless, the proliferation in control gingival fibroblasts was not significantly stimulated by the knockdown of ZNF862 during 5 days’ culture period (Figure 2—figure supplement 2), which may be partially resulting from the too short time course to observe the sophisticated physiological effect.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66646/elife-66646-fig2-v3.jpg)
+
+**Figure 2.:** (A) Heatmap of the 70 attested profibrotic genes expression profiling in RNA sequencing. Rows represent genes and columns represent samples. The heatmap is color-coded based on an average normalization; red represents high expression value and green represents low expression value. (B) Real-time PCR analysis of ACTA2, FOS, SMAD1, AGT, COL1A1, and ZNF862 mRNA abundance in untreated (Un), adenovirus delivered scrambler (Sc), adenovirus delivered ZNF862 short hairpin RNA (shRNA) 1 (S1), and adenovirus delivered ZNF862 shRNA 2 (S2) groups, respectively. Results are given as means ± SEM, dots indicate the relative values of gene expression levels. *p < 0.05, **p < 0.01 in comparison with Sc group. N.S. means not significant. (C) Heatmap of the 100 most up-regulated differentially expressed (DE) genes and 100 most down-regulated DE genes expression profiling in RNA sequencing. The color key is the same with (A). (D) Functional annotation chart of DE genes, the 20 most significantly enriched functions of DE genes were plotted. Functional pathways enrichment tests were based on KEGG database. Enrichment denotes the proportion of DE genes among the indicated pathway.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66646/elife-66646-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The transcriptomic comparison of HGF patients and controls yielded 597 differentially expressed (DE) transcripts (red dots) with a flexible cut-off (|log2 fold-change (FC)| ≥ 1.0 and false discovery rate (FDR) < 0.05), of which 355 up-regulated while 242 down-regulated DE transcripts were posited. The FC correlation and statistical significance is shown in the volcano plot. (B) The FC correlation and log2 counts per million mapped reads (CPM) is shown in the MA plot.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66646/elife-66646-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** CCK8 proliferation assay in untreated control (UN), adenovirus delivered scrambler (SC), adenovirus delivered ZNF862 short hairpin RNA (shRNA) 1 (S1), and adenovirus delivered ZNF862 shRNA 2 (S2) fibroblasts, respectively. Results are given as means ± SEM. *p < 0.05, **p < 0.01 in comparison with control group.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/66646/elife-66646-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Real-time PCR analysis of SOS1 mRNA abundance in untreated (Un), adenovirus delivered scrambler (Sc), adenovirus delivered ZNF862 short hairpin RNA (shRNA) 1 (S1), and adenovirus delivered ZNF862 shRNA 2 (S2) groups, respectively. Results are given as means ± SEM, dots indicate the relative values of gene expression levels. *p < 0.05, **p < 0.01 in comparison with Sc group. N.S. means not significant.
 
 To screen all the genes differentially expressed (DE) between patients and controls, we quantified genes whose expression changed over twofold (|log2 FC| ≥ 1.0), and we employed a cut-off of FDR < 0.05 due to the statistical power limitation of the small number of entire samples (N = 6). Finally, the transcriptomic comparison of HGF patients and controls yielded 597 DE transcripts, 355 up-regulated while 242 down-regulated (Figure S1). Of which, the 100 most up-regulated DE genes and 100 most down-regulated DE genes (Supplementary file 2) were shown in Figure 2C, furthermore the top 10 genes were illustrated accordingly. These DE genes probably correlated with the HGF trait. The 20 most significantly enriched functional pathways of all DE genes were shown (Figure 2D). Thereinto, lipoic acid metabolism is the most enriched cluster; notably the MAPK signaling pathway is associated with IL-6 pathway, besides several infection-related clusters in this chart is related with IL-6-induced autophagy pathway.
 
@@ -59,11 +359,11 @@ In this study, we identify a missense variant (c.2812G > A) in a novel gene ZNF8
 
 ## Materials and methods
 
-## Samples collection and WES
+### Samples collection and WES
 
 The participants from this family were recruited from Nanjing Stomatological Hospital. The genomic DNA was extracted from the peripheral blood. WES was performed for probands and nine other members (numbers indicated in red color in Figure 1A) in the family. Average WES sequencing depth of target region for each sample was higher than 100, and 20× coverage for more than 95% targeted bases was achieved for each sample. Sequencing reads were aligned to the human genome reference sequence (hg19) through the in-house programs. Genome Analysis Toolkit (GATK) was used to call SNVs and indels; and Annotation of Genetic Variants (ANNOVAR) was used for the annotation. A custom Perl script (Source code 1) was used for retrieving the variants corresponding to the inheritance model of this family and that do not appear in unaffected individuals. All the WES data underwent the same quality control filtering and pruning procedures to maximize parity. The following primers are used to amplify products for Sanger sequencing: ZNF862 (NM_001099220.3) forward: 5'-TCATGCGCGGCTTCCACTTTGT; reverse: 5'-AGCACTCGAAATACCTGGCCAG; ATP7B (NM_000053.4) forward: 5'-TCCAGTCGGTAACCTGTTCAC; reverse: 5'-GCACAGCAGAGGCAATCAC; CDADC1 (NM_030911.4) forward: 5'-CGACTAAGGCTGAAGCGTCT; reverse: 5'-AATTGGGGGAAATTATGTGG.
 
-## Transcriptome sequencing
+### Transcriptome sequencing
 
 The primary fibroblasts were isolated from fibromatic gingival specimens obtained from the patients who underwent gingivectomy (IV-1 as patient 1 and IV-2 as patient 2) using standard explant culture, while control cells were obtained from independent age- and gender-matched controls (two males at 25 and 26 years of age as controls 1 and 2, respectively, and two females at 21 and 23 years of age as controls 3 and 4, respectively) who underwent crown lengthening surgery for the restorative purpose.
 
@@ -71,16 +371,16 @@ Total RNA samples were extracted from the cultured fibroblast cells using Trizol
 
 Raw data were processed through an in-house bioinformatics workflow. Paired-end clean reads were aligned to the reference genome ensembl release-97 (http://asia.ensembl.org/Homo_sapiens/Info/Index) using Hisat2 v2.0.5, featureCounts v1.5.0-p3 was used to count the reads numbers mapped to each gene. And then the CPM and fragments per kilobase of transcript per million mapped reads (FPKM) of each gene was calculated based on the length of the gene and reads count mapped to this gene. At least 45 million clean mapped reads per sample were yielded. The clean bases after filtration for each sample are higher than 6.7 Giga-base, with the effective rate higher than 99.7%, the Q20 bases is higher than 94% for each sample. The GC content for each sample is ranging from 51% to 55%. DE analysis of two groups (patients and controls) was performed using the edgeR R package (3.22.5). The resulting p-values were adjusted using the Benjamini and Hochberg’s approach for controlling the FDR. Corrected p-value of 0.05 and absolute FC of 2 were set as the threshold for significantly DE. We used clusterProfiler R package to test the statistical enrichment of DE genes in KEGG pathways, corrected p-value less than 0.05 was considered significantly enriched. KEGG is a database resource for understanding high-level functions and utilities of the biological system (http://www.genome.jp/kegg/).
 
-## ShRNA interference
+### ShRNA interference
 
 Besides RNA sequencing, the in vitro cultured fibroblasts (from control 1, control 2, and control 3, respectively) underwent adenovirus-mediated delivery of shRNA targeting ZNF862, the following sequences were used for the ZNF862 shRNA interference experiments, ZNF862 shRNA 1: GCTCTGTTCTGCTCTGCTTGC; ZNF862 shRNA 2: GGATTTACATCCGCTACTTCA; scrambler: GCACCCAGTCCGCCCTGAGCAAA, at 72 hr after the adenovirus-mediated U6 promoter-driven shRNA delivered into the cells (MOI = 70) real-time PCR was performed using 18s rRNA as an internal control. Cells between the third and sixth passages were used for all abovementioned experiments. The following primers are used to amplify products for the real-time PCR: FOS (NM_005252) forward: 5'-GCCGGGGATAGCCTCTCTTACT; reverse: 5'-CCAGGTCCGTGCAGAAGTC; SMAD1 (NM_001003688) forward: 5'-AGAGACTTCTTGGGTGGAAACA; reverse: 5'-ATGGTGACACAGTTACTCGGT; AGT (NM_000029) forward: 5'-GCTGACAGGCTACAGGCAATC; reverse: 5'-TGTGAACACGCCCACCACC; CCL2 (NM_002982) forward: 5'-CAGCCAGATGCAATCAATGCC; reverse: 5'-TGGAATCCTGAACCCACTTCT; COL1A1 (NM_000088.3) forward: 5'-GAGTCTACATGTCTAGGGTCT; reverse: 5'-CACGTCATCGCACAACACCT; ZNF862 (NM_001099220.3) forward: 5'-CTTACTCCAGGAGGAATGGGT; reverse: 5'-CTCCCATGTAGCCCATCTGT; ACTA2 (NM_001613.3) forward: 5'-CCAGACATCAGGGGGTGAT; reverse: 5'-TGGTGCCAGATCTTTTCCAT; FN1 (NM_001365524.2) forward: 5'-CCATAAAGGGCAACCAAGAG; reverse: 5'-AAACCAATTCTTGGAGCAGG; SOS1 (NM_005633.4) forward: 5'- GAAACCCTTTATCTCTCCCAGT; reverse: 5'- CTTGTCAGCACACATTGCCACT; 18srRNA (NR_145822.1) forward: 5'-CGAACGTCTGCCCTATCAACT; reverse: 5'-CAGACTTGCCCTCCAATGGATCCTCGTT.
 
-## Proliferation assay
+### Proliferation assay
 
 Cell Counting Kit 8 (CCK8, Dojindo Molecular Technologies) proliferation assay was performed with the above-mentioned in vitro cultured fibroblasts. The cells in the logarithmic growth phase were plated overnight in a 96-well plate at an initial density of 2000 per well. Starting with adenovirus infection (MOI = 70), 10 μl CCK8 per well was added to the culture medium on the days 1, 2, 3, 4, and 5. The fluorescent optical density value was measured using a microplate reader. The in vitro cultured fibroblasts underwent adenovirus-mediated delivery of ZNF862 siRNA (NM_001099220.3).
 
-## Statistical analysis
+### Statistical analysis
 
 All data from the semi-quantitative real-time PCR analyses are representative of at least three independent experiments. Data are presented as the mean ± SEM of at least three independent experiments and differences (in comparison with Sc group) are considered statistically significant at p < 0.05 using Student’s t-test. *p < 0.05, **p < 0.01. N.S. means not significant. All analyses were performed using R v4.0.2.
 
-## Web resources
+### Web resources

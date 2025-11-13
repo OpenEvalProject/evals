@@ -21,6 +21,158 @@ Detecting danger is key to the survival and success of all species. Animal nervo
 
 As multicellular organisms evolved increasing complexity, molecular mechanisms for sensing the environment arose in both the immune and nervous systems. Although the immune and nervous systems are traditionally studied independently, growing evidence suggests shared evolutionary requirements drove integration of both systems at the genomic, molecular, cellular, and tissue levels. In mammals, the immune and nervous systems deploy coordinated mechanisms for pathogen recognition and control. Notably, reciprocal regulation occurs at several layers: neuronal signals fine-tune the strength of immune responses, whereas mechanisms traditionally associated with immunity mediate neural growth, development, and function (Aurora and Olson, 2014; Cardoso et al., 2017; Chu et al., 2020; Foster et al., 2017; Gonzalez-Figueroa et al., 2021; Pinho-Ribeiro et al., 2017; Ramirez et al., 2020; Zigmond and Echevarria, 2019). These bidirectional, complex interactions are the product of millennia of coevolution and lie at the heart of many physiological processes (Chesné et al., 2019; Huh and Veiga-Fernandes, 2020; Jain et al., 2020). Throughout metazoan evolution, the immune and nervous systems have developed into complementary processes to achieve an imperative function: sense the environment and detect danger. As a result, neuroscientists and immunologists continue to uncover molecules with dual functions in both physiological systems (Table 1 and reviewed by Kolosowska et al., 2019; Minnone et al., 2017; Ni and Gilbert, 2017; Stevens et al., 2007; Yang et al., 2016).
 
+**Table 1.**
+ Molecules with dual roles in the immune and nervous systems.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Factors classically associated with immune functions</th>
+    </tr>
+    <tr>
+      <th colspan="2">Protein</th>
+      <th>Immune system properties</th>
+      <th>Nervous system properties</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Antimicrobial peptides (AMPs)</td>
+      <td>Secreted by epithelial and phagocytic cellsDisrupt microbial membranes leading to destruction of pathogen</td>
+      <td>Antimicrobial in nervous system nichesControl chemotaxis of immune cells and astrogliaMediate iron homeostasisModulate nerve impulsesImplicated in aging and neurodegeneration</td>
+      <td>Hanson et al., 2019; Lezi et al., 2018; Su et al., 2010; Zasloff, 2002</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Cytokines</td>
+      <td>TGF-β</td>
+      <td>Produced by all leukocytesRegulates hemocyte proliferationGenerally anti-inflammatoryInhibits B cell proliferationInfluences development of Tregs and TH17 cells</td>
+      <td>Produced by neuronsControls feeding behaviorAngio-suppressive roles in the brainRegulates neuronal development and axon outgrowth</td>
+      <td>Arnold et al., 2014; Arrieta-Bolaños et al., 2012; Eisenstein and Williams, 2009; Hirota et al., 2015; Makhijani et al., 2017; Morishima et al., 2009; Singh and Aballay, 2019; Yi et al., 2010; You et al., 2008; Zheng et al., 2006</td>
+    </tr>
+    <tr>
+      <td>IL-4, IL-13</td>
+      <td>Induce TH2 antiparasitic immunity, tissue repair, allergic responses</td>
+      <td>Regulate spatial learning and neurogenesisBias astrocytes and microglia toward M2/neuroprotective statesMediate oligodendrocyte growth and re-myelination</td>
+      <td>Fallon et al., 2002; Gadani et al., 2012; Kolosowska et al., 2019; McKenzie et al., 1998; Yang et al., 2016; Zhang et al., 2019a</td>
+    </tr>
+    <tr>
+      <td>TNF-α</td>
+      <td>Pro-inflammatory functions</td>
+      <td>Expressed in neurons after damage for acute protectionLong-term presence in the CNS is associated with decreased proliferation and neurogenesisAlters permeability of the blood-brain barrierInduces changes in sleep behavior</td>
+      <td>Borsini et al., 2015; Lambertsen et al., 2009; Liu et al., 1994; Takei and Laskey, 2008; Vanderheyden et al., 2018</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Complement System Proteins</td>
+      <td>Complement factors</td>
+      <td>Opsonize pathogens for activation of innate and adaptive immune cells</td>
+      <td>Anti-inflammatory roles during CNS infectionRegulate synaptic pruning of microglia expressing C3 receptorRegulate adult neurogenesis by causing increased maturation and migration of progenitors in SVZ and dentate gyrus</td>
+      <td>Hammad et al., 2018; Nonaka, 2001; Rupprecht et al., 2007; Shinjyo et al., 2009; Stevens et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Perforin-like factors</td>
+      <td>Pore-forming proteins released by cytotoxic leukocytesForm the membrane attack complex</td>
+      <td>﻿ASTNs and ﻿BRINPs are expressed in CNS and associated with neurodevelopment</td>
+      <td>Ni and Gilbert, 2017</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Pattern Recognition Receptors</td>
+      <td>Toll-like receptors (TLRs)</td>
+      <td>Detect extra- and intracellular pathogen and danger associated molecular patterns.</td>
+      <td>Regulate neuronal development, dendrite/axon growth and synapse formationRecognize neurotrophinsSensitize nociceptive neurons</td>
+      <td>Chen et al., 2019c; Donnelly et al., 2020; Foldi et al., 2017; Franzenburg et al., 2012; Lemaitre et al., 1996</td>
+    </tr>
+    <tr>
+      <td>Nod-like receptors (NLRs)</td>
+      <td>Detect intra-cellular pathogen and danger associated molecular patterns.</td>
+      <td>Immunomodulate glial cellsPrevents necrosis of neurons</td>
+      <td>Gharagozloo et al., 2017</td>
+    </tr>
+    <tr>
+      <td>﻿Peptidoglycan recognition protein LC (PGRP-LC)</td>
+      <td>Detects peptidoglycan</td>
+      <td>Controls presynaptic homeostasis</td>
+      <td>Harris et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Formyl peptide receptors (FPRs)</td>
+      <td>Expressed on macrophagesDetect pathogens and induce inflammation</td>
+      <td>Vomeronasal sensory neurons receptors</td>
+      <td>Dietschi et al., 2017</td>
+    </tr>
+    <tr>
+      <td colspan="2">Histamine</td>
+      <td>Released by mast cellsMediates vasodilation and itch</td>
+      <td>Modulates neurogenic inflammation and nociceptive inflammation and has been implicated in migrainesInduces NGF expression by peripheral nociceptors</td>
+      <td>Yuan and Silberstein, 2018</td>
+    </tr>
+    <tr>
+      <td colspan="5">Factors classically associated with neuronal functions</td>
+    </tr>
+    <tr>
+      <td colspan="2">Transient receptor potential (TRPs)</td>
+      <td>Expressed by lymphocytes, dendritic cells, neutrophils, monocytes, macrophages, and mast cells.Cause changes in intracellular Ca2+, which influences cell migration, cytokine production, phagocytosis and proliferation</td>
+      <td>Expressed by distinct subsets of sensory cellsMediate neuronal depolarization and release of CGRP</td>
+      <td>Alpizar et al., 2017; López-Requena et al., 2017; Parenti et al., 2016</td>
+    </tr>
+    <tr>
+      <td colspan="2">Nerve growth factor (NGF)</td>
+      <td>Released by mast cells, B lymphocytes.Increases during inflammationReceptor (TrkA) is expressed throughout immune systemTransduced NGF signal is anti-inflammatory</td>
+      <td>Stimulates growth, survival, and differentiation of neurons</td>
+      <td>Minnone et al., 2017; Pinho-Ribeiro et al., 2017; Takei and Laskey, 2008</td>
+    </tr>
+    <tr>
+      <td colspan="2">Brain-derived neurotrophic factor (BDNF)</td>
+      <td>Implicated in lymphocyte development and survival</td>
+      <td>Regulates neuron growth, survival and synapse modulation</td>
+      <td>Fauchais et al., 2008; Lee et al., 2012; Linker et al., 2015; Schuhmann et al., 2005</td>
+    </tr>
+    <tr>
+      <td colspan="2">Olfactory receptors</td>
+      <td>Activate pulmonary macrophage motility and CCL2 expressionHighly expressed in secondary lymphoid organs</td>
+      <td>Detect chemical odorants</td>
+      <td>Heimroth et al., 2020; Li et al., 2013</td>
+    </tr>
+    <tr>
+      <td colspan="2">Calcitonin gene related peptide (CGRP)</td>
+      <td>An anti-inflammatory cytokine that promotes type 2 immunityDecreases antigen presentation by MHC II, and inflammatory cytokine expressionIncreases expression of the anti-inflammatory cytokine IL-10Potent vasodilatorReleased by T and B lymphocytes</td>
+      <td>Mediates pain transduction by nociceptorsRegulates regeneration of peripheral neurons</td>
+      <td>Chung, 2017; Kerage et al., 2019; Pinho-Ribeiro et al., 2017; Xu et al., 2019</td>
+    </tr>
+    <tr>
+      <td colspan="2">Substance P</td>
+      <td>Secreted by microglia, T cells, macrophages, dendritic cells and eosinophilsAffects cytokine expression by binding to neurokinin receptor</td>
+      <td>Neuropeptide involved in nociception and neuroinflammation as well as hypotension and muscle contraction</td>
+      <td>Mashaghi et al., 2016</td>
+    </tr>
+    <tr>
+      <td colspan="2">Dopamine</td>
+      <td>Lymphocytes and myeloid cells express the dopamine receptorEnhances lymphocyte chemotaxis and maturationProduced by dendritic cells</td>
+      <td>Neurotransmitter</td>
+      <td>Kerage et al., 2019; Matt and Gaskill, 2020</td>
+    </tr>
+    <tr>
+      <td colspan="2">DSCAMs</td>
+      <td>Acts as a pattern recognition receptor that mediates phagocytosis in arthropods</td>
+      <td>Regulates axon/dendrite segregation during neuronal development</td>
+      <td>Goyal et al., 2019; Hattori et al., 2009; Ng and Kurtz, 2020</td>
+    </tr>
+    <tr>
+      <td colspan="2">NCAM/CD56</td>
+      <td>Present on NK cells, activated T cells and other cytotoxic cell subsets</td>
+      <td>Neuronal cell migration and synaptic plasticity</td>
+      <td>Van Acker et al., 2017; Vukojevic et al., 2020</td>
+    </tr>
+    <tr>
+      <td colspan="2">SNARE</td>
+      <td>Exocytosis of perforins, granzymes, and cytokines</td>
+      <td>Exocytosis of neurotransmitters</td>
+      <td>Ramakrishnan et al., 2012; Tang, 2015</td>
+    </tr>
+  </tbody>
+</table>
+
 Neuroimmune cell units (NICUs) have been described in mammals as discrete anatomical locations where immune and neuronal cells physically interact and regulate tissue physiology and defense (Godinho-Silva et al., 2019). Mammalian neuroimmune interactions are mediated by soluble factors such as neurotransmitters, neuropeptides, and cytokines (Table 1 and reviewed in Trakhtenberg and Goldberg, 2011). Neurons innervate lymphoid organs, thereby influencing immune cell migration and development in mammals (Huang et al., 2021). In turn, specialized immune cells are present throughout nervous tissues where they influence regenerative capabilities as well as regulate pain in response to noxious stimuli (Bloom, 2014; Jung et al., 2017; Pinho-Ribeiro et al., 2017; Huang et al., 2021). Specifically, in mammals, nociceptive neurons in the lung, gut, and skin detect bacteria and release neural mediators that bias the type and magnitude of the immune response toward neuroprotection from infection (Baral et al., 2018; Chiu et al., 2013; Gabanyi et al., 2016; Matheis et al., 2020). Despite the growing appreciation for NICUs in mammals, NICUs are largely unexplored across metazoans, although the soluble molecules and their homologs that mediate communication within NICUs are conserved across animals (Jékely, 2013; Liongue et al., 2016; Mittal et al., 2017; Roch and Sherwood, 2014).
 
 Preliminary work in invertebrate model organisms suggests that cooperation between the nervous and immune systems is a central aspect of animal life that extends beyond mammals. For example, C. elegans employ sensory neurons to mediate avoidance behavior in response to pathogenic bacteria and to suppress deleterious innate immune responses (Cao and Aballay, 2016; Hoffman and Aballay, 2019). Several branches of the innate immune system are missing in C. elegans and identification of pattern recognition receptors (PRRs) in nematodes is still elusive. Neurons and neurotypical receptors such as G-protein-coupled receptors (GPCRs) appear to compensate for this absence and govern innate immunity in C. elegans (Irazoqui et al., 2010; Pujol et al., 2001; Wani et al., 2020; Venkatesh and Singh, 2021). Another example may be Hydra, another basal metazoan with a simple body plan where the TLR signaling pathway appears to have degenerated and neuronally secreted antimicrobial neuropeptides sense and control microorganisms (Augustin et al., 2017; Table 1). Thus, while morphologically simple animals like C. elegans and Hydra may not have discrete anatomical associations of immune effector cells and neurons such as mammalian NICUs, their neurons directly regulate tissue physiology and immunity. Of note, both C. elegans and Hydra neurons have been mapped in great anatomical detail, and therefore, neuroimmune interactions at these sites may be straight forward to identify. In Drosophila, sensory neurons contact hemocytes (a diverse population of macrophage-like cells) in hematopoietic pockets and regulate proliferation, survival, and localization (Cattenoz et al., 2020; Makhijani et al., 2017) perhaps representing small, simple NICUs. Thus, although this field remains largely unexplored, we propose that NICUs are a fundamental aspect of animal physiology and are present in specialized configurations with several degrees of complexity across all metazoans. Given that adaptive immune responses emerged relatively recently (~500 million years ago [mya]), ancient NICUs must have evolved exclusively from the interactions between innate immune cells and neurons or neuroimmune cells (Cooper and Alder, 2006). Despite these hints from non-mammalian model species, the neuroimmunology field still lacks a broader phylogenetic perspective.
@@ -105,19 +257,19 @@ Although first discovered in mice, recent studies have revealed the presence of 
 
 Given their similar functions, it is not surprising that the immune and nervous systems rely on similar proteins and protein domains (Table 1). Leucine-rich repeat (LRR) domains detect pathogens as part of PRRs and VLRs and guide neuronal development (Slit proteins and LRRK). Similarly, the immunoglobulin (Ig) domains that form the basis of jawed vertebrate adaptive immunity (i.e., BCR, TCR, MHC) also regulate neuronal development and synapse formation (Sanes and Zipursky, 2020). Here, we explore three examples of gene families employed by both the nervous and immune systems but many more exist, including cytokines, neurotrophins, perforins, and complement (Table 1; Kolosowska et al., 2019; Minnone et al., 2017; Ni and Gilbert, 2017; Stevens et al., 2007; Yang et al., 2016). Notably, many of these play crucial roles in the development of both the nervous and immune systems.
 
-## 8.1 DSCAM
+### 8.1 DSCAM
 
 The Down syndrome cell adhesion molecule (DSCAM) is a member of the Ig superfamily expressed on the cell surface. In both mammals and arthropods, DSCAM regulates self-avoidance during neural development (Garrett et al., 2018; Hattori et al., 2009). That is, if two dendrites from a single neuron encounter one another during morphogenesis, they repel each other, preventing inappropriate synapse formation and leading to even spatial distribution. In this context, DSCAM appears to operate in concert with two cell adhesion molecules: cadherins and protocadherins (Garrett et al., 2018). Evolutionary analysis suggests that although the dscam gene is present throughout Bilateria, Pancrustacea (insects and crustaceans) exhibit a distinct form of isoform diversification (Armitage et al., 2012). While mammalian neurons only express a single dscam1 transcript, arthropods have evolved a unique evolutionary strategy in which a single dscam gene is capable of producing over 38,000 isoforms due to mutually exclusive alternative splicing (Brites and Du Pasquier, 2015). In Drosophila, the dscam gene consists of 22 exons, of which four are clusters of tandemly arrayed sequences. All but one of these arrays are spliced out during transcript processing. Stochastic expression of these hypervariable isoforms within individual neurons drives the self-avoidance behavior.
 
 Although mammalian dscam1 expression is restricted to neurons, dscam homologs play a unique role in the crustacean immune system (Ng and Kurtz, 2020; Table 1). Isoform variability was originally described in transcripts isolated from Drosophila hemocytes (Watson et al., 2005). Numerous reports have investigated transcriptional changes in the dscam isoform repertoire after pathogen challenge in a variety of insect and crustacean species (Ng and Kurtz, 2020). Furthermore, in crabs DSCAM acts as an opsonin; specific isoforms were shown to bind bacteria and promote phagocytosis (Li et al., 2018). In contrast to the neural expression, where DSCAM hypervariability serves to avoid self, within hemocytes, diverse DSCAM proteins function to bind to a wide array of pathogens. Interestingly, the expression of pathogen-specific isoforms can be upregulated in response to immune challenge (Li et al., 2018). The hypervariable family of dscam transcripts thus highlights how the immune and nervous systems in Pancrustacea deploy a single mechanism for generating diversity with distinct end goals.
 
-## 8.2 Toll-like receptors
+### 8.2 Toll-like receptors
 
 TLRs are prototypic PRRs with fundamental roles in animal innate immune responses. The protein Toll was originally described as a regulator of dorsoventral patterning in early Drosophila embryogenesis. However, it was observed that flies with loss-of-function mutations in the Toll signaling pathway exhibited impaired immune responses (Lemaitre et al., 1996). Subsequently, genetic and functional assays implicated a mammalian homolog of Toll (Toll-like receptor 4; TLR4) as a receptor for LPS (Poltorak et al., 1998). Most vertebrate genomes contain 10–20 TLR paralogs that recognize PAMPs, and independent expansions of TLRs occurred several times in invertebrate lineages (Buckley and Rast, 2015). TLRs are central to innate immunity and activate adaptive responses although they are also expressed by many cell types outside the immune system including epithelial cells, endothelial cells, and neurons. As transmembrane receptors, TLRs localize to either the cell surface, where they recognize PAMPs (e.g., LPS, flagellin) or endosomes where they largely detect nucleic acids (Kawai and Akira, 2010). Ligand binding to the TLR ectodomain, composed of LRRs, initiates a signaling pathway that culminates in NF-kB activation. This highly conserved pathway is present throughout Metazoa, including poriferans (Figure 2).
 
 Surprisingly, TLR knock-out studies in mice revealed not only impaired immune responses, but also neural phenotypes. Of the 13 TLRs in mice, five are expressed within the CNS, where they have roles in both neuronal development as well as neural plasticity, cognition, and behavior (Morimoto and Nakajima, 2019). TLR2, TLR3, and TLR4 have been shown to regulate proliferation in neural progenitor cells (NPCs) (Chen et al., 2019a; Lathia et al., 2008). TLRs 3, 7, and 8 also regulate synapse formation (Hung et al., 2018). During brain development, synapse formation is activity dependent, leading to death of inactive axons, which creates apoptotic bodies and releases nucleic acids that activate TLR responses (Ma et al., 2006; Zhang and Poo, 2001). It has been suggested that these responses induce cytokine expression, which subsequently attracts phagocytic microglia (Chen et al., 2019a; Ma et al., 2006). While nucleic acid sensing TLRs are typically restricted to endosomes in the nervous system, these TLRs are expressed on cell surfaces, where they detect self-antigens. This conserved detection and signaling pathway thus represents a fundamental aspect of neuroimmune communication.
 
-## 8.3 Olfactory receptor superfamily
+### 8.3 Olfactory receptor superfamily
 
 The olfactory receptor (OR) superfamily is a diverse group of rhodopsin-type GPCRs that detect chemosensory cues in the environment. Mammalian genomes typically contain very large (~1,000) numbers of OR genes (Niimura, 2012). Rhodopsin-type GPCRs emerged 580–700 mya and are present in Porifera and Placozoa (Churcher and Taylor, 2011). For several OR groups, orthologs can be clearly identified in both chordates and cnidarians (Churcher and Taylor, 2011). Frequent duplication and divergence within the OR gene family early in metazoans as well as the role of rhodopsin-type GPCRs in brain development and synapse formation suggest that ORs were essential in the emergence of the CNS (Churcher and Taylor, 2011). Similarly, in mammals, OR expression in olfactory sensory neural axons is necessary for axonal outgrowth to discrete glomeruli in the olfactory bulb (Feinstein et al., 2004).
 
@@ -131,7 +283,7 @@ Sensory neurons detect environmental conditions and transmit afferent informatio
 
 **Figure 3.:** (A) Sensory neurons detect danger cues that are then transduced to move the animals away from potential deleterious infection. For example, in C elegans npr-1 expressing neurons detect oxygen levels to avoid harmful pathogens (Hoffman and Aballay, 2019; Singh and Aballay, 2019; Styer et al., 2008). Furthermore, bacterially infected female Drosophila will lay fewer eggs (Kurz et al., 2017; Masuzzo et al., 2019). (B) Sensory neurons directly detect pathogen presence resulting in rapid action potentials and release of neurotransmitters that increase the velocity of an immune response. Neurons ultra-rapid communication to immune cell reservoirs deploy immune cells quicker than chemokine signals; such as recruiting CD8+ cells to the olfactory organ after detection of neurotrophic virus by sensory neurons (Chavan and Tracey, 2017; Sepahi et al., 2019). The immune responses triggered by neurons can be biased to be neuroprotective while dealing with infection such as in the myenteric plexus of the gut where ﻿b2 adrenergic receptor signaling polarizes muscularis macrophages to express Arg1, associated with an M2 phenotype (Gabanyi et al., 2016; Lai et al., 2020). (C) Pathogens detected by immune and epithelial cells provoke release of cytokines and other immune factors that are pro-inflammatory and potentially deleterious to the tissue if allowed to propagate inflammation without regulation. Local neurons are rapidly activated by the inflammatory environment and PAMPs, releasing neurotransmitters that tune the immune response (immune cells and epithelial cells) toward a less pro-inflammatory phenotype (Baral et al., 2018; Basbaum et al., 2009; Cardoso et al., 2017; Chu et al., 2020; Labed et al., 2018; Ramirez et al., 2020). A specific example is neuromedin U that binds to its cognate receptor on ILC2s enhancing their type 2/repair phenotype mediating protection against worm infections (Cardoso et al., 2017). Another example includes the reduction of systemic inflammation when the vagus nerve is stimulated (Borovikova et al., 2000). However, suppressive neuronal responses can be detrimental and favor infection as when TRPV1 neurons release CGRP and suppress neutrophil recruitment, leading to S. pyogenes lesion progression compared to animals lacking CGRP signaling (Pinho-Ribeiro et al., 2017; Chu et al., 2020). (D) The immune system and nervous system must balance their responses over time to return to homeostasis (Aurora and Olson, 2014; Veiga-Fernandes and Artis, 2018). An initial immune response is necessary for clearance of pathogen and debris and to initiate growth factor responses in neurons, but prolonged inflammation can be detrimental to neuronal regeneration as seen in the olfactory system and spinal cords with NF-κb/chemokine and TNFα signaling, respectively, leading to loss of regenerative abilities (Chen et al., 2019a; Godwin et al., 2013; Tsai et al., 2019; Tsarouchas et al., 2018). Another example includes the resolution of inflammation controlled by the sympathetic nervous system in mice (Körner et al., 2019).
 
-## 9.1 Pathogen avoidance
+### 9.1 Pathogen avoidance
 
 The ultimate protection mechanism is to avoid pathogens altogether. Although the neuroethology of how animals integrate sensory cues from pathogens to modulate behavior remains largely unknown, every animal interrogated thus far, particularly highly social animals, displays some form of avoidance behavior (Curtis, 2014; Figure 2). Generally, animals avoid individuals of their own species that are sick. In rodents, avoidance behaviors are mediated by the vomeronasal system and specific synchronization between the ventral hippocampus and the medial prefrontal cortex; mice with ablated vomeronasal organs no longer avoid odors from parasitized mice (Boillat et al., 2015; Padilla-Coreano et al., 2019; Padilla-Coreano et al., 2016).
 
@@ -139,7 +291,7 @@ Avoidance behaviors have also been observed in other jawed vertebrates (e.g., bo
 
 While such studies clearly connect behavior to nervous system function, understanding how afferent sensory cues are integrated in response to danger is far more complicated. However, smaller, less-complex model organisms may offer some answers. In Drosophila, during bacterial infection, peptidoglycan-NF-κb signaling specifically activates a subset of octopamine neurons and changes egg-laying physiology of females (Kurz et al., 2017; Masuzzo et al., 2019). Additionally, both Drosophila gustatory and olfactory neurons have been found necessary and sufficient to avoid LPS and geosmin, respectively (Soldano et al., 2016; Stensmyr et al., 2012). Furthermore, C. elegans sensory neurons mediate avoidance behaviors in response to pathogen-contaminated food, thereby lowering pathogen burden (Anderson and McMullan, 2018; Styer et al., 2008). However, C. elegans also display avoidance behavior to ﻿Bacillus anthracis despite the fact that this bacterium is not harmful (Turner et al., 2020). Individual worms learn to avoid pathogenic Pseudomonas aeruginosa after luminal bloating alters the TGF-β/DAF-7 pathway and activates the GPCR NPR-1, causing aerotaxis away from an oxygen-deficient bacterial lawn (Singh and Aballay, 2019). Interestingly, C. elegans pathogen-specific avoidance behaviors can be transgenerational, a phenomenon mediated by two immunological pathways: TGF-β signaling in sensory neurons and the Piwi/Argonaute small RNA pathway (Moore et al., 2019). Behaviors that avoid wounding and infection from pathogens are key to survival because once barriers are breached, immune responses are energetically costly and may leave long-lasting damage in the host.
 
-## 9.2 Velocity of the immune response
+### 9.2 Velocity of the immune response
 
 When behaviors fall short, barrier tissues provide the next line of defense against pathogens. When pathogens breach barrier tissues, innate immune cells are recruited by chemokines secreted by epithelial cells who sense PAMPs and damage-associated molecular patterns (DAMPs). Innervating neurons sense microorganisms, and their products, directly and influence the direction of immune responses (pro- or anti-inflammatory) several orders of magnitude faster than those induced in immune cells (Chavan and Tracey, 2017; Chiu et al., 2013; Foster et al., 2017; Pinho-Ribeiro et al., 2017). Pathogen detection by neurons results in rapid electrical activation (within milliseconds) and release of chemical mediators that either enhance or suppress the local and distant immune response (Chu et al., 2020) (Figure 3). Rapid neuronal responses offer clear advantages for the host, thereby offering positive pressures for the immune system to gain expression of receptors for neuronal messengers as an additional, accelerated mechanism of pathogen surveillance.
 
@@ -147,7 +299,7 @@ Recent studies highlight anticipatory immunity by mammalian nociceptive TRPV1+ n
 
 Although the concept of neuronal speed in the context of the immune response has not been widely discussed in the mammalian literature, we propose that neuronal innervation of lymphoid tissues as well as the wide presence of NICUs at mammalian tissue barriers may have been evolutionary driven to optimize the speed of the immune response at the organismal level. Furthermore, increased immune speed can be beneficial to the neurons themselves. In the gut, enteric bacteria activate sympathetic and nociceptive neurons that, in turn, polarize muscularis macrophages towards a tissue protection profile that protects neurons from dying 7 days after infection (Gabanyi et al., 2016; Lai et al., 2020; Matheis et al., 2020). Neurons directly sense danger, and their action potentials release immunogenic neurotransmitters that affect immune system function that can be protective of the organism and neurons themselves. However, as infection progresses, regulation of the immune response by neurons must be balanced for pathogen clearance and optimal host survival.
 
-## 9.3 Adding layers of regulation to the immune response
+### 9.3 Adding layers of regulation to the immune response
 
 Upon binding PAMPs and/or DAMPs, PRRs initiate cytokine expression. In turn, the cytokine milieu promotes optimal immune responses while dampening others (e.g., humoral vs cellular immunity). Classically, cortisol and the vagus nerve are known to maintain homeostasis and decrease inflammatory pathways to prevent damage (Borovikova et al., 2000). From these studies, it was suggested that the nervous system acts as a final layer of regulation over the mammalian immune system by coordinating large scale-physiological responses (Eberl and Pradeu, 2018). However, viewing neuronal control of inflammation as culmination of regulation neglects experimental evidence demonstrating that instantaneous neuronal control of local immune responses provides the first layer of immune regulation. We propose that neurons impart checkpoints at each step of the defense response, from its inception to resolution and healing (Figure 3).
 
@@ -155,7 +307,7 @@ Neurons are powerful immune suppressors. For example, in a murine model of Staph
 
 Neuronal suppression of the immune system is deeply rooted in animal evolution. In addition to the vertebrate models described above, studies in protostome lineages also highlight the crosstalk between the neural and immune systems. Upon stimulation, Drosophila sensory neurons deploy TGF-β to stimulate hemocyte proliferation and adhesion (Makhijani et al., 2017; Table 1). In C. elegans, npr-1+ neurons suppress the unfolded protein response (UPR), an important innate immune mechanism, thereby increasing pathogen susceptibility (Hoffman and Aballay, 2019; Sun et al., 2011). Additionally, neurons in C. elegans release neurotransmitters (e.g., insulin, neuropeptides, octopamine, dopamine, acetylcholine) to modulate pathways involved in host defense in the gut endothelium (e.g., p38 MAPK, UPR, and WNT signaling) (Wani et al., 2020). For instance, C. elegans neurons release acetylcholine in response to infection, and acetylcholine then activates the canonical Wnt pathway in intestinal epithelial cells resulting in innate immune responses (Labed et al., 2018). The broad phylogenetic distribution of these findings suggests that neuronal regulation is a fundamental mechanism to prevent collateral damage from the immune response. When unavoidable, the immune and nervous systems mount a coordinated response to repair damage.
 
-## 9.4 Cooperation of neurons and immune cells in animal regeneration
+### 9.4 Cooperation of neurons and immune cells in animal regeneration
 
 In extreme cases of disease or injury, animals undergo whole-body or limb regeneration. Regenerative capacity varies considerably among animal phyla and depends on interactions between the immune and nervous systems (Bloom, 2014; Cary et al., 2019; Lange and Brand, 2020). In the well-characterized newt regeneration model, phagocytic macrophages are recruited within one day post-amputation; macrophage depletion results in decreased expression of regenerative genes and slows regrowth (Godwin et al., 2013). sc-RNA-Seq analyses confirm this important role for macrophages immediately following amputation and reveal the presence of T cells in the blastema, although the function of these adaptive immune cells is unknown (Leigh et al., 2018). Fluorescent activated cell sorting of early progenitors and RNA-Seq reveal that early dividing cells at the amputation plate recruit myeloid cells through IL-8 signaling, without which the blastema forms but does not regenerate the limb (Tsai et al., 2019). In addition to immune cells, nerves provide neurotrophic factors that are necessary for limb reformation (Wang et al., 2000). Notably, nerve growth factor pathways are suppressed in early blastema progenitors just 4–5 days post-amputation, suggesting that, prior to regeneration, wound healing and developmental patterning must occur (Tsai et al., 2019). The cooperation between nerves and immune cells precisely coordinates the timing and activation of newt limb regeneration, although it has been proposed that that salamanders preserve these regenerative abilities because they have a weaker, more simple immune system (Aurora and Olson, 2014).
 

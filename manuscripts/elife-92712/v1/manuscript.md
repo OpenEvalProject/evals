@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02qg15b79 Okinawa Institute of Science and Technology Graduate University Okinawa Japan
-2. https://ror.org/04j1n1c04 RIKEN Center for Brain Science, RIKEN ECL Research Unit Wako Japan
-3. https://ror.org/01sjwvz98 RIKEN Pioneering Research Institute (PRI) Wako Japan
+1. Okinawa Institute of Science and Technology Graduate University Okinawa Japan ([ROR:02qg15b79](https://ror.org/02qg15b79))
+2. RIKEN Center for Brain Science, RIKEN ECL Research Unit Wako Japan ([ROR:04j1n1c04](https://ror.org/04j1n1c04))
+3. RIKEN Pioneering Research Institute (PRI) Wako Japan ([ROR:01sjwvz98](https://ror.org/01sjwvz98))
 
 † Corresponding author
 
@@ -29,15 +29,19 @@ Our model trained on a perceptual decision-making task can replicate both unbias
 
 ## Results
 
-## Replay of probabilistic sensory experiences – a toy example
+### Replay of probabilistic sensory experiences – a toy example
 
 We first explain the task our model solves with a toy example. Consider a task in which the animal should decide whether a given stimulus coincides with or resembles any of two previously learned stimuli. Whether the animal learned these stimuli with a 50–50 chance or a 30–70 chance should affect the animal’s anticipation of their occurrence and hence affect its decision.
 
-It has been suggested that spontaneous activity expresses an optimal internal model of the sensory environment (Berkes et al., 2011). In our toy example, the evoked activity patterns of the two stimuli should be spontaneously replayed with the same probabilities as these stimuli were experienced during learning:⟨P(features|input,model)⟩P(input)=P(features|model),\begin{document}$$\displaystyle \left\langle P\left (\rm features|input,model\right)\right\rangle _{P\left (\rm input\right)}=P\left (\rm features|model\right),$$\end{document}
+It has been suggested that spontaneous activity expresses an optimal internal model of the sensory environment (Berkes et al., 2011). In our toy example, the evoked activity patterns of the two stimuli should be spontaneously replayed with the same probabilities as these stimuli were experienced during learning:
+
+$$
+⟨P(features|input,model)⟩_{P(input)}=P(features|model),
+$$
 
 where features = {stimulus 1, stimulus 2} and the right-hand side expresses the probabilities of replayed activities. The angular brackets indicate averaging over the stimuli. According to Hebb’s hypothesis, two cell assemblies should be formed to memorize the two stimuli in the toy example. Moreover, the spontaneous replay of these cell assemblies should represent the probabilities given in the right-hand side of the above equation. Below, we propose a mathematical principle of learning to achieve these requirements.
 
-## Prediction-driven synaptic plasticity for encoding an internal model
+### Prediction-driven synaptic plasticity for encoding an internal model
 
 We previously proposed a learning rule for a single two-compartment neuron (Asabuki and Fukai, 2020). Briefly, our previous model learns statistically salient features repeated in input sequences by minimizing the error between somatic and dendritic response probabilities without external supervision to identify the temporal locations of these features. In this study, we extend this plasticity rule to recurrent networks by asking all neurons in a network to minimize the error in response probabilities between the internally generated and stimulus-evoked activities (Figure 1). Our central interest is whether this learning principle generates spontaneous activity representing the statistical model of previous experiences.
 
@@ -45,31 +49,43 @@ We previously proposed a learning rule for a single two-compartment neuron (Asab
 
 **Figure 1.:** (a) A schematic of a network model is shown. The interconnected circles denote the model neurons, of which the activities are controlled by two types of inputs: feedforward (FF) and recurrent (REC) inputs. Colored circles indicate active neurons. Here, vW denote FF, and vM denote REC connections. We considered two modes of activity (i.e., evoked and spontaneous activity). In the evoked mode, the membrane potential u of a network neuron was calculated as a linear combination of inputs across all different connections (vW, vM, and vG). This evoked mode is considered during the learning phase, when all synapses attempt to predict the network activity, as we will explain in the main text. Once all synapses are sufficiently learned, all FF inputs are removed, and the network is driven spontaneously (spontaneous mode). Our interest lies in the statistical similarity of the network activity in these two modes. (b) The gain and threshold of output response function was controlled by a dynamic variable, h, which tracks the history of the membrane potential. (c) A schematic of the learning rule for a network neuron is shown (top). During learning, for each type of connection on a postsynaptic neuron, synaptic plasticity minimizes the error between output (gray diamond) and synaptic prediction (colored diamonds). Note that all types of synapses share the common plasticity rule, where weight updates are calculated as the multiplication of the error term and the presynaptic activities (bottom). Our hypothesis is that such plasticity rule allows a recurrent neural network to spontaneously replay the learned stochastic activity patterns without external input.
 
-We first introduce our learning principle using a recurrent network model (nDL model) that does not obey Dale’s law for distinguishing between excitatory and inhibitory neurons (Materials and methods). A more realistic model with distinct excitatory and inhibitory neuron pools will be shown later. The nDL model consists of Poisson spiking neurons, each receiving Poisson spike trains from all input neurons via a modifiable all-to-all afferent feedforward connection matrix W\begin{document}$\rm {\boldsymbol W}$\end{document} (Figure 1a). These input neurons may be grouped into multiple input neuron groups responding to different sensory features. Due to the all-to-all connectivity, the afferent input has no specific predefined structure. Two types of all-to-all modifiable recurrent connections, M\begin{document}$ {\boldsymbol M}$\end{document} and G\begin{document}$\boldsymbol G$\end{document}, exist among the neurons. Matrix M\begin{document}$\boldsymbol M$\end{document} is a mixture of excitatory and inhibitory connections, and matrix G\begin{document}$G$\end{document} represents inhibitory-only connections. Due to a minus sign for vG\begin{document}$v^{G}$\end{document}, all components of G\begin{document}$\boldsymbol G$\end{document} are positive. The firing rate of neurons is defined as a modifiable sigmoidal function of the membrane potential (Figure 1b), which we will explain later in detail. All types of connections, both afferent and recurrent ones, are modifiable by unsupervised learning rules derived from a common principle: on each neuron, all synapses learn to predict the neuron’s response optimally (Figure 1c: see Materials and methods). In reality, all synaptic inputs may be terminated on the dendrites, although they are not modeled explicitly.
+We first introduce our learning principle using a recurrent network model (nDL model) that does not obey Dale’s law for distinguishing between excitatory and inhibitory neurons (Materials and methods). A more realistic model with distinct excitatory and inhibitory neuron pools will be shown later. The nDL model consists of Poisson spiking neurons, each receiving Poisson spike trains from all input neurons via a modifiable all-to-all afferent feedforward connection matrix $W$ (Figure 1a). These input neurons may be grouped into multiple input neuron groups responding to different sensory features. Due to the all-to-all connectivity, the afferent input has no specific predefined structure. Two types of all-to-all modifiable recurrent connections, $M$ and $G$, exist among the neurons. Matrix $M$ is a mixture of excitatory and inhibitory connections, and matrix $G$ represents inhibitory-only connections. Due to a minus sign for $v^{G}$, all components of $G$ are positive. The firing rate of neurons is defined as a modifiable sigmoidal function of the membrane potential (Figure 1b), which we will explain later in detail. All types of connections, both afferent and recurrent ones, are modifiable by unsupervised learning rules derived from a common principle: on each neuron, all synapses learn to predict the neuron’s response optimally (Figure 1c: see Materials and methods). In reality, all synaptic inputs may be terminated on the dendrites, although they are not modeled explicitly.
 
-Without a teaching signal, predictive learning may suffer a trivial solution problem in which all synapses vanish, and hence all neurons become silent (Asabuki and Fukai, 2020). To avoid it, we homeostatically regulate the dynamic range of each neuron (i.e., the slope and threshold of the response function) according to the history h\begin{document}$h$\end{document} of its subthreshold activity (see Equations 6–8). When the value of h\begin{document}$h$\end{document} is increased, the neuron’s excitability is lowered (Figure 1b). The input–output curves of neurons are known to undergo homeostatic regulations through various mechanisms (Chance et al., 2002; Mitchell and Silver, 2003; Torres-Torrelo et al., 2014). Though no direct experimental evidence is available for our homeostatic process via h\begin{document}$h$\end{document}, it mathematically avoids saturating neuronal activity.
+Without a teaching signal, predictive learning may suffer a trivial solution problem in which all synapses vanish, and hence all neurons become silent (Asabuki and Fukai, 2020). To avoid it, we homeostatically regulate the dynamic range of each neuron (i.e., the slope and threshold of the response function) according to the history $h$ of its subthreshold activity (see Equations 6–8). When the value of $h$ is increased, the neuron’s excitability is lowered (Figure 1b). The input–output curves of neurons are known to undergo homeostatic regulations through various mechanisms (Chance et al., 2002; Mitchell and Silver, 2003; Torres-Torrelo et al., 2014). Though no direct experimental evidence is available for our homeostatic process via $h$, it mathematically avoids saturating neuronal activity.
 
 Note that the present homeostatic regulation of intrinsic excitability differs from the homeostatic synaptic scaling mechanism. The role of homeostatic synaptic scaling in generating irregular cell-assembly activity patterns was previously studied computationally (Hiratani and Fukai, 2014; Litwin-Kumar and Doiron, 2014; Zenke et al., 2015). However, unlike the present model, the previous models did not address whether and how synaptic scaling contributes to statistical modeling by recurrent neural networks. Furthermore, unlike our model, in which neurons in the recurrent layer and input neurons are initially connected in an all-to-all manner, most previous models assumed preconfigured receptive fields for recurrent-layer neurons, implying that these models had predefined stimulus-specific cell assemblies.
 
-## Cell-assembly formation for learning statistically salient stimuli
+### Cell-assembly formation for learning statistically salient stimuli
 
 We first explain how our network segments salient stimuli and forms stimulus-specific cell assemblies via network-wide predictive learning rules. To this end, we tested a simple case in which two non-overlapping input groups are intermittently and repeatedly activated with equal probabilities. The two input patterns were separated by irregular, low-frequency, unrepeated spike trains of all input neurons (Materials and methods). We will consider input patterns with unequal occurrence probabilities later. After several presentations of individual input patterns, each network neuron responded selectively to one of the repeated patterns (Figure 2a). This result is consistent with our previous results (Asabuki and Fukai, 2020) that the plasticity of feedforward connections segments input patterns. Indeed, feedforward synapses W on each neuron were strengthened or weakened when they mediated its preferred or non-preferred stimulus, respectively (Figure 2b, left; Figure 2c). Inhibitory connections G grew between neurons within the same assembly but not between assemblies (Figure 2b, right; Figure 2c, bottom), enhancing the decorrelation of within-assembly neural activities (Asabuki and Fukai, 2020). Recurrent connections M were modified to form stimulus-specific cell assemblies, as evidenced by the self-organization of excitatory (Figure 2c, top) and inhibitory (Figure 2c, bottom) recurrent connections within and between cell assemblies, respectively. The inhibitory components are necessary for suppressing the simultaneous replay of different cell assemblies, as shown later.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig2-v1.jpg)
 
-**Figure 2.:** (a) Example dynamics of neuronal output and synaptic predictions are shown before (left) and after (right) learning. Colored bars at the top of the figures represent periods of stimulus presentations. (b) Example dynamics of feedforward connection W and inhibitory connection G are shown. W-connections onto neurons organizing to encode the same or different input patterns are shown in red and blue, respectively. Similarly, the same colors are used to represent G connections within and between assemblies. (c) Dynamics of the mean connection strengths are shown on neuron in cell assembly 1. Shaded areas represent SDs over 10 samples. In the schematic, triangles indicate input neurons and circles indicate network neurons. The color of each neuron indicates the stimulus preference of each neuron. (d) Example dynamics of the averaged dynamical variable  (top) and the learned network activity (bottom) are shown. The dynamical variables are averaged over the entire network. Neurons are sorted according to their preferred stimuli. During the spontaneous activity, afferent inputs to the network were removed. The inset shows the firing rate distribution of the evoked and the spontaneous activity. (h¯\begin{document}$\bar{h} $\end{document}e) Correlation coefficients of spontaneous activities of every pair of neurons are shown.
+**Figure 2.:** (a) Example dynamics of neuronal output and synaptic predictions are shown before (left) and after (right) learning. Colored bars at the top of the figures represent periods of stimulus presentations. (b) Example dynamics of feedforward connection W and inhibitory connection G are shown. W-connections onto neurons organizing to encode the same or different input patterns are shown in red and blue, respectively. Similarly, the same colors are used to represent G connections within and between assemblies. (c) Dynamics of the mean connection strengths are shown on neuron in cell assembly 1. Shaded areas represent SDs over 10 samples. In the schematic, triangles indicate input neurons and circles indicate network neurons. The color of each neuron indicates the stimulus preference of each neuron. (d) Example dynamics of the averaged dynamical variable $h¯$ (top) and the learned network activity (bottom) are shown. The dynamical variables are averaged over the entire network. Neurons are sorted according to their preferred stimuli. During the spontaneous activity, afferent inputs to the network were removed. The inset shows the firing rate distribution of the evoked and the spontaneous activity. (e) Correlation coefficients of spontaneous activities of every pair of neurons are shown.
 
-We then investigated whether and how spontaneous activity preserves and replays these cell assemblies in the absence of afferent input. To demonstrate this in a more complex task, we trained the network with afferent input involving five repeated patterns and then removed the input and observed post-training spontaneous network activity (Figure 2d). The termination of afferent input initially lowered the activities of neurons, but their dynamic ranges gradually recovered with the excitability of the neural population (indicated by the population-averaged h\begin{document}$h$\end{document} value), and the network eventually started spontaneously replaying the learned cell assemblies. All plasticity rules were turned off during the recovery period (about 20 s from the input termination), after which the network settled in a stable spontaneous firing state (plasticity off), with firing rates lower than those of the evoked activity (inset). Then, the plasticity rules could be turned on (plasticity on) without drastically destroying the structure of spontaneous replay. Intriguingly, spontaneous neuronal activities were highly correlated within each cell assembly but were uncorrelated between different cell assemblies (Figure 2e). This was because self-organized recurrent connections M\begin{document}$\boldsymbol M$\end{document} were excitatory within each cell assembly, whereas the between-assembly recurrent connections were inhibitory, as in Figure 2c.
+We then investigated whether and how spontaneous activity preserves and replays these cell assemblies in the absence of afferent input. To demonstrate this in a more complex task, we trained the network with afferent input involving five repeated patterns and then removed the input and observed post-training spontaneous network activity (Figure 2d). The termination of afferent input initially lowered the activities of neurons, but their dynamic ranges gradually recovered with the excitability of the neural population (indicated by the population-averaged $h$ value), and the network eventually started spontaneously replaying the learned cell assemblies. All plasticity rules were turned off during the recovery period (about 20 s from the input termination), after which the network settled in a stable spontaneous firing state (plasticity off), with firing rates lower than those of the evoked activity (inset). Then, the plasticity rules could be turned on (plasticity on) without drastically destroying the structure of spontaneous replay. Intriguingly, spontaneous neuronal activities were highly correlated within each cell assembly but were uncorrelated between different cell assemblies (Figure 2e). This was because self-organized recurrent connections $M$ were excitatory within each cell assembly, whereas the between-assembly recurrent connections were inhibitory, as in Figure 2c.
 
 Thus, the network model successfully segregates, remembers, and replays stimulus-evoked activity patterns in temporal input. The loss of between-assembly excitatory connections is interesting as it indicates that the present spontaneous reactivation is not due to the sequential activation of cell assemblies. This can also be seen from the relatively long intervals between consecutive cell-assembly activations: spontaneous neural activity does not propagate directly from one cell assembly to another (Figure 2d). Indeed, within-assembly excitation is the major cause of spontaneous replay in this model, which we will study later in detail.
 
 In summary, we have proposed the predictive learning rules as a novel plasticity mechanism for all types of synapses (i.e., feedforward and recurrent connections). We have shown that the plasticity rules in our model learn the segmentation of salient patterns in input sequences and form pattern-specific cell assemblies without preconfigured structures. We also showed that our model replays the learned assemblies even when external inputs were removed.
 
-## Replays of cell assemblies reflect a learned statistical model
+### Replays of cell assemblies reflect a learned statistical model
 
 We now turn to the central question of this study. We asked whether internally generated network dynamics through recurrent synapses (i.e., spontaneous replay of cell assemblies) can represent an optimal model of previous sensory experiences. Specifically, we examined whether the network spontaneously reactivates learned cell assemblies with relative frequencies proportional to the probabilities with which external stimuli activated these cell assemblies during learning. We addressed these questions in slightly more complex cases with increased numbers of external stimuli.
 
 We first examined a case with five stimuli in which stimulus 1 was presented twice as often as the other four stimuli (Figure 3a). Hereafter, the probability ratio refers to the relative number of times stimulus 1 is presented during learning. For instance, the case shown in Figure 2d represents the probability ratio one. As in Figure 2d, the network self-organized five cell assemblies to encode stimuli 1–5 and replayed all of them in subsequent spontaneous activity (Figure 3b). We found that output neurons were activated more frequently and strongly in cell assembly 1 than in other cell assemblies. Therefore, we assessed quantitative differences in neuronal activity between different cell assemblies by varying the probability ratio. The neuronal firing rate of cell assembly 1 relative to other cell assemblies increased approximately linearly with an increase in the probability ratio (Figure 3c). Similarly, the size of cell assembly 1 relative to other cell assemblies also increased with the probability ratio (Figure 3d). However, neither the relative firing rate nor the relative assembly size faithfully reflects changes in the probability ratio: scaling the probability ratio with a multiplicative factor does not scale these quantities with this factor. Therefore, we further investigated whether the assembly activity ratio, the ratio in the total firing rate of cell assembly 1 to other cell assemblies (Materials and methods), scales faithfully with the probability ratio of cell assembly 1. This was the case: the scaling was surprisingly accurate (Figure 3e).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig3-v1.jpg)
+
+**Figure 3.:** An nDL network was trained with five probabilistic inputs. (a) Stimulus 1 appeared twice as often as the other four stimuli during learning. The example empirical probabilities of the stimuli used for learning are shown. (b) The spontaneous activity of the trained network shows distinct assembly structures. (c) The mean ratio of the population-averaged firing rate of assembly 1 to those of the other assemblies is shown for different values of the occurrence probability of stimulus 1. Vertical bars show SDs over five trials. A diagonal dashed line is a ground truth. (d) Similarly, the mean ratios of the size of assembly 1 to those of the other assemblies are shown. (e) The mean ratios of the total activities of neurons in assembly 1 to those of the other assemblies are shown. (f) Five stimuli occurring with different probabilities were used for training the nDL model. (g) The population firing rates are shown for five self-organized cell assemblies encoding the stimulus probabilities shown in (f).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** As in Figure 3f and g, the nDL model was trained with a set of stimuli. (a) The five stimuli occurred with different probabilities during training. (b) The spontaneously replayed cell assemblies exhibited population firing rates proportional to the occurrence probabilities of the corresponding stimuli. (c) Similar to a, but with seven stimuli. (d) The spontaneous population activities of seven assemblies are shown. The activities were proportional to the occurrence probabilities of stimuli shown in c. Error bars show SDs over five independent simulations. A dashed line is a regression line.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Two input patterns were presented with 30% (blue) and 70% (red) probabilities of which 50% of input neurons were shared (purple horizontal area). (b) The spontaneous activity of the trained network shows distinct assembly structures. (c) The ratio of the activities of two learned assemblies in spontaneous activity showed a strong similarity to the stimulus probabilities.
 
 To examine the ability of the nDL network further, we trained it with five stimuli occurring with various probabilities (Figure 3f and Figure 3—figure supplement 1a). After learning, the spontaneous activity of the model replayed the learned cell assemblies at the desired ratios of population firing rates (Figure 3g and Figure 3—figure supplement 1b).
 
@@ -79,31 +95,59 @@ So far, we have represented external stimuli with non-overlapping subgroups of i
 
 Altogether, these results suggest that our model spontaneously replays learned cell assemblies with relative frequencies proportional to the probability that each cell assembly was activated during the learning phase. We have shown that the population activities of assemblies, rather than the firing rates of individual neurons, encode the occurrence probabilities of stimulus patterns.
 
-## Within-assembly recurrent connections encode probabilistic sensory experiences
+### Within-assembly recurrent connections encode probabilistic sensory experiences
 
 To understand the mechanism underlying the statistical similarity between the evoked patterns and spontaneous activity, we then investigated whether and how biases in probabilistic sensory experiences influence the strengths of recurrent connections. To this end, we compared two cases in which two input patterns (stim 1 and stim 2) occurred with equal (50% vs. 50%) and different (30% vs. 70%) probabilities during learning (Figure 4a). From the results shown in Figure 3, we hypothesized that within-assembly learned connections should reflect the stimulus occurrence probabilities and hence the activation probabilities of the corresponding cell assemblies during spontaneous activity. Therefore, we calculated the total strengths of incoming recurrent synapses on each neuron within the individual cell assemblies (Figure 4b). While the distributions of incoming synaptic strengths are similar between cell assemblies coding stimulus 1 and stimulus 2 in the 50-vs-50 case, they look different in the 30-vs-70 case (Figure 4c).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig4-v1.jpg)
+
+**Figure 4.:** (a) Two input stimuli were presented in two protocols: uniform (50% vs. 50%) or biased (30% vs. 70%). (b) The total incoming synaptic strength on each neuron was calculated within each cell assembly. (c) left, The distributions of incoming synaptic strength are shown for the learned assemblies in the 50-vs-50 case. right, Same as in the left figure, but in the 30-vs-70 case. (d) left, The empirical probabilities of stimuli 1 and 2 and the normalized excitatory incoming weights within assemblies are compared in the 50-vs-50 case. right, Same as in the left figure, but in the 30-vs-70 case.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The mean ratios of spontaneous population firing rates without between-assembly connections are shown. The connections were removed after the network learned to encode the stimulus probabilities shown in Figure 3f. Error bars indicate the SDs over five trials.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Spontaneous activity of learned network with non-plastic inhibitory connections during learning. (b) Same as in a, but with plastic inhibitory connections.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** We first trained the network models with five external stimuli. (a) Then, we terminated the stimuli at −50 s and waited until 0 s for the recovery of network activity through the renormalization process (Equation 10) with all plasticity rules turned off. We turned on the plasticity of M at time 0 s. We kept the plasticity of G turned off in the truncated model (blue), while we turned on the G-plasticity in the control model (magenta). (b) Left, the time evolution of the difference between the average within-assembly coherence and the average between-assembly coherence was plotted for the control (magenta) and truncated (blue) models. Larger differences imply more robust cell assemblies. Error bars indicate the SDs over five trials. Right, activity coherences between neurons are shown at the indicated times. (c) The time-varying normalized firing rate of a neuron (gray) and the values predicted by recurrent synaptic inputs (top) and lateral inhibition (bottom) are shown for the control model. (d) Similar plots are shown for the truncated model. (e) Changes in prediction errors in the control (magenta) and truncated (blue) models are shown for recurrent synaptic inputs (top) and lateral inhibition (bottom).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (a) The network was trained repetitively with a fixed sequence (i.e., 1–2–3–4–5). (b) An example of spontaneous activity after learning. The assemblies are reactivated almost independently. (c) The learned recurrent connection matrix shows stronger intra-assembly and weaker inter-assembly connections.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (a) An example of assembly dynamics (solid) and dynamical variables h (dashed) are shown. Each color refers to one of the five assemblies, and red curves are highlighted for visualization purposes. The dynamical variables show an abrupt increase when the corresponding assembly has peak activity, and a slow decrease otherwise. Note that the dynamics of h corresponding to assemblies that do not show large activity peaks decay slowly almost everywhere without showing a significant increase (e.g., the green dashed line). Curves show the averaged values over the individual assemblies, and shaded areas show the standard error. (b) The mean ratios of spontaneous population firing rates calculated with fixed h variables are shown. The network was first trained to encode the stimulus probabilities shown in Figure 3f and the h values were then fixed during spontaneous activity. The ratios capture the increasing tendency of the true probability distribution in Figure 3f with degraded accuracies, especially in assemblies 4 and 5. Error bars indicate the SDs over five trials.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** (a) Network neurons were separated into two populations receiving different groups of feedforward inputs (left). Subnetwork A received stimuli 1 (S1) and 2 (S2), each presented one at a time with probability 1/2. Subnetwork B received stimuli 3 (S3) or 4 (S4) exclusively when subnetwork A was also stimulated. S3 or S4 was sampled at each presentation according to the probability distribution conditioned on the stimulus presented to subnetwork A (middle and right). (b) Raster plot of evoked activity after training. Each subnetwork formed two assemblies responding to different preferred stimuli. Shaded areas with four colors indicate the duration of stimuli given to the two subnetworks. (c) The connection matrix self-organized among the cell assemblies is shown. (d) The activities of the four assemblies in the presence of S1 and S2 but not S3 and S4 are shown. Despite the absence of stimuli, subnetwork B replayed the assemblies encoding S3 and S4 when subnetwork A was activated by S1 or S2. (e) Activities of assemblies 3 and 4 in subnetwork B varied with the stimulus presented to subnetwork A. Each data point corresponds to one of 20 independent stimulus presentations. Error bars represent SDs.
+
 Since incoming weights increased more significantly in the cell assembly activated by a more frequent stimulus (i.e., the assembly encoding stimulus 2 in the 30-vs-70 case), we expect that the degree of positive shifts in incoming weight distributions will reflect stimulus probabilities. To examine whether this is indeed the case, we computed the sum of total excitatory incoming weights (i.e., the sum of positive elements of M) over neurons belonging to each assembly after training. We then normalized these excitatory incoming weights over the two assemblies. Interestingly, we found that the normalized excitatory incoming weights for the two assemblies well approximate the empirical probabilities of the two stimuli in both the 50-vs-50 and 30-vs-70 cases (Figure 4d). These analyses revealed that recurrent connections learned within assemblies encode biases in probabilistic sensory experiences. Indeed, the elimination of between-assembly excitatory connections did not significantly affect the replay probabilities, as the sampling is driven by strong within-assembly recurrent inputs after learning (Figure 4—figure supplement 1).
 
-## Roles of inhibitory plasticity for stabilizing cell assemblies
+### Roles of inhibitory plasticity for stabilizing cell assemblies
 
 Experimental and computational results suggest that inhibitory synapses are more robust to spontaneous activity than excitatory synapses and are crucial for maintaining cortical circuit function (Mongillo et al., 2018). To see the crucial role of the inhibitory plasticity of G for cell-assembly formation, we compared the spontaneously driven activities in the learned network between two cases, plastic inhibitory connection G versus fixed G, in the 30-vs-70 case. The results show that only a single, highly active assembly self-organizes for fixed inhibitory synapses (Figure 4—figure supplement 2a). In contrast, such unstable dynamics do not emerge from plastic inhibitory synapses (Figure 4—figure supplement 2b), suggesting the crucial role of inhibitory plasticity in stabilizing spontaneous activity.
 
-To further clarify the functional role of inhibitory plasticity in regulating spontaneous activity, we compared how the self-organized assembly structure of recurrent connections M\begin{document}$\boldsymbol M$\end{document} evolves in the two simulation settings shown in Figure 4—figure supplement 3a. In the control model, we turned off the plasticity of G\begin{document}$\boldsymbol G$\end{document} for a while after the cessation of external stimuli but again switched it on, as was previously in Figure 2. The cell-assembly structure initially dissipated but eventually reached a well-defined equilibrium structure (Figure 4—figure supplement 3b, magenta). Consistent with this, the postsynaptic potentials mediated by connections M\begin{document}$\boldsymbol M$\end{document} and G\begin{document}$\boldsymbol G$\end{document} predicted the normalized firing rate of a postsynaptic excitatory neuron in the control model (Figure 4—figure supplement 3c). In striking contrast, the cell-assembly structure rapidly dissipated in the truncated model in which the G-plasticity was kept turned off after the cessation of external stimuli (Figure 4—figure supplement 3b, blue). Accordingly, the postsynaptic potentials induced by M\begin{document}$\boldsymbol M$\end{document} and G\begin{document}$\boldsymbol G$\end{document}, so was the normalized firing rate, evolved into trivial solutions and almost vanished in the truncated model (Figure 4—figure supplement 3d). Only the control model, but not the truncated model, could maintain prediction errors small and nearly constant after the termination of the stimuli (Figure 4—figure supplement 3e). These results indicate that maintaining the learned representations requires the continuous tuning of within-assembly inhibition.
+To further clarify the functional role of inhibitory plasticity in regulating spontaneous activity, we compared how the self-organized assembly structure of recurrent connections $M$ evolves in the two simulation settings shown in Figure 4—figure supplement 3a. In the control model, we turned off the plasticity of $G$ for a while after the cessation of external stimuli but again switched it on, as was previously in Figure 2. The cell-assembly structure initially dissipated but eventually reached a well-defined equilibrium structure (Figure 4—figure supplement 3b, magenta). Consistent with this, the postsynaptic potentials mediated by connections $M$ and $G$ predicted the normalized firing rate of a postsynaptic excitatory neuron in the control model (Figure 4—figure supplement 3c). In striking contrast, the cell-assembly structure rapidly dissipated in the truncated model in which the G-plasticity was kept turned off after the cessation of external stimuli (Figure 4—figure supplement 3b, blue). Accordingly, the postsynaptic potentials induced by $M$ and $G$, so was the normalized firing rate, evolved into trivial solutions and almost vanished in the truncated model (Figure 4—figure supplement 3d). Only the control model, but not the truncated model, could maintain prediction errors small and nearly constant after the termination of the stimuli (Figure 4—figure supplement 3e). These results indicate that maintaining the learned representations requires the continuous tuning of within-assembly inhibition.
 
-## The role of homeostatic regulation of neural activities
+### The role of homeostatic regulation of neural activities
 
-As indicated by the weak couplings between cell assemblies, the present mechanism of probability learning differs from the conventional sequence learning mechanisms. Consistent with this, the network trained repetitively by a fixed sequence of patterned inputs does not exhibit stereotyped sequential transitions among cell assemblies (due to the lack of strong inter-assembly excitatory connections; Figure 4—figure supplement 4). Indeed, the probability-encoding spontaneous activity emerges in the present model mainly from the within-assembly dynamics driven by strong within-assembly reverberating synaptic input. However, homeostatic variable h\begin{document}$h$\end{document} also plays a role in maintaining a stable spontaneous network activity after learning (see Figure 2d; activity pattern from 5 to 10 s). This is achieved by the time evolution of h\begin{document}$h$\end{document}, which maintains the firing rate of each neuron in a suitable range by adjusting the threshold and gain of the somatic sigmoidal response function (Figure 1b).
+As indicated by the weak couplings between cell assemblies, the present mechanism of probability learning differs from the conventional sequence learning mechanisms. Consistent with this, the network trained repetitively by a fixed sequence of patterned inputs does not exhibit stereotyped sequential transitions among cell assemblies (due to the lack of strong inter-assembly excitatory connections; Figure 4—figure supplement 4). Indeed, the probability-encoding spontaneous activity emerges in the present model mainly from the within-assembly dynamics driven by strong within-assembly reverberating synaptic input. However, homeostatic variable $h$ also plays a role in maintaining a stable spontaneous network activity after learning (see Figure 2d; activity pattern from 5 to 10 s). This is achieved by the time evolution of $h$, which maintains the firing rate of each neuron in a suitable range by adjusting the threshold and gain of the somatic sigmoidal response function (Figure 1b).
 
-Therefore, we explored the role of the homeostatic variable in learning an accurate internal model of the sensory environment. In each neuron, the variable h\begin{document}$h$\end{document} is updated whenever the membrane potential undergoes an abrupt increase (Equation 6). Therefore, the time evolution of h\begin{document}$h$\end{document} monitors the activity of each neuron over the timescale of seconds, which in turn regulates the neural activity by controlling the activation function (Figure 4—figure supplement 5a; Equations 4 and 5). When the instantaneous value of h\begin{document}$h$\end{document} is high, the neuron’s excitability is lowered (namely, the gain and threshold of the response function are decreased or increased, respectively: see Equations 6–8). This activity regulation is crucial to avoid the trivial solution of the plasticity rules (Asabuki and Fukai, 2020) but not critical for sampling with appropriate probabilities. Actually, a model with a fixed value of h\begin{document}$h$\end{document} still showed spontaneous replay, although the true probability distribution was estimated less accurately (Figure 4—figure supplement 5b: Figure 3f).
+Therefore, we explored the role of the homeostatic variable in learning an accurate internal model of the sensory environment. In each neuron, the variable $h$ is updated whenever the membrane potential undergoes an abrupt increase (Equation 6). Therefore, the time evolution of $h$ monitors the activity of each neuron over the timescale of seconds, which in turn regulates the neural activity by controlling the activation function (Figure 4—figure supplement 5a; Equations 4 and 5). When the instantaneous value of $h$ is high, the neuron’s excitability is lowered (namely, the gain and threshold of the response function are decreased or increased, respectively: see Equations 6–8). This activity regulation is crucial to avoid the trivial solution of the plasticity rules (Asabuki and Fukai, 2020) but not critical for sampling with appropriate probabilities. Actually, a model with a fixed value of $h$ still showed spontaneous replay, although the true probability distribution was estimated less accurately (Figure 4—figure supplement 5b: Figure 3f).
 
-## Learning conditioned prior distributions
+### Learning conditioned prior distributions
 
 The predictive coding hypothesizes that top–down input from higher cortical areas provides prior knowledge about computations in lower cortical areas. This implies in the brain’s hierarchical computation that the top–down input conditions the prior distributions in local cortical areas to those relevant to the given context. The proposed learning rules can account for how a conditioned input from other cortical areas conditions the prior distribution in a local cortical circuit.
 
 The neural network consists of two mutually interacting non-overlapping subnetworks of equal sizes, where the subnetworks may represent different cortical areas (Figure 4—figure supplement 6a). Subnetwork A was randomly exposed to stimuli 1 and 2 (S1 and S2) with equal probabilities 1/2, whereas subnetwork B was to stimuli 3 and 4 (S3 and S4) with the conditional probabilities 1/3 and 2/3 if S1 was presented to subnetwork A and the conditional probabilities 2/3 and 1/3 if S2 was presented to subnetwork A. After learning, the network model self-organized four cell assemblies, each of which responded preferentially to one of the four stimuli (Figure 4—figure supplement 6b). Consistent with this, the self-organized connection matrix represented strong within-assembly connections within each cell assembly and weak between-assembly connections (Figure 4—figure supplement 6c). Note that between-assembly connections were inhibitory between assemblies encoding mutually exclusive stimuli, i.e., S1 and S2 and S3 and S4, as they should be. Now, we turned off S3 and S4 to subnetwork B and only applied S1 or S2 to subnetwork A, each at one time. Applying the same stimulus (i.e., S1 or S2) to subnetwork A activated either S3- or S4-coding cell assembly in subnetwork B in a probabilistic manner (Figure 4—figure supplement 6d). The cell assemblies evoked in subnetwork B by S1 or S2 to subnetwork A varied the total firing rates approximately in proportion to the conditional probabilities (e.g., P(S3|S1) = 1/3 vs. P(S4|S1) = 2/3) used during learning (Figure 4—figure supplement 6e). Note that S3- and S4-coding cell assemblies could become simultaneously active to represent the desired activation probabilities (e.g., a vertical arrow in Figure 4—figure supplement 6d). Together, these results indicate that our network can learn prior distributions conditioned by additional inputs through different pathways.
 
-## Replication of biased perceptual decision making in monkeys
+### Replication of biased perceptual decision making in monkeys
 
 Prior knowledge about the environment often biases our percept of the external world. For instance, if we know that two possible stimuli exist and that stimulus A appears more often than stimulus B, we tend to feel that a given stimulus is more likely to be stimulus A than stimulus B. Previously, a similar bias was quantitatively studied in monkeys performing a perceptual decision-making task (Hanks et al., 2011). In the experiment, monkeys had to judge the direction (right or left) of the coherent motion of moving dots on a display. When both directions of coherent motion appeared randomly during learning, the monkey showed unbiased choice behaviors. However, if the frequencies of the two motion directions were different, the monkey’s choice was biased toward the direction of a more frequent motion stimulus.
 
@@ -117,21 +161,29 @@ The network model could explain the biased choices of monkeys surprisingly well.
 
 Biases in the psychometric curves emerged from biased firing rates of spontaneous activity of the self-organized cell assemblies. To show this, we investigated how the activities of the two self-organized cell assemblies change before and after the onset of test stimuli in three relatively simple cases, i.e., Coh = –0.5, 0, and +0.5. Figure 5c shows the activity ratio AR between the R-encoding cell assembly and the entire network (Materials and methods) in pre-stimulus spontaneous and post-stimulus-evoked activity. When the network was trained in a non-biased fashion (i.e., in the 50:50 protocol), the activity ratio was close to 0.5 in spontaneous activity, implying that the two cell assemblies had similar activity levels. In contrast, when the network was trained in a biased fashion (i.e., in the 80:20 protocol), the activity ratio in spontaneous activity was close to 0.8, implying that the total spontaneous firing rate of R-encoding cell assembly was four times higher than that of L-encoding cell assembly. Our results show that the spontaneous activity generated by the proposed mechanism can account for the precise relationship between motion coherence and perceptual biases in decision making by monkeys.
 
-## Crucial roles of distinct inhibitory pathways
+### Crucial roles of distinct inhibitory pathways
 
-The model presented so far lacked biological plausibility in several key aspects. Specifically, we assumed that the recurrent connections M\begin{document}$M$\end{document} could change its sign through plasticity and be either excitatory or inhibitory, while the inhibitory connection G\begin{document}$G$\end{document} was restricted to being inhibitory only. This setting does not reflect the biological constraint that synapses maintain a consistent excitatory or inhibitory type. Furthermore, due to this unconstrained recurrent connectivity M\begin{document}$M$\end{document}, the original model had two types of inhibitory connections (i.e., the negative part of M\begin{document}$M$\end{document} and the inhibitory connection G\begin{document}$G$\end{document}) without providing a clear computational role for each type of inhibition.
+The model presented so far lacked biological plausibility in several key aspects. Specifically, we assumed that the recurrent connections $M$ could change its sign through plasticity and be either excitatory or inhibitory, while the inhibitory connection $G$ was restricted to being inhibitory only. This setting does not reflect the biological constraint that synapses maintain a consistent excitatory or inhibitory type. Furthermore, due to this unconstrained recurrent connectivity $M$, the original model had two types of inhibitory connections (i.e., the negative part of $M$ and the inhibitory connection $G$) without providing a clear computational role for each type of inhibition.
 
-To address these limitations and to understand the role of the two types of inhibition, we considered a novel architecture in which all recurrent connections are constrained to be either exclusively excitatory or inhibitory, maintaining their sign throughout the learning process. The refined model includes two different types of inhibitory connections (i.e., Minh\begin{document}$\rm M_{inh}$\end{document} and G\begin{document}$G$\end{document}), each serving a specific computational purpose: minimizing prediction error and maintaining the excitatory–inhibitory balance. In combination with the excitatory connection Mexc\begin{document}$\rm M_{exc}$\end{document}, the Minh\begin{document}$\rm M_{inh}$\end{document} connections are trained to minimize the prediction error between somatic and dendritic activity, as considered in the original M connection in Figure 1. We found that the trained Minh\begin{document}$\rm M_{inh}$\end{document} connections introduce competition among cell-assembly activities by forming strong connections between assemblies (Figure 6b), allowing the network to effectively sample and replay the activities of individual assemblies. In contrast, inhibitory connections G\begin{document}$G$\end{document} were trained to balance network dynamics, as in the original setting. We found that the inhibitory G\begin{document}$G$\end{document} connections form strong intra-assembly inhibition (Figure 6c), which balances the strong excitatory connections that arise within cell assemblies through plasticity (Figure 6a).
+To address these limitations and to understand the role of the two types of inhibition, we considered a novel architecture in which all recurrent connections are constrained to be either exclusively excitatory or inhibitory, maintaining their sign throughout the learning process. The refined model includes two different types of inhibitory connections (i.e., $M_{inh}$ and $G$), each serving a specific computational purpose: minimizing prediction error and maintaining the excitatory–inhibitory balance. In combination with the excitatory connection $M_{exc}$, the $M_{inh}$ connections are trained to minimize the prediction error between somatic and dendritic activity, as considered in the original M connection in Figure 1. We found that the trained $M_{inh}$ connections introduce competition among cell-assembly activities by forming strong connections between assemblies (Figure 6b), allowing the network to effectively sample and replay the activities of individual assemblies. In contrast, inhibitory connections $G$ were trained to balance network dynamics, as in the original setting. We found that the inhibitory $G$ connections form strong intra-assembly inhibition (Figure 6c), which balances the strong excitatory connections that arise within cell assemblies through plasticity (Figure 6a).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig6-v1.jpg)
 
 **Figure 6.:** (a) Strong excitatory connections were formed within assemblies. (b) The first type of recurrent inhibitory connections, Minh, became stronger between assemblies, enhancing assembly competition. (c) The second type of inhibitory connections G were strengthened within assemblies to balance the strong excitatory inputs.
 
-In summary, the dual inhibitory mechanism allows the network to perform the reactivation of different cell assemblies while regulating their internal dynamics. The prediction-error-minimizing inhibitory connections Minh\begin{document}$M_{inh}$\end{document} facilitate selecting and activating specific assemblies through competition such that the learned probabilities are replayed. In contrast, the network-balancing inhibitory connections G\begin{document}$G$\end{document} prevent runaway excitation within active assemblies.
+In summary, the dual inhibitory mechanism allows the network to perform the reactivation of different cell assemblies while regulating their internal dynamics. The prediction-error-minimizing inhibitory connections $M_{inh}$ facilitate selecting and activating specific assemblies through competition such that the learned probabilities are replayed. In contrast, the network-balancing inhibitory connections $G$ prevent runaway excitation within active assemblies.
 
-## An elaborate network model with distinct excitatory and inhibitory neuron pools
+### An elaborate network model with distinct excitatory and inhibitory neuron pools
 
 The predictive learning rule performed well in training the nDL model to learn the probabilistic structure of the stimulus-evoked activity patterns. However, whether the same learning rule works in a more realistic neural network is yet to be investigated. To examine this, we constructed an elaborate network model (DL model) consisting of distinct excitatory and inhibitory neuron pools, obeying Dale’s law (Figure 7a). The nDL model suggested the essential roles of inhibitory plasticity in maintaining excitation–inhibition balance and generating an appropriate number of cell assemblies. To achieve these functions, inhibitory neurons in the DL model project to excitatory and other inhibitory neurons via two synaptic paths (Figure 7b), motivated by the results shown in Figure 6. In path 1, inhibitory connections alone predict the postsynaptic activity, whereas inhibitory and excitatory connections jointly predict the activity of the postsynaptic neuron in path 2 (Materials and methods). All synapses in the DL model are subject to the predictive learning rule. We trained the DL model with three input neuron groups while varying their activation probabilities. As in the nDL model, the DL model self-organized three cell assemblies activated selectively by the three input neuron groups (Figure 7—figure supplement 1a). Furthermore, in the absence of external stimuli, the DL model spontaneously replayed these assemblies with the assembly activity ratios in proportion to the occurrence probabilities of the corresponding stimuli during learning (Figure 7c).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig7-v1.jpg)
+
+**Figure 7.:** (a) This model consists of distinct excitatory and inhibitory neuron pools, obeying Dale’s law. (b) Each inhibitory neuron projects to another neuron X through two inhibitory paths, path 1 and path 2, where the index X refers to an excitatory or an inhibitory postsynaptic neuron. Hexagons represent minimal units for prediction and learning in the neuron model and may correspond to dendrites, which were not modeled explicitly. (c) The probability ratios estimated by numerical simulations are plotted for the assembly activity ratios (purple), firing rate ratios (cyan), and assembly size ratios (green) as functions of the true probability ratio of external stimuli. Error bars indicate SEs calculated over five simulation trials with different initial states of neurons and synaptic weights in each parameter setting. (d) Inhibitory connection matrices are shown for path 1 and path 2. (e) The mean weights of self-organized synapses on excitatory and inhibitory postsynaptic neurons are shown. (f) Within-assembly and between-assembly connectivity patterns of excitatory and inhibitory neurons are shown. Colors indicate three cell assemblies self-organized. (g) The strengths of lateral inhibitions within-(W/N) and between-assemblies (B/N) are shown for paths 1 and 2. Horizontal bars show the medians and quartiles. (h) The resultant connectivity pattern suggests an effective competitive network between excitatory assemblies with self-(within-assembly) and lateral (between-assembly) inhibition.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/92712/elife-92712-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (a) A typical spike raster of stimulus-evoked responses is presented for the elaborate network model shown in Figure 7 . (b) A spike raster of stimulus-evoked responses is shown for simulations of the elaborate model without inhibitory path 2. Inhibitory connections were modifiable in path 1. (c) A similar spike raster is presented for simulations of the elaborate model without inhibitory path 1. Inhibitory connections were modifiable in path 2. The results shown in b and c demonstrate that the network model fails to self-organize the cell assemblies encoding the different stimuli when it lacks one of the two inhibitory paths.
 
 The two inhibitory paths divided their labors consistent with the results shown in Figure 6. To see this, we investigated the connectivity structures learned by these paths. In path 1, inhibitory connections were primarily found on excitatory neurons in the same assemblies (Figure 7d, top). In contrast, in path 2, inhibitory connections were stronger on excitatory neurons in different assemblies than those in the same assemblies (Figure 7d, bottom). On both excitatory and inhibitory neurons, the total inhibition (i.e., path 1 + path 2) was balanced with excitation (Figure 7e). Figure 7f summarizes the connectivity structure of the DL model. Excitatory neurons in a cell-assembly project to inhibitory neurons in the same assembly. Then, these inhibitory neurons project back to excitatory neurons in the same or different assemblies via paths 1 and 2. Interestingly, lateral inhibition through path 1 is more potent between excitatory neurons within each cell assembly than between different assemblies (Figure 7g). In contrast, path 2 mediates equally strong within- and between-assembly inhibition.
 
@@ -159,104 +211,268 @@ What could be the advantages of coding prior distributions into spontaneous acti
 
 ## Methods
 
-## Neural network model
+### Neural network model
 
-Below, we first describe the model architecture and learning rule for the nDL model (i.e., single population violating Dale’s law). Details of the simulation of distinct excitatory and inhibitory populations will be explained later. Unless otherwise stated, recurrent neural networks used in this study consist of N(=500)\begin{document}$N\left (=500\right)$\end{document} Poisson neurons, which generate spikes according to a non-stationary Poisson process with rate φ^(u)\begin{document}$\overset{\hat }{\varphi }\left (u\right)$\end{document}, where φ^(∙)\begin{document}$\overset{\hat }{\varphi }\left (\cdot \right)$\end{document} is a dynamics sigmoidal function, which we will explain later. The membrane potential u\begin{document}$u$\end{document} of neuron i\begin{document}$i$\end{document} at time t\begin{document}$t$\end{document} is given as follows:(1)ui(t)=∑k=1KWikxk(t)+∑k=1N(Mik−Gik)yk(t),\begin{document}$$\displaystyle u_{i}\left (t\right)=\sum _{k=1}^{K}{\rm W}_{ik}x_{k}\left (t\right)+\sum _{k=1}^{N}\left ({\rm M}_{ik}- {\rm G}_{ik}\right)y_{k}\left (t\right),$$\end{document}
+Below, we first describe the model architecture and learning rule for the nDL model (i.e., single population violating Dale’s law). Details of the simulation of distinct excitatory and inhibitory populations will be explained later. Unless otherwise stated, recurrent neural networks used in this study consist of $N(=500)$ Poisson neurons, which generate spikes according to a non-stationary Poisson process with rate $\phi^(u)$, where $\phi^(∙)$ is a dynamics sigmoidal function, which we will explain later. The membrane potential $u$ of neuron $i$ at time $t$ is given as follows:
 
-where K\begin{document}$K$\end{document} is the number of input neurons. In some simulations, the network model had more than one input neuron group, although the number of input neuron groups is not explicitly shown in Equation 1. Three matrices W∈RN×K\begin{document}$W\in \mathbb{R} ^{N\times K}$\end{document}, M∈RN×N\begin{document}$M\in \mathbb R^{N\times N}$\end{document}, and G∈RN×N\begin{document}$G\in \mathbb R^{N\times N}$\end{document} represent the weights of afferent synaptic connections, recurrent synaptic connections, and inhibitory-only connections, respectively, on neurons in the recurrent network. These synaptic connections are all-to-all. In terms of the kernel function(2)ε(s)=exp(−s/τ)⋅Θ(s),\begin{document}$$\displaystyle \varepsilon \left (s\right)={\rm exp}\left (- s/\tau \right)\cdot \Theta \left (s\right),$$\end{document}
+$$
+u_{i}(t)=\sumk=1KW_{ik}x_{k}(t)+\sumk=1N(M_{ik}−G_{ik})y_{k}(t),
+$$
 
-recurrent input and afferent input to neuron i\begin{document}$i$\end{document} are calculated as(3a)xi(t)=∑t′∈tafffε(t−t′),\begin{document}$$\displaystyle x_{i}\left (t\right)=\sum _{t^{'}\in t_{\rm aff}^{\rm f}}\varepsilon \left (t- t^{'}\right),$$\end{document}(3b)yi(t)=∑t′∈trecfε(t−t′),\begin{document}$$\displaystyle y_{i}\left (t\right)=\sum _{t^{'}\in t_{\rm rec}^{\rm f}}\varepsilon \left (t- t^{'}\right),$$\end{document}
+where $K$ is the number of input neurons. In some simulations, the network model had more than one input neuron group, although the number of input neuron groups is not explicitly shown in Equation 1. Three matrices $W\inR^{N\timesK}$, $M\inR^{N\timesN}$, and $G\inR^{N\timesN}$ represent the weights of afferent synaptic connections, recurrent synaptic connections, and inhibitory-only connections, respectively, on neurons in the recurrent network. These synaptic connections are all-to-all. In terms of the kernel function
 
-where τ\begin{document}$\tau $\end{document} stands for the membrane time constant, tafff\begin{document}$t_{\rm aff}^{\rm f}$\end{document} and trecf\begin{document}$t_{\rm rec}^{\rm f}$\end{document} for the time sets of afferent and recurrent presynaptic spikes, and Θ∙\begin{document}$\Theta \left (\cdot \right)$\end{document} for the Heaviside function. Throughout this study, τ\begin{document}$\tau $\end{document} = 15 ms.
+$$
+\epsilon(s)=exp(−s/\tau)⋅Θ(s),
+$$
 
-The instantaneous firing rate fit\begin{document}$f_{i}\left (t\right)$\end{document} of each neuron is given as(4)fi(t)=φ^(ui(t);hi),\begin{document}$$\displaystyle f_{i}\left (t\right)={\hat \varphi }\left (u_{i}\left (t\right);h_{i}\right),$$\end{document}
+recurrent input and afferent input to neuron $i$ are calculated as
 
-in terms of a dynamical sigmoidal response function φ^\begin{document}${\hat \varphi }$\end{document}:(5)φ^(ui;hi)=φ0[1+exp⁡[gβ(hi)(−ui+gθ(hi))]]−1,\begin{document}$$\displaystyle {\hat \varphi }\left (u_{i};h_{i}\right)=\varphi _{0}\left [1+\exp \left [g\beta \left (h_{i}\right)\left (- u_{i}+g\theta \left (h_{i}\right)\right)\right ]\right ]^{- 1},$$\end{document}
+$$
+x_{i}(t)=\sumt^{′}\int_{aff}^{f}\epsilon(t−t^{′}),
+$$
 
-with a constant value of g=3\begin{document}$g=3$\end{document} and we have dropped the explicit time dependence in our notation for the sake of simplicity. Here, the dynamical variable h\begin{document}$h$\end{document} is determined by the history of the membrane potential:(6)h˙i=−τh−1hi,ifhi>ui,hi←ui,otherwise.\begin{document}$$\displaystyle \begin{array}{ll}\overset{˙}{h}_{i}=- \tau _{h}^{- 1}h_{i}, & {\rm if}\,h_{i}\gt u_{i},\\h_{i}\leftarrow u_{i}, & \rm otherwise.\end{array}$$\end{document}
 
-The maximum instantaneous firing rate φ0\begin{document}$\varphi _{0}$\end{document} is 50 Hz and τh=10\begin{document}$\tau _{h}=10$\end{document} s. Through Equation 6, hi\begin{document}$h_{i}$\end{document} tracks the maximum value of the membrane potential ui\begin{document}$u_{i}$\end{document} in a time window of approximately the length τh\begin{document}$\tau _{h}$\end{document} in the immediate past. The value of h\begin{document}$h$\end{document} is utilized to regulate the gain β\begin{document}$\beta $\end{document} and threshold θ\begin{document}$\theta $\end{document} of the sigmoidal response function as follows:(7)β(hi)=hi−1β0,\begin{document}$$\displaystyle \beta \left (h_{i}\right)=h_{i}^{- 1}\beta _{0},$$\end{document}(8)θ(hi)=hiθ0,\begin{document}$$\displaystyle \theta \left (h_{i}\right)=h_{i}\theta _{0},$$\end{document}
 
-where the values of constant parameters are β0=5\begin{document}$\beta _{0}=5$\end{document}, and θ0=1\begin{document}$\theta _{0}=1$\end{document}. Neuron i\begin{document}$i$\end{document} generates a Poisson spike train at the instantaneous firing rate of fit\begin{document}$f_{i}\left (t\right)$\end{document}. While a small value of h leads to a steep slope of our activation function (Equation 7), we have shown numerically that this does not lead to a problem in neural dynamics. Further, the saturation part of the sigmoidal function is crucial for stable formation of assemblies.
+$$
+y_{i}(t)=\sumt^{′}\int_{rec}^{f}\epsilon(t−t^{′}),
+$$
 
-## Learning rules
+where $\tau$ stands for the membrane time constant, $t_{aff}^{f}$ and $t_{rec}^{f}$ for the time sets of afferent and recurrent presynaptic spikes, and $Θ∙$ for the Heaviside function. Throughout this study, $\tau$ = 15 ms.
 
-We first explain the plasticity rule for feedforward connections. Synaptic connections were modified to minimize the Kullback–Leibler divergence (KL-divergence) between two Poisson distributions associated with the neuron’s output and the feedforward activity over a sufficiently long period T\begin{document}$T$\end{document}:(9)LW=∫0Tdt∑i=1NDKL[fi(t)‖φ(viW(t))],\begin{document}$$\displaystyle \mathcal L_{W}=\int _{0}^{T}dt\sum _{i=1}^{N}D_{KL}\left [f_{i}\left (t\right)\| \varphi \left (v_{i}^{W}\left (t\right)\right)\right ],$$\end{document}
+The instantaneous firing rate $f_{i}t$ of each neuron is given as
 
-where viW\begin{document}${\rm v}_{i}^{W}$\end{document} is a feedforward prediction of a firing rate, defined as:(10)viW=∑j=1KWij⋅xj,\begin{document}$$\displaystyle {\rm v}_{i}^{W}=\sum _{j=1}^{K}W_{ij}\cdot x_{j},$$\end{document}
+$$
+f_{i}(t)=\phi^(u_{i}(t);h_{i}),
+$$
 
-and fi\begin{document}$f_{i}$\end{document} is the firing rate of i\begin{document}$i$\end{document}th neuron. The function φ\begin{document}$\varphi $\end{document} is a static sigmoidal function, defined as(11)φ(vi)=φ0[1+exp⁡[gβ0(−vi+gθ0)]]−1.\begin{document}$$\displaystyle \varphi \left (v_{i}\right)=\varphi _{0}\left [1+\exp \left [g\beta _{0}\left (- v_{i}+g\theta _{0}\right)\right ]\right ]^{- 1}.$$\end{document}
+in terms of a dynamical sigmoidal response function $\phi^$:
 
-The above cost function evaluates to what extent the feedforward potential predicts the activity of postsynaptic neurons (Asabuki and Fukai, 2020). We have previously shown that taking the gradient of the cost function in Equation 9 derives the online plasticity rule for the feedforward connections as(12)ΔWij=ηφ0−1(1−φ(viW)φ0)[fi−φ(viW)],\begin{document}$$\displaystyle \Delta W_{ij}=\eta \varphi _{0}^{- 1}\left (1- \frac{\varphi \left (v_{i}^{W}\right)}{\varphi _{0}}\right)\left [f_{i}- \varphi \left (v_{i}^{W}\right)\right ],$$\end{document}
+$$
+\phi^(u_{i};h_{i})=\phi_{0}[1+exp⁡[g\beta(h_{i})(−u_{i}+g\theta(h_{i}))]]^{−1},
+$$
 
-where ϵ\begin{document}$\epsilon $\end{document} is a learning rate and was set to ϵ=10−4\begin{document}$\epsilon =10^{- 4}$\end{document}, unless otherwise specified. Here, we have dropped the explicit time dependence in our notation for the sake of simplicity.
+with a constant value of $g=3$ and we have dropped the explicit time dependence in our notation for the sake of simplicity. Here, the dynamical variable $h$ is determined by the history of the membrane potential:
 
-Similarly, the recurrent connections were modified to minimize the following cost function:(13)LM=∫0Tdt∑i=1NDKL[fi(t)‖φ(viM(t))],\begin{document}$$\displaystyle \mathcal L_{M}=\int _{0}^{T}dt\sum _{i=1}^{N}D_{KL}\left [f_{i}\left (t\right)\| \varphi \left (v_{i}^{\rm M}\left (t\right)\right)\right ],$$\end{document}
+$$
+h˙_{i}=−\tau_{h}^{−1}h_{i},ifh_{i}>u_{i},h_{i}←u_{i},otherwise.
+$$
 
-where viM=∑j=1NMij⋅yj\begin{document}${\rm v}_{i}^{\rm M}=\sum _{j=1}^{N}{\rm M}_{ij}\cdot y_{j}$\end{document} is a recurrent prediction. Similar to the feedforward plasticity, the gradient descent of the above cost function leads to the following plasticity rule:(14)ΔMij=ηφ0−1(1−φ(viM)φ0)[fi−φ(viM)].\begin{document}$$\displaystyle \Delta {\rm M}_{ij}=\eta \varphi _{0}^{- 1}\left (1- \frac{\varphi \left (v_{i}^{\rm M}\right)}{\varphi _{0}}\right)\left [f_{i}- \varphi \left ({\rm v}_{i}^{\rm M}\right)\right ].$$\end{document}
+The maximum instantaneous firing rate $\phi_{0}$ is 50 Hz and $\tau_{h}=10$ s. Through Equation 6, $h_{i}$ tracks the maximum value of the membrane potential $u_{i}$ in a time window of approximately the length $\tau_{h}$ in the immediate past. The value of $h$ is utilized to regulate the gain $\beta$ and threshold $\theta$ of the sigmoidal response function as follows:
+
+$$
+\beta(h_{i})=h_{i}^{−1}\beta_{0},
+$$
+
+
+
+$$
+\theta(h_{i})=h_{i}\theta_{0},
+$$
+
+where the values of constant parameters are $\beta_{0}=5$, and $\theta_{0}=1$. Neuron $i$ generates a Poisson spike train at the instantaneous firing rate of $f_{i}t$. While a small value of h leads to a steep slope of our activation function (Equation 7), we have shown numerically that this does not lead to a problem in neural dynamics. Further, the saturation part of the sigmoidal function is crucial for stable formation of assemblies.
+
+### Learning rules
+
+We first explain the plasticity rule for feedforward connections. Synaptic connections were modified to minimize the Kullback–Leibler divergence (KL-divergence) between two Poisson distributions associated with the neuron’s output and the feedforward activity over a sufficiently long period $T$:
+
+$$
+L_{W}=\int_{0}^{T}dt\sumi=1ND_{KL}[f_{i}(t)‖\phi(v_{i}^{W}(t))],
+$$
+
+where $v_{i}^{W}$ is a feedforward prediction of a firing rate, defined as:
+
+$$
+v_{i}^{W}=\sumj=1KW_{ij}⋅x_{j},
+$$
+
+and $f_{i}$ is the firing rate of $i$th neuron. The function $\phi$ is a static sigmoidal function, defined as
+
+$$
+\phi(v_{i})=\phi_{0}[1+exp⁡[g\beta_{0}(−v_{i}+g\theta_{0})]]^{−1}.
+$$
+
+The above cost function evaluates to what extent the feedforward potential predicts the activity of postsynaptic neurons (Asabuki and Fukai, 2020). We have previously shown that taking the gradient of the cost function in Equation 9 derives the online plasticity rule for the feedforward connections as
+
+$$
+ΔW_{ij}=η\phi_{0}^{−1}(1−\frac{\phi(v_{i}^{W})}{\phi_{0}})[f_{i}−\phi(v_{i}^{W})],
+$$
+
+where $ϵ$ is a learning rate and was set to $ϵ=10^{−4}$, unless otherwise specified. Here, we have dropped the explicit time dependence in our notation for the sake of simplicity.
+
+Similarly, the recurrent connections were modified to minimize the following cost function:
+
+$$
+L_{M}=\int_{0}^{T}dt\sumi=1ND_{KL}[f_{i}(t)‖\phi(v_{i}^{M}(t))],
+$$
+
+where $v_{i}^{M}=\sumj=1NM_{ij}⋅y_{j}$ is a recurrent prediction. Similar to the feedforward plasticity, the gradient descent of the above cost function leads to the following plasticity rule:
+
+$$
+ΔM_{ij}=η\phi_{0}^{−1}(1−\frac{\phi(v_{i}^{M})}{\phi_{0}})[f_{i}−\phi(v_{i}^{M})].
+$$
 
 The derived recurrent plasticity rule suggests that the recurrent prediction learns the statistical model of the evoked activity, which in turn allows the network to replay the learned internal model.
 
-In addition to the above plasticity rules, we defined the cost function for the inhibitory plasticity as(15)LG=∑i=1N[fi(t)−φ(viG(t))]2,\begin{document}$$\displaystyle \mathcal L_{G}=\sum _{i=1}^{N}\left [f_{i}\left (t\right)- \varphi \left (v_{i}^{\rm G}\left (t\right)\right)\right ]^{2},$$\end{document}
+In addition to the above plasticity rules, we defined the cost function for the inhibitory plasticity as
 
-where viG\begin{document}$v_{i}^{G}$\end{document} is the inhibitory input onto postsynaptic neuron via inhibitory connection G\begin{document}$G$\end{document}:(16)viG=∑j=1NGij⋅yj.\begin{document}$$\displaystyle v_{i}^{\rm G}=\sum _{j=1}^{N}{\rm G}_{ij}\cdot y_{j}.$$\end{document}
+$$
+L_{G}=\sumi=1N[f_{i}(t)−\phi(v_{i}^{G}(t))]^{2},
+$$
 
-Again, by taking the gradient of LG\begin{document}$\mathcal L_{G}$\end{document} with respect to Gij\begin{document}${\rm G}_{ij}$\end{document} derive the following inhibitory plasticity rule to keep the network dynamics balanced:(17)ΔGij∝−∂LG∂Gij∝[fi−φ(viG)]×∂φ(viG)∂Gij∝φ(viG)(1−φ(viG)φ0)⋅[fi−φ(viG)]⋅yj.\begin{document}$$\displaystyle \begin{array}{ll}\Delta \mathrm{G}_{i j} \propto-\frac{\partial \mathcal{L}_G}{\partial \mathrm{G}_{i j}} \\ \propto\left[f_i-\varphi\left(\mathrm{v}_i^{\mathrm{G}}\right)\right] \times \frac{\partial \varphi\left(\mathrm{v}_i^{\mathrm{G}}\right)}{\partial \mathrm{G}_{i j}}\\\propto \varphi \left (v_{i}^{\rm G}\right)\left (1- \frac{\varphi \left (v_{i}^{\rm G}\right)}{\varphi _{0}}\right)\cdot \left [f_{i}- \varphi \left (v_{i}^{\rm G}\right)\right ]\cdot y_{j}.\end{array}$$\end{document}
+where $v_{i}^{G}$ is the inhibitory input onto postsynaptic neuron via inhibitory connection $G$:
 
-While the resultant rule is not the same as feedforward and recurrent plasticity rules, all of these rules are similar in a sense that the weight updates are proportional to the prediction error and the presynaptic activity. We therefore assumed the following rule for the inhibitory plasticity, which has the same structure as the rest of the plasticity rules that we have already explained:(18)ΔGij=ηφ0−1(1−φ(viG)φ0)[fi−φ(viG)].\begin{document}$$\displaystyle \Delta {\rm G}_{ij}=\eta \varphi _{0}^{- 1}\left (1- \frac{\varphi \left (v_{i}^{\rm G}\right)}{\varphi _{0}}\right)\left [f_{i}- \varphi \left (v_{i}^{\rm G}\right)\right ].$$\end{document}
+$$
+v_{i}^{G}=\sumj=1NG_{ij}⋅y_{j}.
+$$
+
+Again, by taking the gradient of $L_{G}$ with respect to $G_{ij}$ derive the following inhibitory plasticity rule to keep the network dynamics balanced:
+
+$$
+ΔG_{ij}∝−\frac{∂L_{G}}{∂G_{ij}}∝[f_{i}−\phi(v_{i}^{G})]\times\frac{∂\phi(v_{i}^{G})}{∂G_{ij}}∝\phi(v_{i}^{G})(1−\frac{\phi(v_{i}^{G})}{\phi_{0}})⋅[f_{i}−\phi(v_{i}^{G})]⋅y_{j}.
+$$
+
+While the resultant rule is not the same as feedforward and recurrent plasticity rules, all of these rules are similar in a sense that the weight updates are proportional to the prediction error and the presynaptic activity. We therefore assumed the following rule for the inhibitory plasticity, which has the same structure as the rest of the plasticity rules that we have already explained:
+
+$$
+ΔG_{ij}=η\phi_{0}^{−1}(1−\frac{\phi(v_{i}^{G})}{\phi_{0}})[f_{i}−\phi(v_{i}^{G})].
+$$
 
 We have shown by numerical simulation that the rule keeps the network dynamics balanced.
 
-Initial values of W\begin{document}$\boldsymbol W$\end{document} and M\begin{document}$\boldsymbol M$\end{document} are sampled from Gaussian distributions with the mean 0 and variances 0.1/K\begin{document}$0.1/\sqrt{K}$\end{document} and 0.1/N\begin{document}$0.1/\sqrt{N}$\end{document}, respectively. During learning, the elements of W\begin{document}$\boldsymbol W$\end{document} and M\begin{document}$\boldsymbol M$\end{document} can take both positive and negative values. After sufficient learning, the postsynaptic potentials viW\begin{document}${\rm v}_{i}^{\rm W}$\end{document} and viM\begin{document}${\rm v}_{i}^{\rm M}$\end{document} on neuron on neuron i\begin{document}$i$\end{document} converge to a common value of vi\begin{document}$v_{i}$\end{document}. Therefore, φ(viW)≈φ(viM)≈φ(vi)≈fi\begin{document}$\varphi \left (v_{i}^{\rm W}\right)\approx \varphi \left ({\rm v}_{i}^{\rm M}\right)\approx \varphi \left ({\rm v}_{i}\right)\approx f_{i}$\end{document}, implying that the postsynaptic potentials of afferent and recurrent synaptic inputs to neuron i\begin{document}$i$\end{document} can both predict its output fi\begin{document}$f_{i}$\end{document} after learning. The initial values of G\begin{document}$G$\end{document} are uniformly set to 1/N\begin{document}$1/\sqrt{N}$\end{document}, and its elements are truncated to non-negative values during learning. This implies that viG\begin{document}${\rm v}_{i}^{\rm G}$\end{document} does not become negative. After learning, φ(viG)≈fi\begin{document}$\varphi \left ({\rm v}_{i}^{\rm G}\right)\approx f_{i}$\end{document} is satisfied. Although some elements of M\begin{document}$M$\end{document} may give recurrent inhibitory connections, modifiable connections in G\begin{document}$\boldsymbol G$\end{document} are necessary to encode all external inputs into specific cell assemblies.
+Initial values of $W$ and $M$ are sampled from Gaussian distributions with the mean 0 and variances $0.1/\sqrt{K}$ and $0.1/\sqrt{N}$, respectively. During learning, the elements of $W$ and $M$ can take both positive and negative values. After sufficient learning, the postsynaptic potentials $v_{i}^{W}$ and $v_{i}^{M}$ on neuron on neuron $i$ converge to a common value of $v_{i}$. Therefore, $\phi(v_{i}^{W})≈\phi(v_{i}^{M})≈\phi(v_{i})≈f_{i}$, implying that the postsynaptic potentials of afferent and recurrent synaptic inputs to neuron $i$ can both predict its output $f_{i}$ after learning. The initial values of $G$ are uniformly set to $1/\sqrt{N}$, and its elements are truncated to non-negative values during learning. This implies that $v_{i}^{G}$ does not become negative. After learning, $\phi(v_{i}^{G})≈f_{i}$ is satisfied. Although some elements of $M$ may give recurrent inhibitory connections, modifiable connections in $G$ are necessary to encode all external inputs into specific cell assemblies.
 
-## Stimulation protocols
+### Stimulation protocols
 
-Feedforward input to the recurrent network consisted of K\begin{document}$K$\end{document} Poisson spike trains with a background firing rate of 2 Hz. The input randomly presented n\begin{document}$n$\end{document} non-overlapping patterns of 100 spike trains (the duration 100 ms and the mean frequency 50 Hz), one at a time, with pattern-to-pattern intervals of 100 ms. Therefore, the number of input neurons and patterns satisfies the relationship of K=100×n\begin{document}$K=100\times n$\end{document}. For simplicity, we simulated the constant-interval case, but using irregular intervals does not change the essential results. The value of n\begin{document}$n$\end{document} varies from task to task, and the values for each figure are as follows: n=5\begin{document}$n=5$\end{document} (Figure 2c-e, Figure 3, Figure 6); n=2\begin{document}$n=2$\end{document} (Figure 2a-b, Figure 4-Figure 5); n=3\begin{document}$n=3$\end{document} (Figure 7). The typical time length required for the convergence of learning is 1000 s.
+Feedforward input to the recurrent network consisted of $K$ Poisson spike trains with a background firing rate of 2 Hz. The input randomly presented $n$ non-overlapping patterns of 100 spike trains (the duration 100 ms and the mean frequency 50 Hz), one at a time, with pattern-to-pattern intervals of 100 ms. Therefore, the number of input neurons and patterns satisfies the relationship of $K=100\timesn$. For simplicity, we simulated the constant-interval case, but using irregular intervals does not change the essential results. The value of $n$ varies from task to task, and the values for each figure are as follows: $n=5$ (Figure 2c-e, Figure 3, Figure 6); $n=2$ (Figure 2a-b, Figure 4-Figure 5); $n=3$ (Figure 7). The typical time length required for the convergence of learning is 1000 s.
 
-## Measures for cell-assembly activities
+### Measures for cell-assembly activities
 
-Here, we explain the measures used in Figure 3. We calculated the firing rate ratio of cell assembly 1 in Figure 3c as follows:(19)Firingrateratio=ri(1)(∑j=251Nj∑i=1Njri(j))/4,\begin{document}$$\displaystyle {\rm Firing\,rate\,ratio}=\frac{r_{i}^{\left (1\right)}}{\left (\sum _{j=2}^{5}\frac{1}{N_{j}}\sum _{i=1}^{N_{j}}r_{i}^{\left (j\right)}\right)/4},$$\end{document}
+Here, we explain the measures used in Figure 3. We calculated the firing rate ratio of cell assembly 1 in Figure 3c as follows:
 
-using the average firing rate ri(j)\begin{document}$r_{i}^{\left (j\right)}$\end{document} of the i\begin{document}$i$\end{document}th neuron in cell assembly j\begin{document}$j$\end{document} and the number Nj\begin{document}$N_{j}$\end{document} of neurons belonging to the cell assembly. Similarly, we defined the assembly size ratio of cell assembly 1 as(20)Assemblysizeratio=N1(∑j=25Nj)/4\begin{document}$$\displaystyle {\rm Assembly\, size\, ratio}=\frac{N_{1}}{\left (\sum _{j=2}^{5}N_{j}\right)/4}$$\end{document}
+$$
+Firingrateratio=\frac{r_{i}^{(1)}}{(\sumj=25\frac{1}{N_{j}}\sumi=1N_{j}r_{i}^{(j)})/4},
+$$
 
-in Figure 3d and assembly activity ratio of cell assembly 1 as(21)Assemblyactivityratio=rpop(1)(∑i=25rpop(i))/4,\begin{document}$$\displaystyle {\rm Assembly\,activity\,ratio}=\frac{r_{\rm pop}^{\left (1\right)}}{\left (\sum _{i=2}^{5}r_{\rm pop}^{\left (i\right)}\right)/4},$$\end{document}
+using the average firing rate $r_{i}^{(j)}$ of the $i$th neuron in cell assembly $j$ and the number $N_{j}$ of neurons belonging to the cell assembly. Similarly, we defined the assembly size ratio of cell assembly 1 as
 
-in Figure 3e. Here, rpop(i)\begin{document}$r_{\rm pop}^{\left (i\right)}$\end{document} represents the population neural activity of cell assembly i\begin{document}$i$\end{document}:(22)rpop(j)≡∑i=1Njri(j)\begin{document}$$\displaystyle r_{\rm pop}^{\left (j\right)}\equiv \sum _{i=1}^{N_{j}}r_{i}^{\left (j\right)}$$\end{document}
+$$
+Assemblysizeratio=\frac{N_{1}}{(\sumj=25N_{j})/4}
+$$
 
-## Simulations of perceptual decision making
+in Figure 3d and assembly activity ratio of cell assembly 1 as
 
-In each learning trial, we trained the network with either leftward or rightward dot movement represented by the corresponding input neurons firing at rmax=50Hz\begin{document}$r_{\rm max}=50\, {\rm Hz}$\end{document} In test trials, we defined input coherence as Coh=ρR−0.5\begin{document}${\rm Coh}=\rho _{R}- 0.5$\end{document} according to Hanks et al., 2011, where ρR\begin{document}$\rho _{R}$\end{document} is the ratio of R input neurons to the sum of R and L input neurons in firing rate. The value of Coh ranges between –0.5 (all dots moving leftward) and +0.5 (all dots moving rightward). Then, in test trials for input coherence Coh, we generated Poisson spike trains of R and L input neurons at the rates (Coh+0.5)rmax\begin{document}$\left (\rm Coh+0.5\right)r_{\rm max}$\end{document} and (−Coh+0.5)rmax\begin{document}$\left (\rm - Coh+0.5\right)r_{\rm max}$\end{document}, respectively.
+$$
+Assemblyactivityratio=\frac{r_{pop}^{(1)}}{(\sumi=25r_{pop}^{(i)})/4},
+$$
 
-In Figure 5c, we calculated the activity ratio (AR) as(23)AR=rRpoprRpop+rLpop,\begin{document}$$\displaystyle {\rm AR}=\frac{r_{\rm R}^{\rm pop}}{r_{\rm R}^{\rm pop}+r_{\rm L}^{\rm pop}},$$\end{document}
+in Figure 3e. Here, $r_{pop}^{(i)}$ represents the population neural activity of cell assembly $i$:
 
-where rRpop\begin{document}$r_{\rm R}^{\rm pop}$\end{document} and rLpop\begin{document}$r_{\rm L}^{\rm pop}$\end{document} represent the average population firing rates of R- and L-encoding cell assemblies, respectively. In Figure 5b, we defined ‘choices to right’ as(24)Choicestoright=AR×100(%).\begin{document}$$\displaystyle \rm Choices\, to\, right=AR\times 100\left (\%\right).$$\end{document}
+$$
+r_{pop}^{(j)}≡\sumi=1N_{j}r_{i}^{(j)}
+$$
 
-## A network model with distinct excitatory and inhibitory synapses
+### Simulations of perceptual decision making
 
-Here, we explain the network model and the plasticity rules used in Figure 6. The network consists of 500 neurons, and the membrane potential of a neuron i\begin{document}$i$\end{document} at time t\begin{document}$t$\end{document} is given as follows:(25)ui(t)=∑k=1K Wikxk(t)⏟=:viW+[∑n=1NMinexcyn(t)]⏟=:viM(exc)−[∑n=1NMininhyn(t)]⏟=:viM(inh)−∑n=1NGinyn(t)⏟=:viG,\begin{document}$$\displaystyle \begin{array}{ll}u_i(t)=\underbrace{\sum_{k=1}^K \mathrm{~W}_{i k} x_k(t)}_{=: \mathrm{v}_i^{\mathrm{W}}}+\underbrace{\left[\sum_{n=1}^N \mathrm{M}_{i n}^{\mathrm{exc}} y_n(t)\right]}_{=: \mathrm{v}_i^{\mathrm{M}}(\mathrm{exc})}-\underbrace{\left[\sum_{n=1}^N \mathrm{M}_{i n}^{\mathrm{inh}} y_n(t)\right]}_{=: \mathrm{v}_i^{\mathrm{M}}(\mathrm{inh})} \\-\underbrace{\sum_{n=1}^N \mathrm{G}_{i n} y_n(t)}_{=: \mathrm{v}_i^{\mathrm{G}}},\end{array}$$\end{document}
+In each learning trial, we trained the network with either leftward or rightward dot movement represented by the corresponding input neurons firing at $r_{max}=50Hz$ In test trials, we defined input coherence as $Coh=ρ_{R}−0.5$ according to Hanks et al., 2011, where $ρ_{R}$ is the ratio of R input neurons to the sum of R and L input neurons in firing rate. The value of Coh ranges between –0.5 (all dots moving leftward) and +0.5 (all dots moving rightward). Then, in test trials for input coherence Coh, we generated Poisson spike trains of R and L input neurons at the rates $(Coh+0.5)r_{max}$ and $(−Coh+0.5)r_{max}$, respectively.
 
-where {Wik}\begin{document}$\left\{{\rm W}_{ik}\right\} $\end{document} is afferent synaptic weights, which are a mixture of excitatory and inhibitory connections as in the nDL model. The weights of recurrent excitatory synapses are {Minexc\begin{document}$\rm M^{exc}_{in}$\end{document}}. Here, we considered two types of recurrent inhibitory connections, denoted by Minh\begin{document}$\rm M^{inh}$\end{document} and G\begin{document}$G$\end{document}, respectively. Here, we assumed that half of the recurrent connections were assumed to be excitatory and the remaining connections were all inhibitory, half of which were Minh\begin{document}$\rm M^{inh}$\end{document} and the other half were G\begin{document}$\rm G$\end{document}. We modified these weights according to the following equations:(26a)ΔWij=ηE(fi,viW)xj,\begin{document}$$\displaystyle \Delta {\rm W}_{ij}=\eta \mathcal E(f_{i},v_{i}^{\rm W})x_{j},$$\end{document}(26b)ΔMijexc=ηE(fi,viM(exc)−viM(inh))yj,\begin{document}$$\displaystyle \Delta {\rm M}_{ij}^{\rm exc}=\eta \mathcal E\,\left (f_{i},v_{i}^{\rm M\left (exc\right)}- v_{i}^{\rm M\left (inh\right)}\right)y_{j},$$\end{document}(26c)ΔMijexc=−ηE(fi,viM(exc)−viM(inh))yj,\begin{document}$$\displaystyle \Delta {\rm M}_{ij}^{\rm exc}=- \eta \mathcal E \, \left (f_{i},{\rm v}_{i}^{\rm M\left (exc\right)}- {\rm v}_{i}^{\rm M\left (inh\right)}\right)y_{j},$$\end{document}(26d)ΔGij=ηE(fi,viG)yj,\begin{document}$$\displaystyle \Delta G_{ij}=\eta \mathcal E\, \left (f_{i},v_{i}^{G}\right)y_{j},$$\end{document}
+In Figure 5c, we calculated the activity ratio (AR) as
 
-where E(fi,vi)\begin{document}$\mathcal E\left (f_{i},v_{i}\right)$\end{document} is the error term defined as(27)E(fi,vi)φ0−1(1−φ(vi)φ0)[fi−φ(vi)].\begin{document}$$\displaystyle \mathcal E \left (f_{i},v_{i}\right)\varphi _{0}^{- 1}\left (1- \frac{\varphi \left (v_{i}\right)}{\varphi _{0}}\right)\left [f_{i}- \varphi \left (v_{i}\right)\right ].$$\end{document}
+$$
+AR=\frac{r_{R}^{pop}}{r_{R}^{pop}+r_{L}^{pop}},
+$$
+
+where $r_{R}^{pop}$ and $r_{L}^{pop}$ represent the average population firing rates of R- and L-encoding cell assemblies, respectively. In Figure 5b, we defined ‘choices to right’ as
+
+$$
+Choicestoright=AR\times100(%).
+$$
+
+### A network model with distinct excitatory and inhibitory synapses
+
+Here, we explain the network model and the plasticity rules used in Figure 6. The network consists of 500 neurons, and the membrane potential of a neuron $i$ at time $t$ is given as follows:
+
+$$
+u_{i}(t)=\sumk=1K W_{ik}x_{k}(t)⏟=:v_{i}^{W}+[\sumn=1NM_{in}^{exc}y_{n}(t)]⏟=:v_{i}^{M}(exc)−[\sumn=1NM_{in}^{inh}y_{n}(t)]⏟=:v_{i}^{M}(inh)−\sumn=1NG_{in}y_{n}(t)⏟=:v_{i}^{G},
+$$
+
+where ${W_{ik}}$ is afferent synaptic weights, which are a mixture of excitatory and inhibitory connections as in the nDL model. The weights of recurrent excitatory synapses are {$M_{in}^{exc}$}. Here, we considered two types of recurrent inhibitory connections, denoted by $M^{inh}$ and $G$, respectively. Here, we assumed that half of the recurrent connections were assumed to be excitatory and the remaining connections were all inhibitory, half of which were $M^{inh}$ and the other half were $G$. We modified these weights according to the following equations:
+
+$$
+ΔW_{ij}=ηE(f_{i},v_{i}^{W})x_{j},
+$$
+
+
+
+$$
+ΔM_{ij}^{exc}=ηE(f_{i},v_{i}^{M(exc)}−v_{i}^{M(inh)})y_{j},
+$$
+
+
+
+$$
+ΔM_{ij}^{exc}=−ηE(f_{i},v_{i}^{M(exc)}−v_{i}^{M(inh)})y_{j},
+$$
+
+
+
+$$
+ΔG_{ij}=ηE(f_{i},v_{i}^{G})y_{j},
+$$
+
+where $E(f_{i},v_{i})$ is the error term defined as
+
+$$
+E(f_{i},v_{i})\phi_{0}^{−1}(1−\frac{\phi(v_{i})}{\phi_{0}})[f_{i}−\phi(v_{i})].
+$$
 
 At each time step during learning, we truncated all weights of recurrent connections to non-negative values during learning.
 
-## A network model with distinct excitatory and inhibitory neuron populations
+### A network model with distinct excitatory and inhibitory neuron populations
 
-Here, we explain the architecture of the model used in Figure 7. The network consists of NE(=500)\begin{document}$\rm N_{E}\left (=500\right)$\end{document} excitatory and NI(=500)\begin{document}$\rm N_{I}\left (=500\right)$\end{document} inhibitory neurons. The membrane potential of a neuron i\begin{document}$i$\end{document} of a population X\begin{document}$\rm X$\end{document} (=E or I) at time t\begin{document}$t$\end{document} is given as follows:(28)uiX(t)=∑k=1K WikXxk(t)⏟=:viW+[∑l=1NEMilXEylE(t)−∑m=1NIGimXI(path2)ymI(t)]⏟=:viM(2)−∑m=1NIGimXI(path1)ymI(t)⏟=:viM(1),\begin{document}$$\displaystyle \begin{array}{ll}u_i^{\mathrm{X}}(t)=\underbrace{\sum_{k=1}^K \mathrm{~W}_{i k}^{\mathrm{X}} x_k(t)}_{=: \mathrm{v}_i^{\mathrm{W}}}+\underbrace{\left[\sum_{l=1}^{N_E} \mathrm{M}_{i l}^{\mathrm{XE}} y_l^E(t)-\sum_{m=1}^{N_I} \mathrm{G}_{i m}^{\mathrm{XI}(\mathrm{path} 2)} y_m^I(t)\right]}_{=: \mathrm{v}_i^{\mathrm{M}(2)}} \\\quad \quad \quad \qquad \quad-\underbrace{\sum_{m=1}^{N_I} \mathrm{G}_{i m}^{\mathrm{XI}(\mathrm{path} 1)} y_m^I(t)}_{=: \mathrm{v}_i^{\mathrm{M}(1)}},\end{array}$$\end{document}
+Here, we explain the architecture of the model used in Figure 7. The network consists of $N_{E}(=500)$ excitatory and $N_{I}(=500)$ inhibitory neurons. The membrane potential of a neuron $i$ of a population $X$ (=E or I) at time $t$ is given as follows:
 
-where {WikX}\begin{document}$\left \{W_{ik}^{X}\right \}$\end{document} is afferent synaptic weights, which are a mixture of excitatory and inhibitory connections as in the nDL model. The weights of recurrent excitatory synapses are {MilXE\begin{document}${\rm M}_{il}^{\rm XE}$\end{document}}. Here, we considered two types of recurrent inhibitory connections (i.e., path 1 and path 2), denoted by GImXI(path1)\begin{document}$\rm G_{Im }^{XI\left (path1\right)}$\end{document} and GImXI(path2)\begin{document}$\rm G_{Im }^{XI\left (path2\right)}$\end{document}, respectively. Using the same definitions of the error term as in Equation 27, we modified these weights according to the following equations:(29a)ΔWijX=ηE(fi,viW)xj,\begin{document}$$\displaystyle \Delta {\rm W}_{ij}^{\rm X}=\eta \mathcal E \left (f_{i},{\rm v}_{i}^{\rm W}\right)x_{j},$$\end{document}(29b)ΔMijXE=ηE(fi,viM(2))yjE,\begin{document}$$\displaystyle \Delta {\rm M}_{ij}^{\rm XE}=\eta \mathcal E \left (f_{i},{\rm v}_{i}^{\rm M\left (2\right)}\right)y_{j}^{E},$$\end{document}(29c)ΔGijXI(path2)=−ηE(fi,viM(2))yjI,\begin{document}$$\displaystyle \Delta {\rm G}_{ij}^{\rm XI\left (path2\right)}=- \eta \mathcal E \left (f_{i},{\rm v}_{i}^{\rm M\left (2\right)}\right)y_{j}^{I},$$\end{document}(29d)ΔGijXI(path1)=ηE(fi,viM(1))yjI\begin{document}$$\displaystyle \Delta {\rm G}_{ij}^{\rm XI\left (path1\right)}=\eta \mathcal E \left (f_{i},{\rm v}_{i}^{\rm M\left (1\right)}\right)y_{j}^{I}$$\end{document}
+$$
+u_{i}^{X}(t)=\sumk=1K W_{ik}^{X}x_{k}(t)⏟=:v_{i}^{W}+[\suml=1N_{E}M_{il}^{XE}y_{l}^{E}(t)−\summ=1N_{I}G_{im}^{XI(path2)}y_{m}^{I}(t)]⏟=:v_{i}^{M(2)}−\summ=1N_{I}G_{im}^{XI(path1)}y_{m}^{I}(t)⏟=:v_{i}^{M(1)},
+$$
+
+where ${W_{ik}^{X}}$ is afferent synaptic weights, which are a mixture of excitatory and inhibitory connections as in the nDL model. The weights of recurrent excitatory synapses are {$M_{il}^{XE}$}. Here, we considered two types of recurrent inhibitory connections (i.e., path 1 and path 2), denoted by $G_{Im}^{XI(path1)}$ and $G_{Im}^{XI(path2)}$, respectively. Using the same definitions of the error term as in Equation 27, we modified these weights according to the following equations:
+
+$$
+ΔW_{ij}^{X}=ηE(f_{i},v_{i}^{W})x_{j},
+$$
+
+
+
+$$
+ΔM_{ij}^{XE}=ηE(f_{i},v_{i}^{M(2)})y_{j}^{E},
+$$
+
+
+
+$$
+ΔG_{ij}^{XI(path2)}=−ηE(f_{i},v_{i}^{M(2)})y_{j}^{I},
+$$
+
+
+
+$$
+ΔG_{ij}^{XI(path1)}=ηE(f_{i},v_{i}^{M(1)})y_{j}^{I}
+$$
 
 To satisfy Dale’s law, we truncated all weights of recurrent connections to non-negative values during learning.
 
-In Figure 7g, we measured the lateral inhibition between excitatory neurons via path 1 by calculating:(30)[Wi,jLI]=∑k=1NEGikEI(path1)MkjIE.\begin{document}$$\displaystyle \left [{\rm W}_{i,j}^{\rm LI}\right ]=\sum _{k=1}^{N_{E}}{\rm G}_{ik}^{\rm EI\left (path1\right)}{\rm M}_{kj}^{\rm IE}.$$\end{document}
+In Figure 7g, we measured the lateral inhibition between excitatory neurons via path 1 by calculating:
+
+$$
+[W_{i,j}^{LI}]=\sumk=1N_{E}G_{ik}^{EI(path1)}M_{kj}^{IE}.
+$$
 
 Lateral inhibition via path 2 was calculated in a similar fashion.
 
-## Simulation details
+### Simulation details
 
 All simulations were performed in customized Python3 code written by TA with numpy 1.17.3 and scipy 0.18. Differential equations were numerically integrated using an Euler method with integration time steps of 1 ms.
 
-## Data availability
+### Data availability
 
 Code is provided on the GitHub repository (Asabuki, 2024). https://github.com/TAsabuki/PriorNet_codes, (copy archived at Asabuki, 2025).

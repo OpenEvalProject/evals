@@ -23,11 +23,19 @@
 
 ## Abstract
 
-10.7554/eLife.36401.001 Cognitive and social capacities require postnatal experience, yet the pathways by which experience guides development are unknown. Here we show that the normal development of motor and nonmotor capacities requires cerebellar activity. Using chemogenetic perturbation of molecular layer interneurons to attenuate cerebellar output in mice, we found that activity of posterior regions in juvenile life modulates adult expression of eyeblink conditioning (paravermal lobule VI, crus I), reversal learning (lobule VI), persistive behavior and novelty-seeking (lobule VII), and social preference (crus I/II). Perturbation in adult life altered only a subset of phenotypes. Both adult and juvenile disruption left gait metrics largely unaffected. Contributions to phenotypes increased with the amount of lobule inactivated. Using an anterograde transsynaptic tracer, we found that posterior cerebellum made strong connections with prelimbic, orbitofrontal, and anterior cingulate cortex. These findings provide anatomical substrates for the clinical observation that cerebellar injury increases the risk of autism.
+Cognitive and social capacities require postnatal experience, yet the pathways by which experience guides development are unknown. Here we show that the normal development of motor and nonmotor capacities requires cerebellar activity. Using chemogenetic perturbation of molecular layer interneurons to attenuate cerebellar output in mice, we found that activity of posterior regions in juvenile life modulates adult expression of eyeblink conditioning (paravermal lobule VI, crus I), reversal learning (lobule VI), persistive behavior and novelty-seeking (lobule VII), and social preference (crus I/II). Perturbation in adult life altered only a subset of phenotypes. Both adult and juvenile disruption left gait metrics largely unaffected. Contributions to phenotypes increased with the amount of lobule inactivated. Using an anterograde transsynaptic tracer, we found that posterior cerebellum made strong connections with prelimbic, orbitofrontal, and anterior cingulate cortex. These findings provide anatomical substrates for the clinical observation that cerebellar injury increases the risk of autism.
 
 ## Introduction
 
 Human capacities for cognition and flexible behavior unfold rapidly in the first six years of life. During this period, subcortical processing helps refine connections in the developing forebrain (Knudsen, 2004; Wang et al., 2014; Wiesel, 1982). Even though the cerebellum is best known as a structure that guides movement and action (Dean et al., 2010), it is also likely to regulate cognitive and emotional processing (Reeber et al., 2013; Snow et al., 2014), a role that may extend to early development. Cerebellar projections to and from the forebrain are extensive (Figure 1A; Altman and Bayer, 1997; Buckner et al., 2011; Diamond, 2000; Sokolov et al., 2017; Wang et al., 2014) and are present in early life (Altman and Bayer, 1997; Buckner et al., 2011; Diamond, 2000; Sokolov et al., 2017; Wang et al., 2014). The cerebellum communicates with midbrain and neocortical targets (Strick et al., 2009), providing a means for guiding the brainwide maturation of flexible and social behaviors.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig1-v3.jpg)
+
+**Figure 1.:** (A) Cerebello-cerebral loops, defined by an ascending pathway via thalamus and a descending reciprocal pathway via pontine nuclei. (B) Simplified diagram of cerebellar microcircuitry. Molecular layer interneurons (MLIs) receive incoming excitation from the mossy fiber (MF)-granule cell (GrC) pathway and in turn inhibit Purkinje cells (PCs), the output neurons of the cerebellar cortex which then inhibit neurons of the cerebellar nuclei (CN). (C) Left, dorsal view of cerebellum with the four targeted lobules indicated in color. Right, experimental design for developmental and acute perturbation. (D) Expression of the chemogenetic DREADD probe hM4D(Gi)-mCherry in MLIs (red). Note the absence of mCherry signal in the granule cell layer or the mossy fiber bundle visualized by DAPI staining (blue) (see Video 1). (E) Top, a sagittal cerebellar section showing an example recording location in the in vivo awake experiment. The recording location was marked by cholera toxin subunit B conjugated to Alexa 488 staining (green); DREADD expression marked by mCherry (red). Bottom left, removable implant used for in vivo electrophysiology. Bottom right, mCherry expression imaged through the implant silicone plug. (F) The activating ligand clozapine-N-oxide (CNO) binds to the hM4Di receptor, which decreases firing of MLIs (see Figure 1—figure supplement 1) and thus removes synaptic inhibition from PCs. (G) Left, extracellular recording of PC activity from awake mice before and after CNO application. Right, CNO (10 μM) leads to an increase in the simple-spike firing frequency and a decrease in the local coefficient of variation (CV2). **, different from baseline by paired t-test, p<0.05 (H) CNO-to-baseline ratios of the measures, plotted on a cell-by-cell basis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic diagram of cerebellar circuitry depicting the position of the recording electrode in the slice preparation. (B) Molecular layer interneurons (MLIs) expressing DREADDs (black) in a brain slice imaged under epifluorescence at 10x. Image is inverted in intensity. (C) Left, example of a patched MLI filled with Alexa 488 and imaged on a confocal microscope at 40x. Right, same cell showing DREADD-mCherry expression. Note the presence of many mCherry-positive MLIs. Image is inverted in intensity. (D) Whole-cell voltage-clamp patch recording of an MLI before and after CNO application. (E) CNO administration blocks MLI activity (n = 2 mice, 7 cells).
 
 Pediatric cerebellar insult causes cognitive and affective deficits (Limperopoulos et al., 2014; Limperopoulos et al., 2010). Indeed, specific neonatal cerebellar injury increases autism risk by 36-fold (Limperopoulos et al., 2007), suggesting that the cerebellum plays a necessary role in cognitive and social development. Finally, in mice, cerebellar-only genetic alterations lead to deficits of flexible and social behavior (Passot et al., 2012; Peter et al., 2016; Tsai et al., 2012).
 
@@ -37,17 +45,206 @@ Together, these previous findings suggest that the cerebellum plays a crucial ro
 
 ## Results
 
-## Experimental design
+### Experimental design
 
 To probe the role of identified cerebellar regions (Figure 1C) during cognitive and social development, we manipulated neural activity in mice reversibly using Designer Receptors Exclusively Activated by Designer Drugs (DREADDs; Wess et al., 2013). We injected adeno-associated virus (AAV) carrying the sequence for the inhibitory DREADD hM4Di, fused to mCherry protein under a synapsin-1 promoter (Kuhn et al., 2012) to drive expression exclusively in molecular layer interneurons (MLIs; Figure 1D and Video 1; of lobules VI or VII, crus I or II, or paravermal lobule VI). Mice underwent a battery of behavioral testing and training, followed by recovery of the distribution of DREADD expression by two-photon fluorescence tomography.
 
+![Video 1.](https://cdn.elifesciences.org/articles/36401/elife-36401-video1.mp4.jpg)
+
 As our developmental perturbation, after AAV injection at postnatal day (PND) 21 (Figure 1C; Table 1), we administered the DREADD agonist clozapine-N-oxide (CNO) on PND 30 – 56. To compare developmental effects with the direct effects of adult disruption of activity, we performed additional experiments in which we injected virus at PND 42 – 48 and tested the acute effects of CNO administered prior to behavioral testing (Figure 1C; Table 1). All behavioral tests were done between PND 57 and PND 126.
+
+**Table 1.**
+ Summary of all mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Experimental group</th>
+      <th rowspan="2">Injection site</th>
+      <th colspan="6">Behavioral assays</th>
+    </tr>
+    <tr>
+      <th>Grooming</th>
+      <th>Social chamber</th>
+      <th>Y-maze</th>
+      <th>Elevated Plus Maze</th>
+      <th>Gait</th>
+      <th>Eyeblink</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Adult</td>
+      <td>Lobule VI</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Lobule VII</td>
+      <td>10</td>
+      <td>10</td>
+      <td>7*</td>
+      <td>10</td>
+      <td>10</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Crus I</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Crus II</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Eyeblink</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td colspan="8">*not counting three mice excluded from group comparison during habituation phase</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Developmental</td>
+      <td>Lobule VI</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>6**</td>
+    </tr>
+    <tr>
+      <td>Lobule VII</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Crus I</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>6**</td>
+    </tr>
+    <tr>
+      <td>Crus II</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td colspan="8">**not counting four mice (1 crus I, 3 lobule VI) excluded due to eyeblink-zone spillover expression</td>
+    </tr>
+    <tr>
+      <td>Controls</td>
+      <td>Type</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="5">Adult</td>
+      <td>DREADDs (eyeblink zone)+saline injections</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Saline i.p.</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CNO alone</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>No treatment</td>
+      <td>8</td>
+      <td>8</td>
+      <td>17</td>
+      <td>18</td>
+      <td>18</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>GCaMP6f injections + CNO</td>
+      <td>-</td>
+      <td>-</td>
+      <td>8</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Developmental</td>
+      <td rowspan="4">CNO alone</td>
+      <td rowspan="4">10</td>
+      <td rowspan="4">10</td>
+      <td rowspan="4">10</td>
+      <td rowspan="4">10</td>
+      <td rowspan="4">10</td>
+      <td rowspan="4">-</td>
+    </tr>
+  </tbody>
+</table>
 
 Activation of inhibitory DREADDs in MLIs should affect cerebellar Purkinje cell output in two major ways, by disinhibiting simple spiking and by impairing modulation of spike rate and timing (Figure 1E–H). These alterations would, in turn, suppress the amount and modulation of deep-nuclear output to the rest of the brain. Using in vivo extracellular single-unit recording, we confirmed that CNO administration induced cell-specific increases in Purkinje cell simple-spike firing frequency (FF) and a reduction in the coefficient of variation for a sequence of two interspike intervals (CV2) (n = 4 mice, p=0.047 for FF and p=0.024 for CV2, paired t-test, effect size: Cohen’s d = 1.5 pooled standard deviations for FF and 1.3 for CV2) (Figure 1G–H). Furthermore, we confirmed effects on MLIs in cerebellar brain slices (Figure 1—figure supplement 1).
 
-## Region-specific impairment of eyeblink conditioning, but minimal effects on gait
+### Region-specific impairment of eyeblink conditioning, but minimal effects on gait
 
 We tested whether DREADD activation could affect classical eyeblink conditioning, a cerebellum-dependent associative learning task (Figure 2). By pairings of light flashes (conditioned stimulus, CS) with airpuffs to the cornea (unconditioned stimulus, US) mice were trained to preemptively close the eye in response to the light alone, a learned behavior termed a conditioned response (CR; Figure 2A). DREADD activation during development in either paravermal lobule VI (‘eyeblink area’) or crus I, both of which modulate eyeblink conditioning (Giovannucci et al., 2017; Heiney et al., 2014), was sufficient to cause long-lasting deficits in learning (Figure 2B), suggesting that normal activity in these regions is necessary for the maturation of eyeblink conditioning (Freeman, 2014). The necessity of these regions for conditioning was confirmed by acute inactivation (Figure 2C). This effect was reversible (Figure 2D). No impairments were found with CNO or DREADD treatment alone (Figure 2—figure supplement 1A) or from perturbation of other lobules (Figure 2—figure supplement 1B–C). Thus, DREADD-based perturbation can cause lobule-specific alterations in the development and adult expression of cerebellum-dependent associative learning.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig2-v3.jpg)
+
+**Figure 2.:** (A) Top, eyeblink conditioning performed using an unconditional stimulus (US, corneal airpuff) delivered at the end of a conditional stimulus (CS, LED). Bottom, learned anticipatory eyelid deflection (conditional response, CR; red), followed by an unconditional reflex (UR) blink. (B) Reduced frequency of CRs after developmental CNO activation of DREADDs in the eyeblink area of lobule VI (p<10−10, two-way ANOVA) and in crus I (p<10−6) compared to controls (see Figure 2—figure supplement 1). (C) Reduced frequency of conditional responses after acute CNO activation of DREADDs in lobule VI eyeblink area (p<10−10, two-way ANOVA) and in crus I (p<10−6). (D) In adult-disrupted mice, removal of CNO after 11 sessions of training resulted in recovery of conditional responses in both affected acute groups (crus I and eyeblink region). Error bars show mean ±SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) All control groups showed normal acquisition of eyeblink conditioning. Conditional responses (CRs) were quantified as normalized eyelid closure relative to US response, measured from CS-US paired trials. Experimental data represent averages (solid lines) and standard deviations (shaded areas) of all control mice used in this study segregated by the type of controls (untreated controls: 16 adult C57BL/6J male mice that underwent headplate surgery and no drug administration; Eyeblink Area controls: five adult C57BL/6J male mice that underwent AAV8-hSyn-hM4D(Gi)-mCherry injections into the eyeblink zone, headplate surgeries and were administered saline throughout training; CNO controls: nine adult C57BL/6J male mice that received headplate surgeries and were administered CNO throughout training). (B) No differences in eyeblink acquisition were observed in mice expressing DREADDs in crus II and lobule VI under acute CNO treatment. (C) Administration of CNO during development in mice expressing DREADDs in crus II and lobule VI had no effect on learning.
 
 To test for cerebellar influences on motor capacity that might affect tasks, we analyzed gait (Machado et al., 2015); Figure 3A–B; Videos 2 and 3) and found that individual posterior cerebellar lobules were not necessary for the expression of normal gait parameters. As a yardstick of the full scale of cerebellum-specific impairment of gait, we used Purkinje cell-specific Tsc1-/- mice, which show cerebellar degeneration and ataxia (Tsai et al., 2012); L7Cre;Tsc1flox/flox). Tsc1-/- mice showed considerably wider forelimb and hindlimb stance than controls (forelimb/hindlimb effect size d = 2.4, Figure 3C, red dots). This result was consistent with previous measurements in Agtpbp1 mice (see Figure 3B in Machado et al., 2015). Compared with Tsc1-/- mice, CNO treatment by itself in wild-type mice had smaller effects (acute d = 0.2, developmental d = 1.0), potentially arising from its conversion to a bioactive product (Gomez et al., 2017; Manvich et al., 2018). Using CNO-only controls as a comparison, we found that in virus-injected mice, CNO treatment led to small changes in stance (acute d = −0.3 to +0.7, developmental d =−0.2 to +0.3; Figure 3D, Video 3). With the exception of lobule VII (Figure 3D), acute and developmental perturbation of posterior cerebellar lobules did not cause statistically significant gait deficits.
 
@@ -55,17 +252,226 @@ To test for cerebellar influences on motor capacity that might affect tasks, we 
 
 **Figure 3.:** (A) Schematic of gait apparatus. A camera was placed below the plexiglas to record a mouse running the length of the track. (B) Raw gait videos were processed using a MATLAB graphical user interface to detect sequences of mouse locomotion. Left, images from a mouse expressing DREADDs in lobule VII after acute CNO administration. Right, images from an ataxic L7Cre;Tsc1flox/flox mutant adult mouse used as a positive control. Stride lengths for each paw were calculated as the average distance between successive paw placements (see Video 2). Fore and hind stances were calculated as the average distance between fore and hind paws measured in the direction of the locomotion. (C) Stance measurements revealed no acute (blue shading) or developmental (green shading) effects of CNO on fore stance when compared to untreated controls (no shading). L7Cre;Tsc1flox/flox mice were used as positive controls (red). Developmental exposure to CNO resulted in an broader hind stance (CNO control developmental vs. control p<0.0001, one-way ANOVA). Hind stance in the L7Cre;Tsc1flox/flox mice was more severely affected (p<10−9). (D) Acute perturbation to lobule VII caused a mild broadening of hind (but not fore) stance when compared to CNO exposure time matched control (p<0.01, one-way ANOVA, see Video 3).
 
-## Developmental CNO exposure leads to subtle behavioral deficits
+![Video 2.](https://cdn.elifesciences.org/articles/36401/elife-36401-video2.mp4.jpg)
+
+**Video 2.:** Top. Raw movie played at four fps. Middle. Thresholded movie. Bottom. Tracked paws using ‘Manual Tracker’ plugin in Fiji.
+
+![Video 3.](https://cdn.elifesciences.org/articles/36401/elife-36401-video3.mp4.jpg)
+
+### Developmental CNO exposure leads to subtle behavioral deficits
 
 To probe cognitive and affective function, we administered four behavioral tests (Y-maze, social chamber, grooming assay and elevated plus-maze) to obtain a panel of quantitative information (Table 2). Acute CNO administration in virus-untreated mice had no detectable effects on any behavioral assay (Figures 4–8). Developmentally, in virus-untreated mice, we found that CNO administration alone did not have detectable effects on Y-maze learning or social chamber behavior (Figures 4–6; p>0.05 for all groups for all metrics), but it did have modest effects on elevated plus-maze (EPM) parameters (Figure 7) and self-grooming (Figure 8). For further analysis of treatment effects, baseline control groups were age-matched and virus-untreated: for Y-maze and social chamber, no-CNO and CNO-alone mice combined; and for EPM and grooming, CNO-alone mice.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig4-v3.jpg)
+
+**Figure 4.:** (A) Protocol for the Y-maze reversal assay consisting of initial training (day 1), test (day 2), and reversal (days 3 and 4). (B) All control groups showed normal reversal learning. Data represent averages of all control mice segregated by the type of controls. (C) Reversal learning was impaired by developmental activation of DREADDs in lobule VI and crus I but not in control mice (see Figure 4—figure supplement 1 and Videos 4 and 5). (D) Reversal learning was impaired by acute activation of DREADDs in lobule VI. Data with error bars are plotted as mean ±SEM. *p<0.05; **p<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** No differences were detected in distributions of three z-score normalized control groups for any of eight Y-maze assay measures (as defined in Table 2). Boxplot outliers were defined as points outside the interquartile range (IQR) by more than 1.5 IQR.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig5-v3.jpg)
+
+**Figure 5.:** (A) Distance swum by control and experimental groups during the habituation phase of the swimming Y-maze. The only change observed was a mild increase after acute perturbation of lobule VI (p<0.05, one-way ANOVA). (B) Nonmotor, learning-related performance measures (for exact definitions see Table 2). (C) In experimental groups, variance in behavioral metrics is greater for learning metrics than for movement. (D) Principal component analysis (see Figure 5—figure supplement 1) reveals eigenbehaviors that capture concerted nonmotor impairments in lobule VI acute, lobule VI development, and crus I development groups.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Principal components (PCs) were computed from the control distributions to identify covariation in groups of behavioral metrics; the resulting components can be considered ‘eigenbehaviors’. The experimental data was then projected onto the eigenbehaviors and only dimensions that captured significant variance were kept. The reprojected data captures the original variation of the raw behavioral data using fewer dimensions. (B) Control-group principal components of Y-maze measures. Colors indicate coefficient weights corresponding to behavioral measures from each assay (as defined in Table 2). PCs were computed using normalized control-mouse measures (pooled controls, acute and developmental CNO controls). Red outlines indicate PCs for Y-maze metrics that separated the control and cerebellar-perturbation groups. (C) The variance captured by specific PCs, normalized to the control group PC variance, demonstrates that experimental groups vary in dimensions orthogonal to the control group. (D) The PC z-scores for PC3 and PC5 contributions show statistically significant separation between controls and lobule VI acute; and crus I and lobule VI developmental perturbation. *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig6-v3.jpg)
+
+**Figure 6.:** (A) The three-chamber social preference test. (B) Interaction times with under-cup mouse and object were quantified using automated detection of near-cup approaches (see Figure 6—figure supplement 1). (C) Specific impairments in social preference after developmental perturbation of crus I or crus II but not other lobules, as measured by both time spent anywhere in the chamber and time spent near the cup. Error bars indicate mean ±SD. (D) Variance in social behavior metrics points to a stronger effect of cerebellar perturbation on non-motor metrics than on movement. (E) Separation of individual mice according to principal component analysis (see Figure 6—figure supplement 2). Orange curves indicate a boundary between opposite effects in acutely and developmentally perturbed lobule VII mice. Individual behavioral metrics were insufficient to separate the two groups (see Figure 6C). *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Lack of correlation between test phase bias and baseline bias, indicating the lack of identifiable environmental influence. (B) No differences were detected in distributions of the three z-score-normalized control groups for any social chamber assay measures (as defined in Table 2). Plotted outliers were defined as points outside the interquartile range (IQR) by more than 1.5 IQR. (C) Movement in social chamber, measured by distance traveled, was assessed during baseline and test phases. Crus I developmental mice displayed increased distance traveled compared to controls in baseline. In the test phase, lobule VII developmental mice displayed increased distance traveled compared to controls. No other differences were detected.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Control-group principal components of social chamber assay measures (as defined in Table 2). The red outline indicates the one eigenbehavior (PC3), representing strong negative covariation of social preference and novelty-seeking, which was significantly affected by lobule-specific perturbations. (B) Variance contribution of lobule-specific PCs, normalized to controls. (C) Mouse-by-mouse z-scored contributions from PC3 showing statistically significant separation between controls and lobule VII, crus I, and crus II developmental perturbation. *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig7-v3.jpg)
+
+**Figure 7.:** (A) Elevated plus-maze (EPM). Right, schematic view. (B) Entrance analysis. Entrances were defined as either full entries or jittery entries. (C) Opposite effects on open-arm preference were found between developmental and acute groups. Developmental perturbation of lobule VII led to reduced open-arm preference. Acute perturbation of lobule VII led to increased open-arm preference (one-way ANOVA, p<0.05, d = 0.92, Šidák’s multiple comparisons post-hoc test p=0.02). (D) Developmental perturbation of lobule VII led to reduced exploration time. (E) Analysis of exploration time commitment index (as defined in Table 2) found no difference between groups. (F) Analysis of exploration entrances in EPM found no difference between groups. Error bars indicate mean ±SD. (Figure 7—figure supplement 1 and Figure 7—figure supplement 2).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) CNO developmental controls displayed increased open-arm preference, commitment index, exploration entrance, and distance traveled compared to untreated controls in distributions of the three z-score-normalized control groups. (B) In EPM, no differences in distance traveled were detected for acutely perturbed mice. Lobule VII and crus II perturbations displayed reduced distance traveled compared to controls.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** Novelty-seeking was defined as the difference between summed entrances to mouse (EntrM) and object (EntrO) chambers in test (test) and baseline (BS) sessions relative to baseline session. Novelty-seeking was oppositely affected by acute vs. developmental perturbation to lobule VII (p<0.01, t-test).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig8-v3.jpg)
 
 **Figure 8.:** (A) Grooming behavior was manually scored during a 10-min observation window and video-recorded for post-hoc corroboration. A grooming event was defined as a unilateral or bilateral stroke or full-body cleaning (Kalueff et al., 2016). Grooming events of less than 1-s duration were excluded from analysis. (B) Average grooming time in response to (left) saline injection on day 1 and (right) CNO injection on day 2 of testing in untreated mice (no AAV-DREADD injection or CNO) and mice that received CNO developmentally or acutely (color-shaded regions). (C) Injection-triggered grooming in DREADD-treated mice and corresponding controls. Bar graphs show average grooming time in response to the same 2-day injection protocol as in (B). The controls show the same data as the color shaded regions in (B). Only in developmental lobule VII mice was grooming time altered when CNO was injected rather than saline. (D) There were no differences in distributions of the z-score normalized three control groups for grooming ratio defined as the difference between average grooming bout length in ‘saline’ and CNO conditions relative to ‘saline’ condition. Outliers defined as points outside the interquartile range (IQR) by more than 1.5 IQR. (E) The change in grooming bout length between CNO and baseline condition was significant only in the developmental perturbation of lobule VII. **p<0.01.
 
-## Nonmotor deficits in multiple behavioral tests following developmental cerebellar inactivation
+**Table 2.**
+ Definitions of behavioral metrics.
 
-## Y-maze reversal learning
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Measure</th>
+      <th>Description</th>
+      <th>Quantification</th>
+      <th>Direction indicating impairment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Elevated Plus Maze metrics (EPM_)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Commitment</td>
+      <td>Full entrances to the open arms (EntrOfull) relative to sum of full entrances and jittery entrances to the open arms ( EntrOjitter)</td>
+      <td>EntrOfullEntrOfull+ EntrOjitter</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Distance</td>
+      <td>Distance traveled (cm) during the ten minutes in the Elevated Plus Maze</td>
+      <td>EPMdistance</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Exploration Entrances</td>
+      <td>Entrances into the crossroads central area</td>
+      <td>Entrcentral</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Exploration Time</td>
+      <td>Time in the crossroads central area</td>
+      <td>Timecentral</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Open-Arm Preference</td>
+      <td>Time in the open arms (Timeopen) relative to total time in closed (Timeclosed)and open arms</td>
+      <td>TimeopenTimeclosed+Timeopen</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td colspan="5">Grooming metrics (GR_)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Grooming Ratio</td>
+      <td>Difference betweenaverage grooming bout length in CNO (AVGCNO) and SALINE condition (AVGsaline) relative to SALINE condition</td>
+      <td>AVGsaline − AVGCNO AVGsaline</td>
+      <td>experimental &gt; controls</td>
+    </tr>
+    <tr>
+      <td colspan="5">Social Chamber metrics (SC_)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Baseline Distance</td>
+      <td>Distance traveled (m) during baseline phase (10 min free exploration of the empty social chamber apparatus)</td>
+      <td>BSdistance</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Novelty-Seeking</td>
+      <td>Difference between summed entrances to mouse (EntrM) and object (EntrO) chambers in test (test) and baseline (bs) sessions, relative to baseline session</td>
+      <td>((EntrMbs +EntrObs)   − (EntrMtest +EntrOtest)) (EntrMbs +EntrObs)</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Social Preference</td>
+      <td>Time spent interacting with the novel mouse (TimeNearM ) relative to total time interacting with either the novel mouse or novel object (TimeNearO )</td>
+      <td>TimeNearMTimeNearM + TimeNearO</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Test Distance</td>
+      <td>Distance traveled (m) during test phase (10 min exploration of the social chamber apparatus with the novel mouse and object present)</td>
+      <td>Testdistance</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td colspan="5">Y-maze metrics (YM_)</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Final Learning</td>
+      <td>Mean of the percent correct trials in acquisition sessions 3 (ACQS3) and 4 (ACQS4)</td>
+      <td>ACQS3 + ACQS4 2</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Initial Learning</td>
+      <td>Percent correct trials in acquisition session 1 (ACQS1)</td>
+      <td>(ACQS1)</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Multisession Learning</td>
+      <td>Slope of the linear regression of acquisition sessions 1 (ACQS1), 2 (ACQS2), and 3 (ACQS3)</td>
+      <td>linear regression slope of (ACQS1; ACQS2; ACQS3)</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Distance</td>
+      <td>Combined distance swum (m) in the three habituation trials (HAB1, HAB2 and HAB3) (60 s each) of free swimming in the empty Y-maze apparatus</td>
+      <td>HAB1distance+ HAB2distance+ HAB3distance</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Final Reversal 1</td>
+      <td>Mean of the percent correct trials in reversal day 1 sessions 3 (RD1S3) and 4 RD1S4</td>
+      <td>RD1S3+ RD1S4 2</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Initial Reversal 1</td>
+      <td>Percent correct trials in reversal day 1 session 1 (RD1S1)</td>
+      <td>RD1S1</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Multisession Reversal 1</td>
+      <td>Slope of the linear regression of reversal day 1 sessions 1 (RD1S1), 2 (RD1S2) and 3 (RD1S3)</td>
+      <td>linear regression slope of (RD1S1; RD1S2; RD1S3)</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Final Reversal 2</td>
+      <td>Mean of the percent correct trials in reversal day 2 sessions1 (RD2S1), 2 (RD2S2), 3 (RD2S3) and 4 (RD2S4)</td>
+      <td>RD2S1+ RD2S2 + RD2S3 + RD2S4 4</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Initial Reversal 2</td>
+      <td>Percent correct trials in reversal day 2 session 1</td>
+      <td>RD2S1</td>
+      <td>experimental &lt; controls</td>
+    </tr>
+  </tbody>
+</table>
+
+### Nonmotor deficits in multiple behavioral tests following developmental cerebellar inactivation
+
+#### Y-maze reversal learning
 
 To test flexible learning, we used a swimming Y-maze in which mice were habituated to a maze, initially taught to find an underwater platform in one maze arm, and later switched to the other arm (Figure 4A). Initial learning took place over four sessions (5 trials each, day 1, ‘Acquisition’), followed by a test for retention (day 2, ‘Test’). All control groups, including CNO acute and developmental exposure, virus-uninjected mice, and GFP expression controls, performed above chance overall on the first day of initial training (Figure 4B; Figure 4—figure supplement 1) and reached near-perfect performance by the third session. Three mice from the adult lobule VII injection group were excluded during the habituation phase because they had difficulty swimming, possibly arising from the cutting of neck muscles in adult life required in surgery (see Materials and methods).
 
@@ -73,7 +479,145 @@ For all lobules, DREADD-injected mice treated in juvenile life with CNO learned 
 
 To test reversal learning, we next moved the platform to the opposite arm and trained mice to learn this new location for 2 days (days 3 and 4, ‘Reversal 1’ and ‘Reversal 2’, Figure 4A). All developmental-perturbation groups showed significant reversal on day three except for lobule VI mice, which lagged behind other groups (Figure 4C; repeated-measures ANOVA, p<0.001, Dunnett’s multiple comparisons post-hoc test p<0.01; d = 1.1 for multisession reversal 1). Crus I developmental mice also showed decreased flexible behavior as measured by multisession reversal one and final reversal 1 (both d = 0.6; Figure 4C and Table 3 and Table 3—source data 1), although this measure did not reach statistical significance.
 
+**Table 3.**
+ Cohen’s d effect size of motor and non-motor metrics.Table 3—source data 1.Extended Table 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="10">Flexible/Social/Learning metrics</th>
+    </tr>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2"></th>
+      <th colspan="2">Y-maze reversal</th>
+      <th colspan="2">Three-chamber</th>
+      <th colspan="2">Elevated plus-maze</th>
+      <th>Grooming</th>
+      <th>Eyeblink conditioning</th>
+    </tr>
+    <tr>
+      <th>Learning(Finallearning)</th>
+      <th>Persistive behavior (Multisession reversal1)</th>
+      <th>Social preference</th>
+      <th>Novelty-seeking</th>
+      <th>Open-arm preference</th>
+      <th>Exploratory behavior</th>
+      <th>Grooming ratio</th>
+      <th>% Conditional responses session 11</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Lobule VI</td>
+      <td>Developmental</td>
+      <td>0.1</td>
+      <td>1.1</td>
+      <td>−0.1</td>
+      <td>0.7</td>
+      <td>0.3</td>
+      <td>0.4</td>
+      <td>−0.6</td>
+      <td>−0.3</td>
+    </tr>
+    <tr>
+      <td>Acute</td>
+      <td>0.5</td>
+      <td>0.9</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>0.3</td>
+      <td>0.6</td>
+      <td>0.1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td colspan="10"></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Lobule VII</td>
+      <td>Developmental</td>
+      <td>0.6</td>
+      <td>−0.3</td>
+      <td>−0.3</td>
+      <td>1.1</td>
+      <td>0.9</td>
+      <td>1.7</td>
+      <td>1.2</td>
+      <td>nd</td>
+    </tr>
+    <tr>
+      <td>Acute</td>
+      <td>−0.6</td>
+      <td>0.3</td>
+      <td>0.9</td>
+      <td>−0.4</td>
+      <td>−0.9</td>
+      <td>0.5</td>
+      <td>0.2</td>
+      <td>nd</td>
+    </tr>
+    <tr>
+      <td colspan="10"></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Crus I</td>
+      <td>Developmental</td>
+      <td>0.4</td>
+      <td>0.6</td>
+      <td>1.2</td>
+      <td>−0.8</td>
+      <td>0.1</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>Acute</td>
+      <td>0.0</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>0.3</td>
+      <td>−0.6</td>
+      <td>−0.1</td>
+      <td>0.9</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td colspan="10"></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Crus II</td>
+      <td>Developmental</td>
+      <td>0.1</td>
+      <td>−0.5</td>
+      <td>1.2</td>
+      <td>0.0</td>
+      <td>0.6</td>
+      <td>−0.3</td>
+      <td>−0.5</td>
+      <td>−0.5</td>
+    </tr>
+    <tr>
+      <td>Acute</td>
+      <td>−0.6</td>
+      <td>−0.6</td>
+      <td>0.0</td>
+      <td>0.2</td>
+      <td>−0.8</td>
+      <td>−0.2</td>
+      <td>0.9</td>
+      <td>0.3</td>
+    </tr>
+  </tbody>
+</table>
+
+_Effect size, calculated in units (Cohen, 1988) of the two-sample pooled standard deviation, of perturbations on key behavioral parameters. Values in Bold indicate statistical significance. Colored fields indicate large effect sizes (d≥0.8); Blue for improvement of function and red for impairment as defined in Table 2._
+
 At this point, for the fifth session of day 3, the incorrect arm was blocked, thus leaving mice only the correct arm as an available path (see Figure 4A). Nevertheless, lobule VI mice persisted on the second day of reversal training (day 4, ‘Reversal 2’; repeated-measures ANOVA, p<0.05, Dunnett’s multiple comparisons post-hoc test p<0.05; d = 0.4, initial reversal 2, Table 3—source data 1). Similar, smaller impairments in reversal learning were seen with acute disruption of lobule VI (Video 4; Figure 4D). In summary, developmental and to a lesser extent acute disruption of activity in cerebellar lobule VI led to perseveration and, in the case of development, a lasting failure of reversal learning.
+
+![Video 4.](https://cdn.elifesciences.org/articles/36401/elife-36401-video4.mp4.jpg)
 
 Notably, the impairment in reversal learning was not coupled with decreased mobility as measured by distance swum during habituation. Both developmental and acute groups performed similarly to the control groups (Figure 5A), except that acute perturbation to lobule VI resulted in a slight increase in swimming distance (repeated-measures ANOVA, p<0.05, Šidák’s multiple comparisons post-hoc test p<0.05).
 
@@ -85,7 +629,7 @@ To test whether the changes in Y-maze performance followed a pattern that spanne
 
 The first PC (‘PC1’), which by definition captured the most variance in the control group, was dominated by distance measures (Figure 5—figure supplement 1B). In contrast, in experimental groups the highest-contribution PCs (see Materials and methods) were consistently different from PC1 (Figure 5—figure supplement 1C–D). PCs recaptured the differences in variance observed among the behavioral metrics (Figure 5C). The experimental groups were distinct from controls in the amount of variation captured by reversal-learning-containing components PC3 and PC5, reflecting reversal learning (Figure 5D; in a unit vector, multisession reversal one has a coefficient weight of 0.68 in PC3; final reversal one has coefficient weight 0.48 in PC5). In developmental lobule VI mice, 41% of total variance arose from PC3 and PC5. In developmental crus I, PC5 captured 18% of the variance. Taken together, PCA analysis indicates that the dominant consequence of developmental perturbation in Y-maze performance was non-locomotor in nature and largely independent of movement parameters.
 
-## Social behavior
+#### Social behavior
 
 To probe social interaction, we monitored mice in a three-chambered apparatus (Figure 6) in which a novel mouse and object were simultaneously presented in opposite side chambers (Figure 6A). The test mouse was placed in the middle chamber and its actions recorded by camera and analyzed using an automated tracking system. Interactions with the novel mouse or object were tabulated if the test mouse was in proximity to the cup (Figure 6B and Table 2; see Materials and methods for details).
 
@@ -99,7 +643,7 @@ In contrast, developmental perturbation did disrupt social preference. Developme
 
 To probe covariations in social-chamber behavioral parameters, PCA analysis was done in the same manner as the Y-maze analysis. Just as in the Y-maze, the first PC (‘PC1’) for social chamber control groups was dominated by distance measures (Figure 6—figure supplement 2A). In experimental groups, PC3 was weighted highly on social preference and novelty-seeking, capturing 60% of the behavioral variance after developmental disruption of crus I, and 48% of variance after developmental disruption of crus II (Figure 6—figure supplement 2B and C). In addition, PC2 and PC3 together captured 36% of the variance arising from developmental disruption of lobule VII. The effects captured by PC3 were in opposite directions for developmental and adult lobule VII disruption, thus separating the two groups better than any individual measure (Figure 6E). In summary, lobule VII activity co-regulates social preference and novelty-seeking in a cohesive manner, and the direction of that influence goes in one direction in juvenile development but reverses in mature adults.
 
-## Elevated plus-maze (EPM)
+#### Elevated plus-maze (EPM)
 
 To probe novelty preference in a non-social context, we placed mice in an EPM with open and closed arms (Figure 7A–B), which probes a variety of capacities, including anxiety and exploratory behaviors (Holmes et al., 2000). Because the elevated-plus maze has a strong locomotor component (Wall and Messier, 2000), measures were designed that normalized open and closed arm activity to overall movement (see Materials and methods). Juvenile-injected lobule VII mice showed enhanced closed-arm preference (Figure 7C, d = 0.9 Šidák’s multiple comparisons post-hoc test p=0.02), as well as decreased exploration time (Figure 7D, one-way ANOVA, p<0.01, d = 1.7, Šidák’s multiple comparisons post-hoc test p=0.02) and distance (Figure 7—figure supplement 1B, p<0.01, d = 1.2; Šidák’s multiple comparisons post-hoc test p=0.04). The effect on closed-arm preference was opposite to that seen in adult disruption, which enhanced open-arm preference (Figure 7C) and decreased total movement in the EPM for crus II (Figure 7—figure supplement 1B).
 
@@ -109,7 +653,7 @@ Juvenile perturbation of lobule VII was also the only condition to prolong groom
 
 To summarize, at the level of single behavioral metrics we found three developmental deficits: lobule VI was necessary for choice reversal (Y-maze), lobule VII for regulating persistive behavior (EPM, self-grooming) or novelty-seeking (three-chamber task), and crus I/II for the ability to express a social preference. These deficits set the stage to explore cerebellar endophenotypes using dimensionality-reduction and regression methods.
 
-## Behavioral variation within treatment groups is dominated by nonmotor features
+### Behavioral variation within treatment groups is dominated by nonmotor features
 
 In the past, the tasks of Figures 4–8 have been used by autism researchers to investigate flexible behavior in mice. However, these tasks also depend on brain mechanisms that are often considered to be motor in nature. To visualize relationships among task parameters, we used inter-measure correlations. Untreated mice were found to have significant (p<0.01, r-to-z transformation) within-task correlations, often relating to movement (Figure 9). Measures for elevated plus-maze were strongly interconnected with one another, suggesting a high degree of redundancy between these measures. More importantly, we were interested to see if these classical tests for autism-like phenotypes were interrelated, to find a commonality between the measures. In untreated and developmentally treated mice, elevated plus-maze measures were also correlated with social preference in the three-chamber test and with grooming ratio, suggesting that some measured features may capture shared capacities that are common to the three tasks.
 
@@ -117,11 +661,23 @@ In the past, the tasks of Figures 4–8 have been used by autism researchers to 
 
 **Figure 9.:** (A) Mouse-by-mouse correlations between pairs of behavioral measures in control mice, developmentally DREADD-activated, and acutely DREADD-activated mice. Significant correlations (p<0.01, t-test) between individual behavioral metrics are indicated by colored bands whose thickness corresponds to Spearman's ρ. Chemogenetic perturbation induced within-task and between-task correlations not seen in untreated mice. (B) Scatter plots showing example relationships between pairs of behavioral measures.
 
-## Quantifying the dosage-dependence of cerebellar contributions to flexible-behavior endophenotypes
+### Quantifying the dosage-dependence of cerebellar contributions to flexible-behavior endophenotypes
 
 We surmised that cerebellar phenotype intensity might vary as a function of DREADD expression, consistent with the idea of the cerebellum as a feedback controller (Dean and Porrill, 2014) and on the approximately-linear transformation of Purkinje cell activity to deep nuclear output (Turecek et al., 2016). We used linear regression to quantify the extent to which the spatial reach of expression in the four targeted lobules (lobule VI, lobule VII, crus I, crus II) could account for behavioral metrics. Linear models allowed us to quantify the contribution of each lobule to each measured behavioral parameter.
 
 In our linear models, the extent of DREADD expression in MLIs in each lobule was used as an input variable. To quantify expression, we reconstructed mCherry co-expression from two-photon tomographic images (Figure 10A and Figure 10—figure supplement 1) or from serial sections (Video 5) for all DREADD-injected mice. The extent of expression in each lobule was defined as the fraction of voxels in that lobule in which mCherry was detected. Visualized MLIs appeared dense within labeled volumes, consistent with near-complete efficiency of expression (see Video 1). Injections filled 21 ± 12% (average ±SD) of the targeted lobule, and partially spilled into 11 ± 11% of the next-highest expressing lobule.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig10-v3.jpg)
+
+**Figure 10.:** (A) Whole-brain reconstructions of recovered DREADD-mCherry expression. mCherry-positive voxels were recovered from reconstructions from serial two-photon tomographic images of developmentally and acutely perturbed lobule VI, lobule VII, crus I, and crus II mice (Figure 10—figure supplement 1 and Video 5). The color scale indicates how many brains showed expression at a particular location. (B) Linear models were used to evaluate the influence of fraction-of-lobule DREADD expression on each behavioral metric. Scatter plots demonstrate example relationships between fraction-of-lobule expression and individual behavioral metrics. Each dot represents one animal. Filled circles represent mice in which the majority of DREADD expression was found in the indicated lobule. (C) Regression weights of the best-fit model for each behavioral metric, normalized by the standard error of the weight estimate.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig10-figsupp1-v3.jpg)
+
+**Figure 10—figure supplement 1.:** DREADD-positive distribution displayed along the medio-lateral axis by maximum projection of binary voxels over the anterior-posterior axis and then averaging over the dorsal-ventral axis as compared to the Allen Brain Atlas space. DREADD-positive voxels were recovered from reconstructed mCherry co-expression of serial two-photon tomographic images of lobule VI, lobule VII, crus I, crus II (top to bottom).
+
+![Video 5.](https://cdn.elifesciences.org/articles/36401/elife-36401-video5.mp4.jpg)
+
+**Video 5.:** Regions of interest were manually traced in from serial section two-photon images to yield volumetric reconstructions of both anatomical subdivisions as well as the injection spread. After registration to the Allen Brain Atlas, coordinates of the traced regions were transformed to the isotropic reference space.
 
 For each behavioral metric, a linear model was fitted using four regressors, corresponding to the fraction of voxels containing label in each of the targeted lobules (crus I, crus II, lobule VI and lobule VII; Figure 10B). Two models were fitted, one for the juvenile-perturbed mice and one for the adult-perturbed mice. DREADD-untreated mice were not included. The weights of each best-fit model (Figure 10C) can be interpreted as the influence of expression by that lobule over the behavior of interest.
 
@@ -129,9 +685,91 @@ Weights often had the same sign as the group-level effects shown in Table 3, con
 
 Mismatch between linear-model weights and group-level effects could occur for several reasons. For example, a lobule could have multiple conflicting and/or nonlinear effects on behavior. Another possibility is that a group for a single lobule might be statistically underpowered, but dependence emerges when other groups with expression in the same lobule are included. Indeed, acutely injected mice showed strong dependence of grooming on the volume of lobule VI expressing DREADD (2.9 standard errors, Figure 10C), despite the fact that the lobule VI group analyzed alone did not show a statistically significant effect on grooming (Figure 8C).
 
-## Lobule VI and crus I communicate with neocortical regions that support flexible and social behavior
+### Lobule VI and crus I communicate with neocortical regions that support flexible and social behavior
 
 We next sought to identify distal targets of lobule VI and crus I in the neocortex, which the cerebellum influences via ascending disynaptic pathways (Strick et al., 2009). We injected lobule VI and crus I with the anterograde transsynaptic tracing virus HSV-H129 recombinant 772 (Wojaczynski et al., 2015), which drives expression of EGFP. We then waited 60 or 80 hr before sacrifice, enough time for viral spread through deep nuclei and thalamus/midbrain to reach neocortex (Figure 11A). We counted sections with GFP-expressing neurons in coronal sections spanning a range of neocortical structures and found the strongest expression in motor, somatosensory cortex and taenia tecta (Table 4, Figure 11—figure supplement 1).
+
+![Figure 11.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig11-v3.jpg)
+
+**Figure 11.:** (A) Cerebello-cortical pathways. HSV-H129 anterograde tracer injected into lobule VI or crus I reveals specific projections to neocortex (Figure 11—figure supplement 1). (B) Left, Example confocal microscopy images (10x) showing anti-GFP immunoreactivity for HSV-H129 positive cells in Top, lobule VI (lateral 0.36 mm) and Bottom, crus I (lateral 2.40 mm) to forebrain regions (anterior cingulate cortex, ACC; prefrontal cortex, PFC; orbitofrontal cortex, ORB; somatosensory cortex, SS). Right, Example confocal microscopy images (40x) of anti-GFP immunoreactivity for HSV-H129 positive cells in forebrain regions contralateral to the injection site (anterior cingulate cortex, ACC; prefrontal cortex, PFC; orbitofrontal cortex, ORB; somatosensory cortex, SS).
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/36401/elife-36401-fig11-figsupp1-v3.jpg)
+
+**Figure 11—figure supplement 1.:** HSV-H129 anterograde tracer injected into (A) lobule VI or (B) crus I, revealing projections to motor cortex and taenia tecta.
+
+**Table 4.**
+ Relative neocortical expression resulting from long-distance tracing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Injection site</th>
+    </tr>
+    <tr>
+      <th>Lobule VI</th>
+      <th>Crus I</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Target Region</td>
+      <td>Relative expression</td>
+      <td>Relative expression</td>
+    </tr>
+    <tr>
+      <td>Motor cortex</td>
+      <td>1.00</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Somatosensory</td>
+      <td>0.66</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <td>Prelimbic</td>
+      <td>0.71</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>Orbitofrontal</td>
+      <td>0.72</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>Anterior cingulate</td>
+      <td>0.42</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>Infralimbic</td>
+      <td>0.28</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>Visual cortex</td>
+      <td>0.25</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Parietal association</td>
+      <td>0.21</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Retrosplenial</td>
+      <td>0.11</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Agranular insular</td>
+      <td>0.03</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
 
 We defined a neocortical region’s expression as the number of sections expressing GFP (Figure 11B) divided by the number of GFP-positive sections in motor cortex, which was always labeled (Figure 11—figure supplement 1). Injection of lobule VI (three mice) led to expression in orbitofrontal, prelimbic, anterior cingulate, and infralimbic cortex, consistent with human mapping (Buckner et al., 2011). Injection of crus I (four mice) led to expression in anterior cingulate, prelimbic, and infralimbic cortex, again consistent with human mapping. Lobule VI was distinguished from crus I by its relatively strong projections to prelimbic and orbitofrontal cortex, regions that play key roles in reward expectation and value-based decision-making (Rolls and Grabenhorst, 2008), and would therefore be expected to be specifically regulate reversal learning.
 
@@ -155,13 +793,227 @@ The interpretation of DREADD experiments must be tempered by an understanding of
 
 Our results are of potential relevance to the understanding and treatment of autism spectrum disorder. Autism is notably heterogeneous. We could replicate specific endophenotypes characteristic of autism – social indifference and perseveration – by perturbing specific parts of the posterior cerebellum during postnatal development. Because of its capacity to affect cognitive and social development in humans, the cerebellum has been suggested as a potential site for therapeutic intervention (Wang et al., 2014). Our observation of spatially distributed contributions by different anatomical subregions suggests the possibility that such future intervention could be shaped to meet individual requirements.
 
-## Data availability statement
+### Data availability statement
 
 Raw data for this study are available from the corresponding author upon request (including behavioral videos and serial two-photon tomographic brain images of each mouse). Code and data is available at https://github.com/wanglabprinceton/behavioral-development. (WangLabPrinceton, 2018; copy archived at https://github.com/elifesciences-publications/behavioral-development).
 
 ## Materials and methods
 
-## Experimental animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Gene</td>
+      <td></td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Strain, strain background</td>
+      <td>Mouse: C57BL/6J</td>
+      <td>The Jackson Laboratory, Bar Harbor, ME</td>
+      <td>Stock#: 00664 |Black6 https://www.jax.org/strain/000664</td>
+    </tr>
+    <tr>
+      <td colspan="2">Strain, strain background</td>
+      <td>Mouse: L7Cre;Tsc1flox/flox</td>
+      <td>From Tsai et al. (2012);Kloth et al., 2015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Genetic reagent</td>
+      <td></td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Cell line</td>
+      <td></td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Transfected construct</td>
+      <td></td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Biological sample</td>
+      <td></td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Antibody</td>
+      <td>anti-GFP Chicken</td>
+      <td>Aves Labs</td>
+      <td>Cat#GFP-1020; RRID: AB_10000240</td>
+    </tr>
+    <tr>
+      <td colspan="2">Antibody</td>
+      <td>Goat anti-Chicken IgY (H + L) Secondary Antibody, Alexa Fluor 647</td>
+      <td>ThermoFisher</td>
+      <td>Cat#A-21449; RRID: AB_2535866</td>
+    </tr>
+    <tr>
+      <td colspan="2">Recombinant DNA reagent</td>
+      <td>AAV8-hSyn-hM4D(Gi)-mCherry</td>
+      <td>University of North Carolina Vector Core</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Recombinant DNA reagent</td>
+      <td>AAV1.Syn.GCaMP6f.WPRE.SV40</td>
+      <td>Penn Vector Core</td>
+      <td>lot AV-1-PV2822</td>
+    </tr>
+    <tr>
+      <td colspan="2">Recombinant DNA reagent</td>
+      <td>HSV1 strain H129</td>
+      <td>Wojaczynski et al. (2015); DOI: 10.1007/s00429-014- 0733-9</td>
+      <td>H129 772</td>
+    </tr>
+    <tr>
+      <td colspan="2">Sequence-based reagent</td>
+      <td></td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Peptide, recombinant protein</td>
+      <td></td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Commercial assay or kit</td>
+      <td>Elevated Plus Maze (EPM)</td>
+      <td>Noldus</td>
+      <td>http://www.noldus.com/animal-behavior-research/solutions/research-small-lab-animals/elevated-plus-maze-set</td>
+    </tr>
+    <tr>
+      <td colspan="2">Chemical compound, drug</td>
+      <td>Clozapine-N-oxide (CNO)</td>
+      <td>SIGMA-ALDRICH</td>
+      <td>Cat# C0832</td>
+    </tr>
+    <tr>
+      <td colspan="2">Chemical compound, drug</td>
+      <td>Dako Fluorescence Mounting Medium</td>
+      <td>Agilent</td>
+      <td>Cat# S302380-2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Chemical compound, drug</td>
+      <td>15% D-mannitol</td>
+      <td>SIGMA-ALDRICH</td>
+      <td>Cat# M4125</td>
+    </tr>
+    <tr>
+      <td colspan="2">Chemical compound, drug</td>
+      <td>DPBS</td>
+      <td>ThermoFisher</td>
+      <td>Cat#14190136</td>
+    </tr>
+    <tr>
+      <td colspan="2">Chemical compound, drug</td>
+      <td>White tempera paint</td>
+      <td>Artmind, Tempera Paint</td>
+      <td>Cat#10091773</td>
+    </tr>
+    <tr>
+      <td colspan="2">Chemical compound, drug</td>
+      <td>Rimadyl [carprofen]</td>
+      <td>Zoetis, Florham Park, NJ</td>
+      <td>http://www.zoetisus.com</td>
+    </tr>
+    <tr>
+      <td colspan="2">Chemical compound, drug</td>
+      <td>Cholera toxin subunit B (CT-B), AlexaFluor 488 Conjugate</td>
+      <td>ThermoFisher</td>
+      <td>Cat# C34775</td>
+    </tr>
+    <tr>
+      <td colspan="2">Chemical compound, drug</td>
+      <td>Ketamine/xylazine</td>
+      <td>Met-Vet International/Akorn</td>
+      <td>RXV CIII (3N)/Cat# 59399-111-50</td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>Illustrator CS</td>
+      <td>Adobe</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Ethovision ET</td>
+      <td>Noldus</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Python 2.7.14</td>
+      <td>Python</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Neurolucida</td>
+      <td>(MBF Bioscience, VT, USA)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Allen Brain Atlas</td>
+      <td>(Oh et al., 2014).</td>
+      <td>http://www.brain-map.org</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>MiniAnalysis program</td>
+      <td>Synaptosoft Inc, Decatur, GA, USA</td>
+      <td>http://www.synaptosoft.com/</td>
+    </tr>
+    <tr>
+      <td colspan="2">Other</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental animals
 
 Experimental procedures were approved by the Princeton University Institutional Animal Care and Use Committee and performed in accordance with the animal welfare guidelines of the National Institutes of Health. Mice used in this study were C57BL/6J (referred to in the manuscript as ‘wild-type’ mice) males ordered through Jackson Laboratory (The Jackson Laboratory, Bar Harbor, ME). All mice had at least 48 hr of acclimation to the holding facility in the Princeton Neuroscience Institute vivarium before experimental procedures were performed. Mice in the acute cohort, four experimental groups for each lobule (see Figure 1C, and Table 1), and age-matched CNO controls (n = 10), arrived at 5 weeks of age with five littermates per cage; mice in the development cohort, four experimental groups (n = 40), and age-matched CNO controls (n = 10) arrived at 2.5 weeks of age with five littermates per cage.
 
@@ -169,13 +1021,13 @@ Additionally, five more control groups were used for various behavioral experime
 
 All mice were housed in Optimice cages (Animal Care Systems, Centennial, CO) containing blended bedding (The Andersons, Maumee, OH), paper nesting strips, and one heat-dried virgin pulp cardboard hut (Shepherd Specialty Papers, Milford, NJ). PicoLab Rodent Diet food pellets (LabDiet, St. Louis, MO) and drinking water (or CNO water in the developmental groups) were provided ad libitum. Mice were relocated to clean cages with new component materials every two weeks. All mice were group-housed in reverse light cycle to promote maximal performance during behavioral testing, which took time during the day.
 
-## Animal preparation
+### Animal preparation
 
 Surgeries on mice in the acute and developmental cohorts were performed in accordance with previously published procedures (Giovannucci et al., 2017; Kloth et al., 2015). In short, mice were anesthetized with isoflurane (5% for induction, 1 – 2% in oxygen; 1 L/min) and mounted into a stereotaxic head holder (David Kopf Instruments, Tujunga, CA) with a heating pad under the ventral surface of the mouse. Puralube vet ointment (Pharmaderm Florham Park, NJ) was administered to the eyes to prevent corneal drying. The scalp was shaved, cleaned, and skin incisions were made along the lambdoid suture and extending caudally from lambda to expose occipital muscle and bone. Minimal muscle was removed to expose the occipital bones. This cut was more extensive in the lobule VII group due to the posterior position of this lobule. Osmotic diuretic drug was administered via intraperitoneal (i.p.) injection (15% D-mannitol in DPBS, 0.6 mL injection for adult, 0.3 mL injection for juvenile) 10 min before opening a craniotomy over the targeted lobule with a 0.5 mm micro-drill burr (Fine Science Tools, Foster City, CA). Sections of Surgifoam absorbable gelatin sponges (Ethicon, Somerville, NJ) immersed in saline and/or artificial cerebrospinal fluid (50 mL ACSF and 100 μL 1M CaCl) were used to stop bleeding, hydrate the skull, and cover exposed brain.
 
 Designer Receptor Exclusively Activated by Designer Drugs (DREADD) viral construct AAV8-hSyn-hM4D(Gi)-mCherry (UNC Vector Core, Chapel Hill, NC) was injected using borosilicate glass capillaries with an outer diameter of 1 mm and internal diameter of 0.58 mm (World Precision Instruments, Sarasota, FL). The pipettes were pulled using the Sutter Micropipette Puller (Model P-2000, Sutter Instrument Company) and bevelled at a 45 degree angle to a bubble number of ~5. Proper fluid flow through pipettes was verified before insertion into the brain. To ensure proper viral spread across lobules of interest, and to account for difference in sizes across lobules and ages during injection times in acute vs developmental group) between 250 and 900 nL of DREADD construct in total was injected per mouse, distributed across four specific locations (see Figure 1). Specifically: (1) three injections at two separate depths each (650 μm and 180 μm below the dura) were made for lobule VI acute cohort; (2) three injections at one depth (180 μm below the dura) for lobule VII acute cohort; (3) two injections at one depth (180 μm below the dura) for crus I and crus II acute cohorts; (4) two injections at two separate depths each (650 μm and 180 μm below the dura) were made for lobule VI developmental cohort; (5) two injections at one depth (180 μm below the dura) for lobule VII developmental cohort; (6) one injection at one depth (180 μm below the dura) for crus I and crus II developmental cohorts. The craniotomy was sealed with a silicone elastomer adhesive (Kwik-Sil, World Precision Instruments, Sarasota, FL). In the developmental cohort, the skin caudal to lambda was sutured in place to cover the craniotomy and cerebellum in mice. In the acute cohort, mice underwent headplate attachment immediately following the viral injections. Custom-made titanium headplates (Kloth et al., 2015; Ozden et al., 2012) were attached to the skull between bregma and lambda using a double layer of quick-drying dental cement (Metabond, Parkell, Edgewood, NY). Mice in the developmental cohort underwent the headplate surgery at P56, following 5 weeks of DREADD agonist clozapine-N-oxide treatment (CNO, C0832-5mg, Sigma-Aldrich, St. Louis, MO). All mice received a non-steroidal anti-inflammatory drug administered post-surgery (0.2 mL, 50 mg/mL Rimadyl [carprofen, Zoetis, Florham Park, NJ], s.c.).
 
-## Behavioral assays
+### Behavioral assays
 
 General environment, transportation, and drug delivery. All behavioral tests in developmental and acute groups took place between PND 57 and PND 126. The order of behavioral testing was consistent for all groups: (1) social chamber, (2) grooming, (3) Y-maze reversal learning, (4) eyeblink conditioning, (5) elevated-plus maze, and (6) gait. After transportation from the holding facility, mice were acclimated to the behavioral testing room for at least 60 min before commencing a behavioral test. Behavioral testing took place between 9AM and 6PM under low white light illumination, red light (for elevated plus-maze), or darkness to reduce stress and not to disrupt the sleep-wake cycle of the tested mice. For the social chamber assay, novel mice were transported on a separate level of the rolling cart from the experimental mice and the cages were placed on separate levels in the behavioral testing room. Animals without a water bottle were given a 2-ounce HydroGel 98% sterile water gel (ClearH2O, Westbrook, ME) to prevent transient dehydration. In the acute experimental cohort, the DREADD agonist clozapine-N-oxide (CNO) was delivered through i.p. injection at a dose of 1 mg/kg 20 min before the beginning of behavioral testing. Developmental inactivation was achieved through oral CNO delivery in opaque water bottles at a dose of 10 mg/kg. In both cases, CNO was first dissolved in dimethyl sulfoxide which was then diluted to 1.5% concentration in sterile saline for i.p. injections or drinking water for oral administration. When indicated, mice received saline as a control for i.p. injections.
 
@@ -191,6 +1043,8 @@ Testing was performed for five consecutive days: Day 0 - Habituation; Day 1 - Ac
 
 The Acquisition phase contained four sessions, each with five consecutive trials of 40 s duration each. The Y-maze apparatus contained a platform at the end of either the left or the right arm of the Y-maze. The arm with a platform was randomly chosen for each mouse. In the Test phase, each mouse experienced five trials with the platform in the same location as randomly determined in the Acquisition phase. Mice were required to have at least 80% success in their first choice turn-direction order to proceed with the behavioral assay. All animals included in the analysis passed this criteria and continued with the assay. In the Reversal phases, the location of the platform was the opposite of the trained location: mice trained in Acquisition and Test with the platform at the end of the right arm of the apparatus were introduced to a Y-maze apparatus with the platform at the end of the left arm, and vice versa. Each Reversal phase consisted of four separate sessions of five consecutive trials each of 40 s duration, followed by a fifth forced session in which a polycarbonate sheet was inserted into notched slots to prevent entry into the arm without the platform. After the conclusion of each swimming trial, the mouse was removed from the maze or platform and dried shortly with tissue before the start of the next trial. Between sessions, mice were placed in a clean cage with bedding under a heating lamp (Electrix, New Haven, CT; 120V, 100W) until fully dry, then replaced in their original cages until beginning the next session. Mice were trained in groups of five to seven, thus maintaining an approximately equal amount of rest time between sessions for all mice. Performance metrics regarding the first-choice turn direction of the mouse in the Y-maze behavioral assay were determined through manual scoring and corroborated through an automated custom Python package. This analysis package tracked the position of the mouse during navigation of the Y-maze to determine first-choice turn direction for each trial as well as distance traveled and average velocity (Video 6).
 
+![Video 6.](https://cdn.elifesciences.org/articles/36401/elife-36401-video6.mp4.jpg)
+
 Social chamber assay. The social chamber apparatus was custom-constructed according to established specifications (Nadler et al., 2004) as a transparent polycarbonate box with outer dimensions of 40.5 × 20×22 cm (width, length, height). A piece of Nalgene Versi-Dry Surface Protector material (Thermo Fisher Scientific, Waltham, MA) was cut to these outer dimensions and inserted to line the bottom of the apparatus for each mouse. Two removable polycarbonate partitions evenly divided this outer box into three chambers as depicted in Figure 6A. Each of these partitions contained a sliding polycarbonate sheet on its interior side that could be lifted and latched in place to expose a passageway between chambers measuring 10 cm in width by 5 cm in height. Wire cups (Galaxy Cup, Spectrum Diversified Designs, Inc., Streetsboro, OH) measuring 11 cm in height and 10.5 cm in diameter were used as the novel object and to contain the novel mouse. The 1 cm separation between bars on the cups enabled sharing of olfactory cues, visual cues, and prevented biting. 500 ml Pyrex beakers filled with water were placed on top of each cup to prevent climbing and to secure cup location. Between mice, all surfaces of the apparatus as well as the wire cups were cleaned with 70% ethanol followed by distilled water and left to dry. Black poster-board screens bordered three sides of the apparatus. The remaining side of the apparatus faced a blank wall. A camera (PlayStation Eye) was mounted above the apparatus to record a field of view containing the entire apparatus at 50 frames/s, using a custom-written Python 2.7.6 (Anaconda 1.8.0) script and a CLEye Driver. Testing was performed for 1 day and consisted of three phases (Habituation, Baseline and Test). In the Habituation phase (10 min; not recorded), the test mouse was placed in the middle chamber with the doors to the adjacent chambers closed. The doors were opened to begin the Baseline phase (10 min; recorded) in which the test mouse could explore the full, empty apparatus. At the conclusion of the Baseline phase, the test mouse was guided back to the middle chamber and the doors were closed. The novel mouse was placed inside an inverted cup in the mouse chamber and the novel object, an identical cup, was placed in the object chamber. The doors were opened to begin the Test phase (10 min; recorded) in which the test mouse could explore the full apparatus. Established procedure was followed (Yang et al., 2011) for training the novel mice, conducting the experimental sociability assay, and cleaning the apparatus between mice and between testing days. Novel mice were screened for consistent excessive biting of cup wires or scratching of the Nalgene Versi-Dry Surface Protector material (Thermo Fisher Scientific, Waltham, MA) lining the apparatus during two 15-min sessions. Novel mice were rotated throughout each day of behavioral testing such that each mouse had at least 2 hr between uses. Novel mice were used for a maximum of two months, at which time they were sacrificed and new novel mice were trained according to this training paradigm. The assay began with acquiring 185 frames (5 s) of background video containing only the empty behavioral apparatus. After placing the mice in the apparatus, the experimenter was not visible to the test mouse or the novel mouse during any phase of the assay. Social Chamber assay analysis was conducted through processing of the recorded videos using a semi-automated custom Python package through a graphical user interface, coordinates of the chamber corners and the outlines of the novel mouse and object cups were collected. Using a threshold-detection algorithm subtracting a pixel-wise mean of the relevant background frame pixels, the location of the mouse throughout each experimental phase was calculated and stored at a subsampled rate (similar tracking software as used in Y-maze, see Video 6). Baseline and Test experimental phases were processed independently. Subsequent group analysis was performed with custom MATLAB scripts.
 
 Elevated plus-maze assay. The polycarbonate elevated plus-maze (EPM) consisted of two shielded and two open arms (Figure 7A). The base of both arms was constructed with a panel of opaque white polycarbonate embedded in a layer of black polycarbonate. Each full arm measured 77 cm in length and 7.5 cm in width yielding a square center area between the arms of 7.5 cm by 7.5 cm. The sides of the closed arms were constructed of a panel of opaque black polycarbonate 0.3 cm in thickness extending from the juncture of each closed arm with the central area around the full perimeter of each closed arm at a height of 21.5 cm from the closed arm platform. A stabilizing metal frame elevated the plus base to a height of 74 cm above the floor. The illumination source in the room was a single red light. The apparatus was cleaned with 70% ethanol and water and allowed to dry between mice. Animals were brought to the testing room at least 60 min prior to the onset of the experiments to allow habituation. At the onset of the test mice were placed in the central square area between the two arms of the plus maze concurrent with starting the video-tracking software in Ethovision XT (Noldus, Leesburg, VA). Each mouse experienced a single trial consisting of exploration of the full apparatus for 10 min.
@@ -201,7 +1055,7 @@ To capture this a variety of capacities, including anxiety and exploratory behav
 
 Social chamber and Y-maze mouse tracking. Video was acquired at 50 Hz, 640 × 480 pixel resolution, using a Playstation Eye camera with the CLEye Driver. For each behavioral session, mouse tracking was performed using custom software written in Python (WangLab Princeton2018. - https://github.com/wanglabprinceton/behavioral-development) by the following procedure: a background image was computed as the gaussian-filtered mean projection of a 15 to 30 s period prior to insertion of the mouse into the apparatus. For each frame in the experimental session, the difference between the gaussian-filtered frame and the background image was computed. The difference image was thresholded according to a user-defined value, and edges of this binary image were detected using the Canny algorithm. Contours were extracted from the edge image, and the contour with the largest area was taken to represent the approximate outline of the animal. Contours were excluded if their center was greater than 100 pixels away from the location in the previous frame, if they were located outside the user-defined bounds of the apparatus, or if they were inside other user-defined areas containing features that interfered with tracking accuracy. For frames in which the algorithm found no suitable contour, the position of the mouse was inferred to be in its most recent location. For the social chamber the boundaries of the three chambers were demarcated manually and the time spent in each chamber was determined from the number of frames in which the animal was detected in each chamber. For Y-maze, the location of the mouse in each frame was automatically assigned to a specific sub-portion of the maze using fiducial markers on the maze apparatus. Code for tracking is available from the corresponding author upon request.
 
-## Tissue processing and histological procedures
+### Tissue processing and histological procedures
 
 After successful completion of all behavioral assays, experimental mice were anesthetized with an overdose of ketamine (400 mg/kg)/xylazine (50 mg/kg) (i.p.) and perfused with 4% paraformaldehyde (PFA). Brains were stored in 4% PFA for three to six hours at room temperature followed by overnight incubation in 4°C. After rinsing with phosphate buffered saline (PBS) the brains were placed in PBS with 0.1% sodium azide and shipped to TissueVision (TissueVision, Somerville, MA) for processing via serial two-photon tomography imaging. Endogenous tissue autofluorescence (500 – 540 nm) and mCherry DREADD signal (600 – 680 nm) were imaged in coronal slices at intervals of 50 μm. Images received from TissueVision were registered to the Allen Brain Mouse 25 μm slice Common Coordinate Framework Reference Atlas Version 3 (Lein et al., 2007); see ‘Quantification of the injection spread’ for details.
 
@@ -213,7 +1067,7 @@ Acute 250 μm sagittal cerebellar slices from two C57BL/6J males injected with A
 
 The majority of brains were imaged via serial two-photon tomography by the TissueVision company. A smaller subset of brains were cut with a cryostat and imaged at 10x magnification on an epifluorescence Nikon Eclipse Ti microscope (Nikon Instruments Inc, Tokyo, Japan) or on an epifluorescence Zeiss Axioplan2 upright fluorescence microscope (Carl Zeiss Microscopy, Germany). In order to obtain high-resolution images, selected sections were scanned with a Leica SP8 confocal laser-scanning microscope (Leica Microsystems, Germany) using 10x, 40x or 63x objectives, hybrid (HyD) detectors for sensitive detection, and sequential scan mode. Images used in Video 1 were obtained at 40x by two-photon imaging using a 760 nm wavelength from a 50 μm sagittal cerebellar section.
 
-## Registration of the injection signal
+### Registration of the injection signal
 
 In order to standardize histological expression analysis across animals, we devised a pipeline for sample registration to the Allen Brain Atlas (Oh et al., 2014). We opted for a structure-guided registration procedure based on landmark registration due to serial two-photon imaging issues including brain-to-brain variability of fluorophore expression intensity, missing sections, tissue tearing, and deformation.
 
@@ -225,24 +1079,24 @@ For joint behavioral-anatomical analysis, viral expression volumes were max proj
 
 For the linear model analysis, models were fit relating anatomical expression to each behavioral metric with continuous values (all but Y-maze Final Learning, Initial Reversal 2 and Final Reversal 2). Given that the control groups had no expression only experimental (injected) groups were used. Therefore, we regressed the behavioral scores of adult and juvenile experimental cohorts with DREADD injections, onto their respective expression profiles. One model was fit for each behavioral metric, with the value of that metric for each mouse as the predicted variable. Inputs to the model consisted of four values for each mouse: the fraction of lobule containing label for each of lobule VI, lobule VII, crus I, and crus II. Coefficients were fit for each of these terms along with an intercept term. The fraction of expressing voxels for each mouse is shown in Figure 10—figure supplement 1. Contribution of anatomical expression in each lobule to each behavior was quantified as the best-fit coefficient of the model fit, normalized by the coefficient standard error. Coefficients and standard errors were obtained by fitting the linear models using the statsmodels 0.8.0 package in Python 3.6.2.
 
-## Quantification of behavioral endophenotypes
+### Quantification of behavioral endophenotypes
 
 As a means of describing the natural underlying structure of the behavioral phenotypes measured through the assay-specific metrics, we performed principal component analysis (PCA) on the set of observations in control mice to define a linear subspace of correlated behavioral measures. The resulting principal components or ‘eigenbehaviors’ (linear combinations of behavioral metrics) were used as a basis onto which both control and experimental mouse data were projected after normalization by centering to the mean and standard deviation of the controls. Both principal component scores and normalized raw metrics (z-scored metrics described in Table 2) were compared between experimental groups and controls via standard nonparametric distribution test, the two-sample Kolmogorov-Smirnov test, as implemented in MATLAB’s kstest2 function (MathWorks, Inc.). High-contribution PCs were defined as those for which the experimental group differed from controls in their means by at least 0.01, accounted for at least 10% of the total behavioral variance of the experimental group for that task, and reached p<0.05 two-tailed significance by a two-sample t-test.
 
 To construct the correlation graphs across all assays (Figure 9), pairwise correlations were computed between control-normalized metrics of sample groups. Correlation values were computed as Spearman’s rank correlation coefficient (ρ) and p-values were determined using exact permutation distributions as implemented in MATLAB’s corr function (MathWorks Inc.).
 
-## Acute brain slice experiments
+### Acute brain slice experiments
 
 Two male, 6-week-old C5B7L/J6 mice were anesthetized with isoflurane and injected in lobule VIb with AAV8-hSyn-hM4D(Gi)-mCherry virus as described in ‘Animal Preparation’. Two to 5 weeks later, cerebella were removed and dissected in ice-cold oxygenated slicing medium containing (in mM): 93 N-methyl-D-glucamine HCl, 2.5 KCl, five sodium ascorbate, two thiourea, three sodium pyruvate, 0.5 CaCl2, 10 MgCl2, 30 NaHCO3, 1.2 NaH2PO4, 20 HEPES, and 25 D-glucose (mOsm 300, pH 7.4). 250 μm sagittal slices of the vermis were cut on a vibratome (VT2000S, Leica, Germany). Slices were incubated in slicing medium at near physiological temperature (34°C) for 2 mins and transferred to 34°C aCSF for 30 min. Slices were then held at room temperature in a chamber filled with oxygenated aCSF covered with aluminum foil to prevent too much light exposure and used within 6 hr. Experiments were performed in aCSF at near physiological temperature ~33°C. The patch pipettes (6 – 8 MΩ) were filled with intracellular solution containing (in mM): 120 potassium gluconate, 9 KCl, 10 KOH, 3.48 MgCl2, 4 NaCl, 10 HEPES, 4 Na2ATP, 0.4 Na3GTP, 17.5 sucrose and 10 μm Alexa 488 (at pH 7.25). CNO (10 μM in aCSF) was applied to the slices using positive pressure via another patch pipette (>2 MΩ) positioned above the recording area. Data was stored and collected for offline analysis using the MiniAnalysis program (Synaptosoft Inc., Decatur, GA; http://www.synaptosoft.com/; n = 7 cells).
 
-## In vivo electrophysiology
+### In vivo electrophysiology
 
 Four male, 6-week-old C5B7L/J6 mice were anesthetized with isoflurane and injected in lobule VI with AAV8-hSyn-hM4D(Gi)-mCherry virus as described in the ‘Animal Preparation’ section. Following the injection mice were fitted with a cranial 3-mm-wide window covered by a removable silicone plug (Kwik-Sil, WPI) and a custom-made two-piece headplate (Figure 1E bottom; Giovannucci et al., 2017). Two weeks later, mice were lightly anesthetized with isoflurane, headfixed and placed on a freely rotating disk. The DREADD mCherry expression was confirmed by placing mice the mice under an epifluorescence Leica MZ16FA microscope. The day following this confirmation the mice were again lightly anesthetized with isoflurane, headfixed and placed on a freely rotating treadmill inside a Faraday cage. The silicone plug covering the DREADD-expressing part of the cerebellum was removed and the exposed brain was covered with sterile saline. Single-unit extracellular signals were recorded in awake mice using borosilicate glass electrodes filled with 2 M NaCl. Purkinje cells were identified by the presence of complex and simple spikes. Single units were then confirmed during offline analysis by the characteristic short pause in simple-spike firing that follows each complex spike (Badura et al., 2013). Purkinje cells were recorded in baseline condition and upon topical application of CNO (10 μM in sterile saline). The recording site was confirmed by injecting ~100 nl of 1% cholera toxin subunit B (CT-B), Alexa Fluor 488 Conjugate (C34775, ThermoFisher Scientific) dissolved in sterile saline (0.9% NaCl) (Figure 1E top). Immediately after acquiring the post-CNO-application recordings and injecting the cerebella with CT-B, mice were injected with an overdose of ketamine (400 mg/kg)/xylazine (50 mg/kg) (i.p.) and perfused with 4% paraformaldehyde to preserve the tissue for histological verification of the injections. Data was stored and collected for offline analysis using SpikeTrain (Neurasmus B.V., The Netherlands, www.neurasmus.com), running under MATLAB (Mathworks, MA).
 
-## Long-distance tracing
+### Long-distance tracing
 
 The HSV1 strain H129, which contains the EGFP transgene, was used for multisynaptic anterograde tracing (H129 772, Wojaczynski et al., 2015); aliquots grown/titered 1/21/15 at 9.02*10^8 pfu/ml before single freeze-thaw). Eight adult C57BL/6J males were injected with the HSV1 strain H129 in the Biosafety Level 2 (BSL2) facility (N = 8 mice; four lobule VI injections and four right crus I injections; see ‘Animal Preparation’ for details regarding surgery). Virus was diluted 10x in sterile saline before injection. Following surgery mice were kept in the BSL2 facility. After 60 or 80 hr post-op mice were first anesthetized with isoflurane in their home cages and then injected with ketamine (400 mg/kg)/xylazine (50 mg/kg) (i.p.) and perfused under Animal BSL2 conditions with 4% PFA with heparin (20 units/ml). The number of sections per region (motor cortex, somatosensory, prelimbic, orbitofrontal, anterior cingulate, infralimbic, visual cortex, parietal association, retrosplenial, and agranular insular) with GFP was counted. The relative neocortical expression was calculated by dividing each region’s count by the number seen in motor cortex.
 
-## Statistics
+### Statistics
 
 Statistics and grouping were performed using MATLAB, Python, or GraphPad Prism. Unless stated otherwise, data are presented as mean ± SD. Two statistical assays were employed to determine differences in behavioral measures resulting from lobule and temporal specific perturbations: group mean comparison through ANOVA with Šidák’s multiple comparisons post-hoc test, and a distribution comparison using the two-sample Kolmogorov-Smirnov (KS) test. Inclusion of the non-parametric KS enabled identification of potential differences in the overall distribution of behaviors in addition to distribution mean and median.

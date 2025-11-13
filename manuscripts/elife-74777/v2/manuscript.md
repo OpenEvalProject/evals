@@ -27,27 +27,27 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Department of Renal Medicine, University College London London United Kingdom
-2. https://ror.org/027m9bs27 Division of Cell Matrix Biology & Regenerative Medicine, School of Biological Sciences, Faculty of Biology, Medicine and Health, University of Manchester Manchester United Kingdom
-3. https://ror.org/041nas322 Children's Hospital, University of Bonn Bonn Germany
-4. https://ror.org/041nas322 Institute of Human Genetics, University of Bonn Bonn Germany
-5. https://ror.org/00he80998 Manchester Centre for Genomic Medicine, Manchester University NHS Foundation Trust Manchester United Kingdom
-6. https://ror.org/027m9bs27 Evolution and Genomic Sciences, School of Biological Sciences, University of Manchester Manchester United Kingdom
-7. https://ror.org/04fzm7v55 Department of Pediatrics, University of Zielona Góra Zielona Gora Poland
-8. https://ror.org/01rdrb571 Department of Pediatric Nephrology, University of Marburg Marburg Germany
-9. https://ror.org/042fqyp44 Department of Adolescent Urology, University College London Hospitals NHS Foundation Trust London United Kingdom
-10. https://ror.org/01rdrb571 Center for Human Genetics, University of Marburg Marburg Germany
-11. https://ror.org/041nas322 Institute for Genomic Statistics and Bioinformatics, Medical Faculty, University of Bonn Bonn Germany
-12. https://ror.org/026zzn846 Genomics England, Queen Mary University of London London United Kingdom
-13. https://ror.org/03zydm450 Nephrology Department, Great Ormond Street Hospital for Children NHS Foundation Trust London United Kingdom
-14. https://ror.org/00he80998 Royal Manchester Children’s Hospital, Manchester University NHS Foundation Trust, Manchester Academic Health Science Centre Manchester United Kingdom
-15. https://ror.org/02jx3x895 Research Department of Pathology, University College London London United Kingdom
+1. Department of Renal Medicine, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+2. Division of Cell Matrix Biology & Regenerative Medicine, School of Biological Sciences, Faculty of Biology, Medicine and Health, University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+3. Children's Hospital, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
+4. Institute of Human Genetics, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
+5. Manchester Centre for Genomic Medicine, Manchester University NHS Foundation Trust Manchester United Kingdom ([ROR:00he80998](https://ror.org/00he80998))
+6. Evolution and Genomic Sciences, School of Biological Sciences, University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+7. Department of Pediatrics, University of Zielona Góra Zielona Gora Poland ([ROR:04fzm7v55](https://ror.org/04fzm7v55))
+8. Department of Pediatric Nephrology, University of Marburg Marburg Germany ([ROR:01rdrb571](https://ror.org/01rdrb571))
+9. Department of Adolescent Urology, University College London Hospitals NHS Foundation Trust London United Kingdom ([ROR:042fqyp44](https://ror.org/042fqyp44))
+10. Center for Human Genetics, University of Marburg Marburg Germany ([ROR:01rdrb571](https://ror.org/01rdrb571))
+11. Institute for Genomic Statistics and Bioinformatics, Medical Faculty, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
+12. Genomics England, Queen Mary University of London London United Kingdom ([ROR:026zzn846](https://ror.org/026zzn846))
+13. Nephrology Department, Great Ormond Street Hospital for Children NHS Foundation Trust London United Kingdom ([ROR:03zydm450](https://ror.org/03zydm450))
+14. Royal Manchester Children’s Hospital, Manchester University NHS Foundation Trust, Manchester Academic Health Science Centre Manchester United Kingdom ([ROR:00he80998](https://ror.org/00he80998))
+15. Research Department of Pathology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
 ## Abstract
 
-Posterior urethral valves (PUV) are the commonest cause of end-stage renal disease in children, but the genetic architecture of this rare disorder remains unknown. We performed a sequencing-based genome-wide association study (seqGWAS) in 132 unrelated male PUV cases and 23,727 controls of diverse ancestry, identifying statistically significant associations with common variants at 12q24.21 (p=7.8 × 10 −12 ; OR 0.4) and rare variants at 6p21.1 (p=2.0 × 10 -8 ; OR 7.2), that were replicated in an independent European cohort of 395 cases and 4151 controls. Fine mapping and functional genomic data mapped these loci to the transcription factor TBX5 and planar cell polarity gene PTK7 , respectively, the encoded proteins of which were detected in the developing urinary tract of human embryos. We also observed enrichment of rare structural variation intersecting with candidate cis -regulatory elements, particularly inversions predicted to affect chromatin looping (p=3.1 × 10 -5 ). These findings represent the first robust genetic associations of PUV, providing novel insights into the underlying biology of this poorly understood disorder and demonstrate how a diverse ancestry seqGWAS can be used for disease locus discovery in a rare disease.
+Posterior urethral valves (PUV) are the commonest cause of end-stage renal disease in children, but the genetic architecture of this rare disorder remains unknown. We performed a sequencing-based genome-wide association study (seqGWAS) in 132 unrelated male PUV cases and 23,727 controls of diverse ancestry, identifying statistically significant associations with common variants at 12q24.21 (p=7.8 × 10−12; OR 0.4) and rare variants at 6p21.1 (p=2.0 × 10-8; OR 7.2), that were replicated in an independent European cohort of 395 cases and 4151 controls. Fine mapping and functional genomic data mapped these loci to the transcription factor TBX5 and planar cell polarity gene PTK7, respectively, the encoded proteins of which were detected in the developing urinary tract of human embryos. We also observed enrichment of rare structural variation intersecting with candidate cis-regulatory elements, particularly inversions predicted to affect chromatin looping (p=3.1 × 10-5). These findings represent the first robust genetic associations of PUV, providing novel insights into the underlying biology of this poorly understood disorder and demonstrate how a diverse ancestry seqGWAS can be used for disease locus discovery in a rare disease.
 
 ## Introduction
 
@@ -61,17 +61,295 @@ Here, we used whole-genome sequencing (WGS) data from a diverse ancestry cohort 
 
 We analysed WGS data from 132 unrelated male probands with PUV and 23,727 non-PUV controls (unaffected relatives without known kidney disease), recruited to the UK’s 100,000 Genomes Project (100KGP) (Smedley et al., 2021; see Figure 1 for study workflow). The available dataset (version 10) combined WGS data, clinical phenotypes standardized using Human Phenotype Ontology (HPO) codes, and comprehensive hospital clinical records for 89,139 individuals with cancer, rare disease, and their unaffected relatives. None of the cases included had received a definitive genetic diagnosis through the clinical arm of the 100KGP. Two individuals had a pathogenic and likely pathogenic variant affecting HNF1B and FOXC1, respectively, but these were not considered causal for PUV (see Appendix 1). Given the small number of recruited cases with this rare disorder, we chose to jointly analyse individuals from diverse ancestral backgrounds, thereby preserving sample size and boosting power. To mitigate confounding due to population structure whilst using this mixed-ancestry approach, we performed ancestry-matching of cases and controls using weighted principal components (Figure 1—figure supplement 1) and utilized SAIGE which employs a scalable generalized logistic mixed model (GLMM) to account for relatedness between individuals and a saddlepoint approximation to avoid inflated type I error seen with case-control imbalance (Zhou et al., 2016a). Clinical characteristics and genetic ancestry of the cases and controls are detailed in Table 1.
 
-## Variation at 12q24.21 and 6p21.1 is associated with PUV
+![Figure 1.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig1-v2.jpg)
+
+**Figure 1.:** The flowchart shows the number of samples included at each stage of filtering, the analytical strategies employed, and the main findings (blue boxes). PUV, posterior urethral valves; MAF, minor allele frequency; GWAS, genome-wide association study; EUR, European; cCRE, candidate cis-regulatory element.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Two cases and 2579 controls were excluded from downstream analyses.
+
+**Table 1.**
+ Clinical characteristics and genetic ancestry of the discovery cohort.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>PUV (n=132)</th>
+      <th>Controls (n=23,727)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Median age (range)</td>
+      <td></td>
+      <td>13 (2–66)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Males (%)</td>
+      <td></td>
+      <td>132 (100)</td>
+      <td>10,425 (43.9)</td>
+    </tr>
+    <tr>
+      <td>PCA determined ancestry</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EUR (%)</td>
+      <td>89 (67.4)</td>
+      <td>19,418 (81.8)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SAS (%)</td>
+      <td>18 (13.6)</td>
+      <td>2847 (12.0)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AFR (%)</td>
+      <td>11 (8.3)</td>
+      <td>449 (1.9)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AMR (%)</td>
+      <td>0 (0)</td>
+      <td>7 (0.03)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Admixed (%)</td>
+      <td>14 (10.6)</td>
+      <td>1006 (4.2)</td>
+    </tr>
+    <tr>
+      <td>Additional renal/urinary phenotypes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hydronephrosis (%)</td>
+      <td>56 (42.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Bladder abnormality (%)</td>
+      <td>32 (24.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hydroureter (%)</td>
+      <td>30 (22.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VUR (%)</td>
+      <td>27 (20.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Renal dysplasia (%)</td>
+      <td>16 (12.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hypertension (%)</td>
+      <td>11 (8.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Renal agenesis (%)</td>
+      <td>8 (6.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Recurrent UTIs (%)</td>
+      <td>5 (3.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Renal hypoplasia (%)</td>
+      <td>4 (3.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Renal duplication (%)</td>
+      <td>2 (1.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Extrarenal manifestations (%)</td>
+      <td></td>
+      <td>35 (26.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cardiac anomaly (%)</td>
+      <td>4 (3.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neurodevelopmental disorder (%)</td>
+      <td>7 (5.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Family history (%)</td>
+      <td></td>
+      <td>5 (3.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>End-stage renal disease (%)</td>
+      <td></td>
+      <td>23 (17.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median age ESRD (range)</td>
+      <td></td>
+      <td>14 (0–39)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_PUV, posterior urethral valves; PCA, principal component analysis; EUR, European; SAS, South Asian; AFR, African; AMR, Latino/Admixed American; VUR, vesico-ureteral reflux; UTI, urinary tract infection; ESRD, end-stage renal disease._
+
+### Variation at 12q24.21 and 6p21.1 is associated with PUV
 
 To determine the contribution of common and low-frequency variation to PUV, we carried out a seqGWAS using 19,651,224 single-nucleotide variants (SNVs) and indels with minor allele frequency (MAF) ≥0.1%. Statistically significant (p<5 × 10–8) association was detected at two loci (Figure 2 and Table 2). The genomic inflation factor (λ) of 1.04 confirmed population stratification was well controlled in this diverse ancestry cohort, although this may represent an underestimate given the low power of the cohort (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig2-v2.jpg)
+
+**Figure 2.:** A genome-wide single-variant association study was carried out in 132 unrelated posterior urethral valves (PUV) cases and 23,727 controls for 19,651,224 variants with minor allele frequency (MAF) >0.1%. Chromosomal position (GRCh38) is denoted along the x axis and strength of association using a –log10(p) scale on the y axis. Each dot represents a variant. The red line indicates the Bonferroni adjusted threshold for genome-wide significance (p<5 × 10–8). The gene in closest proximity to the lead variant at significant loci is listed.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The grey shaded area represents the 95% confidence interval of the null distribution.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig2-figsupp2-v2.jpg)
+
+**Table 2.**
+ Association statistics for significant genome-wide loci.Table 2—source data 1.Replication study.The lead variants at the top four loci with p<5 × 10–7 were genotyped in an independent European cohort of 395 posterior urethral valves (PUV) cases and 4151 controls. p-Values in the replication cohort were calculated using a one-sided Cochran Armitage Trend test. OR, odds ratio; CI, 95% confidence interval.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2">P value</th>
+      <th colspan="2">OR (95% CI)</th>
+      <th colspan="2">Case EAF</th>
+      <th colspan="2">Control EAF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lead variant</td>
+      <td>CHR:POS</td>
+      <td>Effect Allele</td>
+      <td>Closest gene</td>
+      <td>Discovery</td>
+      <td>Replication</td>
+      <td>Discovery</td>
+      <td>Replication</td>
+      <td>Discovery</td>
+      <td>Replication</td>
+      <td>Discovery</td>
+      <td>Replication</td>
+    </tr>
+    <tr>
+      <td rowspan="2">rs10774740</td>
+      <td rowspan="2">chr12:114228397</td>
+      <td rowspan="2">T</td>
+      <td rowspan="2">TBX5</td>
+      <td rowspan="2">7.81x10–12</td>
+      <td rowspan="2">5.17x10–3</td>
+      <td>0.4</td>
+      <td>0.8</td>
+      <td rowspan="2">0.19</td>
+      <td rowspan="2">0.31</td>
+      <td rowspan="2">0.37</td>
+      <td rowspan="2">0.36</td>
+    </tr>
+    <tr>
+      <td>(0.31–0.52)</td>
+      <td>(0.68–0.93)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">rs144171242</td>
+      <td rowspan="2">chr6:43120356</td>
+      <td rowspan="2">G</td>
+      <td rowspan="2">PTK7</td>
+      <td rowspan="2">2.02x10–8</td>
+      <td rowspan="2">7.21x10–3</td>
+      <td>7.2</td>
+      <td>2.18</td>
+      <td rowspan="2">0.05</td>
+      <td rowspan="2">0.018</td>
+      <td rowspan="2">0.01</td>
+      <td rowspan="2">0.008</td>
+    </tr>
+    <tr>
+      <td>(4.08–12.70)</td>
+      <td>(1.22–3.90)</td>
+    </tr>
+  </tbody>
+</table>
+
 At 12q24.21, the lead intergenic variant (rs10774740) was common (MAF 0.37) and reached p=7.81 × 10–12 (OR 0.40; 95% CI 0.31–0.52; Figure 3). A rare (MAF 0.007) variant (rs144171242) at 6p21.1, located in an intron of PTK7, was also significant at p=2.02 × 10–8 (OR 7.20; 95% CI 4.08–12.70; Figure 4). The meanDP (mean sequencing depth) and meanGQ (mean genotype quality) at these sites were 33.43 and 133.28, for rs10774740 and 29.34 and 75.59 for rs144171242, respectively, confirming these variants were high-quality calls. Conditional analysis did not identify secondary independent signals at either locus and epistasis was not detected between the two lead variants (p=0.10).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig3-v2.jpg)
+
+**Figure 3.:** Regional association plot with chromosomal position (GRCh38) denoted along the x axis and strength of association using a –log10(p) scale on the y axis. The lead variant (rs10774740) is represented by a purple diamond. Variants are coloured based on their linkage disequilibrium (LD) with the lead variant using 1000 Genomes data from all population groups. Functional annotation of the lead prioritized variant rs10774740 is shown, intersecting with CADD score (version 1.6), PhastCons conserved elements from 100 vertebrates, and ENCODE H3K27ac ChIP-seq, H3K4me3 ChIP-seq, and DNase-seq from mesendoderm cells. ENCODE cCREs active in mesendoderm are represented by shaded boxes; low DNase (grey), DNase-only (green). Genome-wide association study (GWAS) variants with p<0.05 are shown. Note that rs10774740 has a relatively high CADD score for a non-coding variant and intersects with a highly conserved region. PP, posterior probability derived using PAINTOR; cCRE, candidate cis-regulatory element.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** TADs are represented by blue triangles. Protein-coding genes are denoted in blue, non-coding genes in green.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The outer layer represents a Manhattan plot with variants plotted against strength of association. Only variants with p<0.05 are displayed. Genomic risk loci are highlighted in blue in the second layer. Significant chromatin loops detected in H1 BMP4-derived mesendoderm cultured cells are represented in orange.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig4-v2.jpg)
+
+**Figure 4.:** Regional association plot with chromosomal position (GRCh38) along the x axis and strength of association using a –log10(p) scale on the y axis. The lead variant (rs144171242) is represented by a purple diamond. Variants are coloured based on their linkage disequilibrium (LD) with the lead variant using 1000 Genomes data from all population groups. Functional annotation of the lead prioritized variant rs144171242 is shown intersecting with ENCODE H3K27ac ChIP-seq, H3K4me3 ChIP-seq, and DNase-seq from mesendoderm cells. ENCODE cCREs active in mesendoderm are represented by shaded boxes; low DNase (grey), DNase-only (green), and distal enhancer-like (orange). ChromHMM illustrates predicted chromatin states using Roadmap Epigenomics imputed 25-state model for mesendoderm cells; active enhancer (orange), weak enhancer (yellow), strong transcription (green), transcribed and weak enhancer (lime green). Predicted transcription factor-binding sites (TFBS) from the JASPAR 2020 CORE collection (Fornes et al., 2020) are indicated by dark grey shaded boxes. Genome-wide association study (GWAS) variants with p<0.05 are shown. Note that rs144171242 intersects with both a predicted regulatory region and TFBS. PP, posterior probability derived using PAINTOR; cCREs, candidate cis-regulatory elements.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The black boxes indicate where the risk allele [G] may disrupt binding.
 
 Due to the male nature of PUV, we also conducted a sex-specific analysis using only male controls (n=10,425) to determine whether any additional signals could be detected by removing females with potentially undetected genitourinary phenotypes. Both lead variants showed stronger evidence of association: rs10774740 at 12q24.21 (p=7.08 × 10–12; OR 0.40; 95% CI 0.31–0.52) and rs144171242 at 6p21.1 (p=1.79 × 10–8; OR 7.40; 95% CI 4.14–13.22). No significant associations on chromosome X were identified.
 
 Gene and gene set analysis was carried out to assess the joint effect of common and low-frequency variants and identify potential functional pathways associated with PUV, however, no genes (Figure 2—source data 1) or pathways (Figure 2—source data 2) reached statistical significance after correction for multiple testing.
 
-## 12q24.21 and 6p21.1 replicate in an independent cohort
+### 12q24.21 and 6p21.1 replicate in an independent cohort
 
 We next carried out a replication study in an independent European cohort consisting of 395 individuals with PUV: 333 from Poland and Germany, recruited through the CaRE for LUTO (Cause and Risk Evaluation for Lower Urinary Tract Obstruction) Study, and 62 from the UK; 4151 male individuals recruited to the cancer arm of the 100KGP were used as controls. The ancestry of a subset of cases (n=204) for whom genome-wide genotyping data was available and the control cohort (n=4151) was confirmed as European (Figure 5). The UK PUV patients and the 100KGP cancer control cohort had not been included in the discovery analyses.
 
@@ -83,19 +361,43 @@ The lead variants at the top four loci with p<5 × 10–7 were tested for replic
 
 To confirm this signal was not being driven by case-control imbalance, we repeated the analysis with 500 male controls (a case:control ratio of 1:1.3). rs10774740 at the 12q24.21 locus remained significant (p=9.9 × 10–3; OR 0.77; 95% CI 0.63–0.94). rs144171242 at the 6p21.1 locus did not reach statistical significance, but this is likely due to insufficient power (p=0.06; OR 2.24; 95% CI 0.93–5.36). For a rare variant such as rs144171242 (MAF 0.007), a replication study with 500 controls is only powered to detect association with variants that have a large effect size (OR >3.5).
 
-## Diverse ancestry analysis increases power for discovery
+### Diverse ancestry analysis increases power for discovery
 
 To ascertain whether the observed associations were being driven by a specific ancestry group, we next repeated the seqGWAS using a subgroup of genetically defined European individuals (88 cases and 17,993 controls) and 16,938,500 variants with MAF ≥0.1%. The 12q24.21 locus remained genome-wide significant (Figure 6 and Figure 6—figure supplement 1), however the lead variant (rs2555009) in the region showed weaker association (p=4.02 × 10–8; OR 0.43; 95% CI 0.12–0.73) than rs10774740, the lead variant in the diverse ancestry analysis (Figure 6—source data 1). Interestingly, the two variants were not in strong linkage disequilibrium (EUR LD; r2=0.55). The lead variant at 6p21.1 from the diverse ancestry analysis did not reach genome-wide significance in the European-only study (rs144171242; p=3.60 × 10–5; OR 5.90; 95% CI 2.88–12.11) suggesting either that this signal may be being driven partly by non-Europeans or the result of loss of power due to reduced sample size. p-Values and effect sizes were strongly correlated between the diverse ancestry and European-only seqGWAS (Figure 6—figure supplement 2), demonstrating that inclusion of individuals from diverse backgrounds to increase sample size can be an effective way to boost power and discover new disease loci, even in a small cohort.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig6-v2.jpg)
+
+**Figure 6.:** A genome-wide single-variant association study was carried out in 88 cases and 17,993 controls for 16,938,500 variants with MAF ≥0.1%. All cases and controls had genetically determined European ancestry. Chromosomal position (GRCh38) is denoted along the x axis and strength of association using a –log10(p) scale on the y axis. Each dot represents a variant. The red line indicates the Bonferroni adjusted threshold for genome-wide significance (p<5 × 10–8). The gene in closest proximity to the lead variant at significant loci are listed.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The grey shaded area represents the 95% confidence interval of the null distribution.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** All variants with p<10–5 in both cohorts are shown. The shaded grey area represents the 95% confidence interval.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Error bars represent 95% confidence intervals. The lead variant in (B) was not identified in individuals with African ancestry in this study. AFR, African ancestry (11 cases; 483 controls); EUR, European ancestry (89 cases; 17,993 controls); SAS, South Asian ancestry (18 cases; 2948 controls).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Error bars represent 95% confidence intervals. The lead variant in (B) was not identified in individuals with African ancestry in this study. AFR, African ancestry (11 cases; 483 controls); EUR, European ancestry (89 cases; 17,993 controls); SAS, South Asian ancestry (18 cases; 2948 controls); ALL, mixed-ancestry cohort (132 cases; 23,727 controls).
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** Haploview (version 4.2) was used to compute pairwise LD statistics (r2) between variants for each population. The darker the shading, the higher the LD between variants. Black outlined triangles indicate haploblocks. (A) LD plot for chr12:114,663,967–114,667,916 (GRCh37) with the position of the lead variant rs10774740 represented by a green arrow; (B) LD plot for chr6:43,084,099–43,092,650 (GRCh37) with the lead variant rs144171242 represented by a green arrow. rs144171242 was not seen in the AFR population group.
+
 As the numbers of African, South Asian, and admixed ancestry individuals were too small to reliably carry out subgroup association analyses and subsequent meta-analysis, we instead compared ancestry-specific allele frequencies, effect sizes, and directions for the two lead variants. rs10774740 (T) had a higher allele frequency in individuals of African ancestry (MAF 0.74) compared with European (MAF 0.37) and South Asian (MAF 0.35) populations (Figure 6—figure supplement 3), however the effect size and direction were similar between the groups (Figure 6—figure supplement 4). rs144171242 (G) was present at a lower allele frequency in South Asian (MAF 0.002) compared with European (MAF 0.008) individuals and was not seen in the African ancestry group (Figure 6—figure supplement 3). The effect size of this rare variant was higher in the South Asian than European population (Figure 6—figure supplement 4), which may explain why it only reached genome-wide significance after inclusion of South Asian individuals. Finally, comparison with population allele frequencies from gnomAD (Karczewski et al., 2020) demonstrated that although there is large variation in the allele frequency of rs10774740 between ancestries this is away from, not towards, the case allele frequency and suggests that the detected associations are not being driven by differences in allele frequency between populations (Figure 6—figure supplement 3).
 
-## Fine mapping predicts lead variants to be likely causal
+### Fine mapping predicts lead variants to be likely causal
 
 WGS enables further interrogation of loci of interest at high resolution. We therefore repeated the diverse ancestry analysis at each genome-wide significant locus using all variants with minor allele count (MAC)≥3, to determine whether additional ultra-rare variants might be driving the observed association signals. Both rs10774740 at 12q24.21 and rs144171242 at 6p21.1 remained most strongly associated, suggesting they are likely to be causal. Comparison of the different LD patterns seen across African, European, and South Asian population groups at these loci demonstrate how a combined ancestry approach can leverage differences in LD to improve the fine mapping of causal variants (Figure 6—figure supplement 5).
 
 We next applied the Bayesian fine-mapping tool PAINTOR (Kichaev et al., 2020) which integrates the strength of association, LD patterns, and functional annotations to derive the posterior probability (PP) of a variant being causal. Using this alternative statistical approach, both lead variants were identified as having high probability of being causal: rs10774740 (PP with no annotations 0.77, PP with annotations >0.99) and rs144171242 (PP with no annotations 0.83, PP with annotations >0.99). Conservation and ChIP-seq transcription factor (TF)-binding clusters had the largest impact on PP at 12q24.21 and 6p21.1, respectively. Validation of the lead variants using statistical fine mapping illustrates how the increased sensitivity and improved resolution of WGS compared with genotyping arrays may permit the direct identification of underlying causal variants, particularly in the context of examining rarer variants and non-European populations for which imputation performance may be limiting (Höglund et al., 2019; Peterson et al., 2019).
 
-## Functional annotation implicates TBX5 and PTK7
+### Functional annotation implicates TBX5 and PTK7
 
 To explore the functional relevance of these loci, we next interrogated publicly available datasets via UCSC Genome Browser (Kent et al., 2002) and used Functional Mapping and Annotation (FUMA; Watanabe et al., 2017) to prioritize candidate genes. Given the urinary tract is derived from both embryonic mesoderm and endoderm, where possible we used experimental data obtained from male H1 BMP4-derived mesendoderm cultured cells.
 
@@ -103,29 +405,232 @@ The common, non-coding, intergenic lead variant (rs10774740) at the 12q24.21 loc
 
 At the 6p21.1 locus, the non-coding lead variant (rs144171242) is in an intron of the inactive tyrosine kinase PTK7. This rare variant has a low CADD score (0.93) and lacks any relevant chromatin interaction or known eQTL associations, which is not unexpected given its rarity precludes detection by expression-array experiments. Interrogation of epigenomic annotations from ENCODE (Moore et al., 2020) revealed that rs144171242 intersects a cCRE (EH38E2468259) with low DNase activity in mesendoderm cells, but with a dELS in neurons (Figure 4). NIH Roadmap Epigenomics Consortium (Kundaje et al., 2015) data suggests that rs144171242 may have regulatory activity in mesendoderm cells, classifying this region as transcribed/weak enhancer (12TxEnhW) using the imputed ChromHMM 25-chromatin state model (Figure 4). In addition, interrogation of the JASPAR 2020 (Fornes et al., 2020) database of experimentally defined TF-binding profiles revealed that rs144171242 intersects with the DNA-binding motifs of FERD3L, ZNF317, and Zic2 (Figure 4), suggesting that rs144171242 may potentially affect PTK7 expression via disruption of TF binding (Figure 4—figure supplement 1).
 
-## rs10774740 is associated with prostate cancer and female genitourinary phenotypes
+### rs10774740 is associated with prostate cancer and female genitourinary phenotypes
 
 Interrogation of the NHGR/EBI GWAS Catalog (MacArthur et al., 2017) revealed that the risk allele rs10774740 (G) is associated with prostate cancer aggressiveness (Berndt et al., 2015; p=3 × 10–10; OR 1.14; 95% CI 1.09–1.18). PheWAS data from the UK Biobank demonstrated that the protective allele rs10774740 (T) also has a protective effect in female genitourinary phenotypes (Figure 7): urinary incontinence (p=8.3 × 10–12; OR 0.90; 95% CI 0.87–0.92), female stress incontinence (p=7.9 × 10–10; OR 0.89; 95% CI 0.85–0.92), genital prolapse (p=1.1 × 10–9; OR 0.92; CI 0.89–0.94) and symptoms involving the female genital tract (p=1.7 × 10–8; OR 0.90; 95% CI 0.87–0.94). No significant phenotypic associations affecting other organ systems were seen. These data therefore provide independent validation of a role for TBX5 in urogenital phenotypes. No known GWAS or PheWAS associations were identified for rs144171242, which is likely too rare to be genotyped or imputed in previous GWAS.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig7-v2.jpg)
 
-**Figure 7.:** T) at 12q24.21.Plot downloaded from https://pheweb.org/UKB-SAIGE. The PheWAS was performed using imputed data from ~400,000 White British participants in the UK Biobank using SAIGE. The triangles indicate the direction of effect. The dashed grey line indicates a Bonferroni adjusted significance level of p< 3.6 x 10-5 (1403 phenotype codes).
+**Figure 7.:** Plot downloaded from https://pheweb.org/UKB-SAIGE. The PheWAS was performed using imputed data from ~400,000 White British participants in the UK Biobank using SAIGE. The triangles indicate the direction of effect. The dashed grey line indicates a Bonferroni adjusted significance level of p< 3.6 x 10-5 (1403 phenotype codes).
 
-## TBX5 and PTK7 proteins are detected in the developing urinary tract
+### TBX5 and PTK7 proteins are detected in the developing urinary tract
 
 To determine whether TBX5 and PTK7 proteins can be detected during urinary tract development, immunohistochemistry was undertaken in a 7-week gestation normal human embryo (Figure 8). At this stage of development, the urogenital sinus is a tube composed of epithelia that will differentiate into urothelial cells of the proximal urethra and the urinary bladder. Uroplakin 1B, a water-proofing protein, was detected in urogenital sinus epithelia (Figure 8B). PTK7 was detected in epithelia lining the urogenital sinus, and intensely in stromal-like cells surrounding the mesonephric ducts (Figure 8C). TBX5 was detected in a nuclear pattern in a subset of epithelial cells lining the urogenital sinus (Figure 8D). Omission of primary antibodies resulted in absent signals, as expected (Figure 8E). Immunostaining of a second human embryo at the same stage of gestation produced similar results, with a prominent signal for PTK7 in stromal cells surrounding the mesonephric duct and a subset of nuclei in the epithelium of the urogenital sinus stained for TBX5 (Figure 8—figure supplement 1).
 
-## Monogenic causes of PUV are uncommon
+![Figure 8.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig8-v2.jpg)
+
+**Figure 8.:** (A) Overview of transverse section of a normal human embryo 7 weeks after fertilization. The section has been stained with haematoxylin (blue nuclei). Boxes around the urogenital sinus and the mesonephric duct mark similar areas depicted under high power in (B–E). In (B–D), sections were reacted with primary antibodies, as indicated; in (E) the primary antibody was omitted. (B–E) were counterstained with haematoxylin. In (B–E), the left-hand frame shows the region around the mesonephric duct, while the right-hand frame shows one lateral horn of the urogenital sinus. (B) Uroplakin 1b immunostaining revealed positive signal (brown) in the apical aspect of epithelia lining the urogenital sinus (arrows, right frame), the precursor of the urinary bladder and proximal urethra. Uroplakin 1b was also detected in the flat monolayer of mesothelial cells (left frame) that line the body cavity above the mesonephric duct. (C) There were strong PTK7 signals (brown cytoplasmic staining) in stromal-like cells around the mesonephric duct (left frame), whereas the epithelia of the duct itself were negative. PTK7 was also detected in a reticular pattern in epithelia lining the urogenital sinus (right frame) and in stromal cells near the sinus. (D) A subset of epithelial cells lining the urogenital sinus (right frame) immunostained for TBX5 (brown nuclei; some are arrowed). The mesothelial cells near the mesonephric duct (left frame) were also positive for TBX5. (E) This negative control section had the primary antibody omitted; no specific (brown) signal was noted. Bar is 400 μm in (A), and bars are 100 μm in (B–E). ugs, urogenital sinus; md, mesonephric duct; hg, hindgut; u, ureter.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) View of the mesonephric duct (the epithelial tube with md in its lumen). Note the prominent signal (brown) for PTK7 in the stromal cells surrounding the duct. (B) View of the urogenital sinus (ugs) with a subset of nuclei (three shown by arrows) in its monolayer epithelium that stain (light brown) for the transcription factor TBX5. The hindgut (hg) is nearby. Bars are 100 μm.
+
+### Monogenic causes of PUV are uncommon
 
 Having identified two novel gene associations through single-variant association testing, we next aimed to determine whether there was any gene-based enrichment of rare coding variation in this PUV cohort. Single-variant association tests can be underpowered when variants are rare and collapsing variant data into specific regions or genes can increase power and aid gene discovery.
 
 We therefore aggregated rare (gnomAD allele frequency [AF]<0.1% [Karczewski et al., 2020]), predicted deleterious [protein-truncating, or CADD ≥20 [Rentzsch et al., 2019]] SNVs and small indels by gene, comparing the burden between cases and controls on an exome-wide basis. No significant enrichment was detected in any of the 19,161 protein-coding genes analysed after correction for multiple testing (Figure 9 and Figure 9—figure supplement 1). The median number of variants tested per gene was 41 (IQR 47). None of the genes previously associated with congenital bladder outflow obstruction showed evidence of enrichment: BNC2 (congenital lower urinary tract obstruction, MIM 618612); FLNA (frontometaphyseal dysplasia, MIM 305620); HPSE2 and LRIG2 (urofacial syndrome, MIM 236730/615112); CHRM3 (prune-belly syndrome, MIM 100100); MYOCD (megabladder, MIM 618719). Despite the limited power of this cohort, the lack of gene-based enrichment seen is consistent with an absence of proven Mendelian causes of non-syndromic PUV.
 
-## Structural variation affecting cis-regulatory elements is enriched
+![Figure 9.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig9-v2.jpg)
+
+**Figure 9.:** Chromosomal position (GRCh38) is shown on the x axis and strength of association using a –log10(p) scale on the y axis. Each dot represents a gene. The red line indicates the Bonferroni adjusted threshold for exome-wide significance (p=2.58 × 10–6). Genes with p<10–4 are labelled.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** The grey shaded area represents the 95% confidence interval of the null distribution.
+
+### Structural variation affecting cis-regulatory elements is enriched
 
 Large, rare CNVs have been identified in patients with PUV using conventional microarrays (Boghossian et al., 2016; Caruana et al., 2016; Faure et al., 2016; Verbitsky et al., 2019), however high-coverage WGS enables detection of smaller structural variants (SVs) with superior resolution (Gross et al., 2019; Zhou et al., 2016c), and allows the identification of balanced rearrangements including inversions. We therefore aimed to test for association with different types of SVs, by comparing the burden of rare (MAF <0.1%), autosomal SVs on an exome-wide and cis-regulatory element basis.
 
 We first focused our analysis on rare SVs that were potentially gene-disrupting by extracting those that intersected with at least one exon. Although we observed an increased burden of all SV types in cases compared with controls, this only reached statistical significance for inversions (p=2.1 × 10–3) when corrected for the multiple SV comparisons performed (Table 3). No difference in SV size between the cohorts was seen. Furthermore, exome-wide gene-based burden analysis did not detect any gene-level enrichment of rare SVs overall or when stratified by type, indicating that, in this cohort at least, rare structural variation does not appear to affect any single gene recurrently.
+
+**Table 3.**
+ Structural variant burden analysis.The burden of rare autosomal structural variants intersecting with (a) at least one exon or (b) a cis-regulatory element was compared between 132 cases and 23,727 controls. cCRE, candidate cis-regulatory element; PUV, posterior urethral valves; CNV, copy number variant; DEL, deletion; DUP, duplication; INV, inversion; OR, odds ratio; CI, 95% confidence interval, IQR, interquartile range.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>EXON</th>
+      <th></th>
+      <th>cCRE</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>PUV</td>
+      <td>Controls</td>
+      <td>PUV</td>
+      <td>Controls</td>
+    </tr>
+    <tr>
+      <td>CNV</td>
+      <td>n (%)</td>
+      <td>109 (82.6)</td>
+      <td>17,961 (75.7)</td>
+      <td>111 (84.1)</td>
+      <td>18,773 (79.1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OR (CI)</td>
+      <td>1.52 (0.96–2.50)</td>
+      <td></td>
+      <td>1.39 (0.87–2.34)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fisher’s exact p</td>
+      <td>0.07</td>
+      <td></td>
+      <td>0.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Median size (kb) (IQR)</td>
+      <td>104 (183)</td>
+      <td>94 (158)</td>
+      <td>80 (165)</td>
+      <td>80 (128)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>p (Wilcoxon)</td>
+      <td>0.75</td>
+      <td></td>
+      <td>0.75</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DEL</td>
+      <td>n (%)</td>
+      <td>117 (88.6)</td>
+      <td>19,987 (84.2)</td>
+      <td>132 (100)</td>
+      <td>23,031 (97.1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OR (CI)</td>
+      <td>1.46 (0.85–2.69)</td>
+      <td></td>
+      <td>Inf</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fisher’s exact p</td>
+      <td>0.19</td>
+      <td></td>
+      <td>0.04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Median size (kb) (IQR)</td>
+      <td>1.4 (4.2)</td>
+      <td>1.8 (4.6)</td>
+      <td>1.5 (4.1)</td>
+      <td>1.9 (4.5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>p (Wilcoxon)</td>
+      <td>0.18</td>
+      <td></td>
+      <td>4.1×10–4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DUP</td>
+      <td>n (%)</td>
+      <td>59 (44.7)</td>
+      <td>8,476 (35.7)</td>
+      <td>104 (78.8)</td>
+      <td>16,004 (67.5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OR (CI)</td>
+      <td>1.45 (1.01–2.08)</td>
+      <td></td>
+      <td>1.79 (1.17–2.83)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fisher’s exact p</td>
+      <td>0.04</td>
+      <td></td>
+      <td>5.0×10–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Median size (kb) (IQR)</td>
+      <td>3.7 (5.7)</td>
+      <td>3.0 (5.6)</td>
+      <td>2.0 (5.3)</td>
+      <td>2.3 (5.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>p (Wilcoxon)</td>
+      <td>0.16</td>
+      <td></td>
+      <td>0.49</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>INV</td>
+      <td>n (%)</td>
+      <td>66 (50.0)</td>
+      <td>8,736 (36.8)</td>
+      <td>81 (61.4)</td>
+      <td>11,171 (47.1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OR (CI)</td>
+      <td>1.72 (1.20–2.45)</td>
+      <td></td>
+      <td>1.79 (1.24–2.59)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fisher’s exact p</td>
+      <td>2.1×10–3</td>
+      <td></td>
+      <td>1.2×10–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Median size (kb) (IQR)</td>
+      <td>253 (1931)</td>
+      <td>261 (1642)</td>
+      <td>129 (459)</td>
+      <td>94 (779)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>p (Wilcoxon)</td>
+      <td>0.44</td>
+      <td></td>
+      <td>0.12</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Given the tightly controlled transcriptional networks that govern embryogenesis, we hypothesized that regulatory regions may be preferentially affected by rare structural variation. To investigate this, we identified rare (MAF <0.1%), autosomal SVs that intersected with 926,535 genome-wide cCREs curated by ENCODE (Moore et al., 2020). A significant enrichment of cCRE-intersecting SVs was observed for inversions (61.4% vs. 47.1%, p=1.2 × 10–3) and duplications (78.8% vs. 67.5%, p=5.0 × 10–3) (Table 3). While the median size of inversions was larger in cases, this was not statistically significant (129 kb vs. 94 kb, p=0.12).
 
@@ -133,7 +638,7 @@ To further characterize this enrichment, we repeated the burden analysis stratif
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/74777/elife-74777-fig10-v2.jpg)
 
-**Figure 10.:** The proportion of individuals with ≥1 rare autosomal structural variant intersecting with an ENCODE candidate cis-regulatory element (cCRE) in cases and controls was enumerated using a two-sided Fisher’s exact test. Note that inversions affecting cCRE are enriched in PUV. Vertical black bars indicate 95% confidence intervals. Unadjusted p-values shown are significant after correction for multiple testing (p<2.5 × 10–3). CNV, copy number variant; DEL, deletion; DUP, duplication; INV, inversion; PUV, posterior urethral valves; dELS, distal enhancer-like signature; pELS, proximal enhancer-like signature; PLS, promoter-like signature; cCRE, candidate cis-regulatory element.Figure 10—source data 1.The burden of rare autosomal structural variants intersecting with each cis-regulatory element type was compared between 132 cases and 23,727 controls. cCRE, candidate cis-regulatory element; CNV, copy number variant; DEL, deletion; DUP, duplication; INV, inversion; dELS, distal enhancer-like signature; pELS, proximal enhancer-like signature; PLS, promoter-like signature; OR, odds ratio; CI, 95% confidence interval.
+**Figure 10.:** The proportion of individuals with ≥1 rare autosomal structural variant intersecting with an ENCODE candidate cis-regulatory element (cCRE) in cases and controls was enumerated using a two-sided Fisher’s exact test. Note that inversions affecting cCRE are enriched in PUV. Vertical black bars indicate 95% confidence intervals. Unadjusted p-values shown are significant after correction for multiple testing (p<2.5 × 10–3). CNV, copy number variant; DEL, deletion; DUP, duplication; INV, inversion; PUV, posterior urethral valves; dELS, distal enhancer-like signature; pELS, proximal enhancer-like signature; PLS, promoter-like signature; cCRE, candidate cis-regulatory element.
 
 ## Discussion
 
@@ -165,7 +670,7 @@ To our knowledge, this is the first study to utilize diverse ancestry WGS for as
 
 ## Methods
 
-## The 100,000 Genomes Project
+### The 100,000 Genomes Project
 
 The Genomics England dataset (version 10) (Smedley et al., 2021) consists of WGS data, clinical phenotypes encoded using HPO codes (Köhler et al., 2021), and retrospective and prospectively ascertained National Health Service (NHS) hospital records for 89,139 individuals recruited with cancer, rare disease, and their unaffected relatives. Ethical approval for the 100KGP was granted by the Research Ethics Committee for East of England – Cambridge South (REC Ref 14/EE/1112). Written informed consent was obtained from all participants and/or their guardians. Figure 1 details the study workflow.
 
@@ -175,75 +680,75 @@ All cases underwent assessment via the clinical interpretation arm of the 100KGP
 
 The control cohort consisted of 27,660 unaffected relatives of non-renal rare disease participants, excluding those with HPO terms and/or hospital episode statistics (HES) data consistent with kidney disease or failure. By utilizing a case-control cohort sequenced on the same platform, we aimed to minimize confounding by technical artefacts.
 
-## DNA preparation and extraction
+### DNA preparation and extraction
 
 Ninety-nine percent of DNA samples were extracted from blood and prepared using EDTA, with the remaining 1% sourced from saliva, tissue, and fibroblasts. Samples underwent quality control assessment based on concentration, volume, purity, and degradation. Libraries were prepared using the Illumina TruSeq DNA PCR-Free High Throughput Sample Preparation kit or the Illumina TruSeq Nano High Throughput Sample Preparation kit.
 
-## WGS, alignment, and variant calling
+### WGS, alignment, and variant calling
 
 Samples were sequenced with 150 bp paired-end reads using an Illumina HiSeq X and processed on the Illumina North Star Version 4 Whole Genome Sequencing Workflow (NSV4, version 2.6.53.23), comprising the iSAAC Aligner (version 03.16.02.19) and Starling Small Variant Caller (version 2.4.7). Samples were aligned to the Homo sapiens NCBI GRCh38 assembly. Alignments had to cover ≥95% of the genome at ≥15X with mapping quality >10 for samples to be retained. Samples achieved a mean of 97.4% coverage at 15X with a median genome-wide coverage of 39X. Samples with <2% cross-contamination as determined by the VerifyBamID algorithm were kept. CNV and SV (>50 bp) calling was performed using CANVAS (Roller et al., 2016; version 1.3.1) and MANTA (Chen et al., 2016a; version 0.28.0), respectively. CANVAS determines coverage and MAF to assign copy number (>10 kb) whereas MANTA combines paired and split-read algorithms to detect SVs (<10 kb).
 
-## gVCF annotation and variant-level quality control
+### gVCF annotation and variant-level quality control
 
 gVCFs were aggregated using gvcfgenotyper (Illumina, version 2019.02.26) with variants normalized and multi-allelic variants decomposed using vt (version 0.57721; Tan et al., 2015). Variants were retained if they passed the following filters: missingness ≤5%, median depth ≥10, median GQ ≥15, percentage of heterozygous calls not showing significant allele imbalance for reads supporting the reference and alternate alleles (ABratio) ≥25%, percentage of complete sites (completeGTRatio) ≥50% and p-value for deviations from Hardy-Weinberg equilibrium (HWE) in unrelated samples of inferred European ancestry ≥1 × 10–5. Male and female subsets were analysed separately for sex chromosome quality control. Per-variant MAC was calculated across the case-control cohort. Annotation was performed using Variant Effect Predictor (version 98.2; McLaren et al., 2016) including CADD (version 1.5; Rentzsch et al., 2019), and allele frequencies from publicly available databases including gnomAD (version 3; Karczewski et al., 2020) and TOPMed (Freeze 5; Taliun et al., 2021). Variants were filtered using bcftools (version 1.11; Danecek et al., 2021).
 
-## Relatedness estimation and principal component analysis
+### Relatedness estimation and principal component analysis
 
 A set of 127,747 high-quality autosomal LD-pruned bi-allelic SNVs with MAF >1% was generated using PLINK (version 1.9; Purcell et al., 2007). SNVs were included if they met all the following criteria: missingness <1%, median GQ ≥30, median depth ≥30, ABratio ≥0.9, completeness ≥0.9. Ambiguous SNVs (A/T or G/C) and those in a region of long-range high LD were excluded. LD pruning was carried out using an r2 threshold of 0.1 and window of 500 kb. SNVs out of HWE in any of the AFR, EAS, EUR, or SAS 1000 Genomes populations were removed (pHWE <1 × 10–5). Using this variant set, a pairwise kinship matrix was generated using the PLINK2 (Chang et al., 2015) implementation of the KING-Robust algorithm (Manichaikul et al., 2010) and a subset of unrelated samples was ascertained using a kinship coefficient threshold of 0.0884 (second-degree relationships). Two cases and 1354 controls were found to be related by this method and were removed, leaving 134 cases and 26,306 controls. Ten principal components were generated using PLINK2 (Chang et al., 2015) for ancestry-matching and for use as covariates in the association analyses.
 
-## Ancestry-matching of cases and controls
+### Ancestry-matching of cases and controls
 
 Given the mixed-ancestry composition of the cohort, we employed a case-control ancestry-matching algorithm to optimize genomic similarity and minimize the effects of population structure. A custom R script (Source code 1) was used to match cases to controls within a distance threshold calculated using the top 10 principal components weighted by the percentage of genetic variation explained by each component (Figure 1—figure supplement 1). Only controls within a user-defined specified distance of a case were included with each case having to match a minimum of two controls to be included in the final cohort. A total of two cases and 2579 controls were excluded using this approach, leaving 132 cases and 23,727 controls for further analysis.
 
 For the European-only analysis, a subset of individuals predicted to have ≥0.8 probability of European ancestry inferred by a random forest model (Ntrees = 400) generated using the first eight principal components of the 1000 Genomes Project (Phase 3) data were extracted (89 cases and 19,418 controls). After ancestry-matching 88 cases and 17,993 controls remained for analysis.
 
-## Single-variant seqGWAS
+### Single-variant seqGWAS
 
 Whole-genome single-variant association analysis was carried out using the R package SAIGE (version 0.42.1) (Zhou et al., 2016a) which uses a GLMM to account for population stratification. High-quality, autosomal, bi-allelic, LD-pruned SNVs with MAF >5% were used to generate a genetic relationship matrix and fit the null GLMM. Sex and the top 10 principal components were used as covariates (fixed effects). Sex was used as a covariate to control for the anatomical differences in development of the urethra (and in utero hormonal changes) between the sexes in the control cohort. SNVs and indels with MAF ≥0.1% that passed the following quality control filters were retained: MAC ≥20, missingness <1%, HWE p>10–6, and differential missingness p>10–5. A score test (Chen et al., 2016b) for association was performed for 19,651,224 variants (diverse ancestry single-variant seqGWAS) and 16,938,500 variants (European-only seqGWAS). When case-control ratios are unbalanced, as in our study (1:180), type 1 error rates are inflated because the asymptotic assumptions of logistic regression are invalidated. SAIGE employs a saddlepoint approximation (Dey et al., 2017) to calibrate score test statistics and obtain more accurate p-values than the normal distribution.
 
 At each of the genome-wide significant loci, we used SAIGE to perform (a) conditional analysis to identify secondary independent associations and (b) high-resolution single-variant analysis using all variants with MAC ≥3 to ascertain whether the observed signal was being driven by rare variation. Epistasis between the lead variants was assessed using logistic regression in PLINK (version 1.9; Purcell et al., 2007). One limitation of SAIGE is that the betas estimated from score tests can be biased at low MACs and therefore odds ratios for variants with MAF <1% were calculated separately using allele counts in R. The R packages qqman (Turner, 2015) and GWASTools (Gogarten et al., 2012) were used to create Manhattan and Q-Q (quantile-quantile) plots, and LocusZoom (Pruim et al., 2010) to visualize regions of interest.
 
-## Replication
+### Replication
 
 The replication cohort consisted of 395 individuals with PUV; 333 recruited from Poland and Germany as part of the CaRE for LUTO (Cause and Risk Evaluation for Lower Urinary Tract Obstruction) Study, and 62 from Manchester, UK. None of the individuals had been recruited to the 100KGP. All were of self-reported European ancestry. To confirm that this cohort was also genetically European, we performed a principal component analysis (using PLINK2) analyzing a subset (n=204) of the Polish and German PUV cases for whom genome-wide genotyping data was available, projecting the first two principal components onto samples from the 1000 Genomes Project (Phase 3) (Auton et al., 2015) labelled by population group. KASP (Kompetitive Allele-Specific PCR) genotyping of the lead variants at the top four loci using a threshold of p<5 × 10–7 was carried out: rs10774740 at 12q24.21, rs144171242 at 6p21.1, rs1471950716 at 10q11.21, rs199975325 at 14q21.1. The peri-centromeric location of rs1471950716 at 10q11.21 caused the genotyping assay to fail and another variant with evidence of association (rs137855548; p=1.46 × 10–6) was used instead. The replication control cohort consisted of 4151 genetically determined European male individuals who had been recruited to the cancer arm of the 100KGP, excluding those with kidney, bladder, prostate, or childhood malignancy. These individuals had not been used in the discovery analysis.
 
 Only individuals with high-confidence genotype calls were included in the analysis. Allele counts at each variant were compared between cases and controls using a two-sided Cochran-Armitage trend test. A Bonferroni-corrected p<0.0125 (0.05/4) was used to adjust for the number of loci tested. Power to detect or refute association at each locus was calculated as >0.9.
 
-## Power
+### Power
 
 Statistical power for single-variant association under an additive model for the discovery and replication cohorts was calculated using the R package genpwr (Moore et al., 2021). Figure 2—figure supplement 2 shows the power calculations for the diverse ancestry seqGWAS at varying allele frequencies and odds ratios.
 
-## Bayesian fine mapping
+### Bayesian fine mapping
 
 We applied PAINTOR (version 3.1; Kichaev et al., 2020), a statistical fine-mapping method which uses an empirical Bayes prior to integrate functional annotation data, LD patterns, and strength of association to estimate the PP of a variant being causal. Variants at each genome-wide significant locus with p<0.05 were extracted. Z-scores were calculated as effect size (β) divided by standard error. LD matrices of pairwise correlation coefficients were derived using EUR 1000 Genomes (Phase 3) (Auton et al., 2015) imputed data as a reference, excluding variants with ambiguous alleles (A/T or G/C). Each locus was intersected with the following functional annotations downloaded using UCSC Table Browser (Kent et al., 2002): GENCODE (Frankish et al., 2019) (version 29) transcripts (wgEncodeGencodeBasicV29, updated 2019-02-15), PhastCons (Siepel et al., 2005) (phastConsElements100way, updated 2015-05-08), ENCODE (Moore et al., 2020) cCREs (encodeCcreCombined, updated 2020-05-20), TF-binding clusters (encRegTfbsClustered, updated 2019-05-16), DNase I hypersensitivity clusters (wgEncodeRegDnaseClustered, updated 2019-01-08) and H1 Human embryonic stem cell Hi-C data (h1hescInsitu from Krietenstein et al., 2020). A total of 351 variants at 12q24.21 and 166 variants at 6p21.1 were analysed under the assumption of one causal variant per locus.
 
-## Functional annotation
+### Functional annotation
 
 To explore the functional relevance of the prioritized variants, we used FUMA (version 1.3.6a) (Watanabe et al., 2017) to annotate the genome-wide significant loci. This web-based tool integrates functional gene consequences from ANNOVAR (Wang et al., 2010), CADD (Rentzsch et al., 2019) scores to predict deleteriousness, RegulomeDB score to indicate potential regulatory function (Boyle et al., 2016) and 15-core chromatin state (predicted by ChromHMM for 127 tissue/cell types; Ernst and Kellis, 2012) representing accessibility of genomic regions. Positional mapping (where a variant is physically located within a 10 kb window of a gene), GTEx (version 8) eQTL data (Consortium, 2020) (using cis-eQTLs to map variants to genes up to 1 Mb apart) and Hi-C data to detect long-range 3D chromatin interactions is used to prioritize genes that are likely to be affected by variants of interest. Single-variant seqGWAS summary statistics were used as input with genomic positions converted to GRCh37 using the UCSC liftOver tool (Kent et al., 2002).
 
 In addition, we intersected prioritized variants with the following epigenomic datasets from male H1-BMP4 derived mesendoderm cultured cells generated by the ENCODE Project (Moore et al., 2020) and Roadmap Epigenomics (Kundaje et al., 2015) Consortia using the UCSC Genome Browser (Kent et al., 2002): ENCFF918FRW_ENCFF748XLQ_ENCFF313DOD (cCREs, GRCh38); ENCFF918FRW_ENCFF748XLQ_ENCFF313DOD_ENCFF313DOD (H3K27ac ChIP-seq, GRCh38); ENCFF918FRW_ENCFF748XLQ_ENCFF313DOD_ENCFF748XLQ (H3K4me3 ChIP-seq, GRCh38); ENCFF918FRW_ENCFF748XLQ_ENCFF313DOD_ENCFF918FRW (DNase-seq, GRCh38); E004 H1 BMP4 Derived Mesendoderm Cultured Cells ImputedHMM (hg19). Hi-C interactions from H1 mesendoderm cells (Kundaje et al., 2015) and TADs were visualized with the 3D Interaction Viewer and Database (http://3div.kr).
 
-## Gene and gene set analysis
+### Gene and gene set analysis
 
 MAGMA (version 1.6; de Leeuw et al., 2015) was used to test the joint association of all variants within a particular gene or gene set using the single-variant seqGWAS summary statistics. Aggregation of variants increases power to detect multiple weaker associations and can test for association with specific biological or functional pathways. MAGMA uses a multiple regression approach to account for LD between variants, using a reference panel derived from 10,000 Europeans in the UK Biobank (release 2b). Variants from the seqGWAS were assigned to 18,757 protein coding genes (Ensembl build 85) with genome-wide significance defined as p=2.67 × 10–6 (0.05/18,757). Competitive gene set analysis was then performed for 5497 curated gene sets and 9986 Gene Ontology (GO) terms from MsigDB (version 7.0; Liberzon et al., 2015) using the results of the gene analysis. Competitive analysis tests whether the joint association of genes in a gene set is stronger than a randomly selected set of similarly sized genes. Bonferroni correction was applied for the total number of tested gene sets (p=0.05/15,483=3.23 × 10–6).
 
-## Identification of TFBS
+### Identification of TFBS
 
 The JASPAR 2020 (Fornes et al., 2020) CORE collection track (UCSC Genome Browser [Kent et al., 2002], updated 2019-10-13) was utilized to identify significant (p<10–4) predicted TFBS that might intersect with the lead variants. The JASPAR database consists of manually curated, non-redundant, experimentally defined TF-binding profiles for 746 vertebrates, of which 637 are associated with human TF with known DNA-binding profiles. Sequence logos based on position weight matrices of the DNA-binding motifs were downloaded from JASPAR 2020 (Fornes et al., 2020).
 
-## GWAS and PheWAS associations
+### GWAS and PheWAS associations
 
 The NHGRI-EBI GWAS Catalog (MacArthur et al., 2017) and PheWAS data from the UK Biobank (https://pheweb.org/UKB-SAIGE) were interrogated to determine known associations of the lead variants. Summary statistics were downloaded from the NHGRI-EBI GWAS Catalog (MacArthur et al., 2017) for study GCST002890 (Berndt et al., 2015) on 2021-03-17. PheWAS statistics were generated using imputed data from White British participants in the UK Biobank using SAIGE, adjusting for genetic relatedness, sex, birth year, and the first four principal components.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Human embryonic tissues, collected after maternal consent and ethical approval (REC18/NE/0290), were sourced from the Medical Research Council and Wellcome Trust Human Developmental Biology Resource (https://www.hdbr.org/). Tissue sections were immunostained, as we described previously (Kolvenbach et al., 2019). Sections were immunostained with the following primary antibodies: TBX5 (https://www.abcam.com/tbx5-antibody-ab223760.html) raised in rabbit; PTK7 (https://www.thermofisher.com/antibody/product/PTK7-Antibody-Polyclonal/PA5-82070) raised in rabbit; and uroplakin 1B (https://www.abcam.com/uroplakin-ibupib-antibody-upk1b3081-ab263454.html) raised in mouse. Primary antibodies were detected with appropriate second antibodies and signals generated with a peroxidase-based system.
 
-## Aggregate rare coding variant analysis
+### Aggregate rare coding variant analysis
 
 Single-variant association testing is underpowered when variants are rare and a collapsing approach which aggregates variants by gene can be adopted to boost power. We extracted coding SNVs and indels with MAF <0.1% in gnomAD (Karczewski et al., 2020), annotated with one of the following: missense, in-frame insertion, in-frame deletion, start loss, stop gain, frameshift, splice donor, or splice acceptor. Variants were further filtered by CADD score (version 1.5; Rentzsch et al., 2019) using a threshold of ≥20 corresponding to the top 1% of all predicted deleterious variants in the genome. Variants meeting the following quality control filters were retained: MAC ≤20, median site-wide depth in non-missing samples >20 and median GQ ≥30. Sample-level QC metrics for each site were set to minimum depth per sample of 10, minimum GQ per sample of 20, and ABratio p-value >0.001. Variants with significantly different missingness between cases and controls (p<10–5) or >5% missingness overall were excluded. We employed SAIGE-GENE (version 0.42.1; Zhou et al., 2016b) to ascertain whether rare coding variation was enriched in cases on a per-gene basis exome-wide. Like SAIGE, SAIGE-GENE utilizes a GLMM to correct for population stratification and cryptic relatedness as well as a saddlepoint approximation and efficient resampling adjustment to account for the inflated type 1 error rates seen with unbalanced case-control ratios. It combines single-variant score statistics and their covariance estimate to perform SKAT-O (Lee et al., 2012) gene-based association testing, upweighting rarer variants using the β(1,25) weights option. SKAT-O (Lee et al., 2012) is a combination of a traditional burden and variance-component test and provides robust power when the underlying genetic architecture is unknown. Sex and the top 10 principal components were included as fixed effects when fitting the null model. Chromosome X analysis was performed in males only. A Bonferroni adjusted p-value of 2.58×10–6 (0.05/19,364 genes) was used to determine the exome-wide significance threshold.
 
-## SV analysis
+### SV analysis
 
 SVs (>50 bp) that intersect by a minimum of 1 bp with (a) at least one exon ([GENCODE version 29 [Frankish et al., 2019]]) or (b) an ENCODE (Moore et al., 2020) cCRE were extracted using BEDTools (version 2.27.1) (Quinlan and Hall, 2010). Variants were retained if they fulfilled the following quality filters: Q-score ≥Q10 (CANVAS [Roller et al., 2016]) or QUAL ≥20, GQ ≥15, and MaxMQ0Frac <0.4 (MANTA [Chen et al., 2016a]). Variants without paired read support, inconsistent ploidy, or depth >×3 the mean chromosome depth near breakends were excluded.
 

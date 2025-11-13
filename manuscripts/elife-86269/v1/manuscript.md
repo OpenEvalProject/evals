@@ -19,19 +19,19 @@
 
 ### Affiliations
 
-1. https://ror.org/03v76x132 Dept. of Molecular Cellular and Developmental Biology, Yale University New Haven United States
-2. https://ror.org/03v76x132 Dept. of Biomedical Engineering, Yale University New Haven United States
-3. https://ror.org/05dk0ce17 Washington State University, SMB Pullman United States
+1. Dept. of Molecular Cellular and Developmental Biology, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+2. Dept. of Biomedical Engineering, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+3. Washington State University, SMB Pullman United States ([ROR:05dk0ce17](https://ror.org/05dk0ce17))
 4. Sunnycrest Bioinformatics Flemington United States
 5. Dept. of Surgery (Plastic), Yale School of Medicine New Haven United States
-6. https://ror.org/05tszed37 Dept of Podiatric Surgery, Yale New Haven Hospital New Haven United States
+6. Dept of Podiatric Surgery, Yale New Haven Hospital New Haven United States ([ROR:05tszed37](https://ror.org/05tszed37))
 7. Dept. of Dermatology, Yale School of Medicine New Haven United States
 
 † Corresponding author
 
 ## Abstract
 
-Apoptosis and clearance of apoptotic cells via efferocytosis are evolutionarily conserved processes that drive tissue repair. However, the mechanisms by which recognition and clearance of apoptotic cells regulate repair are not fully understood. Here, we use single-cell RNA sequencing to provide a map of the cellular dynamics during early inflammation in mouse skin wounds. We find that apoptotic pathways and efferocytosis receptors are elevated in fibroblasts and immune cells, including resident Lyve1 + macrophages, during inflammation. Interestingly, human diabetic foot wounds upregulate mRNAs for efferocytosis pathway genes and display altered efferocytosis signaling via the receptor Axl and its ligand Gas6 . During early inflammation in mouse wounds, we detect upregulation of Axl in dendritic cells and fibroblasts via TLR3-independent mechanisms. Inhibition studies in vivo in mice reveal that Axl signaling is required for wound repair but is dispensable for efferocytosis. By contrast, inhibition of another efferocytosis receptor, Timd4, in mouse wounds decreases efferocytosis and abrogates wound repair. These data highlight the distinct mechanisms by which apoptotic cell detection coordinates tissue repair and provides potential therapeutic targets for chronic wounds in diabetic patients.
+Apoptosis and clearance of apoptotic cells via efferocytosis are evolutionarily conserved processes that drive tissue repair. However, the mechanisms by which recognition and clearance of apoptotic cells regulate repair are not fully understood. Here, we use single-cell RNA sequencing to provide a map of the cellular dynamics during early inflammation in mouse skin wounds. We find that apoptotic pathways and efferocytosis receptors are elevated in fibroblasts and immune cells, including resident Lyve1+ macrophages, during inflammation. Interestingly, human diabetic foot wounds upregulate mRNAs for efferocytosis pathway genes and display altered efferocytosis signaling via the receptor Axl and its ligand Gas6. During early inflammation in mouse wounds, we detect upregulation of Axl in dendritic cells and fibroblasts via TLR3-independent mechanisms. Inhibition studies in vivo in mice reveal that Axl signaling is required for wound repair but is dispensable for efferocytosis. By contrast, inhibition of another efferocytosis receptor, Timd4, in mouse wounds decreases efferocytosis and abrogates wound repair. These data highlight the distinct mechanisms by which apoptotic cell detection coordinates tissue repair and provides potential therapeutic targets for chronic wounds in diabetic patients.
 
 ## Introduction
 
@@ -45,9 +45,17 @@ To understand the cellular and molecular mechanisms by which apoptosis regulates
 
 ## Results
 
-## Dramatic transcriptional heterogeneity during early skin inflammation after injury
+### Dramatic transcriptional heterogeneity during early skin inflammation after injury
 
 To assess cellular and molecular heterogeneity of the wound bed during the inflammatory phase, we performed scRNA-seq on cells isolated from 4 mm full-thickness biopsy punches on mouse back skin at 24 hr and 48 hr after injury (Shook et al., 2016). To ensure that we also captured the immediately adjacent tissue as well as cells that may have migrated into the wound site, we used a 6 mm biopsy punch to collect the tissue before isolating cells using enzymatic digestion (Figure 1A). By training a neural network to identify cell types based on expression of established marker genes (as in Wasko et al., 2022; Figure 1—figure supplement 1A–B), we classified four major cell types in the scRNA-seq data, including monocytes/macrophages (Mono/MO), neutrophils (Neut), dendritic cells (DC), and fibroblasts (FB) at both timepoints (Figure 1B–E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of experimental design. (B) UMAP plot of single-cell RNA sequencing (scRNA-seq) data for cells from 24 hr wound beds in murine back skin. (C) UMAP plot of scRNA-seq data for cells from 48 hr wound beds in murine back skin. (D) UMAP plot of scRNA-seq data for cells from both 24 hr and 48 hr wound beds in murine back skin annotated by timepoint. (E) Top: UMAP plot of scRNA-seq data for cells from 24 hr and 48 hr wound beds annotated by cell identity. Bottom: Heatmap of differentially expressed marker genes in 24 hr and 48 hr wound beds. (F) Gene ontology terms enriched in each cell type compared to the full dataset. (G) Heatmap of differentially expressed apoptosis-related genes from 24 hr and 48 hr wound beds. (H) Immunostaining for cleaved caspase 3 (Act. Casp3) (green) in wound bed 24 hr after injury. Arrow indicates cleaved caspase 3+ cells. (I) Immunostaining for CD11c (green) and cleaved caspase 3 (red) in wound bed 24 hr after injury. Arrows indicate double-positive CD11c+ cleaved caspase 3+ cells. (J) Immunostaining for GFP (green) and cleaved caspase 3 (red) in PdgfraCreER;mTmG wound bed 24 hr after injury. Arrow indicates double-positive GFP+ cleaved caspase 3+ cells. * indicates scab. Scale bars = 500 µm. In E and G, expression indicates scaled log-normalized mRNA counts.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) UMAP plot of scRNA-seq data for cells from 24 hr and 48 hr wound beds in murine back skin annotated by cell identity. (B) Feature plots showing expression of two marker genes for each major cell type. (C) Number of cells identified by cell type at 24 hr and 48 hr. (D) Proportion of total cells represented by 24 hr or 48 hr for each major cell type. (E) Venn diagrams representing significantly upregulated genes shared by both timepoints or specific to 24 hr or 48 hr for each major cell type. (F) Top, Bottom left: Immunostaining for cleaved caspase 3 (green) in 48 hr wound bed. Arrow indicates cleaved caspase 3+ cell. * indicates scab. Scale bar = 500 µm. Bottom right: Quantification of cleaved caspase 3+ cells per mm2 in the wound bed. *p<0.05.
 
 Surprisingly, the 24 hr and 48 hr samples clustered separately with minimal overlap, suggesting that dramatic changes occurred in the first 2 days of inflammation (Figure 1B–D). The absolute number of macrophages and neutrophils increased >2-fold over this interval (Figure 1—figure supplement 1C). While approximately 70% of each of the three immune cell populations was collected at 48 hr, the majority of fibroblasts were found in the 24 hr population (Figure 1—figure supplement 1D). We also found that genes upregulated by each cell type were markedly different between timepoints (Figure 1—figure supplement 1E), indicating major changes to expression patterns in the same cell type over time.
 
@@ -55,9 +63,17 @@ To explore the changes in the major cell types in early wound beds (fibroblasts,
 
 Since apoptosis also involves post-transcriptional activation of several proteins, we sought to confirm that apoptosis occurred during early skin wound inflammation in vivo. Sections of mouse wounds at 24 hr (Figure 1H) and 48 hr (Figure 1—figure supplement 1F) were stained with antibodies (Abs) against cleaved (active) caspase 3 to detect activation of apoptosis. We found that significantly more cleaved caspase 3+ cells were present in 48 hr wounds (Figure 1—figure supplement 1F). We also detected cleaved caspase 3 in CD11c+ dendritic cells (Figure 1I) and Pdgfra+ fibroblasts (Figure 1J) in 24 hr wound beds. Overall, these data suggest that apoptosis occurs during inflammation after skin injury.
 
-## Apoptosis recognition receptors, ligands, and downstream factors are expressed in the wound bed
+### Apoptosis recognition receptors, ligands, and downstream factors are expressed in the wound bed
 
 Given the upregulation of mRNAs associated with apoptosis and the relatively low level of apoptotic cells in early wound beds, we hypothesized that efficient efferocytosis clears apoptotic cells during inflammation. Initially, we inspected mRNA levels of efferocytosis receptors, their ligands, and downstream factors in scRNA-seq data from 24 hr and 48 hr wounds (Figure 2A). Interestingly, fibroblasts upregulated several genes encoding efferocytosis receptors (Tyro3, Axl, Itgav, and Slc7a11), as well as genes encoding for ligands Gas6, Pros1, C3, C4b, and Mfge8. DCs, macrophages, and neutrophils also upregulated several receptors that mediate detection of apoptotic cells. Macrophages were enriched for the downstream activators Arg1 and Retnla, whereas other cell types upregulated Socs1 and Socs3, which are downstream of the TAM receptors (Rothlin et al., 2007).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig2-v1.jpg)
+
+**Figure 2.:** (A) Heatmap of differentially expressed efferocytosis pathway genes in 24 hr and 48 hr wound beds. Expression indicates scaled log-normalized mRNA counts. (B) Feature plots showing expression of Gas6, Lyve1, Timd4, and Retnla with Lyve1+ region highlighted. (C) Immunostaining for GFP (green) and Lyve1 (red) in Lyz2CreER;mTmG wound bed 24 hr after injury. Arrows indicate Lyve1+ cells. (D) Immunostaining for Gas6 (green) and Lyve1 (red) in wild-type (WT) wound bed 24 hr after injury. Arrows indicate double-positive Gas6+ Lyve1+ cells. (E) Immunostaining for Timd4 (green) in WT wound bed 24 hr after injury. Arrows indicate Timd4+ cells. (F) Immunostaining for CD11c (green) and Axl (red) in wound bed 24 hr after injury. Arrows indicate double-positive CD11c+ Axl+ cells. (G) Immunostaining for GFP (green) and Axl (red) in PdgfraCreER;mTmG wound bed 24 hr after injury. Arrows indicate double-positive GFP+ Axl+ cells. (H) Schematic of experimental design. (I) Immunostaining for CFSE-stained apoptotic neutrophils in wound beds 1 and 5 days after injury. (J) Example of CFSE-stained whole neutrophil in the wound bed. Scale bar = 100 µm. (K) Example of active efferocytosis of CFSE-stained whole neutrophil in the wound bed. Scale bar = 100 µm. (L) Quantification of instances of efferocytosis observed per mm2 in the wound bed. (M) Quantification of percentage of all stained cells that are undergoing efferocytosis in the wound bed. In L and M, n=6, error bars indicate mean ± SEM, unpaired t-test, *p<0.05, **p<0.01. * indicates scab. In C–I, scale bars = 500 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunostaining for GFP (green) and Lyve1 (red) in Lyz2CreERmTmG wound bed-adjacent skin 24 hr after injury. Arrows indicate Lyve1+ cells, * indicates scab. Scale bar = 500 µm. (B) mRNA expression of genes relative to NW control at 24 hr and 48 hr after injury. Red line indicates normalized control mRNA levels. Error bars indicate mean ± SEM, n=3 independent experiments. Statistics using unpaired t-test are indicated; *p<0.05, **p<0.01, ***p<0.001.
 
 We noted that Axl’s ligand, Gas6, and several other genes involved in efferocytosis were expressed predominantly in the fibroblast cluster, but were also lowly expressed in the monocyte/macrophage cluster (Figure 2A). Examining the UMAP plot to determine the heterogeneity of efferocytosis gene expression within individual cell types, we observed that Gas6 was highly expressed by a specific subset of monocyte/macrophage cells. These cells also overexpressed the resident macrophage marker Lyve1, the apoptosis receptor Timd4, and Retnla, a downstream factor of efferocytosis (Figure 2B), indicating that they may play a role in apoptosis detection and response in wound healing. Lyve1 has been identified as a marker for resident macrophages, which are distinct from the majority of wound macrophages that differentiate from bone marrow-derived monocytes and are recruited to the wound after injury (Lim et al., 2018; Wang et al., 2020). To confirm the presence of Lyve1+ resident cells in vivo, we used a Lyz2CreER;mTmG mouse model, in which myeloid cells in the bone marrow can be induced to express GFP prior to injury, such that any GFP+ cells observed in the wound bed are interpreted as newly recruited to the site of injury, while GFP- cells are interpreted to be resident to the skin. We observed that Lyve1 was expressed at the protein level both in wound beds (Figure 2C) and adjacent to the wound (Figure 2—figure supplement 1A) with immunofluorescence staining, and confirmed that these cells were resident rather than recruited to the wound bed after injury, since they did not express GFP. Further, we confirmed that Lyve1+ cells co-expressed Gas6 protein (Figure 2D) and that Timd4 protein (Figure 2E) was expressed in wound beds.
 
@@ -67,7 +83,7 @@ We also analyzed mRNA expression of apoptosis-related genes by qPCR to determine
 
 To analyze efferocytosis activity after injury, we intradermally injected labeled apoptotic neutrophils from bone marrow into wound beds 1, 3, and 5 days after injury. Wound beds were collected 1 hr after injections, sectioned, and imaged to quantify labeled cells (Figure 2H). We detected and quantified labeled intact neutrophils and efferocytosed neutrophils in wounds at all three timepoints (Figure 2H–M). While wounds at 5 days had significantly more cells undergoing efferocytosis (Figure 2L), the efferocytosis rate was generally constant, with a slight but nonsignificant increase at 3 days (Figure 2J). Taken together, these data indicate that the machinery for multiple efferocytosis pathways are active in the inflammatory and proliferative stages of wound healing.
 
-## Cell death signaling in human diabetic and non-diabetic wounds
+### Cell death signaling in human diabetic and non-diabetic wounds
 
 We next set out to explore whether these apoptosis and efferocytosis-related pathways were also relevant in pathological states associated with dysregulated wound healing, such as diabetes. Previous studies have indicated that apoptosis is increased in diabetic wounds, including an elevation in apoptotic lymphocytes (Arya et al., 2014). Additional studies have shown that hypoxic environments (such as those found in diabetic wounds) increase macrophage efferocytosis (Wang et al., 2023), though other studies have indicated that macrophage efferocytosis is defective in diabetic wounds (Khanna et al., 2010).
 
@@ -75,19 +91,43 @@ To analyze the expression of transcriptional changes in apoptosis and efferocyto
 
 When we compared the expression of genes associated with the efferocytosis pathway between non-diabetic and diabetic foot ulcers, we found a striking increase in overall expression of efferocytosis pathway genes in diabetic wounds compared to non-diabetic wounds (Figure 3A). In particular, the expression of AXL increased in all cell types in diabetic wounds, while expression of its ligand GAS6 increased in all cell types with the exception of basal keratinocytes and mast cells.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig3-v1.jpg)
+
+**Figure 3.:** (A) Heatmaps of differentially expressed genes related to efferocytosis in non-diabetic and diabetic wound beds. Expression indicates scaled log-normalized mRNA counts. (B) CellChat circle plot diagrams showing GAS6-AXL communication in non-diabetic and diabetic wound beds. (C) Left: Immunostaining for CD68 (green) and Gas6 (red) in non-diabetic foot wound. Right: Immunostaining for CD68 (green) and Gas6 (red) in diabetic foot ulcer. Scale bars = 50 µm. (D) Quantification of Gas6 corrected total fluorescence. Error bars indicate mean ± SEM. n=2 for Non-diabetic, and 6 for diabetic foot wound; ns, nonsignificant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Heatmaps of differentially expressed genes related to efferocytosis in non-diabetic and diabetic wound beds. Expression indicates scaled log-normalized mRNA counts.
+
 To further investigate the AXL/GAS6 signaling pathway, we analyzed these data with CellChat, which quantitatively infers intercellular signaling networks from scRNA-seq data (Jin et al., 2021). This analysis revealed altered signaling between AXL and its ligand GAS6 between the two groups. In non-diabetic patient wounds, GAS6 expression by several cell types, including monocytes/macrophages and fibroblasts, stimulated signaling via AXL receptors on fibroblasts and pericytes. However, in diabetic patient wounds, GAS6 and AXL expression was more robust in several cell types. Notably, monocytes/macrophages increased GAS6 stimulation and newly expressed AXL to receive pathway signaling in diabetic wounds (Figure 3B).
 
 To validate these findings, we stained sections of non-diabetic foot wounds and diabetic foot ulcers with Abs against Gas6 and CD68, a macrophage marker. Indeed, we found that Gas6 staining was more prevalent in diabetic skin sections, and that it colocalized with the macrophage marker (Figure 3C). Further, when quantified via corrected total fluorescence (CTF), more Gas6 staining was observed in diabetic samples, though this was not significant. This supported the CellChat results, indicating that macrophages express Gas6 more highly in diabetic wounds. Taken together, these data indicate that diabetic wounds may activate and modulate GAS6-AXL signaling, and suggest a potential avenue for future research.
 
-## TLR3 stimulation is sufficient, but not necessary, for Axl upregulation in skin
+### TLR3 stimulation is sufficient, but not necessary, for Axl upregulation in skin
 
 Next, we sought to examine the molecular mechanisms that induce Axl mRNA expression after injury. Prior work showed that Axl expression was induced by toll-like receptor 3 (TLR3) stimulation (Rothlin et al., 2007) and that TLR3 is essential for skin wound repair (Lin et al., 2011). Thus, we experimentally tested the role of TLR3 signaling in Axl expression in the skin. scRNA-seq of early wounds revealed that TLR mRNAs are highly expressed in neutrophils and macrophages with a few expressed in dendritic cells and fibroblasts (Figure 4A). Interestingly, TLR3 is unique among the TLRs in that it is expressed by both dendritic cells and fibroblasts, which also express high levels of Axl in the single-cell dataset (Figure 2A). To determine if TLR3 stimulation upregulates Axl expression in the skin, we injected the synthetic double-stranded RNA polyinosinic:polycytidylic acid (poly(I:C)) or a PBS control in naive mouse back skin of either wild-type (WT) or TLR3 knockout (KO) mice. We collected the injection site and surrounding area after 2 hr and processed the skin samples for qPCR and immunostaining (Figure 4B). We first analyzed cytokine mRNA expression, a target of TLR3 signaling that promotes inflammation (Rothlin et al., 2007). While several inflammatory cytokines were not induced in skin injected with poly(I:C) (Figure 4—figure supplement 1A), interferon (IFN)-β (Ifnb) was upregulated in WT mice injected with poly(I:C) but not in the skin of TLR3 KO mice (Figure 4C), confirming the specificity of poly(I:C) for activation of TLR3 in the skin (Alexopoulou et al., 2001). Axl protein (Figure 4D) and mRNA (Figure 4E) were induced in naive skin upon poly(I:C) injection, and Axl mRNA induction and protein expression were abrogated in skin of TLR3 KO mice (Figure 4E and Figure 4—figure supplement 1B). Axl protein expression around the dermal injection site was quantified via CTF (Figure 4F), confirming these results. Taken together, these data indicate that TLR3 signaling is sufficient to activate Axl expression in naive skin.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig4-v1.jpg)
+
+**Figure 4.:** (A) Heatmap of differentially expressed TLR genes in 24 hr and 48 hr wound beds. Expression indicates scaled log-normalized mRNA counts. (B) Schematic of injection and collection protocol. (C) mRNA expression of interferon genes relative to respective PBS injection. Red line indicates normalized control mRNA levels. Error bars indicate mean ± SEM, unpaired t-test, n=4-6 mice; **p<0.01. ns, nonsignificant. (D) Immunostaining for Axl (red) in naive back skin injected with PBS or Poly(I:C). Arrows indicate Axl+ cells. * indicates injection site. (E) mRNA expression of Axl relative to respective PBS injection control 2 hr after injection. Red line indicates normalized control mRNA levels. Error bars indicate mean ± SEM, unpaired t-test, n=4-8 mice; ***p<0.001. ns, nonsignificant. (F) Quantification of corrected total fluorescence for Axl immunostaining in a 1 mm square containing the injection site. n=6-10 mice; Error bars indicate mean ± SEM, one-way ANOVA with multiple comparisons, *p<0.05. (G) Schematic of injection and collection protocol. (H) Immunostaining for Axl (red) in naive back skin injected with PBS or IFNB. Arrows indicate Axl+ cells. * indicates injection site. (I) Immunostaining for Axl (red) in wound beds 24 hr after injury in wild-type (WT) or TLR3 knockout (KO) mice. Arrows indicate Axl+ cells. * indicates scab. Scale bars = 500 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) mRNA expression of cytokine genes relative to respective PBS injection. Red line indicates normalized control mRNA levels. Error bars indicate mean ± SEM, n=4-6 mice. (B) Immunostaining for Axl (red) in naive back skin of TLR3 KO mice injected with PBS or Poly(I:C). Arrows indicate Axl+ cells. * indicates injection site. Scale bar = 500 µm.
+
 Since Ifnb was elevated by TLR3 signaling in naive skin, we determined whether injecting recombinant IFN-β intradermally into naive mouse back skin was sufficient to induce Axl protein expression (Figure 4G). Two hours after injection, Axl protein was detected by immunostaining in skin injected with IFN-β but not control skin (Figure 4H and F). Next, to determine if TLR3 activation was necessary for Axl expression in skin wounds, we analyzed Axl expression in wound beds of TLR3 KO mice. In contrast to our previous results in naive skin, Axl protein expression was stimulated in TLR3 KO wound beds similar to WT mice (Figure 4I). Thus, these data suggest that while TLR3 is sufficient to drive Axl expression in naive skin, additional mechanisms drive Axl upregulation within skin wounds in its absence.
 
-## Axl is required for skin wound healing
+### Axl is required for skin wound healing
 
 Based on our data showing upregulation of Axl mRNA and protein expression in wound beds, even in the absence of TLR3, we hypothesized that Axl may play a role in wound healing. To examine whether Axl signaling was required for wound repair, we intraperitoneally injected mice 3 hr prior to injury with either a control IgG Ab or anti-Axl function blocking Ab, which binds to Axl’s extracellular domain and blocks Axl-mediated viral infection (Retallack et al., 2016), and has been shown to inhibit Axl activity in vitro (Bauer et al., 2012; Figure 5A). Since Axl activity upregulates Axl mRNA expression in a positive feedback loop (Brand et al., 2014), we analyzed Axl mRNA expression in wounds of Ab-treated mice. While we saw a nonsignificant downregulation of Axl mRNA at 1 day (D) post injury, Axl mRNA was significantly downregulated in skin wounds treated with anti-Axl Ab on day 5 compared to control IgG Ab injected wounds (Figure 5B), indicating that the anti-Axl Ab treatment reduced Axl signaling in skin wounds.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of experimental design. (B) Axl mRNA expression normalized to respective IgG Ab control. Error bars indicate mean ± SEM, one-way ANOVA with multiple comparisons, n=4 mice, *p<0.05. (C) Representative flow cytometry gates used to analyze cells isolated from wounds 3 days after injection and injury. Live singlet CD45+ cells were identified as macrophages, neutrophils, or dendritic cells via fluorescent antibody staining. (D) Top: Quantification of CD45+ cells by cell type in anti-Axl Ab or IgG Ab-treated wound beds 3 days after injury. Error bars indicate mean ± SEM, one-way ANOVA with multiple comparisons, n=4 mice, ns, nonsignificant. Bottom: Quantification of Axl+ cells by cell type in anti-Axl Ab or IgG Ab-treated wound beds 3 days after injury. Error bars indicate mean ± SEM, two-way ANOVA with multiple comparisons, n=4 mice, **p<0.01. ns, nonsignificant. (E) Left: Hematoxylin and eosin (H&E) staining of wound beds 5 days after antibody injection and injury. Center: Immunostaining for aSMA (green) in wound beds 5 days after antibody injection and injury. Right: Immunostaining for CD31 (green) in wound beds 5 days after antibody injection and injury. * indicates scab. (F) Top: Quantification of aSMA corrected total fluorescence. Error bars indicate mean ± SEM, unpaired t-test, n=10 mice, *p<0.05. Bottom: Quantification of CD31+ pixels in wound bed. Error bars indicate mean ± SEM, unpaired t-test, **p<0.01. Scale bars = 500 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Left: Immunostaining for TUNEL (green) in wound beds injected with anti-Axl Ab or IgG Ab control 1 day after injury. Arrows indicate TUNEL+ cells. * indicates scab. Scale bars = 500 µm. Right: Quantification of TUNEL+ cells per 106 square pixels in 1-day wounds. Error bars indicate mean ± SEM. ns, nonsignificant. (B) Quantification of cleaved caspase 3+ cells per 106 square pixels in 3- and 5-day wounds. Error bars indicate mean ± SEM. ns, nonsignificant. (C) mRNA expression of genes involved in TAM receptor signaling and cytokines relative to IgG Ab control 1 and 5 days after injury. Red line indicates normalized control mRNA levels for respective IgG control. Error bars indicate mean ± SEM, one-way ANOVA with multiple comparisons, *p<0.05, **p<0.01, ***p<0.001. (D) Representative fluorescence-activated single-cell sorting (FACS) dot plots of gating strategy to identify single cells, CD45+ immune cells, Axl+ cells, and immune cell populations. (E) Left: Immunostaining for ITGA6 (green) in wound beds 5 days after antibody injection and injury. Right: Quantification of % re-epithelialization for 5-day wound beds. Error bars indicate mean ± SEM, ns, nonsignificant.
 
 Next, we examined the effect of Axl inhibition on apoptotic cell clearance in skin wounds. TUNEL+ cells were present but rare in both anti-Axl Ab and IgG Ab-treated 1-day wounds (Figure 5—figure supplement 1A). Additional staining in sections from wounds 3 and 5 days after injury also showed no significant difference in cleaved (active) caspase 3+ cells in anti-Axl Ab and IgG Ab-treated wounds (Figure 5—figure supplement 1B). Further, we detected no significant changes to gene expression of selected members of the efferocytosis signaling pathway or common inflammatory cytokines 1 day after injury, indicating no major inflammatory defects (Figure 5—figure supplement 1C). Thus, additional efferocytosis mechanisms, potentially including other members of the TAM family, likely clear apoptotic cells in early skin wounds despite Axl inhibition.
 
@@ -97,9 +137,17 @@ Despite the relatively normal inflammatory cell numbers at day 3 after injury, w
 
 We observed significant changes in gene expression at 5 days after injury in wounds lacking Axl activity, including a significant downregulation of Arg1, Tgfb, and Il1a, and significant upregulation of Ifnb, Socs1, and Socs3 upon Axl inhibition (Figure 5—figure supplement 1C). Taken together, these changes suggest that Axl inhibition impairs proper healing, resulting in significant defects to revascularization and fibroblast repopulation.
 
-## Timd4 function is required for normal skin repair
+### Timd4 function is required for normal skin repair
 
 To further examine the role of efferocytosis receptors in skin wound repair, we abrogated the function of a member of the TIM family of receptors, Timd4. Intraperitoneal injection of a function blocking anti-Timd4 Ab effectively blocks efferocytosis in an atherosclerosis mouse model (Foks et al., 2016). Strikingly, we found that wounds of mice treated with anti-Timd4 Ab displayed significantly more TUNEL+ apoptotic cells in 1- and 5-day wound beds compared to wounds of IgG Ab-treated mice (Figure 6A–B). Similarly, we observed an increase in cleaved caspase 3+ cells in wounds of anti-Timd4 Ab-treated mice (Figure 6—figure supplement 1A). While this does not preclude the possibility of an increase in apoptosis upon Ab treatment, it is consistent with a defect to efferocytosis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig6-v1.jpg)
+
+**Figure 6.:** (A) Immunostaining for TUNEL (green) in wound beds injected with anti-Timd4 antibody (Ab) or IgG Ab control 1, 3, or 5 days after injury. Arrows indicate TUNEL+ cells. * indicates scab. (B) Quantification of TUNEL+ cells per mm2 in the wound bed. Error bars indicate mean ± SEM, one-way ANOVA, n=3-7 mice; *p<0.05, ns, nonsignificant. (C) Hematoxylin and eosin (H&E) staining of wound beds 5 days after antibody injection and injury. (D) Immunostaining for aSMA (red) in wound beds 5 days after antibody injection and injury. (E) Immunostaining for CD31 (green) in wound beds 5 days after antibody injection and injury. (F) Left: Quantification of aSMA corrected total fluorescence. Error bars indicate mean ± SEM. ns, nonsignificant. Right: Quantification of CD31+ pixels in wound bed. Error bars indicate mean ± SEM, unpaired t-test, n=6-9 mice; *p<0.05. (G) mRNA expression of genes relative to respective IgG Ab control. Red line indicates normalized control mRNA levels. Error bars indicate mean ± SEM, n=4-6 mice; unpaired t-test *p<0.01, **p<0.01. Scale bars = 500 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/86269/elife-86269-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Immunostaining for cleaved caspase 3 (red) in wound beds 5 days after antibody injection and injury. (B) Immunostaining for ITGA6 (green) in wound beds 5 days after antibody injection and injury. (C) Quantification of % re-epithelialization for 5-day wound beds. Error bars indicate mean ± SEM. n=3 mice; * indicates scab. Scale bars = 500 µm.
 
 Inhibition of Timd4 resulted in qualitative defects in granulation tissue in H&E-stained sections of 5-day wounds (Figure 6C). Immunostaining of wound sections with Abs against aSMA (Figure 6D and F) and ITGA6 (Figure 6—figure supplement 1B–C) did not indicate significant changes to either fibroblast repopulation or re-epithelialization, respectively. However, staining for CD31 (Figure 6E–F) revealed a significant defect to revascularization in wounds of anti-Timd4 Ab mice compared to wounds of IgG Ab-treated mice, which indicates a defect to proper healing in the proliferative phase of wound repair.
 
@@ -121,45 +169,45 @@ In summary, our data implicate apoptosis recognition receptors as an important r
 
 ## Methods
 
-## Animals
+### Animals
 
 WT C57BL/6J mice (Strain #:000664), B6;129S1-Tlr3tm1Flv/J (TLR3 KO) mice (Strain #:005217), Lyz2tm1(cre/ERT2)Grtn/J (Lyz2CreER) mice (Strain #:031674), and B6.129(Cg)-Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J (mTmG) mice (Strain #:007676) were purchased from The Jackson Laboratories. PdgfraCreER mice were developed in the laboratory of B. Hogan (Duke University, Durham, NC, USA). Mice were maintained through routine breeding in an Association for Assessment and Accreditation of Laboratory Animal Care (AALAC)-accredited animal facility at Yale University (Protocol # 11248). Animals were maintained on a standard chow diet ad libitum (Harlan Laboratories, 2018S) in 12 hr light/dark cycling. Up to five injured mice were housed per cage. All experimental procedures were approved and in accordance with the Institutional Animal Care and Use Committee. For experiments using intraperitoneal (i.p.) tamoxifen administration, 100 μL of 30 mg/mL tamoxifen (Sigma-Aldrich) in sesame oil was injected daily for 3 days prior to experiments.
 
-## Human subjects
+### Human subjects
 
 Diabetic and non-diabetic adults with chronic foot ulcers that were undergoing skin wound debridement were consented to donate discarded tissue for this study (IRB approval # 1609018360). The diabetic foot ulcer specimens for scRNA-seq were obtained from five individuals diagnosed with Type 2 diabetes. The non-diabetic foot wound specimens for scRNA-seq were obtained from four individuals, two of whom provided multiple samples. The diabetic foot ulcer specimens for immunofluorescence staining were obtained from five individuals diagnosed with Type 2 diabetes and one individual diagnosed with Type 1 diabetes. The non-diabetic foot wound specimens for immunofluorescence staining were obtained from two individuals. Demographic information listed in Supplementary file 1 .
 
-## Wounding
+### Wounding
 
 Seven- to 9-week-old male mice were wounded during the telogen phase of hair cycling. Mice were anesthetized using isoflurane and six full-thickness wounds, at least 4 mm apart, were made on shaved back skin using a 4 mm biopsy punch (Millitex). Animals were sacrificed at noted intervals after injury and wound beds were processed for subsequent analysis.
 
-## Single-cell digestion of mouse wounds
+### Single-cell digestion of mouse wounds
 
 Wound beds were digested for scRNA-seq analysis in a buffer of Roswell Park Memorial Institute (RPMI) medium with glutamine (Gibco), Liberase Thermolysin Medium (TM) (Roche), DNase, N-2-hydroxyethylpiperazine-N-2-ethane sulfonic acid (Gibco), sodium pyruvate (Gibco), non-essential amino acids (Gibco), and antibiotic-antimycotic (100X) (Gibco). Blood cells were removed with ammonium-chloride-potassium (ACK) lysing buffer (Gibco). Cells were resuspended in Dulbecco’s Modified Eagle’s Medium (DMEM) (ATCC) with 0.1% bovine serum albumin (BSA) for analysis.
 
-## Human skin collection and processing for scRNA-seq
+### Human skin collection and processing for scRNA-seq
 
 Skin wound specimens were collected at the clinical setting in PBS with antibiotic-antimycotic (100X) (Gibco), and transported to the lab on ice for processing. All specimens were processed within 3 hr of collection. The specimen was cleaned by immersion with 10% betadine, 70% ethanol, and PBS. Excess blood and subcutaneous fat were removed, and skin was mechanically minced before being digested in an enzyme cocktail consisting of dispase (Stemcell Technologies), collagenase I (Worthington), and collagenase II (Worthington) in 0.25% trypsin-EDTA (Gibco). Blood cells were removed with ACK lysing buffer (Gibco). Cells were resuspended in DMEM (ATCC) with 0.1% BSA for analysis.
 
-## Human skin collection and processing for staining
+### Human skin collection and processing for staining
 
 Human tissue sections were kept for at least 24 hr in 10% neutral buffered formalin and dehydrated in alcohol diluted in 0.9% NaCl/dH2O; the sequence being 30% EtOH, 50% EtOH, 70%EtOH. Specimens remained in 70% EtOH overnight. The following day, sections were dehydrated further in 85%, 95%, and 100% ethanol diluted in distilled water before being preserved in 50% EtOH/ 50% xylene and then 100% xylene. Tissue sections were allowed to soak in paraffin for at least 1 hr and then embedded in disposable molds with melted paraffin wax. Five µm tissue sections were obtained and adhered to charged slides for histological analysis.
 
-## Single-cell data of mouse samples
+### Single-cell data of mouse samples
 
 scRNA-seq data from 24 hr and 48 hr mouse wound beds were processed using the standard cellranger pipeline (10X Genomics). Downstream analysis was performed using the Scanpy package in Python (Wolf et al., 2018). Cells were filtered for quality control to avoid doublets and dead cells. Dimensionality reduction and downstream data visualization were completed using the Scanpy implementation of UMAP (McInnes et al., 2020) and the ShinyCell package in R (Ouyang et al., 2021), respectively. Data is presented as scaled log-normalized mRNA counts (i.e., expression).
 
 We adapted the cell-type annotation pipeline from Kumar et al., 2018, to label our sequencing data by broad cell type, as was done in Wasko et al., 2022. Differentially expressed genes (DEGs) across timepoints were calculated using the rank_genes_groups function from the Scanpy module in Python with default parameters. We then performed enrichment analysis on the top (logfoldchanges >1.5) DEGs for each group using g:Profiler (Raudvere et al., 2019), with the GO knowledgebase as the reference database.
 
-## Neutrophil injection
+### Neutrophil injection
 
 Cells were collected from WT bone marrow as previously described (Rios et al., 2017). Neutrophils were isolated using MACS Ly6G beads (Miltenyi Biotech 130-120-337). Neutrophils were stained with CFSE cell labeling kit (Abcam ab113853) for 15 min. Stained neutrophils were incubated overnight in RPMI medium to induce apoptosis. 10,000 neutrophils in 50 µL PBS or 50 µL PBS control were injected under the scab and into the wound bed of 1-, 3-, or 5-day wounded mice. Injected mice were sacrificed after 1 hr.
 
-## Single-cell data of human samples
+### Single-cell data of human samples
 
 Human scRNA-seq data from human samples were generated from 10X Genomics 3’-end single-cell gene expression V2. Analysis was performed in Scanpy (Wolf et al., 2018). Cells were filtered for doublets and dead cells for downstream analysis. Batch correction was performed to integrate cells across samples using Scanorama (Hie et al., 2019). Gene expression was scaled, log-transformed, and normalized. Dimensionality reduction was done using PCA and UMAP in Scanpy (McInnes et al., 2020). DEGs were calculated using Wilcoxon rank_genes_groups function from Scanpy. Cell-cell communication analysis and data visualization of circos plot were performed using CellChat (Jin et al., 2021). CellChat is superior to similar methods because its algorithm accounts for the roles of both signaling cofactors and protein-protein signaling in its predictions of ligand-receptor interaction (Bridges and Miller-Jensen, 2022). CellChat is available as an open-source software package in R.
 
-## Staining and imaging
+### Staining and imaging
 
 Mouse skin and wound beds were embedded in optimum cutting temperature compound (VWR) and wound beds were sectioned through their entirety to identify the center. 7 µm or 14 µm cryosections were processed as previously described (Shook et al., 2016) and stained with Abs listed below or H&E.
 
@@ -167,34 +215,34 @@ Human tissue slides were warmed in the oven at 60°C for an hour before being de
 
 Composite images were acquired using the tiles module on a Zeiss AxioImager M1 (Zeiss) equipped with an Orca camera (Hamamatsu).
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Whole wound bed samples were digested using TRIzol LS (Invitrogen). RNA was extracted from the aqueous phase using the RNeasy Plus Mini Kit (QIAGEN). cDNA was generated using equal amounts of total RNA with the Superscript III First Strand Synthesis Kit (Invitrogen) per manufacturer’s instructions. All quantitative real-time PCR was performed using SYBR green on a LightCycler 480 (Roche). Primers for specific genes are listed below. Results were normalized to β-actin as previously described.
 
-## Injections
+### Injections
 
 Seven- to 9-week-old male mice were injected intradermally with 10 µL PBS, 50 µg/mL Poly(I:C) (Invivogen), or 5 µg/mL IFNB (R&D) with 0.5% BSA. The injection site was isolated using a 6 mm biopsy punch 2 hr after injection and processed for staining.
 
 To inhibit signaling pathways in vivo, 7- to 9-week-old male mice were injected intraperitoneally with 25 µg/100 µL anti-Axl Ab (R&D), 200 µg/100 µL anti-Timd4 (BioXCell), or equivalent unit IgG control (R&D) in PBS 3 hr before wounding.
 
-## Flow cytometry
+### Flow cytometry
 
 Mouse wound beds were dissected and digested into single cells using Liberase TM (Roche) and cells were suspended in fluorescence-activated single-cell sorting (FACS) staining buffer (0.05% BSA in DMEM). Digested tissue was filtered with a 70 μm and 40 μm cell strainer prior to centrifugation. Cell suspensions were stained with Abs for 30 min on ice. Dendritic cells were defined as CD11b+ Cd11c+ cells; macrophages were defined as CD11b+ CD11c- CD64+ Ly6G- cells; neutrophils were defined as CD11b+ CD11c- CD64- Ly6G+ cells. To exclude dead cells, Sytox Blue (Invitrogen, 1:1000) was added immediately before analysis or sorting using a FACS Aria III with FACS DiVA software (BD Biosciences). Flow cytometry analysis was performed using FlowJo Software (FlowJo).
 
-## Image quantification
+### Image quantification
 
 Histological quantification for each wound bed was conducted on multiple central sections for each wound bed when available. The percentage of the wound bed covered by ITGA6 staining (re-epithelialization) and CTF for Axl (in a 1 mm square around the injection site) or aSMA (in the wound bed) were calculated using ImageJ software (National Institutes of Health, Bethesda, MD, USA) as described previously (Schmidt and Horsley, 2013; Shook et al., 2018). Revascularization (CD31+) was calculated using Adobe Photoshop to measure the total pixels positive for Ab staining divided by the total number of pixels in wound beds. Cell death was quantified using the RETINA Analysis Toolkit in FIJI (https://imagej.net/plugins/retina-analysis-toolkit).
 
-## Statistics
+### Statistics
 
 To determine significance between two groups, comparisons were made using Student’s t-test. Analyses across multiple groups were made using a one- or two-way ANOVA with Bonferroni’s post hoc using GraphPad Prism for Mac (GraphPad Software, La Jolla, CA, USA) with significance set at p<0.05. Sample sizes were determined using power analysis and taking into consideration our experience with the wounding model.
 
-## Antibodies
+### Antibodies
 
-## FACS antibodies
+### FACS antibodies
 
-## Primers
+### Primers
 
-## Inclusion and diversity
+### Inclusion and diversity
 
 One or more of the authors of this paper self-identifies as: (1) an underrepresented ethnic minority in their field of research or within their geographical location, (2) a gender minority in their field of research, and (3) a member of the LGBTQ+ community. While citing references scientifically relevant for this work, we also actively worked to promote gender balance in our reference list.

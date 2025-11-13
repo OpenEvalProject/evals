@@ -34,7 +34,7 @@ Because herpesviruses are DNA viruses that induce ROS and engage the cGAS/STING 
 
 ## Results
 
-## ROS promote herpesvirus replication in macrophages
+### ROS promote herpesvirus replication in macrophages
 
 To determine if ROS promote a cellular environment conducive to virus replication, we used menadione as a tool to manipulate the level of ROS in cells. Menadione, also known as vitamin K3, is partially reduced by complex I in the mitochondria. The resulting semiquinone then participates in a redox cycle to partially reduce molecular oxygen, which generates ROS (Iyanagi and Yamazaki, 1970). Although prolonged treatment of a high dose of menadione leads to cell death, we determined a dose of menadione in bone marrow-derived macrophages (BMDMs) that induced no significant cell death (Figure 1A). Further, short-term treatment with menadione did not induce significant cell death even at a relatively high dose (Figure 1A). Menadione treatment is reported to reduce the glutathione/glutathione disulfide (GSH/GSSG) ratio and increase accumulated cellular ROS (Chuang et al., 2002; Loor et al., 2010). Consistent with these reports, we observed decreased gene expression of glutathione-disulfide reductase (Gsr) and glutamate-cysteine ligase regulatory subunit (Gclm1) with low-dose of menadione treatment. Therefore, menadione treatment of macrophages resulted in elevated oxidant levels in the cells (Figure 1B).
 
@@ -44,9 +44,25 @@ To determine if ROS promote a cellular environment conducive to virus replicatio
 
 Because many viruses exploit ROS to facilitate their replication, we tested if increased ROS in macrophages affects growth of MHV68. To test the effects of ROS on virus replication, we first treated macrophages with low doses of menadione for sixteen hours, which increased cellular ROS while maintaining cell viability before virus infection. Macrophages were then infected with MHV68 at a multiplicity of infection (MOI) of 5 and virus growth was determined at indicated time points. Menadione treatment increased replication of MHV68 in a dose-dependent manner (Figure 1C). Hydrogen peroxide (H2O2) is a membrane permeable ROS, which induces secondary ROS production in cells upon extended treatment (Fisher, 2009). We pretreated macrophages with H2O2 at different concentrations for sixteen hours. The pretreatment was done in media containing FBS to maintain a cellular environment conducive to virus replication. We then infected macrophages with MHV68 at MOI of 5. Twenty-four hours after infection, cells expressing MHV68 lytic proteins were quantified using flow cytometry (Reese et al., 2014). Treatment with H2O2 increased the percentage of lytic protein positive cells in a dose-dependent manner (Figure 1D). Therefore, ROS induced by oxidants promoted MHV68 replication in macrophages.
 
-## ROS inhibit interferon response upon STING activation
+### ROS inhibit interferon response upon STING activation
 
 We next determined whether ROS antagonized the antiviral response to promote herpesvirus replication. Because of the central role of interferons in controlling viral replication, we asked if ROS promoted MHV68 replication by inhibiting the interferon response. We first tested whether menadione treatment impacts virus growth in wildtype (WT) control macrophages and type I interferon receptor knockout (Ifnar1-/-) macrophages (Muller et al., 1994). While menadione treatment robustly increased virus growth in WT macrophages, it did not increase virus growth in Ifnar1-/- macrophages, suggesting that menadione interfered with the interferon response during virus infection (Figure 2A). Consistent with this idea, macrophages treated with menadione had significantly fewer transcripts of Ifnb and interferon stimulated genes (ISGs), Cxcl10, Ccl5, Isg20 and Isg15 (Figure 2B and C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57837/elife-57837-fig2-v1.jpg)
+
+**Figure 2.:** (A) BMDMs isolated from WT or Ifnar-/- mice were treated with vehicle or 8 μM menadione for 16 hr, then infected with MHV68 at MOI = 5. Virus titer was determined by plaque assay at 0 hr, 10 hr, 24 hr, 48 hr and 72 hr after infection. n = 1 with three technical repeats. (B, C) BMDMs were treated with vehicle, 4 μM or 8 μM menadione for 16 hr, then infected with MHV68 at MOI = 5. Transcripts of Ifnb (B) or ISGs (Cxcl10, Isg20, Ccl5, Isg15) (C) were determined at 6 hr after infection. n = 6. (D) BMDMs were treated with vehicle or different concentrations of menadione as indicated for 30 mins, then stimulated with DMXAA at 1 μg/ml. Transcripts of Ifnb were determined at 2 hr after stimulation. n = 3. (E) BMDMs were treated with vehicle, 25 μM menadione or 25 μM menadione and 2 mM NAC for 30 mins, then stimulated with 1 μg/ml DMXAA. Transcripts of Ifnb were determined at 2 hr after stimulation. n = 3. (F) BMDMs were treated with vehicle or different concentrations of H2O2 in serum free medium for 10 mins, then stimulated with 1 μg/ml DMXAA. Transcripts of Ifnb were determined 2 hr after stimulation. n = 3. (G) BMDMs were treated with vehicle, 200 μM H2O2 for 10 mins or 200 μM H2O2 for 10 mins followed by 5 mM NAC for 30 mins, then stimulated with 1 μg/ml DMXAA. Transcripts of Ifnb were determined 2 hr after stimulation. n = 4. Data are shown as mean ± SE, statistical analysis was conducted using two-way ANOVA followed by Tukey’s multiple comparison test, only the p value for the most relevant comparisons are shown for simplicity. *, p<0.05, **, p<0.01, ***, p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57837/elife-57837-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** BMDMs were treated with 20 μM menadione for 30 min, then stimulated with 10 μg/ml ISD, 1 μg/ml poly(I:C), or 1 μg/ml poly(dA:dT). Ifnb transcripts were determined 4 hr after stimulation. n = 4. Bars represent mean ± SE. p value was calculated using two-way ANOVA followed by Tukey’s multiple comparison test, only the p value for the most relevant comparisons are shown for simplicity. ***, p<0.001, n.s., p>0.05.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57837/elife-57837-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** BMDMs were treated with 20 μM menadione for 30 min, then stimulated with 10 μg/ml 2’,3’-cGAMP. Ifnb transcripts were determined 4 hr after stimulation. n = 4. Bars represent mean ± SE. p value was calculated using two-way ANOVA followed by Tukey’s multiple comparison test, only the p value for the most relevant comparisons are shown for simplicity. ***, p<0.001, n.s., p>0.05.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57837/elife-57837-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Primary fibroblast cells were treated with 200 μM H2O2 in serum free medium, then stimulated with 2 μg/ml DMXAA. Ifnb transcript levels were determined 2 hr after stimulation. Bars represent mean ± SE. n = 2. Statistical analysis was not performed due to limited repeats.
 
 Because interferon responses are induced by multiple PRR signaling pathways after virus infection, we tested which PRR pathways were inhibited by ROS. Menadione treatment inhibited Ifnb expression upon interferon stimulatory DNA (ISD) stimulation, which engages the cGAS pathway. In contrast, menadione did not significantly alter the interferon response induced by poly I:C (sensed primarily by RIG-I) or poly dA:dT (sensed by multiple PRRs) (Figure 2—figure supplement 1). These results suggested that menadione-induced ROS selectively inhibited the cGAS-STING induced interferon response.
 
@@ -54,25 +70,57 @@ Sensing of cytosolic DNA involves the well-characterized cGAS signaling axis, wh
 
 Our next question was whether ROS inhibit interferon production in non-macrophage cell types. ROS production is a critical effector mechanism for macrophages to fend off microbial challenges (Van Acker and Coenye, 2017; Fang, 2011). However, the high levels of ROS produced by macrophages requires the existence of intrinsic protective mechanisms against ROS, which otherwise would result in premature death of these immune cells during inflammatory responses. Indeed, macrophages are equipped with multiple mechanisms that allow them to be more resistant to ROS than other cell types (Virág et al., 2019). To test whether ROS inhibition of interferon production is a general immunoregulatory mechanism that functions in cells other than macrophages, we pulsed primary fibroblasts with H2O2 at the same concentration as we used in macrophages, followed by activation of STING with DMXAA. The expression of Ifnb in fibroblasts was not repressed, but rather slightly increased by H2O2 treatment (Figure 2—figure supplement 3). This is consistent with the notion that MEFs are more susceptible to ROS, which induces mitochondrial DNA fragmentation and primes interferon response (West et al., 2015). Therefore, ROS may negatively regulate interferon response in a cell-type and concentration dependent manner.
 
-## Endogenous ROS regulate interferon response
+### Endogenous ROS regulate interferon response
 
 Because ROS are constantly generated by cellular respiration, cells contain low levels of ROS in the absence of exogenous stimulation. We therefore tested if endogenous ROS regulate the interferon response after STING activation. We first pretreated mouse macrophages with NAC to deplete endogenous ROS, then infected cells with MHV68. We observed elevated Ifnb and ISG expression with NAC treatment (Figure 3A and B). We also observed increased Ifnb transcripts when macrophages were cotreated with NAC and DMXAA, compared with DMXAA alone (Figure 3C). Peroxisomes are metabolically active organelles and are an important source of ROS in macrophages. ACOX1 is the rate-limiting enzyme that metabolizes long chain fatty acid in peroxisomes and is a major producer of H2O2. Using macrophages from Acox1-/- mice (Fan et al., 1996), we observed increased Ifnb expression upon DMXAA stimulation compared to those isolated from the WT littermate controls (Figure 3D). We did not observe an inhibition in MHV68 virus growth by NAC pretreatment or in Acox1-/- macrophages compared with wildtype (Figure 3—figure supplement 1). We speculate that the differences we observed in interferon levels caused by neutralizing basal ROS may not be sufficient to confer a viral growth difference, but these differences could be more significant in the context of a genetic background that predisposes to elevated interferon and autoimmunity.
 
-## ROS regulate interferon response by inhibiting STING polymerization
+![Figure 3.](https://cdn.elifesciences.org/articles/57837/elife-57837-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) BMDMs were treated with 2 mM NAC for 30 min, then infected with MHV68 at MOI = 5. Transcripts of Ifnb (A) or ISGs (Cxcl10, Isg20, Ccl5, Isg15) (B) were determined 6 hr after infection. n = 6. (C) BMDMs were treated with 2 mM NAC for 30 min, then stimulated with 1 μg/ml DMXAA. Transcripts of Ifnb were determined 2 hr after stimulation. n = 4. (D) BMDMs isolated from Acox1-/- or WT littermate control were stimulated with 1 μg/ml DMXAA. Transcripts of Ifnb were determined 2 hr after stimulation. n = 4. Data are shown as mean ± SE, statistical analysis was conducted using two-way ANOVA followed by Tukey’s multiple comparison test, only the p value for the most relevant comparisons are shown for simplicity. *, p<0.05, **, p<0.01, ***, p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57837/elife-57837-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) BMDMs isolated from Acox1-/- or WT littermate control were infected with MHV68 at MOI = 5. n = 1 with three technical repeats. (B) BMDMs were treated with vehicle or 5 mM NAC for 1 hr, then infected with MHV68 at MOI = 5. Virus titer was determined by plaque assay at 0 hr, 10 hr, 24 hr, 48 hr and 72 hr after infection. n = 1 with three technical repeats.
+
+### ROS regulate interferon response by inhibiting STING polymerization
 
 We next determined how ROS regulate STING-induced interferon production. STING is a transmembrane protein anchored on the endoplasmic reticulum (ER) as a dimer in the absence of stimulation. Upon activation, STING undergoes a conformational change and rearranges to form a polymer (Ergun et al., 2019; Ishikawa et al., 2009; Tanaka and Chen, 2012). It is then transported to the Golgi complex where it recruits TBK1, leading to TBK1 phosphorylation. STING also serves as a scaffolding protein to specify phosphorylation of IRF3 by phosphorylated TBK1 (pTBK1). Phosphorylated IRF3 (pIRF3) translocates to the nucleus and induces IFNβ transcription (Wu and Chen, 2014). To analyze activation of this pathway, we induced STING activation with DMXAA after treating BMDMs with H2O2 for 10 mins, and measured protein expression of STING, TBK1, and IRF3 at 0 mins, 30 mins, 60 mins and 90 mins after stimulation (Figure 4A). H2O2 treatment did not change the basal protein levels of STING, TBK1 or IRF3. However, pTBK1 and pIRF3 were significantly inhibited by H2O2 treatment. We also found that H2O2 inhibited TBK1 phosphorylation in a dose-dependent manner (Figure 4B). When using menadione to induce cellular ROS, pTBK1 and pIRF3 were also inhibited by menadione treatment (Figure 4C). These data suggest ROS inhibit interferon signaling upstream of TBK1 activation, possibly by inhibiting STING activation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57837/elife-57837-fig4-v1.jpg)
+
+**Figure 4.:** (A) BMDMs were treated with vehicle or 200 μM H2O2 for 10 min in serum free culture medium, then stimulated with 1 μg/ml DMXAA. Western blots of TBK1, IRF3, STING, pTBK1 and pIRF3 were performed at 0 min, 30 min, 60 min and 90 min after stimulation. Data shown are representative of 2 independent experiments. (B) BMDMs were treated with vehicle or different concentrations of H2O2 in serum free culture medium for 10 mins, then stimulated with 1 μg/ml DMXAA. Level of pTBK1 was determined at 60 min after stimulation. n = 1 (C) BMDMs were treated with vehicle or 25 μM menadione for 30 min, then stimulated with 1 μg/ml DMXAA. Western blot of TBK1, IRF3, STING, pTBK1 and pIRF3 was performed at 0 min, 30 min, 60 min and 90 min after stimulation. Data shown are representative results of two independent experiments. (D) BMDMs isolated from WT control or Stinggt/gt mice were treated with vehicle or 8 μM menadione for 16 hr, then infected with MHV68 at MOI = 5. Virus titer was determined by plaque assay at 0 hr, 10 hr, 24 hr, 48 hr and 72 hr after infection. n = 3 with three technical repeats each time. (E) BMDMs were treated with vehicle, 25 μM menadione, 25 μM menadione and 2 mM NAC for 30 min, then stimulated with 1 μg/ml DMXAA. STING polymerization was determined by non-reducing SDS-PAGE. M: STING monomer; D: STING dimer. Data shown are representative of 2 experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57837/elife-57837-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** STING is a dimeric protein at resting state, which is formed by non-covalent bonds and can be disrupted by SDS treatment. Ligand binding alters the conformation of STING and triggers its oligomerization through the formation of covalent disulfide bonds. These disulfide bonds are resistant SDS treatment but sensitive to reducing reagents. As such, STING proteins that are manifested as monomer and dimer on non-reducing SDS PAGE gels are actually dimer and oligomer, respectively.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/57837/elife-57837-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** BMDMs were treated with vehicle or 25 μm menadione for 30 min, then stimulated with 1 μg/ml DMXAA for 1 hr. Cells were lysed and immunoprecipitated with anti-STING antibody, and the protein levels of TBK1 and STING in both total cell lysate and immunoprecipitated samples were determined by western blot.
 
 Next, we measured herpesvirus growth to test whether STING is required for the inhibitory effect of ROS on interferon. To this end, we quantified virus growth in WT and STING-deficient macrophages (Sauer et al., 2011). Menadione increased virus growth in WT macrophages but had no effect on virus growth in STING-deficient macrophages, supporting our hypothesis that ROS inhibited interferon in a STING-dependent manner (Figure 4D).
 
 We subsequently determined if polymerization of STING was regulated by ROS, because STING polymerization is an early event in STING activation that occurs prior to translocation to the ER. In the absence of stimulus, STING monomers spontaneously form dimers. This process does not involve covalent linkage between the monomers. In contrast, STING polymerization requires the formation of interdimer disulfide bonds (Ergun et al., 2019). Therefore, polymerized STING appears as a dimer on non-reducing SDS-PAGE, as SDS disrupts only the non-covalent interactions, leaving covalent disulfide bonds between the monomers intact (Figure 4—figure supplement 1). As expected, DMXAA induced STING polymerization (shown as a dimer) and phosphorylation of TBK1 and IRF3. However, polymerization was significantly inhibited by menadione treatment, and restored by the addition of NAC (Figure 4E). As a result of decreased STING polymerization, the recruitment of TBK1 upon DMXAA stimulation was also diminished (Figure 4—figure supplement 2). In conclusion, ROS regulate interferon signaling by inhibiting STING polymerization.
 
-## ROS oxidization of STING at Cysteine-148 blocks STING activation
+### ROS oxidization of STING at Cysteine-148 blocks STING activation
 
 The next question we addressed was whether ROS oxidized STING, thus inhibiting polymerization. Recent structural studies suggest that STING polymerization and activation require formation of an intermolecular disulfide bond at Cysteine 148 (Ergun et al., 2019). The ability of C148-C148 disulfide bonds to bridge STING dimers suggests that the residue harbors a free thiol prior to stimulation. Because free thiol functional groups are susceptible to oxidation, we hypothesized that ROS inhibit STING function by oxidizing this free thiol group. To test this hypothesis, we treated human STING (hSTING) overexpressing fibroblast cells with menadione or hydrogen peroxide, followed by labeling of free thiols on STING with 5-iodoacetamido-fluorescein (5-IAF) in cell lysate. We then immunoprecipitated STING protein and blotted for STING and fluorescein (FITC). Treatment with either menadione or H2O2 decreased the level of free thiols on STING, measured as decreased FITC signal relative to STING protein (Figure 5A). In addition, we treated mouse macrophages with diamide, a reagent that specifically oxidizes free thiols to form disulfide bonds (Kosower and Kosower, 1995). Although diamide treatment induced formation of the STING polymer, such polymers were likely not functional because STING activation requires ligand-induced conformational change (Shang et al., 2019). This was consistent with our observation that diamide treated macrophages failed to phosphorylate TBK1 and upregulate Ifnb upon DMXAA stimulation (Figure 5B and C). Thus, ROS oxidized free cysteine(s), thereby blocking the activation of both overexpressed human STING and endogenous mouse STING.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/57837/elife-57837-fig5-v1.jpg)
+
+**Figure 5.:** (A) Sting-/- fibroblasts stably expressing HA-tagged human STING were treated with vehicle or 200 μM H2O2 in serum free medium for 10 min. Cell lysates were incubated with 5 μM 5-IAF for 1 hr at room temperature to label free thiols. Protein levels of STING and FITC were detected after immunoprecipitation for HA-tagged protein. Data shown are representative results of two independent experiments. (B, C) BMDMs were treated with 200 μM diamide for 30 mins. STING polymers (B, n = 2) and Ifnb transcripts (C, n = 4) were determined at 1 hr after 1 μg/ml DMXAA stimulation. M: STING monomer; D: STING dimer. Bars represent the mean ± SE, p value was calculated using two-way ANOVA followed by Tukey’s multiple comparison test. Only the p values for the most relevant comparison are shown for clarity purpose. ***, p<0.001. (D) Schematic of differential alkylation (IAM labeling followed by DTT reducing and NEM labeling) of cysteines for mass spectrometry analysis. (E) Mass spectra of IAM- and NEM-modified STING in vehicle and menadione treated samples. n = 1 (F) Quantification of Cysred and Cysox from mass spectrometry analysis. (G) Vectors with WT STING or C148A mutated STING were transfected into HEK293T cells. Twenty-four hours after transfection, cells were treated with vehicle or 200 μM diamide for 30 min. Polymer of STING was determined with non-reducing SDS-PAGE. M: STING monomer; D: STING dimer. n = 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57837/elife-57837-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** This analysis was performed on the samples shown in Figure 5D.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/57837/elife-57837-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** C148 residue is highlighted in yellow.
+
 To identify the precise site of modification on STING, we labeled both reduced and oxidized cysteines with iodoacetamide (IAM) and N-ethylmaleimide (NEM) on STING. First, we treated mouse macrophages with vehicle control or menadione. This was followed by alkylation of free thiols by IAM, labeling reduced cysteines (Cysred). We then immunoprecipitated STING, reduced oxidized thiols, and alkylated the DTT-reduced thiol groups with NEM, labeling oxidized cysteines (Cysox). We lastly quantified the ratio of IAM (identified as Carbamidomethylation, CAM)/NEM modification on specific cysteines using liquid chromatography with tandem mass spectrometry (LC-MS/MS) (Figure 5D; Wu et al., 2020). By this effort, we determined that C147 of endogenous murine STING was modified by both CAM and NEM (Figure 5—figure supplement 1). While very low levels of NEM modification (Cysox) were detected on C147 of endogenous murine STING in vehicle-treated sample, approximately one quarter of C147 was modified by NEM with menadione treatment, indicating increased oxidation of C147 (Figure 5E and F). This cysteine residue is highly conserved across all mammalian species (Figure 5—figure supplement 2) and is critical for STING function. C147 in mouse is equivalent to C148 in human STING. A C148A mutant of hSTING is unable to form an intermolecular disulfide bond and induce interferon response upon stimulation (Ergun et al., 2019). To confirm the critical role C148 in STING polymer formation, we treated 293 T cells overexpressing a C148A mutant of hSTING with diamide. While diamide induced formation of polymer on WT STING, we observed significantly less polymer formation with diamide on the C148A mutant (Figure 5G). Altogether, we propose that C147 on murine STING and C148 on human STING are oxidized by ROS, thereby blocking STING activation.
 
-## ROS regulate MHV68 replication in vivo
+### ROS regulate MHV68 replication in vivo
 
 We have shown in vitro that ROS regulate interferon induction; however, whether this regulation is physiologically important remains to be investigated. To address this question, we either induced ROS with menadione or inhibited endogenous ROS with NAC in mice. We then infected mice with a luciferase tagged-MHV68 reporter virus and monitored acute replication of the virus by luciferase signal (Figure 6A; Hwang et al., 2008; Reese et al., 2014). Treatment of mice with 10 mg/kg menadione increased virus replication (Figure 6B). In contrast, treatment of mice with NAC inhibited virus replication (Figure 6C). Additionally, we measured the interferon response in both WT and Stinggt/gt mice during MHV68 infection (Figure 6D). While expression of Ifnb1 and Cxcl10 was increased in peritoneal exudate cells 12 hr after virus infection in WT mice, such response was diminished in Stinggt/gt mice. Consistent with our in vitro data, menadione treatment dramatically inhibited interferon and ISG production induced during MHV68 infection (Figure 6E and F). These data suggest that ROS are important for controlling virus replication in vivo.
 
@@ -106,80 +154,589 @@ Altogether, our results identify a critical post-translational modification of S
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No. 000664</td>
+      <td>Bred at UTSW facility with IACUC approval</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J-Tmem173gt/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No. 017537</td>
+      <td>Bred at UTSW facility with IACUC approval</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6.129S2-Ifnar1tm1Agt/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No. 32045</td>
+      <td>Bred at UTSW facility with IACUC approval</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6.129P2-Acox1tm1Jkr/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No. 029747</td>
+      <td>Bred at UTSW facility with IACUC approval</td>
+    </tr>
+    <tr>
+      <td>Cell line (Herpesviridae, Rhadinovirus)</td>
+      <td>Murine gamma herpesvirus 68 (WUSM stain)</td>
+      <td>ATCC</td>
+      <td>VR-1465</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Herpesviridae, Rhadinovirus)</td>
+      <td>Murine gamma herpesvirus 68-M3FL</td>
+      <td>Home made Hwang et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>3T12</td>
+      <td>ATCC</td>
+      <td>Cat# ATCC CCL-164; RRID:CVCL_0637</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>Cat# ATCC CRL-3216; RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>STING</td>
+      <td>GenBank</td>
+      <td>AVQ94753.1</td>
+      <td>Express STING into 293T cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-STING (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 19851-1-AP; RRID:AB_10665370</td>
+      <td>WB (1:1000); IP (1 ug/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-STING (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 50494S; RRID:AB_2799375</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TBK1/NAK (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 3504S; RRID:AB_2255663</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IRF-3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 4302S; RRID:AB_1904036</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-TBK1 (Ser172) (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 5483S; RRID:AB_10693472</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-IRF-3 (Ser396) (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 4947S; RRID:AB_823547</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-SDHA antibody</td>
+      <td>Abcam</td>
+      <td>Cat# ab14715; RRID:AB_301433</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MHV68 (Rabbit polyclonal)</td>
+      <td>Home made Weck et al., 1997</td>
+      <td></td>
+      <td>FACs (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG(H+L) secondary antibody, Alexa Fluor 647 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21245; RRID:AB_2535813</td>
+      <td>FACs (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG, Peroxidase (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratory</td>
+      <td>Cat# 711-035-152; RRID:AB_10015282</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG, Peroxidase (Goat polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratory</td>
+      <td>Cat# 115-035-174; RRID:AB_2338512</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FITC (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 71-1900; RRID:AB_2533978</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA 3.1(+) Mammalian Expression Vector (plasmid)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# V79020</td>
+      <td>Vector for the expression of human STING</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifnb forward</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CAGCTCCAAGAAAGGACGAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifnb reverse</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GGCAGTGTAACTCTTCTGCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cxcl10 forward</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>TTAACGTCAGGCCAACAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cxcl10 reverse</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GAGGGAAACCAGGAAAGATAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Isg15 forward</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CAGGACGGTCTTACCCTTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Isg15 reverse</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>AGGCTCGCTGCAGTTCTGTAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Isg20 forward</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CCATGGACTGTGAGATGGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Isg20 reverse</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CTCGGGTCGGATGTACTTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh forward</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GGGTGTGAACCACGAGAAATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh reverse</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GTCATGAGCCCTTCCACAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gsr forward</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CACCGAGGAACTGGAGAATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gsr reverse</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>ATCTGGAATCATGGTCGTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gclm forward</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>AATCAGCCCCGATTTAGTCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gclm reverse</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CGATCCTACAATGAACAGTTTTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>C148 forward</td>
+      <td>This paper</td>
+      <td>Site direct mutagenesis PCR primers</td>
+      <td>CTCTGCAGTGCTGAAAAAGGGAATTTCAACGTGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>C148A reverse</td>
+      <td>This paper</td>
+      <td>Site direct mutagenesis PCR primers</td>
+      <td>ATCTCAGCTGGGGCCAGG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 3000 Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# L3000008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qiagen RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript VILO cDNA Synthesis Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11754050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PowerUp SYBR Green Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A25776</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LIVE/DEAD Fixable Dead Cell Stain Kits</td>
+      <td>Invitrogen</td>
+      <td>Cat# L34975</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>New England BioLabs</td>
+      <td>Cat# E0554S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMXAA</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-dmx</td>
+      <td>(1 ug/ml) for macrophages, (2 ug/ml) for fibroblasts</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2’3’-cGAMP</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-nacga23</td>
+      <td>(10 ug/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ISD</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-isdn</td>
+      <td>(10 ug/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>poly(dA:dT)</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-patn-1</td>
+      <td>(1 ug/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>poly(I:C)</td>
+      <td>Invivogen</td>
+      <td>Cat# tlrl-picw</td>
+      <td>(1 ug/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Luciferin, Potassium Salt</td>
+      <td>GOLDBIO</td>
+      <td>Cat# LUCK</td>
+      <td>(150 mg/kg)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Menadione</td>
+      <td>Sigma</td>
+      <td>Cat# M9429</td>
+      <td>(10 mg/kg) for mice, concentration for cells were indicated in each experiment</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrogen peroxide solution</td>
+      <td>Sigma</td>
+      <td>Cat# 216763</td>
+      <td>Concentration for cells were indicated in each experiment</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Acetyl-L-cysteine</td>
+      <td>Sigma</td>
+      <td>Cat# A7250</td>
+      <td>2 mM for macrophages, 5 mM in drinking water with 2% sucrose</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Iodoacetamide</td>
+      <td>Sigma</td>
+      <td>Cat# I1149</td>
+      <td>100 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-ethylmaleimide</td>
+      <td>Sigma</td>
+      <td>Cat# E3876</td>
+      <td>50 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Elastase</td>
+      <td>Worthington</td>
+      <td>Cat# LS006363</td>
+      <td>1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-(Iodoacetamido) fluorescein</td>
+      <td>Sigma</td>
+      <td>Cat# I9271</td>
+      <td>5 ug/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diamide</td>
+      <td>Sigma</td>
+      <td>Cat# D3648</td>
+      <td>200 uM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad</td>
+      <td>www.graphpad.com; RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo software</td>
+      <td>FlowJo</td>
+      <td>www.flowjo.com; RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Live Image Software</td>
+      <td>Perkin Elmer</td>
+      <td>www.perkinelmer.com; RRID:SCR_014247</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 C57BL/6J, C57BL/6J-Tmem173gt/J (Sauer et al., 2011), B6.129S2-Ifnar1tm1Agt/J (Muller et al., 1994), B6.129P2-Acox1tm1Jkr/J (Fan et al., 1996). were purchased from The Jackson Laboratory. All mice were housed in a specific pathogen-free, double-barrier facility at the University of Texas Southwestern Medical Center. Mice were maintained and used under a protocol approved by UT Southwestern Medical Center Institutional Animal Care and Use Committee (IACUC).
 
-## Chemicals
+### Chemicals
 
 Menadione, hydrogen peroxide solution, diamide and N-Acetyl-L-Cysteine were purchased from Sigma-Aldrich. Iodoacetamide (IAM), N-Ethylmaleimide (NEM), 5-iodoacetamido-fluorescein (5-IAF) were purchased from Sigma-Aldrich to label free thiols on protein. cGAMP, ISD, DMXAA, poly I:C, poly dA:dT were purchased from Invivogen to induce interferon signaling.
 
-## Chemical treatment
+### Chemical treatment
 
 A stock solution of menadione was prepared in DMSO at 50 mg/ml, then diluted to different concentrations with culture medium. Cells were treated with menadione by replacing culture medium with fresh medium containing menadione and incubated at 37°C for a duration indicated in each experiment. A stock solution of hydrogen peroxide was prepared in PBS at the concentration of 1 M, then diluted to different concentration with serum-free medium to avoid the decomposition of hydrogen peroxide by residual catalases in FBS. However, the treatment of hydrogen peroxide was conducted in culture medium containing FBS for the flow cytometric quantification of viral growth in BMDMs, in which case, serum is essential to support virus growth.
 
-## Cell culture
+### Cell culture
 
 Bone marrow derived macrophages were differentiated in DMEM (Corning) with 10% FBS (Biowest) supplemented with 1% glutamine (Corning), 1% HEPES (Corning) and 10% CMG14 (Takeshita et al., 2000) supernatant for 7 days. 3T12 cells (ATCC, CCL-164, mycoplasma tested) were maintained in DMEM with 5% FBS supplemented with 1% glutamine and 1% HEPES. 293 T cells (ATCC, CRL-3216, mycoplasma tested), fibroblasts overexpressing human STING were maintained in DMEM with 10% FBS. Primary fibroblasts (MEFs) were isolated from embryonic tissue in DMEM with 10% FBS supplemented with 1% glutamine, 1% HEPES, then passed and maintained in the same culture medium for further propagation.
 
-## Generation of virus stocks
+### Generation of virus stocks
 
 Murine γ-herpesvirus 68 (WUSM stain) was purchased from ATCC. Murine γ-herpesvirus 68-M3FL was generated as previously reported (Hwang et al., 2008). Virus stock was generated in 3T12 cells and aliquots of virus were stored at −80°C.
 
-## Virus infection
+### Virus infection
 
 Fully differentiated BMDMs were seeded on 24 well plates (1.5 × 105 cells per well) or six well plates (106 cells per well). Cells were pretreated with mock control or menadione at 8 µM, 4 µM, or 2 µM for 16 hr. The next day, macrophages were infected with MHV68 at MOI = 5. After an hour, cells were washed with PBS twice to remove unabsorbed virus and resuspended in medium with or without treatments. For the viral growth curve, samples were collected at 0 hr, 24 hr, 48 hr, 72 hr and 96 hr after infection and were frozen at −80°C. The titer of virus was determined by plaque assay in 3T12 cells. For qRT-PCR, cells were washed with ice-cold PBS twice at 6 hr after infection and were frozen at −80°C.
 
-## Plaque assay
+### Plaque assay
 
 The concentration of virus was quantitated by plaque assay in 3T12 cells. The frozen samples containing virus were thawed in an incubator at 37°C. The samples were serial diluted, then added to a monolayer of 3T12 cells. After an hour of absorption, the cells were then covered with 1% methylcellulose. Plates were incubated at 37°C for 7 days, and the monolayers were stained with 0.1% crystal violet.
 
-## Flow cytometry for MHV68 lytic protein positive cells
+### Flow cytometry for MHV68 lytic protein positive cells
 
 To determine the percentage of cells that express lytic proteins of MHV68 infection, cells were harvested 24 hr after infection and fixed with 2% formaldehyde. The cells were blocked with 10% mouse serum and 1% Fc block (anti-CD16/32, clone 2.4G2, Tonbo), and then stained with polyclonal rabbit antibody to MHV68 (1:1000) (Reese et al., 2014; Weck et al., 1997), followed by secondary goat anti-rabbit Alexa Fluor-647 (Thermo Fisher, Invitrogen, A-21244).
 
-## Cell viability assay
+### Cell viability assay
 
 Fully differentiated BMDMs were treated with different concentrations of menadione as indicated. Cells were then scraped and collected at different time points and stained with LIVE/DEAD Fixable Near-IR Dead Cell Stain Kit (ThermoFisher Scientific) for 30 min at room temperature in the dark. After washing with PBS, dead cells were identified using flow cytometry.
 
-## Transfection
+### Transfection
 
 293 T cells were seeded on six well plates. The next day, cells were transfected with WT STING vector or C148A STING vector using Lipofectamine 3000 (Thermo Fisher Scientific) according to the manufacturer’s protocol.
 
-## Western blot
+### Western blot
 
 Cells were lysed with RIPA buffer (150 mM NaCl, 1% NP-40, 0.5% sodium deoxycholate, 0.1% SDS, 25 mM Tris with protease inhibitor cocktail (Roche)). Protein concentrations were determined using the Bradford assay (Bio-Rad). Equal amounts of protein were mixed with 5x loading sample buffer containing 2-Mercaptoethanol and heated at 97°C for seven mins. The samples were resolved by 4–12% Bis-Tris plus gels (Thermo Fisher Scientific) and transferred to a nitrocellulose membrane. Proteins were labeled with primary antibodies against STING (1:1000, Catalogue no.13647S, Cell Signaling; 1:1000, Catalogue no. 1985–1-AP, Proteintech), TBK1 (1:1000, Catalogue no. 3504S, Cell Signaling), IRF3 (1:1000, Catalogue no. 4302S, Cell Signaling), pTBK1 (1:1000, Catalogue no. 5483S, Cell Signaling), pIRF3 (1:1000, Catalogue no. 4947S, Cell Signaling), SDHA (1:5000, Catalogue no. ab14715, Abcam), β-actin (1:5000, Catalogue no. A2228, Sigma). Secondary antibodies used were donkey-anti-rabbit (1:5000, Catalogue no.711-035-152, Jackson ImmunoResearch Laboratory) and goat-anti-mouse peroxidase (1:5000, Catalogue no.115-035-174 Jackson ImmunoResearch Laboratory). Membranes were developed using Luminata Forte Western HRP substrate (Millipore). For non-reducing SDS-PAGE, protein was mixed with 5x loading sample buffer and incubated at RT for 1 hr without boiling. Samples were then resolved by 4–12% Bis-Tris plus gels.
 
-## RT-qPCR
+### RT-qPCR
 
 Cells were plated in six well plates, either infected with MHV68 or induced with STING ligand as indicated. RNA was extracted using RNeasy Mini Kit (Qiagen) and reverse transcribed into cDNA using SuperScript VILO cDNA Synthesis Kit (Thermo Fisher Scientific). Relative quantification of target genes was determined using PowerUp SYBR Green Master Mix (Thermo Fisher Scientific) in a QuantStudio 7 Flex real time PCR system. Sequences of primers are as follow:
 
-PrimersSequenceIfnb forwardCAGCTCCAAGAAAGGACGAACIfnb reverseGGCAGTGTAACTCTTCTGCATCxcl10 forwardTTAACGTCAGGCCAACAGAGCxcl10 reverseGAGGGAAACCAGGAAAGATAGGIsg15 forwardCAGGACGGTCTTACCCTTTCCIsg15 reverseAGGCTCGCTGCAGTTCTGTACIsg20 forwardCCATGGACTGTGAGATGGTGIsg20 reverseCTCGGGTCGGATGTACTTGTGapdh forwardGGGTGTGAACCACGAGAAATAGapdh reverseGTCATGAGCCCTTCCACAATGsr forwardCACCGAGGAACTGGAGAATGGsr reverseATCTGGAATCATGGTCGTGGGclm forwardAATCAGCCCCGATTTAGTCAGGclm reverseCGATCCTACAATGAACAGTTTTGC
+<table>
+  <thead>
+    <tr>
+      <th>Primers</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ifnb forward</td>
+      <td>CAGCTCCAAGAAAGGACGAAC</td>
+    </tr>
+    <tr>
+      <td>Ifnb reverse</td>
+      <td>GGCAGTGTAACTCTTCTGCAT</td>
+    </tr>
+    <tr>
+      <td>Cxcl10 forward</td>
+      <td>TTAACGTCAGGCCAACAGAG</td>
+    </tr>
+    <tr>
+      <td>Cxcl10 reverse</td>
+      <td>GAGGGAAACCAGGAAAGATAGG</td>
+    </tr>
+    <tr>
+      <td>Isg15 forward</td>
+      <td>CAGGACGGTCTTACCCTTTCC</td>
+    </tr>
+    <tr>
+      <td>Isg15 reverse</td>
+      <td>AGGCTCGCTGCAGTTCTGTAC</td>
+    </tr>
+    <tr>
+      <td>Isg20 forward</td>
+      <td>CCATGGACTGTGAGATGGTG</td>
+    </tr>
+    <tr>
+      <td>Isg20 reverse</td>
+      <td>CTCGGGTCGGATGTACTTGT</td>
+    </tr>
+    <tr>
+      <td>Gapdh forward</td>
+      <td>GGGTGTGAACCACGAGAAATA</td>
+    </tr>
+    <tr>
+      <td>Gapdh reverse</td>
+      <td>GTCATGAGCCCTTCCACAAT</td>
+    </tr>
+    <tr>
+      <td>Gsr forward</td>
+      <td>CACCGAGGAACTGGAGAATG</td>
+    </tr>
+    <tr>
+      <td>Gsr reverse</td>
+      <td>ATCTGGAATCATGGTCGTGG</td>
+    </tr>
+    <tr>
+      <td>Gclm forward</td>
+      <td>AATCAGCCCCGATTTAGTCAG</td>
+    </tr>
+    <tr>
+      <td>Gclm reverse</td>
+      <td>CGATCCTACAATGAACAGTTTTGC</td>
+    </tr>
+  </tbody>
+</table>
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Cells were lysed with gentle lysis buffer (Cell Signaling) for 15 mins, and then the cell lysate was spun down at 16,000 g for 10 mins. STING antibody (Proteintech) was added into the cell lysate at 1 µg/mL and incubated overnight at 4°C with rotation. The next day, 20 µL of Pierce protein A/G magnetic beads (Thermo Fisher Scientific) were added into each sample and incubated at 4°C for 2 hr to capture STING protein. Samples were then washed with lysis buffer five times, and protein was dissociated from beads by heating at 97°C for seven mins.
 
-## STING cloning
+### STING cloning
 
 FLAG-tagged STING was cloned into pcDNA 3.1 (+) mammalian vector. C148A mutant was generated by site-directed mutagenesis (New England Biolabs). Vectors with wildtype STING and C148A mutated STING were transfected into HEK293T cells for transient STING overexpression. Mutagenesis primers: forward-CTCTGCAGTGCTGAAAAAGGGAATTTCAACGTGGC; reverse-ATCTCAGCTGGGGCCAGG.
 
-## Detection of oxidative modification on STING
+### Detection of oxidative modification on STING
 
 Sting-/- fibroblasts stably expressing HA-tagged human STING were plated on 10 cm dishes at a density of 107 cells per dish. Twenty-four hours later, growth medium with 10% FBS was replaced with DMEM supplemented with 2% FBS. The next day, cells were treated with mock control, 25 µM menadione for 30 mins or 200 µM H2O2 for 10 mins in serum-free DMEM. Cells were then washed with ice cold PBS twice and lysed with gentle cell lysis buffer (Cell signaling) containing 5 µM 5-IAF which labels free thiols with a fluorescein (FITC) tag (Ostman et al., 2011). Cell lysate was spun down at 16,000 g for 10 mins, and the supernatant was then incubated at RT for 1 hr in the dark. Lysates were subjected to immunoprecipitation for HA-tagged STING and probed for both STING and FITC using western blot.
 
-## Mass spectrometry analysis of STING cysteine oxidation
+### Mass spectrometry analysis of STING cysteine oxidation
 
 Quantification of cysteine oxidation on STING with mass spectrometry was completed as described previously (Wu et al., 2020). Differentiated BMDMs were treated with serum free medium or 25 µM menadione for 30 mins, and proteins were extracted using gentle cell lysis buffer (Cell signaling) with 100 mM iodoactamide to label free thiols (Cysred). After immunoprecipitation, the STING-Trap beads were incubated with alkylation buffer (100 mM iodoacetamide, 2% SDS and 150 mM Tris, PH 8.0) at room temperature for 1 hr to sufficiently label free thiols on STING. Proteins were separated by SDS-PAGE, and the bands corresponding to STING were excised. The protein gel band was digested overnight with elastase (Worthington) following reduction with DTT and a second alkylation step with N-ethylmaleimide to label oxidized thiols (Cysox). The samples then underwent solid-phase extraction cleanup with an Oasis HLB µElution plate (Waters) and the resulting samples were analyzed by LC-MS/MS, using an Orbitrap Fusion Lumos mass spectrometer (Thermo Electron) coupled to an Ultimate 3000 RSLC-Nano liquid chromatography system (Dionex). Raw MS data files were converted to a peak list format and analyzed using the central proteomics facilities pipeline (CPFP), version 2.0.3 (Trudgian et al., 2010; Trudgian and Mirzaei, 2012). Peptide identification was performed with a non-specific enzyme search using the Open MS Search Algorithm (OMSSA) (Geer et al., 2004) search engine against the mouse protein database from UniProt, with common contaminants and reversed decoy sequences appended (Elias and Gygi, 2007). Fragment and precursor tolerances of 10 ppm and 0.5 Da were specified, and three missed cleavages were allowed. Oxidation of Met and carbamidomethylation (iodoacetamide modification) and N-ethylmaleimide modification of Cys were set as variable modifications. Mass spectrometry data were deposited online, with the link of: http://massive.ucsd.edu/ProteoSAFe/status.jsp?task=03fb020e0fe9474ea5fa9326219f7cee.
 
-## MHV68 acute replication in mouse
+### MHV68 acute replication in mouse
 
 Experiments were carried out using 8–12 weeks old mice under the protocol approved by IACUC. Mice were sex-matched and randomly allocated into groups prior to experiments. For menadione treatment, mice were injected intraperitoneally with either vehicle control (5% DMSO in corn oil) or menadione (10 mg/kg) for 1 week, starting 3 days before virus infection. For NAC treatment, 5 mM NAC was provided in the water with presence of 2% sucrose that mice were allowed to drink ad libitum throughout the experimental period starting 5 days before infection. Mice were then infected with MHV68-M3FL with a dose of 106 PFU by intraperitoneal injection. To quantify virus-encoded luciferase expression (Hwang et al., 2008). Mice were weighed and injected with 150 mg/kg of D-Luciferin (GOLDBIO) prior to imaging using an IVIS Lumina III In Vivo Imaging System (PerkinElmer). Total flux (Photons/second) of the abdominal region was determined using Living Image software (PerkinElmer) by designating a circular region of interest (ROI) for each mouse.
 
-## Measure transcripts of Ifnb1 and Cxcl10 in peritoneal exudate cells (PECs)
+### Measure transcripts of Ifnb1 and Cxcl10 in peritoneal exudate cells (PECs)
 
 Mice aged between 8–12 weeks were sex-matched and randomly allocated into groups prior to experiments. Mice were injected intraperitoneally with either vehicle control (5% DMSO in corn oil) or menadione (10 mg/kg in corn oil) starting 3 days before infection. Mice were then infected with MHV68 at 106 PFU by intraperitoneal injection. Twelve hours after infection, PECs from each mouse were collected. RNA was extracted and reverse transcribed. Transcripts of Ifnb1 and Cxcl10 were the quantified by qRT-PCR.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Bars are mean ± SE unless otherwise stated in figure legend. Statistical comparisons were performed using GraphPad Prism 7.0 software. p value was computed using unpaired one-way or two-way ANOVA. Statistical significance was set at p<0.05. The numbers of independent replicates (n) are reported in the figure legends.

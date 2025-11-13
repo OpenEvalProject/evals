@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.31502.001 Ribonucleotide reductases (RNRs) convert ribonucleotides into deoxyribonucleotides, a reaction essential for DNA replication and repair. Human RNR requires two subunits for activity, the α subunit contains the active site, and the β subunit houses the radical cofactor. Here, we present a 3.3-Å resolution structure by cryo-electron microscopy (EM) of a dATP-inhibited state of human RNR. This structure, which was determined in the presence of substrate CDP and allosteric regulators ATP and dATP, has three α 2 units arranged in an α 6 ring. At near-atomic resolution, these data provide insight into the molecular basis for CDP recognition by allosteric specificity effectors dATP/ATP. Additionally, we present lower-resolution EM structures of human α 6 in the presence of both the anticancer drug clofarabine triphosphate and β 2 . Together, these structures support a model for RNR inhibition in which β 2 is excluded from binding in a radical transfer competent position when α exists as a stable hexamer.
+Ribonucleotide reductases (RNRs) convert ribonucleotides into deoxyribonucleotides, a reaction essential for DNA replication and repair. Human RNR requires two subunits for activity, the α subunit contains the active site, and the β subunit houses the radical cofactor. Here, we present a 3.3-Å resolution structure by cryo-electron microscopy (EM) of a dATP-inhibited state of human RNR. This structure, which was determined in the presence of substrate CDP and allosteric regulators ATP and dATP, has three α2 units arranged in an α6 ring. At near-atomic resolution, these data provide insight into the molecular basis for CDP recognition by allosteric specificity effectors dATP/ATP. Additionally, we present lower-resolution EM structures of human α6 in the presence of both the anticancer drug clofarabine triphosphate and β2. Together, these structures support a model for RNR inhibition in which β2 is excluded from binding in a radical transfer competent position when α exists as a stable hexamer.
 
 ## Introduction
 
@@ -44,21 +44,120 @@ Overall RNR activity can also be allosterically regulated. For class Ia RNRs, dA
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/31502/elife-31502-fig2-v1.jpg)
 
-**Figure 2.:** E. coli and human RNRs.(A) The molecular basis of allosteric regulation of activity in class Ia RNR from E. coli. dATP inhibits activity by binding to the activity effector site in the cone domain (green) in α and promoting conversion of the active α2β2 complex (modeled by docking PDB: 5CNS chains A and B with PDB: 1RIB) to an inhibited α4β4 ring (PDB: 5CNS). In particular, with dATP bound to the activity effector site in α, the cone domain forms an interface with β, leading to α4β4 ring formation. ATP restores activity by displacing dATP in the activity effector site in the cone domain, which disrupts the α-β interface of the α4β4 ring, and further pushes the equilibrium toward the α2β2 complex. The molecular basis by which dATP promotes α-β interface formation and ATP disrupts it has not been established. Long-distance radical transfer between α and β is illustrated by red arrows. (B) The molecular basis of allosteric regulation of activity in human class Ia RNR (see text in Discussion). Briefly, α2 forms α6 in the presence of both ATP and dATP. The stability of the hexamer formed determines whether the enzyme is active when β2 is added. dATP-induced hexamers are stable and inactive whereas ATP-induced hexamers are unstable and activated by β2 addition. Schematic of human RNR was prepared using the same models and coloring as Figure 1.
+**Figure 2.:** (A) The molecular basis of allosteric regulation of activity in class Ia RNR from E. coli. dATP inhibits activity by binding to the activity effector site in the cone domain (green) in α and promoting conversion of the active α2β2 complex (modeled by docking PDB: 5CNS chains A and B with PDB: 1RIB) to an inhibited α4β4 ring (PDB: 5CNS). In particular, with dATP bound to the activity effector site in α, the cone domain forms an interface with β, leading to α4β4 ring formation. ATP restores activity by displacing dATP in the activity effector site in the cone domain, which disrupts the α-β interface of the α4β4 ring, and further pushes the equilibrium toward the α2β2 complex. The molecular basis by which dATP promotes α-β interface formation and ATP disrupts it has not been established. Long-distance radical transfer between α and β is illustrated by red arrows. (B) The molecular basis of allosteric regulation of activity in human class Ia RNR (see text in Discussion). Briefly, α2 forms α6 in the presence of both ATP and dATP. The stability of the hexamer formed determines whether the enzyme is active when β2 is added. dATP-induced hexamers are stable and inactive whereas ATP-induced hexamers are unstable and activated by β2 addition. Schematic of human RNR was prepared using the same models and coloring as Figure 1.
 
 Eukaryotic RNRs do not appear to form α4β4-ring structures (Fairman et al., 2011; Aye et al., 2012; Ando et al., 2016). Instead human α2 has the propensity to form α6 rings in the presence of both ATP and dATP (Rofougaran et al., 2006; Fairman et al., 2011; Ando et al., 2016) and the stability of the α6 ring appears to regulate activity (Ando et al., 2016) (Figure 2B). Rings formed with dATP are stable, showing no oligomeric state change upon addition of β2, whereas α6 rings formed in the presence of ATP are unstable and disassemble into active state(s) upon addition of β2 (Ando et al., 2016). Support for the idea that ‘stable’ α6 rings correspond to an inhibited form of human RNR comes from studies with clofarabine (ClF), an adenosine analog used for cancer treatment, and related analogs cladrabine and fludarabine (Aye and Stubbe, 2011; Aye et al., 2012; Wisitpitthaya et al., 2016). In those studies, human RNR treated with CIF diphosphate (ClFDP) or triphosphate (ClFTP) lead to inactive enzyme and the formation of extremely stable ‘persistent’ α6 rings (Aye and Stubbe, 2011; Aye et al., 2012). Structural information about α6 rings has been limited to a 9-Å resolution crystal structure of human α obtained in the presence of dATP (Ando et al., 2016), a 6.6-Å resolution crystal structure of yeast α with dATP (Fairman et al., 2011), and a 28-Å resolution EM structure dATP-induced α6 from yeast in the presence of β2 (Fairman et al., 2011). These low-resolution structures were sufficient to establish the overall α6 subunit arrangement, but failed to reveal the molecular basis for inactivity of the α6 ring. Here, we use state-of-the-art cryo-EM to determine the structure of human RNR α6 at the near-atomic resolution of 3.3 Å and probe the mechanisms of allosteric regulation of activity and specificity for the human class Ia RNR enzyme.
 
 ## Results
 
-## Optimal conditions for cryo-EM were established empirically using negative stain EM
+### Optimal conditions for cryo-EM were established empirically using negative stain EM
 
 Human α forms ring-like particles composed of three α-dimers (Figure 3A) upon addition of 0.05 mM dATP (Figure 3—figure supplement 1C,D) as seen previously in the low-resolution crystal structures of human and yeast α (Fairman et al., 2011; Ando et al., 2016) and in human RNR in the presence of ClFDP (Aye et al., 2012) (Figure 3—figure supplement 1F). These α6 rings formed with dATP alone showed some structural flexibility. α6 rings were also the predominant form observed following incubation of α with 1 mM ATP, but some particles were incomplete or partially open rings, indicating that the subunit contacts are tenuous, consistent with the proposition that the rings formed in the presence of ATP are not stable (Figure 3—figure supplement 1B). Increasing ATP concentration to 3 mM resulted in an increase in the proportion of dissociated rings and free α-dimers. At 10 mM ATP we observed fewer α6 rings and a filamentous form of α is now apparent. Analysis of the filamentous oligomers showed that they are composed of α2 units chained together end-to-end, often only three units in length. With TTP, the dimeric α2 form is present exclusively (Figure 3—figure supplement 1A) as seen in prior studies (Thelander et al., 1980; Reichard et al., 2000; Rofougaran et al., 2006; Aye and Stubbe, 2011; Fairman et al., 2011; Scott et al., 2001). Finally, we examined α in the presence of 0.05 mM dATP and 3 mM ATP, a combination expected to be physiological relevant. In dividing cells where RNR is actively producing deoxynucleotides, the dATP concentration is approximately 0.024 mM and the ATP concentration is approximately 3 mM (Traut, 1994), thus the combination of 0.05 mM dATP and 3 mM ATP is expected to mimic cellular effector concentrations under which this higher dATP concentration inhibits RNR. To verify that 0.05 mM dATP inhibits human RNR even in the presence of 3 mM ATP, enzyme assays were performed, which showed inactivation (Figure 3—figure supplement 2). Under negative stain EM, this combination of effectors (0.05 mM dATP and 3 mM ATP) yielded data sets in which α6 rings are preponderant and could be combined into a well-defined 3D structure with D3 point group symmetry (Figure 3—figure supplement 1E). Given that this combination of effectors provided the most structurally homogeneous preparation of α6 rings, we used it for the high-resolution cryo-EM analysis. It is unfortunate that structural stability is so sensitive to nucleotide identity and concentration, since these constraints limit the ability to determine high-resolution structures of the human RNR with all combinations of substrate and effectors. The near-atomic resolution structure described below was determined in the presence of substrate CDP and effectors dATP and ATP.
 
-## Near-atomic resolution cryo-EM map of an inhibited α6 complex
+![Figure 3.](https://cdn.elifesciences.org/articles/31502/elife-31502-fig3-v1.jpg)
+
+**Figure 3.:** (A) Human α6 ring viewed along the three-fold (triangle) and two-fold (oval) symmetry axes. Dashed box in middle panel highlights cone domain interactions detailed in panel C. Insets show density (grey) and atomic model for a three strand segment of the catalytic core β-barrel (residues Phe297-Leu301, Leu328-Ile334, Tyr404-Tyr407) and two helices (residues Ile228-Ser244) that pair at the α dimer interface. Regions of the structure are colored as in Figure 1 with alternating subunits in faded colors. dATP densities in yellow. (B) Cone domain in the human α6 ring structure is ~20° away from its position in the human α2 crystal structure colored tan (PDB: 3HNC). The gray rod indicates the rotation axis. (C) Cone domain viewed along the two-fold symmetry axis (oval) and an orthogonal view showing contacting residues, which are mostly hydrophobic. (D) dATP in the cone domain of the cryo-EM structure makes hydrogen bonds through its base, sugar, and phosphates indicated by dashed lines. Nucleotide density is shown in yellow mesh with dATP carbon yellow, oxygen red, phosphorus gold, and nitrogen blue. (E) The dATP-inhibited α4β4 ring of E. coli (PDB: 5CNS) uses the same face (helices 1 and 2) of the cone domain to contact the β subunit (orange). For comparison, the cone domain of E. coli α is oriented as in panel (C).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31502/elife-31502-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Micrographs and 2D class averages from negative stained specimen (A–C,E,F) or a cryo-EM specimen (D) of α prepared with the indicated nucleotides: (A) 0.1 mM TTP, (B) ATP at concentrations ranging from 1.0 to 10 mM (specimen also described in [Ando et al., 2016]), (C) 0.05 mM dATP, (E) 3 mM ATP and 0.05 mM dATP, or (F) 1 μM ClFDP (5 equivalents per α) and 0.1 mM dGTP (specimen also described in [Aye et al., 2012]). A cryo-EM specimen of α with 0.05 mM dATP was also prepared (D) and the resulting averages match well with those from the negative stain specimen with the same concentration of dATP (compare with panel C). The human RNR samples prepared under inhibiting conditions (dATP, 3 mM ATP + 0.05 mM dATP, ClFDP + dGTP) show more well defined α6 rings than do the samples with ATP under active conditions. The sample with the mixture of dATP and ATP that yielded inactive human RNR (see Figure 3—figure supplement 2) also gave the highest resolution averages of the α6 rings. Scale bar in (A) applies to all micrographs. Averages in (A) are twice the scale of the micrographs and averages in (B–F) are shown on a scale 33% larger than the micrographs.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/31502/elife-31502-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** CDP reductase activity was measured for 14 μM α in the presence of 3 mM ATP, or 0.05 mM dATP, or both. Activity measurements are the average of assays performed in duplicate with error bars indicating the standard deviation. A mixture containing α, ATP, and dATP at the same concentrations used in these activity assays was used to prepare cryo-EM specimens of inhibited α6 rings that resulted in the 3.3-Å resolution reconstruction.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/31502/elife-31502-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Aligned frame sum showing α6 ring particles preserved in amorphous ice. (B) Plot showing distribution of symmetrized projection directions of particles used to calculate the cryo-EM map of the dATP-inhibited rings. (C) Fourier shell correlation plot measuring the resolution of the cryo-EM map at ~3.3 Å.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/31502/elife-31502-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The density map is shown in the same orientations depicted in Figure 3A colored according to local resolution, which is relatively uniform throughout but highest at the α-α dimer interface.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/31502/elife-31502-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Difference between pairs of Cα-Cα distances in the human α6 cryo-EM structure and the 2.4-Å resolution crystal structure of α2-TTP (PDB: 3HNC chain B) are plotted. Residue pairs that are closer in the α2 structure are yellow, those that are closer in the α6 ring structure are blue. The cone domain (residues 1–92) has undergone a substantial rotation coupled with motion of an adjacent β-hairpin (residues Ile624–Val637). In this crystal structure loop 2 (residues Val286–Gly295) is partially disordered (Lys292 and Arg293 were not modeled) but the observed residues have changed conformation. (B) Structure of an α dimer extracted from the α6 ring cryo-EM structure indicating the locations of loop 2 and the β-hairpin highlighted with silhouettes. The cone domain is in green and the three-helix insert (3HI) is in magenta.
+
+### Near-atomic resolution cryo-EM map of an inhibited α6 complex
 
 We obtained a near-atomic resolution structure of the human α subunit of RNR in the presence of 0.05 mM dATP, 3 mM ATP and substrate CDP. Based on the lack of enzymatic activity under these conditions, this first near-atomic resolution structure of human α6 is in a dATP-inhibited state (Figure 3A). Imaging of the cryo-EM samples as dose-fractionated movie frames from a direct electron detector allowed for correction of specimen movement and compensation for radiation damage (Table 1). To eliminate concerns about model bias, particles were selected automatically, clustered using Iterative Stable Alignment and Clustering (ISAC) (Yang et al., 2012), and an initial 3D map was generated de novo using stochastic hill climbing refinement (Elmlund et al., 2013) implemented in SPARX (Hohn et al., 2007). The initial map was used as reference for refinement of image alignment parameters using SPARX, to obtain a final map that has an overall resolution of approximately 3.3 Å, and a maximum resolution of 3.15 Å around the α-α dimer interface (Figure 3—figure supplements 3 and 4). At this resolution densities can be distinguished clearly for the spiraling backbone of α-helices, the strands of β-sheets, residue side chains, and bound substrate and effector nucleotides (Figure 3A). The final model contains six α subunits with residues 1 through 743 of the 792 amino acids. Although both ATP and dATP were present, dATP was the nucleotide included in the final model, because it is a better fit to the density in both allosteric sites and is also expected to have higher affinity for both sites (Brown and Reichard, 1969b; Reichard et al., 2000; Kashlan and Cooperman, 2003). Thus, each α subunit contained one CDP in the active site, one dATP in the specificity site and one dATP in the activity site. Standard metrics of model quality show excellent statistics and fit to the cryo-EM map (Table 1).
 
-## Cone-domain repositioning and hydrophobic interactions stabilize the α6 ring
+**Table 1.**
+ Summary of single-particle data collection, 3D reconstruction, and model refinement
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="2">Imaging parameters and 3D reconstruction</td>
+    </tr>
+    <tr>
+      <td>Acceleration voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Magnification (X)</td>
+      <td>22,500</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.315</td>
+    </tr>
+    <tr>
+      <td>Frame rate (s−1)</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Exposure time (s)</td>
+      <td>7.6</td>
+    </tr>
+    <tr>
+      <td>Total exposure (e- / Å)</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>Particles  Micrographs used for selection  Defocus range (μm)  Windowed  In final 3D reconstruction</td>
+      <td>2144 0.7–3.5 ~150,000 43,885</td>
+    </tr>
+    <tr>
+      <td>Resolution  ‘Gold-standard’ at FSC 0.143 (Å)</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Model refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution in phenix.real_space_refine (Å)</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Number of atoms/residues/molecules  NCS restrained chains  Protein atoms, residues per chain  Nucleotide atoms, molecules per chain  Mg2+ atoms per chain  Water molecules per chain</td>
+      <td>6 5958, 745 85, 3 2 6</td>
+    </tr>
+    <tr>
+      <td>Secondary structure restraints (per chain)  Helices  Sheets  Ramachandran  Hydrogen bonds  C-beta torsion restraints (per chain)</td>
+      <td>29 7 743 252 1404</td>
+    </tr>
+    <tr>
+      <td>Ramachandran angles  Favored  Allowed  Outliers</td>
+      <td>94.3 5.7 0.0</td>
+    </tr>
+    <tr>
+      <td>r.m.s. deviations  Bond lengths (Å)  Bond angles (°)</td>
+      <td>0.01 1.28</td>
+    </tr>
+    <tr>
+      <td>Molprobity  Score  Clashscore  Omegalyze outliers (residues per chain)</td>
+      <td>1.76 6.89 1</td>
+    </tr>
+    <tr>
+      <td>EMRinger score</td>
+      <td>3.09</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cone-domain repositioning and hydrophobic interactions stabilize the α6 ring
 
 Six α subunits, organized as three dimeric units, make contacts through their cone domains to assemble an α6 ring that resembles the overall arrangement seen previously in lower resolution crystal structures of dATP-inhibited human (Ando et al., 2016) and yeast α (Fairman et al., 2011) (Figure 3A). The α6 ring is ~180 Å in diameter and ~80 Å thick with a central hole that is constricted to 60 Å near each opening but widens to ~80 Å midway through the ring’s interior. Each α subunit from the α6 ring is similar to the 2.4-Å resolution crystal structure of human α2 (Fairman et al., 2011) with an RMSD over 738 Cα atoms of 2.25 Å. Differences are localized to three regions (Figure 3—figure supplement 5), the cone domain, a β-hairpin loop (residues Ile624–Val637) adjacent to the cone domain, and loop 2. The largest change is rotation of the cone domain by 20°, which is necessary for the three α dimers to interact with the requisite geometry to assemble a closed α6 ring (Figure 3B,C).
 
@@ -66,23 +165,31 @@ Density consistent with Mg2+-dATP is observed within the cone domain close to th
 
 The interface between α2 subunits in the α6 ring involves cone domain helices 1 and 2 (Figure 3C). Remarkably, the same two helices of the cone domain make α-β contacts in the E. coli α4β4 dATP-inhibited ring, although the residues involved are not conserved (Figure 3E). 740 Å2 of solvent-accessible surface area is buried per subunit upon α6 ring formation, which is somewhat more extensive than the 575 Å2 per subunit buried surface in the E. coli α-β contact (measured in 5CNS [Zimanyi et al., 2016]). In the human α6 ring structure, the α2-α2 inter-subunit contacts are primarily composed of a hydrophobic core with Phe15 and Ile44 positioned on the two-fold symmetry axes and the side chains of Met1, Ala37, Thr40, Met41, and Leu47 contributing additional contacts (Figure 3C). In addition to hydrophobic shape complementarity, Arg12 and Gln23 may contribute a hydrogen bond at the flanks of the interface. Asp16, a highly conserved residue that when mutated was found to disrupt α6 ring formation and reduce inhibition by dATP (Fairman et al., 2011), also sits at the two-fold symmetry axis. Unfortunately, the side chain of Asp16 has poorly defined density beyond Cβ of the side chain, making it difficult to fully explain the high degree of conservation. Overall, however, the density quality is impressive (Video 1), providing the first near-atomic view of the molecular interactions responsible for human RNR inhibition by dATP.
 
-## One β2 binds at the periphery of α6 rings
+![Video 1.](https://cdn.elifesciences.org/articles/31502/elife-31502-video1.mp4.jpg)
+
+**Video 1.:** Starting from a view down the three-fold symmetry axis, the structure rotates to a view of the cone domains on the two-fold symmetry axis, zooms into the intersubunit interface as seen in Figure 3C, and then rocks back and forth over a range of 30°. Density is shown as mesh colored according to regions of the structural model as in Figure 1.
+
+### One β2 binds at the periphery of α6 rings
 
 One explanation for why a stable α6 ring is inactive is that β2 cannot access α2 for radical generation in this state. To evaluate the interaction between human α and β, we prepared negative stained specimens of α and β with the same mixture of ATP, dATP and CDP used to determine our cryo-EM α6 structure. Despite the fact that β was added in equimolar ratio with α, α6β6 complexes did not form. Instead, we observed that only a fraction of α6 rings have a single, variably positioned additional density, which we attribute to a single β2, consistent with earlier molecular mass observations of an α6β2 complex of mouse RNR (Rofougaran et al., 2006). The majority of rings showed no β2 density at all (Figure 4A). Similar results were obtained with CIFTP-inhibited RNR. ISAC averages that result from cryo-EM specimens prepared with ClFTP exhibit a single additional β2 density protruding from the ring or no additional density (Figure 4B). Collectively, these results indicate that β2 subunits show limited interaction affinity for stable α6 rings.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/31502/elife-31502-fig4-v1.jpg)
 
-**Figure 4.:** 2 with α6 rings.(A) ISAC averages of negatively stained α with β in the presence of both 3 mM ATP and 0.05 mM dATP (same concentrations used for cryo-EM structure) reveal variability in both occupancy and location of β. Bottom row presents corresponding views of the α6 ring as a low-resolution surface with circles highlighting the position of β2 in the averages. (B) Similar views seen in ISAC averages from cryo-EM specimens of α with β and ClFTP. (C) 3D cryo-EM reconstruction of α with β and ClFTP. (D) Model of β2 docked with an α2 in the α6 ring is tightly constrained by proximity of cone domains (green) and the three-helix insertion (purple) of α2 and adjacent α subunits in the ring. (E) Variance map shows additional partially ordered density for C-terminal tails of α protruding into the central opening of the α6 ring.
+**Figure 4.:** (A) ISAC averages of negatively stained α with β in the presence of both 3 mM ATP and 0.05 mM dATP (same concentrations used for cryo-EM structure) reveal variability in both occupancy and location of β. Bottom row presents corresponding views of the α6 ring as a low-resolution surface with circles highlighting the position of β2 in the averages. (B) Similar views seen in ISAC averages from cryo-EM specimens of α with β and ClFTP. (C) 3D cryo-EM reconstruction of α with β and ClFTP. (D) Model of β2 docked with an α2 in the α6 ring is tightly constrained by proximity of cone domains (green) and the three-helix insertion (purple) of α2 and adjacent α subunits in the ring. (E) Variance map shows additional partially ordered density for C-terminal tails of α protruding into the central opening of the α6 ring.
 
 A 3D reconstruction of an α6β2 complex calculated from images of CIFTP-inhibited RNR shows β2 density only above the ring plane, not within it (Figure 4C). Whether β2 density was above or within the ring was not clear from previous 2D images (Fairman et al., 2011). These new data allow us to establish that β2 density is above the ring and to consider why this is the case. The dimensions of β2 and the α6 ring provide a simple explanation for exclusion of β2 from the inner ring cavity. At ~80 Å wide on its longest edge, β2 would have difficulty navigating through the ~60 Å wide entrance to the cavity. If β2 were able to access the interior of the ring, it would still need to be able to assume an RT-competent position with respect to α6. Docking (based on a ~30-Å resolution EM structure of the α2β2 state of E. coli RNR [Brignole et al., 2012; Uhlin and Eklund, 1994; Minnihan et al., 2013a]) suggests that the ability of β2 to assume a catalytically relevant position is constrained by cone domains and the three-helix insertion motif on α (Figure 4D). Additionally, the ‘cavity’ of the α6 ring is not empty. As in all structures of RNRs, the 49-residue-long C-terminal tail of α is disordered and could not be directly detected in the 3.3-Å resolution cryo-EM structure. However, the locations of the last visible residues suggest that the six disordered C-terminal tails of α6 are likely pointing into the central cavity. Consistent with this location for the C-terminal tails, a 3D variance map shows partial densities protruding into the α6 ring (Figure 4E). Six 49-residue-long flexible tails would further impede ring access by β2 (Figure 2B).
 
-## Molecular basis for allosteric specificity regulation appears to be conserved for the CDP-dATP pair
+### Molecular basis for allosteric specificity regulation appears to be conserved for the CDP-dATP pair
 
 No high-resolution structures of RNRs in an active state, capable of inter-subunit RT to form the catalytic thiyl radical, have been reported. However, it has not been necessary to crystallize an active state of RNR to visualize substrate and effector binding, given that substrates and effectors bind well to pre-catalytic states. In fact, substrate/effector binding increases α2-β2 affinity five-fold (Ingemarson and Thelander, 1996; Hassan et al., 2008), suggesting that substrate/effector binding precedes subunit association and RT. That being said, crystal lattice contacts have historically complicated the analysis of substrate- and effector-bound structures of RNRs, resulting in poor quality density for either substrate, effector, or loop 2, the loop that communicates between the substrate and effector-binding sites (Zimanyi et al., 2016). Here, using cryo-EM, we notably find clear density for both substrate and effector and are able to assess their binding interactions (Figure 5A, Video 2). dATP can be modeled into the cryo-EM map at the specificity site located at the α2 dimer interface, where it makes contacts with loop 2 (residues 286–295) and loop 1 (residues 255–271) from the neighboring subunit (Figure 5B). Backbone amides of residues Ala263 and Gly264 in loop 1 establish contacts with the β- and γ-phosphates similar to those seen in crystal structures of yeast or human α with bound TTP or human α with dATP (Xu et al., 2006; Fairman et al., 2011). As previously noted for those structures, the orientation of loop 1 in the eukaryotic α2 is different from that in E. coli α2, but in both cases contacts are made by the loop to the effector phosphates. As in other RNR structures (Larsson et al., 2004; Xu et al., 2006; Fairman et al., 2011), Arg256 provides further stabilization of the γ-phosphate, Lys243 (not on loop 1 or loop 2) interacts with the α- and β-phosphates, and the Asp226 side chain makes hydrogen bonds with the O3’ of the deoxyribose sugar.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/31502/elife-31502-fig5-v1.jpg)
 
-**Figure 5.:** E. coli to human.(A) Residues of human α (blue) interacting with CDP (carbons in orange) in the active site and dATP (carbons in yellow) in the specificity site. Density for CDP in orange mesh and for dATP in yellow mesh. (B) Zoom in on dATP in the specificity site. Water molecules and oxygen atoms are in red, nitrogen in blue, magnesium in green, and phosphate in gold. (C) Zoom in on CDP in the active site. (D) Overlay of human α from the α6 EM structure in blue with E. coli α from the α4β4-CDP-dATP cocrystal structure in gray (PDB: 5CNS) shows a nearly identical loop 2 conformation positioning Gln288 and Arg293 (Gln294 and Arg298 in E. coli). (E) Overlay of human α from the α6 EM structure in blue with crystal structure of human α with N- and C-termini truncated (residues 77–742) cocrystallized with dATP in tan (PDB: 2WGH) shows similar positioning of dATP but an altered conformation of loop 2 in the absence of bound CDP. The CDP shown is from the α6 EM structure. (F) Overlay of human α from the α6 EM structure in blue with equivalent residues of yeast α structure with CDP and AMPPNP in brown (PDB: 2CVU) shows a conformation of loop 2 that is distinct from that seen in structures of E. coli and human α.
+**Figure 5.:** (A) Residues of human α (blue) interacting with CDP (carbons in orange) in the active site and dATP (carbons in yellow) in the specificity site. Density for CDP in orange mesh and for dATP in yellow mesh. (B) Zoom in on dATP in the specificity site. Water molecules and oxygen atoms are in red, nitrogen in blue, magnesium in green, and phosphate in gold. (C) Zoom in on CDP in the active site. (D) Overlay of human α from the α6 EM structure in blue with E. coli α from the α4β4-CDP-dATP cocrystal structure in gray (PDB: 5CNS) shows a nearly identical loop 2 conformation positioning Gln288 and Arg293 (Gln294 and Arg298 in E. coli). (E) Overlay of human α from the α6 EM structure in blue with crystal structure of human α with N- and C-termini truncated (residues 77–742) cocrystallized with dATP in tan (PDB: 2WGH) shows similar positioning of dATP but an altered conformation of loop 2 in the absence of bound CDP. The CDP shown is from the α6 EM structure. (F) Overlay of human α from the α6 EM structure in blue with equivalent residues of yeast α structure with CDP and AMPPNP in brown (PDB: 2CVU) shows a conformation of loop 2 that is distinct from that seen in structures of E. coli and human α.
+
+![Video 2.](https://cdn.elifesciences.org/articles/31502/elife-31502-video2.mp4.jpg)
+
+**Video 2.:** Starting from a view down the three-fold symmetry axis, the structure rotates while zooming through the center of the ring for a view of the loop 2 region that confers substrate preference as seen in Figure 5A, and then rocks back and forth over a range of 30°. Density is shown as mesh colored according to regions of the structural model as in Figure 1.
 
 As previously observed in E. coli, the backbone amide and carbonyl of loop 2 residue Asp287 (human numbering; Ser293 in E. coli) are involved in the specific recognition of the adenine base of effector dATP (Zimanyi et al., 2016), positioning loop 2 such that the side chain of the adjacent Gln288 (Gln294 in E. coli) is directed into the active site where it can hydrogen bond to the base of substrate CDP (Figure 5A) The presence of an extra residue in loop 2 in human RNR (compared to E. coli) results in an additional contact to the dATP adenine base made by the Gly289 carbonyl, further stabilizing a ‘Gln-in’ conformation of loop 2. Since the presence of the Gln side chain in the active site would inhibit the binding of the larger purine bases, the “Gln-in “position confers preference for pyrimidines CDP and UDP over purines ADP and GDP. This observation was first made for the E. coli RNR enzyme (Zimanyi et al., 2016), and we now find the same molecular mechanism of substrate specificity in play with the human enzyme.
 
@@ -106,74 +213,74 @@ In summary, advances of cryo-EM methodology have allowed us to obtain a near-ato
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 5-3H]-CDP was obtained from ViTrax. hTrx1 and hTrxR1 were isolated as previously described (Ando et al., 2016).
 
-## Methods
+### Methods
 
-## RNR expression, purification, and activity assays
+#### RNR expression, purification, and activity assays
 
 His6-tagged forms of human α and β were expressed from plasmid pET-28a (Wang et al., 2007) in E. coli strain BL21(DE3)-RIL (Stratagene) and purified by Co2+-affinity chromatography as previously described (Aye and Stubbe, 2011; Ando et al., 2016). α typically has a specific activity of 600 ~ 850 nmol dCDP/min/mg and reconstituted β has a specific activity of 2000 ~ 2400 nmol dCDP/min/mg (Figure 3—figure supplement 2). α is stored in 50 mM Tris, pH 7.6, 15 mM MgCl2, 100 mM KCl, 5 mM DTT, 5% glycerol at 8.4 mg/mL (92 μM) for all cryo-EM experiments. Activities of α were determined by measuring the reduction of [5-3H]-CDP with a 5-fold molar excess of β. To mimic the enzyme concentrations used in the cryo-EM studies, the reaction mixture at 37°C of 180 μL contained 14 μM α, 70 μM β, 5 mM [5-3H]-CDP (3633 cpm/nmol). ATP and/or dATP at the different concentrations, 25 μM human thioredoxin (hTrx1), 0.2 μM thioredoxin reductase (hTrxR1), 2 mM NADPH in 50 mM HEPES, pH 7.6, 15 mM MgCl2, 150 mM KCl. The mixtures were incubated for 30 s at 37°C after addition of β, and the reaction was initiated by addition of [5-3H]-CDP. Aliquots (40 μL) were taken at 0, 1, 2, and 3 min and quenched in a boiling water bath for 2 min. dC formation was analyzed by the method of (Steeper and Steuart, 1970) and quantified by scintillation counting.
 
-## Negative stain EM studies with human α in absence of β2
+#### Negative stain EM studies with human α in absence of β2
 
 Purified recombinant α at 6 μM (or 10 μM α in the case of the ClFDP/dGTP experiment) was incubated at 37°C for 2 min with effector nucleotides at the indicated concentrations (Figure 3—figure supplement 1) in 50 mM HEPES, pH 7.6, 15 mM MgSO4, 1 mM EDTA, 5 mM DTT and then further diluted to ~17 μg/mL (0.19 μM) in buffer with nucleotides. Preparation of specimens with ClFDP/dGTP and with 1–10 mM ATP were previously described in (Aye et al., 2012) and (Ando et al., 2016). 5 μL of the diluted mixture was applied to carbon-coated 300 mesh Cu/Rh grids (Ted Pella) that had been glow discharged immediately before use. After allowing ~1 min for protein adsorption, the solution was blotted, washed three times with 5 μL 2% uranyl acetate (Ted Pella), and incubated for 1 min in the final uranyl acetate wash before applying a second carbon layer, blotting, and air drying (Tischendorf et al., 1974). Images were acquired of each specimen at a magnification of 50,000× on a Tecnai F20 Twin (FEI) operated at 120 kV equipped with a US4000 CCD detector (Gatan). Power spectra were examined for drift and astigmatism and those with defocus values of approximately 0.6 μm as estimated by SPIDER (Frank et al., 1996) or ACE2 (Mallick et al., 2005) were further processed. Particles were selected, windowed, downsampled by a factor of 3 to a pixel size of 6.51 Å (the smaller TTP particles were downsampled by 2 to 4.34), and normalized with EMAN2 (Tang et al., 2007) and SPARX (Hohn et al., 2007). After initial reference-free alignment, K-means classification, and particle cleaning with SPARX, ISAC (Yang et al., 2012) was used to generate final class averages. Poorly resolved ISAC averages were eliminated, and the remaining averages were aligned and sorted for visual comparison (Figure 3—figure supplement 1).
 
-## Negative stain EM studies of the dATP-inhibited human α6 ring with β2
+#### Negative stain EM studies of the dATP-inhibited human α6 ring with β2
 
 Negative stain EM studies (Figure 4A) were conducted for α in the presence of β using the same inhibitory concentrations of dATP and ATP that were used for cryo-EM. Following 1 min incubation at 37°C, 3 μM α was combined with a pre-warmed mixture of buffer (50 mM HEPES, pH 7.6, 15 mM MgCl2, 50 mM KCl, 5 mM DTT) and final concentrations of 3 mM ATP, 0.05 mM dATP, and 1 mM CDP, followed by addition of 3 μM β. The mixture was incubated at 37°C for 2 min followed by further ~20 fold dilution in buffer containing nucleotides at the same concentrations before applying 5 μL to a continuous carbon coated grid and staining as described above. Stained specimens were imaged using a Tecnai T12 Twin electron microscope (FEI) equipped with a LaB6 filament, operated at 120 kV acceleration voltage and 52,000× magnification. Images were recorded on a TemCam-F416 CMOS detector (TVIPS). Particle images were selected using DoGPicker (Voss et al., 2009) and analyzed with SPARX. ISAC averages corresponding to views from above the ring (along the three-fold symmetry axis) and from an orthogonal direction (along the two-fold axis) provided information about the presence and position of β2 density (Figure 4A).
 
-## Cryo-EM studies of human α6 with ATP, dATP, and CDP
+#### Cryo-EM studies of human α6 with ATP, dATP, and CDP
 
-## Specimen preservation
+##### Specimen preservation
 
 To prepare cryo-EM specimens, α and a mix of ATP, dATP, and CDP were separately incubated at 37°C for 1 min and then combined to a final composition of 14 μM α, 0.05 mM dATP, 3 mM ATP, 1 mM CDP in 50 mM HEPES, pH 7.6, 15 mM MgCl2, 1 mM EDTA, 5 mM DTT, and 50 mM KCl. The addition of KCl to the buffer prevented clumping of particles. The mixture was then incubated for an additional 2 min at 37°C. In a cold room at >90% relative humidity, 2.4 μL of the protein-nucleotide mixture was applied to a CFlat 400 mesh Cu grid supporting a carbon film of 2 μm holes with 2 μm spacing (Protochips) (Quispe et al., 2007) that had been plasma cleaned in a Solarus 950 (Gatan) at 25 W for 10 s in 75% Ar, 25% O2 gas mixture and then immediately before use was glow discharged (Dubochet et al., 1971) at 20 mA for 30 s in an EMITech K100X. The grid was manually blotted with filter paper and plunged into liquid ethane (Adrian et al., 1984).
 
-## Imaging
+##### Imaging
 
 Cryo-EM specimens of α with ATP, dATP and CDP were imaged at 22,500× magnification (resulting in a pixel size of 1.31 Å on the specimen scale) with underfocus values between 0.8 and 2.8 μm, using a Titan Krios electron microscope (FEI) operating at an accelerating voltage of 300 kV (Table 1). Automated data collection was carried out with Leginon (Suloway et al., 2005) and a total of 2144 micrographs were recorded on a K2-Summit direct electron detector (Gatan) operated in counting mode. A total accumulated dose of 44 electrons per Å2 was fractionated into 38 frames over a 7.6 s exposure time.
 
-## Frame alignment and defocus estimation
+##### Frame alignment and defocus estimation
 
 Full frames of each dose-fractionated exposure were aligned and summed with motion_corr (Li et al., 2013) (Table 1). Defocus of aligned frame sums was estimated with CTFFIND3 (Mindell and Grigorieff, 2003) and CTER (Penczek et al., 2014).
 
-## Particle selection
+##### Particle selection
 
 An initial set of 5,000–10,000 particles were selected manually from a subset of frame sums and used to calculate 2D class averages with ISAC (Yang et al., 2012). These averages were used as templates for automated particle selection using FindEM (Roseman, 2003) in Appion (Lander et al., 2009). Initial screening of particles was performed using multivariate statistical analysis image clustering. A second round of image screening was performed using ISAC on 4-fold decimated images. ISAC class averages lacking clear features, not resembling possible projections of a macromolecular complex (e.g., ice contamination), or showing density corresponding to more than one particle were eliminated. The 43,885 images included in the remaining ISAC averages were used for further image processing in the SPARX and RELION EM image processing packages (Hohn et al., 2007; Scheres, 2012) (Table 1). These screened images were processed with the movie refinement and particle polishing routines in RELION and ‘shiny’ images comprising all but the first four detector frames were used for all further image-processing steps.
 
-## Map refinement
+##### Map refinement
 
 A cryo-EM map of the dATP-inhibited α6 ring with a final resolution of 3.3 Å (at FSC = 0.143) was calculated using SPARX following a protocol comprising two parameter refinement stages (Figure 3A and Figure 3—figure supplement 3). In the first stage, the cryo-EM image data were divided into two non-overlapping subsets and orientation parameters for each subset were independently refined starting from an ~25 Å initial reference, which was calculated ab initio through stochastic hill climbing refinement (Elmlund et al., 2013) starting from a set of ~10,000 images to which random Euler angle values were assigned, thereby eliminating any possibility of reference bias. At each iteration, low-pass filtering for the partial volumes was set to the frequency corresponding to the FSC = 0.5 value between two quasi-independent partial maps. This initial stage was followed by local orientation parameter optimization with template volume amplitude adjustment. Amplitude correction factors were determined using the rotationally averaged power spectrum computed for an initial pseudoatomic α6 model generated by fitting crystal structure of human α (PDB: 3HNF chain B) into a lower resolution EM map. Local resolution was computed using the local resolution calculation function implemented in SPARX (Figure 3—figure supplement 4).
 
-## Model refinement
+##### Model refinement
 
 Coordinates from the crystal structure of human α (PDB: 3HNF) were docked into the EM reconstruction with UCSF Chimera (Goddard et al., 2007). The initial model was adjusted by hand using COOT (Emsley et al., 2010) and further adjusted through refinement in reciprocal space with phenix.refine (Adams et al., 2010). To speed up refinement in reciprocal space, the map was trimmed using e2proc3d.py (Tang et al., 2007) to 160 × 160 × 96 voxels, dimensions slightly larger than the oblate shape of the ring. dATP was modeled in the activity and specificity sites. Although at 3.3-Å resolution ATP and dATP are difficult to distinguish, dATP appeared to be the better fit and is expected to have a higher affinity for both sites (Brown and Reichard, 1969b; Reichard et al., 2000; Kashlan and Cooperman, 2003). CDP was modeled in the active site. Final rounds of model building and refinement were done with COOT and phenix.real_space_refine version 1.11.1-dev-2650 (Adams et al., 2010). In real space refinement, resolution was set to 3.0 Å, electron scattering table was selected, NCS constraints for the six α subunits were automatically detected and refined, secondary structure hydrogen bonds were relaxed to 0.4 sigma, and secondary structure restraints were manually defined by comparison with existing crystal structures of human, yeast, and E. coli α and with secondary structure restraints that were determined automatically by PHENIX. Definitions for CDP and dATP from the CCP4 monomers library were modified to restrain ideal phosphate dihedral angles and specify alternate conformations for sugar pucker (C2′-endo/C3′-exo and C2′-exo/C3′-endo). Phosphates of dATP were modeled with an octahedrally coordinated Mg2+ ion to three water molecules, restrained to ideal distances (2.1 Å) and angles (90°). Model quality was evaluated using Molprobity (Chen et al., 2010), CaBLAM (Richardson and Richardson, 2013), and EMRinger (Barad et al., 2015) (Table 1). The final model is a good fit to the map (Figure 3A) and contains two residues of tag, residues 1 through 743 of the 792 residues of human α, twelve dATP molecules, and six CDP molecules (Table 1). Figures of the model and map were rendered with UCSF Chimera.
 
-## Preparation of cryo-EM specimens, imaging, and analysis of the ClFTP-inhibited α6 ring with β2
+#### Preparation of cryo-EM specimens, imaging, and analysis of the ClFTP-inhibited α6 ring with β2
 
-## Specimen preservation
+##### Specimen preservation
 
 15 μM α and 16.5 μM β were added to a solution containing 100 μM dGTP in 50 mM HEPES, pH 7.6, 15 mM Mg2SO4, 1 mM EDTA, 5 mM DTT and incubated at 37°C for 2 min before addition of a 5-fold molar excess of ClFTP (synthesized from ClF (AK Scientific) as described in [Aye and Stubbe, 2011]) over α. This mixture was further incubated at 37°C for 2 min before dilution 75-fold into 50 mM HEPES, pH 7.6, 15 mM Mg2SO4, 150 mM NaCl containing 0.5 mM ATP to mimic the elution buffer used in gel filtration experiments of α and β (Wang et al., 2007; Aye and Stubbe, 2011). 3.2 μL of the mixture was applied to a freshly glow discharged thin continuous carbon film supported by a 400 mesh CFlat grid with 2 μm holes (Protochips), blotted manually, and plunged in liquid ethane.
 
-## Imaging
+##### Imaging
 
 Images were acquired on a Tecnai F20 Twin (FEI) set up as above for negative stain acquisition, with 103 micrographs acquired manually with exposures of ~20 e-/A2 on Kodak SO163 film and digitized at 1.27 Å/pixel on a Nikon CoolScan 9000ED.
 
-## Analysis
+##### Analysis
 
 Particles were selected, windowed, downsampled to 5.08 Å/pixel, and normalized with EMAN2. Reference-free 2D alignment and K-means clustering was used for initial image screening, and the remaining 29,027 particles were classified with ISAC (Yang et al., 2012). ISAC averages that represent views with and without additional β2 density were extracted (Figure 4B). ISAC groups that clearly had β2 density were subjected to 3D refinement with SPARX (Hohn et al., 2007) using a low-pass filtered initial map of α6β2 generated with an identically prepared negative stain specimen of α and β with ClFTP using the Random Conical Tilt procedure (Radermacher et al., 1987). In USCF Chimera, our dATP-inhibited α6 model was docked into the density map, and the human β2 model (PBD: 2UW2) was positioned into the poorly resolved additional density that likely results from variable β2 position with respect to the α6 ring (Figure 4C).
 
-## Preparation of cryo-EM specimens, imaging, and analysis of human α with dATP
+#### Preparation of cryo-EM specimens, imaging, and analysis of human α with dATP
 
-## Specimen preservation
+##### Specimen preservation
 
 Cryo-EM specimens of α with dATP (Figure 3—figure supplement 1D) were prepared as follows. 20 μM α was diluted in 50 mM HEPES, pH 7.6, 15 mM MgCl2, 5 mM DTT, and 0.1 mM dATP. 5 μL of the mixture was applied to a Quantifoil grid that had been washed first with 5 μL of the dATP buffer mixture. The grid was blotted for 3 s in a Vitrobot (FEI) at 25°C, 100% humidity, and then plunged in liquid ethane.
 
-## Imaging
+##### Imaging
 
 Using EPU software, 860 images were acquired on a Titan Krios (FEI) operated at 300 kV and a magnification of 29,000× with a backthinned Falcon I detector (FEI) with 1 s exposures of 21 e-/A2 at 2.30 Å/pixel.
 
-## Analysis
+##### Analysis
 
 Defocus of images was estimated with CTER (Penczek et al., 2014). Particles were identified automatically with PARTICLE using three distinct reference projections calculated from the yeast α6 crystal structure (PDB: 3PAW) filtered to 30 Å resolution (Fairman et al., 2011). Particle images were windowed, phase-flipped, downsampled to 4.6 Å/pixel, and normalized with EMAN2. Reference-free 2D alignment, K-means clustering, and ISAC were used for initial image screening, and the remaining 58,727 particles were classified with a final round of ISAC (Yang et al., 2012). 2D averages indicate the presence of conformational heterogeneity (Figure 3—figure supplement 1D) consistent with what was seen for this nucleotide condition in negative stain (Figure 3—figure supplement 1C).

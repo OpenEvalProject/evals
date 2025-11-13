@@ -8,10 +8,10 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Neurology, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Department of Psychiatry and Behavioral Sciences, University of California, San Francisco San Francisco United States
-3. https://ror.org/043mz5j54 Neuroscience Graduate Program, University of California, San Francisco San Francisco United States
-4. https://ror.org/043mz5j54 Weill Institute for Neurosciences, University of California, San Francisco San Francisco United States
+1. Department of Neurology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Department of Psychiatry and Behavioral Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Neuroscience Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+4. Weill Institute for Neurosciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
@@ -33,11 +33,19 @@ We examined the relationships between CIN activity, DA release, and motivation. 
 
 ## Results
 
-## ACh reliably drives DA release in NAc, without rapid depression
+### ACh reliably drives DA release in NAc, without rapid depression
 
 To study the rapid influence of CINs over striatal DA release in freely moving animals, we employed an all-optical approach. We expressed the excitatory opsin ChR2 in NAc CINs, using ChAT-Cre rats (Witten et al., 2011) and Cre-dependent expression from a virus (AAV5::DIO::EF1a::ChR2::eYFP). In the same region, we expressed the red-shifted DA sensor RdLight1 (Patriarchi et al., 2020) using another virus (AAV-DJ::CAG::RdLight1). We recorded DA release dynamics by fiber photometry while driving CINs through the same fiber, in awake unrestrained rats not performing any particular task (Figure 1a). CIN stimulation immediately increased the DA signal, and this increase was maintained as long as stimulation was applied (up to 4 s; Figure 1b and c). In contrast to results in slices (Threlfell et al., 2012), the amplitude of DA release scaled with the duration and frequency of laser pulses (Figure 1d and e). CIN-evoked DA release remained robust to the second of a pair of pulses across a range of inter-pulse intervals (Figure 1f), indicating that neither the directly evoked ACh release nor the consequent DA release show rapid synaptic depression in behaving animals (see also Collins et al., 2019 for related results with choline measurements). To assess short-term plasticity at higher stimulation frequencies, we conducted an additional quantitative analysis (Koester and Sakmann, 2000; ). We compared the observed DA response to four CIN stimulation pulses to that predicted by linearly summating the response to a single pulse, four times. Regardless of stimulation frequency, the ratio between observed and predicted peak response remained close to 1 (Figure 1—figure supplement 1), confirming the absence of short-term depression in CIN-evoked DA release.
 
-## CIN activity and DA release each respond to reward-related cues and ramp up during motivated approach
+![Figure 1.](https://cdn.elifesciences.org/articles/85011/elife-85011-fig1-v2.jpg)
+
+**Figure 1.:** (a) Rat brain atlas section (Paxinos and Watson, 2006) showing the approximate location of fiber tips. (b) Representative traces of DA release (565 nm excitation, red) and isosbestic control (405 nm, purple), recorded from the location marked by a triangle in (a). Laser stimulation was delivered as two trains of pulses (470 nm, 10 mW, 4 ms, 16 Hz). Scale bars: 1 s, 1% dF/F. (c) Top: example session showing DA release in response to 16 Hz optogenetic stimulation of nucleus accumbens (NAc) CINs, with 1, 4, 16, 32, or 64 pulses, in pseudo-random order. Dashed lines demarcate trials with similar stimulation parameters. Bottom: normalized dF/F from RdLight aligned to the first pulse in a train of laser stimulation of NAc CINs (Stim parameters: 4 ms pulse, 16 Hz, 10 mW; n = 4 rats). Band shows ± SEM. dF/F traces for each recording were normalized to the maximum response evoked by 64 stimulation pulses. (d) DA release in response to a single laser pulse of varying duration (1, 2, 4, 6 ms) at 10 mW. Responses are normalized to 1 ms width evoked response for each subject and averaged. Band shows ± SEM. The magnitude of DA release depends on the pulse width (ANOVA: F(3,12) = 5.52, p=0.013). (e) DA release in response to four laser pulses (4 ms) of varying frequency (4, 8, 16 Hz; all 10 mW). Release patterns are normalized to the single pulse response of the same width and power for each subject, and averaged. Band shows ± SEM. The magnitude of DA release depends on the frequency of stimulation (bottom, ANOVA: F(3,12) = 9.17, p=0.002). (f) Paired-pulse ratio test: DA release patterns in response to a pair of 4 ms, 10 mW pulses. A two-way ANOVA revealed that there was no statistically significant interaction between the pulse order (first or second) and the delay between two pulses (F(2,6) = 1.05, p=0.35), and there were no main effects of inter-pulse interval (p=0.47) or pulse order (p=0.06).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85011/elife-85011-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Representative evoked DA release following a single 4 ms pulse of optogenetic CIN stimulation on the left. This response is then summated four times at different frequencies (4, 8, 16 Hz) to calculate the predicted amplitude of DA response at those stimulation frequencies (black) and compare it to the measured DA response (red). (b) Quantitative comparison of measured and calculated DA response to repeated CIN stimulation. Two-way ANOVA finds no interaction between stimulation frequency and the ratio of measured to predicted peak DA response (F(2,9) = 1.41, p=0.293).
+
+### CIN activity and DA release each respond to reward-related cues and ramp up during motivated approach
 
 We next examined how CIN activity and DA release co-vary in freely moving rats. We expressed the Ca2+ indicator GCaMP6f in CINs (AAV5::Syn::Flex::GCaMP6f) and RdLight1 in the same area (AAV-DJ::CAG::RdLight1). This allowed us to monitor DA release and CIN Ca2+ dynamics through the same fiber (Figure 2a). CIN activity and DA release showed distinct time courses (Figure 2b), but both showed rapid increases in response to the unexpected sound of reward delivery (food hopper ‘Click,’ occurring at random intervals drawn from a uniform distribution of 15–30 s). After delivery, rats took a variable amount of time to collect the food rewards, allowing us to distinguish between neural changes associated with the sensory cue and those associated with the subsequent food retrieval. Aligning signals on food port entry revealed that both CIN GCaMP and DA release rapidly ramped up as rats approached the food port (Figure 2c and d).
 
@@ -45,7 +53,7 @@ We next examined how CIN activity and DA release co-vary in freely moving rats. 
 
 **Figure 2.:** (a) Dual-color photometry of CIN activity and DA fluctuations measured simultaneously through the same fiber. The locations of recording fiber tips are shown projected onto the nearest rat brain atlas section (Paxinos and Watson, 2006). (b) Example of simultaneous recording of spontaneous activity, from the triangle location in (a). Green: CIN GCaMP6f signal (excitation: 470 nm); red: RdLight1 (565 nm); purple: isosbestic control (405 nm). Dashed lines: unexpected food hopper clicks, delivering a sucrose pellet. Inset shows a zoomed-in epoch around a reward click. Note that CIN GCaMP and DA signals are distinct: transients in one signal are not always accompanied by transients in the other. Scale: 1% dF/F, 5 s. (c) A representative session with simultaneous CIN GCaMP6f and RdLight1 recording, aligned to hopper clicks. Trials are sorted by the reward collection time (the black dot indicates food-port entry). Both CIN activity and DA fluctuations show a rapid response to the click, and a separate ramping increase during the food-port approach is apparent for longer collection times. Color scale indicates z-scored signal range. (d) Top: average traces showing CIN activity and DA fluctuations aligned to the hopper click, peak responses (within 1 s from click) significantly differed from peak values aligned to random time points in the task (n = 1000 shuffles). Bottom: the slope of the signal ramps was significantly different from ramp slopes aligned to random time points throughout the session. The slope was determined by fitting a line that connects the maximum and minimum signal, 0.5 s before the food-port entry. Filled gray rectangles show chance levels (95% confidence ranges, from 1000 shuffles).
 
-## CIN ramps can account for DA release ramps in the absence of DA firing changes
+### CIN ramps can account for DA release ramps in the absence of DA firing changes
 
 We next turned to a trial-and-error operant task, in which we have previously observed increases in NAc DA release during motivated approach (Hamid et al., 2016) without apparent increases in DA cell firing (at least in the lateral VTA; Mohebi et al., 2019). In brief, each trial starts with the illumination of a center port (Figure 3a). To obtain sucrose pellet rewards, rats approach and place their nose in this center port, and wait for a variable period (500–1500 ms) until an auditory Go cue. They then nose-poke an adjacent port to the left or right. These left/right choices are probabilistically rewarded (10, 50, or 90%, probabilities change independently after blocks of 35–45 trials). Rewarded trials are made apparent by a hopper click, after which rats approach the food port to collect the pellets (Figure 3b).
 
@@ -55,7 +63,7 @@ We next turned to a trial-and-error operant task, in which we have previously ob
 
 To assess whether ramps in CIN activity might provide the ‘missing’ control of DA release without changes in DA cell firing, we recorded CIN GCaMP6f signals. We compared these to previously obtained data of VTA DA cell firing and NAc DA release (Mohebi et al., 2019). To help disentangle signals related to sensory cue onset versus approach behavior, we examined trials in which light-on and center-in are more than 1 s apart (i.e., ‘latency’ > 1 s). We measured ramping as the slope of the signal in the last 0.5 s before approach completion. We compared these slopes to a 95% confidence interval generated by measuring slopes at random times during the task (1000 shuffles). None of the optogenetically identified lateral VTA DA cells (0/29) showed significant ramps preceding center-in, but ramps were reliably observed in both DA release (10/10 fiber placements in seven rats) and CIN GCaMP (7/8 fiber placements, five rats). Repeating the same analysis for the food-port-in event produced significant ramping up for none of the 29 DA cells (one ramped down instead), but virtually all recordings of DA release (9/10) and CIN GCaMP (8/8) recordings. These observations are consistent with the hypothesis that ramps in NAc DA release are sculpted via CIN activity rather than DA cell firing.
 
-## Motivated approach relies on NAc β2-containing nicotinic receptors
+### Motivated approach relies on NAc β2-containing nicotinic receptors
 
 If NAc CINs directly act upon nearby axons to boost DA release and thereby enhance approach behaviors, such behavior should be sensitive to the blockade of the relevant nAChRs. We tested this in the trial-and-error task, using local drug infusions into the NAc Core (bilaterally, volume 0.5 µl/side). On consecutive days, rats received either aCSF (vehicle), DHβE (selective antagonist of β2* nAChRs [Changeux, 2018; Picciotto et al., 2012]; 15 or 30 µg/side), or flupenthixol, a non-selective D1 and D2 DA receptor antagonist (FLU; 10 µg/side), 10 min before beginning the task. The drug treatment order was randomly assigned and counterbalanced across rats.
 
@@ -63,7 +71,7 @@ Blockade of β2* nAChRs reduced the number of completed trials in a dose-depende
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85011/elife-85011-fig4-v2.jpg)
 
-**Figure 4.:** 2* nicotinic receptors diminishes motivation to work in the operant task.(a) Placement of infusion cannula tips (circles) in NAc Core, based on postmortem histology. (b). The number of trials completed during a 2 hr Bandit session compared to the veh session. F(3,36) = 24.64, p<7.6 × 10–9. Rats treated with DHβE-30 µg and FLU completed fewer trials compared to the vehicle session (p<0.013, p<1 × 10–9, respectively). DHβE-15µg treatment caused a trend toward fewer completed trials (p=0.074) (c). Cumulative distribution of long latencies (latency >1 s) for different treatment conditions, binned at 250 ms. Filled circles denote statistical differences from the Vehicle condition (p<0.01). (d) The hazard rate of long latencies for different condition treatments demonstrates that blocking nicotinic transmission decreases the likelihood of a self-initiated approach (between 1 and 2 s from light-on) in a dose-dependent manner. Filled circles denote statistical differences from the veh condition (p<0.01).
+**Figure 4.:** (a) Placement of infusion cannula tips (circles) in NAc Core, based on postmortem histology. (b). The number of trials completed during a 2 hr Bandit session compared to the veh session. F(3,36) = 24.64, p<7.6 × 10–9. Rats treated with DHβE-30 µg and FLU completed fewer trials compared to the vehicle session (p<0.013, p<1 × 10–9, respectively). DHβE-15µg treatment caused a trend toward fewer completed trials (p=0.074) (c). Cumulative distribution of long latencies (latency >1 s) for different treatment conditions, binned at 250 ms. Filled circles denote statistical differences from the Vehicle condition (p<0.01). (d) The hazard rate of long latencies for different condition treatments demonstrates that blocking nicotinic transmission decreases the likelihood of a self-initiated approach (between 1 and 2 s from light-on) in a dose-dependent manner. Filled circles denote statistical differences from the veh condition (p<0.01).
 
 ## Discussion
 
@@ -83,20 +91,93 @@ Finally, if CINs do indeed help locally sculpt motivational aspects of DA releas
 
 ## Methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (LE rats, both male and female)</td>
+      <td>ChAT-Cre, Long-Evans (male and female rats)</td>
+      <td>RRRC</td>
+      <td>Long-Evans-Tg(ChAT-Cre)5.1Deis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV5-EF1a-DIO- ChR2-eYFP</td>
+      <td>Addgene</td>
+      <td>Cat# 20298-AAV5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV.Syn.Flex.GCaMP6f.WPRE.SV40</td>
+      <td>Addgene</td>
+      <td>Cat# 100833-AAV5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-CAG-RdLight1</td>
+      <td>Patriarchi et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DHβE</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 2349</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Flupenthixol</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS# 51529-01-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks, Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabView</td>
+      <td>National Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 In the conduct of this study, the animals involved were accommodated at the University of California San Francisco (UCSF) Animal Research Facility, which is accredited by AAALAC (#001084). The facility strictly adheres to institutional, federal, and AAALAC guidelines to ensure the highest standards of animal care. Procedures such as euthanasia for perfusion fixation were performed under profound anesthesia to minimize discomfort. The use of animals in this study was in strict compliance with the Public Health Service Policy on Humane Care and Use of Laboratory Animals. The UCSF Institutional Animal Care and Use Committee granted approval for this study (protocol # AN196232-01B). Furthermore, UCSF holds a PHS-approved Animal Welfare Assurance D16-00253/A3400-01, further affirming our commitment to ethical animal use.
 
-## Behavioral task
+### Behavioral task
 
 Rats were trained in the operant ‘bandit’ task described in detail previously (Hamid et al., 2016; Mohebi et al., 2019). Reward probabilities for left and right choices were pseudorandomly chosen from 10, 50, or 90% for blocks of 35–45 trials, over an ~2 hr session. Procedural errors (e.g., failure to hold until the Go cue) resulted in illumination of the house light and a timeout period of 1.5 s.
 
-## Photometry and optogenetic stimulation
+### Photometry and optogenetic stimulation
 
 We used a viral approach to express the genetically encoded optical DA sensor RdLight1 and the Ca2+ indicator GCaMP6f. Under isoflurane anesthesia, a 1 μl cocktail of AAV-DJ-CAG-RdLight1 and AAV5-Syn-Flex-GCaMP6f was slowly (100 nl/min) injected (Nanoject III, Drummond) through a glass micropipette targeting nucleus accumbens: (AP: 1.7, ML: 1.7, DV: 7.0 mm relative to bregma). During the same surgery, optical fibers (400 μm core, 430 μm total diameter) attached to a metal ferrule (Doric) were inserted (target depth 200 μm higher than AAV) and cemented in place. Data were collected >3 wk later, to allow for transgene expression. We used time-division multiplexing (Akam and Walton, 2019): green (565 nm), blue (470 nm), and violet (405 nm; isosbestic control) LEDs were alternately switched on and off in 10 ms frames (4 ms on, 6 ms off). Excitation power at the fiber tip was set to 30 μW for each wavelength. Both excitation and emission signals passed through minicube filters (Doric), and bulk fluorescence was measured with a femtowatt detector (Newport, Model 2151) sampling at 10 kHz. The separate signals were then rescaled to each other via a least-square fit before analysis.
 
 To combine fiber photometry with optogenetics, we infused a cocktail of AAV-DJ-CAG-RdLight1 and AAV5-EF1a-DIO-ChR2-eYFP into the nucleus accumbens and implanted 400 µm fibers above the infusion site during the same surgery. We used time division multiplexing with interleaved LED illumination (565 nm, 405 nm), as above. We used brief laser pulses (470 nm, 20 mW) to activate ChR2.
 
-## Drugs and infusion procedures
+### Drugs and infusion procedures
 
 Rats were bilaterally infused with either the selective α4β2 nicotinic antagonist DHβE (low dose: 15 µg/0.5 µl/side, high dose 30 µg/0.5 µl/side; Tocris Bioscience, Bristol, UK) the non-selective dopamine receptor antagonist flupenthixol (15 µg/0.5 µl/side; Tocris) or sterile saline (0.5 µl/side), which served as the vehicle control. All rats received all drug infusions, counterbalanced for order. Drugs were infused as described previously (Collins et al., 2016). Briefly, dummies were removed, and injectors were inserted into the guide cannulae protruding 3 mm past the guide tip targeted to the NAc. Using a micro infusion pump (Harvard Apparatus), drugs were infused at a rate of 0.5 µl/min for 1 min. Following a 1 min post-infusion wait time, injectors were removed and dummies inserted. Rats were given 10 min post-infusion before being placed in operant chambers for the bandit task.

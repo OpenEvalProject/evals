@@ -17,12 +17,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Cell Biology, Duke Regeneration Center, Duke University School of Medicine Durham United States
-2. https://ror.org/00py81415 Department of Surgery, Duke University School of Medicine Durham United States
-3. https://ror.org/00py81415 Department of Biomedical Engineering, Duke University Durham United States
-4. https://ror.org/02vm5rt34 Department of Pharmacology, Vanderbilt University Nashville United States
-5. https://ror.org/05cb4rb43 Morgridge Institute for Research Madison United States
-6. https://ror.org/01y2jtd41 Department of Cell and Regenerative Biology, University of Wisconsin-Madison Madison United States
+1. Department of Cell Biology, Duke Regeneration Center, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+2. Department of Surgery, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+3. Department of Biomedical Engineering, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+4. Department of Pharmacology, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+5. Morgridge Institute for Research Madison United States ([ROR:05cb4rb43](https://ror.org/05cb4rb43))
+6. Department of Cell and Regenerative Biology, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
 
 † Corresponding author
 
@@ -40,7 +40,7 @@ Critical remaining questions include how TREEs interact with target genes and TF
 
 ## Results and discussion
 
-## IVIS detects TREE-directed gene expression after myocardial injury
+### IVIS detects TREE-directed gene expression after myocardial injury
 
 We previously showed that TREEs are capable of directing AAV transgene expression in an injury-responsive manner in mouse models of spinal cord and cardiac damage (Cigliola et al., 2023; Yan et al., 2023). In these studies, TREEs were placed upstream of a murine Heat shock protein 1a (Hspa1a) promoter, normally silent in mouse tissues, and an EGFP reporter transgene, and AAV vectors were delivered systemically. EGFP transgene expression to observe TREE activity could not be longitudinally tracked in individual mice, limiting our ability to observe whole-body spatial distribution of expression (on- and off-target).
 
@@ -48,25 +48,65 @@ To longitudinally monitor AAV transgene expression using in vivo bioluminescence
 
 To determine if IVIS detected gene expression directed by zebrafish TREE sequences in injured mouse tissues, we then systemically delivered AAV9 vectors containing Hspa1a::fLuc with or without a TREE sequence 60 days prior to I/R or sham surgery. This 60-day period was intended to allow AAV expression to stabilize prior to surgery (Figure 1A). We employed two TREEs that previously indicated different injury responsiveness and temporal dynamics by histology, the runx1-linked enhancer (REN) and the 2ankrd1a-linked enhancer 2ankrd1aEN (Goldman et al., 2017). Transduction of either TREE sequence resulted in a marked increase in bioluminescence signal in the thoracic cage overlying the heart. Bioluminescence peaked within the first 3 days after I/R and returned to pre-injury baseline levels within 35 days post-injury (dpi) (Figure 1B and C; n=2 mice). Cardiac bioluminescence showed no change after sham surgery for all mice, indicating that TREE-directed expression occurred in response to myocardial trauma (Figure 1D). Notably, each AAV vector (CBA, Hspa1a, and TREE) demonstrated off-target expression in the abdominal region directly above the liver after transduction, which was also indicated to a limited degree by histology in our previous study (Figure 1B, Figure 1—figure supplement 1B; Yan et al., 2023).
 
-## Live imaging of a liver de-targeted AAV9 capsid variant
+![Figure 1.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic illustration of study design. Albino BALB/c mice were systemically injected with AAV9 vectors packaging fLuc reporter cassettes directed by TREEs and a permissive promoter. Mice underwent ischemia/reperfusion (I/R) surgery at D61 and were imaged by IVIS at indicated time points. (B) Representative IVIS images indicate changes of expression over time and space for each vector. Cardiac region of interest (ROI) indicated by red box. n=2 mice. (C) Average radiance measured from cardiac ROIs plotted over days post-injury (dpi). Average radiance normalized to their baseline pre-injury was also plotted (right). n=2 mice. (D) Average cardiac radiance showed a transient increase in expression for both REN (left) and 2ankrd1aEN (right) after I/R injury, whereas sham-operated animals showed relatively constant expression. n=2 mice for I/R, n=3 mice for sham.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic showing comparison of AAV9 vectors packaging either the strong, constitutively active chicken beta actin (CBA) promoter or minimal Heat shock protein 1a (Hsp1a) promoter to direct fLuc expression. n=5 mice/AAV group. (B) Representative IVIS images of mice injected with AAV containing either CBA (top) or Hsp1a (bottom) promoters. Red boxes indicate regions of interest (ROIs) marking cardiac, liver, and whole-body expression. (C) Average radiance measured from cardiac ROIs from CBA (top) or Hsp1a (bottom) promoters shows relatively consistent expression from 30 to 68 days post-AAV injection. Square, male mice. Circle, female mice. (D, E) Average radiance measured from liver (D) and whole-body (E) ROIs showed relatively consistent levels of expression over time for both promoters.
+
+### Live imaging of a liver de-targeted AAV9 capsid variant
 
 To attempt to reduce hepatic transgene expression while maintaining cardiac tropism, we packaged REN-Hspa1a::fLuc into AAV.cc84, a recently discovered AAV9 variant with reduced liver transduction (Gonzalez et al., 2023), as well as AAV9 for comparison. REN was selected as the liver luminescence was more prominent with respect to the cardiac signal in the above experiments. Following AAV delivery, mice were imaged weekly and also given a sham surgery at day 28, to assess spatiotemporal dynamics of bioluminescence (Figure 2A). IVIS images revealed off-target luminescence in male and female livers with AAV9, whereas AAV.cc84 showed no detectable signal in the liver for all sexes of mice over 35 days following AAV (Figure 2B, Figure 2—figure supplement 1A). Quantification indicated that AAV9 enabled substantially higher expression in liver than AAV.cc84, which remained minimal over time (Figure 2C, n=6 mice). Luminescence in the heart was similar between AAV9 and AAV.cc84, and, as expected, luminescence showed no change upon sham surgery (Figure 2—figure supplement 1B). Six weeks post-AAV, while AAV.cc84-injected mice continued to show minimal expression across many biopsied organs, AAV9-injected mice showed off-target expression in the liver (Figure 2D). Vector genome quantification by qPCR revealed AAV9-injected mice contained a much higher viral load in liver tissue compared to AAV.cc84, for both males and females (Figure 2E, n=3 mice). Vector genomes in the heart were similar between AAV9 and AAV.cc84 for both sexes of mice (Figure 2—figure supplement 1C). In addition to heart and liver, luminescence was also observed in the head/neck and lower abdomen regions, which showed no difference between AAV9 and AAV.cc84 (Figure 2—figure supplement 1D and E). These results indicate that AAV.cc84 can be implemented to minimize off-target liver expression of TREEs, evading liver transduction while maintaining cardiac tropism.
 
-## Live imaging of post injury, liver de-targeted TREE-AAV transduction
+![Figure 2.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of experimental timeline, comparing AAV9 and AAV.cc84 capsids for systemic delivery of REN-Hsp1a::fLuc. Mice were in vivo bioluminescence imaging (IVIS) imaged in the weeks following AAV delivery and post-sham surgery. (B) Representative IVIS images of mice injected with either AAV9 (left) or AAV.cc84 (right) at 14 (top) and 21 days (bottom) post-AAV injection. Mice were also subdivided by biological sex to account for sex differences in AAV liver tropism. (C) Average radiance from liver regions of interest (ROIs) showed significantly higher expression in AAV9-transduced mice compared to AAV.cc84 through all timepoints (n=6 mice, Holm–Sidak multiple comparisons test). (D) Representative IVIS images of harvested organs at 42 days post-AAV demonstrate liver expression with AAV9 (left) while undetected with AAV.cc84 (right). (E) Vector genome quantification from collected liver samples reveals higher liver transduction with AAV9 compared to AAV.cc84 for both female and male mice.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative in vivo bioluminescence imaging (IVIS) images of mice injected with either AAV9 (left) or AAV.cc84 (right) at 7 (top) and 35 days (bottom) post-AAV injection. (B) Average radiance in the heart was similar between AAV9 and AAV.cc84 (n=6 mice, Holm–Sidak multiple comparisons test). (C) Vector genome quantification from cardiac tissues showed similar levels of vector genomes between AAV9 and AAV.cc84 for both sexes (n=3 mice, Holm–Sidak multiple comparisons test). (D) Representative IVIS images of mice with regions of interest (ROIs) used to measure expression in head/neck and lower abdomen (white dashed box). (E) Average radiance measured in the head/neck (left) and lower abdomen (right) was similar between AAV9 and AAV.cc84 over the course of the study (n=6 mice, Holm–Sidak multiple comparisons test).
+
+### Live imaging of post injury, liver de-targeted TREE-AAV transduction
 
 Therapeutic TREE use would require their delivery after injury occurs. To examine expression dynamics in a therapeutically relevant context, we systemically delivered the liver-detargeted vector AAV.cc84 carrying 2ankrd1aEN-Hspa1a::fLuc or Hspa1a::fLuc at 4 dpi in mice given an I/R injury (Figure 3A). Echocardiograms to measure cardiac ejection fraction before and after I/R were used to estimate and compare injury size in both treatment groups (Figure 3—figure supplement 1A). 2ankrd1aEN-Hspa1a::fLuc-transduced mice showed robust fLuc activity in the thoracic cage overlying the heart, which increased up to 28 dpi and plateaued afterwards (Figure 3B and C; n=4 mice). Conversely, cardiac bioluminescence in Hspa1a::fLuc-transduced mice remained relatively minimal over time (Figure 3B and C, Figure 3—figure supplement 1B; n=4 mice). IVIS imaging revealed a baseline of 2ankrd1aEN-directed cardiac expression in sham-operated mice (Figure 3—figure supplement 1C), which was elevated approximately threefold in mice with I/R injury compared to sham at 7 dpi (Figure 3D, n=4 mice). 2ankrd1aEN-directed bioluminescence in the heart increased during the first 28 days for sham-operated mice, likely indicative of increased AAV transduction and transgene expression over time (noting that AAV deliveries in Figure 1 experiments were 60 days prior to luminescence measurements; Figure 3E). Notably, I/R injured mice maintained higher cardiac activity throughout the 63-day time course, with the greatest differences at 7 and 21 dpi (Figure 3E). Together, these results indicate that 2ankrd1aEN-directed gene expression can be estimated longitudinally over long time periods, and in agreement with our previous histological analysis, 2ankrd1aEN directs long-lasting gene expression in the injured mouse heart.
 
-## In vivo library screen for AAV9 capsid variants with increased targeting of injury sites
+![Figure 3.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of experimental timeline comparing expression between Hsp1a and 2ankrd1aEN when delivered at 4 dpi. (B) Representative in vivo bioluminescence imaging (IVIS) images of mice injected with Hsp1a (top) or 2ankrd1aEN- Hsp1a (bottom) after ischemia/reperfusion (I/R) injury. (C) Cardiac average radiance normalized to the 7 dpi time point increased over time with 2ankrd1aEN while remaining stable with Hsp1a (n=4 mice, Holm–Sidak multiple comparisons test). (D) Average cardiac radiance directed by 2ankrd1aEN was significantly higher in mice with I/R injury compared to sham at 7 dpi (n=4 mice, Welch’s t-test). (E) Average cardiac radiance was more significantly elevated in the first 21 days post-injury in mice with I/R injury compared to sham (n=4 mice, Mann–Whitney tests).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Ischemia/reperfusion (I/R) surgery injury extent was assessed by ejection fraction via echocardiography to estimate injury prior to AAV delivery (n=4 mice). (B) Cardiac average radiance plotted for each individual mouse with I/R injury plotted over time with either Hsp1a::fLuc (gray) or 2ankrd1aEN- Hsp1a::fLuc (black). (C) Representative in vivo bioluminescence imaging (IVIS) images of sham-operated mice injected with AAV.cc84 packaged with 2ankrd1aEN- Hsp1a::fLuc.
+
+### In vivo library screen for AAV9 capsid variants with increased targeting of injury sites
 
 Directed evolution of AAV libraries has been previously used to discover new capsids with improved functional properties, such as liver de-targeting (AAV.cc84), enhanced potency (AAV.cc47), and tropism for specific cell types (AAV.ark313, AAV.k20) (Gonzalez et al., 2022; Gonzalez et al., 2023; Nyberg et al., 2023; Nyberg et al., 2025; Rosales et al., 2025). We reasoned that this approach may be useful to identify variants with enhanced tropism for infarcted myocardium, which has altered extracellular matrix and cell type landscapes.
 
 To find capsid variants with enhanced tropism for infarcted myocardial tissue over healthy myocardium, we incorporated previously described AAV capsid libraries with saturation mutagenesis at the variable region IV epitope (Gonzalez et al., 2023). A previous report indicated that AAV9 is observed to preferentially transduce border zones of infarcted myocardium when delivered acutely (10 min to 3 dpi) after injury, which was speculated to be driven by a combination of increased capillary permeability, sialidase activity, and DNA damage after cardiac ischemia (Konkalmatt et al., 2012). We attempted to limit the effects of these acute changes by delivering capsid libraries to mice that had undergone sham or I/R surgery at 9 dpi, when the acute inflammation phase is complete and the repair phase with myofibroblast activation and proliferation has begun (Figure 4A, n=2 mice). At 11 dpi, cardiac tissue was harvested and separate biopsies were acquired from infarcted or remote myocardium. Viral genomes from each biopsy were amplified and sequenced, and infarcted tissue fold-change over remote tissue was calculated from mapped reads for each capsid variant (Figure 4B). We found three unique capsids that were enriched in the infarcted tissue over remote for both I/R mice, while being comparably expressed in both biopsies of the sham mouse (Figure 4B, Figure 4—figure supplement 1A). Of the three variant capsids, we found the capsid with the highest number of reads in infarcted tissue (AAV.IR41) transduced I/R-injured hearts more effectively than AAV9 and the other two variant capsids (IR42, IR43) when packaged with a CBA::EGFP transgene (Figure 4C, Figure 4—figure supplement 1B). When systemically delivered at 9 dpi, IR41 transduced larger areas of myocardium surrounding areas of infarct compared to AAV9 (Figure 4C). Using F-actin staining to mark the border zone, AAV9 and IR41 primarily transduced CMs directly at the border zone with similar effectiveness (Figure 4C). EGFP did not notably co-localize with vimentin staining of non-myocytes for either AAV9 or IR41, thus both capsids still primarily transduce CM (Figure 4—figure supplement 1C). Thus, sequence-based screening identified a capsid with enhanced transduction and expression in injured myocardium.
 
-## IR41 capsid delivery of TREE-directed transgene expression in injured hearts
+![Figure 4.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of AAV capsid library screening delivered systemically to mice with either sham (n=1 mouse) or ischemia/reperfusion (I/R) (n=2 mice) injury at 9 dpi. Two days later, hearts were biopsied to collect AAV genomes in either injured or remote tissues. (B) Capsid sequenced reads enriched in the injured tissues were plotted against sham animals. Each point represents a unique capsid. Wild-type AAV9 capsid is marked by blue arrow. (C) Representative fluorescence imaging of AAV9 (top) or variant capsid IR41 (bottom) delivering a self-complementary CBA::EGFP cassette at 16 dpi. Asterisks indicate infarct site, imaged at higher magnification in middle and right panel. Dashed white lines indicate the border zone region. Left scale bar, 1 mm. Middle and right scale bar, 100 um.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Injury site-enriched capsids in I/R-injured mice. Each point represents a unique capsid. Top-left quadrant, capsids co-enriched at injury site. Wild-type AAV9 capsid is marked by an orange arrow. (B) Representative fluorescence imaging of variant capsids, IR42 (left) and IR43 (right), delivering a self-complementary CBA::EGFP cassette at 16 dpi. Asterisks indicate infarction area. Scale bar, 1 mm. (C) Immunofluorescence of infarct sites of mice transduced with either AAV9 (left) or IR41 (right) shows no colocalization of EGFP and Vimentin. Scale bar, 100 um.
+
+### IR41 capsid delivery of TREE-directed transgene expression in injured hearts
 
 To assess the efficacy of TREE-directed transgene targeting using IR41 capsid, we systemically transduced mice at 4 days after permanent left coronary artery ligation (MI) with either AAV9 or IR41 harboring a 2ankrd1aEN-Hspa1a::fLuc transgene. IVIS imaging revealed higher expression levels in animals transduced with IR41 compared to AAV9, in both sham and MI groups (Figure 5A, Figure 5—figure supplement 1A; n=3 mice). We also noted higher hepatic expression in both sham and infarcted mice with IR41 compared to AAV9 (Figure 5A), although no new tissue transduction was introduced as detectable by biodistribution and reporter gene expression. The average and maximum radiances recorded in IR41-transduced mouse hearts were significantly higher than AAV9 by 7 dpi and remained elevated at 21 dpi (Figure 5B and C). In mice that underwent sham surgery, IR41 had a higher average and maximum radiance than AAV9 at 7 dpi alone but was relatively similar at 14 and 21 dpi (Figure 5—figure supplement 1B and C). Vector genome quantification by qPCR showed that IR41 had roughly twice as high viral uptake than AAV9 in mice given cardiac injuries (Figure 5D, n=3 mice). Interestingly, IR41-transduced mice showed a trend toward higher cardiac viral genome loads than AAV9-transduced mice upon sham injury, indicating that IR41 might increase tropism in uninjured hearts, but its effects will be greatest when delivered to injured hearts (Figure 5D). Together, our experiments indicate that increased tropism of AAV.IR41 for injured myocardium, defined by enhanced uptake and higher transgene expression versus control AAV9, can be complemented by injury-responsive TREEs for targeting cargo delivery to sites of cardiac damage.
 
-## Conclusions and limitations
+![Figure 5.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative in vivo bioluminescence imaging (IVIS) images of mice with sham (top) or (bottom) surgery transduced with either AAV9 (left) or IR41 (right) packaged with 2ankrd1aEN- Hsp1a::fLuc (n=3–4 mice). (B, C) Cardiac average (B) and maximum (C) radiance was elevated in MI mice transduced with IR41 compared to AAV9 (n=3–4 mice, Holm–Sidak multiple comparisons test). (D) Viral genome quantification from heart tissues was elevated in MI mice injected with IR41 compared to AAV9 (n=3–4 mice, Holm–Sidak multiple comparisons test).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Compiled in vivo bioluminescence imaging (IVIS) images of mice that underwent sham or MI surgery with AAV9 or IR41 transduced at 3 dpi. Mice were imaged at 7, 14, and 21 dpi. (B, C) Cardiac average (B) and maximum (C) radiance were statistically similar between AAV9 and IR41 in sham-operated mice.
+
+### Conclusions and limitations
 
 Here, we report techniques for spatial and longitudinal tracking of injury- and regeneration-responsive, TREE-directed transgene expression from AAV vectors systemically infused into mice, either pre- or post injury. We characterized whole-body temporal dynamics of TREE-directed AAV expression and how expression may be modulated with the incorporation of engineered capsids, including those that may better target injured tissue. Our study indicates that IVIS imaging for assessing amplitude and specificity of TREE-directed transgene expression will aid future development of enhancer-based gene therapies relevant to cardiac regeneration and disease. With an IVIS imaging modality, effects of capsid alterations and enhancer sequence alterations can be efficiently and noninvasively assessed to refine their ability to target gene expression in the injured heart.
 
@@ -74,40 +114,239 @@ There are several limitations we point out from these techniques. Expression by 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Male and female C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain 000664;RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Male and female BALB/c</td>
+      <td>Charles River</td>
+      <td>Strain 028;RRID:IMSR_CRL:028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9: CBA::fLuc</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available from corresponding authors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9: Hspa1a::fLuc</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available from corresponding authors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9: REN- Hspa1a::fLuc</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available from corresponding authors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9: 2ankrd1aEN- Hspa1a::fLuc</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available from corresponding authors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV.cc84: REN- Hspa1a::fLuc</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available from corresponding authors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV.cc84: Hspa1a::fLuc</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available from corresponding authors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV.cc84: 2ankrd1aEN - Hspa1a::fLuc</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available from corresponding authors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV.IR41: 2ankrd1aEN - Hspa1a::fLuc</td>
+      <td>This paper</td>
+      <td>IR41 VR4 peptide sequence: GPGVGAR</td>
+      <td>Available from corresponding authors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV.IR42: 2ankrd1aEN - Hspa1a::fLuc</td>
+      <td>This paper</td>
+      <td>IR42 VR4 peptide sequence: ASRNVVT</td>
+      <td>Available from corresponding authors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV.IR43: 2ankrd1aEN - Hspa1a::fLuc</td>
+      <td>This paper</td>
+      <td>IR43 VR4 peptide sequence: SDSQYVQ</td>
+      <td>Available from corresponding authors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9 capsid library</td>
+      <td>Gonzalez et al., 2022; Gonzalez et al., 2023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293</td>
+      <td>ATCC; UNC Viral Vector Core; Gonzalez et al., 2022; Gonzalez et al., 2023</td>
+      <td>RRID:CVCL_0045</td>
+      <td>Obtained from UNC Viral Vector Core for production of recombinant AAV at Duke, see Asokan lab citations</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti- GFP</td>
+      <td>Invitrogen</td>
+      <td>#A-11122;RRID:AB_221569</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-vimentin</td>
+      <td>DSHB</td>
+      <td>#40E-C;RRID:AB_528504</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>#A-11008;RRID:AB_143165</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti- mouse IgG Alexa Fluor 555</td>
+      <td>Invitrogen</td>
+      <td>#A21422;RRID:AB_2535844</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ITR F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’ AACATGCTACGCAGAGAGGGAGTGG 3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ITR R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’CATGAGACAAGGAACCCCTAGTGATGGAG 3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AAV9 lib amp F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’ AGCACGGTCCAGGTCTTCAC 3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AAV9 lib amp R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’ ATGTCAGTCTAGACCAAAGTTCAACTGAAACGAATTAAACGG 3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>WPRE-bGH F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’ CTTCGCCCTCAGACGAGTCGGA 3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>WPRE-bGH R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’ TGGCTGGCAACTAGAAGGCACA 3’</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PureLink Genomic DNA mini kit</td>
+      <td>Invitrogen</td>
+      <td>K182002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-luciferin, potassium salt</td>
+      <td>Gold Biotechnology</td>
+      <td>LUCK-1G</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All mouse protocols were approved by the Institutional Animal Care and Use Committee (IACUC) at Duke University (Protocols #A003-22-01, #A025-24-01), which is accredited by the Association for Assessment and Accreditation of Laboratory Animal Care-International (AAALAC). All mice were housed and maintained in the Duke University DLAR mouse facility. Wild-type male and female C57BL/6J (The Jackson Laboratory, Strain #000664) and BALB/c (Charles River, Strain #028) mice were used for this study.
 
-## Ischemia/reperfusion and LAD ligation injury models
+### Ischemia/reperfusion and LAD ligation injury models
 
 The procedure for I/R myocardial injury via temporary LCA ligation was adapted from previously described protocols (Kaiser et al., 2005). Briefly, adult mice, 8–12 weeks of age, were anesthetized with ketamine/xylazine, intubated, and placed on a rodent ventilator. The chest cavity was entered in the third intercostal space at the left lateral border. The left atrium was gently deflected out of the field to expose the left anterior descending artery. Coronary ligation was performed by tying an 8–0 nylon suture ligature around the proximal LAD artery. Occlusion of the LAD was confirmed by the anterior wall of the left ventricle turning a pale color. LAD occlusion was maintained for 40 min. After the ischemia period, the suture was untied, and reperfusion of the LAD was confirmed by the return of a pink-red color to the anterior wall. The procedures for LAD ligation were performed with the same approach but with permanent ligation of the left coronary artery by tying an 8–0 nylon suture ligature around the proximal LAD artery. Occlusion of the LAD was confirmed by the anterior wall of the left ventricle turning a pale color. The chest was then closed, and the mice were extubated and allowed to recover from anesthesia. Mice were given post-operative analgesics (buprenorphine-sustained release formula by s.c. injection at 0.1 mg/kg) and allowed to recover until the experimental time points indicated, at which point mice were then further analyzed or tissues were harvested. I/R procedures were performed in the Duke Cardiovascular Physiology Core. LAD ligation procedures were performed in collaboration with Dr. Bursac’s lab at Duke University.
 
-## Echocardiography
+### Echocardiography
 
 To assess cardiac function before and after injury, mice were anesthetized by 2% isoflurane inhalation and imaged by B-mode and M-mode echocardiography using a Vevo3100LT instrument with a 25–55 MHz transducer (MX550D, VisualSonics). At least 5x short axis M-mode traces of 8–10 s were recorded across the mid-papillary region of the LV. Systole and diastole LV dimensions were measured using VevoLab’s Auto LV analysis tool. All measurements were averaged for each heart at each time point. Heart function was measured by calculating ejection fraction (EF) from the following formula: EF(%)=100*[(LVED–LVES)/LVED], where LVED = [7.0/(2.4+LVIDd)]*(LVIDd)3 and LVES = [7.0/(2.4+LVIDs)]*(LVIDs)3. Abbreviations: LVED, left ventricular end-diastolic volume; LVES, left ventricular end-systolic volume; LVIDd, left ventricular internal dimension at end-diastole; LVIDs, left ventricular internal dimension at end-systole.
 
-## AAV capsid library
+### AAV capsid library
 
 AAV9-based capsid libraries were constructed using saturation mutagenesis of residues within the VR-IV site as previously described (Gonzalez et al., 2023; Rosales et al., 2025). The parental library plasmid, containing AAV2 ITRs flanking AAV2 Rep and AAV9 Cap genes (pTR-wtAAV9-VR-IV), was generated with degenerate primers flanking the VR-IR region (amino acids 452–458 in Cap). Prior to saturation mutagenesis with degenerate primers, the VR-IV region of Cap was replaced with a partial GFP sequence to prevent incorporation of wild-type VR-IV sequences in the parental library. The parental library insert was incorporated into the pTR-wtAAV9-VR-IV plasmid to replace the GFP sequence via restriction enzyme digestion with XbaI and BsiWI followed by ligation (New England Biolabs). Purified ligation products were electroporated into DH10B ElectroMax cells (Invitrogen #18290015) and immediately plated on 245 mm Square BioAssay dishes (Corning #431111) containing LB agar with ampicillin. Plates were incubated at 32°C overnight to allow colony growth and formation. The following day colonies were pooled and harvested for plasmid DNA collection via ZymoPURE plasmid MaxiPrep kit (Zymo Research, #D402). Purified library plasmids were co-transfected with adenovirus helper plasmid into adherent HEK293 cells to generate AAV9 capsid libraries as described below.
 
-## AAV vector production and dosing
+### AAV vector production and dosing
 
 Recombinant AAV vectors and libraries were prepared using adherent or suspension HEK293 cell cultures as previously described (Gonzalez et al., 2022; Gonzalez et al., 2023; Rosales et al., 2025). For AAV libraries, at 80–90% confluency in 150 cm tissue culture dishes (Fisher Scientific, #087726), cells were triple transfected via polyethylenimine (PEI, Sigma-Aldrich) in a 1:3 DNA:PEI ratio, containing transfer plasmid (pITR), adenovirus helper plasmid (pXX680), and RepCap plasmid (AAV9, AAV.cc84, or AAV.IR41). Cell media was harvested at days 4 and 6 post-transfection. For recombinant AAV vectors, suspension HEK293 cells were used. HEK293 cells were originally obtained from the UNC Vector Core and authenticated by whole-genome sequencing. Similar to adherent transfection, suspension cells were triple-plasmid-transfected with PEI, containing pITR (0.3 ug/mL), pXX680 (0.6 ug/mL), and RepCap (0.5 ug/mL). Media was harvested at 6 days post-transfection with cells pelted and discarded by centrifugation. Both adherent and suspension AAV packaging workflows follow the same downstream purification processes. Briefly, harvested media was incubated with 12% polyethylene glycol (PEG) overnight at 4°C. Media was then centrifuged at 4000 × g at 4°C for 45 min to precipitate PEG containing AAV. PEG was resuspended in AAV formulation buffer, containing 1 mM MgCl2 and 0.001% F-68 in dPBS. Resuspended PEG and AAV was DNase treated at 37°C for 1 h, followed by iodixanol gradient purification via ultracentrifugation at 30,000 RPM at 17°C overnight. Iodixanol gradients consisted of 60%, 40%, 25%, and 17% densities. Following centrifugation, 550 ul fractions were collected starting from the 25–40% border and ending at the 40–60% border. All fractions were titered for AAV by qPCR using primers targeting the ITR region (see Key Resources Table). Iodixanol fractions containing the highest titer were selected for downstream desalting and buffer exchange. Desalting was performed using manufacturer’s instructions with a PD MidiTrap G-25 column (Cytiva). Following desalting, buffer exchange with sterile AAV formulation buffer was performed according to manufacturer’s instructions with a Pierce high-capacity endotoxin removal spin column (Thermo Scientific). Purified final AAV titer was measured by QIAcuity Digital PCR (dPCR) system with QIAcuity probes targeting AAV2-ITR (QIAGEN, #250102). Titered AAV was systemically delivered in 8–12-week-old mice via retro-orbital injection. AAV dose was calculated as viral genomes per kilogram body weight to account for body size differences across age and sex.
 
-## In vivo AAV capsid library screening in mice
+### In vivo AAV capsid library screening in mice
 
 The parental AAV9 capsid library for the VR-IV region was titered by qPCR using primers targeting the ITR region (see Key Resources Table). Parental libraries were systemically delivered to adult C57BL/6J mice (The Jackson Laboratory, #000664) that had undergone sham (n=1) or I/R (n=2) surgeries at 9 dpi. Sufficient cardiac injury by I/R was confirmed by echocardiography measurements of left ventricular ejection fraction. All mice were dosed with 2.5 × 1013 v.g./kg b.w. of the parental library. Two days after library delivery, at 11 dpi, all mice were sacrificed, and hearts were separately biopsied at the injury (infarct and border zone) and remote sites (right ventricle). Sham mice had heart biopsies captured from approximately the same areas, although no infarct was present. Injured and remote collected tissues were digested with Proteinase K for DNA isolation using a PureLink Genomic DNA mini kit (Invitrogen #K182002). AAV genomes were amplified from the genomic DNA using PCR primers targeting the AAV9 Cap gene (see Key Resources Table). Amplified AAV9 Cap sequences were then ligated into our AAV library plasmid backbone (pTR-wtAAV9-VR-IV) and used to generate a second AAV library. The parental and second viral libraries for all biopsies (remote, injured) and mice (sham, I/R) were prepared for high-throughput sequencing to assess sequence diversity and enrichment. All viral libraries were Dnase I-treated prior to extraction of viral genome from the capsid, and subsequently fortified with Illumina adapter and index sequences by PCR. All PCR products were purified using the PureLink PCR micro kit (Invitrogen). Prepared libraries were then prepared for sequencing with the Illumina NovaSeq 6000 S-Prime Reagent Kit and sequenced with the Illumina NovaSeq system. Demultiplexed reads were analyzed with an updated in-house Perl script (Gonzalez et al., 2022; Gonzalez et al., 2023; Rosales et al., 2025). Reads are surveyed for nucleotide sequences flanking the AAV9 VR-IV library region and intermediate sequences are counted and ranked. These nucleotide sequences are then translated, and the resulting amino acid sequences are also counted and ranked. Fold change enrichment in the injury versus remote biopsy was calculated using normalized read counts for each amino acid sequence. Co-expressed amino acid sequences found in both I/R-injured mice were plotted against each other to find amino acid sequences with >100-fold injury enrichment in I/R-injured mice. Injury fold change over remote was then averaged for both I/R-injured mice and plotted against the injury fold change for the corresponding amino acid sequence found in the sham mouse. Scatterplots were generated using the RStudio graphics package v3.5.2.
 
-## IVIS imaging
+### IVIS imaging
 
 All IVIS bioluminescence imaging was conducted with adult albino BALB/c mice (Charles River) using equipment provided by the Duke Optical Molecular Imaging and Analysis shared resource (OMIA) core. D-luciferin, potassium salt (Gold Biotechnology), was dissolved in dPBS (without calcium or magnesium) at a final concentration of 15 mg/mL. The D-luciferin was sterile-filtered with a 0.22 um filter, and aliquots were stored frozen for future use. At each imaging timepoint, D-luciferin was thawed on ice in a covered container to protect from light. While mice were anesthetized under 2% isoflurane, thawed D-luciferin was injected intraperitoneally at 150 mg/kg b.w. dose. Regions of interest for this study, such as the heart and liver, had body hair above them removed using Nair to improve signal-to-noise ratio. Luciferase signals were allowed a 10–15 min plateau time. Bioluminescence images were then collected using an IVIS Kinetic instrument and Living Image Software (PerkinElmer). Average and maximum radiances were quantified in specified ROIs with the Living Image software. For ex vivo bioluminescence imaging, mice were sacrificed and organs immediately harvested for imaging. Organs were quickly washed with ice-cold PBS and DMEM to remove blood and debris. After washing, organs were submerged in room temperature D-luciferin solution for 10 min, then immediately placed on black construction paper and imaged in the IVIS Kinetic.
 
-## Viral genome biodistribution
+### Viral genome biodistribution
 
 Genomic DNA was extracted from tissues using a PureLink Genomic DNA mini kit (Invitrogen #K182002) following manufacturer’s instructions. Viral genomes were then quantified by qPCR with a known DNA mass of pITR transfer plasmid standard used for AAV packaging. qPCR primers were designed to target the border region between the transgene and bgh-PolyA sequence (below). Quantified viral genomes are presented as a ratio of viral genomes per microgram of extracted genomic DNA used for the reaction.
 
 Primers used in this study are listed in the Key Resources Table.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Adult mouse hearts were immediately harvested after sacrifice, perfused with room temperature dPBS (without calcium or magnesium), and fixed overnight in 4% paraformaldehyde (Fisher #50-980-487) at 4°C. After fixing, hearts were washed in PBS three times for 15 min each and incubated in 30% sucrose in PBS overnight at 4°C. Hearts were then transferred and embedded in Tissue-Plus OCT (Fisher #23-730-571). Tissue blocks were cryosectioned at 10 um and placed on a Superfrost Plus Microscope slide (Fisher #22-037-246). Slides were stored at –80°C until staining. On the day of staining, slides were thawed on a slide warmer and allowed to dry for 30 min. Tissues were rehydrated with PBS, washed 3× with PBS-T (PBS +0.1% Triton X100), and then blocked for 1 h at room temperature in PBS-T with 5% normal goat serum. After blocking, slides were incubated with primary antibodies diluted in antibody solution (PBS-T + 1% BSA) overnight in a humidified chamber at 4°C. Primary antibodies included: anti-GFP (Invitrogen #A-11122) at 1:1000 dilution and anti-vimentin (DSHB #40E-C) at 1:100 dilution. Following primary antibody incubation, slides were washed 3× with PBS-T and incubated with secondary antibodies, DAPI (Thermo Scientific #62248, 1:1000 dilution), and Alexa Fluor 546 Phalloidin (Invitrogen #A22283, 1:200 dilution) in antibody solution for 2 h at room temperature. Secondary antibodies included goat anti-rabbit IgG Alexa Fluor 488 (Invitrogen #A-11008) at 1:500 dilution and goat anti-mouse IgG Alexa Fluor 555 (Invitrogen #A-21422) at 1:500 dilution. Following incubation, slides were washed 3× with PBS for 5 min each and mounted with Vectashield HardSet Antifade Mounting media (Vector Laboratories #H-1400–10). Mounted slides were stored at 4°C until imaged.

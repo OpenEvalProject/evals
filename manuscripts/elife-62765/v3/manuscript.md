@@ -45,7 +45,7 @@
 
 ## Abstract
 
-Archipelagoes serve as important ‘natural laboratories’ which facilitate the study of island radiations and contribute to the understanding of evolutionary processes. The white-eye genus Zosterops is a classical example of a ‘great speciator’, comprising c. 100 species from across the Old World, most of them insular. We achieved an extensive geographic DNA sampling of Zosterops by using historical specimens and recently collected samples. Using over 700 genome-wide loci in conjunction with coalescent species tree methods and gene flow detection approaches, we untangled the reticulated evolutionary history of Zosterops , which comprises three main clades centered in Indo-Africa, Asia, and Australasia, respectively. Genetic introgression between species permeates the Zosterops phylogeny, regardless of how distantly related species are. Crucially, we identified the Indonesian archipelago, and specifically Borneo, as the major center of diversity and the only area where all three main clades overlap, attesting to the evolutionary importance of this region.
+Archipelagoes serve as important ‘natural laboratories’ which facilitate the study of island radiations and contribute to the understanding of evolutionary processes. The white-eye genus Zosterops is a classical example of a ‘great speciator’, comprising c. 100 species from across the Old World, most of them insular. We achieved an extensive geographic DNA sampling of Zosterops by using historical specimens and recently collected samples. Using over 700 genome-wide loci in conjunction with coalescent species tree methods and gene flow detection approaches, we untangled the reticulated evolutionary history of Zosterops, which comprises three main clades centered in Indo-Africa, Asia, and Australasia, respectively. Genetic introgression between species permeates the Zosterops phylogeny, regardless of how distantly related species are. Crucially, we identified the Indonesian archipelago, and specifically Borneo, as the major center of diversity and the only area where all three main clades overlap, attesting to the evolutionary importance of this region.
 
 ## Introduction
 
@@ -55,7 +55,7 @@ One of the few classical examples of ‘great speciators’ identified by Diamon
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/62765/elife-62765-fig1-v3.jpg)
 
-**Figure 1.:** Zosterops across the Indonesian archipelago (main map) and across the entire distribution range (bottom left inset).Islands referred to in the text are specifically labeled on the main map. The total number of Zosterops species is shown in brackets beside each labeled region on the inset. We adopted del Hoyo et al., 2016 as the baseline taxonomy and incorporated taxonomic revisions to the Afrotropical and Asiatic species as proposed by Martins et al., 2020 and Lim et al., 2019, respectively (see Supplementary file 2 for the list of recognized species).
+**Figure 1.:** Islands referred to in the text are specifically labeled on the main map. The total number of Zosterops species is shown in brackets beside each labeled region on the inset. We adopted del Hoyo et al., 2016 as the baseline taxonomy and incorporated taxonomic revisions to the Afrotropical and Asiatic species as proposed by Martins et al., 2020 and Lim et al., 2019, respectively (see Supplementary file 2 for the list of recognized species).
 
 In order to achieve an understanding of the underlying processes driving the white-eye radiation, its phylogeny first needs to be resolved to provide a reliable backbone for hypothesis testing. In Zosterops, however, traditional methods that rely on morphological tools to infer how species are related to one another have proven to be unreliable, as plumage features of ecologically distinct and geographically disjunct Zosterops species are often indistinguishable (Mees, 1957; Mayr, 1965). Although a more recent application of genetic methods has helped disentangle the white-eye radiation to some extent, most studies have concentrated on Afrotropical, Melanesian, and Indian Ocean members of the genus (Slikas et al., 2000; Warren et al., 2006; Moyle et al., 2009; Cox et al., 2014; Linck et al., 2016; Wickramasinghe et al., 2017; Manthey et al., 2020; Martins et al., 2020). There continues to be a dearth of knowledge on this radiation across the core of its Asian distribution due to limited sampling and lack of genetic data. In particular, it is crucial to unravel the phylogenetic affinities of white-eyes distributed across the Indonesian archipelago, which – comprising more than 17,000 islands – is the largest archipelago in the world and harbors about 20 endemic Zosterops species (Figure 1), including two species that were discovered in the last two decades and remain undescribed (Eaton et al., 2016; O’Connell et al., 2019). The high density of Zosterops species across the Indonesian archipelago hints at the possible importance of this region in white-eye evolution.
 
@@ -67,25 +67,174 @@ In this study, we used historical specimens and recently collected samples to re
 
 ## Results
 
-## Congruent phylogenetic trees reveal three distinct lineages
+### Congruent phylogenetic trees reveal three distinct lineages
 
 To shed light on the phylogenetic relationships of Zosterops species, we employed both concatenation methods, in which sequence data from individual loci are combined into one larger sequence, as well as MSC approaches (MP-EST [Liu et al., 2010], STAR [Liu et al., 2009], and ASTRID [Vachaspati and Warnow, 2015]), which account for individual gene tree stochasticity in a coalescent framework (Edwards et al., 2007). All four tree inference methods produced a similar phylogeny with a congruent tree topology for highly supported nodes, except for the placement of a Sundaic group consisting of Z. atricapilla and Z. auriventer (Figure 2). These two Sundaic taxa are embedded within the Australasian clade in the concatenated tree, but emerged within the Asiatic clade in the species trees constructed with MP-EST (henceforth our baseline species tree) and ASTRID (Figure 2). The other species tree method, STAR, shows a weak bootstrap support for an unresolved placement of these Sundaic taxa.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62765/elife-62765-fig2-v3.jpg)
+
+**Figure 2.:** All nodes are supported by a bootstrap value of 100 unless otherwise stated. Nodes with less than 68% bootstrap support were collapsed. The three main clades are color-coded blue (Australasian), red (Asiatic), and yellow (Indo-African). (a) The distribution of each main clade is color coded on the map, and the distribution of each sampled taxon is depicted by matching letter or symbol. The map includes 30 taxa not sampled by the present study but shown by previous studies to be nested within any of the three main clades with high bootstrap support of at least 90%. Borneo and Java (shaded brown) each harbor taxa from all three main clades, while multiple islands across the rest of Indonesia (shaded purple) each harbor taxa from two main clades. Secondary gene flow detected in multiple species pairs is marked with black arrows on the tree. Refer to Figure 2—figure supplement 3 for a mitochondrial ND2 tree.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62765/elife-62765-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Bootstrap support value for each node is denoted by symbols: black circle = 100; dark gray square ≥90, light gray polygon ≥80, while nodes without symbols are weakly supported (<80). Clades: (A) Indo-African group, (B) Asiatic group, (C) Sundaic taxa of incongruent placement, and (D) Australasian group.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62765/elife-62765-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** The results of BioGeoBEARS are shown as pie charts colored in relative proportions of the most likely ancestral range. Nodes with 100% bootstrap support are indicated with * at the side. Scale at the bottom indicates rate of molecular changes rather than divergence time. Geographical areas defined for ancestral range estimation: (A) Afrotropical region, (B) West Indian Ocean islands, (C) South Asia, (D) mainland Southeast Asia, (E) East Asia, (F) Philippines, (G) Sundaic region, (H) Wallacea, (I) Australia, and (J) Melanesia.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62765/elife-62765-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Nodes with a bootstrap value below 70 were collapsed. The scale at the bottom depicts the branch length of the ND2 tree. Samples from our study are marked with * at the end the sample name. Three mislabeled samples obtained from GenBank are each marked with # at the end of the GenBank accession number and assigned to the correct taxon.
 
 All methods reveal a white-eye radiation divided into three main clades consisting of an Indo-African, Asiatic, and Australasian group (Figure 2). Our taxon sampling covered 33 out of 108 white-eye species across the global radiation (Supplementary file 2). In order to expand clade assignment to well-studied white-eye species outside of our sampling regime, we examined an additional 30 species shown to have high bootstrap support for placement within any one of the three main clades based on previously published papers up until 2019 (Warren et al., 2006; Moyle et al., 2009; Cox et al., 2014; Cornetti et al., 2015; Shakya et al., 2018; Cai et al., 2019; O’Connell et al., 2019; Figure 2—figure supplement 2). These additional clade assignments were not used in the construction of our phylogenetic trees, but directly examined from the trees constructed by various studies. For example, Cai et al., 2019 provide high bootstrap support (>90%) for the position of Z. mouroniensis as a descendant of the most recent common ancestor of two unequivocal members of the Indo-African clade (i.e., Z. palpebrosus and Z. borbonicus; Figure 2); thus the species is allocated accordingly, and the breeding distribution of Z. mouroniensis (Mt Karthala on Grande Comore Island) is shaded yellow on the global range map (Figure 2a).
 
 A majority of the added taxa are distributed across Africa, where all Zosterops species fall within the Indo-African clade, while five of these newly added taxa are distributed across Melanesia, where our species coverage allowed us to detect the presence of only the Australasian clade. Therefore, our mapping suggests that the Afrotropical and the Australo-Papuan regions are depauperate in deeper Zosterops lineage diversity (Figure 2a; Supplementary file 2). Similarly, our results reveal that most areas in continental Asia generally harbor only one of the three main Zosterops clades, except East Asia where two clades co-occur in a narrow zone of overlap between the Indo-African Z. palpebrosus and the Asiatic Z. simplex (orange in Figure 2a). In contrast, the Indonesian archipelago emerged as a center of modern-day diversity for Zosterops, with all three main clades represented on Java and Borneo, and two main clades on many other islands (Figure 2a).
 
-## Presence of secondary gene flow
+### Presence of secondary gene flow
 
 The genetic signal of recent and rapid radiations is often convoluted by the presence of secondary gene flow, leading to heterogeneous gene trees which deviate from the true phylogeny. We assessed the presence of secondary gene flow specifically between members of a Sundaic species pair (Z. auriventer and Z. atricapilla) characterized by a shifting and incongruent placement across trees with representatives from the Asiatic (i.e. Z. simplex) and Australasian (i.e. Z. emiliae and Z. melanurus) clades (Figure 3a). The top two demographic models inferred by PHRAPL simulations show that Sundaic Z. auriventer is more closely related to Asiatic Z. simplex than to Australasian Z. emiliae, but inconclusive in relation to Z. melanurus due to ancestral and/or secondary gene flow between all three taxa (Figure 3b). Additionally, ancestral and/or secondary gene flow was detected between all taxa in both comparisons involving Z. atricapilla, Z. simplex, and either Z. emiliae or Z. melanurus (Figure 3—figure supplement 1). The genealogical divergence index (gdi) of the top demographic model inferred for each combination is relatively high, ranging between 0.321 and 0.751, suggesting high divergence between sister species despite secondary gene flow.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/62765/elife-62765-fig3-v3.jpg)
+
+**Figure 3.:** (a) Placement of the Sundaic pair (Z. atricapilla and Z. auriventer) conflicts between MP-EST species tree and concatenated tree. (b) The top two demographic models in PHRAPL simulations show that Sundaic Z. auriventer is more closely related to Asiatic Z. simplex than to Australasian Z. emiliae, but inconclusive in relation to Z. melanurus due to secondary gene flow between the three taxa. Refer to Figure 3—figure supplement 1 for simulation results with Z. atricapilla. (c) ABBA-BABA statistics for secondary gene flow shows an excess of derived allele sharing between the Sundaic taxa (gray) and Australasian Z. melanurus and Z. citrinella. (D-statistics significantly different from 0; see Table 1 for full statistical results). Topology inferred from ABBA-BABA tests shows the two Sundaic lineages (Z. atricapilla and Z. auriventer) as carriers of genomic admixture between both Asiatic and Australasian clades.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62765/elife-62765-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Each panel shows the top two demographic models estimated by PHRAPL for the Sundaic Z. atricapilla, Asiatic Z. simplex, and either the Australasian (a) Z. emiliae or (b) Z. melanurus. The genealogical divergence index (gdi) value of each combination is shown in the respective panel. Gene flow is detected in most directions between the three taxa, while the placement of Z. atricapilla to the Asiatic or Australasian clade is inconclusive.
+
 The ABBA-BABA approach corroborates that the conflicting placement of the Sundaic species pair consisting of Z. atricapilla and Z. auriventer may be attributed to secondary gene flow (Figure 3). In both concatenated and species trees, Z. emiliae emerges as basal to all other members of the Australasian clade (Figures 2 and 3a). Therefore, in the absence of introgression, the Sundaic Z. atricapilla and Z. auriventer should be equally closely related to both Z. emiliae and other members of the Australasian clade (tree topology in Figure 3a). The ABBA-BABA statistics revealed a significant excess of allele sharing between the Sundaic taxa (Z. atricapilla and Z. auriventer) and two Australasian taxa (Z. melanurus and Z. citrinella) (Figure 3c, Table 1). This result reflects that ancestral introgression occurred between the Sundaic taxa and the Australasian lineage after Z. emiliae had diverged (Figure 3c).
+
+**Table 1.**
+ D-statistics of a selection of species combinations to test if two species (H2, H3) exhibit an excess of derived allele sharing.The ABBA-BABA test was restricted to species combinations with conflicting tree topologies observed in this study (set 1), conflicting tree topologies between this study and Cai et al., 2019 (set 5), and a selection of species with a present-day geographic overlap and opportunities for secondary gene flow (sets 2–4). Z. senegalensis (H4) was used as an outgroup for all comparisons. A critical value (Z) above three suggests a significant excess of derived allele sharing between populations H2 and H3 and is highlighted in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Set</th>
+      <th>H1</th>
+      <th>H2</th>
+      <th>H3</th>
+      <th>D-stat</th>
+      <th>Z</th>
+      <th>No. of ABBA</th>
+      <th>No. of BABA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">1</td>
+      <td>emiliae</td>
+      <td>melanurus</td>
+      <td>atricapilla</td>
+      <td>0.129</td>
+      <td>3.807</td>
+      <td>192.84</td>
+      <td>148.63</td>
+    </tr>
+    <tr>
+      <td>emiliae</td>
+      <td>melanurus</td>
+      <td>auriventer</td>
+      <td>0.163</td>
+      <td>5.168</td>
+      <td>190.17</td>
+      <td>136.97</td>
+    </tr>
+    <tr>
+      <td>emiliae</td>
+      <td>citrinella</td>
+      <td>atricapilla</td>
+      <td>0.110</td>
+      <td>3.086</td>
+      <td>178.55</td>
+      <td>143.09</td>
+    </tr>
+    <tr>
+      <td>emiliae</td>
+      <td>citrinella</td>
+      <td>auriventer</td>
+      <td>0.125</td>
+      <td>3.788</td>
+      <td>172.21</td>
+      <td>133.99</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>citrinella</td>
+      <td>melanurus</td>
+      <td>simplex</td>
+      <td>0.093</td>
+      <td>3.074</td>
+      <td>142.55</td>
+      <td>118.22</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>simplex</td>
+      <td>japonicus</td>
+      <td>erythropleurus</td>
+      <td>0.215</td>
+      <td>5.272</td>
+      <td>171.87</td>
+      <td>111.15</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>erythropleurus</td>
+      <td>simplex</td>
+      <td>auriventer</td>
+      <td>0.108</td>
+      <td>3.169</td>
+      <td>166.20</td>
+      <td>133.74</td>
+    </tr>
+    <tr>
+      <td rowspan="4">5</td>
+      <td>melanurus</td>
+      <td>emiliae</td>
+      <td>simplex</td>
+      <td>−0.053</td>
+      <td>−1.456</td>
+      <td>152.33</td>
+      <td>169.34</td>
+    </tr>
+    <tr>
+      <td>melanurus</td>
+      <td>emiliae</td>
+      <td>japonicus</td>
+      <td>−0.066</td>
+      <td>−1.729</td>
+      <td>149.05</td>
+      <td>170.02</td>
+    </tr>
+    <tr>
+      <td>citrinella</td>
+      <td>emiliae</td>
+      <td>simplex</td>
+      <td>0.027</td>
+      <td>0.706</td>
+      <td>154.77</td>
+      <td>146.74</td>
+    </tr>
+    <tr>
+      <td>citrinella</td>
+      <td>emiliae</td>
+      <td>japonicus</td>
+      <td>−0.027</td>
+      <td>−0.686</td>
+      <td>146.72</td>
+      <td>154.82</td>
+    </tr>
+  </tbody>
+</table>
 
 In addition, secondary gene flow was also detected in several pairs of species which overlap in present-day distribution (sets 2 to 4 in Table 1). For instance, we found that Z. melanurus shares significantly more alleles with Z. simplex than with Z. erythropleurus, suggesting occasional hybridization between Z. melanurus buxtoni and Z. simplex erwini on Sumatra, where both occur. In a similar vein, Z. erythropleurus and Z. japonicus displayed excess allele sharing, indicating potential introgression in areas of overlap in Korea, and Z. auriventer and Z. simplex exhibited excess allele sharing that hints at occasional hybridization in parts of peninsular Malaysia and Borneo where they overlap.
 
 ## Discussion
 
-## Phylogeny of Zosterops and presence of secondary gene flow
+### Phylogeny of Zosterops and presence of secondary gene flow
 
 The evolutionary history of Zosterops has received a fair amount of scientific attention, but mostly by means of single mitochondrial or few nuclear loci, therefore resulting in trees plagued by unresolved polytomies (e.g. Figure 2—figure supplement 3; Degnan and Moritz, 1992; Degnan, 1993; Slikas et al., 2000; Warren et al., 2006; Moyle et al., 2009; Oatley et al., 2012; Á.S and Joseph, 2013; Cox et al., 2014; Husemann et al., 2016; Linck et al., 2016; Round et al., 2017; Wickramasinghe et al., 2017; Shakya et al., 2018; Cai et al., 2019; Lim et al., 2019; O’Connell et al., 2019). Using more than 700 genome-wide loci with a dense species sampling, our study produced an improved phylogeny of Zosterops and reveals the existence of three discrete main clades characterized by an Indo-African, Asiatic, and Australasian core of distribution, respectively (Figure 2). However, there was no strong support to unravel the sequence of diversification events among those three main clades. This lack of basal resolution could be attributed to a quick succession of divergence events at the time, and/or reticulated evolutionary history unresolved by species tree and concatenated tree approaches.
 
@@ -97,7 +246,7 @@ SNP-based analysis using ABBA-BABA statistics conclusively identified introgress
 
 More generally, the ABBA-BABA test detected rampant secondary gene flow between species that geographically overlap, regardless of their phylogenetic proximity, underscoring the pervasive nature of genetic introgression in rapidly evolving lineages such as white-eyes (black arrows in Figure 2a; sets 2–4 in Table 1). For example, Z. auriventer and Z. simplex display excess allele sharing indicating recent gene flow in areas of Sundaland where they overlap, even though they belong to different main clades of Zosterops (Figure 2, Table 1). The same is true for Z. melanurus and Z. simplex, which co-occur on Sumatra, and for Z. japonicus and Z. erythropleurus, which overlap in Korea (Table 1). Such introgression between species is likely recent, limited, and of the kind that the MSC model remains robust to Liu et al., 2009. The detection of rampant secondary gene flow in multiple pairs of sympatric white-eye species is in agreement with the recent discovery of introgression between various non-sister white-eye species across the Solomon Islands (Manthey et al., 2020).
 
-## Indonesian archipelago harbors all three main clades
+### Indonesian archipelago harbors all three main clades
 
 While the highest rates of Zosterops diversification are known to have occurred on archipelagoes in general (Diamond et al., 1976; Moyle et al., 2009), the geographic distribution of deeper-level lineage diversity in this genus remains unexplored. Our phylogenetic results demonstrate that Africa, most parts of continental Asia and probably also all of the Australo-Papuan region each harbor representatives from only one of the three main Zosterops clades, respectively (Figure 2a), regardless of Zosterops species diversity. In contrast, virtually all parts of the Indonesian archipelago harbor white-eye species from two to three of the main Zosterops clades (Figure 2a). Positioned between the Sunda and Sahul shelf, the Indonesian islands are a center of syntopy of lineages from either side of Wallace’s Line (Moss and Wilson, 1998; de Bruyn et al., 2014). This is consistent with the rapid rate of tectonic change reconstructed for the Indonesian archipelago over the last 30 million years (Hall, 2002; Hall, 2012; de Bruyn et al., 2014; Nugraha and Hall, 2018), which has led to a narrowing of open sea between Asia and Australia and thereby facilitated overwater dispersal of Sundaic and/or Australo-Papuan lineages for many organismic groups (e.g. Heads, 2001; Irestedt et al., 2013; Gwee et al., 2017; Ng et al., 2017; Garg et al., 2018; Reilly et al., 2019; Oliver et al., 2020, including white-eyes). At the same time, while the narrowing of the sea gap between Australo-Papua and Asia has created numerous stepping-stone islands to facilitate overwater dispersal, most of the Wallacean region remains dominated by deep sea, and there are as yet no land bridges (Voris, 2000; Rheindt et al., 2020). This complicated archipelagic setting has likely acted as a diversification driver in white-eyes, which have the capability of colonizing and populating these deep-sea islands.
 
@@ -107,27 +256,27 @@ Low-lying Indonesian islands to the east of Wallace’s Line, such as Sumba and 
 
 Our phylogenetic results reveal that the widespread Lemon-bellied White-eye Z. chloris is non-monophyletic (Figure 2; Figure 2—figure supplement 1) and several small, low-lying islands situated between the Banda Sea and Arafura Sea, including Kai and Aru, may harbor a cryptic species morphologically identical to the Lemon-bellied White-eye. White-eyes are renowned for their conservative morphology, which contributes to the confusion that has surrounded their taxonomic treatment (Mees, 1957; Mayr, 1965; Lim et al., 2019; Manthey et al., 2020). Further research is required to ascertain the evolutionary status of these and other overlooked island populations.
 
-## Borneo is a hotspot for evolution and harbors deep phylogenetic isolates
+### Borneo is a hotspot for evolution and harbors deep phylogenetic isolates
 
 Borneo has been identified as a major source of diversification across the Southeast Asian region for a variety of organismic groups, including birds, mammals, amphibians, and plants (de Bruyn et al., 2014). Our study reveals Borneo’s unique status as the only place in the distribution of the genus where members of all three main Zosterops clades occur, and where as many as four Zosterops species co-exist within a few square kilometers of one another, rendering it the center of faunal mixing for white-eyes (Figures 1 and 2). Borneo forms the eastern part of the Sundaic region, which – at present – is splintered into multiple bigger and many smaller landmasses comprising the Greater Sunda Islands and Malay Peninsula. For the longest time over the past 400,000 years, however, these landmasses have been merged into a larger landmass, Sundaland, that has facilitated the evolution of much of Southeast Asia’s equatorial rainforest fauna (Sarr et al., 2019). The east of Sundaland (i.e. Borneo) has constituted a particularly stable part of this subcontinent, remaining above water for the longest uninterrupted time and offering a wide variety of habitats such as mangroves (Z. flavus), submontane forest (Z. atricapilla and Z. auriventer), montane forest (Z. emiliae and a still undescribed white-eye from the Meratus range Eaton et al., 2016), and coastal woodland (Z. simplex). Our results from ancestral range estimation suggest an Asian origin for the entire Zosterops radiation, and a Sundaic origin for the Australasian clade (Figure 2—figure supplement 2). Borneo constitutes the largest landmass within the Sundaic region, and its elevated count in discrete Zosterops lineages suggests that it has played a key role in the diversification of this important radiation.
 
 While Borneo’s exceptional biodiversity has been appreciated as early as during Alfred R. Wallace’s times (Wallace, 1962), most of this diversity has traditionally been interpreted as being of a Sundaic element largely shared with Sumatra and peninsular Malaysia, and is only slowly being recognized as having attained species-level depths of differentiation (Cros et al., 2020). On the other hand, Borneo is known for hosting a number of deep phylogenetic isolates, such as the enigmatic Bristlehead Pityriasis gymnocephala (Oliveros et al., 2019). In the context of Zosterops diversification, we add the Mountain Black-eye Z. emiliae as an overlooked phylogenetic isolate (Figure 2). Although it has been shown to be embedded within Zosterops for over a decade (Moyle et al., 2009; Cai et al., 2019), it continues to be treated as a monospecific genus (Chlorocharis) by some modern sources (del Hoyo et al., 2016). Using our much-improved taxon sampling, Z. emiliae emerged as a basal sister to the Australasian clade with moderate support under various analytical regimes (Figure 2). In contrast, Cai et al., 2019 placed Z. emiliae with members of the Asiatic clade. Our use of the ABBA-BABA test to verify whether this conflicting position may be due to ancient introgression did not identify an excess of allele sharing between Z. emiliae and the Asiatic members (set five in Table 1), suggesting that the incongruent placement of Z. emiliae by Cai et al., 2019 is unlikely to be a result of secondary gene flow. Instead, incomplete lineage sorting may have generated such phylogenetic conflict as the divergence of Z. emiliae likely fell within a time of rapid diversification within the genus, leading to its recalcitrance to phylogenetic resolution when only few loci are applied.
 
-## Conclusions
+### Conclusions
 
 Our study presents the application of species tree methods on a large set of genome-wide markers across a comprehensive sampling of members of a rapid radiation of a classic ‘great speciator’. Using approaches to account for secondary gene flow, our study demonstrates the pervasive presence of genetic introgression across this explosive radiation. The resultant phylogeny of Zosterops white-eyes reveals that the Indonesian archipelago, and Borneo in particular, are an evolutionary hotspot for the diversification of the genus. This archipelagic region harbors members of clades centred in the neighboring Asian and Australo-Papuan landmasses, and even from a geographically distant Indo-African clade. The western Indonesian archipelago is the sunken remnant of a subcontinent – Sundaland – that only started to be periodically submerged starting from ~400,000 years ago, and offers potential for differentiation. The identification of areas in western Indonesia as a major center of modern phylogenetic diversity not only contributes to their recognition as an arena of important evolutionary processes, but also elevates their status as a region of global conservation relevance.
 
 ## Materials and methods
 
-## Taxon sampling
+### Taxon sampling
 
 A total of 48 historical toepad samples and 52 fresh samples were acquired from various museums and through fieldwork conducted across peninsular Malaysia and the Indonesian archipelago (Ashari et al., 2019; Supplementary file 1). In total, 33 white-eye species were represented [following the taxonomy by del Hoyo et al., 2016 with more recent revisions by Lim et al., 2019 and Martins et al., 2020 (see Supplementary file 2)].
 
-## Probe design for target capture
+### Probe design for target capture
 
 Target enrichment protocols have been shown to be highly effective at capturing historical DNA for phylogenomic studies (Bryson et al., 2016; van der Valk et al., 2017; Chattopadhyay et al., 2019; Baveja et al., 2020). We designed loci specifically targeting both conserved exons and variable intronic regions of the Zosterops genome (Chattopadhyay et al., 2019). We first used EvolMarkers (Li et al., 2012) to identify conserved single copy coding sequences in the genomes of Z. lateralis (accession no. GCA_001281735) (Cornetti et al., 2015), Ficedula albicollis (accession no. GCA_000247815.1) (Ellegren et al., 2012), and Taeniopygia guttata (accession no. GCF_003957565.1; released by the Vertebrate Genomes Project). To identify conserved exons, EvolMarkers performs a BLAST search (Altschul et al., 1990), for which we set a minimum of 55% identity and e-value of less than 10E-15. Only single-hit exons longer than 500 bp were used for further downstream analysis. Then we isolated 500 bp upstream and downstream of these conserved exons from the Z. lateralis genome to include variable intronic regions using bedtools 2.28.0 (Quinlan and Hall, 2010). We further checked for overlapping targets and merged all overlapping loci in bedtools, removing any loci with GC content less than 40% or more than 60%. Loci comprising repeat elements were identified using RepeatMasker 4.0.7 (Smit et al., 2015) and removed. After filtering, our design retained 832 loci, which were used by Arbor Biosciences (USA) to design a total of 63,244 RNA baits. Each locus was targeted with 4X tiling density of overlapping baits, each bait of 100 bp, for in-solution target enrichment.
 
-## Laboratory procedures
+### Laboratory procedures
 
 Fresh DNA was extracted following the manufacturer’s protocol using the DNeasy Blood and Tissue Kit (Qiagen, Germany). The DNA of historical toepad samples was extracted under sterile conditions inside a dedicated ancient DNA facility, and extractions were performed inside a biosafety cabinet with laminar air-flow. The ancient DNA facility room was subject to at least 12 hr of UV light and thoroughly cleaned with bleach in between each session of historical DNA extractions. We used the same kit for extraction of historical DNA with slight modifications (Chattopadhyay et al., 2019). Extraction negatives were included to ensure absence of contamination. Double-stranded DNA concentrations were ascertained using a Qubit 2.0 high sensitivity DNA Assay kit (Invitrogen, USA), and fragment sizes were assessed using an AATI Fragment Analyzer (Agilent, USA). The negatives were also quantified using a Qubit 2.0 assay and AATI to ensure absence of DNA.
 
@@ -139,13 +288,13 @@ Target capture was performed on all historical and fresh samples using a MYbaits
 
 We additionally sequenced the whole genomes of nine Zosterops individuals. Their DNA was extracted using the DNeasy Blood and Tissue Kit (Qiagen, Germany) according to the manufacturer’s protocol. The samples were then prepared using a Nextera Library Prep Kit (Illumina, USA) with dual indexes. The whole genome libraries were sequenced on the Illumina X10 or NovaSeq platforms at Medgenome (Foster City, California) with 150 bp paired-end runs.
 
-## Sequence assembly
+### Sequence assembly
 
 We removed adapter sequences using Trimmomatic 0.38 (Bolger et al., 2014) and duplicates with FastUniq 1.1 (Xu et al., 2012). Paired trimmed reads of historical samples were examined with mapDamage 2.0.9 (Jónsson et al., 2013) to assess DNA deamination in read ends. We further trimmed 5 bp from the 3’ ends of both forward and reverse reads as the mapDamage results show a high amount (>0.1 probability) of G to A misincorporation in the read ends, and reran mapDamage to ensure the average probability of misincorporation across samples remained below 0.1. We ran HybPiper 1.3.1 (Johnson et al., 2016) to extract target sequences. Following the HybPiper pipeline, the trimmed reads were aligned to each target gene using BWA 0.7.17 (Li, 2013). We conducted a de novo assembly of target sequences using SPAdes 3.13 (Bankevich et al., 2012), applying a sequencing depth cut-off of at least 16X coverage per contig. The contigs generated by SPAdes were re-aligned against the target sequences using Exonerate 2.4.0 (Slater and Birney, 2005) to assemble coding sequence regions (including intronic regions) and the resulting DNA sequence of each locus was extracted for downstream analyses. The length of each locus assembled for each sample was examined using the following python scripts in the HybPiper package: get_seq_lengths.py and hybpiper_stats.py. We removed four historical samples due to high amount of missing data and kept 770 loci after visual quality checks across all samples, ensuring each locus is present in at least 85% of individuals and contains less than 30% missing nucleotides.
 
 An additional 12 Zosterops samples were included by extracting target sequences from their whole genomes using blastn in BLAST+ 2.6.0 (Camacho et al., 2009). The whole genomes of Z. lateralis (accession no. GCA_001281735.1) (Cornetti et al., 2015), Z. pallidus (accession no. GCA_007556475.1) (Leroy et al., 2019), and Z. borbonicus (accession no. GCA_007252995.1) (Leroy et al., 2019) were obtained from NCBI. Whole genomes of nine individuals were resequenced for this study (Supplementary file 1). Target sequences were also extracted from the Mixornis gularis whole genome (Tan et al., 2018) to be used as an outgroup for some downstream analyses. For the nine whole genomes that were generated for the present study, we first cleaned the raw reads using a modified Perl script to remove exact PCR duplicates and low complexity reads (Bi et al., 2012; Singhal, 2013), and used Trimmomatic 0.30 (Bolger et al., 2014) for adapter removal. Contaminants were removed by aligning the raw reads to the reference genomes of potential contaminant sources (such as ribosomal RNA, human, and bacterial DNA) with Bowtie 2.0.1 (Langmead and Salzberg, 2012), followed by another cleanup of reads using Cutadapt 1.16 (Martin, 2011). We merged overlapping paired reads using FLASH 1.2.11 (Magoč and Salzberg, 2011), and aligned the cleaned paired reads against the Zosterops lateralis genome using BWA-MEM in BWA 0.7.8 (Li, 2013). The data were then converted into bam file format and sorted using SAMtools 1.5 (Li et al., 2009). We used mpileup in BCFtools (Li et al., 2009) to calculate the genotype likelihoods of each site of the reads, and generated a consensus sequence in fasta format using BCFtools. For all 12 whole genome resequenced samples, we used blastn in BLAST+ 2.6.0 (Camacho et al., 2009) to extract the same set of loci as that used in target capture.
 
-## Phylogenetic analyses
+### Phylogenetic analyses
 
 MAFFT 7.0 (Katoh and Standley, 2013) was run to ensure each locus direction was consistent throughout all samples. All 770 loci were concatenated, giving a final alignment of 1,635,155 bp with 7.60% gaps. RAxML 8.2.12 (Stamatakis, 2014) was run to construct a Maximum Likelihood (ML) tree using a GTR + GAMMA + Invariant Sites model with 100 rapid bootstraps to search for the best-scoring ML tree, and the tree was rooted with M. gularis.
 
@@ -155,18 +304,18 @@ We adopted the MSC model using three different algorithm methods: MP-EST 2.0 (Li
 
 We assessed the level of congruence in the phylogenetic placement of Zosterops species between the present and previously published datasets following the species-level classification by del Hoyo et al., 2016 and the more recent taxonomic revisions within the Asiatic and Afrotropical white-eye complexes by Lim et al., 2019 and Martins et al., 2020, respectively (see Supplementary file 2). Specifically, we assigned species to one of three main clades that emerged within the genus in our analyses. We expanded our clade assignment to 30 Zosterops taxa not sampled in our study but found to be embedded within one of the three main clades with high bootstrap support (>90%) by at least one study up until 2019 (Supplementary file 2). These additional clade assignments were not used in the construction of our phylogenetic trees, but directly examined from the trees constructed by the respective studies indicated in Supplementary file 2.
 
-## Mitochondrial tree
+### Mitochondrial tree
 
 We observed non-specific binding during hybridization of probes and sample DNA, allowing us to assemble mitochondrial DNA from the raw reads of each individual prepared by target capture. The raw reads were first mapped to the reference mitogenome of Z. lateralis (accession no. NC029146) using bwa 0.7.17 (Li, 2013), and converted to bam files using SAMtools 1.9 (Li et al., 2009). The bam files were then imported into CLC Genomics Workbench 7.0.4, remapped to the same reference mitogenome, and locally re-aligned. A consensus mitogenome of each individual was extracted with a minimum coverage of five, otherwise an ambiguous base ‘N’ was inserted. Finally, we extracted 1041 bp of ND2 sequence from each individual by aligning each assembled mitogenome to the ND2 sequence of Z. lateralis. Some samples were removed due to extensive missing nucleotides, and the ND2 sequences of 68 individuals were retained. As a means to assess the presence of artifacts from DNA damage, especially in toepad DNA, we compared the ND2 sequences generated in this study with the ND2 sequences of the same taxa deposited on GenBank by previously published studies. We also added the Genbank sequences of 16 Zosterops species not represented in our sampling regime. A maximum likelihood tree was generated using RAxML with 10,000 bootstrap replicates under the GTR + GAMMA model.
 
-## Testing gene flow with ABBA-BABA statistics
+### Testing gene flow with ABBA-BABA statistics
 
 We computed SNP-based ABBA-BABA statistics to test for gene flow among a subset of taxa with topological incongruence among trees, as well as populations which overlap in distribution. The bam files generated during locus assembly were used as input for SNP calling for the fresh samples, while the bam files of the historical samples were first subjected to mapDamage 2.0.9 (Jónsson et al., 2013) to rescale the quality scores of possibly deaminated sites. We used ANGSD 0.923 (Korneliussen et al., 2014) to call SNPs with the following filters applied: minimum depth of 20, block size of 50,000 bp, remove transitions, minimum mapping quality of 30, and minimum base quality of 20. We computed D statistics and used the jackknife.R script in ANGSD 0.923 (Korneliussen et al., 2014) to compute critical values (Z) and test for significance. A positive critical value Z > 3, corresponding to a p-value below 0.0013, suggests a significant excess of ABBA-like alleles as compared to BABA-like alleles (Green et al., 2010; Patterson et al., 2012). This critical value is widely applied as a threshold for detecting introgression and reduces the likelihood of false positives (Zheng and Janke, 2018).
 
-## Demographic analysis
+### Demographic analysis
 
 We additionally assessed the presence of secondary gene flow using PHRAPL 0.62 (Jackson et al., 2017b) by simulating the probability of observing a set of gene trees across various demographic models. We conducted simulations on a smaller subset of populations exhibiting topological incongruence: Z. auriventer (A), Z. atricapilla (B), Z. simplex (C), Z. emiliae (D) and Z. melanurus (E). A total of four combinations (ACD, ACE, BCD and BCE) were tested with 770 gene trees, each dataset consisting of three populations and an outgroup, Z. senegalensis. Each population was randomly subsampled to at most four individuals with ten replicates per locus: four out of five Z. auriventer individuals, four out of ten Z. simplex individuals, four out of seven Z. melanurus individuals, one out of two Z. atricapilla samples, and one Z. emiliae individual. We generated 48 possible demographic models under the following settings: an overall maximum of three free parameters (K = 3), a maximum of two coalescent events (K = 2), either complete isolation or migration event(s) with a single rate (K = 1), no variation in population size and growth (K = 1), only fully resolved trees were assumed, and only symmetrical migration between populations was assumed. Each dataset was simulated under these 48 different models with 10,000 trees using grid search. The probability of observing the set of gene trees under each model was assessed using Akaike Information Criterion (AIC) scores and the top two models with the lowest AIC values for each dataset were plotted in R 3.6.1 (R Development Core Team, 2019). We included the second-best model for each combination in our assessment because a previous study has shown that the second-best model may emerge as the correct demographic model with further testing (Morales et al., 2017). Additionally, we computed the genealogical divergence index (gdi) of each combination to assess the overall level of divergence between the sister taxa inferred from each model with the combined effects of genetic drift and gene flow (Jackson et al., 2017a). A gdi index close to 0 suggests panmixia, while an index close to one suggests strong divergence.
 
-## Ancestral range estimation
+### Ancestral range estimation
 
 We ran BioGeoBEARS 1.1.2 (Matzke, 2014) in R 3.6.1 (R Development Core Team, 2019) to estimate the ancestral range of each internal node of the unrooted ML concatenated tree. We used ETE Toolkit 3.1.1 (Huerta-Cepas et al., 2016) python script to set the root node between the Indo-African clade and the other clades. We assigned each species to one or more out of ten geographical areas: the Afrotropical region, West Indian Ocean islands, South Asia, mainland Southeast Asia, East Asia, Philippines, the Sundaic region, Wallacea, Melanesia, and Australia. We applied all six models (DEC, DEC+j, DIVA, DIVA+j, BayArea and BayArea+j) and selected the best-fitting model (DEC+j) based on AIC values.

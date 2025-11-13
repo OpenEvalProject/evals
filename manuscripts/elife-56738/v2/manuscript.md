@@ -48,23 +48,672 @@ Drosophila larvae possess two major types of peripheral sensory neurons. Monocil
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig1-v2.jpg)
 
-**Figure 1.:** Drosophila Cirl is expressed in proprioceptors and nociceptors.(A) The Cirl promoter drives Tomato photoprotein expression (magenta; dCirlp) in type one larval pentascolopidial ChO (lch5) neurons and type 2 C4da nociceptors, identified by a GAL4 >UAS-CD4::tdTomatoGFP-ppk promoter fusion (green; ppk-CD4::tdGFP). Magnified view of (B) C4da and (C) ChO neurons. Shown are immunohistochemical stainings against the fluorescent proteins. Scale bars (A) 20 µm, (B,C) 10 µm.
+**Figure 1.:** (A) The Cirl promoter drives Tomato photoprotein expression (magenta; dCirlpGAL4 >UAS-CD4::tdTomato) in type one larval pentascolopidial ChO (lch5) neurons and type 2 C4da nociceptors, identified by a GFP-ppk promoter fusion (green; ppk-CD4::tdGFP). Magnified view of (B) C4da and (C) ChO neurons. Shown are immunohistochemical stainings against the fluorescent proteins. Scale bars (A) 20 µm, (B,C) 10 µm.
 
 Given CIRL’s role in mechanosensation, we next tested for a specific contribution of the aGPCR to mechanical nociception. Drosophila larvae display a stereotyped response to noxious mechanical insult. Importantly, this innate nocifensive behaviour, characterized by a ‘corkscrew’ body roll, can be quantified and is distinct from the animals’ reaction to innocuous touch (Figure 2A; Video 1; Tracey et al., 2003; Zhong et al., 2010). Mechanical stimulation with a 40 mN von Frey filament triggered nocifensive behaviour in 53% of control larvae. In contrast, Cirl null mutants (dCirlKO) showed significantly increased nocifensive behaviour and responded in 75% of the trials (Figure 2B; Table 1). Knocking-down Cirl levels specifically in C4da neurons via RNA-interference (RNAi; ppk-GAL4 >UAS-dCirlRNAi) delivered a mutant phenocopy and re-expressing Cirl in nociceptors rescued the mutant phenotype. Notably, Cirl overexpression had the opposite effect resulting in diminished nocifensive responses (Figure 2B; Table 1). These results show that CIRL curtails mechanical nociception by carrying out a cell-autonomous, dose-dependent function in C4da neurons.
 
+**Table 1.**
+ Behaviour and imaging.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Genotype</th>
+      <th>Mean</th>
+      <th>SEM</th>
+      <th>N</th>
+      <th colspan="2">P-value</th>
+      <th>Test</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 2B</td>
+      <td>control</td>
+      <td>53.34</td>
+      <td>1.458</td>
+      <td>7</td>
+      <td rowspan="2" colspan="2">p&lt;0.0001</td>
+      <td rowspan="2">unpaired t-test</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlKO</td>
+      <td>75.37</td>
+      <td>2.676</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RNAi control</td>
+      <td>54.23</td>
+      <td>3.279</td>
+      <td>8</td>
+      <td rowspan="2" colspan="2">p=0.0169</td>
+      <td rowspan="2">one-way ANOVA, Tukey correction</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; dCirlRNAi</td>
+      <td>68.08</td>
+      <td>2.052</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GAL4 control</td>
+      <td>53.67</td>
+      <td>3.211</td>
+      <td>14</td>
+      <td colspan="2"></td>
+      <td rowspan="4">one-way ANOVA, Tukey correction</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>KO ppk &gt; dCirl</td>
+      <td>45.7</td>
+      <td>3.627</td>
+      <td>10</td>
+      <td colspan="2">p=0.3345 (GAL4 control)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; dCirl</td>
+      <td>37.12</td>
+      <td>2.778</td>
+      <td>10</td>
+      <td colspan="2">p=0.0023 (GAL4 control)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; dCirl (29°C)</td>
+      <td>28.67</td>
+      <td>3.125</td>
+      <td>10</td>
+      <td colspan="2">p&lt;0.0001 (GAL4 control)</td>
+    </tr>
+    <tr>
+      <td>Figure 3C</td>
+      <td>control (Canton-S)</td>
+      <td>44</td>
+      <td>3.712</td>
+      <td>10</td>
+      <td rowspan="2" colspan="2">p&lt;0.0001</td>
+      <td rowspan="2">Mann-Whitney</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dunce1</td>
+      <td>72</td>
+      <td>1.106</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>control (f36a)</td>
+      <td>50.5</td>
+      <td>1.167</td>
+      <td>10</td>
+      <td rowspan="2" colspan="2">p&lt;0.0001</td>
+      <td rowspan="2">unpaired t-test</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dunceML</td>
+      <td>79.58</td>
+      <td>0.965</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Figure 3D</td>
+      <td>control (+vehicle)</td>
+      <td>49.67</td>
+      <td>1.445</td>
+      <td>10</td>
+      <td rowspan="2">p&lt;0.0001</td>
+      <td></td>
+      <td rowspan="6">one-way ANOVA, Tukey correction</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlKO(+vehicle)</td>
+      <td>65.67</td>
+      <td>1.725</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>control (+SQ22536)</td>
+      <td>38.33</td>
+      <td>1.511</td>
+      <td>10</td>
+      <td rowspan="2">p=0.9805</td>
+      <td>p=0.0002 (control +vehicle)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlKO(+SQ22536)</td>
+      <td>40</td>
+      <td>1.406</td>
+      <td>10</td>
+      <td>p&lt;0.0001 (dCirlKO +vehicle)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>control (+DDA)</td>
+      <td>35.67</td>
+      <td>2.334</td>
+      <td>10</td>
+      <td rowspan="2">p=0.6315</td>
+      <td>p&lt;0.0001 (control +vehicle)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlKO(+DDA)</td>
+      <td>39.33</td>
+      <td>1.388</td>
+      <td>10</td>
+      <td>p&lt;0.0001 (dCirlKO +vehicle)</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>control</td>
+      <td>1.58</td>
+      <td>0.2794</td>
+      <td>10</td>
+      <td rowspan="2" colspan="2">p=0.0032</td>
+      <td rowspan="2">unpaired t-test</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; dCirlRNAi</td>
+      <td>2.94</td>
+      <td>0.2866</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Figure 4E</td>
+      <td>control</td>
+      <td>54.28</td>
+      <td>1.961</td>
+      <td>10</td>
+      <td></td>
+      <td></td>
+      <td rowspan="3">one-way ANOVA, Tukey correction</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlTT&gt;A</td>
+      <td>55</td>
+      <td>2.274</td>
+      <td>10</td>
+      <td colspan="2">p=0.9660 (control)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlHH&gt;A</td>
+      <td>73.78</td>
+      <td>1.845</td>
+      <td>10</td>
+      <td colspan="2">p&lt;0.0001 (control)</td>
+    </tr>
+    <tr>
+      <td>Figure 5A</td>
+      <td>GAL4 control (+vehicle)</td>
+      <td>53.96</td>
+      <td>3.831</td>
+      <td>19</td>
+      <td colspan="2">p&gt;0.9999 (ppk &gt; dCirl +paclitaxel)</td>
+      <td rowspan="4">Kruskal-Wallis test</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GAL4 control (+paclitaxel)</td>
+      <td>95.5</td>
+      <td>1.74</td>
+      <td>10</td>
+      <td colspan="2">p=0.0002 (GAL4 control +vehicle)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; dCirl (+vehicle)</td>
+      <td>37.12</td>
+      <td>2.778</td>
+      <td>10</td>
+      <td colspan="2">p&gt;0.9999 (ppk &gt; dCirl +paclitaxel)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; dCirl (+paclitaxel)</td>
+      <td>46.34</td>
+      <td>2.374</td>
+      <td>10</td>
+      <td colspan="2">p&lt;0.0001 (GAL4 control +Taxol)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlKO (+vehicle)</td>
+      <td>69.68</td>
+      <td>3.54</td>
+      <td>20</td>
+      <td rowspan="2" colspan="2">p&lt;0.0001</td>
+      <td rowspan="2">Mann-Whitney</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlKO (+paclitaxel)</td>
+      <td>97.05</td>
+      <td>1.097</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Figure 5C</td>
+      <td>GAL4 control (+vehicle)</td>
+      <td>8.256</td>
+      <td>0.1985</td>
+      <td>10</td>
+      <td colspan="2">p=0.0117 (GAL4 control +Taxol)</td>
+      <td rowspan="4">Kruskal-Wallis test</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GAL4 control (+paclitaxel)</td>
+      <td>6.27</td>
+      <td>0.5574</td>
+      <td>10</td>
+      <td colspan="2">p=0.0017 (ppk &gt; dCirl +paclitaxel)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; dCirl (+vehicle)</td>
+      <td>5.108</td>
+      <td>0.1603</td>
+      <td>10</td>
+      <td colspan="2">p&lt;0.0001 (GAL4 control +vehicle)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; dCirl (+paclitaxel)</td>
+      <td>3.861</td>
+      <td>0.5961</td>
+      <td>10</td>
+      <td colspan="2">p=0.1848 (ppk &gt; dCirl +vehicle)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GAL4 control (+vehicle)</td>
+      <td>22.17</td>
+      <td>0.7015</td>
+      <td>10</td>
+      <td colspan="2">p=0.0014 (GAL4 control +paclitaxel)</td>
+      <td rowspan="4">one-way ANOVA, Tukey correction</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GAL4 control (+paclitaxel)</td>
+      <td>15.42</td>
+      <td>1.174</td>
+      <td>10</td>
+      <td colspan="2">p&gt;0.9999 (ppk &gt; dCirl +paclitaxel)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; dCirl (+vehicle)</td>
+      <td>17.26</td>
+      <td>0.6091</td>
+      <td>10</td>
+      <td colspan="2">p=0.0296 (GAL4 control +vehicle)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; dCirl (+paclitaxel)</td>
+      <td>11.22</td>
+      <td>1.716</td>
+      <td>10</td>
+      <td colspan="2">p=0.2557 (ppk &gt; dCirl +vehicle)</td>
+    </tr>
+    <tr>
+      <td>Figure 5D</td>
+      <td>control</td>
+      <td>4.971</td>
+      <td>0.1747</td>
+      <td>8</td>
+      <td rowspan="2" colspan="2">p=0.0025</td>
+      <td rowspan="2">unpaired t-test</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlKO</td>
+      <td>4.219</td>
+      <td>0.1255</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>control</td>
+      <td>18.11</td>
+      <td>0.5029</td>
+      <td>8</td>
+      <td rowspan="2" colspan="2">p=0.2829</td>
+      <td rowspan="2">unpaired t-test</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlKO</td>
+      <td>17.37</td>
+      <td>0.4384</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Figure 6A</td>
+      <td>control day 0</td>
+      <td>6.972</td>
+      <td>0.8056</td>
+      <td>6</td>
+      <td rowspan="2" colspan="2">p=0.4062</td>
+      <td rowspan="4">unpaired t-test</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CCI day 0</td>
+      <td>8.003</td>
+      <td>0.8755</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>control day 7</td>
+      <td>8.152</td>
+      <td>0.6647</td>
+      <td>6</td>
+      <td rowspan="2" colspan="2">p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CCI day 7</td>
+      <td>0.861</td>
+      <td>0.0982</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Figure 6B</td>
+      <td>IB4 (control)</td>
+      <td>28.6</td>
+      <td>5.148</td>
+      <td>6</td>
+      <td rowspan="2" colspan="2">p=0.0018</td>
+      <td rowspan="6">unpaired t-test</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IB4 (CCI)</td>
+      <td>6.791</td>
+      <td>0.4034</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CGRP (control)</td>
+      <td>27.89</td>
+      <td>5.529</td>
+      <td>6</td>
+      <td rowspan="2" colspan="2">p=0.3358</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CGRP (CCI)</td>
+      <td>21.49</td>
+      <td>3.078</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NF200 (control)</td>
+      <td>26.76</td>
+      <td>2.737</td>
+      <td>6</td>
+      <td rowspan="2" colspan="2">p=0.45</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NF200 (CCI)</td>
+      <td>33.57</td>
+      <td>8.216</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Figure 6C</td>
+      <td>IB4 (control)</td>
+      <td>10.16</td>
+      <td>2.065</td>
+      <td>6</td>
+      <td rowspan="2" colspan="2">p=0.1293</td>
+      <td rowspan="4">unpaired t-test</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IB4 (CCI)</td>
+      <td>6.662</td>
+      <td>0.4542</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CGRP (control)</td>
+      <td>11.5</td>
+      <td>2.103</td>
+      <td>6</td>
+      <td rowspan="2" colspan="2">p=0.0895</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CGRP (CCI)</td>
+      <td>7.212</td>
+      <td>0.8851</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NF200 (control)</td>
+      <td>14.25</td>
+      <td>1.965</td>
+      <td>6</td>
+      <td rowspan="2" colspan="2">p=0.3939</td>
+      <td rowspan="2">Mann-Whitney</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NF200 (CCI)</td>
+      <td>13</td>
+      <td>4.133</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig2-v2.jpg)
 
-**Figure 2.:** Cirl reduces nocifensive behaviour.(A) Characteristic nocifensive ‘corkscrew’ roll of larvae upon mechanical stimulation with a von Frey filament (40 mN force). (B) Quantification of nocifensive behaviour in different genotypes. Increased nocifensive responses were observed in dCirl and upon nociceptor-specific expression of an RNAi construct (KOppk-GAL4 >UAS-dCirl). RNAiCirl re-expression rescued the null mutant (dCirl) and KO ppk-GAL4 >UAS-dCirlCirl overexpression (ppk-GAL4 >UAS-dCirl) reduced nocifensive responses. Raising animals at a higher temperature (29°C vs. 25°C) increases UAS/GAL4-dependent transgene expression (Duffy, 2002). Data are presented as mean and individual values (lower bar plot) and as the difference between means with 95% confidence intervals (upper dot plot). Asterisks denote level of significance, *p≤0.05, **p≤0.01, ***p≤0.001.
+**Figure 2.:** (A) Characteristic nocifensive ‘corkscrew’ roll of larvae upon mechanical stimulation with a von Frey filament (40 mN force). (B) Quantification of nocifensive behaviour in different genotypes. Increased nocifensive responses were observed in dCirlKO and upon nociceptor-specific expression of an RNAi construct (ppk-GAL4 >UAS-dCirlRNAi). Cirl re-expression rescued the null mutant (dCirlKO ppk-GAL4 >UAS-dCirl) and Cirl overexpression (ppk-GAL4 >UAS-dCirl) reduced nocifensive responses. Raising animals at a higher temperature (29°C vs. 25°C) increases UAS/GAL4-dependent transgene expression (Duffy, 2002). Data are presented as mean and individual values (lower bar plot) and as the difference between means with 95% confidence intervals (upper dot plot). Asterisks denote level of significance, *p≤0.05, **p≤0.01, ***p≤0.001.
+
+![Video 1.](https://cdn.elifesciences.org/articles/56738/elife-56738-video1.mp4.jpg)
 
 CIRL sensitizes proprioceptive ChO neurons by translating extracellular mechanical stimulation into a drop of intracellular cAMP. Lower cAMP levels, in turn, enhance the mechanically-evoked receptor potential of ChOs through a yet unresolved molecular mechanism (Scholz et al., 2017). Intriguingly, our behavioural data point towards CIRL exerting the opposite influence on nociceptive C4da neurons, whose sensitivity to mechanical stimulation is decreased by CIRL and increased in the absence of the aGPCR. A possible explanation for the antinociceptive action of CIRL is that the aGPCR also reduces cAMP in nociceptors, but that here the second messenger cascade acts on different molecular targets, i.e. specific ion channels, to produce an inverted effect. According to this model, low cAMP levels would dampen nociceptor activity. Next, we therefore asked whether increasing cAMP in C4da neurons (as may occur in dCirlKO) promotes nocifensive behaviour. Because chronic changes of cAMP levels strongly alter neuronal development (Griffith and Budnik, 2006) we selected an optogenetic approach to trigger a rapid, nociceptor-specific increase of cAMP. The bacterial photoactivated adenylyl cyclase bPAC can be genetically expressed in selected Drosophila neurons to evoke cAMP production upon blue light stimulation (Figure 3A; Stierl et al., 2011; Scholz et al., 2017). Indeed, driving bPAC in C4da neurons (ppk-GAL4 >UAS-bPAC) led to increased nocifensive behaviour during light exposure, whereas control animals showed no light-induced effects (Figure 3B; Table 2). Notably, bPAC expression also produced some irregular behaviour in the absence of photostimulation (‘spontaneous bending’; Figure 3B), which is likely a result of the enzyme’s residual dark activity (Stierl et al., 2011). Nocifensive responses were further enhanced by bPAC in dCirlKO larvae (dCirlKO ppk-GAL4 >UAS-bPAC), in line with increased cAMP levels in mutant C4da neurons. Independent support for this conclusion was received by analysing larvae carrying mutant alleles of the phosphodiesterase (PDE) dunce (Davis and Kiger, 1981). Here, pronounced nocifensive behaviour accompanies chronically elevated cAMP concentrations (Figure 3C; Table 1).
 
+**Table 2.**
+ 0: no response, 1: stimulated rolling, 2: spontaneous bending, 3: spontaneous rolling.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Genotype</th>
+      <th>Mean 0</th>
+      <th>Mean 1</th>
+      <th>Mean 2</th>
+      <th>Mean 3</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 3B</td>
+      <td>wild-type (dark)</td>
+      <td>47.29</td>
+      <td>52.71</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>203</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>wild-type (light)</td>
+      <td>48.00</td>
+      <td>52.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; bPAC (dark)</td>
+      <td>31.25</td>
+      <td>53.13</td>
+      <td>15.63</td>
+      <td>0.00</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; bPAC (light)</td>
+      <td>5.13</td>
+      <td>56.41</td>
+      <td>28.21</td>
+      <td>10.26</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>KO ppk &gt; bPAC (dark)</td>
+      <td>0.00</td>
+      <td>70.00</td>
+      <td>26.67</td>
+      <td>3.33</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>KO ppk &gt; bPAC (light)</td>
+      <td>0.00</td>
+      <td>58.06</td>
+      <td>12.90</td>
+      <td>29.03</td>
+      <td>31</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic illustration of cAMP production by bPAC. (B) Optogenetic assay. Stimulated and spontaneous nocifensive responses can be promoted and elicited, respectively, by bPAC activation in C4da neurons (blue labels, photostimulation). Larval behaviour was observed during 3 min illumination (~200 µW/mm2 at 475 nm) followed by mechanical stimulation (40 mN von Frey filament). (C) Nocifensive behaviour of PDE mutants with ~73% (dunce) and ~35% (1dunce) residual cAMP hydrolysis rates (MLDavis and Kiger, 1981). (D) The adenylyl cyclase inhibitors SQ22536 and DDA (500 µM) reduce nocifensive responses to comparable levels in control and dCirl larvae. Data are presented as mean and individual values. Asterisks denote level of significance, ***p≤0.001.KO
+**Figure 3.:** (A) Schematic illustration of cAMP production by bPAC. (B) Optogenetic assay. Stimulated and spontaneous nocifensive responses can be promoted and elicited, respectively, by bPAC activation in C4da neurons (blue labels, photostimulation). Larval behaviour was observed during 3 min illumination (~200 µW/mm2 at 475 nm) followed by mechanical stimulation (40 mN von Frey filament). (C) Nocifensive behaviour of PDE mutants with ~73% (dunce1) and ~35% (dunceML) residual cAMP hydrolysis rates (Davis and Kiger, 1981). (D) The adenylyl cyclase inhibitors SQ22536 and DDA (500 µM) reduce nocifensive responses to comparable levels in control and dCirlKO larvae. Data are presented as mean and individual values. Asterisks denote level of significance, ***p≤0.001.
 
 To further substantiate that CIRL influences nociception by acting on cAMP-dependent signalling, we inhibited the endogenous adenylyl cyclase activity by pharmacological means. Consistent with nociceptor sensitization by cAMP, dietary supplementation with the adenylyl cyclase inhibitors SQ22536 or DDA (2',3'-dideoxyadenosine) significantly decreased nocifensive behaviour of Drosophila larvae. Importantly, this treatment produced the same responses of control and dCirlKO animals to von Frey filament stimulation (Figure 3D; Table 1). This result shows that CIRL acts in the same pathway as cAMP production by the adenylyl cyclase and supports the notion that the aGPCR exerts its antinociceptive effect by lowering cAMP levels through Gi/o -mediated inhibition of adenylyl cyclase activity.
 
 Next, we used calcium imaging to directly test whether CIRL modulates the mechanically-evoked activity of nociceptors. To this end, we monitored calcium signals in C4da neurons labelled with GCaMP6m (Chen et al., 2013) during von Frey filament stimulation as previously reported (Hu et al., 2017; Figure 4—figure supplement 1). Consistent with the behavioural data describing a CIRL-mediated downregulation of nociceptor function, dCirlRNAi significantly enhanced calcium responses to noxious mechanical stimulation (Figure 4A,B; Table 1). In principle, CIRL could influence the activity of C4da neurons by modulating cellular excitability or by modulating the mechanotransduction process, as is the case in touch-sensitive ChO neurons (Scholz et al., 2017). To differentiate between these possibilities, we again chose an optogenetic strategy and circumvented mechanotransduction by stimulating the nociceptors with light. Photostimulation of C4da neurons via the optimized Channelrhodopsin-2 (ChR2) variant ChR2XXM (Nagel et al., 2003; Scholz et al., 2017) triggered nocifensive behaviour, consistent with previous work (Hwang et al., 2007). Notably, dCirlKO larvae (dCirlKO ppk-GAL4 >UAS-chop2XXM) responded more strongly than controls (ppk-GAL4 >UAS-chop2XXM) over a range of different blue light intensities (475 nm; Figure 4C; Table 3). This demonstrates that CIRL decreases the excitability of mechanical nociceptors, contrasting its role in touch-sensitive neurons where the aGPCR specifically enhances mechanotransduction (Scholz et al., 2017).
+
+**Table 3.**
+ 0: no photoinduced response, 1: photoinduced response.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Genotype</th>
+      <th>Mean 0</th>
+      <th>Mean 1</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 4C</td>
+      <td>wild-type (10−3 mW/mm2)</td>
+      <td>100</td>
+      <td>0</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>wild-type (10−2 mW/mm2)</td>
+      <td>100</td>
+      <td>0</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>wild-type (10−1 mW/mm2)</td>
+      <td>100</td>
+      <td>0</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; chop2XXM (10−3 mW/mm2)</td>
+      <td>95</td>
+      <td>5</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; chop2XXM (10−2 mW/mm2)</td>
+      <td>25</td>
+      <td>75</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk &gt; chop2XXM (10−1 mW/mm2)</td>
+      <td>36.36</td>
+      <td>63.63</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlKOppk &gt; chop2XXM (10−3 mW/mm2)</td>
+      <td>57.14</td>
+      <td>42.86</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlKOppk &gt; chop2XXM (10−2 mW/mm2)</td>
+      <td>9.52</td>
+      <td>90.48</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dCirlKOppk &gt; chop2XXM (10−1 mW/mm2)</td>
+      <td>0</td>
+      <td>100</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig4-v2.jpg)
+
+**Figure 4.:** (A) Calcium imaging of C4da axon terminals expressing GCaMP6m (ppk-GAL4 >UAS-GCaMP6m) in semi-intact larval preparations. Representative baseline (F0) and maximum calcium responses (Fmax) are shown for control and CirlRNAi animals upon von Frey filament stimulation (45 mN). Scale bar, 10 μm. (B) Average calcium traces (arrow indicates stimulation) and quantification of the signals (ΔFmax/F0). CirlRNAi significantly elevates mechano-nociceptive responses of C4da neurons. (C) Nocifensive responses (red) elicited via ChR2XXM-mediated photostimulation of C4da neurons in control (ppk-GAL4 >UAS-chop2XXM) and dCirlKO larvae (dCirlKO ppk-GAL4 >UAS-chop2XXM). (D) Structure of the GPS region in Drosophila CIRL (Scholz et al., 2017). The Stachel sequence (light blue) is part of the GAIN domain (blue) contained in the CTF. Conserved, mutated amino acids required for receptor autoproteolysis at the GPS are shown in red (−2: dCirlH>A, +1: dCirlT>A). (E) Quantification of nocifensive behaviour in dCirlT>A and dCirlH>A receptor mutants. Data are presented as mean and individual values. Asterisks denote level of significance, **p≤0.01, ***p≤0.001. See also Figure 4—figure supplements 1 and 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A,B) The genomic transgene dCirlN-RFP (Scholz et al., 2017) reports low protein expression levels in C4da neurons (arrows). (B) Shown are confocal images of immunohistochemical stainings against RFP (A, black; B, magenta) and the membrane marker anti-HRP (horseradish peroxidase; B, green). Scale bar 25 µm.
 
 We further asked whether signalling to different subcellular targets may correlate with different activation mechanisms of CIRL in these two types of mechanosensory neurons. Several studies have shown that aGPCR activation can occur by means of an intramolecular tethered agonist, termed Stachel (stalk) (Liebscher et al., 2014; Monk et al., 2015; Stoveken et al., 2015, for Stachel-independent signalling see Kishore et al., 2016; Salzman et al., 2017; Sando et al., 2019). This linker sequence of approximately 20 amino acids begins at the extracellular GPCR proteolysis site (GPS) and connects the GAIN (GPCR autoproteolysis inducing) domain to the 7-transmembrane unit (Figure 4D). In order to test for a role of the Stachel sequence in activating CIRL in mechanical nociceptors, we used two established mutants. Whereas the dCirlT>A allele carries a mutation at the +1 position of the GPS within the Stachel sequence, the −2 mutation in the dCirlH>A allele leaves the Stachel intact but reduces protein expression (Figure 4D; Scholz et al., 2017). Our analysis of nocifensive behaviour in these mutants reported normal responses for the T > A allele and a CirlKO phenocopy for the H > A allele (Figure 4E, Table 1). Thus, C4da neurons appear to be sensitive to reduced CIRL expression, which is consistent with very low protein levels in wild-type animals (close to the detection threshold; Figure 4—figure supplement 2). An intact tethered agonist, in turn, is dispensable for CIRL function in mechanical nociceptors, contrasting the situation in touch-sensitive ChO neurons, where mutating the Stachel sequence disrupts receptor function (Scholz et al., 2017). Taken together, these observations indicate that the activation mechanism of CIRL differs for the two mechanosensory submodalities.
 
@@ -80,7 +729,7 @@ Considering the evolutionary conservation of signalling pathways for nociception
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig6-v2.jpg)
 
-**Figure 6.:** Cirl1 expression in mammalian non-peptidergic nociceptors.(A) Traumatic injury of the sciatic nerve (CCI, green) in Wistar rats results in mechanical allodynia after one week as measured by von Frey Hairs (paw withdrawal threshold) in comparison to the contralateral side (grey). (B, C) Quantification of Cirl1 (B) and Cirl3 (C) mRNA levels in subpopulations of rat DRG neurons via in situ hybridization (RNAscope). Shown are control conditions (naïve DRGs, grey) and one week after injury (green) following the emergence of allodynia. Data are presented as mean and individual values. Asterisks denote level of significance, **p≤0.01, ***p≤0.001. (D, E) Example images of the RNAscope assay in DRG neurons. Shown are projections of confocal stacks stained against IB4 and labelled with probes against Cirl1 and Cirl3 under control conditions (D) and CCI (E). Scale bar 20 µm.
+**Figure 6.:** (A) Traumatic injury of the sciatic nerve (CCI, green) in Wistar rats results in mechanical allodynia after one week as measured by von Frey Hairs (paw withdrawal threshold) in comparison to the contralateral side (grey). (B, C) Quantification of Cirl1 (B) and Cirl3 (C) mRNA levels in subpopulations of rat DRG neurons via in situ hybridization (RNAscope). Shown are control conditions (naïve DRGs, grey) and one week after injury (green) following the emergence of allodynia. Data are presented as mean and individual values. Asterisks denote level of significance, **p≤0.01, ***p≤0.001. (D, E) Example images of the RNAscope assay in DRG neurons. Shown are projections of confocal stacks stained against IB4 and labelled with probes against Cirl1 and Cirl3 under control conditions (D) and CCI (E). Scale bar 20 µm.
 
 ## Discussion
 
@@ -88,7 +737,7 @@ The sensations of touch and mechanical pain represent distinct mechanosensory su
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/56738/elife-56738-fig7-v2.jpg)
 
-**Figure 7.:** Drosophila CIRL adjusts mechanosensory submodalities in opposite directions.Scheme summarizing how processing of different levels of mechanical force is bidirectionally modulated by CIRL’s downregulation of cAMP production. Whereas low threshold mechanosensory neurons (ChOs; gentle touch) are less responsive in Cirl mutants, high threshold mechanical nociceptors (C4da neurons; harsh touch) become sensitized.
+**Figure 7.:** Scheme summarizing how processing of different levels of mechanical force is bidirectionally modulated by CIRL’s downregulation of cAMP production. Whereas low threshold mechanosensory neurons (ChOs; gentle touch) are less responsive in Cirl mutants, high threshold mechanical nociceptors (C4da neurons; harsh touch) become sensitized.
 
 The transient receptor potential (TRP) channel subunits NOMPC (no receptor potential, TRPN), NAN (nanchung, TRPV), and IAV (inactive, TRPV) govern mechanosensation by larval ChO neurons (Effertz et al., 2012; Lehnert et al., 2013; Zhang et al., 2013). The mechanically gated ion channel Piezo, the DEG/ENaC subunit Pickpocket, and the TRPN channel Painless, on the other hand, are required for mechanical nociception in Drosophila (Tracey et al., 2003; Zhong et al., 2010; Kim et al., 2012; Gorczyca et al., 2014; Guo et al., 2014; Mauthner et al., 2014). It is therefore conceivable that the receptor potential generated by these different mechanotransducers may be modulated in opposite directions, i.e. decreased in ChO neurons and increased in nociceptors, by cAMP/PKA (protein kinase A)-dependent channel phosphorylation. Matching our results in Drosophila, enhanced nociceptor activity in mammals has been linked to elevated cAMP levels. For example, mechanical hyperalgesia during inflammation involves cAMP-modulated HCN channels and sensitization of mammalian Piezo2 via PKA and protein kinase C (PKC)-based signalling (Emery et al., 2011; Dubin et al., 2012). Conversely, Gi/o-coupled receptors, such as opioid, somatostatin, and GABAB receptors, counteract cAMP-dependent nociceptor sensitization (Yudin and Rohacs, 2018). In addition to this second messenger pathway, Gβγ subunits of Gi/o-coupled GPCRs can directly interact with ion channels. Thereby nociceptor signalling can be suppressed via activation of G protein regulated inwardly rectifying K+ channels (GIRK) or by inhibition of voltage-gated Ca2+ channels (Logothetis et al., 1987; Marker et al., 2005; Bourinet et al., 2014). Recent work has identified that CIRL2 and CIRL3 promote synapse formation in the mouse hippocampus (Sando et al., 2019). While Drosophila CIRL may also shape synaptic connectivity, our results indicate that CIRL modulates the mechanically-evoked activity of nociceptors independently of such an additional function.
 
@@ -100,60 +749,60 @@ The specificity theory, put forward more than 100 years ago (Sherrington, 1906),
 
 ## Materials and methods
 
-## Drosophila experiments
+### Drosophila experiments
 
-## Fly stocks
+#### Fly stocks
 
 Animals were raised at 25°C on standard cornmeal and molasses medium. The following fly strains were used in this study:
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 Stainings of the dCirlpGAL4- and ppk-positive neurons (Figure 1) and CIRLN-RFP (Figure 4—figure supplement 2) were performed essentially as previously reported (Ehmann et al., 2014). Third instar larvae were dissected in cold PBS, fixed in 4% paraformaldehyde for 10 or 40 min at room temperature (RT), washed 3 x for 10 min in 0.3% PBT (PBS with 0.3% Triton X-100, Sigma-Aldrich) and blocked for 30 min in 0.3% PBT supplemented with 5% normal goat serum (NGS). The preparations were incubated with primary antibodies (diluted in 0.3% PBT with 5% or 3% NGS) at 4°C overnight. After washing 6 x for 10 min with 0.3% PBT, the samples were incubated with secondary antibodies (diluted in 0.3% PBT with 5% or 3% NGS) for 120 min at RT or at 4°C overnight. Following 6 × 10 min washing steps with 0.3% PBT, the preparations were immersed in Vectashield (Vector Laboratories) and stored for at least one night at 4°C. The following primary antibodies were used: mouse-α-GFP (1:200; Sigma-Aldrich, SAB4200681; RRID:AB_2827519), rabbit-α-RFP (1:200; antibodies-online, ABIN129578; RRID:AB_10781500). Secondary antibodies: Alexa Fluor-488-conjugated goat-α-mouse (1:250; Invitrogen, A-11001; RRID:AB_2534069), Cy3-conjugated goat-α-rabbit (1:250; Jackson ImmunoResearch, 111-165-003; RRID:AB_2338006), Alexa Fluor-647 goat- α-rabbit (1:250; Invitrogen, A-21246; RRID:AB_2535814), and α-HRP conjugated with Alexa488 (1:250; Jackson ImmunoResearch, 123-545-021; RRID:AB_2338965). Samples were mounted in Vectashield and confocal images (Figure 1, Figure 4—figure supplement 2) were acquired with a LSM 800 (Zeiss) and a Leica TCS SP5. Intensity and contrast were set using Fiji (Schindelin et al., 2012) and Photoshop CC 2018 (Adobe).
 
-## Nociceptor morphometry
+#### Nociceptor morphometry
 
 For analyses of C4da neuron morphology, staged third instar larvae (96 ± 3 hr after egg laying, AEL), raised in density-controlled vials, were mounted in halocarbon oil. Confocal images of photoprotein signals (ppk-GAL4 >UAS-CD4::tdGFP or UAS-CD4::tdTomato) were collected with a Zeiss LSM700 laser scanning microscope. Image stacks with a Z step size between 0.5 and 2 μm were acquired from abdominal segment A5 with a 20×/0.8 objective and quantified with Imaris (Bitplane) using the filament tracer tool.
 
-## Nocifensive behaviour
+#### Nocifensive behaviour
 
 For mechanical nociception assays, wandering third instar larvae were collected in a sylgard covered Petri dish and stimulated with a 40 mN von Frey filament (made from fishing line, 0.22 mm diameter, Caperlan; calibrated with a precision balance). A single noxious mechanical stimulus was rapidly delivered to midabdominal segments (~A4–A6) on the dorsal side of the larva. A positive response was scored if stimulation elicited at least one nocifensive corkscrew body roll. For all behavioural experiments each animal was tested only once. The adenylyl cyclase inhibitors SQ22536 and DDA were added to the food (giving final concentrations of 500 µM) one day prior to the experiments (Figure 3D). All data were collected from at least seven trials (N, Table 1) each sampling 6–53 larvae.
 
-## Calcium imaging
+#### Calcium imaging
 
 Calcium imaging of C4da axon terminals was performed as previously described (Figure 4—figure supplement 1; Hu et al., 2017). Briefly, staged third instar larvae (96 ± 3 hr AEL) were pinned on a Sylgard (Dow Corning) plate and partially dissected in physiological saline to expose the ventral nerve cord (VNC). C4da neuron axon terminals expressing GCaMP6m were live-imaged by confocal microscopy with a 40 × water objective (Olympus FV1000MP) with 3x zoom to image at least four segments ensuring the calcium response could be detected. Activation of sensory neurons was achieved by providing a mechanonociceptive cue using a micromanipulator-mounted von Frey filament (45 mN) for stimulation of midabdominal segments (A3–A5). The most robust responses to local von Frey filament stimulation are restricted to a single VNC hemisegment corresponding to the stimulation site on the body wall although the adjacent segment(s) could also be slightly activated. The transient dip in fluorescence intensity (Figure 4B) is due to the larval brain moving out of focus briefly during and after mechanical stimulation. Baseline (F0) and relative maximum intensity change (ΔFmax) of GCaMP6m fluorescence were analysed.
 
-## Optogenetics
+#### Optogenetics
 
-## bPAC
+##### bPAC
 
 Larvae were placed in a drop of water on a Sylgard-coated Petri dish and monitored with a stereomicroscope (Olympus SZX16). After applying blue light (~200 µW/mm2 at 475 nm) for 3 min, the animals were mechanically stimulated with a von Frey filament (see above). Each larva was scored according to the following criteria. no response: no nocifensive or irregular behaviour during light or upon mechanical stimulation; stimulated rolling: no nocifensive or irregular behaviour during light, corkscrew body roll upon mechanical stimulation; spontaneous bending: head-swinging or bending during light; spontaneous rolling: corkscrew body roll during light. For each set of experiments, three larvae were analysed simultaneously and each animal was tested only once. In Table 2, N refers to the number of individuals tested.
 
-## ChR2XXM
+##### ChR2XXM
 
 Larvae were placed in a Petri dish and illuminated with blue light (either ~10−1 mW/mm2, ~10−2 mW/mm2, or ~10−3 mW/mm2 at 475 nm) for 30 s. Each larva was scored according to the following criteria. No photoinduced response: no nocifensive or irregular behaviour during light exposure; photoinduced response: nocifensive responses such as massive head-swinging, bending, or corkscrew body roll during light exposure. For each experiment, two or three larvae were analysed simultaneously and each animal was tested only once. In Table 3, N refers to the number of individuals tested. Larvae were raised on food supplemented with 100 µM all-trans-retinal (Sigma-Aldrich).
 
-## Drosophila neuropathy model
+#### Drosophila neuropathy model
 
 DMSO (dimethyl sulfoxide, vehicle, Sigma Aldrich) or paclitaxel (S1150 Absource Diagnostics, dissolved in DMSO) were carefully mixed into the food vials once ~90% of first instar larvae had hatched. This way, paclitaxel treatment (10 µM) occurred after completion of neurogenesis and axonal pathfinding (Bhattacharya et al., 2012).
 
-## Rat experiments
+### Rat experiments
 
-## Traumatic neuropathy (Chronic constriction injury, CCI)
+#### Traumatic neuropathy (Chronic constriction injury, CCI)
 
 Animal care and protocols were performed in accordance with international guidelines for the care and use of laboratory animals (EU Directive 2010/63/EU for animal experiments) and were approved by the Government of Unterfranken (protocol numbers 2–733 and 2–264). Humane endpoints and criteria for discontinuation of the experiments with approved score sheets were defined, and the animals were treated accordingly. Animal studies were reported according to the ARRIVE guidelines (McGrath and Lilley, 2015). Male Wistar rats (200–250 g, Janvier labs, Le Genest-St-Isle, France) were housed in groups of six on dry litter (12 hr:12 hr light/dark cycle, 21–25°C, 45–55% humidity) with food and water ad libitum. All experiments were performed during the light phase and equal test groups (n = 6) were planned. Surgery of the Wistar rats was performed under deep isoflurane anaesthesia (1.8 Vol%, fiO2). After skin incision and exposure of the sciatic nerve by blunt preparation, four loose silk ligatures were made (Perma Silk 6.0, Ethicon Inc) with approximately 1 mm spacing in between (Sauer et al., 2017). After loosely tightening the ligatures, the skin was stitched (Prolene 5.0, Ethicon Inc). Animals were euthanized with CO2 at the end of the experiment.
 
-## Mechanical nociceptive thresholds
+#### Mechanical nociceptive thresholds
 
 A series of von Frey filaments (Aesthesio set, Ugo Basile) were used to record the withdrawal threshold of the hind paw to identify the mechanical allodynia response (Lux et al., 2019) and touch sensitivity in neuropathy. Filaments were applied to the plantar surface of the hind paw and held for 1–3 s, until they were bent to a 45° angle. Each paw received stimuli with different filament forces, with a 30 s recovery period between each application. The 50% paw withdrawal threshold for von Frey filament responses was determined using Dixon’s up and down method (Dixon, 1980).
 
-## In situ hybridization and immunohistochemistry
+#### In situ hybridization and immunohistochemistry
 
 After euthanizing the rats, DRGs were harvested, embedded in Tissue-Tek O.C.T. Compound (Sakura Finetek Europe B.V.), snap frozen in liquid nitrogen, and stored at −80°C. 10 µm thick cryosections were cut at −20°C (CM3050 S Research Cryostat, Leica Biosystems) and the slides were stored at −80°C until further use. For fixation, tissue sections were placed in precooled 4% PFA in DEPC (diethyl pyrocarbonate)-treated distilled water. Following washing steps with DEPC-treated reagents, probes for rat ADGRL1 and ADGRL3 (tagged with Cy3 and Cy5, respectively) were added for the RNAscope fluorescent multiplex assay (Advanced Cell Diagnostics, Inc), which was performed according to the manufacturer’s instructions (document 320293-USM). After 15 min of incubation at 4°C the samples were dehydrated in ethanol at RT (50%, 70%, 100%, 100%; 5 min each). Hydrophobic barriers measuring approximately the same area, were drawn around the tissue sections and allowed to dry completely. Afterwards, each section was incubated with two drops of RNAscope Protease IV reagent (15 min at RT). Following the RNAscope assay, samples were washed, blocked with 10% donkey serum in PBS (1 hr at RT), and counterstained with neuronal markers (diluted in 10% donkey serum in PBS and added for two nights at 4°C). Non peptidergic nociceptors: isolectin B4 (IB4)-FITC conjugate (1:200, Sigma-Aldrich, L2895); large myelinated mechanosensors and proprioceptors: rabbit anti-NF200 (1:200, Sigma-Aldrich, RRID:AB_477272); peptidergic nociceptors: mouse anti-CGRP (1:150, Abcam, RRID:AB_1658411). Following incubation, the sections were washed and secondary antibodies were added (diluted in PBS and incubated for 1 hr at RT). For CGRP: donkey anti-mouse AlexaFluor488 (1:1000, Life Technologies, RRID:AB_141607), for NF200: donkey anti-rabbit AlexaFluor488 (1:1000, Life Technologies, RRID:AB_141708). After washing, the slides were mounted in Vectashield, dried for 15 min at RT, and stored at 4°C until imaging (<24 hr). All images were acquired in one session by confocal microscopy (Olympus FV1000) with a 20×/0.75 objective (Olympus UPlan SAPO) using the same parameters for z-stacks (1 µm step size) of Cy3 and Cy5 channels.
 
-## Image evaluation
+#### Image evaluation
 
 Images were processed with Fiji (Schindelin et al., 2012) by scientists blinded to the test groups. The markers of neuronal subpopulations were used to identify complete and distinguishable cells as regions of interest (ROIs) for further analysis. Thresholds were applied to maximal projections of confocal z-stacks for Cy3 (grey value 1200) and Cy5 (grey value 1150) signals (this procedure was also used for the example images in Figure 6D,E). Elements between 3 and 22 pixels in size, defined as mRNA clusters, were quantified for each channel following background subtraction. An independent approach based on computational image evaluation gave comparable results (data not shown). Here, a convolutional neural network (DeepFLaSh) (Segebarth et al., 2020) was trained with six images for each neuronal marker (NF200, IB4, CGRP) and then used to identify Cy3 and Cy5 clusters.
 
-## Statistics
+### Statistics
 
 Data were analysed with Prism 8.2 (GraphPad). Group means were compared by an unpaired two- tailed t-test, unless the assumption of normal sample distribution was violated, in which case group means were compared by a nonparametric Mann–Whitney rank sum test. To compare more than two groups an ordinary one-way ANOVA with Tukey correction (normal distribution) or a Kruskal–Wallis test (not normally distributed) were used.

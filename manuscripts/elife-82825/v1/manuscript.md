@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0534re684 Max Planck Research Group Biological Clocks, Max Planck Institute for Evolutionary Biology Ploen Germany
+1. Max Planck Research Group Biological Clocks, Max Planck Institute for Evolutionary Biology Ploen Germany ([ROR:0534re684](https://ror.org/0534re684))
 
 † Corresponding author
 
@@ -26,7 +26,7 @@ Notably, low tide water levels follow a bimodal distribution across a lunar mont
 
 ## Results
 
-## Genome sequencing confirms limited genetic differentiation between the sympatric FM and NM types
+### Genome sequencing confirms limited genetic differentiation between the sympatric FM and NM types
 
 In order to gain insights into the loci and processes underlying sympatric divergence in reproductive timing, we sequenced 48 individual genomes for the FM and NM timing types (24 individuals each, defined by their lunar timing phenotype; genome size: 79.4 Mbp; average read coverage: 20 x). The resulting set of 721,000 genetic variants (608,599 SNPs; 112,401 small indels) indicated limited genetic differentiation between the FM and NM types (Figure 1; weighted genome-wide FST = 0.028). Principal component analysis (PCA) and ADMIXTURE identify one individual as a migrant in time, which was caught at full moon among FM type individuals, but genetically clearly is of NM type (Figure 1A and B; blue circle and arrow). Many other individuals, particularly in the NM type, show ADMIXTURE fractions close to 0.5 or 0.25, suggesting they are F1 hybrids or backcrosses (Figure 1A and B; yellow circle and arrows). Finally, there are four FM individuals, which are genetically distinct along principal component 2 and in ADMIXTURE at K=4 (Figure 1A and B; red circle and arrows). These might constitute either a sub-lineage of the FM type or migrants from a different geographic location. Taken together, full genome resequencing confirms that there is considerable hybridization of sympatric timing types and overall low genome-wide differentiation.
 
@@ -34,9 +34,63 @@ In order to gain insights into the loci and processes underlying sympatric diver
 
 **Figure 1.:** (A, B) Principal component analysis (PCA; A) and admixture analysis (B) identify one migrant in time (blue; pure NM genotype caught at full moon), many potential F1 hybrids (yellow) and four individuals in the FM strain that appear genetically distict from all other samples (red). (C) Global genetic differentiation is limited, but there is a block of strong differentiation on chromosome 1.
 
-## A differentiated chromosomal inversion system on chromosome 1
+### A differentiated chromosomal inversion system on chromosome 1
 
 Plotting genetic differentiation of the phenotypically defined FM and NM types along the genome (Figure 1C) revealed a region of elevated FST on the telocentric chromosome 1 (Figure 2A). This region coincides with a block of long-range linkage-disequilibrium (LD) in the FM type (Figure 2B; Figure 2—figure supplement 1). Structural variant (SV) calling based on additional long-read sequencing data supports that this block represents a chromosomal inversion polymorphic in both timing types, hereby called In(1a) (Figure 2C; full dataset in Supplementary file 1). Notably, the NM type shows a smaller LD block (Figure 2B; Figure 2—figure supplement 1), suggesting that a second structural variant occurs within the limits of the detected large chromosomal inversion. While this second variant was not picked up in SV calling, genetic linkage information obtained from crosses (described in detail below) indicates that this is a second inversion, named In(1b) (see double inverted marker order in Figure 5A and B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-v1.jpg)
+
+**Figure 2.:** (A) Chromosome 1 harbors a block of markedly elevated genetic differentiation. (B) This genomic block coincides with two windows of elevated long-range LD in the FM and NM strains. (C) Structural variant (SV) calling from long read sequencing data supports that the larger LD block is due to an inversion. (D–G) Principal component analysis (PCA) for chromosomal sub-windows corresponding to suggested inversions separates the individuals into clusters corresponding to standard haplotype homozygotes (SS), inversion homozygotes (I1I1, I2I2) and inversion heterozygotes (SI1, SI2, SI3, I1I2). The four individuals which were already found distinct in whole genome analysis (red question mark) cannot be assessed. (H–K) Observed heterozygosity is clearly elevated in inversion heterozygotes, underpinning substantial genetic differentiation between the inversions. (L) A schematic overview of the sequence of inversion events and the resulting haplotypes. The frequencies of the haplotypes differ markedly between the FM and NM types.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Blocks of elevated genetic differentiation (A) correspond to blocks of elevated long-range LD in the FM type (B) and the NM type (C). Elevated long-range LD suggests that the inversion is polymorphic in the respective population.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Gray bars and black bars represent the two classes of inversion homozygotes. Bars which are half black, half gray represent inversion heterozygotes. Support for In(1c) is not fully congruent with support from heterozygosity and PCA analyses. As for In(1c) only one group of homozygotes was detected in PCA, the fully gray bars may indicate inversion heterozygotes. Similarly, for In(2L) and In(3L) only one class of homozygotes was detected in PCA, suggesting that here the fully black bars represent heterozygotes.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp3-v1.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp4-v1.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp5-v1.jpg)
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp6-v1.jpg)
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp7-v1.jpg)
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp8-v1.jpg)
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp9-v1.jpg)
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp10-v1.jpg)
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp11-v1.jpg)
+
+![Figure 2—figure supplement 12.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp12-v1.jpg)
+
+![Figure 2—figure supplement 13.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp13-v1.jpg)
+
+![Figure 2—figure supplement 14.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp14-v1.jpg)
+
+![Figure 2—figure supplement 15.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp15-v1.jpg)
+
+![Figure 2—figure supplement 16.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp16-v1.jpg)
+
+![Figure 2—figure supplement 17.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp17-v1.jpg)
+
+![Figure 2—figure supplement 18.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp18-v1.jpg)
+
+![Figure 2—figure supplement 19.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp19-v1.jpg)
+
+![Figure 2—figure supplement 20.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp20-v1.jpg)
+
+![Figure 2—figure supplement 21.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp21-v1.jpg)
+
+![Figure 2—figure supplement 22.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig2-figsupp22-v1.jpg)
+
+**Figure 2—figure supplement 22.:** (A) A number of individuals (red arrows) show elevated heterozygosity beyond the end of In(1a). In three of them (individuals 38, 41, and 43), the ends of that region coincide (red lines). These individuals are considered SI3 heterozygotes, carrying In(1c). In the other two individuals, the region is shorter or longer, possibly pointing to yet other inversions. (B) Admixture scores from windowed analysis support the same individuals to be genetically distinct in the right arm of In(1c).
 
 For a more detailed analysis of this inversion system, we subdivided it into three windows, based on the inversion coordinates suggested by long-range LD (Supplementary file 2; Supplementary file 3). Two windows correspond to those parts of the large inversion that do not overlap with the small inversion (roughly 2.7–4.4 Mbp and 11.3–18.7 Mbp; Supplementary file 2; Figure 2A–C). The central window corresponds to the overlap of both inversions (roughly 4.4–11.3 Mbp; Supplementary file 2; Figure 2A–C). In a principal component analysis (PCA) on the genetic variants in these windows (Supplementary file 3), the four FM individuals that were already identified as genetically distinct (Figure 1) always cluster separately and cannot be assessed (Figure 2D-G, red question mark). The remaining 44 individuals are split into three genotype classes when PCA is performed on the non-overlapping regions of the large inversion (Figure 2D and F). These classes correspond to individuals homozygous for the standard haplotype (SS), individuals homozygous for an inverted haplotype (I1I1), and heterozygotes for the inversion (SI1). Genotype assignments are confirmed by local admixture analysis (Figure 2—figure supplement 2), as well as heterozygosity (Figure 2H–K). Local observed heterozygosity is clearly elevated in individuals heterozygous for the inversion (Figure 2H and J), suggesting there are polymorphisms specific to the S or I1 haplotypes. This is corroborated by the patterns of genetic differentiation between SS and I1I1 homozygotes, which show FST values of up to 1 (Figure 2—figure supplement 3). For the homozygous genotypes, the haplotype which has the higher observed heterozygosity in homozygotes is considered the ancestral standard haplotype S (see Figure 2H–J).
 
@@ -48,11 +102,19 @@ One peculiarity deserves further investigation: In the window from 2.7 to 4.4 Mb
 
 Taken together, our data support three inversion events, which we name In(1a), In(1b) and In(1c), leading to four distinct haplotypes of chromosome 1 (S, I1, I2 and I3; Figure 2L). From the PCA-derived genotypes (Figure 2D–G), we can infer the frequency of each haplotype (Figure 2L). There is marked genetic differentiation between the sympatric timing types. The FM type carries all haplotypes but is dominated by the S haplotype, while the NM type almost exclusively carries the inverted I1 and I2 haplotypes. The distribution of haplotypes also explains the observed patterns of LD. As the NM type is segregating almost exclusively for I1 and I2, it shows recombination suppression only over the length of I2. The FM type is segregating for the S haplotype vs both I1 and I2, and thus shows recombination suppression along I1.
 
-## Non-differentiated inversions on chromosomes 2 and 3
+### Non-differentiated inversions on chromosomes 2 and 3
 
 The analysis of long-range LD also identifies one putative chromosomal inversion on each arm of the metacentric chromosomes 2 and 3 (Figure 3B and C; Figure 3—figure supplement 1). We call them In(2L), In(2R), In(3L) and In(3R). In(2L) is confirmed by inverted marker order in linkage mapping (Figure 5A and B) and In(2R) is confirmed by SV calling (Supplementary file 1). As above, windowed PCA along the chromosomes confirms the approximate inversion breakpoints and allows to genotype the individuals for the inversion haplotypes (Figure 3D–G). Heterozygosity is clearly elevated in inversion heterozygotes (SI; Figure 3H–K) and lowered in the inversion homozygotes (II; Figure 3H–K). Notably, inversion homozygotes are absent for two of these inversions (Figure 3D and F) and very rare for the other two (Figure 3E and G), suggesting these inversions might impose some fitness constraints. These four inversions are only weakly differentiated between populations (Figure 3L–O). Only In(2L) shows up as a block of mildly elevated genetic differentiation between the strains (Figure 3A).
 
-## Crosses between the FM and NM types indicate that lunar reproductive timing is heritable and controlled by at least four QTL
+![Figure 3.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig3-v1.jpg)
+
+**Figure 3.:** (A) Chromosome arm 2L harbors a block of mildly elevated genetic differentiation. (B) Several blocks of long-range linkage disequilibrium (LD) point to additional inversions in the FM and NM strains, one on each chromosome arm. (C) Structural variant (SV) calling from long read sequencing data supports the inversion on chromosome arm 2R. (D–G) Principal component analysis (PCA) for chromosomal sub-windows corresponding to suggested inversions separates the individuals into clusters corresponding to standard haplotype homozygotes (SS), inversion homozygotes (II) and inversion heterozygotes (SI). The four individuals which were already found distinct in whole genome analysis (red question mark) cannot be assessed. (H–K) Observed heterozygosity is clearly elevated in inversion heterozygotes, underpinning substantial genetic differentiation between the inversions. (L–O) The frequencies of the haplotypes do not differ much between the FM and NM types.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The block of slightly elevated genetic differentiation in chromosome arm 2L (A) correspond to a block of elevated long-range LD in the NM type (C), but not the full moon type (B). Blocks of elevated LD are also found in all other chromosome arms. Elevated long-range LD suggets that the inversion is polymorphic in the repective population, congruent with the genotyping results presented in Figure 2 (the higher the allele frequency of the inverted haplotype, the stronger is LD).
+
+### Crosses between the FM and NM types indicate that lunar reproductive timing is heritable and controlled by at least four QTL
 
 Next, we tested for a genetic basis of lunar reproductive timing by performing crossing experiments between the FM and NM types (Figure 4). F1 hybrids emerge at an intermediate time point between the FM and NM type emergence times, with a slight shift toward FM emergence (Figure 4C). In the F2 generation, the phenotype distribution is spread out, but does not fully segregate into parental and F1 phenotype classes (Figure 4D). This indicates that the difference in lunar reproductive timing is controlled by more than one genetic locus. From the crossing experiment, we picked a set of several F2 families that together comprised 158 individuals, which all go back to a single parental pair – a FM type mother and a NM type father. Because of the limited genetic differentiation between the timing types (see Figure 1C and Kaiser et al., 2021), we sequenced the full genomes of the two parents in order to identify informative genetic markers for linkage mapping and QTL mapping. We picked a set of 32 microsatellite markers, 23 of which turned out to be reliably amplified and informative in the F2 families, as well as four insertion-deletion polymorphisms (Supplementary file 4).
 
@@ -62,13 +124,41 @@ Next, we tested for a genetic basis of lunar reproductive timing by performing c
 
 Genetic linkage mapping confirmed the existence of the inversions In(1a) and In(1b), both of which are supported by inverted marker order on the genetic linkage map (Figure 5A). Marker order is also inverted for In(2L), but not for the other inversions (Figure 5A). We then performed stepwise QTL identification and Multiple QTL Mapping (MQM) as implemented in R/qtl and found four largely additive QTL for the difference in lunar reproductive timing (Figure 5A and Supplementary file 5). A specific scan for epistatic effects only shows a weak interaction of chromosome 1 with the QTL on chromosome 2 (Figure 5—figure supplement 1). The four QTL model explains 54% of the total variance in lunar reproductive timing and the estimated additive effects of the QTL account for 6 days of the timing difference between the FM and NM type (Figure 5A, Supplementary file 5). The individual loci explain 6.4%, 10.4%, 20.5%, and 10.8% of the variation in the phenotype (Supplementary file 5), but given the size of our mapping family these values could be overestimated by approximately threefold King and Long, 2017 due to the Beavis effect Slate, 2013; Xu, 2003. This suggests that the actual variance explained by these loci might be rather in the range of 2–7% and that additional loci of smaller effects are likely to contribute to the phenotype.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig5-v1.jpg)
+
+**Figure 5.:** (A) Multiple QTL Mapping (MQM) identified four significant QTL controlling lunar emergence time. Confidence intervals were determined in MQM and Composite Interval Mapping (CIM). The marker order supports In(1a) and the nested In(1b) on chromosome 1, as well as In(2L) on chromosome 2. (B) QTL intervals were colour-coded, transferred to the reference sequence and assessed for loci which are strongly differentiated (FST) between the FM and NM types. Inversions are represented by blue bars below the plot. The QTL in In(1a) overlaps with the most differentiated locus in the genome (red asterisk) – the period locus. Other markedly differentiated loci within the QTL intervals are the plum/cask locus (red circle) and the stat1 locus (red cross). (C) Genetic differentiation is strongest in the first intron and the intergenic region just upstream of the period gene. (D) The period locus was re-genotyped based on an insertion-deletion mutation in the first intron (green arrows in (C)). The long (L) and short (S) period alleles are only loosely associated with inversion haplotypes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** All chromosmes were scanned for interacting QTLs with the scantwo function of R/qtl. (A) For each possible QTL combination three models are tested, allowing for either additve and epistatic effects (full model; Mf), only additive effects (Ma) or assuming that one of the two QTL does not exist (M1). (B) The LOD score for the full model (Mf) and the additive-only model (Ma) are similar across the genome. (C) Congruently, the LOD scores are much lower for the difference between Mf and Ma (upper triangle). The additive model Ma does much better in explaining the data than assuming only one QTL exists (Ma-M1; lower triangle). (D,E) Statistical tests for the detected QTL combinations. Only in one case the full model is significantly better than the additive-only model (see p(Mf-Ma)), suggesting that epistatic effects are limited to an interaction between the middle of chromosome 1 and the end of chromosome 2 (D). The additive model is significantly better than assuming there is only one QTL (E).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Backward selection models. (B) Forward selection models. CM = size of the exclusion window in centimorgan; COV = number of covariates. CIM generally identifies the same four QTL as MQM, but sometimes identifies several adjacent QTL in the same genomic region.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Inversion genotypes were determined by local PCA for the inversions overlapping with detected QTL. For the FM type mother the inversion genotype of In(2R) is not clear. Inversion genotypes suggest partial recombination suppression in the F1 for all inversions.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** The NM strain is dominated by the long allele (L), the FM strain by the short allele (S).
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** Dots are individual SNPs, the line is FST in 1 kb sliding windows with 200 bp steps. In the gene models, gray boxes are untranslated regions (UTRs), black boxes are coding sequence (CDS).
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/82825/elife-82825-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** Dots are individual SNPs, the line is FST in 1 kb sliding windows with 200 bp steps. In the gene models, gray boxes are untranslated regions (UTRs), black boxes are coding sequence (CDS).
+
 In both MQM and additional Composite Interval Mapping (CIM; Figure 5—figure supplement 2), we estimated confidence intervals for the detected QTL (Figure 5A). There are two QTL on chromosome 1, one of which overlaps with the inversion system. The inversion genotypes of the parents were SI2 and I1I2 (Figure 5—figure supplement 3A), so that in the F1 we can expect partial recombination suppression, depending on the F1 genotypes. This is reflected in reduced map length for the respective genomic region (Figure 5A), but there was sufficient recombination to assign the QTL interval to only one end of In(1a). Based on the first genetic marker outside the QTL’s confidence intervals, we matched the QTL region with the corresponding genomic reference sequence (Figure 5B). The second QTL on chromosome 1 maps outside the inversion system and is well separated from the other QTL (Figure 5A and B). The other two QTL are found on chromosomes 2 and 3 and overlap with In(2R) and In(3L), respectively. The parental genotypes for In(2R) are SI and putatively II and for In(3L) are both SI (Figure 5—figure supplement 3B and C), so that we can again expect partial recombination suppression in the F1 and reduced map length. The genomic regions underlying these QTL are large and show several peaks in genetic differentiation (Figure 5B). Possibly, the QTL on chromosome 2 and 3 harbor a set of linked loci influencing the lunar emergence phenotype. Taken together, there are at least four unlinked loci which influence this magic trait. Given that the QTL mapping was based on a single pair of parents, the overall genetic architecture in the populations may be even more complex than what we described here.
 
-## Divergent alleles are not associated with specific inversion haplotypes
+### Divergent alleles are not associated with specific inversion haplotypes
 
 While some chromosomal inversions show up as genetically differentiated blocks, in all chromosomal inversions there are loci that are far more differentiated than the inversion itself (compare Figure 2L and Figure 3L to O with Figure 5B). This implies that the inversions are not required for protecting genetic differentiation. One explanation for such divergence peaks could be that individual SNPs in the ancestral arrangement are strongly differentiated between the timing types (while it is generally assumed that the inversion is fixed for one allele). Alternatively, there could be recombination and gene conversion placing the divergent alleles also in the inverted haplotypes. In both scenarios individual loci can diverge, while the surrounding inversions remain less differentiated. We tested these scenarios for the most differentiated locus in the genome (Figure 5B, red asterisk), which is the period locus (Figure 5C). We identified an insertion-deletion (indel) mutation in the highly differentiated first intron of the period gene (Figure 5C, green arrows) and re-genotyped the 48 individuals for this indel (Figure 5D; Figure 5—figure supplement 4). This confirmed that period alleles are indeed strongly differentiated between the FM and NM types. However, we could not find a close association between the period alleles and the inversion haplotypes of chromosome 1 (Figure 5D). Both alleles occur is several inversion haplotypes, confirming that there is gene flux between standard and inversion haplotypes. This implies that differentiation of the period locus is not driven by differentiation of the inversion system, that is it is not enhanced by LD with other locally adaptive variants.
 
-## Candidate loci
+### Candidate loci
 
 The overlap of genetic divergence peaks and the QTL’s 95% Bayesian intervals, allows us to identify potential candidate genes for controlling the magic trait, i.e. phenotypic divergence in lunar reproductive timing (see Supplementary file 6 for an overview). Some loci are particularly conspicuous in that they are by far the most divergent within a specific QTL. The QTL in the inversion system on chromosome 1 is narrow and harbors a single strongly divergent locus, which is the period locus (Figure 5B, red asterisk). The period locus is the most differentiated locus in the entire genome (maximum FST = 0.86) and period is a core circadian clock gene. The QTL at the end of chromosome 1, outside the inversion system, also shows a single strong divergence peak (Figure 5B, red circle). This is the first intron of the plum gene (Figure 5—figure supplement 5). The large intron likely contains regulatory regions for both plum and the directly adjacent cask gene. On chromosome arm 2R the QTL has several divergence peaks, but the strongest peak hits the stat1 gene (Figure 5B, red plus sign; Figure 5—figure supplement 6). Plum, cask, and stat1 are all involved in nervous system development in Drosophila melanogaster Yu et al., 2013; Gillespie and Hodge, 2013; Ngo et al., 2010, suggesting that divergence in lunar reproductive timing may involve nervous system remodeling as well as circadian timekeeping. These gene functions are plausible to be involved in lunar time-keeping and congruent with the results from a companion study Fuhrmann et al., 2023, which assessed the loss of lunar timing in a different set of Clunio populations. Thus, evidence from gene function, genetic divergence and QTL mapping align to support these candidate genes.
 
@@ -84,50 +174,50 @@ The detection of period as the most differentiated locus between NM and FM types
 
 ## Methods
 
-## Sampling and laboratory strains
+### Sampling and laboratory strains
 
 Laboratory strains for crossing experiments and field samples for whole genome sequencing of 48 individuals were available from a previous study Kaiser et al., 2021 (FM type = Ros-2FM; NM type = Ros-2NM). Laboratory strains were kept in standard culture conditions Neumann, 1966 at 20 °C and under a light-dark cycle of 16:8. An artificial moonlight cycle with four nights of dim light every 30 days served to synchronize reproduction in the laboratory strains.
 
-## Sequencing, read mapping, and genotype calling
+### Sequencing, read mapping, and genotype calling
 
 DNA from the 48 field caught individuals were subject to whole genome sequencing in the Max Planck Sequencing Centre (Cologne) on an Illumina HiSeq3000 according to standard protocols. Independent sequencing runs were merged with the cat function. Adapters were trimmed with Trimmomatic Bolger et al., 2014 using the following parameters: ILLUMINACLIP <Adapter file>:2:30:10:8:true, LEADING:20, TRAILING:20, MINLEN:75. Overlapping read pairs were merged with PEAR Zhang et al., 2014 using -n 75 c 20 k and mapped to the Cluma_2.0 reference genome (available in the Open Research Data Repository of the Max Planck Society under DOI 10.17617/3.42NMN2; manuscript in preparation) with bwa mem Li and Durbin, 2009 version 0.7.15-r1140. Mapped reads were merged into a single file, filtered for -q 20 and sorted with samtools v1.9 Li et al., 2009. SNPs and small indels were called using GATK v3.7–0-gcfedb67 McKenna et al., 2010. All reads in the q20 sorted file were assigned to a single new read-group with ‘AddOrReplaceReadGroups’ script with LB = whatever PL = illumina PU = whatever parameters. Genotype calling was then performed with HaplotypeCaller and parameters --emitRefConfidence GVCF -stand_call_conf 30, recalibration of base qualities using GATK BaseRecalibrator with ‘-knownSites’. Preparing recalibrated BAM files with GATK PrintReads using -BQSR. Recalling of genotypes using GATK HaplotypeCaller with previously mentioned parameters. Individual VCF files were combined into a single file using GATK GenotypeGVCFs.
 
-## Genetic differentiation (FST)
+### Genetic differentiation (FST)
 
 The vcf file containing GATK-called SNPs and small indels from 48 Ros-2FM and Ros-2NM males was filtered with vcftools version 0.1.14 Danecek et al., 2011 for minor allele frequency of 0.05, maximum of two alleles, minimum quality (minQ) of 20, maximum missing genotypes of 20%, which finally left 721,000 variants. Genetic differentiation between the two populations (FST) was estimated using vcftools parameters --weir-fst-pop --fst-window-size 1 --fst-window-step 1.
 
-## Long-range linkage disequilibrium (LD)
+### Long-range linkage disequilibrium (LD)
 
 Linkage disequilibrium was calculated between all variants along the three chromosomes in each of the populations in search of the signatures of large genomic inversions. Vcf file containing GATK-called SNPs and small indels from 24 Ros-2FM males was filtered for minor allele frequency of 0.20, maximum of two alleles, minimum quality (minQ) of 20, maximum missing genotypes per site of 20% leaving 344,331 variants. The same was done for the 24 Ros-2NM individuals resulting in 352,915 variants. The filtered vcf files were converted to plink input files and plink version 1.90 beta Chang et al., 2015 was used to calculate linkage disequilibrium between all variants with parameters --r2 --inter-chr. The large LD file was then sorted into 3 files, one for each chromosome. Breakpoints of large chromosomal inversions were approximated by plotting r2 and manually looking for obvious breaks in the r2 scores (Figure 2—figure supplement 1 and Figure 3—figure supplement 1; Supplementary file 2).
 
-## Principal component analysis (PCA)
+### Principal component analysis (PCA)
 
 PCA was run for the entire genome, for sliding windows along the chromosome (‘windowed PCA’), and for windows corresponding to the inversions (‘local PCA’). The vcf file containing GATK-called SNPs and small indels from 48 Ros-2FM and Ros-2NM males was filtered with vcftools version 0.1.14 Danecek et al., 2011 for minor allele frequency of 0.05, minimum quality (minQ) of 20, maximum missing genotypes per site of 20%, leaving 703.579 variants. Principal component analysis was calculated with plink version 1.90 beta Chang et al., 2015 using flags --nonfounders --pca var-wts --chr-set 3 no-xy no-mt. Windowed PCA: In order to investigate regions of the genome with unusual degree of variance, PCA was run in windows along the three chromosomes. Vcf files were subdivided into vcf files containing variants that belong to 500 kb sliding windows with 100 kb steps. They were further used to calculate PCA values for each window as noted above. Local PCA: To get the genotype-estimate of the identified inversions (see long-range disequilibrium section), we subdivided vcf files according to the estimated inversion breakpoints (Supplementary file 2), and calculated principal components 1 and 2 as described above. Number of variants that belong to each window are listed in Supplementary file 3.
 
-## Admixture
+### Admixture
 
 Ancestry and relatedness of the 48 individuals of Ros-2FM and Ros-2NM population were investigated with admixture version 1.3.0 Alexander et al., 2009. Admixture was run for the entire genome, for sliding windows along the chromosome (‘windowed admixture’), and for windows corresponding to the inversions (‘local admixture’). We used vcf files previously described in the PCA section as input. Admixture was calculated using k of 2–4. Windowed admixture: In order to identify regions of the genome with ancestry different from the general population, we ran admixture on vcf files containing variants that belong to 500 kb sliding windows with 100 kb steps. Local admixture: In order to genotype the inversions (see long-range disequilibrium section) we calculated admixture using vcf files containing only variants from those regions of the genome (Supplementary file 2; Supplementary file 3).
 
-## Observed heterozygosity
+### Observed heterozygosity
 
 In order to complement the windowed and local PCA and admixture analyses and further corroborate the indirect genotyping of the chromosomal inversions, we calculated observed heterozygosity using vcftools version 0.1.14 Danecek et al., 2011 with --het flag. Proportion of observed heterozygosity was calculated for each file by dividing the number of observed heterozygotes with the number of variants. Patterns of heterozygosity along the chromosomes were assessed based on the vcf files containing variants that belong to 500 kb sliding windows with 100 kb steps (see PCA and admixture section). Finally, in order to calculate observed heterozygosity of the chromosomal inversions, observed heterozygosity was calculated per inversion window for each individual (Supplementary file 2; Supplementary file 3). Then observed heterozygosity was calculated and plotted for each inversion genotype according to local PCA and admixture.
 
-## Crosses, phenotyping, and genotyping
+### Crosses, phenotyping, and genotyping
 
 After synchronizing the NM and FM strains by applying different moonlight regimes, single pair crosses were performed. F1 egg clutches were reared individually and the emerging adults were allowed to mate freely within each F1 family, leading to several sets of F2 families that go back to a single pair of parents. One of these sets was picked for QTL mapping. As the second peak is not under clock control, but a direct response to moonlight Kaiser et al., 2021, analysis was restricted to individuals emerging in the first peak (n=158; compare non-shaded area in Figure 4D.). In the F2, the peaks are clearly separated from each other by days without any emergence. DNA was extracted with a salting out method Reineke et al., 1998 and amplified with the REPLI-g Mini Kit (Qiagen) according to the manufacturer’s instructions. The two parents were subject to whole genome sequencing with 2x150 bp reads on an Illumina HiSeq2000 according to standard protocols. Read mapping and genotype calling were performed as described above. Microsatellite and indel genotypes were obtained by custom parsing of the vcf files. PCR primers (Supplementary file 4) for amplifying the microsatellite and indel regions were designed with Primer3. Indels were PCR amplified and then run and scored on 1.5% agarose gels. Microsatellites were amplified with HEX- and FAM-labeled primers and run on an ABI PRISM 3100 Genetic Analyzer. Chromatograms were analyzed and scored with in R with the Fragman package Covarrubias-Pazaran et al., 2016. The resulting genotype matrix can be found in the R/qtl input file (Supplementary file 7).
 
-## Linkage and QTL mapping
+### Linkage and QTL mapping
 
 Linkage analysis and QTL mapping were based on a set of F2 families derived from a single pair of parents. Analyses were performed in R/qtl according to the script in Source code 1. Briefly, the recombination fraction (est.rf) and distribution of alleles (checkAlleles) were assessed to confirm the quality of the input data. The correct marker order was inferred by rippling across all markers of each chromosome (ripple). Missing data (countX0) and error load (top.errorload) were assessed. Then the best model was obtained in a stepwise selection procedure (stepwiseqtl). Additional interactions were checked for in a two QTL scan (scantwo), but were negligible and not considered in the final model. Finally, a model with 4 non-epistatic QTL was subject to model fitting for Multiple QTL Mapping (fitqtl) and the QTL’s 95% Bayesian confidence intervals were estimated (bayesint). Composite Interval Mapping was performed in QTLcartographer Bioinformatics Research Center, 2006 with various selection procedures (forward, backward), exclusion windows (10 cM and 20 cM) and covariates (3, 5, 10; Figure 5—figure supplement 2). The LOD significance threshold was estimated by running 1000 permutations and a p value of 0.05. For the QTL locations in CIM the 1 LOD intervals were plotted.
 
-## PacBio data and structural variant calling
+### PacBio data and structural variant calling
 
 PacBio long read data was obtained for pools of 300–500 individuals from laboratory strains of Ros-2NM and Ros-2FM (Roscoff, France). DNA was extracted as above and sequenced with standard protocols on a PacBio Sequel II at the Max Planck Sequencing Facility in Cologne, Germany. Raw long-reads of Ros-2FM and Ros-2NM were mapped against the reference CLUMA 2.0 (publication in preparation) using NGM-LR v.0.2.7 Sedlazeck et al., 2018 with default settings. Alignments were sorted, filtered (q20) and indexed with samtools v.1.9 Li et al., 2009. Three different SV-calling tools were used per population to discover SVs. Sniffles v.1.0.11 Sedlazeck et al., 2018 was run with parameters -- min_het_af 0.1 and –genotype. SVIM v1.2.0 Heller and Vingron, 2019 was run with default parameters (svim alignment). Finally, Delly v0.8.6 Rausch et al., 2012 was run with parameters lr -y pb -q 20 --svtype (INS, insertions; INV, inversions; DUP, duplications; DEL, deletions) and the output VCF files per SV type were merged with a custom script. The resulting VCF files were then sorted using vcf-sort and filtered for quality “PASS” using a custom bash script. SURVIVOR v1.0.6 Jeffares et al., 2017 was used to filter variants for a minimum size of 300 bp and at least 5 reads supporting each variant (SURVIVOR filter NA 300–1 0 5). BND variants detected with Sniffles and SVIM calls were excluded with a custom bash script before using SURVIVOR merge (options set to 50 1 1 0 0 300) on all VCFs produced per population. The merged VCFs were then used as an input to reiterate SV calling with Sniffles using the same parameters as above plus --Ivcf option and --min_support 5 (minimum number of reads supporting a SV). Finally, SURVIVOR merge (same parameters as above) was used to merge the re-genotyped SVs detected in Ros-2NM and Ros-2FM. SV support was reported in Figures 1 and 2 if there was a breakpoint detected within 3 kb of the boundaries of the LD blocks. The full set of SV calls is given in Supplementary file 1.
 
-## Period genotyping
+### Period genotyping
 
 An insertion-deletion (indel) mutation in the period locus was genotyped. The fragment was PCR amplified (primers: 5’-GAATACTGAGTGTAAGACTTGGC and 5’-ACAACGTGACCTGTGACAAT) and run and scored on 1.5% agarose gels.
 
-## Materials and correspondence
+### Materials and correspondence
 
 Requests should be addressed to Tobias S. Kaiser (kaiser@evolbio.mpg.de).

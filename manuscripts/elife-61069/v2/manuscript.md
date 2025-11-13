@@ -34,25 +34,33 @@ To address these ambiguities, we use ANC-1 to examine how giant KASH proteins po
 
 ## Results
 
-## ANC-1 promotes proper nuclear anchorage through a LINC complex-independent mechanism
+### ANC-1 promotes proper nuclear anchorage through a LINC complex-independent mechanism
 
 Loss-of-function mutations in anc-1 disrupt the even spacing of hyp7 syncytial nuclei (Cain et al., 2018; Starr and Han, 2002). We use the number of nuclei in contact with each other as a metric for hyp7 nuclear anchorage defects (Cain et al., 2018; Fridolfsson et al., 2018). In wild type (WT) animals, very few hyp7 nuclei were touching. In contrast, over 50% of hyp7 nuclei were clustered with at least one other nucleus in anc-1(e1873) null mutants. Significantly fewer hyp7 nuclei were unanchored in unc-84(n369) null mutants (Figure 1C). This trend was also observed in adult syncytial seam cells (Figure 1—figure supplement 1). Throughout this manuscript, we call nuclear anchorage defects that are statistically similar to anc-1 null mutants as severe, defects statistically similar to unc-84 null mutants but still significantly worse than wild type as mild, and defects statistically between anc-1 and unc-84 null mutants as intermediate.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig1-v2.jpg)
+
+**Figure 1.:** (A) Model of the LINC complex. Trimers of the SUN protein UNC-84 (purple and blue) and the KASH protein ANC-1 (red, green, and pink, only one of the trimers is shown) form the LINC complex, which spans the outer nuclear membrane (ONM) and inner nuclear membrane (INM). (B) Lateral views of adult C. elegans expressing hypodermal nuclear GFP in wild type (WT) or indicated mutants. Scale bar, 10 µm. (C) Quantification of nuclear anchorage defects. Each point represents the percentage of touching nuclei on one side of a young adult animal. Means with 95% CI error bars are shown. ANOVA and Tukey’s multiple comparisons tests were used for statistical analysis; ns means not significant, p>0.05; ***p≤0.001. n ≥ 20 for each strain. (D) Sequences of the transmembrane (TM) domain and the luminal domain of ANC-1 showing the deletions analyzed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Lateral views of C. elegans wild type (WT) (A), unc-84(n369) (B), and anc-1(e1873) (C–D) mutants expressing wIs54[scm::gfp]. (E) Quantification of the number of touching seam cell nuclei. Each point represents the number of touching nuclei in the seam cell of a young adult animal. Means with 95% CI error bars are shown. Unpaired student two-tail t-test was used for statistical analysis. **p≤0.005. ***p≤0.001. n ≥ 42 for each strain. Scale bar, 10 µm.
+
 The greater severity of the nuclear anchorage defect in anc-1 null mutants compared to unc-84 suggests that ANC-1 plays additional roles in nuclear positioning independently of its SUN partner UNC-84. We used CRISPR/Cas9 gene editing to delete the luminal peptides of the ANC-1 KASH domain (Figure 1D). We predicted the anc-1(ΔKASH) mutants would abrogate the interaction between ANC-1 and UNC-84 and phenocopy unc-84(null) animals. Two independent anc-1(ΔKASH) mutants exhibited mild nuclear anchorage defects similar to those observed in unc-84(null) mutants (Figure 1B–C). Together, these results suggest that the SUN/KASH interaction only partially contributes to nuclear anchorage, implicating the large cytoplasmic domain of ANC-1 as the major player in nuclear positioning.
 
-## The ANC-1 N-terminal CH domains are not required for hyp7 nuclear positioning
+### The ANC-1 N-terminal CH domains are not required for hyp7 nuclear positioning
 
 We next deleted the CH domains at the N terminus of the largest isoforms of ANC-1, which are predicted to interact with actin, and replaced them with GFP using CRISPR/Cas9 gene editing. Hyp7 nuclei did not cluster in anc-1(ΔCH) mutants (Figure 2B). Thus, the CH domains of ANC-1 are not required for hyp7 nuclear anchorage.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig2-v2.jpg)
 
-**Figure 2.:** anc-1b is the major isoform in hyp7 nuclear anchorage.(A) Schematic gene structure of anc-1a, b, and c isoforms (modified from the J-Brower in Wormbase). Domains are color-coded. CH = calponin homology; F1 = fragment one from the ATG of ANC-1b to the beginning of the repeats; RPs = the six exact repeats of about 900 residues each; F2 = fragment two from the end of the repeats to the transmembrane (TM) span; WT = wild type; and KASH = Klarsicht, ANC-1, Syne homology, in this case referring to the residues in the lumen of the nuclear envelope. The target regions of RNAi constructs are labeled. Premature stop mutations are indicated using the numbering the anc-1a isoform. (B) Quantification of nuclear anchorage defects in anc-1 mutant and RNAi animals. Means with 95% CI are shown in the graph. ANOVA and Tukey’s multiple comparisons tests were used for statistical analysis. ns, not significant, p>0.05; ***p≤0.001. n ≥ 20 for each strain. (C) An agarose gel showing the 5’-RACE products on the right lane. (D) Partial sequence of the 5’-RACE product. An SL1 sequence (orange) adjacent to the 5’ end of the anc-1b transcript was identified. The predicted start codon is in light green. (E) Lateral view of a worm showing the expression of nls::GFP driven by anc-1b promoter. Yellow arrows mark hyp7 nuclei; the red arrows mark seam cell nuclei; and the bright, unmarked nuclei are in muscle cells. Scale bar, 10 µm.
+**Figure 2.:** (A) Schematic gene structure of anc-1a, b, and c isoforms (modified from the J-Brower in Wormbase). Domains are color-coded. CH = calponin homology; F1 = fragment one from the ATG of ANC-1b to the beginning of the repeats; RPs = the six exact repeats of about 900 residues each; F2 = fragment two from the end of the repeats to the transmembrane (TM) span; WT = wild type; and KASH = Klarsicht, ANC-1, Syne homology, in this case referring to the residues in the lumen of the nuclear envelope. The target regions of RNAi constructs are labeled. Premature stop mutations are indicated using the numbering the anc-1a isoform. (B) Quantification of nuclear anchorage defects in anc-1 mutant and RNAi animals. Means with 95% CI are shown in the graph. ANOVA and Tukey’s multiple comparisons tests were used for statistical analysis. ns, not significant, p>0.05; ***p≤0.001. n ≥ 20 for each strain. (C) An agarose gel showing the 5’-RACE products on the right lane. (D) Partial sequence of the 5’-RACE product. An SL1 sequence (orange) adjacent to the 5’ end of the anc-1b transcript was identified. The predicted start codon is in light green. (E) Lateral view of a worm showing the expression of nls::GFP driven by anc-1b promoter. Yellow arrows mark hyp7 nuclei; the red arrows mark seam cell nuclei; and the bright, unmarked nuclei are in muscle cells. Scale bar, 10 µm.
 
 Nesprin-1 and -2 have multiple splice isoforms, many of which are missing the CH domains (Rajgor et al., 2012; Stroud et al., 2017). We hypothesized a shorter anc-1 isoform lacking the CH domains would be sufficient for nuclear anchorage. RNAseq and expressed sequence tag data published on WormBase (Harris et al., 2020) suggest that anc-1 has at least three isoforms (Figure 2A). We tested whether a shorter isoform lacking CH domains, anc-1b, is sufficient for hyp7 nuclear anchorage. RNAi constructs targeting the 5’ exons specific to the anc-1a/c long isoforms did not cause nuclear anchorage defects (Figure 2A–B). However, RNAi targeting a repetitive region in all three predicted isoforms caused severe nuclear anchorage defects (Figure 2A–B). We also analyzed four nonsense mutations. Alleles that are predicted to disrupt the longer anc-1a/c isoforms but not the shorter anc-1b isoform, anc-1(W427*), and anc-1(W621*) were normal for nuclear anchorage. In contrast, both anc-1(Q1603*) and anc-1(Q2878*) alleles, which are predicted to add premature stop codons to all three predicted isoforms, led to severe nuclear anchorage defects (Figure 2A–B). These results suggest that the shorter anc-1b isoform lacking the CH domains is sufficient for nuclear anchorage.
 
 We next tested whether anc-1b is expressed in hyp7. First, 5’ RACE (Rapid amplification of cDNA ends) was used to identify the start of the anc-1b predicted transcript (Figure 2C). The RACE product contained an SL1 sequence at its 5’ end, suggesting this represents the end of a bona fide transcript (Figure 2D). To test if the anc-1b isoform is expressed in hyp7, we fused the anc-1b promoter and ATG to an nls::gfp::lacZ reporter and expressed it in transgenic animals. The anc-1b promoter drove GFP expression in hyp7 (Figure 2E, yellow arrows). Taken together, these results suggest the conserved CH domains are not necessary for hyp7 nuclear anchorage and the anc-1b isoform expressed in the hypodermis plays a major role in hyp7 nuclear anchorage.
 
-## Spectrin-like domains of ANC-1b are required for nuclear anchorage
+### Spectrin-like domains of ANC-1b are required for nuclear anchorage
 
 We predicted that the six tandem repeats (RPs) of ANC-1 function analogously to the spectrin-like domains of Nesprin-1 and -2. We modeled the structure of pieces of the ANC-1 RPs using the protein-folding prediction software QUARK (Xu and Zhang, 2012; Xu and Zhang, 2013) and found that they are predicted to form helical bundles remarkably similar to the structure of spectrin (Figure 3A,D; Grum et al., 1999), suggesting the tandem repeats are analogous to spectrin-like domains.
 
@@ -62,15 +70,43 @@ We predicted that the six tandem repeats (RPs) of ANC-1 function analogously to 
 
 We next tested the necessity of the ANC-1 spectrin-like repeats and the neighboring cytoplasmic domains for nuclear anchorage by making in-frame deletions of portions of anc-1 using CRISPR/Cas9-mediated gene editing. The N-terminal fragment 1 (F1) contains 1969 residues of ANC-1b from the start codon to the start of the RPs and fragment 2 (F2) contains the 277 residues between the RPs and the C-terminal transmembrane span (Figure 3A). The deletion of the F1 domain or all six RPs caused intermediate nuclear anchorage defects (Figure 3B–C). ANC-1b with only one of the normal six repeats had an intermediate nuclear anchorage defect that was significantly greater than in wild type but not as severe as the anc-1(Δ6RPS) mutant (Figure 3C). In contrast, the anc-1(ΔF2) mutant had no nuclear anchorage defect (Figure 3C). Since the anc-1(Δ6RPS) and anc-1(ΔF1) defects were less severe than anc-1 null alleles, we made double mutants with unc-84(n369) to see if mutations in the cytoplasmic portions of ANC-1 were synergistic with mutations in the KASH domain. Both anc-1(ΔF1); unc-84(n369) and anc-1(Δ6RPS); unc-84(n369) double mutants significantly enhanced the nuclear anchorage defects of the single mutations (Figure 3C). However, the hyp7 nuclear anchorage defects in anc-1(ΔF1); unc-84(n369) and anc-1(Δ6RPS); unc-84(n369) double mutants were still less severe than anc-1(e1873) null mutants, suggesting that multiple parts of ANC-1b mediate proper hyp7 nuclear positioning (Figure 3C). Together, these results indicate that (1) F1 and the RPs play roles in nuclear anchorage, (2) multiple repeats are necessary for normal function, and (3) the F2 region is dispensable for hyp7 nuclear positioning.
 
-## The ER is unanchored in anc-1 mutants
+### The ER is unanchored in anc-1 mutants
 
 In addition to nuclear positioning, ANC-1 functions in mitochondria distribution and morphology in the hypodermis and muscle cells (Hedgecock and Thomson, 1982; Starr and Han, 2002). We therefore asked if ANC-1 also anchors other organelles. We characterized the ER in live hyp7 syncytia of anc-1 and unc-84 mutants using a single-copy GFP::KDEL marker (pwSi83; gift of Barth Grant). In wild type, the ER formed a network evenly distributed throughout hyp7 (Figure 4A). We used blind scoring to classify single images of each animal’s ER as normal (evenly distributed in what appeared to be sheets), mild defects (lots of sheet-like structures, but occasionally not uniformly spread throughout the syncytium), strong defects (considerable mispositioning and clustering of ER, but still in large units), or severe defects (complete mispositioning and extensive fragmenting of the ER) (Figure 4 and Figure 4—figure supplement 1). About a third of wild type adults had normally distributed ER, while the rest had mild ER positioning defects, perhaps due to the pressure on the worm from the coverslip (Figure 4A–B). However, ER networks in anc-1 null mutants were severely disrupted and often fragmented (Figure 4A–B). We also observed the dynamics of the ER in live animals. In wild type animals, the hypodermal ER was anchored as an interconnected network and exhibited limited motion while the animal crawled (Figure 4C,E–F, Video 1). However, in anc-1 null mutants, ER fragments drifted apart and often formed large aggregates, suggesting that the anchorage of the ER network was disrupted (Figure 4D–F, Video 2). To quantify this phenotype, we measured the change in distance between distinct points over time. In wild type, the average distance change between parts of the ER was less than 1 µm per second, whereas in anc-1 mutants, the average change in distance more than doubled (Figure 4E), suggesting that the ER had lost its overall interconnectivity and that fragments were unanchored from the rest of the ER.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative images of the hyp7 ER labeled with the GFP::KDEL marker in the young adult animals. (B) Scoring of the ER positioning defects. ER images of the listed strains were mixed and randomized for blind analysis by multiple researchers. n ≥ 11 for each strain. (C–D) Time-lapse images of hyp7 GFP::KDEL marker (C) over 9 s in wild type (WT) or (D) over 3.2 s in anc-1 null. Arrowheads show two fragments of ER that changed their relative distance from one another over a short period of time. (E–F) To quantify ER displacement, three spots on each WT and anc-1(e1873) movie were tracked. The average change in distance between two points in 200 ms intervals is plotted in (E). The trajectories of the relative movements of each spot apart from the others are shown in (F). Eight movies of each strain were analyzed. Scale bar, 10 µm for all the images.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The ER in hyp7 was labeled with a GFP::KDEL marker. Young adult animals are shown. Each column shows all the images scored from a single genetic strain (labeled on the top). The three numbers in yellow at the top of each image are the scores of three independent investigators giving them bind scores. 0, 1, 2, and 3 represent normal, mild, strong, and severe ER anchorage defects, respectively. The score given by more than two people was chosen as the final score and is in a larger font. Scale bars, 10 µm. All the images are at the same scale. WT = wild type.
+
+![Video 1.](https://cdn.elifesciences.org/articles/61069/elife-61069-video1.mp4.jpg)
+
+**Video 1.:** An example video of the hyp7 ER in young adult wild type C. elegans expressing pwSi83[phyp7gfp::kdel]. Images were captured at the interval of 0.2 s for 10 s. Scale bar, 10 µm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/61069/elife-61069-video2.mp4.jpg)
+
+**Video 2.:** An example video of the hyp7 ER in the young adult anc-1(e1873) mutant C. elegans expressing pwSi83[phyp7gfp::kdel]. Images were captured at the interval of 0.2 s for 10 s. Scale bar, 10 µm.
+
 We next examined whether UNC-84 is required for ER positioning. Still images of unc-84(n369) null mutants scored blindly were similar to wild type ER (Figure 4A–B). However, in some videos of unc-84(n369) mutants, there were slight changes in the organization of the ER over time (Video 3), suggesting that unc-84 null mutants had a minor ER positioning defect. Most anc-1(Δ29KASH) mutants had mild defects in ER positioning, and only about a quarter had more severe defects, significantly less than anc-1(e1873) null mutants. In contrast, more than 80% of anc-1(Δ6RPS) animals had strong or severe ER positioning defects, similar to anc-1 null mutants (Figure 4A–B). These results indicated that ANC-1 is essential for ER positioning through mostly LINC complex-independent mechanisms.
 
-## ANC-1 localizes to ER membranes
+![Video 3.](https://cdn.elifesciences.org/articles/61069/elife-61069-video3.mp4.jpg)
+
+**Video 3.:** An example of one of the most severe ER positioning defects observed is shown in a video of the hyp7 ER in the young adult unc-84(n369) mutant C. elegans expressing pwSi83[phyp7gfp::kdel]. Images were captured at the interval of 0.25 s for 4 s. Scale bar, 10 µm.
+
+### ANC-1 localizes to ER membranes
 
 Since ANC-1 functions, in part, independently of LINC complexes at the nuclear envelope and because ANC-1 regulates ER positioning, we hypothesized that ANC-1 localizes to multiple membranes, including those away from the nuclear envelope. To study the localization of ANC-1, we tagged endogenous ANC-1 with GFP using CRISPR/Cas9 gene editing. The tag was placed either at the N-terminus of ANC-1b, or between the six tandem RPs and the F2 region to see if the opposite ends of ANC-1 localize to different structures (Figure 5A). Both strains were nearly wild type for hyp7 nuclear positioning (Figure 5B). Both GFP::ANC-1b and ANC-1::GFP::F2 localized in similar patterns throughout the cytoplasm of adult hyp7 syncytia (Figure 5C–D). To examine the localization of the ANC-1b isoform alone, we introduced a premature stop codon mutation to disrupt the longer anc-1a and c isoforms in the GFP::ANC-1b strain, which did not significantly change GFP::ANC-1b localization (Figure 5E). These data are consistent with our model that anc-1b plays the major role in hyp7 nuclear positioning.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic depicting the ANC-1 GFP knock-in constructs with or without deletion of ANC-1 cytoplasmic domains. (B) Nuclear positioning in GFP::ANC-1b is wild type (WT). Each point represents the percentage of touching nuclei on one side of a young adult animal. Means with 95% CI error bars are shown. ns, not significant (p>0.05). n ≥ 20. (C–I) Confocal images of hyp7 subcellular localization in the indicated strains. Yellow arrowheads point to nuclei. Scale bar, 10 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Average fluorescent intensity of GFP::ANC-1b and GFP::ANC-1(Δ6RPS) in the hypodermal tissue. Images of young adults were taken under the same conditions to calculate the average fluorescent intensity. (B–C) EMR-1::mCherry (magenta) and GFP::ANC-1b or GFP::ANC-1(Δ6RPS) (cyan) from the same animal are shown. Line scans are shown on the far right. Scale bar, 10 µm.
 
 We next examined whether the cytoplasmic domains of ANC-1b are required for localization. Deletion of the F1 domain did not dramatically change localization of GFP::ANC-1b (Figure 5F). However, deletion of the six tandem repeats enriched GFP::ANC-1b around the nuclear envelope (Figure 5G), as did the deletion of five of the six repeats (Figure 5H). However, the intensity of the six repeat deletion mutant is significantly less than wild type GFP::ANC-1b (Figure 5—figure supplement 1), making it possible that the phenotype is due to less ANC-1 being present. Yet, the deletion mutant is significantly enriched at the nuclear envelope (Figure 5—figure supplement 1B–C), supporting the hypothesis that the defect is due to a loss of ANC-1 repeats at the general ER. The nuclear envelope enrichment of GFP::ANC-1b(∆5RPs) was not observed when unc-84 was mutated (Figure 5I), suggesting the nuclear envelope enrichment of GFP::ANC-1b is UNC-84-dependent.
 
@@ -84,35 +120,71 @@ As shown above, a double mutant that lacks both the ANC-1 repeat region and LINC
 
 To further examine the role of the transmembrane span in ER and nuclear positioning, we observed the co-localization of ANC-1 with an ER membrane marker (Figure 7). A single-copy hypodermal-specific mKate2::TRAM-1 ER marker strain (Rolls et al., 2002) was generated and crossed with GFP::ANC-1b. The wild type GFP::ANC-1b fusion protein localized similarly to the ER marked by mKate2::TRAM-1 (Figure 7A). We used the ImageJ plug-in ScatterJ to quantify the co-localization and the Pearson's correlation coefficient averaged from 17 images (Figure 7G). Our second GFP construct, ANC-1::GFP::F2, also co-localized with the ER (Figure 7B,G). Similar results were obtained when co-localizing mKate2::ANC-1b and GFP::KDEL, but since the GFP::KDEL was overexpressed and significantly brighter than the mKate2::ANC-1b, we only present the analyses with GFP ANC-1 fusion proteins co-localizing with mKate2::TRAM-1, which is expressed at lower levels from a single-copy transgene. In contrast, GFP::ANC-1b did not co-localize with lipid droplets or mitochondria (Figure 7—figure supplement 1).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig7-v2.jpg)
+
+**Figure 7.:** ANC-1-GFP fusion protein (cyan) localization with respect to the ER membrane as marked by a mKate::TRAM-1 (magenta) is shown. (A) Wild type (WT) GFP::ANC-1b. (B) Wild type ANC-1::GFP::F2. (C) GFP::ANC-1b::ΔKASH. (D) An example of GFP::ANC-1b::ΔTK with good overlap with the ER and (E) a GFP::ANC-1b::ΔTK with poor overlap. (F) GFP::ANC-1b::Δ6RPS. (A–F) For each section, the left two panels are low magnification of the young adult hypodermis (scale bar, 10 µm) and the middle two panels are a zoom in of the boxed part of the left panels (scale bar, 2 µm). The top right shows the merge of the two channels. The bottom right uses the used ImageJ plug-in ScatterJ to quantify the co-localization and the Pearson's correlation coefficient for overlap is shown as an r value. (G) A scatter plot of Pearson’s coefficients showing overlap between the indicated GFP and the mKate::TRAM-1 ER membrane marker. Mean ±95% CI are shown. ANOVA and Tukey’s multiple comparisons tests were used in comparisons. ***p≤0.001; ns means not significant.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) GFP::ANC-1b (cyan) and MDT-28::mCherry (magenta) are merged on the tight. (B) GFP::ANC-1b (cyan), mKate2::TRAM-1 (cyan), and mitotacker-641 (gray) are shown from the same animal. (A–B) Line scans are shown on the far right. Scale bar, 10 µm.
+
 Deleting the luminal portion of the KASH domain from GFP::ANC-1b (GFP::ANC-1b::ΔKASH) did not significantly change its localization pattern relative to the wild type construct (Figure 7C,G). In contrast, deletion of both the luminal KASH peptide and the transmembrane span (GFP::ANC-1b::ΔTK) resulted in many cases where GFP::ANC-1b::ΔTK almost normally localized to the ER (Figure 7D,G) while in other animals it localized in parts of the cytoplasm that lacked ER (Figure 7E,G). Deletion of the repeat regions in GFP::ANC-1b::Δ6RPS led to a re-localization away from the general ER (Figure 7F–G). Together, these results suggest that (1) ANC-1b has a similar distribution pattern as the ER and (2) that the transmembrane span and repeat regions, but not the luminal KASH domain, plays roles ANC-1 ER localization. The ANC-1 localization pattern is consistent with the above findings that anc-1(Δ6RPS) anc-1(ΔTK) mutants had intermediate nuclear and ER positioning defects, worse than anc-1(Δ25KASH) mutants.
 
-## Other organelles are mis-localized in anc-1 mutants
+### Other organelles are mis-localized in anc-1 mutants
 
 Our imaging showed that both nuclei and the ER are both unanchored and move freely throughout the cytoplasm. Furthermore, our deletion analyses cast significant doubt on the old tethering model. In our new model, without ANC-1, the entire cytoplasm is disconnected and multiple organelles are likely flowing freely throughout the cytoplasm. We therefore used the MDT-28::mCherry (Na et al., 2015) marker to follow lipid droplets (Figure 8, Videos 4–5) and the mitoLS::GFP marker to follow mitochondria (Figure 9, Videos 6–7). In anc-1 null mutant animals, both lipid droplets and mitochondria moved in a manner suggesting they were not connected to a network. Furthermore, lipid droplets were often seen in large clusters and mitochondria appeared slightly fragmented. We therefore conclude that ANC-1 is required to interconnect the entire cytoplasm to anchor nuclei, ER, lipid droplets, mitochondria, and likely other organelles to a single network that regulates the integrity of the cytoplasm.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig8-v2.jpg)
 
-**Figure 8.:** anc-1 mutants.(A) Representative images of hyp7 lipid droplets labeled with the P marker in the young adult animals. (mdt-28::mdt-28::mCherryB) Scoring of the lipid droplet positioning defects. Images were randomized for blind analysis by multiple researchers. n ≥ 11. (C–D) Time-lapse images of hyp7 lipid droplets. (C–D) The lipid droplet displacement phenotype was quantified as described in Figure 4E–F. The average change in distance between two points in 242 ms intervals is plotted in (C). The trajectories of the relative movements of each spot apart from the others are shown in (D). Eight movies of each strain were analyzed. Scale bar, 10 µm for all the images. Also see Videos 4–5. WT = wild type.
+**Figure 8.:** (A) Representative images of hyp7 lipid droplets labeled with the Pmdt-28::mdt-28::mCherry marker in the young adult animals. (B) Scoring of the lipid droplet positioning defects. Images were randomized for blind analysis by multiple researchers. n ≥ 11. (C–D) Time-lapse images of hyp7 lipid droplets. (C–D) The lipid droplet displacement phenotype was quantified as described in Figure 4E–F. The average change in distance between two points in 242 ms intervals is plotted in (C). The trajectories of the relative movements of each spot apart from the others are shown in (D). Eight movies of each strain were analyzed. Scale bar, 10 µm for all the images. Also see Videos 4–5. WT = wild type.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig9-v2.jpg)
 
-**Figure 9.:** anc-1 mutants.(A) The hyp7 mitochondria were labeled with the P marker in the L3 animals. (col-10::mito::GFPB) The mitochondria positioning defect was scored. Images were randomized for blind analysis by multiple researchers. n ≥ 18 for each strain. Scale bar, 10 µm for all the images. Also see Videos 6–7. WT = wild type.
+**Figure 9.:** (A) The hyp7 mitochondria were labeled with the Pcol-10::mito::GFP marker in the L3 animals. (B) The mitochondria positioning defect was scored. Images were randomized for blind analysis by multiple researchers. n ≥ 18 for each strain. Scale bar, 10 µm for all the images. Also see Videos 6–7. WT = wild type.
 
-## Microtubule networks appear normal in anc-1 mutants
+![Video 4.](https://cdn.elifesciences.org/articles/61069/elife-61069-video4.mp4.jpg)
+
+**Video 4.:** An example video of the hyp7 lipid droplets in young adult wild type C. elegans expressing ldrIs2 [mdt-28p::mdt-28::mCherry +unc-76(+)]. Images were captured at the interval of 0.2 s for 10 s. Scale bar, 10 µm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/61069/elife-61069-video5.mp4.jpg)
+
+**Video 5.:** An example video of the hyp7 lipid droplets in the young adult anc-1(e1873) mutant C. elegans expressing ldrIs2 [mdt-28p::mdt-28::mCherry +unc-76(+)]. Images were captured at the interval of 0.24 s for 10 s. Scale bar, 10 µm.
+
+![Video 6.](https://cdn.elifesciences.org/articles/61069/elife-61069-video6.mp4.jpg)
+
+**Video 6.:** An example video of hyp7 mitochondria in young adult wild type C. elegans as followed by the Pcol-10::mitoLS::GFP marker. Images were captured at the interval of 0.1 s for 10 s. Scale bar, 10 µm.
+
+![Video 7.](https://cdn.elifesciences.org/articles/61069/elife-61069-video7.mp4.jpg)
+
+**Video 7.:** An example video of hyp7 mitochondria in the young adult anc-1(e1873) mutant C. elegans as followed by the Pcol-10::mitoLS::GFP marker. Images were captured at the interval of 0.1 s for 10 s. Scale bar, 10 µm.
+
+### Microtubule networks appear normal in anc-1 mutants
 
 One hypothesis for ANC-1 function is that it regulates cytoskeletal networks. In this model, mutations in anc-1 would disrupt the cytoskeleton, causing organelles to lose their attachment to the cytoskeleton and move around freely as shown in Figures 4, 8 and 9. We therefore examined microtubule organization in the hyp7 syncytia of wild type and anc-1 null mutant animals. We followed microtubules in live animals with an endogenously expressed microtubule binding protein, GFP::MAPH-1.1 (Castiglioni et al., 2020; Waaijers et al., 2016). The density and relative disorganization of the microtubule network in wild type made it difficult to quantify any growth, length, or number parameters of microtubules. Nonetheless, qualitatively, in comparison with the wild type (Video 8), microtubules were mostly normal in in anc-1 null mutant animals (Figure 10 and Videos 9–10). The exception was where nuclei had moved back and forth along an anterior-posterior axis, they appear to have cleared a microtubule free channel. These results are more in line with a model where in the absence of ANC-1, nuclei move around and disrupt or move microtubules in their way rather than a model where a lack of ANC-1 leads to massive microtubule disruption that then frees nuclei and other organelles to move throughout the syncytia.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig10-v2.jpg)
 
-**Figure 10.:** anc-1 mutants.Representative images of microtubules (cyan) and nuclear envelope (NE) (magenta) from the same young adult animals are shown. (A–A’’) wild type (WT), (B–B’’) anc-1(e1873) mutant animal where the microtubules are mostly normal. (C–C’’) In other anc-1(e1873) animals, microtubule organization is disrupted in the channels where nuclei move. Microtubules are labeled with GFP::MAPH-1.1 and the nuclear envelope is labeled with EMR-1::mCherry. Scale bar, 10 µm. Also see Videos 8–10.
+**Figure 10.:** Representative images of microtubules (cyan) and nuclear envelope (NE) (magenta) from the same young adult animals are shown. (A–A’’) wild type (WT), (B–B’’) anc-1(e1873) mutant animal where the microtubules are mostly normal. (C–C’’) In other anc-1(e1873) animals, microtubule organization is disrupted in the channels where nuclei move. Microtubules are labeled with GFP::MAPH-1.1 and the nuclear envelope is labeled with EMR-1::mCherry. Scale bar, 10 µm. Also see Videos 8–10.
 
-## Depletion of ANC-1 disrupts nuclear morphology and causes developmental defects
+![Video 8.](https://cdn.elifesciences.org/articles/61069/elife-61069-video8.mp4.jpg)
+
+**Video 8.:** A representative clip of the hyp7 in a wild type young adult expressing GFP:: MAPH-1.1 to mark microtubules in cyan and EMR-1::mCherry to mark nuclear envelopes in magenta. Images were at the interval of 1 s for 20 s. Scale bar, 10 µm.
+
+![Video 9.](https://cdn.elifesciences.org/articles/61069/elife-61069-video9.mp4.jpg)
+
+**Video 9.:** A representative clip of the hyp7 in a anc-1(e1783) mutant young adult expressing GFP:: MAPH-1.1 to mark microtubules in cyan and EMR-1::mCherry to mark nuclear envelopes in magenta. Images were at the interval of 0.845 s for 40 s. Scale bar, 10 µm.
+
+![Video 10.](https://cdn.elifesciences.org/articles/61069/elife-61069-video10.mp4.jpg)
+
+**Video 10.:** A representative clip of the hyp7 in a anc-1(e1783) mutant young adult expressing GFP::MAPH-1.1 to mark microtubules in cyan and EMR-1::mCherry to mark nuclear envelopes in magenta. Images were at the interval of 0.638 s for 32 s. Scale bar, 10 µm.
+
+### Depletion of ANC-1 disrupts nuclear morphology and causes developmental defects
 
 Nuclear shape changes were observed during live imaging in anc-1 mutants consistent with a model where anc-1 mutant nuclei are susceptible to pressures from the cytoplasm, perhaps crashing into other organelles that corresponded with dents in nuclei. We therefore quantified nuclear size and shape in anc-1 mutants to better characterize how nuclear and/or ER movements affect the nuclear structure. Adult syncytial hyp7 nuclei were significantly smaller in anc-1(Δ6RPS) and anc-1(e1873) mutants compared to wild type (Figure 11A). Furthermore, the shape of anc-1(e1873) hyp7 nuclei, as measured by circularity and solidity, was significantly less round than wild type (Figure 11B).
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/61069/elife-61069-fig11-v2.jpg)
 
-**Figure 11.:** anc-1 mutants have developmental defects.(A) The area of cross-sections of hyp7 nuclei is shown. Each dot represents the area of a single nucleus. n = 32 for wild type (WT), n = 50 for anc-1(Δ6RPS), n = 111 for anc-1(e1873). (B) Top panel: Representative images of hyp7 nuclei marked by EMR-1::mCherry of WT, anc-1(Δ6RPS), and anc-1(e1873) mutants. Scale bar, 2 µm. Bottom panel: Plot of the solidity and the circularity. (C–F) The brood size (C), length of the L2 larvae (D), adult length (E) and width (F) are significantly reduced in anc-1(e1873) mutants. Each dot represents a single animal. n ≥ 14 for (C) and n ≥ 19 for (D–F). Means with 95% CI error bars are shown. Unpaired student two-tail t-test was used for statistical analysis. **p≤0.01; ***p≤0.001.
+**Figure 11.:** (A) The area of cross-sections of hyp7 nuclei is shown. Each dot represents the area of a single nucleus. n = 32 for wild type (WT), n = 50 for anc-1(Δ6RPS), n = 111 for anc-1(e1873). (B) Top panel: Representative images of hyp7 nuclei marked by EMR-1::mCherry of WT, anc-1(Δ6RPS), and anc-1(e1873) mutants. Scale bar, 2 µm. Bottom panel: Plot of the solidity and the circularity. (C–F) The brood size (C), length of the L2 larvae (D), adult length (E) and width (F) are significantly reduced in anc-1(e1873) mutants. Each dot represents a single animal. n ≥ 14 for (C) and n ≥ 19 for (D–F). Means with 95% CI error bars are shown. Unpaired student two-tail t-test was used for statistical analysis. **p≤0.01; ***p≤0.001.
 
 Given the nuclear anchorage, ER positioning, and nuclear shape defects observed in anc-1 mutants, we examined whether these animals might have other developmental or growth defects. Despite producing fertile adults, anc-1 null animals had severe developmental defects. The brood size of anc-1(e1873) mutants was less than 25% of wild type (Figure 11C) and anc-1(e1873) mutants had significantly smaller body sizes throughout larval and adult stages (Figure 11D–F). Together these results suggest that there are developmental consequences associated with organelle positioning defects in anc-1 mutants.
 
@@ -136,9 +208,394 @@ In summary, we propose a cytoplasmic integrity model, for how ANC-1 and giant KA
 
 ## Materials and methods
 
-## C. elegans genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia. coli)</td>
+      <td>OP50</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>OP50</td>
+      <td>https://cgc.umn.edu/strain/OP50</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>DH10B</td>
+      <td>New England Biolabs (NEB)</td>
+      <td>C3019H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLF3FShC</td>
+      <td>Nonet, 2020</td>
+      <td>addgene: #153083</td>
+      <td>https://www.addgene.org/153083/</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSL845</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Py37a1b.5::mKate2::tram-1::tram-1 3’UTR plasmid to generate the ycSi2 transgenic C. elegans strain</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSL835</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Panc-1b::nls::gfp::lacZ Plasmid to generate ycEx260</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSL289</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Pcol-10::mitoLS::gfp Plasmid to generate ycEx217</td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans genetics
 
 C. elegans strains were maintained on nematode growth medium plates seeded with OP50 E. coli at the room temperature (approximately 22°C) (Brenner, 1974). All the strains used in this study are listed in Table 1. Some strains, including N2 (WB Cat# WBStrain00000001, RRID:WB-STRAIN:WBStrain00000001), which was used as wild type, were obtained from the Caenorhabditis Genetics Center, funded by the National Institutes of Health Office of Research Infrastructure Programs (P40 OD010440). Strains VC40007, VC20178, and VC40614 were provided by the C. elegans Reverse Genetics Core Facility at the University of British Columbia (Thompson et al., 2013). Strain RT3739 (pwSi83) was generously provided by Barth Grant (Rutgers University, NJ, USA). UD522 (ycEx249[pcol-19::gfp::lacZ, pmyo-2::mCherry]) was previously described (Cain et al., 2018). Male strains of RT3739, UD522, BOX188, LIU2, UD756, UD3, and BN147 were made to cross into anc-1 or unc-84 mutants. Alternatively, pcol-19::gfp::lacZ was introduced into some mutants by standard germline transformation to make UD736 and UD737 (Cain et al., 2018; Mello et al., 1991).
+
+**Table 1.**
+ C. elegans strains in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N2</td>
+      <td>Wild type</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UD522</td>
+      <td>ycEx249[pcol-19::gfp::lacZ, pmyo-2::mCherry]</td>
+      <td>Cain et al., 2018</td>
+    </tr>
+    <tr>
+      <td>UD532</td>
+      <td>unc-84(n369) X; ycEx249</td>
+      <td>Cain et al., 2018</td>
+    </tr>
+    <tr>
+      <td>UD538</td>
+      <td>anc-1(e1873) I; ycEx249</td>
+      <td>Cain et al., 2018</td>
+    </tr>
+    <tr>
+      <td>UD578</td>
+      <td>anc-1(yc52[∆25KASH]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD615</td>
+      <td>anc-1(yc69[∆29KASH]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>JR672</td>
+      <td>wIs54[scm::gfp] V</td>
+      <td>Terns et al., 1997</td>
+    </tr>
+    <tr>
+      <td>UD457</td>
+      <td>unc-84(n369) X; wIs54 V</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD451</td>
+      <td>anc-1(e1873) I; wIs54 V</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>VC20178</td>
+      <td>anc-1(gk109010[W427*]) I</td>
+      <td>Thompson et al., 2013</td>
+    </tr>
+    <tr>
+      <td>UD737</td>
+      <td>anc-1(gk109010[W427*]) I; ycEx265[pcol-19::gfp::lacZ, pmyo-2::mCherry]</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>VC40007</td>
+      <td>anc-1(gk109018[W621*]) I</td>
+      <td>Thompson et al., 2013</td>
+    </tr>
+    <tr>
+      <td>UD736</td>
+      <td>anc-1(gk109018[W621*]) I; ycEx266[pcol-19::gfp::lacZ, pmyo-2::mCherry]</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>VC40614</td>
+      <td>anc-1(gk722608[Q2878*]) I</td>
+      <td>Thompson et al., 2013</td>
+    </tr>
+    <tr>
+      <td>UD565</td>
+      <td>anc-1(gk722608[Q2878*]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD535</td>
+      <td>anc-1(yc41[anc-1::gfp3Xflag::kash,Δch]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD608</td>
+      <td>ycEx260[panc-1b::nls::gfp::lacZ]</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD599</td>
+      <td>anc-1(yc62[ΔF1]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD591</td>
+      <td>anc-1(yc61[Δ6RPS]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD668</td>
+      <td>anc-1(yc80[ΔF2]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD669</td>
+      <td>anc-1(yc81[ΔF2-neck]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD695</td>
+      <td>anc-1(yc61[Δ6RPS]) I; unc-84(n369) X; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD696</td>
+      <td>anc-1(yc62[ΔF1]) I; unc-84(n369) X; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD612</td>
+      <td>anc-1(yc68[gfp::anc-1b]) I</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD655</td>
+      <td>anc-1(yc78[Δ5RPS]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD619</td>
+      <td>anc-1(yc68[gfp::anc-1b]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD694</td>
+      <td>anc-1(yc90[anc-1::gfp::F2]) I</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD697</td>
+      <td>anc-1(yc90[anc-1::gfp::F2]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD618</td>
+      <td>anc-1(yc70[gfp::anc-1b::Δ6rps]) I</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD698</td>
+      <td>anc-1(yc91[gfp::anc-1b::Δ5rps]) I</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD701</td>
+      <td>anc-1(yc92[gfp::anc-1b::Δf1]) I</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD702</td>
+      <td>anc-1(yc93[anc-1AI972,973**::gfp]) I</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD625</td>
+      <td>anc-1(yc71[ΔTK]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD645</td>
+      <td>anc-1(yc73[gfp::anc-1b::Δ6rps::Δtk]) I; ycEx249</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>RT3739</td>
+      <td>pwSi83[phyp7gfp::kdel]</td>
+      <td>A gift from Barth Grant</td>
+    </tr>
+    <tr>
+      <td>UD652</td>
+      <td>anc-1(e1873) I; pwSi83</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD679</td>
+      <td>unc-84(n369) X; pwSi83</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD707</td>
+      <td>anc-1(yc71[∆TK]) I; pwSi83</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD651</td>
+      <td>anc-1(yc61[∆6RPS]) I; pwSi83</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD672</td>
+      <td>anc-1(yc69[∆29KASH]) I; pwSi83</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD520</td>
+      <td>anc-1(yc36[anc-1::gfp3Xflag::kash]) I</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>BN147</td>
+      <td>bqSi142 [pemr-1::emr-1::mCherry + unc-119(+)] II</td>
+      <td>Morales-Martínez et al., 2015</td>
+    </tr>
+    <tr>
+      <td>BOX188</td>
+      <td>maph-1.1(mib12[gfp::maph-1.1]) I</td>
+      <td>Waaijers et al., 2016</td>
+    </tr>
+    <tr>
+      <td>UD649</td>
+      <td>maph-1.1(mib12[gfp::maph-1.1]) I; bqSi142 II</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD650</td>
+      <td>anc-1(e1873) I; maph-1.1(mib12[gfp::maph-1.1]) I; bqSi142 II</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD677</td>
+      <td>anc-1(yc61[∆6RPS]) I; maph-1.1(mib12[gfp::maph-1.1]) I; bqSi142 II</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD3</td>
+      <td>ycEx217[Pcol-10::mitoLS::GFP, Podr-1::RFP]</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD676</td>
+      <td>anc-1(e1873) I; [Pcol-10::mitoLS::GFP, Podr-1::RFP]</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>LIU2</td>
+      <td>ldrIs2 [mdt-28p::mdt-28::mCherry + unc-76(+)].</td>
+      <td>Na et al., 2015</td>
+    </tr>
+    <tr>
+      <td>UD681</td>
+      <td>anc-1(e1873) I; ldrIs2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD728</td>
+      <td>anc-1(yc94[gfp::anc-1b::Δtk]) I</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD789</td>
+      <td>anc-1(yc106[gfp::anc-1b::Δkash]) I</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD756</td>
+      <td>ycSi2[pSL845 Py37a1b.5::mKate2::tram-1::tram-1 3’UTR] IV</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>NM5179</td>
+      <td>jsTi1493[LoxP::mex-5p::FLP:SL2::mNeonGreen::rpl-28p::FRT::GFP::his-58::FRT3] IV</td>
+      <td>Nonet, 2020</td>
+    </tr>
+    <tr>
+      <td>UD778</td>
+      <td>anc-1(yc68[gfp::anc-1b]) I; ycSi2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD779</td>
+      <td>anc-1(yc90[anc-1::gfp::F2]) I; ycSi2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD780</td>
+      <td>anc-1(yc70[gfp::anc-1b::Δ6rps]) I; ycSi2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD781</td>
+      <td>anc-1(yc106[gfp::anc-1b::Δkash]) I; ycSi2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD782</td>
+      <td>anc-1(yc94[gfp::anc-1b::Δtk]) I; ycSi2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD783</td>
+      <td>anc-1(yc68[gfp::anc-1b]) I; bqSi142</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD785</td>
+      <td>anc-1(yc70[gfp::anc-1b::Δ6rps]) I; bqSi142</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UD790</td>
+      <td>anc-1(yc68[gfp::anc-1b]) I; ldrIs2</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
 
 For anc-1 RNAi feeding experiments, L4 stage animals were transferred onto NGM plates seeded with bacteria expressing dsRNA (Timmons and Fire, 1998). The clones from the Ahringer RNAi library (Source Bioscience) (Kamath and Ahringer, 2003) were confirmed by Sanger sequencing.
 
@@ -148,23 +605,156 @@ For the brood size assay, starting at the L4 stage, single animals were transfer
 
 To measure body size, embryos laid within an hour were collected and cultured for 24 hr and 69 hr to reach the L2 stage and the adult stage, respectively. Animals were mounted on 2% agarose pads in ~5 µl of 1 mM tetramisole in M9 buffer for imaging.
 
-## 5’-Rapid amplification of cDNA ends (5’-RACE)
+### 5’-Rapid amplification of cDNA ends (5’-RACE)
 
 Total RNA was extracted from mixed stages of C. elegans using the RNeasy kit (QIAGEN). First-strand cDNAs were generated with the ThermoScript RT-PCR system using an anc-1 antisense oligonucleotide (ods2572: 5’-ATAGATCATTACAAGATG-3’). Purification and TdT tailing of the first-strand cDNA were performed by the 5' RACE System for Rapid Amplification of cDNA Ends, version 2.0 (Invitrogen, Cat. No. 18374058). The target cDNA was amplified PCR using the provided 5’ RACE Abridged Anchor Primer and an anc-1 specific primer: ods2574 (5’-GTCGGCGTCTGAAGGAAAGA-3’). The PCR product was purified using the QIAquick PCR purification kit (QIAGEN) and Sanger sequencing was performed by Genewiz.
 
-## Plasmid construction and transformation
+### Plasmid construction and transformation
 
 To generate plasmid panc-1b::nls::gfp::lacZ (pSL835), a 2.56 kb fragment of genomic DNA upstream of the start codon of anc-1b was amplified with primers ods2491 (5’- TACCGAGCTCAGAAAAAATGACTGTGAGTATAGTCATTTTCCGCT-3’) and ods2492 (5’-GTACCTTACGCTTCTTCTTTGGAGCCATTTTGGTTCGGAGCAC-3’) to replace the col-19 promoter of pcol-19::gfp::lacZ (pSL779) (Cain et al., 2018). N2 animals were injected with 45 ng/µl of pSL835, 50 ng/µl of pBluescript SK, and 2.5 ng/µl of pCFJ90 (pmyo-2::mCherry) (Frøkjaer-Jensen et al., 2008) by standard C. elegans germline transformation (Evans, 2006) to make strain UD608 (ycEx260[Panc-1b::nls::gfp::lacZ-2]). Plasmid Pcol-10::mitoLS::gfp (pSL289) and the odr-1::rfp co-injection marker were injected into N2 young adults to generate UD3 ycEx217[Pcol-10::mitoLS::GFP, Podr-1::RFP] transgenic strain. Flp Recombinase-Mediated Cassette Exchange (RMCE) method was used to generate strain UD756 ycSi2[pSL845 Py37a1b.5::mKate2::tram-1::tram-13’UTR] (Nonet, 2020). pLF3FShC was a gift from Michael Nonet (Addgene plasmid # 153083; http://n2t.net/addgene:153083; RRID:Addgene_153083). To generate plasmid pSL845, the Py37a1b.5::mKate2 fragment amplified from pSL843 (primers: ods2785 and ods2787) and the tram-1 fragment amplified from the C. elegans genomic DNA (primers: ods2788 and ods2789) were inserted into plasmid pLF3FShC through Sap I Golden Gate Assembly (Nonet, 2020).
 
 Primers sequences are:
 
-## CRISPR/Cas9 mediated gene editing
+### CRISPR/Cas9 mediated gene editing
 
 Knock-in strains were generated using a dpy-10 Co-CRISPR strategy (Arribere et al., 2014; Paix et al., 2015; Paix et al., 2017). All crRNA and repair template sequences are in Table 2. An injection mix containing 0.12 µl dpy-10 crRNA (0.6 mM) (Horizon Discovery/Dharmacon), 0.3 µl target gene crRNA (0.6 mM) for one locus editing or 0.21 µl of each crRNA (0.6 mM) for multi-loci editing and 1.46 µl (one locus) or 1.88 µl (two loci) universal tracrRNA (0.17 mM) (Horizon Discovery/Dharmacon) precomplexed with purified 7.6 µl of 40 µM Cas9 protein (UC Berkeley QB3) and 0.29 µl of the dpy-10 single-strand DNA oligonucleotide (ssODN) (500 ng/µl) repair templates and 0.21 µl ssODN repair template (25 µM) for the target gene editing or up to 500 ng double-strand DNA were injected to the germline of the hermaphrodite young adults. For anc-1(yc52[∆25KASH]) I, anc-1(yc69[∆29KASH]) I, anc-1(yc62[ΔF1]) I, anc-1(yc61[∆6RPS]) I, anc-1(yc80[∆F2]) I, anc-1(yc78[∆5RPS]) I, anc-1(yc91[gfp::anc-1b::Δ5rps]) I, anc-1(yc70[gfp::anc-1b::Δ6rps]) I, anc-1(yc92[gfp::anc-1b::Δf1]) I, anc-1(yc93[anc-1AI972,973**::gfp]) I, anc-1(yc106[gfp::anc-1b::Δkash]) I, anc-1(yc94[gfp::anc-1b::Δtk]), I single-strand DNA (SSD) (synthesized by Integrated DNA Technologies, IDT) was used as repair template. For GFP knock-in strains, double-strand DNA repair templates were amplified with PCR from the plasmids pSL779 for gfp using Phusion polymerase and the primers listed in Table 2 (New England Biolabs) (Bone et al., 2016; Cain et al., 2018).
 
+**Table 2.**
+ crRNA and repair templates used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>New alleles</th>
+      <th>Strain</th>
+      <th>crRNA *</th>
+      <th>DNA repair template * †,§, ‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>anc-1(yc52[∆25KASH]) I</td>
+      <td>N2</td>
+      <td>CAGUACUCGUCGUCGCAAUG</td>
+      <td>GCACTGCTTGTTCTACTTATGGGAGCCGCTTGTTTGGTTCCACAcTGtGAtGAtGAaTAtTAATCTTTAATTTTTTATTTTCATTACTATTCACTATTGTTTCATTCATCATGAACCTG</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc69[∆29KASH]) I</td>
+      <td>N2</td>
+      <td>CAGUACUCGUCGUCGCAAUG</td>
+      <td>NHEJ ‡</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc41[anc-1::gfp3Xflag::kash,Δch]) I</td>
+      <td>N2</td>
+      <td>UUUCAUCUUGAAGAGGUUCG</td>
+      <td>--AAAATCTATTTTGAAAATTTTCAGATGAGGACGAG&lt;EGFP-3xFLAG &gt; AGATCAGGAGCTAGCGGAGCCATGTTCGGAGAAAGATCACCAATG--</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc62[ΔF1]) I</td>
+      <td>N2</td>
+      <td>ACUUGAUCAAUCUAUAAUAA</td>
+      <td>GAAACATGAAAGCAAAGTACATTTTTTTAAAAATCGATTATTTCagATcGAcCAgGTACAGTCTGAGATCGACACTCTTTCAGACTTCGAGGAGATCGAGCGTGAAATAAACGGCTCACTCGAAGCTTTCGAAGCCGAG</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc61[Δ6RPS]) I</td>
+      <td>N2</td>
+      <td>GCGUUCAAUUUCUUCAAAAU UGUUAGUAUUGGCGGCGAGU GGAGCGUUUUGUAAAAGCAA</td>
+      <td>AAGGTACAAAACATTGGAAAAACATCGATTGACGACGTGAATGTATCTGACTTCGAGGAGATCGAGCGTGAGATCAATGGCTCCCTTGAGGCTTTCTCTATTTGGGAACGCTTCGTCAAGGCTAAAGATGATTTGTACGATTATTTGGAGAAATTAGAGAACAATGTAAGC</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc80[ΔF2]) I</td>
+      <td>N2</td>
+      <td>GGAGCGUUUUGUAAAAGCAA UCCAACGGGAUCUUUGUCGU</td>
+      <td>ACTCTTATTCCGGACCTTGAAGAAAGAGCTTCTATTTGGGAGCGTACTGCTTTGCCACTTCAGGTTTGTTTATATTTTTTAATATTAATA</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc36[anc-1::gfp3Xflag::kash]) I</td>
+      <td>N2</td>
+      <td>GACAAAGATCCCGTTGGAGA</td>
+      <td>TCCGACGACAgAGATCtCGcTGGcGcCGcGTACTCAGAACTTCAGGAGCTAGCGGAGCC &lt; EGFP-3xFLAG &gt; tcaggagctagcggagccGCTTTGCCACTTCAGgtttgtttatatttttt</td>
+    </tr>
+    <tr>
+      <td>anc-1([yc68[gfp::anc-1b]]) I</td>
+      <td>N2</td>
+      <td>CCGUCGGAACAGCUCCAUUU</td>
+      <td>TCTTAACCTTTTGTTCCATTCACTAATTATTTTCAATTACAGGAGGTTGGCCGCGAGTCGGTCAGTAAATTATCAGCTGCAGTTGACGATCGATACATCTACACGTTACACGTGCTCCGAACTAAG &lt; EGFP &gt; GGAGGTTCCGGAGGTGGATCTGGAGGTGAaCTcTTtCGtCGtCTGCAAAACTTTTGCGACGCTGTCAAAATATTGCGATCGCAAAATACCAAATGGAACGGAATCAAGATTTCGCAGGTTTGTTTCAAAAGCATCACAAATTAGCGG</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc78[Δ5RPS]) I</td>
+      <td>N2</td>
+      <td>GGAGCGUUUUGUAAAAGCAA UUCCUCUGGCUUCAACGAGU</td>
+      <td>GATCAGCTCAAGTCGGACGATTTGAAGACGGCAGAAAAGGAAATCACTAAtagccTcAAaCCcGAaTCTATTTGGGAaaGaTTcGTtAAgGCtAAAGATGATTTGTACGATTATTTGGAGAAATTAGAGAACAAT</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc90[anc-1::gfp::F2]) I</td>
+      <td>N2</td>
+      <td>GGAGCGUUUUGUAAAAGCAA</td>
+      <td>CCGGACCTTGAAGAAAGAGCTTCTATTTGGGAGCGTGGTGGAAGTGGTGGAGGAAGCGGTGGA &lt; EGFP &gt; GCATGGATGAACTATACAAAGGAGGTTCCGGAGGTGGATCTGGAGGTTTcGTcAAgGCtAAAGATGATTTGTACGATTATTTGGAGAAATTAGAGAACA</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc70[gfp::anc-1b::Δ6rps]) I</td>
+      <td>UD612</td>
+      <td>GCGUUCAAUUUCUUCAAAAU UGUUAGUAUUGGCGGCGAGU GGAGCGUUUUGUAAAAGCAA</td>
+      <td>AAGGTACAAAACATTGGAAAAACATCGATTGACGACGTGAATGTATCTGACTTCGAGGAGATCGAGCGTGAGATCAATGGCTCCCTTGAGGCTTTCTCTATTTGGGAACGCTTcGTcAAgGCtAAAGATGATTTGTACGATTATTTGGAGAAATTAGAGAACAATGTAAGC</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc91[gfp::anc-1b::Δ5rps]) I</td>
+      <td>UD612</td>
+      <td>GGAGCGUUUUGUAAAAGCAA UUCCUCUGGCUUCAACGAGU</td>
+      <td>GATCAGCTCAAGTCGGACGATTTGAAGACGGCAGAAAAGGAAATCACTAAtagccTcAAaCCcGAaTCTATTTGGGAaaGaTTcGTtAAgGCtAAAGATGATTTGTACGATTATTTGGAGAAATTAGAGAACAAT</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc92[gfp::anc-1b::Δf1]) I</td>
+      <td>UD612</td>
+      <td>ACUUGAUCAAUCUAUAAUAA</td>
+      <td>GAAACATGAAAGCAAAGTACATTTTTTTAAAAATCGATTATTTCagATcGAcCAgGTACAGTCTGAGATCGACACTCTTTCAGACTTCGAGGAGATCGAGCGTGAAATAAACGGCTCACTCGAAGCTTTCGAAGCCGAG</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc93[anc-1AI972,973**::gfp]) I</td>
+      <td>UD612</td>
+      <td>ACUCACCUCUAGAAAUUCGA</td>
+      <td>CAAAATTTAGAGCTCAGCAATGAGCAGGACTGTCCAGATtaatgaGgtaccCTAGAGGTGAGTATAGTCATTTTCCGCTCATTACACTCTT</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc71[∆TK]) I</td>
+      <td>N2</td>
+      <td>CAGAACUGCUUUGCCACUUC AUUAAAGAUUAAAAUGGUGG</td>
+      <td>GAACAACTCCGACGACAAAGATCCCGTTGGAGACGGGTACTCAGATAATCTTTAATTTTTTATTTTCATTACTATTCACTATTGTTTCATTCATC</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc106[gfp::anc-1b::Δkash]) I</td>
+      <td>UD612</td>
+      <td>CAGUACUCGUCGUCGCAAUG</td>
+      <td>GCACTGCTTGTTCTACTTATGGGAGCCGCTTGTTTGGTTCCACAcTGtGAtGAtGAaTAtTAATCTTTAATTTTTTATTTTCATTACTATTCACTATTGTTTCATTCATCATGAACCTG</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc94[gfp::anc-1b::Δtk])</td>
+      <td>UD612</td>
+      <td>CAGAACUGCUUUGCCACUUC AUUAAAGAUUAAAAUGGUGG</td>
+      <td>GAACAACTCCGACGACAAAGATCCCGTTGGAGACGGGTACTCAGATAATCTTTAATTTTTTATTTTCATTACTATTCACTATTGTTTCATTCATC</td>
+    </tr>
+    <tr>
+      <td>anc-1(yc73[gfp::anc-1b::Δ6rps::Δtk]) I</td>
+      <td>UD618</td>
+      <td>CAGAACUGCUUUGCCACUUC AUUAAAGAUUAAAAUGGUGG</td>
+      <td>GAACAACTCCGACGACAAAGATCCCGTTGGAGACGGGTACTCAGATAATCTTTAATTTTTTATTTTCATTACTATTCACTATTGTTTCATTCATC</td>
+    </tr>
+    <tr>
+      <td>dpy-10(cn64)</td>
+      <td>Co-CRISPR</td>
+      <td>GCUACCAUAGGCACCACGAG Arribere et al., 2014</td>
+      <td>CACTTGAACTTCAATACGGCAAGATGAGAATGACTGGAAACCGTACCGCATGCGGTGCCTATGGTAGCGGAGCTTCACATGGCTTCAGACCAACAGCCTAT (Arribere et al., 2014)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*all nucleotide sequences are displayed as single strand in the 5’ to 3’ orientation.†In many cases a ssDNA oligonucleotide was used. For larger inserts, a PCR product was used.§An imprecise NHEJ event led to an in-frame deletion without using the repair template.¶Underlined sequences introduce silent mutations so the repair template is not cut by Cas9.‡Underline indicates the silent mutation in the repair template._
+
 Strains anc-1[yc41(anc-1::gfp3Xflg::kash,Δch)]I and anc-1[yc36(anc-1::gfp3Xflag::kash)]I were generated by Dickinson Self-Excising Drug Selection Cassette (SEC) method (Dickinson et al., 2015). In anc-1[yc41(anc-1::gfp3Xflg::kash,Δch)]I, both CH domains were deleted (starting with 23KAQK26 and ending with 322QFVR325) and replaced with GFP flanked with 9-residue long linkers (GASGASGAS).
 
-## Microscopy and imaging analysis
+### Microscopy and imaging analysis
 
 Images of the nuclear anchorage, worm body size measurements and anc-1b promoter reporter assays were collected with a wide-field epifluorescent Leica DM6000 microscope with a 63 × Plan Apo 1.40 NA objective, a Leica DC350 FX camera, and Leica LAS AF software. ANC-1 subcellular localization, the ER marker, and nuclear shape images were taken with a spinning disc confocal microscope (Intelligent Imaging Innovations) with a CSU-X1 scan head (Yokogawa), a Cascade QuantEM 512SC camera (Photometrics), a 100 × NA 1.46 objective (Zeiss or Nikon), and SlideBook software (Intelligent Imaging Innovations). The contrast and levels of the images were uniformly adjusted using ImageJ (National Institutes of Health). Live GFP::KDEL images were acquired at 200 ms or 250 ms intervals using the above spinning disc confocal system. To quantify ER, lipid droplet, and mitochondria positioning defects, images from at least 10 young adults of each strain were scored blindly by three people. In addition, the ‘Manual Tracking’ plug-in for ImageJ (https://imagej.nih.gov/ij/plugins/track/track.html) was used to track the positions of multiple ER fragments and lipid droplets through a time-lapse series. The relative movements between three different spots per animal were measured over time.
 
@@ -174,6 +764,6 @@ For the ER colocalization analysis, z stack images were taken under the spinning
 
 For some adult animals, Image J ‘Stitching’ Plug-in was used to stitch images with overlap (Preibisch et al., 2009). The length of L2 larvae, width and length of the adult animals, as well as the circularity and solidity of the nuclei were measured with Image J.
 
-## Statistical evaluation
+### Statistical evaluation
 
 The nuclear anchorage quantifying data were displayed as scatter plots with means and 95% CI as error bars. Sample sizes are indicated in the figures. The statistical tests are indicated in the figure legends. When there were limited comparisons. unpaired student t-tests were performed on the indicated comparisons for the nuclear anchorage assay, and Fisher’s exact test was used. When multiple comparisons were made, ANOVA and Tukey’s multiple comparisons tests were used. Prism nine software was used for the statistical analyses.

@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.44360.001 HIV +Elite and Viremic controllers (EC/VCs) are able to control virus infection, perhaps because of host genetic determinants. We identified 16% (21 of 131) EC/VCs with CD4 +T cells with resistance specific to R5-tropic HIV, reversed after introduction of ccr5 . R5 resistance was not observed in macrophages and depended upon the method of T cell activation. CD4 +T cells of these EC/VCs had lower ccr2 and ccr5 RNA levels, reduced CCR2 and CCR5 cell-surface expression, and decreased levels of secreted chemokines. T cells had no changes in chemokine receptor mRNA half-life but instead had lower levels of active transcription of ccr2 and ccr5 , despite having more accessible chromatin by ATAC-seq. Other nearby genes were also down-regulated, over a region of ~500 kb on chromosome 3p21. This same R5 resistance phenotype was observed in family members of an index VC, also associated with ccr2 / ccr5 down-regulation, suggesting that the phenotype is heritable.
+HIV +Elite and Viremic controllers (EC/VCs) are able to control virus infection, perhaps because of host genetic determinants. We identified 16% (21 of 131) EC/VCs with CD4 +T cells with resistance specific to R5-tropic HIV, reversed after introduction of ccr5. R5 resistance was not observed in macrophages and depended upon the method of T cell activation. CD4 +T cells of these EC/VCs had lower ccr2 and ccr5 RNA levels, reduced CCR2 and CCR5 cell-surface expression, and decreased levels of secreted chemokines. T cells had no changes in chemokine receptor mRNA half-life but instead had lower levels of active transcription of ccr2 and ccr5, despite having more accessible chromatin by ATAC-seq. Other nearby genes were also down-regulated, over a region of ~500 kb on chromosome 3p21. This same R5 resistance phenotype was observed in family members of an index VC, also associated with ccr2/ccr5 down-regulation, suggesting that the phenotype is heritable.
 
 ## Introduction
 
@@ -42,13 +42,25 @@ Previously we had observed that three of roughly a dozen ECs tested had CD4 +T 
 
 ## Results
 
-## Clinical characteristics of EC/VC cohort
+### Clinical characteristics of EC/VC cohort
 
 The total number of EC/VCs studied was 131, with a majority coming from the UCSF SCOPE cohort. Forty-four percent (58/131) were ECs, with 56% (73/131) being VCs (See Supplementary file 1). The year of initial HIV diagnosis or likely exposure ranged from 1980 to 2014, and subjects were 48 ± 12 years old (mean ±SD, range of 19 to 79 years), the majority being men (78.62%). CD4 +T cell count at time of enrollment was 689 ± 358 (mean ±SD). Most had never received ART except under the circumstances of pregnancy or malignancy (Supplementary file 1). Although occasional viral blips were observed, none of the EC/VCs ever lost virologic control necessitating ART. A number of subjects (54/125) had documented protective HLA alleles, being 32.06% HLA-B*57:03, 25.95% HLA-B*57:01, 22.9% Cw*08:02, 10.69% B*14:02, 4.58% HLA-B*27:05, and 3.05% B*52:01.
 
-## In vitro CD4 +T cell intrinsic resistance specifically to R5-tropic virus in a subset of HIV +EC/VCs
+### In vitro CD4 +T cell intrinsic resistance specifically to R5-tropic virus in a subset of HIV +EC/VCs
 
 To determine whether T cells of EC/VCs were resistant to X4- or R5-tropic virus in vitro, we activated CD4 +T cells from 131 EC/VC and 35 Ctrl, and then infected them overnight using single cycle HIV encoding YFP and pseudotyped with either X4, R5, or VSV G glycoprotein and analyzed cells by flow cytometry 72 hr later. We observed relative resistance to R5-tropic HIV in CD4 +T cells from EC/VCs (% cells eYFP+: EC/VC 0.99 ± 0.79) compared to Ctrl (1.22 ± 0.66; p=0.01; Figure 1—figure supplement 1A, left panel). In contrast, we saw equal susceptibility to X4-tropic HIV (Ctrl 3.08 ± 1.32; EC/VCs 3.33 ± 1.91) and VSV G pseudoviral particles among the groups (Ctrl 34.8 ± 9.36; EC/VCs 30.66 ± 11.22; Figure 1—figure supplement 1B). Post-hoc analysis identified 16% of EC/VCs (21 of 131 analyzed, termed ECr/VCr) with resistance specific to R5-tropic HIV, compared to remaining EC/VC subjects and healthy Ctrl, with no resistance observed (% cells YFP+: Ctrl 1.22 ± 0.66; EC/VC 1.2 ± 0.77; ECr/VCr 0.2 ± 0.07; p<0.0001; Figure 1—figure supplement 1A, right panel), pointing to an early block of infection in a subset of EC/VCs. These data confirmed that the phenotype was specific to EC/VC, not observed in Ctrl. To confirm the R5 resistance phenotype, we then selected ECr/VCr samples for further study, based upon % eYFP +cells being lower than any value in Ctrl group. We retested these ECr/VCr samples prospectively in at least triplicate, using two R5-tropic envelopes, in comparison to a subset of EC/VC (n = 38, selected based upon sample availability and representativeness of the population from the initial test) and Ctrl (n = 35). Our results redemonstrated R5 resistance, as manifested as a 5-fold reduction in CD4 +T cell susceptibility to YU2-pseudotyped virus, on average, in ECr/VCr compared to remaining EC/VC and Ctrl (Figure 1A, % cells eYFP+: Ctrl 1.05 ± 0.81; EC/VC 1.09 ± 0.75; ECr/VCr 0.20 ± 0.16; p<0.0001). Similar results were observed using ADA-pseudotyped virus (% cells YFP+: Ctrl 1.27 ± 0.5; EC/VC 1.13 ± 0.75; ECr/VCr 0.34 ± 0.16; p<0.0001, Figure 1A). Similar to the post-hoc analysis, in this prospective testing we observed equal susceptibility to X4-tropic and VSV-G-pseudotyped HIV particles in activated CD4 +T cells from ECr/VCr compared to EC/VC without the phenotype and Ctrl (Figure 1B). In multiple cases, based upon sample and subject availability, we retested ECr/VCr CD4 +T cells isolated from independent, separate blood draws and observed consistent results (i.e., R5 resistance was seen repeatedly, not just on a single blood draw). Taken together, these data identify a subset of EC/VCs with intrinsic, reproducible resistance specific to R5-tropic virus in T cells, a phenotype only observed in EC/VC. From the 21 EC/VCs with the resistance phenotype, 43% were ECs (9/21) and 57% VCs (12/21). Figure 1—figure supplement 2A shows virus infectivity data for all 21 ECr/VCr, with Figure 1—figure supplement 2B demonstrating absence of correlation between R5 and X4 and R5 and VSV G susceptibility.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/44360/elife-44360-fig1-v1.jpg)
+
+**Figure 1.:** (A) Five-fold resistance to R5-tropic viruses in 16% of EC/VC (ECr/VCr) infected using replication defective HIV-cycT1-IRES-eYFP (CIY) with R5-tropic envelopes YU2 and ADA. A > 95% power was determined based on comparisons of means using PASS statistical software between ECr/VCr and all other groups (Ctrl and EC/VC). (B) Equivalent susceptibility to both X4-tropic (NL4-3) and VSV G pseudoviral particles in ECr/VCr. A and B are pooled results from different experiments with samples tested at least in triplicate (Ctrl n = 35, EC/VC n = 38, representative from the initial population (Figure 1—figure supplement 1) and selected based upon specimen availability, and ECr/VCr (n = 21). (C) Comparable levels of chemokines (MIP-1α and MIP-1β) in cell culture supernatants from activated CD4 +T cells, measured by ELISA. (D) CD4 +T cells from Ctrl were exposed to cell culture supernatants from activated T cells of Ctrl and EC/VC with or without the resistance phenotype, in the presence of HIV particles pseudotyped with YU2 or VSV G. C and D are pooled results from different experiments with n = 10 (Ctrl and EC/VCs) and n = 21 (ECr/VCr). Shown are individual values with Means ± Standard Deviation (SD). Data were analyzed by using the Kruskal-Wallis test and Dunn’s multiple-comparison test. *p<0.05; ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44360/elife-44360-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Left panel shows relative resistance to R5-tropic viruses in EC/VC compared to Ctrl, infected with replication-defective HIV-CIY pseudotyped with R5-tropic envelope ADA. EC/VC (n = 131) and Ctrl (n = 35) tested in duplicate (80% power was determined based on comparisons between groups). Right panel shows resistance to R5-tropic viruses in a subset of EC/VC (ECr/VCr, 21/131 or 16%) compared to Ctrl after separated out from the remaining EC/VC. These 21 ECr/VCr were identified as resistant based upon the % eYFP +cells being lower than that of the Ctrl group and confirmed after additional retesting using two R5 envelopes in triplicate (data shown in Figure 1). (B) Equivalent susceptibility to both VSV G and X4-tropic (NL4-3) pseudoviral particles between groups in all samples analyzed. Data were analyzed by using the Kruskal-Wallis test and Dunn’s multiple-comparison test. **p<0.01; ***p<0.001; ****p<0.0001. (C) Clinical data in EC/VC population. Comparable Viral Load (VL) and CD4 +T cell counts between EC and VC with or without the resistance phenotype to R5-tropic viruses. Age (years) at the time of the diagnosis to HIV between EC/VC (n = 109) and ECr/VCr (n = 21). Data presented as box and whisker plots. Statistical analysis was performed by using the U-Mann Whitney test; *p<0.05.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44360/elife-44360-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Susceptibility to R5-, X4-, and pan-tropic virus in all 21 ECr/VCr, using single cycle infection. (B) Virus susceptibility correlations in all 21 ECr/VCr. (C) Replication kinetics using replication-competent HIV-NL4-3ΔR1 and pNL-BaL. Supernatants from CD4 +T cells infected with HIV-NL4-3ΔR1 (0.01 ml) and pNL-Bal (0.001 ml) were harvested every other day for 21 days and use to infect TZM-bl targets. Shown is a representative experiment out of 2 performed, with n = 2 per group, tested in triplicate and quantified as Relative Light Units (RLU) using luciferase assay with Means ± SD. ECr/VCr T cells were still fully viable at the end of the 3 week period, with no evidence of cytotoxicity. Differences were analyzed using AUC, with Means ± SD.
 
 We next analyzed whether any clinical characteristics (VL, CD4 +T cell count, and age) were associated with the R5 resistance phenotype in the EC/VC population. Comparable VLs and CD4 +T cell counts were observed in both groups (Figure 1—figure supplement 1C). However, ECr/VCr were significantly younger than EC/VC (43 ± 14 vs 49 ± 12 years; p=0.047; Figure 1—figure supplement 1C). Analyzed by gender, most of the subjects in both groups were men (EC/VC 78% or 85/109% and 86% or 18/21 in ECr/VCr).
 
@@ -58,9 +70,17 @@ Previous reports have suggested that expression of HLA-B*27/HLA-B*57 and other s
 
 We next investigated whether the ECr/VCr CD4 +T cells were also relatively resistant to replication-competent virus. Activated CD4 +T cells from EC/VC, ECr/VCr (based upon prior experiments) and Ctrl (n = 2 per group, tested in triplicate, selected based upon cell availability) were infected with X4- and R5-tropic viruses, at low MOI. Viruses were prepared in 293 T cells by co-transfection with VSV G expression plasmid to facilitate the first round of replication. Replication of NL4-3 (X4) and BaL (R5) was quantified using TZMbl cells as a reporter, measuring firefly luciferase activity over a period of 3 weeks. We observed significantly reduced replication of BaL in ECr/VCr, compared to EC/VC and Ctrl over the 21 days analyzed (Mean ±SD Area Under Curve [AUC] R5: Ctrl 177828 ± 53736; EC/VC 125548 ± 31577; ECr/VCr 62006 ± 4179; Figure 1—figure supplement 2C, right panel). The absence of differences in viral replication at day three post-infection may be explained by the addition of VSV G as described above. Infection using NL4-3 also showed significant resistance in all EC/VC (AUCs: Ctrl 19679 ± 12897; EC/VC 5880 ± 1319; ECr/VCr 2125 ± 60.1, Figure 1—figure supplement 2C, left panel). The fact that EC/VC (with or without the R5-resistance phenotype) had reduced infectivity, with virtual absence of X4 replication in ECr/VCr, suggests a more complex mechanism of virologic resistance that should be further explored.
 
-## RNA-Seq identifies several genes down-regulated in EC/VC with R5-tropic resistance
+### RNA-Seq identifies several genes down-regulated in EC/VC with R5-tropic resistance
 
 To further investigate the mechanism of R5-tropic resistance in early infection, we next performed RNA-Seq to identify genes that were significantly up- or down-regulated in activated CD4 +T cells from ECr/VCr compared to Ctrl. We examined RNA levels in activated T cells because those are the cells in which we observed the R5 resistance phenotype (unactivated T cells are extremely difficult to infect). Several of the differentially expressed genes were located on chromosome 3 (chr 3), including ccr1, ccr2, and ccr5, which were significantly down-regulated in ECr/VCr (corrected p values=0.005). To quantify mRNA levels of these genes in ECr/VCr, we performed RT-qPCR in ECr/VCr, and compared results to remaining EC/VCs and Ctrl. These data confirmed a 7-fold decreased expression in ccr2 mRNA levels, on average, in T cells of ECr/VCr (0.13 ± 0.09) compared to those of EC/VC without the resistance phenotype (0.89 ± 0.41; p<0.0001) and Ctrl (0.91 ± 0.72; p<0.0001; Figure 2A). Similarly, we observed down-regulation of ccr5 RNA in T cells of ECr/VCr (0.076 ± 0.047; 9-fold decrease on average) compared to those of the other groups (EC/VC 0.79 ± 0.63 and Ctrl 0.68 ± 0.63; p<0.0001, Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/44360/elife-44360-fig2-v1.jpg)
+
+**Figure 2.:** (A) Decreased ccr2/ccr5 RNA levels in activated CD4 +T cells from EC/VCs with the resistance phenotype, with comparable cxcr4 and cd4 RNA levels in all groups. Shown are individual values with Means ± SD. Pooled results from different experiments are shown with representative samples per group, n = 19 (Ctrl), n = 8 (EC/VC) and n = 21 (ECr/VCr) per group. (B) Positive correlation between ccr2 and ccr5 RNA levels in activated CD4 +T cells. ccr5 RNA levels positively correlated with % of YFP +infected cells by single cycle assay using R5-tropic viruses but not with cd4 or cxcr4 (Figure 2—figure supplement 1A). (C) Decreased RNA levels in multiple chromosomal 3p21 genes in T cells of HIV +infected individuals (Figure 2—figure supplement 1C). Statistical analysis performed using Kruskal-Wallis test and Dunn’s multiple-comparison test. r value calculated using the non-parametric Spearman correlation test. Graphs show individual values with Means ± SD. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44360/elife-44360-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Correlation between ccr2 and ccr5 with cd4 or cxcr4 RNA levels in activated CD4 +T cells. (B) Positive correlation observed between ccr2/ccr5 RNA and cell surface protein levels and CD69 +cell surface expression, with no correlation versus cxcr4 RNA levels. Values obtained using the non-parametric Spearman correlation test. **p<0.01 (CCR2) and ***p<0.001 or *p<0.05 (CCR5). (C) Fold-change in ECr CD4 +T cell RNA levels, normalized to that of Ctrl, of genes in ~1 Mb region of chr 3p21. Each gene is plotted as the midpoint of the transcriptional unit or TU. RTP3, TDGF1, SLC6A20 and XCR1 are not included because RPKM values were too low for statistical analysis. * indicates statistically significant genes. (D) loc102724291 RNA levels in activated CD4 +T cells from ECr/VCr compared EC/VC and Ctrl, using two different qPCR primer pairs: (i) exon 1–2, centromeric to ccr5, (ii) exon 3, within intron 2 of ccr5. Shown are individual values with Means ± SD. Statistical analysis was performed by using Kruskal-Wallis with Dunn’s multiple-comparison test. **p<0.01.
 
 Conversely, we did not observe significant differences between groups in cxcr4 and cd4 RNA levels (Figure 2A). Interestingly, ccr5 RNA highly correlated with ccr2 RNA levels (r = 0.88; p<0.0001, Figure 2B), suggesting a common regulatory mechanism for both genes in all subjects. Moreover, ccr5 mRNA levels were positively correlated with transduction by R5-tropic virus (r = 0.71; p<0.0001, Figure 2B), indicating that subjects whose CD4 +T cells were more resistant to R5-tropic virus had lower ccr5 mRNA expression. However, there was no correlation between ccr2 and cd4 or cxcr4 RNA levels, nor between ccr5 and cd4 or cxcr4 RNA levels (Figure 2—figure supplement 1A).
 
@@ -68,9 +88,17 @@ Because several genes near ccr2/ccr5 appeared to be down-regulated, we analyzed 
 
 LOC102724291 is a poorly characterized long non-coding RNA (lncRNA) of unknown function, present on chr3, antisense to ccr5 and ccr2. To ascertain if loc102724291 was involved in ccr2/ccr5 RNA down-regulation, we quantified its expression in CD4 +T cells by RT-qPCR. Comparable levels were observed between ECr/VCr and EC/VCs without the phenotype using a primer pair within exons 1 and 2. We did observe, however, lower lncRNA levels using a primer pair within exon 3, within intron 2 of ccr5 (Figure 2—figure supplement 1D), in CD4 +T cells of ECr/VCr compared to other groups. The absence of a negative correlation between ccr2 or ccr5 and loc102724291 makes it unlikely that an antisense effect from this lncRNA is responsible for the down-regulation of ccr2/ccr5 in ECr/VCr and is more consistent with loc102724291 also being down-regulated by a more global mechanism, similar to other genes in the region.
 
-## Lower CCR2 and CCR5 surface expression in EC/VC with the resistance phenotype
+### Lower CCR2 and CCR5 surface expression in EC/VC with the resistance phenotype
 
 We confirmed the activation status of CD4 +T cells by analyzing CD69 and CD25 up-regulation by flow cytometry, cell-surface markers of early and late cell activation, respectively, after CD4 +T cell activation with aCD3/CD28 for three days. Results showed a strong late activation of CD4 +T cells in all groups, with comparable CD25 levels in ECr/VCr and remaining EC/VC and Ctrl groups (Figure 3A). However, we observed lower levels of CD69 (%+) in activated CD4 +T cells from ECr/VCr (22.26 ± 6.54) compared to EC/VC without the resistance phenotype (30.59 ± 5.15; p=0.011) and Ctrl (32.12 ± 4.15; p=0.0003; Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/44360/elife-44360-fig3-v1.jpg)
+
+**Figure 3.:** (A) Reduced CD69, but not CD25 levels in activated CD4 +T cells from ECr/VCrs. Graph shows representative data N = 13 (Ctrl), n = 9 (EC/VC) and n = 21 (ECr/VCr). (B) Comparable frequencies of naïve CD45RA + and memory CD45RO + T cells after anti-CD3/CD28 activation between groups (n = 2 per group). (C) CCR5 and CCR2 cell surface levels measured by ﬂow cytometry are reduced in freshly thawed (NS, non-stimulated) and activated CD4 +T cells (anti-CD3/28) from ECr/VCr. (D) Percentages of CCR5 +in effector memory (EM) and central memory (CM) compartments of activated CD4 +T cells (n = 2 per group). (E) Reduced CCR2 and CCR5 cell surface levels, expressed as MFI, in activated (anti-CD3/28) CD4 +T cells from ECr/VCr. Data in D-E shown pooled results from different experiments with n = 10 (Ctrl and EC/VC) and n = 19 (ECr/VCr). (F) Positive correlation between CCR2 and CCR5 cell surface levels. (G) Positive correlation observed between ccr2/ccr5 RNA levels and cell surface expression. Values obtained using the non-parametric Spearman correlation test. *p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44360/elife-44360-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/44360/elife-44360-fig3-figsupp2-v1.jpg)
 
 It is important to note that we infected the T cells 72 hr after activation, not at 24 hr, and that the resistance phenotype was specific to R5 virus, with equal susceptibility to X4- and VSV G-pseudotyped particles. In fact, positive correlations were observed between ccr5 mRNA or cell surface expression levels and % CD69 +cells, confirming that lower ccr5 expression, but not cxcr4, was observed in CD4 +T cells with lower levels of the early activation marker (Figure 2—figure supplement 1B). In select samples we also analyzed the percentage of memory T cells after anti-CD3/CD28 co-stimulation. Results showed a high percentage of CD45RO + memory T cells of between 60–80%, and low percentage of naïve CD45RA + T cells (~10%), with no differences between groups (Figure 3B). These data, taken together, confirm efficient activation of CD4 +T cells in all subject groups studied, with a high percentage of memory T cells after activation.
 
@@ -78,7 +106,7 @@ To determine whether the resistance phenotype was associated with an alteration 
 
 We then investigated whether activated CD4 +T cells from individuals with lower ccr2/ccr5 RNA levels also had lower surface expression of both CCR2 and CCR5. We saw a positive correlation between CCR2 protein expression and ccr2 RNA levels (r = 0.45; p=0.02, Figure 3G). Similar results were observed with CCR5 (r = 0.36; p=0.01), suggesting that down-regulation of ccr5 RNA was responsible for lower cell surface expression and consequent resistance to R5 virus in ECr/VCr CD4 +T cells.
 
-## Increased susceptibility to R5-tropic virus infection in activated CD4 +T cells after overexpression of CCR5
+### Increased susceptibility to R5-tropic virus infection in activated CD4 +T cells after overexpression of CCR5
 
 To confirm that the R5-tropic resistance in ECr/VCr CD4 +T cells was due to down-regulation of CCR5, activated CD4 +T cells from ECr/VCr, EC/VC, and Ctrl were infected with R5-tropic pseudotyped HIV particles after cell transduction using pan-tropic pseudotyped viral particles encoding both CCR5 and eYFP. First, we observed an increase in the percentage of CCR5 +cells in ECr/VCr transduced with pHIV-CCR5-IRES-YFP (VSV G) (8.09 ± 3.86%), compared to vector encoding YFP alone (3.16 ± 1.14%; p=0.032, Figure 4A). These CD4 +T cells were more susceptible than those of Ctrl to subsequent infection using two different R5-tropic viruses (YU2: Ctrl 1.15 ± 0.05% vs ECr/VCr 2.74 ± 1.11%; p=0.009; ADA: Ctrl 0.70 ± 0.04% vs ECr/VCr 1.79 ± 1.3%; p=0.008).
 
@@ -98,27 +126,35 @@ Other investigators have attempted to determine with limited success whether EC/
 
 Additionally, we did not observe significant differences in R5-tropic virus susceptibility of EC/VC CD4 +T cells after PMA/ionomycin stimulation (Figure 5B), although T cell susceptibility trended lower in ECr/VCr compared to Ctrl and EC/VCs after PHA stimulation. Next, we analyzed ccr2 and ccr5 transcript levels by qPCR in the same samples after both experimental conditions and results were comparable between groups (Figure 5C). Similarly, no differences were found in CCR5 cell surface expression between groups after both non-specific stimulations (Figure 5D). Our data thus suggest that the R5-tropic resistance phenotype in ECr/VCr is limited to CD4 +T cells activated by anti-CD3/CD28 co-stimulation, which in vitro is the most physiological method of stimulation, short of using cognate antigen and antigen presenting cells.
 
-## Frequencies of Δ32CCR5 and promoter polymorphism in EC/VC with resistant phenotype
+### Frequencies of Δ32CCR5 and promoter polymorphism in EC/VC with resistant phenotype
 
 In order to exclude the possibility that the observed R5-tropic resistance in ECr/VCr was due to the ccr5 promoter polymorphism −2459 A/G (Hladik et al., 2005; Joshi et al., 2017), we analyzed the frequency of those genotypes in our populations. 76.5% of the Ctrls were A/G heterozygotes, with absence of the polymorphism in 23.5% of the Ctrl population. Interestingly, we only found A/G homozygotes in EC/VC population (8.51%). When analyzed as presence vs. absence of the polymorphism, we identified a lower frequency of homo +heterozygotes in EC/VCs (60.64%) compared to Ctrl (p=0.03). Although a significantly lower frequency was also observed in ECr/VCr (52.38%; p=0.04) compared to Ctrl, we did not observe a significant difference between ECr/VCr and remaining EC/VC (p=0.41). Thus, the presence of this known promoter polymorphism does not contribute to the R5 resistance phenotype in the ECr/VCr population.
 
 By PCR and agarose gel electrophoresis we also analyzed the frequencies of Δ32CCR5 in our cohort (Samson et al., 1996; Rappaport et al., 1997), with 14.8% of the Ctrl (4 of 27) being ∆32CCR5 heterozygotes. We did observe a higher frequency of Δ32CCR5 heterozygotes in ECr/VCr (33.33% or 7/21) compared to remaining EC/VCs (18.42%, 14/76; p=0.027), suggesting that the presence of this variant contributes in part to the R5 resistance phenotype observed in ECr/VCr subset.
 
-## ATAC-Seq identifies open chromatin regions in ECr/VCr
+### ATAC-Seq identifies open chromatin regions in ECr/VCr
 
 Given the reduced ccr2/ccr5 RNA levels observed in ECr/VCr, we decided to examine whether there were differences in chromatin accessibility in this region of chromosome 3, inclusive of ccr2 and ccr5 (chr3:45,920,704–46,497,303). DNA libraries were prepared in activated CD4 +T cells from ECr/VCr (n = 4 replicates) and compared to Ctrl samples (n = 4 replicates) and Assay for Transposase Accessible Chromatin with high-throughput sequencing (ATAC-Seq) was performed to quantify differences in open chromatin. Our results identified 64 peaks enriched in ECr/VCr compared to Ctrl (Figure 6A), consistent with ~500 kb of highly accessible chromatin in this region of 3p21 in ECr/VCr patients. We explored a small region including ccr2 and ccr5 (chr3:46,392,331–46,418,348), and we identified more open chromatin in the ccr2- and ccr5-promoter regions in ECr/VCr compared to Ctrl (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/44360/elife-44360-fig6-v1.jpg)
+
+**Figure 6.:** (A) Left panel: ATAC-Seq coverage profiles of region of chr 3p21 (45,920,704-46,497,303) of ECr/VCr CD4 +T cells, compared to those of Ctrl (n = 4 replicates per group). Heat map showing gene TSS aligned, with a window of −250 bp to +250 bp, calculated as a normalized coverage around each TSS. Matrix was divided it into two clusters, based upon Ctrl data. At top is average coverage profile for each of the clusters (cluster one in red and cluster two in green). Right panel: ATAC-Seq peaks of chr 3p21 (46,392,331-46,418,348) of ECr/VCr vs Ctrl visualized using Integrated Genome Browser (IGB), see also Figure 6—figure supplement 1. Green arrows highlight increased peaks near the TSS of both genes, ccr2/ccr5, in ECr/VCr relative to Ctrl. (B–C) ChIP-qPCR, using either Tri-Methyl-Histone H3 (Lys4) (B) or Rpb1 (C) antibodies, with ccr2 and ccr5 DNA quantified by qPCR. Data normalized by the % total input DNA. Shown are Means ± SD (n = 4 and n = 5 per group in B and C, respectively), with statistical analysis performed using Kruskal-Wallis with Dunn’s multiple-comparison test. *p<0.05. (D) Quantitation of mRNA half-lives of indicated genes in activated CD4 +T cells, using Act D as a transcription inhibitor. T cells were incubated with Act D and harvested (from time 0 to 8 hr). RNA was extracted, and RNA levels quantified by RT-qPCR and half-life calculated using GraphPad PRISM software.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44360/elife-44360-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) ATAC-Seq heat map representation upstream and (B) downstream of ccr5, showing all gene TSS aligned, with a window from −1 kb to +1 kb. The matrix was divided it into three clusters, generated based upon the Ctrl sample data (n = 4 replicates per group). At the top of each heat map is shown the average peak profile for the three clusters. Panels show the actual ATAC-Seq peaks across each region, visualized with the IGB.
 
 We also examined chromatin accessibility both upstream and downstream of this ~500 kb region. The coverage matrices of clusters 1 and 2 (upstream) showed a slight increase in ECr/VCr compared to Ctrl whereas there were no observable differences in the downstream ATAC-Seq peaks (Figure 6—figure supplement 1). These results suggest that the increase in chromatin accessibility is relatively specific to the ~500 kb region encompassing ccr2 and ccr5 in ECr/VCr.
 
 In order to confirm the increased chromatin accessibility in ECr/VCr, we analyzed by ChIP ccr2 and ccr5 DNA levels using Tri-Methyl Histone H3 (Lys4) antibody (H3K4Me3) and qPCR (Figure 6B). We saw a trend towards greater H3K4Me3 levels in ECr/VCr compared to EC/VC and Ctrl, although differences were not significant (ccr5: p=0.42 and p=0.12, respectively). These data, taken together, demonstrate that the down-regulation of ccr2/ccr5 mRNA levels is accompanied by an increase in open chromatin in ECr/VCr in a specific region of 3p21.
 
-## CCR5 transcriptional down-regulation in ECr/VCr
+### CCR5 transcriptional down-regulation in ECr/VCr
 
 To determine whether the down-regulation of ccr2/ccr5 RNA in ECr/VCr was attributable to a decrease in active transcription, we performed ChIP in activated CD4 +T cells using antibodies against Rpb1 CTD, the carboxy terminal domain of the large subunit of RNA polymerase II, followed by qPCR. We observed lower ccr5 DNA levels in chromatin samples from ECr/VCr (0.069 ± 0.02) compared to those of EC/VCs without the resistance phenotype (0.36 ± 0.21; p=0.02) and Ctrl (0.27 ± 0.13; p=0.03; Figure 6C). We also observed comparable results with ccr2, with decreased DNA levels in chromatin samples from ECr/VCr (0.09 ± 0.01) compared to remaining EC/VCs (0.36 ± 0.21; p=0.04) and Ctrl (0.22 ± 0.07; p=0.02). These data are consistent with reduced transcriptional initiation or activity of ccr2/ccr5 in ECr/VCrs compared to remaining EC/VCs and Ctrl.
 
 We next determined whether the differences in ccr2/ccr5 RNA levels were a result of changes in RNA stability. Activated CD4 +T cells were incubated in presence of Actinomycin D for varying lengths of time, RNA isolated, RT-qPCR performed, and RNA half-life calculated from the decay curves for ECr/VCr, Ctrl, and remaining EC/VC populations. We observed comparable half-lives of ccr2, ccr5, and gapdh RNAs in CD4 +T cells from ECr/VCr, Ctrl, and remaining EC/VC groups (Figure 6D), indicating that the down-regulation of ccr2/ccr5 RNA in ECr/VCr was likely a result of differences in transcriptional initiation, rather than due to changes in RNA stability, consistent with the Rpb1 ChIP results above.
 
-## Down-regulation of ccr2/ccr5 RNA levels in family members of an index VC with R5-tropic resistance
+### Down-regulation of ccr2/ccr5 RNA levels in family members of an index VC with R5-tropic resistance
 
 To determine whether there is a hereditary basis associated with R5 resistance, we recruited family members of an index VCr and investigated whether the associated CD4 +T cells had the same in vitro phenotype. Activated CD4 +T cells from several ATL2 family members were infected with pseudotyped viral particles of varying tropisms, and viral susceptibility analyzed by flow cytometry. We observed resistance specific to R5-tropic virus in the T cells of two of three ATL2 family members analyzed, with full susceptibility to X4- and VSV G-pseudotyped HIV (Figure 7A and B).
 
@@ -154,74 +190,413 @@ In conclusion, our data suggest that the R5-tropic resistance phenotype seen in 
 
 ## Materials and methods
 
-## Study subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD3 mouse Monoclonal Antibody (OKT3), PerCP-Cyanine5.5</td>
+      <td>eBioscience</td>
+      <td>Cat # 45-0037-42; RRID: AB_10548513</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD4 mouse Monoclonal Antibody (RPA-T4), APC</td>
+      <td>eBioscience</td>
+      <td>Cat # 17-0049-42; RRID: AB_1272048</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD14 mouse Monoclonal Antibody (61D3), FITC</td>
+      <td>eBioscience</td>
+      <td>Cat # 11-0149-42; RRID: AB_10597597</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD8a mouse Monoclonal Antibody (HIT8a), PE</td>
+      <td>eBioscience</td>
+      <td>Cat # 12-0089-42; RRID: AB_10804039</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD3 mouse Monoclonal Antibody (OKT3), Functional Grade</td>
+      <td>eBioscience</td>
+      <td>Cat # 16-0037-81; RRID: AB_468854</td>
+      <td>10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD28 mouse Monoclonal Antibody (CD28.2), Functional Grade</td>
+      <td>eBioscience</td>
+      <td>Cat # 16-0289-81; RRID: AB_468926</td>
+      <td>4 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD25 mouse Monoclonal Antibody (BC96), PE</td>
+      <td>eBioscience</td>
+      <td>Cat # 12-0259-42; RRID: AB_1659682</td>
+      <td>Dilution (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD69 mouse Monoclonal Antibody (FN50), FITC</td>
+      <td>eBioscience</td>
+      <td>Cat # 11-0699-42; RRID: AB_10853975</td>
+      <td>Dilution (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45RA mouse Monoclonal Antibody (HI100), FITC</td>
+      <td>eBioscience</td>
+      <td>Cat # 11-0458-42; RRID: AB_11219672</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45RO, mouse Monoclonal PE-Cyanine5, clone: UCHL1</td>
+      <td>eBioscience</td>
+      <td>Cat # 15597726; Gene ID: 5788</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human CD195 (CCR5) rat Monoclonal Antibody</td>
+      <td>Biolegend</td>
+      <td>Cat # 313707; RRID: AB_345307</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human CD192 (CCR2) mouse Monoclonal Antibody</td>
+      <td>Biolegend</td>
+      <td>Cat # 357207; AB_2562238</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rpb1 CTD mouse Monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat # 2629; 4H8</td>
+      <td>ChIP (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tri-Methyl-Histone H3-Lysine 4 (H3Lys4) rabbit Monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat # 9727</td>
+      <td>ChIP (1:50)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human IL-2</td>
+      <td>E. coli-derived human IL-2 protein</td>
+      <td>R and D: P60568</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HIV-cycT1-IRES-YFP (HIV-CIY)</td>
+      <td>this paper</td>
+      <td>Sutton lab</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSM-ADA Env</td>
+      <td>this paper</td>
+      <td>Sutton lab</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSRα-YU2 Env</td>
+      <td>this paper</td>
+      <td>Heinrich Gottlinger, UMass Medical Cener</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSRα-NL4-3 Env</td>
+      <td>this paper</td>
+      <td>Heinrich Gottlinger, UMass Medical Cener</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pME-VSV G</td>
+      <td>this paper</td>
+      <td>Sutton lab</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCCL3L1</td>
+      <td>Origene</td>
+      <td>NM_021006.4, NP_066286</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCCL4</td>
+      <td>this paper</td>
+      <td>generated by PCR using pcDNA3/1 + CAT plasmid; Sutton lab</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Vpx-myc-his</td>
+      <td></td>
+      <td>Ned Landau laboratory, NYU Medical Center</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMDL-Chp6</td>
+      <td></td>
+      <td>Ned Landau laboratory, NYU Medical Center</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. Sapiens)</td>
+      <td>HEK 293T</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. Sapiens)</td>
+      <td>GHOST.Hi5</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>NIH-ARP Cat# 3944–343, RRID:CVCL_1E17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. Sapiens)</td>
+      <td>GHOST.CXCR4</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>NIH-ARP Cat# 3685–448, RRID:CVCL_S492</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. Sapiens)</td>
+      <td>TZM-bl cells</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>NIH-ARP Cat# 8129–442, RRID:CVCL_B478</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>ID: 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse MIP-1 alpha (CCL3) ELISA</td>
+      <td>Invitrogen</td>
+      <td>LS885601322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human CCL4 (MIP-1 beta) ELISA</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen 88703476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Ki</td>
+      <td>ThermoFisher</td>
+      <td>ID: 4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy blood and tissue kit</td>
+      <td>Qiagen</td>
+      <td>Cat No./ID: 69504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SimpleChIP enzymatic ChIP kit agarose beads</td>
+      <td>Cell Signaling</td>
+      <td>Cat #9002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MinElute Reaction Cleanup kit</td>
+      <td>Qiagen</td>
+      <td>Cat No./ID: 28204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Transposase mixture</td>
+      <td>Illumina</td>
+      <td>Nextera DNA library prep kit; FC-131–1024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12-myristate 13-acetate</td>
+      <td>Sigma</td>
+      <td>PubChem CID: 27924</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin calcium salt</td>
+      <td>Sigma</td>
+      <td>I3909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Actinomycin D</td>
+      <td>Sigma. From Streptomyces sp</td>
+      <td>Cat # A1410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin</td>
+      <td>Promega</td>
+      <td>G944A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Power SYBR Green PCR Master Mix</td>
+      <td>ThermoFisher</td>
+      <td>Cat # 4367659</td>
+      <td>Commercial reagent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NEBnext PCR master mix</td>
+      <td>New England BioLabs</td>
+      <td>Cat # M0541S</td>
+      <td>Commercial reagent</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CummeRbund</td>
+      <td>R package version 2.24.0</td>
+      <td>DOI: 10.18129/B9.bioc.cummeRbund</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illumina's CASAVA 1.8.2</td>
+      <td>Illumina</td>
+      <td>Ref. 15011197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Study subjects
 
 131 HIV +EC/VC subjects were recruited from Yale New Haven Hospital and other HIV clinics in USA. Inclusion criteria for EC/VCs were HIV seropositivity and plasma VL < 50 (ECs) or 50 < VL < 2000 (VCs) for at least 6–12 months in the absence of ART, except in some special circumstances, as specified (Supplementary file 1). Occasional viral blips were allowed but not virologic escape or clear trends in viremia. Exclusion criteria included contraindication to peripheral phlebotomy and inability to provide informed consent. Clinical characteristics recorded included gender, age, CD4 +T cell count, VL, and year of HIV diagnosis. Also, HIV acquisition risk factor, major comorbidities, and protective HLA alleles data were collected, if known. The study was approved by both the Yale IRB (Yale New Haven Hospital and other Yale-affiliated HIV clinics in Connecticut), and the local IRBs (the SCOPE cohort from UCSF, the Ragon Institute of MGH, MIT and Harvard, and from Veterans Medical Center HIV clinics from Atlanta and Dallas) and informed, written consent was obtained from all subjects.
 
 Anonymized, leukocyte-enriched fractions of peripheral blood from 35 normal, healthy donors were obtained and used as controls. Three family members (FM) of an Index VC (Atl2) were enrolled and whole blood obtained by peripheral phlebotomy. Based upon self-report, all FM included in the study were HIV seronegative. CFAR relies on self-reporting with respect to HIV-uninfected cases. Our IRB protocol did not allow us to perform HIV testing on FM because of privacy concerns.
 
-## Peripheral blood mononuclear cell collection and CD4 +T cell purification
+### Peripheral blood mononuclear cell collection and CD4 +T cell purification
 
 Mononuclear cells were obtained after Ficoll-Paque PLUS (GE Healthcare Life Sciences, Piscataway, NJ) centrifugation of leukocyte-enriched fractions of whole blood. CD4 +T cells were purified by positive selection, using anti-CD4 magnetic microbeads (Miltenyi Biotech, San Diego, CA) following the manufacturers’ recommendations. The purity of the CD4 +T cells was confirmed by flow cytometric analysis using anti-human CD3-PerCP-Cyanine5.5 (clone OKT3; eBioscience, San Diego, CA) and CD4-APC (clone RPA-T4; eBioscience) antibodies. Antibodies against human CD14 and CD8 were included to confirm absence of contaminating monocytes and CD8 +T cells (anti human CD14-FITC, clone 61D3; anti-human CD8a-PE, clone HIT8a; eBioscience). Purity of CD4 +T cells was >95%. The remaining cells were predominantly CD4-low monocytes with <1% contaminating CD8 +T cells. T cells were resuspended in staining buffer (2% FBS in PBS) on ice for 30 min, washed, and then placed in IC fixation buffer (eBioscience) on ice for 10 min. Cells were washed, resuspended in staining buffer, and analyzed by flow cytometry (LSRII, BD; Franklin Lakes, NJ). Data were analyzed using FlowJo software (version 10.1 Ashland, OR).
 
-## CD4 +T cell activation and staining
+### CD4 +T cell activation and staining
 
 CD4 +T cells were activated for 72 hr, using tissue culture plates pre-coated with 1 µg/mL anti-CD3 (clone OKT3; eBioscience) in the presence of 2 µg/mL soluble anti-CD28 (clone 28.2; eBioscience) and 100IU/mL IL-2 (recombinant, R and D Systems, Minneapolis, MN). To check activation status, activated CD4 +T cells were analyzed by light microscopy to confirm refractility and aggregation. The percentage of activated cells was calculated by flow cytometry as above, using anti-human CD25-PE (clone BC96) and CD69-FITC (clone FN50; eBioscience) antibodies. Percentage of naïve and memory CD4 +T cells was analyzed using anti-human CD45RA-FITC (clone HI100) and CD45RO-PeCy5 (clone UCHL1; eBioscience), respectively. To differentiate CM from EM T cells, activated CD4 +T cells were stained with CD45RO-PeCy5 and CD27-FITC (clone M-T271; BD) and analyzed by flow cytometry. To assess CCR2 and CCR5 cell surface levels, non-activated and activated CD4 +T cells were stained for 30 min with fluorescently labeled antibodies against human CD195-PE (CCR5; clone HEK/1/85a; Biolegend, San Diego, CA) or CD195-APC (clone 3A9; BD), and CD192-APC (CCR2; clone K036C2; Biolegend). PE-rat IgG2a, k (clone RTK2758) and APC-mouse IgG2a, k (clone MOPC-173) antibodies were used as isotype controls (Biolegend). Cells were fixed, resuspended in 2% FBS in PBS, and analyzed by flow cytometry as percentage of positive cells and as MFI.
 
 Alternatively, T cells were activated using 1 mg/ml phytohaemagglutinin (PHA; Sigma-Aldrich, St. Louis, MO), or 10 ng/ml PMA (Sigma) plus 500 ng/ml ionomycin (Sigma) for 72 or 48 hr, respectively, in the presence of 100IU/ml IL-2.
 
-## Cell transfection, virus production and single cycle HIV infection
+### Cell transfection, virus production and single cycle HIV infection
 
 Pseudotyped lentiviral particles were produced by transient transfection of 293 T cells using the calcium phosphate method and the following plasmids: HIV-cycT1-IRES-YFP (HIV-CIY) as packaging/transfer vector, pSM-ADA Env and pSRα-YU2 Env (both R5-tropic), and pSRα-NL4-3 Env (X4-tropic), with pME-VSV G (pan-tropic control). Viral particles were harvested 72 hr after transfection and frozen after confirming the efficiency of the transfection by flow cytometry and fluorescence microscope observation. Vector supernatants were tested on GHOST HI5 (R5-tropic) or GHOST CXCR4 (X4-tropic) cells by end-point dilution and also by flow cytometry, with a range of infectivity between 2.5 × 105 U/ml to 3.0 × 106 U/ml. VSV G pseudotyped particles were used as positive control, with an infectivity of ~2.5×107 U/ml. For normalization purposes, for each pseudotyped virus the same amount of IU was used to infect activated CD4 +T cells in the same total volume and plate format by spinoculation at 1800 rpm for 30 min, and at 72 hr percentage of YFP+T cells was quantified by flow cytometry.
 
-## HIV replication-competent assay
+### HIV replication-competent assay
 
 1 × 105 activated CD4 +T cells (anti-CD3/CD28) were infected in triplicate with 0.001 ml of pNL-BaL or 0.01 ml of HIV-NL4-3ΔR1, in the presence of IL-2ample l of PBS and lysis in 201 CD28)U using Luciferase assay.se to infect TzmBL cells . Both of these viruses were prepared by plasmid co-transfection of 293 T cells with pME VSV G, to facilitate initial rounds of viral replication. On alternate days post-infection (from day 1 to 21), supernatant was removed, centrifuged, and used to infect 10,000 TZM-bl cells (obtained from the NIH AIDS Reagent Program). Reporter cells were harvested 72 hr post-infection, washed with 0.5 ml of ost-infection, akes, NJ). PBS and lysed in 0.2 ml of lysis buffer (25 mM Tris-phosphate (pH 7.8), 2 mM DTT, 2 mM 1,2-diaminocyclohexane-N,N,N´,N´-tetraacetic acid, 10% glycerol, and 1% Triton X-100). FFLUC assay was performed by incubating 0.1 ml of lysate with 0.1 ml of assay buffer (25 mM Gly-Gly, 15 mM potasium phosphate pH 7.8, 15 mM magnesium sulfate, 4 mM EGTA, 2 mM ATP and 1 mM DTT) and 0.015 ml Luciferin solution (0.2 mM, Sigma). Bioluminescence was immediately measured in a Gen5 (BioTek) Instrument (Winooski, VT).
 
-## Enzyme-linked immunosorbent assays and conditioned media transfer
+### Enzyme-linked immunosorbent assays and conditioned media transfer
 
 CD4 +T cells were activated for 3 days with anti-CD3/CD28 in presence of IL-2 and culture supernatants were harvested and frozen at −80 degrees. Human MIP-1α (CCL3) and MIP-1β (CCL4) instant ELISA kits (eBioscience) were used to measure chemokine levels in culture supernatants, according to the manufacturer’s instructions. Media transfer experiments were performed to investigate whether soluble factors were responsible for the inhibition of HIV replication. Activated CD4 +T cells from healthy controls were incubated in presence of supernatant from activated CD4 +T cells from EC/VCs and Ctrl and T cells were then infected with different pseudotyped HIV particles. As control, we included supernatants from 293 T cells transfected with the following plasmids: (i) pCCL3L1 encoding MIP1α (Origene, Rockville, MD); (ii) pCCL4 encoding MIP1β (generated by PCR-amplifying the ccl4 coding sequence from human cDNA and ligating the product into pcDNA3/1 + CAT plasmid). After 30 min of incubation with culture supernatant, cells were infected with pseudotyped HIV particles. T cells were harvested after three days and infectivity was analyzed by flow cytometry for YFP conferred by virus infection.
 
-## RNA-Seq
+### RNA-Seq
 
 High quality RNA was isolated from 1 × 106 activated CD4 +T cells (aCD3/CD28) using the RNeasy Mini kit (Qiagen, Germantown, MD). RNA integrity was verified by running an Agilent Bioanalyzer gel. For the RNAseq library preparation, mRNA was purified from total RNA with oligo-dT beads and sheared by incubation at 94 degrees. Following first-strand synthesis with random primers, second strand synthesis was performed with dUTP for generating strand-specific sequencing libraries. The cDNA library was then end-repaired, and A-tailed, adapters ligated, and second-strand digestion was performed by U-DNA-Glycosylase. Indexed libraries that meet appropriate cut-offs were quantified by qRT-PCR and insert size distribution determined with the LabChip GX or Agilent Bioanalyzer. Samples were sequenced using 75 bp single or paired-end sequencing on an Illumina HiSeq 2500 according to Illumina protocols. Signal intensities were converted to individual base calls during a run using the system's Real Time Analysis software. Multiplexing and alignment to the human genome was performed using Illumina's CASAVA 1.8.2 software. DNA sequence data generated were stored in FASTQ format and quality control was performed using FastQC version 0.10.1. Quality-filtered reads (low quality reads <20 were removed) were aligned to sequences of the human genome (hg19) downloaded from Illumina's iGenome resource (Illumina, San Diego, CA), as previously described (Garber et al., 2011). Reads were analyzed using Cuffdiff (Trapnell et al., 2012) in order to allow estimation of differential gene expression using functions of the R package ‘cummeRbund’.
 
-## Reverse transcription and real time quantitative PCR
+### Reverse transcription and real time quantitative PCR
 
 RNA levels of ccr2, ccr5, cxcr4, cd4, ccr1, ccr3, fyco1, cxcr6 and loc102724297 were measured by real time quantitative PCR (RT-qPCR). Total RNA was extracted from activated CD4 +T cells using the RNeasy mini kit (Qiagen). A260/280 was determined to confirm the RNA was of high quality, and 1 μg was used for first-strand complementary DNA synthesis using High Capacity cDNA Transcription Kit (Life Technologies; Warrington, UK). Quantitative RT-PCR was performed on an Applied Biosystems 7500 Fast Real-Time PCR System using Power SYBR Green PCR Master Mix (Life Technologies) and the following primers:
 
 For relative quantification, we compared the amount of target to the values obtained for gapdh as a normalization control. Data obtained were compared to a standard curve generated by serial dilution of a template complementary DNA and expressed as target gene:gapdh ratios.
 
-## Overexpression of CCR5 in activated CD4+ T cells and single-cycle assay
+### Overexpression of CCR5 in activated CD4+ T cells and single-cycle assay
 
 To confirm that the R5-resistance to infection in EC/VC was due to down-regulation of CCR5, we overexpressed CCR5 in EC/VC T cells with R5-tropic resistance in comparison to those of EC/VC without the phenotype and Ctrl, and those T cells were then infected with HIV pseudotyped particles to determine whether they now had increased susceptibility to R5 virus. CD4+ T cells activated by anti-CD3/CD28 co-stimulation were first transduced with VSV G-pseudotyped HIV vector encoding both CCR5 and YFP (pHIV-CCR5-IRES-YFP) or YFP alone (HIV-IRES-YFP). T cells were then infected with an HIV vector encoding mRFP and pseudotyped with either R5 Envelopes or VSV G. After 72 hr, cells were analyzed by flow cytometry to quantify the percentage of double positive cells (YFP+/mRFP+), normalized to HIV-IRES-YFP transduction results.
 
-## CCR5∆32 and promoter polymorphism detection by PCR
+### CCR5∆32 and promoter polymorphism detection by PCR
 
 Genomic DNA extracted from mononuclear cells was purified using DNeasy blood and tissue kit (Qiagen). CCR5 genotype (∆32 vs. WT) was determined by agarose gel electrophoresis following PCR using the following primers: CCR5 ∆32 F:5’-ATAGGTACCTGGCTGTCGTCCAT-3′; CCR5 ∆32 R:5′-GATAGTCATCTTGGGGCTGGT-3′ (de Roda Husman et al., 1997). Promoter polymorphism A/G −2459CCR5 was performed by restriction fragment length polymorphism analysis as previously described (McDermott et al., 1998), using the following primers CCR5 2459 F:5'-CCGTGAGCCCATAGTTAAAACTC-3'; CCR5 2459 R:5'-CACAGGGCTTTTCAACAGTAAGG-3'. PCR products were electrophoresed on a 2% agarose gel and genotypes were determined by visual inspection of ethidium bromide stained banding pattern.
 
-## Measurement of mRNA stability
+### Measurement of mRNA stability
 
 CD4 +T cells activated by anti-CD3/CD28 co-stimulation were treated with 5 µg/ml Actinomycin D (Sigma) for varying lengths of time. ccr2, ccr5, and gapdh mRNA levels were quantified at each time point by RT-qPCR using SYBR Green. mRNA decay and half-lives were calculated using a time-point standard curve.
 
-## ATAC-Seq
+### ATAC-Seq
 
 ATAC-Seq was performed as previously described (Buenrostro et al., 2015), with some modifications. CD4 +T cells were activated with anti-CD3/CD28 in presence of IL-2 for 3 days. 50,000 cells were lysed and transpositions were performed using transposase mixture (Nextera DNA library prep kit, Illumina), supplemented with 0.01% digitonin (Promega; Madison, WI). Transposition reactions were incubated for 30 min at 37°C in a ThermoMixer (Eppendorf) with agitation at 300 rpm. DNA was purified using the MinElute Reaction Cleanup kit (Qiagen), and libraries amplified using NEBnext PCR master mix with the following primers:
 
 Libraries were quantified using RT-qPCR prior to sequencing. All Fast-ATAC libraries were paired-end sequenced, 75 bp using a HiSeq2500 instrument. Quality of FASTQ files was performed using FASTX trimmer. More than 50 million reads were mapped, with <10% mapped, on average, to the mitochondrial genome. The reads were aligned to the hg19 (UCSC) version using Burrows-Wheeler Aligner (BWA-MEM). Peaks were called using MACS2 (Zhang et al., 2008) peak-caller, and the reads from input DNA sample were used as control. Visualization of the peaks was done using R Software.
 
-## Chromatin immunoprecipitation-qPCR
+### Chromatin immunoprecipitation-qPCR
 
 Chromatin immunoprecipitation (ChIP) was performed using SimpleChIP enzymatic ChIP kit agarose beads (Cell Signaling) according to the manufacturer’s protocol. Three million CD4 +T cells were activated for 3 days with anti-CD3/CD28. Cells were fixed, and chromatin was sonicated after digestion with micrococcal nuclease. IP was performed with anti-Rpb1 CTD (4H8; Cell Signaling, #2629) or anti-Tri-Methyl-Histone H3-Lysine 4 (H3Lys4) mouse monoclonal antibody (Cell Signaling, #9727), with Histone H3 XP and rabbit IgG serving as positive and negative controls, respectively. DNA was purified by spin column, measured, and amplified by RT-qPCR to quantify ccr2 and ccr5 DNA. Primers for gapdh were used as a control.
 
-## Generation of human monocyte-derived macrophages and infectivity assays
+#### Generation of human monocyte-derived macrophages and infectivity assays
 
 Mononuclear cells were obtained via peripheral phlebotomy and Ficoll-Paque density gradient centrifugation. Monocytes were purified using anti-human CD14 +microbeads (Miltenyi). Cell purity was confirmed by flow cytometry using anti-CD14-FITC antibody (eBoscience). To differentiate monocytes to macrophages, monocytes were cultured for 7 days in RPMI 1640 supplemented with 10% FBS and 10 ng/ml M-CSF (eBioscience), adding fresh growth factor every 2 days. CCR2 and CCR5 cell surface expression was assessed by FACS analysis. Macrophages were then infected using HIV-CIY prepared with Vpx-myc-his and pMDL-Chp6 (kind gifts of Ned Landau, NYU Medical Center), pseudotyped with either R5 Envelope or VSV G. Macrophages were analyzed by flow cytometry after 72 hr to determine infection efficiency.
 
-## Cell lines
+### Cell lines
 
 HEK 293 T cells were originally obtained from ATCC and authenticated by transfection testing in vitro, their gross morphology, resistance to 1 mg/ml G418, susceptibility to first generation adenoviral vectors, and growth characteristics. GHOST.Hi5 and GHOST.CXCR4 cells were obtained from the NIH AIDS Reagent Program. Their identity was authenticated by gross morphology, growth characteristics, expression of eGFP after infection with HIV of the appropriate tropism, confirmation of CCR5 (GHOST.Hi5) and CXCR4 (GHOST.CXCR4) cell surface expression by flow cytometry, and also testing for CD4 expression (both lines). TZM-bl cells were also obtained from the NIH AIDS Reagent Program and authenticated by gross morphology and growth characteristics, cell surface expression of both co-receptors and CD4 by flow cytometry, and susceptibility in vitro to HIV, with readout being both FFLUC activity in infected cell lysates and lacZ expression in fixed cells, the latter using X-Gal. All cell lines were tested to confirm absence of mycoplasma contamination.
 
-## Statistics
+### Statistics
 
 Correlations between mRNA and cell surface expression levels, and percentage of infected CD4 +T cells were assessed by Spearman´s test. Statistical differences between groups were determined using Mann-Whitney U test for two independent samples or one-way ANOVA using Kruskal-Wallis non-parametric test, as required. Frequencies of HLA alleles and presence of polymorphisms were compared between groups using Chi-Square analysis. Power calculations for sample comparisons were determined based on the comparisons of means/proportions using PASS statistical software. Analysis was performed using GraphPad PRISM (version 7.01; CA, USA), Minitab Statistical (version 17) and/or R Softwares. P values for pairwise tests, or multiplicity-adjusted post-tests of selected pairs, are reported in the Figure Legends. p<0.05 was considered significant.

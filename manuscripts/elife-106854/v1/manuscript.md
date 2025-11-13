@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05hs6h993 Department of Microbiology, Genetics, and Immunology, Michigan State University East Lansing United States
+1. Department of Microbiology, Genetics, and Immunology, Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
 
 † Corresponding author
 

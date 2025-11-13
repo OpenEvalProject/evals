@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.33070.001 Social behaviour is regulated by activity of host-associated microbiota across multiple species. However, the molecular mechanisms mediating this relationship remain elusive. We therefore determined the dynamic, stimulus-dependent transcriptional regulation of germ-free (GF) and GF mice colonised post weaning (exGF) in the amygdala, a brain region critically involved in regulating social interaction. In GF mice the dynamic response seen in controls was attenuated and replaced by a marked increase in expression of splicing factors and alternative exon usage in GF mice upon stimulation, which was even more pronounced in exGF mice. In conclusion, we demonstrate a molecular basis for how the host microbiome is crucial for a normal behavioural response during social interaction. Our data further suggest that social behaviour is correlated with the gene-expression response in the amygdala, established during neurodevelopment as a result of host-microbe interactions. Our findings may help toward understanding neurodevelopmental events leading to social behaviour dysregulation, such as those found in autism spectrum disorders (ASDs).
+Social behaviour is regulated by activity of host-associated microbiota across multiple species. However, the molecular mechanisms mediating this relationship remain elusive. We therefore determined the dynamic, stimulus-dependent transcriptional regulation of germ-free (GF) and GF mice colonised post weaning (exGF) in the amygdala, a brain region critically involved in regulating social interaction. In GF mice the dynamic response seen in controls was attenuated and replaced by a marked increase in expression of splicing factors and alternative exon usage in GF mice upon stimulation, which was even more pronounced in exGF mice. In conclusion, we demonstrate a molecular basis for how the host microbiome is crucial for a normal behavioural response during social interaction. Our data further suggest that social behaviour is correlated with the gene-expression response in the amygdala, established during neurodevelopment as a result of host-microbe interactions. Our findings may help toward understanding neurodevelopmental events leading to social behaviour dysregulation, such as those found in autism spectrum disorders (ASDs).
 
 ## Introduction
 
@@ -40,7 +40,7 @@ We here provide evidence that the microbiota is a critical regulator of social i
 
 ## Results
 
-## Germ-free mice display impaired sociability behaviour with high inter-individual variability
+### Germ-free mice display impaired sociability behaviour with high inter-individual variability
 
 Mice lacking any interaction with microorganisms throughout development have a range of behavioural phenotypes (Luczynski et al., 2016), including memory impairments and altered anxiety behaviour (Hoban et al., 2018; Gareau et al., 2011).
 
@@ -50,11 +50,65 @@ Here, we subjected conventional mice (CON-SI), germ-free mice (GF-SI), and germ-
 
 **Figure 1.:** (A) Experimental design. (B) Time spent in active interaction with either a conspecific or non-social object in the 3-chamber social interaction test (3CSIT). Error bars show range, midlines of boxes show medians. (C) Results of the 2-way ANOVA with Dunnets multiple comparison post-hoc test, n = 11–12/group).
 
-## Social interaction induces highly distinct gene expression patterns in the amygdala of germ-free mice
+### Social interaction induces highly distinct gene expression patterns in the amygdala of germ-free mice
 
 Since we have previously shown that social interactions in the mouse 3CSIT behavioural paradigm reliably activates stimulus-dependent genes expression in the amygdala (Stilling et al., 2015), we hypothesised that we would observe changes in gene expression in this brain region as a function of colonisation status and, especially, social experience. Thus we sought to identify potential molecular pathways involved in mediating microbiome-to-brain signalling by systematically comparing gene expression patterns in the amygdala of mice that were exposed to social environmental stimulation (social interaction, SI) mice. To this end, we retrieved RNA from naïve animals and 1 hr after the social experience for CON, GF and exGF animals and performed a highly comprehensive type of RNA-sequencing, using paired-end RNA libraries that retains information on which DNA strand was transcribed and includes also non-polyadenylated RNA species. This way our analysis incorporated gene expression changes at baseline and in response to stimulus-induced transcription of both, mRNAs and long non-coding RNAs (lncRNAs) that lack a poly-A tail.
 
 In a first step, we performed analysis of differential gene expression on all meaningful pairwise comparisons (Table 1). When comparing the number of differentially expressed genes (DEGs, both up- and downregulated) between naïve animals of different colonisation status, we find the highest number of DEGs in the CON-GF comparison (Figure 2A, Supplementary file 1), as we have previously reported in an independent study (Stilling et al., 2015). Interestingly, when comparing naïve vs. stimulated animals the response in terms of number of DEGs was strongest in GF animals by far, providing evidence for the amygdalar transcriptomes to diverge between the three groups upon environmental stimulation by social interaction. Transcriptional divergence driven by neuronal activity is further supported by the number of DEGs when comparing the SI groups among each other, as these numbers are substantially (4–9 times) higher than DEG numbers for naïve comparisons (Figure 2A). Increasing stringency of the analysis (log2(fold-change) > |±0.5|) had little relative effect on these results (Figure 2—figure supplement 1A).
+
+**Table 1.**
+ Meaningful pairwise comparisons for gene expression changes (nine unique comparisons).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Environmental stimulation</th>
+      <th>Compared to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CON (n = 4)</td>
+      <td rowspan="3">Naïve (n = 4, representing eight animals, per group)</td>
+      <td>GF, exGF, CON-SI</td>
+    </tr>
+    <tr>
+      <td>GF (n = 4)</td>
+      <td>CON, exGF, GF-SI</td>
+    </tr>
+    <tr>
+      <td>exGF (n = 4)</td>
+      <td>CON, GF, exGF-SI</td>
+    </tr>
+    <tr>
+      <td>CON-SI (n = 8)</td>
+      <td rowspan="3">social interaction (SI)</td>
+      <td>CON, GF-SI, exGF-SI</td>
+    </tr>
+    <tr>
+      <td>GF-SI (n = 12)</td>
+      <td>GF, CON-SI, exGF-SI</td>
+    </tr>
+    <tr>
+      <td>exGF-SI (n = 8)</td>
+      <td>exGF, CON-SI, GF-SI</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 2.](https://cdn.elifesciences.org/articles/33070/elife-33070-fig2-v2.jpg)
+
+**Figure 2.:** (A) Number of differentially expressed genes (DEGs) including both up- and downregulated genes for all meaningful pairwise comparisons (see Table 1). (B) Presence-absence plot for all DEGs in all groups. Each line represents one gene that is a DEG in at least one pairwise comparison. (C–D) Venn diagram of upregulated (up, red) and downregulated (down, blue) genes in CON-GF and CON-SI or GF-SI comparisons to test for activation of expression patterns in GF mice under naïve conditions that are similar to activation by social interaction at either CON or GF colonisation status. (E) Heatmap to visualize enriched biological functions in social interaction(SI)-induced (upregulated only) genes. FDR-adjusted p-values were calculated for all enriched (padj <0.1) biological-function GO Terms (GObp), log-transformed (-log10) and colour-coded.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33070/elife-33070-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Results of differential gene expression analysis using more stringent filter criteria (padj <0.1 and log2(fold-change) >0.5 or<−0.5) as compared to Figure 1, where filter criteria are padj <0.1. Left panel: Number of differentially expressed genes (DEGs, both directions), right panel: Enrichment of KEGG pathways ‘MAPK sig. pathway’ and ‘Spliceosome’ (expressed as –log10(padj)). (B) Log2(fold-change)-values for all genes associated with the GO-Term ‘RNA processing’ for all comparisons after social interaction (SI). Each line represents one gene, genes significantly up-/downregulated in GF-SI comparison are highlighted in yellow, which are the same genes shown in Figure 3D. (C) Comparison of genes induced by SI in the murine amygdala with genes induced by environmental novelty in the murine hippocampus (see ref. Stilling et al., 2014a), EMBO J). Overlapping upregulated genes are listed and genes with similar function are grouped using different colours.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/33070/elife-33070-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) RT-qPCR validation results for 18 selected genes. n = 4–12 per group. (B) Overview of correspondence of RNAseq and qPCR results for selected genes. RT-qPCR results were analysed by 2-way ANOVA with multiple-testing correction (Tukey correction for effect of colonisation status; Sidak correction for effect of social interaction stimulation (SI)), significance level: padj <0.05.
 
 Next we looked for overlapping DEGs between pairwise comparisons. Because meaningful Venn diagrams are limited to four or five comparisons, to identify groups of genes that are regulated in multiple comparisons, we plotted the presence or absence for each of the 4522 non-redundant genes found in any of the comparisons (Figure 2B). As expected, there were multiple overlapping clusters between SI comparisons, demonstrating a core cluster of genes that are induced 1 hr after social novelty, independent of colonisation status. However, multiple clusters of genes showed differential regulation only in a particular group, suggesting differences in the transcriptomic response of the individual groups. We identified a cluster of genes that was differentially regulated in both GF naïve animals and upon social interaction stimulation in conventional animals (Figure 2C). This overlap was highly significant and made up large proportions of all genes up- or downregulated in naive GF animals compared to CON controls (38% and 26%, respectively). This cluster was not differentially regulated in GF animals upon stimulation by social interaction (Figure 2D). In fact, there was a counter directional overlap (e.g. genes upregulated in CON vs. GF but downregulated in GF upon stimulation). Together, these data suggest that several genes typically induced in the amygdala of conventional controls upon social interaction are already elevated in GF mice, pointing towards amygdalar hyperactivity in these animals (Stilling et al., 2015).
 
@@ -70,7 +124,7 @@ Stimulus-induced upregulation of a number of well-established immediate early ge
 
 Together these data suggest that GF animals show a unique response signature toward environmental stimulation by social interaction. The transcriptional response is characterised by a marked upregulation of the genes involved in RNA processing and the splicing machinery, accompanied by an arrested upregulation of typical response genes, especially in those involved in MAPK signalling. Analysis of differential gene expression between naïve GF animals and controls also revealed that this lack of induction may be due to upregulation of several genes involved in these processes already at baseline. All analyses on GF animals colonised with a conventional microbiota at weaning (exGF) presented so far show results with features of both, CON and GF groups.
 
-## Social interaction leads to a strong increase in alternative splicing in GF and exGF animals
+### Social interaction leads to a strong increase in alternative splicing in GF and exGF animals
 
 Since ‘RNA processing’ and spliceosome-associated pathways were highly enriched in the amygdala of GF animals and also exGF animals, we next analysed our dataset for functional consequences of this upregulation by searching for alternative splicing events, that is differentials spliced genes (DSGs). Under naïve conditions alternative splicing was highest when comparing CON and GF animals (Figure 4A, Supplementary file 4). These genes were highly enriched in several functional categories involved in neuronal function, such as long-term potentiation (padj = 2.3e-6) and synaptic transmission (padj = 1.2e-10) (Supplementary file 5). Similar enrichment, although to a lesser degree was found when comparing GF and exGF animals, while no significant functional enrichment was found for the relatively few DSGs in the CON vs. exGF comparison. High congruence in alternative splicing between CON and exGF mice was also evident from the high degree of overlap between DSGs that distinguished both groups from the GF group (Figure 4B). Together these data are in agreement with phenotypic similarities between CON and exGF animals, that is reversibility of the GF phenotype by colonisation at weaning.
 
@@ -82,7 +136,7 @@ In line with diverging transcriptomes between groups due to differential gene ex
 
 As with the previous finding for DEGs, DSGs of the three comparisons also shared a ‘core’ set of genes that were alternatively spliced in response to social interaction, independent of colonisation status (Figure 4C). This core was slightly enriched in genes associated with functional categories that are involved in neuronal function such as long-term potentiation (padj=1.5e-02) and synaptic transmission (padj=1.9e-4). In fact, the high degree of overlap between all three groups together with the high number of DSGs in GF-SI and exGF-SI groups suggests that, in addition to the conventional response, these two groups show supplementary cellular responses towards activation of the amygdala by social interaction. Interestingly, this additional response is even more pronounced in the exGF-SI group and is characterised by a high number of DSGs highly enriched in genes involved in mainly four principal functional categories: splicing/RNA processing, protein turnover, neuronal functions, and intracellular signalling pathways (Figure 4D, Supplementary file 6). The fact that a highly enriched proportion of the alternatively spliced genes themselves were also members of the splicing machinery suggests a self-regulating mechanism of gene expression in these two groups.
 
-## Behavioural performance correlates with expression of RNA processing genes in GF mice
+### Behavioural performance correlates with expression of RNA processing genes in GF mice
 
 Given the high behavioural variability in active social interaction time specifically in the GF-SI group, together with the divergence of the transcriptional landscape in the amygdala one hour after exposure, we hypothesised that gene expression may be correlated with behavioural performance in individual mice. To test this hypothesis, we ranked all expressed genes in our dataset by correlation (Pearson correlation coefficient) between expression level and time spent in active social interaction (Supplementary file 7). In order to identify functions that are associated with positively or negatively correlated genes we used the Gene Set Enrichment Analysis (GSEA) algorithm that assigns one or multiple functions to each gene in the list based on the GO Term or KEGG Pathway databases (Subramanian et al., 2005). The algorithm then calculates an enrichment score for each function based on the rank of genes associated with this function (Figure 5B,C). Excitingly, genes whose expression was positively correlated with social interaction time were significantly associated with splicing, along with protein turnover (Figure 5B–D). There was no significant gene set enrichment for negative correlations between sociability behaviour and gene expression. These data suggest direct involvement of splicing and protein turnover pathways in the amygdala with behavioural performance. This result was confirmed, when we compared gene expression of the six germ-free animals with the highest social behaviour performance (GF-SIhigh) with those six animals with lowest social behaviour performance (GF-SIlow). We found three genes that were significantly higher expressed in GF-SIhigh animals, namely DnaJb6 (encoding a brain-enriched heat-shock family protein with chaperone function), Cribp (encoding a stimulus-inducible, brain-enriched, nuclear RNA-binding protein involved in mRNA stabilization), and D030028A08Rik (a long-noncoding RNA with yet unknown function). These three genes also show a statistically significant correlation with behavioural performance in the GF-SI group (Figure 5E).
 
@@ -104,41 +158,41 @@ In summary, our data is fully congruent with and offers a molecular basis for pr
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Male F1-generation offspring from germ-free (GF) and conventionally-raised (CON) Swiss Webster breeding pairs previously obtained from Taconic (Germantown, New York, USA) were used in all experiments as previously described (Desbonnet et al., 2014; Stilling et al., 2015; Clarke et al., 2013; O'Tuathaigh et al., 2007). GF mice were housed in groups of two-four per cage in flexible-film gnotobiotic isolators at a 12 hr light/dark cycle. Ex-germ-free (exGF) mice were removed from the GF unit after weaning on postnatal day p21, and housed on CON-used bedding next to CON mice in the standard animal unit to allow colonization of microbes present in the facility environment. CON mice were similarly housed two–five per cage under controlled conditions (temperature 20–21°C, 55–60% humidity) on the same 12 hr light/dark cycle. All groups received the same autoclaved, pelleted diet (Special Diet Services, product code 801010). Age at tissue extraction for all groups and experiments was 10 weeks.
 
-## 3-chamber social interaction test (3CSIT)
+### 3-chamber social interaction test (3CSIT)
 
 The 3CSIT was performed as described previously (Desbonnet et al., 2014; Stilling et al., 2015). In brief, mice were habituated to the test room for half an hour and then habituated to a white plastic arena (40 × 20×20 cm), divided into three chambers by separators with small circular openings and lined with fresh bedding, for 10 min. The left and right chamber contained empty wire-mesh cages. These were then used to display an age- and sex-matched conventionally-raised mouse (chamber 1) or a mouse-sized and –coloured (white) non-social object during the test phase (porcelain egg cup). Exploration of the three chambers by the test mouse was recorded on video for 10 min and time spent in active interaction with the conspecific or object was measured by an experimenter, blinded to colonization status of the test mice. Group size for behaviour was n = 12 for GF-SI mice and n = 11 per group for CON-SI and exGF-SI groups, after removing outliers.
 
-## RNA extraction and sequencing
+### RNA extraction and sequencing
 
 The amygdala from the left brain hemisphere was rapidly dissected on ice from fresh brain tissue as adapted from (Zapala et al., 2005), stored in RNAlater RNA Stabilization Reagent (Qiagen, Netherlands) at 4°C for 24 hr and then transferred to −80°C. Total RNA was extracted using the mirVanaTM miRNA Isolation kit (Ambion/life technologies) and DNase treated (Turbo DNA-free, Ambion/life technologies) according to the manufacturers recommendations For each group (CON, GF, exGF, CON-SI, GF-SI, exGF-SI), 8–12 animals were used (see Table 1 for details). RNA concentration and quality were determined using a Nanodrop 1000 (Thermo Scientific) and a Bioanalyzer (Agilent) was used to measure RNA integrity. After this, for all naïve groups equal amounts of RNA from two animals were then pooled to yield four samples per group. Therefore, for naïve groups, each sample (technical replicate) analysed by RNA-seq represents the average of two biological replicates.
 
 Ribodepletion and library preparation was performed by Vertis Biotechnology (Freising, Germany). Sequencing as well as Fastq-file generation was done by Beckman Coulter Genomics service (Danvers, MA, USA). Stranded, paired-end reads of 2 × 100 bp were produced on an Illumina HiSeq2500 sequencer. Details on RNA sample quality and sequencing quality control are given in Supplementary file 8.
 
-## Molecular validation by quantitative real-time PCR (qRT-PCR) for selected differentially regulated genes
+### Molecular validation by quantitative real-time PCR (qRT-PCR) for selected differentially regulated genes
 
 To validate differential expression results by the RNAseq pipeline, we performed qRT-PCR analysis of all individual RNA samples for the six groups for 18 selected genes (Figure 2 - figure supplement 2). 61% of comparisons showed matching results between the two methods. qRT-PCR was performed as previously described (Stilling et al., 2015). In brief, qRT-PCR of 3 technical replicates was done for each biological sample on a LightCycler 480 system (Roche LifeScience) and analysed using the ΔΔCt – method. Two-way ANOVA with multiple-testing correction (Tukey post-hoc for effect of colonisation status; Sidak post-hoc for effect of social interaction stimulation), was used to test for statistical significance between groups for each gene. Significance level was: padj <0.05.
 
-## Bioinformatic analysis pipeline
+### Bioinformatic analysis pipeline
 
-## Quality control and mapping to reference genome
+#### Quality control and mapping to reference genome
 
 Fastq-format reads were quality filtered and trimmed using Trimmomatic (v0.32, RRID:SCR_011848) (Bolger et al., 2014) with the following non-default parameters: AVGQUAL: 20; SLIDINGWINDOW: 4:20; LEADING: 10; TRAILING: 10; MINLEN: 60. Alignment to the mouse reference genome (GRCm38.p3) was achieved using the STAR aligner (v2.4.0f1) (Dobin et al., 2013) with default options and an index compiled with gene models retrieved from the Ensembl database (release 78).
 
-## Differential gene expression and functional enrichment analyses
+#### Differential gene expression and functional enrichment analyses
 
 Ensembl database release 78 gene models were also used for counting mapped reads per gene using HTSeq-Count (v0.6.0, RRID:SCR_011867) (Anders et al., 2015) with the following non-default parameters: -s: no; -r: pos; -q –f bam –m intersection-nonempty. Differential gene expression was calculated for pairwise comparisons using the DESeq2 R-package (v1.6.2) (Anders and Huber, 2010; Love et al., 2014) with default parameters. Genes with an FDR-adjusted p-value≤0.1 were considered differentially regulated. The data discussed in this publication have been deposited in NCBI's Gene Expression Omnibus (Edgar et al., 2002) and are accessible through GEO Series accession number GSE114702 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE114702).
 
 Differentially expressed genes were further analysed for functional enrichment using the DAVID Bioinformatic Resources (v6.7) (Huang et al., 2009a; Huang et al., 2009b) and Gene Set Enrichment Analysis (GSEA) (v2.0.14, RRID:SCR_003199) (Subramanian et al., 2007).
 
-## Differential exon usage analysis
+#### Differential exon usage analysis
 
 For detection of differential exon usage the DEXSeq R-package was used (v1.12.2, RRID:SCR_012823) (Anders et al., 2012) with default parameters. FDR-corrected p-value significance level was set to 0.1. Ensemble database release 78 was used to provide exon models.
 
-## Statistics
+### Statistics
 
 Graphpad Prism (v6.0h, RRID:SCR_002798) was used for statistical hypothesis testing of behavioural analysis (Figure 1) and expression of RNA processing genes (Figure 3D). Before hypothesis testing on behavioural data, normal distribution was confirmed by D'Agostino and Pearson omnibus normality, Shapiro-Wilk normality, and KS normality tests (p<0.05 for all three tests). Sample size of n = 12 was based on a power calculation with an expected effect size of f = 0.4, a significance level of α = 0.05 and a power of 0.8. A Grubbs test for outliers (p<0.05) identified one outlier each in CON-SI and exGF-SI groups. One-way ANOVA with Tukey's multiple comparisons post-hoc test was run to compare social interaction between the groups.
 

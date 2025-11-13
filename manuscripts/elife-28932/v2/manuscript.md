@@ -33,7 +33,7 @@
 
 ## Abstract
 
-10.7554/eLife.28932.001 Recent studies posit a role for non-coding RNAs in epithelial ovarian cancer (EOC). Combining small RNA sequencing from 179 human serum samples with a neural network analysis produced a miRNA algorithm for diagnosis of EOC (AUC 0.90; 95% CI: 0.81–0.99). The model significantly outperformed CA125 and functioned well regardless of patient age, histology, or stage. Among 454 patients with various diagnoses, the miRNA neural network had 100% specificity for ovarian cancer. After using 325 samples to adapt the neural network to qPCR measurements, the model was validated using 51 independent clinical samples, with a positive predictive value of 91.3% (95% CI: 73.3–97.6%) and negative predictive value of 78.6% (95% CI: 64.2–88.2%). Finally, biologic relevance was tested using in situ hybridization on 30 pre-metastatic lesions, showing intratumoral concentration of relevant miRNAs. These data suggest circulating miRNAs have potential to develop a non-invasive diagnostic test for ovarian cancer.
+Recent studies posit a role for non-coding RNAs in epithelial ovarian cancer (EOC). Combining small RNA sequencing from 179 human serum samples with a neural network analysis produced a miRNA algorithm for diagnosis of EOC (AUC 0.90; 95% CI: 0.81–0.99). The model significantly outperformed CA125 and functioned well regardless of patient age, histology, or stage. Among 454 patients with various diagnoses, the miRNA neural network had 100% specificity for ovarian cancer. After using 325 samples to adapt the neural network to qPCR measurements, the model was validated using 51 independent clinical samples, with a positive predictive value of 91.3% (95% CI: 73.3–97.6%) and negative predictive value of 78.6% (95% CI: 64.2–88.2%). Finally, biologic relevance was tested using in situ hybridization on 30 pre-metastatic lesions, showing intratumoral concentration of relevant miRNAs. These data suggest circulating miRNAs have potential to develop a non-invasive diagnostic test for ovarian cancer.
 
 ## Introduction
 
@@ -51,11 +51,432 @@ To produce our diagnostic circulating miRNA signature from human sera, we constr
 
 **Figure 1.:** (a) Protocol for miRNA sequencing, filtering, batch adjustment and separation into the training and testing sets. (b) Protocol for model development and testing.
 
+**Table 1.**
+ Demographics of patients in the model study populations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>ERASMOS (n = 60)</th>
+      <th>PMP/NECC (n = 119*)</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age, years, median (SD)†</td>
+      <td>57 (9.8)</td>
+      <td>56 (7.1)</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>CA-125, units/ml, median (SD) †</td>
+      <td>155 (689.8)</td>
+      <td>88.1 (1335.5)</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>Histology, n (%)‡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>0 (0)</td>
+      <td>15 (12.6)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Serous cystadenoma/cystadenofibroma</td>
+      <td>7 (11.7)</td>
+      <td>14 (11.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Endometrioma</td>
+      <td>0 (0)</td>
+      <td>15 (12.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other benign lesion</td>
+      <td>9 (15.0)</td>
+      <td>0 (0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Borderline mucinous tumor</td>
+      <td>2 (3.3)</td>
+      <td>0 (0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Borderline serous tumor</td>
+      <td>5 (8.3)</td>
+      <td>15 (12.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage I/II serous adenocarcinoma</td>
+      <td>5 (8.3)</td>
+      <td>20 (16.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage III/IV serous adenocarcinoma</td>
+      <td>19 (31.2)</td>
+      <td>10 (8.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage I/II clear cell/endometrioid adenocarcinoma</td>
+      <td>6 (10.0)</td>
+      <td>20 (16.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage III/IV clear cell/endometrioid adenocarcinoma</td>
+      <td>0 (0)</td>
+      <td>10 (8.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mucinous adenocarcinoma</td>
+      <td>1 (1.7)</td>
+      <td>0 (0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other ovarian cancer</td>
+      <td>10 (10.0)</td>
+      <td>0 (0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage, n (%)‡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Not applicable</td>
+      <td>16 (26.7)</td>
+      <td>59 (49.6)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>9 (15.0)</td>
+      <td>22 (18.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>II</td>
+      <td>8 (13.3)</td>
+      <td>18 (15.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>19 (31.2)</td>
+      <td>18 (15.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IV</td>
+      <td>8 (13.3)</td>
+      <td>2 (1.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grade, n (%)‡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Not applicable</td>
+      <td>16 (26.7)</td>
+      <td>44 (37.0)</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Borderline</td>
+      <td>7 (11.7)</td>
+      <td>15 (12.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1 (well-differentiated)</td>
+      <td>6 (10.0)</td>
+      <td>12 (10.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2 (moderately differentiated)</td>
+      <td>3 (5.0)</td>
+      <td>12 (10.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3 (poorly differentiated)</td>
+      <td>28 (46.7)</td>
+      <td>36 (30.3)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_ERASMOS – Effects of Regional Analgesia on Serum miRNA after Oncology Surgery StudyPMP – Pelvic Mass ProtocolNECC – New England Case Control study*15samples from NECC, 114 samples from PMP†student’s t-test‡chi-square test_
+
+**Table 2.**
+ Demographics of patients after stratified random sampling into training and testing sets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Training (n = 135)</th>
+      <th>Testing (n = 44)</th>
+      <th>p-value</th>
+    </tr>
+    <tr>
+      <th>Age, years, median (SD) *</th>
+      <th>56 (8.1)</th>
+      <th>56 (8.3)</th>
+      <th>1.0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CA-125, units/ml, median (SD) *</td>
+      <td>126.5 (1193.5)</td>
+      <td>105.6 (577.8)</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>Pathology, n (%)†</td>
+      <td></td>
+      <td></td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>11 (8.1)</td>
+      <td>4 (9.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Benign lesions</td>
+      <td>34 (25.2)</td>
+      <td>11 (25.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Borderline tumors</td>
+      <td>16 (11.9)</td>
+      <td>5 (11.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage I/II invasive cancers</td>
+      <td>41 (30.4)</td>
+      <td>12 (27.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage III/IV invasive cancers</td>
+      <td>33 (24.4)</td>
+      <td>12 (27.3)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*student’s t-test†chi-square test_
+
 We then deployed a series of statistical tools, including machine-learning approaches to analyze the miRNA-seq data to create an algorithm with the best performance for discriminating cases of ovarian cancer from either benign tumors, non-invasive (‘borderline’) tumors, or healthy controls. This began by using three different potential strategies for selecting miRNA variable inputs to build the models: significance-based (by t-test), correlation-based feature subset, or expression fold change (Table 3). Each miRNA variable list method was entered into one of 11 different models, which were compared both by AUC (Table 4) as well as sensitivity and specificity (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig2-v2.jpg)
 
 **Figure 2.:** Sensitivity (blue bars) and specificity (orange bars) of the classifiers on the testing set depending on the method of variable selection. Whiskers denote 95% Confidence Intervals. (a) – Performance of models created on the subset of miRNAs selected using the significance-based filter. (b) Performance of models created on variables selected using the CFS subset algorithm. (c) Performance of models created using variables selected by the fold change-based filter. The red arrow denotes the model with the best performance characteristics, the neural network analysis using the fold change-based filter variable.
+
+**Table 3.**
+ miRNA variables used in model building identified through univariate testing
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Significance-based selection</th>
+      <th>Correlation-based feature subset selection</th>
+      <th>Expression fold change selection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>miR-29a-3p</td>
+      <td>miR-16-2-3p</td>
+      <td>miR-23b-3p</td>
+    </tr>
+    <tr>
+      <td>miR-30d-5p</td>
+      <td>miR-200a-3p</td>
+      <td>miR-29a-3p</td>
+    </tr>
+    <tr>
+      <td>miR-200a-3p</td>
+      <td>miR-200c-3p</td>
+      <td>miR-32–5 p</td>
+    </tr>
+    <tr>
+      <td>miR-200c-3p</td>
+      <td>miR-320b</td>
+      <td>miR-92a-3p</td>
+    </tr>
+    <tr>
+      <td>miR-320d</td>
+      <td>miR-320d</td>
+      <td>miR-150–5 p</td>
+    </tr>
+    <tr>
+      <td>miR-320c</td>
+      <td></td>
+      <td>miR-200a-3p</td>
+    </tr>
+    <tr>
+      <td>miR-450b-5p</td>
+      <td></td>
+      <td>miR-200c-3p</td>
+    </tr>
+    <tr>
+      <td>miR-203a</td>
+      <td></td>
+      <td>miR-203a</td>
+    </tr>
+    <tr>
+      <td>miR-486–3 p</td>
+      <td></td>
+      <td>miR-320c</td>
+    </tr>
+    <tr>
+      <td>miR-1246</td>
+      <td></td>
+      <td>miR-320d</td>
+    </tr>
+    <tr>
+      <td>miR-1307–5 p</td>
+      <td></td>
+      <td>miR-335–5 p</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>miR-450b-5p</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>miR-1246</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>miR-1307–5 p</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Performance of the eleven statistical models on the testing set by variable selection method.Results are shown for the testing set.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Variable selection method</th>
+    </tr>
+    <tr>
+      <th>Statistical model</th>
+      <th>Significance-based variable subset AUC (95% CI)</th>
+      <th>Correlation-based feature selection subset AUC (95% CI)</th>
+      <th>Fold change-based variable subset AUC (95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Linear discriminant analysis</td>
+      <td>0.80 (0.66–0.93)</td>
+      <td>0.76 (0.62–0.90)</td>
+      <td>0.78 (0.64–0.92)</td>
+    </tr>
+    <tr>
+      <td>Logistic regression</td>
+      <td>0.81 (0.68–0.94)</td>
+      <td>0.75 (0.61–0.90)</td>
+      <td>0.82 (0.70–0.94)</td>
+    </tr>
+    <tr>
+      <td>Neural network</td>
+      <td>0.84 (0.72–0.96)</td>
+      <td>0.75 (0.60–0.89)</td>
+      <td>0.90 (0.81–0.99)</td>
+    </tr>
+    <tr>
+      <td>Support vector machine</td>
+      <td>0.77 (0.63–0.91)</td>
+      <td>0.73 (0.58–0.87)</td>
+      <td>0.77 (0.63–0.91)</td>
+    </tr>
+    <tr>
+      <td>Multivariate adaptive regression splines</td>
+      <td>0.57 (0.40–0.74)</td>
+      <td>0.66 (0.49–0.82)</td>
+      <td>0.73 (0.58–0.88)</td>
+    </tr>
+    <tr>
+      <td>Naive Bayes classifier</td>
+      <td>0.75 (0.60–0.89)</td>
+      <td>0.68 (0.52–0.84)</td>
+      <td>0.75 (0.60–0.89)</td>
+    </tr>
+    <tr>
+      <td>Least Absolute Deviation regression tree</td>
+      <td>0.77 (0.63–0.91)</td>
+      <td>0.61 (0.44–0.78)</td>
+      <td>0.69 (0.53–0.84)</td>
+    </tr>
+    <tr>
+      <td>Functional tree</td>
+      <td>0.78 (0.64–0.91)</td>
+      <td>0.77 (0.63–0.91)</td>
+      <td>0.68 (0.52–0.84)</td>
+    </tr>
+    <tr>
+      <td>Bayesian network</td>
+      <td>0.72 (0.56–0.87)</td>
+      <td>0.67 (0.52–0.83)</td>
+      <td>0.72 (0.56–0.87)</td>
+    </tr>
+    <tr>
+      <td>Random forest</td>
+      <td>0.78 (0.64–0.91)</td>
+      <td>0.71 (0.56–0.86)</td>
+      <td>0.76 (0.62–0.90)</td>
+    </tr>
+    <tr>
+      <td>Elastic net</td>
+      <td>0.80 (0.67–0.93)</td>
+      <td>0.76 (0.62–0.90)</td>
+      <td>0.79 (0.66–0.92)</td>
+    </tr>
+  </tbody>
+</table>
 
 Although many of the models performed well, the neural network model employing miRNA expression fold changes was the only model to meet our pre-specified statistical objective with an AUC of 0.90 (95% CI: 0.81–0.99; p=0.03 over a theoretical AUC of 0.75). The network consisted of 14 individual miRNAs with seven neurons in the hidden layer (Source code 1). As the network relied on complex interactions between miRNA levels we tested whether its performance was not biased by batch adjustment performed at the initial step of the analysis. The neural network worked equally well on the adjusted and unadjusted raw datasets with an AUC of 0.93 (95%CI: 0.89–0.98) on the training and 0.90 (95%CI 0.80–0.99) on the testing set (Figure 3; Supplementary file 1A [by model] and 1B [by sample]). In post-hoc secondary analyses, the neural network worked equally well for older and younger patients, serous and non-serous histologies, and early and advanced stage disease (Supplementary file 2A-C).
 
@@ -65,6 +486,18 @@ Although many of the models performed well, the neural network model employing m
 
 Serum CA125 data were available for 120 subjects (Supplementary file 1B and 3A). Among these, the neural network (AUC 0.93; 95% CI 0.88–0.97) significantly outperformed CA125 (AUC 0.74; 95% CI 0.65–0.83; p=0.001; Figure 4). The primary advantage of the neural network over CA125 was avoiding false positives (8/43 for the neural network versus 23/43 for CA125; p=0.002) (Supplementary file 2A). Notably, the neural network and CA125 levels were independent of one another (Figure 4—figure supplement 1; Supplementary file 3B). We tested using the neural network and CA125 in a tiered testing strategy, subjecting all negative neural network algorithm results to a second review with CA125, but found this would increase the probability of a false positive test result from 4.2% (5/120) to 19.2% (23/120) and a false negative rate from 5.8% (7/120) to 13.3% (16/120) (Figure 4—figure supplement 2). The alternative of initial screening with CA125 followed by neural network yielded only three additional correctly diagnosed cases of invasive cancer at the expense of 19 additional false positive results.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig4-v2.jpg)
+
+**Figure 4.:** The neural network (AUC 0.93; 95% CI 0.88–0.97) significantly outperformed CA125 (AUC 0.74; 95% CI 0.65–0.83) in terms of overall operating characteristics (p=0.001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) miR-23b (b) miR-29a (c) miR-32 (d) miR-320d (e) miR-1246 (f) miR-92a (g) miR-150 (h) miR-200a (i) miR305 (j) miR-1307 (k) miR-200c (l) miR-203a (m) miR-320c (n) miR-450b. None of the correlations were significant in either the training or testing set.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Subjecting all negative neural network algorithm results to a second review with CA-125 would increase the probability of a false positive test result from 4.2% (5/120) to 19.2% (23/120) and a false negative rate from 5.8% (7/120) to 13.3% (16/120). If the tests were considered hierarchical so that only samples classified as negative by the neural network were then examined by CA-125, this would identify three additional cases of invasive cancer but at the expense of 19 additional false positive results. FP – false positive, TP – true positive, FN – false negative, TN – true negative.
+
 The specificity of the neural network algorithm for the diagnosis of ovarian cancer was tested using an external, independent, dataset previously published by Keller, et al (Keller et al., 2011). These data were generated via a third technology platform, probe-based microarray, which fortunately contained all 14 miRNAs from our original signature, allowing for 1:1 mapping without exclusions (Supplementary file 4A and Supplementary file 6). The neural network perfectly classified patients in the training set (AUC 1.00, 95% CI 1.00–1.00) and provided very good discriminatory power on the testing set (AUC 0.93, 95% CI 0.81–1.00), with an overall sensitivity of 75% and specificity of 100%. The signature was specific to ovarian cancer compared to all other diagnoses, as it did not show any clinically-efficient diagnostic capabilities for any of the 12 other morbidities analysed in the set and showed good performance in distinguishing ovarian cancer samples against all other diagnoses combined (AUC 0.92, 95% CI 0.82–1.00) (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig5-v2.jpg)
@@ -73,11 +506,219 @@ The specificity of the neural network algorithm for the diagnosis of ovarian can
 
 Having established our miRNAs of interest using next generation sequencing, we next sought to validate the sequencing data across technology platforms by measuring the miRNAs from the neural network using qPCR. While small RNA sequencing is a more robust technology for miRNA discovery, qPCR is a more time efficient and cost-effective diagnostic tool. For this we used 120 samples from PMP and NECC for which we had excess RNA. We internally validated the 14 miRNAs in the neural network (plus an additional nine potential reference miRNAs derived from the sequencing data) by qPCR and recalibrated the algorithm to accept qPCR inputs (Supplementary file 6). We then performed a global sensitivity analysis on the best neural network for qPCR data and iteratively removed the variables which did the least in terms of improving the classifier’s performance. This reduced the neural network to only seven miRNAs (miR-29a-3p, miR-92a-3p, miR-200c-3p, miR-320c, miR-335–5 p, miR-450b-5p, and miR-1307–5 p) plus four normalizers (miR-423–3 p, miR-191–5 p, miR-221–3 p, and miR-103a-3p). To increase the statistical power of this qPCR-based classifier and create a fully locked-down model for clinical application, we added 205 more samples from PMP and NECC, including more than 100 additional healthy controls, to create a 325 subject population for qPCR model development (Table 5).
 
+**Table 5.**
+ Clinical characteristics of the qPCR model set.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>qPCR model set (N = 325)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age, years, median (SD)</td>
+      <td>58.0 (10.1)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Grade, n (%)</td>
+    </tr>
+    <tr>
+      <td>Borderline</td>
+      <td>15 (4.6)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>21 (6.4)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>27 (8.3)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>100 (30.8)</td>
+    </tr>
+    <tr>
+      <td>unspecified</td>
+      <td>10 (3.1)</td>
+    </tr>
+    <tr>
+      <td>Not applicable</td>
+      <td>150 (46.2)</td>
+    </tr>
+    <tr>
+      <td colspan="2">FIGO Stage, n (%)</td>
+    </tr>
+    <tr>
+      <td>I/II</td>
+      <td>75 (23.1)</td>
+    </tr>
+    <tr>
+      <td>III/IV</td>
+      <td>83 (25.5)</td>
+    </tr>
+    <tr>
+      <td>Not applicable</td>
+      <td>167 (51.4)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Histology, n (%)</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>123 (37.8)</td>
+    </tr>
+    <tr>
+      <td>Serous cystadenoma/cystadenofibroma</td>
+      <td>14 (4.3)</td>
+    </tr>
+    <tr>
+      <td>Endometrioma</td>
+      <td>15 (4.6)</td>
+    </tr>
+    <tr>
+      <td>Borderline serous tumor</td>
+      <td>15 (4.6)</td>
+    </tr>
+    <tr>
+      <td>Serous adenocarcinoma</td>
+      <td>100 (30.8)</td>
+    </tr>
+    <tr>
+      <td>Endometrioid/clear cell adenocarcinoma</td>
+      <td>48 (14.8)</td>
+    </tr>
+    <tr>
+      <td>Mucinous adenocarcinoma</td>
+      <td>10 (3.8)</td>
+    </tr>
+  </tbody>
+</table>
+
 These samples were randomized 3:1 into training and testing sets to create a neural network. The resulting network performed well with an AUC 0.89 on the training set and AUC 0.80 on the testing set.
 
 We then tested the clinical performance of the final, locked-down diagnostic test on a completely independent external sample set collected from 51 preoperative patients treated in Lodz, Poland (Table 6). In this population, the neural network had a positive predictive value of 91.3% (95% CI: 73.3–97.6%) and a negative predictive value of 78.6% (95% CI: 64.2–88.2%) with an AUC of 0.85 (Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig6-v2.jpg)
+
+**Table 6.**
+ Clinical characteristics of the external validation set.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>Polish external validation set (N = 51)</th>
+    </tr>
+    <tr>
+      <th>Age, years, median (SD)</th>
+      <th>55.5 (16.1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Grade, n (%)</td>
+    </tr>
+    <tr>
+      <td>Borderline</td>
+      <td>4 (7.8)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2 (3.9)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>7 (13.7)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>13 (25.5)</td>
+    </tr>
+    <tr>
+      <td>unspecified</td>
+      <td>3 (5.9)</td>
+    </tr>
+    <tr>
+      <td>Benign</td>
+      <td>22 (43.1)</td>
+    </tr>
+    <tr>
+      <td colspan="2">FIGO Stage, n (%)</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>7 (13.7)</td>
+    </tr>
+    <tr>
+      <td>II</td>
+      <td>3 (5.9)</td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>18 (35.3)</td>
+    </tr>
+    <tr>
+      <td>IV</td>
+      <td>1 (2.0)</td>
+    </tr>
+    <tr>
+      <td>Benign</td>
+      <td>22 (43.1)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Histology, n (%)</td>
+    </tr>
+    <tr>
+      <td>Serous cystadenoma/cystadenofibroma</td>
+      <td>6 (11.8)</td>
+    </tr>
+    <tr>
+      <td>Endometrioma/endometriosis</td>
+      <td>10 (19.6)</td>
+    </tr>
+    <tr>
+      <td>Mature teratoma</td>
+      <td>6 (11.8)</td>
+    </tr>
+    <tr>
+      <td>Borderline serous tumor</td>
+      <td>2 (3.9)</td>
+    </tr>
+    <tr>
+      <td>Borderline seromucinous tumor</td>
+      <td>2 (3.9)</td>
+    </tr>
+    <tr>
+      <td>Serous adenocarcinoma</td>
+      <td>4 (7.8)</td>
+    </tr>
+    <tr>
+      <td>Mucinous adenocarcinoma</td>
+      <td>1 (2.0)</td>
+    </tr>
+    <tr>
+      <td>Endometrioid adenocarcinoma</td>
+      <td>1 (2.0)</td>
+    </tr>
+    <tr>
+      <td>Clear Cell Adenocarcinoma</td>
+      <td>9 (17.6)</td>
+    </tr>
+    <tr>
+      <td>Mixed adenocarcinoma</td>
+      <td>3 (5.9)</td>
+    </tr>
+    <tr>
+      <td>Adenocarcinoma unspecified</td>
+      <td>7 (13.7)</td>
+    </tr>
+  </tbody>
+</table>
 
 Ideally, a serum biomarker should have biologic relevance to the clinical disease. To this end, we returned to the ERASMOS patient set to examine if the expression levels of the miRNAs changed in the cancer patients after surgical cytoreduction. Among the patients with ovarian cancer in the study, 27 had both preoperative and postoperative serum miRNAs profiled. These included 4/7 target miRNAs in the qPCR neural network model. Circulating levels of all three miRNAs decreased within 72 hr of tumor removal, with significant changes for miR-200a-3p and miR-200c-3p (Figure 7A–D).
 
@@ -111,11 +752,11 @@ In conclusion, serum miRNA adds to the toolbox of options to diagnose ovarian ca
 
 ## Materials and methods
 
-## Reporting guidelines
+### Reporting guidelines
 
 Results have been reported according to the Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD) guidelines (Reporting Standards Document) (Collins et al., 2015). The checklist appears in the Supplement.
 
-## Study subjects for model development
+### Study subjects for model development
 
 Our model was developed from two ‘phase II’ specimen sets (i.e. samples collected from women prior to surgery or chemotherapy) - Effects of Regional Analgesia on Serum microRNAs after Oncology Surgery (ERASMOS) and the Pelvic Mass Protocol (Cramer et al., 2010; Elias et al., 2015). To these, healthy controls were selected from subjects who participated in the New England Case-Control (NECC) study, a large epidemiologic study matching cases of ovarian cancer to geographically situated controls (Rice et al., 2013). These studies were approved by the Dana-Farber Cancer Institute Institutional Review Board Protocol 05–060 (NECC study), Brigham and Women’s Hospital Institutional Review Board Protocol 2000-P-001678 (Pelvic Mass Protocol), and Dana-Farber/Harvard Cancer Center Institutional Review Board Protocol 12–532 (ERASMOS). All subjects were enrolled after signing informed consent, and samples were collected fresh in 13 × 75 mm BD Vacutainer Plus Plastic Serum tubes (BD Life Sciences, Franklin Lakes, NJ) with spray-coated silica. Samples were allowed to clot 1 hr at room temperature before processing, then spun down by centrifugation at 1300 x g x 10 min, aliquoted into 1.5 ml vials and stored at – 80 C. Samples from the other studies were thawed and aliquoted for the current study and then refrozen.
 
@@ -123,35 +764,35 @@ ERASMOS enrolled 60 patients from 03/2013 – 05/2015 from the Gynecologic Oncol
 
 The Pelvic Mass Protocol (PMP) enrolled women referred to the DFCI/BWH Gynecologic Oncology service over the period 1992 to 2013 (Williams et al., 2014). Of some 455 women with a pelvic mass enrolled, we selected a total of 120 samples from the following categories: serous cystadenoma (Samuel and Carter, 2016), serous borderline tumor (Samuel and Carter, 2016), Stage I/II invasive serous adenocarcinoma (Häusler et al., 2010), and Stage III/IV invasive serous adenocarcinoma (Wang et al., 2016), endometrioma (Samuel and Carter, 2016), Stage I/II invasive clear cell or endometrioid adenocarcinoma (Häusler et al., 2010), or Stage III/IV invasive clear cell or endometrioid adenocarcinoma (Wang et al., 2016). Overall, 37% of the subjects had benign disease, 12.6% had borderline tumors, 10.1% had low grade carcinomas, and 40.4% had high grade carcinomas. One sample of serous cystadenoma was excluded as an outlier due to a recent cardiovascular event as evidenced by extreme elevation of myocardial ischemia-associated miRNAs. From the most recent phase (2004–2008) of the NECC study, we selected fifteen age and race matched healthy controls matched to the demographics of the EOC cases and benign disease controls from the PMP study. There was no overlap of subjects between the two studies. The samples sizes were based on a plan for a 2:1 ratio of early stage (Stage I/II) cancer cases to advanced stage (Stage III/IV) cases, a 1:1 ratio of invasive cancer cases: benign/borderline/control subjects, and for balanced numbers of healthy control: benign serous: benign endometrioid: borderline serous subjects. Borderline endometrioid or clear cell tumors were exceedingly rare and thus not included. For the qPCR model, we added 113 epithelial ovarian cancer cases and 113 healthy controls, matched for age and collection year. 20 failed quality control, leaving 206 additional samples to add to the 119 samples originally profiled from PMP and creating a 325 sample set for qPCR-based model building and cut-off calibration.
 
-## Study subjects for external validation
+### Study subjects for external validation
 
 Serum samples were collected from consecutive women undergoing surgical evaluation at the Medical University of Lodz, Poland, for a pelvic mass in association with an IRB-approved tumor collection protocol. All subjects were enrolled after signing informed consent, and samples were collected fresh in 13 × 75 mm BD Vacutainer Plus Plastic Serum tubes (BD Life Sciences, Franklin Lakes, NJ) with spray-coated silica. Samples were allowed to clot 1 hr at room temperature before processing, then spun down by centrifugation at 1300 x g x 10 min, aliquoted into 1.5 ml vials and stored at – 80 C. Samples were thawed only for the present study.
 
-## Outcome
+### Outcome
 
 Samples were classified as either invasive cancer or benign/borderline/controls. Although borderline tumors are not strictly benign, they are clinically indolent and seldom fatal, thus we grouped them with benign lesions as our goal was to diagnose the tumors most contributing to mortality. For each patient, an estimated probability of >0.5 was classified as predicting invasive ovarian cancer.
 
-## Next generation sequencing
+### Next generation sequencing
 
 For next generation sequencing (NGS), sample preparation, library construction, and miRNA sequencing were performed by Exiqon, Inc. (Vedbæk, Denmark). 500 μl of human serum from each sample were analyzed in duplicate. RNA from each serum sample was isolated using the miRCURYTM RNA isolation kit (Exiqon, Vedbæk, Denmark) per the manufacturer’s protocol optimized for serum. The quality of the isolated RNA was checked using qPCR. Total RNA was converted into microRNA NGS libraries using the NEBNEXT library generation kit (New England Biolabs Inc., Ipswich, MA) per the manufacturer’s instructions. Each individual RNA sample had adaptors ligated to its 3’ and 5’ ends and converted into cDNA. Then the cDNA was pre-amplified with specific primers containing sample-specific indices. After 18 cycles of pre-PCR the libraries were purified on QiaQuick columns and the insert efficiency evaluated by a Bioanalyzer 2100 instrument on a high sensitivity DNA chip (Agilent Inc., Lexington, MA). The microRNA cDNA libraries were size fractionated on a LabChip XT (PerkinElmer Waltham, MA) and a band representing adaptors and 15–40 bp insert excised using the manufacturer’s instructions. Samples were then quantified using qPCR and concentration standards. Based on the quality of the inserts and the concentration measurements, the libraries were pooled in equimolar concentrations (all concentrations of libraries to be pooled were of the same concentration). The library pools were finally quantified again with qPCR and the optimal concentration of the library pool used to generate the clusters on the surface of a flowcell before sequencing using v3 sequencing methodology according to the manufacturer instructions (Illumina Inc., Dedham, MA). Samples were sequenced on the Illumina NextSeq 500 system (Illumina Inc., Dedham, MA) using a single-end read length of 50 nucleotides at an average of 10 million reads per sample. Sequence tags were mapped to miRbase 20 (http://www.mirbase.org/). After sequencing adapters were trimmed off as part of the base calling, trimming of adapters from the dataset revealed distinct peaks representing microRNA (~18–22 nt). Putative microRNAs not in standard miRBase or Rfam classification were identified based on the prediction algorithm miRPara and are included with the sequencing data in the GEO file (Wu et al., 2011). Expression levels were quantified in tags per million (TPM) (unadjusted data and batch-adjusted data available in Supplementary file 6). TPM is a unit used to measure expression in NGS experiments. The number of reads for a particular miRNA is divided by the total number of mapped reads and multiplied by 1 million. Raw sequencing data are accessible as. fastq files through the Gene Expression Omnibus (GEO) database, www.ncbi.nlm.nih.gov/geo Accession GSE94533. The most stable miRNAs from the sequencing data were selected as normalizers using the NormFinder algorithm (Andersen et al., 2004).
 
-## qPCR
+### qPCR
 
 miRNAs incorporated into the final neural network model were confirmed using qPCR with Exiqon (Vedbæk, Denmark) LNA-containing miRNA-specific probes. We selected nine potential reference miRNAs (hsa-miR-423–3 p, hsa-miR-103a-3p, hsa-miR-222–3 p, hsa-miR-221–3 p, hsa-miR-191–5 p, hsa-miR-181a-5p, hsa-miR-148b-3p, hsa-miR-146b-5p, and hsa-let-7c-5p) from the miRNA sequencing data using the NormFinder algorithm (Andersen et al., 2004). Both the 14 miRNAs from the test set and nine potential reference miRNAs were profiled using Exiqon’s pick-and-mix array with LNA-containing miRNA-specific probes. Small RNA from each serum sample was isolated using the miRCURY RNA isolation kit (Exiqon, Vedbæk, Denmark) per the manufacturer’s protocol optimized for serum. The quality of the isolated RNA was checked using qPCR. All miRNAs were polyadenylated and reverse transcribed into cDNA in a single reaction step. cDNA and ExiLENT SYBR Green master mix were transferred to qPCR panels pre-loaded with primers using a pipetting robot. Amplification was performed using a Roche Lightcycler 480 (Roche, Basel, Switzerland). Amplification quality was determined by generating melting curves. Raw Cq values and melting points, detected by the Lightcycler software, were exported. Assays with several melting points or with melting points deviating from assay specifications were flagged and removed from the dataset. Reactions with amplification efficiency below 1.6 were also removed. Assays giving Cq values within 5 Cq values of the negative control sample were also removed from the dataset.
 
 Spike-in positive controls and no template negative controls were included. Minimum detection values for qPCR were established at 37 cycles; miRNAs with no amplification before that number of qPCR cycles were assumed to have their expression undetectable, and a quantification cycle (Cq) value of 37 was imputed as a substitute value. Raw, background filtered, and normalized data appear in the supplement (Supplementary file 6) in accordance with Minimum Information for Publication of Quantitative Real-Time PCR Experiments (MIQE) Guidelines (Bustin et al., 2009). Data were normalized to the average of the assays detected in all samples (n = 120 samples). The nine selected reference miRNAs were reevaluated after profiling for their stability across the arrays and the average Cq of the two best ones (miR-423–3 p and miR-103a-3p) was selected as the reference for dCq calculations of the 14-miRNA and the 7-miRNA diagnostic sets using the NormFinder method.
 
-## Comparison of preoperative and postoperative samples
+### Comparison of preoperative and postoperative samples
 
 Individual miRNAs measurements from preoperative and postoperative serum samples from the ERASMOS study had been measured previously using multiplexed miRNA hydrogel probes (FirePlex, Abcam, Cambridge, MA) on a flow cytometer. Samples were profiled in duplicate, then replicates were merged. Fluorescence intensity values across all samples were normalized with Firefly Analysis Workbench (Abcam, Cambridge, MA) using the geNorm algorithm to identify appropriate normalizers (Vandesompele et al., 2002).
 
-## Sample size estimation
+### Sample size estimation
 
 We sought a testing set showing a superiority of 0.1 in the area under the receiver operating characteristic curve (AUC) against a value of 0.75 (assumed as a null hypothesis for a clinically useful biomarker) with a statistical power of 80% and a type 1 error probability <0.05 (Hanley and McNeil, 1982). For statistical power estimation purposes we assumed that the model predictions would be moderately correlated with CA-125 levels (r > 0.3). The calculation yielded a required testing set of 44 patients (22 with invasive cancer and 22 without invasive cancer). To train the classifiers, we assumed the training set would require 3-fold more patients (N = 132) bringing the total number of required patient samples to 176 samples. We increased the sample size to 180 to account for potential clinical or technical outliers.
 
-## Model development
+### Model development
 
-## Variable selection
+#### Variable selection
 
 miRNAs were filtered for miRNAs present in at least 50% of both datasets at a detection threshold of 10 tags per million reads (tpm), leaving 192 miRNAs to test in our models. The data were batch-adjusted using ComBat to account for the different study populations (Figure 9; Supplementary file 6) (Johnson et al., 2007). Subject samples were then randomized into ‘training’ and ‘testing’ sets in an approximate 70:30 ratio.
 
@@ -161,7 +802,7 @@ As the dataset included more variables than cases, direct model development on t
 
 **Figure 9.:** (Left) Before batch effect removal. (Right) After batch effect removal using ComBat . ERASMOS – Effects of Regional Analgesia on Serum miRNA after Oncology Surgery Study. PMP – Pelvic Mass Protocol. NECC – New England Case Control study.
 
-## Classification models
+### Classification models
 
 All three sets of variables were analyzed using 11 different classification models for a total of 33 different algorithms. Six models (linear discriminant analysis, logistic regression, multivariate adaptive regression splines, naive Bayes, neural network, and support vector machine) were developed using STATISTICA Data Miner 12.5 (StatSoft, Tulsa, OK, USA). The remaining five models (functional tree, LAD tree, Bayesian network, elastic net regression, and random forest) were created using Weka 3.9.0 (University of Waikato, New Zealand). Detailed descriptions of the classification models appear below. Interestingly, relationships among individual miRNA species were non-linear, so these relationships would likely have been obscured as evidenced by a simple hierarchical clustering of the statistically significant miRNAs from univariate analysis (Figure 10).
 
@@ -171,39 +812,43 @@ All three sets of variables were analyzed using 11 different classification mode
 
 All three sets of variables were analyzed using 11 different classification models for a total of 33 different algorithms. Six models (linear discriminant analysis, logistic regression, multivariate adaptive regression splines, naive Bayes, neural network, and support vector machine) were developed using STATISTICA Data Miner 12.5 (StatSoft, Tulsa, OK, USA). The remaining five models (functional tree, LAD tree, Bayesian network, elastic net regression, and random forest) were created using Weka 3.9.0 (University of Waikato, New Zealand). Interestingly, relationships among individual miRNA species were non-linear, so these relationships would likely have been obscured as evidenced by a simple hierarchical clustering of the statistically significant miRNAs from univariate analysis (Figure 7).
 
-## Neural network
+### Neural network
 
 For the neural network, we built 5000 neural networks for each variable selection method (15000 networks in total) and retained the best one in terms of performance in properly assigning cases to classes in the test set. The networks were built in a semi-automated way. Their structure was of a multilayer perceptron with a number of neurons in the hidden layer iteratively optimized from (n variables)/3 to (n variables)*1.5 to avoid overfitting. Admissible linking functions between the neuron layers were linear, logistic, hyperbolic tangential, and exponential. Neuron weights were calculated using the BFGS (Broyden-Fletcher-Goldfarb-Shanno) algorithm and the network was trained in each epoch using an error back-propagation algorithm to optimize weights in each pass (Broyden, 1970; Fletcher, 1970; Goldfarb, 1970; Shanno, 1970; Shanno and Kettler, 1970).
 
-## Linear discriminant analysis
+### Linear discriminant analysis
 
 The method creates a new set of spatial coordinates that allow for linear separation of the groups. The most discriminative features were extracted on the basis of their correlations and the model used a backward stepwise variable selection algorithm only retaining in the model variables that showed final F values > 5. This two-step filtering (variable selection after one of the three initial variable filtering algorithms) of the variables used in sample classification was aimed at the reduction of the number of miRNAs required for the model to work. Depending on the number of variables selected by the filters, the discriminatory function of the LDA was based on a reduced set of miRNAs that passed the F value threshold and were retained in the model. For the subset of miRNAs filtered by statistical significance, the model used three miRNAs: miR-30d-5p, miR-200c-3p and miR-320d. For CFS variable selection the model used three miRNAs: miR-320d, miR-200a-3p and miR-16-2-3p. The variable selection method based on stratified fold change used a yet another different set of miRNAs: miR-200c-3p, miR-320d and miR-150–5 p.
 
-## Logistic regression
+### Logistic regression
 
 As above, the logistic regression model was built using a backward stepwise variable selection procedure, with variables showing p<0.15 being retained in the final model. The procedure allowed for second order interactions between the variables to detect potential subgroup-specific effects. A standard quasi-Newton estimation procedure was performed in model development. After exclusion of variables with p values > 0.15 in the multivariate model, the miRNAs remaining in the classifier were miR-30d-5p, miR-320d, miR-200c-3p, miR-1246, and an interaction of miR-200c-30p*miR-1246. A logistic regression model based on miRNAs selected by the CFS variable algorithm required only two miRNAs to work: miR-200c-3p and miR-320d. A logistic regression classifier built on the fold change filter-selected miRNAs used three miRNAs: miR-150–5 p, miR-320d, miR-1246, and an interaction between miR-200c-30p*miR-1246. Results of all three models were convergent and the crucial role of miR-200c/miR-320d was confirmed by all models. The logistic regression model was very similar in terms of performance to the neural net in the CFS-selected variable subset. This was a logical consequence of a strong variable filtering leaving too few input variables for the network to identify subtle patterns.
 
-## Multivariate adaptive regression splines
+### Multivariate adaptive regression splines
 
 An alternative approach to modeling of the classification function was the MARS model – a modification of a multivariate joint-point regression which estimates a number of basal function most appropriate for data from specific fragments of the multidimensional dataset. The method is used in complex function modeling of non-monotonous or non-linear associations. Within our analysis we used a MARS model that allowed for up to third degree interactions between the variables, allowing for up to 1.5*(n variables) basal function in each model and penalizing the introduction of additional basal functions by a factor of 2. Interactions between variables were tested for improvement of model performance up to the degree of three. During the model building procedure we iteratively removed variables absent in any of the basal functions until only miRNAs used in at least one basal function remained in the MARS model. Using 11 miRNAs filtered on the basis of significance we created a MARS model composed of 14 basal functions. All functions were transformation of five, single miRNAs: miR-30d-5p, miR-200c-3p, miR-450b-5p, miR-200a-3p, and miR-1307–3 p. The MARS model built on CFS-filtered variables consisted of 7 basal functions based on four miRNAs: miR-200c-3p, miR-320d, miR-16-2-3p, and miR-320b. The final MARS model built on 14 miRNAs filtered by the stratified fold change threshold was optimized at 10 basal functions based on 5 miRNAs: miR-200c-3p, miR-150–5 p, miR-200a-3p, miR-92–3 p, miR-203a, and miR-320c. All MARS models showed relatively poor performance hinting at issues with model overfitting and low specificity (for example, the ROC AUC for the significance-based and CFS variable selection inputs did not meet statistical significance).
 
-## Elastic net regression
+### Elastic net regression
 
 An elastic-net regularized generalized linear model is a linear regression using coordinate descent. In order to train this model we have used Java implementation of a component of the R package ‘glmnet’ in WEKA software. As we wanted to use a regression method for classification, class was binarized and one regression model was built for each class value (i.e. meta-scheme classification via regression). The alpha elastic-net mixing parameter was chosen to be 0.001 while the epsilon value for generating the lambda sequence was set to 10−4. Additionally, a covariance update method was used. This resulted in the following formula: weka.classifiers.meta.ClassificationViaRegression -W weka.classifiers.functions.ElasticNet -- -m2 y -alpha 0.001 -lambda_seq -thr 1.0E-7 -mxit 10000000 -numModels 100 -infolds 10 -eps 1.0E-4 -sparse n -stderr_rule n -addStats n. Please note that reproduction of model induction may require installing additional packages from WEKA package manager.
 
-Elastic net is a type of linear modeling. As so, application of classification via regression resulted in construction of 2 linear functions equations and as the class was binary – those equations had equally opposite coefficients. For example, classifier for class cancer in CFS-based dataset was based on the equation:P(17)=−0.110hsa−miR−16−2−3p+0.050hsa−miR−200a−3p+0.275hsa−miR−200c−3p+0.043hsa−miR−320b+0.261hsa−miR−320d−0.031
+Elastic net is a type of linear modeling. As so, application of classification via regression resulted in construction of 2 linear functions equations and as the class was binary – those equations had equally opposite coefficients. For example, classifier for class cancer in CFS-based dataset was based on the equation:
+
+$$
+P(17)=−0.110hsa−miR−16−2−3p+0.050hsa−miR−200a−3p+0.275hsa−miR−200c−3p+0.043hsa−miR−320b+0.261hsa−miR−320d−0.031
+$$
 
 Model files can be loaded in WEKA for further evaluation.
 
-## Support vector machine
+### Support vector machine
 
 This classifier was built with a set of different entry parameters: kernel function types, function parameters, and hinge loss function. Admissible kernel functions were linear, polynomial (2nd and 3rd order) and radial basis function (gamma from 0.1 to 1 tested in 0.1 increments).All possible combinations were tested and the resulting best model was selected on the basis of classifier performance in the test set. All SVM models codes for significance, CFS and stratified fold change-based variable selection algorithms are available as pmml files. The models performed worse than simpler classification tools (logistic regression/linear discriminant analysis), possibly due to a small number of cases available for testing.
 
-## Naïve bayes classifier
+### Naïve bayes classifier
 
 A priori class probabilities were estimated empirically on the basis of class frequencies in the dataset, normal distribution was assumed for all log-10 transformed miRNA expression values quantified as transcripts per million. The exact probability estimator of the naïve Bayes classifier showed similar performance on all three variable subsets, achieving accuracy comparable to that of the SVM model
 
-## LAD tree
+### LAD tree
 
 Multi-class alternating decision tree using the LogitBoost strategy (LAD Tree [http://www.cs.waikato.ac.nz/~bernhard/papers/ecml2002.pdf]). The number of boosting iterations to use, which determined the size of the trees, was set to be 10.
 
@@ -211,42 +856,50 @@ Formula: weka.classifiers.trees.LADTree -B 10. Please note that reproduction of 
 
 LADTree is a completely deterministic tree that allows decision making by counting respective probabilities on the pathway though the tree. Those trees and probabilities are available as buffer text files and WEKA model files. It is notable, that our configuration allowed the algorithm to consider a maximum of 10 miRNAs in the final schema.
 
-## Functional tree
+### Functional tree
 
 Functional trees are logistic classification decision trees that have logistic regression functions at the inner nodes or leaves. Training of models was performed again by WEKA software. As in default settings, the minimum number of instances at which a node is considered for splitting was 15, number of iterations for LogitBoost was also 15 and no weight trimming was applied.
 
 Formula: weka.classifiers.trees.FT -I 15 F 0 -M 15 -W 0.0. Please note that reproduction of model induction may require installing additional packages from WEKA package manager.
 
-All functional trees were models with one node. In order to infer how this model works, evaluation of values for linear combination function at each node for every class has to be done. For example, for cancer in the CFS-processed dataset the formula is:F1=−1.75+[hsa−miR−16−2−3p]∗−0.29+[hsa−miR−200a−3p]∗0.08+[hsa−miR−200c−3p]∗1.07+[hsa−miR−320b]∗−0.21+[hsa−miR−320d]∗1.29
+All functional trees were models with one node. In order to infer how this model works, evaluation of values for linear combination function at each node for every class has to be done. For example, for cancer in the CFS-processed dataset the formula is:
+
+$$
+F1=−1.75+[hsa−miR−16−2−3p]∗−0.29+[hsa−miR−200a−3p]∗0.08+[hsa−miR−200c−3p]∗1.07+[hsa−miR−320b]∗−0.21+[hsa−miR−320d]∗1.29
+$$
 
 F1 = −1.75 + [hsa-miR-320d] * 1.29
 
-As our classifiers are binary, the result for the second class (F2) should be an opposite number (F1 = -F2). In the next step the value of the following formula should be calculated and compared to threshold of the node:eF1eF1+eF2
+As our classifiers are binary, the result for the second class (F2) should be an opposite number (F1 = -F2). In the next step the value of the following formula should be calculated and compared to threshold of the node:
+
+$$
+\frac{e^{F1}}{e^{F1}+e^{F2}}
+$$
 
 Model files can be loaded in WEKA for further evaluation.
 
-## Bayesian network
+### Bayesian network
 
 A Bayes Network was trained using a K2 search algorithm, which is a hill climbing algorithm restricted by an order on the variables. The initial network used for structure learning was a Naive Bayes Network and there could be only one parent a node. Conditional probability tables of a Bayes network were driven directly from data once the structure has been learned (with alpha value equal to 0.5). Formula: weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5. Please note that reproduction of model induction may require installing additional packages from WEKA package manager. Structures of networks as well as LogScores are available as buffer text files. Model files can be loaded in WEKA for further evaluation.
 
-## Random forest
+### Random forest
 
 Random forest is a technique of random decision forests that considers K randomly chosen attributes at each node. K was calculated as integer of 1 plus binary logarithm of number of predictors. Minimum proportion of the variance needed at a node in order for splitting to be performed was set to 0.001. No backfitting was performed.
 
 Formula: weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1. Please note that reproduction of model induction may require installing additional packages from WEKA package manager. Random forest is a form of bagging with 100 iterations and base learner. Model files can be loaded in WEKA for further evaluation.
 
-## Basic statistical analysis
+### Basic statistical analysis
 
 Differences in the distribution of histopathologic diagnoses, grade, and stage between the study populations were calculated using chi-square tests. Differences in false-positive and false-negative assignment were compared using Fisher’s exact test. Differences in age and CA125 levels between the study populations were calculated using a Mann-Whitney U test. For all tests, a two-tailed p-value<0.05 was considered significant. For the ROC curves, cut-off values for prediction with the best diagnostic performance were established using the Youden index (sensitivityc + specificityc – 1) (Youden, 1950). Preoperative and postoperative serum samples from patients enrolled in ERASMOS were compared using a Wilcoxon matched pairs sign rank test.
 
-## Code availability
+### Code availability
 
 Computer codes are available as raw pmml files in the supplement.
 
-## Public dataset
+### Public dataset
 
 The neural network approach was applied to an independent, publicly available published dataset by Keller, et al. GEO Accession GSE31568 (Keller et al., 2011) In that study, the authors collected blood samples from 454 individuals, including 15 women with ovarian cancer and 70 healthy controls. Further clinical annotation of the samples was not provided. The samples include a variety of other diagnoses (stomach cancer, sarcoidosis, prostate cancer, periodontitis, pancreatitis, pancreatic cancer, multiple sclerosis, melanoma, lung cancer, chronic obstructive pulmonary disease, Wilms tumor, and acute myocardial infarction). Circulating miRNAs were quantified using a highly specific primer extension–based microarray that shows a very small degree of cross-hybridization (Supplementary file 6) (Vorwerk et al., 2008).
 
-## Pathology samples
+### Pathology samples
 
 Paraffin blocks were selected from the surgical pathology files of the Brigham and Women’s Hospital per BWH IRB Protocol #2016P002742. Hematoxylin and eosin sections of the cases were reviewed by a gynecologic pathologist (CC). The tissues had been routinely fixed in 10% neutral formalin and embedded in paraffin. Immunohistochemistry for TP53 and Ki-67 were performed using commercially available antibodies as previously described (Perets et al., 2013). Appropriate positive and negative (without primary antibodies) controls were used simultaneously for each antibody. In situ hybridization was performed using commercially available RNA probes from Exiqon (Vedbæk, Denmark) according to the manufacturer’s instructions. All probe concentrations were 1 nM. A probe for the small nuclear RNA U6 served as a positive control while a non-targeting scramble RNA probe served as negative control.

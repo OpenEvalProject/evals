@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Systemic metabolic reprogramming induced by infection exerts profound, pathogen-specific effects on infection outcome. Here, we detail the host immune and metabolic response during sickness and recovery in a mouse model of malaria. We describe extensive alterations in metabolism during acute infection, and identify increases in host-derived metabolites that signal through the aryl hydrocarbon receptor (AHR), a transcription factor with immunomodulatory functions. We find that Ahr mice are more susceptible to malaria and develop high plasma heme and acute kidney injury. This phenotype is dependent on AHR in -/- Tek -expressing radioresistant cells. Our findings identify a role for AHR in limiting tissue damage during malaria. Furthermore, this work demonstrates the critical role of host metabolism in surviving infection.
+Systemic metabolic reprogramming induced by infection exerts profound, pathogen-specific effects on infection outcome. Here, we detail the host immune and metabolic response during sickness and recovery in a mouse model of malaria. We describe extensive alterations in metabolism during acute infection, and identify increases in host-derived metabolites that signal through the aryl hydrocarbon receptor (AHR), a transcription factor with immunomodulatory functions. We find that Ahr-/- mice are more susceptible to malaria and develop high plasma heme and acute kidney injury. This phenotype is dependent on AHR in Tek-expressing radioresistant cells. Our findings identify a role for AHR in limiting tissue damage during malaria. Furthermore, this work demonstrates the critical role of host metabolism in surviving infection.
 
 ## Introduction
 
@@ -37,9 +37,19 @@ Here, we use metabolomics to systemically characterize metabolism in C57BL/6 mic
 
 ## Results
 
-## Malaria is characterized by stages with unique immune, metabolic, and tissue damage events
+### Malaria is characterized by stages with unique immune, metabolic, and tissue damage events
 
 To identify connections between host metabolism and malaria pathogenesis, we first asked how well-known features of Pc malaria temporally relate to one another. We collected blood and plasma from Pc-infected C57BL/6 mice daily from 0 to 25 days post-infection (DPI) as well as mock-infected control mice on 5, 7, 10, 12, 15, 19, and 25 DPI. We divided this time series into early, acute, and late infection based on parasitemia; while early infection was marked by undetectable parasitemia, parasites infected up to one-third of RBCs during the acute stage, with a small recrudescence in parasitemia occurring during late infection (Figure 1A). As parasitemia rose during acute infection, mice developed pathology including liver damage, indicated by plasma levels of alanine aminotransferase (ALT), and anemia, which was not ameliorated until late infection (Figure 1B). We next evaluated the immune response throughout infection by analyzing peripheral blood for pro-inflammatory cells and cytokines with known functions in malaria pathogenesis and pathology (reviewed in Aitken et al., 2018; Angulo and Fresno, 2002; Dunst et al., 2017; Wolf et al., 2017). We observed that aspects of the immune response were activated prior to the onset of parasitemia and pathology. Interleukin 12 (IL-12p70) and interferon γ (IFNγ) increased in blood during early infection; acute infection was marked by elevated circulating natural killer (NK) cells, neutrophils, and B cells, as well as increased tumor necrosis factor (TNF) and IL-10 (Figure 1C, Figure 1—figure supplement 1). Circulating γδ T cells increased in peripheral blood during late malaria, when they control recrudescence (Mamedov et al., 2018; Figure 1C). This analysis revealed that each day of infection is marked by a unique combination of immune and pathological events, with the immune response both predating and outlasting the parasitemia and pathology of acute infection. Moreover, we established a timeline of many well-understood features of malaria to provide context to our metabolomic analysis.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig1-v1.jpg)
+
+**Figure 1.:** (A) Parasitemia, (B) liver damage and anemia, and (C) selected peripheral blood immune cells and cytokines during 25 days of malaria. (D) 370 metabolites with altered scaled intensity in plasma during malaria, arranged by super pathway. Fold change of scaled intensity of (E) stachydrine, BHBA, (F) arachidonate, and α-tocopherol in plasma during malaria, relative to day 0. (G) Schematic of metabolites and genes of heme metabolism. (H) Fold change of scaled intensity of heme-related metabolites in plasma during malaria, relative to day 0. (I) Fold change of metabolites (n = 77) that were significantly altered in the plasma of both Pc-infected mice and pediatric cerebral malaria patients, plotted by fold change relative to day 0 samples for mice and relative to convalescent values for patients. Data are fitted with a linear model. (J) Scaled intensity of heme-related metabolites during human malaria (n = 11 patients per condition). In A-C, E, F, and H, data are presented as mean + SEM and p-values were determined by comparing each infected time point to all uninfected values using two-way ANOVA with FDR correction (n = 5 mice on 0 DPI, five infected mice each day, and two uninfected mice each day). *p<0.05. In J, p-values were determined using a Wilcox test. **p<0.01. These experiments were performed once.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Expression of heme metabolism genes in livers of Pc-infected mice. p-Values were determined by comparing each infected time point to all uninfected values using two-way ANOVA with FDR correction (n = 5 mice on 0 DPI, five infected mice each day, and two uninfected mice each day). *p<0.05. (B) Scaled intensity of arachidonate, BHBA, stachydrine, and heme in pediatric cerebral malaria patients (n = 11 per condition). p-Values were determined using a Wilcox test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. These experiments were performed once.
 
 We next asked how host metabolism changes during each stage of malaria. Untargeted metabolomics identified 587 metabolites in plasma. We selected metabolites whose maximum or minimum scaled intensity was (a) at least twofold changed from baseline and (b) significantly different from uninfected samples (p<0.05 by t-test with FDR correction). Of the 370 metabolites we identified as altered according to these stringent criteria, 66% increased in scaled intensity during Pc malaria, most during acute infection (Figure 1D). These metabolites illustrate the significant alterations to host energy metabolism that occur during infection (Cumnock et al., 2018). For example, broad classes of lipids increased during acute infection, including acylcarnitines, glycerolipids, glycerophospholipids, and sphingomyelin (Figure 1D). Metabolites associated with food, including stachydrine, a glycine betaine analog found in grains (Filipčev et al., 2018), decreased in scaled intensity during acute infection (Figure 1E), indicative of reduced food intake. Ketone bodies also increased in scaled intensity during acute infection (Figure 1E), suggesting that mice entered ketosis, perhaps linked to decreases in food consumption (Cumnock et al., 2018). Acute infection was also characterized by increased scaled intensity of inflammation-induced metabolites like arachidonate, followed by antiinflammatory metabolites like α-tocopherol, a form of vitamin E, in acute and late infection (Figure 1F). Several γ-glutamyl amino acids increased in scaled intensity during acute and late infection (Figure 1D), suggesting flux through the γ-glutamyl cycle and potentially glutathione biogenesis. A subset of metabolites related to pyrimidine metabolism also increased in scaled intensity during acute and late infection (Figure 1D). Overall, this analysis showed that metabolic changes occurred primarily during acute infection, with relatively few changing only during early or late infection.
 
@@ -49,23 +59,59 @@ To determine how the metabolic changes we observed in our mouse malaria model co
 
 These data identify distinct malaria stages with unique physiological, immune, and metabolic events. Comparison of the plasma metabolome of clinical CM and mouse Pc malaria suggests that Pc infection recapitulates many metabolic changes observed clinically, including increases in heme metabolites during acute infection.
 
-## AHR ligands are more abundant during acute infection
+### AHR ligands are more abundant during acute infection
 
 Biliverdin and bilirubin activate AHR, an immunomodulatory transcription factor with agonists of dietary, microbial, and host origin (Rothhammer and Quintana, 2019; Stockinger et al., 2014). We therefore looked for other AHR ligands in our dataset. Tryptophan catabolism via the kynurenine pathway (Figure 2A) produces metabolites with varying affinities for AHR, including L-kynurenine, kynurenate, 3-hydroxy-DL-kynurenine, and quinolinic acid (Desvignes and Ernst, 2009; Rothhammer and Quintana, 2019). Tryptophan decreased in scaled intensity during acute infection, while downstream products including kynurenine, kynurenate, and quinolinate increased (Figure 2B), as observed previously in a P. berghei ANKA infection (Clark et al., 2005). Pc infection resulted in increased expression of Ido1 and decreased expression of downstream kynurenine pathway genes in the liver (Figure 2—figure supplement 1A), suggesting that these metabolites may be produced in other tissues during malaria. Moreover, in cerebral malaria patients, the scaled intensity of tryptophan, kynurenine, and kynurenate was elevated during acute infection relative to convalescence (Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of metabolites and genes of the kynurenine pathway. (B) Fold change of scaled intensity of kynurenine pathway compounds during Pc infection, relative to day 0 (mean + SEM). p-Values were determined by comparing each infected time point to all uninfected values using two-way ANOVA with FDR correction (n = 5 mice on 0 DPI, five infected mice each day, and two uninfected mice each day). *p<0.05. (C) Scaled intensity of kynurenine pathway compounds in pediatric cerebral malaria patients (n = 11 patients per condition). (D) Quantification of bilirubin (n = 12–13 mice per condition) and (E) kynurenine pathway metabolites (n = 5–6 mice per condition) at 9 days post Pc infection. p-Values were determined in C-E using a Wilcox test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. These experiments were performed once.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Expression of kynurenine pathway genes in livers of Pc-infected mice (n = 2–5 mice per condition). (B) Scaled intensity of indoleacetate during Pc infection. p-Values were determined by comparing each infected time point to all uninfected values using two-way ANOVA with FDR correction n = 5 mice on 0 DPI, five infected mice each day, and (two uninfected mice each day). *p<0.05. Values are presented as mean + SEM. These experiments were performed once.
 
 AHR ligands also include indoles, a class of metabolites derived from microbial metabolism of tryptophan (Rothhammer and Quintana, 2019). By untargeted metabolomics, the scaled intensity of indoleacetate trended towards decreasing during acute infection (Figure 2—figure supplement 1B) consistent with infection-induced anorexia during this time limiting energy input for both the host and microbiota (Figure 1E; Cumnock et al., 2018). Other AHR ligands, including the arachidonic acid derivatives PGE2, leukotriene B4, and lipoxin A4, were not measured in our metabolomics experiment (Denison and Nagy, 2003; Rothhammer and Quintana, 2019).
 
 To confirm our metabolomics data, we quantified the plasma levels of select AHR ligands at 9 DPI in infected and uninfected mice. As in our metabolomics data, the concentration of plasma bilirubin was elevated during acute infection (Figure 2D). We measured tryptophan metabolites by targeted mass spectrometry and confirmed that plasma tryptophan decreased during infection, whereas the concentration of L-kynurenine, 3-hydroxy-DL-kynurenine, and quinolinic acid increased (Figure 2E). During acute malaria, bilirubin reached higher plasma concentration than any tryptophan metabolite by at least one order of magnitude. In summary, we observed that AHR ligands derived from heme and tryptophan metabolism increased in plasma of mice and humans during acute Plasmodium infection.
 
-## AHR signaling is protective during Pc infection
+### AHR signaling is protective during Pc infection
 
 Given that AHR ligands were elevated in plasma during acute infection, we hypothesized that AHR signaling affects the outcome of Pc infection. We infected female littermate Ahr+/+, Ahr+/-, and Ahr-/- mice with Pc and monitored parasite load and survival over a 15-day time course that captured both acute infection and recovery. Ahr-/- mice developed higher parasitemia than Ahr+/+ and Ahr+/- mice (Figure 3A). All genotypes had similar maximum parasite density, although parasite density in Ahr-/- mice peaked a day earlier (Figure 3B). Ahr-/- mice developed more severe anemia, indicated by RBC density (Figure 3C), at least partly due to increased parasite-mediated hemolysis. Ahr-/- mice also had more severe sickness as measured by weight loss and temperature decrease (Figure 3D–E). While most Ahr+/+ and Ahr+/- mice survived, all Ahr-/- mice succumbed to infection between days 9 and 12 (Figure 3F). Because Ahr+/+ and Ahr+/- mice had equivalent disease severity, we used either Ahr+/+ or Ahr+/- mice as controls for subsequent experiments. We observed similar, if less pronounced, trends for male Ahr+/+, Ahr+/-, and Ahr-/- mice (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig3-v1.jpg)
+
+**Figure 3.:** (A) Parasitemia, (B) parasite density, (C) RBCs/μl blood, change in (D) body weight and (E) temperature relative to day 0, and (F) survival of Pc-infected Ahr+/+, Ahr+/- and Ahr-/- mice (n = 10, 8, and 11, respectively). p-Values in A-E were determined using two-way ANOVA with FDR correction comparing Ahr+/- and Ahr-/- mice; values are mean ± SEM. p-Values in F were determined using a log-rank test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Data were combined from three independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Parasitemia, (B) parasite density, and (C) survival of male Pc-infected Ahr+/+, Ahr+/-, and Ahr-/- mice (n = 7, 23, and 9, respectively). p-Values in A, and B were determined using two-way ANOVA with FDR correction; values are mean ± SEM. p-Values in C were determined using a log-rank test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Data were combined from three independent experiments.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Quantification of kynurenine pathway metabolites in Pc- or mock-infected Ido1+/+ and Ido1-/- mice on 9 DPI (n = 5 per condition). (B) Parasitemia, (C) parasite density, and (D) survival of Pc-infected Ido1+/+ and Ido1-/- mice (n = 12–13 per condition). p-Values in A, B, and C were determined using two-way ANOVA with FDR correction; values are mean ± SEM. p-Values in D were determined using a log-rank test. *p<0.05. Data are representative of two independent experiments.
+
 Our metabolomics data suggested that AHR signaling during malaria could be activated by tryptophan and/or heme metabolites. To ask whether susceptibility to malaria is dependent on tryptophan metabolism, we measured kynurenine and other tryptophan metabolites in Pc-infected mice lacking indoleamine 2,3-dioxygenase 1 (Ido1), one of two enzymes that catalyzes the rate-limiting step of the tryptophan pathway (Figure 2A; Fatokun et al., 2013). The concentrations of kynurenine and 3-hydroxy-kynurenine in Ido1-/- mice at 9 DPI were lower than infected Ido1+/+ mice and statistically indistinguishable from uninfected mice of either genotype (Figure 3—figure supplement 2A). Nevertheless, Ido1-/- and Ido1+/+ mice had similar parasite load and survival (Figure 3—figure supplement 2B–D). We conclude that AHR signaling, but not by kynurenine pathway metabolites, is required during Pc infection under our experimental conditions.
 
-## Ahr-/- mice develop AKI during malaria
+### Ahr-/- mice develop AKI during malaria
 
 To understand why Ahr-/- mice were more susceptible to malaria, we asked which tissues were specifically injured in infected Ahr-/- mice compared to Ahr+/- mice. Liver damage is a common pathology during malaria, and Ahr+/- mice had liver damage at 8 DPI, indicated by a 100-fold increase in plasma levels of alanine aminotransferase (ALT) relative to baseline (Figure 4A). Plasma ALT in Ahr-/- mice increased by 8-fold above baseline. Additionally, livers from Pc-infected Ahr+/- mice had more frequent histological evidence of parenchymal necrosis than Ahr-/- mice, although both genotypes showed similar extent of inflammation and margination of leukocytes along the vascular endothelium (Figure 4—figure supplement 1A). Thus, Ahr-/- mice develop less severe liver damage than Ahr+/- mice during Pc malaria. Histological analysis of spleens revealed comparable red pulp extramedullary hematopoiesis and vascular leukocyte margination in both genotypes during infection (Figure 4—figure supplement 1B), while lungs from infected and uninfected Ahr+/- and Ahr-/- mice were within normal limits (Figure 4—figure supplement 1C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig4-v1.jpg)
+
+**Figure 4.:** (A) ALT and (B) BUN in plasma of Ahr+/- and Ahr-/- mice during infection (n = 3–9 per group). (C) Gene expression in kidneys from Ahr+/- and Ahr-/- mice on 8 DPI (normalized to Arbp0 using the ddCT method, n = 5 per condition). (D) Representative images of H and E-stained kidney tissue from Ahr+/- and Ahr-/- mice (magnification: 40x, scale bar: 20 μm). Black asterisks indicate dilated renal tubules with eosinophilic proteinaceous fluid. (E) Total heme in plasma of Pc-infected Ahr+/- and Ahr-/- mice (n = 3–9 per group). (F) Correlation of heme and BUN from individual mice (also plotted in B and E) and fit with a linear model. (G) Total heme in urine of Pc-infected Ahr+/- and Ahr-/- mice (n = 3–8 per group). p-Values in A, B, E, and G were determined using two-way ANOVA with FDR correction; values are mean ± SEM. p-Values in C were determined using a Wilcox test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Each timepoint was collected in one to two independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Black chevrons in A indicate margination of leukocytes along the endothelial lining. The black dotted line in A delineates an area of parenchymal necrosis. Data are representative of two independent experiments.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Msp1 expression in perfused kidneys from Ahr+/- and Ahr-/- mice on 8 DPI (normalized to Hmbs using the ddCT method, n = 6 per group). (B) Representative images of Perls Prussian blue-stained kidney cortex from Pc-infected Ahr+/- and Ahr-/- mice on 8 DPI. The blue signal (arrows) indicates accumulation of iron. (C) Western blot showing levels of heme metabolism genes in liver and kidney tissue from Pc-infected Ahr+/- and Ahr-/- mice on 8 DPI. (D) qRT-PCR analysis of heme metabolism genes in liver tissue from Pc-infected Ahr+/- and Ahr-/- mice on 8 DPI (n = 3–5 per condition). p-Values in A and D were determined using a Wilcox test. *p<0.05. These experiments were performed once.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Survival, (B) RBCs/μl blood, (C) plasma heme, and (D) BUN in phenylhydrazine-treated Ahr+/- and Ahr-/- mice (n = 9 per genotype). p-Value in A was calculated using a log-rank test. p-Values in B-D were determined using two-way ANOVA with FDR correction; values are mean ± SEM. *p<0.05. Data are representative of two independent experiments.
 
 To evaluate kidney function, we measured blood urea nitrogen (BUN) levels. At baseline, mice of both genotypes had comparable BUN. During acute infection, BUN in Ahr+/- mice increased by twofold above baseline, indicative of a mild to moderate decrease in kidney function; in Ahr-/- mice, BUN increased by eightfold, indicative of a substantial decrease in function (Figure 4B; Ramos et al., 2019; Wei and Dong, 2012). The genes Kidney injury molecule 1 (Havcr1) and Lipocalin 2 (Lcn2), markers of kidney injury, were induced in both genotypes by Pc infection, and to significantly higher levels in Ahr-/- mice at 8 DPI (Figure 4C; Han et al., 2002; Moschen et al., 2017). Histologically, kidneys from Ahr-/- mice had evidence of leukocyte margination (most prominently in the arcuate vessels), frequent cortical tubular dilation (with or without luminal protein), and rare tubular epithelial cell necrosis with luminal sloughing, whereas kidneys from Ahr+/- mice only show evidence of leukocyte margination (Figure 4D, Figure 4—figure supplement 1D). Together, these data show that Ahr+/- mice have mild kidney injury during Pc malaria, whereas Ahr-/- mice develop AKI.
 
@@ -73,19 +119,35 @@ We next aimed to determine the cause of kidney pathology in Ahr-/- mice. Parasi
 
 Normal heme metabolism involves binding free heme in plasma with scavengers, intracellular import, and HO-1-mediated breakdown in the liver and other heme-metabolizing organs Chiabrando et al., 2014; during malaria, heme is also excreted in urine (Ramos et al., 2019). The elevated plasma heme observed in Pc-infected Ahr-/- mice could be caused by excess heme release into plasma and/or issues with heme transport and breakdown subsequent to release in plasma. To discriminate between these possibilities, we measured urinary heme and found that Ahr+/- and Ahr-/- mice had similarly elevated heme levels in urine (Figure 4G). To test for inappropriate iron deposits in the kidneys of Ahr-/- mice, we performed Perls Prussian blue staining, which revealed similar accumulation of iron-containing compounds in the cortical tubular epithelial cells and within the tubular lumina of both Ahr+/- and Ahr-/- infected mice (Figure 4—figure supplement 2B). We also evaluated levels of HO-1 and ferritin heavy chain (FTH), two key proteins involved in heme metabolism required for survival during malaria (Ramos et al., 2019), as well as the heme transporters divalent metal transporter 1 (DMT1) and heme carrier protein 1 (HCP1). We did not observe a defect in protein levels in Ahr-/- mice (Figure 4—figure supplement 2C). Transcriptional analysis of an expanded set of heme metabolism genes in liver revealed comparable expression of most genes in infected Ahr+/- and Ahr-/- mice, with the notable exceptions of Heme responsive gene 1 (Hrg1 or Slc48a1) and Solute carrier family 40 member 1 (Slc40a1 or Ferroportin), which remained at baseline levels in infected Ahr-/- mice (Figure 4—figure supplement 2D). Lastly, to determine if AHR is required to control plasma heme in other hemolytic conditions, we employed a model of phenylhydrazine-induced hemolysis (Dutra et al., 2014). Ahr+/- and Ahr-/- mice challenged with phenylhydrazine had equivalent survival, hemolysis, plasma heme, and BUN (Figure 4—figure supplement 3A–D). Overall, despite differences in two key heme metabolism genes, we did not uncover evidence of impaired heme metabolism in Ahr-/- mice that could explain the degree of elevated plasma heme observed during Pc infection. We conclude that the loss of AHR leads to increased heme release during malaria, but not impaired heme metabolism or increased heme sensitivity.
 
-## AHR is necessary in radioresistant cells to control parasitemia, plasma heme, and AKI during Pc infection
+### AHR is necessary in radioresistant cells to control parasitemia, plasma heme, and AKI during Pc infection
 
 As Ahr-/- mice mount altered immune responses during P. berghei ANKA malaria (Brant et al., 2014) and AHR signaling affects immune responses (Rothhammer and Quintana, 2019), we first sought to characterize the immune responses of Ahr-/- mice during infection. Ahr-/- mice had elevated neutrophil levels in blood during acute sickness (Figure 5—figure supplement 1A), in line with other studies linking inappropriate AHR activation to aberrant neutrophil responses in diverse models of inflammation (Di Meglio et al., 2014; Teske et al., 2005; Teske et al., 2008). We found that neutrophil depletion by anti-Ly6G antibody treatment did not affect survival of Ahr-/- mice (Figure 5—figure supplement 1B–D), indicating that AHR-dependent control of neutrophil responses was not responsible for host protection under these conditions. We also observed increased plasma levels of the cytokine TNF in infected Ahr-/- mice (Figure 5—figure supplement 2A), as observed in P. berghei ANKA-infected Ahr-/- mice (Brant et al., 2014). We found that TNF neutralization did not alter infection outcome or kidney function in Ahr-/- mice (Figure 5—figure supplement 2B–C). Thus, while we and others observed altered immune responses to malaria in Ahr-/- mice, we did not identify a link between these differences and Pc infection outcome.
 
 To more broadly test the role of AHR in the cellular immune response to malaria, we generated bone marrow chimeric mice. After transplantation and engraftment, chimeric mice had >85% replacement of all measured cell types except for T cells, which averaged 75% donor-derived (Figure 5—figure supplement 3). Chimeric mice lacking AHR in radiosensitive cells (- → +) had equivalent survival and parasitemia to wild-type chimeric mice (+ → +) (Figure 5A–B). In contrast, mice lacking AHR in radioresistant cells (+ → - and - → -) succumbed to infection and developed higher parasitemia relative to + → + mice (Figure 5A–B). We also looked for evidence of heme dysregulation and AKI in susceptible mice. At 8 DPI, + → - and - → - mice had elevated levels of both plasma heme and BUN compared to + → + mice, while - → + mice did not (Figure 5C–D). Therefore, during Pc infection, AHR in radioresistant cells is necessary to promote survival, limit parasitemia, control plasma heme, and prevent AKI.
 
-## AHR is necessary in Tek-expressing cells to control parasitemia, plasma heme, and AKI during Pc infection
+![Figure 5.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig5-v1.jpg)
+
+**Figure 5.:** (A) Survival, (B) parasitemia, and (C) total heme (8 DPI), and (D) BUN (8 DPI) in Pc-infected bone marrow chimeric mice (n = 6–12 per condition). p-Values in A were determined using a log-rank test. p-Values in B-D were determined using a Wilcox test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Data are representative of two independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) CD11bhiLy6CintLy6G+ neutrophils/μl blood in Pc- infected Ahr+/+ and Ahr-/- mice (n = 6 per genotype). (B) Representative FACS plots of mice at 7 DPI with indicated treatment. (C) Neutrophils/μl blood on 7 DPI in Ahr+/+ and Ahr-/- mice after treatment with either Ly6G depleting antibody or isotype control (n = 4–5 per genotype). (D) Survival of Pc-infected Ahr+/+ and Ahr-/- mice after treatment with either anti-Ly6G depleting antibody or isotype control (n = 4–5 per genotype). These experiments were performed once.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) TNF concentration in plasma of Pc-infected Ahr+/+ (n = 5) and Ahr-/- (n = 3) mice at 8 DPI. (B) Survival and (C) BUN levels in Pc-infected Ahr+/+ and Ahr-/- mice (n = 4–5 per condition) after treatment with either anti-TNF neutralizing antibody or isotype control. These experiments were performed once.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Data are representative of two independent experiments.
+
+### AHR is necessary in Tek-expressing cells to control parasitemia, plasma heme, and AKI during Pc infection
 
 During Pc infection, the sequestration of infected RBCs to endothelial cells in the microvasculature leads to endothelial activation and disrupted barrier integrity (Miller et al., 2013). Foreign antigens in the blood interact with endothelial cells, which can promote innate and adaptive immune responses (Danese et al., 2007; Konradt and Hunter, 2018). AHR is also expressed in endothelial cells, where it regulates blood pressure and vascular development (Agbor et al., 2011; Walisser et al., 2005). Due to the intimate interactions between parasites and the endothelium, we hypothesized that AHR may be required in endothelial cells during malaria. We generated Ahrfl/fl::Tekcre/+ mice, in which AHR is deleted in Tek-expressing cells, including endothelial and hematopoietic cells (Kisanuki et al., 2001; Koni et al., 2001). Ahrfl/fl::Tekcre/+ mice were more susceptible to malaria than control Ahrfl/fl mice (Figure 6A) and had elevated parasitemia (Figure 6B). Ahrfl/fl::Tekcre/+ mice also developed higher plasma heme and BUN than control mice (Figure 6C–D). These experiments reveal that AHR is required in Tek-expressing cells, and previous experiments ruled out a requirement for AHR in radiosensitive cells (Figure 5). Therefore, AHR is necessary in Tek-expressing, radioresistant cells for survival, control of parasitemia, and limiting AKI during Pc infection. Several cell types fit these criteria, including endothelial cells, pericytes, and embryonically derived tissue-resident macrophages (Kisanuki et al., 2001; Koni et al., 2001; Teichert et al., 2017). Our data cannot differentiate between these possibilities.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/60165/elife-60165-fig6-v1.jpg)
 
-**Figure 6.:** Pc infection in Tek-expressing cells.(A) Survival, (B) parasitemia, (C) plasma heme, and (D) BUN in Pc-infected Ahr and fl/flAhr mice (n = 9 per genotype). p-Values in A were determined using a log-rank test. p-Values in B-D were determined using a two-way ANOVA with FDR correction. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Data are representative of two independent experiments.fl/fl::Tekcre/+Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Survival, (B) parasitemia, (C) plasma heme, and (D) BUN in Pc-infected Ahrfl/fl and Ahrfl/fl::Tekcre/+ mice (n = 9 per genotype). p-Values in A were determined using a log-rank test. p-Values in B-D were determined using a two-way ANOVA with FDR correction. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Data are representative of two independent experiments.
 
 ## Discussion
 
@@ -107,33 +169,491 @@ As our appreciation grows for the contribution of metabolic adaptation to surviv
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>TruStain FcX Antibody</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 101319, RRID:AB_1574973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD71 PerCP/Cy5.5 (clone RI7217)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 113815, RRID:AB_2565481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal TER-119 PE/Cy7 (clone TER-119)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 116221, RRID:AB_2137789</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal TCR γ/δ PE (clone UC7-13D5)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 107507, RRID:AB_345265</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD19 BV 785 (clone 6D5)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 115543, RRID:AB_11218994</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD3 BV 650 (clone 17A2)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 100229, RRID:AB_11204249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD8a BV510 (clone 53–6.7)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 100751, RRID:AB_2561389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Ly-6G BV 421 (clone 1A8)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 127628, RRID:AB_2562567</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD4 Alexa Fluor 700 (clone RM4-5)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 100536, RRID:AB_493701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Ly-6C Alexa Fluor 647 (clone HK1.4)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 128010, RRID:AB_1236550</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD335 FITC (clone 29A1.4)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 137606, RRID:AB_2298210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD11b APC-eFluor 780 (clone M1/70)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# 47-0112-82, RRID:AB_1603193</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD41 BUV395 (clone MWReg30)</td>
+      <td>BD Biosciences</td>
+      <td>BD Biosciences Cat# 565980, RRID:AB_2739432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human monoclonal Heme Oxygenase 1 (clone EP1391Y)</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab52947, RRID:AB_880536</td>
+      <td>(1:2000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Ferritin Heavy Chain (clone EPR18878)</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab183781</td>
+      <td>(1:2000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal DMT1 antibody</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab55735, RRID:AB_2239227</td>
+      <td>(1:400 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse polyclonal HCP1/PCFT antibody</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab25134, RRID:AB_2270597</td>
+      <td>(1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal β-Actin (clone AC-15)</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma-Aldrich Cat# A1978, RRID:AB_476692</td>
+      <td>(1:2000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal IgG HRP</td>
+      <td>GE Healthcare</td>
+      <td>GE Healthcare Cat# GENA934, RRID:AB_2722659</td>
+      <td>(1:10,000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse polyclonal IgG HRP</td>
+      <td>Bio-Rad</td>
+      <td>Bio-Rad Cat# 170–6516, RRID:AB_11125547</td>
+      <td>(1:3000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse polyclonal CD45.2 PerCP-Cy5.5 (clone 104)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# 45-0454-82, RRID:AB_953590</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal NK-1.1 FITC (clone PK136)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 108705, RRID:AB_313392</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD11c PE-Cy7 (clone N418)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# 25-0114-82, RRID:AB_469590</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD45.1 PE (clone A20)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 110707, RRID:AB_313496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Ly6G (clone 1A8)</td>
+      <td>Bio X Cell</td>
+      <td>Bio X Cell Cat# BE0075-1, RRID:AB_1107721</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal IgG2a, (clone 2A3)</td>
+      <td>Bio X Cell</td>
+      <td>Bio X Cell Cat# BE0089, RRID:AB_1107769</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal TNFα (clone XT3.11)</td>
+      <td>Bio X Cell</td>
+      <td>Bio X Cell Cat# BE0058, RRID:AB_1107764</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal IgG1 (clone HRPN)</td>
+      <td>Bio X Cell</td>
+      <td>Bio X Cell Cat# BE0088, RRID:AB_1107775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formic acid, reagent grade,≥95%</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. F0507-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hemin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. H9039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenylhydrazine, 97%</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. P26252-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Tryptophan</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. T0254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tryptophan-d5</td>
+      <td>Medical Isotopes</td>
+      <td>Cat. D34384</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Kynurenine</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. K8625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Kynurenine-d4</td>
+      <td>Medical Isotopes</td>
+      <td>Cat. D37563</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Hydroxy-DL-kynurenine</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. H1771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Hydroxy-DL-kynurenine-d3</td>
+      <td>Medical Isotopes</td>
+      <td>Cat. D34384</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kynurenic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. 67667</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kynurenic acid-3,5,6,7,8-d5</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. 793477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,3-Pyridinedicarboxylic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. P63204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Quinolinic Acid-d3</td>
+      <td>Medical Isotopes</td>
+      <td>Cat. D18880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bilirubin Assay Kit</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. MAK126-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ALT Activity Assay</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. MAK052-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bioassay Systems Urea Assay Kit</td>
+      <td>Fisher Scientific</td>
+      <td>Cat. 50-107-8333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq RNA Library Prep Kit v2</td>
+      <td>Illumina</td>
+      <td>Cat. RS-122–2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TNF alpha Mouse ELISA Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# BMS607/3, RRID:AB_2575663</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ahr-/- mice</td>
+      <td>Taconic</td>
+      <td>Cat. 9166, RRID:IMSR_TAC:9166</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ahr+/+ mice</td>
+      <td>Taconic</td>
+      <td>Cat. B6, RRID:IMSR_TAC:b6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ido1-/- mice</td>
+      <td>Jax</td>
+      <td>Cat. 005867, RRID:IMSR_JAX:005867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J mice</td>
+      <td>Jax</td>
+      <td>Cat. 000664, RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>AhRfl/fl mice</td>
+      <td>Jax</td>
+      <td>Cat. 006203, RRID:IMSR_JAX:006203</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tekcre/+ mice</td>
+      <td>Jax</td>
+      <td>Cat. 004128, RRID:IMSR_JAX:004128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>CD45.1 mice</td>
+      <td>Taconic</td>
+      <td>Cat. 4007, RRID:IMSR_TAC:4007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6NCrl mice</td>
+      <td>Charles River</td>
+      <td>Cat. 027, RRID:IMSR_CRL:027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Plasmodium chabaudi)</td>
+      <td>Plasmodium chabaudi AJ</td>
+      <td>Malaria Research and Reference Reagent Resource Center</td>
+      <td>Cat. MRA-756</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bilirubin Assay Kit</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. MAK126-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini kit</td>
+      <td>Qiagen</td>
+      <td>Cat. 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rnase-Free Dnase</td>
+      <td>Qiagen</td>
+      <td>Cat. 79256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III First-Strand synthesis system</td>
+      <td>Fisher Scientific</td>
+      <td>Cat. 18-080-051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FastStart Universal SYBR Green Master (Rox)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. 04913850001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo 10.0.8r1</td>
+      <td>Tree Star</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R v3.4.0</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2 v3.1.0</td>
+      <td>ggplot2</td>
+      <td>https://github.com/tidyverse/ggplot2</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Mice were housed in the Stanford Research Animal Facility according to Stanford University guidelines. The Stanford Administrative Panel on Laboratory Animal Care approved all mouse experiments. Female mice were used unless otherwise indicated. C57BL/6N mice were from Charles River Laboratories were used for the cross-sectional metabolomics experiment. Ahr-/- mice were originally obtained from Taconic (C57BL/6-Ahrtm1.2Arte; 9166) and crossed with Ahr+/+ mice (C57BL/6NTac; B6-F) to generate Ahr+/- mice. Ahr+/- x Ahr+/- crosses produced Ahr+/+, Ahr+/-, and Ahr-/- mice. For higher yields of Ahr-/- mice, Ahr+/- females were crossed to Ahr-/- males. Female Ido1-/- and Ido1+/+ mice were obtained from Jax (B6.129-Ido1tm1Alm/J; 005867 and C57BL/6J; 000664).
 
 Ahrfl/fl::Tekcre/+ mice were generated by crossing C57BL/6J Ahrfl/fl mice (Ahrtm3.1Bra/J; 006203) (Walisser et al., 2005) and C57BL/6J Tekcre/+ mice (B6.Cg-Tg(Tek-cre)12Flv/J; 004128) (Koni et al., 2001). Only male Tekcre/+ mice were used for breeding.
 
-## Infections
+### Infections
 
 Age-matched littermates were separated by genotype and infected at 8–12 weeks old unless otherwise indicated. All Plasmodium chabaudi AJ strain parasites were obtained from the Malaria Research and Reference Reagent Resource Center (MR4) and were tested for contaminating pathogens prior to use. Female passage mice were given intraperitoneal (IP) injections of frozen stocks of Pc-infected RBCs (iRBCs). To measure parasitemia, 2 μl tail blood was collected via tail nicking of restrained mice using sterilized surgical scissors. A thin blood smear was prepared on microscope slides (Globe Scientific 1324), fixed in methanol (Fisher Scientific A454SK-4), and stained with Giemsa (Thermo Fisher Scientific 10092013), and the percentage of iRBCs was counted at 100x magnification. An additional 2 μl blood was diluted in 1 ml of Hanks' Balanced Salt Solution (Fisher Scientific 14185052) to count the number of RBCs/μl blood. Absolute counts were obtained on an Accuri C6 flow cytometer using forward and side scatter. Once parasitemia reached 10–20% (7–9 days), 105 freshly obtained iRBCs diluted in sterile Krebs saline with glucose (KSG; 0.1 M NaCL, 4.6 mM KCl, 1.2 mM MgSO4*7 H20, 0.2% glucose (w/v), pH 7.4) were IP injected into experimental animals. Uninfected control animals were injected with KSG alone.
 
-## Cross-sectional infection
+### Cross-sectional infection
 
 Age-matched C57BL/6N mice were purchased from Charles River Laboratories and infected as one cohort. Five infected mice were sacrificed every day post-infection, five uninfected mice were sacrificed on 0 dpi, and two uninfected mice were sacrificed on days 5, 8, 10, 12, 15, 19, and 25 (a total of 19 uninfected samples across infection). Sample collection was performed as follows: After the collection of 4 μl of blood were collected from each animal (2 μl for thin blood smears and 2 μl for RBC counts), animals were euthanized by CO2 inhalation per Stanford University guidelines. Blood was then collected via cardiac puncture into 100 μl of 0.5 M EDTA, pH 8.0. Some of this blood was used for flow cytometry analysis (~5–12 μl), and the remainder was spun for 5 min at 1000 x g to collect plasma for ALT quantification, Luminex, and metabolomics analysis. All samples were stored at −80°C for later processing.
 
-## Metabolomics and analysis
+### Metabolomics and analysis
 
 100 μl of plasma were sent to Metabolon (http://www.metabolon.com), which performed a combination of gas and liquid chromatography techniques combined with mass spectrometry (GC/LC-MS). A table of 587 detected metabolites was returned with the raw area count, which were normalized by dilution and rescaled to set the median equal to 1 (‘scaled intensity’). Median fold change (MFC) for each metabolite at each timepoint was calculated relative to the median value of uninfected day 0 samples. Next, the greatest magnitude MFC was identified for each metabolite, and metabolites with absolute value MFC <2 were removed from further analysis. Lastly, 364 significantly changed metabolites were identified by comparing the time point with the greatest magnitude MFC to the day 0 time point (adjusted p-value<0.05 by t-test with FDR correction).
 
-## Luminex
+### Luminex
 
 This assay was performed in the Human Immune Monitoring Center at Stanford University. Mouse 38-plex kits were purchased from eBiosciences/Affymetrix and used according to the manufacturer’s recommendations with modifications as described below. Briefly, beads were added to a 96-well plate and washed in a Biotek ELx405 washer. 60 μl of plasma per sample were submitted for processing. Samples were added to the plate containing the mixed antibody-linked beads and incubated at room temperature for one hour followed by overnight incubation at 4°C with shaking. Cold and room temperature incubation steps were performed on an orbital shaker at 500–600 rpm. Following the overnight incubation, plates were washed as above and then a biotinylated detection antibody was added for 75 min at room temperature with shaking. Plates were washed as above and streptavidin-PE was added. After incubation for 30 min at room temperature a wash was performed as above and reading buffer was added to the wells. Each sample was measured as singletons. Plates were read using a Luminex 200 instrument with a lower bound of 50 beads per sample per cytokine. Custom assay control beads by Radix Biosolutions were added to each well. Each cytokine was normalized to its median value on each plate. Significance was calculated by comparing each infected timepoint to values from uninfected mice across infection.
 
-## Flow cytometry
+### Flow cytometry
 
 In experiments assessing general immune cell classes in the blood, approximately 10 million cells were plated in FACS buffer (PBS, 0.2% fetal bovine serum (Sigma), 5 mM EDTA). Prior to staining, the cells were incubated in TruStain FcX amntibody (Biolegend) for at least 5 min at 4°C. A cocktail containing the Live/Dead Fixable Blue stain (Fisher L34962) and antibodies against the following antigens was added to the blocked cells: CD71 PerCP-Cy5.5 (clone RI7217), TER-119 PE-Cy7 (TER-119), TCRγδ PE (UC7-13D5), CD19 Brilliant Violet (BV) 785 (6D5), CD3 BV650 (17A2), CD8 BV510 (53–6.7), Ly6G BV421 (1A8), CD4 Alexa Fluor 700 (GK1.5), Ly6C Alexa Fluor 647 (HK1.4), CD335 FITC (29A1.4) (all from Biolegend); CD11b Alexa 780 (M1/70, eBioscience); CD41 BUV395 (MWReg30, BD Biosciences). All stains were performed for 12–15 min at 4°C. 5 μl of CountBright counting beads (Invitrogen) were added to each samples such that absolute counts per μl of blood could be back calculated. Data were acquired on an LSR Fortessa (BD Biosciences) and analyzed using FlowJo 10.0.8r1 (Tree Star). Significance was calculated by comparing each infected timepoint to values from uninfected mice across infection.
 
-## Mass spectrometry
+### Mass spectrometry
 
 The analytes were tryptophan (TRP), kynurenine (KYN), 3-hydroxykynurenine (3HK), kynurenic acid (KA), and quinolinic acid (QA) and the internal standards were tryptophan-d5 (TRP-d5), kynurenine-d4 (KYN-d4), 3-hydroxykynurenine-d3 (3HK-d3), kynurenic acid-d5 (KA-d5), quinolinic acid-d3 (QA-d3).
 
@@ -147,42 +667,143 @@ Selected reaction monitoring (SRM) was used for quantification. Analyte mass tra
 
 Quantitative analysis was done with LabSolutions LCMS software (Shimadzu) using an internal standard approach. Calibration curves were linear (R > 0.99) over the concentration range using a weighting factor of 1/X2 where X is the concentration. The back-calculated standard concentrations were ±15% from nominal values, and ±20% at the lower limit of quantitation (LLOQ).
 
-## Longitudinal infection monitoring
+### Longitudinal infection monitoring
 
 Sampling was performed as described previously (Cumnock et al., 2018; Torres et al., 2016) between 7AM-12PM. Temperature was measured by rectal probe (Physitemp Instruments Inc BAT-12 and World Precision Instruments RET-3) and was recorded daily with weight. Mice were restrained and approximately 16 μl of tail blood was collected as described above. Thin blood smears were generated using 2 μl blood, and parasitemia and RBCs/μl blood were measured as described above. Parasite density was calculated by multiplying the percent parasitemia from the blood smears by the daily RBC counts. An additional 12 μl blood was collected for other purposes. Tails were bled gently to prevent hemolysis from pressure. Age-matched mice were sampled as described except that only 4 μl blood was collected (2 μl for parasitemia, 2 μl for measuring anemia).
 
-## Histology
+### Histology
 
 Mice were euthanized and portions of liver, kidney, lung, and spleen were harvested for histology, fixed in 10% formalin (VWR 50-420-850), routinely processed, embedded in paraffin, sectioned, and stained with hematoxylin and eosin and Perls Prussian blue as indicated. Blinded slides were evaluated by a veterinary pathologist using an Olympus BX43 upright brightfield microscope. Photomicrographs were captured using an Olympus DP27 camera and the Olympus cellSens software.
 
-## RNA isolation and qRT-PCR
+### RNA isolation and qRT-PCR
 
 Mice were euthanized at the indicated timepoints. When indicated, perfusion was performed by cutting the vena cava and slowly introducing 10 ml of cold PBS into circulation via the heart. Tissues were dissected, snap-frozen in liquid nitrogen, and transferred to −80°C. RNA was isolated from thawed tissue (30–50 mg) using the RNeasy Mini kit (Qiagen 74104) and treated with DNAse (Qiagen 79256). cDNA was synthesized from 1 μg of RNA using SuperScript III First-Strand synthesis system (Fisher Scientific 18-080-051). Transcripts were amplified using FastStart Universal SYBR Green Master (Rox; Millipore Sigma 04913850001) and gene-specific primers (Table 1).
 
-## Western blotting
+**Table 1.**
+ qRT-PCR primers used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hp</td>
+      <td>GCTATGTGGAGCACTTGGTTC</td>
+      <td>CACCCATTGCTTCTCGTCGTT</td>
+      <td>PrimerBank 8850219a1</td>
+    </tr>
+    <tr>
+      <td>Hpx</td>
+      <td>AGCAGTGGCGCTAAATATCCT</td>
+      <td>CCATTTTCAACTTCGGCAACTC</td>
+      <td>PrimerBank 23956086a1</td>
+    </tr>
+    <tr>
+      <td>Hrg1</td>
+      <td>GACGGTGGTCTACCGACAAC</td>
+      <td>TCCTCCAGTAATCCTGCATGTA</td>
+      <td>PrimerBank 13385856a1</td>
+    </tr>
+    <tr>
+      <td>Hmbs</td>
+      <td>AAAGTTCCCCAACCTGGAAT</td>
+      <td>CCAGGACAATGGCACTGAAT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hmox1</td>
+      <td>AAGGAGGTACACATCCAAGCCGAG</td>
+      <td>GATATGGTACAAGGAAGCCATCACCAG</td>
+      <td>Ramos et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Fth</td>
+      <td>CCATCAACCGCCAGATCAAC</td>
+      <td>GCCACATCATCTCGGTCAAA</td>
+      <td>Ramos et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Mfsd7b</td>
+      <td>TCTTCAGCCTTTACTCGCTGG</td>
+      <td>GAAGTCCTCGAACACGTTGCT</td>
+      <td>PrimerBank 124486924 c1</td>
+    </tr>
+    <tr>
+      <td>Mfsd7c</td>
+      <td>GGAGAAAGCGATTAGAGAAGGC</td>
+      <td>CTGATGGCTGCATTTCACAGT</td>
+      <td>PrimerBank 26340226a1</td>
+    </tr>
+    <tr>
+      <td>Slc40a1</td>
+      <td>TGCCTTAGTTGTCCTTTGGG</td>
+      <td>GTGGAGAGAGAGTGGCCAAG</td>
+      <td>Ramos et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Tfrc</td>
+      <td>GTTTCTGCCAGCCCCTTATTAT</td>
+      <td>GCAAGGAAAGGATATGCAGCA</td>
+      <td>PrimerBank 11596855a1</td>
+    </tr>
+    <tr>
+      <td>Msp1</td>
+      <td>ACTGAAGCAACAACACCAGC</td>
+      <td>GTTGTTGATGCACTTGCGGGTTC</td>
+      <td>Cheesman et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Havcr1</td>
+      <td>TGGTTGCCTTCCGTGTCTCT</td>
+      <td>TCAGCTCGGGAATGCACAA</td>
+      <td>Kulkarni et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Lcn2</td>
+      <td>TGGCCCTGAGTGTCATGTG</td>
+      <td>CTCTTGTAGCTCATAGATGGTGC</td>
+      <td>PrimerBank 1019908a1</td>
+    </tr>
+    <tr>
+      <td>Arbp0</td>
+      <td>CTTTGGGCATCACCACGAA</td>
+      <td>GCTGGCTCCCACCTTGTCT</td>
+      <td>Ramos et al., 2019</td>
+    </tr>
+  </tbody>
+</table>
+
+### Western blotting
 
 Dissected tissues were snap-frozen in liquid nitrogen and transferred to −80°C. Approximately 100 mg of tissue was homogenized in RIPA buffer (50 mM Tris pH 8.0, 150 mM NaCl, 0.1% SDS (w/v), 0.5% sodium deoxycholate (w/v), 1% Triton X-100 (v/v)) with 1X protease inhibitors (Millipore Sigma 11836170001). Total protein content was measured by Bradford (Fisher Scientific PI23200) and 25 μg protein was diluted in 1X Laemmli Sample Buffer (Bio-Rad 1610747) containing β-mercaptoethanol. Samples were incubated at 95°C for 5 min, separated by SDS-PAGE on 4–12% polyacrylamide gels (Thermo Fisher Scientific NP0323BOX) and transferred to PVDF membranes (Bio-Rad 1704156) using the TransBlot Turbo System (Bio-Rad). Membranes were blocked in 5% nonfat milk dissolved 1X PBS (1 g NACl,. 2 g KCl, 1.44 g Na2HPO4 dibasic,. 24 g KH2PO4 monobasic dissolved in 1 L water, adjusted pH to 7.4 and autoclaved) containing 0.1% Tween-20 (Millipore Sigma P1379) at room temperature for 1 hr. Membranes were incubated with primary antibodies against HO-1 (Abcam ab52947, 1:2000), FTH (Abcam ab183781, 1:2000), DMT1 (Abcam ab55735, 1:400), HCP1 (Abcam ab25134, 1:1000), and β-Actin (Sigma A1978, 1:2000) overnight at 4°C, washed with PBST, and incubated with anti-rabbit IgG-HRP (Sigma GENA934, 1:10,000) or anti-mouse IgG-HRP (Bio-Rad 1706516, 1:3000) for 1 hr at room temperature. Membranes were again washed with PBST and HRP signal was detected using SuperSignal West Femto Chemiluminescent Substrate (Fisher Scientific PI34095) on a ChemiDoc imager (Bio-Rad).
 
-## Quantification of tissue injury markers and plasma compounds
+### Quantification of tissue injury markers and plasma compounds
 
 Blood from cardiac punctures or tail bleeds were processed into plasma as described above. In the cross-sectional infection experiment, ALT was measured on a Dimension Xpand analyzer (Siemens). A medical technologist performed all testing and reviewed all data. For all other experiments, bilirubin, ALT, and BUN were measured using kits (bilirubin by Millipore Sigma MAK126-1KT, ALT by Millipore Sigma MAK052-1KT, and BUN by Fisher Scientific 50-107-8333). Plasma samples for bilirubin were collected in the dark and measured within 5 hr to minimize UV degradation (Rehak et al., 2008). Heme in plasma and urine were measured as described previously (Ramos et al., 2019). Plasma and urine were diluted between 1:1000 and 1:25 in water. 150 μl formic acid (Millipore Sigma F0507-100ML) was added and absorbance was measured at 405 nm. Urine samples were also measured at 355 nm and background absorbance was corrected using the formula λ405nm = λ405nmx (λ405nm/λ355nm). Absorbance was compared to a standard curve of hemin (Millipore Sigma H9039-1G) at 0,. 5, 1, 5, 10, and 20 uM. Day 0 samples were excluded from heme analyses if visual inspection revealed hemolysis caused by the bleeding process; this did not occur on subsequent bleeding. Values from cardiac puncture blood were corrected for the percentage of EDTA in the total volume of the cardiac puncture.
 
-## Bone marrow chimeras
+### Bone marrow chimeras
 
 CD45.1 Ahr+/+ (B6.SJL-Ptprca/BoyAiTac; 4007 F), CD45.2 Ahr+/+ (C57BL/6NTac; B6-F), and CD45.2 Ahr-/- mice were lethally irradiated (2 × 6 Gy, 6 hr apart) at 5–7 weeks of age. Bone marrow from donor CD45.1 Ahr+/+ and CD45.2 Ahr-/- mice was delivered by tail vein injection 1 hr after the second radiation dose. Mice were maintained for 2 weeks on autoclaved food and water containing 2 mg/ml neomycin sulfate (VWR 89149–866) and 1000 U/ml polymyxin B (Millipore Sigma P4932-5MU). Bone marrow engraftment was assessed 8 weeks after transplantation by processing 10 μl of tail vein blood as described above and staining with Live/Dead Fixable Blue stain (Fisher L34962) and the following antibodies: CD45.2 PerCP-Cy5.5 (Fisher/Invitrogen 45-0454-80), NK-1.1 FITC (Biolegend 108706), CD11c PE-Cy7 (Fisher/Invitrogen 25-0114-82), CD45.1 PE (Biolegend 110707), CD19 BV 785 (Biolegend 115543), CD3 BV 650 (Biolegend 100229), CD8a BV 510 (Biolegend). Mice were infected 9 weeks after transplantation. Sampling was performed as described in Longitudinal infection monitoring with the following modification: 12 μl of blood for BUN and heme quantification was collected on day 0, and 7–9 only. Flow panel used for validation.
 
-## Phenylhydrazine treatment
+### Phenylhydrazine treatment
 
 Phenylhydrazine (Sigma Aldrich P26252-100G) was dissolved in sterile PBS immediately before treatment. Mice were I.P. injected with 0.1 mg/g phenylhydrazine in 100 μl.
 
-## RNA-seq
+### RNA-seq
 
 Liver RNA was purified using TRIzol (Fisher 15596026). cDNA libraries were prepared using a TruSeq RNA Library Prep Kit v2 (Illumina RS-122–2001) with 500 ng RNA as input. A HiSeq 4000 (Illumina) was used for sequencing, with a paired-end sequencing length of 75 bp. Sequencing data can be accessed at GSE 150268.
 
-## Neutrophil depletion
+### Neutrophil depletion
 
 Mice were IP injected with 250 μg of either anti-Ly6G clone 1A8 (Bio X Cell BE0075-1) or IgG2a isotype control (Bio X Cell BE0089) in 100 μl of sterile PBS on 5, 6, and 7 DPI. Each day, approximately 16 μl of tail blood was collected for assorted analyses, including flow cytometry as described above. Because treatment with Ly6G interferes with detection of neutrophils, we defined neutrophils as CD11bhiLy6CintLy6G+ using a gating strategy as described previously (Shi et al., 2011).
 
-## TNF neutralization
+### TNF neutralization
 
 Plasma TNF was measured by ELISA (Fisher BMS607-3). To neutralize TNF, mice were IP injected with 500 μg anti-TNF clone XT3.11 (Bio X Cell BP0058) or IgG1 isotype control (Bio X Cell BE0088) in 100 μl of sterile PBS on 7 DPI.

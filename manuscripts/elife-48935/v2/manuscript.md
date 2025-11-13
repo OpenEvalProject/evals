@@ -33,7 +33,7 @@ In this paper, we examine the functions of the DIP-γ-Dpr11 interaction pair in 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig1-v2.jpg)
 
-**Figure 1.:** (A–C) Overview of the Drosophila visual system. (A) Compound eye. Each ommatidium contains 8 PRs. Rhabdomeres of 7 PRs are shown in diagram, because R7 is stacked on top of R8. (B) R1-6 are outer PRs, and R7 and R8 are inner PRs. Three ommatidial subtypes in the retina: yellow (y), pale (p) and Dorsal Rim Area (DRA). Each ommatidium is assigned as y or p based on Rh expression patterns in R7 and R8 PRs. y and p ommatidia are distributed randomly in a ~65y:35p ratio in wild-type. Rh4, Dpr11 and Spineless transcription factor (Ss) are expressed in R7 in y ommatidia only. (C) Schematic of the adult optic lobe. yR7 and pR7, and yR8 (green) and pR8 (cyan) project to M6 and M3 layers of the medulla, respectively. The axons of outer PRs (gray) terminate in the lamina. yR7 and pR7 synapse on yDm8 and pDm8 in M6. Re: Retina; La: Lamina; Me: Medulla; Lop: Lobula plate; Lo: Lobula. (D) The DIP-γ hub consists of Dprs 11, 15, 16 and 17. Dprs are 2-IgSF domain CSPs that interact with DIPs, which are 3-IgSF domain CSPs. KDs shown here are from Cosmanescu et al. (2018). Ig domains indicated by ovals. (E) dpr11 is expressed in R7 (small yellow circle) in select ommatidia (yellow dashed circle) and absent in others (white dashed circle) in the retina. R7 indicated by small circles. Mid-pupal retina labeled with anti-Pros for all R7 PRs (magenta), anti-GFP for Mi>GFPdpr11 reporter (green) and anti-Elav for all neurons (blue). Maximum intensity projection; scale bar 5 µm. (Mi>GFPF–F’) yR7 co-expresses dpr11 and Rh4-LacZ. Dpr11 is expressed in Rh4Mi>GFP+ R7 in yellow ommatidia (yellow dashed circle) and absent in Rh3+ R7 in pale ommatidia (white dashed circle). Late pupal retina labeled with anti-β-galactosidase for Rh4-LacZ reporter (red), anti-GFP for dpr11 reporter (green), and anti-Chaoptin (Chp; blue) for all PRs. Single confocal slice; scale bar 5 µm. (Mi>GFPG–G’) yDm8 and pDm8 cell bodies in adult medullary cortex. Adult optic lobes labeled with anti-RFP for pan-Dm8 driver >RFP (red), anti-GFP for DIP-γ reporter (green) and anti-Dac for transcription factor Dachshund (blue). yDm8 expresses RFP, GFP and Dac and pDm8 expresses RFP and Dac. Inset in G shown in G’. yDm8 and pDm8 cell bodies indicated (arrows in merged, arrowheads in individual panels). Maximum intensity projection; scale bar 20 µm. (Mi>GFPH) yDm8 and pDm8 populations in adult medullary cortex. The cell numbers of y and p Dm8 neurons determined with the pan-Dm8 driver and DIP-γ are indicated on the y-axis. yDm8: 266.4+ /- 17.2, pDm8: 179.4+ /- 25.6 (n = 8–11 OLs; error bars indicate std. deviation). (Mi>GFPI) Matching of yDm8:pDm8 ratio in the medulla with yR7:pR7 ratio in the retina. R7 and Dm8 ratios were determined as in F and G-H, respectively. Ratios (expressed as percentages) are shown on the y-axis. Graph shows mean + /- std. deviation and unpaired Student’s t-test p-values. yR7:pR7 63.9+ /- 4.4 (n = 8 retinas), yDm8:pDm8 60.2+ /- 4.6 (n = 8 OLs), not significant (n.s.). Complete genotypes in Table 2 of Materials and methods.
+**Figure 1.:** (A–C) Overview of the Drosophila visual system. (A) Compound eye. Each ommatidium contains 8 PRs. Rhabdomeres of 7 PRs are shown in diagram, because R7 is stacked on top of R8. (B) R1-6 are outer PRs, and R7 and R8 are inner PRs. Three ommatidial subtypes in the retina: yellow (y), pale (p) and Dorsal Rim Area (DRA). Each ommatidium is assigned as y or p based on Rh expression patterns in R7 and R8 PRs. y and p ommatidia are distributed randomly in a ~65y:35p ratio in wild-type. Rh4, Dpr11 and Spineless transcription factor (Ss) are expressed in R7 in y ommatidia only. (C) Schematic of the adult optic lobe. yR7 and pR7, and yR8 (green) and pR8 (cyan) project to M6 and M3 layers of the medulla, respectively. The axons of outer PRs (gray) terminate in the lamina. yR7 and pR7 synapse on yDm8 and pDm8 in M6. Re: Retina; La: Lamina; Me: Medulla; Lop: Lobula plate; Lo: Lobula. (D) The DIP-γ hub consists of Dprs 11, 15, 16 and 17. Dprs are 2-IgSF domain CSPs that interact with DIPs, which are 3-IgSF domain CSPs. KDs shown here are from Cosmanescu et al. (2018). Ig domains indicated by ovals. (E) dpr11Mi>GFP is expressed in R7 (small yellow circle) in select ommatidia (yellow dashed circle) and absent in others (white dashed circle) in the retina. R7 indicated by small circles. Mid-pupal retina labeled with anti-Pros for all R7 PRs (magenta), anti-GFP for dpr11Mi>GFP reporter (green) and anti-Elav for all neurons (blue). Maximum intensity projection; scale bar 5 µm. (F–F’) yR7 co-expresses dpr11Mi>GFP and Rh4-LacZ. Dpr11 is expressed in Rh4+ R7 in yellow ommatidia (yellow dashed circle) and absent in Rh3+ R7 in pale ommatidia (white dashed circle). Late pupal retina labeled with anti-β-galactosidase for Rh4-LacZ reporter (red), anti-GFP for dpr11Mi>GFP reporter (green), and anti-Chaoptin (Chp; blue) for all PRs. Single confocal slice; scale bar 5 µm. (G–G’) yDm8 and pDm8 cell bodies in adult medullary cortex. Adult optic lobes labeled with anti-RFP for pan-Dm8 driver >RFP (red), anti-GFP for DIP-γMi>GFP reporter (green) and anti-Dac for transcription factor Dachshund (blue). yDm8 expresses RFP, GFP and Dac and pDm8 expresses RFP and Dac. Inset in G shown in G’. yDm8 and pDm8 cell bodies indicated (arrows in merged, arrowheads in individual panels). Maximum intensity projection; scale bar 20 µm. (H) yDm8 and pDm8 populations in adult medullary cortex. The cell numbers of y and p Dm8 neurons determined with the pan-Dm8 driver and DIP-γMi>GFP are indicated on the y-axis. yDm8: 266.4+ /- 17.2, pDm8: 179.4+ /- 25.6 (n = 8–11 OLs; error bars indicate std. deviation). (I) Matching of yDm8:pDm8 ratio in the medulla with yR7:pR7 ratio in the retina. R7 and Dm8 ratios were determined as in F and G-H, respectively. Ratios (expressed as percentages) are shown on the y-axis. Graph shows mean + /- std. deviation and unpaired Student’s t-test p-values. yR7:pR7 63.9+ /- 4.4 (n = 8 retinas), yDm8:pDm8 60.2+ /- 4.6 (n = 8 OLs), not significant (n.s.). Complete genotypes in Table 2 of Materials and methods.
 
 R1-R6 synapse onto lamina neurons (L1-L5), which in turn project to layers M1-M5 of the medulla. R7 and R8 axons grow through the lamina and into the medulla, where they terminate in layers M6 (R7) and M3 (R8) (Figure 1C). The medulla contains about 100 types of neurons. Some of these arborize only in the medulla, either in single columns or across multiple columns, while others have dendrites in the medulla and project to higher order visual areas, including the lobula and lobula plate (for reviews see Kolodkin and Hiesinger, 2017; Millard and Pecot, 2018; Plazaola-Sasieta et al., 2017). One of the major synaptic targets of R7 PRs in medulla layer M6 is Dm8, a wide-field amacrine neuron that pools information from 12 to 16 R7s (Gao et al., 2008).
 
@@ -47,7 +47,7 @@ Given the existence of separate yellow and pale circuits, how does the system en
 
 ## Results
 
-## Dm8 and R7 subtypes are present in matching ratios
+### Dm8 and R7 subtypes are present in matching ratios
 
 DIP-γ interacts with four Dpr partners with similar affinities: Dprs 11, 15, 16 and 17 (Figure 1D). A subset of R7 PRs in pupal retina express GFP from the dpr11MiMIC reporter line (henceforth denoted as dpr11Mi>GFP). These were confirmed to be yR7 by co-labeling with a Rhodopsin marker, Rh4-LacZ, in late pupae (Figure 1B, E–F). Reporters for Dprs 15, 16, and 17 are not detectably expressed in the pupal retina.
 
@@ -55,13 +55,21 @@ Here, we classify two subtypes of Dm8 neurons, the major synaptic partners of R7
 
 Dm8 neurons are both unicolumnar and multicolumnar in their coverage of columns in the neuropil. The arbor of each Dm8 contacts 12–16 medulla columns, but most synapses are made with the R7 in the central (home) column (Fischbach and Dittrich, 1989; Gao et al., 2008; Takemura et al., 2013; Takemura et al., 2015). Figure 2A shows a horizontal view (side-view as in schematic in Figure 1C) of a rendering of an R7 terminal and a Dm8 arbor from an EM reconstruction (Takemura et al., 2015). The thick bundle of dendritic processes at the center of the arbor makes extensive contacts with the R7 home column, and contains the majority of R7-Dm8 synapses (Figures 2A and 3). These central dendritic projections extend distally from M6 to M4, and we have denoted them as the ‘sprig’ of a Dm8 arbor. The lateral arbor of each Dm8 overlaps extensively with other Dm8 arbors, but the center of highest arbor density, the sprig, tiles the medulla. The coverage pattern of a typical Dm8 is thus indicative of approximately one cell per column.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig2-v2.jpg)
+
+**Figure 2.:** (A) Rendering of a yR7 terminal and a yDm8 arbor from an EM reconstruction, in a horizontal view. The distal dendritic projection (sprig; arrowhead) of Dm8 extensively contacts the R7 home column (asterisk). Dm8, cyan; R7, magenta. Black balls indicate R7 T-bars (output synapses). (B–E) Single flipout clones generated either with the DIP-γ split-Gal4 Dm8 driver (denoted as yDm8 split-Gal4 driver in Figure 2—figure supplement 1A) for yDm8 or with pan-Dm8 driver for pDm8. Adult optic lobes labeled with anti-GFP for flipout clone, anti-LacZ for yR7 reporter Rh4-lacZ and anti-Chp for all PRs. Medulla columns were identified as pale or yellow with yR7 reporter (magenta) and Chp (blue); pR7 columns were identified by the absence of Rh4-LacZ labeling. Maximum intensity projection; scale bar 5 µm. (B–B’) Horizontal view of a yDm8. The yDm8 distal dendritic projection (sprig; arrowhead) extends distally along the home column yR7 (asterisk) to the M4 layer. (C–C’) Horizontal view of a pDm8. pDm8 has a similar morphology to yDm8, with the sprig (arrowhead) in contact with a pR7 home column (asterisk). (D–D’) Cross-sectional (top-down) view of a yDm8. The dendritic arbor of this yDm8 contacts 13 columns (8y and 5 p). Home column yR7 indicated by yellow dashed circle. (E–E’) Cross-sectional view of a pDm8. The dendritic arbor of this pDm8 contacts 14 columns (8 p and 6y). Home column pR7 indicated by white dashed circle. (F) DIP-γ-expressing yDm8 neurons specifically contact Dpr11-expressing yR7 home columns. Horizontal view of mid-pupal medulla labeled with anti-DIP-γ (red), anti-GFP for dpr11Mi>GFP reporter (green) and anti-Chp for all PRs (blue). All yR7 PRs have DIP-γ labeling abutting the R7 (asterisks) and none of the pR7 PRs have any DIP-γ labeling apposed to them (bracket). Maximum intensity projection; scale bar 10 µm. (G) yDm8 and pDm8 populations have independent origins. The dendritic arbors of yDm8 neurons are labeled in flies carrying DIP-γ Gal4 >Flp and pan-Dm8 LexA >LexAop FRT-stop-FRT GFP transgenes. pDm8 that are not labeled appear as gaps (arrowheads) in the M6 layer, similar to the pattern of M6 layer in DIP-γMi>GFP where only yDm8 express DIP-γ (H’). Adult optic lobes were labeled with anti-GFP (green) and R7 and R8 PRs were labeled with anti-Chaoptin (magenta). Maximum intensity projection; scale bar 10 µm. (H–H”) Gaps representing pDm8 arbors are present in M6 layers labeled with the DIP-γMi>GFP reporter (H’), but not in M6 labeled with the pan-Dm8 reporter, which labels both Dm8 subtypes (H”). Adult optic lobes labeled with anti-GFP for DIP-γMi>GFP reporter (H’) and anti-RFP for pan-Dm8 Gal4 >RFP (H”). Gaps are marked (arrowhead in H’) in the M6 layer. The pan-Dm8 driver also labels lamina neuron L3, which is seen as faint labeling above the Dm8 layer. Maximum intensity projection; scale bar 10 µm. (I) yDm8 have a bias for contacting yR7 outside of the home column, while pDm8 contact yR7 and pR7 equally. Single flipout clones were labeled as in Figure 2D–E and analyzed with Imaris software to analyze connections with neighboring columns. yR7 contacts made outside of the home column: yDm8 61.3+ /- 8.9 (n = 15), pDm8 46.2+ /- 6.7 (n = 16), ****p<0.0001 (J) The total number of R7 contacted outside of the home column by the two Dm8 subtypes are the same. Single flipout clones were labeled as in Figure 2D–E and analyzed with Imaris software to analyze connections with neighboring columns. Total R7 contacted: yDm8 12.4+ /- 1.3 (n = 15), pDm8 12.1+ /- 1.4 (n = 16), not significant (n.s.). Complete genotypes in Table 2 of Materials and methods.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Quantitation of yDm8 and pDm8 flipout clones in wild-type: Pan-Dm8 driver: R24F06-Gal4 (Nern et al., 2015). yDm8 split-Gal4 driver: R24F06-p65.AD; DIP-γ-Gal4-DBD (This study). With the pan-Dm8 driver, we examined 72 clones. 51/72 were yDm8 flipouts (identified by the home column R7 that was labeled with Rh4-LacZ for yR7) and 21/72 were pDm8 flipouts (identified by home column R7 labeled with Chp that did not show Rh4-LacZ signal, indicating a pR7). For both yDm8 and pDm8, we found clones with two home columns: 2/51 for yDm8 and 1/21 for pDm8. The two home columns were of the same identity: for yDm8, they were both yR7 and for pDm8, they were both pR7. With the yDm8 split Gal4 driver, we examined 64 yDm8 flipouts. We verified the identity of 43 clones as yDm8 by co-labeling with Rh4-LacZ and determining the identity of home column R7. 43/43 clones contacted yR7 home columns, confirming that the split Gal4 driver was an accurate yDm8 driver. 4/64 were two home column yDm8 flipouts. Complete genotypes in Table 3 of Materials and methods. (B) Schematic of origins of Dm8 subtypes. Two models are shown: yDm8 (express DIP-γ, indicated in yellow) and pDm8 (do not express DIP-γ, indicated in blue) originate as one population with DIP-γ switched off at a later developmental stage, or yDm8 and pDm8 populations originate independently. In our experiment, the dendritic arbors of DIP-γ expressing Dm8 neurons are labeled in flies carrying DIP-γ Gal4 >Flp and pan-Dm8-LexA > LexAop FRT-stop-FRT GFP transgenes. The first model predicts that the M6 layer will be labeled as a continuous line, whereas the second model predicts that the M6 layer will have gaps that are occupied by the pDm8 arbor. Dash indicates gaps (pDm8 arbors) that are not labeled. (C–C’) Horizontal view of a dense flipout showing 3 yDm8 clones (asterisks) with yR7 home columns labeled with Rh4-LacZ (red) and Chp (blue). Note the absence of sprig labeling on a pR7 column labeled with Chp only (blue). Maximum intensity projection; scale bar 5 µm.
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig3-v2.jpg)
 
-**Figure 3.:** The entries in column one indicate the EM column and y/p identities for each R7 and Dm8. The entries in row one indicate the column and y/p identities for the Dm8, Tm5a, and Tm5b neurons that are postsynaptic (and sometimes presynaptic) to the R7 and Dm8 neurons. In each box, the x:y nomenclature indicates the numbers of output synapses and input synapses. The layer in which most of these synapses are located is also indicated (M5 or M6). Classes of synapses are indicated in different colors, as follows: pR7→Tm5b, green; pDm8→Tm5b, purple; yR7→Tm5a, aqua; yDm8→Tm5a, yellow. At the bottom are maps of the arrangement of columns in the reconstruction, from Takemura et al. (2015), with y columns indicated in gold and p columns in blue in the right-hand map. We could not assign y/p identities to columns C, P, or Q, and there are no R7 outputs listed for the other columns. Tm5-C has an ambiguous morphology and could be either a Tm5a or a Tm5b, and R7-P and R7-Q have no listed synapses onto Tm5a or b. Figure 3—source data 1 contains additional information for non-home-column Dm8 inputs, and synapses onto Tm5c and Dm9.Figure 3—source data 1.Figure 3.Column two indicates the identities of the input synapses from R7 onto each Dm8. The reconstructed volume is unlikely to cover the entire arbor of these Dm8 neurons, since each Dm8 can contact 12–16 R7 (Gao et al., 2008). However, column two shows that within the reconstructed columns there is no apparent specificity in synaptic connectivity between y and p R7 and Dm8 neurons outside of their home columns. For example, pDm8-B/home receives synapses from four non-home column R7, at least 2 of which are yR7, while yDm8-A receives synapses from two non-home column pR7 and a yR7. Even the Dm8 at the center of the reconstruction (Dm8-B/home) only receives synapses from four non-home column R7 PRs, so many Dm8 contacts with R7 columns may not be associated with input synapses from R7. The total number of non-home column R7 PRs that synapse onto the Dm8 is indicated in the parentheses in column 2. Synapses labeled as ? in column two are from R7 PRs in columns that cannot be assigned as y or p. Also note that (Karuppudurai et al., 2014) found that Tm5a dendrites specifically associate with yR7 axons, but they stated that Tm5b dendrites have no specificity for association with y vs. p R7 axons. Our analysis of the EM reconstruction, however, shows that all 3 pR7 PRs synapse only onto Tm5b and not Tm5a. The conclusion of Karuppudurai et al. (2014) likely arises from the fact that Tm5b usually has two distal dendritic projections. One of these always arborizes with a pR7 axon and receives the pR7 input. The other one can arborize with either a y or a p R7, but does not receive yR7 input, at least not for this set of columns. Four of the 7 Dm8, and 3 of the 8 R7 PRs, also have synapses onto Tm5c neurons. There is no specificity for y vs. p in the connections to Tm5c. Both R7 classes have input and output synapses with Dm9, and both classes of Dm8 have output synapses onto Dm9.
+**Figure 3.:** The entries in column one indicate the EM column and y/p identities for each R7 and Dm8. The entries in row one indicate the column and y/p identities for the Dm8, Tm5a, and Tm5b neurons that are postsynaptic (and sometimes presynaptic) to the R7 and Dm8 neurons. In each box, the x:y nomenclature indicates the numbers of output synapses and input synapses. The layer in which most of these synapses are located is also indicated (M5 or M6). Classes of synapses are indicated in different colors, as follows: pR7→Tm5b, green; pDm8→Tm5b, purple; yR7→Tm5a, aqua; yDm8→Tm5a, yellow. At the bottom are maps of the arrangement of columns in the reconstruction, from Takemura et al. (2015), with y columns indicated in gold and p columns in blue in the right-hand map. We could not assign y/p identities to columns C, P, or Q, and there are no R7 outputs listed for the other columns. Tm5-C has an ambiguous morphology and could be either a Tm5a or a Tm5b, and R7-P and R7-Q have no listed synapses onto Tm5a or b. Figure 3—source data 1 contains additional information for non-home-column Dm8 inputs, and synapses onto Tm5c and Dm9.
 
 Although the ratios of the input PRs and output targets match, the Dm8 cell numbers we obtained (266 yDm8 and 179 pDm8) are insufficient for innervation of the expected 730–785 yR7 plus pR7 columns in the medulla (Posnien et al., 2012) even when we account for the fact that some Dm8 neurons (~6%; see below) have two home columns. This suggests that the Dm8 driver is not completely penetrant. Indeed, when we use Dac and DIP-γMi>GFP to determine yDm8 populations, we obtain a larger number (~320), although this is still less than the expected total number of yDm8 neurons, which is 440–480.
 
-## yDm8 selectively innervate yR7 in their home columns and avoid pR7
+### yDm8 selectively innervate yR7 in their home columns and avoid pR7
 
 To evaluate the specificity of connections between Dm8 and R7 subtypes, we generated single-cell Dm8 (flipout) clones. For yDm8 flipouts, we used an intersectional strategy, since DIP-γ is expressed in many non-Dm8 cells. This employed a split-GAL4 driver that includes DIP-γMiMIC GAL4-DBD and R24F06 p65-AD hemi-drivers to selectively label DIP-γ-expressing yDm8 neurons (Figure 2B,D, Figure 2—figure supplement 1C–C’). For Dm8 that do not express DIP-γ (pDm8) flipouts, we used the pan-Dm8 driver and Rh4-lacZ reporter to identify clones whose home column R7 is labeled by the pan-PR marker Chp but lacks LacZ labeling, since there is no pDm8-specific driver (Figure 2C,E). yDm8 and pDm8 arbors have similar morphologies, with the prominent dendritic sprig identifying the home column (Figure 2A–C) (Gao et al., 2008; Nern et al., 2015). Using the yDm8 split-GAL4 driver, we exclusively labeled Dm8 neurons that have yR7 as the home column (43/43 flipouts; Figure 2B,D; Figure 2—figure supplement 1A). This indicates that yDm8 specifically innervate yR7 and avoid pR7 in the home column. We also observed yDm8 with two home columns at a frequency of ~6% (4/64 clones) (Figure 2—figure supplement 1A). All four had both sprigs on yR7 columns (see Figure 5H for an example). Since we find that all DIP-γ-positive Dm8 neurons have yR7 home columns, we can infer that cells labeled using the pan-Dm8 driver that have pR7 home columns must be the DIP-γ-negative pDm8 subtype. Single-cell clones of pDm8 were found to innervate only pR7 (21 pDm8 clones were analyzed; one had two pR7 home columns) (Figure 2C,E, Figure 2—figure supplement 1A). Specificity was further confirmed by labeling mid-pupal optic lobes with DIP-γ antibody and dpr11Mi>GFP. DIP-γ labeling is seen in the M6 layer only under yR7 that co-express Dpr11 and Chp, and not under pR7 that are labeled with Chp alone (Figure 2F).
 
@@ -69,7 +77,7 @@ We analyzed neighboring R7 contacted by yDm8 and pDm8 in single-cell clones. Out
 
 The two subtypes of Dm8 are distinguished by the expression of DIP-γ. To evaluate whether the yDm8 and pDm8 populations arise independently or originate as one population, with DIP-γ being switched off in pDm8 neurons at a later time, we used DIP-γ GAL4 to express FLP in a line with a flipout cassette (LexAop-FRT-stop-FRT) driving a GFP reporter and a pan-Dm8 LexA driver and examined GFP labeling in the M6 layer (Figure 2G). If yDm8 and pDm8 originate as separate populations, we would expect gaps to be present in M6 (like those seen with DIP-γMi>GFP (Figure 2H’; schematic in Figure 2—figure supplement 1B) and not a continuous line in M6 (like that seen when both yDm8 and pDm8 are labeled with a pan-Dm8 driver (Figure 2H”)). This is because the conditional DIP-γ GFP reporter would be expressed only in yDm8 and absent in pDm8. The gaps represent ‘pale’ columns with a pR7 and have a pDm8 arbor, which does not label with DIP-γMi>GFP (or with DIP-γ antibody; Figure 2F). Figure 2G shows that there are gaps in the M6 layer, indicating that the two Dm8 subtypes are in fact separate populations.
 
-## Yellow and pale-specific synaptic connections in color vision circuits
+### Yellow and pale-specific synaptic connections in color vision circuits
 
 Most R7 output synapses are made onto Dm8, Dm9 (a multicolumnar medulla intrinsic neuron), Tm5a, Tm5b, and Tm5c (Gao et al., 2008; Karuppudurai et al., 2014; Takemura et al., 2013; Takemura et al., 2015). Tm5a/b/c neurons project to the lobula, and are likely to be the main output neurons of R7 circuits. To define the synaptic connections of these neurons and determine whether they differ between y and p columns, we examined the EM reconstruction of the medulla (Takemura et al., 2013; Takemura et al., 2015). This reconstruction attempted to identify all synaptic connections between the ‘home’ column in the center and the six columns surrounding it (columns A-F in Figure 3 diagram). The surrounding columns (G-R) were also partially annotated, but these columns vary in the extent to which their synapses can be assigned to specific cells. There are eight columns for which R7, Dm8, and Tm5a/b synapses are annotated (home, A, B, D, E, F, J, and K), and analysis of these columns allowed us to derive the conclusions described below.
 
@@ -81,23 +89,51 @@ Dm8 arbors contain both pre- and postsynaptic elements, and Dm8 is presynaptic t
 
 R7 synapses are polyadic, and Dm8 and Tm5a/b often sit together at synaptic sites. Figure 4D and E show R7 T-bars (active zone elements marking output synapses) adjacent to both yDm8 and Tm5a, and pDm8 and Tm5b, respectively. In column E, the yR7-E axon terminal, yDm8-E sprig, and Tm5a-E dendritic branch are tightly wrapped around each other (Figure 4A,B). yR7-E T-bars are distributed in layers M4-M6, and are apposed to postsynapses in the yDm8-E sprig and the distal dendritic branch of the Tm5a-E neuron (Figure 4B). Most yDm8-E output synapses are onto Tm5a-E and Dm9 (Figure 3 and Figure 3—source data 1), and these are distributed between the sprig in M4-M5 and the main arbor in M6 (Figure 4B and associated Figure 4—videos 1 and 2). The only pDm8 with one home column in the reconstructed volume is pDm8-D. Although pDm8 usually have robust sprigs (e.g. Figure 2C), pDm8-D has a very thin sprig, and most pR7-D and pDm8-D T-bars are in M6 (Figure 4A,C and associated Figure 4—videos 3 and 4).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig4-v2.jpg)
+
+**Figure 4.:** Renderings of separated and combined cells from the EM reconstruction (Takemura et al., 2015) are shown in (A-D). R7, magenta; Dm8, cyan; Tm5a/b, green. (A) Separated cells in a yellow circuit, from column E, and a pale circuit, from column D. yR7-E, yDm8-E, and Tm5a-E pR7-D, pDm8-D, and Tm5b-D are shown. yDm8-E and pDm8-D sprigs indicated by arrowheads. (B-C) Renderings of R7-Dm8-Tm5a/b circuits. The insets show the home column region where most synapses are located. Black balls, R7 T-bars; yellow balls, Dm8 T-bars. The borders of M6, M5, and M4 are indicated. (B) The column E circuit. (C) The column D circuit. See also associated Figure 4—videos 5 and 6 (vertical and horizontal rotation of each of these circuits, as well as of the two-home column B/home circuit, which is shown in Figure 4—figure supplement 1). For a comparison of an ExM image of a wild-type yR7 and yDm8 to yR7-E and yDm8-E from the EM reconstruction, see Figure 6—figure supplement 1. (D) A section from column E, showing a polyadic synapse of yR7-E onto yDm8-E and Tm5a-E. (E) A section from column D, showing a polyadic synapse of pR7-D onto pDm8-D and Tm5b-D. In (D) and (E), the R7 T-bars are the black shapes on the R7 membranes where they are apposed to both postsynaptic cells.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** This is a two-home column circuit, including pR7-B, pR7-home, pDm8-B/home, Tm5b-B, and Tm5b-home. Videos of this circuit are linked to Figure 4, as Figure 4—videos 5 and 6. (A) Separated cells for the circuit. pDm8-B/home sprigs indicated: B sprig, arrowhead; home sprig, arrow. (B) Combined images for the 5 cells. Boxed region is magnified in (C). (C) Magnified image of B and Home columns. Black balls, R7 output synapses; yellow balls, Dm8 output synapses.
+
 Columns B and home form a two-home column pale circuit (Figure 3). The cells in this circuit are pR7-B, pR7-home, pDm8-B/home (a two-home column pDm8), Tm5b-B, and Tm5b-home (Figure 4—figure supplement 1). The B sprig of pDm8-B/home and one of the dendritic branches of Tm5b-B are both wrapped around the pR7-B terminal, while the pR7-home terminal is more loosely associated with the home sprig of pDm8-B/home and dendritic branches of both Tm5b neurons (Figure 4—figure supplement 1, and Figure 4-associated Figure 4—videos 5 and 6). All pR7-B→Tm5b synapses (14) and most pDm8-B/home→Tm5b synapses (30 vs. 4) are onto Tm5b-B. pR7-home makes similar numbers of synapses onto Tm5b-B and Tm5b-home (Figure 3).
 
-## DIP-γ and dpr11 mutations cause abnormalities in yDm8 dendritic arbors
+### DIP-γ and dpr11 mutations cause abnormalities in yDm8 dendritic arbors
 
 If the yellow circuit is constructed using DIP-γ-Dpr11 interactions, as suggested by our analysis of the EM reconstruction, one might expect that there would be abnormalities in yDm8 arbors in DIP-γ and dpr11 mutants. To assess yDm8 arbor morphology in whole-animal mutants, we generated flipouts in wild-type and mutants and examined arbor morphology (Figure 5A–F; Figure 5—source data 1). The sprig, which is located in the center of the arbor, usually has an expanded region at the distal end in M4/M5 (Figure 5A–B; see also Figure 2A–C). There is a large variation in sprig diameter and height in both wild-type and mutants. Maximum sprig diameter was significantly decreased in both DIP-γ and dpr11 mutants compared to control, but the height of the sprig was relatively unaffected (Figure 5C–F,I,K). The numbers of two-home column single cell clones (with two sprigs) were higher in DIP-γ mutants as compared to controls (Figure 5G–H). We also examined contacts made by the yDm8 arbor to neighboring columns (Figure 5J,L). There was no difference in the percentage of yR7 columns contacted in either mutant, but yDm8 neurons in the DIP-γ mutant displayed an increase over control in the total number of columns contacted.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig5-v2.jpg)
 
-**Figure 5.:** (A–F) yDm8 flipouts generated in (A–B) wild-type, (C–D) DIP-γ mutant and (E–F) dpr11 mutant. Sprigs are marked with arrowheads and PRs labeled with anti-Chp (red). (A’–F’) Positions of the measurements used in graphs I and K are indicated. Height of the sprig was determined by measuring distance from ‘a’ to ‘c’ and sprig diameter was measured at position marked ‘b’. Frequency of clones obtained for all three genotypes in Figure 5—source data 1. Flipouts in wild-type and DIP-γ mutants were generated with the yDm8 split-Gal4 driver; dpr11 mutant flipouts were generated with the pan-Dm8 driver and scored as yDm8 using Rh4-LacZ labeling. Complete genotypes in Table 2 of Materials and methods (Table 1). Maximum intensity projection; scale bar 5 µm. (G–H) Two-home column yDm8 flipouts were observed more frequently (4.5-fold increase) in DIP-γ mutant (11/39 clones) than in control (4/64 clones). Panel H shows a two home column yDm8 with both sprigs (arrowheads) located on yR7 columns (asterisks). (I, K) Maximum sprig diameter is reduced significantly in both dpr11 and DIP-γ mutants. Sprig height was slightly affected in DIP-γ mutants but not in dpr11 mutants. Graph shows mean + /- std. deviation and unpaired Student’s t-test p-values. Sprig diameter: DIP-γ -/+ 1.8+ /- 0.6 (n = 23), DIP-γ -/-1.0+ /- 0.6 (n = 21), dpr11  0.9+ /- 0.4 (n = 21), ****p<0.0001 for both mutants. Sprig height: -/-DIP-γ -/+ 5.9+ /- 1.3 (n = 23), DIP-γ -/-4.8+ /- 1.5 (n = 21), dpr11  5.9+ /- 1.5 (n = 21), from left to right *p=0.014, not significant (n.s.) (-/-J, L) Contact with neighboring columns is affected in DIP-γ mutants. (J) Total number of R7 columns contacted by a yDm8: DIP-γ -/+ 12.4+ /- 1.3 (n = 15), DIP-γ -/-14.5+ /- 2.4 (n = 13), dpr11  12.33+ /- 3.0 (n = 6), from left to right **p=0.0061, not significant (n.s.) (-/-L) Percentage of yR7 columns contacted by a yDm8: DIP-γ -/+ 61.3+ /- 8.9 (n = 15), DIP-γ -/-67.03+ /- 16.8 (n = 13), dpr11  58.9+ /- 11.0 (n = 6), from left to right, not significant (n.s.).-/-Figure 5—source data 1.DIP-γ mutants.The percentage of two-home column yDm8 clones in DIP-γ  mutants is 4.5-fold higher than in wild-type. Quantitation of flipout clones in wild-type, -/-DIP-γ and dpr11 mutants shown. Flipouts were generated with either pan-Dm8 driver R24F06-Gal4 or the yDm8 split-Gal4 driver R24F06-p65.AD; DIP-γ Gal4-DBD. Complete genotypes in Table 3 of Materials and methods.
+**Figure 5.:** (A–F) yDm8 flipouts generated in (A–B) wild-type, (C–D) DIP-γ mutant and (E–F) dpr11 mutant. Sprigs are marked with arrowheads and PRs labeled with anti-Chp (red). (A’–F’) Positions of the measurements used in graphs I and K are indicated. Height of the sprig was determined by measuring distance from ‘a’ to ‘c’ and sprig diameter was measured at position marked ‘b’. Frequency of clones obtained for all three genotypes in Figure 5—source data 1. Flipouts in wild-type and DIP-γ mutants were generated with the yDm8 split-Gal4 driver; dpr11 mutant flipouts were generated with the pan-Dm8 driver and scored as yDm8 using Rh4-LacZ labeling. Complete genotypes in Table 2 of Materials and methods (Table 1). Maximum intensity projection; scale bar 5 µm. (G–H) Two-home column yDm8 flipouts were observed more frequently (4.5-fold increase) in DIP-γ mutant (11/39 clones) than in control (4/64 clones). Panel H shows a two home column yDm8 with both sprigs (arrowheads) located on yR7 columns (asterisks). (I, K) Maximum sprig diameter is reduced significantly in both dpr11 and DIP-γ mutants. Sprig height was slightly affected in DIP-γ mutants but not in dpr11 mutants. Graph shows mean + /- std. deviation and unpaired Student’s t-test p-values. Sprig diameter: DIP-γ -/+ 1.8+ /- 0.6 (n = 23), DIP-γ -/-1.0+ /- 0.6 (n = 21), dpr11 -/- 0.9+ /- 0.4 (n = 21), ****p<0.0001 for both mutants. Sprig height: DIP-γ -/+ 5.9+ /- 1.3 (n = 23), DIP-γ -/-4.8+ /- 1.5 (n = 21), dpr11 -/- 5.9+ /- 1.5 (n = 21), from left to right *p=0.014, not significant (n.s.) (J, L) Contact with neighboring columns is affected in DIP-γ mutants. (J) Total number of R7 columns contacted by a yDm8: DIP-γ -/+ 12.4+ /- 1.3 (n = 15), DIP-γ -/-14.5+ /- 2.4 (n = 13), dpr11 -/- 12.33+ /- 3.0 (n = 6), from left to right **p=0.0061, not significant (n.s.) (L) Percentage of yR7 columns contacted by a yDm8: DIP-γ -/+ 61.3+ /- 8.9 (n = 15), DIP-γ -/-67.03+ /- 16.8 (n = 13), dpr11 -/- 58.9+ /- 11.0 (n = 6), from left to right, not significant (n.s.).
 
-## yDm8 arbor morphology in detail
+### yDm8 arbor morphology in detail
 
 To obtain high-resolution views of interactions between yDm8 sprigs and R7 terminals, we examined single cell yDm8 clones in wild-type and DIP-γ mutant brains using expansion microscopy (ExM) (Figure 6 and associated Figure 6—videos 1–4) (Mosca et al., 2017; reviewed by Karagiannis and Boyden, 2018). The morphology of the arbor in M6 and of the sprig in M4 and M5 can be visualized in detail in ExM images (Figure 6A). The sprig is on a home column R7, where most of the synapses from yR7 to yDm8 are located (Figure 6B–C, Figure 6—figure supplement 1). In addition to the sprig, this yDm8 arbor has two thin dendritic processes that emerge from the base and are wrapped around neighboring non-home column R7 terminals (Figure 6C). The home column R7 extends into the base of the sprig, making multiple contacts with the base of the Dm8 arbor. DIP-γ mutant yDm8 neurons have thinner sprigs, in agreement with our quantitative analysis of mutant flipout clones from unexpanded samples (Figures 5I and 6D; Figure 6—figure supplement 2B).
 
-## Interactions between Dpr11 in yR7 and DIP-γ in yDm8 are required for yDm8 survival
+![Figure 6.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig6-v2.jpg)
+
+**Figure 6.:** yDm8 dendritic arbors (cyan) visualized with expansion microscopy and surface rendered with Imaris software. (A-C) Wild-type; (D) DIP-γ -/-. Arrowheads, sprigs; arrow in (A), axon. In (B-D), one or more R7 terminals/axons are included in the rendering. Two different views of the same flipout clone are shown in panels (B) and (C). The R7 terminals/axons are semi-transparent in (C) and (D). The home column R7 located at the center of the arbor makes extensive contacts with the sprig as well as with the base of the dendritic arbor in M6 in (B) and (C). Two thinner dendritic processes positioned on the edges of the arbor (asterisks) contact two non-home column R7 in (C). The yDm8 in the DIP-γ -/- mutant has a much thinner sprig as compared to wild-type (D). See associated Figure 6—videos 1–4 (vertical and horizontal rotations) and Figure 6—figure supplement 2 for additional views of the wild-type clone in (C) and the mutant clone in (D). ExM analysis of yDm8 in wild-type (n = 6) and DIP-γ -/- (n = 5) genotypes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** yDm8, cyan; yR7, magenta. Black balls indicate yR7 T-bars. Home column positions and sprigs are indicated by asterisks and arrowheads, respectively. Based on the comparison with B, we can infer that there are likely to be many R7-Dm8 synapses on the sprig in A.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) The wild-type rendering is the same column as in Figure 6C, but with only the home column yR7 included. This allows clearer visualization of the other two dendritic projections (asterisks). (B) The mutant rendering is without the R7, allowing clearer visualization of sprig morphology.
+
+### Interactions between Dpr11 in yR7 and DIP-γ in yDm8 are required for yDm8 survival
 
 We previously showed that Dm8 cells are lost in DIP-γMi>GFP/Df animals (Carrillo et al., 2015). To explore this in detail, we used CRISPR-generated null mutants for both DIP-γ and dpr11 (Xu et al., 2018) and determined yDm8 and pDm8 populations (Figure 7A–C). DIP-γMi>GFP, which has no detectable protein expression, was used as one of the DIP-γ alleles to allow identification of yDm8 soma. Both DIP-γ and dpr11 mutants showed a ~ 50% decrease in yDm8 cell number using the pan-Dm8 driver and 60–65% loss when determined with Dac (Figure 7A,C). A double mutant had a similar phenotype to the two single mutants (Figure 7A), suggesting that the two genes function in the same pathway(s). The loss of yDm8 in DIP-γ mutants was partially rescued by expressing a DIP-γ transgene using the DIP-γ Gal4 driver (Figure 7A). To determine if yDm8 loss in dpr11 mutants was due to the absence of Dpr11 from the eye or from other Dpr11-expressing cells in the medulla, we performed eye-specific dpr11 transgenic RNAi, and found a ~ 40% reduction in yDm8 cell numbers (Figure 7C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig7-v2.jpg)
+
+**Figure 7.:** (A–B) yDm8 and pDm8 cell numbers were determined using pan-Dm8 driver >RFP and DIP-γMi>GFP reporter. yDm8 neurons express both RFP and GFP, and pDm8 neurons express only RFP. (C) yDm8 cell number determined using anti-GFP for DIP-γMi>GFP reporter and anti-Dac. The DIP-γMi>GFP reporter (indicated on the x-axis in all graphs as DIP-γ-/+) is an insertion in the 5’ UTR intron that has no detectable protein expression. Thus, this line serves as a mutant as well as a reporter of DIP-γ transcript expression. Graphs show mean + /- std. deviation and unpaired Student’s t-test p-values. Complete genotypes in Table 2 of Materials and methods (Table 1). (A) Both DIP-γ and dpr11 mutants show ~50% loss of yDm8 neurons, and this is rescued in DIP-γ mutants by inhibiting cell death with DIAP. yDm8 cell numbers in heterozygous controls, DIP-γ and dpr11 mutants, a double mutant of both genes, and DIP-γ and DIAP rescues in DIP-γ mutant are shown. DIP-γ -/+ 266.4+ /- 17.2 (n = 8), DIP-γ -/-134+ /- 14.3 (n = 9), ****p<0.0001; dpr11 -/+ control 290.7+ /- 21.3 (n = 6), dpr11 -/- 152+ /- 20.4 (n = 6), ****p<0.0001; dpr11 -/-, DIP-γ -/-151+ /- 18.3 (n = 6), DIP-γ -/-134+ /- 14.3 (n = 6), not significant; dpr11 -/-, DIP-γ -/-151+ /- 18.3 (n = 6), dpr11 -/- 152+ /- 20.4 (n = 6), not significant; DIP-γ -/+ control 270+ /- 13.03 (n = 6), DIP-γ rescue 219.2+ /- 20.7 (n = 6), ***p=0.0004; DIP-γ -/-mutant control 135.2+ /- 6.5 (n = 6), DIP-γ rescue 219.2+ /- 20.7 (n = 6), ****p<0.0001; DIP-γ -/+ control 270+ /- 13.03 (n = 6), yDm8 DIAP rescue 390.8+ /- 8.0 (n = 6), ****p<0.0001; DIP-γ -/-mutant control 135.2+ /- 6.5 (n = 6), yDm8 DIAP rescue 390.8+ /- 8.0 (n = 6), ****p<0.0001. (B) pDm8 numbers are unchanged in mutants and in DIAP rescue. DIP-γ -/+ 179.4+ /- 25.6 (n = 11), DIP-γ -/-204.9+ /- 27.2 (n = 12), *p=0.03; dpr11 -/+ control 176.5+ /- 29.2 (n = 6), dpr11 -/- 190.2+ /- 15.5 (n = 6), not significant (n.s.); dpr11 -/-, DIP-γ -/-180.7+ /- 12.8 (n = 6), DIP-γ -/-204.9+ /- 27.2 (n = 12), not significant; dpr11 -/-, DIP-γ -/-180.7+ /- 12.8 (n = 6), dpr11 -/- 190.2+ /- 15.5, not significant; DIP-γ -/-204.9+ /- 27.2 (n = 12), yDm8 DIAP rescue 191.8+ /- 23.2 (n = 6), not significant (n.s.). (C) Dpr11 in R7 is required for yDm8 survival. yDm8 cell number in wild-type, mutants, dpr11 eye-specific RNAi, and ectopic DIP-γ expression in PRs. DIP-γ -/+ 318+ /- 9.7 (n = 5), DIP-γ -/-110.5+ /- 6.1 (n = 4), ****p<0.0001; DIP-γ -/-110.5+ /- 6.1 (n = 4), dpr11 -/- 129+ /- 15.4 (n = 6), not significant (n.s.); lGMR-Gal4 control at 29°C 190.3+ /- 15.5 (n = 9), lGMR-Gal4 >dpr11 RNAi 110.6+ /- 4.5 (n = 9), ****p<0.0001; lGMR-Gal4 control 271+ /- 18.3 (n = 6), lGMR-Gal4 >UAS-DIP-γ (n = 6) 125.2+ /- 18.5, ****p<0.0001; lGMR-Gal4 control 271+ /- 18.3 (n = 6), lGMR-Gal4 >UAS-DIP-α 283.2+ /- 20.6 (n = 6), not significant (n.s.). (D-H) yDm8 labeling in the neuropil in wild-type, DIP-γ mutant, DIP-γ rescue, DIAP yDm8 rescue, and dpr11 mutant, using DIP-γMi>GFP reporter. Large gaps (asterisks) representing yDm8 cell death are seen in the M6 layer (arrow) in both DIP-γ and dpr11 null mutants (E, H), whereas wild-type, DIP-γ and DIAP rescues showed smaller and fewer gaps (asterisks in D, F-G). Adult optic lobes were labeled with anti-GFP for yDm8 reporter.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** DIAP1 tagged with myc (red) driven with DIP-γ Gal4 shows co-localization of DIAP1 and DIP-γMi>GFP reporter (green). Adult optic lobe labeled with anti-myc (red) and anti-GFP (green). Single section. Scale bar 20 µm.
 
 We also ectopically expressed DIP-γ in PRs, and found that this phenocopied the DIP-γ and dpr11 loss-of-function (LOF) phenotypes (Figure 7C). This result suggests that the presence of both Dpr11 and its partner on the same cells (expression in cis) prevents Dpr11 in yR7 from interacting with DIP-γ in trans (on yDm8). Ectopic expression of DIP-α, a different DIP that does not bind to Dpr11, had no effect on yDm8 survival (Figure 7C), indicating that the Dpr11-DIP-γ interaction is required for yDm8 selection and survival. Similar results were observed for DIP-α and Dpr10 in the neuromuscular system, where DIP-α is normally expressed on the MNISN-1s (RP2) motoneuron and Dpr10 on its muscle targets. LOF mutants lacking either protein are missing specific muscle branches, and cis ectopic expression of DIP-α on muscles, or of Dpr10 on MNISN-1s, generates the same phenotypes (Ashley et al., 2019).
 
@@ -109,17 +145,41 @@ We also visualized the M6 layer using the DIP-γMi>GFP reporter and found that t
 
 DIP-γ mutants also displayed a ~ 4.5-fold higher frequency of two-home column flipouts as compared to control (Figure 5G). The increase in two-home column yDm8 could be a response strategy in which yDm8 neurons innervate more yR7 PRs in order to compensate for the loss of survival signals mediated by DIP-γ.
 
-## DIP-γ controls yDm8 death by interacting with Dpr11 during early pupal development
+### DIP-γ controls yDm8 death by interacting with Dpr11 during early pupal development
 
 Having found that interactions between yR7 and yDm8 mediated by Dpr11 and DIP-γ are required for yDm8 survival in adults (Figure 7), we next determined when the interaction that ensures survival occurs. To this end, we examined yDm8 loss at different stages of OL development in wild-type and DIP-γ mutant animals starting at 15 hr. (15 hr) after puparium formation (APF) (Figure 8A). yDm8 populations in wild-type and mutant animals were examined by labeling with Dac and DIP-γMi>GFP reporter at 15 hr, 25 hr and 45 hr APF. At 15 hr APF, yDm8 cell numbers in DIP-γ mutants are similar to those in wild-type, suggesting that the Dpr11-DIP-γ interaction is needed for yDm8 survival only after that time. In wild-type, yDm8 numbers do not change between 15 hr APF and 25 hr APF. Between 25 hr APF and 45 hr APF, about 30% of yDm8 soma are lost, and yDm8 numbers then remain stable until adulthood (Figure 8A). However, in DIP-γ mutants, more than 1/3 of the yDm8 soma are lost between 15 hr APF and 25 hr APF, and by 45 hr APF only 25% of the original number of yDm8 soma present at 15 hr APF remain (Figure 8A). As in wild-type, these numbers in DIP-γ mutants then remain stable until adulthood. Inhibition of cell death in the DIP-γ mutant with DIAP restored the population in the adult back to the original wild-type pool size present at 15 hr APF (Figure 8A). Thus, DIP-γ is required for suppression of yDm8 cell death early in pupal development. Extensive migration of yDm8 soma was observed in wild-type, and this migration was unaffected in the DIP-γ mutant (Figure 8—figure supplement 2A–D).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig8-v2.jpg)
+
+**Figure 8.:** (A) yDm8 cell death occurs in DIP-γ mutants between 15 hr and 45 hr APF. yDm8 cell death in wild-type occurs between 25 hr and 45 hr APF (p-value below). DIAP expression in the DIP-γ mutant rescues cell number back to the original level at 15 hr APF (p-value below). yDm8 cell number determined with anti-GFP for DIP-γMi>GFP reporter and anti-Dac. DIP-γMi>GFP reporter heterozygote indicated as DIP-γ-/+. Graph shows mean + /- std. deviation and unpaired Student’s t-test p-values. Complete genotypes in Table 2 of Materials and methods (Table 1). 15 hr APF: DIP-γ -/+ 417.7+ /- 13.1 (n = 3), DIP-γ -/-435.7+ /- 32.3 (n = 3), not significant (n.s.); 25 hr APF: DIP-γ -/+ 421+ /- 24.3 (n = 3), DIP-γ -/-274.7+ /- 32.3 (n = 3), **p=0.0033; 45 hr APF: DIP-γ -/+ 287+ /- 18.2 (n = 3), DIP-γ -/-110.7+ /- 18.7 (n = 3), ***p=0.0003; Adult: DIP-γ -/+ 318+ /- 9.7 (n = 5), DIP-γ -/-110.5+ /- 6.1 (n = 4), ****p<0.0001; p-values below are not shown on the graph: 25 hr APF: DIP-γ -/+ 421+ /- 24.3 (n = 3), 45 hr APF: DIP-γ -/+ 287+ /- 18.2 (n = 3), **p=0.0016; yDm8 DIAP rescue 442.6+ /- 27.2 (n = 5), 15 hr APF DIP-γ -/+ 417.7+ /- 13.1, not significant (n.s.) 15 hr APF: DIP-γ -/+ 417.7+ /- 13.1 (n = 3), Adult: DIP-γ -/+ 318+ /- 9.7 (n = 5), ****p<0.0001; 15 hr APF: DIP-γ -/-435.7+ /- 32.3 (n = 3), 25 hr DIP-γ -/-274.7+ /- 32.3 (n = 3), **p=0.004; 25 hr APF: DIP-γ -/-274.7+ /- 32.3 (n = 3), 45 hr DIP-γ -/-110.7+ /- 18.7 (n = 3), **p=0.0016. (B-E) yDm8 cell bodies marked with apoptotic reporter Apoliner are significantly increased in DIP-γ mutant. (B) Schematic of Apoliner (Bardet et al., 2008). In live cells, GFP is tethered to the membrane with RFP. In dying cells, activated caspases cleave Apoliner to release the GFP moiety that localizes to the nucleus. (C) Quantitation of dying yDm8 cell bodies in control and DIP-γ mutant. Graph shows mean + /- std. deviation and unpaired Student’s t-test p-values, n = 6 OLs for each genotype. Complete genotypes in Table 2 of Materials and methods (Table 1). DIP-γ -/+ 46.7+ /- 14.12 (n = 6), DIP-γ -/- 91.5+ /- 15.4 (n = 6), ***p=0.0004. (D-E) Visualization of Apoliner in yDm8 soma in control (D) and DIP-γ mutant (E). UAS-Apoliner was driven with a DIP-γ split Gal4 driver and yDm8 soma were labeled with anti-Dac, anti-GFP and anti-RFP. Dying yDm8 with nuclear GFP are seen in the DIP-γ mutant (arrows in E), while live yDm8 with membrane-localized GFP and RFP are seen in both control and mutant (arrowheads). (F) Dpr11 is expressed in select R7 PRs at 15 hr APF (asterisks). dpr11Mi>GFP reporter labeled with anti-Chp (red) and anti-GFP (green) at 15 hr APF. Note that one of the younger R7 PRs located on the right of the image also expresses Dpr11. Single confocal slice; scale bar 5 µm. (G) DIP-γ is expressed in yDm8 neurons apposed to specific R7 PRs by 20 hr APF (asterisks). pR7 terminals (arrowheads) do not show overlapping DIP-γ labeling (see also Figure 8—figure supplement 1B–B’). Wild-type, labeled at 20 hr APF with anti-DIP-γ (green) and anti-Chp (red). Complete genotypes in Table 2 of Materials and methods. Single confocal slice; scale bar 10 µm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A–A’) DIP-γ is expressed in yDm8 processes overlapping select R7 terminals by 18 hr APF. DIP-γMi>GFP reporter and DIP-γ antibody show the same pattern in the neuropil. Three R7 PRs with anti-GFP and anti-DIP-γ labeling are indicated by asterisks. There are gaps in DIP-γ labeling in the R7 incipient layer (one such gap covering two R7 terminals indicated by two arrowheads). DIP-γMi>GFP reporter labeled with anti-GFP (green), anti-DIP-γ (blue) and anti-Chp (red). (A’) is without the Chp labeling, for clearer visualization of the gaps. (B–B’) (B) is the same merged image seen in Figure 8F. (B’) shows the DIP-γ channel only for this image, and reveals gaps in DIP-γ labeling, implying that pDm8 are apposed to pR7 within the gaps (arrowheads). DIP-γ labeled yDm8 processes indicated by asterisks. Wild-type labeled at 20 hr APF with anti-DIP-γ (green) and anti-Chp (red). (C) dpr11Mi>GFP expression at 26 hr - 28hr APF labels yR7 but not pR7. dpr11Mi>GFP reporter labeled with anti-Chp (red) and anti-GFP (green). R7 terminals unlabeled by GFP are pR7 (red). Complete genotypes in Table 3 of Materials and methods.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A–D) yDm8 cell death in DIP-γ mutant occurs as yDm8 soma are migrating during early pupal development. White circles indicate yDm8 cell bodies that were labeled with anti-Dac (not shown here) and anti-GFP for DIP-γMi>GFP reporter to indicate position in the cortex in wild-type (A, C) and in DIP-γ mutant (B, D) at 15 hr (A–B) and 45 hr APF (C–D). There is no difference in their relative positions in DIP-γ mutant as compared to that in wild-type. Complete genotypes in Table 3 of Materials and methods.
 
 To detect cells that are undergoing apoptosis in DIP-γ mutants, we used Apoliner, a fluorescent reporter of caspase activity, to mark yDm8 at 25 hr APF in wild-type and mutant genotypes (Bardet et al., 2008) (Figure 8B–E). The Apoliner reporter consists of a membrane tethered RFP joined to GFP with a nuclear localization signal and a caspase site between the RFP and GFP moieties. In cells undergoing apoptosis, activated caspases cleave Apoliner, releasing GFP to localize to the nucleus (Figure 8B). The Apoliner transgene was driven by a DIP-γ split Gal4 driver in wild-type and DIP-γ mutant and yDm8 cell bodies were identified by labeling with Dac. At 24–25 hr APF, there were twice as many dying yDm8 cells in DIP-γ mutants as compared to control, further confirming the role of Dpr11-DIP-γ interaction in yDm8 cell survival (Figure 8C–E).
 
 We next determined when Dpr11-expressing yR7 and DIP-γ expressing yDm8 meet in the medulla neuropil. Since yDm8 cell death caused by the loss of DIP-γ begins to occur between 15 hr and 25 hr APF (Figure 8A–E) and because R7 terminals do not mature till after the mid-pupal stage (Ting et al., 2005), we investigated if the Dpr11-DIP-γ interaction required for yDm8 survival occurred at the growth cone stage of R7 development. Indeed, we found that dpr11 was expressed in select R7 growth cones at 15 hr APF, suggesting that the yellow fate of R7 was determined by that time (Figure 8F). We next examined DIP-γ expression in early pupa and found DIP-γ labeling adjacent to select R7 at 20 hr APF, indicating that yDm8 arbors are apposed to yR7 terminals (Figure 8G). The gaps in DIP-γ labeling are presumed to be pDm8 (Figure 8—figure supplement 1). Taken together, our results are consistent with a model in which selection of yDm8 by yR7 occurs by 15 hr - 20 hr APF via Dpr11-DIP-γ binding and thereby ensures survival of yDm8.
 
-## Perturbing R7 fate in the retina alters Dm8 fate in the medulla
+### Perturbing R7 fate in the retina alters Dm8 fate in the medulla
 
 Since Dpr11 is expressed in yR7 PRs, we next examined how the two subtypes of Dm8 neurons respond when R7 fates are altered. The transcription factor Spineless (Ss) controls yellow and pale subtype choice in the retina. Ectopic expression of ss in all PRs (ssGOF) induces yellow fate in all R7 cells and prevents formation of pR7 (Wernet et al., 2006). We first determined Dpr11 and DIP-γ expression in ssGOF. In contrast to wild-type, where only yR7 is labeled by dpr11Mi>GFP, all R7 terminals showed GFP expression when ss was mis-expressed (Figure 9A–B). Thus, Ss expression activates Dpr11 along with Rh4 and other yR7-specific genes. The normal gaps in DIP-γMi>GFP labeling in the M6 layer were missing in ssGOF (compare 1A and C in Figure 9—figure supplement 1). When DIP-γ was removed in the ssGOF background, gaps were again observed in the yDm8 layer, indicating that the M6 signal in ssGOF is indeed due to DIP-γ-expressing yDm8 (Figure 9—figure supplement 1A–C). The change in R7 fate is thus transmitted to the downstream circuit in the medulla via Dpr11-DIP-γ interactions, resulting in uniform yDm8 labeling in the M6 layer.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig9-v2.jpg)
+
+**Figure 9.:** (A–B) Conversion of all R7 PRs to the yR7 fate in ssGOF results in Dpr11 expression in every R7. Dpr11 is expressed in yR7 PRs in (A) wild-type and (B) ssGOF. pR7 PRs are present in wild-type (asterisk) and absent in ssGOF. Mid-pupal optic lobes labeled with anti-GFP (green) for dpr11Mi>GFP reporter and anti-Chp (magenta) for all PRs. Maximum intensity projection; scale bar 5 µm. (C–D) yDm8 and pDm8 cell number determined using pan-Dm8 driver >RFP and DIP-γMi>GFP reporter. yDm8 expresses both RFP and GFP and pDm8 expresses only RFP. Graphs show mean + /- std. deviation and unpaired Student’s t-test p-values. Complete genotypes in Table 2 of Materials and methods (Table 1). DIP-γMi>GFP reporter heterozygote indicated as DIP-γ-/+. (C) More yDm8 neurons survive when all R7 PRs are converted to the yR7 fate (ssGOF) or when they all express Dpr11 (dpr11GOF). yDm8 neurons are also lost when R7 PRs are absent (sev) and/or DIP-γ is mutant. yDm8 cell number in wild-type, ssGOF, sev mutant, dpr11GOF: DIP-γ -/+ 266.4+ /- 17.2 (n = 8), ssGOF, DIP-γ -/+ 363+ /- 25.3 (n = 6), ****p<0.0001; ssGOF, DIP-γ -/+ 363+ /- 25.3 (n = 6), ssGOF, DIP-γ -/-175.3+ /- 15.2 (n = 6), ****p<0.0001; DIP-γ -/-134+ /- 14.3 (n = 9), ssGOF, DIP-γ -/-175.3+ /- 15.2 (n = 6), ***p=0.0001; sev -/+; ; DIP-γ -/+ 252.8+ /- 16.3 (n = 6), sev -/-; ; DIP-γ -/+ 77.3+ /- 12.5 (n = 6), ****p<0.0001; sev -/-; ; DIP-γ -/+ 77.3+ /- 12.5 (n = 6), sev -/-; ; DIP-γ -/- 50.5+ /- 7.8 (n = 6), **p=0.0012; DIP-γ -/- 134+ /- 14.3 (n = 9), sev -/-; ; DIP-γ -/- 50.5+ /- 7.8 (n = 6), ****p<0.0001; lGMR Gal4 control 333+ /- 9.8 (n = 6), lGMR Gal4 >UAS-dpr11 509.7+ /- 41.5 (n = 6), ****p<0.0001. (D) pDm8 cell numbers decrease dramatically when R7 PRs are absent, when they are converted to the yR7 fate (ssGOF), or when they all express Dpr11 (dpr11GOF). pDm8 cell number in wild-type, ssGOF, sev mutant, Dpr11 overexpression: DIP-γ -/+ 179.4+ /- 25.6 (n = 11), ssGOF, DIP-γ -/+ 28.7+ /- 4.3 (n = 6), ****p<0.0001; ssGOF, DIP-γ -/+ 28.7+ /- 4.3 (n = 6), ssGOF, DIP-γ -/-59.5+ /- 8.8 (n = 6), ****p<0.0001; DIP-γ -/-204.9+ /- 27.2 (n = 12), ssGOF, DIP-γ -/-59.5+ /- 8.8 (n = 6), ****p<0.0001; lGMR Gal4 control 127.7+ /- 18.7 (n = 6), lGMR Gal4 >UAS-dpr11 42.2+ /- 5.6 (n = 6), ****p<0.0001; sev -/+; ; DIP-γ -/+ 188.5+ /- 10.2 (n = 6), sev -/-; ; DIP-γ -/+ 39.3+ /- 6.3 (n = 6), ****p<0.0001; sev -/-; ; DIP-γ -/+ 39.3+ /- 6.3 (n = 6), sev -/-; ; DIP-γ -/- 52.5+ /- 4.8 (n = 6), **p=0.002. (E-F, H) Dpr11 overexpression in the retina converts all medulla columns to y by selecting for yDm8. Pupal medullary neuropil (~45 hr - 48hr APF) of (E) lGMR-Gal4 control and (F) lGMR-Gal4 >UAS-dpr11 labeled with anti-Chp (red) and anti-DIP-γ (green). Cross-section views of the medulla shown (E-F). Two p columns (red only) are circled in (E). Quantitation in (H). Maximum intensity projection; scale bar 5 µm. (G) Conversion of all R7 PRs to pR7 fate results in loss of yDm8 neurons. yDm8 cell number in dveGOF counted with anti-Dac and anti-GFP for DIP-γMi>GFP reporter. lGMR Gal4 control 271+ /- 18.3 (n = 6), lGMR Gal4 >UAS Dve 110.3+ /- 3.8 (n = 6), ****p<0.0001. Graph shows mean + /- std. deviation and unpaired Student’s t-test p-values. (H) Percentage of Dm8 home columns that are yDm8 (quantitated from images like those in E and F). lGMR Gal4/+ 0.62+ /- 0.02 (n = 199, 5 OLs), lGMR Gal4 >UAS-dpr11 0.98+ /- 0.01 (n = 234, 6 OLs), ****p<0.0001; n represents total number of columns analyzed. Graph shows mean + /- std. deviation and unpaired Student’s t-test p-values.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A–D) Conversion of all R7 PRs to yR7 fate in ssGOF results in loss of pDm8 arbors. (A) ssGOF; DIP-γ -/+ (B) ssGOF; DIP-γ -/- (C) Wild-type control (D) lGMR >UAS-dpr11 (dpr11GOF). DIP-γMi>GFP reporter in M6 layer (arrow) is shown for all panels. Gaps representing pDm8 arbors are present in wild-type control (C) but absent in ssGOF (A), where pR7 PRs have been replaced by yR7 PRs. Ectopic expression of Dpr11 in all PRs mimics ssGOF (compare panels A and D). (E) yDm8 arbors are lost when yR7 are converted to pR7 by expressing Dve in all PR. There are large gaps (arrowheads) in yDm8 labeling in layer M6 of the neuropil indicating extensive yDm8 cell death (compare to control (C), which has only small gaps). yDm8 arbors in M6 were examined with DIP-γMi>GFP reporter in lGMR-Gal4 >UAS Dve. The other layers in the distal medulla (M3, top arrow) and in the proximal medulla (bottom arrow) that label with the reporter, are unaffected in dveGOF (arrows in (E); compare to those layers in (C)). (A)-(E) single confocal slices; all scale bars are 10 µm. (F) Some R7 PRs remain in a sev ‘null’ mutant. A single confocal slice of a sev14/sev14 (putative amorphic mutant; see Flybase) adult, labeled with anti-Chp. There are two R7 axons that project to M6 visible in this slice (arrowheads). Scale bar, 10 µm. (G–H) Overexpressed Dpr11 can be detected on R7 terminals in lGMR-Gal4 >UAS-dpr11. (G) lGMR-Gal4 control (H) lGMR-Gal4 >UAS-dpr11. Pupal optic lobes (~43 hr APF) were labeled with anti-Dpr11 (green) and anti-Chp (magenta). Note distinct Dpr11 labeling (bracket) of R7 axons/terminals in (H), and its absence in (G). This antibody is weak and shows no labeling of specific neurons in wild-type. Maximum intensity projection; scale bar 5 µm. (I) Expression of Dpr11 in pR7 PRs does not convert them to the y fate. R7 terminals in dpr11GOF adult labeled with Rh4-lacZ and Chp. Note that 4 of the R7 terminals are labeled only by Chp and are therefore pR7. If Dpr11 expression in all PRs produced the same effect as ss expression, all R7 terminals would express both Rh4-lacZ and Chp, because they would all be y. Scale bar, 5 µm. (J) Ss overexpression (ssGOF) converts all R7 PRs to yR7, and converts almost all columns to yellow due to selection of yDm8, which ensures their survival. Cross-section view of medulla neuropil at 54 hr APF labeled with anti-Chp (magenta) and anti-DIP-γ (green). Compare to Figure 9F. Maximum intensity projection. (K) R7 and R8 PR labeling in DveGOF. lGMR-Gal4 >UAS Dve labeled for Chp (red) and GFP (green) in DIP-γ Mi>GFP background. Single confocal slice. (L) yDm8 do not mistarget to the M3 layer in dpr11GOF when Dpr11 is expressed in all PRs with lGMR-Gal4. Horizontal view of 20 hr APF in lGMR-Gal4 >UAS-dpr11 labeled with anti-Chp (magenta) and anti-DIP-γ (green) at 20 hr APF.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** (A)-(B) Surviving yDm8 do not mistarget to pR7 home columns in a dpr11 mutant. Mid-pupal optic lobes of dpr11Mi>GFP heterozygote reporter line (WT) and dpr11Mi>GFP /- (dpr11 -/-  were labeled with anti-GFP for yR7 (green), anti-DIP-γ for yDm8 (red) and Chp for all PRs (blue). (A) and (B) show all three channels, and (A’) and (B’) show only red and blue. A yR7 column labeled by DIP-γ is defined as one in which there are red pixels directly on top of the blue and green Chp and dpr11Mi>GFP labeling. Note that all yR7 columns with green labeling in (A) (these appear white) are labeled by both red and blue in (A’). However, in dpr11 mutants, some yR7 columns (circled in (B) and (B’)) with green labeling have no red DIP-γ labeling on top of the column, indicating that these are vacant yellow columns that have no yDm8. These are quantitated in (D). All dpr11 mutant columns are either blue (pR7-Chp only), or blue+red+green (Chp+DIP-γ+ dpr11Mi>GFP), showing that no yDm8 mistarget to pR7 (i.e. there are no red+blue columns in (B)). (C) Rare mistargeting of yDm8 to pR7 in DIAP rescue of yDm8 in dpr11 mutant. Pupal optic lobes of Traffic Jam Gal4 >UAS DIAP in a dpr11-/- mutant were labeled as in A-B: anti-GFP for yR7, anti-DIP-γ for yDm8, and Chp for all PRs. 2/119 pR7 (one is circled) showed yDm8 mistargeting (n = 6 OLs). (D) Some yR7 home columns are uninnervated in dpr11 mutants due to yDm8 cell death, and this loss of innervation is rescued when cell death is prevented. Pupal optic lobes of dpr11Mi>GFP reporter line (dpr11-/+), dpr11-/- and DIAP rescue in dpr11 mutant were labeled with anti-GFP for yR7, anti-DIP-γ for yDm8 and Chp for all PRs. Number of yR7 columns in the medulla were quantitated in 6 × 6 grids drawn on images of cross-section views. Number of yR7 columns without yDm8 partners was determined by examining how many dpr11Mi>GFP labeled yR7 did not have yDm8 labeling adjacent to them. Graph shows mean + /- std. deviation and unpaired Student’s t-test p-values. dpr11-/+ 0.011+ /- 0.02, dpr11-/- 0.22+ /- 0.09, ***p=0.0008 (total number of yR7 columns examined: dpr11-/+: 87, dpr11-/-: 122) DIAP rescue in dpr11 mutant 0.005+ /- 0.01 (total number of yR7 columns examined: 181). (E) yR7 overshoots detected with a truncated Brp marker are increased in the dpr11 null mutant. We repeated our previously published analysis of yR7 overshoots in dpr11 mutants using the CRISPR-generated dpr11 null allele instead of dpr11Mi>GFP/Df (Carrillo et al., 2015; Xu et al., 2018). We used the same reporter as before, Rh4 driving a truncated version of Brp (Brp-short; Berger-Müller et al., 2013) and determined the number of overshoots in which Brp-short labeling was observed beyond (proximal to) M6. The quantitation was done blind by a person not involved in the experiment. Graph shows mean + /- std. deviation and unpaired Student’s t-test p-values. dpr11-/+ 0.09+ /- 0.08, dpr11-/- 0.23+ /- 0.1, **p=0.0011.
 
 We determined yDm8 and pDm8 cell number in the above genotypes (Figure 9C–D). In ssGOF, we observed a 36% increase in yDm8, while pDm8 cell number was decreased by 84%. The increase in yDm8 in ssGOF was dependent on DIP-γ, as absence of DIP-γ in the ssGOF background resulted in 53% loss of yDm8 neurons. Interestingly, pDm8 increased significantly, doubling their cell numbers as compared to ssGOF alone (Figure 9D). Thus, yDm8 and pDm8 populations compete with each other when R7 fate is altered.
 
@@ -139,7 +199,7 @@ We repeated the above experimental paradigm in a genotype where yDm8 cell death 
 
 A circuit for UV wavelength discrimination in Drosophila is defined by expression of a pair of cell-surface IgSF binding partners, Dpr11 and DIP-γ. Dpr11 is selectively expressed by Rh4+ yR7 PRs (Figure 1), which connect to the yDm8 subtype of Dm8 amacrine neurons that express DIP-γ. Rh3+ pR7 connect to the pDm8 subtype, which is DIP-γ negative (Figure 2). yR7 and yDm8 synapse onto Tm5a neurons, which also express DIP-γ and project to the lobula, while pR7 and pDm8 synapse onto Tm5b (Figures 3 and 4 and associated videos). Dpr11-DIP-γ interactions are also involved in determination of Dm8 arbor morphology, which we analyzed using ExM (Figures 5 and 6 and associated videos). yDm8 neurons are generated in excess during development and compete for yR7 partners. Their survival is controlled by signaling mechanisms that require interaction between DIP-γ on the yDm8 neurons and Dpr11 on their presynaptic home column yR7 PRs (Figures 7 and 8). yDm8 and pDm8 neurons do not normally compete for survival signals, but can be forced to do so by changing R7 subtype fate (Figure 9).
 
-## Control of yDm8 survival and R7-Dm8 connectivity by Dpr11-DIP-γ signaling
+### Control of yDm8 survival and R7-Dm8 connectivity by Dpr11-DIP-γ signaling
 
 Yellow and pale ommatidia are generated by a stochastic process and are distributed in a ~ 65y:35p ratio in the retina (Wernet et al., 2006). Since yDm8 and pDm8 are separate populations (Figure 2) and R7 y vs. p fates are randomly determined, what mechanisms ensure that each yDm8 has a yR7 partner and each pDm8 has a pR7 partner? The strategy appears similar to those used in the development of many mammalian nervous system circuits, in that yDm8 neurons are generated in excess of their final cell numbers in adults, and those that are not selected for survival by an appropriate home column R7 partner die through apoptosis.
 
@@ -147,11 +207,11 @@ Our conclusions are summarized in a model (Figure 10). There are two subtypes of
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/48935/elife-48935-fig10-v2.jpg)
 
-**Figure 10.:** (A) In wild-type, yDm8 neurons (red) are produced in excess and are selected by yR7 PRs for connectivity and survival. pDm8 neurons (blue) are also shown as being generated in excess. We have indicated their cell numbers prior to selection as being the same as yDm8, but this is arbitrary, since we do not know how many pDm8 are born. Unselected yDm8 and pDm8 neurons die due to the absence of survival signals (indicated by Xs).~30% of the yDm8 neurons present at 15 hr APF die in wild-type (Figure 8A). (B) When all R7 PRs are converted to yR7 in ss (or when they all express Dpr11), more yDm8 neurons survive and almost all pDm8 neurons die (GOFFigure 9). (C) In DIP-γ mutants, yDm8 neurons are not selected by yR7 PRs and more of them die. ~75% of the yDm8 neurons present at 15 hr APF die in DIP-γ mutants (Figure 8A). Similar results are observed for dpr11 mutants. This means that some yR7 PRs remain uninnervated (Figure 9—figure supplement 2).
+**Figure 10.:** (A) In wild-type, yDm8 neurons (red) are produced in excess and are selected by yR7 PRs for connectivity and survival. pDm8 neurons (blue) are also shown as being generated in excess. We have indicated their cell numbers prior to selection as being the same as yDm8, but this is arbitrary, since we do not know how many pDm8 are born. Unselected yDm8 and pDm8 neurons die due to the absence of survival signals (indicated by Xs).~30% of the yDm8 neurons present at 15 hr APF die in wild-type (Figure 8A). (B) When all R7 PRs are converted to yR7 in ssGOF (or when they all express Dpr11), more yDm8 neurons survive and almost all pDm8 neurons die (Figure 9). (C) In DIP-γ mutants, yDm8 neurons are not selected by yR7 PRs and more of them die. ~75% of the yDm8 neurons present at 15 hr APF die in DIP-γ mutants (Figure 8A). Similar results are observed for dpr11 mutants. This means that some yR7 PRs remain uninnervated (Figure 9—figure supplement 2).
 
 Dpr11 and DIP-γ are required for survival, because 50–60% of yDm8 die when either molecule is absent (Figures 7, 8A and 10). If all R7 are converted to yR7 (in ssGOF), or if they all express Dpr11, many more yDm8 neurons survive than in wild-type, showing that the numbers of Dpr11-expressing R7 are limiting for yDm8 survival in wild-type animals (Figures 9C and 10). This seems surprising, because a wild-type retina should contain 460–500 yR7 (Posnien et al., 2012), which is greater than the number of yDm8 we count in early pupae (Figure 8A). However, the actual yDm8 cell numbers may be larger due to incomplete penetrance of the markers, as discussed in Results. yDm8 and pDm8 populations do not compete with each other in wild-type because they have different R7 subtype partners. When the numbers of yDm8 neurons are increased by suppressing apoptotic cell death with DIAP in yDm8, pDm8 cell numbers do not decrease (Figure 7B). However, yDm8 and pDm8 neurons can be forced to compete by changing R7 subtype fate. When all R7 PRs are converted to yR7, or when they all express Dpr11, almost all pDm8 neurons die (Figures 9D and 10). Conversely, most yDm8 neurons die when all R7 PRs are converted to pR7 (Figure 9G). pDm8 neurons are preferentially selected by pR7 PRs, using unknown molecular mechanisms, and pR7 PRs are needed to ensure pDm8 survival. This is demonstrated by the fact that pDm8 are unable to effectively fill vacant yR7 slots. For example, in ssGOF, DIP-γ animals, there are at least 180 yR7 slots that are made vacant by loss of yDm8, but the number of pDm8 neurons only increases by ~30 (~2 fold) in this genotype (Figure 9C–D).
 
-## Selection of yDm8 neurons for survival occurs early, prior to synaptogenesis
+### Selection of yDm8 neurons for survival occurs early, prior to synaptogenesis
 
 Dpr11 is already expressed in a subset of R7 PRs at 15 hr APF, indicating that yR7 fate is determined by that time (Figure 8F). DIP-γ is expressed by 18 hr - 20 hr APF in select Dm8 neurons apposed to Dpr11-expressing R7 PRs (Figure 8G; Figure 8—figure supplement 1A–B). At this time, R7 growth cones are positioned in the incipient layer (Kulkarni et al., 2016; Ting et al., 2005). This is consistent with earlier findings that single-cell Dm8 clones contact home column R7 growth cones by 17 hr APF (Ting et al., 2014). Taken together, these results indicate that yR7 and yDm8 have met and selected each other in the incipient layer by 15 hr - 20 hr APF. Survival signaling mediated by Dpr11-DIP-γ interactions is probably initiated around that time, because cell death of yDm8 in DIP-γ mutants begins to occur between 15 hr and 25 hr APF (Figure 8A).
 
@@ -161,7 +221,7 @@ The DIP-α-expressing Dm4 neurons are also generated in excess, and their surviv
 
 Our gain-of-function studies show that when Dpr11 is expressed in all R7, all pDm8 home columns are converted to yDm8 (Figure 9E–F,H), demonstrating that expression of Dpr11 in R7 PRs that are otherwise of the pale subtype is sufficient for selection of yDm8. However, we were unable to determine whether Dpr11 is also necessary for yDm8-yR7 pairing by analysis of LOF mutants. We did not observe mistargeting of surviving yDm8 in dpr11 mutants to pR7 columns, most likely because pR7 slots are occupied by pDm8 neurons (Figure 9—figure supplement 2A–D). Another factor that could contribute to accurate targeting in dpr11 mutants is that there may be a second mechanism for support (and possibly selection) of yDm8 by R7 that is independent of Dpr11-DIP-γ interactions. This is suggested by the fact that ~70% of yDm8 are lost in sev mutants, but only ~50% in DIP-γ and dpr11 mutants (Figures 9C and 7A).
 
-## Effects of DIP-γ and dpr11 mutations on yDm8 arbor morphology
+### Effects of DIP-γ and dpr11 mutations on yDm8 arbor morphology
 
 A typical wild-type yDm8 arbor has a thick distal dendritic projection (sprig) that extends along the home column yR7 terminal, usually reaching M4. In DIP-γ and dpr11 mutants, the distribution of sprig diameters for yDm8 neurons is shifted toward smaller values (Figure 5I), suggesting that mutant sprigs may have a reduced capacity to form synapses with yR7 in M4 and M5. Synapses that would have been in M4 and M5 might then be found in the base of the arbor in M6. EM reconstruction data for columns D and E supports this idea. R7 output synapses (T-bars) are mainly in M4 and M5 (on the sprig) in column E, which has a Dm8 with a thick sprig (Figures 2A and 4A, inset in 4B). In column D, whose Dm8 has a very thin sprig, R7 T-bars are located in M6 (in the main arbor) (Figure 4A, inset in 4C).
 
@@ -169,7 +229,7 @@ The effects of Dpr11 and DIP-γ on yDm8 sprig morphology may involve a different
 
 We had earlier reported an ‘overshoot’ phenotype in dpr11Mi>GFP/Df mutants in which some R7 terminals had processes extending beyond M6 into proximal medulla layers (Carrillo et al., 2015). Overshoots were labeled by an overexpressed truncated form (Brp-short) of the active zone protein Bruchpilot (Brp) (Berger-Müller et al., 2013). However, this phenotype was not observed in the dpr11CRISPR null mutant when endogenous Brp puncta were labeled with the STaR method (Xu et al., 2018). To determine whether this discrepancy was due to the dpr11Mi>GFP/Df genotype or to the Brp-short marker, we analyzed dpr11CRISPR homozygotes using Brp-short and observed a significant increase in yR7 overshoots as compared with the heterozygous control (Figure 9—figure supplement 2E). However, the interpretation of this Brp-short phenotype is unclear, as it does not correspond to a shift in the distribution of endogenous Brp puncta into layers proximal to M6.
 
-## A circuit for wavelength discrimination defined by Dpr11 and DIP-γ expression
+### A circuit for wavelength discrimination defined by Dpr11 and DIP-γ expression
 
 Tm5a, Tm5b, and Tm5c are output neurons for R7 and R8 circuits. Their dendrites receive direct synaptic input from R7, R8, and Dm8, and their axons relay signals to the lobula (Gao et al., 2008; Karuppudurai et al., 2014; Takemura et al., 2013; Takemura et al., 2015). It has been hypothesized that Tm5a/b/c cells are analogous to vertebrate retinal ganglion cells, and that true color vision (intensity-independent hue discrimination) involves interpretation of Tm inputs by circuits in the lobula. Chi-Hon Lee and his colleagues developed a learning paradigm in which flies discriminate between equiluminant blue and green light, which are differentially sensed by y (Rh6) and p (Rh5) R8. Four classes of Tm neurons (Tm5 a/b/c and Tm20) make redundant contributions to this response (Melnattur et al., 2014).
 
@@ -189,19 +249,635 @@ In conclusion, our results show that Dpr11 and DIP-γ expression patterns define
 
 ## Materials and methods
 
-## Drosophila genetics
+### Drosophila genetics
 
 Genotypes of all the flies analyzed in this study are indicated in Tables 2–3 and lines obtained from other sources are listed in Table 1. Heterozygote controls were used in all experiments for determining cell numbers. DIP-γMi>GFP reporter (indicated in all graphs as DIP-γ -/+) is an insertion in the 5’ UTR intron and has reduced or no protein expression. Thus, this line serves as a mutant as well as a reporter of DIP-γ transcript.
+
+**Table 1.**
+ Lines and sources.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>yw hsFlp; UAS &gt; CD2, y+&gt;mCD8::GFP/Cyo; TM2/TM6B</td>
+      <td>Gift from C-H Lee</td>
+    </tr>
+    <tr>
+      <td>Rh4-lacZ</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>R24F06-p65.AD</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>DIP-γ Gal4-DBD</td>
+      <td>Gift from C Desplan</td>
+    </tr>
+    <tr>
+      <td>OK371-VP16AD</td>
+      <td>Gift from C-H Lee</td>
+    </tr>
+    <tr>
+      <td>R24F06-Gal4</td>
+      <td>Bloomington, (Nern et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>DIP-γMI03222(DIP-γMi&gt;GFP), DIP-γMI03222 Gal4</td>
+      <td>HJ Bellen</td>
+    </tr>
+    <tr>
+      <td>DIP-γnull</td>
+      <td>Gift from L Zipursky (Xu et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>dpr11MI02231-GFP (dpr11Mi&gt;GFP)</td>
+      <td>HJ Bellen</td>
+    </tr>
+    <tr>
+      <td>dpr11null</td>
+      <td>Gift from L Zipursky (Xu et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>dpr11 RNAi GD23243 (III)</td>
+      <td>VDRC</td>
+    </tr>
+    <tr>
+      <td>UAS-DIP-γsh (II)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>UASp-DIAP I (II)</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-DIAP1-myc/TM6b</td>
+      <td>Gift from L Zipursky (Xu et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>UAS-dveA-9B2/TM3</td>
+      <td>Gift from Hideki Nakagoshi (Nakagawa et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>lGMR-Ss (II)</td>
+      <td>Gift from C Desplan</td>
+    </tr>
+    <tr>
+      <td>lGMR-Gal4</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>sev14</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-dpr11sh (II)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Rh4-lexA::p65, lexAop2-brp-shortcherry</td>
+      <td>Gift from T Suzuki</td>
+    </tr>
+    <tr>
+      <td>UAS-DIP-α-V5</td>
+      <td>Gift from L Zipursky (Xu et al., 2018)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ List of genotypes in figures and graphs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figures</th>
+      <th>Short genotype</th>
+      <th>Complete genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1E</td>
+      <td>dpr11Mi&gt;GFP/+</td>
+      <td>dpr11MI02231-GFP/+</td>
+    </tr>
+    <tr>
+      <td>1 F-F’</td>
+      <td></td>
+      <td>dpr11MI02231-GFP/Rh4-LacZ</td>
+    </tr>
+    <tr>
+      <td>1 G-G’, H</td>
+      <td></td>
+      <td>10xUAS-mCD8::RFP/+; DIP-γMI03222/R24F06-Gal4</td>
+    </tr>
+    <tr>
+      <td>1I</td>
+      <td></td>
+      <td>dpr11MI02231-GFP/Rh4-LacZ and 10xUAS-mCD8::RFP/+; DIP-γMI03222/R24F06-Gal4</td>
+    </tr>
+    <tr>
+      <td>2B, D</td>
+      <td></td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/R24F06-p65.AD; Rh4-lacZ/DIP-γMI03222Gal4.DBD</td>
+    </tr>
+    <tr>
+      <td>2C, E</td>
+      <td></td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/+; Rh4LacZ/R24F06-Gal4</td>
+    </tr>
+    <tr>
+      <td>2F</td>
+      <td>dpr11Mi&gt;GFP/+</td>
+      <td>dpr11MI02231-GFP/+</td>
+    </tr>
+    <tr>
+      <td>2G</td>
+      <td>DIP-γ Gal4 &gt; Flp, Pan-Dm8 LexA &gt; FSF GFP</td>
+      <td>20xUAS-flp/+; R24F06-LexA/+; DIP-γMI03222Gal4, LexAop FRT &gt; stop &gt; FRT mCD8::GFP/+</td>
+    </tr>
+    <tr>
+      <td>2 H-H’</td>
+      <td>DIP-γ Mi&gt;GFP, Pan-Dm8 &gt; RFP</td>
+      <td>10xUAS mCD8::RFP/+; DIP-γMI03222- GFP/R24F06-Gal4</td>
+    </tr>
+    <tr>
+      <td>2I-J</td>
+      <td>yDm8</td>
+      <td>yw-hsflp/+; UAS &gt; CD2,y+&gt;mCD8GFP/R24F06-p65.AD; Rh4LacZ/DIP-γ Gal4 DBD</td>
+    </tr>
+    <tr>
+      <td>2I-J</td>
+      <td>pDm8</td>
+      <td>yw-hsflp/+; UAS &gt; CD2,y+&gt;mCD8 GFP/Sp; R24F06Gal4, DIP-γ Gal80/Rh4LacZ</td>
+    </tr>
+    <tr>
+      <td>2I-J</td>
+      <td>pDm8</td>
+      <td>yw-hsflp/+; UAS &gt; CD2,y+&gt;mCD8GFP/+; Rh4LacZ/R24 F06Gal4</td>
+    </tr>
+    <tr>
+      <td>5A-B, I, K</td>
+      <td>DIP-γ -/+</td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/R24F06-p65.AD; Rh4-lacZ/DIP-γMI03222Gal4.DBD</td>
+    </tr>
+    <tr>
+      <td>5C-D, I, K</td>
+      <td>DIP-γ -/-</td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/R24F06-p65.AD; DIP-γnull/DIP-γMI03222Gal4.DBD</td>
+    </tr>
+    <tr>
+      <td>5E-F, I, K</td>
+      <td>dpr11 -/-</td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/Rh4LacZ; R24F06-Gal4, dpr11null/dpr11null</td>
+    </tr>
+    <tr>
+      <td>5G, H</td>
+      <td>DIP-γ -/+</td>
+      <td>yw-hsflp/+; UAS &gt; CD2,y+&gt;mCD8GFP/R24F06p65AD; Rh4LacZ/DIP-γ Gal4DBD</td>
+    </tr>
+    <tr>
+      <td>5G</td>
+      <td>DIP-γ -/-</td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/R24F06-p65.AD; DIP-γnull/DIP-γMI03222Gal4.DBD</td>
+    </tr>
+    <tr>
+      <td>5J, L</td>
+      <td>DIP-γ -/+</td>
+      <td>yw-hsflp/+; UAS &gt; CD2,y+&gt;mCD8GFP/R24F06p65AD; Rh4LacZ/DIP-γ Gal4 DBD</td>
+    </tr>
+    <tr>
+      <td>5J, L</td>
+      <td>DIP-γ -/-</td>
+      <td>yw-hsflp/+; UAS &gt; CD2,y+&gt;mcd8GFP/R24F06p65AD; DIP-γ Gal4 DBD, Rh4LacZ/DIP-γnull</td>
+    </tr>
+    <tr>
+      <td>5J, L</td>
+      <td>dpr11 -/-</td>
+      <td>yw-hsflp/+; UAS &gt; CD2,y+&gt;mcd8GFP/Rh4LacZ; R24F06Gal4, dpr11null/dpr11null</td>
+    </tr>
+    <tr>
+      <td>6A-C and Figure 6—videos 1–2</td>
+      <td>WT</td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/R24F06-p65.AD; Rh4-lacZ/DIP-γMI03222Gal4.DBD</td>
+    </tr>
+    <tr>
+      <td>6D and Figure 6—videos 3–4</td>
+      <td>DIP-γ -/-</td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/R24F06-p65.AD; DIP-γnull/DIP-γMI03222Gal4.DBD</td>
+    </tr>
+    <tr>
+      <td>7A-B, D</td>
+      <td>DIP-γ -/+</td>
+      <td>10xUAS-mCD8::RFP/+; R24F06-Gal4/DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>7A-B</td>
+      <td>DIP-γ -/-</td>
+      <td>10xUAS-mCD8::RFP/+; R24F06-Gal4, DIP-γ null/DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>7A-B</td>
+      <td>dpr11 -/+ control</td>
+      <td>10xUAS-mCD8::RFP/+; R24F06-Gal4, dpr11null/DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>7A-B, H</td>
+      <td>dpr11 -/-</td>
+      <td>10xUAS-mCD8::RFP/+; R24F06-Gal4, dpr11null/dpr11null, DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>7A-B</td>
+      <td>dpr11 -/-, DIP-γ -/-</td>
+      <td>10xUAS-mCD8::RFP/+; R24F06-Gal4, dpr11null, DIP-γnull/dpr11null, DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>7A</td>
+      <td>DIP-γ -/+ control</td>
+      <td>R24F06-LexA/+; 13xLexAop-tdTomato::myr, DIP-γMI03222-GFP /+</td>
+    </tr>
+    <tr>
+      <td>7A, E</td>
+      <td>DIP-γ -/-control</td>
+      <td>R24F06-LexA/+; DIP-γMI03222 Gal4/ 13xLexAop-tdTomato::myr, DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>7A, F</td>
+      <td>DIP-γ rescue</td>
+      <td>UAS-DIP-γsh/R24F06-LexA; DIP-γMI03222 Gal4/ 13xLexAop-tdTomato::myr, DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>7A-B, G</td>
+      <td>yDm8 DIAP rescue</td>
+      <td>UASp-DIAP/R24F06-LexA; DIP-γMI03222 Gal4/ 13xLexAop-tdTomato::myr, DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>7C</td>
+      <td>DIP-γ -/+</td>
+      <td>DIP-γMI03222-GFP/+</td>
+    </tr>
+    <tr>
+      <td>7C</td>
+      <td>DIP-γ -/-</td>
+      <td>DIP-γMI03222-GFP/DIP-γnull</td>
+    </tr>
+    <tr>
+      <td>7C</td>
+      <td>dpr11 -/-</td>
+      <td>dpr11null/dpr11null, DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7C</td>
+      <td>lGMR Gal4 control</td>
+      <td>lGMR-Gal4/+; dpr11null, DIP-γMI03222-GFP/+ @29 deg</td>
+    </tr>
+    <tr>
+      <td>7C</td>
+      <td>lGMR Gal4/dpr11 RNAi</td>
+      <td>lGMR-Gal4/+; dpr11null, DIP-γMI03222-GFP/dpr11 RNAi GD23243 (III) @29 deg</td>
+    </tr>
+    <tr>
+      <td>7C</td>
+      <td>lGMR Gal4/+</td>
+      <td>lGMR-Gal4/+; DIP-γMI03222-GFP/+</td>
+    </tr>
+    <tr>
+      <td>7C</td>
+      <td>lGMR Gal4/UAS-DIP-γ</td>
+      <td>lGMR-Gal4/UAS-DIP-γ; DIP-γMI03222-GFP/+</td>
+    </tr>
+    <tr>
+      <td>7C</td>
+      <td>lGMR Gal4/UAS-DIP-α</td>
+      <td>lGMR-Gal4/+; DIP-γMI03222-GFP/UAS-DIP-α-V5</td>
+    </tr>
+    <tr>
+      <td>8A, B-D</td>
+      <td>DIP-γ -/+</td>
+      <td>DIP-γMI03222-GFP/+</td>
+    </tr>
+    <tr>
+      <td>8A</td>
+      <td>DIP-γ -/-</td>
+      <td>DIP-γMI03222-GFP/DIP-γnull</td>
+    </tr>
+    <tr>
+      <td>8A</td>
+      <td>yDm8 DIAP rescue</td>
+      <td>UASp-DIAP/+; DIP-γMI03222Gal4/DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>8C-E</td>
+      <td>DIP-γ -/+</td>
+      <td>OK371 VP16/UAS-Apo; DIP-γ Gal4 DBD/+</td>
+    </tr>
+    <tr>
+      <td>8C-E</td>
+      <td>DIP-γ -/-</td>
+      <td>OK371 VP16/UAS-Apo; DIP-γ Gal4 DBD/DIP-γnull</td>
+    </tr>
+    <tr>
+      <td>8E</td>
+      <td>dpr11Mi&gt;GFP</td>
+      <td>dpr11MI02231-GFP</td>
+    </tr>
+    <tr>
+      <td>8F</td>
+      <td>yw</td>
+      <td>WT control</td>
+    </tr>
+    <tr>
+      <td>9A</td>
+      <td>WT</td>
+      <td>dpr11MI02231-GFP/+</td>
+    </tr>
+    <tr>
+      <td>9B</td>
+      <td>ssGOF</td>
+      <td>lGMR-ss/+; dpr11MI02231-GFP/+</td>
+    </tr>
+    <tr>
+      <td>9C-D</td>
+      <td>DIP-γ -/+</td>
+      <td>10xUAS-mCD8::RFP/+; R24F06-Gal4/DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>9C-D</td>
+      <td>LGMR &gt; ss; DIP-γ -/+</td>
+      <td>10xUAS-mCD8::RFP/lGMR ss; DIP-γMI03222-GFP/R24 F06-Gal4</td>
+    </tr>
+    <tr>
+      <td>9C-D</td>
+      <td>LGMR &gt; ss; DIP-γ -/-</td>
+      <td>10xUAS-mCD8::RFP/lGMR-ss; DIP-γMI03222-GFP/R24F06-Gal4, DIP-γnull</td>
+    </tr>
+    <tr>
+      <td>9C-D</td>
+      <td>DIP-γ -/-</td>
+      <td>10xUAS-mCD8::RFP/+; DIP-γMI03222-GFP/R24F06-Gal4, DIP-γnull</td>
+    </tr>
+    <tr>
+      <td>9C-D</td>
+      <td>sev -/+;; DIP-γ -/+</td>
+      <td>sev14/+;; R24F06-Gal4/UAS-mCD8::RFP, DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>9C-D</td>
+      <td>sev -/-;; DIP-γ -/+</td>
+      <td>sev14/sev14;; R24F06-Gal4/UAS-mCD8::RFP, DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>9C-D</td>
+      <td>sev -/-;; DIP-γ -/-</td>
+      <td>sev14/sev14;; R24F06-Gal4, DIP-γnull/UAS-mCD8::RFP, DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>9C-D</td>
+      <td>lGMR Gal4 control</td>
+      <td>R24F06-LexA/+; 13xLexAop-tdTomato::myr, DIP-γMI03222-GFP/lGMR Gal4</td>
+    </tr>
+    <tr>
+      <td>9C-D</td>
+      <td>lGMR Gal4&gt; UAS-dpr11</td>
+      <td>UAS-Dpr11-sh/R24 F06-LexA; 13xLexAop-tdTomato::myr, DIP-γMI03222-GFP/lGMR Gal4</td>
+    </tr>
+    <tr>
+      <td>9E</td>
+      <td>WT</td>
+      <td>lGMR- Gal4/+</td>
+    </tr>
+    <tr>
+      <td>9F</td>
+      <td>dpr11GOF</td>
+      <td>lGMR-Gal4/UAS-dpr11sh</td>
+    </tr>
+    <tr>
+      <td>9G</td>
+      <td>lGMR Gal4 control</td>
+      <td>lGMR-Gal4/+; DIP-γMI03222-GFP/+</td>
+    </tr>
+    <tr>
+      <td>9G</td>
+      <td>lGMR Gal4&gt; UAS-Dve</td>
+      <td>lGMR-Gal4/+; DIP-γMI03222-GFP/UAS-dveA-9B2</td>
+    </tr>
+    <tr>
+      <td>9H</td>
+      <td>lGMR Gal4</td>
+      <td>lGMR- Gal4/+</td>
+    </tr>
+    <tr>
+      <td>9H</td>
+      <td>lGMR Gal4&gt; UAS-dpr11</td>
+      <td>lGMR-Gal4/UAS-dpr11sh</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ List of genotypes in Supplementary figures and graphs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Supplementary figures</th>
+      <th>Short genotype</th>
+      <th>Complete genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 2—figure supplement 1A</td>
+      <td>yDm8 split-Gal4 driver</td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/R24 F06-p65.AD; Rh4-lacZ/DIP-γMI03222Gal4.DBD</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 1A</td>
+      <td>Pan-Dm8 driver</td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/+; Rh4LacZ/R24F06-Gal4</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 1C–C’</td>
+      <td></td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/OK371 dVP16.AD; Rh4 LacZ/DIP-γMI03222Gal4.DBD</td>
+    </tr>
+    <tr>
+      <td>Figure 5—source data 1</td>
+      <td>WT: Pan-Dm8 driver</td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/+; Rh4LacZ/R24 F06-Gal4</td>
+    </tr>
+    <tr>
+      <td>Figure 5—source data 1</td>
+      <td>WT: yDm8 split-Gal4 driver</td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/R24F06-p65.AD; Rh4-lacZ/DIP-γMI03222Gal4.DBD</td>
+    </tr>
+    <tr>
+      <td>Figure 5—source data 1</td>
+      <td>DIP-γ -/-: yDm8 split -Gal4 driver</td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/R24F06-p65.AD; DIP-γnull/DIP-γMI03222Gal4.DBD</td>
+    </tr>
+    <tr>
+      <td>Figure 5—source data 1</td>
+      <td>dpr11 -/-: Pan-Dm8 driver</td>
+      <td>yw hsflp/+; UAS &gt; CD2, y+&gt;mCD8::GFP/Rh4LacZ; R24F06-Gal4, dpr11null/dpr11null</td>
+    </tr>
+    <tr>
+      <td>Figure 7—figure supplement 1</td>
+      <td>DIP-γ&gt;&gt;GFP, DIP-γ- Gal4 &gt; UAS-DIAPmyc</td>
+      <td>UAS-diap1.myc, DIP-γMI03222-GFP/ DIP-γMI03222 Gal4</td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 1A–A’</td>
+      <td></td>
+      <td>DIP-γMI03222-GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 1B–B’</td>
+      <td></td>
+      <td>WT control</td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 1C</td>
+      <td></td>
+      <td>dpr11MI02231-GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 2A,C</td>
+      <td>DIP-γ -/+</td>
+      <td>DIP-γMI03222-GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 2B,D</td>
+      <td>DIP-γ -/-</td>
+      <td>DIP-γMI03222-GFP/DIP-γnull</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 1A</td>
+      <td>ssGOF</td>
+      <td>lGMR-ss/+; DIP-γMI03222-GFP</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 1B</td>
+      <td>ssGOF; DIP-γ -/-</td>
+      <td>lGMR-ss/+; DIP-γMI03222-GFP/DIP-γnull</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 1C</td>
+      <td>WT</td>
+      <td>lGMR-Gal4/+; DIP-γMI03222-GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 1D</td>
+      <td>dpr11GOF</td>
+      <td>lGMR-Gal4/UAS-dpr11sh; DIP-γMI03222-GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 1E</td>
+      <td>lGMR-Gal4 &gt; UAS-Dve</td>
+      <td>lGMR-Gal4/+; DIP-γMI03222-GFP/UAS-dveA-9B2</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 1F</td>
+      <td>sev -/-</td>
+      <td>sev14/sev14;; R24F06Gal4/DIP-γMI03222-GFP, UAS-mCD8RFP</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 1G</td>
+      <td>WT</td>
+      <td>lGMR Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 1H</td>
+      <td>lGMR-Gal4 &gt; UAS-dpr11</td>
+      <td>lGMR Gal4/+; UAS-dpr11sh</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 1I</td>
+      <td>dpr11GOF</td>
+      <td>lGMR Gal4/Rh4-lacZ; UAS-dpr11sh</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 1J</td>
+      <td>ssGOF</td>
+      <td>lGMR-ss/+</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 1K</td>
+      <td>lGMR-Gal4 &gt; UAS-Dve</td>
+      <td>lGMR-Gal4/+; DIP-γMI03222-GFP/UAS-dveA-9B2</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 1L–L’</td>
+      <td>lGMR-Gal4 &gt; UAS-dpr11</td>
+      <td>lGMR Gal4/+; UAS-dpr11sh</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 2A–A’</td>
+      <td>WT</td>
+      <td>dpr11MI02231-GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 2B–B’</td>
+      <td>dpr11 -/-</td>
+      <td>dpr11MI02231-GFP/dpr11null</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 2C–C”</td>
+      <td>dpr11 -/-</td>
+      <td>Traffic jam Gal4/UASp DIAP; dpr11MI02231-GFP/dpr11null</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 2D</td>
+      <td>dpr11 +/-</td>
+      <td>dpr11MI02231-GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 2D</td>
+      <td>dpr11 -/-</td>
+      <td>dpr11MI02231-GFP/dpr11null</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 2D</td>
+      <td>Dm8 DIAP rescue</td>
+      <td>Traffic jam Gal4/UASp DIAP; dpr11MI02231-GFP/dpr11null</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 2E</td>
+      <td>dpr11 +/-</td>
+      <td>Rh4-lexA::p65, lexAop2-brp-shortcherry/+; dpr11null/+</td>
+    </tr>
+    <tr>
+      <td>Figure 9—figure supplement 2E</td>
+      <td>dpr11 -/-</td>
+      <td>Rh4-lexA::p65, lexAop2-brp-shortcherry/+; dpr11null/dpr11null</td>
+    </tr>
+  </tbody>
+</table>
 
 For eye-specific transgenic RNAi, we screened three dpr11 RNAi lines by crossing to a line which had one copy of dpr11 removed to increase the effectiveness of the RNAi line: lGMR-Gal4; dpr11null, DIP-γMI03222-GFP; the RNAi line GD2343 (VDRC) had the strongest phenotype and was used in the paper.
 
 Generation of UAS-transgenic flies cDNA encoding Dpr11 and DIP-γ were cloned from pOT2 GH22307 for Dpr11 and pOT2 GH08175 for DIP-γ into pUAST attB vector using standard molecular biology techniques. 5’ UTRs for both genes contained many upstream ATG codons; we made deletions of the 5’ UTRs so that the ATGs of the proteins were the first ATGs in the mRNAs, in order to increase expression of the transgenes (sequences available on request). Transgenes were injected into embryos (Rainbow Transgenics). UAS-Dpr11 and UAS-DIP-γ both used the attP40 (2L) landing site.
 
-## Antibodies
+### Antibodies
 
 The primary antibodies used were as follows: anti-DIP-γ (guinea pig, 1:200) and anti-Dpr11 (rabbit, 1:150) were gifts from C. Desplan. Anti-Pros MR1A (mouse 1:4), anti-Elav 7E8A10 (rat, 1:10), anti-Dac 2–3 (mouse 1:50), anti-chaoptin 24B10 (mouse 1:20) were obtained from Developmental Studies Hybridoma Bank (University of Iowa, IA). Commercial antibodies were used as follows: Rabbit anti-RFP (Rockland, 1:500), rabbit anti-GFP (Thermo- Fisher Scientific, 1:500), chicken anti-GFP (Aves labs, 1:500), mouse anti-myc 9E10 (Abcam, 1:500) and chicken anti-beta-galactosidase (Abcam, 1:1000). Secondary antibodies were obtained from Thermo-Fisher Scientific and used at 1:500.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Eclosed flies (less than 3 days old) were dissected in phosphate-buffered saline (PBS) and fixed in 4% paraformaldehyde in PBS with 0.2% Triton-X-100 (PBT) for 20 min at room temperature. Brains were washed overnight in PBT, followed by a two-day incubation at 4°C with primary antibody that was diluted in blocking buffer (5% normal goat serum in PBT). Samples were then incubated with secondary antibody (similarly diluted in blocking buffer) for two-days, followed by washing with PBT and PBS and stored in Vectashield.
 
@@ -209,20 +885,20 @@ For single cell flipouts, brains were given heat-shock at 50 hr APF for 10–20 
 
 For cell counts and column analyses, optic lobes were separated from the central brain and mounted top-down. Confocal images were acquired on Zeiss LSM800 or LSM700 microscopes with a 40xobjective. For cell counts and single-cell flipouts, optic lobes were imaged with 1.5 µm and 0.8 µm z-sections, respectively. Single slices or maximum intensity projections were exported with Zen software (Zeiss) for image processing.
 
-## Image processing
+### Image processing
 
 Images were processed with Adobe Photoshop.
 
-## Quantitation and statistics
+### Quantitation and statistics
 
 Cell numbers were determined blind to genotype using Zen software to do manual counts. 1-3d old adults were used for counts in adults. For all data (cell soma, columns and Brp overshoots), only one optic lobe per animal was used for counts and statistics. p-value was determined using Student’s unpaired t-test from Graphpad Prism. All data reported in graphs are mean + /- standard deviation. yDm8 sprig parameters were measured using Image J software. To obtain measurement of the widest point of a sprig, a slice at which the image was most in focus was selected. The height was measured from the most distal point of the sprig to its most proximal point before the processes of the sprig connected back to the dendritic base. The Brp overshoots were analyzed blind using Image J software, by an individual unrelated to that experiment.
 
 For quantitation of neighboring contacts in all genotypes, well isolated clones were chosen for this analysis. The presence of a single axonal process leading to a soma confirmed that each clone was indeed a single cell. Images were then viewed in Imaris. The identity of the home column was excluded from the yellow vs. pale R7 contacts.
 
-## ExM method
+### ExM method
 
 Single-cell flipouts were processed for expansion microscopy after immunohistochemistry (and confirming the presence of flipouts) according to a protocol from Tim Mosca, based on Mosca et al. (2017). Briefly, labeled brains were washed in 50% PBT-PBS mixture before proceeding with steps for anchoring proteins to the sodium acrylate matrix. Gelling chambers were made on coated slides with No.1 coverslips as bridge and brains were embedded in sodium acrylate gel. After incubation for 2 hr at 37°C, the samples were excised from the solidified gel and processed for digestion with proteinase K in six-well plates. Gel fragments were expanded by replacing the digestion buffer with several washes of water. Finally, in preparation for confocal imaging, the gel fragments containing the expanded transparent brains were placed on a 24 mm x 50 mm No. 1.5 coverslip that was coated with poly-l-lysine. Preps were always covered in water to make sure they did not dry out during imaging. Expanded brains were imaged on Zeiss LSM800 with 40x Objective 1.1 NA.
 
-## 3D reconstruction of ExM samples
+### 3D reconstruction of ExM samples
 
 ExM images were processed for 3D reconstruction using Imaris software (Bitplane). Using surface rendering and fluorescence thresholding, we were able to obtain an accurate 3D structure of a yDm8 in wild-type and DIP-γ mutant. Each channel was recreated by adding an additional surface. The threshold for new surface detection was set as needed per image minimizing the addition of surface fragments not present in the original image. Each new surface was segmented in order to isolate the appropriate region of interest. Video recordings were captured at 10 frames per second for a total of 300 frames.

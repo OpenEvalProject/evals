@@ -21,21 +21,21 @@
 
 ### Affiliations
 
-1. https://ror.org/02v51f717 Department of Epidemiology and Biostatistics, Peking University Beijing China
-2. https://ror.org/02v51f717 Peking University Center for Public Health and Epidemic Preparedness & Response Beijing China
-3. https://ror.org/02v51f717 Key Laboratory of Molecular Cardiovascular Sciences (Peking University), Ministry of Education Beijing China
-4. https://ror.org/042pgcv68 Fuwai Hospital Chinese Academy of Medical Sciences, National Center for Cardiovascular Diseases Beijing China
-5. https://ror.org/042pgcv68 Chinese Academy of Medical Sciences Beijing China
-6. https://ror.org/052gg0110 Medical Research Council Population Health Research Unit at the University of Oxford Oxford United Kingdom
-7. https://ror.org/052gg0110 Clinical Trial Service Unit & Epidemiological Studies Unit (CTSU), Nuffield Department of Population Health, University of Oxford Oxford United Kingdom
-8. https://ror.org/03f015z81 NCDs Prevention and Control Department, Zhejiang CDC Hangzhou China
-9. https://ror.org/03kcjz738 China National Center for Food Safety Risk Assessment Beijing China
+1. Department of Epidemiology and Biostatistics, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+2. Peking University Center for Public Health and Epidemic Preparedness & Response Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+3. Key Laboratory of Molecular Cardiovascular Sciences (Peking University), Ministry of Education Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+4. Fuwai Hospital Chinese Academy of Medical Sciences, National Center for Cardiovascular Diseases Beijing China ([ROR:042pgcv68](https://ror.org/042pgcv68))
+5. Chinese Academy of Medical Sciences Beijing China ([ROR:042pgcv68](https://ror.org/042pgcv68))
+6. Medical Research Council Population Health Research Unit at the University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+7. Clinical Trial Service Unit & Epidemiological Studies Unit (CTSU), Nuffield Department of Population Health, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+8. NCDs Prevention and Control Department, Zhejiang CDC Hangzhou China ([ROR:03f015z81](https://ror.org/03f015z81))
+9. China National Center for Food Safety Risk Assessment Beijing China ([ROR:03kcjz738](https://ror.org/03kcjz738))
 
 † Corresponding author
 
 ## Abstract
 
-Few studies have assessed the role of individual plasma cholesterol levels in the association between egg consumption and the risk of cardiovascular diseases. This research aims to simultaneously explore the associations of self-reported egg consumption with plasma metabolic markers and these markers with the risk of cardiovascular disease (CVD). Totally 4778 participants (3401 CVD cases subdivided into subtypes and 1377 controls) aged 30–79 were selected based on the China Kadoorie Biobank. Targeted nuclear magnetic resonance was used to quantify 225 metabolites in baseline plasma samples. Linear regression was conducted to assess associations between self-reported egg consumption and metabolic markers, which were further compared with associations between metabolic markers and CVD risk. Egg consumption was associated with 24 out of 225 markers, including positive associations for apolipoprotein A1, acetate, mean HDL diameter, and lipid profiles of very large and large HDL, and inverse associations for total cholesterol and cholesterol esters in small VLDL. Among these 24 markers, 14 were associated with CVD risk. In general, the associations of egg consumption with metabolic markers and of these markers with CVD risk showed opposite patterns. In the Chinese population, egg consumption is associated with several metabolic markers, which may partially explain the protective effect of moderate egg consumption on CVD. This work was supported by the National Natural Science Foundation of China (81973125, 81941018, 91846303, 91843302). The CKB baseline survey and the first re-survey were supported by a grant from the Kadoorie Charitable Foundation in Hong Kong. The long-term follow-up is supported by grants (2016YFC0900500, 2016YFC0900501, 2016YFC0900504, 2016YFC1303904) from the National Key R&D Program of China, National Natural Science Foundation of China (81390540, 81390541, 81390544), and Chinese Ministry of Science and Technology (2011BAI09B01). The funders had no role in the study design, data collection, data analysis and interpretation, writing of the report, or the decision to submit the article for publication.
+Background:Few studies have assessed the role of individual plasma cholesterol levels in the association between egg consumption and the risk of cardiovascular diseases. This research aims to simultaneously explore the associations of self-reported egg consumption with plasma metabolic markers and these markers with the risk of cardiovascular disease (CVD).Methods:Totally 4778 participants (3401 CVD cases subdivided into subtypes and 1377 controls) aged 30–79 were selected based on the China Kadoorie Biobank. Targeted nuclear magnetic resonance was used to quantify 225 metabolites in baseline plasma samples. Linear regression was conducted to assess associations between self-reported egg consumption and metabolic markers, which were further compared with associations between metabolic markers and CVD risk.Results:Egg consumption was associated with 24 out of 225 markers, including positive associations for apolipoprotein A1, acetate, mean HDL diameter, and lipid profiles of very large and large HDL, and inverse associations for total cholesterol and cholesterol esters in small VLDL. Among these 24 markers, 14 were associated with CVD risk. In general, the associations of egg consumption with metabolic markers and of these markers with CVD risk showed opposite patterns.Conclusions:In the Chinese population, egg consumption is associated with several metabolic markers, which may partially explain the protective effect of moderate egg consumption on CVD.Funding:This work was supported by the National Natural Science Foundation of China (81973125, 81941018, 91846303, 91843302). The CKB baseline survey and the first re-survey were supported by a grant from the Kadoorie Charitable Foundation in Hong Kong. The long-term follow-up is supported by grants (2016YFC0900500, 2016YFC0900501, 2016YFC0900504, 2016YFC1303904) from the National Key R&D Program of China, National Natural Science Foundation of China (81390540, 81390541, 81390544), and Chinese Ministry of Science and Technology (2011BAI09B01). The funders had no role in the study design, data collection, data analysis and interpretation, writing of the report, or the decision to submit the article for publication.
 
 ## Introduction
 
@@ -47,19 +47,19 @@ The present study selected a targeted NMR-based metabolomics platform that previ
 
 ## Materials and methods
 
-## Participants and study design
+### Participants and study design
 
 The CKB study was a prospective cohort of 512,725 participants aged 30–79 years from 5 urban and 5 rural areas across China. Participants were recruited between 2004 and 2008, whose morbidity and mortality have been followed up ever since. A laptop-based questionnaire was used to collect detailed information, including demographic characteristics (e.g. age at recruitment, sex, education, household income, and marital status), lifestyle factors (e.g. smoking and drinking habits, food intake, and physical activities), medical history (e.g. hypertension, diabetes, and use of certain specific medications such as statins), and family history of diabetes, heart attack or stroke. Each participant also underwent a range of physical measurements operated by trained staff, including anthropometry, lung function, blood pressure, and heart rate, etc. All participants provided a 10 mL non-fasting (with time since last meal recorded) blood sample for immediate on-site random blood glucose (RBG) test and long-term storage. In addition, every 5 years after completing the baseline survey, about 5% of the participants were randomly selected to join in the re-survey. Detailed descriptions of the CKB study have been previously published (Chen et al., 2011).
 
 The present study selected 4778 participants from a previous nested case-control study based on CKB (Holmes et al., 2018). Cases consisted of incident cases of myocardial infarction (MI, ICD-10 I21-23, n=946), IS (I63 and I69.3, n=1,217), and ICH (I61 and I69.1, n=1,238), with a censoring date of January 01, 2015. And 1377 controls were frequently matched to the combined cases by age, sex, and area if possible. All cases and controls had no history of self-reported prior doctor-diagnosed coronary heart disease (CHD), stroke, transient ischemic attack, or cancer, and were not using statin therapy at baseline. The Ethical Review Committee of the Chinese Center for Disease Control and Prevention (Beijing, China, 005/2004) and the Oxford Tropical Research Ethics Committee, University of Oxford (UK, 025–04) approved the study. Before enrolled the study, each participant signed the informed consent and agreed that the data would be used for scientific research and subsequent publication.
 
-## Assessment of egg consumption
+### Assessment of egg consumption
 
 Using the face-to-face laptop-based food frequency questionnaire (FFQ) at baseline, participants were asked by trained investigators about their frequency of habitual egg consumption as well as other 11 food groups (rice, wheat, other staple food, meat, poultry, fish, fresh vegetables, preserved vegetables, fresh fruits, soybean products, and dairy) during the past 12 months. Possible answers were ‘never/rarely, monthly, 1–3 days per week, 4–6 days per week, and daily’. The frequency was then converted into days of egg consumption per week, with each option corresponding to 0, 0.5, 2, 5, and 7 days per week, respectively. Participants were also asked about the daily amount when consuming eggs at the 2nd re-survey (2013–2014).
 
 A separate validation study was conducted from 2015–2016 among 432 CKB participants to evaluate the reproducibility and validity of FFQ.Qin et al., 2022 It turned out that the weighted Kappa statistic was 0.77 and 0.65 for reproducibility and relative validity of baseline eggs frequency, respectively.
 
-## Measurement of NMR metabolisms
+### Measurement of NMR metabolisms
 
 After centrifuging and aliquoting, baseline plasma samples from each participant were couriered from the regional laboratory via Beijing to Oxford for long-term storage in liquid nitrogen tanks. The stored plasma samples of the cases and controls were thawed and sub-aliquoted at the Wolfson laboratory, CTSU, before 100 µL aliquots being shipped on dry ice to the Brainshake Laboratory at Oulu, Finland, for high-throughput targeted NMR spectroscopy to quantify 225 absolute concentrations or derived traits (e.g. lipids ratios) of metabolic markers simultaneously (Soininen et al., 2015).
 
@@ -67,7 +67,7 @@ The samples were handled in 96-well plates containing two quality control sample
 
 Samples from cases and controls were quantified randomly, with laboratory staff blinded to case or control status. The sample size of analyses of some metabolic markers involved was less than 4778 since the quality control process rejected results of these metabolic markers among some participants.
 
-## Statistical analysis
+### Statistical analysis
 
 Baseline characteristics of participants were presented as means or percentages across controls and three subtypes of CVD cases, standardized by age, sex, and study region if appropriate, using multiple linear regressions for continuous variables or logistic regressions for categorical variables.
 
@@ -83,17 +83,198 @@ All p-values were two-sided, and statistical significance was defined as p<0.05.
 
 Age-, sex-, and region-adjusted baseline characteristics of the 4778 participants according to whether they developed CVD are shown in Table 1. Briefly, the mean (SD) age was 47.0 (8.2) years, 50.1% were women, and 29.0% resided in urban areas. The mean (SD) frequency of egg consumption and plasma total cholesterol concentration were 2.6 (2.3) days/week and 3.5 (0.6) mmol/L, respectively. Compared with controls, participants who subsequently developed any subtype of CVD were more likely to have poor self-rated health, to prevalent obesity, diabetes, and hypertension, and to have a family history of diabetes or CVD. Among them, MI or IS cases had a lower level of education but a higher level of household income, whereas ICH cases had higher levels of SBP and DBP.
 
+**Table 1.**
+ Baseline characteristics among 4,778 participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Controls</th>
+      <th>MI cases</th>
+      <th>IS cases</th>
+      <th>ICH cases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>1,377</td>
+      <td>946</td>
+      <td>1217</td>
+      <td>1238</td>
+    </tr>
+    <tr>
+      <td>Age, y</td>
+      <td>46.87 (0.20)</td>
+      <td>52.42 (0.24)</td>
+      <td>42.51 (0.22)</td>
+      <td>47.38 (0.21)</td>
+    </tr>
+    <tr>
+      <td>Female, %</td>
+      <td>50.26</td>
+      <td>40.40</td>
+      <td>55.87</td>
+      <td>51.54</td>
+    </tr>
+    <tr>
+      <td>Urban residents, %</td>
+      <td>27.13</td>
+      <td>28.90</td>
+      <td>36.88</td>
+      <td>23.37</td>
+    </tr>
+    <tr>
+      <td>Middle school or above, %</td>
+      <td>56.97</td>
+      <td>53.84</td>
+      <td>53.70</td>
+      <td>56.36</td>
+    </tr>
+    <tr>
+      <td>Income ≥35,000 Yuan/year, %</td>
+      <td>9.98</td>
+      <td>12.84</td>
+      <td>12.89</td>
+      <td>10.60</td>
+    </tr>
+    <tr>
+      <td>Manual worker, %</td>
+      <td>69.88</td>
+      <td>68.39</td>
+      <td>69.12</td>
+      <td>71.50</td>
+    </tr>
+    <tr>
+      <td>BMI, kg/m2</td>
+      <td>23.56 (0.09)</td>
+      <td>24.03 (0.12)</td>
+      <td>24.27 (0.10)</td>
+      <td>24.20 (0.10)</td>
+    </tr>
+    <tr>
+      <td>SBP, mmHg</td>
+      <td>127.94 (0.64)</td>
+      <td>136.96 (0.82)</td>
+      <td>136.46 (0.72)</td>
+      <td>149.76 (0.68)</td>
+    </tr>
+    <tr>
+      <td>DBP, mmHg</td>
+      <td>76.97 (0.36)</td>
+      <td>82.05 (0.47)</td>
+      <td>82.57 (0.41)</td>
+      <td>89.35 (0.39)</td>
+    </tr>
+    <tr>
+      <td>RBG, mmol/L</td>
+      <td>5.63 (0.08)</td>
+      <td>6.47 (0.10)</td>
+      <td>6.19 (0.08)</td>
+      <td>6.31 (0.08)</td>
+    </tr>
+    <tr>
+      <td>Ever regular smoking, %</td>
+      <td>34.60</td>
+      <td>40.79</td>
+      <td>38.32</td>
+      <td>36.10</td>
+    </tr>
+    <tr>
+      <td>Weekly drinking, %</td>
+      <td>18.11</td>
+      <td>15.27</td>
+      <td>18.77</td>
+      <td>20.68</td>
+    </tr>
+    <tr>
+      <td>Physical activity, MET-h/d</td>
+      <td>23.20 (0.36)</td>
+      <td>22.08 (0.46)</td>
+      <td>22.72 (0.40)</td>
+      <td>23.26 (0.38)</td>
+    </tr>
+    <tr>
+      <td>Eggs consumption, d/w</td>
+      <td>2.69 (0.06)</td>
+      <td>2.44 (0.07)</td>
+      <td>2.62 (0.07)</td>
+      <td>2.52 (0.06)</td>
+    </tr>
+    <tr>
+      <td>Red meat consumption, d/w</td>
+      <td>3.26 (0.06)</td>
+      <td>3.23 (0.07)</td>
+      <td>3.35 (0.06)</td>
+      <td>3.31 (0.06)</td>
+    </tr>
+    <tr>
+      <td>Fresh fruits consumption, d/w</td>
+      <td>2.32 (0.05)</td>
+      <td>1.91 (0.07)</td>
+      <td>2.08 (0.06)</td>
+      <td>2.04 (0.06)</td>
+    </tr>
+    <tr>
+      <td>≥8 h of fasting, %</td>
+      <td>13.65</td>
+      <td>15.04</td>
+      <td>16.69</td>
+      <td>14.86</td>
+    </tr>
+    <tr>
+      <td>Poor self-rated health, %</td>
+      <td>9.60</td>
+      <td>14.00</td>
+      <td>14.11</td>
+      <td>13.49</td>
+    </tr>
+    <tr>
+      <td>Diabetes, %</td>
+      <td>5.27</td>
+      <td>10.86</td>
+      <td>8.74</td>
+      <td>8.21</td>
+    </tr>
+    <tr>
+      <td>Hypertension, %</td>
+      <td>27.06</td>
+      <td>44.47</td>
+      <td>45.00</td>
+      <td>64.66</td>
+    </tr>
+    <tr>
+      <td>Family history of diabetes, %</td>
+      <td>7.22</td>
+      <td>9.02</td>
+      <td>9.11</td>
+      <td>7.98</td>
+    </tr>
+    <tr>
+      <td>Family history of CVD, %</td>
+      <td>23.68</td>
+      <td>27.55</td>
+      <td>26.71</td>
+      <td>31.04</td>
+    </tr>
+  </tbody>
+</table>
+
+_Results were standardized by age, sex, and region where appropriate. Values are means (standard errors, SE) or %. Abbreviations: BMI, body mass index; SBP, systolic blood pressure; DBP, diastolic blood pressure; RBG, random blood glucose; MET, metabolic equivalent; CVD, cardiovascular disease; MI, myocardial infarction; IS, ischemic stroke; ICH, intracerebral hemorrhage._
+
 Among the 225 metabolic markers or derived traits, 24 were associated with the frequency of egg consumption at FDR <5% (Figure 1). The associations for all 225 markers are shown in Supplementary file 1a. Egg consumption was positively associated with lipoprotein particle concentrations of very large and large HDL. Similarly, within very large and large HDL, there were positive associations of total lipids, total cholesterol including its subclasses (cholesterol esters and free cholesterol), or phospholipids with egg consumption. Conversely, there was an inverse association of cholesterol esters in small VLDL with egg consumption. In addition to the absolute concentrations of lipids, the percentage of total cholesterol and cholesterol esters in large HDL were positively associated with egg consumption. Besides lipids, there were positive associations of acetate and apolipoprotein A1 with egg consumption, whereas an inverse association was observed for the ratio of apolipoprotein B to apolipoprotein A1.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/72909/elife-72909-fig1-v2.jpg)
 
-**Figure 1.:** Models were adjusted for age, sex, region, education, household income, occupation, marital status, tea-drinking habit, smoking status, alcohol intake, physical activity, self-rated health, fasting time, and frequency of other 11 food groups. Black squares represented coefficients or ORs, while gray horizontal lines represented 95% CI. Significance (Sig.): *p<0.05, **p<0.01, ***p<0.001 (FDR-adjusted p using the Benjamini-Hochberg method). The source data can be found in .Figure 1—source data 1.
+**Figure 1.:** Models were adjusted for age, sex, region, education, household income, occupation, marital status, tea-drinking habit, smoking status, alcohol intake, physical activity, self-rated health, fasting time, and frequency of other 11 food groups. Black squares represented coefficients or ORs, while gray horizontal lines represented 95% CI. Significance (Sig.): *p<0.05, **p<0.01, ***p<0.001 (FDR-adjusted p using the Benjamini-Hochberg method). The source data can be found in .
 
 Among 225 metabolic markers or derived traits, 104, 123, and 55 were associated with CVD and its subtypes, MI and IS, respectively, at FDR <5% (Supplementary file 1). For total cholesterol within small VLDL, each SD increment in log-transformed value was associated with increased risks of CVD (OR 1.15 [95%CI 1.07–1.24]), MI (1.25 [1.14–1.38]), and IS (1.15 [1.05–1.27]), whereas the association with total cholesterol within large HDL was in the opposite direction (0.88 [0.81–0.95] for CVD and 0.83 [0.75–0.91] for MI). However, only one metabolic marker, glucose, showed a positive association with the risk of ICH. ORs for MI, IS, and ICH associated with all 225 metabolic markers were provided in Supplementary file 1b. Among markers associated with risk of CVD, MI, or IS, 14, 15, and 3 were simultaneously associated with egg consumption. There was a clear pattern between the associations of egg consumption with metabolic markers and of these metabolic markers with disease risk; that is, metabolic markers associated with higher egg consumption tended to be associated with lower risk of CVD, MI, and IS (Pearson correlation: −0.64, –0.67, and –0.67, respectively; Figure 2 and Supplementary file 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/72909/elife-72909-fig2-v2.jpg)
 
-**Figure 2.:** A) CVD, (B) MI, (C) IS, and (D) ICH associated with SD higher log-transformed metabolic markers.Yellow dots represented markers that were associated with egg consumption but not with the risk of diseases. Blue dots represented markers associated with the risk of diseases but not with egg consumption. Red dots represented markers associated with both egg consumption and risk of diseases, with overlapping dots darker in color. The gray horizontal and vertical lines represented 95% CI of coefficients and ORs, respectively. Pearson correlations of coefficients and ORs were annotated in the upper right corner. The source data can be found in Figure 2—source data 1.Figure 2—source data 1.
+**Figure 2.:** Yellow dots represented markers that were associated with egg consumption but not with the risk of diseases. Blue dots represented markers associated with the risk of diseases but not with egg consumption. Red dots represented markers associated with both egg consumption and risk of diseases, with overlapping dots darker in color. The gray horizontal and vertical lines represented 95% CI of coefficients and ORs, respectively. Pearson correlations of coefficients and ORs were annotated in the upper right corner. The source data can be found in Figure 2—source data 1.
 
 In sensitivity analyses, associations between egg consumption and metabolic markers remained essentially unchanged after further adjustment for hypertension, diabetes, and family history of diabetes or CVD (Figure 3). Similar associations were observed when restricting the analyses to participants without any metabolic markers below the limit of detection or rejected by quality control (n=4,251) and using the weekly amount of egg consumption as a continuous independent variable instead of its frequency (Figure 4). However, when BMI was added to the basic model, the associations of egg consumption with metabolites were attenuated toward the null (Figure 3).
 
@@ -121,10 +302,10 @@ Our study provides substantial evidence for the recommendation of appropriate eg
 
 This study based on the CKB population has many strengths, including relatively large sample size, accurately identified CVD and its subtype events, collection of as many covariates as possible, and the quantification of a wide range of metabolites based on NMR platform, such as lipoproteins and their constituents with varies of size, density, and chemical structure. Besides, the present study restricted the analysis to those free of CVD history and lipid-lowering therapy to minimize the possible confounding or even causal inversion of hypercholesterolemic participants. Our study also had several limitations. First, similar to other large-scale nutritional epidemiological studies, there was an unavoidable recall bias in the FFQ used for estimating egg and other food consumption in our study. There was also measurement bias when five options were used to estimate the weekly days of egg consumption. However, the results of our study were similar to those of previous observational studies or intervention studies, and these results remained robust when the imputed weekly amount of egg consumption was used as the independent variable. Second, even if potential confounding factors such as BMI, frequency of other food consumption, history of chronic diseases, and family history were adjusted in multivariate models or sensitivity analysis, residual confounding due to uncollected or suboptimally collected factors still existed. Third, as the weekly egg consumption of the present study (less than 2 eggs per day) was relatively lower compared with other studies, it is necessary to be cautious when concluding beyond this range. Finally, given the cross-sectional nature, the associations between baseline egg consumption and baseline level of plasma metabolites did not strongly elucidate their causality. Further longitudinal studies are needed to verify the causal roles of lipid metabolites in the association between egg consumption and CVD risk.
 
-## Conclusions
+### Conclusions
 
 This study set in the Chinese population found significant associations between egg consumption and acetate, lipid-related metabolites within very large and large HDL and small VLDL, and found that these associations were directionally opposite to associations between these metabolites and risk of CVD. These results we reported not only potentially reveal at the small molecule level that lipid metabolism metabolites may play a role in the beneficial effects of egg consumption on CVD, but also provide Chinese population-based evidence for the formulation of strategies and policies to encourage moderate egg consumption.
 
-## Access to research materials/Data sharing
+### Access to research materials/Data sharing
 
 Details of how to access China Kadoorie Biobank data and details of the data release schedule are available from https://www.ckbiobank.org/site/Data+Access.

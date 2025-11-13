@@ -22,7 +22,7 @@
 
 ## Abstract
 
-In the nematode C. elegans , insulin signaling regulates development and aging in response to the secretion of numerous insulin peptides. Here, we describe a novel, non-signaling isoform of the nematode insulin receptor (IR), DAF-2B, that modulates insulin signaling by sequestration of insulin peptides. DAF-2B arises via alternative splicing and retains the extracellular ligand binding domain but lacks the intracellular signaling domain. A daf-2b splicing reporter revealed active regulation of this transcript through development, particularly in the dauer larva, a diapause stage associated with longevity. CRISPR knock-in of mScarlet into the daf-2b genomic locus confirmed that DAF-2B is expressed in vivo and is likely secreted. Genetic studies indicate that DAF-2B influences dauer entry, dauer recovery and adult lifespan by altering insulin sensitivity according to the prevailing insulin milieu. Thus, in C. elegans alternative splicing at the daf-2 locus generates a truncated IR that fine-tunes insulin signaling in response to the environment.
+In the nematode C. elegans, insulin signaling regulates development and aging in response to the secretion of numerous insulin peptides. Here, we describe a novel, non-signaling isoform of the nematode insulin receptor (IR), DAF-2B, that modulates insulin signaling by sequestration of insulin peptides. DAF-2B arises via alternative splicing and retains the extracellular ligand binding domain but lacks the intracellular signaling domain. A daf-2b splicing reporter revealed active regulation of this transcript through development, particularly in the dauer larva, a diapause stage associated with longevity. CRISPR knock-in of mScarlet into the daf-2b genomic locus confirmed that DAF-2B is expressed in vivo and is likely secreted. Genetic studies indicate that DAF-2B influences dauer entry, dauer recovery and adult lifespan by altering insulin sensitivity according to the prevailing insulin milieu. Thus, in C. elegans alternative splicing at the daf-2 locus generates a truncated IR that fine-tunes insulin signaling in response to the environment.
 
 ## Introduction
 
@@ -36,59 +36,83 @@ We reasoned that DAF-2B has the potential to act as a modifier of insulin signal
 
 ## Results
 
-## C. elegans expresses a truncated isoform of daf-2
+### C. elegans expresses a truncated isoform of daf-2
 
 The daf-2a transcript spans 17 exons and encodes a 1846 amino acid (aa) protein (Kimura et al., 1997), while daf-2c includes an alternative exon, exon 11.5 (Ohno et al., 2014) (Figure 1A). daf-2a and daf-2c both encode an extracellular ligand binding domain (α subunit, exons 1–11/11.5) and a transmembrane and intracellular tyrosine kinase domain (β subunit, exons 12–17). We noted the existence of EST cDNAs (EC006316, EC004351) in Wormbase (www.wormbase.org) that aligned with daf-2 exon 11, exon 11.5 and 128 bp of intronic sequence following exon 11.5 (Figure 1—figure supplement 1). Receptor tyrosine kinase EST sequences that span an intron/exon boundary as well as an upstream exon/exon boundary have been associated with truncated transcripts derived from activation of alternative intronic polyadenylation (polyA, AAUAAA) sites (Vorlová et al., 2011). Inspection of the daf-2 genomic sequence indicates that the exon 11.5 5’ splice site (UUguaugga) diverges from the consensus (AGguaaguu) (Zahler, 2012) (Figure 1B). Failure to utilize this splice site would result in the addition of 46 bp of intronic sequence before reaching an in-frame stop codon (Figure 1B, Figure 1—figure supplement 1). In addition, downstream of this stop codon we observed multiple possible polyA sites, including a variant (AAUGAA) 84 bp away and matching sequence from the ESTs (Figure 1—figure supplement 1). These EST sequences previously formed the basis for the existence of the daf-2b isoform, which was predicted to share the first 11 exons with the daf-2a full-length receptor but lack the transmembrane and intracellular tyrosine kinase domains encoded by exons 12–17 (Figure 1A and B). Consequently, a daf-2b transcript would encode for a protein with 1020 aa that retains the complete extracellular ligand binding domain but would lack the intracellular signaling domain.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49917/elife-49917-fig1-v1.jpg)
+
+**Figure 1.:** (A) Genomic organization of the daf-2 locus. Exons shaded in blue encode the α subunit (extracellular domain) and those in green encode the β subunit (transmembrane and tyrosine kinase domains). The alternate cassette exon utilized in daf-2c (exon 11.5) is shown in pink. The daf-2b transcript is predicted to arise if splicing at the exon 11.5 5’SS is skipped leading to the addition of 46 bp of intronic sequence (shown in yellow) before an in-frame stop codon is reached. F1, F2, R1, R2 and R3 indicate the location of primers used in cDNA amplification. (B) Details of the daf-2 genomic locus from exon 11 to exon 12. The sequence of 5’ and 3’ splice sites (SS) are indicated. Dotted lines indicate splicing events for daf-2a (red) and daf-2c (blue). Green solid lines indicate splicing events for generation of the daf-2b transcript. (C) PCR amplification of full-length daf-2b cDNA using primers F1 and R1 (panel A). M - molecular weight markers, L – larval stage, YA – young adults, CON – daf-2b cDNA from plasmid template. (D) PCR amplification of a daf-2b cDNA fragment encompassing exon 11 and the predicted 3’ UTR using primers F2 and R2 (panel A). M - molecular weight markers, E – embryos, L – larval stage, YA – young adults. (E) Multiplex PCR of daf-2a, daf-2b and daf-2c from pooled cDNA (lanes marked C/A, B and C/A/B) and larval stages including dauer (D) using primers F2, R1 and R3 (panel A). (F) Schematic illustrating the possible formation of DAF-2A and DAF-2B homodimers and DAF-2A/DAF-2B heterodimers via formation of disulfide bonds at conserved cysteine residues. (G) Coimmunoprecipitation of epitope tagged DAF-2A and DAF-2B indicates the capacity to dimerize. Immunoprecipitates were subjected to SDS PAGE and blotted with anti-MYC (top panel) and anti-HA (second panel). Whole cell lysates (WCL) were blotted with anti-MYC and anti-HA (bottom two panels). Coimmunoprecipitation data are representative of 3 independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49917/elife-49917-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Nucleotide sequence corresponding to EC004351 EST cDNA is indicated in red text and the exon 11.5 5’ splice site is highlighted in bold. Primer sequences for amplification of the cDNA fragment shown in Figure 1C and D are indicated. PAS indicates the variant polyA signal.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49917/elife-49917-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Multiplex PCR was performed within the linear range of amplification and band intensities were measured using Image J. Each larval stage was examined in triplicate except dauer (duplicate) and data are presented as mean+ sd.
+
 To determine if daf-2b is an expressed transcript in worms, we used RT-PCR to clone daf-2b cDNA fragments as well as the full length daf-2b cDNA from C. elegans polyadenylated RNA. To do so, we designed two reverse primers (R1, R2) specific to the predicted daf-2b transcript, which were used with two forward primers (F1, F2; Figure 1A). The first reverse primer (R1) was complementary to the retained intron sequence, and the second reverse primer (R2) was just upstream of the first predicted polyadenylation site (Figure 1A). We used an exon 1 forward primer (F1) and primer R1 to amplify full length daf-2b from total cDNA prepared from polyadenylated RNA isolated from synchronized, staged populations (Figure 1C). Sequencing confirmed that the 3 kb product was identical to the predicted full length daf-2b transcript. Using an exon 11-specific forward primer (F2) and primer R2, we also amplified a daf-2b cDNA fragment from all developmental stages that included the predicted 3’ UTR (Figure 1D, Figure 1—figure supplement 1). To estimate the abundance of the daf-2b transcript relative to daf-2a and daf-2c, we performed multiplex PCR. We used a common exon 11 forward primer (F2) for all transcripts, and an exon 12 reverse primer (R3) to amplify daf-2a and daf-2c, and a daf-2b-specific reverse primer (R1). Comparison of the pairwise PCR reactions with the multiplex reaction using a pooled cDNA template indicated that the three amplicons could be differentiated (Figure 1E). Analysis of stage-specific cDNA showed that daf-2b is present at all life stages (Figure 1E) and daf-2a is between 4 and 7 times more abundant than daf-2b (Figure 1—figure supplement 2).
 
-## DAF-2B forms homodimers as well as heterodimers with DAF-2A
+### DAF-2B forms homodimers as well as heterodimers with DAF-2A
 
 In mammals, dimerization of the IR (via the formation of four disulfide bonds in the α subunit) is required for high affinity insulin binding (Belfiore et al., 2009). Since the cysteine residues mediating disulfide bonds are conserved in DAF-2B, we hypothesized that DAF-2B could also form homodimers as well as heterodimers with the full-length DAF-2A receptor (Figure 1F). To examine these possibilities, we performed coimmunoprecipitation experiments in HEK293T cells expressing epitope-tagged DAF-2A and DAF-2B (Figure 1G). When DAF-2B::HA was immunoprecipitated with an anti-HA antibody under non-reducing conditions, we observed robust coprecipitation of DAF-2B::MYC, indicating the presence of homodimers (Figure 1G). Similarly, when we immunoprecipitated DAF-2B::HA under non-reducing conditions coprecipitating DAF-2A::MYC was detected (Figure 1G). Consistent with previous biochemistry on mammalian IRs, we also detected DAF-2A::MYC coprecipitating with DAF-2A::HA (Figure 1G). These results indicate that DAF-2B can bind to both itself to form 2B/2B homodimers and bind to DAF-2A to form 2B/2A heterodimers.
 
-## daf-2b splicing is subject to spatial and temporal regulation
+### daf-2b splicing is subject to spatial and temporal regulation
 
 To begin assessing the physiological role of DAF-2B, we examined where splicing that generates the daf-2b transcript may occur in vivo by constructing isoform-specific fluorescent splicing reporters (Kuroyanagi et al., 2006). To increase the accuracy and relevance of these daf-2 splicing reporters, we used the native daf-2 promoter to drive expression. To report on daf-2a and daf-2c expression, we amplified a 3.2 kb daf-2 genomic fragment comprised of exon 11 and exon 12, including the intervening intron, and placed it upstream of tdTomato and the unc-54 3’UTR (Figure 2A). This construct was capable of reporting splicing that would result in expression of both daf-2a and daf-2c but could not distinguish between each of these different splicing events. To examine splicing that generates daf-2b, we placed tdTomato between the retained intronic sequence at the end of exon 11.5 and the in-frame stop codon (Figure 2B). Thus, this reporter contains all the regulatory elements between exon 11 and exon 12 that likely influence daf-2b expression. In this construct, tdTomato expression will only be observed if splicing from exon 11 to 11.5 occurs and if the 5’ splice site in exon 11.5 is skipped, leading to retention of intronic sequence that is specific to daf-2b (Figure 2B). We note that while this reporter cannot categorically prove that daf-2b splicing occurs in cells that exhibit tdTomato expression, prior studies in C. elegans showed this approach is valuable for studying alternative splicing (Heintz et al., 2017; Kuroyanagi et al., 2006; Kuroyanagi et al., 2007; Kuroyanagi et al., 2010).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/49917/elife-49917-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic illustrating the organization of the daf-2a/c splicing reporter. (B) Schematic illustrating the organization of the daf-2b splicing reporter. (C) Representative fluorescence images showing the expression of DAF-2A/C::tdTomato through reproductive development and in dauers in animals bearing extrachromosomal arrays. All images were taken with 1 s exposure. (D) Representative fluorescence images showing the expression of DAF-2B::tdTomato through reproductive development and in dauers in animals bearing an integrated array. All images were taken with 1.5 s exposure. (E) Schematic illustrating the location of mScarlet insertion into the daf-2 genomic locus. Neuronal expression of DAF-2B::mScarlet in L1 (F), young adults (G) and dauers (H). Accumulation of DAF-2B::mScarlet in coelomocytes in L1 (I), young adults (J) and dauer (K) animals. DAF-2B::tdTomato from the transgenic splicing reporter is not expressed in coelomocytes in L1 (L), young adults (M) or dauers (N). Arrows indicate neuronal expression.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49917/elife-49917-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Expression of DAF-2A/C::tdTomato with ges-1p::GFP in the intestine in an L1 animal. (B) Expression of DAF-2A/C::tdTomato with dpy-7p::GFP in the hypodermis in an L1 animal. (C) Expression of DAF-2A/C::tdTomato with rgef-1p::GFP in neurons in a young adult animal. (D) Expression of DAF-2A/C::tdTomato with ges-1p::GFP in the intestine in a dauer. (E) Expression of DAF-2A/C::tdTomato with rgef-1p::GFP in neurons in a dauer.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49917/elife-49917-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Expression of DAF-2B::tdTomato with ges-1p::GFP in the intestine in an L1 animal. (B) Expression of DAF-2B::tdTomato with dpy-7p::GFP in the hypodermis in an L1 animal. (C) Expression of DAF-2B::tdTomato with rgef-1p::GFP in neurons in a young adult animal. (D) Expression of DAF-2B::tdTomato with rgef-1p::GFP in neurons in a dauer.
 
 In the presence of high food, low temperature and low population density, larval development in C. elegans proceeds through four stages (L1 to L4) before the final molt into a reproductive adult (Byerly et al., 1976). Under these conditions, the expression pattern of daf-2a/c from the transgenic splicing reporter matched that previously described for transcriptional daf-2 reporters (Fukuyama et al., 2015; Hunt-Newbury et al., 2007) (Figure 2C, Figure 2—figure supplement 1). Like daf-2a/c splicing, the daf-2b splicing reporter was highly expressed in the hypodermis and intestine of L1 and L2 larvae (Figure 2D, Figure 2—figure supplement 2). However, the expression of the daf-2b transgenic splicing reporter declined across all larval stages into adulthood (Figure 2D).
 
 Under adverse environmental conditions such as low food, high temperatures and high population density, worms adopt an alternate developmental pathway leading to formation of the dauer larva (Cassada and Russell, 1975). The dauer larva is non-feeding, non-reproducing, stress resistant and long-lived. In dauer larva carrying the daf-2a/c reporter, fluorescence was detected in neurons and in the intestine (Figure 2C, Figure 2—figure supplement 1). However, using the daf-2b splicing reporter in dauer larvae, we observed expression only in the nervous system (Figure 2D, Figure 2—figure supplement 2). These data indicate that splicing to generate a daf-2b transcript can occur in vivo in a tissue-specific and temporally regulated manner.
 
-## DAF-2B is expressed in vivo and accumulates in coelomocytes
+### DAF-2B is expressed in vivo and accumulates in coelomocytes
 
 To establish whether DAF-2B protein is expressed in vivo, we used CRISPR-Cas9 editing to introduce the coding sequence for the mScarlet fluorescent protein into the daf-2b genomic locus immediately after exon 11.5 (Figure 2E). Expression of the DAF-2B::mScarlet translational fusion was faint in the nervous system of L1s, with stronger, punctate expression in young adults and dauers (Figure 2F–H). We did not see explicit colocalization of DAF-2B::mScarlet with the neuronal marker rgef-1p::GFP, which could be due to the cytosolic location of GFP versus a cell surface localization of DAF-2B::mScarlet. However, the location of DAF-2B::mScarlet around the periphery of the GFP positive cells indicates that DAF-2B is localized in or around the nervous system. Expression of the endogenous translational fusion protein was not observed in the hypodermis or the intestine (data not shown). Interestingly, we did observe DAF-2B::mScarlet in the coelomocytes in L1s, young adults and dauers (Figure 2I–K), despite no expression of the daf-2b splicing reporter in these cells (Figure 2L–N). Coelomocytes are macrophage like cells that take up macromolecules from the pseudocoelomic space (Fares and Greenwald, 2001). Taken together, the robust, consistent accumulation of DAF-2B::mScarlet in coelomocytes and absence of daf-2b expression from the transgenic splicing reporter in these cells is evidence that secreted DAF-2B is likely to be phagocytosed by coelomocytes. Secreted DAF-2B accumulating in coelomocytes could come from any tissues or cells where our daf-2b splicing reporter is active. For example, this might explain why we observed expression of the daf-2b splicing reporter in the intestine, but couldn’t detect DAF-2B::mScarlet in this tissue.
 
-## DAF-2B influences dauer entry in temperature-sensitive insulin signaling mutants
+### DAF-2B influences dauer entry in temperature-sensitive insulin signaling mutants
 
 Given the role of insulin signaling in the formation of the dauer larva, we hypothesized that the DAF-2B isoform could play an important role in modifying entry and/or exit from dauer. Reduced insulin signaling in hypomorphic daf-2 IR mutants leads to temperature-sensitive dauer entry (Gems et al., 1998). We used transgenic extrachromosomal arrays to over-express DAF-2B in hypomorphic daf-2 mutants and evaluated effects on dauer entry (Figure 3). In order to detect either increased or reduced dauer entry with DAF-2B overexpression, we used a semi-permissive temperature that yields an intermediate frequency of dauer entry in hypomorphic daf-2 mutants. When a daf-2b cDNA was over-expressed using the daf-2 promoter in this mutant background we observed increased dauer entry (Figure 3A). Expression of DAF-2B in the nervous system or the hypodermis also increased dauer entry, while expression in the intestine or the body wall muscles had no effect (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/49917/elife-49917-fig3-v1.jpg)
 
-**Figure 3.:** (A) DAF-2B overexpression (OE) from the native daf-2 promoter, in the nervous system or in the hypodermis enhances dauer formation in daf-2 mutants at 23.2°C. There was no effect of DAF-2B expressed in the intestine or in the body wall muscle. Data are pooled from 2 (hypodermal promoter) or 3 (all other promoters) transgenic lines with at least four biological replicates per transgene. Students t-test ns – not significant, **p<0.01, ***p<0.001. Two additional trials with native, neuronal, muscle and intestinal DAF-2B OE showed similar effects. Raw data can be found in Figure 3—source data 1. (B) Schematic illustrating the region of the daf-2 genomic locus deleted to generate daf-2bc(Δ). (C) Genetic deletion of daf-2b suppresses dauer formation in pdk-1 mutants at 26.8°C. Data are pooled from three independent trials with six biological replicates from one control and one daf-2b(Δ) strain per trial. Students t-test ***p<0.0001. Raw data can be found in Figure 3—source data 2. (D) Genetic deletion of daf-2c has no effect on dauer formation in pdk-1 mutants at 26.8°C. Data are pooled from three independent trials with three biological replicates from each of two control and daf-2c(Δ) strains per trial. Students t-test ns – not significant. Raw data can be found in Figure 3—source data 3. (E) In temperature-sensitive hypomorphic insulin signaling mutants, the decision to enter dauer or develop into reproductive adults is dependent on the level of insulin agonism. (F) Under semi-permissive conditions, agonism at the insulin receptor promotes insulin signaling and reproductive growth. (G) DAF-2B, acting as a homodimer or a heterodimer, is predicted to sequester agonist insulin peptides, thereby inhibiting insulin signaling and promoting dauer formation. Error bars represent mean ± sd and data are shown as independent replicates from multiple transgenic lines.Figure 3—source data 1.daf-2(e1368).Figure 3—source data 2.daf-2bdeletion suppresses dauer formation inpdk-1(sa709).Figure 3—source data 3.daf-2cdeletion has no effect on dauer formation inpdk-1(sa709).
+**Figure 3.:** (A) DAF-2B overexpression (OE) from the native daf-2 promoter, in the nervous system or in the hypodermis enhances dauer formation in daf-2 mutants at 23.2°C. There was no effect of DAF-2B expressed in the intestine or in the body wall muscle. Data are pooled from 2 (hypodermal promoter) or 3 (all other promoters) transgenic lines with at least four biological replicates per transgene. Students t-test ns – not significant, **p<0.01, ***p<0.001. Two additional trials with native, neuronal, muscle and intestinal DAF-2B OE showed similar effects. Raw data can be found in Figure 3—source data 1. (B) Schematic illustrating the region of the daf-2 genomic locus deleted to generate daf-2bc(Δ). (C) Genetic deletion of daf-2b suppresses dauer formation in pdk-1 mutants at 26.8°C. Data are pooled from three independent trials with six biological replicates from one control and one daf-2b(Δ) strain per trial. Students t-test ***p<0.0001. Raw data can be found in Figure 3—source data 2. (D) Genetic deletion of daf-2c has no effect on dauer formation in pdk-1 mutants at 26.8°C. Data are pooled from three independent trials with three biological replicates from each of two control and daf-2c(Δ) strains per trial. Students t-test ns – not significant. Raw data can be found in Figure 3—source data 3. (E) In temperature-sensitive hypomorphic insulin signaling mutants, the decision to enter dauer or develop into reproductive adults is dependent on the level of insulin agonism. (F) Under semi-permissive conditions, agonism at the insulin receptor promotes insulin signaling and reproductive growth. (G) DAF-2B, acting as a homodimer or a heterodimer, is predicted to sequester agonist insulin peptides, thereby inhibiting insulin signaling and promoting dauer formation. Error bars represent mean ± sd and data are shown as independent replicates from multiple transgenic lines.
 
 To test how the absence of DAF-2B affects dauer formation, we used CRISPR-Cas9 gene editing to generate a daf-2b deletion mutant. Given the splicing mechanism by which the DAF-2B isoform arises, it was not possible to generate a deletion of daf-2b without affecting the expression DAF-2C. Our approach therefore involved removing the entire intron between exons 11 and 12 in conjunction with homology directed repair to restore the daf-2a reading frame (Figure 3B). Since this deletion results in the loss of both the daf-2b and daf-2c isoforms, we also generated Mos single copy insertions (MosSCI) that express either daf-2b or daf-2c (Figure 3C,D). Using a combination of these reagents, we generated daf-2b(Δ) deletion animals in which daf-2b and c are deleted and MosSCI DAF-2C is expressed. Likewise, daf-2c(Δ) animals were generated by combining the daf-2bc deletion mutants with MosSCI DAF-2B expression. It was not possible to examine the effect of daf-2b deletion in the daf-2 hypomorph background as both genetic lesions are extremely close together in the same gene. Therefore, to examine the effect of loss of daf-2b on dauer formation caused by hypomorphic insulin signaling, we crossed the deletion strains into a pdk-1 mutant background. Previous work has shown that PDK-1 mediates DAF-2 insulin signaling during dauer formation (Paradis et al., 1999). There was a significant reduction in dauer entry in daf-2b(Δ); pdk-1 animals compared with pdk-1 control animals (Figure 3C). In contrast, there was no effect on dauer entry in daf-2c(Δ); pdk-1 animals (Figure 3D).
 
 The decision to proceed with reproductive growth or to enter dauer in temperature sensitive insulin-signaling mutants is driven primarily by the level of agonistic insulin peptides (Cornils et al., 2011) (Figure 3E,F). Our biochemical results indicated that DAF-2B can form homodimers (Figure 1G) and thus we suggest a model in which DAF-2B may sequester insulin peptides away from full length DAF-2 homodimeric receptors (Figure 3G). Alternatively, our observation that heterodimerization of DAF-2B occurs with full-length DAF-2A (Figure 1G) suggests DAF-2B could also dimerize with DAF-2A and act in a dominant negative manner (Figure 3G). Taken together, these observations indicate that under semi-permissive hypomorphic insulin signaling conditions DAF-2B can promote dauer entry by changing availability of agonist insulin peptides, thereby further reducing insulin signaling (Figure 3G).
 
-## DAF-2B influences dauer recovery in temperature-sensitive insulin-signaling mutants
+### DAF-2B influences dauer recovery in temperature-sensitive insulin-signaling mutants
 
 Next, we evaluated how DAF-2B affects recovery from dauer, a process that requires an increase in insulin signaling (Figure 4A) that is principally mediated by the agonistic insulin-like peptide ins-6 (Cornils et al., 2011). Transgenic overexpression of DAF-2B from the native daf-2 promoter was sufficient to inhibit dauer recovery in hypomorphic daf-2 mutants (Figure 4B), as was expression in the nervous system, body wall muscle, hypodermis or intestine (Figure 4C–F). Conversely, dauer recovery was accelerated in daf-2b(Δ); pdk-1 animals compared with their controls (Figure 4G), but not in daf-2c(Δ); pdk-1 animals (Figure 4H). These results demonstrate that DAF-2B also has robust effects on dauer exit, that are consistent with DAF-2B restricting insulin signaling.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/49917/elife-49917-fig4-v1.jpg)
 
-**Figure 4.:** (A) Exit from the dauer larva into a reproductive adult requires an increase in the activity of insulin agonists. Overexpression of DAF-2B from the native daf-2 promoter (B), in the nervous system (C), in the hypodermis (D), in muscle (E) or in the intestine (F) inhibits dauer recovery in daf-2 mutants under permissive conditions. Data are pooled from three transgenic lines (except two for hypodermal and muscle promoters) with at least three technical replicates per transgene. Two additional trials with native, neuronal, muscle and intestinal DAF-2B OE showed similar effects. Raw data can be found in Figure 4—source data 1. (G) Genetic deletion of daf-2b promotes dauer exit in pdk-1 mutants. Data are pooled from six technical replicates from one control and one daf-2b(Δ) strain. Two biological repeats showed similar effects. Raw data can be found in Figure 4—source data 2. (H) Genetic deletion of daf-2c has no effect on dauer exit in pdk-1 mutants. Data are pooled from three technical replicates from each of 2 control and daf-2c(Δ) strains per trial. Two biological repeats showed similar effects. Log Rank test ns – not significant, **p<0.01, ***p<0.001. Raw data can be found in Figure 4—source data 2.Figure 4—source data 1.daf-2(e1368).Figure 4—source data 2.daf-2bdeletion enhances dauer recovery inpdk-1(sa709).
+**Figure 4.:** (A) Exit from the dauer larva into a reproductive adult requires an increase in the activity of insulin agonists. Overexpression of DAF-2B from the native daf-2 promoter (B), in the nervous system (C), in the hypodermis (D), in muscle (E) or in the intestine (F) inhibits dauer recovery in daf-2 mutants under permissive conditions. Data are pooled from three transgenic lines (except two for hypodermal and muscle promoters) with at least three technical replicates per transgene. Two additional trials with native, neuronal, muscle and intestinal DAF-2B OE showed similar effects. Raw data can be found in Figure 4—source data 1. (G) Genetic deletion of daf-2b promotes dauer exit in pdk-1 mutants. Data are pooled from six technical replicates from one control and one daf-2b(Δ) strain. Two biological repeats showed similar effects. Raw data can be found in Figure 4—source data 2. (H) Genetic deletion of daf-2c has no effect on dauer exit in pdk-1 mutants. Data are pooled from three technical replicates from each of 2 control and daf-2c(Δ) strains per trial. Two biological repeats showed similar effects. Log Rank test ns – not significant, **p<0.01, ***p<0.001. Raw data can be found in Figure 4—source data 2.
 
-## DAF-2B acts via sequestration of insulin peptides
+### DAF-2B acts via sequestration of insulin peptides
 
 We hypothesized that overexpressed DAF-2B sequesters agonist insulin peptides, thereby reducing insulin action and inhibiting insulin signaling (Figure 5A). If this is the case, excess agonist insulin peptides should overcome the effect of DAF-2B overexpression and restore insulin signaling (Figure 5B). daf-28 encodes an agonist peptide that is required to proceed with reproductive growth and overexpression of DAF-28 has been shown to suppress dauer entry in response to elevated temperature (Li et al., 2003; Cornils et al., 2011). Consistent with this, we found that overexpression of DAF-28 suppressed the dauer constitutive phenotype of daf-2 mutants at 23°C (Figure 5C). As previously observed, overexpression of DAF-2B enhanced dauer entry in daf-2 mutants, but this effect was suppressed when DAF-2B and DAF-28 were overexpressed together (Figure 5C). Another agonist insulin peptide, ins-6, has been shown to be involved in exit from the dauer stage (Cornils et al., 2011) and we observed that overexpression of INS-6 significantly accelerated dauer exit in daf-2 mutants at 22.5°C (Figure 5D), as expected. INS-6 overexpression was also capable of overcoming the inhibitory effects of DAF-2B on dauer recovery (Figure 5D). Taken together, these observations with DAF-28 and INS-6 overexpression indicate that excess insulin peptides can promote insulin signaling in the presence of DAF-2B.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/49917/elife-49917-fig5-v1.jpg)
 
-**Figure 5.:** (A) Model for the action of DAF-2B. Increased expression of DAF-2B leads to sequestration of insulin peptides away from full length receptors resulting in reduced insulin signaling. In this respect, DAF-2B may act as a homodimer or as a heterodimer with a full-length isoform. (B) A prediction of the model is that increased availability of insulin peptide agonists should restore insulin signaling. (C) Overexpression of the DAF-28 agonist peptide from the native daf-28 promoter suppresses dauer formation in daf-2 mutants, while overexpression of DAF-2B from an integrated neuronal rab-3 promoter enhances dauer formation at 23°C. Combined overexpression of DAF-28 and DAF-2B reduces dauer formation compared with DAF-2B overexpression alone. Data are pooled from two independent trials with 12 biological replicates for daf-2(e1368) and the integrated neuronal DAF-2B OE line and two biological replicates from each of 5 or 6 DAF-28 OE extrachromosomal array lines. Post-hoc pairwise comparisons following one-way ANOVA ***p<0.0001. Raw data can be found in Figure 5—source data 1. (D) Overexpression of the INS-6 insulin peptide from the rgef-1 promoter accelerates dauer recovery in daf-2 mutants at 22.5°C. Combined overexpression of INS-6 and DAF-2B in daf-2 mutants reverses the inhibitory effect of integrated neuronal DAF-2B expression on daf-2 dauer recovery. Data are pooled from six technical replicates for daf-2(e1368) and the integrated neuronal DAF-2B OE line. For extrachromosomal array INS-6 OE lines, one replicate from each of 6 lines were pooled and at least three lines pooled for DAF-2B OE + INS-6 OE. Log Rank test – daf-2 vs daf-2 + DAF-2B OE p<0.0001; daf-2 vs daf-2 + INS-6 OE p<0.0001; daf-2 + DAF-2B OE vs daf-2 + DAF-2B OE + INS-6 OE p<0.0001. Two additional trials showed similar effects. Raw data can be found in Figure 5—source data 2. (E) Mutations in the ligand binding domain of DAF-2B that reduce affinity for insulin peptides should limit the ability of DAF-2B to inhibit insulin signaling. (F) Overexpression of wild type DAF-2B in the nervous system enhances dauer entry in daf-2 mutants. The inhibitory effect of DAF-2B is attenuated by a point mutation that affects the L1 insulin binding domain. Data are pooled from two independent trials with six transgenic lines for DAF-2B::FLAG and DAF-2B(C196Y)::FLAG and 1–2 biological replicates per line. Post-hoc pairwise comparisons following one-way ANOVA ***p<0.0001. Error bars represent mean ± sd and data are shown as independent replicates from multiple transgenic lines. Raw data can be found in Figure 5—source data 3.Figure 5—source data 1.daf-2(e1368).Figure 5—source data 2.daf-2(e1368).Figure 5—source data 3.daf-2(e1368).
+**Figure 5.:** (A) Model for the action of DAF-2B. Increased expression of DAF-2B leads to sequestration of insulin peptides away from full length receptors resulting in reduced insulin signaling. In this respect, DAF-2B may act as a homodimer or as a heterodimer with a full-length isoform. (B) A prediction of the model is that increased availability of insulin peptide agonists should restore insulin signaling. (C) Overexpression of the DAF-28 agonist peptide from the native daf-28 promoter suppresses dauer formation in daf-2 mutants, while overexpression of DAF-2B from an integrated neuronal rab-3 promoter enhances dauer formation at 23°C. Combined overexpression of DAF-28 and DAF-2B reduces dauer formation compared with DAF-2B overexpression alone. Data are pooled from two independent trials with 12 biological replicates for daf-2(e1368) and the integrated neuronal DAF-2B OE line and two biological replicates from each of 5 or 6 DAF-28 OE extrachromosomal array lines. Post-hoc pairwise comparisons following one-way ANOVA ***p<0.0001. Raw data can be found in Figure 5—source data 1. (D) Overexpression of the INS-6 insulin peptide from the rgef-1 promoter accelerates dauer recovery in daf-2 mutants at 22.5°C. Combined overexpression of INS-6 and DAF-2B in daf-2 mutants reverses the inhibitory effect of integrated neuronal DAF-2B expression on daf-2 dauer recovery. Data are pooled from six technical replicates for daf-2(e1368) and the integrated neuronal DAF-2B OE line. For extrachromosomal array INS-6 OE lines, one replicate from each of 6 lines were pooled and at least three lines pooled for DAF-2B OE + INS-6 OE. Log Rank test – daf-2 vs daf-2 + DAF-2B OE p<0.0001; daf-2 vs daf-2 + INS-6 OE p<0.0001; daf-2 + DAF-2B OE vs daf-2 + DAF-2B OE + INS-6 OE p<0.0001. Two additional trials showed similar effects. Raw data can be found in Figure 5—source data 2. (E) Mutations in the ligand binding domain of DAF-2B that reduce affinity for insulin peptides should limit the ability of DAF-2B to inhibit insulin signaling. (F) Overexpression of wild type DAF-2B in the nervous system enhances dauer entry in daf-2 mutants. The inhibitory effect of DAF-2B is attenuated by a point mutation that affects the L1 insulin binding domain. Data are pooled from two independent trials with six transgenic lines for DAF-2B::FLAG and DAF-2B(C196Y)::FLAG and 1–2 biological replicates per line. Post-hoc pairwise comparisons following one-way ANOVA ***p<0.0001. Error bars represent mean ± sd and data are shown as independent replicates from multiple transgenic lines. Raw data can be found in Figure 5—source data 3.
 
 In parallel, we used site-directed mutagenesis to engineer a point mutation in the L1 domain of DAF-2B that is thought to be important for insulin peptide binding. This point mutation was identified in the daf-2(e979) mutant (Patel et al., 2008) and mutations in this domain of the human IR are associated with severe insulin resistance (Lahiry et al., 2010). We therefore reasoned that transgenic animals expressing the mutant form of DAF-2B should have a reduced capacity to attenuate insulin signaling (Figure 5E). Consistent with this, we found that there was a significant reduction in the number of dauers formed when mutated DAF-2B was overexpressed in a daf-2 background compared with wild type DAF-2B (Figure 5F).
 
-## DAF-2B overexpression extends lifespan
+### DAF-2B overexpression extends lifespan
 
 Reduced insulin signaling is also associated with increased longevity in C. elegans. Therefore, we tested how increased DAF-2B affects lifespan. We found that wild-type animals overexpressing DAF-2B resulted in a robust increase in lifespan that was similar to daf-2 mutants (Figure 6A,B, Supplementary file 1). While overexpression of DAF-2B using a pan-neuronal promoter showed the most prominent increase in lifespan (Figure 6C), smaller but significant increases in lifespan also occurred when DAF-2B was overexpressed using promoters for hypodermis, muscle and intestine (Figure 6D–F). This suggests that extra copies of DAF-2B can reduce insulin signaling by sequestering agonistic insulin peptides in adult animals to confer lifespan extension. In contrast, neither loss of daf-2b or daf-2c affected lifespan (Figure 6G and H, Supplementary file 1). Taken together with the dauer entry and exit results, these data provide compelling evidence that the DAF-2B isoform functions to modulate insulin signaling in response to insulin agonists.
 
@@ -96,7 +120,7 @@ Reduced insulin signaling is also associated with increased longevity in C. eleg
 
 **Figure 6.:** (A) The daf-2(e1368) hypomorphic mutation confers lifespan extension. Overexpression of DAF-2B from the native daf-2 promoter (B), in the nervous system (C), in the hypodermis (D), in the muscle (E) or in the intestine (F) extends lifespan in wild type N2 animals. Genetic deletion of daf-2b (G) and daf-2c (H) has no effect on lifespan in wild type N2 animals. Log Rank test ns – not significant, ***p<0.001. Lifespan data are representative of n = 2 biological replicates for DAF-2B overexpressers and n = 3 for deletion strains. Summary data for all replicates are presented in Supplementary file 1.
 
-## DAF-2B attenuates the activity of antagonistic insulin peptides
+### DAF-2B attenuates the activity of antagonistic insulin peptides
 
 Although many of the C. elegans insulin peptides act as agonists of insulin signaling, several insulin peptides, including ins-1 and ins-18, function as antagonists (Pierce et al., 2001; Matsunaga et al., 2012). In addition, it has been shown that a number of insulin peptides can act as both agonists and antagonists depending on the context (Zheng et al., 2018). We therefore explored whether DAF-2B is also capable of attenuating the activity of antagonistic insulin peptides using the paradigm of pheromone-induced dauer formation.
 
@@ -104,7 +128,7 @@ In the natural environment, dauer formation is triggered by a reduction in food 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/49917/elife-49917-fig7-v1.jpg)
 
-**Figure 7.:** (A) In the presence of the dauer-inducing pheromone extracts, the decision in the first larval stage (L1) to proceed with reproductive growth or enter the dauer stage is dependent on the balance between antagonistic and agonistic insulin peptides. (B) Increased activity of antagonistic insulin peptides inhibits insulin signaling to promote dauer entry. (C) DAF-2B overexpression (OE) from the native daf-2 promoter, in the nervous system, or in the hypodermis suppresses pheromone-induced dauer formation in wild type animals. There was no effect of DAF-2B expressed in the intestine or in the body wall muscle. Data are pooled from 2 (hypodermal promoter) or 3 (all other promoters) transgenic lines with at least four biological replicates per transgene. Students t-test ns – not significant, **p<0.01, ***p<0.001. Similar effects were observed in an additional trial for muscle, intestine and neuronal promoters and 1/2 additional trials for the native promoter. Raw data can be found in Figure 7—source data 1. (D) Genetic deletion of daf-2b enhances dauer formation in the presence of pheromone extracts. Data are pooled from two independent trials with three biological replicates from each of two control and two daf-2b(Δ) strains per trial. Students t-test ***p<0.001. Raw data can be found in Figure 7—source data 2. (E) Genetic deletion of daf-2c has no effect on dauer formation in the presence of pheromone extracts. Student t-test ns – not significant. Raw data can be found in Figure 7—source data 3. (F) Overexpression of the INS-18 antagonist insulin peptide from the native ins-18 promoter enhances pheromone-induced dauer formation in wild type animals, while overexpression of DAF-2B from an integrated neuronal rab-3 promoter suppresses dauer formation. Combined overexpression of INS-18 and DAF-2B also suppresses dauer formation compared with INS-18 overexpression alone. Data are pooled from two independent trials with 12 biological replicates for wild type, 11 or 12 biological replicates for the integrated neuronal DAF-2B OE line and 2 or three biological replicates from each of 6 INS-18 OE extrachromosomal array lines. Post-hoc pairwise comparisons following one-way ANOVA ***p<0.0001. Raw data can be found in Figure 7—source data 4. Error bars represent mean ± sd, and data are shown as independent replicates from multiple transgenic lines.Figure 7—source data 1.Figure 7—source data 2.daf-2bdeletion enhances pheromone-induced dauer formation in wild type.Figure 7—source data 3.daf-2cdeletion has no effect on pheromone-induced dauer formation in wild type.Figure 7—source data 4.
+**Figure 7.:** (A) In the presence of the dauer-inducing pheromone extracts, the decision in the first larval stage (L1) to proceed with reproductive growth or enter the dauer stage is dependent on the balance between antagonistic and agonistic insulin peptides. (B) Increased activity of antagonistic insulin peptides inhibits insulin signaling to promote dauer entry. (C) DAF-2B overexpression (OE) from the native daf-2 promoter, in the nervous system, or in the hypodermis suppresses pheromone-induced dauer formation in wild type animals. There was no effect of DAF-2B expressed in the intestine or in the body wall muscle. Data are pooled from 2 (hypodermal promoter) or 3 (all other promoters) transgenic lines with at least four biological replicates per transgene. Students t-test ns – not significant, **p<0.01, ***p<0.001. Similar effects were observed in an additional trial for muscle, intestine and neuronal promoters and 1/2 additional trials for the native promoter. Raw data can be found in Figure 7—source data 1. (D) Genetic deletion of daf-2b enhances dauer formation in the presence of pheromone extracts. Data are pooled from two independent trials with three biological replicates from each of two control and two daf-2b(Δ) strains per trial. Students t-test ***p<0.001. Raw data can be found in Figure 7—source data 2. (E) Genetic deletion of daf-2c has no effect on dauer formation in the presence of pheromone extracts. Student t-test ns – not significant. Raw data can be found in Figure 7—source data 3. (F) Overexpression of the INS-18 antagonist insulin peptide from the native ins-18 promoter enhances pheromone-induced dauer formation in wild type animals, while overexpression of DAF-2B from an integrated neuronal rab-3 promoter suppresses dauer formation. Combined overexpression of INS-18 and DAF-2B also suppresses dauer formation compared with INS-18 overexpression alone. Data are pooled from two independent trials with 12 biological replicates for wild type, 11 or 12 biological replicates for the integrated neuronal DAF-2B OE line and 2 or three biological replicates from each of 6 INS-18 OE extrachromosomal array lines. Post-hoc pairwise comparisons following one-way ANOVA ***p<0.0001. Raw data can be found in Figure 7—source data 4. Error bars represent mean ± sd, and data are shown as independent replicates from multiple transgenic lines.
 
 To test whether DAF-2B could sequester antagonist insulin peptides under these conditions, we generated INS-18 overexpressing animals and examined their ability to influence pheromone-induced dauer formation in the presence or absence of DAF-2B. When overexpressed alone, INS-18 enhanced dauer entry in the presence of pheromone, indicating antagonist activity (Figure 7F). In contrast, DAF-2B OE alone suppressed dauer formation as expected. However, INS-18 OE was unable to enhance pheromone-induced dauer formation in the presence of extra copies of DAF-2B (Figure 7F). These data suggest that under conditions in which insulin antagonists prevail, DAF-2B can also act as an insulin sensitizer by sequestering antagonistic insulin peptides.
 
@@ -136,17 +160,153 @@ The discovery that the truncated DAF-2B isoform in C. elegans undergoes changes 
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
 
-## daf-2a/c::tdTomato splicing reporter
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Caenorhabditis elegans)</td>
+      <td>daf-2</td>
+      <td>www.wormbase.org</td>
+      <td>WBGene00000898</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli))</td>
+      <td>OP50</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>OP50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>C. elegans strains used and generated in this study</td>
+      <td>Caenorhabditis Genetics Center (CGC) and this paper</td>
+      <td></td>
+      <td>Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T/17</td>
+      <td>ATCC</td>
+      <td>CRL-11268</td>
+      <td>This cell line has been re-verified and has tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-HA</td>
+      <td>Life Technologies</td>
+      <td>715500</td>
+      <td>IP: 3 ul for 20 mg protein</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-myc</td>
+      <td>Cell Signaling Technology</td>
+      <td>2276S</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HA</td>
+      <td>Cell Signaling Technology</td>
+      <td>2367S</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat HRP-conjugated anti-mouse IgG</td>
+      <td>Fisher Scientific</td>
+      <td>Cat #9491974</td>
+      <td>Dilution 1:4000</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Protein G agarose</td>
+      <td>Sigma</td>
+      <td>11719416001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmids generated in this study</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primers used in this study</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Snapgene</td>
+      <td>GSL Biotech</td>
+      <td>RRID:SCR_015052</td>
+      <td>https://www.snapgene.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>Graphpad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com/scientificsoftware/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator CS5</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td>https://www.adobe.com/products/illustrator.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop CS5</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td>https://www.adobe.com/products/photoshop.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen Digital Imaging for Light Microscopy</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td>http://www.zeiss.com/microscopy/en_us/products/microscope-software/zen.html#introduction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.net/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
+
+#### daf-2a/c::tdTomato splicing reporter
 
 3 kb of the daf-2 promoter, amplified using primers that introduced a 5’ HindIII site and a 3’ AgeI (primers 1 and 2), was cloned into pBGY487. A daf-2 genomic fragment corresponding to exon 11 and exon 12, including the intervening intronic sequence with AgeI/KpnI overhangs and an ATG translation site was generated by PCR (primers 3 and 4). This fragment plus a KpnI-TdTomato::unc-54 3’UTR-SpeI fragment (primers 5 and 6) were cloned into pBGY487 daf-2p cut with AgeI/SpeI in a 3-piece ligation to generate pMGL83 daf-2p::daf-2a/c::tdTomato minigene.
 
-## daf-2b::tdTomato splicing reporter
+#### daf-2b::tdTomato splicing reporter
 
 A daf-2 fragment corresponding to exon 11-intron-exon 11.5 was amplified using primers that introduced a 5’ AgeI site with an ATG translation start site and 3’ KpnI site (primers 7 and 8) and cloned into pBGY487 daf-2p. tdTomato was amplified from pKBI using primers that introduced a 5’ KpnI site and a 3’ SalI site (primers 9 and 10) and cloned into pBGY487 daf-2p (3 kb)::exon11-intron-exon11.5. A daf-2 fragment consisting of exon 12 with the preceding intron plus the unc-54 3’UTR (primers 11 and 12) was then cloned into pBGY487 daf-2p (3 kb)::exon11-intron-exon11.5::tdTomato to generate pMGL86 daf-2p::daf-2b::tdTomato minigene.
 
-## DAF-2B overexpression vectors
+#### DAF-2B overexpression vectors
 
 We obtained a full length daf-2a cDNA upstream of the unc-54 3’UTR in the pTG54 plasmid from Rene Garcia at Texas A & M University. To generate a daf-2b cDNA we synthesized a 600 bp construct that consisted of the last 51 nucleotides of exon 11, which contains an AjuI restriction site, the 292 bp exon 11.5 sequence, including the stop codon, and 257 bp of the unc-54 3’UTR, which contains an NheI restriction site. pTG54 was then digested with AjuI and NheI to remove exons 12–17 plus part of the unc-54 3’UTR and the new AjuI/NheI fragment containing exon 11.5 and the stop codon was subcloned. The resulting daf-2b plasmid was sequenced to confirm the presence of daf-2b without mutations.
 
@@ -154,29 +314,29 @@ For tissue-specific overexpressors we first generated a new destination vector w
 
 daf-2b cDNA with a C-terminal FLAG tag was generated using primer pairs 31–32 and 33–34 with the PCR products cloned into pPD49.26 rab-3p. Mutant DAF-2B was generated by introducing the e979 mutation (C196Y) by site-directed mutagenesis using primers 35 and 36.
 
-## Insulin peptide overexpressing vectors
+#### Insulin peptide overexpressing vectors
 
 The daf-28 promoter was amplified with SbfI/AgeI overhangs (primers 37–38) and genomic daf-28 was amplified with AgeI/KpnI overhangs (primers 39–40) before cloning into pPD49.26 AgeI NotI GFP stop. Genomic ins-6 was amplified with AgeI and KpnI overhangs (primers 41–42) and cloned into pPD49.26 rgef-1p::GFP in place of the GFP sequence. The ins-18 promoter plus genomic ins-18 was amplified as a single fragment with SbfI and KpnI overhangs (primers 43–44) and cloned into pPD49.26 AgeI NotI GFP stop.
 
-## Immunoprecipitation vectors
+#### Immunoprecipitation vectors
 
 To express daf-2b and daf-2a in HEK cells for immunoprecipitation studies, we generated plasmids expressing each protein with C-terminal HA and Myc tags. pCMV HA (a gift from Roy Smith) was cut with ApaI and EcoR1, blunted and religated to remove N-terminal HA. Q5 site directed mutagenesis was used to generate pCMV HA-C (primers 45 and 46) and pCMV Myc-C (primers 47 and 48). daf-2b without a stop codon was amplified with 5’BglII and 3’NotI sites (primers 49 and 50) and cloned into pCMV HA-C. After sequencing, daf-2b was cloned into pCMV Myc-C using BglII and NotI. An AjuI/NotI fragment from daf-2a corresponding to exon 11 to exon 17 was cloned into pCMV daf-2b::HA-C and pCMV daf-2b::Myc-C to generate pCMV daf-2a::HA-C and pCMV daf-2a::Myc-C.
 
-## daf-2b and daf-2c vectors for MosSCI
+#### daf-2b and daf-2c vectors for MosSCI
 
 The daf-2c rescue plasmid, pPD49.26 daf-2p::daf-2c cDNA, was generated by NEB HiFi DNA assembly with primers designed using NEBuilder. daf-2 exon 1–11.5 was amplified from daf-2b cDNA using primers that introduced a 5’overhang complementary to daf-2p and a 3’ overhang complementary to daf-2 exon 12 (Fragment 1, primers 51 and 52). daf-2 exon 12–17 was amplified from daf-2a cDNA using primers that introduced a 5’ overhang complementary to Exon 11.5 and a 3’ overhang complementary to the unc-54 3’UTR (Fragment 2, primers 53 and 54). pPD49.26 daf-2p::daf-2b cDNA was digested with AgeI and KpnI to generate the vector backbone for HiFi DNA assembly with Fragments 1 and 2. The resulting plasmid pPD49.26 daf-2p::daf-2c was sequenced across the entire daf-2c insert to confirm the correct sequence. To insert the gene of interest into a plasmid containing the positive selection marker, pCFJ151 was cut with SbfI and AvrII and daf-2p::daf-2b cDNA::unc-54 3’UTR and daf-2p::daf-2c cDNA::unc-54 3’UTR were cloned in as SbfI/SpeI fragments.
 
-## C. elegans strains and maintenance
+### C. elegans strains and maintenance
 
 C. elegans strains were maintained as previously described (Brenner, 1974). Bristol N2 (wild-type), DR1572[daf-2(e1368) III], JT709[pdk-1(sa709) X], EG6699[ttTi5605 II; unc-119(ed3) III; oxEx1578], GE24[pha-1(e2123) III] were obtained from the Caenorhabditis elegans Genetics Center (University of Minnesota, MN).
 
-## Transgenic strains
+### Transgenic strains
 
 Strains expressing tdTomato splicing reporters for daf-2b or daf-2a/c were generated through microinjection. Each construct was injected at a concentration of 50 ng/μL with a coinjection marker concentration of 50 ng/μL. jluEx131 was integrated via UV mutagenesis to generate two integrated lines jluIs15 and jluIs16. To confirm tissue-specific expression of the splicing reporters, we co-injected ges-1p::gfp (10 ng/μl), dpy-7p::gfp (10 ng/μl) and rgef-1p::gfp (20 ng/μl) with the daf-2a/c reporter (50 ng/μl) and a coinjection marker (50 ng/μl). For daf-2b we injected ges-1p::gfp (50 ng/μl), dpy-7p::gfp (25 ng/μl), rgef-1p::gfp (50 ng/μl) and unc-122p::gfp (50 ng/μl) into the integrated daf-2b strain jluIs15.
 
 Strains overexpressing daf-2b cDNA were generated by microinjection. Each construct was injected at a concentration of 25 ng/μL with a coinjection marker concentration of 5 ng/μL. jluEx141 expressing neuronal DAF-2B in the daf-2 background (strain MGL275) was integrated via mutagenesis to yield the integrated line jluIs17. Strains overexpressing daf-28p::daf-28, rgef-1p::ins-6 and ins-18p::ins-18 were generated by injecting each construct at a concentration of 10 ng/μL. Each insulin peptide transgenic line was crossed into the integrated neuronal DAF-2B OE line, jluIs17. Wild type and mutant rab-3p::daf-2b::FLAG were injected at a concentration of 25 ng/ μL with a coinjection marker concentration of 3–5 ng/μL.
 
-## daf-2b::mScarlet Knock-in
+### daf-2b::mScarlet Knock-in
 
 CRISPR with homology directed repair (HDR) was used to knock-in the mScarlet fluorescent protein into the daf-2 genomic locus. crRNA targeting a PAM sequence at the end of the intronic sequence retained in daf-2b, just before the in-frame stop codon, was identified using www.crispr.mit.edu (oligo 55). An mScarlet repair template was amplified from plasmid pBG-GY837 using primers 56 and 57 that introduced 35 bp homology regions and gel purified using the Qiagen Minelute Gel Extraction kit. The use of a TAA stop codon at the terminus of mScarlet disrupted the PAM site.
 
@@ -184,21 +344,21 @@ We used the co-CRISPR approach of Paix et al, in which the dpy-10 locus is edite
 
 Injection mixes were prepared according to Paix et al. (2015) with small modifications. 30 animals were injected and singled onto individual plates 25°C. On the first day of adulthood, jackpot plates were identified and 16 animals were singled to new plates. F1 animals were genotyped for the presence of the mScarlet insertion and progeny were cloned out to identify mScarlet homozygotes (primers 61 and 62). Two independent mScarlet knock-in lines were identified (MGL367 and MGL368) and sequenced for correct insertion of mScarlet (primers 63–65). To determine the tissue-specific expression of DAF-2B::mScarlet, MGL367 was used to generate transgenic lines expressing rgef-1p::GFP (neurons), unc-122p::GFP (coelomocytes), dpy-7p::GFP (hypodermis) and ges-1p::GFP (intestine) by microinjection.
 
-## daf-2bc deletion
+### daf-2bc deletion
 
 CRISPR with HDR was used to generate a daf-2bc deletion (daf-2bc(Δ)). crRNA targeting PAM sequences in Exon 11 and exon 12 of daf-2 were identified using www.crispr.mit.edu (oligos 66 and 67) A 125 bp single-stranded homology-directed repair template was designed with a 34 bp left hand homology region and a 33 bp right hand homology region (oligo 68). 58 bp of intervening sequence consisted of the last 5 bp of exon 11 and the first 53 bp of exon 12. An XhoI site was introduced at the exon 11 PAM sequence and the exon 12 PAM sequence was inactivated by silent mutagenesis. The repair oligo was synthesized (Eurofins Genomics) and resuspended at a concentration of 2 µg/µl.
 
 We used the co-CRISPR approach of Ward, in which the pha-1(e2123) temperature-sensitive lethal mutation is corrected by homology-directed repair (Ward, 2015), using a pha-1 crRNA (oligo 69) and a pha-1 HDR template (oligo 70), synthesized as a single stranded oligo and resuspended at a concentration of 1 µg/µl. crRNA for pha-1, daf-2 exon 11 and exon 12 were synthesized by Dharmacon. pha-1 mutant worms were maintained at 15°C on HB101 bacteria. Injection mixes were prepared according to Paix et al. (2015) with small modifications. 30 animals were injected and maintained as pools of 5 per plate at 25°C. On day two post-injection, viable L1 larvae were singled to new plates and maintained at 25°C. Rescued adult F1s were allowed to lay eggs at 25°C and then were PCR genotyped for the presence of the daf-2bc deletion (primers 71–73). The progeny of heterozygotes were singled and tested for homozygosity, after which homozygotes were sequenced across the exon 11/exon 12 boundary to ensure that HDR had proceeded correctly (primers 74 and 75). A homozygous mutant line, daf-2(jlu1) with the correct deletion sequence was selected and backcrossed 3x to wild type prior to further analysis.
 
-## Single copy insertions of daf-2b and daf-2c in daf-2bc(Δ) deletion background
+### Single copy insertions of daf-2b and daf-2c in daf-2bc(Δ) deletion background
 
 MosSCI on LGII was carried out using the strain EG6699[ttTi5605 II; unc-119(ed3) III; oxEx1578] (Frøkjaer-Jensen et al., 2008) to insert single copies of daf-2b and daf-2c into the genome. EG6699 was maintained on HB101 plates by picking non-Unc animals and Unc animals were picked for injection. pCFJ151(daf-2b) or pCFJ151(daf-2c) were injected at 10 ng/µl, along with pCFJ601 (eft-3p::transposase) 50 ng/µL, pMA122 (hspp::peel-1) 10 ng/µL, pGH8 (rab-3p::mcherry) 10 ng/µL, pCFJ90 (myo-2p::mcherry) 2.5 ng/µL, pCFJ104 (myo-3p::mcherry) 5 ng/µL. Non-unc animals that did not express mCherry were singled and genotyped for the presence of the insertion (primers 76 and 77). Homozygotes were identified using primers 77–79. PCR was used to confirm that the full length construct had been integrated and the correct insertion location was determined using primers 78 and 79. Two independent lines were obtained each for daf-2b and daf-2c. Integrants were backcrossed 3x to wild type prior to further analysis.
 
-## Genetic crosses
+### Genetic crosses
 
 Transgenic animals were crossed into different genetic backgrounds by standard methods. The temperature sensitive Daf-c phenotype at 25°C was used to confirm the presence of daf-2(e1368). Since pdk-1 is on the X chromosome, we crossed hemizygous F1 males from a cross back into the pdk-1 parental line to ensure pdk-1 homozygosity before segregating heterozygotes for the gene of interest.
 
-## RNA extraction and generation of cDNA by RT-PCR
+### RNA extraction and generation of cDNA by RT-PCR
 
 Synchronous populations of N2 eggs were generated by hypochlorite treatment and deposited onto NGM plates seeded with OP50. Animals were harvested at 12 hr (L1), 24 hr (L2), 36 hr (L3), 48 hr (L4), 60 hr (young adults). Mixed embryos were generated by harvesting eggs without growth on E. coli OP50. Animals were washed from growth plates with S-basal into 1.5 mL non-stick Eppendorf tubes and washed at least five times with S-basal to remove contaminating bacteria. Animals were then resuspended in 300 μL 10 mM Tris 1 mM EDTA solution and placed on ice. Samples were homogenized by sonication (10 s max, 4–5 times) using a 130 Watt 20 kHz Ultrasonic Processor and 2 mm stepped microtip. Samples were retained on ice for a maximum of 30 min.
 
@@ -206,38 +366,38 @@ Total RNA was extracted using RNAzol RT (Catalogue: R4533 and Lot: MKCF8526) fro
 
 RNA purity and yield was calculated using a nanodrop spectrophotometer. Samples that had good purity and yield were retained for RT-PCR by using 1 μg of total RNA to generate cDNA from polyadenylated transcripts using the Invitrogen SuperScript IV RT kit and oligoDT reverse primer (Invitrogen, catalogue 18091050). Samples were diluted 1:4 in 10 mM Tris 1 mM EDTA. Full length cDNA was amplified using primers 80 and 81, and the exon 11/3’UTR fragment was amplified using primers 82 and 83. To detect cDNA fragments specific to daf-2a, daf-2b and daf-2c from the same sample we used multiplex PCR (40 cycles) using a common exon 11 forward primer (primer 82), an exon 12 reverse primer for daf-2a/daf-2c (primer 73) and a daf-2b-specific primer (primer 81). To quantify the ratio of daf-2a to daf-2b, we performed multiplex PCR at a cycle number within the linear range of amplification (35 cycles) and used Image J to quantify the band intensities on the gel.
 
-## Immunoprecipitation (IP) and CoIP
+### Immunoprecipitation (IP) and CoIP
 
 Coimmunoprecipitation experiments were performed as previously described (Sharma et al., 2014), with modifications. 1 × 106 HEK 293T/17 cells were seeded in 10 cm dishes and transfected 24 hr later with a mixture of 10 µg total DNA and jetPRIME transfection reagent (Polyplus), according to the manufacturers protocol. 5 µg each plasmid was used for pairwise transfections and for single plasmid transfections 5 µg pBluescript was included. 36–48 hr after transfection, cells were lysed with 1.0% Nonidet P-40 buffer (50 mM Tris, pH 7.5, 150 mM NaCl, 10% glycerol, 1 mM DTT, EDTA-free protease inhibitor pellets (Roche Applied Science), pepstatin, microcystin, NaVO4, NaF, sodium molybdate, and β-glycerophosphate). 1000 µg of total protein from transfected 293 cells was used for individual coIP experiments. Lysates were incubated with primary antibody for 30 min (rabbit polyclonal anti-HA antibody, cat# 715500, Life Technologies) and precipitated for 4 hr with 10 µl of protein G agarose (Sigma, cat# 11719416001) at 4°C. Precipitates were boiled in SDS Laemmli sample buffer (BioRad) and run on a 4–12% Bis Tris acetate gel (Invitrogen). Gels were transferred to PVDF membranes in Tris acetate transfer buffer and immunoblotted (anti-Myc mouse monoclonal antibody 9B11 – cat# 2276S, anti-HA mouse monoclonal antibody – cat# 2367S). Blots were visualized with HRP-conjugated anti-mouse secondary antibody (Fisher cat# 9491974), enhanced chemiluminescent reagent (West Femto, Pierce), and x-ray film.
 
-## Pheromone extract preparation
+### Pheromone extract preparation
 
 Dauer pheromone extract was prepared as previously described (Karp, 2018) with modifications. N2 worms harvested from 6 to 8 medium plates were inoculated into 4 2L flasks containing 200 mL S-medium + 20 µg/mL nystatin and 25 mL 20x concentrated E. coli OP50 and incubated in Innova 44 Incubator Shaker at 150 RPM and 23.5°C for 1 week. Flasks were removed every 24–48 hr to monitor growth. Flasks were reinoculated with 25 mL E. coli OP50 and fresh nystatin powder (5 mg per flask) after 1 week or when the initial food was cleared. Worms were grown for an additional week until cultures took on an oily, yellow-brown appearance.
 
 To generate the crude pheromone extract, the conditioned growth media was collected into a 1L cylindrical flask and placed overnight in a 4°C incubator to allow gravity settling of worms and debris, before the supernatant was removed and centrifuged at 7,000 RPM for 15 min to remove remaining worms, debris, and bacteria. The pale-yellow liquid was then transferred to a 2L beaker onto a 60°C hotplate in a fume hood and allowed to evaporate until approximately 50 mL of a brown slurry remained. This slurry was transferred to a ceramic mortar to evaporate the rest of the solution, leaving behind a thick brown sludge. This sludge was kept slightly wet with water (roughly 1 mL) and mixed with the pestle. Pheromones were extracted in 25 mL of anhydrous ethanol by using the pestle to slowly release the pheromones into solution. The ethanol was recovered after approximately 10 mins of gentle stirring and the extraction procedure was repeated 5–7 times until the ethanol solution being pulled off was mostly clear. Afterwards, the combined ethanol solution containing the dauer pheromones was placed under a nitrogen evaporator until about 10 mL of the solution remained. This final solution was passed through a 0.2 μm PES filter and distributed to 1.5 mL Eppendorf tubes and kept at −20°C until needed.
 
-## Dauer entry assays with dauer pheromone
+### Dauer entry assays with dauer pheromone
 
 Dauer pheromones extracted in ethanol were mixed into molten NGM without added peptones at an empirically derived dosage that is dependent on the extraction efficiency and concentration of pheromones from batch to batch (generally 300–500 μL per 100 mL molten agar (v/v) yielding plates that do not exceed 0.5% ethanol). Peptone-free NGM plates with added pheromone extract were seeded with 200 μL of an overnight culture of E. coli OP50 resuspended in S-basal and 1 mg/mL ampicillin to prevent growth and allowed to dry in a sterile hood. Bacterial concentration was adjusted to 3 × 109 colony-forming-units/mL S-basal. 10 gravid hermaphrodite N2 animals at the first day of adulthood were placed onto the bacterial lawn of each analysis plate per biological replicate per condition for 2 hr followed by removal. Plates were then maintained at 25°C for 44 hr. Dauers were scored on the basis of morphology and expressed as a percentage of the population.
 
-## Dauer entry assays with insulin-signaling mutants
+### Dauer entry assays with insulin-signaling mutants
 
 35 mm diameter petri dishes containing peptone-free NGM media were seeded with 200 µL of an overnight culture of E. coli OP50 resuspended in S-basal (5 × 109 colony-forming-units/mL) and 1 mg/mL ampicillin to prevent growth and allowed to dry in a sterile hood. 10 gravid hermaphrodite animals at the first day of adulthood were placed onto the bacterial lawn of each analysis plate per biological replicate per condition for 2 hr followed by removal. Plates were maintained at 23.2°C for 44 hr (daf-2(e1368)) or 26.8°C for 40 hr (pdk-1(sa709)). Dauers were scored on the basis of morphology and expressed as a percentage of the population. For transgenic lines, usually three but at least two independent isolates were utilized and compiled together. Entire experiments were replicated at least twice.
 
-## Dauer recovery assays
+### Dauer recovery assays
 
 To measure dauer recovery, dauer larva were generated by incubation at 25°C (daf-2(e1368)) or 27°C for animals bearing the pdk-1(sa709) allele in the manner described above for dauer entry conditions. Dauers were collected in ddH20 solution and washed once. Equal volume 2% SDS solution was added to worm populations in water and animals were incubated at room temperature for 45 min with periodic gentle mixing by tube inversion. After SDS treatment, populations were washed twice with ddH20 and worms (living dauers and dead carcasses) were placed onto the center of an unseeded cholesterol-free, peptone-free 1.5% agarose in S-basal plate. After 1 hr SDS-resistant dauers were recovered and 30–40 animals were placed in the center of a fresh 1.5% agarose plate seeded with E. coli OP50 (5 × 109 colony forming units/mL). Recovery plates were maintained at 20°C except where noted and scored every 12 hr for the presence of non-dauers, indicating exit from the dauer state. Animals that never recover from dauer arrest during the observation window were right-censored. For transgenic lines, usually three but at least two independent isolates were utilized and compiled together. Entire experiments were replicated at least twice.
 
-## Lifespan assays
+### Lifespan assays
 
 Lifespan assays were performed at 20°C on E. coli OP50 bacteria on NGM agar plates with a fresh lawn of bacteria. L4 larvae from a synchronized lay were transferred to a fresh plate and transferred daily during the reproductive period to prevent progeny contamination. Death was scored by loss of touch-provoked movement and animals lost due to bagging, uteral prolapse, or crawling up the side of the petri dish were censored. For transgenic lines, usually three but at least two independent isolates were utilized and compiled together. Entire experiments were replicated at least twice. Lifespan data were graphed using a Kaplan-Meier format and analyzed using the Log-Rank Test.
 
-## Fluorescence imaging
+### Fluorescence imaging
 
 Epifluorescence animal imaging was performed on a ZEISS Axio Observer A1 inverted microscope affixed with objective lenses ranging from 10 to 100x magnification.
 
 Confocal microscopy was performed in the Light Microscopy Core at the Max Planck Florida Institute for Neuroscience. Worms were mounted live on 2% agarose pad, anesthetized with 10% NaN3 and imaged using an LSM Zeiss 780 confocal microscope. The Z-stack images were acquired at 1 μm slice intervals at 63X. GFP and mScarlet excitation/emission were set to 488/526 and 651/632 respectively and each laser was in an independent track. L1 stage and young adult were imaged 20 hr and 72 hr after egg-layer respectively. Dauers were generated as previously described and imaged after SDS selection.
 
-## Statistical analysis
+### Statistical analysis
 
 The sample size for each experiment was determined empirically and was based on accepted practice within the C. elegans field. Statistical analysis was performed using GraphPad Prism v 8.0 with p<0.05 indicating significance. For pairwise comparisons we used the Student’s t-test without correction. For comparisons k > 2, One-Way ANOVA followed by a Tukey’s post hoc test was used. The Log-Rank test was used to analyze dauer recovery data.

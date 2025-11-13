@@ -39,7 +39,7 @@ Elena Fernández Álvaro, Phat Voong Vinh, Cristina de Cozar, David R Willé, Be
 
 ## Details for the omitted authors
 
-## Amanda Martinot
+### Amanda Martinot
 
 Department of Infectious Disease and Global Health, Tufts University Cummings School of Veterinary Medicine, North Grafton, United States.
 

@@ -49,55 +49,122 @@ To test for co-existing prototype and exemplar correlates in the brain during in
 
 ## Results
 
-## Behavioral
+### Behavioral
 
-## Accuracy
+#### Accuracy
 
-## Interim tests
+##### Interim tests
 
-Categorization performance across the four interim tests is presented in Figure 3A. We first tested whether generalization accuracy improved across the learning phase and whether generalization of category labels to new items differed across items of varying distance to category prototypes. There was a significant main effect of interim test number [F(3,84)=3.27, p=0.03, ηp2 = 0.11], with a significant linear effect [F(1,28)=9.91, p=0.004, ηp2 = 0.26] driven by increasing generalization accuracy across the interim tests. There was also a significant main effect of item distance [F(3,84)=51.75, p<0.001, ηp2 = 0.65] with a significant linear effect [F(1,28)=126.04, p<0.001, ηp2 = 0.82] driven by better accuracy for items closer to category prototypes. The interim test number x item distance interaction effect was not significant [F(9,252)=0.62, p=0.78, ηp2 = 0.02]. We next tested whether accuracy for old training items was higher than new items of the same distance (i.e., distance 2) and whether that differed over the course of the learning phase. There was a linear effect of interim test number [F(1,28)=16.78, p<0.001, ηp2 = 0.38] driven by increasing accuracy across the tests. There was also a significant main effect of item type (old vs. new) [F(1,28)=8.76, p=0.01, ηp2 = 0.24], driven by higher accuracy for old items (M = 0.83, SD = 0.11) relative to new items of the same distance from the prototypes (M = 0.77, SD = 0.10). The interim test number x item type interaction effect was not significant [F(3,84)=0.35, p=0.79, ηp2 = 0.01], indicating that the advantage for old compared to new items was relatively stable across learning. To summarize, we observed a reliable typicality gradient where accuracy decreased with the distance from the prototypes and both old and new items at the distance two numerically fell between distance 1 and distance three items (Figure 3A). However, within distance two items, we also observed a reliable advantage for the old items compared to new items, an aspect of the data that would not be predicted by the prototype model.
+Categorization performance across the four interim tests is presented in Figure 3A. We first tested whether generalization accuracy improved across the learning phase and whether generalization of category labels to new items differed across items of varying distance to category prototypes. There was a significant main effect of interim test number [F(3,84)=3.27, p=0.03, $η_{p}^{2}$ = 0.11], with a significant linear effect [F(1,28)=9.91, p=0.004, $η_{p}^{2}$ = 0.26] driven by increasing generalization accuracy across the interim tests. There was also a significant main effect of item distance [F(3,84)=51.75, p<0.001, $η_{p}^{2}$ = 0.65] with a significant linear effect [F(1,28)=126.04, p<0.001, $η_{p}^{2}$ = 0.82] driven by better accuracy for items closer to category prototypes. The interim test number x item distance interaction effect was not significant [F(9,252)=0.62, p=0.78, $η_{p}^{2}$ = 0.02]. We next tested whether accuracy for old training items was higher than new items of the same distance (i.e., distance 2) and whether that differed over the course of the learning phase. There was a linear effect of interim test number [F(1,28)=16.78, p<0.001, $η_{p}^{2}$ = 0.38] driven by increasing accuracy across the tests. There was also a significant main effect of item type (old vs. new) [F(1,28)=8.76, p=0.01, $η_{p}^{2}$ = 0.24], driven by higher accuracy for old items (M = 0.83, SD = 0.11) relative to new items of the same distance from the prototypes (M = 0.77, SD = 0.10). The interim test number x item type interaction effect was not significant [F(3,84)=0.35, p=0.79, $η_{p}^{2}$ = 0.01], indicating that the advantage for old compared to new items was relatively stable across learning. To summarize, we observed a reliable typicality gradient where accuracy decreased with the distance from the prototypes and both old and new items at the distance two numerically fell between distance 1 and distance three items (Figure 3A). However, within distance two items, we also observed a reliable advantage for the old items compared to new items, an aspect of the data that would not be predicted by the prototype model.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59360/elife-59360-fig3-v2.jpg)
 
-**Figure 3.:** (A) Mean generalization accuracy across each of four interim tests completed during the learning phase. Source data can be found in Figure 3—source data 1. (B) Mean categorization accuracy in the final test. Source data can be found in Figure 3—source data 2. In both cases, accuracies are separated by distance from category prototypes (0–3) and old vs. new (applicable to distance two items only). Error bars represent the standard error of the mean. Figure 3—source data 1.Figure 3—source data 2.
+**Figure 3.:** (A) Mean generalization accuracy across each of four interim tests completed during the learning phase. Source data can be found in Figure 3—source data 1. (B) Mean categorization accuracy in the final test. Source data can be found in Figure 3—source data 2. In both cases, accuracies are separated by distance from category prototypes (0–3) and old vs. new (applicable to distance two items only). Error bars represent the standard error of the mean.
 
-## Final test
+#### Final test
 
-Accuracies for generalization items at each distance from the prototype as well as for training items (all training items were at distance two from the prototypes) are presented in Figure 3B. A repeated measures ANOVA on new items that tested the effect of distance from category prototypes on generalization accuracy showed a main effect of item distance [F(3,84)=53.61, p<0.001, ηp2 = 0.66] that was well characterized by a linear effect [F(1,28)=124.55, p<0.001, ηp2 = 0.82]. Thus, the categorization gradient driven by higher accuracy for items closer to category prototypes observed during learning was also strong during the final test. In contrast, a paired t-test for accuracy on old relative to new items at distance two showed that the numeric advantage for old relative to new items was not statistically significant in the final test [t(28)=0.93, p=0.36, CI95[−0.03,.08], d = 0.22].
+Accuracies for generalization items at each distance from the prototype as well as for training items (all training items were at distance two from the prototypes) are presented in Figure 3B. A repeated measures ANOVA on new items that tested the effect of distance from category prototypes on generalization accuracy showed a main effect of item distance [F(3,84)=53.61, p<0.001, $η_{p}^{2}$ = 0.66] that was well characterized by a linear effect [F(1,28)=124.55, p<0.001, $η_{p}^{2}$ = 0.82]. Thus, the categorization gradient driven by higher accuracy for items closer to category prototypes observed during learning was also strong during the final test. In contrast, a paired t-test for accuracy on old relative to new items at distance two showed that the numeric advantage for old relative to new items was not statistically significant in the final test [t(28)=0.93, p=0.36, CI95[−0.03,.08], d = 0.22].
 
-## Behavioral model fits
+### Behavioral model fits
 
 Figure 4a-c presents model fits in terms of raw negative log likelihood for each phase (lower numbers mean lower model fit error and thus better fit). Fits from the two models tend to be correlated. If a subject randomly guesses on the majority trials (such as early in learning), neither model will fit the subject’s responses well and the subject will have higher (mis)fit values for both models. As a subject learns and does better on the task, fits of both models will tend to improve because items close to the old exemplars of category A tend to be, on average, closer to the category A prototype than the category B prototype and vice versa. For example, even if a subject had a purely exemplar representation, the prototype model would still fit that subject’s behavior quite well, albeit not as well as the exemplar model. Due to the correlation between model fits, the exact fit value for one model is not sufficient to determine a subject’s strategy, only the relative fit of one model compared to the other. Visually, in Figure 4a–c, subjects above the diagonal are better fit by the exemplar model, participants below the line are better fit by the prototype model, and participants near the line are fit comparably well by both models. Thus, although the model fits tend to be correlated across-subject, the within-subject advantage for one model over another is still detectable and meaningful. To quantify which model fits are comparable and which are reliably different, we took a Monte Carlo approach and compared the observed model fit differences to a null distribution expected by chance alone (see Methods for details). Figure 4d–f presents the percentage of subjects that were classified as having used a prototype strategy, exemplar strategy, or having model fits that were not reliably different from one another (‘similar’ fit). In the first half of learning, the majority of subjects (66%) had similar prototype and exemplar model fits. In the second half of learning and the final test, the majority of subjects (56% and 66%, respectively) were best fit by the prototype model. Prototype and exemplar model fits may not differ reliably for a given subject, such as when the subject’s responses are perfectly consistently with both models (as can happen in high-performing subjects) or when some responses are more consistent with one model while other response are more consistent with the other model. In such cases, a subject may be relying on a single representation but we cannot discern which, or the subject may rely to some extent on both types of representations.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/59360/elife-59360-fig4-v2.jpg)
 
-**Figure 4.:** Scatter plots indicate the relative exemplar vs. prototype model fits for each subject. Fits are given in terms of negative log likelihood (i.e., model error) such that lower values reflect better model fit. Each dot represents a single subject and the trendline represents equal prototype and exemplar fit. Dots above the line have better exemplar relative to prototype model fit. Dots below the line have better prototype relative to exemplar model fit. Pie charts indicate the percentage of individual subjects classified as best fit by the prototype model (in blue), the exemplar model (in red), and those similarly fit by the two models (in grey). Model fits were computed separately for the 1st half of the learning phase (interim tests 1–2, A,D), the 2nd half of the learning phase (interim tests 3–4, B,E), and the final test (C,F). Source data for all phases can be found in Figure 4—source data 1.Figure 4—source data 1.
+**Figure 4.:** Scatter plots indicate the relative exemplar vs. prototype model fits for each subject. Fits are given in terms of negative log likelihood (i.e., model error) such that lower values reflect better model fit. Each dot represents a single subject and the trendline represents equal prototype and exemplar fit. Dots above the line have better exemplar relative to prototype model fit. Dots below the line have better prototype relative to exemplar model fit. Pie charts indicate the percentage of individual subjects classified as best fit by the prototype model (in blue), the exemplar model (in red), and those similarly fit by the two models (in grey). Model fits were computed separately for the 1st half of the learning phase (interim tests 1–2, A,D), the 2nd half of the learning phase (interim tests 3–4, B,E), and the final test (C,F). Source data for all phases can be found in Figure 4—source data 1.
 
-We formally compared model fits for interim tests across the first and second half of the learning phase using a repeated-measures ANOVA on raw model fits. There was a significant main effect of learning phase [F(1,28)=39.74, p<0.001, ηp2 = 0.59] with better model fits (i.e., lower error) in the second half of the learning phase (M = 5.98, SD = 5.81) compared to the first half (M = 10.64, SD = 6.72). There was also a significant main effect of model [F(1,28)=17.50, p<0.001, ηp2 = 0.39] with better fit for the prototype model (M = 7.86, SD = 5.95) compared to the exemplar model (M = 8.77, SD = 6.02). The learning phase x model interaction effect was not significant [F(1,28)=0.01, p=0.91, ηp2 = 0.001], with a similar prototype advantage in the first half (d = 0.13, CI95[0.31,1.45]) as in the second half (d = 0.16, CI95[0.22,1.65]). When we compared prototype and exemplar model fits in the final test, we again found a significant advantage for the prototype model over the exemplar model [t(28)=3.53, p=0.001, CI95[0.89, 3.39], d = 0.23]. Thus, the prototype model provided an overall better fit to behavioral responses throughout the learning phase and final test, and the effect size of the prototype advantage was largest in the final test.
+We formally compared model fits for interim tests across the first and second half of the learning phase using a repeated-measures ANOVA on raw model fits. There was a significant main effect of learning phase [F(1,28)=39.74, p<0.001, $η_{p}^{2}$ = 0.59] with better model fits (i.e., lower error) in the second half of the learning phase (M = 5.98, SD = 5.81) compared to the first half (M = 10.64, SD = 6.72). There was also a significant main effect of model [F(1,28)=17.50, p<0.001, $η_{p}^{2}$ = 0.39] with better fit for the prototype model (M = 7.86, SD = 5.95) compared to the exemplar model (M = 8.77, SD = 6.02). The learning phase x model interaction effect was not significant [F(1,28)=0.01, p=0.91, $η_{p}^{2}$ = 0.001], with a similar prototype advantage in the first half (d = 0.13, CI95[0.31,1.45]) as in the second half (d = 0.16, CI95[0.22,1.65]). When we compared prototype and exemplar model fits in the final test, we again found a significant advantage for the prototype model over the exemplar model [t(28)=3.53, p=0.001, CI95[0.89, 3.39], d = 0.23]. Thus, the prototype model provided an overall better fit to behavioral responses throughout the learning phase and final test, and the effect size of the prototype advantage was largest in the final test.
 
-## fMRI
+### fMRI
 
-## Model-based MRI
+#### Model-based MRI
 
 The behavioral model fitting described above maximizes the correspondence between response probabilities generated by the two models and the actual participants’ patterns of responses. Once the parameters for the best fitting prototype and best fitting exemplar representations were estimated from the behavioral data, we utilized them to construct model-based fMRI predictors, one exemplar-based predictor and one prototype-based predictor for each participant. For each test item, a model prediction was computed as the similarity of the item to the underlying prototype or exemplar representation regardless of category (representational match; see Methods for details). The trial-by-trial model predictions from both models were then used for fMRI analysis to identify regions that have signal consistent with either model. Importantly, even when behavioral fits are comparable between the two models, the neural model predictions can remain dissociable as they more directly index the underlying representations that are different between the models (Mack et al., 2013). For example, the prototypes would be classified into their respective categories with high probability by either model because they are much closer to one category’s representation than the other, generating similar behavioral prediction for that trial. However, the representational match will be much higher for the prototype model than the exemplar model as the prototype is not particularly close to any old exemplars. Thus, the neural predictors can dissociate the models to a greater degree than behavioral predictions (Mack et al., 2013). Furthermore, the neural model fits can help detect evidence of both kinds of representations, even if one dominates the behavior.
 
-## Learning phase
+##### Learning phase
 
 We first tested the degree to which prototype and exemplar information was represented across ROIs and across different points of the learning phase. Using the data from the interim generalization tests, we compared neural model fits across our six ROIs across the first and second half of the learning phase. Full ANOVA results are presented in Table 1. Figure 5 presents neural model fits for each ROI. Figure 5A represents 1st half of the learning phase, Figure 5B represents the 2nd half of the learning phase, and Figure 5C represents fits collapsed across the entire learning phase (to illustrate the main effects of ROI, model and ROI x model interaction).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/59360/elife-59360-fig5-v2.jpg)
 
-**Figure 5.:** Neural model fits for each region of interest for (A) the first half of the learning phase, (B) the second half of the learning phase, (C) the overall learning phase (averaged across the first and second half of learning), and (D) the final test. Prototype fits are in blue, exemplar fits in red. Neural model fit is the effect size: the mean/SD of ß-values within each ROI, averaged across appropriate runs. VMPFC = ventromedial prefrontal cortex, ahip = anterior hippocampus, phip = posterior hippocampus, LO = lateral occipital cortex, IFG = inferior frontal gyrus, and Lat. Par. = lateral parietal cortex. Source data for interim tests is in Figure 5—source data 1 and Figure 5—source data 2 for the final test.Figure 5—source data 1.Figure 5—source data 2.
+**Figure 5.:** Neural model fits for each region of interest for (A) the first half of the learning phase, (B) the second half of the learning phase, (C) the overall learning phase (averaged across the first and second half of learning), and (D) the final test. Prototype fits are in blue, exemplar fits in red. Neural model fit is the effect size: the mean/SD of ß-values within each ROI, averaged across appropriate runs. VMPFC = ventromedial prefrontal cortex, ahip = anterior hippocampus, phip = posterior hippocampus, LO = lateral occipital cortex, IFG = inferior frontal gyrus, and Lat. Par. = lateral parietal cortex. Source data for interim tests is in Figure 5—source data 1 and Figure 5—source data 2 for the final test.
+
+**Table 1.**
+ ANOVA results for model-based fMRI during the learning phase.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Effect</th>
+      <th>df</th>
+      <th>F</th>
+      <th>P</th>
+      <th>ηp2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ROI</td>
+      <td>3.4,95.6 GG</td>
+      <td>3.90</td>
+      <td>.002</td>
+      <td>.12</td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td>1,28</td>
+      <td>2.60</td>
+      <td>.12</td>
+      <td>.09</td>
+    </tr>
+    <tr>
+      <td>Learning half</td>
+      <td>1,28</td>
+      <td>2.18</td>
+      <td>.15</td>
+      <td>.07</td>
+    </tr>
+    <tr>
+      <td>ROI x Model</td>
+      <td>2.9,80.3 GG</td>
+      <td>5.91</td>
+      <td>.001</td>
+      <td>.17</td>
+    </tr>
+    <tr>
+      <td>ROI x Learning half</td>
+      <td>3.1,86.9 GG</td>
+      <td>0.53</td>
+      <td>.67</td>
+      <td>.02</td>
+    </tr>
+    <tr>
+      <td>Model x Learning half</td>
+      <td>1,28</td>
+      <td>0.09</td>
+      <td>.76</td>
+      <td>.003</td>
+    </tr>
+    <tr>
+      <td>ROI x Model x Learning Half</td>
+      <td>3.2,89.6 GG</td>
+      <td>2.31</td>
+      <td>.08</td>
+      <td>.08</td>
+    </tr>
+  </tbody>
+</table>
 
 As predicted, there was a significant ROI x Model interaction effect, indicating that there were differences across regions in the type of category information that they tracked. To understand the nature of this interaction, we computed follow-up t-tests on the neural model fits in each ROI, collapsed across the first and second half of the learning phase. Consistent with prior work (Bowman and Zeithamova, 2018), the VMPFC and anterior hippocampus (our predicted prototype regions) significantly tracked prototype information [VMPFC: t(28) = 2.86, p=0.004, CI95[µ >0.06], d = 0.75]; [anterior hippocampus: t(28) = 1.88, p=0.04, CI95[µ >0.009], d = 0.49]. Prototype correlates were numerically but not significantly stronger than exemplar correlates in both regions [VMPFC: t(28) = 1.23, p=0.11, d = 0.34, CI95[µ >−0.03]]; (anterior hippocampus: t(28) = 0.87, p=0.19, d = 0.22, CI95[µ >−0.05]). For the predicted exemplar regions, we found that both lateral parietal cortex and inferior frontal gyrus significantly tracked exemplar model predictions [lateral parietal: t(28) = 2.06, p=0.02, CI95[µ >0.02], d = 0.54]; [inferior frontal: t(28) = 2.40, p=0.01, CI95[µ >0.03], d = 0.63], with numerically positive exemplar correlates in lateral occipital cortex that were not statistically significant [t(28)=0.78, p=0.22, CI95[µ >−0.05], d = 0.20]. When comparing neural exemplar fits to neural prototype fits, there was a significant exemplar advantage in both lateral parietal cortex [t(28)=3.00, p=0.003, d = 0.71, CI95[µ >0.09]], and in inferior frontal gyrus [t(28)=2.63, p=0.01, d = 0.67, CI95[µ >0.06]], that did not reach significance in the lateral occipital cortex [t(28)=1.44, p=0.08, d = 0.36, CI95[µ >−0.06]].
 
-As in our prior study, the posterior hippocampus showed numerically better fit of the exemplar predictor, but neither the exemplar effect [t(28)=1.88, p=0.07, CI95[−0.01,.13], d = 0.49] nor the prototype effect reached significance [t(28)=−1.14, p=0.26, CI95[−0.12,.03], d = 0.30]. Comparing the effects in the two hippocampal regions as part of a 2 (hippocampal ROI: anterior, posterior) x 2 (model: prototype, exemplar) repeated-measures ANOVA, we found a significant interaction [F(1,28)=9.04, p=0.006, ηp2 = 0.24], showing that there is a dissociation along the hippocampal long axis in the type of category information represented. Taken together, we found evidence for different types of category information represented across distinct regions of the brain.
+As in our prior study, the posterior hippocampus showed numerically better fit of the exemplar predictor, but neither the exemplar effect [t(28)=1.88, p=0.07, CI95[−0.01,.13], d = 0.49] nor the prototype effect reached significance [t(28)=−1.14, p=0.26, CI95[−0.12,.03], d = 0.30]. Comparing the effects in the two hippocampal regions as part of a 2 (hippocampal ROI: anterior, posterior) x 2 (model: prototype, exemplar) repeated-measures ANOVA, we found a significant interaction [F(1,28)=9.04, p=0.006, $η_{p}^{2}$ = 0.24], showing that there is a dissociation along the hippocampal long axis in the type of category information represented. Taken together, we found evidence for different types of category information represented across distinct regions of the brain.
 
 We were also interested in whether there was a shift in representations that could be detected across learning. The only effect that included learning phase that approached significance was the three-way ROI x model x learning phase interaction, likely reflecting the more pronounced region x model differences later in learning (Figure 5A vs. Figure 5B).
 
-## Final test
+##### Final test
 
-Figure 5D presents neural model fits from each ROI during the final test. We tested whether the differences across ROIs identified during the learning phase were also present in the final test. As during the learning phase, we found a significant main effect of ROI [F(2.9,79.8)=9.13, p<0.001, ηp2 = 0.25, GG] and no main effect of model [F(1,28)=1.65, p=0.21, ηp2 = 0.06]. However, unlike the learning phase, we did not find a significant model x ROI interaction effect [F(3.3,91.2)=1.81, p=0.15, ηp2 = 0.06, GG]. Because this was a surprising finding, we wanted to better understand what had changed from the learning phase to the final test. Thus, although the ROI x model interaction was not significant in the final test, we computed follow-up tests on regions that had significantly tracked prototype and exemplar predictors during the learning phase. As in the learning phase, both the VMPFC and anterior hippocampus continued to significantly track prototype predictors during the final test with effect sizes similar to those observed during learning [VMPFC: t(28) = 2.83, p=0.004, CI95[µ >0.06], d = 0.74]; [anterior hippocampus: t(28) = 1.98, p=0.03, CI95[µ >0.01], d = 0.52]. Here, prototype correlates were significantly stronger than exemplar correlates in the anterior hippocampus [t(28)=2.28, p=0.02, d = 0.63], CI95[µ >0.02] and marginally stronger in the VMPFC [t(28)=1.67, p=0.053, d = 0.46, CI95[µ > - 0.03]]. However, exemplar correlates did not reach significance in any of the predicted exemplar regions (all t < 1.18, p>0.12, d < 0.31).
+Figure 5D presents neural model fits from each ROI during the final test. We tested whether the differences across ROIs identified during the learning phase were also present in the final test. As during the learning phase, we found a significant main effect of ROI [F(2.9,79.8)=9.13, p<0.001, $η_{p}^{2}$ = 0.25, GG] and no main effect of model [F(1,28)=1.65, p=0.21, $η_{p}^{2}$ = 0.06]. However, unlike the learning phase, we did not find a significant model x ROI interaction effect [F(3.3,91.2)=1.81, p=0.15, $η_{p}^{2}$ = 0.06, GG]. Because this was a surprising finding, we wanted to better understand what had changed from the learning phase to the final test. Thus, although the ROI x model interaction was not significant in the final test, we computed follow-up tests on regions that had significantly tracked prototype and exemplar predictors during the learning phase. As in the learning phase, both the VMPFC and anterior hippocampus continued to significantly track prototype predictors during the final test with effect sizes similar to those observed during learning [VMPFC: t(28) = 2.83, p=0.004, CI95[µ >0.06], d = 0.74]; [anterior hippocampus: t(28) = 1.98, p=0.03, CI95[µ >0.01], d = 0.52]. Here, prototype correlates were significantly stronger than exemplar correlates in the anterior hippocampus [t(28)=2.28, p=0.02, d = 0.63], CI95[µ >0.02] and marginally stronger in the VMPFC [t(28)=1.67, p=0.053, d = 0.46, CI95[µ > - 0.03]]. However, exemplar correlates did not reach significance in any of the predicted exemplar regions (all t < 1.18, p>0.12, d < 0.31).
 
 ## Discussion
 
@@ -121,87 +188,239 @@ While co-existing prototype and exemplar representations were clear during the l
 
 In addition to identifying multiple, co-existing types of category representations during learning, we sought to test whether there were representational shifts as category knowledge developed. While there was a prototype advantage in the brain during the final test, we found no evidence for a shift between exemplar and prototype representations over the course of learning. Both prototype and exemplar correlates showed numerical increases across learning in brain and behavior, suggesting strengthening of both types of representations in parallel. Prior work has shown that individuals may use both rules and memory for individual exemplars throughout learning without strong shifts from one to the other (Thibaut et al., 2018). Others have suggested that there may be representational shifts during category learning, but rather than shifting between exemplar and prototype representations, early learning may be focused on detecting simple rules and testing multiple hypotheses (Johansen and Palmeri, 2002; Nosofsky et al., 1994; Paniukov and Davis, 2018), whereas similarity-based representations such as prototype and exemplar representations may develop later in learning (Johansen and Palmeri, 2002). Our findings are consistent with this framework, with strong prototype and exemplar representations emerging across distinct regions primarily in the second half of learning. Our results are also consistent with recent neuroimaging studies showing multiple memory representations forming in parallel without need for competition (Collin et al., 2015; Schlichting et al., 2015), potentially allowing individuals to flexibly use prior experience based on current decision-making demands.
 
-## Conclusion
+### Conclusion
 
 In the present study, we found initial evidence that multiple types of category representations may co-exist across distinct brain regions within the same categorization task. The regions identified as prototype-tracking (anterior hippocampus and VMPFC) and exemplar-tracking (IFG and lateral parietal cortex) in the present study align with prior studies that have found only one or the other. These findings shed light on the multiple memory systems that contribute to concept representation and provide novel evidence of how the brain may flexibly represent information at different levels of specificity and that these representations may not always compete during learning.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Forty volunteers were recruited from the University of Oregon and surrounding community and were financially compensated for their research participation. This sample size was determined based on effect sizes for neural prototype-tracking and exemplar-tracking regions estimated from prior studies (Bowman and Zeithamova, 2018; Mack et al., 2013), allowing for detection of the minimum effect size (prototype correlates in anterior hippocampus, d = 0.43 with n = 29) using a one-tailed, one-sample t-test with at least 80% power. All participants provided written informed consent, and Research Compliance Services at the University of Oregon approved all experimental procedures. All participants were right-handed, native English speakers and were screened for neurological conditions, medications known to affect brain function, and contraindications for MRI.
 
 A total of 11 subjects were excluded. Six subjects were excluded prior to fMRI analyses: three subjects for chance performance (<0.6 by the end of the training phase and/or <0.6 for trained items in the final test), one subject for excessive motion (>1.5 mm within multiple runs), and two subjects for failure to complete all phases. An additional five subjects were excluded for high correlation between fMRI regressors that precluded model-based fMRI analyses of the first or second half of learning phase: three subjects had r > 0.9 for prototype and exemplar regressors and two subjects had a rank deficient design matrix driven by a lack of trial-by-trial variability in the exemplar predictor. In all five participants, attentional weight parameter estimates from both models indicated that most stimulus dimensions were ignored, which in some cases may lead to a lack of variability in model fits. This left 29 subjects (age: M = 21.9 years, SD = 3.3 years, range 18–30 years; 19 females) reported in all analyses. Additionally, we excluded single runs from three subjects who had excessive motion limited to that single run.
 
-## Materials
+### Materials
 
 Stimuli consisted of cartoon animals that differed on eight binary features: neck (short vs. long), tail (straight vs. curled), foot shape (claws vs. round), snout (rounded vs. pig), head (ears vs. antennae), color (purple vs. red), body shape (angled vs. round), and design on the body (polka dots vs. stripes) (Bozoki et al., 2006; Zeithamova et al., 2008; available for download osf.io/8bph2). The two possible versions of all features can be seen across the two prototypes shown in Figure 1C. For each participant, the stimulus that served as the prototype of category A was randomly selected from four possible stimuli and all other stimuli were re-coded in reference to that prototype. The stimulus that shared no features with the category A prototype served as the category B prototype. Physical distance between any pair of stimuli was defined by their number of differing features. Category A stimuli were those that shared more features with the category A prototype than the category B prototype. Category B stimuli were those that shared more features with the category B prototype than the category A prototype. Stimuli equidistant from the two prototypes were not used in the study.
 
-## Training set
+#### Training set
 
 The training set included four stimuli per category, each differing from their category prototype by two features (see Table 2 for training set structure). The general structure of the training set with regard to the category prototypes was the same across subjects, but the exact stimuli differed based on the prototypes selected for a given participant. The training set structure was selected to generate many pairs of training items that were four features apart both within the same category and across the two categories. This design ensured that categories could not be learned via unsupervised clustering based on similarity of exemplars alone.
 
-## Interim test sets
+**Table 2.**
+ Dimension values for example prototypes and training stimuli from each category.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="8">Dimension values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stimulus</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Prototype A</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>A1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>A3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>A4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Prototype B</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>B1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>B2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>B3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>B4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Interim test sets
 
 Stimuli in the interim generalization tests included 22 unique stimuli: the eight training stimuli, both prototypes, and two new stimuli at each distance (1, 2, 3, 5, 6, 7) from the category A prototype. Distance 1, 2 and 3 items were scored as correct when participant labeled them as category A members. Items at the distance 5, 6 and 7 from the category A prototype (thus distance 3, 2, and one from the B prototype) were scored as correct when participant labeled them as category B members. While new unique distance 1–3, 5–7 items were selected for each interim test set, the old training stimuli and the prototypes were necessarily the same for each test.
 
-## Final test set
+#### Final test set
 
 Stimuli in the final test included 58 unique stimuli. Forty-eight of those consisted of 8 new stimuli selected at each distance 1–3, 5–7 from the category A prototype, each presented once during the final test. These new items were distinct from those used in either the training set or the interim test sets with the exception of the items that differed by only one feature from their respective prototypes. Because there are only 8 distance one items for each prototype, they were all used as part of the interim test sets before being used again in the final test set. The final test also included the eight training stimuli and the two prototypes, each presented twice in this phase (Bowman and Zeithamova, 2018; Kéri et al., 2001; Smith et al., 2008). The stimulus structure enabled dissociable behavioral predictions from the two models. While stimuli near the prototypes also tend to be near old exemplars, the correlation is imperfect. For example, when attention is equally distributed across features, the prototype model would make the same response probability prediction for all distance three items. However, some of those distance three items were near an old exemplar while others were farther from all old exemplars, creating distinct exemplar model predictions. Because we varied the test stimuli to include all distances from the prototypes, and because within each distance to the prototype there was variability in how far the stimuli are from the old exemplars, the structure was set up to facilitate dissociation between the model predictions.
 
-## Experimental design
+### Experimental design
 
 The study consisted of two sessions: one session of neuropsychological testing and one experimental session. Only results from the experimental session are reported in the present manuscript. In the experimental session, subjects underwent four cycles of observational study and interim generalization tests (Figure 1D), followed by a final generalization test (Figure 1E), all while undergoing fMRI.
 
 In each run of observational study, participants were shown individual animals on the screen with a species label (Febbles and Badoons) and were told to try to figure out what makes some animals Febbles and others Badoons without making any overt responses. Each stimulus was presented on the screen for 5 s followed by a 7 s ITI. Within each study run, participants viewed the training examples three times in a random order. After two study runs, participants completed an interim generalization test. Participants were shown cartoon animals without their labels and classified them into the two species without feedback. Each test stimulus was presented for 5 s during which time they could make their response, followed by a 7 s ITI. After four study-test cycles, participants completed a final categorization test, split across four runs. As in the interim tests, participants were asked to categorize animals into one of two imaginary species (Febbles and Badoons) using the same button press while the stimulus was on the screen. Following the MRI session, subjects were asked about the strategies they used to learn the categories, if any, and then indicated which version of each feature they thought was most typical for each category. Lastly, subjects were verbally debriefed about the study.
 
-## fMRI Data Acquisition
+### fMRI Data Acquisition
 
 Raw MRI data are available for download via OpenNeuro (openneuro.org/datasets/ds002813). Scanning was completed on a 3T Siemens MAGNETOM Skyra scanner at the University of Oregon Lewis Center for Neuroimaging using a 32-channel head coil. Head motion was minimized using foam padding. The scanning session started with a localizer scan followed by a standard high-resolution T1-weighted MPRAGE anatomical image (TR 2500 ms; TE 3.43 ms; TI 1100 ms; flip angle 7°; matrix size 256 256; 176 contiguous slices; FOV 256 mm; slice thickness 1 mm; voxel size 1.0 1.0 1.0 mm; GRAPPA factor 2). Then, a custom anatomical T2 coronal image (TR 13,520 ms; TE 88 ms; flip angle 150°; matrix size 512 512; 65 contiguous slices oriented perpendicularly to the main axis of the hippocampus; interleaved acquisition; FOV 220 mm; voxel size 0.4 0.4 2 mm; GRAPPA factor 2) was collected. This was followed by 16 functional runs using a multiband gradient echo pulse sequence [TR 2000 ms; TE 26 ms; flip angle 90°; matrix size 100 100; 72 contiguous slices oriented 15° off the anterior commissure–posterior commissure line to reduced prefrontal signal dropout; interleaved acquisition; FOV 200 mm; voxel size 2.0 2.0 2.0 mm; generalized autocalibrating partially parallel acquisitions (GRAPPA) factor 2]. One hundred and forty-five volumes were collected for each observational study run, 133 volumes for each interim test run, and 103 volumes for each final test run.
 
-## Behavioral accuracies
+### Behavioral accuracies
 
-## Interim tests
+#### Interim tests
 
 To assess changes in generalization accuracy across train-test cycles, we computed a 4 (interim test run: 1–4) x 4 (distance: 0–3) repeated-measures ANOVA on accuracy for new items only. We were particularly interested in linear effects of interim test run and distance. We also tested whether there was a difference across training in accuracy for the training items themselves versus new items at the same distance from their prototypes, which can index how much participants learn about specific items above-and-beyond what would be expected based on their typicality. We thus computed a 4 (interim test run: 1–4) x 2 (item type: training, new) repeated-measures ANOVA on accuracies for distance two items.
 
-## Final test
+#### Final test
 
 First, to assess the effect of item typicality, classification performance in the final test (collapsed across runs) was assessed by computing a one-way, repeated-measures ANOVA across new items at distances (0–3) from either prototype. Second, we assessed whether there was an old-item advantage by comparing accuracy for training items and new items of equal distance from prototypes (distance 2) using a paired-samples t-test. For all analyses (including fMRI analyses described below), a Greenhouse-Geisser correction was applied whenever the assumption of sphericity was violated as denoted by ‘GG’ in the results.
 
-## Prototype and exemplar model fitting
+### Prototype and exemplar model fitting
 
 As no responses were made during the study runs, prototype and exemplar models were only fit to test runs – interim and final tests. As the number of trials in each interim test was kept low to minimize exposure to non-training items during the learning phase, we concatenated across interim tests 1 and 2 and across interim tests 3 and 4 to obtain more robust model fit estimates for the first half vs. second half of the learning phase. Model fits for the final test were computed across all four runs combined. Each model was fit to trial-by-trial data in individual participants.
 
-## Prototype similarity
+#### Prototype similarity
 
-As in prior studies (Bowman and Zeithamova, 2018; Maddox et al., 2011; Minda and Smith, 2001), the similarity of each test stimulus to each prototype was computed, assuming that perceptual similarity is an exponential decay function of physical similarity (Shepard, 1957), and taking into account potential differences in attention to individual features. Formally, similarity between the test stimulus and the prototypes was computed as follows:(1)SA(x)=exp[ −c∑i=1m(wi|xi− protoAi|r)1/r ],where SA(x) is the similarity of item x to category A, xi represents the value of the item x on the ith dimension of its m binary dimensions (m = 8 in this study), protoA is the prototype of category A, r is the distance metric (fixed at one for the city-block metric for the binary dimension stimuli). Parameters that were estimated from each participant’s pattern of behavioral responses were w (a vector with eight weights, one for each of the eight stimulus features and constrained to sum to 1) and c (sensitivity: the rate at which similarity declines with physical distance, constrained to be 0–100).
+As in prior studies (Bowman and Zeithamova, 2018; Maddox et al., 2011; Minda and Smith, 2001), the similarity of each test stimulus to each prototype was computed, assuming that perceptual similarity is an exponential decay function of physical similarity (Shepard, 1957), and taking into account potential differences in attention to individual features. Formally, similarity between the test stimulus and the prototypes was computed as follows:
 
-## Exemplar similarity
+$$
+S_{A}(x)=exp[−c\sumi=1m(w_{i}|x_{i}− proto_{Ai}|^{r})^{1/r}],
+$$
 
-Exemplar models assume that categories are represented by their individual exemplars, and that test items are classified into the category with the highest summed similarity across category exemplars (Figure 1A). As in the prototype model, a nonlinear exponential decay function is used to transform physical similarity into subjective similarity, based on research on how perceived similarity relates to physical similarity (Shepard, 1957). Using a nonlinear function has the effect of weighting the most similar exemplars more heavily than the least similar exemplars, as the similarity value for two items that are physically one feature apart will be more than twice the similarity value of two items that are two features apart. Using the sum of similarity across all exemplars within a category provides an opportunity for multiple highly similar exemplars to be considered in making decisions, which allows the model to generate different predictions when there is a single close exemplar versus when there are multiple close exemplars. Together, this means that the most similar training exemplars drive the summed similarity metric but there is still differentiation in the predictions informed by other exemplars beyond the closest exemplar. This is canonically how an item’s similarity to each category is computed in exemplar models (Nosofsky, 1987; Zaki et al., 2003).Formally, similarity of each test stimulus to the exemplars of each category was computed as follows:(2)SA(x)= ∑y∈Aexp[ −c∑i=1m(wi|xi−yi|r)1/r ]where y represents the individual training stimuli from category A, and the remaining notation and parameters are as in Equation 1.
+where $S_{A}(x)$ is the similarity of item x to category A, xi represents the value of the item x on the ith dimension of its m binary dimensions (m = 8 in this study), protoA is the prototype of category A, r is the distance metric (fixed at one for the city-block metric for the binary dimension stimuli). Parameters that were estimated from each participant’s pattern of behavioral responses were w (a vector with eight weights, one for each of the eight stimulus features and constrained to sum to 1) and c (sensitivity: the rate at which similarity declines with physical distance, constrained to be 0–100).
 
-## Parameter estimation
+#### Exemplar similarity
 
-For both models, the probability of assigning a stimulus x to category A is equal to the similarity to category A divided by the summed similarity to categories A and B, formally, as follows:(3)P(A|x)=SA(x)SA(x)+SB(x)
+Exemplar models assume that categories are represented by their individual exemplars, and that test items are classified into the category with the highest summed similarity across category exemplars (Figure 1A). As in the prototype model, a nonlinear exponential decay function is used to transform physical similarity into subjective similarity, based on research on how perceived similarity relates to physical similarity (Shepard, 1957). Using a nonlinear function has the effect of weighting the most similar exemplars more heavily than the least similar exemplars, as the similarity value for two items that are physically one feature apart will be more than twice the similarity value of two items that are two features apart. Using the sum of similarity across all exemplars within a category provides an opportunity for multiple highly similar exemplars to be considered in making decisions, which allows the model to generate different predictions when there is a single close exemplar versus when there are multiple close exemplars. Together, this means that the most similar training exemplars drive the summed similarity metric but there is still differentiation in the predictions informed by other exemplars beyond the closest exemplar. This is canonically how an item’s similarity to each category is computed in exemplar models (Nosofsky, 1987; Zaki et al., 2003).Formally, similarity of each test stimulus to the exemplars of each category was computed as follows:
+
+$$
+S_{A}(x)= \sumy\inAexp[−c\sumi=1m(w_{i}|x_{i}−y_{i}|^{r})^{1/r}]
+$$
+
+where y represents the individual training stimuli from category A, and the remaining notation and parameters are as in Equation 1.
+
+#### Parameter estimation
+
+For both models, the probability of assigning a stimulus x to category A is equal to the similarity to category A divided by the summed similarity to categories A and B, formally, as follows:
+
+$$
+P(A|x)=\frac{S_{A}(x)}{S_{A}(x)+S_{B}(x)}
+$$
 
 Using these equations, the best fitting w1-8 (attention to each feature) and c (sensitivity) parameters were estimated from the behavioral data of each participant, separately for the first half of the learning phase, second half of the learning phase, and the final test, and separately for the prototype and exemplar models. To estimate these parameters for a given model, the trial-by-trial predictions generated by Equation 3 were compared with the participant’s actual series of responses, and model parameters were tuned to minimize the difference between predicted and observed responses. An error metric (negative log likelihood of the entire string of responses) was computed for each model by summing the negative of log-transformed probabilities, and this value was minimized by adjusting w and c using standard maximum likelihood methods, implemented in MATLAB (Mathworks, Natick, MA), using the ‘fminsearch’ function.
 
-## Group analyses
+#### Group analyses
 
 After optimization, we computed a 2 (model: prototype, exemplar) x 2 (learning phase half: 1st, 2nd) repeated-measures ANOVA on the model fit values (i.e., negative log likelihood) to determine which model provided a better fit to behavioral responses at the group level and if there were shifts across learning in which model fit best. We used a paired-samples t-test comparing model fits during the final test to determine whether the group as a whole was better fit by the prototype or exemplar model by the end of the experiment.
 
 We also tested whether individual subjects were reliably better fit by one model or the other using a permutation analysis. For each subject in each phase of the experiment, we created a null distribution of model fits by shuffling the order of stimuli associated with the subject’s actual string of responses, then fitting the prototype and exemplar models to this randomized set of response – stimulus mappings. We repeated this process 10,000 times for each subject in each phase. We first confirmed that the actual prototype and exemplar model fits were reliably better than would be expected if subjects were responding randomly by comparing these real fits to the null distribution of prototype and exemplar model fits (alpha = 0.05, one-tailed). Indeed, both the prototype and exemplar models fit reliably better than chance for all subjects in all phases of the experiment. Next, we tested whether one model reliably outperformed the other model by taking the difference in model fits generated by the permutation analysis. We then compared the observed difference in model fits to the null distribution of model fit differences and determined whether the observed difference appeared with a frequency of less than 5% (alpha = 0.05, two-tailed). Using this procedure, we labeled each subject as having used a prototype strategy, exemplar strategy, or having fits that did not differ reliably from one another (‘similar’ model fits) for each phase of the experiment.
 
-## fMRI Preprocessing
+#### fMRI Preprocessing
 
 The raw data were converted from dicom files to nifti files using the dcm2niix function from MRIcron (https://www.nitrc.org/projects/mricron). Functional images were skull-stripped using BET (Brain Extraction Tool), which is part of FSL (http://www.fmrib.ox.ac.uk/fsl). Within-run motion correction was computed using MCFLIRT in FSL to realign each volume to the middle volume of the run. Across-run motion correction was then computed using ANTS (Advanced Normalization Tools) by registering the first volume of each run to the first volume of the first functional run (i.e., the first training run). Each computed transformation was then applied to all volumes in the corresponding run. Brain-extracted and motion-corrected images from each run were entered into the FEAT (fMRI Expert Analysis Tool) in FSL for high-pass temporal filtering (100 s) and spatial smoothing (4 mm FWHM kernel).
 
-## Regions of interest
+### Regions of interest
 
 Regions of interest (ROIs, Figure 2) were defined anatomically in individual participants’ native space using the cortical parcellation and subcortical segmentation from Freesurfer version 6 (https://surfer.nmr.mgh.harvard.edu/) and collapsed across hemispheres to create bilateral masks. Past research has indicated that there may be a functional gradient along the hippocampal long axis, with detailed, find-grained representations in the posterior hippocampus and increasingly coarse, generalized representations proceeding toward the anterior hippocampus (Brunec et al., 2018; Frank et al., 2019; Poppenk et al., 2013). As such, we divided the hippocampal ROI into anterior/posterior portions at the middle slice. When a participant had an odd number of hippocampal slices, the middle slice was assigned to the posterior hippocampus. Based on our prior report (Bowman and Zeithamova, 2018), we expected the anterior portion of the hippocampus to track prototype predictors, together with VMPFC (medial orbitofrontal label in Freesurfer). Based on the prior study by Mack et al., 2013, we expected lateral occipital cortex, inferior frontal gyrus (combination of pars opercularis, pars orbitalis, and pars triangularis freesurfer labels), and lateral parietal cortex (combination of inferior parietal and superior parietal freesurfer labels) to track exemplar predictors. The posterior hippocampus was also included as an ROI, to test for an anterior/posterior dissociation within the hippocampus. While one might expect the posterior hippocampus to track exemplar predictors based on the aforementioned functional gradient, our prior report Bowman and Zeithamova, 2018 found only a numeric trend in this direction and Mack et al., 2013 did not report any hippocampal findings despite significant exemplar correlates found in the cortex. Thus, we did not have strong predictions regarding the posterior hippocampus, other than being distinct from the anterior hippocampus.
 
-## Model-based fMRI analyses
+### Model-based fMRI analyses
 
 fMRI data were modeled using the GLM. Three task-based regressors were included in the GLM: one for all trial onsets, one that included modulation for each trial by prototype model predictions, and one that included modulation for each trial by exemplar model predictions. Events were modeled with a duration of 5 s, which was the fixed length of the stimulus presentation. Onsets were then convolved with the canonical hemodynamic response function as implemented in in FSL (a gamma function with a phase of 0 s, and SD of 3 s, and a mean lag time of 6 s). The six standard timepoint-by-timepoint motion parameters were included as regressors of no interest.
 

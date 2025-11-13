@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/034t30j35 State Key Laboratory of Cognitive Science and Mental Health, Institute of Psychology, Chinese Academy of Sciences Beijing China
-2. https://ror.org/05qbk4x57 Department of Psychology, University of Chinese Academy of Sciences Beijing China
+1. State Key Laboratory of Cognitive Science and Mental Health, Institute of Psychology, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))
+2. Department of Psychology, University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
 
 † Corresponding author
 
@@ -37,17 +37,25 @@ Experiment 2 examined to what extent the AVI effect was specific to the multisen
 
 In all experiments, 17–23% of the trials were randomly selected as catch trials, in which the color of the walker changed one or two times throughout the trial, and there was no color change in other trials. Participants were required to detect the color change of visual stimuli (zero to two times during one trial) to maintain attention. Behavioral analysis on all trials showed that their performances for the task were generally high and equally well in all conditions of Experiment 1a (mean accuracy>98%; F (2, 46)=0.814, p=0.450, ƞp2=20.034), Experiment 1b (mean accuracy>98%; F (2, 46)=0.615, p=0.545, ƞp2=20.026), and Experiment 2 (mean accuracy>98%; F (3, 69)=0.493, p=0.688, ƞp2=20.021), indicating comparable attention state across conditions. The catch trials were excluded from the following EEG analysis.
 
-## Cortical tracking of rhythmic structures in audiovisual BM reveals AVI
+### Cortical tracking of rhythmic structures in audiovisual BM reveals AVI
 
-## Experiment 1a
+#### Experiment 1a
 
 In Experiment 1a, we examined the cortical tracking of rhythmic BM information under V, A, and AV conditions (Figure 1c). We were interested in two critical rhythmic structures in the walking motion sequence, i.e., the gait cycle and the step cycle (Figure 1a and b). During walking, each step of the left or right foot occurs alternatively to form a step cycle, and the antiphase oscillations of limbs during two steps characterize a gait cycle (Shen et al., 2023b). In Experiment 1a, the frequency of a full gait cycle is 1Hz, and the step-cycle frequency is 2Hz. The strength of the cortical tracking effect was quantified by the amplitude peaks emerging from the EEG spectra at these frequencies.
 
 As shown in the grand average amplitude spectra (Figure 2a), both the responses in three conditions showed clear peaks at step-cycle frequency (2Hz; V: t (23)=6.963, p<0.001; A: t (23)=6.073, p<0.001; AV: t (23)=7.054, p<0.001; FDR corrected). In contrast, at gait-cycle frequency (1Hz), only the response to AV stimulation showed significant peaks (V: t (23)=–2.072, p=0.975; A: t (23)=–0.054, p=0.521; AV: t (23)=4.059, p<0.001; FDR corrected). Besides, we also observed significant peaks at 4Hz in all three conditions (ps<0.001, FDR corrected), which showed a similar audiovisual integration mode as 2Hz (see more details in Appendix and Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/98701/elife-98701-fig2-v1.jpg)
+
+**Figure 2.:** (a) and (d) The amplitude spectra of electroencephalogram (EEG) responses in three conditions in Experiment 1a and Experiment 1b, respectively. The solid lines show the grand average amplitude over all electrodes and subjects. The shaded regions depict standard errors of the group mean. Asterisks indicate significant spectra peaks (one-sample t-test against zero; p<0.05, FDR corrected). (b) and (e) The normalized amplitude at gait-cycle frequency in the AV condition exceeded the arithmetical sum of those in V and A conditions (AV>A +V, paired t-test), (c) and (f) but the normalized amplitude at step-cycle frequency in the AV condition was comparable to the sum of V and A (AV = A +V, paired t-test). Colored dots represent individual data in each condition. Error bars represent±1 standard error of means (N = 24). *: p<0.05; **: p<0.01; ***: p<0.001; m.s.: 0.05<p<0.10; n.s.: p>0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98701/elife-98701-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Colored dots represent individual data in each condition. Error bars represent±1 standard error of means. N=48 (24 in Experiment 1a and 24 in Experiment 1b). Paired t-test. *: p<0.05; **: p<0.01; ***: p<0.001; n.s.: p>0.05.
+
 Furthermore, we directly compared the cortical tracking effects between different conditions via a two-tailed paired t-test. At both 1Hz (Figure 2b) and 2Hz (Figure 2c), the amplitude in the AV condition was greater than that in the V condition (1Hz: t (23)=4.664, p<0.001, Cohen’s d=0.952; 2Hz: t (23)=5.132, p<0.001, Cohen’s d=1.048) and the A condition (1Hz: t (23)=2.391, p=0.025, Cohen’s d=0.488; 2Hz: t (23)=3.808, p<0.001, Cohen’s d=0.777), respectively, suggesting multisensory gains. More importantly, at 1Hz, the amplitude in the AV condition was significantly larger than the algebraic sum of those in the A and V conditions (t (23)=3.028, p=0.006, Cohen’s d=0.618), indicating a super-additive audiovisual integration effect. While at 2Hz, the amplitude in the AV condition was comparable to the unisensory sum (t (23)=–0.623, p=0.539, Cohen’s d=–0.127), indicating additive audiovisual integration.
 
-## Experiment 1b
+#### Experiment 1b
 
 To further test whether such cortical tracking effect can apply to stimuli with a different speed, Experiment 1b altered the frequencies of the gait cycle and the corresponding step cycle to 0.83Hz and 1.67Hz while adopting the same paradigm as Experiment 1a. Consistent with Experiment 1a, the frequency-domain analysis revealed significant cortical tracking of the audiovisual stimuli at the new speeds. As shown in Figure 2d, both the responses to V, A, and AV stimuli showed clear peaks at step-cycle frequency (1.67Hz; V: t (23)=3.473, p=0.001; A: t (23)=9.194, p<0.001; AV: t (23)=8.756, p<0.001; FDR corrected) and its harmonics (3.33Hz, ps<0.001, FDR corrected). In contrast, at gait-cycle frequency (0.83Hz), only the response to AV stimuli showed significant peaks (V: t (23)=–1.125, p=0.846; A: t (23)=–2.449, p=0.989; AV: t (23)=3.052, p=0.003; FDR corrected).
 
@@ -55,15 +63,27 @@ At both 0.83Hz (Figure 2e) and 1.67Hz (Figure 2f), the amplitude in the AV condi
 
 In summary, results from Experiments 1a and 1b consistently showed that the cortical tracking of the audiovisual signals at different temporal scales exhibit distinct audiovisual integration modes, i.e., the super-additive effect at gait-cycle frequency and the additive effect at step-cycle frequency, indicating that the cortical tracking effects at the two temporal scales might be driven by functionally dissociable mechanisms.
 
-## Cortical tracking of higher-order rhythmic structure contributes to the AVI of BM
+### Cortical tracking of higher-order rhythmic structure contributes to the AVI of BM
 
 To further explore whether and how the cortical tracking of rhythmic structures contributes to the specialized audiovisual processing of BM, we adopted both upright and inverted BM stimuli in Experiment 2. The task and the frequencies of visual stimuli in Experiment 2 were same as Experiment 1a. Specifically, participants were required to perform the change detection task when perceiving upright and inverted visual BM sequences (1Hz for gait-cycle frequency and 2Hz for step-cycle frequency) accompanied by frequency congruent (1Hz) or incongruent (0.6Hz and 1.4Hz) footstep sounds (Figure 1c). The audiovisual congruency effect, characterized by stronger neural responses in the audiovisual congruent condition compared with the incongruent condition, can be taken as an index of AVI (Fleming et al., 2020; Maddox et al., 2015; Wuerger et al., 2012a). A stronger congruency effect in the upright condition relative to the inverted condition characterizes an AVI process specific to BM information.
 
 We contrasted the congruency effect between the upright and inverted conditions to search for clusters showing a significant difference, which equaled identifying an interaction effect, using a cluster-based permutation test over all electrodes (n=1000, alpha = 0.05; see Materials and methods). At 1Hz, the congruency effect in the upright condition was significantly stronger than that in the inverted condition in a cluster at the right hemisphere (Figure 3a, lower panel, p=0.029; C2, CPz, CP2, CP4, CP6, Pz, P2, P4, P6). Then, we averaged the amplitude of electrodes within the significant cluster and performed two-tailed paired t-tests to examine whether the congruency effect was significant in the upright and the inverted conditions, respectively. Results showed that (Figure 3b) audiovisual congruency enhanced the oscillatory amplitude only for upright BM (t (23)=4.632, p<0.001, Cohen’s d=0.945) but not when visual BM was inverted (t (23)=0.480, p=0.635, Cohen’s d=0.098). Together, these findings suggest that cortical tracking of the high-order gait cycles involves a domain-specific process exclusively engaged in the AVI of BM.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/98701/elife-98701-fig3-v1.jpg)
+
+**Figure 3.:** The lower panels in (a) and (d) depict the topographic maps of the BM-specific AVI effect, measured by the difference of congruency effects between the upright and inverted conditions at 1Hz and 2Hz, respectively. A significantly enhanced congruency effect in the upright condition relative to the inverted condition was observed at 1Hz (marked by black dots) but not at 2Hz (cluster-based permutation test; n = 1000, alpha = 0.05). The amplitude at these significant electrodes was averaged to quantify the congruency effect for the upright and inverted conditions at 1Hz (b) and 2Hz (e). Error bars represent±1 standard error of means. N = 24. Paired t-test. *: p<0.05; **: p<0.01; ***: p<0.001; n.s.: p>0.05. Individuals’ autistic traits correlated with the BM-specific AVI effect at 1Hz (c) but not at 2Hz (f). Shaded regions indicate the 95% confidence intervals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98701/elife-98701-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) The amplitude at the electrodes marked by solid black dots was averaged to quantify the cortical tracking effect at 2 Hz under the upright and inverted conditions, respectively. The congruency effect was not significantly different between these conditions at the group level. (b) The individual congruency effect (upright versus inverted) was not significantly correlated with the Autism-Spectrum Quotient (AQ) score. N = 24. Paired t-test. *: p < .05; **: p < .01; ***: p < .001; n.s.: p > .05.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98701/elife-98701-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Independent sample t-test.
+
 In contrast, at 2Hz, no cluster showed a significantly different congruency effect between the upright and inverted conditions (Figure 3d). We then conducted further analysis based on the electrodes yielded by 1Hz as marked in Figure 3a. Results showed that both upright and inverted stimuli induced a significant congruency effect at 2Hz (Figure 3e; upright: t (23)=3.096, p=0.005, Cohen’s d=0.632; inverted: t (23)=2.672, p=0.014, Cohen’s d=0.545). These findings suggest that neural tracking of the lower-order step cycles is associated with a domain-general AVI process mostly driven by temporal correspondence in physical stimuli.
 
-## BM-specific cortical tracking correlates with autistic traits
+### BM-specific cortical tracking correlates with autistic traits
 
 Furthermore, we examined the link between individuals’ autistic traits and the neural responses underpinning the AVI of BM, measured by the difference of congruency effect between the upright and the inverted BM conditions, using Pearson correlation analysis. After removing one outlier (whose neural response exceeded 3 SD from the group mean), we observed an evident negative correlation between individuals’ AQ scores and their neural responses at 1Hz (Figure 3c, r=–0.493, p=0.017) but not at 2Hz (Figure 3f, r=–0.158, p=0.460). The lack of significant results at 2Hz was not attributable to electrode selection bias based on the significant cluster at 1Hz, as similar results were observed when we performed analyses on clusters showing non-selective significant congruency effects at 2Hz (see the control analysis in Appendix and Figure 3—figure supplement 1). Besides, we split the participants based on their median AQ score and found that, compared with the high AQ group, the low AQ group showed a greater BM-specific cortical tracking effect at 1Hz but not at 2Hz. These findings provide further support to the possible linkage between social cognition and cortical tracking of BM as well as its dissociation at the two temporal scales (see more details in Appendix and Figure 3—figure supplement 2).
 
@@ -83,47 +103,47 @@ Last but not least, our study demonstrated that the selective cortical tracking 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Seventy-two participants (mean age± SD = 22.4±2.6years, 35females) took part in the study, 24 for each of Experiment 1a, Experiment 1b, and Experiment 2. All of them had normal or corrected-to-normal vision and reported no history of neurological, psychiatric, or hearing disorders. They were naïve to the purpose of the study and gave informed consent according to procedures and protocols approved by the institutional review board of the Institute of Psychology, Chinese Academy of Sciences (reference number for approval: H21041).
 
-## Stimuli
+### Stimuli
 
-## Visual stimuli
+#### Visual stimuli
 
 The visual stimuli (Figure 1a, left panel) consisted of 13 point-light dots attached to the head and major joints of a human walker (Vanrie and Verfaillie, 2004). The point-light walker was presented at the center of the screen without translational motion. It conveys rhythmic structures specified by recurrent forward motions of bilateral limbs (Figure 1a, right panel). Each step, regardless of left or right foot, occurs recurrently to form a step cycle. The antiphase oscillations of limbs during two steps characterize a gait cycle (Shen et al., 2023b). In Experiment 1a, a full gait cycle took 1s and was repeated six times to form a 6s walking sequence. That is, the gait-cycle frequency is 1Hz and the step-cycle frequency is 2Hz. In Experiment 1b, the gait-cycle frequency was 0.83Hz and the step-cycle frequency was 1.67Hz. The gait cycle was repeated six times to form a 7.2s walking sequence. The stimuli in Experiment 2 were the same as that in Experiment 1a. Meanwhile, the point-light BM was flipped vertically to generate inverted BM (Figure 1a, left panel), which preserves the temporal structure of the stimuli but distorts its distinctive kinematic features, such as movement that is compatible with the effect of gravity (Shen et al., 2023b; Troje and Westhoff, 2006; Wang et al., 2022).
 
-## Auditory stimuli
+#### Auditory stimuli
 
 Auditory stimuli were continuous footstep sounds (6s) with a sampling rate of 44,100Hz. As shown in Figure 1b, in Experiments 1a and 2, the gait-cycle frequency of congruent sounds was 1Hz, which consisted of two steps or two impulses generated by each foot striking the ground within one gait cycle. The incongruent sounds included a faster (1.4Hz) and a slower (0.60Hz) sound. Both congruent and incongruent sounds were generated by manipulating the temporal interval between two successive impulses based on the same auditory stimuli. In Experiment 1b, the gait-cycle frequency of sound was 0.83Hz.
 
-## Stimuli presentation
+#### Stimuli presentation
 
 The visual stimuli were rendered white against a gray background and displayed on a CRT (cathode ray tube) monitor. Participants sat 60cm from the computer screen (1280×1024 at 60Hz; high: 37.5cm; width: 30cm), with their heads held stationary on a chinrest. The auditory stimuli were presented binaurally over insert earphones. All stimuli were generated and presented using MATLAB together with the Psychophysics Toolbox (Brainard, 1997; Pelli, 1997).
 
-## Procedure and task
+### Procedure and task
 
-## Experiment 1a
+#### Experiment 1a
 
 The experiment was conducted in an acoustically dampened and electromagnetically shielded chamber. Participants completed the task under three conditions (visual: V; auditory: A; audiovisual: AV) with the same procedure (Figure 1c) except for the stimuli. In the V condition, each trial began with a white fixation cross (0.42°×0.42°) displayed at the center of a gray background for a random duration (0.8–1 s). Subsequently, a 6s point-light walker (3.05°×5.47°) walked toward the left or right at a constant walking cycle frequency (1Hz). To maintain observers’ attention, 17–23% of the trials were randomly selected as catch trials, in which the color of the walker changed (the RGB values changed from [255 255 255] to [207 207 207]) one or two times throughout the trial. Each change lasted 0.5s. Observers were required to report the number of changes (0, 1, or 2) via keypresses as accurately as possible after the point-light display was replaced by a red fixation. The next trial started 2–3s after the response. In the A condition, the 6 s stimuli were replaced by a visually static BM figure accompanied by continuous footstep sounds. The frequency of footstep sounds was congruent with the frequency of visual BM in the V condition. In the AV condition, the stimuli were temporally congruent visual BM sequences (as in the V condition) and footstep sounds (as in the A condition). Three conditions were conducted in separate blocks. V condition was performed in the middle of A and AV conditions. The order of A and AV conditions was counterbalanced across participants. Each participant completed 40 experimental trials without changes and 10–15 catch trials in each condition, resulting in a total of 150–165 trials. In each condition, participants completed a practice session with three trials to get familiar with the task before the formal EEG experiment.
 
-## Experiment 1b
+#### Experiment 1b
 
 The procedure of Experiment 1b was the same as that for Experiment 1a but with two exceptions. First, to test if the cortical tracking effect can apply to stimuli with a different speed, we altered the frequencies of gait and step cycles to 0.83Hz and 1.67Hz. Second, we presented the three conditions (V, A, and AV) in a completely random order to eliminate the influence of presentation order. To minimize the potential influence of condition switch, we increased the trial number in the practice session from 3 to 14 for each condition.
 
-## Experiment 2
+#### Experiment 2
 
 The procedure in Experiment 2 was similar to the AV condition in Experiment 1a, except that the visually displayed BM was accompanied by frequency congruent (1Hz) or incongruent (0.6 Hz or 1.4Hz) footstep sounds. Each participant completed a total of 76 experiment trials, consisting of 36 congruent-trials, 20 incongruent-trials with faster sounds (1.4Hz), and 20 incongruent-trials with slower sounds (0.6Hz). These trials were assigned to three blocks based on the frequency of the footstep sounds, with the order of the three frequencies balanced across participants. Besides, an inverted BM was used as a control to investigate whether there is a specialized mechanism tuned to the AVI of life motion signals. The order of upright and inverted conditions was balanced across participants. Meanwhile, we measured the participants’ autistic traits by using the Autism-Spectrum Quotient, or AQ questionnaire (Baron-Cohen et al., 2001). Higher AQ scores indicate a higher level of autistic traits.
 
-## EEG recording and analysis
+### EEG recording and analysis
 
 EEG was recorded at 1000Hz using a SynAmps2 NeuroScan amplifier System with 64 electrodes placed on the scalp according to the international 10–20 system. Horizontal and vertical eye movements were measured via four additional electrodes placed on the outer canthus of each eye and the inferior and superior areas of the left orbit. Impedances were kept below 5kΩ for all electrodes.
 
-## Preprocessing
+#### Preprocessing
 
 The catch trials were excluded from EEG analysis. All preprocessing and further analyses were performed using the FieldTrip toolbox (Oostenveld et al., 2011; http://fieldtriptoolbox.org) in the MATLAB environment. EEG recordings were pass-filtered between 0.1 Hz and 30Hz, and down-sampled to 100Hz. Then the continuous EEG data were cut into epochs ranging from –1s to 6 gait cycles (7.2s in Experiment 1b and 6s in other experiments) time-locked to the onset of the visual point-light stimuli. The epochs were visually inspected, and trials contaminated with excessive noise were excluded from the analysis. After the trial rejection, eye and cardiac artifacts were removed via independent component analysis based on the Runica algorithm (Bell and Sejnowski, 1995; Jung et al., 2000; Makeig, 2002). Then the cleaned data were re-referenced to the average mastoids (M1 and M2). To minimize the influence of stimulus-onset evoked activity on EEG spectral decomposition, the EEG recording before the onset of the stimulus and the first cycle (1s in Experiments 1a and 2; 1.2s in Experiment 1b) of each trial was excluded (Nozaradan et al., 2012a). After that, the EEG epochs were averaged across trials for each participant and condition.
 
-## Frequency-domain analysis and statistics
+#### Frequency-domain analysis and statistics
 
 A fast Fourier transform (FFT) with zero padding (1200) was used to convert the averaged EEG signals from the temporal domain to the spectral domain, resulting in a frequency resolution of 0.083Hz, i.e., 1/12Hz, which is sufficient for observing neural responses around the frequency of the rhythmic BM structures in all experiments. When performing FFT, a Hanning window was adopted to minimize spectral leakage. Then, to remove the 1/f trend of the response amplitude spectrum and identify spectral peaks, the response amplitude at each frequency was normalized by subtracting the average amplitude measured at the neighboring frequency bins (two bins on each side) (Nozaradan et al., 2012a). We calculated the normalized amplitude separately for each electrode (except for electrooculogram electrodes, CB1, and CB2), participant, and condition.
 

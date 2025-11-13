@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04jr1s763 Department of Neuroscience, Psychology, Pharmacology and Child Health, University of Florence Florence Italy
-2. https://ror.org/0384j8v12 School of Psychology, University of Sydney, Camperdown NSW Sydney Australia
-3. https://ror.org/0240rwx68 Institute of Neuroscience, CNR Pisa Italy
+1. Department of Neuroscience, Psychology, Pharmacology and Child Health, University of Florence Florence Italy ([ROR:04jr1s763](https://ror.org/04jr1s763))
+2. School of Psychology, University of Sydney, Camperdown NSW Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+3. Institute of Neuroscience, CNR Pisa Italy ([ROR:0240rwx68](https://ror.org/0240rwx68))
 
 † Corresponding author
 
@@ -40,29 +40,172 @@ Here, we applied the interindividual covariance technique to study sensorimotor 
 
 ## Methods
 
-## Participants
+### Participants
 
 An a priori power analysis for a correlation test (r) with a medium effect size of r2=0.5, and α=0.05 (one tailed, as positive correlations are expected) and power of 0.9 indicated a required sample size of 28 participants. Thirty participants took part in the fast-tapping condition (age: average = 25.75, SD = 4.5, min = 18, max = 39) and 29 in the slow tapping condition (age: average = 25.43, SD = 4.04, min = 18, max = 39). Of these, 18 completed both conditions. The experimental procedures were approved by the local ethics committee (Commissione per l’Etica della Ricerca, University of Florence, July 7, 2020, n. 111). The research was in accordance with the Declaration of Helsinki and informed consent were obtained from all participants prior to the experiment.
 
-## Stimuli and procedures
+### Stimuli and procedures
 
 Stimuli were generated and presented with PsychToolbox routines for Matlab (ver. R2021a). Stimuli were white visual digit numbers (8, 10, 11, 13, 14, 16, 19, 21, 24, 28, 32) presented in the centre of a grey screen (iMac Retina display 27–inch) for 1 s and subtending 5° of visual angle. Soon after the disappearance of the target digit, participants were asked to repeatedly press a key as many times the target. In separate sessions, participants were asked to tap as fast as they could or at a comfortable rate. Participants were all right-handed and performed the tapping’s with their right hand on a spacebar positioned about 30 cm to the right of the monitor, to guarantee a comfortable arm position. Following previous studies (Cordes et al., 2001; Whalen et al., 1999), serial counting was prevented by vocal suppression, repeating aloud the syllable 'ba' (as fast as possible). For each participant, each target number was presented from 25 to 30 times (for a total of 17,183 trials: 8259 and 8924 trials in the fast and slow tapping conditions), in separate blocks (usually 5) interspaced by pauses of a few minutes. For those participants who completed both the fast and slow tapping condition, the two were measured on different days (on average within 3–4 days). Each condition took about 1.5 hr of testing (3 hr for those who completed both). Before the experiment, participants were familiarized with the task performing one single block of trials with feedback (a digit displaying the number of tappings performed). In this phase, 11 trials were presented, one for each tested number (randomly selected trial by trial). No feedback was provided during the rest of the experiment.
 
-## Control duration task
+### Control duration task
 
 A randomly selected sub-sample of nine participants from the slow tapping condition was engaged in a duration control task. On each trial, a tone (500 Hz, ramped on and off with 20ms raised-cosine ramps) was played though headphones, and participants asked to reproduce its duration by repeatedly tapping on a key while pronouncing the syllable 'ba' as fast as possible (to suppress counting). The between average tapping frequency rate in the number task was 3.1 Hz (SD 1.1 Hz) and 3.5 Hz (SD 1.3 Hz) in the duration task (t(8)=1.03, p=0.33). Target durations were customised for each participant to perfectly match those previously produced in the number task: for each target number tested in the number matching task, we extracted the average response duration (across trials) and these eleven durations were re-presented as duration targets (Table 1). Before the experiment, participants were familiarized with the task by performing one single block of trials with feedback (2 numbers, one displaying the target duration and the second displaying the reproduced duration, in seconds). In this phase, 11 trials were presented, one for each tested duration (randomly selected trial by trial). No feedbacks were provided during the rest of the experiment. As for the number task, for each participant, each duration was presented from 25 to 30 times (for a total of 2455 trials), in separate blocks.
 
-## Data analyses
+**Table 1.**
+ Responses duration (in seconds) tested in in the control duration task for each one of the nine participants (S1-S9).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>S1</th>
+      <th>S2</th>
+      <th>S3</th>
+      <th>S4</th>
+      <th>S5</th>
+      <th>S6</th>
+      <th>S7</th>
+      <th>S8</th>
+      <th>S9</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>4.1</td>
+      <td>7.3</td>
+      <td>3.5</td>
+      <td>2.2</td>
+      <td>5</td>
+      <td>2.4</td>
+      <td>2.6</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>6.3</td>
+      <td>9.2</td>
+      <td>4.9</td>
+      <td>3.8</td>
+      <td>6.3</td>
+      <td>3.3</td>
+      <td>2.8</td>
+      <td>2.9</td>
+    </tr>
+    <tr>
+      <td>4.4</td>
+      <td>7</td>
+      <td>10.5</td>
+      <td>5.4</td>
+      <td>4.2</td>
+      <td>6.5</td>
+      <td>3.5</td>
+      <td>3</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <td>5.1</td>
+      <td>7.9</td>
+      <td>11.3</td>
+      <td>6.2</td>
+      <td>5</td>
+      <td>8.3</td>
+      <td>4.2</td>
+      <td>3.8</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>5.7</td>
+      <td>9.3</td>
+      <td>12.5</td>
+      <td>7</td>
+      <td>5.4</td>
+      <td>8.6</td>
+      <td>4.3</td>
+      <td>4</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td>6.8</td>
+      <td>10</td>
+      <td>15.3</td>
+      <td>8.2</td>
+      <td>6</td>
+      <td>9.5</td>
+      <td>5.4</td>
+      <td>4.4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>7.8</td>
+      <td>11.7</td>
+      <td>17</td>
+      <td>9.9</td>
+      <td>6.9</td>
+      <td>11.5</td>
+      <td>6.4</td>
+      <td>5.3</td>
+      <td>5.8</td>
+    </tr>
+    <tr>
+      <td>8.8</td>
+      <td>13.7</td>
+      <td>17.4</td>
+      <td>10.6</td>
+      <td>7</td>
+      <td>13.2</td>
+      <td>7.4</td>
+      <td>5.7</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>10.2</td>
+      <td>15.8</td>
+      <td>21</td>
+      <td>12.2</td>
+      <td>8.6</td>
+      <td>15.3</td>
+      <td>8.1</td>
+      <td>6</td>
+      <td>7.4</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>17.8</td>
+      <td>23.3</td>
+      <td>13.3</td>
+      <td>9.2</td>
+      <td>17.7</td>
+      <td>9.6</td>
+      <td>7.2</td>
+      <td>8.8</td>
+    </tr>
+    <tr>
+      <td>12.9</td>
+      <td>21.7</td>
+      <td>29.2</td>
+      <td>16</td>
+      <td>10.8</td>
+      <td>20.6</td>
+      <td>11.1</td>
+      <td>8.2</td>
+      <td>9.4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data analyses
 
 All the analyses were performed with Matlab software (ver. R2021a) with the exception of the repeated measures ANOVA comparing Weber fractions for the number and duration task and the t-test comparing frequency rates for the number and duration task (performed with JASP software, ver. 0.16.3).
 
-## Data processing
+### Data processing
 
 As a first step, we detected and eliminated outlier responses. For each experimental condition, and separately for each participant and stimulus intensity, responses were converted into z−scores and eliminated from the analyses if falling above or below 3 STD. In the number matching task, this procedure resulted in the elimination of 0.5% of the trials in the fast-tapping condition and 0.6% in the slow tapping condition. In the control duration task, the same procedure led to the elimination of 0.4% trials in the duration matching condition and 0.6% in the number matching condition.
 
 As a second step, we measured responses accuracy and precision, on non-standardized data. For each task, and separately for each participant and stimulus intensity (numbers or durations), accuracy was indexed as the mean reproduction value across trials and precision as Weber fraction, computed as responses standard deviation divided by the average reproduction (a standard index of normalized precision).
 
-## Correlation matrices and numerical distance
+### Correlation matrices and numerical distance
 
 As a third step, we computed Weber fraction correlation matrices. We first measured the precision in translating digit numbers into action sequences, for different target numbers (8, 10, 11, 13, 14, 16, 19, 21, 24, 28, 32), for all N participants. For each target number, and independently for each participant, we calculated the normalized reproduction precision (Weber Fraction). The dataset comprised a matrix where each column represents a participant, each row a target number, and each cell the corresponding Weber Fraction. This dataset was then analysed with a pairwise correlation, across participants. For example, the WFs provided by the N participants when tested at the target number ‘8’ were correlated with those obtained with the target number 10, 11, 13...32. If channels exist, the correlation between ‘8 and 10’ (low numerical distance) should be higher compared to that between ‘8 with 32’ (higher numerical distance). We therefore analysed the correlation strength as a function of numerical distance. This last analysis (Figure 2, panels B, D) was performed on binned data. Bins were created to have an approximately equal number of observations for each bin (13, 13, 14, 15). For each target, the numerical distance was calculated as the base ten logarithm ratio between itself and the remaining target numbers. The correlation coefficients were then averaged within the following numerical distance bins (log10 ratios): <0.08; 0.08–0.14; 0.14–0.21; 0.21–0.29, 0.29–0.39, >0.39.
 
@@ -76,17 +219,17 @@ As a sanity check, this analysis was also performed on randomized correlation ma
 
 **Figure 3.:** (A) Correlation matrices of Wfs for all pairs of target numbers for the slow-tapping condition. (B) Correlation strength as a function of numerical ratio, for the slow-tapping condition. Small black filled symbols show bootstrapped average correlation strengths of randomized Wfs matrices. Dashed lines are the best linear fit on unbinned data and error bars are ±1 s.e.m. Symbols represent means (N30 and N29 for fast and slow tapping respectively), best linear fit slopes were: –0.58±0.11 and –0.57±0.07 for fast and slow respectively, both different from zero p<0.001. C&D. Like A and B, for the slow-tapping condition.
 
-## Hierarchical clustering and principal component analysis
+### Hierarchical clustering and principal component analysis
 
 The hierarchical clustering was performed on normalised (z-scores) Weber fractions using the linkage method. The distances were calculated with the Euclidean metric and the ‘ward’ algorithm was used to compute the distance between clusters. The number of clusters was determined by the inconsistency index (computed by the build in inconsistent function in Matlab 2021a) and results reported as a dendrogram. As for the PCA, to check the validity of this analysis, we tested it with randomized correlation matrices, with a bootstrap approach. On each of 10,000 iterations, separately for each participant, the Weber fractions were randomized between numerosities, and a new clustering was computed. Then at each iteration, we looked at the structure of the clusters, counting the time on which the clusters (separately for the fast and slow tapping conditions) contained contiguous numbers (as in Figure 4A, B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/92169/elife-92169-fig4-v1.jpg)
 
-**Figure 4.:** A) and slow (C) tapping conditions.Panels B and D show the strength of the first two principal components from a PCA on the Wfs measured in the fast (B) and slow (D) tapping conditions (N30 and N29 respectively). The strength of these components is shown as a function of the different numerical target levels. The smooth curves are logGaussian fits to the component strengths.
+**Figure 4.:** Panels B and D show the strength of the first two principal components from a PCA on the Wfs measured in the fast (B) and slow (D) tapping conditions (N30 and N29 respectively). The strength of these components is shown as a function of the different numerical target levels. The smooth curves are logGaussian fits to the component strengths.
 
 The principal component analysis was performed on normalised (z-scores) and centred Weber fractions and factors rotated with the non-orthogonal promax method (but orthogonal varimax provides similar results). The number of components was determined as those exceeding an eigenvalue of 1 and from visual inspection of the scree plots.
 
-## Modeling
+### Modeling
 
 As a preliminary analysis, we modeled the behavior of a system with 1, 2 or 4 channels, assuming that each channel would process stimuli with a gaussian tuning (like the illustration of Figure 1). The one-channel model had infinitely broad tuning, and the tuning of the two- and four-channel models was allowed to vary between 0.5 and 2oc taves. The peak of the tuning was equally spaced in log coordinates to be 8 and 32 for the two-channel model and 8, 12.7, 20.1 and 32 for the four-channel model. The behavior for numerosities handled by more than one channel was determined by a weighted average of the various channels. The average WF of the channels taken from the actual dataset (i.e. 0.176 for the slow and fast tapping); however, the specific values for each observers could vary following a gaussian distribution whose standard deviation was varied to achieve best fit. We then calculated predicted correlations simulating 25 repetitions for each numerosity and observer. Without any noise correlations between the same channel would approximate 1. Hence to achieve reasonable levels of correlation, we assumed that the actual measured WF was corrupted by some noise which we manipulated to mimic the average correlation between observed in the actual experiment. Correlation matrices were obtained by simulating 1000 experiments with cohorts of 29–30 observers to yield the best fit (R2).
 

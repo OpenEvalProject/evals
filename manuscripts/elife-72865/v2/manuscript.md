@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01swzsf04 Department of Biochemistry and NCCR Chemical Biology, University of Geneva Geneva Switzerland
+1. Department of Biochemistry and NCCR Chemical Biology, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ In this work, we show that Ede1 has a propensity to form cellular condensates. W
 
 ## Results
 
-## Ede1 can form dynamic protein condensates
+### Ede1 can form dynamic protein condensates
 
 In normal yeast cells, fluorescently tagged Ede1 localizes to endocytic sites at the plasma membrane (Kukulski et al., 2012). However, we discovered previously that under certain experimental conditions Ede1 can also assemble into large condensates (Boeke et al., 2014). These condensates were seen in cells that either overexpressed Ede1, or expressed Ede1 at normal levels, but lacked three early endocytic adaptors. Although these condensates are abnormal structures that have not been observed in wild-type cells, we reasoned that studying them in more detail might provide insights into the mechanism by which Ede1 promotes the assembly of the early endocytic proteins.
 
@@ -39,15 +39,25 @@ To visualize the condensates, we expressed Ede1 fused to enhanced green fluoresc
 
 We observed that part of the cellular Ede1-EGFP in the mutant strains localized into condensates that were much brighter than the normal endocytic sites (Figure 1A). The condensates in the overexpression strain were larger and brighter than those in the 3×ΔEA cells (Figure 1B). The condensates usually associated with the plasma membrane, but were also observed away from it (Figure 1A). In contrast, normal endocytic sites are always associated with the plasma membrane. The condensates in the Ede1 overexpression strain were often large enough that their shape was resolvable (Figure 1B). They appeared circular in surface view, and as dome-like structures limited by the plasma membrane in the side view. The Ede1 condensates were remarkably long lived and we have observed individual condensates for up to 1 hour (Figure 1—video 1). This stands in contrast with normal endocytic sites, where Ede1-EGFP typically persists for 1-2 minutes (Stimpson et al., 2009). Despite their stability, some of the condensates appeared to undergo dynamic fission and fusion events, suggesting that they are not solid aggregates (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative images of yeast cells expressing Ede1-EGFP in wild-type (wt) and 3×ΔEA genetic backgrounds, or overexpressing EGFP-Ede1 under the control of the ADH1 promoter. Mutant cell micrographs are shown using the same display range as the wt (top) or their full display range (bottom). Two cells are shown for 3×ΔEA background to display the membrane-associated and cytoplasmic localizations of Ede1 condensates. Scale bars: 2 μm. (B) Representative images of Ede1-EGFP at endocytic sites in wt background, Ede1-EGFP condensates in 3×ΔEA cells, and EGFP-Ede1 overexpression-induced condensates (OE). OE condensates are shown in two different orientations. Each frame is 1.5 μm × 1.5 μm; dotted white line represents the approximate position of the plasma membrane. (C) Two time series of Ede1-EGFP condensates undergoing apparent fusion (top) and fission (bottom) events. Scale bar: 1 μm. (D) Representative images of diploid cells homozygous for the 3×ΔEA background, each expressing Ede1-EGFP and differing in the second Ede1 locus: EDE1-EGFP, EDE1, or ede1Δ. Scale bars: 2 μm. (E) The fraction of cells containing condensates in each strain from panel D. Bars and whiskers show mean ± SD of three independent experiments. A range of 40–70 cells were analyzed per data point.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig1-figsupp1-v2.jpg)
+
 All three adaptors absent from 3×ΔEA cells interact with Ede1, as well as membrane lipids and protein cargo. As Ede1 does not have known membrane-binding activity, it is likely that the cytosolic pool of Ede1 is increased both in the overexpression and the 3×ΔEA backgrounds, and the excess protein assembles into the condensates. To test whether the formation of condensates in 3×ΔEA background depends on Ede1 concentration, we generated diploid cells homozygous for the three adaptor deletions. We expressed Ede1-EGFP in these cells either from both EDE1 alleles (EDE1-EGFP/EDE1-EGFP), or from one allele in combination with untagged EDE1 (EDE1-EGFP/EDE1) or a deletion of EDE1 (EDE1-EGFP/ede1Δ). The condensates formed in both strains expressing two alleles of EDE1, but not in the strain where only one EDE1 allele was present (Figure 1D). This result suggests that the condensate assembly depends on Ede1 concentration.
 
 The EGFP tag used in these experiments has a weak tendency to dimerize and can induce protein clustering in some in vivo contexts (Costantini et al., 2012). We expressed Ede1 tagged with monomeric fluorescent proteins mNeonGreen, msGFP2, and mCherry in 3×ΔEA cells and observed the same phenotype as with EGFP-tagged Ede1 (Figure 1—figure supplement 1). The observed phenotype is therefore unlikely to have been caused by the choice of the fluorescent tag.
 
 It must also be noted that there is a large difference in brightness between genuine endocytic sites and condensates in mutant cells. Therefore, we chose to saturate the display of those images which show both classes of objects simultaneously, in order for the cells and endocytic sites to remain visible. This difference is demonstrated in panel A of Figure 1.
 
-## Ede1 condensates exhibit liquid-like properties
+### Ede1 condensates exhibit liquid-like properties
 
 Because of their spherical shapes, concentration dependence, and dynamic behaviors, we hypothesized that the Ede1 condensates might be phase-separated liquid droplets. To test this idea, we first performed fluorescence recovery after photobleaching (FRAP) experiments on Ede1-EGFP condensates in the 3×ΔEA background. After photobleaching, the condensates rapidly recovered most of their fluorescence (Figure 2A). The recovery half-time of a single-exponential FRAP model fitted to an average of 36 events was 22 s, and the mobile fraction was 63%.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig2-v2.jpg)
+
+**Figure 2.:** (A, B) Fluorescence recovery after photobleaching (FRAP) of Ede1-EGFP condensates in 3×ΔEA cells (A) and endocytic sites in normal cells (B). Plots show mean fluorescence recovery ± SD; n = 36 across four independent experiments (panel A) and n = 14 across three independent experiments (panel B). Representative time series are shown below each plot. Each frame is 1 μm × 1 μm. (C) Time series of a partial bleaching of a condensate in a cell overexpressing EGFP-Ede1. A perceptually uniform color lookup table has been applied to highlight the changes in intensity. Each frame is 1.5 μm × 1.5 μm.(D) Average fluorescence recovery (n = 14) after partial bleaching of condensates in cells overexpressing EGFP-Ede1, as in panel (C). (E) Representative cells after 5-min treatment with indicated concentrations of 1,6-hexanediol. Maximum Z-projections. (F) Ede1-EGFP was imaged in 3×ΔEA cells at different temperatures. Cells were grown and imaged at 24°C. The temperature was raised to 37 and 42°C and returned to 24°C for the indicated amounts of time. Maximum Z-projections. All scale bars: 2 μm.
 
 We then examined the recovery of Ede1 in normal endocytic sites, photobleaching them during total internal reflection fluorescence (TIRF) imaging. We found that Ede1-EGFP also turns over fast at endocytic sites (half-time of 7.8 s and mobile fraction of 91%). The turnover at the endocytic sites was faster and the mobile fraction higher than in the condensates.
 
@@ -61,13 +71,25 @@ Taken together our results show that Ede1 both in the condensates and at the end
 
 Next, we sought to determine the concentration of Ede1 in the 3×ΔEA and Ede1 overexpression cells relative to the wild-type cells. We used spinning-disk confocal microscopy to limit the influence of out-of-focus condensates on the quantification of cytosolic intensity. We quantified the mean pixel intensity in entire cell volumes and in small cytosolic regions of cell cross-sections (Figure 3A). The total cellular intensity was on average 122 and 321% of the wild-type in 3×ΔEA and overexpression cells, respectively. The cytosolic intensity was nevertheless uniform across all three strains and we could detect no statistically significant differences (p=0.45 in F-test).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig3-v2.jpg)
+
+**Figure 3.:** (A) Fluorescence intensity was measured in wild-type (wt) and 3×ΔEA cells expressing Ede1-EGFP, or cells overexpressing (oe) EGFP-Ede1 from the ADH1 promoter. Gray points represent mean pixel intensities of entire cell volumes (Cellular), or small regions manually selected from cell cross-sections (Cytosolic). Large points: mean values from independent replicates; central line and whiskers: mean ± SD of replicate means. Pairwise comparisons based on a linear mixed model (n.s., not significant; ***, p<0.001). (B) Two yeast strains were imaged for 8 hr after change of carbon source from glucose to galactose (see Materials and methods). Cells express EGFP-Ede1 under the control of GALS promoter (green channel only), or Ede1-EGFP and Sla1-mCherry expressed from the endogenous loci (green and magenta, respectively). Scale bars: 2 μm. (C) Fluorescence intensity during the expression induction was measured in regions representing entire cells (2 and 4 in panel B) and their cytoplasm (1 and 3). Mean intensity is shown for endogenously expressed (wt) or overexpressed (oe) Ede1 after background subtraction, ±2 × SEM (n = 40 cells for each strain).
+
 We also induced overexpression of EGFP-tagged Ede1 using the weakened galactokinase promoter GALS (Mumberg et al., 1994). We followed the changes in fluorescence intensity over 8 hr after switching carbon source from glucose to galactose (Figure 3B and C; Figure 3—video 1). The cells, in which overexpression was induced after glucose repression, initially showed no Ede1 sites at the membrane. After several hours, Ede1 appeared as transient endocytic sites, and later formed large and stable condensates. The intensity of the cytosolic regions in the overexpression cells never surpassed the cytosolic intensity of wild-type cells, even as the total intensity of the mutant reached approximately 150% of wild-type intensity by the end of the experiment.
 
 These experiments suggest that the cytosolic concentration of Ede1 is buffered by the formation of the condensates. Moreover, the cytoplasmic fluorescence intensity in wild-type cells is already at the limit observed during overexpression. This signifies that the total concentration in wild-type cells is above the critical concentration required for phase separation.
 
-## Ede1 condensates recruit other endocytic proteins
+### Ede1 condensates recruit other endocytic proteins
 
 We then imaged double-tagged strains to test whether other endocytic proteins colocalize with Ede1 condensates in the 3×ΔEA background (Figure 4A and B). We found that the condensates contain multiple early (Syp1, Ent1, Sla2) and late (End3, Pan1, Sla1) coat proteins, as well as the actin nucleation-promoting factor Las17, known to physically interact with the End3/Pan1/Sla1 complex (Sun et al., 2015; Feliciano and Di Pietro, 2012).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig4-v2.jpg)
+
+**Figure 4.:** (A) Images of representative cells expressing Ede1-EGFP and indicated endocytic proteins tagged with mCherry in 3×ΔEA background. (B) Fraction of Ede1-EGFP condensates that colocalized with mCherry puncta in each strain from panel A. Bars and whiskers show mean ± SD of three independent experiments. A range of 36–98 cells were analyzed per data point. (C) Montage from timelapse imaging of Ede1-EGFP and Abp1-mCherry during apparent fission of an Ede1 condensate.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Representative cells expressing Ede1-EGFP in the 3×ΔEA background, or overexpressing EGFP-Ede1 under the control of the ADH1 promoter after a 60-min staining with FM4-64. Scale bar 2 μm.
 
 Three proteins—Myo5, Abp1, and Rvs167—whose arrival overlaps with actin polymerization at the endocytic sites (Sun et al., 2006) localized to a minority of the condensates (42, 20, and 10%, respectively). We further examined the interaction of condensates and Abp1 using timelapse imaging and found that Abp1-mCherry patches assembled on the condensates transiently (Figure 4C), which explains the partial colocalization. Abp1-mCherry was also present whenever the apparent fission of condensates occurred (Figure 4C, Figure 4—video 1). The appearance of Abp1 during condensate fission suggests that fission could be caused by a force exerted by actin filaments. Some of the proteins we see in the condensates, such as Las17, could potentially trigger actin polymerization.
 
@@ -75,9 +97,17 @@ Costaining with FM4-64 showed that endocytic protein condensates do not contain 
 
 Overall, the colocalization experiments showed that the endocytic condensates are complex, and that the proteins contained within them are at least partially functional as they can recruit their interaction partners and are associated with cycles of assembly and disassembly of actin.
 
-## Ede1 central region is necessary and sufficient for phase separation
+### Ede1 central region is necessary and sufficient for phase separation
 
 Ede1 is a 1381 amino acid long, multidomain protein (Figure 5A). Its N-terminal region contains three Eps15-homology (EH) domains that interact with asparagine-proline-phenylalanine motifs found on endocytic adaptors such as Ent1/2, Yap1801/2, and Sla2 (Maldonado-Báez et al., 2008). Such repeats of domains interacting with linear motifs are known to promote liquid-liquid phase separation (Li and Elledge, 2012; Banjade and Rosen, 2014). The EH domains are followed by a proline-rich region and a coiled-coil domain (Reider et al., 2009; Lu and Drubin, 2017). The C-terminal half of Ede1 contains a Syp1-interacting region (Reider et al., 2009) and a ubiquitin-associated (UBA) domain.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig5-v2.jpg)
+
+**Figure 5.:** (A) The domain structure of Ede1 and prediction of disordered and prion-like regions. EH, Eps15-homology domain; UBA, ubiquitin-associated domain. Domains are drawn to scale according to UniProt entry P34216, and numbers above mark domain boundaries used in our constructs. The top plot represents IUPred2a disorder prediction score, with the shaded areas predicted to be disordered by MobiDB-lite consensus method. Prion-like domain (PLD) prediction score was calculated using the PLAAC software. (B) Representative cells expressing full-length (FL) Ede1 and its truncation mutants in wild-type and 3×ΔEA backgrounds. All constructs are C-terminally tagged with EGFP. Maximum intensity projections of 3D volumes, scale bars: 2 μm. (C) The fraction of cells containing condensates in each strain from panel B. Bars and whiskers show mean ± SD of three independent experiments. A range of 37–78 cells were analyzed per data point.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Representative western blot of EGFP-tagged Ede1 truncation constructs expressed in wild-type (wt) and 3×ΔEA backgrounds. (b) Band intensity relative to full-length (FL) Ede1-EGFP in wt cells was calculated for three independent experiments. Hog1 was used as a loading control. Bars and whiskers show mean ± SD.
 
 We noticed that the proline-rich region contains a high number of asparagine and glutamine residues, a hallmark of prion-like domains (PLDs) which are proposed to regulate phase separation of many proteins (Alberti et al., 2009; Franzmann et al., 2018; Franzmann and Alberti, 2019). We used PLAAC (Lancaster et al., 2014), a web-based version of the algorithm used by Alberti et al., 2009 to detect prion candidates in yeast proteome, to analyze the Ede1 sequence (Figure 5A). The algorithm detected a 99-amino acid-long prion-like sequence between amino acids 374 and 472, suggesting that this region could also be involved in the phase separation of endocytic proteins. We also consulted IUPred2a (Mészáros et al., 2018) and MobiDB-lite (Necci et al., 2017) algorithms to predict intrinsically disordered regions (IDRs) in Ede1. About 36% of Ede1 is predicted to be disordered; the unstructured regions are contained within the proline- and glutamine-rich region, and between the coiled-coil and the UBA domain.
 
@@ -87,9 +117,17 @@ For the wild-type background, our results are largely consistent with previously
 
 We analyzed the concentration of truncated variants in both backgrounds by quantitative western blotting (Figure 5—figure supplement 1). The truncated Ede1 variants were expressed at higher levels than the full-length protein. This observation suggests that the loss of condensates in strains with truncated Ede1 is indeed caused by missing motifs rather than lowered concentration. We also confirmed that the concentration of full-length Ede1 increased in the 3×ΔEA background. It is unclear whether this represents a compensatory genetic mechanism, or if condensation is initially caused by reduced plasma membrane recruitment and subsequently interferes with protein degradation.
 
-## The functional significance of the Ede1 central region
+### The functional significance of the Ede1 central region
 
 To test the role of the central region of Ede1 in endocytosis, we created EGFP-tagged Ede1 mutants with internal deletions of amino acids 366–590 (Ede1ΔPQ), 591–900 (Ede1ΔCC), and 366–900 (Ede1ΔPQCC). Ede1ΔPQCC failed to localize to endocytic sites, whereas the two single-domain Ede1ΔPQ and Ede1ΔCC deletion mutants were still punctate, but more diffuse compared to full-length Ede1-EGFP (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative cells expressing full-length Ede1 and three internal Ede1 deletion mutants: Ede1ΔPQ (Δ366-590), Ede1ΔCC (Δ591-900), and Ede1ΔPQCC (Δ366-900) tagged with EGFP. (B) Representative cells expressing Sla1-EGFP and indicated Ede1 mutants. (C, D) Sla1 patch density and lifetime in Ede1 mutants. Large points represent mean measurements from independently repeated datasets. Central line and whiskers denote the mean ± SD calculated from dataset averages. Gray points show individual observations. Letters denote pairwise comparisons based on Tukey-Kramer test; groups which do not share any letters are significantly different at α = 0.05. Scale bars: 2 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Ede1ΔPQCC-mCherry-FKBP was recruited to Syp1-FRB or Sla2-FRB by addition of 10 μg ml−1 of rapamycin to the growth medium. (A) Ede1ΔPQCC-mCherry-FKBP signal in cells coexpressing Syp1-FRB and Sla1-EGFP. (B) Density of Sla1-EGFP patches in cells expressing wild-type Ede1, Ede1ΔPQCC-mCherry-FKBP, and Syp1-FRB cultured with or without rapamycin, or no Ede1. Large points: mean measurements from independently repeated datasets. Central line and whiskers: mean ± SD calculated from dataset averages. Gray points: individual cells from all datasets. Statistical significance of pairwise comparisons was determined by Tukey-Kramer test; n.s., not significant; ***, p<0.001. (C) Ede1ΔPQCC-mCherry-FKBP signal in cells coexpressing Sla2-FRB and Sla1-EGFP. (D) Density of Sla1-EGFP patches in the same cells cultured with or without rapamycin. P-value from Welch’s t-test. Scale bars: 2 μm.
 
 Next, we tested if these Ede1 mutants had endocytic defects by using Sla1 as a reporter of the late phase of endocytosis. We tagged Sla1 with EGFP in Ede1 mutant strains (Figure 6B) and quantified the density and lifetimes of endocytic sites (Figure 6C and D). In ede1Δ and ede1ΔPQCC cells, the mean number of endocytic events marked by Sla1-EGFP per μm2 was reduced by 46 and 43% of the wild-type, respectively. Consistent with their effects on Ede1 recruitment, the ede1ΔPQ and ede1ΔCC mutations caused intermediate reduction in patch density (by 24 and 26%, respectively). All differences from the wild type were statistically significant (p<0.001 in Tukey-Kramer test). The difference between ede1Δ and ede1ΔPQCC was not statistically significant (p=0.86).
 
@@ -107,9 +145,17 @@ Different proteins were affected by the Ede1 central deletions in different ways
 
 **Figure 7.:** Maximum-intensity projections of 3D volumes are shown for representative cells with different early proteins tagged with EGFP. The strains express Ede1 species indicated at the top. Scale bars: 2 μm.
 
-## Ede1 central region can be replaced by other prion-like domains
+### Ede1 central region can be replaced by other prion-like domains
 
 We wanted to test whether the loss of function in ede1ΔPQCC cells in respect to Sla1 density could be rescued by heterologous protein sequences, such as IDRs, globular domains, or coiled-coils (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig8-v2.jpg)
+
+**Figure 8.:** (A) Domain structure of the Ede1 central region replacement constructs. Amino acids 366–900 of Ede1 were replaced with prion-like intrinsically disordered region (IDR) sequences, monomeric (mCherry) or dimeric (dTomato) fluorescent proteins, and dimeric (Khc) or tetrameric (Eg5) coiled-coils. All mutants were expressed from the Ede1 locus under the control of the native promoter. (B) Representative cells expressing indicated Ede1 mutants tagged C-terminally with msGFP2. (C) Quantification of Sla1-EGFP patch density in strains expressing indicated Ede1 mutants. Large points represent mean measurements from independently repeated datasets. Central line and whiskers denote the mean ± SD calculated from dataset averages. Gray points show individual cells from all datasets. At α = 0.05, all mutants are significantly different from wild type, and groups marked with an asterisk (*) are significantly different from Ede1ΔPQCC (Tukey-Kramer test; a complete table of pairwise comparisons and effect sizes can be found in Figure 8—source data 1). All scale bars: 2 μm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Representative cells expressing Ede1FUS and Ede1Whi3 tagged C-terminally with msGFP2.
 
 First, we replaced amino acids 366–900 of Ede1 with different IDRs. We considered three factors for choosing the replacement IDRs: known phase separation activity, Q/N content, and similarity to the Ede1 IDR sequence. We chose the region of Sup35 spanning the N and M regions based on its known phase separation activity in yeast cells (Franzmann et al., 2018). We chose the IDR of Snf5 because of its high score in the prion-like screen by Alberti et al., 2009, reflecting a Gln-rich amino acid sequence, and the IDR of Whi3, because the method developed by Zarin et al., 2019 indicated it as one of the sequences most similar to the PQ-rich region of Ede1. Finally, we also included the low-complexity domain of human FUS for its well-known tendency to phase separate and form hydrogels (Patel et al., 2015; Kato et al., 2012).
 
@@ -123,9 +169,17 @@ We also assessed the density of Sla1-EGFP patches in cells expressing untagged E
 
 These results support the hypothesis that prion-like domains can aid clustering of the endocytic proteins.
 
-## Ede1 central region can cluster a heterologous lipid-binding protein
+### Ede1 central region can cluster a heterologous lipid-binding protein
 
 We hypothesized that the phase separation mediated by Ede1 central region is able to cluster membrane-associated proteins. To test our hypothesis, we fused the Ede1 central region to a diffusely membrane-bound protein. We created a GFP-Ede1366-900-2×PH(PLCδ) construct, based on a phosphatidylinositol 4,5-bisphosphate (PI(4,5)P2) probe developed by Stefan et al., 2002, by inserting the Ede1 central region between GFP and a tandem repeat of pleckstrin homology (PH) domain of phospholipase C δ1 (PLCδ). The original GFP-2×PH(PLCδ) construct is distributed homogeneously on the plasma membrane, while GFP-Ede1366-900 alone localized to bright intracellular condensates. In contrast, the fusion construct localized to the plasma membrane, forming puncta that resembled endocytic sites (Figure 9A,B).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig9-v2.jpg)
+
+**Figure 9.:** (A) Maximum projections of cells expressing GFP-2 × PH and GFP-Ede1366-900 from a yeast centromeric plasmid under the control of TDH3 promoter. White dotted line shows cell outline. (B) Cells expressing GFP-Ede1366-900-2×PH from a multicopy plasmid. Examples of different structures classified as ‘Diffuse’, ‘Patches’, or ‘Networks’. (C) and (D) The same construct was expressed from four centromeric plasmids under different promoters. Individual cells were classified as in panel B. Plots show percentage of cells falling into each class per promoter (C), and mean cell pixel intensity per class (D). (E) Movies of cells coexpressing GFP-Ede1366-900-2×PH and Sla1-mCherry were acquired using TIRF microscopy. Single frame from a representative movie; points labeled ‘1’ and ‘2’ mark the top and bottom of the kymograph (F). Scale bars: 2 μm. All cells in this figure: SLA1-mCherry::KANMX4, ede1Δ::natNT2.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/72865/elife-72865-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Kymographs of representative photobleaching experiments performed on the GFP-2×PH or GFP-Ede1366-900-2×PH constructs. (B) Effects of 10% 1,6-hexanediol (HD) treatment on cells overexpressing GFP-2 × PH, GFP-Ede1366-900-2×PH, or GFP-Ede1366-900 from a single-copy plasmid under the control of the TDH3 promoter.
 
 We also noticed subpopulations of cells with different localization patterns of the construct (Figure 9B). We speculated that the variable patterns were caused by heterogeneity in protein expression level due to plasmid copy number variation. To test that hypothesis, we expressed GFP-Ede1366-900-2×PH(PLCδ) from centromeric plasmids containing four different promoters of increasing strength (Mumberg et al., 1995). We classified the localization of the construct in these cells as ‘diffuse’, ‘punctate’, or ‘networked’. We found that the tendency to cluster into different patterns correlated with promoter strength and the expression level. Low expressing cells had more diffuse localization of the construct, and separated into puncta or well-separated regions as the concentration increased (Figure 9C,D).
 
@@ -137,7 +191,7 @@ These results show that directing the Ede1 central region to the plasma membrane
 
 Ede1 is the key organizer of the early phase of endocytosis in yeast (Stimpson et al., 2009; Boeke et al., 2014; Lu and Drubin, 2017). Our results indicate that the large clusters of Ede1 observed previously in mutant cells (Boeke et al., 2014) are in fact phase-separated protein droplets. Moreover, we found that the cytosolic concentration of Ede1 in normal cells is at the same critical limit as in the mutant cells harboring Ede1 droplets. This suggests that liquid phase separation might be the mechanism through which Ede1 concentrates proteins at the early endocytic sites. We identified the central region of Ede1— containing a coiled-coil and a prion-like domain— as necessary for both the condensate formation, and for Ede1 to promote the initiation of endocytosis. We also found that heterologous prion-like domains can partially replace the Ede1 central region in endocytosis. We also demonstrated that the central region of Ede1 fused to a lipid-binding domain can condense on the plasma membrane. These findings suggest a potential link between endocytic assembly and the phenomenon of protein phase separation and raise questions about the material properties of the endocytic sites at different stages. They also highlight a possible novel role for disordered, prion-like regions found in numerous endocytic proteins (Malinovska et al., 2013).
 
-## Ede1 forms liquid protein droplets
+### Ede1 forms liquid protein droplets
 
 Ede1 forms large condensates under conditions where the stoichiometry between Ede1 and the endocytic adaptor proteins is altered, such as overexpression of Ede1 or deletion of three early adaptors (Boeke et al., 2014, Figure 1).
 
@@ -147,7 +201,7 @@ We show that the Ede1 condensates undergo apparent fusion and fission events, th
 
 The Ede1 condensates are clearly distinct from endocytic sites by the virtue of size, brightness, and long-term stability. We assign them no function, other than as a tool used to study the properties of Ede1. However, Wilfling et al., 2020 studied Ede1 condensates in the 3×ΔEA and Ede1 overexpression strains in parallel to our work. They describe a selective autophagy pathway mediated by Ede1, and propose that autophagy of phase-separated condensates might be a major route through which cells remove misfolded or unneeded endocytic proteins. The ability of Ede1 to cluster endocytic proteins could therefore play a dual role in endocytosis and autophagy.
 
-## Endocytic sites: solid or liquid?
+### Endocytic sites: solid or liquid?
 
 The prevailing model of endocytosis focuses on the growing clathrin lattice as the driver of protein assembly (Kirchhausen et al., 2014; Cocucci et al., 2012). Indeed, clathrin is a major interaction hub in endocytosis, and a scaffold with a well-defined structure. Nevertheless, several lines of evidence suggest that this model of assembly might be incomplete.
 
@@ -175,7 +229,7 @@ The coiled-coil domain of Ede1 is also critical for its phase separation, and ev
 
 ## Materials and methods
 
-## Yeast strains and plasmids
+### Yeast strains and plasmids
 
 The list of yeast strains and yeast plasmids used in this study is provided in Supplementary file 1. These materials are available upon request to the corresponding author.
 
@@ -187,60 +241,60 @@ Plasmids used in Figure 9 were based on pRS426-GFP-2×PH(PLCδ) (Stefan et al., 
 
 The sequence of the msGFP2 fluorophore (Valbuena et al., 2020) was cloned into a PFA6a-based tagging plasmid from Addgene plasmid #135301, a kind gift from Benjamin Glick.
 
-## Live cell imaging
+### Live cell imaging
 
 Yeast cells were grown to OD600 between 0.3 and 0.8 at 24°C in low-fluorescence synthetic drop-out medium lacking tryptophan, or tryptophan and uracil if required for plasmid maintenance. Cells were attached to cover slips coated with 1 mg ml−1 concanavalin A.
 
-## Widefield microscopy
+#### Widefield microscopy
 
 Widefield micrographs were obtained on an Olympus IX81 widefield microscope equipped with a 100×/NA1.45 objective and an ORCA-ER CCD camera (Hamamatsu), using an X-CITE 120 PC (EXFO) metal halide lamp as the illumination source. The excitation and emission light when imaging EGFP- and mCherry-tagged proteins were filtered through the U-MGFPHQ and U-MRFPHQ filter sets (Olympus). The 3D stacks were acquired with 0.2 μm vertical spacing. The microscope was controlled using the MetaMorph software (Molecular Dynamics).
 
-## Total internal reflection fluorescence microscopy
+#### Total internal reflection fluorescence microscopy
 
 All TIRF movies were recorded on an Olympus IX83 widefield microscope equipped with a 150×/NA1.45 objective and an ImageEM X2 EM-CCD camera (Hamamatsu) under the control of the VisiView software (Visitron Systems). The 488 nm and 561 nm laser lines were used for illumination of GFP- and mCherry-tagged proteins. Excitation and emission were filtered using a TRF89902 405/488/561/647 nm quad-band filter set (Chroma). Laser angles were controlled by iLas2 (Roper Scientific).
 
-## Fluorescence recovery after photobleaching
+#### Fluorescence recovery after photobleaching
 
 Bleaching of Ede1-EGFP in endocytic condensates (Figure 2A and B) was performed using a custom-built set-up that focuses a 488-nm laser beam at the sample plane, on the Olympus IX81 widefield microscope described above. The diameter of the bleach spot was approximately 0.5 μm.
 
 Bleaching of unperturbed endocytic sites (Figure 2C) was performed with a 405 nm laser line controlled by the iLas2 targeting system during simultaneous excitation with 488 nm and 561 nm lasers in TIRF mode on the Olympus IX83 microscope described above. The emission light was collected through a Gemini beam splitter (Hamamatsu) equipped with a Di03-R488/561-t1 dichroic, and FF03-525/50-25 and FF01-630/92-25 emission filters (Semrock).
 
-## Spinning disk microscopy
+#### Spinning disk microscopy
 
 Spinning disk confocal imaging (Figure 3) was performed in the Photonic Bioimaging Center at the University of Geneva using a Nikon Eclipse Ti1 microscope equipped with a CSU-W1 spinning disk (Yokogawa) using a 100×/NA1.49 objective, an sCMOS Prime 95B camera (Photometrics), and 488 nm and 561 nm lasers as the illumination source.
 
-## Induction of protein expression
+#### Induction of protein expression
 
 For the induction of expression from GALS promoter during live-cell imaging (Figure 3), cells were thawed and grown for several days on Synthetic Complete medium agar plates with 2% galactose as the sole carbon source. The cells were then cultured overnight in a low-fluorescence synthetic drop-out liquid medium with no tryptophan and 2% raffinose as the sole carbon source. The cells were diluted in the morning into the same medium with 2% glucose as the carbon source. The cells were attached to cover slips as described above. Finally, the carbon source in the medium was switched to 2% galactose before the start of the imaging.
 
-## Image and data analysis
+### Image and data analysis
 
 All code used in this study is available as a single repository at https://github.com/matkozak/KozakAndKaksonen2022, (copy archived at swh:1:rev:5441acf218619f2b03d90633613cccc373c6fe8a; Kozak, 2022). General image analysis was performed using the Fiji distribution of ImageJ (Schindelin et al., 2012; Rueden et al., 2017). All display images were corrected for background fluorescence using the rolling ball algorithm of ImageJ, and movies were corrected for photobleaching using a custo m ImageJ macro. Plots and statistical analyses were generated using R.
 
-## FRAP experiments
+#### FRAP experiments
 
 FRAP experiments performed on Ede1-EGFP condensates were analyzed according to Phair et al., 2004. Mean fluorescence values were measured from regions of interest representing the background, the cell, and the condensate. A custom-written R script (available in the article repository) was used to subtract background fluorescence, correct for photobleaching and normalize the values between 0 (corrected fluorescence immediately after photobleaching) and 1 (mean corrected fluorescence of 5 s before photobleaching). The recovery curves of individual experiments were aligned to bleach time and averaged. Condensates that showed lateral or axial movement during the acquisition were manually excluded from the averaging. The average was fitted to a single exponential equation from which the mobile fraction and recovery half-time were calculated.
 
 For FRAP experiments performed on native endocytic sites, the background fluorescence was first subtracted from the TIRF images using the ImageJ rolling ball algorithm. EGFP and mCherry fluorescence of single endocytic patches were measured within a circle with a radius of three pixels around the patch centroid position. A custom-written R script was used to calculate the fluorescence recovery much in the same way as for the FRAP of condensates, but no further corrections were made for background signal or imaging-induced photobleaching. To calculate average recovery, we manually selected only events in which Abp1-mCherry signal peaked at least 60 s after bleach time to exclude the effect of Ede1 disassembly at the end of endocytic events.
 
-## Patch numbers and lifetimes
+#### Patch numbers and lifetimes
 
 For estimating the number of patches per membrane area, we analyzed single nonbudding cells. The patches were thresholded and counted using a custom Python script available in the article repository. We estimated the cell surface area by measuring the area of the cross-section from maximum intensity projection and multiplying it by 4, under the assumption that an unbudded yeast cell is approximately spherical. For estimating patch lifetimes, we tracked endocytic events using ParticleTracker from the MOSAIC suite (Sbalzarini and Koumoutsakos, 2005) and multiplied trajectory length by the frame rate.
 
-## Cytosolic and total cellular intensity
+#### Cytosolic and total cellular intensity
 
 To obtain cytosolic intensity of Ede1-EGFP, 5 × 5-pixel square regions away from the condensates and vacuoles were manually measured in ImageJ. To measure total cellular intensity, individual cells were cropped in ImageJ. A custom Python script was applied to the cropped cells to generate masks based on Rvs167-mCherry fluorescence, and subsequently measure the Ede1-EGFP signal intensity in the masked region.
 
-## Cell classification
+#### Cell classification
 
 To calculate the percentages of Ede1-EGFP condensates colocalizing with mCherry puncta in Figure 4, cells containing Ede1-EGFP condensates in Figure 5 and cells showing different GFP-EDE1366-900−2×PH localization patterns in Figure 9, single cells were cropped from imaging fields based on a neutral signal (GFP in the case of Figure 4 and brightfield image for Figures 5 and 9). Next, an ImageJ macro was used to display random images from the dataset and the experimenter would assess the presence of the tested phenotype with no knowledge of which strain was being analyzed.
 
-## Western blotting
+### Western blotting
 
 A 300 μl of ice-cold trichloroacetic acid was added to 5 ml of exponentially growing yeast cultures. The cells were pelleted by centrifugation, washed with cold acetone, and dried in a vacuum concentrator. The pellets were resuspended in 100 μl of urea buffer (25 mM Tris-HCl pH 6.8, 6 M urea, 1% SDS) and homogenized by shaking with 200 μl of glass beads. The samples were heated at 95°C for 5 min, mixed with 100 μl 2× SDS loading buffer and centrifuged at 16, 000× g for 5 min.
 
 The samples were subjected to electrophoresis on 4–20% Precast Protein Gels (Bio-Rad) and transferred onto a nitrocellulose membrane using an iBlot2 device (ThermoFischer Scientific). The membranes were blocked for 30 min with 5% bovine serum albumin in PBS-Tween and incubated with primary antibodies overnight at 4°C. The membranes were washed in PBS-Tween, incubated with fluorescent secondary antibodies for 1 hr and washed in PBS-Tween. The fluorescence was measured on an Odyssey scanner (LI-COR Biosciences).
 
-## Antibodies
+#### Antibodies
 
 Ede1 constructs were detected using an anti-GFP mouse monoclonal antibody (ab291, Abcam) at 1/2000 dilution, and an anti-Hog1 rabbit polyclonal antibody (sc-9079, Santa Cruz Biotechnology) at 1/1000 dilution was used as a loading control. Donkey antimouse IRDye 680 and anti-rabbit IRDye 800 secondary antibodies (926–68072 and 926–32213 respectively, LI-COR Biosciences) were used at a 1/10,000 dilution.

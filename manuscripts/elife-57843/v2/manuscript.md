@@ -37,13 +37,19 @@
 
 ## Abstract
 
-Sexual activity and/or reproduction are associated with a doubling of life expectancy in the long-lived rodent genus Fukomys . To investigate the molecular mechanisms underlying this phenomenon, we analyzed 636 RNA-seq samples across 15 tissues. This analysis suggests that changes in the regulation of the hypothalamic–pituitary–adrenal stress axis play a key role regarding the extended life expectancy of reproductive vs. non-reproductive mole-rats. This is substantiated by a corpus of independent evidence. In accordance with previous studies, the up-regulation of the proteasome and so-called ‘anti-aging molecules’, for example, dehydroepiandrosterone, is linked with enhanced lifespan. On the other hand, several of our results are not consistent with knowledge about aging of short-lived model organisms. For example, we found the up-regulation of the insulin-like growth factor 1/growth hormone axis and several other anabolic processes to be compatible with a considerable lifespan prolongation. These contradictions question the extent to which findings from short-lived species can be transferred to longer-lived ones.
+Sexual activity and/or reproduction are associated with a doubling of life expectancy in the long-lived rodent genus Fukomys. To investigate the molecular mechanisms underlying this phenomenon, we analyzed 636 RNA-seq samples across 15 tissues. This analysis suggests that changes in the regulation of the hypothalamic–pituitary–adrenal stress axis play a key role regarding the extended life expectancy of reproductive vs. non-reproductive mole-rats. This is substantiated by a corpus of independent evidence. In accordance with previous studies, the up-regulation of the proteasome and so-called ‘anti-aging molecules’, for example, dehydroepiandrosterone, is linked with enhanced lifespan. On the other hand, several of our results are not consistent with knowledge about aging of short-lived model organisms. For example, we found the up-regulation of the insulin-like growth factor 1/growth hormone axis and several other anabolic processes to be compatible with a considerable lifespan prolongation. These contradictions question the extent to which findings from short-lived species can be transferred to longer-lived ones.
 
 ## Introduction
 
 Most of our current understanding of the underlying mechanisms of aging comes from short-lived model species. It is, however, still largely unclear to what extent insights obtained from short-lived organisms can be transferred to long-lived species, such as humans (Parker et al., 2004; Keller and Jemielity, 2006). Comparative approaches, involving species with particularly long healthy lives and seeking the causative mechanisms that distinguish them from shorter-lived relatives, try to overcome this limitation (Austad, 2009). Many studies that involved organisms with particularly long lifespans, for example, queens in social hymenoptera, birds, bats, African mole-rats, and primates, have produced findings that were not always congruent with established aging theories (Keller and Jemielity, 2006; Austad, 2009; Salmon et al., 2009; Austad, 2011; Dammann, 2017; Bens et al., 2018). Species comparisons, however, also have their limitations. Many observed differences between species with differing lifespans are influenced by phylogenetic constraints, ecophysiological differences, or both, rather than being causal for the species-specific differences in aging and longevity.
 
 Bimodal aging occurs naturally in the genus Fukomys from the rodent family Bathyergidae (African mole-rats). These animals live in families (often called colonies) of usually consisting of 9–16 individuals (Sichilima et al., 2008; Šklíba et al., 2012), although single families may occasionally grow considerably larger in some species (Jarvis and Bennett, 1993; Scharff et al., 2001). Regardless of group size, an established family typically consists of only one breeding pair (the founders of the family, often called king/queen) and their progeny from multiple litters (often called workers). Because of strict avoidance of incest (Burda, 1995), the progeny do not engage in sexual activity in the confines of their natal family, even after reaching sexual maturity. Hence, grown Fukomys families are characterized by a subdivision into breeders (the founder pair) and non-breeders (all other family members). Interestingly, breeders reach the age of 20 years or more in captivity, whereas non-breeders usually die before their tenth birth date (Figure 1A). This divergence of survival probabilities between breeders and non-breeders is found in all Fukomys species studied so far, irrespective of sex. Because no difference in diet or workload has been observed between breeders and non-breeders in captivity, status-specific changes of gene expression after the transition from non-breeder to breeder are considered the most likely explanation of the differing lifespans (Dammann and Burda, 2006; Dammann et al., 2011).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig1-v2.jpg)
+
+**Figure 1.:** (A) For both species of the Fukomys genus that were examined in this study – Fukomys mechowii and Fukomys micklemi – it was shown that, in captivity, breeders live significantly longer than non-breeders. Lifespan data were redrawn from Dammann and Burda, 2006 and Dammann et al., 2011. (B) Schematic overview of animal treatments. Non-breeders (open shapes) are offspring of the breeder pair of their family (filled shapes) and do not mate with other members of the same family because of incest avoidance in Fukomys (Burda, 1995). Therefore, non-breeders of opposite sexes were taken from different families – labeled as ‘Family A’ (blue) and ‘Family B’ (red) – and permanently housed in a separate terrarium. The two unrelated animals mated with each other, thus producing offspring and becoming breeders of the new ‘Family C’ (green). In addition to the animals that were promoted to be slower-aging breeders, age-matched controls that remained in the faster-aging non-breeders of ‘Family A’ and ‘Family B’ were included in our study – in most cases full siblings (ideally litter mates) of the respective new breeders. After at least 2 years and two pregnancies in ‘Family C’, breeders from ‘Family C’ and their controls from Colonies A and B were put to death, and tissues were sampled for later analysis, which included identification of differentially expressed genes. The shown experimental scheme was conducted with 5–7 (median 6) specimens per cohort (defined by breeding status, sex, species) and 12–15 tissues (median 14) per specimen: in total, 46 animals and 636 samples.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig1-figsupp1-v2.jpg)
 
 In the wild, non-breeders must meet a member of another family by chance to ascend to breeder status; in captivity, the establishment of new breeder pairs is subject to human control. Allowing an animal to breed in captivity can be regarded as a simple experimental intervention that results in an extension of life expectancy of approximately 100%. This extension is far more than most experimental interventions in vertebrates can achieve, for example, by caloric restriction (e.g., Carmona and Michan, 2016) or diets containing resveratrol or rapamycin (e.g., Valenzano et al., 2006; Johnson et al., 2013). Furthermore, this relative lifespan extension starts from a non-breeder lifespan that is already more than twice as long as that of the mammalian model organisms most widely used in aging research, such as mice or rats.
 
@@ -59,6 +65,18 @@ We measured gene expression differences between breeders and non-breeders in two
 
 To globally quantify the transcriptomic differences between the reproductive states, we performed three analyses: clustering of the samples based on pairwise correlation, principal variant component analysis, and an overview of the number of DEGs between reproductive states in comparison to DEGs between species and sex. Clustering of the samples based on pairwise correlations showed a full separation of the two species at the highest cluster level (Figure 2—figure supplement 1). Below that level, an almost complete separation according to tissues was observed. Within the tissue clusters, the samples did not show a clear-cut separation between sex or breeder/non-breeder status. Accordingly, a principal variance component analysis showed that species, tissue, and the combination of both variables accounted for 98.4% of the total variance in the data set; individual differences explained 1.4% of the variance, and only 0.004% was explained by breeder/non-breeder status (Figure 2A). Regarding the numbers of DEGs, we found – unsurprisingly considering the aforementioned facts – by far the highest number of DEGs in the species comparison (Figure 2B). Although in almost every examined tissue the numbers of detected DEGs were also high between sexes, most tissues exhibited very few DEGs due to breeder/non-breeder status. Exceptions were liver, spleen, ovary, and, especially, tissues of the endocrine system (adrenal gland, pituitary gland, thyroid), in which the number of DEGs between breeders and non-breeders ranged from more than 60 to several thousand.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig2-v2.jpg)
+
+**Figure 2.:** (A) Relative contribution of the model factors (breeding status, sex, species, tissue) and their combinations (:) to the total variance in the examined data set. The relative contributions were determined by principal variance component analysis. (B) Numbers of identified differentially expressed genes per tissue and model factor (first column, species; second, sex; third, status). Stacked bars indicate the proportions of up- and down-regulated genes (red and green, respectively; directions: F. mechowii vs. F. micklemi, female vs. male, breeder vs. non-breeder).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Clustering was performed based on the Euclidean distance of logarithmized pairwise Pearson read count correlations according to the unweighted pair group method with arithmetic mean. Bigger sample labels, breeders; smaller sample, non-breeders.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The false discovery rate (FDR) threshold used for both programs was 0.05. To account for the threshold effect, in a less strict approach all genes were counted that have an FDR < 0.05 with one program and an FDR < 0.1 with the respective other program.
+
 Since the change from non-breeder to breeder status apparently marks the beginning of a slowdown in the aging process, we first wanted to find out whether and where there are intersections of reproductive status DEGs with those whose expression level is known to change during aging. Therefore, we determined overlaps by using the Digital Aging Atlas (DAA) – a database of genes that show aging-related changes in humans (Craig et al., 2015). Across species and sexes, significant overlaps (false discovery rate [FDR] < 0.05, Fisher’s exact test) with the DAA were found in three tissues: adrenal gland, ovary, and pituitary gland (FDR=0.005, each; Figure 3A). Among these three endocrine tissues, the DEGs of the ovaries overlapped significantly with those from adrenal (p=2.8*10−27) and pituitary glands (p=0.005), but there was no significant overlap between the two glands (Figure 3A). Thus, together, we found indications for aging-relevant expression changes after the transition from non-breeders to breeders in three tissues of the endocrine system, which presumably affect separate aspects of aging in adrenal and pituitary glands.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig3-v2.jpg)
@@ -69,11 +87,214 @@ Moreover, we compared the DEGs with respect to the reproductive status that we i
 
 Beyond the single-gene level, we aimed to identify metabolic pathways and biological functions whose gene expression significantly depends on reproductive status. For this, we used Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways (Kanehisa et al., 2017) and Molecular Signatures Database (MSigDB) hallmarks (Liberzon et al., 2015) as concise knowledge bases. As standard approach, we used an established method combining all p-values of genes in a given pathway in a threshold-free manner (Figure 4). The advantage of this approach is that it bundles the p-values from test results of individual gene expression differences at the level of pathways (see Materials and methods for details). In addition, we applied a second enrichment method that aggregates fold-changes instead (Figure 4—figure supplement 11; for a comparison of the results of both approaches, see Control analyses). Altogether, the gene expression of 55 KEGG pathways and 41 MSigDB hallmarks was significantly affected by reproductive status in at least one tissue (Figure 4—figure supplements 1 and 2). Because the individual interpretation of each of these pathways/hallmarks would go beyond the scope of this study, we focus here on those 14 pathways and 13 hallmarks that were significantly different between breeders and non-breeders (FDR < 0.1) in a global analysis across all tissues (Figure 4). Because many pathways are driven mainly by gene expression in subsets of tissues, we weighted gene-wise the differential expression signals from the various tissues by the respective expression levels in the tissues. For instance, the expression level of the growth hormone (GH) gene GH1 is known to be almost exclusively expressed in the pituitary glands. In our data set, the GH1 level of the pituitary gland accounted for 99.96% of the total GH1 across all tissues. Accordingly, in pathways that contain GH, our weighted cross-tissue differential expression signal for this gene is almost exclusively determined by the pituitary gland. On the contrary, a differential expression signal of this gene in another tissue with a very low fraction of the gene’s total expression would have almost no impact on the weighted cross-tissue level – even if that signal were very strong (see Materials and methods for details).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig4-v2.jpg)
+
+**Figure 4.:** Shown are all Kyoto Encyclopedia of Genes and Genomes pathways (A) and Molecular Signatures Database hallmarks (B) that are enriched for differential gene expression between breeders and non-breeders at the weighted cross-tissue level (false discovery rate [FDR], <0.1). This enrichment analysis was carried out threshold-free, which is why tissues without differentially expressed individual genes (see Figure 2B) can also show differentially expressed pathways. The numbers within the cells give the FDR, that is, the multiple testing corrected p-value, for the respective pathway/hallmark and tissue. As indicated by the color key, red and green indicate up- or down-regulated in breeders, respectively. White indicates a pathway/hallmark that is significantly affected by differential expression and whose signals for up- and down-regulation are approximately balanced. Dark colors up to black mean that there is little or no evidence that the corresponding pathway/hallmark is affected by differential gene expression. Figure 4—figure supplements 1 and 2 provide detailed overviews of all pathways/hallmarks that are enriched in at least one tissue for status-dependent differential expression signals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Listed are all pathways that show a significant differential expression signal (false discovery rate [FDR] < 0.05) in at least one of the tissues or on the cross-tissue level (FDR < 0.1).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Listed are all pathways that show a significant differential expression signal (false discovery rate [FDR] < 0.05) in at least one of the tissues or on the cross-tissue level (FDR < 0.1).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Pairwise pathway connectivities were determined based on read counts of all examined 636 samples via a weighted gene co-expression network analysis. Significance was determined against empirically estimated null distributions (see Materials and methods) The following three Kyoto Encyclopedia of Genes and Genomes pathways were excluded since the respective enrichments are likely to be only derivatives from other enrichments (see Results, Figure 4—figure supplements 5–7): ‘hsa05016 Huntington’s disease’, ‘hsa05012 Parkinson’s disease’, ‘hsa050 Alzheimer’s disease’. * False discovery rate (FDR) < 0.05, **FDR < 0.01, ***FDR < 0.001.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Green/red color depicts the log2-fold-change (see legend for scale) with direction breeder/non-breeder.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** The signal is mainly driven by the differential expression of the mitochondrial respiratory chain. Green/red color depicts the cross-tissue log2-fold-change (see legend for scale) with direction breeder/non-breeder.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** The signal is mainly driven by the differential expression of the mitochondrial respiratory chain. Green/red color depicts the cross-tissue log2-fold-change (see legend for scale) with direction breeder/non-breeder.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** The signal is mainly driven by the differential expression of the mitochondrial respiratory chain. Green/red color depicts the cross-tissue log2-fold-change (see legend for scale) with direction breeder/non-breeder.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** The cross-tissue gene expression is represented by the sum of the DeSeq2 baseMean values. The regression line is in red (negative correlation, R2 = 0.04).
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig4-figsupp9-v2.jpg)
+
+**Figure 4—figure supplement 9.:** The cross-tissue pathway expression is represented by the median of the respective cross-tissue gene expressions. The regression line is in red (negative correlation, R2 = 0.12).
+
+![Figure 4—figure supplement 10.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig4-figsupp10-v2.jpg)
+
+**Figure 4—figure supplement 10.:** The regression line is in red (R2 = 0.00).
+
+![Figure 4—figure supplement 11.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig4-figsupp11-v2.jpg)
+
+**Figure 4—figure supplement 11.:** Shown are all Kyoto Encyclopedia of Genes and Genomes pathways (A) and Molecular Signatures Database hallmarks (B) that are enriched for differential gene expression between breeders and non-breeders at the weighted cross-tissue level using our default enrichment method with p-value-based test statistics (false discovery rate, <0.1, compare Figure 4). The p-values shown in the cells correspond to an alternative enrichment method using fold-change-based test statistics. As indicated by the color key, red and green indicate up- or down-regulated in breeders, respectively. White indicates a pathway/hallmark that is significantly affected by differential expression and whose signals for up- and down-regulation are approximately balanced. Dark colors up to black mean that there is little or no evidence that the corresponding pathway/hallmark is affected by differential gene expression.
+
 We found strong indications for increase in the activity of certain anabolic functions in breeders: ribosomal protein expression (hsa03010 Ribosome, hsa03008 Ribosome biogenesis in eukaryotes, Figure 4A) was elevated in most tissues (and accordingly also in the weighted cross-tissue analysis). In MSigDB hallmarks, the strongest enrichment signal came from MYC targets (HALLMARK_MYC_TARGETS_V1), which can largely be considered a reflection of enhanced ribosomal protein expression and the fact that MYC is a basal transcription factor up-regulating genes involved in protein translation (Hofmann et al., 2015; Figure 4B). In functional correspondence, we observed an increase in the expression of mitochondrial respiratory chain components (hsa00190 Oxidative phosphorylation, HALLMARK_OXIDATIVE_PHOSPHORYLATION, Figure 4A, B). We also found strong indications for increased protein degradation (hsa03050 PROTEASOME, Figure 4A). This weighted cross-tissue signal was, in contrast to the situation regarding ribosomes, driven mainly by two tissue types: the adrenal gland and the gonads.
 
 To examine whether the simultaneous up-regulation of the ribosome, proteasome, and oxidative phosphorylation is a coordinated regulation, we performed a weighted gene co-expression network analysis (WGCNA) (Langfelder and Horvath, 2008) from our gene count data and examined the connectivity between pairs of those KEGG pathways flagged in the weighted cross-tissue analysis. We found that the expression of ribosomal genes (hsa03010) was significantly linked to those of ribosome biogenesis (hsa03008, FDR = 4.59*10−3), oxidative phosphorylation (hsa00190, FDR = 4.05*10−4), and proteasome (hsa03050, FDR = 4.59*10−3), whereas no other examined pathway pair exhibited a significant connectivity (Figure 4—figure supplement 3). Interestingly, ribosome, proteasome, and oxidative phosphorylation pathways also shared other characteristics of their differential expression signals: subtle fold-changes, that is, up-regulation of 3–9% on average. Thus, statistically significant signals at the pathway level resulted from relatively small shifts in all genes of these pathways in a seemingly coordinated manner and across multiple tissues (Source data 1a). In addition, ribosome (hsa03010, in ovary), proteasome (hsa03050, in ovary and adrenal gland), and RNA-transport (hsa03013, in adrenal gland) are enriched in those Fukomys status-dependent DEGs that show, in a similar experimental setting (Bens et al., 2018), the same direction in both naked mole-rat sexes and the opposite direction in both guinea pig sexes (FDR < 0.05, Fisher’s exact test).
 
 The myogenesis hallmark (Figure 4B) was also found to be up-regulated in breeders. Expectedly, this weighted cross-tissue result was driven mainly by differential expression signals from muscle tissue: muscle from all tissues exhibited the lowest p-value (Figure 4A), and 15 of 20 up-regulated genes that contributed most to the weighted cross-tissue differential myogenesis signal exhibited their highest expression in muscle. These genes were involved mainly in calcium transport or part of the fast-skeletal muscle-troponin complex (Source data 1a). A clear exception of this muscle-dominated expression is found in the gene that exhibited the highest relative contribution to the differential myogenesis signal, insulin-like growth factor 1 (IGF1). This gene was found to be expressed most strongly in ovary and liver and was strongly up-regulated in the breeders' ovaries and adrenal glands (Table 1). IGF1 codes for a well-known key regulator of anabolic effects such as cell proliferation, myogenesis, and protein synthesis (Schiaffino and Mammucari, 2011; Jung and Suh, 2014) and has a tight functional relation to GH (gene: GH1) another key anabolic regulator upstream of IGF1; together, these factors form the so-called GH/IGF1 axis (Cannata et al., 2010; Junnila et al., 2013; Bodart et al., 2015; Raisingani et al., 2017; Carotti et al., 2018; Lozier et al., 2018). Also, GH1 was strongly up-regulated in breeders in its known principal place of synthesis, the pituitary gland (Table 1).
+
+**Table 1.**
+ Top 10 genes regarding weighted cross-tissue differential expression signal.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">Weighted cross-tissue</th>
+      <th colspan="4">Tissue with highest expression</th>
+    </tr>
+    <tr>
+      <th>p-Value</th>
+      <th>FDR</th>
+      <th>log2-foldchange*</th>
+      <th>Tissue</th>
+      <th>% of cross-tissue expression</th>
+      <th>FDR</th>
+      <th>log2-foldchange*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SULT2A1</td>
+      <td>0.00E+00</td>
+      <td>0.000</td>
+      <td>−3.19</td>
+      <td>Liver</td>
+      <td>97.42</td>
+      <td>5.27E-06</td>
+      <td>-3.26</td>
+    </tr>
+    <tr>
+      <td>MC2R</td>
+      <td>6.00E-06</td>
+      <td>0.046</td>
+      <td>−0.53</td>
+      <td>Adrenal gland</td>
+      <td>89.53</td>
+      <td>8.78E-05</td>
+      <td>-0.56</td>
+    </tr>
+    <tr>
+      <td>INHA</td>
+      <td>1.60E-05</td>
+      <td>0.081</td>
+      <td>1.57</td>
+      <td>Ovary</td>
+      <td>67.91</td>
+      <td>1.54E-05</td>
+      <td>2.22</td>
+    </tr>
+    <tr>
+      <td colspan="4">INHA – tissue with second highest expression</td>
+      <td>Testis</td>
+      <td>27.61</td>
+      <td>0.56</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>CYP11A1</td>
+      <td>5.90E-05</td>
+      <td>0.224</td>
+      <td>0.61</td>
+      <td>Ovary</td>
+      <td>45.55</td>
+      <td>5.49E-05</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td colspan="4">CYP11A1 – tissue with second highest expression</td>
+      <td>Adrenal gland</td>
+      <td>43.63</td>
+      <td>1.48E-03</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <td>NLRP14</td>
+      <td>1.17E-04</td>
+      <td>0.355</td>
+      <td>−0.80</td>
+      <td>Ovary</td>
+      <td>68.98</td>
+      <td>2.84E-05</td>
+      <td>−1.25</td>
+    </tr>
+    <tr>
+      <td colspan="4">NLRP14 – tissue with second highest expression</td>
+      <td>Testis</td>
+      <td>18.67</td>
+      <td>0.54</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>GH</td>
+      <td>2.58E-04</td>
+      <td>0.618</td>
+      <td>0.45</td>
+      <td>Pituitary gland</td>
+      <td>99.96</td>
+      <td>1.99E-02</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>IGF1</td>
+      <td>3.62E-04</td>
+      <td>0.618</td>
+      <td>0.59</td>
+      <td>Ovary</td>
+      <td>51.73</td>
+      <td>1.20E-04</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <td colspan="4">IGF1 – tissue with second highest expression</td>
+      <td>Liver</td>
+      <td>36.28</td>
+      <td>0.39</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>ZP4</td>
+      <td>3.74E-04</td>
+      <td>0.618</td>
+      <td>−1.16</td>
+      <td>Ovary</td>
+      <td>95.30</td>
+      <td>1.99E-03</td>
+      <td>−1.23</td>
+    </tr>
+    <tr>
+      <td>TCL1A</td>
+      <td>5.33E-04</td>
+      <td>0.618</td>
+      <td>−1.05</td>
+      <td>Ovary</td>
+      <td>90.12</td>
+      <td>2.14E-03</td>
+      <td>−1.18</td>
+    </tr>
+    <tr>
+      <td>PNLIPRP2</td>
+      <td>5.69E-04</td>
+      <td>0.618</td>
+      <td>1.36</td>
+      <td>Ovary</td>
+      <td>76.08</td>
+      <td>2.23E-03</td>
+      <td>1.65</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Direction: breeder/non-breeder.Tissues are listed if they contribute at least 10% to cross-tissue expression.FDR: false discovery rate._
 
 With xenobiotic metabolism and TNF-α signaling, two defense hallmarks were also found to be up-regulated in breeders by the weighted cross-tissue analysis (HALLMARK_XENOBIOTIC_METABLISM and HALLMARK_TNFA_SIGNALING_VIA_NFKB, Figure 4B). The up-regulation of the reactive oxygen species (ROS) hallmark comprising genes coding for proteins that detoxify ROS (HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY, Figure 4B) falls into a similar category.
 
@@ -85,11 +306,19 @@ Interestingly, three genes, which we had already mentioned as potential regulato
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig5-v2.jpg)
 
-**Figure 5.:** Fukomys.From a wide range of mammals, including humans (Ferraù and Korbonits, 2015), dogs (Kooistra and Galac, 2012), horses (McCue, 2002), cats (Meijer et al., 1978), and guinea pigs (Zeugswetter et al., 2007), it is known that chronic glucocorticoid excess leads to a number of pathological symptoms that largely overlap with those of aging and result in considerably higher mortality rates for affected individuals (Etxabe and Vazquez, 1994, #808). The most common cause of chronic glucocorticoid excess is excessive secretion of the adrenocorticotropic hormone (ACTH) by the pituitary gland. ACTH is transported via the blood to the adrenal cortex where it binds to the ACTH-receptor (ACTHR; encoded by the gene MC2R), which induces the production of glucocorticoids, especially cortisol. Glucocorticoids are transported to the various tissues, where they exert their effect by activating the glucocorticoid receptor (NR3C1) that acts as a transcription factor and regulates hundreds of genes. The constant overuse of this transcriptional pattern eventually leads to the listed symptoms. Our hypothesis is that the permanent, high expression of the ACTH-receptor in Fukomys non-breeders causes effects similar to those known from overproduction of the hormone. In line with this hypothesis, (i) cortisol levels are increased in non-breeders and (ii) target genes of the glucocorticoid receptor are highly enriched for status-dependent differential gene expression. Furthermore, the animals were examined for common symptoms of chronic glucocorticoid excess: (iii) non-breeders gained more weight during the experiment than breeders, (iv) exhibited lower bone density at the end of the experiment, and (v) lower gene expression in the growth hormone/insulin-like growth factor 1 axis than breeders.
+**Figure 5.:** From a wide range of mammals, including humans (Ferraù and Korbonits, 2015), dogs (Kooistra and Galac, 2012), horses (McCue, 2002), cats (Meijer et al., 1978), and guinea pigs (Zeugswetter et al., 2007), it is known that chronic glucocorticoid excess leads to a number of pathological symptoms that largely overlap with those of aging and result in considerably higher mortality rates for affected individuals (Etxabe and Vazquez, 1994, #808). The most common cause of chronic glucocorticoid excess is excessive secretion of the adrenocorticotropic hormone (ACTH) by the pituitary gland. ACTH is transported via the blood to the adrenal cortex where it binds to the ACTH-receptor (ACTHR; encoded by the gene MC2R), which induces the production of glucocorticoids, especially cortisol. Glucocorticoids are transported to the various tissues, where they exert their effect by activating the glucocorticoid receptor (NR3C1) that acts as a transcription factor and regulates hundreds of genes. The constant overuse of this transcriptional pattern eventually leads to the listed symptoms. Our hypothesis is that the permanent, high expression of the ACTH-receptor in Fukomys non-breeders causes effects similar to those known from overproduction of the hormone. In line with this hypothesis, (i) cortisol levels are increased in non-breeders and (ii) target genes of the glucocorticoid receptor are highly enriched for status-dependent differential gene expression. Furthermore, the animals were examined for common symptoms of chronic glucocorticoid excess: (iii) non-breeders gained more weight during the experiment than breeders, (iv) exhibited lower bone density at the end of the experiment, and (v) lower gene expression in the growth hormone/insulin-like growth factor 1 axis than breeders.
 
 We subjected this hypothesis (Figure 5) to a first test by matching the global fold-changes of the breeder/non-breeder comparison with those of a gene expression comparison of human controls/Cushing patients (Hochberg et al., 2015) and found a significant correlation (R = 0.11, p=6.6*10−36). Since the target tissue of Hochberg et al., subcutaneous adipose tissue was unfortunately not included in our study, we used our cross-tissue data for comparison. If we use instead our data from skin as adjacent tissue, a similar correlation results (R = 0.11, p=1.1*10−40).
 
 We tested the hypothesis further by checking five of its key predictions. Altered MC2R expression (Figure 6A) coincides with higher cortisol levels in hair samples from non-breeding F. mechowii than in those from breeders of the same species (Begall et al., 2021). Furthermore, glucocorticoids such as cortisol exert their effect by binding to the glucocorticoid receptor that, in turn, acts as a transcription factor for many genes (Gjerstad et al., 2018). We tested whether the expression of targets of the glucocorticoid receptor (NR3C1) was significantly altered throughout our data using two gene lists (Phuc Le et al., 2005): about 300 direct target genes of the receptor that were identified by chromatin immunoprecipitation (i) and about 1300 genes that were found to be differentially expressed depending on the presence or absence of exogenous glucocorticoid (ii). Both gene lists were found to be significantly affected by differential expression at the weighted cross-tissue level (i, p=0.001; ii, p<10−9) as well as in five (i) and eight (ii) single tissues (Supplementary file 1g, h). In line with our hypothesis, we observed that the weight gain in non-breeders was, on average, twice as strong compared to the weight gain in breeders during the experiment (p=7.49*10−3, type II ANOVA, Figure 6B). In addition, we found a subtle but significant influence of reproductive status on the density of the vertebrae: the vertebrae of breeders were slightly denser than those of age-matched non-breeders (p=0.03 for vertebra T12 only, and p=0.01 across all examined vertebrae L1, L2, and T12; ANOVA, Figure 6C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig6-v2.jpg)
+
+**Figure 6.:** (A) Gene expression of MC2R, coding for the adrenocorticotropic hormone receptor, in breeders and non-breeders of Fukomys mechowii and Fukomys micklemi. (B) Weight gain of the animals during the experiment. (C) Measured optical densities of vertebra T12 of F. micklemi breeders and non-breeders. Red, breeders; blue, non-breeders; filled, F. mechowii; unfilled, F. micklemi; circles, females; squares, males; dashed line, median. Statistically significant differences between breeders and non-breeders were determined with (A) DESeq2 (Love et al., 2014) and (B, C) analysis of variance with status, species, sex, and age as independent variables (see Materials and methods).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57843/elife-57843-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) All non-breeders vs. breeders. Annual mortality rates differ significantly across all age classes (paired t-test, two-tailed, t = 2.309 df=9, p=0.0463). (B) Same data as in (A), but for non-breeders differentiated between animals living in complete families (high cortisol) vs. orphaned non-breeders living in families where at least one parent was absent (low cortisol). Annual mortality rates during the first five observation years (all three groups represented) differed significantly between groups (repeated measures ANOVA, F = 5.436, p=0.0323). Tukey post-hoc testing: p<0.05 for breeders vs. non-breeders from complete families; all other comparisons: p>0.05.Comparison breeders vs. orphaned non-breeders across all age classes (10 observation years: paired t-test, two-tailed, t = 1.983, df = 9, p=0.0787).
 
 ## Discussion
 
@@ -119,6 +348,138 @@ Many anabolic pathways are up-regulated in breeders across tissues: protein bios
 
 An important positive regulator of ribosome biogenesis and protein synthesis is mTOR (Johnson et al., 2013). Based on this, one could expect an up-regulation of the corresponding gene in our scenario. At the same time, however, the inhibition of mTOR is one of the best-documented life-prolonging interventions from invertebrates to mammals (Table 2). Given these conflicting premises, we find mTOR in almost all Fukomys tissues as not significantly altered; the exception is the adrenal gland, where mTOR is significantly down-regulated in breeders. It is obvious that, during evolution of Fukomys mole-rats, both the extension of breeders’ lifespan and an increase in their anabolic processes provided fitness benefits. Consequently, in the underlying organismic framework mTOR may have acquired expression patterns and functions, different from those in organisms studied before. Thus, in the future it may be worth to study Fukomys mTOR biology in more detail, particularly in respect to its potential role in naturally evolved ways towards lifespan extension and healthy aging.
 
+**Table 2.**
+ Behavior of important aging-relevant genes and pathways in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene/pathway</th>
+      <th>Regulation in indicated direction and species can reduce lifespan</th>
+      <th>Regulation in indicated direction and species can extend lifespan†</th>
+      <th>Differentially expressed in this study in indicated tissues and direction*</th>
+      <th>Gene/pathway is expressed mainly in the following tissues</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GH1</td>
+      <td>Mouse ↑1</td>
+      <td>Mouse ↓2, rat ↓2</td>
+      <td>Pituitary gland ↑</td>
+      <td>Pituitary gland</td>
+    </tr>
+    <tr>
+      <td>IGF1</td>
+      <td>–</td>
+      <td>Mouse ↓2</td>
+      <td>Adrenal gland ↑, ovary ↑</td>
+      <td>Liver, ovary</td>
+    </tr>
+    <tr>
+      <td>IGF1R</td>
+      <td>–</td>
+      <td>Mouse ↓1, worm ↓3, fly ↓3</td>
+      <td>Adrenal gland ↓, ovary ↓</td>
+      <td>Many</td>
+    </tr>
+    <tr>
+      <td>KL</td>
+      <td>Mouse ↓3</td>
+      <td>Mouse ↑3, worm ↑3</td>
+      <td>Ovary ↓</td>
+      <td>Endocrine tissue, kidney</td>
+    </tr>
+    <tr>
+      <td>SIRT1</td>
+      <td>–</td>
+      <td>Mouse ↑6, worm ↑7, fly ↑7</td>
+      <td>–</td>
+      <td>All</td>
+    </tr>
+    <tr>
+      <td>MYC</td>
+      <td>–</td>
+      <td>Mouse ↓8</td>
+      <td>Thyroid ↑</td>
+      <td>All</td>
+    </tr>
+    <tr>
+      <td>mTOR</td>
+      <td>–</td>
+      <td>Mouse ↓9, worm↓9, fly ↓9</td>
+      <td>Adrenal gland ↓</td>
+      <td>All</td>
+    </tr>
+    <tr>
+      <td>PRKAA2 (AMPK)</td>
+      <td>–</td>
+      <td>Worm ↑9</td>
+      <td>–</td>
+      <td>Many</td>
+    </tr>
+    <tr>
+      <td>TP53</td>
+      <td>Mouse ↑11, Fly ↑11</td>
+      <td>Worm ↓11, mouse ↑11, fly ↑11</td>
+      <td>–</td>
+      <td>All</td>
+    </tr>
+    <tr>
+      <td>SOD2</td>
+      <td>–</td>
+      <td>Worm ↓10, fly ↑10</td>
+      <td>–</td>
+      <td>All</td>
+    </tr>
+    <tr>
+      <td>FOXO3</td>
+      <td>Fly ↑12</td>
+      <td>–</td>
+      <td>Ovary ↓, adrenal gland ↓</td>
+      <td>All</td>
+    </tr>
+    <tr>
+      <td>Protein synthesis</td>
+      <td>–</td>
+      <td>Mouse ↓8, worm ↓9, fly ↓9</td>
+      <td>Many ↑</td>
+      <td>All</td>
+    </tr>
+    <tr>
+      <td>Proteasome</td>
+      <td>–</td>
+      <td>Worm ↑14, fly ↑14</td>
+      <td>Gonads ↑, adrenal gland ↑</td>
+      <td>All</td>
+    </tr>
+    <tr>
+      <td>Lysosome</td>
+      <td>–</td>
+      <td>Worm ↑13</td>
+      <td>–</td>
+      <td>All</td>
+    </tr>
+    <tr>
+      <td>Respiratory chain</td>
+      <td>–</td>
+      <td>Worm↓15, fly ↓16, killifish ↓17</td>
+      <td>Gonads ↑, Adrenal gland ↑, Blood ↑, Spleen ↑</td>
+      <td>All</td>
+    </tr>
+    <tr>
+      <td>Apoptosis</td>
+      <td>Mouse ↑11, fly ↑11</td>
+      <td>Worm ↓11, mouse ↑11, fly ↑11</td>
+      <td>Skin ↑, pituitary gland ↑</td>
+      <td>All</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Direction: breeder/non-breeder.†Direction: old/young.1Allolio and Arlt, 2002, 2Bartke, 2019, 3van Heemst, 2010, 4Elibol and Kilic, 2018, 5Kwon et al., 2015, 6Satoh et al., 2013, 7Burnett et al., 2011, 8Hofmann et al., 2015, 9Johnson et al., 2013, 10Edrey and Salmon, 2014, 11Feng et al., 2011, 12Giannakou et al., 2004, 13Carmona-Gutierrez et al., 2016, 14Saez and Vilchez, 2014, 15Dillin et al., 2002, 16Copeland et al., 2009, 17Baumgart et al., 2016.–: either not affecting lifespan or not known to the best of our knowledge (columns 1 and 2); no change (column 3)._
+
 The results of differential expression of anabolic components such as the GH/IGF1 axis are surprising. They fall within a debate in aging research that has been highly controversial over time: based on the well-known fact that the expression and secretion of GH and IGF1 decline with age in humans and other mammals (Bartke, 2019), Rudman et al., 1990 administered synthetic GH to elderly subjects in 1990, thereby reversing a number of aging-associated effects such as expansion of adipose mass. This led to GH being celebrated as an anti-aging drug (Junnila et al., 2013), including dubious commercial offers. Today's aging research, on the contrary, strongly assumes that the enhanced activity of the GH/IGF1 axis accelerates aging and that its suppression could extend lifespan even in humans (López-Otín et al., 2013; Longo et al., 2015; Pitt and Kaeberlein, 2015). In addition to several studies of synthetic GH in humans yielding less convincing results than those of Rudman et al., the main reasons for this turn are the results of studies on short-lived model organisms. From worms to mice, the impairment of the GH/IGF1 axis by genetic intervention consistently led to longer lifespans (Table 2), for example, the up-regulation of Klotho – an IGF1 inhibitor – extended the mouse lifespan by as much as 30% (Kurosu et al., 2005). As with the impairment of the GH/IGF1 axis, reducing of protein synthesis by decreasing the expression of MYC, a basal transcription factor, extended the mouse lifespan by as much as 20% (Hofmann et al., 2015), whereas the impairment of the respiratory chain by rotenone resulted in prolongation of the killifish lifespan by 15% (Baumgart et al., 2016; Table 2).
 
 Therefore, it is astonishing that massive up-regulation of these anabolic key components accompanies a lifespan extension of approximately 100% in long-lived mammals and potentially even contributes to it. Several points could help to resolve this apparent contradiction: first, the up-regulation of anabolic pathways and key genes is at least partially accompanied by the regulation of other mechanisms that could plausibly compensate for deleterious effects. For example, it is, widely assumed that the negative impact of enhanced protein synthesis on lifespan is to a large extent caused by the accumulation of damaged or misfolded proteins, which is also known to contribute to aging-associated neurodegenerative diseases (Hipkiss, 2007; Saez and Vilchez, 2014; Carmona and Michan, 2016). Up-regulation of the proteasome, as we observed in breeders in a weighted cross-tissue approach and especially in endocrine tissues, is known to counteract these effects by clearing damaged proteins, leading to lifespan extension in worm and fly (Saez and Vilchez, 2014). Enhanced proteasome activity has also been linked with higher longevity of the naked mole-rat compared to the laboratory mouse (Pérez et al., 2009; Rodriguez et al., 2012) and in comparative approaches across several mammalian lineages (Pride et al., 2015). We hypothesize that the simultaneously high anabolic synthesis and catabolic degradation of proteins will lead to a higher protein turnover rate in breeders and, accompanied with that, a reduced accumulation of damaged and misfolded proteins. Similarly, it seems plausible that the up-regulation of the mitochondrial respiratory chain (oxidative phosphorylation) in breeders is compensated for by simultaneous up-regulation of the reactive oxygen hallmark: the mitochondrial respiratory chain is the main source of cellular ROS that can damage DNA, proteins, and other cellular components (Balaban et al., 2005; Starkov, 2008); the reactive oxygen hallmark consists by definition of genes that are known to be up-regulated in response to ROS treatments. Unsurprisingly, at least 25% of these genes code for typical antioxidant enzymes such as thioredoxin, superoxide dismutase, peroxiredoxin, or catalase that can detoxify ROS. Furthermore, the known cancer-promoting effects of an enhanced GH/IGF1 axis (Junnila et al., 2013) could, to some extent, be compensated for by up-regulation of apoptosis and p53 signaling because these are the major mechanisms of cancer suppression (Bieging et al., 2014). More generally, potential lifespan-extending effects of moderate up-regulation of both the GH/IGF1 axis and ROS production can also be viewed in the light of the hormesis hypothesis (Ristow, 2014), which postulates that mild stressors can induce overall beneficial adaptive stress responses. In line with these arguments, we found higher resting metabolic rates in breeders compared to non-breeders in F. anselli (Schielke et al., 2017), a species closely related to F. micklemi.
@@ -133,7 +494,7 @@ However, even the down-regulation of the GH/IGF-axis may be adaptive in itself f
 
 Finally, recent findings of positively selected genes in African mole-rats (family Bathyergidae, containing also Fukomys and Heterocephalus) could partly explain some of the surprising results. It is striking that translation and oxidative phosphorylation were among the strongest differentially expressed molecular processes concerning the breeding status. Earlier, these processes were also reported to be the most affected by positive selection in the phylogeny of African mole-rats (Sahm et al., 2018b). Furthermore, IGF1 was one of 13 genes that were found to be under positive selection in the last common ancestor of the mole-rats. This may indicate that the corresponding mechanisms were evolutionarily adapted to be less detrimental and make their up-regulation more compatible with a long lifespan. Since the mere fact of positive selection does not permit to draw conclusions about the direction of the mechanistic effect, this hypothesis, however, needs to remain speculative.
 
-## Conclusions
+### Conclusions
 
 We performed a comprehensive transcriptome analysis that, for the first time within mammalian species, compared naturally occurring cohorts of species with massively diverging longevities. The comparison of faster-aging Fukomys non-breeders with similar animals that were experimentally elevated to the slower-aging breeder status revealed by far the most robust transcriptome differences within endocrine tissue: adrenal gland, ovary, thyroid, and pituitary gland. Genes and pathways involved in anabolism, such as GH, IGF1, translation, and oxidative phosphorylation, were differentially expressed. Their inhibition is among the best-documented life-prolonging interventions in a wide range of short-lived model organisms (Table 2). Surprisingly, however, we found that the expression of these mechanisms was consistently higher in slower-aging breeders than in faster-aging non-breeders. This indicates that even basic molecular mechanisms of the aging process known from short-lived species cannot easily be transferred to long-lived species. In particular, this applies to the role of the GH/IGF1 axis, which has in recent years been predominantly described as having a negative impact on lifespan (López-Otín et al., 2013; Pitt and Kaeberlein, 2015; Bartke, 2017). In addition, special features of the mole-rats could also contribute to the explanation of the unexpected result that genes and processes differentially expressed between reproductive statuses were also strongly altered during the evolution of the mole-rats (Sahm et al., 2018b). Another intriguing possibility is that, in line with the hormesis hypothesis (Ristow, 2014), moderate harmful effects of anabolic processes can be hyper-compensated for by up-regulation of pathways such as proteasomes, P53 signaling, and antioxidant defense against ROS that we observed in slower-aging breeders as well.
 
@@ -141,7 +502,7 @@ Furthermore, our work provides evidence that the HPA stress axis is a key regula
 
 ## Materials and methods
 
-## Animal care and sampling
+### Animal care and sampling
 
 All animals were housed in glass terraria with dimensions adjusted to the size of the family (min. 40 cm × 60 cm) in the Department of General Zoology, Faculty of Biosciences, University of Duisburg-Essen. The terraria are filled with a 5 cm layer of horticultural peat or sawdust. Tissue paper strips, tubes, and solid shelters were provided as bedding/nesting materials and environmental enrichment. Potatoes and carrots are supplied ad libitum as stable food, supplemented with apples, lettuce, and cereals. Fukomys mole-rats do not drink free water. Temperature was kept fairly constant at 26 ± 1°C and humidity at approximately 40%. The daily rhythm was set to 12 hr darkness and 12 hr light.
 
@@ -153,41 +514,67 @@ Before sampling, animals were anesthetized with 6 mg/kg ketamine combined with 2
 
 Animal housing and tissue collection were compliant with national and state legislation (breeding allowances 32-2-1180-71/328 and 32-2-11-80-71/345; ethics/animal experimentation approval 84-02.04.2013/A164, Landesamt für Natur-, Umwelt- und Verbraucherschutz Nordrhein-Westfalen).
 
-## RNA preparation and sequencing
+### RNA preparation and sequencing
 
 For all tissues except blood, RNA was purified with the RNeasy Mini Kit (Qiagen) according to the manufacturer’s protocol. Blood RNA was purified with the RNeasy Protect Animal Blood Kit (Qiagen). Kidney and heart samples were treated with proteinase K before extraction as recommended by the manufacturer. Library preparation was performed using the TruSeq RNA v2 kit (Illumina, San Diego, USA), which includes selection of poly-adenylated RNA molecules. RNA-seq was performed by single-end sequencing with 51 cycles in high-output mode on a HiSeq 2500 sequencing system (Illumina) and with at least 20 million reads per sample, as described in Supplementary file 1i. We have taken care to concentrate the samples of a tissue on a few sequencing runs and to create a balance of breeders and non-breeders within each run (Supplementary file 1j). Read data for F. mechowii and F. micklemi were deposited as European Nucleotide Archive study with the ID PRJEB29798 (Supplementary file 1i, j).
 
-## Read mapping and quantification
+### Read mapping and quantification
 
 It was ensured for all samples that the results of the respective sequencing passed ‘per base’ and ‘per sequence’ quality checks of FASTQC (Andrews, 2020). The reads were then mapped against previously published and with human gene symbols annotated F. mechowii and F. micklemi transcriptome data (Sahm et al., 2018a; Sahm et al., 2018b). For both species, only the longest transcript isoform per gene was used; this is the method of choice for selecting a representative variant in large-scale experiments (Ezkurdia et al., 2015; Source data 1b, c). This selection resulted in 15,864 reference transcripts (genes) for F. mechowii and in 16,400 for F. micklemi. After mapping and quantification, we further analyzed only those reference transcripts whose gene symbols were present in the transcript catalogs of both species – this was the case for 15,199 transcripts (the size of the union was 17,065). As mapping, algorithm ‘bwa aln’ of the Burrows-Wheeler Aligner (Li and Durbin, 2009) was used, allowing no gaps and a maximum of two mismatches in the alignment. Only those reads that could be uniquely mapped to the respective gene were used for quantification. Read counts per gene and sample can be found in Source data 1d. As another check, we ensured that all samples exhibited a Pearson correlation coefficient of at least 90% in a pairwise comparison based on log2-transformed read counts against all other samples of the same experimental group as defined by samples that were equal in the tissue as well as the species, sex, and reproductive status of the source animal.
 
-## DEGs analysis
+### DEGs analysis
 
 p-Values for differential gene expression and fold-changes were determined with DESeq2 (Love et al., 2014) and a multifactorial design. The DESeq2 algorithm also includes strict filtering based on a normalized mean gene count that makes further pre-filtering unnecessary (Love et al., 2014). Therefore, those genes whose read count was zero for all examined samples were removed before further analysis, thereby reducing the number of analyzed genes to 15,181. The multifactorial design means that, separately for each tissue, we input the read count data of samples across species, sex, and reproductive status into DESeq2 for each sample. This allowed DESeq2 to perform DEG analysis between the two possible states of each of the variables by controlling for additional variance in the other two variables. This approach resulted in a four-times higher sample size than with an approach that would have been based on comparisons of two experimental groups, each of which would be equal in tissue, species, sex, and reproductive status. It is known that the statistical power in RNA-seq experiments can increase considerably with sample size (Ching et al., 2014). p-Values were corrected for multiple testing with the Benjamini–Hochberg correction (Benjamini and Hochberg, 1995) (FDR).
 
 The results of the DEG analysis can be found in Source data 1e–g.
 
-## Enrichment analysis on pathway and cross-tissue level
+### Enrichment analysis on pathway and cross-tissue level
 
-Let (p1t,…pnt) represent the p-values obtained from differential gene expression analysis in the tissue corresponding with index t and the indices 1,…, n corresponding to the examined genes. Furthermore, let (px1t,….,pxmt), with 1≤xi≤n and 1≤i≤m, represent the p-values of genes with the indices X=(x1,…,xm)  belonging to a corresponding pathway that is tested for enrichment of differential expression signals. To determine the enrichment p-values at the pathway level, we calculated the test statistic ℱXt for the gene indices X in tissue index t according to Fisher’s method for combining p-values:ℱXt=−2*∑i=1mloge(pxit)
+Let $(p_{1}^{t},…p_{n}^{t}$) represent the p-values obtained from differential gene expression analysis in the tissue corresponding with index $t$ and the indices $1,…, n$ corresponding to the examined genes. Furthermore, let $(p_{x_{1}}^{t},….,p_{x_{m}}^{t})$, with $1\leqx_{i}\leqn$ and $1\leqi\leqm$, represent the p-values of genes with the indices $X=(x_{1},…,x_{m}) $ belonging to a corresponding pathway that is tested for enrichment of differential expression signals. To determine the enrichment p-values at the pathway level, we calculated the test statistic $ℱ_{X}^{t}$ for the gene indices $X$ in tissue index $t$ according to Fisher’s method for combining p-values:
 
-If the underlying test statistics are independent, a combined p-value may be determined by Fishers’s method using a χ2 distribution. However, since this assumption might be violated in gene expression studies (Väremo et al., 2013), for example, due to gene regulation cascades, we have empirically estimated the null distributions, as recommended by the literature (Fridley et al., 2010; Evangelou et al., 2012; Poole et al., 2016), using a resampling approach. For this purpose, for each KEGG/MSigDB pathway with m elements, we repeatedly drew m p-values from the total set of p-values  (p1t,…pnt) and calculated the test statistics. Specifically, this was done by calculating ℱXjt for 1000 random draws, each without replacement, Xj=(x1j,…,xmj) , with 1≤xkj≤n,  1≤j≤1000. When required for numerical precision, that is, ≤ 11000, sampling was performed again with 10,000 and 100,000 random draws. The combined p-values for our hypothesis tests can now be obtained by determining the probability of a test statistic in the empirically estimated null distribution. In addition, the indices X were divided into Xup and Xdown, depending on whether their fold-change was >1 or <1 in breeder vs. non-breeder comparison, and ℱXupt and ℱXdownt calculated. The ratio ℱXuptℱXdownt was used as an indicator for functional up- or down-regulation of the corresponding pathway (Figure 4, Figure 4—figure supplements 1 and 2). Using this approach, enrichment p-values were estimated for all KEGG pathways (Kanehisa et al., 2017) and MSigDB hallmarks (Liberzon et al., 2015), as well as across all examined tissues (Source data 2a, b). In addition, the procedure was applied to test whether the known 300 direct and 1300 indirect glucocorticoid receptor target genes (Phuc Le et al., 2005) were enriched for status-dependent differential expression signals (Supplementary file 1g,h).
+$$
+ℱ_{X}^{t}=−2*\sumi=1mlog_{e}(p_{x_{i}}^{t})
+$$
 
-Similarly, cross-tissue DEG-p-values were weighted with a modified test statistic (c.f. Heard and Rubin-Delanchy, 2018). The test statistic weights the p-values of the various tissues by the respective expression levels in those tissues. This ensures that, for example, for a ubiquitously expressed gene such as TP53 all tissues contribute relatively equally to the cross-tissue p-value, whereas for typical steroid hormone biosynthesis genes such as CYP11A1 the endocrine tissue results almost exclusively determine the weighted cross-tissue p-value. Given the definitions from above, we calculated the weighted cross-tissue test statistic ℱg for the gene g as follows:fg=|2∗∑t=1l(loge(pgt)∗wgt)|withwgt=expr¯gt*sgn(logFCgt)∑t=1lexpr¯gtwhere logFCgt is logarithmic fold-change between reproductive states and expr¯gt is the normalized mean expression (across sexes, species, and reproductive status) for the gene with index g and tissue with index t – both calculated by DESeq2 (Love et al., 2014). Furthermore, sgn is the signum function, and l is the number of examined tissues. The test statistic rewards, based on the mentioned assumption, consistency in the direction of gene regulation throughout tissues. All calculated values for logFCgt, expr¯gt, pgt, as well as the resulting ℱg and p-values can be found in Source data 2c.
+If the underlying test statistics are independent, a combined p-value may be determined by Fishers’s method using a χ2 distribution. However, since this assumption might be violated in gene expression studies (Väremo et al., 2013), for example, due to gene regulation cascades, we have empirically estimated the null distributions, as recommended by the literature (Fridley et al., 2010; Evangelou et al., 2012; Poole et al., 2016), using a resampling approach. For this purpose, for each KEGG/MSigDB pathway with m elements, we repeatedly drew $m$ p-values from the total set of p-values $ (p_{1}^{t},…p_{n}^{t}$) and calculated the test statistics. Specifically, this was done by calculating $ℱ_{X^{j}}^{t}$ for 1000 random draws, each without replacement, $X^{j}=(x_{1}^{j},…,x_{m}^{j}) $, with $1\leqx_{k}^{j}\leqn,  1\leqj\leq1000$. When required for numerical precision, that is, $\leq \frac{1}{1000}$, sampling was performed again with 10,000 and 100,000 random draws. The combined p-values for our hypothesis tests can now be obtained by determining the probability of a test statistic in the empirically estimated null distribution. In addition, the indices $X$ were divided into $X_{up}$ and $X_{down}$, depending on whether their fold-change was $>1$ or $<1$ in breeder vs. non-breeder comparison, and $ℱ_{X_{up}}^{t}$ and $ℱ_{X_{down}}^{t}$ calculated. The ratio $\frac{ℱ_{X_{up}}^{t}}{ℱ_{X_{down}}^{t}}$ was used as an indicator for functional up- or down-regulation of the corresponding pathway (Figure 4, Figure 4—figure supplements 1 and 2). Using this approach, enrichment p-values were estimated for all KEGG pathways (Kanehisa et al., 2017) and MSigDB hallmarks (Liberzon et al., 2015), as well as across all examined tissues (Source data 2a, b). In addition, the procedure was applied to test whether the known 300 direct and 1300 indirect glucocorticoid receptor target genes (Phuc Le et al., 2005) were enriched for status-dependent differential expression signals (Supplementary file 1g,h).
 
-Finally, weighted cross-tissue enrichment p-values at the pathway level were estimated by applying the above-described method at the pathway level (based on test statistic ℱ) to the gene-level weighted cross-tissue p-values. p-Values were corrected for multiple testing with the Benjamini–Hochberg correction (Benjamini and Hochberg, 1995) (FDR).
+Similarly, cross-tissue DEG-p-values were weighted with a modified test statistic (c.f. Heard and Rubin-Delanchy, 2018). The test statistic weights the p-values of the various tissues by the respective expression levels in those tissues. This ensures that, for example, for a ubiquitously expressed gene such as TP53 all tissues contribute relatively equally to the cross-tissue p-value, whereas for typical steroid hormone biosynthesis genes such as CYP11A1 the endocrine tissue results almost exclusively determine the weighted cross-tissue p-value. Given the definitions from above, we calculated the weighted cross-tissue test statistic $ℱ^{g}$ for the gene $g$ as follows:
 
-To not solely rely on p-value based statistics, we corroborated the pathways identified as differentially expressed by this procedure on the cross-tissue level by applying an alternative fold-change-based test statistics. The test statistics ℒXt, for single tissues, and lg, for the weighed cross-tissue level, were evaluated by resampling via 1000–100,000 random draws the same way as ℱXt and ℱg (see above), to obtain p-values for the examined gene sets:ℒXt=∑i=1m| logFCxit |lg=|∑t=1l(logFCgt*wgt)|
+$$
+f^{g}=|2∗\sumt=1l(log_{e}(p_{g}^{t})∗w_{g}^{t})|
+$$
 
-## Weighted gene co-expression network analysis
+with
 
-We used the WGCNA R package to perform weighted correlation network analysis (Langfelder and Horvath, 2008) of all 636 samples at once. We followed the authors’ usage recommendation by choosing a soft power threshold based on scale-free topology and mean connectivity development (we chose power=26 with a soft R2 of 0.92 and a mean connectivity of 38.6), using biweight midcorrelation, setting maxPOutliers to 0.1, and using 'signed' both as network and topological overlap matrix type. The maximum block size was chosen such that the analysis was performed with a single block and the minimum module size was set to 30. The analysis divided the genes into 26 modules, of which 5 were enriched for reproductive status DEGs based on Fisher’s exact test and an FDR threshold of 0.05. Those five modules were tested for enrichment among KEGG pathways (Kanehisa et al., 2017) with the same test and significance threshold (Supplementary file 1k). In addition, module eigengenes were determined and clustered (Supplementary file 1k). Then the topological overlap matrix that resulted from the WGCNA analysis (TOM=[ tomi,j ], where the row indices 1≤i≤| examined genes | correspond to genes and the column indices 1≤j≤| examined samples | correspond to samples) was used to determine pairwise connectivity between all KEGG pathways that showed differential expression at the weighted cross-tissue level (Figure 4—figure supplement 3). Based on the definition of connectivity of genes in a WGCNA analysis (Langfelder and Horvath, 2008), we defined the connectivity between two sets of indices X and Y each corresponding to genes as kX,Y=∑x ∈ X\Y∑y ∈ Y\X tomx,y. p-Values for the connectivities were determined against null distributions that were empirically estimated by determining for each pair X and Y the connectivities of 10,000 pairs of each | X | and |Y| randomly drawn indices (without replacement), respectively. Since 'signed' was used as the network and topological overlap matrix type, the tests were one-sided.
+$$
+w_{g}^{t}=\frac{expr¯_{g}^{t}*sgn(logFC_{g}^{t})}{\sum_{t=1}^{l}expr¯_{g}^{t}}
+$$
 
-## Other analysis steps
+where $logFC_{g}^{t}$ is logarithmic fold-change between reproductive states and $expr¯_{g}^{t}$ is the normalized mean expression (across sexes, species, and reproductive status) for the gene with index $g$ and tissue with index $t$ – both calculated by DESeq2 (Love et al., 2014). Furthermore, $sgn$ is the signum function, and $l$ is the number of examined tissues. The test statistic rewards, based on the mentioned assumption, consistency in the direction of gene regulation throughout tissues. All calculated values for $logFC_{g}^{t}$, $expr¯_{g}^{t}$, $p_{g}^{t}$, as well as the resulting $ℱ^{g}$ and p-values can be found in Source data 2c.
+
+Finally, weighted cross-tissue enrichment p-values at the pathway level were estimated by applying the above-described method at the pathway level (based on test statistic $ℱ$) to the gene-level weighted cross-tissue p-values. p-Values were corrected for multiple testing with the Benjamini–Hochberg correction (Benjamini and Hochberg, 1995) (FDR).
+
+To not solely rely on p-value based statistics, we corroborated the pathways identified as differentially expressed by this procedure on the cross-tissue level by applying an alternative fold-change-based test statistics. The test statistics $ℒ_{X}^{t}$, for single tissues, and $l^{g}$, for the weighed cross-tissue level, were evaluated by resampling via 1000–100,000 random draws the same way as $ℱ_{X}^{t}$ and $ℱ^{g}$ (see above), to obtain p-values for the examined gene sets:
+
+$$
+ℒ_{X}^{t}=\sumi=1m|logFC_{x_{i}}^{t}|
+$$
+
+
+
+$$
+l^{g}=|\sumt=1l(logFC_{g}^{t}*w_{g}^{t})|
+$$
+
+### Weighted gene co-expression network analysis
+
+We used the WGCNA R package to perform weighted correlation network analysis (Langfelder and Horvath, 2008) of all 636 samples at once. We followed the authors’ usage recommendation by choosing a soft power threshold based on scale-free topology and mean connectivity development (we chose power=26 with a soft R2 of 0.92 and a mean connectivity of 38.6), using biweight midcorrelation, setting maxPOutliers to 0.1, and using 'signed' both as network and topological overlap matrix type. The maximum block size was chosen such that the analysis was performed with a single block and the minimum module size was set to 30. The analysis divided the genes into 26 modules, of which 5 were enriched for reproductive status DEGs based on Fisher’s exact test and an FDR threshold of 0.05. Those five modules were tested for enrichment among KEGG pathways (Kanehisa et al., 2017) with the same test and significance threshold (Supplementary file 1k). In addition, module eigengenes were determined and clustered (Supplementary file 1k). Then the topological overlap matrix that resulted from the WGCNA analysis ($TOM=[tom_{i,j}]$, where the row indices $1\leqi\leq|examined genes|$ correspond to genes and the column indices $1\leqj\leq|examined samples|$ correspond to samples) was used to determine pairwise connectivity between all KEGG pathways that showed differential expression at the weighted cross-tissue level (Figure 4—figure supplement 3). Based on the definition of connectivity of genes in a WGCNA analysis (Langfelder and Horvath, 2008), we defined the connectivity between two sets of indices $X$ and $Y$ each corresponding to genes as $k_{X,Y}=\sumx \in X\Y\sumy \in Y\X tom_{x,y}$. p-Values for the connectivities were determined against null distributions that were empirically estimated by determining for each pair $X$ and $Y$ the connectivities of 10,000 pairs of each $|X|$ and |$Y$| randomly drawn indices (without replacement), respectively. Since 'signed' was used as the network and topological overlap matrix type, the tests were one-sided.
+
+### Other analysis steps
 
 Hierarchical clustering (Figure 2—figure supplement 1) was performed based on Pearson correlation coefficients of log2-transformed read counts between all sample pairs using the complete-linkage method (Defays, 1977). The principal variant component analysis (Figure 2A) was performed with the pvca package from Bioconductor (Bushel, 2013) and a minimum demanded percentile value of the amount of the variabilities, which the selected principal components needs to explain, of 0.5. Enrichments of DEGs among genes enlisted in the Digital Aging Atlas database (Craig et al., 2015; Source data 2d) were determined with Fisher’s exact test, the Benjamini–Hochberg method (FDR) (Benjamini and Hochberg, 1995) for multiple test correction, and a significance threshold of 0.05. Pathway visualization (Figure 4—figure supplements 4–7) was performed with Pathview (Luo and Brouwer, 2013). For the direction analysis of Fukomys reproductive status DEGs in previous experiments in naked mole-rats and guinea pigs, we examined those 10 tissues that were examined in all species (Supplementary file 1f, Source data 2e). Separately for each tissue and combination of species – naked mole-rat or guinea pig – and sex, we determined how many Fukomys reproductive status DEGs were up-regulated or down-regulated. We also performed two-sided binomial tests on each of these number pairs with a hypothesized success probability of 0.5. Furthermore, for each combination of species and sex, two-sided exact binomial tests using 0.5 as parameter were performed based on the sums of up-regulated and down-regulated genes across tissues (Supplementary file 1f). For enrichment analysis of direct and indirect glucocorticoid receptor target genes, mouse mRNA RefSeq IDs from Phuc Le et al., 2005 were translated to human Entrez IDs and gene symbols via Ensembl Biomart (Source data 2f). To statistically analyze the weight gain of the animals during the experiment, we used a type II ANOVA with status, species, sex, and age as independent variables (Supplementary file 1b); the weight gain, defined as the difference in weights at beginning and the end of the experiment, as dependent variable (Figure 6B); and no interaction terms. If interaction terms were also used for the model, the p-value for the difference in means between breeders and non-breeders changed from 7.49*10−3, as reported above, to 7.46*10−6. To compare our gene expression with Cushing data, we correlated the respective log2fold-changes from our skin (as computed by DESeq2) and cross-tissue results with those of human subcutaneous adipose tissue (Hochberg et al., 2015). The comparison directions were breeder/non-breeder and control/Cushing patient, respectively. We performed weighted Pearson correlation using the human expression, specifically the baseMean values given in the human study, as weights. Ensembl IDs used in the human study were translated to entrez IDs via the org.Hs.eg.db Bioconductor package (Source data 2g).
 
-## Bone density measurements
+### Bone density measurements
 
 Frozen carcasses of all F. micklemi that had been part of the transcriptome study were scanned with a self-shielded desktop small-animal computed tomography scanner (X-CUBE, Molecubes, Belgium). The x-ray source was a tungsten anode (peak voltage, 50 kVp; tube current, 350 µA; 0.8 mm aluminum filter). The detector was a cesium iodide (CsI) flat panel, building up a screen with 1536 × 864 pixels. Measurements were carried for individual 120 ms exposures, with angular sampling intervals of 940 exposures per rotation, for a total of seven rotations and a total exposure time of 789.6 s.
 
@@ -197,11 +584,11 @@ Reconstruction of the acquired computed tomography data was carried out with an
 
 Statistical analysis was performed using general linear models with bone density (Hounsfield units) as dependent variable, age (in days) as continuous covariate, and reproductive status and sex as nominal cofactors. Models were calculated for each vertebra individually (individual models) and across all three vertebrae (full model); in this latter case, vertebral number was added as additional categorial cofactor. In all models, only main effects were calculated, no interactions. Analyses were performed with IBM SPSS version 25 (Figure 6C, Supplementary file 1l).
 
-## Analysis of mortality rates
+### Analysis of mortality rates
 
 Increasing mortality with age is defined as actuarial senescence (e.g., Møller, 2006). To calculate status-specific mortality rates across age classes, we subdivided the first 10 years of observation time (corresponding to 1.5–11.5 years of calendar age) into intervals of 6 months. We then recapitulated the times each individual spent as conventional non-breeder (both parents present; cortisol levels high, see Begall et al., 2021), orphaned non-breeder (at least one parent absent since more than 6 months; cortisol levels low, see Begall et al., 2021), or breeder (cortisol levels low, see Begall et al., 2021), and calculated status-specific annual mortality rates for each interval by dividing the number of death events of the respective status during a given interval by the sum of observation years for all individuals holding this status in the same interval. In each interval, individuals that were alive across the entire interval contributed 0.5 years observation time, whereas individuals who died or were censored during that interval contributed the time (expressed in years) up to the death or censorship event. Only animals whose exact age was known were included (i.e., wild-caught animals were excluded). To account for decreasing sample sizes with advancing age, mortality calculations per status were restricted to those intervals containing at least 10 individuals of that status (i.e., around the first 6 years of life for conventional non-breeders and about 11.5 years for orphaned non-breeders and breeders). Status-specific mortality rates were compared by repeated measures ANOVA followed by Tukey post-hoc testing (for the first 6 years) or by paired t-test (breeders vs. all non-breeders, and breeders vs. orphaned non-breeders across all 10 years of observation time) after confirming normal distribution using Shapiro–Wilk normality test using GraphPad Prism.
 
-## Control analyses
+### Control analyses
 
 For practical reasons, samples collected for this project over several years were sequenced progressively in different batches. Therefore, we analyzed our data and sample scheme across all tissues and both species using BatchQC (Manimaran et al., 2016). In summary, the extensive search did not reveal any possible batch effects in the data set from F. micklemi, although they may not be ruled out completely for F. mechowii (Source data 2f). A source for the minor batch effects in F. mechowii may be attributable to the repeated sequencing of the same sample(s) in different sequencing experiments – an approach avoided during generation of the F. micklemi data set. However, because we followed a robust multifactorial analysis, in which differences must occur consistently across both species to be considered (see DEGs analysis in Materials and methods), false-positive results due to batch effects are substantially reduced (Manimaran et al., 2016).
 

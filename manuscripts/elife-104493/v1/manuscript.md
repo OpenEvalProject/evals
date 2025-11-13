@@ -6,10 +6,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00a2xv884 College of Animal Sciences, Zhejiang University Hangzhou China
+1. College of Animal Sciences, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
 
 † Corresponding author
 
 ## Abstract
 
-Certain strains of a bacterium found in the gut of some animals, Lactobacillus plantarum , are able to counter hyperuricemia, a condition caused by high levels of uric acid in the blood.
+Certain strains of a bacterium found in the gut of some animals, Lactobacillus plantarum, are able to counter hyperuricemia, a condition caused by high levels of uric acid in the blood.

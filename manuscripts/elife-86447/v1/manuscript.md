@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03m2x1q45 Department of Physiology, College of Medicine, University of Arizona Tucson Tucson United States
+1. Department of Physiology, College of Medicine, University of Arizona Tucson Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
 
 † Corresponding author
 

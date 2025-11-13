@@ -16,10 +16,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01jsgmp44 Institute of Experimental Medicine, Eötvös Loránd Research Network Budapest Hungary
-2. https://ror.org/05v9kya57 Faculty of Information Technology and Bionics, Pázmány Péter Catholic University Budapest Hungary
-3. https://ror.org/03vw74f64 Alfréd Rényi Institute of Mathematics, Eötvös Loránd Research Network Budapest Hungary
-4. https://ror.org/0249v7n71 Institute for Computer Science and Control, Eötvös Loránd Research Network Budapest Hungary
+1. Institute of Experimental Medicine, Eötvös Loránd Research Network Budapest Hungary ([ROR:01jsgmp44](https://ror.org/01jsgmp44))
+2. Faculty of Information Technology and Bionics, Pázmány Péter Catholic University Budapest Hungary ([ROR:05v9kya57](https://ror.org/05v9kya57))
+3. Alfréd Rényi Institute of Mathematics, Eötvös Loránd Research Network Budapest Hungary ([ROR:03vw74f64](https://ror.org/03vw74f64))
+4. Institute for Computer Science and Control, Eötvös Loránd Research Network Budapest Hungary ([ROR:0249v7n71](https://ror.org/0249v7n71))
 
 † Corresponding author
 
@@ -43,29 +43,61 @@ To identify the core mechanisms that are responsible for the relationship betwee
 
 Simulations of the network were run in two phases corresponding to spatial exploration and ‘offline’ hippocampal states (slow-wave sleep and awake immobility), respectively. During the exploration phase, the spiking activity of PCs was explicitly set to mimic the firing patterns of a population of place cells during simulated runs on a linear track, and the recurrent connections between PCs evolved according to an experimentally constrained, spike-timing-dependent plasticity (STDP) rule (see below). In the subsequent offline phase, we recorded the spontaneous dynamics of the network in the absence of structured external input (or plasticity), analyzed the global dynamics (including average firing rates and oscillations), and looked for the potential appearance of sequential activity patterns corresponding to the previous activation of place cells during exploration, often referred to as ‘replay.’ The main features of the model are summarized in Figure 1.
 
-## Recurrent weights are learned during exploration via a symmetric STDP rule
+![Figure 1.](https://cdn.elifesciences.org/articles/71850/elife-71850-fig1-v2.jpg)
+
+**Figure 1.:** (A) Tuning curves (Equation (1)) of exemplar place cells covering the whole 3-m-long linear track. (B) Broad, symmetric spike-timing-dependent plasticity (STDP) kernel used in the learning phase. The time constant was fit directly to experimental data from Mishra et al., 2016. (C) Learned excitatory recurrent weight matrix. Place cells are ordered according to the location of their place fields; neurons with no place field in the environment are scattered randomly among the place cells. Actual dimensions are 8000 * 8000, but, for better visualization, each pixel shown represents the average of an 80 * 80 square. (D) Pyramidal cell (PC) raster plot is shown in the top panel, color-coded, and ordered as the place fields in (A). PC population rate (middle), and local field potential (LFP) estimate (bottom panel), corresponding to the same time period. (E) Posterior matrix of the decoded positions from spikes within the high activity period shown in (D). Gray lines indicate the edges of the decoded, constant velocity path.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71850/elife-71850-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Firing rates of exemplar place cells covering the whole 3-m-long linear track. In contrast to the spatial tuning curves shown in Figure 1A (Equation (1)), these are time-dependent rates modulated by theta oscillation and phase precession (Equation (2)). (B) Exemplar spike trains generated based on the firing rates shown in (A). (Spike trains used in the learning phase were 400 s long. For the purpose of visualization, only the beginning is shown here.) (C) Interspike interval (ISI) distribution of the generated spike trains. ISIs of place cells (C1) (inset is a zoom into the same distribution at a finer timescale to show theta modulation) and nonplace cells (C2).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71850/elife-71850-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Fitted AdExpIF pyramidal cell (PC) model (blue) and experimental traces (green) are shown in the top panel. The amplitudes of the 800-ms-long step current injections shown at the bottom were as follows: –0.04, 0.15, and 0.6 nA. (B) Fitted ExpIF parvalbumin-containing basket cell (PVBC) model (pink) and experimental traces (green) are shown in the top panel. The amplitudes of the 800-ms-long step current injections shown at the bottom were as follows: –0.03, 0.09, and 0.25 nA. Insets show the f–I curve of the in vitro (green) and in silico (red) cells. For parameters of the cell models, see Table 2.
+
+### Recurrent weights are learned during exploration via a symmetric STDP rule
 
 During exploration, half of the PCs had randomly assigned, overlapping place fields in the simulated environment, characterized by Gaussian spatial tuning curves, whereas the others fired at low rates in a spatially nonspecific manner (‘Materials and methods’ and Figure 1A). During simulated unidirectional runs along a 3-m-long linear track, these tuning curves, modulated by theta oscillation and phase precession, gave rise to generated spike trains similar to those observed for real place cells under similar conditions (‘Materials and methods’ and Figure 1—figure supplement 1). The simulated spike trains served as inputs for STDP, which was characterized by the broad, symmetric kernel observed in pairs of CA3 PCs recorded in hippocampal slices (Figure 1B; Mishra et al., 2016). The anatomical connectivity of PCs was sparse and random, assuming 10% PC-PC connection probability (Lisman, 1999; Andersen et al., 2007), and only these preexisting connections were allowed to evolve (‘Materials and methods’).
 
 The most prominent feature of the learned recurrent excitatory synaptic weight matrix was its highly organized structure (Figure 1C). Relatively few strong (>1 nS) synapses near the diagonal (representing pairs of cells with overlapping place fields) emerged from a background of much weaker connections. Similar symmetric weight structures have been used in continuous ‘bump’ attractor models of various neural systems such as head direction cells, place cells, and parametric working memory (Zhang, 1996; Samsonovich and McNaughton, 1997; Káli and Dayan, 2000; Compte et al., 2000). In these studies, the weights were typically either imposed or learned using rate-based (not STDP) learning rules, and led to stationary patterns of activity in the absence of external input. By contrast, most previous spiking neuron models of sequence learning used temporally asymmetric STDP rules, resulting in a weight structure dominated by feedforward chains (each neuron giving the strongest input to other neurons that follow it in the spatial sequence), and sequential activity patterns that follow these chains of strong connections (Jahnke et al., 2015). In order to reveal the combined effect of learned, essentially symmetric connections and realistic cell-type-specific neuronal spike responses, we next explored the spontaneously generated activity patterns in our full network model.
 
-## The dynamics of the network model reproduce key features of SWRs and replay
+### The dynamics of the network model reproduce key features of SWRs and replay
 
 The sparse recurrent excitatory weight matrix resulting from the phenomenological exploration (Figure 1C) was used directly in network simulations mimicking resting periods, in which (with the exception of the simulations shown later in Figure 2C) PCs received only spatially and temporally unstructured random synaptic input (‘Materials and methods’). The maximal conductances of the other types of connections in the network (the weights of PC-PVBC, PVBC-PC, and PVBC-PVBC connections as well as the weight of the external random input) were optimized using an evolutionary algorithm with network-level objectives, which included physiological PC population firing rates, suppressed gamma (30–100 Hz) oscillation in the PC population, and strong ripple oscillation in the PVBC population (see ‘Materials and methods’ for details).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71850/elife-71850-fig2-v2.jpg)
+
+**Figure 2.:** (A) Pyramidal cell (PC) raster plot of a 10-s-long simulation, with sequence replays initiating at random time points and positions and propagating either in forward or backward direction on the top panel. PC population firing rate is plotted below. Dashed vertical black lines indicate the periods marked as sustained high-activity states (above 2 Hz for at least 260 ms), which are submitted to automated spectral and replay analysis. (B) Estimated local field potential (LFP) in the top panel and its time-frequency representation (wavelet analysis) below. (C) Forward and backward sequence replays resulting from targeted stimulation (using 200-ms-long 20 Hz Poisson spike trains) of selected 100-neuron subgroups, indicated by the black rectangles in the raster plots. (C1) Example of cued forward replay. PC raster plot is shown at the top with PC population rate, LFP estimate, and its time-frequency representation (wavelet analysis) below. (C2) Same as (C1), but different neurons are stimulated at the beginning, leading to backward replay.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71850/elife-71850-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Posterior matrix of the decoded positions from spikes within a selected high-activity state (first one from Figure 2A). Thick gray lines indicate the edges of the decoded, constant velocity path. Thin gray line shows the decoded path by connecting the weighted average positions in every 10-ms-long time step. (B) Step sizes from the decoded, variable velocity path (see A) for the same period (first high-activity state in Figure 2A). The horizontal dashed black line shows the average or predicted step size within the given period. (C1) Skewed distribution of observed step sizes (in gray) and the predicted (from evenly spacing) step-size distribution (in red) for more than a hundred replay events (similar to the one in A and B). Inset shows the same distributions at smaller scales. (C2) Cumulative distribution of the observed and predicted step sizes shown in (C1). Observed vs. predicted distributions differ significantly (two-sample Kolmogorov–Smirnov test).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71850/elife-71850-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Distributions of single pyramidal cell (PC) (A1) and parvalbumin-containing basket cell (PVBC) (A2) firing rates during the 10-s-long simulation shown in Figure 2. (B) Distributions of interspike intervals (ISIs) of PCs (B1) and PVBCs (B2) in the 10-s-long simulation shown in Figure 2. (C) Voltage traces of selected place cells from the beginning, middle, and end of the track, a nonplace cell and a PVBC on top, and their input currents (EPSC (excitatory postsynaptic current) in blue, IPSC (inhibitory postsynaptic current) in pink, y-axis on the right) and intrinsic adaptation current w (red, y-axis on the left) at the bottom of each panel, during a full forward replay. Dashed vertical lines indicate the period marked as high-activity state. (D) Synaptic input currents of PCs (D1) and PVBCs (D2) during sequence replay initiation. Gray lines are the averages of the EPSCs and IPSCs of 400 PCs and 30 PVBCs, respectively (similar to the ones shown in C). Individual gray lines correspond to individual high-activity states (n = 7, see Figure 2A). Dashed vertical lines (at 0 ms) indicate the beginning of the periods marked as high-activity states (see Figure 2A). Colored lines represent the grand average EPSC (blue) and IPSC (pink) arriving at PCs (D1) and PVBCs (D2) during sharp wave-ripple (SWR) initiation.
 
 Spontaneously generated activity in the network consisted of alternating periods of low activity (mean PC rates below 1 Hz) and high activity (mean PC rates around 3.5 Hz), which resembled the recurring appearance of sharp wave events during slow-wave sleep and quiet wakefulness (Figure 2A). Similar to experimental sharp waves, high-activity events in the model were accompanied by transient oscillations in the ripple frequency range (Figure 2B; Buzsáki, 1986; Buzsáki et al., 1992; Foster and Wilson, 2006; Buzsáki, 2015). We calculated an estimate of the LFP by summing the synaptic inputs of a small, randomly selected subset of PCs (Mazzoni et al., 2008), and found that ripple oscillations were reliably present in this signal during the high-activity periods (Figures 1D and 2B).
 
 When we plotted the spike times of all PCs with place cells ordered according to the location of their place fields on the track during the learning phase, it became clear that place cell sequences were replayed during simulated SWRs, while activity had no obvious structure in the low-activity periods between SWRs (Figure 2A). Interestingly, replay of place cell sequences could occur in either the forward or the backward direction relative to the order of activation in the learning phase (Figure 2A). Importantly, apart from some initial transients, simultaneous forward and backward replay was never observed. This is because simultaneous replay in both directions induces competition (mediated by global feedback inhibition) between the two active populations, and one of the sequences always dies out after a short period (this is also because mutual support through recurrent excitation diminishes as the two active populations move further away from each other). This is similar to the competitive behavior observed in ‘bump attractor’ models (Dayan and Abbott, 2001). These qualitative observations of sequence replay were confirmed by analyzing high-activity (SWR) periods with a Bayesian place decoding and path fitting method using spatial tuning curves introduced for spike train generation in the exploration part (‘Materials and methods’ and Figure 1E; Davidson et al., 2009; Karlsson and Frank, 2009; Olafsdottir et al., 2018). Interestingly, our network model also reproduced the broad, long-tailed step-size distribution in the sequence of decoded locations during SWRs, as observed experimentally by Pfeiffer and Foster, 2015; Figure 2—figure supplement 1.
 
-It was also possible to ‘cue’ replay by giving an additional external stimulation to a small subpopulation (n=100) of PCs that had overlapping place fields in the learned environment. In this case, sequence replay started at the location corresponding to the cells that received extra stimulation (Figure 2C). This feature may explain why awake replay tends to be forward when the animal is planning a trajectory from its current location and backward at the goal location.
+It was also possible to ‘cue’ replay by giving an additional external stimulation to a small subpopulation ($n=100$) of PCs that had overlapping place fields in the learned environment. In this case, sequence replay started at the location corresponding to the cells that received extra stimulation (Figure 2C). This feature may explain why awake replay tends to be forward when the animal is planning a trajectory from its current location and backward at the goal location.
 
 At the level of single cells, we found that both PCs and PVBCs received approximately balanced excitation and inhibition during SWR events, and inhibitory currents were modulated at the ripple frequency in these periods (Figure 2—figure supplement 2C and D). Excitatory inputs dominated between SWRs and during the initiation of SWR events. Only a small minority of PCs fired in individual ripple cycles, while the participation of PVBCs was much higher (but not complete), resulting in a mean PVBC firing rate of ∼65 Hz during the SWRs, which is much higher than their baseline rate, but significantly below the ripple frequency (Figure 2—figure supplement 2A and B). All of these findings were consistent with experimental results in vitro (Hájos et al., 2013; Schlingloff et al., 2014) and in vivo (Varga et al., 2012; English et al., 2014; Hulse et al., 2016; Gan et al., 2017). The firing of individual PCs appears to differ across experimental conditions, with mostly single spikes in vitro (Hájos et al., 2013; Schlingloff et al., 2014) and occasional burst firing and a lognormal firing rate distribution in vivo (Mizuseki and Buzsáki, 2013). In our simulations, many PCs fired more than one spike per SWR, but these were not bursts in the usual sense as even the shortest ISIs were over 5 ms. The firing rate distribution was skewed, although not particularly long-tailed (Figure 2—figure supplement 2B and C).
 
-## SWRs and replay are robust when recurrent excitation is varied
+#### SWRs and replay are robust when recurrent excitation is varied
 
 To show that our network model reproduces the wide range of experimental findings presented above in a robust manner, we ran a sensitivity analysis of several parameters. We started by studying the effects of the recurrent excitatory weights, which are the link between exploratory and resting dynamics. To this end, we ran simulations with PC-PC weights that were systematically up- or downscaled after the learning phase, and automatically evaluated various features of the network dynamics, such as population-averaged firing rates, the presence of sequence replay, as well as significant peaks in the ripple frequency range in the power spectra as shown before (‘Materials and methods’ and Figure 3). The network with PC-PC weights multiplied by 0.8 displayed a low-activity, noisy state with severely reduced mean PC firing rate, no sequence replay, and no clear oscillation (Figure 3A1). At the 0.9 multiplier level, sequence replays started to appear, but were less frequent than in the baseline model (Figure 3A2). As the PC-PC synaptic weights were scaled up, sequence replays became faster (completed in a shorter time) and occurred more often (Figure 3A3), a behavior that was stable and realistic up to the 1.5 multiplier level. Ripple oscillations had higher power and appeared at lower multiplier levels in the PVBC population than in the PC population (Figure 3—figure supplement 1), suggesting that they originate from the PVBCs and propagate to the PCs, in agreement with theories based on experimental findings (Buzsáki et al., 1992; Ylinen et al., 1995; Rácz et al., 2009; Schlingloff et al., 2014; Stark et al., 2014; Gan et al., 2017). Overall, the qualitative behavior of our model was similar in a fairly wide range of recurrent excitation, although our baseline model was relatively close to the lower end of this range.
 
-## Multiple environments can be learned and replayed
+![Figure 3.](https://cdn.elifesciences.org/articles/71850/elife-71850-fig3-v2.jpg)
+
+**Figure 3.:** (A) Pyramidal cell (PC) raster plots on top and PC population rates at the bottom for E-E scaling factors 0.9 (A1), 0.95 (A2), and 1.05 (A3). (Scaling factor of 1.0 is equivalent to Figure 2A.) Dashed vertical black lines have the same meaning as in Figure 2A. (B) Analysis of selected indicators of network dynamics across different E-E weight scaling factors (0.8–1.2). Mean PC (blue) and parvalbumin-containing basket cell (PVBC) (pink) population rates are shown on top. The frequency of significant ripple oscillations (black) and the percentage of power in the ripple frequency range (red) in the estimated local field potential (LFP) is shown at the bottom. Errors bars indicate standard deviation and are derived from simulations with five different random seeds. See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71850/elife-71850-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Power spectral densities (PSDs) of PC (A1) and parvalbumin-containing basket cell (PVBC) (A2) population rates and estimated local field potential (LFP) (A3). Gray lines correspond to individual high-activity states (n = 14) shown in Figure 2A, while the thicker-colored lines are their averages. Ripple frequency range (150–220 Hz) is highlighted in red. Shaded red area below the curves indicates the power in the ripple range. (B) Spectral analysis of network dynamics across different E-E weight scaling factors (0.8–1.2). The frequency of any significant ripple oscillation (black) and the percentage of power in the ripple band (red) are shown for PC (B1) and PVBC (B2) population rates and estimated LFP (B3). (B3) is the same as the bottom panel of Figure 3B, and it is duplicated here only to show how similar the curves are for the rates and the estimated LFP.
+
+#### Multiple environments can be learned and replayed
 
 Next, we showed that it is possible to store the representations of multiple environments in the weight matrix, and this change does not fundamentally alter the network dynamics (Figure 4). In particular, we simulated experience and STDP-based learning in two linear environments with a different but overlapping random set of place cells (Figure 4A). The resulting population-level dynamics was quite similar to the one following experience in a single environment, but, during each SWR event, a place cell sequence from either one or the other environment was reactivated (Figure 4B and C). Learning two sequences with the same additive symmetric (nondecreasing) STDP rule led to stronger PC-PC synapses on average (Figure 4A4), which resulted in a higher overall mean PC rate (Figure 4B and D). As a consequence, detectable sequence replays and significant ripple oscillations appeared at lower PC-PC weight multiplier levels (Figure 4D).
 
@@ -73,11 +105,11 @@ Next, we showed that it is possible to store the representations of multiple env
 
 **Figure 4.:** (A) Learned excitatory recurrent weight matrices. (A1) Weights after learning the first environment. Note that the matrix appears random because neurons are arranged according to their place field location in the second environment, which has not been explored at this point. (A3) Weights after learning in the second environment. (A2, A4) Distribution of nonzero synaptic weights in the learned weight matrices in (A1) and (A2), respectively. (B) Pyramidal cell (PC) raster plots: in the top panel, neurons are ordered and colored according to the first environment; in the middle panel, neurons are ordered and colored according to the second environment; and PC population rate is shown at the bottom (see Figure 2A) from a simulation run with 0.9* the modified weight matrix shown in (A3). (C) Posterior matrices of decoded positions from spikes (see Figure 1E) within two selected high-activity periods (8th and 10th from B). From left to right: decoding of replay in first environment (eighth event from B) according to the first (significant) and second environment; decoding of replay in second environment (10th event from B) according to the first and second (significant) environment. (D) Analysis of selected network dynamics indicators across different E-E weight scaling factors (0.7–1.1) as in Figure 3B.
 
-## Manipulating the model reveals mechanisms of SWR generation and sequence replay
+### Manipulating the model reveals mechanisms of SWR generation and sequence replay
 
 Our network model, equipped with structured recurrent excitation resulting from learning, was able to robustly reproduce recurring sharp wave events accompanied by bidirectional sequence replay and ripple oscillations. Next, we set out to modify this excitatory weight matrix to gain a more causal understanding of how the learned weight pattern is related to the emergent spontaneous dynamics of the network.
 
-## Symmetric STDP rule is necessary for bidirectional replay
+#### Symmetric STDP rule is necessary for bidirectional replay
 
 First, in order to gauge the significance of the experimentally determined symmetric STDP rule, we changed the STDP kernel to the classical asymmetric one that characterizes many other connections in the nervous system (Figure 5A–C; Bi and Poo, 1998; Gerstner et al., 2014). In this case, the learned weight matrix was reminiscent of the feedforward chains that characterized several of the earlier models of hippocampal replay (Jahnke et al., 2015; Chenkov et al., 2017; Theodoni et al., 2018). We found that this weight structure also supported the generation of SWR events and the reactivation of learned sequences in our model; however, crucially, sequence replays occurred only in the forward direction (Figure 5D and E). Theodoni et al., 2018 presented a thorough analysis of the relationship between the shape of the (asymmetric) plasticity kernel and sequence replay in a rate-based model, and thus we shifted our focus towards different modifications.
 
@@ -85,7 +117,7 @@ First, in order to gauge the significance of the experimentally determined symme
 
 **Figure 5.:** (A) Asymmetric STDP kernel used in the learning phase. (B) Learned excitatory recurrent weight matrix. (C) Distribution of nonzero synaptic weights in the weight matrix shown in (B). (D) Pyramidal cell (PC) raster plot on top and PC population rate at the bottom (see Figure 2A) from a simulation run with the weight matrix shown in (B). (E) Posterior matrix of the decoded positions from spikes (see Figure 1E) within a selected high-activity state (sixth one from D). (F) Analysis of selected network dynamics indicators across different E-E weight scaling factors (0.8–1.2) as in Figure 3B.
 
-## The structure rather than the statistics of recurrent excitatory weights is critical for SWRs
+#### The structure rather than the statistics of recurrent excitatory weights is critical for SWRs
 
 Inspired by the observation that many network-level properties, such as single PC firing rates, burst index, and participation in SWR events, follow a skewed, lognormal distribution in vivo (Mizuseki and Buzsáki, 2013), Omura et al., 2015 built a network model with recurrent excitatory weights following a lognormal distribution. Their network with unstructured, but lognormally distributed, recurrent synaptic strengths reproduced most of the in vivo observations of Mizuseki and Buzsáki, 2013; however, no sequence replay or ripple oscillation was involved. In the network presented here, the distribution of PC-PC weights is the result of the application of STDP to the generated spike trains and does not strictly follow a lognormal distribution, although it has a similar long tail (Figure 6D2). In order to establish whether the overall distribution or the fine structure of the weights is the key determinant of neural dynamics in our model, we performed two more drastic perturbations of the recurrent weight matrix itself, starting from the version established in the learning phase of our baseline model (Figure 1C).
 
@@ -99,7 +131,7 @@ The second modification kept the same overall weight distribution and even the a
 
 Taken together, these modifications suggest that, unlike in the model of Omura et al., 2015, the distribution of the excitatory recurrent synaptic weights is neither necessary nor sufficient for the observed physiological population activity in our model. In other words, our simulation results suggest that the fine structure of recurrent excitation not only enables coding (sequence replay), but also has a major effect on the global average network dynamics (firing rates, sharp waves, and ripple oscillations) in hippocampal area CA3.
 
-## Cellular adaptation is necessary for replay
+#### Cellular adaptation is necessary for replay
 
 As mentioned earlier, most previous models with symmetrical local excitatory interactions and global feedback inhibition functioned as ‘bump attractor’ networks, in which the dynamics converge to stable patterns of activity involving high rates in a group of neurons with similar tuning properties (adjacent place fields), and suppressed firing in the rest of the excitatory population (Zhang, 1996; Samsonovich and McNaughton, 1997; Káli and Dayan, 2000; Compte et al., 2000). Recent work with rate-based models has also shown that these ‘stable bumps’ can be transformed into ‘traveling bumps’ by the introduction of short-term depression (York and van Rossum, 2009; Romani and Tsodyks, 2015; Theodoni et al., 2018) or spike threshold adaptation (Itskov et al., 2011; Azizi et al., 2013). On the other hand, previous spiking models of sequence learning and recall/replay typically relied on temporally asymmetric learning rules and the resulting asymmetric weight matrices to ensure that neurons are reactivated in the same sequence as during learning (Jahnke et al., 2015; Chenkov et al., 2017), which is also why it is difficult for these models to capture bidirectional replay. Chenkov et al., 2017 also explored the effects of symmetric connectivity patterns in a spiking network with local feedback inhibition and demonstrated the possibility of bidirectional replay, but the excitatory weights in their models were hard-wired rather than learned. Our model uses the experimentally recorded symmetric STDP rule, which results in symmetrical synaptic interactions (although only at the population level rather than the single-neuron level due to the randomness of connectivity). Since our network generated a bump of activity that traveled unidirectionally in any given replay event rather than a stationary bump, we hypothesized that the cellular-level adaptation that characterized CA3 PCs and was also captured by our model may destabilize stable bumps and lead to their constant movement.
 
@@ -109,7 +141,7 @@ To test this hypothesis, we refitted our single-cell data on PC responses to cur
 
 **Figure 7.:** (A) Voltage traces of fitted AdExpIF (blue) and ExpIF (gray) PC models and experimental traces (green) are shown in the top panel. Insets show the f–I curves of the in vitro and in silico cells. The amplitudes of the 800-ms-long step current injections shown at the bottom were as follows: –0.04, 0.15, and 0.6 nA. For parameters of the cell models, see Table 2. (B) PC raster plot of a 10-s-long simulation with the ExpIF PC models, showing stationary activity in the top panel. PC population rate is shown below.
 
-## Ripple oscillations are generated by the recurrently coupled inhibitory population
+#### Ripple oscillations are generated by the recurrently coupled inhibitory population
 
 From the weight matrix modifications, we also learned that ripple oscillations can be disentangled from sequence replays and only require sufficient drive to the interconnected PVBC population in our model (Figure 6F). The same conclusion was reached by recent optogenetic studies in vitro (Ellender et al., 2010; Schlingloff et al., 2014) and in vivo (Stark et al., 2014). To further investigate the generation of ripples in our model, we simulated and analyzed two additional modified versions of the full network.
 
@@ -125,11 +157,11 @@ Several experiments have shown that local application of GABA blockers eliminate
 
 Using a data-driven network model of area CA3 of the hippocampus that reproduces the main characteristics of SWRs, we examined the link between learning during exploration and the network dynamics in resting periods. Our principal findings from analyzing and manipulating this model are as follows: (1) structured (learned) recurrent excitation in the CA3 region not only enables coding and memory, but is critical for the generation of SWRs as well; (2) the symmetric STDP rule described by Mishra et al., 2016, in combination with cellular adaptation in CA3 PCs, provides an explanation for the coexistence of forward and reverse replays; (3) the pattern of strong connections in the network rather than the overall weight statistics may be critical for the emergence and key properties of SWRs and replay in area CA3; and (4) ripple oscillations are generated in the strongly driven, recurrently connected network of fast-spiking PVBCs by the FINO mechanism (Schlingloff et al., 2014) (also known as PYR-INT-INT [Stark et al., 2014; Buzsáki, 2015; Ramirez-Villegas et al., 2018]).
 
-## Connections of sharp waves, sequence replay, and ripple oscillations
+### Connections of sharp waves, sequence replay, and ripple oscillations
 
 SWRs represent the most synchronous physiological activity pattern with the largest excitatory gain in the mammalian brain (Buzsáki et al., 1983; Buzsáki et al., 1992; Buzsáki, 1989; Buzsáki, 2015). Under normal conditions, ripples are typically observed riding on top of naturally emerging sharp waves. More recently, using optogenetics, Schlingloff et al., 2014 and Stark et al., 2014 managed to decouple ripples from sharp waves by directly and indirectly activating the interconnected network of PVBCs. Our in silico results perfectly parallel this work: without drastic, nonphysiological modifications of the model ripples were always tied to sequence replay, which was in turn associated with bouts of increased spiking activity in the network (the sharp waves). When we separated the PVBC network, we found that a relatively high (>2 Hz) mean firing rate in the PC population was required for inducing ripple oscillation, a condition that was satisfied only during sharp wave events and the associated sequence replay in our full baseline network. When the PC population reaches this frequency after a stochastically initiated buildup period (Schlingloff et al., 2014), the strongly driven, high-frequency firing of PVBCs is synchronized and phase-locked via reciprocal inhibition. Thus, the learned recurrent PC-PC synaptic weights are responsible for coding, govern sequence replay, and, by giving rise to high PC activity during the replay, they also cause the ripples. In summary, memory storage and recall, as well as the main hippocampal oscillations and transient activity patterns, are intimately interconnected in our unifying model.
 
-## Experimental predictions
+### Experimental predictions
 
 The identification of the mechanisms in the model through which specific synaptic interactions, plasticity, and cellular properties give rise to sequence generation and particular aspects of population dynamics (sharp waves and ripple oscillations) also allows us to make explicit experimental predictions. Although some of the manipulations that we used to probe our model (such as shuffling the weights) are not feasible in the biological system, others could probably be replicated using modern (e.g., optogenetic or chemogenetic) tools. As an important example, our model predicts that selectively blocking recurrent inhibitory connections between PVBCs should completely eliminate ripple oscillations, while having only minor quantitative effects (through modifying the effective gain of feedback inhibition of PCs) on sharp waves and sequence replay. By contrast, blocking or substantially attenuating recurrent excitatory interactions in area CA3 is expected to simultaneously eliminate sharp waves, ripple oscillations, and autonomous sequence replay.
 
@@ -139,9 +171,50 @@ Experimental studies focusing on conventional forms of sequence reactivation fou
 
 Finally, our modeling results also suggest that it would be critical to explore whether the unusual, temporally symmetric STDP rule uncovered by Mishra et al., 2016 correctly describes the plasticity of CA3 excitatory recurrent collaterals under all physiological circumstances, or perhaps the rule is different (not entirely symmetric or even antisymmetric) under some conditions in vivo, for example, depending on behavioral variables and the associated pattern of subcortical inputs. One specific prediction of our model is that any factors that change the symmetric nature of the plasticity rule during exploration should alter the balance of forward and backward replay events during subsequent SWRs.
 
-## Biological plausibility of the model
+### Biological plausibility of the model
 
 The network model presented here was constrained strongly by the available experimental data. Many cellular and synaptic parameters were fit directly to in vitro measurements, and most functional parameters correspond to in vivo recordings of hippocampal place cells. Nevertheless, there are certainly many biological features that are currently missing from our model. We do not see this as a major limitation of our study as our goal was to provide a mechanistic explanation for a core set of phenomena by identifying the key underlying biological components and interactions. On the other hand, our model can be systematically refined and extended, especially when new experimental data become available. The main assumptions we made when constructing the model are explicitly stated in Table 1. Here, we briefly discuss some of these assumptions, as well as some remaining discrepancies between our simulation results and the corresponding experimental data.
+
+**Table 1.**
+ List of modeling assumptions.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>In the absence of unified datasets, it was assumed that published parameters from different animals (mouse/rat, strain, sex, age) can be used together to build a general model.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Connection probabilities were assumed to depend only on the presynaptic cell type and to be independent of distance.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Each pyramidal cell was assumed to have a place field in any given environment with a probability of 50%. For simplicity, multiple place fields were not allowed.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>When constructing the ‘teaching spike trains’ during simulated exploration, place fields were assumed to have a uniform size, tuning curve shape, and maximum firing rate.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>For simplicity, all synaptic interactions in the network were modeled as deterministic conductance changes. Short-term plasticity was not included, and long-term plasticity was assumed to operate only in the learning phase.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>When considering the nonspecific drive to the network in the offline state, it was assumed that the external input can be modeled as uncorrelated random spike trains (one per cell) activating strong synapses (representing the mossy fibers) in the pyramidal cell population.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Some fundamental assumptions are inherited from common practices in computational neuroscience; these include modeling spike trains as Poisson processes, capturing weight changes with additive spike-timing-dependent plasticity, describing cells with single-compartmental AdExpIF models, modeling a neuronal population with replicas of a single model, and representing synapses with conductance-based models with biexponential kinetics.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>When comparing our model to in vivo data, an implicit assumption was that the behavior of a simplified model based on slice constraints can generalize to the observed behavior of the full CA3 region in vivo, in the context of studying the link between activity-dependent plasticity and network dynamics.</td>
+    </tr>
+  </tbody>
+</table>
 
 The 10% PC-PC connection probability is based on the classical viewpoint that considers the CA3 region as a highly interconnected network (Lisman, 1999; Andersen et al., 2007). Although a recent physiological study (Guzman et al., 2016) estimated <1% connection probability in 400-µm-thick slices, the authors concluded from ‘virtual slicing’ experiments that recurrent axons were substantially reduced. This is in agreement with Li et al., 1994, who reported at least 70% axonal loss in 400 µm slices. Thus, the in vivo connection probability is likely to be considerably higher than 1%. Furthermore, due to the long-tailed distribution of synaptic weights, many of the anatomically existing connections that are represented in our model may be too weak to be reliably detected in paired recording experiments.
 
@@ -157,7 +230,7 @@ One substantial difference between SWRs in the model and those recorded in vivo 
 
 Finally, we have presented our work as a model of the hippocampal CA3 area. This is because this area is known to be able to generate SWRs on its own, has modifiable recurrent connections that are thought to be essential for memory, and there are sufficient experimental data from this region to constrain the model. However, other cortical regions such as CA2, the subiculum, and entorhinal cortex are likely involved in the initiation of SWRs under normal conditions (Oliva et al., 2016; Oliva et al., 2020), and the mechanisms we describe here may be operational in these and other brain areas as well.
 
-## Previous models of SWRs and sequence replay
+### Previous models of SWRs and sequence replay
 
 In this study, our main objective was to build a simplified, yet powerful model of area CA3 that is constrained by experimental data at all (possible) levels, and thus allows us to uncover the mechanistic links between learning, neural population dynamics, and the representation of spatial (or other) sequences in the hippocampus during different behavioral states. Although there is a plethora of hippocampal models that shed light on some of these aspects (these models have been recently reviewed [Buzsáki, 2015; Jahnke et al., 2015] and are also cited when relevant throughout the ‘Results’ section), there are only a handful of recent models that attempted to treat all of them within a single coherent framework.
 
@@ -171,7 +244,7 @@ To our best knowledge, ours is the first model that autonomously generates SWRs 
 
 We believe that our approach of fitting the parameters of our single-cell models directly to experimental data to mimic the physiological spiking behavior of real PCs and PVBCs is also quite unique. This enabled our models of PCs to capture spike frequency adaptation, which proved to be essential for the generation of propagating activity (sequence replay) despite the essentially symmetric nature of synaptic interactions.
 
-## Conclusions
+### Conclusions
 
 At a more general level, our results highlight the significance of some previously neglected interactions between three fundamental components of brain function: population dynamics, coding, and plasticity. Specifically, the different types of population dynamics (including oscillations and transients such as sharp waves) are mostly seen as a background over which coding and plasticity occur, while the impacts of plasticity and especially neural representations on the generation of population activity patterns are rarely considered. However, our results strongly suggest that the structured network interactions resulting from activity-dependent learning (or development) lead to specific spatio-temporal activity patterns (such as autonomously generated replay sequences), which are in turn critical for the emergence of physiological population activity (such as sharp waves and ripple oscillations). Therefore, our study indicates that the complex structure of synaptic interactions in neuronal networks may have a hitherto unappreciated degree of control over the general mode of activity in the network and should be taken into account by future theories and models of population activity patterns in any part of the nervous system.
 
@@ -183,70 +256,268 @@ Only PCs received external input; during exploration, they were activated direct
 
 Network simulations were run in Brian2 (Stimberg et al., 2019). Learning of the structure of recurrent excitation, single-cell and network optimization, and the analysis of the network simulations are detailed in the following sections. A comprehensive list of assumptions made during the model building process is presented in Table 1.
 
-## Spike trains during exploration
+### Spike trains during exploration
 
-Spike trains mimicking CA3 PC activity during exploration were generated with exponentially distributed interspike intervals (ISIs) with mean 1/λ, giving rise to Poisson processes. Spike trains of nonplace cells had constant mean firing rates of λ=0.1 Hz. For the spike trains of the randomly selected 4000 place cells, homogeneous Poisson processes with λ=20 Hz were generated, and spike times were accept-reject sampled with acceptance probability coming from place cell-like tuning curves (Equation (2)), which led to inhomogeneous Poisson processes with time-dependent rate λ⁢(t). Tuning curves were modeled as Gaussians centered at randomly distributed positions and standard deviation (σ) set to cover 10% of the 3-m-long linear track (Equation (1)). Edges of the place fields were defined where the firing rate dropped to 10% of the maximal 20 Hz (Dragoi and Buzsáki, 2006). Tuning curves were also modulated in time by the background fθ=7 Hz theta activity, and phase precessed up to 180° at the beginning of the place field (O’Keefe and Recce, 1993). The firing rate of the ith place cell was calculated as follows:(1)τi⁢(x)=exp⁡(-(x-miP⁢F)22⁢σ2)(2)λi⁢(t)=λm⁢a⁢x×τi⁢(x⁢(t))×cos⁡(2⁢π⁢fθ⁢t+πlP⁢F⁢(x⁢(t)-siP⁢F))
+Spike trains mimicking CA3 PC activity during exploration were generated with exponentially distributed interspike intervals (ISIs) with mean $1/\lambda$, giving rise to Poisson processes. Spike trains of nonplace cells had constant mean firing rates of $\lambda=0.1$ Hz. For the spike trains of the randomly selected 4000 place cells, homogeneous Poisson processes with $\lambda=20$ Hz were generated, and spike times were accept-reject sampled with acceptance probability coming from place cell-like tuning curves (Equation (2)), which led to inhomogeneous Poisson processes with time-dependent rate $\lambda⁢(t)$. Tuning curves were modeled as Gaussians centered at randomly distributed positions and standard deviation ($\sigma$) set to cover 10% of the 3-m-long linear track (Equation (1)). Edges of the place fields were defined where the firing rate dropped to 10% of the maximal 20 Hz (Dragoi and Buzsáki, 2006). Tuning curves were also modulated in time by the background $f_{\theta}=7$ Hz theta activity, and phase precessed up to 180° at the beginning of the place field (O’Keefe and Recce, 1993). The firing rate of the $i$th place cell was calculated as follows:
 
-where τi⁢(x) is the spatial tuning curve of the ith neuron, x⁢(t) is the position of the animal, miP⁢F, lP⁢F=0.3 m, and siP⁢F are the middle, length, and start of the given place field, respectively; λm⁢a⁢x=20 Hz is the maximum in-field firing rate.
+$$
+\tau_{i}⁢(x)=exp⁡(\frac{-(x-m_{i}^{P⁢F})^{2}}{2⁢\sigma^{2}})
+$$
+
+
+
+$$
+\lambda_{i}⁢(t)=\lambda_{m⁢a⁢x}\times\tau_{i}⁢(x⁢(t))\timescos⁡(2⁢\pi⁢f_{\theta}⁢t+\frac{\pi}{l^{P⁢F}}⁢(x⁢(t)-s_{i}^{P⁢F}))
+$$
+
+where $\tau_{i}⁢(x)$ is the spatial tuning curve of the $i$th neuron, $x⁢(t)$ is the position of the animal, $m_{i}^{P⁢F}$, $l^{P⁢F}=0.3$ m, and $s_{i}^{P⁢F}$ are the middle, length, and start of the given place field, respectively; $\lambda_{m⁢a⁢x}=20$ Hz is the maximum in-field firing rate.
 
 Spikes within a 5 ms refractory period of the previous spike were always rejected. The speed of the animal was set to 32.5 cm/s, thus each run took ∼9.2 s, after which the animal was immediately ‘teleported back’ to the start of the linear track. Generated spike trains were 400 s long, leading to ∼43 repetitions on the same linear track.
 
-## Learning via STDP
+### Learning via STDP
 
-STDP was implemented by an additive pair-based learning rule, evaluated at spike arrivals (Kempter et al., 1999; Gerstner et al., 2014). Synaptic weights evolved as follows:(3)Δw+=A+exp⁡(−Δtτ+) at tpost if tpre<tpost(4)Δw−=A−exp⁡(Δtτ−) at tpre if tpre>tpost
+STDP was implemented by an additive pair-based learning rule, evaluated at spike arrivals (Kempter et al., 1999; Gerstner et al., 2014). Synaptic weights evolved as follows:
 
-where Δ⁢t=tp⁢o⁢s⁢t-tp⁢r⁢e is the time difference between action potentials, and A± describes the weight update, which decayed exponentially with time constants τ±. Synaptic weights were cropped at wm⁢a⁢x=20 nS. To reproduce the broad STDP curve presented in Mishra et al., 2016, τ±=62.5 ms was used. In the classical asymmetric STDP rules, A+ is positive, while A- is negative; here, both of them were set to 80 pA to obtain a symmetric STDP curve (Mishra et al., 2016). In simulations using the asymmetric STDP rule, τ±=20 ms, A+=400 pA, A-=-400 pA, and wm⁢a⁢x=40 nS were used. In both cases, PCs were sparsely connected (Table 3) and weights were initialized to 0.1 nS. In the learning phase, the intrinsic dynamics of the PCs were not modeled explicitly since only the timing of their spikes mattered, which was set directly as described above. No self-connections were allowed, and diagonal elements of the learned recurrent weight matrix were always set to zero after any modification.
+$$
+Δw_{+}=A_{+}exp⁡(−\frac{Δt}{\tau_{+}}) at t_{post} if t_{pre}<t_{post}
+$$
 
-## In vitro electrophysiology
+
+
+$$
+Δw_{−}=A_{−}exp⁡(\frac{Δt}{\tau_{−}}) at t_{pre} if t_{pre}>t_{post}
+$$
+
+where $Δ⁢t=t_{p⁢o⁢s⁢t}-t_{p⁢r⁢e}$ is the time difference between action potentials, and $A_{\pm}$ describes the weight update, which decayed exponentially with time constants $\tau_{\pm}$. Synaptic weights were cropped at $w_{m⁢a⁢x}=20$ nS. To reproduce the broad STDP curve presented in Mishra et al., 2016, $\tau_{\pm}=62.5$ ms was used. In the classical asymmetric STDP rules, $A_{+}$ is positive, while $A_{-}$ is negative; here, both of them were set to 80 pA to obtain a symmetric STDP curve (Mishra et al., 2016). In simulations using the asymmetric STDP rule, $\tau_{\pm}=20$ ms, $A_{+}=400$ pA, $A_{-}=-400$ pA, and $w_{m⁢a⁢x}=40$ nS were used. In both cases, PCs were sparsely connected (Table 3) and weights were initialized to 0.1 nS. In the learning phase, the intrinsic dynamics of the PCs were not modeled explicitly since only the timing of their spikes mattered, which was set directly as described above. No self-connections were allowed, and diagonal elements of the learned recurrent weight matrix were always set to zero after any modification.
+
+### In vitro electrophysiology
 
 Somatic whole-cell patch-clamp recordings were performed in acute hippocampal slices as described before (Papp et al., 2013; Schlingloff et al., 2014; Kohus et al., 2016). PCs were recorded in the CA3 PC layer of juvenile control mice, while PVBCs were recorded in a targeted manner in transgenic mice that expressed enhanced green fluorescent protein controlled by the parvalbumin promoter (BAC-PV-eGFP) (Meyer et al., 2002). To characterize the physiological response properties of the neurons, hyperpolarizing and depolarizing current steps of various amplitudes were injected into the soma, and the voltage response of the cell was recorded. Injected current pulses had a duration of 800 ms, and amplitudes between –100 and 600 pA. Experimental traces were corrected for the theoretical liquid junction potential before further use.
 
-## Single-cell models
+### Single-cell models
 
-Neurons were modeled with the AdExpIF model (Naud et al., 2008; Gerstner et al., 2014). AdExpIF neurons are described by their membrane potential V⁢(t) and the adaptation variable w⁢(t), which obey(5)Cm⁢d⁢V⁢(t)d⁢t=-(gL⁢(V⁢(t)-Vr⁢e⁢s⁢t)-gL⁢Δ⁢T⁢exp⁡(V⁢(t)-ϑΔ⁢T)+Is⁢y⁢n⁢(t)+w⁢(t))(6)τw⁢d⁢w⁢(t)d⁢t=a⁢(V⁢(t)-Vr⁢e⁢s⁢t)-w⁢(t)
+Neurons were modeled with the AdExpIF model (Naud et al., 2008; Gerstner et al., 2014). AdExpIF neurons are described by their membrane potential $V⁢(t)$ and the adaptation variable $w⁢(t)$, which obey
 
-where Cm is the membrane capacitance, gL is the leak conductance, Vr⁢e⁢s⁢t is the reversal potential of the linear leak current (which is approximately equal to the resting potential), ϑ is the intrinsic spike threshold, Δ⁢T characterizes the ‘sharpness’ of the threshold, w⁢(t) is the adaptation current, and Is⁢y⁢n is the synaptic current (see below). When V⁢(t) crosses the firing threshold θ, it is reset to Vr⁢e⁢s⁢e⁢t and remains there for a refractory period tr⁢e⁢f. The adaptation current is also increased by a factor b at each spike arrival. The parameter a describes the strength of subthreshold adaptation.
+$$
+C_{m}⁢\frac{d⁢V⁢(t)}{d⁢t}=-(g_{L}⁢(V⁢(t)-V_{r⁢e⁢s⁢t})-g_{L}⁢Δ⁢T⁢exp⁡(\frac{V⁢(t)-ϑ}{Δ⁢T})+I_{s⁢y⁢n}⁢(t)+w⁢(t))
+$$
 
-To investigate the role of adaptation, an ExpIF PC model was also fit to the data. The ExpIF model is the same as Equation (5) without the w⁢(t) adaptation current (implemented as an AdExpIF model with parameters a and b set identically to zero). The parameters of all models were fit to experimental data from our somatic whole-cell recordings, and the voltage responses to current injections of four different amplitudes (including two subthreshold and two suprathreshold stimuli) were used in each case. Parameters were tuned using the Optimizer package (Friedrich et al., 2014) with the NEST simulator as backend (van Albada et al., 2015). Spike count, ISI distribution, latency to first spike, and mean squared error (excluding spikes) were used as equally weighted features. After comparing different optimization techniques, the final parameters presented here were obtained with an evolutionary algorithm implemented by the inspyred package (Garrett, 2012), running for 100 generations with a population size of 100. The parameters that yield the best models for the CA3 populations are summarized in Table 2.
 
-## Synapse models
 
-Synapses were modeled as conductances with biexponential kinetics:(7)g⁢(t)=g^⁢A⁢(exp⁡(-tτd)-exp⁡(-tτr))
+$$
+\tau_{w}⁢\frac{d⁢w⁢(t)}{d⁢t}=a⁢(V⁢(t)-V_{r⁢e⁢s⁢t})-w⁢(t)
+$$
 
-where g^ is the peak conductance (which will also be referred to as the synaptic weight) and τr and τd are rise and decay time constants, respectively. The normalization constant A=e⁢x⁢p⁢(-tpτd)-e⁢x⁢p⁢(-tpτr) was chosen such that the synapses reach their peak conductance at tp=τd⁢τr/(τd-τr)⁢l⁢o⁢g⁢(τd/τr) ms. Kinetic parameters were taken from the literature (Geiger et al., 1997; Bartos et al., 2002; Lee et al., 2014; Vyleta et al., 2016; Guzman et al., 2016) and are summarized in Table 3. The postsynaptic current contained AMPA receptor- and GABA-A receptor-mediated components, and was computed as(8)Is⁢y⁢n⁢(t)=gA⁢M⁢P⁢A⁢(t)⁢(V⁢(t)-Ee⁢x⁢c)+gG⁢A⁢B⁢A⁢(t)⁢(V⁢(t)-Ei⁢n⁢h)
+where $C_{m}$ is the membrane capacitance, $g_{L}$ is the leak conductance, $V_{r⁢e⁢s⁢t}$ is the reversal potential of the linear leak current (which is approximately equal to the resting potential), $ϑ$ is the intrinsic spike threshold, $Δ⁢T$ characterizes the ‘sharpness’ of the threshold, $w⁢(t)$ is the adaptation current, and $I_{s⁢y⁢n}$ is the synaptic current (see below). When $V⁢(t)$ crosses the firing threshold $\theta$, it is reset to $V_{r⁢e⁢s⁢e⁢t}$ and remains there for a refractory period $t_{r⁢e⁢f}$. The adaptation current is also increased by a factor $b$ at each spike arrival. The parameter $a$ describes the strength of subthreshold adaptation.
 
-where Ee⁢x⁢c=0 mV and Ei⁢n⁢h=-70 mV are the reversal potentials of excitatory and inhibitory currents, respectively.
+To investigate the role of adaptation, an ExpIF PC model was also fit to the data. The ExpIF model is the same as Equation (5) without the $w⁢(t)$ adaptation current (implemented as an AdExpIF model with parameters $a$ and $b$ set identically to zero). The parameters of all models were fit to experimental data from our somatic whole-cell recordings, and the voltage responses to current injections of four different amplitudes (including two subthreshold and two suprathreshold stimuli) were used in each case. Parameters were tuned using the Optimizer package (Friedrich et al., 2014) with the NEST simulator as backend (van Albada et al., 2015). Spike count, ISI distribution, latency to first spike, and mean squared error (excluding spikes) were used as equally weighted features. After comparing different optimization techniques, the final parameters presented here were obtained with an evolutionary algorithm implemented by the inspyred package (Garrett, 2012), running for 100 generations with a population size of 100. The parameters that yield the best models for the CA3 populations are summarized in Table 2.
 
-## Network optimization
+**Table 2.**
+ Optimized parameters of pyramidal cell (PC) (AdExpIF and ExpIF) and parvalbumin-containing basket cell (PVBC) models.Physical dimensions are as follows: $C_{m}$: pF; $g_{L}$ and $a$: nS; $V_{r⁢e⁢s⁢t}$, $Δ⁢T$, $ϑ$, $\theta$, and $V_{r⁢e⁢s⁢e⁢t}$: mV; $t_{r⁢e⁢f}$ and $\tau_{w}$: ms; $b$: pA.
 
-Synaptic weights of the network (five parameters in total) were optimized with an evolutionary algorithm using a custom written evaluator in BluePyOpt (Van Geit et al., 2016). The multiobjective fitness function ℱ, designed specifically for this network, included six separately weighted features (Equation (9)): physiological PC firing rate, no significant gamma oscillation in the PVBC population, significant ripple frequency oscillations in the rates of PC and PVBC populations, as well as high ripple vs. gamma power in the rates of the PC and PVBC populations:(9)F=[exp⁡(−(νPC−2)22×0.52),δ(fγPVBC),exp⁡(−(frPC−180)22×202),2×exp⁡(−(frPVBC−180)22×202),∑P(ωrPC)∑P(ωγPC)|[0,5],2×∑P(ωrPVBC)∑P(ωγPVBC)|[0,5]]
 
-where ν is the firing rate; δ(fγPVBC) is 1 if no significant gamma oscillation was detected in the PVBC population rate, and 0 otherwise; fr and fγ are significant peaks in the ripple and gamma range (see below) of the PSD of the firing rate, respectively; P⁢(ωr) and P⁢(ωγ) are the periodogram values within the gamma and ripple bands of the firing rate, respectively, while the sums represent the total power within the relevant frequency bands (as below). Ripple/gamma power ratios used for the optimization were clipped to fall into [0, 5]. As in the case of the network simulations (see above), spectral features were extracted only in those time windows when the PC firing rate exceeded the 2 Hz high-activity state detection threshold. Sequence replay was not analyzed during the optimization. Optimizations were run with 50 offspring for 10 generations. Synaptic weights were varied in the [0.1, 5] nS range, except the ‘detonator’ mossy fiber ones that were given a higher [15, 30] nS range (Henze et al., 2002; Vyleta et al., 2016). For the learned recurrent excitatory weights, an additional scaling factor was introduced. All learned weights are presented with this optimized scale factor (0.62 for symmetric and 1.27 for asymmetric STDP rule) taken into account. Final weights are presented in Table 3. The ExpIF PC model required much higher synaptic drive to fire at the same frequency as the AdExpIF model, thus the mossy fiber input weight was doubled (38.3 nS) when ExpIF PC models were used.
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Cm</th>
+      <th>gL</th>
+      <th>Vr⁢e⁢s⁢t</th>
+      <th>Δ⁢T</th>
+      <th>ϑ</th>
+      <th>θ</th>
+      <th>Vr⁢e⁢s⁢e⁢t</th>
+      <th>tr⁢e⁢f</th>
+      <th>τw</th>
+      <th>a</th>
+      <th>b</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PC</td>
+      <td>180.13</td>
+      <td>4.31</td>
+      <td>–75.19</td>
+      <td>4.23</td>
+      <td>–24.42</td>
+      <td>–3.25</td>
+      <td>–29.74</td>
+      <td>5.96</td>
+      <td>84.93</td>
+      <td>–0.27</td>
+      <td>206.84</td>
+    </tr>
+    <tr>
+      <td>PC</td>
+      <td>344.18</td>
+      <td>4.88</td>
+      <td>–75.19</td>
+      <td>10.78</td>
+      <td>–28.77</td>
+      <td>25.13</td>
+      <td>–58.82</td>
+      <td>1.07</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PVBC</td>
+      <td>118.52</td>
+      <td>7.51</td>
+      <td>–74.74</td>
+      <td>4.58</td>
+      <td>–57.71</td>
+      <td>–34.78</td>
+      <td>–64.99</td>
+      <td>1.15</td>
+      <td>178.58</td>
+      <td>3.05</td>
+      <td>0.91</td>
+    </tr>
+  </tbody>
+</table>
 
-## LFP estimate
+### Synapse models
 
-An estimate of the LFP was calculated by summing the synaptic currents of a randomly selected subset of N=400 PCs (Mazzoni et al., 2008). This approach is essentially equivalent to using ‘transmembrane’ currents to calculate the field potential at an arbitrary sampling point xe using volume conduction theory and the forward model (Einevoll et al., 2013):(10)V⁢(xe,t)=14⁢π⁢σ⁢∑n=1NIn⁢(t)|xe-xn|
+Synapses were modeled as conductances with biexponential kinetics:
 
-where σ=1/3.54 S/m is the extracellular conductivity and In⁢(t) denotes the transmembrane currents of the nth neuron. There was no attempt to replicate the spatial organization of CA3 PCs, and a uniform |xe-xn|=1⁢μ⁢m distance from the sampling point was used (note that this choice affects the results only as a constant scaling factor). The resulting signal was low-pass filtered at 500 Hz with a third-order Butterworth filter.
+$$
+g⁢(t)=g^⁢A⁢(exp⁡(-\frac{t}{\tau_{d}})-exp⁡(-\frac{t}{\tau_{r}}))
+$$
 
-## Spectral analysis
+where $g^$ is the peak conductance (which will also be referred to as the synaptic weight) and $\tau_{r}$ and $\tau_{d}$ are rise and decay time constants, respectively. The normalization constant $A=e⁢x⁢p⁢(-\frac{t_{p}}{\tau_{d}})-e⁢x⁢p⁢(-\frac{t_{p}}{\tau_{r}})$ was chosen such that the synapses reach their peak conductance at $t_{p}=\tau_{d}⁢\tau_{r}/(\tau_{d}-\tau_{r})⁢l⁢o⁢g⁢(\tau_{d}/\tau_{r})$ ms. Kinetic parameters were taken from the literature (Geiger et al., 1997; Bartos et al., 2002; Lee et al., 2014; Vyleta et al., 2016; Guzman et al., 2016) and are summarized in Table 3. The postsynaptic current contained AMPA receptor- and GABA-A receptor-mediated components, and was computed as
 
-Power spectral density (PSD) was estimated by Welch’s method with a Hann window using 512 long segments in case of population rates (sampling frequency = 1 kHz) and 4096 long segments for LFP (see below, sampling frequency = 10 kHz) with 0.5 overlap. If the network showed multiple sequence replays during the 10-s-long simulations (most cases), only the detected high-activity states (see above) were analyzed and averaged to get rid of the high power at ~1.5 Hz, signaling the frequency of sequence replays. In this case, shorter segments (256 and 2048, respectively) were used to estimate the PSD. The significance of peaks in the power spectra in the gamma (30–100 Hz) and ripple (150–220 Hz) bands was evaluated using Fisher’s g-statistic (Fisher, 1929) defined as(11)g=maxk⁡(P⁢(ωk))∑k=1NP⁢(ωk)
+$$
+I_{s⁢y⁢n}⁢(t)=g_{A⁢M⁢P⁢A}⁢(t)⁢(V⁢(t)-E_{e⁢x⁢c})+g_{G⁢A⁢B⁢A}⁢(t)⁢(V⁢(t)-E_{i⁢n⁢h})
+$$
 
-where P⁢(ω) is the periodogram (Welch’s method estimates PSD by averaging periodograms from the short segments) evaluated at k discrete frequencies, N is the length of the periodogram, and ∑k=1NP⁢(ωk) is the total power of the spectrum. The distribution of g-statistics under the null hypothesis (H0) (Gaussian white noise) is given by(12)p=Pr(g*§gt;g)=∑k=1b(-1)k-1N!k!⁢(N-k)!(1-kg)N-1
+where $E_{e⁢x⁢c}=0$ mV and $E_{i⁢n⁢h}=-70$ mV are the reversal potentials of excitatory and inhibitory currents, respectively.
 
-where b is the largest integer less than 1/g. Large value of g (small p-value) indicates a strong periodic component and leads to the rejection of H0. Alpha level 0.05 was used throughout the study. To characterize nonsignificant oscillations too, gamma and ripple power (defined as the sum in the given frequency band divided by the total power in the 0–500 Hz range) were calculated as well. Time-frequency representations were created by convolving the firing rates (or LFP) with samples of the integral of the Morlet wavelet Ψ⁢(t)=e⁢x⁢p⁢(-t2/2)⁢c⁢o⁢s⁢(5⁢t) evaluated at the scales corresponding to the 25–325 Hz band using the pywt package (Lee et al., 2006).
+**Table 3.**
+ Synaptic parameters (taken from the literature or optimized).Physical dimensions are as follows: $g^$: nS; $\tau_{r}$, $\tau_{d}$, and td (synaptic delay): ms; and connection probability $p_{c⁢o⁢n⁢n}$ is dimensionless. GC stands for the granule cells of the dentate gyrus. ($G⁢C→P⁢C$ synapses are referred as mossy fibers.) Sym. and asym. indicate maximal conductance parameters obtained for networks trained with the symmetric and the asymmetric spike-timing-dependent plasticity (STDP) kernel, respectively. PC: pyramidal cell; PVBC: parvalbumin-containing basket cell.
 
-## Replay analysis
 
-Sequence replay was analyzed with methods used by experimentalists having access to spike times of hundreds of identified neurons (Olafsdottir et al., 2018). Firstly, candidate replay events were selected based on the averaged (into 20 ms bins) PC population firing rate crossing the threshold of 2 Hz for at least 260 ms. Secondly, the animal’s position was estimated with a memoryless Bayesian place decoder based on the observed spikes within the selected time windows (Davidson et al., 2009; Karlsson and Frank, 2009). Only spikes from the N=4000 place cells were used. For numerical stability, log likelihoods were calculated:(13)log⁡(P⁢r⁢(s⁢p⁢i⁢k⁢e⁢s|x))=∑i=1Nni⁢log⁡(Δ⁢T⁢τi⁢(x)ni!)-Δ⁢T⁢∑i=1Nτi⁢(x)
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">g^</th>
+      <th>τr</th>
+      <th>τd</th>
+      <th>td</th>
+      <th>pc⁢o⁢n⁢n</th>
+    </tr>
+    <tr>
+      <th>Sym.</th>
+      <th>Asym.</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PC→ PC</td>
+      <td>0.1–6.3</td>
+      <td>0–15</td>
+      <td>1.3</td>
+      <td>9.5</td>
+      <td>2.2</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>PC→ PVBC</td>
+      <td colspan="2">0.85</td>
+      <td>1</td>
+      <td>4.1</td>
+      <td>0.9</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>PVBC→ PC</td>
+      <td colspan="2">0.65</td>
+      <td>0.3</td>
+      <td>3.3</td>
+      <td>1.1</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>PVBC→ PVBC</td>
+      <td colspan="2">5</td>
+      <td>0.25</td>
+      <td>1.2</td>
+      <td>0.6</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>GC→ PC</td>
+      <td>19.15</td>
+      <td>21.5</td>
+      <td>0.65</td>
+      <td>5.4</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
-where ni is the number of spikes of the ith neuron within the Δ⁢T=10-ms-long, nonoverlapping time bins, and τi⁢(x) is the tuning curve used for spike train generation (Equation (1)). The 3-m-long linear track was binned into 50 intervals, resulting in 6 cm spatial resolution. Thirdly, constant velocity v neural trajectories were detected with a 2D band finding method in the decoded posterior matrix (Davidson et al., 2009). For candidate events consisting of n time bins, the average likelihood R that the animal is within distance d=18 cm of a particular trajectory is given by(14)R(v,x0)=1n∑k=0n-1Pr(|x-(x0+vkΔT)|≤d)
+### Network optimization
 
-where x0 is the starting position of the trajectory. R⁢(v,x0) was maximized using an exhaustive search to test all combinations of v between –18 m/s and 18 m/s in 0.3 ms/s increments (excluding slow trajectories with speed ∈[-0.3,0.3] m/s) and x0 between –1.5 m and 4.5 m in 3 cm increments. Lastly, to determine the significance of replay, Rm⁢a⁢x was compared to the best-line fits of 100 posterior probability matrices generated by shuffling the identities of cells included in the candidate event. Only events with Rm⁢a⁢x values exceeding the 95th percentile of their own shuffled distribution were labeled as replay.
+Synaptic weights of the network (five parameters in total) were optimized with an evolutionary algorithm using a custom written evaluator in BluePyOpt (Van Geit et al., 2016). The multiobjective fitness function $ℱ$, designed specifically for this network, included six separately weighted features (Equation (9)): physiological PC firing rate, no significant gamma oscillation in the PVBC population, significant ripple frequency oscillations in the rates of PC and PVBC populations, as well as high ripple vs. gamma power in the rates of the PC and PVBC populations:
+
+$$
+F=[exp⁡(−\frac{(ν_{PC}−2)^{2}}{2\times0.5^{2}}),\delta(f_{\gammaPVBC}),exp⁡(−\frac{(f_{rPC}−180)^{2}}{2\times20^{2}}),2\timesexp⁡(−\frac{(f_{rPVBC}−180)^{2}}{2\times20^{2}}),\frac{\sumP(\omega_{rPC})}{\sumP(\omega_{\gammaPC})}|_{[0,5]},2\times\frac{\sumP(\omega_{rPVBC})}{\sumP(\omega_{\gammaPVBC})}|_{[0,5]}]
+$$
+
+where $ν$ is the firing rate; $\delta$($f_{\gamma}$PVBC) is 1 if no significant gamma oscillation was detected in the PVBC population rate, and 0 otherwise; $f_{r}$ and $f_{\gamma}$ are significant peaks in the ripple and gamma range (see below) of the PSD of the firing rate, respectively; $P⁢(\omega_{r})$ and $P⁢(\omega_{\gamma})$ are the periodogram values within the gamma and ripple bands of the firing rate, respectively, while the sums represent the total power within the relevant frequency bands (as below). Ripple/gamma power ratios used for the optimization were clipped to fall into [0, 5]. As in the case of the network simulations (see above), spectral features were extracted only in those time windows when the PC firing rate exceeded the 2 Hz high-activity state detection threshold. Sequence replay was not analyzed during the optimization. Optimizations were run with 50 offspring for 10 generations. Synaptic weights were varied in the [0.1, 5] nS range, except the ‘detonator’ mossy fiber ones that were given a higher [15, 30] nS range (Henze et al., 2002; Vyleta et al., 2016). For the learned recurrent excitatory weights, an additional scaling factor was introduced. All learned weights are presented with this optimized scale factor (0.62 for symmetric and 1.27 for asymmetric STDP rule) taken into account. Final weights are presented in Table 3. The ExpIF PC model required much higher synaptic drive to fire at the same frequency as the AdExpIF model, thus the mossy fiber input weight was doubled (38.3 nS) when ExpIF PC models were used.
+
+### LFP estimate
+
+An estimate of the LFP was calculated by summing the synaptic currents of a randomly selected subset of $N=400$ PCs (Mazzoni et al., 2008). This approach is essentially equivalent to using ‘transmembrane’ currents to calculate the field potential at an arbitrary sampling point xe using volume conduction theory and the forward model (Einevoll et al., 2013):
+
+$$
+V⁢(x_{e},t)=\frac{1}{4⁢\pi⁢\sigma}⁢\sumn=1N\frac{I_{n}⁢(t)}{|x_{e}-x_{n}|}
+$$
+
+where $\sigma=1/3.54$ S/m is the extracellular conductivity and $I_{n}⁢(t)$ denotes the transmembrane currents of the $n$th neuron. There was no attempt to replicate the spatial organization of CA3 PCs, and a uniform $|x_{e}-x_{n}|=1⁢\mu⁢m$ distance from the sampling point was used (note that this choice affects the results only as a constant scaling factor). The resulting signal was low-pass filtered at 500 Hz with a third-order Butterworth filter.
+
+### Spectral analysis
+
+Power spectral density (PSD) was estimated by Welch’s method with a Hann window using 512 long segments in case of population rates (sampling frequency = 1 kHz) and 4096 long segments for LFP (see below, sampling frequency = 10 kHz) with 0.5 overlap. If the network showed multiple sequence replays during the 10-s-long simulations (most cases), only the detected high-activity states (see above) were analyzed and averaged to get rid of the high power at ~1.5 Hz, signaling the frequency of sequence replays. In this case, shorter segments (256 and 2048, respectively) were used to estimate the PSD. The significance of peaks in the power spectra in the gamma (30–100 Hz) and ripple (150–220 Hz) bands was evaluated using Fisher’s g-statistic (Fisher, 1929) defined as
+
+$$
+g=\frac{max_{k}⁡(P⁢(\omega_{k}))}{\sum_{k=1}^{N}P⁢(\omega_{k})}
+$$
+
+where $P⁢(\omega)$ is the periodogram (Welch’s method estimates PSD by averaging periodograms from the short segments) evaluated at $k$ discrete frequencies, $N$ is the length of the periodogram, and $\sum_{k=1}^{N}P⁢(\omega_{k})$ is the total power of the spectrum. The distribution of g-statistics under the null hypothesis (H0) (Gaussian white noise) is given by
+
+$$
+p=Pr(g^{*}§gt;g)=\sumk=1b(-1)^{k-1}\frac{N!}{k!⁢(N-k)!}(1-kg)^{N-1}
+$$
+
+where $b$ is the largest integer less than $1/g$. Large value of $g$ (small p-value) indicates a strong periodic component and leads to the rejection of H0. Alpha level 0.05 was used throughout the study. To characterize nonsignificant oscillations too, gamma and ripple power (defined as the sum in the given frequency band divided by the total power in the 0–500 Hz range) were calculated as well. Time-frequency representations were created by convolving the firing rates (or LFP) with samples of the integral of the Morlet wavelet $Ψ⁢(t)=e⁢x⁢p⁢(-t^{2}/2)⁢c⁢o⁢s⁢(5⁢t)$ evaluated at the scales corresponding to the 25–325 Hz band using the pywt package (Lee et al., 2006).
+
+### Replay analysis
+
+Sequence replay was analyzed with methods used by experimentalists having access to spike times of hundreds of identified neurons (Olafsdottir et al., 2018). Firstly, candidate replay events were selected based on the averaged (into 20 ms bins) PC population firing rate crossing the threshold of 2 Hz for at least 260 ms. Secondly, the animal’s position was estimated with a memoryless Bayesian place decoder based on the observed spikes within the selected time windows (Davidson et al., 2009; Karlsson and Frank, 2009). Only spikes from the $N=4000$ place cells were used. For numerical stability, log likelihoods were calculated:
+
+$$
+log⁡(P⁢r⁢(s⁢p⁢i⁢k⁢e⁢s|x))=\sumi=1Nn_{i}⁢log⁡(\frac{Δ⁢T⁢\tau_{i}⁢(x)}{n_{i}!})-Δ⁢T⁢\sumi=1N\tau_{i}⁢(x)
+$$
+
+where ni is the number of spikes of the $i$th neuron within the $Δ⁢T=10$-ms-long, nonoverlapping time bins, and $\tau_{i}⁢(x)$ is the tuning curve used for spike train generation (Equation (1)). The 3-m-long linear track was binned into 50 intervals, resulting in 6 cm spatial resolution. Thirdly, constant velocity $v$ neural trajectories were detected with a 2D band finding method in the decoded posterior matrix (Davidson et al., 2009). For candidate events consisting of $n$ time bins, the average likelihood $R$ that the animal is within distance $d=18$ cm of a particular trajectory is given by
+
+$$
+R(v,x_{0})=\frac{1}{n}\sumk=0n-1Pr(|x-(x_{0}+v_{k}ΔT)|\leqd)
+$$
+
+where x0 is the starting position of the trajectory. $R⁢(v,x_{0})$ was maximized using an exhaustive search to test all combinations of $v$ between –18 m/s and 18 m/s in 0.3 ms/s increments (excluding slow trajectories with speed $\in[-0.3,0.3]$ m/s) and x0 between –1.5 m and 4.5 m in 3 cm increments. Lastly, to determine the significance of replay, $R_{m⁢a⁢x}$ was compared to the best-line fits of 100 posterior probability matrices generated by shuffling the identities of cells included in the candidate event. Only events with $R_{m⁢a⁢x}$ values exceeding the 95th percentile of their own shuffled distribution were labeled as replay.
 
 To replicate the step-size analysis of Pfeiffer and Foster, 2015, the position of the animal was estimated as a weighted average based on the posterior matrix in each time bin instead of the band finding method. As their control distribution for the skewed step sizes (‘predicted step-size’ distribution) was derived for a 2D arena, it was not directly applicable to our linear track setup. Therefore, we defined the predicted step-size distribution based on the ratio of the length of the replayed path and the duration of the replay event for the SWRs detected in the simulations.
 
-## Accessibility
+### Accessibility
 
 The source code is publicly available at https://github.com/KaliLab/ca3net (copy archived at ,swh:1:rev:bfeb4fa6c8d07f75778df671cc9500cf0316df51, Ecker, 2022).

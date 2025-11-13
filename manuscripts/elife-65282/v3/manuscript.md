@@ -37,19 +37,154 @@ Malaria parasites evade host immunity by replicating within vertebrate erythrocy
 
 While RhopH2 and RhopH3 are single-copy genes in all Plasmodium spp., CLAG proteins are encoded by a multigene family with variable expansion in malaria parasite species infecting humans and other vertebrates including birds, rodents, and primates (Kaneko et al., 2001; Cortés et al., 2007; Rovira-Graells et al., 2015). Each of these subunits is transcribed in mature schizont-infected erythrocytes (Figure 1A; Ling et al., 2004); during translation, these proteins assemble with unknown stoichiometries into a complex that is packaged into rhoptry organelles (Ito et al., 2017). Upon host cell rupture, RhopH3, but not CLAG or RhopH2 subunits, facilitates invasion of the next erythrocyte. Some 18 hr later, CLAG3, a paralog encoded by the parasite chromosome 3, inserts in the host erythrocyte membrane to form the plasmodial surface anion channel (PSAC) for nutrient uptake (Desai et al., 2000; Nguitragool et al., 2011; Pillai et al., 2012); other paralogs may also contribute to PSAC (Gupta et al., 2020) or, in the case of CLAG9, to cytoadherence (Trenholme et al., 2000; Goel et al., 2010; Nacer et al., 2011). RhopH2 and RhopH3 also traffic to the host membrane and are required for PSAC activity (Ito et al., 2017; Counihan et al., 2017). Because these proteins have no homologs in other genera, how they traffic within infected cells and serve these multiple roles is unknown.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65282/elife-65282-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic showing RhopH complex synthesis in schizonts (t = 0–6 hr), role of RhopH3 in erythrocyte invasion (t = 6 hr), and contribution to plasmodial surface anion channel (PSAC)-mediated nutrient uptake at the host membrane (t = 24–44 hr). (B) Immunoblot showing that hypotonic lysis does not release CLAG3, but that alkaline carbonate treatment (CO3=) and freeze–thaw release distinct pools from membranes (membr). (C) Coomassie-stained gel of three RhopH proteins recovered by coimmunoprecipitation after freeze–thaw release. Ribbon at bottom, C-terminal multi-tag strategy used for purification of CLAG3-tv2. (D) Negative staining electron microscope image of purified RhopH complexes; scale bar, 100 nm. (E) Deconvolved native mass spectrometry (MS) spectrum for endogenous RhopH complexes. (F) Negative stain 2D class averages without (top) or with C-terminal tagging with green fluorescent protein (GFP) variants (CLAG3-GFP or RhopH2-mVenus, respectively). GFP-variant density is denoted by black arrows. (G) Negative stain 3D reconstructions using freeze–thaw preparation or harvest from spent media without freeze–thaw. Note similar architectures.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65282/elife-65282-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Raw and deconvolved MS spectra of RhopH complex purified from schizont-infected cells. Peak series assignments for intact CLAG3-tv2/RhopH2/RhopH3 complex and a CLAG3-tv2/RhopH2 subcomplex are indicated. The highest charge state for each peak series is noted. Additional peak series at 430.0 kDa and 429.1 kDa were observed at lower intensities (10–15% relative peak signals); these smaller heterotrimeric forms may reflect RhopH3 proteolytic processing (Doury et al., 1994) or low-level degradation. (B) Table of experimental masses obtained from native MS analysis. *Estimated from mean ± standard deviation of measured masses across the charge-state distribution (n ≥ 4). **The expected masses for each subunit calculated from subunit primary sequences with predicted N-terminal signal peptides removed, as indicated in parenthesis: CLAG3-tv2 (C3-tv2, 1–24), 173,995 Da; RhopH2 (R2, 1–19), 160,453 Da; RhopH3 (R3, 1–24), 102,046 Da. ***Lower than expected measured masses may reflect incomplete mapping of subunit N-termini after signal-peptide processing or C-terminal proteolytic processing. (C) Derivation of expected masses for various stoichiometries of the three component proteins, with best matches to the measured masses highlighted.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65282/elife-65282-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Coomassie-stained gels showing recovery of three RhopH subunits after coimmunoprecipitation from schizont-infected cells using a tagged CLAG3 as the bait. CLAG3 and RhopH2 exhibit expected mobility shifts when tagged. Modified constructs are described in Materials and methods. (B) Thermal unfolding of purified RhopH complex. Top, relative fluorescence intensity associated with protein denaturation during indicated temperature ramp. Bottom, first-derivative plot, showing denaturation at >55°C. (C) Scattering intensities at 266 nm and 473 nm, indicative of small and large aggregate formation, during thermal ramp application. Red and blue traces reflect independent samples.
+
 Our data reveal essential features of the RhopH complex. We combine mass spectrometry, single-particle cryo-electron microscopy (cryo-EM) and biochemical studies using conditional knockdown of protein export to determine that the RhopH is initially produced as a soluble complex that functions in erythrocyte invasion. The complex remains soluble in extracellular merozoites and, upon completed invasion, is deposited into the parasitophorous vacuole surrounding the intracellular parasite. A protein translocon on the parasitophorous vacuolar membrane, PTEX (de Koning-Ward et al., 2009), contributes to RhopH export via an unknown mechanism (Ito et al., 2017). Our high-resolution de novo RhopH complex structure and biochemical studies suggest large-scale conformational changes for eventual conversion to an integral form at the host erythrocyte membrane. This conversion is PTEX dependent and enables channel-mediated uptake of host plasma nutrients.
 
 ## Results
 
-## Freeze–thaw releases a soluble RhopH complex with 1:1:1 subunit stoichiometry
+### Freeze–thaw releases a soluble RhopH complex with 1:1:1 subunit stoichiometry
 
 To address these questions, we sought to recover well-behaved RhopH complexes. Alkaline Na2CO3 extraction but not hypotonic treatment partially released CLAG3 from infected cell membranes (Figure 1B, top row), implicating both integral and peripheral membrane pools. We found that simple freeze-thaw also releases some CLAG3 from the peripheral pool (bottom row); although Na2CO3 extraction releases a larger amount, freeze–thaw is gentler and does not denature many proteins. Neither of these treatments is expected to release integral membrane proteins. Using multiple C-terminal tags engineered into the single clag3h gene of the KC5 line (Gupta et al., 2018; CLAG3-tv2; Figure 1C, bottom), we effectively harvested this minor fraction from human blood cultures. This CLAG3 remained associated with RhopH2 and RhopH3 (Figure 1C) and yielded monodisperse protein complexes in negative stain imaging (Figure 1D). Native mass spectrometry (MS) yielded a molecular weight of 433,790 ± 10 Da (Figure 1E, Figure 1—figure supplement 1), matching the expected mass for a heterotrimeric complex with a 1:1:1 stoichiometry; a 0.6% mass error may reflect post-translational modification and/or proteolytic processing, as reported for RhopH3 (Ito et al., 2017). A smaller 333,232 ± 3 Da fraction corresponded to a minor CLAG3–RhopH2 heterodimer. Thus, freeze–thaw permits gentle, detergent-free harvest of this essential complex.
 
 RhopH complexes segregated into 2D classes with two primary views (two-lobe and side views, Figure 1F, top row). We next used a green fluorescent protein (GFP)-derivative-tagging approach (Ciferri et al., 2012), confirmed integrity of each variant (Figure 1—figure supplement 2A), and detected densities reflecting addition of this globular epitope tag. This independently confirmed single copies of each subunit and established an orthogonal arrangement for CLAG3 and RhopH2 (arrows, Figure 1F). Three-dimensional reconstruction provided a low-resolution image of the entire complex and established a two-lobed structure (Figure 1G). A similar two-lobed structure was obtained for RhopH complexes recovered from spent media without protease inhibitors, detergents, or freeze–thaw, implicating a highly stable complex. Finally, the purified RhopH complex resisted aggregation and unfolding at temperatures above those seen in malaria fevers (Figure 1—figure supplement 2B,C). We submit that a thermostable RhopH complex is well-equipped for transit through diverse subcellular environments.
 
-## Structure of the RhopH complex
+### Structure of the RhopH complex
 
 We next determined the complex’s de novo structure using cryo-EM and concentrated protein from sequential coimmunoprecipitation (0.8–2 mg/mL, FLAG and His10 tags). Initial analyses with 2D and 3D classifications yielded a two-lobed structure with a 3.3 Å resolution (Figure 2, Figure 2—figure supplement 1; Table 1); per-particle contrast transfer function (CTF) estimation and motion correction improved overall resolution to 2.9 Å.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65282/elife-65282-fig2-v3.jpg)
+
+**Figure 2.:** (A) Side view of the cryo-electron microscopy (cryo-EM) reconstruction with CLAG3, RhopH2, and RhopH3 color scheme maintained in all figures that show the structure. (B) Side and 90o-turned bowl ribbon diagrams of the RhopH complex. Buildable N- and C-terminal residues of each subunit are labeled. In (A) and (B), the CLAG3 HVR and single validated transmembrane α-helix are colored yellow and green, respectively. (C) CLAG3 domain architecture, with residues numbered from N-terminus. (D) Ribbon schematic illustrating pairwise interactions between subunits. The visualized N- and C-termini of each subunit are indicated by ribbon color change. (E) CLAG3–RhopH3 binding interface, as determined by the CLAG3 1300 loop and 300 regions, shown from separate angles. Enlarged views at bottom show critical CLAG3 residues involved in hydrophobic and charge–charge interactions. (F) The CLAG3–RhopH2 binding interface from different views. Enlarged image at bottom left shows CLAG3 α-helices that define the RhopH2 bridge, with helix numbering from one at the protein N-terminus. Right, Space-filling view of the CLAG3–RhopH2 surfaces at their binding interface. The proteins are separated from one another and rotated to expose the binding surfaces; blue and red shading reflect positive and negative electrostatic potential, respectively. Complementary surface potentials on these surfaces form salt bridges and contribute to tight interactions. (G) Ribbon schematic showing positions of cysteines that form intramolecular disulfides (black), unbonded cysteines (red), and cysteines that were not visualized (dashed black lines). Intermolecular disulfides were not observed. (H) Tabulated list of disulfides and unbonded cysteines.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65282/elife-65282-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A raw representative cryo-EM micrograph showing RhopH complexes; scale bar, 100 nm. (B) Example 2D classes generated from 214,233 particles. (C) Flow chart of data processing procedures. An initial model was used for 3D classification, resulting in one well-resolved class (class 3). Initial refinement yielded a map with a poorly resolved small lobe; particle polishing and CTF refinement improved resolution to 2.92 Å. Multibody refinement with indicated masks permitted more complete reconstruction of the small lobe.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65282/elife-65282-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) First (inward) component of motion derived from multibody analysis and corresponding first normal mode elNémo prediction; 90o rotated views are shown below each model. Arrows indicate direction of movement. (B) Second (torsional) component of motion. (C) Third, fourth, and fifth normal modes of motion predicted by elNémo, left to right, respectively. The third mode predicts tilting of the two lobes, while the others predict a slight expansion and contraction of the RhopH complex about its center.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65282/elife-65282-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Ribbon diagrams of the exposed surfaces of CLAG3 and RhopH2 at their binding interface (A and B, respectively). Conserved residues are indicated using Consurf color coding; scale bar at top.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/65282/elife-65282-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** Surface representations of RhopH subunit binding sites, showing sequence conservation at the RhopH2 and RhopH3 binding sites on CLAG3 (A and B, respectively) and at the CLAG3 binding sites on RhopH2 and RhopH3 (C and D). Consurf color scale bar at top for all panels.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/65282/elife-65282-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Major CLAG paralog clades are indicated by labeled red arcs. The ‘Clade F’ label represents the Plasmodium taxonomy proposed by Galen et al., 2018 and does not reflect the precise structure of our phylogeny tree. Bootstrap support is indicated by branch width, with thin branches have less than 70% support. (B) Three-dimensional alignment of Bcl-xL to RhopH2, as identified through an exhaustive Protein Data Bank (PDB) search using the Dali Server. Expanded view shows the aligned region. Z score, 4.2; root-mean-square deviation (RMSD), 3.4 Å; number of residues aligned, 95. (C) Three-dimensional alignment of SepL to RhopH3, based on a similar PDB search. Z score, 6.0; RMSD, 3.6 Å; number of residues aligned, 115.
+
+**Table 1.**
+ Cryo-electron microscopy (cryo-EM) data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Freeze–thaw non-inserted (EMDB-22890) (PDB 7KIY)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Microscope Camera Calibrated magnification</td>
+      <td>Titan Krios K2 Summit 59,500</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV) Exposure time Frame/total (s) Number of frames per image</td>
+      <td>300 23.2 2.5 frames/s 58</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e−/Å2)</td>
+      <td>69.6</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>0.5–3.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å) Box size (pixels)</td>
+      <td>0.82 400</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>311,390</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>68,216</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å) FSC threshold</td>
+      <td>2.92 0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td>2.89–12.10</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>na</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>3.06</td>
+    </tr>
+    <tr>
+      <td>Model resolution range (Å)</td>
+      <td>2.9–12.10</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>−34</td>
+    </tr>
+    <tr>
+      <td>Model composition Nonhydrogen atoms Protein residues Ligands</td>
+      <td>19,943 2388 0</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2) Protein Ligand</td>
+      <td>43.95 Na</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations Bond lengths (Å) Bond angles (°)</td>
+      <td>0.012 1.33</td>
+    </tr>
+    <tr>
+      <td>Validation MolProbity score Clashscore Poor rotamers (%)</td>
+      <td>2.51 13.52 1.42</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot Favored (%) Allowed (%) Disallowed (%)</td>
+      <td>78.25 19.38 2.36</td>
+    </tr>
+  </tbody>
+</table>
 
 Soluble RhopH is a heterotrimeric complex consisting of single CLAG3, RhopH2, and RhopH3 subunits (Figure 2A), as predicted above. CLAG3 mediates subunit associations through independent contacts with RhopH2 and RhopH3, which do not directly interact with one another. The visualized complex assumes a ‘shallow bowl with a short base’ appearance due to an out-of-plane orientation of RhopH2 relative to CLAG3 (Figure 2B). On the opposite face, a CLAG3 mid-section protrudes to create a short ‘base’ that includes a critical amphipathic α-helix proposed to line the PSAC pore at the host membrane, as described below. The bowl’s opposite rim is formed by globular α-helices from CLAG3 and RhopH3.
 
@@ -57,7 +192,21 @@ From other angles, an asymmetric two-lobed architecture is apparent, with a well
 
 We hypothesized that both lobes have defined structures that undergo relative movement and therefore used multi-body refinement (Nakane et al., 2018) to identify rigid but mobile substructures. Assuming two bodies joined by a CLAG3 stem, we refined each lobe separately and improved the small lobe’s resolution (Figure 2—figure supplement 1C). The small lobe’s hammer-shaped ends were now clearly visualized, improving model building from 225 to 513 residues for RhopH2. Excluding their flexible N- and C-terminal tails, ≥90% of CLAG3 and RhopH3 residues were also confidently localized. Multibody refinement also defined the directions and extent of motion between the two lobes (Figure 2—figure supplement 2; Videos 1 and 2). Interestingly, consideration of protein energy landscapes using normal mode analysis (Suhre and Sanejouand, 2004) predicted remarkably similar motions (Videos 3–7). Although the biological significance of this mobility is uncertain, conservation of the stem sequence and length in P. falciparum CLAG paralogs and among other Plasmodium spp. supports an important role (Figure 2—figure supplements 3 and 4; 48% bridge region identity between divergent human P. falciparum and P. vivax CLAGs).
 
-## Subunit interactions and roles
+![Video 1.](https://cdn.elifesciences.org/articles/65282/elife-65282-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/65282/elife-65282-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/65282/elife-65282-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/65282/elife-65282-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/65282/elife-65282-video5.mp4.jpg)
+
+![Video 6.](https://cdn.elifesciences.org/articles/65282/elife-65282-video6.mp4.jpg)
+
+![Video 7.](https://cdn.elifesciences.org/articles/65282/elife-65282-video7.mp4.jpg)
+
+### Subunit interactions and roles
 
 CLAG3 contains three visually distinct domains (Figure 2C): an N-terminal sphere, an elongated central bridge for binding RhopH2, and a C-terminal bundle encasing an amphipathic helix that later integrates in the host erythrocyte membrane (Sharma et al., 2015). The N- and C-terminal domains hold RhopH3 tightly through bidentate interactions via a ‘1300 loop’ and a ‘300 region’ that form orthogonal pincer-grasp interactions. We illustrate these high-confidence interactions between CLAG3 and the other subunits in Figure 2D.
 
@@ -71,13 +220,21 @@ CLAG3’s central position in the structure, together with its surface exposure 
 
 Structural similarity searches of the Protein Data Bank (PDB) revealed weakly significant hits for each subunit that may guide structure–function studies of this Plasmodium-restricted complex (Figure 2—figure supplement 5B and C). RhopH3 exhibited the greatest structural similarity with alignment to domains from SepL, a regulator of type III translocon-based secretion in bacteria (Burkinshaw et al., 2015). RhopH2 partially aligned with Bcl-xL, an anti-apoptotic protein that also regulates membrane permeabilization (Finucane et al., 1999). Both hits from our structural similarity searches raise the tantalizing possibility that RhopH2 and RhopH3 function to regulate PSAC. Such regulation could produce the unprecedented selectivity of this channel, which imports diverse nutrients including purines, amino acids, sugars, and some vitamins while maintaining very low Na+ permeability to prevent host cell osmotic lysis (Cohn et al., 2003).
 
-## Transmembrane domains are shielded in the soluble complex
+### Transmembrane domains are shielded in the soluble complex
 
 Biochemical studies point to a direct contribution of the RhopH complex in PSAC-mediated nutrient uptake (Gupta et al., 2018; Gupta et al., 2020), with a single confidently predicted CLAG3 transmembrane domain distal to a 10–30 residue hypervariable region (HVR, Figure 3A). Site-directed mutagenesis of a conserved A1215 residue in this transmembrane domain (α-helix 44 in our structure) alters channel gating, selectivity, and conductance, supporting a pore-lining helix (Sharma et al., 2015). Notably, a PDB structure search identified this and several neighboring helices with a significant alignment to APH-1, an integral membrane component of human γ-secretase (Figure 3—figure supplement 1A). The corresponding APH-1 α-helix makes stable interactions with phospholipid in that structure (Bai et al., 2015), further supporting membrane insertion of CLAG3 α-helix 44.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65282/elife-65282-fig3-v3.jpg)
+
+**Figure 3.:** (A) Posterior probability plots for transmembrane (TM) domain prediction, determined for residues 940–1240 of CLAG3 using indicated algorithms. Green circle on the plots’ single confidently predicted TM (α-helix 44) represents A1215; HVR, hypervariable region. (B) Cylinder view of RhopH complex map showing the buried α-helix 44 (green). (C) Enlarged and turned view from (B). Additional helices that may interact with membranes are labeled. (D) Corresponding cryo-electron microscopy (cryo-EM) density and an adjacent poorly ordered HVR. (E) Top and side views of CLAG3 α-44. Note that hydrophobic side chains cluster on the upper helix surface in these views; polar residues are at the opposite surface and may line the eventual pore. (F) Slice-through view showing a thin interior section of the RhopH complex. CLAG3 is shown as sticks and colored by Consurf conservation score for each residue. Note that α-44 exhibits higher sequence variation than neighboring domains. (G) Cylinder view with known and predicted TM helices in green; these helices are buried and physically separated from one another.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65282/elife-65282-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Structural alignment of CLAG3 to APH-1, an integral membrane component of human γ-secretase, as identified through an exhaustive PDB search. The aligned region includes α-helices 39, 40, 43, and 44 of CLAG3; a phospholipid molecule is seen in stable association with a corresponding α-helix in APH-1. Dali Z score, 4.5; RMSD, 4.3 Å; number of residues aligned, 116. (B) Cylinder view diagrams of CLAG3 and two unrelated ‘two-state’ proteins—colicin Ia and Bax. In their soluble states, each protein buries its hydrophobic TM helices within the structure for stability (green cylinders); these helices later become exposed to allow membrane insertion. (C and D) Posterior probability plots for TM domain prediction for RhopH2 and RhopH3 based on the Phobius algorithm (Käll et al., 2004). Each protein has a single confidently predicted TM that corresponds to an α-helix in our structure. (E and F) Cylinder view representations of RhopH2 and RhopH3, showing that predicted TM helices are shielded.
+
 This important helix is buried within a CLAG3 C-terminal bundle (Figure 3B–D), paralleling buried hydrophobic helices in some much smaller pore-forming proteins (Dal Peraro and van der Goot, 2016; Figure 3—figure supplement 1B). Transverse and longitudinal views establish that multiple Phe side chains segregate to one surface of helix 44 and that polar side chains line up at the opposite face (Figure 3E), as expected for a helix that lines an aqueous pore (Sharma et al., 2015). Although its physicochemical properties are conserved in CLAG orthologs, helix 44 exhibits little primary sequence conservation (Figure 3F). In contrast to this helix, the nearby HVR was poorly ordered, consistent with an unstructured extracellular loop that functions as an immune decoy (Figure 3D). The single predicted transmembrane domains on RhopH2 and RhopH3 are also buried in the soluble structure (helices defined by V740-D757 and G595-Y622 of these subunits, respectively; Figure 3—figure supplement 1C–F). Thus, known and predicted transmembrane domains are shielded in the trafficking RhopH complex (Figure 3G), implicating large-scale protein rearrangements for their membrane insertion.
 
-## RhopH is synthesized as a non-integral complex
+### RhopH is synthesized as a non-integral complex
 
 The peripheral and integral membrane pools (Ito et al., 2017) of the RhopH complex may both be formed during protein synthesis. Alternatively, the complex may be produced exclusively as a soluble form for trafficking and membrane insertion at a later point in the cell cycle. To distinguish between these models, we performed fractionation studies with synchronous cultures at defined developmental stages. During stage-specific synthesis in schizont-infected cells (Ling et al., 2004), both peripheral and integral membrane pools were reproducibly detected (Figure 4A, top row). This finding’s interpretation is complicated by preexisting CLAG3 derived from the preceding cycle and trafficked to the infected cell surface (Figure 1A). To address this uncertainty, we treated early schizont-stage cultures with protease to identify prior-cycle CLAG3 inserted at the erythrocyte membrane. As the integral pool was quantitatively proteolyzed (Figure 4A,B), we conclude that the integral pool in these cells reflects protein made in the previous cycle; the larger carbonate-extractable pool represents newly synthesized protein.
 
@@ -115,63 +272,423 @@ Our findings provide a framework for understanding two unique and essential func
 
 ## Materials and methods
 
-## Parasite culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>KC5</td>
+      <td>• 10.1128/mBio.02293–17</td>
+      <td></td>
+      <td>Wt control</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>CLAG3-tv2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>C-terminal His10-FLAG-thrombin-TEV-HA-twinstrept-BC2 tag</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>CLAG3-GFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>C-terminal His8-mGFP-FLAG-Twin Strep tag</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>CLAG3-tv1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>C-terminal 3xFLAG-3xHA-His8-Strept II tag</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>CLAG3-tv1+RhopH2-mV</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CLAG3-tv1 with tandem RhopH2 C-terminal mVenus tag</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>13F10</td>
+      <td>• 10.1038/nature13574</td>
+      <td></td>
+      <td>TMP-dependent HSP101 conditional knockdown</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CLAG3 (mouse polyclonal)</td>
+      <td>• 10.7554/eLife.23485</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CLAG3 sgRNA</td>
+      <td>This paper</td>
+      <td>For CRISPR editing</td>
+      <td>5′-TAAAAACACTAATAAGACCA-3′</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUF1-Cas9</td>
+      <td>• 10.1038/nbt.2925</td>
+      <td></td>
+      <td>Cas9 expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pL6</td>
+      <td>• 10.1038/nbt.2925</td>
+      <td></td>
+      <td>sgRNA expression and homology cassette</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pL7- CLAG3-tv2</td>
+      <td>This study</td>
+      <td></td>
+      <td>Modification of pL6 for parasite transfection</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pL7-CLAG3-GFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>Modification of pL6 for parasite transfection</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pL7-CLAG3-tv1</td>
+      <td>This study</td>
+      <td></td>
+      <td>Modification of pL6 for parasite transfection</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSM1</td>
+      <td>BEI Resources Repository</td>
+      <td>Cat# MRA-1161</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>WR99210</td>
+      <td>David Jacobus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Anti-FLAG M2 affinity agarose resin</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat# A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>3xFLAG peptide</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat# F4799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ni-NTA Agarose resin</td>
+      <td>Qiagen</td>
+      <td>Cat# 30210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zeba microspin desalting columns, 40 kDa MWCO</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# 87764</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gold-coated quartz emitter</td>
+      <td>This study</td>
+      <td></td>
+      <td>Native mass MS study</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYPRO Orange</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# S6650</td>
+      <td>Protein stability assay (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Carbon film grids</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# CF200-Cu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Quantifoil Cu 300 mesh grids</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# Q3310CR1.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4–15% Mini-PROTEAN TGX gel</td>
+      <td>Bio-RAD</td>
+      <td>Cat# 4561086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Thermo Xcalibur Qual Browser</td>
+      <td>Thermo Scientific</td>
+      <td>versions 3.0.63 and 4.2.47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UniDec</td>
+      <td>• 10.1021/acs.analchem.5b00140; • 10.1007/s13361-018-1951-9</td>
+      <td>versions 3.2 and 4.1</td>
+      <td>http://unidec.chem.ox.ac.uk/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>m/z</td>
+      <td>Proteometrics LLC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EPU</td>
+      <td>ThermoFischer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Latitude</td>
+      <td>Gatan Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 2.0; RELION 3.0</td>
+      <td>• 10.1016/j.jsb.2012.09.006</td>
+      <td></td>
+      <td>https://www3.mrc-lmb.cam.ac.uk/relion</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>• 10.1038/nmeth.4193</td>
+      <td></td>
+      <td>https://emcore.ucsf.edu/ucsf-software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf</td>
+      <td>• 10.1016/j.jsb.2015.11.003</td>
+      <td></td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/research/locally-developed-software/zhang-software/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>• 10.1002/jcc.20084</td>
+      <td></td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>• 10.1107/S0907444910007493</td>
+      <td></td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX assign_sequence</td>
+      <td>• 10.1107/S2059798319011471</td>
+      <td></td>
+      <td>https://www.phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX real space refine</td>
+      <td>• 10.1107/S2059798318006551</td>
+      <td></td>
+      <td>https://www.phenix-online.org/documentation/reference/real_space_refine.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JPred</td>
+      <td>• 10.1093/nar/gkv332</td>
+      <td></td>
+      <td>http://www.compbio.dundee.ac.uk/jpred/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>elNémo server</td>
+      <td>• 10.1093/nar/gkh368</td>
+      <td></td>
+      <td>http://www.sciences.univ-nantes.fr/elnemo/</td>
+    </tr>
+    <tr>
+      <td>Software, database</td>
+      <td>PlasmoDB</td>
+      <td>• 10.1093/nar/gkn814</td>
+      <td></td>
+      <td>https://plasmodb.org/plasmo/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAFFT server</td>
+      <td>• 10.1093/bib/bbx108</td>
+      <td></td>
+      <td>https://mafft.cbrc.jp/alignment/server/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEGA X</td>
+      <td>• 10.1093/molbev/msy096;10.1093/molbev/msz312</td>
+      <td></td>
+      <td>https://www.megasoftware.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ConSurf server</td>
+      <td>• 10.1093/nar/gkw408</td>
+      <td></td>
+      <td>https://consurf.tau.ac.il/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NCBI Protein BLAST</td>
+      <td>• 10.1093/nar/25.17.3389</td>
+      <td></td>
+      <td>https://blast.ncbi.nlm.nih.gov/Blast.cgi</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustal Omega</td>
+      <td>• 10.1093/nar/gkz268</td>
+      <td></td>
+      <td>https://www.ebi.ac.uk/Tools/msa/clustalo/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>Schrödinger, LLC</td>
+      <td></td>
+      <td>https://pymol.org/2/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Dali server</td>
+      <td>• 10.1093/bioinformatics/btz536</td>
+      <td></td>
+      <td>http://ekhidna2.biocenter.helsinki.fi/dali/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>• 10.1186/s12859-017-1934-z</td>
+      <td></td>
+      <td>https://imagej.nih.gov/ij/index.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SigmaPlot 10.0</td>
+      <td>Systat</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8.2</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Parasite culture
 
 P. falciparum laboratory strains were grown in O+ human erythrocytes (Interstate Blood Bank) using standard methods and maintained at 5% hematocrit under 5% O2, 5% CO2, 90% N2 at 37°C.
 
-## Endogenous tagging
+### Endogenous tagging
 
 CRISPR-Cas9 gene editing was used to produce engineered P. falciparum lines using the KC5 laboratory clone carrying a single clag3h gene to avoid epigenetic switching (Gupta et al., 2018). Transfections were performed by electroporation of pUF1-Cas9 and modified pL6 plasmids for homologous replacement of the genomic site as described (Ghorbal et al., 2014); 1.5 µM DSM1 and 2 nM WR99210 were used to select for integrants, which were detected by PCR. All experiments were performed with limiting dilution clones that were confirmed with DNA sequencing.
 
 Primary protein purifications used the edited CLAG3-tv2 clone, in which a C-terminal multiple affinity tag consisting of His10-FLAG-thrombin-TEV-HA-twinstrept-BC2 nanobody binding site was appended to an otherwise unmodified CLAG3h. The CLAG3-GFP incorporates a C-terminal His8-monomeric GFP-FLAG-Twin strept tag on CLAG3h. The CLAG3-tv1+RhopH2-mV strain contains a C-terminal 3xFLAG-3xHA-His8-Strept II tag on CLAG3 and a monomeric Venus tag at the RhopH2 C-terminus; this parasite was produced by sequential CRISPR-Cas9 editing of the two genomic loci and used for negative stain imaging of mVenus-tagged RhopH2.
 
-## Protein purification
+### Protein purification
 
 Up to 1 mL of enriched schizont-stage parasites were harvested by the percoll–sorbitol method and frozen in liquid nitrogen at 20% v/v in 200 mM NaCl, 10 mM Tris, pH 7.5 with 1 mM phenylmethylsulfonyl fluoride (PMSF). Frozen parasites were thawed at room temperature, and insoluble debris was pelleted at 20,000 × g for 10 min at 4°C. NaCl was added to 500 mM before overnight incubation of the clarified lysate with anti-FLAG M2 affinity agarose resin (Sigma–Aldrich) at 4°C with gentle agitation. The resin was subsequently washed with 1–5 mL of 10 mM Tris, pH 7.5 and 500 mM NaCl before elution in 10 mM Tris, pH 7.5, 200 mM NaCl and 0.15 mg/mL 3xFLAG peptide. The eluate was concentrated for native mass spectrometry and cryo-EM studies via a second affinity purification on Ni-NTA agarose resin (Qiagen) and small volume elution in 200 mM NaCl, 300 mM imidazole, 10 mM Tris, pH 7.5. After overnight dialysis to remove imidazole, purified RhopH complex was further concentrated by ultracentrifugation at 150,000 × g for 1 hr, yielding 0.8–2 mg/mL protein in 30 µL.
 
-## Native mass spectrometry analysis
+### Native mass spectrometry analysis
 
 Purified RhopH complex was buffer-exchanged into native mass spectrometry (MS) solution (200 mM ammonium acetate, pH 7.5, 0.01% Tween-20) using Zeba microspin desalting columns with a 40 kDa cut-off (ThermoScientific; Olinares et al., 2016; Olinares and Chait, 2020). Buffer-exchanged sample (3 µL) was loaded into a locally prepared gold-coated quartz emitter and electrosprayed into an Exactive Plus EMR instrument (ThermoFisher Scientific) with a modified static nanospray source (Olinares and Chait, 2020). The MS parameters used include spray voltage, 1.2–1.3 kV; capillary temperature, 150–250°C; in-source dissociation, 10 V; S-lens RF level, 200; resolving power, 17,500 at m/z of 200; AGC target, 1 × 106; maximum injection time, 200 ms; number of microscans, 5; injection flatapole, 8 V; interflatapole, 4 V; bent flatapole, 4 V; high-energy collision dissociation, 200 V; ultrahigh vacuum pressure, 7–8 × 10−10 mbar; total number of scans, ≥100. Mass calibration in positive extended mass range (EMR) mode was performed using cesium iodide.
 
 The acquired MS spectra were visualized using Thermo Xcalibur Qual Browser (versions 3.0.63 and 4.2.47). Spectra deconvolution was performed either manually or using the software UniDec versions 3.2 and 4.1 (Marty et al., 2015; Reid et al., 2019). The resulting deconvolved spectrum from UniDec was plotted using the m/z software (Proteometrics LLC). Experimental masses were reported as the mean ± SD across all calculated mass values within the observed charge state series. Mass accuracies were calculated as the % difference between the measured and expected masses relative to the expected mass.
 
-## Protein thermostability
+### Protein thermostability
 
 Thermal denaturation of the RhopH complex was evaluated with two methods. ThermoFluor assays were performed with 20 µL of 0.4 mg/mL freeze–thaw extracted RhopH complex and a 1× dilution of SYPRO Orange. Fluorescence intensity was continuously monitored during a thermal ramp from 25°C to 95°C in 0.5°C/10 s increments. Raw fluorescence and first-derivative plots were used to assess unfolding. RhopH complex aggregation was also evaluated using sizing with thermal ramp application on Uncle (Unchained Labs) and duplicate samples of 8.9 µL of 0.1 mg/mL RhopH complex. Aggregation was measured by monitoring static light scattering at 266 and 473 nm with a ramp from 20°C to 80°C at a constant rate of 1.0°C/min for 1 hr with measurements at 0.5°C increments.
 
-## Negative stain data acquisition
+### Negative stain data acquisition
 
 Purified RhopH protein (4.8 μL of a 0.05 mg/mL solution) was applied to carbon film grids (CF200-Cu, Electron Microscopy) and stained with 4.8 μL of 0.75% uranyl formate for 30 s. After drying, grids were loaded onto a ThermoFischer Tecnai 12 electron microscope with a Gatan Ultra Scan camera operating at 120 kV. Images were collected using EPU software (ThermoFischer) at 67,000× magnification for a pixel size of 1.77 Å. The datasets consisted of between 69 and 142 micrographs (culture-media RhopH, 69 micrographs; complexes containing RhopH2-mV, 109; CLAG3-tv1, 124; CLAG3-GFP, 142).
 
-## Negative stain image processing
+### Negative stain image processing
 
 All negative stain image processing was performed using RELION 2.0 (Scheres, 2012). Micrographs were processed without CTF correction. Initial auto-picking was performed using a Gaussian blob. Well-behaved classes from 2D classification of Gaussian blob-picked particles were used for template-based auto-picking. Further 2D classification was performed to clean the particle set. For datasets with GFP derivative tagging, additional density for the bulky epitope was visible is several 2D classes. For freeze–thawed solubilized and spend-media RhopH, an initial model was generated and used for 3D auto-refinement in RELION. Three-dimensional models represent views in Chimera (Pettersen et al., 2004).
 
-## Cryo-EM data acquisition
+### Cryo-EM data acquisition
 
 2.5 μL of 0.8 mg/mL RhopH was applied to glow-discharged Quantifoil Cu 300 mesh grids (1.2/1.3), blotted for 3 s, and plunge frozen in liquid ethane cooled by liquid nitrogen using a Vitrobot plunge freezing instrument (FEI/ThermoFisher). The blotting chamber was maintained at 20°C and 100% humidity. One thousand three hundred and ten micrographs were collected on a Titan Krios (ThermoFisher) transmission electron microscope operated at 300 kV. Images were recorded on a K2 Summit camera (Gatan Inc) operated in super-resolution counting mode and a physical pixel size of 0.84 Å. The detector was placed at the end of a GIF Quantum energy filter (Gatan Inc), operated in zero-energy-loss mode with a slit width of 20 eV. Each image was fractionated into 58 frames with a frame exposure of 0.4 s and a dose rate of 3 e–/Å2/s, giving a total accumulated dose of 70 e–/Å2 over the 23.2 s exposure. All data was collected using the Latitude S software (Gatan Inc).
 
-## Cryo-EM image processing
+### Cryo-EM image processing
 
 All cryo-EM image processing was performed in RELION 3.0. Movies were motion corrected and dose-weighted using MotionCor2 (Zheng et al., 2017). Contrast transfer function (CTF) parameters were determined using the Gctf (Zhang, 2016) wrapper in RELION. Initial particle picking was performed with the Laplacian-of-Gaussian (LoG) picker in RELION. Subsequent 2D classes from the LoG-picked particles were used for template-based auto-picking performed in RELION resulting in 311,390 particles. After two rounds of 2D classification, the initial collection was cleaned to 214,233 particles and used to generate an initial 3D model. Three-dimensional classification using five classes with regularization parameter T = 4 resulted in one well-resolved class of 68,216 particles. Three-dimensional auto-refinement of these particles resulted in a 3.26 Å map. Two rounds of particle polishing and one round of CTF refinement further improved the resolution to 2.92 Å. Although the large lobe was well-resolved and permitted de novo model building, the small lobe and C-terminal bundle of CLAG3 were resolved to lower resolution inhibiting interpretation. Further 3D classification did not improve small subunit interpretability. To better resolve RhopH2 and CLAG3 C-terminal domain, multibody refinement was performed (Nakane et al., 2018). Multibody refinement using masked region 1 of the large subunit and masked region two as the small subunit and the bridge between the large and small subunit resulted in better EM density for mobile elements of the small subunit although a lower overall resolution for the second masked region. Multibody analysis also yielded the top components of motion.
 
-## Model building and refinement
+### Model building and refinement
 
 Model building was performed in Coot (Emsley et al., 2010). EM density maps were generated in RELION by post-processing with a constant B factor or locally sharpened regions of the maps in Local Resolution. Initially, a poly-alanine model was built for well-ordered regions of the RhopH complex in Coot. The sequence registry was determined by a combination of manual examination of side-chain density and the PHENIX assign_sequence program (Liebschner et al., 2019), which predicts sequence registry based on side-chain density. Regions of the map with low resolution were built through a combination EM density interpretation and secondary structure prediction performed in JPred (Drozdetskiy et al., 2015). Real space refinement with secondary structure restraints was performed in PHENIX real space refine (Afonine et al., 2018). Structural figures were generated in PyMOL 2.1.0 (Schrödinger) or Chimera. Prediction of motion in the final model was performed using the elNémo server (Suhre and Sanejouand, 2004).
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 CLAG DNA sequences were downloaded from PlasmoDB (http://PlasmoDB.org) and aligned using the MAFFT server (Katoh et al., 2019) with default parameters. Sequences shorter than 2000 nucleotides in length were removed to maximize sequence overlap. The multiple-sequence alignment was corrected manually to preserve the reading frame. Phylogenetic analysis of the remaining 147 sequences was performed using the MEGA X software (Kumar et al., 2018; Stecher et al., 2020). A phylogenetic tree was inferred using the neighbor-joining method (Saitou and Nei, 1987) based on pairwise distances computed using the maximum composite likelihood method (Tamura et al., 2004), with the rate variation among sites modeled with a gamma distribution (shape parameter = 1). To assess how well the data supported the groups in the tree, 250 bootstrap replicates were performed (Felsenstein, 1985).
 
-## Conservation analysis
+### Conservation analysis
 
 The ConSurf server (https://consurf.tau.ac.il/; Ashkenazy et al., 2016) was used to generate per-residue conservation scores and map conservation values on the 3D RhopH complex structure. Non-redundant sequences of RhopH subunits from Plasmodium spp. were identified through the use of PlasmoDB and NCBI Protein BLAST. The sequences were aligned using Clustal Omega. ConSurf was then used to evaluate evolutionary conservation of amino acid residues; the resulting conservation scores were used for color-coding residues in PyMOL.
 
-## Structural similarity searches
+### Structural similarity searches
 
 The Dali server (http://ekhidna2.biocenter.helsinki.fi/dali/; Holm, 2019) was used to search for proteins with 3D structures like that of the RhopH complex. Exhaustive PDB database searches revealed significant matches to specific domains from individual RhopH subunits, as defined by Dali Z-scores ≥ 3.0. PyMOL alignments of RhopH domains and PDB structures of corresponding hits were used to evaluate biological significance.
 
-## Membrane fractionation
+### Membrane fractionation
 
 Synchronization for stage-dependent membrane fractionation assays utilized two 5% sorbitol treatments ~6 hr apart. Ring-stage infected cells were harvested immediately without enrichment. Trophozoite- and schizont-stage-infected cells were then harvested 18 hr and 40 hr after sorbitol treatment, respectively, and enriched through the percoll–sorbitol method. Cells infected with 13F10 growth with or without TMP were harvested without enrichment as these cells lack PSAC activity (Beck et al., 2014; Ito et al., 2017).
 
@@ -181,10 +698,10 @@ Fractionation studies were performed using matched cell pellets resuspended in l
 
 Protease susceptibility experiments used percoll–sorbitol-enriched cells. Infected cells were treated with Pronase E in phosphate-buffered saline (PBS) supplemented with 0.6 mM CaCl2 and 1 mM MgCl2 for up to 1 hr at 37°C. They were then extensively washed in PBS with 1 mM PMSF prior to membrane fractionation.
 
-## Immunoblotting
+### Immunoblotting
 
 Samples were prepared in a modified Laemmli buffer with a final 6% SDS concentration. Proteins were separated on a 4–15% Mini-PROTEAN TGX gel (Bio-RAD) and transferred to nitrocellulose. After blocking, antibodies against CLAG3 (Nguitragool et al., 2011), Band3 (Santa Cruz), HA epitope tag (Sigma–Aldrich), EXP2 (European Malaria Reagent Repository), or aldolase (Abcam) were applied and visualized as described (Ito et al., 2017). Band intensities were quantified using ImageJ and analyzed in Prism (GraphPad).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical significance for numerical data was calculated by unpaired Student’s t-test or one-way ANOVA. Significance was accepted at p < 0.05 or indicated values.

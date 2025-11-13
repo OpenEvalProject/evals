@@ -12,15 +12,15 @@
 
 ### Affiliations
 
-1. https://ror.org/022fs9h90 Anatomy and program in Neuroscience, Faculty of Science and Medicine, University of Fribourg Fribourg Switzerland
-2. https://ror.org/02crff812 Zurich integrative Rodent Physiology (ZIRP), University of Zürich Zürich Switzerland
-3. https://ror.org/038t36y30 Institute of Anatomy and Cell Biology, University of Heidelberg Heidelberg Germany
+1. Anatomy and program in Neuroscience, Faculty of Science and Medicine, University of Fribourg Fribourg Switzerland ([ROR:022fs9h90](https://ror.org/022fs9h90))
+2. Zurich integrative Rodent Physiology (ZIRP), University of Zürich Zürich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+3. Institute of Anatomy and Cell Biology, University of Heidelberg Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
 
 † Corresponding author
 
 ## Abstract
 
-Foxb1 -expressing neurons occur in the dorsal premammillary nucleus (PMd) and further rostrally in the parvafox nucleus, a longitudinal cluster of neurons in the lateral hypothalamus of rodents. The descending projection of these Foxb1 + neurons end in the dorsolateral part of the periaqueductal gray (dlPAG). The functional role of the Foxb1 + neuronal subpopulation in the PMd and the parvafox nucleus remains elusive. In this study, the activity of the Foxb1 + neurons and of their terminal endings in the dlPAG in mice was selectively altered by employing chemo- and optogenetic tools. Our results show that in whole-body barometric plethysmography, hM3Dq-mediated, global Foxb1 + neuron excitation activates respiration. Time-resolved optogenetic gain-of-function manipulation of the terminal endings of Foxb1 + neurons in the rostral third of the dlPAG leads to abrupt immobility and bradycardia. Chemogenetic activation of Foxb1 + cell bodies and ChR2-mediated excitation of their axonal endings in the dlPAG led to a phenotypical presentation congruent with a ‘freezing-like’ situation during innate defensive behavior.
+Foxb1 -expressing neurons occur in the dorsal premammillary nucleus (PMd) and further rostrally in the parvafox nucleus, a longitudinal cluster of neurons in the lateral hypothalamus of rodents. The descending projection of these Foxb1+ neurons end in the dorsolateral part of the periaqueductal gray (dlPAG). The functional role of the Foxb1+ neuronal subpopulation in the PMd and the parvafox nucleus remains elusive. In this study, the activity of the Foxb1+ neurons and of their terminal endings in the dlPAG in mice was selectively altered by employing chemo- and optogenetic tools. Our results show that in whole-body barometric plethysmography, hM3Dq-mediated, global Foxb1+ neuron excitation activates respiration. Time-resolved optogenetic gain-of-function manipulation of the terminal endings of Foxb1+ neurons in the rostral third of the dlPAG leads to abrupt immobility and bradycardia. Chemogenetic activation of Foxb1+ cell bodies and ChR2-mediated excitation of their axonal endings in the dlPAG led to a phenotypical presentation congruent with a ‘freezing-like’ situation during innate defensive behavior.
 
 ## Introduction
 
@@ -38,25 +38,39 @@ In our study (Figure 1), projection-unspecific chemogenetic activation of the Fo
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/86737/elife-86737-fig1-v1.jpg)
 
-**Figure 1.:** Alvarez-Bolado et al., 2000).Their chemogenetic (DREADD) stimulation leads to an increase in breaths / minutes. Right part: dorsolateral PAG (dlPAG), seen in a cross-section of the midbrain. Axon terminals of parvafoxFoxb1 and PMdFoxb1 converge in the rostral part of the dlPAG. Optogenetic activation of these terminals lead to immobility and bradycardia.
+**Figure 1.:** Their chemogenetic (DREADD) stimulation leads to an increase in breaths / minutes. Right part: dorsolateral PAG (dlPAG), seen in a cross-section of the midbrain. Axon terminals of parvafoxFoxb1 and PMdFoxb1 converge in the rostral part of the dlPAG. Optogenetic activation of these terminals lead to immobility and bradycardia.
 
 ## Results
 
-## Chemogenetic modulation of the Foxb1 neurons increases breaths per minute (BPM) without altering tidal volume (TV)
+### Chemogenetic modulation of the Foxb1 neurons increases breaths per minute (BPM) without altering tidal volume (TV)
 
 The activation of the hM3Dq (activating DREADD receptors) expressed in the parvafoxFoxb1 by intraperitoneal clozapine or CNO injection led to changes in several parameters of respiration consistent with an increased respiratory effort Figure 2; breaths per minute (BPM), F(2,26)=6.061, p=0.00691, g=; inspiratory time (IT), F(2,26) = 5.831, p=0.00809; total time (TT) F(2,26)=4.655, p=0.01973; minute volume adjusted for bodyweight (MVadjPerGram), F(2,26)=3.998, p=0.03265; peak inspiratory flow (PIFadj), F(2,26) = 4.284, p=0.03439; all reported results are obtained by a 3x3 mixed-design ANOVA for the ‘Condition’ factor, p values are Huynh-Feldt sphericity corrected. Namely, we observed a significant increase in three parameters within saline, clozapine and CNO injected hM3Dq animals: (1) BPM (Figure 2a–I; saline vs. clozapine: t(5) = –3.199, p=0.024, g = –1.380 (large); saline vs. CNO: t(5) = –2.916, p=0.033, g = –1.192(large); clozapine vs. CNO: t(5) = 3.069, p=0.028, g=0.226(small)), (2) MVadjPerGram: (Figure 2a–VI; saline vs. clozapine: t(5) = –2.790, p=0.038, g=–0.974(large); saline vs. CNO: t(5) = –2.600, p=0.048, g = –0.928(large)) and (3) PIFadj (Figure 2a–VII; saline vs. clozapine: t(5) = –2.726, p=0.041, g = –1.217(large); all reported results are post-hoc two-tailed paired student’s t-Tests; g values represent the effect size according Hedge’s g corrected for paired data, the magnitude of the effect size is provided in parentheses [i.e. negligible, small, medium, or large]). Remarkably, the tidal volume normalized for bodyweight (TVadjPerGram; Figure 2a-IV) was not altered by the intervention (3x3 mixed-design ANOVA: F(2,26) = 1.165, p=0.322). Furthermore, since minute volume equals the tidal volume multiplied by BPM, it follows that, the principal factor explaining the changes in MVadjPerGram was the increased BPM. The inspiratory time (IT, Figure 2a–II; ; saline vs. clozapine: t(5) = 3.296, p=0.022, g=1.170[large]) and the total respiratory time (TT, Figure 2a-IV; saline vs. clozapine:: t(5) = 2.683, p=0.043, g=1.140[large]) decreased, while however the expiratory time (Figure 2a–III) remained unaffected (ET; mixed-design ANOVA: F(2,26) = 1.656, p=0.217). Therefore, the increase in BPM was achieved by selectively shortening the IT through an increase in PIFadj, while expiratory parameters (e.g. PEFadj (Figure 2a–VIII)) did not achieve statistical significance level and therefore do not seem to have contributed significantly to the increase in BPM.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/86737/elife-86737-fig2-v1.jpg)
+
+**Figure 2.:** (a) Data across all DREADD WBP recordings was plotted as averaged line plots for each animal group (DREADD_neg, hM3Dq and hM4Di) and condition (Saline (red), Clozapine (green) or CNO (blue) i.p.injection). Each animal was recorded three times within each condition (nine recordings in total). Respiratory parameters do not differ between condition in DREADD_neg animals. Injection of CNO or Clozapine in hM3Dq mice significantly alters several respiratory parameters. The effects of Clozapine and CNO injections on respiratory parameters largely overlap and clearly separate from the effects saline injections. In hM4Di animals, more variability within respiratory parameters compared to DREADD_neg controls, however, no statistically significant effect is detected. Data shows the condition mean and standard error of the mean (s.e.m.) (b) Violin plots with integrated boxplots for each group and condition. The width of the violin plot represents the data distribution density. The boxplot ‘s lower and upper limits represent the 25% quantile and 75% quantile, respectively. The horizontal bar inside the boxplot represents the median. The whiskers of the boxplot display 1.5 x the interquartile range. (c) Comparison of gross locomotion as assessed by an open field test. hM3Dq animals show statistically significant reduction in distance moved, while there are no differences observed in the DREADD_neg and hM4Di animals. It is important to note, that the effect size for this reduction in distance moved is small. (d) A statistically significant reduction in time spent in immobility is observed in DREADD_neg animals, however, the effect size is negligible. Time spent in an immobile state does not differ in hM3Dq and hM4Di animals. Track visualization with underlying density maps and zone visit diagrams during open field tests for all DREADD mice can be found in Supplementary files 1 and 2. I = BPM (Breaths per minute); II = IT (Inspiratory time); III = ET (Expiratory time); IV = TT (Total respiratory cycle time); V = TVadjPerGram (Tidal volume normalized to bodyweight in microliters per gram); VI = MVadjPerGram (Minute volume normalized to bodyweight in milliliters per gram); VII = PIFadj (Peak inspiratory flow); VIII = PEFadj (Peak expiratory flow); CNO: clozapine-N-Oxide. Number of mice per condition: DREADD_neg n=4, hM3Dq n=5, hM4Di n=5.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86737/elife-86737-fig2-figsupp1-v1.jpg)
 
 It is important to note that none of the parameters were altered to a level of statistical significance neither in the control group (DREADD_neg) nor in the inhibitory DREADD group (hM4Di). This indicates that the effect was caused by neuronal excitation of the parvafoxFoxb1 and not by an inherent effect of the injected substances (i.e. clozapine or CNO). This conclusion is further strengthened by the increase of c-Fos immunoreactivity evident in the parvafox nucleus of hM3Dq expressing mice, but not in those of hM4Di expressing mice nor in control mice (Figure 2—figure supplement 1).
 
 To test for a potential bias of respiratory recordings by alterations in gross locomotor activity, an open-field test was performed (Figure 2c and d). Global hM3Dq activation of the parvafoxFoxb1 decreased the distance moved to a level of statistical significance, however, with only a small effect size (t(4) = 3.774, p=0.02, g=0.225(small)). The time spent in an immobile state was not affected by chemogenetic activation of the parvafoxFoxb1 (t(4) = 2.257, p=0.087). Activation of the inhibitory hM4Di receptors did not affect gross locomotor activity distance moved: t(4) = –0.697, p=0.524; time spent in immobile state: t(4) = 0.695, p=0.525. Injections of clozapine in control mice (DREADD_neg) did not alter distance moved (t(3) = –2.708, p=0.073), but lead to a statistically significant decrease of time spent in an immobile state, however, with a negligible effect size t(3) = 4.336, p=0.027, g=0.081 (negligible). Thus, despite reaching statistical significance for distance moved in hM3Dq animals and for time spent in an immobile state in DREADD_neg animals, the magnitude of the effect size of chemogenetic modulation of the parvafoxFoxb1 on gross locomotor activity is only small and negligible, respectively, and is unlikely to explain the large size of the effects observed in the alterations of respiratory patterns.
 
-## Optogenetic modulation of Foxb1 terminals in the dlPAG induces immobility
+### Optogenetic modulation of Foxb1 terminals in the dlPAG induces immobility
 
 Respiratory results aside (see previous paragraph), the most prominent effect observed in the optogenetic experiments was the immobility (‘freezing behavior’) displayed by the group of ChR2-expressing mice during photoactivation of the hypothalamic Foxb1+ axonal projections to the rostral part of the dlPAG (Figure 1; Bregma –3.40/–4.04; Figure 3). These mice exhibited a short-latency immobility response immediately after onset of the photostimulation with blue light (7–15 mW, burst of 500ms duration with an intraburst frequency of 30 Hz (5ms pulse duration) and an interburst interval of 500ms). A decrease of locomotor activity was observed in 13 out of 16 ChR2-expressing mice (Figure 3a–c), of which eight mice showed almost complete absence of locomotion. Three of these mice were still capable of moving their heads as a sign of attentive behavior towards its surroundings (158/19, 160/19, and 35B-20), while all four limbs remained largely immobile (Video 1). Five other mice (162/19, 106/21–10, 34/21–7, 34/21–10, and 35E-20) displayed an even greater effect and remained completely immobile (including head activity) during almost the entire duration of the LEDon period (Video 2). No activity bursts were observed, neither during nor after the photostimulation period. Increasing the intensity of the stimulation from 70 to 222 mW (measured at patchcord) using a laser beam did not trigger motor activities.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/86737/elife-86737-fig3-v1.jpg)
 
 **Figure 3.:** (a) A representative example of track visualizations with underlying density maps for a ChR2-expressing Foxb1-Cre mouse belonging to the ‘OnTarget_antPAG’ group during 3 min of baseline (left) and 3 min of optogenetic stimulation (right). Note that the mouse remained immobile for the entire duration of the stimulation period. The color coding scales are not fixed between the two conditions. Open field arena dimensions are 40x40cm. Track visualization with underlying density maps for all other mice can be found in Supplementary file 3. (b) A representative example of a zone visit diagram taken from the same recording as the track visualizations in (a). Note, that the zone transitions stop completely after the onset of optogenetic stimulation. Zone visit diagrams for all other mice can be found in Supplementary file 4. (c) A visual representation of the arena partitioning into the different zones (i.e. arena, periphery, center, and four corners). (d-h) Comparison of multiple parameters extracted from the open field experiments. Optogenetic activation of parvafoxFoxb1 terminals in the PAG reduces distance moved (d), speed.moving (e), and time in center (h), while time spent immobile (f) and time in periphery (g) increases. Optogenetic silencing of parvafoxFoxb1 terminals in the PAG induces opposing effects.
+
+![Video 1.](https://cdn.elifesciences.org/articles/86737/elife-86737-video1.mp4.jpg)
+
+**Video 1.:** The video shows the time window from 1 min before the onset of light stimulation, 5 min of light stimulation, and 1 min following light stimulation offset. The time window of light stimulation is marked by the ‘Light on’ indicator on the top right. The video is played at 5 x of the recording speed.
+
+![Video 2.](https://cdn.elifesciences.org/articles/86737/elife-86737-video2.mp4.jpg)
+
+**Video 2.:** The video shows the time window from 1 min before the onset of light stimulation, 5 min of light stimulation, and 1 min following light stimulation offset. The time window of light stimulation is marked by the ‘Light on’ indicator on the top right. The video is played at 5 x of the recording speed.
 
 To quantify the locomotive behavior induced by optogenetic modulation, we performed open field experiments, where mice were recorded for 3 min without photo-stimulation (BL) and 3 min with photo-stimulation (Stim).
 
@@ -68,15 +82,21 @@ However, of all the mammillary nuclei only the dorsal premammillary nuclei (PMd)
 
 In summary, optogenetic activation of Foxb1+ terminals originating from the hypothalamic parvafox nucleus and/or PMd and projecting to the anterior PAG induces a state of immobility and hypoactivity. Such an activation namely decreases the distance moved, the speed during locomotor periods (speed.moving), the time spent in the center region of the arena, and increases the time spent in an immobile state and the time spent in the periphery of the arena. Stimulation at more posterior positions along the PAG and/or ventral to the dlPAG columns are inefficient in inducing this behavior. The observed effect is bidirectional, in the sense that inhibition of the same terminals in the anterior PAG induces increased distance moved, and time spent in the center of the arena, while decreasing the time spent in an immobile state.
 
-## scRNA seq dataset reveals distinct Foxb1 expression in the PMd
+### scRNA seq dataset reveals distinct Foxb1 expression in the PMd
 
 Our results to this point indicated that a population of Foxb1-expressing neurons in the PMd induces immobility in mice. In contrast to this finding, a cholecystokinin (Cck)-expressing population of neurons in the PMd has been shown to induce escape behavior in mice (Wang et al., 2021). We hypothesized that the Cck-expressing and the Foxb1-expressing PMd neurons are distinct, separate neuronal groups regulating opposite behaviors. To validate this hypothesis, we performed a reanalysis of previously published single-cell RNA sequencing datasets focusing on the murine posterior ventral hypothalamus (Mickelsen et al., 2020; Figure 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/86737/elife-86737-fig4-v1.jpg)
+
+**Figure 4.:** (a) Single-cell transcriptomic analysis of murine ventral-posterior hypothalamic PMd cells into a distinct cluster (Cluster 9). (b) Cluster identity of the PMd cluster is confirmed by expression pattern analysis of genes known to be upregulated in the PMd (Cck, Foxb1, Synpr, Ebf3, Dlk1, and Stxpb6). (c) In situ hybridization photomicrographs from the Allen Brain Atlas show the localization of Cck and Foxb1 transcripts in the PMd. (d) A magnified UMAP plot representation of the PMd cluster highlights the differential expression profiles of Cck and Foxb1 within the PMd cluster. While cells expressing high transcript levels of Cck (middle column, red) preferentially localize to the left side of the PMd cluster, cells with high levels of Foxb1 transcripts (middle column, green) preferentially localize to the opposite (i.e. right) side of the PMd cluster. Analysis of co-expression of Cck and Foxb1 transcripts identifies only few cells as strongly double positive (yellow; see color coding representation), while most cells with high expression levels for one of the two genes have very low to non-existing expression levels of the other gene.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86737/elife-86737-fig4-figsupp1-v1.jpg)
 
 After quality control, normalization, and integration of all four datasets (from two female and two male mice), k-nearest neighbor clustering resulted in 24 distinct cell types detected in the ventral-posterior hypothalamus (Figure 4a). Plotting the expression levels of a set of PMd markers identified by Mickelsen et al. (i.e. Cck, Foxb1, Synpr, Dlk1, Ebf3, and Stxbp6) onto the UMAP plot identified cluster 9 as the PMd (Figure 4b). The cluster identity was further confirmed by calculating differentially-expressed genes between the PMd cluster and the other Cck- and Foxb1-expressing clusters (i.e. clusters 5, 7, and 8) and qualitative comparison of expression patterns from in situ hybridization data provided by the Allen Brain Atlas (Figure 4c and Figure 4—figure supplement 1; Lein et al., 2007). Plotting gene expression with fixed scales across both genes reveals significantly higher expression levels of Cck than Foxb1 in the PMd cluster (column d1 in Figure 4d). Simultaneous visualization of both Cck and Foxb1 expression levels within the PMd cluster shows a biased expression pattern of Cck- and Foxb1-expressing cells towards opposing sides of the PMd cluster (column d2 in Figure 4d). There is a substantial number of single-positive cells for each of the two genes (column d3 in Figure 4d). There is indeed a group of PMd neurons co-expressing both markers, but very few of them show high expression levels of both genes.
 
 In summary, although both Cck and Foxb1 are expressed throughout the entire PMd cluster, there are two well-defined, distinct, subpopulations of neurons expressing either Cck or Foxb1 but not both. We were hence able to introduce the presence of the PMdFoxb1 as a novel subdivision of the PMd with functional distinction from the PMdCck.
 
-## Hot plate experiments
+### Hot plate experiments
 
 Two studies had previously identified the parvalbumin+ subpopulation of the parvafox nucleus (parvafoxPvalb) to be involved in nociceptive behaviors (Roccaro-Waldmeyer et al., 2018; Siemian et al., 2019). We therefore extended the scope of our project to further investigate a possible reciprocal effect of the parvafoxFoxb1 on pain sensation.
 
@@ -84,11 +104,11 @@ In these experiments, we did not observe any significant difference between BL a
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/86737/elife-86737-fig5-v1.jpg)
 
-**Figure 5.:** a) latency until endpoint behavior (i.e. hindpaw lick(-attempt) or jumping) nor in (b) number of shakes before endpoint behavior in any of the three tested groups.These results contradict the hypothesis of a reciprocal effect of the parvafoxPvalb and parvafoxFoxb1 on pain sensation.
+**Figure 5.:** These results contradict the hypothesis of a reciprocal effect of the parvafoxPvalb and parvafoxFoxb1 on pain sensation.
 
 These results reveal that the parvafoxFoxb1 does not excert a reciprocal effect on the parvafoxPvalb’s role in pain sensation. Interestingly though, the absence of altered latencies until endpoint behavior demonstrates that the immobility phenotype of ChR2-expressing Foxb1-Cre mice can be escaped, when thermal stimulus intensity reaches nociceptive threshold (Figure 5a).
 
-## Alterations of cardiovascular parameters upon optogenetic modulation of Foxb1 terminals in the dlPAG is observed in a small cohort of animals
+### Alterations of cardiovascular parameters upon optogenetic modulation of Foxb1 terminals in the dlPAG is observed in a small cohort of animals
 
 The measurement of cardiovascular parameters in a group of 8 Foxb1-Cre mice revealed a sudden onset of bradycardia in three mice (106/21–10, 34/21–7, 34/21–10), immediately after starting the optogenetic activation (Figure 6a). The heart rate (HR) decreased abruptly by 30–60 beats/min but could reach 290 beats/min in some experiments (Figure 6b; 106/21–10). The light-induced cardiovascular responses had an on-kinetic of 1–10 s and at light offset, the HR returned to the baseline levels nearly instantaneously. Augmenting the light intensity of the stimulation increased the extent of HR deceleration. In these three mice, the glass fibers were located bilaterally over the rostral part of the dlPAG (Figure 7a and b). Glass fibers located over the Su3 or over the intermediate or caudal dlPAG or the PV2 nucleus did not trigger cardiovascular reactions. In the five Pvalb-Cre mice with similar injection of Chr2 in the parvafoxPvalb and glass fibers positioned bilaterally over the rostral dlPAG, no changes in cardiovascular parameters were measured.
 
@@ -98,7 +118,7 @@ The measurement of cardiovascular parameters in a group of 8 Foxb1-Cre mice reve
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/86737/elife-86737-fig7-v1.jpg)
 
-**Figure 7.:** a), and bradycardia (b), respectively.The effects were achieved by inserting the fibers in the rostral part of the dlPAG (Bregma −3.28, –4.04) Glass fibers colored in yellow, with their tip located over the dlPAG (a), provoked immobility. Glass fibers colored in black had their tip below the dlPAG and did not evoke changes in mobility. Glass fibers indicated by a green arrow, with their tips over the dlPAG, provoked bradycardia. Glass fibers indicated by black arrows, with their tip below dlPAG or distal to bregma –4.04., did not affect the cardiovascular system (b). (c) Cross-sections of the rostral PAG with eYFP-labelled Foxb1-terminals located in the dlPAG (mouse 106-21/10). The position of the obliquely inserted glass cannula is indicated with a large white arrow and the flat tip of the cannula is positioned over the dlPAG on the right at bregma –3.40 (left image), and on the left at bregma –3.64 (right image). Aq: Aqueductus cerebri; Dk: Darkschewitsch Nucleus; dlPAG: dorsolateral periaqueductal gray; EW: Edigener-Westphal nucleus; lPAG: lateral PAG; Ma3: medial accessory oculomotor nucleus; PrEW: pre-Edinger-Westphal nucleus.
+**Figure 7.:** The effects were achieved by inserting the fibers in the rostral part of the dlPAG (Bregma −3.28, –4.04) Glass fibers colored in yellow, with their tip located over the dlPAG (a), provoked immobility. Glass fibers colored in black had their tip below the dlPAG and did not evoke changes in mobility. Glass fibers indicated by a green arrow, with their tips over the dlPAG, provoked bradycardia. Glass fibers indicated by black arrows, with their tip below dlPAG or distal to bregma –4.04., did not affect the cardiovascular system (b). (c) Cross-sections of the rostral PAG with eYFP-labelled Foxb1-terminals located in the dlPAG (mouse 106-21/10). The position of the obliquely inserted glass cannula is indicated with a large white arrow and the flat tip of the cannula is positioned over the dlPAG on the right at bregma –3.40 (left image), and on the left at bregma –3.64 (right image). Aq: Aqueductus cerebri; Dk: Darkschewitsch Nucleus; dlPAG: dorsolateral periaqueductal gray; EW: Edigener-Westphal nucleus; lPAG: lateral PAG; Ma3: medial accessory oculomotor nucleus; PrEW: pre-Edinger-Westphal nucleus.
 
 In mouse 106-21/10 (Supplementary file 5), the HRV changed from 80ms during the baseline period to 120ms during the optogenetic stimulation the STDEV of cycle duration changed from 3.8 ms to 20.6ms [+445%].
 
@@ -142,13 +162,261 @@ In view of the recent finding that PMd neurons are activated during escape (Wang
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Foxb1</td>
+      <td>NCBI Gene</td>
+      <td>Gene ID: 64290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Foxb1tm1(cre)Gabo</td>
+      <td>MGI</td>
+      <td>MGI ID: 3772366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>129P2-Pvalbtm1(cre)Arbr/J</td>
+      <td>MGI</td>
+      <td>MGI ID: 3773708</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (adeno-associated virus)</td>
+      <td>AAV5-EF1α-DIO-hChR2(H134R)-eYFP</td>
+      <td>Addgene</td>
+      <td>Catalog #: 20298-AAV5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (adeno-associated virus)</td>
+      <td>AAV2-EF1α-DIO-eArchT3.0-eYFP</td>
+      <td>University of North Carolina, Vector Core</td>
+      <td></td>
+      <td>Kind gift from Adamantidis Lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (adeno-associated virus)</td>
+      <td>AAV2-hSyn-DIO-hM3D(Gq)-mCherry</td>
+      <td>Addgene</td>
+      <td>Catalog #: 44361-AAV2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (adeno-associated virus)</td>
+      <td>AAV2-hSyn-DIO-hM4D(Gi)-mCherry</td>
+      <td>Addgene</td>
+      <td>Catalog #: 44362-AAV2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mCherry (Rabbit polyclonal)</td>
+      <td>Abcam plc.</td>
+      <td>product code: ab167453</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-c-Fos (Mouse monoclonal)</td>
+      <td>Abcam plc.</td>
+      <td>product code: ab208942</td>
+      <td>IF(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Chicken polyclonal)</td>
+      <td>Aves Labs, Inc.</td>
+      <td>Product code: GFP-1020</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG (Horse polyclonal, biotinylated)</td>
+      <td>Vector Laboratories</td>
+      <td>Product code: BA-2000</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-chicken IgG (Donkey polyclonal, Cy2-conjugated)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Product code: 703-225-155</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit IgG (Donkey polyclonal, Cy3-conjugated)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Product code: 711-165-152</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin (Alexa Fluor 647-conjugated)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Product code: 016-600-084</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EGFP-f</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CTC GGC ATG GAC GAG CTG TAC AAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAB20</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CAC TGG GAT GGC GGG CAA CGT CTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAB22</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CAT CGC TAG GGA GTA CAA GAT GCC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Life Technologies Corporation</td>
+      <td>Product code: D1306</td>
+      <td>IF(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Product code: C6305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNO</td>
+      <td>Sigma-Aldrich</td>
+      <td>Product code: SML2304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ponemah Software</td>
+      <td>DSI</td>
+      <td>PNM-P3P-CFG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Whole-body barometric plethysmography chambers</td>
+      <td>DSI</td>
+      <td>Product code: 601-0001-011</td>
+      <td>Used in respiration-related experiments</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Buxco Bias flow pump</td>
+      <td>DSI</td>
+      <td>Product code: 601-2201-001</td>
+      <td>Used in respiration-related experiments</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Buxco differential pressure transducer</td>
+      <td>DSI</td>
+      <td>Product code: 600-1114-002</td>
+      <td>Used in respiration-related experiments</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Temperature and humidity probe</td>
+      <td>DSI</td>
+      <td>Product code: 600-2249-001</td>
+      <td>Used in respiration-related experiments</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ACQ-7700 USB amplifier</td>
+      <td>DSI</td>
+      <td>Product code: PNM-P3P-7002SX</td>
+      <td>Used in respiration-related experiments</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dual LED light source</td>
+      <td>Prizmatix Ltd.</td>
+      <td>Product code: 34117</td>
+      <td>Used for optogenetic experiments.blue (peak λ=453 nm) and lime green (peak λ=536 nm)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1.5 mm optical fiber</td>
+      <td>Prizmatix Ltd.</td>
+      <td>Product code: 34131</td>
+      <td>Used for optogenetic experiments.Connecting LED light source to rotary joint</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rotary joint</td>
+      <td>Prizmatix Ltd.</td>
+      <td>Product code: 43043</td>
+      <td>Used for optogenetic experiments.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dual fiber patch cord</td>
+      <td>Prizmatix Ltd.</td>
+      <td>Product code: 34115</td>
+      <td>Used for optogenetic experiments.2x500 μm diameter</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ceramic cannulas</td>
+      <td>Prizmatix Ltd.</td>
+      <td>Product code: 43071</td>
+      <td>Used for optogenetic experiments.1.25 mm outer diameter; 230 μm inner diameter</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>0.66 NA optical fibers</td>
+      <td>Prizmatix Ltd.</td>
+      <td></td>
+      <td>Used for optogenetic experiments.200 μm outer diameter.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>473 nm DPSS laser</td>
+      <td>Laserglow technologies</td>
+      <td>Product code: LRS-0473-PFO-00500–01</td>
+      <td>Used for optogenetic experiments.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 A total of 42 mice of both sexes were used for the purpose of this study. Most animals were Foxb1tm1(cre)Gabo mice that express Cre-recombinase under the control of the promoter for Foxb1. For the cardiovascular experiments, five mice belonging to the Pvalb-Cre strain (129P2-Pvalbtm1(cre)Arbr/J) were used (Hippenmeyer et al., 2005). All animals were maintained at a constant temperature of 24 °C in state-of-the-art animal facilities with a 12hr-light/12hr-dark cycle and had ad libitum access to food and water.
 
 All experiments were approved by the Swiss federal and cantonal committee for animal experimentation (2016_20E_FR and 2021–10-FR) and were conducted in accordance with the institutional guidelines of the University of Fribourg.
 
-## Intracerebral AAV injection
+### Intracerebral AAV injection
 
 Mice in which we aimed at modulating neuronal activity were injected intracerebrally either with (i) Channelrhodopsin (AAV5-EF1α-DIO-hChR2(H134R)-eYFP), (ii) Archeorhodopsin (AAV2-EF1a-DIO-eArchT3.0-eYFP), (iii) activating DREADD (AAV2-hSyn-DIO-hM3D(Gq)-mCherry) or, (iv) inhibiting DREADD (AAV2-hSyn-DIO-hM4D(Gi)-mCherry). All optogenetic and chemogenetic agents injected into Foxb1-Cre and Pvalb-Cre mice were Cre-dependent and were bilaterally injected into the posterior portion of the parvafox nuclei of the LHA.
 
@@ -156,7 +424,7 @@ All intracerebral viral vector injections were conducted according to the follow
 
 The animal was weighed and was anesthetized with an intraperitoneal injection (i.p.) of a mixture of ketamine (40–60 mg.kg–1 of body weight) and xylazine (10–15 mg.kg–1 of body weight) diluted in physiological (0.9 %) saline. The fur covering the cranium was shaved and the mouse was head fixed into a stereotaxic apparatus (Kopf instruments, model 5000) equipped with a heating pad to maintain body temperature. Depth of anesthesia was assessed regularly throughout the entire duration of the surgery. If necessary, additional doses of the anesthetic agent were injected. Eye ointment was applied, and the eyes were protected from exposure to direct light. Once tail pinch and toe pinch reflexes were vanished, a sagittal skin incision above the midline of the cranium was performed and the cranial sutures were identified to locate bregma. Craniotomy was performed bilaterally above the site of injection with a dental steel bur. The viral vector was then aspirated into a 2.5 μl Hamilton syringe via a fine-bored 34-gauge needle (external diameter of 0.14 mm). The Hamilton syringe was mounted onto a manual microinjection unit and fixed to the stereotaxic frame. After identification of bregma, the needle tip was placed just above it and the anterior-posterior and medial-lateral coordinates for the injection sites were calculated relative to bregma (AP –1.3 mm, ML +/-1.3 mm). The needle was then placed on the brain surface above the target injection site and the dorsal-ventral coordinate was calculated relative to the brain surface (DV –5.5 mm). The needle was subsequently lowered into the brain until the desired depth was reached. 200 nl of the viral construct were injected into the parvafox nuclei bilaterally at a rate of 100 nl/min. Before retraction of the needle, the needle was left in place for 5 min to allow diffusion of the virus and to minimize backflush of the virus along the entry path of the needle. The same procedure was then repeated on the contralateral side. Once both viral injections were completed, the mouse was released from the stereotaxic frame and the skin incision was closed with one to two surgical stiches. The mouse was placed into a separate cage to recover from the surgery and was later put back into its home cage once consciousness was regained.
 
-## Fiber optic cannulas and implantation procedure
+### Fiber optic cannulas and implantation procedure
 
 Fiber optic cannulas were custom made with ceramic ferrules (230 μm ID, 1.25 mm OD; Prizmatix Ltd., Israel) and optical fibers (200 µm OD, 0.66 NA; Prizmatix Ltd., Israel). The length of the protruding glass fiber end was set to 0.4 mm for the cannulas to be implanted above the dlPAG. The non-protruding end of the optical fiber was polished on a series of lapping sheets with decreasing grit size (5 μm, 3 μm, 1 μm, 0.3 μm). Each optical fiber implant was measured for its coupling efficiency before implantation. Implantation of the fiber optic cannulas was performed 2–3 weeks after virus injection.
 
@@ -164,17 +432,17 @@ The surgical procedure for implantation of the cannulas was as follows:
 
 Initial preparation of the animal for access to the skull was performed as described above for viral vector injections. Once bregma was identified, small marks on the skull were made to identify the position of the bilateral bur holes for the cannulas and the three to four skull fixation screws. The bur holes were hand drilled with a dental steel bur and three to four fixation screws were screwed into the skull. The skull fixation screws were additionally locked to the skull by cyanoacrylate adhesive. A cannula was then mounted to the stereotaxic frame via a standard electrode holder (Kopf instruments) and was inserted into the brain at the desired coordinates. The bilateral cannulas implanted above the dlPAG were inserted at a 20° angle in the coronal plane (V-shaped arrangement of cannulas) to allow enough space for later connection to the patch cords. The coordinates for dlPAG cannulas insertion sites were AP –4.0 mm, ML +/-1.5 mm relative to bregma and insertion depth (at an angle of 20°) was –2.8 mm from the surface of the skull. Once the fibers were in place, self-curing acrylic (Palidur powder and liquid, Heraeus Kulzer GmbH, Hanau, Germany) was applied to the skull, the ceramic ferrule and the fixation screws. The mouse was then released from the stereotaxic apparatus and a 0.3 ml subcutaneous injection of physiological (0.9 %) saline into the neck scruff was made to support recovery from the surgery. Further, Carprofen (Rimadyl, 5 mg.kg–1 of body weight) was subcutaneously administered as an analgesic following surgery. After surgery, the mouse was placed in a separate cage under a warming lamp until consciousness was fully regained. Whenever possible, mice were put back into their home cages together with their cage mates. If fighting behavior was observed between male cage mates, the mice were kept in separate cages.
 
-## Optogenetic stimulation
+### Optogenetic stimulation
 
 Time-resolved optogenetic gain-of-function manipulation of Foxb1+ axon terminals was performed bilaterally. A dual LED light source (MP-Nr: 34117; Prizmatix Ltd., Israel) with blue (peak λ=453 nm) and lime green (peak λ=536 nm) light emitting diodes (LEDs) were connected to a 1.5 mm optical fiber (NA 0.63; MP-Nr: 34131; Prizmatix Ltd.) which terminated into a rotary joint (MP-Nr: 34043, Prizmatix Ltd.), connecting to a dual fiber patch cord (2x500 μm, NA 0.63, MP-Nr: 34115; Prizmatix Ltd.). The two patch cord ends were attached to the cannulas on the head of the mouse by ceramic sleeves (ID = 1.25 mm, MP-Nr: 34071; Prizmatix Ltd.). ChR2 mice were stimulated with an intensity of 7–15 mW per fiber tip. The protocol for ChR2 activation consisted of bursts of 500ms duration with an intraburst frequency of 30 Hz, a pulse duration of 5ms and an interburst interval of 500ms and was based on the previously published firing properties of Foxb1+ neurons of the medial mammillary complex (Alonso and Llinás, 1992). ArchT3.0 stimulation protocol consisted of alternating 10 s windows with continuous LEDon and LEDoff, respectively (intensity of 7–15 mW). The optogenetic pulses were generated on a PulserPlus (MP-Nr.:34192, Prizmatix Ltd.) installed on a PC and were sent to the dual LED source and to an ACQ-7700 USB amplifier (PNM-P3P-7002SX, Data Sciences International [DSI], St. Paul, MN, USA).
 
 A laser system of the type LRS-0473-PFO-00500–01 LabSpec (473 nm DPSS) from Laserglow technologies, North York, Ontario, Canada, was employed for augmenting the power output in the cardiovascular experiments (70–222 mW). The estimated power at the specimen was measured with a photodiode (Thorlabs).
 
-## Chemogenetic stimulation
+### Chemogenetic stimulation
 
 Mice stereotaxically injected with activating or inhibiting DREADDs, as well as animals without expression of any DREADDs (i.e. DREADD_neg) were injected i.p. with CNO, clozapine or physiological saline in a given experimental block. CNO was administered at a dose of 1 mg∙kg–1 of bodyweight 30 min before the start of the experiment. Due to faster pharmacokinetics, clozapine was administered i.p. at a subthreshold dose of 0.1 mg∙kg–1 of bodyweight immediately before the start of the experiment. Attention was given to eventual backflush or unintentional subcutaneous administration. Dose calculations were adjusted individually to bodyweight before each injection.
 
-## Whole body barometric plethysmography (WBP)
+### Whole body barometric plethysmography (WBP)
 
 To measure respiratory parameters, mice were placed in whole-body barometric plethysmography chambers (item Nr. 601-0001-011, DSI) that were connected to a Buxco Bias flow pump (item Nr. 601-2201-001, DSI, St. Paul, MN, USA) to avoid CO2 accumulation inside the chambers and to circulate ambient air through the chambers at a rate of 1 L∙min–1. Each chamber was equipped with a high sensitivity differential pressure transducer (Buxco TRD5700 Pressure, item Nr. 600-1114-002, DSI) as well as a temperature and humidity probe (item Nr. 600-2249-001, DSI). All sensors were connected to the ACQ-7700 amplifier for pre-processing of signals.
 
@@ -184,25 +452,25 @@ On the experimental day, mice were brought into the experimental room and were a
 
 Each animal’s baseline (BL) was measured for 3x90 min on 3 consecutive days. BL condition for DREADD animals consisted in a 0.2 ml i.p. injection of physiological (0.9 %) saline 30 min before measurement. After BL recordings, DREADD animals were measured for 3x90 min under CNO stimulation on 3 consecutive days and for another 3x90 min under clozapine stimulation on another 3 consecutive days. Mice were given a break of at least 3 days between CNO and clozapine experimental blocks to allow for complete clearance of the substances and to reduce stress on the animal. WBP chambers were cleaned with soap and water after each recording to avoid olfactory stimulation of the next mouse. All WBP experiments for a given mouse were performed at the same time of the day to account for circadian variability.
 
-## Cardiovascular measurements with telemetry
+### Cardiovascular measurements with telemetry
 
 For measuring cardiovascular functions, an implantable telemetry system from Datascience International (DSI) was used. The transmitter was implanted in 13 mice following manufacturer instructions and as previously described (Huetteman and Bogie, 2009; Pillai et al., 2018). Briefly, mice were anesthetized with the aid of isoflurane and implanted with a PA-C-10 transmitter (DSI). This small pressure sensing telemetry tool was implanted in the left carotid artery taking care to place the pressure-sensitive tip in the aortic arch. The radio transmitting device (RTD) was placed under the skin along the right flank of the mice. Mice were given analgesics for 3 days post-surgery. One week after telemetric sensor implantation, a test measurement was conducted to ensure that the catheter, the RTD and the receiver (RPC-1) were functioning well. The optogenetic experiment was performed after 2 more weeks.
 
 Measurements were recorded with Dataquest ART (version 3.1) and RespiRate (DSI). Recordings were taken three times for 3 weeks post-surgery. Recordings were continuously taken for 30 s every 5 min during these sessions. Systolic, diastolic and mean blood pressure, heart rate and activity were analyzed. Pulse wave signals were used to measure the heart rate variability (HRV).
 
-## Open field test
+### Open field test
 
 As in all other experiments reported in this paper, mice were transported into the experimental room and were allowed to acclimatize to the new environment for at least 45 min. The experimental arena for the open field test consisted in a 40x40 cm cage with transparent plexiglas walls and a gray colored metal floor. After each recording of a mouse, the arena was thoroughly cleaned with 70% ethanol. Each mouse was recorded four times (2 x saline/LEDoff and 2 x clozapine/LEDon) spread across 2 days with at least 2 days between experimental days. In DREADD experiments, the saline condition was performed in the morning and the clozapine session in the afternoon. To account for potential circadian bias, optogenetic morning and afternoon sessions for each mouse were alternated, so that the two recordings for LEDoff and LEDon, respectively, were recorded once in the morning session and once in the afternoon session. Recordings consisted of a 5-min habituation period inside the experimental arena, uninterruptedly followed by a 5-min recording period. Mice for DREADD experiments were injected with clozapine (i.p. 0.1 mg∙kg–1 of bodyweight) 30 min before the recording time window. Optogenetic mice remained in their home cages until the start of the 5-min habituation session, shortly before which they were attached to the patch cords. In all optogenetic animals (including controls), a stop watch signal marked the end of the 5 min of habituation. The experimenter then initiated the LEDon period accompanied by another brief auditory signal.
 
-## Pose estimation of open field data
+### Pose estimation of open field data
 
 For body part tracking, DeepLabCut (version 2.2.2) (Mathis et al., 2018; Nath et al., 2019) was used. Specifically, 500 frames taken from 25 videos were labeled and 95% was used for training. A ResNet-50-based neural network with default parameters was used for 600,000 training iterations. We validated with 1 shuffle, and found the test error was: 2.03 pixels, train: 2.39 pixels (image size was 1280 by 720 pixels). We then used a p-cutoff of 0.95 to condition the X,Y coordinates for future analysis. This network was then used to analyze videos from similar experimental settings.
 
-## Hot plate test
+### Hot plate test
 
 To assess thermal nociceptive perception in optogenetic Foxb1-Cre mice, they were first connected to the patch cords and placed onto an insulation layer of cork and several layers of paper towels on the hot plate for 3 min to acclimatize to the new environment. The hot plate (Analgesia meter for rodents, IITC life sciences Inc, Woodland Hills, CA, USA) was maintained at 51+/-0.1 °C. After 3 min had passed, the insulation layer was removed and the latencies until hindlimb shaking, hindlimb licking and jumping were recorded as baseline. In case the mouse did not display any of the two endpoint behaviors (i.e. hind paw licking or jumping), the recording was terminated 50 s after the onset of the thermal stimulus to prevent tissue damage. After termination of the baseline recording, the insulation layer was again placed between the mouse and the hot plate and the optogenetic stimulation was initiated (see ‘Optogenetic stimulation’ for detailed parameters). After 3 min of optogenetic stimulation, the insulation was once again removed and the mouse was placed back onto the hot plate, while the stimulation continued. Just like in the baseline condition, the same latencies were recorded, or the experiment was terminated after maximally 50 s. As observed in pilot experiments, the ChR2-injected mice displayed reduced locomotor activity and seemed to be limited in their ability to lick their hind paw. We therefore also terminated the recording, when the mouse displayed an obvious attempt to lick its hind paw and the latency until the display of such an event was recorded. The same procedure was repeated one more time on another day to record two baseline and two LED condition recordings for each optogenetic animal.
 
-## Histology
+### Histology
 
 Before mice were perfused, they went through the same routine as in a regular experimental condition (LED stimulation or CNO injection) for later detection of c-Fos immunofluorescence. Two hours after the start of the activation/inhibition experiments, the mice were deeply anesthetized with the same anesthetic agent used for surgical procedures (see above). Once the pain reflexes vanished, the thorax was fenestrated, and the mouse was transcardially perfused with physiological (0.9 %) saline for 3 mins and subsequently with 4% paraformaldehyde (PFA) in PBS 0.1 M (pH 7.4) for 5 min. Decapitation was performed and the head was placed in 4% PFA until extraction of the glass fiber implants. After cannulas extraction from the skull, the cannulas were stored for post-extraction coupling efficiency measurement. The brains were then harvested and further immersed in TBS 0.1 M+18% sucrose +0.02% Na-azide overnight for cryoprotection.
 
@@ -214,13 +482,13 @@ Sections were washed for 3x5 min in TBS 0.1 M. The sections were then incubated 
 
 Sections were mounted onto Superfrost +glass slides (Thermo Scientific) and were left to dry for 2 hr at 37 °C. Slides were then quickly washed in dH2O before standard cover slips were mounted to the slides with Hydromount mounting medium (National Diagnostics, Atlanta, GA, USA).
 
-## Genotyping
+### Genotyping
 
 Genotyping was performed before animal selection and again after perfusion to exclude any mix-up during the testing period. For the first genotyping, tissue samples from the toe clipping procedure were used. For the second genotyping, tissue samples were taken from the tail after the animal was deeply anesthetized and before perfusion with 4% PFA.
 
 The primer sequences used for Foxb1-Cre genotyping were as follows:
 
-## Reanalysis of single-cell RNA sequencing data set
+### Reanalysis of single-cell RNA sequencing data set
 
 The raw data used for the reanalysis of single-cell RNA sequencing reads from mouse (postnatal day 30–34) ventral-posterior hypothalami was kindly made available to the public by the original authors (Mickelsen et al., 2020) through the gene expression omnibus under the accession number ‘GSE146692’.
 
@@ -228,7 +496,7 @@ The entire analysis workflow was executed as follows using the Seurat package V4
 
 Datasets of two male and two female animals were imported into R and initialized as four separate Seurat objects. Subsequently, the four separate objects were merged into a common Seurat object and the percentage of mitochondrial transcripts as well as the number of hemoglobin transcripts per cell were calculated. Quality control was performed by analyzing number of features, number of counts, percentage of mitochondrial RNA, and number of hemoglobin gene transcripts. Data meeting the following criteria were kept for downstream analysis: nFeatures >200 & nFeatures <7500 & percent.mtRNA <15 & nHemoglobin_RNA <50. The filtered dataset was then normalized within each original identity (male1, male2, female1, female2) using the SCTransform function and 3000 integration features were selected. To correct for batch effects, integration anchors were detected based on the selected integration features prior to integration of the four datasets. Next, uniform manifold approximation and projection (UMAP) was performed for dimensional reduction before clusters were identified and plotted for inspection. We then plotted the expression levels of a set of candidate genes (features) to identify the cluster representing the PMd and to differentiate it from the lateral and medial premammillary nuclei (LM and MM). To confirm our cluster identification, we extracted markers for the identified PMd cluster as well as differential markers for the PMd cluster vs. MM and LM clusters. Qualitative comparison of these markers with in situ hybridization data from the Allen Mouse Brain Atlas confirmed PMd cluster identity. Within the PMd cluster, we then extracted and plotted the level of co-expression of Cck and Foxb1 within each cell of the cluster.
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 Statistical analysis and data handling was performed with custom written codes in R/RStudio and with Python in Jupyter Notebooks.
 

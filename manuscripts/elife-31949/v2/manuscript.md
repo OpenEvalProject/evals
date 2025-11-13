@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.31949.001 Tonic pain after injury characterises a behavioural state that prioritises recovery. Although generally suppressing cognition and attention, tonic pain needs to allow effective relief learning to reduce the cause of the pain. Here, we describe a central learning circuit that supports learning of relief and concurrently suppresses the level of ongoing pain. We used computational modelling of behavioural, physiological and neuroimaging data in two experiments in which subjects learned to terminate tonic pain in static and dynamic escape-learning paradigms. In both studies, we show that active relief-seeking involves a reinforcement learning process manifest by error signals observed in the dorsal putamen. Critically, this system uses an uncertainty (‘associability’) signal detected in pregenual anterior cingulate cortex that both controls the relief learning rate, and endogenously and parametrically modulates the level of tonic pain. The results define a self-organising learning circuit that reduces ongoing pain when learning about potential relief.
+Tonic pain after injury characterises a behavioural state that prioritises recovery. Although generally suppressing cognition and attention, tonic pain needs to allow effective relief learning to reduce the cause of the pain. Here, we describe a central learning circuit that supports learning of relief and concurrently suppresses the level of ongoing pain. We used computational modelling of behavioural, physiological and neuroimaging data in two experiments in which subjects learned to terminate tonic pain in static and dynamic escape-learning paradigms. In both studies, we show that active relief-seeking involves a reinforcement learning process manifest by error signals observed in the dorsal putamen. Critically, this system uses an uncertainty (‘associability’) signal detected in pregenual anterior cingulate cortex that both controls the relief learning rate, and endogenously and parametrically modulates the level of tonic pain. The results define a self-organising learning circuit that reduces ongoing pain when learning about potential relief.
 
 ## Introduction
 
@@ -40,7 +40,7 @@ The studies presented here set two goals: to delineate the basic neural architec
 
 ## Results
 
-## Experiment 1
+### Experiment 1
 
 Experiment 1 was an escape learning task (n = 19) with fixed, probabilistic cue-relief contingencies (Figure 1a). Each subject performed three instrumental sessions and three Pavlovian sessions, to allow us to compare active and passive relief learning (Figure 1b). During each session (lasting approximatey 5 min), subjects were held in continuous pain by a thermal stimulator attached to their left arm, and temporary relief (i.e. escape) was given by rapidly cooling the thermode for 4 s, after which it returned to the baseline tonic pain level (Figure 1c). In instrumental sessions, subjects actively learned to select actions, a left or right button press, after viewing one of two visual cues (fractal images on a computer screen). For one of the cues, the probability of relief was 80% for one action and 20% for the other action, and for the other cue, the action relief probabilities were 60% and 40%. In the Pavlovian sessions, stimulus and outcome sequences were yoked to instrumental sessions for individual subjects, and subjects were required simply to press a button to match a random direction appearing on screen 0.5 s after visual cue onset (to control for motor responses). Subjective ratings of pain and relief were collected in random trials after outcome delivery, with on average eight pain and eight relief ratings per paradigm that is total 16 for each subject. All behavioural data including raw SCRs, choices, and ratings can be found in the manuscript data attachment.
 
@@ -48,33 +48,45 @@ Experiment 1 was an escape learning task (n = 19) with fixed, probabilistic cu
 
 **Figure 1.:** (a) Example trial in Experiment 1, which was an instrumental relief learning task (Ins) with fixed relief probabilities, yoked with identical Pavlovian task (Pav) within subject. In instrumental trials, subjects saw one of two images (’cues’) and then chose a left or right button press, with each action associated with a particular probability of relief. In the yoked Pavlovian session, subjects were simply asked to press button to match the action shown on screen (appearing 0.5 s after CS onset). (b) Instrumental/Pavlovian session yoking and cue-outcome contingency in Experiment 1, arrows represent identical stimulus-outcome sequence. Note in contingency table, left and right button presses were randomised for both actions and cues. (c) Relief and no relief outcomes, individually calibrated, constant temperatures at around 44°C were used to elicit tonic pain; a brief drop in temperature of 13°C was used as a relief outcome (4 s in Experiment 1, 3 s in Experiment 2), but temperature did not change for the duration in no relief outcomes. (d) Example trial in Experiment 2, where subjects performed an instrumental paradigm (only) involving unstable relief probabilities. The cue-action representation was different to Experiment 1, and three cues were presented alongside each other with subjects required to choose one of the three using a button press. The position of each cue varied from trial-to-trial, and the same three cues were presented throughout. Tonic pain rating being taken before the outcome was experienced, not after as in Experiment 1. (e) Example traces of dynamic relief probabilities for the three displayed cues throughout all trials in eight sessions in Experiment 2, which required a constant trade-off of exploration and exploitation throughout the task. Dynamic relief probabilities also provide varying uncertainty throughout learning.
 
-## Behavioural results
+#### Behavioural results
 
-## Choice
+##### Choice
 
 In instrumental learning, participants can learn which actions maximise the chance of relief. We assessed the ability of RL models to explain subjects’ choice data, in comparison to a simple win-stay-lose-shift (WSLS) decision-making rule. We compared two basic RL models that have been widely studied in neurobiological investigations of reward and avoidance - a temporal difference (TD) action learning model with a fixed learning rate, and a version of the TD model with an adaptive learning rate based on action associabilities (hybrid TD model). As mentioned above, the associability reflects the uncertainty in the action value, where higher associability indicates high uncertainty during learning, and is calculated based the recent average of the prediction error magnitude for each action. In a random-effects model comparison procedure (Daunizeau et al., 2014), we found that choices were best fit by the basic TD model (model frequency = 0.964, exceedance probability = 1, Figure 2a). Thus, there is no evidence that associability operates directly at the level of actions.
 
-## Skin conductance responses (SCR)
+![Figure 2.](https://cdn.elifesciences.org/articles/31949/elife-31949-fig2-v2.jpg)
 
-To investigate physiological indices of learning, we examined trial-by-trial skin conductance responses (SCRs) during the 3 s cue time, before outcome presentation. SCRs obtained in instrumental sessions were higher compared to yoked Pavlovian sessions (Figure 2b, n = 15, see Materials and methods for session exclusion criteria, paired t-test T(14)=2.55, p=0.023), with the average SCR positively correlated between paradigms across individuals (Pearson correlation ρ=0.623, p=0.013, n = 15). Raw traces and cue-evoked responses of SCRs can be found in Figure supplements.
+**Figure 2.:** (a) Choice-fitted model comparison, TD model fit instrumental sessions choices best (TD: action-learning model with fixed learning rate, Hybrid: action-learning model with associability as changing learning rate, WSLS: win-stay-lose-shift model). Model frequency represents how likely a model generate the data given a random participant, while exceedance probability estimates how one model is more likely compared to others (Stephan et al., 2009). (b) Instrumental vs Pavlovian sessions SCRs (n = 15, sessions with over 20% trials <0.02 amplitude excluded). (c) Associability from hybrid model fitted trial-by-trial SCRs best in instrumental sessions (Assoc: associability, Hyb: hybrid model, RW: Rescorla-Wagner model). (d) Associability also fitted SCRs from Pavlovian sessions best. (e) Both pain and relief ratings did not differ significantly between instrumental and Pavlovian sessions (Participants’ ratings were averaged for each of the four categories shown, mean = 8 ratings per person per category).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31949/elife-31949-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31949/elife-31949-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/31949/elife-31949-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Choice fitting remains similar to the original exceedance probability, however, SCR fitting comparison becomes less clear regarding best fitting model.
+
+##### Skin conductance responses (SCR)
+
+To investigate physiological indices of learning, we examined trial-by-trial skin conductance responses (SCRs) during the 3 s cue time, before outcome presentation. SCRs obtained in instrumental sessions were higher compared to yoked Pavlovian sessions (Figure 2b, n = 15, see Materials and methods for session exclusion criteria, paired t-test T(14)=2.55, p=0.023), with the average SCR positively correlated between paradigms across individuals (Pearson correlation $ρ$=0.623, p=0.013, n = 15). Raw traces and cue-evoked responses of SCRs can be found in Figure supplements.
 
 In Pavlovian aversive (fear) learning, SCRs have been shown to reflect the associability of Pavlovian predictions (Li et al., 2011; Boll et al., 2013; Zhang et al., 2016). Here, associability is calculated as the mean prediction error magnitude for the state (i.e. regardless of actions) (Le Pelley, 2004). In instrumental learning, Pavlovian learning of state-outcome contingencies still proceeds alongside action-outcome learning, distinct from instrumental choices, so Pavlovian state-outcome learning can be modelled in both instrumental and Pavlovian sessions. Consistent with previous studies of phasic pain, model-fitting revealed that a learning model with a state-based associability (’hybrid’ model) best fit the SCR data in both Pavlovian and instrumental sessions (Figure 2c and Figure 2d, instrumental sessions: model frequency = 0.436, exceedance probability = 0.648, Pavlovian sessions: model frequency = 0.545, exceedance probability = 0.676), when tested against a competing simple Pavlovian Rescorla-Wagner model (akin to a TD model with only one state and a fixed learning rate). However, using the more stringent Protected Exceedance Probability analyses, the advantage of associability over other models were less conclusive (Figure 2—figure supplement 3). Together with the choice results, these analyses suggest that subjects use an associability-based RL mechanism for learning state values during both Pavlovian and instrumental pain escape, and a non-associability-based RL mechanism for learning action values in instrumental sessions. This divergence in learning strategies indicates that parallel learning systems coexist, which differ in their way of incorporating information about uncertainty in learning, as well as the nature of their behavioural responses.
 
-## Ratings
+##### Ratings
 
 Subjective ratings of pain and relief were taken intermittently after outcomes during the task, to explore how pain modulation might depend on relief learning. Ratings were taken on a sample of trials, so as to minimise disruption of task performance. Based on the fact that both controllability and attention are implicated in endogenous control, we hypothesised that pain would be reduced when the state-outcome associability was high, reflecting an attentional signal associated with enhanced learning. However, other types of modulation are possible. For instance, pain might be non-specifically reduced in instrumental, versus Pavlovian learning, reflecting a general effect of instrumental controllability. Alternatively, pain might be reduced by the expectation of relief that arises during learning, as it is known that conditioning alone can support placebo analgesia responses (Colloca et al., 2008) (although the extent to which this occurs might depend on the acquisition of contingency awareness during learning) (Montgomery and Kirsch, 1997; Locher et al., 2017). In this case, pain would be positively correlated with the relief prediction error, since it reports the difference between expectation and outcome.
 
-To test these competing hypotheses, we first compared the mean ratings of both pain (following a ‘no relief’ outcome) and relief (following a relief outcome) between Pavlovian and instrumental sessions, and found no significant difference (Mean±SEM, n = 19, mean = 8 ratings per person per category, instrumental pain: 6.97±0.13, Pavlovian pain: 6.91±0.20, instrumental relief: 6.46±0.24, Pavlovian relief: 6.33±0.27, between paradigm paired t-test both ratings p>0.5, Figure 2e). Hence, there is no support for a general effect of instrumental controllability on subjective pain and/or relief experience. We noted that mean pain and relief ratings were correlated with each other across individuals (ratings averaged across paradigms, Spearman’s correlation ρ=0.73, p<0.001), indicating that higher perceived tonic heat pain was associated with higher cooling-related relief.
+To test these competing hypotheses, we first compared the mean ratings of both pain (following a ‘no relief’ outcome) and relief (following a relief outcome) between Pavlovian and instrumental sessions, and found no significant difference (Mean$\pm$SEM, n = 19, mean = 8 ratings per person per category, instrumental pain: 6.97$\pm$0.13, Pavlovian pain: 6.91$\pm$0.20, instrumental relief: 6.46$\pm$0.24, Pavlovian relief: 6.33$\pm$0.27, between paradigm paired t-test both ratings p>0.5, Figure 2e). Hence, there is no support for a general effect of instrumental controllability on subjective pain and/or relief experience. We noted that mean pain and relief ratings were correlated with each other across individuals (ratings averaged across paradigms, Spearman’s correlation $ρ$=0.73, p<0.001), indicating that higher perceived tonic heat pain was associated with higher cooling-related relief.
 
-Next, we correlated pain ratings with the state-based associability and TD prediction error. In accordance with our hypothesis, in instrumental sessions associability was found to be negatively correlated with pain ratings (mean Spearman’s ρ¯=−0.177, one-sample t-test of Fisher’s z-transformed correlation coefficients T(18)=-2.125, p=0.048). In Pavlovian sessions, however, we did not find a correlation (ρ¯=−0.114, T(18)=0.758, p=0.458). There was no significant interaction between associability and paradigm (repeated measure ANOVA F(1,18)=1.247, p=0.279). This suggests that although associability is associated with pain modulation, this effect is not necessarily specific to instrumental sessions.
+Next, we correlated pain ratings with the state-based associability and TD prediction error. In accordance with our hypothesis, in instrumental sessions associability was found to be negatively correlated with pain ratings (mean Spearman’s $ρ¯$=−0.177, one-sample t-test of Fisher’s z-transformed correlation coefficients T(18)=-2.125, p=0.048). In Pavlovian sessions, however, we did not find a correlation ($ρ¯$=−0.114, T(18)=0.758, p=0.458). There was no significant interaction between associability and paradigm (repeated measure ANOVA F(1,18)=1.247, p=0.279). This suggests that although associability is associated with pain modulation, this effect is not necessarily specific to instrumental sessions.
 
-We found that the prediction errors were negatively correlated with pain ratings in Pavlovian sessions (ρ¯=−0.356, T(18)=-3.198, p=0.005), but not instrumental sessions (ρ¯=−0.154, T(18)=0.720, p=0.481). That is, when relief was omitted (i.e. as was always the case on the pain rating trial), a larger frustrated (i.e. negative) relief prediction error was associated with an increase in pain - in contrast to the prediction of a placebo expectation hypothesis. Finally, we also looked at relief ratings, but failed to find any significant correlation with either associability or prediction error in either instrumental or Pavlovian sessions.
+We found that the prediction errors were negatively correlated with pain ratings in Pavlovian sessions ($ρ¯$=−0.356, T(18)=-3.198, p=0.005), but not instrumental sessions ($ρ¯$=−0.154, T(18)=0.720, p=0.481). That is, when relief was omitted (i.e. as was always the case on the pain rating trial), a larger frustrated (i.e. negative) relief prediction error was associated with an increase in pain - in contrast to the prediction of a placebo expectation hypothesis. Finally, we also looked at relief ratings, but failed to find any significant correlation with either associability or prediction error in either instrumental or Pavlovian sessions.
 
-## Neuroimaging results
+##### Neuroimaging results
 
-The behavioural findings support the hypothesis that an associability signal that arises during state-based learning is associated with reduction of pain. Next, therefore, we then sought to identify (i) neural evidence for an error-based relief learning process and (ii) the neural correlates of the associability signal associated with tonic pain modulation. We implemented the TD action-learning model and associability-based hybrid TD state-learning model as determined from the behavioural data, using group-mean parameters (learning rate in TD model, and free parameter κ and η in hybrid TD model) to re-estimate trial-by-trial prediction errors/associability values for each subject as parametric modulators of fMRI BOLD time-series in general linear models.
+The behavioural findings support the hypothesis that an associability signal that arises during state-based learning is associated with reduction of pain. Next, therefore, we then sought to identify (i) neural evidence for an error-based relief learning process and (ii) the neural correlates of the associability signal associated with tonic pain modulation. We implemented the TD action-learning model and associability-based hybrid TD state-learning model as determined from the behavioural data, using group-mean parameters (learning rate in TD model, and free parameter $κ$ and $η$ in hybrid TD model) to re-estimate trial-by-trial prediction errors/associability values for each subject as parametric modulators of fMRI BOLD time-series in general linear models.
 
-## Prediction errors
+##### Prediction errors
 
 The prediction error represents the core ‘teaching’ signal of the reinforcement learning model, and we specified a priori regions of interest based on the areas known to correlate with the prediction error in previous reinforcement learning studies of pain and reward (ventral and dorsal striatum, ventromedial prefrontal cortex (VMPFC), dorsolateral prefrontal cortex (DLPFC), and amygdala (Seymour et al., 2005; Garrison et al., 2013; FitzGerald et al., 2012)).
 
@@ -82,61 +94,597 @@ First, we looked for brain responses correlated with the action prediction error
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/31949/elife-31949-fig3-v2.jpg)
 
-**Figure 3.:** a) TD model prediction errors (PE) as parametric modulators at outcome onset time (duration = 3 s). (b) Model PE posterior probability maps (PPMs) from group-level Bayesian model selection (BMS) within PE cluster mask, warm colour: TD model PE, cool colour: hybrid model PE (shown at exceedance probability P>0.7). (c) Axiomatic analysis of hybrid model PEs in instrumental sessions, ROIs were 8 mm spheres from BMS peaks favouring TD model PEs, in left putamen and VMPFC. (d) Associability uncertainty generated by hybrid model, as parametric modulators at choice time (duration = 0), in instrumental sessions. (e) Comparing pgACC activations across instrumental/Pavlovian paradigms, ROI was 8 mm sphere at [−3, 40, 5], peak from overlaying the pgACC clusters from Experiments 1 and 2.
+**Figure 3.:** (b) Model PE posterior probability maps (PPMs) from group-level Bayesian model selection (BMS) within PE cluster mask, warm colour: TD model PE, cool colour: hybrid model PE (shown at exceedance probability P>0.7). (c) Axiomatic analysis of hybrid model PEs in instrumental sessions, ROIs were 8 mm spheres from BMS peaks favouring TD model PEs, in left putamen and VMPFC. (d) Associability uncertainty generated by hybrid model, as parametric modulators at choice time (duration = 0), in instrumental sessions. (e) Comparing pgACC activations across instrumental/Pavlovian paradigms, ROI was 8 mm sphere at [−3, 40, 5], peak from overlaying the pgACC clusters from Experiments 1 and 2.
+
+**Table 1.**
+ Multiple correction for Experiment 1 (cluster-forming threshold of p<0.001 uncorrected, regions from Harvard-Oxford atlas. *FWE cluster-level corrected (showing p<0.05 only).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>p*</th>
+      <th>k</th>
+      <th>T</th>
+      <th>Z</th>
+      <th colspan="3">MNI coordinates (mm)</th>
+      <th>Region mask</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="8">TD model PE, instrumental sessions</td>
+    </tr>
+    <tr>
+      <td>0.007</td>
+      <td>4</td>
+      <td>4.27</td>
+      <td>3.5</td>
+      <td>−21</td>
+      <td>-5</td>
+      <td>−14</td>
+      <td>Amygdala L</td>
+    </tr>
+    <tr>
+      <td>0.011</td>
+      <td>3</td>
+      <td>4.98</td>
+      <td>3.9</td>
+      <td>28</td>
+      <td>-1</td>
+      <td>−14</td>
+      <td>Amygdala R</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>28</td>
+      <td>5.31</td>
+      <td>4.07</td>
+      <td>−21</td>
+      <td>3</td>
+      <td>-7</td>
+      <td>Putamen L</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4.7</td>
+      <td>3.75</td>
+      <td>−28</td>
+      <td>-5</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0.003</td>
+      <td>14</td>
+      <td>5.73</td>
+      <td>4.27</td>
+      <td>20</td>
+      <td>7</td>
+      <td>-7</td>
+      <td>Putamen R</td>
+    </tr>
+    <tr>
+      <td>0.034</td>
+      <td>2</td>
+      <td>3.75</td>
+      <td>3.18</td>
+      <td>28</td>
+      <td>-1</td>
+      <td>8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0.007</td>
+      <td>4</td>
+      <td>4.63</td>
+      <td>3.71</td>
+      <td>−17</td>
+      <td>3</td>
+      <td>-3</td>
+      <td>Pallidum L</td>
+    </tr>
+    <tr>
+      <td>0.003</td>
+      <td>9</td>
+      <td>5.2</td>
+      <td>4.01</td>
+      <td>17</td>
+      <td>7</td>
+      <td>-3</td>
+      <td>Pallidum R</td>
+    </tr>
+    <tr>
+      <td colspan="8">Hybrid model PE, instrumental sessions</td>
+    </tr>
+    <tr>
+      <td>0.005</td>
+      <td>5</td>
+      <td>4.3</td>
+      <td>3.52</td>
+      <td>−21</td>
+      <td>-5</td>
+      <td>−14</td>
+      <td>Amygdala L</td>
+    </tr>
+    <tr>
+      <td>0.014</td>
+      <td>2</td>
+      <td>4.53</td>
+      <td>3.65</td>
+      <td>28</td>
+      <td>-1</td>
+      <td>−14</td>
+      <td>Amygdala R</td>
+    </tr>
+    <tr>
+      <td>0.004</td>
+      <td>12</td>
+      <td>5.02</td>
+      <td>3.92</td>
+      <td>−21</td>
+      <td>3</td>
+      <td>-7</td>
+      <td>Putamen L</td>
+    </tr>
+    <tr>
+      <td>0.012</td>
+      <td>6</td>
+      <td>4.55</td>
+      <td>3.66</td>
+      <td>−28</td>
+      <td>3</td>
+      <td>8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0.046</td>
+      <td>1</td>
+      <td>3.82</td>
+      <td>3.23</td>
+      <td>−28</td>
+      <td>11</td>
+      <td>-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0.001</td>
+      <td>23</td>
+      <td>5.03</td>
+      <td>3.92</td>
+      <td>20</td>
+      <td>7</td>
+      <td>-7</td>
+      <td>Putamen R</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4.92</td>
+      <td>3.87</td>
+      <td>20</td>
+      <td>7</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4.39</td>
+      <td>3.57</td>
+      <td>24</td>
+      <td>-1</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0.006</td>
+      <td>5</td>
+      <td>4.04</td>
+      <td>3.36</td>
+      <td>−17</td>
+      <td>3</td>
+      <td>-3</td>
+      <td>Pallidum L</td>
+    </tr>
+    <tr>
+      <td>0.005</td>
+      <td>6</td>
+      <td>4.82</td>
+      <td>3.81</td>
+      <td>17</td>
+      <td>7</td>
+      <td>1</td>
+      <td>Pallidum R</td>
+    </tr>
+    <tr>
+      <td colspan="8">Hybrid model PE, Pavlovian sessions</td>
+    </tr>
+    <tr>
+      <td colspan="8">None</td>
+    </tr>
+    <tr>
+      <td colspan="8">Hybrid model associability, instrumental sessions</td>
+    </tr>
+    <tr>
+      <td>0.027</td>
+      <td>5</td>
+      <td>4.34</td>
+      <td>3.55</td>
+      <td>-2</td>
+      <td>37</td>
+      <td>5</td>
+      <td>Cingulate Anterior</td>
+    </tr>
+  </tbody>
+</table>
 
 Since action-outcome learning and state-outcome learning co-occur during instrumental sessions, we next modelled the state prediction error from the hybrid model in a separate regression model. In instrumental sessions, this revealed responses in similar regions to the TD action prediction error: in the striatum, right amygdala and left DLPFC (figure not shown, Table 1), consistent with the fact that state and action prediction errors are highly correlated.
+
+**Table 5.**
+ Experiment 1 learning model fitting results.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model (Options)</th>
+      <th>Data fitted (sessions)</th>
+      <th>Parameters</th>
+      <th>Mean</th>
+      <th>Std</th>
+      <th>Initial states</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TD (*)</td>
+      <td>choice (instrumental)</td>
+      <td>learning rate, α</td>
+      <td>0.401</td>
+      <td>0.087</td>
+      <td>Q0=0</td>
+    </tr>
+    <tr>
+      <td>WSLS (*)</td>
+      <td>choice (instrumental)</td>
+      <td>pseudo Q (cue 1), p1</td>
+      <td>0.382</td>
+      <td>0.073</td>
+      <td>No hidden states</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>pseudo Q (cue 2), p2</td>
+      <td>0.458</td>
+      <td>0.075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hybrid Action learning (*)</td>
+      <td>choice (instrumental)</td>
+      <td>free parameter κ</td>
+      <td>0.527</td>
+      <td>0.104</td>
+      <td>Q0=0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>free parameter η</td>
+      <td>0.413</td>
+      <td>0.125</td>
+      <td>α0=1</td>
+    </tr>
+    <tr>
+      <td>RW - V (†)</td>
+      <td>SCR (instrumental)</td>
+      <td>learning rate, α</td>
+      <td>0.492</td>
+      <td>0.013</td>
+      <td>V0=0</td>
+    </tr>
+    <tr>
+      <td>RW - V (†)</td>
+      <td>SCR (Pavlovian)</td>
+      <td>learning rate, α</td>
+      <td>0.492</td>
+      <td>0.014</td>
+      <td>V0=0</td>
+    </tr>
+    <tr>
+      <td>Hybrid - Assoc (†)</td>
+      <td>SCR (instrumental)</td>
+      <td>free parameter κ</td>
+      <td>0.497</td>
+      <td>0.004</td>
+      <td>V0=0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>free parameter η</td>
+      <td>0.495</td>
+      <td>0.004</td>
+      <td>α0=1</td>
+    </tr>
+    <tr>
+      <td>Hybrid - Assoc (†)</td>
+      <td>SCR (Pavlovian)</td>
+      <td>free parameter κ</td>
+      <td>0.498</td>
+      <td>0.003</td>
+      <td>V0=0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>free parameter η</td>
+      <td>0.496</td>
+      <td>0.008</td>
+      <td>α0=1</td>
+    </tr>
+    <tr>
+      <td>Hybrid - V (†)</td>
+      <td>SCR (instrumental)</td>
+      <td>free parameter κ</td>
+      <td>0.492</td>
+      <td>0.012</td>
+      <td>V0=0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>free parameter η</td>
+      <td>0.499</td>
+      <td>0.003</td>
+      <td>α0=1</td>
+    </tr>
+    <tr>
+      <td>Hybrid - V (†)</td>
+      <td>SCR (Pavlovian)</td>
+      <td>free parameter κ</td>
+      <td>0.494</td>
+      <td>0.005</td>
+      <td>V0=0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>free parameter η</td>
+      <td>0.5</td>
+      <td>0.003</td>
+      <td>α0=1</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Fitting options: muTheta, muPhi = 0, sigmaTheta, sigmaPhi = 1.†muTheta, muPhi=0, sigmaTheta=0.05, sigmaPhi=1._
 
 To test which regions were better explained by each, we conducted a Bayesian model selection (BMS) within the prediction error ROIs (a conjunction mask of correlated clusters to both prediction error signals). This showed that the action-learning TD model had higher posterior and exceedance probabilities in the dorsal putamen, and VMPFC (Figure 3b warm colour clusters). The state-learning (hybrid) model better explained activities in the amygdala, ventral striatum, and DLPFC (Figure 3b cool colour clusters). Applying the same hybrid model prediction error signal in Pavlovian sessions only identified much weaker responses that did not survive multiple correction, in regions including the left amygdala (figure not shown) (Table 1).
 
 To further illustrate the nature of the outcome response, we calculated a median split of the preceding cue values (based on the TD model), and looked at the outcome response for relief and no-relief outcomes. A prediction error response should be (i) higher for relief trials and (ii) higher when the preceding cue value was low (i.e. when relief was delivered when it was not expected) (Roy et al., 2014). As illustrated in Figure 3c, this ‘axiomatic’ analysis reveals some features of the prediction error, but lacks the resolution to illustrate it definitively.
 
-## Associability
+##### Associability
 
 Since the behavioural data showed that the state-based associability correlated negatively with tonic pain ratings, we examined BOLD responses correlated with trial-by-trial associability from the hybrid model, by using the associability as a parametric regressor at the choice time (see Materials and methods for details of GLMs). We specified a priori ROIs according to regions previously implicated in attention and controllability-related endogenous analgesia, notably pregenual anterior cingulate cortex (pgACC), posterior insula and ventrolateral prefrontal cortex (VLPFC) (Salomons et al., 2007; Wiech et al., 2006); and associability (amygdala) (Li et al., 2011; Zhang et al., 2016; Boll et al., 2013).
 
 We found correlated responses only in pgACC, in instrumental sessions (Figure 3d, Table 1, MNI coordinates of peak: [−2, 37, 5]). No significant responses were observed in Pavlovian sessions. Figure 3e illustrates individual subjects’ beta values extracted from an 8 mm diameter spherical ROI mask built around peak coordinates [−3, 40, 5]. Instrumental sessions had higher response magnitude in pgACC compared to Pavlovian sessions across subjects (Instrumental sessions: one-sample t-test against 0 T(18)=3.746, p=0.0015, Pavlovian sessions: one-sample t-test against 0 T(18)=-1.230, p=0.235, paired t-test for instrumental versus Pavlovian T(18)=3.317, p=0.0038).
 
-## Summary of experiment 1
+##### Summary of experiment 1
 
 In summary, the data indicate that (i) relief action learning is well described by a RL (TD) learning process, with action prediction error signals observed in the dorsal putamen, (ii) that state-outcome learning proceeds in parallel to action-outcome learning, and can be described by an associability-dependent hybrid TD learning mechanism, and (iii) that this state associability modulates the level of ongoing tonic pain during instrumental learning, with associated responses in pgACC.
 
 This provides good evidence of a relief learning system that modulates pain according to learned uncertainty, and raises two important questions. First, can the associability signal be distinguished from other uncertainty signals that may arise in learning? Importantly, the use of fixed probabilities in the task means that associability tends to decline during sessions, raising the possibility that more complex models of uncertainty and attention might better explain the data, for instance those that involve changing beliefs that arise in changing (non-stationary) environments. Second, does the modulation of pain ratings occur throughout the trial? In the task, pain ratings are taken at the outcome of the action, and only when relief is frustrated, raising the possibility that it reflects an outcome-driven response, as opposed to learning-driven process modifying the ongoing pain. With these issues in mind, we designed a novel task to test if the model could be generalised to a different paradigm with greater demands on flexible learning.
 
-## Experiment 2
+### Experiment 2
 
 In Experiment 2, 23 new subjects participated in a modified version of the instrumental escape learning task in Experiment 1, with a number of important differences. First, subjects performed only instrumental sessions (8 sessions with 24 trials in each) given the absence of a global effect of instrumental versus Pavlovian pain in the first experiment. Second, subjects were required to choose one out of three simultaneously presented visual cues to obtain relief, in which the position of each cue varied randomly from trial to trial. This was done to experimentally and theoretically better distinguish state-based and action-specific associability (Figure 1d). Third, the action-outcome contingencies were non-stationary, such that the relief probability from selecting each cue varied slowly throughout the experiment duration, controlled by a random walk algorithm which varied between 20 and 80% (Figure 1e). This ensured that associability varied constantly through the task, encouraging continued relief exploration, and allowed us to better resolve more complex models of uncertainty (see below). It also reduced the potential confounding correlation of associability and general habituation of SCRs. Fourth, we increased the frequency of tonic pain ratings (10 per session, 80 per subject in total) to enhance power for identifying modulatory effects on pain. Fifth, the rating was taken after the action but before outcome, to provide an improved assessment of ongoing tonic pain modulation without interference by the outcome. Finally, we also collected SCRs bilaterally, to enhance the data quality given the importance of the SCR in inferences about associability.
 
-## Behavioural results
+#### Behavioural results
 
-## Choice
+##### Choice
 
 In addition to the simple TD and hybrid action-learning TD models compared in Experiment 1, the modification in paradigm allowed us to test more sophisticated model-based learning models, including a hidden Markov model (HMM) (Prévost et al., 2013), and a hierarchical Bayesian model (Mathys et al., 2011). Both models incorporate a belief of environmental stability into learning, that is whether a cue previously predicting relief reliably has stopped being reliable during the course of the experiment. This is achieved by tracking the probability of state transition in the HMM, or environmental volatility in the hierarchical Bayesian model. Despite the greater demands of the non-stationary task compared to Experiment 1, the basic TD action learning model still best predicted choices following model comparison (model frequency = 0.624, exceedance probability = 0.989), followed by the HMM (model frequency = 0.192, exceedance probability = 0.006) and the hybrid action-learning model (model frequency = 0.174, exceedance probability = 0.004) (Figure 4a, see Methods for full details).
 
-## SCR
+![Figure 4.](https://cdn.elifesciences.org/articles/31949/elife-31949-fig4-v2.jpg)
 
-SCRs were recorded from the side with thermal stimulation (left hand) and the side without stimulation (right hand). The left side had lower mean SCRs (Figure 4b,L/R paired t-test T(19)=-2.67, p=0.015, n = 20, exclusion criteria followed from Experiment 1), however, trial-by-trial SCRs were highly correlated between both sides within individual subjects (mean Pearson correlation ρ¯=0.733, 18 out of 20 participants with p<0.001). This suggests that although the overall SCR amplitude might be suppressed by the tonic heat stimulus, this did not affect event-related responses.
+**Figure 4.:** (a) Model comparison showed that TD model fitted choices best (Bayesian: hierarchical Bayesian model, HMM: hidden Markov model, Hybrid: action-learning model with associability as changing learning rate). (b) SCRs measured on the side with thermal stimulation (‘Stim side’, left hand) were lower than those on without stimulation (‘Non-stim side’, right hand), but both were highly correlated. (c) Associability from state-learning hybrid model fit SCRs best, similarly to Experiment 1. (d) Trial-by-trial associability from hybrid model fitted pain ratings best compared with other uncertain measures (entropy: HMM entropy, surprise: TD model prediction error magnitude from previous trial, null model: regression with no predictors). (e) Regression coefficients with associability as uncertainty predictor were significantly negative across subjects.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31949/elife-31949-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31949/elife-31949-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** In Experiment 2, pain ratings took place immediately after cue display period, with variable length of rating time (participant terminates rating whenever they finish). This increased time gap between cue display and outcome account for the second peak in trial averaged SCR trace.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/31949/elife-31949-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Choice, SCR, rating fitting all remain similar to original exceedance probability figures.
+
+##### SCR
+
+SCRs were recorded from the side with thermal stimulation (left hand) and the side without stimulation (right hand). The left side had lower mean SCRs (Figure 4b,L/R paired t-test T(19)=-2.67, p=0.015, n = 20, exclusion criteria followed from Experiment 1), however, trial-by-trial SCRs were highly correlated between both sides within individual subjects (mean Pearson correlation $ρ¯$=0.733, 18 out of 20 participants with p<0.001). This suggests that although the overall SCR amplitude might be suppressed by the tonic heat stimulus, this did not affect event-related responses.
 
 Using the same model-fitting procedure as in Experiment 1 (with the addition that the model now predicted SCR on both hands for each trial), we found that the associability from the state-outcome hybrid model again provided the best fit of trial-by-trial SCRs (Figure 4c, model frequency = 0.667, exceedance probability = 0.954). Indeed, the associability-SCR fit has a much higher model exceedance probability compared with that in Experiment 1, presumably from including the less attenuated SCRs from the non-stimulated right side.
 
-## Ratings
+##### Ratings
 
-Experiment 1 suggested that the associability was correlated with modulation of tonic pain ratings. However, given the dynamic nature of Experiment 2, we investigated whether uncertainty measures related to other aspects of learning might offer a better account. To do this, we fitted multiple regression models to trial-by-trial ratings for each participant as follows:(1)Rating=β1⋅Relief+β2⋅log(Trial)+β3⋅Predictorwhere the ‘Relief’ term is the number of trials since the previous relief outcome, log⁢(\text⁢T⁢r⁢i⁢a⁢l) is the log of trial number within session (1-24), ‘Predictor’ is the model generated uncertainty value. The ‘Relief’ and log⁢(\text⁢T⁢r⁢i⁢a⁢l) terms were included to account for potential temporal and sessional effects of the tonic pain stimulus.
+Experiment 1 suggested that the associability was correlated with modulation of tonic pain ratings. However, given the dynamic nature of Experiment 2, we investigated whether uncertainty measures related to other aspects of learning might offer a better account. To do this, we fitted multiple regression models to trial-by-trial ratings for each participant as follows:
+
+$$
+Rating=\beta_{1}⋅Relief+\beta_{2}⋅log(Trial)+\beta_{3}⋅Predictor
+$$
+
+where the ‘Relief’ term is the number of trials since the previous relief outcome, $log⁢(\text⁢T⁢r⁢i⁢a⁢l)$ is the log of trial number within session (1-24), ‘Predictor’ is the model generated uncertainty value. The ‘Relief’ and $log⁢(\text⁢T⁢r⁢i⁢a⁢l)$ terms were included to account for potential temporal and sessional effects of the tonic pain stimulus.
 
 We built a regression model with different uncertainty signals as predictors for comparison: the state-based associability from hybrid model (as in Experiment 1), the entropy of state-action posterior probabilities (approximate of uncertainty over values) in an HMM, the absolute value of prediction error from previous trial in TD model (as a model of surprise), and a null model that did not include ‘Predictor’ term (Figure 4d). In this analysis, the state-learning hybrid associability again best fit the pain ratings (model frequency = 0.698, exceedance probability = 0.980; n = 22, 1550 ratings, one participant was excluded for having >90% identical ratings). Regression coefficients with hybrid model associability as uncertainty predictor were significant across subjects (Figure 4e, one-sample t-test for three sets of coefficients: ‘Relief’ term: T(21)=-4.004, p<0.001 (i.e. habituation, reduced pain over time after relief), log(trial) term: T(21)=1.017, p=0.321, associability term: T(21)=-2.643, p=0.015).
 
-## Neuroimaging results
+#### Neuroimaging results
 
-## Prediction errors
+##### Prediction errors
 
 We found that the TD model action prediction errors was robustly correlated with BOLD responses in similar regions identified in Experiment 1, including left dorsal putamen, bilateral amygdala, and left DLPFC (Figure 5a, Table 2). Of these, BMS showed the TD model had higher posterior and exceedance probabilities in the dorsal putamen, as well as amygdala and DLPFC (Figure 5b warm colour clusters). The state-learning hybrid model explained prediction error responses in several areas, but outside our original a priori regions of interest (see Figure 5b cool colour clusters).
 
+**Table 6.**
+ Experiment 2 learning model fitting results.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model (Options)</th>
+      <th>Data fitted</th>
+      <th>Parameters</th>
+      <th>Mean</th>
+      <th>Std</th>
+      <th>Initial states</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TD (*)</td>
+      <td>choice</td>
+      <td>learning rate, α</td>
+      <td>0.577</td>
+      <td>0.28</td>
+      <td>Q0=0</td>
+    </tr>
+    <tr>
+      <td>Hybrid Action learning (*)</td>
+      <td>choice</td>
+      <td>free parameter κ</td>
+      <td>0.774</td>
+      <td>0.381</td>
+      <td>Q0=0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>free parameter η</td>
+      <td>0.14</td>
+      <td>0.139</td>
+      <td>α0=1</td>
+    </tr>
+    <tr>
+      <td>HMM (*)</td>
+      <td>choice</td>
+      <td>state transition probability β</td>
+      <td>0.275</td>
+      <td>0.213</td>
+      <td>Q0=0.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>relief outcome bias c</td>
+      <td>0.535</td>
+      <td>0.212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>no relief outcome bias d</td>
+      <td>0.027</td>
+      <td>0.072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bayesian (‡)</td>
+      <td>choice</td>
+      <td>level 2 (outcome) κ</td>
+      <td>0.331</td>
+      <td>0.239</td>
+      <td>Q0=0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>level 2 (outcome) ω</td>
+      <td>−0.423</td>
+      <td>1.396</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>level 3 (belief) θ</td>
+      <td>0.45</td>
+      <td>0.03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RW - V (†)</td>
+      <td>SCR (bilateral)</td>
+      <td>learning rate, α</td>
+      <td>0.46</td>
+      <td>0.054</td>
+      <td>V0=0</td>
+    </tr>
+    <tr>
+      <td>Hybrid - Assoc (†)</td>
+      <td>SCR (bilateral)</td>
+      <td>free parameter κ</td>
+      <td>0.49</td>
+      <td>0.01</td>
+      <td>V0=0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>free parameter η</td>
+      <td>0.488</td>
+      <td>0.027</td>
+      <td>α0=1</td>
+    </tr>
+    <tr>
+      <td>Hybrid - V (†)</td>
+      <td>SCR (bilateral)</td>
+      <td>free parameter κ</td>
+      <td>0.48</td>
+      <td>0.034</td>
+      <td>V0=0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>free parameter η</td>
+      <td>0.496</td>
+      <td>0.013</td>
+      <td>α0=1</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Fitting options: muTheta, muPhi = 0, sigmaTheta, sigmaPhi = 1.†muTheta, muPhi = 0, sigmaTheta = 0.05, sigmaPhi = 1.‡muTheta=[0,-2,0], muPhi=0, sigmaTheta, sigmaPhi=1_
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31949/elife-31949-fig5-v2.jpg)
+
+**Figure 5.:** (b) Model PE posterior probability maps (PPMs) from group-level Bayesian model selection, warm colour: TD model PE, cool colour: hybrid model PE (both shown at exceedance probability p>0.80). (c) Axiom analysis, separating trials according to outcomes and predicted relief values (bins 1–3 from low to high), BOLD activity pattern from striatum (putamen) satisfied those of relief PE. (d) Associability uncertainty generated by hybrid model correlating with pgACC activities, at choice time (duration = 0). (e) pgACC activation beta values across all subjects, ROI was 8 mm sphere at [−3, 40, 5], peak from overlaying the pgACC clusters from Experiments 1 and 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31949/elife-31949-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/31949/elife-31949-fig5-figsupp2-v2.jpg)
+
 As previously, we further illustrated the pattern of outcome responses as a function of preceding cue value and relief/no-relief in an ‘axiomatic’ analysis. We split the trial values into three bins, allowing a better inspection of responses permitted by our larger number of trials. This revealed a clear prediction error-like pattern in the dorsal putamen, but somewhat less clear cut in the amygdala and DLPFC (Figure 5c). Therefore, across all analysis methods and the two experiments, the left dorsal putamen robustly exhibited a response profile consistent with an escape-based relief prediction error.
 
-## Associability
+##### Associability
 
 Following the same analysis as in Experiment 1, we found again that pgACC BOLD responses correlated with trial-by-trial associability from the state-learning hybrid model (Figure 5d–e, Table 2). The peak from this analysis was almost identical to that in Experiment 1 (Overlayed clusters can be found in Figure supplements). In addition, we used trial-by-trial pain ratings as a parametric modulator, but did not find significant pgACC responses, which suggested that it was unlikely to be solely driven by pain perception itself. Taken together, this indicates that the pgACC associability response is robust across experimental designs.
 
-## Summary of experiment 2
+##### Summary of experiment 2
 
 In summary, Experiment 2 reproduced the main results of Experiment 1 within a non-stationary relief environment. Firstly, dorsal putamen correlated with an action-relief prediction error from the RL model. And secondly, pgACC correlated with a state-based associability signal, that in turn was associated with reduced tonic pain. In particular, this modulation of pain was present after the cue was presented (and not just at the outcome as in Experiment 1) and was better explained by the associability signal when compared against alternative uncertainty measures.
 
@@ -150,7 +698,7 @@ A caveat to this is that associability cannot distinguish unreliable cues - inhe
 
 The localisation of the associability signal to the pgACC is consistent with a priori predictions. The region is known to be involved in threat unpredictability (Rubio et al., 2015; Nitschke et al., 2006), computations of uncertainty during difficult approach-avoidance decision-making (Amemori and Graybiel, 2012), and in the perseverance of behaviour during foraging (McGuire and Kable, 2015; Kolling et al., 2012). It is distinct from a more anterior region in the ventromedial prefrontal cortex associated with action value (FitzGerald et al., 2012). More importantly, it has been specifically implicated in various forms of endogenous analgesia, including coping with uncontrollable pain (Salomons et al., 2007), distraction (Valet et al., 2004), and placebo analgesia (Bingel et al., 2006; Eippert et al., 2009). However, an open question remains about the role of conscious awareness in driving pgACC-related endogenous control - a factor that is often important in these other paradigms. Whether or not the role of associability is modulated by the metacognitive awareness of uncertainty or controllability would be an important question for future studies.
 
-The pgACC has been suggested to be central to a ‘medial pain system’ and the descending control of pain, with its known anatomical and functional connectivity to key regions including the amygdala (Derbyshire et al., 1997; Vogt et al., 2005; Salomons et al., 2015) and PAG (Stein et al., 2012; Buchanan et al., 1994; Vogt, 2005; Domesick, 1969). Evidence of high level of μ-opioid receptors within pgACC (Vogt et al., 2005), where increased occupation has been found in both acute and chronic pain (Zubieta et al., 2005; Jones et al., 2004), further illustrates pgACC’s potential role for cortical control of pain.
+The pgACC has been suggested to be central to a ‘medial pain system’ and the descending control of pain, with its known anatomical and functional connectivity to key regions including the amygdala (Derbyshire et al., 1997; Vogt et al., 2005; Salomons et al., 2015) and PAG (Stein et al., 2012; Buchanan et al., 1994; Vogt, 2005; Domesick, 1969). Evidence of high level of $\mu$-opioid receptors within pgACC (Vogt et al., 2005), where increased occupation has been found in both acute and chronic pain (Zubieta et al., 2005; Jones et al., 2004), further illustrates pgACC’s potential role for cortical control of pain.
 
 The results provide a formal computational framework that brings together theories of pain attention, controllability and endogenous analgesia. Previous demonstrations of reduced pain (albeit typically for phasic, not tonic pain) have been inconsistent (Becker et al., 2015; Salomons et al., 2004; Salomons et al., 2007; Wiech et al., 2014; Wiech et al., 2006; Mohr et al., 2012). Our results offer insight into why - by suggesting that endogenous analgesia is not a non-specific manifestation of control, but rather a specific process linked to the learnable information.
 
@@ -160,13 +708,13 @@ Developing a computational account of relief learning and endogenous control may
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
-Two separate groups of healthy subjects participated in the two neuroimaging experiments (Experiment 1: n = 19, six female, age 26.1±5.1 years; Experiment 2: n = 23, five female, age 23.9±3.1 years). All subjects gave informed consent prior to participation, had normal or corrected to normal vision, and were free of pain conditions or pain medications. The two experiments were performed in different institutes, and approved by their relevant ethics and Safety committees: for the National Institute of Information and Communications Technology, Japan (Experiment 1), and the Advanced Telecommunications Research Institute, Japan (Experiment 2).
+Two separate groups of healthy subjects participated in the two neuroimaging experiments (Experiment 1: n = 19, six female, age 26.1$\pm$5.1 years; Experiment 2: n = 23, five female, age 23.9$\pm$3.1 years). All subjects gave informed consent prior to participation, had normal or corrected to normal vision, and were free of pain conditions or pain medications. The two experiments were performed in different institutes, and approved by their relevant ethics and Safety committees: for the National Institute of Information and Communications Technology, Japan (Experiment 1), and the Advanced Telecommunications Research Institute, Japan (Experiment 2).
 
-## Experimental design
+### Experimental design
 
-## Experiment 1
+#### Experiment 1
 
 Subjects participated in an interleaved instrumental conditioning and yoked Pavlovian relief conditioning sessions in which they actively or passively escaped from tonic pain, respectively. Tonic pain was maintained by constant thermal stimulation to the left inner forearm (see ‘Stimulation’ for details), and relief was induced by temporarily cooling the heat stimulus, which abolishes pain and causes a strong sense of relief.
 
@@ -178,23 +726,23 @@ Each subject repeated instrumental and yoked Pavlovian sessions three times (six
 
 Subjective ratings of perceived trial outcomes (pain relief or ongoing pain) were collected near the beginning, middle, and end of each session, in identical order for instrumental and its yoked Pavlovian counterpart. A 0–10 rating scale appeared 3.5 s after outcome presentation (0.5 s overlap with relief duration if any), where the scale ranged from 0 (no pain at all) to 10 (unbearable pain) for no relief outcome (red scale in Figure 1a), and 0 (no relief at all) to 10 (very pleasant relief) for relief outcome (green scale). Although it is the case that ratings are inherently subjective, their modulation reflects an objective process that may explain a component of this apparent subjectivity. This does raise the issue of whether the subjective relief ratings influence the outcome values when learned in the RL model, but this (presumably subtle) effect is something that is beyond the experimental power of this experiments to resolve.
 
-## Experiment 2
+#### Experiment 2
 
-Experiment 2 was a purely instrumental relief conditioning task, similar to that of Experiment 1. However in this task, three visual cues were presented on screen simultaneously for 3 s, during which the subject was asked to choose one (Figure 1d) with a three-button response pad. Each one of these cues had varying relief probability, generated by a random walk process (probabilities changing at step size of 0.1, bound between 0.2 and 0.8, with random start). Relief outcomes were identical to that in Experiment 1, except the duration was reduced to 3 s, which was enough to produce a similar relief sensation with lower trial time. Subjects repeated the same task for eight sessions (24 trials each), with the same visual cues throughout. However, several subjects did not complete all sessions because of excess time in SCR experimental set-up which reduced the time available for the task; hence, the overall average was 7.08±1.44 sessions per subject.
+Experiment 2 was a purely instrumental relief conditioning task, similar to that of Experiment 1. However in this task, three visual cues were presented on screen simultaneously for 3 s, during which the subject was asked to choose one (Figure 1d) with a three-button response pad. Each one of these cues had varying relief probability, generated by a random walk process (probabilities changing at step size of 0.1, bound between 0.2 and 0.8, with random start). Relief outcomes were identical to that in Experiment 1, except the duration was reduced to 3 s, which was enough to produce a similar relief sensation with lower trial time. Subjects repeated the same task for eight sessions (24 trials each), with the same visual cues throughout. However, several subjects did not complete all sessions because of excess time in SCR experimental set-up which reduced the time available for the task; hence, the overall average was 7.08$\pm$1.44 sessions per subject.
 
 Subjective pain ratings were collected after the 3 s choice period and before outcome presentation, in 10 random trials out of 24 in each session, with the same 0–10 rating scale in Experiment 1 (red scale only). We have summarised the details of ratings from both experiments in Table 3.
 
-## Stimulation
+### Stimulation
 
 Painful tonic thermal stimuli were delivered to the subject’s skin surface above the wrist on the left inner forearm, through a contact heat-evoked potential stimulator (CHEPS, Medoc Pathway, Israel). The CHEPS thermode is capable of rapid cooling at 40°C/s, which made rapid temporary pain relief possible in an event-related design.
 
-The temperature of painful tonic stimuli was set according to the subject’s own pain threshold calibrated beforehand. In Experiment 1, before the task, two series of 6 pre-set temperatures were presented in random order (set 1: mean ± std 43.7±1.7°C; set 2: 44.6±0.6°C), with each temperature delivered for 8 s, after which the subject determined whether the stimulation period was painful or not (ISI = 8 s). The higher of the two lowest painful temperatures from the two tests was used as the tonic stimulation temperature.
+The temperature of painful tonic stimuli was set according to the subject’s own pain threshold calibrated beforehand. In Experiment 1, before the task, two series of 6 pre-set temperatures were presented in random order (set 1: mean $\pm$ std 43.7$\pm$1.7°C; set 2: 44.6$\pm$0.6°C), with each temperature delivered for 8 s, after which the subject determined whether the stimulation period was painful or not (ISI = 8 s). The higher of the two lowest painful temperatures from the two tests was used as the tonic stimulation temperature.
 
-In Experiment 2, 10 temperatures were presented in each series, both were randomly generated with 44.4±0.7°C. After the 8 s stimulation, subjects were asked to rate their pain on a 0–10 VAS scale, which were fitted with a sigmoid function. The temperature was chosen from the temperature range of: 44, 44.2, 44.5, 44.8, 45°C, whichever closest and below the model fitted value of VAS = 8.
+In Experiment 2, 10 temperatures were presented in each series, both were randomly generated with 44.4$\pm$0.7°C. After the 8 s stimulation, subjects were asked to rate their pain on a 0–10 VAS scale, which were fitted with a sigmoid function. The temperature was chosen from the temperature range of: 44, 44.2, 44.5, 44.8, 45°C, whichever closest and below the model fitted value of VAS = 8.
 
-The final temperature used did not differ hugely for the two experiments despite the change in thresholding method (Experiment 1: 44.3±0.2°C, Experiment 2: 44.5±0.4°C). The relief temperature was set constant at 13°C below threshold temperature for all subjects.
+The final temperature used did not differ hugely for the two experiments despite the change in thresholding method (Experiment 1: 44.3$\pm$0.2°C, Experiment 2: 44.5$\pm$0.4°C). The relief temperature was set constant at 13°C below threshold temperature for all subjects.
 
-## Physiological measures
+### Physiological measures
 
 Skin conductance responses (SCRs) were measured using MRI-compatible BrainAmp ExG MR System (Brain Products, Munich, Germany) with Ag/AgCl sintered MR electrodes, filled with skin conductance electrode paste.
 
@@ -204,87 +752,479 @@ Off-line processing and analysis were implemented in MATLAB7 (The MathWorks Inc.
 
 Sessions with more than 20% trials (4 out of 20 trials for Experiment 1, 5 out of 24 for Experiment 2) with cue-evoked SCR amplitude below the threshold of 0.02 were labelled as not having enough viable event related SCRs. In Experiment 1, 15 subjects and 50 sessions remained. In Experiment 2, 19 subjects and 79 sessions remained for the left (thermal stimulation side), 20 subjects and 96 sessions remained for the right (no stimulation side). For model fitting, right side SCR reject criteria were used, since both channel’s data were included as two data sources. Trial SCRs were log-transformed within subject before model fitting. Transformed SCRs on both sides were highly correlated (Figure 4b).
 
-## Other behavioural measures
+### Other behavioural measures
 
 Trial-by-trial choice data (button press indicating choices) and reaction times (length of time taken from CS onset to button press) of subjects were recorded as part of behavioural measurements.
 
-## Computational learning models
+### Computational learning models
 
 To capture relief learning we fitted behavioural responses using different learning models from previous studies (Table 4). Free energy (F) are variational Bayesian approximation of model’s marginal likelihood, table showing the sum of F for all participants to provide model absolute fit evaluation. Actual model comparison was conducted based on random-effect analysis. For instrumental learning, the reinforcement of subjects’ responses (i.e. choices) based on relief experience can be modelled using reinforcement learning model (Sutton and Barto, 1998). For Pavlovian learning, physiological responses can be used for model fitting (Li et al., 2011; Boll et al., 2013; Zhang et al., 2016).
 
-## Win-Stay-Lose-Shift (WLSL) model
+**Table 2.**
+ Multiple correction for Experiment 2 (cluster-forming threshold of p<0.001 uncorrected, regions from Harvard-Oxford atlas. *FWE cluster-level corrected (showing p<0.05 only).
 
-WSLS assumes a subject has fixed pseudo Q values for each state-action pair, where a relief outcome always produces a positive value for the chosen state-action pair (i.e. win-stay), while the remaining state-action combinations had negative values (i.e. lose-shift). A no relief outcome flipped the sign of all values. Two free parameters p1 and p2 (0≤p1,2≤1) scaling the pseudo Q values for the two cues presented were used in model fitting, which were assumed fixed throughout the experiment but varied for individuals.
 
-## TD model
+<table>
+  <thead>
+    <tr>
+      <th>p*</th>
+      <th>k</th>
+      <th>T</th>
+      <th>Z</th>
+      <th colspan="3">MNI coordinates (mm)</th>
+      <th>Region mask</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="8">TD model PE</td>
+    </tr>
+    <tr>
+      <td>0.002</td>
+      <td>15</td>
+      <td>4.31</td>
+      <td>3.63</td>
+      <td>−25</td>
+      <td>-5</td>
+      <td>−22</td>
+      <td>Amygdala L</td>
+    </tr>
+    <tr>
+      <td>0.003</td>
+      <td>11</td>
+      <td>4.36</td>
+      <td>3.66</td>
+      <td>24</td>
+      <td>-8</td>
+      <td>−14</td>
+      <td>Amygdala R</td>
+    </tr>
+    <tr>
+      <td>0.018</td>
+      <td>1</td>
+      <td>3.97</td>
+      <td>3.41</td>
+      <td>28</td>
+      <td>-1</td>
+      <td>−26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0.002</td>
+      <td>22</td>
+      <td>5.9</td>
+      <td>4.52</td>
+      <td>−32</td>
+      <td>-8</td>
+      <td>5</td>
+      <td>Putamen L</td>
+    </tr>
+    <tr>
+      <td>0.021</td>
+      <td>4</td>
+      <td>4.55</td>
+      <td>3.78</td>
+      <td>32</td>
+      <td>−16</td>
+      <td>1</td>
+      <td>Putamen R</td>
+    </tr>
+    <tr>
+      <td colspan="8">Hybrid model PE</td>
+    </tr>
+    <tr>
+      <td>0.001</td>
+      <td>16</td>
+      <td>4.36</td>
+      <td>3.66</td>
+      <td>−21</td>
+      <td>−12</td>
+      <td>−14</td>
+      <td>Amygdala L</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4.23</td>
+      <td>3.58</td>
+      <td>−21</td>
+      <td>-1</td>
+      <td>−18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0.002</td>
+      <td>13</td>
+      <td>4.95</td>
+      <td>4.01</td>
+      <td>24</td>
+      <td>-8</td>
+      <td>−18</td>
+      <td>Amygdala R</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4.34</td>
+      <td>3.65</td>
+      <td>28</td>
+      <td>-1</td>
+      <td>−26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0.003</td>
+      <td>17</td>
+      <td>5.49</td>
+      <td>4.31</td>
+      <td>−32</td>
+      <td>-8</td>
+      <td>5</td>
+      <td>Putamen L</td>
+    </tr>
+    <tr>
+      <td colspan="8">Hybrid model associability</td>
+    </tr>
+    <tr>
+      <td>0.001</td>
+      <td>29</td>
+      <td>4.5</td>
+      <td>3.75</td>
+      <td>-6</td>
+      <td>40</td>
+      <td>12</td>
+      <td>Cingulate Anterior</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4.44</td>
+      <td>3.71</td>
+      <td>-2</td>
+      <td>33</td>
+      <td>23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4.08</td>
+      <td>3.49</td>
+      <td>-2</td>
+      <td>44</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3.93</td>
+      <td>3.38</td>
+      <td>2</td>
+      <td>40</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-The predicted state-action value Q given particular state s and action a between successive trials is updated using an error-driven delta rule with learning rate α (0≤α≤1) (Gläscher et al., 2010; Morris et al., 2006; Sutton and Barto, 1998):(2)Qt+1⁢(s,a)=Qt⁢(s,a)+α⋅(rt-Qt⁢(s,a))where rt is the outcome of the trial (relief = 1, no relief = 0). The probability of choosing action a from a set of all available actions As∈{a,b,c⁢…} in trial t is modelled by a softmax distribution, (3)p(a|s)=𝑒𝑥𝑝⁢(τ⋅Qt⁢(s,a))∑b∈As𝑒𝑥𝑝⁢(τ⋅Qt⁢(s,b))where τ is the inverse temperature parameter governing the competition between actions (τ>0).
+#### Win-Stay-Lose-Shift (WLSL) model
 
-## Rescorla-Wagner (RW) model
+WSLS assumes a subject has fixed pseudo Q values for each state-action pair, where a relief outcome always produces a positive value for the chosen state-action pair (i.e. win-stay), while the remaining state-action combinations had negative values (i.e. lose-shift). A no relief outcome flipped the sign of all values. Two free parameters $p_{1}$ and $p_{2}$ ($0\leqp_{1,2}\leq1$) scaling the pseudo Q values for the two cues presented were used in model fitting, which were assumed fixed throughout the experiment but varied for individuals.
 
-For Pavlovian learning, where choice decisions are not available, the standard temporal difference (TD) model updates the state value V⁢(s) based on prediction errors following the Rescorla-Wagner learning rule:(4)Vt+1⁢(s)=Vt⁢(s)+α⋅(rt-Vt⁢(s))
+#### TD model
 
-## Hybrid model
+The predicted state-action value $Q$ given particular state $s$ and action $a$ between successive trials is updated using an error-driven delta rule with learning rate $\alpha$ ($0\leq\alpha\leq1$) (Gläscher et al., 2010; Morris et al., 2006; Sutton and Barto, 1998):
 
-The hybrid model incorporated an associability term as a changing learning rate for a standard TD model in value learning (Le Pelley, 2004; Li et al., 2011). The associability term is also referred to as Pearce-Hall associability, an equivalent measure of attention or uncertainty, which is modulated by the magnitude of recent prediction error. The varying learning rate can be used in Pavlovian state-learning: (5)Vt+1(s)=Vt(s)+κ⋅αt(s)⋅(rt−Vt(s))(6)αt+1(s)=η⋅|rt−Vt(s)|+(1−η)⋅αt(s)where η, κ are free parameters limited within the range of [0,1].
+$$
+Q_{t+1}⁢(s,a)=Q_{t}⁢(s,a)+\alpha⋅(r_{t}-Q_{t}⁢(s,a))
+$$
 
-The model can also be extended to instrumental action-learning: (7)Qt+1(s,a)=Qt(s,a)+κ⋅αt(s,a)⋅(rt−Qt(s,a))(8)αt+1(s,a)=η⋅|rt−Qt(s,a)|+(1−η)⋅αt(s,a)
+where $r_{t}$ is the outcome of the trial (relief = 1, no relief = 0). The probability of choosing action $a$ from a set of all available actions $A_{s}\in{a,b,c⁢…}$ in trial $t$ is modelled by a softmax distribution, 
 
-## Hidden Markov Model (HMM)
+$$
+p(a|s)=\frac{𝑒𝑥𝑝⁢(\tau⋅Q_{t}⁢(s,a))}{\sum_{b\inA_{s}}𝑒𝑥𝑝⁢(\tau⋅Q_{t}⁢(s,b))}
+$$
 
-For Experiment 2, where relief probability is unstable, model-based learning models were fitted to behavioural data. Hidden Markov Model with dynamic expectation of change (Prévost et al., 2013; Schlagenhauf et al., 2014) was adapted to incorporate a hidden state variable St that represents the subject’s estimation of an action-outcome pair (e.g. in Experiment 2, St=(cue,relief), three cues × relief/no relief = 6 combinations). The state transition probabilities are calculated as:(9)P(St|St−1)=(1−βββ1−β)where β is a free parameter (0≤β≤1). For each cue, the symmetry of the transition matrix encodes the reciprocal relationship between relief/no relief belief. Given the hidden state variable, the probability of actually observing this outcome is updated as:(10)P(Ot|St)=0.5×(1+c1−c1−d1+d)where the rows of the matrix represent relief/no relief outcomes, the columns represent the relief/no relief belief in St. c and d are free parameters (0≤c≤1, 0≤d≤1) to incorporate potential discrimination between the two outcome types. The prior probability of St is calculated from the state transition probabilities and the posterior probability of St-1 (Equation 11). The posterior probability of St is calculated from the prior P⁢(St) (from Equation 11) and the observed outcome Ot (Equation 12):(11)P(St)=∑St-1P(St|St-1)P(St-1)(12)P⁢(St)=P(Ot|St)P(St)∑StP(Ot|St)P(St)where Equation 11 is updated before observed outcome Ot, Equation 12 is updated after Ot.
+where $\tau$ is the inverse temperature parameter governing the competition between actions ($\tau>0$).
 
-St can be used to approximate state values by calculating the relative relief belief through a sigmoid function, with a free parameter m, and the preferred action to be inferred using the softmax function.(13)P(r=1|cue)=11+exp(−x)where x=St(r=1)−St(r=0)+m.
+#### Rescorla-Wagner (RW) model
 
-To represent uncertainty under i possible posterior relief probabilities, entropy H is calculated for chosen cue as:(14)H⁢(St)=-∑iP⁢(St)⁢log⁢P⁢(St)
+For Pavlovian learning, where choice decisions are not available, the standard temporal difference (TD) model updates the state value $V⁢(s)$ based on prediction errors following the Rescorla-Wagner learning rule:
 
-## Hierarchical Bayesian model
+$$
+V_{t+1}⁢(s)=V_{t}⁢(s)+\alpha⋅(r_{t}-V_{t}⁢(s))
+$$
+
+#### Hybrid model
+
+The hybrid model incorporated an associability term as a changing learning rate for a standard TD model in value learning (Le Pelley, 2004; Li et al., 2011). The associability term is also referred to as Pearce-Hall associability, an equivalent measure of attention or uncertainty, which is modulated by the magnitude of recent prediction error. The varying learning rate can be used in Pavlovian state-learning: 
+
+$$
+V_{t+1}(s)=V_{t}(s)+κ⋅\alpha_{t}(s)⋅(r_{t}−V_{t}(s))
+$$
+
+
+
+$$
+\alpha_{t+1}(s)=η⋅|r_{t}−V_{t}(s)|+(1−η)⋅\alpha_{t}(s)
+$$
+
+where $η$, $κ$ are free parameters limited within the range of [0,1].
+
+The model can also be extended to instrumental action-learning: 
+
+$$
+Q_{t+1}(s,a)=Q_{t}(s,a)+κ⋅\alpha_{t}(s,a)⋅(r_{t}−Q_{t}(s,a))
+$$
+
+
+
+$$
+\alpha_{t+1}(s,a)=η⋅|r_{t}−Q_{t}(s,a)|+(1−η)⋅\alpha_{t}(s,a)
+$$
+
+#### Hidden Markov Model (HMM)
+
+For Experiment 2, where relief probability is unstable, model-based learning models were fitted to behavioural data. Hidden Markov Model with dynamic expectation of change (Prévost et al., 2013; Schlagenhauf et al., 2014) was adapted to incorporate a hidden state variable $S_{t}$ that represents the subject’s estimation of an action-outcome pair (e.g. in Experiment 2, $S_{t}=(cue,relief)$, three cues $\times$ relief/no relief = 6 combinations). The state transition probabilities are calculated as:
+
+$$
+P(S_{t}|S_{t−1})=(1−\beta\beta\beta1−\beta)
+$$
+
+where $\beta$ is a free parameter ($0\leq\beta\leq1$). For each cue, the symmetry of the transition matrix encodes the reciprocal relationship between relief/no relief belief. Given the hidden state variable, the probability of actually observing this outcome is updated as:
+
+$$
+P(O_{t}|S_{t})=0.5\times(1+c1−c1−d1+d)
+$$
+
+where the rows of the matrix represent relief/no relief outcomes, the columns represent the relief/no relief belief in $S_{t}. c$ and $d$ are free parameters ($0\leqc\leq1$, $0\leqd\leq1$) to incorporate potential discrimination between the two outcome types. The prior probability of $S_{t}$ is calculated from the state transition probabilities and the posterior probability of $S_{t-1}$ (Equation 11). The posterior probability of $S_{t}$ is calculated from the prior $P⁢(S_{t})$ (from Equation 11) and the observed outcome $O_{t}$ (Equation 12):
+
+$$
+P(S_{t})=\sumS_{t-1}P(S_{t}|S_{t-1})P(S_{t-1})
+$$
+
+
+
+$$
+P⁢(S_{t})=\frac{P(O_{t}|S_{t})P(S_{t})}{\sum_{S_{t}}P(O_{t}|S_{t})P(S_{t})}
+$$
+
+where Equation 11 is updated before observed outcome $O_{t}$, Equation 12 is updated after $O_{t}$.
+
+$S_{t}$ can be used to approximate state values by calculating the relative relief belief through a sigmoid function, with a free parameter $m$, and the preferred action to be inferred using the softmax function.
+
+$$
+P(r=1|cue)=\frac{1}{1+exp(−x)}
+$$
+
+where $x=S_{t}(r=1)−S_{t}(r=0)+m$.
+
+To represent uncertainty under $i$ possible posterior relief probabilities, entropy $H$ is calculated for chosen cue as:
+
+$$
+H⁢(S_{t})=-\sumiP⁢(S_{t})⁢log⁢P⁢(S_{t})
+$$
+
+#### Hierarchical Bayesian model
 
 The Hierarchical Bayesian model introduced by (Mathys et al., 2011) incorporates different forms of uncertainty during learning on each level: irreducible uncertainty (resulting from probabilistic relationship between prediction and outcome), estimation uncertainty (from imperfect knowledge of stimulus-outcome relationship), and volatility uncertainty (from potential environmental instability). This model has been shown to fit human acute stress responses (de Berker et al., 2016). The model was adopted to our study with the basic structure unchanged, and the second level estimated probabilities were used to approximate state values of different cues, and the preferred action calculated using the softmax function.
 
-## Modelling pain ratings
+### Modelling pain ratings
 
-Our prior hypothesis suggests uncertainty is a likely modulator of tonic pain perception, hence model generated uncertainty signals (associability in Experiments 1 and 2, with entropy and surprise added in Experiment 2) were used as the main pain rating predictors. A generalised linear model includes the uncertainty predictor, and additional terms to control for potential temporal habituation/sensitization and between-session variation:(15)Rating=β1⋅Relief+β2⋅log(Trial)+β3⋅Predictorwhere the ‘Relief’ term is the number of trials since the previous relief outcome, log(Trial) is the log of trial number within session (1-24), ‘Predictor’ is the model generated uncertainty value using group-averaged model parameters fitted with choice/SCR data. All trials were used for predictor calculation, but only rated trials were included in this regression.
+Our prior hypothesis suggests uncertainty is a likely modulator of tonic pain perception, hence model generated uncertainty signals (associability in Experiments 1 and 2, with entropy and surprise added in Experiment 2) were used as the main pain rating predictors. A generalised linear model includes the uncertainty predictor, and additional terms to control for potential temporal habituation/sensitization and between-session variation:
 
-## Model fitting and comparison
+$$
+Rating=\beta_{1}⋅Relief+\beta_{2}⋅log(Trial)+\beta_{3}⋅Predictor
+$$
 
-## Model fitting
+where the ‘Relief’ term is the number of trials since the previous relief outcome, $log(Trial)$ is the log of trial number within session (1-24), ‘Predictor’ is the model generated uncertainty value using group-averaged model parameters fitted with choice/SCR data. All trials were used for predictor calculation, but only rated trials were included in this regression.
+
+### Model fitting and comparison
+
+#### Model fitting
 
 Model fitting was performed with the Variational Bayesian Analysis (VBA) toolbox (https://mbb-team.github.io/VBA-toolbox/). The toolbox seeks to optimise free energy within the Bayesian framework, analogous of maximum likelihood. Behavioural data (choices, SCRs) were fitted separately for each individual resulting in different sets of parameters, and model fitting performance was measured by aggregating individual subject fitting statistics. The mean of all subject parameters were used to generate regressors for fMRI analysis following conventions (Table 5 and Table 6).
 
+**Table 3.**
+ Details of subjective ratings for Experiments 1 and 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experiment</th>
+      <th>Rating type</th>
+      <th>Rating timing</th>
+      <th>Avg # of ratings per subject</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Experiment 1</td>
+      <td>Instrumental pain</td>
+      <td rowspan="4">After 3 s cue + choice window AND outcome (rating type depend on outcome)</td>
+      <td>8.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Instrumental relief</td>
+      <td colspan="2">7.7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pavlovian pain</td>
+      <td colspan="2">8.1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pavlovian relief</td>
+      <td colspan="2">7.7</td>
+    </tr>
+    <tr>
+      <td>Experiment 2</td>
+      <td>Instrumental pain</td>
+      <td>After 3 s cue + choice window, BEFORE outcome</td>
+      <td>70.9</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ All learning models fitted (bold: winning model; AL - action-learning; SL - state-learning, F - variational Bayesian approximation to the model’s marginal likelihood, used for model comparison)
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Experiment 1 (Instrumental sessions)</th>
+    </tr>
+    <tr>
+      <th>Choice</th>
+      <th>F (n=19, sum [sem])</th>
+      <th>SCR</th>
+      <th>F (n = 15, sum [sem])</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TD</td>
+      <td>-1330.920 [3.604]</td>
+      <td>RW - value</td>
+      <td>−1079.153 [8.024]</td>
+    </tr>
+    <tr>
+      <td>Hybrid (AL)</td>
+      <td>-1345.667 [3.664]</td>
+      <td>Hybrid (SL) - value</td>
+      <td>−1077.911 [8.059]</td>
+    </tr>
+    <tr>
+      <td>WSLS</td>
+      <td>-1486.723 [3.973]</td>
+      <td>Hybrid (SL) - associability</td>
+      <td>−1077.699 [8.003]</td>
+    </tr>
+    <tr>
+      <td colspan="4">Experiment 1 (Pavlovian sessions)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Choice (not available)</td>
+      <td>SCR</td>
+      <td>F (n = 15, sum [sem])</td>
+    </tr>
+    <tr>
+      <td rowspan="3" colspan="2">N/A</td>
+      <td>RW - value</td>
+      <td>−1101.079 [7.132]</td>
+    </tr>
+    <tr>
+      <td>Hybrid (SL) - value</td>
+      <td>−1096.250 [7.195]</td>
+    </tr>
+    <tr>
+      <td>Hybrid (SL) - associability</td>
+      <td>−1095.135 [7.106]</td>
+    </tr>
+    <tr>
+      <td colspan="4">Experiment 2 (Instrumental sessions, Pavlovian not available)</td>
+    </tr>
+    <tr>
+      <td>Choice</td>
+      <td>F (n=23, sum [sem])</td>
+      <td>SCR</td>
+      <td>F (n = 20, sum [sem])</td>
+    </tr>
+    <tr>
+      <td>TD</td>
+      <td>-3572.476 [8.736]</td>
+      <td>RW - value</td>
+      <td>−7867.834 [60.668]</td>
+    </tr>
+    <tr>
+      <td>Hybrid (AL)</td>
+      <td>-3626.478 [8.946]</td>
+      <td>Hybrid (SL) - value</td>
+      <td>−7857.341 [60.643]</td>
+    </tr>
+    <tr>
+      <td>HMM</td>
+      <td>-3571.020 [9.067]</td>
+      <td>Hybrid (SL) - associability</td>
+      <td>−7841.864 [60.838]</td>
+    </tr>
+    <tr>
+      <td>Bayesian Hierarchical</td>
+      <td>-3784.372 [8.616]</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 The VBA toolbox takes in an evolution function that describes the learning model (e.g. value updating rule), and an observation function that describes response mapping (e.g. softmax action selection). For choice fitting, data were split into multiple sessions to allow between-session changes in observation function parameters, but evolution function parameters and initial states were fixed throughout all sessions.
 
-For SCR fitting, multi-session split was the same as choice fitting. The first two trials from each session were excluded from fitting to avoid extreme values from startle effects, which also served to reduce the confound from general habituation of SCRs. Trials with insufficient event-related responses were also excluded (see ‘Physiological measures’ above). The observation function for SCR fitting were simply g(x)=Predictor+b, with b as a free parameter. The predictor (model uncertainty) was not scaled to avoid overfitting. For Experiment 2, both left and right SCRs were fitted simultaneously as two data sources, with b1 and b2 as two free parameters to fit each side with the same predictor.
+For SCR fitting, multi-session split was the same as choice fitting. The first two trials from each session were excluded from fitting to avoid extreme values from startle effects, which also served to reduce the confound from general habituation of SCRs. Trials with insufficient event-related responses were also excluded (see ‘Physiological measures’ above). The observation function for SCR fitting were simply $g(x)=Predictor+b$, with $b$ as a free parameter. The predictor (model uncertainty) was not scaled to avoid overfitting. For Experiment 2, both left and right SCRs were fitted simultaneously as two data sources, with $b_{1}$ and $b_{2}$ as two free parameters to fit each side with the same predictor.
 
 Parameter prior setting for models followed previous studies. TD, RW and hybrid models all have initial values as 0, and initial associability as 1. HMM and Bayesian models all have initial hidden states of relief belief as 0. All evolution parameters had variance set to 1, with the exception of SCR fitting at 0.05 to reduce flexibility.
 
 We calculated the protected exceedance probabilities based on (Rigoux et al., 2014), shown in figure supplements in the same way as in the original exceedance probabilities in the results section. See http://mbb-team.github.io/VBA-toolbox/wiki/BMS-for-group-studies/#rfx-bms for details of its calculation. In Experiment 1, for SCR fitted model comparison, the best fitting model became less clear. However, in Experiment 2, where the number of trials was increased as fitting was not conducted separately for Instrumental/Pavlovian sessions, best fitting models from comparison remained unchanged from the original comparison using exceedance probabilities. Results from Experiment 2 provided validation for Experiment 1 in the way similar to the neuroimaging analysis.
 
-## Model comparison
+#### Model comparison
 
 Model comparison was implemented with random-effect Bayesian model selection in the VBA toolbox. The best fitted model for each individual is allowed to vary, and model frequency in population (i.e. in how many subjects the model was the best-fit model) was estimated from model fitting evidence (free energy from learning models in choice and SCR fitting, or log likelihood from regression models in rating fitting), and model exceedance probability (i.e. how likely the model is more frequent than other models compared).
 
-## fMRI acquisition
+### fMRI acquisition
 
 For Experiment 1, neuroimaging data was acquired with a 3T Siemens Magnetom Trio Tim scanner, with the Siemens standard 12 channel phased array head coil. For Experiment 2, a 3T Siemens Prisma scanner was used, with the Siemens standard 64 channel phased array head coil.
 
 Scanning parameters were identical for both experiments: functional images were collected with a single echo EPI sequence (repetition time TR = 2500 ms, echo time TE = 30 ms, flip angle = 80, field of view = 240 mm), 37 contiguous oblique-axial slices (voxel size 3.75 × 3.75×3.75 mm) parallel to the AC-PC line were acquired. Whole-brain high resolution T1-weighted structural images (dimension 208 × 256×256, voxel size 1 × 1×1 mm) using standard MPRAGE sequence were also obtained.
 
-## fMRI preprocessing
+### fMRI preprocessing
 
-Functional images were slice time corrected using SPM12 (http://www.fil.ion.ucl.ac.uk/spm/software/spm12/) with individual session’s slice timing output by the scanner. Resulting images were then preprocessed using the fmriprep software (build date 09/03/2017, freesurfer option turned off, https://github.com/poldracklab/fmriprep), a pipeline that performs motion correction, field unwarping, normalisation, field bias correction, and brain extraction using a various set of neuroimaging tools available. The normalised images were smoothed using a Gaussian kernel of 8 mm using SPM12. The confound files output by fmriprep include the following signals: mean global, mean white matter tissue class, three FSL-DVARS (stdDVARS, non-stdDVARS and voxel-wise stdDVARS), framewise displacement, six FSL-tCompCor, six FSL-aCompCor, and six motion parameters (matrix size: 24 × number of volumes).
+Functional images were slice time corrected using SPM12 (http://www.fil.ion.ucl.ac.uk/spm/software/spm12/) with individual session’s slice timing output by the scanner. Resulting images were then preprocessed using the fmriprep software (build date 09/03/2017, freesurfer option turned off, https://github.com/poldracklab/fmriprep), a pipeline that performs motion correction, field unwarping, normalisation, field bias correction, and brain extraction using a various set of neuroimaging tools available. The normalised images were smoothed using a Gaussian kernel of 8 mm using SPM12. The confound files output by fmriprep include the following signals: mean global, mean white matter tissue class, three FSL-DVARS (stdDVARS, non-stdDVARS and voxel-wise stdDVARS), framewise displacement, six FSL-tCompCor, six FSL-aCompCor, and six motion parameters (matrix size: 24 $\times$ number of volumes).
 
-## fMRI GLM model
+### fMRI GLM model
 
 All event-related fMRI data were analysed with generalised linear models (GLM) constructed using SPM12, estimated for each participant in the first level. Model generated signals used as parametric modulators were generated with one set of group-mean model parameters, obtained with behavioural data fitting as described. We used the mean of the fitted parameters from all participants in the imaging analysis as this provides the most stable estimate of the population mean (taking into account the fact that individual fits reflect both individual differences and noise). For completeness, however, we also ran the analyses with individually fitted values, which led to similar results (i.e. no change in significance level of each result). All regressors were convolved with a canonical hemodynamic response function (HRF). We also include regressors of no interest to account for habituation and motion effects. Specifically, the number of trials since last receiving a relief outcome (‘Relief’ term in rating regression model), and the log of trial number within session (log(Trial) term) were included to regress out potential change in tonic pain perception simply due to prolonged stimulation. The resulting GLM estimates were entered into a second-level one-sample t-test for the regressors of interest to produce the random-effect statistics and images presented in Results section.
 
-## TD softmax (Figure 3a and Figure 5a)
+#### TD softmax (Figure 3a and Figure 5a)
 
 Regressors of interest:
 
 Regressors of no interest:
 
-## Hybrid model associability (Figure 3d and Figure 5d)
+#### Hybrid model associability (Figure 3d and Figure 5d)
 
 Regressors of interest:
 
@@ -292,12 +1232,12 @@ Regressors of no interest: same as GLM above, adding relief onset (duration = 
 
 For multiple comparison, we used anatomical binary masks generated using the Harvard-Oxford Atlas (Desikan et al., 2006) for small volume correction. Atlases are freely available with the FSL software (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases). We thresholded the probability maps at 50%, focusing on ROIs defined a priori (learning related: amygdala, accumbens, putamen, caudate, pallidum, VMPFC, DLPFC. Controllability-induced analgesia related: cingulate gyrus - anterior division, insular cortex, VLPFC). We used the frontal medial cortex for VMPFC, the frontal orbital cortex for VLPFC, and the middle frontal gyrus for DLPFC respectively. We reported results with p<0.05 (FWE cluster-level corrected). Masks were applied separately, not combined (Table 1 and Table 2).
 
-## fMRI model comparison
+### fMRI model comparison
 
 To determine whether state-based and action-based learning involve the same brain regions during instrumental learning, we used Bayesian model selection (BMS) with the instrumental sessions imaging data. We ran Bayesian first level analysis using two separate GLMs containing the prediction error signals from TD and hybrid models (at outcome onset time, durations = 3 s) using unsmoothed functional imaging data, with the same regressors of no interest as other GLMs described. To reduce computation time, this was restricted to voxels correlated to prediction error from previous parametric modulation analysis results from our present study, within a mask of conjunction clusters from TD and hybrid prediction error analysis (cluster formation at p<0.01, k<5). Resulting log-model evidence maps produced from each model for individual participant were first smoothed with a 6 mm Gaussian kernel, then entered into a random-effect group analysis (Stephan et al., 2009). Voxel-wise comparison between models produced posterior and exceedance probability maps to show whether a particular brain region is better accounted for by one model or the other. Posterior probability maps were overlaid on subject-averaged anatomical scans using MRIcroGL (https://www.nitrc.org/projects/mricrogl/).
 
-## Axiom analysis for prediction errors
+### Axiom analysis for prediction errors
 
-To determine whether ROI activations to prediction errors were responding outcomes or prediction errors, we carried out ROI axiomatic analysis (Roy et al., 2014). Trials were separated into relief or no relief outcomes, then into equal-size bins of ascending sorted expected relief values, calculated from TD model as we were primarily interested in instrumental/active relief learning. This produced four regressors (2 outcomes × 2 value bins) in Experiment 1, and six regressors (2 outcomes × 3 value bins) in Experiment 2, to be estimated at outcome time (duration = 3 s) when prediction error was generated. GLMs include button presses for choice or rating, and movement related regressors of no interest mentioned above. ROI masks of 8 mm spheres were generated from peak coordinates from TD model prediction error exceedance probability map calculated by BMS above (ventral and dorsal striatum, amygdala, VMPFC and DLPFC).
+To determine whether ROI activations to prediction errors were responding outcomes or prediction errors, we carried out ROI axiomatic analysis (Roy et al., 2014). Trials were separated into relief or no relief outcomes, then into equal-size bins of ascending sorted expected relief values, calculated from TD model as we were primarily interested in instrumental/active relief learning. This produced four regressors (2 outcomes $\times$ 2 value bins) in Experiment 1, and six regressors (2 outcomes $\times$ 3 value bins) in Experiment 2, to be estimated at outcome time (duration = 3 s) when prediction error was generated. GLMs include button presses for choice or rating, and movement related regressors of no interest mentioned above. ROI masks of 8 mm spheres were generated from peak coordinates from TD model prediction error exceedance probability map calculated by BMS above (ventral and dorsal striatum, amygdala, VMPFC and DLPFC).
 
 Mean activity were extracted from these ROI masks averaged across sessions within individual subject. Although the axiomatic analysis is useful for delineating outcome and prediction responses in previous reward or aversive PE studies, the continued presence of tonic pain in our study differs from the ‘no stimulation’ conditions in these studies, thus we are primarily interested in the overall BOLD activity pattern and did not include full statistics of this analysis.

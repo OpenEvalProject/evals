@@ -139,7 +139,7 @@
 
 ## Abstract
 
-10.7554/eLife.27041.001 The recent advent of methods for high-throughput single-cell molecular profiling has catalyzed a growing sense in the scientific community that the time is ripe to complete the 150-year-old effort to identify all cell types in the human body. The Human Cell Atlas Project is an international collaborative effort that aims to define all human cell types in terms of distinctive molecular profiles (such as gene expression profiles) and to connect this information with classical cellular descriptions (such as location and morphology). An open comprehensive reference map of the molecular state of cells in healthy human tissues would propel the systematic study of physiological states, developmental trajectories, regulatory circuitry and interactions of cells, and also provide a framework for understanding cellular dysregulation in human disease. Here we describe the idea, its potential utility, early proofs-of-concept, and some design considerations for the Human Cell Atlas, including a commitment to open data, code, and community.
+The recent advent of methods for high-throughput single-cell molecular profiling has catalyzed a growing sense in the scientific community that the time is ripe to complete the 150-year-old effort to identify all cell types in the human body. The Human Cell Atlas Project is an international collaborative effort that aims to define all human cell types in terms of distinctive molecular profiles (such as gene expression profiles) and to connect this information with classical cellular descriptions (such as location and morphology). An open comprehensive reference map of the molecular state of cells in healthy human tissues would propel the systematic study of physiological states, developmental trajectories, regulatory circuitry and interactions of cells, and also provide a framework for understanding cellular dysregulation in human disease. Here we describe the idea, its potential utility, early proofs-of-concept, and some design considerations for the Human Cell Atlas, including a commitment to open data, code, and community.
 
 ## Introduction
 
@@ -293,21 +293,21 @@ Researchers will also be able to derive expression signatures that uniquely iden
 
 How might the biomedical community build a Human Cell Atlas? As with the Human Genome Project, a robust plan will best emerge from wide-ranging scientific discussions and careful planning involving biologists, technologists, pathologists, physicians, surgeons, computational scientists, statisticians, and others. As noted above, various discussions have taken place for over two years about the idea of a comprehensive Human Cell Atlas, as well as about specific atlases for the brain and the immune system. Several pilot efforts are already underway. Moreover, over the past year discussions have been underway to create an initial plan for a Human Cell Atlas Project (which is articulated in the White Paper mentioned above). Among the key points for consideration are the following:
 
-## Phasing of goals
+### Phasing of goals
 
 While the overall goal is to build a comprehensive atlas with diverse molecular measurements, spatial organization, and interpretation of cell types, histology, development, physiology and molecular mechanisms, it will be wise to set intermediate goals for 'draft' atlases at increasing resolution, comprehensiveness, and depth of interpretation. The value of a phased approach was illustrated by the Human Genome Project, which defined milestones along the way (genetic maps, physical maps, rough-draft sequence, finished sequence) that held the project accountable and provided immediate utility to the scientific community.
 
-## Sampling strategies
+### Sampling strategies
 
 While an adult human has ~2 x 1013 nucleated cells, it is neither possible nor necessary to study them all to recover the fine distinctions among human cells. The key will be to combine sound statistical sampling, biological enrichment purification, and insights from studies of model organisms. It is likely beneficial to apply an adaptive, iterative approach with respect to both the number of cells and depth of profiles, as well as anatomical coverage and spatial resolution in the tissue, with initial sparse sampling driving decisions about further sampling. This adaptive approach, termed a 'Sky Dive', adjusts as resolution increases (and is further described in the HCA White Paper).
 
 Such approaches can be facilitated by experimental techniques that allow fast and inexpensive 'banking' of partially processed samples, to which one can return for deeper analysis as methods mature. Advances in handling fixed or frozen tissues would further facilitate the process (Box 1). With respect to depth of profiling, recent studies suggest the utility of a mixed strategy: relatively low coverage of the transcriptome can identify many cell types reliably (Heimberg et al., 2016; Shekhar et al., 2016) and a smaller set of deep profiles can be help interpret the low-coverage data to further increase detection power. As a result, the 'Sky Dive' begins with large-scale uniform sampling, follows with stratified sampling, and then employs specialized sampling at lower throughput.
 
-## Breadth of profiles
+### Breadth of profiles
 
 The atlas must combine two branches – a cellular branch, focused on the properties of individual cells, and a spatial branch, describing the histological organization of cells in the tissue. For the cellular branch, massively parallel transcriptome analysis of individual single cells or nuclei will likely be the workhorse for efforts in the first few years. However, other robust, high-throughput profiling methods are rapidly emerging, including techniques for studying chromatin, genome folding, and somatic mutations at single-cell resolution (Box 1). For the spatial branch, in situ analysis of the spatial patterns of RNA, proteins, and potentially epigenomics will be equally important. While some of these methods are already rapidly maturing, others will benefit from focused development efforts, as well as from cross-comparison among different techniques. Fortunately, most can be applied to preserved tissue specimens, allowing specimens collected now to be analyzed later, as methods mature.
 
-## Biological scope
+### Biological scope
 
 It will be important to consider the balance among tissue samples from healthy individuals at various stages; small cohorts of individuals with diseases; and samples from model organisms, where key developmental stages are more accessible and manipulations more feasible. Well-chosen pilot projects could help refine strategies and galvanize communities of biological experts. Some communities and projects would be organized around organs (e.g., liver, heart, brain), others around systems (e.g., the immune system) or disease (e.g., cancer), the latter distributed across many organs and tissues.
 
@@ -315,41 +315,41 @@ As outlined in the HCA White Paper, the first draft of the atlas might pursue ro
 
 The full atlas, will ultimately describe at least 10 billion cells, covering all tissues, organs, and systems. Specimens will come from both healthy research participants and small cohorts of patients with relevant diseases. The cells and tissues will be studied using a broad range of techniques, to obtain cellular and spatial information, from samples designed to represent the world's diversity. As with previous genomic projects, the Human Cell Atlas will be bounded in its resolution (with respect to the rarity of cell types/states and the spatial resolution), its coverage of disease and diversity (broadly representative but not obviating the need for direct genetic and clinical studies), and its functional assessment (to validate the existence of identified cells and facilitate – but not perform – detailed functional characterization).
 
-## Model organisms
+### Model organisms
 
 The Human Genome Project and the broader scientific community benefitted from insights learned from genome projects conducted in parallel in model organisms. These projects empowered functional studies in model organisms, ushered a new era of comparative genomics, and provided important technical lessons. By analogy, we envision that key 'sister' atlases in model organisms will be developed in parallel and in coordination with the Human Cell Atlas. These projects should not delay progress on the human atlas (or vice versa), because current techniques are already directly applicable to biomedical research on human samples.
 
 In some cases, model organism atlases can use techniques that are not possible in humans, such as engineering animals to facilitate lineage tracing. In many cases, the extensive validation and functional follow-up studies that can be performed in model organisms will help validate 'by proxy' conclusions drawn in the human atlas. Finally, comparing the atlases across organisms will provide invaluable lessons in evolution and function.
 
-## Quality
+### Quality
 
 In creating a reference map to be used by thousands of investigators, it is critical to ensure that the results are of high quality and technically reproducible. This is especially important in view of the inherent biological variation and expected measurement noise. Substantial investment will be needed in the development, comparison, and dissemination of rigorous protocols, standards, and benchmarks. Both individual groups and larger centers will likely have important roles in defining and ensuring high quality. It will also be important that the collected samples be accompanied by excellent clinical annotations, captured in consistent meta-data across the atlas.
 
 Tissue processing poses special challenges, including the need for robust methods for dissociating samples into single cells so as to preserve all cell types, fixation for in situ methods, and freezing for transport. A related challenge is the difference in the amenability of specific cell types for different assays (T cells are very small and yield lower quality scRNA-seq; the fat content in adipocyte is challenging for many spatial methods; many neurons cannot currently be isolated with their axons and dendrites from adult tissue). Careful attention will also be needed to data generation and computational analysis, including validated standard operating procedures for experimental methods, best practices, computational pipelines, and benchmarking samples and data sets to ensure comparability.
 
-## Global equity
+### Global equity
 
 Geographical atlases of the Earth were largely developed to serve global power centers. The Human Cell Atlas should be designed to serve all people: it should span genders, ethnicities, environments, and the global burden of diseases – all of which are likely to affect the molecular profiles of cells and must be characterized to maximize the atlas's benefits. The project itself should encourage and support the participation of scientists, research centers and countries from around the globe, while recognizing the value of respecting and learning from diverse populations, cultures, mores, beliefs, and traditions.
 
-## Open data
+### Open data
 
 The Human Genome Project made clear the power of open data that can be used by all and freely combined with other datasets. A Human Cell Atlas should similarly be an open endeavor, to the full extent permitted by participants' wishes and legal regulation. While the underlying sequence data contains many polymorphisms that make it 'identifiable', it should be possible to map the data onto 'standard models' of each gene to substantially mitigate this issue. To make the atlas useful, it will be critical to develop data platforms that can provide efficient aggregation and storage, quality control, analytical software, and user-friendly portals.
 
-## Flexibility
+### Flexibility
 
 A Human Cell Atlas Project should be intellectually and technologically flexible. The project should embrace the fact that its biological goals, experimental methods, computational approaches, overall scale, and criteria for 'completion' will evolve rapidly as insights and tools develop. For historical context, it is useful to remember that discussions about a Human Genome Project began before the development of automated DNA sequencing machines, the polymerase chain reaction, or large-insert DNA cloning, and the project drove technological progress on many fronts. Moreover, the criteria for a 'finished' genome sequence were only agreed upon during the last third of the project.
 
-## Impact on the scientific community
+### Impact on the scientific community
 
 Large-scale efforts, such as a Human Cell Atlas, must be careful to appropriately weigh the benefits to science and individual scientists with the potential costs. We consider the key benefits to the broad scientific community to include: the core scientific knowledge and discoveries that will result from having a reference map; the empowerment of scientists working across any tissue or cell type to pursue their research more precisely and effectively; the development, hardening and dissemination of experimental techniques and computational methods in the context of big-data settings, all of which will be openly shared; the inclusive and maximally open Human Cell Atlas community, inviting participation by all individual labs and research centers; and the coordination of efforts that would otherwise be unconnected, less extensive, and more expensive.
 
 At the same time, we must be aware of potential pitfalls, including: premature restriction to specific technologies or approaches, which might limit innovation in a fast-moving field; implicit restriction of participation, based on available resources; and diversion of funding from other research directions. The unique organization and community of the Human Cell Atlas Project will tackle these potential challenges by committing to open membership, to the open and immediate data release with no restrictions, and to open-source code for all computational approaches. We hope that the new information and technology generated will more than repay the costs of the project by increasing the speed and efficiency of biomedical research throughout the scientific community.
 
-## Engagement with the non-scientific community
+### Engagement with the non-scientific community
 
 The general public is a key stakeholder community for the Human Cell Atlas. Proper public engagement should involve many communities, including interested members of the public, citizen-scientists, schoolchildren, teachers and, where appropriate, research participants. Engagement will take diverse forms, including traditional media, social media, video and, importantly, direct sharing of the project's data. Across all channels, it will be important to articulate the goals, principles and motivations of the project. While explaining the intended benefits to the public with respect to advancing disease biology, drug discovery and diagnostics, it will be equally important to avoid 'hype': that is, we need to avoid making promises and raising expectations that are unrealistic in content or timing.
 
-## Forward looking
+### Forward looking
 
 Any data produced today will be easier, faster, more accurate and cheaper to produce tomorrow. Any intermediate milestones achieved during the project will be supplanted by deeper, broader, more accurate, and more comprehensive successors within a few short years. However, as we define the goal of a Human Cell Atlas Project, we should view it not as a final product, but as a critical stepping-stone to a future when the study of human biology and medicine is increasing tractable.
 

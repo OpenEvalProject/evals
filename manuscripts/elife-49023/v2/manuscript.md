@@ -41,19 +41,43 @@ Here, we present DeepIS, a computational framework for the systematic, label-fre
 
 ## Results
 
-## 3D time-lapse RI measurement of the CART19 and K562-CD19 cell conjugates using optical diffraction tomography
+### 3D time-lapse RI measurement of the CART19 and K562-CD19 cell conjugates using optical diffraction tomography
 
 In order to perform ODT experiments in our study, we employed an experimental setup which is based on off-axis holography equipped with a high-speed illumination scanner using a digital micro-mirror device (DMD; DLP6500FLQ DLP 0.65 1080 p Type A DMD, Texas Instrument) (Figure 1). The setup enables the high-speed acquisition of a single tomogram within 500 milliseconds (Figure 1a; Shin et al., 2015; Lee et al., 2017). A 1 × 2 single-mode FC/APC fiber coupler was utilized to split a coherent, monochromatic laser (λ = 532 nm) into a sample and reference arms. The DMD was then placed onto the sample plane of the sample arm to control the illumination angle of the first-order diffracted beam striking the sample. To scan the illuminations at large tilt angles, a 4-f array consisting of a tube lens (Lens 1, f = 250 mm) and a condenser objective (UPLASAPO 60XW, Olympus Inc, Japan) magnified the illumination angle. The light scattered by live cells in a live-cell chamber (TomoChamber, Tomocube Inc, Republic of Korea) was then transmitted through the other 4 f array formed by an objective lens (UPLASAPO 60XW, Olympus Inc, Japan) and a tube lens (Lens 2, f = 175 mm). The sample beam was combined with the reference beam by a beam splitter and filtered by a linear polarizer. The resultant off-axis hologram was then recorded by a CMOS camera (FL3-U3-13Y3M-C, FLIR Systems, Inc, USA) synchronized with the DMD to record 49 holograms of the sample illuminated at different angles. Using a phase-retrieval algorithm, the amplitude and phase images of the 1:1 conjugate between a CART19 and K562-CD19 cell were retrieved from the measured holograms (Figure 1b). Based on the Fourier diffraction theorem with Rytov approximation (Wolf, 1969; Devaney, 1981), the 3D RI tomogram of the sample was reconstructed from the retrieved amplitude and phase images (Figure 1c). To fill the uncollected side scattering signals due to the limited numerical apertures of objective lenses, a regularization algorithm based on the non-negative constraint was used (Lim et al., 2015). The maximum theoretical resolutions of the ODT system were respectively 125 nm laterally and 471 nm axially, according to the Lauer criterion defined as the Nyquist sampling period (Lauer, 2002; Park et al., 2018b). Note that the empirical spatial resolution of ODT has been known to be between the Nyquist sampling period and the Abbe criterion (Simon et al., 2017), so the Nyquist sampling period was used to set the lowest bound of the resolution. Finally, we approximated the protein densities from the reconstructed RI values using a RI increment per protein concentration, α = dRI/dc = 0.185 mL/g25. We assumed this RI increment to be constant over cells for two reasons: (1) as in Barer et al., 1953, most protein molecules have narrow ranges of RI incremental values from 0.179 to 0.195 mL/g, (2) lymphocytes contain lipid-rich environment localized mostly on a 4-nm-thick membrane site, whose size is beyond optical resolution and thus the relatively voluminous adjacent cytoplasm would contribute the reconstructed RI tomogram rather than sub-resolved membrane layers. The average illumination intensity was 11.46 mW/cm2, at which the samples did not suffer from phototoxicity or signal losses during long-term assessment (Figure 1—video 1).
 
-## DeepIS establishment for automated assessment of CART19 IS dynamics
+![Figure 1.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig1-v2.jpg)
+
+**Figure 1.:** (a) The experimental setup for ODT is based on a digital micro-mirror device (DMD) for high-speed illumination scanning. (b) Forty-nine holograms of 1:1 conjugate between a CART19 and a K562-CD19 cell were recorded at various illumination angles, and their amplitude and phase delay distributions were retrieved. (c) A reconstructed refractive index (RI) map.
+
+### DeepIS establishment for automated assessment of CART19 IS dynamics
 
 The IS tracking analysis is preceded by segmentation, which involves dividing volumetric sections for background, cell domains, and IS in the ODT RI map. However, iteration is required for parameter tuning of the manual segmentation method to obtain a single well-segmented label, which is prohibitive to obtain a dynamic dataset. Therefore, we established DeepIS framework based on the DCNN supervised learning method to enable general, high-throughput, and automated segmentation for 3D RI tomograms (Figure 2). The framework was developed in the following order: (i) Dataset preparation, (ii) Training stage, and (iii) Inference stage. These are detailed next.
 
-## Dataset preparation
+![Figure 2.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig2-v2.jpg)
+
+**Figure 2.:** (a) Dataset preparation; raw RI tomograms were annotated with manual parameter selections and curated by three experts. (b) Training stage; the prepared dataset was employed to iteratively train the DCNN model that regressed the distance map of CART19 and K562-CD19 cells with the opposite signs. (c) Inference stage; a raw RI tomogram was converted into an output distance map by the trained DCNN model. After post-processing, 3D masks of CART19, K562-CD19, and IS were reconstructed.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) A distance-transform map of a binary mask caused ill segmentation. Red arrow indicates the ill-segmented boundary. (b) Our annotation method was based on iterative parameter adjustment based on a Gaussian-smoothed RI tomogram. The pre-processed data was segmented by the watershed algorithm and merged into CART19 and K562-CD19 cell masks.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Representative results of RI maps (first column), annotation masks, (second column), and STAPLE truth estimates from the manually delineated masks of three experts (third column). Top row: training set, Bottom row: untrained set. (b) Statistics of Pearson correlation coefficient between the annotation mask and the STAPLE truth estimate. The comparison showed higher mean and smaller standard deviation values of the coefficient in the training dataset, indicating that the quality of curated annotation masks reached the expert levels. n = 10 for both training and untrained datasets, respectively. Each boxplot indicates the median, upper, and lower quartiles of each population. The vertical lines indicate population ranges. Two-tail unpaired Wilcoxon tests were performed. (c) The inter-rater sensitivity between experts shows that the experts heuristically curated well-segmented data with consensus. Mean ± SD data are presented.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Overall U-shaped feature flowline of the DCNN architecture. The architecture has the contracting path consisting of ResNet blocks and down-pooling layers and the expanding path consisting of convolutional layers and up-pooling layers. Features are passed from the contracting path and to the expanding path through global convolutional network (GCN) layers. The number of features for each level is 32, 64, 128, 256, 512, respectively. (b) Detailed structure of colored blocks and layers in the previous architecture.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Cell surface was obtained by finding the edge of each cell mask. The remaining mask was defined as the cell interior. The synapse was defined as an overlapped region of the dilated masks of CART19 and K562-CD19 cells. The green arrow and a dashed line indicate the direction of the en face projection and the projection plane, respectively. The en face projected view is also presented.
+
+### Dataset preparation
 
 The preliminary step of supervised learning of DCNN is to prepare an annotated dataset (Figure 2a). To annotate the 3D masks of the CART19 and K562-CD19 cells, we applied a combination of image processing and the watershed algorithm to a raw RI tomogram according to the following steps (Figure 2—figure supplement 1, also see the Codes). First, we annotated the cell masks from a raw RI tomogram using manual selections of four hyper-parameters: (i) initial seed locations of each cell to obtain a 3D distance-transform map, (ii) RI threshold for defining cell boundaries, (iii) voxel dilation sizes for merging over-segmented grains into one discrete region, and (iv) standard deviation of the Gaussian smoothing mask. The processed data were then multiplied to the 3D distance-transform map of the cell regions and segmented by the watershed algorithm. Finally, after iterative adjustment of the parameters from over 2000 data points, three experts in cellular biology quantitatively validated consistent annotation performances via simultaneous truth and performance level estimation (Figure 2—figure supplement 2), and heuristically curated the 236 pairs of well-annotated 3D tomograms with consensus (Warfield et al., 2004). The curated data uniformly reflected the various stages of the IS dynamics, which ensured providing information about the immunological response in both the early and late stages.
 
-## Training stage
+### Training stage
 
 The segmentation tasks were challenged by the lack of distinct boundaries between CART19/K562-CD19 conjugates in RI distributions, diverse morphology of cells, and the demand for precise segmentation at high resolution. As a consequence, although typical segmentation tasks of DCNN were assigned to infer voxel-wise label classification, various types of failure occurred, such as fragmented labels and unnatural IS.
 
@@ -61,13 +85,17 @@ To overcome these limitations and improve the segmentation accuracy and robustne
 
 With the pre-processed data, the DCNN was optimized using the Adam optimizer (Initial learning rate = 0.001, decay rate for the first moment estimate β1 = 0.5, decay rate for the second moment estimate β2 = 0.99, learning decay rate = 0.5 per 50 epochs) during the training stage to predict the signed 3D distance map of CART19 and K562-CD19 cells. The boundary-weighted L1 function was used as a loss function. To prevent overfitting that might arise from a relatively small number of the training data compared with a large number of parameters, early stopping and data augmentation were used. For early stopping, the obtained annotated dataset was into two disjoint subsets. In one subset, 198 tomogram data pairs were used for the optimization of model parameters. In the other subset, the remaining 36 tomogram data pairs were used for internal validation. Training of the model parameters was stopped if the performance of the model on the validation set had not improved for five consecutive epochs. For data augmentation, a larger annotated dataset was simulated using random rotations, horizontal reflection, cropping, and elastic transformation to make the resulting model more robust to irrelevant sources of variability. The network was trained on four graphics processing units (GPUs; GEFORCE GTX 1080 Ti) for 400 epochs, which took approximately 6 hr. Selection of a model for inference among trained models was based on performance on the internal validation set.
 
-## Inference stage
+### Inference stage
 
 In the inference stage, the trained network was used to regress the distance maps of the CART19 and K562-CD19 cells from unlabeled RI tomograms (Figure 2c). In the post-processing stage, the output distance map was post-processed to yield cell domains masks of each CART19 and K562-CD19 cell through simple thresholding using a value of 54.5 nm, which is approximately half of a voxel pitch. The IS of CART19/K562-CD19 conjugate was defined by dilating the CART19 and K562-CD19 masks by a comparable length to the axial resolution of ODT (two voxels, 437 nm) and finding an overlapping region. The cell surface and the cell interior were obtained using binary image erosion by one voxel (218 nm) and defined as the boundary of the 3D cell mask and the remaining interior mask respectively (Figure 2—figure supplement 4).
 
-## Evaluation of DeepIS segmentation performance
+### Evaluation of DeepIS segmentation performance
 
 Because the label-free segmentation approach aims to distinguish the boundaries between two attached cells at a sub-micrometer spatial resolution, it was essential to validate whether DeepIS provides sufficient segmentation accuracy for our purpose. This was first addressed by comparing the segmentation performances between DeepIS and manual segmentation (Figure 3, also see Figure 3—video 1 and Datasets). In the training dataset, this comparison showed that the model could define IS boundaries. Notably, DeepIS generally displayed better segmentation performance than the manual segmentation in the untrained dataset, without notable segmentation problems such as fragmentations and discontinuous boundaries. This observation indicated that DeepIS was well trained and could be exploited to predict the IS boundaries.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig3-v2.jpg)
+
+**Figure 3.:** (Top row) Masks annotated by manual parameter selections. (Bottom row) Segmentation results using DeepIS. Blue shade indicates the curated data in the training stage. Red shade indicates the data which were poorly segmented by parameter-based annotation. White arrows illustrate poorly segmented regions. Lower right graph: rendering colormaps determined by the ranges of RI and RI gradient norm.
 
 We then examined whether DeepIS could be applied for high-throughput analysis of IS morphology. Wide-area segmentation of CART19 and K562-CD19 cells was carried out over a lateral field-of-view exceeding 1 mm2 (Figure 4a). When cells were located based on RI contrast, DeepIS allowed rapid, automated, and on-site semantic segmentation (Figure 4b). Interestingly, DeepIS successfully labeled adjoining CART19/K562-CD19 cell conjugates as well as individual CART19 and K562-CD19 cells (Figure 4c), which validated the high-throughput, general segmentation performance of DeepIS.
 
@@ -77,19 +105,214 @@ We then examined whether DeepIS could be applied for high-throughput analysis of
 
 The segmentation performance of DeepIS was further evaluated by quantifying the segmentation accuracy using manually delineated 3D labels obtained from correlative fluorescence microscopy (Figure 5). To prepare 3D manual labels, we mixed T cells and K562 cells expressing CAR-G4S-mCherry and hCD19-G4S-Zsgreen fusion proteins, respectively, and imaged fixed cell conjugates using correlative RI and fluorescence microscopy to delineate manual labels (Figure 5a, Materials and methods). We found that RI and fluorescence images overlapped well with the plasma-membrane fluorescence images, confirming that correlative RI and CAR/CD19 fluorescence images could sufficiently resolve the 3D cell topologies (Figure 5—figure supplement 1). Furthermore, multi-color 3D confocal microscopy showed with higher spatial resolution that CAR and CD19 were spread throughout the plasma membranes of CART19 and K562-CD19 cells respectively and coalesced into the IS, validating that CAR/CD19 fluorescence images were sufficient for defining the IS (Figure 5—figure supplement 2). We then compared the manually drawn labels with the segmentation masks obtained from DeepIS (Figure 5b). When 3D Pearson correlation coefficients for volumetric masks were quantified, we obtained the mean ± standard deviation (SD) values of 87.9 ± 7.7% and 92.0 ± 4.3% for CART19 and K562-CD19 cells, respectively, implying a greater than 80% good overlap between the manual labels and automatically segmented labels using DeepIS. In addition, the mean ± SD value for boundary displacement error was 2.82 ± 1.74 voxels, which corresponded to a sub-micrometer displacement error of 615.5 ± 379.8 nm. Considering that 3D segmentation is more challenging than 2D segmentation, these results indicated significantly small boundary errors (Wang, 2018; Lalaoui and Mohamadi, 2013).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig5-v2.jpg)
+
+**Figure 5.:** (a) Representative 3d rendering images, the xy- and the xz- cross-sections of RI (first column), fluorescence (second column), and their overlapped images (third column). CART19 and K562-CD19 labels were manually delineated based on the correlative images (fourth column) and compared with the labels obtained from DeepIS (fifth column). (b) Quantifications of DeepIS segmentation performance (n = 17). Pearson correlation coefficient was measured for CART19 (87.9 ± 7.7%) and K562-CD19 (92.0 ± 4.3%). Boundary displacement error was measured for IS (2.82 ± 1.74 voxels; 615.5 ± 379.8 nm). Each boxplot indicates the median, upper, and lower quartiles of each population.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Representative 3D rendering maps of RI (first column), fluorescence (second column), and their overlapped images (third column). CART19 and K562-CD19 labels were manually delineated based on the correlative images (fourth column) and compared with the labels obtained from DeepIS (fifth column). (b) Quantifications of DeepIS segmentation performances (n = 30). Pearson correlation coefficient was measured for CART19 (90.2 ± 3.0%) and K562-CD19 (88.9 ± 7.5%). Boundary displacement error was measured for IS (2.02 ± 1.11 voxels; 440.9 ± 242.3 nm). Each boxplot indicates the median, upper, and lower quartiles of each population. The numbers of analyzed cells per each experiment are listed in Table 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) A 2D wide-field image. (b) Four-channel zoom-in images of CART19/K562-CD19 pair. (c) Merged cross-section images. (d) A 3D Rendering image.
+
 For a conclusive validation of the segmentation performance, we lastly compared the IS defined by DeepIS with the IS imaged by high-resolution fluorescence microscopy methods. For this purpose, we integrated the DeepIS framework with multicolor 3D structured illumination microscopy (3D-SIM; see Materials and methods) (Mobahi et al., 2011; Gustafsson et al., 2008; Demmerle et al., 2017; Kim et al., 2017). The integrated setup enabled us to image the protein compositions at CAR IS at sub-200-nm lateral and nearly sub-400-nm axial spatial resolution defined as full width at half-maximum (Figure 6—figure supplement 1).
 
 Using 3D-SIM, we first assessed the 3D location of the synaptic cleft (Figure 6). We used the negative stain method by adding the FITC-labeled dextran solution with two different hydrodynamic diameters (4 and 54 nm) into the chemically fixed conjugates of K562-CD19 cells and T cells expressing CAR-G4S-mCherry (see Materials and methods). The resultant 3D-SIM images showed that the synaptic cleft was visible only when we used the smaller dextran (4 nm), suggesting that, similar with the IS of NK cells, CAR IS excluded dextran molecules above a size threshold (Cartwright et al., 2014; Figure 6a, also see Figure 6—figure supplement 2). We then compared the imaged synaptic clefts, the CAR fluorescence, and the IS drawn by DeepIS for validation (Figure 6b). The 3D overlaps of the three images validated the 3D segmentation accuracy of our proposed method (Figure 6c). We laterally plotted the signals across the IS to quantitatively assess the segmentation accuracy (Figure 6d). The displacements of the IS from the peak intensities of the CAR and the synaptic cleft were within 200 and 600 nm, respectively. The result suggested that the IS drawn by DeepIS reflected the IS boundary closer to CAR-T cells, whose accuracy was comparable to the resolution limit of ODT. Moreover, consistent with the previous study using confocal fluorescence microscopy (Cartwright et al., 2014), the lateral full-width half-maximum of the synaptic cleft was measured to be 894 nm, which may imply the presence of a spatial gap larger than tens of nanometers across the IS (McCann et al., 2003).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig6-v2.jpg)
+
+**Figure 6.:** (a) The XY- and XZ-slice images of fluorescein-labeled dextran. White dashed lines: slice regions. (b) Corresponding XY- and XZ- images of SIM and ODT. (c) Comparison of dextran fluorescence, CAR fluorescence, and the IS defined by DeepIS. (d) Mean lateral line profiles for lines drawn across the IS.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Experimental setup. (b) Raw image (left) and corresponding widefield and SIM images (right) of 100-nm-diameter Tetraspeck beads excited by structured illumination beams. (c) Slice images of multicolor widefield (left), 3D-SIM (middle), and ODT (right) of the beads after image registrations. (d) Line profiles from c and the corresponding full-width half-maxima of 3D-SIM and ODT.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) The XY- and XZ-slice images of fluorescein-labeled dextran (top) and merged fluorescence of dextran and CAR (bottom). The 3D-SIM images showed that the synaptic cleft in the vicinity of the CAR protein was visible only with the smaller dextran. (b) Lateral fluoresce intensity relative to background solution across CAR IS. The shaded error bars indicate the mean and standard deviation of the dotted curves. The fluorescence intensity of dextran relative to the background solution quantified the size-dependent access of dextran into the CAR IS. (c) A two-tail unpaired Wilcoxon test indicated that the fluorescence peaks were significantly larger for the smaller dextran used.
 
 Additionally, we validated whether the proposed method could be used to detect organelles at CAR IS. We specifically investigated the distributions of lytic granules, CAR and CD19 proteins, by imaging T cells expressing CD19-specific CAR-G4S-mCherry stained with lysotracker dyes and K562 cells expressing hCD19-G4S-Zsgreen. To verify successful staining of lytic granules before 3D-SIM, we employed widefield deconvolution fluorescence microscopy and confirmed the rapid dynamics of lytic granules coalescing into the IS (Figure 7—figure supplement 1, also see Figure 7—video 1). We also confirmed the RI detection sensitivity of the lytic granules using a histogram analysis, which showed that, compared to cell bodies, the mean RI value was lower for CAR IS and higher for lytic granules (Figure 7—figure supplement 2). We then chemically fixed stable CART19/K562-CD19 conjugates and imaged them using 3D-SIM and ODT for high-resolution multi-protein composition analysis (see Materials and methods).
 
 As a result, our DeepIS framework demarcated the interface regions in close proximity to the overlapping areas of CAR and CD19 proteins (Figure 7a). Importantly, the demarcated region by DeepIS was consistent with the 3D-SIM images, which provided clearer 3D features of the IS between CART19 and K562-CD19 cells than widefield fluorescence microscopy. Along the IS demarcated by DeepIS, we quantitatively analyzed the en face images of CAR, CD19 and lytic granules imaged by 3D-SIM (Figure 7b). In agreement with the previous report (Davenport et al., 2018), the protein compositions of CAR exhibited asymmetric and granular distributions along the CAR IS. We analyzed the correlations between the total protein concentration distribution and the imaged proteins at CAR IS. The correlative line and surface profiles of the protein signals indicated the highest correlations of CAR with lytic granules, as well as colocalizations of CD19 proteins with the CAR clusters (Figure 7c). Interestingly, the total surficial protein densities approximated by ODT exhibited both correlated and uncorrelated clustered regions with the dense multi-protein clusters. Since ODT quantitatively estimates the total protein concentration, the uncorrelated signals are highly likely to imply the presence of clusters of other dominant proteins such as F-actin, Lck, and supramolecular attack particles (Xiong et al., 2018; Bálint et al., 2020).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig7-v2.jpg)
+
+**Figure 7.:** (a) XY- and XZ-slice images of representative CART19/K562-CD19 conjugates. White-dashed lines: slice regions. White bold lines in SIM + ODT: 3D IS areas defined by DeepIS. (b) En face projected images of the defined IS areas in a. (c) Surface (left each) and line (right each) profiles along the dashed lines of normalized fluorescence intensities and surficial protein densities. Arrows indicate representative colocalized signals.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig7-figsupp1-v2.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (a) Representative XY- and XZ- cross section of background, cell volume (gray), obtained IS (green), and lytic granules (red, defined by the overlapping region between a RI cell volume and a fluorescence image with higher than 20% intensity). (b) RI statistics of the corresponding four regions. The experimental signal-to-background ratios of the RI contrast were larger than 30. Among the signal groups, the IS and the lytic granules exhibited the significantly large RI differences. The low RI value of the IS is due to the presence of the synaptic cleft, and the higher RI value of the lytic granules is due to the protein clustering. Numbers denote mean ± standard deviation.
+
 Taken together, these results suggest that our DeepIS method based on ODT can be used to define IS area with high accuracy, and also provides collective information about the distribution of total proteins within the IS which may not be easily measured by using conventional high-resolution fluorescence microscopy.
 
-## Quantitative kinetic analysis of CART19 IS formation using DeepIS
+### Quantitative kinetic analysis of CART19 IS formation using DeepIS
 
 The successfully established DeepIS was implemented in the detailed kinetic analysis of the IS formation between CART19 and K562-CD19 cells using morphological and biochemical parameters (Figure 8). Specifically, we analyzed 27 sets of IS dynamic datasets measured over 300 s to 10 min at time intervals of 3 to 8 s to determine the kinetics of synapse area, membrane protein density, and intracellular protein density.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig8-v2.jpg)
+
+**Figure 8.:** (a) Representative snapshots of a video of CART19 cells responding to K562 (top row) and K562-CD19 (bottom row) cells. Purple: K562, Blue: CART19. 0 s: the initial contact point of the effector cell and target cells. White arrow: the blebbing point. (b) Temporal changes in the synapse areas of CART19 cells responding to K562 cells (n = 5) and K562-CD19 cells (n = 22). Black line: fitting curve with A(t)=Amaxt/(t + τ1/2), where Amax = 106.16 μm2 and τ1/2 = 39.63 seconds, Pearson correlation coefficient (ρ)=0.93. (c) Maximum en face projection of membrane protein density of IS (top row) and non-IS T surface (bottom row) for CART19/K562-CD19 conjugate. The direction of the en face projection and the projection plane: the green arrow and a dashed line in (a). (d) Temporal changes in the mean membrane protein density of CART19 immunological synapses (circles) and non-IS T surfaces (crosses) responding to K562-CD19 cells. (e) Maximum z-axis projection of intracellular protein density distributions of the CART19/K562-CD19 conjugate. The white contours: the boundaries of the CART19 mask. (f) Temporal changes in the displacements of the center-of-masses of CART19 and K562-CD19 cells from their initial locations. Black lines: Δd(t) = Δdmax t/(t + τ1/2), where Δdmax = 7.48 and 1.74 μm, τ1/2 = 37.84 and 14.56 s, ρ = 0.91 and 0.58 for CART19 and K562-CD19 respectively. (g) The average changes for 10 s in the early (0 s) and late (100 s) stages are marked by colored arrows, and statistically compared by two-tail paired Wilcoxon tests for CART19 and K562-CD19 cells, respectively. CART19: Δd/Δt10s = 818.5 ± 788.5 nm/s, and 26.6 ± 223.6 nm/s in the early and late stages. K562-CD19: Δd/Δt10s = 194.3 ± 246.5 nm/s, and 63.7 ± 125.6 nm/s in the early and late stages. *** indicates p<0.001. Each shaded error bar indicates the mean and standard deviation of line plots. Each boxplot indicates the median, upper, and lower quartiles of each population. The central points and shades in Figures 7b, d and f indicate the mean and standard deviations respectively. The numbers of analyzed cells per each experiment are listed in Table 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Red circles indicate spikes due to ill segmentation (5 spikes out of 1329 points; 0.38%).
+
+**Table 1.**
+ Numbers of analyzed cells per each experiment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Experiment</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="9"># of data</td>
+      <td>Statistics (Figure 5)</td>
+      <td>7</td>
+      <td>10</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>dynamics (Figure 7)</td>
+      <td>9</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>4-1BB (Figure 8)</td>
+      <td>20</td>
+      <td>19</td>
+      <td>25</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>CD28 (Figure 8)</td>
+      <td>1</td>
+      <td>11</td>
+      <td>10</td>
+      <td>9</td>
+      <td>23</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>Statistics (Figure 5—figure supplement 1)</td>
+      <td>8</td>
+      <td>22</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>10 kDa (Figure 6—figure supplement 2)</td>
+      <td>3</td>
+      <td>7</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>2000 kDa (Figure 6—figure supplement 2)</td>
+      <td>6</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>4-1BB (Figure 8—figure supplement 1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>CD28 (Figure 8—figure supplement 1)</td>
+      <td>2</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
 First, we examined the temporal changes of synapse areas depending on the expression of the target antigen, CD19, on K562 cells (Figure 8a). As expected, CART19 cells could not form a stable synapse with K562 cells (CD19-negative) in five independent experimental trials (Figure 8a, also see Figure 8—video 1). By contrast, CART19 cells formed a stable IS with K562-CD19 cells (CD19-positive), and induced apoptotic blebbing on the target cells about 9 min after the initial contact (Figure 8—video 2). For the statistical analysis of the initial IS area changes, DeepIS was applied to both dynamic datasets and successfully segmented CART19 cells, target cells, and IS boundaries. The individual temporal plots of IS showed that each data exhibited smooth IS increase and indicated no undulation problems due to ill segmentations in most cases (Figure 8—figure supplement 1). The temporal graphs of the mean synapse area showed that, whereas the IS for K562 cells was not stably formed for 300 s, the IS for K562-CD19 expanded to the half of the maximum synapse area (Amax = 106.16 μm2) within 40 s and reached a steady-state within only 3 min (Figure 8b).
 
@@ -99,11 +322,23 @@ We further explored the cell mechanics of CART19 and K562-CD19 cells during thei
 
 Overall, the results presented here generally recapitulate previously observed phenomena in the synapse studies based on conventional microscopy techniques. The rapid increase in the membrane protein density in the synapse area likely reflects the influx of large amounts of IS protein components, including CARs, actins, and other adhesion molecules (Xiong et al., 2018). In addition, perhaps the intracellular protein density changes in CART19 cells, which indicates polarization of the intracellular organelles in CART19 cells until stabilization, can be explained by the centrosome polarization of cytotoxic T lymphocytes (Ritter et al., 2015). Lastly, the force exerted by the CART19 cells on target cells during the IS formation suggests that CART19 cells also integrate mechanical potentiation during target cell killing similar to TCR-based cytotoxic T cells (Basu et al., 2016).
 
-## Statistical analysis of IS parameters depending on the co-stimulatory domains of CAR
+### Statistical analysis of IS parameters depending on the co-stimulatory domains of CAR
 
 Kymriah and Yescarta are the only two CD19-targeting CAR-T cell therapies that have been approved by US-FDA to date. Since one of the major differences between the two 2nd generation CAR-T cells lies in the sequence of the costimulatory signaling domain used (4-1BB for Kymriah and CD28 for Yescarta), we next thought to apply our method to compare the IS characteristics of the CAR-T cells with different costimulatory signaling domains. Primary human T cells transduced with the lentiviral vectors encoding CD19-28z or CD19-BBz CAR showed comparable transduction efficiency as well as similar surface expression levels of CARs as determined by flow cytometry (Figure 9—figure supplement 1).
 
 Exploiting our established method, we studied the effect of CD28 or 4-1BB co-stimulatory domains on CAR IS characteristics (see Materials and methods). We first observed the early IS dynamics between CD28 and 4-1BB based CAR-T cells in the presence of K562-CD19 target cells, and found the stable IS formation within five minutes without statistically significant kinetic differences (Figure 9—video 1, also see Figure 9—figure supplement 2). We then compared the statistics of other IS parameters between the CD19-28z and CD19-BBz CAR-T cells in a steady state. Specifically, we incubated each type of CAR-T cells with K562-CD19 cells for 15 min to allow sufficient time for stable IS formation, and fixed them with 4% paraformaldehyde solution. When we analyzed the images for conjugates (Figure 9a), we found no significant difference in IS areas between the two CAR-T cell types (Figure 9b). However, statistical analysis indicated significantly higher IS protein densities and total IS protein amounts for CD19-BBz CAR-T cells, approximately by 10% compared with CD19-28z CAR-T cells (Figure 9c–d). Collectively, our results indicate that the quantitative analysis of IS parameters using DeepIS, in conjunction with other analytical methods such as fluorescence-based microscopy and quantitative mass-spectrometry (Salter et al., 2018), may help to elucidate the mechanistic details underlying the functional differences observed for the CAR-T cells with different signaling domains (Lee and Kim, 2019; van der Stegen et al., 2015; Guedan et al., 2019).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig9-v2.jpg)
+
+**Figure 9.:** (a) Representative images for maximum z-axis projection of intracellular protein density distributions (top row) and en face projection of surface protein density distributions of IS (bottom row). White boundaries indicate the annotated membranes of CART19 cells using DeepIS. (b–d) Scatterplots of (b) synapse areas, (c) mean surface protein density, and (d) total IS protein amount. Each boxplot indicates the median, upper, and lower quartiles of each population. The vertical lines indicate population ranges. Perpendicular shades indicate normalized population density distributions. Two-tail unpaired Wilcoxon tests were performed. mean ± SD data are presented. The numbers of analyzed cells per each experiment are listed in Table 1.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (a) LNGFR and CAR expressions at four days after transduction. (b) hCD19 expression of K562-CD19 and K562 cells. (c) hCD19-G4S-Zgreen expression of K562 cells.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/49023/elife-49023-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** In both cases, IS was formed and stabilized within five minutes.
 
 ## Discussion
 
@@ -117,21 +352,459 @@ Our study focused on the platform capable of quantitatively tracking 3D IS dynam
 
 ## Materials and methods
 
-## Primer list
+**Key resources table**
 
-Primer nameSource or referenceIdentifiersAdditional information (5`>3`)LNGFR FThis paperPCR primersGGGGATCCCCCCATCAGTCCGCAAAGLNGFR R-P2AThis paperPCR primersAGGTCCAGGGTTCTCCTCCACGTCGCCAGCCTGCTTCAGCAGGCTGAAGTTAGTAGCTCCGCTTCCCCACCTCTTGAAGGCTATGTAGGP2A-CD19-BBz FThis paperPCR primersGGAAGCGGAGCTACTAACTTCAGCCTGCTGAAGCAGGCTGGCGACGTGGAGGAGAACCCTGGACCTGCCTTACCAGTGACCGCCTTGCTCCD19 BBz RThis paperPCR primersTGTCGACTTAGCGAGGGGGCAGGGCCTGCCD28/CD3 FThis paperPCR primersGTTATCACCCTTTACTGCAGGAGTAAGAGGAGCAGGCTCCD28/CD3 RThis paperPCR primersGTCGACTTAGCGAGGGGGCAGGGCD8Hinge/TM FThis paperPCR primersCAGTCACCGTCTCCTCAACCD8Hinge/TM RThis paperPCR primersGAGCCTGCTCCTCTTACTCCTGCAGTAAAGGGTGATAACCAGmCherry FThis paperPCR primersGTGAGCAAGGGCGAGGAGGATmCherry-Sal1 RThis paperPCR primersTTGTCGACCTACTTGTACAGCTCGTCCATGCCGCCGGG4S-mCherry FThis paperPCR primersGCTCCGGTGGTGGTGGTTCTGTGAGCAAGGGCGAGGAGGATAACCD19 BBz CAR FThis paperPCR primersCCGGGGATCCATGGCCTTACCAGTGACCGCD19 BBz CAR G4S RThis paperPCR primersAGAACCACCACCACCGGAGCCGCCGCCGCCAGAACCACCACCACCGCGAGGGGGCAGGGCCTGCATGTGAhCD19 FThis paperPCR primersGTTGGATCCATGCCACCTCCTCGCCTCCThCD19-G4S RThis paperPCR primersAGAACCACCACCACCGGAGCCGCCGCCGCCAGAACCACCACCACCCCTGGTGCTCCAGGTGCCCATG4S-Zsgreen FThis paperPCR primersGGTGGTGGTGGTTCTGGCGGCGGCGGCTCCGGTGGTGGTGGTTCTGCCACAACCATGGCCCAGTCCAAGCZsgreen RThis paperPCR primersGATTACGCGTATTGCTAGCTCAGGGCAAGGCGGAG
 
-## Cell lines and culture
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562</td>
+      <td>Other</td>
+      <td>RRID:CVCL_0004</td>
+      <td>Obtained from Dr. Travis S. Young at California Institute for Biomedical research. The original stock was purchased from ATCC</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562-CD19</td>
+      <td>Other</td>
+      <td></td>
+      <td>Obtained from Dr. Travis S. Young at California Institute for Biomedical research. CD19-negative K562 cells were transduced wtih lentiviral vector encoding human CD19.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Lenti-X 293T</td>
+      <td>Takara</td>
+      <td>Cat. #: 632180</td>
+      <td>Lentivirus production</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV-ΔLNGFR-P2A-CD19-BBz CAR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–28 hLNGFR (Uniprot TNR16_Human) Extracellular domain: aa 29–250 hLNGFR (Uniprot TNR16_Human) Transmembrane domain: aa 251–272 hLNGFR (Uniprot TNR16_Human) Cytosolic sequence: aa 273–275 (Uniprot TNR16_Human) ΔLNGFR was fused with P2A sequence (GGAAGCGGAGCTACTAACTTCAGCCTGCTGAAGCAGGCTGGCGACGTGGAGGAGAACCCTGGACCT) and followed by CAR sequence Signal peptide: aa 2–21 hCD8 (Uniprot CD8A_Human) Extracellular domain: anti-CD19 scFv (Clone: FMC 63); VL –G4S linker VH Hinge/Transmembrane domain aa 138–206 hCD8 (Uniprot CD8A_Human) Co-stimulatory domain sequence: aa 214–255 (Uniprot TNR9_Human) Signaling domain: aa 52–164 (Uniprot CD3Z_Human)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV- ΔLNGFR -P2A-CD19-28z CAR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–28 (Uniprot TNR16_Human) Extracellular domain: aa 29–250 (Uniprot TNR16_Human) Transmembrane domain: aa 251–272 (Uniprot TNR16_Human) Cytosolic sequence: aa 273–275 (Uniprot TNR16_Human) ΔLNGFR was fused with P2A sequence (GGAAGCGGAGCTACTAACTTCAGCCTGCTGAAGCAGGCTGGCGACGTGGAGGAGAACCCTGGACCT) and followed by CAR sequence Signal peptide: aa 2–21 hCD8 (Uniprot CD8A_Human) Extracellular domain: anti-CD19 scFv (Clone: FMC 63); VL-G4S linker-VH Hinge/Transmembrane domain: aa 138–206 (Uniprot CD8A_Human) Co-stimulatory domain sequence: aa 180–220 (Uniprot CD28_Human) Signaling domain: aa 52–164 (Uniprot CD3Z_Human)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV-CD19-BBz CAR-G4S-mcherry</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–21 (Uniprot CD8A_Human) Extracellular domain: anti-CD19 scFv (Clone: FMC 63) VL –G4S linker VH Hinge/Transmembrane domain: aa 138–206 (Uniprot CD8A_Human) Co-stimulatory domain sequence: aa 214–255 (Uniprot TNR9_Human) Signaling domain: aa 52–164 (Uniprot CD3Z_Human) CAR and mcherry was fused with G4S linker mCherry: aa 2–236 (Uniprot X5DSL3_ANAMA)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV-hCD19-G4S-Zsgreen</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–19 (Uniprot CD19_Human) Extracellular domain: aa 20–291 (Uniprot CD19_Human) Cytoplasmic domain: aa314-556 (Uniprot CD19_Human) CD19 and Zsgreen was fused with G4S linker Zsgreen: aa 2–231 (Uniprot GFPL1_ZOASP)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMDLg/pRRE</td>
+      <td>other</td>
+      <td>RRID:Addgene12251</td>
+      <td>3rd Lentivirus packaging vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRSV-Rev</td>
+      <td>other</td>
+      <td>RRID:Addgene12253</td>
+      <td>3rd Lentivirus packaging vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>other</td>
+      <td>RRID:Addgene12259</td>
+      <td>Lentivirus envelop vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMACS LNGFR</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat. #:130-091-890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide,recombinant protein</td>
+      <td>rhIL-2</td>
+      <td>BMI KOREA</td>
+      <td></td>
+      <td>300IU/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide,recombinant protein</td>
+      <td>rhCD19-Fc</td>
+      <td>ACRO Biosystems</td>
+      <td>Cat. #: CD9-H5259</td>
+      <td>FACS</td>
+    </tr>
+    <tr>
+      <td>Peptide,recombinant protein</td>
+      <td>AF647-conjugated streptavidin</td>
+      <td>Biolegend</td>
+      <td>Cat. #: 405237</td>
+      <td>FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>InVivoMab anti-human CD3</td>
+      <td>Bio X cell</td>
+      <td>Cat. #: BE0001-2-5MG</td>
+      <td>OKT3 clone 4 μg/mL coated</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>InVivoMab anti-human CD28</td>
+      <td>Bio X cell</td>
+      <td>Cat. #: BE0291-5MG</td>
+      <td>CD28.2 clone 2 μg/mL soluble</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>hLNGFR-APC antibody</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat. #: 130-113-418</td>
+      <td>FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>hCD19-APC antibody</td>
+      <td>Biolegend</td>
+      <td>Cat. #: 302212</td>
+      <td>FACS</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DPBS</td>
+      <td>Welgene</td>
+      <td>Cat. #: LB001-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal Bovine Serum (FBS)</td>
+      <td>Gibco</td>
+      <td>Cat. #: 26140–079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM</td>
+      <td>Gibco</td>
+      <td>Cat. #: 11965–118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RPMI</td>
+      <td>Gibco</td>
+      <td>Cat. #: 21870–092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HBSS with Ca2+ and Mg2+</td>
+      <td>Gibco</td>
+      <td>Cat #: 14-025-092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HEPES</td>
+      <td>Gibco</td>
+      <td>Cat. #: 1530080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2-Mercaptoethanol</td>
+      <td>Sigma</td>
+      <td>Cat. #: M6250-100mL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine 2000</td>
+      <td>ThermoFisher</td>
+      <td>Cat. #: 11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glutamax</td>
+      <td>Gibco</td>
+      <td>Cat. #: 35050–061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protamine Sulfate</td>
+      <td>Sigma</td>
+      <td>Cat. #: P3369</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MEM Non-essential amino acid</td>
+      <td>Gibco</td>
+      <td>Cat. #: 111400500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sodium pyruvate</td>
+      <td>ThermoFisher</td>
+      <td>Cat. #: 11360070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>penicillin/streptomycin</td>
+      <td>Gibco</td>
+      <td>Cat. #: 15140–122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tomodish</td>
+      <td>Tomocube</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Paraformaldehyde Solution, 4% in PBS</td>
+      <td>ThermoFisher</td>
+      <td>Cat. #: AAJ19943K2</td>
+      <td>Fixation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellBrite Fix 640 Membrane Dye</td>
+      <td>Biotium</td>
+      <td>Cat. #: 30089</td>
+      <td>Plasma membrane staining</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>VECTASHIELD Hardset w/DAPI</td>
+      <td>VECTOR Laboratory</td>
+      <td>Cat. #: H-1400</td>
+      <td>Mounting Medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LysoTracker Deep Red</td>
+      <td>ThermoFisher</td>
+      <td>Cat #: L12492</td>
+      <td>Dye for labeling and tracking lytic granules</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TetraSpeck Microspheres,0.1 µm, fluorescent blue/green/orange/dark red</td>
+      <td>ThermoFisher</td>
+      <td>Cat #: T7279</td>
+      <td>Fiducial markers</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FITC-dextran 10 kDa</td>
+      <td>TdB Labs</td>
+      <td>Cat #: 20682</td>
+      <td>Fluorescein-labeled dextran, 10 kDa</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FITC-dextran 2000 kDa</td>
+      <td>TdB Labs</td>
+      <td>Cat #: 20584</td>
+      <td>Fluorescein-labeled dextran, 2000 kDa</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CD271 Microbeads kits, Human</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat. #: 130-099-023</td>
+      <td>Isolation of CAR+ T cells</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SepMate PBMC Isolation tube</td>
+      <td>STEMCELL</td>
+      <td>86460</td>
+      <td>PBMC Isolation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowjo</td>
+      <td>Flowjo</td>
+      <td>Version 10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>Version 7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Primer list
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information (5`&gt;3`)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LNGFR F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGATCCCCCCATCAGTCCGCAAAG</td>
+    </tr>
+    <tr>
+      <td>LNGFR R-P2A</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGGTCCAGGGTTCTCCTCCACGTCGCCAGCCTGCTTCAGCAGGCTGAAGTTAGTAGCTCCGCTTCCCCACCTCTTGAAGGCTATGTAGG</td>
+    </tr>
+    <tr>
+      <td>P2A-CD19-BBz F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGAAGCGGAGCTACTAACTTCAGCCTGCTGAAGCAGGCTGGCGACGTGGAGGAGAACCCTGGACCTGCCTTACCAGTGACCGCCTTGCTC</td>
+    </tr>
+    <tr>
+      <td>CD19 BBz R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGTCGACTTAGCGAGGGGGCAGGGCCTGC</td>
+    </tr>
+    <tr>
+      <td>CD28/CD3 F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTTATCACCCTTTACTGCAGGAGTAAGAGGAGCAGGCTC</td>
+    </tr>
+    <tr>
+      <td>CD28/CD3 R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTCGACTTAGCGAGGGGGCAGGG</td>
+    </tr>
+    <tr>
+      <td>CD8Hinge/TM F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGTCACCGTCTCCTCAAC</td>
+    </tr>
+    <tr>
+      <td>CD8Hinge/TM R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAGCCTGCTCCTCTTACTCCTGCAGTAAAGGGTGATAACCAG</td>
+    </tr>
+    <tr>
+      <td>mCherry F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTGAGCAAGGGCGAGGAGGAT</td>
+    </tr>
+    <tr>
+      <td>mCherry-Sal1 R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTGTCGACCTACTTGTACAGCTCGTCCATGCCGCCGG</td>
+    </tr>
+    <tr>
+      <td>G4S-mCherry F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCTCCGGTGGTGGTGGTTCTGTGAGCAAGGGCGAGGAGGATAAC</td>
+    </tr>
+    <tr>
+      <td>CD19 BBz CAR F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCGGGGATCCATGGCCTTACCAGTGACCG</td>
+    </tr>
+    <tr>
+      <td>CD19 BBz CAR G4S R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGAACCACCACCACCGGAGCCGCCGCCGCCAGAACCACCACCACCGCGAGGGGGCAGGGCCTGCATGTGA</td>
+    </tr>
+    <tr>
+      <td>hCD19 F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTTGGATCCATGCCACCTCCTCGCCTCCT</td>
+    </tr>
+    <tr>
+      <td>hCD19-G4S R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGAACCACCACCACCGGAGCCGCCGCCGCCAGAACCACCACCACCCCTGGTGCTCCAGGTGCCCAT</td>
+    </tr>
+    <tr>
+      <td>G4S-Zsgreen F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGTGGTGGTGGTTCTGGCGGCGGCGGCTCCGGTGGTGGTGGTTCTGCCACAACCATGGCCCAGTCCAAGC</td>
+    </tr>
+    <tr>
+      <td>Zsgreen R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GATTACGCGTATTGCTAGCTCAGGGCAAGGCGGAG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and culture
 
 K562 cells and CD19-positive K562 cells (K562-CD19; target cells) were kindly provided by Travis S. Young (California Institute for Biomedical Research). The original stock of K562 cells was purchased from American Type Culture Collection (ATCC). K562-CD19 cells were generated by transducing K562 cells (CD19-negative) with a lentivirus encoding human CD19. The cells were cultured in RPMI-1640 medium supplemented with 10% heat-inactivated fetal bovine serum (FBS), 2 mM L-glutamine, and 1% penicillin/streptomycin in a humidified incubator with a 5% CO2 atmosphere at 37°C. The Lenti-X 293 T cell line was purchased from Takara Bio (Japan). The cells were maintained in Dulbecco’s modified Eagle medium supplemented with 10% heat-inactivated FBS, 2 mM L-glutamine, 0.1 mM non-essential amino acids, 1 mM sodium pyruvate, and 1% penicillin/streptomycin. We authenticated the identity of K562 and K562-CD19 cell lines using STR profiling, offered by Korean Cell Line Bank (KCIB). We also confirmed that K562 cell line are free from mycoplasma, which was performed by Korea Research Institute of Bioscience and Biotechnology (KRIBB). We attached the document for authentication (Supplementary file 1).
 
-## Plasmid construction
+### Plasmid construction
 
 CD19-specific chimeric antigen receptor (CD19-BBz CAR) was synthesized. The construct is composed of anti-CD19 scFv (FMC63) connected to a CD8α spacer domain and CD8α transmembrane domain, 4-1BB (CD137) co-stimulatory domains, and the CD3ζ signaling domain (Rodgers et al., 2016). The cytoplasmic domain comprised of a truncated CD271 (ΔLNGFR) gene for the isolation of T cells expressing CAR was amplified from pMACS-ΔLNGFR (Miltenyi Biotec, Germany) and overlapped with the P2A oligonucleotide. The ΔLNGFR-P2A gene was overlapped with the CD19-BBz CAR gene and then inserted into the BamHI and SalI sites of pLV vectors to generate pLV- ΔLNGFR-P2A-CD19-BBz CAR. For the generation of CD19-CAR containing CD28 co-stimulatory domain (CD19-28z CAR), synthesized hCD28/CD3ζ fusion gene was overlapped with amplified CD8α spacer domain and CD8α transmembrane domain-containing PCR product. The final PCR product was then digested with SgrA1 and Sal1 and ligated into SgrA1 and Sal1-digested pLV- ΔLNGFR-P2A-CD19-BBz CAR vector.
 
 To define the IS between CD19 expressing (K562-CD19) cells and CD19-specific CAR-T (CART19; effector) cells, we generated a mCherry-tagged CD19 BBz CAR and Zsgreen-tagged hCD19. The mCherry gene was amplified from pLV-EF1a-MCS-IRES-RFP-Puro (Biosettia, USA) and overlapped with synthetic oligonucleotides of a G4S linker. The CD19 BBz CAR gene was amplified with specific primer sets. The G4S-mcherry PCR product was overlapped with CD19 BBz CAR PCR product. The final PCR product was digested with BamH1 and Sal1 and then inserted into BamH1 and Sal1 digested pLV to generate pLV-CD19 BBz CAR-G4S mCherry. For the generation of Zsgreen-tagged hCD19 expressing vector, The Zsgreen gene was overlapped with synthetic oligonucleotides of a G4S linker. The G4S-Zsgreen PCR product was overlapped with a synthesized hCD19 (MN_001770.5) gene and inserted into the BamHI and MluI sites of pLV vectors to generate pLV- hCD19-G4S linker-Zsgreen.
 
-## Generation of CAR-transduced human T cells
+### Generation of CAR-transduced human T cells
 
 To generate a recombinant lentivirus supernatant, 6 × 105 Lenti-X 293 T cells were cultured in wells of a six-well plate for 24 hr and then transfected with the lentivirus packaging vectors (pMDL, pRev, pMDG.1) and the pLV vectors encoding ΔLNGFR-P2A-CD19-BBz CAR, ΔLNGFR-P2A-CD19-28z CAR, or mCherry-tagged CD19-BBz CAR using 10 μL of Lipofectamine2000 (Thermo Fisher Scientific, USA). Two days after transfection, the lentivirus containing supernatant was collected and stored at −80°C until used.
 
@@ -141,50 +814,50 @@ Two days after stimulation, the activated T cells were mixed with the lentivirus
 
 The percentage of CAR and ΔLNGFR-positive T cells was assessed by biotin-conjugated rhCD19-Fc (Cat # CD9-H5259, ACRO Biosystems, USA) with AF647-conjugated streptavidin (Cat # 405237, Biolegend, USA), and fluorescein isothiocyanate (FITC)-conjugated LNGFR antibody (Cat# 130-112-605, Miltenyi Biotec, Germany).
 
-## Isolation of CAR-transduced T cells
+### Isolation of CAR-transduced T cells
 
 CAR- and ΔLNGFR-positive T cells were isolated using the human CD271 MicroBead kit (Cat# 130-099-023, Miltenyi Biotec) following the manufacturer's instructions. Sorted CART19 cells were expanded for six days with RPMI-1640 medium supplemented with 10% heat-inactivated FBS, 2 mM L-glutamine, 0.1 mM non-essential amino acids, 1 mM sodium pyruvate, and 55 μM β–mercaptoethanol in the presence of recombinant human rhIL-2 (300 IU/mL).
 
-## Lentiviral engineering of Zsgreen-tagged hCD19 expressing cell lines
+### Lentiviral engineering of Zsgreen-tagged hCD19 expressing cell lines
 
 K562-CD19 cell lines stably expressing Zsgreen were generated by lentiviral transduction with supernatant containing the Zsgreen. hCD19-G4S-linker-Zsgreen overexpressing K562 (K562-CD19-G4S-Zsgreen) cell lines were produced by lentiviral transduction with supernatant containing the hCD19-G4S-linker-Zsgreen. Two days after transduction, transduced cells were stained using hCD19 specific antibody (Biolegend, Clone HIB19) and analyzed with flow cytometry. We confirmed that the percentage of CD19+Zsgreen+ cells was nearly 98%. (Figure 8—figure supplement 1).
 
-## Sample preparation for imaging
+### Sample preparation for imaging
 
 The effector or target cells were diluted at 600 cells/μL, respectively. We used a petri dish compatible with our experimental setup (TomoDish, Tomocube Inc, Republic of Korea). 12 μL of each diluted cell was seeded on TomoDish, gently mixed, and covered with a square cover-slip glass (22 × 22 mm2, No. 1.5H, Deckglaser Inc). The side of the dish was sealed by 10 μL of mineral oil (M-8410, Sigma), which prevented introduction of exterior contaminants and drying of the medium.
 
-## Membrane staining
+### Membrane staining
 
 To image cell membranes using fluorescence microscopy, effector and target cells were respectively stained with 1X CellBrite Fix 640 Membrane Dye (Biotium) for 15 min at 37℃, twice washed with DPBS, and then suspended using RPMI medium. 2 × 105 cells of each effector and target were seeded on a Tomodish and incubated for 15 min at 37℃. Then the medium was replaced with 4% paraformaldehyde (PFA) solution to fix them. After 10 min, 4% PFA was removed and twice washed with DPBS. For membrane staining, the cells were mounted with 25 μL VECTASHIELD Antifade mounting medium with DAPI (VECTOR laboratory, H-1200).
 
-## Dextran solution
+### Dextran solution
 
 To image the synaptic cleft, we used FITC-labeled dextran of molecular weights 10 and 2000 kDa (TdB Labs), whose reported hydrodynamic diameters were 4 and 54 nm, respectively. We diluted the dextran in PBS and the final concentration was 50 μM for the 4 nm dextran and 2.5 μM for the 54 nm dextran.
 
-## Lysotracker staining
+### Lysotracker staining
 
 To image the lytic granules of CART19 cells using fluorescence microscopy, CART19 cells were stained with 75 nM Lysotracker Deep Red (Thermofisher) solution in 1X Hanks’ Balanced Salt solution (HBSS; Thermofisher) containing Ca2+ and Mg2+ ions for 50 min at 37℃, washed with HBSS, and then suspended using complete T cell medium. Similar to the imaging protocol for membrane-stained cells, the stained CART19 cells were mixed with K562-CD19 cells on a Tomodish. To image the transport dynamics of the lytic granules using widefield deconvolution microscopy, the mixed cells were imaged in live states. To image the CAR IS using 3D-SIM, the mixed cells were incubated for 15 min at 37℃, and chemically fixed by replacing the medium with 4% paraformaldehyde (PFA). After 10 min, 4% PFA was removed, washed and replaced with complete T cell medium.
 
-## Correlative fluorescence microscopy
+### Correlative fluorescence microscopy
 
 To evaluate the segmentation performance quantitatively, the evaluation data were prepared using a custom-built setup for correlative imaging between wide-field fluorescence microscopy and ODT (Kim et al., 2017). CART19 (mCherry) and K562-CD19 (Zsgreen) cells, and their plasma membranes were imaged in different fluorescence channels, respectively. To excite mCherry and GFP proteins and the plasma membrane of the prepared cells, blue (wavelength = 488 nm, Cobolt, 06-MLD), green (wavelength = 561 nm, CNI Laser, MLL-FN-561), and red (wavelength = 639 nm, CNI Laser, MLL-FN-639) DPSS lasers were illuminated in wide-field epi-fluorescence geometry. 3D fluorescence image stacks were obtained by scanning the objective lens with an axial spacing of 300 nm and imaged with an sCMOS camera (Neo 5.5 sCMOS, Andor Technology). The obtained fluorescence images were deconvolved using the blind Lucy algorithm (a deconvblind function in MATLAB) for ten maximal iterations with theoretical 3D point spread functions as initial estimates. The deconvoled fluorescence images were registered with RI tomograms, and the ground-truth labels of the CART19 and K562-CD19 cells were derived from expert biologists who manually thresholded, delineated, and smoothed the cell volume by means of the overlapped RI and fluorescence images.
 
-## 3D confocal fluorescence microscopy
+### 3D confocal fluorescence microscopy
 
 To resolve the details of the membrane topology of the IS between mCherry-tagged CD19-CAR-expressing T cells and Zsgreen-tagged CD19 expressing K562 cells, 3D confocal fluorescence microscopy was performed. The membrane topology of IS was analyzed with a commercial confocal microscope (Nikon Eclipse Ti) and a high-NA objective lens (Nikon Apo 60×, 1.4 NA) to obtain a high-resolution, multicolor, 3D fluorescence image.
 
-## Complementary 3D-SIM and ODT
+### Complementary 3D-SIM and ODT
 
 For complementary imaging of ODT with high-resolution fluorescence microscopy, 3D-SIM was integrated in a custom-built setup based on a digital micromirror device (Figure 6—figure supplement 1; Shin et al., 2018). A polarizing beam splitter separated scanning plane waves for ODT and structured illumination patterns for 3D-SIM into the transmitted and epi-illumination mode, respectively. A dichroic mirror combined the ODT and 3D-SIM signals, and a 10:90 beam splitter divided the merged signals to an ODT camera (MQ042MG-CM, Ximea) and a 3D-SIM camera (Panda 4.2, PCO) respectively. The raw 3D-SIM image stacks were acquired with five pattern phases spaced by 2π/5, three pattern orientations spaced 60° apart, and axial translation of an objective lens equipped with a piezoelectric Z stage (P-721.CDQ, Physik Instrumente), at the interval of 45–50 nm for 100-nm-diameter Tetraspeck beads (ThermoFisher) and 180 nm for CART19/K562-CD19 conjugates respectively. The 3D-SIM images were then reconstructed using the custom MATLAB codes based on Wiener deconvolution and Richardson-Lucy deconvolution for the beads and the cells, respectively (Brown et al., 2011; Müller et al., 2016).
 
-## Design of DCNN architecture
+### Design of DCNN architecture
 
 The DCNN architecture was designed on the basis of UNet architecture, which features excellent performance for various biomedical volumetric segmentation tasks such as multi-cell (Ronneberger et al., 2015), organ (Roth, 2017), and tumor segmentation tasks (Dong et al., 2017). Our model employed five contracting and expanding layers comprising 32, 64, 128, 256, and 512 filters, respectively. To improve the segmentation performance, several modifications of the architecture were added while maintaining the overall U-shaped feature map flow line. First, we employed a series of ResNet blocks from ResNet (He et al., 2016) in the contracting paths for extracting the feature more robustly. Also, to increase the receptive field, we employed the feature skip connection that passes through the global convolutional network layer (Peng et al., 2017) with k = 13, 13, 9, 7, and 5, respectively. The overall schematic figure of DCNN architecture is shown in Figure 2—figure supplement 3. Our network was implemented in Python using the PyTorch package (http://pytorch.org), and the processing steps were performed in MATLAB (MathWorks, Inc).
 
-## Statistical analysis
+### Statistical analysis
 
 MATLAB was used in order to compare the sample means by two-tail paired Wilcoxon tests in Figure 8g and two-tail unpaired Wilcoxon tests in Figure 9, Figure 2—figure supplement 2b, and Figure 6—figure supplement 2c respectively. All of the numbers following the ± sign in the text are standard deviations.
 
-## Major datasets and codes
+### Major datasets and codes
 
 We have provided pre-processing and post-processing codes, and training and untrained datasets used in Figure 3—video 1 (https://osf.io/9w32p/). Also, the DeepIS code and the processing codes are available through a GNU General Public License at https://github.com/JinyeopSong/2020__DeepIS (Song and Lee, 2020).

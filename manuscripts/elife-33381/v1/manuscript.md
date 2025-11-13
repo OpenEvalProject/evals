@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.33381.001 In vivo , the primary molecular mechanotransductive events mechanically initiating cell differentiation remain unknown. Here we find the molecular stretching of the highly conserved Y654-β-catenin-D665-E-cadherin binding site as mechanically induced by tissue strain. It triggers the increase of accessibility of the Y654 site, target of the Src42A kinase phosphorylation leading to irreversible unbinding. Molecular dynamics simulations of the β-catenin/E-cadherin complex under a force mimicking a 6 pN physiological mechanical strain predict a local 45% stretching between the two α-helices linked by the site and a 15% increase in accessibility of the phosphorylation site. Both are quantitatively observed using FRET lifetime imaging and non-phospho Y654 specific antibody labelling, in response to the mechanical strains developed by endogenous and magnetically mimicked early mesoderm invagination of gastrulating Drosophila embryos. This is followed by the predicted release of 16% of β-catenin from junctions, observed in FRAP, which initiates the mechanical activation of the β-catenin pathway process.
+In vivo, the primary molecular mechanotransductive events mechanically initiating cell differentiation remain unknown. Here we find the molecular stretching of the highly conserved Y654-β-catenin-D665-E-cadherin binding site as mechanically induced by tissue strain. It triggers the increase of accessibility of the Y654 site, target of the Src42A kinase phosphorylation leading to irreversible unbinding. Molecular dynamics simulations of the β-catenin/E-cadherin complex under a force mimicking a 6 pN physiological mechanical strain predict a local 45% stretching between the two α-helices linked by the site and a 15% increase in accessibility of the phosphorylation site. Both are quantitatively observed using FRET lifetime imaging and non-phospho Y654 specific antibody labelling, in response to the mechanical strains developed by endogenous and magnetically mimicked early mesoderm invagination of gastrulating Drosophila embryos. This is followed by the predicted release of 16% of β-catenin from junctions, observed in FRAP, which initiates the mechanical activation of the β-catenin pathway process.
 
 ## Introduction
 
@@ -39,6 +39,22 @@ Here we identified the primary mechanotransductive molecular process and the mec
 
 β-cat is highly conserved across metazoan, with a central armadillo repeat domain consisting of twelve repeats (Figure 1a). These repeats form a spring like superhelix featuring a long, positively charged groove that interacts with several key residues of the cytoplasmic tail of E-cad (Figure 1—figure supplement 1a) (Huber and Weis, 2001; Orsulic and Peifer, 1996). The strength of interaction is dynamically modulated, mostly by the phosphorylation of β-cat on tyrosine Y654 (Figure 1—figure supplement 1b,c in red), reducing the affinity of E-cad to β-cat by approximately 86% (Roura et al., 1999; van Veelen et al., 2011). In mammalian cells, phosphorylation of β-cat Y654 has been shown to involve SFK (Roura et al., 1999). In Drosophila, the Y667 site of the β-cat homologue Armadillo shows sequence similarity to the conserved Src-phosphorylation site at Y654 in mouse (Brunet et al., 2013; Roura et al., 1999; van Veelen et al., 2011) (Figure 1—figure supplement 1d). Its Drosophila E-cad D1170 interacting site similarly shows sequence conservation with the D665 mice site (Figure 1—figure supplement 1e) (Huber and Weis, 2001).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33381/elife-33381-fig1-v1.jpg)
+
+**Figure 1.:** (a) Stretching of the apical junctional β-cat/E-cad complex in response to an external force applied from the outside of the cell by constricting apexes of neighbouring cells. (b) Zoom on the local stretching between HII-E-cad and H3−β-cat helices, linked by the Y654-β-cat-D665-E-cad interacting site, leading to its opening. (c) Quantification of the HII-E-cad-HII-E-cad local stretching mean distance between A648-E-cad and C-β-cat under a force F equivalent to 6 pN strain compared to control. (d) Quantification of the mean distance between Y654-β-cat and D665-E-cad (distance between the OH of the Y654 phenol and the carbon of COO- of the D665 aspartate). Controls (F = 0 pN): N = 10. Strained: N = 20. Statistical test: Mann-Whitney.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33381/elife-33381-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Overall structure of the mouse E-cad cytoplasmic tail in complex with mouse ß-cat as a ribbon diagram. Cylinders represent α-helices and the arm repeat region of ß-cat is shown in grey (H1, H2 and intervening loops) and blue (H3). The regions of E-cad are shown in magenta (I), green (II), yellow (III), red (IV), and brown (V). The N- and C- terminus of each protein is marked. Structure based on reference (Huber and Weis, 2001). (b) ß-cat in complex with Region II of E-cad showing the interaction of ß-cat Y654 with E-cad D665, in mice. Arm repeats in ß-cat are marked with R. Residues of ß-cat are labelled in bold italics, and residues of E-cad in plain text. Oxygen, nitrogen, and sulphur are shown in red, blue and green spheres, respectively. Individual side chains of ß-cat are shown in purple (H3) or grey (others). Only those residues are shown that form direct contacts between the two proteins. E-cad is shown with yellow bonds while hydrogen bonds and salt bridges are shown as thin pink lines. (c) Model of the Drosophila ß-cat protein (Armadillo) shown as a white ribbon diagram (Model structure was build using the SwissModel program) in complex with the c-terminal part of DE-cad. The Drosophila Armadillo Y667 residue that corresponds to the mouse Y654 residue is shown in red. The Armadillo loops between alpha-helices H2 and H3 of Arm repeat 12 and between alpha-helices H2 and H3 of Arm repeat 11 are coloured in light blue. DE-cad is shown in the different colours corresponding to its different interaction regions (here only region I, II and III). The sequence of region II used as immunogen is coloured in bright orange.. The lower panel is the same view but turned by 900. (d) Sequence alignment of the 12th Arm repeat of the ß-cat protein of different model species is shown with the Src phosphorylation site of a specific Tyrosine is boxed in red. (e) Sequence alignment of the cytoplasmic tail of E-cad of Mus musculus (Mm), and Drosophila melanogaster (Dm) with corresponding UniProt identifiers are given. Colours encode chemical properties of amino acids, following ClustalX 2.1 conventions. The lines on top indicate the different regions of interaction with ß-cat (shown in c) with the boxes indication alpha-helices. The interaction site with the key residue D665 for the interaction with tyrosine Y654 in the ß-cat protein is indicated (red box).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/33381/elife-33381-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Global stretching of the β-cat/E-cad complex in response to an external force applied to the A648-Ecad site of the HII-E-cad (leading to an extension corresponding to a force F equivalent to 6 pN), compared to the F = 0 pN control. (b) End to end A648-E-cad-Y142- ß-cat distance, (c) A648-E-cad - ß-cat-C-terminus and d) Y654-ß-cat-D665-E-cad distances, in response to the application of the F = 150 pN force in 30ns (equivalent to a F = 6 pN experimental force at 12.5 ns, see text) force (N = 20) on the A648-E-cad site of the ß-cat/E cad complex, compared to F = 0 pN control (N = 10).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/33381/elife-33381-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Sequence alignment of the cytoplasmic tail of E-cad of different model species. The lines on top indicate the five different regions of interaction with ß-cat (shown in B) with the boxes indication α-helices. The key residues of the Y654-β-cat-D665-E-cad interacting site are boxed in red. Colours reflect chemical properties of amino acids, following ClustalX 2.1 conventions. Asterix, colons and periods indicate single, fully conserved residues or groups of residues with strongly or weakly similar properties, respectively. Gray bars denote the ClustalX conservation scores for each column of amino acids, ranging between 100 (fully conserved) to 0 (not at all conserved). Protein sequences and corresponding UniProt identifiers are given for Mus musculus (Mm), Homo sapiens (Hs), Xenopus laevis (Xl), Branchiostoma oridae (Bf), Drosophila melanogaster (Dm), Cernohapditis elegans (Ce), Nematostella vectensis (Nv), Hydra vulgaris (Hv), Oscarella carmela (Os), Amphimedon queesnlandica (Aq) are shown. (b) Sequence alignment of the 12th Arm repeat of the ß-cat protein of different model species is shown with the Src phosphorylation site of a specific Tyrosine is boxed in orange. Colours, symbols and bars as in (a), # denotes self-annotation of the ß-cat protein (combining the sequences XP_001647517.1 and XP_001647518.1). (c) Schematic Phylogenetic tree indicating the phylogenic relationship of the metazoans used for sequence comparison.
+
 To test the hypothesis of a mechanical opening of the Y654-β-cat/E-cad-D665 site as the primary mechantransductive molecular event initiating the mechanical activation of the β-cat pathway, and gain insight at the molecular level, we performed molecular dynamics (MD) simulations of the β-cat-E-cad complex submitted to a stretching uniaxial force (Huang and MacKerell, 2013; Phillips et al., 2005).
 
 The force is applied on E-Cad by both the cell’s and the neighbouring cell’s apical constrictions that drive Drosophila embryos mesoderm invagination (Sweeton et al., 1991). It thus acts perpendicular to the plasma membrane directed to the outside, with β-cat fixed at its Y142 interacting site with α-catenin which is connected to the Actin cytoskeleton (Xu and Kimelman, 2007) (Figure 1a). Note that the timescales of conventional MD simulations are currently limited to the hundreds of nanoseconds to the microsecond. To observe protein unfolding, or conformational changes in response to mechanical force on such a reduced timescale, it is therefore common to use forces that are higher than experimental ones. Due to this high force, the same events that biologically occur on a timescale that is not accessible by the MD simulations are sped up and hence become amenable to molecular simulations.
@@ -47,9 +63,949 @@ Here, we generated 20 independent simulations for a total simulation time of 30 
 
 After a global extension of 8 nm of the overall complex, a local and fine stretching deformation is observed between the A648 site of the α-helix HII-E-cad and the C-terminus of the α-helix H3-β-cat, which are linked by the Y654-β-cat-D665-E-cad (Y654-D665) interacting site, of 1.25 ± 0.6 nm (45% strain). This change led, at 6 nm of extension mimicking an actual strain of 6 pN, to a discrete opening of the Y654-D665 interacting site of 0.42 ± 0.08 nm in 3 simulations out of 20, namely in 15% of cases (Figure 1b,c,d, Videos 1 and 2 and Figure 1—figure supplement 2a,b,c,d, respectively; See Figure 1c,d and Figure 1—source data 1).
 
+![Video 1.](https://cdn.elifesciences.org/articles/33381/elife-33381-video1.mp4.jpg)
+
+**Video 1.:** Example of one MD simulation of the β-cat/E-cad complex with no external force applied (30 ns).
+
+![Video 2.](https://cdn.elifesciences.org/articles/33381/elife-33381-video2.mp4.jpg)
+
+**Video 2.:** Example of one MD simulation of the β-cat/E-cad complex with a force equivalent to an actual 6 pN external strain applied at the A648 site of the E-cad in the direction of the plasma membrane in 30 ns.
+
 We then tested in vivo the prediction of the existence of a strain deformation in the β-cat-E-cad complex of 1.25 nm between the A648-E-cad and the β-cat-C-terminus, due to mesoderm invagination in Drosophila embryos. In this case, mechanical induction of the Y654-β-cat phosphorylation by mesoderm invagination is specifically required for mesoderm specification (Brunet et al., 2013). To do so, we carried out fluorescence lifetime imaging experiments (FLIM) to measure fluorescence resonance energy transfer (FRET) efficiency between the loop domain of E-cad region II directly linked to A648 and β-cat-C-terminus. For the purpose of introducing fluorescent groups, we used embryos that express a version of β-cat tagged with GFP as a donor at the C-terminus. The acceptor is an injected antibody (JCAb20) fluorescently labelled with Alexa555 and specifically designed against the linear domain of region II in the E-cadherin protein, which is directly linked to A648-E-cad (acceptor) (Huber and Weis, 2001) (Figure 1—figure supplement 1, Figure 2a and Figure 2—figure supplement 1. Schematized in Figure 2a, the two fluorochromes are linked to the two green spheres of Figure 1 simulation, see Materials and methods).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/33381/elife-33381-fig2-v1.jpg)
+
+**Figure 2.:** (a) Illustration of FRET experiments performed at two different stages of development when the strain in the tissue builds up. Embryos expressing β-cat-GFP (donor) are injected with anti-E-cad antibodies directly labelled with Alexa555 (acceptor) for FRET experiments. FRET experiments are performed by analysing the lifetime of the donor. Images showing the lifetime of GFP donor: the FRET efficiency will decrease when the two sites that are attached to the fluorophore, become more separated by increased strain in the molecule. Structure based on reference (Huber and Weis, 2001). (b) Invaginating embryo showing the invaginated furrow at stage 6 with a longer junctional lifetime compared to the surrounding ectodermal tissue and to stage 5 mesoderm cells (examples shown with yellow arrows). (c) Left- Quantification of the lifetime difference at different stages and different tissues. ANOVA test p value: p=0.0156. T-test p-values are of p=0.021 for mesoderm (N = 11) versus ectoderm (N = 10) at stage 6 and 0.004 for mesoderm at stage 6 versus stage 5 (N = 11). No significant change was observed in the ectoderm at stage 6 (N = 10) compared to stage 5 (N = 8) (p=0.74), and between the mesoderm and the ectoderm at stage 5 (p=0.33). In some embryos, the ectoderm could not be imaged properly. Right- Differences of lifetime of β-cat-GFP expressing Drosophila embryos injected with PBS without antibody in the mesoderm at stage 5 (N = 9) and stage 6 (N = 9) respectively (p=0.83). As expected, PBS injection without the antibody acceptor lead to a lifetime of 2.600 ± 0.039 ns, higher compared to 2.473 ± 0.074 ns with the antibody at stage 5 (see Figure 2c-source data2, p=0.00016). Statistical tests are t-student.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33381/elife-33381-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Left: Western blots showing whole embryo protein extracts (denatured conditions) detected with either DE-cad antibody (first lane) or our new JCAb20 against the region in E-cad binding to β-cat at the Y654-β-cat/D665-E-cad site. Right: Immunoprecipitation by using the JCAb20 antibody as a trap, and the DE-cad antibody for revelation. The band is at the 140 kDA weight of the mature DE-cad protein. Other bands around 40 kDA are presumably immunoglobulins. Colored bands are pre-stained markers. (b) Immunostainings of methanol fixed embryo mesoderm epithelia at stage 5. Note that the epitope detected by the antibody JCAb20 co-localises with β-cat. See Table 1 for the list of hits resulting from a standard protein-protein BLAST search against the Drosophila proteome (taxid: 7227) for the immunogen peptide sequence used to generate the JCAb20 antibody.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/33381/elife-33381-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Lifetime images of β-cat-GFP expressing Drosophila embryos at stages indicated. (b) Average donor lifetime of β-cat-GFP expressing Drosophila embryos. Mean values and standard deviation are shown. p-values are 0.79 (stage 5 and 6), 0.64 (stage 5 and 7) (Mann-Whitney test) N = 12 (stage 5), N = 14 (stage 6) and N = 7 (stage 7).
+
 The choice of the E-cad site was based on the crystalline structure of the β-cat/E-cad complex of mice (Huber and Weis, 2001), and on the high conservation of the sequence of E-cad around D665 between Drosophila and mice (Figure 1—figure supplement 1e). The JCAb20 antibody targets an E-cad loop at 1143–1158 (in Drosophila) neighbouring directly the alpha helix of region II. The latter contains the D665 (D1170 in Drosophila), which interacts with the Y654 site of β-cat (Y667 in Drosophila), and is directly labelled with Alexa 555 (in orange in Figure 1—figure supplement 1c and Figure 1—figure supplement 1a, from Protein Data Bank and Huber and Weis, 2001, with accession code 1I7X, schematized in red Figure 2a) (Huber and Weis, 2001). The free E-cad 1143–1158 loop of the crystalline structure is shown in purple and green in Figure 1—figure supplement 1a. The antibody was tested for its specificity by immuno-staining, western-blot analysis and immunoprecipitation (see Figure 2—figure supplement 1a, b). The peptide sequence of the immunogen was checked for possible similarities with other proteins by a standard protein-protein BLAST search against the Drosophila proteome (taxid: 7227) (see Table 1). The GFP, about 4 nm long, is located at the C-terminus of the β-cat (schematized in green in Figure 2a) (Peifer, 2004).
+
+**Table 1.**
+ List of hits resulting from a standard protein-protein BLAST search against the Drosophila proteome (taxid: 7227) for the immunogen peptide sequence used to generate the JCAb20 antibody.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Max score</th>
+      <th>Total score</th>
+      <th>Query cover</th>
+      <th>E value</th>
+      <th>Ident</th>
+      <th>Accession</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DE-cadherin [Drosophila melanogaster]</td>
+      <td>53.2</td>
+      <td>66.6</td>
+      <td>93%</td>
+      <td>1.00E-11</td>
+      <td>100%</td>
+      <td>BAA05942.1</td>
+    </tr>
+    <tr>
+      <td>Shotgun [Drosophila melanogaster]</td>
+      <td>53.2</td>
+      <td>66.6</td>
+      <td>93%</td>
+      <td>1.00E-11</td>
+      <td>100%</td>
+      <td>NP_476722.1</td>
+    </tr>
+    <tr>
+      <td>GM13889p [Drosophila melanogaster]</td>
+      <td>24.8</td>
+      <td>24.8</td>
+      <td>56%</td>
+      <td>0.13</td>
+      <td>50%</td>
+      <td>AAM50217.1</td>
+    </tr>
+    <tr>
+      <td>GH21511p [Drosophila melanogaster]</td>
+      <td>24.8</td>
+      <td>24.8</td>
+      <td>56%</td>
+      <td>0.14</td>
+      <td>67%</td>
+      <td>AAK92991.1</td>
+    </tr>
+    <tr>
+      <td>Eukaryotic translation initiation factor 3 p66 subunit [Drosophila melanogaster]</td>
+      <td>24.8</td>
+      <td>24.8</td>
+      <td>56%</td>
+      <td>0.14</td>
+      <td>50%</td>
+      <td>AAF37264.1</td>
+    </tr>
+    <tr>
+      <td>Eukaryotic initiation factor 3 p66 subunit [Drosophila melanogaster]</td>
+      <td>24.8</td>
+      <td>24.8</td>
+      <td>56%</td>
+      <td>0.14</td>
+      <td>50%</td>
+      <td>NP_524463.2</td>
+    </tr>
+    <tr>
+      <td>Extended synaptotagmin-like protein 2 ortholog, isoform A [Drosophila melanogaster]</td>
+      <td>24.8</td>
+      <td>42.4</td>
+      <td>62%</td>
+      <td>0.14</td>
+      <td>67%</td>
+      <td>NP_733010.1</td>
+    </tr>
+    <tr>
+      <td>Extended synaptotagmin-like protein 2 ortholog, isoform D [Drosophila melanogaster]</td>
+      <td>24.8</td>
+      <td>42.4</td>
+      <td>62%</td>
+      <td>0.14</td>
+      <td>67%</td>
+      <td>NP_001262921.1</td>
+    </tr>
+    <tr>
+      <td>Extended synaptotagmin-like protein 2 ortholog, isoform B [Drosophila melanogaster]</td>
+      <td>24.8</td>
+      <td>42.4</td>
+      <td>62%</td>
+      <td>0.14</td>
+      <td>67%</td>
+      <td>NP_733011.2</td>
+    </tr>
+    <tr>
+      <td>RE26910p [Drosophila melanogaster]</td>
+      <td>24.8</td>
+      <td>42.4</td>
+      <td>62%</td>
+      <td>0.14</td>
+      <td>67%</td>
+      <td>ABY21755.1</td>
+    </tr>
+    <tr>
+      <td>Extended synaptotagmin-like protein 2 ortholog, isoform C [Drosophila melanogaster]</td>
+      <td>24.8</td>
+      <td>42.4</td>
+      <td>62%</td>
+      <td>0.14</td>
+      <td>67%</td>
+      <td>NP_001247287.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG11920 [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>23.5</td>
+      <td>62%</td>
+      <td>0.38</td>
+      <td>70%</td>
+      <td>NP_651335.2</td>
+    </tr>
+    <tr>
+      <td>GM02712p [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>23.5</td>
+      <td>62%</td>
+      <td>0.38</td>
+      <td>70%</td>
+      <td>AAL28396.1</td>
+    </tr>
+    <tr>
+      <td>Mind bomb 2, isoform A [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>36.9</td>
+      <td>93%</td>
+      <td>0.39</td>
+      <td>70%</td>
+      <td>NP_609933.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>23.5</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>AAO32791.1</td>
+    </tr>
+    <tr>
+      <td>Vartul-2 protein [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>CAB71137.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform C [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_733156.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform I [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_001014669.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform P [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_733155.2</td>
+    </tr>
+    <tr>
+      <td>Scribble [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>54.5</td>
+      <td>75%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>AAF26357.2</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform A [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_733154.1</td>
+    </tr>
+    <tr>
+      <td>RE02389p [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>AAT94469.1</td>
+    </tr>
+    <tr>
+      <td>Vartul-1 protein [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>CAB70601.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform U [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_001262989.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>AAO32792.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform D [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_524754.2</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform H [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_001014670.2</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform R [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_001247322.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform K [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_001247318.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform J [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_001163745.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform T [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_001262988.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform M [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_001163747.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform O [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_001247320.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform N [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_001247319.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform Q [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_001247321.1</td>
+    </tr>
+    <tr>
+      <td>Scribbled, isoform L [Drosophila melanogaster]</td>
+      <td>23.5</td>
+      <td>40.3</td>
+      <td>37%</td>
+      <td>0.39</td>
+      <td>100%</td>
+      <td>NP_001163746.1</td>
+    </tr>
+    <tr>
+      <td>TPA: HDC02662 [Drosophila melanogaster]</td>
+      <td>23.1</td>
+      <td>23.1</td>
+      <td>56%</td>
+      <td>0.54</td>
+      <td>62%</td>
+      <td>DAA03664.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG10103, isoform D [Drosophila melanogaster]</td>
+      <td>23.1</td>
+      <td>35.6</td>
+      <td>43%</td>
+      <td>0.55</td>
+      <td>86%</td>
+      <td>NP_001261485.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG10103, isoform E [Drosophila melanogaster]</td>
+      <td>23.1</td>
+      <td>35.6</td>
+      <td>43%</td>
+      <td>0.55</td>
+      <td>86%</td>
+      <td>NP_001261486.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG10103, isoform C [Drosophila melanogaster]</td>
+      <td>23.1</td>
+      <td>35.6</td>
+      <td>43%</td>
+      <td>0.55</td>
+      <td>86%</td>
+      <td>NP_001261484.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG10103, isoform B [Drosophila melanogaster]</td>
+      <td>23.1</td>
+      <td>35.6</td>
+      <td>43%</td>
+      <td>0.55</td>
+      <td>86%</td>
+      <td>NP_001261483.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG10103, isoform A [Drosophila melanogaster]</td>
+      <td>23.1</td>
+      <td>35.6</td>
+      <td>43%</td>
+      <td>0.55</td>
+      <td>86%</td>
+      <td>NP_648058.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG11883, isoform B [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>40.7</td>
+      <td>43%</td>
+      <td>0.78</td>
+      <td>86%</td>
+      <td>NP_610598.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG11883, isoform A [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>40.7</td>
+      <td>43%</td>
+      <td>0.78</td>
+      <td>86%</td>
+      <td>NP_724960.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG11883, isoform C [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>40.7</td>
+      <td>43%</td>
+      <td>0.78</td>
+      <td>86%</td>
+      <td>NP_001097260.1</td>
+    </tr>
+    <tr>
+      <td>Peptidylprolyl cis-trans isomerase [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>50%</td>
+      <td>0.78</td>
+      <td>63%</td>
+      <td>AAN39118.1</td>
+    </tr>
+    <tr>
+      <td>Moca-cyp, isoform A [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>50%</td>
+      <td>0.78</td>
+      <td>63%</td>
+      <td>NP_733246.1</td>
+    </tr>
+    <tr>
+      <td>RE23622p [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>50%</td>
+      <td>0.78</td>
+      <td>63%</td>
+      <td>AAN71333.1</td>
+    </tr>
+    <tr>
+      <td>GH13610p [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>68%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>ACV31093.1</td>
+    </tr>
+    <tr>
+      <td>GH14650p [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>68%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>AAK92914.1</td>
+    </tr>
+    <tr>
+      <td>SP2523 [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>68%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>AAF63503.1</td>
+    </tr>
+    <tr>
+      <td>Ankyrin 2, isoform L [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>68%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>NP_729285.3</td>
+    </tr>
+    <tr>
+      <td>Ankyrin 2, isoform F [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>68%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>NP_001097535.1</td>
+    </tr>
+    <tr>
+      <td>Ankyrin 2, isoform J [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>38.2</td>
+      <td>93%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>NP_001097538.1</td>
+    </tr>
+    <tr>
+      <td>Ankyrin 2, isoform T [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>68%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>NP_001189068.1</td>
+    </tr>
+    <tr>
+      <td>Ankyrin 2, isoform P [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>68%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>NP_001189069.1</td>
+    </tr>
+    <tr>
+      <td>Ankyrin 2, isoform Z [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>68%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>NP_001286971.1</td>
+    </tr>
+    <tr>
+      <td>Ankyrin 2, isoform K [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>68%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>NP_001097539.1</td>
+    </tr>
+    <tr>
+      <td>Ankyrin 2, isoform S [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>38.2</td>
+      <td>93%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>NP_001189064.1</td>
+    </tr>
+    <tr>
+      <td>Ankyrin 2, isoform Q [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>38.2</td>
+      <td>93%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>NP_001189067.1</td>
+    </tr>
+    <tr>
+      <td>Ankyrin 2, isoform V [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>22.7</td>
+      <td>68%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>NP_001261535.1</td>
+    </tr>
+    <tr>
+      <td>Ankyrin 2, isoform R [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>38.2</td>
+      <td>93%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>NP_001189065.1</td>
+    </tr>
+    <tr>
+      <td>Ankyrin 2, isoform U [Drosophila melanogaster]</td>
+      <td>22.7</td>
+      <td>52.4</td>
+      <td>93%</td>
+      <td>0.78</td>
+      <td>64%</td>
+      <td>NP_001189070.1</td>
+    </tr>
+    <tr>
+      <td>Mei-P26 [Drosophila melanogaster]</td>
+      <td>22.3</td>
+      <td>22.3</td>
+      <td>43%</td>
+      <td>1.1</td>
+      <td>71%</td>
+      <td>AGL81505.1</td>
+    </tr>
+    <tr>
+      <td>Mei-P26 [Drosophila melanogaster]</td>
+      <td>22.3</td>
+      <td>22.3</td>
+      <td>43%</td>
+      <td>1.1</td>
+      <td>71%</td>
+      <td>AGL81497.1</td>
+    </tr>
+    <tr>
+      <td>Mei-P26 [Drosophila melanogaster]</td>
+      <td>22.3</td>
+      <td>22.3</td>
+      <td>43%</td>
+      <td>1.1</td>
+      <td>71%</td>
+      <td>AGL81501.1</td>
+    </tr>
+    <tr>
+      <td>Mei-P26 [Drosophila melanogaster]</td>
+      <td>22.3</td>
+      <td>22.3</td>
+      <td>43%</td>
+      <td>1.1</td>
+      <td>71%</td>
+      <td>AGL81499.1</td>
+    </tr>
+    <tr>
+      <td>Mei-P26 [Drosophila melanogaster]</td>
+      <td>22.3</td>
+      <td>22.3</td>
+      <td>43%</td>
+      <td>1.1</td>
+      <td>71%</td>
+      <td>AGL81498.1</td>
+    </tr>
+    <tr>
+      <td>HL03718p [Drosophila melanogaster]</td>
+      <td>22.3</td>
+      <td>22.3</td>
+      <td>37%</td>
+      <td>1.1</td>
+      <td>100%</td>
+      <td>AAR82799.1</td>
+    </tr>
+    <tr>
+      <td>BcDNA.GH10646 [Drosophila melanogaster]</td>
+      <td>22.3</td>
+      <td>22.3</td>
+      <td>43%</td>
+      <td>1.1</td>
+      <td>71%</td>
+      <td>AAD38636.1</td>
+    </tr>
+    <tr>
+      <td>Meiotic P26, isoform A [Drosophila melanogaster]</td>
+      <td>22.3</td>
+      <td>22.3</td>
+      <td>43%</td>
+      <td>1.1</td>
+      <td>71%</td>
+      <td>NP_652022.1</td>
+    </tr>
+    <tr>
+      <td>Pangolin, isoform J [Drosophila melanogaster]</td>
+      <td>22.3</td>
+      <td>35.6</td>
+      <td>37%</td>
+      <td>1.1</td>
+      <td>100%</td>
+      <td>NP_726528.2</td>
+    </tr>
+    <tr>
+      <td>Meiotic P26, isoform C [Drosophila melanogaster]</td>
+      <td>22.3</td>
+      <td>22.3</td>
+      <td>43%</td>
+      <td>1.1</td>
+      <td>71%</td>
+      <td>NP_001259377.1</td>
+    </tr>
+    <tr>
+      <td>LD23595p [Drosophila melanogaster]</td>
+      <td>21.8</td>
+      <td>35.2</td>
+      <td>75%</td>
+      <td>1.6</td>
+      <td>86%</td>
+      <td>AAM52675.1</td>
+    </tr>
+    <tr>
+      <td>Updo [Drosophila melanogaster]</td>
+      <td>21.8</td>
+      <td>21.8</td>
+      <td>62%</td>
+      <td>1.6</td>
+      <td>50%</td>
+      <td>NP_610501.1</td>
+    </tr>
+    <tr>
+      <td>SD19419p [Drosophila melanogaster]</td>
+      <td>21.8</td>
+      <td>21.8</td>
+      <td>62%</td>
+      <td>1.6</td>
+      <td>50%</td>
+      <td>AAM51098.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG12093 [Drosophila melanogaster]</td>
+      <td>21.8</td>
+      <td>35.2</td>
+      <td>75%</td>
+      <td>1.6</td>
+      <td>86%</td>
+      <td>NP_647747.1</td>
+    </tr>
+    <tr>
+      <td>CG3803 [Drosophila melanogaster]</td>
+      <td>21.8</td>
+      <td>21.8</td>
+      <td>75%</td>
+      <td>1.6</td>
+      <td>40%</td>
+      <td>NP_611855.1</td>
+    </tr>
+    <tr>
+      <td>CG9837, isoform D [Drosophila melanogaster]</td>
+      <td>21.4</td>
+      <td>21.4</td>
+      <td>43%</td>
+      <td>2.2</td>
+      <td>71%</td>
+      <td>NP_001163557.2</td>
+    </tr>
+    <tr>
+      <td>CG9837, isoform E [Drosophila melanogaster]</td>
+      <td>21.4</td>
+      <td>38.6</td>
+      <td>56%</td>
+      <td>2.2</td>
+      <td>71%</td>
+      <td>NP_649838.5</td>
+    </tr>
+    <tr>
+      <td>Missing oocyte [Drosophila melanogaster]</td>
+      <td>21.4</td>
+      <td>33.9</td>
+      <td>68%</td>
+      <td>2.2</td>
+      <td>100%</td>
+      <td>NP_608656.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG17258, isoform C [Drosophila melanogaster]</td>
+      <td>21.4</td>
+      <td>21.4</td>
+      <td>62%</td>
+      <td>2.2</td>
+      <td>58%</td>
+      <td>NP_001259980.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG17258, isoform D [Drosophila melanogaster]</td>
+      <td>21.4</td>
+      <td>21.4</td>
+      <td>62%</td>
+      <td>2.2</td>
+      <td>58%</td>
+      <td>NP_001259981.1</td>
+    </tr>
+    <tr>
+      <td>AT19777p [Drosophila melanogaster]</td>
+      <td>21.4</td>
+      <td>21.4</td>
+      <td>62%</td>
+      <td>2.2</td>
+      <td>58%</td>
+      <td>ABB36463.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG17258, isoform B [Drosophila melanogaster]</td>
+      <td>21.4</td>
+      <td>21.4</td>
+      <td>62%</td>
+      <td>2.2</td>
+      <td>58%</td>
+      <td>NP_608742.2</td>
+    </tr>
+    <tr>
+      <td>DUNC79 [Drosophila melanogaster]</td>
+      <td>21.4</td>
+      <td>63.2</td>
+      <td>93%</td>
+      <td>2.2</td>
+      <td>75%</td>
+      <td>ABI95804.1</td>
+    </tr>
+    <tr>
+      <td>Unc79, isoform B [Drosophila melanogaster]</td>
+      <td>21.4</td>
+      <td>63.2</td>
+      <td>93%</td>
+      <td>2.2</td>
+      <td>75%</td>
+      <td>NP_001163652.1</td>
+    </tr>
+    <tr>
+      <td>Unc79, isoform F [Drosophila melanogaster]</td>
+      <td>21.4</td>
+      <td>63.2</td>
+      <td>93%</td>
+      <td>2.2</td>
+      <td>75%</td>
+      <td>NP_001287404.1</td>
+    </tr>
+    <tr>
+      <td>Unc79, isoform E [Drosophila melanogaster]</td>
+      <td>21.4</td>
+      <td>63.2</td>
+      <td>93%</td>
+      <td>2.2</td>
+      <td>75%</td>
+      <td>NP_001287403.1</td>
+    </tr>
+    <tr>
+      <td>Unc79, isoform C [Drosophila melanogaster]</td>
+      <td>21.4</td>
+      <td>63.2</td>
+      <td>93%</td>
+      <td>2.2</td>
+      <td>75%</td>
+      <td>NP_650795.2</td>
+    </tr>
+    <tr>
+      <td>CG9034, isoform A [Drosophila melanogaster]</td>
+      <td>21</td>
+      <td>21</td>
+      <td>37%</td>
+      <td>3</td>
+      <td>83%</td>
+      <td>NP_652538.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG33796 [Drosophila melanogaster]</td>
+      <td>21</td>
+      <td>21</td>
+      <td>43%</td>
+      <td>3.1</td>
+      <td>71%</td>
+      <td>NP_001027128.1</td>
+    </tr>
+    <tr>
+      <td>Nubbin [Drosophila melanogaster]</td>
+      <td>21</td>
+      <td>39</td>
+      <td>68%</td>
+      <td>3.1</td>
+      <td>64%</td>
+      <td>ABD33837.1</td>
+    </tr>
+    <tr>
+      <td>IP05211p [Drosophila melanogaster]</td>
+      <td>21</td>
+      <td>21</td>
+      <td>56%</td>
+      <td>3.1</td>
+      <td>67%</td>
+      <td>ABC86455.1</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG32373, isoform A [Drosophila melanogaster]</td>
+      <td>21</td>
+      <td>21</td>
+      <td>37%</td>
+      <td>3.1</td>
+      <td>83%</td>
+      <td>NP_729293.1</td>
+    </tr>
+    <tr>
+      <td>RT09995p [Drosophila melanogaster]</td>
+      <td>21</td>
+      <td>21</td>
+      <td>56%</td>
+      <td>3.1</td>
+      <td>67%</td>
+      <td>ADN05223.1</td>
+    </tr>
+    <tr>
+      <td>Glycogen binding subunit 76A, isoform A [Drosophila melanogaster]</td>
+      <td>21</td>
+      <td>21</td>
+      <td>50%</td>
+      <td>3.1</td>
+      <td>75%</td>
+      <td>NP_649104.1</td>
+    </tr>
+    <tr>
+      <td>Veloren, isoform B [Drosophila melanogaster]</td>
+      <td>21</td>
+      <td>21</td>
+      <td>68%</td>
+      <td>3.1</td>
+      <td>55%</td>
+      <td>NP_788470.1</td>
+    </tr>
+    <tr>
+      <td>Nubbin, isoform B [Drosophila melanogaster]</td>
+      <td>21</td>
+      <td>39</td>
+      <td>68%</td>
+      <td>3.1</td>
+      <td>64%</td>
+      <td>NP_001097153.1</td>
+    </tr>
+    <tr>
+      <td>Shal interactor of Di-Leucine motif [Drosophila melanogaster]</td>
+      <td>21</td>
+      <td>21</td>
+      <td>37%</td>
+      <td>3.1</td>
+      <td>83%</td>
+      <td>NP_650431.1</td>
+    </tr>
+  </tbody>
+</table>
 
 At the time of antibody injection, the cells in the embryo still form a syncytium, that is they are open to the same internal yolk volume, which allows the antibody to diffuse into any cell. Afterwards, cells are closed in a process called cellularization followed by the first embryonic morphogenetic movement, the invagination of the mesodermal tissue during gastrulation (Wieschaus and Nusslein-Volhard, 1998). FRET experiments were performed by measuring the lifetime of the β-cat-GFP donor (FLIM), as the E-cad Alexa555 labelled antibody acceptor acts as a quencher that reduces the lifetime of the donor. A relatively low lifetime indicates higher FRET efficiency and closer distances, while a lifetime close to the normal lifetime of the fluorophore indicates low FRET efficiency and higher distances (Figure 2a).
 
@@ -65,7 +1021,7 @@ It is important to confirm that the mechanical strain at the molecular level aro
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/33381/elife-33381-fig3-v1.jpg)
 
-**Figure 3.:** (a) Illustration of the magnetic stimulation setup. The blue region corresponds to the mesoderm, in which UMLs where injected. (b) Time series of a magnetic stimulation experiment with β-cat-GFP expressing flies injected with siRNA for snail and twist as well as UMLs and Alexa555 labelled antibody against E-cad. The grey bar indicates when magnetic force was applied. Yellow arrows indicate examples of lifetime increase in the junctions. Times are indicated in min/s. (c) Quantification of the cell apex area for the experiment shown in b. Note that the area is decreasing in the sna twi RNAi background when the magnetic field is applied. (d) Lifetime difference of stage 6 to the average lifetime before magnetic field application of stage 5, of N = 9 experiments with magnet applied and N = 8 without magnet applied as well as N = 6 experiments with PBS instead of antibody injected and magnet applied. Whereas the experiments without magnetic field applied, or PBS instead of antibody injected, show no difference, the one with antibody and magnetic field applied show a significant increase of the lifetime, p value = 0.00061 (t-students test). The absence of increase of the lifetime difference within sna twi RNAi non-invaginating conditions without magnet between stage 5 and stage 6 is characterized by the p-value p=0.0003 compared to the increase between stage 5 and 6 in the invaginating WT of Figure 2c-left, and of p=0.75 compared to the lifetime difference in the invaginating WT injected with PBS of Figure 2c-right (t-students test). (e) Lifetime difference to the average lifetime before the magnetic field was applied for the experiment shown in. Grey box indicates when the magnetic field was applied.10.7554/eLife.33381.016Figure 3—source data 1.
+**Figure 3.:** (a) Illustration of the magnetic stimulation setup. The blue region corresponds to the mesoderm, in which UMLs where injected. (b) Time series of a magnetic stimulation experiment with β-cat-GFP expressing flies injected with siRNA for snail and twist as well as UMLs and Alexa555 labelled antibody against E-cad. The grey bar indicates when magnetic force was applied. Yellow arrows indicate examples of lifetime increase in the junctions. Times are indicated in min/s. (c) Quantification of the cell apex area for the experiment shown in b. Note that the area is decreasing in the sna twi RNAi background when the magnetic field is applied. (d) Lifetime difference of stage 6 to the average lifetime before magnetic field application of stage 5, of N = 9 experiments with magnet applied and N = 8 without magnet applied as well as N = 6 experiments with PBS instead of antibody injected and magnet applied. Whereas the experiments without magnetic field applied, or PBS instead of antibody injected, show no difference, the one with antibody and magnetic field applied show a significant increase of the lifetime, p value = 0.00061 (t-students test). The absence of increase of the lifetime difference within sna twi RNAi non-invaginating conditions without magnet between stage 5 and stage 6 is characterized by the p-value p=0.0003 compared to the increase between stage 5 and 6 in the invaginating WT of Figure 2c-left, and of p=0.75 compared to the lifetime difference in the invaginating WT injected with PBS of Figure 2c-right (t-students test). (e) Lifetime difference to the average lifetime before the magnetic field was applied for the experiment shown in. Grey box indicates when the magnetic field was applied.
 
 We found no significant increase in the FRET lifetime between stage 6 (stage of invagination in the WT) and stage 5 in sna twi RNAi embryos defective in mesoderm invagination (Figure 3d, Figure 3—source data 1, without magnet injected with UMLs and siRNAi against twi and sna), in contrast to the increase observed in the WT (Figure 2c). This observation shows a defect of mechanical strain deformation between the linear domain II of E-cad and the C-terminus of β-cat induced in sna twi embryos defective in mesoderm invagination. In response to the magnetically induced constriction, junctional FRET live imaging showed an increase of the lifetime, observed by an increase of bright green and of yellow spots in junctions of the deformed tissue (e.g. yellow arrows in Figure 3b), of 0.098 ± 0.057 ns, comparable to the increase of 0.094 ± 0.059 ns observed in the mesoderm during its invagination. This lifetime increase shows an increase of distance between the two fluorophores on the order of ~1 nm (Figure 3d,e and Materials and methods). As controls, no increase in the lifetime between stage 5 and stage 6 was observed after injection of the UMLs and RNAi without magnet (Figure 3d), or with magnets after UML and PBS injection without the E-cad Alexa 555 acceptor (Figure 3d).
 
@@ -77,7 +1033,7 @@ We found an increase in the signal for the un-phosphorylated site of β-cat at A
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/33381/elife-33381-fig4-v1.jpg)
 
-**Figure 4.:** (a, b) Fluorescent labelling of wild type (WT) (a) and src42A RNAi (b) embryos at three different stages for β-cat in red, the not phosphorylated tyrosine Y654 of β-cat in green and nuclei in blue (DAPI). Composite are cross-cuts of the 3D reconstructed images of the latter three colour images of the embryo. (c) Relative intensity change of antibody fluorescent signal against the non-phosphorylated non-phosphorylated Y654-β-cat site of Src42A phosphorylation in the mesoderm junctions, normalized to the junctional total β-cat signal, in wild type (WT) and src42A RNAi (Src42A knock down) background condition. Values are relative to stage 5. N = 5 in the WT, and N = 5 in the src42A RNAi. Mean and SEM are shown, t-test p=value 0.00181 and 0.00021 at early stage 6, 0.000508 and 0.00330 at late stage 6 for WT and src42A RNAi, respectively. WT compared to src42A RNAi early stage 6 p=0.00355, late stage 6 p=0.00879, difference between the two curves p=0.0003. (d) Relative intensity change of antibody fluorescent signal against the non-phosphorylated Y654-β-cat site of Src42A phosphorylation in the ectoderm junctions, normalized to the junctional total β-cat signal, in wild type (WT) and src42A RNAi (Src42A knock down) background condition. Values are relative to stage 5. N = 5 in the WT, and N = 5 in the src42A RNAi. Mean and SEM are shown, t-test p=value of 0.439 and 0.738 at early stage 6, of 0.578 and 0.347 at late stage 6 for WT and src42A RNAi, respectively. WT compared to src42A RNAi early stage 6 p=0.247, late stage 6 p=0.162, difference between the two curves p=0.169. (e) Relative intensity change of the non-phosphorylated Y654-β-cat site of the mesoderm signal to the non-phosphorylated Y654-β-cat ectoderm signal within the same embryos. Mean and SEM are shown, t-test p=value 0.0103 and 0.000278 at early stage 6, 0.0125 and 0.00256 at late stage six for WT and src42A RNAi, respectively. WT compared to src42A RNAi early stage 6 p=0.049, late stage 6 p=0.063, difference between the two curves p=0.021.10.7554/eLife.33381.018Figure 4—source data 1.
+**Figure 4.:** (a, b) Fluorescent labelling of wild type (WT) (a) and src42A RNAi (b) embryos at three different stages for β-cat in red, the not phosphorylated tyrosine Y654 of β-cat in green and nuclei in blue (DAPI). Composite are cross-cuts of the 3D reconstructed images of the latter three colour images of the embryo. (c) Relative intensity change of antibody fluorescent signal against the non-phosphorylated non-phosphorylated Y654-β-cat site of Src42A phosphorylation in the mesoderm junctions, normalized to the junctional total β-cat signal, in wild type (WT) and src42A RNAi (Src42A knock down) background condition. Values are relative to stage 5. N = 5 in the WT, and N = 5 in the src42A RNAi. Mean and SEM are shown, t-test p=value 0.00181 and 0.00021 at early stage 6, 0.000508 and 0.00330 at late stage 6 for WT and src42A RNAi, respectively. WT compared to src42A RNAi early stage 6 p=0.00355, late stage 6 p=0.00879, difference between the two curves p=0.0003. (d) Relative intensity change of antibody fluorescent signal against the non-phosphorylated Y654-β-cat site of Src42A phosphorylation in the ectoderm junctions, normalized to the junctional total β-cat signal, in wild type (WT) and src42A RNAi (Src42A knock down) background condition. Values are relative to stage 5. N = 5 in the WT, and N = 5 in the src42A RNAi. Mean and SEM are shown, t-test p=value of 0.439 and 0.738 at early stage 6, of 0.578 and 0.347 at late stage 6 for WT and src42A RNAi, respectively. WT compared to src42A RNAi early stage 6 p=0.247, late stage 6 p=0.162, difference between the two curves p=0.169. (e) Relative intensity change of the non-phosphorylated Y654-β-cat site of the mesoderm signal to the non-phosphorylated Y654-β-cat ectoderm signal within the same embryos. Mean and SEM are shown, t-test p=value 0.0103 and 0.000278 at early stage 6, 0.0125 and 0.00256 at late stage six for WT and src42A RNAi, respectively. WT compared to src42A RNAi early stage 6 p=0.049, late stage 6 p=0.063, difference between the two curves p=0.021.
 
 The mechanically induced opening of the Y654-D665 binding site should thus favour the accessibility of the Y654 tyrosine to Src42A and thereby its phosphorylation by Src42A which leads to the release of the β-cat from AJ (Brunet et al., 2013). However, such Src42A interaction with the Y654 site might be difficult to detect, as it should be highly transient, and thus would yield most likely poor FRET signals by probing any increase of the accessibility effect. On the other hand, Src42A would compete with Y654-Ab in its interaction with Y654. The increase of accessibility of the Y654 site to Y654-Ab under strain should thus be enhanced in the absence Src42A. An alternative prediction of our model, leading to the same conclusion, concerns the knock down of the responsible kinase Src42A that reduces Y654-β-cat phosphorylation (Takahashi et al., 2005). The knock down should thus lead firstly to stable and consequently enhanced molecular stretching effects during gastrulation, and thus to an increased number of stretched Y654 sites opened to non-phospho Y654 labelling. Both effects should lead to an enhancement of the accessibility of the Y654 sites.
 
@@ -88,6 +1044,12 @@ This signal was measured relative to the junctional β-cat signal during gastrul
 Therefore, we conclude that during mesoderm invagination, the accessibility of the site of Y654 β-cat to Src42A increases due to its mechanical opening. At the same time, the Y654 β-cat residue becomes specifically more available for Src42A phosphorylation at AJ, as the strain builds up at the Y654 β-cat-D665-E-cad molecular complex interaction site. The mechanical induction of the increase in accessibility of the Y654 site under strain for Src42A phosphorylation should thus lead to the release of an amount of junctional β-cat into the cytosol proportional to the subset of β-cat/E-cad complex that opens at Y654-D665 under strain (Brunet et al., 2013; Roura et al., 1999; van Veelen et al., 2011).
 
 To test whether the molecular strain that is observed in mesoderm invagination induces a decrease in β-cat affinity to E-cad, we characterised the dynamics of β-cat in Drosophila embryo mesodermal AJs under strain during gastrulation. This was achieved by fluorescent recovery after photobleaching (FRAP) experiments at three different developmental stages: just before invagination (end of cellularization, late embryonic stage 5), at the onset of invagination (early 6) and during invagination (mid-stage 6) (Figure 5a,b).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/33381/elife-33381-fig5-v1.jpg)
+
+**Figure 5.:** (a) Image sequence of mesodermal cells expressing β-cat -GFP during a FRAP experiment. The red circle shows the region of photobleaching. Time in seconds is given relative to bleaching. (b) Corresponding kymograph of d in rainbow LUT and black and white with indicated ROI for value calculation. (c) Relative intensity after photobleaching of β-cat-GFP in the mesoderm at three different stages during early Drosophila embryonic development, just before and during invagination. Time in seconds is given relative to bleaching. (d) Mobile fraction in %. Mann-Whitney test p-values are p=0.011 and p=0.006 for early stage 6 (N = 12) and mid stage 6 (N = 13) compared to stage 5 (N = 7).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33381/elife-33381-fig5-figsupp1-v1.jpg)
 
 We found upon photobleaching that the fluorescent recovery amplitude, the so-called mobile fraction, of β-cat upon photobleaching is increased by 16 ± 6% when mesoderm invagination has built up at mid-stage 6. This observation indicated that about 16% more molecules at the AJ are able to be recycled and exchanged at stage 6 compared to stage 5 (Figure 5c,d, Figure 5—source data 1). This result is consistent with studies examining β-cat turnover at cellular junctions under strain during germ band extension (Tamada et al., 2012). This effect is quantitatively predicted by the 15% probability of opening the β-cat/E-cad complex observed in our MD simulations under strain. As the opening of the Y654-D665 interacting site will lead to an increased Src42A phosphorylation, it will therefore lead to a decreased affinity between β-cat and E-cad.
 
@@ -105,27 +1067,163 @@ Finally, both the Y654-β-cat and D665 E-cad major sites between the two molecul
 
 ## Materials and methods
 
-## Simulations
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Y654-b-cat</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_10623284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Arm</td>
+      <td>DSHB</td>
+      <td>RRID:AB_528089</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>JCAb20</td>
+      <td>abcam antibody service</td>
+      <td></td>
+      <td>against H- CALQGNMRDPNDIPDI - NH2 (16AA) corresponding to AA 1143–1158 of the DE-cad</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DE-cad DCAD2</td>
+      <td>DSHB</td>
+      <td>RRID:AB_528120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosohila melanogaster)</td>
+      <td>Arm-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_8556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosohila melanogaster)</td>
+      <td>mata4-GALVP16/V37 tubulin</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_7063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosohila melanogaster)</td>
+      <td>Oregon-R</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosohila melanogaster)</td>
+      <td>src42A RNAi</td>
+      <td>NIG Stock Centre</td>
+      <td>7873 R-2</td>
+      <td>The NIG Stock Centre is not yet in the RRID system</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosohila melanogaster)</td>
+      <td>UAS-src42A-RNAi (II)</td>
+      <td>VDRC Stock Centre</td>
+      <td>RRID:FlyBase_FBst0452809; 17643</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sna-siRNAs</td>
+      <td>Produced by Eurogentec</td>
+      <td></td>
+      <td>Sequences given in methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>twi-siRNAs</td>
+      <td>Produced by Eurogentec</td>
+      <td></td>
+      <td>Sequences given in methods</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FLIMfit 4.12.1</td>
+      <td>Imperial College London</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SymphoTime</td>
+      <td>Leica/Picoquant system</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Packing Analyzer</td>
+      <td>Benoit Aigouy</td>
+      <td></td>
+      <td>doi:10.1016/j.cell.2010.07.042 (2010)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Alexa Fluor 555 Antibody Labeling Kit</td>
+      <td>Molecular probes lifetechnologies</td>
+      <td>Cat. No. A20187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Antibody concentration kit</td>
+      <td>abcam</td>
+      <td>Cat. No.102778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ultra-magnetic liposomes (UML)</td>
+      <td></td>
+      <td></td>
+      <td>doi:10.1021/la3024716 (2012).</td>
+    </tr>
+  </tbody>
+</table>
+
+### Simulations
 
 We used the NAMD 2.10 software on GPU/CPU nodes to run the molecular dynamics (MD) simulations in explicit solvent (Phillips et al., 2005). The CHARMM36 forcefield was employed for the protein, together with the TIP3P-CHARMM water model (Huang and MacKerell, 2013). The system was neutralized with sodium and chloride ions. Starting from the crystal structure of the complex (pdb id: 1I7X) that contained an incomplete dimer of the complex, we selected the chain A (for β-cat) and chain B (for E-cadherin), completing a missing loop in chain A between residues 553 and 560 with the Modloop online software (https://modbase.compbio.ucsf.edu/modloop/). Chain B was truncated at residue 648 on the N-terminal side, as the corresponding portion of the chain would be extended in vivo and not interacting with β-cat (as observed in the crystal structure). The system was solvated in a water box of 7.2 * 7.2 * 21 nm, so that the protein long axis (defined by the two terminal alpha carbons of β-cat) was aligned with the z direction. The system was then minimized using a steepest-descent algorithm, and was progressively heated to 300 K during 120 ps. The bond between Y654 and D665 was constrained to its value in the crystal structure to ensure that the heating toward room temperature did not dissociate the complex. The system was then equilibrated for 2 ns at ambient pressure (1 bar) and temperature (300 K) using Langevin thermostats and barostats, and keeping the constraint between the two residues. The constraint was then progressively relaxed during 2 ns, and the system was subsequently equilibrated for 10 ns under the same conditions. 10 control trajectories in the absence of force were propagated for 30 ns. To ensure that the protein complex stayed aligned to the z axis in the elongated simulation box, and could not interact with its images by rotating around the z direction, a light harmonic constraint (force constant = 5 kcal/mol) was applied to the projection of the end-to-end axis of β-cat in the (xy) plane. This constraint did not affect the interaction between β-cat and E-cad, as we verified that the same simulations (but for a shorter simulation time of 10 ns so that the protein could not significantly tumble) in the absence of such constraint lead to quantitatively similar results. For the simulations under force, we fixed the alpha carbon of Y142 of β-cat, and we applied a constant force of 150 pN in the z direction to the alpha carbon of A648 (i.e., the N-terminal) of E-cad. 10 simulations were propagated for 30 ns. Analysis of interatomic distances were performed using in-house Fortran 90 codes, and visualization was done using the VMD software.
 
-## Fly strains
+### Fly strains
 
 Stocks were maintained at room temperature (typically 22°C). Oregon-R (used for WT), Mat-Gal4 (III) (mata4-GALVP16/V37 tubulin, RRID:BDSC_7063) and β-cat-GFP (arm-GFP, RRID:BDSC_8556) were provided by Bloomington. Homozygous UAS-src42A RNAi was produced by crossing 7873 R-2 src42A RNAi with the 17643 UAS-src42A-RNAi (II) (RRID:FlyBase_FBst0452809) provided by the NIG Stock Centre and VDRC Stock Centre, respectively. UAS*Gal4 crosses were stored 2 hr at 28°C prior to experiments.
 
-## Immunostainings
+### Immunostainings
 
 Embryos were dechorionated and fixed according to Muller, H. A. and Wieschaus J. Cell Biol. 134, 149–163 (1996) (Takahashi et al., 2005). Proteins were detected with the following primary antibodies: rabbit anti-Y654-β-cat, Sigma-Aldrich (dilution 1:200) RRID:AB_10623284; mouse anti-Arm (Drosophila β-cat) antibody RRID:AB_528089, DSHB (dilution 1:200). Secondary antibodies labelled with Alexa 488 or Alexa 633 were used from Invitrogen (dilution 1:200). Embryos were mounted vertically in Vectashield with DAPI for confocal observation. Images were obtained with a Zeiss 510 inverted confocal microscope. Images were processed and analysed with Fiji software. The intensity of the non-phospho-Y654 antibody staining in the mesoderm was either normalised to the β-cat intensity within the same ROI or to the intensity of the non-phospho-Y654 antibody staining in the ectoderm, all after background substraction (measured outside the embryo).
 
-## Western blots
+### Western blots
 
 Western blots were conducted as described in D Mitrossilis et al. Nat Commun 8, 13883. 2017 Jan 23 with the following specifications: the JCAb20 was used in a 1:500 dilution and the anti-DE-cad DCAD2from Drosophila Hybridoma bank was used in a 1:500 dilution, RRID:AB_528120.
 
-## Immunoprecipitation procedure
+### Immunoprecipitation procedure
 
 70–80 β-cat-GFP embryos at stage five were lysed in 50 mM Tris pH 8.0, 150 mM NaCl, 1% Triton X-100, 1 mM MgCl2 buffer plus a protein inhibitor cocktail (Sigma). After centrifugation at 14000 rpm for 20 min, protein lysate was pre-cleared with 50 μl of protein A-agarose beads (Cell Signaling Technology), incubated with 10 μg of the JCAb20 antibody over night at 4°C, and subsequently incubated with 50 μl of protein A-agarose beads for 3 hr at 4°C. After washing, bound proteins were eluted with gel sample buffer and analyzed by Western-blot using the anti-DE-cad DCAD2 antibody (dilution 1:500).
 
-## RNAi
+### RNAi
 
 To produce twi and sna defective non gastrulating Arm-GFP embryos, we injected siRNAs for twi and sna RNAi into Arm-GFP embryos. twi sna RNAi embryos have been described to phenocopy twi sna double zygotic mutants, and do not gastrulate (Mitrossilis et al., 2017; Martin et al., 2009). 3 siRNA sequences were designed and produced by Eurogentec, and already used in reference (Mitrossilis et al., 2017):
 
@@ -133,7 +1231,7 @@ sna-siRNAs (1481–1503 s 5': CAGCUAUAGUAUUCUAAGU dTdT; AS 3': ACUUAGAAUACUAUAGC
 
 twi-siRNAs (928–950 s 5': GCACCAGCAACAGAUCUAU dTdT; AS 3': AUAGAUCUGUUGCUGGUGC dTdT, 2061–2083 s 5': GUCACGCUUUCCAUAUAUA dTdT; AS 3': UAUAUAUGGAAAGCGUGAC dTdT; 1–1993 s 5': CGGAUCAGGACACUAUAGU dTdT; AS 3': ACUAUAGUGUCCUGAUCCG dTdT)
 
-## Injection of UML and induction of RNAi
+### Injection of UML and induction of RNAi
 
 Conditions of injection with the UMLs and siRNA are described in reference (Mitrossilis et al., 2017).
 
@@ -143,29 +1241,29 @@ UML injections. Using a Femtojet Eppendorf injector ~0.05 µl of 0.1 µm/g UML 
 
 UML and siRNA Injections. ~ 0.05 µl of 0.1 µm/g UML and ~0.05 µl of 0.1 µg/µl siRNA were injected from 80 to 60 min before the end of ventral cell cellularisation. The UML and the siRNA were injected together inside the embryo and the basal domain of the ventral cells.
 
-## Magnetic deformation device
+### Magnetic deformation device
 
 A 2D dense network of 5 microns hard permanent NdFeB micro-magnets pillars separated by five microns embedded into pdms (symbolized by a magnet in Figure 3a), was approached tangentially to the UML injected mesoderm of the embryo, at a distance of 10 microns. At this distance, the pillars produce a mean magnetic field of 400mT with a magnetic field gradients on the order of 104 T.m-1 (Roy et al., 2016), which was sufficient to mimic the earliest stages of apex constriction that initiate mesoderm invagination. (Figure 3b).
 
-## FRAP experiments
+### FRAP experiments
 
 FRAP experiments were performed on an inverted confocal Zeiss 510 microscope. Arm-GFP expressing embryos were imaged using the 488 nm laser line of the microscope. Bleaching was performed using the 488 nm and 514 nm laser lines at 100% for three seconds. Recovery of bleached areas was monitored with a frame rate of 6 s for 3 min after bleaching. Cell boundaries were identified and kymographs of bleached boundaries were produced using Packing Analyzer v2.0 (Aigouy et al., 2010). To correct for photobleaching due to image acquisition, we measured the average intensity of all unbleached cell boundaries I in each frame n of the movie and normalized average intensities to the intensity of the first frame (I0). This results in a correction factor C with Cn=I0/InCn=I0. Bleached cell boundaries were tracked and kymographs were created using Packing Analyzer.
 
-## FRET experiments
+### FRET experiments
 
 FRET experiments were performed on an inverted 2-photon Leica TSC SP8 NLO SMD (Picoquant module) microscope system or on a spinning disc CSU10 head (Yokogawa) mounted on a Nikon TE2000 microscope, both equipped with a Lifa module (Lambert Instruments) by measuring the lifetime of the donor, so called FLIM-FRET. The FRET efficiency was thereby measured as a shortening of the donor lifetime. Lifetime measurements were analysed using either the SymphoTime software (Leica/Picoquant system) or the FLIMfit 4.12.1 (software tool developed at Imperial College London), with a monoexponential fit. For this, the lifetime of the donor alone was first determined for calibration of the system. Afterwards the lifetime of the donor in the presence of the acceptor in the mesoderm and ectoderm region was analysed at the level of the adherens junctions in the lifetime images.
 
 Fluorescently labelled antibodies were injected into the Drosophila embryo before cellularization using an Eppendorf Transjector as described in Misquitta L et al (Misquitta et al., 2008). with the following alterations. Ready-made injection needles from Eppendorf were used and a self-build micromanipulator mounted on an Olympus IX70 microscope. Roughly 0.05 µl of the antibody solution were injected for a 1:200 dilution of the antibody in the embryo (a Drosophila embryo is W = 0.18 ± 0.001 mm wide and L = 0.51 ± 0003 mm high according to Markow TA et al (Markow et al., 2009), which gives an approximate volume of 9.02 ± 0.14 mm3 or 9 µl using the formula (1/6)πW^2L)
 
-## Primary antibody design for FRET
+### Primary antibody design for FRET
 
 The antibody was purified from rabbit that was immunized with the following peptide: H-CALQGNMRDPNDIPDI-NH2 (16AA) corresponding to the AA 1143–1158 of the DE-cad protein in Drosophila. The sequence was chosen based on the position of it’s corresponding mouse sequence in the crystal structure of β-cat in complex with the cytoplasmic part of the E-cad protein (PDB 1i7x). The DE-cad sequence corresponds to a loop in Region II adjacent to the alpha-helical stretch that contains the D1170 (D665 mice), which interacts with the Y667 (Y654 mice) phosphorylation site of β-cat in the complex. Peptide synthesis and antibody production was carried out by eurogentech. Received antibody solutions were stored in in glycerol (1:2) at −20°C. The antibody was concentrated using an antibody concentration kit from abcam, labelled with Alexa 555 using the Alexa Fluor 555 Antibody Labeling Kit from lifetechnologies and stored in PBS at 4°C.
 
-## Calculation of the strain from FRET efficiency variations
+### Calculation of the strain from FRET efficiency variations
 
 The FRET efficiency was calculated using the E = 1 tda/td with tda being the lifetime of the donor in the presence of the acceptor, while td denotes the lifetime of the donor alone. The distances r are then calculated as r = R0((1/E)−1)^1/6 with R0 being the Förster Radius, in the approximation that there are no cross-FRET between adjacent molecules (Wallrabe and Periasamy, 2005). The Förster Radius for this particular FRET pair (GFP and Alexa 555) is R0 = 6.3 nm (Thermofisher datasheet).
 
-## Statistics
+### Statistics
 
 A sample is one embryo or simulation, and one measurement is associated to one embryo or one simulation. N is the number of embryos or simulations by Figure, so N is the number of time the experiment was replicated both biologically and technically. Experiments and simulations are realized one by one on single embryos and single molecular complexes: the N sample size was thus designed a posteriori once the p-value showed statistically significant results enough, relative to the difficulty and time consuming of individual experiments and simulations. Statistics are based on the ANOVA test (when allowed by the Shapiro-Wilk’s normality test and in case standard deviations are similar between distinct conditions (Ananda and Weerahandi, 1997), which is the case for Figure 2c only), Mann-Whitney test, and the t-student test when allowed by the Shapiro-Wilk’s normality test, two-sided. P values for comparing two curves were calculated following reference (Fisher, 1932) with Rstudio (see ‘pvalue Fisher t-test curves comparison’ Source code 1).
 

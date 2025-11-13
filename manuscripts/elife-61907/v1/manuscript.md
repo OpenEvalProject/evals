@@ -18,7 +18,7 @@
 
 ## Abstract
 
-The question of whether single cells can learn led to much debate in the early 20th century. The view prevailed that they were capable of non-associative learning but not of associative learning, such as Pavlovian conditioning. Experiments indicating the contrary were considered either non-reproducible or subject to more acceptable interpretations. Recent developments suggest that the time is right to reconsider this consensus. We exhume the experiments of Beatrice Gelber on Pavlovian conditioning in the ciliate Paramecium aurelia , and suggest that criticisms of her findings can now be reinterpreted. Gelber was a remarkable scientist whose absence from the historical record testifies to the prevailing orthodoxy that single cells cannot learn. Her work, and more recent studies, suggest that such learning may be evolutionarily more widespread and fundamental to life than previously thought and we discuss the implications for different aspects of biology.
+The question of whether single cells can learn led to much debate in the early 20th century. The view prevailed that they were capable of non-associative learning but not of associative learning, such as Pavlovian conditioning. Experiments indicating the contrary were considered either non-reproducible or subject to more acceptable interpretations. Recent developments suggest that the time is right to reconsider this consensus. We exhume the experiments of Beatrice Gelber on Pavlovian conditioning in the ciliate Paramecium aurelia, and suggest that criticisms of her findings can now be reinterpreted. Gelber was a remarkable scientist whose absence from the historical record testifies to the prevailing orthodoxy that single cells cannot learn. Her work, and more recent studies, suggest that such learning may be evolutionarily more widespread and fundamental to life than previously thought and we discuss the implications for different aspects of biology.
 
 ## Introduction
 
@@ -74,7 +74,7 @@ Taking advantage of the fact that Paramecia feed upon bacteria, Gelber asked the
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/61907/elife-61907-fig2-v1.jpg)
 
-**Figure 2.:** Gelber, 1952.In Experiment 1 (top), one group of Paramecia was exposed to intermittent training trials in which a wire was coated with bacteria (every 3rd trial during the training phase). This group acquired a conditioned response to the clean wire, as measured by adherence to the wire in final test trials. In contrast, an untrained group did not show a conditioned response. Experiment 2 (bottom) demonstrated that the wire by itself did not drive conditioned responding.
+**Figure 2.:** In Experiment 1 (top), one group of Paramecia was exposed to intermittent training trials in which a wire was coated with bacteria (every 3rd trial during the training phase). This group acquired a conditioned response to the clean wire, as measured by adherence to the wire in final test trials. In contrast, an untrained group did not show a conditioned response. Experiment 2 (bottom) demonstrated that the wire by itself did not drive conditioned responding.
 
 One problem with Gelber’s first experiment was that it did not control for repeated exposure to the wire itself as a driver of behavioral change. Accordingly, in her second experiment (Figure 2, bottom) she tested a non-reinforced training group that received wire-alone trials; this group did not show any evidence of conditioned responding. Thus, the combination of wire and bacteria was necessary to produce the learning effect.
 
@@ -119,6 +119,77 @@ Beatrice Gelber, though she could not have known about the specifics of DNA meth
 "This paper presents a new approach to behavioral problems which might be called molecular biopsychology… Simply stated, it is hypothesized that the memory engram must be coded in macromolecules… As the geneticist studies the inherited characteristics of an organism the psychologist studies the modification of this inherited matrix by interaction with the environment. Possibly the biochemical and cellular physiological processes which encode new responses are continuous throughout the phyla (as genetic codes are) and therefore would be reasonably similar for a protozoan and a mammal." (Gelber, 1962a, p. 166).
 
 The idea that intracellular mechanisms of memory storage might be conserved across phyla is tantalizing yet untested. The demise of behavioral studies in Paramecia and other ciliates has meant that, despite the wealth of knowledge about ciliate biology, we still know quite little about the molecular mechanisms underlying Gelber’s findings. Nonetheless, we do know that many intracellular pathways that have been implicated in multicellular memory formation exist in ciliates (Table 1). For example, ciliates express calmodulin, MAP kinases, voltage-gated calcium channels, in addition to utilizing various epigenetic mechanisms that might be plausible memory substrates, such as DNA methylation and histone modification. In like manner, key molecular components of neurons and synapses emerged in organisms without nervous systems, including unicellular organisms (Ryan and Grant, 2009; Arendt, 2020). We believe it is an ideal time to revisit the phylogenetic origins of learning experimentally and theoretically.
+
+**Table 1.**
+ Molecules/pathways known to be involved in learning and memory, with homologues in ciliates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Molecules/pathways known to be involved in learning/memory</th>
+      <th>Ciliates with reported homologues</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N-methyl-D-aspartate receptor (NMDAR)</td>
+      <td>P. primaurelia (only partial sequences)</td>
+      <td>Ramoino et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Glutamate receptor</td>
+      <td>P. tetraurelia</td>
+      <td>Van Houten et al., 2000</td>
+    </tr>
+    <tr>
+      <td>Calmodulin</td>
+      <td>P. tetraurelia</td>
+      <td>Plattner and Verkhratsky, 2018</td>
+    </tr>
+    <tr>
+      <td>cAMP</td>
+      <td>P. tetraurelia</td>
+      <td>Plattner and Verkhratsky, 2018</td>
+    </tr>
+    <tr>
+      <td>cAMP-dependent protein kinase</td>
+      <td>P. tetraurelia</td>
+      <td>Plattner and Verkhratsky, 2018</td>
+    </tr>
+    <tr>
+      <td>Mitogen activated protein kinase (MAPK)</td>
+      <td>P. caudatum</td>
+      <td>Wada and Watanabe, 2007</td>
+    </tr>
+    <tr>
+      <td>Protein kinase C (PKC)</td>
+      <td>T. thermophilia</td>
+      <td>Hegyesi and Csaba, 1994</td>
+    </tr>
+    <tr>
+      <td>Calcineurin</td>
+      <td>P. tetraurelia</td>
+      <td>Plattner and Verkhratsky, 2018</td>
+    </tr>
+    <tr>
+      <td>DNA methyltransferases (DNMTs)</td>
+      <td>T. thermophilia</td>
+      <td>Gutiérrez et al., 2000</td>
+    </tr>
+    <tr>
+      <td>Histone acetyltransferases (HATs)</td>
+      <td>T. thermophilia</td>
+      <td>Vavra et al., 1982</td>
+    </tr>
+    <tr>
+      <td>Histone deacetylases (HADCs)</td>
+      <td>T. thermophilia</td>
+      <td>Wiley et al., 2005</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Conclusion
 

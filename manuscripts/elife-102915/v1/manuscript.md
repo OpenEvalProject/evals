@@ -17,9 +17,9 @@
 
 ### Affiliations
 
-1. https://ror.org/0153tk833 Dept. of Biochemistry and Molecular Genetics, University of Virginia Charlottesville United States
-2. https://ror.org/008s83205 Dept. of Genetics, University of Alabama at Birmingham Birmingham United States
-3. https://ror.org/031q21x57 Cancer Center, University of Wisconsin in Milwaukee Milwaukee United States
+1. Dept. of Biochemistry and Molecular Genetics, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+2. Dept. of Genetics, University of Alabama at Birmingham Birmingham United States ([ROR:008s83205](https://ror.org/008s83205))
+3. Cancer Center, University of Wisconsin in Milwaukee Milwaukee United States ([ROR:031q21x57](https://ror.org/031q21x57))
 
 † Corresponding author
 
@@ -39,23 +39,89 @@ This will allow us to test whether the mouse liver survival and endoreduplicatio
 
 ## Results
 
-## ORC2 is essential for embryonic development and proliferation of mouse embryo fibroblasts
+### ORC2 is essential for embryonic development and proliferation of mouse embryo fibroblasts
 
 Mice with LoxP sites inserted flanking exons 6 and 7 of mouse Orc2 were purchased from Cyagen Biosciences Inc (Figure 1A). Genotyping with primers F2 and R2 distinguished the loxP-marked allele from the WT allele (Figure 1B). In a cross of Orc2f/+ mice, there was no significant decrease in the yield of Orc2f/+ or Orc2f/f compared to Orc2+/+ mice (Figure 1C), suggesting that the insertion of the loxP sites in the introns of Orc2 did not impair the function of ORC2. Recombination between the loxP sites would delete the coding exons 6 and 7 of Orc2, which removes amino acids L111-V150 (Figure 1D). If a transcript is expressed that skips exons 6 and 7, then the resulting protein mutates A110 to V110 and then throws the protein-coding sequence out of frame (Figure 1D, ΔORC2), so that the bulk of the 576 amino acid ORC2 protein, including the AAA + like and WH domains (K230-A576) are not expressed. The AAA + like domain and the WH domain are key elements for ORC2 assembly into ORC and for ORC function. Even in the remote possibility that a truncated protein is expressed due to alternative splicing and translation initiation from an internal methionine, the next methionine is at M301, so that half of the protein including 70 amino acids of the 239 amino acid AAA+-like domain (K230-G469) would be deleted.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/102915/elife-102915-fig1-v1.jpg)
 
-**Figure 1.:** Orc2 mice and ORC2 knockout (KO) mouse embryo fibroblasts (MEFs).f/f(A) Scheme of introduced loxP sites in Orc2 locus. (B) Representative picture of genotyping of offspring coming from Orc2 crossed with f/+Orc2. (f/+C) The ratio of observed to expected animals coming from Orc2 crossed with f/+Orc2. (f/+D) Schematic of the ORC2 protein and the DeltaORC2 protein produced after deletion of exons 6 and 7. A110 is mutated to V110 and then the protein goes out of frame. (E) Validation of Orc2 deletion 3 d after Adeno cre transduction. (F) Western blot of ORC2 protein 5 d after Adeno cre transduction. 10 or indicated μl of lysate loaded/lane as written on the top. (G) MTT assay of WT and Orc2 MEFs without and with Adeno cre transduction. (f/fH) Western blot of ORC2 protein 5 and 15 d after Adeno Cre transduction.Figure 1—source data 1.Figure 1, panel B, indicating the relevant bands and individual animals.Figure 1—source data 2.Figure 1, panel B.Figure 1—source data 3.Figure 1, panel E, indicating the relevant bands and increasing Adeno-Cre.Figure 1—source data 4.Figure 1, panel E.Figure 1—source data 5.Figure 1, panel F, indicating the relevant bands and addition of Adeno-Cre.Figure 1—source data 6.Figure 1, panel F.Figure 1—source data 7.Figure 1, panel H, indicating the relevant bands and ORC2 protein expression.Figure 1—source data 8.Figure 1, panel H.
+**Figure 1.:** (A) Scheme of introduced loxP sites in Orc2 locus. (B) Representative picture of genotyping of offspring coming from Orc2f/+ crossed with Orc2f/+. (C) The ratio of observed to expected animals coming from Orc2f/+ crossed with Orc2f/+. (D) Schematic of the ORC2 protein and the DeltaORC2 protein produced after deletion of exons 6 and 7. A110 is mutated to V110 and then the protein goes out of frame. (E) Validation of Orc2 deletion 3 d after Adeno cre transduction. (F) Western blot of ORC2 protein 5 d after Adeno cre transduction. 10 or indicated μl of lysate loaded/lane as written on the top. (G) MTT assay of WT and Orc2f/f MEFs without and with Adeno cre transduction. (H) Western blot of ORC2 protein 5 and 15 d after Adeno Cre transduction.
 
 The Sox2-Cre allele expresses active Cre during embryonic development. Crossing the Orc2f/f mice with Sox2-Cre mice resulted in no Orc2Δ/Δ embryos at E7.5 days onwards suggesting that embryonic deletion of Orc2 is lethal (Table 1). The near expected number of Orc2+/Δ embryos suggests that hemizygosity of Orc2 can still support viability.
+
+**Table 1.**
+ Embryonic lethality of Orc2 KO.The Orc2Δ allele was created by expressing Cre recombinase from a Sox2 promoter in the Orc2f/f embryos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Offspring from Orc2+/Δ intercrosses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="3">Genotype</td>
+      <td rowspan="2">Empty decidua</td>
+      <td rowspan="2">total # (litters)</td>
+    </tr>
+    <tr>
+      <td>Stage</td>
+      <td>Orc2+/+</td>
+      <td>Orc2+/Δ</td>
+      <td>OrcΔ /Δ</td>
+    </tr>
+    <tr>
+      <td>E3.5</td>
+      <td>18</td>
+      <td>30</td>
+      <td>6</td>
+      <td>6 (n.d)</td>
+      <td>60 (6)</td>
+    </tr>
+    <tr>
+      <td>E7.5</td>
+      <td>9</td>
+      <td>21</td>
+      <td>0</td>
+      <td>16</td>
+      <td>46 (5)</td>
+    </tr>
+    <tr>
+      <td>E13.5</td>
+      <td>9</td>
+      <td>31</td>
+      <td>0</td>
+      <td>15</td>
+      <td>55 (6)</td>
+    </tr>
+    <tr>
+      <td>2 wk</td>
+      <td>52</td>
+      <td>115</td>
+      <td>0</td>
+      <td>-</td>
+      <td>167 (27)</td>
+    </tr>
+  </tbody>
+</table>
 
 Mouse embryo fibroblasts (MEF) were obtained from Orc2f/f E13.5 day embryos and cultured in vitro. Three days after infection with an Adenovirus expressing Cre, effective recombination between the loxP sites is seen, resulting in a genotype showing that exons 6 and 7 have been deleted in most of the MEF (Orc2Δ) (Figure 1E). Consistent with this, at 5 d after adeno-Cre infection, the ORC2 protein is not detected in the MEF population (Figure 1F). The dilution of the undeleted MEF lysate on the same blot suggests, that if any ORC2 protein is expressed in the MEF after adeno-Cre infection, it is <10% of that in the undeleted MEF. The proliferation rate of the MEF were measured by MTT assays. Even in the Orc2+/+ MEF, the infection with adeno-Cre decreased proliferation a little (the orange line compared to the blue line in Figure 1G). However, for Orc2f/f MEF infection with adeno-Cre impairs proliferation even further (yellow line compared to black line in Figure 1G). Furthermore, when the MEF were cultured for 15 d, the surviving cells express significant levels of ORC2 (Figure 1H), suggesting that the MEFs that had not undergone the Cre-mediated deletion take over the culture.
 
 Taken together, these results suggest that Cre-mediated deletion of exons 6 and 7 of Orc2 leads to early embryonic lethality and impairs the proliferation of normal diploid MEFs in culture.
 
-## Knockout of Orc2 in developing mouse liver makes ORC2 protein undetectable in hepatocytes and yet supports most of normal development and endoreduplication
+### Knockout of Orc2 in developing mouse liver makes ORC2 protein undetectable in hepatocytes and yet supports most of normal development and endoreduplication
 
 Mice carrying one copy of the Albumin promoter-driven Cre gene (Alb-Cre) express the Cre recombinase specifically in hepatocytes (Postic et al., 1999). When the Orc2f/f mice are crossed with mice carrying Alb-Cre (shortened below as Alb), the Cre recombinase is expected to promote the recombination-mediated deletion of exons 6 and 7 of Orc2 in the hepatocytes. The Alb+/--Orc2f/f mice were viable and fertile (Figure 2A and B). Crossing such mice yielded the expected numbers of Alb+/--Orc2f/f mice, though there was a drop in the yield of Alb+/+-Orc2f/f mice. One allele of Alb-Cre is sufficient to express enough Cre to carry out homozygous deletion of the Orc2 allele in the hepatocytes, so that the results suggest that deletion of Orc2 in the hepatocytes did not impair viability. The partial lethality of the Alb+/+ (HOM) mice could be due to the toxicity of high dose of Cre recombinase expressed, something that has been noted by other groups (Schmidt et al., 2000; Loonstra et al., 2001; Schmidt-Supprian and Rajewsky, 2007; Naiche and Papaioannou, 2007; Janbandhu and Moik, 2014). Because the Alb-Cre is expressed only in the hepatocytes and not in other cells in the liver, we isolated hepatocytes from these livers by growing them in culture to determine whether the ORC2 protein was decreased (Figure 2C). The ORC2 protein was significantly decreased in all five of the Alb+/--Orc2f/f mice, showing consistent and near 100% effect of the deletion in the hepatocytes. Western blots for several other ORC subunits, and CDC6 protein showed that the loss of ORC in the same hepatocytes did not significantly decrease these proteins, though MCM2 and MCM3 (two subunits of the MCM2-7 helicase component) were decreased by 50% (Figure 2D). The body weights of the Alb, Orc2f/f mice were smaller than in the Orc2f/f animals of both sexes, though the liver size and liver size normalized to body weight was significantly smaller only in the females (Figure 2E–G). There was some elevation of the circulating liver enzymes in the mice where Alb-Cre is expressed to delete the Orc2 gene, suggesting that there is some impairment of liver function (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/102915/elife-102915-fig2-v1.jpg)
+
+**Figure 2.:** (A) Scheme of Alb+/--Orc2f/f ROSA26stop-EYFP crossed with Alb+/--Orc2f/f ROSA26stop-EYFP (All mice are with ROSA26stop-EYFP and so we do not include this in the genotypes below). (B) The ratio of observed to expected animals coming from A. (C) Western blot of hepatocytes from Orc2f/f and Alb+/--Orc2f/f animals. Tubulin was used as loading control. (D) Quantification of the Western blots of hepatocyte lysates from Orc2 f/f (without Alb-cre) mice and the same genotype but with Alb-Cre to show the levels of other key replication initiation proteins in the ORC2 KO hepatocytes. (E) Average body weight of Orc2f/f and Alb-Orc2f/f animals. (F) Average liver weight of Orc2f/f and Alb-Orc2f/f animals. (G) Average liver-to-body weight ratio of Orc2f/f and Alb-Orc2f/f animals. (H) Representative H&E staining of liver tissue from Orc2f/f (WT) and Alb-Orc2f/f (KO) animals. Both panels at same scale. (I) Quantification of hepatocyte nuclear size in Orc2f/f and Alb-Orc2f/f animals. (J) Quantification of hepatocyte nuclear size in Orc2f/f and Alb-Orc2f/f female mice. (K) Quantification of hepatocytes nuclear size in Orc2f/f and Alb-Orc2f/f male mice. *p<0.05, **p<0.01, two-tailed Student’s t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/102915/elife-102915-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** *p<0.05, two-tailed homoscedastic Student’s t-test.
 
 The livers of mice can grow by proliferation (increasing the number of cells) or by hypertrophy of cells (larger cells with endoreduplicated nuclei). Histological examination of the livers revealed that the Orc2 deletion was accompanied by the presence of fewer (~50% of WT levels), but larger nuclei and cells (Figure 2H and I). The Orc2 deleted hepatocytes had significantly larger nuclei in both males and females (Figure 2J and K).
 
@@ -63,41 +129,53 @@ To determine whether the larger nuclei were generated by endoreduplication, we i
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/102915/elife-102915-fig3-v1.jpg)
 
-**Figure 3.:** (A) Experimental design. (B–D) Quantification of nuclei ploidy on 10,000 nuclei from the livers of Orc2 and f/f ROSA26stop-EYFPAlb-Orc2 animals. (f/f ROSA26stop-EYFPE–G) Quantification of nuclei ploidy for EYFP low (includes negative) and high (positive) primary liver cells. *p<0.05, **p<0.01, ***p<0.001, two-tailed Student’s t-test.
+**Figure 3.:** (A) Experimental design. (B–D) Quantification of nuclei ploidy on 10,000 nuclei from the livers of Orc2f/f ROSA26stop-EYFP and Alb-Orc2f/f ROSA26stop-EYFP animals. (E–G) Quantification of nuclei ploidy for EYFP low (includes negative) and high (positive) primary liver cells. *p<0.05, **p<0.01, ***p<0.001, two-tailed Student’s t-test.
 
-## DNA replication of Alb-Cre+/--Orc2f/f hepatocytes in vitro
+### DNA replication of Alb-Cre+/--Orc2f/f hepatocytes in vitro
 
 Primary hepatocytes isolated from 8 to 10-wk-old mouse liver can replicate their DNA and proliferate for a limited time in vitro. We isolated such hepatocytes from Alb-cre-/- (WT) and Alb-cre+/-, both from Orc2f/f mice (Figure 4A). Genotyping reveals that over 90% of the cells from the Alb-cre+/- have successfully deleted Orc2 exons 6 and 7 (Figure 4B), while immunoblotting shows that ORC2 protein expression is also significantly decreased in these cells (Figure 3C). EdU labeling in vitro for 2 hr, showed that the EYFP positive cells (where Cre recombinase has been active) can incorporate EdU (Figure 4C), although the total number of nuclei that incorporate EdU is decreased to about 30% of that seen in the ORC2 wild-type hepatocytes (Figure 4D). Thus hepatocytes in culture can continue to replicate DNA in the absence of detectable ORC2 protein.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/102915/elife-102915-fig4-v1.jpg)
 
-**Figure 4.:** Orc2 KO primary hepatocytes are viable and can incorporate EdU in vitro.(A) Experimental design. (B) Genotyping and western blotting of hepatocytes. (C) Representative picture of EdU, EYFP and DAPI staining on the Orc2 WT (Orc2) and KO (f/fOrc2) primary hepatocytes. (f/f Alb-CreD) The percentage of EdU positive nuclei from Orc2 WT or Orc2 KO primary hepatocytes. *p < 0.05, two-tailed Student’s t test.Figure 4—source data 1.Figure 4, panel B, indicating the relevant bands and individual animals.Figure 4—source data 2.Figure 4, panel B.
+**Figure 4.:** (A) Experimental design. (B) Genotyping and western blotting of hepatocytes. (C) Representative picture of EdU, EYFP and DAPI staining on the Orc2 WT (Orc2f/f) and KO (Orc2f/f Alb-Cre) primary hepatocytes. (D) The percentage of EdU positive nuclei from Orc2 WT or Orc2 KO primary hepatocytes. *p < 0.05, two-tailed Student’s t test.
 
-## DNA replication in Alb -Orc2f/f hepatocytes during liver regeneration in vivo
+### DNA replication in Alb -Orc2f/f hepatocytes during liver regeneration in vivo
 
 Liver DNA synthesis peaks around 36–48 hr, and the liver regenerates to nearly 50% of its original weight within 2–3 d following partial hepatectomy. Such regeneration involves both normal mitotic DNA replication/cell division and endoreduplication accompanied by hypertrophy of the cells. We therefore tested whether deletion of the Orc2 gene in the hepatocytes adversely affects liver regeneration after partial hepatectomy in 8–14-wk-old mice (Figure 5A). Nearly two-thirds of the liver is removed surgically and the mice allowed to recover for 36–48 hr before harvesting the regenerated liver.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/102915/elife-102915-fig5-v1.jpg)
 
-**Figure 5.:** (A) Schematic of the experiment. (B) Body weight of the Orc2 mice without (-/-) or with f/f ROSA26stop-EYFPAlb-Cre (+/-) before partial hepatectomy. (C) Liver weight of the mice in B after liver regeneration. (D) Regenerated liver to pre-hepatectomy body weight ratio of the mice in B. (E) H&E stain of Orc2 livers with intact f/f ROSA26stop-EYFPOrc2 (Alb-cre, N=3) or -/-Orc2 knockout (Alb-cre, N=7). Scale bar: 25 μm. (+/-F) Quantitation of nuclear counts per field (76,000 μm2). Six images were taken for each liver. 0 hr (pre-resection). 42 hr (post-regeneration). (G) EdU incorporation of indicated livers. EYFP marks cells where Cre has been expressed. Orc2 (Alb-cre, N=5) or -/-Orc2 knockout (Alb-cre, N=5). Scale bar: 25 μm. (+/-H) Percent EdU+ nuclei counted in 1882 and 825 nuclei in the Cre- and Cre+ livers, respectively. (I) Nuclear size of indicated livers. 0 hr (pre-resection). 42 hr (post-regeneration). Mean and S.D from about 40–70 nuclei, *p<0.05, ****p<0.0001, unpaired two-tailed Student’s t test is used.
+**Figure 5.:** (A) Schematic of the experiment. (B) Body weight of the Orc2f/f ROSA26stop-EYFP mice without (-/-) or with Alb-Cre (+/-) before partial hepatectomy. (C) Liver weight of the mice in B after liver regeneration. (D) Regenerated liver to pre-hepatectomy body weight ratio of the mice in B. (E) H&E stain of Orc2f/f ROSA26stop-EYFP livers with intact Orc2 (Alb-cre-/-, N=3) or Orc2 knockout (Alb-cre+/-, N=7). Scale bar: 25 μm. (F) Quantitation of nuclear counts per field (76,000 μm2). Six images were taken for each liver. 0 hr (pre-resection). 42 hr (post-regeneration). (G) EdU incorporation of indicated livers. EYFP marks cells where Cre has been expressed. Orc2 (Alb-cre-/-, N=5) or Orc2 knockout (Alb-cre+/-, N=5). Scale bar: 25 μm. (H) Percent EdU+ nuclei counted in 1882 and 825 nuclei in the Cre- and Cre+ livers, respectively. (I) Nuclear size of indicated livers. 0 hr (pre-resection). 42 hr (post-regeneration). Mean and S.D from about 40–70 nuclei, *p<0.05, ****p<0.0001, unpaired two-tailed Student’s t test is used.
 
 Although the liver weight after regeneration was smaller than that of WT livers, the liver:body weight ratio was similar in the livers with Orc2 deletion and Orc2 WT (Figure 5B-D). The H&E stain of the regenerated liver shows that the liver cells are larger and have larger nuclei in the liver with Orc2 deletion (Figure 5E, similar to Figure 2). In these experiments, both before and after regeneration, the livers with the Orc2 deletion have ~50% nuclei compared to the wild-type livers (Figure 5F). Finally, labeling the livers by injection of EdU in the mice 3–4 hr before harvesting, shows that the EYFP positive cells (indicating activity of Cre recombinase) were proficient in synthesizing DNA and incorporating EdU (Figure 5G and H). Nearly 100% of the hepatocytes were positive for EYFP, suggesting that the Cre recombinase was active in the vast majority of the hepatocytes (Figure 5G), and consistent with the complete depletion of ORC2 protein from the hepatocytes of all mice with that genotype (Figure 3C). Thus the 30% of the liver cells that were incorporating EdU in the Cre expressing livers (Figure 5H) were doing so in the absence of ORC2 protein. Also, we noted several pairs of EdU positive nuclei (marked by arrows in Figure 5G) whose relative positions suggest that they are sisters born from the same mitosis, suggesting that some EdU positive cells can go through mitosis in the EYFP positive cells. Finally, the nuclei were significantly larger in the Cre active Orc2f/f hepatocytes than in the hepatocytes without Cre, both before and after regeneration (Figure 5I).
 
 We did not explore why the EYFP protein is mostly nuclear in hepatocytes in culture (Figure 4C) and mostly cytoplasmic in hepatocytes in the liver tissue (Figure 5G), but speculate that differences in signaling pathways or fixation techniques between the two conditions contribute to this difference.
 
-## Viable mice with endoreduplicated hepatocyte nuclei in Alb-Orc1f/f Orc2f/f mice
+### Viable mice with endoreduplicated hepatocyte nuclei in Alb-Orc1f/f Orc2f/f mice
 
 We have reported that conditional deletion of Orc1 in developing mouse livers still allowed livers to develop and induced premature endoreduplication, suggesting that significant DNA synthesis can occur in liver cells that are genetically deleted of Orc1. We bred the Orc1f/f mice with Orc2f/f mice to obtain mice where both Orc1 and Orc2 are floxed but Alb-cre is not present (Figure 6A and B). Even though Cre was not expressed in these livers, for unknown reasons there was a decrease in the percentage of progeny when Orc2 was floxed in the liver (with or without Orc1 being floxed), but not when just Orc1 was floxed (Figure 6C). These mice were then bred with Orc2f/f Alb-cre+/+ mice, and the resulting Orc1f/+, Orc2f/f, Alb-cre+/- intercrossed to get Orc1f/f, Orc2f/f, Alb-Cre+/-mice where the Orc1 and Orc2 alleles are conditionally deleted in hepatocytes, and the deletion is accompanied by activation of EYFP expression. Immunoblotting of isolated hepatocytes showed that in four out of four mice expressing the Cre recombinase the ORC1 and ORC2 proteins were decreased significantly (Figure 6D). Immunoblotting of some of the other replication proteins showed no decrease in other ORC subunits, CDC6, and two of the MCM2-7 subunits (Figure 6E). The ORC3 protein, which did not change when Orc2 was deleted (Figure 2D) was surprisingly elevated in Figure 6E when Orc1 and Orc2 were both deleted. We do not know why this is the case, and it was not seen consistently in all four animals. Similarly, the 50% decrease of MCM2 and MCM3 that was seen in the absence of ORC2 (Figure 2D), disappeared when both Orc1 and Orc2 are deleted.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/102915/elife-102915-fig6-v1.jpg)
+
+**Figure 6.:** (A–B) Breeding schemes to obtain conditional double flox animals. (C) The ratio of observed to expected animals coming from B. Orc1=all animals with Orc1f/f ROSA26stop-EYFP, Orc2=all animals with Orc2f/f ROSA26stop-EYFP, Orc1 Orc2=all animals with Orc1f/f Orc2f/f ROSA26stop-EYFP genotype. This was before the introduction of Alb-Cre. (D) Immunoblot of hepatocytes from WT (Orc1f/f Orc2f/f) and DKO (Orc1f/f Orc2f/f Alb-cre+/-) mice to show that ORC1 and ORC2 are depleted in the DKO cells. (E) Quantitation of immunoblots to show that levels of other key initiation protein subunits are not decreased in the DKO mice hepatocytes. (F) Average body, liver weight, and their ratio for WT and DKO animals. (G) Representative H&E staining of liver tissue from male WT and DKO animals. (H) Quantification of hepatocyte nuclear size in the WT and DKO animals. (I) Quantification of nuclei ploidy for EYFP low (includes negative) and high (positive) primary liver cells from DKO mice.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/102915/elife-102915-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative picture of livers of female Orc1 Orc2 WT and liver-specific double KO (dKO). (B) Representative H&E staining of liver tissue from Orc1f/f Orc2f/f ROSA26stop-EYFP (WT) and Alb-Orc1f/f Orc2f/f ROSA26stop-EYFP (dKO) females. (C) Kaplan-Meier plot for Alb-Orc1f/f Orc2f/f ROSA26stop-EYFP (dKO) females postnatally.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/102915/elife-102915-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Ratio of liver weight to body weight for mice at 6 wk of age. The Orc1 mutant, Orc2 mutant or double mutant mice are in red. (B) Enlarged nuclei seen in 6 wk mouse livers in mice expressing Alb-Cre where both alleles of one ORC subunit are floxed (underlined): Orc1f/f or Orc2f/f. (C) Enlarged nuclei seen in 6 wk mouse livers in mice expressing Alb-Cre where both alleles of two ORC subunits are floxed (underlined): Orc1f/f Orc2f/f.
+
 The female Alb-Orc1f/f Orc2f/f mice were significantly smaller in size, with smaller livers and decreased liver to body weight ratio (Figure 6F, Figure 6—figure supplement 1A, Figure 6—figure supplement 2A), but the male mice were relatively less affected (Figure 6F). We have also observed ~50% lethality of double knock-out female mice within the first month of life, but the remaining 50% survive beyond 4 mo of age (Figure 6—figure supplement 1C). H&E staining showed that the double knockout (DKO) male livers have fewer but larger cells with significantly larger nuclei (Figure 6G and H, Figure 6—figure supplement 2C). Interestingly, this phenotype is even more marked in the female liver (Figure 6—figure supplement 1B). By flow cytometry, the EYFP positive cells as evidence of Cre recombinase activity had distinctly more polyploidization than the EYFP negative cells (Figure 6I). Taken together the results reveal that hepatocytes can synthesize DNA by endoreduplication to produce very large nuclei and very large cells so that the liver size is not hugely decreased, even in the absence of two subunits of ORC. Female mice that have a deletion in two subunits of ORC suffer more morbidity and mortality than male mice.
 
-## DNA replication in Alb-Cre+/--Orc1f/f Orc2f/f hepatocytes during liver regeneration in vivo
+### DNA replication in Alb-Cre+/--Orc1f/f Orc2f/f hepatocytes during liver regeneration in vivo
 
 Finally, partial hepatectomy was performed in the livers of male mice with DKO of Orc1 and Orc2. As can be seen even before partial hepatectomy the body weights were not significantly different from WT mice (Figure 7A). Post regeneration, the liver weights and liver/body weight ratios were not decreased in the DKO mice compared to the WT mice (Figure 7B and C). H&E sections showed that the hepatocyte nuclei were larger and hepatocyte nuclear density lower in the DKO livers both pre-hepatectomy and in the regenerated livers 36 hr post-hepatectomy (Figure 7D–F). EdU labeling for 3–4 hr before harvesting the livers showed that despite the DKO, the EYFP positive cells showed extensive DNA synthesis (Figure 7G). Even though nearly 100% of the hepatocytes are EYFP positive (Figure 7G) and ORC1 and ORC2 proteins depleted in the hepatocytes (Figure 6D), 15% of nuclei stained with EdU (Figure 7H), a percentage that was higher in the DKO regenerating livers than in the WT livers, suggesting that the endoreduplication that accompanies liver regeneration can occur even after deletion of two of the six-subunits of ORC.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/102915/elife-102915-fig7-v1.jpg)
 
-**Figure 7.:** (A–C) Body weight pre-resection, liver weight post-regeneration, and regenerated liver to body weight ratio in mice with indicated genotypes. Black bars: 4 wild-type (WT) males (Orc1 mice without f/f Orc2f/f ROSA26stop-EYFPAlb-Cre). White bars: 6 dKO males (Orc1 mice with f/f Orc2f/f ROSA26stop-EYFPAlb-Cre+/-). No significant difference between the two groups using two-tailed Student t-test. (D) H&E stain of WT (N=4) or DKO mice (N=6). Scale bar: 50 μm. (E) Quantitation of hepatocyte nuclear size post regeneration. WT: black bars. DKO: white bars. 0 hr (pre-resection). 42 hr (post-regeneration). Five-six images were taken for each liver. About 120–200 nuclei are counted. (F) Quantitation of hepatocyte nuclear density post regeneration. WT: black bars. DKO: white bars. 0 hr (pre-resection). 42 hr (post-regeneration). Five-six images were taken for each liver. (G) Micrographs of EdU, DAPI and EYFP imaging of livers with indicated genotypes post regeneration. WT (N=6) and DKO mice (N=7). Scale bar: 20 μm. WT in the top row, DKO in the bottom row. (H) Quantitation of EdU positive nuclei post regeneration. WT: black bar. DKO: white bar. Five-six images were taken for each liver. *p<0.05, ****p<0.0001, unpaired two-tailed Student’s t-test were used.
+**Figure 7.:** (A–C) Body weight pre-resection, liver weight post-regeneration, and regenerated liver to body weight ratio in mice with indicated genotypes. Black bars: 4 wild-type (WT) males (Orc1f/f Orc2f/f ROSA26stop-EYFP mice without Alb-Cre). White bars: 6 dKO males (Orc1f/f Orc2f/f ROSA26stop-EYFP mice with Alb-Cre+/-). No significant difference between the two groups using two-tailed Student t-test. (D) H&E stain of WT (N=4) or DKO mice (N=6). Scale bar: 50 μm. (E) Quantitation of hepatocyte nuclear size post regeneration. WT: black bars. DKO: white bars. 0 hr (pre-resection). 42 hr (post-regeneration). Five-six images were taken for each liver. About 120–200 nuclei are counted. (F) Quantitation of hepatocyte nuclear density post regeneration. WT: black bars. DKO: white bars. 0 hr (pre-resection). 42 hr (post-regeneration). Five-six images were taken for each liver. (G) Micrographs of EdU, DAPI and EYFP imaging of livers with indicated genotypes post regeneration. WT (N=6) and DKO mice (N=7). Scale bar: 20 μm. WT in the top row, DKO in the bottom row. (H) Quantitation of EdU positive nuclei post regeneration. WT: black bar. DKO: white bar. Five-six images were taken for each liver. *p<0.05, ****p<0.0001, unpaired two-tailed Student’s t-test were used.
 
 ## Discussion
 
@@ -108,6 +186,66 @@ Five of the six-subunits of ORC (ORC1-5) associate to form a ring-shaped structu
 Our results show that while Orc2 is genetically essential for viability of early embryos in utero and mouse embryo fibroblasts in vitro, mutational inactivation of Orc2, or combined inactivation of Orc1 and Orc2, does not significantly inhibit development of the mouse liver. Adult, viable mice are produced. Albumin expression is activated very early in hepatoblasts in the 7–8 somite stage and the albumin mRNA can be seen in the hepatic primordium emerging from the gut at E9.5 days (Gualdi et al., 1996). Single-cell sequencing studies confirm that hepatoblasts expressing albumin are present at E11.0 and that undifferentiated endodermal cells (the precursors to hepatoblasts) are non-existent (Wang et al., 2020) 3H-thymidine incorporation can be measured in the liver as late as days 7–14 postnatally (Tilghman and Belayew, 1982), so that many cycles of DNA replication and cell proliferation are expected to occur in hepatoblasts and hepatocytes after the activation of Alb-Cre and subsequent homozygous knockout of Orc2 (or Orc1) in the hepatocytes.
 
 The presence of functional livers in the mutant (but viable) animals, suggested that the homozygous knockout of these genes did not have a profound effect on liver development, as would have been expected if the cells were as sensitive as MEFs in culture to the loss of the ORC holocomplex. We have been unable to find antibodies that will recognize mouse ORC1 or ORC2 proteins in immunohistochemistry on tissues and so decided to calculate how many cell divisions have to occur after the Orc1 or Orc2 genes are deleted in the embryonic mouse hepatocytes (see Methods and Table 2). The calculations suggest that the Orc2 deleted livers and male DKO livers underwent at least 18 cell divisions, while the female DKO livers underwent at least 15 cell divisions since E9.5 (Table 2, bottom row).
+
+**Table 2.**
+ Estimate of number of hepatocyte nuclei in adult mice of indicate genotypes and thus, number of hepatocyte nuclear divisions required after E9.5 mouse embryos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WT</th>
+      <th>Orc2 -/-</th>
+      <th>Orc1 -/-Orc2 -/-(Females)</th>
+      <th>Orc1 -/-Orc2 -/-(Males)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Liver weight</td>
+      <td>100%</td>
+      <td>50–70%</td>
+      <td>30%</td>
+      <td>47%</td>
+    </tr>
+    <tr>
+      <td>Hepatocyte nuclear density</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>0.1</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>Total nuclei in liver (normalized to WT)</td>
+      <td>100</td>
+      <td>25–37.5</td>
+      <td>3</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>Deficit in # cell division</td>
+      <td>0</td>
+      <td>1–2</td>
+      <td>5</td>
+      <td>1–2</td>
+    </tr>
+    <tr>
+      <td>Number of nuclear divisions since E9.5</td>
+      <td>20</td>
+      <td>18</td>
+      <td>15</td>
+      <td>19</td>
+    </tr>
+  </tbody>
+</table>
 
 If we allow a generous three cell divisions for the Cre recombinase to definitively excise the Floxed genes (consistent with what we see in MEFs in culture), this means that 15 cell divisions in the Orc2 deleted livers and male DKO livers occurred after the gene(s) was/were deleted. Once a gene is deleted, each cell division decreases the corresponding protein at least by half, so that six cell divisions would dilute the targeted protein to <1.5% of the wild-type levels. Thus even after the ORC2 (or ORC1 and ORC2 in the DKO mice) decreased to <1.5% the WT level, the Orc2 knockout livers (male or female) and the male DKO livers could execute at least 9 more rounds of replication and cell division. Note the amount of the relevant ORC subunit would continue to decrease by half with each further division. Also, that the levels of ORC are likely to decrease faster if the protein is actively degraded or if more cell divisions are necessary to counter any development-related apoptosis.
 
@@ -129,53 +267,53 @@ Interestingly, the deletion of Orc2 or of Orc1 + Orc2, in the hepatocytes does n
 
 ## Methods
 
-## Mice
+### Mice
 
 Work involving mice adhered to the guidelines of the Institutional Animal Care and Use Committees (IACUC) at the University of Virginia (protocol number 4198), the University of Alabama at Birmingham (protocol number 22335), the Ohio State University and the Medical University of South Carolina. Orc1 f/f ROSA26stop-EYFP animals were previously reported (Okano-Uchida et al., 2018). Orc2 f/f mice were generated by Cyagen Biosciences Inc Exons 6–7 (amino acids L111-V150) was selected as conditional knockout region (cKO). Mouse genomic fragments containing homology arms (HAs) and cKO region were amplified from BAC clone by using high fidelity Taq DNA polymerase and were sequentially assembled into a targeting vector together with recombination sites and selection marker, Neo cassette, flanked by SDA (self-deletion anchor) sites. The linearized vector was electroporated into C57BL/6 ES cells that were subject to G418 selection (200 μg/mL) after 24 hr. 188 G418 resistant clones were picked and amplified in 96-well plates. The PCR screening identified 29 potential targeted clones, from among which 12 were expanded and further characterized by Southern blot analysis. Eleven of the twelve expanded clones were confirmed to be correctly targeted. Targeted ES cell clone N-1F10 was injected into C57BL/6 albino embryos, which were then re-implanted into CD-1 pseudo-pregnant females. Founder animals were identified by their coat color, their germline transmission was confirmed by breeding with C57BL/6 females and subsequent genotyping of the offspring. Three male and five female heterozygous targeted mice were generated from clone N-1F10. Floxed Orc2 mice were crossed to the Orc1 f/f ROSA26stop-EYFP animals to generate Orc2 f/f ROSA26stop-EYFP and Orc1 f/f Orc2 f/f ROSA26stop-EYFP strains for usage of EYFP expression as a reporter for Cre recombinase activity and Orc2 or Orc1 and Orc2 deletion. Those were further bred into tissue-specific Sox2-Cre (Hayashi et al., 2002) or Alb-Cre mice to obtain Orc2 or Orc1 and Orc2 knockout in all cells of the inner cell mass following implantation or in the liver, respectively. We used two independent Alb-Cre lines to introduce the gene. At UVA/UAB we used the Alb-Cre mice from Postic et al., 1999. The Alb-Cre mice used at the University of Wisconsin are from Schuler et al., 2004. All the mice used in this study were maintained in a mixed background (C57BL/6x129 x FVB/N).
 
-## PCR
+### PCR
 
 Genomic DNA from ear punches was isolated using Quick Extract DNA Extraction Solution (Lucigen., Cat# QE09050). All genotyping PCRs were carried out using MyTaq Red Mix (Bioline, Cat# BIO-25043) according to the manufacturer’s instructions. Orc1 genotyping was carried out with primers F1 forward (common to both alleles; 5′-GCTGCTTCAGTGTGGCAATA-3′), R1 reverse (specific for the WT allele; 5′-CTCCAATTGTTCCCCAGCTA-3’), and R2 reverse (specific for deleted allele, 5′-CACCTGTCACTGGACCACAC-3′). The PCR parameters were 95 °C for 30 s, 45x (95 °C for 15 s, 60 °C for 20 s, 72°for 60 s), 72 °C for 5 min. PCR product was run on 2% agarose gel and WT band was detected at 439 bp, transgenic band at 310 bp, and deleted at 677 bp. Orc2 genotyping was carried out with primers F1 forward (common to both alleles; 5′- GAGGTTGTGGCTGTAATATACGTGATC –3′), and R1 reverse (common to both alleles; 5′- CTGAGCCATCTAACTCCTTCCTAGC –3’), or F2 forward (common to both alleles; 5′- TGGGTAGGTTCATTCCAGTTTAGCC –3′), and R2 reverse (common to both alleles; 5′- ACCTTGGTATTGGACGTCTCTATTC –3’). The PCR parameters were 95 °C for 30 s, 35x (95 °C for 15 s, 55 °C for 20 s, 72°for 60 s), 72 °C for 5 min. To detect constitutive KO allele combination of F1, F2, and R2 was used. PCR product was run on 2% agarose gel and following bands were detected: for F1 + R1 – WT at 342 bp, and transgenic band at 398 bp; for F2 +R2 WT at 254 bp, and transgenic band at 367 bp; for F1+F2+R2 WT at 254 bp, transgenic band at 367 bp, and deleted at 306 bp. ROSA26 genotyping was carried out with primers F1 forward (common to both alleles; 5′-AAAGTCGCTCTGAGTTGTTAT-3′), R1 reverse (specific for the WT allele; 5′- GGAGCGGGAGAAATGGATAT-3’), and R2 reverse (specific for deleted allele, 5′- GCGAAGAGTTTGTCCTCAACC-3′). The PCR parameters were 95 °C for 30 s, 45x (95 °C for 15 s, 60 °C for 20 s, 72°for 60 s), 72 °C for 5 min. PCR product was run on 2% agarose gel and WT band was detected at 650 bp, and transgenic band at 340 bp. Sox2-Cre genotyping was carried out with primers F1 forward (common to both alleles; 5′- ATGCTTCTGTCCGTTTGCCG –3′) and R1 reverse (common to both alleles; 5′- CCTGTTTTGCACGTTCACCG –3’), with Orc1 primers F1 and R1 for an internal control. The PCR parameters were 94 °C for 3 min, 38x (94 °C for 30 s, 60 °C for 30 s, 72 °C for 40 s), 72 °C for 3 min. PCR product was run on 3% agarose gel and the transgenic band was detected at 875 bp with an internal control band at 439 bp. Alb-cre genotyping was carried out with primers Alb-cre-20239-F (specific for the WT allele; 5’-TGCAAACATCACATGCACAC-3’), Alb-cre-olMR5374-F (specific for the transgenic allele; 5’-GAAGCAGAAGCTTAGGAAGATGG-3’), and Alb-cre-20240-R (common to both alleles; 5’-TTGGCCCCTTACCATAACTG-3’). The PCR parameters were 95 °C for 30 s, 35x (95 °C for 15 s, 55 °C for 20 s, 72°for 60 s), 72 °C for 5 min. PCR product was run on 4% agarose gel and WT band was detected at 351 bp, and transgenic band at 390 bp. To establish sex of embryos isolated for MEFs, SRY genotyping was carried out with chromosome Y specific forward (5’-TTGTCTAGAGAGCATGGAGGGCCATGT-3’) and reverse primers (5’-CTCCTCTGTGACACTTTAGCCCTCCGA-3’). The PCR parameters were 95 °C for 30 s, 35x (95 °C for 15 s, 55 °C for 20 s, 72°C for 60 s), 72 °C for 5 min. PCR product was run on 2% agarose gel and Y-chromosome positive band was detected at 270 bp.
 
-## MEF isolation and culture
+### MEF isolation and culture
 
 MEFs were isolated from E12.5 Orc2+/+ or Orc2f/f embryos, transformed with SV40 large T antigen, and infected with adenovirus Cre-eGFP (#VVC-U of Iowa-1174, University of Iowa). The infected MEFs were cultured for indicated days in DMEM with 10% FBS medium. To measure the cell proliferation, 24 hr. after the Adenovirus Cre-eGFP transduction, SV40 transformed MEF cells were plated in 96 well plates.
 
 The cell viability was measured every 24 hrs using CellTiter 96 Non-Radioactive Cell Proliferation Assay (Promega, #G4100) according to the manufacturer’s instructions. All experiments were conducted in triplicate and absorbance relative to that on day 1 was expressed.
 
-## Liver isolation
+### Liver isolation
 
 Control (Orc2f/f ROSA26stop-EYFP or Orc1f/f Orc2f/f ROSA26stop-EYFP) and experimental animals (Alb-Orc2f/f ROSA26stop-EYFP or Alb-Orc1f/f Orc2f/f ROSA26stop-EYFP) were euthanized using CO2. Blood was collected was further metabolic studies. Animals were perfused with prewarmed (39 °C) Hank’s buffered salt solution (HBSS) containing EDTA, MgCl2, and HEPES. The livers were dissected and weighted. Each liver was divided for the following experiments: ploidy analysis (right lobe; fresh processing), EYFP flow cytometry (median lobe; fresh processing), immunoblotting and histology (left lobe; half for LN2 flash freeze and second half into 10% formalin), and genotyping (caudate lobe; LN2 flash freeze).
 
-## Immunoblotting
+### Immunoblotting
 
 SV40 transformed MEF with or without adenovirus Cre-eGFP infection were directly lysed in 2 x Laemmli Sample Buffer and sonicated. Liver was lysed in modified RIPA buffer (150 mM Sodium Chloride, 50 mM Tris-HCl, pH 7.4, 1 mM EDTA, 1 mM PMSF, 1% Triton X-100, 1% Sodium Deoxycholic Acid, 0.1% SDS), sonicated, and lysate was clarified by centrifugation. Mouse ORC2 antibody was raised against His tagged full length of ORC2 recombinant protein in Rabbit (Pacific Immunology). The antibodies used in this study are listed: ORC1 (Santa Cruz; sc-28741); ORC3 (Santa Cruz; sc-374231); ORC5 (Boster Biological technology; A03676-1); ORC6 (Santa Cruz; sc-390490); CDC6 (Santa Cruz; sc-9964); MCM2 (Abcam; ab4461); MCM3 (Santa Cruz; sc-9850).
 
-## Histology and analysis
+### Histology and analysis
 
 All formalin-fixed paraffin-embedded (FFPE) sections and H&E staining were performed by Research Histology Cores at UVA and UAB. Nuclei size was measured using ImageJ 1.50i (Java 1.6.0_24) (56) (Schneider et al., 2012). The number of analyzed animals is annotated at each figure. The statistical method used for comparison between experimental groups was a two-tailed homoscedastic Student’s t-test. Statistical significance was expressed as a p-value. We captured images of 5–10 fields per liver and measured nuclear size relative to scale bar and nuclear density by counting the number of nuclei per field (at a fixed scale to compare between mice). Hepatocyte nuclei can be easily distinguished from stromal nuclei by their roundness and relative de-condensation.
 
-## Metabolic measurements
+### Metabolic measurements
 
 Blood was collected from control Orc2f/f ROSA26stop-EYFP and experimental Alb-Orc2f/f ROSA26stop-EYFP animals and centrifuged at 1000 g for 10 min at 4 °C. To measure Alanine Transaminase (ALT) and Aspartame Aminotransferase (AST) activities EnzyChromTM Alanine Transaminase Assay Kit (BioAssay Systems, Cat# EALT-100) and Liquid AST (SGOT) Reagent Set (Pointe Scientific, Cat# A7561150) were used respectively according to manufacturers’ instructions. The number of analyzed animals is annotated at the figure. The statistical method used for comparison between experimental groups was a two-tailed homoscedastic Student’s t-test. Statistical significance was expressed as a p-value.
 
-## Isolation of hepatocytes
+### Isolation of hepatocytes
 
 Hepatocytes were isolated according to STAR protocols (Charni-Natan and Goldstein, 2020). In brief, the liver perfused with perfusion Buffer for 10 min followed by digestion buffer for 10 min was dissected out and hepatocytes were released into plating medium containing dish. A single-cell suspension was obtained by filtering through a 100 µm cell strainer. Percoll centrifugation (Cytiva #17089102) was performed to remove dead cells. Isolated live Hepatocyte were suspended in William’s medium (WEM, GIBCO A1217601) with Plating Supplement (GIBCO #CM3000) and plated on collagen-coated cover glass (5×10^5 cells/6-well). After 3 hr, the medium was exchanged for maintenance medium (William’s E Medium (WEM, GIBCO A1217601) supplemented with GIBCO #CM4000).
 
-## Ploidy analysis
+### Ploidy analysis
 
 Nuclei Isolation Medium (NIM; 250 mM Sucrose, 25 mM KCl, 5 mM MgCl2, 10 mM Tris-Cl, 1 mM DTT, 1 x Protease inhibitor) with 2% paraformaldehyde and 0.1% Triton X-100 was added to the liver pieces that were subsequently homogenized with Pestle A Dounce homogenizer (25 x times). After all samples were processed, they were centrifuged at 1000 g for 10 min at 4 °C. Pellet was resuspended in NIM and equal volume of 50% iodixanol was added. The mixed sample was carefully layered on the top of 29% Iodixanol solution in ultracentrifuge tube and spun at 10,300 rpm for 10 min at 4 °C in ultracentrifuge. The nuclei pellet was resuspended in FACS buffer (1 x PBS, 2.5% (v/v) BSA, 2 mM EDTA, 2 mM NaN3) with 100 µg/mL RNase A. DRAQ5-stained liver nuclei samples were processed using Attune NxT flow cytometer (Life Technologies). Flow cytometry data from 10,000 nuclei were analyzed with FCS express software. The bottom 40% of nuclei on the EYFP axis in the FACS profiles was considered as low EYFP and the top 20% as high EYFP. The EYFP low nuclei are mostly from non-hepatocytes (Kupffer cells, endothelial cells, bile duct cells, contaminating blood cells) and some hepatocytes that have not yet expressed sufficient levels of EYFP and they all serve as a control population. The EYFP high nuclei are exclusively from hepatocytes that have undergone the Cre-mediated recombination a sufficient time back to express high levels of EYFP and are the experimental population with ORC subunit deletion. The statistical method used for comparison between experimental groups was a two-tailed homoscedastic Student’s t-test. Statistical significance was expressed as a p-value.
 
-## EdU incorporation in vitro
+### EdU incorporation in vitro
 
 Two days after plating, Hepatocyte was labeled with 20 μM of EdU (Lumiprobe #10540) for 2 hrs and fixed with 4% paraformaldehyde for 10 min followed by permeabilized with 0.25% Tritonx-100 for 5 min. The fixed cells were incubated with label mix [8 µM Sulfo-Cy3-Azide (Lumiprobe #B1330), 2 mM CuSO4*5H2O, 113 mM Ascorbic Acid] for 30 min. Anti-GFP antibody (Abcam #ab6556) was used to detect EYFP signal after the EdU staining.
 
-## Partial hepatectomy
+### Partial hepatectomy
 
 The partial hepatectomy experiment was conducted following a standardized protocol (Mitchell and Willenbring, 2008). Briefly, 8–14 wk-old mice were utilized. After inducing anesthesia with 2% isoflurane and maintaining at 0.2%, the mice were subcutaneously injected with Buprenorphine-SR (0.6 mg/kg) and Carprofen (5 mg/kg). The abdominal wall was shaved and prepared aseptically. A 3 cm long transverse incision was made to expose the xiphoid. The left and middle lobes were tied using 4–0 thread and cut. The incision site was double-checked for bleeding following washed with 0.9% sodium chloride and sutured. Mice were placed on a warm pad for recovery. To detect DNA synthesis, 0.2 mg EDU (Lumiprobe #10540) was injected via the tail vein 3–4 hr before sacrifice. At 36–48 hr post-surgery, samples from the regenerating right liver were collected and weighed. For IHC and IF staining, samples were fixed with 4% formaldehyde, dehydrated, cleared, embedded in paraffin, and sectioned at 5–8 μm thickness. Tissue sections were deparaffinized and rehydrated, and heat antigen retrieval methods were applied in 10 mM sodium citrate buffer (pH = 6.0). Permeabilization with 0.25% Triton X-100 followed EDU incorporation by Click-in reaction for 40 min at room temperature, protected from light. After washing and blocking, an anti-GFP antibody (Abcam, cat# ab6556, 1:500 dilution) and Alexa-488 fluorescent-conjugated secondary antibody (A11029; Life Technologies) were used to detect EYFP signaling. Finally, nuclei were stained with DAPI, and images were captured using Zeiss Confocal microscope and processed using ImageJ and GraphPad software. To improve the EYFP signal, we used frozen sections for the liver regeneration experiments in the Orc1, Orc2 double knockout mice in Figure 7.
 
-## Estimate of nuclear and cell division in hepatocytes during normal development
+### Estimate of nuclear and cell division in hepatocytes during normal development
 
 To estimate the minimal number of cell divisions occurring in the hepatoblasts after the appearance of albumin-driven Cre, we first estimated how many hepatocyte nuclei populate an adult liver. Given that there are 125 million liver cells/gram of tissue (Sohlenius-Sternbeck, 2006), we estimate that there are 162.5 (female) to 218 (male) million hepatocytes for the 1.3 gram (female) or 1.75 gram (male) livers (all estimates of liver weight and liver nuclear density are from Figures 5 and 6, and Figure 6—figure supplement 1).
 

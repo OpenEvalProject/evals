@@ -13,10 +13,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01kj4z117 Key Laboratory of Luminescence Analysis and Molecular Sensing, Ministry of Education, Institute for Clean Energy and Advanced Materials, School of Materials and Energy, Southwest University Chongqing China
-2. https://ror.org/05ckt8b96 Key Laboratory of Animal Biological Products & Genetic Engineering, Ministry of Agriculture and Rural, Sinopharm Animal Health Corporation Ltd Wuhan China
+1. Key Laboratory of Luminescence Analysis and Molecular Sensing, Ministry of Education, Institute for Clean Energy and Advanced Materials, School of Materials and Energy, Southwest University Chongqing China ([ROR:01kj4z117](https://ror.org/01kj4z117))
+2. Key Laboratory of Animal Biological Products & Genetic Engineering, Ministry of Agriculture and Rural, Sinopharm Animal Health Corporation Ltd Wuhan China ([ROR:05ckt8b96](https://ror.org/05ckt8b96))
 3. State Key Laboratory of Novel Vaccines for Emerging Infectious Diseases, China National Biotec Group Company Limited Beijing China
-4. https://ror.org/01kj4z117 School of Computer and Information Science, Southwest University Chongqing China
+4. School of Computer and Information Science, Southwest University Chongqing China ([ROR:01kj4z117](https://ror.org/01kj4z117))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ In this work, using conventional brightfield microscopy, we propose a side-view 
 
 ## Results
 
-## Validation of side-view observation achieved by placing a first-surface mirror adjacent to the 3D spheroids
+### Validation of side-view observation achieved by placing a first-surface mirror adjacent to the 3D spheroids
 
 The 3D spheroids were cultivated in agarose micro-wells within a standard petri dish. The assembled side-view observation device, featuring a 3D-printed handle and frame with an attached first-surface mirror, was placed directly on the microscope stage (Figure 1A). The magnets attract each other, allowing the divice to be positioned up and down along the petri dish lid. Magnet pairs embedded in the handle and frame allow flexible movement, enabling the mirror to be positioned near the sample by moving the handle along the petri dish lid (Figure 1B).
 
@@ -48,15 +48,21 @@ The 3D spheroids were cultivated in agarose micro-wells within a standard petri 
 
 Bottom-view images were captured using an inverted microscope, providing measurements like diameter and width of spheroids (x-y plane, Figure 1C). Side-view images, facilitated by the mirror, offered additional measurements such as thickness, height, and contact angle (x-z plane, Figure 1C). The principle of non-destructive in situ observing the samples from both bottom- and side-view is illustrated in Figure 1D. For bottom-view, the standard microscope setup sufficed. For side-view, light from the source, either reflected by the sample or transmitted through it, was redirected into the microscope’s objective by the first-surface mirror. This placement enabled capturing side profiles (supplementary information Video 1). Figure 1E shows the experiment setting of observing the bottom- and side-view of the samples. No modification to the microscope was done to achieve non-destructive in situ observation of the bottom- and side-view of cell spheroids at a low cost.
 
+![Video 1.](https://cdn.elifesciences.org/articles/101886/elife-101886-video1.mp4.jpg)
+
 Maintaining image authenticity is a prerequisite for using a first-surface mirror to achieve side-view observation on an inverted microscope. Firstly, we tested image quality using a 0.3 mm round-type microscope calibration slide (ChenZheng Precision Tools, Suzhou, China). For bottom-view imaging, the sample was placed directly on the stage. For side-view imaging, it was cut and attached vertically to polyethylene foam double-sided tape (Figure 1F). Images captured with 4×, 10×, and 20× objective lenses showed no significant quality difference between bottom- and side-view observation. However, it was noted that the 40× objective lens’ field has limitations in imaging (Figure 1G, H).
 
 To study the impact of the distance between the sample and the mirror on image acquisition, a 0.03 mm line-type microscope calibration slide was fixed vertically to a base at a 90° angle to the horizontal plane (Figure 1I), and another microscope calibration slide to the bottom surface (Figure 1J). Figure 1K shows images captured between the mirror and the sample at 2, 3, and 4 mm distances. Side-view images remained similar across these distances. However, at 4 mm, the 40× objective could not focus due to exceeding its working distance (3.6–2.8 mm). The results demonstrated that as the sample was within the working distance of the objective lens, there was no significant change in the apparent size of the sample observing with 4×, 10×, 20×, or 40× objective lenses (Figure 1L).
 
-For capturing spheroid images, the first-surface mirror was placed in a cell culture medium to maintain growth conditions. Typically, introducing different media into the light path causes refraction and potential chromatic aberration. For instance, light passing through the DMEM medium undergoes such refraction. To evaluate the impact of chromatic aberration on imaging resolution, we analyzed the offset values of the C-line (656.3 nm) and F-line (486.1 nm) using chromatic aberration analysis (Figure 1M). The analysis is as follows:(1)Δl=d×NA×[1nF2−NA2−1nC2−NA2]
+For capturing spheroid images, the first-surface mirror was placed in a cell culture medium to maintain growth conditions. Typically, introducing different media into the light path causes refraction and potential chromatic aberration. For instance, light passing through the DMEM medium undergoes such refraction. To evaluate the impact of chromatic aberration on imaging resolution, we analyzed the offset values of the C-line (656.3 nm) and F-line (486.1 nm) using chromatic aberration analysis (Figure 1M). The analysis is as follows:
+
+$$
+Δl=d\timesNA\times[\frac{1}{\sqrt{n_{F}^{2}−NA^{2}}}−\frac{1}{\sqrt{n_{C}^{2}−NA^{2}}}]
+$$
 
 where NA is the numerical aperture, ∆l is the relative distance offset, d is the total length of the folded light path from the sample to the bottom of the petri dish, nF is the refractive index at 486.1 nm, and nC is the refractive index at 656.3 nm. Higher NA and longer d increase chromatic aberration, affecting observations (Figure 1N). However, as observed in Figure 1O, enabling the automatic white balance function during the imaging process can effectively minimize the chromatic aberration. Figure 1P shows that images at 4× and 10× in ddH2O or DMEM had no significant differences compared to bottom-view images in air. Considering the distance between the sample and the mirror, and the culture medium-induced refraction, using the first-surface mirror for high magnification (40×) side-view imaging is not recommended.
 
-## The side-view observation petri dish/device allows non-destructive, real-time observation of the bottom- and side-view of the 3D spheroid
+### The side-view observation petri dish/device allows non-destructive, real-time observation of the bottom- and side-view of the 3D spheroid
 
 Growing cells at agarose micro-wells or agarose-filling microplates is one of the effective methods to generate 3D spheroids (Caprio and Burdick, 2023; Froehlich et al., 2016). For imaging, our focus was on light emerging from the spheroid surface, not internal refraction or scattering. Figure 2A illustrates that during bottom-view imaging, the agarose micro-well directly contacts the bottom surface, requiring the image to pass only through the agarose layer to reach the microscope objective. For side-view imaging (Figure 2B), light passes sequentially through the agarose micro-well, culture medium (DMEM), reflects off a first-surface mirror, and finally enters the microscope objective. Therefore, the optical path through the agarose was the same for both bottom- and side-view imaging (with both bottom and wall thicknesses being 1.5 mm), resulting in identical refraction introduced by the agarose micro-well in both viewing modes.
 
@@ -68,9 +74,13 @@ Next, we studied the impact of agarose and culture medium on imaging quality. To
 
 To optimize conditions for side-view imaging, we chose a xenon lamp for its broad wavelength coverage and adjustable angle. Figure 2E shows that a 90° angle between the lamp and first-surface mirror produced the best details of the side-view images, while angles of 45° and 0° resulted in uneven and poorly lit images. Maintaining the 90° angle, we examined the effect of varying distances between the light source and sample (Figure 2F). At 5 cm, internal structures (dark core) were clear, but uneven background illumination complicated edge distinction. At 10 cm, background uniformity improved, though overall illumination remained irregular, and the dark core was not resolved. At 15 cm, the sample background contrast was optimal, with clearly defined edges and discernible internal details, including the dark core. By adjusting the position of the sample stage, it became straightforward to locate and observe the side-view of spheroids within agarose micro-wells (supplementary information Videos 2 and 3). And the side-view observation petri dish/device can be used to photograph not only a single spheroid but also multi-spheroids samples (Figure 2G).
 
+![Video 2.](https://cdn.elifesciences.org/articles/101886/elife-101886-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/101886/elife-101886-video3.mp4.jpg)
+
 Collectively, for observing and imaging the side morphology of samples using the side-view observation petri dish/device, particularly for samples in culture medium, we recommend using a non-divergent light source with broad-spectrum coverage. This light source should be positioned approximately 15 cm directly behind the sample, forming a 90° angle with the mirror. Samples should be kept as close to the mirror as possible, with the distance between the sample and the mirror kept within the working distance of the objective lens. Considering the diameter of 3D spheroids ranges from 200 to 500 μm, side-view images were captured using 4× or 10× objective lenses in subsequent studies.
 
-## Tracking the growth dynamics of spheroids from side-view observation
+### Tracking the growth dynamics of spheroids from side-view observation
 
 Tracking the growth images of cell spheroids enables further determination of their volume or size, which is significant for sample screening. However, conventional methods rely heavily on bottom-view images because it is challenging to monitor the side-view changes in situ. This study tracked the spheroid formation process in the agarose micro-well from a seeding density of 1 × 104 cells per well using the inverted microscope. Time-lapse images of the bottom- and side-view of the cells within the agarose micro-well, as shown in Figure 3A, record the morphological changes of the cells during spheroid formation. Initially, the newly added human prostate cancer cells DU 145 scattered in the micro-well. After 3 hr of incubation, the cells clustered to form a ring structure. From the side-view, the thickness changes of the cell cluster were negligible, suggesting that the cells tend to aggregate at a similar planar. As the cells continued to aggregate, the cluster gradually became more compact and formed a round shape after 60 hr of incubation. However, the side profile of the same spheroid shows that the thin layer of the cell disk gradually packed, and as the x–y dimension decreased, the height/thickness of the cell aggregate increased (Figure 3B). We also placed the side-view observation petri dish/device on a live cell monitoring system (MoniCyteTM B-100, Jiangsu Rayme Biotechnology, China) to capture a time-lapse video of the side-profile changes spheroid formation process of 1 × 104 DU 145 cells over 60 hr (Supplementary information Video 4). Through those time-lapse images/video, the width and height/thickness of the spheroid can be measured. As suggested in previous studies, when the height/thickness and width ratio of the cell aggregate approaches 1, it indicates that the spheroid structures have formed. In previous studies, spheroids had to be sealed or fixed in an agar block before the side-view morphology could be observed (Pan et al., 2023a). The side-view observation device allows for non-destructive tracking of the growth dynamics of the same spheroid in both bottom- and side-view, which enables the depict the 3D structural characters of cell aggregates.
 
@@ -78,7 +88,9 @@ Tracking the growth images of cell spheroids enables further determination of th
 
 **Figure 3.:** (A) Time-lapse images of DU 145 spheroid formation in an agarose well (1 × 104 cells/well, scale bar = 100 μm). (B) Changes in height and width during the growth process of the spheroids, as well as variations in height-to-width ratio.
 
-## Characterization spheroids 3D structure changes during spheroid migration
+![Video 4.](https://cdn.elifesciences.org/articles/101886/elife-101886-video4.mp4.jpg)
+
+### Characterization spheroids 3D structure changes during spheroid migration
 
 Cell migration from or leaving tumor spheroids is crucial for the dissemination of solid tumors and the occurrence of secondary metastases, both of which are life-threatening. Previously, spheroids were placed on a substrate, and their migration capability was characterized by cell migration distance (Carvalho et al., 2022; Kim et al., 2022). This study placed tumor spheroids on a petri dish for a cell migration assay. As the bottom-view morphology shown in Figure 4A, cells extruded from the spheroid, forming sprouts. With prolonged culture time, cells from the spheroid periphery migrated outwards, forming a single-layer cell region surrounding the spheroid. The migration distance is the difference between the total width (spheroid + migrating length) and the inner width (spheroid only). As shown in Figure 4B, the distance occupied by the migrating cells expanded from 0 to 2894.59 ± 127.08 μm after 100 hr of migration. It was important to note that the average inner width only decreased by 23.87 μm (a change rate of 6.8%).
 
@@ -88,7 +100,9 @@ Cell migration from or leaving tumor spheroids is crucial for the dissemination 
 
 Simultaneously, with the assistance of the side-view observation device, variations in the spheroid’s height and contact angle during the migration process were recorded (Figure 4C and supplementary information Video 5). Figure 4D elucidates the measurement benchmarks for the side-view images. The contact angle between the petri dish surface and the spheroid was measured using the angle function of ImageJ. As shown in Figure 4E, when the spheroid was placed on the petri dish, the thickness of the spheroid was 242.34 ± 2.85 μm, and the contact angle between the surface and the spheroid was 0°. After 28 hr of migration, the thickness of the spheroid gradually decreased to 161.11 ± 13.08 μm, and the contact angle changed to 98.52 ± 7.57°. Throughout 100 hr of migration, the thickness and the contact angle of the spheroids’ changed to 131.33 ± 8.34 μm and 172.08 ± 3.75°, respectively. Furthermore, from the side-view images, the ImageJ’s measurement function revealed that the dark core area was 46,125.40 μm² at 0 hr and only decreased to 43,302.44 μm² at 100 hr. Based on the side-view images, we calculated the difference between the height of the outer spheroid and the height of the internal dark core, denoted as ΔH. It was found that the height of the dark core decreased by 57.63 μm, while the total spheroid height decreased by 111.01 μm after 100 hr of migration. The dark core height ratio increased from 0.61 to 0.69, suggesting that the proliferating cells at the outer region of the spheroid were the prominent participants in the migration process (Figure 4F). Combining the bottom- and side-view images, it was found that as the average width increases, the z-direction height of the spheroids decreases, leading to a gradual decrease in the height-to-width ratio of the cell spheroids and an increase in the contact angle of the cell spheroids with the petri dish.
 
-## Association between the thickness of the spheroid and the appearance of the dark core of the 3D spheroid
+![Video 5.](https://cdn.elifesciences.org/articles/101886/elife-101886-video5.mp4.jpg)
+
+### Association between the thickness of the spheroid and the appearance of the dark core of the 3D spheroid
 
 A dark core within 3D cell spheroids is a phenomenon commonly observed. Biologically, the dark core is believed to represent necrotic or quiescent zones arising from limited diffusion of oxygen and nutrients within the spheroid. In addition, it is important to notice that, optically, the depth of light penetration in microscopy can be hindered by the spheroid’s thickness, leading to decreased signal intensity and diminished image quality from deeper regions. This effect is further amplified in larger spheroids by the increased number of cellular layers and a dense extracellular matrix, which scatter light and obscure core details. The side-view function of the proposed device allows tracing the formation of the visually distinguishable dark core to investigate the relationship between the dark core, spheroid size, and the optical limitations of light microscopy using DU 145 cell spheroids with different initial seeding densities (2.5 × 103, 5 × 103, 1 × 104, and 2 × 104 cells/well). The appearance of the dark core and its correlation with spheroid thickness were analyzed using the bottom- and side-view of the spheroids.
 
@@ -98,7 +112,7 @@ As Figure 5A shows, it was found that the time to dark core formation was invers
 
 **Figure 5.:** (A) Time-lapse bottom- and side-view images of DU 145 spheroids formed from different initial cell concentrations (2.5 × 103, 5 × 103, 1 × 104, and 2 × 104 cells/well). Blue arrows indicate the appearance of observable dark cores. (B) Relationship between spheroid width changes and dark core appears at different initial cell concentrations analyzed through bottom-view images. (C) Relationship between spheroid height changes and dark core appears at different initial cell concentrations analyzed through side-view images (the yellow stripe indicates the height of 250 ± 15 μm) (error bars = SD, n = 3).
 
-## Characterization spheroids 3D structure changes during spheroid fusion
+### Characterization spheroids 3D structure changes during spheroid fusion
 
 Based on observing the spheroids’ formation and migration, we hypothesize whether the side-view observation device facilitates the observation of more intricate cellular spheroids’ structural changes through side profile. Fusion is a crucial step for tissue development. In tissue engineering, 3D spheroids fusion is vital in fabricating micro-tissues (Lindberg et al., 2021; Laschke and Menger, 2017). However, the fusion process of spheroids exhibits a highly random situation, making it challenging to maintain the fusion state while observing it in situ to reconstruct the structural changes during spheroid fusion. Herein, the side-view device was applied to conduct in situ observations of the fusion process of cell spheroids. Spheroids of 1 × 104 DU 145 cells per well were cultured for 7 days in agarose micro-wells for fusion assay. As the bottom-view images shown in Figure 6A–i, the two spheroids contact each other and gradually merge at the contact region. The contact angle, contact length, and doublet length value can all be retrieved from time-lapse images (Figure 6B). First, the contact angle between spheroids increased from 30° to 45°. Next, the two spheroids’ contact length (neck) increased with co-culture time, with the most significant change occurring within the first 3 hr. The doublet length of the fusion formed by two spheroids decreased by 22.5% from 453.87 to 367.19 μm after 48 hr of fusion. Though the bottom-view depicts the x–y dimension changes of the spheroids during the fusion process, predicting the phenome occurring on the side profile of the spheroid is challenging, especially for those cell aggregates without ideal spherical structures (the red arrow denoted in Figure 6A–ii). With the assistance of the side-view device, it was found that the two spheroids contacted and formed symmetric necks that gradually fused (Figure 6A–i). As shown in Figure 6B, the contact length between two spheroids progressively approaches the z-direction thickness, and the contact angle between the two spheroids reached 171.10 ± 13.94° after 100 hr of fusion. The green box in Figure 6B highlights that the fusion process of two spheroids can be transformed into a process where the contact length approaches the height. Thus, supplemented by the side-view perspective, modeling, and reconstruction of the cell spheroid fusion process become feasible (Figure 6C). The vertical lines in the figure indicate the position where the arc representing the contact angle at the fusion site of the cell spheroids tangentially intersects both spheroids. A wider width between the two vertical lines indicates a higher fusion process between the two spheroids. Additionally, we observed an intriguing phenomenon: if the initial cell spheroid morphology is not entirely regular or spherical (the red arrow denoted in Figure 6A–ii), the side-view profiles enable to track the changes in the particular region except the fusion region. Therefore, the reconstruction from the side-view perspective can be more comprehensive.
 
@@ -106,7 +120,7 @@ Based on observing the spheroids’ formation and migration, we hypothesize whet
 
 **Figure 6.:** (A) Time-lapse bottom- and side-view images of fusion body formed by two 7-day-old DU 145 cell spheroids with ideal ball-like structure (i) and irregular cell spheroid (ii). Red arrows point to the protruding part of the cell spheroid. (B) Definition of the measured data points based on the side-view images of fusion spheroids and the changes in doublet length, height, contact angle, and contact length during the fusion process. (C) Three-dimensional spheroid fusion process modeling using bottom- and side-view images of ideal ball-like structure (i) and irregular cell spheroid (ii). The vertical lines on the model surface illustrate the position where the arc tangentially intersects both spheroids (error bars = SD, n = 3).
 
-## Evaluate the impact of antitumor therapeutic reagents on the spheroid integrity
+### Evaluate the impact of antitumor therapeutic reagents on the spheroid integrity
 
 Spheroids are important in vitro cell models for drug testing, and the impact of drug effects is typically evaluated by the morphology and size of the spheroids (Lu et al., 2015). In this study, we investigated the effects of DOX, one of the major chemotherapy reagents currently clinically used, and NK-92 cells, a type of cytotoxic lymphocyte, on the 3D structure of DU 145 prostate cancer spheroids.
 
@@ -134,9 +148,138 @@ The proposed device is compatible with inverted microscopes, allowing for in sit
 
 ## Materials and methods
 
-## Reagents
+### Reagents
 
-## Design and fabrication of the side-view observation petri dish/device
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human prostate cancer cell)</td>
+      <td>DU 145</td>
+      <td>Pricella Biotechnology</td>
+      <td>CL-0075 (RRID:CVCL_0105)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human natural killer cell)</td>
+      <td>NK-92</td>
+      <td>Pricella Biotechnology</td>
+      <td>CL-0530 (RRID:CVCL_2142)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM culture medium</td>
+      <td>Gibco</td>
+      <td>C11995500BT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum</td>
+      <td>Bio-channel</td>
+      <td>BC-SE-FBS01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin–streptomycin solution</td>
+      <td>Beyotime Biotechnology</td>
+      <td>C0222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NK-92 special medium</td>
+      <td>Pricella Biotechnology</td>
+      <td>CM-0530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agarose</td>
+      <td>Aladdin Scientific</td>
+      <td>11966311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphate-buffered saline</td>
+      <td>Beijing DingGuo ChangSheng Biotechnology Co Ltd</td>
+      <td>BF-0011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ultrapure water</td>
+      <td>ELGA Corporation</td>
+      <td>PURELAB flex system</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin</td>
+      <td>OriginLab Corporation</td>
+      <td>2021 (RRID:SCR_014212)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>LOCI, University of Wisconsin</td>
+      <td>(RRID:RCR_003070)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Xenon lamp</td>
+      <td>Beijing zhongjiao Jinyuan Technology Co, Ltd</td>
+      <td>CEL-TCX250</td>
+      <td>Light source</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fiber optic spectrometer</td>
+      <td>Fuxiang Optics Co, Ltd</td>
+      <td>PG2000-Pro-EX</td>
+      <td>Instrument</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microscope</td>
+      <td>Nikon</td>
+      <td>ECLIPSE Ti (RRID:SCR_021242)</td>
+      <td>Instrument</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>D-LH/LC lamphouse</td>
+      <td>Nikon</td>
+      <td></td>
+      <td>Light source</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D printer</td>
+      <td>Bambu Lab</td>
+      <td>P1P</td>
+      <td>Instrument</td>
+    </tr>
+  </tbody>
+</table>
+
+### Design and fabrication of the side-view observation petri dish/device
 
 The overall size of the device, as shown in Figure 8A, is approximately 17 mm in height, with a petri dish diameter of 35 mm. Inside the 3D-printed handle and the frame, two cylindrical magnets with a diameter of 3 mm and height of 3 mm were embedded (Figure 8B). To compare with the 35 mm petri dish, the height, width, and thickness of the first-surface mirror are 20, 4.5, and 2 mm (Figure 8C). A 3D printer (Bambu Lab P1P, China) was used to fabricate all the 3D-printed parts with a speed of 50 mm/s, the height of each slice is 200 μm, and infill density is 50%. Before coming into contact with cell samples, the device is first cleaned overall using 75% alcohol and then sterilized by UV light irradiation for 30 min. The total cost of manufacturing this device is less than $1.
 
@@ -144,38 +287,38 @@ The overall size of the device, as shown in Figure 8A, is approximately 17 mm in
 
 **Figure 8.:** (A) The top- and side-view images of the side-view observation petri dish/device. (B) The magnets inside the device.
 
-## Measuring the spectra of the DMEM culture medium and agarose
+### Measuring the spectra of the DMEM culture medium and agarose
 
 The optical properties of cell culture medium and agarose well for spheroids culture were characterized by fiber optic spectrometer. The optic fiber was mounted on an optical platform, with one end connected to PG2000-Pro-EiesX fiber optic spectrometer (Fuxiang Optics Co, Ltd, Shanghai, China) and the other to a computer for spectral measurements. The light source (CEL-TCX250 Xenon lamp) was placed at the same height as the fiber connection on the optical platform and preheated for 30 min. The 1 and 2 wt% agarose solution were prepared in advance, with 2 ml of each solution added to cuvettes and allowed to solidify for 15 min. During the absorption measurement, ddH2O was first used to calibrate the control sample under the light source. Subsequently, the 1 and 2 wt% agarose block samples, as well as the DMEM medium, were measured sequentially. When directly measuring the spectra of the light source and the samples under the light source, the spectrum of the light source was measured first, followed by the 1 and 2 wt% agarose gel samples, and finally the DMEM medium.
 
-## Experimental setting of the side-view observation of the 3D spheroids
+### Experimental setting of the side-view observation of the 3D spheroids
 
 To capture the side-view images of samples under an inverted microscope, we used the Nikon ECLIPSE Ti microscope (TS100, Nikon, Japan). The objectives we equipped are 4×, 10×, 20×, and 40× F objective lenses (Nikon, Japan) with NA of 0.13, 0.30, 0.45, and 0.60, respectively. The corresponding working distance of 4×, 10×, 20×, and 40× F objective lenses are 16.5, 15.2, 8.2–6.9, and 3.6–2.8 mm, respectively. The light sources we used to capture the bottom-view were D-LH/LC lamphouse (Nikon, Japan) and the light sources we used to capture the side-view was CEL-TCX250 (Xenon lamp light source, Beijing zhongjiao Jinyuan Technology Co, Ltd, China).
 
-## Tracking the spheroids formation
+### Tracking the spheroids formation
 
 The DU 145 cells were cultivated in agarose micro-wells using a previously reported procedure (Pan et al., 2023a). First, the agarose micro-well array was replicated from a 3D-printed mold. In brief, the replication process involved adding 700 μL of a 2% agarose solution to cover the 3D-printed mold, which was then allowed to solidify at room temperature (25°C). Once solidified, the agarose-based material was removed from the mold, resulting in an agarose micro-well array with a depth of 2 mm and a radius of 1 mm. The agarose micro-wells were then placed in the 35 mm petri dish. For tumor cell culture on the agarose micro-wells, the suspension with 2.5 × 103, 5 × 103, 1 × 104, and 2 × 104 DU 145 cells was added to each well. Subsequently, 600 µL of cell culture medium was added to cover the agarose base. The petri dish was placed in a cell incubator at 37°C with 5% CO2. The bottom and side morphology of the spheroid formation was observed every 5 hr.
 
-## Examining the spheroid migration from the side-view
+### Examining the spheroid migration from the side-view
 
 1 × 104 DU 145 cells/well in agarose micro-wells grown for 7 days were collected for migration assay. The spheroids were transferred into the petri dish with a side-view observation device installed on the lid. Then, the mirror was moved near the spheroid for observation using the handle on the lid. The petri dish was placed in a cell incubator at 37°C with 5% CO2. The bottom and side morphology of the spheroid migration was observed every 12 hr.
 
-## Observing the fusion of spheroids from different angles
+### Observing the fusion of spheroids from different angles
 
 1 × 104 DU 145 cells/well in agarose micro-wells grown for 7 days were collected for fusion assay. In brief, spheroids were pipetted to the agarose micro-well which was placed in the cell culture petri dish. The mirror was attached to the agarose micro-wells by adjusting the handle at the lid of the petri dish. The petri dish was placed in a cell incubator at 37°C with 5% CO2. The bottom and side morphology of the spheroid fusion process was observed over 48 hr.
 
-## Evaluating the impact of the drug on the spheroid 3D structure
+### Evaluating the impact of the drug on the spheroid 3D structure
 
 1 × 104 DU 145 cells/well in agarose micro-wells grown for 3 and 7 days were collected for drug and NK-92 cells assay. In brief, spheroids were pipetted into the agarose micro-well which was placed in the cell culture petri dish.
 
-## DOX
+#### DOX
 
 DOX was diluted with cell culture medium to 50 μg/mL and added to the micro-wells seeded with DU 145 spheroids. Then the bottom and side morphology of the spheroid was observed over 48 hr at 37°C with 5% CO2.
 
-## NK-92 cells
+#### NK-92 cells
 
 NK-92 cells were cultured in NK-92 special medium. For the co-culture assay, the NK-92 cells suspension was added to the micro-wells seeded with DU 145 spheroids. The petri dish was placed in a cell incubator at 37°C with 5% CO2. The bottom and side morphology of the spheroid was observed over 48 hr.
 
-## Statistics analysis
+### Statistics analysis
 
 Data are expressed as mean ± SD of the number of biological replicates indicated in each figure legend. All the data analysis, bar graphs, and fitting curves were plotted by Origin (OriginLab Corporation, version 2023, USA).

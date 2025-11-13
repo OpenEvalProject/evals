@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.35621.001 Maintenance of transcription programs is challenged during mitosis when chromatin becomes condensed and transcription is silenced. How do the daughter cells re-establish the original transcription program? Here, we report that the TATA-binding protein (TBP), a key component of the core transcriptional machinery, remains bound globally to active promoters in mouse embryonic stem cells during mitosis. Using live-cell single-molecule imaging, we observed that TBP mitotic binding is highly stable, with an average residence time of minutes, in stark contrast to typical TFs with residence times of seconds. To test the functional effect of mitotic TBP binding, we used a drug-inducible degron system and found that TBP promotes the association of RNA Polymerase II with mitotic chromosomes, and facilitates transcriptional reactivation following mitosis. These results suggest that the core transcriptional machinery promotes efficient transcription maintenance globally.
+Maintenance of transcription programs is challenged during mitosis when chromatin becomes condensed and transcription is silenced. How do the daughter cells re-establish the original transcription program? Here, we report that the TATA-binding protein (TBP), a key component of the core transcriptional machinery, remains bound globally to active promoters in mouse embryonic stem cells during mitosis. Using live-cell single-molecule imaging, we observed that TBP mitotic binding is highly stable, with an average residence time of minutes, in stark contrast to typical TFs with residence times of seconds. To test the functional effect of mitotic TBP binding, we used a drug-inducible degron system and found that TBP promotes the association of RNA Polymerase II with mitotic chromosomes, and facilitates transcriptional reactivation following mitosis. These results suggest that the core transcriptional machinery promotes efficient transcription maintenance globally.
 
 ## Introduction
 
@@ -31,31 +31,83 @@ Through live-cell imaging of endogenously tagged proteins in mouse embryonic ste
 
 ## Results
 
-## Endogenous TBP bookmarks mitotic chromosomes
+### Endogenous TBP bookmarks mitotic chromosomes
 
 Previous studies have shown that mitotic chromosomes globally retain accessibility (Hsiung et al., 2015; Teves et al., 2016). Focusing specifically at the TSS of mESCs, we analyzed our previously published ATAC-seq data for all genes. Reads under 100 bp indicate potential transcription factor (TF) binding sites (Buenrostro et al., 2013). Short reads are highly enriched at the TSS of active genes in asynchronous cells and maintained in mitosis (Figure 1A, Figure 1—figure supplement 1), suggesting that TSSs may be bookmarked by promoter bound factors. We also analyzed the mono-nucleosome sized fragments (180–250 bp) from the ATAC-seq at the TSS genome-wide. Remarkably, we found that the accessibility of the nucleosomes flanking the TSS increased during mitosis relative to interphase chromatin (Figure 1B, Figure 1—figure supplement 1). These results suggest that nucleosomes around the TSS may assume a different configuration during mitosis than in interphase that allows for increased transposition activity. One possibility is that the global decrease in transcription observed in mitosis may result in decreased occupancy and/or decreased residence time of trans-acting factors at the TSS, resulting in an apparent increase in accessibility of the surrounding nucleosomes.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig1-v2.jpg)
+
+**Figure 1.:** (A–B) Previous ATAC-seq data (Teves et al., 2016) were examined for TSS analysis. Heatmaps for all genes centered at the TSS (bottom) and aggregate plots of global average signal (top) surrounding the TSSs of all genes were generated for reads under 100 bp (A), and for mononucleosome-sized fragments (B). (C) Western blot analysis of whole cell extracts of clones derived from endogenous tagging of TBP to insert the HaloTag. (D) Time-lapse live-cell imaging of C41 HaloTBP cells stably expressing H2B-GFP as cells undergo mitosis. (E) Live imaging versus fixed immunofluorescence for cells over-expressing Halo-TBP or the endogenous C41 Halo-TBP knock-in. (F) Chromosome enrichment levels for either the over-expressing Halo-TBP cells under live or fixed conditions, or the C41 Halo-TBP knock-in cells under live or fixed conditions. n = 40 cells. Data are represented as mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** We performed unbiased k-means clustering of ATAC-seq data for reads under 100 bp (A) and 180–250 bp (B) with k = 9. The heatmaps for each cluster are shown on the bottom, and the average signal surrounding the TSS for each cluster is plotted on top.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The C94 Halo-TBP mES cells (left) or WT JM8.N4 mES cells (right) were injected into SCID-Beige mice. Thirty days post inoculation, kindey and testis tumors were harvested and a sample tumor is shown (top). Histological analyses of tumors show small areas of differentiated cells, representing endoderm, mesoderm, and ectoderm tissues (bottom).
 
 Given the persistence of accessibility at promoters of mitotic mESCs and previous reports of TBP binding in mitosis (Chen et al., 2002; Segil et al., 1996; Teves et al., 2016), we set out to visualize TBP dynamics throughout the cell cycle in mESCs. We used CRISPR/Cas9 to knock-in HaloTag at the endogenous TBP locus and allow for live-cell imaging of endogenous proteins, which remain functional (Figure 1—figure supplement 2). After stable integration of H2B-GFP in the Halo-TBP C41 homozygous line, we observed that the endogenous Halo-TBP is enriched on mitotic chromosomes throughout mitosis (Figure 1D).
 
 To test whether over-expressed Halo-TBP could recapitulate the behavior of endogenous Halo-TBP we analyzed the enrichment on mitotic chromosomes of stably over-expressed (Halo-TBP OE) and the endogenous knock-in (Halo-TBP KI) in live versus fixed cells as previously described (Teves et al., 2016). Under live imaging conditions, both knock-in and overexpressed TBP show enrichment on mitotic chromosomes (Figure 1E,F). However, fixation led to eviction of overexpressed but not the knock-in, suggesting that over-expression may not fully recapitulate the complex endogenous regulation of TBP, such as the ubiquitination/deubiquitination process that tightly regulates TBP levels in cells (Li et al., 2015). Our observation that endogenous TBP is insensitive to fixation-based exclusion from chromosomes, in contrast to most sequence-specific TFs, suggests a distinct interaction modality between TBP and mitotic chromosomes.
 
-## Endogenous TBP stably binds to mitotic chromosomes
+### Endogenous TBP stably binds to mitotic chromosomes
 
 To examine TBP interaction with mitotic chromosomes, we imaged individual Halo-TBP KI molecules at a frame rate of 133 Hz and high illumination intensity using stroboscopic photoactivatable single particle tracking (spaSPT) (Hansen et al., 2017, 2018). We then localized individual particles and measured their displacement between consecutive frames (Figure 2—figure supplement 1). Short displacements are indicative of bound molecules whereas long displacements are suggestive of diffusing ones. The shift to longer displacements in mitosis compared to interphase (Figure 2A) suggests a difference in the bound fraction and/or the diffusion constant between the two cell cycle stages. We then used Spot-On, an analysis tool for kinetic modeling of SPT data, and fitted the distribution of displacements (Figure 2C) (Hansen et al., 2018). A 2-state kinetic model representing ‘bound’ and ‘free’ populations could not adequately fit the data (Figure 2—figure supplement 2), suggesting that a dual classification of ‘bound’ and ‘free’ TBP populations may be insufficient to accurately characterize the data. Therefore, we fitted a 3-state kinetic model to represent three distinct populations: a fast-diffusing TBP population (‘fast’), a slower diffusing population wherein TBP may be diffusing in a complex with the TAFs as TFIID (‘slow’), and a stably DNA bound population (‘bound’) (Figure 2B). The 3-state model fitted the data more precisely (Figure 2A, Figure 2—figure supplements 2). From this analysis, we estimate that in interphase 27.1% of TBP molecules are bound, whereas 13.3% are bound in mitotic cells (Figure 2C). This decrease in fraction bound during mitosis may reflect the minimum amount of TBP needed to ‘bookmark’ active genes during mitosis.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cells were labeled with 25 nM pa-JF549 and individual molecules were tracked over 25,000 frames. Jump length histogram measured in displacements (μm) after three consecutive frames (Δτ = 22.5 ms) during spaSPT for cells in interphase (blue) or in mitosis (red). (B) Depiction of different states for the 2-state or the 3-state kinetic model. For the 2-state model, the molecules switch from fast diffusing mode to bound states. In the 3-state model, the freely diffusing molecules can be divided into two categories, fast and slow, which can switch to a DNA-bound state. (C) Scatter plot of fraction bound from individual cell model fits from interphase (Int) and mitotic cells (Mit). mESCs stably expressing HaloTag only (Halo) were imaged and the fraction bound for each individual cell was also extracted from model fitting to show non-specific binding population. n = 32 cells over four biological replicates. ****p-value<0.0001 (D) Dwell time histogram of the fraction of endogenously-tagged Halo-TBP molecules remaining bound for interphase (blue) and mitotic (red) cells. (E) Quantification of the residence time of Halo-TBP in interphase (blue) and mitotic (red) cells. n = 30 cells. (F) Quantification of fluorescence recovery at the bleach spot for the indicated Halo-tagged construct in interphase and mitosis. n = 30 cells. (G) Data from F, normalized for bleach depth. Data are represented as mean ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The jump lengths distribution is displayed for consecutive time frames, from Δτ = 7.5 ms to Δτ = 45.0 ms for interphase (left) and mitotic (right) cells. A summary table showing the observed fits for each parameter in a 2-state vs 3-state kinetic model is also presented.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The displacement CDFs for consecutive time frames, from Δτ = 7.5 ms to Δτ = 45.0 ms, are plotted for Halo-TBP in interphase (left) and mitotic cells (right) as colored lines. The displacement CDF is then fitted with a 2-state (top) or a 3-state (bottom) model. The resulting fit is plotted as a black line, and the corresponding residuals from the fit is plotted below for each consecutive frame. The 2-state model resulted in large residuals after fitting, necessitating a 3-state model.
 
 We next examined how stable is TBP binding to chromatin by performing single particle tracking (SPT) with long exposure times (500 ms) as previously described (Watanabe and Mitchison, 2002). This imaging technique allows for a ‘blurring out’ of diffusing molecules while bound ones appear as diffraction-limited spots. After localization and tracking, we measured the dwell time, the amount of time each molecule remains detected, and plotted the log-log histogram of dwell times for interphase and mitotic cells (Figure 2D). We then fitted a two-component exponential decay model, representing specific versus non-specific binding events, to the dwell time histograms, and extracted the photobleaching-corrected residence times for the two populations (Hansen et al., 2017; Teves et al., 2016). The residence time for specific Halo-TBP binding during interphase is on average 88 s (Figure 2E). This binding is significantly more stable than typical sequence-specific TFs like Sox2, p53, GR, which normally have residence times on the order of a few to around ten seconds in interphase (Chen et al., 2014; Mazza et al., 2012; Mueller et al., 2008; Normanno et al., 2015; Swinstead et al., 2016). Halo-TBP also remains stably bound during mitosis (Figure 2E), with a calculated average residence time of 118 s. The longer calculated residence time is likely due to the small fraction of TBP molecules (less than 1%) with very long dwell times (above 100 s in Figure 2D). Given that the whole distribution profiles appear very similar, we concluded that for most of the bound TBP, residence times are indistinguishable between interphase and mitotic cells. This result is in stark contrast to Sox2, whose residence time decreases by at least half during mitosis (Teves et al., 2016), suggesting that TBP binding to mitotic chromosomes may be independent of transcriptional activity.
 
 As an orthogonal approach to SPT, we performed FRAP (Fluorescence Recovery after Photobleaching) analysis to independently measure TBP binding dynamics during interphase and mitosis. We plotted the FRAP recovery at the bleach spot over time for Halo-TBP in interphase and in mitotic cells, along with Halo-3xNLS and H2B-Halo (Figure 2F). When normalized for bleach depth, the recovery curves for interphase and mitotic cells become super-imposable (Figure 2G). The difference in bleach depth is consistent with a decrease in the fraction of bound molecules between interphase and mitotic cells, whereas the super-imposable recovery curves is consistent with similar residence times of the bound fraction.
 
-## TBP binds to the TSS of active genes in mitosis
+### TBP binds to the TSS of active genes in mitosis
 
 Given that TBP is resistant to formaldehyde-based exclusion, we performed crosslinked ChIP-seq analysis to determine where TBP binds in mitosis. Highly reproducible ChIP-seq replicates show that TBP is maintained at largely the same genomic sites in mitosis as in interphase chromatin (Figure 3—figure supplements 1 and 2). After peak calling in the combined replicates, we plotted the log2 normalized reads in binding sites for asynchronous and mitotic samples and found that while there is a slight decrease in the average number of reads in binding sites for mitotic samples, the peak counts are largely very similar (Figure 3A). We then performed differential peak analysis using DiffBind (Ross-Innes et al., 2012; Stark and Brown, 2011), and identified only 374 out of 60,591 peaks that are considered differentially enriched (Figure 3B). Out of this, 72 peaks have higher enrichment in mitotic cells while 302 peaks show higher enrichment in asynchronous samples (Figure 3A). This analysis shows that the majority of the TBP bound sites are largely maintained in both asynchronous and mitotic cells.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig3-v2.jpg)
+
+**Figure 3.:** (A) Box plot of read distributions for all identified peaks. Asynchronous and mitotic samples are shown in blue and red, respectively. The first two boxes represent all peaks, the middle two are peaks that have higher levels in mitosis, and the last two boxes are peaks that have higher reads in asynchronous samples. (B) Volcano plot of all peaks in asynchronous and mitotic samples. Peaks identified as differentially bound are shown in pink (n = 374). (C) Average ChIP-seq read density for all TSS and surrounding regions for asynchronous (blue) and mitotic (red) samples and corresponding IgG controls (grays). (D) Unbiased k-means clustering of data from B with k = 6. Clusters are grouped into three groups depending on changes in signal. (E) Genome browser snapshots of genes in Group one and genes in Group 3. TBP ChIP-seq from asynchronous and mitotic samples are shown in blue and red, respectively. (F) Gene Ontology term analysis of genes in Group one and Group three from (D). Numbers correspond to the number of genes within the group that is labeled with the specific GO term.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Cultured mESCs were treated with 100 ng/mL of Nocodazole for 6 hr, and mitotic cells were collected by shake off. The collected cells were imaged for H2B-GFP in 70 frames, with 15 representative frames shown. Each cell was classified as mitotic or interphase. Interphase cells are marked with yellow arrowheads. The average cell number per frame, the total cell count in 70 frames, and percentage for mitotic and interphase cells are shown in the table.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The Pearson correlation was calculated for reach replicate in Asynchronous (A) and Mitotic (M) samples as well as the corresponding IgG control, and the correlation values are plotted as a correlation heatmap. (B) Genome browser profiles for TBP ChIP-seq replicates in asynchronous and mitotic cells and the corresponding IgG ChIP control. (C) Average of all ChIP-seq reads centered at the TSS for each replicate in Asynchronous and Mitosis samples and the corresponding IgG controls. (D) ChIP-seq reads for each gene are plotted as heatmaps with regions centered at TSS for each replicate in Asynchronous and Mitosis samples and the corresponding IgG controls. (E) Heatmaps of the replicate-combined ChIP-seq signal surrounding the TSS of all genes, arranged by decreasing gene expression for asynchronous and mitotic samples. (F) Heatmap of E after k-means clustering with k = 3.
+
 Focusing at the TSS, TBP ChIP-seq shows similar levels of enrichment at the TSS between asynchronous and mitotic cells (Figure 3C, Figure 3—figure supplement 2). Unbiased k-means clustering with k = 6 (Figure 3D, Figure 3—figure supplement 2F) shows three main groups. Group 1 (higher in mitosis) includes the first two clusters, group 2 consists of genes that display no change, and group 3 (higher in asynchronous) is composed of the last three clusters (Figure 3D). Visualization of the data for specific genes in group 1 and 3 are shown in Figure 3E. Gene ontology (GO) term analysis of genes within each group shows that groups 1 and 3 are enriched for similar classes of genes, primarily ones involved in the cell cycle (Figure 3F). This analysis suggests that the differences in TBP binding that we observe by ChIP-seq largely reflect the cyclical expression of genes during the cell cycle. Despite the variations in TBP levels, most active genes retain TBP binding in mitosis, suggesting a global bookmarking activity at promoters by TBP.
 
-## TBP recruits a subset of RNA polymerase II molecules to mitotic chromosomes
+### TBP recruits a subset of RNA polymerase II molecules to mitotic chromosomes
 
 To determine the functional effect of mitotic TBP binding, we endogenously knocked-in the plant-specific minimal auxin-inducible degron (mAID) (Holland et al., 2012; Nishimura et al., 2009) at the TBP locus and generated homozygous mAID-TBP fusion proteins (C94 cell line). This fusion enables acute, auxin-inducible degradation of the mAID-tagged TBP via the ubiquitin degradation pathway (Figure 4A). Within 6 hr of IAA (auxin) treatment, only about 3% of mAID-TBP molecules remains detectable by bulk protein analysis with Western blot (Figure 4B) and by immunofluorescence using α-TBP antibody (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic for mechanism of auxin-inducible degradation. Ub, ubiquitin. (B) Western blot analysis for time-course of Auxin (IAA)-dependent degradation of WT cells or cells with the endogenous knock-in of the mAID to the TBP locus. (C) Immunofluorescence using α-TBP of cells with endogenous mAID-TBP and stably expressing H2B-GFP without IAA (top) or after 6 hr of IAA treatment (bottom). (D) ATAC-seq analysis of reads under 100 bp. Global average signal (top) surrounding the TSSs of all genes were generated for asynchronous samples (left) that were untreated (– IAA; dark blue) and TBP-degraded (+IAA; light blue), and for mitotic samples (right) that were untreated (– IAA; red) and TBP-degraded (+IAA; orange). Bottom, the corresponding log2 ratio of (– IAA/+IAA) plotted in 4 kb surrounding the TSS. (E) ATAC-seq analysis of 180–250 bp reads (mono-nucleosome-sized). The scheme is the same as in (D), with the exception that the plots are centered 1 kb surrounding the TSS. (F) Western blot analysis of wild-type (WT) ES cells or Halo-Pol II knock-in (C64) using α-Flag to detect the Halo-Flag knock-in and α-N-20, an antibody against the N-terminal of Pol II large subunit, to detect all Pol II levels. The unphosphorylated and phosphorylated bands for endogenous and Halo-Pol II are marked. (G) Live imaging of Halo-Pol II showing nuclear localization as marked with H2B-GFP.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Genome browser snapshot of a genomic region in Chr 6, showing each replicate for each sample. A, asynchronous. M, mitosis. R1, replicate 1. R2, replicate 2. R3, replicate 3. (B–C) Average plots for reads under 100 bp (B) and for 180–250 bp reads (C) in a 1 kb region centered at the TSS for each replicate of each sample.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) After combining all replicates, average signal around Sox2 sites were plotted for reads under 100 bp and 180–250 bp. (B) Same as in A, but for CTCF sites. (C) MA-plots. For all transcription factor motif models in mm10 (each dot), the change in MD-score in Async vs Mitosis (left), untreated vs IAA in Async cells (middle), and untreated vs IAA in Mitotic cells (right), are plotted relative to the number of motifs within 1.5 kb of any ATAC-seq peak center (x-axis). MD-scores are defined as the enrichment of a TF sequence motif within a small radios (150 bp) of ATAC-seq peaks relative to a larger local window (1500 bp) (Tripodi et al., 2018). Significantly different MD-scores are highlighted in red and purple (p-value<1×10−6). These analyses show that the majority of TF motifs show no change in enrichment in each condition tested. In Asynchronous vs Mitotic cells, only two factors show higher enrichment in Asynchronous vs Mitosis: CTCF and SMAD2.D. In Asynchronous cells, only SP4.D shows higher enrichment in TBP degraded vs untreated cells.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** We performed ChIP using α-Pol II (8WG16 antibody), α-Flag (Flag is fused to Halo-Rpb1), and IgG control. We measured ChIP-levels at the Oct4, Actin beta, and Gapdh promoters as well as at an Actin beta intron. α-Flag (Halo-Rpb1) binds to similar regions as α-Pol II.
 
 One potential function of TBP binding in mitosis is to maintain promoter accessibility and chromatin architecture. To test this hypothesis, we performed ATAC-seq analysis on asynchronous and synchronized mESCs with and without TBP degradation in three biological replicates (Figure 4—figure supplement 1). Analyzing reads under 100 bp shows that in both asynchronous and mitotic mESCs, the accessibility at the TSS remains largely maintained even after TBP degradation (Figure 4D, top). To further quantify changes, we measured the log2 of untreated vs TBP-degraded samples, and averaged the levels at the TSS of all genes (Figure 4D, bottom). The minor reductions in levels suggest that chromatin accessibility at the promoter may be determined by underlying sequences rather than TBP binding. Furthermore, TBP degradation has little or no effect on accessibility at enhancers and other TF binding sites, or at CTCF sites (Figure 4—figure supplement 2). For mono-nucleosomal reads (180–250 bp), we observe a consistent decrease in read counts surrounding the TSS in asynchronous population after TBP degradation, but the overall pattern of chromatin architecture remains the same (Figure 4E). The effect of TBP degradation in mitosis is largely confined to the −1 nucleosome, showing a decrease at this location compared to neighboring nucleosomes (Figure 4E, bottom). Consistent with the short reads analysis, these results suggest that the chromatin architecture of promoters is largely governed by cis-elements (DNA sequence and shape) and/or chromatin-modifying factors.
 
@@ -63,21 +115,53 @@ To test the role of TBP in recruiting Pol II to mitotic chromosomes, we endogeno
 
 To examine the dynamics of Pol II in interphase and mitotic cells, we performed spaSPT with subsequent model fitting using Spot-on and extracted the fraction of bound Pol II molecules (Hansen et al., 2018). As with TBP, the 2-state kinetic model fitted the Pol II data poorly (Figure 5—figure supplements 1). Fitting a 3-state kinetic model, we extracted the fraction of bound Halo-Pol II molecules for all the tested conditions (Figure 5A,B). During interphase, an average of 29.3% (S.D. 3.3%) of Pol II molecules are ‘bound’ (Figure 5A). This ‘bound’ population consists of both specific binding and non-specific chromatin interactions, as HaloTag by itself displays non-specific associations of 8.5% (S.D. 3.1%) on average (Figure 5A). To assess the specificity of the bound population, we treated the cells with either Flavopiridol, an inhibitor of Pol II promoter escape, or Triptolide, an inhibitor of Pol II initiation. After treatment with Flavopirodol or Triptolide, the bound Pol II fraction decreases to 18.0% (S.D. 5.4%) and 15.0% (S.D. 3.8%), respectively. TBP degradation in interphase cells also leads to a marked decrease in bound Pol II, to 21.9% (S.D. 4.7%), confirming the role of TBP in recruiting Pol II to chromatin. Combining TBP degradation with either drug treatment did not result in any further significant change in the fraction bound compared to drug treatments alone, suggesting that the majority of Pol II recruited by TBP is already sensitive to drug inhibition.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cells were labeled with PA-JF646 and individual molecules were tracked over 25,000 frames. Scatter plot showing the fraction bound (extracted from model fitting, see Materials and methods), for each individual interphase (Int) cell, and interphase cells treated with various drugs. Flav, Flavopiridol. Trip, Triptolide, IAA, Indole Acetic Acid (TBP-degradation). Halo only corresponds to cells stably expressing the HaloTag, showing non-specific levels of ‘bound’ molecules. n = 32 cells over four biological replicates. Black line represents mean fraction bound. (B) Scatter plot as in (A), but for mitotic cells. Halo-only sample in (A) is replotted for direct comparison. n = 32 over four biological replicates. (C) Dwell time histogram of the fraction of endogenously-tagged Halo-Pol II molecules remaining bound for interphase (blues) and mitotic (reds) cells either with or without IAA treatment, as indicated in legend. (D) Quantification of the apparent half-life (see Materials and methods) in seconds of Halo-Pol II in interphase (blues) and mitotic (reds) cells. n = 30 cells. (E) Quantification of fluorescence recovery at the bleach spot for Halo-Pol II in interphase (blues) and mitosis (reds), either with or without IAA treatment. n = 30 cells. (F) From (E), the average time to reach 90% recovery for Halo-Pol II in interphase (blues) or mitosis (reds), either with or without IAA treatment. Data are represented as mean ± SEM. *p-value<0.05, **p-value<0.01. ***p-value<0.001, ****p-value<0.00001, n.s., not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The displacement CDFs for time frames, from Δτ = 15, 30, and 45 ms, are plotted for Halo-Pol II as colored lines. The displacement CDF is then fitted with a 2-state (top) or a 3-state (bottom) model. The resulting fit is plotted as a black line, and the corresponding residuals from the fit is plotted below for each consecutive frame. The 2-state model resulted in large residuals after fitting, necessitating a 3-state model.
+
 In mitotic cells, the fraction of bound Pol II molecules decreases to an average of 15.4% (S.D. 3.2%) (Figure 5B), about half of the fraction of bound Pol II in interphase. After treatment with Flavopiridol or Triptolide, the bound population decreases significantly to 11.5% (S.D. 3.1%) and 12.1% (S.D. 3.0%), respectively, which suggests that a small fraction of Pol II molecules may be actively engaged during mitosis. Furthermore, TBP degradation also leads to a significant decrease in bound Pol II molecules, to an average 11.8% (S.D. 2.9%) compared to untreated mitotic cells. This suggests a model wherein TBP recruits a small but significant subpopulation of Pol II to mitotic chromosomes. As with interphase cells, combining TBP degradation with either drug treatment also did not result in a significant change in bound Pol II. Taken together, these results suggest that a small population of active Pol II binds specifically to mitotic chromosomes that is recruited by TBP.
 
 To determine the dynamics of Pol II binding to mitotic chromosomes, we performed SPT with long exposure times (500 ms) and measured the dwell times for Halo-Pol II in interphase and mitosis with and without TBP (Figure 5B). Pol II binding to DNA involves complex steps, from transient binding due to promoter association and abortive initiation, to the stable binding during elongation, and to the as yet undefined mechanisms for termination. Therefore, modeling the binding of Pol II to DNA using a single residence time likely over-simplifies the complex dynamics of Pol II. Therefore, instead of extracting a single residence time for Pol II after model fitting, we calculated the apparent half-life of the bound population. During interphase, the apparent half-life of Pol II is 26.7 s (Figure 5C). TBP degradation leads to a modest decrease in apparent half-life, to 21.0 s, which is consistent with the prominent role of TBP in transient Pol II promoter association. During mitosis, the apparent half-life of Pol II binding decreases to 3.5 s. This order of magnitude decrease suggests that the primary mechanism that stabilizes Pol II binding, active elongation, becomes dramatically decreased during mitosis. Furthermore, after TBP degradation during mitosis, the apparent half-life decreases from 3.5 to 2.3 s, consistent with the role of TBP in recruiting transiently-binding Pol II to mitotic chromosomes.
 
 To cross-validate the SPT residence time analysis, we performed FRAP analysis on Halo-Pol II during interphase and mitosis, with and without TBP degradation. We plotted the FRAP recovery over time (Figure 5D) and measured the time it takes to reach 90% recovery (T90%) (Figure 5E). Halo-Pol II takes 179 s to reach 90% recovery in interphase cells, whereas in mitosis, it takes 3 s. Upon TBP degradation in interphase cells, T90% decreases to 150 s, consistent with the decreased apparent half-life as measured by SPT. TBP degradation in mitotic cells shows little change in the recovery curve relative to untreated mitotic cells, further confirming our SPT residence time analysis. Taken together with the SPT results, these findings suggest that TBP affects the more transient promoter association of Pol II during interphase, and potentially directs Pol II binding to mitotic chromosomes.
 
-## Mitotic TBP binding affects transcriptional reactivation rate
+### Mitotic TBP binding affects transcriptional reactivation rate
 
 To test the hypothesis that TBP recruitment of Pol II to mitotic chromosomes helps prime active genes for efficient reactivation following mitosis, we performed two orthogonal experiments: one based on imaging and another on sequencing newly transcribed RNA products as a time course after mitosis. Using spaSPT and Spot-On to measure fraction of bound Pol II, we marked Halo-Pol II C64 cells at the metaphase stage of mitosis and imaged the same cells every 15 min until 60 min after first staging. Repeated imaging of interphase cells with and without TBP degradation showed no change in bound Pol II over time (Figure 6A). In contrast, the fraction of bound Pol II molecules in mitotic cells steadily increased over time, consistent with increasing activation of transcription following mitosis (Figure 6B). Depleting TBP during mitosis revealed that the fraction of bound Pol II remained flat over time (Figure 6B), suggesting that TBP is required for re-establishing the transcription program following mitosis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig6-v2.jpg)
+
+**Figure 6.:** (A) The fraction of bound Halo-Pol II molecules as a function of time (t = 0, release from DMSO/IAA treatment) under no IAA (WT conditions) or after 6 hr of IAA treatment (teal) for interphase cells. (B).Same as (A), but for mitotic cells. (C) Schematic of time course regimen for extracting chromatin-associated nascent RNA. Asynchronous cells are treated with DMSO or IAA for 6 hr prior to chromatin-associated nascent RNA extraction (not depicted). For other samples, cells are synchronized with Nocodazole for 6 hr, and treated with DMSO (untreated) or IAA (TBP-degraded) during Nocodazole synchronization. For mitotic samples (M), cells are immediately collected. For time course after mitosis, synchronized M cells (untreated or TBP-degraded) are replaced into fresh media to release from mitotic arrest and TBP degradation and are collected either after 30 min (M30) or 60 min (M60) following fresh media resuspension. (D) Extracted chromatin-associated nascent RNA were sequenced in strand-specific manner, and the sense (blue) and anti-sense (red) reads are plotted for Gapdh (left) and Nanog (right) loci for all corresponding samples. (E) Genome-wide average plots for all TSS and surrounding regions for sense (blue) and anti-sense (red) reads for each indicated untreated sample, and the corresponding heatmaps for all reads (bottom). (F) Same as E but for TBP-degraded samples.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Genomic browser snapshots of sense (blue) and anti-sense (red) reads of each sample and the corresponding replicates for untreated cells and TBP-degraded cells. An intronic region (boxed) is highlighted to indicate levels of newly transcribed RNA.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) For each gene, we quantified the intronic transcripts per million (TPM) reads and plotted a scatter plot with replicate one on the x-axis and replicate two on the y-axis for all samples. (B) Using the intronic TPM, we performed principal component analysis (PCA). This analysis shows that the replicates from each time point cluster together. (C) After combining reads from replicates, we calculated the TPB for each gene as before and plotted a scatter plot with the Asynchronous sample on the y-axis, and the indicated sample on the x-axis. This analysis shows that the M and M30 samples show decreased TPM relative to asynchronous (A) samples. The M60 of untreated samples are getting closer to the diagonal, suggesting that gene expression has largely re-established the asynchronous profile. For TBP-degraded samples (right), the scatter plot shows levels largely under the diagonal, suggesting a global delay in gene reactivation.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig6-figsupp3-v2.jpg)
 
 Second, we extracted the nascent chromatin-associated RNA (chr-RNA) of asynchronous (A), mitotic cells (M), and 30 and 60 min after release from mitotic arrest (M30 and M60, respectively) in two replicates (Figure 6C, Figure 6—figure supplements 1 and 2). A snapshot of the spike-in-normalized mapped reads on a housekeeping (Gapdh) and an ES cell-specific gene (Nanog) is shown on Figure 6D. The high proportion of sequenced reads in intronic regions in asynchronous samples (Figure 6D, Figure 6—figure supplement 1) confirms enrichment for newly synthesized RNAs. To assess transcriptional activity through mitosis on a global scale, we averaged the normalized signal in a 4 kb region surrounding the TSS for all genes in each sample (Figure 6E). Overall levels decrease to noise levels in mitotic samples and remain low 30 min after release. However, by 60 min after release, RNA levels have increased to the levels in asynchronous samples.
 
 To examine the role of TBP in promoting efficient reactivation, we degraded TBP in asynchronous (A) and in mitotic cells (M) (Figure 6C, Figure 6—figure supplement 1) and sequenced the chr-RNA and spike-in controls in a strand-specific manner (Figure 6—figure supplements 1 and 2). A snapshot of the mapped reads of TBP-degraded samples on Gapdh and Nanog is also shown on Figure 6D. We still observe high levels of intronic reads in asynchronous (A) samples, despite near complete degradation of TBP. Our results are reminiscent of a previous study that has observed Pol II transcription in the absence of TBP in mouse blastocyst cells (Martianov et al., 2002). However, we observed a marked decrease in transcription reactivation in M60 samples following TBP degradation in mitosis (Figure 6D). This decrease occurs globally as most genes show decreased nascent chr-RNA levels (Figure 6F), suggesting a specific role for TBP in transcriptional reactivation following mitosis. Intriguingly, we see that TBP degradation has an effect on tRNA (Pol III genes) but not on rRNA (Pol I genes) expression (Figure 6—figure supplement 3). Although this result may suggest differential roles for TBP among the three different polymerases, more stringent nascent RNA analysis will be needed to further inform this line of research.
 
 To examine the kinetics of transcriptional reactivation following mitosis, we calculated the log2 ratio of reads in the 30- and 60 min conditions relative to mitotically arrested samoles (M30/M and M60/M, respectively), for both untreated and TBP-degraded samples. In this way, we can observe the change in RNA levels relative to mitotic cells as a function of time after release from mitosis. Globally, the untreated M30/M sample shows no overall change in RNA levels whereas M60/M samples show massive increase in both upstream and downstream transcription at the TSS (Figure 7—figure supplement 1). In contrast, TBP-degraded samples show delayed transcription levels evident in the M60/M sample (Figure 7—figure supplement 1). To determine if these changes are driven by differences in TBP levels, we measured the average change in RNA levels when genes are clustered by the three groups as determined by TBP ChIP-seq k-means clustering shown in Figure 3D. We observed no effect between the three groups (Figure 7—figure supplement 2), further suggesting that the minor changes we observed by TBP ChIP-seq are likely due to changes in cyclical gene expression. We next performed unbiased k-means clustering on the untreated M30/M data with k = 3. Cluster 1 includes 5504 genes that show an increase in transcription whereas cluster 3 includes 6693 genes that show a decrease in transcription relative to mitotic cells. The remaining genes (cluster 2) show no change in transcription (Figure 7A,B). Ordering the M60/M data using the same three clusters shows that cluster one increases in transcription the earliest and the fastest whereas clusters 2 and 3 lag behind. We then ordered the M30/M and M60/M data from TBP-degraded samples (Figure 7A,B). This analysis shows that the early changes in transcription seen in untreated samples are dampened in TBP-degraded samples with the biggest effect on cluster 1. Using GO term analysis, cluster one is enriched for genes involved in metabolism of RNA, cell cycle, and transcription factor activity (Figure 7C). These genes are also generally highly expressed in the asynchronous population (Figure 7—figure supplement 2), suggesting that these genes represent the global transcription program of the cells. In contrast, cluster three is enriched for genes involved in basic cellular processes such as microtubule cytoskeleton organization and regulation of GTPase activity, but also for genes involved in differentiation and development such as cell morphogenesis in differentiation, and morphogenesis of epithelium (Figure 7C). Furthermore, these genes tend to be less expressed than cluster one in the asynchronous population (Figure 7—figure supplement 1). Taken together, these data suggest that TBP promotes efficient reactivation of the global transcription program through cell division.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig7-v2.jpg)
+
+**Figure 7.:** (A) The log2 ratio of M30 and M60 reads relative to M reads were calculated for untreated and TBP-degraded samples (M30/M and M60/M, respectively). The M30/M samples were clustered using k-means clustering with k = 3, and the rest of the samples are ordered by this clustering, and average plots surrounding the TSS are shown for each cluster. (B) Heat map analysis of each cluster for each sample in (A). (C) GO term analysis for genes present in cluster 1 (top) and cluster 3 (bottom). Numbers correspond to the number of genes within the custer that is labeled with the specific GO term.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The log2 ratio of M30 and M60 reads relative to M reads were calculated for untreated and TBP-degraded samples (M30/M and M60/M, respectively). Global average of the log2 ratios were obtained and plotted for all genes centered at the TSS (top), and the corresponding heatmap for all genes are shown (bottom). (B) The normalized reads for the untreated asynchronous (A) sample was clustered using the same grouping as in Figure 6F.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/35621/elife-35621-fig7-figsupp2-v2.jpg)
 
 ## Discussion
 
@@ -91,46 +175,133 @@ Our observation that TBP recruits Pol II to mitotic chromosomes may seem surpris
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (mouse cell line)</td>
+      <td>JM8.N4 mouse ES cells</td>
+      <td>KOMP repository</td>
+      <td>RRID: CVCL_J962</td>
+      <td>Parental cell line used for all genetic manipulations</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TBP</td>
+      <td>Abcam</td>
+      <td>Abcam #ab51841; RRID:AB_945758</td>
+      <td>1:250 for Western; 10 μg for ChIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>N-20 RNA Polymerase II</td>
+      <td>Santa Cruz</td>
+      <td>Santa Cruz #sc-899; RRID:AB_632359</td>
+      <td>1:250 for Western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>8WG16 Pol II</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_785522</td>
+      <td>1:250 for Western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma-Aldrich Cat# F3165, RRID:AB_259529</td>
+      <td>1:5000 for Western</td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>Halo-TBP KI C41</td>
+      <td>This paper</td>
+      <td>Halo-TBP KI C41</td>
+      <td>Endogneous knock-in of HaloTag to N-ternimal of TBP in JM8.N4 cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>mAID-TBP KI C94</td>
+      <td>This paper</td>
+      <td>mAID-TBP KI C94</td>
+      <td>Endogenous knock-in of the minimal auxin inducible degron to N-terminal of TBP in JM8.N4 cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>Halo-Pol II C64</td>
+      <td>This paper</td>
+      <td>Halo-Pol II C64</td>
+      <td>Endogenous knock-in of the HaloTag to C-terminal of Rbp1, largest subunit of Pol II, in mAID-TBP C94 cells</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera DNA Library Preparation Kit</td>
+      <td>Illumina</td>
+      <td>FC-121–1030</td>
+      <td>ATAC-seq reagent for Tn5 transposition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spot-On</td>
+      <td>doi: 10.7554/eLife. 25776</td>
+      <td></td>
+      <td>Spot-on software used to analyze spaSPT data</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 For all experiments, we used the mouse ES cell line JM8.N4 (RRID: CVCL_J962) obtained from the KOMP repository (https://www.komp.org/pdf.php?cloneID=8669) and tested negative for mycoplasma. ES cells were cultured on gelatin-coated plates in ESC media Knockout D-MEM (Invitrogen, Waltham, MA) with 15% FBS, 0.1 mM MEMnon-essential amino acids, 2 mM GlutaMAX, 0.1 mM 2-mercaptoethanol (Sigma) and 1000 units/ml of ESGRO (Chem- icon). ES cells are fed daily and passaged every two days by trypsinization. Mitotic cells were synchronized by adding 100 ng/mL of Nocodazole for 6 hr followed by shake-off. To assess the purity of synchronization, cells collected from shake off were placed on gelatin-coated glass bottom microwell dishes (MatTek #P35G-1.5–14 C) and imaged for H2B-GFP using epifluorescence microscopy. Mitotic cells were counted by visual inspection. For endogenously-tagged mAID-TBP cells, TBP degradation was performed by addition of indole-3-acetic acid (IAA) at 500 μM final concentration for 4–6 hr. Flavopiridol and triptolide treatments were performed at 1 μM final concentration for 30–60 min.
 
-## Cas9-mediated endogenous knock-ins
+### Cas9-mediated endogenous knock-ins
 
 Cas9-mediated endogenous knock-ins were performed as previously described (Teves et al., 2016). Briefly, mESCs were transfected with 0.5 μg of the Cas9 vector (containing the specific guide RNA and the Venus coding sequence) and with 1 μg of the donor repair vector using Lipofectamine 3000. The transfected cells were sorted for Venus expressing cells the next day. Sorted cells were plated and grown on gelatin-coated plates under dilute conditions to obtain individual clones. After one week, individual clones were isolated and were used for direct cell lysis PCR using Viagen DirectPCR solution. PCR positive clones were further grown on gelatin-coated plates and cell lysates were obtained for Western blot analysis. Homozygous and heterozygous Halo-tagged TBP cell lines were generated, one homozygous of which was further tested by teratoma assay and was performed by Applied Stem Cell. We also generated homozygous mAID-TBP cell lines, one of which (C94) was further used to endogenously knock-in HaloTag to the Rpb1 locus, the largest subunit of RNA Polymerase II (C64 cell line). All primers and guide RNAs used to generate knock-ins are listed in Supplementary file 1. To verify protein tagging, cell lysates were analyzed by Western blotting and probed for TBP (Abcam #ab51841; RRID:AB_945758), N20 Pol II antibody (Santa Cruz #sc-899; RRID:AB_632359), 8WG16 Pol II antibody (RRID:AB_785522), or Flag antibody (Sigma-Aldrich Cat# F3165, RRID:AB_259529).
 
-## Live cell and fixed sample imaging
+### Live cell and fixed sample imaging
 
 Live-cell imaging experiments including FRAP were performed on cells grown on gelatin-coated glass bottom microwell dishes (MatTek #P35G-1.5–14 C) and labeled with the Halo-ligand dye JF549 at 100 nM concentration for 30 min. To remove unbound ligand, cells were washed 3x with fresh media for 5 min each. Epi-fluorescence time lapse imaging was performed on Nikon Biostation IM-Q equipped with a 40x/0.8 NA objective, temperature, humidity and CO2 control, and an external mercury illuminator. Images were collected every 2 min for 12 hr. Confocal live-cell imaging was performed using a Zeiss LSM 710 confocal microscope equipped with temperature and CO2 control. For fixed imaging, labeled cells were fixed with 4% PFA for 10 min in room temperature and were washed with 1x PBS prior to imaging. Standard immunofluorescence was performed on labeled cells using 4% PFA. Quantification of chromosome enrichment was performed using Fiji.
 
-## FRAP
+### FRAP
 
 FRAP was performed on Zeiss LSM 710 confocal microscope with a 40x/1.3 NA oil-immersion objective and a 561 nm laser as previously described (Teves et al., 2016). Bleaching was performed using 100% laser power and images were collected at 1 Hz for the indicated time. FRAP data analysis was performed as previously described (Hansen et al., 2017). For each cell line, we collected 10 cells for technical replicates in one experiment, which was repeated for a total of three biological replicates (30 cells total).
 
-## Single molecule imaging – Slow tracking
+### Single molecule imaging – Slow tracking
 
 Cells were labeled with JF549 at 10 pM for 30 min, and washed 3x with fresh media for 5 min each to remove unbound ligand. Cells were imaged in ESC media without phenol-red. A total of 600 frames were collected for imaging experiments at 500 ms frame rate (2 Hz) and were repeated 3x for biological replicates, with each experiment consisting of 10 cells for technical replicates each. Data are represented as mean over experimental replicates (30 cells total) ± SEM. Imaging experiments were conducted as described previously (Teves et al., 2016) on a custom-built Nikon TI microscope equipped with a 100x/NA 1.49 oil-immersion TIRF objective (Nikon apochromat CFI Apo SR TIRF 100x Oil), EM-CCD camera (Andor iXon Ultra 897), a perfect focusing system (Nikon) and a motorized mirror to achieve HiLo-illumination (Tokunaga et al., 2008). Bound molecules were identified using SLIMfast as previously described (Teves et al., 2016). The length of each bound trajectory, corresponding to the time before unbinding or photobleaching, was determined and used to generate a survival curve (fraction still bound) as a function of time. A two-exponential function was then fitted to the survival curve, and the residence time was determined as previously described (Teves et al., 2016). The apparent half-life in seconds of bound Halo-Pol II was calculated by dividing the natural log of 2 with the photobleaching-corrected koff (ln2/koff) extracted from the two-exponential function fitting. Photobleaching correction is performed by subtracting the apparent koff of H2B-Halo from the apparent koff of Pol II samples as previously described (Hansen et al., 2017; Teves et al., 2016).
 
-## Single molecule imaging – Fast tracking
+### Single molecule imaging – Fast tracking
 
 Cells were labeled with photo-activatable PA-JF549 or PA-JF646 (as indicated) at 25 nM for 30 min and washed 3x with fresh media for 5 min each to remove unbound ligand. Cells were imaged in ESC media without phenol-red. A total of 20,000 frames were collected for at 7.5 ms frame rate (133 Hz) and were repeated 3-4x for biological replicates, with each replicate consisting of eight cells of technical replicates. Data are represented as mean over experimental replicates (24–32 cells total) ± standard error of means. Single molecules were localized and tracked using SLIMfast, a custom-written MATLAB implementation of the MTT algorithm (Sergé et al., 2008), using the following algorithm settings: Localization error: 10−6.25; deflation loops: 0; Blinking (frames); 1; maximum number of competitors: 3; maximal expected diffusion constant (µm2/s): 20. The fraction of bound molecules was determined as previously described using the following fit paramerters: TimeGap, 7.477; Gaps Allowed, 1; Jumps to consider, 4; Model fit type, CDF; Localization error, 0.045 (Hansen et al., 2017, 2018; Teves et al., 2016) using Spot-On (source code freely available at https://gitlab.com/tjian-darzacq-lab/spot-on-matlab). The general statistics for image analysis (number of detections, number of total trajectories, and number of trajectories ≥ 3) for all spaSPT data are listed in Supplementary file 2.
 
-## ChIP-seq
+### ChIP-seq
 
 ChIP-seq was performed as described previously (Skene and Henikoff, 2015). Briefly, asynchronous and synchronized mitotic mESCs (JM8.N4) were cross-linked using 1% formaldehyde for 5 min at room temperature and washed with PBS before quenching with 125 mM Glycine in PBS for 5 min. Cells were scraped, collected by centrifugation, and resuspended in 200 μL of Lysis buffer (1% SDS, 10 mM EDTA, 50 mM Tris-HCl (pH 8.1), protease inhibitors) for 10 min on ice. Lysates were diluted 10-fold in cold ChIP dilution buffer (1% Triton X-100, 20 mM Tris-HCl (pH 8.1), 2 mM EDTA, 150 mM NaCl, 5 mM CaCl2). MNase (5 μL of 0.2 U/μL stock) was added to the lysate and samples were incubated at 37C for 15 min. Digested was quenched by adding EDTA (final concentration of 10 mM) and EGTA (final concentration 20 mM). Samples were sonicated using Branson digital sonifier at 40 s on time at 30% power with 2.5 s on and 5 s off cycles. Lysates were cleared by centrifugation and used as input for ChIP by adding α-TBP antibody (Abcam #ab51841 RRID:AB_945758) and incubating overnight. Protein-G magnetic beads were used to immuno-capture bound fragments, which were then washed as described previously (Skene and Henikoff, 2015), and DNA was purified by ethanol extraction. Two replicates were performed, and each sample and replicate was sequenced using one lane of Illumina Hi-Seq 2500 for 50 bp paired-end reads. Reads were mapped on mm10 genome build using Bowtie2 with the following parameters: --no-unal --local --very-sensitive-local --no-discordant --no-mixed --contain --overlap --dovetail --phred33 –I 10 –X 2000. Peak calling was performed using MACS2 with the following parameters: --format BAMPE; -g mm (Zhang et al., 2008). Differential peak analysis was performed using DiffBind (Ross-Innes et al., 2012; Stark and Brown, 2011). TSS heat map and average plot analyses were performed using DeepTools suite (Ramírez et al., 2016). TSSs of mouse genome is generated from start site locations of all refseq genes from the UCSC genome browser (mm10). Data is deposited in GEO under the accession number GSE109964.
 
-## Chr-RNA-seq
+### Chr-RNA-seq
 
 Chromatin associated nascent RNA was extracted as previously described (Teves and Henikoff, 2011). Briefly, 10 million asynchronous or mitotic cells were collected for each sample as described in Figure 6C. Each sample was washed with ice-cold PBS and lysed with 800 μL of Buffer A (10 mM HEPES, pH 7.9, 10 mM KCl, 1.5 mM MgCl2, 0.34 M Sucrose, 10% Glycerol, 1 mM DTT, 0.1% Triton X-100, protease inhibitors) as described. Nuclei were subjected to consecutive biochemical fractionation with incubations for 15 min each with centrifugation and collection in between each fractionation. Nuclei were incubated 3 times for 15 min with Buffer B (9 mM EDTA, 20 mM EGTA, 1 mM DTT, 0.1% Triton X-100, protease inhibitors), then 2 times for 15 min each with Buffer B+ (20 mM EDTA, 20 mM EGTA, 2 mM spermine, 5 mM spermidine, 1 mM DTT, 0.1% Triton X-100, protease inhibitors). Following fractionation, RNA from the insoluble chromatin was extracted with Trizol and prepared for sequencing as previously described (Teves and Henikoff, 2011). Sequencing was performed on one lane of Hi-Seq 4000 with 50 bp single-end reads.
 
-## Chr-RNA-seq analysis
+### Chr-RNA-seq analysis
 
 The sequenced reads were mapped to either the mm10 genome build or ERCC92 build for the spike-in controls using Tophat with the following parameters: library-type = fr firststrand, b2-very-sensitive, no-coverage-search. The mapped reads were de-duplicated using the samtools rmdup function and then scaled using the scaling index calculated from the total number of reads that mapped to the ERCC92 build. The scaling equation is 1000/# of de-duplicated ERCC-mapped reads (Supplementary file 3). Bigwig files were generated using DeepTools suite bamCoverage function, and reads were extended for 200 bp. Intronic transcripts per million (TPM) counts for each gene were calculated using Bioconductor R, which were then inputted for principal component analysis. Scatter plots were generated using R ggplots package. TSS plots, heatmaps, and k-means clustering analyses were generated with combined replicates using DeepTools suite (Ramírez et al., 2016). Data is deposited in GEO under the accession number GSE109964.
 
-## ATAC-seq
+### ATAC-seq
 
 ATAC-seq was performed as previously described (Buenrostro et al., 2013) with the following modifications. Asynchronous cells were trypsinized and counted. Mitotic cells were collected by shake off following Nocodazole treatment. After cells were counted, a total of 10,000 cells were pelleted for each condition and washed with 50 µL of PBS. Washed cells were pelleted and immediately resuspended in transposase reaction mix (25 µL 2x TD buffer, 2.5 µL transposase, and 22.5 µL nuclease-free water). Transposition and DNA purification was performed as described (Buenrostro et al., 2013). For PCR amplification, we performed amplification for library preparation using 12 cycles for all samples. We performed three replicates, and each sample and replicate was sequenced using Hi-Seq 4000 using 100 bp paired end reads.
 
-## ATAC-seq data analysis
+### ATAC-seq data analysis
 
 All paired end reads were assessed using FastQC, and trimmed to 25 bp for each end using Trimmomatic with the following arguments: phred, 33; CROP, 25 (Bolger et al., 2014). Trimmed reads were then mapped to the mm10 genome build using Bowtie2 with the following arguments: --no-unal --local --very-sensitive-local --no-discordant --no-mixed --contain --overlap --dovetail --phred33. Optical and PCR duplicates were removed after mapping using Picard MarkDuplicates tool. Mapped reads from each sample was further subsampled to have the same proportion of reads for all samples. Bigwig files for each size class (under 100 bp, 180–250 bp) were generated using DeepTools suite bamCoverage function, with the option --MNase set for the size class 180–250 bp. TSS plots, heatmaps, and k-means clustering analyses were generated with combined replicates using DeepTools suite (Ramírez et al., 2016). Data is deposited in GEO under the accession number GSE109964.

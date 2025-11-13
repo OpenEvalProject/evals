@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.32021.001 Oligodendrocytes (OLs), the myelin-forming CNS glia, are highly vulnerable to cellular stresses, and a severe myelin loss underlies numerous CNS disorders. Expedited OL regeneration may prevent further axonal damage and facilitate functional CNS repair. Although adult OL progenitors (OPCs) are the primary players for OL regeneration, targetable OPC-specific intracellular signaling mechanisms for facilitated OL regeneration remain elusive. Here, we report that OPC-targeted PTEN inactivation in the mouse, in contrast to OL-specific manipulations, markedly promotes OL differentiation and regeneration in the mature CNS. Unexpectedly, an additional deletion of mTOR did not reverse the enhanced OL development from PTEN-deficient OPCs. Instead, ablation of GSK3β, another downstream signaling molecule that is negatively regulated by PTEN-Akt, enhanced OL development. Our results suggest that PTEN persistently suppresses OL development in an mTOR-independent manner, and at least in part, via controlling GSK3β activity. OPC-targeted PTEN-GSK3β inactivation may benefit facilitated OL regeneration and myelin repair.
+Oligodendrocytes (OLs), the myelin-forming CNS glia, are highly vulnerable to cellular stresses, and a severe myelin loss underlies numerous CNS disorders. Expedited OL regeneration may prevent further axonal damage and facilitate functional CNS repair. Although adult OL progenitors (OPCs) are the primary players for OL regeneration, targetable OPC-specific intracellular signaling mechanisms for facilitated OL regeneration remain elusive. Here, we report that OPC-targeted PTEN inactivation in the mouse, in contrast to OL-specific manipulations, markedly promotes OL differentiation and regeneration in the mature CNS. Unexpectedly, an additional deletion of mTOR did not reverse the enhanced OL development from PTEN-deficient OPCs. Instead, ablation of GSK3β, another downstream signaling molecule that is negatively regulated by PTEN-Akt, enhanced OL development. Our results suggest that PTEN persistently suppresses OL development in an mTOR-independent manner, and at least in part, via controlling GSK3β activity. OPC-targeted PTEN-GSK3β inactivation may benefit facilitated OL regeneration and myelin repair.
 
 ## Introduction
 
@@ -35,13 +35,21 @@ It is conceivable that there are multiple cell-stage-specific signaling mechanis
 
 The mammalian target of rapamycin (mTOR) signaling is known to be necessary for proper CNS myelination in early life (Figlia et al., 2018; Lebrun-Julien et al., 2014; Wahl et al., 2014; Wood et al., 2013), but the therapeutic potential of mTOR signaling manipulation for improved OL regeneration is not clear (Jiang et al., 2016; Lebrun-Julien et al., 2014; McLane et al., 2017). As an effort to identify OPC-intrinsic signaling mechanisms that promote OL generation in the mature CNS, we first determined whether the OPC-specific increase in mTOR complex 1 (mTORC1) activity enhances OL development, by OPC-specific genetic deletion of the tuberous sclerosis complex 1 (TSC1) or phosphatase and tensin homolog (PTEN), the two negative regulators of mTORC1 activity (see Figure 1A). Here, we report that OPC-targeted PTEN genetic ablation markedly enhanced OPC proliferation and OL differentiation, regardless of the examined CNS areas and age windows. OPC-targeted PTEN inactivation also remarkably facilitates OL regeneration and promotes remyelination after toxin-induced demyelination. However, such positive outcomes were not observed for OL-specific PTEN ablation. Moreover, in contrast to PTEN, OPC-specific TSC1 inactivation impaired OL development/survival.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram of the Akt-mTOR signaling pathway. The TSC1/2 complex and PTEN (orange circles) negatively regulate mTOR activity, whereas other molecules in green circles positively regulate it. (B) Experimental scheme for 4HT administration into Pdgfra-CreER; R26-EYFP; ±Tsc1f/f mice and mouse sampling. Three 4HT injections (1 mg per injection) were given between P20 and P21 (a total of 3 mg of 4HT). (C) Confocal images of phosphorylated S6 ribosomal protein (pS6) and EYFP+ cells in the CC at P20 +21. Arrowheads and asterisks indicate EYFP+ pS6+ cells and EYFP+ pS6- cells, respectively. Scale bar, 50 µm. (D) Quantification of the percentage of pS6+ cells among EYFP+ cells in the CC. n = 4 mice per group. (E) Fluorescence (left) and confocal microscopic (right) images of EYFP+ cells in the control and Tsc1 cKO mice (P20 +21). The confocal images of EYFP+ cells were taken from the CTX, and show their maturation stages. Arrowheads indicate EYFP+CC1+ OLs. Scale bars, 500 μm (left) and 50 μm (right). (F) Quantification of EYFP+ cells in the CC and CTX. (G - I) The numbers of EYFP+CC1+ OLs (G), EYFP+CC1-NG2- pre-OLs (H), and EYFP+NG2+ OPCs (I). (J) Percentages of OPC, pre-OL and OL among EYFP-labeled cells at P20 +21. n = 6 (control) or 3 (Tsc1 cKO) mice for (F - J). (K) Cell proliferation analysis with Ki67-expressing patterns. Confocal images of EYFP+NG2+Ki67+ OPCs in the CTX of a Tsc1 cKO mouse. Scale bar, 50 μm. (L) The percentage of Ki67+ cells among EYFP+ OPCs. n = 4 mice per group. (M) The number of total OPCs. (N) Western blot analysis of cortical lysates (P20 +21) for myelin proteins MOG, MBP, and CNP. Tsc1f/f (control) and 4HT-administered Pdgfra-CreER; Tsc1f/f mice (Tsc1 cKO) were used. (O) Quantification of levels of myelin proteins. n = 3 mice per group for (N, O). Data are represented as mean ±S.E.M. *p<0.05; **p<0.01; ***p<0.001. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 1—source data 1. Original western images are available in Figure 1—source data 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The numbers of total EYFP+ cells were reduced in the ventral spinal cord (SC) of Pdgfra-CreER; R26-EYFP; Tsc1f/f (P20 +21) mice compared to their controls (Pdgfra-CreER; R26-EYFP). WM, white matter. GM, gray matter. (B - D) The number of EYFP+CC1+ OLs (B), EYFP+CC1-NG2- pre-OLs (C), and EYFP+NG2+ OPCs (D) in the SC. (E) Percentages of OPC, pre-OL, and OL among EYFP-labeled cells. Data are represented as mean ±S.E.M. n = 6 (control) or 3 (Tsc1 cKO) mice. *p<0.05; **p<0.01; ***p<0.001. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 1—figure supplement 1—source data 1.
+
 The conflicting outcomes of genetic inactivations of PTEN and TSC1 suggest involvement of mTORC1-independent PTEN-downstream signaling mechanisms. Supporting this, our Pten and Mtor double cKO revealed that mTORC1 signaling is dispensable for the enhanced OL generation from the PTEN-deficient OPCs. Finally, OPC-specific ablation of glycogen synthase kinase 3β (GSK3β), another PTEN-Akt downstream target, promoted OL differentiation at a level comparable to that of PTEN-ablation.
 
 We interpret our findings to indicate that PTEN persistently and negatively regulates the OPC-to-OL transition in an mTOR-independent manner, likely via GSK3β activity. This suggests that the inhibition of the PTEN-Akt-GSK3β pathway may efficiently promote remyelination in the adult CNS.
 
 ## Results
 
-## OPC-targeted TSC1 inactivation is detrimental to new OL development
+### OPC-targeted TSC1 inactivation is detrimental to new OL development
 
 Akt-mTORC1 signaling regulates early OL development and myelination (Figlia et al., 2018; Lebrun-Julien et al., 2014; Wahl et al., 2014; Wood et al., 2013). Because the mTORC1 activity is under inhibitory control of the TSC1/2 complex (Tee et al., 2002) (See Figure 1A), it could be expected that Tsc1 ablation would increase mTORC1 activities, and enhance oligodendrogenesis. However, contrary to this idea, Tsc1 cKO with Cnp-Cre mice resulted in impaired myelination (Lebrun-Julien et al., 2014). The Cnp-Cre is active in mature OLs (Lappe-Siefke et al., 2003), but it impacts only a subset of late (i.e. GPR17-expressing) OPCs during early development (Tognatta et al., 2017). Therefore, we reasoned that the hypomyelination observed in Cnp-Cre-based Tsc1 cKO may be attributed to long-term OL-specific defects, such as myelin maintenance failure, rather than to the OPC-to-OL transition.
 
@@ -55,19 +63,35 @@ These results raise two possibilities that are not mutually exclusive: Pre-OL-to
 
 Along with others’ results on OL lineage cKO of Tsc1 or Tsc2 (Carson et al., 2015; Jiang et al., 2016; Lebrun-Julien et al., 2014), our results further support the idea that a complete inactivation of TSC1 (or consequent mTORC1 hyperactivation) is detrimental to OLs, and thus would not benefit OL development or remyelination. However, the situation is not entirely clear, because another, recently published study suggests that Tsc1-deleted OPCs (with Cspg4-CreER) leads to increased myelin thickness after demyelination (McLane et al., 2017).
 
-## OPC-specific PTEN inactivation promotes new OL development in both the young and mature CNS
+### OPC-specific PTEN inactivation promotes new OL development in both the young and mature CNS
 
 Next, we targeted Pten, another upstream negative regulator of the Akt-mTORC1 signaling (See Figure 1A), in OPCs. Pten had been targeted in OL lineage cells in earlier studies, in which gene deletion was achieved using either Olig2-Cre (Harrington et al., 2010; Maire et al., 2014) or OL-specific Cre lines (i.e. Cnp-Cre and Plp1-CreER) (Goebbels et al., 2010). Those studies did not report apparent changes in OL numbers or pattern of remyelination, but abnormal myelin outgrowth. However, it is possible that the cell-specific roles of PTEN in OPC were not completely revealed, because Olig2-Cre may affect many other neural cells besides OL lineage cells (Maire et al., 2014; Masahira et al., 2006), and OL-specific Cre mice do not impact the majority of adult OPCs (Goebbels et al., 2010). To investigate OPC-specific roles of PTEN, we administered 4HT into Pdgfra-CreER; R26-EYFP; ±Ptenf/f mice either at P20 or P45, sampling them at P41 or P75, respectively (Figure 2A), and measured the degree of new oligodendrogenesis from the EYFP-labeled OPCs for these two age windows (i.e. P20 ~P41 and P45 ~P75). Similar to Tsc1 cKO, Pten deletion increased pS6 levels in EYFP+ cells in the CC (Figure 2B,C), indicating that PTEN was inactivated, and as a consequence, mTORC1 activity was significantly enhanced. However, in contrast to Tsc1 cKO, the number of EYFP+ cells increased for most of the observed brain areas, including the CC and CTX (Figure 2D,E). The fate analysis of EYFP-labeled OPCs with co-immunostaining of cell stage markers (Figure 2D) revealed that there were significant increases in EYFP+CC1+ cells in the CTX of Pten cKO mice for both age-windows (p=0.0002 for P20 ~P41; p=0.0037 for P45 ~P75) (Figure 2F). The new OL generation was also higher in the CC of P45 +30 Pten cKO mice than the age-matched control (p=0.0006) (Figure 2F). The failure to observe a significant increase of EYFP+CC1+ cells in the CC of P20 +21 Pten cKO (Figure 2F) may be due to the high rate of OL differentiation (with a larger variation) in the CC of the developing brain (Kang et al., 2010). Thus, facilitated OL differentiation may not have been sufficiently pronounced by the relatively short-term (i.e. 3 weeks) OPC fate-tracking. In contrast to the increased new OLs, densities of EYFP-labeled OPCs were not changed by Pten cKO (Figure 2G). Consequently, the percentage of mature OLs among EYFP-labeled OL lineage cells increased in both the CC (for P45 +30) and CTX (Figure 2H). These results strongly suggest that PTEN inactivation in OPCs promotes new OL development, even in the mature brain.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental scheme for 4HT injection and BrdU administration into Pdgfra-CreER; R26-EYFP; ±Ptenf/f mice, and for mouse sampling. For P45 +30, 4HT (1 mg per injection) was injected five times between P45 and P47 (a total of 5 mg). (B) Confocal images of phosphorylated S6 ribosomal protein (pS6) and EYFP+ cells in the CC at P20 +21. Arrowheads and asterisks indicate EYFP+ pS6+ cells and EYFP+pS6- cells, respectively. Scale bar, 50 µm. (C) Percentage of pS6+ cells among EYFP-labeled cells in the CC at P20 +21. n = 5 mice per group. (D) Fluorescence (left) and confocal (right) images of EYFP+ cells in the brains of the 4HT-administered control and Pten cKO mice (P20 +21). The confocal images were taken from the CTX. Arrowheads indicate EYFP+CC1+ mature OLs. Scale bars, 500 μm (left) and 50 μm (right). (E) Number of total EYFP+ cells was increased in the CTX of Pten cKO mice during the OPC fate analysis for the two age windows. (F) Number of EYFP+CC1+ OLs. (G) The numbers of EYFP+NG2+ OPCs were not changed by the Pten cKO. (H) Percentages of OPC, pre-OL and OL among EYFP-labeled cells. (I) Fluorescence (left) and confocal (right) images of BrdU+ cells in the CTX (P20 +21). Arrowheads indicate BrdU+NG2+ OPCs. Scale bars, 500 μm (left) or 50 μm (right). (J) Quantification of BrdU+NG2+ OPCs in the CC and CTX. (K) Confocal images showing disruption of tiled OPC distribution in the CTX of Pten cKO mice (P20 +21). An arrow indicates a cortical area devoid of an NG2+ OPC. Scale bar, 50 μm. (L) Number of total OPCs. Data are represented as mean ±S.E.M. n = 4 ~ 7 mice per group for P20 ~41. n = 3 ~ 5 mice per group for P45 ~P75. *p<0.05; **p<0.01; ***p<0.001. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fluorescence (left) and confocal (right) images of SC EYFP+ cells in Pdgfra-CreER; R26-EYFP; ±Ptenf/f mice (P20 +21). The identity of EYFP+ cells in the boxed areas (left) was determined by co-immunostaining with maturation stage markers (right). Arrowheads indicate newly generated EYFP+CC1+ OLs. Scale bars, 100 µm (left) and 50 µm (right). (B - E) Quantification of EYFP+ cells (B), EYFP+CC1+ new OLs (C), EYFP+NG2+ OPCs (D) and total NG2+ OPCs (E) in the SC of control and Pten cKO mice. Data are represented as mean ±S.E.M. n = 3 ~ 6 (control), or 3 ~ 5 (Pten cKO) mice. *p<0.05; **p<0.01; ***p<0.001. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 2—figure supplement 1—source data 1.
 
 In order to assess changes in cell proliferation, BrdU was also given to Pdgfra-CreER; R26-EYFP; ±Ptenf/f mice (Figure 2A). We observed that there were marked increases in BrdU+ cells in the Pten cKO brain (P20 +21) (Figure 2I left). Confocal imaging further confirmed that most BrdU+ cells were NG2+ OPCs for both age windows (Figure 2I,J). It was also noted that the characteristic tiled distribution of OPCs (Hughes et al., 2013) was disrupted by OPC-specific Pten cKO (Figure 2K). However, despite the increase of OPC proliferation, the density of total OPCs was not altered (Figure 2L). These observations suggest that the increased OPC proliferation directly contributes to additional OL differentiation and/or that it is a homeostatic regenerative response to the OPC reduction due to enhanced OPC-to-OL conversion in Pten cKO mice.
 
 The enhanced oligodendrogenesis was also evident in both white and gray matter (WM and GM) of the ventral SC of Pten cKO mice, for both examined age windows (Figure 2—figure supplement 1A–C). In particular, after OPC-specific Pten ablation starting at P45, new OL accumulation was enhanced by about four-fold in the SC GM in 30 days (p=0.0001) (Figure 2—figure supplement 1C). However, the densities of labeled OPCs and total OPCs were not altered (Figure 2—figure supplement 1D,E), as they were in the brain. These results further suggest that OPC-specific PTEN inactivation effectively promotes new OL development throughout the CNS.
 
-## OPC-targeted Pten ablation leads to enhanced OL accumulation
+### OPC-targeted Pten ablation leads to enhanced OL accumulation
 
 Even though OL generation is enhanced by the OPC-targeted genetic manipulation, survival of new OLs may be contingent on the availability of extracellular growth factors or other cell-extrinsic cues. Thus, we asked whether PTEN-deficient OPCs continue to add new OLs, leading to an increase in total OLs. To quantify total OLs unambiguously, we used Mobp-EGFP BAC Tg mice in which EGFP is expressed only in mature OLs (Kang et al., 2013). Pdgfra-CreER; Mobp-EGFP; ±Ptenf/f mice received three 4HT injections (a total of 3 mg) between P14 and P18 (Figure 3—figure supplement 1A). At P30, there were increases in both EGFP+ OLs (Figure 3—figure supplement 1B,C) and Olig2+CC1+ OLs (Figure 3—figure supplement 1D,E) in the CTX of Pten cKO mice.
 
 For a longer-term OPC fate analysis, the 4HT-administered (at P20) Pdgfra-CreER; R26-EYFP; ±Ptenf/f mice were observed at P90 (thus P20 +70) (Figure 3A). These cKO mice exhibited even greater accumulation of EYFP+ OLs in both the CC and CTX (a seven-fold increase of OL at P20 +70 vs. a two-fold increase at P20 +21) (Figures 3B–D and and 2F). Due to the greater new OL addition, total CC1+ OLs also increased (Figure 3E). Interestingly, EYFP+NG2+ OPCs were significantly reduced in the CC (p=0.0004), but not in the CTX of Pten cKO mice (P20 +70) (Figure 3F). Due to the marked EYFP+ OL accumulation, the percentages of mature OLs among EYFP-labeled cells were increased, both in the CC and CTX, whereas those of labeled OPCs were highly reduced (Figure 3G). It is likely that the PTEN-deficient (EYFP+) OPCs in the CC may have undergone OL differentiation more rapidly than their own cell division, and thus EYFP-labeled OPCs markedly decreased at P20 +70. At the same time, PTEN-harboring EYFP– OPCs may have replaced the EYFP+ OPCs. Indeed, at P20 +70, EYFP-Olig2+NG2+ OPCs were predominant in the CC of Pten cKO mice (Figure 3H), and thus, the density of total OPCs was not altered (Figure 3I).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig3-v2.jpg)
+
+**Figure 3.:** (A) Experimental scheme for 4HT and BrdU administration into Pdgfra-CreER; R26-EYFP; ±Ptenf/f mice, and for mouse sampling at P90 (P20 +70). (B) Confocal images of EYFP+ cells in the CC showing their maturation stage. Arrowheads indicate EYFP+CC1+ OLs. Scale bar, 50 µm. (C) Number of EYFP+ cells in the CC and CTX at P20 +70. (D) Number of EYFP+CC1+ OLs. (E) Number of total CC1+ OLs. (F) Number of EYFP+NG2+ OPCs. (G) Percentages of OPC, pre-OL and OL among EYFP-labeled cells in the control and Pten cKO mice at P20 +70. (H) Confocal images of NG2+ OPCs in the CC of Pten cKO mice. At P20 +70, resident Olig2+NG2+ OPCs did not EYFP+ OPCs (arrowheads) in the CC. Scale bar, 50 µm. (I) The number of total NG2+ OPCs did not change in Pten cKO mice. (J) Confocal images of cortical EYFP-labeled BrdU+ cells. Arrowheads and asterisk indicate BrdU+NG2+ OPCs and a BrdU+NG2- cell, respectively. (K) Number of BrdU+EYFP+NG2+ OPCs and BrdU+EYFP+NG2- OL lineage cells in the CTX. Data are represented as mean ±S.E.M. n = 3 (control) and 4 (Pten cKO) mice. *p<0.05; **p<0.01; ***p<0.001. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The experimental scheme for 4HT administration into Pdgfra-CreER; Mobp-EGFP; ±Ptenf/f mice and mouse sampling (P14 +16). 4HT was injected at P14, 16 and 18 (one single injection per day). (B) Fluorescence images of EGFP+ cells in the CTX. Scale bar, 100 µm. (C) Quantification of EGFP+ OLs in the CTX at P14 +16. (D) Confocal images of cortical Olig2+CC1+ OLs (arrowheads). Some CC1+ (or EGFP+) OLs were not labeled with our Olig2 immunostaining. Scale bar, 50 µm. (E) Quantification of Olig2+CC1+ OLs in the CTX at P14 +16. Data are represented as mean ±S.E.M. n = 4 (control) or 3 (Pten cKO) mice. *p<0.05; **p<0.01. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 3—figure supplement 1—source data 1.
 
 BrdU administration (50 mg/kg per injection, a total of 10 injections between P80 and P84) and cell proliferation analyses revealed that OPCs continuously proliferate at higher rates in the CTX of Pten cKO (Figure 3J,K), and yet without changes in total OPC number (Figure 3I). Some of the BrdU-laden OPCs appeared to have become pre-OLs or OLs (EYFP+NG2-) during the last week before sampling (Figure 3K right).
 
@@ -75,35 +99,55 @@ These results further confirm that PTEN regulates OPC differentiation, not only 
 
 Although in sharp contrast to earlier studies in which no changes (Goebbels et al., 2010; Harrington et al., 2010) or a decrease (Maire et al., 2014) in OL numbers were observed with different Cre-dependent Pten deletion, our results provide an important example of how the outcomes of OPC-specific genetic manipulations can differ from those of mature OL-specific or non-cell-specific cKO when assessing cell-intrinsic regulators for adult OL development.
 
-## OPC-specific Pten ablation promotes new axon myelination
+### OPC-specific Pten ablation promotes new axon myelination
 
 In order to determine whether the increased new OLs contribute to enhanced myelination in Pten cKO mice, we performed western blot analysis for myelin proteins. 4HT was injected into Ptenf/f (control) or Pdgfra-CreER; Ptenf/f mice four times between P14 and P21 (a total of 4 mg) (Figure 4A). Even though Pten might have been deleted from only subsets of young OPCs by this Cre activation protocol, levels of PLP, MOG, and CNP were significantly increased in the CTX of Pten cKO mice at P75 (Figure 4B,C). Moreover, electron microscopic (EM) analyses revealed that the g-ratios (the ratio between the inner and the outer diameters of the myelin sheath) of callosal axon fibers were significantly lowered in the Pten cKO mice (P13 +17) (p=0.038) (Figure 4D–F). More importantly, there was a marked increase in the number of myelinated axons (p=0.033) (Figure 4G), suggesting that the increased number of new OLs myelinate more axons in OPC-specific Pten cKO mice.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig4-v2.jpg)
 
-**Figure 4.:** Pten ablation promotes new myelination.(A) Experimental scheme for 4HT into Pten mice, and for mouse sampling for western blot analysis (f/f ± Pdgfra-CreERB,C) and EM analyses (D –G). For western blot analysis, 4HT was injected into Pten (control) and f/fPdgfra-CreER; Pten mice at P14, P20 (twice), and P21 (1 mg per injection, a total of 4 mg), and the mice were sampled at P75. For EM, A single dose 4HT was injected at P13, 15, and 17 (a total of 3 mg), and the mice were sampled at P30. (f/fB) Western blot analysis of cortical lysates for myelin proteins of control and OPC-targeted Pten cKO mice (P14 +61). (C) Quantification of the levels of PLP, MAG, MOG, MBP and CNP in the western blot (B). n = 3 mice per group. (D) Representative electron micrograph (EM) of the CC of the control and Pten cKO mice (P13 +17). Arrows indicate thickened myelin in Pten cKO mice. Scale bar, 500 nm. (E) Scatter plot of g-ratios. More than 100 myelinated axons per mouse were analyzed. (F) Average g-ratio. (G) Percentage of myelinated axons was increased in Pten cKO mice. More than 700 axons were analyzed for myelination per mouse. n = 3 mice per group for (D - G). (H, I) Fluorescence images of EGFP+ cells in the CC (G) and CTX (H) of Pdgfra-CreER; R26-mEGFP;±Pten mice. 4HT (1 mg per injection, two injections per day) was injected at P25 and P26 (a total of 4 mg), and the mice were killed 3, 10, or 20 days later. Arrowheads indicate increased EGFPf/f+ slender processes, reminiscent of bundles of myelinated fibers in Pten cKO mice (P25 +20). Scale bar, 100 µm. (J) Immuno-EM of anti-EGFP immuno-gold particles in the CC of Pdgfra-CreER; R26-mEGFP; ±Pten mice (P20 +21). Arrows indicate EGFPf/f+ newly formed immature myelin sheaths. Scale bar, 500 nm. (K) Percentage of EGFP+ myelinated axons increased at P20 +21. n = 3 mice per group. Data are represented as mean ±S.E.M. *p<0.05. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 4—source data 1. Original western images are available in Figure 4—source data 2.10.7554/eLife.32021.016Figure 4—source data 1.Figure 4.10.7554/eLife.32021.017Figure 4—source data 2.Figure 4A.Full-length western blot images from three separate blots (A, B, and C) used in Figure 4A. The blots were sequentially re-probed as indicated. The original images were cut with dashed-line boxes. The blot D was used for the simultaneous detection PLP and β-actin using Odyssey infrared scanner (LI-COR).
+**Figure 4.:** (A) Experimental scheme for 4HT into Ptenf/f ± Pdgfra-CreER mice, and for mouse sampling for western blot analysis (B,C) and EM analyses (D –G). For western blot analysis, 4HT was injected into Ptenf/f (control) and Pdgfra-CreER; Ptenf/f mice at P14, P20 (twice), and P21 (1 mg per injection, a total of 4 mg), and the mice were sampled at P75. For EM, A single dose 4HT was injected at P13, 15, and 17 (a total of 3 mg), and the mice were sampled at P30. (B) Western blot analysis of cortical lysates for myelin proteins of control and OPC-targeted Pten cKO mice (P14 +61). (C) Quantification of the levels of PLP, MAG, MOG, MBP and CNP in the western blot (B). n = 3 mice per group. (D) Representative electron micrograph (EM) of the CC of the control and Pten cKO mice (P13 +17). Arrows indicate thickened myelin in Pten cKO mice. Scale bar, 500 nm. (E) Scatter plot of g-ratios. More than 100 myelinated axons per mouse were analyzed. (F) Average g-ratio. (G) Percentage of myelinated axons was increased in Pten cKO mice. More than 700 axons were analyzed for myelination per mouse. n = 3 mice per group for (D - G). (H, I) Fluorescence images of EGFP+ cells in the CC (G) and CTX (H) of Pdgfra-CreER; R26-mEGFP;±Ptenf/f mice. 4HT (1 mg per injection, two injections per day) was injected at P25 and P26 (a total of 4 mg), and the mice were killed 3, 10, or 20 days later. Arrowheads indicate increased EGFP+ slender processes, reminiscent of bundles of myelinated fibers in Pten cKO mice (P25 +20). Scale bar, 100 µm. (J) Immuno-EM of anti-EGFP immuno-gold particles in the CC of Pdgfra-CreER; R26-mEGFP; ±Ptenf/f mice (P20 +21). Arrows indicate EGFP+ newly formed immature myelin sheaths. Scale bar, 500 nm. (K) Percentage of EGFP+ myelinated axons increased at P20 +21. n = 3 mice per group. Data are represented as mean ±S.E.M. *p<0.05. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 4—source data 1. Original western images are available in Figure 4—source data 2.
 
 To better observe the growth of OL processes, Pdgfra-CreER; ±Ptenf/f mice were crossed with R26-mEGFP (mT/mG) mice, which express the membrane-bound EGFP upon Cre recombination (Muzumdar et al., 2007). In a few weeks after 4HT administration (at P25), EGFP+ cells exhibited more rapid morphological changes in the Pten cKO mice, and the EGFP+ OPC progeny cells formed more thin processes along axonal tracts (Figure 4H,I). Consequently, at P25 +20, discrete stellate-shaped OPC morphology was no longer seen in the CC of cKO mice (Figure 4H). We also performed immuno-EM with Pdgfra-CreER; R26-mEGFP; ±Ptenf/f (P20 +21) mice and anti-EGFP antibodies, in which the gold particles labeled only EGFP+ membranes, including newly formed myelin sheaths (Figure 4J). The immuno-EM analysis revealed that the percentage of newly formed myelinated axons increased by about 2.5-fold in the CC of the Pten cKO mice (p=0.0179) (Figure 4K). These results suggest that PTEN inactivation in OPCs facilitates and enhances new myelination.
 
-## OL-specific Pten ablation does not change OL number, but does increase myelin thickness
+### OL-specific Pten ablation does not change OL number, but does increase myelin thickness
 
 In two earlier independent studies, Akt signaling was activated in OLs by using Plp1-Akt1 (DD) transgenic mice (Flores et al., 2008) or Cnp-Cre; Ptenf/f mice (Goebbels et al., 2010). Both mutant mice exhibited similar phenotypes, such as thicker myelin sheaths, but with no change in OL number and OL regeneration. However, the gene promoters utilized (i.e. Plp1 and Cnp) in those studies may have affected at most only a small fraction of OPCs, given their endogenous gene expression patterns. Thus, the phenotypic differences between our results and those earlier ones may have stemmed from different target cell populations (i.e. OPC vs. OL). Alternatively, it is also possible that different methods utilized in our OL lineage assessments caused these differences. To determine whether differences in target cell populations for PTEN-Akt manipulation account for the observed phenotypic differences, we used Mog-iCre mice (Buch et al., 2005) for Pten deletion. In Mog-iCre; R26-EYFP; ±Ptenf/f mice (P41), EYFP was expressed only in CC1+ OLs (Figure 5A), suggesting that the Cre activity is highly specific to OLs. The numbers of EYFP+ OLs and NG2+ OPCs were not changed by the Mog-iCre-based Pten cKO for both the brain and the spinal cord (Figure 5B,C). Moreover, EM analysis of R26-EYFP; Ptenf/f; ±Mog-iCre (P34) mice revealed that myelin sheaths were thickened (Figure 5D–F), but the percentage of myelinated axons did not increase in the cKO mice (Figure 5G). These results are in accordance with the earlier reports (Flores et al., 2008; Goebbels et al., 2010), and together they support the notion that the enhanced oligodendrogenesis (promoted OL generation and increase in myelinated axons) in Pdgfra-CreER; Ptenf/f mice is due to OPC-specific targeting of Pten, thus suggesting differential cell-stage-specific roles of PTEN.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig5-v2.jpg)
 
-**Figure 5.:** Pten ablation.(A) Fluorescence (left) and confocal (right) images of EYFP+ cells in Mog-iCre; R26-EYFP; ±Pten (f/fP41) mice. The confocal images were taken from the CTX. Arrowheads indicate EYFP+CC1+ OLs. Scale bars, 500 µm (left) and 50 (right) µm. (B) Number of EYFP+CC1+ OLs in the brain and the SC. (C) Number of NG2+ OPCs. (D) Representative EM of myelinated callosal axons from R26-EYFP; Pten (control) and f/fR26-EYFP; Pten (f/f; ±Mog-iCrePten cKO) mice (P34). Scale bar, 500 nm. (E) Scatter plot of the g-ratios. More than 100 axons per mouse, and three mice per group were analyzed. (F) Average g-ratio. (G) Percentage of myelinated axons was not altered in OL-specific Pten cKO mice. Data are represented as mean ±S.E.M. n = 3 (control) or 4 (Pten cKO) mice for (B, C), and n = 3 mice per group for (D - G). *p<0.05. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 5—source data 1.10.7554/eLife.32021.019Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Fluorescence (left) and confocal (right) images of EYFP+ cells in Mog-iCre; R26-EYFP; ±Ptenf/f (P41) mice. The confocal images were taken from the CTX. Arrowheads indicate EYFP+CC1+ OLs. Scale bars, 500 µm (left) and 50 (right) µm. (B) Number of EYFP+CC1+ OLs in the brain and the SC. (C) Number of NG2+ OPCs. (D) Representative EM of myelinated callosal axons from R26-EYFP; Ptenf/f (control) and R26-EYFP; Ptenf/f; ±Mog-iCre (Pten cKO) mice (P34). Scale bar, 500 nm. (E) Scatter plot of the g-ratios. More than 100 axons per mouse, and three mice per group were analyzed. (F) Average g-ratio. (G) Percentage of myelinated axons was not altered in OL-specific Pten cKO mice. Data are represented as mean ±S.E.M. n = 3 (control) or 4 (Pten cKO) mice for (B, C), and n = 3 mice per group for (D - G). *p<0.05. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 5—source data 1.
 
-## PTEN-deficient OPCs rapidly regenerate OLs after lysolecithin-induced demyelination
+### PTEN-deficient OPCs rapidly regenerate OLs after lysolecithin-induced demyelination
 
 Given the facilitated OL development in OPC-specific Pten cKO mice, we asked whether Pten-inactivated OPCs also enhance OL regeneration. After Pdgfra-CreER; R26-EYFP; ±Ptenf/f mice received tamoxifen (a total of 10 injections for 5 days) from P50 to P54, 1% lysolecithin (LPC) was injected into the CC at P58 (Figure 6A). This LPC injection typically induces focal demyelination in 3 days (Figure 6B), and OL regeneration (and remyelination) occurs for the following 3 weeks. Two weeks after LPC, we observed that more EYFP+CC1+ OLs accumulated in the CC of Pten cKO mice (p=0.01) (Figure 6C–E), while EYFP-labeled OPCs were unchanged (Figure 6F). Thus, the percentage composition of EYFP-labeled cells changed, which indicates more OL generation from OPCs (Figure 6G). EM analyses also revealed that myelin thickness was increased, particularly for large-diameter axons (diameters > 1 μm, p=0.0458) in the Pten cKO mice (Figure 6H–K).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig6-v2.jpg)
+
+**Figure 6.:** (A) Experimental scheme for tamoxifen (Tam) and lysolecithin (LPC) injection into Pdgfra-CreER; R26-EYFP; ±Ptenf/f mice. A series of tamoxifen injections (40 mg/kg per i.p. injection, a total of 10 injections) were given between P50 and P54. The demyelination was induced with LPC injection at P58, and the mice were sampled at P72, which is 14 days after LPC injection (14 dpi), and 22 days after the first tamoxifen injection (P50 +22). (B) Loss of MBP immunoreactivity (arrowhead) at the LPC-injected CC in the brain. (C) Fluorescence (left) and confocal (right) images of EYFP+ cells and CC1+ OLs in the CC at 14 days after LPC injection (14 dpi). Scale bars, 200 μm (left) and 50 µm (right). (D) Quantification of EYFP+ cells in the LPC injected site at 14 dpi. (E) Quantification of EYFP+CC1+ OLs. (F) Quantification of EYFP+NG2+ OPCs. (G) Pten cKO mice exhibited marked changes in the percentage of OL and pre-OL among EYFP-labeled cells at the LPC-injected areas at 14 dpi. (H) Representative EMs of the lesion in the CC at 14 dpi. Scale bar, 2 μm. (I) Scatter plot for individual g-ratios of myelinated axons. More than 100 myelinated axons per mouse, and three mice per group were analyzed. (J, K) Average g-ratio according to axon diameter (J) and as a total (K). Data are represented as mean ±S.E.M. n = 3 (control) or 5 (Pten cKO) mice for (D - G), or n = 3 per group for (H–K). *p<0.05; **p<0.01. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Experimental scheme for 4HT, BrdU and LPC injection into Pdgfra-CreER; R26-EYFP; ±Ptenf/f mice, and for mouse sampling. Five injections of 4HT (1 mg per injection) were given between P45 and P47, and LPC was injected at P55. BrdU was administered from P56 to the sampling age only via drinking water. (B) Loss of MBP immunoreactivity (arrowhead) at an LPC-injected area in the SC dorsal WM. (C) Fluorescence (left) and confocal images (right) of the SC dorsal WM at 14 dpi. Scale bars, 100 µm (left) and 10 µm (right). (D) Quantification of newly generated EYFP+CC1+ OLs (left) and BrdU+CC1+ cells (right). Data are represented as mean ±S.E.M. n = 3 mice per group. *p<0.05; ***p<0.001. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 6—figure supplement 1—source data 1.
 
 We also injected LPC into the dorsal SC WM (Figure 6—figure supplement 1A,B). To this cohort of mice, BrdU was also administered from 1 dpi (1 day after LPC injection) until mouse sampling (Figure 6—figure supplement 1A). We observed that more EYFP+CC1+ OLs accumulated in the lesions of Pten cKO than in the controls (p=0.0008) (Figure 6—figure supplement 1C,D). Enhanced OL accumulation in the cKO mice was also evident based on the number of BrdU+CC1+ cells (Figure 6—figure supplement 1D), indicating that the new OLs had been generated from proliferating OPCs.
 
 Together, these results suggest that Pten-inactivated OPCs have a greater potential to regenerate new OLs than normal OPCs in the demyelinated CNS.
 
-## mTOR signaling is not required for the enhanced OL development from PTEN-inactivated OPCs
+### mTOR signaling is not required for the enhanced OL development from PTEN-inactivated OPCs
 
 Although PI3K-Akt potentially regulates numerous downstream signaling cascades, mTOR is often thought to be the main downstream effector in OL development and myelination (Figlia et al., 2018; Wahl et al., 2014; Wood et al., 2013). However, our OPC-specific Tsc1 ablation (inducing mTORC1 hyperactivity) impaired OL development, whereas OPC-specific Pten-ablation (which also activates mTORC1) promoted new OL generation. Thus, these opposite results raise the possibility that the Pten-deletion-induced OL promotion is not mediated only by mTORC1 activity. While mTORC1 signaling is important for myelin growth, it is also possible that different PTEN-related signaling mechanisms regulate the OPC-to-OL lineage progression. Indeed, we observed that almost all pS6 (an mTORC1 activity indicator) immunoreactivities were localized at either EYFP+NG2- pre-OLs (about 25%) or EYFP+CC1+ OLs (more than 70%) in the CC of Pdgfra-CreER; R26-EYFP; ±Ptenf/f (P20 +21) mice. The percentage of NG2+ OPCs among pS6+ cells was negligible (less than 1%) even after Pten cKO (Figure 7A). These observations suggest that the actual site of mTORC1 activity of OL lineage is not NG2+ OPC, but more mature OL lineage cells.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig7-v2.jpg)
+
+**Figure 7.:** (A) Percentage of OPC, pre-OL and OL among EYFP+pS6+ cells in the CC of the control (Pdgfra-CreER; R26-EYFP) and Pten cKO (Pdgfra-CreER; R26-EYFP; Ptenf/f) mice (P20 +21). Almost all pS6 immunoreactivities were observed either in EYFP+NG2- pre-OLs or in EYFP+CC1+ OLs, but not in NG2+ OPCs. More than 150 callosal EYFP+pS6+ cells were analyzed per mouse. n = 4 mice per group. (B) Validation of effective mTOR inactivation with pS6 immunofluorescence in OPC-specific Mtor and Pten-Mtor double cKO mice (Pdgfra-CreER; R26-EYFP; ±Ptenf/f; ±Mtorf/f, P20 +21). Arrowheads and asterisks indicate pS6+EYFP+ and pS6+EYFP- cells, respectively. Scale bar, 100 µm. (C) Quantification of the EYFP+pS6+ cells in the CC. n = 3 mice per group. (D) Confocal images of EYFP+ cells in the CTX showing their maturation stage. Arrowheads indicate newly differentiated EYFP+CC1+ OLs. Scale bar, 50 µm. (E - G) Quantification of total EYFP+ cells (E), EYFP+CC1+ OLs (F), and EYFP+NG2+ OPCs (G) in the CC. (H) Percentages of OPC, pre-OL and OL among EYFP-labeled cells of Mtor cKO and Pten-Mtor cKO mice (P20 +21). (I) Representative EM of callosal axons in the control (Ptenf/f) and Pten-Mtor cKO mice (P13 +17). An arrow indicates altered myelin thickness. Scale bar, 500 nm. (J) Scatter plot of individual g-ratios. (K) Average of g-ratios. At least 130 axons per mouse, and three mice per group were analyzed. (L) Percentage of myelinated axons. Data are represented as mean ±S.E.M. n = 6 (control), 4 (Mtor cKO), or 4 (Pten-Mtor cKO) mice for (E - H), n = 3 mice per group for (I - L). *p<0.05; **p<0.01; ***p<0.001. One-way ANOVA with Bonferroni test for (C, E – G). Unpaired Student's t-test for (H, K, L). The numerical data for the graphs are available in Figure 7—source data 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Quantification of EYFP+ cells in the control (Pdgfra-CreER; R26-EYFP), Pten cKO, and Pten-Mtor double cKO mice (P20 +21). (B, C) Quantification of EYFP+CC1+ OLs (B) and EYFP+NG2+ OPCs (C). (D) Percentages of OPC, pre-OL, and OL among EYFP-labeled cells. Data are represented as mean ±S.E.M. n = 4 (control and Pten-Mtor double cKO) or 5 (Pten cKO) mice. One-way ANOVA with Bonferroni post hoc test for (A - C), and unpaired Student's t-test for (D). The numerical data for the graphs are available in Figure 7—figure supplement 1—source data 1.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Confocal images of EYFP+ cells in the GM-SC of the control (Pdgfra-CreER; R26-EYFP), Mtor cKO, and Pten-Mtor double cKO mice. Arrowheads indicate newly generated EYFP+CC1+ OLs. Scale bar, 50 µm. (B - D) Quantification of EYFP+ cells (B), EYFP+ CC1+ OLs (C), and EYFP+NG2+ OPCs (D) in the SC of control, Mtor cKO, and Pten-Mtor double cKO mice. (E) Percentages of OPC, pre-OL, and OL among EYFP-labeled cells in the SC of Mtor cKO and Pten-Mtor double cKO mice. Data are represented as mean ±S.E.M. n = 6 (control) or 4 (Mtor cKO and Pten-Mtor cKO) mice. One-way ANOVA with Bonferroni test for (B - D). Unpaired Student's t-test for (E). *p<0.05, **p<0.01, ***p<0.001. The numerical data for the graphs are available in Figure 7—figure supplement 2—source data 1.
 
 In order to address the question of whether mTOR-dependent signaling mediates the enhanced OL generation from PTEN-ablated OPCs, we deleted both Mtor and Pten from OPCs with Pdgfra-CreER; R26-EYFP; ±Ptenf/f; ±Mtorf/f (Risson et al., 2009) mice at P20. First, the effectiveness of Mtor deletion was confirmed by a marked decrease of EYFP+pS6+ cells in Mtor or Pten-Mtor double cKO mice (Figure 7B,C). To our surprise, the degree of enhancement of OL generation was comparable between Pten cKO and Pten-Mtor double cKO mice (P20 +21) (Figure 7—figure supplement 1), indicating that the Pten cKO phenotypes were not reversed, even after mTOR was effectively inactivated.
 
@@ -111,19 +155,27 @@ On the other hand, after OPC-specific Mtor deletion in 4HT-administered Pdgfra-C
 
 EM analyses confirmed that OPC-specific Pten-Mtor double cKO lowered the g-ratio to a level comparable to Pten cKO (Figure 7I–K), and formed new myelination for more axons (Figure 7L). These striking results suggest that one or more alternative signaling mechanisms to mTOR mediate the enhanced OL differentiation after OPC-specific PTEN inactivation.
 
-## PTEN ablation induces the inhibitory phosphorylation of GSK3β in OPCs
+### PTEN ablation induces the inhibitory phosphorylation of GSK3β in OPCs
 
 GSK3β is another downstream target of activated Akt (Figure 8A), and it regulates cell differentiation, neural progenitor proliferation, and axonal growth in the CNS (Hur and Zhou, 2010). Interestingly, when cultured OPCs were treated by triiodothyronine (T3, 30 ng/ml) to induce OL differentiation, the levels of phospho-GSK3βSer9 were significantly increased by ~65% in 1 day (p=0.028, paired t-test), at which point the cultured cells are a mixture of pre-OLs (GalC+,O4+, MBP-) (Dai et al., 2014) and a small fraction of OPCs (weak PDGFRα+) (Figure 8B–D).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig8-v2.jpg)
 
-**Figure 8.:** Pten ablation enhances the inhibitory phosphorylation (Ser9) of GSK3β.(A) Schematic diagram for the signaling flow of PTEN-Akt-GSK3β. (B) In vitro OL differentiation from OPCs with T3. One day after T3 addition, the majority of cells become pre-OLs expressing GalC, but not MBP. Scale bar, 20 μm. (C) Western blot analysis for phospho-GSK3β (p-GSK3βSer9) levels with oligodendroglial primary culture (with or without T3 incubation for 1 day). (D) Quantification of p-GSK3βSer9 levels. n = 3 independent replicates. (E) Western blot and quantification of p-GSK3β levels in the EYFP+ cells obtained from Pdgfra-CreER; R26-EYFP; ±Pten mice (P20 +21) by FACS. n = 3 mice per group. (f/fF) Western blot of the cortical lysates of Olig1-Cre (control) and Olig1-Cre; Pten embryo (E18.5). n = 1 mouse per group. (f/fG, H) Western blot analyses and quantification of the levels of p-AktSer473 (G) and p-GSK3βSer9 (H) in Pten-deleted OPCs in vitro. OPC primary culture was obtained from 4HT-administered Pten (control) or f/fPdgfra-CreER; Pten (f/fPten cKO) pups (P1 +1). n = 3 for (G, H) independent replicates. Data are represented as mean ±S.E.M. *p<0.05. Paired Student's t-test for (D, G, H). Unpaired Student's t-test for (E). The numerical data for the graphs are available in Figure 8—source data 1. Original western images are available in Figure 8—source data 2.10.7554/eLife.32021.031Figure 8—source data 1.Figure 8.10.7554/eLife.32021.032Figure 8—source data 2.Figure 8E–H.Full-length western blot images from three separate blots (A, B, and C) used in Figure 8E–H. The blots were stripped and sequentially re-probed as indicated. The original images were cut with dashed-line boxes.
+**Figure 8.:** (A) Schematic diagram for the signaling flow of PTEN-Akt-GSK3β. (B) In vitro OL differentiation from OPCs with T3. One day after T3 addition, the majority of cells become pre-OLs expressing GalC, but not MBP. Scale bar, 20 μm. (C) Western blot analysis for phospho-GSK3β (p-GSK3βSer9) levels with oligodendroglial primary culture (with or without T3 incubation for 1 day). (D) Quantification of p-GSK3βSer9 levels. n = 3 independent replicates. (E) Western blot and quantification of p-GSK3β levels in the EYFP+ cells obtained from Pdgfra-CreER; R26-EYFP; ±Ptenf/f mice (P20 +21) by FACS. n = 3 mice per group. (F) Western blot of the cortical lysates of Olig1-Cre (control) and Olig1-Cre; Ptenf/f embryo (E18.5). n = 1 mouse per group. (G, H) Western blot analyses and quantification of the levels of p-AktSer473 (G) and p-GSK3βSer9 (H) in Pten-deleted OPCs in vitro. OPC primary culture was obtained from 4HT-administered Ptenf/f (control) or Pdgfra-CreER; Ptenf/f (Pten cKO) pups (P1 +1). n = 3 for (G, H) independent replicates. Data are represented as mean ±S.E.M. *p<0.05. Paired Student's t-test for (D, G, H). Unpaired Student's t-test for (E). The numerical data for the graphs are available in Figure 8—source data 1. Original western images are available in Figure 8—source data 2.
 
 Although Akt-mediated phosphorylation at Ser9 inhibits GSK3β activity (Cross et al., 1995), it has not been shown that PTEN ablation leads to increased p-GSK3βSer9 levels in OL lineage cells (Goebbels et al., 2017). To determine whether PTEN ablation results in an increase of the inhibitory phosphorylation of GSK3β in OPCs, we isolated Pten-deleted EYFP+ cells from the Pdgfra-CreER; R26-EYFP; ±Ptenf/f mice (P20 +21) by fluorescence-activated cell sorting (FACS). Western blot analysis of the isolated EYFP+ cells revealed that the levels of p-GSK3βSer9 were significantly increased by PTEN ablation (p=0.0138) (Figure 8E). It also appeared that there were increases in the levels of phosphorylated Akt (p-AktSer473) and p-GSK3βSer9 in the CTX of Olig1-Cre; Ptenf/f late (E18.5) embryos, compared with the Olig1-Cre embryos (Figure 8F). These observations provide compelling evidence that PTEN inactivation in OPCs leads to GSK3β inactivation in vivo. Moreover, in our OPC culture from the 4HT-administered Ptenf/f; ±Pdgfra-CreER (P1 +1) pups, there was a consistent tendency (but not significant, n = 3 replicates) of increase of p-AktSer473 (Figure 8G) and p-GSK3βSer9 (Figure 8H) in Pten cKO OPCs.
 
-## OPC-targeted GSK3β inactivation enhances OL development and new myelination
+### OPC-targeted GSK3β inactivation enhances OL development and new myelination
 
 Next, we examined the effects of OPC-specific GSK3β inactivation in vivo as a likely signaling event after PTEN ablation. We bred Pdgfra-CreER; R26-EYFP mice with Gsk3bf/f mice (Patel et al., 2008), and injected tamoxifen into Pdgfra-CreER; R26-EYFP; ±Gsk3bf/f mice between P20 and P22 (Figure 9A). We isolated EYFP+ cells from these mice at P20 +8, and performed RT-qPCR for Gsk3b mRNA levels. The results of RT-qPCR showed that there was a reduction of Gsk3b mRNA by more than 90% in EYFP+ cells, confirming an effective Gsk3b ablation in OPCs (Figure 9B).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig9-v2.jpg)
+
+**Figure 9.:** (A) Experimental scheme for tamoxifen and BrdU administration into Pdgfra-CreER; R26-EYFP; ±Gsk3bf/f and for mouse sampling. Tamoxifen (40 mg/kg per i.p. injection) was injected five times for 2.5 days starting P20. (B) Validation of Gsk3b deletion. EYFP+ cells were isolated from the CTX of Pdgfra-CreER; R26-EYFP; ±Gsk3bf/f mice by FACS at P20 +8. The isolated EYFP-labeled cells were subjected to RT-qPCR for Gsk3b mRNA levels. n = 3 (control) and 4 (Gsk3b cKO) mice. (C) Quantification of BrdU+ cells in the CTX at P20 +21. There was an increases in BrdU+NG2+ OPCs in the Gsk3b cKO mice (P20 +21). n = 5 mice per group. (D) Confocal images of EYFP+CC1+ OLs (arrowheads) in the CC and CTX. Scale bar, 50 μm. (E - H) Quantification of total EYFP+ cells (E), EYFP+CC1+ OLs (F), EYFP+NG2+ OPCs (G), and total NG2+ OPCs (H). (I) Percentages of OPC, pre-OL and OL among EYFP-labeled cells. n = 8 (control) or 6 (Gsk3b cKO) mice for (E – I). (J) Representative EM of callosal axons (P13 +17). R26-EYFP (control) or Pdgfra-CreER; R26-EYFP; Gsk3bf/f (Gsk3b cKO) mice were used. Scale bar, 500 nm. (K) Scatter plot of the g-ratios. (L) Average of g-ratio. At least 130 axons per mouse, three mice per group were analyzed. (M) Percentage of myelinated axons. Data are represented as mean ±S.E.M. n = 3 mice per group (K – M). *p<0.05; **p<0.01; ***p<0.001. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 9—source data 1.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/32021/elife-32021-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Quantification of CC1+ OLs in the CTX of the control (Mog-iCre; R26-EYFP) and OL-specific Gsk3b cKO (Mog-iCre; R26-EYFP; Gsk3bf/f) mice at P31. (B) Quantification of NG2+ OPCs. n = 3 mice per group for (A, B). (C, D) Western blot analysis of cortical lysates for myelin proteins, MAG, MBP, and CNP. Cortices were isolated from Gsk3bf/f (control) and Mog-iCre; Gsk3bf/f (Gsk3b cKO) mice (P31). n = 4 mice per group for (C, D). Data are represented as mean ±S.E.M. *p<0.05, **p<0.01. Unpaired Student's t-test. The numerical data for the graphs are available in Figure 9—figure supplement 1—source data 1. Original western images are available in Figure 9—figure supplement 1—source data 2. List of source data files.
 
 The tamoxifen-administered Pdgfra-CreER; R26-EYFP; ±Gsk3bf/f were also examined 21 days later (P20 +21). The last 4-day-BrdU chasing (see Figure 9A) revealed significantly enhanced OPC proliferation in the Gsk3b cKO mice, which is similar to the OPC-specific Pten cKO mice (Figure 9C). Moreover, there were marked increases in both total EYFP+ cells and EYFP+CC1+ OLs in both the CC and CTX of Gsk3b cKO mice (Figure 9D–F), suggesting enhanced OL generation. In contrast, densities of EYFP+NG2+ OPCs and total OPCs were not altered (Figure 9G,H), and as a consequence, the percentage of OLs or that of OPCs among EYFP+ OL lineage cells was altered (Figure 9I). EM analyses also confirmed that myelin thickness and the degree of new axon myelination were significantly enhanced by Gsk3b cKO (P13 +17) (Figure 9J–M). These results strongly suggest that resting GSK3β activity inhibits OPC-to-OL lineage progression in the brain, and similar to PTEN ablation, OPC-specific GSK3β inactivation promotes OL development.
 
@@ -151,63 +203,514 @@ In summary, our study reveals that OPC-resident PTEN persistently regulates OL l
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Pdgfra-CreER; Tg (Pdgfra-cre/ERT)</td>
+      <td>JAX #018280; PMID:21092857</td>
+      <td>RRID:IMSR_JAX:018280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mog-iCre</td>
+      <td>PMID:15908920</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Olig1-Cre; Olig1wt/Cre</td>
+      <td>JAX #011105; PMID:11955448</td>
+      <td>RRID:IMSR_JAX:011105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>R26-EYFP</td>
+      <td>JAX #006148; PMID:11299042</td>
+      <td>RRID:IMSR_JAX:006148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>R26-mEGFP</td>
+      <td>JAX #007576; PMID:17868096</td>
+      <td>RRID:IMSR_JAX:007576</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mobp-EGFP; Tg (Mobp-EGFP)</td>
+      <td>MMRRC (030483-UCD); PMID:23542689</td>
+      <td>RRID:MMRRC_030483-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tsc1f/f</td>
+      <td>JAX #005680; PMID:12205640</td>
+      <td>RRID:IMSR_JAX:005680</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ptenf/f</td>
+      <td>JAX #006440; PMID:11857804</td>
+      <td>RRID:IMSR_JAX:006440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mtorf/f</td>
+      <td>JAX #011009; PMID:20008564</td>
+      <td>RRID:IMSR_JAX:011009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Gsk3bf/f</td>
+      <td>JAX #029592; PMID:18694957</td>
+      <td>RRID:IMSR_JAX:029592</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Akt (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology, Danvers, MA</td>
+      <td>Cat #4691; RRID:AB_915783</td>
+      <td>dilution (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Phospho-Akt (Ser473) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #4060; RRID:AB_2315049</td>
+      <td>dilution (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-actin (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology, Dallas, TX</td>
+      <td>Cat #sc-47778; RRID:AB_2714189</td>
+      <td>dilution (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BrdU (rat monoclonal)</td>
+      <td>Accurate, Westbury, NY</td>
+      <td>Cat #OBT0030G; RRID:AB_609567</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CC1 (APC) (mouse monoclonal)</td>
+      <td>EMD Millipore, Burlington, MA</td>
+      <td>Cat #OP80; RRID:AB_2057371</td>
+      <td>dilution (1:70)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CNPase (rabbit polyclonal)</td>
+      <td>PhosphoSolutions,  Aurora, CO</td>
+      <td>Cat #325-CNP; RRID:AB_2492062</td>
+      <td>dilution (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GalC (mouse monoclonal)</td>
+      <td>EMD Millipore</td>
+      <td>Cat #MAB342; RRID:AB_2073708</td>
+      <td>dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (goat polyclonal)</td>
+      <td>Frontier Institute, Japan</td>
+      <td>Cat #GFP-Go-Af1480; RRID:AB_2571574</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti GFP (rabbit polyclonal)</td>
+      <td>Frontier Institute</td>
+      <td>Cat #GFP-Rb-Af2020; RRID:AB_2491093</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (rabbit polyclonal)</td>
+      <td>Proteintech, Chicago, IL</td>
+      <td>Cat #50430–2-AP; RRID:AB_11042881</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GSK3b (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #12456</td>
+      <td>dilution (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Phospho-GSK3β (Ser9) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #9323; RRID:AB_2115201</td>
+      <td>dilution (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ki67 (rabbit polyclonal)</td>
+      <td>Abcam, Cambridge, MA</td>
+      <td>Cat #ab15580; RRID:AB_443209</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MAG (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #sc-166849; RRID:AB_2250078</td>
+      <td>dilution (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MBP (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #78896</td>
+      <td>dilution (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MBP (mouse monoclonal)</td>
+      <td>Covance, Princeton, NJ</td>
+      <td>Cat #SMI-99P; RRID:AB_10120130</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MOG (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #sc-166172; RRID:AB_2145540</td>
+      <td>dilution (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NG2 (guinea pig polyclonal)</td>
+      <td>Gift from Dr. Dwight Bergles (Johns Hopkins)</td>
+      <td>N/A</td>
+      <td>dilution (1:4,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Olig2 (rabbit polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>Cat #AB9610; RRID:AB_570666</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD140a (PDGFRα) (Clone APA5) (rat monoclonal)</td>
+      <td>BD Biosciences,  San Jose, CA</td>
+      <td>Cat #558774; RRID:AB_397117</td>
+      <td>dilution (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PLP (mouse monoclonal)</td>
+      <td>EMD Millipore</td>
+      <td>Cat #MAB388-100UG; RRID:AB_177623</td>
+      <td>dilution (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-S6 ribosomal protein (Ser240/244) (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #2215; RRID:AB_331683</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa488-conjugated anti-rabbit</td>
+      <td>Jackson ImmunoResearch, West Grove, PA</td>
+      <td>Cat #703-545-152</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa488-conjugated anti-goat</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat #705-545-147</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated anti-mouse</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat #715-165-151</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated anti-rabbit</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat #711-165-152</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated anti-rat</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat #712-165-153</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa647-conjugated anti-guinea pig</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat #706-605-148</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy5-conjugated anti-rat</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat #712-175-153</td>
+      <td>dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-mouse</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat #715-035-150</td>
+      <td>dilution (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-rabbit</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat #711-035-152</td>
+      <td>dilution (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IR-Dye 800 CW anti-mouse</td>
+      <td>LI-COR, Lincoln, NE</td>
+      <td>Cat #926–32210</td>
+      <td>dilution (1:5,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nanogold-IgG anti-rabbit</td>
+      <td>Nanoprobes, Yaphank, NY</td>
+      <td>Cat #2003</td>
+      <td>dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gsk3b Ex1 (F)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5’ GACCGAGAACCACCTCCTTT 3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gsk3b Ex2 (R)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5’ ACTGACTTCCTGTGGCCTGT 3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin (F)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5’ TGACAGGATGCAGAAGGAGA 3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin (R)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' CGCTCAGGAGGAGCAATG 3’</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA (+) Cyanine 3 and Fluorescein System</td>
+      <td>PerkinElmer, Hopkinton, MA</td>
+      <td>Cat #NEL753001KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Dura</td>
+      <td>Thermo-Fisher Scientific, Waltham, MA</td>
+      <td>Cat #34075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Neuronal Tissue Dissociation Kit (P)</td>
+      <td>Myltenyi Biotec, Auburn, CA</td>
+      <td>Cat #130-092-628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Micro Kit (50)</td>
+      <td>Qiagen, Germantown, MD</td>
+      <td>Cat #74034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III First-Strand synthesis system</td>
+      <td>Thermo-Fisher Scientific</td>
+      <td>Cat #18080–051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA protein assay</td>
+      <td>Thermo-Fisher Scientific</td>
+      <td>Cat #23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Hydroxytamoxifen</td>
+      <td>Sigma, St. Louis, MO</td>
+      <td>Cat #H-7904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>Cat #T-5648</td>
+      <td>40 mg/kg bw per injection</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Odyssey Blocking Buffer (PBS)</td>
+      <td>LI-COR</td>
+      <td>Cat #927–40000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Bromo-2'-deoxyuridine</td>
+      <td>Thermo-Fisher Scientific</td>
+      <td>Cat #BP-2508–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>QuantiTect SYBR</td>
+      <td>Qiagen</td>
+      <td>Cat #204143</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 5.0</td>
+      <td>GraphPad Software, La Jolla, CA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH, Bethesda, MD</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StepOne software 2.1</td>
+      <td>Thermo-Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image studio 3.1</td>
+      <td>LI-COR</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Mice homozygous for floxed alleles of Tsc1 (Uhlmann et al., 2002) (STOCK Tsc1 <tm1Djk>/J, RRID:IMSR_JAX:005680), Pten (Lesche et al., 2002) (STOCK Pten <tm1Hwu>/J, RRID:IMSR_JAX:006440), Mtor (Risson et al., 2009) (STOCK Mtor <tm1.2Koz>/J, RRID:IMSR_JAX:011009), ROSA26-EYFP (Srinivas et al., 2001) (STOCK Gt(ROSA)26Sor < tm1(EYFP)Cos>/J, RRID:IMSR_JAX:006148) and ROSA26-mEGFP (Muzumdar et al., 2007) (STOCK Gt(ROSA)26Sor < tm4(ACTB-tdTomato,-EGFP)Luo>/J, RRID:IMSR_JAX:007576) were purchased from The Jackson Laboratory. Olig1-Cre (Lu et al., 2002) mice were obtained from Dr. David Rowitch (UCSF), and are now available from The Jackson Laboratory (STOCK 129S4-Olig1 < tm1(cre)Rth>/J, RRID:IMSR_JAX:011105). Gsk3bf/f mice (Patel et al., 2008) were obtained from Dr. Yang Hu (Stanford University), and are now available from The Jackson Laboratory (STOCK Gsk3b < tm2Jrw>/J, RRID:IMSR_JAX:029592). Pdgfra-CreER mice (Kang et al., 2010) (STOCK Cg-Tg(Pdgfra-cre/ERT)467Dbr/J, RRID:IMSR_JAX:018280) and Mog-iCre mice (Buch et al., 2005) have been described before. The Mobp-EGFP mice were developed by GENSAT, and are available from MMRRC (STOCK Tg(Mobp-EGFP)IN1Gsat/Mmucd, RRID:MMRRC_030483-UCD).
 
 Genotyping was performed using the PCR conditions recommended by The Jackson Laboratories. The genomic background of all multiple transgenic mice used here should be considered as B6SJL, C57BL/6 and 129 mixed. For all OPC fate analyses with conditional target gene deletion, age-matched relative Pdgfra-CreER; R26-EYFP (or Pdgfra-CreER; R26-mEGFP) mice were used as the control. All western blot analysis for myelin proteins, littermate homozygous mice for floxed gene (without Cre) were used as the control. For regular EM analyses, age-matched Ptenf/f or Ptenf/f; Mtorf/f mice (without Cre, but some contained R26-EYFP assuming that it is not expressed without Cre) were used as the control. The number of the mice and genotype information are shown in individual source data files that are linked to figure legends. All animal procedures were conducted in compliance with animal protocols approved by the Institutional Animal Care and Committee (IACUC) of Temple University School of Medicine.
 
-## Tamoxifen and BrdU administration
+### Tamoxifen and BrdU administration
 
 (Z)−4-Hydroxytamoxifen (4HT, sigma H7904) was prepared as described before (Badea et al., 2003; Kang et al., 2010). One mg of 4HT was administered per intraperitoneal (i.p.) injection, and up to two injections were given per day with at least 6 hr apart. For several sets of experiments, tamoxifen (sigma T5648) was prepared according to Madisen et al. (2010) and injected in a similar way to that of 4HT. Individual tamoxifen injection dose was 40 mg/kg. The total number of 4HT (or tamoxifen) injections and the first injected age for each experiment are stated in results and/or figure legends.
 
 For cell proliferation analysis, mice received 5-bromo-2'-deoxyuridine (BrdU) injections (50 mg/kg per injection, i.p.) twice a day, in addition to BrdU-containing drinking water (1 mg/ml BrdU in tab water with 1% sucrose supplement) for the last 4 days before mouse sampling (i.e., seven injections from P38 to P41). For the experiment of long-term OPC fate analysis with control and Pten cKO mice (P20 +70) (Figure 3), the BrdU was injected between P80 and P84, (a total of 10 injections without BrdU drinking water). For lysolecithin-induced SC demyelination (Figure 6—figure supplement 1), BrdU was administered only via drinking water for 13 days after LPC injection.
 
-## Lysolecithin injection
+### Lysolecithin injection
 
 Eight days after the first tamoxifen injection was given to Pdgfra-CreER; R26-EYFP; ±Ptenf/f mice (i.e. P58), the mice were anesthetized with Ketamine (120 mg/kg) and Xylazine (8 mg/kg). After mice were fixed on a stereotaxic instrument, an L-α-Lysolecithin (L-α-Lysophosphatidylcholine or LPC in saline; Sigma L4129)-loaded Hamilton syringe was inserted into right CC (AP, +0.8 mm; ML, −0.8 mm; DV, −2.0 mm from bregma) (Franklin and Paxinos, 2008). The Hamilton syringe was equipped with a 33-gauge needle (45° beveled tip) attached to a motorized stereotaxic injector (Stoelting). One μl of 1% LPC was infused at a rate of 0.05 μl/min. After injection, the needle was held in place for an additional 5 min before removal.
 
 For spinal cord demyelination, the spinal cord was exposed between lumbar spinal segment 4 and 5 (L4/L5), and stabilized with clamps (Di Maio et al., 2011). A 0.5 μl of 1% LPC was injected 0.5 mm deep into the dorsal column WM of the spinal cord on the right side of midline dorsal artery at a rate of 0.1 μl/min with an angle of 45 degree by using a glass micropipette and a micromanipulator and digital injector (World Precision). The needle was left in the place for additional two min to avoid backflow of injected LPC. A total of three injections were made into sites spanning the L4/L5. After recovery from anesthesia, buprenorphine (0.7 mg/kg) was administrated by a subcutaneous injection.
 
-## Tissue processing
+### Tissue processing
 
 Mice were deeply anesthetized with sodium pentobarbital (100 mg/kg, i.p.) and briefly perfused with PBS followed by 4% paraformaldehyde (PFA in 0.1 M phosphate buffer, pH 7.4). Brains and the spinal cords were isolated and were subjected to post-fixation in 4% PFA for additional 6 hr at 4°C. The sampled tissues were incubated in 30% sucrose solution (in PBS) for at least 36 hr at 4°C for cryoprotection, and were embedded in Optimal Cutting Temperature (OCT) medium and frozen on dry ice. Thirty-five µm-thick sections were prepared using cryostat, and collected in PBS.
 
-## Immunofluorescence
+### Immunofluorescence
 
 The information of antibodies and key chemical reagents used in this study is also shown in the key resources table. Tissue sections were rinsed in PBS for 5 min (twice), permeabilized in 0.3% Triton X-100 (in PBS) for 10 min, and blocked (0.3% Triton X-100, 5% normal donkey serum, 1% BSA in PBS) for 1 hr at room temperature (RT). For fixed OPC culture, coverslips were permeabilized in 0.1% Triton X-100 (in PBS) for 20 min and blocked (0.1% Triton X-100, 5% normal donkey serum). The sections were then incubated with the primary antibodies in the same blocking solution in a free-floating manner overnight at 4°C. The primary antibodies (Abs) used in the present study were rabbit anti-GFP (Frontier Institute, #GFP-Rb-Af2020, RRID:AB_2491093, 1:500 or 1:1,000 for TSA amplification), rabbit anti-GFP (Proteintech, #50430–2-AP, RRID:AB_11042881, 1:500), goat anti-GFP (Frontier Institute, #GFP-Go-Af1480, RRID:AB_2571574, 1:500), mouse anti-APC (clone CC1, EMD Millipore, #OP80, RRID:AB_2057371, 1:100), guinea pig anti-NG2 (a gift from Dr. Dwight Bergles at Johns Hopkins University, 1:4,000), mouse anti-MBP (clone SMI-99, Covance, #SMI-99P, RRID:AB_10120130, 1:500), rabbit anti-phospho-S6Ser240/Ser244 (Cell Signaling Technology, #2215, RRID:AB_331683, 1:500), rat anti-BrdU (Accurate, #OBT0030G, RRID:AB_609567, 1:500), and rabbit anti-Olig2 (EMD Millipore, #AB9610, RRID:AB_570666, 1:500), rabbit anti-Ki67 (Abcam, #ab15580, RRID:AB_443209, 1:500), anti-mouse GalC (Millipore, #MAB342, RRID:AB_2073708, 1:100), rat anti-PDGFRα (BD Biosciences, #558774, RRID:AB_397117, 1:250). After washing with PBS for 5 min (three times), the sections were incubated with secondary antibodies for 2 hr at RT. The secondary Abs Alexa Fluor 488-conjugated donkey anti-rabbit (1:500) or anti-goat (1:500), Cy3-conjugated donkey anti-mouse, anti-rabbit or anti-rat (1:500), Alexa-Fluor 647-conjugated donkey anti-guinea pig (1:500), and HRP-conjugated donkey anti-rabbit (1:1,000) Abs (Jackson ImmunoResearch). In all cases nuclei were co-stained with DAPI. Sections were washed in PBS for 5 min (three times) and mounted on slides with ProLong Diamond antifade mounting media (Thermo-Fisher).
 
 For BrdU staining, prior to blocking, brain or spinal cord sections were pre-treated with 2 N HCl for 30 min at 37°C, followed by neutralization with 0.1 M sodium borate buffer (pH 8.5) for 10 min (twice). For BrdU and EYFP co-immunostaining, brain or spinal cord sections were pre-treated with 0.3% H2O2 for 30 min at RT before blocking. Anti-EGFP immunostaining and BrdU (plus other immunostaining) staining were carried out sequentially. Anti-EGFP staining was performed first and the signal was further amplified with TSA plus immunofluorescence kit (PerkinElmer) according to manufacturer’s instruction.
 
-## Image acquisition and cell analysis
+### Image acquisition and cell analysis
 
 As the gray and white matter in the brain and spinal cord have different rates of new OL generation depending on developmental stage or examined fate mapping time window (Kang et al., 2010), the degree of new OL generation was analyzed for both gray and white matter areas in the CNS. Fluorescence images were captured from the motor cortex and corpus callosum from the brain, and gray and white matter from the ventral spinal cord with a Zeiss epifluorescence microscope (Axio-Imager M2) and Axiovision 7.0 or Zen software (Zeiss, Germany). Three or four sections were used per mouse, and at least three mice were used per group. Confocal images were captured with 1 μm step with a laser scanning confocal microscope (Leica TCS SP8) and LAS X software.
 
-## Western blot analysis
+### Western blot analysis
 
 Cortices were isolated from mice and snap frozen in dry ice and were stored at −80°C until use. Lysates were prepared by homogenizing the cortices in RIPA buffer (50 mM Tris pH 7.5, 150 mM NaCl, 0.5% sodium deoxycholate, 0.1% SDS, 1% NP-40) supplemented with protease inhibitor cocktail (Thermo-Fisher). Freshly sorted cells or culture were also lysed with RIPA buffer (1000 cells per µl). Protein concentration was determined using BCA protein assay kit (Thermo-Fisher). Twenty µg of protein or 10 µl of cell lysate was mixed with 2X Laemmli Sample Buffer (Bio-Rad), and were resolved with 4–15% gradient Bis-Tris gel (Bio-Rad) or 12% Bis-Tris gel by electrophoresis. Proteins were transferred to PVDF membranes (EMD Millipore). Membranes were blocked in 5% skim milk for 1 hr at RT, and were incubated with Abs for 1 hr at RT. We used mouse anti-PLP (EMD Millipore, #MAB388, RRID:AB_177623, 1:1000), rabbit anti-MBP (Cell Signaling Technology, Cat # 78896, 1:2000), rabbit anti-CNPase (Phosphosolutions, #325-CNP, RRID:AB_2492062, 1:2000), mouse anti-MAG (Santa Cruz Biotechnology, #sc-166849, RRID:AB_2250078, 1:2000), mouse anti-MOG (Santa Cruz Biotechnology, #sc-166172, RRID:AB_2145540, 1:2000), rabbit anti-GSK3β (Cell Signaling Technology, Cat # 12456, 1:2000), rabbit anti-phospho-GSK3βSer9 (Cell Signaling Technology, #9323, RRID:AB_2115201, 1:2,000), rabbit anti-Akt (Cell Signaling Technology, #4691, RRID:AB_915783, 1:2000), rabbit anti-phospho-AktSer473 (Cell Signaling Technology, #4060, RRID:AB_2315049, 1:2000), and mouse anti-β-actin (Santa Cruz Biotechnology, #sc-47778, RRID:AB_2714189, 1:2000) Abs. After brief washing with TBS-T for 10 min (three times), the membranes were incubated with HRP-conjugated anti-rabbit or anti-mouse IgG (Jackson ImmunoResearch, 1:20,000) in 5% skim milk for 1 hr at RT. Chemiluminescent signals were detected with ECL kit (Supersignal West Dura, Thermo-Fisher). Protein bands were quantified with Image J software. In case of sequential probing with different Abs, membranes were stripped with stripping solution (2% SDS, 0.06 M Tris-HCl, pH 6.8, 0.8% 2-mercaptoethanol) for 10 min at 55°C, and washed with TBS-T three times before a subsequent probing. The full-length original western blot images are shown in source data files linked to the relevant figure legends.
 
 For a western for PLP, protein samples were resolved with 4–15% gradient Bis-Tris gel (Bio-Rad). The PVDF membrane was blocked in Odyssey Blocking Buffer (PBS) (LI-COR) for 30 min at RT, and probed with anti-PLP and anti-β-Actin Abs overnight at 4°C. After brief washing with TBS-T, membranes were incubated with IR-Dye 800 CW goat anti-mouse (LI-COR, 1:5,000) in the same blocking buffer that was supplemented with 0.02% Tween, 0.01% SDS for 1 hr at RT. Protein bands were detected with Odyssey infrared scanner (LI-COR). Band intensity was quantified with Image studio (version 3.1) software.
 
-## Fluorescence-activated cell sorting (FACS)
+### Fluorescence-activated cell sorting (FACS)
 
 To isolate PTEN-deficient cells from the Pten cKO mice, we used tamoxifen-administered Pdgfra-CreER; R26-EYFP; ±Ptenf/f (P20 +21) mice. Cerebral cortices were dissected and processed according to manufacturer’s instructions (Neuronal Tissue Dissociation Kit (P), 130-092-628, Miltenyi Biotec). To remove myelin debris, the dissociated cells were resuspended in ice-cold 0.9 M sucrose solution (in HBSS, without calcium and magnesium) and centrifuged at 300 × g for 10 min. After myelin suspension was discarded, the pellets were resuspended in 1 ml of fresh HBSS complemented with 1 mM EDTA and 1% BSA. Cells were sorted using (BD FACSAria IIµ) at the Flow Cytometry Core of Temple University. The sorted EYFP+ cells from control and Pten cKO mice were used for western blot analysis. For the validation of Gsk3b deletion, EYFP+ cells were also isolated from whole forebrains of the tamoxifen-administered Pdgfra-CreER; R26-EYFP; ±Gsk3bf/f mice (P20 +8) by FACS. The Gsk3b-deleted cells were subjected to RNA extraction.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA was extracted from EYFP+ cells with RNeasy Plus Micro Kit (Qiagen). The first strand cDNA was synthesized using SuperScript III First-Strand Synthesis kit (Invitrogen). The RT-qPCR was performed with QuantiTect SYBR green (Qiagen) on the Applied Biosystems Step One Plus RT-PCR system. The thermal cycle profile was: 95°C for 15 min, 40 cycles of 95°C for 15 s, 55°C for 30 s and 72°C for 15 s. The primers used for Gsk3b mRNA detection were: Gsk3b Ex1 (F)- 5’ GACCGAGAACCACCTCCTTT 3’ and Gsk3b Ex2 (R)- 5’ ACTGACTTCCTGTGGCCTGT 3’. The primers for β-Actin (Actb) were: b-actin (F)−5’ TGACAGGATGCAGAAGGAGA 3’ and b-actin (R)- 5’ cgctcaggaggagcaatg 3’.
 
-## Electron microscopy
+### Electron microscopy
 
 Mice were deeply anesthetized with pentobarbital (100 m/kg, i.p) and perfused with PBS followed by 2.5% PFA, 2% glutaraldehyde (in 0.1 M phosphate buffer, pH 7.4) for regular electron microscopy (EM). After tissue isolation, samples were post-fixed for 4 hr at 4°C, and transferred to 0.1 M phosphate buffer at 4°C. The tissues were dehydrated using a graded ethanol series and embedded in EMbed-812 (EMS). Thin sections were stained with uranyl acetate and lead citrate. The obtained sections were visualized with an electron microscope (JEOL 1010 electron microscope fitted with a Hamamatsu digital camera) at 12,000X magnification. The image acquisition was performed with AMT Advantage image capture software and g ratio measurement with image J.
 
 For immuno-EM, 4% PFA/0.1% glutaraldehyde (in 0.1 M phosphate buffer) was used for perfusion. Brains were removed from the skull and post-fixed in the same fixative for 4 hr. Microslicer sections containing the corpus callosum (60 µm in thickness) were incubated with anti-EGFP Ab (Frontier Institute) for 12 hr followed by the incubation with Nanogold-conjugated anti-rabbit IgG (Nanoprobes, Cat # 2003, 1:100) for 2 hr at RT. Immunogold was intensified with the HQ Silver Enhancement kit (Nanoprobes). The sections were post-fixed with 2% osmium tetroxide, stained with 2% uranyl acetate, dehydrated, and embedded in epoxy resin. Ultrathin sections (70 nm in thickness, Leica Ultracut) were examined using an electron microscope (H-7650, Hitachi).
 
-## Primary OPC culture
+### Primary OPC culture
 
 OPC primary culture was prepared from WT mice, or Pten cKO and their littermate control mice according to Chen et al. (2007). For Pten cKO mice, each P1 pup of a whole litter of Ptenf/f;±Pdgfra-CreER mice received a single 4HT injection (0.2 mg s.c.) at P1. At P2, genotyping was performed for the litter, and the pups were killed 24 hr after 4HT injection (i.e., P1 +1). Cortices were isolated and digested with papain and DNase I, followed by mechanical dissociation. Cells were re-suspended in DMEM supplemented with 10% horse serum and 1% penicillin/streptomycin. The mixed glial cells were seeded onto T75 flask coated with poly-D-lysine, and were maintained for 7–10 days. OPCs were further enriched by differential shaking and were seeded onto poly-D-lysine-coated coverslips. Cells were kept in defined medium. To induce OPC differentiation, the culture media was supplemented with triiodothyronine (T3, 30 ng/ml). For western blot, protein lysate was prepared in RIPA buffer 24 hr later. For immunocytochemistry, the cells were fixed with 4% PFA for 15 min and rinsed three times in PBS.
 
-## Statistical analysis
+### Statistical analysis
 
 Data analysis was performed with GraphPad Prism 5.0 software. Unless specified otherwise in the figure legends, most statistical analyses were carried out using two-tailed unpaired Student’s t-test for two group comparison, or One-way ANOVA with Bonferroni post-hoc correction for statistical evaluation of more than two groups. For the western blot analyses for GSK3βSer9 or AktSer473 with OPC or pre-OL culture, paired student t-test was used to compare OPC and pre-OL, or control and Pten cKO culture lysates.
 

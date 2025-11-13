@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.34593.001 Growth cones navigate axonal projection in response to guidance cues. However, it is unclear how they can decide the migratory direction by transducing the local spatial cues into protrusive forces. Here we show that knockout mice of Shootin1 display abnormal projection of the forebrain commissural axons, a phenotype similar to that of the axon guidance molecule netrin-1. Shallow gradients of netrin-1 elicited highly polarized Pak1-mediated phosphorylation of shootin1 within growth cones. We demonstrate that netrin-1–elicited shootin1 phosphorylation increases shootin1 interaction with the cell adhesion molecule L1-CAM; this, in turn, promotes F-actin–adhesion coupling and concomitant generation of forces for growth cone migration. Moreover, the spatially regulated shootin1 phosphorylation within growth cones is required for axon turning induced by netrin-1 gradients. Our study defines a mechano-effector for netrin-1 signaling and demonstrates that shootin1 phosphorylation is a critical readout for netrin-1 gradients that results in a directional mechanoresponse for axon guidance.
+Growth cones navigate axonal projection in response to guidance cues. However, it is unclear how they can decide the migratory direction by transducing the local spatial cues into protrusive forces. Here we show that knockout mice of Shootin1 display abnormal projection of the forebrain commissural axons, a phenotype similar to that of the axon guidance molecule netrin-1. Shallow gradients of netrin-1 elicited highly polarized Pak1-mediated phosphorylation of shootin1 within growth cones. We demonstrate that netrin-1–elicited shootin1 phosphorylation increases shootin1 interaction with the cell adhesion molecule L1-CAM; this, in turn, promotes F-actin–adhesion coupling and concomitant generation of forces for growth cone migration. Moreover, the spatially regulated shootin1 phosphorylation within growth cones is required for axon turning induced by netrin-1 gradients. Our study defines a mechano-effector for netrin-1 signaling and demonstrates that shootin1 phosphorylation is a critical readout for netrin-1 gradients that results in a directional mechanoresponse for axon guidance.
 
 ## Introduction
 
@@ -37,95 +37,195 @@ Here, we combined gene knockout, protein interaction assays, force microscopy, s
 
 ## Results
 
-## Shootin1a is localized at high levels in axonal tracts of developing mouse brain
+### Shootin1a is localized at high levels in axonal tracts of developing mouse brain
 
 To assess a role for shootin1a in axon guidance, we first analyzed its localization in the developing mouse brain. Consistent with a previous report (Toriyama et al., 2006), immunoblot analyses detected a low level of shootin1a in embryonic day (E) 13.5 mouse brains (Figure 1—figure supplement 1A). The expression increased remarkably between E13.5 and E16.5, remained high through postnatal days (P) 0–12, and then decreased to a low level in the adult. Immunohistochemical analyses with shootin1a-specific antibody detected shootin1a localization widely in P0 brain, with high levels of immunolabeling in the axonal tracts, such as the corpus callosum, anterior commissure, hippocampal commissure, fornix, fimbria and middle cerebellar peduncle (Figure 1A and Figure 1—figure supplement 1B). We also detected high levels of shootin1a immunoreactivity that colocalized extensively with that of the axonal marker L1-CAM (Chung et al., 1991; Klingler et al., 2015) in the corpus callosum and anterior commissure at E16.5 (Figure 1B). However, we could not detect shootin1a immunoreactivity in the ventral commissure of the spinal cord at E12 (arrow, Figure 1—figure supplement 2A) when high levels of both netrin-1 and DCC are expressed (Keino-Masu et al., 1996; Kennedy et al., 2006; Bin et al., 2015; Dominici et al., 2017).
 
-## Shootin1 knockout mice display abnormal projection of forebrain commissural axons
+![Figure 1.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig1-v1.jpg)
+
+**Figure 1.:** (A) A representative sagittal section of a P0 mouse brain immunolabeled with shootin1a antibody (green) and counterstained with DAPI (blue). (B) Coronal sections of E16.5 mouse brains double-immunolabeled with anti-shootin1a (green) and anti-L1-CAM (magenta) antibodies. The arrow and arrowhead indicate the corpus callosum and anterior commissure, respectively. (C) Coronal sections of the forebrain of wild-type and Shootin1 knockout mice at P0 stained for Nissl substance. (D) Serial horizontal sections of the ventral forebrain of wild-type and Shootin1 knockout mice at P0 stained for Nissl substance. (E) Coronal sections of wild-type and Shootin1 knockout mouse brains at P0 immunolabeled with anti-L1-CAM antibody (green). Ectopic axonal projections were observed in the neocortex (arrowheads). In the knockout mice, the prominent axonal tracts observed in the intermediate zone of the neocortex of wild-type mice (arrows) were undetectable and ectopic axonal projections were observed (arrowheads). Lower panels show enlarged views of the rectangles. (F) Coronal sections of wild-type and Shootin1 knockout mouse brains at P0. DiI crystals (magenta) were placed into the neocortex (asterisks) to label callosal axons. An arrowhead indicates incomplete contralateral projections of callosal axons. (G) Horizontal sections of wild-type and Shootin1 knockout mouse brains at P0 immunolabeled with anti-L1-CAM antibody (green). In Shootin1 knockout mice, the bundling of the commissural axons was disrupted (arrowheads). (H) Horizontal sections of wild-type and Shootin1 knockout mouse brains at P0. DiI crystals (magenta) were placed in the anterior piriform cortex (asterisks) to label the anterior limb of the anterior commissure. Defasciculation and misprojection of the commissural axons are indicated by the arrow and arrowhead, respectively. Dashed lines indicate the anterior limb of the anterior commissure. Abbreviations: AC, anterior commissure; ACa, anterior limb of the anterior commissure; ACp, posterior limb of the anterior commissure; CC, corpus callosum; F, fimbria; Fx, fornix; KO, Shootin1 knockout mouse; MCP, middle cerebellar peduncle; Spt, Septum; VMH, ventromedial hypothalamic nucleus; WT, wild-type mouse. Scale bars: 500 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunoblot analysis of shootin1a in mouse brain at various developmental stages. The same amounts (20 μg) of protein were loaded in each lane and immunoblotted by anti-shootin1a and anti-actin antibodies. (B) Coronal sections of P0 mouse brains immunolabeled with shootin1a antibody (green) and counter-stained with DAPI (blue). Bars: 500 μm. (C) Coronal sections of P0 brain from wild-type and Shootin1 knockout mouse at P0 labeled with anti-L1-CAM (green) antibody and DAPI (blue). Bars: 200 μm. (D) Quantitative analyses of the thickness of the corpus callosum (WT, n = 9; KO, n = 18), hippocampal commissure (WT, n = 5; KO, n = 6) and anterior commissure (WT, n = 9; KO, n = 18). The thicknesses were measured at the midline of the commissures of Nissl-stained sections. Data represent means ± SEM; ***p<0.01 (unpaired Student’s t-test). Abbreviations: Cx, cerebral cortex; EC, external capsule; HC, hippocampal commissure; IC, internal capsule; Lot, lateral olfactory tract.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) A coronal section of E12.5 mouse spinal cord labeled with anti-shootin1a antibody (green), anti-TAG-1 (magenta) antibody and DAPI (blue). TAG-1 is a marker for ventral spinal commissural axons (Dodd et al., 1988). The arrows indicate the ventral commissure. Bar: 500 μm. (B) Coronal sections of the spinal cord at E12.5 from wild-type and Shootin1 knockout mice labeled with aniti-neurofilament (green) and anti-TAG-1 (magenta) antibodies. The arrows indicate the ventral commissure. The images below show enlarged views of the ventral commissures in the rectangles. Bars: 500 μm. (C) Quantitative analyses of the thickness of the ventral spinal commissure of wild-type and Shootin1 knockout mice labeled with anti-neurofilament and anti-TAG-1 antibodies in (B). The thicknesses were measured at the midline of the commissures (B, dashed square brackets) (WT, n = 9; KO, n = 9). Data represent means ± SEM; ns, not significant (unpaired Student’s t-test).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic representations of Shootin1 gene-targeting strategy. Upper panel, Shootin1 genomic locus including exons 1 and 2. Middle panel, targeting vector for homologous recombination. The targeting vector deleted a 509-base genomic sequence including exon one with the start codon (asterisk). Lower panel, targeted gene after homologous recombination. The probe used in Southern blot analysis is indicated. (B) Genomic DNAs isolated from wild-type (+/+), heterozygous (+/-) and homozygous (-/-) mouse tails were digested with EcoRV and then analyzed by Southern blot analysis using the probe. DNA fragments of 9.2 and 5.4 kb are expected for the wild-type allele and mutant allele, respectively. (C) Immunoblot analysis of brain lysates prepared from wild-type (+/+), heterozygous (+/-) and homozygous (-/-) mouse brains, at P0 using anti-shootin1a and anti-actin antibodies. (D) Coronal sections of mouse cerebral cortex at P0 from wild-type (+/+), heterozygous (+/-) and homozygous (-/-) mice labeled with anti-shootin1a antibody (red) and DAPI (blue). Bars: 500 μm.
+
+### Shootin1 knockout mice display abnormal projection of forebrain commissural axons
 
 To analyze further the roles of shootin1a in the developing brain, we generated Shootin1 knockout mice (Figure 1—figure supplement 3). Southern blot analysis confirmed that the first exon of the Shootin1 gene had been replaced with the β-galactosidase (LacZ) and neomycin resistance (Neor) genes (Figure 1—figure supplement 3A and B). Immunoblot analysis demonstrated a complete loss of shootin1a protein (Figure 1—figure supplement 3C); shootin1a immunoreactivity was undetectable in Shootin1 knockout mouse brain sections (Figure 1—figure supplement 3D). Shootin1 knockout mice were born but 13.3% of them died during P0-P20 (n = 98). Coronal and horizontal sections of Shootin1 knockout brains revealed dysgenesis of the corpus callosum, anterior commissure and hippocampal commissure with a penetrance of 69.2% (n = 26) (Figure 1C and D and Figure 1―figure supplement 1C); their thicknesses were significantly reduced by Shootin1 knockout (Figure 1—figure supplement 1D). We also observed multiple defects in the brain of Shootin1 knockout mice, including agenesis of the septum (Figure 1C); the detailed analyses of these phenotypes will be reported separately.
 
 To analyze the commissure structures in detail, we visualized axon bundles using anti-L1-CAM antibody. In addition to decreased thickness of the axonal tracts at the midline of the corpus callosum (yellow line, Figure 1E), the prominent axonal tracts observed in the intermediate zone of the neocortex of wild-type mice (arrows, Figure 1E) were undetectable in Shootin1 knockout mice. In contrast, ectopic axonal projections toward the cortical plate were observed in Shootin1 knockout mice (arrowheads, Figure 1E). Consistent with the L1-CAM immunolabeling, DiI tracing also showed incomplete contralateral projections of callosal axons (arrowhead, Figure 1F). In the anterior commissure, L1-CAM immunolabeling showed a decrease in the thickness of the axon bundle that crosses the midline (yellow line, Figure 1G) as well as disruption of the anterior and posterior limbs of the commissure (arrowheads, Figure 1G). DiI tracing of the anterior limbs of the anterior commissure demonstrated defasciculation (arrow, Figure 1H) and misprojection (arrowhead, Figure 1H) of the axons. Consistent with the undetectable level of shootin1a expression in the ventral commissure of the spinal cord (arrow, Figure 1—figure supplement 2A), we could not observe noticeable defects of the spinal cord commissure axons in Shootin1 knockout mice (Figure 1—figure supplement 2B and C).
 
-## Shallow gradients of netrin-1 elicit highly polarized shootin1a phosphorylation within growth cones
+### Shallow gradients of netrin-1 elicit highly polarized shootin1a phosphorylation within growth cones
 
 Extracellular gradients of netrin-1 induce growth cone attraction in vitro (Serafini et al., 1994; Hong et al., 1999; Bhattacharjee et al., 2010). To analyze the growth cone response under netrin-1 gradients, we prepared a device with microjet arrays that can generate gradients of diffusible molecules in the culture medium (Bhattacharjee et al., 2010) (Figure 2A). The substrates for neuronal culture, glass coverslips, were coated sequentially with polylysine and L1-CAM-Fc as reported (Shimada et al., 2008; Toriyama et al., 2013; Kubo et al., 2015). To estimate the soluble netrin-1 gradients, we used bovine serum albumin (BSA) labeled with the fluorescent tracer Alexa Fluor 594 or Alexa Fluor 488 as a proxy for netrin-1. As the molecular weight of BSA (66.0 kDa) is similar to that of mouse netrin-1 (68.2 kDa), we expect that the gradient of BSA mimics that of netrin-1 in the device. As reported (Bhattacharjee et al., 2010), our device generated stable gradients of BSA in the medium (Figure 2B and Video 1). The difference in the BSA concentrations at the source side end and the other end of the area that expands 400 μm at the center of the linear gradient (red rectangle, Figure 2A), estimated by the fluorescence intensity, was 15% (Figure 2B). As the regular growth cone width of cultured hippocampal neurons is about 10 μm (Katsuno et al., 2015), we estimate that gradient steepness (the percentage change in concentration) (Rosoff et al., 2004) of netrin-1 that covers growth cones located in the red rectangle area (Figure 2A) is about 0.4%.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig2-v1.jpg)
+
+**Figure 2.:** (A) A schematic diagram of the device with microjet arrays that generates gradients of diffusible molecules in the culture medium. (B) Time-lapse fluorescence images of fluorescent dye (Alexa Fluor 488-BSA) in the cell culture area of the device in (A, red rectangle). See Video 1. The graph (right) depicts line scans of the fluorescence intensity across the field at 10 min (black line) and 430 min (blue line) during time-lapse imaging. A stable gradient of Alexa Fluor 488-BSA was generated in the device. Bar: 100 μm. (C) Neurons cultured in the device were labeled with CMAC (blue) and exposed to gradients of netrin-1 and Alexa Fluor 488-BSA (green) for 30 min. They were then fixed and immunolabeled with an antibody that recognizes shootin1a phosphorylation at Ser249 (red). The right panels show the fluorescent signals of CMAC and phospho-shootin1a in the growth cone located in the corresponding dashed rectangle. Yellow lines and dotted lines indicate the boundary and center line of the growth cone, respectively. A higher level of phospho-shootin1a immunolabeling was observed on the netrin-1 source side. Bar: 10 μm. (D) Quantification of relative phospho-shootin1a immunolabeling levels (phosopho-shootin1a immunoreactivity/CMAC staining) in the netrin-1 source side (high side) and control side (low side) of single growth cones. n = 12 growth cones. Data represent means ± SEM; ***p<0.01 (unpaired Student’s t-test).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Glass coverslips coated with polylysine or coated sequentially with polylysine and L1-CAM-Fc were incubated with the culture medium and netrin-1 containing a 10-His tag at the C-terminus, in the absence or presence of 2 μg/ml heparin. The glasses were then labeled with anti-His antibody and fluorescence images were acquired using a fluorescence microscope. (B) Quantitative analyses of the netrin-1 attached to the glass coverslips in (A). Fluorescence images were acquired using a fluorescence microscope and quantified using ImageJ. Data represent means ± SEM (n = 3 independent experiments); ***p<0.01; **p<0.02 (one-way ANOVA with Tukey’s post hoc test). (C) Glass coverslips coated sequentially with polylysine and L1-CAM-Fc were incubated for 10 or 430 min with the netrin-1 gradients produced by the device in Figure 2A (red rectangle). The glasses were then labeled with anti-His antibody, and fluorescence images of netrin-1 were acquired using a fluorescence microscope. The lower graph depicts line scans of the immunolabeled netrin-1 across the field (upper panels). The black lines were fitted with a least-squares method. The differences in the netrin-1 concentrations at the source side end and the other end of the area that expands 400 μm of the linear gradient, estimated by the fluorescence intensity, were 24% for 10 min and 31% for 430 min, respectively. As the regular growth cone width of cultured hippocampal neurons is about 10 μm, we estimate that the gradient steepness of netrin-1 that covers growth cones is about 0.6% at 10 min and 0.8% at 430 min. Bars: 100 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Neurons cultured in the device (Figure 2A, red rectangle) were labeled with CMAC (blue) and exposed to gradients of Alexa Fluor 488-BSA (green) for 30 min. They were then fixed and immunolabeled with an antibody that recognizes shootin1a phosphorylation at Ser249 (red). The right panels show the fluorescence signals of CMAC and phospho-shootin1a in the growth cone located in the corresponding dashed rectangle. Yellow lines and dotted lines indicate the boundary and center line of the growth cone, respectively. Bar: 10 μm. (B) Quantification of relative phospho-shootin1a immunolabeling levels (phosopho-shootin1a immunoreactivity/CMAC staining) in the BSA source side (high side) and control side (low side) of single growth cones. n = 8 growth cones. Data represent means ± SEM; ns, not significant (unpaired Student’s t-test).
+
+![Video 1.](https://cdn.elifesciences.org/articles/34593/elife-34593-video1.mp4.jpg)
+
+**Video 1.:** See the legend for Figure 2B.
 
 A previous study reported that netrin-1 attaches to polylysine–coated substrates, thereby mediating chemotropic axon guidance (Moore et al., 2012). To examine whether the present assay system produces netrin-1 gradients on the substrate, we next analyzed the attachment of netrin-1 to substrates coated with L1-CAM. As reported (Moore et al., 2012), incubation of glass coverslips with netrin-1 (200 or 300 ng/ml) led to netrin-1 attachment on the polylysine–coated substrate within 15 min, and the attachment further increased after incubation for 7 hr (Figure 2—figure supplement 1A and B). Netrin-1 also attached to the L1-CAM–coated substrate in a manner dependent on the incubation time (Figure 2—figure supplement 1A and B). We also confirmed that our device produces a netrin-1 gradient attached to the substrate in a manner dependent on the incubation time and that the difference in concentration across the growth cone is about 0.6% at 10 min and 0.8% at 430 min (Figure 2—figure supplement 1C), which is similar to that of BSA (Figure 2B). However, the amount of attached netrin-1 was 39% of that on polylysine after 420 min incubation (Figure 2—figure supplement 1A and B), suggesting that at least 61% of the applied netrin-1 is not attached to the substrate under our conditions. Together, these results indicate that gradients of both soluble and substrate-bound netrin-1 are produced in our culture system.
 
 We previously reported that netrin-1 induces Pak1–mediated phosphorylation of shootin1a at Ser101 and Ser249 in axonal growth cones (Toriyama et al., 2013). Using the microjet device, we examined the localization of netrin1–elicited shootin1a phosphorylation in growth cones. Hippocampal neurons cultured in the device for 1.5–2 days were labeled with the fluorescent volume marker 7-amino-4-chloromethylcoumarin (CMAC) and exposed to a netrin-1 gradient for 30 min. The neurons were then fixed and immunolabeled with an antibody that recognizes shootin1a phosphorylation at Ser249. We selected axons located near the center of the gradients (red rectangle, Figure 2A) and that were oriented approximately perpendicular to the netrin-1 gradient. To our surprise, quantification of the phospho-shootin1a immunoreactivity and CMAC staining revealed a highly polarized localization of the phosphorylated shootin1a within growth cones (Figure 2C). The relative level of the phosphorylated shootin1a (phosopho-shootin1a immunoreactivity/CMAC staining) was 71% higher on the netrin-1 source side than on the control side (p=0.002, n = 12) (Figure 2D), and contrasted markedly with the shallow gradients of extracellular netrin-1 estimated by the fluorescent tracer (Figure 2B) and antibody (Figure 2—figure supplement 1C). On the other hand, similar gradients of the control molecule BSA in the medium did not elicit polarized phosphorylation of shootin1 within growth cones (Figure 2―figure supplement 2).
 
-## Netrin-1–induced shootin1a phosphorylation promotes shootin1a–L1-CAM interaction
+### Netrin-1–induced shootin1a phosphorylation promotes shootin1a–L1-CAM interaction
 
 We reported previously that netrin-1–induced shootin1a phosphorylation at Ser101 and Ser249 enhances the coupling between F-actin retrograde flow and L1-CAM at growth cones (Toriyama et al., 2013). However, whether shootin1 interacts directly with L1-CAM as well as whether this interaction is regulated by the netrin-1 signaling are unclear (Kubo et al., 2015). To clarify these points, we performed an in vitro binding assay using purified shootin1a and GST–tagged intracellular domain (ICD) (1145‐1257 a.a.) of L1-CAM. As shown in Figure 3A, shootin1a directly interacted with L1-CAM-ICD.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig3-v1.jpg)
 
-**Figure 3.:** (A) In vitro binding assay using purified shootin1a-WT (100 nM) and purified GST-L1-CAM-ICD (100 nM). Proteins were incubated with Glutathione Sepharose 4B and GST-L1-CAM-ICD was eluted. The eluate was then analyzed by SDS-PAGE and CBB staining; 0.2% of the input proteins were also analyzed. (B and C) In vitro binding assay using purified shootin1a-WT or purified shootin1a-DD and purified GST-L1-CAM-ICD. Shootin1a-DD or shootin1a-WT at increasing concentrations was incubated with GST-L1-CAM-ICD and Glutathione Sepharose 4B. GST-L1-CAM-ICD was eluted. After SDS-PAGE, the eluate was immunoblotted with anti-shootin1 antibody or stained with CBB (B), and the bound shootin1a-DD and shootin1a-WT were then quantified (C). Data represent means ± SEM (n = 3 independent experiments). (D and E) In vitro binding assay using Pak1-phosphorylated purified shootin1a and purified GST-L1-CAM-ICD. Shootin1a-WT (100 nM) or Pak1-phosphorylated shootin1a-WT (100 nM) was incubated with GST-L1-CAM-ICD and Glutathione Sepharose 4B. GST-L1-CAM-ICD was eluted. After SDS-PAGE, the eluate was immunoblotted with anti-shootin1 antibody or stained with CBB (D). Input proteins (1%) were also analyzed with anti-shootin1, anti-pSer101-shootin1 or anti-pSer249-shootin1 antibody. Quantitative data for bound shootin1a are shown in (E) (n = 3 independent experiments). Data represent means ± SEM; ***p<0.01 (unpaired Student’s t-test).10.7554/eLife.34593.017Figure 3—source data 1.Figure 3C.10.7554/eLife.34593.018Figure 3—source data 2.Figure 3E.
+**Figure 3.:** (A) In vitro binding assay using purified shootin1a-WT (100 nM) and purified GST-L1-CAM-ICD (100 nM). Proteins were incubated with Glutathione Sepharose 4B and GST-L1-CAM-ICD was eluted. The eluate was then analyzed by SDS-PAGE and CBB staining; 0.2% of the input proteins were also analyzed. (B and C) In vitro binding assay using purified shootin1a-WT or purified shootin1a-DD and purified GST-L1-CAM-ICD. Shootin1a-DD or shootin1a-WT at increasing concentrations was incubated with GST-L1-CAM-ICD and Glutathione Sepharose 4B. GST-L1-CAM-ICD was eluted. After SDS-PAGE, the eluate was immunoblotted with anti-shootin1 antibody or stained with CBB (B), and the bound shootin1a-DD and shootin1a-WT were then quantified (C). Data represent means ± SEM (n = 3 independent experiments). (D and E) In vitro binding assay using Pak1-phosphorylated purified shootin1a and purified GST-L1-CAM-ICD. Shootin1a-WT (100 nM) or Pak1-phosphorylated shootin1a-WT (100 nM) was incubated with GST-L1-CAM-ICD and Glutathione Sepharose 4B. GST-L1-CAM-ICD was eluted. After SDS-PAGE, the eluate was immunoblotted with anti-shootin1 antibody or stained with CBB (D). Input proteins (1%) were also analyzed with anti-shootin1, anti-pSer101-shootin1 or anti-pSer249-shootin1 antibody. Quantitative data for bound shootin1a are shown in (E) (n = 3 independent experiments). Data represent means ± SEM; ***p<0.01 (unpaired Student’s t-test).
 
 To determine whether the shootin1a phosphorylation modulates the shootin1a–L1-CAM interaction, we analyzed the interaction between the phosphorylated shootin1a and L1-CAM-ICD. An in vitro binding assay with purified proteins showed that the interaction of L1-CAM-ICD with phosphomimic shootin1a (shootin1a-DD), in which Ser101 and Ser249 were replaced by aspartate, was stronger than that with wild-type shootin1a (shootin1a-WT) (Figure 3B): the apparent dissociation constant for shootin1a-DD (Kd = 46.4 ± 4.4 nM) was 2.9-fold lower (p<0.02, n = 3 independent experiments) than that of shootin1a-WT (Kd = 133.5 ± 13.6 nM) (Figure 3C). In vitro phosphorylation and binding assays also demonstrated that phosphorylation of shootin1a by Pak1 promotes its interaction with L1-CAM-ICD (Figure 3D and E). Ectopic expression of a constitutively active Pak1 in HEK293T cells increased phosphorylation of myc-shootin1a at Ser101 and Ser249 in these cells (Figure 4A and B); this in turn promoted the interaction between shootin1a and L1-CAM-ICD (Figure 4A and B). Conversely, expression of a dominant-negative Pak1 decreased shootin1a phosphorylation and inhibited the interaction (Figure 4A and B). Furthermore, stimulation of neurons by netrin-1 increased the phosphorylation of shootin1a at Ser101 and Ser249 (Figure 4C and D); this led to a concomitant increase in the interaction between endogenous shootin1a and L1-CAM (Figure 4C and D). In axonal growth cones, phosphorylated shootin1a was highly colocalized with L1-CAM (Figure 4E). Altogether, our data demonstrate that netrin-1–induced shootin1a phosphorylation promotes direct interaction between shootin1a and L1-CAM.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig4-v1.jpg)
 
-**Figure 4.:** (A and B) Co-immunoprecipitation of myc-shootin1a and FLAG-L1-CAM-ICD in HEK293T cells. Cells were transfected with vectors to express myc-shootin1a and FLAG-L1-CAM-ICD; some of them were also co-transfected with a vector to express dominant negative Pak1 (KD) or constitutively active Pak1 (CA) as indicated. Cell lysates were then incubated with anti-FLAG antibody. The immunoprecipitates were immunoblotted with anti-myc or anti-FLAG antibody (A). Cell lysates (1%) were also analyzed with anti-pSer101-shootin1, anti-pSer249-shootin1, or anti-myc antibody. Quantitative data for phosphorylated and bound shootin1a are shown in (B) (n = 3 independent experiments). Data represent means ± SEM; ***p<0.01; **p<0.02; *p<0.05 (One-way ANOVA with Tukey’s post hoc test). (C and D) Co-immunoprecipitation of shootin1a and L1-CAM in cultured cortical neurons. After incubation of neurons with 4.4 nM netrin-1 or BSA (control) for 1 hr, cell lysates were prepared and incubated with anti-shootin1 antibody (right panel). The immunoprecipitates were immunoblotted with anti-shootin1 or anti-L1-CAM antibody. The cell lysates (5%) were also analyzed with anti-pSer101-shootin1, anti-pSer249-shootin1, or anti-shootin1a antibody (left panel). Quantitative data for phosphorylated shootin1a and bound L1-CAM are shown in (D) (n = 3 independent experiments). Data represent means ± SEM; **p<0.02; *p<0.05 (Unpaired Student’s t-test). (E) Fluorescence images of an axonal growth cone labeled with anti-pSer249-shootin1a (magenta) and anti-L1-CAM (green) antibodies. The cells were observed using a TIRF microscope. An enlarged view of the filopodium in the rectangle is shown in the lower panel. Arrowheads indicate phosphorylated shootin1a colocalized with L1-CAM. Bar: 5 μm (in the inset, 2 μm).10.7554/eLife.34593.020Figure 4—source data 1.Figure 4B.10.7554/eLife.34593.021Figure 4—source data 2.Figure 4D.
+**Figure 4.:** (A and B) Co-immunoprecipitation of myc-shootin1a and FLAG-L1-CAM-ICD in HEK293T cells. Cells were transfected with vectors to express myc-shootin1a and FLAG-L1-CAM-ICD; some of them were also co-transfected with a vector to express dominant negative Pak1 (KD) or constitutively active Pak1 (CA) as indicated. Cell lysates were then incubated with anti-FLAG antibody. The immunoprecipitates were immunoblotted with anti-myc or anti-FLAG antibody (A). Cell lysates (1%) were also analyzed with anti-pSer101-shootin1, anti-pSer249-shootin1, or anti-myc antibody. Quantitative data for phosphorylated and bound shootin1a are shown in (B) (n = 3 independent experiments). Data represent means ± SEM; ***p<0.01; **p<0.02; *p<0.05 (One-way ANOVA with Tukey’s post hoc test). (C and D) Co-immunoprecipitation of shootin1a and L1-CAM in cultured cortical neurons. After incubation of neurons with 4.4 nM netrin-1 or BSA (control) for 1 hr, cell lysates were prepared and incubated with anti-shootin1 antibody (right panel). The immunoprecipitates were immunoblotted with anti-shootin1 or anti-L1-CAM antibody. The cell lysates (5%) were also analyzed with anti-pSer101-shootin1, anti-pSer249-shootin1, or anti-shootin1a antibody (left panel). Quantitative data for phosphorylated shootin1a and bound L1-CAM are shown in (D) (n = 3 independent experiments). Data represent means ± SEM; **p<0.02; *p<0.05 (Unpaired Student’s t-test). (E) Fluorescence images of an axonal growth cone labeled with anti-pSer249-shootin1a (magenta) and anti-L1-CAM (green) antibodies. The cells were observed using a TIRF microscope. An enlarged view of the filopodium in the rectangle is shown in the lower panel. Arrowheads indicate phosphorylated shootin1a colocalized with L1-CAM. Bar: 5 μm (in the inset, 2 μm).
 
-## Shootin1a–L1-CAM interaction mediates netrin-1–induced F-actin–adhesion coupling and mechanoresponse
+### Shootin1a–L1-CAM interaction mediates netrin-1–induced F-actin–adhesion coupling and mechanoresponse
 
 To address the role of the shootin1a–L1-CAM interaction, we next analyzed the shootin1a region that interacts with L1-CAM. An in vitro binding assay with purified proteins showed that residues 1–125 of shootin1a (shootin1a (1-125)) were essential and sufficient to bind to L1-CAM (Figure 5A). On the other hand, we previously reported that another region, shootin1a (261-377), is responsible for its interaction with cortactin, which links shootin1a to F-actin flow (Figure 5A) (Kubo et al., 2015). Consistent with these data, when expressed in hippocampal neurons, myc-shootin1a (1-125) was highly colocalized with L1-CAM in axonal growth cones (Figure 5B). As shootin1a (1-125) interacts with L1-CAM but not with cortactin, we expected that it can be used as a dominant negative mutant that disrupts the shootin1a–L1-CAM interaction. Indeed, shootin1a (1-125) overexpressed in HEK293T cells bound to L1-CAM-ICD, and inhibited the interaction between shootin1a and L1-CAM-ICD (Figure 5C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig5-v1.jpg)
 
-**Figure 5.:** (A) Upper panel: schematic representation of shootin1a (WT) and shootin1a deletion mutants, and their ability to interact with L1-CAM-ICD and cortactin. Lower panel: in vitro binding assay using purified myc-tagged shootin1a mutants and purified GST-L1-CAM-ICD. Myc-shootin1a mutants (100 nM) were incubated with GST-L1-CAM-ICD (100 nM) and Glutathione Sepharose 4B. GST-L1-CAM-ICD was eluted. After SDS-PAGE, the eluate was immunoblotted with anti-myc or anti-GST antibody. Asterisks denote myc shootin1a mutants. (B) Neurons transfected with myc-shootin1a (1-125) were labeled with anti-myc (magenta) and anti-L1-CAM (green) antibodies. The cells were observed using a TIRF microscope. An enlarged view of the filopodium in the rectangle is shown in the inset. Arrowheads indicate shootin1a (1-125) colocalized with L1-CAM. Bar: 5 μm (in the inset, 2 μm). (C) Overexpressed shootin1a (1-125) inhibits the interaction between shootin1a and L1-CAM-ICD. HEK293T cells were transfected with vectors to express myc-shootin1a and FLAG-L1-CAM-ICD; some of them were also co-transfected with a vector to overexpress myc-shootin1a (1-125) as indicated. Cell lysates were prepared and incubated with anti-FLAG antibody. The immunoprecipitates were immunoblotted with anti-myc or anti-FLAG antibody. The cell lysates (1%) were also analyzed with anti-myc antibody. The graph (right) shows quantitative data for bound shootin1a-DD (n = 3 independent experiments). Data represent means ± SEM; *p<0.05 (unpaired Student’s t-test).10.7554/eLife.34593.023Figure 5—source data 1.Figure 5C.
+**Figure 5.:** (A) Upper panel: schematic representation of shootin1a (WT) and shootin1a deletion mutants, and their ability to interact with L1-CAM-ICD and cortactin. Lower panel: in vitro binding assay using purified myc-tagged shootin1a mutants and purified GST-L1-CAM-ICD. Myc-shootin1a mutants (100 nM) were incubated with GST-L1-CAM-ICD (100 nM) and Glutathione Sepharose 4B. GST-L1-CAM-ICD was eluted. After SDS-PAGE, the eluate was immunoblotted with anti-myc or anti-GST antibody. Asterisks denote myc shootin1a mutants. (B) Neurons transfected with myc-shootin1a (1-125) were labeled with anti-myc (magenta) and anti-L1-CAM (green) antibodies. The cells were observed using a TIRF microscope. An enlarged view of the filopodium in the rectangle is shown in the inset. Arrowheads indicate shootin1a (1-125) colocalized with L1-CAM. Bar: 5 μm (in the inset, 2 μm). (C) Overexpressed shootin1a (1-125) inhibits the interaction between shootin1a and L1-CAM-ICD. HEK293T cells were transfected with vectors to express myc-shootin1a and FLAG-L1-CAM-ICD; some of them were also co-transfected with a vector to overexpress myc-shootin1a (1-125) as indicated. Cell lysates were prepared and incubated with anti-FLAG antibody. The immunoprecipitates were immunoblotted with anti-myc or anti-FLAG antibody. The cell lysates (1%) were also analyzed with anti-myc antibody. The graph (right) shows quantitative data for bound shootin1a-DD (n = 3 independent experiments). Data represent means ± SEM; *p<0.05 (unpaired Student’s t-test).
 
 Coupling between F-actins and substrate reduces the speed of F-actin flow in growth cones (Suter et al., 1998; Toriyama et al., 2013). Using shootin1a (1-125) as a dominant negative mutant, we examined whether the shootin1a–L1-CAM interaction is involved in netrin-1–induced mechanical coupling between F-actin flow and the substrate. Hippocampal neurons expressing mRFP-actin were cultured on coverslips coated with L1-CAM, and F-actin flow in the growth cone was monitored by live-cell fluorescence microscopy (Figure 6A, Video 2). In neurons overexpressing a control protein myc-GST, the fluorescent features of mRFP-actin moved retrogradely at 4.5 ± 0.1 μm/min (mean ± SE, n = 30 fluorescent features), as previously reported (Shimada et al., 2008). Overexpression of myc-shootin1a (1-125) in hippocampal neurons increased the velocity of F-actin flow (Figure 6A and B), suggesting that shootin1a (1-125) inhibits the F-actin–adhesion coupling. Netrin-1 stimulation significantly decreased the velocity of F-actin flow in control growth cones, reflecting promotion of the F-actin–adhesion coupling. On the other hand, netrin-1 accelerated the flow in the presence of overexpressed myc-shootin1a (1-125) (Figure 6A and B); this can be explained by the inhibition of the F-actin adhesion coupling as well as a simultaneous increase in actin polymerization by netrin-1–induced activation of Cdc42 and Rac1 (Shekarabi et al., 2005; Briançon-Marjollet et al., 2008). These results suggest that shootin1a–L1-CAM interaction mediates netrin-1–induced F-actin–adhesion coupling.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig6-v1.jpg)
+
+**Figure 6.:** (A) Fluorescent feature images of mRFP-actin at axonal growth cones overexpressing myc-GST (control) or myc-shootin1a (1-125) in the absence (control) or presence of 4.4 nM netrin-1 (see Video 2). Kymographs of the fluorescent features of mRFP-actin in filopodia at 5 s intervals are shown (F-actin flows are indicated by dashed yellow lines). (B) F-actin retrograde flow speed measured from the kymograph analysis in A; 120 fluorescent features (47 growth cones) were analyzed. One-way ANOVA with Tukey’s post hoc test was used. (C) DIC and fluorescence images (left panel) showing an axonal growth cone of a DIV2 neuron overexpressing EGFP and cultured on L1-CAM–coated polyacrylamide gel with embedded 200 nm fluorescent beads. The panels show representative images from time-lapse series taken every 3 s for 150 s before (control) and 60 min after netrin-1 (4.4 nM) stimulation (see Video 3). The original and displaced positions of the beads in the gel are indicated by green and red colors, respectively. Dashed lines indicate the boundary of the growth cone. The kymographs (right panel) along the axis of bead displacement (white dashed arrows) at the indicated areas 1 and 2 of the growth cone show movement of beads recorded every 3 s. The bead in area two is a reference bead. (D) Analyses of the magnitude of the traction forces under axonal growth cones overexpressing myc-GST (control) or myc-shootin1a (1-125) before (control) or after netrin-1 stimulation (see Figure 6—figure supplement 1A for the direction of the traction forces, n = 14 growth cones). One-way ANOVA with Tukey’s post hoc test was performed. (E) Three hours after plating, hippocampal neurons overexpressing myc-GST (control) or myc-shootin1a (1-125) were incubated with BSA (control) or 4.4 nM netrin-1 for 40 hr, and then immunolabeled by anti-myc antibody (see Figure 6—figure supplement 1B). Axon length was then analyzed (n = 909 neurons). One-way ANOVA with Schaffer’s post hoc test was performed in the left graph, while an unpaired Student’s t-test was used in the right graph. Data represent means ± SEM; ***p<0.01; *p<0.05; ns, not significant. Bars: 5 μm (in the kymographs of A, 2 μm).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Statistical analyses of the angle (°) of the traction forces under axonal growth cones overexpressing myc-GST (control) or myc-shootin1a (1-125) before (control) or after netrin-1 stimulation (see Figure 6C and D, n = 14 growth cones). Data represent means ± SEM; ns, not significant (one-way ANOVA with Tukey’s post hoc test). (B) Three hours after plating, hippocampal neurons overexpressing myc-GST (control) or myc-shootin1a (1-125) were incubated with BSA (control) or 4.4 nM netrin-1 for 40 hr; they were then immunolabeled by anti-myc antibody (see also quantitative data in Figure 5E). Bars: 50 μm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/34593/elife-34593-video2.mp4.jpg)
+
+**Video 2.:** See the legend for Figure 6A.
+
 We further monitored mechanoresponses of growth cones using traction force microscopy. Hippocampal neurons were cultured on L1-CAM–coated polyacrylamide gels with embedded 200 nm fluorescent beads. Traction forces under the growth cones were monitored by visualizing force–induced deformation of the elastic substrate, which is reflected by displacement of the beads from their original positions. As reported (Toriyama et al., 2013), the reporter beads under the growth cones moved dynamically, reflecting the traction force on the substrate (Figure 6C, Video 3); and the force was increased significantly by netrin-1 stimulation (Figure 6C and D and Figure 6—figure supplement 1A). Importantly, inhibition of the shootin1a–L1-CAM interaction by overexpressing myc-shootin1a (1-125) significantly decreased traction forces and abolished the netrin-1–induced increase in traction forces (Figure 6D). Overexpression of myc-shootin1a (1-125) also decreased axon length and abolished the netrin-1–induced axon outgrowth (Figure 6―figure supplement 1B and Figure 6E), suggesting that shootin1a–L1-CAM interaction is involved in the netrin-1–induced generation of traction force for growth cone migration.
 
-## Netrin-1–induced axon attraction requires shootin1a
+![Video 3.](https://cdn.elifesciences.org/articles/34593/elife-34593-video3.mp4.jpg)
+
+**Video 3.:** Left and right panels show bead displacement before and 60 min after netrin-1 stimulation, respectively. See the legend for Figure 6C.
+
+### Netrin-1–induced axon attraction requires shootin1a
 
 Next, we examined whether shootin1a is involved in netrin-1–induced axon guidance. Hippocampal neurons were stimulated with a netrin-1 gradient for 7 hr; the gradient was applied approximately perpendicularly to the extending direction of axons (Figure 7―figure supplement 1A). The right panel (Figure 7—figure supplement 1A) depicts the migration of individual axonal growth cones. Consistent with previous reports (Kennedy et al., 1994; Serafini et al., 1994; Bhattacharjee et al., 2010), the majority of the axonal growth cones migrated toward the netrin-1 source (Figure 7—figure supplement 1A, Video 4). The mean axon outgrowth velocity was 24.4 ± 0.7 μm/h (Figure 7—figure supplement 1B), and the net change in the angle of the growth cone toward the netrin-1 source was 26.4 ± 0.1° (n = 9) (Figure 7—figure supplement 1C). As our assay system produces gradients of both soluble and substrate-bound netrin-1 (Figure 2B and Figure 2—figure supplement 1C), we assessed the abilities of soluble and substrate-bound netrin-1 to turn axons, by solubilizing netrin-1 with heparin. As in the case of polylysine–coated substrate (Moore et al., 2012), inclusion of 2 μg/ml heparin in the culture medium released netrin-1 from the L1-CAM–coated substrate (Figure 2—figure supplement 1A and B). In contrast to the data obtained with spinal cord neurons (Moore et al., 2012), the netrin-1 gradient induced axon turning even in the presence of heparin, indicating that a gradient of soluble netrin-1 contributes to axon turning of hippocampal neurons (Figure 7―figure supplement 1D, Video 5). However, the degree of netrin-1–induced axon outgrowth and turning was reduced in the presence of heparin (Figure 7—figure supplement 1B and C). These data are consistent with a previous report (Mai et al., 2009) that netrin-1 attached to the substrate induces axon turning of cultured hippocampal neurons. Thus, we conclude that gradients of both soluble and substrate-bound netrin-1 contribute to axon turning of hippocampal neurons in our assay system.
 
+![Video 4.](https://cdn.elifesciences.org/articles/34593/elife-34593-video4.mp4.jpg)
+
+**Video 4.:** See the legend for Figure 7—figure supplement 1A. The gradient of Alexa Fluor 594-BSA in Figure 7—figure supplement 1A is not shown.
+
+![Video 5.](https://cdn.elifesciences.org/articles/34593/elife-34593-video5.mp4.jpg)
+
+**Video 5.:** See the legend for Figure 7—figure supplement 1D. The gradient of Alexa Fluor 594-BSA in Figure 7—figure supplement 1D is not shown.
+
 We next stimulated hippocampal neurons expressing control miRNA or shootin1a miRNA, which inhibits shootin1a expression, with a netrin-1 gradient. The majority of the axonal growth cones of control neurons migrated toward the netrin-1 source (Figure 7A, Video 6). The mean axon outgrowth velocity was 26.1 ± 3.0 μm/h (Figure 7C), and the net change in the angle of the growth cone toward the netrin-1 source was 32.7 ± 2.2° (n = 11) (Figure 7D). Repression of shootin1a by RNAi not only reduced the axon outgrowth velocity (5.6 ± 0.9 μm/h, p<0.01) (Figure 7B and C, Video 7) but also inhibited the growth cone turning toward the netrin-1 source (2.1 ± 1.2°, p<0.01, n = 13) (Figure 7B and D). Similar results were obtained using hippocampal neurons prepared from Shootin1 knockout mice (Figure 7—figure supplement 2). Together, these data indicate that netrin-1–induced axon guidance of hippocampal neurons on an L1-CAM substrate requires shootin1a.
 
-## Netrin-1–induced axon attraction requires shootin1a–L1-CAM interaction
+![Figure 7.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig7-v1.jpg)
+
+**Figure 7.:** (A and B) Time-lapse phase-contrast/fluorescence images of hippocampal neurons expressing control miRNA (A) and shootin1a miRNA (B) under the gradients of netrin-1 and Alexa Fluor 594-BSA. White and blue arrowheads indicate growth cones at the first and last time-points, respectively. See Videos 6 and 7. The right panels depict trajectories of individual growth cone migrations. The initial growth cone positions are normalized at (x = 0 μm, y = 0 μm). Bars: 50 μm. (C) Axon outgrowth velocity obtained from the analyses in (A and B) (n = 24 growth cones). See also the legend for Figure 8C about quantitative data. (D) Turning angle of axon toward the netrin-1 source was obtained from the analyses in (A and B), by calculating the difference between the angles of the axonal tip at the first and last time-points of the observations (θf - θl). The graph shows quantified data (n = 24 growth cones). See also the legend for Figure 8D about quantitative data. (E and F) Time-lapse phase-contrast/fluorescence images of hippocampal neurons expressing EGFP (control) (E) and EGFP-shootin1a (1-125) (F) under gradients of netrin-1 and Alexa Fluor 594-BSA (red). White and blue arrowheads indicate growth cones at the first and last time-points, respectively. See Videos 8 and 9. The right panels depict trajectories of individual growth cone migrations. The initial growth cone positions are normalized at (x = 0 μm, y = 0 μm). See also quantitative data in Figure 7—figure supplement 3. Bars: 50 μm. Data represent means ± SEM; ***p<0.01 (one-way ANOVA with Schaffer’s post hoc test).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A and D) Time-lapse phase-contrast/fluorescence images of hippocampal neurons under the gradients of netrin-1 and Alexa Fluor 594-BSA without (A) and with (D) 2 μg/ml heparin. White and blue arrowheads indicate growth cones at the first and last time-points, respectively. See Videos 4 and 5. The right panels depict trajectories of individual growth cone migrations. The initial growth cone positions are normalized at (x = 0 μm, y = 0 μm). Bars: 50 μm. (B) Axon outgrowth velocity obtained from the analyses in (A and D) (n = 22 growth cones). (C) Turning angle of axon toward the netrin-1 source was obtained from the analyses in (A and D), by calculating the difference between the angles of the axonal tip at the first and last time-points of the observations (θf - θl). The graph shows quantified data (n = 22 growth cones). Data represent means ± SEM; ***p<0.01 (unpaired Student’s t-test).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A and B) Time-lapse phase-contrast/fluorescence images of wild-type (A) and Shootin1 knockout (B) neurons under the gradients of netrin-1 and Alexa Fluor 594-BSA. White and blue arrowheads indicate growth cones at the first and last time-points, respectively. The right panels depict trajectories of individual growth cone migrations. The initial growth cone positions are normalized at (x = 0 μm, y = 0 μm). Bars: 50 μm. (C) Axon outgrowth velocity obtained from the analyses in (A and B) (n = 18 growth cones). (D) Turning angle of axon toward the netrin-1 source was obtained from the analyses in (A and B), by calculating the difference between the angles of the axonal tip at the first and last time-points of the observations (θf - θl). The graph shows quantified data (n = 18 growth cones). Data represent means ± SEM; ***p<0.01 (unpaired Student’s t-test).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Axon outgrowth velocity obtained from the analyses in Figure 7E and F (n = 33 growth cones). (B) Turning angle of axon toward the netrin-1 source was obtained from the analyses in Figure 7E and F, by calculating the difference between the angles of the axonal tip at the first and last time-points of the observations (θf - θl). The graph shows quantified data (n = 33 growth cones). Data represent means ±SEM; ***, p<0.01; *, p<0.05 (unpaired Student’s t-test).
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** (A and E) Time-lapse phase-contrast/fluorescence images of hippocampal neurons expressing EGFP (control) (A) and EGFP-shootin1a (1-125) (E) on a laminin surface under gradients of netrin-1 and Alexa Fluor 594-BSA (red). White and blue arrowheads indicate growth cones at the first and last time-points, respectively. The right panels depict trajectories of individual growth cone migrations. The initial growth cone positions are normalized at (x = 0 μm, y = 0 μm). Bars: 50 μm. (B) Axon outgrowth velocity obtained from the analyses in (A and E) (n = 21 growth cones). (C) Turning angle of axon toward the netrin-1 source was obtained from the analyses in (A and E), by calculating the difference between the angles of the axonal tip at the first and last time-points of the observations (θf - θl). The graph shows quantified data (n = 21 growth cones). (D) Fluorescent feature images of mRFP-actin at axonal growth cones overexpressing myc-GST (control) or myc-shootin1a (1-125) on a laminin surface. Kymographs of the fluorescent features of mRFP-actin in filopodia at 5 s intervals are shown (F-actin flows are indicated by dashed yellow lines). F-actin retrograde flow rate measured from the kymograph analysis; 50 fluorescent features (10 growth cones) were analyzed. Data represent means ± SEM; ***p<0.01; *p<0.05 (unpaired Student’s t-test). Bar: 5 μm (in the kymographs, 2 μm).
+
+![Video 6.](https://cdn.elifesciences.org/articles/34593/elife-34593-video6.mp4.jpg)
+
+**Video 6.:** See the legend for Figure 7A. The gradient of Alexa Fluor 594-BSA in Figure 7A is not shown.
+
+![Video 7.](https://cdn.elifesciences.org/articles/34593/elife-34593-video7.mp4.jpg)
+
+**Video 7.:** See the legend for Figure 7B. The gradient of Alexa Fluor 594-BSA in Figure 7B is not shown.
+
+### Netrin-1–induced axon attraction requires shootin1a–L1-CAM interaction
 
 We further examined a role of shootin1a–L1-CAM interaction in netrin-1–induced axon guidance. Hippocampal neurons overexpressing EGFP (control) or EGFP-shootin1a (1-125), which inhibits the shootin1a–L1-CAM interaction (Figure 5C), were stimulated with a netrin-1 gradient for 7 hr (Figure 7E and F, left panels). The majority of the axonal growth cones of control neurons migrated toward the netrin-1 source (Figure 7E, Video 8). The mean axon outgrowth velocity was 32.4 ± 6.6 μm/h (Figure 7—figure supplement 3A), and the net change in the angle of the growth cone toward the netrin-1 source was 28.8 ± 3.8° (n = 17) (Figure 7―figure supplement 3B). On the other hand, inhibition of the shootin1a–L1-CAM interaction by overexpressing EGFP-shootin1a (1-125) not only reduced the axon outgrowth velocity (13.8 ± 3.4 μm/h, p<0.05) but also inhibited the growth cone turning toward the netrin-1 source (0.6 ± 1.1°, p<0.01, n = 16) (Figure 7F, Figure 7—figure supplement 3 and Video 9). These data suggest that the interaction between shootin1a and L1-CAM mediates netrin-1–induced axon guidance.
 
-## Shootin1a–L1-CAM interaction mediates netrin-1–induced axon guidance on laminin
+![Video 8.](https://cdn.elifesciences.org/articles/34593/elife-34593-video8.mp4.jpg)
+
+**Video 8.:** See the legend for Figure 7E. The gradient of Alexa Fluor 594-BSA in Figure 7E is not shown.
+
+![Video 9.](https://cdn.elifesciences.org/articles/34593/elife-34593-video9.mp4.jpg)
+
+**Video 9.:** See the legend for Figure 7F. The gradient of Alexa Fluor 594-BSA in Figure 7F is not shown.
+
+### Shootin1a–L1-CAM interaction mediates netrin-1–induced axon guidance on laminin
 
 Laminins are widely used substrates for axon guidance assays (Turney and Bridgman, 2005; Nichol et al., 2016); L1-CAM on growth cones interacts directly with laminin presented on the substrate (Hall et al., 1997; Abe et al., 2018). To examine whether the shootin1a–L1-CAM interaction mediates netrin-1–induced axon guidance generally, we performed an axon guidance assay on an alternative substrate, laminin. Growth cones of cultured hippocampal neurons on laminin turned in response to netrin-1 gradients (Figure 7—figure supplement 4A–C), as they did on L1-CAM (Figure 7―figure supplement 1A). To assess shootin1a-mediated clutch coupling on laminin, we measured F-actin retrograde flow in growth cones on laminin. Consistent with previously reported data (Abe et al., 2018), the F-actin retrograde flow rate in control growth cones on laminin was 2.3 ± 0.3 μm/min (Figure 7—figure supplement 4D). As in the case of growth cones on L1-CAM (Figure 6A and B), overexpression of shootin1a (1-125) increased significantly the retrograde flow rate under these conditions (Figure 7—figure supplement 4D), indicating that inhibition of the shootin1a–L1-CAM interaction also disrupts F-actin-adhesion coupling in growth cones on laminin. Furthermore, uncoupling of F-actin-adhesion coupling by shootin1a (1-125) inhibited netrin-1–induced axon outgrowth and turning on laminin (Figure 7—figure supplement 4A–C and E). Together, these data indicate that netrin-1–induced axon guidance, which is mediated by the shootin1a–L1-CAM interaction, is not limited to growth cones on L1-CAM.
 
-## Netrin-1–induced axon attraction requires polarized shootin1a phosphorylation within growth cones
+### Netrin-1–induced axon attraction requires polarized shootin1a phosphorylation within growth cones
 
 Finally, we analyzed the role of polarized shootin1 phosphorylation within growth cones elicited by netrin-1 gradients. As shown above (Figure 7A–D), repression of shootin1a by expression of shootin1a miRNA inhibited axon outgrowth and growth cone turning toward the netrin-1 source. Expression of RNAi-refractory shootin1a-WT in neurons expressing shootin1a miRNA rescued the reduction of axon outgrowth as well as growth cone turning (Figure 8A, C and D, Video 10), indicating that shootin1a regulates both axon outgrowth and growth cone turning. Our previous work has shown that axon outgrowth is regulated by shootin1a–mediated clutch coupling (Shimada et al., 2008; Kubo et al., 2015). As shootin1a-DD, the constitutively active shootin1a, mediates clutch coupling and force generation in the absence of PAK1 activity (Toriyama et al., 2013) but cannot be regulated by phosphorylation, displacement of wild-type shootin1a with shootin1a-DD would disturb netrin-1–induced polarized shootin1a regulation without disturbing the clutch coupling. As shown by Figure 8B–D and Video 11, disturbance of polarized shootin1a phosphorylation within growth cones by this displacement inhibited growth cone turning toward the netrin-1 source without reducing axon outgrowth velocity. These results demonstrate that the disturbance of axon turning caused by depletion of shootin1a (Figure 7D and Figure 7—figure supplement 2D) or by dominant negative shootin1a (Figure 7—figure supplement 3B) is not attributed only to the inhibited axon outgrowth, and suggest that the polarized phosphorylation of shootin1a within growth cones is required for the directional axon guidance induced by netrin-1 gradients (Figure 8E).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/34593/elife-34593-fig8-v1.jpg)
 
-**Figure 8.:** (A and B) Time-lapse phase-contrast/fluorescence images of hippocampal neurons expressing shootin1a miRNA + RNAi refractory shootin1a-WT (A), and shootin1a miRNA + RNAi refractory shootin1a-DD (B) under gradients of netrin-1 and Alexa Fluor 594-BSA (red). White and blue arrowheads indicate growth cones at the first and last time-points, respectively. See Videos 10 and 11. The right panels depict trajectories of individual growth cone migrations. The initial growth cone positions are normalized at (x = 0 μm, y = 0 μm). (C) Axon outgrowth velocity obtained from the analyses in Figure 7A and B, Figure 8A and B (n = 47 growth cones). (D) Turning angle of axon toward the netrin-1 source was obtained from the analyses in Figure 7A and B, Figure 8A and B (n = 47 growth cones), by calculating the difference between the angles of the axonal tip at the first and last time-points of the observations (θf - θl). (E) A model for gradient-reading and mechanoresponse processes of netrin1–induced axon guidance. A very small difference (250:251; 0.4%) in netrin-1 concentration can induce highly polarized phosphorylation of shootin1a within growth cones (pink), as a readout of highly sensitive gradient-reading processes. A netrin-1 gradient on the substrate would also contribute to polarized shootin1 phosphorylation (yellow). This process is achieved through a signaling pathway including DCC, Rac1/CDC42, Pak1 and shootin1a. The polarized phosphorylation of shootin1a within a growth cone locally promotes shootin1a–L1-CAM and shootin1a–cortactin interactions. These interactions in turn enhance asymmetrically the coupling between F-actin retrograde flow and the adhesive substrate and increase traction force (blue arrows) on the side of the netrin-1 source, thereby leading to a decision for the migratory direction (white arrow). Data represent means ± SEM; ***p<0.01; ns, not significant (one-way ANOVA with Schaffer’s post hoc test). Bars: 50 μm.10.7554/eLife.34593.055Figure 8—source data 1.Figure 8C.10.7554/eLife.34593.056Figure 8—source data 2.Figure 8D.
+**Figure 8.:** (A and B) Time-lapse phase-contrast/fluorescence images of hippocampal neurons expressing shootin1a miRNA + RNAi refractory shootin1a-WT (A), and shootin1a miRNA + RNAi refractory shootin1a-DD (B) under gradients of netrin-1 and Alexa Fluor 594-BSA (red). White and blue arrowheads indicate growth cones at the first and last time-points, respectively. See Videos 10 and 11. The right panels depict trajectories of individual growth cone migrations. The initial growth cone positions are normalized at (x = 0 μm, y = 0 μm). (C) Axon outgrowth velocity obtained from the analyses in Figure 7A and B, Figure 8A and B (n = 47 growth cones). (D) Turning angle of axon toward the netrin-1 source was obtained from the analyses in Figure 7A and B, Figure 8A and B (n = 47 growth cones), by calculating the difference between the angles of the axonal tip at the first and last time-points of the observations (θf - θl). (E) A model for gradient-reading and mechanoresponse processes of netrin1–induced axon guidance. A very small difference (250:251; 0.4%) in netrin-1 concentration can induce highly polarized phosphorylation of shootin1a within growth cones (pink), as a readout of highly sensitive gradient-reading processes. A netrin-1 gradient on the substrate would also contribute to polarized shootin1 phosphorylation (yellow). This process is achieved through a signaling pathway including DCC, Rac1/CDC42, Pak1 and shootin1a. The polarized phosphorylation of shootin1a within a growth cone locally promotes shootin1a–L1-CAM and shootin1a–cortactin interactions. These interactions in turn enhance asymmetrically the coupling between F-actin retrograde flow and the adhesive substrate and increase traction force (blue arrows) on the side of the netrin-1 source, thereby leading to a decision for the migratory direction (white arrow). Data represent means ± SEM; ***p<0.01; ns, not significant (one-way ANOVA with Schaffer’s post hoc test). Bars: 50 μm.
+
+![Video 10.](https://cdn.elifesciences.org/articles/34593/elife-34593-video10.mp4.jpg)
+
+**Video 10.:** See the legend for Figure 8A. The gradient of Alexa Fluor 594-BSA in Figure 8A is not shown.
+
+![Video 11.](https://cdn.elifesciences.org/articles/34593/elife-34593-video11.mp4.jpg)
+
+**Video 11.:** See the legend for Figure 8B. The gradient of Alexa Fluor 594-BSA in Figure 8B is not shown.
 
 ## Discussion
 
 Since the seminal proposal by Ramón y Cajal (Cajal, 1890) that the growth cone senses extracellular chemical cues and produces force for axon guidance, considerable progress has been made in understanding the signaling events at the axon guidance machinery located within the growth cone. However, the gradient-reading as well as mechano-effector machinery that converts the environmental spatial chemical signals into the directional force for axon guidance has remained unclear. Here we have shown that shallow gradients of netrin-1 elicited highly polarized shootin1a phosphorylation within growth cones. Netrin-1–elicited shootin1a phosphorylation promoted direct interaction between shootin1a and L1-CAM, thereby generating traction force for growth cone motility. Furthermore, the spatially regulated phosphorylation of shootin1a within growth cones was required for axon turning induced by netrin-1 gradients. These results suggest that shootin1a constitutes a gradient-reading and mechano-effector machinery involved in netrin-1–induced axon guidance.
 
-## Mechano-effector machinery for netrin-1–regulated axon guidance
+### Mechano-effector machinery for netrin-1–regulated axon guidance
 
 The present study defines a mechano-effector for netrin-1–induced axon guidance. Previous reports proposed that an increase in the mechanical coupling between F-actin retrograde flow in the growth cone and cell adhesions transmits the force of F-actin flow onto the adhesive substrates for growth cone migration (Mitchison and Kirschner, 1988; Suter and Forscher, 2000). In relation to this notion, a recent study reported that axon guidance cues affect F-actin–adhesion coupling locally within the growth cone to influence axon outgrowth and guidance (Nichol et al., 2016). In addition, we previously reported that shootin1a associates with the F-actin flow at the growth cone through its direct interaction with cortactin, and showed that netrin-1–induced phosphorylation of shootin1a by Pak1 promotes shootin1a–F-actin interaction through cortactin (Toriyama et al., 2013; Kubo et al., 2015).
 
 Here, we demonstrated that netrin-1–induced shootin1a phosphorylation by Pak1 also promotes direct interaction between shootin1a and L1-CAM. Previous studies reported that netrin-1 induces dimerization of its receptor, DCC, thereby activating molecules including NCK1, FAK and FYN (Stein et al., 2001; Ren et al., 2004; Lai Wing Sun et al., 2011). This in turn induces activation of Cdc42 and Rac1, and their downstream kinase Pak1 (Li et al., 2002; Shekarabi and Kennedy, 2002; Shekarabi et al., 2005; Briançon-Marjollet et al., 2008; Demarco et al., 2012) (Figure 8E). Thus, under the activation of Pak1 via these signaling pathways, the shootin1a phosphorylation enhances both the shootin1a–adhesion and shootin1a–F-actin interactions that lead to increased F-actin–adhesion coupling (Figure 8E). This double regulation would enable efficient regulation of forces for axon guidance in response to netrin-1. At present, no information is available on the three-dimensional structure of shootin1a. In addition, it is unknown how shootin1a–L1-CAM and shootin1a–cortactin interactions are promoted by the phosphorylation of shootin1a. Future investigations of the molecular structure of shootin1a, and of how the structures of the domains mediating interaction with L1-CAM and cortactin are affected by phosphorylation, will lead to a better understanding of this mechano-effector machinery.
 
-## Gradient-reading machinery for netrin-1–regulated axon guidance
+### Gradient-reading machinery for netrin-1–regulated axon guidance
 
 The ability of cells to sense small spatial differences in environmental cues is essential for proper axon guidance as well as directional cell migration, but the molecular mechanism underlying it remains a major question (Quinn and Wadsworth, 2008; Hegemann and Peter, 2017). Initial studies reported that growth cones can respond to 1% gradients of repulsive tectal membranes presented on the substrate (Baier and Bonhoeffer, 1992) and 5–10% gradients of diffusible axon guidance molecules including netrin-1 (Ming et al., 1999). More recently, analyses employing microfluidic devices demonstrated that growth cones have even higher sensitivities to chemical gradients: for example, they can turn in response to 0.1–0.4% gradients of NGF (Rosoff et al., 2004), and 0.5 and 0.1% gradients of substrate-bound laminin and ephrin-A5, respectively (Xiao et al., 2014). This study presents the framework of a highly sensitive gradient-reading machinery for axon guidance (Figure 8E). Our data demonstrate that a 0.4% (250:251) difference in netrin-1 concentration induces a 71% difference in shootin1a phosphorylation within growth cones, as a key readout of the spatial signal. This polarized phosphorylation locally promotes shootin1a–L1-CAM and shootin1a–cortactin interactions within growth cones and asymmetrically promote traction force (blue arrows, F Figure 8E) on the side of the netrin-1 source, leading to a decision for the migratory direction (white arrow, Figure 8E).
 
 Our data suggest that the netrin-1 gradient-reading process in growth cones is achieved through a signaling pathway that includes DCC, Rac1/Cdc42, Pak1 and shootin1a (Figure 8E); however, how these molecules amplify very small spatial differences in netrin-1 concentration remain to be determined. It has been proposed that amplification of local signals through combined positive and negative feedback loops contribute to sense shallow gradients of extracellular chemicals (Yang et al., 2016; Hegemann and Peter, 2017) and that polarized assembly of signaling molecules may play a key role in it (Quinn and Wadsworth, 2008; Hegemann and Peter, 2017). Previous studies in C. elegans reported that local netrin-1 signals induce polarized distribution of the DCC orthologs UNC-40 within cell bodies (Adler et al., 2006; Ziel et al., 2009; Wang et al., 2014). However, growth cones of mouse cortical neurons did not show polarized localization of DCC under netrin-1 gradients (Taylor et al., 2015). In addition, FRET visualization of Cdc42 and Rac1 signals has not, so far, revealed a distinct polarized activation of these molecules in growth cones (Picard et al., 2009; Rappaz et al., 2016). Tracing the spatial signals from phosphorylated shootin1a back upstream to DCC will lead to a better molecular understanding of the gradient-reading mechanism involved in netrin-1–regulated axon guidance.
 
-## Shootin1a–mediated axon guidance in the brain
+### Shootin1a–mediated axon guidance in the brain
 
 The present study has shown that shootin1a is expressed at high levels in developing forebrain commissural axons and that Shootin1 knockout mice display dysgenesis and misprojection of these axons. We analyzed their projections with the axonal marker L1-CAM (Chung et al., 1991; Klingler et al., 2015) and DiI tracing (Klingler et al., 2015). As L1-CAM interacts with shootin1a, ablation of shootin1a expression could lead to a change in L1-CAM localization in these axons; however, both the L1-CAM labelling and DiI tracing analyses revealed misprojection of these axons. Similar defects of callosal and anterior commissural axons were reported in knockout mice for Netrin-1 (Serafini et al., 1996) as well as DCC (Fazeli et al., 1997), Rac1 (Chen et al., 2007; Kassai et al., 2008) and L1-CAM (Demyanenko et al., 1999), thereby providing evidence for the notion that shootin1a cooperates with these molecules in axon guidance. Thus, the defects in the forebrain commissural axons in Shootin1 knockout mice are consistent with the in vitro observations that shootin1a is required for netrin-1–induced axon outgrowth and guidance.
 
 However, although netrin-1 mRNA is distributed along the paths of forebrain commissural axons (Serafini et al., 1996), netrin-1 gradients have not yet been reported in these brain regions. In addition, as Shootin1 knockout mice exhibit multiple defects in the brain, we cannot conclude that the dysgenesis of the forebrain commissures is only due to the axon outgrowth and guidance deficits observed in in vitro assays. Generation of conditional knockout mice as well as detailed mapping of netrin-1 will facilitate future analyses of the shootin1a–mediated axon guidance in the brain. In contrast to the forebrain commissural axons, we could not detect distinct shootin1a localization in the ventral spinal commissural axons and could not observe their abnormality in Shootin1 knockout mice, suggesting that shootin1a is not required for guidance of the spinal commissural axons.
 
-## Netrin-1–induced axon guidance through chemotaxis and haptotaxis
+### Netrin-1–induced axon guidance through chemotaxis and haptotaxis
 
 Axon guidance and cell migration are directed by spatial gradients of soluble chemicals (called chemotaxis) (Gundersen and Barrett, 1979; Mortimer et al., 2008) and by chemicals presented on adhesive substrate or neighboring cells (termed haptotaxis) (Carter, 1967; Baier and Bonhoeffer, 1992). The present study indicates that gradients of both soluble and immobilized netrin-1 are produced on L1-CAM–coated substrate, thereby contributing to axon turning of hippocampal neurons. As soluble and immobilized chemical cues act as ligands to activate intracellular signaling pathways in growth cones (Huber et al., 2003; Lowery and Van Vactor, 2009; Kolodkin and Tessier-Lavigne, 2011), the gradient-reading machinery involving shootin1a may explain both axonal chemotaxis and haptotaxis elicited by shallow gradients of netrin-1 (red and yellow arrows, Figure 8E).
 
@@ -133,64 +233,571 @@ On the other hand, recent studies reported that netrin-1 locally presented by ne
 
 ## Materials and methods
 
-## Histology and immunohistochemistry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>Wistar</td>
+      <td>SLC</td>
+      <td>RRID:RGD_2314928</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>Wistar</td>
+      <td>CLEA Japan</td>
+      <td>RRID:RGD_12879431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>C57BL/6</td>
+      <td>SLC</td>
+      <td>RRID:MGI:5658686; RRID:MGI:5295404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>C57BL/6</td>
+      <td>CLEA Japan</td>
+      <td>RRID:MGI:5658686; RRID:MGI:2160139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Shootin1 gene knockout</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Please see 'Generation of Shootin1 knockout mice' in Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T cell</td>
+      <td>ATCC</td>
+      <td>Cat# CRL_3216; RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-shootin1a peptide sequence (rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Rabbit polyclonal; against aa 450–456; Immunohistochemistry: (1:5000) Immunoblot: (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-shootin1 antibody (rabbit polyclonal)</td>
+      <td>PMID: 17030985 (Toriyama et al., 2006); PMID: 23453953 (Toriyama et al., 2013)</td>
+      <td></td>
+      <td>Immunoblot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pSer101-shootin1 antibody (rabbit polyclonal)</td>
+      <td>PMID: 23453953 (Toriyama et al., 2013)</td>
+      <td></td>
+      <td>Immunoblot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pSer249-shootin1 antibody (rabbit polyclonal)</td>
+      <td>PMID: 23453953 (Toriyama et al., 2013)</td>
+      <td></td>
+      <td>Immunoblot: (1:5000); Immunofluorescence(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NCAM-L1 (C-20) antibody (goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-1508; RRID:AB_631086</td>
+      <td>Immunoblot: (1:2000); Immunofluorescence: (1:1000); Immunohistochemistry: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Neurofilament antibody 2H3 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# 2H3; RRID:AB_531793</td>
+      <td>Immunohistochemistry: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TAG-1 antibody 4D7 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# 4D7/TAG1; RRID:AB_531775</td>
+      <td>Immunohistochemistry: (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG(DDDDK) tag antibody (rabbit polyclonal)</td>
+      <td>MBL</td>
+      <td>Cat# PM020; RRID:AB_591224</td>
+      <td>Immunoblot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myc tag antibody (rabbit polyclonal)</td>
+      <td>MBL</td>
+      <td>Cat# 562–5; RRID:AB_591116</td>
+      <td>Immunoblot: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GST tag antibody (goat polyclonal)</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 27-4577-01; RRID:AB_771432</td>
+      <td>Immunoblot: (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-His tag antibody (goat polyclonal)</td>
+      <td>Wako</td>
+      <td>Cat# 014–23221</td>
+      <td>Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG secondary antibody, Alexa Fluor 594 (from donkey)</td>
+      <td>Jackson immune research</td>
+      <td>Cat# 711-585-152; RRID:AB_2340621</td>
+      <td>Immunofluorescence: (1:1000); Immunohistochemistry: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat IgG secondary antibody, Alexa Fluor 488 (from donkey)</td>
+      <td>Invitrogen, Thermo Fisher Scientific</td>
+      <td>Cat# A-11055; RRID:AB_2534102</td>
+      <td>Immunofluorescence: (1:1000); Immunohistochemistry: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG secondary antibody, Alexa Fluor 488 (from goat)</td>
+      <td>Invitrogen, Thermo Fisher Scientific</td>
+      <td>Cat# A-11029; RRID:AB_2534088</td>
+      <td>Immunofluorescence: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG, Whole Ab ECL antibody, HRP Conjugated (from donkey)</td>
+      <td>GE Healthcare</td>
+      <td>Cat# NA934; RRID:AB_772206</td>
+      <td>Immunoblot: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat IgG, HRP conjugate, Species Adsorbed: H, M, R, Ch, Gp, Eq, Ht, Rb antibody (from donkey)</td>
+      <td>Millipore</td>
+      <td>Cat# AP180P; RRID:AB_92573</td>
+      <td>Immunoblot: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-myc vector</td>
+      <td>Stratagene, Agilent</td>
+      <td>Cat# 211173</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-Flag vector</td>
+      <td>Strategene, Agilent</td>
+      <td>Cat# 211172</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS vector</td>
+      <td>PMID: 1660837 (Niwa et al., 1991) Strategene, Addgene</td>
+      <td>Collection number LMBP2453</td>
+      <td>This vector was provided by J. Miyazaki, Osaka University, Osaka, Japan; Niwa et al. (1991) (PMID: 1660837)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-1</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 28954648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-mRFP-actin vector</td>
+      <td>PMID: 29483251 (Abe et al., 2018)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-myc-shootin1a vector</td>
+      <td>PMID: 17030985 (Toriyama et al., 2006)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-Flag-L1-CAM-ICD (intracellular domain) vector</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-dominant negative myc-Pak1vector</td>
+      <td>PMID: 26261183 (Kubo et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-constitutively active myc-Pak1 vector</td>
+      <td>PMID: 26261183 (Kubo et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-myc</td>
+      <td>PMID: 17030985 (Toriyama et al., 2006)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-myc-GST vector</td>
+      <td>PMID: 17030985 (Toriyama et al., 2006)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-myc- shootin1a (1-125) vector</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-EGFP- shootin1a(1-125)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-shootin1a-WT vector</td>
+      <td>PMID: 26261183 (Kubo et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-shootin1a-DD (phopho-mimic shootin1a) vector</td>
+      <td>PMID: 26261183 (Kubo et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-myc-shootin1a-DD (phopho-mimic shootin1a) vector</td>
+      <td>PMID: 26261183 (Kubo et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-myc-shootin1a- (1-125) vector</td>
+      <td>PMID: 26261183 (Kubo et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-myc-shootin1a- (125-260) vector</td>
+      <td>PMID: 26261183 (Kubo et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-myc-shootin1a- (217-456) vector</td>
+      <td>PMID: 26261183 (Kubo et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-myc-shootin1a- (261-377) vector</td>
+      <td>PMID: 26261183 (Kubo et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-L1-CAM-ICD (intracellulardomain) vector</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RNAi shootin1a vector (miRNA)</td>
+      <td>PMID: 17030985 (Toriyama et al., 2006); PMID: 23453953 (Toriyama et al., 2013)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RNAi-refractory shootin1a-WT vector</td>
+      <td>PMID: 23453953 (Toriyama et al., 2013)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RNAi-refractory shootin1a-DD (phopho- mimic shootin1a) vector</td>
+      <td>PMID: 23453953 (Toriyama et al., 2013)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant Netrin-1 protein (from mouse)</td>
+      <td>R and D systems</td>
+      <td>Cat# 1109-N1-025</td>
+      <td>No CF (No carrier protein free)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FLAG peptide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F3290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Laminin Solution, from Mouse EHS Tumor</td>
+      <td>Wako</td>
+      <td>Cat# 120–05751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>L1-CAM-Fc</td>
+      <td>PMID: 18519736 (Shimada et al., 2008)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Prescission protease</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 27084301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Pak1</td>
+      <td>Life technologies, Thermo Fisher Scientific</td>
+      <td>Cat# PV3820</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rat Neuron Nucleofector kits (25 RCT)</td>
+      <td>Lonza</td>
+      <td>Cat# VPG-1003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>anti-FLAG M2 antibody affinity gel (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2220; RRID:AB_10063035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>7-amino-4- chloromethylcoumarin (CMAC)</td>
+      <td>Invitrogen, Thermo Fisher Scientific</td>
+      <td>Cat# C2110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4,6-diamidino-2- phenylindole(DAPI)</td>
+      <td>Roche</td>
+      <td>Cat# 10236276001 Roche</td>
+      <td>DAPI stain (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,1'-dioctadecyl- 3,3,3',3'-tetramethyl- indocarbocyanine dye (DiI)</td>
+      <td>Invitrogen, Thermo Fisher Scientific</td>
+      <td>Cat# D3911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutathione sepharose 4B</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 17-0756-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protein G-sepharose 4B</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 6511–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polydimethylsiloxane (PDMS)</td>
+      <td>Dow Corning Toray, Japan</td>
+      <td>Cat# 3255981</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Silicone oil (Barrier coat No.6)</td>
+      <td>ShinEtsu, Japan</td>
+      <td>Cat# 06003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhosSTOP</td>
+      <td>Roche</td>
+      <td>Cat# 4906845001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>http://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad prism 7</td>
+      <td>Graphpad software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing</td>
+      <td>http://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>http://www.mathworks.com/products/matlab/</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microsoft Excel 2016</td>
+      <td>Microsoft https://www.microsoft.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amicon ultra-4 centrifugal filter devices</td>
+      <td>Millipore</td>
+      <td>Cat# UFC800324</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Histology and immunohistochemistry
 
 All relevant aspects of the experimental procedures were approved by the Institutional Animal Care and Use Committee of Nara Institute of Science and Technology (reference No. 1802). For timed pregnancy, the morning of vaginal plug detection was designated as embryonic day E0.5. The brains (E16.5 and P0) and embryos (E12.5) were fixed by immersion in 4% formaldehyde (FA) prepared fresh from paraformaldehyde (PFA) at 4°C for 60 min. Serial sections (8 μm) of paraffin-embedded brains were cut on a microtome (Micro-edge Instruments) and used for Nissl substance staining. For immunohistochemistry, 12 μm cryosections cut by a cryostat (Leica) were preincubated with 10% fetal bovine serum (Invitrogen) in 1 × phosphate buffer (PB) containing 0.3% Triton-X 100 for 2 hr. The sections were then incubated with the primary antibodies at 4°C two overnight; the primary antibodies used were rabbit anti-shootin1a (1:5,000), goat anti-L1-CAM (Santa Cruz, RRID:AB_631086) (1:1,000), mouse anti-Neurofilament (Cat# 2H3, RRID:AB_531793) (1:2,000), and mouse anti-TAG-1 (Cat# 4D7/TAG1, RRID:AB_531775) (1:100) diluted in PB containing 0.3% Triton-X 100. Secondary antibodies were Alexa Fluor 488 anti-goat (Invitrogen, RRID:AB_2534102) and Alexa Fluor 594 anti-rabbit (Invitrogen, RRID:AB_2340621): they were used at a 1000-fold dilution at 4°C overnight. The WT and knockout sections used were from the same coronal or horizontal stereotaxic brain regions. Slides were mounted in 50% glycerol (v/v) in PBS after staining with 4,6-diamidino-2-phenylindole (DAPI; Roche). Fluorescence images were acquired using a confocal microscope (LSM 700 or LSM 710; Carl Zeiss) equipped with a plan-Apochromat ×10, 0.45 NA and ×20, 0.8 NA objective lens (Carl Zeiss) or BZ-X700 fluorescence microscope (Keyence) equipped with a CFI Plan Apo ×10, 0.45 NA objective lens (Nikon).
 
-## Generation of Shootin1 knockout mice
+### Generation of Shootin1 knockout mice
 
 The targeting vector for Shootin1 knockout mice was constructed to replace most of the first exon of Shootin1 with IRES-LacZ and PGK-neo (Figure 1—figure supplement 3A). The linearized targeting vector was introduced into 129 donor ES cells and the mutation of Shootin1 in the cells was confirmed by Southern blot analysis. Targeted ES clones were microinjected into C57BL/6 blastocysts and implanted into pseudopregnant mice. Chimeric mice were crossed with C57BL/6 mice for at least seven generations before analysis.
 
-## DiI tracing
+### DiI tracing
 
 1,1'-dioctadecyl-3,3,3',3'-tetramethyl-indocarbocyanine dye (DiI; Invitrogen) crystals were placed in the dorsomedial cortex in a rostrocaudal series for tracing of the corpus callosum, or in the anterior olfactory nucleus/anterior piriform cortex for tracing of the anterior limb of the anterior commissure (Klingler et al., 2015). After the placement, brains were incubated in 4% FA at 37°C for 3 months, and then 100 μm sections were prepared by vibratome (Leica). The sections were mounted on glass slides, and observed under a fluorescence microscope.
 
-## Cultures and transfection
+### Cultures and transfection
 
 Hippocampal neurons prepared from E18 rats were cultured on glass coverslips coated sequentially with polylysine and L1-CAM-Fc as described (Shimada et al., 2008; Toriyama et al., 2013; Kubo et al., 2015). For the experiments in Figure 7―figure supplement 4, we cultured neurons on glass coverslips coated sequentially with polylysine and laminin as described (Toriyama et al., 2006; Abe et al., 2018). All experiments except for the measurement of forces were carried out on glass surfaces. For the immunoprecipitation and immunoblot analyses in Figure 4C, we used cortical neurons, which also respond to netrin-1 (Li et al., 2008), as the experiments required large numbers of neurons. They were prepared from E18 rat embryos using the same protocol as above. The neurons were transfected with vectors using Nucleofector (Lonza) before plating. HEK293T cells (ATCC, RRID:CVCL_0063, cell identities were authenticated by STR profiling and cells were tested negative for mycoplasma using the TAKARA PCR mycoplasma detection set Cat# 6601) were cultured in Dulbecco’s modified Eagle’s medium supplemented with 10% fetal bovine serum and transfected with plasmid DNA by the calcium phosphate method.
 
-## Axon guidance assay
+### Axon guidance assay
 
 A microfluidic device that generates netrin-1 gradients in culture medium was produced according to a previous report (Bhattacharjee et al., 2010), with modification. Briefly, it was fabricated with polydimethylsiloxane (PDMS; Silpot 184, Dow Corning Toray, Japan) and a glass coverslip; the device consists of an open rectangular cell culture area and two microchannels on the long sides of the culture area (Figure 2A). The micro-molds of the channel pattern were lithographically fabricated on a photoresist (SU-8 3025, MicroChem, USA) spin-coated on a 70 μm thick silicon wafer. PDMS sheets were obtained from this mold, which had been treated with silicone oil (Barrier coat No. 6, ShinEtsu, Japan) to facilitate their removal. A PDMS sheet, coated with 1 μm thick PDMS glue (KE103, ShinEtsu, Japan), was then bonded to a glass coverslip coated sequentially with polylysine and L1-CAM-Fc. To generate netrin-1 gradients in the cell culture area, flows of culture medium (7.5 μm/min) with or without 4.4 nM (300 ng/ml) netrin-1 and 2 μM fluorescent tracer (Alexa Fluor 594-BSA or Alexa Fluor 488-BSA) were applied to the microchannels on either side of the open cell culture area (black arrows, Figure 2A). As reported (Bhattacharjee et al., 2010), the microfluidic device generated stable gradients of the tracer in the culture medium (Figure 2B). For live imaging of neurons expressing miRNA, EGFP fluorescence was used as an indicator of miRNA expression. The turning angle of an axon toward the netrin-1 source was obtained by calculating the difference between the angles of the axonal tip at the first and last time-points of the observations (θf - θl) (Bhattacharjee et al., 2010) (Figure 7D).
 
-## RNAi
+### RNAi
 
 For RNAi experiments, we used a Block-iT Pol II miR RNAi expression kit (Invitrogen). The targeting sequence of shootin1a miRNA and its effectiveness were reported previously (Toriyama et al., 2006). As described previously (Shimada et al., 2008), to ensure high-level expression of miRNA before neurite elongation, hippocampal neurons prepared from E18 rat embryos and transfected with the miRNA expression vector were plated on uncoated polystyrene plates. After a 20 hr incubation to induce miRNA expression, the cells were collected and then cultured on coverslips.
 
-## DNA constructs
+### DNA constructs
 
 Preparation of the vectors to express shootin1a-WT has been described previously (Toriyama et al., 2006). cDNA fragments of shootin1a deletion mutants were amplified by PCR and subcloned into pGEX-6P-1 (GE Healthcare), pCAGGS-myc, pCAGGS-EGFP, pCMV-myc (Stratagene) or pEGFP (Clontech) vector as described (Kubo et al., 2015). The generation of RNAi-refractory shootin1a-WT and shootin1a-DD shootin1a was described previously (Toriyama et al., 2013). pCAGGS-myc was used to overexpress proteins under the β-actin promoter as described (Toriyama et al., 2006).
 
-## Protein preparation and in vitro kinase assay
+### Protein preparation and in vitro kinase assay
 
 Recombinant proteins were expressed in Escherichia coli as GST fusion proteins and purified on Glutathione sepharose columns, after which GST was removed by PreScission protease. L1-CAM-Fc was prepared as described (Shimada et al., 2008). Kinase reactions were carried out in 20 µl kinase buffer (50 mM HEPES pH 7.5, 10 mM MgCl2, 2 mM MnCl2, 1 mM DTT, 125 µM ATP, in the presence or absence of 10 µCi [γ-32P]ATP) containing 250 ng active Pak1 and 2.1 μg purified shootin1a as described (Kubo et al., 2015).
 
-## In vitro binding assay
+### In vitro binding assay
 
 Purified GST-L1-CAM-ICD and shootin1a were incubated overnight at 4°C in reaction buffer (20 mM Tris-HCl pH 8.0, 100 mM NaCl, 1 mM EDTA, 1 mM DTT). After centrifugation for 15 min at 17,400 g at 4°C, the supernatants were incubated with Glutathione Sepharose 4B beads for 2 hr at 4°C. The beads were washed three times with wash buffer (20 mM Tris-HCl pH 8.0, 300 mM NaCl, 1 mM EDTA, 1 mM DTT) and once with TED buffer (20 mM Tris-HCl pH 8.0, 1 mM EDTA, 1 mM DTT). For elution, the Sepharose beads were incubated with 25 μl of elution buffer (15 mM reduced glutathione pH 8.0, 20 mM Tris-HCl pH 8.0, 100 mM NaCl, 1 mM EDTA, 1 mM DTT) for 2 hr at 4°C. For the binding assay in Figure 3A, we incubated 100 nM shootin1a and 100 nM GST-L1-CAM-ICD in 10 ml reaction buffer. After further incubation with Glutathione Sepharose 4B (bed volume 500 μl), GST-L1-CAM-ICD was eluted by 20 mM glutathione buffer (pH 8.0). After concentrating the 10 ml eluate with a centrifugal filter (Millipore), using half of the eluate, we could detect the interaction between shootin1a and L1-CAM-ICD by CBB staining. For the binding assay in Figure 3B, the supernatants were analyzed by immunoblot. Apparent dissociation constants were calculated by non-linear regression using GraphPad Prism 6 (GraphPad Prism Software).
 
-## Immunoprecipitation and immunoblot
+### Immunoprecipitation and immunoblot
 
 Immunoprecipitation and immunoblot were performed as described (Toriyama et al., 2006). For immunoprecipitation with HEK293T cells, cell lysates were prepared using NP40 lysis buffer (0.5% NP-40, 20 mM HEPES pH 7.5, 3 mM MgCl2, 100 mM NaCl, 1 mM EGTA, 1 mM DTT, 1 mM PMSF, 0.01 mM leupeptin, 1 × PhosStop). The supernatants of cell lysates were incubated with 25 μl (bed volume) of anti-FLAG M2 gel (RRID:AB_10063035) overnight at 4°C. The anti-FLAG M2 gels were washed three times with wash buffer (0.1% Tween 20, 20 mM HEPES pH 7.5, 3 mM MgCl2, 100 mM NaCl, 1 mM EGTA, 1 mM DTT) and once with TED buffer. To elute immunocomplexes, the gels were incubated with 25 μl of FLAG peptide (400 μg/ml) for 2 hr at 4°C. The immunocomplexes were analyzed by immunoblot.
 
 For immunoprecipitation with cultured neurons, after netrin-1 (4.4 nM) stimulation for 1 hr, cell lysates were prepared with NP40-Triton lysis buffer (0.5% NP-40, 1% Triton X-100, 20 mM HEPES pH 7.5, 3 mM MgCl2, 100 mM NaCl, 1 mM EGTA, 1 mM DTT, 1 mM PMSF, 0.01 mM leupeptin, 1 × PhosStop). The supernatants of the lysates were incubated with antibodies overnight at 4°C, and immunocomplexes were then precipitated with protein G-Sepharose 4B. After washing the beads with wash buffer (0.1% Tween 20, 20 mM HEPES pH 7.5, 3 mM MgCl2, 100 mM NaCl, 1 mM EGTA, 1 mM DTT), immunocomplexes were analyzed by immunoblot.
 
-## Immunocytochemistry and microscopy
+### Immunocytochemistry and microscopy
 
 Cultured neurons were fixed with 3.7% FA in Krebs buffer (118 mM NaCl, 5.7 mM KCl, 1.2 mM KH2PO4, 1.2 mM MgSO4, 4.2 mM NaHCO3, 2 mM CaCl2, 10 mM Glucose, 400 mM Sucrose, 10 mM HEPES pH7.2) for 10 min at room temperature, followed by treatment for 15 min with 0.05% Triton X-100 in PBS on ice and 10% fetal bovine serum in PBS for 1 hr at room temperature. They were then labeled with antibodies, as described (Shimada et al., 2008). We used secondary antibodies conjugated with Alexa Fluor 488 or Alexa Fluor 594. For CMAC staining, cells were incubated with 2.5 μM CMAC for 2 hr before live-cell imaging. Fluorescence and phase-contrast images of neurons were acquired using a fluorescence microscope (Axioplan2; Carl Zeiss) equipped with a plan-Neofluar 20 × 0.50 NA or 63x oil 1.40 NA objective (Carl Zeiss), a charge-coupled device camera (AxioCam MRm; Carl Zeiss), and imaging software (Axiovision3; Carl Zeiss). Live-cell images of cultured hippocampal neurons were acquired at 37°C using a fluorescence microscope (IX81; Olympus) equipped with an EM-CCD camera (Ixon DU888; Andor), using a plan-Fluar 20 × 0.45 NA or 40 × 0.60 NA objective (Olympus), and MetaMorph software. TIRF microscopy was performed using a TIRF microscope (IX81; Olympus) equipped with an EM-CCD camera (Ixon3; Andor), a CMOS camera (ORCA Flash4.0LT; Hamamatsu), a UAPON 100 × 1.49 NA (Olympus), and MetaMorph software. Axon length was measured using ImageJ (Fiji version).
 
-## Fluorescent speckle imaging and traction force microscopy
+### Fluorescent speckle imaging and traction force microscopy
 
 The speckle imaging data in were obtained using neurons cultured on coverslips coated with L1-CAM-Fc or laminin as described (Shimada et al., 2008). Traction force microscopy was performed as described (Toriyama et al., 2013; Abe et al., 2018). Briefly, neurons were cultured on polyacrylamide gels with embedded fluorescent microspheres (200 nm diameter; Invitrogen). Time-lapse imaging of fluorescent beads and growth cones was performed at 37°C using a confocal microscope (LSM710; Carl Zeiss) equipped with a C-Apochromat 63x/1.2 W Corr objective. The growth cone area was determined by EGFP fluorescence or from DIC images. Traction forces under the growth cones were monitored by visualizing force-induced deformation of the elastic substrate, which is reflected by displacement of the beads from their original positions, and expressed as vectors. The force vectors detected by the beads under individual growth cones were then averaged, and were expressed as vectors composed of magnitude and angle (θ) (Figure 6—figure supplement 1A, left panel) (Toriyama et al., 2013). To compare the forces under different conditions, the magnitude and angle (θ) of the force vectors of the individual growth cones were statistically analyzed and expressed as means ± SEM, separately (Abe et al., 2018). They were also analyzed by one-way ANOVA with Tukey’s post hoc test.
 
-## Analyses of netrin-1 attached on the substrate
+### Analyses of netrin-1 attached on the substrate
 
 Netrin-1 attached on the substrate was analyzed as described (Moore et al., 2012) with modifications. Glass coverslips coated with polylysine or coated sequentially with polylysine and L1-CAM-Fc were incubated with culture medium and netrin-1 containing a 10-His tag at the C-terminus, in the absence or presence of 2 μg/ml heparin. The glasses were washed with PBS, and blocked for 1 hr at room temperature with 0.1% BSA in PBS. They were then labeled with anti-His antibody and secondary anti-mouse antibody conjugated with Alexa Fluor 488. Fluorescence images were acquired using a fluorescence microscope (IX81; Olympus) equipped with an EM-CCD camera (Ixon DU888; Andor), using a plan-Fluar 20 × 0.45 NA objective (Olympus), and quantified using ImageJ (Fiji version).
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analysis were performed using Microsoft Excel, Statistical software R (RRID:SCR_001905) and Graphpad prism 7 (RRID:SCR_002798). Significance was determined by the two-tailed unpaired Student’s t-test in most cases. For multiple comparisons, we used one-way ANOVA with Schaffer’s post hoc test or Tukey’s post hoc test.
 
-## Materials
+### Materials
 
 Rabbit antiserum to shootin1a was raised by immunizing rabbits with the synthetic peptide CKGILASQ that corresponds to the region specific to shootin1a (Higashiguchi et al., 2016). The specificity of the antiserum was confirmed by immunoblot analysis (Figure 1—figure supplement 3C). Preparation and affinity purification of anti-pSer101-shootin1 and anti-pSer249-shootin1 antibodies are described elsewhere (Toriyama et al., 2013). Antibody against L1-CAM (Cat# sc-1508, RRID:AB_631086) was obtained from Santa Cruz. Antibodies against myc (Cat# 562–5, RRID:AB_591116) and FLAG (Cat# PM020, RRID:AB_591224) were obtained from MBL. Dulbecco’s modified Eagle’s medium, polylysine, Rabbit IgG control antibody (Cat# I8140, RRID:AB_1163661), anti-FLAG M2 antibody (Cat# F3165, RRID:AB_259529), anti-FLAG M2 gel (Cat# A2220, RRID:AB_10063035), FLAG peptide and heparin (Cat# H3149) were obtained from Sigma-Aldrich. Secondary anti-goat antibody conjugated with Alexa Fluor 488 (Cat# A-11055, RRID:AB_2534102), secondary anti-mouse antibody conjugated with Alexa Fluor 488 (Cat# A-11029, RRID:AB_2534088), active Pak1 and CMAC were obtained from Invitrogen. Anti-His antibody (Cat# 014–23221) was obtained from Wako. Recombinant mouse netrin-1 containing a 10-His tag at the C-terminus was obtained from R and D Systems (Cat# 1109-N1-025, not CF form). Antibody against GST (Cat# 27-4577-01, RRID:AB_771432), Secondary anti-Rabbit antibody conjugated with HRP (Cat# NA934, RRID:AB_772206), Glutathione Sepharose 4B beads and PreScission protease were obtained from GE Healthcare. Secondary anti-Goat antibody conjugated with HRP (Cat# AP180P, RRID:AB_92573) and Amicon ultra-4 centrifugal filter devices were obtained from Millipore. Secondary anti-Rabbit antibody conjugated with Alexa Fluor 594 (Cat# 711-585-152, RRID:AB_2340621) was obtained from Jackson immune research. Fetal bovine serum and PhosStop were obtained from Japan Bio Serum and Roche, respectively.

@@ -29,6 +29,14 @@ Among prokaryotes, several members of the Cyanobacteria phylum are capable of ce
 
 The HetR/PatS regulatory loop fits the local activation/long range inhibition scheme that has been adapted from the Turing model explaining pattern formation (Brown and Rutenberg, 2014; Turing, 1952; Turing, 1990; Gierer and Meinhardt, 1972; Figure 1A). Furthermore, the action of HetN and PatX as inhibitory factors, the stochastically noisy expression of regulatory proteins (HetR and NtcA) among other features specific to cell differentiation of Nostoc, allow the emergence of more elaborated mathematical models that outline the principles governing pattern formation in cyanobacteria (Di Patti et al., 2018; Muñoz-García and Ares, 2016).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59190/elife-59190-fig1-v2.jpg)
+
+**Figure 1.:** (A) Self-organized patterning in Nostoc Heterocysts are presented in green. Vegetative cells in brown. The width of the shade around the cells represents the strength of the activation/inhibition. Processed PatS is framed by a star. (B) (upper) Bacterial two hybrid assay between HetL and HetR. BTH101 strain was transformed with pKT25-hetL and pUT18C-HetR, β-galactosidase activities were measured as described in section ‘Materials and methods’ and were expressed in Miller units. Strains producing the T18 with T25 (control -), T25-HetR with T18 (HetR) and T25 with T18-HetL (HetL) served as negative controls. Strains producing T18-Zip and T25-Zip served as positive control (control +). Error bars indicate standard deviation. The characteristics of the fusion proteins used in this assay are indicated below: HetR-HetR: T25-HetR/T18-HetR; HetL-HetL: T25-HetL/T18-HetL; HetL-HetR: T25-HetL/T18-HetR; HetL-HetRhood: T25-HetL/HetRhood-T18; HetL: T25-HetL/T18; HetR: T25/T18-HetR. (lower) Domains organization of HetR: Helix-turn-helix domain, flap domain and hood domain. (C) BLi assay between HetL and HetR. 2.2 µM of biotinylated HetR was loaded onto streptavidin biosensors. A 30 s baseline in PBS was performed before a 120 s association step with various concentrations of HetL at 2.5, 5, 10 and 20 µM followed by a 120 s dissociation step. Each curve represents the average of two experiments minus the control experiment. As a negative binding control, HetL 20 µM was added to the empty biosensor devoid of HetR. (D) EMSA assay of HetR (1 µM) with the hetP promoter (50 nM) in the presence of or PatS-5 or PatS-6 (1 µM) and HetL (4 µM). The hetP promoter incubated alone served as negative control (free DNA) and HetL plus DNA as a specific control for the binding activity of HetR.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59190/elife-59190-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (left) 1 µg purified proteins migrated in 4–20% gel (Nusep) colored by instant blue. (right) Anti-Histidine immunoblot analysis of 1 µg purified proteins.
+
 Because Nostoc is the simplest model to address development in a one-dimensional self-organizing system, valuable genetics and biochemical studies have provided an accurate picture of heterocyst patterning. Nevertheless, several questions are still unanswered and deserve investigation. In particular, how the differentiating cell, where patS is expressed at its highest level, becomes immune to self-inhibition is not fully understood yet. A genetic analysis of patS suggested that the seven amino acids at the N-terminus of PatS protect the producing cell from inhibition likely concomitantly with the export of the active form of PatS (Corrales-Guerrero et al., 2013). Intriguingly, if patS or patS-5 are expressed specifically in the vegetative cells, or when PatS-5 is added to the culture medium, cell differentiation is abolished. However when produced in cells that have already initiated development (proheterocysts), PatS-5 is not able to inhibit differentiation (Yoon and Golden, 2001; Wu et al., 2004). These observations suggest that proheterocysts must acquire additional protection post-PatS export/processing.
 
 The hetL gene (all3740) was unearthed in a genetic screen aiming to identify factors involved in PatS signaling (Liu and Golden, 2002). HetL is a single domain protein composed of 40 pentapeptides (A(D/N)LXX), adopting a right-handed quadrilateral beta helix typical of an Rfr-fold common to all pentapeptide repeats containing proteins (PRPs) (Ni et al., 2009). The ectopic expression of hetL in a background of patS overexpression restores the ability of the strain to differentiate heterocysts (Liu and Golden, 2002). hetL overexpression stimulates differentiation also when PatS-5 is added to the culture medium (Liu and Golden, 2002). Henceforth, HetL interferes with PatS inhibition but the molecular mechanism involved is unknown.
@@ -37,7 +45,7 @@ This study aims to further explore the function of HetL in PatS signaling. We sh
 
 ## Results
 
-## HetL interacts with HetR without inhibiting its DNA-binding activity
+### HetL interacts with HetR without inhibiting its DNA-binding activity
 
 To get further insights into HetL function, we wondered whether its activity would be mediated by its direct interaction with HetR. To test this, we used the bacterial two hybrid assay (BACTH), which is based on the reconstitution of adenylate cyclase (CyA) activity by two interacting proteins that bring the T18 and T25 domains of CyA into close proximity (Karimova et al., 1998). T18 and T25 domains were fused to HetR and HetL proteins at their N-terminal extremities, and the dimerization ability of HetR was used as an internal control for this assay. The data in Figure 1B show that HetL displays a strong interaction with HetR. Interestingly, it seems that the HetR-hood domain is sufficient to mediate the interaction of HetR to HetL. Furthermore, this experiment indicated that HetL is able to form dimers (or oligomers) (Figure 1B).
 
@@ -45,45 +53,115 @@ To confirm this interaction, we developed a BioLayer interferometry (BLi) assay.
 
 As HetR acts by directly binding to promoters of a subset of its target genes, we tested if the interaction with HetL would impact its DNA binding activity. To this end, we conducted an electrophoretic mobility shift assay (EMSA) using the hetP promoter as a target (Huang et al., 2004; Hu et al., 2015). The previously reported ability of PatS-5 to inhibit HetR DNA-binding activity was used as a control (Huang et al., 2004; Hu et al., 2015). In the presence of HetL, HetR was still able to interact with the hetP promoter and the complex formed was higher than the one formed by HetR alone (Figure 1D). This result indicates that, contrary to PatS-5 binding, the interaction between the two proteins does not inhibit the DNA-binding activity of HetR.
 
-## HetL and PatS interact with HetR at the same interface
+### HetL and PatS interact with HetR at the same interface
 
 Since HetL has been identified on the basis of counteracting PatS inhibition and as both PatS and HetL interact with HetR at its hood domain, we hypothesized that HetL could interact with HetR at the same interface as PatS, which would therefore interfere with its inhibiting action. To test this hypothesis, we took advantage of the fact that HetR-PatS interaction involves the Hood domain of HetR and that the residue R223 of HetR is required for this interaction. Interestingly, a variant of HetR bearing a R223W substitution lost the ability to interact with HetL (Figure 2A). HetR (R223W) was still able to form dimers (Figure 2A), which indicates that this variant is correctly folded. We conclude that the absence of interaction between HetR (R223W) and HetL indicates that this residue, in addition to being involved in the interaction with PatS-5/PatS-6, is also required for the interaction with HetL. For a deeper investigation of HetR-HetL interaction, we exploited the available structures of HetL and of the Hood domain of HetR to build interaction models (Ni et al., 2009; Hu et al., 2015). Interestingly, a group of four models among the top 10 clusters share similar orientations of HetR on HetL (Figure 2—figure supplement 1). Importantly, these models present interesting properties regarding the binding interface of HetR-Hood to HetL: (i) the residue R223 of HetR was involved in the binding interface with HetL (Figure 2B, Figure 2—figure supplement 1), (ii) the HetR interaction interface with HetL matches the one involved in PatS-5 interaction (Figure 2B). In the retained models, the HetR-Hood:HetL interaction is maintained by a large network of electrostatic interactions and hydrogen bonds. For HetR, the binding interface is composed of the surface exposed residues from strand β3 and α-helix α12’ (Figure 2B). In HetL, the large proportion of the binding interface includes the pentapeptides repeat localized in face three encompassed E84ADLT, K104ASLC, 124QADLR, 149YADLR, 169RANFG and 197YANLE. A small second binding interface is localized within face 2 and includes 40ADLRQ and 145ADLSY pentapeptide repeats. To gain further insight about the HetR:HetL interaction, we performed a site-directed mutagenesis to substitute the residue D151 from HetL to Alanine. Interestingly, this substitution impaired the binding of HetL to HetR as revealed by BACTH assay (Figure 2A). Furthermore, HetL D151A variant was still able to form dimers which is an important indication to rule out the possibility that the mutation impacted the fold of this variant (Figure 2A). Taken together, these results indicate that HetL and PatS-5 interact with HetR at the same interface, which implies that HetL and PatS must compete for the interaction with HetR. To check this assumption, the interaction between HetR and HetL was analyzed by BLi in the presence of increasing amounts of PatS-5. The data obtained clearly indicated that the association between HetR and HetL is impaired with the addition of PatS-5 in a dose-response manner, with a total inhibition effect obtained at a concentration of 5 µM (Figure 2C). Similar results were obtained with PatS-6 (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/59190/elife-59190-fig2-v2.jpg)
+
+**Figure 2.:** (A) Bacterial two hybrid assay between HetL and HetR. β-galactosidase activities were measured as described in section ‘Materials and methods’ and were expressed in Miller units. Strains producing the T18 and T25 served as negative control (control -). Strains producing T18-Zip and T25-Zip served as positive control (control +). Error bars indicate standard deviation. The characteristics of the fusion proteins used in this assay are indicated below: HetL-HetR: T25-HetL/T18-HetR; HetLD151A-HetR: T25-HetLD151A/T18-HetR; HetL-HetRR223W: T25-HetL/T18-HetRR223W; HetLD151A-HetL: T25-HetLD151A/T18-HetL; HetR-HetRR223W: T25-HetR/T18-HetRR223W. (B) Model of HetR-Hood:HetL complex. Monomers of HetR-Hood dimer structure are presented in green and light pink. HetL is presented in cyan. D151 from HetL and R223 from HetR are indicated. (C) BLi assay between HetL and HetR in the presence of PatS-5. 10 µM of HetL was incubated 5 min with different concentrations of PatS at 0.5, 1, 2.5 and 5 µM before bringing HetL in contact with the bound HetR. Each curve represents the average of two experiments minus the control experiment. Control experiment HetL plus different concentrations of PatS loaded onto a biosensor devoid of HetR. (D) EMSA assay of HetL (2 µM) and HetR (1 µM) with the hetP promoter in the presence of PatS-5 at different concentrations. Note that, to distinguish the HetL/HetR-DNA and HetR-DNA complexes the concentration of HetL used in this experiment was lower than that shown in Figure 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59190/elife-59190-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Three groups composed by equivalent models are presented. Models from each group are superimposed. Each color represents a defined model. R223 residue from the best models in clusters 1, 4, 5, 10 are colored in magenta.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59190/elife-59190-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** 10 µM of HetL was incubated 5 min with different concentrations of PatS-6 at 0, 0.05, 0.1 and 0.5 µM before bringing HetL in contact with the bound HetR. Each curve represents the average of two experiments minus the control experiment. Control experiment HetL 10 µM loaded onto a biosensor devoid of HetR.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/59190/elife-59190-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Bacterial two hybrid assay between HetL and HetR in the presence of PatS. Strains after transformations with indicated plasmids were grown on LB plates containing IPTG, X-gal, and corresponding antibiotics for 48 hr at 30 °C. Strains producing the T18 and T25 served as negative control. Strains producing T18-Zip and T25-Zip served as positive control. PatS17 (the full-length PatS) and PatS-6 (ERGSGR) were produced from plasmids pXX7 and pXX8, respectively. The characteristics of the fusion proteins used in this assay are indicated below: HetR-HetL: T25-HetR/T18-HetL; HetR-HetL/PatS17: T25-HetR/T18-HetL/PatS; HetR-HetL/PatS6: T25-HetR/T18-HetL/PatS-6.
+
 The effect of PatS on HetR-HetL interaction was further analyzed by two hybrid assays. For this, a synthetic operon constituted of T18-hetL and patS-6 was constructed and used to question the interaction with HetR. While adenylate cyclase activity was restored in bacteria producing T25-HetR and T18-HetL fusions, the interaction between HetR and HetL was abolished when PatS-6 was produced along with HetL from the synthetic operon (Figure 2—figure supplement 3), which is a further demonstration that PatS and HetL share the same interaction site within HetR. The interference of PatS with the HetR-HetL complex was also observed in EMSA experiments where the addition of increasing amounts of PatS-5 abolished the binding of HetR-HetL to the hetP promoter (Figure 2D). Altogether, these data support the hypothesis of a competition between PatS and HetL for the interaction with HetR.
 
-## HetL does not interact with PatS
+### HetL does not interact with PatS
 
 Based on the data presented above, HetR acquired immunity against PatS inhibition can be explained by an exclusion of the inhibitor as a consequence of HetR-HetL interaction. However, an additional titration-based mechanism through a direct interaction between HetL and PatS cannot be ruled out. To test this possibility, Isothermal titration calorimetry (ITC) was used to analyze the possible interaction between HetL and PatS-5. This technique has been used previously to uncover the binding of PatS-5 to HetR (Feldmann et al., 2011). We have confirmed that HetR does indeed interact with PatS-5 with a dissociation constant (KD) of 600 nM similar to that of 227 nM described in the literature with a stoichiomerty of 1:1. The data in Figure 3 show that HetR (left panel) displays a reducing heat exchange when titrated with increasing amounts of Pats-5, indicating a saturation of the HetR sites with PatS-5. This reaction is an exothermic favorable reaction with an enthalpy of −7.43 ± 0.67 ΔH kcal/mol. On the contrary, HetL (right panel) does not show a relative heat exchange upon binding to PatS-5. The interaction between HetR and PatS-5 observed in Figure 3, validates our technical experiments and revokes the possibility that HetL could titrate PatS-5 by a direct interaction.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59190/elife-59190-fig3-v2.jpg)
 
-**Figure 3.:** ITC experiment to detect HetL interaction with PatS-5. The right panel shows HetR and PatS-5 interaction. The left panel shows the non-interaction of HetL and PatS-5. The respective upper panels show heat exchange upon ligand titration and bottom panels show integrated data with binding isotherms (solid line) fitted to a single–site binding model. The constant heat dilution was removed before the integrated binding isotherms. The titrant PatS-5 (800 µM) was titrated into a cell containing 23 µM HetR at 25°C.Figure 3—source data 1.
+**Figure 3.:** ITC experiment to detect HetL interaction with PatS-5. The right panel shows HetR and PatS-5 interaction. The left panel shows the non-interaction of HetL and PatS-5. The respective upper panels show heat exchange upon ligand titration and bottom panels show integrated data with binding isotherms (solid line) fitted to a single–site binding model. The constant heat dilution was removed before the integrated binding isotherms. The titrant PatS-5 (800 µM) was titrated into a cell containing 23 µM HetR at 25°C.
 
-## The interaction between HetL and HetR is required for HetR function in vivo
+### The interaction between HetL and HetR is required for HetR function in vivo
 
 As hetL was discovered on the basis of its capacity, when overexpressed, to suppress the inhibitory effect of PatS, we used this approach to evaluate the impact of the interaction between HetR and HetL on the differentiation process. The wild-type version of hetL or the mutated gene encoding HetL (D151A) were expressed in Nostoc cells under the control of the petE promoter, and quantitative RT-PCR analyses were carried out to check the accurate overexpression of these genes upon induction. Results revealed a 30-fold higher expression of the hetL and the hetL (D151A) genes in the recombinant strains compared to the wild type (Figure 4A), indicating that the two versions of hetL are actually overexpressed. PatS effect was analyzed either by the overexpression of patS gene from the petE promoter or by the addition in the medium of PatS-5 (or PatS-6). The cultures were transferred into a nitrate-depleted medium during 48 hr to assess heterocyst development. In agreement with published data, the overproduction of PatS or the addition of PatS-5 inhibited the differentiation process, while the overexpression of hetL restored the ability of the PatS overproducing strain to form heterocysts (Figure 4B). HetL overproduction also allowed the ability of the strain to form heterocysts when PatS-5 was added to the culture (Figure 4—figure supplement 1). The percentage of the heterocysts formed in the hetL overexpressing strain was equal to that of the wild-type strain (Table 1). Interestingly, the recombinant strain overproducing HetL (D151A) was not able to form heterocysts when PatS was overproduced or upon addition of PatS-5 in the growth medium (Figure 4B, Figure 4—figure supplement 1). The interaction of HetL with HetR is therefore needed to counteract PatS inhibition. hetL expression in the heterocyst is required for providing HetR immunity against PatS inhibition hetL expression level was too low to be detected by Northern blot or fluorescent gene fusions (Liu and Golden, 2002). We therefore chose quantitative RT-PCR approach to analyze hetL transcription during the differentiation process. The hetP gene whose transcription is activated by HetR 8 hr after nitrogen step-down was used as an internal control for this experiment (Mitschke et al., 2011). RNAs were collected from the wild-type strain and the ΔhetR mutant at different times after nitrogen starvation and the transcript levels of the two genes were expressed relative to their amount at time zero. Results reveal that hetP expression was, as expected, strongly induced from 8 hr after nitrate depletion. Contrary to the 10-fold induction in the wild-type strain, the expression of hetP did not significantly increase in the ΔhetR strain which is consistent with the activation of this gene by HetR (Figure 5A). The hetL gene showed a similar transcription profile to that of hetP, yet its expression level was much lower. In the wild-type strain, a 3.5-fold increase of hetL transcripts was observed 8 hr after nitrogen step-down and was maintained up to 24 hr. In the ΔhetR mutant, no induction of hetL transcription was observed. The region including 500 nucleotides upstream of the start codon of hetL, which must include the promoter of this gene, was analyzed to probe for the two binding site consensus reported for HetR: the high-affinity consensus (GTAGGCGAGGGGTCTAACCCCTCATTACC), and the low-affinity one (GCTTATGGTGGGCAATGCCCACCATAATA) (Videau et al., 2014). None of these sequences are present in the hetL promoter. We concluded that, even if low, the transcription of hetL gene is induced early during the differentiation program and that HetR is required for hetL activation. The action of HetR on the promoter of hetL may be either indirect and mediated by another factor, or direct through a degenerated consensus which might explain the low transcription level of this gene.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/59190/elife-59190-fig4-v2.jpg)
+
+**Figure 4.:** (A) hetL or hetLD151A in the indicated strains was overexpressed from the petE promoter. Gene expression was induced with 3 µM copper. qRT-PCR experiments were undergone to determine hetL or hetLD151A expression level. Each sample was measured in triplicate and the standard deviation is indicated by error bars. (B) Microscopic bright field images (upper) and auto-fluorescence images (lower) of indicated Nostoc strains after nitrogen stepdown in addition of 3 µM copper. White arrows point to heterocysts. Images with heterocysts are framed in red.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59190/elife-59190-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Microscopic bright field images (upper) and auto-fluorescence images (lower) of indicated Nostoc strains after 24 hr of nitrogen stepdown in addition of 3 µM copper are shown. White arrows point to heterocysts. Images with heterocysts are with red frames. Similar results were obtained with PatS-6.
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/59190/elife-59190-fig5-v2.jpg)
 
-**Figure 5.:** hetL expression is under the control of HetR.(A) hetL expression is induced in response to nitrogen starvation and is dependent on HetR. qRT-PCR was made to determine the hetL expression in WT and ΔhetR strains. hetP expression was determined as inner positive control. Each sample was measured in triplicate and the standard deviation is indicated by error bars (B) Effect of hetL expression from patS promoter or rbcL promoter. Microscopic bright field images (left) and auto-fluorescence images (right) of indicated Nostoc strains after 24 hr of nitrogen stepdown are shown. White arrows point to heterocysts. Images with heterocysts are with red frames.Figure 5—source data 1.Figure 4A.hetL or hetLD151A in the indicated strains was overexpressed from the petE promoter. Gene expression was induced with 3 µM copper. qRT-PCR experiments were undergone to determine hetL or hetLD151A expression level.
+**Figure 5.:** (A) hetL expression is induced in response to nitrogen starvation and is dependent on HetR. qRT-PCR was made to determine the hetL expression in WT and ΔhetR strains. hetP expression was determined as inner positive control. Each sample was measured in triplicate and the standard deviation is indicated by error bars (B) Effect of hetL expression from patS promoter or rbcL promoter. Microscopic bright field images (left) and auto-fluorescence images (right) of indicated Nostoc strains after 24 hr of nitrogen stepdown are shown. White arrows point to heterocysts. Images with heterocysts are with red frames.
+
+**Table 1.**
+ Percentage of heterocysts formed by different strains used in this study after combined nitrogen starvation.The number of the filaments analyzed was 60–100 in average.Table 1—source data 1.Raw data for heterocyst intervals and percentages.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain and condition</th>
+      <th>% of heterocysts, 24H after nitrogen starvation</th>
+      <th>Mean interval betweentwo heterocysts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild type</td>
+      <td>9.1 ± 1.6</td>
+      <td>10.7 ± 1.3</td>
+    </tr>
+    <tr>
+      <td>WT/PpetE-patS</td>
+      <td>0</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>WT and PatS-5 addition</td>
+      <td>0</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>WT/PpetE-hetL[D151A]</td>
+      <td>10.5 ± 0.6</td>
+      <td>9.1 ± 1.6</td>
+    </tr>
+    <tr>
+      <td>WT/PpetE-patS PpetE-hetL</td>
+      <td>11.1 ± 2.4</td>
+      <td>6.1 ± 1.8</td>
+    </tr>
+    <tr>
+      <td>WT/PpetE-patS PpetE-hetL[D151A]</td>
+      <td>0</td>
+      <td>ND</td>
+    </tr>
+  </tbody>
+</table>
 
 From the results presented above, it can be deduced that HetL acts in the heterocyst. To further confirm this assumption, we expressed hetL either from the rbcL promoter, which is specific to vegetative cells, or from the patS promoter which is expressed in the heterocysts early after nitrogen stepdown. The ability of HetL to suppress heterocyst inhibition triggered by the addition of PatS-5 was analyzed. Results show that the strain expressing the PpatS-hetL gene was able to form heterocysts even in the presence of PatS-5, but when expressed from the rbcL promoter, hetL was unable to prevent the inhibitory effect of PatS-6 (Figure 5B). This result is in favor of HetL acting specifically in the heterocyst.
 
-## HetL provides immunity against PatX-derived pentapeptide
+### HetL provides immunity against PatX-derived pentapeptide
 
 In addition to the RGSGR pentapeptide, heterocyst pattern formation has been recently shown to involve the HRGTGR peptide derived from the PatX protein (Elhai and Khudyakov, 2018). To further characterize HetL function, we wondered whether it would be involved in PatX signaling as well. Bli experiments showed that the HRGTGR peptide, like PatS-5, inhibited the interaction between HetR and HetL (Figure 6A). In addition, the strain expressing the PpetE-hetL gene was able to form heterocysts even in the presence of the HRGTGR peptide (Figure 6B), while the overproduction of HetL (D151A) did not bypass PatX-6 inhibition since heterocysts were not observed (Figure 6B). From these results, we conclude that HetL provides immunity for the developing cells against the two inhibitory peptides involved in pattern formation.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/59190/elife-59190-fig6-v2.jpg)
 
-**Figure 6.:** (A) BLi assay between HetL and HetR in the presence of PatX-6 (HRGTGR). 10 µM of HetL was incubated 5 min with different concentrations of PatX6 at 0.05, 0.1, 0.5 and 2.5 µM before bringing HetL in contact with the bound HetR. Each curve represents the average of two experiments minus the control experiment. Control experiment HetL 10 µM loaded onto a biosensor devoid of HetR. (B) WT/PpetE-hetL strain was able to form heterocysts even in the presence of the PatX-6 peptide. Microscopic bright field images (upper) and auto-fluorescence images (lower) of indicated Nostoc strains after 24 hr of nitrogen stepdown in addition of 3 µM copper are shown. White arrows point to heterocysts. Images with heterocysts are with red frames.Figure 6—source data 1.Figure 6A.BLi assay between HetL and HetR in the presence of PatX6 (HRGTGR). 10 µM of HetL was incubated five mins with different concentrations of PatX6 at 0.05, 0.1, 0.5 and 2.5 µM before bringing HetL in contact with the bound HetR.
+**Figure 6.:** (A) BLi assay between HetL and HetR in the presence of PatX-6 (HRGTGR). 10 µM of HetL was incubated 5 min with different concentrations of PatX6 at 0.05, 0.1, 0.5 and 2.5 µM before bringing HetL in contact with the bound HetR. Each curve represents the average of two experiments minus the control experiment. Control experiment HetL 10 µM loaded onto a biosensor devoid of HetR. (B) WT/PpetE-hetL strain was able to form heterocysts even in the presence of the PatX-6 peptide. Microscopic bright field images (upper) and auto-fluorescence images (lower) of indicated Nostoc strains after 24 hr of nitrogen stepdown in addition of 3 µM copper are shown. White arrows point to heterocysts. Images with heterocysts are with red frames.
 
-## HetR interacts with a pentapeptide repeat protein homolog to HetL
+### HetR interacts with a pentapeptide repeat protein homolog to HetL
 
 In addition to HetL, the genome of Nostoc contains 31 genes potentially coding for PRPs of various sizes. This large family includes proteins predicted to be located either in the cytoplasm, in the membrane or in the periplasm (Ni et al., 2009). Five of them display PRs among other domains, while the others, such HetL, are integrally formed by PR domains (Supplementary file 1). Given the considerable sequence identity shared by these PRPs (32% in average), predicting functional specificity based on sequence similarity is not possible. Because hetL mutant does not show any specific differentiation phenotype (Liu and Golden, 2002), we wondered if this could be due to a cross-complementation with another PRP. In this regard, we analyzed the capacity of HetR to interact with some HetL homologs. For this, we chose All3256 and All4303 because they share the closest features with HetL. They have a similar size (237, 268, 213 amino acids, respectively), a similar organization of the PRs domains, and the three are predicted to be cytosolic (Figure 7A). Figure 7B shows the results of a BACTH assay questioning the putative interaction of these proteins with HetR. Only All4303 displayed interaction with HetR, and even if this interaction is two-fold weaker than that of HetR-HetL it is significant compared to the negative control. This experiment indicates that at least one among the 31 PRPs is able to interact with HetR, which makes a cross-complementation of the hetL mutation with all4303, or another PRP coding gene a possible scenario. An important perspective of this work is to study the impact of the hetL-all4303 double mutation on the differentiation process.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/59190/elife-59190-fig7-v2.jpg)
 
-**Figure 7.:** (A) HetL, All3256 or All4303 PR domains organization. (B) Bacterial two hybrid assay between HetR and HetL paralogs. BTH101 strain was transformed with pKT25-hetR and pUT18C-all4303 or pUT18C-all3256, β-galactosidase activities were measured as described in section ‘Materials and methods’ and were expressed in Miller units. Strains producing the T18 and T25 served as negative control. Strains producing T18-Zip and T25-Zip served as positive control. Error bars indicate standard deviation. The characteristics of the fusion proteins used in this assay are indicated below: HetR-HetL: T25-HetR/T18-HetL; HetR-All4303: T25-HetR/T18-All4303; HetR-All3256: T25-HetR/T18-All3256. (C) Schematic model integrating HetL in the patterning system of Nostoc. R: HetR, L: HetL or HetL homolog, IM: inhibiting morphogen (Providing from the processing of PatX, PatS or HetN). Local activation/protection: once activated, HetR activates the transcription of hetR, hetL, patS/hetN. The HetR/HetL network is favored. HetL provides immunity against the inhibiting morphogens produced in situ or entering the cell. HetR is active, heterocyst develops. Long range inhibition: the diffusion of the morphogens from both sides of the heterocyst creates an inhibition gradient. In the HetR/Morphogen network, HetR is inactive and the concentration of HetL is below the protective threshold. Differentiation is inhibited.Figure 7—source data 1.Figure 7B.Bacterial two hybrid assay between HetR and HetL paralogs. BTH101 strain was transformed with pKT25-hetR and pUT18C-all4303 or pUT18C-all3256, β-galactosidase activities were measured as described in section ‘Materials and methods’ and were expressed in Miller units. Strains producing the T18 and T25 served as negative control. Strains producing T18-Zip and T25-Zip served as positive control.
+**Figure 7.:** (A) HetL, All3256 or All4303 PR domains organization. (B) Bacterial two hybrid assay between HetR and HetL paralogs. BTH101 strain was transformed with pKT25-hetR and pUT18C-all4303 or pUT18C-all3256, β-galactosidase activities were measured as described in section ‘Materials and methods’ and were expressed in Miller units. Strains producing the T18 and T25 served as negative control. Strains producing T18-Zip and T25-Zip served as positive control. Error bars indicate standard deviation. The characteristics of the fusion proteins used in this assay are indicated below: HetR-HetL: T25-HetR/T18-HetL; HetR-All4303: T25-HetR/T18-All4303; HetR-All3256: T25-HetR/T18-All3256. (C) Schematic model integrating HetL in the patterning system of Nostoc. R: HetR, L: HetL or HetL homolog, IM: inhibiting morphogen (Providing from the processing of PatX, PatS or HetN). Local activation/protection: once activated, HetR activates the transcription of hetR, hetL, patS/hetN. The HetR/HetL network is favored. HetL provides immunity against the inhibiting morphogens produced in situ or entering the cell. HetR is active, heterocyst develops. Long range inhibition: the diffusion of the morphogens from both sides of the heterocyst creates an inhibition gradient. In the HetR/Morphogen network, HetR is inactive and the concentration of HetL is below the protective threshold. Differentiation is inhibited.
 
 ## Discussion
 
@@ -99,124 +177,316 @@ Genetic experiments showed that HetL interaction with HetR allows the differenti
 
 ## Materials and methods
 
-## Strains, plasmids and primers
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Nostoc PCC 7120)</td>
+      <td>hetR</td>
+      <td>GenBank</td>
+      <td>Genomic sequence:NC_003272.1; Gene ID:1105936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Nostoc PCC 7120)</td>
+      <td>patS</td>
+      <td>GenBank</td>
+      <td>Gene ID:1105898</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Nostoc PCC 7120)</td>
+      <td>hetL</td>
+      <td>GenBank</td>
+      <td>Gene ID:1107338</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Nostoc PCC 7120)</td>
+      <td>all4303</td>
+      <td>GenBank</td>
+      <td>Gene ID:1107905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Nostoc PCC 7120)</td>
+      <td>all3256</td>
+      <td>GenBank</td>
+      <td>Gene ID:1106854</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Nostoc)</td>
+      <td>Wild-type strain; WT</td>
+      <td>Pasteur Institute Collection</td>
+      <td>PCC 7120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Nostoc)</td>
+      <td>ΔhetR</td>
+      <td>DOI:10.1111/j.1365-2958.2005.04678.x</td>
+      <td></td>
+      <td>Nostoc PCC 7120 deletion mutant of thehetR gene</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21DE3</td>
+      <td>New England Biolabs</td>
+      <td>C2527</td>
+      <td>competent cells for production of proteins</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BTH101</td>
+      <td>DOI:10.1073/pnas.95.10.5752</td>
+      <td></td>
+      <td>competent cells for two hybrid assays</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-histidine (mouse monoclonal)</td>
+      <td>Qiagen</td>
+      <td>Cat# 34660; RRID:AB_2619735</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRL1272 (plasmid)</td>
+      <td>DOI:10.1128/jb.170.3.1239-1244.1988</td>
+      <td></td>
+      <td>replicative in Nostoc, encoding resistance to erythromycin</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCSB270 (plasmid)</td>
+      <td>Other</td>
+      <td></td>
+      <td>lab collection (pRL1272 with petE promoter)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRL25T (plasmid)</td>
+      <td>DOI: 10.1016/j.resmic.2012.10.010</td>
+      <td></td>
+      <td>replicative in Nostoc encoding resistance to neomycin</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCSB265 (plasmid)</td>
+      <td>Other</td>
+      <td></td>
+      <td>lab collection (pRL25T bearing thepetE promoter)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PhetP fw (PCR primers)</td>
+      <td>Other</td>
+      <td>[6FAM]ATTTAGTGGTAAATTCTCTT</td>
+      <td>lab collection</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PhetP rv (PCR primers)</td>
+      <td>Other</td>
+      <td>TGAGTTATACGCTATATCAA</td>
+      <td>lab collection</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PatS-5 (synthesized peptide)</td>
+      <td>Genecust</td>
+      <td>RGSGR</td>
+      <td>desalted &gt; 99%</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>PatS-6 (synthesized peptide)</td>
+      <td>Genecust</td>
+      <td>ERGSGR</td>
+      <td>desalted &gt; 99%</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PatX-6 (synthesized peptide)</td>
+      <td>Genecust</td>
+      <td>HRGTGR</td>
+      <td>desalted &gt; 99%</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning kit</td>
+      <td>Takara</td>
+      <td>639646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GoScript Reverse transcriptase</td>
+      <td>Promega</td>
+      <td>A5000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HisTrap Excel</td>
+      <td>GE healthcare</td>
+      <td>GE17-3712-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Disposable PD 10 Desalting Columns</td>
+      <td>GE healthcare</td>
+      <td>GE17-0851-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DiDC competitor</td>
+      <td>Sigma-Aldrich</td>
+      <td>81349</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HADDOCK2.2 webserver</td>
+      <td>DOI: 10.1016/j.jmb.2015.09.014</td>
+      <td></td>
+      <td>http://milou.science.uu.nl/services/HADDOCK2.2/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains, plasmids and primers
 
 The strains, plasmids and primers used in this study are listed in Supplementary file 1. All the cyanobacterial strains are derivatives of Nostoc PCC 7120 (Pasteur Cyanobacterial Collection, https://www.pasteur.fr/fr/sante-publique/crbip/les-collections/collection-cyanobacteries-pcc).
 
-## Growth conditions, conjugation and heterocyst induction
+### Growth conditions, conjugation and heterocyst induction
 
 Nostoc and derivatives were grown in BG11 medium (Rippka R et al., 1979) at 30°C under continuous illumination (40 µE m−2s−1). When appropriate, media were supplemented with antibiotics at the following concentrations neomycin (50 μg mL−1), erythromycin (200 μg mL−1). Heterocyst formation was induced by transferring the exponentially growing cultures (OD 750 = 0.8) to BG110 (BG11 without sodium nitrate) medium. The presence of heterocysts was confirmed by microscopy.
 
 Conjugation of Nostoc was performed as described in Cai and Wolk, 1990. Briefly, E. coli strains (bearing the replicative plasmid and the RP-4 conjugative plasmid) grown to exponential growth phase, were mixed to an exponentially grown Nostoc culture. The mixture was plated on BG11 plates and antibiotics were injected under the agar 24 hr later for plasmid selection.
 
-## Plasmid construction
+### Plasmid construction
 
 All the plasmids used in this study are listed in Supplementary file 1.
 
 The strategy used for plasmid construction is briefly described below. All the recombinant plasmids were analyzed by sequencing.
 
-## pXX1: pKT25-hetR
+#### pXX1: pKT25-hetR
 
 The open-reading frame of hetR gene (alr2339) was amplified using the hetR dh fw T25 and hetR dh rv primers and cloned into the PstI and EcoRI restriction sites of the pKT25 expression plasmid.
 
-## pXX2: pKT25-hetL
+#### pXX2: pKT25-hetL
 
 The open-reading frame of hetL gene (all3740) was amplified using the hetL dh fw T25 and hetL dh rv primers and cloned into the PstI and EcoRI restriction sites of the pKT25 expression plasmid.
 
-## pXX3: pKT25-hetLD151A
+#### pXX3: pKT25-hetLD151A
 
 The pXX2 plasmid was used as template to substitute the D151 residue of HetL to Alanine. For this the primers Mut hetLD151A fw and Mut hetLD151A rv were used as primers in a megapriming PCR assay.
 
-## pXX4: pUT18C-hetR
+#### pXX4: pUT18C-hetR
 
 The open-reading frame of hetR gene (alr2339) was amplified using the hetR dh fw T18 and hetR dh rv primers and cloned into the PstI and EcoRI restriction sites of the pUT18C expression plasmid.
 
-## pXX5: pUT18C-hetRR223W
+#### pXX5: pUT18C-hetRR223W
 
 The pXX4 plasmid was used as template to substitute the R223 residue of HetR to Tryptophan. For this, the primers Mut hetRR223W fw and Mut hetRR223W rv were used as primers in a megapriming PCR assay.
 
-## pXX6: pUT18C-hetL
+#### pXX6: pUT18C-hetL
 
 The open-reading frame of hetL gene (all3740) was amplified using the hetL dh fw T18 and hetL dh rv primers and cloned into the PstI and EcoRI restriction sites of the pUT18C expression plasmid.
 
-## pXX7: pUT18C-hetL-RBS-patS
+#### pXX7: pUT18C-hetL-RBS-patS
 
 The open-reading frame of patS gene (asl2301) with extra 350 bp after the stop codon, was amplified using the RBS-patS dh fw T18 and RBS-patS dh rv T18 primers and cloned into the SalI and XhoI restriction sites of the pXX6 expression plasmid. The RBS is the one from the petE promoter.
 
-## pXX8: pUT18C-hetL-RBS-patS6
+#### pXX8: pUT18C-hetL-RBS-patS6
 
 The open-reading frame of patS6 (encoding for PatS6 peptide: ERGSGR) with extra 350 bp after the stop codon, was amplified using the RBS-patS6 dh fw T18 and RBS-patS6 dh rv T18 infusion primers and cloned into the SalI restriction site of the pXX6 expression plasmid. The RBS is the one from the petE promoter.
 
-## pXX9: hetRhood-pUT18
+#### pXX9: hetRhood-pUT18
 
 The open-reading frame of hetRhood (encoding for HetRhood from Y215 to R296) was amplified using the hetRhood dh fw and hetRhood dh rv primers and cloned into the PstI and EcoRI restriction sites of the pUT18 expression plasmid.
 
-## pXX10: pUT18C-all3256
+#### pXX10: pUT18C-all3256
 
 The open-reading frame of all3256 gene was amplified using the all3256 dh fw T18 and all3256 dh rv primers and cloned into the PstI and EcoRI restriction sites of the pUT18C expression plasmid.
 
-## pXX 11: pUT18C-all4303
+#### pXX 11: pUT18C-all4303
 
 The open-reading frame of all4303 gene was amplified using the all4303 dh fw T18 and all4303 dh rv primers and cloned into the PstI and EcoRI restriction sites of the pUT18C expression plasmid.
 
-## pXX12: pET28a-hetL-his
+#### pXX12: pET28a-hetL-his
 
 The open-reading frame of hetL gene (all3740) was amplified using the hetL pET28 fw and hetL pET28 rv infusion primers and cloned into the XhoI and NcoI restriction sites of the pET28a expression plasmid using the In-Fusion technology (Takara In-Fusion HD Cloning kit).
 
-## pXX13: pRL1272-PpetE-patS
+#### pXX13: pRL1272-PpetE-patS
 
 The open-reading frame of patS gene (asl2301) with extra 700 bp after the stop codon, was amplified using the patS pRL fw and patS pRL rv infusion primers and cloned into the BamHI restriction site of the pRL1272-PpetE replicative plasmid in Nostoc (Takara In-Fusion HD Cloning kit). PpetE stands for: petE promoter.
 
-## pXX14: pRL25T-PpetE-hetL
+#### pXX14: pRL25T-PpetE-hetL
 
 The open-reading frame of the hetL gene (all3740) was amplified using the hetL pRL fw and hetL pRL rv infusion primers and cloned into the BamHI restriction site of the pRL25T-PpetE replicative plasmid in Nostoc (Takara In-Fusion HD Cloning kit).
 
-## pXX15: pRL25T-PpetE-hetLD151A
+#### pXX15: pRL25T-PpetE-hetLD151A
 
 The open-reading frame of the hetL gene mutated to encode for a D151A substitution was amplified using the hetL pRL fw and hetL pRL rv infusion primers with pKT25-hetLD151A as template and cloned into the BamHI restriction site of the pRL25T-PpetE replicative plasmid in Nostoc (Takara In-Fusion HD Cloning kit).
 
-## pSC1: pRL25T-PpatS-hetL
+#### pSC1: pRL25T-PpatS-hetL
 
 The promoter of the patS gene was amplified using PpatS fw and PpatS rv, the hetL coding region was amplified using hetL PpatS fw and hetL PpatS rv. Nostoc genomic DNA was used as template for both amplifications. The two amplicons were cloned into the BamHI restriction site of the pRL25T plasmid using the In-Fusion technology.
 
-## pSC2: pRL25T-PrbcL-hetL
+#### pSC2: pRL25T-PrbcL-hetL
 
 The promoter of the rbcL gene was amplified using PrbcL fw and PrbcL rv, the hetL coding region was amplified using hetL PrbcL fw and hetL PrbcL rv. Nostoc genomic DNA was used as template for both amplifications. The two amplicons were cloned into the BamHI restriction site of the pRL25T plasmid using the In-Fusion technology.
 
-## Protein purification
+### Protein purification
 
 For HetL purification, the BL21DE3 strain containing the pXX12 plasmid was grown until an optical density (OD 600 nm) of 0.6. The expression of hetL was induced by the addition of Isopropyl β-D-1-thiogalactopyranoside (IPTG, SIGMA) of 0.4 mM over night at 16°C. Cells were harvested at 8000 rpm at 4°C during 2 min. The pellet was re-suspended in 25 mL of lysis buffer (50 mM Tris HCl (pH 8), 0.3 M NaCl), and cells were disrupted using French press. After centrifugation at 8000 rpm for 30 min at 4 °C, the supernatant was loaded onto a HisTrap Excel column (GE healthcare) pre-equilibrated with lysis buffer containing 10 mM Imidazole. The column was rinsed with 10 mM and 35 mM Imidazole, both prepared in lysis buffer. Fractions were collected (in 200 mM Imidazole). The Imidazole was eliminated using disposable PD 10 desalting columns (GE Healthcare). The proteins were concentrated using Vivaspin columns (SIGMA) and quantified using the Bradford assay (SIGMA). HetR purification was undergone as previously described (Hu et al., 2015).
 
-## Electrophoretic mobility shift assays (EMSA)
+### Electrophoretic mobility shift assays (EMSA)
 
 The promoter region of the hetP gene (alr2818) was obtained by PCR using PhetP fw and PhetP rv primers. The forward primer was modified at its 5’ end by adding the 6-carboxyfluorescein (6-FAM) dye. Purified HetR (1 µM) and HetL (2–4 µM) proteins, were incubated with the hetP promoter (50 nM) in a buffer containing 10 mM Tris (pH 8), 150 mM potassium chloride, 500 nM EDTA, 0.1% Triton X-100, 12.5% glycerol, 1 mM dithiothreitol and 1 µg DiDC competitor (poly(2′-deoxyinosinic-2′-deoxycytidylic acid) sodium salt), at 4°C in dark for 30 min. The electrophoresis was performed at 250 volts for 60 min. The DNA was revealed using Typhoon FLA 9500 (GE Healthcare Life Sciences). The experiment was repeated three times with independent protein puriﬁcations and one representative result is shown.
 
-## RNA preparation, reverse transcription, and quantitative real-time-PCR
+### RNA preparation, reverse transcription, and quantitative real-time-PCR
 
 RNAs were prepared using the Qiagen RNA extraction kit (Qiagen) following the manufacturer’s instructions. An extra TURBO DNase (Invitrogen) digestion step was performed to eliminate the contaminating DNA. The RNA quality was assessed by tape station system (Agilent). RNAs were quantified spectrophotometrically at 260 nm (NanoDrop 1000; Thermo Fisher Scientific). For cDNA synthesis, 1 µg total RNA and 0.5 μg random primers (Promega) were used with the GoScript Reverse transcriptase (Promega) according to the manufacturer instructions. Quantitative real-time PCR (qPCR) analyses were performed on a CFX96 Real-Time System (Bio-Rad). The reaction volume was 15 μL and the final concentration of each primer was 0.5 μM. The qPCR cycling parameters were 95°C for 2 min, followed by 45 cycles of 95°C for 5 s, 55°C for 60 s. A final melting curve from 65°C to 95°C was added to determine the specificity of the amplification. To determine the amplification kinetics of each product, the fluorescence derived from the incorporation of BRYT Green Dye into the double-stranded PCR products was measured at the end of each cycle using the GoTaq qPCR Master Mix 2X Kit (Promega). The results were analysed using Bio-Rad CFX Maestro software, version 1.1 (Bio-Rad, France). The RNA 16S gene was used as a reference for normalization. All measurements were carried out in triplicate and a biological duplicate was performed for each point. The amplification efficiencies of each primer pairs were 80% to 100%. All the primer pairs used for qPCR are reported in Supplementary file 1.
 
-## Bacterial two hybrid assays
+### Bacterial two hybrid assays
 
 For each construct, the studied proteins were fused to the carboxy terminus of the T25 or T18 domain of CyA, except that HetRhood was fused to the N-terminus of the T18 domain. Bacterial two-hybrid assays were performed following the procedure described by Karimova et al., 1998. Briefly, after co-transforming the BTH101 strain with the two plasmids expressing the T18- and T25- fusions, LB plates containing ampicillin and kanamycin were incubated at 30° C for 2 days. For each assay, 10 independent colonies were inoculated in 3 ml of LB medium supplemented with ampicillin, kanamycin and 0.5 mM IPTG, and incubated at 30°C overnight. ß-galactosidase activity was determined as previously described (Zubay et al., 1972). The values presented are means of three independent assays.
 
-## Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS-PAGE)
+### Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS-PAGE)
 
 Proteins were fractionated by performing SDS-PAGE (4–20%) stained with Coomassie blue (Euromedex, Souffelweyrshim, France). For immunoblot analysis, the proteins were transferred to nitrocellulose membranes before being revealed with anti-Histidine monoclonal antibodies (Qiagen). Immune complexes were detected with anti-rabbit peroxidase-conjugated secondary antibodies (Promega) and enhanced chemiluminescence reagents (Pierce, Illkich, France).
 
-## Synthetic peptides
+### Synthetic peptides
 
 PatS-5 (RGSGR), Pat-6 (ERGSGR) and PatX-6 (HRGTGR) peptides were synthesized by Genecust (https://www.genecust.com/en/).
 
-## Isothermal titration calorimetry (ITC)
+### Isothermal titration calorimetry (ITC)
 
 ITC was performed to demonstrate the interaction of HetR and HetL with PatS peptides. The working buffer for both proteins and peptides was PBS pH 7.4 to avoid buffer mismatch. The experiments were performed at 25°C using the MicroCal PEAQ-ITC (Malvern UK) with 19 injections, first with an initial injection of 0.4 µL followed by 18 injections of 2 µL. The protein ligands were in the cell and the peptide analytes were in the syringe. The reaction was performed with a constant stirring speed of 750 rpm, each injection lasted for 4 s with a 150 s space between each injection. A constant heat control (offset) was removed from the raw data to account for heat dilution before integration. The data were fitted using a ‘One Set of Sites’ model in the PEAQ-ITC Analysis Software. The experiment was repeated two times with independent protein puriﬁcations and one representative result is shown.
 
-## Bio-layer interferometry assays
+### Bio-layer interferometry assays
 
 The BLi machine (BLItz) from FortéBio was used to perform biolayer interferometry to determine the interaction between HetR and HetL. 2.2 µM of biotinylated HetR was loaded onto streptavidin biosensors in PBS. A 30 s baseline in PBS was performed before a 120 s association step with various concentrations of HetL at 2.5, 5, 10 and 20 µM followed by a 120 s dissociation step.
 
 To determine if the PatS-5 and PatS-6 peptides compete with HetL for HetR binding, 10 µM of HetL was incubated five mins with different concentrations of PatS at 0.05, 0.1, 0.5 and 2.5 µM before adding HetL to the bound HetR. All bindings were performed in triplicate, the dissociation constant was obtained using the BLItz Pro Data Analysis software using a global 1:1 fit model.
 
-## Molecular docking simulation
+### Molecular docking simulation
 
 The available atomic coordinates of the hood domain of Nostoc HetR (PDB ID: 4YNL) and HetL (PDB ID: 3DU1) were used as templates for molecular docking simulations. Molecular docking study of the HetR with HetL was performed using the HADDOCK2.2 webserver (http://milou.science.uu.nl/services/HADDOCK2.2/) (van Zundert et al., 2016). The goal was to identify critical residues involved in HetR-HetL complex formation. To define Haddock run restraints, the surface exposed residues of both HetR and HetL were considered as active residues directly involved in the interaction. For both structures, the surface exposed residues were selected manually using PyMol (Supplementary file 1). Two independent docking simulations were performed. For each run, 10 clusters were generated, and classified based on their HADDOCK score. The best model of each cluster was analyzed by PDBePISA to explore their binding interfaces.

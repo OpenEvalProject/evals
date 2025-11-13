@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Increasing Neisseria gonorrhoeae resistance to ceftriaxone, the last antibiotic recommended for empiric gonorrhea treatment, poses an urgent public health threat. However, the genetic basis of reduced susceptibility to ceftriaxone is not completely understood: while most ceftriaxone resistance in clinical isolates is caused by target site mutations in penA , some isolates lack these mutations. We show that penA -independent ceftriaxone resistance has evolved multiple times through distinct mutations in rpoB and rpoD . We identify five mutations in these genes that each increase resistance to ceftriaxone, including one mutation that arose independently in two lineages, and show that clinical isolates from multiple lineages are a single nucleotide change from ceftriaxone resistance. These RNA polymerase mutations cause large-scale transcriptional changes without altering susceptibility to other antibiotics, reducing growth rate, or deranging cell morphology. These results underscore the unexpected diversity of pathways to resistance and the importance of continued surveillance for novel resistance mutations.
+Increasing Neisseria gonorrhoeae resistance to ceftriaxone, the last antibiotic recommended for empiric gonorrhea treatment, poses an urgent public health threat. However, the genetic basis of reduced susceptibility to ceftriaxone is not completely understood: while most ceftriaxone resistance in clinical isolates is caused by target site mutations in penA, some isolates lack these mutations. We show that penA-independent ceftriaxone resistance has evolved multiple times through distinct mutations in rpoB and rpoD. We identify five mutations in these genes that each increase resistance to ceftriaxone, including one mutation that arose independently in two lineages, and show that clinical isolates from multiple lineages are a single nucleotide change from ceftriaxone resistance. These RNA polymerase mutations cause large-scale transcriptional changes without altering susceptibility to other antibiotics, reducing growth rate, or deranging cell morphology. These results underscore the unexpected diversity of pathways to resistance and the importance of continued surveillance for novel resistance mutations.
 
 ## Introduction
 
@@ -41,7 +41,7 @@ Here, we employed an experimental transformation-based approach to identify the 
 
 ## Results
 
-## A single missense mutation in rpoB is the genetic basis for reduced ceftriaxone susceptibility in the clinical isolate GCGS1095
+### A single missense mutation in rpoB is the genetic basis for reduced ceftriaxone susceptibility in the clinical isolate GCGS1095
 
 To identify the genetic basis of reduced susceptibility in GCGS1095, we transformed a ceftriaxone susceptible (CROS) recipient strain with genomic DNA from GCGS1095. We reasoned that minimizing the genetic distance between the resistant donor and susceptible recipient would improve the likelihood of identifying the causative locus for CRORS and would reduce potentially confounding effects of divergent genomic backgrounds. Consequently, we selected GCGS0457, a close phylogenetic neighbor of GCGS1095 (Figure 1), as the CROS recipient for these experiments. Transformants were selected on CRO plates, and those that acquired the CRORS phenotype were characterized by whole genome sequencing to determine which variants they had inherited from GCGS1095.
 
@@ -53,11 +53,130 @@ We recovered multiple CRORS transformants. GCGS0457 did not develop spontaneous 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/51407/elife-51407-fig2-v2.jpg)
 
-**Figure 2.:** RS-associated RNA polymerase mutations.(A) Alignment of mutant RNA polymerase alleles associated with reduced ceftriaxone susceptibility. (B) Crystal structure of the RNA polymerase holoenzyme from E. coli by Zuo et al. (PDB 4YLO) (Zuo and Steitz, 2015), showing the location of the residues homologous to N. gonorrhoeae RpoB R201 (magenta), G158 (yellow), and P157 (orange). The flexible region of σ70 1.1 that includes the variant positions of rpoD1 and rpoD1 is not included in this structure, but is predicted to interact with this region of RpoB (Murakami, 2013).
+**Figure 2.:** (A) Alignment of mutant RNA polymerase alleles associated with reduced ceftriaxone susceptibility. (B) Crystal structure of the RNA polymerase holoenzyme from E. coli by Zuo et al. (PDB 4YLO) (Zuo and Steitz, 2015), showing the location of the residues homologous to N. gonorrhoeae RpoB R201 (magenta), G158 (yellow), and P157 (orange). The flexible region of σ70 1.1 that includes the variant positions of rpoD1 and rpoD1 is not included in this structure, but is predicted to interact with this region of RpoB (Murakami, 2013).
 
 As RNA polymerase mutations have not been associated with cephalosporin resistance in Neisseria, we tested whether the rpoB1 mutation is sufficient to confer CRORS. We performed directed transformation of GCGS0457 with a ~ 1.5 kilobase PCR product surrounding the variant position of rpoB1. With the exception of the single rpoB G602A nucleotide change, the sequence of this PCR product was identical to the parental GCGS0457 sequence. Transformation with the rpoB1 allele amplified from GCGS1095 yielded multiple CRORS transformants, whereas transformation with control PCR products amplified from a strain containing wild-type rpoB yielded none. Sanger sequencing confirmed the presence of the expected SNP in each resistant transformant. Representative CRORS transformants were further examined by whole genome sequencing, which ruled out spontaneous mutations. The CRO MIC of the rpoB1 transformant strain GCGS0457 RpoBR201H was 0.19 μg/mL, a more than ten-fold increase from recipient strain GCGS0457 (CRO MIC 0.012 μg/mL) (Table 1). This transformant MIC is similar to the MIC of the parental CRORS isolate GCGS1095 (Table 1), indicating that introduction of this SNP is sufficient to fully recapitulate the CRORS phenotype in the GCGS0457 background.
 
-## RNA polymerase mutations explain CRORS in other clinical isolates
+**Table 1.**
+ Selected strains, phenotypic ceftriaxone susceptibility, and relevant genotypes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>strain</th>
+      <th>CRO MIC (μg/mL)</th>
+      <th>penA (PBP2)</th>
+      <th>ponA (PBP1)</th>
+      <th>PorB 120/121</th>
+      <th>RpoB</th>
+      <th>RpoD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GCGS0457</td>
+      <td>0.012</td>
+      <td>Type IX non-mosaic (NG STAR 9.001)</td>
+      <td>421P</td>
+      <td>120G/121V</td>
+      <td>wildtype</td>
+      <td>wildtype</td>
+    </tr>
+    <tr>
+      <td>GCGS1095</td>
+      <td>0.19</td>
+      <td>Type IX non-mosaic (NG STAR 9.001)</td>
+      <td>421P</td>
+      <td>120N/121A</td>
+      <td>R201H (rpoB1)</td>
+      <td>wildtype</td>
+    </tr>
+    <tr>
+      <td>GCGS1014</td>
+      <td>0.125</td>
+      <td>Type IX non-mosaic (NG STAR 9.001)</td>
+      <td>421P</td>
+      <td>120D/121A</td>
+      <td>wildtype</td>
+      <td>E98K (rpoD1)</td>
+    </tr>
+    <tr>
+      <td>GCGS1013</td>
+      <td>0.19</td>
+      <td>Type IX non-mosaic (NG STAR 9.001)</td>
+      <td>421P</td>
+      <td>120G/121A</td>
+      <td>wildtype</td>
+      <td>Δ92–95 (rpoD2)</td>
+    </tr>
+    <tr>
+      <td>GCPH44</td>
+      <td>0.125</td>
+      <td>Type II non-mosaic (NG STAR 2.001)</td>
+      <td>421L</td>
+      <td>120G/121A</td>
+      <td>H553N</td>
+      <td>Δ92–95 (rpoD2)</td>
+    </tr>
+    <tr>
+      <td>GCGS0457 rpoB1</td>
+      <td>0.19</td>
+      <td>Type IX non-mosaic (NG STAR 9.001)</td>
+      <td>421P</td>
+      <td>120G/121V</td>
+      <td>R201H (rpoB1)</td>
+      <td>wildtype</td>
+    </tr>
+    <tr>
+      <td>GCGS0457 rpoD1</td>
+      <td>0.125</td>
+      <td>Type IX non-mosaic (NG STAR 9.001)</td>
+      <td>421P</td>
+      <td>120G/121V</td>
+      <td>wildtype</td>
+      <td>E98K (rpoD1)</td>
+    </tr>
+    <tr>
+      <td>GCGS0457 rpoD2</td>
+      <td>0.19</td>
+      <td>Type IX non-mosaic (NG STAR 9.001)</td>
+      <td>421P</td>
+      <td>120G/121V</td>
+      <td>wildtype</td>
+      <td>Δ92–95 (rpoD2)</td>
+    </tr>
+    <tr>
+      <td>GCGS0364</td>
+      <td>0.023</td>
+      <td>Type IX non-mosaic (NG STAR 9.001)</td>
+      <td>421P</td>
+      <td>120K/121D</td>
+      <td>wildtype</td>
+      <td>wildtype</td>
+    </tr>
+    <tr>
+      <td>GCGS0364 rpoB2</td>
+      <td>0.5</td>
+      <td>Type IX non-mosaic (NG STAR 9.001)</td>
+      <td>421P</td>
+      <td>120K/121D</td>
+      <td>G158V (rpoB2)</td>
+      <td>wildtype</td>
+    </tr>
+    <tr>
+      <td>GCGS0364 rpoB3</td>
+      <td>0.75</td>
+      <td>Type IX non-mosaic (NG STAR 9.001)</td>
+      <td>421P</td>
+      <td>120K/121D</td>
+      <td>P157L (rpoB3)</td>
+      <td>wildtype</td>
+    </tr>
+  </tbody>
+</table>
+
+### RNA polymerase mutations explain CRORS in other clinical isolates
 
 GCGS1014 is a phylogenetic neighbor of GCGS1095 that also has unexplained CRORS (Figure 1; Table 1). The close phylogenetic relationship between these isolates led us to hypothesize that they would share the same mechanism of CRORS. However, the GCGS1014 isolate lacks the rpoB1 allele identified in GCGS1095. In fact, among the 1102 sequenced isolates in the GISP collection, the rpoB1 allele is unique to GCGS1095 (Supplementary file 1).
 
@@ -67,25 +186,135 @@ As the CRORS phenotypes in GCGS1095 and GCGS1014 are caused by distinct RNAP mut
 
 The amino acids deleted in the rpoD2 allele (Δ92–95) are in a similar region of the RpoD protein as the single amino acid change in the rpoD1 allele (E98K) (Figure 2A). This flexible portion of the σ70 1.1 domain is not included in published RNA polymerase holoenzyme crystal structures. Modeling of E. coli RNAP predicts that σ70 1.1 interacts with the DNA channel formed by the β subunit encoded by rpoB prior to open complex formation (Murakami, 2013). In E. coli, the RpoB residue homologous to the substituted amino acid in rpoB1 (E. coli RpoB R197) is located on the surface of the β lobe structure that makes up this same channel (Figure 2B). Taken together, these results demonstrate that RNAP-mediated CRORS has arisen multiple times in clinical isolates of N. gonorrhoeae, and that these different mutations affect a similar region of the RNAP holoenzyme. They may therefore act via a similar mechanism to effect phenotypic CRORS.
 
-## Clinical isolates from multiple lineages can achieve high-level CRORS via a single nucleotide change in rpoB
+### Clinical isolates from multiple lineages can achieve high-level CRORS via a single nucleotide change in rpoB
 
 The rpoB1 and rpoD1 alleles each differ from wild-type by a single nucleotide. The ability of these mutations to cause high-level CRORS when introduced into the susceptible strain GCGS0457 indicates that some gonococcal isolates are a single-step mutation from CRORS. Because three of the four clinical isolates we identified with RNAP-mediated CRORS are clustered in one part of the gonococcal phylogeny (Figure 1), we tested whether acquisition of CRORS via this pathway is limited to strains within this particular clade – which would suggest that one or more genetic background factors are required – or whether RNAP mutation represents a broadly accessible evolutionary trajectory to CRORS.
 
 To address this question, we sought to transform genetically diverse recipient strains to CRORS with the rpoB1 allele. In a panel of 17 clinical isolates from the GISP collection, we found five additional recipients dispersed throughout the phylogeny that acquired phenotypic CRORS following directed transformation with rpoB1 (Figure 1; Supplementary file 1). The remaining 12 isolates, as well as the laboratory strain 28BL, did not readily produce CRORS rpoB1 transformants after 1–2 transformation attempts. These results indicate that genetic background compatibility with this resistance mechanism is not limited to a single gonococcal lineage, to recipients with particular alleles of any RNA polymerase component (Supplementary file 1), or to recipients with variants in ponA or mtrR associated with β-lactam resistance (Eyre et al., 2017) (Supplementary file 2). As transformation efficiency in these diverse isolates is variable, the failure to recover CRORS transformants from any particular strain following a single transformation attempt may reflect low efficiency rather than an absolute genetic incompatibility with an RNAP-mediated resistance mechanism. The successful transformation of rpoB1 into these five additional isolates therefore represents a lower bound on, rather than exact count of, the number of isolates in this panel that can develop resistance via this pathway.
 
-## A clinical isolate develops high-level CRORS in vitro through spontaneous rpoB mutation
+### A clinical isolate develops high-level CRORS in vitro through spontaneous rpoB mutation
 
 While screening isolates for genetic compatibility with rpoB-mediated CRORS in the directed transformation experiments described above, we tested isolates in parallel for spontaneous development of CRORS. We found that the CROS isolate GCGS0364, located in a similar part of the phylogeny as the resistant isolates GCGS1095, GCGS1014, and GCGS1013 (Figure 1), produced stably CRORS derivatives when exposed to CRO in vitro. Sanger sequencing of the rpoB locus in two of these derivatives identified two different spontaneous rpoB mutations: rpoB2 (nucleotide change C470T, amino acid change P157L) and rpoB3 (nucleotide change G473T, amino acid change G158V) (Figure 2A). These de novo RpoB mutations are predicted to occur in the same β-sheet as the rpoB1 variant position (R201H) identified in GCGS1095 (Figure 2B). Directed transformation of rpoB2 or rpoB3 into the parental (CROS) GCGS0364 isolate conferred phenotypic CRORS, increasing the CRO MIC more than 20-fold from 0.023 μg/mL to 0.5–0.75 μg/mL (Table 1).
 
-## RNAP-mediated CRORS acts via a cephalosporin-specific mechanism
+### RNAP-mediated CRORS acts via a cephalosporin-specific mechanism
 
 Becasue optimal RNA polymerase functionality is required for bacterial fitness, we tested the hypothesis that these RNAP mutations are not specific cephalosporin resistance mutations, but instead cause a slow-growth or general stress response phenotype that nonspecifically increases resistance to diverse classes of antimicrobial compounds.
 
 As expected, the rpoB1, rpoD1, and rpoD2 alleles conferred reduced susceptibility to ceftriaxone as well as cefixime (another third-generation cephalosporin) when transformed into the CROS recipient GCGS0457. However, these alleles did not affect susceptibility to antimicrobial drugs that do not target the cell wall, including ciprofloxacin, tetracycline, azithromycin, and rifampicin. Surprisingly, these mutations also failed to confer resistance to the non-cephalosporin β-lactams penicillin and ertapenem. The apparent cephalosporin specificity of these RNAP mutations in the GCGS0457 background is consistent with the antibiotic susceptibility profiles of the three CRORS clinical isolates in which they were first identified (GCGS1095 for rpoB1, GCGS1014 for rpoD1, and GCGS1013 for rpoD2) (Table 2).
 
+**Table 2.**
+ Antibiotic susceptibility profiles of CRORS strains with RNAP mutations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Strain</th>
+      <th colspan="8">MIC (μg/ml)</th>
+    </tr>
+    <tr>
+      <th>CRO</th>
+      <th>CFX</th>
+      <th>PEN</th>
+      <th>EPM</th>
+      <th>AZI</th>
+      <th>TET</th>
+      <th>CIP</th>
+      <th>RIF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GCGS0457</td>
+      <td>0.012</td>
+      <td>0.016</td>
+      <td>2</td>
+      <td>0.016</td>
+      <td>0.25</td>
+      <td>1</td>
+      <td>≤0.015</td>
+      <td>0.125</td>
+    </tr>
+    <tr>
+      <td>GCGS1095</td>
+      <td>0.19</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.032</td>
+      <td>0.5</td>
+      <td>1</td>
+      <td>≤0.015</td>
+      <td>≤0.0625</td>
+    </tr>
+    <tr>
+      <td>GCGS1014</td>
+      <td>0.125</td>
+      <td>0.5</td>
+      <td>1.5</td>
+      <td>0.032</td>
+      <td>0.25</td>
+      <td>1</td>
+      <td>≤0.015</td>
+      <td>≤0.0625</td>
+    </tr>
+    <tr>
+      <td>GCGS1013</td>
+      <td>0.19</td>
+      <td>0.5</td>
+      <td>1.5</td>
+      <td>0.023</td>
+      <td>0.5</td>
+      <td>1</td>
+      <td>≤0.015</td>
+      <td>≤0.0625</td>
+    </tr>
+    <tr>
+      <td>GCGS0457 RpoBR201H</td>
+      <td>0.19</td>
+      <td>&gt;0.5</td>
+      <td>2</td>
+      <td>0.047</td>
+      <td>0.25</td>
+      <td>1</td>
+      <td>≤0.015</td>
+      <td>≤0.0625</td>
+    </tr>
+    <tr>
+      <td>GCGS0457 RpoDE98K</td>
+      <td>0.125</td>
+      <td>0.5</td>
+      <td>1.5</td>
+      <td>0.023</td>
+      <td>0.25</td>
+      <td>1</td>
+      <td>≤0.015</td>
+      <td>≤0.0625</td>
+    </tr>
+    <tr>
+      <td>GCGS0457 RpoDΔ92-95</td>
+      <td>0.19</td>
+      <td>0.5</td>
+      <td>2</td>
+      <td>0.023</td>
+      <td>0.25</td>
+      <td>1</td>
+      <td>≤0.015</td>
+      <td>≤0.0625</td>
+    </tr>
+  </tbody>
+</table>
+
 GCGS0457 rpoB1 and GCGS0457 rpoD1 transformants were further examined for evidence of a slow growth phenotype that might increase antibiotic tolerance. When grown on GCB agar (Difco), neither of these transformants had a reduced growth rate compared to the parental GCGS0457 strain (Figure 3A). Furthermore, the rpoB1 and rpoD1 transformants had no gross defects in cell morphology by transmission electron microscopy (TEM) (Figure 3B), although transformants were slightly smaller than the parental GCGS0457 strain (Figure 3—figure supplement 1). Taken together, these results do not support the hypothesis that RNAP mutations reduce CRO susceptibility via a slow growth or nonspecific tolerance phenotype.
 
-## CRORS-associated RNAP mutations induce widespread transcriptional changes
+![Figure 3.](https://cdn.elifesciences.org/articles/51407/elife-51407-fig3-v2.jpg)
+
+**Figure 3.:** (A) Growth of GCGS0457 and RNAP mutant transformants on solid GCB agar (mean and standard deviation of three technical replicates shown, representative of two independent experiments). RNAP mutations do not result in a growth rate defect. (B) Transmission electron micrographs of GCGS0457 and RNAP mutant transformants. CRORS transformants are slightly smaller than the parental GCGS0457 strain, but are otherwise morphologically similar.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51407/elife-51407-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** 100–105 cellular cross sections from TEM images were manually measured in ImageJ to calculate the (A) cross-sectional area and (B) eccentricity of cells from the CROS strain GCGS0457 and its CRORS transformants GCGS0457 RpoDE98K and GCGS0457 RpoBR201H. The cross-sectional area of CRORS transformant cells is slightly smaller (mean area: 0.585 μm2 for GCGS0457 RpoDE98K; 0.621 μm2 for GCGS0457 RpoBR201H) than cells of the parental strain GCGS0457 (mean area 0.693 μm2; p=3.977×10−5 compared to GCGS0457 RpoDE98K and p=0.00436 compared to GCGS0457 RpoBR201H by Welch’s t-test). The degree of eccentricity in the CRO cells is not significantly different between these populations.
+
+### CRORS-associated RNAP mutations induce widespread transcriptional changes
 
 To measure the functional effect of the rpoB1 and rpoD1 alleles on RNA polymerase, we characterized the transcriptional profiles of the CRORS isolates GCGS1095 (rpoB1) and GCGS1014 (rpoD1) and the susceptible isolate GCGS0457 by RNA-seq. The transcriptional profiles of the CRORS isolates were similar to one another but distinct from GCGS0457 (Figure 4—figure supplement 1), with 1337 and 1410 annotated ORFs significantly altered in abundance, respectively. The transcriptomic differences we observe may partly reflect the genetic distance between these isolates (Wadsworth et al., 2019), as the resistant strains GCGS1095 and GCGS1014 are more closely related to one another than they are to GCGS0457. We therefore compared GCGS0457 to its isogenic CRORS transformants GCGS0457 RpoBR201H and GCGS0457 RpoDE98K. The rpoB1 and rpoD1 alleles each profoundly altered the transcriptional profile of GCGS0457: 1278 annotated ORFs in GCGS0457 RpoDE98K and 1218 annotated ORFs in the GCGS0457 RpoBR201H were differentially expressed relative to the parental GCGS0457 strain. The transcriptional profiles of the two transformants were very similar to one another (Figure 4—figure supplement 1), indicating that these different mutations have similar functional consequences. Overall, a total of 890 annotated ORFs were differentially expressed in all four CRORS strains (the two CRORS isolates and two transformants in the GCGS0457 background) compared to GCGS0457. The vast majority of the transcriptional changes are small in magnitude: 805/890 (90%) are less than 2-fold differentially expressed in one or more of the CRORS strains.
 
@@ -93,17 +322,33 @@ Altered expression of resistance-associated genes such as efflux pumps and β-la
 
 In vitro evolution studies that evolved cephalosporin resistance in N. gonorrhoeae identified inactivating mutations in the type IV pilus pore subunit PilQ (Johnson et al., 2014; Zhao et al., 2005), although similar pilQ mutations have not been identified in clinical isolates, presumably because colonization requires pilus-mediated adhesion to epithelial cells (Kellogg et al., 1963; Rudel et al., 1992). Notably, pilQ transcription is reduced in the GCGS0457 rpoB1 and GCGS0457 rpoD1 transformants, as well as in the CRORS isolates GCGS1095 and GCGS1014 (Figure 4—figure supplements 2 and 3). The effect of hypomorphic pilQ expression on cephalosporin susceptibility has not been described, but it is possible that reducing pilQ transcript levels may confer the benefits of inactivating pilQ mutations without altogether eliminating pilus-mediated attachment and colonization.
 
-## CRORS-associated RNAP mutations alter the abundance of cell wall biosynthesis enzymes
+### CRORS-associated RNAP mutations alter the abundance of cell wall biosynthesis enzymes
 
 Since ESCs, like other β-lactams, block cell wall biosynthesis by covalently inhibiting penicillin-binding proteins (PBPs), we examined how CRORS-associated RNAP mutations affect expression of enzymes in this target pathway. N. gonorrhoeae encodes four known PBPs (Obergfell et al., 2018; Sauvage et al., 2008): the essential high-molecular weight bifunctional transpeptidase/transglycosylase PBP1 (encoded by ponA); the essential high-molecular weight transpeptidase PBP2 (encoded by penA) (Zhao et al., 2009), which is the primary target of ESCs; and the nonessential carboxypeptidases PBP3 (encoded by dacB) and PBP4 (encoded by pbpG). In addition to these canonical PBPs, N. gonorrhoeae genomes include DacC (encoded by dacC), a third putative low-molecular weight carboxypeptidase that lacks conserved active site motifs (Obergfell et al., 2018). A homologue of the L,D-transpeptidase YnhG is also present in the genome, although it has not been reported to be functional in N. gonorrhoeae.
 
 Increased expression of drug targets can lead to decreased drug susceptibility, but CRORS-associated RNAP mutations did not increase mRNA or protein abundance of the CRO target PBP2 (Figure 4). Transcription of the putative L,D-transpeptidase gene ynhG is also unchanged in the CRORS strains (Figure 4—figure supplement 2). By contrast, PBP1 (ponA) is upregulated in each of the CRORS strains compared to GCGS0457, while expression of PBP3, pbpG, and dacC is decreased in these strains (Figure 4A–B). Similar expression patterns were observed in the presence of sub-inhibitory CRO (Figure 4—figure supplement 3).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/51407/elife-51407-fig4-v2.jpg)
+
+**Figure 4.:** (A) Normalized abundance of transcripts encoding penicillin binding proteins (PBPs) in parental isolates (GCGS0457, GCGS1095, GCGS1014) and RNAP mutant transformants in the GCGS0457 background, measured by RNAseq. (B) Relative protein abundance of PBP1, PBP2, and PBP3, as measured by bocillin-FL labeling. Total bocillin-FL signal for each strain was set at 100%. The relative contribution of each PBP to that signal is shown here. PBP4 protein was not observed on these gels, in agreement with previous reports (Stefanova et al., 2003).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51407/elife-51407-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The first two principle components are shown for transcriptomic data collected from the CROS isolate GCGS0457, the CRORS isolates GCGS1095 and GCGS1014, and the CRORS transformants GCGS0457 RpoDE98K and GCGS0457 RpoBR201H (three biological replicates/strain). Replicates from both CRORS transformants cluster tightly, despite having different RNAP mutations.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/51407/elife-51407-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Normalized abundance of various transcripts in parental isolates (GCGS0457, GCGS1095, GCGS1014) and RNAP mutant transformants in the GCGS0457 background. Shown: mtrC, mtrD, and mtrE, which encode the components of the Mtr efflux pump; mtrR, which encodes the transcriptional repressor of the mtrCDE operon; ynhG, a putative L,D-transpeptidase; and pilQ, which encodes the pilus pore subunit PilQ.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/51407/elife-51407-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Normalized abundance of various transcripts in parental isolates (GCGS0457, GCGS1095, GCGS1014) and RNAP mutant transformants, exposed to 0.008 μg/mL CRO for 90 min. Shown: mtrC, mtrD, and mtrE, which encode the components of the Mtr efflux pump; mtrR, which encodes the transcriptional repressor of the mtrCDE operon; ynhG, a putative L,D-transpeptidase; pilQ, which encodes the pilus pore subunit PilQ; and transcripts for each of the penicillin-binding proteins.
+
 These altered PBP expression patterns are reflected in the cell wall structure of the CRORS strains: reduced expression of the carboxypeptidases results in more peptidoglycan with pentapeptide stems (Figure 5 and Supplementary file 3), in agreement with reported structural changes of cell walls from strains lacking the DacB carboxypeptidase (Obergfell et al., 2018). The increased expression of PBP1 in these RNAP mutants does not appear to increase the abundance of crosslinked peptidoglycan (Figure 5 and Supplementary file 3).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/51407/elife-51407-fig5-v2.jpg)
 
-**Figure 5.:** RS-associated RNA polymerase mutations on cell wall structure.Relative abundance of muropeptide peaks in cell wall digests of GCGS0457 and its CRORS derivatives, GCGS0457 RpoDE98K and GCGS0457 RpoBR201H. Transformant cell walls contain a higher proportion of peptidoglycan with pentapeptide stems (peaks 4, 8, 15b, and 16). Relative abundance values for each muropeptide species (right) were calculated by extracting the peak mass from the total ion chromatogram, integrating the resulting peak area, and dividing by the sum of all of the peak areas within each sample. Shown: mean and standard deviation from 3 biological replicates (data from individual replicates can be found in Figure 5—source data 1). Muropeptide species that are significantly altered in abundance each transformant compared to the parental strain GCGS0457 are indicated in bold (p<0.05 by two-tailed t test). See Supplementary file 3 for a list of all muropeptide masses detected.Figure 5—source data 1.
+**Figure 5.:** Relative abundance of muropeptide peaks in cell wall digests of GCGS0457 and its CRORS derivatives, GCGS0457 RpoDE98K and GCGS0457 RpoBR201H. Transformant cell walls contain a higher proportion of peptidoglycan with pentapeptide stems (peaks 4, 8, 15b, and 16). Relative abundance values for each muropeptide species (right) were calculated by extracting the peak mass from the total ion chromatogram, integrating the resulting peak area, and dividing by the sum of all of the peak areas within each sample. Shown: mean and standard deviation from 3 biological replicates (data from individual replicates can be found in Figure 5—source data 1). Muropeptide species that are significantly altered in abundance each transformant compared to the parental strain GCGS0457 are indicated in bold (p<0.05 by two-tailed t test). See Supplementary file 3 for a list of all muropeptide masses detected.
 
 ## Discussion
 
@@ -121,53 +366,364 @@ This result has important implications regarding the biology underlying cephalos
 
 ## Materials and methods
 
-## Bacterial strains and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Neisseria gonorrhoeae)</td>
+      <td>penA</td>
+      <td>Neisseria gonorrhoeae PubMLST</td>
+      <td>NEIS1753</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Neisseria gonorrhoeae)</td>
+      <td>ponA</td>
+      <td>Neisseria gonorrhoeae PubMLST</td>
+      <td>NEIS0414</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Neisseria gonorrhoeae)</td>
+      <td>rpoB</td>
+      <td>Neisseria gonorrhoeae PubMLST</td>
+      <td>NEIS0123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Neisseria gonorrhoeae)</td>
+      <td>rpoD</td>
+      <td>Neisseria gonorrhoeae PubMLST</td>
+      <td>NEIS1466</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0457</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS1095</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS1014</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS1013</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0364</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0092</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0126</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0161</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0249</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0275</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0336</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0353</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0374</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0465</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0489</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0497</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0501</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0524</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0560</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0576</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0698</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCGS0769</td>
+      <td>(Grad et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>GCPH44</td>
+      <td>(De Silva et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neisseria gonorrhoeae)</td>
+      <td>28BL</td>
+      <td>Gift of S. Johnson</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ceftriaxone disodium salt hemi(heptahydrate)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. # C5793</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ceftriaxone Etest</td>
+      <td>bioMérieux</td>
+      <td>SKU # 412302 and 412300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin G Etest</td>
+      <td>bioMérieux</td>
+      <td>SKU # 412262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ertapenem Etest</td>
+      <td>bioMérieux</td>
+      <td>SKU # 531640</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cefixime trihydrate</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. # 18588</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Azithromycin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. # PHR1088</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetracycline hydrochloride</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. # T7660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ciprofloxacin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. # 17850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rifampicin</td>
+      <td>Chem-Impex</td>
+      <td>Cat. # 00260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bocillin FL penicillin, sodium salt</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. # B13233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RpoB-US</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGCCGTCTGAATATCAGATTGATGCGTACCGTT</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>RpoB-DS</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGTACTCGACGGTTGCCCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>RpoD-US</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AACTGCTCGGACAGGAAGCG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>RpoD-DS</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGCGTTCGAGTTTGCGGATGTT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and culture conditions
 
 Strains are presented in Supplementary file 4. Metadata for the 1102 GISP isolates included in Figure 1 was previously published (Grad et al., 2016). Except where otherwise specified, N. gonorrhoeae was cultured on GCB agar (Difco) with Kellogg’s supplements (GCB-K) (Kellogg et al., 1963) at 37°C in a 5% CO2 atmosphere. Antibiotic susceptibility testing of N. gonorrhoeae strains was performed on GCB media supplemented with 1% IsoVitaleX (Becton Dickinson) via agar dilution (for cefixime, azithromycin, tetracycline, ciprofloxacin, and rifampicin) or Etest (bioMérieux) (for ceftriaxone, penicillin G, and ertapenem). A CRORS breakpoint of ≥0.125 μg/mL was used, in accordance with the GISP breakpoint (Kirkcaldy et al., 2016).
 
-## Transformation of reduced cephalosporin susceptibility with genomic DNA
+### Transformation of reduced cephalosporin susceptibility with genomic DNA
 
 The CROS recipient strain GCGS0457 was transformed with genomic DNA from GCGS1014 and GCGS1095. Transformations were conducted in liquid culture as described (Morse et al., 1986; Wadsworth et al., 2018). Briefly, piliated N. gonorrhoeae was suspended in GCP medium (15 g/L protease peptone 3, 1 g/L soluble starch, 4 g/L dibasic K2HPO4, 1 g/L monobasic KH2PO4, 5 g/L NaCl) with Kellogg’s supplement, 10 mM MgCl2, and approximately 100 ng genomic DNA. Suspensions were incubated for 10 min at 37°C with 5% CO2. Transformants were allowed to recover on nonselective agar for 4–5 hr. After recovery, transformants were plated on GCB-K ceftriaxone gradient agar plates, which were prepared by allowing a 40 μL droplet of 5 μg/mL ceftriaxone to dry onto a GCB-K agar plate. Transformations performed with GCGS0457 genomic DNA served as controls to monitor for spontaneous CRORS mutation. After outgrowth at 37°C in 5% CO2, colonies growing within the ceftriaxone zone of inhibition were subcultured for further analysis.
 
-## Transformation of RNA polymerase mutations
+### Transformation of RNA polymerase mutations
 
 ~1.5 kb PCR fragments surrounding the rpoB and rpoD loci of interest were amplified using the primer pairs RpoB-US (5’-ATGCCGTCTGAATATCAGATTGATGCGTACCGTT-3’) and RpoB-DS (5’-CGTACTCGACGGTTGCCCAAG-3’) or RpoD-US (5’-AACTGCTCGGACAGGAAGCG-3’) and RpoD-DS (5’-CGCGTTCGAGTTTGCGGATGTT-3’). The 12 bp DNA uptake sequence (DUS) for N. gonorrhoeae (Ambur et al., 2007) was added to the 5’ end of the RpoB-US primer (underlined) to enhance transformation efficiency with the PCR product; a DUS was not added to the RpoD-US or RpoD-DS primers, as the PCR product amplified by these primers includes two endogenous DUS regions. CROS recipient strains were transformed with 200–300 ng purified PCR products and transformants were selected for CRORS as above. Transformation reactions performed with wildtype alleles (rpoB+ from GCGS1014; rpoD+ from GCGS1095) served as controls to monitor for spontaneous CRORS mutation.
 
 The following isolates were used for experiments examining the compatibility of rpoB1-mediated CRORS with diverse genetic backgrounds: GCGS0092, GCGS0275, GCGS0336, GCGS0465, GCGS0524 (all successfully); and GCGS0126, GCGS0161, GCGS0249, GCGS0353, GCGS0374, GCGS0489, GCGS0497, GCGS0501, GCGS0560, GCGS0576, GCGS0698, and GCGS0769. CRO susceptibility and RNA polymerase allele information for each of these isolates is available in Supplementary file 1.
 
-## Sequencing and analysis
+### Sequencing and analysis
 
 Following undirected transformation of GCGS0457 with GCGS1014 or GCGS1095 genomic DNA, or directed transformation of GCGS0457 with PCR products, CRORS transformants were analyzed by whole genome sequencing. Genomic DNA of transformants was purified with the PureLink Genomic DNA Mini kit (Life Technologies) and sequencing libraries were prepared as described Kim et al. (2017). Paired-end sequencing of these libraries was performed on an Illumina MiniSeq (Illumina). Reads were aligned to the de novo assembly of the GCGS0457 genome (European Nucleotide Archive, accession number ERR855051) using bwa v0.7.8 (Li, 2013), and variant calling was performed with pilon v1.22 (Walker et al., 2014).
 
-## Whole genome assembly and annotation
+### Whole genome assembly and annotation
 
 Whole genome sequencing reads from the GISP collection were assembled using Velvet (Zerbino and Birney, 2008) as previously described Grad et al. (2016). Spades v 3.12 (Bankevich et al., 2012) was used for de novo assembly of GCPH44. Contigs were corrected by mapping reads back to the assembly (--careful), and contigs with less than 10X coverage or fewer than 500 nucleotides were removed. Reads were also mapped to the reference genome NCCP11945 (NC_011035.1) with bwa mem v0.7.15 (Li, 2013). Variants were identified with Pilon v 1.16 (Walker et al., 2014) using a minimum depth of 10 and minimum mapping quality of 20. SNPs, small deletions, and uncertain positions were incorporated into the reference genome to create pseudogenomes. For each isolate in the GISP collection and in the United Kingdom collection (De Silva et al., 2016), the sequence of RNA polymerase components was identified using BLASTn (ncbi-blast v2.2.30) (Supplementary file 1).
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Recombinant regions of the pseudogenome alignment were detected by Gubbins (Croucher et al., 2015), and the maximum likelihood phylogenetic tree was estimated from this masked alignment using RAxML (Stamatakis, 2014). The phylogeny was visualized using ITOL (Letunic and Bork, 2019).
 
-## Growth curves
+### Growth curves
 
 Bacterial cells grown overnight on GCB-K plates were suspended in tryptic soy broth to OD600 0.01. Three replicate GCB-K plates per time point were inoculated with 0.1 mL of this suspension and incubated at 37°C with 5% CO2. At each time point, the lawn of bacterial growth from each of three replicate plates was suspended in tryptic soy broth. Serial dilutions were plated on GCB-K to determine total CFUs per plate. CFU counts were normalized to the initial inoculum density (CFUs measured at time 0) for each replicate.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Bacterial cells grown overnight on GCB-K plates were suspended in liquid GCP medium with 1% Kellogg’s supplement and 0.042% NaHCO3 to OD600 0.1. Suspensions were incubated at 37°C with aeration for 2 hr to allow cultures to return to log phase. Cell pellets were collected by centrifugation and fixed for at least two hours at room temperature in 0.2M cacodylate buffer with 2.5% paraformaldehyde, 5% glutaraldehyde, and 0.06% picric acid. Fixed pellets were washed in 0.1M cacodylate buffer and postfixed with 1% Osmiumtetroxide (OsO4)/1.5% Potassiumferrocyanide (KFeCN6) for 1 hr, washed 2x in water, 1x Maleate buffer (MB) 1x and incubated in 1% uranyl acetate in MB for 1 hr followed by two washes in water and subsequent dehydration in grades of alcohol (10 min each; 50%, 70%, 90%, 2 × 10 min 100%). The samples were then put in propyleneoxide for 1 hr and infiltrated ON in a 1:1 mixture of propyleneoxide and TAAB Epon (Marivac Canada Inc St. Laurent, Canada). The following day the samples were embedded in TAAB Epon and polymerized at 60 degrees C for 48 hr. Ultrathin sections (~60 nm) were cut on a Reichert Ultracut-S microtome, picked up on to copper grids stained with lead citrate and examined in a JEOL 1200EX Transmission electron microscope or a TecnaiG² Spirit BioTWIN and images were recorded with an AMT 2 k CCD camera.
 
-## Transcriptomics
+### Transcriptomics
 
 RNA isolation and sequencing was performed from N. gonorrhoeae strains as described Wadsworth et al. (2018). Bacterial cells grown on GCB-K plates for 17 hr were suspended in liquid GCP medium with 1% IsoVitaleX and 0.042% NaHCO3 to OD600 0.1. Suspensions were incubated at 37°C with aeration for 2–3 hr to allow cultures to return to log phase. Cells were collected to measure baseline transcriptional profiles. For samples measuring the effect of drug exposure, 0.008 μg/mL CRO was added and cultures were incubated at 37°C for an additional 90 min before cell collection. RNA was purified with the Direct-Zol kit (Zymo). Transcriptome libraries were prepared at the Broad Institute at the Microbial ‘Omics Core using a modified version of the RNAtag-seq protocol (Shishkin et al., 2015). Five hundred nanograms of total RNA was fragmented, depleted of genomic DNA, dephosphorylated, and ligated to DNA adapters carrying 5’-AN8-3’ barcodes of known sequence with a 5’ phosphate and a 3’ blocking group. Barcoded RNAs were pooled and depleted of rRNA using the RiboZero rRNA depletion kit (Epicentre). Pools of barcoded RNAs were converted to Illumina cDNA libraries in two steps: (i) reverse transcription of the RNA using a primer designed to the constant region of the barcoded adapter with addition of an adapter to the 3’ end of the cDNA by template switching using SMARTScribe (Clontech) as described previously (Zhu et al., 2001); (ii) PCR amplification using primers whose 5’ ends target the constant regions of the 3’ or 5’ adapter and whose 3’ ends contain the full Illumina P5 or P7 sequences. cDNA libraries were sequenced on the Illumina Nextseq 500 platform to generate 50 bp paired-end reads. Barcode sequences were removed, and reads were aligned to the FA1090 reference genome. Differential expression analysis was conducted in DESeq2 v.1.16.1 (Love et al., 2014).
 
-## Sequence data availability
+### Sequence data availability
 
 Genomic and transcriptomic read libraries are available from the NCBI SRA database (accession number PRJNA540288).
 
-## PBP abundance measurement
+### PBP abundance measurement
 
 Protein abundance of PBP1, PBP2, and PBP3 was calculated using the fluorescent penicillin derivative bocillin-FL (Thermo Fisher). N. gonorrhoeae strains from overnight cultures were suspended in liquid GCP medium supplemented with 1% IsoVitalex and 0.042% NaHCO3 to a density of OD600 0.1. Suspensions were incubated with aeration at 37°C for 2.5–3 hr. Bacterial cells were collected by centrifugation, washed once with 1 mL of sterile phosphate-buffered saline (PBS), and resuspended in PBS 5 μg/mL bocillin-FL and 0.1% dimethyl sulfoxide (DMSO) to a final concentration of 1 mL of OD600 0.5 per 50 μL suspension. Bocillin-FL suspensions were incubated for 5 min. An equal volume 2x SDS-PAGE sample buffer (Novex) was added and samples were boiled for 5 min. Proteins in 30 μL of each suspension were separated by SDS-PAGE on 4–12% Tris-Glycine protein gels (Novex), which were visualized on a Typhoon imager (Amersham) (excitation 488 nm/emission 526 nm) to detect bocillin-FL fluorescence. Densitometry was performed with ImageJ (Schneider et al., 2012). Total bocillin-FL fluorescent signal was calculated for each sample, and the proportional contribution of individual PBPs to this signal was reported.
 
-## Muropeptide analysis
+### Muropeptide analysis
 
 N. gonorrhoeae strains were cultured for approximately 18 hr at 37°C with agitation in GCP medium supplemented with Kellogg’s reagent and 0.042% NaHCO3. Peptidoglycan was isolated and digested as described Kühner et al. (2015) with minor modifications. Briefly, bacterial cells were pelleted by centrifugation, suspended in 1 mL 1M NaCl, and incubated at 100°C for 20 min. Samples were centrifuged for one minute at 18,000 × g. Pellets were washed three times with water, suspended in 1 mL water, and placed in a bath sonicator for 30 min. 0.5 mL 0.1M Tris pH 6.8, 40 μg/mL RNase, and 16 μg/mL DNase were added to each sample; samples were incubated with shaking at 37°C for two hours, with the addition of 16 μg/mL trypsin after the first hour of incubation. Samples were heated to 100°C for 5 min to inactivate enzymes, then centrifuged for 3 min at 18,000 × g to pellet peptidoglycan. Pellets were washed with 1 mL aliquots of water until the suspension pH measured between 5 and 5.5. Peptidoglycan was then resuspended in 0.2 mL 12.5 mM NaH2PO4 pH 5.5 with 500 U/mL mutanolysin and incubated with shaking at 37°C for 16 hr. Samples were heated to 100°C for 5 min to inactivate mutanolysin and centrifuged for 5 min at 18,000 × g to pellet debris. The supernatant, containing solubilized muropeptides, was removed to new tubes, and 50 μL 10 mg/mL NaBH4 was added to each. Samples were incubated at room temperature for 30 min and then the pH was adjusted to 2–3 with 85% H3PO4.
 

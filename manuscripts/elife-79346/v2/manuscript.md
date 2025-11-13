@@ -13,18 +13,18 @@
 
 ### Affiliations
 
-1. https://ror.org/012afjb06 Department of Biological Sciences, Lehigh University Bethlehem United States
-2. https://ror.org/04zaypm56 Institute of Biomolecular Chemistry, National Research Council Pozzuoli Italy
-3. https://ror.org/02kqnpp86 Department of Environmental, Biological and Pharmaceutical Sciences and Technologies, University of Campania “Luigi Vanvitelli” Caserta Italy
-4. https://ror.org/05290cv24 Department of Biology, University of Napoli “Federico II” Napoli Italy
-5. https://ror.org/03p64mj41 JC Self Research Institute, Greenwood Genetic Center Greenwood United States
+1. Department of Biological Sciences, Lehigh University Bethlehem United States ([ROR:012afjb06](https://ror.org/012afjb06))
+2. Institute of Biomolecular Chemistry, National Research Council Pozzuoli Italy ([ROR:04zaypm56](https://ror.org/04zaypm56))
+3. Department of Environmental, Biological and Pharmaceutical Sciences and Technologies, University of Campania “Luigi Vanvitelli” Caserta Italy ([ROR:02kqnpp86](https://ror.org/02kqnpp86))
+4. Department of Biology, University of Napoli “Federico II” Napoli Italy ([ROR:05290cv24](https://ror.org/05290cv24))
+5. JC Self Research Institute, Greenwood Genetic Center Greenwood United States ([ROR:03p64mj41](https://ror.org/03p64mj41))
 6. Perlara PBC Berkeley United States
 
 † Corresponding author
 
 ## Abstract
 
-The most common cause of human congenital disorders of glycosylation (CDG) are mutations in the phosphomannomutase gene PMM2, which affect protein N -linked glycosylation. The yeast gene SEC53 encodes a homolog of human PMM2 . We evolved 384 populations of yeast harboring one of two human-disease-associated alleles, sec53- V238M and sec53 -F126L, or wild-type SEC53 . We find that after 1000 generations, most populations compensate for the slow-growth phenotype associated with the sec53 human-disease-associated alleles. Through whole-genome sequencing we identify compensatory mutations, including known SEC53 genetic interactors. We observe an enrichment of compensatory mutations in other genes whose human homologs are associated with Type 1 CDG, including PGM1 , which encodes the minor isoform of phosphoglucomutase in yeast. By genetic reconstruction, we show that evolved pgm1 mutations are dominant and allele-specific genetic interactors that restore both protein glycosylation and growth of yeast harboring the sec53 -V238M allele. Finally, we characterize the enzymatic activity of purified Pgm1 mutant proteins. We find that reduction, but not elimination, of Pgm1 activity best compensates for the deleterious phenotypes associated with the sec53 -V238M allele. Broadly, our results demonstrate the power of experimental evolution as a tool for identifying genes and pathways that compensate for human-disease-associated alleles.
+The most common cause of human congenital disorders of glycosylation (CDG) are mutations in the phosphomannomutase gene PMM2, which affect protein N-linked glycosylation. The yeast gene SEC53 encodes a homolog of human PMM2. We evolved 384 populations of yeast harboring one of two human-disease-associated alleles, sec53-V238M and sec53-F126L, or wild-type SEC53. We find that after 1000 generations, most populations compensate for the slow-growth phenotype associated with the sec53 human-disease-associated alleles. Through whole-genome sequencing we identify compensatory mutations, including known SEC53 genetic interactors. We observe an enrichment of compensatory mutations in other genes whose human homologs are associated with Type 1 CDG, including PGM1, which encodes the minor isoform of phosphoglucomutase in yeast. By genetic reconstruction, we show that evolved pgm1 mutations are dominant and allele-specific genetic interactors that restore both protein glycosylation and growth of yeast harboring the sec53-V238M allele. Finally, we characterize the enzymatic activity of purified Pgm1 mutant proteins. We find that reduction, but not elimination, of Pgm1 activity best compensates for the deleterious phenotypes associated with the sec53-V238M allele. Broadly, our results demonstrate the power of experimental evolution as a tool for identifying genes and pathways that compensate for human-disease-associated alleles.
 
 ## Introduction
 
@@ -40,21 +40,37 @@ Here, we present a 1000-generation evolution experiment of yeast models of PMM2-
 
 ## Results
 
-## Experimental evolution improves growth of yeast models of PMM2-CDG
+### Experimental evolution improves growth of yeast models of PMM2-CDG
 
 Mutations in the phosphomannomutase 2 gene, PMM2, are the most common cause of CDG. Lao et al., 2019 constructed yeast models of PMM2-CDG by making the yeast-equivalent mutations for five human-disease-associated alleles in SEC53, the yeast ortholog of PMM2. These strains have growth rate defects that correlate with enzymatic activity and promoter strength. Increasing expression levels of the mutant sec53 alleles twofold, by replacing the endogenous promoter (pSEC53) with the ACT1 promoter (pACT1), modestly improves the growth rate of sec53 disease-associated alleles (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig1-v2.jpg)
+
+**Figure 1.:** (A) Table of the various sec53 alleles used in this study. In vitro enzymatic activities of Pmm2 are relative to wild-type Pmm2 and were previously reported (Pirard et al., 1999). Relative growth rates of yeast carrying various SEC53 alleles were previously reported (Lao et al., 2019). (B) Diagram of the evolution experiment. Yeast carrying sec53 mutations implicated in human disease were used to initiate replicate populations in 96-well plates: 96 populations of each mutant genotype and 48 populations of each wild-type genotype. Populations were propagated in rich glucose media, unshaken, for 1000 generations. (C) Single time-point OD600 readings of populations were taken every 50 generations during the evolution experiment as a measure of growth rate. Each line represents one population.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Single time-point OD600 readings of populations over the course of the evolution experiment. Every 50 generations, following daily transfer, populations were resuspended and OD was measured. Each line represents one population.
 
 We chose to focus on sec53-V238M and sec53-F126L because they are two of the most common disease alleles in humans and because the mutations have distinct and well-characterized effects on protein structure and function (Figure 1A; Andreotti et al., 2015; Briso-Montiano et al., 2022; Citro et al., 2018; Kjaergaard et al., 1999; Pirard et al., 1999; Silvaggi et al., 2006). We evolved 96 haploid populations of each mutant sec53 genotype (pSEC53-sec53-V238M, pACT1-sec53-V238M, and pACT1-sec53-F126L) and 48 haploid populations of each wild-type SEC53 genotype (pSEC53-SEC53-WT and pACT1-SEC53-WT) for 1000 generations in rich glucose medium (Figure 1B). Strains with the pSEC53-sec53-F126L allele grew too slowly to keep up with a 1:210 dilution every 24 hr. Every 50 generations we measured culture density (single time-point OD600) for each population as a proxy for growth rate (Figure 1C; Figure 1—figure supplement 1).
 
 Populations with the pACT1-sec53-V238M allele show a range of dynamics, with some populations reaching maximum saturation (OD600 ≈ 1.0) early in the experiment, while some do not even by Generation 1000 (Figure 1C). Three pACT1-sec53-V238M populations went extinct before Generation 200. While saturation levels of pACT1-sec53-F126L populations also increased over the course of the evolution experiment, none reached an OD600 close to 1.0, indicating that these populations are likely less-fit than the evolved pACT1-sec53-V238M populations. Each pSEC53-sec53-V238M population started the evolution experiment with growth rates comparable to SEC53-WT populations, indicating compensatory mutation(s) likely arose in the starting inocula (Figure 1—figure supplement 1). We therefore exclude these populations from subsequent analyses. Together, our data show that the PMM2-CDG yeast models acquired compensatory mutations throughout the evolution experiment and that the extent of compensation depends on the specific disease-associated allele.
 
-## Putative compensatory mutations are enriched for other Type 1 CDG-associated homologs
+### Putative compensatory mutations are enriched for other Type 1 CDG-associated homologs
 
 To identify the compensatory mutations in our evolved populations, we sequenced single clones from 188 populations isolated at Generation 1000 to an average sequencing depth of ~50×. These included 91 pACT1-sec53-V238M clones, 36 pACT1-sec53-F126L clones, 32 pSEC53-SEC53-WT clones, 11 pACT1-SEC53-WT clones, and 18 of the initially suppressed pSEC53-sec53-V238M clones (Supplementary file 1). Autodiploids are a common occurrence in our experimental system (Fisher et al., 2018; Johnson et al., 2021). We attempted to avoid sequencing autodiploids by screening our evolved populations for sensitivity to benomyl, an antifungal agent that inhibits growth of S. cerevisiae diploids more severely than haploids (Venkataram et al., 2016).
 
 We find that the average number of de novo mutations (single nucleotide polymorphisms [SNPs] and small indels) varied between SEC53 genotypes, with the pACT1-sec53-F126L clones accruing more mutations per clone (8.14 ± 1.00, 95% confidence interval [CI]) compared to pACT1-sec53-V238M (5.76 ± 0.54) and SEC53-WT clones (combined pSEC53-SEC53-WT and pACT1-SEC53-WT) (6.49 ± 0.90) (Figure 2—figure supplement 1). Despite screening for benomyl sensitivity, most of the sequenced clones (131/188) appear to be autodiploids, with evidence of multiple heterozygous loci. In addition, we detect several copy number variants (CNVs) and aneuploidies shared between independent populations (Figure 2—source data 1, Figure 2—source data 2).
 
 We identified putative adaptive targets of selection as genes with more mutations than expected by chance across replicate clones. Some of these common targets of selection are not specific to sec53. For example, mutations in negative regulators of Ras (IRA1 and IRA2) are found in clones from each experimental group and are also observed in other laboratory evolution experiments across a wide range of conditions (Figure 2A; Fisher et al., 2018; Gresham and Hong, 2014; Johnson et al., 2021; Kvitek and Sherlock, 2013; Lang et al., 2013; Venkataram et al., 2016).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig2-v2.jpg)
+
+**Figure 2.:** (A) Heatmap showing the number of nonsynonymous mutations per gene that arose in the evolution experiment. Genes with two or more unique nonsynonymous mutations (and each Type 1 CDG homolog with at least one mutation) are shown. pSEC53-SEC53-WT and pACT1-SEC53-WT are grouped as ‘SEC53-WT’. For comparison, we show data from previously reported evolution experiments where the experimental conditions were identical to the conditions used here, aside from strain background and experiment duration (bottom three rows). Commonly mutated pathways are grouped for clarity. Asterisks (*) indicate previously known SEC53 genetic interactors (Costanzo et al., 2016; Kuzmin et al., 2018). (B) Binomial test for enrichment or depletion of mutations in Type 1 CDG homologs based on the number of nonsynonymous mutations observed in each experiment, the total number of yeast genes (5906), and the number of genes that are Type 1 CDG homologs (24). ‘Combined WT’ includes the SEC53-WT populations as well as three additional datasets: Lang et al., 2013, Fisher et al., 2018, and Johnson et al., 2021.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Each circle represents the number of SNPs and small indels present in a sequenced clone (Supplementary file 1). pSEC53-SEC53-WT and pACT1-SEC53-WT are grouped as ‘SEC53-WT’. Distribution of points are shown as violin plots. Only statistically significant differences shown (p < 0.05) with bars and astersisks (*). pACT1-sec53-V238M versus SEC53-WT (p = 0.326), pACT1-sec53-V238M versus pACT1-sec53-F126L (p > 0.0001), pACT1-sec53-F126L versus SEC53-WT (p = 0.0234) (df = 167, F = 9.67, one-way analysis of variance [ANOVA] with Tukey post hoc test).
 
 We identified putative sec53-compensatory targets as genes mutated exclusively in pACT1-sec53-V238M and/or pACT1-sec53-F126L populations (Figure 2A). The most frequently mutated genes among pACT1-sec53-F126L clones are common targets in other evolution experiments such as IRA1, IRA2, and KRE6, suggesting that mutations capable of compensating for Sec53-F126L dimerization defects are rare or not easily accessible. In contrast, while recurrently mutated genes in pACT1-sec53-V238M populations include common targets, we also identified a number of unique targets of selection, most notably in homologs of other Type 1 CDG-associated genes. We find an enrichment of mutations in CDG homologs in pACT1-sec53-V238M clones (Figure 2B; Figure 2—source data 3).
 
@@ -64,41 +80,105 @@ One of the CDG homologs, PGM1, is the most frequently mutated gene among pACT1-s
 
 To identify the compensatory mutation(s) that arose prior to the start of the evolution experiment in the initially suppressed pSEC53-sec53-V238M populations, we analyzed the 18 sequenced clones. For each clone, we find both wild-type SEC53 and sec53-V238M alleles among sequencing reads. This could result from integration or maintenance of the covering plasmid. No sequencing reads align to the URA3 locus of our reference genome, suggesting that the plasmid marker was lost, as expected following counterselection.
 
-## Compensatory mutations restore growth
+### Compensatory mutations restore growth
 
 In order to validate putative compensatory mutations we reconstructed evolved mutations in PGM1 and ALG9, two genes whose human homologs are implicated in Type 1 CDG (Frank et al., 2004; Timal et al., 2012). These heterozygous evolved mutations were constructed in a homozygous pACT1-sec53-V238M diploid background (note that although each pgm1 and alg9 mutation assayed here arose in haploid-founded populations, they arose as heterozygous mutations in autodiploids). We quantified the fitness effect of each mutation using a flow cytometry-based fitness assay, competing the reconstructed strains against a fluorescently labeled, diploid version of the pACT1-SEC53-WT ancestor.
 
 The pACT1-sec53-V238M ancestor has a fitness deficit of −25.86 ± 2.3% (95% CI) relative to wild-type. We find that each of the five evolved pgm1 mutations are compensatory in the pACT1-sec53-V238M background. The fitness effects of the sec53/pgm1 double mutants range between −19.10 ± 1.07% and −9.84 ± 0.77% (i.e., the pgm1 mutations confer a fitness benefit between 6.76% and 16.02% in the pACT1-sec53-V238M background) (Figure 3A). We also find that the evolved alg9-S230R mutation is compensatory, as the sec53/alg9 double mutant has a fitness effect of −17.89 ± 0.59% (Figure 3—figure supplement 1). We compared the fitness of these reconstructed double mutants to the fitness of the evolved clones which carry three to nine additional SNPs. In each case, the evolved clones were more fit than the reconstructed strain, except for the evolved clone containing the pgm1-D295N mutation (Figure 3—figure supplement 1). Thus, while the alg9 and pgm1 mutations compensate for the sec53-V238M defect, other mutations contribute to the overall fitness of these evolved clones.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig3-v2.jpg)
+
+**Figure 3.:** (A) Average fitness effects and standard deviations of reconstructed heterozygous pgm1 mutations. Fitness effects were determined by competitive fitness assays against a fluorescently labeled version of the diploid pACT1-SEC53-WT ancestor. Replicate measurements are plotted as gray circles. Pairs of pgm1 fitness effects with non-statistically significant differences: R64C-D295N, R64C-pgm1Δ, R64C-S120A, D295N-pgm1Δ, G514C-T521K, G514C-S120A, and pgm1Δ-S120A (df = 194, F = 208.1, each p > 0.05, one-way analysis of variance [ANOVA] with Tukey post hoc test). (B) Western blots of invertase (left) and carboxypeptidase Y (right) from ancestral and reconstructed strains. In panels A and B, plus signs (+) indicate wild-type alleles. Genotypes are either homozygous wild-type (+/+), homozygous mutant (mutation/mutation), or heterozygous (mutation/+).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Average fitness effects and standard deviations of reconstructed heterozygous pgm1 and alg9 mutations (closed circles) compared to evolved clones containing those mutations plus three to nine additional mutations (open circles). Replicate measurements are plotted as gray circles. Note there are two clones from different populations with an alg9-S230R mutation. Asterisks (*) represent statically significant differences between fitness effects of evolved clones and fitness effects of reconstructed clones (Welch’s modified t-test): pgm1-T231A (p < 0.0001, t = 36.1, df = 28.9); pgm1-G514C (p < 0.0001, t = 11.8, df = 18.4); pgm1-T521K (p < 0.0001, t = 33.8, df = 27.3); pgm1-R64C (p < 0.0001, t = 52.9, df = 24.3); pgm1-D295N (p = 0.05, t = 2.10, df = 19.9); alg9-S230R (left) (p < 0.0001, t = 53.7, df = 49.7); alg9-S230R (right) (p < 0.0001, t = 44.1, df = 46.1).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Average fitness effects and standard deviations of reconstructed pgm1 mutations in the diploid pACT1-SEC53-WT background. Replicate measurements are plotted as gray circles. Plus signs (+) indicate wild-type alleles.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Average fitness effects and standard deviations of reconstructed pgm1 mutations in the diploid pACT1-sec53-V238M background as heterozygous (mutation/+) or homozygous (mutation/mutation) alleles. Replicate measurements are plotted as gray circles. Comparison of heterozygous and homozygous allele fitness effects (Welch’s modified t-test): pgm1-T231A (p = 0.002, t = 3.35, df = 38.6); pgm1-G514C (p = 0.008, t = 2.85, df = 27.8); pgm1-T521K (p = 0.996, t = 0.005, df = 34.0); pgm1-R64C (p = 0.219, t = 1.24, df = 45.7); pgm1-T231A (p = 0.077, t = 1.84, df = 36.4); pgm1Δ (p = 0.003, t = 3.12, df = 45.7); pgm1-S120A (p < 0.0001, t = 4.45, df = 38.6).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Western blot of invertase from reconstructed sec53/pgm1 strains.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Western blots of invertase and CPY from constructed SEC53/pgm1 strains.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Western blot of invertase from reconstructed sec53/pgm1 strains.
+
 We constructed and assayed the fitness effects of the pgm1 mutations in diploid pACT1-sec53-F126L and pACT1-SEC53-WT backgrounds. Each pACT1-sec53-F126L strain was too quickly outcompeted by the reference strain to measure fitness, suggesting that the compensatory effects of the evolved pgm1 mutations are specific for the sec53-V238M mutation or any fitness improvements in the pACT1-sec53-F126L background are too minimal to detect. Each pgm1 mutation is nearly neutral in the pACT1-SEC53-WT background (Figure 3—figure supplement 2).
 
 To determine if LOF of PGM1 would phenocopy evolved mutations, we deleted one copy of PGM1 (pgm1Δ) in the diploid pACT1-sec53-V238M background and again measured fitness. We find that the heterozygous pgm1Δ mutation improves fitness (−15.28 ± 0.76%), indicating that LOF of PGM1 is compensatory in the conditions of the evolution experiment (Figure 3A). It is not immediately clear, then, why we only identify missense mutations in PGM1. Each of the mutated Pgm1 residues is located around the active site of the enzyme, based on predicted protein structure (Jumper et al., 2021; Stiers and Beamer, 2018). It could be that the evolved pgm1 mutations are LOF given this clustering but maintaining protein expression provides an ancillary benefit. To account for this possibility, we constructed a catalytically dead allele of PGM1 by mutating the enzyme’s catalytic serine (pgm1-S120A) (Stiers et al., 2017a). We find that pgm1-S120A improves pACT1-sec53-V238M fitness (−13.32 ± 0.88%) and this does not significantly differ from pgm1Δ (Figure 3A), indicating that PGM1 LOF is compensatory regardless of if that arises from loss of coding sequence or enzyme activity. We also measured fitness of homozygous pgm1 mutations (Figure 3—figure supplement 3). In all cases, the fitness effect of heterozygous and homozygous pgm1 mutants is not substantially different from each other, indicating that, by this assay, the evolved pgm1 mutations are dominant in the pACT1-sec53-V238M background, as are the pgm1Δ and pgm1-S120A mutations.
 
-## Compensatory mutations restore protein glycosylation
+### Compensatory mutations restore protein glycosylation
 
 We have established that pgm1 mutations compensate for the growth rate defect of the sec53-V238M allele. To determine whether the evolved pgm1 mutants also compensate for the molecular defects in N-linked glycosylation we examined two representative yeast glycoproteins, invertase and carboxypeptidase Y (CPY), in our reconstructed pgm1 strains. Invertase forms both a non-glycosylated homodimer (120 kDa) and a secreted homodimer that is heavily glycosylated (approximate range of 140–270 kDa) (Gascón et al., 1968; Zeng and Biemann, 1999). Mature CPY only exists in its glycosylated form, with a molecular weight of 61 kDa (Hasilik and Tanner, 1978).
 
 The ancestral pACT1-sec53-V238M strain shows underglycosylation of invertase and CPY. We find a reduced abundance of the higher-molecular-weight glycosylated form of invertase and mature CPY, accompanied by the appearance of underglycosylated forms of these proteins (Figure 3B). We find that evolved pgm1 mutations, pgm1Δ, and pgm1-S120A each restore glycosylation of these proteins to near-wild-type levels (Figure 3B, Figure 3—figure supplements 4 and 5). We do not observe rescue of protein glycosylation in pACT1-sec53-F126L strains carrying pgm1 mutations (Figure 3—figure supplement 6). Together, these suggest that pgm1-mediated rescue of pACT1-sec53-V238M fitness is due to restoration of protein glycosylation and the effect is specific for the pACT1-sec53-V238M background.
 
-## Compensatory PGM1 mutations are dominant suppressors of sec53-V238M
+### Compensatory PGM1 mutations are dominant suppressors of sec53-V238M
 
 To further demonstrate that pgm1-mediated compensation is specific for sec53-V238M, we performed a genetic analysis by dissecting tetrads from strains that are heterozygous for both sec53 and pgm1. In the absence of a compensatory mutation, we expect 50% large colonies and all tetrads showing a 2:2 segregation of colony size due to the single segregating locus (SEC53/sec53). However, if an evolved mutation is compensatory then we expect 75% large colonies with three types of segregation patterns: 2:2, 3:1, and 4:0, large to small colonies, respectively. These three segregation patterns are expected to follow a 1:4:1 ratio assuming no genetic linkage (Figure 4A). For each genetic test, we dissected ten tetrads and performed a log-likelihood test to determine whether the segregation pattern is more consistent with genetic suppression than non-suppression (Figure 4—source data 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig4-v2.jpg)
+
+**Figure 4.:** (A) Diagram of possible spore genotypes in the tetrad dissections. Heterozygous (e.g., SEC53/sec53 PGM1/pgm1) diploid strains could produce one of three tetrad genotypes based on allele segregation. (B) Example of pgm1-T521K dissections in a sec53-V238M background (top) and a sec53-F126L background (bottom). Listed are the probability and log likelihood of suppression, based on the ratio of normal growth (large colonies) to slow growth (no colonies or small colonies). (C) Example of PGM1::pgm1-T521K dissections in a sec53-V238M background (top) and a sec53-F126L background (bottom). (D) Plot of recessive suppression versus dominant suppression of the pgm1 mutations in the sec53-V238M background (red circles) and sec53-F126L background (blue diamonds), based on the tetrad dissections.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Ten tetrads were dissected for each strain. Spores from the same tetrad are grouped vertically. The parental diploid strains contained heterozygous SEC53/sec53 alleles and heterozygous PGM1/pgm1 or ALG9/alg9 alleles.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Ten tetrads were dissected for each strain. Spores from the same tetrad are grouped vertically. The parental diploid strains contained heterozygous SEC53/sec53 alleles and four copies of PGM1; a wild-type copy of PGM1 was introduced next to the endogenous PGM1 ORF. Each haploid spore, then, contained either two wild-type copies (PGM1::PGM1) or a wild-type and mutant copy (PGM1::pgm1).
 
 We find each of the evolved pgm1 mutations compensates for the V238M allele of SEC53 (Figure 4—figure supplement 1). For example, dissections of a strain heterozygous for pACT1-sec53-V238M and pgm1-T521K show 78% large colonies (one 4:0 and nine 3:1, with a log-likelihood ratio of 27.6, Figure 4B). These genetic tests corroborate the results from the fitness assays by showing that all five evolved pgm1 mutations, the pgm1Δ and pgm1-S120A mutations, as well as the evolved alg9 mutation all suppress sec53-V238M (Figure 4—figure supplement 1). We next assayed each of the pgm1 mutations in a sec53-F126L background. In contrast to the fitness assays, we find several pgm1 alleles (T521K, D295N, S120A, and pgm1Δ) that suppress sec53-F126L (Figure 4—figure supplement 1). It is worth noting, however, that the degree of compensation is less than in the sec53-V238M background based on colony sizes.
 
 To test if pgm1 mutations are dominant, we integrated a second wild-type copy of PGM1 to each of the strains such that each haploid spore will contain either two wild-type copies of PGM1 (PGM1::PGM1) or both wild-type PGM1 and mutant pgm1 (PGM1::pgm1). We find that the five evolved pgm1 mutations and pgm1-S120A, but not pgm1Δ, are dominant suppressors of sec53-V238M in the genetic assay (Figure 4C, D; Figure 4—figure supplement 2). For the sec53-F126L background, we find no dominant suppressors.
 
-## Reduction of Pgm1 activity alleviates deleterious effect of PMM2-CDG in yeast
+### Reduction of Pgm1 activity alleviates deleterious effect of PMM2-CDG in yeast
 
 To determine how the evolved mutations alter Pgm1 enzymatic activity, we cloned mutant and wild-type PGM1 alleles into bacterial expression vectors, purified recombinant enzyme, and assayed phosphoglucomutase activity using a standard coupled enzymatic assay (Figure 5A; Figure 5—figure supplement 1). We find that mutant Pgm1 have variable activities, ranging from near-wild-type (Pgm1-T231A) to non-detectable (Pgm1-R64C and Pgm1-D295N) (Figure 5B, C). The near complete loss of activity of Pgm1-D295N is unsurprising since D295 coordinates a Mg2+ ion that plays an essential role during catalysis (Stiers et al., 2016) and we verify that all the active forms show very low activity in the presence of ethylenediaminetetraacetic acid (EDTA) (Figure 5—source data 1). Thermostability did not differ between enzymes with detectable activity (Figure 5—figure supplement 2).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig5-v2.jpg)
+
+**Figure 5.:** (A) AlphaFold structure of S. cerevisiae Pgm1 (Jumper et al., 2021). Mutated residues shown as spheres. (B) Kinetic parameters of recombinant Pgm1 enzymes as determined by a coupled enzymatic assay. Values ± 95% confidence intervals. (C) Michaelis–Menten curves of wild-type and mutant Pgm1. Replicate measurements are plotted as circles. (D) Pgm1 enzyme Vmax versus the corresponding allele’s fitness effect in the diploid pACT1-sec53-V238M background (as shown in Figure 3A). Horizontal and vertical error bars represent 95% confidence intervals. Best fit regression shown as a dashed curve (y = 14.583 + 0.04613x − 0.00014x2, R2 = 0.907, df = 4, F = 37.34, p = 0.0258, analysis of variance [ANOVA]). Note that we did not measure Pgm1-S120A activity and assume null activity.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Diagrams of the enzymatic reactions assayed in this study.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Average residual activity and standard deviations of recombinant Pgm1 enzymes determined after incubation at the conditions described on the x-axis. Replicate measurements plotted as gray circles. Proteins were incubated in the presence bovine serum albumin (BSA; 0.1 mg/ml).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Representative phosphomannomutase assay by 31P-NMR spectroscopy. Pgm1 was incubated with 1 mM mannose-1-phosphate (M1P) and 20 μM glucose-1,6-bisphosphate (G16P) for 0 or 60 min. The amount of M1P or M6P was measured by integrating the area of the signals and comparing them to creatine phosphate, added as an internal standard. (B) Spectrophotometric phosphoglucomutase assays were conducted at different concentrations of glucose-1-phosphate (G1P) and M1P. Shapes indicate varying concentrations of M1P and colors indicate Pgm1 variants.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Average abundance and standard deviations of G16P in SEC53-WT and sec53-V238M strains following metabolite extraction. Plus signs (+) indicate wild-type alleles. Replicate measurements plotted as circles. Asterisks (*) represent statistically significant differences (Mann–Whitney U-test, p < 0.01).
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/79346/elife-79346-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** Equal amounts of Pgm1 were incubated with glucose-1-phosphate (G1P) (A) or G6P (B) in the presence of glucose-1,6-bisphosphate (G16P) for 0, 5, 10, or 15 min. The amount of the substrates and products was measured by integrating the area of the signals and comparing them to creatine phosphate, added as an internal standard. Asterisks (*) indicate Pi contaminants.
+
 Comparison of the kinetic parameters of active mutant enzymes shows a reduction of maximal velocity (Vmax) between 27% and 72% relative to wild-type Pgm1. Based on the apparent Michaelis constant (Km), substrate affinities of Pgm1-G514C and Pgm1-T521K are lower than wild-type Pgm1 (t = 4.30 and 3.14, df = 35.78 and 20.47, p = 0.0001 and 0.0051, respectively, Welch’s modified t-test). Pgm1-T231A shows an increased affinity compared to wild-type Pgm1, but this difference is not statistically significant (t = 1.94, df = 34.68, p = 0.0601, Welch’s). Together these indicate that the five evolved pgm1 mutations have varying effects on enzymatic activity. The relationship between pgm1 fitness and Pgm1 Vmax is best fit by a quadratic, rather than a linear, function (Figure 5D). Therefore, optimal fitness is attained by tuning down, but not eliminating, Pgm1 activity.
 
-## Mutant Pgm1 does not have increased phosphomannomutase activity
+### Mutant Pgm1 does not have increased phosphomannomutase activity
 
 Phosphoglucomutases can exhibit low levels of phosphomannomutase activity, and we reasoned that active-site mutations in Pgm1 could alter epimer specificity from glucose to mannose, directly compensating for the loss of Sec53 activity (Lowry and Passonneau, 1969). We tested this in two ways. First, we directly measured phosphomannomutase activity of wild-type Pgm1 and two mutant Pgm1, using a 31P-NMR spectroscopy-based assay (Figure 5—figure supplements 1 and 3A). We find that wild-type Pgm1 and Pgm1-G514C show comparably low phosphomannomutase activity, accounting for 3.5% and 3.0% of their phosphoglucomutase activity, respectively. We could not detect any phosphomannomutase activity for Pgm1-D295N. We also tested for phosphomannomutase activity indirectly by determining whether M1P acted as a competitive inhibitor in the phosphoglucomutase assay. If mutant Pgm1 had altered epimer specificity, we would expect M1P to compete with glucose-1-phosphate (G1P) for residency within the active site, leading to an apparent decrease in phosphoglucomutase activity. However, we find no effect of the addition of M1P on phosphoglucomutase activity for any of the Pgm1 enzymes tested (Figure 5—figure supplement 3B). Together, these results indicate that mutant Pgm1 does not have enhanced phosphomannomutase activity.
 
-## Pgm1 mutations increase intracellular glucose-1,6-bisphosphate levels
+### Pgm1 mutations increase intracellular glucose-1,6-bisphosphate levels
 
 Glucose-1,6-bisphosphate (G16P) is required as an activator of both Pgm1 and Pmm2 (Sec53) and can stabilize pathogenic variants of Pmm2 (Monticelli et al., 2019). The only known source of G16P in yeast is low-level dissociation during the phosphoglucomutase reaction of Pgm1 and Pgm2. We reasoned that evolved pgm1 mutations may increase intracellular levels of G16P which, in turn, would stabilize Sec53-V238M. Each active form of Pgm1 exhibits barely detectable activity in the absence of G16P and we determined an apparent half maximal effective concentration (EC50) of G16P for several Pgm1 enzymes (Figure 5—source data 1). Given that Pgm1 is the minor isoform of phosphoglucomutase in yeast, we also reasoned that it could act as a glucose-1,6-bisphosphatase, similar to human PMM1 (Veiga-da-Cunha et al., 2008). We performed a specific glucose-1,6-bisphosphatase assay on wild-type and mutant Pgm1 enzyme (Figure 5—figure supplement 1). However, none of the mutant Pgm1 enzymes have detectable glucose-1,6-bisphosphatase activity.
 
@@ -132,7 +212,80 @@ There is truth to the saying that ‘a selection is worth a thousand screens’.
 
 ## Methods
 
-## Experimental evolution
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTC416-SEC53</td>
+      <td>Lao et al., 2019</td>
+      <td>Wild-type SEC53 plasmid (CEN-ARS)</td>
+      <td>Plasmid map: https://bit.ly/3nBYllD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pML104-NatMx3</td>
+      <td>Addgene (83477)</td>
+      <td>Cas9 plasmid</td>
+      <td>Modified plasmids available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAG25</td>
+      <td>Addgene (35121)</td>
+      <td>Integrating plasmid</td>
+      <td>Modified plasmids available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-2T</td>
+      <td>Cytiva Life Sciences (28954653)</td>
+      <td>Bacterial expression plasmid</td>
+      <td>Modified plasmids available upon request</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-carboxypeptidase rabbit polyclonal antibody</td>
+      <td>Abcam (ab181691)</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG HRP-conjugated mouse monoclonal antibody</td>
+      <td>Cell Signaling Technologies (5127)</td>
+      <td></td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-invertase goat polyclonal antibody</td>
+      <td>Novus Biologicals (NB120-20597)</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat IgG HRP-conjugated mouse monoclonal antibody</td>
+      <td>Rockland Immunochemicals (18-8814-33)</td>
+      <td></td>
+      <td>(1:2000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental evolution
 
 The haploid strains used in the evolution experiment are S288c derivatives and were described previously (Lao et al., 2019). Each strain maintains a URA3-marked plasmid encoding wild-type SEC53 (pTC416-SEC53 described in Lao et al., 2019). Strains with the pSEC53-sec53-F126L allele grew too slowly to keep up with a 1:210 dilution every 24 hr.
 
@@ -140,17 +293,17 @@ To initiate the evolution experiment, strains were struck to synthetic defined m
 
 OD600 was measured every 50 generations over the course of the evolution experiment. After daily dilutions were completed, populations were resuspended by orbital vortexing at 1050 rpm for 15 s then transferred to a Tecan Infinite M200 Pro plate reader for sampling.
 
-## Whole-genome sequencing
+### Whole-genome sequencing
 
 Benomyl assays were performed by spotting 5 μl of populations onto YPD plus 20 μg/ml benomyl (dissolved in dimethyl sulfoxide [DMSO]) and incubating at 25°C. Ploidy was then inferred by visually comparing growth of evolved populations to control haploid and diploid strains.
 
 Single clones were isolated for sequencing by streaking 5 μl of cryo-archived populations to YPD agar. One clone from each population was randomly chosen and grown to saturation in 5 ml YPD, pelleted, and frozen at −20°C. Genomic DNA was harvested from frozen cell pellets using phenol–chloroform extraction and precipitated in ethanol. Total genomic DNA was used in a Nextera library preparation as described previously (Buskirk et al., 2017). Pooled clones were sequenced using an Illumina NovaSeq 6000 sequencer by the Sequencing Core Facility at the Lewis-Sigler Institute for Integrative Genomics at Princeton University.
 
-## Sequencing analysis
+### Sequencing analysis
 
 Raw sequencing data were concatenated and then demultiplexed using a dual-index barcode splitter (https://bitbucket.org/princeton_genomics/barcode_splitter/src/master/). Adapter sequences were trimmed using Trimmomatic (Bolger et al., 2014). Modified S288c reference genomes were constructed using reform (https://github.com/gencorefacility/reform; Khalfan, 2021) to correct for strain-construction-related differences between our strains and canonical S288c. Trimmed reads were aligned to these modified S288c reference genomes using BWA and mutations were called using FreeBayes (Garrison and Marth, 2012; Li and Durbin, 2009). VCF files were annotated with SnpEff (Cingolani et al., 2012). All calls were confirmed manually by viewing BAM files in IGV (Thorvaldsdóttir et al., 2013). Clones were predicted to be diploids if two or more mutations were called at an allele frequency of 0.5. CNVs and aneuploidies were called via changes in sequencing coverage using Control-FREEC (Boeva et al., 2012). CNVs and aneuploidies were confirmed by visually inspecting coverage plots.
 
-## Yeast strain construction
+### Yeast strain construction
 
 Evolved mutations were reconstructed via CRISPR/Cas9 allele swaps. For mutations that fall within a Cas9 gRNA site (alg9-S230R, pgm1-T231A, and pgm1-G514C), repair templates were produced by PCR-amplifying 500–2000 bp fragments centered around the mutation of interest from evolved clones. Commercially synthesized dsDNA fragments (Integrated DNA Technologies, Coralville, IA, USA) were used as repair templates for all other mutations (pgm1-R64C, pgm1-S120A, pgm1-D295N, pgm1-T521K, and pgm1Δ). These 500 bp fragments contained our mutation of interest as well as one to two synonymous mutations in the Cas9 gRNA site to halt cutting. The pgm1Δ repair template was a dsDNA fragment consisting of 250 bp upstream then 250 bp downstream of the ORF. Repair templates were cotransformed into haploid ancestral strains with a plasmid encoding Cas9 and gRNAs targeting near the mutation site (Addgene #83476) (Laughery et al., 2015).
 
@@ -158,47 +311,47 @@ Heterozygous mutant strains were constructed by mating haploid mutants to MATα 
 
 Linked PGM1 strains used for tetrad dissections were constructed by transforming strains with a linearized integrating plasmid (Addgene #35121) containing wild-type PGM1 (Goldstein and McCusker, 1999). Successful integration of the plasmid next to the endogenous PGM1 locus was confirmed via PCR. Strain information in Supplementary file 2.
 
-## Competitive fitness assays
+### Competitive fitness assays
 
 We measured the fitness effect of evolved mutations using competitive fitness assays described previously with some modifications (Buskirk et al., 2017). Query strains were mixed 1:1 with a fluorescently labeled version of the pACT1-SEC53-WT ancestral diploid strain. Each pACT1-sec53-F126L strain was outcompeted immediately by the reference at this ratio, so we also tried mixing at a ratio of 50:1. Cocultures were propagated in 96-well plates in the same conditions in which they evolved for up to 50 generations. Saturated cultures were sampled for flow cytometry every 10 generations. Each genotype assayed was done so with at least 24 technical replicates (competitions) of 4 biological replicates (2 clones isolated each from 2 isogenic but separately constructed strains). Analyses were performed in Flowjo and R.
 
-## LOF/non-LOF Bayesian analysis
+### LOF/non-LOF Bayesian analysis
 
 From reconstruction data from previously published evolution experiments (Fisher et al., 2018; Lang et al., 2013; Marad et al., 2018), we identified ten genes where selection is acting on LOF (ACE2, CTS1, ROT2, YUR1, STE11, STE12, STE4haploids, STE5, IRA1, and IRA2) and six genes where selection is for non-LOF (CNE1, GAS1, KEG1, KRE5, KRE6, and STE4autodiploids). These data established prior probabilities that selection is acting on LOF (0.625) or non-LOF (0.375). We then determined the conditional probabilities of missense and frameshift/nonsense mutations given selection for LOF and non-LOF using 240 mutations across these 16 genes as well as 414 5FOA-resistant mutations at URA3 and 454 canavanine-resistant mutations at CAN1 (Lang and Murray, 2008). From these data, we can estimate the log likelihood and posterior probabilities that selection is acting on LOF or non-LOF given the observed mutational spectrum for any given gene (Supplementary file 3).
 
-## CPY and invertase blots
+### CPY and invertase blots
 
 Strains were grown in 5 ml YPD plus 100 μg/ml ampicillin and 25 μg/ml tetracycline until saturated, then pelleted, and frozen at −20°C. Cell pellets were lysed in Ripa lysis buffer (150 mM NaCl, 1% Nonidet P-40, 0.5% sodium deoxycholate, 0.1% sodium dodecyl sulfate, 25 mM Tris [pH 7.4]) with protease inhibitors (Thermo Fisher Scientific, Waltham, MA, USA) and 10 mM dithiothreitol (DTT), incubated for 30 min on ice, sonicated five times briefly, incubated for a further 10 min on ice, and centrifuged at 20,000 × g for 10 min at 4°C. Supernatant was quantified by Micro BCA Protein Assay (Thermo Fisher). 30 μg of each lysate were prepared in Lamelli buffer and were incubated at 95°C for 5 min and chilled at 4°C. Lysates were separated on a 6% or 8% sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gel. Protein was transferred to 0.2 µm pore nitrocellulose at 100 V for 100 min at 4°C in Towbin buffer. The membrane was rinsed and stained with Ponceau S for normalization. The membranes were blocked with 5% milk/TBST for 1 hr at room temperature.
 
 CPY blots were incubated with an anti-carboxypeptidase antibody at 1:1000 overnight at 4°C and washed three times with TBST. The blots were then incubated with anti-rabbit IgG HRP diluted 1:2000 in milk/TBST for 1 hr, washed three times and developed with ECL reagent (Bio-Rad Laboratories, Hercules, CA, USA). Invertase blots were prepared similarly with an anti-invertase antibody and anti-goat IgG HRP. All images were captured on the Bio-Rad ChemiDoc MP Imaging System (Bio-Rad). Analysis was done with Image Lab Software (Bio-Rad). Raw images of blots and Ponceau stain controls are available in Figure 3—source data 1.
 
-## Tetrad dissection and inference of genetic interactions
+### Tetrad dissection and inference of genetic interactions
 
 Heterozygous yeast strains (i.e., SEC53/sec53 PGM1/pgm1) were sporulated by resuspending 1 ml of overnight YPD culture in 2 ml of SPO++ (1.5% potassium acetate, 0.25% yeast extract, 0.25% dextrose, 0.002% histidine, 0.002% tryptophan) and incubated on a roller-drum for ~7 days at room temperature. Ten tetrads per strain were dissected on YPD agar and then incubated for 48 hr at 30°C. We performed a log-likelihood test to determine if patterns of segregation are indicative of suppression (Figure 4—source data 1). Note that in order to calculate conditional probabilities we had to include an error term (0.01) to account for biological noise in the real data. Our inference of suppression, however, is robust to our choice of error value.
 
-## Bacterial growth and lysis
+### Bacterial growth and lysis
 
 Wild-type and mutant PGM1 alleles were cloned into the expression vector pGEX-2T. Cloned vectors were transformed into E. coli BL21(DE3). Bacteria were grown in lysogeny broth (LB) medium plus 0.1 mg/ml ampicillin. Each PGM1 allele was expressed by induction at 0.1 OD with 0.1 mg/ml IPTG for 16 hr at 15°C. Bacteria were harvested by centrifugation, washed with phosphate-buffered saline (PBS), and stored at −80°C. Bacterial lysis was accomplished in 25 mM Tris buffer (pH 8) containing 1 mM EDTA, 2 mM DTT, 5% glycerol, and 0.1 mM phenylmethylsulfonyl fluoride (PMSF), by adding 1 mg/ml lysozyme and 2.5 µg/ml DNase. Clear extract was then obtained by centrifugation.
 
-## Protein purification
+### Protein purification
 
 Protein purification was accomplished using Glutathione Sepharose High Performance resin (GSTrap by Cytiva, Marlborough, MA, USA) and Benzamidine Sepharose 4 Fast Flow resin (HiTrap Benzamidine FF by Cytiva). Cleavage of the GST-tag was conducted on-column by adding thrombin. All the procedures were performed according to manufacturer’s instructions. Briefly, clear extract obtained from 50 ml of bacterial culture was loaded onto the GSTrap column (5 ml), previously equilibrated with 25 mM Tris (pH 8) containing 2 mM DTT and 5% glycerol. Unbound protein was eluted, then the column was washed with 20 mM Tris (pH 8) containing 1 mM DTT, 150 mM NaCl, 1 mM MgCl2, and 5% glycerol (buffer A). Thrombin (30 units in 5 ml of buffer A) was loaded and the column was incubated for 14–16 hr at 10°C. GSTrap and HiTrap Benzamidine columns were connected in series, and elution of the untagged protein was accomplished with buffer A. Fractions were analyzed by SDS–PAGE and activity assays. Active fractions were finally collected and concentrated by ultrafiltration. A yield spanning 1.0–4.6 mg of protein per liter of bacterial culture was obtained.
 
 Each protein was obtained in a pure, monomeric form as judged by SDS–PAGE and gel filtration analyses, with a single band observed at the expected molecular weight (63 kDa). Gel filtration analysis was performed on BioSep-SEC-S 3000 column (Phenomenex, Torrance, CA, USA) at 1 ml/min. The eluent was 20 mM Tris (pH 8), 1 mM MgCl2, and 150 mM NaCl.
 
-## Activity assays
+### Activity assays
 
 Phosphoglucomutase activity was assayed spectrophotometrically at 340 nm and 29°C by following the reduction of NADP+ to NADPH in a 0.3 ml reaction mixture containing 25 mM Tris (pH 8), 5 mM MgCl2, 1 mM DTT, 0.25 mM NADP+, and 2.7 U/ml glucose-6-phosphate dehydrogenase in the presence of 0.3 mM G1P and 0.02 mM G16P. Additional experiments were performed with the addition of M1P (10, 50, and 200 μM). Km were evaluated by measuring activity in the presence of G1P ranging from 0 mM to 0.6 mM. Analyses were performed in R using the drc package (Ritz et al., 2015). Bisphosphatase activity was measured spectrophotometrically at 340 nm and 29°C in the presence of 0.1 mM G16P, 0.25 mM NADP+, and 2.7 U/ml glucose-6-phosphate dehydrogenase. Activity expressed as the number of micromoles of substrate transformed per minute per mg of protein under the standard conditions.
 
 Thermostabilities of Pgm1 were determined by incubating purified protein for 5 or 10 min at different temperatures (30, 35, 40, and 45°C) in 20 mM Tris (pH 8), 1 mM MgCl2, 150 mM NaCl, 5% glycerol, and 0.1 mg/ml BSA. After cooling on ice, residual activity was measured under standard conditions.
 
-## 31P-NMR spectroscopy
+### 31P-NMR spectroscopy
 
 Phosphoglucomutase and phosphomannomutase activity were measured by 31P-NMR spectroscopy (Citro et al., 2017). This assay allows us to exclude the effects on the change in absorbance due to impurities that could be substrates for the ancillary enzymes required for the assay. This is of utmost importance when the activity is particularly low and measuring the rate of change in absorbance requires long incubation times, as it is the case of phosphomannomutase activity for Pgm1. A discontinuous assay was performed. Appropriate amounts of proteins were incubated at 30°C with 1 mM G1P or M1P in 20 mM Tris (pH 8), 1 mM MgCl2, 0.1 mg/ml BSA, in the presence of 20 μM G16P for up to 60 min. The reaction was stopped with 50 mM EDTA on ice and heat inactivation. The content of the residual substrate (M1P or G1P) and/or the product (M6P or G6P) were measured recording 31P-NMR spectra. Creatine phosphate was added as an internal standard for the quantitative analysis. The 1H-decoupled, one-dimensional 31P spectra were recorded at 161.976 MHz on a Bruker Avance III HD spectrometer 400 MHz, equipped with a BBO BB-H&F-D CryoProbe Prodigy fitted with a gradient along the z-axis, at a probe temperature of 27°C. Spectral width 120 ppm, delay time 1.2 s, and pulse width of 12.0 μs were applied. All the samples contained 10% 2H2O for internal lock.
 
 Similarly, forward (G1P to G6P) and reverse (G6P to G1P) phosphoglucomutase activities were measured following the same procedure described above, with 1 mM G1P or G6P as the substrate.
 
-## Quantification of G16P abundance
+### Quantification of G16P abundance
 
 Yeast metabolite extraction was performed as described previously (Gonzalez et al., 1997). Briefly, five replicate cultures per genotype were grown in 5 ml YPD plus 100 μg/ml ampicillin and 25 μg/ml tetracycline at 30°C. 107 cells of mid-log culture were collected on nylon filters, washed with 10 ml cold PBS, frozen in liquid nitrogen, and lyophilized. Cells were then treated with an ice-cold solution containing 14% HClO4 and 91 mM imidazole, frozen and thawed five times (dry ice/acetone followed by 40°C bath) with vigorous shaking between each cycle, then centrifuged at 13,500 × g at 4°C. Supernatant was neutralized with 3 M K2CO3 and centrifuged again at 13,500 × g at 4°C to eliminate salt precipitate.
 

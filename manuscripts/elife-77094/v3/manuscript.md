@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0322sf130 Institut NeuroMyogène (INMG), CNRS UMR 5310, INSERM U1217, Université Claude Bernard Lyon 1 Lyon France
+1. Institut NeuroMyogène (INMG), CNRS UMR 5310, INSERM U1217, Université Claude Bernard Lyon 1 Lyon France ([ROR:0322sf130](https://ror.org/0322sf130))
 
 † Corresponding author
 
@@ -43,11 +43,27 @@ Despite the knowledge acquired in the last decades on XAB2 and its different cel
 
 ## Results
 
-## XAB2 is involved in TC-NER process
+### XAB2 is involved in TC-NER process
 
 Two decades ago, Tanaka’s research group demonstrated the involvement of XAB2 in the NER pathway (Kuraoka et al., 2008; Nakatsu et al., 2000). However, the dynamics of XAB2 during the DNA repair process remained to be elucidated. We aimed to study the shuttling between its different functions when DNA damage is induced. Firstly, we wanted to verify that XAB2 is exclusively involved in TC-NER reactions.
 
 The well-known standard assay used to quantify NER activity is the UDS, which measures replication activity outside the S-phase after ultraviolet light (UV-C) treatment. This technique quantifies the refilling of the single-strand DNA gap by the DNA replicative machinery. When we performed an Unschelduled DNA synthesis (UDS) assay in XAB2-silenced cells, no decreased level of UDS was observed (as well as in mock-treated cells; Figure 1A blue and black columns, Figure 1B and Figure 1—figure supplement 1). As a positive control, when we silenced the excision repair factor XPF, we observed a strong reduction in UDS level (Figure 1A, red column, Figure 1B, and Figure 1—figure supplement 1 ). This result shows that XAB2 is not involved in the GG-NER subpathway, but does not exclude an involvement of XAB2 in the TC-NER subpathway.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig1-v3.jpg)
+
+**Figure 1.:** (A) Quantification of Unscheduled DNA Synthesis (UDS) assay determined by EdU incorporation after local damage (LD) induction with UV-C (100 J/m2) in WT cells (MRC5 cells) treated with siRNAs against indicated factors. Error bars represent the standard error of the mean (SEM) obtained from at least 30 LDs. (B) Western blot on whole-cell extracts of MRC5 cells treated with siRNA against indicated factors. (C) Quantification of RNA Recovery Synthesis (RRS) assay determined by EU incorporation after UV-C (10 J/m2) exposure in WT cells treated with siRNAs against indicated factors. Error bars represent the SEM obtained from at least 50 cells. (D) Quantification of TCR-UDS assay determined by EdU incorporation after LD induction with UV-C (100 J/m2) in GG-NER-deficient cells (XPC−/− cells) treated with siRNAs against indicated factors. Error bars represent the SEM obtained from at least 15 LDs. For all graphs, p-value of Student’s test compared to siMock condition: ***<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Representative images of UDS from Figure 1A for each condition. The position of the local damage is visualized by γH2AX labeling (in red). Scale bar: 3 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative images of RRS from Figure 1C for each condition. Scale bar: 15 µm. (B) Quantification of RNA synthesis determined by 1 or 2 hr of EU incorporation without UV-C treatment in MRC5 cells transfected or not with siXAB2. (C) Quantification of RNA synthesis determined by 2 hr of EU incorporation without UV-C treatment in MRC5 cells transfected or not with siXPF. Error bars represent the standard error of the mean (SEM) obtained from at least 50 cells. P-value of Student’s test compared to siMock condition: ***<0.001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Representative images of TCR-UDS from Figure 1D for each condition. White arrows show the position of the local damage as visualized by γH2AX labeling. Nuclei are delimited by dashed lines. Scale bar: 3 µm.
 
 The commonly used assay measuring TC-NER activity is the RNA Recovery Synthesis (RRS). This assay measures the newly transcribed RNA by incorporating a nucleoside analog coupled to a fluorophore. The experiment is conducted at different time points after UV irradiation (0, 3, 16, and 24 hr) in order to quantify the decline in transcriptional activity (3 hr after UV damage) and the restart of transcriptional activity (16–24 hr after UV irradiation). In XAB2-silenced cells, no restart of transcription after UV damage was observed (Figure 1C, blue column and Figure 1—figure supplement 2A), as well as in siXPF-treated cells due to the inability to repair DNA lesions (Figure 1C, red column and Figure 2—figure supplement 2A) and in contrast with siMock-treated cells (Figure 1C, black column and Figure 1—figure supplement 2A). In XAB2-silenced cells and in the absence of DNA damage, we observed a decreased level of nascent RNA synthesis when the nucleoside analog EU was incubated for 1 hr, accordingly to the result of Tanaka’s group (Figure 1—figure supplement 2B; Kuraoka et al., 2008; Nakatsu et al., 2000). However, when EU is incubated for 2 hr (time point used for RRS assay) we observed an increase of nascent RNA in XAB2-silenced cells compared to control cells (Figure 1—figure supplement 2B). As expected, silencing XPF protein does not affect basal transcription (Figure 1—figure supplement 2C). RRS results demonstrated an involvement of XAB2 in the TC-NER subpathway but did not discriminate between a role in the repair reaction per se or in the Restart of Transcription after Repair (Mourgues et al., 2013).
 
@@ -55,29 +71,69 @@ In order to discriminate this point, we performed an assay designed previously i
 
 Next, we decided to investigate by PLA (Proximity Ligation Assay) whether XAB2 can interact with 6-4PPs and CPDs lesion, helix-distorting DNA adducts caused by UV. We observed a strong interaction between XAB2 and 6-4PPs 1 hr after 10 J/m² irradiation (Figure 2A, C). This interaction correlates with the amount of 6-4PPs and, as expected, decreases during repair (Figure 2B, C), while XAB2 concentration does not change after irradiation (Figure 2B, C). The same result is obtained in PLA experiment between XAB2 and CPDs (Figure 2—figure supplement 1). These results demonstrate that XAB2 interacts directly with or is in the proximity of 6-4PP and CPD lesions until their removal.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig2-v3.jpg)
+
+**Figure 2.:** Quantification of fluorescent signal in the nucleus against the couple XAB2_6-4PP from Proximity Ligation Assay (PLA) experiment (A) or from the immunofluorescence (IF) done in parallel to PLA assay with the same antibodies dilutions (B). Error bars represent the standard error of the mean (SEM) obtained from at least 80 cells. P-value of Student’s test compared to No UV condition: ***<0.001. (C) Representative images of the PLA and IF experiments. Nuclei are delimited by dashed lines. Scale bar: 15 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Quantification of fluorescent signal in the nucleus against the couple XAB2_CPD from PLA experiment (A) or from the IF done in parallel to PLA assay with the same antibodies dilutions (B). Error bars represent the standard error of the mean (SEM obtained from at least 70 cells). P-value of Student’s test compared to No UV condition: ***<0.001. (C) Representative images of the PLA and IF experiment. Nuclei are delimited by dashed lines. Scale bar: 15 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic representation of ribosomal DNA (rDNA) unit and localization of the 47S pre-rRNA probe. (B) Quantification of RNA-FISH (Fluorescence in situ hybridization) assay showing the 47S pre-rRNA level after UV-C (16 J/m2) exposure in WT cells treated with siRNAs against indicated factors. Error bars represent the standard error of the mean (SEM) obtained from at least 30 cells. P-value of Student’s test compared to No UV condition: ***<0.001. (C) Western blot on whole-cell extracts of MRC5 cells treated with siRNA against indicated factors. (D) Representative images of RNA-FISH 47S (in red) from the graph B of this figure for each condition. Nuclei and nucleoli are delimited by dashed and dotted lines, respectively. Scale bar: 3 µm.
+
 Recently, we demonstrate that a fully functional NER mechanism is necessary for the repair of ribosomal DNA (rDNA), genes transcribed by the RNA polymerase 1 (RNAP1) (Daniel et al., 2018). To investigate the involvement of XAB2 in the repair of ribosomal genes, the level of RNAP1 transcription was measured at different time points after UV irradiation by using a specific ribosomal RNA probe coupled to a fluorophore, as described previously (Daniel et al., 2018). This probe recognizes the 5′ end of the rDNA transcript, the 47S pre-rRNA (upstream from the first site cleaved rapidly during rRNA processing) (a sketch of the 47S is depicted in Figure 2—figure supplement 2A). In siMock-treated cells, we observed a decrease of 47S levels 3 hr after UV-C exposure and the restart of RNAP1 transcription 40 hr after irradiation (Figure 2—figure supplement 2B, black column and Figure 2—figure supplement 2D). siCSB-treated cells, deficient for TC-NER, presented a low level of rRNA synthesis even 40 hr after UV-C exposure (Figure 2—figure supplement 2B, violet column, Figure 2—figure supplement 2C,D). In the absence of XAB2, 40 hr after irradiation, the level of 47S returns to the level of non-irradiated condition, supporting a restart of RNAP1 transcription (Figure 2—figure supplement 2B, blue column and Figure 2—figure supplement 2D).
 
 All these results demonstrate that XAB2 has a function in TC-NER repair reactions specifically and exclusively for RNAP2-transcribed genes.
 
-## XAB2-splicing complex is released from the DNA damage area
+### XAB2-splicing complex is released from the DNA damage area
 
 XAB2 is included in a splicing complex composed of five other proteins: Aquarius (AQR), PRP19, CCDC16, PPIE, and ISY1 (Kuraoka et al., 2008). In order to explore how the XAB2-splicing complex behaves after local damage induction, the localization of XAB2, AQR, PRP19, and CCDC16 was revealed by immunofluorescence assays at different time points after local UV irradiation of the cells. In this assay, the fluorescence signal from each protein in the damaged area (visualized by a costaining of γH2AX) was compared to the signal from the rest of the nucleus. Unexpectedly, in contrast with all other NER proteins studied so far, we observed a relatively rapid (1 hr after UV irradiation) release of XAB2, AQR, PRP19, and CCDC16 from the damaged area (Figure 3A, B). The proper localization of the XAB2-splicing complex is re-established after the completion of DNA repair reactions when the transcription is fully restarted (16 hr after irradiation; Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig3-v3.jpg)
+
+**Figure 3.:** (A) Representative confocal images of immunofluorescence (IF) against XAB2, AQR, PRP19, or CCDC16 (green) and γH2AX (red) 1 hr after local damage (LD) induction with UV-C (60 J/m2). LDs are indicated by dashed lines. Scale bar: 3 µm. (B) Quantification of the IF signal of the different splicing proteins on the LD after different times of recovery. (C) Quantification of XAB2 signal on LD in different cell lines after different times of recovery. For both graphs, the signal from the local damage has been subtracted from the background of each cell. Error bars represent the standard error of the mean (SEM) obtained from at least 20 cells.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantification of UDS determined by EdU incorporation after LD induction with UV-C (100 J/m2) in WT cells (MRC5 cells) treated with siRNAs against indicated factors. Error bars represent the standard error of the mean (SEM) obtained from at least 15 LDs. P-value of Student’s test compared to siMock condition: ***<0.001. (B) Representative images of UDS for each condition. The position of the local damage is visualized by γH2AX labeling (in red). Nuclei are delimited by dashed lines. Scale bar: 5 µm. (C) Western blot on whole-cell extracts of cells treated with siRNA against indicated factors.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Quantification of TCR-UDS determined by EdU incorporation after local damage induction with UV-C (100 J/m2) in GG-NER-deficient cells (XPC−/− cells) treated with siRNAs against indicated factors. Error bars represent the standard error of the mean (SEM) obtained from at least 15 LDs. P-value of Student’s test compared to siMock condition: ***<0.001. (B) Representative images of TCR-UDS for each condition. The position of the LD is visualized by γH2AX labeling (in red). Nuclei are delimited by dashed lines. Scale bar: 5 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) RRS determined by EU incorporation after UV-C (10 J/m2) exposure in MRC5 cells treated with siRNAs against indicated factors. Error bars represent the standard error of the mean (SEM) obtained from at least 50 cells. P-value of Student’s test compared to siMock condition: ***<0.001. (B) Representative images of RRS for each condition. Nuclei are delimited by dashed lines. Scale bar: 15 µm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** Representative confocal images of IF against XAB2 (green) and γH2AX (red) after local damage induction with UV-C (60 J/m2) in different cell lines. LDs are indicated by dotted lines.
 
 We thus verified if the entire XAB2-splicing complex was involved in TC-NER or whether only XAB2 played a role in this process. In order to measure the repair capacity of cells silenced for XAB2-related proteins, we performed UDS, TCR-UDS, and RRS experiments in AQR/PRP19/CCDC16/PPIE/ISY1-siRNAs treated cells (Figure 3—figure supplements 1–3) and compared the results with XPF-siRNAs treated cell lines. Our results clearly show that none of the cells silenced for XAB2-related proteins are deficient in DNA Repair. Moreover, both GG-NER (Figure 3—figure supplement 1) and TC-NER (Figure 3—figure supplements 2 and 3) are proficient in the absence of AQR, PRP19, CCDC16, PPIE, or ISY1.
 
 In order to investigate whether XAB2 release from damaged areas was dependent on the TC-NER reaction, the localization of XAB2 was detected and quantified within locally damaged areas in TC-NER-deficient cells: CSA (CS3BE) and CSB (CS1AN) mutant cells. Interestingly, the absence of CSA and CSB did not hinder the release of XAB2 from locally damaged areas. However, this release persisted 16 hr after UV-C exposure (Figure 3C blue and red curves compared to black curve and Figure 3—figure supplement 4), suggesting that the re-establishment of the proper localization of XAB2 within the nucleus after the DNA repair process depends either on the repair process per se or on the restart of transcription after the achievement of DNA repair reactions.
 
-## XAB2 dynamic during TC-NER
+### XAB2 dynamic during TC-NER
 
 To further analyze XAB2 mobility within the nuclei, we performed SPOT-FRAP (fluorescent recovery after photobleaching) experiments. In this technique, fluorescence molecules are photobleached in a small spot by a high-intensity laser pulse. Subsequently, fluorescence recovery within the bleached area is monitored over time (Figure 4—figure supplement 1A). When cells are untreated, the measure of fluorescence recovery corresponds to the protein intrinsic mobility within the living cells (Figure 4—figure supplement 1A, black curve). After perturbation of the nuclear environment (e.g., DNA damage), a protein can physically interacts with a new substrate or a slower complex, becoming less mobile (Figure 4—figure supplement 1A, green curve) or on the contrary can be released from its substrate, becoming more mobile (Figure 4—figure supplement 1A, blue curve). Eventually, the protein can also have an unchanged mobility (Figure 4—figure supplement 1A, red curve).
 
 We stably transfected a vector expressing a fluorescent version of XAB2 (XAB2-GFP, Figure 4—figure supplement 1B) in different SV40-immortalized human fibroblast: wild-type cells (MRC5, Figure 4—figure supplement 1C), CSA-deficient cells (CS3BE) and CSB-deficient cells (CS1AN). In order to determine the minimum dose of UV-C needed to detect a significant difference in XAB2 mobility, MRC5 XAB2-GFP cells were irradiated with doses of UV-C ranging from 2 to 16 J/m² and SPOT-FRAP experiments were performed at different time points following UV irradiation (Figure 4A). Interestingly, we observed a dose-dependent increase in mobility of XAB2 (Figure 4A). Doses of UV-C as weak as 2 and 4 J/m² induced a moderate increase in mobility 3 hr post-irradiation and a recovery of the basal XAB2 mobility within 16 hr post-irradiation (Figure 4A, blue and yellow bars). High UV-C doses (16 J/m²) induced a rapid increase in XAB2 mobility (1 hr post-irradiation) and a recovery of the intrinsic mobility 24 hr post-irradiation (Figure 4A, red bar). At intermediate doses of 8 J/m² of UV-C, we observed a significant increase in XAB2 mobility during repair (3 hr after UV-C exposure) and the following return to the normal condition once the repair is completed and transcription restarted (16 hr after irradiation) (Figure 4A, green bar). Interestingly, in CSA and CSB mutant cells, the increase in XAB2 mobility is also observed after 8 J/m² irradiation and lasted until 24 hr after UV-C exposure (Figure 4B), witnessing the fact that in these cells, DNA damage is not repaired and therefore initial intrinsic XAB2 mobility is not restored. Interestingly, without damage, XAB2 mobility is reduced in TC-NER-deficient cells compared to wild-type cells for still unknown reasons (Figure 4B, black histogram).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig4-v3.jpg)
+
+**Figure 4.:** (A) Fluorescent recovery after photobleaching (FRAP) analysis of XAB2-GFP mobility in WT cells. Cells were treated or not with different doses of UV-C (2–16 J/m2) and XAB2 mobility was measured at different time points after UV-C exposure. The No UV condition was used to calculate the change in bound fraction. (B) FRAP analysis of XAB2-GFP expressed in WT cells (MRC5-SV) and TC-NER-deficient cells (CSA −/− and CSB−/−). Cells were treated or not with 8 J/m2 of UV-C. The No UV condition of the WT cell lines was used to calculate the change in bound fraction. (C) FRAP analysis of XAB2-GFP mobility in WT cells after treatment with 100 µg/ml of DRB for 2 hr (red line) or with 10 J/m2 of UV-C for 3 hr (blue line) or nothing (dark curve). Inhibitor of ATR pathway was added at 10 µM in the medium 1 hr before irradiation (green line). For all graphs, error bars represent the standard error of the mean (SEM) obtained from at least 10 cells.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic representation of FRAP experiment and the calculation method used to represent FRAP data in Figure 4A,B and in the graph D of this figure. (B) Schematic representation of the XAB2-GFP construct. (C) Western blot on whole-cell extracts of MRC5 cells transfected with the XAB2-GFP plasmid. (D) FRAP analysis of XAB2-GFP mobility in MRC5 cells. FRAP experiment was performed 3 hr after irradiation with 10 J/m2 of UV-C. Inhibitor of ATM pathway was added at 10 µM in the medium 1 hr before irradiation. The untreated condition was used to calculate the change in bound fraction. Error bars represent the standard error of the mean (SEM) obtained from at least 10 cells.
+
 The results of these experiments directed us to explore the possibility that the change in XAB2 mobility was due to transcription inhibition and not really to the repair process itself. In order to verify this hypothesis, XAB2 mobility was measured after DRB (transcription inhibitor) treatment. Surprisingly, results show that XAB2 increased mobility in transcription inhibition conditions is very similar to the one measured upon UV treatment (Figure 4C, red curve compared to blue curve).
 
 As for XAB2, the mobility of the late-stage spliceosomes changes after UV irradiation. This mobilization depends on DDR signaling pathways (Tresini et al., 2015). Key mediators of DDR are the ATM and ATR kinases, which induce cell cycle arrest and facilitate DNA repair. To demonstrate that the change in XAB2 mobility is due (or not) to the UV-damage response, we realized the same FRAP assays in the presence of ATR and ATM inhibitors. Both drugs did not modify the increase of XAB2 mobility after UV irradiation (Figure 4C, green curve and Figure 4—figure supplement 1D) demonstrating that variations in XAB2 mobility after DNA damage are triggered and sustained by transcriptional inhibition.
 
-## XAB2 is not released from the splicing complex during DNA repair reactions
+### XAB2 is not released from the splicing complex during DNA repair reactions
 
 The increase of XAB2 mobility after UV-induced transcription inhibition could be explained by either the release of XAB2 from a bigger complex and/or the release from an immobile (or nearly immobile) substrate such as the chromatin or a DNA-related substrate.
 
@@ -87,9 +143,33 @@ In parallel, we also verified by PLA whether the binding of XAB2 to AQR was modi
 
 In conclusion, immunoprecipitation or PLA experiment showed that XAB2 is not released from the splicing complex during DNA repair reactions.
 
-## XAB2 is released from R-loops during DNA repair reactions
+### XAB2 is released from R-loops during DNA repair reactions
 
 Interestingly, while trying to immunoprecipitate XAB2 interacting partners during DNA repair reactions, we could observe that systematically and consistently, more XAB2 immunoprecipitated from nuclear extracts 1–3 hr after UV-C irradiation in WT cells (Figure 5—figure supplement 1A and Figure 5A). At 16 hr post-irradiation, we observed that the amount of XAB2 immunoprecipitated was comparable to the level observed in non-irradiated cells. Moreover, in CSA−/− and CSB−/− cell lines, in which UV lesions on transcribed strands of genes are not repaired, the amount of XAB2 immunoprecipitated remained high all along the time course of the experiment (3 and 16 hr) (Figure 5A). These results hinted that the binding between XAB2 and its substrate is not restored in TCR-deficient cells.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig5-v3.jpg)
+
+**Figure 5.:** (A) Immunoprecipitation (IF) of XAB2 in nuclear extract from different cell lines treated with 10 J/m2 of UV-C at different times. Bound proteins were revealed by Western blotting with antibodies against XAB2. INPUT, 10% of the lysate used for IP reaction. (B) IP of R-loops in non-crosslinked chromatin extract from WT cells treated or not with Benzonase. XAB2 bounds to R-loops was revealed by Western blotting. INPUT, 10% of the lysate used for IP reaction. (C) Quantification of IF against R-loops in WT cells treated with siRNAs against indicated factors. Quantification of fluorescent signal in the nucleus against the couple XAB2_R-loops or AQR_R-loops from PLA experiments (D) or from the IF done in parallel to PLA assays (E). Error bars represent the standard error of the mean (SEM) obtained from at least 50 cells. P-value of Student’s test compared to No UV or siMock condition: **<0.01; ***<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunoprecipitation of XAB2 in MRC5 nuclear extract treated with 10 J/m2 of UV-C at different times. Bound proteins were revealed by Western blotting with antibodies against XAB2 and AQR. INPUT, 10% of the lysate used for IP reaction. (B-C) Quantification of fluorescent signal in the nucleus against the couple XAB2_AQR from PLA experiment (B) and from the IF (C) done in parallel to PLA assay with the same antibodies dilution. Error bars represent the standard error of the mean (SEM) obtained from at least 100 cells. P-value of Student’s test compared to No UV condition: **<0.01; ***<0.001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Immunofluorescence using S9.6 antibody with or without cytostripping before fixation step. (B) Quantification method of DNA:RNA hybrid signal inside the nucleus without the nucleolar signal. First, the background outside the nucleus is removed. Then, the area of the nucleus is determined thanks to the DAPI (4',6-diamidino-2-phenylindole) and the signal inside the entire nucleus is calculated. Next, the signal in nucleoli was also determined. Finally, we subtract the signal obtained in nucleoli from the signal obtained in the entire nucleus. Scale bar: 3 µm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Representative images of Figure 5C,IF against R-loops in WT cells treated with siRNAs against indicated factors. Nuclei are delimited by dashed lines. Scale bar: 15 µm. (B) Representative images of Figure 5D, E showing the PLA (red dots) between R-loops (S9.6 rabbit antibodies) and XAB2 (mice antibodies) in MRC5 cells after UV-C treatment (10 J/m2) and the IF done in parallel with the same antibodies dilutions. Nuclei are delimited by dashed lines. Scale bar: 15 µm.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig5-figsupp4-v3.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Quantification of PLA and IF signal against R-loops and RNA. After fixation, permeabilization and then blocking, cells were treated or not with RNAseH for 2 hr. RNA was detected by incorporating an uridine analog followed by a click-it reaction to add a Biotin tag which can then be recognized by a specific antibody. (B) Representative images of (A). Nuclei are delimited by dashed lines. Scale bar: 15 µm. (C, E) Quantification of PLA and IF signal against R-loops and AQR (C) or R-loops and XAB2 (E). Samples were treated or not with RNAseH. (D, F) Representative images of (C) and (E). Nuclei are delimited by dashed lines. Scale bar: 15 µm. P-value of Student’s test compared to without RNAseH condition: ***<0.001.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig5-figsupp5-v3.jpg)
+
+**Figure 5—figure supplement 5.:** (A, B) Quantification of fluorescent signal in the nucleus against the couple XAB2-RNA from PLA experiment (A) or from the IF done in parallel to PLA assay. (B) RNA was detected by incorporating an uridine analog followed by a click-it reaction to add a Biotin tag which can then be recognized by a specific antibody. P-value of Student’s test compared to No UV condition: ***<0.001. (C) Representative images of (A) and (B). Nuclei are delimited by dashed lines. Scale bar: 15 µm.
 
 AQR has a role in removing DNA:RNA hybrids, commonly known as R-loops structure (Sollier et al., 2014) and recently XAB2 was found to be involved in the R-loops resolution (Goulielmaki et al., 2021). We thus decided to investigate the possible interaction between XAB2 and R-loops. Immunoprecipitation experiments with the S9.6 antibody show that XAB2 directly interacts with R-loops (Figure 5B). To test the specificity of the R-loops antibody, nuclear extracts were treated with Benzonase, an enzyme that specifically degrades DNA:RNA hybrids. Interestingly, after Benzonase treatment, XAB2 is no more immunoprecipitated (Figure 5B), suggesting that XAB2 substrate is indeed DNA:RNA hybrids.
 
@@ -99,13 +179,27 @@ Subsequently, we examined whether XAB2 is released from R-loops after DNA damage
 
 These results clearly demonstrate that XAB2 is released from R-loops during DNA repair reactions.
 
-## XAB2 is released from CSA and XPG during DNA repair
+### XAB2 is released from CSA and XPG during DNA repair
 
 Because XAB2 has been found to participate specifically in TCR-NER repair reactions (Figure 1C), we wanted to investigate whether part of the increased XAB2 mobility observed after UV induction was due to a release from repair complexes. We measured, by PLA, the interactions between XAB2 and CSA, CSB, XPB, or XPG proteins, during TC-NER. Among all the proteins tested, we could observe a clear and consistent release from the CSA protein 2 hr after UV irradiation (Figure 6A) and from the XPG protein 1 hr after UV irradiation (Figure 6C). The corresponding IF did not show a decreased quantity of CSA or XPG (Figure 6B, D) which validated the specificity of the XAB2-CSA and XAB2-XPG decreased interactions at those time points. On the contrary, no clear reduction of interaction was observed between XAB2 and CSB (Figure 6—figure supplement 1A, B) or between XAB2 and XPB (Figure 6—figure supplement 1C, D).
 
-## XAB2 depletion modifies RNAP2 behavior
+![Figure 6.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig6-v3.jpg)
+
+**Figure 6.:** Quantification of fluorescent signal in the nucleus against the couple XAB2-CSA (A, B) and XAB2-XPG (C, D) from PLA experiment (A, C) or from the IF done in parallel to PLA assay (B, D). Error bars represent the standard error of the mean (SEM) obtained from at least 80 cells. P-value of Student’s test compared to No UV condition: *<0.05; **<0.01; ***<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Quantification of fluorescent signal in the nucleus against the couple XAB2-CSB (A, B) and XAB2-XPB (C, D) from PLA experiment (A, C) or from the IF done in parallel to PLA assay (B, D). Error bars represent the standard error of the mean (SEM) obtained from at least 80 cells. P-value of Student’s test compared to No UV condition: **<0.01; ***<0.001.
+
+### XAB2 depletion modifies RNAP2 behavior
 
 Because XAB2 was found to interact with RNAP2 (Kuraoka et al., 2008; Nakatsu et al., 2000) and because its increased mobility after irradiation depends on the UV transcription inhibition step, we wanted to explore whether XAB2 depletion might influence the overall RNAP2 mobility. In order to investigate this point, we performed FRAP experiments on RNAP2-GFP expressing cells in the presence or in the absence of XAB2 (Figure 7A; Donnio et al., 2019). Interestingly, depletion of XAB2 significantly increased the mobility of RNAP2 (Figure 7A, dark red curve vs. dark blue curve), demonstrating that XAB2 maintains RNAP2 bound to its substrate during transcription. Interestingly, after UV irradiation, RNAP2 mobility did not change significantly (p-value superior at 0.05), both in the presence and absence of XAB2 (Figure 7A, light curve vs. dark curve).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig7-v3.jpg)
+
+**Figure 7.:** (A) FRAP analysis of RNAP2-GFP expressing WT cells treated or not with UV-C (10 J/m2) after siRNA-mediated knockdown of the indicated factors. Error bars represent the SEM obtained from at least 10 cells. (B, C, D) Quantification of fluorescent signal in the nucleus against the couple RNAP2_6-4PP from PLA experiment (B) or from the IFndone in parallel to PLA assay (C, D). Error bars represent the standard error of the mean (SEM) obtained from at least 80 cells. P-value of Student’s test compared to No UV condition: *<0.05; ***<0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig7-figsupp1-v3.jpg)
 
 Because FRAP experiments might not reveal more subtle changes in protein–substrate interactions, we decided to examine whether the absence of XAB2 might affect the contacts of RNAP2 with UV lesions using the more sensitive PLA assay. Remarkably, we measured a more robust and persistent interaction of RNAP2 with 6-4PP lesions after UV irradiation in XAB2-silenced cells (Figure 7B and Figure 7—figure supplement 1). The corresponding IF shows a reduced increase of 6-4PP in XAB2-silenced cells compared to control cells (Figure 7C and Figure 7—figure supplement 1) while RNAP2 quantity decreases similarly during DNA repair in the presence or absence of XAB2 due to general RNAP2 UV-dependent degradation (Figure 7D and Figure 7—figure supplement 1). These results demonstrate that, without XAB2, DNA is not properly repaired and as a consequence, RNAP2 interacts longer with UV lesions.
 
@@ -145,7 +239,7 @@ In conclusion, we describe here an increased mobility of the protein XAB2 during
 
 ## Materials and methods
 
-## Cell culture and treatments
+### Cell culture and treatments
 
 The cells used in this study come from Erasmus MC in Rotterdam and were: (1) wild-type SV40-immortalized human fibroblasts (MRC5 [RRID:CVCL_D690]); (2) XPC-deficient SV40-immortalized human fibroblast (XP4PA-SV, GG-NER deficient [RRID:CVCL_6E33]); (3) CSA-deficient SV40-immortalized human fibroblast (CS3BE, TC-NER deficient [RRID:CVCL_F631]); (4) CSB-deficient SV40-immortalized human fibroblast (CS1AN, TC-NER deficient [RRID:CVCL_L472]); (5) MRC5-SV stably expressing XAB2-GFP; (6) CS3BE-SV stably expressing XAB2-GFP; (7) CS1AN-SV stably expressing XAB2-GFP; and (8) MRC5-SV stably expressing RNAP2-GFP. All cell lines are regularly tested negative for mycoplasma contamination.
 
@@ -155,33 +249,33 @@ DNA damage was inflicted by UV-C light (254 nm, 6-W lamp). Cells were globally i
 
 Inhibitor of ATR pathway (VE821) and ATM pathway (KU55933) was added at 10 µM in the medium 1 hr before irradiation.
 
-## Construction and expression of RNAP2-GFP and XAB2-GFP fusion protein
+### Construction and expression of RNAP2-GFP and XAB2-GFP fusion protein
 
 Full-length RNAP2 c-DNA was cloned in-frame into the pEGFP-C1 vector (Clontech), and full-length XAB2 cDNA was cloned in-frame into the pEGFP-N1 vector. Constructs were sequenced prior to transfection.
 
 XAB2-GFP and RNAP2-GFP stably expressing cell lines were produced by transfecting XAB2-GFP or RNAP2-GFP in MRC5, CSA, or CSB cells using FuGENE 6 Transfection Reagent (Promega) according to the manufacturer’ protocol. The selection was performed with G418 at 2 mg/ml.
 
-## Transfection of small interfering RNAs
+### Transfection of small interfering RNAs
 
 The small interfering RNA (siRNAs) used in this study are: siMock, Horizon, D-001206-14 (10 nM); siXAB2, Horizon, L-004914-01 (20 nM); siXPF, Horizon, M-019946-00 (10 nM); siAQR, CCAGACCACUUCCCAUUCU (10 nM); siPRP19, GGUGUACAUGGACAUCAAG (10 nM); siCCDC16, GCGAUCUAGUUUCAUUAAA (5 nM); siPPIE, GGCUAUGAGGCAAGUCAAC (5 nM); siISY1, GGAAAUCGAGGUUACAAGU (5 nM) and siCSB, Horizon, L-004888-00 (10 nM). The final concentration used for each siRNA is indicated in parentheses. All siRNA from Horizon are a pool of four different siRNA.
 
 Cells were seeded in 6-well plates and allowed to attach for at least 24 hr. Coverslips were added inside the well if needed for the experiment. Cells were transfected two times with an interval of 24 hr with siRNA using Lipofectamine RNAiMAX reagent (Invitrogen; 13778150) or GenJet (Tebu-Bio), according to the manufacturer’s protocol. Experiments were performed between 24 and 72 hr after the second transfection. Protein knockdown was confirmed for each experiment by Western blot.
 
-## RRS assay
+### RRS assay
 
 MRC5 cells were grown on 18 mm coverslips. siRNA transfections were performed 24 and 48 hr before the RRS assay. RNA detection was done using a Click-iT RNA Alexa Fluor Imaging kit (Invitrogen), according to the manufacturer’s instructions. Briefly, cells were UV-C irradiated (10 J/m²) and incubated for 0, 3, 16, and 24 hr at 37°C. Then, cells were incubated for 2 hr with 100 µM of 5-ethynyl uridine (EU). After fixation with 4% paraformaldehyde (PFA) for 15 min at 37°C and permeabilization with phosphate-buffered saline (PBS) and 0.5% Triton X-100 for 20 min, cells were incubated for 30 min with the Click-iT reaction cocktail containing Alexa Fluor Azide 594. After washing, the coverslips were mounted with Vectashield (Vector). Using ImageJ, the average fluorescence intensity per nucleus was estimated after background subtraction and normalized to not treated cells.
 
 For RRS with siRNA against splicing protein, cells were incubated for 1 hr with 2.5 mM of 5-bromouracile (BrU). Next, the protocol is the same as immunofluorescence. The primary antibody used is mouse anti-BrU diluted in PBS+ (PBS containing 0.15 glycine and 0.5% bovine serum albumin[BSA]) at 1/750 (11170376001 [sigma]).
 
-## RNA fluorescence in situ hybridization
+### RNA fluorescence in situ hybridization
 
 Cells were grown on 18 mm coverslips, washed with warm PBS, and fixed with 4% PFA for 15 min at 37°C. After two washes with PBS, cells were permeabilized with PBS + 0.4% Triton X-100 for 7 min at 4°C. Cells were washed rapidly with PBS before incubation (at least 30 min) with prehybridization buffer: 15% formamide in 2× SSPE (Sodium Chloride-Sodium Phosphate-EDTA) (0.3 M NaCl, 15.7 mM NaH2PO4·H2O, and 2.5 mM EDAT [Ethylenediaminetetraacetic acid] et pH8.0). 35 ng of the probe was diluted in 70 µl of hybridization mix (2× SSPE, 15% formamide, 10% dextran sulfate and 0.5 mg/ml tRNA). Hybridization of the probe was conducted overnight at 37°C in a humidified environment. Subsequently, cells were washed twice for 20 min with prehybridization buffer and once for 20 min with 1× SSPE. After extensive washing with PBS, the coverslips were mounted with Vectashield containing DAPI (Vector). The probe sequence (5′ to 3′) is Cy5-AGACGAGAACGCCTGACACGCACGGCAC.
 
-## UDS or TCR-UDS
+### UDS or TCR-UDS
 
 MRC5-SV (WT) or XP4PA-SV (GG-NER-deficient) cells were grown on 18 mm coverslips. siRNA transfections were performed 24 and 48 hr before UDS assays. After local irradiation at 100 J/m2 with UV-C through a 5 µm pore polycarbonate membrane filter, cells were incubated for 3 or 8 hr (UDS and TCR-UDS, respectively) with 20 µM of EdU (5-ethynyl-2′-deoxyuridine), fixed with 4% PFA for 15 min at 37° C and permeabilized with PBS and 0.5% Triton X-100 for 20 min. Then, cells were blocked with PBS+ (PBS, 0.15% glycine and 0.5% BSA) for 30 min and subsequently incubated for 1 hr at room temperature (RT) with mouse monoclonal anti-γH2AX antibody (Ser139 [Upstate, clone JBW301]) 1:500 diluted in PBS+. After extensive washes with PBS containing 0.5% Triton X-100, cells were incubated for 45 min at RT with secondary antibodies conjugated with Alexa Fluor 594 fluorescent dyes (Molecular Probes, 1:400 dilution in PBS+). Next, cells were washed several times and then incubated for 30 min with the Click-iT reaction cocktail containing Alexa Fluor Azide 488. After washing, the coverslips were mounted with Vectashield containing DAPI (Vector). Images were analyzed as follows using ImageJ and a circle of constant size for all images: (1) the background signal was estimated in the nucleus (avoiding the damage, nucleoli, and other nonspecific signals) and subtracted, (2) the locally damaged area was defined by using the γH2AX staining, and (3) the average fluorescence correlated to the EdU incorporation was then measured and thus an estimation of DNA synthesis after the repair was obtained.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were plated on 12 or 18 mm coverslips to reach 70% confluence on the day of the staining. After two washes with PBS, cells were fixed with 2% PFA for 15 min at 37°C. Cells were permeabilized by three short washes followed by two washes of 10 min with PBS + 0.1% Triton X-100. Blocking of the nonspecific signal was performed with PBS+ (PBS, 0.5% BSA, 0.15% glycine) for at least 30 min. Then, coverslips were incubated with primary antibody diluted in PBS+ for 2 hr at RT or overnight at 4°C in a moist chamber. After several washes with PBS + 0.1% Triton X-100 (three short washes and two of 10 min) and a short wash with PBS+, cells were incubated for 1 hr at RT in a moist chamber with a secondary antibody coupled to a fluorochrome (Goat anti-mouse Alexa Fluor 488 [A11001, Invitrogen] or 594 [A11005] and Goat anti-rabbit Alexa Fluor 488 [A11008] or 594 [A11012], 1/400 dilution in PBS+). After the same washing procedure with PBS instead of PBS + 0.1% Triton X-100, coverslips were finally mounted using Vectashield with DAPI (Vector Laboratories).
 
@@ -193,15 +287,15 @@ For Immunofluorescence with UV lesions antibodies (6-4PP and CPD), a step of DNA
 
 For RNA detection, the protocol was adapted from Petruk et al., 2016. Briefly, cells were incubated for 2 hr with 100 µM of EU. After fixation, permeabilization, and blocking, a Biotin tag was added thanks to a click-it reaction and then recognized by an antibody.
 
-## Proximity Ligation Assay
+### Proximity Ligation Assay
 
 PLA experiments were done using Duolink II secondary antibodies and detection kits (Sigma-Aldrich, #DUO92002, #DUO92004, and #DUO92008) according to the manufacturer’s instructions. The cells were fixed and permeabilized with the same procedure as immunofluorescence. After blocking 1 hr at 37°C with the Blocking Solution from the kit, the primary antibodies diluted in Antibody Diluent was incubated at 4°C overnight. After one quick and three washes of 5 min with PLA buffer A, Duolink secondary antibodies were added and incubated for 1 hr at 37°C. After the same washing procedure with PLA buffer A, if secondary antibodies were in close proximity (<40 nm), they were ligated together to make a closed circle thanks to the incubation of 30 min at 37°C with the Duolink ligation solution. Then, after the same washing procedure, the DNA is amplified and detected by fluorescence 594 thanks to the incubation of 100 min at 37°C with the Duolink amplification solution. After washing with PLA buffer B, coverslips were mounted using Vectashield with DAPI (Vector Laboratories).
 
-## Cytostripping
+### Cytostripping
 
 To remove the background generated by some antibodies or EdU incorporation, the cytoplasm of the cells was removed before fixation. After two washes with cold PBS, cells were incubated on ice 5 min with cold cytoskeleton buffer (10 mM PIPES [piperazin-N,N'-bis(2-ethanesulfonic acide)] pH 6.8; 100 mM NaCl; 300 mM sucrose; 3 mM MgCl2; 1 mM EGTA [egtazic acid]; 0.5% Triton X-100) followed by 5 min with cold cytostripping buffer (10 mM Tris–HCl pH 7.4; 10 mM NaCl; 3 mM MgCl2; 1% Tween 40; 0.5% sodium deoxycholate). After three gentle washes with cold PBS, cells were fixed.
 
-## Images acquisition and analysis
+### Images acquisition and analysis
 
 For RRS, images of the cells were obtained using an Andor spinning disk: Olympus IX 83 inverted microscope, equipped with a Yokaga CSU-X1 Spinning disk Unit and BOREALIS technology for homogeneous illumination. The acquisition software is IQ3.
 
@@ -213,17 +307,17 @@ Images of the cells for each experiment were obtained with the same microscopy s
 
 Error bars represent the standard error of the mean of the biological replicates. Excel was used for statistical analysis and plotting of all the numerical data. Statistics were performed using a Student’s test to compare two different conditions (siMock vs. siRNA X or No UV vs. after irradiation) with the following parameters: two-tailed distribution and two-sample unequal variance (heteroscedastic).
 
-## Primary antibodies used for IF and PLA
+### Primary antibodies used for IF and PLA
 
 Primary antibodies used for immunofluorescence and PLA experiments were anti-6-4PP (mouse, NM-DND-002 [Cosmobio] 1/500 dilution), anti-CPD (mouse, NM-DND-001 [cosmobio], 1/200 dilution), anti-XAB2 (mouse, sc-271037 [Santa Cruz Biotechnology], 1/1000 dilution and rabbit, A303-638A [Béthyl], 1/500 dilution), anti-AQR (IPB160 rabbit, A302-547A [Béthyl], 1/500 dilution), anti-CCDC16 (rabbit, HPA027211 [atlas antibodies], 1/250 dilution), anti-PRP19 (rabbit, ab27699 [abcam], 1/500 dilution), anti-DNA:RNA hybrid clone S9.6 (mouse, MABE1095 [Merck Millipore], 1/100 dilution and rabbit, Ab01137-23.0 [Absolute antibody], 1/100 dilution), anti-Biotin (rabbit, ab1227 [abcam] 1/1000 dilution), anti-CSA (rabbit, GTX100145 [genetex], 1/400 dilution), anti- and anti-CSB (mouse, sc398022 [santa-cruz], 1/200 dilution), anti-XPB (rabbit, sc293 [santa-cruz], 1/500 dilution), and anti-XPG (rabbit, sc84663 [santa-cruz], 1/1000 dilution).
 
-## Fluorescence recovery after photobleaching
+### Fluorescence recovery after photobleaching
 
 FRAP experiments were performed on a Zeiss LSM 780 NLO confocal laser scanning microscope (Zeiss), using a ×40/1.3 oil objective under a controlled environment (37°C, 5% CO2). A narrow region of interest (ROI) centered across the nucleus of a living cell was monitored every 20 ms (1% laser intensity of the 488-nm line of a 25-mW Argon laser) until the fluorescence signal reached a steady state level (after ≈2 s). The same region was then photobleached for 20 ms at 100% laser intensity. Recovery of fluorescence in the bleached ROI was then monitored (1% laser intensity) every 20 ms for about 20 s. Analysis of raw data was performed with the ImageJ software. All FRAP data were normalized to the average prebleached fluorescence after background removal.
 
 XAB2-GFP SPOT FRAP data were analyzed as follows (Figure 4—figure supplement 1). The No UV condition’s average fluorescence (over all cells) was subtracted from the average fluorescence of the UV-treated conditions. The obtained difference between the two FRAP curves was then summed point by point, starting from the bleach up to the following 100 measurements, that is, the area between the curve of interest and the untreated condition curve.
 
-## Protein extraction
+### Protein extraction
 
 For verification of siRNA efficiency, cells were cultured in a 6-well plate. The coverslip needed for the experiment was displaced before fixation, and cells that remained in the dish were collected. The extraction of total proteins has been performed using the PIERCE RIPA buffer (Thermo, #89900) complemented with PIC (Protease Inhibitor Cocktail from ROCHE).
 
@@ -231,15 +325,15 @@ For immunoprecipitation, cells cultured in 10 cm dishes were harvested by scrapi
 
 Protein concentration was determined using the Bradford method. The samples were diluted with Laemmli buffer (10% glycerol, 5% β-mercaptoethanol, 3% sodium dodecyl sulfate, 100 mM Tris–HCl [pH 6.8], bromophenol blue) and heated at 95°C before loading on a SDS-PAGE (sodium dodecyl sulfate–polyacrylamide gel electrophoresis).
 
-## Coimmunoprecipitation
+### Coimmunoprecipitation
 
 For coimmunoprecipitation, 10 µl of protein G magnetic beads (Bio-adembead, Ademtech) were used per IP. 1 µg of anti-XAB2 antibody (rabbit, A303-638A, Bethyl) were bound to the beads in PBS with 3% BSA 3% for 2 hr at 4°C with rotation. 100 µg of nuclear extracts were then incubated with beads–antibodies complex for 2 hr at 4°C with rotation. After two washes at 100 mM salt, two at 150 mM, and one wash at 100 mM, beads were boiled in 2× Laemmli buffer and eluted samples loaded on a SDS–PAGE.
 
-## RNA/DNA hybrid IP
+### RNA/DNA hybrid IP
 
 Non-crosslinked MRC5 cells were lysed in 85 mM KCl, 5 mM PIPES (pH 8.0), and 0.5% NP-40 for 10 min on ice. Pelleted nuclei were resuspended in RSB buffer (10 mM Tris–HCl pH 7.5, 200 mM NaCl, 2.5 mM MgCl2) with 0.2% sodium deoxycholate, 0.1% SDS, 0.05% sodium lauroyl sarcosinate, and 0.5% Triton X-100, and extracts were sonicated for 10 min (Diagenode Bioruptor, 60 cycles high power, 10 s ON and 20 s OFF). Extracts were then diluted 1:4 in RSB with 0.5% Triton X-100 (RSB-T) and subjected to IP with the S9.6 antibody overnight at 4°C. RNaseA was added during IP at 0.1 ng RNaseA per microgram genomic DNA. Then protein G dynabeads (Invitrogen) washed with RSB-T were added and incubated for 3 hr. Beads were washed 4× with RSB-T and 2× with RSB; then eluted in 2× Laemmli buffer for 10 min at 95°C before loading on SDS–PAGE. When indicated, nuclear extracts were treated with 0.25 U/µl Benzonase (Sigma 70664) for 30 min at 37°C before IP.
 
-## Western blot
+### Western blot
 
 Proteins were separated on a SDS–PAGE composed of bisacrylamide (37:5:1), blotted onto a PVDF (polyvinylidene difluoride) membrane (0.45 μm Millipore). The membrane was blocked in PBS-T (PBS and 0.1% Tween 20) with 5% milk and then incubated for 2 hr at RT or overnight at 4°C with the following primary antibodies diluted in milk PBS-T: Rabbit anti-XAB2, A303-638A (Bethyl) 1/1000; Mouse anti-XPF, MS-1351-P1 (NeoMarkers) 1/500; Mouse anti-α-Tubulin, T6074 (Sigma-Aldrich) 1/50,000; Rabbit anti-AQR (A302-547A [Bethyl] 1/2000); Rabbit anti-CCDC16 (A301-419A [Bethyl] 1/2000), Rabbit anti-PPIE (ab154865 [abcam] 1/1000); Rabbit anti-PRP19 (ab27692 [abcam] 1/1000); Rabbit anti-ISY1 (ab121523 [abcam] 1/500); Mouse anti-UBF (sc13125 [santa-cruz] 1/500); and Goat anti-CSB (sc10459 [santa-cruz] 1/100).
 

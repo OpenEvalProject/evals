@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.37621.001 The influence of biomechanics on the tempo and mode of morphological evolution is unresolved, yet is fundamental to organismal diversification. Across multiple four-bar linkage systems in animals, we discovered that rapid morphological evolution (tempo) is associated with mechanical sensitivity (strong correlation between a mechanical system’s output and one or more of its components). Mechanical sensitivity is explained by size: the smallest link(s) are disproportionately affected by length changes and most strongly influence mechanical output. Rate of evolutionary change (tempo) is greatest in the smallest links and trait shifts across phylogeny (mode) occur exclusively via the influential, small links. Our findings illuminate the paradigms of many-to-one mapping, mechanical sensitivity, and constraints: tempo and mode are dominated by strong correlations that exemplify mechanical sensitivity, even in linkage systems known for exhibiting many-to-one mapping. Amidst myriad influences, mechanical sensitivity imparts distinct, predictable footprints on morphological diversity.
+The influence of biomechanics on the tempo and mode of morphological evolution is unresolved, yet is fundamental to organismal diversification. Across multiple four-bar linkage systems in animals, we discovered that rapid morphological evolution (tempo) is associated with mechanical sensitivity (strong correlation between a mechanical system’s output and one or more of its components). Mechanical sensitivity is explained by size: the smallest link(s) are disproportionately affected by length changes and most strongly influence mechanical output. Rate of evolutionary change (tempo) is greatest in the smallest links and trait shifts across phylogeny (mode) occur exclusively via the influential, small links. Our findings illuminate the paradigms of many-to-one mapping, mechanical sensitivity, and constraints: tempo and mode are dominated by strong correlations that exemplify mechanical sensitivity, even in linkage systems known for exhibiting many-to-one mapping. Amidst myriad influences, mechanical sensitivity imparts distinct, predictable footprints on morphological diversity.
 
 ## Introduction
 
@@ -50,9 +50,63 @@ We estimated the Brownian motion evolutionary rate parameter, σ2 (bounded by it
 
 Even though rates of morphological evolution consistently tracked mechanical sensitivity, the particular links associated with mechanical sensitivity differed across the four-bar systems (Supplementary files 3–6 [rotatable 3D phylomorphospace plots]; Table 1). For example, in the cichlid oral four-bar system, mechanical output was positively correlated with input link length (PGLS r2=0.62, p<10−6), inversely correlated with the coupler link length (r2=0.27, p=0.002), and exhibited no relationship with the output link length (Supplementary file 3; Table 1). By contrast, in three systems - the wrasse oral four-bar, the sunfish opercular four-bar, and the stomatopod raptorial four-bar - the output link length was a strong predictor of mechanical output (PGLS r2>0.66, p<10−11), whereas the coupler link only weakly predicted mechanical output (PGLS r2<0.14) (Supplementary files 4–6). The oral four-bars of cichlids and wrasses share a common evolutionary origin (Alfaro et al., 2004); nonetheless, rate differences were predicted by mechanical sensitivity rather than shared ancestry. Hence, analogous four-bar systems do not result in common patterns of mechanical sensitivity, whereas mechanical sensitivity is consistently a strong predictor of evolutionary rate differences.
 
+**Table 1.**
+ Phylogenetic Generalized Least Squares (PGLS) regressions reveal that the relationship between KT and link size (mechanical sensitivity) varies among four-bar linkage systems.In each analysis, the mobile links are predictor variables and kinematic transmission is the response variable.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Cichlids (df = 28)</th>
+    </tr>
+    <tr>
+      <th>Predictor</th>
+      <th>Coeff.±SE</th>
+      <th>T</th>
+      <th>P</th>
+      <th>r2</th>
+      <th>AIC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Input</td>
+      <td>0.63 ± 0.09</td>
+      <td>7.08</td>
+      <td>1.1e-7</td>
+      <td>0.623</td>
+      <td>−119.22</td>
+    </tr>
+    <tr>
+      <td>Output</td>
+      <td>−0.23 ± 0.24</td>
+      <td>−0.96</td>
+      <td>0.343</td>
+      <td>0.002</td>
+      <td>−89.77</td>
+    </tr>
+    <tr>
+      <td>Coupler</td>
+      <td>−0.46 ± 0.14</td>
+      <td>−3.42</td>
+      <td>0.002</td>
+      <td>0.270</td>
+      <td>−98.95</td>
+    </tr>
+  </tbody>
+</table>
+
 We next examined the phylogenetic pattern of trait shifts in KT and each mobile link in the wrasse oral four-bar system. We applied a Bayesian framework in the program bayou (Uyeda and Harmon, 2014) to reconstruct phylogenetic shifts in the Ornstein-Uhlenbeck (OU) optimal trait parameter (θ) for morphological components and mechanical output. The OU model of evolution is characterized by the presence of an adaptive peak, with the peak representing the optimal value for a given trait. Thus, θ reflects the evolutionary optimal trait value as inferred from an OU-process on the phylogeny. To be clear for interdisciplinary readers, θ is not a metric for calculating a biomechanically optimal trait for a certain mechanical function.
 
 By estimating θ across the wrasse phylogeny, we pinpointed the nodes associated with strongly supported shifts to higher or lower values in KT and link size. We performed this analysis only on the largest and most species-rich dataset (wrasses: >100 species sampled), because evolutionary inferences are unstable with fewer than 50 taxa (Uyeda and Harmon, 2014). We detected three well-supported evolutionary shifts in KT (posterior probability [pp] range 0.65–0.99; Supplementary file 7) (Figure 3). For each of these shifts in mechanical output, we also detected strongly supported shifts in the output and input links, but never the coupler link (Figure 3; Figure 3—figure supplement 1). Therefore, the three shifts in KT occur through three different morphological pathways, but only via the changes in the links to which KT is most mechanically sensitive. The evolutionary shifts to higher mechanical output (increased KT) occur twice – once in razorfishes (pp = 0.67) and once in the branch leading to the Creole wrasse, Clepticus parrae (pp = 0.99). In razorfishes, the transition to higher KT is accompanied by a shift to a smaller output link (pp = 0.88), and in Creole wrasse, by both an increase in input link length (pp = 0.97) and a reduction in output link length (pp = 0.77). A transition to lower KT in the Anampses clade is accompanied by a reduction in input link length (pp = 0.95), with no concomitant shifts in output link length.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37621/elife-37621-fig3-v2.jpg)
+
+**Figure 3.:** With each of these transitions in KT, either the input (orange circle) or output link (red circle) also experienced a strongly-supported shift in magnitude (sign indicates directionality of trait shift). The coupler link (blue circle) did not exhibit a strongly-supported shift. These analyses were performed using reversible-jump MCMC which detected significant shifts (optimal trait value, θ) based on the distribution of traits across the phylogeny (KT trait distribution is overlaid as a color map on the tree branches; see Figure 3—figure supplement 1 for color maps of the other trait distributions). The sizes of the circles represent posterior probability (threshold posterior probability for a strongly supported transition was set at > 0.5.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37621/elife-37621-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Color in each phylogeny denotes trait values with the range of values (theta) for each trait given in each legend. Circles denote branches where shifts in trait values were supported (posterior probability >0.5). Circle size denotes posterior probability of trait shifts.
 
 ## Discussion
 
@@ -76,15 +130,15 @@ Deciphering the abiotic and biotic factors impacting the tempo and mode of pheno
 
 ## Materials and methods
 
-## Four-bar linkage mechanics
+### Four-bar linkage mechanics
 
 In the teleost oral four-bar system, the lower jaw (coronoid process - mandible-quadrate joint) functions as the input link and its rotation relative to the fixed link (suspensorium - neurocranium) causes outward rotation in the maxilla (output link), resulting in premaxillary protrusion (Westneat, 1990; Martins, 1994). The teleost opercular four-bar linkage system facilitates feeding through lower jaw movement. In this case, the operculum (input link) rotates relative to the suspensorium (fixed link). This rotation transfers through the interopercle bone and the interopercle-mandible ligament (coupler link), and then to the retroarticular process of the mandible (output link). Rotation of the output link actuates jaw depression, which also contributes to the motion of the oral four-bar system that facilitates feeding via protrusion of the premaxilla (Westneat, 1990; Martins, 1994). During a mantis shrimp strike, the input link (meral-V) rotates distally, relative to the rest of the merus (fixed link) (Patek et al., 2007). This distal rotation releases the stored elastic energy, and pushes the carpus segment (output link), causing it to rotate and actuate the swinging arm. The coupler of the system is an extensor muscle that remains contracted during the strike.
 
-## Morphological, mechanical, and phylogenetic data
+### Morphological, mechanical, and phylogenetic data
 
 Multispecies data from four-bar linkage systems were gathered from previous studies of the raptorial four-bar of mantis shrimp (Order: Stomatopoda), the oral four-bar of wrasses (Family: Labridae) and cichlids (Family: Cichlidae), and the opercular four-bar of sunfish (Family: Centrarchidae). The wrasse morphological and biomechanical dataset (Alfaro et al., 2004) is comprised of 101 species from 32 genera that we pruned down from 122 species using a recent time-calibrated phylogeny (Baliga and Law, 2016). Topology, branch lengths, and divergence times were estimated in a Bayesian framework using a relaxed clock model approach, with both mitochondrial and nuclear genes, and six fossils providing calibration points. The cichlid morphological and biomechanical dataset (Hulsey and Garcia De Leon, 2005) is comprised of 30 species from 13 genera, which we pruned down from the 97 species represented in a recent time-calibrated mitochondrial phylogeny (Hulsey et al., 2010). The sunfish dataset (Hu et al., 2017) consists of morphological and biomechanical data for 19 species from eight genera. The time-calibrated centrarchid phylogeny was estimated using both mitochondrial and nuclear DNA and six fossil calibration points (Near et al., 2005). The stomatopod morphological and biomechanical dataset (Anderson and Patek, 2015) consisted of 36 species from six superfamilies. We used a time-calibrated phylogeny (Porter et al., 2010), which we pruned from 49 species to the 36 analyzed in this study. The tree was constructed using both mitochondrial and nuclear genes, and fossil data defined the calibration points. Phylogenies and tables with raw data are provided in Supplementary files 8–15.
 
-## Strengths and limitations of kinematic transmission
+### Strengths and limitations of kinematic transmission
 
 Kinematic transmission (KT) is the most widely used and readily available metric for characterizing the mechanical output of four-bar linkages (Olsen and Westneat, 2016). KT is calculated as the ratio of angular output motion relative to angular input motion (Hulsey and Wainwright, 2002). All else being equal, KT reflects a tradeoff between displacement and force: a higher KT yields greater displacement through more output rotation relative to input rotation, whereas lower KT yields greater force that occurs at the expense of displacement (Westneat, 1994). A strength of dimensionless metrics like KT is that they allow comparison across diverse groups of organisms. Furthermore, KT is calculated from the angles of rotation during motion and not from the linkages themselves (unlike, for example, mechanical advantage), such that examining the relationship between mechanical output and morphology is not autocorrelative.
 
@@ -92,13 +146,13 @@ Though widely applied and useful in various contexts, there are limitations to t
 
 To assess the effect of static versus dynamic methods for measuring KT, we re-analyzed the previously-collected four-bar linkage data for sunfish and mantis shrimp and calculated static KT measurements. Minimum KT measured previously on sunfish and mantis shrimp was determined by calculating instantaneous KT at every 0.1° of input rotation and using the minimum value found over the entire course of four-bar rotation (Anderson and Patek, 2015; Hu et al., 2017). To convert this dynamic measure to a static KT comparable to those in the wrasse and cichlid datasets, we averaged instantaneous KT over a specified overall input link rotation. For mantis shrimp, we chose an overall input rotation of 9°, which was reported as an average rotation of the meral-V (Patek et al., 2007) and we used minimum KT over this range for subsequent analyses. In sunfish, the overall rotation was set at 5°. We chose this angle because it included the majority of the four-bar rotation, including the point at which minimum KT was found in all but one species (Micropterus coosae). We found that patterns of mechanical sensitivity were not impacted by the use of dynamic or static measures of KT (Supplementary file 16).
 
-## Mechanical sensitivity in four-bar linkage systems
+### Mechanical sensitivity in four-bar linkage systems
 
 To estimate mechanical sensitivity in each four-bar linkage system, we measured the relationship between KT and morphology (link length). To account for differences in scale, we log-transformed all traits prior to analyses (Gingerich, 2009; O'Meara et al., 2006; Ackerly, 2009; Adams, 2013). Relatedness is assumed to result in similar residuals from least-squares regressions, indicating non-independence of data points (Felsenstein, 1985). However, the extent to which phylogeny impacts the covariance structure of the residuals can vary substantially (Revell, 2010). To account for this, we employed a phylogenetic generalized least squares (PGLS) analysis, in which the maximum likelihood estimate of phylogenetic signal (λ) in the residual error is simultaneously estimated with the regression parameters. This method outperforms other approaches (including non-phylogenetic approaches) under a wide range of conditions (Revell, 2010). Regressions were performed using the pgls function in the R package caper with KT as the response variable and size-corrected linkages as the predictor variables (Orme et al., 2012; R Core Development Team, 2014). Following established methods in fish (Westneat, 1990; Westneat, 1994) and mantis shrimp (Anderson et al., 2014; Anderson and Patek, 2015; Muñoz et al., 2017), size-independent linkage measurements were calculated by dividing the output, input, and coupler links by the length of the fixed link. Nonetheless, estimates of mechanical sensitivity were robust to alternative size corrections (Supplementary file 17).
 
 To visualize variation in mechanical sensitivity among links, we created rotatable 3D phylomorphospace plots for each system (phylomorphospace3d function, phytools package, Revell, 2010; interactive HTML plots: rglwidget function in the rgl package (https://r-forge.r-project.org/projects/rgl/).
 
-## Testing for differences in evolutionary rates (tempo) and trait shifts (mode)
+### Testing for differences in evolutionary rates (tempo) and trait shifts (mode)
 
 We estimated and compared the Brownian Motion (BM) rate parameter (σ2) for the output, input, and coupler links using a likelihood ratio test. Specifically, we compared the likelihood of a model in which σ2 varied among traits to one in which the rates were constrained to be equal (Adams, 2013). Because all traits are linear and were log-transformed, differences in evolutionary rates represent the amount of relative change in proportion to the mean and can be statistically compared (O'Meara et al., 2006; Ackerly, 2009; Adams, 2013). We bounded our estimates of σ2 using a 95% confidence interval, which we derived from the standard errors of evolutionary rate. We obtained standard errors from the square root diagonals of the inverse Hessian matrix, using code provided by D. Adams. We then fitted a model in which rates of link evolution were constrained to be equal (null hypothesis: σ2input = σ2output = σ2coupler) and a model in which evolutionary rates were free to vary among links (σ2input ≠ σ2output ≠ σ2coupler), and compared the models using likelihood ratio tests (Adams, 2013). We performed the same rate comparisons on every pairwise combination of mobile links. To connect evolutionary rate differences to mechanical sensitivity, we calculated the correlation between KT and link length for each system using phylogenetic generalized least squares regression (PGLS).
 

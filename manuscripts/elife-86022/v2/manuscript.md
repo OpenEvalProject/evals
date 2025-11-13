@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03k1gpj17 Molecular, Cellular and Integrative Neurosciences Program, Colorado State University Fort Collins United States
-2. https://ror.org/03k1gpj17 Department of Biomedical Sciences, Colorado State University Fort Collins United States
-3. https://ror.org/0190ak572 Department of Cell Biology, New York University Grossman School of Medicine New York United States
+1. Molecular, Cellular and Integrative Neurosciences Program, Colorado State University Fort Collins United States ([ROR:03k1gpj17](https://ror.org/03k1gpj17))
+2. Department of Biomedical Sciences, Colorado State University Fort Collins United States ([ROR:03k1gpj17](https://ror.org/03k1gpj17))
+3. Department of Cell Biology, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 
 ## Abstract
 
-Ketamine is shown to enhance excitatory synaptic drive in multiple brain areas, which is presumed to underlie its rapid antidepressant effects. Moreover, ketamine’s therapeutic actions are likely mediated by enhancing neuronal Ca 2+ signaling. However, ketamine is a noncompetitive NMDA receptor (NMDAR) antagonist that reduces excitatory synaptic transmission and postsynaptic Ca 2+ signaling. Thus, it is a puzzling question how ketamine enhances glutamatergic and Ca 2+ activity in neurons to induce rapid antidepressant effects while blocking NMDARs in the hippocampus. Here, we find that ketamine treatment in cultured mouse hippocampal neurons significantly reduces Ca 2+ and calcineurin activity to elevate AMPA receptor (AMPAR) subunit GluA1 phosphorylation. This phosphorylation ultimately leads to the expression of Ca 2+ -Permeable, GluA2-lacking, and GluA1-containing AMPARs (CP-AMPARs). The ketamine-induced expression of CP-AMPARs enhances glutamatergic activity and glutamate receptor plasticity in cultured hippocampal neurons. Moreover, when a sub-anesthetic dose of ketamine is given to mice, it increases synaptic GluA1 levels, but not GluA2, and GluA1 phosphorylation in the hippocampus within 1 hr after treatment. These changes are likely mediated by ketamine-induced reduction of calcineurin activity in the hippocampus. Using the open field and tail suspension tests, we demonstrate that a low dose of ketamine rapidly reduces anxiety-like and depression-like behaviors in both male and female mice. However, when in vivo treatment of a CP-AMPAR antagonist abolishes the ketamine’s effects on animals’ behaviors. We thus discover that ketamine at the low dose promotes the expression of CP-AMPARs via reduction of calcineurin activity, which in turn enhances synaptic strength to induce rapid antidepressant actions.
+Ketamine is shown to enhance excitatory synaptic drive in multiple brain areas, which is presumed to underlie its rapid antidepressant effects. Moreover, ketamine’s therapeutic actions are likely mediated by enhancing neuronal Ca2+ signaling. However, ketamine is a noncompetitive NMDA receptor (NMDAR) antagonist that reduces excitatory synaptic transmission and postsynaptic Ca2+ signaling. Thus, it is a puzzling question how ketamine enhances glutamatergic and Ca2+ activity in neurons to induce rapid antidepressant effects while blocking NMDARs in the hippocampus. Here, we find that ketamine treatment in cultured mouse hippocampal neurons significantly reduces Ca2+ and calcineurin activity to elevate AMPA receptor (AMPAR) subunit GluA1 phosphorylation. This phosphorylation ultimately leads to the expression of Ca2+-Permeable, GluA2-lacking, and GluA1-containing AMPARs (CP-AMPARs). The ketamine-induced expression of CP-AMPARs enhances glutamatergic activity and glutamate receptor plasticity in cultured hippocampal neurons. Moreover, when a sub-anesthetic dose of ketamine is given to mice, it increases synaptic GluA1 levels, but not GluA2, and GluA1 phosphorylation in the hippocampus within 1 hr after treatment. These changes are likely mediated by ketamine-induced reduction of calcineurin activity in the hippocampus. Using the open field and tail suspension tests, we demonstrate that a low dose of ketamine rapidly reduces anxiety-like and depression-like behaviors in both male and female mice. However, when in vivo treatment of a CP-AMPAR antagonist abolishes the ketamine’s effects on animals’ behaviors. We thus discover that ketamine at the low dose promotes the expression of CP-AMPARs via reduction of calcineurin activity, which in turn enhances synaptic strength to induce rapid antidepressant actions.
 
 ## Introduction
 
@@ -37,65 +37,65 @@ There are two distinct types of AMPARs formed through combination of their subun
 
 ## Results
 
-## Ketamine treatment selectively increases GluA1-containing AMPAR surface expression by decreasing calcineurin activity in cultured mouse hippocampal neurons
+### Ketamine treatment selectively increases GluA1-containing AMPAR surface expression by decreasing calcineurin activity in cultured mouse hippocampal neurons
 
 A large body of studies has found increased levels of GluA1 in the hippocampus after ketamine treatment in rodents; however, the results for other subunits' expression are less reliable (Li et al., 2010; Nosyreva et al., 2013; Koike and Chaki, 2014; Yang et al., 2016; Zanos et al., 2016; Georgiou et al., 2022). This led us to examined whether ketamine treatment changed surface expression of AMPAR subunits in cultured mouse hippocampal neurons. We treated 14 days in vitro (DIV) cultured mouse hippocampal neurons with 1 μM ketamine, the estimated concentration in the human brain after intravenous infusion of the therapeutic dose (Hartvig et al., 1995), for 1 hr and measured surface expression of AMPAR subunit GluA1 and GluA2 using biotinylation and immunoblots as shown previously (Kim et al., 2014; Kim et al., 2015b; Kim et al., 2015a; Sztukowski et al., 2018; Sun et al., 2019; Roberts et al., 2021). We found that ketamine treatment selectively increased surface expression of GluA1 when compared to the control (CTRL) (CTRL, 1.000 and ketamine, 1.598±0.543, p=0.0039), but not GluA2 (CTRL, 1.000 and ketamine, 1.121±0.464, p=0.6498; Figure 1a). As GluA1 phosphorylation at serine 831 (pGluA1-S831) and serine 845 (pGluA1-S845) are known to regulate GluA1-containing AMPAR surface trafficking (Diering and Huganir, 2018), we examined pGluA1-S831 and pGluA1-S845 levels one hour after 1 μM ketamine treatment in 14 DIV cultured hippocampal neurons as shown previously (Sathler et al., 2021). We found significantly higher pGluA1-S831 (CTRL, 1.000 and ketamine, 1.967±0.488, p=0.0149) and pGluA1-S845 levels (CTRL, 1.000 and ketamine, 2.399±1.024, p=0.0051) in ketamine-treated neurons than in the control (CTRL) (Figure 1b). This shows that ketamine treatment in cultured hippocampal neurons selectively increases GluA1 surface expression by increasing pGluA1-S831 and pGluA1-S845, which is consistent with the previous findings showing crucial role of GluA1 phosphorylation in rapid antidepressant responses of ketamine (Zhang et al., 2016; Zhang et al., 2017; Asim et al., 2022).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/86022/elife-86022-fig1-v2.jpg)
 
-**Figure 1.:** (a) Representative immunoblots of input (I) and surface (S) levels in control (CTRL) and ketamine-treated neurons. Summary bar graphs of normalized surface GluA1 and GluA2 levels in each condition (n=11 immunoblots from 4 independent cultures, **p<0.01, the Kruskal-Wallis test with the Dunn’s test). (b) Representative immunoblots of pGluA1 levels in control (CTRL) and ketamine-treated neurons. Summary graphs of normalized GluA1 phosphorylation levels in each condition (n=6 immunoblots from three independent cultures, *p<0.05 and **p<0.01, the Kruskal-Wallis test with the Dunn’s test). (c) Representative traces of GCaMP7s signals in excitatory cells and summary data of normalized total Ca2+ activity in each condition (n=number of neurons from two independent cultures, CTRL = 46, 1 μM Ketamine = 49, 10 μM Ketamine = 27, and 20 μM Ketamine = 26, *p<0.05 and ****p<0.0001, One-way ANOVA with the Tukey test). (d) Representative images of a CFP channel, a FRET channel, and a pseudocolored emission ratio (Y/C) in each condition [blue (L), low emission ratio; red (H), high emission ratio]. Scale bar is 10 µm. A summary graph showing average of emission ratio (Y/C) in each condition (n= number of cells, CTRL = 47, ketamine = 44, and FK506=20 from two independent cultures; *p<0.05 and ****p<0.0001; One-way ANOVA with the Tukey test). A scale bar indicates 10 μm. The position of molecular mass markers (kDa) is shown on the right of the blots. Mean ± SD.Figure 1—source data 1.Figure 1a and b.
+**Figure 1.:** (a) Representative immunoblots of input (I) and surface (S) levels in control (CTRL) and ketamine-treated neurons. Summary bar graphs of normalized surface GluA1 and GluA2 levels in each condition (n=11 immunoblots from 4 independent cultures, **p<0.01, the Kruskal-Wallis test with the Dunn’s test). (b) Representative immunoblots of pGluA1 levels in control (CTRL) and ketamine-treated neurons. Summary graphs of normalized GluA1 phosphorylation levels in each condition (n=6 immunoblots from three independent cultures, *p<0.05 and **p<0.01, the Kruskal-Wallis test with the Dunn’s test). (c) Representative traces of GCaMP7s signals in excitatory cells and summary data of normalized total Ca2+ activity in each condition (n=number of neurons from two independent cultures, CTRL = 46, 1 μM Ketamine = 49, 10 μM Ketamine = 27, and 20 μM Ketamine = 26, *p<0.05 and ****p<0.0001, One-way ANOVA with the Tukey test). (d) Representative images of a CFP channel, a FRET channel, and a pseudocolored emission ratio (Y/C) in each condition [blue (L), low emission ratio; red (H), high emission ratio]. Scale bar is 10 µm. A summary graph showing average of emission ratio (Y/C) in each condition (n= number of cells, CTRL = 47, ketamine = 44, and FK506=20 from two independent cultures; *p<0.05 and ****p<0.0001; One-way ANOVA with the Tukey test). A scale bar indicates 10 μm. The position of molecular mass markers (kDa) is shown on the right of the blots. Mean ± SD.
 
 We have previously shown that a decrease in Ca2+-dependent phosphatase calcineurin activity significantly increases pGluA1-S845 and GluA1 surface expression (Kim et al., 2014). Previous studies have shown that 1 μM ketamine treatment can reduce ~50% of NMDA-induced currents (Hare et al., 2019), whereas 10 μM is sufficient to block ~80% of NMDA-induced currents (Halliwell et al., 1989). Therefore, ketamine treatment can reduce neuronal Ca2+ activity in the dosage-dependent manner, which in turn decreases calcineurin activity to elevate GluA1 phosphorylation and GluA1 surface expression. We thus examined whether ketamine treatment affected Ca2+ activity in 14 DIV cultured hippocampal excitatory neurons using the previously described method with modification (Kim et al., 2014; Kim et al., 2015b; Kim et al., 2015a; Sztukowski et al., 2018; Sun et al., 2019; Roberts et al., 2021). For Ca2+ imaging, a genetically encoded Ca2+ indicator, GCaMP7s (Dana et al., 2019), was used to measure spontaneous somatic Ca2+ activity in cultured hippocampal excitatory neurons in the presence of 1, 10, or 20 μM ketamine. We measured spontaneous Ca2+ activity right after ketamine was treated, As consistent with the previous findings (Halliwell et al., 1989; Hare et al., 2019), we found a significant reduction in Ca2+ activity in ketamine-treated neurons compared to control cells (CTRL) in the dosage-dependent manner (CTRL, 1.000±0.432 F/Fmin, 1 μM ketamine, 0.820±0.363 F/Fmin, p=0.036, 10 μM ketamine, 0.069±0.099 F/Fmin, p<0.0001, and 20 μM ketamine, 0.000 F/Fmin, p<0.0001) (Figure 1c). This demonstrates that ketamine treatment significantly reduces neuronal Ca2+ activity in cultured hippocampal excitatory cells in the dosage-dependent manner.
 
 To measure intracellular calcineurin activity directly, we used a Fluorescence Resonance Energy Transfer (FRET)-based calcineurin activity sensor as shown previously (Kim et al., 2014; Mehta and Zhang, 2014; Kim et al., 2015b; Kim et al., 2015a; Sun et al., 2019). We generated Sindbis virus to express the calcineurin activity sensor in cells (Osten et al., 2000). CFP, YFP, and FRET images in the soma of 14 DIV cultured hippocampal neurons were acquired 36 hr after infection, and the emission ratio was calculated as shown previously (Kim et al., 2014; Kim et al., 2015b; Kim et al., 2015a; Sun et al., 2019). We found that calcineurin activity was significantly decreased after one-hour 1 μM ketamine treatment compared to the control (CTRL) (CTRL, 1.000±0.106 and ketamine, 0.942±0.051, p=0.0170) (Figure 1d). Following one hour treatment of 5 μM FK506, a calcineurin inhibitor (Liu et al., 1991), calcineurin activity was markedly reduced compared to the control (CTRL; FK506, 0.806±0.150, p<0.0001) (Figure 1d) as shown previously (Kim et al., 2014). Taken together, ketamine-mediated NMDAR antagonism reduces neuronal Ca2+ and calcineurin activity, which leads to a selective increase in GluA1 phosphorylation and GluA1-contraining AMPAR surface expression in cultured hippocampal neurons.
 
-## Ketamine treatment induces CP-AMPAR expression to enhance glutamatergic activity and glutamate receptor plasticity in cultured mouse hippocampal neurons
+### Ketamine treatment induces CP-AMPAR expression to enhance glutamatergic activity and glutamate receptor plasticity in cultured mouse hippocampal neurons
 
 We next examined how ketamine affected glutamatergic activity in cultured hippocampal excitatory neurons. Given that neuronal Ca2+ is the secondary messenger responsible for transmitting depolarization status and synaptic activity (Gleichmann and Mattson, 2011), we carried out somatic Ca2+ imaging with glutamate uncaging in cultured mouse hippocampal excitatory neurons to measure glutamatergic activity. We treated 14 DIV hippocampal cultures with 1 μM ketamine for 1 hr and measured glutamate-induced Ca2+ signals. Glutamatergic activity was significantly higher in ketamine-treated neurons than control cells (CTRL) (CTRL, 1.000±0.278 F/F0 and ketamine, 1.289±0.334 F/F0, p=0.0022; Figure 2a). Because CP-AMPARs have larger single channel conductance (Diering and Huganir, 2018), we examined whether an increase in glutamatergic activity following ketamine treatment was mediated by CP-AMPARs. To do so, we treated hippocampal neurons with 1 μM ketamine for 1 hr and carried out Ca2+ imaging with glutamate uncaging in the presence of 20 μM 1-naphthyl acetyl spermine (NASPM), a CP-AMPAR blocker. NASPM treatment was sufficient to abolish a ketamine-induced increase in glutamatergic activity (Ketamine +NASPM, 0.961±0.464 F/F0, p=0.0006), while it had no effect on control cells (CTRL) (CTRL +NASPM, 0.965±0.350 F/F0, p=0.9603) (Figure 2a). This shows that ketamine treatment induces CP-AMPAR expression and increases glutamatergic activity in cultured hippocampal excitatory neurons.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/86022/elife-86022-fig2-v2.jpg)
 
-**Figure 2.:** (a) Average traces of virally expressed GCaMP7s signals, and summary data of normalized peak amplitude in each condition (n=number of neurons, CTRL = 33, NASPM = 32, Ketamine = 37, and Ketamine +NASPM = 24 from two independent cultures; **p<0.01 and ***p<0.001; Two-way ANOVA with the Tukey test). An arrow indicates photostimulation. Representative immunoblots and quantitative analysis of (b) pGluA1-S831 and (c) pGluA1-S845 levels in each condition (n=10 immunoblots from five independent cultures, **p<0.01, ***p<0.001, and ****p<0.0001, the Kruskal-Wallis test with the Dunn’s test). The position of molecular mass markers (kDa) is shown on the right of the blots. Mean ± SD.Figure 2—source data 1.Figure 2b and c.
+**Figure 2.:** (a) Average traces of virally expressed GCaMP7s signals, and summary data of normalized peak amplitude in each condition (n=number of neurons, CTRL = 33, NASPM = 32, Ketamine = 37, and Ketamine +NASPM = 24 from two independent cultures; **p<0.01 and ***p<0.001; Two-way ANOVA with the Tukey test). An arrow indicates photostimulation. Representative immunoblots and quantitative analysis of (b) pGluA1-S831 and (c) pGluA1-S845 levels in each condition (n=10 immunoblots from five independent cultures, **p<0.01, ***p<0.001, and ****p<0.0001, the Kruskal-Wallis test with the Dunn’s test). The position of molecular mass markers (kDa) is shown on the right of the blots. Mean ± SD.
 
 Ketamine’s antidepressant effects are shown to be mediated by enhancing neural plasticity (Grieco et al., 2022). Specifically, ketamine enhances long-term potentiation (LTP) in the hippocampus, which contributes to antidepressant actions (Yang et al., 2018a; Aleksandrova et al., 2020). Moreover, CP-AMPARs can initiate LTP in the hippocampus particularly when NMDARs are blocked (Jia et al., 1996). We thus treated 14 DIV cultured hippocampal neurons with a glycine-based buffer, well-established to induce a form of chemically induced glutamate receptor-dependent LTP (cLTP) as shown previously (Roberts et al., 2021; Sathler et al., 2021) to examine whether ketamine enhanced glutamate receptor plasticity via the expression of CP-AMPARs. Following cLTP induction, pGluA1-S831 (CTRL, 1.000 and cLTP, 3.879±1.764, p=0.0027) and pGluA1-S845 levels (CTRL, 1.000 and cLTP, 4.658±2.090, p=0.0018) were significantly elevated in control neurons (CTRL), an indication of cLTP expression (Figure 2b–c). We next treated neurons with 1 μM ketamine for one hour, then induced cLTP, and measured GluA1 phosphorylation. When compared to neurons without ketamine treatment, pGluA1-S831 (Ketamine +cLTP, 8.978±4.861, p=0.0276) and pGluA1-S845 levels (Ketamine +cLTP, 11.73±6.717, p=0.0311) were significantly higher in ketamine-treated neurons, an indication of enhanced cLTP expression (Figure 2b–c). Importantly, a ketamine-induced increase in GluA1 phosphorylation was completely abolished when CP-AMPARs were blocked by treating neurons with 20 μM NASPM during cLTP (pGluA1-S831; Ketamine +cLTP + NASPM, 4.592±3.343, p=0.0299, and pGluA1-S845; Ketamine +cLTP + NASPM, 4.890±3.301, p=0.0279; Figure 2b–c). Notably, blocking CP-AMPARs had no effect on cLTP expression in the absence of ketamine treatment (pGluA1-S831; cLTP +NASPM, 3.684±2.503, p=0.7002, and pGluA1-S845; cLTP +NASPM, 3.724±2.275, p=0.4980; Figure 2b–c). Taken together, we demonstrate that ketamine enhances glutamate receptor plasticity via the expression of CP-AMPARs in cultured hippocampal cells.
 
-## Synaptic GluA1 levels are selectively increased in the hippocampus following ketamine treatment
+### Synaptic GluA1 levels are selectively increased in the hippocampus following ketamine treatment
 
 Given that ketamine selectively increases GluA1 phosphorylation and GluA1-contraining AMPAR surface expression in cultured hippocampal neurons (Figure 1a–b), we examined whether ketamine treatment upregulates synaptic GluA1 and GluA2 levels in the mouse hippocampus. A low dose of ketamine (10 mg/kg), a condition that is shown to change hippocampal AMPAR expression in mice (Zanos et al., 2016), was intraperitoneally injected to 3-month-old male and female CD-1 mice, and saline was injected as a control. The postsynaptic density (PSD) fractions of the hippocampus were collected one hour after ketamine or saline injection, and synaptic GluA1, GluA2, pGluA1-S831, and pGluA1-S845 levels were measured by immunoblots as shown previously (Kim et al., 2015b; Kim et al., 2015a; Farooq et al., 2017; Kim et al., 2018). In male mice, we found GluA1 (CTRL, 1.000 and ketamine, 2.057±0.763, p=0.0005), pGluA1-S831 (CTRL, 1.000 and ketamine, 1.624±0.489, p=0.0158), and pGluA1-S845 levels (CTRL, 1.000 and ketamine, 1.480±0.243, p=0.0339), but not GluA2 levels (CTRL, 1.000 and ketamine, 1.088±0.383, p>0.9999), were significantly higher in the ketamine-treated hippocampal PSD fractions than the control (CTRL; Figure 3a). This shows that ketamine at the low dose significantly elevates synaptic GluA1 levels, which are likely mediated by increasing GluA1 phosphorylation in the male hippocampus, consistent with our findings in cultured hippocampal cells.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/86022/elife-86022-fig3-v2.jpg)
 
-**Figure 3.:** Representative immunoblots of AMPAR levels in the hippocampus of control (CTRL) and ketamine-treated (a) male (10 mg/Kg ketamine), (b) female (10 mg/kg ketamine), and (c) female (5 mg/Kg ketamine) mice. Summary graphs of normalized GluA1, GluA2, and GluA1 phosphorylation levels in each condition (n=number of immunoblots from 4 male and 3 female mice in each condition; Male (10 mg/Kg ketamine), CTRL = 8, GluA1=8, GluA2=8, pS831=7, and pS845=7, Females (10 mg/kg ketamine), CTRL = 14, GluA1=14, GluA2=14, pS831=12, and pS845=12, and Female (5 mg/Kg ketamine), CTRL = 10, GluA1=10, GluA2=10, pS831=6, and pS845=6, *p<0.05, **p<0.01, and ***p<0.001; the Kruskal-Wallis test with the Dunn’s test). The position of molecular mass markers (kDa) is shown on the right of the blots. Mean ± SD.Figure 3—source data 1.Figure 3a, b and c.
+**Figure 3.:** Representative immunoblots of AMPAR levels in the hippocampus of control (CTRL) and ketamine-treated (a) male (10 mg/Kg ketamine), (b) female (10 mg/kg ketamine), and (c) female (5 mg/Kg ketamine) mice. Summary graphs of normalized GluA1, GluA2, and GluA1 phosphorylation levels in each condition (n=number of immunoblots from 4 male and 3 female mice in each condition; Male (10 mg/Kg ketamine), CTRL = 8, GluA1=8, GluA2=8, pS831=7, and pS845=7, Females (10 mg/kg ketamine), CTRL = 14, GluA1=14, GluA2=14, pS831=12, and pS845=12, and Female (5 mg/Kg ketamine), CTRL = 10, GluA1=10, GluA2=10, pS831=6, and pS845=6, *p<0.05, **p<0.01, and ***p<0.001; the Kruskal-Wallis test with the Dunn’s test). The position of molecular mass markers (kDa) is shown on the right of the blots. Mean ± SD.
 
 In contrast to male mice, 10 mg/kg ketamine injection in female mice significantly increased GluA1 (CTRL, 1.000 and ketamine, 1.224±0.324, p=0.0303), GluA2 (CTRL, 1.000 and ketamine, 1.393±0.304, p=0.0002), pGluA1-S831 (CTRL, 1.000 and ketamine, 1.296±0.319, p=0.0022), and pGluA1-S845 levels (CTRL, 1.000 and ketamine, 1.394±0.435, p=0.0014) in the PSD fractions (Figure 3b). This shows that ketamine at the low dose significantly increases both GluA1 and GluA2 levels in female hippocampal synapses. Interestingly, studies reveal that female rodents consistently respond to a lower dose of ketamine than male animals on depression-like behavioral tests, including forced swim test and novelty suppressed feeding test (Carrier and Kabbaj, 2013; Franceschelli et al., 2015; Zanos et al., 2016; Dossat et al., 2018). We thus used a lower dose of ketamine (5 mg/kg) in female mice and examined synaptic GluA1 and GluA2 expression in the hippocampus to address if this sex difference in ketamine’s effects on synaptic AMPAR expression in the hippocampus is dependent on ketamine concentration. The hippocampal PSD fractions were isolated one hour after 5 mg/kg ketamine or saline injection, and synaptic AMPAR levels were measured as shown above. Like male mice, synaptic GluA1 (CTRL, 1.000 and ketamine, 1.420±0.361, p=0.0053), pGluA1-S831 (CTRL, 1.000 and ketamine, 2.151±1.337, p=0.0014), and pGluA1-S845 levels (CTRL, 1.000 and ketamine, 2.330±1.177, p=0.0031) were significantly increased in the ketamine-treated female hippocampal synapses than the control, while GluA2 levels were not affected by ketamine (CTRL, 1.000 and ketamine, 0.952±0.260, p>0.9999) (Figure 3c). This demonstrates that a lower dose of ketamine (5 mg/kg) is sufficient to increase synaptic GluA1 levels by increasing GluA1 phosphorylation in the female hippocampus.
 
-## Ketamine treatment significantly reduces anxiety-like behavior in mice, which requires CP-AMPARs
+### Ketamine treatment significantly reduces anxiety-like behavior in mice, which requires CP-AMPARs
 
 We next examined whether ketamine treatment affects anxiety-like behavior in mice using the open field test as shown previously (Shou et al., 2019). Ten mg/kg ketamine was intraperitoneally injected to 3-month-old male and female CD-1 mice, and saline was administered to a control. One hour after the injection, we measured total distance traveled (locomotor activity) and total time spent outside and inside (anxiety-like behavior) in the open field chamber. It has been shown that ketamine treatment in rodents induces hyperlocomotion and reduces anxiety-like behavior (Hetzler and Wautlet, 1985; Irifune et al., 1991; Razoux et al., 2007; Chatterjee et al., 2011; de Araújo et al., 2011; Akillioglu et al., 2012). Consistent with these findings, ketamine injection significantly increased total distance travelled compared to controls (CTRL) in male mice, an indication of hyperlocomotion (CTRL, 35.244±15.704 m and ketamine, 47.964±0.361 m, p=0.0382; Figure 4a). Furthermore, ketamine-treated male mice spent less time outside (CTRL, 1104.007±54.881 seconds and ketamine, 1048.647±50.779 seconds, p=0.0094) but more time inside (CTRL, 95.993±54.881 seconds and ketamine, 151.353±50.779, p=0.0094) than control mice, indicating decreased anxiety-like behavior (Figure 4a). To determine whether CP-AMPARs were required for these behavioral changes, we intraperitoneally administered 10 mg/kg IEM-1460, the concentration that is sufficient to show drug effects in animals (Szczurowska and Mareš, 2015; Adotevi et al., 2020), to ketamine-treated and saline-injected mice and performed the open field test one hour after drug injection. We found that blocking CP-AMPARs was sufficient to abolish the ketamine’s effects in the open field test (Total distance travelled; Ketamine +IEM-1460, 33.069±10.000 m, p=0.0129, Time spent outside; Ketamine +IEM-1460, 1128.464±27.927 seconds, p=0.0001, and Time spent inside; Ketamine +IEM-1460, 71.536±27.927 seconds, p=0.0001) (Figure 4a). Conversely, IEM-1460 treatment had no effect on animals’ behavior in the absence of ketamine (Total distance travelled; CTRL +IEM-1460, 30.782±13.867 m, p=0.8087, Time spent outside; CTRL +IEM-1460, 1134.809±44.172 seconds, p=0.3410, and Time spent inside; CTRL +IEM-1460, 65.191±44.172 seconds, p=0.3410) (Figure 4a). This shows that 10 mg/kg ketamine treatment significantly reduces male animals’ anxiety-like behavior in the open field test, which is mediated by CP-AMPARs.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/86022/elife-86022-fig4-v2.jpg)
 
-**Figure 4.:** The results of the open-field test measuring total distance travelled and time spent outside and inside in (a) male (10 mg/Kg ketamine), (b) females (10 mg/kg ketamine), and (c) females (5 mg/Kg ketamine) mice in each condition (n=number of mice, Male (10 mg/Kg ketamine); saline = 15, IEM 1460=11, Ketamine = 15, and Ketamine +IEM 1460=14, Female (10 mg/kg ketamine); saline = 18, IEM 1460=12, Ketamine = 20, and Ketamine +IEM 1460=17, and Female (5 mg/kg ketamine); saline = 20, IEM 1460=11, Ketamine = 8, and Ketamine +IEM 1460=10, *p<0.05, **p<0.01, and ***p<0.001, Two-way ANOVA with the Tukey test). Mean ± SD.Figure 4—source data 1.Figure 4a, b and c.
+**Figure 4.:** The results of the open-field test measuring total distance travelled and time spent outside and inside in (a) male (10 mg/Kg ketamine), (b) females (10 mg/kg ketamine), and (c) females (5 mg/Kg ketamine) mice in each condition (n=number of mice, Male (10 mg/Kg ketamine); saline = 15, IEM 1460=11, Ketamine = 15, and Ketamine +IEM 1460=14, Female (10 mg/kg ketamine); saline = 18, IEM 1460=12, Ketamine = 20, and Ketamine +IEM 1460=17, and Female (5 mg/kg ketamine); saline = 20, IEM 1460=11, Ketamine = 8, and Ketamine +IEM 1460=10, *p<0.05, **p<0.01, and ***p<0.001, Two-way ANOVA with the Tukey test). Mean ± SD.
 
 In female mice, unlike male animals, 10 mg/kg ketamine had no effect on locomotor activity (CTRL, 42.287±10.576 m and ketamine, 40.848±11.091 m, p=0.9804) (Figure 4b). However, like male mice, 10 mg/kg ketamine significantly reduced time spent outside (CTRL, 1103.561±24.289 seconds and ketamine, 1062.840±54.145 seconds, p=0.0330) but increased time spent inside (CTRL, 96.439±24.289 seconds and ketamine, 137.160±54.145, p=0.0330), an indication of reduced anxiety-like behavior (Figure 4b). To examine the role of CP-AMPARs in these behavioral changes, we intraperitoneally administered 10 mg/kg IEM-1460 and performed the open field test one hour after drug injection as described above. IEM-1460 injection had no effect on locomotor activity (Total distance travelled; CTRL +IEM-1460, 37.971±13.870 m, p=0.7456 and Ketamine +IEM-1460, 37.576±11.093 m, p=0.8239) (Figure 4b). However, in vivo CP-AMPAR inhibition was sufficient to reverse ketamine-induced behavioral changes (Time spent outside; Ketamine +IEM-1460, 1116.100±44.791 seconds, p=0.0033, and Time spent inside; Ketamine +IEM-1460, 83.900±44.791 seconds, p=0.0033) (Figure 4b). Like male mice, IEM-1460 treatment had no effect on behaviors in the open field test in the absence of ketamine (Total distance travelled; CTRL +IEM-1460, 37.971±13.870 m, p=0.7456, Time spent outside; CTRL +IEM-1460, 1119.917±50.469 seconds, p=0.7602, and Time spent inside; CTRL +IEM-1460, 80.083±50.469 seconds, p=0.7602) (Figure 4b). Given that a lower dose of ketamine (5 mg/kg) selectively increases synaptic GluA1 levels, but not GluA2, in the female hippocampus (Figure 3c), we intraperitoneally injected 5 mg/kg ketamine to 3-month-old female CD-1 mice and carried out the open field test as stated above. 5 mg/kg ketamine treatment in female mice was unable to increase locomotor activity (CTRL, 42.648±10.103 m and ketamine, 44.736±8.647 m, p=0.9751), but CP-AMPAR inhibition significantly reduced locomotion only in ketamine-treated female mice (CTRL +IEM-1460, 40.098±12.326 m, p=0.9408, and ketamine +IEM-1460, 25.605±16.439 m, p=0.0080) (Figure 4c). This indicates that a lower dose of ketamine induces the expression of CP-AMPARs, contributing to locomotor activity in female mice. In addition, like 10 mg/kg ketamine treatment in male and female mice, 5 mg/kg ketamine injection in female animals significantly reduced anxiety-like behavior (Time spent outside; CTRL, 1096.190±32.931 seconds and Ketamine, 1011.288±66.949 seconds, p=0.0029, and Time spent inside; CTRL, 103.810±32.931 seconds and Ketamine, 188.713±66.949 seconds, p=0.0029), which was mediated by CP-AMPARs (Time spent outside; CTRL +IEM-1460, 1114.636±49.333 seconds, p=0.8026, and Ketamine +IEM-1460, 1121.520±79.288 seconds, p=0.0005, and Time spent inside; CTRL +IEM-1460, 85.364±49.333 seconds, p=0.8026, and Ketamine +IEM-1460, 78.480±79.288 seconds, p=0.0005) (Figure 4c). This indicates that 10 mg/kg and 5 mg/kg ketamine treatment in female mice significantly decrease anxiety-like behavior in the open-field test, which is dependent on CP-AMPARs.
 
-## Ketamine treatment significantly reduces depression-like behavior in mice, which requires CP-AMPARs
+### Ketamine treatment significantly reduces depression-like behavior in mice, which requires CP-AMPARs
 
 We next used a tail suspension test as shown previously (Kim et al., 2018) to address whether ketamine-induced antidepressant actions were dependent on CP-AMPARs. Ten mg/kg ketamine was intraperitoneally injected to male and female 3-month-old CD-1 mice, and saline was administered to a control. As immobility in the tail suspension test is correlated with the depression-like state of the animals (Kim et al., 2018), we measured immobility and found that ketamine injection in male mice significantly decreased immobility relative to the control (CTRL) (CTRL, 198.183±32.632 seconds and ketamine, 153.569±54.145 seconds, p=0.0164), an indication of reduced depression-like behavior (Figure 5a). IEM-1460 treatment was sufficient to reverse ketamine-induced antidepressant effects on the tail suspension test (Ketamine +IEM-1460, 195.100±47.681 seconds, p=0.0285), while it had no effect on immobility in control animals (CTRL) (CTRL +IEM-1460, 206.578±31.598 seconds, p=0.9504) (Figure 5a). This demonstrates that 10 mg/kg ketamine treatment in male mice significantly reduces depression-like behavior, which is mediated by CP-AMPARs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/86022/elife-86022-fig5-v2.jpg)
 
-**Figure 5.:** The results of the tail suspension test measuring total immobility in (a) male (10 mg/Kg ketamine), (b) female (10 mg/kg ketamine), and (c) female (5 mg/Kg ketamine) mice in each condition (n=number of mice, Male (10 mg/Kg ketamine); saline = 12, IEM 1460=9, Ketamine = 13, and Ketamine +IEM 1460=12, Female (10 mg/kg ketamine); saline = 10, IEM 1460=8, Ketamine = 12, and Ketamine +IEM 1460=12, and Female (5 mg/Kg ketamine); saline = 10, IEM 1460=8, Ketamine = 11, and Ketamine +IEM 1460=10, *p<0.05 and **p<0.01, Two-way ANOVA with the Tukey test). Mean ± SD.Figure 5—source data 1.Figure 5a, b and c.
+**Figure 5.:** The results of the tail suspension test measuring total immobility in (a) male (10 mg/Kg ketamine), (b) female (10 mg/kg ketamine), and (c) female (5 mg/Kg ketamine) mice in each condition (n=number of mice, Male (10 mg/Kg ketamine); saline = 12, IEM 1460=9, Ketamine = 13, and Ketamine +IEM 1460=12, Female (10 mg/kg ketamine); saline = 10, IEM 1460=8, Ketamine = 12, and Ketamine +IEM 1460=12, and Female (5 mg/Kg ketamine); saline = 10, IEM 1460=8, Ketamine = 11, and Ketamine +IEM 1460=10, *p<0.05 and **p<0.01, Two-way ANOVA with the Tukey test). Mean ± SD.
 
 Unlike male animals, 10 mg/kg ketamine injection to female mice showed no antidepressant effects on our tail suspension test (CTRL, 170.550±48.708 seconds and ketamine, 192.433±50.495 seconds, p=0.7826) (Figure 5b). Moreover, IEM-1460 treatment was unable to affect depression-like behavior in female mice (CTRL +IEM-1460, 178.775±55.421 seconds, p=0.9885, and ketamine +IEM-1460, 183.517±61.042 seconds, p=0.9776) (Figure 5b). We thus treat 3-month-old female CD-1 mice with 5 mg/kg ketamine as described above and performed the tail suspension test. A lower dose of ketamine in female mice significantly decreased immobility in the tail suspension test (CTRL, 212.760±37.207 seconds and ketamine, 130.273±52.945 seconds, p=0.0026) (Figure 5c). Most importantly, CP-AMPAR antagonist treatment prevented ketamine’s antidepressant effect (Ketamine +IEM-1460, 203.170±64.843 seconds, p=0.0087), while not influencing immobility in control animals (CTRL +IEM-1460, 214.050±28.469 seconds, p>0.9999) (Figure 5c). This shows that a lower dose of ketamine (5 mg/kg) is sufficient to induce antidepressant effects in female mice, which requires CP-AMPARs, like male animals.
 
-## Ketamine treatment significantly reduces calcineurin activity in the hippocampus
+### Ketamine treatment significantly reduces calcineurin activity in the hippocampus
 
 Ketamine injection selectively increased synaptic GluA1 expression and its phosphorylation in the male and female hippocampus (Figure 3). We also revealed that CP-AMPARs were required for ketamine-induced antidepressant actions in male and female mice (Figures 4 and 5). Given our in vitro experiments showed that a ketamine-induced decrease in calcineurin activity played crucial roles in GluA1-containing AMPAR surface expression (Figure 1c–d), we virally expressed the FRET-based calcineurin activity sensor in the hippocampus to determine whether ketamine reduced calcineurin activity. To express the calcineurin activity sensor, Sindbis virus was stereotaxically injected into the hippocampal CA1 area of 3-month-old male and female CD-1 mice. Ketamine was intraperitoneally injected to animals 36 hr after the infection to ensure viral calcineurin activity sensor expression, and saline was administered as the control (CTRL). CFP, YFP, and FRET images were acquired in the soma of CA1 pyramidal neurons, and the emission ratio was calculated as shown in Figure 1d. We found that calcineurin activity in the male hippocampus was significantly decreased one-hour after 10 mg/kg ketamine treatment compared to the saline-treated hippocampus (CTRL) (CTRL, 1.000±0.382 and ketamine, 0.846±0.313, p=0.0164) (Figure 6a). We also injected 5 mg/kg ketamine to female mice and measured calcineurin activity in hippocampal CA1 neurons. Like the male hippocampus, 1-hr after 5 mg/kg ketamine treatment significantly reduced calcineurin activity in the female hippocampus (CTRL, 1.000±0.419 and ketamine, 0.812±0.338, p=0.0011) (Figure 6b). Therefore, ketamine treatment significantly reduces calcineurin activity in the hippocampus, which likely leads to an increase in GluA1 phosphorylation and the expression of CP-AMPARs. These glutamatergic changes in the hippocampus contribute to ketamine-induced antidepressant actions in animals.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/86022/elife-86022-fig6-v2.jpg)
 
-**Figure 6.:** Representative images of a CFP channel, a FRET channel, and a pseudocolored emission ratio (Y/C) in the (a) male and (b) female hippocampus in each condition [blue (L), low emission ratio; red (H), high emission ratio]. Scale bar is 10 µm. A summary graph showing average of emission ratio (FRET/CFP) in each condition n=number of cells [number of animals], Male; saline = 74 (Ali et al., 2020) and ketamine = 55 (Akillioglu et al., 2012), Female; saline = 61 (Ali et al., 2020) and ketamine = 130 (Akillioglu and Karadepe, 2021), *p<0.05 and **p<0.01, unpaired two-tailed student t-test. A scale bar indicates 25 μm. Mean ± SD.Figure 6—source data 1.Figure 6a and b.
+**Figure 6.:** Representative images of a CFP channel, a FRET channel, and a pseudocolored emission ratio (Y/C) in the (a) male and (b) female hippocampus in each condition [blue (L), low emission ratio; red (H), high emission ratio]. Scale bar is 10 µm. A summary graph showing average of emission ratio (FRET/CFP) in each condition n=number of cells [number of animals], Male; saline = 74 (Ali et al., 2020) and ketamine = 55 (Akillioglu et al., 2012), Female; saline = 61 (Ali et al., 2020) and ketamine = 130 (Akillioglu and Karadepe, 2021), *p<0.05 and **p<0.01, unpaired two-tailed student t-test. A scale bar indicates 25 μm. Mean ± SD.
 
 ## Discussion
 
@@ -117,58 +117,285 @@ In-depth investigations into the precise mechanisms underlying ketamine’s effe
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (musculus males and females)</td>
+      <td>CD1(ICR)</td>
+      <td>Charles River Laboratories</td>
+      <td>Stock No: 022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (The Escherichia coli bacteriophage P1)</td>
+      <td>pENN.AAV.CamKII 0.4.Cre.SV40</td>
+      <td>Addgene</td>
+      <td>Addgene plasmid # 105558-AAV1; RRID:Addgene_105558</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (R. norvegicus (rat), G. gallus (chicken); A. victoria (jellyfish))</td>
+      <td>pGP-AAV-CAG-FLEX-jGCaMP7s-WPRE</td>
+      <td>Addgene</td>
+      <td>Addgene plasmid # 104495-AAV1; RRID:Addgene_104495</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens (human), Synthetic)</td>
+      <td>pSinRep5-pcDNA3-CaNAR</td>
+      <td>This paper</td>
+      <td>Mehta and Zhang, 2014</td>
+      <td>Sindbis construct to infect and express calcineurin activity biosensor</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GluR1-NT (NT) antibody, clone RH95 (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat. # MAB2263</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GluA2 antibody [EPR18115] (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. # ab206293</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-GluR1 (Ser831) antibody, clone N453 (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat. # 04–823</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GluR1 Antibody, phosphoSer 845 (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat. # AB5849</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Actin antibody [ACTN05 (C4)] (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. # ab3280</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Sindbis Expression System</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: K750-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Enhanced Chemiluminescence (ECL)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: PI34580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PDS Kit, Papain Vial</td>
+      <td>Worthington Biochemical Corp.</td>
+      <td>Cat. #: LK003176</td>
+      <td>≥100 units per vial</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, media</td>
+      <td>Neurobasal Medium without phenol red</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 12348017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, supplement</td>
+      <td>B27</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 17504044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutamax</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 35050061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, antibiotics</td>
+      <td>Penicillin/Streptomycin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 15070063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ketamine hydrochloride</td>
+      <td>VetOne</td>
+      <td>Cat. #: 510189</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urethane</td>
+      <td>Sigma</td>
+      <td>Cat. #: U2500</td>
+      <td>1.2 g/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FK506</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 3631</td>
+      <td>5 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin (TTX)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab120055</td>
+      <td>2 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-methoxy-7-nitroindolinyl (MNI)-caged L-glutamate</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 1490</td>
+      <td>1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Naphthyl acetyl spermine trihydrochloride (NASPM)</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 2766</td>
+      <td>20 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IEM-1460</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 1636</td>
+      <td>10 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, biotin</td>
+      <td>Sulfo-NHS-SS-biotin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: PI21331</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, beads</td>
+      <td>Streptavidin-coated beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: PI53150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strychnine hydrochloride</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 2785</td>
+      <td>1 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(-)-Bicuculline methochloride</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 0131</td>
+      <td>20 μM</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ANY-maze tracking program</td>
+      <td>Stoelting Co.</td>
+      <td>https://www.any-maze.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Prism 9</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/features</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>CellSens</td>
+      <td>Olympus</td>
+      <td>https://www.olympus-lifescience.com/en/software/cellsens/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 CD-1 mice were obtained from Charles River (022) and bred in the animal facility at Colorado State University (CSU). Animals were housed under 12:12 hr light/dark cycle. Three-month-old male and female CD-1 mice were used in the current study. CSU’s Institutional Animal Care and Use Committee (IACUC) reviewed and approved the animal care and protocol (3408).
 
-## Primary hippocampal neuronal culture
+### Primary hippocampal neuronal culture
 
 Postnatal day 0 (P0) male and female CD-1 pups were used to produce mouse hippocampal neuron cultures as shown previously (Sztukowski et al., 2018; Sathler et al., 2021; Sathler et al., 2022). Hippocampi were isolated from P0 CD-1 mouse brain tissues and digested with 10 U/mL papain (Worthington Biochemical Corp., LK003176). Mouse hippocampal neurons were plated on following poly lysine-coated dishes for each experiment - glass bottom dishes (500,000 cells) for Ca2+ imaging and FRET analysis, and 6 cm dishes (2,000,000 cells) for biochemical experiments. Neurons were grown in Neurobasal Medium without phenol red (Thermo Fisher Scientific, 12348017) with B27 supplement (Thermo Fisher Scientific, 17504044), 0.5 mM Glutamax (Thermo Fisher Scientific, 35050061), and 1% penicillin/streptomycin (Thermo Fisher Scientific, 15070063). The previous study evaluates maturation, aging, and death of mouse cortical cultured neurons for 60 DIV, which demonstrates that synaptogenesis is prominent during the first 15 days and then synaptic markers remain stable through 60 DIV (Lesuisse and Martin, 2002). In particular, the levels of glutamate receptors, including AMPARs and NMDARs, increase to a maximum by 10–15 DIV and then remain unchanged through 60 DIV. This indicates that 14 DIV neurons that we used here are mature cells, and their maturity is likely comparable to that of older neurons. In fact, 14 DIV neurons have been used in many groups. Additionally, our cultures are shown to contain excitatory and inhibitory cells (Sun et al., 2019; Roberts et al., 2021) as well as glia (Kaech and Banker, 2006).
 
-## Reagents
+### Reagents
 
 Ketamine hydrochloride (VetOne, 510189) was used in both in vitro and in vivo experiments. For neuronal cultures, we used 1, 10, or 20 μM ketamine. For mice, 5 mg/kg or 10 mg/kg ketamine was intraperitoneally injected to 3-month-old male and female CD-1 mice. We have an approval from IACUC to use ketamine and have the United States Drug Enforcement Administration license to use ketamine for research purpose (DEA# RK0573863). A total of 1.2 g/kg urethane (Sigma, U2500) was used for anesthetizing mice for stereotaxic surgery. Five μM FK506 (Tocris Bioscience, 3631), a condition that significantly reduces neuronal calcineurin activity to increase GluA1 phosphorylation, which induces the expression of CP-AMPARs to elevate AMPAR-mediated synaptic activity (Kim et al., 2014), was used to inhibit calcineurin activity in cultured hippocampal excitatory neurons. Two μM tetrodotoxin (TTX) (Abcam, ab120055) was used to block spontaneous Ca2+ activity in cultured hippocampal excitatory neurons. One mM 4-methoxy-7-nitroindolinyl (MNI)-caged L-glutamate (Tocris Bioscience, 1490) was added to the culture media for glutamate uncaging. A total of 20 μM 1-Naphthyl acetyl spermine trihydrochloride (NASPM, Tocris Bioscience, 2766), a condition that significantly reduces CP-AMPAR-mediated synaptic and Ca2+ activity (Kim et al., 2014; Kim et al., 2015b), was used to block CP-AMPARs in cultured hippocampal excitatory neurons. 10 mg/kg IEM-1460 (Tocris Bioscience, 1636) was intraperitoneally injected to 3-month-old male and female CD-1 mice to inhibit in vivo CP-AMPAR activity because it is blood-brain barrier (BBB)-permeable (Wiltgen et al., 2010; Szczurowska and Mareš, 2015; Adotevi et al., 2020).
 
-## Surface biotinylation
+### Surface biotinylation
 
 Surface biotinylation was performed according to the previous studies (Kim et al., 2014; Kim et al., 2015b; Kim et al., 2015a; Sztukowski et al., 2018; Sun et al., 2019; Roberts et al., 2021). Cells were washed with ice-cold PBS containing 1 mM CaCl2 and 0.5 mM MgCl2 and incubated with 1 mg/ml Sulfo-NHS-SS-biotin (Thermo Fisher Scientific, PI21331) for 15 min on ice. Following biotin incubation, neurons were washed with 20 mM glycine to remove the excess of biotin, and cells were lysed in 300 μl RIPA buffer for one hour. 10% of total protein was separated as input samples, and protein lysates were incubated overnight with streptavidin-coated beads (Thermo Fisher Scientific, PI53150) at 4 °C under constant rocking. The beads containing surface biotinylated proteins were separated by centrifugation. Biotinylated proteins were eluted from streptavidin beads with SDS loading buffer. Surface protein fractions and their corresponding total protein samples were analyzed by immunoblots.
 
-## Chemical LTP (cLTP)
+### Chemical LTP (cLTP)
 
 cLTP protocol was followed as previously described (Diering et al., 2014; Roberts et al., 2021; Sathler et al., 2021). Fourteen DIV hippocampal cultured neurons were washed three times in Mg2+ free buffer 150 mM NaCl, 2 mM CaCl2, 5 mM KCl, 10 mM HEPES, 30 mM glucose, 1 μM strychnine hydrochloride (Tocris Bioscience, 2785), and 20 μM (-)-Bicuculline methochloride (Tocris Bioscience, 0131) and incubated in glycine buffer (Mg2+-free buffer with 0.2 mM glycine) at 37 °C for 5 min. Then, Mg2+ buffer (Mg2+-free buffer with 2 mM MgCl2) was added to block NMDARs and cells were incubated at 37 °C for 30 min before being processed for immunoblots. To inhibit CP-AMPARs, we added 20 μM NASPM in glycine and Mg2+ buffer.
 
-## Immunoblots
+### Immunoblots
 
 Immunoblots were performed as described previously (Kim et al., 2005; Kim et al., 2014; Kim et al., 2015c; Kim et al., 2015b; Kim et al., 2015a; Farooq et al., 2017; Kim et al., 2016; Kim et al., 2018; Shou et al., 2019; Sztukowski et al., 2018; Sun et al., 2019; Roberts et al., 2021; Sathler et al., 2021; Tran et al., 2021; Sathler et al., 2022). The protein concentration in total cell lysates was determined by a BCA protein assay kit (Thermo Fisher Scientific, PI23227). Equal amounts of protein samples were loaded on 10% glycine-SDS-PAGE gel. The gels were transferred to nitrocellulose membranes. The membranes were blocked (5% powdered milk) for 1 hr at room temperature, followed by overnight incubation with the primary antibodies at 4 C. The primary antibodies consisted of anti-GluA1 (Millipore, 1:2000, MAB2263), anti-GluA2 (Abcam, 1:2000, ab206293), anti-phosphorylated GluA1-S831 (Millipore, 1:1000, 04823MI), anti-phosphorylated GluA1-S845 (Millipore, 1:1000, AB5849MI), and anti-actin (Abcam, 1:2000, ab3280) antibodies. Membranes were subsequently incubated by secondary antibodies for 1 hr at room temperature and developed with Enhanced Chemiluminescence (ECL) (Thermo Fisher Scientific, PI34580). Protein bands were quantified using ImageJ (https://imagej.nih.gov/ij/).
 
-## GCaMP Ca2+ imaging
+### GCaMP Ca2+ imaging
 
 We measured spontaneous Ca2+ activity in cultured hippocampal excitatory neurons because It has been shown that networks of neurons in culture can produce spontaneous synchronized activity (Cohen et al., 2008). In fact, network activity emerges at 3–7 DIV independent of either ongoing excitatory or inhibitory synaptic activity and matures over the following several weeks in cultures (Cohen et al., 2008). Therefore, the somatic Ca2+ signals we observed are from the spontaneous network activity in cultured cells. To do this, we infected 4 DIV neurons with adeno-associated virus (AAV) expressing CamK2a-Cre (Addgene #105558-AAV1) - pENN.AAV.CamKII 0.4.Cre.SV40 was a gift from James M. Wilson (Addgene plasmid #105558; http://n2t.net/addgene:105558; RRID:Addgene_105558) - and Cre-dependent GCaMP7s (Addgene# 104495-AAV1) - pGP-AAV-CAG-FLEX-jGCaMP7s-WPRE was a gift from Douglas Kim & GENIE Project (Addgene plasmid #104495; http://n2t.net/addgene:104495; RRID:Addgene_104495) - (Dana et al., 2019) because when AAVs of the same serotype are co-infected, many neurons are transduced by both viruses (Kim et al., 2013). We then measured Ca2+ activity in the soma of 14 DIV cultured hippocampal excitatory neurons with a modification of the previously described method (Kim et al., 2014; Kim et al., 2015b; Kim et al., 2015a; Sztukowski et al., 2018; Sun et al., 2019; Roberts et al., 2021). Glass-bottom dishes were mounted on a temperature-controlled stage on an Olympus IX73 microscope and maintained at 37 C and 5% CO2 using a Tokai-Hit heating stage and digital temperature and humidity controller. For GCaMP7s, the images were captured right after 1, 10, or 20 μM ketamine was added to the media with a 10ms exposure time and a total of 100 images were obtained with a one-second interval. Fmin was determined as the minimum fluorescence value during the imaging. Total Ca2+ activity was obtained by 100 values of F/Fmin = (Ft – Fmin) / Fmin in each image, and values of F/Fmin <0.1 were rejected due to potential photobleaching. The average total Ca2+ activity in the control group was used to normalize total Ca2+ activity in each cell. The control group’s average total Ca2+ activity was compared to the experimental groups' average as described previously (Kim et al., 2014; Kim et al., 2015b; Kim et al., 2015a; Sztukowski et al., 2018; Sun et al., 2019; Roberts et al., 2021).
 
-## GCaMP Ca2+ imaging with glutamate uncaging
+### GCaMP Ca2+ imaging with glutamate uncaging
 
 We carried out Ca2+ imaging with glutamate uncaging as shown previously (Wild et al., 2019) in cultured hippocampal neurons one hour after 1 μM ketamine treatment. In addition, we added 20 μM NASPM right before Ca2+ imaging to inhibit CP-AMPARs. For glutamate uncaging, 1 mM 4-methoxy-7-nitroindolinyl (MNI)-caged L-glutamate was added to the culture media, and epi-illumination photolysis (390 nm, 0.12 mW/mm2, 1ms) was used. Two2 μM TTX was added to prevent action potential-dependent network activity. A baseline average of 20 frames (50ms exposure) (F0) were captured prior to glutamate uncaging, and 50 more frames (50ms exposure) were obtained after single photostimulation. The fractional change in fluorescence intensity relative to baseline (F/F0) was calculated. The average peak amplitude in the control group was used to normalize the peak amplitude in each cell. The control group’s average peak amplitude was compared to the experimental groups' average.
 
-## Sindbis virus infection in cultured neurons
+### Sindbis virus infection in cultured neurons
 
 Sindbis virus expressing the calcineurin activity sensor was produced as described previously (Osten et al., 2000). Calcineurin activity sensor cDNA (CaNAR) (a gift from Jin Zhang at Johns Hopkins University) was subcloned into pSinRep5 vector. BHK cells were electroporated with RNA of pSinRep5–CaNAR according to Sindbis Expression System manual (Invitrogen, K750-01). The pseudovirion-containing medium was collected 24 hr after electroporation, and the titer for the construct was tested empirically in neuronal cultures. To express the calcineurin activity sensor in cultured neurons, 14 DIV neurons were infected with a titer resulting in infection of 20% of neurons (typically 1 μl of α-MEM virus stock diluted in 600 μl conditioned neurobasal-B27 medium per glass-bottom dish). It has been shown previously that no apparent adverse effects on morphology of the infected neurons was observed for up to 3 days post-infection (Osten et al., 2000). Cells were treated with 1 μM ketamine and/or 20 μM NASPM or 5 μM FK506 for one hour 24 hr after infection and fixed to analyze calcineurin activity.
 
-## Sindbis virus infection in the mouse hippocampus
+### Sindbis virus infection in the mouse hippocampus
 
 We virally expressed the calcineurin activity sensor using bilateral stereotaxic injection in the mouse hippocampus. Animals (3-month-old male and female CD-1 mice) were anaesthetized with 1.2 g/kg urethane. Anesthetic depth was confirmed with pedal response (foot retraction, response to non-damaging pressure of footpads using tweezers), ear twitch responses, and respiratory rates. Animal temperature was maintained with heating pads or warming gel packs. Once it was confirmed that the mice were properly anesthetized, the surgical field of the head of mice was aseptically prepared (shaved and prepped with betadine and alcohol). Animals were then placed in a stereotaxic frame (Stoelting). A small incision of the scalp was made with a sterile #10 surgical blade. With the aid of stereotaxic mounting equipment, a small hole was drilled in the bone using a high-speed drill and a dental bone drill bit, which has been sterilized. When the dura was exposed, a small pin hole was made, and a sterile syringe to inject Sindbis virus expressing the calcineurin activity sensor (1 μl) was lowered to the hippocampal CA1 area (Bregma coordinates: AP: − 1.95 mm, ML:±1.12 mm, DV: − 1.20 mm). During surgery, anesthetic depth was monitored every 5 min using pedal responses and respiration rates. After surgery, animals were allowed to recover from the anesthesia before being returned to their cages, and their health was closely monitored. Mice received analgesic doses of buprenorphine every 12 hr for 1 day after surgery. Buprenorphine was delivered by subcutaneous injection (0.1 mg/kg). Mice were monitored for any of the following signs of prolonged discomfort and pain: aggressiveness, hunched posture, failure to groom, awkward gait, vocalization, greater or less tissue coloration, eye discoloration, abnormal activity (usually less), hesitancy to move (especially in response to startle), water consumption, or food intake. Because neurons in the brains are preferentially infected with Sindbis virus at 36 hr after infection (Furuta et al., 2001), 10 mg/kg ketamine and/or 10 mg/kg IEM-1460 was intraperitoneally injected to animals 36 hr after the infection to ensure viral calcineurin activity sensor expression, and saline was administered to controls. Brain tissues were isolated one hour after treatment, fixed, and sectioned at 40 μm by using a vibratome. Hippocampal sections in each mouse were used imaged for hippocampal calcineurin activity.
 
-## FRET analysis
+### FRET analysis
 
 Calcineurin activity was determined by the FRET emission ratio as described previously (Kim et al., 2014). CFP, YFP, and FRET images were acquired in the soma, and the following formula was used to calculate the emission ratio: (FRET channel emission intensity – FRET channel emission intensity of background) / (CFP channel emission intensity – CFP channel emission intensity of background) as described previously (Kim et al., 2014; Kim et al., 2015a; Sun et al., 2019). The higher emission ratio indicates the higher calcineurin activity.
 
-## Behavioral tests
+### Behavioral tests
 
 Both the open field test and tail suspension test have long been used to determine animals’ anxiety- and depression-like behaviors, respectively, in rodents (Seibenhener and Wooten, 2015; Ueno et al., 2022). Specifically, the open field test has been widely used to measure the ketamine effects on anxiety-like behavior in rodents (Guarraci et al., 2018; Pitsikas et al., 2019; Shin et al., 2019; Akillioglu and Karadepe, 2021; Yang et al., 2022; Acevedo et al., 2023). We thus measured locomotor activity and anxiety-like behavior using the open field test as carried out previously (Shou et al., 2019). The test mouse was first placed in the center of the open field chamber (40 W x 40 L x 40 H cm) for 5 min. Animals were then allowed to explore the chamber for 20 min. A 20x20 cm center square was defined as the inside zone. The tail suspension test has also been used to examine the ketamine effects on depression-like behavior in animals (Fukumoto et al., 2017; Yang et al., 2018b; Ouyang et al., 2021; Rawat et al., 2022; Viktorov et al., 2022). Studies suggest that the forced swim test and the tail suspension test are based on the same principle: measurement of the duration of immobility when rodents are exposed to an inescapable situation (Castagné et al., 2011). Importantly, it has been suggested that the tail suspension test is more sensitive to antidepressant agents than the forced swim test because the animals remain immobile longer in the tail suspension test than the forced swim test (Cryan et al., 2005). We thus used the tail suspension test to examine depression-like behavior as described previously (Kim et al., 2018). The test mouse was suspended by its tails from a rod suspended 20 cm above the tabletop surface with adhesive tape placed 1 cm from the tip of the tail. Animals were immobile when they exhibited no body movement and hung passively for >3 seconds. The time during which mice remained immobile was quantified over a period of 6 min. Mice that successfully climbed their tails to escape were excluded from the analysis. The behavior was recorded by a video camera. Data were analyzed using the ANY-maze tracking program to acquire total traveled distance (locomotor activity) and time spent outside and inside (anxiety-like behavior) for the open-field test and immobility (depression-like behavior) for the tail suspension test. All behavior tests were blindly scored by more than two investigators. Additionally, because ketamine produces antidepressant effects within 1 hr after administration in humans (Berman et al., 2000; Zarate et al., 2006; Liebrenz et al., 2009), our study aims to understand the mechanism underlying ketamine’s rapid (less than an hour) antidepressant effects. Given that sucrose preference test and the novelty suppressed feeding test need multiple days, it would not be suitable to achieve our goals.
 
-## Statistical analysis
+### Statistical analysis
 
 The Franklin A. Graybill Statistical Laboratory at CSU has been consulted for statistical analysis in the current study, including sample size determination, randomization, experiment conception and design, data analysis, and interpretation. We used the GraphPad Prism 9 software to determine statistical significance (set at p<0.05). Grouped results of single comparisons were tested for normality with the Shapiro-Wilk normality or Kolmogorov-Smirnov test and analyzed using an unpaired two-tailed Student’s t-test when data are normally distributed. Differences between multiple groups were assessed by N-way analysis of variance (ANOVA) with the Tukey test or nonparametric Kruskal-Wallis test with the Dunn’s test. The graphs were presented as mean ±Standard Deviation (SD).
 
-## Materials availability statement
+### Materials availability statement
 
 All renewable materials generated by this study will be made available to qualified individuals upon request.

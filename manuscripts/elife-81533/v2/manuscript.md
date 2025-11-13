@@ -15,8 +15,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04s5mat29 Department of Biology, University of Victoria Victoria Canada
-2. https://ror.org/01aj84f44 Danish Research Institute of Translational Neuroscience, Nordic-EMBL Partnership for Molecular Medicine, Department of Biomedicine, Aarhus University Aarhus Denmark
+1. Department of Biology, University of Victoria Victoria Canada ([ROR:04s5mat29](https://ror.org/04s5mat29))
+2. Danish Research Institute of Translational Neuroscience, Nordic-EMBL Partnership for Molecular Medicine, Department of Biomedicine, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
 
 † Corresponding author
 
@@ -38,35 +38,47 @@ In the present study, we identify specific stimulus conditions under which stark
 
 ## Results
 
-## Temporal diversity of glutamate responses along single starburst dendrites
+### Temporal diversity of glutamate responses along single starburst dendrites
 
 We injected AAVs containing flex-iGluSnFR intravitreally into ChAT-Cre-expressing mice. In a few cases, we observed a strong but sparse expression of iGluSnFR in ON-type starburst cells (Figure 1A). This provided a unique opportunity to visualize glutamate response kinetics across the length of individual dendrites (Figure 1B). Signals from dendritic regions proximal to the starburst soma were captured in a different optical plane than the more distal dendrites, which are ~5 μm apart (Ding et al., 2016; Greene et al., 2016). Spots of light (200 μm in diameter) centered on the imaging field evoked robust iGluSnFR signals throughout the first ~60–80 μm section of starburst dendrites, where glutamatergic BCs are known to make synapses (Ding et al., 2016; Greene et al., 2016). The peak amplitudes of the iGluSnFR signals measured over small regions of interest (ROIs; 5×5 μm2) were relatively stable across the length of single starburst dendrites (Figure 1C). However, the magnitude of the sustained phase significantly decreased as a function of distance (Figure 1C; ΔF/F=0.80±0.29 at proximal sites; ΔF/F=0.29±0.16 at distal sites, measured in 20 dendrites in 4 retinas from 4 mice; *p<0.001, t-test). As a result, the sustained/transient index (STi) computed from the plateau/peak ratio, systematically decreased with distance from the soma (Figure 1D; STi=0.33±0.06 for proximal, 0.16±0.05 for distal ROIs; *p<0.001, t-test) (Note, STi=0 indicates a purely transient response with no plateau phase, and STi=1 indicates a purely sustained response where peak and plateau phases are equal). Taken together, these results provide the first piece of direct evidence that the kinetics of glutamatergic input varies along starburst dendrites, supporting the ‘space-time’ wiring model for direction selectivity (Kim et al., 2014; Greene et al., 2016).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig1-v2.jpg)
 
-**Figure 1.:** (A) Two-photon z-stack image (left) of a single ON starburst amacrine cell expressing iGluSnFR. Changes in iGluSnFR fluorescence evoked by a 200-μm spot were measured across the single starburst dendrite (yellow box; left). Proximal and distal responses were captured in separate focal planes, and the resulting images were stitched together (right; the vertical white line separates the two planes). (B) Examples of time-varying iGluSnFR signals (ΔF/F) (average; two trials) measured in small dendritic regions of interest (5×5 μm2 ROIs; shown in (A)). The responses and ROIs are color-coded according to their sustained/transient indices (STis; color scale bar shown in (A)). The STis (mean; two trials) are indicated above each trace. (C) The amplitudes of the peak and plateau iGluSnFR responses are plotted as a function of radial distance from the soma. Each point indicates the value obtained from an individual ROI averaged over two trials; ROIs on the same dendrite share the same color (n=66 ROIs from 20 dendrites/4 retinas/4 mice). (D) STis computed from (C) plotted as a function of radial distance from the soma. ROI, region of interest.Figure 1—source data 1.
+**Figure 1.:** (A) Two-photon z-stack image (left) of a single ON starburst amacrine cell expressing iGluSnFR. Changes in iGluSnFR fluorescence evoked by a 200-μm spot were measured across the single starburst dendrite (yellow box; left). Proximal and distal responses were captured in separate focal planes, and the resulting images were stitched together (right; the vertical white line separates the two planes). (B) Examples of time-varying iGluSnFR signals (ΔF/F) (average; two trials) measured in small dendritic regions of interest (5×5 μm2 ROIs; shown in (A)). The responses and ROIs are color-coded according to their sustained/transient indices (STis; color scale bar shown in (A)). The STis (mean; two trials) are indicated above each trace. (C) The amplitudes of the peak and plateau iGluSnFR responses are plotted as a function of radial distance from the soma. Each point indicates the value obtained from an individual ROI averaged over two trials; ROIs on the same dendrite share the same color (n=66 ROIs from 20 dendrites/4 retinas/4 mice). (D) STis computed from (C) plotted as a function of radial distance from the soma. ROI, region of interest.
 
 In most experiments, iGluSnFR expression was more widespread across the starburst population. Individual dendrites leaving the starburst soma were easily visible, but as they dove deeper into the IPL, they merged with dendrites from other starbursts to form the intricate ‘honeycomb’ mesh that is characteristic of these cholinergic cells. By taking care to lay the retina down flat in the recording chamber, we were able to measure responses from proximal and distal starburst dendrites in separate imaging planes (Figure 2A). We found that STis were significantly lower in imaging planes that captured distal dendrites (STi=0.21±0.07; μ±s.d.); compared to those that captured proximal dendritic responses (STi=0.34±0.07; μ±s.d.) (n=242 proximal ROIs; n=563 distal ROIs; 8 retinas from 8 mice; 10 FOVs; *p<0.001, t-test; Figure 2A–C), verifying our initial findings on a larger population level. The STi for individual ROIs measured across the population was independent of response amplitude, indicating that the estimated differences in signal kinetics are not strongly compromised by signal-to-noise and/or sensor saturation issues (Figure 3—figure supplement 1). In addition, we also found that the latencies and rise times for responses measured at proximal and distal sites were similar (Figure 2D and E), indicating that the small differences in axonal path lengths between proximal and distal BCs do not result in significant transmission delays, as previously envisioned (Kim et al., 2014).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig2-v2.jpg)
 
-**Figure 2.:** (A) In the left scan field, proximal dendrites arising from the starburst soma expressing iGluSnFR can be visualized in relative isolation. Images that were taken ~5 μm deeper in the retina (right) reveal the dense ‘honeycomb’ structure formed by distal starburst dendrites. (B) Example iGluSnFR responses evoked by 200 μm static spot extracted for a few ROIs numbered in (A) with their STis indicated on the top. Yellow bands indicate stimulus duration. Black, mean responses; gray, ± s.e.m. of two trials. (C–E) Distribution of STis (C), 80–20% rise times (D) and latencies (E) in the proximal and distal field of views (FOVs) of the individual (gray) and average (black) ROIs from different recordings (n=10 FOVs, 8 retinas, *p<0.001; t-test). ROI, region of interest; STi, sustained/transient index.Figure 2—source data 1.
+**Figure 2.:** (A) In the left scan field, proximal dendrites arising from the starburst soma expressing iGluSnFR can be visualized in relative isolation. Images that were taken ~5 μm deeper in the retina (right) reveal the dense ‘honeycomb’ structure formed by distal starburst dendrites. (B) Example iGluSnFR responses evoked by 200 μm static spot extracted for a few ROIs numbered in (A) with their STis indicated on the top. Yellow bands indicate stimulus duration. Black, mean responses; gray, ± s.e.m. of two trials. (C–E) Distribution of STis (C), 80–20% rise times (D) and latencies (E) in the proximal and distal field of views (FOVs) of the individual (gray) and average (black) ROIs from different recordings (n=10 FOVs, 8 retinas, *p<0.001; t-test). ROI, region of interest; STi, sustained/transient index.
 
 Anatomical studies show that inputs to proximal starburst dendrites originate mainly from BC7s, while inputs to distal dendrites arise from BC5s (including types BC5i, o, and t; Greene et al., 2016; Ding et al., 2016), indicating that the kinetic differences of iGluSnFR responses may reflect the properties of distinct BC types. By using an AAV-8BP/2 vector containing a CAG promotor, we directly monitored glutamate release at BC7s axon terminals (Matsumoto et al., 2021; Figure 3). We identified axon terminals of BC7s based on the depth of ON starburst cell dendrites that were genetically labeled by tdTomato (Matsumoto et al., 2021). We found that iGluSnFR responses at BC7 terminals were sustained, regardless of their peak amplitude (Figure 3—figure supplement 1). The most appreciable changes in iGluSnFR fluorescence occurred at the axon terminals, suggesting that the sensor signals reflect the vesicle release dynamics of individual BC7s (James et al., 2019). While these results lend support to the idea that BC7s are the source of sustained proximal input, we were unable to express the sensor in BC5s and could not directly confirm that these were the sources of transient signals observed in distal starburst dendrites.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cross-section of an image stack showing iGluSnFR labelled BC7 (left). The intensity profiles of the BC terminals labeled with iGluSnFR (gray), and starburst dendrites labeled with tdTomato (black) across the inner plexiform layer (IPL) show that BC terminals co-stratify with dendrites of ON starbursts (right). (B) iGluSnFR expression in BC7 terminals (top) imaged at the same depth as the proximal ON starburst dendrites labeled with tdTomato (bottom). (C) Light-evoked glutamate signals (right) extracted from three ROIs shown in (B) (left). The gray band indicates the stimulus duration. (D) Heat maps of the STis for all identified ROIs. (E) A histogram of STis for the light-evoked responses for all ROIs. Top, mean (circle), and s.d. (horizontal bar) of the STis. BC, bipolar cell; ROI, region of interest; STi, sustained/transient index.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Plateau/peak (STi) versus peak amplitude (ΔF/F) for individual ROIs (gray circles, average from two trials) extracted from both proximal and distal field of views (FOVs) (n=313 proximal; 994 distal ROIs). (B) Same as (A) but for type 7 BCs. BC, bipolar cell; ROI, region of interest.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Average waveform of iGluSnFR responses to Gaussian white noise measured in the proximal (orange) or distal (blue) dendritic regions of starbursts. Shading indicates ± s.e.m. (B) Event-triggered average stimulus waveform, which represents the BCs’ preferred stimulus, is shown for proximal and distal regions. Shading indicates ± s.e.m. (C) The intensity profile of the 20 Hz Gaussian white noise stimulus. (D) The iGluSnFR response to the stimulus in (C). (E) Model iGluSnFR response obtained by convolving stimulus with linear filter shown in (B). (F, G) Distributions of biphasic peak (F) and area (G) index for different ROIs in the proximal and distal regions (n=120 proximal; 218 distal ROIs). BC, bipolar cell; ROI, region of interest.
+
 When white-noise stimuli were used to characterize the temporal properties of BCs using reverse-correlation techniques, we failed to observe significant kinetic differences in proximal and distal iGluSnFR responses. We found the input impulse responses were biphasic for both proximal and distal inputs (Figure 3—figure supplement 2). Thus, the probability of glutamate release from BC terminals appears to be transiently depressed, following a burst of vesicle release, during continuous stimulus regimes. Similar biphasic kernels have been observed in recent imaging studies (Franke et al., 2017; Strauss et al., 2022). As the biphasic nature of the distal—but not proximal—input is critical to the success of models generating direction selectivity (Kim et al., 2014; Fransen and Borghuis, 2017), we conclude that under conditions where the circuit is continually stimulated at high frequencies, input kinetics are unlikely to play a role in shaping direction selectivity in starburst dendrites.
 
-## BC output kinetic differences are shaped largely by excitatory network mechanisms
+### BC output kinetic differences are shaped largely by excitatory network mechanisms
 
 Next, to investigate whether cell-intrinsic or network mechanisms shape BC kinetics, we examined how iGluSnFR responses were affected by stimulus size. Increasing the spot diameter systematically decreased the peak amplitude of BC responses, indicative of the recruitment of the inhibitory surround (Figure 4A; Franke et al., 2017). Importantly, the distinction in the kinetics of proximal and distal inputs remained clear across stimulus sizes, although they were generally more pronounced for stimuli that were >200 μm (Figure 4B–E, control; n=71 proximal and 431 distal ROIs, 5 FOVs, 4 retinas from 4 mice; *p<0.001, Kolmogorov-Smirnov test). Indeed, the application of a cocktail of antagonists containing both GABA and ionotropic glutamate receptor antagonists (5 µM gabazine and 100 µM TPMPA, 20 µM CNQX, respectively)—which blocks inhibitory inputs from amacrine and horizontal cells—augmented responses, especially those evoked by larger spots (Figure 4A). These effects reduced the overall STi as compared to control, but the kinetics of the iGluSnFR responses at proximal and distal ROIs remained distinct (Figure 4B–E, drug cocktail; n=71 proximal and 431 distal ROIs, 5 FOVs, 4 retinas from 4 mice; *p<0.001, Kolmogorov-Smirnov test). Thus, while the inhibitory networks modulate BC responses, they do not appear to account for the sustained/transient differences observed here.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig4-v2.jpg)
 
-**Figure 4.:** (A) The average iGluSnFR signals were evoked by spots of different diameters (100–800 μm). Responses were averaged across five proximal (orange) or distal (blue) FOVs. Responses measured under control (dark traces) conditions and in the presence of synaptic blockers (SR, TPMPA, and CNQX; light traces) are overlaid. Shading indicates ± s.e.m. (B–E) Cumulative distributions of STis for ROIs in the proximal and distal FOVs under control and blocker conditions for different stimulus sizes. (n=5 FOVs, 4 retinas, *p<0.001; Kolmogorov-Smirnov test). FOV, field of view; ROI, region of interest; STi, sustained/transient index.Figure 4—source data 1.
+**Figure 4.:** (A) The average iGluSnFR signals were evoked by spots of different diameters (100–800 μm). Responses were averaged across five proximal (orange) or distal (blue) FOVs. Responses measured under control (dark traces) conditions and in the presence of synaptic blockers (SR, TPMPA, and CNQX; light traces) are overlaid. Shading indicates ± s.e.m. (B–E) Cumulative distributions of STis for ROIs in the proximal and distal FOVs under control and blocker conditions for different stimulus sizes. (n=5 FOVs, 4 retinas, *p<0.001; Kolmogorov-Smirnov test). FOV, field of view; ROI, region of interest; STi, sustained/transient index.
 
 Blocking glutamate/GABA receptor-mediated pathways using the drug cocktail also revealed a somewhat unexpected spread of lateral excitation. Under inhibitory receptor blockade, the light-evoked iGluSnFR responses continued to grow even when the spots sizes were increased significantly beyond the size of BC dendritic fields (~50 µm; Figure 4A, n=71 proximal and 431 distal ROIs, 5 FOVs, 4 retinas from 4 mice; *p<0.01). The maximal peak response was evoked for spots that were ~200 µm diameter. Interestingly, the amplitude of the plateau phase was further increased by ~23% in the proximal and ~20% in the distal dendritic sites, between 200 µm and 800 µm (*p<0.01, t-test). Such lateral excitation is likely to be attributed to electrical coupling, which occurs between BCs as well as amacrine cells (Sigulinsky et al., 2020; Arai et al., 2010; Asari and Meister, 2014). The finding that the kinetic diversity of BC responses is maintained in the absence of inhibition, suggests that they are shaped in large part by excitatory network mechanisms.
 
-## BC output kinetics contribute to direction selectivity
+### BC output kinetics contribute to direction selectivity
 
 Next, we tested how the apparent kinetic diversity in BC input impacts direction selectivity. Since the BC kinetics inferred from iGluSnFR measurements are in part dictated by the properties of the indicator, it remains unclear how they relate to the starbursts’ physiological responses mediated by endogenous AMPA receptors. To address this issue, we first used optical deconvolution methods (Awatramani et al., 2007) to estimate the time-varying vesicle release rates from individual BCs and then used a computational model to understand how trains of vesicles are transformed into AMPA receptor-driven voltage signals in starburst dendrites.
 
@@ -79,6 +91,14 @@ Time-varying vesicle release rates from proximal and distal BCs were estimated b
 Previous experimental and modeling studies have shown starburst dendritic sectors to be relatively electrically isolated from each other (Poleg-Polsky et al., 2018; Morrie and Feller, 2018; Ozaita et al., 2004). Since the potential for intra-dendritic signaling is likely to be minimal, we constructed a simple ball-and-stick model (NEURON), rather than a more complex network model. Using previously described properties of starburst dendrites (Tukker et al., 2004; Vlasits et al., 2016), we directly tested how vesicle release dynamics impacts starburst dendritic computations, which is hard to achieve experimentally.
 
 Sustained and transient BCs were assumed to reflect the properties of BC7 and BC5s, respectively, and their positions on the starburst dendrites were picked pseudo-randomly from the distributions described previously by Ding et al., 2016; Figure 6—source data 1. The results shown are obtained from averaging many simulations, each with resampled BC complements (Figure 6A; also see Materials and methods). A simulated moving bar (400 μm wide) ‘activated’ BCs in succession, initiating streams of postsynaptic AMPA receptor-mediated miniature-like events (Ιdecay~0.54 ms; Vlasits et al., 2016) according to their location in the dendrite. In these simulations, we assumed the AMPA receptor-mediated events summed linearly (i.e., AMPA receptors did not saturate or desensitize during trains of activity). Synapses were sequentially turned off after the bar traversed BC receptive fields (60 μm diameter). Thus, the input duration at each point in the dendrite varied linearly with stimulus velocity.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic representation of locations of somatic voltage and terminal Ca2+ recordings from a model SAC under simulated conditions (top). Bipolar cell conductances, somatic voltage, and terminal Ca2+ responses (bottom) were measured in the preferred and null direction from the model SAC when simulated using moving bars. (B) Direction selectivity index (DSi) of peak Ca2+ (terminal) responses versus velocity for different BC input distributions—(i) sustained and transient inputs; when proximal (sustained) and distal (transient) inputs are distributed based on connectomics data (original model); (ii) transient-sustained inputs; when sustained and transient BC inputs are reversed at their locations; (iii) all transient inputs; when all proximal inputs are replaced by transient BCs; and (iv) all sustained inputs; when all distal inputs are replaced by sustained BCs. Shading indicates ± s.e.m. (C) DSi of peak Ca2+ (terminal) responses versus number of inputs from sustained BCs at a velocity of 0.15 mm/s. BC, bipolar cell.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81533/elife-81533-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Direction selectivity index (DSi) of peak Ca2+ responses in terminal dendrites as a function of the spatial offset between sustained and transient BC inputs. The spatial offset was calculated by subtracting the mean somatic distance of the proximal population from that of the distal population. (A) Control conditions, where proximal BCs are sustained, and distal BCs are transient. (B) Reverse conditions, where proximal BCs are transient and distal BCs are sustained.
 
 The voltage responses measured from the model cell soma were qualitatively similar to those measured experimentally. For example, responses measured in the soma rose rapidly in the preferred direction compared to those evoked in the null direction, owing to the asymmetric distribution of inputs (Figure 6A, middle panel; Ankri et al., 2020). The model also accurately recapitulated direction selectivity measured in the distal intracellular Ca2+ signals (Figure 6A, bottom traces) similar to results from two-photon Ca2+ imaging experiments (Euler et al., 2002). As expected for a mechanism that relies on a fixed delay, this direction selectivity was strongly dependent on stimulus velocity. In our model based on the experimentally determined input kinetics, anisotropic summation occurs most robustly for slow-moving stimuli (<0.5 mm/s).
 
@@ -102,54 +122,104 @@ Space-time wiring models for direction selectivity have been proposed in diverse
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Experiments were performed using ChAT-IRES-Cre (Δneo) mice on a C57BL/6J background (Jackson Laboratory, #031661), in which the IRES-Cre was targeted to the ChAT locus. Mice were P21 or older and of either sex. Animals were housed under 12-hr light/dark cycles. All procedures were performed in accordance with the Canadian Council on Animal Care and approved by the University of Victoria’s Animal Care Committee, or in accordance with Danish standard ethical guidelines and were approved by the Danish National Animal Experiment Committee (Permission nos. 2015-15-0201-00541 and 2020-15-0201-00452).
 
-## Viral injections
+### Viral injections
 
 For intravitreal injections, mice were anesthetized by administering isoflurane (2–3% at 1–1.5 L/min; Fresenius Kabi Canada Ltd) mixed with oxygen (1–3%) through a vaporizer. Buprenorphine was administered subcutaneously (0.05–0.1 mg/kg body weight) as an analgesic. After creating a small hole at the margin of the sclera and cornea with a 30-gauge needle, a volume of 1–1.2 μl of the viral plasmid pAAV.hSyn.Flex.iGluSnFR.WPRE.SV40 (gift from Dr. Loren Looger; Addgene plasmid #98931; http://n2t.net/addgene:98931; RRID:Addgene_98931) was injected into the vitreous humor of either the left or right eye using a Hamilton syringe (syringe: 7633-01, needle: 7803-05, point style 3, and length 10 mm). Mice were returned to their home cage after their complete recovery, which was facilitated using a heating pad. Imaging experiments were performed at least 3 weeks after injections.
 
-## Tissue preparation
+### Tissue preparation
 
 Mice were dark-adapted for at least 60 min before being anesthetized with isoflurane (Fresenius Kabi Canada Ltd) and decapitated. Retinas were extracted in Ringer’s solution under a dissecting microscope equipped with infrared optics, and flat-mounted onto a glass poly-L-lysine (Sigma-Aldrich) coated coverslip before being placed into the recording chamber, perfused with oxygenated Ringer’s solution (95% O2/5% CO2; 35°C). Retinas were visualized with a Spot RT3 CCD camera (Diagnostics Instruments) through a 40× or 60× water-immersion objective on a BX-51 WI microscope (Olympus Canada).
 
-## Two-photon imaging
+### Two-photon imaging
 
 For iGluSnFR imaging, we used an Insight DeepSee+ laser (Spectra-Physics) tuned to 920 nm, which was guided by an 8 kHz resonant-galvo-galvo mirror set (Vidrio Technology). Green and red fluorescent signals were detected using photomultiplier tubes (PMTs; Hamamatsu) that were equipped with appropriate bandpass filters (525/45 and 625/90, respectively; Semrock). Single-photon events were acquired using a high-speed current amplifier (200 MHz, Edmund Optics), and converted into images using ScanImage software (Pologruto et al., 2003). While most recordings from proximal and distal dendritic regions were acquired consecutively at a frame rate of 58.25 Hz (256×256 pixels), in some experiments the responses from the two regions were recorded near-simultaneously at a frame rate of 22.5 Hz (256×256 pixels) using an electrically tunable lens (ETLs; EL-10-30-TC-NIR-12D, Optotune; see Materials and methods; Murphy-Baum and Awatramani, 2022). Data using either method were compiled in Figure 2C–D.
 
 For iGluSnFR imaging from T7 BCs, the isolated retina was placed under the microscope (SliceScope, Scientifica) equipped with a galvo-galvo scanning mirror system, a mode-locked Ti: Sapphire laser tuned to 940 nm (MaiTai DeepSee, Spectra-Physics). The iGluSnFR signals emitted were passed through a set of optical filters (ET525/50m, Chroma; lp GG495, Schott) and collected with a GaAsP detector. Images were acquired at 8–10 Hz using custom software developed by Zoltan Raics (SENS Software).
 
-## Visual stimulation
+### Visual stimulation
 
 Visual stimuli were produced using a digital light projector and were focused onto the photoreceptor layer of the retina through the sub-stage condenser. Light stimuli were presented during the brief turn-around phase of the resonant mirror and thus did not interfere with the collection of fluorescent signals. The background illuminance was measured to be ~1000 photon/μm2/s. Visual stimuli were generated and presented using StimGen, a python-based visual stimulation interface (https://github.com/benmurphybaum/StimGen, archived at https://doi.org/10.5281/zenodo.7331820; Murphy-Baum, 2022). For all experiments, static spots of different sizes (100, 200, 400, and 800 μm diameter) were presented for a duration of 2 s. Stimuli were presented 4 s after the start of two-photon image acquisition.
 
-## Pharmacology
+### Pharmacology
 
 The following concentrations (in μM) of antagonists were used for experiments: 20 CNQX disodium salt (Hello Bio, UK), 100 TPMPA (Tocris Bioscience), and 5 SR-95531 (Hello Bio, UK). Antagonists were initially prepared as stock solutions in distilled water or DMSO in the case of CNQX. During experiments, drugs were freshly prepared from a stock solution in carboxygenated Ringer’s solution. All drug solutions were bath applied to the tissue for at least 5 min prior to recording.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-All imaging analysis and statistical comparisons were performed in Igor Pro (WaveMetrics). Fluorescence signals were measured in small ROIs (5×5 μm2 or 10×10 μm2) placed along single dendrites, or in a grid-like pattern over the starburst dendritic plexus. The size of these ROIs was chosen to ensure adequate signal-to-noise ratio (SNR) computed as:(1)SNR=Peakvalues.d.ofthebaseline
+All imaging analysis and statistical comparisons were performed in Igor Pro (WaveMetrics). Fluorescence signals were measured in small ROIs (5×5 μm2 or 10×10 μm2) placed along single dendrites, or in a grid-like pattern over the starburst dendritic plexus. The size of these ROIs was chosen to ensure adequate signal-to-noise ratio (SNR) computed as:
+
+$$
+SNR=\frac{Peakvalue}{s.d.ofthebaseline}
+$$
 
 where the standard deviation (s.d.) of the baseline fluorescence was measured in a 1-s window before the start of the stimulus. Only ROIs with SNR>4 were selected for further analysis.
 
-The sustained transient index (STi) for each ROI was calculated as:(2)STi=ΔFFPlateauphaseΔFFPeak
+The sustained transient index (STi) for each ROI was calculated as:
+
+$$
+STi=\frac{\frac{ΔF}{F}Plateauphase}{\frac{ΔF}{F}Peak}
+$$
 
 where the ΔF/F for the plateau phase was averaged over the last 1 s of the light response.
 
-## Release rate estimates
+### Release rate estimates
 
-Discrete Fourier transforms of responses (Response) to stationary spots of light were divided by the Fourier transforms of the idealized quantal response (Quantum). The inverse Fourier transform of the resulting ratio yielded estimates of the instantaneous release rate (RR) in the time domain from representative BCs, as previously described (Van der Kloot, 1988; Diamond and Jahr, 1995):(3)RR=IFFTFFTResponseFFTQuantum
+Discrete Fourier transforms of responses (Response) to stationary spots of light were divided by the Fourier transforms of the idealized quantal response (Quantum). The inverse Fourier transform of the resulting ratio yielded estimates of the instantaneous release rate (RR) in the time domain from representative BCs, as previously described (Van der Kloot, 1988; Diamond and Jahr, 1995):
 
-The temporal waveform for the idealized Quantum was obtained by fitting averaged spontaneous iGluSnR events with exponential functions (2 ms rise time and 30 ms decay time constants). The amplitude of the Quantum for each ROI was set according to the quantal size estimate (QSE). The QSE is defined following classical quantal analysis (Katz and Miledi, 1972), as:(4)QSE=2σ2μ
+$$
+RR=IFFT\frac{FFTResponse}{FFTQuantum}
+$$
+
+The temporal waveform for the idealized Quantum was obtained by fitting averaged spontaneous iGluSnR events with exponential functions (2 ms rise time and 30 ms decay time constants). The amplitude of the Quantum for each ROI was set according to the quantal size estimate (QSE). The QSE is defined following classical quantal analysis (Katz and Miledi, 1972), as:
+
+$$
+QSE=\frac{2\sigma^{2}}{\mu}
+$$
 
 where σ and µ are the variance and the mean of the steady state of iGluSnFR responses, respectively. Averages responses from proximal and distal scan fields were used to calculate the prototypical sustained and transient release rates, which were assumed to correspond to BC7 and BC5s, respectively (n=50 ROIs, each proximal and distal site, 6 retinas, 7 FOVs).
 
-## Computational modeling
+### Computational modeling
 
 A simple ball and stick compartmental model was constructed in the NEURON simulation environment (https://github.com/geoffder/spatiotemporal-starburst-model; copy archived at de Rosenroll, 2022), with one somatic compartment and three dendritic compartments (initial, middle, and terminal dendrites; Ding et al., 2016) with membrane properties and channels similar to those published previously (Ding et al., 2016; Vlasits et al., 2016; see Figure 6—source data 1). Input to this isolated starburst dendritic computational unit was driven by model BC synapses that were pseudo-randomly distributed based on anatomical measurements (Ding et al., 2016). Specifically, for each trial repetition, 6 proximal locations and 12 distal locations were sampled from the probability density functions for BC7 and BC5s synapse locations, respectively (Ding et al., 2016) (see Figure 6—source data 1). To simulate moving light bars, BC inputs were activated in sequence based on their location on the dendrite. Vesicle release from each BC ceased when the bar left its receptive field (60 µm in diameter). The precise temporal sequence of BC activation and the response duration was set to simulate 400 µm wide light bars moving over a range of velocities (0.1–2 mm/s).
 
 For each synapse, on each stimulus presentation, the timing of each vesicle release event from individual BCs was obtained by discretizing the continuous release rates estimated from the deconvolution analysis via a Poisson process (sampled at a model time step of 1 ms). Glutamate released from each vesicle then activated AMPA receptor-mediated ‘miniature’ events modeled using a double exponential function (rise 0.14 ms, decay 0.54 ms, and reversal 0 mV; Vlasits et al., 2016). The synaptic conductances were scaled down linearly from 172.2 pS to 68.6 pS across the dendrite, to mimic the downward trend of experimentally measured glutamate responses (Vlasits et al., 2016). Finally, changes in the somatic membrane voltage and terminal dendritic Ca2+ accumulation in response to moving bars were recorded to assess post-synaptic activation (Jain et al., 2022; Ding et al., 2016; Tukker et al., 2004). The direction-selective index (DSi) of the model was assessed by subtraction of the peak terminal Ca2+ concentration in centripetal stimulation from that of centrifugal stimulation.
 
-To quantify the temporal kernels extracted using reverse correlation (Figure 3—figure supplement 2), we calculated the biphasic peak and area index as:Trough=max0,min0.5-mincontrast,1Peak=max0,minmaxcontrast-0.5,1Biphasicpeakindex=Trough(Peak+Trough)negative=∑maxmin-1,contrast-0.5,0positive=∑maxmin0,contrast-0.5,1Biphasicareaindex=−negative(positive−negative)
+To quantify the temporal kernels extracted using reverse correlation (Figure 3—figure supplement 2), we calculated the biphasic peak and area index as:
+
+$$
+Trough=max0,min0.5-mincontrast,1
+$$
+
+
+
+$$
+Peak=max0,minmaxcontrast-0.5,1
+$$
+
+
+
+$$
+Biphasicpeakindex=\frac{Trough}{(Peak+Trough)}
+$$
+
+
+
+$$
+negative=\summaxmin-1,contrast-0.5,0
+$$
+
+
+
+$$
+positive=\summaxmin0,contrast-0.5,1
+$$
+
+
+
+$$
+Biphasicareaindex=\frac{−negative}{(positive−negative)}
+$$

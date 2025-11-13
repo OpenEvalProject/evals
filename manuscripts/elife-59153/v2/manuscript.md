@@ -34,7 +34,7 @@ In the present study, lipidomics of 1008 lipid species from 15 lipid classes and
 
 ## Results
 
-## Clinical characterization of the participants at baseline
+### Clinical characterization of the participants at baseline
 
 The SWIFT cohort enrolled a total of 1035 women diagnosed with GDM. Of these, 1010 did not have T2D at 6–9 weeks postpartum (baseline) and 989 had follow up testing for glucose tolerance up to 8 years post-baseline. Fasting blood samples were collected at baseline. During the follow-up period, 197 women had developed incident T2D and 791 did not (Figure 1). The total years of follow-up were similar between incident T2D and control groups. All research participants underwent 2 hr 75 g OGTTs and other assessments at baseline and thereafter annually for 2 years and subsequent medical diagnoses of diabetes was retrieved from electronic medical records for 8 years post-baseline. In our current study, 171 women with incident T2D cases had available plasma samples at baseline, and 179 controls who did not develop T2D in 8 years’ follow-up (350 participants in total) were profiled for lipidomics. A total of 1008 lipid species from 15 lipid classes as well as 296 fatty acids were assessed in the plasma samples of all participants (Figure 1). Socio-demographic and clinical parameters of the 350 participants at baseline are summarized in Table 1. There was no significant difference in age, race, parity, pre-pregnancy BMI, family history of diabetes, postpartum BMI, total cholesterol, LDL-C, HOMA-B, smoker, dietary glycemic index, dietary intake and physical activity score. Compared to the control group, a higher percentage of participants who developed T2D later on had been treated with insulin or oral medications during pregnancy (p<0.001). Prenatal 3 hr 100 g OGTT (sum of the 4 z-scores for glucose values; fasting, 1 hr, 2 hr and 3 hr post-load, p<0.001) for the incident T2D case group were higher than the control group. At 6–9 weeks postpartum, compared to controls, women in the incident T2D group had higher mean FPG (p<0.001), 2hPG (p<0.001), fasting insulin (p=0.001), 2 hr insulin (p<0.001), fasting TAG (p=0.003), median HOMA-IR (p<0.001) and hypertension (p=0.04), but lower mean fasting HDL-C (p=0.017).
 
@@ -42,9 +42,250 @@ The SWIFT cohort enrolled a total of 1035 women diagnosed with GDM. Of these, 10
 
 **Figure 1.:** In the SWIFT cohort, 1035 women diagnosed with GDM in 2008–2011 were enrolled at 6–9 weeks postpartum (baseline). 1010 of the 1035 participants were confirmed via 2 hr 75 g OGTT without diabetes at baseline. Up to 8 years’ post-baseline, a total of 197 (19.5%) women developed T2D. At baseline, samples of 171 available cases with 179 controls were measured using lipidomics. A total of 1008 lipid species from 15 lipid classes and 296 fatty acids were assessed in the plasma samples of all participants.
 
-## Lipids associated with future T2D risk
+**Table 1.**
+ Prenatal and study baseline (6–9 weeks postpartum) characteristics of women with gestational diabetes mellitus in the SWIFT cohort (n = 350).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Prenatal characteristics</th>
+      <th>Case Diabetes at follow up</th>
+      <th>Control No Diabetes at follow up</th>
+      <th rowspan="2">p-value</th>
+    </tr>
+    <tr>
+      <th>(N = 171)</th>
+      <th>(N = 179)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years), Mean (SD)</td>
+      <td>33.3 (5.2)</td>
+      <td>33.0 (4.5)</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>Race/ethnicity, n (%)</td>
+      <td></td>
+      <td></td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>31 (18.1)</td>
+      <td>27 (15.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>51 (29.8)</td>
+      <td>55 (30.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>21 (12.3)</td>
+      <td>16 (8.9)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hispanic</td>
+      <td>66 (38.6)</td>
+      <td>79 (44.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2 (1.2)</td>
+      <td>2 (1.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Parity, n (%)</td>
+      <td></td>
+      <td></td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>Primiparous (one birth)</td>
+      <td>56 (32.7)</td>
+      <td>54 (30.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biparous (two births)</td>
+      <td>62 (36.3)</td>
+      <td>64 (35.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Multiparous (&gt;2 births)</td>
+      <td>53 (31.0)</td>
+      <td>61 (34.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GDM treatment, n (%)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Diet only</td>
+      <td>74 (43.3)</td>
+      <td>128 (71.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Oral medications</td>
+      <td>79 (46.2)</td>
+      <td>47 (26.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Insulin</td>
+      <td>18 (10.5)</td>
+      <td>4 (2.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pre-pregnancy BMI (kg/m2), Mean (SD)</td>
+      <td>33.6 (8.2)</td>
+      <td>32.3 (6.9)</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Sum of Prenatal 3 hr 100 g OGTT glucose z-scores, Mean (SD)</td>
+      <td>1.4 (3.1)</td>
+      <td>−0.2 (2.5)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Family history of diabetes, n (%)</td>
+      <td>101 (59.1)</td>
+      <td>89 (52.0)</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Baseline characteristics at 6–9 weeks Postpartum</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2), Mean (SD)</td>
+      <td>33.5 (7.4)</td>
+      <td>32.4 (6.3)</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Fasting plasma glucose (FPG), mg/dl, Mean (SD)</td>
+      <td>101.5 (10.4)</td>
+      <td>94.3 (7.7)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>2 hr Post-load plasma glucose (75 g OGTT), mg/dl, Mean (SD)</td>
+      <td>131.0 (29.5)</td>
+      <td>109.8 (27.4)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Fasting insulin, μU/ml, Median (IQR)</td>
+      <td>26.5 (20.7)</td>
+      <td>22.1 (17.4)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>2 hr insulin, μU/ml, Median (IQR)</td>
+      <td>111.5 (85.7)</td>
+      <td>83.3 (73.6)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Fasting plasma Triglycerides, mg/dl, Median (IQR)</td>
+      <td>119.0 (103.0)</td>
+      <td>94.0 (72.0)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Fasting plasma HDL-C, mg/dl, Mean (SD)</td>
+      <td>49.0 (16.0)</td>
+      <td>52.0 (19.0)</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>Fasting plasma Total Cholesterol, Mean (SD)</td>
+      <td>199.4 (34.5)</td>
+      <td>203.5 (35.5)</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Fasting plasma LDL-C, Mean (SD)</td>
+      <td>121.0 (31.1)</td>
+      <td>126.4 (31.2)</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>HOMA-IR, Median (IQR)</td>
+      <td>6.8 (5.6)</td>
+      <td>5.0 (4.3)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>HOMA-B, Median (IQR)</td>
+      <td>268.1 (192.1)</td>
+      <td>256.0 (176.2)</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>Hypertension, n (%)</td>
+      <td>14 (8.2)</td>
+      <td>5 (2.8)</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Smoker, n (%)</td>
+      <td>5 (2.9)</td>
+      <td>4 (2.2)</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>Dietary glycemic index, Mean (SD)</td>
+      <td>242.5 (106.7)</td>
+      <td>246.5 (112.5)</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>Dietary Intake, Percentage of Kcal as animal fat, Mean SD</td>
+      <td>27.0 (7.7)</td>
+      <td>25.6 (8.6)</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Physical activity score, met-hrs per week, Mean (SD)</td>
+      <td>50.7 (23.4)</td>
+      <td>47.4 (20.6)</td>
+      <td>0.16</td>
+    </tr>
+  </tbody>
+</table>
+
+_Variables obtained from the SWIFT Study that administered the research 2 hr 75 g OGTTs and other assessments at in-person research visits (baseline). Participants did not have diabetes at study baseline and underwent annual 2 hr 75 g OGTTs at baseline and annually for two years, and thereafter evaluated for diabetes onset from electronic medical records. P-values are for incident diabetes case versus no diabetes controls at follow-up._
+
+### Lipids associated with future T2D risk
 
 Lipid biosynthesis and metabolism have been implicated in the development and progression of T2D. However, in previous studies, it has been an understudied component of metabolomics profiling in the GDM transition to T2D. Thus, we have launched a broad spectrum lipidomics analysis, screening lipid metabolites and providing a comprehensive linkage of lipid metabolism to T2D. With a total of 1008 lipid species, we excluded lipids with >5% missing values among subjects, allowing only robust lipids (816 species) to be included in further analysis. Supervised PCA indicated partial separability of lipid profiles between case and control groups (Figure 2—figure supplement 1). By applying multiple logistic regression analysis, we assessed the association of lipids with future diabetes risk after adjusting for age, race and BMI. Of the 816 lipid species, 311 were positively and 70 were negatively associated with T2D risk (Figure 2A, Figure 2—figure supplement 2, FDR < 0.05). Of the 311 lipids positively associated with risk, 293 were from TAG class while 17 from DAG class and one from PE class (Figure 2A–B). Of the 70 lipids negatively associated with T2D, 31 were from SM class, 27 from PC class, seven from CE class, four from FFA class and one from TAG class (Figure 2A–B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59153/elife-59153-fig2-v2.jpg)
+
+**Figure 2.:** (A) Volcano plot showed -log10(FDR) against log2(OR) of 816 lipid species in the association with T2D risk. Grey circles were denoted as no significant association with T2D risk. Of those that are significantly associated, red circles denote as neutral lipids, orange as phospholipids, blue as sphingolipids. (B) Number of T2D positive-, negative- and non- associated lipids in each lipid class were shown. Orange, green and blue bars denote positive-, negative- and non- associated lipids respectively. Significance was indicated by FDR < 0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59153/elife-59153-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59153/elife-59153-fig2-figsupp2-v2.jpg)
 
 Most notably, 57.2% of all TAG species measured (293 out of 512 TAG) were significantly positively associated with T2D risk (Figure 2B). Plasma TAG, a transporter of dietary fats, increased, suggesting an overload of lipids in circulation before T2D onset. Additionally, 17 out of 54 DAGs, intermediates of TAG synthesis, were upregulated, further suggesting TAG biosynthesis was abnormally active (Figure 2B). In contrast, 40% (22 out of 55) measured PC and 25% (3 out of 12) measured LPC were negatively associated with T2D risk (Figure 2B). Similarly, 62% measured sphingolipids (31 out of 50) were inversely associated with T2D risk, particularly in classes of HCER (6 out of 9), LCER (9 out of 10) and sphingomyelins (10 out of 12) (Figure 2B). These findings suggested an inverse association of phospholipids and sphingolipids and increased risk of T2D.
 
@@ -52,17 +293,17 @@ More strictly, by using a cut-off of FDR < 0.001, we demonstrated 107 lipids w
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59153/elife-59153-fig3-v2.jpg)
 
-**Figure 3.:** (A) Odds ratio and 95% CI of 107 lipids strongly associated with T2D risk (FDR < 0.001) were indicated. The multivariate logistic regression model was adjusted for race, age and BMI. (B) Correlation between 107 T2D-risk associated lipids and conventional clinical parameters was indicated by correlation coefficient (r). Orange color indicates positive correlation while blue denotes negative correlation.Figure 3—source data 1.Figure 3—source data 2.
+**Figure 3.:** (A) Odds ratio and 95% CI of 107 lipids strongly associated with T2D risk (FDR < 0.001) were indicated. The multivariate logistic regression model was adjusted for race, age and BMI. (B) Correlation between 107 T2D-risk associated lipids and conventional clinical parameters was indicated by correlation coefficient (r). Orange color indicates positive correlation while blue denotes negative correlation.
 
-## Association between diabetes risk and lipid biochemical configuration
+### Association between diabetes risk and lipid biochemical configuration
 
 Lipidomics profiling provided a comprehensive coverage of plasma lipids for us to gain insight into the associations of lipid species biochemical structure (i.e. chain length, numbers of carbon atoms, double bonds) with diabetes risk. Among all the TAGs detected (carbon atoms from 36 to 60), those significantly associated with diabetes risk contained between 40–56 carbon atoms and 0–8 double bonds. Within those TAGs containing 40–56 carbon atoms, T2D risk increased in step with the number of carbon atoms (except carbon atom 55). TAGs most significantly associated with T2D risk were clustered in the range of carbon atoms 50–54 and double bond 0–4, particularly with even carbon atoms 52 and 54 (Figure 4A). DAGs with an even number of carbon atoms 30, 32, 34, 36 but not odd numbers were associated with diabetes risk more prominently. There was no clear pattern of association with incident T2D by numbers of carbon atoms or double bonds in other lipid classes (Figure 4A). From the perspective of specific fatty acid chains in lipids, a relationship between diabetes risk and fatty acid composition was revealed. For total fatty acids, three SFAs (FA12:0, FA14:0 and FA16:0) as well as a PUFA (FA18:3) were positively associated with T2D risk and two very long chain MUFAs (FA24:1, FA26:1) were negatively associated with T2D risk (Figure 4B). Considering lipid classes, positively associated fatty acids were mainly from DAGs and TAGs including long chain SFAs (C12-C20), MUFA (C14 and C16) and PUFA (C20 and C22) (Figure 4B). In contrast, in PC and LPC classes, odd chain fatty acids (C15 and 17) were negatively associated with T2D risk. Interestingly, in the sphingolipid class, only even chain saturated and MUFAs were negatively associated with T2D risk (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/59153/elife-59153-fig4-v2.jpg)
 
-**Figure 4.:** (A) Relationship between diabetes risk and total number of carbon atoms and double bonds in lipid species. Odds ratios were represented with dots, color denoting odds ratio value, dot size denoting significance by FDR value. (B) Relationship between diabetes risk and fatty acid composition in lipids. Red and blue color denotes log2(odds ratio) with significance (FDR < 0.05), white denotes values with no significance, grey denotes fatty acids not detected.Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (A) Relationship between diabetes risk and total number of carbon atoms and double bonds in lipid species. Odds ratios were represented with dots, color denoting odds ratio value, dot size denoting significance by FDR value. (B) Relationship between diabetes risk and fatty acid composition in lipids. Red and blue color denotes log2(odds ratio) with significance (FDR < 0.05), white denotes values with no significance, grey denotes fatty acids not detected.
 
-## Metabolic pathways associated with future diabetes
+### Metabolic pathways associated with future diabetes
 
 To identify metabolic pathways associated with future diabetes, 381 lipids with significant association with diabetes risk (FDR < 0.05) (Figure 2—figure supplement 2) were subjected to Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis. Glycerolipid metabolism, which involves TAG and DAG biosynthesis, was significantly up-regulated (p=0.01). In contrast, sphingolipid (p=2.11E-05), linoleic acid (p=0.016) and alpha linoleic acid (p=0.041) metabolism were found to be significantly down-regulated (Figure 5A). Specifically, in the glycerolipid biosynthesis pathway, the TAG class was increased with strong significance (p=0.003), suggesting an induced process of lipid storage (Figure 5B). While as a whole the phospholipid metabolism pathway was not significantly altered, the PC class of lipids was significantly reduced (p=0.015) along with a modest decrease in the downstream LPC class (p<0.2), suggesting the potential inhibition of pathway from DAG to PC class. In sphingolipids metabolism, the central metabolite ceramide, which is a precursor for complex sphingolipids, was marginally down-regulated (p<0.2). However, classes of SM (p=0.002), HCER (p=0.006) and LCER (p=0.0005), which are downstream of sphingolipid metabolism were highly reduced, suggesting the inhibition in the process of deriving complex sphingolipids from ceramide (Figure 5B).
 
@@ -70,13 +311,13 @@ To identify metabolic pathways associated with future diabetes, 381 lipids with 
 
 **Figure 5.:** (A) Significantly regulated biological pathways associated with future diabetes onset analyzed by Kyoto Encyclopedia of Genes and Genomes (KEGG). Blue denotes the down-regulated pathways and red denotes the up-regulated pathway. (B) The altered lipid classes in an integrated lipid metabolism pathway. Red denotes positive association whereas blue denotes negative association with significance of p-value indicated.
 
-## Selective lipids can predict future diabetes and complement clinical diagnostics
+### Selective lipids can predict future diabetes and complement clinical diagnostics
 
 The 107 lipids are the most significantly associated with future diabetes (odds ratio FDR cut-off <0.001) (Figure 3A). It is intuitive that some may actually have predictive properties, and this was tested. By using stepwise logistic regression modelling, we identified a panel of 11 lipids (10 TAGs and 1 PC) with excellent ability to predict future diabetes in the cohort examined (Figure 6A). With these lipids alone, we achieved the prediction ability as AUC of 0.739 (Figure 6B). The classical clinic predictive parameter FPG showed the prediction power of AUC 0.703 which was improved to AUC 0.795 by adding lipids (Figure 6B). The clinic predictive parameter 2hPG showed the prediction power of AUC 0.704 which was improved to AUC 0.809 by adding lipids (Figure 6B). The combination of two clinical parameters 2hPG and FPG can achieve an AUC 0.775. Importantly, combining the 11 lipid panel outcomes with FPG and 2hPG, the discriminative power was significantly improved to AUC 0.842 (Figure 6B). This demonstrates that the circulating levels of specific lipids can in part be used to assess future diabetes risk and when applied, can improve diabetes prediction, especially when combined with routine clinical parameters (2hPG and FPG) during the early postpartum period.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/59153/elife-59153-fig6-v2.jpg)
 
-**Figure 6.:** (A) Top 11 lipids with the best predictive performance were selected for building a model to predict future T2D. Their odds ratio and 95% CI of T2D association were shown. (B) Predictive performance of logistic regression model was demonstrated as ROC curve. The area under the curve and 95% CI in each model were shown.Figure 6—source data 1.
+**Figure 6.:** (A) Top 11 lipids with the best predictive performance were selected for building a model to predict future T2D. Their odds ratio and 95% CI of T2D association were shown. (B) Predictive performance of logistic regression model was demonstrated as ROC curve. The area under the curve and 95% CI in each model were shown.
 
 ## Discussion
 
@@ -96,14 +337,14 @@ In addition to investigating the pathology of diabetes onset, we also developed 
 
 ## Materials and methods
 
-## SWIFT cohort
+### SWIFT cohort
 
 The Study of Women, Infant Feeding, and Type 2 Diabetes Mellitus After GDM Pregnancy (SWIFT) is a prospective cohort that conducted in-person research exams among 1035 women with GDM diagnosed based on the 3 hr 100 g OGTT via Carpenter and Coustan’s criteria, and no prior history of diabetes or other serious health conditions (age 20–45 years, diverse ethnicities) within the Kaiser Permanente Northern California Healthcare System (KPNC) (Carpenter and Coustan, 1982). Details of the cohort recruitment, selection criteria, methodologies have been described previously (Gunderson et al., 2011). Of 1035 women with GDM who consented to participate in the three in-person research exams for the SWIFT Study, 1010 participants did not have T2D at baseline (6–9 weeks postpartum) based on 2 hr 75 g oral glucose tolerance tests (OGTTs). All research participants underwent annual research 2 hr 75 g OGTTs and other assessments at baseline throughout 2 years of follow-up, and subsequently for medical diagnoses of diabetes confirmed by laboratory testing from electronic medical records up to 8 years post-baseline. Research methodology included monthly quantitative assessment of lactation intensity and duration, socio-demographics, medical conditions, medication use, reproductive history, depression, subsequent births, lifestyle behaviors, body composition and anthropometry (Gunderson et al., 2011). Fasting and 2 hr postload plasma samples from 75 g OGTTs (baseline, 1 year, and 2 years post-baseline) were analyzed within several weeks for glucose and insulin levels, and fasting stored samples from the SWIFT Biobank (−80°C) were used to measure a lipid panel, free fatty acids and adipokines, as previously described (Gunderson et al., 2014; Gunderson et al., 2012). Follow-up assessments to determine new onset T2D status were based on research 2 hr 75 g OGTTs and KPNC electronic medical records data based on mediation, ICD codes and laboratory tests for glucose tolerance (Gunderson et al., 2015). T2D diagnosis was based on the American Diabetes Association (ADA) criteria (Expert Committee on the Diagnosis and Classification of Diabetes Mellitus, 2003). The study design and all procedures were approved by the Kaiser Permanente Northern California Institutional Review Board (protocol numbers #CN-04EGund-03-H and #1279812–10) and Office of Research Ethics at University of Toronto (protocol number #38188). All participants gave written informed consent before taking part in the research exams.
 
-## Lipidomics assay
+### Lipidomics assay
 
 Baseline fasting plasma from 350 samples from a subset of the cohort (171 incident T2D vs 179 non-T2D controls) were sent to Metabolon, Inc (Morrisville, NC) and measured by GC-MS and LC-MS. Lipids were extracted from the bio-fluid in the presence of deuterated internal standards using an automated BUME extraction according to the method of Löfgren et al., 2012. The extracts were dried under nitrogen and reconstituted in ammonium acetate dichloromethane: methanol. The extracts were transferred to vials for infusion-MS analysis, performed on a Shimadzu LC with nano PEEK tubing and the Sciex SelexIon-5500 QTRAP. The samples were analyzed via both positive and negative mode electrospray. The 5500 QTRAP was operated in MRM mode with a total of more than 1,100 MRMs. Individual lipid species were quantified by taking the ratio of the signal intensity of each target compound to that of its assigned internal standard, then multiplying by the concentration of internal standard added to the sample. Lipid class concentrations were calculated from the sum of all molecular species within a class, and fatty acid compositions were determined by calculating the proportion of each class comprised by individual fatty acids. In this study, a total of 1008 lipid species from 15 classes and 296 fatty acids were measured. In particular, in the natural lipid group, 26 cholesterol esters (CE), 26 monoacylglycerol (MAG), 59 diacylglycerol (DAG), 493 triacylglycerol (TAG), and 26 free fatty acids (FFA) were detected. In phospholipid group, 140 phosphatidylcholine (PC), 216 phosphatidylethanolamine (PE), 28 phosphatidylinositol (PI), 26 lysophosphatidylcholine (LPC), and 26 lysophosphatidylethanolamine (LPE) were measured. In sphingolipid group, levels of 13 dihydroceramide (DCER), 12 ceramide (CER), 12 hexosylceramide (HCER), 12 lactosylceramide (LCER), and 12 species of sphingomyelin (SM) were tested.
 
-## Data analyses
+### Data analyses
 
 Data processing was performed for further statistical analysis. Lipids with >5% missing values were removed from the data allowing only the most robust lipids for the following statistical analysis. After this filtering step, 1008 species were reduced to 816 for further analysis. Remaining missing values were imputed as 1/2 minimum value for each specific lipid. Sample normalization was performed by normalizing each value within the sample to the total value of the sample to adjust differences among the samples. Log-transformation was performed. Odds ratios (ORs) of each lipid for T2D incidence were calculated by applying logistic regression models adjusting effects from race/ethnicity, age and BMI. FDR was calculated by correcting p-value by Benjamini-Hochberg method for multiple comparison. A cut-off of FDR < 0.05 was used for significance. Lipids with FDR of odds ratio <0.001 were subjected for lipid predictor selection. By applying a conditional logistic regression model with stepwise method (including forward and backwards), 11 lipids were selected for prediction models. Classification models were built with logistic regression and cross validation was performed to evaluate the prediction performance. Prediction performance was presented as receiver operating characteristic (ROC) curves. Because association of lipids with diabetes risk can differ based on acyl chain length and unsaturation degree, lipids were grouped and further analyzed based on carbon atom and double bond numbers. All the analyses above were performed in open-source, statistical software, R v3.2.4. Pathway analysis was performed using positive- or negative-associated lipids in the web tool MetaboAnalyst 4.0 (Chong et al., 2018).

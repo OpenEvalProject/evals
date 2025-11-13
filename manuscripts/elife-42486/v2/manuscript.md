@@ -44,7 +44,7 @@
 
 ## Abstract
 
-10.7554/eLife.42486.001 Pyomyositis is a severe bacterial infection of skeletal muscle, commonly affecting children in tropical regions, predominantly caused by Staphylococcus aureus . To understand the contribution of bacterial genomic factors to pyomyositis, we conducted a genome-wide association study of S. aureus cultured from 101 children with pyomyositis and 417 children with asymptomatic nasal carriage attending the Angkor Hospital for Children, Cambodia. We found a strong relationship between bacterial genetic variation and pyomyositis, with estimated heritability 63.8% (95% CI 49.2–78.4%). The presence of the Panton–Valentine leucocidin (PVL) locus increased the odds of pyomyositis 130-fold (p=10 -17.9 ). The signal of association mapped both to the PVL-coding sequence and to the sequence immediately upstream. Together these regions explained over 99.9% of heritability (95% CI 93.5–100%). Our results establish staphylococcal pyomyositis, like tetanus and diphtheria, as critically dependent on a single toxin and demonstrate the potential for association studies to identify specific bacterial genes promoting severe human disease.
+Pyomyositis is a severe bacterial infection of skeletal muscle, commonly affecting children in tropical regions, predominantly caused by Staphylococcus aureus. To understand the contribution of bacterial genomic factors to pyomyositis, we conducted a genome-wide association study of S. aureus cultured from 101 children with pyomyositis and 417 children with asymptomatic nasal carriage attending the Angkor Hospital for Children, Cambodia. We found a strong relationship between bacterial genetic variation and pyomyositis, with estimated heritability 63.8% (95% CI 49.2–78.4%). The presence of the Panton–Valentine leucocidin (PVL) locus increased the odds of pyomyositis 130-fold (p=10-17.9). The signal of association mapped both to the PVL-coding sequence and to the sequence immediately upstream. Together these regions explained over 99.9% of heritability (95% CI 93.5–100%). Our results establish staphylococcal pyomyositis, like tetanus and diphtheria, as critically dependent on a single toxin and demonstrate the potential for association studies to identify specific bacterial genes promoting severe human disease.
 
 ## Introduction
 
@@ -62,7 +62,35 @@ To understand the bacterial genetic basis of pyomyositis, we sampled and whole-g
 
 In our study, some S. aureus lineages were strongly overrepresented among cases of pyomyositis compared with asymptomatic, nasally-carried controls over the same time period. Notably, 86/101 (85%) of pyomyositis cases were caused by CC-121 bacteria, whereas no pyomyositis cases were caused by the next two most commonly carried lineages, sequence type (ST)−834 and CC-45 (Figure 1). We estimated the overall heritability of case/control status to be 63.8% (95% CI 49.2–78.4%) in the sample, reflecting the strong relationship between bacterial genetic variation and case/control status. We used bugwas (Power et al., 2017) to decompose this heritability into the principal components (PCs) of bacterial genetic variation. PC 1, which distinguished CC-121 (the most common pyomyositis lineage) from ST-834 (which was only found in carriage), showed the strongest association with case/control status (p=10-29.6, Wald test). The strongest association was with PC 20, which differentiated a sub-lineage of CC-121 within which no cases were seen (p=10-13.9), and PC 2, which distinguished CC-45 from the rest of the species (p=10-4.9).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/42486/elife-42486-fig1-v2.jpg)
+
+**Figure 1.:** The phylogeny was estimated by maximum likelihood from SNPs mapping to the USA300 FPR3757 reference genome. Multi-locus sequence type (ST) or clonal complex (CC) groups are shown (outer grey ring). Case/control status is marked in the middle ring: pyomyositis (gold, n = 101) or nasal carriage (green, n = 417). Branches of the phylogeny that correspond to the three principal components (PCs) significantly associated with case/control status (PCs 1, 2 and 20) are marked in red, blue and yellow, respectively. Branch lengths are square root transformed to aid visualization. The presence of the kmers most strongly associated with pyomyositis is indicated by red blocks in the inner ring.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42486/elife-42486-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The year of sampling (2007–2008, blue shaded lines) and MRSA status (orange lines) are illustrated around the phylogeny of the bacteria sampled from pyomyositis cases (gold lines) and asymptomatic carriage controls (green lines). The three PCs most significantly associated with case/control status are also shown (PCs 1, 2 and 20 by red, blue and yellow branches respectively). Branch lengths are square root transformed to aid visualization.
+
 We conducted a GWAS to identify bacterial genetic variants associated with pyomyositis, controlling for differences in pyomyositis prevalence between S. aureus lineages. We used a kmer-based approach (Sheppard et al., 2013) in which every variably present 31 bp DNA sequence observed among the 518 genomes was tested for association with pyomyositis versus asymptomatic nasal carriage, controlling for population structure using GEMMA (Zhou and Stephens, 2012). These kmers captured bacterial genetic variation including single nucleotide polymorphisms (SNPs), insertions or deletions (indels), and presence or absence of entire accessory genes. We found 10.7 million unique kmers variably present across the bacterial genomes. In total, 9175 kmers were significantly associated with case/control status after correction for multiple testing (10-6.8 ≤ p ≤ 10-21.4; Figure 2A). When mapped to the de novo assembly of a CC121 isolate from pyomyositis (PYO2134), the vast majority of these kmers (9,074/9,175; 98.9%) localised to a 45.7 kb region spanning an integrated prophage with 95% nucleotide identity to φSLT (Figure 2B). Most (9,173/9,175; 99.98%) significant kmers were found at an increased frequently in pyomyositis, with odds ratios (OR) ranging from 2.7 to 139.8, indicating that the presence of each was associated with increased risk of disease. The presence of bacteriophage φSLT was thus strongly associated with pyomyositis.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/42486/elife-42486-fig2-v2.jpg)
+
+**Figure 2.:** (A) All kmers (n = 10,744,013) were mapped to the genome assembly of one CC121 pyomyositis bacterium (PYO2134). Each point represents a kmer, plotted by the mapped location and the significance of the association with disease (-log10 p value). Kmers are coloured by the odds ratio (OR) of kmer presence for disease risk. A Bonferroni-adjusted threshold for significance is plotted in grey. (B) The region between 1.57–1.62 MB in greater detail. Grey arrows depict coding sequences, determined by homology to USA300 FPR3757. (C) Associations for kmers mapping to region 1,571–1574 kB is plotted. Kmer presence determined from hybrid assembly using short and long-read data. Grey arrows depict coding sequences, determined by homology to USA300 FPR3757.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42486/elife-42486-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Contig boundaries, when overlapping, are marked with a red diamond. Ns in the assembly are marked in dark grey. Polymorphisms are colour-coded by base.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/42486/elife-42486-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Contig boundaries, when overlapping, are marked with a red diamond. Ns in the assembly are marked in dark grey. Polymorphisms are colour-coded by base.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/42486/elife-42486-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Multi-locus sequence type (ST) or clonal complex (CC) groups are shown (outer grey ring). Case/control status is marked in the next outermost ring: pyomyositis (gold, n = 101) or nasal carriage (green, n = 417). Branch lengths are square root transformed to aid visualization. The presence of kmers mapping to the PVL coding sequence (dark red) or of >98% coverage of PVL coding sequence in de novo assembly found by BLAST (red) are marked in the next rings. Phages with >95% coverage on BLAST of the de novo assembly are marked by points (phiPVL in purple, φSaUSA2 in dark blue, φSLT in light blue and φCC121 in orange), and bars are used to mark the phage with the greatest sequence homology.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/42486/elife-42486-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Results from repeat kmer GWAS using early and late sub-groups of cases and controls, as well as results from original GWAS of the entire group. We report the presence of kmers mapping across the PVL locus in each subset. Forest plot showing the effect sizes (box) with 95% CI (whiskers) determined by LMM for kmers mapping to PVL kmer in each subset, and in the complete study (diamond centred on effect size extending across 95% CI). The statistical significance of association with case/control status after controlling for population structure is shown for each subset and the complete study.
 
 We were able to localise the most statistically significant signal of association to kmers that mapped within φSLT to the lukS-PV and lukF-PV cargo genes. These genes encode the subunits of PVL, which multimerise into a pore-forming toxin capable of rapidly lysing the membranes of human neutrophils (Löffler et al., 2010; Otto, 2011). 1630 kmers tagging the presence of the lukSF-PV coding sequences (CDS) were highly significantly associated with disease, being present in 98/101 (97%) pyomyositis cases and 84/417 (20%) carriage controls (unadjusted OR 129.5, p=10-17.9). Kmers tagging variation in the 389 bp region immediately upstream of the CDS were also strongly associated with disease (p=10-21.4). The most significant of these kmers were co-present with the CDS in the same cases (98/101, 97.0%), but present in fewer controls (79/417, 18.9%), producing an OR of 140.
 
@@ -88,7 +116,7 @@ These results establish that, for children in Cambodia, staphylococcal pyomyosit
 
 ## Materials and methods
 
-## Patient sample collection
+### Patient sample collection
 
 We retrospectively identified pyomyositis cases from the Angkor Hospital for Children in Siem Reap, Cambodia, between January 2007 and November 2011. We screened all attendances in children (≤16 years) using clinical coding (ICD-10 code M60 (myositis)) and isolation of S. aureus from skeletal muscle abscess pus. We reviewed clinical notes to confirm a clinical diagnosis of pyomyositis was made by the medical staff, and bacterial strains cultured by routine clinical microbiology laboratory were retrieved from the local microbiology biobank. 106 clinical episodes of pyomyositis were identified, in 101 individuals, and we included the earliest episode from each individual.
 
@@ -98,17 +126,17 @@ We undertook a second cohort study in 2012. Inclusion criteria were children (�
 
 We selected controls from carriers in these two cohorts using the excel randomization function: 222 of 519 from the 2008 cohort and 195 of 261 from the 2012 cohort.
 
-## Ethical framework
+### Ethical framework
 
 Approval for this study was provided by the AHC institutional review board and the Oxford Tropical Ethics Committee (507-12).
 
-## Whole genome sequencing
+### Whole genome sequencing
 
 For each bacterial culture, a single colony was sub-cultured and DNA was extracted from the sub-cultured plate using a mechanical lysis step (FastPrep; MPBiomedicals, Santa Ana, CA) followed by a commercial kit (QuickGene; Autogen Inc, Holliston, MA), and sequenced at the Wellcome Centre for Human Genetics, Oxford on the Illumina (San Diego, California, USA) HiSeq 2500 platform, with paired-end reads 150 base pairs long.
 
 A subset of samples were sequenced using long-read sequencing technology. We selected 37 isolates with incomplete assembly upstream of the PVL locus, 22 with ambiguous base calls in the assembly, and 15 where the region was assembled over two contigs. DNA was extracted using Genomic Tip 100/G (Qiagen, Manchester, UK) and DNA libraries prepared using Oxford Nanopore Technologies (ONT) SQK-LSK108 library kit (ONT, Oxford, UK) according to manufacturer instructions. These were then sequenced on ONT GridION device integrated with a FLO-MIN106 flow cell (ONT, Oxford, UK). ONT base calling was performed using Guppy v.1.6.
 
-## Variant calling
+### Variant calling
 
 For short-read sequencing, we used Velvet (Zerbino and Birney, 2008) v1.0.18 to assemble reads into contigs de novo. Velvet Optimiser v2.1.7 was used to choose the kmer lengths on a per sequence basis. The median kmer length was 123 bp (IQR 119–123). To obtain multilocus sequence types we used BLAST (Altschul et al., 1990) to find the relevant loci, and looked up the nucleotide sequences in the online database at http://saureus.mlst.net/. Strains that shared 6 of 7 MLST loci were considered to be in the same Clonal Complex (Feil et al., 2003). Antibiotic sensitivity was predicted by interrogating the assemblies for a panel of resistance determinants as previously described (Gordon et al., 2014).
 
@@ -116,44 +144,44 @@ We used Stampy (Lunter and Goodson, 2011) v1.0.22 to map reads against reference
 
 After filtering ONT reads with filtlong v.0.2.0 (with settings filtlong -- min_length 1000 --keep_percent 90 --target_bases 500000000 --trim --split 500), hybrid assembly of short (Illumina) and long (ONT) reads were made, using Unicycler v0.4.5 (Wick et al., 2017) (default settings). The workflow for these assemblies is available at https://gitlab.com/ModernisingMedicalMicrobiology/MOHAWK)
 
-## Reconstructing the phylogenetic tree
+### Reconstructing the phylogenetic tree
 
 We constructed a maximum likelihood phylogeny of mapped genomes for visualization using RAxML (Stamatakis, 2014) assuming a general time reversible (GTR) model. To overcome a limitation in the presence of divergent sequences whereby RAxML fixes a minimum branch length that may be longer than a single substitution event, we fine-tuned the estimates of branch lengths using ClonalFrameML (Didelot and Wilson, 2015).
 
-## Kmer counting
+### Kmer counting
 
 We used a kmer-based approach to capture non-SNP variation (Sheppard et al., 2013). Using the de novo assembled genome, all unique 31 base haplotypes were counted using dsk (Rizk et al., 2013). If a kmer was found in the assembly, it was counted present for that genome, otherwise it was treated as absent. This produced a set of 10,744,013 variably present kmers, with the presence or absence of each determined per isolate. We identified a median of 2,801,000 kmers per isolate, including variably present kmers and kmers common to all genomes (IQR 2,778,000–2,837,000).
 
-## Calculating heritability
+### Calculating heritability
 
 We used the Genome-wide Efficient Mixed Model Association tool (GEMMA (Zhou and Stephens, 2012)) to fit a univariate linear mixed model for association between a single phenotype (pyomyositis vs asymptomatic nasal carriage). We calculated the relatedness matrix from kmers, and used GEMMA to estimate the proportion of variance in phenotypes explained by genotypic diversity in the sample set (i.e. estimated heritability). Heritability estimates with and without a covariate (e.g. the presence of high risk kmers) are compared by testing for difference in proportions. We use the point estimate for heritability as the denominator to calculate the relative decrease proportion.
 
-## Genome wide association testing of kmers
+### Genome wide association testing of kmers
 
 We performed association testing using an R package bacterialGWAS (https://github.com/jessiewu/bacterialGWAS), which implements a published method for locus testing in bacterial GWAS (Earle et al., 2016). The association of each kmer on the phenotype was tested, controlling for the population structure and genetic background using a linear mixed model (LMM) implemented in GEMMA (García et al., 2013). The parameters of the linear mixed model were estimated by maximum likelihood and likelihood ratio test was performed against the null hypothesis (that each locus has no effect) using the software GEMMA (García et al., 2013). GEMMA was run using a minor allele frequency of 0 to include all SNPs. GEMMA was modified to output the ML log-likelihood under the null, and alternative and –log10 p values were calculated using R scripts in the bacterialGWAS package. Unadjusted odds ratios were reported because there was no residual heritability unexplained by the most significant kmers.
 
 To address the possibility of differing effect sizes between the two control cohorts, we have repeated the analysis after splitting the study into two groups – early (2008 and earlier, n = 276, cases n = 54, controls n = 222) and late (2009 and later, n = 242, cases n = 47, controls n = 195). We then examined the maximum likelihood estimates produced by the LMM for kmers mapping to the PVL coding sequence in each region. The 95% CI of the estimate from each sub study were overlapping (See Figure 2—figure supplement 4).
 
-## Testing for lineage effects
+### Testing for lineage effects
 
 We tested for associations between lineage and phenotype using an R package bugwas (available at https://github.com/sgearle/bugwas), which implements a published method for lineage testing in bacterial GWAS (Earle et al., 2016). We tested lineages using principal components. These were computed based on biallelic SNPs using the R function prcomp. To test the null hypothesis of no background effect of each principal component, we used a Wald test, which we compared against a χ (Chewapreecha et al., 2014) distribution with one degree of freedom to obtain a p value.
 
-## Kmer mapping
+### Kmer mapping
 
 We used Bowtie (Langmead and Salzberg, 2012) to align all 31 bp kmers from short-read sequencing to a draft reference (the de novo assembly of a CC-121 pyomyosits strain PYO2134). Areas of homology between the draft reference and well-annotated reference strains were identified by aligning sequences with Mauve (Darling et al., 2004). For all 31 bp kmers with significant association with case-controls status, the likely origin of the kmer was determined by nucleotide sequence BLAST (Altschul et al., 1990) of the kmers against a database of all S. aureus sequences in Genbank.
 
-## Joint short-read and long-read analysis
+### Joint short-read and long-read analysis
 
 31 bp kmers were counted for the 37 hybrid short-read and long-read assemblies using dsk (Rizk et al., 2013). The presence or absence of all Illumina (short-read) kmers that mapped to the two PVL toxin-coding sequences and the upstream intergenic region plus the surrounding 1 kb were reassessed. For the 37 samples with hybrid assemblies, the presence/absence of these kmers was determined from the kmers counted from the hybrid assemblies. For all other samples, presence/absence was determined from the kmers counted from the short-read only assemblies. The new presence/absence patterns were tested for association with the phenotype controlling for population structure and genetic background using GEMMA (Zhou and Stephens, 2012), using the same relatedness matrix as the original short-read analysis.
 
-## Predicting presence of PVL genes and bacteriophages
+### Predicting presence of PVL genes and bacteriophages
 
 We used BLAST to check for the relative coverage of the PVL CDS (From reference genome USA300_FPR3757 (CP000255.1) positions 1546170–1548350), as well as the entire sequence of 6 known PVL positive phages (φ2958(NC_011344.1), φPVL (NC_002321.1), φPVL108 (NC_008689.1), φSLT (NC_002661.2), φSa2MW (NC_003923.1), φSa2USA (CP000255.1)) (Boakes et al., 2011), as well as the hypothesised prophage region from PYO2134 (1571177–1616957), which we have calledφCC121. For PVL genes, we determined relative coverage of the query sequence; over 98% coverage was used as threshold for gene presence.
 
-## Multiple testing correction
+### Multiple testing correction
 
 Multiple testing was accounted for by applying a Bonferroni correction (Dunn, 1959); the individual locus effect of a variant (kmer or PC) was considered significant if its P value was smaller than α/np, where we took α = 0.05 to be the genome-wide false-positive rate and np to be the number of kmers or PCs with unique phylogenetic patterns, that is, unique partitions of individuals according to allele membership. We identified 236627 unique kmer patterns and 518 PCs, giving thresholds of 2.1 × 10−7 and 9.7 × 10−5 respectively.
 
-## Data availability
+### Data availability
 
 Sequence data have been submitted to Short Read Archive (Bioproject ID PRJNA418899). Clinical origins of sequenced strains are listed in supplementary information (Supplementary File 4).

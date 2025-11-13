@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/051mrsz47 Department of Biomedicine, School of Health Sciences, University of Skövde Skövde Sweden
-2. https://ror.org/05ynxx418 Division of Neurobiology, Department of Biomedical and Clinical Sciences, Linköping University Linköping Sweden
-3. https://ror.org/05h1aye87 Center for Medical Image Science and Visualization (CMIV) Linköping University Hospital Linköping Sweden
-4. https://ror.org/05ynxx418 Center for Social and Affective Neuroscience, Department of Biomedical and Clinical Sciences, Linköping University Linköping Sweden
+1. Department of Biomedicine, School of Health Sciences, University of Skövde Skövde Sweden ([ROR:051mrsz47](https://ror.org/051mrsz47))
+2. Division of Neurobiology, Department of Biomedical and Clinical Sciences, Linköping University Linköping Sweden ([ROR:05ynxx418](https://ror.org/05ynxx418))
+3. Center for Medical Image Science and Visualization (CMIV) Linköping University Hospital Linköping Sweden ([ROR:05h1aye87](https://ror.org/05h1aye87))
+4. Center for Social and Affective Neuroscience, Department of Biomedical and Clinical Sciences, Linköping University Linköping Sweden ([ROR:05ynxx418](https://ror.org/05ynxx418))
 
 † Corresponding author
 
@@ -50,21 +50,21 @@ Beyond these basic questions regarding touch, familiarity, and recent social int
 
 ## Results
 
-## Behavioral measures
+### Behavioral measures
 
-## Self-report questionnaires
+#### Self-report questionnaires
 
 Before entering the fMRI scanner, both the participant and her partner separately filled out two questionnaires: the Couples Satisfaction Index (CSI; Funk and Rogge, 2007) and the State-Trait Anxiety Inventory (STAI; Spielberger, 1970). CSI scores indicated that both female and male participants were satisfied with their relationships (females: M=139.8, SD = 17.2, males: M=139.6, SD = 15.2), and the participants’ assessments of relationship quality correlated with their partners’ (r=0.57, p=0.0003). STAI scores indicated that no participants demonstrated clinically significant symptoms of anxiety (females STAI-S M=35.6, SD = 9.7; female STAI-T M=40.3, SD = 9.8; males STAI-S M=31.6, SD = 5.7; males STAI-T: M=36.2, SD = 6.7). The higher participants’ trait anxiety, the lower their assessment of relationship quality, with an inverse correlation between STAI-T and CSI scores (r=–0.40, p=0.01 for the participant, r=–0.39, p=0.01 for partner). There were no other significant correlations among CSI, STAI-T, STAI-S, and VAS pleasantness scores (all ps <0.01).
 
-## Ratings
+#### Ratings
 
 For trial-by-trail ratings of touch pleasantness, partner touch was rated as more pleasant than stranger touch (F(1, 33)=30.032, p<0.001) with a main effect of higher ratings for arm (F(1, 33)=11.070, p=0.002, effect size f=0.7, partial η2=0.33 at power (1-β error probability)=0.8, α=0.05). Participants who received stranger touch first had lower ratings for stranger touch on the palm compared to stranger touch on the arm (t=16, p=0.007, d=1.99), reflected in a significant three-way interaction, indicating influences of both familiarity and order on touch pleasantness ratings for palm (F(1, 33)=4.730, p=0.037).
 
 For post-scanning ratings of trustworthiness and attractiveness, the stranger was rated as positively trustworthy, with a mean rating of 3.96 on a visual analog scale from –10 (untrustworthy) to 10 (trustworthy). Stranger attractiveness was near a neutral midpoint, with a mean rating of 0.95 on a visual analog scale from –10 (unattractive) to 10 (attractive). For participants starting with partner touch, evaluation of relaxation for partner touch correlated with how trustworthy participants rated the stranger (r=0.77, p=0.002). The interaction with the nurse was rated as non-stressful, with a mean rating of 5.28 on a scale of –10 (stressful) to 10 (calming). For participants in the stranger first group, the smaller the difference between pleasantness ratings for the stranger and partner touch during the imaging session, the more relaxing participants rated stranger touch afterward (r=–0.70, p=0.004). Within-session pleasantness ratings also predicted post-session evaluations of relaxation for partner and stranger touch independently (partner r=0.83, p=0.001 stranger r=0.80, p=0.001).
 
-## Hormone analyses
+### Hormone analyses
 
-## OT levels
+#### OT levels
 
 A total of eight serial OT samples per person were collected during the course of the session (Figure 1B). As predicted, OT levels increased when the partner was the interactant in the first encounter (Figure 2A). In addition, when stranger touch was preceded by partner touch OT levels showed a significant dip and recovery during the second touch session. These results were revealed by a three-way interaction between the factors familiarity, order, and sample timepoint (F(3, 183.180)=3.034, p=0.031). A significant increase between the first and middle samples in the functional run during stranger touch in the partner first group only (p=0.027) drove the contribution of timepoint to the three-way interaction. There was also a two-way interaction between the factors familiarity and order (F(1, 183.169)=11.216, p=0.001). Marginally below-alpha differences were seen between the middle and final samples during the run, pre-run baseline, and the first sample during the first run in the partner first group (p=0.054 and p=0.070, respectively). There were no significant main effects, despite a trend for the main effect of order (F(1, 27.087)=3.855, p=0.060). Individuals’ mean OT in the initial encounter predicted mean OT levels in the second (partner-stranger r=0.97, p<0.001; stranger-partner r=0.57, p=0.03).
 
@@ -72,35 +72,564 @@ A total of eight serial OT samples per person were collected during the course o
 
 **Figure 2.:** (A) Familiarity, order, and sample timepoint influenced plasma OT levels: familiarity, order, and sample timepoint interacted (F(3, 183.180)=3.034, p=0.031) as did familiarity and order (F(1, 183.169)=11.216, p=0.001), with increased OT when the partner was the interactant in the first encounter. The contribution of the sample timepoint lay in a dip and recovery during stranger touch only when preceded by partner touch (p=0.027). (B) OT-BOLD covariance in the hypothalamus and dorsal raphe was driven by a greater decrease for stranger touch during the initial encounter. (C) Familiarity and % OT change interacted in parietotemporal BOLD clusters along right SMG/AG, TP, and mPFC extending to ACC (3dLME model, p<0.002), reflecting more positive relationships between BOLD signal and OT change for partner (the higher the BOLD, the greater the degree of OT change). (D) Familiarity and order interacted in plasma cortisol levels (F(1, 130)=54.89, p<0.001), with stranger touch eliciting a greater cortisol increase compared to partner touch, reflected in a main effect of familiarity (F(1, 130)=15.67, p<0.001). There was also a main effect of sample timepoint (F(2, 130)=3.16, p=0.045), with levels generally declining over the session. (E) BOLD signal change in regions including mPFC/ACC covaried as a function of cortisol levels, with partner >stranger (p<0.002), and a subset of mPFC voxels covarying with both OT (partner >stranger, second encounter) and cortisol (partner >stranger, initial encounter). (F) Mean values for OT and cortisol showed an interaction with familiarity and order factors over the session (F(1, 178.355)=10.565, p=0.001), with higher OT but lower cortisol in the partner first condition as compared to stranger first. OT = oxytocin, BOLD = blood-oxygen-level-dependent, f(ΔOT)=as a function of the change in OT, 3dLME = 3-dimensional linear mixed effects, SMG/AG = supramarginal gyrus/angular gyrus, TP = temporal pole, mPFC = medial prefrontal cortex, ACC = anterior cingulate cortex. All maps thresholded at p<0.002, corrected.
 
-## Hormonal cycles and OT levels
+#### Hormonal cycles and OT levels
 
 Of the 27 participants with full sample series included in the OT hormone analysis, 10 were not cycling (ovulation suppression by non-estrogen-based contraceptives, for example, copper intrauterine devices), 13 were cycling naturally (using condoms as contraception, for example), and four did not report their cycle details. The mean OT of cycling participants fell within one standard deviation of noncycling participants for both partner and stranger (noncycling: 68.8 pg/ml±43.4 pg/ml for partner, 64.1±40.3 pg/ml for stranger; cycling: 62.9 pg/ml±31.1 pg/ml for partner, 48.6±21.3 pg/ml for stranger), indicating that cycle did not affect the variability of mean plasma OT. This was also the case for cycle phase among the cycling participants, of whom four were in the luteal phase (relatively stable but lower estrogen), two in the follicular phase (two early, two in the later days associated with sharply increased estrogen preceding ovulation), and seven were menstruating (decreasing to stable estrogen).
 
-## Cortisol levels
+#### Cortisol levels
 
 A total of six serial cortisol samples were collected during the course of the session. Cortisol showed a significant influence on partner or stranger (familiarity) but also their presentation order (interaction, F(1, 130)=54.89, p<0.001; Figure 2D). Cortisol levels were higher when the stranger was presented first, compared to when he was presented second (p=0.008). In addition, stranger or partner (familiarity) as well as time point significantly influenced the participant’s cortisol levels (F(1, 130)=15.67, p<0.001 and F(2, 130)=3.16, p=0.045, respectively). Cortisol levels were higher at the beginning of the touch session compared to the end (p=0.039) and stranger touch elicited a greater cortisol increase compared to partner touch (p<0.001).
 
-## Combined effects of oxytocin and cortisol changes
+#### Combined effects of oxytocin and cortisol changes
 
 Cortisol showed higher overall levels than OT (a main effect of hormone, F(1, 180.593)=68.574, p<0.001; OT M ± SEM: partner first: 67.781±6.019, stranger first: 42.959±1.816, p=0.017; cortisol M ± SEM: partner first: 80.346±5.486, stranger first: 101.633±6.306, p=0.040). In addition, OT levels were higher but cortisol levels were lower in the partner first condition as compared to stranger first (F(1,180.593)=28,751, p<0.001), and a statistical interaction indicated a mutual influence between familiarity and order (F(1, 178.355)=10.565, p=0.001; also found in the two previous individual models; Figure 2F).
 
-## Functional neuroimaging
+### Functional neuroimaging
 
-## Linear mixed-effects modeling of factors order, familiarity, and site with OT covariate
+#### Linear mixed-effects modeling of factors order, familiarity, and site with OT covariate
 
 In order to reveal blood-oxygen-level-dependent (BOLD) activations related to the order partner/stranger presentation (partner first, stranger first), the familiarity of the interactant (partner, stranger), the site of stimulation (arm, palm), and peak OT plasma levels (maximum percent change from baseline), we performed a linear mixed-effects modeling analysis (3dLME in AFNI). 3dLME was implemented because the analysis involved a between-subject factor (order), two within-subject factors (familiarity and site), and a quantitative variable or covariate (OT), modeled with random intercept and random slope (Chen et al., 2013). All analyses were thresholded at p=0.002 as per current AFNI recommendations (Cox et al., 2017).
 
 Since OT response was influenced by the order factor, the peak OT values for each participant (n=26 complete datasets) were centered around the mean of each of the four conditions (partner first, stranger first, partner second, stranger second) prior to the analysis. This 3dLME analysis revealed cortical clusters in which familiarity, order, and OT showed mutual influences (a three-way interaction; Table 1). These clusters included the right superior occipital gyrus (SOG) extending into the right cuneus, and the left angular gyrus (AG). These interactions are explained by a more negative relationship between BOLD and OT change in the stranger first group, which reflects greater relative BOLD increases in individuals showing smaller percent change in OT levels. Specifically, whereas BOLD increase in SOG/cuneus showed a positive relationship in the partner first group (partner first, stranger second), these relationships were negative in the stranger first group, particularly for stranger. BOLD increase in AG showed positive or flat relationships with OT change in all conditions except for partner second in the stranger first group, which was negative (the higher the BOLD, the lower the OT change).
 
+**Table 1.**
+ Linear mixed-effects modeling with factors familiarity (partner, stranger), order (first or second encounter), with peak OT changes as a covariate.All contrasts are thresholded at p<0.002, cluster-size thresholded at α = 0.05 FWE for n=27 complete functional datasets. For each cluster under each contrast heading, size in voxels, location, maximum F score, and MNI coordinates (x, y, z) are given.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Main effect: Familiarity &gt;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cluster (size)</td>
+      <td>Peaks Locations</td>
+      <td>F (x, y, z)</td>
+    </tr>
+    <tr>
+      <td>#1 (362)</td>
+      <td>Left Middle Frontal Gyrus</td>
+      <td>25.45 (-44, 52, 4)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23.25 (-44, 25, 37)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20.78 (-32, 52, 28)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>18.87 (-38, 61, 1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>18.07 (-50, 43, 19)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12.07 (-44, 13, 40)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Left Inferior Frontal Gyrus</td>
+      <td>24.79 (-56, 37, 10)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20.27 (-59, 25, 22)</td>
+    </tr>
+    <tr>
+      <td>#2 (234)</td>
+      <td>Right Middle Frontal Gyrus</td>
+      <td>33.33 (43, 46, 28)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>24.87 (34, 43, 40)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>18.90 (46 25, 37)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>16.93 (31, 28, 55)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Superior Frontal Gyrus</td>
+      <td>29.72 (22, 43, 37)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>16.03 (25, 58, 31)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>13.16 (19, 28, 40)</td>
+    </tr>
+    <tr>
+      <td>#3 (128)</td>
+      <td>Left Middle Occipital Gyrus</td>
+      <td>28.69 (−17,–107, 4)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>18.25 (−26,–98, –5)</td>
+    </tr>
+    <tr>
+      <td>#4 (107)</td>
+      <td>Right Middle Frontal Gyrus</td>
+      <td>21.16 (40, 46, 13)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>18.20 (40, 58, 13)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14.56 (25, 61, 28)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Superior Frontal Gyrus</td>
+      <td>17.77 (31, 58, 19)</td>
+    </tr>
+    <tr>
+      <td>#5 (87)</td>
+      <td>Left Cerebellum</td>
+      <td>21.42 (−41,–65, –38)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>19.14 (−29,–62, –35)</td>
+    </tr>
+    <tr>
+      <td>#6 (73)</td>
+      <td>Right Angular Gyrus</td>
+      <td>19.18 (43, -65, 52)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Middle Occipital Gyrus</td>
+      <td>14.86 (34, -62, 37)</td>
+    </tr>
+    <tr>
+      <td>#7 (72)</td>
+      <td>Right Inferior Occipital Gyrus</td>
+      <td>23.59 (25, -95, -8)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15.83 (37, -95, -2)</td>
+    </tr>
+    <tr>
+      <td>#8 (65)</td>
+      <td>Right Cerebellum</td>
+      <td>15.40 (34, -68, -32)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>13.24 (40, -74, -53)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>13.11 (40, -62, -50)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Main effect: SitePalm &gt;Arm</td>
+    </tr>
+    <tr>
+      <td>Cluster (size)</td>
+      <td>Peaks Locations</td>
+      <td>F (x, y, z)</td>
+    </tr>
+    <tr>
+      <td>#</td>
+      <td>Left Postcentral Gyrus</td>
+      <td>204.14 (50, -29, 61)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>131.45 (−41,–26, 49)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Left Precentral Gyrus</td>
+      <td>126.07 (−35,–17, 64)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Left Supplementary Motor Area</td>
+      <td>58.04 (−8,–2, 52)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Left Superior Parietal Lobule</td>
+      <td>30.54 (−29,–59, 70)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Left Superior Frontal Gyrus</td>
+      <td>26.92 (−20,–2, 70)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Supplementary Motor Area</td>
+      <td>24.60 (10, -2, 52)</td>
+    </tr>
+    <tr>
+      <td>#2 (488)</td>
+      <td>Right Postcentral Gyrus</td>
+      <td>122.40 (55, -23, 55)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Superior Parietal Lobule</td>
+      <td>17.13 (28, -53, 67)</td>
+    </tr>
+    <tr>
+      <td>#3 (444)</td>
+      <td>Right Cerebellum</td>
+      <td>119.12 (19, -53, -23)</td>
+    </tr>
+    <tr>
+      <td>#4 (304)</td>
+      <td>Right Precentral Gyrus</td>
+      <td>63.12 (37, -11, 67)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Supplementary Motor Area</td>
+      <td>28.37 (16, 7, 67)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Superior Frontal Gyrus</td>
+      <td>12.31 (19, -2, 55)</td>
+    </tr>
+    <tr>
+      <td>#5 (199)</td>
+      <td>Right Cerebellum</td>
+      <td>76.11 (19, -59, -50)</td>
+    </tr>
+    <tr>
+      <td>#6 (89)</td>
+      <td>Left Cerebellum</td>
+      <td>32.62 (−20,–53, 29)</td>
+    </tr>
+    <tr>
+      <td>#7 (72)</td>
+      <td>Right Middle Frontal Gyrus</td>
+      <td>19.27 (31, 40, 22)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Superior Frontal Gyrus</td>
+      <td>17.35 (22, 46, 22)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Main effect: OT</td>
+    </tr>
+    <tr>
+      <td>Cluster (size)</td>
+      <td>Peaks Locations</td>
+      <td>F (x, y, z)</td>
+    </tr>
+    <tr>
+      <td>#1 (93)</td>
+      <td>Right Middle Temporal Gyrus</td>
+      <td>25.77 (49, 1, -20)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Inferior Temporal Gyrus</td>
+      <td>16.66 (61, -14, 35)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14.87 (55, -17, -23)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Interaction: Familiarity*OT</td>
+    </tr>
+    <tr>
+      <td>Cluster (size)</td>
+      <td>Peaks Locations</td>
+      <td>F (x, y, z)</td>
+    </tr>
+    <tr>
+      <td>#1 (585)</td>
+      <td>Right Superior Orbital Gyrus</td>
+      <td>37.78 (19, 55, -5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Left Anterior Cingulate Cortex</td>
+      <td>28.17 (-8, 49,–2)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21.94 (-8, 49, 10)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Anterior Cingulate Cortex</td>
+      <td>24.01 (10, 49, 13)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Left Superior Frontal Gyrus</td>
+      <td>23.55 (-17, 61, 10)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Left Mid Orbital Gyrus</td>
+      <td>23.50 (1, 55, -2)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Mid Orbital Gyrus</td>
+      <td>19.24 (10,70, -11)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Superior Medial Gyrus</td>
+      <td>18.75 (13, 64, 16)</td>
+    </tr>
+    <tr>
+      <td>#2 (436)</td>
+      <td>Right Middle Temporal Gyrus</td>
+      <td>36.99 (64, -17, -14)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Medial Temporal Pole</td>
+      <td>34.12 (40, 16, -32)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Inferior Temporal Gyrus</td>
+      <td>33.89 (49, -5, 29)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21.52 (61, -14, 35)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>19.36 (52, -17, -26)</td>
+    </tr>
+    <tr>
+      <td>#3 (261)</td>
+      <td>Right Angular Gyrus</td>
+      <td>26.54 (46, -59, 34)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>25.40 (58, -56, 25)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>22.59 (43, -53, 25)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21.22 (58, -62, 37)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Middle Occipital Gyrus</td>
+      <td>15.73 (43, -74, 31)</td>
+    </tr>
+    <tr>
+      <td>#4 (185)</td>
+      <td>Left Inferior Temporal Gyrus</td>
+      <td>32.65 (-41, 4,–38)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23.30 (−56,–5, –38)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Left Middle Temporal gyrus</td>
+      <td>24.21 (-47, 4,–26)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Left Medial Temporal Pole</td>
+      <td>13.62 (-53, 16,–32)</td>
+    </tr>
+    <tr>
+      <td>#5 (144)</td>
+      <td>Left Angular Gyrus</td>
+      <td>35.84 (−50,–65, 49)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21.85 (−56,–56, 34)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Left Inferior Parietal Lobule</td>
+      <td>13.96 (−41,–59, 58)</td>
+    </tr>
+    <tr>
+      <td>#6 (138)</td>
+      <td>Left Cerebellum</td>
+      <td>25.48 (−53,–59, –35)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15.48 (−35,–77, –35)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15.48 (−35,–77, –35)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14.08 (−50,–68, –44)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12.64 (−47,–74, –32)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12.27 (−47,–62, –48)</td>
+    </tr>
+    <tr>
+      <td>#7 (92)</td>
+      <td>Right Superior Frontal Gyrus</td>
+      <td>39.89 (22, 28, 61)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>27.84 (22, 16, 67)</td>
+    </tr>
+    <tr>
+      <td>#8 (79)</td>
+      <td>Left Middle Frontal Gyrus</td>
+      <td>25.33 (-41, 25, 52)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23.11 (-35, 40, 43)</td>
+    </tr>
+    <tr>
+      <td>#9 (62)</td>
+      <td>Right Inferior Temporal Gyrus</td>
+      <td>24.67 (43, -11, -32)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right ParaHippocampal Gyrus</td>
+      <td>15.74 (28, -8, 35)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Fusiform Gyrus</td>
+      <td>14.45 (31, -2, -44)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Interaction: Order*OT</td>
+    </tr>
+    <tr>
+      <td>Cluster (size)</td>
+      <td>Peaks Locations</td>
+      <td>F (x, y, z)</td>
+    </tr>
+    <tr>
+      <td>#1 (195)</td>
+      <td>Right Inferior Temporal Gyrus</td>
+      <td>26.44 (43, -11, -32)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15.30 (61, -14, -35)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Middle Temporal Gyrus</td>
+      <td>22.79 (49, 1, -20)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Interaction: Familiarity*Order*OT</td>
+    </tr>
+    <tr>
+      <td>Cluster (size)</td>
+      <td>Peaks Locations</td>
+      <td>F (x, y, z)</td>
+    </tr>
+    <tr>
+      <td>#1 (111)</td>
+      <td>Right Superior Occipital Gyrus</td>
+      <td>29.02 (25, -98, 19)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Right Cuneus</td>
+      <td>22.76 (19, -104, 10)</td>
+    </tr>
+    <tr>
+      <td>#2 (81)</td>
+      <td>Left Angular Gyrus</td>
+      <td>25.20 (−47,–59, 34)</td>
+    </tr>
+  </tbody>
+</table>
+
 Familiarity and OT interacted in the bilateral angular gyrus (SMG/AG), inferior temporal gyrus (ITG), middle temporal gyrus (MTG), right temporal pole (TP), anterior cingulate cortex (ACC), and medial prefrontal cortex (mPFC, on the mid-orbital gyrus), among other regions (Figure 2C; Table 1). For all these areas, individuals showing greater OT increase during the functional run were also more likely to show higher BOLD during partner compared to stranger touch, reflecting a more positive relationship between BOLD signal and OT change for partner (the higher the BOLD, the greater the degree of OT change). A right hemisphere cluster encompassing inferior and middle temporal gyri (ITG and MTG) also showed a main effect of OT covariate (a positive relationship between BOLD and OT change; Table 1) as well as an interaction between order and OT (Table 1; see also Figure 4A), reflecting a more positive relationship between BOLD signal and degree of OT increase in the stranger first group.
 
 Regardless of the degree of OT change, BOLD was overall greater for stranger than partner (a main effect of familiarity) in bilateral middle frontal gyrus (MFG) and right AG, among other regions (Table 1), reflecting generally higher means but a narrower range of variability for stranger than partner. BOLD was greater for the palm than the arm (a main effect of the stimulation site; Table 1) in the left postcentral gyrus (PoCG) and bilateral precentral gyrus (PrCG). No statistical interactions were observed between the site of stimulation and OT covariate.
 
-## T-tests with OT covariate
+#### T-tests with OT covariate
 
 To further compare BOLD activity across familiarity and order factors with OT as a covariate of interest, the following t-tests were performed: independent t-tests between partner first and stranger first and partner second and stranger second; and paired t-tests between partner first and stranger second and between stranger first and partner second (Supplementary file 1).
 
-## Partner first vs. stranger first
+##### Partner first vs. stranger first
 
 Raphe nuclei (whole brain) and hypothalamus (ROI analysis) showed a greater positive covariation between BOLD and OT change for partner touch compared to stranger touch in the first run (Figure 2B; Supplementary file 1). To explore whether BOLD signal changes in the hypothalamus covaried with OT levels with respect to familiarity, we first explored whether all subjects included in the whole-brain analysis had representative data in those voxels to be included in a region of interest (ROI) approach. To do this, we used the Neurosynth database’s ‘association test map’ for the search term ‘hypothalamus’ (https://neurosynth.org/analyses/terms/hypothalamus). This 1565-voxel map also encompassed regions outside the hypothalamus (e.g. thalamus and brainstem), so a restricted threshold was applied to include only voxels located in the hypothalamus. The size of the final ROI was 111 voxels, and this was used in a subsequent SVC analysis including 25 of the initial 27 participants. Two participants (one per group) were excluded as they had data for fewer than 50% of the ROI voxels in at least one of the two functional runs (partner touch, stranger touch). Within this cluster, a subset of 15 voxels showing greater increases for partner touch than stranger touch survived stricter cluster correction at p=0.002. OT-BOLD covariance in the hypothalamus and dorsal Raphe showed a greater negative correlation for stranger touch during the initial encounter (Figure 3).
 
@@ -110,43 +639,43 @@ Raphe nuclei (whole brain) and hypothalamus (ROI analysis) showed a greater posi
 
 The linear mixed-effects modeling weighted the BOLD signal with an OT covariate. However, it is not possible to represent this weighting when plotting the beta values extracted from the resulting cluster (see scatterplots in Figure 3). Thus, outliers on either measure (OT or beta value) will appear as outliers in the scatterplot, despite not necessarily being outliers with respect to the population trend of the relationship between OT and BOLD. To determine whether a given data point was an outlier in this regard for the hypothalamus region-of-interest, we, therefore, examined the standard deviations of the residuals in the model (distance above and below the trendline), by entering the values into a regression model with beta values as an independent variable and OT (maximum % change from baseline) as a dependent variable. The standardized residuals were calculated in standard deviation units for each group (partner first and stranger first). These showed that all standardized residuals fell within ±3. The regressions were significant at p<0.05, for both hypothalamus (p=0.003 for partner first, p=0.03 for stranger first) and Raphe nuclei.
 
-## Partner second vs. stranger second
+##### Partner second vs. stranger second
 
 In parietotemporal clusters, the higher an individual’s BOLD, the higher her OT levels when receiving partner touch in the second run, as compared to those receiving stranger touch in the second run (in whom this OT-BOLD covariation was less positive). These parietotemporal clusters were also seen in the interaction maps in which OT interacted with familiarity (right AG, right TP; Figure 2C) and order (right MTG). Additional clusters were revealed in the right superior temporal gyrus (STG), among other activations (Supplementary file 1).
 
-## Partner first vs. stranger second
+##### Partner first vs. stranger second
 
 There was no activation difference between partner and stranger touch in the partner first group.
 
-## Stranger first vs. partner second
+##### Stranger first vs. partner second
 
 There was no activation difference between partner and stranger touch in the stranger first group.
 
-## Linear mixed model of factors order and familiarity with cortisol covariate
+### Linear mixed model of factors order and familiarity with cortisol covariate
 
 As in the OT analysis, we searched for brain correlates of touch interactions as influenced by familiarity (partner, stranger), order (partner first, stranger first), and cortisol plasma level, performing a linear mixed-effects modeling analysis (3dLME in AFNI; n=26). Again, we adopted the model with random intercept and random slope, and cortisol mean values (percent change from baseline) for each participant were centered around the mean of each of the four conditions (partner first, stranger first, partner second, stranger second) prior to the analysis. Results did not show any significant main effect or interaction.
 
-## T-tests with cortisol covariate
+### T-tests with cortisol covariate
 
 As for OT, in order to compare neural activity across the familiarity and order factors with cortisol as a covariate of interest, we ran the following t-tests: paired t-tests between ‘partner first’ and ‘stranger second’ and between ‘stranger first’ and ‘partner second’; independent t-tests between ‘partner first’ and ‘stranger first’ and ‘partner second’ and ‘stranger second’ (Supplementary file 2).
 
-## Partner first vs. stranger first
+#### Partner first vs. stranger first
 
 In the first run, the two groups did not differ in terms of activation according to the identity of the stroker.
 
-## Partner second vs. stranger second
+#### Partner second vs. stranger second
 
 In the second run, there was no differential activation between partner first and stranger first groups related to the identity of the stroker.
 
-## Partner first vs. stranger second
+#### Partner first vs. stranger second
 
 For participants who had partner touch first, partner compared to stranger touch covaried with cortisol in the left ACC, right SMG, bilateral ventromedial prefrontal cortex, bilateral calcarine gyrus, right lingual gyrus, left TP, and left PO (all at p=0.002). These regions showed a more negative relationship between BOLD and cortisol for partner (individuals with higher BOLD had higher cortisol).
 
-## Stranger first vs. partner second
+#### Stranger first vs. partner second
 
 When comparing brain activity in the two runs in the group of participants who had stranger touch first, we found no cortisol-related differences in brain activity between partner and stranger touch.
 
-## OT regressor: Exploratory analysis
+### OT regressor: Exploratory analysis
 
 To discover activation corresponding with the overall temporal pattern of the endogenous OT response over the sample series in each functional run, we used each participant’s serial plasma OT levels to create a custom regressor for each individual. We assumed that any central-to-peripheral effects of OT release would be detectable retrospectively by modeling the plasma OT sample points ‘backward,’ in order to search for any BOLD activity which both preceded and tracked the observed pattern of OT changes. Points between the multiple samples were linearly interpolated and the resulting function was convolved with the canonical hemodynamic response function (HRF). N=23 participants had complete data series for both functional runs. For this ‘backward-looking’ regressor, we explored time lags of 1, 1.5, 2, 2.5, and 3 min to capture potential touch-evoked central modulation corresponding to the peripheral changes in plasma OT observed after these various delays, assuming that central activity preceded peripheral OT changes.
 
@@ -156,17 +685,17 @@ This analysis revealed brain areas showing significant interactions between fami
 
 **Figure 4.:** (A) The temporal pattern of OT-BOLD changes in bilateral precuneus preceded sampling by 2.5 min, with retrosplenial cortex also emerging at 2 min, showing greater OT-BOLD covariance for stranger touch during the initial encounter. (B) ITG/TP was sensitive to differences in touch pleasantness ratings (red) for partner and stranger (mean pleasantness partner >stranger, p<0.001), with BOLD increasing with partner vs stranger pleasantness differences (Δpleas) during stranger touch in the second encounter (scatterplot). ITG/TP clusters also showed an interaction between familiarity and ΔOT (yellow), and between partner/stranger presentation order and ΔOT (green) BOLD here was greater in individuals with smaller OT change during the stranger-second condition. (C) BOLD changes in somatosensory and insular and PO cortices, as well as bilateral amygdalae, across all touch conditions, independently of familiarity of the person delivering touch, order, and OT levels (all ps <0.002). (D) Beta values reflecting the BOLD signal change in the left amygdala sensitive to partner-stranger differences (main effect of familiarity, F(1,16) = 5.8, P=0.02), greater for the stranger in the first encounter. BOLD = blood-oxygen-level-dependent, PO = posterior operculum, OT = oxytocin, ITG = inferior temporal gyrus, TP = temporal pole, mPFC = medial prefrontal cortex, f(Δpleas)=as a function of the change in pleasantness ratings. All maps thresholded at p<0.002, corrected.
 
-## Hormone-independent analysis
+### Hormone-independent analysis
 
-## T-test with touch pleasantness covariate
+#### T-test with touch pleasantness covariate
 
 To discover regions in which BOLD activation covaried with changes in touch pleasantness ratings, we performed t-tests between partner and stranger for each presentation order (partner first or stranger first) with the difference in pleasantness ratings (partner minus stranger) as a covariate of interest. There was no resulting activation in the stranger first group. In the partner first group, a cluster in ITG was revealed, which overlapped with the ITG/TP clusters in which OT interacted with familiarity and order, respectively (Figure 4A, Supplementary file 4). Here, individuals that showed higher BOLD activation for partner compared to stranger also showed the largest difference in ratings between partner and stranger touch. When the stranger delivered touch in the second encounter, ITG activation increased with touch pleasantness during the run (r=0.65, p=0.003; Figure 4A).
 
-## Conjunctions
+#### Conjunctions
 
 To identify common activation across all touch conditions regardless of familiarity, order, or hormone levels, we created single condition maps by contrasting each condition against baseline activity at p<0.002 (Figure 4C, Supplementary file 5).
 
-## Partner first ∩ stranger first ∩ partner second ∩ stranger second
+##### Partner first ∩ stranger first ∩ partner second ∩ stranger second
 
 Brain areas showing increased activity irrespective of condition were: bilateral supramarginal gyrus (SMG), bilateral postcentral gyrus, left precentral gyrus, left superior parietal lobule (SPL), left parietal operculum (PO), bilateral supplementary motor area (SMA), right inferior frontal gyrus (IFG), bilateral anterior insula, right cerebellum, right supplementary motor area (SMA), and right amygdala. There was a common deactivation in the right precentral gyrus. While BOLD signal change in the left amygdala was high across conditions, it was also sensitive to partner-stranger differences (main effect of familiarity, F(1,16) = 5.8, p=0.02), greater for the stranger in the first encounter.
 
@@ -178,7 +707,7 @@ The most general finding was that touch-mediated social interactions in human fe
 
 Social familiarity and presentation order also influenced the timecourse of the eight plasma samples collected during the experimental session, with this influence driven by OT responses to stranger touch following partner touch. The OT increase for stranger touch in this condition did not show a stable rise but rather dipped to below-baseline levels across participants before recovering to above-baseline levels by the end of the social encounter. A tentative interpretation of this pattern is that the initial partner encounter may have introduced a bias for OT increase during the subsequent stranger encounter, though not as a sustained carryover from the preceding partner interaction. In contrast, plasma OT remained at baseline levels when the experimental session began with an encounter with an unfamiliar stranger. The recovery of OT in the stranger-second condition could thus reflect a facilitation of underlying endogenous release mechanisms following the prior partner interaction. Overall, these endogenous OT changes may reflect mechanisms that selectively bias the way social stimuli are processed in the central nervous system during social interactions, with high dependence on contextual information.
 
-## BOLD correlates of endogenous OT changes
+### BOLD correlates of endogenous OT changes
 
 The mutual influences observed in OT levels among social familiarity and partner/stranger presentation order were mirrored in OT-covariant BOLD responses in key parietotemporal and frontal regions, on a whole-brain level (Figure 2C and Figure 2E). In particular, OT changes showed mutual influences with both familiarity and presentation order in the temporal pole (TP). In SMG/AG, IFG, mPFC/ACC, and superior frontal gyrus, OT-brain covariation was affected by the familiarity of the individual delivering the touch. These parietotemporal and medial prefrontal regions have been implicated in individual intranasal-OT studies of partner-stranger interactions (Kreuder et al., 2017; Kreuder et al., 2019; Scheele et al., 2012; Scheele et al., 2013), animate visual social stimuli (Lancaster et al., 2015), as well as in meta-analyses of intranasal-OT fMRI activation (Wang et al., 2017; Zink and Meyer-Lindenberg, 2012) and even in tactile foot massage (Li et al., 2019).
 
@@ -198,13 +727,13 @@ Here, mean plasma cortisol levels were higher for stranger than for partner duri
 
 Taken together, these selective hormone-brain changes support the view that endogenous OT’s role in human social interaction is heavily modulated by contextual factors (Bartz et al., 2011), and provides further evidence that this role can involve modulation in a positive or a negative direction, depending on the situation (Hovey et al., 2016; LoParo et al., 2016; Rickenbacher et al., 2017). For example, in prairie voles, higher levels of endogenous OT can mediate prosocial grooming of stressed others (Burkett et al., 2016), but optogenetic manipulation of the same PVN OT neurons in freely-behaving mice can result in either prosocial or antagonistic behavior (Yu et al., 2022). OT and OT receptor genotypes have also been shown to play a role in antagonistic social behaviors such as the defense of offspring in rats (Rickenbacher et al., 2017) and aggression in rodents and humans (Hovey et al., 2016; LoParo et al., 2016).
 
-## Hormone-independent BOLD changes
+### Hormone-independent BOLD changes
 
 BOLD responses in several key regions were independent of plasma OT or cortisol changes (Figure 4A), suggesting an absence of direct, covariant modulation with respect to these endogenous hormones. The bilateral amygdalae were activated in a general fashion across all encounters (Figure 4C; Supplementary file 5), with the left amygdala selective for stranger touch, particularly in the first encounter (Figure 4D). Amygdala activation has been widely implicated in human IN-OT studies (Kirsch et al., 2005; Liu et al., 2019; Motoki et al., 2016; Sripada et al., 2013), yet with inconsistent reports of the direction of BOLD changes, implying a dependence on experimental and methodological factors. In mice, OT receptor-expressing neurons in the medial amygdala have been found to mediate olfactory-based social familiarity effects (Ferguson et al., 2001). Here, though, stranger touch activated the amygdala in a general fashion (Figure 4C; Supplementary file 5), supporting the proposal that its prominent role in human and nonhuman primate OT studies may be indirect (Eckstein et al., 2017; Gothard and Fuglevand, 2022; Putnam et al., 2018).
 
 IN-OT has been observed to increase the pleasantness of touch (Chen et al., 2020), and individuals with higher salivary OT levels have reported greater touch pleasantness (Portnova et al., 2020). Likewise, CT afferent nerve responses in the skin have been associated with subjective touch pleasantness of caress-like stimuli on a group level (Löken et al., 2009), though pleasantness ratings for touch show individual variability and lack of specificity (Croy et al., 2021; Sailer et al., 2020). However, this experiment provided no supporting evidence for a putative relationship between OT and CT afferent nerve activity associated with affective touch. Primary somatosensory cortex showed selective activation for touch on the palm. Yet no OT-BOLD covariance was observed here or in arm-specific regions such as the posterior insula/PO, which might have indicated a link between stimulation of CT-rich skin and endogenous OT. In rodent models, oxytocin receptor (OXTR) expression has so far not been identified in dorsal horn neurons of the spinothalamic tract projecting to the specific thalamic pathways putatively shared by CT afferents (Gauriau and Bernard, 2004; Moreno-López et al., 2013; Nersesyan et al., 2017). On a subjective level, participants found palm touch from a stranger less pleasant during the initial encounter, which was not predicted. This potentially reflects a functional difference in the palm’s prominent role in active sensorimotor exploration (Morrison, 2022), and perhaps potentiation of approach or withdrawal from others’ touch. Further research is, therefore, needed to explore any functional link between CT afferents and OT.
 
-## Limitations and future directions
+### Limitations and future directions
 
 Measurement of peripheral OT in humans comes with caveats, as does its relationship with central mechanisms of release. Different methods for detecting plasma OT have yielded different and sometimes uncorrelated sets of value ranges, with measurement issues centering around the selectivity with which testing components detect bound or unbound protein, or whole or fragmentary molecules. Cerebrospinal fluid (CSF) has consistently been found to correlate more strongly with brain OT levels than does plasma OT, while CSF and plasma OT measurements have shown weak or no correlation (Caicedo Mera et al., 2021). However, at least a proportion of inconsistencies in reported findings may depend on a historical tendency to investigate basal levels, rather than acute stimuli more likely to evoke coordinated, biologically-meaningful responses across the central and peripheral nervous systems. Such responses may also include the bioactivity of OT fragments (Uvnäs Moberg et al., 2019). In this study, though, within-subject serial sampling allowed assessment of evoked OT changes with respect to individual baselines. The covariation of these changes and their temporal patterns with BOLD points to a relationship between the central and peripheral effects of ecologically-evoked endogenous OT, but cannot directly demonstrate it.
 
@@ -212,13 +741,13 @@ Most human studies manipulating OT (usually via nasal administration) have been 
 
 In everyday life, we humans must navigate a complex and ever-changing social terrain, with some stable elements (for example, established relationships) and other less-stable ones (new or uncertain relationships). This presents a challenge for maintaining the stability of existing social bonds on the one hand, yet also establishing and calibrating newer social relationships on the other hand. These findings suggest a role for OT-brain covariation in such adaptive responses. A positive social interaction context (such as a pleasant touch interaction with one’s partner) may selectively bias the system towards a certain shorter-term neurohormonal response profile, whereas a less certain or less positive social context (such as an unusual interaction with a stranger) may bias it towards a different profile. For example, this could mean that starting the day with a positive social interaction can set up a virtuous circle that perpetuates itself through the day’s social interactions; whereas an uncertain or negative interaction could bias one’s responses towards remaining dampened. Such differential outcomes may potentially influence neural processing and behavior in longer-term social interactions. An important avenue for future research will be to investigate the behavioral effects of these neural and physiological differences, especially with respect to social relationships over time.
 
-## Conclusions
+### Conclusions
 
 These findings offer a methodological and conceptual bridge between stimulus-driven and context-sensitive frameworks of endogenous OT modulation of the brain during social interactions. Touch-mediated social interactions evoked changes in endogenous OT, indicating the importance of the stimulus. Yet these responses were nevertheless influenced by specific features of social context, with the plasma of OT levels showing biases depending on the familiarity of the interacting person and the recent history of interaction. Such adaptive responses could reflect a gain-control-like role for OT-brain neuromodulation, comparable to a dimmer switch, which can effectively preserve stability with respect to established social relationships while also allowing for a change in new ones (possibly via increases or decreases in inhibitory influence). Across successive social encounters, such modulatory mechanisms may calibrate neural and behavioral receptivity, whether mediated by touch or another channel such as vision or speech. Network hubs in parietotemporal pathways, alongside precuneus and retrosplenial cortex, may be key for turning the ‘dimmer’ of OT-brain processing up or down depending on past and current social context.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 42 females in committed heterosexual romantic relationships of at least one year (age M=24.6 years, SD = 4.6, Supplementary file 6), participated in the study with their male partners (age M=26.8 years, SD = 6.0). Female participants were included if they were between 19–40 years, were not pregnant or breastfeeding, did not use estrogen-based contraceptives, and were not undergoing current or recent hormone therapy. The female in the couple participated in fMRI scanning and provided plasma samples, while the male partner administered touch during the experiment.
 
@@ -226,7 +755,7 @@ This study took a female-first strategy (Shansky and Murphy, 2021), in order to 
 
 Ethical approval was obtained from the Regional Ethical Review Board in Linköping, Sweden. All participants gave informed consent in accordance with the Declaration of Helsinki and were compensated at 400 SEK (~45 USD)/h.
 
-## Procedure
+### Procedure
 
 An indwelling magnet-safe catheter was inserted into the cubital vein of the female participants’ left arm 40–60 min before the scanning session, to reduce the possibility of short-term effects of the challenge of needle insertion on plasma hormone levels during the main experiment. This took place in the same building as the MR suite.
 
@@ -234,7 +763,7 @@ In the ensuing 45–60 min the participant and her partner filled out two questi
 
 After completing the questionnaires, participants and their partners received instructions about the experimental procedure together. They were requested not to touch each other during this period. They were also informed of the presentation order (partner or stranger first) and were briefly introduced to the stranger (a male employee working in the lab), before going into the scanner. Before the partner/stranger entered the MR room for a functional run, the participant was informed over the audio system about who would be entering the room. This was to reduce any uncertainty as to the identity of the person delivering the touch, to avoid the risk of increasing psychological distress for the participant, as well as any potential increase in variance in the measures collected. Partners that were to deliver touch in the second run waited in a furnished staff break room until they were accompanied to the MR room.
 
-## Experimental design and session structure
+### Experimental design and session structure
 
 The participants performed both sessions during their single visit to the lab, i.e., they received a touch from both partner and stranger during the same visit. The experimental paradigm implemented a 2 × 2 × 2 factorial design: ‘familiarity’ (partner/stranger, blocked by run), ‘order’ (partner or stranger in the first encounter, counterbalanced), and ‘site’ of the touch (arm or palm). Each session included one 7 min functional run that consisted of twelve 12 s touch stimulation trials, with arm and palm stimulation pseudorandomized within the run, and a jittered 21–30 s intertrial interval. The first functional run was preceded by a T1-weighted anatomical scan. There was a~27 mn interval between the first and second session, during which the participants remained in the scanner, and T2-weighted anatomical scans, resting state, and diffusion data (not analyzed here) were collected (Figure 1B).
 
@@ -246,7 +775,7 @@ After the MR session, the participants evaluated how relaxing they had found par
 
 Occasionally, practical obstacles were encountered, such as coagulation within the catheter or cessation of blood flow from the vein, that resulted in incomplete data series for some participants. We, therefore, sought to maximize analysis for each type of data wherever possible, and so the number of included participants differs between analyzes. See Supplementary file 6 for details on the participants included and the type of data generated from each participant.
 
-## Hormone analysis
+### Hormone analysis
 
 Plasma samples for OT analysis were extracted using acetonitrile precipitation (Merck Millipore: Human Neuropeptide Magnetic Bead Panel 96-Well Plate Assay Cat. # HNPMAG-35K) and OT concentrations were then determined using the Oxytocin ELISA kit (Enzo Life Sciences; sensitivity >15.0 pg/ml, intra-assay precision 10.2–13.3% CV, inter-assay precision 11.8–20.9% CV).
 
@@ -254,7 +783,7 @@ Plasma cortisol levels were determined using the Cortisol Parameter Assay Kit ac
 
 For both the OT and cortisol analyses, standards and controls were implemented according to manufacturer recommendations. Washing procedures were performed using a Wellwash Microplate Washer (ThermoFisher Scientific, Waltham, Massachusetts, USA) and the absorbance was read using a Multiskan FC Microplate Photometer (ThermoFisher Scientific, Waltham, Massachusetts, USA). The color development of the samples was read for OT at 405 nm (background correction at 571 nm) and for cortisol at 450 nm (background correction at 571 nm). SkanIt Software was used for the creation of standard curves, curve fitting, and calculation of concentrations (ThermoFisher Scientific, Waltham, Massachusetts, USA).
 
-## Statistical analysis of hormone levels
+### Statistical analysis of hormone levels
 
 OT levels measured before and during each touch session were entered into a mixed linear model using SPSS version 27 (n=27). Familiarity (partner or stranger) and sample timepoint (pre-run baseline and three samples for each functional run) were included as within-subject factors, whereas order (partner or stranger first) was included as a between-subject factor. Since the Intraclass Correlation Coefficient (ICC) was high (0.73), both fixed and random intercepts were included in the model, and marginal means were estimated through the maximum likelihood method. Post-hoc pairwise comparisons were performed to investigate significant interactions, applying Bonferroni correction to adjust for multiple comparisons.
 
@@ -264,11 +793,11 @@ Cortisol levels measured before and during each touch session were entered into 
 
 To investigate whether and how OT and cortisol levels interacted, we defined an additional mixed linear model in SPSS version 27 (n=26). In addition to familiarity (partner or stranger) and sample timepoint (pre-run baseline and three samples for each functional run), a within-subject factor for hormone (OT or cortisol) was also included, and order (partner or stranger first) was included as a between-subject factor. Considering that ICC values were high for both OT and cortisol individual models, and we did not assume independence between the two hormone values for each participant, both fixed and random intercepts were included, and marginal means were estimated through the maximum likelihood method. Post-hoc pairwise comparisons were performed to investigate significant interactions, applying Bonferroni correction to adjust for multiple comparisons.
 
-## fMRI data acquisition
+### fMRI data acquisition
 
 fMRI data were acquired using a 3.0 Tesla Siemens scanner (Prisma, Siemens) with a 64-channel head coil. For each functional run, 456 2D T2*-weighted echo-planar images (EPIs) were acquired (repetition time: 901 ms; echo time: 30 ms; slice thickness: 3 mm; no slice gap; matrix size: 64*64; field of view: 488*488 mm2; in-plane voxel resolution: 3 mm2; flip angle: Ernst angle (59°)). Three dummy volumes were acquired before each scan to ensure that data collection started after magnetizations reached a steady state. A high-resolution 3D T1-weighted (MP-RAGE) anatomical image was acquired before the first EPI (repetition time: 2300ms; slice thickness: 0.90 mm; no slice gap; matrix size: 64*64; field of view: 288*288 mm2; voxel resolution: 0.87*0.87*0.90 mm; flip angle: 8°, number of slices: 208).
 
-## fMRI preprocessing and analysis
+### fMRI preprocessing and analysis
 
 Preprocessing and statistical analysis of MRI data were performed using Analysis of Functional Neuroimages (AFNI) statistical software (version 19.1.12). Functional data were first de-spiked. Each EPI volume and the T1 were then aligned to the EPI volume with the minimum outlier fraction (using the AFNI outlier definition) to correct for motion. Functional images were warped to the MNI 152 template using a combination of affine and non-linear transformations (Cox et al., 2017). Finally, spatial smoothing was applied with a 10 mm full-width at the half-maximum filter. Residual effects of head motion were corrected by including the estimated motion parameters (and their first-order derivatives) as regressors of no interest. A motion censoring threshold of 0.2 mm per TR was implemented in combination with an outlier fraction threshold of 0.1. Volumes violating either of these thresholds were subsequently ignored in the time-series regression. On average, a higher number of volumes was censored for partner arm (14,33±16,81%), than for the other three conditions (partner palm: 9,55±14,18%; stranger arm: 7,78±10,22%; stranger palm: 6,49±8,67%). In line with our approach of maximizing the amount of analyzable data, we decided to not discard additional participants based on the number of censored volumes per condition.
 

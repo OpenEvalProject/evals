@@ -14,9 +14,9 @@
 
 ### Affiliations
 
-1. https://ror.org/022kthw22 Department of Biology, Center for RNA Biology, University of Rochester Rochester United States
-2. https://ror.org/036eg1q44 Institut de Recherche en Infectiologie de Montpellier (IRIM), CNRS, UMR 9004, Université de Montpellier Montpellier France
-3. https://ror.org/00trqv719 Department of Biochemistry and Biophysics, University of Rochester Medical Center Rochester United States
+1. Department of Biology, Center for RNA Biology, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))
+2. Institut de Recherche en Infectiologie de Montpellier (IRIM), CNRS, UMR 9004, Université de Montpellier Montpellier France ([ROR:036eg1q44](https://ror.org/036eg1q44))
+3. Department of Biochemistry and Biophysics, University of Rochester Medical Center Rochester United States ([ROR:00trqv719](https://ror.org/00trqv719))
 
 † Corresponding author
 
@@ -40,27 +40,43 @@ The putative interaction between Nsp5 and TRMT1 indicates that SARS-CoV-2 infect
 
 ## Results
 
-## SARS-CoV-2 infection reduces cellular levels of TRMT1 and TRMT1-catalyzed tRNA modifications
+### SARS-CoV-2 infection reduces cellular levels of TRMT1 and TRMT1-catalyzed tRNA modifications
 
 To test the effects of SARS-CoV-2 infection on TRMT1 and tRNA modifications, we used an MRC-5 human lung fibroblast cell line expressing the ACE2 receptor that is permissive for SARS-CoV-2 infection (Raymonda et al., 2022; Uemura et al., 2021a; Uemura et al., 2021b). MRC-5 cells were mock-infected or infected with SARS-CoV-2 followed by harvesting at 24- and 48 hr post-infection for sample preparation. We chose the 24- and 48 hr time points since MRC5-ACE2 cells exhibit elevated accumulation of viral RNA at these time points without extreme cell death that occurs at subsequent time points (Raymonda et al., 2022). Immunoblotting for the SARS-CoV-2 nucleocapsid (N) protein confirmed the infection and expression of viral proteins in MRC-5 cells compared to mock-infected cells (Figure 1A and N protein, compare lanes 1 and 2 to lanes 3 and 4). To probe for TRMT1, we used an antibody that detects the major TRMT1 isoform of ~72 kDa as well as a non-specific band at ~65 kDa in human cell lysates (Dewe et al., 2017; Perez et al., 2022). Using this antibody, we also detected the 72 kDa TRMT1 isoform as well as the non-specific 65 kDa band in MRC-5 cell lysates (Figure 1A, circle denotes TRMT1, asterisk denotes non-specific band). In multiple independent replicates, MRC-5 cells infected with SARS-CoV-2 exhibited a ~30% reduction in TRMT1 levels at 24- and 48 hr post-infection compared to mock-infected cells (Figure 1B). These results provide evidence that SARS-CoV-2 infection reduces cellular levels of TRMT1.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig1-v1.jpg)
+
+**Figure 1.:** (A) Immunoblot analysis of lysates prepared from MRC-5-ACE2 human cells that were mock-infected or infected with SARS-CoV-2 at multiplicity of infection (MOI) of 5 for 24 or 48 hr. The immunoblot was probed with anti-TRMT1, actin, or SARS-CoV-2 nucleocapsid (N) antibodies. Circle represents endogenous full-length TRMT1. Asterisk (*) denotes a non-specific band. Size markers are noted in kiloDalton. (B) Quantification of TRMT1 signal intensity normalized to actin in the mock or SARS-CoV-2-infected cell lines. TRMT1 protein levels are expressed relative to mock-infected samples for each time point. (C) m2,2G levels in small RNAs isolated from MRC5 cells that were either mock-infected or infected with SARS-CoV-2 at MOI of 5 for 24 or 48 hr. m2,2G levels were normalized to A, C, G, and U. Samples were measured in biological replicates. Statistical significance for (B) and (C) was determined by two-way ANOVA with multiple comparisons test. ***p<0.001; ****p<0.0001; ns, non-significant. (D) Levels of the indicated RNA modifications in small RNAs isolated from MRC5 cells that were either mock-infected or infected with SARS-CoV-2 for 24 or 48 hr. RNA modification levels were normalized to A, C, G, and U. Y-axis represents the log2 fold change in the levels of the indicated tRNA modification between SARS-CoV-2 infected versus mock-infected MRC5 cells. The experiment in (C) was repeated as an independent biological replicate in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** m2,2G levels were normalized to guanosine. Samples were measured in biological replicates. Statistical significance was determined by two-way ANOVA with multiple comparisons test. *p<0.05; ns, non-significant.
+
 We next measured the levels of TRMT1-catalyzed m2,2G modifications in cellular RNA using quantitative mass spectrometry. While m2,2G levels did not exhibit a significant change between mock-infected and SARS-CoV-2-infected cells at 24 hr post-infection, m2,2G levels were decreased by ~15% at 48 hr post-infection in multiple biological replicates (Figure 1C). The decrease in m2,2G levels after SARS-CoV-2 infection was also reproduced in an independent experiment (Figure 1—figure supplement 1). In addition to m2,2G, more than half of all tested RNA modifications exhibited a decrease in SARS-CoV-2-infected cells compared to mock-infected cells at 24 hr post-infection (Figure 1D). At 48 hr post-infection with SARS-CoV-2, most of the tested RNA modifications exhibited a decrease in levels compared to mock-infected cells. The RNA modifications that decrease upon viral infection include modifications that are known to be present in multiple types of RNA, including tRNA, rRNA, and mRNA. Thus, SARS-CoV-2 infection of human MRC-5 lung fibroblast cells alters the steady-state levels of multiple RNA modifications, including the m2,2G modification catalyzed by TRMT1.
 
-## Nsp5 interacts with TRMT1
+### Nsp5 interacts with TRMT1
 
 Examination of the primary structure of human TRMT1 revealed an eight amino acid residue sequence between the methyltransferase domain and zinc-finger motif matching the consensus sequence of Nsp5 cleavage sites in SARS-CoV-2 polyproteins (Figure 2A and B). The putative cleavage site in TRMT1 includes a glutamine (Q) residue conserved at the fourth position that is found in all Nsp5 cleavage sites of SARS-CoV-2 polyproteins (Figure 2B). Based upon a predicted tertiary structure of TRMT1 using Alpha Fold (Jumper et al., 2021; Varadi et al., 2022), this putative Nsp5 cleavage site is expected to lie in an unstructured linker region exposed on the surface of TRMT1 (Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of human TRMT1 primary structure with predicted Nsp5 cleavage site. Mitochondrial targeting signal (MTS), methyltransferase (MT) domain, and zinc finger motif are denoted. (B) Consensus sequence logo of cleavage sites in SARS-CoV-2 polyproteins. (C) Alpha-fold predicted structure of human TRMT1 with putative Nsp5 cleavage site denoted in magenta and arrowhead. (D) Immunoblot of input and strep-tactin purifications from human cells expressing empty vector, wild-type (WT) Nsp5, or Nsp5-C145A fused to the Strep-tag without or with co-expression with TRMT1-FLAG. The immunoblot was probed with anti-Strep, FLAG, and actin antibodies. Square represents TRMT1-FLAG, circle represents endogenous TRMT1. Size markers are noted to the left in kiloDalton. The experiment in (D) was repeated as an independent biological replicate in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The immunoblot was probed with anti-TRMT1, Strep, or actin antibodies. Circle represents endogenous TRMT1.
 
 To investigate a potential interaction between Nsp5 and TRMT1, we used human 293T cells due to their high transfection efficiency. We transfected human 293T cells with plasmids expressing wild-type (WT) Nsp5 from SARS-CoV-2 or Nsp5-C145A. The Nsp5-C145A mutant contains an alanine substitution of the catalytic cysteine residue in the active site of Nsp5 and is proteolytically inactive (Lee et al., 2020). The Nsp5 proteins were expressed as fusion proteins with the Twin-Strep purification tag (Schmidt et al., 2013). We also tested the interaction between Strep-tagged Nsp5 or Nsp5-C145A with TRMT1 by co-expression with TRMT1 fused with a carboxyl-terminal FLAG tag. TRMT1 was tagged at the carboxy-terminus to prevent interference with the amino-terminal mitochondrial targeting signal (Dewe et al., 2017). The Strep-tagged Nsp5 or Nsp5-C145A mutants were affinity purified from cell lysates on strep-tactin resin, eluted with biotin, and purified proteins detected by immunoblotting. Probing of input lysates and purified samples with anti-Strep antibodies confirmed the expression and recovery of WT-Nsp5 and Nsp5-C145A (Figure 2D, Strep). Nsp5-C145A protein accumulated at higher levels compared to WT-Nsp5 due to the absence of self-cleavage by Nsp5-C145A and the known toxicity of expressing WT-Nsp5 in mammalian cells (Resnick et al., 2021; Wenzel et al., 2021).
 
 To probe for TRMT1, we used the antibody described above that detects endogenous full-length TRMT1 of 72 kDa (Figure 2D, input lanes 1–3, circle denotes endogenous TRMT1). The antibody also detected the overexpressed TRMT1-FLAG protein (Figure 2D, lanes 4–6, square denotes TRMT1-FLAG). Only background levels of endogenous TRMT1 or TRMT1-FLAG were detected in the vector or WT-Nsp5 purifications (Figure 2D, TRMT1, low or high exposure, lanes 7, 8, 10, and 11). In contrast, endogenous TRMT1 was enriched in the purification with Nsp5-C145A (Figure 2D, TRMT1 high exposure, lane 9). TRMT1-FLAG was also detected specifically in the Nsp5-C145A purification compared to the control or Nsp5 purifications (Figure 2D, compare lanes 10 and 11 to lane 12). The association between TRMT1 and Nsp5-C145A was reproduced in an independent purification (Figure 2—figure supplement 1). These results provide evidence that Nsp5 can interact with TRMT1 when Nsp5 is in the catalytic-inactive form.
 
-## Nsp5 cleaves TRMT1 in a site-specific manner
+### Nsp5 cleaves TRMT1 in a site-specific manner
 
 The interaction of TRMT1 with Nsp5-C145A along with cleavage site prediction suggests that TRMT1 could be a proteolysis substrate of Nsp5. To test this hypothesis, we monitored for TRMT1 cleavage in 293T human cells expressing Strep-tagged Nsp5 or GFP as a control. Cleavage after amino acid residue 530 of TRMT1 is predicted to result in an N-terminal fragment of 58 kDa and a C-terminal fragment of 14 kDa. To probe for the N-terminal TRMT1 fragment, we used the antibody described above which targets residues 201–229 of TRMT1. Using this antibody, we detected full-length TRMT1 and the ~65 kDa non-specific band in lysates from 293T cells expressing Strep-GFP (Figure 3A, TRMT1, lanes 1–3, circle and asterisk, respectively). No detectable change in the levels of full-length TRMT1 was observed in human cells expressing Nsp5 or Nsp5-C145A (Figure 3A, TRMT1, quantified in 3B). However, lysates prepared from human cells expressing Nsp5 exhibited an additional band migrating below the non-specific band that matches the predicted size of the N-terminal TRMT1 fragment (Figure 3B, TRMT1, lanes 4–6, arrow). The putative N-terminal TRMT1 fragment was detectable at 24 hr post-transfection with the Nsp5-expression plasmid, increased at 48 hr, and remained detectable at 72 hr post-transfection (Figure 3B). In contrast, the N-terminal TRMT1 fragment was not detected above the background signal in human cells expressing the proteolytically inactive Nsp5-C145A mutant (Figure 3B, TRMT1, lanes 7–9, quantified in 3 C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig3-v1.jpg)
 
-**Figure 3.:** (A) Immunoblot of lysates prepared from human 293T cells expressing GFP, Nsp5 or Nsp5-C145A. The immunoblot was probed with anti-TRMT1, Strep, or actin antibodies. Hours post represents the time post-transfection. Circle represents endogenous TRMT1. Arrow represents the N-terminal (N)-TRMT1 cleavage fragment. Asterisk (*) denotes a non-specific band. Size markers to the left in kiloDalton. (B, C) Quantification of endogenous TRMT1 or N-terminal (N)-TRMT1 cleavage product in transfected cells. TRMT1 and N-TRMT1 signal was normalized to actin. (D) Immunoblot of lysates prepared from wild-type or TRMT1-knockout (KO) human cell lines expressing Nsp5. Experiments in (A) and (D) were repeated three times in biological replicates (see source data).Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Immunoblot of lysates prepared from human 293T cells expressing GFP, Nsp5 or Nsp5-C145A. The immunoblot was probed with anti-TRMT1, Strep, or actin antibodies. Hours post represents the time post-transfection. Circle represents endogenous TRMT1. Arrow represents the N-terminal (N)-TRMT1 cleavage fragment. Asterisk (*) denotes a non-specific band. Size markers to the left in kiloDalton. (B, C) Quantification of endogenous TRMT1 or N-terminal (N)-TRMT1 cleavage product in transfected cells. TRMT1 and N-TRMT1 signal was normalized to actin. (D) Immunoblot of lysates prepared from wild-type or TRMT1-knockout (KO) human cell lines expressing Nsp5. Experiments in (A) and (D) were repeated three times in biological replicates (see source data).
 
 We validated the specificity of our results by using a human 293T TRMT1‐knockout (KO) cell line that is deficient in TRMT1 expression (Dewe et al., 2017; Zhang et al., 2020). In this case, neither full-length TRMT1 nor the TRMT1 cleavage fragment were detected in a TRMT1-deficient human cell line expressing Nsp5 (Figure 3D, compare lanes 1 through 3 to lanes 4 through 6). This result provides additional confirmation that the N-terminal TRMT1 fragment arises from the cleavage of endogenous TRMT1 by Nsp5.
 
@@ -68,11 +84,27 @@ We also attempted to detect the C-terminal TRMT1 cleavage fragment in human cell
 
 To increase the sensitivity for detecting the C-terminal TRMT1 fragment, we co-transfected Nsp5 expression plasmids along with a plasmid encoding TRMT1 fused to a FLAG tag at the C-terminus. Confirming the results above with endogenous TRMT1, the N-terminal TRMT1 cleavage product was detected in the lysate of human cells overexpressing TRMT1-FLAG and Nsp5 but not with vector or Nsp5-C145A (Figure 4A, TRMT1, compare lanes 1 and 3 to lane 2). In addition, using an antibody against the FLAG tag, we could detect a ~20 kDa product matching the expected molecular weight of a FLAG-tagged C-terminal TRMT1 cleavage product in the lysate of human cells expressing Nsp5 but not vector alone or Nsp5-C145A (Figure 4A, FLAG, arrowhead). To confirm that the 20 kDa band detected with the anti-FLAG antibody was the C-terminal portion of TRMT1, we probed the cell lysates with the anti-TRMT1 antibody targeting residues 609–659 noted above. Using this antibody, we detected the same ~20 kDa band in the lysate of human cells expressing Nsp5 but not vector alone or Nsp5-C145A (Figure 4—figure supplement 1B, lanes 1–3). These data provide evidence that SARS-CoV-2 Nsp5 cleaves at the predicted cleavage site in TRMT1 leading to N- and C-terminal fragments in human cells.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig4-v1.jpg)
+
+**Figure 4.:** (A) Immunoblot of lysates from human cells expressing empty vector, wild-type (WT) Nsp5-Strep, or Nsp5-C145A-Strep without or with co-expression with TRMT1-FLAG. The immunoblot was probed with anti-Strep, FLAG, and actin antibodies. Square represents TRMT1-FLAG, Asterisk (*) denotes a non-specific band, arrow represents N-terminal TRMT1 cleavage product and arrowhead indicates the C-terminal TRMT1 cleavage product. (B) Schematic of human TRMT1 with predicted Nsp5 cleavage site and Q530N mutation. (C) Immunoblot of lysates from human cells expressing empty vector, wild-type (WT) Nsp5-Strep, or Nsp5-C145A-Strep without or with co-expression with TRMT1-FLAG or TRMT1-FLAG Q530N. Experiments in (A) and (C) were repeated three times as biological replicates with comparable results (see source data).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Immunoblot of lysates from the indicated wild-type (WT) or TRMT1-knockout (K)O human 293T cells that were untransfected (-) (lanes 1 and 2) or transfected with empty vector, wild-type (WT) Nsp5-Strep, or Nsp5-C145A-Strep expression plasmids (lanes 3 through 5). The blot was probed with an antibody detecting residues 609–659 of TRMT1. Circle represents endogenous TRMT1. (B) Immunoblot of lysates from human cells that were transfected with TRMT1-FLAG or TRMT1-FLAG Q530N expression plasmids along with empty vector, wild-type (WT) Nsp5-Strep, or Nsp5-C145A-Strep expression plasmids. The blot was probed with an antibody detecting residues 609–659 of TRMT1. Circle represents endogenous TRMT1, square represents TRMT1-FLAG, and arrowhead indicates the C-terminal TRMT1 cleavage product. Asterisks (*) denote bands that are still detectable in the TRMT1-KO cell line. The band at ~35 kDa in lanes 3 and 6 of (B) represents non-specific detection of the Nsp5-C145A variant that exhibits extremely high levels of expression since it cannot self-cleave.
+
 All Nsp5 cleavage sites in SARS-CoV-1 and SARS-CoV-2 polyproteins contain a glutamine residue at position four (Figure 2B; Grum-Tokars et al., 2008; Jin et al., 2022; Lee et al., 2022). Mutation of the glutamine to asparagine is sufficient to abolish recognition and cleavage by Nsp5 from SARS-CoV-1 or SARS-CoV-2 (Heilmann et al., 2022; Muramatsu et al., 2013). Thus, we tested if TRMT1 exhibited the same requirements for cleavage by Nsp5 by generating an expression construct for TRMT1-FLAG in which residue Q530 of the predicted Nsp5 cleavage site was mutated to asparagine (Figure 4B, Q530N). Further confirming our results above, expression of TRMT1-FLAG with WT-Nsp5 but not GFP or Nsp5-C145A led to the accumulation of N- and C-terminal TRMT1 cleavage fragments (Figure 4C, TRMT1 and FLAG, lanes 4–6, arrow and arrowhead, Figure 4—figure supplement 1B). In contrast to wild-type TRMT1, the appearance of the N- or C-terminal TRMT1 cleavage fragments was barely detectable when the TRMT1-Q530N mutant was co-expressed with Nsp5 (Figure 4C, lane 8, Figure 4—figure supplement 1B). Altogether, these results demonstrate that TRMT1 can be recognized and cleaved by Nsp5 in human cells with cleavage requiring a sequence that matches Nsp5 cleavage sites in SARS-CoV-2 polyproteins.
 
-## Functional properties of TRMT1 fragments resulting from Nsp5 cleavage
+### Functional properties of TRMT1 fragments resulting from Nsp5 cleavage
 
 Cleavage of TRMT1 after residue Q530 will result in an N-terminal fragment encompassing the methyltransferase domain and a C-terminal TRMT1 fragment containing a zinc finger motif that mediates tRNA interaction (Dewe et al., 2017; Zhang et al., 2020). Thus, we tested the functional properties of the predicted TRMT1 cleavage fragments compared to full-length TRMT1. First, we tested the interaction between the TRMT1 cleavage fragments and RNA. We have previously shown that TRMT1 exhibits a stable interaction with rRNAs and substrate tRNAs that are targets for m2,2G modification (Dewe et al., 2017; Zhang et al., 2020). Based upon this interaction, we expressed full-length TRMT1, the TRMT1-Q530N mutant, or the TRMT1 fragments as FLAG-tagged fusion proteins in 293T human cells followed by affinity purification and analysis of copurifying RNAs (Figure 5A). Immunoblotting confirmed the expression and purification of each TRMT1 variant on antiFLAG resin (Figure 5B). As expected, the purification of full-length TRMT1 resulted in the enrichment of rRNA and tRNAs compared to the control purification from vector-transfected cells (Figure 5C, compare lane 6 to lane 7). The Q530N variant of TRMT1 also exhibited comparable binding of tRNAs as full-length TRMT1 (Figure 5C, lane 10). In contrast, no detectable enrichment of rRNA or tRNA was detected for the N-terminal TRMT1 fragment (Figure 5C, lane 8). Interestingly, the TRMT1 C-terminal fragment exhibited similar levels of tRNA binding as full-length TRMT1 (Figure 5C, compare lanes 7–9). Thus, the N-terminal TRMT1 cleavage fragment appears to be insufficient for binding tRNA while the C-terminal fragment containing the Zn-finger motif is sufficient for binding to tRNAs.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of wild-type TRMT1 and predicted TRMT1 fragments resulting from nonstructural protein 5 (Nsp5) cleavage at Q530N. (B) Immunoblot analysis of anti-FLAG purifications from human cells expressing vector control, full-length TRMT1, or TRMT1 cleavage fragments fused to the FLAG tag. The immunoblot was probed with anti-FLAG and anti-actin antibodies. (C) Nucleic acid stain of RNAs extracted from the indicated input or purified samples after denaturing PAGE. The migration pattern of 5.8 S rRNA (~150 nt), 5 S rRNA (~120 nt), and tRNAs (~70–80 nt) are denoted. (D) Immunoblot of TRMT1 expression in either control-wild-type (WT) or TRMT1-knockout (KO) human 293T cell lines. (E, F) Representative gel of primer extension assays to monitor the presence of dimethylguanosine (m2,2G) in tRNA-Met-CAU or mt-tRNA-Ile-GAU from the cell lines transfected with the indicated TRMT1 constructs. D, dihydrouridine; m1G, 1-methylguanosine; >, labeled oligonucleotide used for primer extension. Protein-RNA purification was repeated with comparable results (see source data for repeat).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Mitochondria were identified using mitochondrion-targeted red fluorescent protein (Mito-RFP) and nuclear DNA was stained with Hoechst. Overlap of red mitochondria and green GFP signal is displayed in the Merge panels.
 
 To further dissect the functionality of the TRMT1 cleavage fragments, we next used the TRMT1‐KO human cell line described above. This TRMT1-KO cell line is deficient in TRMT1 and lacks m2,2G modifications in all tested tRNAs containing G at position 26 (Dewe et al., 2017; Zhang et al., 2020). Using transient transfection, we expressed full-length TRMT1 or the TRMT1 variants in either the control wild-type (WT) or TRMT1-KO cell lines (Figure 5D). We then assessed for rescue of m2,2G formation in nuclear-encoded tRNA‐Met‐CAU or mitochondrial-encoded (mt)-tRNA-Ile-UAU using a reverse transcriptase (RT)-based primer extension assay. Based upon this assay, vector‐transfected WT human cells exhibited an RT block at position 26 of tRNA‐Met‐CAU and mt-tRNA-Ile-UAU indicative of the m2,2G modification (Figure 5E, Lane 1). No read‐through product was detected for either tRNA in control human cells indicating that nearly all endogenous tRNA‐Met‐CAU and mt-tRNA-Ile-UAU is modified with m2,2G. Consistent with this observation, increased expression of full-length TRMT1 or variants in control 239T cells had no detectable effect on m2,2G modification in tRNA‐Met‐CAU or mt-tRNA-Ile-UAU (Figure 5E, lanes 2 through 5).
 
@@ -80,9 +112,17 @@ As expected, the m2,2G modification was absent in tRNA‐Met‐CAU and mt-tRNA-I
 
 In addition to TRMT1 activity, we compared the subcellular localization pattern of full-length TRMT1 to the TRMT1 cleavage fragments. To visualize TRMT1, we transiently transfected 293T human cells with constructs expressing human TRMT1 fused at its carboxy terminus to GFP. As a mitochondria marker, we co-expressed a red fluorescent protein fused to the mitochondria targeting signal of pyruvate dehydrogenase (Figure 5—figure supplement 1, Mito-RFP). Full-length TRMT1-GFP exhibited cytoplasmic localization along with a punctate signal in the nucleus (Figure 5—figure supplement 1, TRMT1-WT, GFP). The fluorescence signal for TRMT1 in the cytoplasm overlapped partially with the RFP-tagged mitochondrial marker (Figure 5—figure supplement 1, Merge, yellow signal). The mitochondrial and nuclear localization pattern of full-length TRMT1 is consistent with prior studies demonstrating the presence of a mitochondrial targeting signal and nuclear localization signal in TRMT1 (Dewe et al., 2017). The N-terminal TRMT1 fragment exhibited primarily cytoplasmic localization with a greatly reduced signal in the nucleus, consistent with a lack of the nuclear localization signal at the C-terminus (Figure 5—figure supplement 1, TRMT1 N-term, GFP, merge). In contrast to the N-terminal TRMT1 fragment, the C-terminal TRMT1 fragment displayed primarily nuclear localization with very little signal in the cytoplasm (Figure 5—figure supplement 1, TRMT1 C-term, GFP, merge). These results suggest that TRMT1 in the cytoplasm is the likely target of Nsp5 cleavage with the cleavage fragments displaying altered localization compared to full-length TRMT1.
 
-## TRMT1-deficient human cells exhibit reduced levels of SARS-CoV-2 RNA replication
+### TRMT1-deficient human cells exhibit reduced levels of SARS-CoV-2 RNA replication
 
 We next investigated whether TRMT1 expression impacts SARS-CoV-2 replication by infecting the 293T control-wild-type (WT) or TRMT1-KO human cell lines described above with SARS-CoV-2. To render the 293T cell lines permissive for SARS-CoV-2 infection, the cell lines were engineered to stably express the ACE2 receptor from an integrated lentiviral vector (Figure 6—figure supplement 1A). Immunoblotting for the SARS-CoV-2 nucleocapsid protein confirmed that SARS-CoV-2 could infect both the control-WT and TRMT1-KO human cell lines expressing ACE2 (Figure 6—figure supplement 1B). Using these cell lines, we first monitored the effect of SARS-CoV-2 infection on TRMT1 levels. As expected, there was no detectable TRMT1 in any of the lanes containing lysate from the TRMT1-KO cell line (Figure 6A, compare control-WT, lanes 1–3, to TRMT1-KO, lanes 4–6). In the control-WT cells, we detected a decrease in TRMT1 levels at both multiplicity of infection (MOI) of 0.2 and 0.4 (Figure 6A, TRMT1, quantified in Figure 6B). The decrease in TRMT1 in SARS-CoV-2-infected 293T cells is comparable to the reduction in TRMT1 levels in MRC5-ACE2 human cell lines infected with SARS-CoV-2 (Figure 1). We also compared the levels of endogenous TRMT1 after infection with SARS-CoV-2 at a higher MOI of 5.0. Human 293T cells infected at the higher MOI exhibited a reduction in TRMT1 levels to nearly the background of the TRMT1-KO cell lines (Figure 6C and D). These results indicate that SARS-CoV-2 infection can induce a drastic reduction in cellular TRMT1 levels.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig6-v1.jpg)
+
+**Figure 6.:** (A) Immunoblot of lysates prepared from 293T control-wild-type (WT) or TRMT1-knockout (KO) cell lines that were mock-infected (multiplicity of infection, MOI of 0) or infected with SARS-CoV-2 at MOI of 0.2 or 0.4 for 24 hr. The immunoblot was probed with antibodies against TRMT1 or actin. Circle represents endogenous full-length TRMT1. Asterisk (*) denotes a non-specific band. Size markers to the right in kiloDalton. (B) Normalized TRMT1 signal intensity relative to mock-infected cells (MOI of 0). Statistical significance was determined by one-way ANOVA with Dunnett’s multiple comparisons test. (C) Immunoblot of lysates prepared from 293T control-wild-type (WT) or TRMT1-KO cell lines that were mock-infected (MOI of 0) or infected with SARS-CoV-2 at MOI of 0.1 or 5.0 for 24 hr. The immunoblot was probed with antibodies as in (A). (D) Normalized TRMT1 signal intensity relative to mock-infected cells (MOI of 0). (E, F) SARS-CoV-2 RNA copy number in control-WT or TRMT1-KO human 293T cell lines after infection at the indicated MOI for 24 hr. Viral copy number was measured by QRT-PCR and normalized to GAPDH. Samples were measured in triplicate. Statistical significance was determined by two-way ANOVA with Šídák’s multiple comparisons test. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001; ns, non-significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Immunoblot analysis of lysates prepared from the indicated 293T cell lines expressing empty vector or ACE2. The immunoblot was probed with anti-ACE2 and actin. (B) Immunoblot analysis of lysates prepared from 293T-ACE2 cell lines that were mock-infected (multiplicity of infection, MOI 0) or infected with SARS-CoV-2 at the indicated MOI. The blot was probed against the SARS-CoV-2 nucleocapsid (N) and actin.
 
 The ACE2-expressing cell lines were then infected at low or high multiplicity of infection (MOI) followed by harvesting of cells at 24 hr post-infection. Intracellular viral RNA levels were monitored by quantitative RT-PCR of the SARS-CoV-2 envelope protein gene. As expected, titration of SARS-CoV-2 viral particles at either low or high MOI led to a concomitant increase in viral RNA in both control and TRMT1-KO cell lines (Figure 6E and F). Notably, TRMT1-KO cells exhibited a ~three to fourfold reduction in viral RNA compared to control cells infected at the same MOI (Figure 6E and F). These results suggest that expression of TRMT1 is necessary for efficient SARS-CoV-2 replication in human cells.
 
@@ -90,15 +130,27 @@ To confirm that TRMT1-deficiency is the cause of the reduced SARS-CoV-2 replicat
 
 We then expressed the ACE2 receptor in the complemented TRMT1-KO cell lines to render them permissive for SARS-CoV-2 infection (Figure 7—figure supplement 2). Using these cell lines, we first tested the effect of SARS-CoV-2 infection on TRMT1 levels. Compared to mock-infection, TRMT1 protein levels decreased in the TRMT1-KO cell lines expressing TRMT1-WT after infection with SARS-CoV-2 (Figure 7A, lanes 1–3; quantified in 7B). Notably, the level of TRMT1 was not appreciably changed in the TRMT1-KO cell line expressing TRMT1-Q530N after infection with SARS-CoV-2 (Figure 7A, lanes 4–6; quantified in 7 C). These results provide evidence that the decrease in endogenous TRMT1 levels after SARS-CoV-2 infection is due to cleavage of TRMT1 by Nsp5.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig7-v1.jpg)
+
+**Figure 7.:** (A) Immunoblot of lysates prepared from the indicated 293T TRMT1-knockout (KO) cell lines that were mock-infected (multiplicity of infection, MOI of 0) or infected with SARS-CoV-2 for 24 hr. The immunoblot was probed with antibodies against TRMT1 or actin. Square represents full-length TRMT1-FLAG. Asterisk (*) denotes a non-specific band. Size markers to the left in kiloDalton. (B) Normalized TRMT1-WT signal intensity relative to mock-infected cells (MOI of 0). (C) Normalized TRMT1-Q530N signal intensity relative to mock-infected cells (MOI of 0). Statistical significance was determined in (B) and (C) by one-way ANOVA with Dunnett’s multiple comparisons test. (D) SARS-CoV-2 RNA copy number in control-wild-type (WT) or TRMT1-KO human 293T cell lines after infection at the indicated MOI. Viral copy number was measured by QRT-PCR and normalized to GAPDH. Statistical significance was determined by two-way ANOVA with Dunnett’s multiple comparisons test. *p<0.05; **p<0.01; ****p<0.0001; ns, non-significant.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Immunoblot of lysates from human cells integrated with empty lentiviral vector or lentiviral expression vectors for wild-type (WT) TRMT1 or TRMT1-Q530N. The cell lines were transfected with either a vector or a construct expressing Nsp5-Strep. The immunoblot was probed with anti-TRMT1, Strep, and actin antibodies. Square represents TRMT1-FLAG, circle represent endogenous TRMT1, Asterisk (*) denotes a non-specific band, and arrow represents N-terminal TRMT1 cleavage product.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** The immunoblot was probed with anti-ACE2 and actin.
+
 We next measured SARS-CoV-2 RNA levels after infecting the TRMT1-KO cell lines with SARS-CoV-2. Reproducing our results above, we found that the TRMT1-KO+vector cell line exhibited a decrease in viral RNA levels compared to control cells infected at the same MOI (Figure 7D, compare control +vec to KO +vec). TRMT1-KO cell lines re-expressing TRMT1 exhibited higher viral RNA production relative to the TRMT1-KO+vector cell line that was comparable to the control-WT cells (Figure 7D, compare KO +vec to KO +WT). Notably, the TRMT1-KO cell line expressing TRMT1-Q530N exhibited a higher level of viral RNA production compared to the TRMT1-KO cell line expressing TRMT1-WT at higher MOI (Figure 7, KO +Q530 N). Altogether, these results uncover a requirement for TRMT1 expression for efficient SARS-CoV-2 replication in human cells.
 
-## Impact of TRMT1 on SARS-CoV-2 particle infectivity
+### Impact of TRMT1 on SARS-CoV-2 particle infectivity
 
 Since the presence or absence of TRMT1 appears to impact SARS-CoV-2 RNA production in human 293T cells, we tested if this phenomenon could alter viral particle production. To this end, we collected tissue culture media supernatant containing viral particles generated from control-WT or TRMT1-KO cell lines that were infected by SARS-CoV-2 for 24 hr. The viral titer of the supernatant was determined by focus forming unit assay and particle infectivity expressed relative to viral genomic RNA copy number within the same sample. Consistent with the reduced levels of viral RNA in TRMT1-KO cells infected with SARS-CoV-2, the supernatant from infected TRMT1-KO cells exhibited reduced titer and slightly lower infectivity when compared to viral particles produced from control-WT cells (Figure 8, control-WT versus TRMT1-KO). Re-expression of TRMT1 in the TRMT1-KO cells partially restored viral titer at the lower MOI and increased infectivity compared to supernatants from TRMT1-KO cell lines (Figure 8, TRMT1-KO+vec versus TRMT1-KO+WT). Interestingly, the expression of the non-cleavable TRMT1-Q530N variant in TRMT1-KO cells promoted an increase of viral titer as well as infectivity compared to expression of wild-type TRMT1 (Figure 8, TRMT1-KO+WT versus TRMT1-KO+Q530 N). Altogether, these observations suggest an unexpected role for TRMT1 expression in virus production and the generation of optimally infectious SARS-CoV-2 particles.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/90316/elife-90316-fig8-v1.jpg)
 
-**Figure 8.:** (A) Viral titer of supernatants collected from the indicated cell lines infected with SARS-CoV-2. Infectious titer was determined by TCID50 endpoint dilution assay in VeroE6 cells and expressed in focus forming units per mL of supernatant (FFU/mL). (B) Infectivity of SARS-CoV-2 particles generated from cell lines in (A). Infectivity of viral particles was calculated with the formula [(FFU/mL)/(viral genomic RNA copies/mL)], and expressed in FFU per 100 genomic copies.Figure 8—source data 1.
+**Figure 8.:** (A) Viral titer of supernatants collected from the indicated cell lines infected with SARS-CoV-2. Infectious titer was determined by TCID50 endpoint dilution assay in VeroE6 cells and expressed in focus forming units per mL of supernatant (FFU/mL). (B) Infectivity of SARS-CoV-2 particles generated from cell lines in (A). Infectivity of viral particles was calculated with the formula [(FFU/mL)/(viral genomic RNA copies/mL)], and expressed in FFU per 100 genomic copies.
 
 ## Discussion
 
@@ -114,43 +166,319 @@ While TRMT1 could be an unintentional target of Nsp5, it remains conceivable tha
 
 We have previously found that TRMT1-deficient human cells exhibit nearly undetectable m2,2G without a major impact on other RNA modifications (Dewe et al., 2017). In contrast, human cells infected with SARS-CoV-2 exhibited a decrease in multiple RNA modifications present in a variety of RNAs, including tRNA, rRNA, snRNA, and mRNA. Thus, the widespread changes in RNA modifications after infection with SARS-CoV-2 suggest that coronavirus infection could alter the levels or activity of multiple RNA modification enzymes in addition to TRMT1. Consistent with this hypothesis, RNA modification profiles are changed in response to various forms of cellular stress, including viral infection (Chan et al., 2018; Jungfleisch et al., 2022). Overall, the study presented here highlights the expanding role of RNA modifications in modulating cellular responses to pathogens that will be the important subject of further investigation.
 
-## Ideas and speculation
+### Ideas and speculation
 
 Our findings suggest that the SARS-CoV-2 might self-limit its replication by altering the host translation machinery through TRMT1 degradation and reduced levels of m2,2G-modified tRNAs. This perturbation of the tRNA pool may further inhibit host translation that is already targeted by Nsp1 blockade of mRNA entry on 40 S ribosomes (Kamitani et al., 2009; Lapointe et al., 2021; Schubert et al., 2020; Thoms et al., 2020; Tidu et al., 2020). The inhibition of host translation may be beneficial to certain viruses that can locally maintain a tRNA pool optimized for viral translation (Hernandez-Alias et al., 2021; Pavon-Eternod et al., 2013; van Weringh et al., 2011; Yang et al., 2021). Another possibility is that Nsp5-TRMT1 interaction facilitates the packaging of specific tRNAs into viral particles as suggested previously (Peña et al., 2022). The observation that expression of the non-cleavable TRMT1-Q530N variant enhances viral replication and infectivity supports the hypothesis that TRMT1 could facilitate tRNA uptake into viral particles. The packaging of specific tRNAs in viral particles could augment viral translation in the subsequent round of infection, thereby enhancing infectivity and perhaps facilitating the species jump of SARS-CoV-2 towards hosts with incompatible codon bias.
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, male)</td>
+      <td>MRC5 +ACE2</td>
+      <td>Raymonda et al., 2022</td>
+      <td>ATCC: CCL-171</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (coronavirus)</td>
+      <td>SARS-CoV-2</td>
+      <td>BEI resources</td>
+      <td>NR-52282</td>
+      <td>Isolate Hong Kong/VM20001061/2020</td>
+    </tr>
+    <tr>
+      <td>Strain (coronavirus)</td>
+      <td>SARS-CoV-2</td>
+      <td>European Virus Archive</td>
+      <td>014 V-03890</td>
+      <td>Isolate BetaCoV/France/IDF0372/2020</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA Clean &amp; Concentrator-5 kit</td>
+      <td>Zymo</td>
+      <td>R1013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>Dotmatics</td>
+      <td>Prism 10, version 10.2.2 (341)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>X-1.6.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>TRMT1</td>
+      <td>GenBank</td>
+      <td>Gene ID: 55621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA3.1-TRMT1-FLAG</td>
+      <td>Dewe et al., 2017</td>
+      <td></td>
+      <td>Fu Lab plasmid, mammalian expression vector for wild-type TRMT1 fused to FLAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA3.1-TRMT1-GFP</td>
+      <td>Dewe et al., 2017</td>
+      <td></td>
+      <td>Fu Lab plasmid, mammalian expression vector for wild-type TRMT1 fused to GFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA3.1-TRMT1-FLAG-Q530N</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Fu Lab plasmid, mammalian expression vector for TRMT1-Q530N variant fused to FLAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA31.-TRMT1-FLAG-N-term</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Fu Lab plasmid, mammalian expression vector for N-terminal TRMT1 fragment fused to FLAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA31.-TRMT1-FLAG-C-term</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Fu Lab plasmid, mammalian expression vector for C-terminal TRMT1 fragment fused to FLAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pLenti-CMV-GFP-Blast</td>
+      <td>Addgene</td>
+      <td>Addgene #17445</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pLenti-CMV-TRMT1-FLAG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Fu Lab plasmid, lentiviral expression vector for wild-type TRMT1 fused to FLAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pLenti-CMV-TRMT1-FLAG-Q530N</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Fu Lab plasmid, lentiviral expression vector for TRMT1-Q530N fused to FLAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>psPAX2</td>
+      <td>Addgene</td>
+      <td>Addgene # 12260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pMD2.G</td>
+      <td>Addgene</td>
+      <td>Addgene #12259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MagSTREP ‘type3’ XT beads, 5% suspension</td>
+      <td>IBA Lifesciences</td>
+      <td>2-4090-002</td>
+      <td>For protein purification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DYKDDDDK-Tag Monoclonal Antibody Magnetic Microbead</td>
+      <td>Syd Labs</td>
+      <td>PA004830</td>
+      <td>For protein purification</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TRMT1 aa 201–229 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>G3, sc-373687</td>
+      <td>Western blot (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TRMT1 aa 609–659 (rabbit polyclonal)</td>
+      <td>Bethyl</td>
+      <td>A304-205A</td>
+      <td>Western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IBA LifeSciences StrepMAB-Classic (mouse monoclonal)</td>
+      <td>Fisher Scientific</td>
+      <td>NC9261069</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ANTI-FLAG M2 (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>F3165</td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SARS-CoV-2 nucleoprotein N protein (Rabbit polyclonal)</td>
+      <td>Sino Biological</td>
+      <td>40068-RP01</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-actin C4 (Mouse monoclonal)</td>
+      <td>EMD Millipore</td>
+      <td>MAB1501</td>
+      <td>Western blot (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW anti-mouse IgG (goat polyclonal)</td>
+      <td>Fisher Scientific</td>
+      <td>925–32210</td>
+      <td>Western blot secondary (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD anti-Mouse IgG (Goat polyclonal)</td>
+      <td>Li-COR</td>
+      <td>925–68070</td>
+      <td>Western blot secondary (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Odyssey Imager instrument</td>
+      <td>Li-Cor</td>
+      <td>CLx</td>
+      <td>For imaging infrared dye immunoblots.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio</td>
+      <td>Li-Cor</td>
+      <td>Version 5.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji (Fiji is just ImageJ)</td>
+      <td>Schindelin et al., 2012</td>
+      <td>Release 2.15.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>RRL.sin.cPPT.SFFV/Ace2.WPRE (MT136)</td>
+      <td>Rebendenne et al., 2021</td>
+      <td>Addgene 145842</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ACE2 Antibody (Goat polyclonal)</td>
+      <td>R&amp;D systems</td>
+      <td>AF933</td>
+      <td>Western blot (1:200)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SARS_For</td>
+      <td>This paper</td>
+      <td>QRT-PCR</td>
+      <td>ACAGGTACGTTAATAGTTAATAGCGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SARS_Rev</td>
+      <td>This paper</td>
+      <td>QRT-PCR</td>
+      <td>ATATTGCAGCAGTACGCACACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_For</td>
+      <td>This paper</td>
+      <td>QRT-PCR</td>
+      <td>GCTCACCGGCATGGCCTTTCGCGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_Rev</td>
+      <td>This paper</td>
+      <td>QRT-PCR</td>
+      <td>TGGAGGAGTGGGTGTCGCTGTTGA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 293T and MRC-5 cell lines were obtained from ATCC and authenticated by STR profiling. 293T human embryonic cell lines were cultured in Dulbecco’s Minimal Essential Medium (DMEM) containing 10% fetal bovine serum, 2 mM L-alanyl-L-glutamine (GlutaMax, Gibco) and 1% Penicillin/Streptomycin. Cells were grown at 37 °C, 20% Oxygen, and 5% CO2. Telomerase-immortalized MRC5 fibroblasts expressing ACE2 (MRC5-ACE2 cells) were cultured in Dulbecco’s modified Eagle serum (DMEM; Invitrogen) supplemented with 10% (vol/vol) fetal bovine serum (FBS) (Atlanta Biologicals), 4.5 g/L glucose, and 1% penicillin-streptomycin (Pen-Strep; Life Technologies) at 37 °C in a 5% (vol/vol) CO2 atmosphere. The cell lines were authenticated by STR DNA profiling and confirmed negative for mycoplasma contamination by Labcorp (https://celllineauthentication.labcorp.com).
 
-## SARS-CoV-2 infection of human cells for protein and RNA analysis
+### SARS-CoV-2 infection of human cells for protein and RNA analysis
 
 The SARS-CoV-2 isolate, Hong Kong/VM20001061/2020, was previously isolated from a nasopharyngeal aspirate and throat swab from an adult male patient in Hong Kong and was obtained through BEI resources (NR-52282). Viral stocks of SARS-CoV-2 were propagated in Vero-E6 cells in MEM supplemented with 2% (vol/vol) FBS, 4.5 g/L glucose, 1 X Glutamax and 1% penicillin-streptomycin at 37 °C. Viral stock titers were determined by TCID50 analysis in Vero-E6 cells. Experiments involving live SARS-CoV-2 were conducted in a biosafety level 3 facility at the University of Rochester.
 
 For infection, MRC5-ACE2 cells were grown in six-well plates to 90% confluence in growth medium (MRC5-ACE2: DMEM supplemented with 10% FBS and 1% Pen-Strep). Prior to infection, cells were washed with 1 mL of DMEM supplemented with 2% FBS and 1% Pen-Strep. For infection, 750 μL of viral master mix (MOI=5) was added to each well for 1.5 hr. After the adsorption period, the medium was removed and replaced with fresh DMEM supplemented with 2% FBS and 1% Pen-Strep. To harvest protein, the cell monolayer was washed with 1 mL cold PBS and cells were scraped into 250 μL disruption buffer (250 mM Tris-HCl Ph 7.4, 10% glycerol, 2% β-mercaptoethanol, 5% SDS). DNA was sheared using a sonication probe and samples were stored at –20 °C. To harvest RNA, the medium was removed, and the monolayer was washed with PBS. Cells were collected in 400 μL Trizol and stored at –80 °C.
 
-## Liquid chromatography-mass spectrometry of nucleosides
+### Liquid chromatography-mass spectrometry of nucleosides
 
 Total RNA was isolated using Trizol RNA extraction. Small RNAs were subsequently purified from total RNA using the Zymo RNA Clean & Concentrator-5 kit. Small RNAs (1 μg) was digested and analyzed by LC-MS as previously described (Dewe et al., 2017; Zhang et al., 2020; Cai et al., 2015). Briefly, ribonucleosides were separated using a Hypersil GOLD C18 Selectivity Column (Thermo Scientific) followed by nucleoside analysis using a Q Exactive Plus Hybrid Quadrupole-Orbitrap. The modification difference ratio was calculated using the m/z intensity values of each modified nucleoside following normalization to the sum of intensity values for the canonical ribonucleosides; A, U, G, and C. Statistical analysis of the mass spectrometry results was performed using GraphPad Prism software with error bars representing the standard deviation. Statistical tests and the number of times each experiment was repeated are noted in the figure legend. Raw intensity values for each measured nucleoside are provided in the source data file.
 
-## In silico analysis of TRMT1 structure
+### In silico analysis of TRMT1 structure
 
 The Nsp5 cleavage site sequence logo was generated using: https://weblogo.berkeley.edu/logo.cgi.
 
 The predicted tertiary structure of human TRMT1 (Uniprot Q9NXH9) was determined using AlphaFold. Structural visualization was performed using UCSF Chimera software developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco (Pettersen et al., 2004). The PDB file for the predicted TRMT1 structures has been provided in the source file.
 
-## Plasmid constructs
+### Plasmid constructs
 
 The pcDNA3.1-TRMT1-FLAG and pcDNA3.1-TRMT1-GFP expression plasmids have been described previously (Dewe et al., 2017). The pcDNA3.1-TRMT1-FLAG-Q530N expression construct was generated by DpnI site-directed mutagenesis. The pcDNA3.1 expression plasmids encoding the N- and C-terminal TRMT1 fragments were generated by PCR cloning. Lentiviral constructs expressing TRMT1-WT or TRMT1-Q530N were generated by T5 Exonuclease DNA Assembly (TEDA) of PCR fragments into pLenti-CMV-GFP-Blast (Addgene 17445) (Xia et al., 2019). All plasmid constructs were verified by Sanger sequencing and whole plasmid sequencing (Plasmidsaurus).
 
-## Generation of human cell lines by lentiviral integration
+### Generation of human cell lines by lentiviral integration
 
 For lentivirus production, 1×106 293 T cells were seeded onto 60 mm tissue culture dishes. After 24 hr, 1.5 μg of pLenti CMV Blast plasmids containing empty vector or TRMT1 along with 1.5 μg of psPAX2 packaging plasmid and 0.7 μg of pMD2.G envelope plasmid was transfected into the 293T cells using calcium phosphate transfection. Media was changed 16 hr post-transfection. At 48 hr post-transfection, the media containing virus was collected, filter sterilized through a 0.45 μm filter, flash frozen, and stored at –80 °C.
 
 For lentiviral infection of 293T cell lines, 1×106 cells were seeded onto 60 mm tissue culture dishes. After 24 hr, 1 mL of either virus or media for mock infection along with 2 mL of media supplemented with 10 μg/mL of polybrene was added to each well. The cells were washed with PBS and fed fresh media 24 hr post-infection. Polyclonal cell lines with stable integration of the lentiviral constructs were selected with 15 μg/mL blasticidin.
 
-## Transient transfection, protein purification, and immunoblotting
+### Transient transfection, protein purification, and immunoblotting
 
 Transient transfection and cellular extract production were performed as previously described (Fu et al., 2010). Briefly, 2.5×106 293 T HEK cells were transiently transfected by calcium phosphate DNA precipitation with 10–20 μg of plasmid DNA. Cells were harvested by trypsinization and washed once with PBS. The cell pellet was resuspended in 500 μL hypotonic lysis buffer (20 mM HEPES, pH 7.9; 2 mM MgCl2; 0.2 mM EGTA, 10% glycerol, 0.1 mM PMSF, 1 mM DTT), incubated on ice for 5 min and subjected to three freeze-thaw cycles in liquid nitrogen and 37 °C. NaCl was added to extracts to a final concentration of 400 mM. After centrifugation at 14,000 x g for 15 min at 4 °C, an equal amount of hypotonic lysis buffer with 0.2% NP-40 was added to 500 μL of soluble cellular extract.
 
@@ -160,15 +488,15 @@ Immunoblotting was performed as previously described (Ramos et al., 2019). Brief
 
 Immunoblots were quantified and analyzed using Image Studio Version 5.2 (Li-Cor Biosciences). Rectangles of the same dimension for a given band were used to measure raw signal intensity in either the 700 or 800 nm channel. The intensity of a band in a lane was normalized to actin as a load control. For quantification of the N-terminal TRMT1 cleavage band, we measured the total signal of both the cleavage band and the non-specific band in all lanes. After normalization to actin, the total signal from the cleavage band and the non-specific band in the control lane from cells expressing GFP was subtracted from the lanes with cells expressing Nsp5 to calculate the signal arising from the cleavage band. Statistical analyses were performed using GraphPad Prism software. Where applicable, error bars represent the standard deviation. Statistical tests and the number of times each experiment was repeated are noted in each figure legend. Original files of the full raw unedited blots are available in the accompanying source data file.
 
-## RNA analysis by primer extension
+### RNA analysis by primer extension
 
 Total RNA was extracted using TRIzol LS reagent (Invitrogen). RNAs were diluted into formamide load buffer, heated to 95 °C for 3 min, and fractionated on a 10% polyacrylamide, Tris-Borate-EDTA (TBE) gel containing 7 M urea. Sybr Gold nucleic acid staining (Invitrogen) was conducted to identify the RNA pattern. For primer extension analysis, 1.5 μg of total RNA was pre-annealed with 5’-32P-labeled oligonucleotide and 5 x hybridization buffer (250 mM Tris, pH 8.5, and 300 mM NaCl) in a total volume of 7 μl. The mixture was heated at 95 °C for 3 min followed by slow cooling to 42 °C. An equal amount of extension mix consisting of avian myeloblastosis virus reverse transcriptase (Promega), 5 x AMV buffer, and 40 μM dNTPs was added. The mixture was then incubated at 42 °C for 1 hr and loaded on 15% 7 M urea denaturing polyacrylamide gel. Gels were exposed on a phosphor screen (GE Healthcare) and scanned on a Bio-Rad personal molecular followed by analysis using Fiji NIH ImageJ software (Schindelin et al., 2012). Primer extension oligonucleotide sequences were previously described (Dewe et al., 2017). Full unedited scan images are available in the accompanying source data file.
 
-## Subcellular localization
+### Subcellular localization
 
 For localization of TRMT1 tagged with GFP, 293T human cells were seeded onto coverslips in a six-well plate followed by transfection with the GFP plasmids noted above using Lipofectamine 3000 reagent (Thermo Fisher). For mitochondrial localization, the cells were infected with baculovirus expressing RFP targeted to mitochondria (CellLight Mitochondria-RFP, BacMam 2.0, Life Technologies). To visualize the nucleus, Hoechst dye was added to the media for 30 min before the cells were washed with PBS, fixed with 4% formaldehyde, and mounted in Aqua Poly/Mount (Polysciences Inc) followed by imaging on a Nikon A1R HD microscope.
 
-## Assays for viral replication
+### Assays for viral replication
 
 The SARS-CoV-2 was a French Ile de France isolate (https://www.european-virus-archive.com/virus/sars-cov-2-isolate-betacovfranceidf03722020). Viral stocks were generated by amplification on VeroE6 cells. The supernatant was collected, filtered through a 0.45 µm membrane, and tittered using a TCID50 assay. For infections, the cells were previously transduced with a Lentiviral vector expressing ACE2 using the lentiviral construct RRL.sin.cPPT.SFFV/Ace2.WPRE (MT136) was kindly provided by Caroline Goujon (Addgene plasmid # 145842) (Rebendenne et al., 2021). Seventy-two hours after transduction, accurate ACE2 expression was controlled on western blot probed with anti-ACE2 antibody (Human ACE2 Antibody, AF933, R&D systems). ACE2-positive cells (70–80% confluence) were then infected with SARS-CoV-2 diluted to achieve the desired MOI. After 24 hr in culture, the cells were lysed with the Luna cell ready lysis module (New England Biolabs).
 
@@ -176,10 +504,10 @@ To measure RNA levels, the amplification reaction was run on a LightcyclerR 480 
 
 Each qPCR was performed in triplicate, and the means and standard deviations were calculated. Relative quantification of data obtained from RT-qPCR was used to determine changes in SARS-CoV-2 Envelope (E) gene expression across multiple samples after normalization to the internal reference GAPDH gene. The raw qPCR values are provided in the source data file.
 
-## SARS-CoV-2 infectivity measurements
+### SARS-CoV-2 infectivity measurements
 
 Viral supernatants were collected and filtered on 0.45 µm filters. Virus was then purified by centrifugation through a 20% sucrose cushion at 25,000 rpm for 2.5 hr at 4 °C in a Sw32Ti rotor (Beckman Coulter). Virus pellets were resuspended in PBS and virus genomic RNA copy number was quantified by RTqPCR as described above. Absolute quantification of data obtained from RT-qPCR was used to determine changes in SARS-CoV-2 Envelope (E) gene expression across multiple samples by using external standards of SARS-CoV-2 (dilution 107–10 copies) amplified in parallel within the same instrument run. The raw qPCR values are provided in the source data file. The TCID50 endpoint assay was performed on 96-well plates on VeroE6 cells using the Spearman Karber algorithm (Cordes et al., 1996).
 
-## Material Availability
+### Material Availability
 
 All materials, including plasmids and cell lines, are readily available upon request.

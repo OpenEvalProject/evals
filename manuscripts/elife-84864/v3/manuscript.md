@@ -26,21 +26,21 @@
 
 ### Affiliations
 
-1. https://ror.org/024z2rq82 Institute for Molecular Physiology, Heinrich Heine University Düsseldorf Düsseldorf Germany
-2. https://ror.org/0593p4448 International Rice Research Institute Los Baños Philippines
-3. https://ror.org/051escj72 Plant Health Institute of Montpellier (PHIM), Université Montpellier, IRD, CIRAD, INRAE, Institut Agro Montpellier France
-4. https://ror.org/02ymw8z06 Division of Plant Science and Technology, Bond Life Sciences Center, University of Missouri Columbia United States
+1. Institute for Molecular Physiology, Heinrich Heine University Düsseldorf Düsseldorf Germany ([ROR:024z2rq82](https://ror.org/024z2rq82))
+2. International Rice Research Institute Los Baños Philippines ([ROR:0593p4448](https://ror.org/0593p4448))
+3. Plant Health Institute of Montpellier (PHIM), Université Montpellier, IRD, CIRAD, INRAE, Institut Agro Montpellier France ([ROR:051escj72](https://ror.org/051escj72))
+4. Division of Plant Science and Technology, Bond Life Sciences Center, University of Missouri Columbia United States ([ROR:02ymw8z06](https://ror.org/02ymw8z06))
 5. Tanzania Agricultural Research Institute (TARI)-Uyole Centre Mbeya United Republic of Tanzania
 6. International Rice Research Institute, Eastern and Southern Africa Region Nairobi Kenya
 7. International Rice Research Institute (IRRI), Africa Regional Office Nairobi Kenya
-8. https://ror.org/000cyem11 Donald Danforth Plant Science Center St. Louis United States
-9. https://ror.org/04chrp450 Institute for Transformative Biomolecules, ITbM, Nagoya University Nagoya Japan
+8. Donald Danforth Plant Science Center St. Louis United States ([ROR:000cyem11](https://ror.org/000cyem11))
+9. Institute for Transformative Biomolecules, ITbM, Nagoya University Nagoya Japan ([ROR:04chrp450](https://ror.org/04chrp450))
 
 † Corresponding author
 
 ## Abstract
 
-Bacterial leaf blight (BB) of rice, caused by Xanthomonas oryzae pv. oryzae ( Xoo ), threatens global food security and the livelihood of small-scale rice producers. Analyses of Xoo collections from Asia, Africa and the Americas demonstrated complete continental segregation, despite robust global rice trade. Here, we report unprecedented BB outbreaks in Tanzania. The causative strains, unlike endemic African Xoo , carry Asian-type TAL effectors targeting the sucrose transporter SWEET11a and iTALes suppressing Xa1 . Phylogenomics clustered these strains with Xoo from Southern-China. African rice varieties do not carry effective resistance. To protect African rice production against this emerging threat, we developed a hybrid CRISPR-Cas9/Cpf1 system to edit all known TALe-binding elements in three SWEET promoters of the East African elite variety Komboka. The edited lines show broad-spectrum resistance against Asian and African strains of Xoo , including strains recently discovered in Tanzania. The strategy could help to protect global rice crops from BB pandemics.
+Bacterial leaf blight (BB) of rice, caused by Xanthomonas oryzae pv. oryzae (Xoo), threatens global food security and the livelihood of small-scale rice producers. Analyses of Xoo collections from Asia, Africa and the Americas demonstrated complete continental segregation, despite robust global rice trade. Here, we report unprecedented BB outbreaks in Tanzania. The causative strains, unlike endemic African Xoo, carry Asian-type TAL effectors targeting the sucrose transporter SWEET11a and iTALes suppressing Xa1. Phylogenomics clustered these strains with Xoo from Southern-China. African rice varieties do not carry effective resistance. To protect African rice production against this emerging threat, we developed a hybrid CRISPR-Cas9/Cpf1 system to edit all known TALe-binding elements in three SWEET promoters of the East African elite variety Komboka. The edited lines show broad-spectrum resistance against Asian and African strains of Xoo, including strains recently discovered in Tanzania. The strategy could help to protect global rice crops from BB pandemics.
 
 ## Introduction
 
@@ -56,31 +56,478 @@ Recent disease surveys in Tanzania, described here, identified an outbreak of BB
 
 ## Results
 
-## Identification of an unprecedented disease outbreak in Tanzania
+### Identification of an unprecedented disease outbreak in Tanzania
 
 Local breeders reported that although BB was found in Tanzania, it was not considered a major disease due to low incidence and low severity up until 2019 (RM, pers. comm.). Here, we report on an unprecedented BB outbreak identified in the irrigated schemes of Dakawa and Lukenge in 2019 and 2021, respectively (Figure 1; Figure 1—figure supplement 1, Figure 1—figure supplement 2). The two sites are ~60 km apart in the Morogoro region, an area that for decades has been a center of partnership initiatives that aim at increasing rice production (Makundi, 2017). We performed disease surveys in this area in 2019 and detected a severe outbreak in Dakawa on TXD 306 (SARO-5), a rice variety popular in irrigated ecologies in Tanzania (Figure 1—figure supplement 1). Later on, in 2021 in Lukenge, several fields also showed severe signs of infections (Figure 1; Figure 1—figure supplement 2). Leaves collected in 2019 and 2021 with typical BB symptoms were processed, resulting in the isolation of seven strains from Dakawa and 106 from Lukenge, all validated as Xoo using diagnostic primers (Lang et al., 2010; Table 1, Supplementary file 1a). In 2022, we surveyed BB on a larger scale and collected over 600 leaf samples from plants with typical BB symptoms from 37 fields in six different regions in Tanzania. The results of the survey show that BB has spread across Tanzania (Figure 1; Supplementary file 1b). Multiple Locus Variable Number of Tandem Repeat Analyses and/or whole genome SNP analysis is in progress and is expected to provide new insights into the genetic structure of the Xoo population in Tanzania. A careful analysis of yield losses has not yet been possible. Out of six fields surveyed in Dakawa in 2019, one was very severely infected (Figure 1—figure supplement 1). The yield loss in this field was estimated to be >60%. One of the fields surveyed in Lukenge in 2021 had an estimated yield loss of 10–15%. In 2022, several Dakawa fields had estimated yield losses of 5–10%, others <5%. Yield loss at other sites such as Igunga was estimated to 10%, in Mombo <5%. Note that estimates of severity and yield losses are snapshots, and careful and systematic multiyear analyses will be required for a reliable evaluation of severity, spread and yield losses.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig1-v3.jpg)
+
+**Figure 1.:** (A) No reports of serious BB infections before 2019. (B) Detection in Dakawa; in 2019, (C) in Lukenge in 2021, (D–I) survey results from 2022 at different degrees of severity. Note that sampling and scoring occurred initially in the Morogoro region in Dakawa in 2019 and in Lukenge 2021, (no info on 2020 due to Covid-19); scoring and sampling was expanded to additional fields across Tanzania in 2022. Due to sampling bias early in the outbreak, data should be interpreted with caution. One may project that BB caused by the introduced strains will manifest in Tanzania and could spread to neighboring countries. Leaf area affected: yellow 4–6%, orange 7–12%, red 13–25% and purple 26–50%.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig1-figsupp1-v3.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig1-figsupp2-v3.jpg)
+
+**Table 1.**
+ Efficiency of resistance genes in IRBB rice lines towards a diversity panel of 26 African Xoo strains.Quantitative scores of lesion length produced upon leaf-clip inoculation of a diversity panel consisting of 26 Xanthomonas oryzae pv. oryzae strains from West and East Africa on IRBB near-isogenic-lines (NILs) carrying different Xanthomonas resistance genes (Xa) and on the variety Azucena used as susceptible control (IRBB1: Xa1; IRBB3: Xa3; IRBB4: Xa4; IRBB5: xa5; IRBB7: Xa7; IRBB23: Xa23; IR24: recipient parent). Resistance or susceptibility of rice plants to Xoo was determined based on lesion length measured 14 days after inoculation: Resistant (R) <5 cm; moderately resistant (MR)=5–10 cm; moderately susceptible (MS)=10–15 cm; and susceptible (S) >15 cm.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain name</th>
+      <th>CIX code</th>
+      <th>Country</th>
+      <th>Azucena</th>
+      <th>IR24</th>
+      <th>IRBB1</th>
+      <th>IRBB3</th>
+      <th>IRBB4</th>
+      <th>IRBB5</th>
+      <th>IRBB7</th>
+      <th>IRBB23</th>
+      <th>Komboka</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NatiPark</td>
+      <td>607</td>
+      <td>Benin</td>
+      <td>S</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>Karfiguela13</td>
+      <td>705</td>
+      <td>Burkina Faso</td>
+      <td>S</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>N2-4</td>
+      <td>4482</td>
+      <td>Niger</td>
+      <td>S</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>Tanguieta3</td>
+      <td>609</td>
+      <td>Benin</td>
+      <td>S</td>
+      <td>MR</td>
+      <td>R</td>
+      <td>MR</td>
+      <td>R</td>
+      <td>R</td>
+      <td>MR</td>
+      <td>R</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>Toula20</td>
+      <td>629</td>
+      <td>Niger</td>
+      <td>S</td>
+      <td>MR</td>
+      <td>R</td>
+      <td>MR</td>
+      <td>R</td>
+      <td>R</td>
+      <td>MR</td>
+      <td>MR</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>BAI250</td>
+      <td>4127</td>
+      <td>Burkina Faso</td>
+      <td>S</td>
+      <td>MR</td>
+      <td>R</td>
+      <td>MR</td>
+      <td>MR</td>
+      <td>R</td>
+      <td>R</td>
+      <td>MR</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>S62-2-22</td>
+      <td>2374</td>
+      <td>Senegal</td>
+      <td>S</td>
+      <td>MR</td>
+      <td>R</td>
+      <td>MS</td>
+      <td>R</td>
+      <td>R</td>
+      <td>MR</td>
+      <td>R</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>CII-1</td>
+      <td>4083</td>
+      <td>Ivory Coast</td>
+      <td>S</td>
+      <td>MS</td>
+      <td>MR</td>
+      <td>MS</td>
+      <td>R</td>
+      <td>R</td>
+      <td>MR</td>
+      <td>MR</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>CII-2</td>
+      <td>1042</td>
+      <td>Ivory Coast</td>
+      <td>S</td>
+      <td>MS</td>
+      <td>MR</td>
+      <td>MS</td>
+      <td>MR</td>
+      <td>R</td>
+      <td>MR</td>
+      <td>MR</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>NAI9</td>
+      <td>2787</td>
+      <td>Niger</td>
+      <td>S</td>
+      <td>MS</td>
+      <td>MR</td>
+      <td>MS</td>
+      <td>MR</td>
+      <td>MR</td>
+      <td>MS</td>
+      <td>S</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>AXO1947</td>
+      <td>1917</td>
+      <td>Cameroon</td>
+      <td>S</td>
+      <td>S</td>
+      <td>R</td>
+      <td>S</td>
+      <td>R</td>
+      <td>R</td>
+      <td>MS</td>
+      <td>MS</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>MAI145</td>
+      <td>894</td>
+      <td>Mali</td>
+      <td>S</td>
+      <td>S</td>
+      <td>R</td>
+      <td>S</td>
+      <td>MR</td>
+      <td>MS</td>
+      <td>S</td>
+      <td>MR</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>BAI3</td>
+      <td>4092</td>
+      <td>Burkina Faso</td>
+      <td>S</td>
+      <td>MS</td>
+      <td>MR</td>
+      <td>S</td>
+      <td>MR</td>
+      <td>MR</td>
+      <td>MS</td>
+      <td>S</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>CFBP1948</td>
+      <td>2801</td>
+      <td>Cameroon</td>
+      <td>S</td>
+      <td>MS</td>
+      <td>MR</td>
+      <td>S</td>
+      <td>MR</td>
+      <td>MR</td>
+      <td>S</td>
+      <td>S</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>NAI5</td>
+      <td>4099</td>
+      <td>Niger</td>
+      <td>S</td>
+      <td>S</td>
+      <td>MR</td>
+      <td>S</td>
+      <td>MR</td>
+      <td>MR</td>
+      <td>S</td>
+      <td>S</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>MAI73</td>
+      <td>4079</td>
+      <td>Mali</td>
+      <td>S</td>
+      <td>S</td>
+      <td>R</td>
+      <td>S</td>
+      <td>MS</td>
+      <td>MR</td>
+      <td>S</td>
+      <td>MR</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>S82-4-3</td>
+      <td>2976</td>
+      <td>Senegal</td>
+      <td>S</td>
+      <td>MS</td>
+      <td>MR</td>
+      <td>S</td>
+      <td>MS</td>
+      <td>MR</td>
+      <td>MS</td>
+      <td>S</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>MAI132</td>
+      <td>4517</td>
+      <td>Mali</td>
+      <td>S</td>
+      <td>S</td>
+      <td>R</td>
+      <td>S</td>
+      <td>S</td>
+      <td>MS</td>
+      <td>S</td>
+      <td>MR</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>iTzDak19-1</td>
+      <td>4457</td>
+      <td>Tanzania</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>R</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <td>iTzDak19-2</td>
+      <td>4458</td>
+      <td>Tanzania</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>R</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <td>iTzDak19-3</td>
+      <td>4462</td>
+      <td>Tanzania</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>R</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <td>iTzLuk21-1</td>
+      <td>4506</td>
+      <td>Tanzania</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+    </tr>
+    <tr>
+      <td>iTzLuk21-2</td>
+      <td>4509</td>
+      <td>Tanzania</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+    </tr>
+    <tr>
+      <td>iTzLuk21-3</td>
+      <td>4505</td>
+      <td>Tanzania</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <td>iTzLuk21-4</td>
+      <td>4507</td>
+      <td>Tanzania</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <td>iTzLuk21-5</td>
+      <td>4508</td>
+      <td>Tanzania</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+    </tr>
+  </tbody>
+</table>
+
+_n.d. not determined._
+
 To systematically analyze the newly isolated strains from Tanzania, and to compare them to the broader African Xoo landscape, we used 8 strains isolated from Dakawa in 2019 and Lukenge in 2021, as well as 18 representative strains from a collection of 833 strains sampled from rice fields in nine other African countries between 2003 and 2021. These endemic African strains had previously been identified as Xoo based on molecular diagnostic and pathogenicity assays (BS, unpubl. results; Supplementary file 1a). To evaluate the effectiveness of the resistance genes Xa1, Xa3, Xa4, xa5, Xa7, and Xa23, known to be efficient against African Xoo (Gonzalez et al., 2007; Tekete et al., 2020), six Near Isogenic Lines (NILs) of rice each harboring one of these single BB resistance gene, were inoculated with 18 endemic African strains and three strains isolated from Dakawa in 2019 (iTzDak19-1, iTzDak19-2 and iTzDak19-3; strain naming: Dak for Dakawa, Tz for Tanzania, and the novel strains collected in 2019 and 2021 obtained an 'i’ for introduced) (Table 1; Figure 2). NILs harboring Xa1, Xa23, xa5 or Xa4 were resistant to most endemic African strains, but surprisingly, iTzDak19-1, iTzDak19-2, and iTzDak19-3 were virulent on all NILs tested, except IRBB23. These unusual iTz strains were therefore characterized in more detail (see below). The strains from Lukenge were isolated much later and could so far not be included in the race-typing analysis, but were also characterized in more detail as decribed below.
 
-## Resistance of Komboka to endemic African Xoo but not to new Tanzanian strains
+![Figure 2.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig2-v3.jpg)
+
+**Figure 2.:** Leaf-clip inoculation of wild-type Komboka rice plants with a panel of 21 Xoo strains originating from 8 African countries along with Asian reference strain PXO86 from the Philippines. Lesion length (in cm) was measured 14 days after Xoo inoculation. Data from three independent experiments are represented. Letters in the boxplot represent significant differences. As a representative of the isolates from Lukenge iTzLuk21-3 was tested for virulence on Komboka and shown to be fully susceptible (Figure 2—figure supplement 1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Leaf-clip inoculation of wild-type Komboka rice plants with a panel of two Xoo strains from the Philippines (PXO99A and PXO61), one from Burkina Faso (BAI3) , one collected in 2019 in Dakawa, and one from Lukenge in 2021. Lesion length (in cm) was measured 14 days after Xoo inoculation. Data from three independent experiments are represented. Letters in the boxplot represent significant differences. Note that the wild type data were extracted from infection experiments shown in Figure 7 to demonstrate that the iTz strains isolated in the two locations in Morogoro in 2019 and 2021 behave similarly and are equally virulent on Komboka as PXO99A.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Leaf-clip inoculation of wildtype Azucena with a panel of 21 Xoo strains originating from 8 African countries along with the Asian reference strain PXO86. Lesion lengths were measured 14 days after inoculation. Data from three independent experiments are represented with n=17–37 leaves per strain.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) QTL profiling of Komboka and other selected varieties from IRRI QTL database (https://rbi.irri.org/resources-and-tools/qtl-profiles). +: presence, -: absence, n.d., not determined. (B-D). Presence of Xa1 and Xa4 R genes in Komboka using their associated markers and sequencing. (B). Genotyping of O. sativa cultivars for an Xa4-associated marker gene (M: GeneRuler 1 kb Plus DNA Ladder, ThermoFisher Scientific). (C) Neighbor-joining phylogenetic analysis of Xa4 from O. sativa cultivars. Xa4 from Komboka shares 99.98% identity with Xa4 from IR64, Teqing, and IRBB4 (Hu et al., 2017). (D) Genotyping of O. sativa cultivars for presence of functional Xa1-like genes with gene-specific markers. (E) Neighbor-joining phylogenetic analysis of Xa1 from O. sativa cultivars. Komboka Xa1 is 99.88% homologous to the publishef Xa45(t) from Oryza nivara (Ji et al., 2020).
+
+### Resistance of Komboka to endemic African Xoo but not to new Tanzanian strains
 
 Komboka, an emerging elite variety released in several East African countries (Tanzania, Kenya, Uganda and Burundi) has been described as moderately resistant to Xoo, yet the nature of its resistance has not been elucidated. Using our African Xoo diversity panel, we found that most African strains were avirulent on Komboka, except for representatives of newly isolated strains from Dakawa (2019) and Lukenge (2021); (Figure 2, Figure 2—figure supplement 1; Table 1). By comparison, all strains were highly virulent on the susceptible variety Azucena (Figure 2—figure supplement 2; Table 1). Since Xa1, Xa4, xa5, and Xa23 confer resistance against Xoo (Table 1), we investigated R gene presence in the Komboka genome. Mining of the IRRI QTL database (https://rbi.irri.org/resources-and-tools/qtl-profiles) revealed that Komboka contains genetic markers linked to Xa4 but not xa5 or Xa23, while there was no information on Xa1 in the database (Figure 2—figure supplement 3A). We confirmed the presence of Xa4 in Komboka by tracing an Xa4-associated marker and by sequencing (Figure 2—figure supplement 3B,C; Supplementary file 1c). Consistent with the broad-spectrum resistance of Xa1 against endemic African Xoo strains, we found that Komboka carries a dominant Xa1 allele that is highly similar to Xa45(t) (Ji et al., 2020; Figure 2—figure supplement 3D, E). The combination of Xa4 and Xa45(t) in Komboka liekly can explain the observed resistance to most African Xoo strains. However, the R genes present in Komboka do not protect against the iTz strains recently isolated from the outbreak in Tanzania.
 
-## Tanzanian Xoo strains cluster with Asian Xoo via whole genome SNP-based phylogeny
+### Tanzanian Xoo strains cluster with Asian Xoo via whole genome SNP-based phylogeny
 
 To identify the mechanisms underlying the virulence of the Tanzanian strains, three strains collected from Dakawa in 2019, and five from Lukenge in 2021, were subjected to whole-genome sequencing and SNP-based phylogenetic analyses (Supplementary file 1a, Supplementary file 2). Notably, all eight strains clustered with Asian rather than African Xoo isolates (Figure 3A). By contrast, older Tanzanian strains TzDak11-1, TzDak11-2 and TzDak18-1, which had been collected in Dakawa before 2019, grouped with the endemic African lineage, consistent with previous reports (Oliva et al., 2019). Based on the analysis of the core genome, the eight recently isolated strains carried only 1–4 core genome SNPs (Figure 3—figure supplement 1), intimating that they derive from a single introduction event. The phylogenetic analysis indicates that the new strains (named iTz; ‘i’ for introduced; Tz for Tanzania); are most closely related to strains from Yunnan province, China. Additional analyses will be necessary to identify the exact source of inoculum given the relatively small evolutionary distance between the strains from Yunnan and the iTz strains (Figure 3B). The new strains all carry iTALe genes similar to tal3a of PXO99A (Figure 3C). iTALe genes encode truncated TALes that suppress Xa1 resistance, but had so far only been reported in Asian Xoo isolates. In addition, the strains contain a TALe (named PthXo1B) highly similar to the Asian PthXo1, with the addition of two RVDs at the N-terminus of the repeat array (Figure 3D; Supplementary file 1d). EBE prediction indicated that PthXo1B can bind to the SWEET11a promoter at a site overlapping with the EBE that is targeted by PthXo1 (Figure 3D). Consistent with a SWEET11a-based susceptibility, ossweet11a knock-out mutants from the diagnostic SWEETR kit were resistant to representative strains from the outbreak in Dakawa and Lukenge, iTzDak19-1 and iTzLuk21-3, whereas ossweet13 or ossweet14 knock-out mutants remained susceptible (Figure 4A). Moreover, SWEET11a mRNA levels were elevated in Kitaake leaves after inoculation with iTzDak19-1 and iTzLuk21-3 (Figure 4B). Together, our data show that the iTz strains collected in 2019–2021 in the Morogoro region are >99.99% identical to each other, and phylogenetically related to Asian Xoo strains. The strains contain both iTALe and pthXo1 homologs unique to Asian Xoo isolates, providing insights into the virulence mechanism and providing a basis for the development of approaches that can protect African rice varieties, and in particular Komboka, against the novel iTz strains found in the outbreak (Oliva et al., 2019).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig3-v3.jpg)
+
+**Figure 3.:** (A) Core genome Xanthomonas oryzae phylogenetic tree. Only the names of Tanzanian isolates are indicated. Abbreviations: Xoo, X. oryzae pv. oryzae; Xoc, X. oryzae pv. oryzicola; Xol, X. oryzae pv. leersiae. (B) Close-up view of the branches of the tree in A, including the newly isolated Tanzanian strains and neighboring clades. Black-filled nodes have a bootstrap support value equal to or above 80%. The scale bar reflects branch length in mean number of nucleotide substitutions per site. Colored squares reflect the continent of origin (as in A). Text color refers to the subregion of origin. (C) Multiple alignment of the N- terminal domain sequences of PXO99A iTALes and the putative iTALes from the eight newly isolated Tanzanian iTz strains. The -terminal domain of PthXo1 from strainPXO99A was used as canonical TALe. TALe references; lowercase letters represent amino acids. Gaps are colored gray. (D) Talvez EBE predictions on the SWEET11a promoter. Repeat Variable Di-residue (RVD) sequences (rounded boxes) are aligned along their predicted matching nucleotide along the promoter sequence (the lowest row). Black-filled RVDs match their target nucleotide in the Talvez RVD-nucleotide association matrix with the best possible score for this RVD. Those in violet match with an intermediate score. Values in the rounded boxes near the TALe names correspond to Talvez prediction scores. Sequences are provided in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Counts were obtained by applying the dist.dna function from the ape package (with the value 'N' to the model parameter) to pairs of genomes in the multiple SNP alignment file generated by parsnp and that included 99,626 SNPs. Rows and columns are in the same order as in the RAxML tree of Figure 3B.
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig4-v3.jpg)
 
-**Figure 4.:** Xoo strains depends on the induction of SWEET11a.(A) Lesion lengths were measured 14 days after leaf-clipping inoculation of Kitaake individual sweet knock out lines (ossweet11a, ossweet13 and ossweet14) in the cultivar Kitaake (Eom et al., 2019) with PXO99A (PthXo1), PXO61 (PthXo2B/PthXo3), MAI1 (TalC/TalF), and Tanzanian strains (iTzDak19-1 and iTzLuk21-3) from the recent outbreaks (highlighted by a red bar). Results from two independent experiments are represented. (B) Relative mRNA levels (2-ΔCt) of SWEET11a, SWEET13 and SWEET14 in wild-type Kitaake upon infection by PXO99A (PthXo1), BAI3 (TalC), and Tanzanian pthXo1B dependent Xoo strains. Samples were collected 48 hr post infiltration. Data from three independent experiments were pooled and are represented together. Ct values were normalized to the rice EF1α elongation factor (∆Ct).
+**Figure 4.:** (A) Lesion lengths were measured 14 days after leaf-clipping inoculation of Kitaake individual sweet knock out lines (ossweet11a, ossweet13 and ossweet14) in the cultivar Kitaake (Eom et al., 2019) with PXO99A (PthXo1), PXO61 (PthXo2B/PthXo3), MAI1 (TalC/TalF), and Tanzanian strains (iTzDak19-1 and iTzLuk21-3) from the recent outbreaks (highlighted by a red bar). Results from two independent experiments are represented. (B) Relative mRNA levels (2-ΔCt) of SWEET11a, SWEET13 and SWEET14 in wild-type Kitaake upon infection by PXO99A (PthXo1), BAI3 (TalC), and Tanzanian pthXo1B dependent Xoo strains. Samples were collected 48 hr post infiltration. Data from three independent experiments were pooled and are represented together. Ct values were normalized to the rice EF1α elongation factor (∆Ct).
 
-## Editing SWEET promoter sequences in Komboka to obtain resistance to Asian and African strains
+### Editing SWEET promoter sequences in Komboka to obtain resistance to Asian and African strains
 
 As a prerequisite for editing SWEET promoters in Komboka, the promoter regions of SWEET11a, 13 and 14 were sequenced. The promoters contain EBEs for PthXo1 and PthXo1A, PthXo2A, PthXo3, AvrXa7, TalC, and TalF, respectively (Figure 5; Figure 5—figure supplement 1, Supplementary file 1e). To protect Komboka against endemic strains from Africa as well as introduced Asian strains, all six known EBEs in the promoters of SWEET11a, 13 and 14 were edited using a hybrid Cas9/Cpf1 editing system. Due to blunt cleavage, Cas9 preferentially produces SNPs, while Cpf1 (Cas12) produces staggered cuts, creating predominantly small deletions. We hypothesized that small deletions may produce more robust resistance because the sequences would differ more from the target EBE. Moreover, the probability of obtaining combinations of optimal mutations in all EBEs is expected to be higher compared to Cas9 approaches (Oliva et al., 2019). Due to the PAM requirement, it was not possible to design sgRNAs for Cpf1 at all EBEs; therefore, Cpf1 was combined with Cas9. Two CRISPR/Cpf1 gRNAs (cXo1 and cXo2) were designed to target PthXo1 /PthXo1 A and PthXo2A EBEs in SWEET11a and SWEET13, respectively (Figure 5—figure supplements 1 and 2; Supplementary file 1f). Since the EBEs for AvrXa7, PthXo3 and TalF in SWEET14 are overlapping, one CRISPR-Cpf1 gRNA (cTalF) was designed to target the overlapping region of all three EBEs. Because no TTTV PAM sequence was available near the EBE for TalC for designing a gRNA required by Cpf1, a Cas9 gRNA (gTalC) was designed to target the TalC EBE. From a first round of transformation, six representative T2 lines were tested for resistance using six representative Xoo strains: ME2 (PXO99A mutant deficient in PthXo1), PXO99A (PthXo1), PXO61 (PthXo2B, PthXo3), PXO86 (AvrXa7), MAI1 (TalC, TalF), and BAI3 (TalC) (Figure 5A, Figure 5—figure supplement 3, Supplementary file 1g-k). All six lines from this first round of transformation were resistant to the tested strains. One line (1.5_19) was fully resistant to all strains, while five lines were fully resistant to five strains, but only moderately resistant to PXO86. This difference in resistance is most likely explained by the presence of a rather small 4 bp deletion in the EBE for AvrXa7, while line 1.5_19 carried the same 4 bp deletion plus an additional base pair substitution (G/T) (Figure 5B). Since the clipping assays us very high bacterial titers, it is generally assumed that moderate resistance will be sufficient for effective resistance in field conditions (Adhikari et al., 1995; Fred et al., 2016). However, TALes were reported to have less specific nucleotide binding at the 3’-end, hence the G/T substitution in line 1.5_19 could potentially be overcome by adaptation of AvrXa7 (Richter et al., 2014). To obtain more robust resistance to all known Xoo strain, a second round of transformation was carried out. Two T2 lines (14_19 and 14_65), which contained deletions in all EBEs, including 11- and 5 bp deletions in the AvrXa7 EBE, respectively, were resistant to all strains tested, including PXO86 (Figure 6). Lines 1.5_19 and 1.2_40 were also resistant to iTzDak19-1 and iTzLuk21-3, consistent with the 12- and 9 bp deletions in the predicted PthXo1 EBE (Figure 7). As one may have predicted, induction of SWEET11a by iTzDak19-1 and iTzLuk21-3 was abolished in lines 1.2_40 and 1.5_19 (Figure 7—figure supplement 1). Taken together, Komboka lines with full resistance to representative Asian and African Xoo strains were obtained; notably with resistance to two representative strains from the emerging iTz population from Dakawa and Lukenge.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig5-v3.jpg)
+
+**Figure 5.:** (A) Reactions of WT and six edited Komboka lines to infection by Xoo strains (PXO99A, PXO61, PXO86, BAI3, and MAI1) harboring PthXo1, PthXo2 PthXo3, AvrXa7, TalC and/or TalF. ME2 is a PXO99A mutant strain with mutant deficient in PthXo1 and served as a negative control. The Komboka lines were carried edits in all six EBE sites validated by DNA sequencing.(B). Details of the EBEs targeted by PthXo3, AvrXa7 and TalF, and respective mutations in the six edited lines.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Kitaake and Komboka have the same EBE sequences for PthXo1, TalC, TalF, AvrXa7, PthXo3. The promoter sequence of SWEET13 in wild type Komboka corresponds to the EBE for PthXo2A, while for Kitaake the sequence corresponds to the EBE for PthXo2B.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Guide RNA design. Four guide RNAs were designed to target six known EBEs within OsSWEET11a, 13 and 14 promoters. EBE sequences are bolded, and the respective TALEs are indicated. Arrowheads indicate guide nuclease cleavages sites. Cas9 guide RNA is colored in pink (gTalC), and Cpf1 guide RNAs are colored in blue (cXo1, cXo2c, cXo2d, cTalF) (cX02d is for a different SWEET13 promoter variant, as present in Nipponbare SWEET13 (5´-ATAAAGCACCACAACTCCCTT-3´) that is targeted by the PthXo2B TALe variant). (B). Duplex CRISPR-Cas9 guide RNA system. Single Cas9 gRNA were cloned into the pENTR:gRNA. (C). Multiplex CRISPR-Cpf1 guide RNA system. Single Cpf1 cRNA were shuttled into the unit vectors and assembled into pENTR:cRNAs via GoldenGate assembling. (D). Three types of destination vectors: pDEST:Cas9 is the acceptance vector of pENTR:gRNAs, pDEST:Cpf1 is the acceptance vector of pENTR:cRNAs and hybrid pDEST:Cpf1&Cas9 is the acceptance vector for both Cas9 and Cpf1 guide RNAs. (E) pMUGW5 map that contains 4 Cpf1 cRNAs and 1 Cas9 gRNA targeting six EBEs on OsSWEET11a, 13, and 14. (F) Cloning scheme. The PCR fragment containing a rice-codon-optimized SpCas9-coding sequence driven by the maize Ubiquitin 1 (ZmUbi) promoter from pDEST:Cas9 was amplified and inserted into pDEST:Cpf1 to create a hybrid destination vector pDEST:Cpf1&Cas9. Four gBlock fragments were inserted into the vector pTLN using XbaI and XhoI to generate four intermediate pUNIT vectors: pTL-OsU6.1-CpfRNA1, pTL-OsU3-CpfRNA2, pTL-TaU3-CpfRNA3, pTL-ZmU3-CpfRNA4. All four pUNITs, after cloning of respective guide RNAs, were transferred into the donor vector pENTR4-ccdB to generate pENTR:cRNAs containing the Cpf1 cRNAs cXo1, cXo2c, cTalF, and cXo2d. Simultaneously, gTalC double-stranded oligonucleotides was inserted into the BtgZI-digested pENTR-gRNA. The cRNA expression cassette was PCR-amplified and inserted into pENTR:gRNAs at the XbaI site through Gibson cloning to generate the hybrid donor plasmid pENTR:gRNA-cRNAs. The gRNA and cRNAs cassettes were mobilized to the hybrid destination vector pDEST:Cpf1&Cas9 by Gateway to create a pCam1300-CRISPR plasmid named pCpf1&Cas9:gRNAs-cRNAs (pMUGW5).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** TATAA box is labeled in red. LbCpf1 and SpCas9 PAM sequences are labeled in blue and purple, respectively. EBE sequences are indicated (e.g. PthXo1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig6-v3.jpg)
 
 **Figure 6.:** (A) Mutations at the EBEs for PthXo1, PthXo2, TalC, TalF, PthXo3, and AvrXa7 in two Komboka edited lines, 14_19 and 14_65. (B). Reactions of wild-type Komboka and the two edited lines to the infections by PXO99A (PthXo1), PXO61 (PthXo2B, PthXo3), PXO86 (AvrXa7), BAI3 (TalC) and MAI1 (TalC, TalF). PXO99AME2 (ME2) is a PXO99A mutant carrying a transposon insertion in pthXo1 and served as a negative control.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig7-v3.jpg)
+
+**Figure 7.:** Lesion lengths measured 14 days after leaf-clip inoculation of wild-type Komboka and the two multi-edited lines 1.2_40 and 1.5_19 with Xoo strains PXO99A (PthXo1), BAI3 (TalC), PXO61 (PthXo2B, PthXo3), and the newly isolated Tanzanian strains iTzLuk21-3 and iTzDak19-1 (both carrying PthXo1 homologs and iTAles, red bar). Data from four independent experiments are represented.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/84864/elife-84864-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** Relative mRNA levels (2-ΔCt) of SWEET11a in Komboka wild type and the multi-EBE-edited lines 1.2_40 and 1.5_19 upon infection by PXO99A (PthXo1), BAI3 (TalC) and Tanzanian PthXo1B-dependent Xoo strains (red line). Samples were collected 48 hr post infiltration. Three independent experiments are represented. Three technical replicates were performed for each sample. All Ct values were normalized to the rice EF1α elongation factor mRNA level (∆Ct). The number of infected plants (or leaves) was n=9 (except line 1.5_19 infected with iTzLuk21-3: n=7).
 
 ## Discussion
 
@@ -102,60 +549,124 @@ Crosses and analyses for determining the reliable elimination of transgenes from
 
 ## Methods
 
-## Rice seeds and Xoo strains
+### Rice seeds and Xoo strains
 
 Seeds of the rice variety Komboka (IR05N221, L17WS.06#24) were provided by the International Rice Research Institute (IRRI, The Philippines) under a Standard Material Transfer Agreement under the Multilateral System (SMTA-MLS). Xoo strains were obtained from the Xoo strain collection of at the French National Research Institute for Sustainable Development (IRD, Montpellier, France).
 
-## Rice cultivation
+### Rice cultivation
 
 Rice seed germination and plant cultivation at HHU were done as described (Luu et al., 2020). Briefly, rice seeds were sterilized and germinated onto ½ Murashige Skoog media (Duchefa, M0222.0050), supplemented with 1% sucrose (Sigma-Aldrich, S7903-250G). The seedlings were grown for 10 days in magenta boxes before transferring to soil. The plants were grown in greenhouses (8 hr day 30 °C / 16 hr night 25 °C, relative humidity (RH) 50–70%, supplemental LED (Valoya, BX100 NS1) at 400 μmol/m–2s–1). The plants were fertilized weekly from the 2nd week and biweekly from the 6th week after germination (ICL, Peters Excel, CalMag grower, 2152.02.15EB). At IRD, plants were sown in soil complemented with 3 g of standard NPK fertilizer (N: 19%; P: 5%; K: 8%) per liter and grown in greenhouses (12 hr day 28 °C and 80% RH, 12 hr night at 25 °C and 60% RH at 200 μmol/m–2s–1).
 
-## Disease resistance scoring by leaf-clipping inoculation
+### Disease resistance scoring by leaf-clipping inoculation
 
 Resistance/susceptibility was assessed using leaf clipping assays (Kauffman et al., 1973). This assay introduces an effective entry for bacteria through a massive wound, providing access to the xylem vessels for an inoculum of Xoo in the logarithmic phase at extremely high titers of ~108. This assay is used by breeders and is, due to the extreme exposure of the plant, highly predictive for resistance in field conditions. Breeders and leading BB experts we contacted were not aware of cases in which resistance as determined by the clipping assay in greenhouse conditions did not translate to resistance in paddy field conditions. Notably, lines with moderate resistance lesion length of up to 5 cm in the clipping assay in greenhouses were fully resistant under field conditions. Multiple publications support the reliability and predictive efficacy of Kauffman clipping assays for field performance of resistance (Adhikari et al., 1995; Fred et al., 2016; Kauffman et al., 1973; Padmaja et al., 2017). Bacteria were grown on PSA media (Peptone Sucrose Agar, 1% peptone (Gibco, Bacto Peptone, 211677), 1% sucrose (Sigma-Aldrich, S7903-250G), 0.1% glutamate (Sigma-Aldrich, G8415-100G), 1.6% agar (Sigma-Aldrich, 05040–1 KG)) for 4 days at 28 °C. Single colonies were picked and patched onto PSA and then grown for 24 h before being washed with and diluted in sterile water at OD600 0.2 (at IRD) and 0.5 (at HHU). The youngest, fully extended leaves of 4- to 6-week-old rice plants were clipped 2–3 cm from the leaf tip with scissors that had been dipped in the inoculum or sterile water. Lesion lengths were measured 14 days after inoculation. For the race typing assay, lesion length measurements <5 cm were scored as resistant (R), 5–10 cm as moderately resistant (MR), 10–15 cm as moderately susceptible (MS), and >15 cm as susceptible (S).
 
-## Sampling of symptomatic leaf material and isolation of Xoo strains
+### Sampling of symptomatic leaf material and isolation of Xoo strains
 
 Small-scale rice fields cultivated under irrigated conditions in the villages of Dakawa and Lukenge (in the Morogoro region of Tanzania) were surveyed for BB between 2019 and 2021. Larger scale monitoring of the disease was achieved all over the country in 2022 and processing of these samples is in progress (Figure 1). In each field, diseased leaves of several individual plants were sampled and processed for bacterial isolation as reported previously (Tekete et al., 2020). Colony-multiplex PCR was used to validate that isolates were Xanthomonas oryzae pv. oryzae (except for 2022 data, for which analyses have been initiated).
 
-## Disease scoring in Tanzania
+### Disease scoring in Tanzania
 
 Disease scale/diseased leaf area of BB was scored by breeders (previous knowledge of breeders from Tanzania, who were trained as per IRRI SES, 5th edition) using IRRI’s Scoring System for field tests of Evaluation of BB Resistance (http://www.knowledgebank.irri.org/ricebreedingcourse/Breeding_for_disease_resistance_Blight.htm) (Ardales et al., 1996; Vera et al., 1996).
 
-## Greenhouse tests
+### Greenhouse tests
 
-## Field tests
+<table>
+  <thead>
+    <tr>
+      <th>Lesion length</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0–5</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>&gt;5–10</td>
+      <td>MR</td>
+    </tr>
+    <tr>
+      <td>&gt;10–15</td>
+      <td>MS</td>
+    </tr>
+    <tr>
+      <td>&gt;15</td>
+      <td>S</td>
+    </tr>
+  </tbody>
+</table>
+
+### Field tests
+
+<table>
+  <thead>
+    <tr>
+      <th>Scale</th>
+      <th>diseased leaf area (%)</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1–5</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>6–12</td>
+      <td>MR</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>13–25</td>
+      <td>MS</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>26–50</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>&gt;50</td>
+      <td>S</td>
+    </tr>
+  </tbody>
+</table>
 
 Note that there is a sampling bias due to the expansion of the evaluation sites in 2022. Notably, before 2019, BB had been observed but damage was not severe enough to be monitored systematically in Dakawa and Lukenge, nor in any other parts of Tanzania. Also note that the surveys were not carried out over longer periods in the three years and provide only estimates of severity at the time of observation. Severity will, among other factors, depend on the time of initial infection of the field, the bacterial titer, and the stage at which infection occurred. Moreover, the time of observation also affects the interpretation, that is, at late stages symptoms may not be recorded since the plants are senescent and symptoms cannot be recorded on senescent leaves.
 
-## Tanzanian strain genome sequencing and analysis
+### Tanzanian strain genome sequencing and analysis
 
 DNA was extracted from pure bacterial cultures grown on rich media (1% peptone [Gibco, Bacto Peptone, 211677], 0.1% glutamate [Sigma-Aldrich, G8415-100G]) with QIAGEN Genomic-tip 100 /G (Qiagen, Hilden, Germany, 10243). Multiplex libraries were prepared with the rapid library preparation kit (SQK-RBK110-96, Oxford Nanopore Technologies, ONT) and sequenced with a MinION Mk1C device on R10.3 (F Oxford Nanopore Technologies, LO-MIN111) flow cells. ONT electric signals were base-called with a high accuracy model (dna_r10.3_450bps_hac.cfg) and demultiplexed with the ONT Guppy base calling software (v6.0.1+652ffd179). Illumina library construction and sequencing was performed by FASTERIS (Plan-les-Ouates, Switzerland) on an Illumina NextSeq sequencer with 350 bp inserts and 150 bp paired-end sequences. Long ONT read assembly was performed with the CulebrONT pipeline (v2.0.1) (Orjuela et al., 2022) and included FLYE (2.9-b1768) for primary assembly followed by RACON (v1.4.20) and MEDAKA (1.4.1) for assembly polishing. The ONT-only assemblies were subsequently polished with polypolish (v0.5.0) (Wick and Holt, 2022). Core genome SNP genotyping and tree reconstruction were conducted as previously described (Doucouré et al., 2018), except that the raxml command included ‘-N 500 m GTRGAMMAIX’. This substitution model was adopted based on the output of the ‘modelTest’ function of the R package phangorn for model selection (Schliep, 2011). The X11-5A assembly (GB Acc. GCF_000212755.2) was used as an out-group, and was not displayed in Figure 3. The genomes included in the species-wide Xanthomonas oryzae phylogenetic tree are listed together with NCBI accessions and genome metadata in Supplementary file 2 and Figure 3—source data 1. Predictions for TALe genes from the genomes of the Tanzanian strains used AnnoTALE with default parameters (Grau et al., 2016). Predictions for high-scoring EBEs of the Tanzanian TALes in the Nipponbare SWEET11a promoter used Talvez with default parameters (Pérez-Quintero et al., 2013). Talvez target predictions on the Nipponbare SWEET11a promoter included putative TALes from Tanzanian strains (iTzDak19-3, iTzLuk21-1, iTzLuk21-2, and the endemic strains that predate the current outbreak: TzDak11-1, TzDak11-2, and TzDak18-1), Asian strains (PXO99A, PXO86, PXO83, PXO71, PXO61) and an African strain (MAI1), which were included as references. Only predictions with a score >9.05 are displayed in Figure 3.
 
-## qRT-PCR analyses of SWEET11a mRNA levels
+### qRT-PCR analyses of SWEET11a mRNA levels
 
 Leaves of 3-week-old rice plants were infiltrated with a bacterial suspension at an OD600 of 0.5 or water using a needleless syringe. One leaf per plant was infiltrated, and three plants per treatment were used. Samples were collected at 24 hr (Kitaake) or 48 hr (wildtype Komboka and edited lines) after inoculation. Total RNA was extracted using TRI reagent (TR 118; Euromedex, Souffelweyersheim, France). Following extraction, DNase I treatment was conducted using Turbo DNA-free kit (Thermo Fisher Scientific, AM1907). Subsequent synthesis of complementary DNA was carried out using SuperScriptIII (Thermo Fisher Scientific, 18080093) and oligo-dT primers. Quantitative PCR reactions were performed with SYBR Mesa Blue qPCR Mastermix (RT-SY2X-XXX Eurogentec, Seraing, Belgium). Three technical replicates were prepared for each sample. Expression values were normalized by subtracting the values obtained for reference gene EF-1α (GenBank: GQ848072.1) to the studied replicates (2−∆Ct method). Mean of the technical replicates for each sample was calculated. Three independent biological replicates were analyzed. Primer sequences are listed in Supplementary file 1l.
 
-## Analysis of EBEs in SWEET promoters of O. sativa cv. Komboka
+### Analysis of EBEs in SWEET promoters of O. sativa cv. Komboka
 
 Genomic DNA was extracted from Komboka leaves using the CTAB method (Li et al., 2013). The gDNA fragments corresponding to promoters and first exons of SWEET11a, 13, 14 were PCR-amplified using specific primer pairs. Amplicons were gel-purified and cloned into pJET1.2 (Thermo Fischer Scientific). Competent E. coli TOP10 competent cells were used for transformation (One Shot TOP10 Chemically Competent E. coli, Invitrogen, C404006). Plasmids were extracted from three individual colonies and were sent for Sanger sequencing (NucleoSpin Plasmid Mini Kit for plasmid DNA, Machinery-Nagel, 740588.50). Sanger sequencing reads representing promoter regions of SWEET11a, 13, and 14 from Komboka were aligned with the respective promoter regions of Kitaake (Kitaake_OsativaKitaake_499.genome; Phytozome v.13) (Supplementary file 1m).
 
-## Analyses of Xa1 and Xa4 sequences from O. sativa cv. Komboka
+### Analyses of Xa1 and Xa4 sequences from O. sativa cv. Komboka
 
 Full-length Xa1 and four fragments of Xa4 were PCR-amplified from O. sativa cv. Komboka gDNA using TAKARA PrimeSTART GXL polymerase (Takara Bio, R050A) and primers. Amplicons corresponding to full-length Xa1 were subjected to Sanger sequencing. Xa4 fragments were subcloned into pUC57Gent vector (Addgene #54338; Binder et al., 2014) and sequenced using Sanger sequencing. Individual sequence reads were mapped to their references and assembled via Geneious Prime 2022.1.1. Neighbor-joining phylogenetic analyses were made using CLUSTAL Omega (Geneious Prime). Genomic sequences of non-Komboka derived Xa1 and Xa4 had previously been published (Hu et al., 2017; Ji et al., 2020). Sequences of Xa1 and Xa4 genes used for phylogenetic analysis are provided in Supplementary file 1c.
 
-## Hybrid CRISPR/Cas9 and Cpf1 vector construction
+### Hybrid CRISPR/Cas9 and Cpf1 vector construction
 
 A new hybrid CRISPR-Cas9/Cpf1 system was developed to edit a maximum of six different targets (Figure 5—figure supplement 2). The hybrid CRISPR-Cas9/Cpf1 combines a duplex Cas9 gRNA combined with a multiplex Cpf1 cRNA. To develop this hybrid CRISPR-Cas9/Cpf1 system, we subcloned a human-codon-optimized LbCpf1-coding sequence (https://www.addgene.org/69988/sequences; Zetsche et al., 2015) and the rice Ubiquitin 1 (OsUbi) (LOC_Os02g06640) to create a gateway system pDEST:Cpf1. A PCR fragment of a Cas9 expression cassette, which contains a rice-codon-optimized SpCas9-coding sequence driven by the maize Ubiquitin 1 (ZmUbi) promoter (Char et al., 2017; Zhou et al., 2014), was amplified and inserted into pDEST:Cpf1 by Gibson Assembly (Gibson Assembly Master Mix, New England BioLabs, E2611S). Finally, we constructed the hybrid destination vector pDEST:Cpf1&Cas9. A Ribozyme-gRNA-Ribozyme (RGR) system was used to generate multiple cRNAs with different target sequences by flanking the cRNAs with a Hammerhead (HH) type ribozyme and a Hepatitis Delta Virus (HDV) ribozyme (Gao and Zhao, 2014). Guide RNA sequences are provided in Supplementary file 1f. The promoter of the small nuclear RNA gene from rice OsU6.1 and OsU3, wheat TaU3 and maize ZmU3 were used to drive expression of RGG-cRNAs units. Four gBlock fragments synthesized by IDT (Integrated DNA Technologies, Inc, Iowa, USA) were inserted into the vector pTLN using XbaI and XhoI to produce four intermediate pUNIT vectors: pTL-OsU6.1_CpfRNA1, pTL-OsU3_CpfRNA2, pTL-TaU3_CpfRNA3, pTL-ZmU3_CpfRNA4. A double-stranded DNA oligonucleotide for each site was produced by annealing two complementary oligonucleotides. The DNA sequence of positive clones was confirmed by Sanger sequencing. All four pUNIT vectors were transferred into another donor vector named pENTR4-ccdB using Golden Gate cloning (Golden Gate Assembly Kit, New England BioLabs, E1602S) to generate pENTR:cRNAs containing Cpf1 cRNAs cXo1, cXo2c, cTalF, and cXo2d (Supplementary file 1f). Simultaneously, a gTalC double-stranded oligonucleotide was inserted into the BtgZI-digested pENTR-gRNAs (Char et al., 2017). The gRNA expression cassette was PCR-amplified with oligos U6P-F3 and -R3 inserted into pENTR:gRNAs at XbaI site through Gibson cloning to generate the hybrid donor plasmid pENTR:gRNA-cRNAs. The gRNA-cRNA cassette was mobilized to the hybrid destination vector pDEST:Cpf1&Cas9 using Gateway LR Clonase II Enzyme-Mix (Thermo Fisher Scientific, 11791020) to produce a pCam1300-CRISPR plasmid named pCpf1&Cas9:gRNAs-cRNAs (pMUGW5). DNA sequencing of the plasmid pMUGW5 detected the insertion of an E. coli IS element in the vector backbone. The insertion was already present in the original pCambia3000 in the BY stock collection and apparently did not affect transformation or editing.
 
-## Rice transformation
+### Rice transformation
 
 Agrobacterium-mediated transformation of Komboka using immature embryos was performed as described (Luu et al., 2020). Briefly, the Agrobacterium tumefaciens strain LBA4404 was transformed with pMUGW5 via electroporation. Immature rice seeds at the late milky stage were harvested for immature embryo isolation. Immature embryos were inoculated with 5 µl Agrobacterium suspension (OD600 0.3) and incubated in the dark for 1 week. The emerged shoots were removed, and immature embryos were incubated for 5 days at 28 °C under continuous light. To select positive transformants, four rounds of hygromycin selection were applied (Hygromycin B solution, Carl Roth, CP 12.2), with each round consisting of 10 days. Resistant calli were moved onto a pre-regeneration medium and incubated for 10 days. Greening calli were transferred to a regeneration medium to develop small rice plantlets. Once plantlets reached 15 cm in height, they were transferred to soil and placed in a greenhouse. After 5 months, T1 seeds were harvested.
 
-## Screening of EBE edited lines
+### Screening of EBE edited lines
 
 To test whether generated T0 plants contained T-DNA insertion, the presence of SpCas9, LbCpf1 and hygromycin resistance (Hpt) genes were checked. Leaf fragments (3–4 cm) were harvested for DNA extraction using a modified CTAB method for high-throughput DNA extraction (CTAB, Carl Roth, 9161.1). PCR was performed using GoTaq DNA Polymerase (GoTaq G2 Green Master Mix, Promega, M7823) with a melting temperature of 55 °C for SpCas9, LbCpf1 and Hpt. For genotyping of EBE mutations, the four regions containing the six EBEs within the SWEET11a, 13 and 14 promoters were amplified with specific primers using Phusion HF polymerase (Thermo Fisher Scientific, F530S), and PCR amplicons were sequenced by Sanger sequencing (Microsynth seqlab). Chromatograms were analyzed manually using Benchling (https://www.benchling.com) to detect the mutations. Two rounds of transformation were performed. In Round 1, seven T0 plants were obtained from a single embryo, and all T0 plants contained biallelic mutations at all target sites (Supplementary file 1g-i). In the transformation Round 2, 18 T0 plants were T-DNA positive, from 18 independent immature embryos. Nine T0 plants were characterized further and found to contain biallelic mutations at all targeted sites (Supplementary file 1g-i). We screened 52 T1 plants from three independent events (#12, 14 and 16) and obtained seven lines with homozygous mutations in all six EBEs (Supplementary file 1j-k).
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses and graphical representations were prepared using R 4.0.5, on RStudio for Windows. Statistics were calculated using rstatix (https://cran.r-project.org/web/packages/rstatix). To determine if there was an effect of the treatment or the genotype on gene expression or lesion length, the medians of the different subsamples were compared using rstatix Kruskal-Wallis test (p-values <0.05). Then, mean groups were attributed to the different genotypes or treatments independently using rstatix Dunett’s test (p-values <0.05). Letters were attributed to each mean group. Graphical representations were realized using package ggplot2 (https://ggplot2.tidyverse.org). Data were drawn as boxplots, delimited by the first and the third quartile of the distribution of the studied variable. The line inside the boxplot represents the median. The two lines that start from the boxplot join the minimum and maximum theoretical values. Outliers (<7% of total values) were represented as black dots. The total number (n) of replicates for each strain/genotype condition is displayed next to each boxplot. Each observation is represented by a dot, with a color code by strain or genotype. The letters above each boxplot represent the mean groups calculated using Dunnett’s test.

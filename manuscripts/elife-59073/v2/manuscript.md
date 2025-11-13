@@ -62,9 +62,25 @@ To better understand the role that BRG1 loss has in SCCOHT tumorigenesis, we ree
 
 ## Results
 
-## BRG1 reexpression induces global morphological, transcriptomic, and epigenetic changes in BIN67 cells
+### BRG1 reexpression induces global morphological, transcriptomic, and epigenetic changes in BIN67 cells
 
 In order to understand the global consequences of BRG1 loss in SCCOHT, we performed multi-omic analyses in parallel for the SCCOHT cell line BIN67 +/- BRG1 reexpression (Figure 1a). ATAC-seq and RNA-seq were performed from the same experimental samples, while CUT and RUN and proteomic analyses were performed from separate experimental groups (Figure 1a). In BIN67, the reexpression of BRG1 was comparable and consistent to endogenous protein expression levels in other cancer cell lines, such as HeLa, MCF-7, and 293FT, whereas other SCCOHT cell lines, SCCOHT-1, expressed moderate levels of BRG1 following reexpression (Figure 1—figure supplement 1B, C). Following BRG1 reexpression, BIN67 showed the previously reported elongated, spindle-like morphology (Karnezis et al., 2016; Wang et al., 2017; Wang et al., 2018) (white arrows, Figure 1b; Figure 1—figure supplement 1A), whereas cells transfected with control vector displayed a similar morphology to parental cells (Figure 1b; Figure 1—figure supplement 1A). Consistent with our previous findings, BRG1 induction also resulted in growth suppression (Karnezis et al., 2016), indicated by the reduced number of cells relative to the controls (Figure 1b; Figure 1—figure supplement 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig1-v2.jpg)
+
+**Figure 1.:** (a) Experimental design for BRG1 reexpression in BIN67 cells and multi-omic data analysis. (b) Following the experimental design in 1a, pictures were taken at 10X phase. BIN67 cells transfected with BRG1 show an elongated morphology (white arrows) relative to control. Additional fields and controls shown in Figure 1—figure supplement 1. (c) Volcano plot results of RNA-seq differential gene expression (BRG1/Control) for protein coding genes using DESeq2 (n = 18,507 genes total). Significantly upregulated genes (padj <0.05 and Log2FoldChange > 0) are colored in red (n = 4087 genes). Significantly downregulated genes (padj <0.05 and Log2FoldChange < 0) are colored in blue (n = 3444 genes). Non-significant genes are colored in gray (n = 10,976 genes). SMARCA4/BRG1 and BRG1 target genes are identified. (d) Volcano plot of differential expressed proteins for BIN67 +/- BRG1 reexpression by PECA analysis (n = 5726 total proteins identified). Significantly upregulated proteins (p.fdr <0.05 and Log2FoldChange > 0) are colored in red (n = 306 proteins). Significantly downregulated proteins (p.fdr <0.05 and Log2FoldChange < 0) are colored in blue (n = 233 proteins). Non-significant proteins are identified in gray (n = 5187 proteins). Proteins of SMARCA4/BRG1 and CD44 are identified. (e) Differential peak analysis for ATAC-seq data using DESeq2 (n = 62,308 peaks total). Significantly gained ATAC-seq peaks (padj <0.10 and Log2FoldChange > 0) are identified in red (Gained; n = 4,023). Significantly lost ATAC-seq peaks (padj <0.10 and Log2FoldChange < 0) are identified in blue (Lost; n = 306). Non-significant peaks are identified in Gray (Static/N.S.; n = 57,979). Source data is available in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Three different fields taken randomly across two biological replicates of BIN67 cells +/- BRG1 reexpression flowing experimental design in Figure 1a. Pictures were taken at 10X phase prior to harvest. BIN67 cells transfected with BRG1 show an elongated morphology (white arrows) relative to control. BIN67 (parental) cells at similar passage are shown for morphology comparison. Untransfected controls treated with puromycin (Parental + Puro) are shown for each experiment. Control and BRG1 transfected for Field one are shown in Figure 1b. Field one is from biological replicate #1 and Field two and Field three are from biological replicate #2. (B, C) Western blots for (B) BIN67 and (C) SCCOHT-1 cells +/- BRG1 compared to other cancer cell lines. Reexpression studies were performed in biological duplicate.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Principal component analysis (PCA) for RNA-seq (A), Proteomics (B), ATAC-seq (C). A, PCA for RNA-seq samples was performed by DESeq2 on rlog transformed counts. (B) PCA was performed by prcomp on log2 transformed counts for proteomics samples. (C) PCA was performed on rlog transformed counts under called ATAC-seq peaks by DESeq2.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Scatterplot of gene expression changes and protein expression changes for proteins and genes identified in both (n = 5528). For instances where multiple proteins mapped to a particular gene, the average log2foldchange of protein abundance was calculated. (B) Scatterplot of gene expression changes and protein expression changes for proteins and genes identified as significant in both (RNA-seq: padj <0.05, Proteomics: FDR < 0.05). For instances where multiple proteins mapped to a particular gene, the average log2foldchange of protein abundance was calculated.
 
 BRG1 has a well-established role in regulating chromatin remodeling and gene expression. Thus, we hypothesized that its reexpression would alter chromatin accessibility along with gene and protein expression. To answer this question, we preformed RNA-seq, ATAC-seq, and global proteome profiling. Unsupervised analysis of RNA-seq samples (principal component analysis [PCA]) showed that control samples segregated from the BRG1 reexpressed samples and clustered closely within respective treatment groups (Figure 1—figure supplement 2A). In the BIN67 RNA-seq data, 18,507 protein coding genes were identified, with an almost equal number of genes increasing (4087 genes, 22%) and decreasing (3444 genes, 19%) (significance cut off padj <0.05) (Figure 1c; Supplementary file 1). In comparison to the decreasing genes, genes that increased were at a greater log2 fold change and significance (Figure 1c). Interestingly, BRG1 (SMARCA4) was not the most abundantly expressed gene in the BRG1 reexpressed samples (BRG1/Control Log2FoldChange = 5.34), (Figure 1c; Supplementary file 1A). As expected, many genes previously classified as BRG1 target genes such as, CD44, EHF, IFI16, and MMP7 increased in expression after BRG1/SMARCA4 reexpression (Figure 1c; Supplementary file 1A; Strobeck et al., 2001; Reisman et al., 2002; Orvis et al., 2014; Strobeck et al., 2002).
 
@@ -74,9 +90,21 @@ Given BRG1’s role in chromatin remodeling and the many changes in gene and pro
 
 Taken together, these data show that BRG1 reexpression in BIN67 induces a morphology change along with global upregulation of gene and protein expression and increased chromatin accessibility.
 
-## BRG1 drives an epithelial-like gene, protein, and chromatin signature in SCCOHT cells
+### BRG1 drives an epithelial-like gene, protein, and chromatin signature in SCCOHT cells
 
 Given the morphology change and global changes in gene and protein expression, we questioned whether the cells underwent a change in cellular differentiation after BRG1 reexpression. We first preformed gene set enrichment analysis (GSEA) for Hallmark gene sets in both the RNA-seq (Figure 2—figure supplement 1A) and proteomics (Figure 2—figure supplement 1B) results. Independently, the RNA-seq and proteomics results showed statistically significant enrichments in many Hallmark pathways (Figure 2—figure supplement 1A, B). With different pathways enriched both within and between the RNA-seq and proteomics, this confounded the possibility of a common pathway emerging. In order to answer this issue more specifically, we performed cell type enrichment analysis using xCell (Aran et al., 2017) on the RNA-seq gene expression data. Control BIN67 most resembled immune cells such as Th2 cells and mesenchymal stem cells (MSCs) (Figure 2a). BIN67 cells reexpressing BRG1 were most like epithelial cells as well as keratinocytes, a specialized epithelial cell (Figure 2a). To independently validate the epithelial enrichment in BIN67 cells, we used GSEA for Gene Ontology (GO) terms in both the RNA-seq (Figure 2b) and proteomics data (Figure 2c). In both data sets, epithelial pathways were significantly enriched in the BRG1 reexpressed cells. We identified GO terms of ‘regulation of epithelial cell differentiation’ in the gene expression results (Figure 2b), and GO terms of ‘epithelial cell differentiation’ in the proteomics results (Figure 2c).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig2-v2.jpg)
+
+**Figure 2.:** (a) Heatmap of xCell results from RNA-seq data (gene and library scaled TPMs for input). Epithelial cell category highlighted in yellow. Rows and columns clustered by Pearsons correlation. (b) Enrichment plots for epithelial related Gene Ontology (GO) terms in RNA-seq data (VST normalized TPMs) using Gene Set Enrichment Analysis (GSEA; MSigDB GO gene set - C5 all v6.0). (c) Enrichment plots for epithelial related GO terms in proteomics data (log2 transformed) using GSEA (MSigDB GO gene set - C5 all v6.0). (d) Heatmap of RNA-seq Log2FoldChange (BRG1/Control) for xCell Epithelial Gene set (n = 132) in BIN67, SCCOHT-1, and COV434 cells clustered by Euclidean correlation. (e) Heatmap of RNA-seq Log2FoldChange (BRG1/Control) for epithelial cell markers in BIN67, SCCOHT-1, and COV434 cells clustered by Euclidean correlation. For genes that no measurable Log2FoldChange was calculated by DESeq2 are colored in gray. (f) Definition of the curated epithelial gene signature. (g) Scoring of the epithelial signature in RNA-seq data from SCCOHT cell lines using singscore. (h) Scatterplot of gene expression change and associated protein expression changes in BIN67 cells for genes and proteins identified in common from the epithelial signature. Source data is available in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Gene set enrichment analysis (GSEA) performed on RNA-seq data (VST normalized TPMs) using the Hallmark gene set (MSigDB Hallmark v6.0). (B) GSEA performed on Proteomics data (log2 transformed) using the Hallmark gene set (MSigDB Hallmark v6.0). (C,D,E) Heatmap of xCell results for previously published data sets of BIN67 +/- BRG1 and SCCOHT-1 +/- BRG1 and clustered by Euclidean distance. Epithelial cell category highlighted in yellow. (F,G) Publically available BIN67 RNA-seq data (+/- BRG1; columns 2 and 3), SCCOHT-1 cell line (+/- BRG1) was compared to BIN67 cells (+/- BRG1) in this study (column 1) for Log2FoldChange (BRG1/Control) for genes in the xCell epithelial list (F) and epithelial cell marker list (G).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Scoring of epithelial signature in RNA-seq data using singscore for: (A) BIN67 +/- BRG1; Xue et al., 2019b, (*Welsh Two Sample t-test p-value=0.00028) (B) SCCOHT-1 +/- BRG1; Xue et al., 2019b, (*Welsh Two-Sample t-test p-value=4.367 e-07) and (C) BIN67 +/- BRG1/K785R/T910M; Pan et al., 2019 (Welsh Two-Sample t-test p-values: Control compared to wild-type BRG1 (p-value=0.0097)), BRG1 wildtype to K785R mutant (p-value=0.0162) and BRG1 wild-type to T910M mutant (p-value=0.0405).
 
 BIN67 cells reexpressing BRG1 showed a strong enrichment for epithelial cell gene and protein signatures. To assess whether the epithelial enrichment was cell line specific, we analyzed RNA-seq data from two other SCCOHT cell lines, SCCOHT-1 and COV434 (Karnezis et al., 2020) +/- BRG1 reexpression. Because of the strong enrichment identified by xCell analysis in our data, we looked at all the genes that compose the xCell Epithelial list for gene expression changes following BRG1 reexpression (Log2FoldChange; BRG1/Control) (Figure 2d). We included CD44 along with the xCell epithelial genes (n = 131 xCell Epithelial, final n = 132 genes) because of its known role in epithelial cell adhesion (Sneath and Mangham, 1998; Senbanjo and Chellaiah, 2017) and its established regulation by BRG1 (Strobeck et al., 2001; Reisman et al., 2002; Strobeck et al., 2002). As expected from the xCell results for BIN67, a majority (60%) of the genes in the xCell epithelial list were upregulated in all three SCCOHT cell lines after BRG1 reexpression (n = 79/132 genes - log2FoldChange BRG1/Control > 0) (Figure 2d). Furthermore, this was consistent across other previously published BIN67 +/- BRG1 RNA-seq data sets (102/132 genes [Pan et al., 2019] and 107/132 genes Xue et al., 2019b) and SCCOHT-1+/- BRG1 RNA-seq data set (Xue et al., 2019b) (94/132 genes – log2FoldChange BRG1/Control) that all displayed an epithelial-like enrichment following xCell analysis (Figure 2—figure supplement 1C, D, E, F, Supplementary file 4).
 
@@ -88,37 +116,65 @@ We found gene and protein expression was strongly correlative in BIN67 cells (Fi
 
 BRG1’s main role is to provide the energy to remodel the chromatin landscape through its ATPase activity. To understand if the enrichment of the epithelial signature in BIN67 was dependent on the ATPase activity, we utilized previously published RNA-seq data that expressed BRG1 ATPase mutants in BIN67 (Pan et al., 2019). We found that the expression of both a partial (T910M) or complete (K785R) loss of catalytic activity for BRG1 in BIN67 did not induce the epithelial signature (Figure 2—figure supplement 2C). This suggests that the induction of the epithelial gene signature by BRG1 expression in SCCOHT cells is dependent upon its catalytic activity.
 
-## BRG1-induced epithelial signature is broadly applicable to other tumor types and primary SCCOHT tumors
+### BRG1-induced epithelial signature is broadly applicable to other tumor types and primary SCCOHT tumors
 
 Other adult cancers, such as NSCLC, contain mutations in BRG1 but have a higher genetic burden than SCCOHT tumors. In order to understand if the enrichment of the epithelial signature is SCCOHT specific or is applicable to other BRG1-deficient tumors, we analyzed RNA-seq data from two NSCLC cell lines. We first looked at A427 +/- BRG1 because similar to SCCOHT cell lines, A427 lacks BRM expression. Following BRG1 expression, A427 cells significantly increased enrichment for the epithelial signature (Welch Two Sample t-test p-value=0.00067) (Figure 3a). To confirm these results, we used RNA-seq data we recently reported for H358 cells with knockout of BRG1 or BRM expression (Song et al., 2020). H358 cells (Parent) express endogenous levels of BRG1 and BRM and score high for the epithelial signature (Figure 3b). However, when BRG1 expression is lost, the score for the epithelial signature significantly decreased compared to the parent cell line (Welch Two Sample t-test p-value = 0.04437; Figure 3b). In contrast, the loss of BRM expression did not decrease the epithelial signature, rather it slightly increased it compared to the parent cell line (Welch Two Sample t-test p-value=0.02038; Figure 3b). Together, these data indicate that the BRG1-dependent induction of the epithelial signature appears broadly applicable to other BRG1 mutant tumors like NSCLC.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig3-v2.jpg)
 
-**Figure 3.:** (a, b) Scoring of epithelial signature in RNA-seq data from NSCLC cell lines +/- BRG1 expression (A427) and +/- BRG1/BRM knockout (H358). (C) Scatterplot of percent peak overlap of gained ATAC-seq peaks with TCGA ATAC-seq peaks versus the averaged xCell calculated epithelial cell score for each TCGA tumor type. The frequency of BRG1 mutations identified per tumor type (reported as a percentage) is indicated by the size of the point. (d) Heatmap of CD44 and Claudin-4 (CLDN4) gene expression changes following BRG1 expression in SCCOHT cell lines. (e, f) Immunohistochemistry scoring and representative images for Claudin-4 expression from a TMA containing gynecological tumors. (g, h) Immunofluorescence scoring and representative images for CD44 expression at ×20 magnification from a TMA containing gynecological tumors. In both Claudin-4 and CD44 staining (e–h), multiple core samples (between 2 and 6 cores) were taken per tumor and reported as single points in boxplots. Total numbers reported as the number of cores taken per tumor type. Small Cell Carcinoma of the Ovary, Hypercalcemic Type (SCCOHT; n = 16 cores for CLDN4, n = 39 cores for CD44). Clear Cell Ovarian Carcinoma (CCOC; n = 12 cores for CLDN4, n = 23 cores for CD44). High-Grade Serous Ovarian Carcinoma (HGSC; n = 33 cores for CLDN4, n = 64 cores for CD44). Low-Grade Serous Ovarian Carcinoma (LGSC; n = 38 cores for CLDN4, n = 83 cores for CD44). Endometriod Ovarian Carcinoma (ENOC; n = 19 cores for CLDN4, n = 37 cores for CD44). Mucinous Ovarian Carcinoma (MOC; n = 9 cores for CLDN4, n = 17 cores for CD44). Serous Borderline Ovarian Tumor, pre-cursor legion of LGSC (SBOT; n = 18 cores for CLDN4; CD44 staining not performed for this tumor type). Source data is available in Figure 3—source data 1.  Figure 3—source data 1.Figure 3.
+**Figure 3.:** (a, b) Scoring of epithelial signature in RNA-seq data from NSCLC cell lines +/- BRG1 expression (A427) and +/- BRG1/BRM knockout (H358). (C) Scatterplot of percent peak overlap of gained ATAC-seq peaks with TCGA ATAC-seq peaks versus the averaged xCell calculated epithelial cell score for each TCGA tumor type. The frequency of BRG1 mutations identified per tumor type (reported as a percentage) is indicated by the size of the point. (d) Heatmap of CD44 and Claudin-4 (CLDN4) gene expression changes following BRG1 expression in SCCOHT cell lines. (e, f) Immunohistochemistry scoring and representative images for Claudin-4 expression from a TMA containing gynecological tumors. (g, h) Immunofluorescence scoring and representative images for CD44 expression at ×20 magnification from a TMA containing gynecological tumors. In both Claudin-4 and CD44 staining (e–h), multiple core samples (between 2 and 6 cores) were taken per tumor and reported as single points in boxplots. Total numbers reported as the number of cores taken per tumor type. Small Cell Carcinoma of the Ovary, Hypercalcemic Type (SCCOHT; n = 16 cores for CLDN4, n = 39 cores for CD44). Clear Cell Ovarian Carcinoma (CCOC; n = 12 cores for CLDN4, n = 23 cores for CD44). High-Grade Serous Ovarian Carcinoma (HGSC; n = 33 cores for CLDN4, n = 64 cores for CD44). Low-Grade Serous Ovarian Carcinoma (LGSC; n = 38 cores for CLDN4, n = 83 cores for CD44). Endometriod Ovarian Carcinoma (ENOC; n = 19 cores for CLDN4, n = 37 cores for CD44). Mucinous Ovarian Carcinoma (MOC; n = 9 cores for CLDN4, n = 17 cores for CD44). Serous Borderline Ovarian Tumor, pre-cursor legion of LGSC (SBOT; n = 18 cores for CLDN4; CD44 staining not performed for this tumor type). Source data is available in Figure 3—source data 1.
 
 Because the transcriptomic and proteomic profiles after BRG1 expression in BIN67 resembled an epithelial-like cell, we questioned if the chromatin landscape gained after BRG1 expression resembled those seen in tumors originating in epithelial tissues. To answer this, we compared our chromatin accessibility profiles in the presence of BRG1 to those tumor types in The Cancer Genome Atlas (TCGA) ATAC-seq data set (n = 23 tumor types) (Corces et al., 2018). To measure which tumor types were most similar to epithelial cells, we used previously calculated xCell scores in the epithelial cell category for TCGA tumors (Aran et al., 2017) (n = 9358 tumors) and averaged it based on each tumor type to have a mean xCell epithelial score for a given tumor type (n = 33 tumor types) (Aran et al., 2017). In order to compare chromatin profiles, we determined the percentage of peaks in each tumor type that overlapped with the gained ATAC-seq peaks (n = 4023 peaks). Tumor types that had both ATAC-seq data and a calculated xCell score were used for further analysis. Percentage of ATAC-seq peaks that overlapped with TCGA ATAC-seq peaks ranged from 19.6% (TGCT - Testicular Germ Cell Tumors) to 73.7% (ESCA - Esophageal carcinoma) (Figure 3c). Average scores for the epithelial category ranged from 0.0025 (LGG – Low-Grade Gliomas) to 0.982 (CESC - Cervical squamous cell carcinoma and endocervical adenocarcinoma) (Figure 3c). We found a positive correlation (R2 = 0.41) between percentage of gained ATAC-seq peaks that overlapped with xCell Epithelial score that was statistically significant (Pearson’s correlation p-value=0.00095) (Figure 3c). We looked further to the frequency of BRG1 mutations in these tumor types; however, there was not a strong correlation between BRG1 mutation frequency and loss of xCell Epithelial score, likely due to tumor heterogeneity and the lower overall frequency of BRG1 loss as compared to SCCOHT BRG1 mutation frequency (Figure 3c). These results indicate that the altered chromatin landscape following BRG1 reexpression in BIN67 cells is similar to those of epithelial originating tumors, consistent with our results of epithelial-like gene and protein expression.
 
 To validate the epithelial signature induction by BRG1 in SCCOHT cell lines, we chose two epithelial targets (CD44 and Claudin-4/CLDN4) that increased in gene expression in all three SCCOHT cell lines (Figure 3d) and additionally increased protein expression levels following BRG1 in BIN67 and SCCOHT-1 (Figure 1—figure supplement 1B, C). CD44 is a well-characterized cell surface receptor with several isoforms expressed in epithelial cells (Sneath and Mangham, 1998; Senbanjo and Chellaiah, 2017). CD44 has also been shown as a BRG1 target gene (Strobeck et al., 2001; Reisman et al., 2002; Strobeck et al., 2002), making it another excellent candidate for further validation studies. Claudin-4 (CLDN4) is involved in epithelial tight junctions and recently described as a marker of epithelial origin by IHC (Schaefer et al., 2017; Tessier-Cloutier et al., 2018). Thus, we used CD44 and Claudin-4 for further analysis to determine if these epithelial markers were lowly expressed in primary SCCOHT tumors as we had hypothesized. A tissue microarray of primary tumors from SCCOHT and other gynecological cancers were stained for Claudin-4 and CD44 (Figure 3e,f,g,h). SCCOHT primary tumors lacked expression of Claudin-4 (average H-Score = 0), whereas High-Grade Serous Ovarian Cancer (HGSC) tumors had a dynamic range of expression with some expressing very strongly (Figure 3e,f). Consistent with Claudin-4 staining, SCCOHT primary tumors scored the lowest overall for CD44 expression (average CD44/DAPI: SCCOHT = 9.43%, CCOC = 34.7%, HGSC = 25.7%, LGSC = 35%, and MOC = 23.0%) (Figure 3g). The range of CD44 expression in primary SCCOHT tumors was more dynamic than with Claudin-4, shown by select tumor cores that moderately expressed CD44 (range of CD44/DAPI in SCCOHT = 0.22–31.9%) (Figure 3h). Other gynecological tumors on average had a higher expression level of CD44 than SCCOHT primary tumors (Figure 3g,h). Therefore, SCCOHT primary tumors lack the expression of select epithelial markers, consistent with our findings in SCCOHT cell lines in the absence of BRG1 expression.
 
-## AP-1 motifs are enriched in BRG1 recruited and gained chromatin accessibility
+### AP-1 motifs are enriched in BRG1 recruited and gained chromatin accessibility
 
 BRG1 functions by altering nucleosome occupancy in a way that affects gene expression and other DNA-mediated processes. Chromatin accessibility that was gained following BRG1 reexpression in BIN67 cells was most similar to epithelial originating tumors, leading us to question if BRG1 was directly affecting epithelial gene programs. We next identified where in the genome chromatin was altered and which of those sites were direct targets of BRG1. After BRG1 reexpression, chromatin accessibility was gained mostly at introns and intergenic regions (Figure 4A). A search for a common motif present in sites with increased chromatin accessibility showed a strong enrichment for various AP-1 family members (Figure 4B). To determine if the gained distal regions are enhancers, we utilized previously published ChIP-seq data for enhancer marks in BIN67 +/- BRG1 reexpression (Pan et al., 2019). We found that the gained accessible regions in BIN67 additionally gained H3K27ac and H3K4me1 enhancer marks, defining them as enhancer regions (Figure 4C; Pan et al., 2019). This is consistent with previous reports of BRG1 reexpression in NSCLC (Xue et al., 2019a) and SCCOHT (BIN67) (Pan et al., 2019). While distal regions changed in chromatin accessibility, the promoter regions were largely composed of static ATAC-seq peaks, representing accessible chromatin both in the presence and absence of BRG1 in BIN67 cells (Figure 4A).
 
 We next questioned if the locations of changing chromatin accessibility were consistent with BRG1 recruitment. Using CUT and RUN (Skene and Henikoff, 2017), we found that BRG1 was recruited to sites of increased chromatin accessibility (Figure 4C, Supplementary file 5, Supplementary file 6). Given the transcription factor motif analysis on gained ATAC-seq peaks showed a strong enrichment for various AP-1 family members, we asked whether the AP-1 member c-Jun was recruited to sites with increased that increase chromatin accessibility. CUT-and-RUN data for c-Jun showed strong enrichment at these sites (Figure 4C, D). Notably, these regions were generally not previously bound by c-Jun in BIN67 cells. However, we noted very little c-Jun binding in BIN67 prior to BRG1 reexpression in general (Figure 4C,D). In contrast, while c-Jun bound well prior to BRG1 reexpression in HT1 cells, there was a significant amount of c-Jun relocalization following BRG1 (Figure 4—figure supplement 1a) Genes that newly recruited both c-Jun and BRG1 increased expression, while those that lost c-Jun and did not gain BRG1 expression decreased expression (Figure 4—figure supplement 1b). Notably c-Jun expression was uniformly high in SCCOHT-1 cells, whereas in BIN67 c-Jun was strongly induced by BRG1 reexpression (Figure 4—figure supplement 1c).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig4-v2.jpg)
+
+**Figure 4.:** (a) Genomic annotations by HOMER for differential ATAC-seq peaks on standard chromosomes (Gained: n = 4023 peaks; Static/N.S.: n = 57,747 peaks; and Lost: n = 306 peaks). (b) Known transcription factor motif analysis for ATAC-seq gained peaks (n = 4023 peaks) performed by HOMER with Static/N.S. ATAC-seq peaks used as background. AP-1 family members indicated by red points and highlighted in gray. (c) Heatmap of ATAC-seq signal, H3K27Ac signal, and H3K4me1 signal, and BRG1 signal in CUT and RUN experiments +/- BRG1 reexpression at the gained ATAC-seq peaks in BIN67 cells. (d) Examples of browser tracks showing enrichment (IP/IgG) of CUT and RUN data for BRG1 and Jun in BIN67 and SCCOHT-1 cells. (e) Metaplots showing BRG1 or c-Jun signal relative to Brg1 peaks (+/- 500 bp) in BIN67 or HT1 cells comparing Control or BRG1 reexpressed cells. (f) Known transcription factor motif analysis for BRG1 peaks identified in BIN67 or SCCOHT-1 cells reexpressing BRG1 (n = 16,283, 31,379). (g) ATAC-seq signal, H3K27ac, H3K4me1 ChIP-seq signal BRG1 and c-Jun CUT and RUN signal (+/- BRG1 reexpression) at FRA1 motifs contained in open chromatin in the genome. Promoter regions defined as +/- 1 kb of TSS (n = 1423 motif sites) and all remaining sites defined as distal (n = 12,852 motif sites). Heatmaps in all panels are in the same sorted order. Source data is available in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) CUT and RUN signal of c-Jun and BRG1 in SCCOHT-1 cells reexpressing BRG1 at peaks that are present only in cells lacking BRG1 n = 29,915, present only in cells expressing BRG1 n = 27,328, or found in both conditions n = 11470. (b) Expression of genes assigned to peaks found in each of the three previous categories. pValues are BRG1-Both. = 4.35e−63, BRG1-CTRL, 3.63e−168 by Wilcoxon signed-rank test. (c) Length scaled transcripts per million for AP-1 family members in BIN67 and SCCOHT-1 cells. Source data is available in Figure 4—figure supplement 1—source data 1.
+
 Next, we searched for enriched motifs in BRG1-bound regions in both BIN67 and SCCOHT-1 cells in which BRG1 has been reexpressed. In both cases, motifs for AP-1 family members segregated from other transcription factor motifs based on significance (p-value) and ratio of sites containing a motif over background (Figure 4F), consistent with the ATAC-seq data (Figure 4E; Supplementary file 2B, Supplementary file 7).
 
 Since the AP-1 motif was common among the ATAC-seq gained peaks and BRG1 peaks, we next assessed whether BRG1 was recruited to AP-1 (FRA1) motifs found in accessible chromatin. We assigned each FRA1 motif contained within open chromatin to either promoter (+/- 1 kb TSS) or distal region and analyzed BRG1 localization at these classes. At promoter regions, ATAC-seq signal mostly remained open with a small number of sites opening after BRG1 reexpression (Figure 4G). However, at distal regions containing a FRA1 site, nearly all locations gained chromatin accessibility and enhancer marks (H3K27ac and H3K4me1) after BRG1 reexpression (Figure 4G). For both promoter and distal regions, BRG1 was recruited to FRA1 locations (Figure 4G). AP-1 family member c-Jun was also strongly recruited to its motifs present in both promoter proximal and distal open chromatin (Figure 4g). Consistent with previous reports of AP-1 and SWI/SNF interactions (Vierbuchen et al., 2017), these results suggested that AP-1 is a common motif associated with BRG1 both at promoter and distal locations, implicating AP-1 transcriptional control as an important mediator of SCCOHT development.
 
-## Epithelial-like gene signature in SCCOHT is driven by AP-1 mechanism
+### Epithelial-like gene signature in SCCOHT is driven by AP-1 mechanism
 
 Because AP-1 motifs were highly enriched in sites that increase chromatin accessibility and recruit BRG1, we questioned if the epithelial-like signature observed after BRG1 reexpression is driven through AP-1-dependent mechanisms. We first looked at the distribution of expression changes for the epithelial genes to determine if a particular subset of epithelial genes were driving the epithelial signature (Figure 2). We found a bimodal distribution of expression changes (Figure 5A). This was observed in both BIN67and SCCOHT-1 cells with a strong concordance in the expression levels of the epithelial signature in both cell lines (Pearson’s r = 0.66, p-value=3.95e−22, Figure 5B). We hypothesized that at least two different transcription factors may drive the epithelial expression, one driving the epithelial low group (n = 100 genes BIN67) and one driving the epithelial high group (n = 48 BIN67, 40 SCCOHT-1, Log2FoldChange > 4, n = 30 found in both) (Figure 5C). We preformed transcription factor motif analysis at the promoter regions of the epithelial low and high groups separately as defined by BIN67 for the xCell Genes (n = 100 low, n = 32 high). The epithelial low group was strongly enriched in ZEB1/2 transcription factor motifs, not surprising given their well-characterized role in regulating EMT/epithelial cells (Lamouille et al., 2014; Figure 5C). However, the epithelial high group showed a strong enrichment in AP-1 family members (Figure 5C). AP-1 motifs were also found in the epithelial low group, although not to the same level of enrichment in the epithelial high group (Figure 5—figure supplement 1A). Other than keratinocytes, which is a highly specialized epithelial cell, AP-1 motifs were less enriched in the promoters of genes that define other cell types from xCell (Figure 5—figure supplement 1). Thus, we hypothesized that increased expression of epithelial high gene set depended upon the interaction between BRG1 and AP-1 in BIN67 cells.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig5-v2.jpg)
+
+**Figure 5.:** (a) Density plot of RNA-seq Log2FoldChange (BRG1/Control) for epithelial signature genes (n = 171 genes). Red dotted line indicates cutoff point for ‘High’ category (Log2FoldChange > 4). (b) Scatterplot of log2FoldChanges (+/- BRG1) in BIN67 (x-axis) and SCCOHT-1(y-axis). Pearson’s correlation. = 0.66. (c) Known transcription factor motif analysis at the promoter of (b) low epithelial gene and (c) high epithelial genes from BIN67 xCell gene set. Default settings defined by HOMER were used for promoter region (−300 bp, +50 bp from Transcription Start Site, TSS) and background. Transcription factors that were also expressed in RNA-seq data were plotted. Transcription factors that were not expressed at a mean count across all samples greater than four TPMs were eliminated. Highest ranking based on -log(p-value) and Ratio (% Target / % Background) and of similar TF families plotted in red and encircled in gray. (d) Box plot of ATAC-seq signal (Log2FoldChange; BRG1/Control) at the BRG1 CUT and RUN peaks annotated to all high epithelial genes (n = 48 peaks), all low epithelial genes (n = 94 peaks) and non-epithelial genes (n = 15,562 peaks). Non-epithelial genes defined as a BRG1 CUT and RUN-seq peak annotated to nearest gene not contained in either high or low group. Statistical analysis was performed by Wilcoxon Rank Sum Test on low epithelial versus non-epithelial (N.S., p-value=0.907), low epithelial versus high epithelial (p-value=3.5e−4), and high epithelial versus non-epithelial (p-value=5.4e−5). (e) IGV browser tracks of two epithelial signature loci. Source data is available in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Known transcription factor motif analysis at the promoter of genes that compromise xCell signatures was performed by HOMER. Default settings defined by HOMER were used for promoter region (−300 bp, +50 bp from Transcription Start Site) and background. Transcription factors that were also expressed in RNA-seq data were plotted. Transcription factors that were not expressed at a mean across all samples greater than four TPMs were eliminated. Highest ranking based on -log(p-value) and Ratio (% Target / % Background) are colored red. Those of similar family are circled in gray. AP-1 family members are labeled. (A) Epithelial low group (defined in BIN67) is shown the same as Figure 5b with AP-1 family members additionally pointed out (n = 100 genes in category). (B) Keratinocytes (n = 121 genes in signature). (C) Melanocytes (n = 212 genes in signature). (D) Astrocytes (n = 219 genes in signature). (E) Smooth muscle (n = 308 genes in signature). (F) Mesenchymal stem cells (MSC; n = 105 genes in signature). (G) Th2 cells (n = 22 genes in signature).
+
 The recruitment and co-localization of BRG1 and c-Jun to the chromatin lead us to question if chromatin accessibility was differentially changing at these sites. ATAC-seq signal (log2FoldChange; BRG1/Control) was determined at BRG1 CUT and RUN peaks in BIN67 that are annotated to epithelial low, epithelial high, or non-epithelial genes (Figure 5d). Chromatin accessibility increased more for the high epithelial group than for the low epithelial group and non-epithelial groups (Figure 5d). At individual loci, strong recruitment of both BRG1 and c-Jun can be seen near the promoters and in upstream regions of genes (Figure 5d, S100A2 and SFN). These results collectively support the concept that the increased expression of the epithelial high genes in BIN67 depends upon BRG1 recruitment and chromatin remodeling combined with the activity of AP-1.
 
-## AP-1 activity is necessary for BRG1-dependent epithelial gene and protein expression
+### AP-1 activity is necessary for BRG1-dependent epithelial gene and protein expression
 
 We next asked if AP-1 activity was biologically necessary for the BRG1-induced epithelial-like signature. Because a variety of AP-1 families and members exist, we first in BIN67 and SCCOHT-1 to determine if the expression of a particular AP-1 family predominates across SCCOHT cell lines (Figure 6—figure supplement 1). We found that the gene expression of many members corresponding to each of the four main families (FOS, JUN, ATF, MAF) were upregulated after BRG1 reexpression in BIN67 and SCCOHT-1 cells (Figure 6—figure supplement 1A, B). In order to inactivate a broad range of these AP-1 family members, we created an inducible dominant negative AP-1 cell line in BIN67 cells (BIN67 pIND20-FLAG-A-FOS). Unlike other dominate negative AP-1 constructs that specifically delete the transactivation domain in particular family members and still allow for DNA binding (Tichelaar et al., 2010), A-FOS prevents the activity of AP-1 by an acidic extension that closes the DNA-binding domain, preventing it from binding and localizing on DNA (Olive et al., 1997). Therefore, A-FOS interacts ubiquitously with any AP-1 family member, allowing us to address if the binding of AP-1 to DNA is necessary along with its activity, without focusing on a particular family member/dimer. BIN67 pIND20-FLAG-A-FOS cell lines were first characterized for optimal A-FOS induction (Figure 6—figure supplement 2A). Cells were plated and induced with doxycycline (DOX) for 2 days and then processed with the BRG1 transfection-fast puromycin selection as described previously, and then harvested for protein extraction and RNA-seq (Figure 6a).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig6-v2.jpg)
+
+**Figure 6.:** (a) Experimental design for BRG1 reexpression and A-FOS induction. BIN67 pIND20-FLAG-A-FOS cells were induced for 2 days with DOX prior to BRG1 reexpression. BRG1 reexpression followed previous reexpression studies (Figure 1a). (b) PCA analysis of BIN67 pIND20-FLAG-A-FOS (+/- DOX, +/- BRG1) RNA-seq results. (c) Boxplot of gene expression (z-scored) in BIN67 pIND20-FLAG-A-FOS (+/- DOX, +/- BRG1) for the significantly increased genes identified by BRG1 expression in parent BIN67 (Figure 1C; n = 4087), p-values ~0 between Control samples and 2.4e−6 between BRG1 samples by (Wilcoxon signed-rank test). (d) Boxplot of gene expression (z-scored) in BIN67 pIND20-FLAG-A-FOS (+/- DOX, +/- BRG1) for the genes in the epithelial signature that were measurable by RNA-seq n = 159. (p-values 0.96 between Control samples, and 4.95e−22 between BRG1 samples by Wilcoxon signed-rank test). (e) Western blots for BIN67 +/- BRG1 +/- AFOS following experimental design in (a). CD44 shown at low/high exposure by LiCOR detection. Blots are technical duplicates of the same protein sample run in parallel. Par = Parent. AFOS = BIN67 pIND20-FLAG-A-FOS cells. CTRL = control transfected. UN = untransfected. PANC-1 serves as a positive control for CD44 and Claudin-4 protein expression. Ku 70/80 serves as an internal loading control. Source data is available in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Heatmap of RNA-seq counts of AP-1 family members for (A) BIN67 and (B) SCCOHT-1. Counts (gene and library scaled TPMs) are log scaled and mean centered. Individual replicates are shown. Heatmap of DESeq2 log2FoldChange (log2FC) results for AP-1 family member gene expression (RNA-seq). Genes are in same row order as heatmap 4A. AP-1 main family defined for each gene. Rows are ordered the same as other heatmaps.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/59073/elife-59073-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) BIN67 pIND20-FLAG-A-FOS cells were induced with doxycycline (DOX; [1 µg/mL]) for 0, 24, 48, and 72 hr (hr). Media and DOX was replaced daily. Protein was extracted by RIPA High-Salt buffer and 30 µg of protein was loaded for western blotting analysis. Ku 70/80 serves as an internal loading control. (B) Scatter plot of RNA-seq gene expression (Log2FoldChange = BRG1/Control) for BIN67 pIND20-FLAG-A-FOS (-DOX condition) versus BIN67 parent. Genes that were significantly changing in BIN67 pIND20-FLAG-A-FOS (-DOX condition; BRG1 versus control) were plotted (n = 767 genes). (C) Volcano plot of RNA-seq differential gene expression in BIN67 pIND2-FLAG-A-FOS, Control transfected (+DOX/-DOX). (D) Volcano plot of RNA-seq differential gene expression in BIN67 pIND20-FLAG-A-FOS, BRG1 transfected (+DOX/-DOX). (E) RNA-seq heatmap of the 405 downregulated genes (BIN67 pIND20-FLAG-A-FOS, BRG1) transfected (+DOX/-DOX; Figure 5e). Par = Parent. AFOS = pIND20 FLAG-A-FOS. Not expressed defined as NA log2FoldChange by DESeq2.
 
 Reexpression of BRG1 in BIN67 pIND20-FLAG-A-FOS cells (-DOX conditions) resulted in 767 genes that differentially changed (687 significantly upregulated, 80 significantly downregulated) (Figure 6—figure supplement 2B; Supplementary file 3A). The log2FoldChange for these 767 genes were plotted against BIN67 parent to determine if there were any changes in gene expression due to the presence of the inducible vector (Figure 6—figure supplement 2B). We found that BIN67 pIND20-FLAG-A-FOS (-DOX condition; absence of A-FOS) cells +/- BRG1 recapitulated the parental BIN67 +/- BRG1 by a strong correlation (R2 = 0.724, Pearson’s Correlation p-value<2.2e-16) in log2FoldChange for the 767 statistically significant genes (Figure 6—figure supplement 2B). To determine the global effect that A-FOS induction and BRG1 reexpression have in BIN67 cells, we performed unsupervised analysis (PCA) for RNA-seq samples (Figure 6b). Unsupervised principal component analysis of the four conditions (+/- BRG1, +/- DOX(A-FOS)) in BIN67 pIND20-FLAG-A-FOS showed that that all control transfected conditions clustered together (blue), regardless of the induction of A-FOS (Figure 6b). However, BRG1 transfected conditions segregated separately based on the presence or absence of DOX (A-FOS) (red), in addition to segregating from control transfected samples (Figure 6b). The little to no effect that the induction in of A-FOS had on control transfected cells was confirmed with differential expression analysis of RNA-seq data where only eight genes were significantly upregulated and 24 genes were significantly downregulated (Figure 6—figure supplement 2C; Supplementary file 3B). This is a surprising result, as we would have expected that blocking AP-1 binding activity would have significant effects on gene expression given AP-1’s extensive role in cell cycle and regulation of other cellular processes (Chinenov and Kerppola, 2001; Kappelmann et al., 2014; Hess et al., 2004; Shaulian and Karin, 2001; Shaulian and Karin, 2002). However, as expected with the PCA analysis, the induction of A-FOS had a greater effect on BRG1 reexpressed cells (Figure 6—figure supplement 2D). We found that more genes were downregulated upon A-FOS induction than upregulated when BRG1 was reexpressed (405 significantly downregulated and 52 significantly upregulated) (Figure 6—figure supplement 2D; Supplementary file 3C). Of the 405 genes that were downregulated in the presence of A-FOS (+DOX) and BRG1 reexpression, nearly all these genes were upregulated by BRG1 in BIN67 parental cell line and BIN67 pIND20-FLAG-A-FOS, -DOX conditions (Figure 6—figure supplement 2E). Since AFOS induction alone had little effect on BIN67 cells and the greatest changes were seen with both the reexpression of BRG1 and induction of A-FOS, we determined that BRG1 is necessary for nearly all AP-1-dependent gene changes in BIN67 cells.
 
@@ -148,43 +204,319 @@ In summary, we have shown that reexpression of BRG1 in the SCCOHT cell line, BIN
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>BRG1</td>
+      <td>Ensembl</td>
+      <td>ENSG00000127616</td>
+      <td>SMARCA4</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>BRM</td>
+      <td>Ensembl</td>
+      <td>ENSG00000080503</td>
+      <td>SMARCA2</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>JUN</td>
+      <td>Ensembl</td>
+      <td>ENSG00000177606</td>
+      <td>JUN</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>BIN67</td>
+      <td>Gamwell et al. (2013) doi: 10.1186/1750-1172-8-33</td>
+      <td>SCCOHT Cell Line</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SCCOHT-1</td>
+      <td>Otte et al. (2014) doi: 10.1186/s13023-014-0126-4</td>
+      <td>SCCOHT Cell Line</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>COV434</td>
+      <td>Karnezis et al., 2020. doi: 10.1016/j.ygyno.2020.12.004</td>
+      <td>SCCOHT Cell Line</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell Line (Homo sapiens)</td>
+      <td>A427</td>
+      <td>ATCC HTB-53</td>
+      <td>Non-Small Cell Lung Cancer Cell Line</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pBabe-puro</td>
+      <td>https://www.addgene.org/1764/</td>
+      <td>RRID:Addgene_1764</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pBJ5-BRG1</td>
+      <td>https://www.addgene.org/17873/</td>
+      <td>RRID:Addgene_17873</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pCDNA3(+)-neo</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lentiviral Construct (Homo sapiens)</td>
+      <td>pINDUCER20-FLAG-A-FOS</td>
+      <td>Ibrahim &amp; Abudu et al. (2018). doi: 10.18632/oncotarget.26047</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lentiviral Construct (Homo sapiens)</td>
+      <td>pINDUCER20-BRG1</td>
+      <td>pINDUCER20 Backbone: https://www.addgene.org/44012/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Brg1 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Ab110641, RRID:AB_10861578</td>
+      <td>CUT and RUN (1:25), WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Jun (rabbit monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>9165,RRID:AB_2130165</td>
+      <td>CUT and RUN (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Jun (rabbit )</td>
+      <td>ThermoFisher</td>
+      <td>MA5-15172, RRID:AB_10979794</td>
+      <td>CUT and RUN (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-T7 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>13246,RRID:AB_2798161</td>
+      <td>CUT and RUN (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (Rabbit Monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>3900, RRID:AB_1550038</td>
+      <td>CUT and RUN (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD44 (Mouse Monoclonal)</td>
+      <td>Larry S. Sherman Lab and ATCC Hermes-3</td>
+      <td></td>
+      <td>WB (1:200); IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Claudin-4 (Mouse Monoclonal Clone 3E2C1)</td>
+      <td>ThermoFisher (Invitrogen)</td>
+      <td>32–9400, RRID:AB_2533096</td>
+      <td>WB (1:1000); IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ku 70/80 (Rabbit Polyclonal)</td>
+      <td>Dale Ramsden Lab - UNC Chapel Hill</td>
+      <td></td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Actin (Rabbit Monoclonal)</td>
+      <td>Sigma</td>
+      <td>A2066</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG (Rabbit Monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>2368S RRID:AB_2217020</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fugene 6</td>
+      <td>Promega</td>
+      <td>E269A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Kapa Hyperprep</td>
+      <td>Roche</td>
+      <td>KK8504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CUT and RUN reagents</td>
+      <td>Cell Signaling Technologies</td>
+      <td>40366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Deeptools v3.2.0</td>
+      <td>10.1093/nar/gkw257</td>
+      <td>RRID:SCR_016366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2 v 2.3.4.1</td>
+      <td>10.1038/nmeth.1923</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools v 1.9</td>
+      <td>10.1093/bioinformatics/btp352</td>
+      <td>RRID:SCR_002105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Macs2 2.1.2</td>
+      <td>10.1186/gb-2008-9-9-r137</td>
+      <td>RRID:SCR_013291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR (v 2.5.3a)</td>
+      <td>10.1093/bioinformatics/bts635</td>
+      <td>RRID:SCR_015899</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FASTQC (v 0.11.5)</td>
+      <td>Andrews, 2010:http://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+      <td>RRID:SCR_014583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 (v1.22.2)</td>
+      <td>10.1186/s13059-014-0550-8</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER (v4.10)</td>
+      <td>10.1016/j.molcel.2010.05.004</td>
+      <td>RRID:SCR_010881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard (v2.10.3 and v 2.20)</td>
+      <td>http://broadinstitute.github.io/picard/</td>
+      <td>RRID:SCR_006525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bedtools (v2.26.0)</td>
+      <td>10.1093/bioinformatics/btq033</td>
+      <td>RRID:SCR_006646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>tximport(v1.14.0)</td>
+      <td>10.18129/B9.bioc.tximport</td>
+      <td>RRID:SCR_016752</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>salmon(v0.8.2)</td>
+      <td>10.1038/nmeth.4197; https://combine-lab.github.io/salmon/</td>
+      <td>RRID:SCR_017036</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 BIN67, SCCOHT-1, COV434, A427 (ATCC), MCF-7 (ATCC), HeLa (D98OR; HeLa Subclone), 293FT (Michael Emanuale Lab UNC), PANC-1 (ATCC), and NHF+Tert (William Kaufmann Lab, UNC) cells were cultured in RPMI-1640 (Gibco #11875–093) supplemented with 10% FBS and maintained at 37°C in a humidified incubator with 5% CO2. Cells were tested for mycoplasma and STR profiled for verification of identity.
 
-## Transfections
+### Transfections
 
 Four biological replicates of BIN67 cells were co-transfected (FuGENE 6, Promega #E269A) with either control (pCMV-neo or pCDNA3-neo) or BRG1 (PBJ5-BRG1) plasmids at a 10:1 ratio to a plasmid containing puromycin resistance (pBABE-puro). Twenty-four hours after transfection, cells were placed on 2 µg/ml puromycin for 3 days and then harvested for analyses. Samples from each biological replicate were divided equally and processed for ATAC-seq and RNA-seq as outlined below (Figure 1A). Separate experiments consisting of biological triplicates were prepared for proteomic analysis and biological duplicates were prepared CUT and RUN analysis (Figure 1A).
 
 SCCOHT-1 cells were transfected as described above with the modifications: cells were transfected at a 6.25:1 ratio of plasmid:pBABE-puro and selected in 0.5 µg/ml puromycin. SCCOHT-1 cells +/- BRG1 were processed for RNA-seq and CUT and RUN. COV434 cells were transfected as described above with the following modifications: cells were transfected at a ratio 10–6.25:1 of plasmid:pBABE-puro and selected in 2–3 µg/ml puromycin. COV434 cells +/- BRG1 were processed for RNA-seq.
 
-## Inducible cell line generation
+### Inducible cell line generation
 
 A lentivirus construct containing pINDUCER20-Flag-A-FOS was generated as previously described (Ibrahim et al., 2018). BIN67 pIND20-A-FOS cell lines were generated by lentiviral infection as previously described (Wei et al., 2014) and subsequent selection in G418 containing medium [10% TET-FREE FBS (GeminiBio #100–106) + 800 µg/ml G418 (Gibco #10131035), RPMI-1640] to create mass populations. For all A-FOS inductions, BIN67 pIND20-A-FOS cells were induced with 1 µg/µl of doxycycline (DOX) daily with media change for 48 hr prior to transfections.
 
 A427 pINDUCER20-BRG1 (A427 pIND20-BRG1) cell lines were generated by lentiviral infection of the pINDUCER20-BRG1 construct (Gateway Cloning) and subsequently selected in G418 containing medium +selecting in 400 µg/ml G418 to create a mass population. Following selection, the mass population was single cell cloned and screened for BRG1 expression after DOX (1 µg/µl) induction for 48 hr by western blotting. Clones that were able to induce BRG1 were pooled to create a mass pool of A427 pIND20-BRG1. For all RNA-seq studies, A427 pIND20-BRG1 cells were induced with DOX (1 µg/µl) for 48 hr.
 
-## RNA-seq sample preparation
+### RNA-seq sample preparation
 
 For studies with BIN67, SCCOHT-1, and COV434 cells, RNA from frozen cell pellets was extracted using the Zymo Quick-RNA Miniprep Kit (Zymo cat# R1054). Total RNA was prepared using the Illumina TruSeq mRNA v2 kit with an input of 500 ng of RNA for each sample to produce unstranded RNA libraries following the manufacturer’s protocol. Final RNA libraries were quantified using the Qubit High Sense Reagent kit and Agilent Tapestation HSD1000 tapes. Libraries were equimolar pooled and paired end sequenced across three lanes of a HiSeq4000 (paired end x 78 bp).
 
 For RNA-seq analysis of the BIN67 pIND20-A-FOS and A427 pIND20-BRG1 cell lines, RNA was extracted from frozen cell pellets in biological duplicate (BIN67 pIND20-A-FOS) and biological triplicate (A427 pIND20-BRG1) using Zymo Quick-RNA Miniprep Kit. Library preparations and RNA sequencing was performed by Novogene Inc.
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 For each sample, fastq files were initially analyzed by fastqc (v0.11.5). Reads were aligned with STAR (v2.5.3a) to GENCODE v24 using the two-pass method. Aligned reads were quantified by salmon (v0.8.2) for transcripts per million (TPM) counts. TPMs were summarized to gene level using tximport (v1.10.1) in R. Differentially expressed genes between BRG1 and Control samples using DESeq2 (v1.22.2). Counts summarized to gene level from RNA-seq results were VST normalized using DESeq2. VST normalized counts were provided as input for gene set enrichment analysis performed by GSEA (v3.0) for both the Hallmark and GO (c5 all) gene sets from MSigDB (v6.0). Cell type enrichment analysis was performed by xCell (Aran et al., 2017) using gene and library scaled TPMs (tximport, countsFromAbundance = lengthScaledTPMs) as input. xCell heatmap was generated using the final score file provided by xCell analysis. Transcription factor motif analysis at the promoter of BIN67 xCell genes was performed with HOMER(v4.10) findMotifs.pl command with default settings. IGV tracks (bigwig) were generated on the merged biological replicates by deeptools (v3.2.) bamCoverage with a binsize of 30 and normalized using RPKMs.
 
 Epithelial signature scoring was performed by the R package, singscore, for the curated epithelial signature (n = 171 unique genes) and using gene and library scaled TPMs (tximport, countsFromAbundance = lengthScaledTPMs) as input.
 
-## ATAC-seq sample preparation
+### ATAC-seq sample preparation
 
 Four biological replicates were processed for ATAC-seq following standard protocol (Buenrostro et al., 2013) with modifications: increasing the cell number per sample to 100,000 cells, the use of Zymo ChiP DNA Clean and Concentrator Kit (Zymo Cat #D5205) in place of Qiagen MinElute, and lastly size selected with AMPure XP Beads (1.8x volume; Agencourt #A63880). For each biological replicate, samples were done in technical triplicate and run on 6% TBE gel to assay for nucleosome banding. The technical sample with the most pronounced nucleosome banding within each biological sample was selected for future studies and were then analyzed by Agilent Tapestation (UNC Vironomics Core) for molarity content. Samples were equimolar pooled (5 nM each) and paired end sequenced across two lanes on a Illumina HiSeq2500 (Paired end x 50 bp; UNC High Throughput Sequencing Facility).
 
-## ATAC-seq data analysis
+### ATAC-seq data analysis
 
 For each sample, fastq files from both sequencing lanes were merged with cat command. Fastq files were initially analyzed by fastqc (v0.11.5). Adaptor sequences were trimmed from reads using trimgalore (v0.6.2) with –nextera argument. Reads were aligned with Bowtie2 (v2.3.2) to UCSC hg38 using –x 2000. Aligned mitochondrial reads were eliminated. Aligned reads were sorted with samtools (v1.9) and duplicates were removed using picard (v2.10.3). Subsequently, hg38 blacklisted regions (https://sites.google.com/site/anshulkundaje/projects/blacklists) (ENCODE Project Consortium, 2012) and BRG1 plasmid reads were removed using bedtools (v2.26.0) intersect. Biological replicates for each condition were merged using samtools merge (v1.9). Peaks were called on the merged replicates using MACS (v2.1.0) without model (--nomodel). Called peaks from both control and BRG1 conditions were merged into a union peak set using bedtools merge (v.2.26.0). Reads under the union peak set in each biological sample were counted using featureCounts (subread v1.6.3). Differential peak analysis was performed using DESeq2 (v1.22.2). Peak annotation was performed with HOMER (v4.10). Motif analysis on gained peaks was performed with HOMER (v4.10) with static peaks as background input. For static and lost peaks, motif analysis was performed with HOMER (v4.10) using the default for background. IGV tracks (bigwig) for the merged biological replicates were generated by deeptools (v3.2.) bamCoverage with a binsize of 30 and normalized using RPKMs. FRA1 motifs in the genome were annotated with HOMER (v4.10) scanMotifGenomeWide.pl tool.
 
-## The Cancer Genome Atlas (TCGA) data integration: ATAC-seq, xCell results, BRG1 mutation frequency
+### The Cancer Genome Atlas (TCGA) data integration: ATAC-seq, xCell results, BRG1 mutation frequency
 
 Cancer type-specific ATAC-seq peak sets for TCGA tumors were downloaded from supplemental data published in (https://gdc.cancer.gov/about-data/publications/ATACseq-AWG) (Corces et al., 2018). The overlap of ATAC-seq peaks gained by BRG1 reexpression in BIN67 cells (Gained ATAC-seq Peaks; n = 4023 peaks) with TCGA ATAC-seq peaks was determined by bedtools intersect. The percentage of gained ATAC-seq peaks that overlapped with a TCGA ATAC-seq peak was determined for each tumor type (percentage overlap = [# of gained peaks that overlap per TCGA tumor type/4023] x 100).
 
@@ -192,15 +524,15 @@ Calculated xCell scores for TCGA tumors were downloaded from supplemental data p
 
 Data from TCGA was downloaded from the Genomic Data Commons using TCGABiolinks to identify mutation status of BRG1 (SMARCA4). Silent mutations of SMARCA4 were eliminated for this study. The fraction of tumors with BRG1 mutations was calculated as the total mutated tumors divided by the total number of tumors available and reported as a percentage.
 
-## CUT-and-RUN sample preparation
+### CUT-and-RUN sample preparation
 
 CUT and RUN was performed as previously described (Skene and Henikoff, 2017) with minor modifications (Protocol available through protocols.io; dx.doi.org/10.17504/protocols.io.zcpf2vn). Following transfection of BRG1 plasmids into BIN67 or SCCOHT-1 cells, as described above, 50,000–200,000 were harvested using accutase and bound to Concanavalin A coated beads (Epicypher). Cells bound to beads were then incubated with antibody overnight at 4°C (1:25 dilution of BRG1 (Abcam BRG1 #ab110641, EPNCIR111A)), 1:25 dilution of JUN (Cell Signaling #9165 or ThermoFisher #MA5-15172), or 1:25 for T7 Rabbit Monoclonal (Cell Signaling #13246, used with SCCOHT-1) or Rabbit Monoclonal IgG as control (Cell Signaling #3900, used with BIN67). Following overnight incubation with antibody, cells were washed four times in Digitonin Wash buffer, resuspended in Digitonin Wash buffer containing protein A/G MNase (Cell Signaling Technologies) and then incubated for 1 hr at 4°C. After binding of protein A/G-MNase, cells were again washed four times before resuspension in ice cold Digitonin Wash Buffer. Calcium chloride was added to final concentration of 2 mM to induce digestion of chromatin and the reaction was allowed to proceed at 0°C for 30 min before being stopped by the addition of STOP buffer to a final concentration of (170 mM NaCl, 10 mM EDTA, 2 mM EGTA, 0.05% Digitonin, 50 µg/mL RNase). DNA was extracted by incubating cells at 37°C for 30 min and purified using a Zymo Clean and Concentrator ChIP Kit followed by library prep (Kapa HyperPrep). Libraries were sequenced on an Illumina Nextseq 500 (Paired-end 37 base-pair reads).
 
-## CUT-and-RUN analysis
+### CUT-and-RUN analysis
 
 Reads were trimmed using trim_galore (version 0.6.2), and aligned to hg38 using bowtie2 (version 2.3.4.1) using –very-sensitive-local –no-mixed –no-discordant –no-unal –dovetail. Reads were indexed and sorted using samtools (v1.9) and duplicates were removed using picard (v 2.20). Genome coverage was calculated using Deeptools bamCoverage (v3.2.0) using –binSize 30 –smoothLength 60 –extendReads –normalizeUsingRPGC –ignoreDuplicates. These tracks were further processed by calculating the ratio between IP and IgG and then averaged using wiggletools and wigToBigWig. Peaks were called using Macs2 (v2.12) for each antibody relative to IgG as control. We annotated BRG1 and c-Jun peaks to their nearest genes using ChIPpeakAnno (3.22.4) to assess changes in gene expression associated with BRG1 and/or c-Jun occupancy. All heatmaps were drawn using Deeptools (v3.2.0).
 
-## Proteomic analysis
+### Proteomic analysis
 
 Total protein preparation from frozen cell pellets (2 × 106 cells per sample) was performed as previously described (Kovalchik et al., 2019). Tryptic peptides from each sample were individually labeled with TMT 11-plex labels, pooled, and fractionated by high pH RP-HPLC into 48 fractions and concatenated into 12 fractions, desalted, orthogonally separated, and analyzed using an Easy-nLC 1000 coupled to a Thermo Scientific Orbitrap Fusion mass spectrometer operating in MS3 mode.
 
@@ -208,15 +540,15 @@ MS/MS were searched against the UniProt reference proteome (20,247 sequences, 20
 
 Downstream data processing was performed in R software, with PSMs assigned to a unique protein ID and not part of a common contaminant list were median aggregated into unique peptides. In order to detect which proteins were differentially expressed between conditions, PECA (Suomi et al., 2015) analysis was performed at the peptide level, using median normalization and modified t-statistic parameters. Only proteins with two or more unique peptides were considered for further analysis. GSEA on the log2 peptide counts was performed by GSEA (v3.0) for both the Hallmark and GO (c5 all) gene sets from MSigDB (v6.0).
 
-## Protein extractions
+### Protein extractions
 
 Cells were washed in the dish with cold 1X PBS on ice. Cells were lysed and harvested using a cell scraper in RIPA High-Salt Extraction Buffer (20 mM Tris pH 7.5, 400 mM NaCl, 0.5% NP-40, and 0.1% SDS) supplemented with 1X protease inhibitors (Roche cat# 11836170001). Lysates were incubated on ice for 30 min and then pelleted at 14,000 RPMs for 30 min. Supernatant containing extracted protein was removed and saved. Protein was quantified using the Pierce BCA Protein Assay Kit (Thermo-Scientific cat# 23227).
 
-## Western blotting
+### Western blotting
 
 Extracted protein (7 µg) was separated on a NuPAGE 4–12% Bis-Tris Gel (Invitrogen #NP0321BOX) in MOPS SDS Running Buffer (Nupage #NP0001) at 184V for 45 min. Proteins were transferred to a nitrocellulose membrane (Thermo-Scientific #88018) using 2x Bis-Tris Transfer Buffer (Boston Bio-Products # BP-193) with 15% Ethanol at 24V for 1 hr. Transfer was confirmed with ponceau staining and blocked in 5% Non-Fat Dry Milk (NFDM) in 1x PBS for 1 hr. The membrane was washed using 1x PBS (3 × 10 min), cut, and incubated overnight at 4°C in the following primary antibodies: BRG1 (1:10,000 - Abcam #ab110641), Ku 70/80 (1:10,000 - a gift from Dale Ramsden Lab, UNC), FLAG (1:1,000 - CST #2368S), CD44 (1:200 - Hermes 3) (Strobeck et al., 2001), and Claudin-4 (1:1,000 - Invitrogen #32–940). Following primary incubation, membranes were washed in 1X PBS (3 × 10 min) and incubated in LiCOR Secondary (IR Dye 800cw; Goat anti-Rabbit: cat# 926–32211 or Donkey anti-Mouse: cat# 926–32212) diluted into 5% NFDM 1X PBS (1:5000 to 1:10,000) for 1 hr at room temperature. Blots were washed with 1x PBS (3 × 10 min) and imaged on LiCOR Odyssey machine at High Quality and a resolution of 169 µm.
 
-## Tissue microarray (TMA) construction and immunohistochemistry
+### Tissue microarray (TMA) construction and immunohistochemistry
 
 The epithelial ovarian cancer TMA was built using cases from the archives of Vancouver General Hospital. Duplicate 0.6 or 1.0 mm cores from each case were used for TMA construction, as described previously (Alkushi et al., 2007). The SCCOHT TMA was built as previously described (Karnezis et al., 2016). TMAs were cut at 4 μm thickness onto Superfrost+ glass slides, and were processed using the Ventana Discovery Ultra machine (Ventana Medical Systems, Tucson, AZ, USA) as per manufacturer’s protocol with proprietary reagents.
 

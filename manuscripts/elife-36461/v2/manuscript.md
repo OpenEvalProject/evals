@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.36461.001 Dengue virus (DV) is a compact, icosahedrally symmetric, enveloped particle, covered by 90 dimers of envelope protein (E), which mediates viral attachment and membrane fusion. Fusion requires a dimer-to-trimer transition and membrane engagement of hydrophobic ‘fusion loops’. We previously characterized the steps in membrane fusion for the related West Nile virus (WNV), using recombinant, WNV virus-like particles (VLPs) for single-particle experiments (Chao et al., 2014). Trimerization and membrane engagement are rate-limiting; fusion requires at least two adjacent trimers; availability of competent monomers within the contact zone between virus and target membrane creates a trimerization bottleneck. We now report an extension of that work to dengue VLPs, from all four serotypes, finding an essentially similar mechanism. Small-molecule inhibitors of dengue virus infection that target E block its fusion-inducing conformational change. We show that ~12–14 bound molecules per particle (~20–25% occupancy) completely prevent fusion, consistent with the proposed mechanism.
+Dengue virus (DV) is a compact, icosahedrally symmetric, enveloped particle, covered by 90 dimers of envelope protein (E), which mediates viral attachment and membrane fusion. Fusion requires a dimer-to-trimer transition and membrane engagement of hydrophobic ‘fusion loops’. We previously characterized the steps in membrane fusion for the related West Nile virus (WNV), using recombinant, WNV virus-like particles (VLPs) for single-particle experiments (Chao et al., 2014). Trimerization and membrane engagement are rate-limiting; fusion requires at least two adjacent trimers; availability of competent monomers within the contact zone between virus and target membrane creates a trimerization bottleneck. We now report an extension of that work to dengue VLPs, from all four serotypes, finding an essentially similar mechanism. Small-molecule inhibitors of dengue virus infection that target E block its fusion-inducing conformational change. We show that ~12–14 bound molecules per particle (~20–25% occupancy) completely prevent fusion, consistent with the proposed mechanism.
 
 ## Introduction
 
@@ -37,13 +37,21 @@ In previous work on the mechanism of membrane fusion by West Nile virus (WNV) E,
 
 ## Results
 
-## Single-particle measurement of dengue VLP hemifusion kinetics
+### Single-particle measurement of dengue VLP hemifusion kinetics
 
 VLPs for the four DV serotypes were prepared by expression in 293 T cells, essentially as described for WNV VLPs (Chao et al., 2014). Expression was at 28°C rather than 37°C, as the latter yielded particles with substantially lower fusion activity. We measured the pH dependence of bulk hemifusion and found sharply sigmoidal curves with inflection pH of 6.1 for the DV4 VLPs and ~5.4 for those of DV1, DV2 and DV3 (Figure 2A). We used total internal reflection fluorescence microscopy as described previously (Chao et al., 2014; Floyd et al., 2008; Ivanovic et al., 2013; Kim et al., 2017) to determine single-particle dwell time distributions for hemifusion at pH 5.5 (Figure 2B), with dequenching of DiD-labeled VLPs to mark the moment of hemifusion with the supported lipid bilayer. We incorporated into the target bilayer a pseudo-receptor, to uncouple membrane attachment from exposure of the fusion loop triggered by the pH drop. The receptor was either the lectin domain of DC-SIGN-R linked through a histidine tag to a NiNTA-headgroup lipid or a similarly linked, antigen-binding fragment (Fab) from antibody 1AID-2, specific for DV2 domain II (Chao et al., 2014; Lok et al., 2008; Tassaneetrithep et al., 2003). We found no receptor-dependence of hemifusion dwell times; the data shown are with the DC-SIGN-R.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/36461/elife-36461-fig2-v2.jpg)
+
+**Figure 2.:** (A) Fusion (with liposomes, in bulk solution) for VLPs of the four DV serotypes. The fluorescence from membrane-incorporated DiD is shown as a function of pH. Hemifusion (or fusion) at low pH causes dequenching of the VLP-incorporated fluorophore. (B) Histograms of single-particle fusion dwell times (between lowering of pH and observed dequenching) at pH 5.5 for each of the four DV serotypes. Curves show fit with a single exponential (DV1, DV2, and DV4) or with a gamma distribution, N = 2 (DV3). (C) Results of a simulation with parameters as described in the text. Compare with experimental data for DV2 fusion in the panel immediately above it.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36461/elife-36461-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The contact zone is represented as in Figure 1B. Circles indicate a particular choice of inihibitor-bound monomers. Two different random selections of 7 inactivated (inhibitor-bound) monomers will permit two adjacent trimers (triangles) to form, although in general later than the first possible set of adjacent trimers that would form if all monomers were potentially active. The right-hand pattern allows three possible pairs of trimers.
+
 The dwell-time distributions in Figure 2B show some differences among the four serotypes. The exponential used to fit the distributions for DV1, DV2 and DV4 VLPs gives an effective rate constant for a first-order ‘rate-limiting step’; the best formal fit for DV3 includes two successive or parallel steps. The bulk fusion vs. pH curve is also less sharply sigmoidal than are the others. Although the inflection pH measured in bulk is similar for DV1, DV2 and DV3, the effective first-order rate of fusion for DV1 is slower. We cannot, however, with our current data relate these differences to functional differences among the isolates.
 
-## Small-molecule inhibition
+### Small-molecule inhibition
 
 The compound 3-110-22 (Figure 3) inhibits DV2 infection with IC90 of 0.7 μM (Schmidt et al., 2012). The IC50 for DV2 VLP fusion, measured in bulk, was 1–2 μM (Figure 3A). We used a concentration of 1 μM to study the effect of 3-110-22 on the dwell-time distribution for single-particle fusion at pH 5.5 (Figure 3B). Comparison of Figure 3B with the DV2 VLP panel in Figure 2B shows that presence of the inhibitor has spread the distribution and introduced a clear rise and fall, suggesting that the inhibitor has retarded a step other than the one that is effectively rate-limiting in its absence.
 
@@ -59,7 +67,7 @@ We incubated DV2 VLPs with 1 μM Alexa-555/3-110-22, removed excess compound wit
 
 **Figure 4.:** Histogram shows the number of particles with a particular number of bound fluorescent inhibitor molecules, in bins of five. The number of particles in a bin that proceeded to hemifusion in the time of the experiment is shown as the height of the purple bar; the number of non-fusing particles is the total height of the bar (blue).
 
-## Simulation of DV2 fusion
+### Simulation of DV2 fusion
 
 We modeled the conformational steps preceding hemifusion with a stochastic simulation, structured like the scheme we used for simulations of West Nile virus hemifusion (Figure 2C) (Chao et al., 2014). A hexagonal array of 30 E protomers represents the contact patch between viral and cell membranes. Each E subunit transits between an inactive state (in a dimer) and an activated monomer, which can trimerize when two other adjacent monomers are activated. Hemifusion occurs upon formation of two adjacent trimers. Dimer pairs are explicitly defined in the simulation, and a cooperativity factor increases the probability of activation when the dimer partner is already activated. The threshold for trimerization was set to pH 5.4, the bulk threshold for hemifusion, based on our previous finding that these two thresholds are the same for WNV (Chao et al., 2014). The assumption of reversibility for the DV2 E dimer-monomer transition comes from dynamic light scattering measurements performed on Kunjin virus (Chao et al., 2014). The DV2 simulation produced a dwell time histogram at pH 5.5 that could be fit with a single exponential decay (Figure 2C). In our simulation, the yield for particles achieving hemifusion (defined as the total number of fusion events in a time window divided by the total number of identified particles) was ~25%, as observed experimentally.
 
@@ -75,15 +83,15 @@ In the simulation scheme in Figure 1B, modeling the effect of inhibitor binding 
 
 ## Materials and methods
 
-## Virus-like particles (VLPs)
+### Virus-like particles (VLPs)
 
 Dengue virus-like particles were produced from a stable, mycoplasma-free 293 T cell line (obtained originally from the Broad Institute (Luo et al., 2008), maintained in our laboratories since then, and not further characterized) transfected with the pVRC8400 expression vector bearing a structural cassette containing a codon-optimized version of the prM-E sequence from the DV 1 clone 45AZ5, DV two clone Harvard/BID-V2992/2009, DV three isolate IN/BID-V2417/1984, or DV4 isolate TVP/360. A tissue plasminogen activator signal sequence preceded prM-E. The mycoplamsa-free, adherent cells were grown at 28°C in Gibco FreeStyle 293 medium (Life Technologies, Grand Island, NY). The DV VLPs in the medium were harvested after 2 days, clarified from debris by low-speed centrifugation, and precipitated with polyethylene glycol 8000. Following resuspension in buffer containing 20 mM tricine (N-(2-Hydroxy-1,1-bis(hydroxymethyl)ethyl)glycine) pH 7.8, 140 mM NaCl and 0.005% Pluronic F-127, VLPs were purified over an Optiprep density gradient (SW41 rotor, 34,000 rpm, 4°C, 2 hr. 20 min.) with 55–45−35–30−25−20–10% steps. We collected the band between the 35 and 30% densities and found this material to contain particles 35 and 50 nm in diameter as assessed by cryo- and negative-stain electron microscopy (Allison et al., 2003). The percent of uncleaved prM, estimated from Western blots, was between 10 and 20% for various preparations. Particle membranes were labeled with DiD (1,1′-dioctadecyl-3,3,3′,3′-tetramethylindodicarbocyanine perchlorate) at ∼20 μM or 20-fold the protein concentration. Excess dye was removed using NAP-10 desalting column (GE Healthcare, United Kingdom).
 
-## Small molecule synthesis
+### Small molecule synthesis
 
 Synthesis of Alexa fluor 555 conjugate began with phenol installation on 3-110-22 at the 4-position of the benzene ring according to the procedure previously reported (Schmidt et al., 2012). A primary amine with a four-carbon linker was attached to the phenol by etherification and deprotection. Amidation between the primary amine and the commercially available Alexa fluor 555 NHS ester then generated an Alexa fluor 555 conjugated 3-110-22, which was confirmed by 1H NMR.
 
-## General SI-Chemistry
+### General SI-Chemistry
 
 All reactions were monitored by LC/MS (Waters 2998 Photodiode Array Detector, Waters SQ detector 2, Waters 515 HPLC pump, Waters 2545 Binary Gradient Module, Waters System Fluidics Organizer and Waters 2767 Sample Manager) using a SunFireTM C18 column (4.6 × 50 mm, 5 µm particle size): solvent gradient = 80% A at 0 min, 1% A at 5 min; solvent A = 0.035% TFA in Water; solvent B = 0.035% TFA in MeOH; flow rate: 1.5 mL/min. Reaction products were purified by flash column chromatography using CombiFlashRf with Teledyne Isco RediSepRf High Performance Gold or Silicycle SiliaSepTM High Performance columns (4, 12, 24, 40, or 80 g) and a Waters HPLC system using SunFireTM Prep C18 column (19 × 100 mm, 5 µm particle size): solvent gradient = 80% A at 0 min, 5% A at 25 min; solvent A = 0.035% TFA in water; solvent B = 0.035% TFA in MeOH; flow rate: 25 mL/min. The purity of all compounds was greater than 95% as analyzed by LC/MS (see above). Chemical shifts are reported in parts per million (ppm, δ) downfield from tetramethylsilane (TMS). Coupling constants (J) are reported in Hz. Spin multiplicities are described as br (broad), s (singlet), d (doublet), t (triplet), q (quartet) and m (multiplet).
 
@@ -97,13 +105,13 @@ Step 1: To a solution of compound 2 (200 mg, 0.37 mmol) in CH2Cl2 (4 mL) was add
 
 Step 2: To a solution of compound 2 (2.7 mg, 0.006 mmol) in N,N-dimethylformamide (0.5 mL) were added DMAP (0.6 mg, 0.0048 mmol) and Alexa fluor 555 NHS ester (ThermoFisher Scientific, m.w. ~1250, 5 mg, 0.004 mmol). The resulting mixture was stirred at room temperature for 3 hr, diluted with DMSO and the product purified by prepHPLC to give compound three as a red solid (m.w. ~1579, 1.5 mg, 24%).
 
-## Single particle assay
+### Single particle assay
 
 Single particle data were collected as previously described (Chao et al., 2014). Briefly, glass coverslips were cleaned by sonication in ‘7X’ detergent, 1M potassium hydroxide, acetone and ethanol, and dried for 1 hr at 100°C. Polydimethylsiloxane (PDMS) flow cells with 0.5 mm wide and 70 μm high channels (five per cell) were bonded to plasma-treated glass. Teflon FEP tubing (0.2 mm, Upchurch Scientific) connected an Eppendorf tube with solution to the channel, and Intramedic polyethylene tubing (0.76 mm) connected the channel to a syringe pump (Harvard Pump 11; Harvard Apparatus, Holliston, MA).
 
 Liposomes for preparing planar bilayers contained 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE), 1-oleoyl-2-palmitoyl-sn-glycero-3-phosphocholine (POPC), cholesterol, and 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC), 1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-N-(carboxyfluorescein) (FL-PE) and 1,2-dioleoyl-sn-glycero-3-[(N-(5-amino-1-carboxypentyl)iminodiacetic acid)succinyl] (Ni-NTA DOGS) (Avanti Polar Lipids, Alabaster, AL) in a ratio of 4:2:2:2:0.02:1%. Liposomes at 10 mg/ml were extruded through a 200 nm pore-size polycarbonate membrane filter. Liposomes were loaded into the flow cell, and the flow stopped to allow bilayers to form. We performed fluorescence recovery after photobleaching experiments to confirm the fluidity of the bilayer. Unattached liposomes were washed away, and 1A1D-2 Fab or the lectin domain of DCSIGN-R, with a C-terminal His6 tag, was introduced at 50 nM for 2 min. 1A1D-2 Fab was produced from a stable 293T line expressing both heavy and light chains from the pVRC8400 vector, purified by Ni-affinity chromatography and S200 size-exclusion chromatography. DCSIGN-R was expressed from Hi-5 cells infected with recombinant baculovirus. Labeled virus particles were loaded onto the pseudo-receptor decorated bilayer. To initiate fusion, we introduced acetate buffer (100 mM sodium acetate, pH 5.0–5.5) or MES (100 mM, pH 5.75–6.25), with 140 mM sodium chloride and 0.005% Pluronic F-127.
 
-## Fluorescence measurements
+### Fluorescence measurements
 
 End-point bulk fusion data were collected using a GE Amersham Typhoon plate reader at 633 and 670 nm excitation and emission wavelengths respectively in 96-well clear-bottom plates with 2 mg/ml final lipid concentration (200 nm liposomes prepared as described above). VLPs were prepared and labeled with DiD as previously described (Chao et al., 2014).
 
@@ -113,12 +121,12 @@ Single-particle fusion data were collected on an inverted Olympus IX71 fluoresce
 
 The single-fluorophore fluorescence intensity was calibrated by drying buffer containing the labeled small molecule onto a glass slide and monitoring single step photobleaching events under identical imaging conditions as in the experiment.
 
-## Competition assay
+### Competition assay
 
 We used TIRF microscopy, as described (Chao et al., 2014). Coverslips were sonicated in ethanol and water and then glow discharged prior to use. VLPs were dye labeled as in fusion experiments, but at 1:10 the concentration of DiD as we did not require quenching; the concentration of VLPs was five times higher than used for the bulk fusion assay. Labeled VLPs were mixed with 1 μM fluorescent inhibitor for five mins before loading onto the TIRF. For competition assays with unlabeled inhibitor, DiD labeled VLPs were first incubated with the 3-110-22 for 5 mins at 1 or 10 μM, followed by addition of Alexa555/3-110-22 for five mins.
 
 Calcuations were made by densitometry of the VLP spots as identified in ImageJ. The spots were found with the VLP fluorescent channel (DiD) and then both channels were measured, background subtracted, and the ratio of Alexa555 to DiD determined.
 
-## Simulations
+### Simulations
 
 Matlab code, modified from our previous work (Chao et al., 2014), was used with parameters optimized against experimentally measured values for DV2. Code is publicly available at https://github.com/Harrison-Lab/Flavivirus (Harrison-Lab, 2018; copy archived at https://github.com/elifesciences-publications/Flavivirus).

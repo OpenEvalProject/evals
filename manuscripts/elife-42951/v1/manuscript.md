@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.42951.001 Regulators of G-protein Signaling are a conserved family of proteins required in various biological processes including cell differentiation. We previously demonstrated that Rgs12 is essential for osteoclast differentiation and its deletion in vivo protected mice against pathological bone loss. To characterize its mechanism in osteoclastogenesis, we selectively deleted Rgs12 in C57BL/6J mice targeting osteoclast precursors using LyzM -driven Cre mice or overexpressed Rgs12 in RAW264.7 cells. Rgs12 deletion in vivo led to an osteopetrotic phenotype evidenced by increased trabecular bone, decreased osteoclast number and activity but no change in osteoblast number and bone formation. Rgs12 overexpression increased osteoclast number and size, and bone resorption activity. Proteomics analysis of Rgs12-depleted osteoclasts identified an upregulation of antioxidant enzymes under the transcriptional regulation of Nrf2, the master regulator of oxidative stress. We confirmed an increase of Nrf2 activity and impaired reactive oxygen species production in Rgs12-deficient cells. Conversely, Rgs12 overexpression suppressed Nrf2 through a mechanism dependent on the 26S proteasome, and promoted RANKL-induced phosphorylation of ERK1/2 and NFκB, which was abrogated by antioxidant treatment. Our study therefore identified a novel role of Rgs12 in regulating Nrf2, thereby controlling cellular redox state and osteoclast differentiation.
+Regulators of G-protein Signaling are a conserved family of proteins required in various biological processes including cell differentiation. We previously demonstrated that Rgs12 is essential for osteoclast differentiation and its deletion in vivo protected mice against pathological bone loss. To characterize its mechanism in osteoclastogenesis, we selectively deleted Rgs12 in C57BL/6J mice targeting osteoclast precursors using LyzM-driven Cre mice or overexpressed Rgs12 in RAW264.7 cells. Rgs12 deletion in vivo led to an osteopetrotic phenotype evidenced by increased trabecular bone, decreased osteoclast number and activity but no change in osteoblast number and bone formation. Rgs12 overexpression increased osteoclast number and size, and bone resorption activity. Proteomics analysis of Rgs12-depleted osteoclasts identified an upregulation of antioxidant enzymes under the transcriptional regulation of Nrf2, the master regulator of oxidative stress. We confirmed an increase of Nrf2 activity and impaired reactive oxygen species production in Rgs12-deficient cells. Conversely, Rgs12 overexpression suppressed Nrf2 through a mechanism dependent on the 26S proteasome, and promoted RANKL-induced phosphorylation of ERK1/2 and NFκB, which was abrogated by antioxidant treatment. Our study therefore identified a novel role of Rgs12 in regulating Nrf2, thereby controlling cellular redox state and osteoclast differentiation.
 
 ## Introduction
 
@@ -43,23 +43,45 @@ More recent studies have shown that RANKL-induced ROS are indispensable for OC d
 
 ## Results
 
-## Targeted deletion of Rgs12 selectively reduced osteoclast formation and increased trabecular bone mass
+### Targeted deletion of Rgs12 selectively reduced osteoclast formation and increased trabecular bone mass
 
 To assess the role of Rgs12 in OC differentiation and bone remodeling in vivo, we generated a conditional gene knockout mouse model by crossing Rgs12flox/flox mice with Lysozyme M-cre (LyzMCre) transgenic mice (Rgs12 cKO). The LyzM promoter-driven Cre expression targets Rgs12 gene deletion to cells of the myeloid lineage, including monocytes/macrophages (Abram et al., 2014; Clausen et al., 1999). Micro-CT analysis of the distal femurs obtained from Rgs12flox/flox and Rgs12+/+;LyzMCre showed no statistically difference in bone histomorphometry (Figure 1—figure supplement 1). Rgs12flox/flox mice were used as controls. The Cre-lox-mediated deletion of the Rgs12 gene was confirmed by PCR amplification of spleen genomic DNA (Figure 1A) and qPCR to measure Rgs12 transcripts in isolated bone marrow macrophages (BMMs) (Figure 1B), thereby confirming our mouse Rgs12 cKO model.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/42951/elife-42951-fig1-v1.jpg)
+
+**Figure 1.:** (A) PCR of splenic genomic DNA amplifying the deletion allele in Rgs12 cKO and control mice. (B) qPCR analysis of Rgs12 mRNA levels normalized to β-actin in BMMs obtained from Rgs12 cKO and control mice. Histological assessment of bone morphology and microarchitecture of Rgs12 cKO and control mice include: (C) H and E staining of proximal tibiae (N = 4), (D) 3D micro-computed tomography (micro-CT) imaging and (E–I) quantitative measurement of femoral trabecular bone (NControl = 11, NRgs12cKO=7), (J) TRAP staining and quantitation of (K) OBs and (L–M) OCs in distal femurs (N = 5), and (N) dynamic histomorphometry analysis by double-calcein labeling and (O–P) quantitative measurements of bone formation in distal femurs (N = 5). All results are means ± SD (*p<0.05, **p<0.01, ***p<0.001). VOX-BV/TV, bone volume to tissue volume (voxel count); TRI-SMI, structure model index; Tb.Th, trabecular thickness; Tb.N, trabecular number; Tb.Sp, trabecular separation; N.Ob/B.Pm, osteoblast number per bone perimeter; N.Oc/B.Pm, osteoclast number per bone perimeter; TRAP, tartrate-resistant acid phosphatase; MNC, multinucleated cell; MAR, mineral apposition rate; BFR/BS, bone formation rate per bone surface.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42951/elife-42951-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Micro-CT imaging and (B) quantitative measurements of trabecular bone of distal femurs. All results are means ± SD (*p<0.05, **p<0.01, ***p<0.001 vs Rgs12flox/flox mice; #p<0.05, ##p<0.01, ###p<0.001 vs Rgs12+/+;LyzMCre; NS, not statistically significant).
 
 Rgs12 cKO mice exhibited increased trabecular bone mass, evident in the hematoxylin and eosin (H and E)-stained sections of the proximal tibia (Figure 1C) and 3D micro-computed tomography (micro-CT) visualization of the femoral trabecular bone morphology and microarchitecture (Figure 1D). Quantitative micro-CT measurements further demonstrated statistically significant increases in bone volume (VOX-BV/TV), accompanied by increases in both trabecular number (Tb.N) and thickness (Tb.Th), and reduced trabecular separation (Tb.Sp) (Figure 1E–I). Therefore, the targeted deletion of Rgs12 in mice resulted in increased bone mass.
 
 To determine whether the high bone mass was a consequence of decreased osteoclast numbers or increased osteoblast numbers in vivo, we quantified the cell numbers from distal femurs stained for tartrate-resistant acid phosphatase (TRAP) (Figure 1J). The histological assessment clearly demonstrates no difference in osteoblast numbers between Rgs12 cKO and control bone tissues (Figure 1K) whereas the number of TRAP+ multinucleated cells were markedly reduced in Rgs12-deficient samples (Figure 1L and M). Furthermore, a dynamic histomorphometric analysis by double calcein labeling to measure bone growth over time shows that the rate of bone formation was comparable between Rgs12 cKO and control mice (Figure 1N–P). Consequently, the results collectively support the specific role of Rgs12 in OCs and emphasizes the gene’s importance in bone remodeling.
 
-## Rgs12 promotes osteoclast formation and bone resorptive activity
+### Rgs12 promotes osteoclast formation and bone resorptive activity
 
 To further evaluate the role of Rgs12 in osteoclastogenesis, OC precursors isolated from wild-type mice (Rgs12+/+) were differentiated using macrophage colony-stimulating factor (M-CSF) and receptor activator of nuclear factor κB ligand (RANKL), the two cytokines necessary and sufficient to induce osteoclast formation. Rgs12 protein and transcript levels were dramatically upregulated upon stimulation by the differentiation factors, and seem to consistently increase into OC maturity at day 5 (Figure 2A–B). A comparison of osteoclastogenic potential between precursors derived from Rgs12 cKO and control mice show that while control BMMs differentiated into large, TRAP+ multinucleated OCs, Rgs12-deficient precursor cells showed a reduction in the number of OCs containing 6–9 nuclei and 10+ nuclei, which were also visibly smaller (Figure 2C–D). We also probed into the overall bone resorptive activity and found that Rgs12-deficient OCs have significantly reduced ability to resorb calcium phosphate surfaces (Figure 2E–F). Complementing our Rgs12 knockout model, we generated an Rgs12 overexpression OC model in which the transformed murine macrophage-like RAW264.7 cells were stably-transfected with a vector carrying a recombinant N-terminus FLAG-tagged Rgs12 gene (Flag-Rgs12). Rgs12 overexpression in RAW264.7 cells was confirmed by western blotting (Figure 2G). Using this cell model, we next determined whether Rgs12 overexpression could promote OC formation. Contrasting our findings in Rgs12 cKO primary cells, we found that the overexpression of Rgs12 in RAW264.7 cells led to an increased number of OCs with 10+ nuclei (Figure 2H–I). We also observed significantly decreased numbers of smaller OCs containing 3–5 and 6–9 nuclei in Rgs12 overexpressing cells, presumably because most of the smaller OCs have fused to form large OCs containing 10+ nuclei. A previous study investigating the relationship between OC size and state of resorptive activity found that a greater proportion of large OCs were active whereas non-resorbing OCs were on average smaller (Lees et al., 2001). In our study, the quantification of the mean areas of OCs with 10+ nuclei revealed that Rgs12-overexpressing OCs were significantly larger as compared to empty vector-transfected controls (Figure 2J). To determine whether increased OC size translated to increased bone resorptive activity in our study, RAW264.7 cells were similarly cultured on calcium phosphate surfaces (Figure 2K–L). Consistent with our overall findings, ectopic overexpression of Rgs12 in OCs potently increased bone resorption activity. Our findings therefore demonstrate the importance of Rgs12 in promoting OC formation and activity, which is consistent with the osteopetrotic phenotype observed in the Rgs12-deficient mouse model.
 
-## Rgs12-deficient osteoclast precursors show an increased expression of Nrf2-dependent antioxidant proteins
+![Figure 2.](https://cdn.elifesciences.org/articles/42951/elife-42951-fig2-v1.jpg)
+
+**Figure 2.:** (A) Rgs12 protein and (B) mRNA expression in wild-type BMMs stimulated with M-CSF and RANKL for the indicated times. (C) TRAP-stained osteoclasts differentiated from BMMs isolated from Rgs12 cKO and control mice and the (D) number of TRAP-positive and multinucleated (≥3 nuclei) OCs were counted (N = 4). (E–F) Bone resorption activity of OCs derived from Rgs12 cKO and control BMMs cultured on calcium phosphate-coated plastic (N = 5). The light-colored areas correspond to areas resorbed by OCs was quantified and presented as values relative to the total area measured. (G) Immunoblot to verify Rgs12 overexpression in RAW264.7 cells transfected with a vector carrying a recombinant N-terminus FLAG-tagged Rgs12 gene (Flag-Rgs12). RAW264.7 cells transfected with the empty vector was used as a negative control. (H) TRAP-stained osteoclasts derived from RAW264.7 cells transfected with an empty vector or Flag-Rgs12 and the (I) number of TRAP-positive and multinucleated (≥3 nuclei) osteoclasts from vector- and Flag-Rgs12-transfected RAW264.7 cells (N = 3). (J) OC size was estimated by quantifying the surface area of OCs containing 10+ nuclei normalized to the number of OCs with 10+ nuclei (N = 3). (K–L) Bone resorption activity of OCs derived from RAW264.7 cells transfected with empty vector or Flag-Rgs12 (N = 5). All results are means ± SD. Student’s t test was used in all cases except for Figure 1A and B wherein one-way ANOVA was used (*p<0.05, **p<0.01, ***p<0.001). TRAP, tartrate-resistant acid phosphatase.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42951/elife-42951-fig2-figsupp1-v1.jpg)
+
+### Rgs12-deficient osteoclast precursors show an increased expression of Nrf2-dependent antioxidant proteins
 
 To uncover the role of Rgs12 in OC differentiation, we employed the IonStar liquid chromatography tandem mass spectrometry (LC-MS/MS)-based quantitative proteomics strategy (Shen et al., 2018) to profile the temporal dynamics in the global protein levels in Rgs12 cKO and control BMMs at 0, 1, 3, and 5 days of OC differentiation (Figure 3). Proteomics analysis identified 3714 quantifiable proteins that are present in all samples (no missing data), using a highly stringent identification criteria of ≥2 peptides per protein and 1% false discovery rate (Figure 3A). Within this dataset, we identified 83 and 61 unique proteins that were significantly up- and downregulated, respectively, in Rgs12 cKO OCs relative to control. Proteins were considered significantly altered if they exceeded the empirically-determined thresholds set at p<0.05 and>0.3 log2-transformed ratio (Figure 3B). Most of the protein expression changes in Rgs12-deficient cells were captured at 3 and 5 days of OC differentiation (Figure 3A). Interestingly, the proteomic disturbances as a result of Rgs12 deletion closely coincided with the pattern of endogenous Rgs12 protein expression during OC differentiation (Figure 2A). To determine the biological significance of these altered proteins, we performed gene ontology analysis to identify the canonical pathways involved (Figure 3C). Classically processes related to OC differentiation (e.g. ‘NFAT Signaling’, ‘RANK Signaling in OCs’, and ‘Role of OCs in Rheumatoid Arthritis’) were enriched at 3 and 5 days of OC differentiation. Closer inspection showed that OC marker proteins including metalloproteinase-9 (Mmp9), TRAP, ATPase H+ transporting V0 subunit D2 (Atp6v0d2), and integrin β3 (Itgb3) were significantly downregulated in Rgs12 cKO OCs (Figure 3D). Additionally, the analysis revealed several biological functions related to ROS homeostasis that were impacted by Rgs12 deletion (e.g. ‘Production of ROS’, ‘Superoxide Radical Degradation’, and NRF2-mediated Stress Response’) (Figure 3C). Inspection of the proteins involved in these pathways showed a significant upregulation of numerous Nrf2-dependent antioxidant enzymes responsible attenuating oxidative stress, including: peroxiredoxin 1/4 (Prdx1/4), thioredoxin 1/2 (Trxr1), glutathione reductase (Gshr), and NAD(P)H dehydrogenase quinone 1 (Nqo1) (Figure 3E). Upstream regulator (transcription factor) analysis by the Ingenuity Pathway Analysis software function identified that the antioxidant enzymes upregulated in Rgs12 cKO OCs share the common upstream regulator Nrf2, a key transcription factor that regulates cellular redox balance through the expression of protective antioxidant and phase II detoxification proteins. (Venugopal and Jaiswal, 1996; Itoh et al., 1997). Although the upstream regulator analysis predicted an upregulation of Nrf2 activity, the transcription factor itself was not detected by our proteomics analysis. Proteins of typically low abundance such as cytokines, signal regulatory molecules, and transcription factors tend to be ‘crowded out’ during MS analysis by more highly abundant proteins such those proteins involved in glycolysis and purine metabolism, protein translation, and cytoskeletal components (Beck et al., 2011). Nonetheless, our proteomics-based discovery tool allowed us to generate the hypothesis that Nrf2 is aberrantly activated by Rgs12 deletion, causing excessive clearance of ROS by antioxidant enzymes and in turn disrupting OC differentiation.
 
-## Deletion of Rgs12 elevated Nrf2/Keap1 expression and Nrf2 activity
+![Figure 3.](https://cdn.elifesciences.org/articles/42951/elife-42951-fig3-v1.jpg)
+
+**Figure 3.:** (A) Venn diagram summarizing the distribution of proteins that were significantly altered in Rgs12 cKO BMMs as compared to control at 0, 1, 3, and 5 days of OC differentiation. (B) Volcano plots depicting protein expression changes in Rgs12 cKO BMMs as compared to control cells. Optimized cutoff thresholds for significantly altered proteins was set at 1.3 log2-transformed ratios and p-value<0.05. Data are means ± SD. Student’s t test was performed to compare Rgs12 cKO and control BMMs at each time point (N = 3). (C) Gene ontology (GO) enrichment analysis to identify canonical pathways corresponding to the significantly altered proteins. For visualization purposes, the color intensity in the heat map diagram indicates the significance of GO term enrichment, presented as –log10(P-value). Hierarchical clustering analysis was used to group GO terms based on the p-value of enrichment. (D–E) The expression of OC marker proteins and Nrf2-regulated antioxidant proteins in Rgs12 cKO versus control BMMs. Mmp9, metalloproteinase-9; Trap, tartrate-resistant acid phosphatase; Nfatc1, nuclear factor of activated T cells, cytoplasmic 1; Atp6v0d2, ATPase H+ transporting V0 subunit D2; Itgb3, integrin β3; Prdx, peroxiredoxin; Cata, catalase; Trxr, thioredoxin; Gshr, glutathione reductase; Nqo1, NAD(P)H dehydrogenase quinone 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42951/elife-42951-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Green- and red-shaded nodes indicate downregulated and upregulated protein expression, respectively, but no log2-ratio or P-value constraints were used.
+
+### Deletion of Rgs12 elevated Nrf2/Keap1 expression and Nrf2 activity
 
 Based on our proteomics analysis, we hypothesized that Rgs12 is needed to suppress Nrf2 activity and facilitate the formation of ROS, which has been previously shown to play a critical role in OC differentiation (Lee et al., 2005; Kanzaki et al., 2013). To test this hypothesis, we assessed Nrf2 activity and the expression of Nrf2 and Keap1 in Rgs12 cKO and control precursor cells (Figure 4). Western blotting of Nrf2 in day 3 OCs also showed increased levels of Nrf2 in Rgs12 cKO cells (Figure 4A–B). Keap1, however, which is known to suppresses Nrf2 activity by facilitating its degradation via the proteasome pathway, was unexpectedly elevated in Rgs12-deficient cells. Furthermore, immunofluorescence staining of Nrf2 demonstrated increased nuclear translocation of the transcription factor in Rgs12 cKO cells (Figure 4C, upper panel). The elimination of ROS with N-acetylcysteine (NAC), a precursor to the antioxidant glutathione, was able to completely suppress Nrf2 nuclear translocation in both Rgs12 cKO and control BMMs (Figure 4C, middle panel). Conversely, induction of oxidative stress using the peroxide tert-buthylhydroxyperoxide (tBHP) potently induced Nrf2 nuclear translocation (Figure 4C, bottom panel). To further test whether elevated Nrf2 activity in Rgs12-deficient OCs could result in reduced intracellular ROS levels, we detected intracellular ROS levels. As expected, the RANKL-dependent ROS induction observed in control cells was suppressed in Rgs12 cKO OCs (Figure 4D). These findings demonstrate an abnormal upregulation of Nrf2 activity and expression in Rgs12-deficient cells, indicating that Rgs12 may be required to suppress Nrf2 to facilitate osteoclastogenesis.
 
@@ -67,15 +89,29 @@ Based on our proteomics analysis, we hypothesized that Rgs12 is needed to suppre
 
 **Figure 4.:** (A–B) Immunoblot of Nrf2 and Keap1 protein levels in Rgs12 cKO and control BMMs treated with RANKL for 72 hr. Densitometry analysis was performed on bands and normalized to β-actin (N = 3, *p<0.05). (C) Nrf2 immunofluorescence staining in Rgs12 cKO and control BMMs differentiated with M-CSF and RANKL for 72 hr. As a negative control for Nrf2 nuclear translocation, cells were treated with the antioxidant compound NAC (5 mM, 16 hr) to suppress cellular ROS. Conversely, as a positive control for Nrf2 nuclear translocation, cells were treated with the peroxidase tBHP (50 μM, 16 hr) to induce oxidative stress. (D) Induction of ROS levels in Rgs12 cKO and control BMMs differentiated for 72 hr, kept in serum-free medium for 6 hr, and stimulated with RANKL for the indicated times. ROS levels were measured using the DCFDA fluorescence method. Data are means ± SD (N = 5, *p<0.05, **p<0.01, ***p<0.001). DAPI, 4,6-diamidino-2-phenylindole; NAC, N acetylcysteine; tBHP, tert-butylhydroxyperoxide. ROS, reactive oxygen species. DCFDA, 2’,7’-dichlorofluorescin diacetate. RFU, relative fluorescence units..
 
-## Rgs12-mediated suppression of Nrf2 activity is dependent on the proteasome degradation pathway
+### Rgs12-mediated suppression of Nrf2 activity is dependent on the proteasome degradation pathway
 
 Under basal conditions (i.e. absence of cellular stress), Nrf2 remains inactive through its interaction with Keap1, which causes its continual ubiquitination and degradation via the proteasome pathway (Stewart et al., 2003; Zhang and Hannink, 2003). A variety of stress conditions can induce conformational changes in Keap1, thereby releasing Nrf2 from the ubiquitin-proteasome pathway, allowing it to accumulate and translocate into the nucleus (Itoh et al., 2003; Kensler et al., 2007). To better understand the mechanism by which Rgs12 suppresses Nrf2 activity, we therefore first determined whether the ability of Rgs12 to suppress Nrf2 activity relies on this canonical mechanism (Figure 5A). Given that Rgs12 deletion resulted in elevated Nrf2 expression and nuclear translocation, we first determined whether Rgs12 overexpression could exert an opposite effect (Figure 5A–B). We measured Nrf2 protein levels in RAW264.7 cells stably transfected with the Rgs12-His or empty vector and found no difference when cells are at their un-induced, basal state. Stimulation of RAW264.7 cells with tert-buthylhydroquinone (tBHQ), which is known to directly bind Keap1 and attenuate its inhibitory effect on Nrf2 (Abiko et al., 2011), caused a robust induction of Nrf2 protein levels in a dose-dependent manner (Figure 5A–B). More importantly, RAW264.7 cells overexpressing Rgs12 showed a significant reduction of Nrf2 protein levels that resulted from Keap1 inhibition compared to those in the control cells. Moreover, the ability of Rgs12 to facilitate Nrf2 degradation despite the inhibition of Keap1 suggests that Rgs12 functions downstream of Keap1, either by controlling the ubiquitination or proteasomal degradation of Nrf2.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/42951/elife-42951-fig5-v1.jpg)
+
+**Figure 5.:** (A) Diagram summarizing the inhibitors of the Keap1-proteasome axis to modulate Nrf2 protein levels. (B) RAW264.7 cells stably-transfected with Rgs12-His or empty vector treated with increasing doses of tBHQ. (C) Nrf2 and Keap1 protein levels were quantified by densitometry analysis and normalized to β-actin (N = 3, *p<0.05, **p<0.01). (D) Western blot to detect Nrf2 and Keap1 in RAW264.7 cells stably-transfected with empty vector or Flag-Rgs12. RAW264.7 cells were treated with a combination of RANKL (100 ng/mL, 72 hr) and the proteasome inhibitor MG-132 (25 μM, 4 hr). (E) Nrf2 and Keap1 protein levels were quantified by densitometry analysis and normalized to β-actin (N = 3, *p<0.05, **p<0.01, ***p<0.001). (F) qPCR analysis of Nrf2 and Keap1 transcript levels in RAW264.7 cells transfected with Rgs12-His or empty vector. Data are means ± SD. Two-tailed t test was performed (N = 3, *p<0.05). tBHQ, tert-butylhydroquinone.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/42951/elife-42951-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Complete western blots used in Figure 5B. Sections shown in Figure 5B are highlighted with dashed boxes. Transfected RAW264.7 cells were induced with the indicated dosages of tBHQ for 4 hr. (B) Complete western blots used in Figure 5D. Sections shown in Figure 5D are highlighted with dashed boxes. RAW264.7 cells stably-transfected with empty vector or Flag-Rgs12 were treated with the following: RANKL (100 ng/mL, 72 hr), MG-132 (25 μM, 4 hr), and/or tBHQ (25 μM, 4 hr). tBHQ, tert-butylhydroquinone.
+
 Given the possibility that the reduction of Nrf2 levels in Rgs12 overexpression cells may be a result of increased Nrf2 degradation, we further tested whether inhibiting the proteasome, a step downstream of Keap1, could attenuate the ability of Rgs12 to facilitate Nrf2 degradation (Figure 5D and E). Similar to tBHQ, preventing Nrf2 degradation using the proteasome inhibitor MG-132 caused Nrf2 protein to substantially accumulate (Figure 5D, left panel). Interestingly, when Nrf2 protein levels were artificially induced, we observed the presence of a lower molecular weight band, which could correspond to a different post-translational modification state (e.g. unphosphorylated or non-ubiquitinated). Furthermore, we did not observe any changes in Keap1 protein levels. In the previous scenario wherein Rgs12 overexpression could still promote Nrf2 degradation in spite of tBHQ treatment, this was not the case when using MG-132. In fact, inhibiting the proteasome was able to reverse the ability of Rgs12 to promote Nrf2 degradation, indicating the requirement for Rgs12 in the proteasome’s function. We subsequently repeated this experiment in RAW264.7 cells differentiated for 3 days with RANKL (Figure 5D). Interestingly, RANKL treatment correlated with reduced Nrf2 levels in OCs (Figure 5D, right panel). Our observation corroborates with previous findings documenting the suppressive effect of RANKL on Nrf2 expression, which was attributed to reduced transcriptional activity (Kanzaki et al., 2013; Hyeon et al., 2013). We confirmed this effect by measuring the Nrf2 transcript levels by qPCR (Figure F). More importantly, we demonstrate that Rgs12 overexpression could suppress Nrf2 protein levels, but inhibition of the proteasome using MG-132 reversed this effect (Figure 5D, right panel). To confirm that Rgs12 inhibits Nrf2 through a post-translational mechanism, we measured Nrf2 transcript levels by qPCR and found no difference between vector control and Rgs12-overexpressing cells (Figure 5F). Overall, our data collectively indicate that Rgs12 suppresses Nrf2 activity by facilitating its degradation through the proteasome-dependent pathway.
 
-## Rgs12-mediated activation of osteoclast MAPK ERK1/2 and NFκB signaling is dependent on intracellular ROS
+### Rgs12-mediated activation of osteoclast MAPK ERK1/2 and NFκB signaling is dependent on intracellular ROS
 
 It was previously demonstrated that ROS could act as an intracellular signal mediator OC differentiation, and is required for the RANKL-dependent activation of p38 mitogen-activated protein kinase (MAPK), extracellular signal-regulated kinase (ERK), and NFκB (Lee et al., 2005; Ha et al., 2004). Given our findings that Rgs12 could suppress the activity of Nrf2 and thereby promoting intracellular ROS, we hypothesized that Rgs12 could promote RANKL-dependent signaling, and that this effect would be abrogated by the addition of an antioxidant (Figure 6A–B). As expected, RAW264.7 cells overexpressing Rgs12 demonstrated a more robust activation of ERK1/2 and NFκB phosphorylation but not p38 MAPK. Pretreating Rgs12 overexpressing cells with the antioxidant NAC diminished ERK1/2 activation, and almost completely abrogated NFκB activation. These results support the role of Rgs12 in promoting ROS that is important OC signaling, likely through the suppression of Nrf2 activity.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/42951/elife-42951-fig6-v1.jpg)
+
+**Figure 6.:** (A) Western blot detected phosphorylated or total p38, NFκB, and Erk1/2 in transfected RAW264.7 cells induced with RANKL (200 ng/mL) and M-CSF (100 ng/mL) for the indicated times. Cells were pretreated with NAC (5 mM, 4 hr) to suppress intracellular ROS. (B) Band density was quantified by ImageJ and phosphorylated and unphosphorylation/total protein levels were normalized to β-actin. Relative phosphorylation is presented as the ratio between the phosphorylated normalized to the nonphosphorylated/total protein. Two-tailed t tests were used to compare vector and Rgs12-His groups (N = 3, *p<0.05). (C) Model of the role of Rgs12 in suppressing Nrf2 to promote ROS and OC differentiation. M/R, M-CSF and RANKL. NAC, N-acetylcysteine.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/42951/elife-42951-fig6-figsupp1-v1.jpg)
 
 ## Discussion
 
@@ -103,31 +139,398 @@ In conclusion, we identified a new gene that could modulate the Nrf2-proteasome 
 
 ## Materials and methods
 
-## Generation of Rgs12 conditional knockout mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source orreference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rgs12flox/flox</td>
+      <td>Yang et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>LyzMCre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 018956</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rgs12 cDNA</td>
+      <td>This paper</td>
+      <td>NCBI: NM_173402.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>RAW264.7</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat. #: TIB-71</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>CMG14-12</td>
+      <td>PMID: 10934646</td>
+      <td></td>
+      <td>Dr. Sunao Takeshita (Nagoya City University, Nagoya, Japan) Cell line used to produce M-CSF-containing supernatant.</td>
+    </tr>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>Modified Origami B(DE3)</td>
+      <td>Li et al., 2016a</td>
+      <td></td>
+      <td>Dr. Ding Xu (University at Buffalo, Buffalo, NY, USA). Modified bacterial cell line co-expresses chaperone proteins.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthesized)</td>
+      <td>p3XFLAG-myc-CMV-26</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: E7283</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthesized)</td>
+      <td>p3XFLAG-myc-CMV-26-Rgs12</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Methods for details.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthesized)</td>
+      <td>pcDNA3.1(+)-c-His</td>
+      <td>Genscript</td>
+      <td></td>
+      <td>Custom vector available through Genscript’s cloning services.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthesized)</td>
+      <td>pcDNA3.1(+)-Rgs12-c-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Methods for details.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (synthesized)</td>
+      <td>mRANKL-His (K158-D316)</td>
+      <td>Other</td>
+      <td></td>
+      <td>Dr. Ding Xu (University at Buffalo, Buffalo, NY, USA).</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers</td>
+      <td>Integrated DNA Technologies</td>
+      <td></td>
+      <td>Primer sequences detailed in Methods.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>M-CSF</td>
+      <td>R and D Systems</td>
+      <td>Cat. #: 416 ML-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Acid Phosphatase, Leukocyte (TRAP) Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: 387A-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SimpleSeq DNA Sequencing</td>
+      <td>Eurofins Genomics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce High Capacity Endotoxin Removal Resin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 88270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Osteo Assay Surface</td>
+      <td>Corning</td>
+      <td>Cat. #: 3987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRIzol Reagent</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA to cDNA EcoDry Premix</td>
+      <td>Clontech</td>
+      <td>Cat. #: 639549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>2x SYBR Green qPCR Master Mix</td>
+      <td>Bimake</td>
+      <td>Cat. #: B21203</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rac1 Pulldown Activation Assay Kit</td>
+      <td>Cytoskeleton</td>
+      <td>Cat. #: BK035-S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcein</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: C0875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FuGENE HD Transfection Reagent</td>
+      <td>Promega</td>
+      <td>Cat. #: E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Geneticin (G418)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 10131035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DCFDA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: D6883</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenol red-free MEM</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Cat. #: 51200038</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete, Mini, EDTA-free</td>
+      <td>Roche/Thermo Fisher</td>
+      <td>Cat. #: 5892791001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Image-iT FX signal enhancer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: I36933</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: D1306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProLong Gold Antifade Mountant</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: P36930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tBHP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: B2633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG-132</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat. #: S2619</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NAC</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: A9165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tBHQ</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: 112941</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nrf2 (H-300), rabbit polyclonal</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-13032</td>
+      <td>ICC (1:10), WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nrf2 (C-20), rabbit polyclonal</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-722</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Keap1 (E-20), goat polyclonal</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-15246</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-p38 (Thr180/Tyr182), rabbit polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9211</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p38, rabbit polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9212</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-p44/42 MAPK (Erk1/2) (Thr202/Tyr204) (D13.14.4E) XP Rabbit mAb</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 4370S</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ERK1/2, rabbit polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9102</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-NFκB p65 (Ser536), rabbit monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 3033</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NFκB p65, rabbit polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 3034</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-actin, mouse monoclonal</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-47778</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OsteoMeasure</td>
+      <td>OsteoMetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID: SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Primer-BLAST</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CFX Maestro</td>
+      <td>Bio-Rad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IonStar</td>
+      <td>Shen et al., 2018; Shen et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity Pathway Analysis</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of Rgs12 conditional knockout mice
 
 Rgs12flox/flox mice were crossed with LyzMCre transgenic mice to generate Rgs12 cKO mice specific to the myeloid lineage in a C57BL/6J background. The methodology for generating Rgs12flox/flox and LyzMCre mice and genotyping are previously described (Clausen et al., 1999; Yang et al., 2013; Yuan et al., 2015). Mice used for experiments were 10–12 weeks old, as indicated. All animal studies were approved by the University at Buffalo and University of Pennsylvania Institutional Animal Care and Use Committees (IACUC).
 
-## Quantitative Micro-CT measurements
+### Quantitative Micro-CT measurements
 
 Quantitative analysis of bone morphology and microarchitecture was performed using a micro-CT system (USDA Grand Forks Human Nutrition Research Center, Grand Forks, ND, USA). Fixed femur from 10-week-old Rgs12 cKO and control mice were analyzed and 3D reconstruction was used to determine bone volume to tissue volume (BV/TV), structure model index (SMI), trabecular thickness (Tb.Th, μm), trabecular number (Tb.N,/mm), and trabecular separation (Tb.Sp, μm).
 
-## Bone histology analysis
+### Bone histology analysis
 
 Mouse tibiae and femurs from 10-week-old mice were excised and fixed in 4% PFA for 24 hr and decalcified in a 10% EDTA for 3–4 weeks at 4°C. The samples were embedded in paraffin, sectioned at 8 μm, stained with hematoxylin and eosin (H and E) or tartrate-resistant acid phosphatase (TRAP) using the Acid Phosphatase, Leukocyte (TRAP) Kit (Sigma-Aldrich, St. Louis, MO, USA), and imaged using a Leica inverted microscope (DMI6000B, Leica, Germany).
 
-## Dynamic histomorphometry
+### Dynamic histomorphometry
 
 To assess the rate of bone formation, mice were intraperitoneally injected with calcein (25 mg/kg) twice at postnatal day 90 and day 96. Mice were euthanized and harvested 2 days after last injection. Femurs were dissected and fixed in 4% PFA for 24 hr, dehydrated in ethanol, and embedded in optimal cutting temperature (OCT) compound for cryosection without decalcification. By applying Cryofilm tape (Section Lab, Hiroshima, Japan), 8 μm longitudinal sections were cut from distal femurs using a microtome (CM1950, Leica, Germany). Measurements of surface-based histomorphometric indices were performed using the OsteoMeasure analysis system (OsteoMetrics, Decatur, GA). These indices were used to calculate bone formation rate per bone surface (BFR/BS, μm3/um−2 per day), mineral apposition rate (MAR, μm per day), OB number per bone perimeter (N.Ob/B.Pm, mm−1) and OC number per bone perimeter (N.Oc/B.Pm, mm−1) as previously described (Yuan et al., 2016; Li et al., 2019).
 
-## Generation of Rgs12 expression vectors
+### Generation of Rgs12 expression vectors
 
 Full length Rgs12 (Accession: NM_173402.2) cDNA was cloned into the p3XFLAG-myc-CMV-26 expression vector (Sigma-Aldrich, St. Louis, MO, USA). Briefly, HindIII sites were incorporated into both termini of the Rgs12 cDNA using restriction-site-generating PCR, and the restriction sites were used to insert the Rgs12 sequence into the expression vector containing an N-terminus FLAG tag sequence (Flag-Rgs12). The primer walking method was used to validate the correct directionality of the insert. Additionally, a vector expressing C-terminus His-tagged Rgs12 (Rgs12-His) was generated by subcloning the Rgs12 cDNA into the pcDNA3.1(+)-c-His vector (Genscript, Piscataway, NJ, USA). HindIII and EcoRV sites were introduced by PCR and the restriction sites were used to insert Rgs12 into the pcDNA3.1(+)-c-His vector. All vector constructs were confirmed by DNA sequencing (Eurofins Genomics, Louisville, KY, USA).
 
-## Stable transfection
+### Stable transfection
 
 RAW264.7 cells were purchased from ATCC which was confirmed to be free of mycoplasma contamination. RAW264.7 cells were seeded at 2 × 106 cells per 6-well and transfected using FuGENE HD reagent (Promega, Madison, WI, USA) according to manufacturer’s instructions at a 1:3 DNA to transfection reagent ratio. After 48 hr post-transfection, cells were treated with 0.4 mg/mL geneticin (G418, Thermo Fisher Scientific, Waltham, MA, USA) for 2 weeks until antibiotic-resistant colonies are formed. Stably transfected cells were thereafter maintained in media containing 0.4 mg/mL G418.
 
-## In vitro osteoclastogenesis and bone resorption assays
+### In vitro osteoclastogenesis and bone resorption assays
 
 The vector encoding the recombinant mRANKL-His (K158-D316) construct and a modified E. coli strain Origami B(DE3) cells (EMD Millipore, Billercica, MA, USA) co-expressing chaperone proteins that was used to express the recombinant RANKL were generous gifts from Dr. Ding Xu at the University at Buffalo. The protocol for expressing and purifying mRANKL-His was described previously (Li et al., 2016a). Endotoxins were removed using the Pierce High Capacity Endotoxin Removal Resin (Thermo Fisher Scientific, Waltham, MA, USA).
 
@@ -135,34 +538,34 @@ BMMs were obtained from the tibiae and femurs of 10-week-old mice as described p
 
 For bone resorptive activity experiments, the method above was applied except that cells were seeded on Osteo Assay Surface plates (Corning, Corning, NY) and allowed to differentiate and resorb the calcium phosphate surface for 5–6 days. A 10% bleach solution was added to each well for 5 min to remove cells, followed by rinsing with deionized water, and air-dried. Resorption pits were visualized and captured under a light microscope (DMI6000B, Leica, Germany) and analyzed using ImageJ software as previously described (Li et al., 2016b).
 
-## Reverse transcription and quantitative PCR
+### Reverse transcription and quantitative PCR
 
 Total RNA was isolated from cultured BMMs and OCs using Trizol reagent (Invitrogen, Carlsbad, CA, USA) following manufacturer’s instructions. cDNA was reverse transcribed from 2 μg total RNA using the RNA to cDNA EcoDry Premix kit (Clontech, Palo Alto, CA, USA). Primers were designed using Primer-BLAST (Ye et al., 2012) and obtained from IDT (Integrated DNA Technologies, San Diego, CA, USA). Rgs12 (F: 5’-AAGATCCATTCCCTAGTGACC-3’, R: 5’-ACCTCCACTTTCCCACCCTG-3’, 587 bp), Nrf2 (F: 5’-GCCCACATTCCCAAACAAGAT-3’, R: 5’-CCAGAGAGCTATTGAGGGACTG-3’, 172 bp), Keap1 (F: 5’-TGCCCCTGTGGTCAAAGTG-3’, R: 5’-GGTTCGGTTACCGTCCTGC-3’, 104 bp), β-actin (F: 5’-CTAGGCACCAGGGTGTGAT-3’, R: 5’-TGCCAGATCTTCTCCATG TC-3’, 148 bp), GAPDH (F: 5’-AGGTCGGTGTGAACGGATTTG-3’, R: 5’-TGTAGACCATGTAGTTGAGGTCA-3’, 123 bp). qPCR was performed using the 2x SYBR Green qPCR Master Mix following manufacturer’s instructions (Bimake, Houston, TX, USA). All reactions were performed in triplicate and normalized to the housekeeping gene β-actin or GAPDH as indicated. Data analysis was performed using the CFX Maestro software (Bio-Rad, Hercules, CA, USA).
 
-## Rac1-GTP immunoprecipitation
+### Rac1-GTP immunoprecipitation
 
 The Rac1-GTP pulldown assay was performed following manufacturer instructions in the Rac1 activation assay kit (Cytoskeleton, Denver, CO, USA).
 
-## ROS measurement
+### ROS measurement
 
 To measure ROS production, BMMs were seeded into black, glass-bottom 96-well plates and cultured with M-CSF for 48 hr until confluence. Cells were loaded with 20 μM 2’7’-dichlorofluorescein diacetate (DCFDA, Sigma) at 37°C for 30 min and washed using PBS. The cells were swapped into complete phenol red-free MEM (Gibco) containing RANKL/M-CSF. Fluorescence intensity was measured using the Cytation five plate reader (BioTek) with excitation wavelength at 488 nm and emission wavelength at 535 nm. Background signals (cells not loaded with DCF-DA) were subtracted. Experiments were carried out in quintuplicate wells.
 
-## Protein extraction and precipitation/On Pellet Digestion
+### Protein extraction and precipitation/On Pellet Digestion
 
 Cells were harvested using ice-cold lysis buffer (50 mM Tris-formic acid, 150 mM NaCl, 0.5% sodium deoxycholate, 1% SDS, 2% NP-40, pH 8.0) with protease inhibitor (cOmplete, Mini, EDTA-free; Roche, Mannheim, Germany). Samples were prepared for MS analysis using an established method (Shen et al., 2018; Shen et al., 2017).
 
-## Liquid Chromatography-Tandem mass spectrometry analysis
+### Liquid Chromatography-Tandem mass spectrometry analysis
 
 The ‘IonStar’ LC-MS experimental pipeline was developed and optimized in a previous study (Shen et al., 2018; Shen et al., 2017). A stringent set of criteria including a low peptide and protein false discovery rate (FDR) of <1% and≥2 peptides per protein was used for protein identification. An ion current-based quantification method (IonStar processing pipeline) was described previously (Shen et al., 2018; Shen et al., 2017).
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
 Ingenuity Pathway Analysis (Qiagen, Redwood City, CA, USA) was used to perform gene ontology enrichment analysis. Hierarchical clustering analysis and heat map visualizations were performed using the agnes function in R Package cluster and ggplot2 with the viridis color palette, respectively.
 
-## Immunofluorescence
+### Immunofluorescence
 
 For the Nrf2 nuclear translocation experiment, BMMs were cultured on coverslips and treated with RANKL and M-CSF for 72 hr, 5 mM NAC for 16 hr, or 50 μM tBHP for 16 hr. Coverslips were fixed with 4% paraformaldehyde solution in PBS for 10 min at room temperature and permeabilized using 0.1% Triton X-100 for 5 min at room temperature. Coverslips were blocked using Image-iT FX signal enhancer (Thermo Fisher Scientific) for 1 hr at room temperature, stained with the primary antibody in 1% BSA/TBST overnight at 4°C, and stained with the secondary antibody for 1 hr at room temperature. 4,6-diamidino-2-phenylindole (DAPI) (Sigma) was used as a counterstain for nuclei. The coverslips were mounted using ProLong Gold antifade mountant (Thermo) and images were obtained using a fluorescence microscope (Leica, Wetzlar, Germany).
 
-## Western blotting
+### Western blotting
 
 For experiments studying the Keap1-Nrf2 pathway, cells were cultured in 6-well plates and pre-treated with the indicated concentrations of tBHQ or 25 µM MG-132 for 4 hr. For MAPK and NFκB activation experiments, stable-transfected RAW264.7 cells were cultured in 6-well plates and starved in serum-free medium containing 5 mM NAC for 16 hr. Cells were subsequently induced with RANKL (200 ng/mL) and M-CSF (100 ng/mL) for the indicated times. Western blotting was performed as described previously (Yuan et al., 2016). The primary antibodies used in this study were as follows: Nrf2 (H-300) and Nrf2 (C-20) (1:100, Santa Cruz Biotechnology, Dallas, TX, USA), Keap1 (E-20) (1:100, SCBT), phospho-p38 (Thr180/Tyr182) (1:1000, Cell Signaling Technology), p38 (1:1000, CST), phospho-p44/42 MAPK (Erk1/2) (Thr202/Tyr204) (1:1000, CST), ERK1/2 (1:1000, CST), phospho-NFκB p65 (Ser536) (1:1000, CST), NFκB p65 (1:1000, CST), and β-actin (1:4000, SCBT). Densitomety analysis was performed using ImageJ (Schindelin et al., 2012) and normalized to the β-actin signal. Relative phosphorylation of was presented as the ratio between the phosphorylated normalized to the non-phosphorylated/total protein. NAC, tBHQ, and tBHP were obtained from Sigma-Aldrich (St. Louis, MO, USA), and MG-132 was obtained from Selleck Chemicals (Houston, TX, USA).

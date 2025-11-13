@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0072zz521 Organismic and Evolutionary Biology Graduate Program, University of Massachusetts Amherst Amherst United States
-2. https://ror.org/0072zz521 Department of Biology and the Neuroscience and Behavior Graduate Program, University of Massachusetts Amherst Amherst United States
+1. Organismic and Evolutionary Biology Graduate Program, University of Massachusetts Amherst Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))
+2. Department of Biology and the Neuroscience and Behavior Graduate Program, University of Massachusetts Amherst Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))
 
 † Corresponding author
 

@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.24655.001 Macrophages produce genotoxic agents, such as reactive oxygen and nitrogen species, that kill invading pathogens. Here we show that these agents activate the DNA damage response (DDR) kinases ATM and DNA-PKcs through the generation of double stranded breaks (DSBs) in murine macrophage genomic DNA. In contrast to other cell types, initiation of this DDR depends on signaling from the type I interferon receptor. Once activated, ATM and DNA-PKcs regulate a genetic program with diverse immune functions and promote inflammasome activation and the production of IL-1β and IL-18. Indeed, following infection with Listeria monocytogenes, DNA-PKcs-deficient murine macrophages produce reduced levels of IL-18 and are unable to optimally stimulate IFN-γ production by NK cells. Thus, genomic DNA DSBs act as signaling intermediates in murine macrophages, regulating innate immune responses through the initiation of a type I IFN-dependent DDR. DOI: http://dx.doi.org/10.7554/eLife.24655.001
+Macrophages produce genotoxic agents, such as reactive oxygen and nitrogen species, that kill invading pathogens. Here we show that these agents activate the DNA damage response (DDR) kinases ATM and DNA-PKcs through the generation of double stranded breaks (DSBs) in murine macrophage genomic DNA. In contrast to other cell types, initiation of this DDR depends on signaling from the type I interferon receptor. Once activated, ATM and DNA-PKcs regulate a genetic program with diverse immune functions and promote inflammasome activation and the production of IL-1β and IL-18. Indeed, following infection with Listeria monocytogenes, DNA-PKcs-deficient murine macrophages produce reduced levels of IL-18 and are unable to optimally stimulate IFN-γ production by NK cells. Thus, genomic DNA DSBs act as signaling intermediates in murine macrophages, regulating innate immune responses through the initiation of a type I IFN-dependent DDR.
 
 ## Introduction
 
@@ -41,97 +41,97 @@ Here we establish functions for the DDR in regulating diverse innate immune resp
 
 ## Results
 
-## Activated macrophages initiate an ATM- and DNA-PKcs-dependent DDR
+### Activated macrophages initiate an ATM- and DNA-PKcs-dependent DDR
 
-The DDR was assayed in bone marrow-derived macrophages (BMDMs) by examining phosphorylation of the histone H2A variant, H2AX (forming γ-H2AX) or KAP-1, which are both substrates of ATM and DNA-PKcs. Treatment with IFN-γ and the TLR4 agonist, LPS, but neither agent alone, led to the initiation of a robust DDR in BMDMs (
+The DDR was assayed in bone marrow-derived macrophages (BMDMs) by examining phosphorylation of the histone H2A variant, H2AX (forming γ-H2AX) or KAP-1, which are both substrates of ATM and DNA-PKcs. Treatment with IFN-γ and the TLR4 agonist, LPS, but neither agent alone, led to the initiation of a robust DDR in BMDMs (Figure 1A). Infection of BMDMs with the intracellular bacterial pathogen L. monocytogenes also led to a robust DDR, and IFN-γ augments, but is not required for, this response (Figure 1B). As with cultured BMDMs, LPS and IFN-γ treatment of primary macrophages isolated from the peritoneal cavity also activates a robust DDR (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig1-v2.jpg)
 
-**Figure 1.:** (A–C) Western blotting for γ-H2AX, H2AX, phosphorylated KAP-1 (p-KAP-1) and KAP-1 in whole cell lysates from (A) wild type (WT) BMDMs after no stimulation (-) or stimulation (+) with LPS, IFN-γ, or both for 9 hr. (B) WT BMDMs after no infection (-) or infection (+) with L. monocytogenes (L. m.) either in the presence (+) or absence (-) of IFN-γ for 9 hr. (C) WT peritoneal macrophages after no stimulation (-) or stimulation (+) with LPS + IFN-γ for 24 hr. (D, F) Western blotting of p-KAP-1 and KAP-1 (D) and γ-H2AX and H2AX (F) in whole cell lysates from WT and Atm BMDMs after no treatment (-) or treatment (+) with LPS + IFN-γ for 9 hr. in the presence (+) or absence (-) of NU7026. (-/-E, G) Western blotting of p-KAP-1 and KAP-1 (E) and γ-H2AX and H2AX (G) in whole cell lysates from WT, Atm, and -/-Scid BMDMs after no infection (-) or infection (+) with L. m. for 24 hr. (H) Western blotting for γ-H2AX, H2AX, p-KAP-1, and KAP-1 in whole cell lysates from Lyz2 and Cre/+Scid:Atm BMDMs after no infection (-) or infection (+) with C/C:Lyz2Cre/+L. m. for 24 hr. Data are representative of 2–5 independent experiments. Blank spaces in (F) and (H) indicate that blots have been cropped.DOI: http://dx.doi.org/10.7554/eLife.24655.002
+**Figure 1.:** (A–C) Western blotting for γ-H2AX, H2AX, phosphorylated KAP-1 (p-KAP-1) and KAP-1 in whole cell lysates from (A) wild type (WT) BMDMs after no stimulation (-) or stimulation (+) with LPS, IFN-γ, or both for 9 hr. (B) WT BMDMs after no infection (-) or infection (+) with L. monocytogenes (L. m.) either in the presence (+) or absence (-) of IFN-γ for 9 hr. (C) WT peritoneal macrophages after no stimulation (-) or stimulation (+) with LPS + IFN-γ for 24 hr. (D, F) Western blotting of p-KAP-1 and KAP-1 (D) and γ-H2AX and H2AX (F) in whole cell lysates from WT and Atm-/- BMDMs after no treatment (-) or treatment (+) with LPS + IFN-γ for 9 hr. in the presence (+) or absence (-) of NU7026. (E, G) Western blotting of p-KAP-1 and KAP-1 (E) and γ-H2AX and H2AX (G) in whole cell lysates from WT, Atm-/-, and Scid BMDMs after no infection (-) or infection (+) with L. m. for 24 hr. (H) Western blotting for γ-H2AX, H2AX, p-KAP-1, and KAP-1 in whole cell lysates from Lyz2Cre/+ and Scid:AtmC/C:Lyz2Cre/+ BMDMs after no infection (-) or infection (+) with L. m. for 24 hr. Data are representative of 2–5 independent experiments. Blank spaces in (F) and (H) indicate that blots have been cropped.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Southern blot analysis of genomic DNA digested with KpnI and hybridized to the 3’ ATM probe from BMDMs from Atm, C/CAtmand -/-Scid:Atmmice. Arrows indicate the conditional (C) and deleted (-) alleles. Molecular weight (kb) markers are indicated.C/C:Lyz2Cre/+ DOI: http://dx.doi.org/10.7554/eLife.24655.003
+**Figure 1—figure supplement 1.:** Southern blot analysis of genomic DNA digested with KpnI and hybridized to the 3’ ATM probe from BMDMs from AtmC/C, Atm-/-and Scid:AtmC/C:Lyz2Cre/+ mice. Arrows indicate the conditional (C) and deleted (-) alleles. Molecular weight (kb) markers are indicated.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** L. monocytogenes infection induces G1 arrest.Flow cytometric analysis of BrdU incorporation (y axis) and DNA content (7AAD; x axis) was performed in Lyz2 and Cre/+Scid: Atm BMDMs after C/C: Lyz2Cre/+L. monocytogenes infection for 16 hr. Percentage of cells in each phase of the cell cycle (G1, S, and G2-M) after BrdU labeling is indicated. Data are representative of two independent experiments.DOI: http://dx.doi.org/10.7554/eLife.24655.004
+**Figure 1—figure supplement 2.:** Flow cytometric analysis of BrdU incorporation (y axis) and DNA content (7AAD; x axis) was performed in Lyz2Cre/+ and Scid: AtmC/C: Lyz2Cre/+ BMDMs after L. monocytogenes infection for 16 hr. Percentage of cells in each phase of the cell cycle (G1, S, and G2-M) after BrdU labeling is indicated. Data are representative of two independent experiments.
 
 ATM is activated in BMDMs, as evidenced by the loss of KAP-1 phosphorylation in ATM-deficient (Atm-/-) BMDMs treated with LPS and IFN-γ or infected with L. monocytogenes (Figure 1D and E). The formation of γ-H2AX in Atm-/- BMDMs, however, indicates that additional DDR kinases must be activated (Figure 1F and G). WT BMDMs treated with the DNA-PKcs kinase inhibitor NU7026 and activated with LPS and IFN-γ exhibit robust KAP-1 and H2AX phosphorylation (Figure 1D). Inhibition of DNA-PKcs kinase activity in Atm-/-BMDMs, however, abrogated H2AX phosphorylation in response to LPS and IFN-γ, demonstrating that both ATM and DNA-PKcs are activated in response to LPS and IFN-γ (Figure 1F).
 
 Scid mice are deficient in DNA-PKcs due to a point mutation in the DNA-PKcs gene that results in low-level expression of a non-functional DNA-PKcs protein (Blunt et al., 1996). Scid BMDMs infected with L. monocytogenes exhibit robust KAP-1 and H2AX phosphorylation (Figure 1G and E). To generate BMDMs deficient in both ATM and DNA-PKs, Scid mice homozygous for a conditionally targeted ATM allele (AtmC) and heterozygous for a Cre knock-in at the lysozyme M (Lyz2) locus (Scid:AtmC/C:Lyz2Cre/+) were generated (Clausen et al., 1999). Mice deficient in ATM and DNA-PKcs exhibit early embryonic lethality (Sekiguchi et al., 2001). Scid:AtmC/C:Lyz2Cre/+ mice are viable, however, and BMDMs from these mice are deficient in DNA-PKcs (Scid) and have deleted both ATM alleles (Figure 1—figure supplement 1). Like WT BMDMs, those that express Cre (Lyz2Cre/+ BMDMs) exhibit robust γ-H2AX formation and KAP-1 phosphorylation in response to infection with L. monocytogenes (Figure 1H). Whereas BMDMs with isolated deficiencies of ATM or DNA-PKcs exhibit a robust DDR, those with deficiencies in both ATM and DNA-PKcs (Scid:AtmC/C:Lyz2Cre/+) exhibit a near-complete abrogation of γ-H2AX and p-KAP-1 formation in response to infection with L. monocytogenes (Figure 1H). Though uninfected Lyz2Cre/+ and Scid:Atm C/C:Lyz2Cre/+ BMDM are cycling, both undergo G1 arrest after infection with L. monocytogenes (Figure 1—figure supplement 2). We conclude that both ATM and DNA-PKcs are activated in BMDMs by LPS and IFN-γ or infection with L. monocytogenes, and that these kinases can have unique (ATM phosphorylation of KAP-1) or overlapping (ATM or DNA-PKcs phosphorylation of H2AX) functions.
 
-## The DDR is activated by genomic DNA DSBs
+### The DDR is activated by genomic DNA DSBs
 
-ATM can be directly activated by oxidizing agents, however, several lines of evidence demonstrate that the DDR in activated macrophages is initiated primarily by genomic DNA DSBs (
+ATM can be directly activated by oxidizing agents, however, several lines of evidence demonstrate that the DDR in activated macrophages is initiated primarily by genomic DNA DSBs (Guo et al., 2010). The neutral comet assay, which quantifies genomic DSBs in single cells, revealed a significant increase in the Olive Tail Moment (measure of DNA DSBs) in BMDM after infection with L. monocytogenes or treatment with LPS and IFN-γ (Figure 2A). γ-H2AX forms in chromatin flanking genomic DNA DSBs, leading to discrete nuclear foci that can be detected by immunostaining (Rogakou et al., 1999). BMDMs infected with L. monocytogenes exhibit an increase in γ-H2AX nuclear foci relative to uninfected cells, indicative of genomic DNA DSB formation (Figure 2B, Figure 2—figure supplement 1). That these DSBs activate the DDR is evidenced by the analyses of BMDMs deficient in either DNA DSB repair or the Mre11, Rad50, Nbs1 (MRN) complex, which is required to sense DNA DSBs and activate ATM (Ciccia and Elledge, 2010). Deficiency in DNA Ligase IV, which is required for DSB repair by NHEJ, leads to embryonic lethality (Frank et al., 1998). However, mice homozygous for a conditionally targeted DNA Ligase IV allele and heterozygous for Lyz2Cre (Lig4loxP/loxP:Lyz2Cre/+) are viable and have BMDMs deficient in DNA Ligase IV (data not shown). As compared to Lyz2Cre/+ BMDMs (normal NHEJ), infection of Lig4loxP/loxP:Lyz2Cre/+ BMDMs (loss of NHEJ) with L. monocytogenes leads to augmented γ-H2AX formation (Figure 2C). Mice homozygous for a hypomorphic Mre11 allele (Mre11ATLD1/ATLD1) exhibit diminished ATM activation in response to DNA DSBs, and BMDMs derived from these mice exhibit a significant reduction in the ATM-dependent phosphorylation of KAP-1 in response to LPS and IFN-γ (Figure 2D) (Theunissen et al., 2003). Taken together, these findings demonstrate that the initiation of a DDR in activated macrophages occurs primarily through the generation of genomic DNA DSBs.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig2-v2.jpg)
 
-**Figure 2.:** (A) Neutral Comet assay and Olive Tail Moment quantification of BMDMs left untreated (UT) or after infection with L. m. or LPS + IFN-γ for 12 hr. (B) Immunofluorescence for L. m. (green) and γ-H2AX (red) in WT BMDMs 9 hr. post-infection. Nuclei are revealed by DAPI (blue). (C) Western blotting of DNA Ligase IV-deficient (Lig4BMDMs after no infection (-) or infection (+) with loxP/loxP: Lyz2Cre/+) or Lyz2Cre/+ L. m. for 24 hr. (D) Western blotting of WT or Mre11 BMDMs after no stimulation (-) or stimulation (+) with LPS + IFN-γ for 9 hr. (ATLD1/ATLD1E, F) Western blot analysis of (E) WT BMDMs after no stimulation (-) or stimulation (+) with LPS + IFN-γ for 9 hr. in the presence or absence of MnTMPyP or AGHS (F) WT, iNOS-deficient (Nos2), or NADPH oxidase-deficient (-/-Nox2) BMDMs after no stimulation (-) or stimulation (+) with LPS + IFN-γ for 9 hr. Data are representative of two or more independent experiments. Quantitation in (-/-A) is the mean and SEM of three independent experiments where ≥ 50 tails were analyzed for each condition and Olive Tail Moment of treated BMDMs is expressed as a ratio to untreated BMDMs. *p<0.05 (Student’s paired t-test). Blank spaces in (C) and (FE) indicate that blots have been cropped.DOI: http://dx.doi.org/10.7554/eLife.24655.005
+**Figure 2.:** (A) Neutral Comet assay and Olive Tail Moment quantification of BMDMs left untreated (UT) or after infection with L. m. or LPS + IFN-γ for 12 hr. (B) Immunofluorescence for L. m. (green) and γ-H2AX (red) in WT BMDMs 9 hr. post-infection. Nuclei are revealed by DAPI (blue). (C) Western blotting of DNA Ligase IV-deficient (Lig4loxP/loxP: Lyz2Cre/+) or Lyz2Cre/+ BMDMs after no infection (-) or infection (+) with L. m. for 24 hr. (D) Western blotting of WT or Mre11ATLD1/ATLD1 BMDMs after no stimulation (-) or stimulation (+) with LPS + IFN-γ for 9 hr. (E, F) Western blot analysis of (E) WT BMDMs after no stimulation (-) or stimulation (+) with LPS + IFN-γ for 9 hr. in the presence or absence of MnTMPyP or AGHS (F) WT, iNOS-deficient (Nos2-/-), or NADPH oxidase-deficient (Nox2-/-) BMDMs after no stimulation (-) or stimulation (+) with LPS + IFN-γ for 9 hr. Data are representative of two or more independent experiments. Quantitation in (A) is the mean and SEM of three independent experiments where ≥ 50 tails were analyzed for each condition and Olive Tail Moment of treated BMDMs is expressed as a ratio to untreated BMDMs. *p<0.05 (Student’s paired t-test). Blank spaces in (C) and (FE) indicate that blots have been cropped.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** L.monocytogenes-infected BMDM exhibit discrete γ-H2AX foci.(A) Additional representative images of immunofluorescence for L. m. (green) and γ-H2AX (red) in WT BMDMs 9 hr. post-infection. Nuclei are revealed by DAPI (blue). (B) Quantification of γ-H2AX foci in L. monocytogenes-negative and –positive BMDMs. Nuclei with>5 γ-H2AX foci were scored positive for DDR. 119 and 829 L. monocytogenes-negative and –positive nuclei, respectively, were quantified. Data are the mean and SEM of three independent experiments. *p<0.05.DOI: http://dx.doi.org/10.7554/eLife.24655.006
+**Figure 2—figure supplement 1.:** (A) Additional representative images of immunofluorescence for L. m. (green) and γ-H2AX (red) in WT BMDMs 9 hr. post-infection. Nuclei are revealed by DAPI (blue). (B) Quantification of γ-H2AX foci in L. monocytogenes-negative and –positive BMDMs. Nuclei with>5 γ-H2AX foci were scored positive for DDR. 119 and 829 L. monocytogenes-negative and –positive nuclei, respectively, were quantified. Data are the mean and SEM of three independent experiments. *p<0.05.
 
-## Nitric oxide initiates DDR
+### Nitric oxide initiates DDR
 
 Macrophage activation leads to production of ROS and NO, both of which have genotoxic properties that could generate DNA DSBs. We treated BMDMs with a cell-permeable superoxide scavenger, MnTMPyP, or an inhibitor of the inducible nitric oxide synthase, aminoguanidine hemisulfate (AGHS). Treatment with AGHS, but not MnTMPyP, prevented γ-H2AX formation in response to LPS and IFN-γ, suggesting that NO, and not ROS, initiates DDR in activated BMDMs (Figure 2E). In agreement with this finding, BMDMs deficient in the nitric oxide synthase (Nos2-/-) exhibit diminished γ-H2AX in response to LPS and IFN-γ, whereas loss of gp91phox (Nox2-/-), an essential catalytic subunit of the NADPH oxidase, has no effect on γ-H2AX formation (Figure 2F) (Laubach et al., 1995; Pollock et al., 1995). Thus, activation of the DDR in macrophages depends on NO production.
 
-## Type I IFN receptor signals drive the DDR in BMDMs
+### Type I IFN receptor signals drive the DDR in BMDMs
 
-The requirement for both LPS and IFN-γ indicates that both TLR and IFN receptor signaling may be needed to activate the DDR in macrophages (
+The requirement for both LPS and IFN-γ indicates that both TLR and IFN receptor signaling may be needed to activate the DDR in macrophages (Figure 1A). Indeed, after infection of BMDMs with L. monocytogenes, DDR activation depends on TLR signaling, as BMDMs deficient in MyD88, a critical TLR adaptor protein, exhibit diminished γ-H2AX formation (Figure 3A). However, infection of wild type BMDMs with L. monocytogenes leads to robust DDR activation without the addition of IFN-γ (Figure 1B). In this regard, type I IFN produced upon entry of L. monocytogenes into the cytosol may provide IFN signals required for DDR initiation (Witte et al., 2012). In agreement with this notion, heat-killed L. monocytogenes, which activates TLR signaling but does not enter the cytosol and stimulate type I IFN production, does not initiate a DDR in the absence of exogenous IFN (Figure 3B). Moreover, BMDMs deficient in STING (Tmem173-/-), a cytosolic protein required to stimulate type I IFN production downstream of L. monocytogenes DNA, do not initiate a DDR after infection with L. monocytogenes (Figure 3C). Finally, DDR signaling is not observed in type I IFN receptor-deficient (Ifnar1-/-) BMDMs infected with L. monocytogenes (Figure 3D).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig3-v2.jpg)
 
-**Figure 3.:** (A,B) Western blotting for γ-H2AX and H2AX in whole cell lysates from (A) WT or Myd88 BMDMs after no infection (-) or infection (+) with -/-L. monoctytogenes (L. m.) for 24 hr. (B) WT BMDMs after no treatment (-) or treatment (+) with IFN-γ, heat-killed L. monocytogenes, or both for 9 hr. (C, D) Western blotting for γ-H2AX, H2AX, p-KAP-1, and KAP-1 in whole cell lysates from WT, Tmem173(-/- C) or Ifnar1(-/- D) BMDMs after no infection (-) or infection with L. m. for 24 hr. Data are representative of 2–4 independent experiments.DOI: http://dx.doi.org/10.7554/eLife.24655.007
+**Figure 3.:** (A,B) Western blotting for γ-H2AX and H2AX in whole cell lysates from (A) WT or Myd88-/- BMDMs after no infection (-) or infection (+) with L. monoctytogenes (L. m.) for 24 hr. (B) WT BMDMs after no treatment (-) or treatment (+) with IFN-γ, heat-killed L. monocytogenes, or both for 9 hr. (C, D) Western blotting for γ-H2AX, H2AX, p-KAP-1, and KAP-1 in whole cell lysates from WT, Tmem173-/- (C) or Ifnar1-/- (D) BMDMs after no infection (-) or infection with L. m. for 24 hr. Data are representative of 2–4 independent experiments.
 
-TLR and IFN receptor signaling may be required primarily to induce the DNA damaging agent, NO. Though
+TLR and IFN receptor signaling may be required primarily to induce the DNA damaging agent, NO. Though Ifnar1-/- BMDMs infected with L. monocytogenes do not produce NO, addition of IFN-γ rescues NO production to wild type levels (Figure 4A). This, however, does not lead to a robust DDR (Figure 4B). Thus, type I IFN signaling is required to promote the DDR in BMDMs beyond its role in stimulating NO production. The DDR is also attenuated in Ifnar1-/- BMDMs treated with LPS and IFN-γ (data not shown). Type I IFN does not augment DNA DSB generation, as evidenced by the equivalent levels of DNA DSBs observed by neutral comet assay analysis of BMDMs treated with the DNA DSB-inducing agent bleomycin in the presence or absence of type I IFN (IFN-β) (Figure 4C). However, a robust DDR to bleomycin is only observed in BMDMs treated with IFN-β (Figure 4D). In contrast to macrophages, mouse embryonic fibroblasts (MEFs) treated with bleomycin exhibit a robust DDR that is not augmented by the addition of either IFN-β or IFN-γ (Figure 4D and E). Thus, unlike other cell types, the DDR in macrophages depends on type I IFN signaling. This is not due to an effect of type I IFN signaling on cell cycle parameters or the expression of key DDR proteins (Mre11, Rad50, Nbs1, Ku70, Ku80, ATR, DNA-PKcs, ATM and H2AX) in BMDMs (Figure 4—figure supplements 1 and 2). Notably, many of these proteins exhibit substantially lower expression in BMDMs as compared to MEFs (see Discussion).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig4-v2.jpg)
 
-**Figure 4.:** (A) Nitrite concentration in culture supernatants collected from WT and Ifnar1-/- BMDMs after no infection (-) or infection (+) with L. m. for 24 hr. in the presence or absence of IFN-γ. Data are a compilation of three independent experiments and depict mean and SEM. (B) Western blotting for γ-H2AX, H2AX, p-KAP-1, and KAP-1 in whole cell lysates from WT and Ifnar1-/- BMDMs after no infection (-) or infection (+) with L. m. for 24 hr. in the presence or absence of IFN-γ . (C) Neutral Comet assay and Olive Tail Moment quantification of BMDMs left untreated (UT) or after treatment with bleomycin in the presence or absence of type I interferon (IFN-β). (D, E) Western blotting for p-KAP-1 and KAP-1 of WT mouse embryonic fibroblasts (MEFs) or BMDMs after no stimulation (-) or stimulation with bleomycin (1 ug/mL), (D) IFN-β (100 U/mL), or bleomycin + IFN-β for 6 hr. (E) IFN-γ (10 ng/mL), or bleomycin + IFN-γ for 6 hr. Data are representative of 2-4 independent experiments. Quantitation in (C) is the mean and SEM of three independent experiments where ≥50 tails were analyzed for each condition and Olive Tail Moment of treated is expressed as a ratio to untreated. ns = not significant. Blank space in (E) indicates that blot has been croppedDOI: http://dx.doi.org/10.7554/eLife.24655.008
+**Figure 4.:** (A) Nitrite concentration in culture supernatants collected from WT and Ifnar1-/- BMDMs after no infection (-) or infection (+) with L. m. for 24 hr. in the presence or absence of IFN-γ. Data are a compilation of three independent experiments and depict mean and SEM. (B) Western blotting for γ-H2AX, H2AX, p-KAP-1, and KAP-1 in whole cell lysates from WT and Ifnar1-/- BMDMs after no infection (-) or infection (+) with L. m. for 24 hr. in the presence or absence of IFN-γ . (C) Neutral Comet assay and Olive Tail Moment quantification of BMDMs left untreated (UT) or after treatment with bleomycin in the presence or absence of type I interferon (IFN-β). (D, E) Western blotting for p-KAP-1 and KAP-1 of WT mouse embryonic fibroblasts (MEFs) or BMDMs after no stimulation (-) or stimulation with bleomycin (1 ug/mL), (D) IFN-β (100 U/mL), or bleomycin + IFN-β for 6 hr. (E) IFN-γ (10 ng/mL), or bleomycin + IFN-γ for 6 hr. Data are representative of 2-4 independent experiments. Quantitation in (C) is the mean and SEM of three independent experiments where ≥50 tails were analyzed for each condition and Olive Tail Moment of treated is expressed as a ratio to untreated. ns = not significant. Blank space in (E) indicates that blot has been cropped
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Flow cytometric analysis of BrdU incorporation (y axis) and DNA content (7AAD; x axis) was performed in BMDMs left untreated or after stimulation with IFN-β (100 U/mL), bleomycin (1 ug/mL), or bleomycin + IFN-β for 6 hr. Percentage of cells in each phase of the cell cycle (G1, S, and G2-M) after BrdU labeling is indicated. Data are representative of three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.24655.009
+**Figure 4—figure supplement 1.:** Flow cytometric analysis of BrdU incorporation (y axis) and DNA content (7AAD; x axis) was performed in BMDMs left untreated or after stimulation with IFN-β (100 U/mL), bleomycin (1 ug/mL), or bleomycin + IFN-β for 6 hr. Percentage of cells in each phase of the cell cycle (G1, S, and G2-M) after BrdU labeling is indicated. Data are representative of three independent experiments.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Western blotting for Mre11, Nbs1, Rad50, Ku70, Ku80, ATM, ATR, DNA-PKcs, and H2AX in untreated (-) WT mouse embryonic fibroblasts (MEFs) or BMDMs after no stimulation (-) or stimulation (+) with IFN-β (100 U/mL), bleomycin (1 ug/mL), or bleomycin + IFN-β for 6 hr. GAPDH is used as a protein loading control. Data are representative of three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.24655.010
+**Figure 4—figure supplement 2.:** Western blotting for Mre11, Nbs1, Rad50, Ku70, Ku80, ATM, ATR, DNA-PKcs, and H2AX in untreated (-) WT mouse embryonic fibroblasts (MEFs) or BMDMs after no stimulation (-) or stimulation (+) with IFN-β (100 U/mL), bleomycin (1 ug/mL), or bleomycin + IFN-β for 6 hr. GAPDH is used as a protein loading control. Data are representative of three independent experiments.
 
-## DDR regulates the genetic program of macrophages
+### DDR regulates the genetic program of macrophages
 
-We performed gene expression profiling on
+We performed gene expression profiling on Lyz2Cre/+ and Scid:AtmC/C:Lyz2Cre/+ BMDMs before and after infection with L. monocytogenes (Figure 5A and Figure 5—source data 1). The expression of 322 genes was induced (≥4 fold) after infection of Lyz2Cre/+ BMDMs with L. monocytogenes (Figure 5A and Figure 5—source data 1). Of these, 128 exhibited greater (≥1.25 fold) induction in Lyz2Cre/+ BMDMs infected with L. monocytogenes relative to infected Scid:AtmC/C:Lyz2Cre/+ BMDMs, indicating that their expression is regulated by ATM and/or DNA-PKcs (Figure 5A and Figure 5—source data 1). These genes encode proteins with diverse functions in the immune response, including several cytokines, chemokines, and cell surface proteins such as the class A scavenger receptor MARCO and CD69, which has a role in cell localization and migration (Figure 5A and B) (Kraal et al., 2000; Schwab and Cyster, 2007). The DDR in L. monocytogenes-infected BMDMs regulates the expression of many (Cxcl1, Cxcl10, Ccl2, Ccl3 and Ccl4), but not all (Ccl5), chemokine genes that are induced in activated macrophages (Figure 5A and B). The analysis of BMDMs deficient in ATM (Atm-/-) or DNA-PKcs (Scid) revealed that both of these kinases can function to regulate gene expression (Figure 5C, Marco and Cxcl10), whereas in other cases the activity of either of these kinases is adequate (Figure 5C, Ccl2). We conclude that once activated by DNA DSBs, ATM and DNA-PKcs regulate the functional genetic program of activated macrophages.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig5-v2.jpg)
 
-**Figure 5.:** (A) Heat map showing genes that are significantly up-regulated (≥4 fold, adj. p-value<0.001) in L. m.-infected Lyz2and Cre/+Scid:Atm BMDMs relative to no infection. Red indicates relatively higher expression; blue indicates relatively lower expression. Genes with increased expression (>1.25 fold) in C/C:Lyz2Cre/+ Lyz2controls relative to Cre/+L. m.-infected Scid:Atm  BMDMs are clustered in the upper right hand corner of the heat map. Select genes in this group are indicated. Shown are two biological replicates (1 and 2) for each condition and genotype. (C/C:Lyz2Cre/+B,C) Quantitative real-time PCR (RT-PCR) of gene expression in uninfected (-) and L. m.-infected (+) (B) Scid:Atm  and C/C:Lyz2Cre/+Lyz2 BMDMs and (Cre/+C) Atm, -/-Scid, and WT BMDMs. Data are the mean and SEM of three or more independent experiments. *p<0.05, **p<0.01, ns = not significant.DOI: http://dx.doi.org/10.7554/eLife.24655.01110.7554/eLife.24655.012Figure 5—source data 1.L. monocytogenes infection.Normalized log2 probe values for genes up-regulated (≥4 fold, adj. p-value<0.001) in L. m.-infected Lyz2and Cre/+Scid:Atm BMDMs relative to uninfected cells. The fold-change between infected C/C:Lyz2Cre/+ Scid:Atm -and infected C/C:Lyz2Cre/+Lyz2cells for each gene is also shown.Cre/+ DOI: http://dx.doi.org/10.7554/eLife.24655.012
+**Figure 5.:** (A) Heat map showing genes that are significantly up-regulated (≥4 fold, adj. p-value<0.001) in L. m.-infected Lyz2Cre/+and Scid:Atm C/C:Lyz2Cre/+ BMDMs relative to no infection. Red indicates relatively higher expression; blue indicates relatively lower expression. Genes with increased expression (>1.25 fold) in Lyz2Cre/+controls relative to L. m.-infected Scid:Atm C/C:Lyz2Cre/+ BMDMs are clustered in the upper right hand corner of the heat map. Select genes in this group are indicated. Shown are two biological replicates (1 and 2) for each condition and genotype. (B,C) Quantitative real-time PCR (RT-PCR) of gene expression in uninfected (-) and L. m.-infected (+) (B) Scid:Atm C/C:Lyz2Cre/+ and Lyz2Cre/+ BMDMs and (C) Atm-/-, Scid, and WT BMDMs. Data are the mean and SEM of three or more independent experiments. *p<0.05, **p<0.01, ns = not significant.
 
-## Regulation of inflammasome activation by ATM and DNA-PKcs
+### Regulation of inflammasome activation by ATM and DNA-PKcs
 
-Entry of
+Entry of L. monocytogenes into the cytosol activates the NLRP3 and AIM2 inflammasomes, leading to the activation of the caspase 1 protease and cleavage of pro-IL-1β and pro-IL-18 to form active IL-1β and IL-18, respectively (Lamkanfi and Dixit, 2014; von Moltke et al., 2013; Witte et al., 2012). Loss of both ATM and DNA-PKcs (Scid:AtmC/C:Lyz2Cre/+) leads to a significant reduction in IL-1β production in response to infection of BMDMs with L. monocytogenes (Figure 6A). In contrast, BMDMs with isolated deficiencies in ATM or DNA-PKcs exhibit only a mild reduction in IL-1β production (data not shown). ROS levels in resting ATM-deficient macrophages have been implicated in blunting inflammasome responses (Erttmann et al., 2016). However, we do not observe any notable differences in ROS levels among the different macrophages examined here (Figure 6—figure supplement 1). ATM and DNA-PKcs are not required to promote pro-IL-1β gene expression, nor are they required for optimal expression of the Asc, Nlrp3, or Aim2 genes (Figure 6—figure supplement 2). Rather, after infection with L. monocytogenes, Scid:AtmC/C:Lyz2Cre/+ BMDMs are unable to efficiently convert inactive pro-caspase 1 to active caspase 1 (p20) (Figure 6B). This requirement for ATM and DNA-PKcs is not specific to L. monocytogenes, as AIM2 inflammasome activation by LPS and poly dA:dT also depends on an intact DDR (Figure 6C). Moreover, activation of the NLRP3 inflammasome with LPS and either nigericin or monosodium urate (MSU) crystals is also defective in Scid:AtmC/C:Lyz2Cre/+ BMDMs as evidenced by reduced IL-1β production in response to these stimuli (Figure 6D).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig6-v2.jpg)
 
-**Figure 6.:** (A) IL-1β protein concentration as determined by ELISA in supernatants from uninfected (-) and L. m.-infected (+) Scid:Atm and C/C:Lyz2Cre/+Lyz2 BMDMs 12 and 24 hr. post-infection. Data are mean and SEM of technical replicates and are representative of four independent experiments. ***p<0.0001. (Cre/+B) Western blot analysis of pro-caspase 1 in whole cell lysates (WCL) and active caspase 1 (p20) in supernatants (Sup) from Lyz2 and Cre/+Scid:Atm BMDMs 12 and 24 hr. post-C/C:Lyz2Cre/+L. m. infection. Data are representative of two independent experiments. (C,D) IL-1β protein concentration by ELISA in supernatants from Lyz2 and Cre/+Scid:Atm BMDMs left untreated (-) or after treatment with LPS (200 ng/mL) for 12 hr and in the presence or absence of (C/C:Lyz2Cre/+C) poly(dA:dT) (5 ug/mL) for 12 hr. (D) nigericin (5 uM) for 30 min. or monosodium urate crystals (MSU, 50 ug/mL) for 12 hr. Data are mean and SEM of technical replicates and are representative of two or three independent experiments. ***p<0.0001.DOI: http://dx.doi.org/10.7554/eLife.24655.013
+**Figure 6.:** (A) IL-1β protein concentration as determined by ELISA in supernatants from uninfected (-) and L. m.-infected (+) Scid:AtmC/C:Lyz2Cre/+ and Lyz2Cre/+ BMDMs 12 and 24 hr. post-infection. Data are mean and SEM of technical replicates and are representative of four independent experiments. ***p<0.0001. (B) Western blot analysis of pro-caspase 1 in whole cell lysates (WCL) and active caspase 1 (p20) in supernatants (Sup) from Lyz2Cre/+ and Scid:AtmC/C:Lyz2Cre/+ BMDMs 12 and 24 hr. post-L. m. infection. Data are representative of two independent experiments. (C,D) IL-1β protein concentration by ELISA in supernatants from Lyz2Cre/+ and Scid:AtmC/C:Lyz2Cre/+ BMDMs left untreated (-) or after treatment with LPS (200 ng/mL) for 12 hr and in the presence or absence of (C) poly(dA:dT) (5 ug/mL) for 12 hr. (D) nigericin (5 uM) for 30 min. or monosodium urate crystals (MSU, 50 ug/mL) for 12 hr. Data are mean and SEM of technical replicates and are representative of two or three independent experiments. ***p<0.0001.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** Flow cytometric analysis of mitochondrial superoxide levels in live BMDM from Lyz2, Cre/+Atm, and C/C: Lyz2Cre/+Scid: Atm mice. Superoxide is detected with the fluorogenic dye MitoSOX Red.C/C: Lyz2Cre/+DOI: http://dx.doi.org/10.7554/eLife.24655.014
+**Figure 6—figure supplement 1.:** Flow cytometric analysis of mitochondrial superoxide levels in live BMDM from Lyz2Cre/+, AtmC/C: Lyz2Cre/+, and Scid: AtmC/C: Lyz2Cre/+ mice. Superoxide is detected with the fluorogenic dye MitoSOX Red.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** (A–D) Quantitative RT- PCR analysis of (A) pro Il-1β, (B) Asc, (C) Nlrp3, and (D) Aim2 gene expression in Scid: Atmand C/C: Lyz2cre/+Lyz2BMDMs infected (+) or not (-) with cre/+L. m. Data are a compilation of three independent experiments and depict mean and SEM. ns = not significant.DOI: http://dx.doi.org/10.7554/eLife.24655.015
+**Figure 6—figure supplement 2.:** (A–D) Quantitative RT- PCR analysis of (A) pro Il-1β, (B) Asc, (C) Nlrp3, and (D) Aim2 gene expression in Scid: AtmC/C: Lyz2cre/+and Lyz2cre/+BMDMs infected (+) or not (-) with L. m. Data are a compilation of three independent experiments and depict mean and SEM. ns = not significant.
 
-In contrast to IL-1β, production of IL-18 relies primarily on DNA-PKcs, as
+In contrast to IL-1β, production of IL-18 relies primarily on DNA-PKcs, as Scid BMDMs produce significantly less IL-18 after L. monocytogenes infection (Figure 7A). DNA-PKcs is not required to promote pro-IL-18 gene expression (Figure 7—figure supplement 1). IL-12 and IL-18 stimulate T cells and NK cells to produce IFN-γ (Akira, 2000; Hsieh et al., 1993; Okamura et al., 1995). As compared to wild type BMDMs, Scid BMDMs infected with L. monocytogenes were not effective at simulating IFN-γ production by co-cultured NK cells (Figure 7B). Scid and wild type BMDMs both induce IL-12 (p40) gene expression upon infection with L. monocytogenes and the addition of exogenous IL-18 rescues IFN-γ production by NK cells co-cultured with L. monocytogenes-infected Scid BMDMs (Figure 7B and Figure 7—figure supplement 1). Thus, the inability of Scid BMDMs to induce NK cells to make IFN-γ is due to the role of DNA-PKcs stimulating IL-18 production. We concluded that ATM and DNA-PKcs regulate inflammasome function in response to a broad variety of activators. Moreover, these two kinases are differentially required for the production of IL-1β and IL-18 by the inflammasome.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig7-v2.jpg)
 
-**Figure 7.:** (A) IL-18 protein concentration as determined by ELISA in supernatants from uninfected (-) and L. m.-infected WT and Scid BMDMs 12 and 24 hr. post-infection. Data are mean and SEM of technical replicates and are representative of three independent experiments. ***p≤0.0002. (B) Flow cytometric analysis of intracellular IFN-γ production by WT splenic NK cells co-cultured with uninfected or L. m.-infected WT or Scid BMDM with (+) or without (-) the addition of IL-18 for 15 hr. Data are representative of four independent experiments. (C) Schematic showing the regulation of macrophage functions by DDR.DOI: http://dx.doi.org/10.7554/eLife.24655.016
+**Figure 7.:** (A) IL-18 protein concentration as determined by ELISA in supernatants from uninfected (-) and L. m.-infected WT and Scid BMDMs 12 and 24 hr. post-infection. Data are mean and SEM of technical replicates and are representative of three independent experiments. ***p≤0.0002. (B) Flow cytometric analysis of intracellular IFN-γ production by WT splenic NK cells co-cultured with uninfected or L. m.-infected WT or Scid BMDM with (+) or without (-) the addition of IL-18 for 15 hr. Data are representative of four independent experiments. (C) Schematic showing the regulation of macrophage functions by DDR.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/24655/elife-24655-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** Scid BMDM after L.m. infection.(,AB) Quantitative RT- PCR analysis of (A) Pro Il18 and (B) Il12p40 gene expression in WT and Scid BMDM 12 hr post- L. m. infection. Data are a compilation of three independent experiments and depict mean and SEM. ns = not significant.DOI: http://dx.doi.org/10.7554/eLife.24655.017
+**Figure 7—figure supplement 1.:** (A,B) Quantitative RT- PCR analysis of (A) Pro Il18 and (B) Il12p40 gene expression in WT and Scid BMDM 12 hr post- L. m. infection. Data are a compilation of three independent experiments and depict mean and SEM. ns = not significant.
 
 ## Discussion
 
@@ -153,54 +153,129 @@ ATM and DNA-PKcs are both required for optimal IL-1β production by macrophages 
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 All mice were bred and maintained under specific pathogen-free conditions at the Washington University School of Medicine and Weill Cornell Medical College under protocol number 2015–0036. Mice were handled in accordance with the guidelines set forth by the Division of Comparative Medicine of Washington University and the Research Animal Research Center at Weill Cornell Medical College. Lyz2Cre/+ (Clausen et al., 1999), Scid, Ifnar1-/-, Tmem173-/-, and Nox2-/- mice were maintained on a C57BL/6 background. The Atm-/- and Mre11ATLD1/ATLD1 mice have been described previously (Theunissen et al., 2003). Confirmation of mouse genotypes was done by PCR or Southern blotting. AtmC/C mice (Zha et al., 2008) were extensively backcrossed to the C57BL/6 background and were monitored by the analysis of microsatellite markers at the Rheumatic Disease Core Center, Washington University School of Medicine (St. Louis, MO). All mice were analyzed between 4 and 8 wks of age.
 
-## Bacteria
+### Bacteria
 
 The Listeria monocytogenes strain used in this study was the wild type strain EGD, which was stored as glycerol stocks at −80°C. For all ex vivo experiments, L. monocytogenes were grown and prepared as described previously (Edelson and Unanue, 2001). Heat-killed L. monocytogenes were prepared by incubation of mid-log bacteria at 70°C for 3 hr followed by several washes with sterile 1X PBS.
 
-## Cell culture
+### Cell culture
 
 Bone marrow was harvested from 4–8-wk-old mice and cultured for 6 days in complete DMEM containing 10% heat-inactivated FBS, 5% heat-inactivated horse serum, and 20% culture supernatant from L929 fibroblasts as a source of M-CSF. BMDMs were re-plated in this media in 6-well plates at a density of 2.5 × 106/well. The following day, BMDMs were treated with 100 ng/mL LPS (Escherichia coli serotype 055:B5) (Sigma-Aldrich, St. Louis, MO), 100 U/mL murine IFN-γ (PBL Interferon Source), or both. For infection with L. monocytogenes, BMDMs were re-plated in antibiotic-free media and infected the following day with L. monocytogenes at a multiplicity of infection (MOI) of 5 followed by addition of Gentamicin (5 ug/mL) (Gibco) 30 min post-infection to kill extracellular L. monocytogenes. All L. monocytogenes experiments were done in the presence or absence of 100 ng/mL murine IFN-γ (R&D Systems). Primary peritoneal macrophages were harvested from C57BL/6 mice via peritoneal lavage. Cells were plated in 24-well plates at a density of 1–2 × 106 cells/well and were incubated at 37°C for 4 hr in complete DMEM. At this time, media was removed and the remaining adherent macrophages were incubated for 24 hr in complete DMEM containing LPS (100 ng/mL), IFN-γ (100 U/mL), or both. Mouse embryonic fibroblasts (MEFs) were generated from C57BL/6 d 13.5 embryos and subsequently immortalized with the SV40 T antigen. BMDMs and mouse embryonic fibroblasts (MEFs) were treated with Bleocin (1 ug/mL) (Millipore) for 6 hr without or with IFN-β (100 U/mL) (PBL Interferon Source) pretreatment for 3 hr. For inflammasome studies, BMDM were treated with 200 ng/mL LPS (Escherichia coli serotype 055:B5) (Sigma) with or without 5 ug/mL poly(dA:dT) (Invivogen) or monosodium urate crystals (MSU, 50 ug/mL) (Invivogen) for 12 hr or with LPS for 12 hr followed by nigericin (5 uM) (Invivogen) for 30 min. IL-1β and IL-18 levels in supernatants were measured using the OptEIA ELISA set (BD Biosciences) and Mouse IL-18 ELISA Set (MBL), respectively, in accordance with the manufacturer’s instructions. Supernatant nitrite levels were determined using the Griess reagent. Levels of mitochondrial superoxide were detected in live BMDM using the fluorogenic dye MitoSOX Red (2.5 uM) (Molecular Probes). Cells were treated with the dye for 30 min, washed with warm 1X PBS, and analyzed by flow cytometry using a BD LSR II (BD) and FlowJo software (TreeStar).
 
-## PCR and southern blotting
+### PCR and southern blotting
 
 RNA was isolated and quantitative RT-PCR carried out as described previously (Bednarski et al., 2012). Oligonucleotide sequences are detailed at the end of this section. Southern blot analyses were performed using KpnI-digested genomic DNA and the 3’ ATM conditional probe as previously described (Bredemeyer et al., 2006; Zha et al., 2008).
 
-## Western blotting
+### Western blotting
 
 BMDM and MEFs were lysed in RIPA buffer and whole cell lysates were generated with LDS sample buffer (Invitrogen) supplemented with dithiothreitol (DTT). For analysis of culture supernatants, protein was precipitated with 7.2% w/v trichloroacetic acid (TCA) (Sigma) followed by two acetone washes. Immunoblotting was carried out as previously described (Helmink et al., 2011). Primary antibodies used were anti-γ-H2AX clone JBW301 (Millipore) (RRID:AB_309864), anti-H2AX (Millipore) (RRID:AB_2233033), anti-phospho-KAP-1 (Bethyl Laboratories) (RRID:AB_669740), anti-KAP-1 (GeneTex) (RRID:AB_372041), anti-caspase 1 (p20, Casper-1) (Adipogen) (RRID:AB_2490248), anti-DNA-PKcs (Invitrogen), anti-Ku70 (Cell Signaling Technology), anti-Ku80 (Cell Signaling Technology) (RRID:AB_2257526), anti-ATM clone MAT3 (Sigma), anti-Mre11 (Novus) (RRID:AB_10077796), anti-Nbs1 (Abcam) (RRID:AB_777006), anti-Rad50 (Abcam) (RRID:AB_2176935), anti-ATR (Novus) (RRID:AB_10003234), and anti-glyceraldehyde-3-phosphate dehydrogenase (GAPDH) (Sigma). Secondary reagents were horseradish peroxidase–conjugated anti–mouse IgG (Promega) or horseradish peroxidase–conjugated anti- rabbit IgG (Cell Signaling Technology).
 
-## Immunoflurescence
+### Immunoflurescence
 
 BMDM were plated on 12 mm glass coverslips (2.5 × 105 cells/coverslip) in 24-well plates and infected with L. monocytogenes as described above. Nine hr post-infection, cells were fixed with 4% formaldehyde in PBS for 10 min at room temperature, permeabilized in 0.5% Triton X-100 in PBS for 5 min, and then washed with PBS. Coimmunostaining with primary and secondary antibodies was performed with a blocking solution of 3% bovine serum albumin (BSA) in PBS at 37°C for 30 min, and cells were mounted with ProLong Gold Antifade reagent containing 4′,6-diamidino-2-phenylindole (DAPI) (Invitrogen). Antibodies used for staining were anti-γ-H2AX clone JBW301(1:2000 dilution) (Millipore) (RRID:AB_309864), and Difco Listeria O Antiserum Poly Serotypes 1, 4 (1:200 dilution) (BD). Antibodies used for secondary staining were Alexa Fluor 488–goat anti-rabbit IgG (1:2000) (Invitrogen), and Alexa Fluor 594–goat anti mouse IgG (1:2000) (Invitrogen). Imaging was performed with a BX-53 Olympus microscope using an ApoN 60x/1.49-numerical-aperture oil immersion lens and cellSens Dimension software.
 
-## COMET assay
+### COMET assay
 
 BMDM were treated with LPS and IFN-γ, infected with L. monocytogenes, or treated with Bleocin with or without IFN-β, as described above. Cells were subjected to the neutral CometAssay using reagents from Trevigen in accordance with the manufacturer’s protocol. Imaging was performed with a BX-53 Olympus microscope using an ApoN 60x/1.49-numerical-aperture oil immersion lens and cellSens Dimension software. Olive Tail Moment was determined using the software OpenComet. 50 or more tails were analyzed for each condition.
 
-## Cell cycle analysis
+### Cell cycle analysis
 
 BMDM were infected with L. monocytogenes for 16 hr as previously described or treated with Bleocin with or without IFN-β, as described above. Cells were then pulsed with BrdU for 30 min using the BrdU-FITC or –APC kits per the manufacturer’s instructions. DNA content was assessed by 7AAD (BD) and data were acquired on a FACSCalibur or BD LSR II (BD Biosciences) and were analyzed with FlowJo software (TreeStar).
 
-## Gene array
+### Gene array
 
 RNA was isolated from two independent BMDM cultures for each genotype (Lyz2Cre/+and Scid: AtmC/C: Lyz2Cre/+) after no infection or infection with L. monocytogenes for 24 hr. RNA was extracted from cells with the RNeasy Mini Kit (Qiagen). Gene expression profiling was performed using Illumina MouseRef-8 expression microarrays according to the manufacturer’s protocols. Unnormalized summary probe profiles were exported from GenomeStudio (Illumina) and background corrected and quantile normalized using the limma R package’s (Shi et al., 2010) neqc function with default parameters. Only probes with a detection p-value<0.05 in at least three arrays were considered expressed and used for further analyses. A linear model was fit to the data, and an empirical Bayes moderated t-statistics test was used to determine differentially expressed genes in L. monocytogenes-infected cells relative to uninfected cells using the limma R package (Ritchie et al., 2015). Multiple probes for a given gene were resolved by retaining the probe with the highest average expression across all arrays. Upregulated genes with a fold change>4 and adjusted p-value<0.001 in L. monocytogenes-infected cells relative to uninfected were used for heatmaps. Fold changes were calculated based on the average of two biological replicates for each genotype.
 
-## NK-BMDM co-culture assay
+### NK-BMDM co-culture assay
 
 BMDM were cultured in 12-well plates at a density of 1 × 106 cells/well and infected with L. monocytogenes as described above. Splenic NK cells were magnetically sorted from whole splenocytes obtained from C57BL/6 mice using CD49b (DX5) MicroBeads and MS columns (Miltenyi). 12 hr post- L. monocytogenes infection of BMDM, 0.5 × 106 purified splenic NK cells were added to each well in the presence of IL-2 (50 U/mL) (PeproTech) to foster NK cell survival. Where relevant, murine IL-18 (10 ng/mL) (MBL) was also added to the cultures. 10 hr after adding the purified NK cells to the BMDM, protein transport was inhibited with GolgiStop (BD Biosciences). Five hr later, cells were harvested and nonspecific binding was blocked with 5 ug/mL of anti-CD16/32 (2.4G2; BD Pharmingen) before cell surfaces were stained with anti- NK1.1 (PK136; eBioscience), anti-CD11b (M1/70; BD Pharmingen), and anti-F4/80 (Invitrogen). Cells were fixed and permeabilized according to standard protocol and intracellular staining for IFN-γ (XMG1.2, eBioscience) was performed. Data were acquired on a FACSCanto II (BD Biosciences) and were analyzed with FlowJo software (TreeStar).
 
-## Statistical analysis
+### Statistical analysis
 
 All p-values were generated via Student’s unpaired two-tailed t test (unless otherwise stated in the figure legend) using Prism Version 5. P-values below 0.05 were considered statistically significant.
 
-## Sequences of primers used in quantitative real-time PCR (RT-PCR) analysis
+### Sequences of primers used in quantitative real-time PCR (RT-PCR) analysis
 
-Forward primerReverse primerGapdhAGGTCGGTGTGAACGGATTTGTGTAGACCATGTAGTTGAGGTCACxcl1CTGGGATTCACCTCAAGAACATCCAGGGTCAAGGCAAGCCTCCxcl10CCAAGTGCTGCCGTCATTTTCGGCTCGCAGGGATGATTTCAACcl2TTAAAAACCTGGATCGGAACCAAGCATTAGCTTCAGATTTACGGGTCcl3TTCTCTGTACCATGACACTCTGCCGTGGAATCTTCCGGCTGTAGCcl4TTCCTGCTGTTTCTCCTCTTACACCTCTGTCTGCCTCTTTTGGTCAGCcl5GCTGCTTTGCCTACCTCTCCTCGAGTGACAAACACGACTGCMarcoGCACAGAAGACAGAGCCGATTTGCCACAGCACATCTCTAGCATCTCd69TGGTGAACTGGAACATTGGACAGTGGAAGTTTGCCTCACAIl1bAGCTTCCTTGTGCAAGTGTCTGACAGCCCAGGTCAAAGGTTIl18TCAAAGTGCCAGTGAACCCCGGTCACAGCCAGTCCTCTTACAim2CGGGAAATGCTGTTGTTGACTGCTCCTGGCAATCTGAAAIl12p40ACCTGTGACACGCCTGAAGAAGATTCTTGTGGAGCAGCAGATGTGAGT
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gapdh</td>
+      <td>AGGTCGGTGTGAACGGATTTG</td>
+      <td>TGTAGACCATGTAGTTGAGGTCA</td>
+    </tr>
+    <tr>
+      <td>Cxcl1</td>
+      <td>CTGGGATTCACCTCAAGAACATC</td>
+      <td>CAGGGTCAAGGCAAGCCTC</td>
+    </tr>
+    <tr>
+      <td>Cxcl10</td>
+      <td>CCAAGTGCTGCCGTCATTTTC</td>
+      <td>GGCTCGCAGGGATGATTTCAA</td>
+    </tr>
+    <tr>
+      <td>Ccl2</td>
+      <td>TTAAAAACCTGGATCGGAACCAA</td>
+      <td>GCATTAGCTTCAGATTTACGGGT</td>
+    </tr>
+    <tr>
+      <td>Ccl3</td>
+      <td>TTCTCTGTACCATGACACTCTGC</td>
+      <td>CGTGGAATCTTCCGGCTGTAG</td>
+    </tr>
+    <tr>
+      <td>Ccl4</td>
+      <td>TTCCTGCTGTTTCTCCTCTTACACCT</td>
+      <td>CTGTCTGCCTCTTTTGGTCAG</td>
+    </tr>
+    <tr>
+      <td>Ccl5</td>
+      <td>GCTGCTTTGCCTACCTCTCC</td>
+      <td>TCGAGTGACAAACACGACTGC</td>
+    </tr>
+    <tr>
+      <td>Marco</td>
+      <td>GCACAGAAGACAGAGCCGATTT</td>
+      <td>GCCACAGCACATCTCTAGCATCT</td>
+    </tr>
+    <tr>
+      <td>Cd69</td>
+      <td>TGGTGAACTGGAACATTGGA</td>
+      <td>CAGTGGAAGTTTGCCTCACA</td>
+    </tr>
+    <tr>
+      <td>Il1b</td>
+      <td>AGCTTCCTTGTGCAAGTGTCT</td>
+      <td>GACAGCCCAGGTCAAAGGTT</td>
+    </tr>
+    <tr>
+      <td>Il18</td>
+      <td>TCAAAGTGCCAGTGAACCCC</td>
+      <td>GGTCACAGCCAGTCCTCTTAC</td>
+    </tr>
+    <tr>
+      <td>Aim2</td>
+      <td>CGGGAAATGCTGTTGTTGAC</td>
+      <td>TGCTCCTGGCAATCTGAAA</td>
+    </tr>
+    <tr>
+      <td>Il12p40</td>
+      <td>ACCTGTGACACGCCTGAAGAAGAT</td>
+      <td>TCTTGTGGAGCAGCAGATGTGAGT</td>
+    </tr>
+  </tbody>
+</table>
 
-## Accession numbers
+### Accession numbers
 
 The Gene Expression Omnibus number for the gene expression profiling analysis reported in this paper is GSE70467.

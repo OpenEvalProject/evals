@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Laboratory HbA 1c does not always predict diabetes complications and our aim was to establish a glycaemic measure that better reflects intracellular glucose exposure in organs susceptible to complications. Six months of continuous glucose monitoring data and concurrent laboratory HbA 1c were evaluated from 51 type 1 diabetes (T1D) and 80 type 2 diabetes (T2D) patients. Red blood cell (RBC) lifespan was estimated using a kinetic model of glucose and HbA 1c , allowing the calculation of person-specific adjusted HbA 1c (aHbA 1c ). Median (IQR) RBC lifespan was 100 (86–102) and 100 (83–101) days in T1D and T2D, respectively. The median (IQR) absolute difference between aHbA 1c and laboratory HbA 1c was 3.9 (3.0–14.3) mmol/mol [0.4 (0.3–1.3%)] in T1D and 5.3 (4.1–22.5) mmol/mol [0.5 (0.4–2.0%)] in T2D. aHbA 1c and laboratory HbA 1c showed clinically relevant differences. This suggests that the widely used measurement of HbA 1c can underestimate or overestimate diabetes complication risks, which may have future clinical implications.
+Laboratory HbA1c does not always predict diabetes complications and our aim was to establish a glycaemic measure that better reflects intracellular glucose exposure in organs susceptible to complications. Six months of continuous glucose monitoring data and concurrent laboratory HbA1c were evaluated from 51 type 1 diabetes (T1D) and 80 type 2 diabetes (T2D) patients. Red blood cell (RBC) lifespan was estimated using a kinetic model of glucose and HbA1c, allowing the calculation of person-specific adjusted HbA1c (aHbA1c). Median (IQR) RBC lifespan was 100 (86–102) and 100 (83–101) days in T1D and T2D, respectively. The median (IQR) absolute difference between aHbA1c and laboratory HbA1c was 3.9 (3.0–14.3) mmol/mol [0.4 (0.3–1.3%)] in T1D and 5.3 (4.1–22.5) mmol/mol [0.5 (0.4–2.0%)] in T2D. aHbA1c and laboratory HbA1c showed clinically relevant differences. This suggests that the widely used measurement of HbA1c can underestimate or overestimate diabetes complication risks, which may have future clinical implications.
 
 ## Introduction
 
@@ -27,7 +27,7 @@ While raised intracellular glucose is responsible for diabetes complications (Gi
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69456/elife-69456-fig1-v1.jpg)
 
-**Figure 1.:** 1c and diabetes treatment.In some individuals, laboratory HbA1c can be misleading and resulting in undertreatment, thus increasing the risk of complications, or overtreatment, predisposing to hypoglycaemia.
+**Figure 1.:** In some individuals, laboratory HbA1c can be misleading and resulting in undertreatment, thus increasing the risk of complications, or overtreatment, predisposing to hypoglycaemia.
 
 A kinetic model, which considers individual variations in both RBC turnover and glucose uptake, has been developed to explain the disconcordance of the glucose-HbA1c relationship on individual level (Xu et al., 2021). The current work aims to extend this model by providing a way to normalise against RBC lifespan variation when individual RBC lifespan becomes available. We propose a new clinical marker, which we term adjusted HbA1c (aHbA1c), by adjusting laboratory HbA1c for a standard RBC lifespan of 106 days (English and Lenters-Westra, 2018) (equivalent to RBC turnover rate of 0.94% per day). The new glyacemic marker, aHbA1c, is likely to be the most accurate marker of organ exposure to hyperglycaemia and risk of future diabetes-related complications.
 
@@ -35,11 +35,49 @@ A kinetic model, which considers individual variations in both RBC turnover and 
 
 Of the 287 individuals in the original studies, 218 had predefined continuous glucose monitoring (CGM) coverage between at least two HbA1c measurements. Of these, 131 individuals had adequate continuous glucose data to estimate RBC lifespan and glucose uptake rate. The subject characteristics of this sub-cohort are presented in Table 1.
 
+**Table 1.**
+ Main characteristics of the cohort studied.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>N</th>
+      <th>131</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age [years; mean ± SD (range)]</td>
+      <td>53.5 ± 13.7 (18, 77)</td>
+    </tr>
+    <tr>
+      <td>Gender, male [number (percentage)]</td>
+      <td>86 (66%)</td>
+    </tr>
+    <tr>
+      <td>T1D [number (percentage)]T2D [number (percentage)]BMI [kg/m2; mean ± SD (range)]</td>
+      <td>51 (39%)80 (61%)29.8 ± 5.9 (18.8, 54.1)</td>
+    </tr>
+    <tr>
+      <td>Duration of diabetes (years)</td>
+      <td>17.7 ± 8.7 (2, 46)</td>
+    </tr>
+    <tr>
+      <td>Hypoglycaemic therapy</td>
+      <td>Multiple daily injections of insulin</td>
+    </tr>
+    <tr>
+      <td colspan="2">Data are presented as mean ± SD (min, max) or n (%)</td>
+    </tr>
+  </tbody>
+</table>
+
 Mean (median, IQR) RBC lifespan was 94 (100, 86–102) days in those with T1D and 92 (100, 83–101) in those with T2D (Figure 2). In this cohort, the mean, median, IQR of the absolute difference between aHbA1c and laboratory HbA1c were 11.0, 3.9, 3.0–14.3 mmol/mol (1.0, 0.4, 0.3–1.3%) for T1D, and marginally higher at 15.1, 5.3, 4.1–22.5 mmol/mol (1.4, 0.5, 0.4–2.0%) for T2D subjects. As illustrated in the figure, those with the shorter RBC lifespan of 80 days showed around 22 mmol/mol (2%) lower laboratory HbA1c than aHbA1c. This may lead to underestimating intracellular glucose exposure in susceptible organs, in turn increasing the risk of complications. In contrast, those with RBC lifespan of 130 days demonstrated higher laboratory HbA1c than aHbA1c, which can give the impression of inadequate glycaemic control, leading to therapy escalation and predisposition to hypoglycaemia.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69456/elife-69456-fig2-v1.jpg)
 
-**Figure 2.:** 1c by RBC lifespan.The number (percentage) of individuals having HbA1c adjustments < 1 % (<11 mmol/mol), 1–2% (11–22 mmol/mol), 2–3% (22–33 mmol/mol), and >3% (>33 mmol/mol) were 90 (68%), 21 (16%), 12 (9%), and 8 (6%), respectively.
+**Figure 2.:** The number (percentage) of individuals having HbA1c adjustments < 1 % (<11 mmol/mol), 1–2% (11–22 mmol/mol), 2–3% (22–33 mmol/mol), and >3% (>33 mmol/mol) were 90 (68%), 21 (16%), 12 (9%), and 8 (6%), respectively.
 
 To further put these results into clinical context, two subjects with an identical laboratory HbA1c of 63 mmol/mol (7.9%) but different RBC lifespans of 89 and 107 days, would have RBC-lifespan-adjusted aHbA1c values of 78 mmol/mol (9.3%) and 62 mmol/mol (7.8%), respectively, indicating different future risk of diabetes complications. Another two individuals with different laboratory HbA1c of 60 mmol/mol (7.6%) and 75 mmol/mol (9.0%), and corresponding RBC lifespans of 89 and 107 days, would have identical aHbA1c value of 74 mmol/mol (8.9%). This would place them at similar risk of diabetes complications, despite the significantly different laboratory HbA1c values. Generally, in individuals with RBC lifespan of approximately 93–123 days, aHbA1c and laboratory HbA1c showed relatively small differences (<11 mmol/mol or 1% when laboratory HbA1c < 64 mmol/mol or 8%). In this cohort, 90 (69%) subjects were within RBC lifespan range of 93–123 days, while 39 (30%) subjects had RBC lifespan below 93 days and 2 (1.5%) subjects above 123 days.
 
@@ -61,10 +99,14 @@ In conclusion, quantitative aHbA1c, derived from laboratory HbA1c and CGM readin
 
 CGM and laboratory HbA1c data from 139 type 1 (T1D) and 148 type 2 diabetes (T2D) patients, enrolled in two previous European clinical studies (Bolinder et al., 2016; Haak et al., 2017), were evaluated to calculate aHbA1c as detailed below. These studies were designed to evaluate the benefits of CGM in those with T1D and those with T2D using multiple daily injections of insulin. Both studies were conducted after appropriate ethical approval and participants gave written informed consent. A total of 6 months’ CGM data were collected using the sensor-based flash glucose monitoring system (FreeStyle Libre; Abbott Diabetes Care, Witney, UK), while HbA1c was measured by a central laboratory (ICON Laboratories, Dublin, Ireland) at 0, 3, and 6 months of the study. For T1D participants, the mean age was 44 years (range 18–70 years), 17 (33%) of whom were females. For T2D, the mean age was 59 years (range 33–77 years), 28 (35%) of whom were females.
 
-Each subject had at least one data section consisting of two HbA1c measurements connected by CGM data. Since the kinetic parameters are more sensitive to the data sections with larger between-day glucose changes, the parameters were successfully estimated for those individuals with sufficient day-to-day glucose variability, as evidenced by the model fit of RBC life converging between 50 and 180 days. These individual RBC lifespans or turnover rates were calculated according to previous model (Xu et al., 2021) that considers both RBC turnover rate and glucose uptake. Briefly, the model aligns laboratory HbA1c and the contemporaneous CGM-derived estimate of HbA1c under optimal values for RBC turnover and glucose uptake of each individual. Since there is no simple clinical assay for RBC turnover and glucose uptake, these RBC parameters are estimated using a numerical method such that differences between laboratory HbA1c and CGM-derived estimate are minimized. While the parameter identification method can be performed by repeated permutations across all reasonably possible values for RBC lifespan and uptake, our approach uses a far more efficient and reliable numerical method, as previously described (Xu et al., 2021). Detailed model description and derivation are provided in Appendix 1. Deriving from the same model, we constructed aHbA1c (Equation 1) that adjusts laboratory HbA1c for individual RBC turnover variation for potential clinical use.(1)aHbA1c=HbA1cHbA1c+kagerefkage1000-HbA1c
+Each subject had at least one data section consisting of two HbA1c measurements connected by CGM data. Since the kinetic parameters are more sensitive to the data sections with larger between-day glucose changes, the parameters were successfully estimated for those individuals with sufficient day-to-day glucose variability, as evidenced by the model fit of RBC life converging between 50 and 180 days. These individual RBC lifespans or turnover rates were calculated according to previous model (Xu et al., 2021) that considers both RBC turnover rate and glucose uptake. Briefly, the model aligns laboratory HbA1c and the contemporaneous CGM-derived estimate of HbA1c under optimal values for RBC turnover and glucose uptake of each individual. Since there is no simple clinical assay for RBC turnover and glucose uptake, these RBC parameters are estimated using a numerical method such that differences between laboratory HbA1c and CGM-derived estimate are minimized. While the parameter identification method can be performed by repeated permutations across all reasonably possible values for RBC lifespan and uptake, our approach uses a far more efficient and reliable numerical method, as previously described (Xu et al., 2021). Detailed model description and derivation are provided in Appendix 1. Deriving from the same model, we constructed aHbA1c (Equation 1) that adjusts laboratory HbA1c for individual RBC turnover variation for potential clinical use.
 
-In an approximation, aHbA1c   kagekageref HbA1c, where HbA1c is laboratory HbA1c, kage is individual RBC turnover rate (%/day), kageref is standard RBC turnover rate (0.94%/day). HbA1c and aHbA1c are in NGSP unit and decimal values should be used. For example, 8% HbA1c should be applied as 0.08. Equation 1 for IFCC unit is available in Appendix 1.
+$$
+aHbA1c=\frac{HbA1c}{HbA1c+\frac{k_{age}^{ref}}{k_{age}}1000-HbA1c}
+$$
 
-Under the assumption of individually constant RBC life, the relationship between RBC turnover rate (kage), RBC lifespan (LRBC) and mean RBC age (MARBC) can be inter-converted using the simple formula: 2*MARBC=LRBC=1kage . Therefore, 0.94%/day standard RBC turnover rate is equivalent to 106 days of RBC life and 53 days of mean RBC age. Of note, the adjustment is not linear, decreasing RBC lifespan corresponds to more pronounced aHbA1c adjustment than a seemingly comparable increase in RBC lifespan. All calculations in this study were done with Python/SciPy (Virtanen et al., 2020) software package.
+In an approximation, $aHbA1c   \frac{k_{age}}{k_{age}^{ref}} HbA1c$, where HbA1c is laboratory HbA1c, kage is individual RBC turnover rate (%/day), $k_{age}^{ref}$ is standard RBC turnover rate (0.94%/day). HbA1c and aHbA1c are in NGSP unit and decimal values should be used. For example, 8% HbA1c should be applied as 0.08. Equation 1 for IFCC unit is available in Appendix 1.
+
+Under the assumption of individually constant RBC life, the relationship between RBC turnover rate (kage), RBC lifespan (LRBC) and mean RBC age (MARBC) can be inter-converted using the simple formula: $2*MA_{RBC}=L_{RBC}=\frac{1}{k_{age}}$ . Therefore, 0.94%/day standard RBC turnover rate is equivalent to 106 days of RBC life and 53 days of mean RBC age. Of note, the adjustment is not linear, decreasing RBC lifespan corresponds to more pronounced aHbA1c adjustment than a seemingly comparable increase in RBC lifespan. All calculations in this study were done with Python/SciPy (Virtanen et al., 2020) software package.
 
 Full derivation of the model is further provided in Appendix 1.

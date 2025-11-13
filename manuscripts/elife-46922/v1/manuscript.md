@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.46922.001 The number of de novo mutations (DNMs) found in an offspring's genome increases with both paternal and maternal age. But does the rate of mutation accumulation in human gametes differ across families? Using sequencing data from 33 large, three-generation CEPH families, we observed significant variability in parental age effects on DNM counts across families, ranging from 0.19 to 3.24 DNMs per year. Additionally, we found that ~3% of DNMs originated following primordial germ cell specification in a parent, and differed from non-mosaic germline DNMs in their mutational spectra. We also discovered that nearly 10% of candidate DNMs in the second generation were post-zygotic, and present in both somatic and germ cells; these gonosomal mutations occurred at equivalent frequencies on both parental haplotypes. Our results demonstrate that rates of germline mutation accumulation vary among families with similar ancestry, and confirm that post-zygotic mosaicism is a substantial source of human DNM.
+The number of de novo mutations (DNMs) found in an offspring's genome increases with both paternal and maternal age. But does the rate of mutation accumulation in human gametes differ across families? Using sequencing data from 33 large, three-generation CEPH families, we observed significant variability in parental age effects on DNM counts across families, ranging from 0.19 to 3.24 DNMs per year. Additionally, we found that ~3% of DNMs originated following primordial germ cell specification in a parent, and differed from non-mosaic germline DNMs in their mutational spectra. We also discovered that nearly 10% of candidate DNMs in the second generation were post-zygotic, and present in both somatic and germ cells; these gonosomal mutations occurred at equivalent frequencies on both parental haplotypes. Our results demonstrate that rates of germline mutation accumulation vary among families with similar ancestry, and confirm that post-zygotic mosaicism is a substantial source of human DNM.
 
 ## Introduction
 
@@ -41,25 +41,59 @@ Finally, if a DNM occurs in the early cell divisions following zygote fertilizat
 
 ## Results
 
-## Identifying high-confidence DNMs using transmission to a third generation
+### Identifying high-confidence DNMs using transmission to a third generation
 
 We sequenced the genomes of 603 individuals from 33, three-generation CEPH/Utah pedigrees to a genome-wide median depth of ~30X (Figure 1—figure supplement 1, Supplementary file 1), and removed 10 samples from further analysis following quality control using peddy (Pedersen and Quinlan, 2017a). After standard quality filtering, we identified a total of 4,671 germline de novo mutations in 70 second-generation individuals, each of which was transmitted to at least one offspring in the third generation (Figure 1a, Supplementary file 2). Approximately 92% (4,298 of 4,671) of DNMs observed in the second generation were single nucleotide variants (SNVs), and the remainder were small (<=10 bp) insertion/deletion variants. The eight parents of four second-generation samples were re-sequenced to a median depth of ~60X (Figure 1—figure supplement 1d), allowing us to estimate a false positive rate of 4.5% for our de novo mutation detection strategy (Materials and methods). Taking all second-generation samples together, we calculated median germline mutation rates of 1.10 x 10-8 and 9.29 x 10-10 per base pair per generation for SNVs and indels, respectively, which corroborate prior estimates based on family genome sequencing with roughly comparable parental ages (Jónsson et al., 2017; Kong et al., 2012; Besenbacher et al., 2016; Rahbari et al., 2016). Extrapolating to a diploid genome size of ~6.4 Gbp, we therefore estimate an average number of 70.1 de novo SNVs and 5.9 de novo indels per genome, at average paternal and maternal ages of 29.1 and 26.0 years, respectively (Sasani, 2019).
 
-## Parent-of-origin and parental age effects on de novo mutation observed in the second generation
+![Figure 1.](https://cdn.elifesciences.org/articles/46922/elife-46922-fig1-v1.jpg)
+
+**Figure 1.:** (a) The CEPH/Utah dataset comprises 33 three-generation families. Summaries of sequencing coverage for CEPH/Utah individuals are presented in Figure 1—figure supplement 1. After identifying candidate de novo mutations in the second generation (e.g., the de novo ‘T’ mutation shown in the second-generation father), it is possible to assess their validity both by their absence in the parental (first) generation and by transmission to one or more offspring in the third generation. (b) Total numbers of DNMs (both SNVs and indels) identified across second-generation CEPH/Utah individuals and stratified by parental gamete-of-origin. Boxes indicate the interquartile range (IQR), and whiskers indicate 1.5 times the IQR. Diagrams of phasing strategies for germline DNMs are presented in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46922/elife-46922-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46922/elife-46922-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) We phased de novo mutations observed in the second generation by transmission to a third generation. We first searched ±200 kilobase pairs from the de novo allele (shown in red) for informative sites (shown in blue) present in one of the two first-generation parents of the second-generation individual. If the second-generation individual’s spouse does not possess these informative alleles, we can look in the children of the second-generation individual to see if they have inherited both the de novo allele and the nearby informative alleles. This pattern of inheritance is only possible if the de novo allele and informative alleles are on the same haplotype; thus, in this example, we see that the de novo allele is on the maternal grandfather’s haplotype, and is paternal in origin. (b) A toy sample of paired-end sequencing reads is shown for each member of a trio (mother, father, and child). In this strategy, we identify informative alleles (shown in blue) that are present in one of the two parents, and within a read length (500 bp) of the de novo allele in the child (shown in red). Then, we identify individual sequencing reads that span the de novo and informative alleles. If the de novo allele is always present in the same read as the informative allele, then we can phase the de novo allele to the parent with the informative allele, and vice versa.
+
+### Parent-of-origin and parental age effects on de novo mutation observed in the second generation
 
 We determined the parental gamete-of-origin for a median of 98.5% of de novo variants per second-generation individual (range: 90.3–100%) by leveraging haplotype sharing across all three generations in a family (Kong et al., 2012; Jónsson et al., 2017), as well as read tracing of DNMs to informative sites in the parents (Figure 1b, Figure 1—figure supplement 2). The ratio of paternal to maternal DNMs was 3.96:1, and 79.8% of DNMs were paternal in origin. We then measured the relationship between the number of phased DNMs observed in each child and the ages of the child’s parents at birth (Figure 2a). After fitting Poisson regressions, we observed a significant paternal age effect of 1.44 (95% CI: 1.12–1.77, p<2e-16) additional DNMs per year, and a significant maternal age effect of 0.38 (95% CI: 0.21–0.55, p=1.24e-5) DNMs per year (Figure 2a). These confirm prior estimates of the paternal and maternal age effects on de novo mutation accumulation, and further suggest that both older mothers and fathers contribute to increased DNM counts in children (Figure 2—figure supplement 1) (Jónsson et al., 2017; Goldmann et al., 2016; Rahbari et al., 2016; Wong et al., 2016; Besenbacher et al., 2015).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/46922/elife-46922-fig2-v1.jpg)
+
+**Figure 2.:** (a) Numbers of phased paternal and maternal de novo variants as a function of parental age at birth. Poisson regressions (with 95% confidence bands, calculated as 1.96 times the standard error) were fit for mothers and fathers separately using an identity link. Germline mutation rates, as a function of both paternal and maternal ages, are presented in Figure 2—figure supplement 1. (b) Mutation spectra in autosomal DNMs phased to the paternal (n = 3,584) and maternal (n = 880) haplotypes. Asterisks indicate significant differences between paternal and maternal fractions at a false-discovery rate of 0.05 (Benjamini-Hochberg procedure), using a Chi-squared test of independence. P-values for each comparison are: C > G: 0.719, T > G: 4.93e-3, T > A: 8.60e-2, T > C: 8.02e-2, C > A: 0.159, C > T: 7.65e-6, indel: 8.01e-2, CpG >TpG: 0.835. Mutation spectra stratified by parental ages are presented in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46922/elife-46922-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** For (a) second- and (b) third-generation individuals in the CEPH/Utah cohort, plotted points show the relationship between paternal and maternal age at birth.Each point is colored by the autosomal SNV mutation rate in the individual; these rates were calculated by dividing the autosomal SNV DNM count in each child by that child’s autosomal callable fraction. Colors indicate the magnitude of the mutation rate (blue = lower, red = higher). Black lines indicate the trend for a 1:1 relationship between paternal and maternal age.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46922/elife-46922-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Second-generation children were divided into two groups based on the ages of their parents at birth, and autosomal mutation spectra were compared between the two groups. In all panels, no significant differences were found at a false-discovery rate of 0.05 (Benjamini-Hochberg procedure), using a Chi-squared test of independence. (a) Comparison of DNMs in children born to fathers younger (n = 2,182) or older (n = 2,360) than the median paternal age of 29.2 years. P-values for each comparison are: C > G: 0.304, T > G: 0.140, T > A: 0.306, T > C: 0.248, C > A: 0.8.81e-2, C > T: 0.444, indel: 6.89e-2, CpG >TpG: 0.810. (b) Comparison of DNMs in children born to mothers younger (n = 2,225) or older (n = 2,317) than the median maternal age of 25.7 years. P-values for each comparison are: C > G: 0.580, T > G: 0.659, T > A: 0.554, T > C: 0.697, C > A: 0.918, C > T: 0.990, indel: 0.371, CpG >TpG: 0.678. (c) Comparison of DNMs in children born to fathers in the 25th percentile of youngest (n = 1,120) or oldest (n = 1,165) paternal ages (26.4 or 34 years). P-values for each comparison are: C > G: 1.73e-2, T > G: 0.428, T > A: 0.872, T > C: 0.979, C > A: 0.943, C > T: 7.77e-2, indel: 0.788, CpG >TpG: 0.706. (d) Comparison of DNMs in children born to mothers in the 25th percentile of youngest (n = 1,169) or oldest (n = 1,121) maternal ages (22.5 or 31.4 years). P-values for each comparison are: C > G: 0.327, T > G: 9.92e-2, T > A: 0.841, T > C: 0.975, C > A: 0.963, C > T: 0.940, indel: 0.598, CpG >TpG: 0.780.
+
 We next compared the paternal and maternal fractions of phased autosomal DNMs identified in the second generation across eight mutational classes (Figure 2b). In maternal mutations, there was an enrichment of C > T transitions in a non-CpG context (p=7.65e-6, Chi-squared test of independence), and we observed an enrichment of T > G transversions in paternal mutations (p=4.93e-3, Chi-squared test of independence). Maternal and paternal enrichments of C > T and T > G, respectively, have been reported in recent studies of de novo mutation spectra, though the mechanisms underlying these observations are currently unclear (Goldmann et al., 2016; Jónsson et al., 2017). We additionally stratified second-generation individuals by the ages of their parents at birth and found no significant differences in the mutational spectra of children born to older or younger parents, though we may be underpowered to detect these differences in our dataset (Figure 2—figure supplement 2).
 
-## Evidence for inter-family variability of parental age effects on offspring DNM counts
+### Evidence for inter-family variability of parental age effects on offspring DNM counts
 
 A recent study of three two-generation pedigrees with multiple offspring suggested that the effect of paternal age on DNM counts in children may differ between families (Rahbari et al., 2016). Given the large numbers of offspring in the CEPH/Utah pedigrees, we were motivated to perform an investigation of parental age effects on mutation counts within individual families. To measure these effects in the CEPH dataset, we first generated a high-quality set of de novo variants observed in the third generation, excluding recurrent (mosaic) DNMs shared by multiple third-generation siblings, likely post-zygotic DNMs (Materials and methods), and ‘missed heterozygotes’ in the second generation (0.4% of heterozygous variants). The ‘missed heterozygotes’ represent apparent DNMs in the third generation that were, in fact, likely inherited from a second-generation parent who was incorrectly genotyped as being homozygous for the reference allele (Materials and methods). In total, we detected 24,975 de novo SNVs and small indels in 350 individuals in the third generation (Supplementary file 3). Of these, we were able to confidently determine a parental gamete-of-origin for 5,336 (median of 21% per third-generation individual; range of 8–38%) using read tracing, and assign 4,201 (78.7%) of these to fathers. Given the comparatively low phasing rate in the third generation, we focused our age effect analysis on the relationship between paternal age only and the total number of autosomal DNMs in each individual, regardless of parent-of-origin. Taking all third-generation individuals into account, we estimate the slope of the paternal age effect to be 1.72 DNMs per year (95% CI: 1.58–1.85, p<2e-16). Within a given family, maternal and paternal ages are perfectly correlated; therefore, the paternal effect approximates the combined age effects of both parents.
 
 When inspecting each family separately, we observed a wide range of paternal age effects among the CEPH/Utah families (Figure 3). To test whether these observed effects varied significantly between families, we fit a Poisson regression that incorporated the effects of paternal age, family membership, and an interaction between paternal age and family membership, across all third-generation individuals in CEPH/Utah pedigrees. As a small number of the CEPH/Utah pedigrees comprise multiple three-generation families (Supplementary file 1), we assigned each unique set of second-generation parents and their third-generation children a distinct ID, resulting in a total of 40 families (Figure 3—figure supplement 1). Overall, the effect of paternal age on offspring DNM counts varied widely across pedigrees, from only 0.19 (95% CI: −1.05–1.44) to nearly 3.24 (95% CI: 2.24–4.24) additional DNMs per year. A goodness-of-fit test supported the use of a ‘family-aware’ regression model when compared to a model that ignores family membership, even after accounting for variable sequencing coverage across third-generation samples (median autosomal base pairs covered = 2,582,875,060; ANOVA: p=9.36e-10). Moreover, we found that the interaction between paternal age and family membership improved the fit of the linear model (p=0.043, Appendix 1—table 1), suggesting that inter-family variability involves differences in paternal age effects (i.e., the slopes of each regression). We note that the confidence intervals surrounding the slope point estimates for some CEPH/Utah families are quite wide, likely due to the small number of third-generation individuals (with respect to count-based regression) in each family, as well as some stochastic noise in the DNM counts attributed to each child (Figure 3d). Nonetheless, family rankings based upon the effect of paternal age on DNM counts are stable and relatively insensitive to outliers (Figure 3—figure supplement 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/46922/elife-46922-fig3-v1.jpg)
+
+**Figure 3.:** Illustrations of pedigrees exhibiting the smallest (family 24_C, panel a) and largest (family 16, panel b) paternal age effects on third-generation DNM counts demonstrate the extremes of inter-family variability. Diamonds are used to anonymize the sex of each third-generation individual. The method used to separate CEPH/Utah pedigrees into unique groups of second-generation parents and third-generation children is presented in Figure 3—figure supplement 1. Third-generation individuals are arranged by birth order from left to right. The number of autosomal DNMs observed in each third-generation individual is shown within the diamonds, and the age of the father at the third-generation individual’s birth is shown below the diamond. The coloring for these two families is used to identify them in panels c and d. (c) The total number of autosomal DNMs is plotted versus paternal age at birth for third-generation individuals from all CEPH/Utah families. Regression lines and 95% confidence bands indicate the predicted number of DNMs as a function of paternal age using a Poisson regression (identity link). Families are sorted in order of increasing slope, and families with the least and greatest paternal age effects are highlighted in blue and red, respectively. (d) A Poisson regression (predicting autosomal DNMs as a function of paternal age) was fit to each family separately; the slope of each family’s regression is plotted, as well as the 95% confidence interval of the regression coefficient estimate. The same two families are highlighted as in (a). A dashed black line indicates the overall paternal age effect (estimated using all third-generation samples). Families are ordered from top to bottom in order of increasing slope, as in (c). A random sampling approach was used to assess the robustness of the per-family regressions to possible outliers; the results of these simulations are shown in Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46922/elife-46922-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The pedigree for a single family (family ID 19) is depicted. In this family, the third-generation individuals are first cousins and share a pair of grandparents. However, for the purposes of the inter-family variability presented in Figure 3, we defined ‘families’ as the unique groups of second-generation parents and their third-generation children. Thus, family ID 19 would be split into two unique families (19_A and 19_B), designated by the red boxes.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/46922/elife-46922-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** For each CEPH/Utah family (i.e., unique set of second-generation and third-generation individuals), we randomly sampled 75% of the third-generation individuals in the family, fit a regression predicting autosomal DNM counts as a function of paternal age at birth, and calculated the ‘rank’ of that family’s paternal age effect (out of 40 total families). We then plotted the distribution of ranks across 100 trials for each family. Families’ density plots are ordered along the y-axis by the original ranks of each family (as determined using the full dataset, and originally shown in Figure 3d, where a rank of 1 corresponds to the smallest age effect, and a rank of 40 corresponds to the largest).
+
 Finally, when compared to a multiple regression that includes the effects of both paternal and maternal age, a model that takes family membership into account remained a significantly better fit (ANOVA: p=2.12e-5). The high degree of correlation between paternal and maternal ages makes it difficult to tease out the individual contributions of each parent to the observed inter-family differences. Nonetheless, these results suggest the existence of substantial variability in parental age effects across CEPH/Utah families, which could involve both genetic and environmental factors that differ among families.
 
-## Identifying gonadal, post-primordial germ cell specification (PGCS) mosaicism in the second generation
+### Identifying gonadal, post-primordial germ cell specification (PGCS) mosaicism in the second generation
 
 Generally, studies of de novo mutation focus on variants that arise in a single parental gamete. However, if a de novo variant arises during or after primordial germ cell specification (PGCS), that variant may be present in multiple resulting gametes and absent from somatic cells (Rahbari et al., 2016; Acuna-Hidalgo et al., 2015; Campbell et al., 2014b; Tang et al., 2016; Jónsson et al., 2018; Campbell et al., 2015; Biesecker and Spinner, 2013). These variants can therefore be present in more than one offspring as apparent de novo mutations. In each family, we searched for post-PGCS germline mosaic variants by identifying high-confidence DNMs that were shared by two or more third-generation individuals, and were absent from the blood DNA of any parents or grandparents within the family (Figure 4a). Given the large number of third-generation siblings in each CEPH/Utah family, we had substantially higher power to detect germline mosaicism that occurred in in the second generation than in prior studies. In total, we identified 720 single-nucleotide germline mosaic mutations at a total of 303 unique sites, which were subsequently corroborated through visual inspection using the Integrative Genomics Viewer (IGV) (Supplementary file 4) (Thorvaldsdóttir et al., 2013). Of the phased shared germline mosaic mutations, 124/260 (47.7%) were paternal in origin; thus, the mutations that occurred following PGCS likely occurred irrespective of any parental sex biases on mutation counts. Overall, approximately 3.1% (720/23,399) of all single-nucleotide DNMs observed in the third generation likely arose during or following PGCS in a parent’s germline, confirming that these variants comprise a non-negligible fraction of all de novo germline mutations.
 
@@ -71,9 +105,17 @@ The mutation spectrum for non-shared germline de novo variants was significantly
 
 We also tabulated the number of each third-generation individual’s DNMs that was shared with one or more of their siblings. As reported in the recent analysis of germline mosaicism (Jónsson et al., 2018), we observed that the number of shared germline mosaic DNMs does not increase with paternal age (p=0.647, Figure 4c, Materials and methods). Thus, a de novo mutation sampled from the child of a younger father is more likely to recur in a future child, as early-occurring, potentially mosaic mutations comprise a larger proportion of all DNMs present among the younger father’s sperm population (Figure 4d). Conversely, a de novo mutation sampled from the child of an older father is less likely to recur, as the vast majority of DNMs in that father’s gametes will have arisen later in life in individual spermatogonial stem cells (Figure 4d) (Campbell et al., 2014a; Jónsson et al., 2018). Consistent with this expectation, we observed a significant age-related decrease in the proportion of shared germline mosaic DNMs (p=1.61e-5, Figure 4e). Although families with large numbers of siblings are expected to offer greater power to detect shared, germline mosaic DNMs, we verified that neither the mosaic fraction nor the number of mosaic DNMs observed in third-generation children are significantly associated with the number of siblings in a family (Materials and methods).
 
-## Identifying gonosomal mosaicism in the second generation
+### Identifying gonosomal mosaicism in the second generation
 
 We further distinguished germline mosaicism from mutations that occurred before primordial germ cell specification, but likely following the fertilization of second-generation zygotes. De novo mutations that occur prior to PGCS can be present in both blood and germ cells; we therefore sought to characterize these ‘gonosomal’ variants that likely occurred early during the early post-zygotic development of second-generation individuals (Besenbacher et al., 2015; Campbell et al., 2015; Campbell et al., 2014a; Campbell et al., 2014b; Rahbari et al., 2016; Harland et al., 2017; Jónsson et al., 2018). We assumed that these gonosomal mutations would be genotyped as heterozygous in a second-generation individual, but exhibit a distinct pattern of ‘incomplete linkage’ to informative heterozygous alleles nearby (Materials and methods, Figure 5a) (Feusier et al., 2018; Harland et al., 2017; Jónsson et al., 2018). If these variants occurred early in development, and were present in both the blood and germ cells, we could also validate them by identifying third-generation individuals that inherited the variants with a balanced number of reads supporting the reference and alternate alleles (Figure 5a).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/46922/elife-46922-fig5-v1.jpg)
+
+**Figure 5.:** (a) Gonosomal post-zygotic variants were identified as DNMs in a second-generation individual that were inherited by one or more third-generation individuals, but exhibited incomplete linkage to informative heterozygous sites nearby. (b) Comparison of mutation spectra in single-nucleotide gonosomal DNMs that occurred on the paternal (n = 249) or maternal (n = 226) haplotypes. No significant differences were found at a false-discovery rate of 0.05 (Benjamini-Hochberg procedure), using a Chi-squared test of independence. P-values for each comparison are: C > G: 3.05e-2, T > G: 0.972, T > A: 0.858, T > C: 0.148, C > A: 3.31e-2, C > T: 2.66e-2, indel: 0.247, CpG >TpG: 0.932. (c) Comparison of mutation spectra in autosomal single-nucleotide germline DNMs observed in the second-generation (non-gonosomal) (n = 4,542) and putative gonosomal mutations (n = 475) in the second generation. Asterisks indicate significant differences at a false-discovery rate of 0.05 (Benjamini-Hochberg procedure), using a Chi-squared test of independence. P-values for each comparison are: C > G: 0.517, T > G: 0.800, T > A: 2.32e-3, T > C: 0.255, C > A: 0.129, C > T: 0.805, indel: 0.446, CpG >TpG: 0.212. (d) Numbers of phased gonosomal variants as a function of parental age at birth. Poisson regressions (with 95% confidence bands) were fit for the mutations phased to the maternal and paternal haplotypes separately using an identity link. A diagram of an identification strategy for post-zygotic gonosomal DNMs (using only two generations) is presented in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46922/elife-46922-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Diagram of an example two-generation pedigree structure that is amenable to the post-zygotic detection strategy. In this example, the child has a de novo ‘T’ allele that is <= 500 bp downstream of a heterozygous ‘G’ allele. Question marks in the parents indicate that the child could have inherited the ‘G’ allele from either parent; unlike the read tracing strategy (Figure 1—figure supplement 2), a particular parent does not need to be ‘informative.’ (b) In the child’s reads, only two possible sets of linked haplotypes should be seen, assuming the de novo allele occurred in the germline of a parent. The presence of three distinct haplotypes, demonstrating incomplete linkage of the de novo and heterozygous alleles, indicates that the de novo ‘T’ allele is post-zygotic.
 
 In total, we identified 475 putative autosomal gonosomal DNMs, which were also validated by visual inspection (Supplementary file 5). In contrast to single-gamete germline DNMs observed in the second-generation, gonosomal mutations appeared to be sex-balanced with respect to the parental haplotype on which they occurred; 52% (249/475) of all gonosomal DNMs occurred on a paternal haplotype, as compared to ~80% of germline DNMs observed in the second generation. Similarly, no significant enrichment of particular gonosomal mutation types was observed on either parental haplotype at a false discovery rate of 0.05 (Figure 5b), though we found that T > A transversions are enriched in gonosomal DNMs when compared to single-gamete germline DNMs observed in the second generation (p=2.32e-3) (Figure 5c). Unlike single-gamete germline DNMs, there were no significant effects of parental age on gonosomal DNM counts (maternal age, p=0.132; paternal age, p=0.225) (Figure 5d). However, a recent study found tentative evidence for a maternal age effect on de novo mutations that arise in the early stages of zygote development (Gao et al., 2019). As noted in this previous study, we are likely underpowered to detect a possible maternal age effect using the numbers of second-generation individuals in the CEPH/Utah dataset. Overall, our results demonstrate that over 9% (475/5,017) of all candidate autosomal germline mutations observed in the second generation were, in fact, post-zygotic in these second-generation individuals. Perhaps most importantly, approximately 6% of candidate de novo mutations detected in the second generation with an allele balance >= 0.2 (303/5,017) were determined to be post-zygotic, and present in both somatic and germ cells. This suggests that a fraction of many germline de novo mutation datasets are comprised of truly post-zygotic DNMs, rather than mutations that occurred in a single parental gamete.
 
@@ -93,29 +135,116 @@ These results underscore the power of large, multi-generational pedigrees for th
 
 ## Materials and methods
 
-## Genome sequencing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Genome Analysis Toolkit (GATK)</td>
+      <td>DePristo et al., 2011</td>
+      <td>v3.5.0; RRID:SCR_001876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>peddy</td>
+      <td>Pedersen and Quinlan, 2017a</td>
+      <td>v0.4.3; RRID: SCR_017287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cyvcf2</td>
+      <td>Pedersen and Quinlan, 2017b</td>
+      <td>v0.11.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>mosdepth</td>
+      <td>Pedersen and Quinlan, 2018</td>
+      <td>v0.2.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pysam</td>
+      <td>https://github.com/pysam-developers/pysam</td>
+      <td>v0.15.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>python</td>
+      <td>https://www.python.org/</td>
+      <td>v3.7.3; RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td>v3.4.4; RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Genomics Viewer (IGV)</td>
+      <td>Thorvaldsdóttir et al., 2013</td>
+      <td>v2.4.11; RRID:SCR_011793</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>samtools</td>
+      <td>Li et al., 2009</td>
+      <td>RRID: SCR_002105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BWA-MEM</td>
+      <td>Li, 2013</td>
+      <td>v0.7.15; RRID:SCR_010910</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Genome sequencing
 
 Whole-genome DNA sequencing libraries were constructed with 500 ng of genomic DNA isolated from blood, utilizing the KAPA HTP Library Prep Kit (KAPA Biosystems, Boston, MA) on the SciClone NGS instrument (Perkin Elmer, Waltham, MA) targeting 350 bp inserts. Post-fragmentation (Covaris, Woburn, MA), the genomic DNA was size selected with AMPure XP beads using a 0.6x/0.8x ratio. The libraries were PCR amplified with KAPA HiFi for 4–6 cycles (KAPA Biosystems, Boston, MA). The final libraries were purified with two 0.7x AMPureXP bead cleanups. The concentration of each library was accurately determined through qPCR (KAPA Biosystems, Boston, MA). Twenty four libraries were pooled and loaded across four lanes of a HiSeqX flow cell to ensure that the libraries within the pool were equally balanced. The final pool of balanced libraries was loaded over an additional 16 lanes of the Illumina HiSeqX (Illumina, San Diego, CA). 2 × 150 paired-end sequence data was generated. This efficient pooling scheme targeted ~30X coverage for each sample.
 
-## DNA sequence alignment
+### DNA sequence alignment
 
 Sequence reads were aligned to the GRCh37 reference genome (including decoy sequences from the GATK resource bundle) using BWA-MEM v0.7.15 (Li, 2013). The aligned BAM files produced by BWA-MEM were de-duplicated with samblaster (Faust and Hall, 2014). Realignment for regions containing potential short insertions and deletions and base quality score recalibration was performed using GATK v3.5.0 (DePristo et al., 2011). Alignment quality metrics were calculated by running samtools ‘stats’ and ‘flagstats’ (Li et al., 2009) on aligned and polished BAM files.
 
-## Variant calling
+### Variant calling
 
 Single-nucleotide and short insertion/deletion variant calling was performed with GATK v3.5.0 (DePristo et al., 2011) to produce gVCF files for each sample. Sample gVCF files were then jointly genotyped to produce a multi-sample project level VCF file.
 
-## Sample quality control and filtering
+### Sample quality control and filtering
 
 We used peddy (Pedersen and Quinlan, 2017a) to perform relatedness and sample sequencing quality checks on all CEPH/Utah samples. We discovered a total of 10 samples with excess levels of heterozygosity (proportion of heterozygous calls > 0.2). Many of these samples were also listed as being duplicates of other samples in the cohort, indicating possible sample contamination prior to sequencing. We therefore removed all 10 samples with a heterozygous genotype proportion exceeding 0.2 from further analysis. In total, we were left with 593 first-, second-, and third-generation samples with high-quality sequencing data.
 
-## Identifying DNM candidates
+### Identifying DNM candidates
 
 We identified high-confidence de novo mutations from the joint-called VCF in the second and third generations as follows, using cyvcf2 (Pedersen and Quinlan, 2017b). For each variant, we required that the child possessed a unique genotyped allele absent from both parents; when identifying de novo variants on the X chromosome, we required male offspring genotypes to be homozygous. We required the aligned sequencing depth in the child and both parents to be >= 12 reads, Phred-scaled genotype quality (GQ) to be >= 20 in the child and both parents, and no reads supporting the de novo allele in either parent. We removed de novo variants within low-complexity regions (Li, 2014; Turner et al., 2017), and any variants that were not listed as ‘PASS’ variants by GATK HaplotypeCaller. Finally, we removed DNMs with likely DNM carriers in the cohort; we define carriers as samples that possess the DNM allele, other than the sample with the putative DNM and his/her immediate family (i.e., siblings, parents, or grandparents). We adapted a previously published strategy (Jónsson et al., 2017) to discriminate between ‘possible carriers’ of the DNM allele (samples genotyped as possessing the de novo allele), and ‘likely carriers’ (a subset of ‘possible carriers’ with depth >= 12, allele balance >= 0.2, and Phred-scaled genotype quality >= 20). We removed putative DNMs for which there were any ‘likely carriers’ of the allele in the cohort. We then separated the candidate variants observed in the second-generation into true and false positives based on transmission to the third generation. For each candidate second-generation variant, we assessed whether the DNM was inherited by at least one member of the third generation; to limit our identification of false positive transmission events, we required third-generation individuals with inherited DNMs to have a depth >= 12 reads at the site and Phred-scaled genotype quality >= 20. We defined ‘transmitted’ second-generation variants as variants for which the median allele balance across transmissions was >= 0.3. One CEPH/Utah family (family ID 26) contains only four sequenced grandchildren (Supplementary file 1); therefore, we did not include the two second-generation individuals from this family in our analysis of DNMs observed in the second-generation, as we lacked power to detect high-quality transmission events.
 
 Because we were unable to validate DNMs observed in the third generation by transmission, we applied a more stringent set of quality filters to all third-generation DNMs. We required the same filters as applied to all second-generation DNMs, but additionally required that the allele balance in each DNM was >= 0.3. We further required that there were no possible carriers of the de novo allele in the rest of the cohort. For each DNM in the third generation, we assessed if any of the third-generation individuals’ grandparents were genotyped as possessing the DNM allele; if so, we removed that DNM from further analysis (see section entitled ‘Estimating a missed heterozygote rate’). Finally, we removed a total of 319 candidate germline DNMs in the third generation after finding evidence that these were, in fact, post-zygotic mutations (see section entitled ‘Identifying gonosomal mutations’).
 
-## Determining the parent of origin for single-gamete germline DNMs
+### Determining the parent of origin for single-gamete germline DNMs
 
 To determine the parent of origin for each de novo variant in the second generation, we phased mutation alleles by transmission to a third generation, a technique which has been described previously (Jónsson et al., 2017; Kong et al., 2012; Goldmann et al., 2016; Rahbari et al., 2016) (Figure 1—figure supplement 2a). We searched 200 kbp upstream and downstream of each DNM for informative variants, defined as alleles present as a heterozygote in the second-generation individual, observed in only one of the two parents, and observed in each of the third-generation individuals that inherited the DNM. For each of these informative variants, we confirmed that the informative variant was always transmitted with the DNM; if so, we could infer that the heterozygous variant was present on the same haplotype as the DNM (assuming recombination did not occur between the DNM and the flanking informative variants), and assign the first-generation parent with the informative variant as the parent of origin (Figure 1—figure supplement 2a). For each second-generation DNM, we identified all transmission patterns (i.e., combinations of a first-generation parent, second-generation child, and set of third-generation grandchildren that inherited both the informative variant and the DNM). We only assigned a confident parent-of-origin at sites where the most frequent transmission pattern occurred at >= 75% of all informative sites.
 
@@ -125,11 +254,11 @@ We were also able to determine the parent-of-origin for many of the shared germl
 
 In the second generation, the read tracing and haplotyping sharing phasing strategies were highly concordant, and the parent-of-origin predictions agreed at 98.8% (969/980) of all DNMs for which both strategies could be applied.
 
-## Calculating the rate of germline mutation
+### Calculating the rate of germline mutation
 
 Given the filters we employed to identify high-confidence de novo mutations, we needed to calculate the fraction of the genome that was considered in our analysis. To this end, we used mosdepth (Pedersen and Quinlan, 2018) to calculate per-base genome coverage in all CEPH/Utah samples, excluding low-complexity regions (Li, 2014) and reads with mapping quality <20 (the minimum mapping quality threshold used by GATK HaplotypeCaller in this analysis). For each second- and third-generation child, we then calculated the number of all genomic positions that had at least 12 aligned sequence reads in the child’s, mother's, and father's genome (excluding the X chromosome). In the second generation, the median number of callable autosomal base pairs per sample was 2,582,336,232. For each individual, we then divided their count of autosomal de novo mutations by the resulting number of base pairs, and divided the result by two to obtain a diploid human mutation rate per base pair per generation. The median second-generation germline SNV mutation rate was calculated to be 1.143 × 10−8 per base pair per generation. We then adjusted this mutation rate based on our estimated false positive rate (FPR) and our estimated ‘missed heterozygote rate’ (MHR; see section entitled ‘Estimating a missed heterozygote rate’) as follows:adj_mu = mu * (1 - FPR/1 - MHR)adj_mu = 1.143e-8 * (1–0.045/1–0.004)
 
-## Assessing age effect variability between families
+### Assessing age effect variability between families
 
 Using the full call set of de novo variants in the third generation (excluding the recurrent, post-PGCS DNMs and likely post-zygotic DNMs) we first fit a simple Poisson regression model that calculated the effect of paternal age on total autosomal DNM counts in the R statistical language (v3.5.1) as follows:glm(autosomal_dnms ~ dad_age, family = poisson(link='identity’))
 
@@ -161,11 +290,11 @@ We previously identified significant effects of both maternal and paternal age o
 
 We then performed an ANOVA on the model, and found that a model incorporating a family term is a significantly better fit than a model that includes the effects of paternal and maternal age alone (p=2.12e-5).
 
-## Identifying post-PGCS mosaic mutations
+### Identifying post-PGCS mosaic mutations
 
 To identify post-PGCS mosaic variants, we searched the previously generated callset of single-nucleotide DNMs in the third generation (‘Identifying DNM candidates’) for de novo single-nucleotide mutations that appeared in two or more third-generation siblings. As a result, all filters applied to the germline third-generation DNM callset were also applied to the post-PGCS mosaic variants. We validated all putative post-PGCS mosaic variants by visual inspection using the Integrative Genomics Viewer (IGV) (Thorvaldsdóttir et al., 2013). In a small number of cases (32), we found evidence for the post-PGCS mosaic variant in one of the two second-generation parents. Reads supporting the post-PGCS mosaic variant were likely filtered from the joint-called CEPH/Utah VCF output following local re-assembly with GATK, though they are clearly present in the raw BAM alignment files. We removed these 32 variants, at which an second-generation parent possessed two or more reads of support for the mosaic DNM allele in the aligned sequencing reads.
 
-## Assessing age effects on post-PGCS DNMs
+### Assessing age effects on post-PGCS DNMs
 
 To identify a paternal age effect on the number of post-PGCS DNMs transmitted to third-generation children, we tabulated the number of each third-generation individual’s DNMs that was shared with at least one of their siblings. We then fit a Poisson regression as follows, regressing the number of mosaic DNMs in each third-generation individual against their father’s age at birth:glm(mosaic_number ~dad_age, family = poisson(link='identity'))
 
@@ -179,7 +308,7 @@ As we may be more likely to identify shared, post-PGCS DNMs in families with lar
 
 We did not observe a significant correlation between a third-generation individual’s number of siblings and the fraction of their DNMs that was shared with a sibling (p=0.882). We also did not observe a significant correlation between a third-generation individual’s number of siblings and the total number of their DNMs shared with a sibling (p=0.426).
 
-## Identifying gonosomal mutations
+### Identifying gonosomal mutations
 
 To identify variants that occurred early in post-zygotic development, we identified de novo single-nucleotide variants in the second generation using the same genotype quality and population-based filters as described previously (‘Identifying DNM candidates’). Then, to distinguish single-gamete germline de novo mutations from post-zygotic DNMs (de novo mutations that occurred in the cell divisions following fertilization of the second-generation individual’s embryo), we employed a previously described method (Harland et al., 2017; Feusier et al., 2018; Jónsson et al., 2018) that relies on linkage between DNMs and informative heterozygous alleles nearby. In this approach, which is similar in principle to the strategy used for phasing germline second-generation DNMs, we first search ±200 kbp up- and down-stream of the de novo allele in the second-generation individual for ‘informative’ alleles; that is, alleles that are present in only one first-generation parent, and inherited by the second-generation child (Figure 5a). Then, we identify all of the third-generation grandchildren that inherited the informative alleles. If all of the third-generation individuals that inherited the informative alleles also inherited the DNM, we infer that the DNM occurred in the germline of the first-generation parent with the informative allele. However, if one or more third-generation individuals inherited the informative alleles but did not inherit the DNM, we can infer that the DNM occurred sometime following the fertilization of the second-generation sample’s embryo. This is because the DNM is not always present on the background haplotype that the second-generation individual inherited from their informative first-generation parent. Using this approach, we do not apply any allele balance filters to putative gonosomal DNMs in the second generation, instead relying on linkage to distinguish them from germline DNMs. As with germline de novo mutations observed in the second-generation, to limit our identification of false positive events, we required third-generation individuals with inherited DNMs to have a depth >= 12 reads at the site, Phred-scaled genotype quality (GQ) >= 20, and for the median allele balance across transmissions to be >= 0.3.
 
@@ -187,14 +316,14 @@ Additionally, we can use an orthogonal method to distinguish single-gamete germl
 
 We validated all putative gonosomal variants in the second generation by visual inspection using the Integrative Genomics Viewer (IGV) (Thorvaldsdóttir et al., 2013).
 
-## Estimating a ‘missed heterozygote rate’ for DNM detection
+### Estimating a ‘missed heterozygote rate’ for DNM detection
 
 Infrequently, variant calling methods such as GATK may incorrectly assign genotypes to samples at particular sites in the genome. When identifying de novo variants, we require that children possess genotyped alleles that are absent from either parent; thus, genotyping errors in parents could lead us to assign variants as being de novo, when in fact one or both parents possessed the variant and transmitted the allele. Given the multi-generational structure of our study cohort, we were able to estimate the rate at which our variant calling and filtering pipeline mis-genotyped a second-generation parent as being homozygous for a reference allele. To estimate this ‘missed heterozygote’ rate in our dataset, we looked for any cases in which one or more third-generation individuals possessed a putative de novo variant (i.e. possessed an allele absent from both second-generation parents). Then, we looked at the sample’s grandparental (first-generation) genotypes for evidence of the same variant. If one or more grandparents was genotyped as having high-quality evidence for the de novo allele (depth >= 12 and Phred-scaled genotype quality >= 20), we inferred that the variant could have been ‘missed’ in the second generation, despite being truly inherited. We estimate the missed heterozygote rate (MHR) to be 0.4%, by dividing the total number of third-generation DNMs with grandparental support by the total number of third-generation DNMs (100/25,075). In a small number of CEPH/Utah pedigrees, some members of the first-generation (grandparental) generation were not sequenced (6 grandparents in five families, Supplementary file 1). As a result these families are underpowered to detect evidence of third-generation DNM alleles in the first generation, and our MHR is likely a slight underestimate.
 
-## Estimating a false positive rate for de novo mutation detection
+### Estimating a false positive rate for de novo mutation detection
 
 In a separate set of sequencing runs, a total of 8 first-generation grandparents were re-sequenced to a greater genome-wide median depth of 60X (Figure 1—figure supplement 1d). However, when variant calling and joint genotyping was performed on all 603 CEPH/Utah samples, the 30X data for these grandparents was used. Therefore, we sought to estimate the false positive rate for our de novo mutation detection strategy using the de novo mutation calls in the children of these eight first-generation individuals. For each of the children (second-generation) of these high-coverage first-generation individuals, we looked for evidence of the second-generation DNMs in the 60X alignments from their parents. Specifically, for each second-generation DNM, we counted the number of reads supporting the DNM allele in each of the first-generation parents, excluding reads with mapping quality <20 (the minimum mapping quality imposed by GATK HaplotypeCaller in our analysis), and excluding bases with base qualities < 20 (the minimum base quality imposed by GATK HaplotypeCaller in our analysis). If we observed two or more reads supporting the second-generation DNM in a first-generation parent’s 60X alignments, we considered the second-generation DNM to be a false positive. Of the 202 de novo mutations called in the four second-generation children of the high-coverage first-generation parents, we find nine mutations with at least two reads of supporting evidence in the 60X first-generation alignments. Thus, we estimate our false positive rate for de novo mutation detection to be approximately 4.5% (9/202).
 
-## Data and code availability
+### Data and code availability
 
 Code used for statistical analysis and figure generation has been deposited on GitHub as a collection of annotated Jupyter Notebooks: https://github.com/quinlan-lab/ceph-dnm-manuscript (Sasani, 2019; copy archived at https://github.com/elifesciences-publications/ceph-dnm-manuscript/blob/master/README.md). Data files containing high-confidence de novo mutations, as well as the gonosomal and post-primordial germ cell specification (PGCS) mosaic mutations, are included with these Notebooks. To mitigate compatibility issues, we have also made all notebooks available in a Binder environment, accessible at the above GitHub repository (Sasani, 2019).

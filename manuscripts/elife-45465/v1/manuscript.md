@@ -35,7 +35,7 @@
 
 ## Abstract
 
-10.7554/eLife.45465.001 Animals detect light using opsin photopigments. Xenopsin, a recently classified subtype of opsin, challenges our views on opsin and photoreceptor evolution. Originally thought to belong to the Gαi-coupled ciliary opsins, xenopsins are now understood to have diverged from ciliary opsins in pre-bilaterian times, but little is known about the cells that deploy these proteins, or if they form a photopigment and drive phototransduction. We characterized xenopsin in a flatworm, Maritigrella crozieri, and found it expressed in ciliary cells of eyes in the larva, and in extraocular cells around the brain in the adult. These extraocular cells house hundreds of cilia in an intra-cellular vacuole (phaosome). Functional assays in human cells show Maritigrella xenopsin drives phototransduction primarily by coupling to Gαi. These findings highlight similarities between xenopsin and c-opsin and reveal a novel type of opsin-expressing cell that, like jawed vertebrate rods, encloses the ciliary membrane within their own plasma membrane.
+Animals detect light using opsin photopigments. Xenopsin, a recently classified subtype of opsin, challenges our views on opsin and photoreceptor evolution. Originally thought to belong to the Gαi-coupled ciliary opsins, xenopsins are now understood to have diverged from ciliary opsins in pre-bilaterian times, but little is known about the cells that deploy these proteins, or if they form a photopigment and drive phototransduction. We characterized xenopsin in a flatworm, Maritigrella crozieri, and found it expressed in ciliary cells of eyes in the larva, and in extraocular cells around the brain in the adult. These extraocular cells house hundreds of cilia in an intra-cellular vacuole (phaosome). Functional assays in human cells show Maritigrella xenopsin drives phototransduction primarily by coupling to Gαi. These findings highlight similarities between xenopsin and c-opsin and reveal a novel type of opsin-expressing cell that, like jawed vertebrate rods, encloses the ciliary membrane within their own plasma membrane.
 
 ## Introduction
 
@@ -51,11 +51,25 @@ Here we analyze the localization of a xenopsin protein in a polyclad flatworm at
 
 ## Results
 
-## Xenopsins and rhabdomeric opsins in flatworms
+### Xenopsins and rhabdomeric opsins in flatworms
 
 A 346 amino acid gene product showing similarity to protostome c-opsin and to xenopsin was predicted from a Maritigrella crozieri transcriptome contig using BLAST (Madden, 2002). Opsins showing similar degrees of similarity were found in transcriptomes from five other flatworm taxa (three polyclads; Prostheceraeus vittatus, Stylochus ellipticus, Leptoplana tremellaris and two triclad species Schmidtea mediterranea, Dendrocoelum lacteum). We did not find homologous sequences in the remaining 24 flatworm species representing other flatworm classes, including those in which putative CPRs have been described (catenulids, macrostomids, rhabdocoels, proseriates, monogeneans, cestodes and trematodes). Searching more broadly we found additional opsins similar to protostome c-opsins and xenopsins in a bryozoan, Bugula nerita, and in a chaetognath, Pterosagitta draco.
 
 In our phylogenetic analyzes of these putative flatworm, bryozoan and chaetognath opsins in the context of the metazoan opsin gene family, all cluster with xenopsins (Figure 1; Figure 1—figure supplement 1). Several polyclad flatworm species show xenopsin paralogs distributed across two xenopsin subgroups (Vöcking et al., 2017); our six polyclad and triclad sequences all group with clade A and we have found xenopsins from three additional taxa to be included in this clade; Maritigrella crozieri, Dendrocoelum lacteum, Leptoplana tremellaris (Figure 1; Figure 1—figure supplement 1). The xenopsins are a well-supported monophyletic group of genes most closely related to cnidopsins. The xenopsin/cnidopsin group is sister to the tetraopsins and all are part of a larger clade including bathyopsins and canonical c-opsins (Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/45465/elife-45465-fig1-v1.jpg)
+
+**Figure 1.:** Support for nodes is calculated using 1000 Ultrafast bootstrap replications as well as 1000 SH-aLRT replicates and approximate aBayes single Branch testing. Black dots indicate nodes with support values for three tests ≥ 95% (0.95 for SH-aLRT replicates). Gray dots indicate nodes with support values for three tests ≥ 90% (0.90 for SH-aLRT replicates). Scale bar unit for branch length is the number of substitutions per site. Branches in red correspond to flatworm opsin sequences. See Figure 1—figure supplement 1 for uncollapsed tree and Figure 1—source data 1 for gene accession numbers. The new xenopsin sequences we found in polyclad and triclad flatworms, plus a bryozoan and chaetognath, all fall within clade A of the xenopsins.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45465/elife-45465-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Node support values correspond to 1000 Ultrafast bootstrap replications, 1000 SH-aLRT replicates and approximate aBayes single Branch testing. Scale bar unit for branch length is the number of substitutions per site. Note low support for all deeper nodes including those uniting xenopsin/cnidopsin with tetraopsins, and the sister relationship between this clade and the c-opsins/bathyopsins. Branches in red correspond to flatworm opsin sequences.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45465/elife-45465-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/45465/elife-45465-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Some xenopsins possess a tripeptide motif, NxQ, which is also found in ciliary opsins and known to be crucial for G-protein activation. A number of flatworm xenopsin sequences in clade A have similar NxQ patterns (including Maritigrella - NAQ), while the motif differs considerably in the polyclad xenopsins of clade B, cnidopsins, bathyopsins and tetraopsins. An alignment of the C-terminal regions of ciliary opsins, xenopsins, cnidopsins, tetraopsins and bathyopsins shows, at a conserved position, similar VxPx motifs in flatworm clade A xenopsins (including Mc xenopsin - VSPQ) as well as a mollusk (A. irradiens) and brachiopod (T. transversa) xenopsin, it is also present in ciliary opsins from non-vertebrate chordates (tunicate and lamprey) and annelids, as well as in cnidopsin sequences. This motif binds the small GTPase Arf4 to direct vertebrate rhodopsin (a ciliary opsin) to the primary cilia. The presence of this motif in some ciliary opsins, xenopsins, cnidopsins may suggest a shared mechanism for the active delivery of these opsins to the cilia in CPRs.
 
 Support for the relationships between these well-defined opsin subtypes is very low, indicating that these relationships should be interpreted cautiously. The need for caution is reinforced by the observation that removing the smaller opsin clades from our dataset (chaopsins, bathyopsins, ctenophore and anthozoan opsins), changes the topology of the deeper nodes of our trees (Figure 1—figure supplement 2).
 
@@ -67,13 +81,21 @@ A 422 amino acid gene product related to rhabdomeric opsin was also predicted fr
 
 Our reconstructions of the opsin gene family have resolved Maritigrella genes as orthologs of xenopsins and r-opsins (Figure 1), and we designated these genes as Maritigrella crozieri xenopsin (Mc-xenopsin) and Maritigrella crozeri rhabdomeric opsin (Mc-r-opsin).
 
-## In the larval stage xenopsin and r-opsin are expressed in eyes
+### In the larval stage xenopsin and r-opsin are expressed in eyes
 
 In the larval stage, xenopsin protein is expressed in the epidermal eye and one of the two cerebral eyes, but not in the epidermal ciliary phaosomes (Figure 2A–C). R-opsin mRNA is expressed in both cerebral eyes (Figure 2D), but not in the epidermal eye (Figure 2—figure supplement 1F). TEM images show that the epidermal eye and one of the cerebral eyes house cilia (Figure 2E & F), whereas the other cerebral eye contains just microvilli (Figure 2G). In the epidermal eye the cilia are stacked into lamellae, whereas in the cerebral eye the cilia are unmodified and project into the opticoel. Xenopsin is co-localised with acetylated tubulin on the cilia of the cerebral eye (Figure 2C), showing, for the first time, xenopsin protein localization to cilia. TEM images confirm that the acTub+ cells in the epidermis of Maritigrella larvae (Figure 2B) are cells with multiple cilia projecting into an intracellular vacuole (or phaosome) (Figure 2H); although thought to be CPRs (Lacalli, 1983; Rawlinson, 2010), these cells did not express xenopsin.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/45465/elife-45465-fig2-v1.jpg)
+
+**Figure 2.:** (A) Apical view of larva showing xenopsin (red) in the epidermal eye (ee) (100% of individuals examined, n = 50) (OpenSPIM image, Syt gr = Sytox green, staining nuclei and bright-field image also reveal photoreceptor pigments). (B) Confocal optical section showing xenopsin in the epidermal eye (circled) but not in the acetylated tubulin+ (acTub) cells in the epidermis (arrowheads); autofluoresence of rhabdites (rh). (C) Xenopsin is co-localised with acTub in one of the two cerebral eyes providing evidence that xenopsin protein localizes to cilia (this varies between the right and left cerebral eye in different larvae, 50:50, n = 10)(pcc = pigment cup cell). (D) R-opsin is expressed in both cerebral eyes (ce). (100% of individuals examined, n = 30), (E) TEM image showing the epidermal eye which houses elaborated ciliary membranes (cm) inside a pigment cup (pc)(basal bodies, bb; cross section of ciliary flagella, cf, nucleus,n) (100% of individuals examined, n = 3). (F) Ultrastructure of a cerebral eye showing cilia (inside dashed line) and microvilli (arrows) cupped within a pigment cell (pcc). (G) Ultrastructure of another cerebral eye showing microvilli (arrows) cupped inside a pigment cup cell. (H) Multiple cilia projecting into phaosomes (intra-cellular vacuoles) in the epidermis. (I) A schematic of a larva summarizing the expression of xenopsin, r-opsin and acTub. In the larva xenopsin is expressed in two of the three putative ciliary photoreceptor cell types: the epidermal eye, a cerebral eye, but not in the ciliary phaosome cells (cpc).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45465/elife-45465-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A and B) Xenopsin expression (red) in the epidermal eye (ee) during Maritigrella crozieri embryogenesis. The epidermal eye develops soon after gastrulation is complete and before development of the cerebral eyes. Syt gr = Sytox Green, staining nuclei. Bright-field (BF) also shows the photoreceptor pigments. Inset is a 3-time magnification. (C) R-opsin expression is expressed in the two cerebral eyes (ce) of the larva but not the epidermal eye.
+
 The epidermal eye develops before the cerebral eyes in M.crozieri (Rawlinson, 2010) and xenopsin is expressed in this eyespot during embryogenesis (Figure 2—figure supplement 1). The ontogenetic fates of the epidermal eye and the xenopsin expressing ciliary cell in the cerebral eye are unknown; it could be that both are transient larval features, as all pigmented eyes in adult Maritigrella are sub-epidermal and express r-opsin, but not xenopsin (Figure 5F).
 
-## In the adult, xenopsin is expressed in extraocular ciliary phaosomes and r-opsin is expressed in the eyes
+### In the adult, xenopsin is expressed in extraocular ciliary phaosomes and r-opsin is expressed in the eyes
 
 No putative ciliary photoreceptors have been documented in an adult polyclad so, to identify candidates in Maritigrella we first used antibodies against acetylated tubulin and discovered two clusters of up to 100 acTub+ cells, one either side of the brain (Figure 3B,Bi and Di). The cells are distributed from the anterior to the posterior of the brain (Figure 3Di) and extend laterally above nearby branches of the intestine (Figure 3B and Figure 5B). Histological staining showed that these cells are embedded in extracellular matrix outside of, and lateral to, the brain capsule (Figure 3C and Ci) and that they sit in close proximity to the main nerve tracts (Figure 3Ci). The cells appear stalked with a nucleus at one end and a balloon-shaped phaosome in the outer segment at the opposite end, which houses multiple cilia (Figure 3E,Ei).
 
@@ -83,17 +105,39 @@ No putative ciliary photoreceptors have been documented in an adult polyclad so,
 
 TEM and serial SEM analyzes of these acTub+ cells showed that they house multiple, unmodified cilia in an intra-cellular vacuole and that they sit in close proximity to each other, in dense aggregations (Figure 4A and B, and Figure 4—video 1). These cells are not associated with any pigmented supporting cells, that is they are extraocular and, although there are unpigmented cells in close proximity (Figure 4), it seems as though the intra-cellular vacuole is completely enclosed by the cell itself and can therefore be considered a phaosome (Figure 4—video 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/45465/elife-45465-fig4-v1.jpg)
+
+**Figure 4.:** (A) A dense cluster of intra-cellular vacuoles (phaosomes – highlighted in magenta) filled with cilia (n = 3 individuals). (B) Multiple cilia in the phaosome. (C) A possible unpigmented supporting cell (asterisk) wrapping around the phaosome cell with mitochondria (m) and Golgi apparatus (ga) in the cytoplasm. (D) Ciliary axonemata (ax) are anchored in the cytoplasmic layer (cl) by basal bodies (bb). (E) 3D reconstruction of the interior of a third of a phaosome, showing that the cilia are unbranched (pink) and the basal bodies (yellow) are distributed all around the phaosome. (F) Cross sections of the ciliary axonemata show various arrangements of microtubules: 9 × 2+ two with dynein arms attached to the A-tubules (arrow), 9 + 2 singlets (double arrowheads), and singlets (triple arrowheads). This variation is related to the distance from the basal body (Figure 4—videos 3), (cm) ciliary membrane.
+
 The intracellular cavities/phaosomes have diameters up to 23 μm and the wall of the cavity is comparatively thin in certain areas (~40 nm). The cytoplasm bordering the internal cavity contains mitochondria (Figure 4C and D), and the cilia are anchored in the cytoplasmic layer by basal bodies (Figure 4D), each basal body gives rise to one cilium. Counting the basal bodies from the serial SEM of a single phaosome reveals at least 421 cilia projecting into the phaosome (Figure 4—video 2). The cilia are unbranched and emerge all around the diameter of the cavity (Figure 4E, Figure 4—videos 3 and 4), forming a tightly intertwined bundle (Figure 4B). They have an average diameter of 0.2 μm and length of 7.2 μm. This represents a total membrane surface area per phaosome of approximately 600 μm2.
 
 The cilia are generally orientated horizontally in relation to the dorso-ventral body axis and, in some of the phaosomes, the cilia appear to be arranged in a spirally coiled bundle (Figure 4—video 1). Near their bases, the axonemata show a 9 × 2 + 2 arrangement of microtubules. With increasing distance from the base, 9 + 2 singlets are encountered and then the nine-fold symmetry becomes disorgani﻿zed and microtubular singlets are found (Figure 4F; Figure 4—video 3). As no ciliary rootlets were evident it is most likely that these cilia are non-motile; however, possible dynein arms (generally associated with motile cilia) were observed attached to the A-tubules near the bases of the cilia (Figure 4F). We observed these cells in live adults and although the cilia inside the phaosomes were visible, no cilia were seen moving, even in response to changes in illumination.
 
 These cells are similar in ultrastructure to the extraocular ciliary phaosome cells in the epidermis of the larva (Figure 2H). Unlike those in the larval stage, however, in the adult, Mc-xenopsin was strongly co-localised with acetylated tubulin in these cells (Figure 5A–E). The xenopsin protein was located throughout the cytoplasm of the cell with strong expression around the base of the cilia (Figure 5Di and E). These xenopsin+ cells sit ventro-lateral to the cerebral eyes that themselves consist of pigmented cup cells and r-opsin+ cells that extend down to the brain (Figure 5F). The pigmented eyes on the tentacles (Figure 3D) also express r-opsin (Figure 5F). The non-overlapping expression of xenopsin and r-opsin indicates that these opsins are expressed in two distinct cell types, with r-opsin expressed in the eyes and xenopsin expressed in the extraocular cells (Figure 5G). As is typical for r-opsin-expressing cells, they also express Gαq, as revealed by antibody staining (Figure 5H). As there was no prior information on which classes of Gα xenopsin couples with, we searched for Gα subunits in the Maritigrella crozieri transcriptome and identified orthologs of Gαi, Gαo and three paralogs of Gαs and Gαq (Figure 5 – Figure 5—figure supplement 1A; Figure 5—source data 1). Attempts to visualize the expression of these transcripts using in situ hybridization on larval wholemounts and adult paraffin sections were unsuccessful. There is substantial sequence conservation between Maritigrella and human Gα subunits (Figure 5 – Figure 5—figure supplement 1B), so we attempted to investigate Gα expression in Maritigrella using commercially available antibodies against human Gαq, Gαi, Gαo, Gαs and Gα12. Besides the Gαq expression in the r-opsin+ photoreceptors of the eyes, the only other antibody to show specific localization was Gαi, and this was expressed in the adult phaosomal cells including on the ciliary membrane (Figure 5I and J). The expression of xenopsin in these cells suggests that they are photoreceptors, and this would be further supported if it could be shown that xenopsin is active and can form a photopigment. The added expression of Gαi in these cells may indicate that this is the signaling pathway of xenopsin, however many Gα subunits can be expressed in the same sensory neuron (Kusakabe et al., 2000). To investigate xenopsin’s ability to form a photopigment and its Gα-protein coupling preference, we carried out functional assays in human HEK293 cells (see below).
 
-## Maritigrella xenopsin forms a photopigment capable of sustained Gαi signalling
+![Figure 5.](https://cdn.elifesciences.org/articles/45465/elife-45465-fig5-v1.jpg)
+
+**Figure 5.:** (A-E) Co-localization of acetylated tubulin and xenopsin is found throughout the cell (n, nucleus) (100% of acTub+ cells express xenopsin (in one cross section, n = 3 individual worms). (E) A cross section of a phaosome shows stronger xenopsin expression near the base of the cilia (n = 8 individuals); (F) r-opsin is expressed in photoreceptor cells (rpc) that extend from the pigment cup cells (pcc) to the optic lobe (ol) of the brain, together forming the cerebral eyes (ce); r-opsin is also expressed in the tentacular eyes (te) (n = 5 individuals); (G) Schematic of xenopsin and r-opsin expression in adult cross-section, with a diagram of a putative ciliary photoreceptor cell (ciliary phaosome cell, cpc) showing co-localization of xenopsin and acetylated tubulin. (H) The position of the putative ciliary photoreceptors (labeled with acetylated tubulin) in relation to the rhabdomeric photoreceptors (labeled with Gαq) (n = 3 individuals). (I and J) Gαi expression in the xenopsin+ cells including on the ciliary membranes (arrowheads).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45465/elife-45465-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) IQ-TREE phylogenetic reconstruction of G alpha subunit relationships identifies those expressed in the Maritigrella crozieri larval transcriptome (red). Support for node is calculated using 1000 Ultrafast bootstrap replications as well as 1000 SH-aLRT replicates and approximate aBayes single branch testing. Scale bar unit for branch length is the number of substitutions per site. (B) Alignment of c terminal ends of Human and Maritigrella crozieri G alpha subunits. See Figure 1 additional data file for full amino acid sequences from all taxa.
+
+### Maritigrella xenopsin forms a photopigment capable of sustained Gαi signalling
 
 To determine whether Maritigrella xenopsin functions as a photopigment, and to explore which classes of Gα protein it can couple to, we assessed its ability to modulate levels of the second messenger molecules cyclic AMP (cAMP) and calcium (Ca2+) in response to light when heterologously expressed in human HEK293 cells (Bailes and Lucas, 2013; Koyanagi et al., 2013). Changes in cAMP or Ca2+ levels are characteristic of opsin coupling to the three major families of G alpha protein: Gαq, Gαs and Gαi/o/t (hereafter simply ‘Gαi’). These assays were conducted with and without pertussis toxin, which selectively inactivates the Gαi family and has no effect on Gαs or Gαq, and therefore pertussis toxin sensitivity is diagnostic of Gαi family signaling. To a first approximation, Gαs coupling causes an increase in cAMP, and is not affected by pertussis toxin; Gαi coupling causes a decrease in cAMP and a small increase in cytoplasmic Ca2+, both of these effects of Gαi signaling are abolished by pertussis toxin; and Gαq coupling causes an increase in cytoplasmic Ca2+, but is not impacted by pertussis toxin. We compared the response of Maritigrella xenopsin to three positive control opsins: the cnidopsin JellyOp, human rod opsin, and human melanopsin, which are known to couple potently and selectively to Gαs, Gαi, and Gαq, respectively (Bailes et al., 2012; Bailes and Lucas, 2013). In all experiments, we used a flash of 10^15 photons of 470 nm light as the stimulus. Second messenger levels were monitored in real time using the bioluminescent reporter proteins Glosensor cAMP 22F (Glosensor) for cAMP and Aequorin localized to the cytoplasmic surface of the mitochondria (mtAequorin) for cytoplasmic Ca2+. GPCR-Gα specificity is nearly entirely determined by the C-terminal amino acid sequence of the Gα protein (Flock et al., 2015; Flock et al., 2015), therefore the high degree of conservation between Maritigrella and human Gα C-terminal ends (Figure 5—figure supplement 1B) suggests that human Gα proteins in HEK293 cells will interact with Maritigrella xenopsin similarly to Maritigrella Gα homologs.
 
 All opsins were constructed with the C-terminal nine amino acids of rod opsin (TETSQVAPA) as an epitope tag for the 1D4 monoclonal antibody. Immunocytochemistry confirmed that all four opsins, including Mc xenopsin, were expressed in HEK293 cells at roughly similar levels, and Mc xenopsin fluorescent intensity was significantly greater than the no opsin control (Figure 6 and Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/45465/elife-45465-fig6-v1.jpg)
+
+**Figure 6.:** (A,B) HEK293 cells were transfected with Glo22F and indicated opsins, + /- pertussis toxin, and exposed to light. In B, cells were treated with 2 µM forskolin prior to the light flash. (C) HEK293 cells were transfected with mtAequorin and the opsins indicated, + /- pertussis toxin, and exposed to light. Plots show mean luminescence of technical replicates (from one representative of three biological replicates) normalized to the pre-flash timepoint, + /- SEM. Error bars smaller than symbols are not shown. n = 3 technical replicates in A,B; n = 4 technical replicates in C. The other biological replicates are shown in Figure 6—figure supplement 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45465/elife-45465-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Cells were transfected with opsins, fixed, stained with 1D4 anti-rod opsin antibody and fluorescent secondary antibody, and imaged on a fluorescent microscope. (A) Representative images of cells expressing each opsin and control (scale = 10 µm). (B) Quantification of integrated fluorescence intensity (minus background) for ten randomly selected fields from each sample, normalized to mean of no-opsin control, with mean and SEM. ANOVA and Dunnett’s multiple comparison test show significant differences between no opsin control and positive opsin conditions (*<0.05*, *<0.01). Mc xenopsin (Maritigrella crozieri xenopsin), Hs rod opsin (human rhodopsin), Hs melanopsin (Human melanopsin), JellyOp (Carybdea rastonii jellyfish opsin), SEM (standard error of the mean).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/45465/elife-45465-fig6-figsupp2-v1.jpg)
 
 To assay for Gαs coupling (Figure 6A), cells were transfected with Glosensor and either xenopsin or JellyOp and exposed to light. As expected, JellyOp induced a > 100 fold increase over baseline in Glosensor luminescence, and no response was observed in negative control cells without opsin. JellyOp signaling was not affected by the addition of pertussis toxin, which does not interfere with Gαs. In contrast, xenopsin induced a ~ 40% decrease in Glosensor signal in response to light, suggesting Gαi coupling. The addition of pertussis toxin blocked the decrease in cAMP in xenopsin-expressing cells, confirming that it was caused by coupling to Gαi. In pertussis toxin treated cells, xenopsin drove a very small (~0.2 fold) increase in Glosensor cAMP signal, suggesting that xenopsin may also weakly couple to Gαs.
 
@@ -137,11 +181,119 @@ In Maritigrella, it is puzzling that the ciliary phaosomes in the epidermis of t
 
 ## Materials and methods
 
-## Identification of opsin and Gα subunit sequences
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-acetylated tubulin (monoclonal, mouse)</td>
+      <td>Sigma</td>
+      <td>T7451 RRID:AB_609894</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gα q/11 (C-19) (polyclonal, rabbit)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-392 RRID:AB_631537</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gαi-1 (R4) (monoclonal, mouse)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-13533 RRID:AB_2111358</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gαi-1/2/3 (35) (monoclonal, mouse)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-136478 RRID:AB_2722559</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gαo (A2) (monoclonal, mouse)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-13532 RRID:AB_2111645</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gαs/olf(A-5) (monoclonal, mouse)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-55545 RRID:AB_831819</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gαs/olf(C-18) (polyclonal, rabbit)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-383 RRID:AB_631539</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gα12 (E-12) (monoclonal, mouse)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-515445</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Embryonic kidney cells</td>
+      <td>ATCC</td>
+      <td>CRL3216 RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGlosensor 22</td>
+      <td>Promega</td>
+      <td>E1290</td>
+      <td>Live-Cell Biosensors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1</td>
+      <td>Invitrogen</td>
+      <td>V79020</td>
+      <td>Mammalian Expression Vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNAFRT⁄TO vector</td>
+      <td>Thermo</td>
+      <td>V652020</td>
+      <td>Expression vector</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>9-cis retinal</td>
+      <td>Sigma</td>
+      <td>R5754</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Identification of opsin and Gα subunit sequences
 
 Maritigrella crozieri ciliary-type and rhabdomeric opsins, and Gα subunits were identified by reciprocal best match BLAST searches on a mixed stage embryonic and larval transcriptome (Lapraz et al., 2013). Four Schmidtea mediterranea opsin sequences (Zamanian et al., 2011) – Additional File 7] along with the Maritigrella sequences were used, with Mollusc opsins (Ramirez et al., 2016), as query sequences for BLAST searches against assembled transcriptomes and genomes for 30 other flatworm species (Egger et al., 2015; Laumer et al., 2015), a chaetognath (Pterosagitta draco) and a bryozoan (Bugula neritina). Our search allowed the identification of some already published flatworm sequences (Vöcking et al., 2017) (DAB27256.1, DAB27257.1, DAB27258.1, DAB27259.1, DAB27253.1, DAB27254.1 and DAB27255.1). These published accession numbers and sequences were used in our analysis. We used Gα subunit proteins from Terebratalia transversa (Passamaneck et al., 2011) and Platynereis dumerilii as blast query sequences against the Maritigrella transcriptome and the genome of another flatworm Schistosoma mansoni (www.parasite.wormbase.org).
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Flatworm, bryozoan and chaetognath best hit opsin sequences were added to a subset of the Ramirez et al. (2016) metazoan opsin sequences dataset. The subset was obtained by first reducing redundancy of the original dataset using an 80% identity threshold with CD-HIT (Li and Godzik, 2006), then by discarding sequences which, in an alignment, did not fully cover the region found between the first and last transmembrane regions. Finally, when multiple sequences belonging to the same taxonomic clade or class were found, only the two or three most complete representative sequences where kept. Additional opsin sequences were added to the dataset: human melanopsin, human rhodopsin and Carybdea rastonii opsin (called JellyOp in this study), Xenopus laevis OPN4B (covering a taxonomic gap), Acromegalomma interruptum InvC-opsin and Spirobranchus corniculatus InvC-opsin (kindly provided by Dr. Michael Bok, Bok et al., 2017), Owenia_fusiformis Xenopsin1, 2 and 3 (Vöcking et al., 2017), Platynereis dumerilii TMT1 (http://genomewiki.ucsc.edu/index.php/Opsin_evolution), as well as additional non-opsin outgroup sequences (Prostaglandin E2 receptor and Melatonin receptor sequences) resulting in a first dataset (Dataset 1) of 213 sequences. In order to evaluate their influence on the tree topology, sequences forming small monophyletic groups (Bathyopsin, Chaopsin, ctenophore and cnidarian early branching opsins in Ramirez et al. opsin phylogeny [Ramirez et al., 2016]) were removed from our initial dataset (Dataset 2–196 sequences).
 
@@ -153,23 +305,23 @@ Maritigrella crozieri best hit Gα subunits sequences were added to Gα subunit 
 
 FigTree v1.4.3 (tree.bio.ed.ac.uk/software/figtree/) was used for tree visualization. Accession numbers of the sequences used in the phylogenetic analysis are available in the Figure 1—source data 1.
 
-## The morphology, and opsin expression, of Maritigrella crozieri ciliary photoreceptors
+### The morphology, and opsin expression, of Maritigrella crozieri ciliary photoreceptors
 
-## Animal collection, fixation and sectioning
+#### Animal collection, fixation and sectioning
 
 Adult Maritigrella crozieri were collected from the Florida Keys (Rawlinson, 2010; Lapraz et al., 2013). They were fixed in a Petri-dish containing frozen 4% paraformaldehyde (diluted in phosphate buffered saline [PBS]) overnight at 4°C, rinsed in PBS (3 × 5 min, 5 × 1 hr washes) at room temperature and dehydrated in a step-wise ethanol series for histology and immunofluorescence, and in a methanol series for mRNA in situ hybridization. For histology, heads of adult worms (from the pharynx anteriorward) were dissected, cleared in histosol (National Diagnostics), and embedded in paraffin. Paraffin blocks were sectioned at 8–12 µm using a Leica (RM2125 RTF) microtome. Larval stages were fixed in 4% PFA in PBS for 20 min at room temperature, rinsed in PBS for five x 30 min washes and stored in 1% PBS-azide at 4°C for immunofluorescence, or dehydrated into 100% methanol and stored at −20°C for mRNA in situ hybridization.
 
-## Histology and immunohistochemistry
+#### Histology and immunohistochemistry
 
 For adult stages, consecutive sections were used to compare histology and immunofluorescence. For histological analysis, sections were stained with Masson’s trichrome (MTC) (Witten and Hall, 2003). For immunostaining of paraffin sections, slides were dewaxed in Histosol (2 × 5 min), then rehydrated through a descending ethanol series into PBS + 0.1% Triton (PBT, 2 × 5 min). An antigen retrieval step, heating on low in a microwave in sodium citrate buffer (10 mM sodium citrate, pH6.0) for 1 min, helped with the xenopsin and Ga subunit primary antibodies. The slides were rinsed 2 × 5 min in PBS + 0.1% triton, before blocking with 10% heat-inactivated sheep serum in PBT for 1 hr at room temperature in a humidified chamber. Primary antibodies (see below) were diluted in block (10% heat-inactivated sheep serum IN PBT) and applied to the slide, covered with parafilm, and incubated at 4°C for 48 hr. Slides were then rinsed in PBT (3 × 10 min). Secondary antibodies diluted in block solution were then applied to each slide, and slides were covered with parafilm and incubated in a humidified chamber, in the dark, at room temperature for 2 hr. Slides were rinsed in PBT 3 × 10 min, and then 4 × 1 hr prior to counterstaining with the nuclear marker 4′, 6-diamidino-2-phenylindole (DAPI) (1 ng/ml) and mounting in Fluoromount G (Southern Biotech, Birmingham, AL). Immunostaining of larval stages was performed according to Rawlinson (2010).
 
 Primary antibodies used were: anti-acetylated tubulin (Sigma) diluted at 1:500, a polyclonal antibody directed against the C-terminal extremity of the Maritigrella xenopsin protein sequence (GASAVSPQNGEESC; generated by Genscript, Piscataway, NJ, USA) diluted at 1:50, and commercially available antibodies against Gαq/11α (C-19), Gαi-1 (R4), Gαi-1/2/3 (35), Gαo (A2), Gαs/olf (A-5), Gαs/olf (C-18), Gα12 (E-12) diluted at 1:300 (Santa Cruz Biotechnology, Santa Cruz, CA, USA). Imaging of immunofluorescence on paraffin sections and larval wholemounts was carried out using an epi-fluorescence microscope and a confocal laser scanning microscope, additional images on larvae were taken with an OpenSPIM (Girstmair et al., 2016). For the 3D rendering of the larva a multi-view stack was produced by capturing several angles of the specimen and using Fiji’s bead based registration software and multi-view deconvolution plugins (Preibisch et al., 2010; Preibisch et al., 2014).
 
-## mRNA in situ hybridization
+#### mRNA in situ hybridization
 
 To analyze the expression of Maritigrella crozieri r-opsin, we performed mRNA in situ hybridization using a riboprobe generated against the r-opsin sequence identified above. A 523 bp fragment of M. crozieri r-opsin was PCR amplified using the following primers: r-opsin-fw TCCCTGTCCTTTTCGCCAAA, r-opsin-rv TATTACAACGGCCCCCAACC. The fragment was cloned using the pGEM-T easy vector system, and a DIG-labeled antisense probe was transcribed according to the manufacturer’s protocol. mRNA in situ hybridization on paraffin sections of adult tissue was carried out according to O'Neill et al. (2007). Upon completion of the color reaction, slides were cover-slipped with Fluoromount G. Wholemount mRNA in situ hybridization on larvae was carried out according to the Capitella teleta protocol of Seaver and Kaneshige (2006). Following termination of the color reaction, specimens were cleared and stored in 80% glycerol, 20% 5 × PBS. Both adult and larval mRNA in situ hybridization experiments were imaged on a Zeiss Axioscope.
 
-## TEM and serial SEM
+#### TEM and serial SEM
 
 Larval Maritigrella crozieri were fixed in 3% gluteraldehyde in seawater overnight at 4°C. Then stored at 4°C in seawater plus 0.1% glutaraldehyde.
 
@@ -179,39 +331,39 @@ For TEM, sections of 60–70 nm thickness were cut with a diamond knife on a Rei
 
 For serial SEM the samples were shaped to an ~1×4 mm rectangular face using a diamond trimming tool. The block was mounted in a microtome (Leica EM UC7, Buffalo Grove, IL) and thin sections, 100, 400 and 500 nm in thickness, were cut with a diamond knife. The methods are described in detail in Terasaki et al. (2013) but in brief the sections were collected on kapton tape with the ATUM tape collection device, the tape containing the sections was cut into strips, mounted on four inch silicon wafers and then carbon coated. The sections were imaged using a field emission scanning EM (Zeiss Sigma FE-SEM, Peabody) in backscatter mode (10 keV electrons,~5 nA beam current). The images were aligned using the Linear Alignment with SIFT algorithm and reconstructed using TrakEM2, both in FIJI Image J (Cardona et al., 2012). To estimate the sensory membrane surface area of the phaosomal cells we counted the number of basal bodies (in two complete phaosomes) and calculated the average diameter and total length of 3 cilia per phaosome.
 
-## Observations of ciliary phaosomes in live adult worms
+#### Observations of ciliary phaosomes in live adult worms
 
 To investigate whether the cilia in the phaosomes of live adult worms were motile, we gently squeezed small adults in seawater between a coverslip and microscope slide and observed them under a dissecting microscope, while changing the levels of illumination using a SCHOTT AG Lighting and Imaging KL 1600 LED Cold Light Source.
 
-## Micro-CT analysis
+#### Micro-CT analysis
 
 One adult Maritigrella crozieri was fixed in 4% PFA, rinsed in PBS and dehydrated into methanol, as described above. It was then stained in 1% (w/v) phosphotungstic acid (Sigma 221856) in methanol for 7 days, with the solution changed every other day. The animal was rinsed in methanol, mounted in an eppendorf tube between two pads of methanol-soaked tissue paper, and scanned on a Nikon XTH225 ST at the Cambridge Biotomography Centre (Department of Zoology, University of Cambridge). The brain area was segmented using Mimics software (Materialise, Leuven, Belgium).
 
-## Gα-protein selection of Maritigrella crozieri xenopsin
+### Gα-protein selection of Maritigrella crozieri xenopsin
 
 We followed the methods for the secondary messenger assays as described in detail in Bailes and Lucas (2013). In brief, a mammalian expression vector was constructed using pcDNA3.1 (Invitrogen) and the open reading frame of Maritigrella xenopsin with the stop codon replaced by a six base linker and 28 bases that code for the 1D4 epitope from bovine Rh1 opsin. Expression vectors for the positive controls (Gαs – Jellyfish opsin [JellyOp]; Gαi – human rhodopsin [Rh1]; Gαq – human melanopsin [Opn4]) were constructed in the same way (Bailes and Lucas, 2013). Opsin-expressing plasmids were omitted from transfection in the negative controls. To make an expression plasmid for a luminescent cAMP reporter, the region for the Glosensor cAMP biosensor was excised from pGlosensor 22 (Promega) and ligated into linearized pcDNA5/FRT/TO. All restriction enzymes were from New England Biolabs (NEB). A luminescent calcium reporter was synthesized using the photoprotein aequorin from Aequorea victoria mtAeq (Inouye et al., 1985; Bailes and Lucas, 2013).
 
-## Reporter and opsin transfection for light response assays
+#### Reporter and opsin transfection for light response assays
 
 ~6×104 HEK293 cells (ATCC [STR authenticated], and negative for mycoplasma) were plated per well in a 96 well plate 24 hr prior to transfection in DMEM/10% FCS. Transfections were carried out using Lipofectamine 2000 (Invitrogen). Reporter and opsin-expressing plasmids were co-transfected at 500 ng each and incubated for 4–6 hr at 37°C. DMEM/10% FCS + 10 µM 9-cis retinal (Sigma) was then replaced and cells were left overnight at 37°C. All steps following initial transfection were carried out in dim red light only.
 
-## Luminescent second messenger assays
+#### Luminescent second messenger assays
 
 We tested three biological replicates per treatment, with each biological replicate consisting of an average of three technical replicates (for cAMP assays) or four technical replicates (for Ca2+ assays).
 
-## cAMP increases: Gαs
+#### cAMP increases: Gαs
 
 For measurements of cAMP increases as an indication of Gαs activity, wells of cells were transfected with pcDNA/FRT/TO Glo22F and opsin. Following transfection and overnight incubation, media was replaced with L-15 medium, without phenol red (Invitrogen), 10% FCS with 2 mM beetle luciferin (Promega) for 1–2 hr at room temperature. Luminescence of the cells was measured with a Fluostar optima plate reader (BMG Labtech). After 6 min, cells were exposed to a flash of 470 nm light (1015 photons) followed by a recovery period where relative luminescence units (RLU) were recorded every minute for up to 25 min.
 
-## cAMP decreases: Gαi
+#### cAMP decreases: Gαi
 
 Decreases in cAMP are difficult to measure from baseline cAMP reporter luminescence and so cells were treated with 2 µM forskolin to artificially raise cAMP levels at 6 min. Luminescence was measured before and after the forskolin addition until the increase in luminescence plateaued. Cells were then flashed with 470 nm light (as above) and luminescence measured for up to 45mins.
 
-## Ca2+ increases: Gαq/11
+#### Ca2+ increases: Gαq/11
 
 Cells transfected with pcDNA5/FRT/TO mtAeq and opsins were incubated with 10 µM Coelenterazine h (Biotium) in L-15 medium, without phenol red (Invitrogen), 10%FCS in the dark for 2 hr before recording luminescence on the plate reader. After 10 s, cells were flashed with 470 nm light (1015 photons) before immediately resuming recording for 60 s.
 
-## Immunocytochemistry of opsin expressing HEK293 cells
+#### Immunocytochemistry of opsin expressing HEK293 cells
 
 For immunocytochemistry, HEK293 cells were seeded in 12-well plates at 250 000 cells/well and transiently transfected, as described above. 4–6 hr later the total volume of resuspended cells was then seeded onto poly-D-lysine coated 12 mm #1.5 coverslips in each well of a 6-well plate. Cells were incubated for 24 hr at 37°C, washed in 1 x PBS and then fixed using 4% paraformaldehyde in PBS for 10 min at room temperature. Cells were washed in PBS, then permeabilised in 0.2% triton-X in PBS for 5 min. Cells were blocked in PBS with 5% goat serum and 0.05% Tween-20 for 30 mins at room temperature.
 

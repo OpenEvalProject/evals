@@ -29,7 +29,7 @@
 
 ## Abstract
 
-Leptospirosis is the leading zoonotic disease in terms of morbidity and mortality worldwide. Effective prevention is urgently needed as the drivers of disease transmission continue to intensify. The key challenge has been developing a widely applicable vaccine that protects against the >300 serovars that can cause leptospirosis. Live attenuated mutants are enticing vaccine candidates and poorly explored in the field. We evaluated a recently characterized motility-deficient mutant lacking the expression of a flagellar protein, FcpA. Although the fcpA mutant has lost its ability to cause disease, transient bacteremia was observed. In two animal models, immunization with a single dose of the - fcpA mutant was sufficient to induce a robust anti-protein antibodies response that promoted protection against infection with different pathogenic Leptospira species. Furthermore, characterization of the immune response identified a small repertoire of biologically relevant proteins that are highly conserved among pathogenic Leptospira species and potential correlates of cross-protective immunity. -
+Leptospirosis is the leading zoonotic disease in terms of morbidity and mortality worldwide. Effective prevention is urgently needed as the drivers of disease transmission continue to intensify. The key challenge has been developing a widely applicable vaccine that protects against the >300 serovars that can cause leptospirosis. Live attenuated mutants are enticing vaccine candidates and poorly explored in the field. We evaluated a recently characterized motility-deficient mutant lacking the expression of a flagellar protein, FcpA. Although the fcpA- mutant has lost its ability to cause disease, transient bacteremia was observed. In two animal models, immunization with a single dose of the fcpA- mutant was sufficient to induce a robust anti-protein antibodies response that promoted protection against infection with different pathogenic Leptospira species. Furthermore, characterization of the immune response identified a small repertoire of biologically relevant proteins that are highly conserved among pathogenic Leptospira species and potential correlates of cross-protective immunity.
 
 ## Introduction
 
@@ -45,41 +45,61 @@ Recently, our group identified and characterized a novel flagellar protein in th
 
 ## Results
 
-## A motility-deficient strain as an attenuated-vaccine candidate
+### A motility-deficient strain as an attenuated-vaccine candidate
 
 We characterized a previously unidentified flagellar sheath protein (FcpA) that was essential for translational motility and thus for virulence (Wunder et al., 2016a). Despite the phenotype of complete attenuation, we observed that the L1-130 fcpA- mutant caused a transient systemic infection, which was cleared 7 days after intraperitoneal inoculation of 108 leptospires in hamsters (Wunder et al., 2016a). In this study, after inoculation of 107 leptospires using the subcutaneous route of infection in hamsters, we detected the presence of DNA of the mutant by qPCR in all the tissues tested, with the exception of the brain (Figure 1A). These results were similar to those observed previously, with the wild-type reaching higher number of leptospires in all tissues analyzed, leading to the death or euthanasia of the animals due to clinical signs of disease 5–7 days after infection. In comparison, the signal for the fcpA- mutant strain was undetectable after 7 days with all inoculated animals surviving with no detectable leptospires in either kidney or blood, measured by qPCR and culture. Similarly, no detectable signal was observed for the animals immunized with the L1-130 heat-killed strain (Figure 1A). We also tested the fcpA- mutant in the mouse model using different doses of infection (Figure 1B). Although the dose of the wild-type strain was not enough to produce disease and lethality on infected mice, all animals were colonized and the presence of the leptospiral DNA in blood was detectable until the fifteenth day after infection (Figure 1B). Furthermore, no dose of the fcpA- mutant caused colonization (data not shown) and there was a significant difference in the magnitude of dissemination of the mutant in the blood compared to the wild type (Figure 1B). DNA signal of the fcpA- mutant was only observed in the blood of animals infected with doses of 107 and 105 until the 13th and 8th day after infection, respectively. Taken together, these results indicate that although the fcpA- mutant is attenuated in both the hamster and mouse model, there is a hematogenous dissemination of this mutant, identified by detection of its DNA. The mutant appears to be cleared by the immune system before it results in observable disease or death of the animals. Furthermore, we observed in the mouse model that the dissemination of the mutant is dose dependent. However, it is important to notice that although we do not see any signal of the mutant in doses equal or lower to 103 leptospires, the theoretic limit of detection of the qPCR assay used here (Wunder et al., 2016a; Stoddard et al., 2009) is 100 leptospires/mL of blood which can result in false negative results.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64166/elife-64166-fig1-v1.jpg)
 
-**Figure 1.:** fcpA- mutant in animal tissues.(A) Kinetics of infection of L1-130 WT, L1-130 fcpA- vaccine, and L1-130 heat-killed vaccine in blood, kidney, liver, and brain of hamsters after inoculation with 107 bacteria. All animals infected with WT strain died between 5 and 6 days post-infection; (B) Kinetics of infection of L1-130 WT (107 leptospires) and L1-130 fcpA- attenuated-vaccine (dose range from 107 to 101 leptospires) in blood of mouse. Results are expressed by logarithmic genome equivalent per gram or milliliter of tissues with mean and standard deviation. All doses were inoculated by subcutaneous route in both models.Figure 1—source data 1.
+**Figure 1.:** (A) Kinetics of infection of L1-130 WT, L1-130 fcpA- vaccine, and L1-130 heat-killed vaccine in blood, kidney, liver, and brain of hamsters after inoculation with 107 bacteria. All animals infected with WT strain died between 5 and 6 days post-infection; (B) Kinetics of infection of L1-130 WT (107 leptospires) and L1-130 fcpA- attenuated-vaccine (dose range from 107 to 101 leptospires) in blood of mouse. Results are expressed by logarithmic genome equivalent per gram or milliliter of tissues with mean and standard deviation. All doses were inoculated by subcutaneous route in both models.
 
-## Model for cross-protective immunity to leptospirosis
+### Model for cross-protective immunity to leptospirosis
 
 We hypothesized that the transient infection produced by the fcpA- mutant induces cross-protective responses, given previous findings (Wunder et al., 2016a; Srikram et al., 2011). Immunization with a single dose of the fcpA- mutant (Figure 2A) conferred complete protection against mortality in hamsters from infection with homologous and heterologous serovars (Figure 2B and Supplementary file 2). In contrast, immunization with heat-killed leptospires conferred partial protection to the homologous but not against the heterologous serovar (Figure 2B and Supplementary file 2). Heat-killed bacterins can give a high protection level against an homologous challenge (Adler, 2015), but usually the protocol for vaccination includes at least a second dose of the vaccine. Our poor results here with the heat-killed vaccine, especially for the homologous challenge (Figure 2B and Supplementary file 2), might be due to the lack of a vaccine boost. For the purpose of evaluating the efficacy of the attenuated-vaccine after a single dose, we decided to keep a standard protocol for vaccination and thus using only one dose of the heat-killed vaccine as well. It is important to mention that the strain Hardjo 203 was described to cause only colonization in the hamster model infected by intraperitoneal route (Zuerner et al., 2012). However, in our LD50 experiments using the conjunctival route we reproducibly observed 25% death rate when using the conjunctival route (Supplementary file 1). Furthermore, in the non-vaccinated group we observed an overall death rate of 21.4% after challenge with the strain Hardjo 203, but no deaths in the vaccinated group, which explains the wide 95% CI range (Figure 2B and Table S2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64166/elife-64166-fig2-v1.jpg)
 
-**Figure 2.:** fcpA- attenuated-vaccine model.Animals were vaccinated with a dose of 107 leptospires (hamsters) or a range of doses from 107 to 101 leptospires (mice) by subcutaneous (SC) route. Animals were bled the day before immunization (day −1) and day 20 post-immunization (A). Hamsters were challenged by conjunctival route with either the homologous strain or different heterologous strains. Mice were challenged by intraperitoneal route with the heterologous serovar Manilae of L. interrogans. By combining all vaccine experiments performed, efficacy of the vaccine against death and colonization was evaluated for hamsters (B and D) and mice (C and E) and represented by percentage and 95% CI based on frequency of outcomes compared to PBS-immunized animals. Hamster experiment are showing the results after vaccination with the fcpA- attenuated-vaccine (red) and heat-killed vaccine (blue). Bacterial load in the kidney was measured by qPCR in hamsters (F) and mice (G) and compared between PBS-immunized animals (blue) and animals immunized with fcpA- attenuated-mutant (red). Results are expressed in logarithmic genome equivalents per gram of renal tissue with mean and standard deviation. Asterisk symbols represent statistical significance calculated by t-test: *p<0.01, ***p<0.0001. See also Supplementary files 2 and 3.Figure 2—source data 1.
+**Figure 2.:** Animals were vaccinated with a dose of 107 leptospires (hamsters) or a range of doses from 107 to 101 leptospires (mice) by subcutaneous (SC) route. Animals were bled the day before immunization (day −1) and day 20 post-immunization (A). Hamsters were challenged by conjunctival route with either the homologous strain or different heterologous strains. Mice were challenged by intraperitoneal route with the heterologous serovar Manilae of L. interrogans. By combining all vaccine experiments performed, efficacy of the vaccine against death and colonization was evaluated for hamsters (B and D) and mice (C and E) and represented by percentage and 95% CI based on frequency of outcomes compared to PBS-immunized animals. Hamster experiment are showing the results after vaccination with the fcpA- attenuated-vaccine (red) and heat-killed vaccine (blue). Bacterial load in the kidney was measured by qPCR in hamsters (F) and mice (G) and compared between PBS-immunized animals (blue) and animals immunized with fcpA- attenuated-mutant (red). Results are expressed in logarithmic genome equivalents per gram of renal tissue with mean and standard deviation. Asterisk symbols represent statistical significance calculated by t-test: *p<0.01, ***p<0.0001. See also Supplementary files 2 and 3.
 
 Protection against renal colonization was only observed in 80% of the animals immunized with fcpA- mutant after homologous infection. Heterologous infection gave varying levels of protection, from 0% to 35.7% (Figure 2D and Supplementary file 2). Hamsters are highly susceptible to leptospirosis (Haake, 2006), so the finding that the attenuated strain conferred partial protection against colonization was not unexpected. To understand the efficacy of the fcpA- mutant vaccine to protect against colonization, we tested different doses of immunization using the mouse model against heterologous infection. Our results indicate that the protection conferred by the fcpA- mutant is dose dependent. Against death, the vaccine conferred 100% protection up to a dose of 103 leptospires of the fcpA- mutant (Figure 2C and Supplementary file 3), but a dose as high as 107 leptospires was necessary to obtain 100% protection against colonization (Figure 2E and Supplementary file 3). Furthermore, our quantitative analyzes of renal colonization showed that although the fcpA- mutant cannot promote complete protection, there is a significant reduction of the burden of the disease both in hamster after heterologous infection (Figure 2F and Supplementary file 2) and in lower doses of the vaccine in the mouse model, which also revealed a dose-dependent phenotype (Figure 2G and Supplementary file 3).
 
 These findings indicate that a single dose of a live attenuated-vaccine elicits cross-protective immunity against serovars belonging to L. interrogans, L. kirschneri, and L. borgpetersenii, the species which encompasses the majority of serovars of human and animal health importance.
 
-## Antibodies against Leptospira proteins as a correlate for the cross-protective immunity
+### Antibodies against Leptospira proteins as a correlate for the cross-protective immunity
 
 The fcpA- attenuated-vaccine induced a weak agglutinating antibodies response to the homologous serovar, Copenhageni, and undetectable microscopic agglutination test (MAT) titers against heterologous serovars, both in hamsters (Figure 3A) and mice (Figure 3C). Furthermore, in the mouse model, agglutinating antibodies were only measurable with a dose of at least 105 leptospires (Figure 3C). In contrast, a single dose of the fcpA- mutant was able to induce a robust immune response against leptospiral proteins, recognizing proteins across the different species of Leptospira used in the hamster model (Figure 3B) and the heterologous strain used in the mouse model with a dose of at least 103 leptospires (Figure 3D). In addition, the presence of detectable antibodies measured by ELISA correlates with the highest dose that induced 100% protection against death in the mouse model (103 leptospires), and there is a decrease on the OD for all doses when the Manilae antigen was treated with proteinase K (Figure 3E). Furthermore, our passive transfer experiments using hamster-immune sera against fcpA- attenuated-vaccine conferred 100% protection against heterologous lethal infection in hamsters (Figure 3F) and mice (Figure 3G). Taken together, these results indicate that anti-Leptospira protein antibodies, and not agglutinating antibodies, are the correlate of vaccine-mediated cross-protective immunity.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64166/elife-64166-fig3-v1.jpg)
 
-**Figure 3.:** fcpA- attenuated-vaccine model.Individual sera of hamsters and mice were obtained after 20 days post-vaccination by a subcutaneous (SC) dose of 107 leptospires (hamsters) or a range of doses from 107 to 101 leptospires (mice) of the attenuated-vaccine. Microscopic agglutination test (MAT) (A and C) and western blot (B and D) were performed adopting as antigen all the strains used for challenged in both hamster and mice, respectively. Mice sera was additionally tested using an ELISA assay (E) adopting whole-cell extract of serovar Manilae with (red) and without (blue) Proteinase K treatment as antigen. Furthermore, a pool of hamster immune-sera vaccinated with a dose of 107 leptospires of fcpA- attenuated-vaccine was used for passive transfer experiments. 2 mL or 0.5 mL of sera was passively transfer to naïve hamsters (F) or mice (G), respectively, followed by challenge with a dose of 108 leptospires of heterologous serovar Manilae by conjunctival (CJ) or intraperitoneal (IP) route, respectively. Results are expressed in a survival curve of animals passively transferred with fcpA- anti-sera (red) and control hamster sera (blue).Figure 3—source data 1.
+**Figure 3.:** Individual sera of hamsters and mice were obtained after 20 days post-vaccination by a subcutaneous (SC) dose of 107 leptospires (hamsters) or a range of doses from 107 to 101 leptospires (mice) of the attenuated-vaccine. Microscopic agglutination test (MAT) (A and C) and western blot (B and D) were performed adopting as antigen all the strains used for challenged in both hamster and mice, respectively. Mice sera was additionally tested using an ELISA assay (E) adopting whole-cell extract of serovar Manilae with (red) and without (blue) Proteinase K treatment as antigen. Furthermore, a pool of hamster immune-sera vaccinated with a dose of 107 leptospires of fcpA- attenuated-vaccine was used for passive transfer experiments. 2 mL or 0.5 mL of sera was passively transfer to naïve hamsters (F) or mice (G), respectively, followed by challenge with a dose of 108 leptospires of heterologous serovar Manilae by conjunctival (CJ) or intraperitoneal (IP) route, respectively. Results are expressed in a survival curve of animals passively transferred with fcpA- anti-sera (red) and control hamster sera (blue).
 
-## Highly conserved seroreactive proteins as potential targets for eliciting cross-protective responses
+### Highly conserved seroreactive proteins as potential targets for eliciting cross-protective responses
 
 We characterized the antibody response to the attenuated-vaccine using a downsized proteome array of 660 and 330 ORFs for hamster and mouse sera, respectively. We identified a total of 133 (Figure 4A) and 56 (Figure 4B) protein targets on our analysis of hamsters (Hamster 107) and mice (Mouse 107) respectively, immunized with a dose of 107 leptospires and a total of 13 protein targets (Figure 4C) on our analysis of mouse immunized with different doses of the attenuated-vaccine (Mouse all). The reason to analyze the mouse results separately was based on the fact that a dose of 107 leptospires of the attenuated-vaccine was able to give 100% cross-protection against lethality and colonization (Figure 2C and E). When combined, these three different analyses resulted in a total of 154 unique protein targets (Figure 4D and Supplementary file 4). Of those, 55% (85) have no prediction of localization and 23% (36), 14% (21), and 8% (12) have a prediction to be cytoplasmic membrane-associated, outer membrane proteins (OMP), and cytoplasmic, respectively (Figure 4—figure supplement 1A). Enrichment analysis showed a 5.0-fold (p=4.51E-10) and 1.8-fold (p=2.92E-04) enrichment for OMP and cytoplasmic membrane-associated, respectively (Figure 4—figure supplement 1B). In contrast, cytoplasmic proteins were 0.3-fold (p=2.91E-10) underrepresented in reactive antigens groups (Figure 4—figure supplement 1B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64166/elife-64166-fig4-v1.jpg)
+
+**Figure 4.:** Using statistical modeling we calculated the t-statistics value for each individual antigen used in the proteome array (660 for hamster and 330 for mice) based on three groups: the contrast between vaccinated and unvaccinated hamsters (A) or mice (B) using a vaccine dose of 107 leptospires; the dose–response relationship for each antigen on mice (C) vaccinated with a range of doses from 107 to 101 leptospires of the attenuated-vaccine. Results are ranked based on individual t-statistics values for each antigen, and the dashed line represents the selection point for the antigens based on Bhp-test. The Venn-diagram (D) shows the relationship of all the 154 antigens identified in the three groups. The subgroups of antigens selected for further characterization are highlighted in color. See Figure 5.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64166/elife-64166-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Using PSORB information and Genoscope database, we classified the 154 protein targets identified in this study by their putative localization in the cell (A) and their clusters of orthologous group (COG) classification (C). The groups of proteins are classified as follows: proteins identified in all three groups analyzed (7, red); proteins identified in both hamster and mouse vaccinated with a dose of 107 leptospires of the attenuated-vaccine (31, yellow); proteins identified between the group of mice immunized with different doses and the group of mice immunized with a dose of 107 leptospires (2, green); proteins identified between the group of mice immunized with different doses and the group of hamsters immunized with a dose of 107 leptospires (1, blue); proteins identified only in the group of mice immunized with different doses (3, purple); proteins identified only in the group of mice immunized with a dose of 107 leptospires (16, orange); and proteins identified only in the group of hamsters immunized with a dose of 107 leptospires (94, brown). We also performed enrichment analysis of the reactive antigens compared to the whole proteome of Leptospira, based on the PSORB localization (B) and COG (D). Statistical results are represented by *(p<0.05), **(p<0.001), and ***(p<0.0001). See Supplementary file 4.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64166/elife-64166-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Analysis showing an association between the different doses of the attenuated L1-130 fcpA- attenuated-vaccine in mice and the mean signal response intensity against all different proteins.
 
 Clusters of orthologous groups (COGs) of proteins were widely represented in those targets (Supplementary file 4), with at least one protein in each of the 18 functional categories. The COGs with higher representation were general function prediction only (R), cell wall/membrane/envelope biogenesis (M), intracellular trafficking, secretion, and vesicular transport (U), and cell motility (N) with 19, 17, 16, and 14 proteins, respectively. However, in addition to the 11 protein targets assigned as function unknown (S), the vast majority of the proteins had no COG assigned (59) (Figure 4—figure supplement 1C). Enrichment analysis identified proteins with predicted COG-U, COG-N, and COG-M function as highly enriched among the reactive antigens, by 4.9-fold (p=2.27E-07), 3.1-fold (p=8.35E-05), and 1.6-fold (p<0.05), respectively (Figure 4—figure supplement 1D). Furthermore, proteins predicted to be involved in signal transduction mechanisms (COG-T) and in amino acid transport and metabolism (COG-E) were significantly underrepresented in reactive antigens, by 0.4-fold (p=0.016) and 0.3-fold (0.02), respectively (Figure 4—figure supplement 1D). Taken together, the enrichment analysis validates our approach to identify biologically relevant protein candidates for a cross-protective vaccine.
 
 We were able to narrow down the identified 154 proteins to 41 protein targets based on their relationship among the three different groups of the proteome array’s analysis (Figure 5 and Figure 5—figure supplement 1). Seven proteins were identified in all groups (Figures 4D and 5 and Supplementary file 4, red) and 31 proteins were identified in both hamster and mouse vaccinated with a dose of 107 leptospires of the attenuated-vaccine (Figures 4D and 5 and Supplementary file 4, yellow). Furthermore, we identified three extra proteins identified in the group of mice immunized with different doses, two between the group of mice immunized with a dose of 107 leptospires (Figures 4D and 5 and Supplementary file 4, green) and one extra protein between the group of hamsters immunized with a dose of 107 leptospires (Figures 4D and 5 and Supplementary file 4, blue). Hamster and mice immune sera were highly reactive to the majority of the 41 proteins (Figure 5), in contrast to the low reactivity for the control sera and animals vaccinated with the heat-killed vaccine (Figure 5—figure supplement 1), indicating the ability of the attenuated-vaccine to induce immunity against leptospiral proteins. We identified plausible vaccine candidates among these 41 seroreactive proteins (Figure 5), which included six OMPs and known putative virulence factors such as LipL32, LipL41, and Lig proteins (Ko et al., 2009; Picardeau, 2017), providing supportive evidence for using proteome arrays to identify such proteins. Not surprisingly, 40% of those targets are identified as hypothetical proteins with no described function. However, the majority (70%) have high amino acid sequence identity (>80%) among their respective orthologs in all the 13 pathogenic Leptospira species analyzed (Figure 5), and therefore may be targeted for eliciting cross-protective responses. Moreover, sera from confirmed patients with acute leptospirosis reacted with 17 of the 41 Leptospira proteins recognized by sera from animals immunized with the attenuated-vaccine (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64166/elife-64166-fig5-v1.jpg)
+
+**Figure 5.:** Proteins were selected based on the groups depicted on Figure 4 and Supplementary file 4: present in all three groups of analysis (red), present in both hamster and mice immunized with 107 leptospires (yellow), present in both hamsters immunized with 107 leptospires and mice immunized with a dose range (blue), and present in both mice immunized with 107 leptospires and mice immunized with a dose range (green). The proteins are identified by their L. interrogans serovar Copenhageni ORF number and the heat-map shows the signal intensity of antibody response (based on log-fold change) in all animals vaccinated with the fcpA- mutant used for this analysis (37 hamsters and 34 mice). Right panel shows amino acid sequence identity of respective ORFs among a representative of all pathogenic Leptospira species.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64166/elife-64166-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Proteins were selected based on the groups depicted on Figure 4 and Supplementary file 4: present in all three groups of analysis (red), present in both hamster and mice immunized with 107 leptospires (yellow), present in both hamsters immunized with 107 leptospires and mice immunized with a dose range (blue), and present in both mice immunized with 107 leptospires and mice immunized with a dose range (green). The proteins are identified by their L. interrogans serovar Copenhageni ORF number and the heat-map shows the signal intensity of antibody response (based on log-fold change) in all control animals used for this analysis (14 hamsters vaccinated with heat-killed vaccine, 37 PBS control hamsters, and 4 PBS control mice). The heat-map also shows the result for 30 leptospirosis patients. Right panel shows amino acid sequence identity of respective ORFs among a representative of all intermediate and saprophytic Leptospira species.
 
 ## Discussion
 
@@ -99,37 +119,131 @@ This study is the first description of vaccine that elicits cross-protection aga
 
 ## Materials and methods
 
-## Vaccine and challenge strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Leptospira interrogans)</td>
+      <td>Fiocruz L1-130 fcpA- mutant</td>
+      <td>Wunder et al., 2016a doi:10.1111/mmi.13403</td>
+      <td>L. interrogans serovar Copenhageni strain Fiocruz L1-130 fcpA-</td>
+      <td>Fiocruz L1-130 fcpA- mutant</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Goat Anti-Mouse IgG (H+L)</td>
+      <td>Jackson Immuno Research</td>
+      <td>Cat# 115-035-166 RRID:AB_2338511</td>
+      <td>ELISA (1:50,000) WB (1:100,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Goat Anti-Mouse IgG (H+L)</td>
+      <td>Jackson Immuno Research</td>
+      <td>Cat# 107-035-142 RRID:AB_2337454</td>
+      <td>WB (1:100,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hamster α-fcpA- sera (Hamster polyclonal)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Material and methods WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hamster control sera (Hamster polyclonal)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Material and methods WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SureBlue Reserve TMB 1-Component Microwell Peroxidase Substrate</td>
+      <td>SeraCare</td>
+      <td>Cat. #: 5120–0081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sulfuric Acid (H2SO4)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: 258105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase K</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. #: EO0491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Platinum Quantitative PCR Supermix-UDG</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. #: 11730017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 8.0.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio software</td>
+      <td>RStudio</td>
+      <td>RRID:SCR_000432</td>
+      <td>Version 1.0.153</td>
+    </tr>
+  </tbody>
+</table>
+
+### Vaccine and challenge strains
 
 Leptospires were cultivated in liquid EMJH medium (Johnson and Harris, 1967) supplemented with 1% rabbit serum. Leptospira interrogans serovar Copenhageni strain Fiocruz L1-130 fcpA- mutant (Wunder et al., 2016a) and all the seven different strains used for the challenge experiments (Supplementary file 1) were incubated up to 7 days at 29°C, till they reached log phase (between 4 and 5 days of culture). For all immunization or infection experiments, the correct number of Leptospira was determined by a Petroff-Hausser counting chamber (Fisher Scientific).
 
 The heat-killed vaccine was prepared by heat-inactivating preparations of L. interrogans strain Fiocruz L1-130 at 56°C for 20 min.
 
-## Animal experimentation
+### Animal experimentation
 
-## Dissemination studies
+#### Dissemination studies
 
 For the dissemination experiments with the Fiocruz L1-130 fcpA- mutant and L1-130 heat-killed vaccine in hamsters, a group of fifteen 3-week-old male Golden Syrian hamsters (Envigo) was inoculated subcutaneously with a dose of 107 leptospires in 0.5 mL of EMJH medium. A group of three animals was euthanized at 1, 4, 7, 14, and 21 days after infection. As a control, a group of nine animals was infected with Fiocruz L1-130 WT using the same route and dose, and animals were euthanized at days 1 and 4 after infection. The final group was euthanized at onset of disease. After euthanizing the animals, blood, kidney, liver, and brain were carefully removed, collected into cryotubes, and immediately placed into liquid nitrogen before being stored at −80°C until extraction of DNA. Kidney and blood were inoculated in EMJH for culture of leptospires when necessary.
 
 For the experiment in mice, groups of three 4-week-old female C57BL/6 mice (Jackson laboratory) were inoculated subcutaneously with different doses of the vaccine (107, 105, 103, 102, and 101) and a control group with three animals was inoculated with Fiocruz L1-130 WT with a dose of 107 leptospires. Blood was collected by retro-orbital bleeding at 1, 4, 8, 13, 15, 18, and 21 days after infection.
 
-## Immunization and challenge
+#### Immunization and challenge
 
 All vaccination experiments (Figure 2A) were performed using 3-week-old male Golden Syrian hamsters (Envigo) or 4-week-old female C57BL/6 mice (Jackson laboratory), divided into groups of six to nine or four to eight animals, respectively. Animals were vaccinated with Fiocruz L1-130 fcpA- mutant using the subcutaneous route. Hamsters were vaccinated with a single dose of 107 leptospires and mice were vaccinated with a range of doses (107, 105, 103, 102, and 101) in 500 and 200 μL of EMJH medium, respectively. The heat-killed vaccine was used in a single dose of 107 leptospires by subcutaneous route as a control group in hamster. In addition, groups of animals were injected with phosphate buffered saline (PBS) and served as unvaccinated controls. Blood samples were collected the day before and 20 days post-immunization by retro-orbital bleeding.
 
 Animals were challenged on day 21 post-immunization. Hamsters were challenged by conjunctival inoculation, which mimics the natural route of infection (Wunder et al., 2016b; Adhikarla et al., 2018) using a lethal dose (108 leptospires) of a range of serovars whose virulence has been well characterized in our laboratory (Supplementary file 1). Hamsters vaccinated with the heat-killed vaccine were only challenged with Fiocruz L1-130 (homologous) or Manilae L495 (heterologous) strains. Whole-cell inactivated vaccines (bacterins) against leptospirosis are known for their lack of cross-reactive protection (Adler, 2015), and for that reason we only used one heterologous serovar for comparison. Mice were challenged intraperitoneally with L. interrogans serovar Manilae L495 (108 leptospires) (Gomes-Solecki et al., 2017; Ratet et al., 2014). After euthanizing the animals, kidneys were collected and stored as described above.
 
-## Passive transfer experiments
+#### Passive transfer experiments
 
 Immune sera against Fiocruz L1-130 fcpA- mutant was generated by immunizing a group of ten 3-week-old male Golden Syrian hamsters using the same protocol, described above. A group of 10 animals injected with PBS was used to obtain control sera. Animals were euthanized at day 21 post-immunization by inhalation of CO. Blood was obtained by cardiac puncture, followed by separation of sera that was subsequently pooled as immune (hamster α-fcpA-) and control sera.
 
 Immune or control sera were passively transferred to groups of 5 naïve female mice and seven naïve male hamsters (6–7-week-old) in a dose of 0.5 and 2.0 mL, respectively, using the intraperitoneal route. After 24 hr mice and hamsters were challenged with 108 leptospires of serovar Manilae L495 (heterologous strain) by intraperitoneal and conjunctival route, respectively, as described above.
 
-## Ethical statement
+### Ethical statement
 
 All animal protocols were approved by the Institutional Committee for the Use of Experimental Animals, Yale University (protocol # 2017–11424). Hamsters and mice were monitored twice daily for endpoints including signs of disease and death, up to 28 days and 14 days post-infection, respectively. Surviving animals at the end of the experiment or moribund animals presenting with difficulty moving, breathing, or signs of bleeding or seizure were immediately sacrificed by inhalation of CO2. Before each blood collection animals were anesthetized by an open-drop method with a mixture of 20% v/v isoflurane in propylene glycol.
 
-## Serology
+### Serology
 
 Pre- and post-vaccination sera were obtained by centrifugation of clotted blood at 1000 g for 15 min at room temperature. Sera samples were kept frozen at −20°C until analysis for the presence of antibodies against leptospires by MAT, ELISA, immunoblotting, and proteome array.
 
@@ -139,15 +253,15 @@ For the ELISA, whole cell lysate was prepared by centrifugation of L. interrogan
 
 To evaluate the effect of proteolytic enzyme treatment on Leptospira antigen we used the protocol previously described (Udaykumar and Saxena, 1991). Briefly, Leptospira antigen coated in assay wells was treated with 0.1 mg of Proteinase K (Invitrogen) at 37°C for 2 hr. The plates were washed three times with PBST to remove unbound proteins and followed by blocking and testing as described above.
 
-## qPCR
+### qPCR
 
 DNA was extracted from blood and tissue samples using the Maxwell16 (Promega Corporation) instrument following the manufacturer’s instructions. Quantitative Real-time PCR assays were performed on hamster and mouse tissues using an ABI 7500 instrument (Applied Biosystems) and Platinum Quantitative PCR Supermix-UDG (Invitrogen Corporation) with lipL32 primers and probe as described previously (Wunder et al., 2016b).
 
-## Western blot
+### Western blot
 
 Immunoblots with whole cell extract of Leptospira strains were performed as previously described (Lourdault et al., 2011). Western blot was performed with a pool of hamster or mice immune sera α-fcpA- at dilution of 1:100. For subsequent detection, HRP goat anti-mouse or anti-hamster’s serum (Jackson ImmunoResearch) was employed at dilution of 1:100,000. Blots were analyzed using ChemiDoc Imager (Bio-Rad).
 
-## Proteome array
+### Proteome array
 
 The full ORFeome was amplified from Leptospira interrogans serovar Copenhageni strain Fiocruz L1-130 as previously described (Lessa-Aquino et al., 2013; Lessa-Aquino et al., 2015). The ORFs larger than 150 bp were amplified from genomic DNA, followed by recombination cloning into a T7 expression vector. Genes larger than 3 kb were cloned as segments. A list of 660 most reactive antigens were selected from previous studies with human sera of patients with leptospirosis (Lessa-Aquino et al., 2013; Lessa-Aquino et al., 2017; Lessa-Aquino et al., 2015) and used for the hamster experiments. Mouse sera were tested in an array containing 330 proteins selected based on the latter. Proteins were expressed in the in vitro transcription/translation (IVTT) RTS 100 E. coli HY system (5 PRIME) and synthesized crude proteins were printed on 3-pad nitrocellulose-coated AVID slides (Grace Bio-Labs) using a Gene Machine OmniGrid 100 microarray printer (Genomic Solutions). In addition to IVTT expressed proteins, each array contained no DNA control spots consisting of IVTT reactions without the addition of a plasmid, serial dilutions of purified IgG/spots.
 
@@ -155,10 +269,10 @@ The arrays were probed for IgG reactivity. For serum samples, the arrays were pr
 
 In addition, 30 sera (acute and convalescent) of human patients from Salvador, Brazil with confirmed acute leptospirosis were probed in the array containing 660 proteins as described above. Patient samples were collected and selected as previously described (Lessa-Aquino et al., 2013).
 
-## Data analysis
+### Data analysis
 
 We analyzed the log10 fold change (LFC) between pre- and post-vaccination proteome signal intensities. We subtracted the chip background and set the negative values to one (to avoid issues taking logarithms) before calculating the LFC. Analyses were conducted on three data sets: the hamster data, which used a single attenuated-vaccine dose of 107 leptospires (Hamster 107), the mouse dose–response data including all vaccine doses 101, 102, 103, 105, and 107 (Mouse all), and the subset of mice given a dose of 107 leptospires of the attenuated-vaccine (Mouse 107). The decision of those analysis group was made based on the fact that the high dose of the vaccine in mouse (Mouse 107) was the same as in the hamster experiments (Hamster 107) and was the only dose in mouse that gave 100% protection against death and colonization. Furthermore, the other doses (Mouse all) provided different levels of protection when combining death and colonization and the comparison analysis of all those three groups would increase our chances to identify potential protein targets with a role in those outcomes.
 
-Exploratory analysis of mouse data showed a dose–response relationship, with increased vaccine dose associated with increased mean signal intensity (Figure 4—figure supplement 2) as well as decreased death and colonization. We used a model that allowed us to quantify this dose–response relationship when present and to instead measure the contrast between vaccinated and unvaccinated animals if only a single dose was used. Each antigen was modeled separately. For each antigen, we fit a linear model for the LFC in each animal A as LFCA= ExperimentA+VA+LogDoseA where experiment was a factor on four levels for the mice and two levels for the hamsters. VA is an indicator variable for whether the animal A received the attenuated-vaccine or a control injection. These terms were included in all models. The LogDose term was only included in the analysis of the dose–response relationship in mice and is the logarithm of the dose (0 for control animals, 1, 2, 3, 5, and 7). The indicator variable VA prevents LogDose = 0 for control animals from being treated as a true zero. Our statistic of interest was the t-statistic. For the Hamster and Mouse 107 models we interpreted the VA t-statistics, and for the Mouse All dose–response model we interpreted LogDose t-statistics. We used the Benjamini–Hochberg (BHp) correction (Benjamini and Hochberg, 1995) to control the false discovery rate at 0.05. This analysis was conducted in RStudio software (RStudio).
+Exploratory analysis of mouse data showed a dose–response relationship, with increased vaccine dose associated with increased mean signal intensity (Figure 4—figure supplement 2) as well as decreased death and colonization. We used a model that allowed us to quantify this dose–response relationship when present and to instead measure the contrast between vaccinated and unvaccinated animals if only a single dose was used. Each antigen was modeled separately. For each antigen, we fit a linear model for the LFC in each animal A as $LFC_{A}= Experiment_{A}+V_{A}+LogDose_{A}$ where experiment was a factor on four levels for the mice and two levels for the hamsters. VA is an indicator variable for whether the animal A received the attenuated-vaccine or a control injection. These terms were included in all models. The LogDose term was only included in the analysis of the dose–response relationship in mice and is the logarithm of the dose (0 for control animals, 1, 2, 3, 5, and 7). The indicator variable VA prevents LogDose = 0 for control animals from being treated as a true zero. Our statistic of interest was the t-statistic. For the Hamster and Mouse 107 models we interpreted the VA t-statistics, and for the Mouse All dose–response model we interpreted LogDose t-statistics. We used the Benjamini–Hochberg (BHp) correction (Benjamini and Hochberg, 1995) to control the false discovery rate at 0.05. This analysis was conducted in RStudio software (RStudio).
 
 Prism 8 (GraphPad Software) was employed for all the statistical analysis of in vivo data. Fisher's exact test and analysis of variance (ANOVA) were applied to assess statistical differences between pairs of groups and multiple groups, respectively. A p-value of <0.05 was considered significant. A binomial proportion confidence interval was calculated to determine the efficiency of the vaccine in both hamster and mouse. Protein homologies of L. interrogans serovar Copenhageni strain Fiocruz L1-130 were identified by a BLAST search (http://www.ncbi.nlm.nih.gov/BLAST/). Clusters of orthologs groups (COGs), pSortB localization, transmembrane domains (TMhmm), and signal peptide (SignalP) information were obtained from Genoscope platform (http://www.genoscope.cns.fr/agc/microscope/home/). p-Value for enrichment statistical analysis was calculated using Fisher’s exact test in the R environment (http://www.r-project.org).

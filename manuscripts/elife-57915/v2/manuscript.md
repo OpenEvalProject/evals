@@ -19,13 +19,33 @@
 
 ## Abstract
 
-Conjugative transfer of the integrative and conjugative element ICE clc in Pseudomonas requires development of a transfer competence state in stationary phase, which arises only in 3–5% of individual cells. The mechanisms controlling this bistable switch between non-active and transfer competent cells have long remained enigmatic. Using a variety of genetic tools and epistasis experiments in P. putida , we uncovered an ‘upstream’ cascade of three consecutive transcription factor-nodes, which controls transfer competence initiation. One of the uncovered transcription factors (named BisR) is representative for a new regulator family. Initiation activates a feedback loop, controlled by a second hitherto unrecognized heteromeric transcription factor named BisDC. Stochastic modelling and experimental data demonstrated the feedback loop to act as a scalable converter of unimodal (population-wide or ‘analog’) input to bistable (subpopulation-specific or ‘digital’) output. The feedback loop further enables prolonged production of BisDC, which ensures expression of the ‘downstream’ functions mediating ICE transfer competence in activated cells. Phylogenetic analyses showed that the ICE clc regulatory constellation with BisR and BisDC is widespread among Gamma- and Beta -proteobacteria, including various pathogenic strains, highlighting its evolutionary conservation and prime importance to control the behaviour of this wide family of conjugative elements.
+Conjugative transfer of the integrative and conjugative element ICEclc in Pseudomonas requires development of a transfer competence state in stationary phase, which arises only in 3–5% of individual cells. The mechanisms controlling this bistable switch between non-active and transfer competent cells have long remained enigmatic. Using a variety of genetic tools and epistasis experiments in P. putida, we uncovered an ‘upstream’ cascade of three consecutive transcription factor-nodes, which controls transfer competence initiation. One of the uncovered transcription factors (named BisR) is representative for a new regulator family. Initiation activates a feedback loop, controlled by a second hitherto unrecognized heteromeric transcription factor named BisDC. Stochastic modelling and experimental data demonstrated the feedback loop to act as a scalable converter of unimodal (population-wide or ‘analog’) input to bistable (subpopulation-specific or ‘digital’) output. The feedback loop further enables prolonged production of BisDC, which ensures expression of the ‘downstream’ functions mediating ICE transfer competence in activated cells. Phylogenetic analyses showed that the ICEclc regulatory constellation with BisR and BisDC is widespread among Gamma- and Beta-proteobacteria, including various pathogenic strains, highlighting its evolutionary conservation and prime importance to control the behaviour of this wide family of conjugative elements.
 
 ## Introduction
 
 Biological bistability refers to the existence of two mutually exclusive stable states within a population of genetically identical individuals, leading to two distinct phenotypes or developmental programs (Shu et al., 2011). The basis for bistability lies in a stochastic regulatory decision resulting in cells following one of two possible specific genetic programs that determine their phenotypic differentiation (Norman et al., 2015). Bistability has been considered as a bet-hedging strategy leading to an increased fitness of the genotype by ensuring survival of one of both phenotypes depending on environmental conditions (Veening et al., 2008). A number of bistable differentiation programs is well known in microbiology, notably competence formation and sporulation in Bacillus subtilis (Xi et al., 2013; Schultz et al., 2007), colicin production and persistence in Escherichia coli (Lewis, 2007), virulence development of Acinetobacter baumannii (Chin et al., 2018), or the lysogenic/lytic switch of phage lambda (Sepúlveda et al., 2016; Arkin et al., 1998).
 
 Bistability may also be pervasive among many bacterial DNA conjugative systems, leading to the formation of specific conjugating donor cells at low frequency in the population (Delavat et al., 2017). The best described case of this is the dual lifestyle of the Pseudomonas integrative and conjugative element (ICE) ICEclc (Figure 1A; Minoia et al., 2008). In the majority of cells ICEclc is maintained in the integrated state, but a small proportion of cells (3–5%) in stationary phase activates the ICE transfer competence program (Minoia et al., 2008; Delavat et al., 2016). Upon resuming growth, transfer competent (tc) donor cells excise and replicate the ICE (Delavat et al., 2019), which can conjugate to a recipient cell, where the ICE can integrate (Delavat et al., 2016). ICEclc transfer competence comprises a differentiated stable state, because initiated tc cells do not transform back to the ICE-quiescent state. Although tc cells divide a few times, their division is compromised by the ICE and eventually arrests completely (Takano et al., 2019; Reinhard et al., 2013).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of the genetic organization of ICEclc (GenBank accession number AJ617740.2). Loci of interest (a, b and c) are detailed below the general map and drawn to scale. Note the ~7 kb left-end region, which is the major focus of the study. Genes are represented by coloured arrows with their name below (former names shown in lighter font inside brackets). Promoters are represented by hooked arrows pointing towards the transcription orientation. Those marked with an asterisk are known to be expressed only in the subpopulation of transfer competent cells. attL and attR, attachment sites; clc genes: 3-chlorocatechol degradation, amn genes: 2-aminophenol degradation. (B) Known steps in ICEclc transfer competence regulation. An ‘upstream’ cascade, with MfsR autorepressing its own transcription and that of tciR; TciR overexpression leading to transfer competence in almost all cells (Pradervand et al., 2014). Bistable expression of ‘downstream’ genes from PinR and Pint in the subpopulation of transfer competent cells, and further roles of additional factors RpoS (Miyazaki et al., 2012) and InrR (Minoia et al., 2008).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** An upstream cascade of sequential transcription factors MfsR, TciR and BisR, each acting on a single target promoter.A bistability generator involving a feedback loop by BisDC activating PalpA and potential modulatory repressive role of AlpA. The feedback loop regenerates sufficient BisDC to activate downstream promoters, in conjunction with RpoS and InrR (whose role remains uncharacterized).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Genes are schematically represented by arrows with indicated size (nucleotides, nt). Corresponding protein domains predicted using Phyre2 (prediction confidence within brackets) are shown below the respective genes, with amino acid positions (aa) indicated.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Diagrams show gene organization (coloured arrows, to scale) of the ICEclc left-end regulatory loci (Pseudomonas knackmussii B13, Accession number HG322950.1), and homologs in Pseudomonas aeruginosa Carb01_63 (CP011317.1), Herminiimonas arsenicoxydans (CU207211.1); Acidovorax sp. JS42 (CP000539.1); P. aeruginosa KMU11 (PAGI-16) (KX196167); P. aeruginosa C (PAGI-2) (AF440523.1); Burkholderia cenocepacia ST32 (CP011917.1); Pseudomonas aeruginosa HS9 (CP030861.1); Xanthomonas citri subsp. citri AW13 (CP009031.1); Pseudomonas aeruginosa W60856 (CP008864.2); and Cupriavidus nantongensis X1 (CP014844.1). Genes of unknown function (dark grey) inserted between orfs96323 and 95213 in strains AW13, HS9 (2) and W60856. Numbers below genes indicate the percentage of amino acid identity and coverage to the corresponding one from ICEclc. ni: no identity.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Maximum Likelihood phylogenetic tree of BisDC homologs among Proteobacteria based on amino acid alignment using the Tamura-Nei model. Numbers next to branching points indicate the percentage of trees with clustering as shown among 100 bootstraps. BisDC representatives displayed in Figure 1—figure supplement 2 are highlighted. C. nantogensis X1 sequences were linked from its two separate genes.
 
 ICEs have attracted wide general interest because of the large variety of adaptive functions they can confer to their host, including resistance to multiple antibiotics (Waldor et al., 1996; Johnson and Grossman, 2015; Burrus et al., 2002), or metabolism of xenobiotic compounds, such as encoded by ICEclc (Miyazaki et al., 2015; Zamarro et al., 2016). ICEclc stands model for a ubiquitous family of genomic islands found by bacterial genome sequencing, occurring in important opportunistic pathogens such as Pseudomonas aeruginosa, Bordetella bronchiseptica, Xylella fastidiosa or Xanthomonas campestris (Miyazaki et al., 2015). The ICEclc family of elements is characterized by a consistent ‘core’ region of some 50 kb (Figure 1A), predicted to encode conjugative functions, and a highly diverse set of variable genes with adaptive benefit (Miyazaki et al., 2015). Strong core similarities between ICEclc and the PAGI-2 family of pathogenicity islands in P. aeruginosa clinical isolates have been noted previously (Miyazaki, 2011a; Klockgether et al., 2007).
 
@@ -35,19 +55,19 @@ The primary goal of this work was to dissect the regulatory factors and nodes un
 
 ## Results
 
-## Activation of ICEclc starts with the LysR-type transcription regulator TciR
+### Activation of ICEclc starts with the LysR-type transcription regulator TciR
 
 Previous work had implied an ICEclc-located operon of three consecutive regulatory genes (mfsR, marR and tciR, Figure 1B) in control of transfer competence formation (Pradervand et al., 2014). That work had shown that mfsR codes for an autorepressor, whose deletion yielded unhindered production of the LysR-type activator TciR. As a result, the proportion of tc cells is largely increased in P. putida UWC1 bearing ICEclc-∆mfsR (Delavat et al., 2016; Pradervand et al., 2014). We reproduced this state of affairs here by cloning tciR under control of the IPTG-inducible Ptac promoter on a plasmid (pMEtciR) in P. putida UWC1-ICEclc. In absence of cloned tciR, transfer of wild-type ICEclc from succinate-grown P. putida to an ICEclc-free isogenic P. putida was below detection limit, indicating that spontaneous ICE activation under those conditions is negligible (Figure 2A). In contrast, inducing tciR expression by IPTG addition triggered ICEclc transfer from succinate-grown cells up to frequencies close to those observed under wild-type growth conditions with 3-CBA (Miyazaki and van der Meer, 2011b) (10–2 transconjugant colony-forming units (CFU) per donor CFU, Figure 2A). Transfer frequencies were lower in the absence of IPTG, which indicated that leaky expression of tciR from Ptac was sufficient to trigger ICEclc transfer (Figure 2A). These results confirmed the implication of TciR and thus we set out to identify its potential activation targets on ICEclc.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig2-v2.jpg)
 
-**Figure 2.:** (A) Ectopic overexpression of tciR induces ICEclc wild-type conjugative transfer under non-permissive conditions. Bars show the means (+ one standard deviation) of transconjugant formation after 48 hr in triplicate matings using P. putida UWC1 donors carrying the indicated ICEclc or plasmids, in absence (-) or presence (+) of 0.1 mM IPTG, and with a GmR-derivative of P. putida as recipient. Dots represent individual transfer; nd: not detected (<10−7 for the three replicates). p-value derives from one-sided t-test comparison (n = 3). (B) Reporter expression from single copy chromomosomal P, bisRP, inRP, or intP transcriptional alpAegfp fusions in P. putida UWC1 without ICEclc as a function of ectopically expressed TciR, in comparison to strains carrying the empty vector pME6032. Bars show means of the 75th percentile fluorescence of 500–1000 individual cells each per triplicate culture grown on succinate, induced with 0.05 mM IPTG. Error bars denote standard deviation from the means from biological triplicates (dots show individual 75th percentiles). AU, arbitrary units of brightness at 500 ms exposure. p-values derive from pair-wise comparisons in t-tests between cultures expressing TciR and not. (C) Proportion of cells expressing eCherry from a single-copy chromosomal insertion of P in intP. putida with ICEclc in presence of induced TciR (pMEtciR, 0.05 mM IPTG) or with empty vector (pME6032). Fluorescence images scaled to same brightness (300–2000). Diagrams show quantile-quantile plots of individual cell fluorescence levels, with n denoting the number of analysed cells and the shaded part indicating the subpopulation size expressing P (int-echerry.D) Fluorescence images of P. putida without ICEclc with a single-copy chromosomal P fusion in presence of empty vector or of induced TciR. Images scaled to same brightness (300–1200).bisR-egfpFigure 2—source data 1.Figure 2 panel A: ICEclc transfer data.Figure 2—source data 2.Figure 2 panel B: 75th percentile fluorescence data.Figure 2—source data 3.Figure 2 panel C: qq-plot single cell fluorescence data.
+**Figure 2.:** (A) Ectopic overexpression of tciR induces ICEclc wild-type conjugative transfer under non-permissive conditions. Bars show the means (+ one standard deviation) of transconjugant formation after 48 hr in triplicate matings using P. putida UWC1 donors carrying the indicated ICEclc or plasmids, in absence (-) or presence (+) of 0.1 mM IPTG, and with a GmR-derivative of P. putida as recipient. Dots represent individual transfer; nd: not detected (<10−7 for the three replicates). p-value derives from one-sided t-test comparison (n = 3). (B) Reporter expression from single copy chromomosomal PbisR, PinR, Pint, or PalpA transcriptional egfp fusions in P. putida UWC1 without ICEclc as a function of ectopically expressed TciR, in comparison to strains carrying the empty vector pME6032. Bars show means of the 75th percentile fluorescence of 500–1000 individual cells each per triplicate culture grown on succinate, induced with 0.05 mM IPTG. Error bars denote standard deviation from the means from biological triplicates (dots show individual 75th percentiles). AU, arbitrary units of brightness at 500 ms exposure. p-values derive from pair-wise comparisons in t-tests between cultures expressing TciR and not. (C) Proportion of cells expressing eCherry from a single-copy chromosomal insertion of Pint in P. putida with ICEclc in presence of induced TciR (pMEtciR, 0.05 mM IPTG) or with empty vector (pME6032). Fluorescence images scaled to same brightness (300–2000). Diagrams show quantile-quantile plots of individual cell fluorescence levels, with n denoting the number of analysed cells and the shaded part indicating the subpopulation size expressing Pint-echerry. (D) Fluorescence images of P. putida without ICEclc with a single-copy chromosomal PbisR-egfp fusion in presence of empty vector or of induced TciR. Images scaled to same brightness (300–1200).
 
 Induction of tciR from pMEtciR in P. putida without ICEclc was insufficient to trigger eGFP production from a single-copy Pint promoter, which is a hallmark of induction of ICEclc transfer competence (Figure 2B; Minoia et al., 2008; Delavat et al., 2016). In contrast, in presence of ICEclc, similar induction of tciR yielded a clear increased subpopulation of activated cells (Figure 2C). This suggested, therefore, that TciR does not directly activate Pint, but only through one or more other ICE-located factors. To search for such potential factors, we examined in more detail the genes in a 7 kb region at the left end of ICEclc (close to the attL site, Figure 1A), where transposon mutations had previously been shown to influence Pint expression (Sentchilo et al., 2003). In addition, three promoters had been characterized in this region (Figure 1A; Gaillard et al., 2010), which we tested individually for potential activation by TciR (Figure 2B).
 
 Promoters were fused with a promoterless egfp gene and inserted in single copy into the chromosome of P. putida UWC1 without ICEclc (Materials and methods). Induction of tciR from Ptac on pMEtciR did not yield any eGFP fluorescence in P. putida UWC1 containing a single-copy PalpA- or PinR-egfp transcriptional fusion (Figure 2B). In contrast, the PbisR-egfp fusion was activated upon induction of TciR compared to a vector-only control (p=0.0042, paired t-test, Figure 2B & D). This suggested that the link between TciR and ICEclc transfer competence proceeds through transcription activation of the promoter upstream of the gene bisR (previously designated orf101284). This transcript has previously been mapped and covers a single gene (Gaillard et al., 2010). We renamed this gene as bisR, or bistability regulator, for its presumed implication in ICEclc bistability control (Figure 1—figure supplement 1, see further below).
 
-## BisR is the second step in the cascade of ICEclc transfer competence initiation
+### BisR is the second step in the cascade of ICEclc transfer competence initiation
 
 bisR is predicted to encode a 251-aa protein of unknown function with no detectable Pfam-domains. Further structural analysis using Phyre2 (Kelley et al., 2015) suggested three putative domains with low confidence (between 38% and 53%, Figure 1—figure supplement 2). One of these is a predicted DNA-binding domain, which hinted at the possible function of BisR as a transcriptional regulator itself. BlastP analysis showed that BisR homologs are widely distributed and well conserved among Beta-, Alpha- and Gammaproteobacteria, with homologies ranging from 43–100% amino acid identity over the (quasi) full sequence length (Figure 1—figure supplement 2).
 
@@ -55,27 +75,39 @@ In order to investigate its potential regulatory function, bisR was cloned on a 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig3-v2.jpg)
 
-**Figure 3.:** P activation.alpA(A) Ectopic overexpression of bisR induces ICEclc conjugative transfer under non-permissive conditions and from ICEclc deleted of key regulatory genes. For explanation of bar diagram meaning, see Figure 2A legend. BisR (+), plasmid with bisR; TciR, pMEtciR; –, empty vector pME6032. nd: not detected (<10−7 for the three replicates). Letters indicate significance groups in ANOVA followed by post-hoc Tukey testing (e.g., a-b: p-values between groups a and b; b-c: p-values between groups b and c). (B) Absence of direct induction by BisR of P or intP fluorescence reporters in inRP. putida without ICE. For explanation of bars, see Figure 2B legend. (C) Population-wide expression of P in int-echerryP. putida with ICEclc upon ectopic induction of plasmid-located BisR (pMEbisR, 0.05 mM IPTG). Image brightness scale: 300–2000. For vector control, see Figure 2C. (D) Induced BisR from plasmid leads to reporter expression from the alpA-promoter in all cells of P. putida without ICEclc. Image brightness scales: 300–1200. Bars show means and standard deviation from median fluorescence intensity of single cells (n = 500–1000, summed from 6 to 12 images per replicate) of biological triplicates. p-value derives from pair-wise t-test between cultures with empty vector (–) and those with induced BisR (+).Figure 3—source data 1.Figure 3 panel A: ICEclc transfer frequencies.Figure 3—source data 2.Figure 3 panel C: qq plot single cell fluorescence values.Figure 3—source data 3.Figure 3 panel B and panel D: 75th percentile fluorescence data.
+**Figure 3.:** (A) Ectopic overexpression of bisR induces ICEclc conjugative transfer under non-permissive conditions and from ICEclc deleted of key regulatory genes. For explanation of bar diagram meaning, see Figure 2A legend. BisR (+), plasmid with bisR; TciR, pMEtciR; –, empty vector pME6032. nd: not detected (<10−7 for the three replicates). Letters indicate significance groups in ANOVA followed by post-hoc Tukey testing (e.g., a-b: p-values between groups a and b; b-c: p-values between groups b and c). (B) Absence of direct induction by BisR of Pint or PinR fluorescence reporters in P. putida without ICE. For explanation of bars, see Figure 2B legend. (C) Population-wide expression of Pint-echerry in P. putida with ICEclc upon ectopic induction of plasmid-located BisR (pMEbisR, 0.05 mM IPTG). Image brightness scale: 300–2000. For vector control, see Figure 2C. (D) Induced BisR from plasmid leads to reporter expression from the alpA-promoter in all cells of P. putida without ICEclc. Image brightness scales: 300–1200. Bars show means and standard deviation from median fluorescence intensity of single cells (n = 500–1000, summed from 6 to 12 images per replicate) of biological triplicates. p-value derives from pair-wise t-test between cultures with empty vector (–) and those with induced BisR (+).
 
 IPTG induction of bisR in P. putida without ICE again did not yield activation of the single-copy Pint or PinR transcriptional reporter fusions, whereas some repression was observed on Pint itself (Figure 3B). In contrast, BisR induction in P. putida UWC1 with ICEclc led to a massive activation of the same reporter constructs in virtually all cells (Figure 3C), compared to a vector-only control (Figure 2C, pME6032). This suggested that BisR was an(other) intermediate regulator step in the complete cascade of activation of ICEclc transfer competence. Of the tested ICE–promoters within this 7 kb region, BisR induction triggered very strong expression from a single copy PalpA–egfp transcriptional fusion in all cells (Figure 3D). This indicated that BisR is a transcription activator, and an intermediate regulator between TciR and further factors encoded downstream of the alpA-promoter (Figure 1—figure supplement 1).
 
-## A new regulator BisDC is the last step in the activation cascade
+### A new regulator BisDC is the last step in the activation cascade
 
 Next, we thus focused our attention on the genes downstream of the alpA-promoter. Cloning the genes from alpA all the way to inrR (Figure 1A) on plasmid pME6032 under control of Ptac and inducing that construct with IPTG resulted in activation of PinR–egfp and Pint–echerry expression in P. putida without ICEclc (Figure 4A). Both these promoters had been silent upon activation of TciR or BisR (Figure 2B and Figure 3B). This indicated that one or more regulatory factors directly controlling expression of PinR and/or Pint were encoded in this region, which we tried to identify by subcloning different gene configurations.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig4-v2.jpg)
+
+**Figure 4.:** (A) IPTG (0.05 mM) induction of a plasmid with the cloned ICEclc left-end gene region (as depicted on top) leads to reporter expression from the ‘downstream’ PinR- and Pint-promoters in P. putida without ICEclc. Fluorescence images scaled to same brightness (300–1200). (B) Pint-echerry reporter expression upon IPTG induction (0.05 mM) of different plasmid-subcloned left-end region fragments (grey shaded area on the left) in P. putida without ICEclc. Bars show means of median cell fluorescence levels with one standard deviation, from triplicate biological cultures (n = 500–1000 cells, summed from 6 to 12 images per replicate). Asterisks denote significance groups in ANOVA followed by post-hoc Tukey testing. (C) Population response of Pint-echerry induction in P. putida with ICEclc in presence of plasmid constructs expressing bisD, bisC or both (fluorescence images scaled to 300–2000 brightness). Quantile-quantile plots (n = number of cells) below show the estimated size of the responding subpopulation. (D) Effect of bisDC induction from cloned plasmid (0.05 mM IPTG) on conjugative transfer of ICEclc wild-type or mutant derivatives. Transfer assays as in legend to Figure 2A. ND, below detection limit (10–7).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Diagrams show distributions of individual cell fluorescence of P. putida from Pint (eCherry) and PinR (eGFP), complemented with the indicated plasmid constructs (on the right), upon induction with 0.05 mM IPTG. Distributions represented by box plots (black on white, with first quartile, median and second quartile), underlaid with a violin distribution of all data (salmon red). Single asterisks indicate statistically significant differences of median values compared to P. putida carrying the empty vector in pair-wise t-test of biological triplicates (p<0.05), whereas double asterisks indicate statistically significant differences of the measured subpopulations in quantile-quantile plots.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Violin/box plots (as in legend to Figure 4—figure supplement 1) show distributions of log10 individual cell fluorescence from Pint (eCherry) of P. putida with ICEclc–∆bisD or wild-type, complemented with the indicated plasmid constructs (in the middle), upon induction with 0.05 mM IPTG. (B) Corresponding quantile-quantile plots to identify subpopulations of reporter-expressing cells. Single asterisks indicate statistically significant differences of median values compared to P. putida carrying the empty vector in pair-wise t-test of biological triplicates (p<0.05).
 
 Removing alpA from the initial construct had no measurable effect on expression of the fluorescent reporters, but replacing Ptac by the native PalpA promoter abolished all Pint reporter activation (Figure 4B, Figure 4—figure supplement 1). This suggested that PalpA is silent without activation by BisR (see below) and no spontaneous production of regulatory factors occurred. Removing three genes at the 3’ extremity (i.e., orf96323, orf95213 and inrR) reduced Pint–echerry reporter expression, but a fragment with a further deletion into the bisC gene was unable to activate Pint (Figure 4B). Induction of inrR alone did not result in Pint activation (Figure 4B). Deletion of parA and shi at the 5’ end of the fragment still enabled reporter expression from Pint, narrowing the activator factor regions down to two genes, previously named parB and orf97571, but renamed here to bisD and bisC (Figure 4B). Neither bisC or bisD alone, but only the combination of bisDC resulted in reporter expression from Pint in P. putida UWC1 without ICEclc (Figure 4B), and similarly, of PinR (Figure 4—figure supplement 1). In the presence of ICEclc, inducing either bisC or bisD from a plasmid yielded a small proportion of cells expressing the Pint reporters (Figure 4C). This was not the case in a P. putida carrying an ICEclc with a deletion of bisD (Figure 4—figure supplement 2), suggesting there was some sort of feedback mechanism of BisDC on itself (see further below). In contrast, induction of bisDC in combination caused a majority of cells to express fluorescence from Pint in P. putida containing ICEclc (Figure 4C) or ICEclc-∆bisD (Figure 4—figure supplement 2). These results indicated that BisDC acts as an ensemble to activate transcription, and this pointed to bisDC as the last step in the regulatory cascade, since it was the minimum unit sufficient for activation of the Pint–promoter, which is exclusively expressed in the subpopulation of tc cells of wild-type P. putida with ICEclc (Delavat et al., 2016; Figure 1—figure supplement 1).
 
 Induction of bisDC from plasmid pMEbisDC yielded high frequencies of ICEclc transfer from P. putida UWC1 under succinate-growth conditions (Figure 4D). Expression of BisDC also induced transfer of ICEclc-variants deleted for tciR or for bisR (Figure 4D). This confirmed that both tciR and bisR relay activation steps to PbisR and PalpA, respectively, but not to further downstream ICE promoters (Figure 1—figure supplement 1). Moreover, an ICEclc deleted for bisD could not be restored for transfer by overexpression of tciR or bisR, but only by complementation with bisDC (Figure 4D). Interestingly, the frequency of transfer of an ICEclc lacking bisD complemented by expression of bisDC in trans was two orders of magnitude lower than that of similarly complemented wild-type ICEclc, ICEclc with tciR- or bisR-deletion (Figure 4D). This was similar as the reduction in reporter expression observed in P. putida ICEclc-∆bisD complemented with pMEbisDC compared to wild-type ICEclc (Figure 4—figure supplement 2), and suggested the necessity of some ‘reinforcement’ occurring in the wild-type configuration that was lacking in the bisD deletion and could not be restored by in trans induction of plasmid-cloned bisDC.
 
-## BisDC is part of a positive autoregulatory feedback loop
+### BisDC is part of a positive autoregulatory feedback loop
 
 To investigate this potential ‘reinforcement’ in wild-type configuration, we revisited the potential for activation of the alpA promoter. Induction by IPTG of the plasmid-cloned fragment encompassing the gene region parA-shi-bisDC caused strong activation of reporter gene expression from PalpA in P. putida without ICEclc (Figure 5A). The minimal region that still maintained PalpA induction encompassed bisDC, although much lower than with a cloned parA-shi-bisDC fragment (Figure 5A). Interestingly, when the parA-shi-bisDC fragment was extended by alpA itself, reporter expression from PalpA was abolished, whereas also a fragment containing only alpA caused significant repression of the alpA promoter (Figure 5A). The alpA gene is predicted to encode a 70-amino acid DNA binding protein with homology to phage regulators (Trempy et al., 1994; Figure 1—figure supplement 2). These results would imply feedback control on activation of PalpA, since its previously mapped transcript covers the complete region from alpA to orf96323 on ICEclc, including bisDC (Figure 1A; Gaillard et al., 2010). Although induction of BisDC was sufficient for activation of transcription from PalpA, this effectively only yielded a small subpopulation of cells with high reporter fluorescence values (Figure 5B & C), in contrast to induction of the larger cloned gene region encompassing parA-shi-bisDC that activated all cells (Figure 5B & C). The feedback loop, therefore, seemed to consist of a positive forward part that includes BisDC (reinforced by an as yet unknown other mechanism) and a modulatory repressive branch including AlpA (Figure 1—figure supplement 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig5-v2.jpg)
 
-**Figure 5.:** alpA promoter.(A) Preporter expression upon IPTG induction (0.05 mM) of plasmid-cloned individual genes or gene combinations (as depicted in the shaded area on the left) in alpA-P. putida without ICEclc. Bars represent means of median cell fluorescence plus one standard deviation, as in legend to Figure 2B. p-values stem from pair-wise comparisons between triplicate cultures carrying the empty vector pME6032 and the indicated plasmid-cloned gene(s). (B) Cell images of P. putida P without ICEalpA-egfpclc expressing plasmid-cloned combinations with bisDC (fluorescence brightness scaled to 300–1200, 0.05 mM IPTG). (C) Quantile-quantile estimation of subpopulation expression of the P reporter, showing the sufficiency of alpA-egfpbisDC induction for autoregulatory feedback and the reinforcement from upstream elements (n denotes the number of cells used for the quantile-quantile plot, summed from 6 to 12 images of a single replicate culture).Figure 5—source data 1.Figure 5 panel A: Median fluorescence values.Figure 5—source data 2.Figure 5 panel C : qq plot single cell fluorescence values.
+**Figure 5.:** (A) PalpA-reporter expression upon IPTG induction (0.05 mM) of plasmid-cloned individual genes or gene combinations (as depicted in the shaded area on the left) in P. putida without ICEclc. Bars represent means of median cell fluorescence plus one standard deviation, as in legend to Figure 2B. p-values stem from pair-wise comparisons between triplicate cultures carrying the empty vector pME6032 and the indicated plasmid-cloned gene(s). (B) Cell images of P. putida PalpA-egfp without ICEclc expressing plasmid-cloned combinations with bisDC (fluorescence brightness scaled to 300–1200, 0.05 mM IPTG). (C) Quantile-quantile estimation of subpopulation expression of the PalpA-egfp reporter, showing the sufficiency of bisDC induction for autoregulatory feedback and the reinforcement from upstream elements (n denotes the number of cells used for the quantile-quantile plot, summed from 6 to 12 images of a single replicate culture).
 
-## Modelling suggests positive feedback loop to generate and maintain ICEclc bistable output
+### Modelling suggests positive feedback loop to generate and maintain ICEclc bistable output
 
 The results so far thus indicated that ICEclc transfer competence is initiated by TciR activating transcription of the promoter upstream of bisR. BisR then kickstarts expression from the alpA-promoter, leading to (among others) expression of BisDC. This is sufficient to induce the ‘downstream’ ICEclc transfer competence pathway (Figure 1—figure supplement 1), exemplified here by activation of the Pint and PinR promoters that become exclusively expressed in the subpopulation of transfer competent cells under wild-type conditions (Minoia et al., 2008). In addition, BisDC reinforces transcription from the same alpA-promoter.
 
@@ -83,7 +115,7 @@ In order to understand the importance of this regulatory architecture for genera
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig6-v2.jpg)
 
-**Figure 6.:** clc regulatory network configurations.(A) Conceptual model of the ICEclc regulatory cascade producing bistable output. Ellipses indicate the three major regulatory factors (TciR, BisR and BisDC) interacting with their target promoters (P, bisRP), and BisDC-regulated downstream output (here schematically as alpAP and a latelate gene). Relevant simulated processes include: production (combination of transcription and translation, with corresponding rates: C5, A3), oligomerization (assumed number of protein monomers in the binding complex), binding and unbinding to the target promoter, and degradation. All processes are simulated as stochastic events across 100 time steps, and protein output levels are summarized from 10,000 individual stochastic simulations (curly bracket in B; detailed parametrization in Supplementary file 4; one simulation being equivalent to an individual cell). (B) Behaviour of a BisDC autoregulatory feedback loop on the distribution of BisDC protein levels per cell (histograms, n = 10,000 simulated cells) as a function of different binding (A1), unbinding (A2), production (A3) and degradation (A4) rate constants, starting from a uniformly distributed set of BisDC levels (input, in green). Black bar indicates the proportion of cells with zero output (i.e., non-activated circuit). Light blue: simulation example where BisDC levels go to zero and loop would die out. Dark blue: BisDC levels remain positive. (C) As for A, but for an architecture of BisR initiating bisDC expression, with different input distributions (uniformly low to high mean, or bimodal BisR input). Note how higher or bimodal BisR input is not expected to change the median BisDC quantity in active cells, but only the proportion of ‘cells’ with positive (magenta, bars) and zero state (black bars; n = 10,000 simulated cells; note different ordinate scales). (D) As for A, but for the complete cascade starting with TciR. Shown are regulatory factor level distributions from two different TciR starting distributions across 10,000 simulations; for BisR integrated between time points 10 and 20 (t10-20), and for BisDC after 100 time steps (t100). Bimodal expression of zero and positive states arises at the bisR node, but is further maintained to constant BisDC output as a result of the feedback loop. (E) Importance of the BisDC-feedback on the output of a downstream (‘late’) BisDC-dependent expressed protein, for a case of a stable and an unstable protein (n = 10,000 simulated cells).Figure 6—source data 1.Figure 6 panels B–E: Model simulations and histogram data.
+**Figure 6.:** (A) Conceptual model of the ICEclc regulatory cascade producing bistable output. Ellipses indicate the three major regulatory factors (TciR, BisR and BisDC) interacting with their target promoters (PbisR, PalpA), and BisDC-regulated downstream output (here schematically as Plate and a late gene). Relevant simulated processes include: production (combination of transcription and translation, with corresponding rates: C5, A3), oligomerization (assumed number of protein monomers in the binding complex), binding and unbinding to the target promoter, and degradation. All processes are simulated as stochastic events across 100 time steps, and protein output levels are summarized from 10,000 individual stochastic simulations (curly bracket in B; detailed parametrization in Supplementary file 4; one simulation being equivalent to an individual cell). (B) Behaviour of a BisDC autoregulatory feedback loop on the distribution of BisDC protein levels per cell (histograms, n = 10,000 simulated cells) as a function of different binding (A1), unbinding (A2), production (A3) and degradation (A4) rate constants, starting from a uniformly distributed set of BisDC levels (input, in green). Black bar indicates the proportion of cells with zero output (i.e., non-activated circuit). Light blue: simulation example where BisDC levels go to zero and loop would die out. Dark blue: BisDC levels remain positive. (C) As for A, but for an architecture of BisR initiating bisDC expression, with different input distributions (uniformly low to high mean, or bimodal BisR input). Note how higher or bimodal BisR input is not expected to change the median BisDC quantity in active cells, but only the proportion of ‘cells’ with positive (magenta, bars) and zero state (black bars; n = 10,000 simulated cells; note different ordinate scales). (D) As for A, but for the complete cascade starting with TciR. Shown are regulatory factor level distributions from two different TciR starting distributions across 10,000 simulations; for BisR integrated between time points 10 and 20 (t10-20), and for BisDC after 100 time steps (t100). Bimodal expression of zero and positive states arises at the bisR node, but is further maintained to constant BisDC output as a result of the feedback loop. (E) Importance of the BisDC-feedback on the output of a downstream (‘late’) BisDC-dependent expressed protein, for a case of a stable and an unstable protein (n = 10,000 simulated cells).
 
 First we simulated the cellular output of BisDC in a subnetwork configuration with only BisDC activating PalpA (i.e., in absence of TciR or BisR, Figure 6B). Stochastic simulations (n = 10,000) of this bare feedback loop with an arbitrary start of binomially distributed BisDC quantities (mean = 8 molecules per cell, Figure 6B, INPUT), yielded a bimodal population with two BisDC output states after 100 time steps, one of which is zero (black bar in histograms) and the other with a mean positive BisDC value (magenta) (Figure 6B). The output zero results when BisDC levels stochastically fall to 0 (as in case of the light blue line in the panel STOCHASTIC of Figure 6B), since in that case there is no BisDC to stimulate its own production. Parameter variation showed that the proportion of cells with output zero from the loop is dependent on the binding and unbinding constants of BisDC to the alpA promoter, and the BisDC degradation rate (Figure 6B, different A1, A2 and A4-values). In addition, BisDC unbinding and degradation rates can influence the median BisDC output quantity in cells with positive state (Figure 6B, case of A2 = 5 or A4 = 0.3). This simulation thus indicated that a BisDC feedback loop can produce bimodal output, once BisDC is present.
 
@@ -91,11 +123,19 @@ Since the feedback loop cannot start without BisDC, it is imperative to kickstar
 
 In the full regulatory hierarchy of the ICE, production of BisR is controlled by TciR. Simulation of this configuration showed that bimodality already appeared at the level of BisR (Figure 6D). The proportions of zero and positive states of both BisR and BisDC varied depending on the mean of uniformly distributed amounts of TciR among all cells, again sampled to within regular empiric transcription regulator quantities in individual cells (Li et al., 2014; Figure 6D). Bimodal BisDC levels are propagated by the network architecture to downstream (‘late’) promoters, as a consequence of them being under BisDC control (Figure 6A & E). Importantly, simulations of an architecture without the BisDC feedback loop consistently resulted in lower protein output from BisDC–regulated promoters in activated cells than with feedback (Figure 6E). This suggests two crucial functions for the ICE regulatory network: first, to convert unimodal or stochastic (‘analog’) expression of TciR and BisR among all cells to a consistent subpopulation of cells with positive (‘digital’) BisDC state, and secondly, to ensure sufficient BisDC levels to activate downstream promoters within the positive cell population (Figure 6E). Through the kickstart by BisR and reinforcement by BisDC itself, bimodal expression at the alpA-promoter node can thus yield a stably expressed transfer competence pathway in a subpopulation of cells.
 
-## ICEclc regulatory architecture exemplifies a faithful analog-to-digital converter
+### ICEclc regulatory architecture exemplifies a faithful analog-to-digital converter
 
 Simulations thus predicted that the ICE regulatory network faithfully transmits and stabilizes analog input (e.g., a single regulatory factor uniformly or stochastically expressed at moderately low levels in all cells [Li et al., 2014]) to bistable output (e.g., a subset of cells with transfer competence and the remainder silent). To demonstrate this experimentally, we engineered a P. putida without ICEclc, but with a single copy chromosomally inserted IPTG-inducible bisR, a plasmid with alpA-parA-shi-bisDC under control of PalpA, and a single-copy dual Pint-echerry and PinR-egfp reporter (Figure 7A). Induction from Ptac by IPTG addition yields unimodal (analog) production of BisR, the mean level of which can be controlled by the IPTG concentration (Figure 7—figure supplement 1). In the presence of all components of the system, IPTG induction of BisR led to bistable activation of both reporters (Figure 7B, ABC). Increasing BisR induction was converted by the feedback loop into an increased proportion of fluorescent cells (Figure 7C). This effectively created a scalable bimodal (digital) output from unimodal input, dependent on the used IPTG concentration (Figure 7C, Figure 7—figure supplement 1). The proportion of fluorescent cells was in line with predictions from stochastic simulations as a function of the relative strength of Ptac activation (Figure 7D). Furthermore, in agreement with model predictions (Figure 6C), the median fluorescence of activated cells remained the same at different IPTG (and thus BisR) concentrations (Figure 7E). These results confirmed that the feedback loop architecture transforms a unimodal (analog) regulatory factor concentration (BisR) into a stabilized bimodal (digital) output.
 
-## BisDC-elements are widespread in other presumed ICEs
+![Figure 7.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic representation of the three ICEclc components used to generate scalable bistable output in P. putida UWC1 without ICE. (B) Cell images of P. putida with the different bistability-generator components as indicated, induced in presence or absence of IPTG (0.1 mM). Fluorescence brightness scaled to between 300–1200. (C) Proportion of active cells (estimated from quantile-quantile plotting as in Figure 2C) as a function of IPTG concentration (same induction time for all). Lines correspond to the means from three biological replicates with transparent areas representing the standard deviation. (D) Modelled proportion of cells with positive output in the architecture of Figure 6C as a function of the relative BisR starting levels from Ptac. (E) Measured distributions (as normalized probability density) of eCherry fluorescence among the subpopulations of activated (magenta bars) and non-activated cells (black bars) at different IPTG concentrations, showing same subpopulation fluorescence median (dotted grey lines), as predicted in the stochastic model. AU, arbitrary units of fluorescence brightness at 500 ms exposure. n denotes the number of cells used to produce the histograms, summed from 6 to 12 images from a single replicate culture. Panels autoscaled to maximum ordinate.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/57915/elife-57915-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Unimodal eCherry expression among individual P. putida cells from a single copy Ptac-echerry chromosomal insertion, as a function of increasing IPTG concentration. (B) Bimodal eCherry fluorescence from Pint among individual P. putida cells expressing BisR from Ptac at different IPTG concentrations and carrying the plasmid cloned PalpA-inrR gene region (bistability generator). Shown are quantile-quantile plots of the observed versus expected distribution of fluorescence levels (n = number of observed cells summed from 10 to 12 technical replicates).
+
+### BisDC-elements are widespread in other presumed ICEs
 
 Pfam analysis detected a DUF2857-domain in the BisC protein, and further structural analysis using Phyre2 indicated significant similarities of BisC to FlhC (Figure 1—figure supplement 2). FlhC is a subunit of the master flagellar activator FlhDC of E. coli and Salmonella (Claret and Hughes, 2000; Liu and Matsumura, 1994). BisD carries a ParB domain, with a predicted DNA binding domain in the C-terminal portion of the protein (Figure 1—figure supplement 2). Although no FlhD domain was detected in BisD, in analogy to FhlDC we named the ICEclc activator complex BisDC, for bistability regulator subunits D and C.
 
@@ -125,40 +165,474 @@ Phylogenetic analyses showed the different ICEclc regulatory loci (i.e., bisR-al
 
 ## Materials and methods
 
-## Strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Pseudomonas knackmussii ICEclc)</td>
+      <td>ICEclc</td>
+      <td>PMID:16484212</td>
+      <td>GenBank: AJ617740.2</td>
+      <td>Full ICEclc sequence</td>
+    </tr>
+    <tr>
+      <td>Gene (Pseudomonas knackmussii ICEclc)</td>
+      <td>tciR</td>
+      <td>PMID:24945944</td>
+      <td>GenBank: CAE92867.2</td>
+      <td>Transcriptional regulator of ICEclc</td>
+    </tr>
+    <tr>
+      <td>Gene (Pseudomonas knackmussii ICEclc)</td>
+      <td>bisR; orf101284</td>
+      <td>this paper</td>
+      <td>GenBank: CAE92957.1</td>
+      <td>Transcriptional regulator of ICEclc</td>
+    </tr>
+    <tr>
+      <td>Gene (Pseudomonas knackmussii ICEclc)</td>
+      <td>bisD; parB; orf98147</td>
+      <td>this paper</td>
+      <td>GenBank: CAE92953.1</td>
+      <td>Subunit D of the transcriptional regulator complex BisCD of ICEclc</td>
+    </tr>
+    <tr>
+      <td>Gene (Pseudomonas knackmussii ICEclc)</td>
+      <td>bisC; orf97571</td>
+      <td>this paper</td>
+      <td>GenBank: CAE92952.1</td>
+      <td>Subunit C of the transcriptional regulator complex BisCD of ICEclc</td>
+    </tr>
+    <tr>
+      <td>Gene (plasmid pZS2FUNR)</td>
+      <td>echerry</td>
+      <td>PMID:19098098</td>
+      <td></td>
+      <td>Red fluorescent protein gene used for the miniTn7:Ptac-echerry reporter</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas putida)</td>
+      <td>UWC1</td>
+      <td>PMID:2604401</td>
+      <td>NCBI: txid1407054</td>
+      <td>Background strain for ICEclc transfer and mutagenesis experiments</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas putida)</td>
+      <td>2737</td>
+      <td>PMID:21255116</td>
+      <td></td>
+      <td>UWC1 carrying ICEclc in tRNAGly</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas putida)</td>
+      <td>UWCGC</td>
+      <td>PMID:21255116</td>
+      <td></td>
+      <td>Recipient strain used for conjugation transfer experiments</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5αλpir</td>
+      <td>PMID:10610816</td>
+      <td></td>
+      <td>Cloning strain</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pME6032; pME (plasmid)</td>
+      <td>PMID:11807065</td>
+      <td>GenBank: DQ645594.1</td>
+      <td>Broad-host range cloning vector, lacIq-Ptac expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>miniTn5 (plasmid; transposon)</td>
+      <td>PMID:21342504 (RRID:Addgene_60487)</td>
+      <td>GenBank: HQ908071.1</td>
+      <td>Transposon suicide vector for gene reporter constructs</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>miniTn7 (plasmid; transposon)</td>
+      <td>PMID:15908923 (RRID:Addgene_63121)</td>
+      <td>GenBank: AY619004.1</td>
+      <td>Transposon suicide vector for single copy insertions</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>miniTn7:Ptac (plasmid; transposon)</td>
+      <td>PMID:15908923</td>
+      <td>GenBank: AY599234.1</td>
+      <td>Transposon vector used for miniTn7:Ptac-echerry reporter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>miniTn5:PinR-egfp/Pint-echerry</td>
+      <td>PMID:19098098</td>
+      <td></td>
+      <td>Dual single copy insertion reporter system for ICEclc bistable activity</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA fragment containingPalpA, alpA, parA, shi and the 5’ part of bisD</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>Synthetic DNA fragment</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nucleospin Plasmid Kit</td>
+      <td>Macherey-Nagel</td>
+      <td>Macherey-Nagel: 740588.50</td>
+      <td>Plasmid purification</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nucleospin Gel and PCR Clean-up Kit</td>
+      <td>Macherey-Nagel</td>
+      <td>Macherey-Nagel: 740609.50</td>
+      <td>PCR fragment purification</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick-Fusion Cloning Kit</td>
+      <td>Bimake</td>
+      <td>Bimake: B22611</td>
+      <td>Generation of recombinant vectors</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IPTG; isopropyl β-D-1-thiogalactopyranoside</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: I5502</td>
+      <td>Used for induction of Ptac promoter</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-CBA; 3-chlorobenzoate (3-chlorobenzoic acid)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: C24604</td>
+      <td>Specific carbon source for selection of ICEclc in Pseudomonas</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium succinate; succinate (Sodium succinate dibasic hexahydrate)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:14170</td>
+      <td>General carbon source for growth of Pseudomonas</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEGA7</td>
+      <td>PMID:27004904</td>
+      <td></td>
+      <td>Phylogenetic analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Visiview</td>
+      <td>Visitron systems GMbH</td>
+      <td>https://www.visitron.de/products/visiviewr-software.html</td>
+      <td>Microscopy images acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>PMID:22930834</td>
+      <td></td>
+      <td>Image processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MatLab (v 2016a)</td>
+      <td>Mathworks</td>
+      <td></td>
+      <td>Data treatment</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R ggplot</td>
+      <td>Hadley Wickham</td>
+      <td>https://ggplot2.tidyverse.org/</td>
+      <td>Data visualization</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Julia; DifferentialEquations.jl package</td>
+      <td>DOI:http://doi.org/10.5334/jors.151</td>
+      <td></td>
+      <td>Mathematical model</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Minimum media; MM (culture media)</td>
+      <td>PMCID:PMC494262</td>
+      <td>Supplementary file 2</td>
+      <td>Carbon source-free base for minimal media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bio-Rad GenePulser Xcell</td>
+      <td>Biorad</td>
+      <td>Biorad: 165–2660</td>
+      <td>Device used for electro-transformation of bacterial strains</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Zeiss Axioplan II microscope (Carl Zeiss); EC ‘Plan-Neofluar’ 100x/1.3 Oil Pol Ph3 M27 objective lens (Carl Zeiss); SOLA SE light engine (Lumencor); SPOT Xplorer slow-can charge coupled device camera 1.4 Megapixels monochrome w/o IR (Diagnostic Instruments)</td>
+      <td>Carl Zeiss; Lumencor; Diagnostic instruments</td>
+      <td>Carl Zeiss: Axioplan II;Carl Zeiss: 420491-9910-000; Lumencor: SOLA 6-LCR-SC; Diagnostic instrument: XP2400</td>
+      <td>Microscope for single cell phase contrast and epifluorescence imaging</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>0.2–μm cellulose acetate filters</td>
+      <td>Sartorius</td>
+      <td>Sartorius:11107–25 N</td>
+      <td>filters for conjugative transfer</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and growth conditions
 
 Bacterial strains and plasmid constructions used in this study are shortly described in Table 1 and with more detail in Supplementary file 1. Strains were routinely grown in Luria broth (10 g l–1 Tryptone, 10 g l–1 NaCl and 5 g l–1 Yeast extract, LB Miller, Sigma Aldrich) at 30°C for P. putida and 37°C for E. coli in an orbital shaker incubator, and were preserved at –80°C in LB broth containing 15% (v/v) glycerol. Reporter assays and transfer experiments were carried out with cells grown in type 21C minimal media (MM, Supplementary file 2; Gerhardt, 1981) supplemented with 10 mM sodium succinate or 5 mM 3-chlorobenzoate (3-CBA). Antibiotics were used at the following concentrations: ampicillin (Ap), 100 µg ml–1 for E. coli and 500 µg ml–1 for P. putida; gentamicin (Gm), 10 µg ml–1 for E. coli, 20 µg ml–1 for P. putida; kanamycin (Kn), 50 µg ml–1; tetracycline (Tc), 12 µg ml–1 for E. coli, 100 µg ml–1 or 12.5 µg ml–1 for P. putida grown in LB or MM, respectively. Genes were induced from Ptac by supplementing cultures with 0.05 mM isopropyl β-D-1-thiogalactopyranoside (IPTG; or else at the indicated concentrations).
 
-## Molecular biology methods
+**Table 1.**
+ Strains and plasmids used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strains or plasmids</th>
+      <th>Relevant genotype or phenotype</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E. coli</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DH5αλpir</td>
+      <td>endA1 hsdR17 glnV44 (=supE44) thi-1 recA1 gyrA96 relA1 φ80dlacΔ(lacZ)M15 Δ(lacZYA-argF)U169 zdg-232::Tn10 uidA::pir+</td>
+      <td>Platt et al., 2000</td>
+    </tr>
+    <tr>
+      <td>P. putida UWC1</td>
+      <td>plasmid-free derivative ofP. putida KT2440 (Rif)</td>
+      <td>McClure et al., 1989</td>
+    </tr>
+    <tr>
+      <td>UWCGC</td>
+      <td>Single copy integration of lacI-less Ptac promoter controlling echerry expression (Gm)</td>
+      <td>Miyazaki and van der Meer, 2011b</td>
+    </tr>
+    <tr>
+      <td>ICEclc</td>
+      <td>ICEclc copy integrated into tRNAgly-5 (3-CBA)</td>
+      <td>Miyazaki and van der Meer, 2011b</td>
+    </tr>
+    <tr>
+      <td>ICEclc ∆tciR</td>
+      <td>tciR (orf17162) derivative mutant of ICEclc (3-CBA)</td>
+      <td>Pradervand et al., 2014</td>
+    </tr>
+    <tr>
+      <td>ICEclc ∆bisR</td>
+      <td>bisR (orf101284) derivative mutant of ICEclc (3-CBA)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>ICEclc ∆bisD</td>
+      <td>bisD (orf98147) derivative mutant of ICEclc (3-CBA)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>miniTn7::PinR-egfp</td>
+      <td>Single copy chromosomal integration of PinR promoter fused to egfp (Gm)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>miniTn7::PalpA-egfp</td>
+      <td>Single copy chromosomal integration of PalpA promoter fused to egfp (Gm)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>miniTn5:: PbisR-egfp</td>
+      <td>Single copy chromosomal integration of PbisR promoter fused to egfp (Kn)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>miniTn5:: Pint-echerry/PinR egfp (C)</td>
+      <td>Single copy chromosomal integration of a dual reporter Pint and PinR promoter fused to echerry and egfp, respectively (Kn)</td>
+      <td>Minoia et al., 2008</td>
+    </tr>
+    <tr>
+      <td>miniTn7::Ptac-bisR (A)</td>
+      <td>Single copy chromosomal integration of Ptac promoter fused to bisR (Gm)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>miniTn7::Ptac-echerry</td>
+      <td>Single copy chromosomal integration of Ptac promoter fused to echerry (Gm)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>Plasmids</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pME6032</td>
+      <td>pVS1-p15A shuttle vector carrying the lacIq-Ptac expression system (Tc)</td>
+      <td>Heeb et al., 2000</td>
+    </tr>
+    <tr>
+      <td>pMEtciR</td>
+      <td>pME6032 derivative allowing IPTG-controlled expression of tciR (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEbisR</td>
+      <td>pME6032 derivative allowing IPTG-controlled expression of bisR (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEbisC</td>
+      <td>pME6032 derivative allowing IPTG-controlled expression of bisC (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEbisD</td>
+      <td>pME6032 derivative allowing IPTG-controlled expression of bisD (Tc)</td>
+      <td>Reinhard et al., 2013</td>
+    </tr>
+    <tr>
+      <td>pMEbisDC</td>
+      <td>pME6032 derivative allowing IPTG-controlled expression of bisCD (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEparA</td>
+      <td>pME6032 derivative allowing IPTG-controlled expression of parA (Tc)</td>
+      <td>Reinhard et al., 2013</td>
+    </tr>
+    <tr>
+      <td>pMEparA-shi-bisD</td>
+      <td>pME6032 derivative allowing IPTG-controlled expression ofparA, shi and bisD (Tc)</td>
+      <td>Reinhard et al., 2013</td>
+    </tr>
+    <tr>
+      <td>pMEbisC96</td>
+      <td>pME6032 derivative allowing IPTG-controlled expression of bisC and 96323 (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEalpA</td>
+      <td>pME6032 derivative allowing IPTG-controlled expression of alpA (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEinrR</td>
+      <td>pME6032 derivative allowing IPTG-controlled expression of inrR (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEreg</td>
+      <td>pME6032 derivative allowing IPTG-controlled expression of the alpA-inrR loci (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEreg∆alpA</td>
+      <td>pME6032 derivative allowing IPTG-controlled expression of the parA-inrR loci (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEreg∆alpA∆P</td>
+      <td>pMEreg∆alpA derivative lacking 3’ half of 96323, 95213 and inrR (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEreg∆alpA∆A</td>
+      <td>pMEreg∆alpA derivative lacking the bisC, 96323, 95213 and inrR (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEreg∆P</td>
+      <td>pMEreg derivative lacking 3’ half of 96323, 95213 and inrR (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEreg∆A</td>
+      <td>pMEreg derivative lacking the bisC, 96323, 95213 and inrR (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEbg</td>
+      <td>lacIq-Ptac-less pME6032 derivative carrying the PalpA-inrR loci (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMEbg_short (comp B)</td>
+      <td>pMEbg derivative lacking 96323, 95213 and inrR (Tc)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pUX-BF13</td>
+      <td>helper plasmid for integration of Tn7 (Ap)</td>
+      <td>Heeb et al., 2000</td>
+    </tr>
+  </tbody>
+</table>
+
+_3-chlorobenzoate (3-CBA); Ampicillin (Ap); gentamycin (Gm); kanamycin (Kn); rifampicin (Rf); tetracycline (Tc).(A), (B) and (C) refer to components of the reconstituted bistability generator.For strain numbers, see Supplementary file 1._
+
+### Molecular biology methods
 
 Plasmid DNA was purified using the Nucleospin Plasmid kit (Macherey-Nagel) according to manufacturer’s instructions. All enzymes used in this study were purchased from New England Biolabs. PCR reactions were carried out with primers described in Supplementary file 3. PCR products were purified using Nucleospin Gel and PCR Clean-up kits (Macherey-Nagel) according to manufacturer’s instructions. E. coli and P. putida were transformed by electroporation as described by Dower et al., 1988. in a Bio-Rad GenePulser Xcell apparatus set at 25 µF, 200 V and 2.5 kV for E. coli and 2.2 kV for P. putida using 2 mm gap electroporation cuvettes (Cellprojects). All constructs were verified by DNA sequencing (Eurofins).
 
-## Cloning of regulatory pathway elements
+### Cloning of regulatory pathway elements
 
 Different ICEclc gene configurations were cloned in P. putida with or without ICEclc, and further with different promoter-reporter fusions, using the broad host-range vector pME6032, allowing IPTG-controlled expression from the LacIq-Ptac promoter (Koch et al., 2001; Table 1). Genes tciR, bisR, bisC, bisDC, bisC+96323, alpA and inrR were amplified using primer pairs as specified in Supplementary file 3, with genomic DNA of P. putida UWC1-ICEclc as template. Amplicons were digested by EcoRI and cloned into EcoRI-digested pME6032 using T4 DNA ligase, producing after transformation the plasmids listed in Table 1. The 6.4 kb ICEclc left-end fragment encompassing parA-inrR was recovered from pTCB177 (Sentchilo et al., 2003) and cloned into pME6032 (producing pMEreg∆alpA, Supplementary file 1). An alpA-parA-shi-bisD’ fragment was amplified by PCR (Supplementary file 2) and cloned into pME6032 using EcoRI restriction sites (Supplementary file 1). The resulting plasmid was digested with SalI and the 4.8 kb fragment containing the Ptac promoter, alpA-parA-shi-bisD’ was recovered and used to replace the parA-shi-parB part of pMEreg∆alpA. This generated a cloned fragment encompassing alpA all the way to inrR (pMEreg, Supplementary file 1). Further 3’ deletions removing orf96323-inrR or bisC-inrR were generated by PstI and AfeI digestion and religation (Supplementary file 1). A DNA fragment containing PalpA, alpA, parA, shi and the 5’ part of bisD was synthesized (ThermoFisher Scientific), and ligated by Quick-Fusion cloning (Bimake) into pMEreg∆alpA digested with PmlI and BamHI to remove the part containing lacIq, Ptac, parA, shi and bisD. This plasmid was then digested by PstI to remove orf96323-inrR and religated (Supplementary file 1).
 
 Deletions of bisR or bisD in ICEclc were constructed using the two-step seamless chromosomal gene inactivation technique as described elsewhere (Martínez-García and de Lorenzo, 2011).
 
-## Reporter gene constructs
+### Reporter gene constructs
 
 Activation of key ICEclc promoters was determined in strains with a single-copy chromosomal insertions to promoterless egfp or echerry genes, for most cases delivered by a suicide miniTn7 system at a fixed unique position (Table 1). In other cases, particularly in combination with other single-copy inserted gene fragments, we used miniTn5 random delivery. The promoter regions upstream of bisR or alpA were amplified in the PCR (Supplementary file 3) and cloned into the promoterless egfp reporter miniTn5 delivery plasmid pBAM1 (Martínez-García et al., 2011) or into a pUC18-derived miniTn7 delivery plasmid (Choi et al., 2005). The PinR-egfp insert was recovered from the miniTn5-based reporter system (Minoia et al., 2008) using HindIII and KpnI, and subsequently cloned into pUC18miniTn7 digested by the same enzymes. The dual miniTn5::PinR-egfp/Pint-echerry reporter has been described previously (Minoia et al., 2008). A miniTn7::Ptac-echerry reporter was reconstructed from pZS2FUNR (Minoia et al., 2008) and the general miniTn7:Ptac suicide delivery vector (Choi et al., 2005; Supplementary file 2). All reporter constructs were integrated in single copy into the chromosomal attBTn7 site of P. putida by using pUX-BF13 for miniTn7, or randomly for miniTn5-based constructs (Martínez-García et al., 2011; Koch et al., 2001), in which case three independent clones were recovered, stored and analysed. The intactness of the inserted reporter constructs was verified by PCR amplification and sequencing.
 
-## ICEclc transfer assays
+### ICEclc transfer assays
 
 ICEclc transfer was tested with 24-h-succinate-grown donor and recipient cultures. Cells were harvested by centrifugation of 1 ml (donor) and 2 ml culture (recipient, Gm-resistant P. putida UWCGC) for 3 min at 1200 × g, washed in 1 ml of MM without carbon substrate, centrifuged again and finally resuspended in 20 µl of MM. Donor or recipient alone, and a donor-recipient mixture were deposited on 0.2–µm cellulose acetate filters (Sartorius) placed on MM succinate agar plates, and incubated at 30°C for 48 hr. The cells were recovered from the filters in 1 ml of MM and serially diluted before plating. Donors, recipients and exconjugants were selected on MM agar plates containing appropriate antibiotics and/or carbon source (3-CBA). Transfer frequencies are reported as the mean of the exconjugant colony forming units compared to that of the donor in the same assay.
 
-## Molecular phylogenetic analysis
+### Molecular phylogenetic analysis
 
 BisDC phylogeny was inferred from 148 aligned homolog amino acid sequences by using the Maximum Likelihood method based on the Tamura-Nei model (Tamura and Nei, 1993), eliminating positions with less than 95% site coverage. The final dataset was aligned using MEGA7 (Kumar et al., 2016) and contained a total of 2091 positions. Initial tree(s) for the heuristic search were obtained automatically by applying Neighbour-Joining and BioNJ algorithms to a matrix of pairwise distances estimated using the Maximum Composite Likelihood (MCL) approach, and then selecting the topology with superior log likelihood value.
 
-## Fluorescent reporter assays
+### Fluorescent reporter assays
 
 For quantification of eGFP and eCherry fluorescence in single cells, P. putida strains were cultured overnight at 30°C in LB medium. The overnight culture was diluted 200 fold in 8 ml of MM supplemented with succinate (10 mM) and appropriate antibiotic(s), and grown at 30°C and 180 rpm to stationary phase. 150 µl of culture were then sampled, vortexed for 30 s at max speed, after which drops of 5 µl were deposited on a regular microscope glass slide (VWR) coated with a thin film of 1% agarose in MM. Cells were covered with a 24 × 50 mm cover slip (Menzel-Gläser) and imaged immediately with a Zeiss Axioplan II microscope equipped with an EC Plan-Neofluar 100×/1.3 oil objective lens (Carl Zeiss), and a SOLA SE light engine (Lumencor). A SPOT Xplorer slow-can charge coupled device camera (1.4 Megapixels monochrome w/o IR; Diagnostic Instruments) fixed on the microscope was used to capture images. Up to ten images at different positions were acquired using Visiview software (Visitron systems GMbH), with exposures set to 40 ms (phase contrast, PhC) and 500 ms (eGFP and eCherry). Cells were automatically segmented on image sets using procedures described previously (Delavat et al., 2016), from which their fluorescence (eGFP or eCherry) was quantified. Subpopulations of tc cells were quantified using quantile-quantile-plotting as described previously (Reinhard and van der Meer, 2013). Fluorescent images for display were scaled to the same brightness in ImageJ (Schneider et al., 2012) as indicated, saved as 8-bit gray tiff-files and cropped to the display area in Adobe Photoshop (Adobe, 2020).
 
-## Statistical analysis
+### Statistical analysis
 
 Fluorescent reporter intensities were compared among biological triplicates. In case of mini-Tn5 insertions, this involved three clones with potentially different insertion sites, each measured individually. For mini-Tn7 inserted reporter constructs, we measured three biological replicates of a unique clone. Expression differences between mutants and a strain with the same genetic background but carrying the empty pME6032 plasmid were tested on triplicate means of individual median or 75th percentile values in a one-sided t-test (the hypothesis being that the mutant expression is higher than the control). Comparison of 75th percentiles rather than median or mean is justified when populations are extremely skewed, as we previously demonstrated (Reinhard and van der Meer, 2013). Coherent simultaneous data series were tested for significance of reporter expression or transfer frequency differences in ANOVA, followed by a post-hoc Tukey test. Quantile-quantile plots were produced in MatLab (v 2016a), violin -boxplots by using ggplot2 in R.
 
-## Mathematical model of ICEclc activation
+### Mathematical model of ICEclc activation
 
 ICEclc activation was simulated as a series of stochastic events in different network configurations (as schematically depicted in Figure 6A, Supplementary file 4). TciR, BisR, BisDC and protein output levels were then simulated using the Gillespie algorithm (Gillespie, 1977; Gillespie, 1976), implemented in Julia using its DifferentialEquations.jl package (Rackauckas and Nie, 2017). 10,000 individual simulations (each simulation corresponding to a single ‘cell’) were conducted per network configuration during 100 time steps, during or after which the remaining protein levels were counted and summarized. The code for the mathematical implementation is provided in the Source code 1.

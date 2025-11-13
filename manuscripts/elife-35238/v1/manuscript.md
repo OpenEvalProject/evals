@@ -12,7 +12,7 @@
 
 ## Abstract
 
-10.7554/eLife.35238.001 I would like to report significant issues of concern regarding this paper (Savory et al., 2017).
+I would like to report significant issues of concern regarding this paper (Savory et al., 2017).
 
 ## Evidence that nonpathogenic isolates are benign/mutualistic
 
@@ -20,7 +20,7 @@ First of all, Rhodococcus fascians is defined by its effect on shoots, so it is 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/35238/elife-35238-fig1-v1.jpg)
 
-**Figure 1.:** N. tabacum W38 (12 days after transfer) using the same procedure as Savory et al. (Savory et al., 2017), with the exception that the plates were not grown vertically.Note the excessive number of root hairs in two of the plants in the plate with 1 µM BA; these roots are growing on the medium.
+**Figure 1.:** Note the excessive number of root hairs in two of the plants in the plate with 1 µM BA; these roots are growing on the medium.
 
 ## Evidence for growth promotion by and virulence of PBTS isolates
 

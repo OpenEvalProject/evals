@@ -9,7 +9,7 @@
 ### Affiliations
 
 1. Leloir Institute – IIBBA/CONICET Buenos Aires Argentina
-2. https://ror.org/01v29qb04 Department of Mathematics, Durham University Durham United Kingdom
+2. Department of Mathematics, Durham University Durham United Kingdom ([ROR:01v29qb04](https://ror.org/01v29qb04))
 
 † Corresponding author
 
@@ -27,17 +27,37 @@ Here, we explore the possibility that grid cells are aligned by simpler, one-dim
 
 ## Results
 
-## Grid maps aligned by a one-dimensional attractor
+### Grid maps aligned by a one-dimensional attractor
 
 To understand if grid maps can be aligned by an architecture of excitatory recurrent collateral connections simpler than a two-dimensional attractor, we trained a model in which grid maps are obtained from spatial inputs through self-organization (Kropff and Treves, 2008). In this model, a layer of spatially stable inputs projects to a layer of grid cells through feedforward connections equipped with Hebbian plasticity (Figure 1a). Two factors, all-to-all inhibition and adaptation, force neurons in the grid cell layer to take turns to get activated. This dynamic promotes selectivity in the potentiation of afferent synapses to any given grid cell. As a virtual animal navigates an open-field environment, modeled entorhinal cells self-organize, acquiring maps with hexagonal symmetry as a result of Hebbian sculpting of the feedforward connectivity matrix. Previous work shows that these maps are not naturally aligned unless excitatory recurrent collaterals are included (Kropff and Treves, 2008; Si and Treves, 2013).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89851/elife-89851-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematics of the network model, including an input layer with place cell-like activity (purple), feedforward all-to-all connections with Hebbian plasticity and a grid cell layer (green) with global inhibition and a set of excitatory recurrent collaterals of fixed structure. (b) Schematics of the recurrent connectivity from a given cell (orange) to its neighbors (green) in a 2D (top) or 1D (bottom) setup. (c) Representative examples of maps belonging to the same 2D (top) or 1D (bottom) network at the end of training. (d) Average of all autocorrelograms in the same two simulations, highlighting the 6 maxima around the center (black circles). (e) Superposition of the 6 maxima around the center (as in d) for all individual autocorrelograms in the same two simulations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89851/elife-89851-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** For simulations (one per row) organized in groups of three for each condition (indicated) columns show from left to right: evolution of individual and population gridness throughout learning (as in Figure 2c), superposition of autocorrelation maxima (as in Figure 1e) and spatial phase along two grid axes. The conditions are 2D (top), 1D (center) and a recurrent architecture with 20 overlapping 1 DL attractors, each one recruiting 10 randomly selected cells among the 100 available (Fragmented 1D). While all conditions reach high levels of alignment (slightly lower in the Fragmented 1D case), only 1D and 2D show characteristic organization patterns. The fact that the Fragmented 1D condition does not present any visible organization pattern for spatial phases demonstrates that, although observable in the simplest cases, this phenomenon is not a necessary outcome of flexible attractors.
 
 We performed 100 simulations of a simplified version of this self-organizing network (Methods), including 225 input cells and NEC = 100 grid cells, in two otherwise identical setups. In the first scenario (2D), we added to the grid cell layer a classical architecture of recurrent collateral connections shaped as a torus (Figure 1b). In the second scenario (1D), we used instead a much simpler ring attractor architecture. At the end of the learning process, maps in both types of simulation had hexagonal symmetry (Figure 1c). The mean population autocorrelogram also had hexagonal symmetry, indicating that individual maps within the network shared spacing and orientation (Figure 1d), which was further confirmed by the clustering into six well-defined groups of first-order autocorrelogram maxima for the pool of all cells (Figure 1e), with phases were distributed in distinctive patterns for both conditions (Figure 1—figure supplement 1). Similar alignment was obtained for the 2D architecture, which was constructed ad hoc for this purpose, and for the much simpler 1D architecture.
 
 For a quantitative comparison of grid cell properties, we incorporated two additional conditions: a stripe-like linear attractor (1 DL), similar to 1D but with no periodic boundaries, and a condition with no recurrent collaterals (No), in setups otherwise identical to those of 1D and 2D. We compared across conditions the hexagonality of maps (through a gridness index), the spacing between neighboring fields and the angular spread in axes of symmetry across the population, indicative of alignement (Figure 2a). We found marked differences only between the No condition and the other three. Gridness was highest for 1D, followed closely by 2D and 1 DL, while the No condition exhibited markedly lower values. Spacing and spread were lowest for the 2D condition, followed by a small margin by 1D and 1 DL, with the No condition again presenting the largest differences with the rest. These results suggest that attractor connectivity of all investigated types not only aligns grid cells similarly but also has the effect of compressing maps in terms of spacing. To visualize how individual maps varied across categories, we plotted the distribution of pooled maxima (as in Figure 1e) relative to the axis of the corresponding autocorrelogram presenting the highest correlation value (Figure 2b).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/89851/elife-89851-fig2-v1.jpg)
+
+**Figure 2.:** (a) Distribution (i.q.r., n = 10000) of gridness (left), spacing (center), and spread (right) at the end of the learning process across conditions (quartiles; identical simulations except for the architecture of recurrent collaterals). (b) Smoothed distribution of maxima relative to the main axis of the corresponding autocorrelogram. (c) Mean evolution of gridness (top) and spacing (bottom) in transient maps along the learning process, calculated from individual (left) or average (right) autocorrelograms. Individual spacing negatively correlates with time for the 2D (R: –0.78, p: 10–84), 1D (R: –0.77, p: 10–79), and 1 DL (R: –0.74, p: 10–71).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89851/elife-89851-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Individual (left) or population (right) gridness (top) and spacing (bottom) for the 1D condition is repeated from Figure 2 (grey; ratio arbitrarily defined as 1), together with the results of 10 simulations for each value of a range of ratios between recurrent and feedforward synaptic strength (color code; ratios: 0.25, 0.5, 2, and 4 relative to the 1D condition). Note that gridness decreases if the attractor is too strong or too weak, while spacing is inversely related to the stregth of the attractor. (b) Recurrent connectivity matrix for the 1D condition (top) and for a condition where the recurrent input weights for each neuron are shuffled (bottom). (c) Plots in Figure 2c are repeated here but adding the average of 10 simulations in the shuffled condition. (d) Left: mean input feedforward (solid lines) and recurrent (dashed lines) fields throughout learning for the 1D, 2D and shuffled conditions (color coded). Mean input fields are the sum of all inputs of a given kind entering a neuron at a given moment in time, averaged across cells and time. Right: for the same conditions, feedforward to recurrent mean field ratio.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89851/elife-89851-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Individual (green) and population (black) gridness (top) and spacing (bottom) for a trained 1D network where feedforward Hebbian learning has been turned off. At time t=0 the attractor is also turned off, resulting in an improvement in gridness and an increase in spacing. (b) Similar to (a) but this time Hebbian learning is turned on at time = 0. While instantaneously gridness and spacing increase, as in (a) in the long run the network progresses toward the equilibrium corresponding to the condition with no attractor, showing that learning is reversible and that the attractors plays a role in aligning and contracting grid maps.
+
 To address differences in the self-organization dynamics, we next inspected maps along the learning process (Figure 2c). We found that the mean gridness of cells initially increased at a similar pace for all conditions, saturating early in this process only for the No condition. Further increase in gridness was an emergent property only allowed by attractor dynamics, which in the 2D condition took a slightly slower start compensated later by an elbow toward plateauing behavior at higher gridness values. For simulations with attractors, population gridness, while always lower than mean individual gridness, increased steadily, with 2D exhibiting slightly higher values most of the time, but no substantial increase was observed in the No condition given the absence of alignment between maps. A similar lack of alignment was found for a condition in which recurrent input weights were either too strong or too weak compared with feedforward weights, as well as for a condition in which recurrent inputs to a neuron where shuffled (Figure 2—figure supplement 1). The asymptotic behavior for both individual and population gridness was similar for all conditions with attractors. Individual spacing in maps with attractors showed a decrease throughout most of the learning process, more pronounced in the 2D condition, while the No condition evidenced a steady increase toward an asymptote. A combination of progressive increase in gridness and decrease in spacing across days has been observed in animals familiarizing with a novel environment (Barry et al., 2007). Our results, although only qualitatively exhibiting similar trends, point to the efficiency of excitatory collaterals in imposing constraints to the population activity as a possible mechanism. This compression of maps resulting from experience, also observable by turning off the attractor in a trained network (Figure 2—figure supplement 2), was less evident in the mean population spacing, obtained from average autocorrelograms, indicating that, at least in our simulations, this phenomenon has a strong driver in the deviation of individual cells from the coordinated population behavior, which would explain why the contraction is more marked for the most rigid constraint (2D). Despite these subtle differences, gridness, spacing and spread looked overall very similar across conditions with attractors, and markedly different in the No condition.
 
-## Toroidal topology of the population activity space
+### Toroidal topology of the population activity space
 
 Classical features such as gridness and spacing looked similar in maps obtained with different attractor geometry. We next asked, more generally, if the topology of the population activity was also the same for different conditions. Every pixel in the arena where the virtual animal runs is associated with a vector containing the mean activity of each neuron in that position. These vectors are the columns of the population matrix M, where the element Mij is the mean activity of the ith neuron in the jth pixel. This set of vectors form a point cloud of size equal to the number of pixels in a space of dimension NEC (the number of grid cells). It is commonly understood, given the symmetry of grid maps, that this cloud should be a sample of a low dimensional structure represented by a twisted torus and embedded in a high dimensional space (Knierim and Zhang, 2012), as recently shown in experimental data (Gardner et al., 2022; see Methods and Figure 3—figure supplement 1).
 
@@ -45,17 +65,33 @@ The topology of a point cloud can in some cases be completely determined through
 
 To understand whether and when this is true in our simulations, we first studied the local dimension of the population activity space (i) for the different conditions. To avoid irregularities sometimes found at the perimeter of the environment, we used for all further analyses the 60 cm wide central square of each 1 m wide map, and our conclusions apply to this area. For every data point, we extracted the principal components of a local neighborhood around it (Figure 3—figure supplement 1). We defined the local dimension at this point as the number of principal components for which an elbow in the rate of explained variance in the local neighborhood was found. In all conditions, most of the data points had a local dimensionality equal to 2 (more than 90% in all conditions), with eventual outliers that had some impact on the mean but not on the median (Figure 3a). To understand if these deviations were the result of noise or, in contrast, had a structure in the physical space, we next plotted individual maps of local dimensionality (Figure 3b) and their average across simulations of the same condition (Figure 3c). We only observed a structure in the No condition, where mean values close to 3 were concentrated at the corners of the reduced map. These results suggest that the population activity in all conditions with attractors is concentrated around a structure with a local dimension of 2.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/89851/elife-89851-fig3-v1.jpg)
+
+**Figure 3.:** (a) Distribution across conditions of the fraction of the data with local dimensionality of 2 (i.q.r., n = 100). (b) Distribution of local dimensionality across physical space in representative examples of 1D and 2D conditions. (c) Average distribution of local dimensionality for all conditions (same color code as in (b)). (d-f) As (a–c) for but exploring deviations of the local homology H1 from a value of 1, the value expected away from borders and singularities.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89851/elife-89851-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Basic representation of different geometries (indicated) and their corresponding Betti numbers. (b) Local dimensionality of a sphere (i) and a local neighborhood (ii), computed by obtaining its local principal components (iii) and finding and elbow on the rate of explained variance (iv). (c) Left, top: Birth and death of a generator in H1 (a cycle) for the same collection of datapoints and increasing radius. Left, bottom: barcode diagram indicating the birth and death of all generators. Right: Lifetime diagram indicating the birth and length of bars in (b) distinctively indicating relevant generators and noise. (d) Local homology in different locations of a locally two-dimensional object. Deviations from the Betti number B1=1 can indicate boundaries (B1=0) or singularities (B1 >1) as exemplified. (e) Orientable (top, torus) and non-orientable (bottom, Klein bottle) objects with Betti numbers [1, 2, 1] in Z2 but different Betti numbers in Z3 (indicated).
+
 Next, to understand if the data had boundary or singularities (ii), we studied the local homology of the underlying space by estimating the first Betti number β1 in an annulus neighborhood around each data point (Stolz et al., 2020; Figure 3d). Roughly, Betti numbers (β₀, β₁, β₂) indicate the number of connected components (β₀), holes (β₁), or voids (β₂) in a point cloud. These numbers are estimated from persistence diagrams, which aim to identify cycles in the point cloud that persist across a wide range of typical distances (see Methods and Appendix I). In a sample of a locally two-dimensional manifold with neither boundary nor singularities, the data inside the annulus neighborhood is expected to form a ring, with local β1=1, while points in the boundary are characterized by β1=0 and singularities by β1>1 (Figure 3—figure supplement 1d). We observed that most of the data points had β1=1, which was the case for more than 90% of data in conditions with attractors and around 70% in the No condition. The No condition had not only the lowest fraction of data with β1=1, but also the lowest deviation in the distribution, pointing to a systematic decrease in β1. This could be explained by examining individual maps of local β1 (Figure 3e) and averages across simulations (Figure 3f). The conditions with attractors exhibited no structure in eventual deviations from β1=1, but the average for the No condition had a value β1=0 in the pixels close to the perimeter of the reduced map, indicating a non-empty boundary set in the population activity.
 
 Put together, these results suggest that the population activity for simulations with attractors is locally two-dimensional, without boundary or singularities, forming a closed surface. In contrast, data clouds in the No condition do not meet the first two conditions of the theorem of classification of closed surfaces, and are compatible with a two-dimensional sheet exhibiting a boundary along the edge of the space selected for analysis.
 
 We next studied the orientability (iii) of the population activity space for the conditions with attractors. For each simulation, we obtained and compared persistence diagrams in Z2 and Z3. The pooled distribution of such diagrams and the averages across 100 simulations of each type (Methods) were almost identical for conditions 1D, 2D (Figure 4a and b) and 1 DL (Figure 4—figure supplement 1), indicating that the population activity in all cases is an orientable manifold.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/89851/elife-89851-fig4-v1.jpg)
+
+**Figure 4.:** (a) Smoothed density of pooled data (colored areas) and average across simulations (circles) of persistence diagrams with coefficients in Z2 for H0 (grey), H1 (blue), and H2 (red) corresponding to simulations in the 1D (top) and 2D (bottom) conditions. (b) As (a) but with coefficients in Z3. Similarity with (a) implies that population activity lies within an orientable surface. (c) Distribution (i.q.r., n = 100) across simulations of lifetime difference between consecutive generators ordered for each simulation from longest to shortest lifetime for 1D (left) and 2D (right). Maxima coincide with Betti numbers. (d) Pie plot and table indicating the number of simulations (out of 100 in each condition) classified according to their Betti numbers.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89851/elife-89851-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Smoothed density of pooled data (colored areas) and average across simulations (circles) of persistence diagrams with coefficients in Z2 for H0 (grey), H1 (blue), and H2 (red) corresponding to simulations in the 1 DL condition. (b) as (a) but in Z3. (c) Distribution (i.q.r., n = 100) across simulations of lifetime difference between consecutive generators ordered for each simulation from longest to shortest lifetime. (d) Pie plot and table indicating the number of simulations (out of 100) classified according to their Betti numbers.
+
 Given that for simulations with attractors the three conditions posed by the theorem of classification of closed surfaces were met, we were able to conclude that the topology of the population activity is determined by its Betti numbers. From the average diagrams for all conditions with attractors, Betti numbers could be qualitatively estimated as those of a torus: β0=1, β1=2 and β2=1 (Figure 4a). This was the case not only for average persistence diagrams, but also for most of the individual simulations, as shown in the plots of the distribution across simulations of the difference in lifetime of consecutive generators ordered from largest to smallest (Figure 4c). When quantifying the Betti numbers for individual simulations using a common cutoff value (Methods), 82 (out of 100) were classified as [1, 2, 1] in the 1D condition and 76 in the 2D condition (Figure 4d), with small deviations compatible with a noisy scenario for the rest of the simulations.
 
 In summary, our analyses show that different attractor architectures (torus, ring, stripe) similarly constrain the population activity into a torus embedded in a high dimensional space. This is not surprising for the 2D condition, where the architecture has itself the topology of a torus, but is an unprecedented result in the case of the 1D and 1 DL conditions, given that these simpler attractors were not tailored to represent two-dimensional neighboring relations.
 
-## Features of network architecture in the spatial maps
+### Features of network architecture in the spatial maps
 
 Our analyses showed that all conditions with attractors had a population activity with the topology of a torus, irrespective of the architecture of recurrent connections. We next asked if similar tools could be used to unveil differences between conditions, following the intuition that the network architecture could perhaps be reflected in the geometry of map similarity relationships across neurons. We computed Betti numbers for the point cloud given by spatial maps of individual neurons, represented by a set of NEC = 100 points (the number of neurons) in a 625-dimensional space (the number of pixels in the reduced map; Figure 5). This is equivalent to what was done in the previous section, but with the transpose of the matrix M introduced there.
 
@@ -67,7 +103,7 @@ For the 2D condition, the mean diagram could qualitatively be described as havin
 
 In summary, the analysis on the matrix M showed that all conditions with attractors had a population activity embedded in a torus, while the analysis on its transpose showed qualitative differences across conditions, where in general the homology recapitulated that of the architecture of recurrent connections.
 
-## Flexibility of one-dimensional attractors
+### Flexibility of one-dimensional attractors
 
 Given that one-dimensional attractors are not constructed in an ad hoc way to guarantee the correct organization of the population activity into a pre-defined configuration, we next asked what kind of geometrical arrangement was found by our self-organizing model to allow covering two-dimensional space with a one-dimensional arrangement of neurons. To visualize the population activity in space, we colored neurons in the 1D ring attractor according to hue, so that connected neurons along the ring were assigned similar colors. We then assigned to each pixel in the virtual space the color that best described the mean population activity associated with it. This allowed us to plot for each simulation a map in which color represented the mean population activity (Figure 6a). While all individual colors in these maps had hexagonal periodicity, as expected from a population of aligned grid maps, the geometry of the attractor layout in physical space allowed for a classification into 4 orders (O0 to O3) with different prevalence (Figure 6b). A way to understand these configurations is to imagine a cycle along the attractor. The cycle begins and ends in the same color, but since in physical space any given color is constrained to have hexagonal periodicity, the end has to lie either in the same place as it started (O0) or in an n-order neighboring field (in our case n=1–3; Figure 6c). This conceptualization implies that, although we only found 4 configurations for aligning grid cells with a 1D attractor, the constraint imposed by hexagonal symmetry is compatible with a countably infinite number of them (as many as orders of neighbors in a hexagonal grid), provided attractors are able to stretch enough in physical space. We speculate that the number of neurons in the grid cell layer (NEC) could play a critical role in determining to what extent the attractor can stretch and which configurations can be achieved in practice by a given network. Simulations of the 1 DL condition were classified into categories following the same logic, by assessing the distance between the two extremes of the attractor (colored black and white) in terms of neighboring order in a hexagonal grid (Figure 6b and d).
 
@@ -77,7 +113,7 @@ Given that one-dimensional attractors are not constructed in an ad hoc way to gu
 
 These results show that the weak constraint imposed by one-dimensional flexible attractors allows for many possible solutions to co-exist as local minima of the self-organization energy landscape.
 
-## Visualization of the twisted torus
+### Visualization of the twisted torus
 
 Dimensionality reduction techniques are a popular way of visualizing high dimensional data, such as the population activity in our simulations. It should be noted, however, that in general they provide no guarantee of preserving the topology of the data cloud in the original high dimensional space. For our data, three-dimensional Isomap projections (Tenenbaum et al., 2000) allowed for the visualization of the twisted torus in all conditions with attractors. In many simulations, the three-dimensional reduction of the population activity looked like a tetrahedron (Figure 7a). If data were grouped using k-means clustering (k=4) in the reduced Isomap space, a four-color checkerboard emerged in physical space. The minimal tile containing all four colors was a square in which one pair of opposite sides had simple periodicity while the other had a periodicity with a 180° twist, which is the basic representation for the twisted torus (Figure 3—figure supplement 1). Other times the same reduction technique, with identical parameters, produced directly a torus-like shape, squeezed at two opposite sides (Figure 7b and c). While extreme solutions looked like the tetrahedron or the torus, intermediate visualizations were also found which could not be clearly interpreted as one or the other. The fact that the same procedure produced so different visualizations calls for a cautious approach to interpreting the geometry of reduced data when using non-linear methods such as Isomap. This technique does not aim to preserve the global geometry of the original point cloud, but instead the relative distance between data points.
 
@@ -107,19 +143,45 @@ The model is inspired in a previous work that describes extensively the mechanis
 
 The network has an input layer of NI = 225 neurons projecting to a layer of NEC = 100 cells. While the model works with arbitrary spatially stable inputs (Kropff and Treves, 2008), for simplicity we use place cell like inputs. Input cells had Gaussian response fields with a standard deviation of 5.4 cm centered at preferred positions uniformly distributed across the 1 m arena.
 
-The total field h received by grid cell i at time t is given by two terms. The first one includes the contributions of the feedforward connections from input cells. The second one includes recurrent contributionshi(t)=∑j=1NIWi,jI rjI(t)+∑k=1NECWi,kEC rkEC(t)
+The total field h received by grid cell i at time t is given by two terms. The first one includes the contributions of the feedforward connections from input cells. The second one includes recurrent contributions
+
+$$
+h_{i}(t)=\sumj=1N_{I}W_{i,j}^{I} r_{j}^{I}(t)+\sumk=1N_{EC}W_{i,k}^{EC} r_{k}^{EC}(t)
+$$
 
 where rjI(t) and rkEC(t) are the firing rate of input cell j and grid cell k, respectively. The feedforward synaptic weight matrix WI is equipped with Hebbian plasticity, while for the purposes of this paper the recurrent synaptic weigh WEC is fixed (see next section).
 
-The field of the cell is inserted into a set of two equations with two internal variables, hact and hinact and a parameter β aimed to mimic adaptation or neural fatigue within the cell,hiact(t+1)=hi(t)−hiinact(t)hiinact(t+1)=hi(t)+βhiact(t).
+The field of the cell is inserted into a set of two equations with two internal variables, hact and hinact and a parameter β aimed to mimic adaptation or neural fatigue within the cell,
 
-Once the value of hact is obtained for all grid cells, a threshold linear transfer function with gain G is applied. A threshold T mimicking inhibition is established so that only the fraction A of cells with highest hact values has non-zero firing rate, while a normalization, acting as an effective gain, ensures that Hebbian plasticity does not get stuck at the beginning of the learning process due to low post-synaptic activity. The activity of each cell is obtained asriEC(t+1)=G|hact (t)−T|>0⟨|hact (t)−T|>0⟩,
+$$
+h_{i}^{act}(t+1)=h_{i}(t)−h_{i}^{inact}(t)
+$$
+
+
+
+$$
+h_{i}^{inact}(t+1)=h_{i}(t)+\betah_{i}^{act}(t).
+$$
+
+Once the value of hact is obtained for all grid cells, a threshold linear transfer function with gain G is applied. A threshold T mimicking inhibition is established so that only the fraction A of cells with highest hact values has non-zero firing rate, while a normalization, acting as an effective gain, ensures that Hebbian plasticity does not get stuck at the beginning of the learning process due to low post-synaptic activity. The activity of each cell is obtained as
+
+$$
+r_{i}^{EC}(t+1)=G\frac{|h_{act} (t)−T|_{>0}}{⟨|h_{act} (t)−T|_{>0}⟩},
+$$
 
 where the operation |…|>0 represents a rectifying linear transformation and <…>denotes averaging across all cells. This normalization is effectively equivalent to controlling the sparseness of the network (Kropff and Treves, 2008) but is much more efficient computationally.
 
-The update of the feedforward synaptic weight Wi,jI is given by de Hebbian ruleWi,jI(t+1)=Wi,jI(t)+ε(rjI(t)riEC(t)−rjI¯riEC¯)
+The update of the feedforward synaptic weight Wi,jI is given by de Hebbian rule
 
-where ε is a learning parameter and the computationally efficient temporal average operationri¯(t+1)=ri¯(t)(1−δ)+ri(t)δ
+$$
+W_{i,j}^{I}(t+1)=W_{i,j}^{I}(t)+\epsilon(r_{j}^{I}(t)r_{i}^{EC}(t)−r_{j}^{I}¯r_{i}^{EC}¯)
+$$
+
+where ε is a learning parameter and the computationally efficient temporal average operation
+
+$$
+r_{i}¯(t+1)=r_{i}¯(t)(1−\delta)+r_{i}(t)\delta
+$$
 
 is used. Negative values of WI are set to zero and the vector of all presynaptic weights entering a given postsynaptic grid cell is divided by its Euclidean norm to ensure that it remains inside a hypersphere.
 
@@ -129,85 +191,93 @@ Parameters ensuring that the mean contributions of feed forward and recurrent in
 
 Other parameters:
 
-## Recurrent collateral architectures
+### Recurrent collateral architectures
 
-## Toroidal architecture
+#### Toroidal architecture
 
-For the purpose of designing the 2D architecture of recurrent collaterals, each neuron in a given simulation was assigned a position, uniformly covering a 2D arena. The strength of connectivity between a given pair of cells k and l was set to depend on their relative position x = [xk - xl, yk - yl], through a function f(x) that was defined as the sum of three cosine functions in directions ki, 120° and 240° from each other, i.e. an ideal grid map (Kropff and Treves, 2008),fx=1+23∑i=13cos⁡(kix)
+For the purpose of designing the 2D architecture of recurrent collaterals, each neuron in a given simulation was assigned a position, uniformly covering a 2D arena. The strength of connectivity between a given pair of cells k and l was set to depend on their relative position x = [xk - xl, yk - yl], through a function f(x) that was defined as the sum of three cosine functions in directions ki, 120° and 240° from each other, i.e. an ideal grid map (Kropff and Treves, 2008),
+
+$$
+fx=1+\frac{2}{3}\sumi=13cos⁡(k_{i}x)
+$$
 
 The spacing of this imaginary grid map (inverse to the modulus of k) could be varied along a wide range of values without noticeable consequences on the simulations. For simulations included in this work it was set to 60 cm.
 
-## Ring architecture
+#### Ring architecture
 
 For the 1D condition, neurons were uniformly distributed along an imaginary ring, spaced by 3.6°. The connection strength between any pair of neurons was defined as proportional to a 7.2° standard deviation Gaussian function of the minimum angle between them.
 
-## Stripe architecture
+#### Stripe architecture
 
 For the 1 DL condition, neurons were uniformly distributed along an imaginary stripe. The connection strength between any pair of neurons was defined as proportional to Gaussian function of the distance between them, with standard deviation equal to twice the distance between consecutive neurons.
 
-## Fragmented architecture
+#### Fragmented architecture
 
 To prove that characteristic organization of spatial phases is not a necessary outcome of flexible attractors, a Fragmented 1D condition was used (Figure 1—figure supplement 1). The architecture of connectivity was constructed by repeating 20 times the process of randomly selecting 10 cells and adding to their mutual weights those corresponding to a 1 DL attractor connecting them. The resulting architecture corresponds to the overlap of 20 short 1 DL attractors. Such an architecture can be understood as simpler to obtain from biological processes compared to other 1D architectures studied here, but more difficult to fully characterize, which led us to restrict the analysis of this architecture to demonstrating that flexible attractors do not necessarily require organized spatial phases to align grid cells.
 
-## Rate maps
+### Rate maps
 
-Mean rate for each pixel in space was obtained from the instantaneous rate of each neuron observed during visits to the pixel. To optimize memory usage, at any given time the pixel currently traversed by the rat was identified and its mean rate for each neuron j, mj updated asmj=mj(1−τ)+rj(t)τ
+Mean rate for each pixel in space was obtained from the instantaneous rate of each neuron observed during visits to the pixel. To optimize memory usage, at any given time the pixel currently traversed by the rat was identified and its mean rate for each neuron j, mj updated as
+
+$$
+m_{j}=m_{j}(1−\tau)+r_{j}(t)\tau
+$$
 
 where rj is the instantaneous firing rate and τ is 0.03. The rest of the pixels of the map were not modified at this step.
 
 Autocorrelograms were obtained by correlating two copies of each map displaced relatively to one another in all directions and magnitudes. To reduce the absolute value close to the borders, where correlations can reach extreme values with poor statistical power, a 1 m circular hamming window was applied to each autocorrelogram. Mean population autocorrelograms were obtained by averaging the autocorrelogram across all neurons in a given simulation.
 
-## Quantification of grid properties
+### Quantification of grid properties
 
-## Spacing
+#### Spacing
 
 Autocorrelograms were interpolated to a Cartesian grid in polar coordinates, so that correlation could be analyzed for all angles at any fixed radius. Spacing was defined as the radius with maximal 6-period Fourier component modulation of the correlation across angles.
 
-## Gridness
+#### Gridness
 
 For the radius that defined spacing, gridness was defined as the mean autocorrelation at the six 60 degree spaced maxima minus that at the six 60 degree spaced minima.
 
-## Angular spread
+#### Angular spread
 
 For each cell in a given simulation, the six maxima around the center of the autocorrelogram were identified. A k-means clustering algorithm was applied to the pool of all maxima in the simulation (MATLAB kmeans() function, with k=6, otherwise default parameters and 10 repetitions to avoid local minima). The spread was defined as the mean absolute angle difference between pairs of points belonging to the same cluster.
 
-## Metric structure of the population activity
+### Metric structure of the population activity
 
-To study the topology of the population activity (Figure 4), the central 60 cm of each map in a simulation was considered. The population activity thus determines point clouds of 625 points — the size of the arena, that is, 25x25 — in RNEC, where NEC = 100 is the number of simulated grid cells. For the purpose of capturing the intrinsic geometry of the underlying space determined by these point clouds, and to avoid the effects of the ‘curse of dimensionality’, we endowed each point cloud with an estimator of the geodesic distance. This estimator, known as the kNN-distance, is defined as the length of the shortest path along the k-nearest neighbors graph, a graph with an edge between every data point and each of its k-nearest neighbors with respect to the ambient Euclidean distance. We set the value k=10 for all our analyses but similar results could be obtained for a range of similar values of k.
+To study the topology of the population activity (Figure 4), the central 60 cm of each map in a simulation was considered. The population activity thus determines point clouds of 625 points — the size of the arena, that is, 25x25 — in $R^{N_{EC}},$ where NEC = 100 is the number of simulated grid cells. For the purpose of capturing the intrinsic geometry of the underlying space determined by these point clouds, and to avoid the effects of the ‘curse of dimensionality’, we endowed each point cloud with an estimator of the geodesic distance. This estimator, known as the kNN-distance, is defined as the length of the shortest path along the k-nearest neighbors graph, a graph with an edge between every data point and each of its k-nearest neighbors with respect to the ambient Euclidean distance. We set the value k=10 for all our analyses but similar results could be obtained for a range of similar values of k.
 
 To recover network architecture features (Figure 5), we studied the simultaneous spatial activity of grid cells. The associated point cloud is a set of NEC = 100 vectors in R625 representing the average activity of every grid cell on each pixel of the arena. This point cloud, when endowed with the metric structure given by the Pearson correlation distance, shares geometric features with the combinatorial architecture of the underlying neural network.
 
-## Persistent homology
+### Persistent homology
 
 We aimed to robustly recover geometric information, such as the number of connected components, cycles and holes of different dimensions, from the simulated data (Figure 3—figure supplement 1a). To do so, we computed the persistent homology Boissonnat et al., 2018; Edelsbrunner and Harer, 2008; Edelsbrunner et al., 2024; Zomorodian and Carlsson, 2005 of each point cloud endowed with its respective metric structure. As output we obtained persistence diagrams, graphical representations of the evolution of the generators of the homology groups associated to each point cloud, for different parameter scales (Figure 3—figure supplement 1c). Each generator is described as a point whose first coordinate represents its birth and the second coordinate, its lifetime. Generators with long lifetime indicate topological features, while the ones with short lifetime are linked to noise. Note that persistent homology at degree 0 encodes the evolution of connected components. It is always the case that a single generator of H0 has an infinite lifetime, as a consequence of the compactness of the point cloud. Its lifetime was set to an arbitrary value larger than generators associated to noise but with a similar magnitude, to facilitate visualization. To summarize the information of the persistent homology over all simulations, we computed both the average of the persistence diagrams as its Frechet mean (Mileyko et al., 2011; Turner et al., 2014), as well as the density associated with the distribution of points in the diagrams (Figure 4).
 
 All the computations of persistence diagrams, related to both the population activity and the cross-cell similarities, were performed with the Ripser package (Bauer, 2021), while the Frechet mean (or barycenter of persistence diagrams) was obtained using the corresponding library in GUDHI (Maria et al., 2024).
 
-## Automated quantification of individual persistence diagrams
+### Automated quantification of individual persistence diagrams
 
 Betti numbers are typically assessed from persistence diagrams in a qualitative way. Profiting from the fact that we had 100 similar persistence diagrams for every condition, we designed an automated procedure to determine cutoff values for each homology group and condition. A histogram of lifetime with 100 bins between 0 and the maximum value was obtained for the pool of all cycles in all simulations belonging to the condition. The histogram was smoothed with a 3-bin standard deviation gaussian window. Locations of minima in this smoothed histogram were identified and the one representing the greatest fall from the previous maximum was set as the cutoff lifetime value. Persistence diagrams for individual simulations were analyzed by counting how many cycles had a lifetime greater than the corresponding cutoff value.
 
-## Local principal component analysis
+### Local principal component analysis
 
 Local Principal Component Analysis (PCA) is a well-established procedure to detect the local dimension of point clouds (Fukunaga and Olsen, 1971). It is based on the popular method PCA of linear dimensionality reduction, applied to local k-nearest neighborhoods of each data point (Figure 3—figure supplement 1b). We employed local neighborhoods of size k=70 for all simulations of population activity with attractors and k=20 for the ones in the No condition. These values were determined as the center of a range of k values with stable outcomes.
 
 For every local neighborhood, we computed the evolution of the rate of explained variance after adding each principal component (in decreasing eigenvalue-order). An estimator of the local dimension at a point is the number of dimensions at which there is a drop off (or ‘elbow’) in the curve of explained variances (Figure 3—figure supplement 1b). For elbow detection we used the Python package kneed Satopaa, 2011.
 
-## Local persistent homology
+### Local persistent homology
 
 Persistent homology can also be used to capture the topological structure around each data point. Even though homology does not distinguish among local neighborhoods of different dimensions (and hence, it is not useful to identify local dimensions), it is an appropriate method to detect anomalies such as points in the boundary or singularities. The main idea is to identify the shape of the region surrounding each point, by studying the persistent homology of an annular neighborhood (Stolz et al., 2020).
 
-We defined the annular local neighborhood of a point x as the set of points in the point cloud (ordered according to the Euclidean distance to x) between the k1th and the k2th nearest neighbors, with  k1 = 50, k2 = 100 for the simulations with attractor, and  k1 = 10, k2 = 30 for the ones in the No condition (Figure 3—figure supplement 1d). We used the Ripser package Bauer, 2021 for the computation of local persistent homology.
+We defined the annular local neighborhood of a point x as the set of points in the point cloud (ordered according to the Euclidean distance to x) between the k1th and the k2th nearest neighbors, with  $k_{1}$ = 50, $k_{2}$ = 100 for the simulations with attractor, and  $k_{1}$ = 10, $k_{2}$ = 30 for the ones in the No condition (Figure 3—figure supplement 1d). We used the Ripser package Bauer, 2021 for the computation of local persistent homology.
 
-## Orientability
+### Orientability
 
 Orientability is the geometric property that ensures a consistent local coordinate system in a manifold. In the special case of closed manifolds (compact connected manifolds without boundary), this homeomorphism invariant can be detected by its homology.
 
-We computed the persistence diagrams of the point clouds obtained from 100 simulations of the population activity of grid cells in all conditions, using coefficients in both Z2 and Z3 (Figure 3—figure supplement 1e). A summary of the persistent homology over all the simulations (for every coefficient field) was presented via the Frechet mean and the density of the distribution of the generators in the persistent diagrams.
+We computed the persistence diagrams of the point clouds obtained from 100 simulations of the population activity of grid cells in all conditions, using coefficients in both $Z_{2}$ and $Z_{3}$ (Figure 3—figure supplement 1e). A summary of the persistent homology over all the simulations (for every coefficient field) was presented via the Frechet mean and the density of the distribution of the generators in the persistent diagrams.
 
-Note that for any closed manifold M of dimension 2, H2(M,Z2)≠0. This is consistent with salient generator in the (Frechet mean) persistence diagram for H2 that we can detect in all conditions with attractors (Figure 4). We also observe that the Frechet mean of persistence diagrams remains unaltered after the change of coefficients from Z2 to Z3. This proves the orientability of the underlying surfaces in all cases. If the sample belonged to a non-orientable surface, the salient generator of the persistent diagram representing H2(M,Z2) should disappear when compared with H2(M,Z3) (Figure 3—figure supplement 1e). This should also be accompanied by the disappearance of a salient generator of H1(M,Z2) when contrasted with H1(M,Z3). This phenomenon of simultaneous changes in homology is explained by the independence of the Euler characteristic on the choice of field of coefficients.
+Note that for any closed manifold M of dimension 2, $H_{2}(M,Z_{2})\neq0$. This is consistent with salient generator in the (Frechet mean) persistence diagram for $H_{2}$ that we can detect in all conditions with attractors (Figure 4). We also observe that the Frechet mean of persistence diagrams remains unaltered after the change of coefficients from $Z_{2}$ to $Z_{3}$. This proves the orientability of the underlying surfaces in all cases. If the sample belonged to a non-orientable surface, the salient generator of the persistent diagram representing $H_{2}(M,Z_{2})$ should disappear when compared with $H_{2}(M,Z_{3})$ (Figure 3—figure supplement 1e). This should also be accompanied by the disappearance of a salient generator of $H_{1}(M,Z_{2})$ when contrasted with $H_{1}(M,Z_{3})$. This phenomenon of simultaneous changes in homology is explained by the independence of the Euler characteristic on the choice of field of coefficients.
 
-## Dimensionality reduction
+### Dimensionality reduction
 
 Among the most popular techniques in manifold learning are the procedures for dimensionality reduction, that aim to project high-dimensional point clouds into a low-dimensional space while preserving some properties of the original data.
 

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02zx40v98 Department of Cognitive Science, Center for Cognitive Computation, Central European University Vienna Austria
+1. Department of Cognitive Science, Center for Cognitive Computation, Central European University Vienna Austria ([ROR:02zx40v98](https://ror.org/02zx40v98))
 
 † Corresponding author
 
@@ -25,7 +25,7 @@ Our results show that during unsupervised learning, the transfer of learned stru
 
 ## Results
 
-## Visual statistical learning as a testbed for unsupervised hierarchical structure learning
+### Visual statistical learning as a testbed for unsupervised hierarchical structure learning
 
 Our experimental setup builds on the standard SVSL framework (Fiser and Aslin, 2001) and extends it to a transfer learning paradigm (Figure 1). In the traditional SVSL, participants passively watch a stream of scenes, each consisting of multiple shapes on a grid layout, which, unbeknown to the participant, are composed of a set of fixed shape pairs. The pairs are ‘fixed’ since the two constituent shapes of a pair always appear next to each other in the scenes in a fixed spatial relationship. Importantly, each pair abuts at least one other pair in the scenes, so the pairs are not separated visually from each other. Thus, the identities of the shape pairs need to be extracted by learning across multiple scenes to achieve successful segmentation. Adult and infant humans, as well as various other species, have been shown to automatically and implicitly extract the underlying pair structure of such scenes (Fiser and Aslin, 2002; Lee et al., 2021; Santolin and Saffran, 2018).
 
@@ -39,7 +39,7 @@ Specifically, in the first training phase (Phase 1) in all of our experiments co
 
 The explicitness of the acquired knowledge was assessed by using an exit survey at the very end of the experiment (see Appendix 1). Participants were labeled as ‘explicit’ if they gave any indication of being aware of reappearing fixed patterns/pairs in the scenes. It is worth noting that we excluded from our analysis the small number of participants who clearly reported awareness of the underlying structure (horizontality/verticality). Therefore, the participants we labeled ‘explicit’ in this study also had only far-from-perfect, partial knowledge about the structure of the scenes. In agreement with earlier visual statistical learning reports, the proportion of these excluded participants was 1–1.5% across experiments, and their exclusion did not change any of our results.
 
-## Explicit learners generalize, while implicit learners show a structural novelty effect
+### Explicit learners generalize, while implicit learners show a structural novelty effect
 
 Experiment 1 (n=226 after exclusions; see ‘Materials and methods’ for details) investigated the immediate transfer of knowledge about the higher-level structure between the two learning contexts by implementing a short 2-minute break between Phases 1 and 2 and, thereby, providing a baseline for the subsequent experiments. Both explicit and implicit learners in Experiment 1 performed above chance for pairs of the first training phase (Expl: M=67.9, SE=4.6, d=0.67, t(33)=3.93, p=0.002, BF = 70.8; Impl: M=55.0, SE=1.1, d=0.32, t(191)=4.46, p<0.001, BF=919). In addition, the explicit participants (n=34) performed significantly better than the implicit ones as shown by a Welch’s t-test (n=192) (d=0.73, t(224)=2.75, p=0.009) (Figure 2). For Phase 2 pairs, explicit participants performed above chance for learning pairs that shared their higher-level orientation structure with that of pairs in Phase 1 (M=67.6, SE=6.3, d=0.48, t(33)=2.81, p=0.033, BF=5.0). The same participants showed some moderate learning of the new pairs with the novel (non-matching) structure as well, but this learning failed to reach significance (M=58.1, SE=5.6, d=0.25, t(33)=1.46, p=0.465, BF=0.48). In contrast to the explicit participants, implicit participants showed the opposite pattern, performing significantly above chance for pairs of the novel structure (M=57.8, SE=1.9, d=0.30, t(191)=4.16, p<0.001, BF=281) but demonstrated strong evidence that they did not learn pairs sharing the higher-level orientation structure with pairs in Phase 1 (M=49.1, SE=2.1, d=0.03, t(191)=–0.44, p=0.659, BF=0.09). The difference between the implicit participants’ performances with same vs. different higher-order structures was statistically significant (Mdiff=8.72, d=0.20, t(191)=2.78, p=0.030, BF=3.38). We note that, while the same difference was not significant for the explicit participants (d=0.19, t(33)=1.12, p=0.539, BF = 0.33), in their case, we observed a different kind of difference. There was a significant and medium-to-large size correlation between overall learning in the first training phase and learning of pairs with the same structure in the second training phase (r=0.45, p=0.008), while this correlation was absent between the same overall learning in the first learning phase and learning of pairs with novel structure in the second learning phase (r=−0.01, p=0.947). Thus, the qualitative pattern of the implicit participants’ markedly better performance with novel structures was distinctively different from the pattern shown by the explicit participants, as indicated by the significant interaction between the two factors (participant type and structure type) of the two-factor mixed ANOVA results (F(1,224)=4.89, p=0.028, BF=31.6, ηp2=0.02). These results imply that participants with more explicit acquired knowledge in Phase 1 effectively generalized the higher-level structure of this learned knowledge to novel situations and contexts, showing a ‘structure transfer’ effect. Meanwhile, implicit participants showed a ‘structural novelty’ effect that might be explained by a structure-level interference due to a larger representational overlap between previously learned and presently seen horizontal pairs than between previous horizontal and present vertical pairs.
 
@@ -49,17 +49,17 @@ Experiment 1 (n=226 after exclusions; see ‘Materials and methods’ for detail
 
 To strengthen the reliability of our results, we conducted a conceptual replication of Experiment 1 using two types of diagonal pairs, which were again orthogonal to each other. The results again showed a structural novelty effect for implicit participants (see ‘Supplementary Experiment 1’).
 
-## Consolidation enables implicit learners to generalize
+### Consolidation enables implicit learners to generalize
 
 To investigate the effect of consolidation on explicit and implicit learners’ structural transfer in Experiment 2 (n=161 after exclusions; see ‘Materials and methods’ for details), we closely followed the design of Experiment 1 but introduced a 12-hour overnight consolidation phase between Phases 1 and 2. We found that while the performance of the explicit learners (n=21) after overnight sleep consolidation did not change drastically, it completely altered the pattern of behavior of implicit learners (n=140) as they demonstrated in this condition the same generalization as the explicit learners did in Experiment 1 (Figure 2).
 
 Specifically, explicit learners (n=21) performed above chance for pairs of the same structure (M=66.7, SE=5.8, d=0.63, t(20)=2.87, p=0.038, BF=5.3) but not pairs of a novel structure (M=51.2, SE=5.8, d=0.04, t(20)=0.20, p=0.841, BF=0.23) in the test of Phase 2 pairs. Implicit learners (n=140) also performed above chance for pairs of the same structure (M=58.8, SE=2.5, d=0.30, t(139)=3.51, p=0.004, BF=37.6), but not for pairs of the novel structure (M=46.8, SE=2.6, d=0.11, t(139)=–1.24, p=0.435, BF=0.27). The performance difference between these two types of pairs was significant (Mdiff=11.96, d=0.24, t(139)=2.82, p=0.027, BF=5.4). A direct comparison of implicit participants’ performance in Experiments 1 and 2 showed that the participants performed higher after sleep for same structure pairs and lower for novel structure pairs (see next sections for detailed results). Overall, the results of Experiments 1 and 2 demonstrate that while explicit participants could immediately generalize the structure they learned, implicit participants required a consolidation period before being able to do the same.
 
-## The effect of consolidation is specific to sleep
+### The effect of consolidation is specific to sleep
 
 To clarify whether the effect observed in Experiment 2 is specific to sleep or just a general effect of consolidation, in Experiment 3 (n=170 after exclusions; see ‘Materials and methods’ for details), we used the same general procedure as in Experiment 2 but with the 12-hour consolidation phase occurring during the day. The results of the implicit learners (n=150) provided strong evidence against generalization as they performed at chance with both pairs of the same structure (M=51.8, SE=2.3, d=0.07, t(149)=0.80, p=0.999, BF=0.17) and pairs of a novel structure (M=52.8, SE=2.6, d=0.09, t(149)=1.08, p=0.999, BF=0.22) of Phase 2 (Figure 2). In contrast, participants with explicit knowledge (n=20) replicated the results of Experiments 1 and 2, with percent correct above chance for pairs of the same structure (M=70.0, SE=6.2, d=0.72, t(19)=3.24, p=0.026, BF = 10.4) but not for pairs of a novel structure (M=62.5, SE=7.4, d=0.38, t(19)=1.70, p=0.530, BF=0.78).
 
-## The effect of sleep is not explained by a time-of-day effect
+### The effect of sleep is not explained by a time-of-day effect
 
 It has previously been suggested that an apparent effect of sleep shown in an AM-PM vs. PM-AM design can be based on the time of day at testing rather than sleep itself (Tandoc et al., 2021). To control for this potential confound, Experiment 4 (n=169 after exclusions; see ‘Materials and methods’ for details) replicated Experiment 2 but with the second session delayed by 24 instead of 12 hours. Participants in this condition, therefore, had overnight sleep but were tested at the same time of day as the non-sleeping participants in Experiment 3. The results of Experiment 4 replicated the results of Experiment 2 for implicit learners, showing stronger learning for pairs of the same structure as compared to pairs of the novel structure (Mdiff=11.04, d=0.23, t(144)=2.75, p=0.021, BF=4.4). We, therefore, conclude that the difference for implicit learners between our previous sleep and non-sleep conditions was not based on a time-of-day effect. For explicit learners, Experiment 4 showed no significant difference between learning for pairs of the same structure as compared to pairs of the novel structure (Mdiff=10.78, d=0.26, t(22)=1.27, p=0.437, BF=0.44) and no significant correlation between learning pairs of the first learning phase and pairs of the novel structure (r=0.109, p=0.620). This suggests that the generalization effect found for explicit learners in the previous experiments is weakened during the longer consolidation phase of Experiment 4.
 
@@ -67,7 +67,7 @@ To compare directly the differential effect of type of consolidation on implicit
 
 Additionally, to test for the presence of potential time-of-day effects in Experiment 1, we reanalyzed the data of Experiment 1 by taking into account the time point of testing. Both correlational and subgroup analyses found no indication of an effect of time of day on the pattern of structural transfer (see Appendix 1).
 
-## The type of transfer depends on the quality of knowledge, not the quantity of knowledge
+### The type of transfer depends on the quality of knowledge, not the quantity of knowledge
 
 The different patterns of structural transfer for explicit and implicit participants could be based on either the quality of knowledge, that is, its explicitness, or the quantity of knowledge, that is, how much was learned during the first training phase. However, these two factors are confounded since the explicit participants typically performed higher for pairs of the first training phase. To address this confound, we conducted a matched sample analysis (Ho et al., 2007) in Experiments 1––4 to clarify which aspect of knowledge was responsible for our results. We selected a subsample of our implicit participants so that their accuracy performance matched that of the explicit participants for the first training phase and performed the same analyses on these subsampled populations as on the entire dataset in Experiments 1–4 (for details and a discussion of potential shortcomings, see Appendix 1). Matched implicit participants showed the same overall pattern of generalization behavior as the full sample of implicit participants for all four experiments (Figure 3), although this failed to reach significance for Experiment 4. Specifically, participants learned more pairs of the novel than of the same structure in Experiment 1 (p=0.012; BF=3.6), they learned more pairs of the same than of the novel structure in Experiment 2 (p<0.001, BF=127), and they showed no significant difference between learning the two types of pairs in Experiment 3 (p=0.214, BF=0.59) and Experiment 4 (p=0.304, BF=0.46). With the matched sample analysis, we drastically reduced the sample size of the implicit participants, therefore reducing the power to detect the small effects found for this group. However, we recovered the same descriptive pattern in the full data set and the matched sample groups in all experiments and failed to recover the same statistical significance only in the time-of-the-day control experiment. Therefore, we posit that these findings strongly support the notion that the difference in the structural transfer is based predominantly on the quality of knowledge – its explicitness – not the exact level of learning.
 
@@ -75,7 +75,7 @@ The different patterns of structural transfer for explicit and implicit particip
 
 **Figure 3.:** The structure of the figure is identical to that of Figures 1 and 2, with data for the explicit participants (orange bars) being the same as in Figure 1, while data for the implicit participants (striped purple bars) showing the subgroup of implicit participants from Experiment 1 whose combined performance matched the performance of the explicit participants on test trials of the first learning phase. The y-axes represent the proportion of correct responses in the 2AFC trials. Bars represent the mean (± SEM) for each type of pair (pairs of Phase 1 and same and novel structure pairs of Phase 2). The horizontal dashed line indicates chance performance.
 
-## Explicitness and generalization can be induced by verbal instruction
+### Explicitness and generalization can be induced by verbal instruction
 
 The explicit–implicit parameterization in Experiment 1 was quasi-experimental rather than true experimental since the groups were formed naturally. Therefore, it is unclear whether it is indeed explicitness that enables generalization or whether the two groups of participants are different in other important ways (e.g., task engagement and attentional processes). To investigate this issue, in Experiment 5 (n=36 after exclusions), we rerun Experiment 1 with a new group of participants and with the single change in the protocol that explicitness of knowledge was induced via explicit verbal instructions stating that all shapes would be grouped into pairs. The results of Experiment 5 closely matched those of the explicit participants of Experiment 1 (Appendix 1—figure 1). The participants had an above-chance performance for Phase 1 (M=71.8, SE=3.6, d=1.01, t(35)=6.07, p<0.001, BF = 26,395) and for the same structure (M=72.9, SE=4.0, d=0.95, t(35)=5.69, p<0.001, BF=9058) but not novel structure pairs (M=52.8, SE=5.8, d=0.08, t(35)=0.48, p=0.634, BF=0.20) in Phase 2. The performance for pairs of the same and novel structure was significantly different (d=0.64, t(35)=3.83, p=0.001, BF=58.0). These results confirm that the generalization producing an immediate transfer between contexts can be easily induced by verbal instructions in any population, and therefore, the type of explicitness studied in our experiments is a likely candidate for the necessary condition for such a generalization.
 
@@ -103,27 +103,27 @@ In summary, our work builds multiple bridges between different domains of cognit
 
 ## Materials and methods
 
-## Experiment 1
+### Experiment 1
 
-## Participants
+#### Participants
 
 In total, 251 participants (92 females, age: mean=28.0, mode=25, SD=9.5) were recruited via prolific.co. All participants had normal or corrected-to-normal vision. The study was approved by the Hungarian United Ethical Review Committee for Research in Psychology (EPKEB), and all participants provided informed consent. Additional explicit consent for data sharing was not necessary as the data is fully anonymized for all reported experiments. The hourly compensation was £6.3. The sample size was chosen to achieve 80% power for expected small effect sizes (d=0.2) in paired t-tests (needed sample for the implicit subgroup according to power analysis = 198.15) and to account for exclusions. The study protocol of Experiment 1 and all subsequent experiments was not preregistered before data collection and analysis.
 
 Based on pilot data, we choose 20 seconds combined response time for both attention checks as the cut-off value for inclusion. Nineteen participants were rejected for failing this criterion. Response bias was defined as the proportion with which participants used one of the two response options (‘1’ and ‘2’), and participants who were 2.5 SD away from the mean were excluded. Three participants were excluded for failing this criterion. This left us with 229 participants after exclusions. Based on the open responses at the end of the experiment, participants were categorized into one of three groups. Participants who reported no knowledge of pairs were counted as implicit (n=192), participants who reported knowledge of the presence of pairs were counted as explicit (n=34), and participants who also reported the underlying horizontal/vertical structure were excluded from analysis as they were too few for meaningful analysis (n=3). See Appendix 1 for details on the exit survey and example responses.
 
-## Materials
+#### Materials
 
 The stimuli were taken from Fiser and Aslin, 2001 and consisted of 20 abstract black shapes on a white background (see Figure 1). The shapes were grouped to form six pairs of the same orientation (horizontal or vertical) for the first learning phase and four pairs, two horizontal and two vertical, for the second learning phase. The assignment of shapes to pairs was randomized for each participant. Scenes were created by placing three pairs together on a 3 × 3 grid without segmentation cues. In total, 160 scenes were created for the first and 48 for the second learning phase. In the second learning phase, each scene was used twice for a total of 96 presented scenes.
 
 The study was conducted online via Prolific. As this was an online study, participants conducted it on their own computers using Google Chrome, Safari, or Opera browser. Only desktop and laptop computers were admissible, and no smartphones or tablets. Stimuli were presented using custom JavaScript code built on the jsPsych library (de Leeuw, 2015). As participants used different devices (screen size and resolution), the visual angle of the shapes was not the exact same for all participants. Instead, the 3 × 3 grid extended over 600 × 600 pixels and was centered in the middle of the screen. The remaining screen outside the grid was empty (white).
 
-## Procedure
+#### Procedure
 
 Participants passively observed 160 scenes in the first training phase. For half of the participants, these scenes contained only horizontal pairs (horizontal condition), and for the other half, only vertical pairs (vertical condition). Each scene was presented for 2 seconds with a 1-second interstimulus interval (ISI). After a 2-minute passive break, participants passively observed 96 scenes in the second training phase. Participants were not told about the presence of any structure in the scenes and were simply instructed to be attentive so that they could later answer simple questions. After half of each training phase, an attention check appears, asking participants to press the spacebar to continue. Response time for the attention check was recorded to detect inattentive participants. After the second training phase, participants had another two-minute passive break.
 
 Following this, pair learning was tested with a 2AFC task. In each trial, participants saw a real shape pair from one of the training phases and a foil pair created by combining shapes from two different pairs of the same training phase. Real and foil pairs were presented after each other in the 3 × 3 grid for 2 seconds with a 1-second ISI. The order of real and foil pairs was randomized. Participants were asked to indicate which of the two was more familiar by pressing ‘1’ or ‘2’ on their keyboard. Participants first completed 16 trials using pairs from the second training phase, where each of the four real pairs of that training phase was tested against two different foil pairs twice. This was followed by 24 trials using pairs from the first training phase, where each of the six real pairs of that training phase was tested against four different foil pairs. Overall, all real and foil pairs were used the same number of times during the test phase. Finally, participants answered five open questions about their beliefs about the experiment and their knowledge of pair structure (see Appendix 1 for details).
 
-## Additional analyses
+#### Additional analyses
 
 Test trials for the second training phase were scored separately for pairs of the same structure as in the first training phase and pairs of the novel structure. Explorative analysis of the trials of the second training phase revealed a strong negative correlation between trials of the novel and the same structure (r=−0.432, p<0.001). As the foil pairs used for one type of structure were created by recombining shapes of pairs of the other structure, this could be a type of consistency effect where participants tend to choose the same shapes, independent of pair knowledge. Specifically, we assumed that in addition to applying the weak pair knowledge acquired during the training phase, participants also considered the specific shapes seen in a test trial for their response. In other words, after a participant decided against a specific foil pair in an early test trial, they were less likely to pick an option using these same shapes in later test trials. Due to the foil pairs always being constructed of only shapes of pairs of the opposite structure, this would lead to participants developing a bias for only one type of structure (i.e., one set of shapes) in the course of the testing phase. If this is the case, we expect to see an increase in this negative correlation as participants complete more test trials. Indeed, for the first eight trials, this correlation is r=−0.209, while it increases to r=−0.435 in the second eight trials. Based on this exploration, we included only the first eight trials in all the following analyses to minimize this consistency effect. To keep comparability, the following experiments use the same number of test trials, but we again only analyze the first eight.
 
@@ -137,72 +137,72 @@ The different patterns of transfer behavior for explicit and implicit participan
 
 To test for a possible time-of-day effect in learning or generalization, we correlated test performance with the hour of the day at which participants completed the experiment. There were no significant correlations for pairs of the same structure (explicit participants: r=−0.03, p=0.882; implicit participants: r=0.01, p=0.893) or pairs of the novel structure (explicit participants: r=0.13, p=0.477; implicit participants: r=−0.05, p=0.458). Additionally, we looked separately at groups of participants completing the experiment early in the day (7–11 am) and late in the day (7–11 pm). For implicit participants, there was no significant difference between participants that participated early (n=23) or late (n=22) as a 2 × 2 mixed ANOVA with hour-of-day and test type as factors showed no significant main effect of hour-of-day (F(1,43)=0.019, p=0.892, BF=0.26) and no significant hour-of-day–test type interaction (F(1,43)=0.095, p=0.759, BF=0.31).
 
-## Experiment 2
+### Experiment 2
 
-## Participants
+#### Participants
 
 In total, 259 participants (127 females, age: mean=25.6, mode=21, SD=8.5) were recruited via prolific.co. All participants had normal or corrected-to-normal vision. The sample size was chosen to match that of Experiment 1. The study was approved by the Psychological Research Ethics Board of the Central European University (Approval Identifier: PREBO_2021/06_01), and all participants provided informed consent. The hourly compensation was £6.3. To ensure that participants have overnight sleep during the experiment as intended, several constraints and checks were implemented (see ‘Sleep during consolidation studies’ section of Appendix 1).
 
-## Materials
+#### Materials
 
 The materials of the main part of the experiment were identical to Experiment 1. Additionally, participants filled out the Pittsburgh Sleep Quality Index (PSQI) (Buysse et al., 1989) and the Groningen Sleep Quality Scale (GSQS) (Meijman and Vries-Griever, 1988).
 
-## Procedure
+#### Procedure
 
 The procedure within the main tasks was identical to Experiment 1. However, in this experiment, participants completed the first training phase in the evening at 9 pm, followed by the GSGS and PSQI questionnaires. 12 hours later in the morning at 9 am, they completed the second training phase, followed by all the test trials and finally, they completed the GSGS again.
 
-## Additional analyses
+#### Additional analyses
 
 BFs from Bayesian t-tests for implicit participants reported for Experiments 2, 3, 4, and Supplementary Experiment 1 used an r-scale parameter of 0.5 instead of the default √2/2. The r-scale parameter controls the prior over effect sizes and using 0.5 means increasing the prior probability of small effects. This decision was made to incorporate the shifted belief about expected effect sizes for implicit participants after observing the effects in Experiment 1.
 
 As in Experiment 1, for explicit participants, the difference between pairs of the same and novel structure was not significant (d=0.39, t(20)=1.77, p=0.272, BF=0.86), but we did see a strong positive correlation between learning in the first learning phase and learning pairs of the same structure in the second learning phase (r=0.52, p=0.015). Such a correlation was again not observed between learning in the first learning phase and learning pairs of the novel structure in the second learning phase (r=0.27, p=0.232). For implicit participants, neither of the two correlations was significant (same structure: r=0.05, p=0.570; novel structure: r=−0.02, p=0.788); likely because the small effect sizes away from chance for this group lead to high noise in the data.
 
-## Experiment 3
+### Experiment 3
 
-## Participants
+#### Participants
 
 In total, 275 participants (134 females, age: mean=28.9, mode=24, SD=9.8) were recruited via prolific.co. All participants had normal or corrected-to-normal vision. The sample size was chosen to match that of Experiment 1. The study was approved by the Psychological Research Ethics Board of the Central European University (Approval Identifier: PREBO_2021/06_01), and all participants provided informed consent. The hourly compensation was £6.3. To ensure that participants have overnight sleep during the experiment as intended, several constraints and checks were implemented (see ‘Sleep during consolidation studies’ section of Appendix 1).
 
-## Materials
+#### Materials
 
 The materials were identical to those of Experiment 2.
 
-## Procedure
+#### Procedure
 
 The procedure was the same as Experiment 2, with the difference that the first session took place in the morning at 9 am and the second in the evening at 9 pm. As there was no night of sleep between the first and second sessions, participants filled out the GSQS only once in this experiment.
 
-## Additional analyses
+#### Additional analyses
 
 The results (Figure 2) showed above chance performance in the first training phase for participants with implicit knowledge (n=150) (M=53.9, SE=0.9, d=0.36, t(149)=4.46, p<0.001, BF=1020) and participants with explicit knowledge (n=20) (M=74.4, SE=4.3, d=1.27, t(19)=5.67, p<0.001, BF=1281). As in Experiment 1, for explicit participants, the difference between pairs of the same and novel structure was not significant (d=0.19, t(19)=0.86, p=0.999, BF=0.32), but we again saw a strong positive correlation between learning in the first learning phase and learning pairs of the same structure in the second learning phase (r=0.56, p=0.010). Such a correlation was not observed between learning in the first learning phase and learning pairs of the novel structure in the second learning phase (r=0.42, p=0.065). For implicit participants, the same structure pairs (r=0.07, p=0.430) correlation was not significant, while we saw a small significant correlation for the novel structure pairs (r=0.18, p=0.025).
 
-## Experiment 4
+### Experiment 4
 
-## Participants
+#### Participants
 
 In total, 275 participants (129 females, age: mean=27.9, mode=23, SD=8.9) were recruited via prolific.co. All participants had normal or corrected-to-normal vision. The sample size was chosen to match that of Experiment 1. The study was approved by the Psychological Research Ethics Board of the Central European University (Approval Identifier: PREBO_2021/06_01), and all participants provided informed consent. The hourly compensation was £6.3. To ensure that participants have overnight sleep during the experiment as intended, several constraints and checks were implemented (see ‘Sleep during consolidation studies’ section of Appendix 1).
 
-## Materials
+#### Materials
 
 The materials were identical to Experiment 2.
 
-## Procedure
+#### Procedure
 
 The procedure was identical to Experiment 2. However, in this experiment participants completed the first session in the evening at 9 pm, and the second session 24 hours later again in the evening at 9 pm.
 
-## Additional analyses
+#### Additional analyses
 
 The results (Figure 2) showed that participants with implicit knowledge (n=145) performed above chance for pairs of the first training phase (M=53.2, SE=0.8, d=0.34, t(144)=4.09, p=0.001, BF=260) and for pairs of the same structure (M=59.1, SE=2.4, d=0.31, t(144)=3.78, p=0.001, BF=89.4) but not pairs of a novel structure (M=48.1, SE=2.6, d=0.06, t(144)=–0.74, p=0.459, BF=0.17) in the second training phase. Participants with explicit knowledge (n=23) performed above chance for pairs of the first training phase (M=71.4, SE=4.6, d=0.9, t(22)=4.6, p=0.001, BF=217), as well as for pairs of the same structure (M=80.4, SE=6.3, d=1.01, t(22)=4.85, p=0.001, BF=347), and pairs of a novel structure (M=69.6, SE=5.9, d=0.69, t(22)=3.33, p=0.012, BF=13.6) in the second training phase. For explicit participants, we did not see a significant correlation between learning in the first learning phase and learning pairs of the same structure (r=0.109, p=0.620) or of the novel structure (r=0.111, p=0.613) in the second learning phase. For implicit participants, neither of the two correlations was significant as well (same structure: r=−0.01, p=0.894; novel structure: r=0.01, p=0.940).
 
-## Experiment 5
+### Experiment 5
 
-## Participants
+#### Participants
 
 Forty participants (18 females, age: mean=28.4, mode=19, SD=11.8) were recruited via prolific.co. All participants had normal or corrected-to-normal vision. The sample size was chosen to approximately match the number of explicit participants in Experiment 1 after exclusions. The study was approved by the Psychological Research Ethics Board of the Central European University (Approval Identifier: PREBO_2021/06_01), and all participants provided informed consent. The hourly compensation was £6.3. To ensure that participants have overnight sleep during the experiment as intended, several constraints and checks were implemented (see ‘Sleep during consolidation studies’ section of Appendix 1).
 
-## Materials
+#### Materials
 
 The materials were identical to Experiment 1.
 
-## Procedure
+#### Procedure
 
 The procedure was identical to Experiment 1, apart from the instructions. In this experiment, participants were told about the pair structure before the beginning of the experiment. Participants were told that whenever a specific shape appears in the grid a second specific shape will appear in a fixed position near it.

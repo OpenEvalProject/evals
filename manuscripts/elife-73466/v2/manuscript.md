@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/027m9bs27 Division of Molecular and Cellular Function, Faculty of Biology Medicine and Health, Manchester Academic Health Science Centre, The University of Manchester Manchester United Kingdom
-2. https://ror.org/027m9bs27 Division of Evolution, Infection and Genomics, Faculty of Biology Medicine and Health, Manchester Academic Health Science Centre, The University of Manchester Manchester United Kingdom
+1. Division of Molecular and Cellular Function, Faculty of Biology Medicine and Health, Manchester Academic Health Science Centre, The University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+2. Division of Evolution, Infection and Genomics, Faculty of Biology Medicine and Health, Manchester Academic Health Science Centre, The University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
 
 † Corresponding author
 
@@ -32,29 +32,61 @@ A model has therefore emerged of a complex interplay between mRNA-specific eleme
 
 ## Results
 
-## Quantification of co-ordinated alterations in polysome association of proteins during acute stress
+### Quantification of co-ordinated alterations in polysome association of proteins during acute stress
 
 To gain insight into mechanisms of stress responses, we set out to identify candidate proteins that might be involved in mRNA-specific translational regulation during stress as cells adapt to their changing environment. Proteins involved in translational regulation have been found associated with the translational machinery by previous mass spectrometry (MS) approaches (Fleischer et al., 2006), and by targeted studies of individual proteins which have high PE in stressed conditions (Li et al., 2004; Hirschmann et al., 2014; Kershaw et al., 2015). Proteins with mRNA-specific activation roles may retain or enhance their PE during stress. Similarly, RQC factors should be ribosome associated during stress, as both H2O2 and 3-AT have been associated with enhanced slowing and stalling of ribosomes which recruits the RQC machinery and activates Gcn2 (Shenton et al., 2006; Meydan and Guydosh, 2020; Yan and Zaher, 2021). In contrast, the rapid loss of factors from polysomes may contribute to translational repression, as observed for eIF4A during glucose starvation and heat shock (Castelli et al., 2011; Bresson et al., 2020).
 
 We initially compared the growth and polysome profile responses of a histidine prototrophic version of the standard yeast lab strain, BY4741, under two stress conditions: acute oxidative stress induced by H2O2 and amino acid starvation induced by addition of the His3 inhibitor 3-AT. Each stressor was added during exponential growth (Figure 1A), causing an interruption to cell growth which caused a loss of polysomes by 15 min (Figure 1B, C), in accord with prior studies (Costello et al., 2017). Growth recovered with time, showing that the cells were able to adapt to each stressor (Figure 1A). Qualitative analysis of protein migration through 15–50% sucrose gradients by sodium dodecyl sulphate–polyacrylamide gel electrophoresis (SDS–PAGE) indicated that most proteins were restricted to the top of the gradient, but that specific proteins did migrate deep into the gradient and were retained on polysomes (Figure 1—figure supplement 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig1-v2.jpg)
+
+**Figure 1.:** (A) Growth curves and doubling times for unstressed, 0.45 mM hydrogen peroxide (H2O2)-treated and 10 mM 3-amino-1,2,4-triazole (3-AT)-treated cultures (n = 3). The time of H2O2 or 3-AT addition is indicated. (B) Quantification of polysome-to-monosome (P/M) ratios under the three conditions (n = 4–19). Error bars show standard deviation (SD). The t-test was used to compare the conditions: ns – not significant (p > 0.05), **p < 0.01, ***p < 0.001. (C) Overview of polysomal proteomics. Monosomal (F1) and polysomal (F2–F5) fractions were isolated from unstressed, H2O2- and 3-AT-treated extracts and analysed using label-free mass spectrometry (MS). (D) The number of proteins identified reproducibly (≥2 replicates) in each fraction. Venn-style diagrams of overlaps between conditions for proteins found across (E) all five fractions or (F) the first four fractions.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Left: sodium dodecyl sulphate–polyacrylamide gel electrophoresis (SDS–PAGE) analysis of fractions from unstressed and hydrogen peroxide (H2O2)-treated extracts run on 15–50% sucrose gradients. Right: entire lanes were quantified (LI-COR Image Studio) and the percentage of the total signal that each fraction accounts for was calculated. (B) Polysome profiles and western blots comparing cycloheximide treatment (Cyc) and formaldehyde crosslinking (XL) of cultures for preparing extracts for polysome profiling. (C) Bands from (B) were quantified, as for panel A.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) r2 values for pairwise correlations between replicates (R1–R4) for each sample. (B) Principal component analysis (PCA) of the different samples under each condition. The percentage of the variation explained by each of the first two principal components is indicated. The axes are not equivalent for the different conditions. Note that only protein groups present in all samples for a given condition could be included in the comparison. (C) Pairwise comparisons between conditions for the totals. r2 values from linear regressions are indicated. Protein groups are coloured by their functional category: RP – ribosomal protein, TF – translation factor, RBP – RNA-binding protein, non-RBP – other protein.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** We hypothesised that proteins represented in polysome fractions by nascent chains and/or co-translational complex formation would show greater intensity from N-terminal peptides in F1–F5 than in totals, as they are synthesised in the N-to-C direction. (A) Peptide midpoint calculation and example cumulative peptide intensity distribution. Steps in the cumulative intensity profiles indicate peptide midpoints. For a protein detected in polysome fractions (Fraction) through only nascent chains, a shift in signal accumulation compared with a cytoplasmic extract (Total) would be expected, such that a much greater proportion of the total peptide intensity would be expected from the N-terminal end of the protein. (B) Median number of peptides and median sequence coverage (percentage of the amino acid residues that were detected by mass spectrometry (MS) in at least one peptide) for individual proteins in unstressed samples (371 uniquely detected proteins). Proteins in the shaded area were used for the analysis (142 proteins). Cumulative peptide intensity distributions for fractions and totals of named proteins. Differences between fractions and totals were tested using the Kolmogorov–Smirnov test. (C) The proteins with significantly different fraction distributions compared with totals (p < 0.05). The fractions that are significantly different are indicated by number. Only 6 of 142 showed some evidence of a bias towards the N-terminus in one or more fractions (Asc1, Cdc60, Gpm1, Gpp1, Map1, and eIF4A/Tif2), while 5 others (Fba1, Rpl16a, Rps7a, Scp160, and eEF1A/Tef2) showed different patterns. (D) Representative examples of proteins without significant differences between fractions and totals. Dashed lines are y = x.
+
 We employed polysomal proteomics to identify changes in PE for ribosome-associated proteins following treatment with either H2O2 or 3-AT. Proteins in sucrose gradient fractions were identified and quantified using label-free MS (Aebersold and Mann, 2016), from which the PE of each in unstressed and stressed conditions could be determined. To identify such proteins we grew cell cultures to logarithmic phase (OD600=0.6) and added 0.45 mM H2O2 or 10 mM 3-AT for 15 min, as these treatments had equivalent impact on ribosome run-off in polysome profiles (Figure 1B, C). We used formaldehyde treatment to stabilise ribosome-associated proteins in polysomes, which gave similar results to cycloheximide fixation for known polysome-associated proteins we assessed by immunoblotting (eIF4E, Puf3, Rps3/uS3, and Rpl35/uL29; Figure 1, Figure 1—figure supplement 1B, C). Each sample was fractionated on sucrose gradients and five fractions (F1–F5) were analysed using label-free MS (Aebersold and Mann, 2016), where F1 represents 80S/monosomal complexes and F2–F5 contain polysomal complexes of increasing size, from disomes to heavy polysomes (Figure 1B). For each fraction, as well as the respective unfractionated cytoplasmic lysates (Totals, T), four biological replicates were analysed (originating from separate yeast colonies). Between 145 and 767 unique proteins were identified in at least two replicates of each gradient fraction (Figure 1D, Supplementary file 1 – sheet 2). There was excellent correlation of the measured protein signal between replicates for unstressed fractions F1–F5 (r2 typically >0.9), but more divergence for stressed samples, especially in F4–F5 where, as expected from global polysome profiles, fewer proteins were found migrating deep into the sucrose gradients (Figure 1—figure supplement 2A). Principal component analysis showed good clustering of replicates for all three conditions, with adjacent sucrose gradient fractions indicating a gradual change in their composition when moving in sequential order from monosomes (F1) to heavy polysomes (F5; Figure 1—figure supplement 2B). Overall, these comparisons indicated that the experimental method was reproducible.
 
 In unstressed conditions, 463 proteins were detected reproducibly in every fraction F1–F5, which rose to 516 when F5 was excluded (i.e. the same 516 proteins were identified in each fraction F1–F4; Figure 1E, F). Fewer proteins were found in heavy polysomes during stress when there is ribosome run-off. Nevertheless, 353 proteins were identified in common in every fraction F1–F4 across all three conditions (Figure 1E, F). The proteins found across F1–F4 included 70 RPs, 25 TFs and regulatory proteins (TFs), 240 other known RBPs, as recently defined (Hentze et al., 2018), as well as 18 proteins that were not previously designated as RNA- or ribosome-binding (Figure 2A, Supplementary file 1 – sheet 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig2-v2.jpg)
+
+**Figure 2.:** (A) Ribosome association of proteins in F1–F4 under all three conditions (353 proteins). The proportion of each protein that is ribosome associated (% ribosomal) was estimated by comparing the summed intensity in the fractions with the totals (see Methods). Protein groups are coloured by their functional category: RP – ribosomal protein, TF – translation factor, RBP – RNA-binding protein, non-RBP – other protein. The number of proteins in each functional category is indicated. (B) The change in overall ribosome association during both stresses for selected translation-related proteins. Statistically significant changes in ribosome association (p < 0.05) are indicated by arrows: blue – decrease, red – increase.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Density plots showing fraction sum-to-total ratios (FS/T) of proteins in F1–F4 under all three conditions (353 proteins), separated by functional category. Percentage ribosome association (% ribo.) was estimated from FS/T for each protein (see Methods), and is indicated by the grey dotted lines. (B) Density plots showing changes in ribosome association (ΔFS/T) during both stresses for proteins in the four functional categories. The estimated null distributions (dotted lines, ‘Est. null’) are normal distributions with the same mean and standard deviation as the RPs under each condition. These were used to calculate p values for changes in ribosome association (see Methods). RP – ribosomal protein, TF – translation factor, RBP – RNA-binding protein, non-RBP – other protein. The number of proteins in each functional category is indicated in parenthesis.
 
 A comparison of protein abundance in cytoplasmic extracts showed minimal change in label-free quantification (LFQ) intensity (Tyanova et al., 2016) between stressed and control samples, indicating that the dramatic ribosome run-off within 15 min following stress did not have sufficient time to impact the total cellular protein content and that our method sampled cells during their adaptive phase (Figure 1—figure supplement 2C). We also saw no evidence that either nascent protein chains or co-translational complex formation (Shiber et al., 2018) contributed significantly to the signal for our polysome-associated proteins. Cumulative amino- to carboxy-terminal peptide intensity profiles for individual proteins in total and ribosomal fractions showed no N-terminal bias in F1–F5 compared with T samples, except for rare examples (Figure 1—figure supplement 3, see Methods and figure legend for details).
 
 For each protein, we estimated its percentage ribosome association by comparing abundance in the totals and the sum of the ribosome-associated fractions (see Methods; Figure 2A, Supplementary file 1 – sheet 3). As expected, RPs and ribosome-associated chaperones (e.g. Ssz1) were highly associated with ribosomes. In contrast, other proteins showed broad variations in ribosome association, from <2.5% to 100% (Figure 2A and Figure 2—figure supplement 1A). For abundant and transiently associating translation elongation factors, we estimate less than 20% of each protein was present in F1–F5, while all initiation factors except for the highly abundant eIF4A were over 30% ribosome associated in unstressed cells. Known RBPs (yellow) and proteins not assigned to any other class (grey) showed highly varied ribosome association (Figure 2A), reflecting the large functional diversity within these categories. In response to both stresses, most TFs and related factors either reduced or maintained their overall ribosome association (Figure 2B and Figure 2—figure supplement 1B). As there is a rapid attenuation in global translation initiation rates, as evidenced by polysome run-off, reduced engagement of initiation factors is expected. Under conditions of glucose starvation or heat shock the RNA helicase eIF4A is rapidly dissociated from polysomes (Castelli et al., 2011; Bresson et al., 2020). In contrast, we observed no change in eIF4A or Ded1 association, indicating that loss of eIF4A is not a universal response to stress. In addition, a reduction of elongation rates accompanies oxidative stress (Shenton et al., 2006), with enhanced eEF2 phosphorylation (Wu et al., 2020). Here, we find slightly enhanced association of both eEF2 and eIF5A with ribosomes during both oxidative stress and amino acid starvation, although neither change was statistically significant (Figure 2B). These findings are consistent with slowed translocation and enhanced ribosome pausing during stress. In summary, these stress-induced changes in the ribosome association of TFs are consistent with current ideas about how stress impacts the core translation machinery.
 
-## RPs typically respond uniformly to stress
+### RPs typically respond uniformly to stress
 
 We were able to quantify 55 RPs across F1–F5 in stressed and unstressed cells (Supplementary file 1 – sheet 2). In unstressed cells, RPs were typically distributed evenly across the monosomal and polysomal fractions (F1–F5), but greater variation was observed during stress, especially in the fractions representing denser polysomes (Figure 3A). For example, Rpl38/eL38 was among the most polysome-enriched RPs during stress, with relatively high levels in F5, while under the same conditions Asc1/RACK1 stayed relatively evenly engaged and Rps2/uS5 was significantly depleted from F4 to F5 relative to other RPs (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig3-v2.jpg)
+
+**Figure 3.:** (A) The label-free quantification (LFQ) intensities for each RP identified in all conditions F1–F5 were normalised to Rps3/uS3 on a fraction-by-fraction basis and then to unstressed F1. Boxplots showing the distribution of normalised LFQ intensities in each sample. (B) Polysome association profiles for three example RPs normalised to Rps3/uS3. Shaded areas show mean ± standard deviation (SD). (C) Clustered ‘polysome enrichment profiles’ for proteins identified under all three conditions in F1–F4. The LFQ intensities for each protein were normalised only to its own mean across the unstressed fractions. T – total. The overall ribosome association and PE during stress for each cluster or group of clusters is indicated: Poly – polysome-enriched, Mono – monosome-enriched, Even – equally enriched in all fractions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Overrepresentation analysis of gene ontology (GO) terms associated with proteins in all conditions F1–F4, performed using the R package clusterProfiler. p values were calculated using Fisher’s exact test, with false discovery rate (FDR) correction for multiple testing. The set of all proteins identified in at least one mass spectrometry (MS) sample was used as the background (Supplementary file 1 – sheet 1). To focus on RBPs and other proteins, ribosomal proteins (RPs) and translation factors were also excluded from both the test set and the background set. Only enriched terms with p value ≤0.01 (−log10(adjusted p value) ≥2) are shown. Gene ratio is the proportion of the test set annotated with a given GO term. BP – biological process, MF – molecular function. No cellular component (CC) terms were significantly enriched in this set. See Supplementary file 1 – sheet 4 for the full list of proteins associated with each term.
 
 We used unbiased hierarchical clustering of normalised LFQ intensities to determine ‘polysome enrichment profiles’ among the 353 protein groups in order to identify enrichment patterns in common across F1–F4 in all conditions (Figure 1F). This separated proteins into 14 clusters with variable F1–F4 and/or T enrichments in the presence and absence of stress (Figure 3C, Supplementary file 1 – sheet 3). Proteins in clusters 1–3 exhibited low abundance in ribosome fractions relative to totals, but maintained PE during both stresses. In contrast, those in clusters 11–14 were typically highly associated with ribosomes and enriched in heavier polysome fractions in unstressed conditions, but shifted into the monosome fraction following stress, in line with the global polysome profile change (Figure 3C).
 
 Almost all RPs were found in clusters 11 and 12 and generally behaved similar to Rps3/uS3, for example Asc1/RACK1 and Rpl38/eL38 (both cluster 12; Figure 3B), consistent with the idea that the RPs are responding in a concerted manner. Within these two clusters, there was some variation in the degree to which the different RPs shifted into monosomes during stress, for example Rps2/uS5 was relatively more depleted from heavy polysomes compared with Rps3/uS3 (Figure 3B). Only three RPs separated into other clusters. Rpl8b/uL8 and Rps10/eS10 (cluster 13) appear to be more depleted from heavy polysomes during stress, suggesting that they might be selectively lost from the mRNA-engaged pool of ribosomes during stress (Figure 3C). Conversely, Rpl7b/uL30 (cluster 6) retained PE during both stresses in a similar manner to mRNA-binding factors such as Pab1 (Figure 3C). Although a growing body of evidence suggests that variations in the association of specific RPs and paralogs with ribosomes contributes to mRNA-specific translation e.g. (Slavov et al., 2015; Ferretti et al., 2017; Gerst, 2018; Cheng et al., 2019), our data did not provide strong evidence that variations in RP abundance were critical for these stress responses, so we did not explore the variation we observed among the RPs further. Instead we focused on accessory ribosome-associated proteins.
 
-## RBPs exhibit varied polysome association in response to stress
+### RBPs exhibit varied polysome association in response to stress
 
 Several recent genome-wide studies have defined yeast RBPs by crosslinking proteins to RNA and then identifying them by an MS approach or by an in vitro protein array (Mitchell et al., 2013; Beckmann et al., 2015; Matia-González et al., 2015). Such studies have found proteins with typical RNA-binding domains (e.g. RRM, KH, and PUF) as well as a range of proteins lacking classical domains, including numerous metabolic enzymes. A recent review concluded over 1200 yeast proteins had been identified as RBPs in high-throughput studies, with many found by multiple independent methods (Hentze et al., 2018). Here, we identified over 240 polysome-associated RBPs in addition to the core RPs and TFs (Supplementary file 1 – sheets 2 and 3). In contrast to the RPs, which form a relatively tight co-regulated group, RBPs are distributed across all 14 clusters, indicating they differ widely both in their percentage ribosome association (low in clusters 1–3, medium in 8–10 and high in the other clusters) and in how their PE changes in response to stress (Figure 3C). In contrast to the RPs, which generally became less abundant in heavier fractions during stress, proteins in clusters 1–3 and 8–9 were evenly spread across the fractions in both unstressed and stressed cells, while factors in clusters 4–6 and 10 became more enriched in the heavier polysome fractions during both stresses (Figure 3C, Supplementary file 1 – sheet 3).
 
@@ -62,15 +94,23 @@ We reasoned that the factors remaining associated with polysomes during stress w
 
 Several RQC factors were identified in our dataset. For example, Mbf1 (cluster 3) is recruited to stalled disomes where it can prevent frameshifting of collided ribosomes (Wang et al., 2018). Similarly, Cdc48 (also cluster 3) is recruited to ribosomes to promote ubiquitination of stalled proteins (Defenouillère et al., 2013). In contrast Gcn1, which was recently shown to bind across both stalled and collided ribosome disome partners (Pochopien et al., 2021) and is necessary for activation of Gcn2 for eIF2 phosphorylation (Marton et al., 1997), is placed in cluster 9, which is evenly associated across polysome fractions under all conditions sampled (Figure 3C). In contrast, the ribosome-associated chaperone (RAC) complex members Zuo1 and Ssz1, follow the RP pattern in cluster 12. Thus various proteins associated with resolving stalled/collided ribosomes have distinct patterns of PE following these stresses, likely reflecting their individual roles in RQC.
 
-## Cytosolic aspartate aminotransferase moderates the ISR
+### Cytosolic aspartate aminotransferase moderates the ISR
 
 Gene ontology analysis revealed that many of the most highly polysome-enriched proteins were metabolic enzymes, including glycolytic enzymes (e.g. Pgk1, Fba1, and Eno1) and amino acid biosynthetic enzymes (e.g. Met6, His4, and Trp5) (Figure 3C, Figure 3—figure supplement 1, Supplementary file 1 – sheet 5). These proteins are polysome associated under unstressed conditions and retain or increase both their ribosome association and PE during stress (clusters 1–6 and 8–10). While their association with mRNA is known (Supplementary file 1 – sheet 3), their additional roles (if any) remain unclear. To assess whether any of these RBPs function in the stress response, we screened a selection of single gene deletion strains for growth phenotypes in the presence of H2O2. We found that deletion of AAT2, the cytosolic aspartate amino transferase, conferred an H2O2-hypersensitive growth phenotype (Figure 4A, Figure 4—figure supplement 1A). Aat2 was placed in cluster 3 in our polysomal proteomics, indicating that it is associated evenly throughout the polysome fractions in both unstressed and stressed cells, similar to the profiles for eIF4A and translation elongation factors (Figure 3C). Polysome profile analysis revealed that translation was similar in untreated aat2∆ and wild-type (parent) cells, but ribosome run-off caused by addition of H2O2 was more acute in aat2∆ at lower concentrations of peroxide (Figure 4b, Figure 4—figure supplement 1B). This is consistent with reduced translation initiation in aat2∆ contributing to H2O2 growth sensitivity, suggesting that Aat2 has a critical role in translational regulation in response to stress rather than in maintaining steady-state translation. As phosphorylation of eIF2α by Gcn2 is responsible for ribosome run-off following oxidative stress (Shenton et al., 2006), we used phospho-specific antibodies to assess the state of eIF2α in whole cell extracts, which showed heightened phosphorylation in response to lower concentrations of H2O2 in aat2∆ cells (Figure 5A). The ISR in yeast is mediated via translational control of the transcription factor GCN4. The four uORFs in the long GCN4 5′ leader limit translation of the main ORF, except where elevated eIF2α phosphorylation inhibits its nucleotide exchange factor eIF2B, enabling uORF skipping and higher Gcn4 expression. We used the well-established LacZ reporter plasmid (p180) to indirectly monitor Gcn4 levels in these cells (Hinnebusch, 2005; Gunišová et al., 2018), which confirmed that aat2∆ cells had higher LacZ levels following 2 hr of H2O2 stress (Figure 5B). Control reporter plasmids bearing single or no uORFs were not changed from the parent strain (Figure 5B), suggesting there is no defect in mRNA levels, scanning or re-initiation proficiency on the GCN4 leader. The data indicate that the yeast ISR is aberrantly activated by H2O2 when Aat2 is deleted.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig4-v2.jpg)
+
+**Figure 4.:** (A) Spotting assay of BY4741 parent and aat2Δ strains on synthetic complete dextrose (SC) medium in the presence of varying concentrations of hydrogen peroxide (H2O2). Each spot is a tenfold dilution of the previous one. (B) Representative polysome profiles from unstressed and H2O2-treated cultures. P/M: mean polysome-to-monosome ratio (n = 2–3).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Deletion strains for multiple candidate RBPs identified by polysomal proteomics were tested for sensitivity to oxidative stress. The slf1Δ strain was previously observed to be hypersensitive to oxidative stress so was used as a control (Kershaw et al., 2015). (A) Spotting assay on synthetic complete dextrose (SC) medium in the presence of varying concentrations of hydrogen peroxide (H2O2). Each spot is a tenfold dilution of the previous one. (B) Representative polysome profiles from unstressed and H2O2-treated cultures (n = 2–3).
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig5-v2.jpg)
 
-**Figure 5.:** AAT2 enhances Gcn2 activity during oxidative stress.(A) Left: representative western blots showing eIF2α phosphorylation in unstressed and hydrogen peroxide (H2O2)-treated cultures. Right: bands were quantified using LI-COR Image Studio and the eIF2α-P/eIF2α ratio was calculated. Error bars show standard deviation (SD) (n = 3). (B) Top: GCN4-lacZ reporter constructs used to test the translational activation of GCN4. Solid boxes – lacZ ORF, open boxes – GCN4 upstream ORFs, crosses – removed GCN4 uORFs. Bottom: β-galactosidase activity in strains transformed with GCN4-lacZ reporter plasmids (n = 3–10). Error bars show SD. U – unstressed, H – +0.45 mM H2O2. The t-test was used to compare the strains: ns – not significant (p > 0.05), *p < 0.05, **p < 0.01.
+**Figure 5.:** (A) Left: representative western blots showing eIF2α phosphorylation in unstressed and hydrogen peroxide (H2O2)-treated cultures. Right: bands were quantified using LI-COR Image Studio and the eIF2α-P/eIF2α ratio was calculated. Error bars show standard deviation (SD) (n = 3). (B) Top: GCN4-lacZ reporter constructs used to test the translational activation of GCN4. Solid boxes – lacZ ORF, open boxes – GCN4 upstream ORFs, crosses – removed GCN4 uORFs. Bottom: β-galactosidase activity in strains transformed with GCN4-lacZ reporter plasmids (n = 3–10). Error bars show SD. U – unstressed, H – +0.45 mM H2O2. The t-test was used to compare the strains: ns – not significant (p > 0.05), *p < 0.05, **p < 0.01.
 
-## Aat2 binds 60S ribosomes
+### Aat2 binds 60S ribosomes
 
 Our polysomal proteomics estimated that 8–10% of Aat2 was ribosome associated (Figure 2A, Supplementary file 1 – sheet 3). A strain bearing a C-terminal TAP tag behaved similarly. In unstressed cell extracts the majority of the tagged protein was retained at the top of a sucrose gradient, with 10% present in fractions 5–9 which correspond to the sucrose gradient fractions analysed by MS (Figure 6A). Equivalent percentage ribosome associations were also observed in H2O2-treated cell extracts using both western blotting with the Aat2-TAP strain and MS with the untagged strain (13% and 9%, respectively; Figure 6A, Supplementary file 1 – sheet 3). Thus, a fraction of Aat2 is polysome associated independent of the growth conditions.
 
@@ -80,15 +120,31 @@ Our polysomal proteomics estimated that 8–10% of Aat2 was ribosome associated 
 
 To investigate whether polysome-associated Aat2 was primarily ribosome- or mRNA bound or part of another high-molecular-weight complex, we separated ribosome-bound proteins from free proteins on sucrose cushion gradients and analysed the pellet fraction on new polysome gradients with or without treatment with RNase I. In the absence of RNase I, Aat2 and control mRNA-binding proteins Pab1 and Scp160 were all polysome associated (Figure 6B). Following RNase I treatment, the mRNA-binding factors migrated at the top of the gradient, while Aat2 was predominantly 80S associated, indicating it is principally a ribosome-associated factor rather than an mRNA-binding protein (Figure 6B, lanes 5 and 6). This also ruled out the possibility that Aat2 was present in polysome fractions through an association with another large cytoplasmic complex. EDTA treatment to separate the ribosomal subunits further indicated that Aat2 predominantly binds to 60S (large) subunits (Figure 6C, lanes 8–10).
 
-## Aat2 ribosome engagement and signalling to Gcn2 is independent of aspartate aminotransferase function
+### Aat2 ribosome engagement and signalling to Gcn2 is independent of aspartate aminotransferase function
 
 Aat2 is a cytosolic aspartate aminotransferase enzyme that catalyses the reversible transamination reaction: 2-oxoglutarate + L-aspartate ↔ L-glutamate + oxaloacetate. By interconverting L-aspartate and oxaloacetate, the enzyme links amino acid and carbohydrate metabolism (Figure 7—figure supplement 1A). Aat2 has a paralog, Aat1, which performs the same reactions within mitochondria, although the cytosolic form is the major contributor of total aspartate aminotransferase activity (Blank et al., 2005). When grown on minimal medium, the aat2∆ mutant is an aspartic acid auxotroph, but when amino acids are supplied, as here in our experiments, cells grow well as Aat2 enzymatic function is not required (Figure 7—figure supplement 2A). To determine if the polysome-associated role of Aat2 in the stress response can be separated from its role in metabolism, we used a crystal structure of the Aat2 homodimer (PDB 1YAA, Jeffery et al., 1998) and its homology to other aspartate aminotransferases (Winefield et al., 1995) to identify active site residues K255 and R387, which engage the cofactor pyridoxal-5′-phosphate and the active site competitive inhibitor maleate, respectively (Figure 7—figure supplement 1B). We used a CRISPR/Cas9-mediated approach to introduce glutamic acid charge reversal mutations individually at these two positions in AAT2-TAP cells, as well as creating a control strain containing four silent mutations (SM) in the guide RNA-binding sequence. Importantly, both K255E and R387E mutations conferred aspartic acid auxotrophy (Figure 7—figure supplement 2A), despite being expressed well (Figure 7—figure supplement 2B). Both mutants retain ribosome-binding activity (Figure 7—figure supplement 2C). The mutations therefore compromise aspartate aminotransferase enzyme function, but not expression or ribosome binding.
 
 All three versions of Aat2-TAP maintained the same polysome profile responses to oxidative stress (Figure 7A), unlike aat2∆ cells which show enhanced H2O2 sensitivity (Figure 4C), and the Aat2 mutant proteins all migrated into polysomes in both unstressed and stressed cells (Figure 7B, C). The stress-dependent induction of eIF2α phosphorylation in the K255E and R387E mutants was normal, unlike the heightened response to low-level stress that was observed in aat2Δ cells (Figure 7D). These data suggest that binding of catalytically inactive Aat2 to ribosomes is sufficient to restore normal activation of Gcn2 and the global translational repression response to acute stress, unlike the hypersensitive response of aat2∆. Despite this, GCN4 induction in the mutants differed from both parent and aat2Δ cells. Both mutants showed normal GCN4-lacZ activity under unstressed conditions, but failed to induce GCN4-lacZ expression during oxidative stress (Figure 7E). This last observation points to a potential further role of Aat2 downstream of eIF2 phosphorylation. Taken together, these observations indicate that the ribosome/polysome-binding and aspartate aminotransferase enzyme functions of Aat2 are separable activities and that Aat2 can modulate the yeast ISR.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig7-v2.jpg)
+
+**Figure 7.:** (A) Representative polysome profiles from unstressed and hydrogen peroxide (H2O2)-treated cultures. P/M: mean polysome-to-monosome ratio (n = 2–3). (B) Representative western blots of sucrose gradient fractions from mutated Aat2-TAP strains. The positions of the 80S/monosome and polysome fractions are indicated. (C) Quantification of the 80S/monosomal and polysomal proportions of Aat2-TAP for each strain in (B). The monosomal percentage is indicated. (D) Top: representative western blots showing eIF2α phosphorylation in unstressed and H2O2-treated cultures. Bottom: bands were quantified using LI-COR Image Studio and the eIF2α-P/eIF2α ratio was calculated. Error bars show standard deviation (SD; n = 3–4). (E) β-Galactosidase activity in strains transformed with GCN4-lacZ reporter plasmids (n = 3). Error bars show SD. U – unstressed, H – +0.45 mM H2O2. The t-test was used for comparisons in (D) and (E): ns – not significant (p > 0.05), *p < 0.05, ***p < 0.001. In (D), each t-test result refers to the comparison with the equivalent condition in the parent strain.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The role of aspartate aminotransferase (AAT) in linking the citrate cycle with amino acid biosynthesis. Both AAT1 and AAT2 encode AAT in Saccharomyces cerevisiae. Its substrates are in bold. Other pathways are available for the interconversion of 2-oxoglutarate and glutamate. Adapted from pathway sce00250 (alanine, aspartate, and glutamate metabolism – S. cerevisiae) in the KEGG database (Ogata et al., 1999). For clarity, some links are not shown. (B) Views of the Aat2 homodimer (left) and active site (right), showing the cofactor pyridoxal-5′-phosphate (PLP, green) and the competitive inhibitor maleate (purple; PDB 1YAA Jeffery et al., 1998). The two active site residues targeted by site-directed mutagenesis are in bold.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Growth at 30°C on SC, minimal medium and minimal medium supplemented with L-aspartate (+Asp). (B) Left: representative western blot of cell extracts from parent and mutant strains. Right: quantification of Aat2-TAP expression relative to Pab1 (n = 4). Error bars show standard deviation (SD). The t-test was used to compare the strains: ns – not significant (p > 0.05), **p < 0.01, ***p < 0.001. (C) Ribosome pellets were separated from supernatants using sucrose cushions and analysed by western blotting. (D) Bands from (C) were quantified using LI-COR Image Studio and the percentage of signal from each of the two fractions was calculated. Values are indicated for the ribosome pellet fraction. Strains: Par.1 – BY4741 parent strain, Par.2 – parent strain containing HIS3, aat2Δ1 – deletion strain from lab. collection, aat2Δ2 and aat2Δ3 – CRISPR/Cas9 deletions generated from Par.1 and Par.2, respectively, TAP – Aat2-TAP from lab. collection, SM – control Aat2-TAP strain with silent mutations, KE/K255E – Aat2K255E-TAP, RE/R387E – Aat2R387E-TAP.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/73466/elife-73466-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Polysome profiles from unstressed and hydrogen peroxide (H2O2)-treated cultures of the Aat2-TAP parent strain (WT) and Aat2-TAP strain with silent mutations (SM). P/M – polysome-to-monosome ratio. (B) Western blots of sucrose gradient fractions from extracts of the WT and SM strains. The positions of the 80S/monosomes and polysomes are indicated. (C) Quantification of the 80S/monosomal and polysomal proportions of uS3/Rps3 and Aat2-TAP in the two strains under each condition. The monosomal percentage is indicated.
+
 ## Discussion
 
-## Polysome proteomics
+### Polysome proteomics
 
 We used polysome profiling in combination with MS to survey proteins associated with the translational machinery. Our polysomal proteomics approach (Figure 1) captures many aspects of translation and its regulation during stress, including the behaviour of RPs, initiation factors, elongation factors, and RBPs (Figures 2 and 3). This is a powerful approach and is unbiased in the identification of proteins in sucrose gradient fractions, although we cannot definitively rule out the co-sedimentation of other large cytoplasmic assemblies with polysomes, for example P bodies or stress granules. Some of the proteins detected in ribosomal fractions therefore may not be truly RNA- or ribosome associated. However, all the proteins shown in Figures 2 and 3C were detected in ribosome fractions under unstressed conditions, when P bodies and stress granules are absent in yeast. Furthermore, the large enrichment of RNA-binding and translation-related proteins in our data gives confidence in polysomal proteomics to assess changes in proteins associated with the translational machinery during stress.
 
@@ -100,7 +156,7 @@ The RPs generally behaved coherently in their ribosome association in our data, 
 
 Uniquely among RPs, Rpl7b/uL30 was placed in cluster 6 along with mRNA-binding factors such as Pab1, which remained polysome-enriched during both stresses. Isoform-specific roles have been investigated for this paralog pair, with potential differential impacts on Ty element transposition described (Palumbo et al., 2017). In our MS data, the signal for Rpl7a (thought to be the major isoform) differed from that for Rpl7b, peaking in F5 in unstressed cells and F2 (disome/trisomes) during both stresses (Supplementary file 1 – sheet 2). Further dedicated studies will be needed to determine whether these RPs have specific roles in stress responses.
 
-## Aat2 alters the sensitivity of the ISR to oxidative stress
+### Aat2 alters the sensitivity of the ISR to oxidative stress
 
 Here, we identified Aat2 as a ribosome-binding factor modulating the oxidative stress sensitivity of yeast cells. We found that the protein was polysome associated in unstressed growth conditions and maintained its PE during both oxidative stress and amino acid starvation. Loss of Aat2 enhances both stress sensitivity and the activation of the eIF2 kinase Gcn2 (Figures 4 and 5). In yeast, Gcn2 is the sole eIF2 kinase activating the ISR (Hinnebusch, 2005; Pavitt, 2018). Previously, it was found that mutations deleting RPs or associated factors can modulate Gcn2 activation. For example, deletion of RPS10A or RPS10B (both encoding Rps10/eS10) limits the activation of Gcn2 kinase in replete conditions and following amino acid starvation (Lee et al., 2015), thus slowing activation of the ISR. Rps10 was found to contact Gcn1 in yeast two-hybrid experiments, suggesting that the RP can modify the sensitivity of Gcn1, a factor which is necessary for Gcn2 activation (Lee et al., 2015). In contrast, loss of the RQC factor Hel2 promotes or enhances eIF2α phosphorylation both in unstressed cells and in response to the alkylating agent MMS (Yan and Zaher, 2021). Hel2 is an E3 ligase that ubiquitinates Rps20/uS10 and Rps3/uS3 (both cluster 12) in response to ribosome stalling to initiate RQC (Matsuo et al., 2017). Since RQC is inhibited in the absence of Hel2 and the Gcn2 activator Gcn1 binds to stalled/collided disomes, these findings suggested a model whereby Hel2 helps to resolve moderate stalls, and that Gcn2 activation ensues when Hel2 is unable to act or is overwhelmed during stress (Yan and Zaher, 2021). We observed heightened eIF2α phosphorylation at low H2O2 levels after only 15 min of treatment in aat2∆ cells (Figure 4), which resembles these recent hel2∆ observations under similar stress conditions. Aat2 (Figure 6) and Gcn2 (Ramirez et al., 1991; Inglis et al., 2019) both bind to 60S ribosomal subunits, suggesting a potential model where Aat2 binding to polysomal 60S subunits in optimal growth conditions can antagonise Gcn2 activation. At present we cannot say how direct this role of Aat2 is, only that it appears to be acting upstream of Gcn2. Aat2 functions in amino acid metabolism as one of two enzymes that interconvert aspartate and glutamate, so we performed our studies under conditions where amino acid supply is in excess and its aspartate aminotransferase function is not essential. Two mutants that target key residues for catalytic function remain able to bind translating ribosomes and do not show the aberrant eIF2-phosphorylation and polysome profile patterns in response to stress that are characteristic of aat2∆ cells (Figure 7). These results imply that the global ISR-repressing role of Aat2 in unstressed cells is distinct from its aspartate aminotransferase function. However, while the global stress-response signalling and activation of Gcn2 appears normal in the aat2 catalytic mutants, GCN4-lacZ reporter expression was repressed. This suggests that there may a further role of Aat2 downstream of Gcn2 activation and eIF2 phosphorylation that is impacted in these strains. It was recently shown that Gcn2 can phosphorylate additional substrates relavent to the ISR including Gcn20 and the eIF2 beta subunit (Dokládal et al., 2021). Investigating if any of these or other downstream events necessary for GCN4 translational activation are impacted by Aat2 will require additional tools beyond the scope of this study.
 
@@ -108,72 +164,236 @@ Enzymes with secondary roles have been termed ‘moonlighting enzymes’ (Castel
 
 ## Materials and methods
 
-## Yeast strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Rps3 (rabbit polyclonal)</td>
+      <td>PMID:11278502</td>
+      <td></td>
+      <td>Diluted in 5% milk-TBST (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Rpl35 (rabbit polyclonal)</td>
+      <td>PMID:11278502</td>
+      <td></td>
+      <td>Diluted in 5% milk-TBST (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Pab1 (mouse monoclonal)</td>
+      <td>EnCor Biotechnology</td>
+      <td>RRID:AB_2572370</td>
+      <td>Diluted in 5% milk-TBST (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Scp160 (rabbit polyclonal)</td>
+      <td>PMID:11278502</td>
+      <td></td>
+      <td>Diluted in 5% milk-TBST (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-protein A (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich P1291</td>
+      <td>RRID:AB_1079562</td>
+      <td>Diluted in 5% milk-TBST (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Sui2 (chicken polyclonal)</td>
+      <td>PMID:31086188</td>
+      <td></td>
+      <td>Diluted in 5% milk-TBST (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-phospho-Sui2 (rabbit polyclonal)</td>
+      <td>Cell Signalling Technologies</td>
+      <td>RRID:AB_330951</td>
+      <td>Diluted in 5% milk-TBST (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW Goat anti-Rabbit IgG, H + L (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat. no.: 926-32211</td>
+      <td>Diluted in 5% milk-TBST (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD Goat anti-Mouse IgG, H + L (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat. no.: 926-68070</td>
+      <td>Diluted in 5% milk-TBST (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD Donkey anti-Chicken Ig, H + L (donkey polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat. no.: 926-68075</td>
+      <td>Diluted in 5% milk-TBST (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrogen peroxide solution</td>
+      <td>Sigma</td>
+      <td>Cat. no.: 95,321</td>
+      <td>Made 1/100 dilution in water before adding to cultures/media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Amino-1,2,4-triazole</td>
+      <td>Sigma</td>
+      <td>Cat. no.: A8056</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ambion RNase I</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. no.: AM2294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sequencing Grade Modified Trypsin</td>
+      <td>Promega</td>
+      <td>Cat. no.: V5111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE 4% to 12%, Bis-Tris, 1.0 mm, Mini Protein Gel, 12-well</td>
+      <td>Life Technologies</td>
+      <td>Cat. no.: NP0322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>XL10-Gold Ultracompetent Cells</td>
+      <td>Agilent</td>
+      <td>Cat. no.: 200,314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>S288c</td>
+      <td>Detailed in Supplementary file 1, Sheet 6</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LI-COR Image Studio and LI-COR Image Studio Lite</td>
+      <td>LI-COR Biosciences</td>
+      <td>https://www.licor.com/bio/software</td>
+      <td>Version 5.2. LI-COR Image Studio Lite has since been discontinued.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Core Team, 2019</td>
+      <td>https://www.r-project.org/</td>
+      <td>Version 3.6.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant</td>
+      <td>Tyanova et al., 2016</td>
+      <td>https://www.maxquant.org/</td>
+      <td>Version 1.5.7.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GNU Image Manipulation Program</td>
+      <td>GIMP</td>
+      <td>https://www.gimp.org/</td>
+      <td>Version 2.8.10</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains
 
 Yeast strains used in this study are described in Supplementary file 1 – sheet 6. Plasmids are described in Supplementary file 1 – sheet 7. All strains used were from the BY4741 background of S288c. Strains made in this study were constructed using standard yeast transformation and site-directed mutagenesis using the CRISPR/Cas9 system (Anand et al., 2017). Oligonucleotides used to make mutations or confirm gene deletions or mutations are listed in Supplementary file 1 – sheet 8.
 
-## Cell growth conditions
+### Cell growth conditions
 
 Saccharomyces cerevisiae colonies were inoculated into 5 ml synthetic complete medium containing dextrose (2%) lacking histidine (SC –His) and grown overnight at 30°C with rotation at 180 rpm. The next day, 200 ml cultures were started at an OD600 of 0.1. For oxidative stress experiments, H2O2 was added during exponential growth (OD600 0.6–1.0) at a final concentration of 0.2–0.8 mM. For histidine starvation, 3-AT) was added during exponential phase at a final concentration of 10 mM.
 
-## Site-directed mutagenesis
+### Site-directed mutagenesis
 
 Two point mutations were separately introduced into AAT2-TAP using the CRISPR/Cas9 system. A guide RNA targeting the AAT2 coding sequence was designed using the ATUM web tool (https://www.atum.bio/eCommerce/cas9/input) and cloned into plasmid pAV2676, containing the Cas9 gene under the control of the PGK1 promoter (Supplementary file 1 – sheet 7). Three repair oligonucleotides were designed to target repair to the AAT2 locus and generate point mutants: control, K255E and R387E (Supplementary file 1 – sheet 8). Each contained four silent mutations within the guide RNA target sequence to ensure the locus was not re-cut following repair, without changing the amino acid sequence. The Cas9/guide RNA plasmid and repair construct oligonucleotide were simultaneously transformed into the AAT2-TAP strain (GP7542) and transformants selected by plating on SC –Leu. Transformants were screened by sequencing (Eurofins Genomics) to confirm the presence of the correct mutations and the Cas9/guide RNA plasmid was removed by growth on SC medium.
 
-## Serial dilution growth spotting assays
+### Serial dilution growth spotting assays
 
 S. cerevisiae cultures were grown to exponential phase then diluted to OD600 0.1 in sterile water in a 96-well plate. A dilution series was made for each strain in sterile water to give cultures at OD600 0.1, 0.01, 0.001, and 0.0001. Two microliters of each culture were plated on to SC and SC + H2O2 (final H2O2 concentrations 0.4–2.0 mM) agar plates. Plates were incubated at 30 or 37°C and imaged after 48 hrs.
 
-## Cell extract preparation
+### Cell extract preparation
 
 Cultures were grown at 30°C to an OD600 of 0.6–1.0. Formaldehyde crosslinking was used to fix translating ribosomes and their associated factors on mRNA. Cultures were transferred into pre-chilled Falcon tubes containing formaldehyde (at a final concentration of 0.8% [vol/vol]) and a quarter volume of frozen media pellets. Samples were incubated on ice for 1 hr then excess formaldehyde was quenched by the addition of 2 M glycine (final concentration 80 mM). Cells were harvested by centrifugation, washed and lysed with acid-washed glass beads in 200 µl polysome lysis buffer (20 mM N-2-hydroxyethylpiperazine-N'-2-ethanesulfonic acid (HEPES) pH 7.4, 2 mM magnesium acetate, 100 mM potassium acetate, 0.5 mM dithiothreitol (DTT), 0.1% diethyl pyrocarbonate (DEPC)) for 20 s, seven times.
 
-## Polysome profiling
+### Polysome profiling
 
 Two A260 units of lysate were layered on to 15–50% sucrose gradients prepared in 12 ml thin-walled open polyallomer tubes (Seton Scientific) and separated by ultracentrifugation in an SW41 Ti rotor (2.5 hr at 278,000 × g, 4°C). Profiles were generated by continuous A254 recording using a UA-6 UV/Vis detector and chart recorder (Teledyne ISCO). Profile images were analysed using GNU Image Manipulation Program (version 2.8.10). Fractions were collected manually: for western blotting, 11–14 fractions (each 0.8–1 ml) were collected, starting from the top of the gradient; for MS, five fractions (each 1 ml) were collected, beginning at the start of the monosomal peak. For limited RNase digestion, 1 U/µl RNase I (Ambion) was added to lysates prior to polysome profiling and incubated for 30 min at room temperature. For EDTA treatment, 50 mM EDTA was added to lysates and incubated for 30 min on ice.
 
-## Sucrose cushions
+### Sucrose cushions
 
 Lysates were prepared as for polysome profiling. Sixteen A260 units of lysate (normalised to 500 µl volume) were layered without mixing on top of 400 µl of 36% sucrose in polysome lysis buffer, in thick-walled open polycarbonate tubes (Beckman Coulter) and separated by ultracentrifugation in a TLA120.2 rotor (Beckman Coulter; 1.5 hr at 278,000 × g, 4°C).
 
 For polysome profiling, supernatants were concentrated in Amicon Ultra 3 kDa MW cut-off centrifugal concentrators (Millipore) and ribosome pellets were resuspended in polysome lysis buffer. For western blotting, protein was extracted from supernatants and pellets were resuspended directly in protein loading buffer (2× NuPAGE LDS sample buffer [Invitrogen], 715 mM 2-mercaptoethanol). Samples were incubated for 5 min at 95°C.
 
-## Protein extraction
+### Protein extraction
 
 Protein was extracted from sucrose gradient fractions for analysis by western blotting and MS. A half volume of ice-cold 40% trichloroacetic acid (TCA) was added to each fraction, mixed by inversion and incubated overnight at –20°C. Precipitated protein was pelleted by centrifugation (15 min at 20,000 × g, 4°C) and washed twice with ice-cold acetone. Pellets were dried for 20 min at room temperature then resuspended in 5 µl of 1 M Tris and 10 µl of protein loading buffer (2× NuPAGE LDS sample buffer [Invitrogen], 715 mM 2-mercaptoethanol). Samples were incubated for 5 min at 95°C.
 
-## SDS–PAGE and western blotting
+### SDS–PAGE and western blotting
 
 Protein samples were resolved on NuPAGE 4–12% Bis-Tris gels (Invitrogen) and transferred to nitrocellulose membranes. Membranes were probed with monoclonal and polyclonal antibodies listed in Supplementary file 1 – sheet 9 and visualised using LI-COR fluorescent secondary antibodies. Bands were quantified using LI-COR Image Studio (version 5.2).
 
-## Label-free MS
+### Label-free MS
 
 Cytoplasmic extracts (referred to as Totals/T) were prepared as in ‘Cell extract preparation’. These were loaded on to sucrose gradients, fractions collected, and protein extracted as in ‘Polysome profiling’ and ‘Protein extraction’. Totals were prepared for MS by adding equal volumes of sample and protein loading buffer (2× NuPAGE LDS sample buffer [Invitrogen], 715 mM 2-mercaptoethanol), and incubating for 5 min at 95°C. Both Totals and Fractions were briefly run on NuPAGE 4–12% Bis-Tris gels (Invitrogen) and protein samples were excised from the gels. Samples were dehydrated using acetonitrile and centrifuged under vacuum. Dried gel pieces were reduced with 10 mM DTT and alkylated with 55 mM iodoacetamide, then twice washed alternately with 25 mM ammonium bicarbonate and acetonitrile. Gel pieces were dried by vacuum centrifugation and samples digested using trypsin overnight at 37°C.
 
 Liquid chromatography was carried out using an UltiMate 3000 Rapid Separation Binary System (Thermo Fisher Scientific). Peptides were concentrated using an ACQUITY UPLC M-Class Symmetry C18 Trap Column (180 μm inner diameter, 20 mm length [Waters]) and then separated using an ACQUITY UPLC M-Class Peptide BEH C18 Column (75 μm inner diameter, 250 mm length, 1.7 μm particle size [Waters]). A gradient starting with 99% Buffer A (0.1% formic acid in water) and 1% Buffer B (0.1% formic acid in acetonitrile) and increasing to 75% Buffer A and 25% Buffer B was used to separate the peptides over 45 min at a flow rate of 200 nl/min. Label-free tandem MS was performed using an Orbitrap Elite Hybrid Ion Trap-Orbitrap Mass Spectrometer (Thermo Fisher Scientific). Peptides were selected for fragmentation and MS2 analysis automatically by data-dependent analysis.
 
-## MS data processing
+### MS data processing
 
-## Database searches
+#### Database searches
 
 Raw MS data were processed using MaxQuant version 1.5.7.4 (Tyanova et al., 2016). A peptide mass tolerance of 20 ppm was used for the first search, 4.5 ppm for the main search, and 0.5 Da for the MS/MS fragment ions. The peak list was searched against the Uniprot Saccharomyces cerevisiae database (accessed 10 February 2017) using the built-in Andromeda search engine (Cox et al., 2011). Peptide-spectrum matches and protein groups were each filtered at a false discovery rate of 1%. 901 protein groups were identified in two or more replicates for at least one sample (F1–F5 or T, Supplementary file 1 – sheet 1). Of these, 840 were uniquely identified proteins encoded by single genes, while 61 are ‘grouped’ proteins that are not distinguishable by MS (most of which are RP paralog pairs). Throughout the text ‘protein’ is used to refer to both grouped and uniquely identified proteins.
 
-## Polysome enrichment profiles
+#### Polysome enrichment profiles
 
 Processed label-free data were analysed and presented using R (version 3.6.2) (R Core Team, 2019) and additional packages therein. LFQ intensity values from MaxQuant were used as the primary quantitative signal. To generate ‘polysome enrichment profiles’, LFQ intensities were log2 transformed and normalised for each protein to its mean across the unstressed ribosome fractions (F1–F5).
 
-## Ribosome association
+#### Ribosome association
 
 The overall ribosomal engagement of each protein was estimated by first summing the raw LFQ intensities in the ribosomal fractions (F1–F5) to calculate the fraction sum (FS) for each condition, then calculating the ratio between this and the respective Total (FS/T, log2 transformed). The proportion of each protein that is ribosome associated was estimated by inverse log2 transforming the FS/T ratio and dividing by 30 (to account for the difference in the relative amounts of the Fractions and Totals analysed by MS). Changes in ribosome association during stress were assessed by calculating the difference in FS/T from the condition of interest to unstressed (ΔFS/T). The RPs in general showed no change in overall ribosome association so were used to model a ‘null distribution’ of non-changing proteins (a normal distribution with the same ΔFS/T mean and standard deviation as the RPs), which was used to generate p values for each protein’s ΔFS/T value.
 
-## Hierarchical clustering
+#### Hierarchical clustering
 
 Hierarchical clustering was used to identify sets of proteins with similar ‘polysome association profiles’ using the R functions dist (method: ‘euclidean’) and hclust (method: ‘complete’).
 
-## Peptide intensity distributions
+#### Peptide intensity distributions
 
 To assess the contribution of nascent peptides to MS signal, cumulative peptide intensity from N- to C-terminus was calculated for proteins with a greater than median number of peptides detected (median = 7 peptides) and sequence coverage (proportion of residues that were detected in at least one peptide, median = 21.4%). Cumulative peptide intensity distributions from sucrose gradient fractions were compared with those from totals using the Kolmogorov–Smirnov test (with Bonferroni correction).
 
-## β-Galactosidase assays
+### β-Galactosidase assays
 
 β-Galactosidase activity was measured in strains transformed with GCN4-lacZ plasmids to assay the translational induction of GCN4 during oxidative stress as described (Dever, 1997). Strains were grown to exponential phase in 50 ml SC –uracil. Cells were harvested by centrifugation, washed and lysed with acid-washed glass beads in 200 µl of breaking buffer (0.1 M Tris pH 8, 20% glycerol, 1 mM 2-mercaptoethanol) for 20 s, five times. Another 200 µl of breaking buffer was added and mixed by vortexing. Samples were cleared by centrifugation to remove cell debris (10 min at 7000 × g, 4°C). β-Galactosidase activity was measured for 100 μl lysate mixed with 900 μl of Z-buffer (60 mM sodium phosphate dibasic heptahydrate, 45 mM sodium phosphate monobasic, 10 mM potassium chloride, 2 mM magnesium sulphate, and 40 mM 2-mercaptoethanol). Samples were incubated for 10 min at 28°C and reactions started by adding 200 μl ONPG (4 mg/ml in Z-buffer). Reactions were stopped by the addition of 500 μl 1 M sodium carbonate and A405 was measured.

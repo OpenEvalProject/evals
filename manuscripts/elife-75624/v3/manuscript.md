@@ -15,18 +15,18 @@
 
 ### Affiliations
 
-1. https://ror.org/00t33hh48 Developmental and Regenerative Biology Program, School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin Hong Kong Hong Kong
-2. https://ror.org/050s6ns64 School of Medical Technology and Engineering, Fujian Medical University Fujian China
-3. https://ror.org/00t33hh48 Cancer Biology and Experimental Therapeutics Program, School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin Hong Kong China
-4. https://ror.org/02c31t502 Guangzhou Regenerative Medicine and Health Bioland Laboratory, Guangzhou Institutes of Biomedicine and Health Guangzhou China
-5. https://ror.org/0083mf965 Germline Stem Cell Biology Laboratory, Centre for Reproductive Health, Hudson Institute of Medical Research Melbourne Australia
-6. https://ror.org/00t33hh48 Department of Chemical Pathology, The Chinese University of Hong Kong, Shatin, New Territories Hong Kong China
+1. Developmental and Regenerative Biology Program, School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin Hong Kong Hong Kong ([ROR:00t33hh48](https://ror.org/00t33hh48))
+2. School of Medical Technology and Engineering, Fujian Medical University Fujian China ([ROR:050s6ns64](https://ror.org/050s6ns64))
+3. Cancer Biology and Experimental Therapeutics Program, School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin Hong Kong China ([ROR:00t33hh48](https://ror.org/00t33hh48))
+4. Guangzhou Regenerative Medicine and Health Bioland Laboratory, Guangzhou Institutes of Biomedicine and Health Guangzhou China ([ROR:02c31t502](https://ror.org/02c31t502))
+5. Germline Stem Cell Biology Laboratory, Centre for Reproductive Health, Hudson Institute of Medical Research Melbourne Australia ([ROR:0083mf965](https://ror.org/0083mf965))
+6. Department of Chemical Pathology, The Chinese University of Hong Kong, Shatin, New Territories Hong Kong China ([ROR:00t33hh48](https://ror.org/00t33hh48))
 
 † Corresponding author
 
 ## Abstract
 
-Spermatogenesis depends on an orchestrated series of developing events in germ cells and full maturation of the somatic microenvironment. To date, the majority of efforts to study cellular heterogeneity in testis has been focused on single-cell gene expression rather than the chromatin landscape shaping gene expression. To advance our understanding of the regulatory programs underlying testicular cell types, we analyzed single-cell chromatin accessibility profiles in more than 25,000 cells from mouse developing testis. We showed that single-cell sequencing assay for transposase-accessible chromatin (scATAC-Seq) allowed us to deconvolve distinct cell populations and identify cis -regulatory elements (CREs) underlying cell-type specification. We identified sets of transcription factors associated with cell type-specific accessibility, revealing novel regulators of cell fate specification and maintenance. Pseudotime reconstruction revealed detailed regulatory dynamics coordinating the sequential developmental progressions of germ cells and somatic cells. This high-resolution dataset also unveiled previously unreported subpopulations within both the Sertoli and Leydig cell groups. Further, we defined candidate target cell types and genes of several genome-wide association study (GWAS) signals, including those associated with testosterone levels and coronary artery disease. Collectively, our data provide a blueprint of the ‘regulon’ of the mouse male germline and supporting somatic cells.
+Spermatogenesis depends on an orchestrated series of developing events in germ cells and full maturation of the somatic microenvironment. To date, the majority of efforts to study cellular heterogeneity in testis has been focused on single-cell gene expression rather than the chromatin landscape shaping gene expression. To advance our understanding of the regulatory programs underlying testicular cell types, we analyzed single-cell chromatin accessibility profiles in more than 25,000 cells from mouse developing testis. We showed that single-cell sequencing assay for transposase-accessible chromatin (scATAC-Seq) allowed us to deconvolve distinct cell populations and identify cis-regulatory elements (CREs) underlying cell-type specification. We identified sets of transcription factors associated with cell type-specific accessibility, revealing novel regulators of cell fate specification and maintenance. Pseudotime reconstruction revealed detailed regulatory dynamics coordinating the sequential developmental progressions of germ cells and somatic cells. This high-resolution dataset also unveiled previously unreported subpopulations within both the Sertoli and Leydig cell groups. Further, we defined candidate target cell types and genes of several genome-wide association study (GWAS) signals, including those associated with testosterone levels and coronary artery disease. Collectively, our data provide a blueprint of the ‘regulon’ of the mouse male germline and supporting somatic cells.
 
 ## Introduction
 
@@ -40,21 +40,41 @@ By profiling the genome-wide regulatory landscapes at a single-cell level, recen
 
 ## Results
 
-## Single-cell ATAC-Seq captures developmental and cell type-specific heterogeneity in the testis
+### Single-cell ATAC-Seq captures developmental and cell type-specific heterogeneity in the testis
 
 To delineate the dynamic changes on cellular populations in a developing testis, we profiled the chromatin accessibility landscapes of mouse perinatal testis across E18.5 and postnatal stages (P0, P2, and P5) by scATAC-Seq (Figure 1A). These time points were chosen to represent the diversity of cell-type compositions involved in the key developmental events in the testis (Figure 1B). Altogether, we profiled chromatin accessibility in 25,613 individual cells after stringent quality control filtration and heterotypic doublet removal (Figure 1—figure supplement 1). These samples showed no clustering based on covariates such as transcription start site (TSS) enrichment and number of fragments detected (Figure 1—figure supplement 2A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig1-v3.jpg)
+
+**Figure 1.:** (A) Experimental design. The workflow of testis collection and single-cell sequencing assay for transposase-accessible chromatin (scATAC-Seq) to measure single nuclei accessibility on BioRad SureCell ATAC-Seq platform. (B) Illustration of the testicular microenvironment. GC: germ cell; SC: Sertoli cell; LC: Leydig cell; BV: blood vessel; BM: basement membrane; ST: seminiferous tubule; PTM: peritubular myoid cell. (C) Uniform manifold approximation and projection (UMAP) representations with cells colored by the gene score of marker genes for each cell type. (D) UMAP representation of cells captured from four time points. Cells are colored by predicted groups. (E) Bar chart showing the distribution of cells in each cluster for different time points. (F) Heatmap of 12,250 marker genes across cell types (FDR ≤ 0.05, Log2FC ≥ 0.2).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the workflow of scATAC-Seq data quality control to remove the low-quality nuclei. The following three parameters are considered: (1) the number of unique nuclear fragments (indicating not mapping to mitochondrial DNA); (2) transcription start site (TSS) enrichment (a high signal-to-background ratio is expected in live cells); (3) the fragment size distribution (the length of DNA wrapped around a nucleosome is expected). (B) The fragment size distribution plot shows enrichment at around 100 and 200 bp, indicating nucleosome-free and mono-nucleosome-bound fragments. (C) Violin plot showing TSS enrichment across samples. (D) Violin plot showing number of fragments per cell across samples. (E) Plot of TSS enrichment score versus the total number of unique fragments of each sample. Only cells lying in the upper right quadrant (marked by dashed lines) are retained for heterotypic doublet removal and downstream analysis.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Transcription start site (TSS) enrichment, number of fragments (nFrags), and fraction of reads in peaks (FRIP) of all cells shown in uniform manifold approximation and projection (UMAP). (B) UMAP representation of testicular cells captured from all four time points. (C) Prediction scores of integration with scRNA-Seq data.
 
 Several clusters showed developmental stage specificity, which were made up almost entirely of cells from a single time point (Figure 1—figure supplement 2B). To improve cell-type annotation, we used Harmony to integrate datasets of four time points and project cells onto a shared embedding in which cells were grouped by cell type rather than developmental stage (Korsunsky et al., 2019). Unbiased iterative clustering of these single cells after integration identified 11 distinct clusters (Figure 1—figure supplement 2B). Some clusters could be assigned to known testicular cell types based on gene activity scores of key marker genes compiled from chromatin accessibility signals within the gene body and promoter (Figure 1C; Tan et al., 2020).
 
 While this approach provided broad classifications for cell-type annotation, an unbiased method is needed for more accurate classification. Therefore, we leveraged a previously published scRNA-Seq dataset of perinatal testis samples to predict cell types in scATAC-Seq data (Tan et al., 2020). We first re-analyzed scRNA-Seq data to determine the cellular composition and annotate cells based on their transcriptional profiles. Prediction of cell types in scATAC-Seq was then performed by directly aligning cells from scATAC-Seq with cells from scRNA-Seq through comparing the ‘query’ gene activity scores matrix with ‘reference’ gene expression matrix based on the top variable genes in the scRNA-Seq dataset (Supplementary file 1). The results showed that the vast majority of cells had a high prediction score and were confidently assigned to a single cell type (Figure 1D, Figure 1—figure supplement 2C). Cell-type proportions varied across time points, such as the expansion of germ cells during the early neonatal period (Figure 1E). We further validated the cluster assignment by gene score and chromatin accessibility profiles of marker genes (Figure 1F). Taken together, scATAC-Seq allowed the detection and assignment of cell identities in the developing testis.
 
-## Chromatin accessibility defines cell types in developing testis
+### Chromatin accessibility defines cell types in developing testis
 
 Cell types can be distinguished based on whether differentially accessible chromatin regions (DARs) are ‘open’ or ‘closed’. After identifying 214,890 accessible chromatin regions in the scATAC-Seq library (Supplementary file 2), we investigated cell type-specific chromatin accessibility profiles. We compared differences in chromatin accessibility among cell types directly using Wilcoxon testing to identify DARs while accounting for TSS enrichment and the number of unique fragments per cell (Figure 2A, Supplementary files 3 and 4). Deconvolution of chromatin accessibility by cell types revealed that accessible sites are primarily located in the distal and intron region (>3 kb from TSS), suggesting an enrichment of gene regulatory elements (Figure 2—figure supplement 1A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig2-v3.jpg)
+
+**Figure 2.:** (A) Heatmap of 51,937 differentially upregulated accessible peaks (FDR ≤ 0.01, Log2FC ≥ 2) across cell types. (B) Aggregated single-cell sequencing assay for transposase-accessible chromatin (scATAC-Seq) profiles of selected markers. (C) Heatmap of enriched motifs (FDR ≤ 0.1, Log2FC ≥ 0.5) across cell types. (D) TF footprints (average ATAC-Seq signal around predicted binding sites) for selected TFs. (E) Schematic of identifying positive TF regulators through correlating gene score (scATAC-Seq data)/gene expression (integrating scATAC-Seq and scRNA-Seq data) with TF motif activity (scATAC-Seq data). (F) Scatter plot of positive TF regulators (correlation >0.5, adjusted p-value <0.01). (G) Heatmaps of differential TF motif activity (left) and gene expression (right) of positive TF regulators in F. (H) TF overlay on scATAC uniform manifold approximation and projection (UMAP) of TF chromVAR deviations (top) and gene expression (bottom).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Genomic distributions of DARs across cell types. (B) chromVAR deviation score of Sertoli cell DHSs shown in uniform manifold approximation and projection (UMAP) (left). DARs for the Sertoli cell cluster are significantly enriched for Sertoli cell DHSs compared to other clusters (right).
+
 We found cluster-specific DARs were associated with cell type-specific marker genes identified from scRNA-Seq (Figure 2B). For example, Amh is a marker gene in Sertoli cells, and it showed increases in both number and amplitude of ATAC peaks within its promoter and gene body. We further compared DARs to a previously published DNase-Seq experiments in bulk Sertoli cells and found that DNase I hypersensitive sites were clearly enriched in the Sertoli cell population in our scATAC-Seq (Figure 2—figure supplement 1B; Maatouk et al., 2017). These data confirm that scATAC-Seq is a robust method for the detection of cell type-specific chromatin accessibility.
 
-## Chromatin accessibility is associated with cell type-specific TF activity
+### Chromatin accessibility is associated with cell type-specific TF activity
 
 Currently, the identities of cell type-specific TFs involved in testis development are poorly defined. Accessibility at regulatory sites is driven by TF binding and histone modifications of local chromatin (Cui et al., 2013). To characterize the determinants of chromatin accessibility variation among cell types, we predicted TF ‘activity’ for individual cell types based on the presence of binding motifs within DARs. Assessment of enriched TFs and their cognate motifs identified several known cell type-specific regulators – including the nuclear receptors (NR4A1 and NR5A1) in Sertoli cells and Leydig cells, ESR2 in Leydig cells, MYOG in PTMs, and previously uncharacterized TFs as potential cell type-specific regulators (Figure 2C). For example, we found that ZEB1 and SNAI2 motifs were enriched in germ cells, indicating they may undergo mesenchymal-like transition in perinatal development (Hammoud et al., 2015; Liao et al., 2020). DNA bound by TFs is protected from transposition by Tn5, which can be visualized by plotting the ‘footprint’ pattern of each TF as the local chromatin accessibility surrounding the motif midpoint. Examining the footprint validated the cell type-dependent differential footprint occupancy of identified TFs (Figure 2D).
 
@@ -64,9 +84,19 @@ To reduce false discovery, we systematically identified putative positive regula
 
 Importantly, we observed that individual cell types can be defined by TF ‘activity’, suggesting that cell type-specific TFs likely regulate chromatin accessibility. Collectively, these results are indicative of robust inference of TF activity at the level of single cells and reveal TF dynamics central to cis-regulatory specification of diverse cell states.
 
-## Chromatin accessibility is associated with cell type-specific chromatin interaction networks
+### Chromatin accessibility is associated with cell type-specific chromatin interaction networks
 
 As enhancers play a critical role in establishing tissue-specific gene expression patterns during development, we predicted that active enhancers would be enriched around lineage-specific genes. To test this, we used an analytical framework to link distal peaks to genes in cis, based on the coordination of chromatin accessibility and gene expression levels across cells (Figure 3A). We identified 35,245 peak-to-gene links by correlating accessibility changes of ATAC peaks within 250 kb of the gene promoter with the mRNA expression of the gene from scRNA-Seq. Some of these peak-to-gene links are likely to be promoter-enhancer regulatory units, as 3262 regions overlapped with previously identified testis enhancers (Gao and Qian, 2020; Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig3-v3.jpg)
+
+**Figure 3.:** (A) Schematic for identifying significant peak-to-gene links by correlating accessible peaks (single-cell sequencing assay for transposase-accessible chromatin [scATAC-Seq] data) to gene expression (integrating scATAC-Seq data and scRNA-Seq data). (B) Heatmaps of peak accessibility (left) and gene expression (right) of 22,545 peak-to-gene linkages across cell types. (C) Aggregated scATAC-Seq profiles showing peak-to-gene links to the Sox9 locus overlapped with known enhancer regions. (D) Aggregated scATAC-Seq profiles showing peak-to-gene links to the Wt1 locus overlapped with known enhancer regions. (E) Aggregated scATAC-Seq profiles showing peak-to-gene links to the Dlk1 locus overlapped with SNP. (F) Sorting strategy for isolation of DLK1- and DLK1+ cells from P6 whole testis. The majority of DLK1+ cells are located in P1 (upper left). The DLK1-/+ population was gated using Red-X-labeled sample compared with unstained control (lower left). RT-PCR analysis (right) of relative expression of peritubular myoid cell (PTM) marker (Acta2), Leydig cell marker (Cyp11a1), and stromal cell marker (Igf1) of DLK1-/+ cells compared with whole testis sample (p<0.001, n=3, one-way ANOVA). Gapdh was used as endogenous control. Error bars are plotted with SD. (G) Representative confocal images of testis sections from Oct4-GFP transgenic mice at P6. Stromal cells (asterisks) and some PTMs (arrowheads) are positive for DLK1 (red). Oct4-GFP indicated germ cells. Cell nuclei were stained with DAPI. Scale bar = 50 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Venn diagram showing significant overlapping of peak-to-gene links and known testis enhancers. p-Value was calculated by the hypergeometric test using ChIPpeakAnno. (B) Top results from the Gene Ontology (GO) enrichment test showing the terms associated with peak-to-gene links in each cluster identified in Figure 3B.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig3-figsupp2-v3.jpg)
 
 To identify putative cis-regulatory elements (CREs) specific to each cell type, we performed clustering analysis, with each cluster containing peak-to-gene links enriched in one or two specific cell types (Figure 3B). Gene Ontology (GO) analysis of the targets of peak-to-gene links in each cluster confirmed that they were highly enriched in terms related to regulations of each cell type (Figure 3—figure supplement 1B). The full list of peak-to-gene links in each cluster can be found in Supplementary file 5.
 
@@ -76,9 +106,25 @@ Although DLK1 is considered as a marker for immature Leydig cells in human (Lott
 
 In conclusion, our results highlight the occurrence of diverse cell type-specific regulatory configurations among CREs and their target genes in the testis.
 
-## Stage-specific TF regulators and chromatin co-accessibility during gonocyte to spermatogonia transition
+### Stage-specific TF regulators and chromatin co-accessibility during gonocyte to spermatogonia transition
 
 Next, we analyzed the chromatin accessibility characteristics of the individual germ cell subsets in our datasets. Since the goal was to reveal developmental dynamics, we did not perform ‘harmony’ integration since we didn’t want to remove the contribution of developmental stage-of-origin from the embedding. Re-clustering of germ cells from the E18.5, P0, P2, and P5 testicular datasets revealed seven-cell clusters (Figure 4A and Figure 4—figure supplement 1A). Notably, germ cells from E18.5 and P0 are largely clustered together and occupy clusters GC1 and GC3, indicating a minimal change of chromatin accessibility before and after birth. In contrast, P2 cells are present in GC2 and P5 cells occupy the remaining clusters.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig4-v3.jpg)
+
+**Figure 4.:** (A) Uniform manifold approximation and projection (UMAP) representation of germ cells. Cells are colored by time points (left) and clustering based on constrained integration with scRNA-Seq data (right). (B) Heatmaps of differential transcription factor (TF) motif activity (left) and gene activity (right) of positive TF regulators across cell clusters (correlation >0.5, adjusted p-value <0.01). (C) TF overlay on scATAC UMAP of gene expression (top) and TF chromVAR deviations (bottom) for positive TF regulator examples in B. (D) Representative confocal images of immunostaining on sections from P6 testis demonstrate that a subset of germ cells (TRA98+) express the Sertoli cell marker NR5A1 (arrowhead), while the majority of germ cells are NR5A1-negative (arrow). Scale bar = 50 μm. (E) Gene activity of Ngn3 shown in UMAP.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Uniform manifold approximation and projection (UMAP) representation of the germ cells. Cells are colored by cell clusters. (B) UMAP representation of the germ cells from scRNA-Seq dataset after re-clustering. Cells are colored by time points (top) and by cell clusters (bottom). (C) Predicted score of constrained integration with scRNA-Seq data shown in UMAP (top). Histogram of predicted score of constrained integration with scRNA-Seq data (bottom). (D) Violin plots showing gene score (single-cell sequencing assay for transposase-accessible chromatin [scATAC-Seq]) and mRNA expression (scRNA-Seq) of germ cell and Sertoli cell marker genes. (E) scATAC-Seq profiles are ordered by pseudotime, corresponding to the perinatal developmental trajectory. (F) Smoothened heatmap showing dynamic motif accessibility (left), gene score (middle), and gene expression (right) of indicated TFs along pseudotime.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Smoothened heatmaps showing dynamic gene expression (left) and motif accessibility (right) of indicated transcription factors (TFs) along pseudotime for gene-motif pairs of the trajectory in Figure 6C. (B) Gene expression (left) and motif accessibility (right) of selected TFs ordered by pseudotime.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig4-figsupp3-v3.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig4-figsupp4-v3.jpg)
 
 Deconvoluting cell states using scATAC-Seq measurements alone is difficult within a single cell type. Therefore, we integrated the germ cell subsets based on scATAC-Seq data with the published perinatal testis scRNA-Seq dataset (Figure 4—figure supplement 1B). The prediction scores of individual cells were overall high, indicating the cluster identity assignment was reliable (Figure 4—figure supplement 1C). This prediction revealed four clusters of known developmental stages, T1-ProSG (T1), T2-ProSG (T2), undifferentiated spermatogonia (Undiff), and differentiation-primed spermatogonia (Diff), together with two clusters with unknown identity (Figure 4A).
 
@@ -90,13 +136,29 @@ To determine the key genes driving the spermatogonial development in the first t
 
 We further predicted regulatory interactions from scATAC-Seq data, identifying 12,819 putative peak-to-gene links (Figure 4—figure supplement 3). For example, Cluster 1 included peaks linked to stem cell-related genes Sdc4 and Cdh1 (Figure 4—figure supplement 4). Cluster 2 included peaks connected to genes related to progenitors and differentiating cells such as proliferation marker Top2a. Cluster 3 peak-to-gene links were more accessible predominantly in T1-ProSG, such as T and Fbxo4. Taken together, our results could lead to a deeper understanding of the expression pattern of TF regulators in cells of the developing testis and also reveal candidate CREs essential for regulating spermatogonial development and differentiation.
 
-## TF dynamics during perinatal Sertoli cell development
+### TF dynamics during perinatal Sertoli cell development
 
 Re-clustering of Sertoli cells revealed six-cell clusters (Figure 5A). SC1 is the most varied from the other clusters, with marker genes related to spermatogenesis, such as Fzr1, Egfr, and Npas2 (Figure 5—figure supplement 1A). We then identified TFs enriched along the Sertoli cell developmental trajectory (Figure 5B and C). For instance, Gata2 and Ppara were enriched at early developmental stages (Figure 5—figure supplement 1B). Gata2 has been identified as a target of androgen receptor (AR) in Sertoli cells, while Ppara regulates cholesterol metabolism and lipid oxidation in Sertoli cells (Bhardwaj et al., 2008; Shi et al., 2018). In contrast, Hic1 and Cebpd were upregulated at the later stage (Figure 5—figure supplement 1B). Conditional knockout of Hic1 in mice resulted in fewer Sertoli cells in seminiferous tubules (Uchida et al., 2020). Further, induction of C/EBP proteins by cAMP may play a role in FSH-dependent regulation in Sertoli cells (Grønning et al., 1999).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig5-v3.jpg)
+
+**Figure 5.:** (A) Uniform manifold approximation and projection (UMAP) representation of Sertoli cells. Cells are colored by time points (upper panel) and cell clusters (lower panel). (B) Single-cell sequencing assay for transposase-accessible chromatin (scATAC-Seq) profiles are ordered by pseudotime, corresponding to the perinatal development trajectory. (C) Smoothened heatmaps showing dynamic gene score (left) and motif accessibility (right) of indicated transcription factors (TFs) along pseudotime for gene-motif pairs of the trajectory in B. (D) TF overlay on scATAC UMAP of gene activity scores (top) and TF chromVAR deviations (bottom) for positive TF regulators in C. (E) Gene activity scores of Mbd3, Fos, and Sertoli cell marker genes (Dmrt1, Wt1, Amh, and Sox9) shown in UMAP. (F) Representative confocal images of immunostaining on sections from P6 testis reveal that Sertoli cells exhibit diverse expression patterns of MBD3 and AMH, such as MBD3-high/AMH-high (arrowhead), MBD3-low/AMH-low (arrow), and MBD3-low/AMH-high (asterisk). Cell nuclei were stained with DAPI. Scale bar = 50 μm. (G) UMAP representation of Leydig cells. Cells are colored by cell clusters. (H) Aggregated scATAC-Seq profiles showing peak-to-gene links to the Col4a1 and Col4a2 loci in C1 cluster. (I) Heatmaps of differential TF motif activity (left) and gene expression (right) of positive TF regulators (correlation >0.5, adjusted p-value <0.01).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmap of 81 marker genes across cell clusters (FDR <0.1, log2FC >0.5). (B) Gene score (left) and motif accessibility (right) of selected transcription factors (TFs) ordered by pseudotime. (C) Uniform manifold approximation and projection (UMAP) showing the motif accessibility of FOS across cell clusters. Logo of underlying sequences is shown above. (D) UMAP representation of Leydig cells. Cells are colored by time points. (E) Gene activity scores of Leydig cell marker genes (fetal Leydig cell [FLC]: Gata4, Igf1, StAR; stem Leydig cell [SLC]: Itgav, Nr2f2, Pdgfra, Pdgfrb, Nes, Thy1) shown in UMAP. (F) Heatmap of 761 marker genes across cell clusters (FDR <0.1, log2FC >0.5). (G) Top results from the Gene Ontology (GO) enrichment test showing the terms associated with marker genes in cluster LC1 as shown in F.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Uniform manifold approximation and projection (UMAP) representation of PTMs and stromal cells. Cells are colored by time points (left) and by cell clusters (right). (B) Cell clusters visualized by UMAP in 3D. (C) Gene activity scores of selected genes shown in UMAP. (D) Heatmap showing the gene score of 1927 marker genes across cell clusters (FDR <0.1, log2FC >0). (E) Heatmap of enriched motifs (FDR ≤ 0.1, log2FC ≥ 0.05) across cell clusters. (F) Single-cell sequencing assay for transposase-accessible chromatin (scATAC-Seq) profiles are ordered by pseudotime, corresponding to the perinatal development trajectory based on time points. (G) Smoothened heatmap showing dynamic gene score (left) and motif accessibility (right) of indicated transcription factors (TFs) along pseudotime for gene-motif pairs of the trajectory in F. (H) TF overlay on scATAC UMAP of gene activity scores (top) and TF chromVAR deviations (bottom) for positive TF regulators across cell clusters (correlation >0.5, adjusted p-value <0.01).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/75624/elife-75624-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Uniform manifold approximation and projection (UMAP) representation of the Leydig cells. Cells are colored by time points (left) and by cell clusters (right). (B) Heatmap showing the gene score of 3427 marker genes across cell clusters (FDR <0.1, log2FC >0.5). (C) Scatter plot of positive transcription factor (TF) regulators in blood cells identified by correlation between gene expression and TF motif activity (correlation >0.5, adjusted p-value <0.01). (D) Heatmaps showing differential gene activity (top) and TF motif activity (bottom) of positive TF regulators in C across cell clusters.
+
 We further uncovered the positive TF regulators in distinct Sertoli cell subsets. Interestingly, the SC1 cluster could be clearly distinguished from the other cell clusters as the 11 identified potential positive TF regulators either have highest or lowest activity in SC1 (Figure 5D). For example, activity of several SP/KLF family members are enriched in SC1, including Sp1, which is reported to upregulate the transcription of nectin-2 and JAM-B in Sertoli cells (Lui and Cheng, 2012). SC1 is also characterized by a significantly higher gene activity of Amh and Mbd3, a 5hmC binding protein, when compared with other clusters (Figure 5E, Figure 5—figure supplement 1A). Immunostaining results confirm the properties of SC1 cells as MBD3-high cells tend to have higher levels of AMH (MBD3-high/AMH-high). It also underscores the heterogeneity of Sertoli cells revealed by scATAC-Seq, as evidenced by the presence of various expression patterns such as MBD3-low/AMH-high (cluster SC3, Figure 5A) and MBD3-low/AMH-low (cluster SC2/4/5/6, Figure 5A) (Figure 5F). We also observed lower gene activity of Sertoli cell markers Sox9, Dmrt1, and Wt1 in SC1, as well as the lowest motif binding activity and gene score for FOS, a mediator of Sertoli cell differentiation (Figure 5E, Figure 5—figure supplement 1C) (Papadopoulos and Dym, 1994). Therefore, SC1 cells might represent a less differentiated state of Sertoli cells, which warrant further investigation (Estermann et al., 2020).
 
-## Characterization of TF regulation during perinatal Leydig cell development
+### Characterization of TF regulation during perinatal Leydig cell development
 
 Re-clustering of Leydig cells generated three main clusters (Figure 5G, Figure 5—figure supplement 1D). Based on the gene activities of known Leydig cell markers, cluster LC2 is likely to represent FLCs, while LC1 and LC3 showed enrichment in different sets of SLC markers (Figure 5—figure supplement 1E). Notably, most of the marker genes identified across the clusters were upregulated in LC1 (Figure 5—figure supplement 1F). GO terms associated with the marker genes in LC1 include extracellular structure organization and connective tissue development (Figure 5—figure supplement 1G). For instance, Col4a1 and Col4a2 showed higher gene activity in LC1, accompanied by LC1-specific peak-to-gene links to the bidirectional collagen IV promoter (Figure 5H). Previous studies have indicated that collagen IV-mediated signaling is involved in progenitor Leydig cell proliferation, suggesting that LC1 cells may represent a later developmental stage of SLC (Anbalagan and Rao, 2004).
 
@@ -104,7 +166,7 @@ Next, we identified 40 putative positive TF regulators of Leydig cells (Figure 5
 
 Taken together, we uncovered potential genes and TFs that regulate the three main Leydig cell subpopulations present during the perinatal period.
 
-## Stromal cell heterogeneity and PTM development during the perinatal period
+### Stromal cell heterogeneity and PTM development during the perinatal period
 
 Since PTMs and stromal cells were clustered into a single large cluster (Figure 1D) and PTMs are suggested to be derived from interstitial progenitors (Shen et al., 2020), PTMs and stromal cells were grouped together for subsequent analysis. Re-clustering of this cell group generated 10 clusters of cells (Figure 5—figure supplement 2A and B). Within the clusters, PC8, PC9, and PC10 showed higher gene activity of Myh11, indicating their PTM identity, while other clusters were stromal cells (Figure 5—figure supplement 2C); 1927 marker genes were identified across the clusters (FDR <0.1) (Figure 5—figure supplement 2D). Interestingly, the gene expression pattern of PC2 resembles telocytes, a recently described stromal cell type, which co-expresses Tcf21, Cd34, and Pdgfra and is negative for Pecam1, Kit, and Acta2 (Figure 5—figure supplement 2C; Marini et al., 2018). Our results thus confirm that testis stromal cells are highly heterogeneous in nature.
 
@@ -114,11 +176,11 @@ We then identified the TFs enriched along the PTM developmental trajectory (Figu
 
 Lastly, we identified the putative positive TF regulators regulating PTM and stromal cells (Figure 5—figure supplement 2H). Notably, Smad3, Gata4, Tcf15, Nhlh2, and Ppard showed upregulation in PTM clusters, while Rfx1, Rfx2, Lbx2, Nfya, Yy1, and Fosl1 were upregulated in stromal clusters. Concordantly, Gata4 has been described as a negative regulator of contractility in PTM, whereas Smad3 is associated with androgen responsiveness and postnatal testis development (Itman et al., 2011; Wang et al., 2018a).
 
-## Identification of cell type-specific TFs in immune cells
+### Identification of cell type-specific TFs in immune cells
 
 Re-clustering of all the immune cells generated four-cell clusters (Figure 1D, Figure 5—figure supplement 3A), which can be re-grouped as three main groups based on the expression of their corresponding marker genes, including T cells/NK cells (IC1 and IC2), myeloid cells (IC3), and dendritic cells (IC4) (Figure 5—figure supplement 3B). Since testicular tissue-resident macrophages were shown to be involved in steroidogenesis, spermatogonia differentiation, and Leydig cell function, our subsequent analysis focused on IC3 which included the macrophage population. We first identified cluster-specific positive TF regulators (Figure 5—figure supplement 3C and D). This accurately identified C/EBP proteins governing macrophage differentiation and mobilization and KLFs controlling macrophage activation and polarization (Date et al., 2014; Mahabeleshwar et al., 2011; McMahon et al., 1989; Wada et al., 2015). Other well-known TFs with functions in myeloid cells/macrophages were identified including Zeb1, Creb1, Fosl2, Egr1, and Nfat5. Our analysis also revealed new candidates potentially regulating testis myeloid cells, such as Nfya, Zfp42, and Tef. Notably, Nfya and Zfp42 participate in testicular functions (Iyer et al., 2016; Rezende et al., 2011). TF candidates identified above could serve as future investigation targets related to testicular immune cells.
 
-## Single-cell chromatin accessibility identified human GWAS target regulatory regions, genes, and cell types in the testis
+### Single-cell chromatin accessibility identified human GWAS target regulatory regions, genes, and cell types in the testis
 
 Genome-wide association studies (GWAS) have been exceedingly successful in identifying nucleotide variations associated with specific diseases or traits. The significance of these findings can be realized only when the associated DNA sequence variation is linked to specific genes and the relevant cell types. Therefore, we sought to predict which cell types in the testis may be the functional targets of polymorphisms from previous GWAS as reported previously (Figure 6A; Cusanovich et al., 2018). Cell type-specific LD score regression using testosterone level GWAS results revealed a significant increase in per-SNP heritability for testosterone level in the Leydig cell peak set (Figure 6B). Examining the variants overlapping Leydig cell DARs revealed rs4919685 (p=4.203e-15) and rs743572 (p=3.622e-07) located in the TSS-distal regions and the promoter of Cyp17a1, respectively (Figure 6C). CYP17A1 is one of the enzymes that converts testosterone to estradiol (Olson et al., 2007) and rs743572 has been suggested to be a functional SNP related to testosterone levels (Kakinuma et al., 2004). Similar analyses in male infertility and abnormal spermatozoa traits showed significant enrichment in SNP heritability in Sertoli cells (Figure 6B).
 
@@ -146,7 +208,7 @@ Cell type-specific chromatin marks, when integrated with GWAS variants, can prov
 
 In summary, our high-resolution data has enabled detailed reconstruction of the gene regulatory landscape of testicular cell populations during key time points in testis development. Functional insight is further revealed by integrating multiple sources of genomic information and when combined provides an invaluable and unique resource for further investigation of key developmental events in the testis.
 
-## Limitations of the study
+### Limitations of the study
 
 We acknowledge an important limitation of our study is that we correlated scATAC-Seq profiles with scRNA-Seq data obtained from published dataset. Future studies that incorporate multiomics data will be important for obtaining a more comprehensive understanding of the cellular processes we have studied. Another limitation of our study is that we did not perform experimental assignment of regulatory sequences with gene promoters. Investigating the 3D organization of chromatin and the interactions between regulatory elements and gene promoters using techniques such as Hi-C has the potential to provide valuable insights and overcome this limitation. Finally, our analysis did not directly measure protein level, and therefore, may not fully capture the functional status of a cell. Complementary techniques such as mass spectrometry or immunofluorescence to validate or confirm protein expression would certainly make it more comprehensive. The integration of single-cell protein measurements may provide even deeper insights into cellular function.
 
@@ -154,58 +216,58 @@ We believe that these limitations provide opportunities for future research to b
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All the animal experiments were performed according to the protocols approved by the Animal Experiment Ethics Committee (AEEC) of The Chinese University of Hong Kong (CUHK) and followed the Animals (Control of Experiments) Ordinance (Cap. 340) licensed from the Department of Health, the Government of Hong Kong Special Administrative Region. All the mice were housed under a cycle of 12 hr light/dark and kept in ad libitum feeding and controlled the temperature of 22–24°C. Oct4-EGFP transgenic mice (B6; CBA-Tg(Pou5f1-EGFP)2Mnn/J, Stock no.: 004654) were acquired from The Jackson Laboratory (Ohbo et al., 2003). Oct4-EGFP transgenic mice and C57BL/6J mice were maintained in CUHK Laboratory Animal Services Centre.
 
-## Sample collection
+### Sample collection
 
 The testes of C57BL/6J mice at E18.5, P0, P2, and P5 were collected and with tunica albuginea removed. Each sequencing sample was from three independent mice mixed in equal proportion according to the same cell count to minimize the effects of biological variability. The testes were then digested with 1 mg/ml type 4 collagenase (Gibco), 1 mg/ml hyaluronidase (Sigma-Aldrich), and 5  µg/ml DNase I (Sigma-Aldrich) at 37°C for 20 min with occasional shaking. The suspension was passed through a 40 µm strainer cap (BD Falcon) to yield a uniform single-cell suspension.
 
-## Fluorescence-activated cell sorting
+### Fluorescence-activated cell sorting
 
 The testes of C57BL/6J mice were collected and with tunica albuginea removed. Isolated seminiferous tubules were digested with 1 mg/ml type 4 collagenase (Gibco), 1 mg/ml hyaluronidase (Sigma-Aldrich) and 5 µg/ml DNase I (Sigma-Aldrich) at 37°C for 20 min with occasional shaking. The suspension was passed through a 40 µm strainer cap (BD Falcon) to yield a uniform single-cell suspension. After incubation in staining buffer (PBS supplemented with 1% FBS, HEPES, glucose, pyruvate, and penicillin-streptomycin) with mouse DLK1 antibody (MAB8634, R&D Systems) at 4°C for 30 min, followed by secondary antibody at 4°C for 30 min. DLK1+ cells were collected with a BD FACSAria Fusion Flow Cytometer (BD Biosciences). Data were analyzed by FlowJo software (FlowJo, LLC).
 
-## scATAC-Seq library preparation and data analysis
+### scATAC-Seq library preparation and data analysis
 
-## Cell lysis and tagmentation
+#### Cell lysis and tagmentation
 
 To minimize technical bias, all sequencing samples were processed in one batch. Cell tagmentation was performed according to SureCell ATAC-Seq Library Prep Kit (17004620, Bio-Rad) User Guide (10000106678, Bio-Rad) and the protocol based on Omni-ATAC was followed (Corces et al., 2017). In brief, washed and pelleted cells were lysed with the Omni-ATAC lysis buffer containing 0.1% NP-40, 0.1% Tween-20, 0.01% digitonin, 10 mM NaCl, 3 mM MgCl2, and 10 mM Tris-HCl pH 7.4 for 3 min on ice. The lysis buffer was diluted with ATAC-Tween buffer that contains 0.1% Tween-20 as a detergent. Nuclei were counted and examined under microscope to ensure successful isolation. Same number of nuclei were subjected to tagmentation with equal ratio of cells/Tn5 transposase to minimize potential batch effect. Nuclei were resuspended in tagmentation mix, buffered with 1× PBS supplemented with 0.1% BSA and agitated on a ThermoMixer for 30 min at 37°C. Tagmented nuclei were kept on ice before encapsulation.
 
-## Library preparation and sequencing
+#### Library preparation and sequencing
 
 Tagmented nuclei were loaded onto a ddSEQ Single-Cell Isolator (Bio-Rad). scATAC-Seq libraries were prepared using the SureCell ATAC-Seq Library Prep Kit (17004620, Bio-Rad) and SureCell ATAC-Seq Index Kit (12009360, Bio-Rad). Bead barcoding and sample indexing were performed with PCR amplification as follows: 37°C for 30 min, 85°C for 10 min, 72°C for 5 min, 98°C for 30 s, eight cycles of 98°C for 10 s, 55°C for 30 s and 72°C for 60 s, and a single 72°C extension for 5 min to finish. Emulsions were broken and products were cleaned up using Ampure XP beads. Barcoded amplicons were further amplified for eight cycles. PCR products were purified using Ampure XP beads and quantified on an Agilent Bioanalyzer (G2939BA, Agilent) using the High-Sensitivity DNA kit (5067-4626, Agilent). Libraries were sequenced on HiSeq 2000 with 150 bp paired-end reads.
 
-## Sequencing reads preprocessing
+#### Sequencing reads preprocessing
 
 Sequencing data were processed using the Bio-Rad ATAC-Seq Analysis Toolkit. This toolkit is a streamlined computational pipeline, including tools for FASTQ debarcoding, read trimming, alignment, bead filtration, bead deconvolution, cell filtration, and peak calling. The reference index was built upon the mouse genome mm10. For generation of the fragments file, which contain the start and end genomic coordinates of all aligned sequenced fragments, sorted bam files were further processed with ‘bap-frag’ module of BAP (https://github.com/caleblareau/bap, v0.6.0) (Lareau et al., 2019) . Downstream analysis was performed in ArchR (Granja et al., 2020).
 
-## Dimensionality reduction, clustering, and gene score/TF activity analysis
+#### Dimensionality reduction, clustering, and gene score/TF activity analysis
 
 Fragment files were used to create the Arrow files in the ArchR package. We filtered out low-quality nuclei with stringent selection criteria, including read depth per cell (>2000) and TSS enrichment score (>4). Potential doubles were further removed based on the ArchR method. Bin regions were cleaned by eliminating bins overlapping with ENCODE Blacklist regions, mitochondrial DNA, as well as the top 5% of invariant features (house-keeping gene promoters). Dimensionality reduction and clustering was performed with ArchR. Briefly, we used LSI dimensionality reduction using a TFIDF normalization function, UMAP low-dimensional embedding, and clustering using a nearest neighbor graph performed on data in LSI space. To facilitate major cell type annotation, we used harmony to integrate datasets of four time points and project cells onto a shared embedding in which cells were grouped by cell type rather than developmental stage (Korsunsky et al., 2019). The clustering analysis within each cell type was carried out without harmony integration.
 
 ArchR was used to estimate gene expression for genes and TF motif activity from single-cell chromatin accessibility data. Gene scores were calculated using the addGeneScoreMatrix function with gene score models implemented in ArchR. addDeviationsMatrix function was used to compute enrichment of TF activity on a per-cell basis across all motif annotations based on chromVAR (chromVAR_0.3). The scATAC data was integrated with scRNA-Seq data (GEO: GSE130593) using the ArchR function addGeneIntegrationMatrix. The integration process involved directly aligning cells from scATAC-Seq with cells from scRNA-Seq using the FindTransferAnchors function from the Seurat package to identify the integrated anchors with default parameters (reduction = ‘cca’, nGenes = 2000). Marker gene activity scores were used for initial annotation while labels from the RNA integration were used to validate and refine the initial annotations to produce the final cell-type annotations.
 
-## Pseudo-bulk coverage analysis
+#### Pseudo-bulk coverage analysis
 
 To create the ‘pseudo-bulk’ coverage profile for each individual cell type, we split the aligned BAM files of each developmental time point into given groups of cell barcodes belonging to different cell types using sinto tools (https://timoast.github.io/sinto/). deepTools suite was used to convert individual bam files into standard coverage tracks (bigWig files) with RPKM normalization and visualized with pyGenomeTracks (Ramírez et al., 2018).
 
-## Trajectory analysis
+#### Trajectory analysis
 
 Trajectory analysis was performed in ArchR. addTrajectory function in ArchR was used to construct trajectory on cisTopic UMAP embedding. To perform integrative analyses for identification of positive TF regulators by integration of gene scores with motif accessibility across pseudotime, we used the correlateTrajectories function which takes two SummarizedExperiment objects retrieved from the getTrajectories function.
 
-## Footprinting analysis
+#### Footprinting analysis
 
 Differential TF footprints across cell types were identified using the Regulatory Genomics Toolbox application HINT (Li et al., 2018). Aligned BAM files from different cell types were treated as pseudo-bulk ATAC-Seq profiles and then subjected to rgt-hint analysis. Based on MACS calling peaks, we used HINT-ATAC to predict footprints with the ‘rgt-hint footprinting’ command. We then identified all binding sites of a particular TF overlapping with footprints by using its motif from JASPAR with ‘rgt-motifanalysis matching’ command. Differential motif occupancy was identified with ‘rgt-hint differential’ command and ‘–bc’ was specified to use the bias-corrected signal.
 
-## Real-time PCR
+### Real-time PCR
 
 Total RNA was extracted from cells by AllPrep DNA/RNA Micro Kit (QIAGEN). RNA was then converted to cDNA by reverse transcription using PrimeScript RT Master Mix (Takara). Real-time PCR was performed using Power SYBR Green PCR Master Mix (Life Technology) following the manufacturer’s instructions. Primers used: Igf1 forward (5’–3’) GGACCGAGGGGCTTTTACTT, reverse (5’–3’) GTGGGGCACAGTACATCTCC; Cyp11a1 forward (5’–3’) CACAGACGCATCAAGCAGCAAAA, reverse (5’–3’) GCATTGATGAACCGCTGGGC; Acta2 forward (5’–3’) GCTGGTGATGATGCTCCCA, reverse (5’–3’) GCCCATTCCAACCATTACTCC.
 
-## Immunofluorescence staining of testis sections
+### Immunofluorescence staining of testis sections
 
 Testis sections on microscope slides were fixed in 4% (vol/vol) paraformaldehyde for 15 min at room temperature and rinsed three times in PBS for 5 min before staining. Cells were permeabilized by treating in PBS containing 0.2% Triton X-100 for 15 min. Cells were blocked for 2 hr in PBS containing 10% normal donkey serum (Jackson Immunoresearch). Primary and secondary antibodies and respective dilutions were listed in Supplementary file 6. Primary antibodies were applied overnight at 4°C. Appropriate secondary antibodies were applied for 1 hr at room temperature. Cell nuclei were counterstained with DAPI (1 µg/ml, Sigma). All confocal images were captured by Olympus FV1200 confocal microscope. FV10-ASW software (Olympus) was employed to create overlays of colors.
 
-## Statistical analysis
+### Statistical analysis
 
 Assessment of statistical significance was performed using two-tailed unpaired t-tests, one-way ANOVA with Tukey multiple comparisons tests or Chi-squared tests. Statistical analysis was performed using GraphPad Prism v8. Associated p-values are indicated as follows: *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001; not significant (ns) p>0.05.

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.11159.001 Despite recent advances in the study of animal flight, the biomechanical determinants of maneuverability are poorly understood. It is thought that maneuverability may be influenced by intrinsic body mass and wing morphology, and by physiological muscle capacity, but this hypothesis has not yet been evaluated because it requires tracking a large number of free flight maneuvers from known individuals. We used an automated tracking system to record flight sequences from 20 Anna's hummingbirds flying solo and in competition in a large chamber. We found that burst muscle capacity predicted most performance metrics. Hummingbirds with higher burst capacity flew with faster velocities, accelerations, and rotations, and they used more demanding complex turns. In contrast, body mass did not predict variation in maneuvering performance, and wing morphology predicted only the use of arcing turns and high centripetal accelerations. Collectively, our results indicate that burst muscle capacity is a key predictor of maneuverability. DOI: http://dx.doi.org/10.7554/eLife.11159.001
+Despite recent advances in the study of animal flight, the biomechanical determinants of maneuverability are poorly understood. It is thought that maneuverability may be influenced by intrinsic body mass and wing morphology, and by physiological muscle capacity, but this hypothesis has not yet been evaluated because it requires tracking a large number of free flight maneuvers from known individuals. We used an automated tracking system to record flight sequences from 20 Anna's hummingbirds flying solo and in competition in a large chamber. We found that burst muscle capacity predicted most performance metrics. Hummingbirds with higher burst capacity flew with faster velocities, accelerations, and rotations, and they used more demanding complex turns. In contrast, body mass did not predict variation in maneuvering performance, and wing morphology predicted only the use of arcing turns and high centripetal accelerations. Collectively, our results indicate that burst muscle capacity is a key predictor of maneuverability.
 
 ## Introduction
 
@@ -32,25 +32,119 @@ Muscle capacity affects the maximum aerodynamic force a flying animal can produc
 
 Maximum load lifting is a transient behavior that uses the bird’s natural escape response to measure burst power output. Thus, it is not surprising that this assay provides the maximum muscle capacity that has been measured in hummingbirds. It is particularly useful for quantifying variation among and within species in burst muscle capacity. Studies using the load lifting assay have revealed that maximum burst muscle capacity is related to hummingbird evolutionary ecology. Altshuler and coworkers (Altshuler et al., 2004b; Altshuler, 2006) demonstrated that ecological role is more strongly related to load lifting ability than morphological parameters such as wing loading. Load lifting ability is also associated with species- and gender-specific competitive ability at different elevations. Altshuler (Altshuler, 2006) suggested that the relationship between maximum muscle capacity and competitive ability may be mediated through maneuvering performance.
 
-Unconstrained maneuvering performance of birds, including hummingbirds, has recently been quantified in the field without individual identification (Shelton et al., 2014; Sholtis et al., 2015). Although field studies are valuable for quantifying average species performance, individual identification and large sample sizes are required to examine sources of within-species variation. Here, we studied the free-flight maneuvering performance of Anna's hummingbirds (Calypte anna) in a large flight chamber (Video 1). Flight maneuvers in a chamber are not expected to be the same as outdoors, and may have lower velocities and accelerations. The benefit of this approach is that a large number of measurements from the same individuals can be combined with other data to examine how variation in the observed maneuvers is influenced by individual morphology and muscle capacity.10.7554/eLife.11159.003Video 1.The multi-camera, automated tracking system filming two hummingbirds in the flight arena at 200 frames per second.Continuously tracked sequences are assigned an object number (from 0 to 4 over this sequence). Body position and orientation are calculated and reprojected onto the video of four cameras. The videos are saved using a compression algorithm that only records the sections of the image that are moving (Straw et al. 2011). Thus, birds disappear from the video when they land and stop moving. The trajectory shown in Figure 1 is taken from the bird labeled #2 and begins at 5.1 seconds and ends at 8.05 seconds.DOI: http://dx.doi.org/10.7554/eLife.11159.003
+Unconstrained maneuvering performance of birds, including hummingbirds, has recently been quantified in the field without individual identification (Shelton et al., 2014; Sholtis et al., 2015). Although field studies are valuable for quantifying average species performance, individual identification and large sample sizes are required to examine sources of within-species variation. Here, we studied the free-flight maneuvering performance of Anna's hummingbirds (Calypte anna) in a large flight chamber (Video 1). Flight maneuvers in a chamber are not expected to be the same as outdoors, and may have lower velocities and accelerations. The benefit of this approach is that a large number of measurements from the same individuals can be combined with other data to examine how variation in the observed maneuvers is influenced by individual morphology and muscle capacity.
+
+![Video 1.](https://cdn.elifesciences.org/articles/11159/elife-11159-media1.mp4.jpg)
+
+**Video 1.:** Continuously tracked sequences are assigned an object number (from 0 to 4 over this sequence). Body position and orientation are calculated and reprojected onto the video of four cameras. The videos are saved using a compression algorithm that only records the sections of the image that are moving (Straw et al. 2011). Thus, birds disappear from the video when they land and stop moving. The trajectory shown in Figure 1 is taken from the bird labeled #2 and begins at 5.1 seconds and ends at 8.05 seconds.
 
 We used a high-throughput computational approach to record the flight performance of 20 individuals alone and in the presence of a competitor. Flight trajectories were parsed into a set of performance metrics based on body position and orientation. The first goal of our study was to determine if voluntary maneuvering performance is repeatable within individuals. Repeatability of maneuvering performance can arise either through a strong influence of fixed traits such as morphology and anatomy, or through other consistent influences, such as motivation. We expect that repeatable measurements will be most useful for our second goal, determining how variation in maneuverability among individuals is influenced by natural variation in morphology and muscle capacity. This also required measuring morphological traits and maximum burst performance for each individual. Our third goal was to determine how motivation state induced by the presence of a competitor influenced maneuvering performance. To address this question we compared flight trials with and without competitors.
 
 ## Results
 
-## Maneuvering performance metrics
+### Maneuvering performance metrics
 
-The first stage of analysis was estimating instantaneous velocities, accelerations, and headings from the raw tracking data (
+The first stage of analysis was estimating instantaneous velocities, accelerations, and headings from the raw tracking data (Figure 1—figure supplement 1). Translational velocity and acceleration were calculated by taking the first and second derivatives of an interpolation spline fit to the body position data (splev and splrep functions, Scientific Python). The velocities and accelerations were split into vertical and horizontal components. The body orientation vector was represented in spherical coordinates as azimuth and pitch angles. We took the first derivatives to obtain azimuth and pitch velocities. Because the video tracking system did not allow a measurement of body roll, we decided to use a global coordinate system instead of a body axis-centered coordinate system. In our frame of reference, pitch is a global measure defined relative to the horizontal plane. Heading was calculated as the instantaneous direction of the horizontal translation velocity, and the heading velocity was calculated as the derivative of heading.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/11159/elife-11159-fig1-v2.jpg)
 
-**Figure 1.:** The trajectory shown for one bird (a) is also shown in Video 1 (see Figure 1—figure supplement 1 for time series of position, velocity, and acceleration values). Stereotyped maneuvers were classified in each trajectory (b) and between one and five performance metrics were calculated from each maneuver. Maneuvers within a trajectory may be overlapping (e.g. #4,5,6). The trajectory presented in b is a top down (x-y projection) view of the trajectory shown in a. Body position and orientation were smoothed with an extended Kalman filter (). The effects of four different sets of smoothing parameters are presented for an arcing turn (maneuver #9 in b) and an upward acceleration (maneuver #1 in b). Shown here are the unsmoothed position and orientation (black trace and text), the chosen levels of smoothing (blue), a lower level of smoothing (green; 0.1 x c,dRpos; 0.1 x Rori), and a higher level of smoothing (red; 10 x Rpos; 10 x Rori). The chosen smoothing parameters for body position were determined by tracking multiple dropped objects and calibrating the Z-axis acceleration to gravity. The chosen smoothing parameters for body orientation were determined by re-projecting the body axis vector onto the video. The higher and lower levels of smoothing for body position presented in this figure were both deemed too extreme, when re-projected onto the video. However, the level of smoothing for body orientation had minimal effect on the average yaw velocity.DOI: http://dx.doi.org/10.7554/eLife.11159.004
+**Figure 1.:** The trajectory shown for one bird (a) is also shown in Video 1 (see Figure 1—figure supplement 1 for time series of position, velocity, and acceleration values). Stereotyped maneuvers were classified in each trajectory (b) and between one and five performance metrics were calculated from each maneuver. Maneuvers within a trajectory may be overlapping (e.g. #4,5,6). The trajectory presented in b is a top down (x-y projection) view of the trajectory shown in a. Body position and orientation were smoothed with an extended Kalman filter (c,d). The effects of four different sets of smoothing parameters are presented for an arcing turn (maneuver #9 in b) and an upward acceleration (maneuver #1 in b). Shown here are the unsmoothed position and orientation (black trace and text), the chosen levels of smoothing (blue), a lower level of smoothing (green; 0.1 x Rpos; 0.1 x Rori), and a higher level of smoothing (red; 10 x Rpos; 10 x Rori). The chosen smoothing parameters for body position were determined by tracking multiple dropped objects and calibrating the Z-axis acceleration to gravity. The chosen smoothing parameters for body orientation were determined by re-projecting the body axis vector onto the video. The higher and lower levels of smoothing for body position presented in this figure were both deemed too extreme, when re-projected onto the video. However, the level of smoothing for body orientation had minimal effect on the average yaw velocity.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/11159/elife-11159-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Figure 1 and Video 1 displayed through time.The upper three panels provide the position, velocity, and acceleration values. The lower three panels provide the orientation vector, orientation angle and rotation velocity values. The maneuvers extracted for this sequence are given by thick black lines below the traces.DOI: http://dx.doi.org/10.7554/eLife.11159.005
+**Figure 1—figure supplement 1.:** The upper three panels provide the position, velocity, and acceleration values. The lower three panels provide the orientation vector, orientation angle and rotation velocity values. The maneuvers extracted for this sequence are given by thick black lines below the traces.
 
-We then used the velocity, acceleration, and orientation data to search for a series of ten stereotyped maneuvers that were independent of time and distance scales (Figure 1b). Five of the maneuvers were sequences defined by changes in translational velocity: 1) 3D accelerations, 2) horizontal accelerations, 3) horizontal decelerations, 4) vertical upward accelerations, and 5) vertical downward accelerations. Three maneuvers were sequences defined by changes in rotation: 6) pitch-up rotations, 7) pitch-down rotations, and 8) yaw turns. Two of the maneuvers were defined as turns with translational components: 9) arcing turns and 10) pitch-roll turns. These ten maneuvers are not meant to be mutually exclusive, exhaustive, or to divide the entire filming session into a set of discrete behaviors, but are instead intended to extract simple measurements that can be used as an assay for maneuvering performance. The search criteria for the maneuvers are given in Table 1. Because we assume that a new maneuver must involve a change in velocity, the first search parameter was to find sequences bounded by velocity maxima and minima, or vice versa. We next describe the additional search parameters and the performance metrics used to quantify each maneuver.10.7554/eLife.11159.006Table 1.Search parameters for the ten maneuvers analyzed in the study. The definitions, units, and symbols for the 14 related performance metrics are also provided.DOI: http://dx.doi.org/10.7554/eLife.11159.006ManeuverSearch parametersPerformance metricUnitsSymbol3D accelerationStart: velocity xyz minimumEnd: velocity xyz maximumDistance xyz > 25 cmMaximum velocitym/sVelmaxHorizontal accelerationStart: velocity xy minimumEnd: velocity xy maximumDistance xy > 25 cmDistance z < 10 cmMaximum acceleration xym/s2AccHormaxHorizontal decelerationStart: velocity xy maximumEnd: velocity xy minimumDistance xy > 25 cmDistance z < 10 cmMaximum deceleration xym/s2AccDecmaxVertical upwards accelerationStart: velocity z minimumEnd: velocity z maximumDistance z > 25 cmMaximum acceleration zm/s2AccVUmaxVertical downwards accelerationStart: velocity z maximumEnd: velocity z minimumDistance z > 25 cmMaximum acceleration zm/s2AccVDmaxPitch-up rotationStart: pitch minimumEnd: pitch maximumDegrees rotated > 45 degDistance xyz < 10 cmAverage pitch velocityrev/sPitchUvel,avgPitch-down rotationStart: pitch maximumEnd: pitch minimumDegrees rotated > 45 degDistance xyz < 10 cmAverage pitch velocityrev/sPitchDvel,avgYaw turnStart: velocity yaw = 0 deg/sEnd: velocity yaw = 0 deg/sDegrees rotated > 90 degPitch maximum < 75 degDistance xyz < 10 cmAverage yaw velocityrev/sYawvel,avgArcing turnStart: Δ heading velocity > 0.25 rev/sEnd Δ heading velocity < 0.25 rev/sVelocity xy min > 50 cm/sDistance xy > 25 cmDistance z < 10 cmAverage xy velocity*radius*Centripetal acceleration*m/smm/s2Arcvel, avgArcradArccent, maxPitch roll turnStart: velocity maximumEnd: velocity maximumPitch maximum > 75 degDistance xy before velocityMin > 12.5 cmDistance xy after velocity Min < 12.5 cmDistance z < 10 cmtime†degrees turned†sdegPRTtimePRTdeg*for a 25 cm segment centered at the sharpest point of the turn†for a 25 cm segment centered at the minimum velocity xyz
+We then used the velocity, acceleration, and orientation data to search for a series of ten stereotyped maneuvers that were independent of time and distance scales (Figure 1b). Five of the maneuvers were sequences defined by changes in translational velocity: 1) 3D accelerations, 2) horizontal accelerations, 3) horizontal decelerations, 4) vertical upward accelerations, and 5) vertical downward accelerations. Three maneuvers were sequences defined by changes in rotation: 6) pitch-up rotations, 7) pitch-down rotations, and 8) yaw turns. Two of the maneuvers were defined as turns with translational components: 9) arcing turns and 10) pitch-roll turns. These ten maneuvers are not meant to be mutually exclusive, exhaustive, or to divide the entire filming session into a set of discrete behaviors, but are instead intended to extract simple measurements that can be used as an assay for maneuvering performance. The search criteria for the maneuvers are given in Table 1. Because we assume that a new maneuver must involve a change in velocity, the first search parameter was to find sequences bounded by velocity maxima and minima, or vice versa. We next describe the additional search parameters and the performance metrics used to quantify each maneuver.
+
+**Table 1.**
+ Search parameters for the ten maneuvers analyzed in the study. The definitions, units, and symbols for the 14 related performance metrics are also provided.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Maneuver</th>
+      <th>Search parameters</th>
+      <th>Performance metric</th>
+      <th>Units</th>
+      <th>Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3D acceleration</td>
+      <td>Start: velocity xyz minimumEnd: velocity xyz maximumDistance xyz &gt; 25 cm</td>
+      <td>Maximum velocity</td>
+      <td>m/s</td>
+      <td>Velmax</td>
+    </tr>
+    <tr>
+      <td>Horizontal acceleration</td>
+      <td>Start: velocity xy minimumEnd: velocity xy maximumDistance xy &gt; 25 cmDistance z &lt; 10 cm</td>
+      <td>Maximum acceleration xy</td>
+      <td>m/s2</td>
+      <td>AccHormax</td>
+    </tr>
+    <tr>
+      <td>Horizontal deceleration</td>
+      <td>Start: velocity xy maximumEnd: velocity xy minimumDistance xy &gt; 25 cmDistance z &lt; 10 cm</td>
+      <td>Maximum deceleration xy</td>
+      <td>m/s2</td>
+      <td>AccDecmax</td>
+    </tr>
+    <tr>
+      <td>Vertical upwards acceleration</td>
+      <td>Start: velocity z minimumEnd: velocity z maximumDistance z &gt; 25 cm</td>
+      <td>Maximum acceleration z</td>
+      <td>m/s2</td>
+      <td>AccVUmax</td>
+    </tr>
+    <tr>
+      <td>Vertical downwards acceleration</td>
+      <td>Start: velocity z maximumEnd: velocity z minimumDistance z &gt; 25 cm</td>
+      <td>Maximum acceleration z</td>
+      <td>m/s2</td>
+      <td>AccVDmax</td>
+    </tr>
+    <tr>
+      <td>Pitch-up rotation</td>
+      <td>Start: pitch minimumEnd: pitch maximumDegrees rotated &gt; 45 degDistance xyz &lt; 10 cm</td>
+      <td>Average pitch velocity</td>
+      <td>rev/s</td>
+      <td>PitchUvel,avg</td>
+    </tr>
+    <tr>
+      <td>Pitch-down rotation</td>
+      <td>Start: pitch maximumEnd: pitch minimumDegrees rotated &gt; 45 degDistance xyz &lt; 10 cm</td>
+      <td>Average pitch velocity</td>
+      <td>rev/s</td>
+      <td>PitchDvel,avg</td>
+    </tr>
+    <tr>
+      <td>Yaw turn</td>
+      <td>Start: velocity yaw = 0 deg/sEnd: velocity yaw = 0 deg/sDegrees rotated &gt; 90 degPitch maximum &lt; 75 degDistance xyz &lt; 10 cm</td>
+      <td>Average yaw velocity</td>
+      <td>rev/s</td>
+      <td>Yawvel,avg</td>
+    </tr>
+    <tr>
+      <td>Arcing turn</td>
+      <td>Start: Δ heading velocity &gt; 0.25 rev/sEnd Δ heading velocity &lt; 0.25 rev/sVelocity xy min &gt; 50 cm/sDistance xy &gt; 25 cmDistance z &lt; 10 cm</td>
+      <td>Average xy velocity*radius*Centripetal acceleration*</td>
+      <td>m/smm/s2</td>
+      <td>Arcvel, avgArcradArccent, max</td>
+    </tr>
+    <tr>
+      <td>Pitch roll turn</td>
+      <td>Start: velocity maximumEnd: velocity maximumPitch maximum &gt; 75 degDistance xy before velocityMin &gt; 12.5 cmDistance xy after velocity Min &lt; 12.5 cmDistance z &lt; 10 cm</td>
+      <td>time†degrees turned†</td>
+      <td>sdeg</td>
+      <td>PRTtimePRTdeg</td>
+    </tr>
+  </tbody>
+</table>
+
+_*for a 25 cm segment centered at the sharpest point of the turn†for a 25 cm segment centered at the minimum velocity xyz_
 
 The five translational maneuvers were defined using velocity minima and maxima, and only sequences with at least 25 cm of travel were analyzed. The 3D acceleration maneuvers started from a velocity minimum and ended with a velocity maximum. The performance metric calculated for these maneuvers was the maximum translational velocity (Velmax). The horizontal acceleration maneuvers were bounded by horizontal velocity minima and maxima, and were constrained to no more than 10 cm of vertical distance traveled. The performance metric calculated for these maneuvers was the maximum horizontal acceleration (AccHormax). The horizontal deceleration maneuvers and the corresponding performance metric, maximum horizontal deceleration (DecHormax), were bounded by horizontal velocity maxima and minima. The vertical upward acceleration and vertical downward acceleration maneuvers were bounded by vertical velocity minima and maxima. The performance metrics calculated from these maneuvers were, respectively, maximum upward (AccVUmax) and maximum downward (AccVDmax) accelerations. All translational accelerations and decelerations were expressed as positive values, so that higher values represent a higher level of performance.
 
@@ -60,61 +154,388 @@ The pitch-up and pitch-down maneuvers were defined as having continuous pitch ve
 
 In addition to five translational and three rotational maneuvers, we also considered two maneuvers that are complex turns with translational components. Arcing turn maneuvers were defined as sequences with a heading velocity > 90°/sec, a minimum total translational velocity > 0.5 m/s, a total distance traveled > 25 cm, and a vertical distance traveled < 10 cm. These search parameters reliably extract arcing turns that occur in the horizontal plane. To compare arcing turns of different shapes and scales we clipped the trajectories to a length of 25 cm centered at the sharpest point of the turn. From the clipped trajectory we analyzed three performance metrics, average velocity (Arcvel, avg), radius (Arcrad), and the maximum centripetal acceleration (Arccent, max). The latter two were calculated using the following equations:
 
-Arcrad=Arcdistance traveledΔHeadingrad
+$$
+Arc_{rad}=\frac{Arc_{distance traveled}}{ΔHeading_{rad}}
+$$
 
-Arccent,max=Arcvel,avg2Arcrad
+$$
+Arc_{cent,max}=\frac{Arc_{vel,avg}^{2}}{Arc_{rad}}
+$$
 
 Pitch-roll turn maneuvers have been described in hummingbirds and are characterized by the following sequence: a) deceleration, b) increase in pitch to near vertical, c) azimuthal rotation by rolling the body, and d) acceleration in a new direction (Clark, 2011). These maneuvers were identified by searching for sequences of deceleration followed by acceleration with a maximum pitch > 75°. Just as we did for the yaw turns, we assume that above a pitch angle of 75°, the rotation is primarily dominated by a body axis roll, even if there may be a slight yawing component. For this reason, we maintain the established 'pitch-roll' terminology to describe these types of turns. These sequences were clipped to a linear distance of 25 cm centered on the point of the lowest translational velocity. Only clipped sequences in which the total vertical displacement was less than 10 cm were analyzed. The performance metrics for pitch-roll turns were the time taken (PRTtime) and the degrees turned (PRTdeg).
 
 Arcing turns and pitch-roll turns are two different mechanisms for generating a change in heading with no overlap in our data set by definition (Table 1). We analyzed how morphology, burst capacity, and competitor presence influenced the relative use of these two turns. The pitch-roll percent (PRT%) was defined as the number of pitch-roll turns divided by total the number of arcing and pitch-roll turns extracted from each trial.
 
-## Descriptive statistics
+### Descriptive statistics
 
-Descriptive statistics for morphology and load lifting are provided in
+Descriptive statistics for morphology and load lifting are provided in Table 2. A large sample of values was obtained for each maneuvering performance metric (Table 3). Figure 2 shows the distributions of trial means for all performance metrics.
+
+**Table 2.**
+ Wing morphology and load lifting performance of male Anna’s hummingbirds (n = 20 individuals).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trait</th>
+      <th>Mean</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wing length</td>
+      <td>50.97 mm</td>
+      <td>[45.76, 55.45]</td>
+    </tr>
+    <tr>
+      <td>Wing area</td>
+      <td>1355 mm2</td>
+      <td>[1051, 1653]</td>
+    </tr>
+    <tr>
+      <td>Wing aspect ratio</td>
+      <td>7.73</td>
+      <td>[7.13, 8.46]</td>
+    </tr>
+    <tr>
+      <td>Body mass</td>
+      <td>4.64 g</td>
+      <td>[4.09, 5.61]</td>
+    </tr>
+    <tr>
+      <td>Mass of weights lifted</td>
+      <td>5.93 g</td>
+      <td>[4.00, 7.24]</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Descriptive statistics and sample sizes for maneuvering performance. Grand mean values were calculated by first taking the mean of each bird’s trial averages (i.e., the bird means), and then taking the mean of the bird means (n = 20 birds in 20 solo trials and 16 paired competition trials).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Maneuverability</th>
+      <th>Performance metric</th>
+      <th># Trajectories</th>
+      <th>Grand mean</th>
+      <th>[Range of means]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Linear accelerations</td>
+      <td>Velmax</td>
+      <td>71,007</td>
+      <td>2.22 m/s</td>
+      <td>[1.20, 2.94]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AccHormax</td>
+      <td>47,287</td>
+      <td>6.30 m/s2</td>
+      <td>[2.96, 8.83]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DecHormax</td>
+      <td>51,245</td>
+      <td>6.67 m/s2</td>
+      <td>[9.03, 3.45]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AccVUmax</td>
+      <td>6,935</td>
+      <td>3.78 m/s2</td>
+      <td>[2.98, 4.67]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AccVDmax</td>
+      <td>9,284</td>
+      <td>3.58 m/s2</td>
+      <td>[4.69, 2.68]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rotational velocities</td>
+      <td>PitchUvel, avg</td>
+      <td>6,085</td>
+      <td>1.13 rev/s</td>
+      <td>[0.91, 1.34]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PitchDvel, avg</td>
+      <td>14,807</td>
+      <td>1.00 rev/s</td>
+      <td>[1.19, 0.78]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Yawvel, avg</td>
+      <td>12,660</td>
+      <td>1.52 rev/s</td>
+      <td>[1.32, 1.75]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Complex turns</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pitch-roll</td>
+      <td>PRTdeg</td>
+      <td>17,133</td>
+      <td>133.3 º</td>
+      <td>[34.9, 162.7]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PRTtime</td>
+      <td>17,133</td>
+      <td>0.47 s</td>
+      <td>[0.38, 0.60]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Arcing</td>
+      <td>Arcrad</td>
+      <td>6.945</td>
+      <td>0.48 m</td>
+      <td>[0.14, 0.70]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Arcvel, avg</td>
+      <td>6,945</td>
+      <td>1.57 m/s</td>
+      <td>[0.80, 2.26]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Arccent, max</td>
+      <td>6,945</td>
+      <td>6.59 m/s2</td>
+      <td>[3.42, 10.80]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Use of turns</td>
+      <td>PRT%</td>
+      <td>24,078</td>
+      <td>0.69</td>
+      <td>[0.39, 0.87]</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/11159/elife-11159-fig2-v2.jpg)
 
-**Figure 2.:** Only PRTdeg has statistically significant outliers. See Figure 2—figure supplement 1 for distributions of residuals from the best-fit model in each case. Note that two statistical outliers were omitted from the analysis of PRT.degDOI: http://dx.doi.org/10.7554/eLife.11159.009
+**Figure 2.:** Only PRTdeg has statistically significant outliers. See Figure 2—figure supplement 1 for distributions of residuals from the best-fit model in each case. Note that two statistical outliers were omitted from the analysis of PRTdeg.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/11159/elife-11159-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Note that two statistical outliers were omitted from the analysis of PRTdeg.DOI: http://dx.doi.org/10.7554/eLife.11159.010
+**Figure 2—figure supplement 1.:** Note that two statistical outliers were omitted from the analysis of PRTdeg.
 
-## Repeatability of performance
+### Repeatability of performance
 
-All performance metrics based on total and horizontal linear accelerations and complex turns were highly repeatable, with >80% of the variation in these metrics attributable to differences among individuals (
+All performance metrics based on total and horizontal linear accelerations and complex turns were highly repeatable, with >80% of the variation in these metrics attributable to differences among individuals (Figure 3). The rotational performance metrics and the percent of turns that were pitch-roll turns were moderately repeatable, with 40–70% of the variation in these metrics attributable to among-individual differences. The vertical accelerations were not repeatable, as the 95% confidence intervals for repeatability of these metrics overlapped zero.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/11159/elife-11159-fig3-v2.jpg)
 
-**Figure 3.:** Values > 70% are considered to have high repeatability, 40–70% moderate repeatability, and < 40% low repeatability. A metric is considered not repeatable if its 95% confidence intervals overlap zero.DOI: http://dx.doi.org/10.7554/eLife.11159.011
+**Figure 3.:** Values > 70% are considered to have high repeatability, 40–70% moderate repeatability, and < 40% low repeatability. A metric is considered not repeatable if its 95% confidence intervals overlap zero.
 
-## Maneuvering in relation to burst muscle capacity
+### Maneuvering in relation to burst muscle capacity
 
-The best-supported models for each maneuvering performance metric are given in
+The best-supported models for each maneuvering performance metric are given in Table 4. Burst muscle capacity was an important predictor for most of the maneuvering performance metrics. Birds that lifted more weight (accounting for their wing morphology) tended to accelerate and decelerate faster, and they tended to perform maneuvers with higher velocity (Figure 4). However, burst muscle capacity was not an important determinant of vertical acceleration and deceleration, as candidate models including burst performance as a predictor were not supported. Birds that lifted more weight also executed pitch-up and pitch-down maneuvers with higher rotational velocities. Burst capacity was not a strong determinant of yaw performance. Although yaw velocity was somewhat positively related to burst capacity (Figure 4), candidate models of yaw velocity that included burst as a predictor were not well supported.
+
+**Table 4.**
+ Maneuvering performance in relation to burst performance, wing morphology, and competitor presence (n = 20 birds in 20 solo trials and 16 paired competition trials). Standardized beta coefficients and R2GLMM(m) values are reported for either the best-fit model, or, if there was support for more than one model, the average of supported models. The standardized beta coefficient is a measure of effect size that can be compared among predictors in the same model. Relative importance is a measure of the weight of evidence in favor of a predictor on a scale from 0–1, and is reported for burst capacity and wing morphology variables as these alone were subject to model selection. Marginal R2GLMM(m) provides a measure of the combined explanatory power of fixed effects of interest (competitor presence, burst muscle capacity, and wing morphology effects combined). Details of all candidate models are provided in Supplementary file 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Support for</th>
+      <th>Fixed effects</th>
+      <th>Std beta coef [95% CI]</th>
+      <th>Relative importance</th>
+      <th>R2GLMM(m)Burst+ morphology+ competitor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Velmax</td>
+      <td>burst</td>
+      <td>competitor presencemassburstwing lengthwing aspect ratioexperiment (CA1)experiment (CA2)days post-capture</td>
+      <td>–0.04 [–0.18, 0.10]0.10 [–0.01, 0.22]0.09 [0.00, 0.18]–0.08 [–0.22, 0.06]0.10 [–0.07, 0.28]1.01 [0.59, 1.42]1.06 [0.68, 1.43]–0.07 [–0.24, 0.11]</td>
+      <td>----1.000.250.26------</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>AccHormax</td>
+      <td>burst + competition</td>
+      <td>competitor presencemassburstexperiment(CA1)experiment(CA2)days post-capture</td>
+      <td>–0.46 [–0.82, –0.11]0.20 [–0.28, 0.69]0.39 [0.00, 0.77]4.01 [2.46, 5.56]3.68 [2.72, 4.64]–0.39 [–1.09, 0.32]</td>
+      <td>----1.00------</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>DecHormax</td>
+      <td>burst + competition</td>
+      <td>competitor presencemassburstexperiment(CA1)experiment(CA2)days post-capture</td>
+      <td>–0.47 [–0.78, –0.16]0.31 [–0.13, 0.74]0.41 [0.06, 0.76]3.86 [2.47, 5.25]3.64 [2.76, 4.51]–0.24 [–0.88, 0.39]</td>
+      <td>----1.00------</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>AccVUmax</td>
+      <td>intercept-only</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0 (NA)</td>
+    </tr>
+    <tr>
+      <td>AccVDmax</td>
+      <td>intercept-only</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0 (NA)</td>
+    </tr>
+    <tr>
+      <td>PitchUvel, avg</td>
+      <td>burst</td>
+      <td>competitor presencemassburstexperiment(CA1)experiment(CA2)</td>
+      <td>0.02 [–0.02, 0.06]0.00 [–0.04, 0.04]0.03 [–0.01, 0.07]0.14 [0.06, 0.23]0.13 [0.03, 0.23]</td>
+      <td>----1.00----</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>PitchDvel, avg</td>
+      <td>competition+ burst</td>
+      <td>competitor presencemassburstwing lengthwing aspect ratioexperiment(CA1)experiment(CA2)</td>
+      <td>0.06 [0.01, 0.10]0.01 [–0.04, 0.05]0.03 [–0.01, 0.08]0.04 [–0.03, 0.12]–0.04 [–0.13, 0.05]0.19 [0.03, 0.34]0.22 [0.03, 0.41]</td>
+      <td>----0.660.370.28----</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Yawvel, avg</td>
+      <td>intercept-only</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0 (NA)</td>
+    </tr>
+    <tr>
+      <td>PRTdeg</td>
+      <td>intercept-only</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0 (NA)</td>
+    </tr>
+    <tr>
+      <td>PRTtime</td>
+      <td>burst</td>
+      <td>competitor presencemassburstwing lengthwing aspect ratioexperiment(CA1)experiment(CA2)</td>
+      <td>0.00 [–0.01, 0.01]–0.01 [–0.03, 0.00]–0.02 [–0.03, 0.00]–0.01 [–0.03, 0.01]0.01 [–0.01, 0.04]–0.08 [–0.12, –0.03]–0.11 [–0.16, –0.05]</td>
+      <td>–--1.000.210.23–--</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>Arcrad</td>
+      <td>burst</td>
+      <td>competitor presencemassburstwing aspect ratioexperiment(CA1)experiment(CA2)</td>
+      <td>–0.02 [–0.07, 0.03]0.01 [–0.03, 0.06]0.06 [0.01, 0.10]–0.06 [–0.15, 0.03]0.25 [0.12, 0.37]0.29 [0.06, 0.52]</td>
+      <td>----1.000.44–--</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>Arcvel, avg</td>
+      <td>burst</td>
+      <td>competitor presencemassburstexperiment(CA1)experiment(CA2)days post-capture</td>
+      <td>–0.01 [–0.09, 0.08]0.03 [–0.06, 0.12]0.11 [0.04, 0.19]0.89 [0.59, 1.19]0.74 [0.56, 0.92]–0.06 [–0.20, 0.08]</td>
+      <td>––1.00–----</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Acccent, max</td>
+      <td>wing shape</td>
+      <td>competitor presencemasswing aspect ratioexperiment(CA1)experiment(CA2)days post-capture</td>
+      <td>0.29 [–0.37, 0.94]–0.20 [–0.74, 0.34]1.09 [0.19, 1.99]5.93 [4.02, 7.84]0.85 [–1.59, 3.28]–1.76 [–2.62, –0.90]</td>
+      <td>----1.00------</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td>PRT%</td>
+      <td>wing shape + competition+ burst + wing size</td>
+      <td>competitor presencemassburstwing lengthwing aspect ratioexperiment(CA1)experiment(CA2)</td>
+      <td>–0.14 [–0.19, –0.09]0.00 [–0.04, 0.05]0.04 [0.00, 0.09]–0.06 [–0.13, 0.01]–0.16 [–0.24, –0.07]0.17 [–0.03, 0.36]0.44 [0.19, 0.69]</td>
+      <td>----1.000.611.00----</td>
+      <td>0.27</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/11159/elife-11159-fig4-v2.jpg)
 
-**Figure 4.:** Each panel shows partial residuals for a performance metric (y-axis) in relation to burst muscle capacity (x-axis) for the most supported candidate model with burst capacity as a predictor. Partial residual values (y-axis) account for the other fixed effects in that model. Lines show model predictions assuming the median value of continuous predictors, and averaging across experiments and levels of competitor presence. Prediction lines are dashed for metrics where burst performance was not present in any of the supported models. Color is used to denote data points from the same bird (online version only).DOI: http://dx.doi.org/10.7554/eLife.11159.013
+**Figure 4.:** Each panel shows partial residuals for a performance metric (y-axis) in relation to burst muscle capacity (x-axis) for the most supported candidate model with burst capacity as a predictor. Partial residual values (y-axis) account for the other fixed effects in that model. Lines show model predictions assuming the median value of continuous predictors, and averaging across experiments and levels of competitor presence. Prediction lines are dashed for metrics where burst performance was not present in any of the supported models. Color is used to denote data points from the same bird (online version only).
 
 Burst muscle capacity was also associated with some, but not all maneuvering performance metrics related to complex turns. Birds that lifted more weight for their wing morphology tended to execute faster, larger radius arcing turns (Figure 4). However, the centripetal acceleration of arcing turns was not associated with burst capacity. Hummingbirds with higher load lifting capacity executed pitch-roll turns in less time. Burst capacity was not a strong determinant of heading change during pitch-roll turns. Lastly, birds with higher burst muscle capacity used pitch-roll turns for proportionately more of their heading changes.
 
-## Maneuvering in relation to morphology
+### Maneuvering in relation to morphology
 
-Wing morphology, specifically the aspect ratio, was an important predictor for two performance metrics: centripetal acceleration and the percent of direction changes that were pitch-roll turns (
+Wing morphology, specifically the aspect ratio, was an important predictor for two performance metrics: centripetal acceleration and the percent of direction changes that were pitch-roll turns (Figure 5). Hummingbirds with long, narrow wings tended to perform arcing turns with higher centripetal accelerations, relative to birds with short, wide wings. Birds with higher aspect ratio wings also used proportionately more arcing turns than birds with low aspect ratio wings.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/11159/elife-11159-fig5-v2.jpg)
 
-**Figure 5.:** Each panel shows partial residual performance (y-axis) in relation to wing aspect ratio (x-axis) from a best-fit model that identified aspect ratio as an important predictor. Note that the partial residuals for PRT% in (b) go above 1 because PRT% was modeled as a normally-distributed (Gaussian) variable. All other features as in Figure 4.DOI: http://dx.doi.org/10.7554/eLife.11159.014
+**Figure 5.:** Each panel shows partial residual performance (y-axis) in relation to wing aspect ratio (x-axis) from a best-fit model that identified aspect ratio as an important predictor. Note that the partial residuals for PRT% in (b) go above 1 because PRT% was modeled as a normally-distributed (Gaussian) variable. All other features as in Figure 4.
 
 Body mass was included in candidate models 1–7 because we had anticipated that body mass would have a strong influence on variation in maneuvering performance. However, for every performance metric in Table 4, the coefficient estimate for body mass had confidence intervals that broadly overlapped zero.
 
-## Effect of competitor on maneuvering performance
+### Effect of competitor on maneuvering performance
 
-We did not detect a substantial effect of competitor presence on many of the performance metrics (
+We did not detect a substantial effect of competitor presence on many of the performance metrics (Table 4). Two metrics, horizontal acceleration and deceleration, were affected, but in the direction opposite to what we predicted. Specifically, birds performed maneuvers with lower acceleration (–0.46 m/s2 difference on average) and lower deceleration (–0.47 m/s2) in the presence of a competitor, relative to solo flight (Figure 6a,b). One metric, pitch-down velocity (Figure 6c), did increase during competition as predicted (0.06 rev/s difference on average). We had no prediction for how competition would influence the relative use of pitch-roll and arcing turns, but found that birds used proportionately more arcing turns in the presence of a competitor (Figure 6d). Specifically, 35% of direction changes were arcing turns on average (and 65% pitch-roll) when a competitor was present, whereas during solo flight, only 23% of direction changes were arcing turns (and 77% pitch-roll) on average.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/11159/elife-11159-fig6-v2.jpg)
 
-**Figure 6.:** Each panel shows residual performance (y-axis) in relation to competitor presence from a best-fit model where competitor presence had a detected effect. All other features as in Figure 4.DOI: http://dx.doi.org/10.7554/eLife.11159.015
+**Figure 6.:** Each panel shows residual performance (y-axis) in relation to competitor presence from a best-fit model where competitor presence had a detected effect. All other features as in Figure 4.
 
 ## Discussion
 
@@ -130,11 +551,11 @@ The two performance metrics that were not repeatable are vertical accelerations 
 
 Male hummingbirds are extremely aggressive towards conspecifics (Kodric-Brown and Brown, 1978; Carpenter et al., 1983) and other species of hummingbirds (Stiles and Wolf, 1970; Wolf et al., 1976). The most territorial species will vigorously defend territories (Carpenter et al., 1983) and lekking sites (Rico-Guevara and Araya-Salas, 2015). In staged competition studies, paired hummingbirds will also establish and defend territories (Tiebout, 1993). We originally intended to use competition to elicit high levels of flight activity and maneuvering performance in territorial male Anna's hummingbirds (Stiles, 1982). However, we found that competitor presence affected only a small number of the maneuvering performance metrics that we measured. Pitch-down velocity increased with competition whereas horizontal acceleration and deceleration actually decreased. We do not know why these three metrics (in addition to PRT%; see below) were strongly affected by competition or why they were affected in the directions observed. However, there are several possible causes for why competitor presence did not affect the other metrics: 1) we were unable to elicit a high level of competition or territoriality; 2) the birds may have worked out dominance without the aggressive interactions normally seen outdoors; and/or 3) the interactions required to establish dominance may have been very brief (Maynard Smith, 1974) such that they comprised only a minuscule sample of the maneuvers we analyzed. This experiment was not designed to study the effects of maneuvering performance on competitive success, although this represents an important topic for future investigation. Laboratory performance tests do not always reflect field behavior (Irschick, 2003) and outdoor studies of maneuvering performance will be important for understanding the role of maneuverability in competitive interactions. Recent advances in video tracking (Theriault et al., 2014; Shelton et al., 2014) should make it possible to track individuals for multiple measurements.
 
-The most substantial result of competitor presence was the increase in the use of arcing over pitch-roll turns. These two types of turns represent different strategies for changing direction that differ in duration and amount of heading change. Arcing turns require less time but are used for smaller heading changes, whereas pitch-roll turns are longer but can be used to change heading by 180° (
+The most substantial result of competitor presence was the increase in the use of arcing over pitch-roll turns. These two types of turns represent different strategies for changing direction that differ in duration and amount of heading change. Arcing turns require less time but are used for smaller heading changes, whereas pitch-roll turns are longer but can be used to change heading by 180° (Figure 7). Given that hummingbird agonistic interactions can involve direct contact and stabbing with bills (Tiebout, 1993; Clark and Russell, 2012; Rico-Guevara and Araya-Salas, 2015), slow turns in place could make a bird more vulnerable during competition.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/11159/elife-11159-fig7-v2.jpg)
 
-**Figure 7.:** Representative examples of arcing (a) and pitch-roll (b) turns are depicted from the above perspective. Arcing turns (Arc; orange) and pitch-roll turns (PRT; green) differed in the degrees turned (c) and elapsed time (d). Circles represent bird-trial means (n = 52) with grand means indicated with black lines. Histograms for the pooled dataset of all maneuvers are given on the right. The outliers for degrees turned in pitch-roll turns were included when calculating the grand means but not in the model analyses (Table 4).DOI: http://dx.doi.org/10.7554/eLife.11159.016
+**Figure 7.:** Representative examples of arcing (a) and pitch-roll (b) turns are depicted from the above perspective. Arcing turns (Arc; orange) and pitch-roll turns (PRT; green) differed in the degrees turned (c) and elapsed time (d). Circles represent bird-trial means (n = 52) with grand means indicated with black lines. Histograms for the pooled dataset of all maneuvers are given on the right. The outliers for degrees turned in pitch-roll turns were included when calculating the grand means but not in the model analyses (Table 4).
 
 The relative use of arcing and pitch-roll turns was the only metric in our study that was influenced by all of morphology, burst muscle capacity, and competitor presence. The minimum radius of an arcing turn is limited by the maximum centripetal acceleration that a bird can generate while maintaining lift. The speed of a pitch-roll turn is limited by the ability to decelerate and then accelerate. Birds with higher wing aspect ratio may have preferred arcing turns because they were able to generate higher centripetal accelerations. Birds with higher burst muscle capacity may have favored pitch-roll turns because they had higher accelerating and decelerating performance. These observations suggest the hypothesis that high aspect ratio and high burst capacity enhance maneuverability. This hypothesis could be evaluated by comparing hummingbird species that differ in wing shape, foraging strategy, and burst capacity (Altshuler et al., 2004b; 2010a; Altshuler, 2006; Kruyt et al., 2014).
 
@@ -142,7 +563,7 @@ By constraining hummingbirds to fly in a large chamber we were able to track and
 
 ## Materials and methods
 
-## Animals and experimental trials
+### Animals and experimental trials
 
 We captured and filmed 20 adult male Anna's hummingbirds (Calypte anna) at the University of California, Riverside (eight birds in July-October 2009; four birds in January-March 2010) and the University of British Columbia (eight birds in December 2013-April 2014). The hummingbirds were housed in individual cages and fed ad libitum with a solution of artificial nectar (Nektar-Plus, Nekton, Pforzheim, Germany) and sucrose. The flight arenas were large rectangular cages (3 x 1.5 x 1.5 m) built with an aluminum frame and had either garden mesh (California) or clear acrylic (British Columbia) side panels. The cages contained multiple perches and a single feeder hung from the roof of the cage.
 
@@ -154,37 +575,51 @@ We considered wing area and wing length as two potential measures of wing size, 
 
 All procedures were conducted under approval of the Institutional Animal Care and Use Committee at the University of California, Riverside and the Animal Care Committee at the University of British Columbia.
 
-## Tracking system
+### Tracking system
 
 We used an automated tracking system to measure both body position and orientation of flying birds in three dimensions (Video 1). A complete description of the tracking algorithm and hardware components is provided in (Straw et al., 2011). The core algorithms were written in Python (Python Software Foundation, 2012), and are available via github (PyMVG: https://github.com/strawlab/pymvg; adskalman: https://github.com/astraw/adskalman; MultiCamSelfCal: https://github.com/strawlab/MultiCamSelfCal/). We adapted this system for recording hummingbird solo and competitive flight trajectories with four or five digital cameras (GE680, Allied Vision Technologies, Burnaby, Canada). The cameras were mounted on the ceiling and recorded at 640 x 480 pixel resolution at 200 frames per second (Figure 1a). We calibrated the filming volume by moving a single light-emitting diode throughout the arena to acquire data for an automated self calibration algorithm (Svoboda et al., 2005). This algorithm provides a relative calibration (non-linear warping distortion parameters and 3x4 camera calibration matrices) across all cameras. This calibration is brought into absolute terms (the scale, rotation, and translation are found) by matching a manually measured 3D model of the flight arena with reconstructed image coordinates using the ‘estsimt’ function of the MultiCamSelfCal toolbox (Svoboda et al., 2005).
 
 To minimize the effect of errors in the 3D tracking, we used a forward/reverse non-causal Kalman filter (Rauch–Tung–Striebel smoother) applied to the online state estimate of position and velocity from the realtime Kalman filter. The smoothing parameters were chosen so that seven traces of a tracked, falling object yielded an average peak acceleration of 9.8 m/s2. The process covariance matrix we used is:
 
-Qpos=σ2×T3300T22000T3300T22000T3300T22T2200T000T2200T000T2200T
+$$
+Q_{pos}=\sigma^{2}\times\frac{T^{3}}{3}00\frac{T^{2}}{2}000\frac{T^{3}}{3}00\frac{T^{2}}{2}000\frac{T^{3}}{3}00\frac{T^{2}}{2}\frac{T^{2}}{2}00T000\frac{T^{2}}{2}00T000\frac{T^{2}}{2}00T
+$$
 
 where σ2 is 0.01 and T is the interval between frames (0.005 s). The observation covariance matrix we used is:
 
-Rpos=0.0001440000.0001440000.000144
+$$
+R_{pos}=0.0001440000.0001440000.000144
+$$
 
 Figure 1c and d show examples of two trajectories with plots of the unsmoothed data, the data smoothed with Qpos and Rpos, and the effects of two different smoothing parameters (Rpos x 10, Rposx 0.1).
 
 Following establishment of the 3D trajectories, the tracking system assigned 3D body orientation vectors to each bird in each frame based on 2D estimates of the long axis of the body. Body orientation was estimated using an algorithm that fit orientations to the body axis in each 2D image. Each sequence of five consecutive images cropped around the bird was aligned at the optical center of intensity. Averaging these images effectively eliminated the wings and emphasized the body. Orientation was estimated by calculating the covariance matrix of the image luminance and then computing the eigensystem of this covariance matrix. The eigenvector associated with the largest eigenvalue was taken as the orientation. Orientation vector assignments were also smoothed with a Kalman filter using more restrictive smoothing parameters than were used to smooth body position. To determine appropriate smoothing parameters we replotted the smoothed body orientation vectors onto a sample of videos, and visually chose the ones that provided the best fit. The process covariance matrix used for body orientation (Qori) is the same as the process covariance matrix used for body position (Qpos) and the observation covariance matrix used is:
 
-Rori=0.000001440000.000001440000.00000144
+$$
+R_{ori}=0.000001440000.000001440000.00000144
+$$
 
-Once the body orientations were calculated we used a dynamic programming algorithm to decide which end of the vector was the head and which end was the tail. The direction of the head was chosen based on the direction of the previous orientation, the direction of travel, and the vertical up direction. For each frame (n), the 'cost' associated with the two possible orientations (Ori→, -Ori→) were calculated:
+Once the body orientations were calculated we used a dynamic programming algorithm to decide which end of the vector was the head and which end was the tail. The direction of the head was chosen based on the direction of the previous orientation, the direction of travel, and the vertical up direction. For each frame (n), the 'cost' associated with the two possible orientations ($Ori→$, -$Ori→$) were calculated:
 
-CostOri=Speed(Ori→n⋅Vel→modOri→nVel→mod)+(1−Speed)(Ori→n⋅Up→Ori→nUp→)+(1−Speed)(Ori→n⋅Ori→n−1Ori→nOri→n−1)
+$$
+Cost_{Ori}=Speed(\frac{Ori→_{n}⋅Vel→_{mod}}{Ori→_{n}Vel→_{mod}})+(1−Speed)(\frac{Ori→_{n}⋅Up→}{Ori→_{n}Up→})+(1−Speed)(\frac{Ori→_{n}⋅Ori→_{n−1}}{Ori→_{n}Ori→_{n−1}})
+$$
 
-Cost−Ori=Speed(−Ori→n⋅Vel→modOri→nVel→mod)+(1−Speed)(−Ori→n⋅Up→Ori→nUp→)+(1−Speed)(−Ori→n⋅Ori→n−1Ori→nOri→n−1)
+$$
+Cost_{−Ori}=Speed(\frac{−Ori→_{n}⋅Vel→_{mod}}{Ori→_{n}Vel→_{mod}})+(1−Speed)(\frac{−Ori→_{n}⋅Up→}{Ori→_{n}Up→})+(1−Speed)(\frac{−Ori→_{n}⋅Ori→_{n−1}}{Ori→_{n}Ori→_{n−1}})
+$$
 
-where Ori→ is the body vector, Vel→mod is the modified velocity vector tipped up 15º towards the vertical direction. Up→ is the vertical direction vector, Ori→n−1 is the orientation during the previous frame, and if the magnitude of the velocity is greater than 0.5m/s:
+where $Ori→$ is the body vector, $Vel→_{mod}$ is the modified velocity vector tipped up 15º towards the vertical direction. $Up→$ is the vertical direction vector, $Ori→_{n−1}$ is the orientation during the previous frame, and if the magnitude of the velocity is greater than 0.5m/s:
 
+$$
 Speed=Vel→
+$$
 
 otherwise:
 
+$$
 Speed=0.5
+$$
 
 This approach accounted for the tendency of hummingbirds to fly forwards and with an upright posture, but allowed for exceptions in the case of backwards flight, inversions, and dives, particularly if these occurred at low speeds.
 
@@ -192,7 +627,7 @@ The magnitudes of calculated accelerations and, to a lesser extent, velocities d
 
 The automated tracking system extracted the 3D coordinates of multiple flying animals and saved each trajectory as a separate object (Video 1). An object began when the tracking system detected new movement and ended when either the object stopped moving, the error in the 3D reprojection grew too large, or multiple objects came within 2 cm of each other. In our experiments tracking hummingbird flight led to two problems in determining distinct objects. The first is that very stable hovering can be misidentified as perching. For example, as a bird went into an extended hovering bout, such as at a feeder, the tracking system detected the cessation of movement and ended the trajectory. Conversely, when the bird perched at the end of a flight or in between two flights, especially if it continued to move its head or fluff its feathers, the tracking system treated the bird as moving and continued the trajectory. Because our study focused on identifying and analyzing relatively long, moving trajectories, these types of errors did not cause problems. The second challenge concerned identification of birds during close encounters in competition trials. When two tracked objects became close to each other, even if they did not physically touch, the tracking system could not accurately distinguish them. We used a conservative solution and terminated the trajectories whenever two birds came close enough that the tracked objects merged. Birds were later identified manually by a team of digitizers who viewed the videos and assigned each object number to either the marked or unmarked bird.
 
-## Statistical analysis
+### Statistical analysis
 
 The automated digitization produced a small number of extreme tracking errors, which we did not want to unduly influence statistical analyses. We accordingly removed values >5 SDs more extreme than the mean for each performance metric. The trimmed values comprised only 0–0.31% of the original pooled sample size for each metric. We next calculated the mean of each performance metric for each bird-trial combination (n= 52 means; 20 birds in 20 solo trials and 16 paired competition trials). All statistical analyses were performed on these bird-trial means using R 3.1.1 (R Development Core Team, 2014), and the data used for the analysis are available online (Segre et al., 2015).
 
@@ -202,7 +637,65 @@ Because our second question involved evaluating several possible scenarios for t
 
 We also examined associations between burst performance, wing size, and wing shape because our load lifting assay may have incorporated effects of wing morphology as well as muscle capacity. The mass of weights lifted during load lifting was not significantly associated with wing length in our sample of 20 individuals (p = 0.87), however, it was negatively associated with wing aspect ratio (p = 0.04) controlling for site. Thus in our model analyses we used residual burst performance controlling for wing aspect ratio and site as a measure of burst muscle capacity independent of a bird’s wing morphology.
 
-We considered eight candidate mixed-effects models that could plausibly explain variation in each maneuvering performance metric (Table 5). All candidate models included an individual intercept for each bird (the random intercept term) and were fit using the nlme (v 3.1–117) package (Zuur et al., 2009). The intercept-only model included an estimate of the population intercept (grand mean) and random intercept terms, but no fixed effects. Other candidate models are listed in Table 5. All models except the intercept-only model included the fixed effects of competitor presence, body mass, and experiment to account for potential effects of these factors. Experiment had three levels, one for each round of trials (California 2009, 2010, British Columbia 2014) to account for differences such as location, time of year, and filming conditions.10.7554/eLife.11159.017Table 5.Candidate models of maneuvering performance. All models include an intercept as well as a random effect of bird identity to account for repeated measures of individuals.DOI: http://dx.doi.org/10.7554/eLife.11159.017ModelFixed effectsDescription1.Solo/comp + experiment + body mass + wing lengthWing size2.Solo/comp + experiment + body mass + wing aspect ratioWing shape3.Solo/comp + experiment + body mass + wing length + wing aspect ratioWing size & shape4.Solo/comp + experiment + body mass + weight liftedBurst power5.Solo/comp + experiment + body mass + weight lifted + wing lengthBurst power & wing size6.Solo/comp + experiment + body mass + weight lifted + wing aspect ratioBurst power & wing shape7.Solo/comp + experiment + body mass + weight lifted + wing length + wing aspect ratioBurst power, wing size & shape8.Intercept-only*Candidate models 1-7 also include a fixed effect of days post-capture for the following metrics: Velmax, AccHormax, DecHormax, Arcvel, avg, and Arccent, max
+We considered eight candidate mixed-effects models that could plausibly explain variation in each maneuvering performance metric (Table 5). All candidate models included an individual intercept for each bird (the random intercept term) and were fit using the nlme (v 3.1–117) package (Zuur et al., 2009). The intercept-only model included an estimate of the population intercept (grand mean) and random intercept terms, but no fixed effects. Other candidate models are listed in Table 5. All models except the intercept-only model included the fixed effects of competitor presence, body mass, and experiment to account for potential effects of these factors. Experiment had three levels, one for each round of trials (California 2009, 2010, British Columbia 2014) to account for differences such as location, time of year, and filming conditions.
+
+**Table 5.**
+ Candidate models of maneuvering performance. All models include an intercept as well as a random effect of bird identity to account for repeated measures of individuals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Fixed effects</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>Solo/comp + experiment + body mass + wing length</td>
+      <td>Wing size</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Solo/comp + experiment + body mass + wing aspect ratio</td>
+      <td>Wing shape</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Solo/comp + experiment + body mass + wing length + wing aspect ratio</td>
+      <td>Wing size &amp; shape</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Solo/comp + experiment + body mass + weight lifted</td>
+      <td>Burst power</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Solo/comp + experiment + body mass + weight lifted + wing length</td>
+      <td>Burst power &amp; wing size</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Solo/comp + experiment + body mass + weight lifted + wing aspect ratio</td>
+      <td>Burst power &amp; wing shape</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>Solo/comp + experiment + body mass + weight lifted + wing length + wing aspect ratio</td>
+      <td>Burst power, wing size &amp; shape</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>Intercept-only</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Candidate models 1-7 also include a fixed effect of days post-capture for the following metrics: Velmax, AccHormax, DecHormax, Arcvel, avg, and Arccent, max_
 
 Two issues arose in the preliminary examination of data. The first issue was that five of the performance metrics were significantly influenced by the number of days a bird had been in captivity. We therefore included an additional fixed effect of the number of days since capture when analyzing these five metrics (Table 5). The second issue was that one of the metrics, the heading change in pitch-roll turns (PRTdeg), had three values that were significant outliers (Grubb’s test, all G > 3.09, all p<0.03; Figure 7). We determined that these three statistical outliers were not errors in the tracking system but were instead derived from one individual that used pitch-roll turns to make small heading changes, unlike the other birds. We omitted these outliers from the analysis of heading change in pitch-roll turns to ensure that all fitted Gaussian models met the required assumptions, with no other outliers or problems of skew or heteroskedasticity. The best-fit model for heading change in pitch-roll turns was the intercept-only model regardless of whether the outliers were included.
 

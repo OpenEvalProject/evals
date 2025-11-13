@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03efmqc40 Center for Biological Physics and Department of Physics, Arizona State University Tempe United States
-2. https://ror.org/03efmqc40 School of Molecular Sciences, Arizona State University Tempe United States
-3. https://ror.org/03m1g2s55 Sanford Burnham Prebys Medical Discovery Institute La Jolla United States
+1. Center for Biological Physics and Department of Physics, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
+2. School of Molecular Sciences, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
+3. Sanford Burnham Prebys Medical Discovery Institute La Jolla United States ([ROR:03m1g2s55](https://ror.org/03m1g2s55))
 
 † Corresponding author
 
@@ -34,7 +34,7 @@ We validate our hypothesis first by analyzing the existing mutational fitness da
 
 ## Results and discussion
 
-## Combining long-range dynamic coupling analysis with co-evolution allows to identify distal sites that contribute to functional activity
+### Combining long-range dynamic coupling analysis with co-evolution allows to identify distal sites that contribute to functional activity
 
 With our ICDC approach, we aim to explore the role of dynamics versus evolutionary coupling (EC) as well as the role of rigidity versus flexibility in allosterically modulating active/binding site dynamics. To this extent, we created four unique categories that classify residue positions based on residue DFI score, DCI score, and co-evolutionary score: category (1,1) is dynamically and co-evolutionarily coupled rigid sites (exhibiting %DFI values 0.2 or lower, showing 0.7 or higher %DCI with the binding site, and showing 0.6 or higher co-evolution scores with the binding site); category (1,0) is dynamically coupled but co-evolutionarily not coupled sites; category (0,1) is dynamically not coupled but co-evolutionarily coupled sites; category (0,0) is dynamically not coupled, and co-evolutionarily not coupled flexible sites (exhibiting %DFI values 0.7 or higher) (Supplementary file 1 and Supplementary file 2; ); importantly, this classification is based on two independent statistical approaches thus compensate the noise of individual approaches. Based on our evolutionary analysis (Campitelli et al., 2020a; Modi et al., 2021b; Modi and Ozkan, 2018), we hypothesize that category (1,1) would impact protein activity or binding affinity the most.
 
@@ -48,7 +48,7 @@ We found that category (1,1) positions show the highest impact, both significant
 
 Our ICDC selection criteria effectively identifies residue positions and their amino acid substitutions that could fine-tune function without leading to a functional loss; and category (1,1) residues have the largest impact on function irrespective of their distance from active site (Figure 1C).
 
-## Application of ICDC approach to modulate CV-N binding affinity through distal mutations
+### Application of ICDC approach to modulate CV-N binding affinity through distal mutations
 
 CV-N is a small (11 kDa) natural lectin isolated from cyanobacterium Nostoc ellipsosporum which comprises two quasi-symmetric domains, A (residues 1–38/90–101) and B (residues 39–89 respectively), that are connected to each other by a short helical linker. Despite almost having identical structures, the domains show relatively low sequence homology (28% sequence identity and 52% similarity). Functionally, they both bind dimannose, yet the affinity is quite different, with domain B having tighter binding affinity (Kd = 15.3 µM), and domain A showing weak affinity (Kd = 400 µM) (Balzarini, 2007; Bolmstedt et al., 2001; Li et al., 2015).
 
@@ -70,6 +70,67 @@ To further investigate the mechanism of functional modulation of category (1,1) 
 
 **Figure 3.:** (A) Dynamic flexibility index (DFI) profile mapped onto cyanovirin-N (CV-N) structure: red corresponds to high DFI (very flexibile sites), and blue to low DFI values (rigid sites). Position I34 (low DFI score) is highlighted. (B) Dynamic coupling index (DCI) profile projected on CV-N structure with green corresponding to sites exhibiting high coupling with binding site residues.
 
+**Table 1.**
+ Predicted binding affinities of domain B, experimental ITC data, and chemical denaturation experiments for P51G-m4 and its I34 variants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Predictedbindingscore(X-score energy unit)</th>
+      <th>ITC dimannoseKd (μM)</th>
+      <th>ITC dimannoseΔH (kcal/mol)</th>
+      <th>ITC dimannoseTΔS (kcal/mol) (T=298 K)</th>
+      <th>ITC dimannoseΔG (kcal/mol)</th>
+      <th>∆GH2O (kcal/mol)</th>
+      <th>Cm (M)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P51G-m4</td>
+      <td>–6.62</td>
+      <td>117±3</td>
+      <td>–12.3±0.3</td>
+      <td>–7.00±0.3</td>
+      <td>–5.30±0.3</td>
+      <td>3.01±0.047</td>
+      <td>1.46±0.019</td>
+    </tr>
+    <tr>
+      <td>P51G-m4-I34K</td>
+      <td>–5.85</td>
+      <td>No binding</td>
+      <td>No binding</td>
+      <td>No binding</td>
+      <td>No binding</td>
+      <td>2.40±0.124</td>
+      <td>0.68±0.015</td>
+    </tr>
+    <tr>
+      <td>P51G-m4-I34L</td>
+      <td>–6.19</td>
+      <td>148±2</td>
+      <td>–9.60±0.1</td>
+      <td>–4.40±0.1</td>
+      <td>–5.20±0.1</td>
+      <td>2.95±0.077</td>
+      <td>1.39±0.009</td>
+    </tr>
+    <tr>
+      <td>P51G-m4-I34Y</td>
+      <td>–6.75</td>
+      <td>64±5</td>
+      <td>–4.35±0.1</td>
+      <td>1.32±0.2</td>
+      <td>–5.67±0.2</td>
+      <td>2.91±0.157</td>
+      <td>1.13±0.017</td>
+    </tr>
+  </tbody>
+</table>
+
 To verify the predictions of I34 variants, we first assessed the folding and thermal stability of these mutants by circular dichroism (CD) spectroscopy. Far-UV CD spectroscopy showed that all mutants are well folded and adopt a fold similar to the parent protein, characterized by spectra with a single negative band centered at 216 nm. We determined the stability of the mutants by CD monitored thermal denaturation; the thermal denaturation curves were analyzed to obtain apparent melting temperature (Tm) values. We found that the conservative mutation I34L is as stable as P51G-m4, with apparent Tm of 57.8°C and 58°C, respectively. In contrast, I34Y and I34K were less thermostable than P51G-m4 as shown by apparent Tm values of 54.7°C and 47°C, respectively. Not surprisingly, substituting a hydrophobic residue with a basic aliphatic amino acid (lysine) has a large destabilizing effect, while aromatic and polar tyrosine is better tolerated. The trend of thermostability is P51G-m4~I34 L> I34 Y> I34 K (Figure 4—figure supplement 2).
 
 Chemical denaturation experiments were used to extract thermodynamic values, after ensuring complete equilibration at each concentration of guanidinium hydrochloride by incubating the samples for 72 hr (Patsalo et al., 2011). The ∆GH20 values and Cm values of P51G-m4, I34L, I34Y, and I34K are found as 3.0, 2.94, 2.91, and 2.38 kcal/mol and of 1.45, 1.39, 1.13, and 0.68 M respectively (Table 1). The results align with the thermal denaturation results: P51G-m4 is the most stable to denaturant, followed by I34L, I34Y, and I34K (Figure 4—figure supplement 3).
@@ -78,7 +139,27 @@ Next, we evaluated the impact of the mutations on the dimannose binding affinity
 
 To glean more information on the mode of binding by I34Y, we determined the X-ray structure of the unbound and dimannose-bound form and compared it with the template protein P51G-m4. The fold is highly conserved (Figure 4) as shown by main chain RMSD of 0.16 and 0.20 Å with bound and unbound I34Y, respectively, and tyrosine is well tolerated at position I34. The binding pocket region is also structurally conserved compared to P51G-m4. Analysis of the polar contacts between dimannose and P51G-m4 and I34Y (Figure 4B) shows an identical number of hydrogen bonds (11) with the ligand, indicating a conserved binding pose. We compared the docked pose of I34Y acquired from Adaptive BP-Dock with the bound X-ray structure. The ligand shows an RMSD value of 0.75 Å (Figure 4—figure supplement 5). These observations suggest that the increase in binding affinity of I34Y toward dimannose might be mediated by equilibrium dynamics, which are not captured by the crystal structure. This hypothesis is supported by the changes in entropy compensation measured experimentally (ITC) in dimannose binding by P51G-m4 (negative TΔS) and I34Y (positive TΔS).
 
-## Molecular mechanism governing the binding dynamics in I34 variants
+![Figure 4.](https://cdn.elifesciences.org/articles/67474/elife-67474-fig4-v1.jpg)
+
+**Figure 4.:** (A) The crystal structures of I34Y (bound in magenta and unbound in cyan) and its template protein P51G-m4 (green) are superimposed. (B) Overlay of bound structures of I34Y (magenta) and P51G-m4 (gray) (RMSD 0.15 Å); dashed lines depict polar interactions with dimannose.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67474/elife-67474-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Starting from an unbound structure the backbone atoms are perturbed using perturbation response scanning (PRS) and perturbed pose is fed into minimization. The minimized conformation is docked with the glycan using RosettaLigand docking approach. The lowest scored docked pose is selected and used for next iteration step until convergence is established. For every lowest energy docked pose from an iteration a new binding score is reevaluated using X-score empirical scoring function.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67474/elife-67474-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/67474/elife-67474-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Chemical denaturation curve showing I330/ I360 ratio as a function of Gu-HCl concentration. (B) ∆GH2O versus Gu-HCl concentration plot for cyanovirin-N (CV-N) mutants.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/67474/elife-67474-fig4-figsupp4-v1.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/67474/elife-67474-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** The RMSD of the ligand is calculated as 0.75 Å.
+
+### Molecular mechanism governing the binding dynamics in I34 variants
 
 It is interesting to observe that a distal site can modulate binding affinity to a wide range based on amino acid substitutions. This finding has also been observed for allosterically regulated enzymes such as LacI, for which different amino acid substitutions on non-conserved sites lead to gradual changes in function, acting like a rheostatic switch to modulate function through conformational dynamics (Campitelli et al., 2021; Campitelli et al., 2020b; Meinhardt et al., 2013; Miller et al., 2017; Swint-Kruse et al., 1998). To gather atomic level detail on how the substitutions on I34 dynamically modulate the binding affinity, we employed MD simulations in both bound and unbound forms (see Methods for details of the simulations). The unbound trajectories were analyzed for acquiring binding pocket hydrogen bond distances and pocket volume. Later, to learn about the ligand-induced conformational dynamic changes, the bound trajectories were utilized to estimate computational binding free energies (Deng and Roux, 2009; Okazaki et al., 2006).
 
@@ -86,11 +167,23 @@ Previous computational work in our lab had linked binding affinity in the CV-N f
 
 Another compelling evidence differentiating I34 variants from P51G-m4 is the change in their binding pocket volumes estimated by POVME pocket volume calculation tool (Wagner et al., 2017). The calculated pocket volumes for I34Y, I34K, and P51G-m4 were converted into frequencies to obtain probability distributions (Figure 5A), revealing that I34Y variant samples a more compact pocket volume compared to P51G-m4. If the pocket is too small or too large, dimannose cannot maximize its interaction with the protein, and a compact conformation enables dimannose to easily make the necessary hydrogen bond interactions with the protein. This optimum pocket volume sampled by I34Y may also explain the different binding energetics observed by ITC, in which a positive entropy change upon binding compensates for the loss in enthalpy compared to P51G-m4 (Table 1; Breiten et al., 2013; Cornish-Bowden, 2002). Pocket volume analysis reveals a larger value for I34K compared to P51G-m4, suggesting that this mutant cannot accommodate the necessary interactions with the dimannose resulting in loss of binding. We applied the same pocket volume calculation to the X-ray structures of P51G-m4 and I34Y variant, and we found volumes of 141 and 114 Å3 for P51G-m4 and I34Y, respectively, in the unbound forms (Figure 5B). These volumes correlate well with the mean volumes from MD trajectories, suggesting that the variants modulate the conformational dynamics of binding pocket.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/67474/elife-67474-fig5-v1.jpg)
+
+**Figure 5.:** (A) Probability distribution of the pocket volume analyses obtained from molecular dynamics (MD) simulation trajectories. I34Y populates a conformation with an optimum volume more than others. P51G-m4 and I34L variant samples similar pocket volumes, but I34K variant has a larger pocket volume compared to others. (B) Pocket volume comparison of the domain B of solved structures for P51G-m4 (purple) and I34Y variant (green).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67474/elife-67474-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Structural difference of open versus closed conformation based on the hydrogen bond distance between residues N42 and N53. (B) Hydrogen bond distance between residue N42 and N53 from crystal structures of P51G-m4 and P51G-m4-I34Y. (C) Frequencies of hydrogen bond distance between residue N42 and N53 from GROMACS production runs showing I34Y variant sampling more open conformation compared to P51G-m4.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/67474/elife-67474-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Hydrogen bonds (representing the peak of the distribution on panel B) and their distances are shown between dimannose and residue R76 for P51G-m4 (blue) and I34Y (orange). (B) H-bond distance distribution between dimannose and residue R76.
+
 Overall, the conformational dynamics analysis of the unbound conformations indicates a shift of the native ensemble toward a smaller pocket volume upon I34Y mutation. This could explain the decrease in the entropic cost of binding observed in ITC results. We also analyzed the binding energetics by carrying out dimannose docking with 2000 different conformations sampled from the binding pocket volume distributions. We found that the small volume restrict accessibility to the side-chain conformations of binding residue R76 in the I34Y variant, yielding different hydrogen bond patterns with the dimannose (Figure 5—figure supplement 2) and suggesting a loss in enthalpic contribution.
 
 The bound simulation trajectories were subjected to the MM-PBSA approach to estimate computational binding free energies and related enthalpic and entropic contributions (He et al., 2020; Rastelli et al., 2010). The results are tabulated on Supplementary file 4. The computed binding free energies capture the trend of experimental binding affinities (R=0.87). The I34Y variant displays a more favorable binding with dimannose compared to wild type. Interestingly, both experimental and computational results show I34Y compensating the enthalpic loss with entropic gain. While I34L variant enthalpic loss is greater than I34Y in computational approach, the overall binding free energy mirrors the ITC results. Additionally, loss of binding of I34K variant overlaps with the ITC data.
 
-## Substitutions of I34 modulates the conformational ensemble leading to change in dimannose binding affinity
+### Substitutions of I34 modulates the conformational ensemble leading to change in dimannose binding affinity
 
 Proteins adapt to a new environment by modulating the native state ensemble through mutations of different positions while keeping the 3D structure conserved (Campitelli et al., 2020a; Kuriyan and Eisenberg, 2007; Li et al., 2015; Liu and Nussinov, 2017; Modi and Ozkan, 2018; Risso et al., 2018; Tripathi et al., 2015; Woodrum et al., 2013). As we also observed a similar pattern of conservation of structure yet change in function in our designed CV-N I34 variants, we further analyzed the flexibility profiles of I34 variants. The DFI profiles clustered using principal component analyses match the 2D map of melting temperature and Kd as reaction coordinates, suggesting a correlation between changes in dynamics and changes in function (Figure 6). The 2D map shows I34L, P51G-m4, and I34Y under the same cluster, with I34L and P51G-m4 close, while I34K is markedly different (Figure 6A). The dendrogram constructed based on the DFI profiles captures this clustering (Figure 6B) with P51G-m4 and I34L variant under the same branch, suggesting their dynamics are very similar; I34Y is under the same main cluster albeit in a different branch. I34K is under a separate branch, indicating different dynamics. This is in agreement with our previous studies, where substitutions on DARC spots modulate binding dynamics reflected in their flexibility profiles to adapt to a new environment (Campitelli et al., 2021; Kumar et al., 2015b; Modi et al., 2021a).
 
@@ -99,6 +192,18 @@ Proteins adapt to a new environment by modulating the native state ensemble thro
 **Figure 6.:** (A) 2D map of Kd and melting temperature of P51G-m4 and its variants. (B) Principal component analyses (PCA) clustering on the first two principal components of the dynamic flexibility index (DFI) profiles as a dendrogram.
 
 We further gleaned a molecular view of the role of flexibility in binding by comparing changes in DFI profiles of the binding site residues with P51G-m4 for each mutant, in the unbound and bound form (Figure 7A and B). We found that flexibility at position T57 is highly dependent on the amino acid at position I34: flexibility increases in I34K, suggesting a higher entropic penalty for binding interactions. It is unchanged in I34L, which has similar binding affinity. In contrast, T57 becomes much more rigid in I34Y mutant. This indicates that the rigidification leading to a decrease in the entropic cost can contribute to the binding affinity enhancement of this mutant, which is also in agreement with the ITC results.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/67474/elife-67474-fig7-v1.jpg)
+
+**Figure 7.:** (A) Change in flexibility of I34K, I34L, and I34Y relative to P51G-m4 in unbound form is shown. Residues E41, N42, and T57 rigidifies on I34Y compared to P51G-m4. (B) Change in flexibility of I34K, I34L, and I34Y relative to P51G-m4 in bound form is projected on structure. (C) Hydrogen bonding interactions of residues I55, E56, T57, and C58 are shown for P51G-m4 and I34Y variant.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/67474/elife-67474-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Change in ΔG of binding (ΔGmut − ΔGwt) is compared with change in total dynamic flexibility index (DFI) scores ($\sumDFI_{mut}− DFI_{wt}$) for selected residues. The correlation with experimental binding scores is compared with the total sum of DFI values considering only domain B binding site residues first, and also summing over the domain B binding sites as well as the residues highly coupled (coupling greater than 0.8) to them. The observed high correlations indicate that these residues play an important role in the binding modulation upon mutations. The similar trend has also been seen in LacI (Campitelli et al., 2021). (B) In addition we randomly selected residues in domain B to calculate total DFI change over these positions upon mutations. Three different randomly selected residue sets all show poor correlation with change in experimental binding free energy.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/67474/elife-67474-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Two hydrogen bond pathways are found connecting residue 34–57. Pathway 1 is unique to I34Y. Pathway 2 is also observed in P51G-m4 CV-N but sampled much more frequently in I34Y variant.
 
 Comparison of the flexibility profiles of the bound form with those of the unbound form reveals that residue I34 in WT drastically gets rigidified upon binding, whereas I34Y variant does not. The decreased flexibility of T57 in the unbound form of I34Y accommodates the interactions with dimannose, contributing to the entropic compensation. In addition to the binding site residues of domain B, the flexibility of the rest of the residues also contributes to the total change in binding free energies. Therefore, we analyzed the correlation between (i) the sum of total change in flexibility of the binding site residues, (ii) the binding site residues and the residues exhibiting highly coupling with the binding pocket, with the experimentally measured binding affinity change. We observe a strong correlation between change in flexibility and change in affinity, as expected I34Y exhibiting tighter binding also gets more rigidified upon binding compared to P51G-m4. Moreover, inclusion of the highly coupled residues in addition to the domain B binding sites in computing the total sum of DFI scores yields a higher correlation with the experimental binding affinity change (Figure 7—figure supplement 1A). On the other hand, the correlation between the flexibility change of the randomly selected residues and experimental binding affinities yields poor correlation coefficient (Figure 7—figure supplement 1B). These results strongly support the role of dynamic allostery in modulating binding affinity.
 
@@ -112,58 +217,80 @@ Our new ICDC approach suggests that it is possible to identify and incorporate d
 
 ## Methods
 
-## Adaptive BP-Dock
+### Adaptive BP-Dock
 
 Adaptive backbone perturbation docking, Adaptive BP-Dock in short, allows us to model the interaction between CV-N and glycans in silico (Bolia and Ozkan, 2016). Adaptive BP-Dock combines the complex simulation of backbone flexibility of a protein into Rosetta’s ligand docking application (Davis and Baker, 2009). The common restriction in docking is the implementation of flexibility of receptor and ligand (Davis et al., 2009; Davis and Baker, 2009; DeLuca et al., 2015; Meiler and Baker, 2006). Rosetta included the flexibility of ligand in their Monte Carlo sampling approach but lacking full receptor flexibility. This high-order challenge is overcome by utilizing perturbation response scanning (PRS) to compute backbone changes during docking (Atilgan and Atilgan, 2009; Bolia et al., 2014b; Ikeguchi et al., 2005). This procedure also allows the modeling of transition from an unbound state to a bound state (Bolia and Ozkan, 2016). The computational cost of sampling is reduced by using a coarse-grained approach employing elastic network model (ENM) leading to an efficient way of computing backbone perturbations, mimicking the ligand interacting with receptor (Atilgan et al., 2001; Atilgan et al., 2010; Atilgan and Atilgan, 2009).
 
 We employed Adaptive BP-Dock in modeling glycan CV-N interactions starting from an unbound conformation of CV-N. The perturbed pose of the protein is calculated using PRS. The structure is then minimized, and the side chains are added at this step. The glycan is docked to the minimized structure using RosettaLigand algorithm. Rosetta samples bound conformations using a knowledge-based potential function and calculates bound pose energies. The lowest energy docked pose is selected and feed back to perturbation step, and the same procedure is followed iteratively until a convergence is reached. At the end of each iteration the lowest energy docked pose is taken and binding score is calculated using an empirical scoring function X-score. XEUs have shown to provide higher correlations with experimental results (Wang et al., 2002). The flow of the algorithm is shown in Figure 4—figure supplement 1. Adaptive BP-Docks iterative algorithm ensures that the sampling does not get trapped in a local minimum and reaches a global minimum. The challenge of unbound/bound modeling is solved using the iterative approach as the conformations are led toward a bound pose with the help of PRS.
 
-## Molecular dynamics
+### Molecular dynamics
 
 Gromacs simulations are conducted for P51G-m4 CV-N and all the variants in unbound form, and further for P51G-m4 CV-N, I34 variants I34K, I34L, I34Y, and A71 variants A71S, A7T in bound form (Abraham et al., 2015; Van Der Spoel et al., 2005). For each simulation the all-atom system is parametrized with CHARMM36 force field and explicit water model TIP3P. The solvation box is set to be minimum 16 Å from the edge of the protein. The system is neutralized by potassium ions to sustain electroneutrality and minimized with steepest descent for 10,000 steps. A short-restrained equilibrium is conducted in the constant number of particles, pressure, and temperature ensemble (NPT) for 5 ns using the Berendsen method at 300 K temperature and 1 bar pressure. NPT production trajectories were performed with Nose-Hoover and Parrinello-Rahman temperature and pressure coupling methods for 2 µs at 300 K and 1 bar. For all cases periodic boundary conditions and particle-mesh Ewald (PME) with interaction cutoff of 12 Å is employed with Gromacs version 2018.1.
 
-## Dynamic flexibility index
+### Dynamic flexibility index
 
-DFI is a position-specific metric that can measure the resilience of a given position to the force perturbations in a protein. It calculates the fluctuation response of a residue relative to the gross fluctuation response of the protein (Kumar et al., 2015b; Larrimore et al., 2017). DFI calculates residue response due to a perturbation by utilizing covariance matrices.[ΔR]3Nx1=[H]3Nx3N−1[F]3Nx1DFIi=∑j=1N|ΔRj|i∑i=1N∑j=1N|ΔRj|i
+DFI is a position-specific metric that can measure the resilience of a given position to the force perturbations in a protein. It calculates the fluctuation response of a residue relative to the gross fluctuation response of the protein (Kumar et al., 2015b; Larrimore et al., 2017). DFI calculates residue response due to a perturbation by utilizing covariance matrices.
+
+$$
+[ΔR]_{3Nx1}=[H]_{3Nx3N}^{−1}[F]_{3Nx1}
+$$
+
+
+
+$$
+DFI_{i}=\frac{\sumj=1N|ΔR^{j}|_{i}}{\sumi=1N\sumj=1N|ΔR^{j}|_{i}}
+$$
 
 Residue response, ∆R, is calculated using linear response theory by applying force, F, in multiple directions to mimic isotropic fluctuations. Hessian matrix, H, contains second derivatives of potentials. The inverse of Hessian matrix, H–1, contains residue covariances, and interpreted as a covariance matrix. The covariance matrices can be gathered from MD simulations, and also by using ENM of a protein. In this study, MD covariance matrices have been utilized to incorporate residue interactions accurately.
 
 Residues with low DFI score (below 0.2) are considered as hinge points. These points are communication hubs in this 3D interaction network. Due to high coordination number, the residues exhibiting low DFI values are crucial as information gateways. While they do not exhibit high residue fluctuation to the perturbations, they quickly transfer the perturbation information to other parts, thus they are in control of collective motion of the protein. A change in low DFI positions (i.e., a mutation) will lead to a transformation in the communication grid and majority of disease-associated (i.e., function altering mutations) are often observed as hinges (Butler et al., 2015; Nevin Gerek et al., 2013; Kumar et al., 2015a). The substitution on these site usually alters catalytic activity or binding interaction (i.e., glycans) by modulating equilibrium dynamics (Campitelli et al., 2020a).
 
-## Dynamic coupling index
+### Dynamic coupling index
 
-DCI exploits the same framework of DFI (Campitelli et al., 2020a; Larrimore et al., 2017). DCI utilizes the residue response fluctuation upon random force perturbation at a specific residue position to investigate residues that exhibit long-range coupling to each other. In DCI approach, a unit force is applied on functional residues (i.e., binding site residues) one by one and responses of all other residues are calculated.DCIi=∑JNFunctional|ΔRj|i/NFunctional∑J=1N|ΔRj|i/N
+DCI exploits the same framework of DFI (Campitelli et al., 2020a; Larrimore et al., 2017). DCI utilizes the residue response fluctuation upon random force perturbation at a specific residue position to investigate residues that exhibit long-range coupling to each other. In DCI approach, a unit force is applied on functional residues (i.e., binding site residues) one by one and responses of all other residues are calculated.
+
+$$
+DCI_{i}=\frac{\sumJN_{Functional}|ΔR^{j}|_{i}/N_{Functional}}{\sumJ=1N|ΔR^{j}|_{i}/N}
+$$
 
 With DCI scheme the residues with high response (high DCI score) indicate high long-range dynamic coupling. Residues with high DCI values with binding sites play a critical role in intercommunication of a protein with the binding residues. These coupled residues are of utmost importance in how forces propagate through amino acid chain network on a binding event. Some of the coupled residues are far from the binding site but still encompass modulation capabilities over binding pocket.
 
-## Informing dynamics from co-evolution
+### Informing dynamics from co-evolution
 
 Co-evolutionary data paves the way to assessing 3D structural contacts by utilizing available sequence information (Hopf et al., 2018; Marks et al., 2012; Morcos et al., 2014). Sequence information is more abundant compared to resolved protein structures. Exploiting the sequence information, primary contacts comparable to realistic structural contacts can be calculated and a contact matrix is formed. The accuracy of these contact maps is proved to be valuable in protein folding studies (Kryshtafovych et al., 2019; Morcos et al., 2011; Wang et al., 2016). EC analysis is used to collect information on how much two residues in a protein sequence are in close proximity in 3D structure. EC scores could be calculated by many different statistical approaches. In this study EC information is gathered by using RaptorX, EVcouplings, and MISTIC webservers (Hopf et al., 2019; Simonetti et al., 2013; Wang et al., 2017). While the limitation of these methods emerges from sequence homolog availability of a protein in MSA, RaptorX uses a deep neural network leveraging joint family approach, combining multiple ortholog protein families sharing similar function and phylogeny, to infer possible contacts. This method is proven to produce high accuracy in contact prediction compared to others (Wang et al., 2017). However, for a given MSA containing enough homolog sequences, other methods are also strong in predicting spatial contacts. EVcouplings approach uses direct information (DI) to calculate co-EC. DI metric is a modified mutual information (MI) score considering consistency between pairwise probabilities and single amino acid frequencies (de Juan et al., 2013; Morcos et al., 2011). Nonetheless, MI, a global approach compared to local DI metric, is accurate in capturing true contacts, while entangling indirect contacts from direct contacts. MISTIC webserver has taken advantage of MI to calculate co-EC (Dunn et al., 2008; Gouveia-Oliveira and Pedersen, 2007; Simonetti et al., 2013). In their MI method they introduced a correction term to MI to surpass the low statistics gathered with an MSA containing limited number of sequences. This approach is very useful in cases where certain homologs are rare and MSA of these homologs have multiple gaps in their alignments. All of these methods are employed in this study to achieve high accuracy predictions in finding residue couplings.
 
-## Mutant proteins cloning, expression, and purification
+### Mutant proteins cloning, expression, and purification
 
 The genes for mutants (I34Y, I34K, and I34L) were generated by applying mutagenic primers to P51G-m4-gene sequence and amplifying by PCR. The constructs were subsequently cloned in pET26B vector between NdeI and XhoI sites and transformed in BL21(DE3) for expression and purification. The proteins were expressed from a 10 ml starter culture in LB broth overnight at 37°C, inoculated into 1 l LB medium. The culture was induced with 1 mM isopropyl thiogalactoside when OD reached 0.6 and grown for another 6–8 hr. Then, the cells were harvested by centrifugation, lysed in 6 M guanidine hydrochloride at pH 8.0, and sonicated for 10 min. The supernatant recovered after centrifugation was used to purify proteins with GE HisTrap HP column (GE Healthcare Bio-Sciences, Piscataway, NJ) and a Bio-Rad EconoPump (Bio-Rad, Richmond, CA) under denaturing conditions. In brief, the proteins were loaded on the column in Gu-HCl buffer, which was buffer exchanged by 8 M urea buffer. The nonspecific proteins were washed out by 4 M urea and 20 mM imidazole buffer, pH 8.0 and eluted with 2 M urea and 200 mM imidazole, pH 8.0 buffer before putting it for overnight dialysis against 10 mM Tris pH 8.0 and 100 mM NaCl buffer. The buffer was changed once during the night. The refolded protein was concentrated and re-purified to isolate the monomeric species by size exclusion chromatography using Sephadex 75 10/300 column on Agilent’s Infinity 1260 system. The gel filtered protein was finally used for all the experiments.
 
-## CD spectroscopy and T-melts
+### CD spectroscopy and T-melts
 
 In CV-N family proteins, thermodynamic parameters like free energy of unfolding, enthalpy, and entropy cannot be extracted by thermal denaturation because the transition from folded to unfolded state is non-reversible (Patsalo et al., 2011), therefore melting temperatures are used. Far-UV CD spectra were recorded on a Jasco J-815 spectropolarimeter equipped with a thermostatic cell holder, PTC 424S. Spectra were measured from 250 to 200 nm, using a scanning speed of 50 nm/min and a data pitch of 1.0 nm at 25°C. Samples concentration was approximately 15 µM in 10 mM Tris, pH 8.0, and 100 mM NaCl. For thermal denaturation experiments, the melting profile was monitored at 202 nm from 25°C to 90°C. The data points were plotted and fitted in Origin8.5 software to get apparent Tm.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 ITC was performed at the Sanford-Burnham Medical Research Institute Protein Analysis Facility using ITC200 calorimeter from Microcal (Northampton, MA) at 23°C; 2.0 µl aliquots of solution containing between 3 and 10 mM Man2 were injected into the cell containing between 0.057 and 0.11 mM protein. Nineteen of 2.0 µl injections were made. The experiments were performed in 10 mM Tris, 100 mM NaCl, pH 8.0 buffer. ITC data were analyzed using Origin software provided by Microcal.
 
-## Chemical denaturation experiments
+### Chemical denaturation experiments
 
-Chemical denaturation experiments were done by monitoring the shift in the intrinsic tryptophan fluorescence on Cary Eclipse instrument (Varian). Ten µM of protein samples were incubated with increasing concentrations of guanidine hydrochloride in the range of 0–6 M in 50 mM Tris pH 8.0 buffer for 72 hr at 25°C. The emission spectra for the same were recorded by keeping the excitation wavelength at 295 nm and bandwidth of 1 nm. A ratio of fluorescence at 330 and 360 nm (I330/I360) was plotted at respective Gu-HCl concentrations, and the data points were fit to following sigmoidal equation to obtain Cm.y=A2+A1−A21+e(x−x0)/dx
+Chemical denaturation experiments were done by monitoring the shift in the intrinsic tryptophan fluorescence on Cary Eclipse instrument (Varian). Ten µM of protein samples were incubated with increasing concentrations of guanidine hydrochloride in the range of 0–6 M in 50 mM Tris pH 8.0 buffer for 72 hr at 25°C. The emission spectra for the same were recorded by keeping the excitation wavelength at 295 nm and bandwidth of 1 nm. A ratio of fluorescence at 330 and 360 nm (I330/I360) was plotted at respective Gu-HCl concentrations, and the data points were fit to following sigmoidal equation to obtain Cm.
+
+$$
+y=A2+\frac{A1−A2}{1+e^{(x−x0)/dx}}
+$$
 
 where A1 and A2 are the initial and final 330/360 ratios and x0 is the concentration of Gu-HCl, where y = (A1+A2)/2, or the point, where 50% of the population is unfolded. It is also denoted as Cm.
 
-The denaturation curve was used to calculate the free energy of the protein in the absence of denaturant (∆GH2O). Fraction unfolded (fU) was calculated using the following formula:fU=(YF−Yobs)/(YF−YU)
+The denaturation curve was used to calculate the free energy of the protein in the absence of denaturant (∆GH2O). Fraction unfolded (fU) was calculated using the following formula:
+
+$$
+f_{U}=(Y_{F}−Y_{obs})/(Y_{F}−Y_{U})
+$$
 
 where fU is the fraction unfolded, yF is the value when there is no denaturant, yobs is the value at each position, and yU is the value for unfolded protein. Since fU+fF = 1, the equilibrium constant, K, of the free energy change can be calculated using
 
 where R is the gas constant whose value is 1.987 cal/mol·K and T is the temperature of incubation, which was 298 K. The value of ∆G is linear over a limited range of Gu-HCl. The linear fit over that range was extrapolated to obtain ∆GH2O.
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 I34Y was purified as discussed previously and the monomeric gel filtered protein was concentrated to 8 mg/ml. We got the crystals in 2 M ammonium sulphate and 5% (v/v) 2-propanol after screening it in Index HT screen from Hampton Research. The protein crystals were reproduced using same condition in hanging drop method. For protein crystals with dimannose, the crystals were incubated in 1.2-fold molar excess of dimannose. Single needle-like crystals were picked up and cryo-preserved in 25% glycerol before freezing them for data collection at Synchrotron ALS, beamline 8.2.1. Single crystal diffraction was measured at wavelength of 0.999 A with ADSC quantum 315r detector. The data were evaluated to resolution of 1.25 A. The data acquired was indexed using XDS and scaled by the aimless package from CCP4i program suite. The structural coordinates and phase were determined by molecular replacement using 2RDK PDB code. The structure of I34Y of CV-N is deposited under PDB accession code 6X7H. The structure was further refined in Coot.

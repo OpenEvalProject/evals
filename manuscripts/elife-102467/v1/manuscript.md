@@ -27,30 +27,30 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Christ Church College, University of Oxford Oxford United Kingdom
-2. https://ror.org/04njjy449 Mind, Brain, and Behavior Research Center (CIMCYC) and the Department of Behavioral Sciences Methodology, University of Granada Granada Spain
-3. https://ror.org/02feahw73 CNRS Montpellier France
-4. https://ror.org/02qskvh78 University of Maryland, Baltimore County Baltimore United States
-5. https://ror.org/04gf7fp41 Østfold University College Halden Norway
-6. https://ror.org/02c2kyt77 Department of Industrial Engineering & Innovation Sciences, Eindhoven University of Technology Eindhoven Netherlands
-7. https://ror.org/0532c1x92 Poznan University of Business and Economic Poznan Poland
+1. Christ Church College, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Mind, Brain, and Behavior Research Center (CIMCYC) and the Department of Behavioral Sciences Methodology, University of Granada Granada Spain ([ROR:04njjy449](https://ror.org/04njjy449))
+3. CNRS Montpellier France ([ROR:02feahw73](https://ror.org/02feahw73))
+4. University of Maryland, Baltimore County Baltimore United States ([ROR:02qskvh78](https://ror.org/02qskvh78))
+5. Østfold University College Halden Norway ([ROR:04gf7fp41](https://ror.org/04gf7fp41))
+6. Department of Industrial Engineering & Innovation Sciences, Eindhoven University of Technology Eindhoven Netherlands ([ROR:02c2kyt77](https://ror.org/02c2kyt77))
+7. Poznan University of Business and Economic Poznan Poland ([ROR:0532c1x92](https://ror.org/0532c1x92))
 8. AGHAM Advocates of Science and Technology for the People Quezon City Philippines
-9. https://ror.org/00afp2z80 ULiège Library and the Center of Semiotic and Rhetoric, University of Liege Liege Belgium
-10. https://ror.org/0451qtk15 Royal College of Physicians of Edinburgh Edinburgh United Kingdom
-11. https://ror.org/00hswnk62 Queen's University Belfast Belfast United Kingdom
-12. https://ror.org/01sf06y89 Department of Philosophy, Macquarie University Sydney Australia
-13. https://ror.org/00t33hh48 Department of Psychology, Chinese University of Hong Kong Hong Kong Hong Kong
-14. https://ror.org/012p63287 Kapteyn Astronomical Institute, University of Groningen Groningen Netherlands
-15. https://ror.org/04pp8hn57 Department of Interdisciplinary Social Science, University of Utrecht Utrecht Netherlands
-16. https://ror.org/02czsnj07 Centre for Social and Early Emotional Development and School of Psychology, Deakin University Burwood Australia
+9. ULiège Library and the Center of Semiotic and Rhetoric, University of Liege Liege Belgium ([ROR:00afp2z80](https://ror.org/00afp2z80))
+10. Royal College of Physicians of Edinburgh Edinburgh United Kingdom ([ROR:0451qtk15](https://ror.org/0451qtk15))
+11. Queen's University Belfast Belfast United Kingdom ([ROR:00hswnk62](https://ror.org/00hswnk62))
+12. Department of Philosophy, Macquarie University Sydney Australia ([ROR:01sf06y89](https://ror.org/01sf06y89))
+13. Department of Psychology, Chinese University of Hong Kong Hong Kong Hong Kong ([ROR:00t33hh48](https://ror.org/00t33hh48))
+14. Kapteyn Astronomical Institute, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
+15. Department of Interdisciplinary Social Science, University of Utrecht Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+16. Centre for Social and Early Emotional Development and School of Psychology, Deakin University Burwood Australia ([ROR:02czsnj07](https://ror.org/02czsnj07))
 17. Ask Me, I'm an AAC user United States United States
-18. https://ror.org/02j61yw88 School of Medicine, Aristotle University of Thessaloniki Thessalonik Greece
-19. https://ror.org/003jsdw96 Macedonian Academy of Sciences and Arts Skopje North Macedonia
-20. https://ror.org/02na8dn90 Department of Neurology, University Hospital Essen Essen Germany
-21. https://ror.org/05phns765 Western Norway University of Applied Sciences Berge Norway
-22. https://ror.org/03angcq70 University of Birmingham Birmingham United Kingdom
-23. https://ror.org/04h699437 University of Leicester Leicester United Kingdom
-24. https://ror.org/013ckk937 University of Rhode Island South Kingstown United States
+18. School of Medicine, Aristotle University of Thessaloniki Thessalonik Greece ([ROR:02j61yw88](https://ror.org/02j61yw88))
+19. Macedonian Academy of Sciences and Arts Skopje North Macedonia ([ROR:003jsdw96](https://ror.org/003jsdw96))
+20. Department of Neurology, University Hospital Essen Essen Germany ([ROR:02na8dn90](https://ror.org/02na8dn90))
+21. Western Norway University of Applied Sciences Berge Norway ([ROR:05phns765](https://ror.org/05phns765))
+22. University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+23. University of Leicester Leicester United Kingdom ([ROR:04h699437](https://ror.org/04h699437))
+24. University of Rhode Island South Kingstown United States ([ROR:013ckk937](https://ror.org/013ckk937))
 
 † Corresponding author
 
@@ -61,6 +61,52 @@ Since its inception, the concept of neurodiversity has been defined in a number 
 ## Introduction
 
 The neurodiversity paradigm can be seen as a shift in thinking that embraces the diversity of minds, brains, and neurocognition, and affirms variation as natural and valuable (Pellicano and den Houting, 2022; Walker, 2021). Like other paradigm shifts, this change in perspective can be challenging to fully understand in the context of education, research, and social thinking. Here, the issue is further compounded as the term 'neurodiversity' has broad scope. Numerous definitions of neurodiversity as a movement, a research field, and a framework or paradigm exist (Dwyer, 2022; Milton et al., 2020). These three aspects can be distinguished in the following way: (i) the neurodiversity movement encompasses social, advocacy, and political movements advocating for the rights, inclusion, and acceptance of neurodivergent people; (ii) the neurodiversity research field is a largely academic field studying, for instance, psychological and social aspects of neurodiversity; (iii) the neurodiversity paradigm or framework is a conceptual framework that at its core challenges medical or deficit-based views of neurodiversity, and instead asserts that neurocognitive differences should be seen as natural variations (see Table 1). Moreover, these three aspects can overlap and intersect: for instance, research and activism can intersect in areas such as disability rights, mental health advocacy, social justice, and equity, diversity and inclusion efforts in education and in the workforce (Clouder et al., 2020; Dwyer, 2022; Manalili et al., 2023). Unless specifically discussing one of these aspects, here we generally adopt the term 'neurodiversity paradigm' as a broader idea, encompassing ways of thinking applicable to both the neurodiversity movement and the research field.
+
+**Table 1.**
+ Definitions of key terms.For further context, discussion and examples of these terms, see Dwyer, 2022 and Walker, 2021.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+      <th>Further notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Neurodiversity as a paradigm or framework</td>
+      <td>A conceptual framework for understanding disability that emphasizes the diversity of neurocognitive, social, behavioural experiences and characteristics.</td>
+      <td>The neurodiversity paradigm challenges deficit-based views of disability by promoting the idea that neurocognitive differences are part of natural human variation, not inherently problematic (Pellicano and den Houting, 2022; Dwyer, 2022).</td>
+    </tr>
+    <tr>
+      <td>Neurodiversity as a research field</td>
+      <td>A broad area of research that encompasses various topics related to neurodiversity, such as investigating the psychological and social aspects of neurodiversity.</td>
+      <td>The neurodiversity research field can include research on neurodivergent traits across the lifespan, neurodiversity-informed education and workplace practices, among others. For more about neurodiversity approaches for researchers, see Dwyer, 2022.</td>
+    </tr>
+    <tr>
+      <td>Neurodiversity as a movement</td>
+      <td>A social and political movement that advocates for the acceptance and inclusion of individuals with neurodivergent differences.</td>
+      <td>The neurodiversity movement seeks to shift public perceptions of neurodivergent people away from seeing them as "disordered" and toward embracing them as part of the diversity of human experiences (Dwyer, 2022).</td>
+    </tr>
+    <tr>
+      <td>Neurodiverse people</td>
+      <td>A group is considered neurodiverse if its members differ between each other in terms of their neurocognitive functioning.</td>
+      <td>A neurodiverse group of people can include a mix of individuals who are neurodivergent and individuals who are neurotypical (Walker, 2021).</td>
+    </tr>
+    <tr>
+      <td>Neurodivergent people</td>
+      <td>Individuals whose neurocognitive functioning diverges from the dominant societal standards of "typical" or "average" functioning. Neurodivergent or neurodivergence may be abbreviated as ND.</td>
+      <td>Neurodivergent people are those whose experiences diverge from what is considered neurologically typical. Asasumasu coined this term with the intention of covering all forms of divergence, including autism, ADHD, epilepsy, cluster headaches, among others (Asasumasu, 2015)</td>
+    </tr>
+    <tr>
+      <td>Neurotype</td>
+      <td>A term used to describe a particular common pattern of neurocognitive functioning.</td>
+      <td>Examples of some named neurotypes include autism, ADHD, dyslexia. See Bottema-Beutel et al., 2021 for more on avoiding ableist language.</td>
+    </tr>
+  </tbody>
+</table>
 
 Building on this pluralistic perspective, it is important to note that neurodiversity is not limited to cognitive differences, nor to specific named neurotypes (i.e., commonalities in neurological makeup and functioning; Bottema-Beutel et al., 2021), though it does include named neurotypes like autism, attention deficit/hyperactivity disorder (also known as attention dysregulation hyperactivity development [Dwyer et al., 2024] or variable attention stimulus trait [Hallowell and Ratey, 2022]), and dyslexia, among others. Neurodivergent people typically exhibit neurocognitive variations outside the perceived norm (Walker, 2021). However, defining and interpreting neurodiversity remains complex. On the one hand, neurodiversity is viewed through a theoretical lens as a social ecology of mental functions (Chapman, 2021). On the other hand, researchers compare neurodiversity to biodiversity in nature (Silberman, 2015). Further, people may consider neurodiversity to be a political label, as opposed to a biological label (Chapman, 2021; Ne’eman and Pellicano, 2022) or conversely, a biological impairment as opposed to 'normal' or neurotypical behavior. Nevertheless, both arguments could undermine neurodivergent people, as neurodivergence can thus be seen as a fictitious identity or a condition defined only by limitations, overshadowing the unique traits of individuals. The debate continues to be contentious, and various definitions have been proposed and debated.
 
@@ -76,7 +122,7 @@ Overall, we hope that this reading list will be a resource that can support read
 
 ## Themes
 
-## History of neurodiversity
+### History of neurodiversity
 
 Recommendation 1: Botha M, Chapman R, Giwa Onaiwu M, Kapp SK, Stannard Ashley A, Walker N. 2024. The neurodiversity concept was developed collectively: An overdue correction on the origins of neurodiversity theory. Autism 28:1591–1594.
 
@@ -86,7 +132,7 @@ The neurodiversity movement emerged in the 1990s, following the influences of th
 
 For many, neurodivergent communities offer belonging, social connectedness, a way to share experiences and perspectives, and practical support and advice, including empowerment (Botha et al., 2022). Empowerment is essential for wellbeing, self-efficacy, and acceptance, especially for neurodivergent people who face greater risks for isolation, stigmatization, negative stereotyping, and even victimization, with a recent meta-analysis showing that almost half of autistic people had experienced some form of victimization (Trundle et al., 2023). The early autistic self-advocacy movement of the 1990s was acutely aware of these risks faced by autistic and broader neurodivergent communities (for a critique of early behavioural interventions, see Yergeau, 2018). One salient response can be found in Jim Sinclair’s speech 'Don’t Mourn for Us' presented at the 1993 International Conference on Autism in Toronto (Sinclair, 1993). This speech, primarily directed at parents of autistic children, underscores the importance of understanding autism – and indeed neurodiversity – not through a focus on perceived deficits, but by appreciating each person in their own right. These ideas still form part of critical debates around whether and how intervention practices could align with inclusive, participatory, and non-stigmatizing approaches to fostering neurodivergent wellbeing (Leadbitter et al., 2021).
 
-## How do we think about neurodiversity?
+### How do we think about neurodiversity?
 
 Recommendation 1: Dwyer P. 2022. The neurodiversity approach(es): What are they and what do they mean for researchers? Human Development 66:73–92.
 
@@ -98,7 +144,7 @@ Building on these ideas, Dwyer recommends researchers interested in neurodiversi
 
 In a similar light, Constantino argues therapy and interventions should focus on people’s wellbeing rather than perceived 'normalization' of particular behaviours. As an illustrative example, this could mean that when providers offer early interventions to young stutterers, the sole focus need not be placed on fluency but could entail assisting young people with their subjective experience of stuttering, affirming their emotions, and helping improve their wellbeing (Shenker et al., 2023).
 
-## The importance of lived experience
+### The importance of lived experience
 
 Recommendation 1: Johnson RM. 2023. Dyslexia is not a gift, but it is not that simple. Infant and Child Development 32:e2454.
 
@@ -110,7 +156,7 @@ Lived experiences also benefit researchers studying neurodivergent people. For e
 
 van Gorp shares her journey navigating educational spaces over time, both as a neurodivergent student and lecturer (van Gorp, 2022). She details her experiences with being diagnosed with Irlen syndrome and dyslexia, as well as her decision to disclose her diagnosis at a Neurodiversity Symposium, and the subsequent empowerment and community support she felt. Indeed, both van Gorp and Johnson emphasize that sharing lived experiences fosters empowerment, inclusion, and compassion, ultimately enriching our collective understanding of neurodiversity.
 
-## A neurodiversity paradigm for autism science
+### A neurodiversity paradigm for autism science
 
 Recommendation 1: Pellicano E, den Houting J. 2022. Annual Research Review: Shifting from ‘normal science’ to neurodiversity in autism science. Journal of Child Psychology and Psychiatry. 63:381–396.
 
@@ -122,7 +168,7 @@ In their review article, Pellicano and den Houting acknowledge that the conventi
 
 Botha, Hanlon and Williams discuss the use of language in autism research, focusing on the priorities of the autistic community. Their work offers a rich treatment of the differences between person-first language and identity-first language, while acknowledging that there is currently no clear majority consensus among autistic people in terms of preferred language; there is a need to replicate and expand previous survey efforts. Crucially, they argue that language use is highly important, with tangible consequences including stigmatization and dehumanization. With this in mind, research and practice should centre the needs and experiences of autistic people.
 
-## Beyond deficit views of ADHD
+### Beyond deficit views of ADHD
 
 Recommendation 1: Sonuga-Barke EJ. 2023. Paradigm 'flipping' to reinvigorate translational science: Outlining a neurodevelopmental science framework from a 'neurodiversity' perspective. Journal of Child Psychology and Psychiatry 64:1405–1408.
 
@@ -134,7 +180,7 @@ Another compelling exploration of ADHD is presented by Tamir. The article highli
 
 Both articles advocate for a shift away from viewing ADHD through a deficit lens to recognizing it as part of the broader spectrum of human neurocognitive diversity. They call for educational and professional systems that do not merely accommodate but actively embrace and adapt to neurodivergent ways of thinking and learning, promoting a more inclusive environment.
 
-## Expanding the scope of neurodiversity: diverse neurotypes and experiences
+### Expanding the scope of neurodiversity: diverse neurotypes and experiences
 
 Recommendation 1: Green AE, Alyssa, Durá L, Harris P, Heilig L, Kirby B, McClintick J, Pfender E, Carrasco R. 2020. Teaching and researching with a mental health diagnosis: Practices and perspectives on academic ableism. Rhetoric of Health & Medicine 3: Issue 2; article 1.
 
@@ -144,7 +190,7 @@ Historically, neurodiversity work has focused on autism and ADHD, though our und
 
 Elsherif, Wheeldon and Frisson assessed the potential language processing link between dyslexia and stuttering through a prevalence study in a British sample of 164 adults (Elsherif et al., 2021). They found that 43% of dyslexics stuttered during childhood, and 50% of stutterers were identified as dyslexic. Considering their use of medical model language (e.g., deficit), we can reframe their findings through a neurodiversity-affirming lens: (i) they provide evidence that dyslexia and stuttering co-occur; (ii) they carve paths so future research can rigorously investigate whether dyslexia and stuttering have similar phonological profiles; (iii) their findings may help dyslexics and stutterers be better understood and supported within academia and society. Such reframings align with the push for inclusivity in research concerning dyslexia, stuttering (Constantino, 2018; Taylor et al., 2023), and the broader field of speech/language pathology (Manalili, 2022). We also caution against oversimplification when studying neurodiversity. Dyslexia, stuttering, and other forms of neurodivergence need not be seen as 'gifts' to be valued; as others have argued, even 'positive' stereotypes could be harmful (Odegard and Dye, 2024). Instead, it is important to recognize various forms of neurodivergence inherently as variations that contribute to the richness of neurodiversity (Johnson, 2023).
 
-## Anti-ableism
+### Anti-ableism
 
 Recommendation 1: Natri HM, Abubakare O, Asasumasu K, Basargekar A, Beaud F, Botha M, Bottema-Beutel K, Brea MR, Brown LXZ, Burr DA, et al. 2023. Anti-ableist language is fully compatible with high-quality autism research: Response to Singer et al.(2023). Autism Research 16:673–676.
 
@@ -156,7 +202,7 @@ However, recommendations for more inclusive and neutral language can often be co
 
 While ableism can be reflected in language, it is not limited to linguistic expression alone, and so anti-ableism efforts should extend beyond language. In the context of anti-ableism in education, Hamilton and Petty propose establishing a compassionate educational paradigm that emphasizes empathy, inclusiveness, and care (Hamilton and Petty, 2023). The goals of such efforts are to provide more flexibility in how students access course content and demonstrate their learning, as well as to encourage neurodivergent students to build positive schemas for themselves in an educational context.
 
-## The need for robust theory and methods
+### The need for robust theory and methods
 
 Recommendation 1: Gernsbacher MA, Yergeau M. 2019. Empirical failures of the claim that autistic people lack a theory of mind. Archives of Scientific Psychology 7:102.
 
@@ -168,7 +214,7 @@ Further important aspects for developing robust methods for studying neurodivers
 
 Drawing on their collective experiences in Ethiopia, India, and Hong Kong, Cheng et al. can help readers think critically about the issues of intersectionality and inclusion by discussing a variety of sociocultural and political conditions specific to Asian and African neurodiversity efforts (Cheng et al., 2023). Cheng et al. argue that the neurodiversity movement shares fundamental goals with decolonization agendas such as dismantling what, at times, to some may have seemed as 'objective' scientific efforts that ultimately disparage the truths, knowledge, and priorities of lived experiences (e.g., claims that autistic people lack theory of mind). In this light, decolonizing knowledge production, respecting local theoretical frameworks, indigenous knowledge, and fostering community-led science could be important tools for a more robust study of neurodiversity that does not dehumanize neurodivergent people.
 
-## Integration with open and participatory work
+### Integration with open and participatory work
 
 Recommendation 1: Gourdon-Kanhukamwe A, Kalandadze T, Yeung SK, Azevedo F, Iley B, Phan JM, Ramji AV, Shaw JJ, Zaneva M, Dokovova M, Hartmann H, Kapp S, Warrington K, FORTT, Elsherif M. 2023. Opening up understanding of neurodiversity: A call for applying participatory and open scholarship practices. The Cognitive Psychology Bulletin 8:23–27.
 
@@ -180,7 +226,7 @@ To foster productive participatory work with mutual trust and without tokenism, 
 
 Both Heraty et al. and Gourdon-Kanhukamwe et al. highlight many of the benefits of involving neurodivergent people in co-production and mutuality practices of research, including the promotion of wider epistemic justice, equality in knowledge production, greater relevance of research to lived experience, and greater translational potential of research findings.
 
-## Further readings
+### Further readings
 
 We hope the themes discussed here spark an interest in neurodiversity. The current list of themes is not intended as a canonical or definitive organization, and is only one of many possible ways to learn more about neurodiversity. As such, we want to offer suggestions for further key readings, as well as other potential themes or topics of interest. Readers interested in extended introductions about the neurodiversity paradigm, movement, and research field, may wish to consider The Neurodiversity Reader (Milton et al., 2020). Detailed accounts about the autistic community, its early development, and key figures should consult the book Autistic Community and the Neurodiversity Movement: Stories from the Frontline (Kapp, 2020). For deeper theoretical engagement with neurodiversity, as well as critiques to medicalized views and harmful societal viewpoints, please see the books Neuroqueer Heresies (Walker, 2021) and Authoring Autism: On Rhetoric and Neurological Queerness (Yergeau, 2018).
 
@@ -206,7 +252,7 @@ Overall, we prioritized papers that we, as a group, considered were fundamentall
 
 For the purposes of this annotated reading list, we collected and double-checked 54 items. We categorized a final selection of 18 papers, chosen based on their subjective importance, covering nine themes: history of neurodiversity; how do we think about neurodiversity?; the importance of lived experience; a neurodiversity paradigm for autism; beyond deficit views of ADHD; expanding the scope of neurodiversity; anti-ableism; the need for robust methods; and integration with open and participatory work.
 
-## Positionality
+### Positionality
 
 We are a diverse group of both neurodivergent and neurotypical researchers, working in and outside of academia in different countries around the world and at different career stages. We are united by our shared interest in neurodiversity on personal and/or scientific levels. Most of our team members form part of the FORRT community. This is an open group for all, where we strive to promote open scholarship, as well as values of social justice, diversity, inclusion, belongingness and equity. The current manuscript was written as a joint, collaborative work, where anyone interested in contributing could do so. The core criteria for authorship entailed suggesting at least two items and checking at least two items. Additional tasks such as theme and paper selection, drafting, editing, analysis, and administrative support contributed to author order, and in a small number of cases substituted for material suggestions and/or checking. This led to five groups of authors of varying size, with equal contributions within each group.
 

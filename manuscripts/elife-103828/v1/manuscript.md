@@ -8,19 +8,27 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Cell Biology Johns Hopkins University School of Medicine Baltimore United States
+1. Department of Cell Biology Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
 ## Abstract
 
-During oogenesis, self-renewal and differentiation of germline stem cells (GSCs) must be tightly regulated. The Drosophila female germline serves as an excellent model for studying these regulatory mechanisms. Here, we report that a previously uncharacterized gene CG14545 , which we named sakura , is essential for oogenesis and female fertility in Drosophila . Sakura is predominantly expressed in the ovaries, particularly in the germline cells, including GSCs. sakura null mutant female flies display rudimentary ovaries with germline-less and tumorous phenotypes, fail to produce eggs, and are completely sterile. The germline-specific depletion of sakura impairs Dpp/BMP signaling, leading to aberrant bag-of-marbles ( bam ) expression, resulting in faulty differentiation and loss of GSCs. sakura is also necessary for normal levels of piwi-interacting RNAs (piRNAs) levels and for female-specific splicing of sex-lethal ( sxl ), a master regulator of sex identity determination. We identified Ovarian Tumor (Otu) as a protein binding partner of Sakura and found that loss of otu phenocopies loss of sakura in ovaries. Thus, we identify Sakura as a crucial factor for GSC renewal and differentiation and oogenesis, and propose that Sakura and Otu function together in these processes.
+During oogenesis, self-renewal and differentiation of germline stem cells (GSCs) must be tightly regulated. The Drosophila female germline serves as an excellent model for studying these regulatory mechanisms. Here, we report that a previously uncharacterized gene CG14545, which we named sakura, is essential for oogenesis and female fertility in Drosophila. Sakura is predominantly expressed in the ovaries, particularly in the germline cells, including GSCs. sakura null mutant female flies display rudimentary ovaries with germline-less and tumorous phenotypes, fail to produce eggs, and are completely sterile. The germline-specific depletion of sakura impairs Dpp/BMP signaling, leading to aberrant bag-of-marbles (bam) expression, resulting in faulty differentiation and loss of GSCs. sakura is also necessary for normal levels of piwi-interacting RNAs (piRNAs) levels and for female-specific splicing of sex-lethal (sxl), a master regulator of sex identity determination. We identified Ovarian Tumor (Otu) as a protein binding partner of Sakura and found that loss of otu phenocopies loss of sakura in ovaries. Thus, we identify Sakura as a crucial factor for GSC renewal and differentiation and oogenesis, and propose that Sakura and Otu function together in these processes.
 
 ## Introduction
 
 Oogenesis is a complex process in which GSCs develop into mature female gametes or oocytes. This process involves multiple layers of regulations and numerous genes, some of which remain to be discovered and characterized. Drosophila melanogaster, a genetically tractable model organism, has long been at the forefront of GSC and oogenesis research (Kirilly and Xie, 2007).
 
 Adult Drosophila females possess a pair of ovaries, each composed of 12–16 ovarioles. At the anterior tip of each ovariole is a structure called the germarium, which houses two to three GSCs (Figure 1A). GSCs reside in the most anterior region of the germarium, where they directly contact cap cells and escort cells, forming a niche crucial for GSC self-renewal (Lin and Spradling, 1993; de Cuevas and Matunis, 2011; Losick et al., 2011). GSCs undergo asymmetric mitotic division, producing two distinct cells: one GSC and one cystoblast. The cystoblast, destined to differentiate, undergoes four mitotic divisions with incomplete cytokinesis, resulting in interconnected cysts of 2, 4, 8, and 16 cells. Of the 16 cells, one will differentiate into an oocyte, while the remaining 15 develop into polyploid nurse cells, which synthesize proteins and RNAs for deposition into the oocyte.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic illustration of Drosophila ovary and germarium. Drosophila female has a pair of ovaries, each consisting of 12–16 ovarioles (cyan). The germarium (outlined with magenta) is located at the anterior tip of the ovarioles and consists of both germ cells and somatic cells. Germ cells include germline stem cells (GSCs), cystoblasts, cysts, and differentiating oocytes. Somatic cells include terminal filament (TF) cells, cap cells (CCc), escort cells (ECs), and follicle cells (FCs). GSCs and cystoblasts have spherical, unbranched spectrosomes, whereas cysts possess branched fusomes. The distinct regions of the germarium—1, 2 a, 2b, and 3—are indicated. (B) Drosophila Sakura protein (Sakura/CG14545) and its null mutant allele were generated in this study. (C) Western blot of dissected fly tissues. (D) Western blot of ovary lysates. (E) Confocal images of the germarium from the sakura-EGFP transgenic fly. Sakura-EGFP (green), Hts (red), and DAPI (blue). Scale bar: 10 μm. (F) Confocal images of the egg chambers from the sakura-EGFP transgenic fly. Sakura-EGFP (green), Vasa (red), and DAPI (blue). Sakura-EGFP is expressed in nurse cells and enriched in the developing oocyte (yellow arrow). Scale bar: 20 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Data obtained from http://flybase.org/reports/FBgn0040602.htm.
 
 GSCs must be tightly regulated to maintain their undifferentiated state while dividing and differentiating to produce one GSC and one cystoblast. Failure in GSC self-renewal or inappropriate differentiation leads to stem cell loss, disrupting oocyte production (Lin, 1997; Cox et al., 1998). Conversely, uncontrolled GSC division or defective differentiation results in an overabundance of GSC-like cells (a tumorous phenotype) and fewer differentiated cells, ultimately inhibiting oocyte production (Gateff et al., 1996; Ohlstein et al., 2000). Thus, a precise balance between GSC self-renewal and cyst differentiation within the germarium is essential for proper oogenesis and is tightly regulated.
 
@@ -34,31 +42,51 @@ In this study, we aimed to identify a novel gene required for oogenesis. Through
 
 ## Results
 
-## Sakura is exclusively expressed in the ovaries
+### Sakura is exclusively expressed in the ovaries
 
 Based on high-throughput expression data in Flybase, sakura mRNA is highly and exclusively expressed in adult ovaries (Figure 1—figure supplement 1). To investigate Sakura protein expression, we generated a polyclonal anti-Sakura antibody against a recombinant full-length Sakura protein. Using this antibody, we examine Sakura protein expression at different stages of Drosophila development and across tissues. We found that Sakura protein is specifically expressed in ovaries, particularly in germarium - 11 egg chambers (Figure 1C).
 
-## sakura mutant flies
+### sakura mutant flies
 
 To explore the biological and molecular functions of Sakura in vivo, we generated a sakura mutant allele (sakuranull) with a one nucleotide (nt) insertion replacing 33 nts within the Sakura coding region using the CRISPR/Cas9 genome editing system (Figure 1B). This mutation causes a frameshift and a premature stop codon, resulting in a 33-amino acid (aa) N-terminal fragment of Sakura followed by a 22-aa segment produced by frameshifted translation (Figure 1B). This truncated fragment is unlikely to be functional, and we were unable to detect stable protein expression, as shown below (Figure 1D). Thus, we consider this allele a null mutation. sakuranull/null flies were viable, revealing that Sakura is not essential for survival.
 
 To validate the sakuranull strain, we performed Western blots using ovary lysates from sakura mutant flies using the anti-Sakura antibody. As expected, full-length Sakura protein was detected in the ovaries of wild-type (sakura+/+) and heterozygous controls (sakuranull/+), but not in those of homozygous mutants (sakuranull/null) (Figure 1D). No smaller protein corresponding to the truncated Sakura fragment was detected in either sakuranull/+ or sakuranull/null ovaries, thus suggesting that the fragment is unstable or not expressed.
 
-## Sakura is cytoplasmic and expressed specifically in germ cells
+### Sakura is cytoplasmic and expressed specifically in germ cells
 
 To determine the localization of Sakura protein within the ovaries, we generated transgenic flies carrying a Sakura coding sequence fused with EGFP at the C-terminus (Sakura-EGFP) under the control of the sakura promoter. Western blot analysis of ovary lysates showed that Sakura-EGFP is expressed at levels comparable to endogenous Sakura (Figure 1D).
 
 Oogenesis begins in the germarium, which contains 2–3 GSCs identified by round, unbranched spectrosomes that contact cap cells (Figure 1A; Kirilly and Xie, 2007). In contrast, cysts exhibit branched fusomes. Immunostaining with hu-li tai shao (HTS) antibody marks both spectrosomes and fusomes (Figure 1E), while Vasa is a known germ cell marker (Figure 1F). Confocal imaging revealed that Sakura-EGFP is specifically expressed in the cytoplasm of germ cells, including GSCs, cyst cells, nurse cells, and developing oocytes (Figure 1E and F). Sakura-EGFP was not expressed in somatic cells such as terminal filaments, cap cells, escort cells, or follicle cells (Figure 1E). In the egg chamber, Sakura-EGFP was detected in the cytoplasm of nurse cells and was enriched in developing oocytes (Figure 1F).
 
-## sakura is essential for female fertility
+### sakura is essential for female fertility
 
 Given its ovary-specific expression at both mRNA and protein levels, we hypothesized that Sakura plays a critical role in ovarian function. Fertility assays revealed that sakuranull/null females laid no eggs when mated with wild-type males, while control females (sakura+/+ and sakuranull/+) laid numerous eggs (Figure 2A and B). Dissection of sakuranull/null ovaries revealed that they were rudimentary compared to normal ovaries in controls (Figure 2C). This suggests that the inability of sakuranull/null female to lay eggs is due to their underdeveloped ovaries. In contrast, sakuranull/null males were fertile and showed no significant differences compared to controls (sakura+/+ and sakuranull/+) (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig2-v1.jpg)
+
+**Figure 2.:** (A–B) Female fertility assays. (A) The number of eggs laid by test females crossed with OregonR wild-type males and (B) hatching rates of the eggs. Mean ± SD (n = 3). P-value < 0.001 (Student’s t-test, unpaired, two-tailed) is indicated by ***. (C) Stereomicroscope images of dissected whole ovaries. Scale bar: 200 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The numbers of the progeny flies obtained from crosses between test males and wild-type (OregonR) virgin females are shown. Mean ± SD (n=5).
+
 To confirm that the observed female sterility was caused by the loss of sakura, we generated sakura rescue flies expressing Sakura-EGFP in the sakuranull/null background (sakuranull/null; sakura-EGFP). Western blotting confirmed that these flies expressed Sakura-EGFP, but not endogenous Sakura (Figure 1D). The sakura-EGFP transgene fully rescued both female fertility and ovary morphology in the sakuranull/null background (Figure 2). sakura-EGFP rescue females showed no significant fertility differences compared to controls (Figure 2A and B), and their ovaries were normal in shape and size (Figure 2C). We concluded that Sakura is essential for female fertility and normal ovary morphology but dispensable for male fertility, consistent with the observation that Sakura is predominantly expressed in ovarian germline cells (Figure 1).
 
-## sakuranull/null ovaries are germless and tumorous
+### sakuranull/null ovaries are germless and tumorous
 
 Given the rudimentary appearance of sakuranull/null ovaries, we questioned whether they contained germ cells. We used flies carrying vasa-EGFP knocked-in reporter in the sakuranull/null background, as Vasa is a known germ cell marker. We observed that some sakuranull/null ovarioles were devoid of germ cells (‘germless,’ cyan stars), while others retained germ cells (Figure 3A and B). Immunostaining with HTS antibody revealed an excess number of GSC-like cells with round spectrosomes in sakuranull/null ovarioles containing germ cells (Figure 3C, orange stars), indicative of a ‘tumorous’ phenotype as previously described for mutants of other genes, including bam, otu, and sxl (Smith and King, 1966; Gans et al., 1975; Gollin and King, 1981; King and Riley, 1982; McKearin and Spradling, 1990; Bopp et al., 1993; Eliazer et al., 2011; Jin et al., 2013; Yang et al., 2019). Additionally, we observed an excess number of cyst cells with branched fusomes that persisted throughout the ovarioles, suggesting abnormal cyst cell differentiation and division. Thus, the loss of sakura results in both germ cell depletion and overgrowth.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) Confocal images of the ovaries from control (sakuranull/+) and sakuranull/null expressing Vasa-EGFP. Vasa-EGFP (green) and DAPI (blue). Yellow stars indicate the anterior tip of normal ovarioles, while orange and cyan stars indicate the anterior tips of tumorous and germless ovarioles, respectively, in Figure 3. Higher-magnification images of the germarium regions are shown in (B). Scale bars: 50 μm for (A) and 10 μm for (B). (C) Confocal images of control (sakuranull/+) and sakuranull/null ovaries stained with anti-Hts antibody to label spectrosomes and fusomes. Hts (red) and DAPI (blue). Yellow, orange, and cyan dotted lines mark the normal, tumorous, and germless germaria, respectively. Scale bars: 10 μm. (D) Ratio (%) of normal, germless, and tumorous ovarioles of indicated genotypes (ages 2–5 days; n=33, 25, 74, 29, respectively). (E) Quantification of germline stem cell (GSC)-like cell number per germarium in the indicated genotypes (ages 2–5 days; n=33, 30, 35, and 31 respectively). (F) Confocal images of control (sakuranull/+) and sakuranull/null ovaries stained with anti-cleaved Caspase-3 antibody. Cleaved caspase-3 (red) and DAPI (blue). Scale bars: 20 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Violin plots of germline stem cell (GSC)-like cell numbers in germaria of indicated genotypes of 2–5-days-old flies. Mean ± SD and the biological replicate number n are also shown. P-value < 0.001 (Student’s t-test, unpaired, two-tailed) is indicated by ***.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Ratio (%) of normal, germless, and tumorous ovarioles of the indicated genotypes at 0–1 days, 7 days, and 14 days post-eclosion. (B) Quantification of germline stem cell (GSC)-like cell numbers in ovarioles of the indicated genotypes at 0–1 days, 7 days, and 14 days post-eclosion (Mean ± SD). Germless ovarioles were excluded from this analysis.
 
 Within the same ovary, some sakuranull/null ovarioles exhibited the tumorous phenotype, while others were germless, without any spectrosome or fusome staining (Figure 3A–C, cyan stars). Quantification revealed that 35% of sakuranull/null ovarioles from 2–5-day-old flies were tumorous, while the remaining 65% were germless (n=74) (Figure 3D). In contrast, all ovarioles in control (sakura+/+ and sakuranull/+) and sakura-EGFP rescue flies were normal with no tumorous or germless phenotypes observed (Figure 3D). Approximately 95% of sakuranull/null ovarioles containing germ cells had an excess of GSC-like cells (>5) (Figure 3E and Figure 3—figure supplement 1). The mean number of GSCs or GSC-like cells in 2–5-day-old sakura+/+, sakuranull/+, and sakura-EGFP rescue was 2.2±0.6, 2.2±0.6, and 2.1±0.7, respectively while that for sakuranull/null was 26.5±17.5 (p-value<0.05).
 
@@ -66,7 +94,7 @@ We investigated the age-dependent effects on the tumorous and germless phenotype
 
 Together, these results suggest that Sakura is essential for regulating the survival, proliferation, and differentiation of germline cells, including GSCs.
 
-## Loss of sakura results in reduced germline piRNA
+### Loss of sakura results in reduced germline piRNA
 
 In controls, Vasa-EGFP is enriched in the perinuclear structure known as the nuage within nurse cells (Figure 3A and B), which is essential for piwi-interacting RNA (piRNA) biogenesis. In sakuranull/null tumorous ovarioles, Vasa-EGFP retains its perinuclear localization, indicating that sakura is not required for the proper localization of Vasa to the nuage.
 
@@ -74,17 +102,33 @@ piRNAs are produced in germline cells and somatic follicle cells and transcripti
 
 piRNA levels in sakuranull/null ovaries were reduced compared to controls (sakura+/+), while sakuranull/+ and sakura-EGFP rescue showed no such reduction (Figure 4A). Consistent with this, transposon RNA levels in sakuranull/null ovaries were upregulated compared to sakura+/+, while sakuranull/+ and sakura-EGFP rescue showed no such upregulation (Figure 4B). Given that Sakura is specifically expressed in germline cells, but not in somatic cells (Figure 1E and F), we hypothesized that loss of sakura interrupts the piRNA pathway in germ cells, leading to the desilencing of germline transposons. A well-characterized germline transposon in Drosophila is Burdock (Dönertas et al., 2013; Handler et al., 2013). We found that Burdock piRNA levels were significantly lower in sakuranull/null compared to controls and rescue flies (Figure 4C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig4-v1.jpg)
+
+**Figure 4.:** (A) Scatter plots of normalized number of transposon piRNA reads from small RNA-seq of indicated genotypes compared with sakura+/+. Means of three biological replicates are plotted. Downregulated (fold-change <0.5) and upregulated (fold-change >2) transposon piRNAs are shown in cyan and magenta, respectively. (B) Volcano plots of transposon RNAs from RNA-seq of indicated genotypes compared with sakura+/+. Three biological replicates per genotype were analyzed. Downregulated (adjusted p-value < 0.001 and log2(fold-change) < –2) and upregulated (adjusted p-value < 0.001 and log2(fold-change) >2) transposons are shown in cyan and magenta, respectively. (C) Normalized number of reads for Burdock piRNAs from small RNA-seq. Mean ± SD (n = 3). P-value < 0.001 (Student’s t-test, unpaired, two-tailed) is indicated by ***. (D) The Burdock sensor harbors a nanos promoter, a nuclear localization signal (NLS) appended to GFP and β-gal coding sequences, and a target sequence for Burdock piRNAs in the 3’UTR. Confocal images of ovaries from control (yRNAi) and sakuraRNAi flies harboring the Burdock sensor, where RNAi knockdown was specifically driven in the female germline with UAS-Dcr2 and NGT-Gal4. GFP (green), β-gal (red), and DAPI (blue). Scale bars: 50 μm. Three out of three tested control samples were negative for both GFP and β-gal, while 9 out of 9 tested sakuraRNAi samples were positive for both markers.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Sex-specific alternative splicing of sxl was analyzed by RT-PCR followed by agarose gel electrophoresis and SYBR Safe staining. Ovaries from controls and sakura-EGFP rescue flies showed the expected female-specific sxl isoform, while testes from control flies exhibited the male-specific isoform. sakuranull ovaries showed increased expression of the male-specific isoform and reduced levels of female-specific isoform.
+
 We employed the Burdock sensor, a transposon reporter tool to monitor germline piRNA activity (Handler et al., 2013). The reporter expresses nuclear GFP and β-gal under the control of the nanos promoter for germline expression, with a target sequence for Burdock piRNAs in the 3′ UTR (Figure 4D). Using a sakura RNAi line driven by UAS-Dcr2 and NGT-Gal4 to knock down sakura specifically in the germline, we observed that GFP and β-gal expression were highly elevated in sakura knockdown germlines compared to control RNAi (yRNAi) knockdowns (Figure 4D). This confirmed that the loss of sakura leads to a loss of piRNA-mediated transposon silencing in the germline, suggesting that Sakura is essential for proper piRNA levels and piRNA-based transposon silencing in the germline.
 
-## Sex-specific sxl mRNA alternative splicing is dysregulated in sakuranull/null ovaries
+### Sex-specific sxl mRNA alternative splicing is dysregulated in sakuranull/null ovaries
 
 Sxl is a master regulator of sex determination in Drosophila (Penalva and Sánchez, 2003; Salz and Erickson, 2010; Grmai et al., 2022). Sex-specific alternative splicing of sxl transcripts produces distinct mRNA isoforms: the female-specific and male-specific mRNA isoforms in respective sex and only the female-specific mRNA isoform encodes the functional Sxl protein, whereas the male-specific isoform does not. In the female germline, loss of Sxl function or disruption of female-specific sxl splicing leads to developmental defects, including germline tumors and sterility. Notably, several mutants with tumorous ovariole phenotypes—including otu mutants—exhibit aberrant sxl mRNA splicing, resulting in the expression of the male-specific isoform in ovaries and defects in germ cell sexual identity (Bopp et al., 1993; Pauli et al., 1993).
 
 We examined sxl splicing in sakura mutants. As expected, ovaries from control and sakura-EGFP rescue flies expressed exclusively the female-specific sxl mRNA isoform and testes from control flies expressed only the male-specific isoform (Figure 4—figure supplement 1). In contrast, sakuranull/null ovaries exhibited the male-specific isoform and a reduced level of the female-specific isoform. These results indicate that female-specific sxl alternative splicing is disrupted in the absence of sakura.
 
-## sakura is important for oogenesis in germline cells beyond GSCs and germline cysts
+### sakura is important for oogenesis in germline cells beyond GSCs and germline cysts
 
 Both sakuranull/null and sakura germline RNAi knockdown driven by UAS-Dcr-2 and NGT-Gal4, which initiates RNAi in germline from GSCs, resulted in rudimentary ovaries (Figures 2C and 5A). These ovaries lacked later-stage germline cells and egg chambers, making it difficult to assess the role of Sakura beyond the germarium. However, because Sakura-EGFP expression is not limited to GSCs and germline cysts (Figure 1E and F), we speculated that Sakura might function in later-stage germline cells as well.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig5-v1.jpg)
+
+**Figure 5.:** (A) Stereomicroscope images of dissected whole ovaries. Scale bar: 500 μm. (B) Western blot of dissected ovary lysates. sakuraRNAi #1 and sakuraRNAi #2 are two independent RNAi lines. (C) Number of eggs laid by sakura RNAi knockdown driven by UAS-Dcr2 and TOsk-Gal4. Mean ± SD (n = 5). P-value < 0.001 (Student’s t-test, unpaired, two-tailed) is indicated by ***. (D) Number of stage 14 oocytes in ovaries of sakura RNAi knockdown flies driven by UAS-Dcr2 and TOsk-Gal4. The numbers of stage 14 oocytes per fly (per a pair of ovaries) are shown. n is the number of flies examined. P-value < 0.001 (Student’s t-test, unpaired, two-tailed) is indicated by ***. (E) Confocal images of the ovaries from sakura RNAi knockdown flies driven by UAS-Dcr2 and TOsk-Gal4, stained with anti-Oo18 RNA-binding protein (Orb) and anti-Vasa antibodies. Orb (green), Vasa (red), and DAPI (blue). Yellow arrows label the normal enrichment of Orb in the developing oocytes. Magenta arrow labels mislocalized developing oocyte. White arrowheads label egg chambers with cytoskeletal disorganization. Scale bars: 100 μm. In A-E, y-RNAi was used as a control.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Confocal images of ovaries from sakura RNAi knockdown flies (UAS-Dcr2, TOsk-Gal4 >sakura RNAi) stained with phalloidin (F-Actin) and anti-Oo18 RNA-binding protein (Orb) antibodies. F-Actin (red), Orb (green), and DAPI (blue). Yellow arrows indicate normal Orb enrichment at the posterior of developing oocytes. White arrowheads indicate egg chambers exhibiting cytoskeletal disorganization. Scale bars: 50 μm.
 
 To explore this possibility, we used TOsk-Gal4 (a combination of osk-Gal4 and αTub67C-Gal4) to drive sakura RNAi knockdown in germline cells after the germline cyst stage (from germarium region 2b onward, Figure 1A), sparing GSCs and germline cysts (ElMaghraby et al., 2022). Unlike NGT-Gal4, TOsk-Gal4-driven sakura RNAi knockdown did not drastically affect ovary morphology (Figure 5A), allowing us to study the effects of sakura loss in egg chambers. We confirmed sakura RNAi (sakura RNAi #1 and #2) knockdown efficiency by Western blot, showing effective depletion of Sakura in ovaries from both NGT-Gal4 and TOsk-Gal4-driven RNAi lines (Figure 5B).
 
@@ -94,19 +138,47 @@ In controls, Orb was enriched and properly localized to the posterior end of sta
 
 These defects likely contribute to the impaired production of stage 14 oocytes and eggs in sakuraRNAi flies (Figure 5C and D). We conclude that Sakura plays an essential role in oogenesis beyond the early germline stages. For all subsequent sakura RNAi experiments, we used the sakura RNAi #2 line.
 
-## Sakura is required intrinsically for GSC establishment, maintenance, and differentiation
+### Sakura is required intrinsically for GSC establishment, maintenance, and differentiation
 
 To investigate whether sakura functions autonomously in the germline, we performed mosaic analysis using the FLP-FRT system with heat shock promoter-driven FLP (hs-flp) (Xu and Rubin, 1993; Rubin and Huynh, 2015). First, to assess its role in GSC establishment, we induced sakuranull clones in primordial germ cells (PGCs) by applying heat shock before the early third instar larval stage and tracked their development into adult GSCs, following a previously established protocol (Yang et al., 2007). In control adult flies (FRT82B), 12.3% (20/163) of GSCs were marked, whereas only 1.9% (4/213) were marked in sakuranull mutants (FRT82B, sakuranull) (p-value = 4.8 * 10–11, chi-square test), indicating that sakura is autonomously required for GSC establishment.
 
 Next, we assessed GSC maintenance using the same system by generating sakuranull GSC clones in adult flies and measuring clone loss over time, as described previously (Xie and Spradling, 1998; Yang et al., 2007). Four days after clone induction, 27.8% of GSCs were marked in controls (FRT82B) and 22.1% in sakuranull (FRT82B, sakuranull), which we defined as initial levels (Figure 6A). In controls, the percentage of marked GSCs declined to 25.8% on day 7 and 16.8% on day 14, resulting in a 39.4% loss rate over 10 days (from day 4 to day 14). In contrast, the proportion of marked sakuranull GSC clones dropped more sharply—to 16.3% on day 7 and 5.4% on day 14—yielding a higher loss rate of 75.6% over 10 days. These results demonstrate that sakura is intrinsically important for GSC maintenance.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig6-v1.jpg)
+
+**Figure 6.:** (A) Percentage of germaria with marked germline stem cell (GSC) clones indicated by the absence of GFP at 4, 7, and 14 days after clone induction at the adult stage. Arrows indicate the percent decrease of marked GSC clones compared to day 4. The genotype, actual percentage, and total number of germaria examined are shown in the adjacent table. P-value < 0.01 (Chi-squared test) is indicated by **. (B) Confocal images of germ cell clones. sakuranull and control clones were marked by the absence of GFP. GFP (green), Hts (red), and DAPI (blue). Scale bars: 10 μm. (C) Number of marked (GFP-negative) GSC-like cells in germaria with marked GSCs of the indicated genotypes at 4, 7, and 14 days after clone induction. Mean ± SD. GSC-like cells containing round spectrosomes were identified through immunostaining with anti-Hts antibody. P-value < 0.05 and < 0.001 (Student’s t-test, unpaired, two-tailed) is indicated by * and ***, respectively.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Number of GFP-positive germline stem cell (GSC)-like cells in germaria with marked (GFP-negative) GSCs of the indicated genotypes at 4, 7, and 14 days after clone induction. Mean ± SD. GSC-like cells containing round spectrosomes were identified through immunostaining with anti-hu-li tai shao (Hts) antibody.
+
 We further tested whether sakura is intrinsically required for GSC differentiation. We quantified the number of marked (GFP-negative) and unmarked (GFP-positive) GSC-like cells (germline cells with a round spectrosome) in the germaria containing marked GSC clones at days 4, 7, and 14 post-induction (Figure 6B). We found that marked sakuranull GSC-like cells were significantly more numerous than marked control GSC-like cells at all time points (Figure 6C). The number of marked sakuranull GSC-like cells increased over the 10 day period, while the number of marked control cells did not (Figure 6C). In contrast, unmarked GSC-like cells in germaria containing sakuranull GSC clones did not differ significantly in number compared with those in germaria containing marked control GSC clones, and the number did not increase over time (Figure 6—figure supplement 1).
 
 These results demonstrate that sakura is intrinsically important in germline cells, including GSCs, to regulate proper division and differentiation. In the absence of intrinsic sakura, germline cells become tumorous and undergo uncontrolled proliferation. Taken together, we conclude that sakura is required intrinsically for GSC establishment, maintenance, and differentiation.
 
-## Loss of sakura inhibits Dpp/BMP signaling
+### Loss of sakura inhibits Dpp/BMP signaling
 
 The Dpp/BMP signaling pathway plays a central role in regulating bam expression and GSC self-renewal and differentiation (Figure 7A; Kirilly and Xie, 2007; Hayashi et al., 2020). We hypothesized that the germless and tumorous phenotypes observed in sakura loss-of-function ovaries could be due to Dpp/BMP signaling misregulation. To test this, we knocked down sakura in the germline driven by UAS-Dcr2 and NGT-Gal4 in the presence of bam-GFP reporter (Chen and McKearin, 2003b). In controls (yRNAi), Bam-GFP expression was restricted to 8-cell cysts and disappeared in 16 cell cysts and onward (Figure 7B). In contrast, sakura knockdowns ovaries showed persistent Bam-GFP expression throughout the germarium, including the GSC niche region (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic illustration of bam expression regulation. Cap cells secrete diffusible Decapentaplegic (Dpp), which is received by its receptor, a heterodimer of Thick vein (Tkv) and Punt (Put), in germline stem cells (GSCs). The activated Dpp signaling eventually phosphorylates Mother-against-dpp (Mad). The phosphorylated Mad (pMad) represses the transcription of bag-of-marbles (bam). The repression of bam in GSCs is crucial for maintaining their stemness. Cystoblasts do not receive Dpp, and Bam expression is crucial for promoting cystoblast differentiation from GSCs. (B) Confocal images of ovaries from control (yRNAi) and sakuraRNAi flies harboring the bam-GFP reporter, where RNAi knockdown was specifically driven in the female germline with UAS-Dcr2 and NGT-Gal4. Bam-GFP (green), Hts (red), and DAPI (blue). Germarium are outline ad by dotted line. Scale bars: 20 μm. (C, D) Confocal images of germaria with germline clones of sakuranull stained with (C) anti-Bam antibody and (D) anti-pMad antibody. GFP (green), Bam or pMad (red), and DAPI (blue). Scale bars: 10 μm. (E) Mean pMad intensity in the germline clones of the indicated genotypes. Mean ± SD (n = 7). P-value < 0.001 (Student’s t-test, unpaired, two-tailed) is indicated by *** (F) Confocal images of germaria with germline clones of sakuranull stained with anti-CycA antibody. GFP (green), CycA (red), and DAPI (blue). Scale bars: 10 μm. (G) Mean CycA intensity in the germline clones of the indicated genotypes. Mean ± SD (n=5 and 10 for FRT82B and FRT82B, sakuranull, respectively). P-value < 0.01 (Student’s t-test, unpaired, two-tailed) is indicated by **. In C, D, and F, clones were marked with the absence of GFP.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Confocal images of ovaries from sakura RNAi knockdown flies driven by UAS-Dcr2 and TOsk-Gal4, stained with anti-Bam and anti-DE-Cadherin (DE-Cad) antibodies. y-RNAi was used as a control. Bam (green), DE-Cad (red), and DAPI (blue). Cyan arrowheads indicate high Bam expression in 8 cell cysts within the germarium. White arrowheads indicate egg chambers with cytoskeletal disorganization. Scale bars: 50 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Ratio (%) of normal, germless, and tumorous ovarioles in double RNAi knockdown of sakura with bam, cycA, or otu. UAS-Dcr2 and NGT-Gal4 were used to drive RNAi knockdown in the germline. n is the total number of ovarioles examined for the indicated genotypes of 2–5 day-old flies. (B) Quantification of germline stem cell (GSC)-like cell number in germaria of indicated genotypes of 2–5 day-old flies. Mean ± SD. Germless ovarioles were excluded from this analysis.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Ratio (%) of normal, germless, and tumorous ovarioles in the indicated genotypes of 2–5 day-old flies. n denotes the total number of ovarioles examined for each genotype. (B) Quantification of germline stem cell (GSC)-like cell number in germaria of the indicated genotypes from 2–5-day-old flies. Mean ± SD. Germless ovarioles were excluded from this analysis.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** Q253D. (A) Ratio (%) of normal, germless, and tumorous ovarioles in the indicated genotypes of 2–5-day-old flies. RNAi knockdown and UASp-tkv.Q253D expression were driven with UAS-Dcr2 and NGT-Gal4. n indicates the total number of ovarioles examined for each genotype. (B) Quantification of germline stem cell (GSC)-like cell number in germaria of the indicated genotypes from 2–5-day-old flies. Mean ± SD. Germless ovarioles were excluded from this analysis.
 
 To further confirm this finding, we used the FLP-FRT system to induce sakuranull clones in germaria and performed immunostaining with anti-Bam antibody. In control clones (FRT82B), Bam expression was observed exclusively in 8 cell cysts. However, in all sakuranull clones (FRT82B, sakuranull), Bam was aberrantly expressed throughout the germarium, including in GSCs (Figure 7C). These results suggest that in the absence of sakura, Bam expression is no longer repressed by Dpp/BMP signaling in the GSC niche, leading to GSC loss, and is no longer shut off after the 16 cell cyst stage.
 
@@ -118,7 +190,7 @@ To determine whether bam misexpression occurs in egg chambers in sakura knockdow
 
 We also examined DE-Cadherin (DE-Cad), which plays a role in oocyte positioning within the egg chamber (Godt and Tepass 1998). DE-Cad level and localization appeared normal in both control and sakura RNAi ovaries through approximately stage 8. However, later-stage egg chambers in sakura RNAi flies displayed structural disorganization (Figure 7—figure supplement 1, white arrowheads), consistent with defects observed in Figure 5E.
 
-## Attempts to rescue sakura loss-of-function ovariole phenotypes
+### Attempts to rescue sakura loss-of-function ovariole phenotypes
 
 To determine whether the phenotypes caused by sakura loss-of-function could be rescued, we first performed genetic interaction experiments by knocking down either bam or cycA in the germline. As expected, germline-specific bam RNAi driven by UAS-Dcr2 and NGT-Gal4 resulted in 100% tumorous ovarioles, while cycA RNAi produced 100% normal ovarioles in 2–5 day-old flies (Figure 7—figure supplement 2). Double knockdown of sakura and bam reduced the proportion of germless ovarioles and increased the proportion of tumorous ovarioles compared to sakura RNAi alone or the double knockdown of sakura and control w RNAi, while no normal ovarioles were observed (Figure 7—figure supplement 2). sakura and cycA double knockdown had no effect on the phenotype distribution, suggesting that the germless phenotype in sakura mutants is partially attributable to ectopic bam expression but not to cycA misregulation.
 
@@ -128,13 +200,157 @@ Next, we tested whether the sakura loss-of-function phenotypes could be rescued 
 
 We then tested whether overexpression of a constitutively active form of the Dpp receptor Thickveins (Tkv.Q253D) (Casanueva and Ferguson, 2004) could rescue the phenotypes. Expression of UASp-tkv.Q253D in the germline using an NGT-Gal4 in a control (yRNAi) background resulted in 100% tumorous ovarioles, as expected (Figure 7—figure supplement 4). When co-expressed with sakura RNAi, Tkv.Q253D increased the proportion of tumorous ovarioles and decreased the proportion of germless ovarioles relative to sakuraRNAi alone but did not restore normal ovarioles. The number of GSC-like cells was also increased by Tkv.Q253D expression in sakuraRNAi (Figure 7—figure supplement 4),indicating partial phenotypic modulation via BMP pathway activation.
 
-## Sakura binds Otu
+### Sakura binds Otu
 
 To explore the molecular function of Sakura in oogenesis, we aimed to identify Sakura-interacting proteins. We conducted a co-immunoprecipitation experiment using anti-GFP magnetic beads on the ovary lysates of flies expressing Sakura-EGFP, followed by mass spectrometry to identify co-immunoprecipitated proteins. Ovary lysates from flies without the sakura-EGFP transgene (w1118) served as negative controls. Mass spectrometric analysis revealed several proteins with peptide signals present in all three biological replicates of the Sakura-EGFP samples without any signals in any of the three biological replicates of the negative control (Table 1). Among these, the most promising candidate, exhibiting the highest unique peptide signal in each of the three replicates of the Sakura-EGFP samples was Otu.
 
+**Table 1.**
+ Number of unique peptide counts detected by mass spec.Proteins with peptide signals present in all three biological replicates of the Sakura-EGFP samples without any signals in any of the three biological replicates of the negative control are shown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Identified protein name</th>
+      <th rowspan="3">Gene ID</th>
+      <th colspan="6">Unique peptide counts</th>
+    </tr>
+    <tr>
+      <th colspan="3">Sakura-EGFP samples</th>
+      <th colspan="3">w1118 samples(negative control)</th>
+    </tr>
+    <tr>
+      <th>Replicate 1</th>
+      <th>Replicate 2</th>
+      <th>Replicate 3</th>
+      <th>Replicate 1</th>
+      <th>Replicate 2</th>
+      <th>Replicate 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ovarian tumor (Otu)</td>
+      <td>CG12743</td>
+      <td>44</td>
+      <td>38</td>
+      <td>18</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG4679</td>
+      <td>CG4679</td>
+      <td>17</td>
+      <td>8</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG14997</td>
+      <td>CG14997</td>
+      <td>17</td>
+      <td>7</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Mitochondrial ribosomal protein S22</td>
+      <td>CG12261</td>
+      <td>14</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Tudor</td>
+      <td>CG9450</td>
+      <td>15</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Mitochondrial ribosomal protein S5</td>
+      <td>CG40049</td>
+      <td>10</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>HECT and RLD domain containing protein 2</td>
+      <td>CG11734</td>
+      <td>4</td>
+      <td>9</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Mitochondrial ribosomal protein S10</td>
+      <td>CG4247</td>
+      <td>5</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Mitochondrial ribosomal protein S31</td>
+      <td>CG5904</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Uncharacterized protein Dmel_CG1316</td>
+      <td>CG1316</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 To confirm this finding, we generated a polyclonal anti-Otu antibody and validated it by Western blots using ovary lysates from the hypomorphic otu14 mutant (Figure 8—figure supplement 1; King et al., 1986; Storto and King, 1987; Steinhauer and Kalfayan, 1992; Pauli et al., 1993). Using this antibody, we detected endogenous Otu protein in the Sakura-EGFP immunoprecipitants from ovaries of 3–7 day-old flies, but not in the negative control (Figure 8A), validating the mass spectrometry results. Next, using wild-type (without Sakura-EGFP) ovary lysates from 3–7 day-old-flies, we immunoprecipitated endogenous Sakura with anti-Sakura antibody and detected endogenous Otu in the immunoprecipitant by Western blot (Figure 8B), demonstrating that endogenous Sakura interacts with endogenous Otu. Furthermore, we found that ectopically expressed Flag-tagged Otu co-immunoprecipitated with ectopically expressed HA-tagged Sakura in S2 cells (Figure 8C).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig8-v1.jpg)
+
+**Figure 8.:** (A) Co-immunoprecipitation using anti-GFP magnetic beads followed by Western blotting. Ovary lysates expressing Sakura-EGFP in sakura+/+ background and those from w1118 negative control were tested. (B) Co-immunoprecipitation using beads bound with rabbit anti-Sakura followed by Western blotting. Ovary lysates from w1118 flies were used. Rabbit IgG was used as a control IP. (C) Co-immunoprecipitation using beads bound with anti-FLAG antibody followed by Western blotting. S2 cell lysates expressing 3xFLAG-Otu and Sakura-mCherry-3xHA or mCherry-3xHA (negative control) were used.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Western blot of dissected ovary lysates. (B) Western blot of dissected ovary lysates prepared from flies 2–5 hr and 3–7 days post eclosion and co-IP with anti-Sakura. The SDS-PAGE gel was run for a longer duration to better separate the 104 kDa and 98 kDa Otu isoforms. In 2–5 hr ovaries, the 104 kDa Otu isoform is more abundant, while in 3–7 day ovaries, the 98 kDa isoform predominates. Both Otu isoforms co-IPed with Sakura. The same 3–7 day ovary input and IP samples used for Figure 8B were used for anti-Otu and anti-Alpha-Tubulin Western. The anti-Sakura image is the same as shown in Figure 8B.
+
 The otu gene encodes two annotated protein isoforms, a predominant 98 kDa isoform and a less abundant 104 kDa isoform generated by alternative splicing (Steinhauer and Kalfayan, 1992). The 98 kDa isoform lacks the Tudor domain, which is encoded by an alternatively spliced 126-nucleotide exon (Figure 9B. Otu(ΔTudor)) (van Buskirk and Schüpbach, 2002). Previous studies have shown that the 104 kDa Otu isoform is more abundant in predifferentiated germline cells and is sufficient to carry all known Otu functions, whereas the 98 kDa Otu isoform becomes prominent during later stages of oogenesis and is implicated in nurse cell regression and oocyte maturation (Sass et al., 1995). Consistent with these findings, we observed that ovaries from very young (2–5 hr old) flies—containing only germaria and previtellogenic egg chambers—predominantly expressed the 104 kDa isoform (Figure 8—figure supplement 1). In contrast, ovaries from 3–7 day-old flies—containing all 14 stages of oogenesis—predominantly expressed the 98 kDa isoform. Importantly, both the 104 kDa and 98 kDa isoforms co-immunoprecipitated with endogenous Sakura using anti-Sakura antibody, demonstrating that Sakura interacts with both isoforms of Otu and that the Tudor domain is not required for this interaction (Figure 8—figure supplement 1).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig9-v1.jpg)
+
+**Figure 9.:** (A) Predicted structure of the Sakura and Otu protein complex made by AlphaFold. Full-length Sakura and N-terminal Otu fragment (N1. 1-405aa) were used for prediction. (B) Full-length Otu and Otu fragments tested in co-immunoprecipitation assays. The binding assay results from (D) is summarized. (C) Full-length Sakura and Sakura fragments tested in co-immunoprecipitation assays (N: N-terminal, M: middle, C: C-terminal). The binding assay results from (E) is summarized. (D, E, F) Co-immunoprecipitation using anti-HA magnetic beads followed by Western blotting. S2 cell lysates expressing HA-tagged mCherry were used as negative controls.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Co-immunoprecipitation assay using beads bound with anti-FLAG antibody followed by Western blotting. S2 cell lysates expressing mCherry-3xHA were used as controls. This is the reciprocal co-immunoprecipitation of Figure 9F.
 
 Next, we sought to identify which regions of Sakura and Otu are important for their interaction. We predicted the structure of the Sakura-Otu protein complex using AlphaFold (Jumper et al., 2021; Yang et al., 2023). AlphaFold suggested that the N-terminal region of Sakura (1-49aa) and the N-terminal region of Otu (1-405aa) are highly likely to form interactions, while the C-terminal region of Sakura (100-144aa) does not interact with Otu (Figure 9A–C). The Tudor domain of Otu is not directly involved in this interaction, consistent with our findings (Figure 8—figure supplement 1). To experimentally validate the predictions made by AlphaFold, we generated a series of truncated Otu fragments, including Otu(∆Tudor) (1–336, 389-853aa, corresponding to the endogenous 98 kDa isoform), Otu(N1) (1-405aa), Otu(N2) (1-339aa), and Otu(C) (405-853aa) (Figure 9B). We then performed co-immunoprecipitation assays to test which fragments could interact with full-length Sakura. All fragments except Otu(C) were associated with full-length Sakura protein in S2 cells (Figure 9D), demonstrating that the C-terminal low-complexity region of Otu is dispensable for the interaction. This assay also showed that the Tudor domain is not critical and the N-terminal fragment (1-339aa) of Otu is sufficient for interaction with Sakura. These findings align well with the predictions made by AlphaFold.
 
@@ -142,9 +358,17 @@ Subsequently, we created several truncated Sakura fragments and conducted co-imm
 
 Finally, to test whether the interaction between Sakura and Otu can be achieved solely through their N-terminal regions, we performed a co-immunoprecipitation assay with Sakura (N) and Otu (N2). We discovered that Sakura (N) and Otu (N2) physically interact (Figure 9F). A reciprocal co-immunoprecipitation assay also confirmed their interaction (Figure 9—figure supplement 1), revealing that the interaction between Sakura and Otu can be established with just the 1-49aa of Sakura and the 1-339aa of Otu. Therefore, we conclude that Sakura interacts with Otu in vivo, and the N-terminal regions of both proteins are sufficient for their interaction.
 
-## Loss of otu phenocopies loss of sakura
+### Loss of otu phenocopies loss of sakura
 
 Having established the interaction between Sakura and Otu, we were interested in whether they function together during oogenesis. We speculated that for them to interact and function together, Sakura and Otu must exhibit similar expression and localization patterns in ovaries. We generated two transgenic flies carrying full-length otu-EGFP or otu(∆Tudor)-EGFP transgenes; both constructs are C-terminally fused with EGFP and under the control of the otu promoter. We found that both Otu-EGFP and Otu(∆Tudor)-EGFP display similar expression and localization patterns to Sakura-EGFP (Figures 1E, F, 10). Like Sakura-EGFP, Otu-EGFP and Otu(∆Tudor)-EGFP are specifically expressed in germ cells, but not in follicle cells, and are localized to the cytoplasm, being enriched in the developing oocytes (Figure 10A). We did not observe any difference in localization patterns between Otu-EGFP and Otu(∆Tudor)-EGFP; suggesting that the Tudor domain is not crucial for Otu protein localization. Notably, the localization pattern exhibited by the transgenic Otu-EGFP generated in this study is consistent with a previous report (Glenn and Searles, 2001).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig10-v1.jpg)
+
+**Figure 10.:** (A) Confocal images of ovaries from otu-EGFP and otu(∆Tudor)-EGFP transgenic flies. Otu-EGFP and Otu(∆Tudor)-EGFP (green), DAPI (blue). Yellow arrows show the enrichment of Otu-EGFP and Otu(∆Tudor)-EGFP in developing oocytes. Scale bars: 20 μm. (B) Stereomicroscope images of dissected whole ovaries from wRNAi (control) and otuRNAi flies where RNAi knockdown was driven in the female germline with nos-Gal4-VP16 or TOsk-Gal4. Scale bar: 500 μm. (C) Western blot of dissected ovary lysates. (D) Number of eggs laid by TOsk-Gal4 >wRNAi and TOsk-Gal4 >otuRNAi flies. Mean ± SD (n = 5). P-value < 0.001 (Student’s t-test, unpaired, two-tailed) are indicated by ***. (E) Violin plots of the number of stage 14 oocytes produced in TOsk-Gal4 >wRNAi and TOsk-Gal4 >otuRNAi flies. n=30. P-value < 0.001 (Student’s t-test, unpaired, two-tailed) is indicated by ***.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** (A) Western blot of dissected ovary lysates. The same samples used for Figure 5B were used for anti-Otu Western. The anti-Sakura and anti-Alpha tubulin images are the same as shown in Figure 5B. (B) The same samples used for Figure 10C were used for anti-Sakura Western. The anti-Otu and anti-Alpha tubulin images are the same as shown in Figure 10C.
 
 Previous studies have shown that mutations in otu lead to defects in germ cell division and differentiation, resulting in phenotypes including tumorous ovarioles (King and Riley, 1982; King et al., 1986; Storto and King, 1988; Steinhauer and Kalfayan, 1992). To study the role of otu specifically in the germline, we performed RNAi knockdown of otu in the germline driven by nos-Gal4-VP16 (Figure 10B and C). Interestingly, we found that germline depletion of otu results in rudimentary ovaries, similar to the loss of sakura (Figures 2C and 5A, and Figure 10B). Furthermore, similar to sakura RNAi (Figure 5), TOsk-Gal4-driven otu RNAi knockdown did not affect ovary morphology (Figure 10B), but it resulted in a reduced number of eggs laid and stage 14 oocytes compared with control RNAi (wRNAi) (Figure 10D and E).
 
@@ -152,21 +376,29 @@ Given that sakura loss of function causes tumorous and germless ovarioles, apopt
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig11-v1.jpg)
 
-**Figure 11.:** (A) Confocal images of the ovaries from control (w) and RNAiotu flies harboring the RNAibam-GFP reporter, where RNAi knockdown was driven in the female germline with nos-Gal4-VP16. Bam-GFP (green), Hts (red), and DAPI (blue). Scale bars: 20 μm. (B) Confocal images of germaria from control (otu) and 14/+otu mutant flies stained with anti-pMad (green) and anti-Hts (red) antibodies. Scale bars: 10 μm. (14/14C) Confocal images of the ovaries from nos-Gal4-VP16>w and RNAinos-Gal4-VP16>otu flies stained with anti-cleaved Caspase 3 antibody. Cleaved Caspase-3 (red) and DAPI (blue). Scale bars: 20 μm. (RNAiD) Confocal images of the ovaries from w and RNAiotu flies carrying the Burdock sensor, with RNAi driven in the female germline using RNAiUAS-Dcr2, NGT-Gal4, and nos-Gal4-VP16. GFP (green), β-gal (red), and DAPI (blue). Scale bars: 50 μm. Three out of three tested control samples were negative for both GFP and β-gal, while 14 out of 14 tested otu samples were positive for GFP and β-gal.RNAi
+**Figure 11.:** (A) Confocal images of the ovaries from control (wRNAi) and otuRNAi flies harboring the bam-GFP reporter, where RNAi knockdown was driven in the female germline with nos-Gal4-VP16. Bam-GFP (green), Hts (red), and DAPI (blue). Scale bars: 20 μm. (B) Confocal images of germaria from control (otu14/+) and otu14/14 mutant flies stained with anti-pMad (green) and anti-Hts (red) antibodies. Scale bars: 10 μm. (C) Confocal images of the ovaries from nos-Gal4-VP16>wRNAi and nos-Gal4-VP16>otuRNAi flies stained with anti-cleaved Caspase 3 antibody. Cleaved Caspase-3 (red) and DAPI (blue). Scale bars: 20 μm. (D) Confocal images of the ovaries from wRNAi and otuRNAi flies carrying the Burdock sensor, with RNAi driven in the female germline using UAS-Dcr2, NGT-Gal4, and nos-Gal4-VP16. GFP (green), β-gal (red), and DAPI (blue). Scale bars: 50 μm. Three out of three tested control samples were negative for both GFP and β-gal, while 14 out of 14 tested otuRNAi samples were positive for GFP and β-gal.
 
 Together, these data demonstrate that otu loss-of-function closely phenocopies sakura loss-of-function, including defects in germline maintenance and differentiation, bam misexpression, reduced pMad signaling, and compromised piRNA pathway activity. These findings, along with physical interaction between Sakura and Otu (Figures 8 and 9, Figure 8—figure supplement 1, Figure 9—figure supplement 1), suggest that they function together in regulating germline maintenance and differentiation.
 
 To further explore their genetic interaction, we compared the ovariole phenotypes caused by single and double knockdowns of sakura and otu in the germline driven by UAS-Dcr2 and NGT-Gal4. Individual knockdown of either gene resulted in ~70% germless and ~30% tumorous ovarioles in 2–5-days-old flies (Figure 7—figure supplement 2). Simultaneous knockdown of both genes increased the proportion of germless ovarioles to 86%, with a corresponding decrease in tumorous phenotypes to 14%, suggesting a synergistic enhancement of the germless phenotype. The number of GSC-like cells was not affected by the double knockdown of sakura and otu compared with their respective single knockdown (Figure 7—figure supplement 2).
 
-## Sakura and Otu proteins do not depend on each other for their abundance
+### Sakura and Otu proteins do not depend on each other for their abundance
 
 We investigated whether Sakura and Otu proteins depend on each other for their abundance. We performed Western blot analysis on ovaries with germline-specific knockdown of sakura or otu, driven by TOsk-Gal4. Otu protein levels were not reduced in sakuraRNAi ovaries compared to control yRNAi, and conversely, Sakura levels were not decreased in otuRNAi ovaries compared with control wRNAi ovaries (Figure 10—figure supplement 1). These results indicate that Sakura and Otu do not require each other for their protein expression or stability.
 
 To further test this conclusion and to examine whether Otu enrichment in the posterior of egg chambers is affected by loss of sakura, we generated marked sakuranull germline clones using the FLP-FRT system. Clones were marked by the absence of RFP, and experiments were performed in the flies expressing the otu-EGFP or otu(∆Tudor)-EGFP transgene in an otherwise wild-type (otu+/+) background. Otu-EGFP fluorescence signal was comparable between sakuranull clones (FRT82B, sakuranull) and control clones (FRT82B) (Figure 12A). Similarly, Otu(∆Tudor)-EGFP levels were unaffected in sakuranull clones compared to the control clones (Figure 12B), confirming that Sakura is not required for Otu protein expression or stability.
 
+![Figure 12.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig12-v1.jpg)
+
+**Figure 12.:** Confocal images of egg chambers with germline clones of sakuranull expressing (A) Otu-EGFP or (B) Otu(ΔTudor)-EGFP. Fly genotypes used: hs-flp/w; otu-EGFP/+; FRT82B, ubi-RFP/FRT82B. hs-flp/w; otu-EGFP/+; FRT82B, ubi-RFP/FRT82B, sakuranull. hs-flp/w; otu(ΔTudor)-EGFP/+; FRT82B, ubi-RFP/FRT82B. hs-flp/w; otu(ΔTudor)-EGFP /+; FRT82B, ubi-RFP/FRT82B, sakuranull. RFP (red), Otu-EGFP or Otu(ΔTudor)-EGFP (green), and DAPI (blue). Scale bars: 20 μm. Marked clones (RFP-negative) are outlined with white dotted lines. Yellow arrows indicate normal posterior enrichment of Otu-EGFP and Otu(ΔTudor)-EGFP signal; magenta arrows indicate the loss of this posterior enrichment in sakuranull clones.
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/103828/elife-103828-fig12-figsupp1-v1.jpg)
+
+**Figure 12—figure supplement 1.:** The mean fluorescence intensity of three replicates was plotted. Error bars (+/-) are standard deviations. Firefly Luciferase was used as a negative control.
+
 Both Otu-EGFP and Otu(∆Tudor)-EGFP exhibited clear enrichment at the posterior of egg chambers in the control clones (FRT82B) —consistent with localization to the developing oocyte (Figure 12A and B). This posterior enrichment was absent in sakuranull clones, demonstrating that Sakura is crucial for this process.
 
-## Sakura does not affect Otu’s deubiquitinase activity in vitro
+### Sakura does not affect Otu’s deubiquitinase activity in vitro
 
 A previous study has shown that Otu possesses deubiquitinase activity (Ji et al., 2017). We asked whether Sakura regulates the Otu’s deubiquitinase activity. To test this, we performed an in vitro deubiquitination assay using Ub-Rhodamine 110 as a model substrate. Consistent with the previous study (Ji et al., 2017), we detected a deubiquitinase activity in Otu that was ectopically expressed and purified from S2 cells (Figure 12—figure supplement 1). The presence of Sakura, purified from E. coli, did not affect Otu’s deubiquitinase activity under these assay conditions. Additionally, Sakura itself did not exhibit deubiquitinase activity.
 
@@ -194,23 +426,23 @@ In summary, this study identifies and characterizes the previously unknown gene 
 
 ## Materials and methods
 
-## Fly strains
+### Fly strains
 
 We generated the sakuranull strain by introducing indels within the Sakura coding region using the CRISPR/Cas9 genome editing system, as we previously reported (Zhu et al., 2018a; Zhu et al., 2018b; Zhu et al., 2019b; Zhu and Fukunaga, 2021). The transgenic sakura-EGFP, otu-EGFP, and otu(∆Tudor)-EGFP strains were created following previously published methods (Fukunaga et al., 2012; Kandasamy and Fukunaga, 2016; Zhu and Fukunaga, 2021). A fragment containing Sakura cDNA flanked by ~1 kbp upstream and ~1 kbp downstream genomic sequences was cloned. Fragments containing Otu and Otu(∆Tudor) cDNAs, flanked by ~2.5 kbp upstream and ~1 kbp downstream genomic sequences, were also cloned. The EGFP gene was fused in-frame to the C-terminus of the Sakura and Otu coding sequences within these fragments, which were then inserted into a pattB plasmid vector. The sakura-EGFP plasmid was integrated into the 51C1 site within the fly genome using the BDSC:24482 fly strain and the PhiC31 system, while the otu-EGFP and otu(∆Tudor)-EGFP plasmids were integrated into the 25C6 site of the genome using the attP40 fly strain and the PhiC31 system.
 
 The sakura RNAi #1 (VDRC: v39727) and #2 (VDRC: v103660), y-RNAi (v106068), TOsk-Gal4 (v 314033), Burdock sensor [UAS-Dcr2; NGT-Gal4; nosGal4-VP16, nos >NLS_GF’_lacZ_vas-3'UTR_burdock-target] (v 313217) strains were from the Vienna Drosophila Resource Center. w-RNAi (BDSC: 35573), otu-RNAi (BDSC: 34065), bam-RNAi (BDSC: 33631), cycA-RNAi (BDSC: 29313), UAS-Dcr-2; NGT-Gal4 (BDSC: 25751), FRT82B/TM6C, Sb (BDSC: 86313), otu14 (BDSC: 6025), UASp-Mad-GFP (BDSC: 604592), and UASp-tkv.Q253D (BDSC: 604934) were obtained from the Bloomington Stock Center. The bam-GFP reporter (DGRC: 118177) and vasa-EGFP knocked-in fly (DGRC: 118616) were from the Kyoto Drosophila Stock Center. sakura RNAi #2 was much healthier than sakura RNAi #1 without being driven with any Gal4 for some reason, and thus we chose to use the RNAi #2 line in most of this study. sakura-EGFP does not cause any phenotypes in the background of sakura+/+ and sakura null/+.
 
-## Fertility assay
+### Fertility assay
 
 The female fertility assay was performed as previously described (Zhu et al., 2018b; Liao et al., 2019; Zhu et al., 2019a; Zhu and Fukunaga, 2021). Briefly, five test virgin females of each test genotype were mated with three wild-type (OregonR) males in a cage with a 6 cm grape juice agar plate supplemented with wet yeast paste. The agar plates were replaced daily, and the number of eggs laid on the third plate (on day 3) was recorded. After incubation at 25 °C for an additional day, the number of hatched eggs was counted. At least three cages per genotype were tested.
 
 For the male fertility assay, a single test male was mated with five wild-type (OregonR) virgin females in each vial, following previously published methods (Zhu et al., 2018b; Zhu et al., 2019a; Zhu and Fukunaga, 2021). After 3 days, the females were transferred to a new vial (vial 1). Every two days, they were transferred to a new vial until a total of four vials were obtained. After 2 days in the fourth vial, the females were removed, and the total number of progenies emerging from these four vials was counted. At least five males per genotype were tested.
 
-## Sakura and Otu antibodies
+### Sakura and Otu antibodies
 
 We expressed a recombinant full-length Sakura protein as an N-terminal 6xHis-tagged protein in E. coli using a modified pET vector and purified it using Ni-sepharose (GE Healthcare) and HiTrapQ HP (GE Healthcare) columns (Fukunaga and Doudna, 2009). Recombinant Otu fragments (145-405aa and 406-853aa) were similarly expressed as N-terminally 6xHis-MBP-fusion proteins in E. coli and purified using Ni-sepharose. These purified proteins were used as antigens to generate polyclonal anti-Sakura and anti-Otu sera in rabbits (Pocono Rabbit Farm & Laboratory, Inc). The rabbit polyclonal anti-Sakura antibodies were affinity purified using His-MBP-Sakura recombinant protein and Affigel-15 (Bio-Rad), following the manufacturer’s instructions. Rabbit anti-Otu sera were first pre-cleared with purified His-MBP protein bound to Affigel-15, and the unbound fraction was affinity purified using purified His-MBP-Otu fragments (145-405aa and 406-853aa) and Affigel-15.
 
-## Immunostaining
+### Immunostaining
 
 Stereomicroscope images of dissected ovaries were taken using Leica M125 stereomicroscope. Ovaries from 2–5-day-old, yeast-fed females were hand-dissected in 1 X PBS (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4, pH 7.4) at room temperature. The dissected ovaries were fixed in a fixative buffer (4% formaldehyde, 15 mM PIPES (pH 7.0), 80 mM KCl, 20 mM NaCl2, 2 mM EDTA, and 0.5 mM EGTA), incubated for 30 min at room temperature with gentle rocking. After fixation, the ovaries were rinsed three times with PBX (0.1% Triton X-100 in 1 X PBS) and then incubated in a blocking buffer (2% donkey serum in 3% BSA [w/v], 0.02% NAN3 [w/v] in PBX) for 1 hr at room temperature. Then, the ovaries were incubated with primary antibodies diluted in the blocking buffer overnight at 4 °C. The following day, the ovaries were rinsed three times with PBX and incubated with Alexa Fluor-conjugated secondary antibodies for 2 hr. The ovaries were rinsed three times with PBX and then mounted in VECTASHIELD PLUS antifade mounting medium with DAPI (H-2000, Vector lab). Confocal images were acquired on a Zeiss LSM700 confocal microscope at the Johns Hopkins University School of Medicine Microscope Facility.
 
@@ -218,23 +450,23 @@ The primary antibodies used for immunostaining were mouse anti-HTS (1B1) (DSHB, 
 
 While our Sakura antibody detects Sakura in immunostaining, it seems to detect some other proteins as well. Since we have Sakura-EGFP fly strain, which rescues sakuranull phenotypes, we relied on Sakura-EGFP rather than anti-Sakura antibodies immunostaining to examine Sakura expression and localization.
 
-## Germline clonal analysis
+### Germline clonal analysis
 
 We generated sakuranull mutant clones using FLP/FRT-mediated recombination (Rubin and Huynh, 2015). To induce sakuranull GSC clones, 3-day-old female flies of the genotype hs-flp/w; +; FRT82B, ubi-GFP/FRT82B, sakuranull were heat-shocked at 37 °C for 1 hr, twice daily, with an 8 hr interval between heat shocks. Female flies of the genotype hs-flp/w; +; FRT82B, ubi-GFP/FRT82B were used as controls. Ovaries were dissected and stained 4, 7, and 14 days after clone induction. To induce PGC clones, early third-instar larvae were subjected to the same heat shock regime, then allowed to develop to adulthood. Ovaries were dissected and analyzed at 3–4 days after eclosion.
 
 To induce sakuranull mutant clones in the presence of otu-EGFP or otu(∆Tudor)-EGFP transgenes, 3-day-old female flies with the genotype hs-flp/w; otu-EGFP/+; FRT82B, ubi-RFP/FRT82B, sakuranull and hs-flp/w; otu(ΔTudor)-EGFP /+; FRT82B, ubi-RFP/FRT82B, sakuranull were heat-shocked under the same conditions. Flies with the genotypes of hs-flp/w; otu-EGFP/+; FRT82B, ubi-RFP/FRT82B and hs-flp/w; otu(ΔTudor)-EGFP/+; FRT82B, ubi-RFP/FRT82B were used as controls. Flies were dissected 3–4 days after clone induction.
 
-## Western blot
+### Western blot
 
 Lysates of hand-dissected ovaries and tissues were prepared by homogenizing in RIPA buffer (50 mM Tris-HCl [pH 7.4], 150 mM NaCl, 1% [v/v] IGEPAL CA-630, 0.1% [w/v] sodium dodecyl sulfate (SDS), 0.5% [w/v] sodium deoxycholate, 1 mM ethylenediaminetetraacetic acid (EDTA), 5 mM dithiothreitol, and 0.5 mM phenylmethylsulfonyl fluoride (PMSF)) (Kandasamy et al., 2017; Zhu et al., 2018b). The homogenates were centrifuged at 21,000 g at 4 °C for 10 min, and the protein concentration of the supernatant was determined using the BCA protein assay kit (Pierce) as needed. Fifteen μg of total protein was loaded per lane for Western blot. The sources and dilutions of the primary antibodies were as below. Rabbit anti-Sakura (1/10,000, generated in this study), rabbit anti-Otu (1/10,000, generated in this study), rabbit anti-alpha-Tubulin [EP1332Y] (1/10,000, Abcam, ab52866), mouse anti-alpha-Tubulin [12G10] (1/10,000, DSHB, AB_1157911), mouse anti-FLAG (1/10,000, Sigma, F1804), mouse anti-HA (1/10,000, Sigma, H3663), and mouse anti-GFP [GF28R] (1/3000, Invitrogen, 14-6674-82). IRDye 800CW goat anti-mouse IgG, IRDye 800CW goat anti-rabbit IgG, IRDye 680RD goat anti-mouse, and IgG IRDye 680RD goat anti-rabbit were used as secondary antibodies. The membranes were scanned using the Li-Cor Odyssey CLx Imaging System.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Immunoprecipitation of Sakura-EGFP protein was performed using the GFP-Trap Magnetic Agarose Kit (Proteintech, gtmak-20) on dissected ovaries from flies harboring sakura-EGFP transgene, with w1118 flies as controls. Ovaries were homogenized in 200 μL ice-cold lysis buffer (10 mM Tris-HCl [pH 7.5], 150 mM NaCl, 0.5 mM EDTA, 0.05% [v/v] IGEPAL CA-630) containing 1x protease inhibitor cocktail (100x protease inhibitor cocktail contains 120 mg/ml 1 mM 4-(2-aminoethyl) benzene sulfonyl fluoride hydrochloride (AEBSF), 1 mg/ml aprotinin, 7 mg/ml bestatin, 1.8 mg/ml E-64, and 2.4 mg/ml leupeptin). After homogenization, the tubes were placed on ice for 30 min, and the homogenates were extensively pipetted every 10 min. The lysates were then centrifuged at 17,000 x g for 10 min at 4 °C. The supernatants were transferred to pre-chilled tubes, and 300 μL dilution buffer (10 mM Tris/Cl pH 7.5, 150 mM NaCl, 0.5 mM EDTA) supplemented with 1 x protease inhibitor cocktail were added. The diluted lysates were then added to the GFP-trap magnetic beads in 1.5 mL tubes and rotated for 1 hr at 4 °C. After separating the beads with a magnetic tube rack, the beads were washed three times with 500 μL wash buffer (10 mM Tris/Cl pH 7.5, 150 mM NaCl, 0.05% [v/v] IGEPAL CA-630). Proteins were eluted with 40 μL acidic elution buffer (200 mM glycine pH 2.5) followed by immediate neutralization with 5 μL neutralization buffer (1 M Tris pH 10.4).
 
 As a quality control before mass spectrometry, ~5 μL of the samples were mixed with an equal volume of 2x SDS PAGE loading buffer (80 mM Tris-HCl [pH 6.8], 2% [w/v] SDS, 10% [v/v] glycerol, 0.0006% [w/v] bromophenol blue, 2% [v/v] 2-mercaptoethanol), heated at 95 °C for 3 min, and run on 4–20% Mini-PROTEAN TGX Precast Protein Gels (Bio-Rad, #4561094). Silver staining was then performed by using the Pierce Silver Stain Kit (Thermo Fisher, 24612) to assess the quality of the immunoprecipitated protein samples. Mass spectrometry was conducted at the Mass Spectrometry Core at the Department of Biological Chemistry, Johns Hopkins School of Medicine, as previously described (Zhu and Fukunaga, 2021).
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 For co-immunoprecipitation of endogenous Sakura protein, wild-type ovaries (w1118) were homogenized in ice-cold lysis buffer (10 mM Tris-HCl [pH 7.5], 150 mM NaCl, 0.5 mM EDTA, 0.05% [v/v] IGEPAL CA-630) containing 1×protease inhibitor cocktail, centrifuged at 21,000 g at 4 °C for 10 min, and the clear supernatant protein lysates were used for immunoprecipitation. Four μg of rabbit anti-Sakura and normal rabbit IgG (Cell Signaling, #2729) were incubated with 50 μL of Dynabeads Protein G (Thermo Fisher, 10004D) for 20 min at room temperature. The beads were washed once with PBST (1 x PBS with 0.1% Tween-20). The ovary lysate supernatant was then incubated with the washed beads at room temperature for 30 min, followed by three washes with PBST. The proteins were eluted with 2 x SDS-PAGE loading buffer (80 mM Tris-HCl [pH 6.8], 2% [w/v] SDS, 10% [v/v] glycerol, 0.0006% [w/v] bromophenol blue, 2% [v/v] 2-mercaptoethanol) and heated at 70 °C for 10 min. After bead separation using a magnetic tube rack, the eluted proteins in 2 x SDS-PAGE loading buffer were heated again at 95 °C for 3 min.
 
@@ -242,20 +474,20 @@ Transient protein expression in S2 cells was performed using the pAc5.1/V5-HisB 
 
 While the anti-Otu antibody worked in immunoprecipitation from ovaries, in subsequent anti-Sakura Western blot after anti-Otu IP, Otu antibody light chain bands often overlapped with the Sakura band. Using epitope tags in S2 cells avoided this issue.
 
-## Small RNA and mRNA sequencing
+### Small RNA and mRNA sequencing
 
 Poly-A +mRNA purification was performed as previously described (Fukunaga et al., 2012). Small RNA libraries and poly-A +mRNA libraries were prepared, sequenced on Hiseq2500 (Illumina), and analyzed, as previously reported (Fukunaga et al., 2014; Kandasamy et al., 2017; Liao et al., 2018; Zhu et al., 2018a; Zhu et al., 2018b; Liao et al., 2019; Zhu et al., 2019a; Zhu et al., 2019b). SRA accession number for these datasets is PRJNA1156618.
 
-## RT-PCR
+### RT-PCR
 
 Total RNAs from testes and ovaries were prepared using miRVana (Thermo Fisher Scientific). RNAs were treated with Turbo DNase (Thermo Fisher Scientific) to remove potential genomic DNA contamination. A total of 1 μg of RNA was reverse-transcribed into cDNA using SuperScript VILO MasterMix (Thermo Fisher Scientific). To assess sxl alternative splicing, PCR was performed using GoTaq Green Master Mix (Promega) with the primers sxl-F (CTCACCTTCGATCGAGGGTGTA) and sxl-R (GATGGCAGAGAATGGGAC).
 
-## In vitro deubiquitination assay
+### In vitro deubiquitination assay
 
 C-terminally 6xHis-tagged recombinant Sakura protein was expressed in E. coli using a modified pET vector and was purified using Ni-sepharose. N-terminally 3xHA-HRV3Csite-3xFLAG-tagged Otu protein and a negative control, N-terminally 3xHA-HRV3Csite-3xFLAG-tagged firefly luciferase protein, were expressed in S2 cells using pAc5.1/V5-HisB vector. The proteins were immunoprecipitated using Pierce Anti-HA Magnetic Beads (Thermo Fisher, 88837) as described previously, with a more stringent washing step to effectively remove interacting proteins. The beads were washed six times with a high salt wash buffer (TBST with 800 mM NaCl). The proteins were eluted by cleaving off 3xHA tag with 25 nM GST-HRV3C protease in a cleavage buffer (25 mM Tris-HCl pH 7.4, 150 mM NaCl, 5% glycerol, 2 mM EDTA), incubated at 4 °C with rotation for 6 hr. An equal volume of 100% glycerol was added to the eluted protein.
 
 Purified proteins, including Otu, luciferase, and Sakura, were mixed with Ub-Rhodamine 110 (Ubiquitin-Proteasome Biotechnologies, M3020) in a total volume of 30 μL in reaction buffer (20 mM Tris-HCl, pH 7.5, 200 mM NaCl, 5 mM MgCl2, 2 mM DTT). The mixture was added to a black 384-well low-volume plate. Fluorescence measurements were taken using the SpectraMax i3x Multi-Mode Microplate Reader at 37 °C, with excitation and emission wavelengths set at 485/20 and 530/20 nm, respectively. The fluorescence intensity for each condition was averaged from triplicates and plotted as a function of time.
 
-## Materials availability statement
+### Materials availability statement
 
 Materials newly created in this study, including plasmids and fly strains, are available from the authors upon request.

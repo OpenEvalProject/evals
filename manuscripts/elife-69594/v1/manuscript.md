@@ -38,13 +38,19 @@ We assessed learning of these four contingencies via a common behavioural measur
 
 ## Results
 
-## Pre-punishment phase
+### Pre-punishment phase
 
 The ‘Planets and Pirates’ task involved participants (N = 135, 107 female) making mouse click responses on two continuously presented planets (R1 and R2) to earn points. They received two 3 min blocks of this reward training (Figure 1A). Each 3 min block used a continuous real-time (i.e., not discrete trial) structure. Both R1 and R2 were rewarded equally (+100 points, 50% probability). Responses and reward delivery were independently registered and immediate visual feedback for these task elements was provided to participants. Under this schedule, points gain was maximised by high rates of R1 and R2.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/69594/elife-69594-fig1-v1.jpg)
+
+**Figure 1.:** (A) During pre-punishment phase, participants could continuously click on two planets (R1 and R2 [side counterbalanced]) to earn reward (+100 points, 50% chance per response). (B) During conditioned punishment phase, additional R1→CS+ and R2→CS- contingencies were introduced (20% chance per response). CS+ precipitated attack (−20% point loss), whereas CS- had no aversive consequence. A shield button was made available on a random 50% of CS presentations; activating the shield cost 50 points but prevented any point loss from attacks. (C) Preference ratio (orange line = mean ± SEM; dots = individual preference scores) of R1:R2 clicking during pre-punishment phase (Pre) and punishment blocks (1–3). Overall, participants (n = 135) learned to avoid punishment, biasing responding away from punished R1 in favour of unpunished R2. (D) Mean ± SEM CS-elicited behaviour across punishment phase. Participants showed more response suppression (0 = complete suppression) during unshielded portions of CS+ compared CS- (left panel), and greater shield use to CS+ than CS- (right panel). * [black] p<0.05 behaviour effect; * [orange] p<0.05 vs. null ratio.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69594/elife-69594-fig1-figsupp1-v1.jpg)
+
 All participants readily learned the task and accumulated points. There were no significant differences in responding across the two pre-punishment blocks (Block: F(1,134) = 0.085, p=0.771; Block*Planet: F(1,134) = 0.046, p=0.831) (Figure 1—figure supplement 1). Therefore, pre-punishment block data were averaged (Pre) to simplify all further analyses. As expected, response rates for R1 and R2 did not differ significantly (t(134) = 0.872, p=0.385) and no preference between R1 and R2 was detected using a normalised measure of response bias (preference ratio, t(134) = 0.512, p=0.610; Figure 1C [Pre]).
 
-## Punishment phase
+### Punishment phase
 
 Participants next received three blocks of punishment training (Figure 1B). Reward contingencies remained identical to pre-punishment, but additional conditioned punishment contingencies were introduced. R1 now yielded 6 s on-screen presentations of a spaceship (CS+, 20% probability [1.5 s delay between response and CS presentation]) followed by an ‘attack’ (−20% of total points), whereas R2 yielded a different spaceship (CS-, 20% probability [1.5 s delay]) and no points loss. During some CSs (random 50%), participants were provided with the opportunity to make an active avoidance response by activating a shield to prevent point loss. If available, the shield button was displayed 3 s after CS onset. Making an active avoidance response by engaging the shield cost 50 points and prevented further reward for the duration of shield presentation (terminating at the same time as the CS). Optimal active avoidance would be to shield whenever possible for CS+ and never for CS-.
 
@@ -52,7 +58,7 @@ Under these conditions, participants as a whole learned the instrumental conting
 
 Participants also learned the Pavlovian contingency between the CS+ and points loss (Figure 1D). They exhibited Pavlovian conditioned suppression, reducing rates of responding more during presentations of CS+ than the control CS- (t(133) = −3.885, p<0.001; suppression was assessed during unshielded CS relative to CS-free inter-trial interval [ITI]). They were also more likely to actively avoid the CS+ compared to the control CS- by utilising the shield when it was available (t(129) = 3.199, p=0.002).
 
-## Individual differences in punishment
+### Individual differences in punishment
 
 So, overall participants learned the instrumental and Pavlovian contingencies in the task. However, there was pronounced variation between participants in this learning. As expected, based on findings in rodents (Jean-Richard-Dit-Bressel et al., 2019; Marchant et al., 2018), sensitivity to punishment was bimodal. K-means clustering based on final preference ratio identified two clusters (mean silhouette value = 0.74 [greater than three to four cluster solutions]; minimum = 0.04): a smaller punishment-sensitive cluster (n = 43), that finished with a strong preference for unpunished over punished clicking (t(42) = −24.21, p<0.001), and an extensive insensitive cluster (n = 92) that did not (t(91) = 1.902, p=0.060) (Figure 2A). This difference was not pre-existing to the punishment training. Instead, the difference between sensitive and insensitive clusters emerged across punishment blocks (Block*Cluster interaction: F(1,133) = 223.43, p<0.001; Figure 2B). Sensitive individuals acquired a preference for the unpunished R2 over the punished R1 across blocks (F(1,42) = 46.55, p<0.001), whereas insensitive individuals did not (F(1,91) = 1.111, p=0.345).
 
@@ -64,9 +70,9 @@ Differences in punishment sensitivity were not simply due to differences in over
 
 Clusters also differed in how they responded to the CSs. The sensitive cluster reduced responding during the CSs significantly more than the insensitive cluster (F(1,132) = 7.221, p=0.008) (Figure 2E). This did not significantly interact with CS type but there was a trend to such (Cluster*CS: F(1,132) = 3.649, p=0.058); further analysis revealed both clusters exhibited greater suppression to CS+ than CS- (Sensitive: t(41) = −2.738, p=0.009; Insensitive: t(91) = −2.835, p=0.006). There was, however, a significant interaction between CS type and cluster for active avoidance (F(1,128) = 6.788, p=0.010, Figure 2F); the sensitive cluster showed significant discrimination in shield use (t(37) = 3.499, p=0.001) whereas the insensitive cluster did not (t(91) = 1.426, p=0.157). This was despite overall shield use being similar between clusters (F(1,128) = 0.276, p=0.601). So, there was strong evidence for cluster differences in discriminative active avoidance and less so for conditioned suppression.
 
-## Valuation and contingency awareness
+### Valuation and contingency awareness
 
-## Outcome valuation
+#### Outcome valuation
 
 The question of interest is what underpins these individual differences in sensitivity to punishment? First, we asked whether the sensitive and insensitive clusters differentially valued reward or punishment (Figure 3A). Based on post-block self-report ratings, participants generally liked rewards and disliked attacks. However, in direct contrast to predictions from a reward sensitivity account, the punishment insensitive cluster valued rewards slightly less than the sensitive cluster (F(1,133) = 4.272, p=0.041). Moreover, in contrast to the predictions from an aversion insensitivity explanation, the clusters did not differ in their valuation of point loss (Cluster: F(1,133) = 0.044, p=0.834; Cluster*Block: F(1,133) = 0.497, p=0.482). So, there was no evidence that differences in punishment sensitivity were due to differences in reward or aversive valuation.
 
@@ -74,7 +80,7 @@ The question of interest is what underpins these individual differences in sensi
 
 **Figure 3.:** (A) Valuation of point outcomes (reward, attack) by cluster across pre-punishment (Pre) and punishment blocks (1–3). Rewards were more highly rated by the sensitive cluster. Both clusters equally disliked attacks. (B) Valuation of CS+ and CS- by cluster across punishment blocks. CS+ was valued less than CS-; clusters only differed in their valuation of CS-. (C) Pavlovian CS→Attack inferences by cluster across punishment blocks. Attacks were attributed to CS+ over CS-; clusters only differed in attack attributions following first block of punishment. Sen = sensitive cluster; Ins = insensitive cluster * [black] p<0.05 CS main effect; * [red] p<0.05 cluster*CS interaction.
 
-## Pavlovian valuation and contingency awareness
+### Pavlovian valuation and contingency awareness
 
 We then asked whether the sensitive and insensitive clusters differed in their self-reported valuation and contingency knowledge of the Pavlovian stimuli (Figure 3B). Participants valued the CS+ less than the CS- (CS: F(1,133) = 253.57, p<0.001), with this difference increasing across blocks (CS*Block: F(1,133) = 91.48, p<0.001). Clusters differed in their valuation of the CS+ vs. CS- (CS*Cluster: F(1,133) = 10.41, p=0.002), although this did not interact with block (CS*Cluster*Block: F(1,133) = 1.467, p=0.228). Follow-up analysis showed that this was due specifically to cluster differences in CS- (F(1,133) = 4.727, p=0.031) but not CS+ valuation (F(1,133) = 2.042, p=0.155).
 
@@ -82,21 +88,29 @@ Correspondingly, participants were readily able to correctly attribute attacks t
 
 So, both groups rapidly acquired accurate knowledge about the Pavlovian contingencies. Although punishment sensitive individuals were marginally faster at discriminating attack signalling between the CS+ and CS-, these differences were largely due to differences in the CS- not CS+, and disappeared over blocks. Both clusters showed similarly strong dislike of, and appropriate attack attribution to, the CS+. Thus, insensitive individuals were not greatly impaired in Pavlovian aversive learning, showing intact, stimulus-specific Pavlovian learning about the environmental antecedents of the aversive outcome.
 
-## Instrumental valuation and contingency awareness
+### Instrumental valuation and contingency awareness
 
 We next asked whether the sensitive and insensitive clusters differed in their self-reported valuation and knowledge of the instrumental contingencies. They did. In contrast to the Pavlovian contingencies, but in accordance with their relative profiles of behaviour, sensitive and insensitive clusters differed profoundly in the values they ascribed to their behavioural options. Although both clusters valued the unpunished R2 more than the punished R1, this difference in action value was much greater for the sensitive than insensitive individuals (Response*Cluster: F(1,133) = 42.90, p<0.001, Figure 4A). Moreover, this difference in action values increased across blocks (Response*Cluster*Block: F(1,133) = 65.80, p<0.001).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69594/elife-69594-fig4-v1.jpg)
+
+**Figure 4.:** (A) Mean ± SEM valuation of planets (R1, R2) by cluster across pre-punishment (Pre) and punishment blocks (1–3). Unpunished R2 was gradually valued more than punished R1, particularly by sensitive cluster. (B) Mean ± SEM instrumental Response→Reward inferences by cluster. Rewards were spuriously attributed to R2 more than R1; this did not interact with cluster. (C) Mean ± SEM instrumental Response→Attack inferences. Attacks were attributed to R1 over R2, particularly by sensitive cluster. (D) Mean ± SEM instrumental Response→CS inferences (Left panel: sensitive cluster; Right panel: insensitive cluster) according to correct (R1→CS+, R2→CS-) vs. incorrect (R1→CS-, R2→CS+) inferences. Clusters attributed CSs to their respective responses, particularly by sensitive cluster. (E) Putative causal model acquired by clusters across punishment phase. Sensitive individuals acquired accurate Response→CS and CS→Attack contingency knowledge. Insensitive individuals acquired accurate CS→Attack knowledge, but failed to acquire accurate Response→CS knowledge. (F) Mean ± SEM direct, self-reported Response→Attack inferences vs. estimate computed from hierarchical Response→CS→Attack inferences per response (R1, R2), cluster (Sen, Ins) and punishment block (1–3). Black dotted line represents perfect correspondence between direct and hierarchical inferences. (G) Direct, self-reported Response→Attack inferences vs. estimate computed from hierarchical Response→CS→Attack inferences per subject (averaged across punishment). Black dotted line represents perfect correspondence between direct and hierarchical inferences. Dashed line represents lines of best fit for sensitive cluster (per response); dotted-dashed line represents line of best fit line for insensitive cluster (per response). Sen = sensitive cluster; Ins = insensitive cluster * [black] p<0.05 response main effect; * [red] p<0.05 cluster*response interaction.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69594/elife-69594-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Mean ± SEM direct Response→Attack inferences vs. estimate computed from hierarchical Response→CS+→Attack inferences per response (R1, R2), cluster (Sen, Ins) and punishment block (1–3). Black dotted line represents perfect correspondence between direct and hierarchical inferences; slight underprediction is observed without accounting for CS- contingencies. (B) Mean ± SEM direct Response→Attack inferences vs. estimate computed from hierarchical Response→CS-→Attack inferences per response (R1, R2), cluster (Sen, Ins) and punishment block (1–3). Black dotted line represents perfect correspondence between direct and hierarchical inferences; substantial underprediction is observed without accounting for CS+ contingencies.
 
 Interestingly, participants acquired subtle yet spurious beliefs about differences in reward probability between responses, estimating a higher reward likelihood for responses on the unpunished planet (Response*Block: F(1,133) = 15.27, p<0.001, Figure 4B). However, the two clusters did not significantly differ on this (Response*Block*Cluster: F(1,133) = 3.676, p=0.057), indicating that differential reward attribution was not an obvious source of cluster differences in action valuation or behaviour. The two clusters did differ on how they attributed point loss (Figure 4C). Although both clusters correctly attributed loss to R2 over R1, this instrumental contingency knowledge was considerably greater in sensitive than insensitive individuals (Response*Cluster: F(1,133) = 94.735, p<0.001), and this difference increased across blocks (Response*Cluster*Block: F(1,133) = 23.519, p<0.001).
 
 Response-dependent presentations of the CS+ preceded the attack punisher in this task. We examined Response→CS contingency awareness (Figure 4D). Correct inferences (R1→CS+, R2→CS-) and incorrect inferences (R1→CS-, R2→CS+) were assessed. Overall, participants were generally able to learn correct over incorrect associations (Inference: F(1,133) = 129.18, p<0.001), with this discrimination increasing across blocks (Inference*Block: F(1,133) = 54.902, p<0.001), independently of the response (Response: F(1,133) = 0.657, p=0.419). Critically, the insensitive cluster was considerably worse at learning this discrimination (Inference*Block*Cluster: F(1,133) = 27.913, p<0.001), but did not differ in their likelihood to ascribe CSs to responses generally (Cluster: F(1,133) = 0.476, p=0.491). Follow-up analysis revealed that punishment insensitive individuals were less likely to correctly ascribe CSs to their respective responses compared to punishment sensitive individuals (Cluster: F(1,133) = 13.770, p<0.001), while being more likely to ascribe the wrong CS to each response (Cluster: F(1,133) = 21.112, p<0.001).
 
-## Hierarchical conditioned punishment inferences
+### Hierarchical conditioned punishment inferences
 
 Both sensitive and insensitive individuals accurately ascribed attacks to CS+, and not CS-. Sensitive individuals also appropriately ascribed CSs to their respective responses, thereby allowing specific ascription of attacks to R1. By contrast, insensitive individuals did not learn the Response→CS contingencies, explaining their poorly discriminated Response→Attack inferences. We determined whether these response and stimulus inferences could be aggregated to map the putative causal models acquired by participants in the task (Figure 4E).
 
 To determine whether Response→Attack inferences were mediated by a chain of Response→CS→Attack associations, we computed Response→Attack predictions based on the putative mediating inferences (Response→CS and CS→Attack) and compared these with self-reported, direct Response→Attack inferences (Figure 4F–G). Across blocks, there was a near one-to-one relationship between direct Response→Attack inferences and those predicted by self-reported mediating inferences for both clusters (Figure 4F). This relationship held not only for the Sensitive cluster, which differentiated clearly between R1 and R2, but also for the Insensitive cluster, which largely failed to differentiate between R1 and R2. Response→Attack inferences were effectively predicted via the products of separate Response→CS and CS→Attack inferences (Figure 4B) for both R1 (Sensitive: F(1,41) = 35.26, p<0.001, r2 = 0.462; Insensitive: F(1,90) = 53.46, p<0.001, r2 = 0.373) and R2 (Sensitive: F(1,41) = 123.5, p<0.001, r2 = 0.751; Insensitive: F(1,90) = 81.6, p<0.001, r2 = 0.476) (Figure 4G). In line with attacks being attributed to CS+ by both clusters (Figure 3C), Response→Attack inferences were primarily dependent on Response→CS+→Attack inferences ([first entry in stepwise model] R1: F(1,133) = 75.717, p<0.001, r2 = 0.363; R2: F(1,133) = 103.966, p<0.001, r2 = 0.435), although Response→CS-→Attack also made contributions ([second entry in stepwise model] R1: F(1,132) = +17.483, p<0.001, r2 = +0.075; R2: F(1,132) = +50.449, p<0.001, r2 = +0.155). Critically, omitting either Response→CS+→Attack or Response→CS-→Attack (particularly CS+) caused a general underprediction of direct Response→Attack inferences (Figure 4—figure supplement 1). This suggests both punishment sensitive and insensitive clusters encoded a causal model of the task. Punishment insensitive individuals failed to avoid punishment, not because they could not form or use such models, but instead because they failed to acquire the correct model.
 
-## Relationships between task behaviour and self-report measures
+### Relationships between task behaviour and self-report measures
 
 While these findings highlight a likely source of punishment insensitivity in this task, they do not directly link participant behaviour with self-reported valuations and contingency awareness. It is possible that self-report is not an accurate index of the internal representations of value or contingency knowledge that determines behaviour in the task. To address this possibility, we summarised relationships between behaviour, and self-reported valuation and contingency awareness using principal components analysis to assess the underlying correspondences in the data (Figure 5).
 
@@ -110,7 +124,7 @@ Stepwise linear regression quantified this alignment between behaviour and infer
 
 When comparing Pavlovian behaviour with self-reported valuations and contingency knowledge, three components were sufficient to account for behavioural responses and self-reported valuations and contingency knowledge (69.8% of overall variance; Figure 5B). There was strong alignment between CS+:CS- valuation, attack inferences, and active avoidance behaviour (shield use; component 1). That is, the stronger the attribution of attacks to CS+ over CS-, the stronger the bias in value against CS+ and the greater the shield use for CS+ over CS-. This component also predicted higher overall shield use. Surprisingly, neither overall nor discriminated conditioned suppression co-loaded with awareness measures (components 2 and 3). This suggests that Pavlovian contingency awareness more readily predicts instrumental active avoidance than Pavlovian suppression. Indeed, bias in CS→Attack inferences predicted bias in CS+:CS- shield use (F(1,124) = 10.783, p=0.001, r2 = 0.080) but not CS+:CS- suppression.
 
-## Trait measures fail to predict punishment sensitivity
+### Trait measures fail to predict punishment sensitivity
 
 To assess the role that trait characteristics, including behavioural inhibition, aversion sensitivity, impulsivity, and/or reward sensitivity, may play in punishment sensitivity, participants were administered a battery of brief self-report questionnaires at the end of the experiment. This battery included scales for state depression and anxiety (DASS-21) (Lovibond and Lovibond, 1995), impulsivity (New Brief BIS-11) (Morean et al., 2014), valenced locus of control (Attribution of Responsibility) (Brewin and Shapiro, 1984), behavioural inhibition/activation (New Brief BIS/BAS) (Morean et al., 2014), and Big five personality traits (Mini-IPIP) (Donnellan et al., 2006). Punishment sensitive and insensitive clusters did not significantly differ on any questionnaire subscale (all F(1,133) ≤ 1.794, p≥0.183), and entry of these subscales into a logistic regression model did not account for cluster membership (Nagelkerke r2 = 0.089).
 
@@ -134,35 +148,35 @@ In summary, using a novel conditioned punishment task, we showed that punishment
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Two-hundred and forty-five psychology students from University of New South Wales (UNSW; n = 161 [118 female, 1 other]) and Western Sydney University (WSU; n = 84 [74 female]) were recruited in exchange for partial course credit. The experiment was approved UNSW Human Research Ethics Advisory Panel C (HREAP-C #3385) and WSU Human Research Ethics Committee (HREC #H12809).
 
 Two criteria were used to exclude participants not appropriately engaging in the study: participants were expected to take between 1 and 30 s to answer each question in post-task checks (averaged per check screen), and participants had to correctly answer two catch questions embedded within questionnaires at the end of the study. A total of 135 participants met both criteria (UNSW n = 96 [76 female, 1 other]; WSU n = 39 [31 female]) and were included in further analyses.
 
-## Apparatus and stimuli
+### Apparatus and stimuli
 
 The experiment was programmed using the jsPsych library (de Leeuw, 2015) and conducted online via the SONA platform. The experiment was programmed to apply fullscreen mode to the browser window. The experiment code and stimuli can be found at https://github.com/jessica-c-lee/planets-task/ (Lee, 2021 copy archived at swh:1:rev:8e791318e4b22729c8d3e15b61a6f0d17fb7fd68) and https://osf.io/ykun2/. The experiment instructions, questionnaires, and screenshots of the task interface and check screens can be found in the Supplementary information.
 
-## Game interface
+### Game interface
 
 During game blocks, participants had mouse control of a custom pointer that turned dark when clicking (visual feedback). Two planets (orange, blue [left/right counterbalanced]) were continuously displayed centre-left and centre-right of the screen (Figure 1). The identity of the punished and unpunished planets (left/right) was randomised. A green ring appeared around a planet whenever the mouse pointer hovered over it (visual feedback). Trade signal (reward countdown) was displayed directly beneath each planet, while reward outcomes were displayed directly above each planet. Accumulated points were continuously displayed top-centre of the screen. ‘Incoming ship’ icons (Type I [turquoise], Type II [purple]; Figure 1) were presented in the upper-middle part of the screen. A countdown timer to ship ‘encounter’ was co-presented immediately below the ship icon. Ship outcomes (attack, attack deflected, nothing) were presented centre-screen, below the encounter countdown. The shield indicator/button was displayed in the lower-middle part of the screen.
 
-## Post-block check screens
+### Post-block check screens
 
 For value ratings, icon and descriptor for task elements (planets, ships, outcomes) were each displayed over a slider (0–100). For causal inferences, each antecedent (R1, R2, Ship I, Ship II) received a check screen. The antecedent icon was displayed at the top of the screen, and icons for potential consequences (e.g., ships, outcomes) were displayed over two sliders each (inference [% likelihood], confidence; both 0–100).
 
-## Procedure
+### Procedure
 
 At the beginning of the experiment, participants were told that they would be playing a game over several blocks and that their goal was to gain as many points as possible. They were told they could earn points by ‘trading’ with planets by clicking on them. Following these instructions, they were given a brief multiple-choice comprehension test. Participants had to answer all questions correctly to continue, or else they were returned to the instructions.
 
-## Pre-punishment phase
+### Pre-punishment phase
 
 Pre-punishment phase consisted of two blocks followed by post-block checks. Each game block lasted 3 min (after which ‘trading’ was suspended, but any remaining cues/outcomes were presented to completion). Responses on either planet (R1 or R2 [left/right counterbalanced]) initiated a 2 s trading signal (countdown), which had a 50% probability of resulting in signalled reward (‘Success!+100’) or non-reward. R1 and R2 countdowns/rewards were independent of each other, such that both planets could be on countdown. Point gain was maximised by continuous, alternating clicking on both planets, maintaining each on countdown to reward as much as possible.
 
 After each block, value and inference checks were conducted. For value checks, participants were asked on a single screen how they felt about reward and planets (0–100 sliders [Very negative – Neutral – Very positive]). For inference checks they were asked to estimate how often interacting with a planet (one screen per planet) would lead to reward (0–100 sliders [Never (0%) – Sometimes – Every time (100%)]) and how confident they were about this estimate (0–100 sliders [Very uncertain – Somewhat uncertain – Somewhat confident – Very confident]). On each check screen, participants had unlimited time to make their responses and could click on a ‘Continue’ button at the bottom of the screen once they had made their ratings. The default slider position was set to 50 (the midpoint of the scale) for all check screens.
 
-## Punishment phase
+### Punishment phase
 
 After pre-punishment, participants were given additional instructions warning of local pirates stealing from traders. Participants were informed that their ship has a shield they can activate to prevent theft, but that it will not always be available. They are also reminded the goal is to have as many points as possible. No information about the contingencies between responding and ships, or ships and their outcomes, was provided.
 
@@ -172,15 +186,15 @@ At CS onset, a shield charging icon appeared; after 3 s the icon either informed
 
 Following each punishment block, value and inference checks were again conducted. For value checks, participants were asked how they felt about reward, planets, ships, and attack (set order) on a single screen. For inference checks they were asked to estimate how often interacting with each planet (one screen each) would lead to reward, Ship Type I, Ship Type II, and attack (set order), and how often Ship Type I and Ship Type II (one screen each) led to attack.
 
-## Questionnaires
+### Questionnaires
 
 At the end of the experiment, participants were administered a battery of self-report measures. These included measures for state depression and anxiety (DASS-21 subscales) (Lovibond and Lovibond, 1995), impulsivity (New Brief BIS-11) (Morean et al., 2014), valenced locus of control (Attribution of Responsibility) (Brewin and Shapiro, 1984), behavioural inhibition/activation scales (New Brief BIS/BAS) (Morean et al., 2014), and Big five personality (Mini-IPIP) (Donnellan et al., 2006). Each questionnaire was administered on one screen each (set order). Two catch questions were embedded within Attribution of Responsibility (‘Select the left-most option, strongly disagree, for this question’) and New Brief BIS/BAS (‘Select three, very true for me, for this question’) questionnaires.
 
-## Data analysis
+### Data analysis
 
 Data was extracted and processed in MATLAB using custom scripts (available at https://github.com/philjrdb/HCP [Jean-Richard-dit-Bressel, 2021; copy archived at swh:1:rev:6df52a9f08fe8150b87b53f004c461ea768bd60f] and https://osf.io/ykun2/), and then imported into SPSS 26 for analysis. Participants that did not meet engagement criteria (1–30 s response times for post-block checks, correct catch questions) were excluded from all subsequent analyses (see Participants, Questionnaires). Given there were no programmed or observed differences between pre-punishment (Pre) blocks, data from these blocks were collapsed for sake of further analysis.
 
-## Task behaviour
+### Task behaviour
 
 Participant behaviour during the ‘Planets and Pirates’ task was assessed via clicking on punished and unpunished planets (R1 and R2, respectively), as well as the shield button. Differences in behaviour were analysed using contrasts (see Contrast analysis subsection below).
 
@@ -188,21 +202,21 @@ Instrumental behaviour was assessed using click rates (clicks/min) during non-CS
 
 Pavlovian behaviour was assessed using suppression ratios (Pavlovian suppression) and shield use (active avoidance) during ships (CSs). Due to the relative scarcity of CSs and available shields per block, measures were calculated using data aggregated across punishment phase blocks. Suppression ratios per CS were calculated using overall planet click rates during unshielded portions of a CS relative to ITI rates: (overall CS [unshielded] rate/overall ITI rate). These scores range from 0 to 1, with 0.5 indicating equal rates of planet clicking during a CS relative to ITI (no suppression), 0 indicating complete suppression of planet clicking during a CS, and scores above 0.5 indicating an increase in planet clicking during a CS relative to ITI. Shield use per CS was calculated as percentage of available shields taken: (number of shield activations/shields available)*100.
 
-## Self-reported valuation and contingency awareness
+### Self-reported valuation and contingency awareness
 
 Valuation of outcomes, planets, and CSs, as well as contingency inferences between these, were assessed via self-report at the end of each block (see Procedure subsection above). Raw value ratings and inferences (% likelihood rating), each ranging from 0 to 100, were analysed using orthogonal contrasts (see Contrast analysis subsection below).
 
-## Contrast analysis
+### Contrast analysis
 
 Behaviour and self-report data across blocks were analysed using within-subject and mixed between- × within-subject ANOVAs (orthogonal contrasts). Where applicable, within-subject contrasts were block (linear), response (R1 vs. R2), CS (CS+ vs. CS-), inference (correct vs. incorrect R→CS). Where applicable, cluster was used as a between-subject contrast (sensitive vs. insensitive). Follow-up analysis of cluster differences were analysed using one-way ANOVA.
 
 Significant preference/suppression ratios were determined using one-sample t-tests against the null value of 0.5.
 
-## Clustering
+### Clustering
 
 K-means clustering was used to identify clusters of punishment sensitivity using final block preference ratio as input. Silhouette values were obtained for two to four clusters. The two-cluster solution (punishment sensitive vs. insensitive) was optimal, producing the highest mean silhouette value [0.740] and (unanimously positive silhouette values [minimum = 0.04]).
 
-## Hierarchical/chain inferences
+### Hierarchical/chain inferences
 
 To assess the relationship between direct, self-reported Response→Attack inferences and hierarchical Response→CS→Attack inferences, ‘chained’ attack probability estimates were calculated using self-reported Response→CS and CS→Attack inferences. CS-specific R1→Attack chain estimates were:
 
@@ -210,7 +224,7 @@ The overall R1→Attack chain estimate was a summation of R1→CS→Attack chain
 
 The same was done for R2→Attack chain estimates. Chain estimates were calculated per block (Figure 4F) and across punishment phase (Figure 4G). Linear regression was used to compare Response→Attack chain estimates (CS-specific and overall) against direct Response→Attack inferences.
 
-## Principal component analysis
+### Principal component analysis
 
 Relationships between behaviour, valuation, and causal inferences were summarised via principal component analysis. Number of components was determined as that needed to extract at least 50% of each item’s variance. Components were varimax rotated to improve interpretability.
 
@@ -218,7 +232,7 @@ For instrumental contingencies, items were overall ITI response rates, preferenc
 
 For Pavlovian contingencies, items were overall shield use %, CS+:CS- shield-use ratio (CS shield-use bias), overall CS suppression, CS+:CS- suppression ratio (CS suppression bias), CS+:CS- value ratio (CS valuation bias), CS+:CS-→Attack ratio (CS→Attack inference bias) across punishment phase.
 
-## Stepwise and logistic linear regression
+### Stepwise and logistic linear regression
 
 Stepwise linear regression (p-to-enter ≤ 0.05, p-to-remove ≥ 0.1) was used to determine which outcome-related inferences were significant predictors of behaviour. For instrumental behaviour, the dependent variable was average preference ratio across punishment phase, with R1:R2→Reward ratio and R1:R2→Attack ratio (across punishment phase) as predictors. For Pavlovian behaviour, separate regressions were run for CS+:CS- suppression ratio and CS+:CS- shield use, with CS+:CS-→Attack ratio as predictor.
 

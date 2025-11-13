@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.29914.001 Mutations in the human BEST1 gene lead to retinal degenerative diseases displaying progressive vision loss and even blindness. BESTROPHIN1, encoded by BEST1 , is predominantly expressed in retinal pigment epithelium (RPE), but its physiological role has been a mystery for the last two decades. Using a patient-specific iPSC-based disease model and interdisciplinary approaches, we comprehensively analyzed two distinct BEST1 patient mutations, and discovered mechanistic correlations between patient clinical phenotypes, electrophysiology in their RPEs, and the structure and function of BESTROPHIN1 mutant channels. Our results revealed that the disease-causing mechanism of BEST1 mutations is centered on the indispensable role of BESTROPHIN1 in mediating the long speculated Ca 2+ -dependent Cl - current in RPE, and demonstrate that the pathological potential of BEST1 mutations can be evaluated and predicted with our iPSC-based ‘disease-in-a-dish’ approach. Moreover, we demonstrated that patient RPE is rescuable with viral gene supplementation, providing a proof-of-concept for curing BEST1 -associated diseases.
+Mutations in the human BEST1 gene lead to retinal degenerative diseases displaying progressive vision loss and even blindness. BESTROPHIN1, encoded by BEST1, is predominantly expressed in retinal pigment epithelium (RPE), but its physiological role has been a mystery for the last two decades. Using a patient-specific iPSC-based disease model and interdisciplinary approaches, we comprehensively analyzed two distinct BEST1 patient mutations, and discovered mechanistic correlations between patient clinical phenotypes, electrophysiology in their RPEs, and the structure and function of BESTROPHIN1 mutant channels. Our results revealed that the disease-causing mechanism of BEST1 mutations is centered on the indispensable role of BESTROPHIN1 in mediating the long speculated Ca2+-dependent Cl- current in RPE, and demonstrate that the pathological potential of BEST1 mutations can be evaluated and predicted with our iPSC-based ‘disease-in-a-dish’ approach. Moreover, we demonstrated that patient RPE is rescuable with viral gene supplementation, providing a proof-of-concept for curing BEST1-associated diseases.
 
 ## Introduction
 
@@ -36,19 +36,43 @@ Overall, the physiological role of BEST1 in human RPE and the pathological mecha
 
 ## Results
 
-## Direct recording of Ca2+-dependent Cl- current by whole-cell patch clamp in human RPEs
+### Direct recording of Ca2+-dependent Cl- current by whole-cell patch clamp in human RPEs
 
 Reduced LP is a pathognomonic phenotype associated with BEST1 mutations in bestrophinopathy patients (Boon et al., 2009; Marmorstein et al., 2009). Although LP is believed to be mediated by surface Ca2+-dependent Cl- current in RPE, the existence of the current on the plasma membrane of RPE cells has not been directly demonstrated, let alone the putative physiological role of BEST1 as a contributor to the current. To address these deficits, we generated iPSC-RPEs from the skin fibroblasts of two BEST1 WT donors (Figure 1—figure supplement 1A,B). We first examined the subcellular localization of BEST1 by fluorescent co-immunostaining of the channel together with a plasma membrane marker (zonula occludens-1, ZO-1) and a nucleus marker (Hoechst) followed by confocal microscopy. We found that BEST1 localized on the plasma membrane of iPSC-RPE (Figure 1A, and Figure 1—figure supplement 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig1-v1.jpg)
+
+**Figure 1.:** (A) Confocal images showing plasma membrane localization of BEST1. Scale bar, 10 μm. (B) Representative current traces recorded from a BEST1 WT donor iPSC-RPEs at various free [Ca2+]i. Voltage protocol used to elicit currents is shown in Insert. Scale bar, 1 nA, 150 ms. (C) Population steady-state current-voltage relationships at different free [Ca2+]i; n = 5–6 for each point. The plot was fitted to the Hill equation. (D) Ca2+-dependent activation of surface current. Steady-state current density recorded at +100 mV plotted vs. free [Ca2+]i; n = 5–6 for each point. See also Figure 1—figure supplements 1 and Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Phase picture of established WT iPSC line before differentiation. Scale bar, 400 μm. (B) Immunocytofluorescence images of pluripotency markers in established iPSC. Scale bar, 200 μm. (C) Confocal images showing plasma membrane localization of BEST1. Scale bar, 10 μm. (D) Comparison of current amplitudes in iPSC-RPEs from two BEST1 WT donors. Bar chart showing the steady-state current amplitudes at 0 [Ca2+]i, 1.2 μM [Ca2+]i, and 1.2 μM [Ca2+]i + 100 μM NFA in RPEs from two distinct BEST1 WT human donors; n = 5–6. ∗$p<0.05 compared to current amplitudes at 1.2 μM [Ca2+]i from donor #1 and #2, respectively, using two-tailed unpaired Student t test.
 
 We examined the Ca2+-dependent Cl- current amplitudes on the plasma membrane of RPE using whole-cell patch clamp across a range of free [Ca2+]i (Figure 1B–D, and Figure 1—figure supplement 1D). Currents were tiny (< 5 pA/pF) when [Ca2+]i was 0 (Figure 1B,C), and increased in amplitude as [Ca2+]i was raised from 100 nM to 4.2 μM, peaking at 358 ± 15 pA/pF at 1.2 and 4.2 μM [Ca2+]i (Figure 1B–D, Figure 1—figure supplement 1D, and Figure 1—source data 1). The measured currents were inhibited by the Cl- channel blocker niflumic acid (NFA) (Figure 1—figure supplement 1D), demonstrating that these were indeed Ca2+-dependent Cl- currents. A plot of peak current (evoked with a +100 mV step pulse) as a function of [Ca2+]i displayed robust Ca2+-dependent activation with the half maximal effective concentration (EC50) of Ca2+ at 455 nM. Similar Ca2+-dependent Cl- current profiles were recorded in iPSC-RPEs derived from two independent BEST1 WT donors, and in iPSC-RPEs from two distinct clonal iPSCs of the same donor (Figure 1—figure supplement 1, and Figure 1—source data 1). These results provide the first direct measurement of Ca2+-dependent Cl- currents on the plasma membrane of RPE.
 
 To test if the status of BEST1 and the properties of surface Ca2+-dependent Cl- current in iPSC-RPE represent those in real RPE, we conducted the same set of experiments in fetal human RPE (fhRPE). Consistent with the results from iPSC-RPEs, BEST1 was plasma membrane enriched (Figure 2A), and a similar pattern of Ca2+-dependent Cl- currents was recorded in fhRPEs from two independent fetuses (Figure 2B–E). Interestingly, despite their comparable initial and peak amplitudes, the Ca2+-dependent Cl- current in fhRPEs displayed a lower Ca2+ sensitivity compared to that in iPSC-RPEs (EC50 1.7 μM vs. 455 nM, Figure 2D), which may reflect the different requirement of LP generation in RPE during different developmental stages. Overall, the subcellular localization of BEST1 and the properties of Ca2+-dependent Cl- current in iPSC-RPE resemble those in fhRPE, validating iPSC-RPE as a powerful platform to study the influence of BEST1 mutations on RPE surface Ca2+-dependent Cl- currents.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig2-v1.jpg)
+
+**Figure 2.:** (A) Confocal images showing plasma membrane localization of BEST1. Scale bar, 10 μm. (B) Representative current traces recorded from a BEST1 WT fhRPEs at various free [Ca2+]i. Scale bar, 1 nA, 150 ms. (C) Population steady-state current-voltage relationships at different free [Ca2+]i; n = 5–6 for each point. (D) Ca2+-dependent activation of surface currents in fhRPE (●) and iPSC-RPE (●). Steady-state current density recorded at +100 mV plotted vs. free [Ca2+]i; n = 5–6 for each point. The plots were fitted to the Hill equation. (E) Bar chart showing the steady-state current amplitudes at 0 and 18 μM free [Ca2+]i in RPEs from two distinct human fetuses; n = 5–6. ∗$p<0.05 compared to fetus #1 (0.02) and #2 (0.02), respectively, at 18 μM [Ca2+]i using two-tailed unpaired Student t test. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative current traces recorded from fhRPEs at 18 μM [Ca2+]i. Scale bar, 1 nA, 150 ms. (B) Time-dependent activation of surface Cl- current amplitudes when [Ca2+]i is 18 μM. (C) Bar chart showing different time-dependent activation under different [Ca2+]i; n = 5–6 for each bar. *p<0.05 compared to 1 min at 18 μM [Ca2+]i using two-tailed unpaired Student t test.
+
 It is worth to note that during patch clamp recording with fhRPE, when the pipet solution contained high (18 μM) [Ca2+]i, the currents ran up after patch break with a half-time of ~2.5 min and reached a plateau that was on average 7.8-fold greater than the initial current (Figure 2—figure supplement 1A–C). In contrast, when the pipet solution contained low (0.6 μM) [Ca2+]i, the currents remained stable after patch break (Figure 2—figure supplement 1C).
 
-## Clinical phenotypes of two ARB patients with distinct BEST1 mutations
+### Clinical phenotypes of two ARB patients with distinct BEST1 mutations
 
 Unlike the other bestrophinopathies caused by autosomal dominant mutations in BEST1, ARB is associated with recessive mutations. Patients with ARB are characterized by progressive generalized rod-cone degenerations, typically with a visual acuity reading around 20/40 in the first decade of life, and their vision progressively worsens over time (Burgess et al., 2008; Johnson et al., 2017). In this study, we focused on two diagnosed ARB patients from independent families. Both patients exhibit typical ARB phenotypes in fundus autofluorescence imaging, spectral domain optical coherence tomography (SDOCT) and full-field electroretinography (ERG) (Figure 3A–C). Unlike EOG which mainly represents the electrical responses of RPE (Figure 3—figure supplement 1), ERG measures the overall activity of various cell types in the retina.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig3-v1.jpg)
+
+**Figure 3.:** (A) Color fundus photographs from patient 1 (P274R) and patient 2 (I201T), right and left eyes, respectively. Both of the patients’ fundus show bilateral, confluent curvilinear subretinal yellowish vitelliform deposits (red arrow) superior to the optic disks and encircling the maculae. (B) SDOCTs of the macula in patient 1 and patient 2. Scale bar, 200 μm. In Patient 1, there are bilateral, multifocal serous retinal detachments involving the maculae and cystoid deposits in the macula (red arrow). Patient 2 presents a relative preservation of the retina change compared to patient 1. (C) ERGs of patient 1 and patient 2 (red lines), right and left eyes, respectively, show extinguished maximum response amplitudes between a- and b-waves, compared to those from age matched BEST1 WT controls (black lines). See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The EOG of BEST1 I201T patient (red) was compared to that of a similarly aged BEST1 WT person (black). Scale bar, 2 μV/deg, 5 min.
 
 Patient 1, a 12-year-old otherwise healthy boy, who has a previously described homozygous c.821C > G; p.P274R mutation in BEST1 (Fung et al., 2015; Kinnick et al., 2011), showed reduced visual acuities at 20/60 and 20/70 in the right and left eye, respectively. Color fundus showed bilateral, confluent curvilinear subretinal yellowish vitelliform deposits to the optic disks, which over 3 years of follow-up became more multifocal and dispersed to involve the nasal retinae (Figure 3A, left). SDOCT discovered bilateral, multifocal serous retinal detachments involving the maculae and cystoid changes in the macula (Figure 3B, left). Maximum response of ERG b-wave (amplitudes between a- and b-wave) were 132.6 μV and 194.4 μV in the right and left eye, respectively, contrasting 355 μV (median value) in healthy teenagers tested in the same device (Figure 3C, left).
 
@@ -56,9 +80,17 @@ Patient 2, a 72-year-old otherwise healthy man, who has a homozygous c.602T > 
 
 In summary, even though ARB has progressed for 60 years longer, patient 2 has better vision acuity (in his more relevant right eye), less vitelliform deposit, milder cystic degeneration, and better responses to visual stimuli, suggesting that the I201T mutation is less severe than the P274R mutation.
 
-## Physiological impact of BEST1 disease-causing mutations
+### Physiological impact of BEST1 disease-causing mutations
 
 If the recorded Ca2+-dependent Cl- current is responsible for LP, it is logically speculated to be impaired in BEST1 patient iPSC-RPEs, because reduced LP is a clinical feature in BEST1 patients. To directly examine the physiological impact of BEST1 mutations on Ca2+-dependent Cl- current in RPE, iPSCs were derived from the patients’ skin cells and then differentiated to iPSC-RPEs. RPE-specific marker proteins RPE65 (retinal pigment epithelium-specific 65 kDa protein) and CRALBP (cellular retinaldehyde-binding protein) displayed similar expression levels in the BEST1 WT and two patient-derived iPSC-RPEs by western blot (Figure 4A), confirming the mature status of iPSC-RPEs.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig4-v1.jpg)
+
+**Figure 4.:** (A) Western blots show similar BEST1 expression levels in WT and patient-derived iPSC-RPEs. Each sample was from one cell lysis (BEST1 and β-actin, RPE65 and CRALBP were on two gels, respectively). (B) Confocal images showing diminished plasma membrane localizations of BEST1 P274R, and normal plasma membrane localization of BEST1 I201T. Scale bar,15 μm. (C) Representative current traces recorded from patient iPSC-RPEs at 1.2 μM [Ca2+]i. Scale bar, 500 pA, 150 ms. (D) Population steady-state current-voltage relationships in BEST1 WT (●), P274R (▲) and I201T (▼) iPSC-RPEs at 1.2 μM [Ca2+]i; n = 5–6 for each point. ∗p<0.05 (2 × 10−7 for P274R and 6 × 10−4 for I201T) compared to WT using two-tailed unpaired Student t test. Insert, confocal images showing P274R iPSC-RPE in bright field. Scale bar,10 μm. (E) CaCC currents in BEST1 P274R patient iPSC-RPE were rescued by complementation with WT BEST1-GFP. Complementation (▲, n = 5–6 for each point), compared to BEST1 P274R (▲, n = 3–5 for each point), and WT (●). The plots were fitted to the Hill equation. Insert, confocal images showing P274R iPSC-RPE complemented with WT BEST1-GFP expressed from a BacMam baculoviral vector. Scale bar,10 μm. (F) Ca2+-dependent currents in BEST1 I201T iPSC-RPE (▼) compared to WT iPSC-RPE (●). Steady-state current density recorded at +100 mV plotted vs. free [Ca2+]i; n = 5–6 for each point. The plots were fitted to the Hill equation. See also Figure 4—figure supplement 1 and Figure 1—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) P274R patient iPSC-RPE were rescued by complementation with WT BEST1-GFP at 1.2 μM [Ca2+]i. (A) Representative current traces recorded from P274R patient iPSC-RPE over-expressing WT BEST1-GFP. Scale bar, 1 nA, 100 ms. (B) Population steady-state current-voltage relationships in BEST1-GFP complementation (▲), compared to BEST1 P274R (▲) and WT (●); n = 5–6 for each point. #p<0.05 compared to WT (2 × 10−7) or complementation (0.01) using one-way ANOVA and Bonferroni post hoc analyses. (C) Bar chart showing the steady-state current amplitudes at 1.2 μM [Ca2+]i and 1.2 μM [Ca2+]i +100μM NFA in P274R patient iPSC-RPE over-expressing BEST1-GFP; n = 5–6. ∗p<0.05 compared to current amplitudes at 1.2 μM [Ca2+]i, using two-tailed unpaired Student t test. (D) Normalized Ca2+-dependent currents in BEST1 I201T iPSC-RPE (▼) compared to WT iPSC-RPE (●). The plots were fitted to the Hill equation.
 
 Patient iPSC-RPE carrying the BEST1 P274R mutation showed a similar overall BEST1 expression level compared to that in WT iPSC-RPE (Figure 4A) in western blot, but exhibited diminished BEST1 antibody staining on the plasma membrane (Figure 4B, top), indicating that the subcellular localization of the channel was severely impaired by the P274R mutation. Strikingly, tiny currents (< 6 pA/pF) were detected in P274R patient iPSC-RPE at all tested [Ca2+]i by whole-cell patch clamp (Figure 4C-E p, and Figure 1—source data 1), indicating that the P274R mutation abolishes Ca2+-dependent Cl- current in RPE. Furthermore, both the membrane localization of BEST1 and the Ca2+-dependent Cl- current were rescued in P274R patient iPSC-RPE by complementation with WT BEST1-GFP expressed from a BacMam baculoviral vector (Figure 4E, and Figure 4—figure supplement 1A,B,C). These results demonstrated that functional BEST1 is necessary for generating Ca2+-dependent Cl- current in human RPE.
 
@@ -68,11 +100,31 @@ Taken together, our results showed that the P274R mutation leads to a ‘null’
 
 As BEST1 is a CaCC located on the plasma membrane of RPE, the next important question is whether the defective Ca2+-dependent Cl- current in BEST1 patient iPSC-RPEs truly reflects deficiency of the BEST1 channel activity. To directly examine the influence of the disease-causing mutations on BEST1, WT and mutant BEST1 channels were individually introduced into HEK293 cells, which do not have any endogenous CaCC on the plasma membrane (Figure 5—figure supplement 1A,B). Western blot confirmed that both WT and the mutant channels were expressed at similar levels after transient transfection (Figure 5—figure supplement 1C). As previously reported, HEK293 cells expressing WT BEST1 displayed robust Ca2+-dependent currents markedly inhibited by NFA (Figure 5—figure supplement 1B), indicating that they were Ca2+-dependent Cl- currents (Hartzell et al., 2008). Consistent with the results in iPSC-RPE, HEK293 cells expressing the P274R mutant yielded no current, while cells expressing the I201T mutant displayed significantly smaller current amplitude compared to that of WT at 1.2 μM [Ca2+]i, where HEK293 cells expressing WT BEST1 conduct peak current amplitude (Figure 5A,B) (Hartzell et al., 2008). As HEK293 cells represent a ‘blank’ background, the recorded Ca2+-dependent Cl- currents are genuinely generated from transiently transfected BEST1 channels. Therefore, the two disease-causing mutations lead to distinct defects of the BEST1 channel activity that match the defects of Ca2+-dependent Cl- current in iPSC-RPEs, strongly suggesting that BEST1 is the bona fide CaCC on the plasma membrane of RPE mediating Ca2+-dependent Cl- current for LP.
 
-## Disease-causing mechanisms of BEST1 mutations
+![Figure 5.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative current traces recorded from transfected HEK293 cells at 1.2 μM [Ca2+]i. Scale bar, 150 pA, 150 ms. (B) Population steady-state current-voltage relationships for BEST1 WT (●), P274R (▲) and I201T (▼) at 1.2 μM [Ca2+]i; n = 5–6 for each point. ∗#p<0.05 compared to WT (8 × 10−4 for P274R and 0.01 for I201T) or to I201T (0.04), respectively, using one-way ANOVA and Bonferroni post hoc analyses. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative current traces recorded from untransfected HEK293 cells at 1.2 μM [Ca2+]i. Scale bar, 150 pA, 150 ms. (B) Bar chart showing population steady-state current amplitudes at 100 mV; n = 5–6. ∗p<0.05 compared to current amplitudes at 1.2 μM [Ca2+]i in HEK293 cells transfected with BEST1 WT using two-tailed unpaired Student t test. (C) Western blot showing similar expression levels of transiently transfected BEST1 WT, P274R and I201T in HEK293 cells.
+
+### Disease-causing mechanisms of BEST1 mutations
 
 As an ion channel, how could BEST1 go wrong with the disease-causing mutations? Multiple mechanisms may exist, including massive disruption of the channel structure, alterations in single channel activity, and dysregulation of the channel (e.g. expression). We sought to find critical clues from the channel structure to answer this question.
 
 Since the structure of BEST1 has not been solved, we generated a three-dimensional human homology model based on our previously solved Klebsiella pneumoniae bestrophin (KpBest) structure and a chicken bestrophin1 (cBest1) structure (Kane Dickson et al., 2014; Moshfegh et al., 2016; Yang et al., 2014b) (Figure 6A, Figure 6—figure supplement 1A,B, and Figure 6—figure supplement 2). In this BEST1 model, P274 locates at the N-terminal of helix S4a (Figure 6A,B, Figure 6—figure supplement 1A,B, and Figure 6—figure supplement 2). The presence of Pro in alpha helices normally promotes thermostability of the membrane protein (Reiersen and Rees, 2001). The restricted torsion angle for the N–Cα bond of Pro allows only a limited number of conformations and imposes stress on secondary structures in proteins. Substitution of Pro with Arg will release the restrictions and induce instability of local structure, predicting a dramatic disruption of the channel. It should be noted that a Pro to Arg mutation based on the structure model would result in a steric clash between this amino acid and helix S3b, thereby highlighting the major contribution of Pro in the structure (Figure 6—figure supplement 1D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig6-v1.jpg)
+
+**Figure 6.:** (A) Left, ribbon diagram of the BEST1 pentamer with each protomer colored differently, as viewed from the side. Right, ribbon diagram of two oppositely facing (144°) protomers of a BEST1 pentamer are shown with the extracellular side on the top. The side chains of critical residues are in red. (B) Location of the patient mutations in relationship to the channel pore. Left, as viewed from the side; right, from inside the plasma membrane. (C) Visualization of the location of I201T. The side chains of critical residues are in red. See also Figure 6—figure supplements 1 and 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) 2D topology of a human BEST1 protomer, colored spectrally from blue at its N-terminal segment to red at its C-terminal segment. (B) Ribbon diagram of a human BEST1 protomer. Colored as in A. (C) Critical residues in hBest1 (BEST1), mBest2 (mouse bestrohpin2), dBest1 (Drosophila melanogaster bestrophin1) and cBest1 (chicken bestrophin1). Numbers showing the positions of residues in hBest1. (D) Visualization of P274 and the predicted steric clash by the P274R mutation. The side chains of critical residues are in red.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The KpBest structure has been used to restrict sequence gaps to inter-helical segments. Black background, identical residues in all three sequences; grey background, identical residues in two sequences. The secondary structures of KpBest and cBest1 are labeled above and underneath the sequences, respectively.
 
 On the other hand, I201 resides in a loop between S2h and S3a (Figure 6A,B, Figure 6—figure supplement 1A,B, and Figure 6—figure supplement 2), surrounded by hydrophobic residues V114, A195, L207, and L210 (Figure 6C), which are conserved among species and thus probably important for the channel function (Figure 6—figure supplement 1C). As the Ile to Thr substitution changes a hydrophobic residue to a polar residue, which weakens the hydrophobic interactions, this mutation may change the channel property by altering the local interplays between spatially adjacent subunits, but will unlikely disrupt the channel structure as its localization on a loop renders flexibility. Importantly, the potential influence of the I201T mutation on the channel function is underlined by its proximity to I205 (Figure 6A,C), a putative activation/permeation gate and the narrowest exit along the ion conducting pathway (Figure 6A,B) (Yang et al., 2014b).
 
@@ -82,11 +134,93 @@ Sequence alignment reveals that BEST1 P274 is identical while I201 has a highly 
 
 **Figure 7.:** (A) Bar chart showing purified KpBest WT and mutant pentameric protein per wet cell yields. n = 3 for each bar. ∗p<0.05 compared to WT (2 × 10−3) or L177T (0.03) using two-tailed unpaired Student t test. (B) Current trace of KpBest WT and mutant single channels recorded from planar lipid bilayers at 80 mV with 150 mM NaCl in both cis and trans solutions. Scale bar, 2.5 pA, 250 ms. (C) Histograms showing single channel current amplitudes of KpBest WT and the L177T mutant. n = 3.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig8-v1.jpg)
+
+**Figure 8.:** Ribbon diagram of the KpBest WT chain A (blue) and KpBest L177T chain A (green) with highlighted stick diagram of residue 177. See also Figure 8—figure supplement 1 and Figure 8—source data 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/29914/elife-29914-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Stereo images of the electron density maps (2Fo-Fc map, 1.2σ level) of KpBest WT (top, 2.3 Å) and L177T (bottom, 3.1 Å) presenting residues 174–180 for divergent ‘wall-eyed’ viewing.
+
 We next assessed the influence of the disease-causing mutations on BEST1 single channel activity. To circumvent the unavailability of purified human BEST1, we utilized the corresponding KpBest P239R and L177T mutants. As previously described (Yang et al., 2014b), purified KpBest channels were fused into planar lipid bilayer with 150 mM NaCl in both the trans (internal) and cis (external) solutions, and single channel currents were recorded with KpBest WT at 80 mV with mean amplitude of 5.5 pA (Figure 7B). By contrast, no currents were obtained with KpBest P239R, while currents with reduced unitary conductance (mean amplitude 1.5 pA) were recorded with KpBest L177T (Figure 7B,C), suggesting that the BEST1 P274R and I201T mutations result in a complete and partial loss of single channel activity, respectively. Taken together, we concluded that P274R is a null mutation that abolishes both plasma membrane localization and channel activity of BEST1 due to structural disruption, whereas I201T is a partial loss-of-function mutation that retains plasma membrane localization and Ca2+ sensitivity of BEST1 caused by minor structural alterations.
 
 ## Discussion
 
 Here, we first proved the existence of Ca2+-dependent Cl- currents on the plasma membrane of human RPE by whole-cell patch clamp. Then we comprehensively examined two BEST1 disease-causing mutations (P274R and I201T) derived from ARB patients in an interdisciplinary platform, including whole-cell patch clamp with patient-derived iPSC-RPEs and HEK293 cells, immunodetection of endogenous BEST1 in iPSC-RPEs, lipid bilayer with purified bacterial bestrophin proteins, and structural analyses with human models and bacterial homolog crystal structures (Table 1). Collectively, our results illustrated the physiological influence of these two mutations on RPE surface Ca2+-dependent Cl- current and the BEST1 channel function, and provided structural insights into their disease-causing mechanisms: the P274R mutation abolishes Ca2+-dependent Cl- current in vivo, likely due to disruption of the BEST1 channel structure; while the I201T mutation partially impairs Ca2+-dependent Cl- current in vivo, likely due to non-disruptive structural alteration (Table 1).
+
+**Table 1.**
+ Summary of disease-causing mechanisms of BEST1 P274R and I201T mutations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Mechanism</th>
+      <th>System</th>
+      <th>P274R</th>
+      <th>I201T</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Phenotype</td>
+      <td colspan="2">-</td>
+      <td>Patient</td>
+      <td>Severe</td>
+      <td>Mild</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Function</td>
+      <td rowspan="3">I</td>
+      <td>CaC current</td>
+      <td>RPE</td>
+      <td>Null</td>
+      <td>Small</td>
+    </tr>
+    <tr>
+      <td>Ca2+ sensitivity</td>
+      <td>RPE</td>
+      <td>N/A</td>
+      <td>Normal</td>
+    </tr>
+    <tr>
+      <td>CaC current of BEST1</td>
+      <td>HEK293</td>
+      <td>Null</td>
+      <td>Small</td>
+    </tr>
+    <tr>
+      <td rowspan="2">N</td>
+      <td>BEST1 expression</td>
+      <td>RPE</td>
+      <td>Normal</td>
+      <td>Normal</td>
+    </tr>
+    <tr>
+      <td>Membrane localization</td>
+      <td>RPE</td>
+      <td>Diminished</td>
+      <td>Normal</td>
+    </tr>
+    <tr>
+      <td>i</td>
+      <td>Unitary current</td>
+      <td>KpBest</td>
+      <td>Null</td>
+      <td>Small</td>
+    </tr>
+    <tr>
+      <td>Structure</td>
+      <td colspan="2">-</td>
+      <td>KpBest crystal + human model</td>
+      <td>Disrupted</td>
+      <td>Slightly altered</td>
+    </tr>
+  </tbody>
+</table>
+
+_I = N × Po× i. I, whole-cell current amplitude; N, number of surface channels; Po, channel open probability; i, unitary current._
 
 The structure of BEST1 has not been solved, and only two bestrophin homolog structures- KpBest and cBest1, were reported in previous studies (Kane Dickson et al., 2014; Yang et al., 2014b). We used both KpBest crystal structures and human homology models mainly based on cBest1 to analyze the possible structural alterations in BEST1 caused by the patient-specific mutations. Results from the two methods are consistent with each other and with functional data. Moreover, it has been proposed that disease mutations may result in wrongly numbered oligomers rather than the correct pentamer formed by WT BEST1 (Johnson et al., 2017). The structure of KpBest I177T suggests that the BEST1 I201T mutation does not alter the pentameric conformation of the channel.
 
@@ -104,45 +238,426 @@ On the other hand, recessive BEST1 mutations from ARB patients provide a unique 
 
 ## Materials and methods
 
-## Generation of human iPSC
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (human)</td>
+      <td>BEST1</td>
+      <td>PMID: 25324390</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Klebsiella pneumoniae)</td>
+      <td>KpBest</td>
+      <td>PMID: 25324390</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E.coli)</td>
+      <td>DH5alpha</td>
+      <td>other</td>
+      <td></td>
+      <td>Laboratory of Wayne Hendrickson</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>BL21 plysS</td>
+      <td>other</td>
+      <td></td>
+      <td>Laboratory of Wayne Hendrickson</td>
+    </tr>
+    <tr>
+      <td>cell line (human)</td>
+      <td>HEK293</td>
+      <td>other</td>
+      <td>RRID:CVCL_0045</td>
+      <td>Laboratory of David Yule</td>
+    </tr>
+    <tr>
+      <td>transfected construct (human)</td>
+      <td>pEGFP-N1-BEST1 WT</td>
+      <td>PMID: 25324390</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (human)</td>
+      <td>pEGFP-N1-BEST1 I201T</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made from pEGFP-N1-BEST1 WT by site-directed mutagenesis</td>
+    </tr>
+    <tr>
+      <td>transfected construct (human)</td>
+      <td>pEGFP-N1-BEST1 P274R</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made from pEGFP-N1-BEST1 WT by site-directed mutagenesis</td>
+    </tr>
+    <tr>
+      <td>biological sample (human)</td>
+      <td>skin cells</td>
+      <td>other</td>
+      <td></td>
+      <td>New York Presbyterian Hospital</td>
+    </tr>
+    <tr>
+      <td>biological sample (human)</td>
+      <td>fetus eye samples</td>
+      <td>other</td>
+      <td></td>
+      <td>New York Presbyterian Hospital</td>
+    </tr>
+    <tr>
+      <td>biological sample (human)</td>
+      <td>BEST1 WT iPSC-RPE</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated from donor skin cells by re-programming and differentiation</td>
+    </tr>
+    <tr>
+      <td>biological sample (human)</td>
+      <td>BEST1 I201T iPSC-RPE</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated from donor skin cells by re-programming and differentiation</td>
+    </tr>
+    <tr>
+      <td>biological sample (human)</td>
+      <td>BEST1 P274R iPSC-RPE</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated from donor skin cells by re-programming and differentiation</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>BESTROPHIN1</td>
+      <td>Novus Biologicals NB300-164</td>
+      <td>RRID:AB_10003019</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>ZO-1</td>
+      <td>Invitrogen 40–2200</td>
+      <td>RRID:AB_2533456</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa Fluor 488-conjugated IgG</td>
+      <td>Invitrogen A-11070</td>
+      <td>RRID:AB_2534114</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa Fluor 555-conjugated IgG</td>
+      <td>Invitrogen A-21422</td>
+      <td>RRID:AB_2535844</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>RPE65</td>
+      <td>Novus Biologicals NB100-355</td>
+      <td>RRID:AB_10002148</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>CRALBP</td>
+      <td>Abcam ab15051</td>
+      <td>RRID:AB_2269474</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>β-actin</td>
+      <td>Abcam ab8227</td>
+      <td>RRID:AB_2305186</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>GFP</td>
+      <td>Invitrogen A6455</td>
+      <td>RRID:AB_221570</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>SOX2, Tra-1–60, SSEA4, Nanog</td>
+      <td>Abcam ab109884</td>
+      <td></td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>EEA1</td>
+      <td>Fisher Scientific MA5-14794</td>
+      <td>RRID:AB_10985824</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pEG Bacmam</td>
+      <td>other</td>
+      <td></td>
+      <td>Laboratory of Eric Gouaux</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pEG Bacmam-BEST1-GFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made from pEG Bacmam by inserting BEST1-GFP</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>BEST1-GFP Bacmam virus</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Produced from pEG Bacmam-BEST1-GFP by published protocols (Goehring et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pMCSG7-10xHis-KpBestΔC11</td>
+      <td>PMID: 25324390</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pMCSG7-10xHis-KpBestΔC11 L177T</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made from pMCSG7- 10xHis-KpBestΔC11 by site-directed mutagenesis</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pMCSG7-10xHis-KpBestΔC11 P239R</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made from pMCSG7- 10xHis-KpBestΔC11 by site-directed mutagenesis</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>BEST1 I201T forward primer</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACCCGGGACC CTATCCTGCT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>BEST1 I201T reverse primer</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GATAGGGTCCCGGG TTCGACCTCCAAGCCACG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>BEST1 P274R forward primer</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CGCGTCTTCAC GTTCCTGCAGTT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>BEST1 P274R reverse primer</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GAACGTGAAGAC GCGCACAACGAGGT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>KpBest L177T forward primer</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACCAGCGACA TCACTTACGGGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>KpBest L177T reverse primer</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGTGATGTCGCT GGTCTTGCCCGCCTCCCG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>KpBest P239R forward primer</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CGGTTTGTCTCGGTC TTTATCTCTTACACC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>KpBest P239R reverse primer</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GACCGAGAC AAACCGCGTCA TGTA GTGCAGATCGC</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>KpBestΔC11 L177T</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Expressed from E. coli BL21 plysS, and purified by affinity and size-exclusion chromatography</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>KpBestΔC11 P239R</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Expressed from E. coli BL21 plysS, and purified by affinity and size-exclusion chromatography</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>CytoTune-iPS 2.0 Sendai Reprogramming Kit</td>
+      <td>Thermo Fisher Scientific A16517</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>In-fusion Cloning Kit</td>
+      <td>Clontech 639645</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>mTeSR-1 medium</td>
+      <td>STEMCELL Technologies 5850</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>matrigel</td>
+      <td>CORNING 356230</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>nicotinamide</td>
+      <td>Sigma-Aldrich N0636</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Activin-A</td>
+      <td>PeproTech 120–14</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>XDS</td>
+      <td>PMID: 20124692</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Phaser</td>
+      <td>PMID: 19461840</td>
+      <td>RRID:SCR_014219</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Phenix</td>
+      <td>PMID: 20124702</td>
+      <td>RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Coot</td>
+      <td>PMID: 15572765</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>PyMOL</td>
+      <td>http://www.pymol.org/</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Origin</td>
+      <td>http://www.originlab.com/index.aspx?go=PRODUCTS/Origin</td>
+      <td>RRID:SCR_014212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MODELLER</td>
+      <td>PMID: 14696385</td>
+      <td>RRID:SCR_008395</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of human iPSC
 
 Primary fibroblasts cells from donors were reprogrammed into pluripotent stem cells using the CytoTune-iPS 2.0 Sendai Reprogramming Kit (Thermo Fisher Scientific, A16517), and immunocytofluorescence assays were performed for scoring iPSC pluripotency following the previously published protocol (Li et al., 2016). In brief, a panel of antibodies (1:200, abcam, ab109884) against four standard pluripotency markers SOX2, Tra-1–60, SSEA4 and Nanog were applied to characterize the iPSCs from all the subjects enrolled in this study. Hoechst staining was applied to detect nuclei. Secondary antibodies were Alexa Fluor 488 conjugated goat anti-rabbit or Alexa Fluor 555 conjugated goat anti-mouse IgG (1:1,000; Life Technologies). Images for all antibody labels were taken under the same settings with fluorescence microscope (NIKON, Eclipse, Ts2R). All iPSC lines were maintained in mTeSR-1 medium (STEMCELL Technologies, 05850) and passaged every 3–6 days. The morphology and nuclear/cytoplasmic ratio of the iPSC lines were closely monitored to ensure the stability. To verify genome integrity, all the iPSC lines in this study were sent for karyotyping by G-banding at the Cell Line Genetics (Wisconsin, USA).
 
-## Differentiation of iPSC into RPE
+### Differentiation of iPSC into RPE
 
 iPSC differentiation started at passage 4 for all iPSC lines. For differentiation, iPSC colonies were cultured to confluence in 6-well culture dishes (Costar, Corning, Corning, NY) pretreated with 1:50 diluted matrigel (CORNING, 356230) in differentiation medium consisting of Knock-Out (KO) DMEM (Thermo Fisher Scientific, 10829018), 15% KO serum replacement (Thermo Fisher Scientific, 10829028), 1% nonessential amino acids (Thermo Fisher Scientific, 11140050), 2 mM glutamine (Thermo Fisher Scientific, 35050061), 50 U/ml penicillin-streptomycin (Thermo Fisher Scientific, 10378016), and 10 mM nicotinamide (Sigma-Aldrich, N0636) for the first 14 days. During the 15th-28th days of differentiation, 100 ng/ml human Activin-A (PeproTech, 120–14) was supplemented into differentiation medium. From day 29, Activin-A supplementation was stopped until differentiation was completed. After 8–10 weeks, pigmented clusters were formatted and manually picked, then plated on matrigel-coated dishes in RPE culture medium as previous described (Maminishkis et al., 2006). They were cultured for another 6–8 weeks to allow them to form a functional monolayer for function assay. Besides well-established classical mature RPE markers RPE65, Bestrophin1 and CRALBP, two additional RPE markers, MITF and PAX6, were used for RPE fate validation. All the iPSC-RPE cells used in this study were at their passage 1. Mutations (P274R and I201T) in the mutant iPSC-RPEs were verified by sequencing.
 
-## Cell lines
+### Cell lines
 
 HEK293 cells were gifts from Dr. David Yule at University of Rochester. Although HEK293 is on the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee, the HEK293 cells used in this study were authenticated by short tandem repeat (STR) DNA profiling. No mycoplasma contamination was found. Low-passage-number HEK293 cells were maintained in DMEM supplemented with 10% FBS and 100 μg/ml penicillin-streptomycin.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Immunofluorescence staining was performed in all iPSC-RPE lines and human fetal RPE cells. Cells were washed with PBS and fixed in 4% paraformaldehyde for 45 min at room temperature. After washing with PBS twice, the cells were incubated in PBS with 0.1% Triton X-100% and 2% donkey serum for 45 min. Then, primary antibodies against BESTROPHIN-1 (1:200, Novus Biologicals, NB300-164), ZO-1 (1:500, Invitrogen Life Technologies, 40–2200) and EEA1 (1:200, Thermo Fisher Scientific, MA5-14794) were applied to each sample for 2 hr at room temperature. Alexa Fluor 488-conjugated and Alexa Fluor 555-conjugated IgG (1:1,000, Thermo Fisher Scientific) were used as secondary antibodies. Hoechst was used to detect the cell nuclei. Stained cells were observed by confocal microscopy (Nikon Ti Eclipse inverted microscope for scanning confocal microscopy, Japan).
 
-## Electrophysiology
+### Electrophysiology
 
 Whole-cell recordings of RPE and HEK cells were conducted 48–72 hr after splitting the cells or transfection, respectively, using an EPC10 patch clamp amplifier (HEKA Electronics) controlled by Patchmaster software (HEKA). Micropipettes were fashioned from 1.5 mm thin-walled glass with filament (WPI Instruments) and filled with internal solution containing (in mM): 130 CsCl, 1 MgCl2, 10 EGTA, 2 MgATP (added fresh), 10 HEPES (pH 7.4), and CaCl2 to obtain the desired free Ca2+ concentration (maxchelator.stanford.edu/CaMgATPEGTA-TS.htm). Series resistance was typically 1.5–2.5 MΩ. There was no electronic series resistance compensation. External solution contained (in mM): 140 NaCl, 5 KCl, 2 CaCl2, 1 MgCl2, 15 glucose and 10 HEPES (pH 7.4). Whole-cell I-V curves were generated from a family of step potentials (−100 to +100 mV from a holding potential of 0 mV). Currents were sampled at 25 kHz and filtered at 5 or 10 kHz. Traces were acquired at a repetition interval of 4 s (Yang et al., 2014a).
 
 Purified full length KpBest proteins were fused to planar lipid bilayers formed by painting a lipid mixture of phosphatidylethanolamine and phosphatidylcholine (Avanti Polar Lipids) in a 3:1 ratio in decane; across a 200 µm hole in polysulfonate cups (Warner Instruments) separating two chambers. The trans chamber (1.0 ml), representing the intra-SR (luminal) compartment, was connected to the head stage input of a bilayer voltage clamp amplifier. The cis chamber (1.0 ml), representing the cytoplasmic compartment, was held at virtual ground. Solutions were as follows (in mM): 150 NaCl, and 10 HEPES (pH 7.4) in the cis and trans solution. Purified proteins were added to the cis side and were fused with the lipid bilayer. Single-channel currents were recorded using a Bilayer Clamp BC-525D (Warner Instruments, LLC, CT), filtered at 1 kHz using a Low-Pass Bessel Filter 8 Pole (Warner Instruments, LLC, CT), and digitized at 4 kHz. All experiments were performed at room temperature (23 ± 2°C).
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Total cellular protein was extracted by M-PER mammalian protein extraction reagent buffer (Pierce, 78501) with proteinase inhibitor (Roche Diagnostics), and quantified by Bio-Rad protein reader. Protein samples (20 μg) were then separated on 10% Tris–Cl gradient gel and electro-blotted onto nitrocellulose membrane. The membranes were incubated in blocking buffer for 1 hr at room temperature, washed three times in PBS with 0.1% Tween for 5 min each, and incubated with primary antibody in blocking buffer overnight at 4°C. Primary antibodies against the following proteins were used for western blots: RPE65 (1:1,000 Novus Biologicals, NB100-355), BESTROPHIN-1 (1:500 Novus Biologicals, NB300-164), CRALBP (1:500 Abcam, ab15051), β-actin (1:2,000 Abcam, ab8227), and GFP (1:5,000 Invitrogen, A6455). Mouse and rabbit secondary antibodies were obtained from Santa Cruz and used at a concentration of 1: 5000.
 
-## Virus
+### Virus
 
 WT BEST1-GFP expressed from a BacMam baculoviral vector was made as previously described (Goehring et al., 2014), and was added into RPE culture 24 hr after splitting the cells (MOI = 100).
 
-## cDNA cloning
+### cDNA cloning
 
 P237R and L177T KpBestΔC11 have 11 residues truncated from the C-terminus of wild-type KpBest. The wild-type BEST1 (synthesized by Genscript), was amplified using polymerase chain reaction (PCR), and was subcloned into a pEGFP-N1 mammalian expression vector. C-terminus truncated KpBest and point mutations of KpBest and BEST1 were made using the In-fusion Cloning Kit (Clontech). All clones were verified by sequencing.
 
-## Transfection
+### Transfection
 
 For electrophysiology experiments, HEK293 cells cultured in 6 cm tissue culture dishes were transiently transfected with the indicated BEST1 (6 μg) and T antigen (2 μg), using the calcium phosphate precipitation method. Cells were washed with PBS 4–8 hr after transfection and maintained in supplemented DMEM, and replated onto fibronectin-coated glass coverslips 24 hr after transfection (Yang et al., 2013).
 
-## Protein production and purification
+### Protein production and purification
 
 BL21 plysS cells were gifts from Dr. Wayne Hendrickson. For scaling up, transformed BL21 plysS cells were grown at 37°C in TB media to OD 0.6–0.8 after being inoculated with 1% of the overnight culture. The culture was induced with 0.4 mM IPTG and continued to grow at 37°C for another 4 hr.
 
@@ -150,34 +665,34 @@ BL21 plysS cells expressing targeted proteins were harvested by centrifugation a
 
 The membrane fraction was homogenized in a solubilization buffer containing 50 mM HEPES (pH 7.8) and 300 mM NaCl, and incubated with a final concentration of 0.05% (w/v) DDM for 1 hr at 4°C. The non-dissolved matter was removed by ultracentrifugation at 150,000 g for 30 min, and the supernatant was loaded to a 5 ml Hitrap Ni2+-NTA affinity column (GE Healthcare), pre-equilibrated with the same solubilization buffer supplemented with 0.05% DDM. After 20 column volume buffer wash, the protein was eluted with 500 mM imidazole in the solubilization buffer. The 10-His tags were removed by adding super TEV at 1:1 mass ratio and incubating at 4°C for 30 min. Tag removal was confirmed by SDS-PAGE, and the resulting sample was concentrated to approximately 10 mg/ml. Preparative size-exclusion chromatography was carried out on a Superdex-200 column for further purification, including removal of TEV protease and the cleaved tag. The gel-filtration buffer contained 40 mM HEPES (pH 7.8), 200 mM NaCl, 0.1 mM Tris [2-carboxyethyl] phosphine (TCEP), and 2 × CMC of detergent DDM.
 
-## Crystallization and data collection
+### Crystallization and data collection
 
 Purified protein was concentrated to ~10 mg/ml. Crystals were all grown at 20°C using the sitting-drop vapor diffusion method. The condition contained 0.05 M zinc acetate, 6% v/v ethylene glycol, 0.1 M sodium cacodylate, pH 6.0, and 6.6 % w/v PEG 8000. Cryoprotection was achieved by adding 20% ethylene glycol to the crystallization solution. High resolution native data set from a single L177T KpBestΔC11 crystal was collected at APS (Argonne National Laboratory) beamline 24-ID-E.
 
-## Statistics
+### Statistics
 
-## Electrophysiological data and statistical analyses
+#### Electrophysiological data and statistical analyses
 
 Whole-cell clamp data were analyzed off-line using Patchmaster (HEKA), Microsoft Excel and Origin software. Statistical analyses were performed in Origin using built-in functions. Statistically significant differences between means (p<0.05) were determined using Student’s t test for comparisons between two groups, and one-way ANOVA and Bonferroni post hoc analyses between more than two groups. Data are presented as means ± s.e.m (Yang et al., 2007).
 
-## Structure determination and refinement
+#### Structure determination and refinement
 
 The x-ray data set on L177T KpBestΔC11 was processed using XDS (Kabsch, 2010) via the RAPD system of APS NE-CAT. The structure was solved using WT KpBestΔC11 structure (PDB code: 4WD8) as a search model during molecular replacement, carried out using the program Phaser (McCoy et al., 2007) as implemented in the program Phenix suite (Adams et al., 2010). Model building and refinement were carried out using the programs Coot (Emsley and Cowtan, 2004) and Phenix suite (Adams et al., 2010). The statistics for the diffraction data and refinement are summarized in Figure 8—source data 1.
 
-## Homology modeling of human BEST1
+#### Homology modeling of human BEST1
 
 Homology models for BEST1 were generated using MODELLER (Fiser and Sali, 2003). All figures were made in PyMOL.
 
-## Data and software availability
+#### Data and software availability
 
 The data reported in this paper are tabulated in Figure 8—source data 1, and deposited to the Protein Data Bank with access codes listed in Figure 8—source data 1.
 
-## Study approval
+### Study approval
 
-## Patients and clinical analysis
+#### Patients and clinical analysis
 
 Patient 1 is a 12-year-old otherwise healthy boy, and patient 2 is a 72-year-old otherwise healthy man. Two BEST1-mutant patients underwent a complete ophthalmic examination by a retinal physician in the Department of Ophthalmology, Columbia University Medical Center/New York Presbyterian Hospital. This included best-corrected visual acuity, slit-lamp biomicroscopy, and dilated funduscopy. Both of the patients underwent color fundus photography, optical coherence tomography (OCT) and electroretinogram (ERG) (Kohl et al., 2015; McCulloch et al., 2015). Skin biopsy samples were obtained from patients and healthy control donors, and processed and cultured as previously described (Li et al., 2016). Patients and the parent/legal guardian of patient 1 provided written informed consent for all procedures, which were approved by Columbia University Institutional Review Board (IRB) protocol AAAF1849.
 
-## Fetal human RPE isolation and culture
+#### Fetal human RPE isolation and culture
 
 Human RPE cells were isolated and cultured from human fetal eye samples (13 to 14 weeks old) obtained from Department of OB/GYN, New York Presbyterian Hospital (Protocol number: IRB-AAAO1804 and IRB-AAAQ7782), as described previously (Sonoda et al., 2009). In brief, the eyeball with anterior portions and vitreous was removed and then incubated in 2% dispase at 37°C for 45 min. Next, the RPE layer was separated from the choroid layer and transferred to a 15 ml conical tube containing 0.25% trypsin-EDTA. Then the tube was incubated in 37°C water bath for 10 min. After centrifugation at 0.8 rpm for 4 min, the cell pellet was resuspended in RPE medium and plated on a matrigel coated petri dish. All the fetal RPE cells used in this study were at their passage 1.

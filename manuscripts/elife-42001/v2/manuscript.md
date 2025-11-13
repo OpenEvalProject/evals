@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.42001.001 Most replicative helicases are hexameric, ring-shaped motor proteins that translocate on and unwind DNA. Despite extensive biochemical and structural investigations, how their translocation activity is utilized chemo-mechanically in DNA unwinding is poorly understood. We examined DNA unwinding by G40P, a DnaB-family helicase, using a single-molecule fluorescence assay with a single base pair resolution. The high-resolution assay revealed that G40P by itself is a very weak helicase that stalls at barriers as small as a single GC base pair and unwinds DNA with the step size of a single base pair. Binding of a single ATPγS could stall unwinding, demonstrating highly coordinated ATP hydrolysis between six identical subunits. We observed frequent slippage of the helicase, which is fully suppressed by the primase DnaG. We anticipate that these findings allow a better understanding on the fine balance of thermal fluctuation activation and energy derived from hydrolysis.
+Most replicative helicases are hexameric, ring-shaped motor proteins that translocate on and unwind DNA. Despite extensive biochemical and structural investigations, how their translocation activity is utilized chemo-mechanically in DNA unwinding is poorly understood. We examined DNA unwinding by G40P, a DnaB-family helicase, using a single-molecule fluorescence assay with a single base pair resolution. The high-resolution assay revealed that G40P by itself is a very weak helicase that stalls at barriers as small as a single GC base pair and unwinds DNA with the step size of a single base pair. Binding of a single ATPγS could stall unwinding, demonstrating highly coordinated ATP hydrolysis between six identical subunits. We observed frequent slippage of the helicase, which is fully suppressed by the primase DnaG. We anticipate that these findings allow a better understanding on the fine balance of thermal fluctuation activation and energy derived from hydrolysis.
 
 ## Introduction
 
@@ -33,9 +33,25 @@ For T7 gp4 helicase-primase, structural and ensemble kinetic data (Crampton et a
 
 ## Results and discussion
 
-## G40P unwinds dsDNA in single base pair steps
+### G40P unwinds dsDNA in single base pair steps
 
 We probed the helicase activity of the phage SPP1 G40P, a DnaB type hexameric helicase (Berger, 2008; Pedré et al., 1994; Wang et al., 2008) required for phage replication in its bacterial host, using an unwinding assay (Ha et al., 2002; Myong et al., 2007; Pandey et al., 2009; Syed et al., 2014; Yodh et al., 2009) based on single-molecule FRET (Ha et al., 1996). The substrate is a 40 bp duplex DNA with 3’ and 5’ single stranded poly-dT tails, both 31 nt long, to mimic a replication fork, and is immobilized to a polymer-passivated surface via a biotin-neutravidin linker (Figure 1a). FRET between the donor (Cy3) and the acceptor (Cy5) fluorophores conjugated to the fork was used to follow individual DNA unwinding in real time (Figure 1—figure supplement 1). Duplex unwinding increases the time-averaged distance between the fluorophores therefore causing a reduction in FRET, and unwinding completion results in the release of the donor-labeled strand from the surface and an abrupt disappearance of total fluorescence (Figure 1b and Figure 1—figure supplement 1). Initial experiments were carried out using a DNA substrate with all AT base pairs (40 bp) and typical unwinding trajectories displayed a smooth and rapid FRET decrease at 1 mM ATP (Figure 1c). Fitting the unwinding time histogram with a Gamma distribution allowed us to estimate a kinetic step size of ~4 bp, obtained by dividing the number of bp unwound by the number of identical rate-limiting steps required for full unwinding (Park et al., 2010) (Figure 1—figure supplement 1). The kinetic step size of 4 bp here should be considered an upper limit because these unwinding time distributions can be broadened due to molecular heterogeneities, likely leading to an overestimation of the kinetic step size (Park et al., 2010).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic illustration of the smFRET unwinding assay. After loading to the substrate G40P unwinds the dsDNA (containing between 0 and 3 consecutive GC base pairs after 10 AT base pairs) and thereby gradually separates the donor fluorophore from the acceptor fluorophore. Complete unwinding results in donor strand leaving from the surface. (b) Typical unwinding trace of G40P. At tinject the protein solution containing Mg.ATP is injected. The unwinding initiation time tinit depends on the protein concentration and is measured from the moment of protein solution injection until unwinding starts. The unwinding time tunw is determined from the moment of FRET efficiency decrease until donor strand leaving. (c) Typical FRET efficiency unwinding traces of G40P on an all AT substrate base pair. The scale bar indicates 1 s. (d) Typical FRET efficiency unwinding traces of G40P with one GC base pair. The helicase briefly stalls at a characteristic FRET efficiency or slips after stalling and unwinds in a second attempt. (e) Typical FRET efficiency unwinding traces of G40P on the substrate with two consecutive GC base pairs. The helicase stalls eventually at two distinct FRET efficiencies (see arrows). (f) Typical FRET efficiency unwinding traces of G40P on the substrate with three consecutive GC base pairs. The helicase rarely unwinds three consecutive GC base pairs completely (top trace). Most traces show unwinding attempts and stalls at distinct FRET efficiency levels (bottom trace). (g-i) FRET efficiency distribution of stall levels of the one GC (blue), two GC (black) and three GC base pair (red) substrate. A (multipeak) fit with Gaussians revealed one peak at EFRET = 0.52 ± 0.04 for 1GC, two peaks at EFRET = 0.53 ± 0.04 and at EFRET = 0.39 ± 0.04 (two dashed lines) for 2GC and three peaks at EFRET = 0.52 ± 0.04, EFRET = 0.38 ± 0.04 and at EFRET = 0.27 ± 0.04 (three dashed lines) for 3GC. (j) Average FRET efficiencies with stalls after 4AT, 7AT, 10AT and 13AT base pairs (black symbols) in comparison with peak positions of stalls induced by 1GC, 2GC and 3GC base pairs (blue symbols).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Opposite fluorophore attachment to the forked dsDNA substrate yield a wide FRET change range during unwinding. A typical trace is shown on the right-hand side. (b) Labeling the non-tracking strand with the donor and acceptor fluorophores relies for the FRET efficiency change on the shorter persistence length of ssDNA compared to dsDNA. Both fluorophores do not have to pass through the central pore of the helicase and yield identical average unwinding times. However, the FRET efficiency change signal is much less clear (right). (c) Selection criteria for traces to be included in the analysis. Typical unwinding trace of G40P. At tinject the protein solution together with Mg.ATP is injected. The unwinding initiation time tinit depends on the protein concentration and is measured from the moment of protein solution injection until unwinding starts. smFRET traces were tested for acceptor survival by means of direct excitation with a 633 nm laser to exclude acceptor bleaching events from analysis. During the unwinding assay, only donor molecules were excited with a 532 nm laser. In the illustrated trace, unwinding was observed at t ≈ 22 s, the acceptor test was performed at t ≈ 96–97.5 s. (d) The unwinding initiation rate (1/tinit) is shown as a function of G40P hexamer concentration and can be fitted linearly (errors are standard deviation). Inset: The unwinding time is independent of the protein concentration within error. (e) Percentage of initial high FRET traces with successful unwinding events without anti-digoxigenin and with anti-digoxigenin at the 5’ tail of the forked duplex (*** denotes p<0.001). Inset: Schematic illustration of the digoxigenin-modified substrate (square at the 5’ tail) blocked by anti-digoxigenin (yellow). (f) Typical FRET efficiency unwinding traces at [ATP]=3 mM, 1 mM, 250 µM, 150 µM, 100 µM and 75 µM. The unwinding appears smooth and the unwinding time increased with decreasing ATP concentration. (g) Typical FRET efficiency traces at [ATP]=250 µM and with increasing [ADP]=0 mM, 0.5 mM and 1 mM. The effect of ADP as competitive inhibitor can be directly observed with increasing unwinding times. (h) Semi-logarithmic plot of the average unwinding rate (1/tunw) as a function of ATP concentration (errors are standard deviation). The average unwinding rate at different ATP concentrations was determined without ADP (red squares), with 0.5 mM ADP (green circles), with 1 mM ADP (blue triangles) and 5 mM Pi (black rhomboids). The solid lines are fits to the data using Michaelis-Menten equation. The red dashed is a fit to the 0 mM ADP data with the Hill-equation. (i) Unwinding time distribution of the AT substrate by (G40P)6 at 1 mM ATP. Fit is a Gamma distribution with a stepping rate k = 21.9 s−1 and a number of steps n = 10.1. (j) Unwinding time distribution of the AT substrate by (G40P)6 at 250 µM ATP. The fit is a Gamma distribution with a stepping rate k = 16.4 s−1 and a number of steps n = 10.1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Stall lifetime distribution of G40P stalls on the 1GC substrate. A single exponential fit yields a characteristic lifetime of 79 ± 5 ms. (b) Fraction of all traces with protein activity with complete unwinding on different substrates (AT, 1GC, 2GC, 3GC) and at 21°C and 33°C, respectively (n.s. denotes not significant, *p<0.05, ***p<0.001). (c) Sketch of the intrinsic calibration constructs with x AT base pairs followed by 40-x GC base pairs. Due to its exquisite sequence sensitivity G40P stalls at the GC base pairs. (d) Stall FRET level histograms for four different substrates: 4AT, 7AT, 10AT and 13AT. The Histograms were evaluated with Gaussian fits. The leakage of donor fluorescence to the acceptor channel was determined to give an apparent EFRET = 0.11 ± 0.02. (e) through (h) Sample traces of calibration substrates 4AT, 7AT, 10AT and 13AT, respectively, with the analyzed stall level indicated by arrows.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Traces are offset for clarity. Black lines and grey shade represent the stall FRET efficiency levels of the consecutive GC base pairs at position 11, 12 and 13 for reference of consecutive FRET levels.
 
 Interestingly, when we repeated the experiment with a single GC bp inserted in the 11th position in otherwise all AT sequences (Figure 1a), a large fraction (65%) of unwinding trajectories showed a stall before full unwinding, with a characteristic stall lifetime of 79 ± 5 ms (Figure 1d and Figure 1—figure supplement 2a). FRET efficiencies of the stalled state were sharply distributed around EFRET = 0.52 ± 0.04 (blue lines in Figure 1g), indicating that the stall occurs after a well-defined number of base pairs, presumably ten, have been unwound and is caused by a single GC base pair.
 
@@ -57,17 +73,33 @@ The GC base pair induced pauses of the helicase imply that unwinding depends at 
 
 Single base pair steps were observed in the presence of GC base pairs or solution conditions which slow down unwinding. Interestingly, structural studies of DnaB showed each DNA binding loop contacting two nucleotides (Itsathitphaisarn et al., 2012), leading to the step size of 2 bp. Single-molecule studies of T7gp4 observed 2–3 bp apparent step sizes but with the step likely requiring 2–3 nucleotides hydrolyzed (Syed et al., 2014). Therefore, we could also imagine that G40P possesses variable step size, depending on the load, and under our experimental conditions that slow down translocation, G40P may switch to a 1 bp step size. Gear switching was also proposed for other ring-like ATPases, for example the AAA+ protease ClpXP (Sen et al., 2013) and dynein (Mallik et al., 2004).
 
-## Host primase DnaG prevents slippage events
+### Host primase DnaG prevents slippage events
 
 A replicative helicase that cannot easily overcome GC base pairs would be ineffective. Because DnaG, the host primase, stimulates ATPase and unwinding activities of DnaB and G40P (Bird et al., 2000; Wang et al., 2008), we tested the effect of DnaG by forming a complex of G40P with the Bacillus subtilis primase DnaG in a ratio of 1:3 (Wang et al., 2008) before adding the complex to the immobilized DNA to initiate unwinding. Figure 3a shows typical unwinding traces of the substrate with 3 GC bp in presence of the primase DnaG. Strikingly, the yield of complete unwinding increased from 12% without DnaG to 58% with DnaG (Figure 3b and Supplementary file 1 - Table S1). DNA molecules showing full unwinding did not show any slippage events, suggesting a novel function of DnaG that stimulates unwinding by preventing slippage. Stalling events were still observed in the presence of DnaG, but were less pronounced (Figure 3—figure supplement 1). Presence of other replication proteins may further assist the helicase unwinding activity (Stano et al., 2005).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig3-v2.jpg)
+
+**Figure 3.:** (a) FRET efficiency traces of the G40P-DnaG complex on the 3GC substrate. Traces with successful unwinding showed no slippage events. (b) Fraction of all traces with protein activity with complete unwinding on different substrates (AT, 1GC, 2GC, 3GC) and at different enzyme conditions (G40P, G40p+DnaG) (n.s. denotes not significant, *p<0.05, ***p<0.001). (c) FRET efficiency traces of G40P unwinding the AT substrate with slippage events marked by stars before the actual unwinding events marked by the arrow at [ATP]=250 µM, 150 µM and 100 µM. (d) Semi-logarithmic plot of the average number of slippage events per total number of unwinding traces at different ATP concentrations. Addition of DnaG reduces the average number of slippage events before successful unwinding by a factor ≈ 2.5. Errors were estimated by bootstrapping analysis.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Top panels: Donor (green) and acceptor (red) time traces. Bottom panels: FRET efficiency time traces.
+
 Slippage was also observed using the 40 AT DNA but less frequently (Figure 3b). Because T7 gp4, E1 and Rho helicase have higher affinities to ssNA in the nucleotide-bound state (Adelman et al., 2006; Enemark and Joshua-Tor, 2006; Hingorani and Patel, 1993; Thomsen and Berger, 2009) we hypothesized that slippage would occur more frequently at lower ATP concentrations. Indeed, at sub-saturating ATP concentrations we observed a significant increase of slippage events (Figure 3c) and the number of slippage events before complete unwinding increased for decreasing ATP concentrations (Figure 3d). Inclusion of ADP in the reaction did not reduce or increase the slippage events significantly, indicating that the enzyme binds tightly to the DNA in both ATP and ADP bound states. However, the presence of DnaG significantly reduced the average number of slippage events per full unwinding (≈2.5 fold) compared to G40P alone at all tested ATP concentrations (Figure 3d, black triangles and Supplementary file 1 - Table S3). Interestingly, the average unwinding time of the AT substrate with or without DnaG at saturating ATP conditions did not change.
 
-## ATP hydrolysis between the subunits of G40P is highly coordinated
+### ATP hydrolysis between the subunits of G40P is highly coordinated
 
 G40P slippage can thus be reduced by keeping some nucleotides bound during each translocation step. To elucidate the ATP hydrolysis coordination between subunits, we included ATPγS in the reaction while keeping constant the combined concentration of ATP and ATPγS at 1 mM. ATPγS is a slowly hydrolysable analogue of ATP, and both nucleotides have nearly identical dissociation constants for G40P binding as tested using Mant-ADP (see Materials and methods and Figure 3—figure supplement 1). As expected, the unwinding rate of 40 bp, kunw, decreased as the ATPγS concentration increased (Figure 3—figure supplement 1). Close examination of the unwinding traces with 2.5% ATPγS showed a pronounced stalling event that was rarely detected without ATPγS (Figure 4a). The stall during unwinding was observed at broadly distributed FRET levels (Figure 4e), suggesting the stall occurs stochastically, not at a particular location on DNA. At elevated ATPγS (≥20% ATPγS) no unwinding reaction was observed. The lifetime of the first stall during unwinding was 0.44 s ± 0.01 s, independent of ATPγS percentage (Figure 4c), suggesting that the stall occurs when the enzyme is bound by a well-defined number of ATPγS. If a single ATPγS molecule is responsible for the hexamer stalling, the fraction of unwinding traces showing a stall event should depend linearly on the ATPγS concentration whereas a quadratic dependence is expected if two ATPγS molecules are necessary to stall the enzyme and so on. The stalled fraction increased linearly between 0.125% and 1% ATPγS (Figure 4d, Figure 3—figure supplement 1 and Materials and methods), indicating that the stall is caused by a single ATPγS. A random ATP hydrolysis mechanism as observed for ClpX, a AAA+ protein unfolding machine (Martin et al., 2005), can thus be excluded for G40P. The model of a concerted ATP hydrolysis is very unlikely to apply to G40P considering the following results of our experiments: (i) The unwinding rate kunw versus ATP relation followed the Michaelis-Menten relation with a Hill coefficient close to 1, indicating that per enzymatic cycle only one ATP has to bind the enzyme (see Materials and methods). (ii) Our slippage data indicate that an ATP or ADP free helicase loses grip to the tracking strand and slips backward. A concerted ATP hydrolysis leads to an ATP/ADP free helicase and an elevated probability to slip backwards at every unwound bp, which would be highly inefficient. Sequential nucleotide hydrolysis during ssNA translocation by hexameric helicases is also well supported by structural analysis (Enemark and Joshua-Tor, 2006; Thomsen and Berger, 2009) and was also observed in ssDNA translocation by T7gp4 (Crampton et al., 2006; Liao et al., 2005; Pandey and Patel, 2014). An optical tweezers study on T7gp4 proposed a sequential nucleotide hydrolysis after analyzing the slippage probability at various nucleotide conditions (Sun et al., 2011). Here we show the first direct evidence for sequential hydrolysis during DNA unwinding.
 
-## How translocation leads to unwinding
+![Figure 4.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig4-v2.jpg)
+
+**Figure 4.:** (a) Typical FRET efficiency traces at [ATP]=1 mM in the left panel and [ATP]+[ATPγS]=0.975 mM+0.025 mM in the right panel. The unwinding traces with 2.5% ATPγS show a clear stalling event (highlighted in green) that is absent at 0% ATPγS. (b) Lifetime distribution of the first stall during unwinding at several ATPγS percentages. A single exponential fit is used to evaluate the characteristic lifetime. (c) The stall lifetime evaluated from single exponential fits as a function of ATPγS poisoning percentage. Within error the characteristic lifetime is independent of ATPγS concentration. The linear fit is to guide the eye. (d) Fraction of unwinding traces with a stall event during FRET decrease between 0% and 1% ATPγS. A linear increase is expected if a single ATPγS binding event stalls the helicase. (e) Stall FRET efficiency distribution of ATPγS induced stalls.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) ATPase activity of G40P tested with EnzChek Phosphate detection kit (Invitrogen). After addition of ATP and depletion of free phosphates, G40P was added to the solution (20 mM Tris-HCl, 50 mM NaCl, 10 mM MgCl2). We observed without any ssDNA present in solution a significant ATPase activity. Addition of ssDNA to the solution increased the ATPase activity of G40P by a factor of two. (b) The ATPase activity of G40P without ssDNA was successfully suppressed by exchanging MgCl2 to MnCl2. After addition of ssDNA, G40P showed approximately 50% of the ATPase activity as in case (a). (c) Normalized fluorescence as function of the competitor. Preformed mant-ADP G40P complexes were titrated with ATP (green circles) and ATPγS (red circles). In both cases the fluorescence signal decreased rapidly. The data was evaluated using eq 1. (d) Stall lifetime of non-ATPγS induced stalling events at saturating ATP conditions. The typical lifetime was determined to be t0 = 0.05 ± 0.01 s, significantly shorter than ATPγS induced stalls with t ≈ 0.44 s. (e) Fraction of unwinding traces with a stall event during FRET decrease between 0% and 10% ATPγS. A linear increase is expected if a single ATPγS binding event stalls the helicase. At higher ATPγS concentrations the fraction of traces with a stalling event saturate. Inset: Fitted Michaelis-Menten model assuming ATPγS as an inhibitor (dashed line). (f) Average unwinding rate of G40P of the AT substrate as a function of ATPγS fraction (total nucleotide concentration was 1 mM, ATPγS concentration was increased from 0 to 100 µM).
+
+### How translocation leads to unwinding
 
 Combining our data with the strand exclusion model of unwinding (Ahnert and Patel, 1997) and the staircase model of ssDNA translocation (Enemark and Joshua-Tor, 2006), we previously proposed that for T7 gp4, with the unwinding step size of 2–3 bp, a spring-loaded mechanism where the presence of GC base pairs hinder DNA unwinding for each step of helicase movement on the DNA until the accumulated strain is released in a burst of simultaneous unwinding of 2–3 bp (Syed et al., 2014), which is reminiscent of spring-loaded mechanisms of DNA unwinding by HCV NS3 helicase (Myong et al., 2007) and RNA unwinding by yeast Rrp44 (Lee et al., 2012).
 
@@ -81,7 +113,66 @@ At low ATP concentrations, the unbound DNA-binding loop moves forward to the nex
 
 ## Materials and methods
 
-## Single-molecule FRET experiments and data analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (SPP1)</td>
+      <td>G40P</td>
+      <td>DOI: 10.1038/nsmb1356</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B.subtilis)</td>
+      <td>DnaG</td>
+      <td>DOI: 10.1038/nsmb1356</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks Matlab Version R2009, R2010, R2018</td>
+      <td></td>
+      <td>home written scripts for data analysis. Available in Supplementary file 2.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EnzChek Phosphate Assay Kit (Invitrogen)</td>
+      <td>EnzChek Phosphate Assay Kit (Invitrogen; now from ThermoFisher)</td>
+      <td>Cat #. E6646</td>
+      <td>ATPase activity Kit</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA Oligos (Supplementary file 1 - Table S5)</td>
+      <td>DNA Oligos were ordered from IDT</td>
+      <td></td>
+      <td>DNA oligos</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>mant-ADP</td>
+      <td>mant-ADP (Invitrogen; now ThermoFisher)</td>
+      <td>Cat #. M12416</td>
+      <td>fluorescent nucleotide</td>
+    </tr>
+  </tbody>
+</table>
+
+### Single-molecule FRET experiments and data analysis
 
 Single-molecule FRET experiments were performed on a custom-built fluorescence microscopy setup and recorded with an EMCCD camera (Andor) with a time resolution of 30–100 ms using custom C++ software (https://cplc.illinois.edu/software/). Single-molecule fluorescence traces were extracted by means of a custom IDL software.
 
@@ -89,32 +180,38 @@ Biotin was attached at the 5’ end of the DNA strand during DNA synthesis (Inte
 
 FRET efficiency values (EFRET) were calculated as the ratio between the acceptor intensity and the total (acceptor plus donor) intensity after subtracting the background. Unwinding initiation times, unwinding times and stall lifetimes were scored by visual inspection of donor and acceptor intensities (Pandey et al., 2009). The stall FRET levels were averaged after visual scoring the stall lifetime of at least five data points. The number of slippage events before successful unwinding was measured by counting the number of crossings of a threshold EFRET = 0.7–0.8 after box averaging the traces with a time resolution t = 150 ms. All data were analyzed and plotted with scripts written in MATLAB (Mathworks) and in Igor Pro (Wavemetrics). Statistical analysis was based on Fisher’s exact test or bootstrapping and performed in Igor Pro (Wavemetrics, Portland).
 
-## DNA substrates
+### DNA substrates
 
 All DNA oligos were purchased from Integrated DNA Technologies (Coralville, IA) and site-specifically labeled with NHS-Cy3 or NHS-Cy5 obtained from GE Healthcare (PA13101 and PA15101, respectively; Pittsburg, PA). Supplementary file 1 - Table S5 lists all sequences. \iAmMC6T\ denotes the amine-modified thymine with a C6 spacer used for site-specific labeling. \5BiosG\ denotes the 5’ modification with biotin, \3Bio\ denotes the 3’ modification with biotin and \iCy5\ denotes the internal modification with Cy5 fluorophore.
 
-## Design of the unwinding substrate
+### Design of the unwinding substrate
 
 The exclusion model of unwinding for hexameric helicases suggests that the tracking strand passes through the central pore of the hexameric protein and the non-tracking will be excluded. Thus, a labeling of the tracking strand might affect the unwinding reaction since the fluorophore would have to pass through the central channel. We tested this possibility by comparing average unwinding times of a substrate with labels at the tracking and non-tracking strand (Figure 1—figure supplement 1a) as well as with labels just at the non-tracking strand (Figure 1—figure supplement 1b). The average unwinding time of both substrates at [ATP]=1 mM agreed very well within error (tavg(tracking +non tracking) = 0.57 ± 0.22 s and tavg(double-labeled non-tracking)=0.59 ± 0.21 s). However, the accessible FRET range in the case of the double-labeled non-tracking strand was significantly smaller (FRET efficiencies between 0.3 and 0.7, Figure 1—figure supplement 1b) in contrast to the labeling at both DNA strands (FRET efficiencies between 0.95 and 0.11, Figure 1—figure supplement 1a). A larger FRET efficiency range allows a higher resolution. Taking the higher resolution into account and the non-detectable difference in unwinding time between both substrates, further experiments were conducted with substrate where both DNA strands were labeled (Figure 1—figure supplement 1a).
 
-## Unwinding initiation time depends linearly on the protein concentration
+### Unwinding initiation time depends linearly on the protein concentration
 
 Figure 1b and Figure 1—figure supplement 1c show typical unwinding traces after adding a solution containing G40P and 1 mM ATP at time tinject to the imaging chamber with immobilized DNA molecules. Unwinding begins after a delay (FRET starts to decrease as indicated by a decrease in donor signal and a concomitant increase in acceptor signal), which we call the unwinding initiation time, tinit. Unwinding itself takes a finite amount of time, tunw, during which FRET decreases to the lowest level and the total fluorescence signal disappears. The average tinit ranged from 6.6 s to 88 s as the protein concentration (in hexamer) is varied and is much longer than the average tunw ≈ 0.55 s at saturating [ATP]=3 mM. Therefore, unwinding events can be attributed to the action of a single functional unit of the helicase, which we presume to be a hexamer. The unwinding initiation rate, defined as the inverse of average tinit, increased linearly with protein concentration (Figure 1—figure supplement 1d). In contrast, the average tunw did not show a significant dependence on protein concentration (inset Figure 1—figure supplement 1d). The linear relation between the protein concentration and the initiation rate indicates that G40P is loaded as a preassembled hexamer instead of being assembled on the DNA in situ. Further support for the hexamer loading is provided by additional experiments blocking the free ssDNA end of the forked DNA with anti-digoxigenin (sketch in Figure 1—figure supplement 1e). At [ATP]=1 mM and [G40P6]=60 nM, the percentage of single-molecule FRET traces that show unwinding events was reduced from 42% to 4.7% after incubation of the digoxigenin modified DNA construct with [anti-digoxigenin]=0.1 mg/mL followed by washing out of unbound anti-digoxigenin (Figure 1—figure supplement 1e).
 
-## ATP titration with ADP as competitive inhibitor
+### ATP titration with ADP as competitive inhibitor
 
 As expected, lowering the ATP concentration, from 3 mM to 75 µM, significantly increased tunw (Figure 1—figure supplement 1f, [hexamer]=60 nM). The unwinding rate kunw, defined as the inverse of average tunw, vs. ATP concentration (red squares Figure 1—figure supplement 1h) curve could be well-fitted using the Michaelis-Menten equation, yielding an apparent Michaelis-Menten constant Km = 87 ± 9 µM and a maximum unwinding rate kunw = 1.91 ± 0.05 s−1. Including ADP in the reaction increased the apparent Km to 191 ± 14 µM and 272 ± 36 µM at 0.5 mM and 1 mM ADP, respectively (Figure 1—figure supplement 1g and h) with little change in the maximum unwinding rate kunw([ADP]=0.5 mM)=2.01 ± 0.04 s−1 and kunw([ADP]=1 mM)=1.91 ± 0.07 s−1. A fit to the more general Hill-equation to the ATP titration results in a Hill coefficient n = 1.2 ± 0.2 (dashed line in Figure 1—figure supplement 1h). A Hill coefficient of 1 implies that either each identical subunit can bind ATP and hydrolyze completely independent of each other (no binding cooperativity between the subunits) or that for every step one or more subunits can bind ATP successively and in coordination but not cooperatively (Schnitzer and Block, 1997). It is important to note that a Hill coefficient of 1 does not imply that only one ATP is bound per enzymatic cycle, but that binding of one ATP neither facilitates nor hinders binding of more ATP (Moffitt et al., 2009).
 
-## FRET calibration
+### FRET calibration
 
 FRET vs number of unwound base pairs was calibrated with the substrates 4AT4GC, 7AT33GC, 10AT30GC and 13AT27GC (Figure 1—figure supplement 2c). All substrates allowed G40P only partial unwinding, for example the AT base pairs were unwound, followed by a stall at the GC base pairs. The stalling FRET level was determined through averaging over at least five data points at stalling events during an unwinding attempt (Figure 1—figure supplement 2e through h). The FRET level distributions (Figure 1—figure supplement 2d) were fitted with Gaussian distributions, yielding a FRET level of EFRET(4AT) = 0.73 ± 0.05 (± σ), EFRET(7AT)=0.61 ± 0.05, EFRET(10AT) = 0.48 ± 0.04, EFRET(13AT) = 0.24 ± 0.04 and a donor leakage of EFRET(leakage)=0.11 ± 0.02. The GC base pair induced peaks fall within error on our intrinsic calibration (Figure 1—figure supplement 2e) leading to the conclusion that G40P unwinds dsDNA in one base pair step size. Figure 1—figure supplement 2e through h show example traces with 4AT, 7AT, 10AT and 13AT bp, respectively, followed by a GC bp stretch.
 
-## G40P ATPase activity and ATP and ATPγS affinity
+### G40P ATPase activity and ATP and ATPγS affinity
 
 ATPase activity of G40P was tested using EnzChek Phosphate Assay Kit (Invitrogen). The solution conditions were 20 mM Tris-HCl, 50 mM NaCl and either 10 mM MgCl2 or 10 mM MnCl2 and 1 mM ATP. G40P showed without ssDNA a significant ATPase activity that could be increased after addition of ssDNA (Figure 4—figure supplement 1a). This ATPase activity without ssDNA was suppressed with MnCl2 (Figure 4—figure supplement 1b).
 
-ATP and ATPγS affinity was determined using competitive titration as previously described by Aregger and Klostermeier (2009). We preformed complexes of G40P and Mant-ADP (Invitrogen) in 1:1 molar ratio (1 µM G40P hexamer, 1 µM mant-ADP). The final buffer conditions for the competitive titration was: 20 mM Tris-HCl pH 8, 50 mM NaCl, 10 mM MnCl2. Mant-ADP was excited at 360 ± 5 nm, Mant emission was observed at 440 ± 5 nm using Varian Cary Eclipse Fluorescence Spectrophotometer. The data was averaged over 5 s and five data points were taken and averaged. Addition of both, ATP or ATPγS, decreased the emission intensity indicating a competitive displacement of the prebound mant-ADP from G40P. The data was evaluated using a solution for a quadratic equation describing complex formation (Karow et al., 2007; Thrall et al., 1996) (Figure 4—figure supplement 1c):(1)F=F0+ΔFmax[Ltot]⋅([Etot]+[Ltot]+KD2−([Etot]+[Ltot]+KD2)2−[Etot][Ltot]),where F0 denotes the unbound mant fluorescence, ΔFmax is the fluorescence amplitude, [Etot] the total enzyme concentration and [Ltot] the total ligand concentration and KD the apparent dissociation constant. Both ligands showed similar affinity (ATPγS KD = 1.4 ± 0.9 µM, ATP KD = 3.5 ± 0.8 µM). Assuming that ATPγS is a non-hydrolysable inhibitor, an extended Michaelis-Menten scheme with the enzyme either partitioning into the ATP-bound state and unwinding, or into the inhibitory ATPγS-bound state can be used to describe ATPγS competition. The apparent KM,app = α * KM, with a = 1 + [ATPγS]/KD(ATPγS) and the binding probability for ATP fbound = [ATP]/ (KM,app +[ATP]) can be calculated. The probability p(at least 1 ATPγS)=1 p(only ATP)=1 - fbound6 is then readily calculated. Due to ATPγS independent stalls this probability was offset by a fitted variable and then describes in good agreement our observed ATPγS -induced stalls (Figure 4—figure supplement 1e inset).
+ATP and ATPγS affinity was determined using competitive titration as previously described by Aregger and Klostermeier (2009). We preformed complexes of G40P and Mant-ADP (Invitrogen) in 1:1 molar ratio (1 µM G40P hexamer, 1 µM mant-ADP). The final buffer conditions for the competitive titration was: 20 mM Tris-HCl pH 8, 50 mM NaCl, 10 mM MnCl2. Mant-ADP was excited at 360 ± 5 nm, Mant emission was observed at 440 ± 5 nm using Varian Cary Eclipse Fluorescence Spectrophotometer. The data was averaged over 5 s and five data points were taken and averaged. Addition of both, ATP or ATPγS, decreased the emission intensity indicating a competitive displacement of the prebound mant-ADP from G40P. The data was evaluated using a solution for a quadratic equation describing complex formation (Karow et al., 2007; Thrall et al., 1996) (Figure 4—figure supplement 1c):
 
-## Protein preparation
+$$
+F=F_{0}+\frac{ΔF_{max}}{[L_{tot}]}⋅(\frac{[E_{tot}]+[L_{tot}]+K_{D}}{2}−\sqrt{(\frac{[E_{tot}]+[L_{tot}]+K_{D}}{2})^{2}−[E_{tot}][L_{tot}]}),
+$$
+
+where F0 denotes the unbound mant fluorescence, ΔFmax is the fluorescence amplitude, [Etot] the total enzyme concentration and [Ltot] the total ligand concentration and KD the apparent dissociation constant. Both ligands showed similar affinity (ATPγS KD = 1.4 ± 0.9 µM, ATP KD = 3.5 ± 0.8 µM). Assuming that ATPγS is a non-hydrolysable inhibitor, an extended Michaelis-Menten scheme with the enzyme either partitioning into the ATP-bound state and unwinding, or into the inhibitory ATPγS-bound state can be used to describe ATPγS competition. The apparent KM,app = α * KM, with a = 1 + [ATPγS]/KD(ATPγS) and the binding probability for ATP fbound = [ATP]/ (KM,app +[ATP]) can be calculated. The probability p(at least 1 ATPγS)=1 p(only ATP)=1 - fbound6 is then readily calculated. Due to ATPγS independent stalls this probability was offset by a fitted variable and then describes in good agreement our observed ATPγS -induced stalls (Figure 4—figure supplement 1e inset).
+
+### Protein preparation
 
 G40P and DnaG were expressed and purified as described previously (Wang et al., 2008).

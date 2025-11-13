@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.28662.001 Focal cortical stroke often leads to persistent motor deficits, prompting the need for more effective interventions. The efficacy of rehabilitation can be increased by ‘plasticity-stimulating’ treatments that enhance experience-dependent modifications in spared areas. Transcallosal pathways represent a promising therapeutic target, but their role in post-stroke recovery remains controversial. Here, we demonstrate that the contralesional cortex exerts an enhanced interhemispheric inhibition over the perilesional tissue after focal cortical stroke in mouse forelimb motor cortex. Accordingly, we designed a rehabilitation protocol combining intensive, repeatable exercises on a robotic platform with reversible inactivation of the contralesional cortex. This treatment promoted recovery in general motor tests and in manual dexterity with remarkable restoration of pre-lesion movement patterns, evaluated by kinematic analysis. Recovery was accompanied by a reduction of transcallosal inhibition and ‘plasticity brakes’ over the perilesional tissue. Our data support the use of combinatorial clinical therapies exploiting robotic devices and modulation of interhemispheric connectivity.
+Focal cortical stroke often leads to persistent motor deficits, prompting the need for more effective interventions. The efficacy of rehabilitation can be increased by ‘plasticity-stimulating’ treatments that enhance experience-dependent modifications in spared areas. Transcallosal pathways represent a promising therapeutic target, but their role in post-stroke recovery remains controversial. Here, we demonstrate that the contralesional cortex exerts an enhanced interhemispheric inhibition over the perilesional tissue after focal cortical stroke in mouse forelimb motor cortex. Accordingly, we designed a rehabilitation protocol combining intensive, repeatable exercises on a robotic platform with reversible inactivation of the contralesional cortex. This treatment promoted recovery in general motor tests and in manual dexterity with remarkable restoration of pre-lesion movement patterns, evaluated by kinematic analysis. Recovery was accompanied by a reduction of transcallosal inhibition and ‘plasticity brakes’ over the perilesional tissue. Our data support the use of combinatorial clinical therapies exploiting robotic devices and modulation of interhemispheric connectivity.
 
 ## Introduction
 
@@ -35,15 +35,23 @@ In this manuscript, we define a rehabilitation protocol to promote ‘true’ re
 
 ## Results
 
-## Evolution of interhemispheric functional connectivity after stroke
+### Evolution of interhemispheric functional connectivity after stroke
 
 A focal ischemic lesion was induced in the primary motor cortex (M1) of mice, targeting the caudal forelimb area (CFA) by means of Rose Bengal-induced phototrombosis (Lai et al., 2015; Alia et al., 2016). No damage was observed in either the rostral forelimb area (RFA) or the posterior hindlimb motor cortex (Lai et al., 2015). The procedure led to a complete loss of neurons in all cortical layers of the illuminated hemisphere (Figure 1a). The lesion was typically restricted to the gray matter (see Nissl staining in Figure 1a). In a minority (about 25%) of the mice, partial damage was detected in the dorsal aspect of the white matter, as demonstrated by reduced staining for myelin basic protein (MBP; Figure 1a, inset).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig1-v2.jpg)
+
+**Figure 1.:** (a) Top: representative Nissl staining of a brain coronal section including the ischemic lesion. Bottom:example of MBP staining in a mouse with partial callosal lesion (indicated by dashed line). (b) Representative NeuN immunostaining of a coronal section indicating the position of the recording electrode in the RFA. (c) Schematic of the experimental protocol. Green triangles represent ChR2-expressing pyramidal neurons activated by blue light. (d) Representative Field Potential response in layer V of the RFA in sham (Black) and ischemic animals at 5 (Purple) and 30 (Red) days post stroke after single pulse stimulation in the contralateral RFA. (e, f) Mean amplitude of the early negative (e) and late positive (f) components of evoked field potentials in sham (Black) and ischemic animals at 5 (Purple) and 30 (Red) days post stroke. The inset illustrates quantification of the baseline-to-peak amplitude. The early component is smaller in ipsilesional RFA of stroke animals while the late positive waveis significantly higher at 30 days with respect to controls across all cortical layers (Two-way Anova, followed by Holm-Sidak test, *p<0.05; **p<0.01; ***p<0.001 between groups). Results from adjacent channels (depths) were pooled to show responses in superficial (Sup), Sup/Middle, Middle/deep and Deep layers. Data are mean ±SE.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Representative layer V Field Potential (FP) response recorded in the RFA of a healthy animal in baseline conditions (Black), and 30 min after topical application of 2 µl of either CGP 55845 10 µM (Orange) or CNQX 1 mM (Blue). (b, c) Amplitude of the first negative (b) and late positive component (c) of the FP recorded in healthy mice before and after CGP application in a deep electrode (Layer V, *p<0.05 Paired T-Test). (d) Mean amplitude of the first negative component recorded in sham animals (Black) and in the injured hemisphere of stroke mice (Red) in response to contralateral light stimulation with increasing percentage of the maximum light power (10 mW). The field amplitude increased with light power intensity in both groups but after stroke the slope was lower. *p<0. 05, **p<0.01 (Two-way Repeated Measures Anova, followed by Tukey test, sham vs stroke). Data are mean ±SE.
 
 We first examined changes in interhemispheric interactions between the contralesional and ipsilesional RFAs at different times after stroke (5 and 30 days). We used optogenetic stimulation of the contralesional RFA in Thy1-ChR2 mice expressing the light-activated cation channel ChR2 mainly in layer V pyramidal neurons. We recorded Local Field Potentials (LFPs) and Multi Unit Activity (MUA) in the ipsilesional RFA of ischemic and sham animals. Extracellular recordings were performed with 16-channel silicon probes (Figure 1b,c). In deep layers, single-pulse stimulation evoked a FP with two main components: (i) an early negative wave, peaking between 17 and 26 ms after stimulation and (ii) a late positive component, peaking between 40 and 60 ms (Figure 1—figure supplement 1a, black trace). Pharmacological dissection of the two components indicated that the early negative-going FP is due to direct transcallosal excitation, while the late positive peak corresponds to disynaptic inhibition of target neurons via local GABAergic cells (Restani et al., 2009; Palmer et al., 2012). Indeed, local delivery over the cortex of the GABA-B antagonist CPG55845 in naïve mice had no significant effect on the negative-going FP (Figure 1—figure supplement 1a,b) but substantially reduced the positive-going component (Figure 1—figure supplement 1a,c), consistent for a role of GABA-B signaling in interhemispheric inhibition (Irlbacher et al., 2007; Palmer et al., 2012).Topical application over the cortex of CNQX, a blocker of glutamatergic transmission, completely abolished the responses, confirming the post-synaptic origin of the recorded FPs (Figure 1—figure supplement 1a, blue trace). Altogether, these data demonstrate that the first phase of the evoked potential corresponds to a volley of transcallosal excitation in the RFA which leads to local activation of GABAergic cells and subsequent GABA-B dependent inhibition of cortical neurons (i.e. outward currents resulting in late positive peaks in the FPs).
 
 We next quantified changes in the evoked FPs in sham and stroke animals (5 and 30 days after stroke) to determine the evolution of interhemispheric functional connectivity. Analysis of the initial, negative component demonstrated that the FP amplitude was dramatically dampened in stroke animals at 5 days (two way ANOVA, followed by Holm-Sidak test, p<0.05; Figure 1d,e), possibly due to connectional diaschisis (Carrera and Tononi, 2014). Despite this reduced transcallosal volley, there was a trend for enhanced amplitude of positive-going FP (Figure 1d,f). At 30 days after stroke, the main negative wave was partly reinstated, but still significantly lower with respect to sham controls (two way ANOVA, followed by Holm-Sidak test, p<0.05; Figure 1d,e). Quantification of the late positive component showed greater amplitudes in stroke animals at 30 days, with difference maximized in the central-deep layers (two way ANOVA, followed by Holm-Sidak test, p<0.05; Figure 1f). Altogether these data demonstrate an imbalance in interhemispheric connectivity early after stroke, with weaker direct excitation but paradoxical enhancement of transcallosally mediated inhibition.
 
-## Reduced excitation and enhanced inhibition from the intact to the stroke hemisphere
+### Reduced excitation and enhanced inhibition from the intact to the stroke hemisphere
 
 We went on to further characterize the changes in interhemispheric interactions at 30 days after the infarct. Determination of input/output curves (i.e. amplitude of the negative-going FP vs. intensity of stimulation) established that the amplitude of the response progressively increased with light intensity in both healthy and stroke mice. However, the responses of ischemic animals were scaled down and reached saturation earlier (n = 5 Stroke and n = 5 Sham animals, two way ANOVA, followed by Tukey test, p<0.05; Figure 1—figure supplement 1d).
 
@@ -51,7 +59,7 @@ To determine the laminar location and direction of the membrane currents underly
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig2-v2.jpg)
 
-**Figure 2.:** (a) Current source density (CSD) analysis of the cortical field potential response to optogenetic stimulation, in naïve (top) and stroke mice (bottom). Warm colours (yellow and red) represent current sinks and cool colours (dark and light blue) represent current sources. Blue bars represent the light pulse. Roman numerals indicate cortical layers. (b) Multi Unit Activity (MUA) triggered by single-pulse stimulation across all cortical layers in the target hemisphere in sham (top) and stroke (bottom) mice. Please note the lower MUA values in infragranular layers of stroke animals with respect to controls. (c) Representative Field Potential (FP) response recorded in layer V of the ipsilesional (Red) and contralesional cortex (Blue) of a stroke animal after transcallosal stimulation. The field response in a control, naïve animal (Black trace) is reported for comparison. (d, e) Amplitude of the first negative (d) and late positive component (e) of the FP recorded in the healthy hemisphere (Healty) after stimulation of the stroke side and vice versa (Sham/Lesioned). Note the robust asymmetry in interhemispheric communication in stroke mice. Paired T test, *p<0.05; **p<0.01.10.7554/eLife.28662.007Figure 2—source data 1.Figure 2.
+**Figure 2.:** (a) Current source density (CSD) analysis of the cortical field potential response to optogenetic stimulation, in naïve (top) and stroke mice (bottom). Warm colours (yellow and red) represent current sinks and cool colours (dark and light blue) represent current sources. Blue bars represent the light pulse. Roman numerals indicate cortical layers. (b) Multi Unit Activity (MUA) triggered by single-pulse stimulation across all cortical layers in the target hemisphere in sham (top) and stroke (bottom) mice. Please note the lower MUA values in infragranular layers of stroke animals with respect to controls. (c) Representative Field Potential (FP) response recorded in layer V of the ipsilesional (Red) and contralesional cortex (Blue) of a stroke animal after transcallosal stimulation. The field response in a control, naïve animal (Black trace) is reported for comparison. (d, e) Amplitude of the first negative (d) and late positive component (e) of the FP recorded in the healthy hemisphere (Healty) after stimulation of the stroke side and vice versa (Sham/Lesioned). Note the robust asymmetry in interhemispheric communication in stroke mice. Paired T test, *p<0.05; **p<0.01.
 
 The current sinks were consistently dampened in the RFA of ischemic animals at 30 days (Figure 2a), in keeping with reduced response of recorded neurons to direct transcallosal excitation from the contralesional to the stroke side. To strengthen this conclusion we quantified MUA activity in RFA of healthy and stroke animals following stimulation of the contralateral homotopic area. The analysis revealed robust stimulus-evoked response at a depth corresponding mainly to cortical layer V in control mice (Figure 2b, top). This activity was substantially reduced in stroke mice (Figure 2b, bottom).
 
@@ -59,11 +67,31 @@ To confirm an asymmetry of interhemispheric communication after stroke, in a sub
 
 We next focused on the stroke-induced enhancement of transcallosal inhibition in the ipsilesional side. As expected, local delivery over the cortex of the GABA-B antagonist CPG55845 potently reduced the positive-going FP 30 days after stroke (Figure 3a,b), while the early negative wave was slightly increased (Figure 3—figure supplement 1). We reasoned that the late outward, hyperpolarizing currents (see CSD analysis, Figure 2a) should short-circuit the excitatory input carried by a second, closely spaced stimulus leading to paired-pulse depression (PPD). Indeed, using two optogenetic stimuli delivered at Inter-Stimulus Intervals (ISIs) of 50, 100 and 200 ms, we observed in healthy animals a decrease in the magnitude of the synaptic response to the second stimulus, indicating PPD which was maximal at 50 ms (n = 5 animals, Figure 3—figure supplement 2). Thus we compared the Paired Pulse Ratio (PPR), that is, the ratio of the second to the first postsynaptic response at an ISI of 50 ms in control and stroke mice at 30 days (Figure 3c). The PPR was significantly lower in stroke animals with respect to controls, consistent with enhanced transcallosal inhibition in ischemic vs. sham animals (Figure 3d). The field PPR results were confirmed by performing the same analysis with MUA. As shown in Figure 3e, in sham animals (n = 5) we observed a depressed response to the second stimulus with respect to the first but the depression was enhanced after stroke (n = 5). In particular, the PPR was significantly lower in middle-deep layers of stroke animals (T test, p<0.05).
 
-## Silencing of the healthy hemisphere partially improves motor outcomes after stroke
+![Figure 3.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig3-v2.jpg)
+
+**Figure 3.:** (a) Representative Field Potential response to single pulse stimulation in the contralateral RFA in layer V of the RFA in ischemic animals before (Red) and after (Grey) application of the GABA-B antagonist CGP 55845. (b) Mean amplitude of the late positive component of evoked FP before (red) and after (Grey) application of the GABA-B antagonist CGP 55845. The late positive component is significantly lower after CGP55845 application (Two-way Anova, followed by Holm-Sidak test, stroke vs Post-CGP55845, *p<0.05; **p<0.01; ***p<0.001). Data are mean ±SE. (c) Representative Field Potential response evoked by paired pulse stimulation (50 ms inter-stimulus interval) recorded in the RFA of a sham (Black) and astroke (Red) animal. A1 and A2 represent the amplitude of the first and second response, respectively. (d) Paired Pulse ratio was consistently lower in ischemic (Red) versus healthy animals (Black). ***p<0.001 (Two-way Repeated Measures Anova followed by Holm-Sidak test, sham vs stroke). Data are mean ±SE. (e) MUA triggered by 50 ms ISI paired-pulse stimulation across all cortical layers in the target hemisphere in sham (top) and stroke (bottom) mice. Please note the increased paired-pulse depression in stroke animals with respect to controls, in middle-deep layers (p<0.05, T test). Roman numerals indicate cortical layers.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Mean amplitude of the early negative component of evoked FP before (red) and after (Grey) application of the GABA-B antagonist CGP 55845 (Two-way Anova, followed by Holm-Sidak test, stroke vs Post-CGP55845, *p<0.05; **p<0.01; ***p<0.001).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Mean paired pulse ratio, calculated as the ratio of the second to the first postsynaptic response (A2/A1) at increasing inter-stimulus intervals (50, 100 and 200 ms) in healthy animals. Data are mean ±SE.
+
+### Silencing of the healthy hemisphere partially improves motor outcomes after stroke
 
 The data reported so far clearly indicate that the ischemic event perturbs the balance between the two hemispheres. To restore such a balance we performed a focused inactivation of the forelimb motor cortex in the contralesional hemisphere by means of intracortical injections of the synaptic blocker Botulinum Neurotoxin E (BoNT/E). This neurotoxin is known to block neurotransmission preferentially in excitatory terminals by SNAP-25 cleavage (Costantin et al., 2005; Caleo et al., 2007).
 
 To evaluate the spread of toxin activity in the motor cortex, we injected a group of 5 naïve mice into the CFA and we sacrificed them 2 days post injection (Caleo et al., 2007; Antonucci et al., 2010) for tissue processing. We performed immunostaining for intact and cleaved SNAP-25 (Figure 4a,c,d and b,e,f, respectively). We found that SNAP-25 cleavage was evident along all cortical layers and spanned the entire CFA. We then characterized the duration of BoNT/E activity in the motor cortex by collecting tissue samples of the injection site at different times after surgery. Western Blot analysis indicated persistence of cleaved SNAP-25 for at least 10 days after injection (Figure 4g). Behavioral analysis of motor function in naïve mice (n = 5) injected unilaterally with BoNT/E showed a transient deficit in performance of the contralateral forelimb (evaluated with Gridwalk and Schallert Cylinder tests), which was significant on day two post-injection (two way RM ANOVA followed by Tukey test, Day 2 Gridwalk p=0.014, Schallert p=0.03; Figure 4—figure supplement 1a,b), consistent with high levels of cleaved SNAP-25 (Figure 4g). Performance returned to baseline on day 9 (Gridwalk p=0.251 and Schallert p=0.781) and remained stable up to 30 days post-injection (Figure 4—figure supplement 1a,b).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig4-v2.jpg)
+
+**Figure 4.:** Immunofluorescence staining for intact (a) and cleaved (b) SNAP-25. Magnification of the injection site showed the nearly total absence of intact SNAP-25 (c) whereas the cleaved SNAP-25 signal is consistent (e). Conversely, in the peri-injection site there is a conspicuous amount of intact SNAP-25 (d), but no signal from cleaved SNAP-25 (f). (g) Representative immunoblotting for intact (25 KDa) and cleaved (22 KDa) SNAP-25 on cortical protein extracts from injected mice. Tissues were harvested from the treated area at different days post-injection (dpi 2, 5, 10 and 21), from the motor cortex contralateral to the injection side (contra) and from a control animal (sham). Each lane represents one animal. a-Tub means α-Tubulin (internal standard). (h) Pre- and post-lesion performance of the stroke untreated (Red) and BoNT/E injected (Orange) groups measured as the percentage of contralesional forelimb foot faults in the Gridwalk task (upper panel) and as Asymmetry Index in the SchallertCylinder test (lower panel). *p<0.05, **p<0.01 vs stroke untreated (Two-way Repeated Measures Anova, followed by Holm-Sidak test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Motor performance before and after intracortical injection of BoNT/E (BoNT naïve, green) or sham surgey (black) in normal mice measured as the percentage of contralateral forelimb foot faults in the Gridwalk task. (b) Pre- and post-injection performance of the sham (Black) and BoNTnaïve (Green) groups measured as Asymmetry Index in the Schallert Cylinder test. *p<0.05 (Two-way Anova followed by Tukey test, Sham vs BoNT).
 
 In order to assess the effect of the sole inactivation of the contralesional hemisphere, a group (n = 5, BoNT) of animals subjected to photothrombosis received, in the same surgery, intracortical infusion of BoNT/E (Figure 5). We assessed motor performances of these animals once a week with classical behavioural tests, Gridwalk and Schallert Cylinder test, up to 30 days post lesion. Motor performances were compared with those of untreated stroke animals (n = 11). As shown in Figure 4h, the silencing of the healthy hemisphere led to functional gains in the Gridwalk test but was completely ineffective in the Schallert Cylinder task. In the Gridwalk test, the BoNT/E-treated group was superior to untreated stroke at several time points (two way RM ANOVA followed by Tukey test, day 9 p=0.05, day 16 p=0.002, day 23 p=0.001). However, at 30 days the BoNT group was not distinguishable from untreated stroke (p=0.094). In the Schallert Cylinder test, the deficit measured at day two in BoNT/E-treated animals was lower than in untreated stroke (two way repeated measures ANOVA followed by Tukey test, p<0.05; Figure 4h, lower panel). Since the Cylinder test measures the asymmetry in the forelimb use, this acute effect is likely due to synaptic silencing of the contralesional cortex (consistent with the data shown in Figure 4—figure supplement 1). However, over time the deficit in performance of BoNT/E-injected mice caught up with that measured in untreated stroke controls (two way RM ANOVA followed by Tukey test, day 30, BoNT/E vs. untreated stroke, p=0.903).
 
@@ -71,11 +99,19 @@ In order to assess the effect of the sole inactivation of the contralesional hem
 
 **Figure 5.:** Baseline performances in behavioral tests were assessed for all groups before the surgery and then once a week up to 30 days post lesion (black arrows). Stroke animals with no treatment were included in each experimental cohort (a). In the BoNT group (b), photothrombosis was immediately followed by BoNT/E injection into the contralesional hemisphere with toxin effect lasting >10 days (purple box). In the Robot group (c), the metal post for head fixation on the robotic platform was applied immediately after the photothrombotic lesion. Animals started the daily robotic training (green bars) from day 5, 4 days per week up to 30 days post lesion. In the Robot + BoNT group (d), mice received BoNT/E injection into the contralesional hemisphere and head-post application during the stroke surgery, and were subjected to robotic rehabilitation as the Robot group. A subset of animals in the Robot and Robot + BoNT group were also tested 40 days post-stroke to probe the persistence of the therapeutic effects (follow-up phase with no treatment).
 
-## Robotic rehabilitation promotes task-specific forelimb improvements not generalized to other motor functions
+### Robotic rehabilitation promotes task-specific forelimb improvements not generalized to other motor functions
 
 We next investigated the impact of physical rehabilitation by subjecting the affected forelimb of stroke mice to daily controlled, repeatable and targeted exercises, guided by the M-Platform (Figure 5c), previously designed and characterized in our laboratory (Spalletti et al., 2014). This device allows head-restrained mice to perform several sessions of forelimb retraction with the possibility to monitor the motor performance and collect quantitative parameters, such as the time required to accomplish the task (t-target) or the number of attempts (i.e. the number of force peaks not resulting in a displacement of the handle). Here, we used this device to train injured mice and to evaluate whether the effect of the training could be generalized to other forelimb tasks. The acute effect of the lesion was evaluated two days after surgery with Schallert and Gridwalk tests while the daily robotic training started from day five and continued four days a week up to day 30 (n = 10 mice; Figure 5c). Consistent with previous results (Spalletti et al., 2014), the daily robotic training induced an improvement in the parameters related to the retraction task on the M-Platform (Figure 6—figure supplement 1a,b). However, we found that this improvement was not generalized to other forelimb task, as demonstrated by the lack of recovery in Schallert and Gridwalk tests, where the motor deficit remained stable over the observation period (Figure 6a,b).
 
-## Robotic training combined with transient inactivation of contralesional hemisphere triggers ‘true’ motor recovery
+![Figure 6.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig6-v2.jpg)
+
+**Figure 6.:** (a) Pre- and post-lesion performance of Robot (Light Blue) and Robot+BoNT (Blue) groups measured as the percentage of contralesional forelimb foot faults in the Gridwalk task. ***p<0.001 (Two-way Repeated Measures Anova, followed by Tukey test, Robot vs Robot+BoNT). (b) Pre- and post-lesion performance of Robot (Light Blue) and Robot+BoNT (Blue) groups measured as Asymmetry Index in the Schallert Cylinder test. ***p<0.001 (Two-way Anova followed by Tukey test, Robot vs Robot+BoNT). (c, d) Maintenance of the motor performances in the Gridwalk (c) and Schallert Cylinder (d) tests after 10 days of Follow-Up with no treatment. The Robot+BoNT group (Blue) remains significantly different from Robot (Light Blue) at day 40 (Two-way Repeated Measures Anova, followed by Tukey test between groups, Gridwalk p<0.001, Schallert Cylinder p<0.05).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** T-target (a) and number of attempts (b) in the Robot group after stroke. All animals were tested daily on the robotic platform, 4 days per week starting from day five post lesion. Parameters were pooled across weeks of training. Note the significant improvements at the end of the training in both parameters. **p<0.01 (Mann-Whitney Rank Sum Test).
+
+### Robotic training combined with transient inactivation of contralesional hemisphere triggers ‘true’ motor recovery
 
 We finally tested a combined approach by coupling daily robotic rehabilitation with BoNT/E injection into the contralesional hemisphere (Figure 5d). In Figure 6a,b, motor performances in the Gridwalk and the Schallert Cylinder tests are reported for Robot and Robot+BoNT (n = 11) groups. In both tests, Robot+BoNT mice showed significant improvements, especially at day 30 (two way repeated measures ANOVA followed by Tukey test, Robot+BoNT vs Robot, Gridwalk p<0.001, Schallert p<0.05).
 
@@ -85,25 +121,45 @@ To directly compare the effectiveness of the combined treatment vs. either thera
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig7-v2.jpg)
 
-**Figure 7.:** Percentage of contralesional forelimb foot faults in the Gridwalk task (a) and Asymmetry Index in the Schallert Cylinder test (b) at 30 days post lesion for stroke untreated (Red), Robot (Light Blue), BoNT (Orange) and Robot+BoNT (Blue). One-Way Anova followed by Tukey Test, *p<0.05, **p<0.01, ***p<0.001.10.7554/eLife.28662.024Figure 7—source data 1.Figure 7.
+**Figure 7.:** Percentage of contralesional forelimb foot faults in the Gridwalk task (a) and Asymmetry Index in the Schallert Cylinder test (b) at 30 days post lesion for stroke untreated (Red), Robot (Light Blue), BoNT (Orange) and Robot+BoNT (Blue). One-Way Anova followed by Tukey Test, *p<0.05, **p<0.01, ***p<0.001.
 
 To further characterize the impact of the combined therapy, animals were also tested in the Single Pellet Retrieval task (Lai et al., 2015). They were pre-trained during 2–3 weeks post-stroke and then tested weekly after the infarct to examine (i) the percentage of correct graspings and (ii) the kinematics of reaching. Robot+BoNT animals (n = 5) were compared to untreated stroke mice (n = 6). We found that the percentage of errors in the Single Pellet Retrieval task increased 2 days after stroke but was recovered in the animals with combined therapy at 16 days and remained stable at 30 days (Two way RM ANOVA followed by Tukey test vs Baseline, p=0.55 at day 16 and p=0.989 at day 30; Figure 8—figure supplement 1). Recovery of prehension was significantly more robust in the Robot+BoNT group as compared to untreated stroke (p<0.01; Figure 8—figure supplement 1).
 
 More importantly, the motor recovery in the Robot+BoNT mice was accompanied by the normalization of several kinematic parameters of reaching (illustrated in Figure 8a and d). In particular, the total length of the trajectory (ArcLen) appeared to recover at day 23 post lesion in Robot+BoNT group (Figure 8b, two way ANOVA followed by Tukey’s test vs Baseline, p=0.08). A significant improvement was also reported at day 30 for the total area spanned by the trajectory (AUC) (Figure 8c, p=0.49). Of note, a significant restoration of pre-lesion values was also detected for the mean speed and for the smoothness of the reaching movement (Figure 8e and f, p=0.31 at day 16 and p=0.17 at Day 30 for Mean Speed and Smoothness respectively). ArcLen, AUC and mean speed measured at 30 days in the Robot+BoNT group were also significantly different from the untreated stroke group (two way repeated measures ANOVA followed by Tukey test, p<0.001). Importantly, improvements in kinematic parameters gradually emerged over time suggesting an interaction between training and contralesional cortex inactivation. Differences between the treated and control animals were not due to different extent of lesion, as the deficits on day two were equivalent (Figure 8) and the ischemic volumes were superimposable between the groups (T test p=0.702, Figure 8—figure supplement 2).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig8-v2.jpg)
+
+**Figure 8.:** (a) Schematic representation of the reaching trajectory showing pellet position (green dot) and the frontal aperture of the testing cage (Blue line). AUC, Area Under the Curve; ArcLen, length of the curve. Longitudinal variation of ArcLen (b) and AUC (c) computed from reaching movement trajectories in untreated stroke (Red) and Robot+BoNT (Blue) groups. (d) Representative speed profile during reaching. Mean Speed and Smoothness of movement are indicated (Black line and arrows). Longitudinal variation of Smoothness (e) and Mean Speed (f) computed from reaching movement trajectories in untreated stroke (Red) and Robot+BoNT (Blue) groups. Note the substantial amelioration of the parameters in the combined treatment group. Values are normalized by subtracting baselines and plotted as the means ± standard error.Two way repeated measures ANOVA followed by Tukey test vs Baseline *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Percentage of errors (i.e. missed and dropped pellets) in the Single Pellet Retrieval test before and after the ischemic lesion in untreated stroke (Red) and Robot+BoNT (Blue) groups. Data are normalized by subtracting baseline values and plotted as the means ± standard error (Two-way Anova followed by Holm-Sidak test vs Baseline, *p<0.05, **p<0.01, ***p<0.001).
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Mean volumes of the photothrombotic lesion quantified with Hoechst immunostaining as the amount of dead tissue in mm3. T test, p=0.318.
+
 Overall these data demonstrate a remarkable synergic effect of physical robotic rehabilitation and healthy hemisphere silencing in restoring pre-lesion forelimb movement patterns.
 
-## The combined treatment reduces the expression of ‘plasticity brakes’ in the perilesional tissue
+### The combined treatment reduces the expression of ‘plasticity brakes’ in the perilesional tissue
 
 To identify potential mechanisms underlying recovery, we carried out an immunohistochemical analysis of plasticity markers in the perilesional cortex of stroke untreated and Robot+BoNT groups. We performed staining for GABAergic interneurons (Somatostatin and parvalbumin-positive, SOM+ and PV+ cells) and Myelin Basic Protein (MBP), two well known plasticity ‘brakes’ (Bavelier et al., 2010), at 30 days post lesion. We found that the density of PV+ cells were decreased after stroke (n = 8) with respect to sham condition (n = 7,T test, p<0.001). The Robot+BoNT treatment further accentuated this decline and the number of PV+ cells was significantly lower with respect to untreated stroke (n = 6, Figure 9a,b; T test, p=0.045). The same trend was found for another important class of inhibitory interneurons, the SOM+ population. The number of these cells is significantly lower after stroke with respect to sham (n = 6 sham and n = 4 stroke untreated; T test, p<0.001) but in the rehabilitated group was even more diminished (n = 6; Figure 9c,d; T test, p=0.014). Another important marker of cortical plasticity is MBP, one of the major myelin components (Bartholdi and Schwab, 1998; McGee et al., 2005; Kim et al., 2009). We compared MBP expression between stroke untreated (n = 3) and Robot+BoNT (n = 4) groups 30 days after injury. We found a significant MBP decrease in the combined treatment group (Figure 9e,f; T test, p=0.045), pointing to a more plastic state of the perilesional tissue in the rehabilitated animals.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig9-v2.jpg)
 
-**Figure 9.:** The number of PV+ cells decreased with combined treatment (a) as shown by representative micrographs of the counting region (b; Robot+BoNT n = 6, untreated stroke n = 8). Consistently, the number of SOM+ cells in the perilesional tissue was also decreased after combined therapy (c) and d), Robot+BoNT n = 6, untreated stroke n = 4). The mean fluorescence of MBP staining indicated that the rehabilitated animals (n = 4) have less MBP in the perilesional cortex with respect to non-rehabilitated group (n = 3) (e and f). In a and c, the dotted lines indicate the range of values for naïve, unlesioned mice. Data are mean ±SE. (T test *p<0.05).10.7554/eLife.28662.032Figure 9—source data 1.Figure 9.
+**Figure 9.:** The number of PV+ cells decreased with combined treatment (a) as shown by representative micrographs of the counting region (b; Robot+BoNT n = 6, untreated stroke n = 8). Consistently, the number of SOM+ cells in the perilesional tissue was also decreased after combined therapy (c) and d), Robot+BoNT n = 6, untreated stroke n = 4). The mean fluorescence of MBP staining indicated that the rehabilitated animals (n = 4) have less MBP in the perilesional cortex with respect to non-rehabilitated group (n = 3) (e and f). In a and c, the dotted lines indicate the range of values for naïve, unlesioned mice. Data are mean ±SE. (T test *p<0.05).
 
-## Reduction of transcallosal inhibition in the combined treatment group
+### Reduction of transcallosal inhibition in the combined treatment group
 
 We finally tested whether the combined therapy affects the enhanced interhemispheric inhibition following ischemia. We added a second Robot+BoNT group of Thy1-ChR2 transgenic mice (n = 5) and we verified the functional recovery with the Gridwalk test (Figure 10—figure supplement 1, two way ANOVA followed by Tukey’s test vs Baseline, Day 23 p=0.05, Day 30 p=0.06). At the end of the treatment (30 days post-lesion), we recorded in the perilesional RFA FPs evoked by optogenetic stimulation of the contralesional cortex (Figure 10a). Both the CSD and the LFP quantification show that the early negative component of the FP (reflecting direct transcallosal excitation) was not rescued in the Robot+BoNT mice and only partly recovered in deep layers (two way ANOVA followed by Tukey’s test p=0.089, Figure 10b,c). However, the late positive component (indicating transcallosal, GABA-B mediated inhibition; see Figure 3a,b) was almost completely normalized in the combined therapy group. In particular, the amplitude of the positive-going FP was significantly reduced with respect to untreated stroke in superficial/middle and middle/deep layers (two way ANOVA followed by Tukey’s test, p=0.009). Moreover, it was comparable to sham animals across all the cortical layers (Figure 10b,d). In keeping with these data, also the PPD was rescued in Robot+BoNT mice in superficial/middle, middle/deep and deep layers, as shown from the PPD ratio of the field potential (two way ANOVA followed by Tukey’s test, Robot+Bont vs Stroke untreated, p<0.01, Figure 10e). This recovery was appreciable also in the MUA analysis (Figure 10f). Altogether these data indicate a selective normalization of inter-hemispheric inhibition in stroke animals with combined therapy.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig10-v2.jpg)
+
+**Figure 10.:** (a) Representative Field Potential response in layer V of the RFA in sham (Black), stroke untreated (Red) and Robot+BoNT (Blue) animals after single pulse stimulation in the contralateral RFA. (b) Current source density analysis of the cortical field potential response to optogenetic stimulation, in stroke untreated (top) and Robot+BoNT (bottom) groups. Warm colors (yellow and red) represent current sinks and cool colors (dark and light Blue) represent current sources. (c, d) Mean amplitude of the early negative (c) and late positive (d) components of evoked field potentials in sham (Black), stroke untreated (Red) and Robot+BoNT (Blue) group. Results from adjacent channels (depths) were pooled to show responses in superficial (Sup), Sup/Middle, Middle/deep and Deep layers. The early FP component in the ipsilesional RFA of rehabilitated animals is comparable to sham only in layer V (p=0.089), while the late positive wave is comparable to controls in superficial/middle to deep layers (sup p=0.436, sup./middle p=0.07, middle/deep p=0.179, deep p=0.676) and significantly lower with respect to stroke untreated in middle layers (sup./middle p=0.009, middle/deep p=0.002, Two-way Anova, followed by Tukey test between groups). (e) Paired Pulse ratio in Robot+BoNT(Blue) was comparable to sham across all the cortical layers (sup p=0.659, sup./middle p=0.267, middle/deep p=0.164, deep p=0.197, Two-way Anova, followed by Tukey test between groups) and significantly different from stroke untreated except from superficial layers (sup./middle p=0.006, middle/deep p=0.001, deep p=0.005, Two-way Anova, followed by Tukey test, Robot+BoNT vs Stroke untreated). *p<0.05; **p<0.01; ***p<0.001, data are mean ±SE. (f) MUA triggered by 50 ms ISI paired-pulse stimulation across all cortical layers in the target hemisphere in sham (top), stroke untreated (middle) and Robot+BoNT (bottom) mice. MUA values are normalized to the first peak response value, for each channel separately. Roman numerals indicate cortical layers.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/28662/elife-28662-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Pre- and post-lesion performance of the Robot+BoNT_ChR2 group measured as the percentage of contralesional forelimb foot faults in the Gridwalk task. Motor performances were improved by the combined treatment starting from day 16 and similar to Baseline at day 30 post lesion (p=0.06). One-way repeated measures Anova followed by Tukey test, vs Baseline *p<0.05, **p<0.01, ***p<0.001.
 
 ## Discussion
 
@@ -127,7 +183,206 @@ Overall, in this manuscript we have defined a rehabilitative protocol that is hi
 
 ## Materials and methods
 
-## Experimental design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>21B6.Cg-Tg (Thy1- ChR2/EYFP)18Cfng/J</td>
+      <td>Jackson Laboratories</td>
+      <td>IMSR_JAX:007612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NeuN</td>
+      <td>Millipore</td>
+      <td>RRID:AB_11205592</td>
+      <td>MILLIPORE:ABN90 Guinea Pig polyclonal; diluition (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Parvalbumin</td>
+      <td>SynapticSystems</td>
+      <td>RRID:AB_2156476</td>
+      <td>SYSY:195004 Guinea Pig polyclonal; diluition (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Somatostatin</td>
+      <td>Millipore</td>
+      <td>ID_MILLIPORE:MAB354; clone YC7</td>
+      <td>Rat monoclonal; diluition (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Myelin Basic Protein</td>
+      <td>Millipore</td>
+      <td>RRID:AB_2255365</td>
+      <td>MILLIPORE:AB980 Rabbit polyclonal; diluition (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>intact and BoNT/E- truncated SNAP-25</td>
+      <td>Other</td>
+      <td></td>
+      <td>Ref: https://doi.org/10.1016/j.neuroscience.2010.04.059; https://doi.org/10.1523/JNEUROSCI.0772-07.2007</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hoechst 33258</td>
+      <td>Thermo Fischer</td>
+      <td>RRID:AB_2651133</td>
+      <td>Thermo Fisher Scientific Cat# H3569</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rose Bengal</td>
+      <td>Sigma-Aldrich</td>
+      <td>ID_ALDRICH:330000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-cyano-7- nitroquinoxaline- 2,3-dione (CNQX)</td>
+      <td>Tocris</td>
+      <td>ID_PubChem:3721046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CGP 55845</td>
+      <td>Tocris</td>
+      <td>ID_PubChem:5311042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Botulinum Neurotoxin E (BoNT/E)</td>
+      <td>Other</td>
+      <td></td>
+      <td>Kindly provided by Thomas Binz (Hannover, Germany); ref: https://doi.org/10.1523/JNEUROSCI.4402-04.2005; https://doi.org/10.1523/JNEUROSCI.0772-07.2007</td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or kit</td>
+      <td>PlexBrightOptogenetic Stimulation System</td>
+      <td>PlexonInc</td>
+      <td></td>
+      <td>PlexBright LD-1 Single Channel LED Driver with 456 nm Table-top LED Module</td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or kit</td>
+      <td>OmniPlex D Neural Data Acquisition System</td>
+      <td>PlexonInc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabWindows/CVI</td>
+      <td>http://www.ni.com/lwcvi/i/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>http://www.mathworks.com/products/matlab</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Offline Sorter</td>
+      <td>PlexonInc</td>
+      <td>RRID:SCR_000012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroExplorer</td>
+      <td>PlexonInc</td>
+      <td>RRID:SCR_001818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Stereo Investigator</td>
+      <td>MBF Bioscience</td>
+      <td>RRID:SCR_002526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>G Power Software</td>
+      <td>http://www.gpower.hhu.de/</td>
+      <td>RRID:SCR_013726</td>
+      <td>version 3.1.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kinematic Analysis</td>
+      <td>other</td>
+      <td></td>
+      <td>Ref: https://doi.org/10.1177/1545968314545174</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Optic Fiber 200 μm Core 0.39 NA</td>
+      <td>ThorlabsInc</td>
+      <td>ID_THORLABS:M83L01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>16 channels linear probes</td>
+      <td>NeuroNexus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>USB DAQ board</td>
+      <td>National Instruments</td>
+      <td>ID_NI:USB-6212 BNC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>M-Platform</td>
+      <td>other</td>
+      <td></td>
+      <td>Ref: https://doi.org/10.1177/1545968313506520</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental design
 
 All procedures were performed in compliance with the EU Council Directive 2010/63/EU on the protection of animals used for scientific purposes, and approved by the Italian Ministry of Health, protocol number DGSAF0015924-16/06/2015. A total of 63 C57BL6J mice were used (22–27 g, age 8–10 weeks). We estimated the minimum number of animals required to measure an improvement in the motor outcomes, based on the results of our previous paper (Alia et al., 2016). From data represented in Figure 7 of Alia et al. (2016), we estimated an effect size of 1.75 that was used to calculate the minimum number of animals necessary for this study to obtain a power >80%. We calculated that a number of 5 animals per group was enough to have a power of ≈ 81% so we considered a minimum of 5 animals per treatment group. Because of the high number of groups in the study, we organized different experimental sessions with different cohorts of mice. In each cohort we tested the homogeneity of the baseline performance and randomly assigned the animals to the different experimental groups. The randomization was performed through a computerized random numbers procedure and conducted independently of the study investigators. To ensure internal control, we have included at least two stroke untreated animals to be used as controls in each cohort. Power calculations were performed with G Power Software (version 3.1.5).
 
@@ -145,11 +400,11 @@ All the behavioural and electrophysiological analyses were conducted as blinded,
 
 The entire study included a total number of 103 (40 B6.Cg-Tg (Thy1-ChR2/EYFP)18Cfng/J and 63 C57BL6/J) mice.
 
-## Photothrombotic lesion
+### Photothrombotic lesion
 
 The photothrombotic lesion was induced as previously described (Lai et al., 2015). Briefly, animals were anesthetized with Avertin (20 ml/kg, 2,2,2 tribromoethanol 1.25%; Sigma-Aldrich, USA) and placed in a stereotaxic apparatus. After a midline scalp incision, the bone was carefully dried and cleaned. Rose Bengal (0.2 ml of a 10 mg/ml solution in PBS; Sigma Aldrich) was injected intraperitoneally. After 5 min, the brain was illuminated through the intact skull for 15 min using a cold light source (ZEISS CL 6000, Germany) linked to a 20X objective that was positioned 0.5 mm anterior and 1.75 mm lateral from Bregma, that is, in correspondence with the caudal forelimb area (Tennant et al., 2011). Sham animals underwent scalp incision and Rose Bengal injection but no light irradiation. For consistency, the cortical lesion was always induced in the right hemisphere and the same hemisphere was used in sham animals as control.At the end of the surgery, the skin was sutured and mice were allowed to awaken from anaesthesia.
 
-## Electrophysiological recordings after contralateral light stimulation
+### Electrophysiological recordings after contralateral light stimulation
 
 For electrophysiological analyses of interhemispheric coupling, we used Thy1-ChR2 Transgenic mice (B6.Cg-Tg (Thy1-ChR2/EYFP)18Cfng/J, Jackson Laboratories, USA) that express the gene encoding for ChR2 under the Thymus cell antigen-1 (Thy-1) promoter (Hira et al., 2013). Sham and stroke mice at 30 days were anesthetized with an initial cocktail of ketamine (100 mg/kg, i.p.) and xylazine (10 mg/kg, i.p.) that was supplemented with additional doses to maintain the plane of anesthesia. Each animal was then placed in a stereotaxic apparatus and a midline incision was made to expose the skull and the sutures.
 
@@ -163,11 +418,11 @@ At the end of the experiment the animal was sacrificed and, eventually, its brai
 
 Data were analyzed offline with Offline Sorter and NeuroExplorer software (PlexonInc, USA) and with custom made Matlab User Interfaces (Matlab, Matworks). Specifically, for the analysis of the single-pulse FP, we quantify separately the amplitude of the negative- and positive-going components by measuring the baseline-to-peak value. For the PP analysis, based on previous reports in literature (Schmidt et al., 2012) we analyzed the peak-trough amplitude, i.e. to avoid any interference of the altered baseline preceding the second stimulation.
 
-## Silencing of the healthy hemisphere with Botulinum Neurotoxin E
+### Silencing of the healthy hemisphere with Botulinum Neurotoxin E
 
 Toxin injections were performed in the same surgical session of photothrombotic lesions; after 15 min of illumination that caused the Rose Bengal activation, the dura mater was exposed over the CFA in the non-injured hemisphere by means of a dental drill. We injected 500 nl of BoNT/E (80 nM) or vehicle divided in two separate injections of 250 nl at (i) + 0.5 anteroposterior, +1.75 mediolateral and (ii) + 0.4 anteroposterior, +1.75 mediolateral by means of heat pulled glass micropipettes (Harvard Apparatus, Holliston, MA) at 700 μm cortical depth. After toxin infusion, the micropipette was left in place for at least 5 min. After surgery animals were sutured and treated with paracetamol (100 mg/kg) in drinking water for four post-operation days.
 
-## Robotic rehabilitation
+### Robotic rehabilitation
 
 Mice were trained by means of a robotic platform, the M-Platform, as we showed in our previous work (Spalletti et al., 2014). Briefly, the robotic device comprises a linear actuator, a 6-axis load cell, a precision linear slide with a controlled friction system and a custom-designed handle that was fastened to the left wrist of the animal. One end of the handle was screwed on the load-cell for lossless transfer of the forces to the sensor, whereas the other end formed a support for the animal wrist. The animal was kept in a U-shaped restrainer, and its head was stabilized by means of a cemented post. The daily training consisted in the execution of 10–15 sessions of forelimb retraction performed by the animals. First, the linear motor pushed the handle and extended the mouse forelimb by 10 mm (full upper extremity extension). Then, the motor decoupled from the slide and the mouse could initiate the task. If able to overcome a force threshold of 0.2 N, i.e. static friction, the animal voluntarily pulled the handle back (i.e. forelimb flexion back to the starting position). Upon successful completion of the task, the animal was given access to a liquid reward, i.e. 10 µl of sweetened condensed milk, before starting a new session. All of the experimental sessions were recorded by a video camera placed parallel to the coronal plane of the mouse. Position and speed signals were subsequently extracted from the video recordings and synchronized with the force signals recorded by the load-cell. From these kinematic and kinetic signals, a series of parameters were automatically computed to describe detailed motor performance on the platform including the t-target (i.e., the time spent by the animal to accomplish a single retraction task) and the number of attempts to move the handle, with ‘attempts’ defining the force exerted by the mouse not sufficient to overcome the static friction. The computation and statistical analysis of these parameters were performed using custom-made algorithms developed in Matlab (Mathwork, USA) (Spalletti et al., 2014).
 
@@ -175,7 +430,7 @@ Before the lesion mice were allowed let free to explore the platform and gradual
 
 The day after, that is, 2 days post lesion, they were tested again in behavioural tests and kinematic values were acquired. After these tests, mice were restrained again on the platform and only few sessions of retraction task were performed. The animals started the daily rehabilitative treatment at day five post lesion and continued it until day 30 (4 weeks), performing 10–15 forelimb retraction sessions for 4 days a week. For the follow-up experiment, after behavioral assessment at day 30, the robotic therapy was interrupted until day 40 when animals were tested again in the Gridwalk and Schaller Cylinder tests.
 
-## Motor tests
+### Motor tests
 
 Motor performance of all the experimental groups was assessed in baseline condition and then once a week at days 2, 9, 16, 23 and 30 post-lesion (with the additional day 40 time point for the follow-up experiments) using two classical behavioral tests, Gridwalk and Schallert Cylinder test. A sub-group of animals (see above) were also tested in the Skilled Reaching Test, followed by kinematic analysis of the paw trajectories.
 
@@ -189,11 +444,11 @@ The number of correct (i.e., a reach and grasp movements ending with pellet eati
 
 Off-line reconstruction of paw trajectories was performed by a semi-automated algorithm based on colour contrast analysis, as described in Lai et al. (2015). Briefly, the algorithm tracked the trajectories of the preferred paw on the sagittal (x, y) plane by identifying the position of the paw previously painted with a green non-toxic dye (Stabilo Boss, Stabilo, Germany). To ensure consistency, only trajectories from successful trials (i.e. correct movements) were considered. Changes in the trajectories were quantified by the length of the whole trajectory (ArcLen), by the area enclosed by the reaching and retracting movement (Area Under the Curve, AUC), by the average value of the tangential velocity profile (Mean Speed) and by the number of peaks in the tangential velocity profile (Smoothness). A detailed description of kinematic parameters is provided in Lai et al. (2015).
 
-## Immunohistochemical analysis
+### Immunohistochemical analysis
 
 For immunohistochemical analysis of plasticity markers, animals were transcardially perfused with 4% paraformaldehyde. Brains were cut using a sliding microtome (Leica, Germany) to obtain 50 μm thick coronal sections that were used for immunostaining of NeuN (1:1,000, Millipore, Germany), Parvalbumin (1:300, Synaptic Systems, Germany), Somatostatin (1:400, Millipore, Germany) and Myelin Basic Protein (1:500, Millipore, Germany). The number of Parvalbumin- and Somatostatin-positive neurons was analyzed using a fluorescence microscope (Zeiss, Germany) with a 10x objective, counting in a 200 µm wide cortical column drawn at the medial and lateral edge of the ischemic tissue by Stereo Investigator software (MBF Bioscience, USA). Three sections per animal were analyzed. For MBP analysis, images were acquired using a 10x objective and analyzed offline drawing 200 µm wide columns at the lateral edge of the ischemic lesion using Image J software (National Institutes of Health, USA) and measuring mean fluorescence for each column. To evaluate the effect of BoNT/E injected into the motor cortex, we stained cortical sections with antibodies recognizing either the intact or BoNT/E-truncated forms of SNAP-25 (Caleo et al., 2007; Antonucci et al., 2010). The analysis was performed 2 days after BoNT/E injections and three sections per animal were analyzed. To quantify the lesion volume, 1 out of every six sections was stained with Hoechst 33258 (Sigma-Aldrich, USA). The ischemic region was contoured using Stereo Investigator software (MBF Bioscience, USA) with a 10x objective and its area measured. The lesion volume for each animal was calculated by summing up all damaged areas and multiplying the number by section thickness and by 6 (the spacing factor). A total infarction volume in mm3 is given as the mean ± standard error of all analyzed animals (n = 4 stroke untreated and n = 4 Robot +BoNT).
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical tests were performed using SigmaPlot 11.0 (Systat Software Inc, USA) and the free software statistical environment ‘R’ (R Development Core Team, R. F. F. S. C, 2008).
 

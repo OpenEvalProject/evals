@@ -35,15 +35,23 @@ The causes of radial asymmetries in performance are largely unknown. In recent w
 
 ## Results
 
-## Polar asymmetries in cortical surface area
+### Polar asymmetries in cortical surface area
 
 To examine polar angle asymmetries in the cortical representation, we used a dataset of 163 subjects for whom retinotopic maps as well as manually labeled iso-polar angle and iso-eccentricity contours are publicly available. These labeled data (Benson et al., 2021b) were produced by annotating the largest publicly available human retinotopy dataset: the Human Connectome Project (HCP) 7 Tesla Retinotopy Dataset (Benson et al., 2018). We calculated the surface areas for a series of regions of interest (ROIs) in each subject defined by their visual field preference. Each series of ROIs was centered on one of the four cardinal meridians. For each meridian, we defined the ROI series to cover a gradually increasing span of polar angles from ±10° to ±50° (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67685/elife-67685-fig2-v2.jpg)
+
+**Figure 2.:** (A) Polar angle (top left) and eccentricity (bottom left) maps for example HCP subject 177746. The V1/V2 boundaries and the V1 horizontal meridian obtained via Bayesian inference are shown as black and white lines, respectively. The middle panel of A shows ROIs drawn with gradually increasing polar angle widths centered around the horizontal meridian (gray) and the vertical meridian (V1/V2 boundary; magenta), limited to 1–6° of eccentricity in V1 only. The right panel shows ROIs around the upper vertical meridian (ventral V1/V2 boundary; blue) and the lower vertical meridian (dorsal V1/V2 boundary; red) that include both V1 and V2. In this hemisphere, the cortical surface area is greater near the horizontal than the vertical meridian and near the lower than the upper vertical meridian. (B) Mid-gray surface area for increasingly large ROIs centered on the vertical (magenta) or horizontal (gray) meridian. The error bars indicate the 68% confidence intervals (CIs) from bootstrapping. The circular icons show the visual field representations of the ROIs for the nearby data points. The x-values of data points were slightly offset in order to facilitate visualization. The brown dotted line shows the equivalent V1 ROI surface area as predicted by Horton and Hoyt, 1991. (C) Same as B, but for upper (blue) and lower (red) vertical meridians. (D, E) The surface areas are transformed to percent asymmetry, both for the cumulative ROIs (black) and incremental ROIs (green). Whereas cumulative ROIs represent a wedge of the visual field within a certain polar angle distance ± θ of a cardinal axis, incremental ROIs represent dual 10°-wide wedges in the visual field a certain polar angle distance ±θ from a cardinal axis. The percent asymmetry of x to y is defined as 100× (x−y)/mean(x, y). Posi﻿tive values indicate greater area for horizontal than vertical (D) or for lower than upper regions (E). ROI, region of interest.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67685/elife-67685-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Surface area plots, as calculated in Figure 2, are shown with the addition of ROI surface areas calculated on both the pial and white-matter surfaces. No panel A is shown in order to match Figure 2. (B) Surface area for increasingly large ROIs centered on the vertical (magenta) or horizontal (gray) meridian. The error bars indicate the 68% CI from bootstrapping. The circular icons show the visual field representations of the ROIs for the nearby data points. The x-values of data points were slightly offset in order to facilitate visualization. The brown dotted line shows the equivalent V1 ROI surface area as predicted by Horton and Hoyt, 1991. (C) Same as B, but for upper (blue) and lower (red) vertical meridians. (D, E) The surface areas are transformed to percent asymmetry, both for the cumulative ROIs (black) and incremental ROIs (green). CI, confidence interval; ROI, region of interest.
 
 Analysis of these ROIs indicates that the cortical surface area in V1 is distributed asymmetrically, with remarkably large differences between the horizontal and vertical meridians. For example, within ±10° of the meridians, the surface area is ~80% greater for the horizontal than the vertical representation (Figure 2B and D) and for the lower than the upper meridian (Figure 2C and E). Within these ±10° ROIs, 94% of the 163 subjects have positive HVAs, and 93% have positive VMAs. The asymmetries are largest for narrow wedge ROIs. They decrease gradually with angular distance from the vertical meridian, with the VMA decreasing more sharply with distance than the HVA. Previous estimates of V1 cortical magnification by Horton and Hoyt, 1991 fall about halfway between our measures for the vertical and horizontal meridians as they did not account for angular variation (see Materials and methods). Because the cortical surface area of gyri tends to be large on the pial surface and small on the white-matter surface, whereas the surface area of sulci tends to reverse this trend, we calculated all surface areas on the mid-gray surface. Note, however, that the trends reported above hold for the pial and the white-matter surfaces as well (Figure 2—figure supplement 1).
 
 For the VMA estimates, our measures of surface area straddled the V1/V2 boundaries symmetrically, as depicted in Figure 2A (right image, red and blue ROIs). We defined the ROIs this way to avoid potential artifacts that can arise from measuring receptive field centers near the vertical meridian, as discussed in prior reports (Larsson and Heeger, 2006; Winawer et al., 2010). The advantage of this method is that even if the population receptive field (pRF) centers miss the vertical meridian by a few degrees, the boundaries are well defined on both sides of the ROIs (e.g., 10° into V1 and 10° into V2). If we use the V1 portion only, the general pattern of results holds.
 
-## Match between cortical and behavioral asymmetries in distinct subject groups
+### Match between cortical and behavioral asymmetries in distinct subject groups
 
 The cortical patterns we observe match behavioral asymmetries (Figure 1), which also decrease gradually away from the vertical meridian, indicating a close correspondence between psychophysical performance and cortical representations in early visual retinotopic maps. Overall, both behavior and cortical surface area fall off gradually and are highly correlated (Figure 3; Pearson’s r = 0.99). This correlation holds for surface areas calculated on the white-matter surface (r = 0.99), the mid-gray surface (Figure 3; r = 0.99), and the pial surface (r = 0.98).
 
@@ -53,7 +61,7 @@ The cortical patterns we observe match behavioral asymmetries (Figure 1), which 
 
 Our finding that V1 surface area and acuity threshold covary with polar angle (Figure 3) parallels findings that they covary with eccentricity (Duncan and Boynton, 2003). Other tasks such as motion sensitivity (McKee and Nakayama, 1984), critical flicker frequency (Hartmann et al., 1979), texture segmentation (Gurnsey et al., 1996; Barbot and Carrasco, 2017), and perceptual grouping (Tannazzo et al., 2014) do not show the same systematic decline with eccentricity as acuity. For these tasks, performance might be less tightly linked to V1 surface area.
 
-## Asymmetries in cortical surface area by twin status and gender
+### Asymmetries in cortical surface area by twin status and gender
 
 The strong correlation between behavior and cortical surface area was computed at the group level, given that the two measures come from different subject groups. Nonetheless, there are independent individual differences in both the behavioral (Himmelberg et al., 2020) and cortical surface area (Benson et al., 2018) measures. Because the cortical surface area measures come from the HCP dataset, which includes a large number of twin pairs, we were able to assess whether individual measures in surface area asymmetries (HVA and VMA) were shared between twin pairs. Indeed, for monozygotic twin pairs, the intraclass correlation (ICC) of ROI asymmetry in terms of the ROI’s angular width is ≥0.5 for most ROIs (Figure 4). Interestingly, dizygotic twin pairs have correlations close to 0 for HVA but positive correlations similar to those of the monozygotic twins for the VMA. Age- and gender-matched unrelated pairs have correlations for both HVA and VMA that are not statistically distinct from 0 for all ROIs. In comparison, the correlation of mean V1 thickness for the same monozygotic and dizygotic twins is 0.76 and 0.11, respectively, with 68% CIs across 10,000 bootstraps of 0.67–0.82 and −0.07 to 0.29. For the V1 mid-gray surface area these correlations are 0.90 (68% CI: 0.88–0.93) and 0.71 (68% CI: 0.57–0.81), respectively. The number of twins is not large enough to make a precise estimate of a heritability fraction for asymmetry, as the heritability confidence combines the uncertainty in the monozygotic and the dizygotic data. The general pattern, however, whereby there is a large difference in correlation between monozygotic and dizygotic twins for the HVA, but not for the VMA, suggests a larger heritable component for the HVA, and that the HVA and VMA may be controlled by different mechanisms.
 
@@ -63,7 +71,7 @@ The strong correlation between behavior and cortical surface area was computed a
 
 Because cortical surface area differs between males and females, we examined whether the radial asymmetries do as well. We find that the cortical VMA and HVA do not differ substantially by sex or across age-groups (Appendix 1—figure 1). This is consistent with psychophysical findings that the HVA and VMA are similar in males and females (Barbot et al., 2021; Purokayastha et al., 2021). Whereas the average size of V1 is about 10% larger in males, V1 size normalized to the entire cortical surface area is similar for males and females (Appendix 1—figure 2).
 
-## Asymmetries in cortical surface area and retinal cell density
+### Asymmetries in cortical surface area and retinal cell density
 
 Asymmetries around the visual field exist in many parts of the visual system, beginning with the optics (Jaeken and Artal, 2012; Polans et al., 2015; Liu and Thibos, 2019) and the retinal cone density (Curcio et al., 1990; Song et al., 2011). However, the cortical asymmetries are not simply inherited from the cone photoreceptors. Rather, the asymmetries become larger in measures of RGC density compared to cones, and become substantially larger still in surface area of V1 (Figure 5). Below 8° of eccentricity, cone density is greater on the horizontal than vertical meridian, with an HVA of ~20% (Figure 5A; Curcio et al., 1990). Over the same eccentricity range, the HVA measures up to 40% in midget RGC density and 60–80% in visual cortex. In this eccentricity range, the VMA of the cone density is 0 or slightly negative (Figure 5B): the upper visual field (inferior retina) has higher cone density than the lower visual field (superior retina), indicating that cone density cannot be the source of the behavioral VMA (Kupers et al., 2019). The VMA becomes positive in midget RGC density (up to ~20%) and still larger in the cortex (~40–100%). Hence, the radial asymmetries are substantially larger in the cortex compared to both the cone photoreceptors and the mRGCs. Note that neither the changes in polar angle asymmetries from cone density to mRGC density nor from mRGC density to cortex are simple scale factors; rather, the differences across stages of processing vary with eccentricity in a manner that suggest new properties at each stage.
 
@@ -87,19 +95,19 @@ To conclude, this study reveals a tight link between human perception around the
 
 ## Materials and methods
 
-## Ethics statement
+### Ethics statement
 
 No human subjects data were collected for this paper. All data used in this paper were obtained from previous publications and publicly available datasets. Primarily, analyses were performed using data from the HCP (Van Essen et al., 2012), including data from the HCP that were reanalyzed by subsequent studies (Benson et al., 2018; Benson et al., 2021b). Additionally, Figures 1 and 3 include data replotted from previous publications by the authors (Carrasco et al., 2001; Abrams et al., 2012; Barbot et al., 2021), and Figure 5 includes publicly available data from Curcio et al., 1990. In all cases, informed consent was obtained from subjects in the original studies, and all applicable use policies were followed in the use of the data. No personal health information is included in this paper or in the associated dataset or code.
 
-## Code and data availability
+### Code and data availability
 
 All data analyzed in this project was previously available from other sources. The results of all analyses and the source code required to produce them, as well as documentation, are publicly available at an Open Science Framework website (https://osf.io/5gprz/; DOI:10.17605/OSF.IO/5GPRZ) with the exception of analyses that rely on restricted data from the HCP, in which case code that will reproduce the analyses given the restricted data is provided. This paper’s Github repository can be found at https://github.com/noahbenson/performance-fields/ (copy archived at swh:1:rev:81daa65b3bc69a085acab9508610f853f6a7dcb0, Benson, 2021a).
 
-## Data Sources
+### Data Sources
 
 Structural preprocessed data were obtained from the HCP Young Adult dataset (https://db.humanconnectome.org/) (Van Essen et al., 2012). Genotype data for these subjects (i.e., twin pairings) were also obtained from the HCP. Retinotopic maps were obtained from the HCP 7 Tesla Retinotopy Dataset (Benson et al., 2018). Manually drawn iso-polar angle and iso-eccentricity contours were obtained from Benson et al., 2021b. Behavioral data were obtained from Abrams et al., 2012 and Barbot et al., 2021. Behavioral data were obtained from a separate set of subjects than the structural and retinotopic mapping data because we have no access to the HCP subjects to administer behavioral experiments. The HCP includes some simple acuity measurements for the subjects, but these measures are not positioned around the visual field.
 
-## Cortical calculations
+### Cortical calculations
 
 We used the HCP 7 Tesla Retinotopy Dataset (Benson et al., 2018) (n = 163 subjects) to characterize the cortical HVA and VMA. We computed the percent asymmetry in cortical surface area for V1 (HVA) or V1/V2 (VMA) using the formula Δ(a1, a2) = 100 × (a1−a2)/mean(a1, a2), where a1 and a2 are the surface areas of the matched horizontal and vertical ROIs or the matched upper and lower ROIs. To test the angular specificity of these asymmetries, we defined several wedge-shaped ROIs surrounding each cardinal meridian, ranging in width from narrow to wide (±10° to ±50° of polar angle from the meridians). All ROIs were restricted to 1–6° of eccentricity.
 
@@ -111,15 +119,47 @@ A separate set of wedges and eccentricities was used for the data in Figure 3 th
 
 For both the 10°- and the 15°-wide wedges, the surface areas of each ROI (which were calculated from V1 alone) were compared with the areal cortical magnification formula of V1 described by Horton and Hoyt, 1991: mHH(x, y) = (17.3 mm/(ρ(x, y) + 0.75°))2, where ρ(x, y) is the eccentricity in degrees of the visual field coordinate (x, y). The integral of mHH(x, y) over the visual field representation of an ROI yields the cortical surface area cROI predicted by Horton and Hoyt for that ROI: cROI = ∫(x,y)∈ROI mHH(x,y) dx dy. Because Horton and Hoyt’s formula does not incorporate polar angle, its predictions should fall between the surface areas of the vertical ROIs and the horizontal ROIs. For both wedge widths, this was the case. For the 10°-, 20°-, 30°-, 40°-, and 50°-wide ROIs in Figure 2B, Horton and Hoyt predict 2.2, 4.3, 6.5, 8.6, and 10.8 cm2 surface areas, respectively. For the 15°-wide wedges, the predicted surface area for each wedge is 12.8 mm2, which is between the surface areas of the vertical and the horizontal ROIs in Figure 3.
 
-ICC values plotted in Figure 4 were calculated between the 38 monozygotic twins, the 33 dizygotic twins, and the 2858 age- and sex-matched unrelated pairs from the HCP 7 Tesla Retinotopy Dataset (Benson et al., 2018) for which manually annotated iso-angle and iso-eccentricity contours were available (Benson et al., 2021b). The 2858 unrelated pairs represent the subset of the possible 13,203 unique subject pairs from the 163 retinotopy subjects that are not twins or otherwise related, that are of the same gender, and that are in the same HCP age-group. The monozygotic twins included 15 male twin pairs and 23 female twin pairs while the dizygotic twins included 17 male and 16 female twins. Precise ages are not available for subjects, but all subjects in the HCP Young Adult Connectome were 22–40 years old. Error bars are plotted as the 16th and 84th percentiles across 10,000 bootstraps. The V1 mid-gray surface area and V1 gray-matter thickness correlations in Figure 4 were calculated using the manually labeled V1 boundaries (limited to 0–7° of eccentricity); the average thickness of this V1 ROI was used. The formula used for the ICC is an unbiased estimate derived from the one-way ANOVA (McGraw and Wong, 1996): r^ICC=(MSr−MSw)/(MSr+MSw), where MSr and MSw are the mean-square of the across-pairs factor and the residuals, respectively. For a 2×n matrix X of twin-pair measurements such that x1,j is the measurement of the first twin of twin pair j and x2,j is the measurement of the second twin, then MSr and MSw are given by Equations 1 and 2.(1)MSr=12(n−1)∑j=1n(x⋅,j¯−x¯)(2)MSw=1n∑i∈{1,2}∑j=1n(xi,j−x⋅,j¯)wherex⋅,j¯=x1,j+x2,j2,andx¯=12n∑i∈{1,2}∑j=1nxi,j
+ICC values plotted in Figure 4 were calculated between the 38 monozygotic twins, the 33 dizygotic twins, and the 2858 age- and sex-matched unrelated pairs from the HCP 7 Tesla Retinotopy Dataset (Benson et al., 2018) for which manually annotated iso-angle and iso-eccentricity contours were available (Benson et al., 2021b). The 2858 unrelated pairs represent the subset of the possible 13,203 unique subject pairs from the 163 retinotopy subjects that are not twins or otherwise related, that are of the same gender, and that are in the same HCP age-group. The monozygotic twins included 15 male twin pairs and 23 female twin pairs while the dizygotic twins included 17 male and 16 female twins. Precise ages are not available for subjects, but all subjects in the HCP Young Adult Connectome were 22–40 years old. Error bars are plotted as the 16th and 84th percentiles across 10,000 bootstraps. The V1 mid-gray surface area and V1 gray-matter thickness correlations in Figure 4 were calculated using the manually labeled V1 boundaries (limited to 0–7° of eccentricity); the average thickness of this V1 ROI was used. The formula used for the ICC is an unbiased estimate derived from the one-way ANOVA (McGraw and Wong, 1996): $r^_{ICC}=(MS_{r}−MS_{w})/(MS_{r}+MS_{w})$, where MSr and MSw are the mean-square of the across-pairs factor and the residuals, respectively. For a 2×n matrix X of twin-pair measurements such that x1,j is the measurement of the first twin of twin pair j and x2,j is the measurement of the second twin, then MSr and MSw are given by Equations 1 and 2.
 
-## Retinal calculations
+$$
+MS_{r}=\frac{1}{2(n−1)}\sumj=1n(x_{⋅,j}¯−x¯)
+$$
+
+
+
+$$
+MS_{w}=\frac{1}{n}\sumi\in{1,2}\sumj=1n(x_{i,j}−x_{⋅,j}¯)
+$$
+
+
+
+$$
+wherex_{⋅,j}¯=\frac{x_{1,j}+x_{2,j}}{2},
+$$
+
+
+
+$$
+andx¯=\frac{1}{2n}\sumi\in{1,2}\sumj=1nx_{i,j}
+$$
+
+### Retinal calculations
 
 The raw data used for Figure 5 were previously published or from publicly available analysis toolboxes. Cone density data were extracted from post-mortem retinal tissue of eight human retinae published by Curcio et al., 1990 for 0–8° eccentricities (step size 0.1°) and summarized in the ISETBIO toolbox (https://github.com/isetbio/isetbio) (Cottaris et al., 2019). Midget RGC (mRGC) densities were extracted from the analytic model by Watson, 2014. Cortical asymmetries were computed from the HCP 7 Tesla Retinotopy Dataset (Benson et al., 2018) as percent difference in V1/V2 cortical surface area in ±10° and ±20° wedges centered on the cardinal meridians for 1° bins between 1° and 6° eccentricity. The ±10° and ±20° wedges were identical to those used in Figure 2, and both were plotted due to the possibility of bias introduced by the ipsilateral cortical representation near the vertical meridian discussed in the previous section (see Cortical calculations). Median and standard error of cortical surface area were computed from bootstrapped data across subjects (1000 iterations).
 
-Meridian asymmetries in cone density and mRGC density were defined as percent change in density values at the cardinal meridians (for retina) or V1/V2 cortical surface area within polar angle wedges centered on cardinal meridians as follows:HVA=100mean(nasal,temporal)−mean(superior,inferior)mean(nasal,temporal,superior,inferior)VMA=100superior−inferiormean(superior,inferior)
+Meridian asymmetries in cone density and mRGC density were defined as percent change in density values at the cardinal meridians (for retina) or V1/V2 cortical surface area within polar angle wedges centered on cardinal meridians as follows:
 
-## Statistical analysis and measurement reliability
+$$
+HVA=100\frac{mean(nasal,temporal)−mean(superior,inferior)}{mean(nasal,temporal,superior,inferior)}
+$$
+
+
+
+$$
+VMA=100\frac{superior−inferior}{mean(superior,inferior)}
+$$
+
+### Statistical analysis and measurement reliability
 
 This manuscript does not assess statistical significance. CIs computed for Figures 1 and 3 are the standard error of the mean. CIs for Figures 2 and 5 are the standard deviation of the median across bootstraps. CIs for Figure 4 are the 16th and 84th percentiles across 10,000 bootstraps.
 

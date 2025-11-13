@@ -24,12 +24,12 @@
 
 ### Affiliations
 
-1. https://ror.org/05f950310 Biomedical MRI, Department of Imaging and Pathology, KU Leuven Leuven Belgium
-2. https://ror.org/05f950310 Department of Human Genetics, KU Leuven Leuven Belgium
-3. https://ror.org/05f950310 Laboratory of Biological Psychology, KU Leuven Leuven Belgium
-4. https://ror.org/04xs57h96 Centre for Preclinical Imaging, Department of Molecular and Clinical Cancer Medicine, University of Liverpool Liverpool United Kingdom
-5. https://ror.org/021018s57 Departament de Biologia Evolutiva, Ecologia i Ciències Ambientals (BEECA), Facultat de Biologia, Universitat de Barcelona Barcelona Spain
-6. https://ror.org/05f950310 Clinical and Experimental Endocrinology, KU Leuven Leuven Belgium
+1. Biomedical MRI, Department of Imaging and Pathology, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+2. Department of Human Genetics, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+3. Laboratory of Biological Psychology, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+4. Centre for Preclinical Imaging, Department of Molecular and Clinical Cancer Medicine, University of Liverpool Liverpool United Kingdom ([ROR:04xs57h96](https://ror.org/04xs57h96))
+5. Departament de Biologia Evolutiva, Ecologia i Ciències Ambientals (BEECA), Facultat de Biologia, Universitat de Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))
+6. Clinical and Experimental Endocrinology, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
 
 † Corresponding author
 
@@ -63,33 +63,45 @@ Since a holistic evaluation of these systems is missing, we designed a longitudi
 
 Our longitudinal experimental setup allowed us to investigate the pleiotropic effects of trisomy, GTE-EGCG treatment and treatment discontinuation at the structural, functional, molecular, and genetic levels in the Ts65Dn DS mouse model (Figure 1). We compared wildtype (WT) and Ts65Dn (TS) untreated mice to evaluate trisomy effects, and WT and TS treated mice to evaluate treatment effects.
 
-## Structural characterization
+### Structural characterization
 
 Structurally, we investigated the longitudinal effects of trisomy, treatment, and treatment discontinuation on body weight, skeletal system, and adult brain volume (Figure 2).
 
-## Body weight
+![Figure 2.](https://cdn.elifesciences.org/articles/89763/elife-89763-fig2-v1.jpg)
+
+**Figure 2.:** (A) Body weight measurements over postnatal development in untreated and treated WT and TS mice. (B,C) Skull shape differences between adult WT and TS mice before (B) and after GTE-EGCG treatment discontinuation (C). Skull shape variation explored by a Principal Component Analysis (PCA) based on the 3D coordinates of landmarks recorded on the surfaces of 3D craniofacial reconstructions from in vivo µCT at µCT3 (B) and µCT4 (C) timepoints. The landmark configuration for each stage is defined in Supplementary file 1e. Scatter plots are presented along with the morphings associated with the negative and positive extremes of the PC1 axis. Statistical differences between groups were assessed by permutation tests based on the Procrustes distances. (D) Bone mineral density of the humerus over postnatal development. The in vivo µCT scans of the humerus were used to determine the BMD at µCT1, µCT2, µCT3, and µCT4 timepoints. (E) Linear discriminant analysis (LDA) based on the results from the tibia microarchitecture tests performed at endpoint (8 M), three months after chronic treatment discontinuation. (F,G) LDA based on the brain volumes obtained from in vivo MRI before (F) and after GTE-EGCG treatment discontinuation (G). The contribution of each variable to separate groups of mice across Axis 1 and Axis 2 is represented in each LDA as lines pointing in the direction of each axis, with longer lines indicating higher contributions. All data are presented as mean +/-standard deviation. (+) p<0.05; (++) p<0.01; (++++) p<0.0001; Mixed-effects analysis across timepoints; (***) p<0.001; (****) p<0.0001; pairwise comparisons. Mice analyzed may differ across stages due to due to uncontrollable technical issues inherent to longitudinal studies, such as scanning failure or mouse death during the experiment but represent overall ontogenetic trajectories. Male mice are indicated with empty symbols. Sample sizes used in each test are provided in Supplementary file 1a.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89763/elife-89763-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The tibia length was measured using a digital caliper at endpoint. The measurements assessing the microarchitecture of the tibia were obtained from ex vivo µCT scans and grouped in three categories according to structural bone domains: (1) Cortical bone strength: (B) cortical bone mineral density, (C) cortical thickness, (D) cortical porosity, and (E) polar moment of inertia; (2) Cortical bone size: (F) cross-sectional area, (G) bone area, (H) medullary area, (I) periosteal perimeter, and (J) endocortical perimeter. (3) Trabecular bone: (K) percentage of bone volume, (L) trabecular thickness, (M) trabecular separation, (N) trabecular number, and (O) bone mineral density. Data are presented as mean +/-standard deviation. (*) p<0.05; (**) p<0.01; (***) p<0.001; (****) p<0.0001; pairwise tests. Male mice are indicated with empty symbols. Sample sizes for each test are provided in Supplementary file 1a.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89763/elife-89763-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The in vivo MRI scans performed at MRS1 and MRS2 were used to quantify the volumes of (A) the whole brain, (B) hippocampal region, (C) cerebellum, (D) lateral ventricles, (E) third ventricle, (F) the fourth ventricle, (G) cerebral aqueduct, and (H) whole ventricular system. All volumes were normalized to body weight. For each test, the results at MRI1 are presented on top and at MRI2 are presented on the bottom. Data are presented as mean +/-standard deviation. (*) p<0.05; (**) p<0.01; (***) p<0.001; (****) p<0.0001; pairwise tests. Male mice are indicated with empty symbols. Sample sizes for each test are provided in Supplementary file 1a.
+
+#### Body weight
 
 First, we investigated mouse body growth by monitoring body weight over development. TS untreated mice tended to present lower body weights than WT untreated mice over development from birth to adulthood, but these genotype differences did not reach significance at any developmental stage (Figure 2A; PBW1=0.7630; PBW2=0.3688; PBW3=0.1094).
 
 Chronic GTE-EGCG treatment, which started prenatally and was maintained until 5 months, significantly reduced the body growth of TS treated mice from PD1 to PD17 (Figure 2A at BW1) in comparison with WT untreated (p<0.0001), WT treated (p<0.0001), and TS untreated mice (p<0.0001). At adulthood before treatment discontinuation (Figure 2A at BW2), these differences were maintained, but only reached significance when compared to WT untreated (p=0.0322) and WT treated mice (p=0.0103). After three months of treatment discontinuation, both WT and TS treated mice showed a mild increase in body weight, making TS treated mice not significantly different from WT untreated (Figure 2A; PBW3=0.9284), and causing WT treated mice to be significantly different from WT untreated (Figure 2A; PBW3=0.0259).
 
-## Skeletal development
+#### Skeletal development
 
 Since people with DS show craniofacial abnormalities, reduced BMD, and altered bone microarchitecture (Carfì et al., 2017; Kao et al., 1992; LaCombe and Roper, 2020; Thomas and Roper, 2021; Vicente et al., 2020), we investigated the effects of genotype, treatment, and treatment discontinuation in these systems by performing in vivo µCT scans throughout development and ex vivo µCT scans at endpoint as indicated in Figure 1.
 
-## Craniofacial morphology
+##### Craniofacial morphology
 
 We first performed geometric morphometric analyses on the craniofacial 3D models obtained from in vivo µCT scans to investigate craniofacial shape throughout development. The results confirmed our previous findings (Llambrich et al., 2022a; Llambrich et al., 2022b), showing that TS untreated mice presented a significantly different craniofacial shape than WT untreated mice at µCT1 (p<0.0001) and µCT2 (p=0.0011) (Supplementary file 2a). In this study, we further detected that the craniofacial differences induced by genotype persisted until adulthood (Figure 2B and PµCT3=0.0009; Figure 2C and PµCT4=0.0055).
 
 Prenatal chronic GTE-EGCG treatment only showed a significant effect in the craniofacial shape at PD3, where both WT and TS treated mice were different from their untreated counterparts (PWT=0.0418; PTS=0.0005). However, the treatment never rescued the craniofacial shape in TS treated mice, as these mice were significantly different from WT untreated mice at all stages (Figure 2B and C; Supplementary file 2a). Discontinuing the treatment for three months did not induce any effects (Figure 2C), maintaining the craniofacial dysmorphologies already observed at µCT3 (Figure 2B).
 
-## Bone mineral density
+##### Bone mineral density
 
 The BMD of the humerus was estimated throughout development from the in vivo µCT scans. Although we observed that TS untreated mice tended to present lower BMD than WT untreated mice over development and adulthood, the differences did not reach significance at any developmental stage (Figure 2D, Supplementary file 2b).
 
 Prenatal GTE-EGCG chronic treatment significantly modified the developmental trajectory of humerus BMD in WT and TS treated mice (PWT <0.0001; PTS=0.0023), but never rescued the trisomic phenotype, as TS treated mice remained different from WT untreated (p<0.0001). At PD3, WT and TS treated mice showed similar levels of BMD as compared to untreated mice (Figure 2D at µCT1) but tended to show lower BMD at PD29 (Figure 2D at µCT2). This tendency for reduced BMD was rescued at adulthood (Figure 2D at µCT3), but after 3 months of treatment discontinuation, both WT and TS treated groups showed a decline in BMD (Figure 2D at µCT4), which caused WT and TS treated mice to be different than WT untreated control mice (PWT=0.0001; PTS=0.0002), suggesting a rebound effect following treatment retrieval.
 
-## Tibia development and microarchitecture
+##### Tibia development and microarchitecture
 
 Finally, we complemented our structural skeletal analysis by evaluating the length and microarchitecture of the tibia from ex vivo µCT scans at endpoint, as indicated in Figure 1.
 
@@ -99,7 +111,7 @@ To explore the overall differences detected by the LDA in finer detail, we group
 
 After GTE-EGCG chronic treatment and discontinuation, WT treated mice were not significantly different than WT untreated mice for any specific structural domain (Supplementary file 2c), but the univariate pairwise tests indicated significantly reduced tibia length (Figure 2—figure supplement 1A; p=0.0006) and cortical porosity (Figure 2—figure supplement 1D; p=0.0120), together with increased cortical BMD (Figure 2—figure supplement 1B; p=0.0120). TS treated mice were significantly different than TS untreated mice for the cortical bone strength and cortical bone size domains (Supplementary file 2c), showing significantly more mineralized (Figure 2—figure supplement 1B; p=0.0039), thicker (Figure 2—figure supplement 1C; p=0.0400), and less porous (Figure 2—figure supplement 1D; p=0.0005) cortical bone. However, they appeared different from WT untreated mice in both cortical domains (Supplementary file 2c) as well as in the cortical BMD (Figure 2—figure supplement 1B; p=0.0097) and cortical porosity tests (Figure 2—figure supplement 1D; p=0.0107). These results could be explained either by adverse effects of the treatment during development that were persistent after discontinuation, or by a negative effect following treatment withdrawal.
 
-## Brain development
+### Brain development
 
 Finally, as it was reported that people with DS show altered brain volumes (Aylward et al., 1997; Hamner et al., 2018; Movsas et al., 2016; Patkee et al., 2020; Pinter et al., 2001; Rodrigues et al., 2019; Smigielska-Kuzia et al., 2011), we completed our structural evaluation by assessing the volume of the whole brain, along with the volumes of the hippocampal region, the cerebellum and the ventricles using the in vivo MRI scans performed before and after treatment discontinuation (Figure 1).
 
@@ -109,11 +121,27 @@ Regarding treatment effects, the LDA at MRI1 showed separation between TS treate
 
 After 3 months of treatment discontinuation at MRI2, some TS treated mice tended to occupy the same space as WT untreated mice in the LDA (Figure 2G), and although the multivariate pairwise comparisons after one-way PERMANOVA did not detect significant differences between WT untreated and TS treated mice (p=0.0609), TS treated mice remained significantly different than WT untreated mice in all univariate brain regions except for the volume of the third ventricle (Figure 2—figure supplement 2E, bottom; p=0.0562), indicating limited rescuing effects at this last stage after treatment discontinuation.
 
-## Functional characterization
+### Functional characterization
 
 After evaluating the effects of trisomy and chronic prenatal GTE-EGCG treatment and its discontinuation at a structural level, we investigated its simultaneous effects at a functional level. We performed a battery of cognitive tests to evaluate early neurodevelopment and adult cognition before and after treatment discontinuation (Figure 3), at the timepoints specified in Figure 1.
 
-## Neurodevelopment
+![Figure 3.](https://cdn.elifesciences.org/articles/89763/elife-89763-fig3-v1.jpg)
+
+**Figure 3.:** (A) Linear discriminant analysis (LDA) based on the results from the neurodevelopmental tests performed from PD1 until PD18. (B,C) LDA based on the results from the cognitive tests performed at Cog.1 (B) and Cog.2 (C). The contribution of each variable to separate groups of mice across Axis 1 and Axis 2 is represented in each LDA as lines pointing in the direction of each axis, with longer lines indicating higher contributions. Male mice are indicated with empty symbols. Sample sizes for each test are provided in Supplementary file 1a.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89763/elife-89763-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Neurodevelopment tests were performed from PD1 to PD18 and grouped into three categories according to functional domains. (1) Neurodevelopmental landmarks: (A) eye opening, (B) incisor eruption, and pinna detachment (results not shown as no significant differences were detected). (2) Neuromotor development: (C) surface righting response, (D) negative geotaxis, (E) vertical climbing, (F) cliff drop aversion, (G) pivoting, homing and walking (results not shown as no significant differences were detected). (3) Reflexes: (H) grasping, (I) tactile orientation, (J) vibrissae placing, (K) reaching response, (L) visual placing response, (M) blast response and (N) Preyer reflex. For each test, developmental rate is presented on the left as mean +/-standard deviation and average day of successful test acquisition is presented on the right as violin plots. (*) p<0.05; (**) p<0.01; (***) p<0.001; (****) p<0.0001. Sample sizes for each test are provided in Supplementary file 1a.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/89763/elife-89763-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Frequency of nursing, pup grooming, digging in nest, eating, drinking, moving, and digging off nest behaviors scored manually from 24 hr videotapes at PD8. Sample sizes for each test are provided in Supplementary file 1a.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/89763/elife-89763-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Results for open field (OF), novel object recognition (NOR), elevated plus maze (EPM), sociability/preference for social novelty (SPSN) and passive avoidance (PA) tests performed at Cog.1 (top) and Cog.2 (bottom) were grouped into three categories according to functional domains. (1) Anxiety tests: (A) time in center during OF, (B) time in periphery during OF, (C) time in center during habituation for NOR, and (D) percentage of time in open arm during EPM. (2) Arousal tests: (E) total distance covered during OF, (F) mean speed during OF, (G) total distance covered during SPSN, (H) mean speed during SPSN, (I) total distance covered during habituation for NOR, and (J) mean speed during habituation for NOR. (3) Memory tests: (K) preference for novel object during testing for NOR, (L) preference for second stranger during SNS2, (M) latency to enter dark chamber during training for PA, and (N) latency to enter dark chamber during testing for PA. For each test, the results at Cog.1 are presented on top and the results at Cog.2 are presented on the bottom. Data are presented as mean +/-standard deviation. (*) p<0.05; (**) p<0.001; (***) p<0.001; (****) p<0.0001. Male mice are indicated with empty symbols. Sample sizes for each test are provided in Supplementary file 1a.
+
+#### Neurodevelopment
 
 We first evaluated early brain function and neurodevelopment over the first weeks after birth by performing a battery of neurodevelopmental tests from PD1 until PD18 (Figure 3A). The LDA with the results from all neurodevelopmental tests combined showed that the treatment was the main differentiating factor among groups of mice, as Axis 1 separated treated and untreated mice (Figure 3A). Despite some overlap, Axis 2 separated WT and TS mice. These results suggested mild genotype differences and treatment effects that did not rescue the trisomic phenotype (Figure 3A). The multivariate pairwise comparisons after one-way PERMANOVA using Mahalanobis distances (Supplementary file 2f) detected significant differences between TS untreated and WT untreated mice (p=0.0001), and between TS treated mice and both TS untreated (p=0.0001) and WT untreated mice (p=0.0001), confirming these findings.
 
@@ -123,7 +151,7 @@ Prenatal chronic treatment with GTE-EGCG caused TS treated mice to be significan
 
 Finally, we investigated the mothers’ behavior during 24 hr at PD8 to evaluate maternal care and observed that, despite being trisomic, all Ts65Dn mothers performed similarly and there was no large intra-group variation for any of the behaviors analyzed, confirming that maternal care did not influence the results of the neurodevelopmental tests (Figure 3—figure supplement 2). Furthermore, no significant differences were detected between treated and untreated mothers in any readout (Figure 3—figure supplement 2), confirming that the GTE-EGCG treatment did not modulate maternal care.
 
-## Adult cognition
+#### Adult cognition
 
 Then, we evaluated adult cognitive performance by means of open field (OF), elevated plus maze (EPM), sociability/preference for social novelty (SPSN), novel object recognition (NOR) and passive avoidance (PA) testing at two timepoints, Cog.1 and Cog.2, before and after treatment discontinuation (Figure 3B and C), as specified in Figure 1.
 
@@ -135,11 +163,19 @@ Regarding treatment effects, the results from the LDA at Cog.1 suggested that th
 
 After treatment discontinuation at Cog.2, the LDA (Figure 3C) presented a similar pattern as the LDA at Cog.1 (Figure 3B), suggesting that discontinuing the treatment for one month did not substantially change the cognitive patterns induced after chronic GTE-EGCG treatment. However, new significant differences emerged between WT untreated and both WT treated and TS treated mice when evaluating the memory domain (Supplementary file 2h), suggesting that the treatment discontinuation altered the memory of both WT and TS mice. Furthermore, TS treated mice remained significantly different than WT untreated mice for all tests combined and all cognitive domains (Supplementary file 2h), confirming that the effects of treatment discontinuation did not rescue the trisomic cognitive phenotype. Indeed, significant differences between WT untreated and TS treated mice remained for the percentage of time spent in the open arm during EPM at Cog.2 (Figure 3—figure supplement 3D, bottom; p=0.0476), and new significant differences emerged between WT untreated mice and both WT treated and TS treated mice for the time spent in the center and in the periphery during OF (Figure 3—figure supplement 3A, B, bottom), indicating that treated mice still presented a more explorative and risk-taking behavior. A similar trend was observed for the arousal tests, as even though no significant differences were detected between TS treated and TS untreated mice (Figure 3—figure supplement 3E-J, bottom), both treated groups showed hyperactivity as the univariate pairwise comparison tests confirmed significant differences between TS treated mice and WT untreated mice for all arousal tests (Figure 3—figure supplement 3E-J, bottom); and significant differences were detected between WT treated and WT untreated mice for the distance and speed during SPSN and the distance and speed during NOR (Figure 3—figure supplement 3G-J, bottom). In the memory tests, TS treated mice were significantly different than TS untreated (p=0.0046) but not than WT untreated mice for the preference for the novel object during NOR (Figure 3—figure supplement 3K, bottom; p=0.3566), which could suggest a beneficial treatment effect. Contrary to the other behavioral tests, the results for PA testing at Cog.2 are influenced by the testing at Cog.1 as mice may present a robust contextual fear memory trace created during the testing at Cog.1, preventing them from entering the dark chamber even in the training phase of the test at Cog.2. Indeed, WT untreated mice did not enter the dark box during training at Cog.2, while both WT and TS treated mice showed a reduced tendency to enter the dark chamber which reached significance when comparing TS treated mice with WT untreated mice (Figure 3—figure supplement 3M, bottom; p<0.0001), indicating less robust contextual memory retention. After re-exposure to the fear conditioning in the training phase of PA at Cog.2, all WT mice avoided the dark chamber while a few TS treated mice still showed a reduced tendency to enter the dark chamber (Figure 3—figure supplement 3N, bottom), reflecting altered memory robustness.
 
-## Molecular and genetic characterization
+### Molecular and genetic characterization
 
 Finally, to complement the structural and functional evaluation and to obtain a complete holistic characterization of the alterations associated with DS, we performed in vivo MRS and ex vivo RNAseq at the timepoints specified in Figure 1 to investigate changes in hippocampal region metabolite concentration and cerebellar gene expression respectively (Figure 4).
 
-## Hippocampal region metabolites
+![Figure 4.](https://cdn.elifesciences.org/articles/89763/elife-89763-fig4-v1.jpg)
+
+**Figure 4.:** (A,B) Linear discriminant analysis (LDA) based on the relative integrals of 10 spectral regions obtained from MRS performed in the hippocampal region at MRS1 (A) and MRS2 (B). The contribution of each variable to separate groups of mice across Axis 1 and Axis 2 is represented in each LDA as lines pointing in the direction of each axis, with longer lines indicating higher contributions. (C) Principal component analysis (PCA) based on the normalized expression of the 125 triplicated genes obtained from RNAseq at 8 M. Male mice are indicated with empty symbols. Sample sizes for each test are provided in Supplementary file 1a.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89763/elife-89763-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The in vivo MRS scans performed in the hippocampal region at MRS1 (top) and MRS2 (bottom) were used to quantify the concentrations of (A) N-acetylaspartate (NAA), (B) creatine +phosphocreatine (Cr +PCr), (C) choline +phosphocholine + GPC (tCho), (D) myo-Inositol (myo-Inos) and (E) taurine (Tau). For each test, the results at MRS1 are presented on top and results at MRS2 are presented on the bottom. Data are presented as mean +/-standard deviation. (*) p<0.05; pairwise tests. Male mice are indicated with empty symbols. Sample sizes for each test are provided in Supplementary file 1a.
+
+#### Hippocampal region metabolites
 
 We performed in vivo MRS on a voxel placed in the hippocampal region at two timepoints, MRS1 and MRS2, as specified in Figure 1.
 
@@ -151,7 +187,7 @@ Regarding treatment effects, the LDA at MRS1 separated treated and untreated mic
 
 After treatment discontinuation at MRS2, the LDA showed milder treatment separation across Axis 2 (Figure 4B) and the multivariate pairwise comparisons did not detect any significant difference between TS untreated and TS treated mice (Supplementary file 2j; p=0.2111). However, the differences between TS treated and WT untreated mice remained significant (p=0.0347), indicating that discontinuing the treatment for 3 months did not rescue the trisomic phenotype. When evaluating the specific concentrations of NAA, Cr +PCr, tCho, myo-Inos and Tau, the same pattern was observed and the significant differences between TS treated and WT untreated mice disappeared (Figure 4—figure supplement 1, bottom). However, significant differences emerged between WT untreated mice and WT treated mice for the concentration of tCho and myo-inositol (Figure 4—figure supplement 1 C,D, bottom; PtCho=0.0479, Pmyo-inositol=0.0261).
 
-## Gene expression
+#### Gene expression
 
 Finally, since people with DS show impaired motor skills (Quinzi et al., 2022), we investigated the effects of genotype and chronic treatment after three months of treatment discontinuation in the cerebellar gene expression by performing RNAseq at endpoint (8 M).
 
@@ -163,11 +199,11 @@ Finally, we analyzed the differentially expressed genes (DEGs) between each pair
 
 We investigated for the first time the simultaneous pleiotropic effects of trisomy and a chronic prenatal and postnatal treatment with GTE-EGCG on several organ systems and levels throughout development in the Ts65Dn mouse model for DS. Our longitudinal and holistic approach overcomes a main limitation of previous research, in which systems were analyzed independently at single time points using different experimental setups and delivered disparate and contradictory results that could not be generalized. Here, we followed the simultaneous development of structural, functional, molecular, and genetic systems on Ts65Dn mice and provided comparable results of genotype and prenatal chronic GTE-EGCG treatment effects before and after treatment discontinuation.
 
-## Detailed comparison of genotype and GTE-EGCG treatment effects across studies
+### Detailed comparison of genotype and GTE-EGCG treatment effects across studies
 
 We here summarized and compared our results with previous studies by domain to discuss whether the Ts65Dn mouse model was representative of DS in the human condition, and whether GTE-EGCG treatment produced any effect that could be translated into clinical practice.
 
-## Structural domain
+#### Structural domain
 
 Starting with body size, we observed that TS mice tended to weigh less than WT mice. However, as in a recent study (Tallino et al., 2022), this difference did not achieve statistical significance, and contrasts with previous studies reporting significantly smaller weight of TS mice (Costa et al., 2010; Goodlett et al., 2020; Heinen et al., 2012; Jamal et al., 2022; Roper et al., 2006). The prenatal chronic GTE-EGCG treatment further reduced the body weight of TS treated mice from PD1 to PD17, but not at adulthood, which is consistent with some studies (Goodlett et al., 2020; Xicota et al., 2020), but not with others (Jamal et al., 2022; Noll et al., 2022). Moreover, we observed that WT treated mice showed normal body weight during development, but increased weight after treatment discontinuation, suggesting a possible rebound effect after a prolonged time of treatment administration.
 
@@ -177,17 +213,17 @@ Our multivariate analyses did not detect global tibia microarchitecture alterati
 
 In the brain, we detected increased ventricular volumes, which is consistent with the trend observed in our previous study at PD29 (Llambrich et al., 2022b) and the ventriculomegaly typically observed in humans and mouse models for DS (Ishihara et al., 2010; Movsas et al., 2016; Pearlson et al., 1998; Raveau et al., 2017). However, we also detected increased hippocampal, cerebellar, and whole brain volumes in TS untreated mice that do not match clinical reports indicating reduced brain, hippocampal and cerebellar volumes in humans with DS (Aylward et al., 1997; Hamner et al., 2018; Patkee et al., 2020; Pearlson et al., 1998; Pinter et al., 2001; Rodrigues et al., 2019; Smigielska-Kuzia et al., 2011), and other preclinical studies that did not find brain volume differences in Ts65Dn mice (Aldridge et al., 2007; Duchon et al., 2021; Holtzman et al., 1996; Insausti et al., 1998). The prenatal chronic treatment did not have major effects, but generally increased the volume of all brain regions in TS treated mice, which is contrary to a previous study indicating that administering a green tea infusion corresponding to 0.6–1 mg EGCG per day from mating until adulthood significantly reduced the brain weight and volume in YACtg152F7 mice (Guedj et al., 2009).
 
-## Functional domain
+#### Functional domain
 
 Regarding cognitive function, our results indicated that TS mice showed cognitive delay during early stages of development. As suggested in clinical investigations (Locatelli et al., 2021; Olmos-Serrano et al., 2016b), the cognitive alterations continued with development, and adult TS mice showed hyperactivity, impaired memory robustness, and a more explorative behavior, in line with previous reports (Aziz et al., 2018; Costa et al., 2010; Coussons-Read and Crnic, 1996; Dierssen et al., 2002; Escorihuela et al., 1995; Escorihuela et al., 1998; Holtzman et al., 1996; Llambrich et al., 2022b; Olmos-Serrano et al., 2016b). Regarding treatment effects, the combined results from all tests suggested that even though the treatment could have had a positive effect reducing the anxiety of treated mice, it likely altered memory robustness and induced a more hyperactive, explorative, and risk-taking behavior. After treatment discontinuation, when the tests were repeated, all groups of mice presented less locomotor activity and explorative behavior. It is not unlikely that this reduction in activity was due to the stress and anxiety induced by the manipulation and testing during the first round of cognitive evaluation. However, TS untreated mice and both WT and TS treated mice still tended to show increased locomotor activity and explorative behavior compared with WT untreated mice, suggesting that the prenatal chronic treatment could have had permanent adverse effects after one month of discontinuation, or could have reduced the anxiety produced by the first round of testing while mice were treated. These results are in line with previous articles indicating no or negative effects of EGCG on cognition in humans and mice (Cieuta-Walti et al., 2022; Goodlett et al., 2020; Stringer et al., 2015; Stringer et al., 2017), but are contrary to other articles showing rescuing effects (Catuara-Solarz et al., 2016; de la Torre et al., 2016; De la Torre et al., 2014; Souchet et al., 2019; Stagni et al., 2016; Yin et al., 2017).
 
-## Molecular domain
+#### Molecular domain
 
 Regarding hippocampal metabolite concentration, we observed differences between untreated WT and TS mice when evaluating the entire spectra using the LDA, which reflects the analysis of the whole MR spectra rather than selected metabolites, but we only detected a specific significant difference in the levels of Cr +PCr at MRS1, suggesting that the genotype produced mild general molecular differences rather than large specific disruptions in any metabolite. Our results did not reveal any difference in NAA or myo-inositol, which is consistent with a human study showing no differences in the levels of NAA in the hippocampal region of adults with DS without dementia (Lamar et al., 2011), but do not replicate the results from another human study indicating increased myo-inositol levels (Beacher et al., 2005). Other studies in humans with DS reported decreased NAA levels relative to creatine and myo-inositol in other brain regions, such as the frontal lobes and posterior cingulate cortex (Lin et al., 2016; Smigielska-Kuzia and Sobaniec, 2007). Studies performed in the Ts65Dn model indicated reduced NAA levels relative to creatine in the hippocampal region (Huang et al., 2000; Même et al., 2014), which is contrary to our findings, but another study indicated no differences in NAA absolute concentrations (Santin et al., 2014). Furthermore, all these mouse studies indicated increased values of inositol or myo-inositol, which we did not detect in this study. These results reflect the large variability of phenotypes associated with DS depending on the developmental stage and region analyzed, as well as the disparity in experimental setups and data analyses between studies, as some studies reported the absolute metabolite concentrations while others reported their relative values normalized to creatine, which could explain the discrepancy among some of the results.
 
 Regarding treatment effects, we detected significant differences between TS treated mice and both TS untreated and WT untreated mice when analyzing the entire spectra using the LDA, but no significant differences between TS untreated and TS treated mice in any specific metabolite. However, TS treated mice presented significantly increased Cr +PCr and reduced tCho levels as compared with WT untreated mice. After treatment discontinuation, these differences were no longer significant, but general differences remained in the LDA between TS treated and WT untreated mice. These results indicated that prenatal chronic GTE-EGCG treatment had mild modulating effects altering the entire hippocampal metabolite profile in TS mice.
 
-## Genetic domain
+#### Genetic domain
 
 Regarding cerebellar gene expression, we did not detect large differences in the PCA that compared the expression of triplicated genes across groups of mice. Even though these genes presented an extra copy number, their expression was not significantly altered, which is consistent with previous articles (Aït Yahya-Graison et al., 2007; Lyle et al., 2004; Olmos-Serrano et al., 2016b; Saran et al., 2003).
 
@@ -195,7 +231,7 @@ However, we only detected 24 DEGs between untreated WT and TS mice when analyzin
 
 Even though the prenatal chronic GTE-EGCG treatment used in this study was administered continuously from embryonic day 9 until adulthood, the treatment did not cause any large permanent effects in the gene expression of adult TS mice after 3 months of discontinuation, as we did not detect any DEG between TS untreated and TS treated mice. These results suggest that even though the treatment could have potentially modulated gene expression during a critical window for brain development in TS mice, these effects may have been reverted after treatment withdrawal. In WT mice, five genes were found to be differentially expressed between WT untreated and WT treated mice, of which Hspa1b and Hspa1a mapped to Mmu17, Fosl2 mapped to Mmu5, Actn1 to mapped Mmu12, and Tm6sf2 mapped to Mmu8; which could indicate permanent genome-wide treatment effects in a few genes in WT mice. Interestingly, from the list of DEGs, only Hspa1b was found to interact with Dyrk1A (Rouillard et al., 2016), suggesting that GTE-EGCG may have other mechanisms of action than DYRK1A kinase activity inhibition.
 
-## The pleiotropic nature of genotype and treatment effects
+### The pleiotropic nature of genotype and treatment effects
 
 The combination of multi- and univariate tests performed in our study allowed us to explore in a more comprehensive way the integrated effects of genotype and treatment. Overall, we detected more significant differences when performing multivariate analysis combining the results of different tests together than when we evaluated each test individually, which highlights the pleiotropic nature of DS and GTE-EGCG, as both genotype and treatment caused mild effects in multiple readouts rather than large specific effects in single variables.
 
@@ -203,7 +239,7 @@ For example, we observed that even though TS untreated mice presented mild gene 
 
 Furthermore, we observed that even though there were no significant differences in the concentration of NAA in the hippocampal region of TS untreated mice, these mice showed altered hippocampal region metabolite spectra, increased hippocampal region volume, and altered memory robustness. Similarly, the treatment did not alter the concentration of NAA in the hippocampal region of TS treated mice, but induced general differences in hippocampal region metabolite spectra, mildly increased hippocampal region volume, and altered cognition. These results suggested that the cognitive differences induced by both the genotype and treatment were not related with the concentration of NAA in the hippocampal region but rather with general differences in hippocampal region volume and metabolite spectra.
 
-## The advantages of a longitudinal holistic approach
+#### The advantages of a longitudinal holistic approach
 
 Single holistic and longitudinal experiments evaluating multiple systems simultaneously overcome the limitations of individual analyses and the lack of consistency across studies. The differences between study results highlighted in this study could be due to a large variety of factors, including experimental differences in the mouse model, developmental stage analyzed, sex distribution of the sample, experimental setup, technical differences in data acquisition and analysis, as well as differences in treatment dose, timing, and route of administration. As a result, evidence from different studies is challenging to interpret, and can lead to misinterpretations about the course of the disorder and the effects of pharmacological treatments. With our approach, the differences between experimental setups could be accounted for, analyzing the simultaneous development of different systems in the same mice in a controlled experimental setup, and investigating the related effects of trisomy and treatment in multiple related systems.
 
@@ -211,7 +247,7 @@ Our results support that, overall, the Ts65Dn model reflects the multisystemic n
 
 Regarding the treatment effects, our results confirmed that GTE-EGCG modulated most of these systems simultaneously along development. However, our holistic approach revealed that, in general, the treatment did not rescue the trisomic phenotype and even exacerbated some phenotypes over time, such as body weight, tibia microarchitecture, neurodevelopment, adult cognition, and hippocampal metabolite concentration. Although discontinuing the GTE-EGCG administration reduced the treatment effects, it did not rescue the trisomic phenotype, as TS treated mice remained different from WT untreated mice in most systems. Discontinuing the GTE-EGCG treatment for three months only rescued the body weight and brain volume of a few TS mice but increased the weight of WT mice and reduced the BMD of the humerus in both WT and TS mice. Summing up, our preclinical results warn against a chronic GTE-EGCG treatment initiated prenatally and maintained until adulthood with a dosage of 30 mg/kg/day.
 
-## Future directions
+### Future directions
 
 Performing specific experiments to evaluate the effects of a potential therapeutic compound on one structure at one timepoint are important first steps to screen for novel therapeutic agents. However, the pleiotropic effects on all involved organ systems over a relevant time course should not be ignored when evaluating its general safety and efficacy, especially in complex disorders like DS.
 
@@ -221,7 +257,7 @@ With this holistic approach, the preclinical biomedical research field will be a
 
 ## Materials and methods
 
-## Animals, housing, treatment, and experimental design
+### Animals, housing, treatment, and experimental design
 
 Ts65Dn (B6EiC3Sn-a/A-Ts (1716)65Dn) females and B6EiC3Sn.BLiAF1/J males (refs. 005252 and 003647, the Jackson Laboratory Bar Harbor, ME, USA) were obtained from the Jackson Laboratory and crossed within six months to obtain F1 trisomic Ts65Dn (TS) mice and euploid wildtype littermates (WT) that were used throughout the experiment. Mice were housed at the animal facility of KU Leuven in individually ventilated cages (IVC cages, 40 cm long x 25 cm wide x 20 cm high) under a 12 h light/dark schedule in controlled environmental conditions of humidity (50–70%) and temperature (22 ± 2°C) with food and water supplied ad libitum. Date of conception (E0) was determined as the day in which a vaginal plug was present. After birth, all pups were labeled with a non-toxic tattoo ink (Ketchum Animal Tattoo Ink, Green Paste) for identification throughout the longitudinal experiments, as the same mice were used throughout the entire experiment. All procedures complied with all local, national, and European regulations and ARRIVE guidelines and were authorized by the Animal Ethics Committee of KU Leuven (ECD approval number P120/2019).
 
@@ -231,55 +267,55 @@ We bred a total of 13 litters. Six litters were left untreated and seven litters
 
 Mice were allocated to groups according to their genotype and pharmacological intervention: WT and TS mice untreated or treated with GTE-EGCG (Figure 1). Investigators were blinded to genotype during animal experimentation, and to genotype and treatment during data analysis. The same mice were longitudinally used throughout the experiment. We estimated the sample size based on behavioral testing. Based on preliminary data, we estimated a standard deviation of 20% and a relevant effect size of 20%. Assuming an alpha level of 0.05 and accepted power of 0.8, we calculated a minimum sample size of 17 animals per condition. Sample sizes varied across groups and developmental stages due to uncontrollable technical issues inherent to longitudinal studies, such as scanning failure or mouse death during the experiment. The litter information containing litter number, treatment administration and sex for each mouse is described in Supplementary file 1c. Detailed information regarding sample sizes for each experiment and analysis is provided in Supplementary file 1a.
 
-## Structural assessment
+### Structural assessment
 
-## Body weight
+#### Body weight
 
 Mice body weight was recorded daily from PD1 to PD17 and before each µCT scanning (Figure 1).
 
-## Skeletal development
+#### Skeletal development
 
-## In vivo µCT
+##### In vivo µCT
 
 We performed high-resolution longitudinal in vivo µCT at four timepoints from after birth until adulthood to monitor skeletal development (Figure 1). Mice were anesthetized by inhalation of 1.5–2% of isoflurane (Piramal Healthycare, Morpeth, Northumberland, United Kingdom) in pure oxygen and scanned in vivo with the SkyScan 1278 (Bruker Micro-CT, Kontich, Belgium) for 3 min using the optimized parameters specified in Supplementary file 1d. In vivo µCT data was reconstructed using a beam hardening correction of 10% (NRecon software, Bruker Micro-CT, Kontich, Belgium).
 
-## Skull shape analysis
+###### Skull shape analysis
 
 Skull 3D models were automatically generated from reconstructed in vivo µCT scans by creating an isosurface based on specific threshold for bone using Amira 2019.2 (Thermo Fisher Scientific, Waltham, MA, USA). We compared craniofacial morphology in WT and TS mice with and without GTE-EGCG treatment using Geometric Morphometric quantitative shape analyses (Dryden and Mardia, 1998; Hallgrimsson et al., 2015; James Rohlf and Marcus, 1993; Klingenberg, 2010). The analysis was based on the 3D coordinates of anatomical homologous landmarks recorded over the skull and face at each developmental stage as described before (Llambrich et al., 2022a). The landmark configuration for each stage is defined in Supplementary file 1e. Landmarks were acquired using Amira 2019.2.
 
-## Humerus bone mineral density (BMD)
+###### Humerus bone mineral density (BMD)
 
 To calculate humerus BMD from the µCT data, we first computed the humerus mean grey value of each mouse by delimiting a volume of interest of ten slices that was placed right below the deltoid protuberance of the humerus using the CTAn software (Bruker Micro-CT, Kontich, Belgium). Then, we scanned two phantoms with different known densities of hydroxyapatite (100 mg/cm3 and 500 mg/cm3) using the same settings as in the in vivo scans (Supplementary file 1d). A calibration line was obtained between the known hydroxyapatite densities and their corresponding grey values. The resulting equation was applied to calculate the BMD of the humerus of each mouse from their mean grey value.
 
-## Tibia length
+### Tibia length
 
 After sacrifice, the length of the right tibia was measured in all mice using a digital caliper.
 
-## Ex vivo µCT for tibia
+### Ex vivo µCT for tibia
 
 The proximal region of the tibia was scanned ex vivo using the Skyscan 1272 high-resolution µCT scanner (Bruker Micro-CT, Kontich, Belgium) with the optimized parameters specified in Supplementary file 1d. After scanning the bones, the raw 2D images were reconstructed using NRecon (version 1.7.3.1, Bruker Micro-CT, Kontich, Belgium) and rotated to a standard position using DataViewer (version 1.5.6.2, Bruker Micro-CT, Kontich, Belgium). The reconstructed images were then analyzed using the CTAn software (version 1.17.8.0, Bruker Micro-CT, Kontich, Belgium) as follows.
 
-## Trabecular analysis
+#### Trabecular analysis
 
 For trabecular bone, a section of 300 slices (1.5 mm) was selected starting 100 slices (0.5 mm) underneath the point in the proximal tibia where the articular condyles met. Then, a region of interest (ROI) was manually defined including the trabecular bone inside the thin cortical outer layer. The descriptions, abbreviations and parameter units are provided in Supplementary file 1f.
 
-## Cortical analysis
+#### Cortical analysis
 
 For cortical bone, a section of 100 slices (0.5 mm) was selected in CTAn starting 600 slices (3 mm) underneath the reference point in the proximal tibia. The tissue inside the medullary canal was excluded from the ROI. The descriptions, abbreviations and parameter units are provided in Supplementary file 1g.
 
-## Brain volume
+### Brain volume
 
-## In vivo MRI scanning
+#### In vivo MRI scanning
 
 Mice were also MR scanned in vivo under the same anesthesia (1.5–2% isoflurane, Piramal Healthycare, Morpeth, Northumberland, United Kingdom) at MRI1 and MRI2 (Figure 1) with a 9.4T Bruker Biospec 94/20 small animal μMR scanner (Bruker Biospin, Ettlingen, Germany; 20 cm horizontal bore) equipped with actively shielded gradients (maximum gradient strength 600 mT m−1). Axial, coronal, and sagittal images were acquired using a 2D T2 weighted Rapid Acquisition with Relaxation Enhancement (RARE) sequence (repetition time (TR)/ echo time (TE): 3781/33ms; RARE factor: 8; averages: 6; field of view (FOV): 20×20 mm; matrix 128×128; slice number: 35; slice thickness: 0.4 mm; slice gap: 0.1 mm; acquisition time 6 min). A quadrature radiofrequency resonator (inner diameter 7.2 cm, Bruker Biospin) was used for transmission of radiofrequency pulses in combination with and actively decoupled mouse brain surface coil for reception (Bruker Biospin).
 
-## Segmentation of brain regions of interest
+#### Segmentation of brain regions of interest
 
 After MR image acquisition, brain masks were manually delineated on the axial plane for each mouse using 3D Slicer v5.0.2. (http://www.slicer.org)(Fedorov et al., 2012). Then, the masks were fed to the Atlas-Based Imaging Data Analysis (AIDA) pipeline described previously (Pallast et al., 2019). In brief, the pipeline consisted of a series of preprocessing steps including skull stripping and bias field correction of the MR images before registration with the Allen Mouse Brain Reference Atlas (Sunkin et al., 2013) through a series of affine and non-linear transformations. The volume of the whole brain was extracted from the manually delineated masks and the volumes of the hippocampal region, cerebellum, and ventricles were extracted from the AIDA segmentations. All brain volumes were normalized to body weight to account for the differences in overall body size between WT and TS mice.
 
-## Functional assessment
+### Functional assessment
 
-## Neurobehavioral development
+#### Neurobehavioral development
 
 Neurobehavioral developmental tests were carried out daily from PD1 to PD18, as previously described (Dierssen et al., 2002; Llambrich et al., 2022b). Mothers were separated from their pups before testing. Pups were then taken out one at a time from their home cage for testing, and mothers were returned into the cage after all pups were evaluated. For each neurobehavioral test, we evaluated the acquisition rate and the average day of successful test completion.
 
@@ -287,11 +323,11 @@ In neurodevelopment tests with a presence/absence binary outcome, such as eye op
 
 In those neurodevelopment tests measured with categorical non-binary scores, such as incisor eruption, surface righting response, negative geotaxis, vertical climbing, and grasping; the acquisition rate was scored as the daily average score of each group of mice. The day of successful test completion was considered as the day when the highest score was achieved.
 
-## Maternal care
+#### Maternal care
 
 For maternal care monitoring, home IVC cages were transferred to a separate light cycle-controlled room with food and water supplied ad libitum. Cages were videotaped from the top during 24 hr using the Foscam C1 camera with night vision and a transparent Plexiglas cover with holes for ventilation. The recordings were manually inspected every 6 min for 10 s, and maternal behavior was categorized as nursing, pup grooming, digging in nest, eating, drinking, moving, or digging off nest to evaluate the frequency of each maternal behavior.
 
-## Adult cognition
+#### Adult cognition
 
 Open Field (OF), Elevated Plus Maze (EPM), Sociability/Preference for Social Novelty (SPSN), Novel Object Recognition (NOR) and Passive Avoidance (PA) tests were performed in this order before and after treatment discontinuation (Figure 1).
 
@@ -305,9 +341,9 @@ NOR testing started with a habituation phase where the animals were placed durin
 
 The PA experimental set-up consisted of a transparent box illuminated with an LED lamp leading to a dark box with an electrifiable grid connected to a shocker (LE 100–26, Panlab Bioseb, Spain) and a lid. Dark habituated mice were placed in the light box and when they entered the dark box (CS), the latency to enter the dark box was recorded, and a mild foot shock was delivered (US 0.5mA, 2 s, scrambled). The next day, the trial was repeated (without foot shock presentation) and latency to enter the dark compartment was recorded (maximum 300 s). Animals with good memory retention would display a higher latency to enter on day 2. This test was repeated in the same animals after treatment cessation. We noticed that upon re-exposure to the same setup, some animals still remembered the CS-US presentation, and refused to enter the dark box. Therefore, this second testing session reflected the stability of long-term memory.
 
-## Molecular and genetic assessment
+### Molecular and genetic assessment
 
-## In vivo MRS
+#### In vivo MRS
 
 MR spectra were acquired as previously reported using a Bruker Biospec 94/20 MR scanner (Vanherp et al., 2021; Weerasekera et al., 2018). After MRI scanning, MR spectra were acquired from a 2.5×1.25 × 1.5 mm voxel placed in the hippocampal region of the brain using a PRESS sequence with TR/TE2000/20 ms, 320 averages, and localized shimming with no margin. Water suppression was optimized using VAPOR (Griffey and P. Flamig, 1990). An unsuppressed water MR spectrum was acquired before each water-suppressed 1H-MRS spectrum for quantification/referencing. Shimming was performed using FASTMAP, resulting in a final water line width at half height <20 Hz.
 
@@ -315,13 +351,13 @@ For the multivariate analysis of the spectra, the signals were truncated to reta
 
 For quantification of absolute metabolite concentrations, a similar approach was taken as previously reported (Weerasekera et al., 2018). In brief, spectra were processed using jMRUI v6.0 (Stefan et al., 2009). Spectra were phase corrected and an HLSVD (Hankel Lanczos Singular Values Decomposition) filter was applied to remove the residual water signal (Boogaart et al., 1994). Metabolites were quantified with the QUEST algorithm (Ratiney et al., 2004) in jMRUI using a simulated (NMRScopeB) basis set (Starčuk et al., 2009). Results were reported in reference to the non-suppressed water signal. A metabolite data base was used as in Weerasekera et al., 2018.
 
-## Gene expression
+#### Gene expression
 
 Gene expression analysis was performed on a cerebellar tissue homogenate at endpoint (Figure 1). Each cerebellum was dissected and processed independently. Homogenates were obtained with a gentleMACS dissociator (Miltenyi Biotech). Total RNA was then extracted with QIAzol according to the manufacturer’s instructions. RNA purity and concentration were assessed by NanoDrop ND-1000 Spectrophotometer and RNA integrity was evaluated by Fragment Analyzer analysis (RIN ≥8). Illumina TruSeq stranded mRNA kit was used for library preparation, samples were pooled and sequenced on a HiSeq4000, single end, 50 bp reads. A minimum of one million reads were obtained per sample. Quality control of raw reads was performed with FastQC v0.11.7 (Andrews, 2010). Adapters were filtered with ea-utils fastq-mcf v1.05 (Aronesty, 2011). Splice-aware alignment was performed with HISat2 (Kim et al., 2019), against the mouse reference genome mm10 using default parameters. Reads mapping to multiple loci in the reference genome were discarded. Resulting Binary Alignment Map (BAM) files were handled with Samtools v1.5 (Li et al., 2009). Quantification of reads per gene was performed with HT-seq Count v0.10.0, Python v2.7.14 (Anders et al., 2015). Count-based differential expression analysis was performed with R-based (The R Foundation for Statistical Computing, Vienna, Austria) Bioconductor package DESeq2 (Love et al., 2014), normalizing absolute counts. Pairwise comparison of the entire genome for all groups was done with default settings and the reported P-values were adjusted for multiple testing with the Benjamini-Hochberg procedure controlling for false discovery rate (FDR; Supplementary file 3). Multivariate evaluation of the subset of 125 triplicated genes present in the Ts65Dn mouse model was performed as described below. All mice that survived until endpoint were included in both analyses (Supplementary file 1a).
 
-## Statistics
+### Statistics
 
-## Univariate evaluation
+#### Univariate evaluation
 
 The developmental trajectories of the body weight, BMD, and acquisition rate of neurodevelopment tests with categorical non-binary scores were longitudinally analyzed by fitting a mixed-effects model as implemented in GraphPad Prism 8.0, using the Geisser-Greenhouse correction and Restricted Maximum Likelihood (REML) fit as described before (Llambrich et al., 2022b). The acquisition rate of neurodevelopment tests with a presence/absence binary outcome was longitudinally analyzed using a log-rank test (Mantel-Haenszel approach), considering the day of appearance of the landmark or response as an event using GraphPad Prism 8.0.
 
@@ -329,7 +365,7 @@ We made five pairwise comparisons for all univariate non-longitudinal data: the 
 
 The results for normality, homoscedasticity and statistical tests performed for each variable can be found in Supplementary file 1h. Mice identified as outliers by the ROUT test (Motulsky and Brown, 2006) with a Q (maximum desired False Discovery Rate) of 1% were excluded from the analysis. All univariate statistical analysis were performed using GraphPad Prism (v8.02, GraphPad Software, San Diego, California USA).
 
-## Multivariate evaluation
+#### Multivariate evaluation
 
 We performed multivariate statistics in all tests with multiple variables: craniofacial shape, tibia microarchitecture, brain volumes, neurodevelopmental tests, adult cognitive tests, brain metabolite concentration and gene expression.
 

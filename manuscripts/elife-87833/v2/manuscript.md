@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/047s2c258 Department of Cell Biology and Molecular Genetics, University of Maryland College Park United States
-2. https://ror.org/047s2c258 Biophysics Program, University of Maryland College Park United States
-3. https://ror.org/047s2c258 Department of Physics, University of Maryland College Park United States
-4. https://ror.org/047s2c258 Institute for Physical Science and Technology, University of Maryland College Park United States
+1. Department of Cell Biology and Molecular Genetics, University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
+2. Biophysics Program, University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
+3. Department of Physics, University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
+4. Institute for Physical Science and Technology, University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
 
 † Corresponding author
 
@@ -41,23 +41,55 @@ This study explores the mechanisms by which the actin cytoskeleton remodels from
 
 ## Results
 
-## Arp2/3, activated by N-WASP but not WASP, is required for B-cell contraction
+### Arp2/3, activated by N-WASP but not WASP, is required for B-cell contraction
 
 Arp2/3-generated branched F-actin is known to drive lamellipodial expansion for B-cell spreading (Bolger-Munro et al., 2019). However, whether branched F-actin is involved in the subsequent contraction phase is unknown. To address this, we perturbed the polymerization of branched F-actin using the Arp2/3 inhibitor CK-666 (50 µM) while using its inactive derivative CK-689 as a control. Pre-warmed splenic B-cells from WT C57BL/6 mice were incubated with monobiotinylated Fab’ fragment of anti-mouse IgM + G attached to planar lipid bilayers (Fab’-PLB) by biotin-streptavidin interaction and imaged live at 37 oC using interference reflection microscopy (IRM). The contact area of B-cells treated with CK-689 rapidly increased upon contacting Fab’-PLB and reached a maximum level at ≥0.5 min after the initial contact (Figure 1A, Figure 1—figure supplement 1, and Figure 1—video 1A). Following maximal spreading, most B-cells reduced the area of their contact zone, indicating contraction (Figure 1A and B, Figure 1—figure supplement 1, and Figure 1—video 1A). We classified a B-cell as contracting if its contact zone area is reduced by ≥5% for at least 10 s after reaching a maximum value. Based on the average timing for B-cell maximal spreading, we treated B-cells with CK-666 at the beginning of the incubation (Time 0), before B-cell spreading initiation, or at 2 min, when all B-cells had already spread. The effectiveness of CK-666 was detected by reduced Arp2/3 staining in the contact zone (Figure 1—figure supplement 2). As expected, CK-666 treatment at 0 but not 2 min reduced the kinetics of B-cell spreading (Figure 1—figure supplement 3). Importantly, CK-666 treatment at 0 and 2 min both significantly reduced the percentage of B-cells undergoing contraction (Figure 1A–C and Figure 1—video 1A). The inhibitory effect of CK-666 on B-cell contraction, particularly CK-666 treatment after B-cell spreading, suggests that Arp2/3-mediated branched actin polymerization is required for B-cell contraction.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87833/elife-87833-fig1-v2.jpg)
+
+**Figure 1.:** Splenic B-cells were incubated with planar lipid bilayers coated with monobiotinylated Fab’ fragment of goat anti-mouse IgG + M (Fab’-PLB) in the absence and presence of various inhibitors and imaged live at 37 °C by interference reflection microscopy (IRM). The B-cell plasma membrane area contacting Fab’-PLB (B-cell contact zone) was measured using IRM images and custom MATLAB scripts [Source code 1 and Source code 2]. (A) Representative IRM images of splenic B-cells from C57BL/6 mice treated with CK-689 or CK-666 (50 µM) before (0 min) and after maximal spreading (2 min). (B) Representative plots of the B-cell contact area versus time from one contracting cell and one non-contracting cell. (C) Percentages (± SEM) of B-cells that underwent contraction after treatment with CK-666 or CK-689. A B-cell was classified as contracting if its contact zone area was reduced by ≥5% for at least 10 s after reaching a maximum value. (D) Representative IRM images of splenic B-cells from C57BL/6 mice treated with DMSO or Wiskostatin (Wisko, 10 µM) 10 min before and during incubation with Fab’-PLB. (E) Percentages (± SEM) of B-cells that underwent contraction after treatment with Wisko or DMSO. (F) Representative IRM images of splenic B-cells from flox control and B-cell-specific N-wasp knockout (cNKO) mice. (G) Percentages (± SEM) of cNKO or flox control B-cells that underwent contraction. (H) Representative IRM images of splenic B-cells from wild-type (WT) or Wasp knockout mice (WKO). (I) Percentages (± SEM) of WKO or WT B-cells that underwent contraction. Data points in (C, E, G and I) represent three independent experiments,~25 cells per condition per experiment, with each color representing one experiment. Scale bar, 2 µm. *p<0.05, ***p<0.001, by paired student’s t-test. MATLAB codes were used for detecting the B-cell contact zone in time-lapse data and tracking the area occupied by it [Source code 2, Source code 3, Source code 4, Source code 5, Source code 6].
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87833/elife-87833-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Splenic B-cells were pre-warmed to 37 °C and incubated with planar lipid bilayers coated with monobiotinylated Fab’ fragment of goat anti-mouse IgG + M (Fab’-PLB) and imaged live at 37 °C by interference reflection microscopy (IRM). Shown are individual frames from a time-lapse IRM image of one B-cell. The plasma membrane area contacting with Fab’-PLB (B-cell contact zone) visualized by IRM increased between 0–1 min after landing, indicating spreading, and decreased after 1 min 30 s, indicating contraction. Scale bar, 2 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87833/elife-87833-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Wild-type (WT) splenic B-cells were treated with CK-689 or CK-666 (50 µM) before (0 min) and after maximal spreading (2 min) during incubation with Fab’-PLB at 37 °C. Cells were fixed at 3 and 7 min, permeabilized, stained for Arp2, and imaged using interference reflection microscopy (IRM) and total internal reflection fluorescence microscopy (TIRF). Shown are representative images (A) and the MFI of Arp2 in the contact zone at 3 min and 7 min compared between B-cell treated with CK-689 (black dots), CK-666 from 0 min (red dots), and CK-666 from 2 min (purple dots) (B). Data points represent individual cells from three independent experiments with ~20 cells per condition per experiment. Scale bar, 2 µm. ***p<0.001, by non-parametric student’s t-test.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/87833/elife-87833-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Wild-type (WT) splenic B-cells were treated with CK-689 or CK-666 (50 µM) before (0 min) and after maximal spreading (2 min) during incubation with Fab’-PLB and imaged live at 37 °C by interference reflection microcopy (IRM). The area occupied by the B-cell contact zone was measured using IRM images and custom codes made in MATLAB [Source code 2 and Source code 3]. The mean spreading rate of each cell during its early spreading phase was quantified using the contact area versus the time curve of that cell by linear regression. The averaged spreading rates (± SEM) were generated from three independent experiments with ~15 cells per condition per experiment. *p>0.05, **p<0.01, by non-parametric student’s t-test.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/87833/elife-87833-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Wild-type (WT) splenic B-cells were pre-treated with Wiskostatin (Wisko, 10 µM) or DMSO (control) for 10 min at 37 °C before and during incubation with Fab’-PLB. Cells were fixed at 3 and 7 min, permeabilized, stained for phosphorylated N-WASP (pN-WASP) or WASP (pWASP), and imaged using interference reflection microscopy (IRM) and total internal reflection fluorescence microscopy (TIRF). Shown are IRM and TIRF images of phosphorylated N-WASP (pN-WASP) (A) and phosphorylated WASP (pWASP) (B) at the B-cell contact zone and the mean fluorescence intensity (MFI) (± SEM) of pN-WASP (C) and pWASP (D) in the B-cell contact zone, comparing between DMSO and Wisko-treated B-cells. Data points represent individual cells from three independent experiments with ~25 cells per condition per experiment. Scale bar, 2 µm. **p<0.01, ***p<0.001, by non-parametric student’s t-test.
+
 WASP and N-WASP are actin nucleation-promoting factors upstream of Arp2/3 that are expressed in B-cells (Padrick and Rosen, 2010). To determine if either or both were responsible for activating Arp2/3 for B-cell contraction, we utilized the N-WASP inhibitor wiskostatin (Wisko), and splenic B-cells from B-cell-specific N-wasp knockout mice (cNKO) and germline Wasp knockout (WKO) mice (Westerberg et al., 2012; Liu et al., 2013a). Wisko has been shown to inhibit N-WASP activation while enhancing WASP activation in B-cells (Figure 1—figure supplement 4; Liu et al., 2013a). We found that both Wisko (10 µM) (Figure 1D and E and Figure 1—video 1B) and cNKO (Figure 1F and G and Figure 1—video 1C), but not WKO (Figure 1H and I and Figure 1—video 1D), significantly reduced the percentage of B-cells undergoing contraction, compared to the vehicle, flox, or WT controls. These results suggest that N-WASP- but not WASP-activated Arp2/3 mediates branched actin polymerization for B-cell contraction.
 
-## Arp2/3, downstream of N-WASP, generates inner F-actin foci, driving B-cell contraction
+### Arp2/3, downstream of N-WASP, generates inner F-actin foci, driving B-cell contraction
 
 To understand how Arp2/3 drives B-cells to transition from spreading to contraction, we identified F-actin structures associated with contracting B-cells that were sensitive to CK-666 treatment. We visualized F-actin by phalloidin staining and compared F-actin organization in the contact zone of B-cells at the spreading (2 min) and contraction (4 min) phases using TIRF. While B-cells in both spreading and contraction phases exhibited phalloidin staining outlining the contact zone (Figure 2A, green arrows), only B-cells in the contracting phase showed interior phalloidin patches brighter than the phalloidin staining at the periphery of the contact zone (Figure 2A, purple arrows). These F-actin patches were organized into a ring-like structure and resided ~1 μm behind the spreading front, surrounding an F-actin-poor center (Figure 2A, purple arrows). Here, we refer to these F-actin patches as inner F-actin foci. We identified inner F-actin foci based on whether their peak fluorescence intensity (FI) was ≥twofold of the mean fluorescence intensity (MFI) of phalloidin in the no-foci area, had diameters of ≥250 nm, and were located 1 µm away from the edge of the contact zone. We found that such inner F-actin foci were detected in >60% of B-cells in the contracting phase (4 min) but only in <20% of B-cells in the spreading phase (2 min) (Figure 2B). CK-666 treatment at 0 min, which inhibited B-cell contraction, significantly reduced the percentage of B-cells showing inner F-actin foci at 4 min but not at 2 min (Figure 2B). CK-666 treatment did not affect the phalloidin staining outlining the contact zone (Figure 2A). Similarly, the percentage of cNKO B-cells showing inner F-actin foci was drastically reduced at 4 min but not at 2 min (Figure 2C). These results suggest that the formation of these inner F-actin foci is associated with B-cell contraction.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/87833/elife-87833-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) Wild-type (WT) splenic B-cells were treated with CK-689 or CK-666 (50 µM) during incubation with Fab’-PLB (A and B), and flox control and B-cell-specific N-wasp knockout mice (cNKO) B-cells were incubated with Fab’-PLB at 37 °C (C). Cells were fixed at 2 and 4 min, permeabilized, stained for F-actin with phalloidin, and analyzed using total internal reflection fluorescence microscopy (TIRF). Shown are representative TIRF images of phalloidin staining in the contact zone of CK-689 and CK-666-treated B-cells (A left panels) and fluorescence intensity (FI) profiles of phalloidin staining along a line crossing cells (A right panels). Green arrows indicate lamellipodial F-actin, purple arrows indicate inner F-actin foci on the line, and blue arrows indicate all inner actin foci forming a ring-like structure. Percentages of cells (per image) (± SEM) with inner F-actin foci forming ring-like distribution among CK-689- versus CK-666-treated cells (B) and flox control versus B-cell-specific N-wasp knockout mice (cNKO) B-cells (C) before (2 min) and after (4 min) contraction were determined by visual inspection of phalloidin FI line-profiles across the B-cell contact zones. Data points in (B) and (C) represent three independent experiments, with each color representing one experiment, five images per condition per experiment, and ~15 cells per image. (D–G) Inner F-actin foci were identified by their diameter (≥250 nm), peak FI (≥twofold of no foci area, and location 1 µm away from the outer edge) and quantified as the number per cell using TIRF images. (D) Shown are representative images of splenic B-cells from LifeAct-GFP-expressing mice treated with CK-689 or CK-666 from 0 min during incubation with Fab’-PLB at 37 °C (top) and the average number (± SEM) of inner LifeAct-GFP foci per cell (bottom) at 2 min. (E) LifeAct-GFP B-cells were treated with CK-666 at 2 min. Shown are representative TIRF images of LifeAct-GFP in the contact zone of B-cells (top) and the average number (± SEM) of inner LifeAct-GFP foci (bottom) in the same cell 10 s before and 20 s after CK-666 treatment. Arrows indicate disappeared actin foci after CK666 treatment. (F) Shown are representative TIRF images of phalloidin-staining in the contact zone of flox control and cNKO B-cells after incubating with Fab’-PLB for 2 min (top) and the average number (± SEM) of inner F-actin foci per cell (bottom). (G) Shown are representative TIRF images of wild-type (WT) and Wasp germline knockout (WKO) B-cells expressing LifeAct-GFP incubated with Fab’-PLB for 2 min and the average number (± SEM) of inner F-actin foci per cell (bottom). Data points represent individual cells from three independent experiments with 10 (D, F, and G) or 6 (E) cells per condition per experiment. Scale bar, 2 µm. **p<0.01, ***p<0.001, by non-parametric student’s t-test.
+
 We further quantified the number of inner F-actin foci in individual B-cells from mice expressing the LifeAct-GFP transgene (Riedl et al., 2010; Figure 2D, E and G), which allowed us to monitor F-actin reorganization using live-cell imaging (Figure 2—video 1), or using phalloidin staining in flox control and cNKO B-cells (Figure 2F). Consistent with the results with phalloidin staining, CK-666 treatment at time 0 significantly reduced the number of inner F-actin foci in the contact zone (Figure 2D and Figure 2-video 1A and B). When we followed the same B-cells before and after CK-666 treatment at 2 min, many of the inner F-actin foci formed before the treatment (1 min 50 s) disappeared after the treatment (2 min 20 s), significantly reducing the number of inner F-actin foci (Figure 2E). Similar to the CK-666 treatment, cNKO cells significantly reduced the number of inner F-actin foci in the contact zone, compared to flox controls (Figure 2F). In contrast, WKO, which does not affect B-cell contraction, did not significantly change the number of inner F-actin foci, compared to WT control B-cells (Figure 2G and Figure 2—video 1C and D). Thus, N-WASP- but not WASP-activated Arp2/3 drives the formation and the maintenance of contraction-associated inner F-actin foci.
 
-## Inner F-actin foci are derived from lamellipodial actin networks supporting the spreading membrane
+### Inner F-actin foci are derived from lamellipodial actin networks supporting the spreading membrane
 
 We next examined the formation of contraction-associated inner F-actin foci utilizing live-cell TIRF imaging of B-cells from mice expressing LifeAct-GFP. We generated kymographs along eight lines from the center of each contact zone using time-lapse images of LifeAct-GFP (Figure 3A and B and Figure 3—figure supplement 1). Analysis of these kymographs showed that most F-actin foci were first detected closely behind lamellipodial F-actin networks. Following maximal spreading, these F-actin foci moved centripetally while increasing in intensity, becoming inner F-actin foci, in cells transitioning from spreading to contraction (Figure 3B, top panel, and Figure 3—figure supplement 1). However, such centripetally moving F-actin foci were not detected in B-cells that did not undergo contraction (Figure 3B, middle panel) and WKO B-cells (Figure 3B, bottom panel). We quantified the percentage of the eight kymographs from each cell that exhibited lamellipodia-derived inner F-actin foci and found, on average, that six out of eight kymographs from contracting cells showed lamellipodia-derived inner F-actin foci, compared to only one or two kymographs from non-contracting cells (Figure 3C). To examine the temporal relationship between the generation of lamellipodia-derived inner F-actin foci and contraction, we plotted the percentage of kymographs with lamellipodia-derived inner F-actin foci over time with the spreading to contracting transition time set as 0 (Figure 3D). We found that the percentage of kymographs showing lamellipodia-derived inner F-actin foci peaked at almost the same time when the spreading transitioned to contraction (Figure 3D), suggesting a close temporal relationship between the two events. Furthermore, the N-WASP inhibitor Wisko, but not WKO, significantly inhibited the formation of lamellipodia-derived inner F-actin foci (Figure 3E). Thus, inner F-actin foci originate from branched actin-driven lamellipodia and form simultaneously with the transition of B-cell spreading to contraction.
 
-## N-WASP-activated Arp2/3 generates inner F-actin foci by sustaining the lifetime and the centripetal movement of lamellipodial F-actin
+![Figure 3.](https://cdn.elifesciences.org/articles/87833/elife-87833-fig3-v2.jpg)
+
+**Figure 3.:** Mouse splenic B-cells from LifeAct-GFP transgenic mice were treated with DMSO or Wisko (10 µM), imaged live using total internal reflection fluorescence microscopy (TIRF) during incubation with Fab’-PLB at 37 °C, and analyzed using kymographs generated by Fiji ImageJ. (A) One frame of TIRF time-lapse images of LifeAct-GFP in the contact zone of B-cells treated with DMSO or Wisko and a Wasp germline knockout (WKO) B-cell. Lines indicate eight kymographs that were randomly generated from each cell. (B) Representative kymographs were generated from TIRF time-lapse images of LifeAct-GFP at the red line in (A). Top panel, a contracting cell. Arrows indicate the start of contraction with inner F-actin foci originating from lamellipodia. Middle panel, a non-contracting cell. Bottom panel, a WKO cell. Lamellipodia-derived inner F-actin foci were identified by their LifeAct-GFP FI ≥twofold of their nearby region, migrating out of the lamellipodial F-actin toward the center of the contact zone, and trackable for >8 s. (C) Percentages (± SEM) of kymographs showing inner F-actin foci originating from lamellipodia per cell that did and did not undergo contraction. Data were generated from three independent experiments with ~10 cells per condition per experiment. (D) A histogram of inner F-actin foci emerging (expressed as percentages of the total events, blue line) over time relative to the time of B-cell contraction (defined as 0 s, indicated by a purple dash line and arrow). Data were generated from five independent experiments with ~9 cells per condition per experiment. (E) Percentage (± SEM) of inner F-actin foci originated from lamellipodia observed in eight randomly positioned kymographs of each DMSO- or Wisko-treated wild-type (WT) or untreated WKO B-cell. Data were generated from three independent experiments with ~10 cells per condition per experiment. Scale bars, 2 µm. ***p<0.001, by non-parametric student’s t-test. MATLAB codes were used for generating kymographs from time-lapse data [Source code 7].
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87833/elife-87833-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Splenic B-cells from LifeAct-GFP transgenic mice were treated with DMSO, imaged live using total internal reflection fluorescence microscopy (TIRF) and interference reflection microscopy (IRM) during incubation with Fab’-PLB at 37 °C, and analyzed using kymographs that were randomly generated from each cell [Source code 7]. Shown are six examples of the kymographs used for analysis. Arrows indicate the emergence of inner F-actin foci near the lamellipodia. Lamellipodia-derived inner F-actin foci were identified by their LifeAct-GFP FI ≥twofold of their nearby region, inside location in the contact zone, migrating away the lamellipodial F-actin, and trackable for ≥8 s.
+
+### N-WASP-activated Arp2/3 generates inner F-actin foci by sustaining the lifetime and the centripetal movement of lamellipodial F-actin
 
 We examined the mechanism by which N-WASP and Arp2/3 generate inner F-actin foci by measuring their relative lifetime and mobility using kymographs generated from TIRF time-lapse images of B-cells expressing LifeAct-GFP. Inner F-actin foci were identified as described above, and their tracks were manually determined (Figure 4A, black dashed lines). The time window in which an inner F-actin patch could be detected in a kymograph was measured as the relative lifetime, as actin foci could move away from the kymograph line or the TIRF evanescent field (Figure 4A, right panels). The distance each F-actin focus moved during its lifetime was used to calculate its speed (Figure 4A, right panels). Compared to CK-689-treated B-cells, CK-666 treatment at time 0 significantly reduced the relative lifetime and the centripetal speed of inner F-actin foci (Figure 4B–D). After B-cells were treated with CK-666 at 2 min (the average time for B-cells to reach the maximal spreading), the relative lifetime and the centripetal speed of inner F-actin foci were significantly lower than before the treatment in the same cell (Figure 4E–G, line-linked dots). Similarly, the N-WASP inhibitor Wisko significantly reduced the relative lifetime and the centripetal speed of inner F-actin foci (Figure 4H–J); however, WKO had no significant effect (Figure 4K–M). These results show that N-WASP and Arp2/3 mediated branched actin polymerization prolong the lifetime of lamellipodia-derived F-actin foci and drives them to move inward in the B-cell contact zone.
 
@@ -65,17 +97,33 @@ We examined the mechanism by which N-WASP and Arp2/3 generate inner F-actin foci
 
 **Figure 4.:** LifeAct-GFP-expressing B-cells were incubated with or without various inhibitors and imaged live by total internal reflection fluorescence microscopy (TIRF) during interaction with Fab’-PLB at 37 °C. Three kymographs were generated for each cell using time-lapse images and positioned to track as many inner actin foci as possible. (A) A representative kymograph from TIRF time-lapse images of a DMSO-treated B-cell (Left panels). Inner F-actin foci were identified as described in Figure 3, and those that emerged during the 60 s window after maximal spreading (white rectangles in B) and can be tracked for ≥4 s (dashed lines) in individual kymographs were analyzed. Relative lifetimes of inner F-actin foci were measured using the duration each focus could be detected in a kymograph. The relative distances traveled by the foci were measured using the displacement of each focus in a kymograph. Relative speed was calculated for each inner F-actin focus by dividing its relative distance by its relative lifetime (right panels). (B–D) B-cells were treated with CK-689 or CK-666 (50 µM) from the beginning of the incubation with Fab’-PLB (0 min). Shown are representative kymographs (B), relative lifetimes (C), and relative speed (D) of inner F-actin foci in CK-689- versus CK-666-treated B-cells. (E–G) B-cells were treated with CK-666 at maximal spreading (2 min). Shown are a representative kymograph of a CK-666-treated cell (E), relative lifetimes (F), and relative speeds (G) of inner F-actin foci in 30 s windows before the inhibition and 10 s after the inhibition in the same cells (linked by blue lines). (H–J) B-cells were treated with DMSO or Wisko (10 µM) 10 min before and during interaction with Fab’-PLB. Shown is a representative kymograph of a Wisko-treated B-cell (H), relative lifetime (I), and relative speed (J) of inner F-actin foci in DMSO versus Wisko-treated B-cells. (K–M) LifeAct-GFP-expressing wild-type (WT) and Wasp germline knockout (WKO) B-cells were incubated with Fab’-PLB. Shown are a representative kymograph of a WKO B-cell (K), relative lifetime (L), and relative speed (M) of WT versus WKO B-cells. Data points represent the averaged values from inner F-actin foci in individual cells, with three kymographs per cell and ~12 cells per condition per experiment from three independent experiments. Scale bar, 2 µm. *p<0.05, **p<0.01, ***p<0.001, by non-parametric and paired student’s t-test.
 
-## N-WASP coordinates with NMII to generate inner actin foci and NMII ring-like structures
+### N-WASP coordinates with NMII to generate inner actin foci and NMII ring-like structures
 
 As non-muscle myosin II (NMII) is required for B-cell contraction (Seeley-Fallen et al., 2022), we examined the relationship between the formation of inner F-actin foci and the recruitment and reorganization of NMII in the contact zone using TIRF imaging of B-cells from mice expressing a GFP-NMIIA transgene. Upon interacting with Fab’-PLB, the GFP-NMIIA MFI in the contact zone of untreated WT B-cells increased rapidly in the first minute and slowly afterward (Figure 5A and B and Figure 5—video 1). Wiskostatin treatment significantly reduced the GFP-NMIIA MFI in the contact zone (Figure 5B) and its initial rate of increase (as determined by the slope of the GFP-NMIIA MFI increase at the 0~30 s time window) (Figure 5C). Kymographs generated from time-lapse TIRF images of B-cells from mice expressing GFP-NMIIA and LifeAct-RFP showed that recruited NMIIA accumulated between lamellipodia and inner F-actin foci when the foci moved centripetally away from lamellipodia (Figure 5D, white arrow, and Figure 5—video 1). Recruited NMIIA reorganized with inner F-actin foci to form a ring-like structure in the contact zone (Figure 5A, D and E, and Figure 5—video 1). The percentage of B-cells with NMIIA ring-like structures, visualized by immunostaining, increased over time as more B-cells underwent contraction (Figure 5E and F). Compared to flox controls, the percentage of cNKO B-cells with NMIIA ring-like structures was significantly decreased (Figure 5E and F). Wiskostatin treatment also reduced NMIIA recruitment and ring-like structure formation (Figure 5—video 1). Surprisingly, the percentage of WKO B-cells with NMIIA ring-like structure was higher than that of flox control B-cells (Figure 5E and F). Thus, N-WASP and Arp2/3 mediated branched actin polymerization promotes the recruitment and the organization of NMII ring-like structures.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/87833/elife-87833-fig5-v2.jpg)
+
+**Figure 5.:** (A–C) B-cells from mice expressing the GFP fusion of non-muscle myosin IIA (GFP-NMIIA) transgene were treated with DMSO or Wisko (10 µM) 10 min before and during incubation with Fab’-PLB. The B-cell contact zones were imaged live using total internal reflection fluorescence microscopy (TIRF). Shown are representative TIRF images of DMSO- and Wisko-treated B-cells at 30 s (during spreading) and 2 min 30 s (after maximal spreading) post landing (A Scale bars, 2 µm), the averaged GFP-NMIIA MFI (± SEM) (B), and the initial rates of increasing (± SEM) of GFP-NMIIA in the contact zone (the slope of the initial GFP-NMIIA MFI versus time curves of individual cells) (C). Data points represent individual cells from three independent experiments with ~6 cells per condition per experiment. *p<0.05, ***p<0.001, by Kolmogorov-Smirnov test (B) or non-parametric student’s t-test (C). (D) Primary B-cells from mice expressing both GFP-NMIIA and LifeAct-RFP transgenes were incubated with Fab’-PLB at 37 °C and imaged live by TIRF. Shown are a representative TIRF image of a cell and a kymograph generated from time-lapse TIRF images at the yellow line. The purple arrow indicates the starting point of contraction, the white arrow GFP-NMIIA recruitment proximal to the spreading membrane, and the yellow arrow an F-actin (LifeAct-RFP) focus originating at the lamellipodia and moving away from the spreading membrane. (E, F) Primary B-cells from flox control, Wasp germline knockout (WKO), and B-cell-specific N-wasp knockout mice (cNKO) mice were incubated with Fab’-PLB for indicated times. Cells were fixed, permeabilized, stained for non-muscle myosin II (NMII) light chain, and imaged by interference reflection microscopy (IRM) and TIRF. Shown are representative IRM and TIRF images (E) and percentages (± SD) of B-cells with the NMII ring-like structure in individual images (F), identified by visual inspection. The data were generated from three independent experiments with five images per condition per experiment. Scale bars, 2 µm. *p<0.05, **p<0.01, ***p<0.001, by non-parametric student’s t-test. (G, H) Wild-type (WT) splenic B-cells were treated with DMSO or Blebbistatin (Bleb, 50 µM) 20 min before and during incubation with Fab’-PLB at 37 °C. Cells were fixed at 2 and 4 min, permeabilized, stained with phalloidin, and imaged by TIRF. Shown are representative TIRF images of the B-cell contact zone (G) and percentages of cells (± SEM) with inner F-actin foci forming ring-like distribution (H), determined as described in Figure 2. Data were generated from three independent experiments with ~50 cells per condition per experiment with different color dots representing individual experiments. Scale bar, 2 µm. *p<0.05, **p<0.01 by paired student’s t-test. MATLAB codes were used for detecting the B-cell contact zone and quantifying NMII FI [Source code 1, Source code 8 and Source code 9].
+
 We next tested whether recruited NMII contributed to the formation of inner actin foci by inhibiting its motor activity using blebbistatin, which is known to impede B-cell contraction (Seeley-Fallen et al., 2022). Inner F-actin foci in the B-cell contact zone were identified by phalloidin staining, as described in Figure 2. Treatment with blebbistatin significantly reduced the percentages of WT splenic B-cells exhibiting inner F-actin foci ring-like structures (Figure 5G and H). This result suggests that while NMII is recruited with the help of N-WASP and Arp2/3 mediated actin polymerization, its motor activity is critical for the maturation of F-actin structures associated with B-cell contraction.
 
-## B-cell contraction increases the BCR molecular density in individual clusters
+### B-cell contraction increases the BCR molecular density in individual clusters
 
 To understand how B-cell contraction promotes BCR signaling attenuation, we examined the impact of B-cell contraction on the properties of BCR clusters. We first measured the MFI of AF546-Fab’ attached to PLB gathered by B-cells into the contact zone as an indication of the overall BCR molecular density. The clustering of AF546-Fab’ on PLB by B-cell binding reflects surface BCR clustering, as B-cell binding to transferrin (Tf)-tethered PLB does not cause surface BCRs to cluster and be phosphorylated (Figure 6—figure supplement 1 Liu et al., 2011; Liu et al., 2013a). The MFI of AF546-Fab’ in the B-cell contact zone increased over time. Treatment with CK-666, Wisko, or cNKO all reduced the AF546-Fab’ MFI, particularly during the time window of B-cell contraction in controls (Figure 6A–G, purple rectangles, and Figure 6—video 1). Notably, the rates of increase in AF546-Fab’ MFI, calculated from the slopes of AF546-Fab’ MFI versus time plots in individual cells, were significantly higher during B-cell contraction than before B-cell contraction in control cells and conditions (Figure 6D–K). Significantly, inhibiting B-cell contraction by CK-666 treatment at 0 (Figure 6A, D and H, and Figure 6-video 1A and B) or 2 min (Figure 6A, E and I, and Figure 6-video 1A and B), Wisko (Figure 6B, F and J, and Figure 6-video 1C and D), and cNKO (Figure 6C, G and K, and Figure 6-video 1E and F) reduced the increases in AF546-Fab’ accumulation rates. We further examined the peak FI of AF546-Fab’ in individual microclusters as a measure of the BCR molecular density in individual clusters. AF546-Fab’ clusters were identified based on their diameters ≥250 nm, peak FI ≥1.1 fold outside the B-cell contact zone, and trackable for ≥20 s (Figure 6L and Figure 6—figure supplement 2). AF546-Fab’ microclusters could not be identified during the early stage of B-cell spreading. Time-lapse imaging by TIRF enabled us to measure the rate of increase in AF546-Fab’ peak FI in individual clusters (Figure 6M and Figure 6—figure supplement 2). Consistent with our observation of AF546-Fab’ MFI increase in the contact zone, the peak FI of individual clusters increased at a faster rate during contraction than after contraction (when the contact area no longer decreased) (Figure 6N). Furthermore, CK-666 (Figure 6O), Wisko (Figure 6P), and cNKO (Figure 6Q) all significantly reduced the rate of increase in AF546-Fab’ peak FI in individual clusters. These results show that B-cell contraction significantly increases the molecular density of BCRs in BCR clusters.
 
-## Increased BCR molecular density by B-cell contraction reduces BCR phosphorylation levels in individual microclusters
+![Figure 6.](https://cdn.elifesciences.org/articles/87833/elife-87833-fig6-v2.jpg)
+
+**Figure 6.:** Primary B-cells from wild-type (WT) mice were treated with CK-689 or CK-666 from the beginning of the incubation with AF546-Fab’-PLB (0 min) or at the maximal B-cell spreading (2 min) (A, D, E, H, I, N, O). WT B-cells were treated with DMSO or Wisko (10 µM) 10 min before and during the incubation with AF546-Fab’-PLB (B, F, J, P). B-cells from flox control and B-cell-specific N-wasp knockout mice (cNKO) mice were incubated with AF546-Fab’-PLB (C, G, K, Q). The B-cell contact zones were imaged live by total internal reflection fluorescence microscopy (TIRF). (A–C) Representative time-lapse images at 30 s (during B-cell spreading) and 2 min 30 s (after maximal spreading) after cell landed. Scale bars, 2 µm. (D–G) The mean fluorescence intensity (MFI) of AF546-Fab’ in the contact zone was plotted over time. Purple rectangles indicate the contraction phase based on the changes in the average B-cell contact area over time. (H–K) Rates of AF546-Fab’ MFI increases in the B-cell contact zone before and during contraction were determined by the slope of AF546-Fab’ MFI versus time plots. Data points represent individual cells and were generated from three independent experiments with 6–12 cells per experiment. *p<0.05, **p<0.01, ***p<0.001, by Kolmogorov-Smirnov test (D–G) or paired student’s t-test (H–K). (L) A representative frame from a time-lapse of a CK-689-treated B-cell (left) shows AF546-Fab’ clusters 30 s after contraction began, and enlarged time-lapse images (right) show a single AF546-Fab’ cluster over a 40 s time window after contraction began. AF546 clusters were identified using the criteria: ≥250 nm in diameter, ≥1.1 fold of fluorescence intensity (FI) outside the B-cell contact zone, and trackable for ≥20 s. Scale bars, 2 µm. (M) The peak FI of an AF546-Fab’ cluster was measured over time, and the increasing rate of AF546-Fab’ peak FI of this cluster was determined by the slope of the plot. (N–Q) The rates (± SEM) of increase in AF546-Fab’ peak FI in individual clusters were compared between during and after contraction (N), between B-cells treated with CK-689 and CK-666 from 0 min (O), between DMSO- and Wisko-treated B-cells (P), and between flox control and cNKO B-cells (Q) after B-cells reached maximal spreading. Data points represent individual cells, the averaged slopes of clusters detected in one B-cell, from three independent experiments with 6~12 cells per condition per experiment. *p<0.05, **p<0.01, ***p<0.001, by non-parametric student’s t-test. MATLAB codes were used for detecting, tracking, and quantifying AF546-Fab’ clusters [Source code 1; 3; 8–14].
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87833/elife-87833-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Wild-type (WT) splenic B-cells were pre-labeled with Cy3-Fab fragment of goat anti-mouse IgM + G at a concentration of 2.5 µg per 106 cells at 4 °C for 30 min, followed by incubation with Fab’-PLBs or Tf-PLBs for 5 min at 37 °C. Cells were fixed, permeabilized, stained for pCD79a, and imaged using interference reflection microscopy (IRM) and total internal reflection fluorescence microscopy (TIRF). Shown are representative IRM and TIRF images from three independent experiments. Scale bar, 2 µm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/87833/elife-87833-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Wild-type (WT) splenic B-cells were incubated with AF546-Fab’-PLB at 37 °C and imaged live using interference reflection microscopy (IRM) and total internal reflection fluorescence microscopy (TIRF). Shown are individual frames from time-lapse images of IRM (A) and TIRF (B), showing AF546-Fab’ clusters within the contact zone of one DMSO-treated (vehicle control for Wisko) B-cell for 140 sec since the beginning of contraction. Fab’ FI is shown as heat maps using Fiji ImageJ. The boundary of the contact zone, detected using IRM images by a custom MATLAB script [Source code 2], is shown in yellow dashed lines. Arrows point to three representative clusters among the other clusters detected in the contact zone using custom MATLAB codes [Source code 2; 3; 10–14]. Cluster detection masks for the three representative clusters are shown (C). Moving tracks for the three AF546-Fab’ clusters are shown alongside the initial (black dashed lines) and final state (gray dashed lines) of the contact zone (D). Tracks were generated by following the peak of AF546 FI in each cluster as it moved. AF546-Fab’ peak FI versus time curves for the three representative clusters are plotted over the duration that each cluster could be detected (E). Surface plots (2.5-D plots) of AF546-Fab’ FI show a zoomed-in region consisting of each of the three AF546-Fab’ clusters (F). Colors in (B) and (F) are scaled to AF546-Fab’ FI values. Scale bars, 1 µm.
+
+### Increased BCR molecular density by B-cell contraction reduces BCR phosphorylation levels in individual microclusters
 
 To examine how BCR molecular density influenced BCR signaling capability, we immunostained B-cells interacting with AF546-Fab’-PLB for 1, 3, 5, and 7 min, for phosphorylated CD79a (pCD79a, Y182) and performed IRM and TIRF imaging (Figure 7A and H). We analyzed equal numbers of AF546-Fab’ clusters selected randomly, in the contact zone of B-cells interacting with Fab’-PLB for 1, 3, 5, and 7 min, using a gradient threshold of their AF546-Fab’ MFI, 1.1–4.1 fold of the background, and with a diameter ≥250 nm (Figure 6—figure supplement 2). We determined the MFI of pCD79a and AF546-Fab’ in individual clusters and plotted the MFI ratio of pCD79a relative to AF546-Fab’ (reflecting the relative level of BCR phosphorylation) versus the AF546-Fab’ peak FI (reflecting BCR molecular density) in individual clusters (Figure 7B and C). The dot plots show that individual AF546-Fab’ clusters with relatively low peak FI displayed increasing MFI ratios of pCD79a to AF546-Fab’ as the AF546-Fab’ peak FI rose in flox control B-cells (Figure 7B). Past a certain level of AF546-Fab’ peak FI, the MFI ratios of pCD79a to AF546-Fab’ decreased as the AF546-Fab’ peak FI in individual clusters further increased (Figure 7A and B). Inhibition of B-cell contraction by cNKO reduced the AF546-Fab’ peak FI in individual clusters, maintaining it within a relatively low range, where the MFI ratios of pCD79a to AF546-Fab’ increased with the AF546-Fab’ peak FI (Figure 7C and D). Additionally, the average pCD79a to Fab’ MFI ratios were much higher in cNKO B-cells than flox control B-cells, when comparing AF546-Fab’ clusters with the same range of peak FI (Figure 7B–D). During the contraction stage (5 and 7 min), flox control B-cells exhibited increases in AF546-Fab’ MFI (Figure 7E) but decreases in pCD79a MFI (Figure 7F) and the MFI ratios of pCD79a relative to AF54-Fab’ (Figure 7G) in individual clusters, compared to the spreading stage (1 and 3 min). In contrast, non-contracting cNKO B-cells only slightly increased AF546-Fab’ MFI (Figure 7E) but significantly increased pCD79a MFI (Figure 7F), and the pCD79a to AF546-Fab’ MFI ratios (Figure 7G) in individual clusters at the contraction stage compared to the spreading stage. Consequently, individual clusters in non-contracting cNKO B-cells had significantly lower AF546-Fab’ MFI but significantly higher pCD79a MFI and pCD79a to AF546-Fab’ FIRs than contracting flox control B-cells at 5 and 7 min but not at 1 and 3 min (Figure 7E–G). Similarly, inhibiting B-cell contraction by treatment with the Arp2/3 inhibitor CK-666 at 2 min post-stimulation reduced AF546-Fab’ MFI (Figure 7I) but increased pCD79a MFI (Figure 7J) and the MFI ratios of pCD79a relative to AF546-Fab’ (Figure 7K) in individual clusters. These data suggest that increases in BCR molecular density in BCR clusters during B-cell contraction inhibit BCR phosphorylation.
 
@@ -83,7 +131,7 @@ To examine how BCR molecular density influenced BCR signaling capability, we imm
 
 **Figure 7.:** (A–G) Flox control and B-cell-specific N-wasp knockout mouse (cNKO) B-cells incubated with AF546-Fab’-PLB were fixed at 1, 3, 5, and 7 min, permeabilized, stained for phosphorylated CD79a (pCD79a, Tyr182), and imaged using total internal reflection fluorescence microscopy (TIRF) and interference reflection microscopy (IRM). (A) Representative IRM and TIRF images of a flox control versus a cNKO B-cell at 7 min. Scale bars, 2 µm. (B–D) Ratios of pCD79a MFI relative to AF546-Fab’ MFI were plotted against AF546-Fab’ peak FI in individual AF546-Fab’ clusters in the contact zone of flox control (B), cNKO B-cells (C), or flox control and cNKO B-cells overlay (D). AF546-Fab’ clusters were identified as described in Figure 6 and Figure 6—figure supplement 2. Blue dots represent individual AF546-Fab’ clusters with an equal number of clusters from the 4 time points. The black line and diamond symbols represent the average ratios of pCD79a MFI to Fab’ MFI in individual BCR-Fab’ clusters within the indicated Fab’ peak FI range. The brown line and square symbols represent the fraction of the AF546-Fab’ clusters out of the total, within the indicated Fab’ peak FI range. Clusters were divided into three populations based on their peak AF546-Fab’ FI, relatively low (<190), medium (190-280), and high (>280, detected only in contracted cells), and the pCD79a to AF546-Fab’ MFI ratios of the three populations were compared (B and C). Data were generated from three independent experiments with ~20 cells and ≥125 clusters per condition per experiment. *p<0.05, ***p<0.001, by non-parametric student’s t-test. The p-values in (D) were corrected using the Benjamini-Hochberg/Yekutieli method for false discovery rate control. (E–G) The mean fluorescence intensity (MFI) (± SEM) of AF546-Fab’ (E) and pCD79a (F) and the MFI ratio (± SEM) of pCD79a relative to AF546-Fab’ (G) in individual AF546-Fab’ clusters at indicated times were compared between flox control and cNKO B-cells and between different times. (H–K) WT B-cells treated with CK-689 or CK-666 after 2 min-incubation with AF546-Fab’-PLB. (H) Representative IRM and TIRF images of a CK-689- versus a CK-666-treated B-cell at 7 min. Scale bars, 2 µm. (I–K) The MFI (± SEM) of AF546-Fab’ (I) and pCD79a (J) and the MFI ratio (± SEM) of pCD79a relative to AF546-Fab’ (K) in individual AF546-Fab’ clusters were compared between CK-689- and CK-666-treated B-cells after 7 min stimulation. Data points represent individual clusters. Horizontal solid lines in the violin plots represent the mean, while the dotted lines represent the quartiles of the distribution. Data were generated from three independent experiments with ~20 cells per condition per experiment. *p<0.05, ***p<0.001, by non-parametric student’s t-test. MATLAB codes were used for detecting and quantifying AF546-Fab’ clusters [Source code 1; 10 and 11].
 
-## Increased BCR molecular density by B-cell contraction promotes the disassociation of the stimulatory kinase Syk from BCR microclusters
+### Increased BCR molecular density by B-cell contraction promotes the disassociation of the stimulatory kinase Syk from BCR microclusters
 
 Increased BCR molecular density may promote signaling attenuation by inducing the disassociation and/or dephosphorylation of stimulatory kinases from and at BCR clusters. To test this hypothesis, we analyzed the relative amounts of Syk, a major stimulatory kinase in the BCR signaling pathway, and its phosphorylated form pSyk (Y519/520) in individual BCR clusters in relation to the molecular density of BCRs. Splenic B-cells were incubated with Fab’-PLB for 3 and 7 min (when most cells were at the spreading and contraction phase, respectively), fixed, permeabilized, stained for Syk (Figure 8A) or pSyk (Figure 8E), and imaged using TIRF. We measured MFI ratios of Syk relative to AF546-Fab’ in individual BCR clusters to reflect the relative amount of Syk associated with individual BCR clusters and analyzed their relationship with AF546-Fab’ peak FI (reflecting the molecular density within BCR clusters). AF546-Fab’ clusters were detected and analyzed as described above. In flox control B-cells, the highest fractions of BCR clusters had an AF546-Fab’ peak FI at the 150~200 range (Figure 8A, top panels, and Figure 8B, brown line and symbols). The average MFI ratios of Syk to Fab’ in individual clusters increased at a low peak FI range (<140) and did not significantly decrease until Fab’ peak FI reached a relatively high range (>280) (Figure 8B, black line and symbol). B-cells from cNKO mice exhibited a reduction in the Fab’ peak FI of clusters (Figure 8A, bottom panels, and Figure 8C and D, brown line and symbol) but an increase in the average Syk to Fab’ MFI ratios in clusters in a wide range of Fab’ peak FI, when compared to flox control B-cells (Figure 8C and D, black lines and symbols). However, the average Syk to Fab’ MFI ratios of cNKO B-cells decreased in clusters with Fab’ peak FI ≥220 and reduced to levels similar to those in flox control B-cells in clusters with Fab’ peak FI ≥240 (Figure 8C and D, black lines and symbols). These data suggest that increases in the molecular density of BCR clusters, reflected by Fab’ peak FI, induce the disassociation of Syk from BCR clusters in both flox control and cNKO B-cells. Our results also show that BCR clusters in cNKO B-cells have significantly higher levels of Syk association than in flox control B-cells, even though they have similar Fab’ peak intensities.
 
@@ -93,7 +141,7 @@ Increased BCR molecular density may promote signaling attenuation by inducing th
 
 We next analyzed the relationship of the pSyk level in individual clusters with BCR molecular density using the method described above. We found that the MFI ratios of pSyk relative to AF546-Fab’ gradually decreased with increases in Fab’ peak FI in both flox control and cNKO B-cells (Figure 8E–G, black lines, and symbols), even though we did not observe an increase in pSyk to Fab’ MFI ratio at the low Fab’ peak FI range. Similar to the Syk to Fab’ MFI ratio, the average pSyk to Fab’ MFI ratios of individual clusters in cNKO B-cells were much higher than those in flox control B-cells, except for those at the high Fab’ peak FI range (Figure 8E–H). To confirm this result, we analyzed equal numbers of pSyk clusters in the same cells, based on the criteria of ≥1.3 fold increase in the peak FI compared to the background outside the contact zone with a diameter of ≥250 nm. Similar to clusters identified by AF546-Fab’, the average MFI ratios of pSyk to Fab’ in these pSyk clusters decreased with an increase in their Fab’ peak FI in both flox control and cNKO B-cells (Figure 8I–K, black lines and symbols). Again, the average pSyk to Fab’ MFI ratios of pSyk clusters were much higher in cNKO than flox control B-cells, but were reduced to similar levels in clusters with relatively high Fab’ peak FI (Figure 8K, black line and symbols). Similar reductions of total Syk and pSyk with increasing molecular density of BCR clusters suggest that the disassociation of Syk from BCR clusters, caused by cell contraction-induced increases in molecular density, contributes to BCR signaling attenuation.
 
-## Increased BCR molecular density by B-cell contraction promotes disassociation of the inhibitory phosphatase SHIP-1 from BCR microclusters
+### Increased BCR molecular density by B-cell contraction promotes disassociation of the inhibitory phosphatase SHIP-1 from BCR microclusters
 
 The inhibitory phosphatase SHIP-1 is essential for B-cell signaling attenuation (Brauweiler et al., 2000; Liu et al., 2011), suggesting that increases in the molecular density of BCR clusters by B-cell contraction may promote SHIP-1 recruitment. We used the methods described above to address this hypothesis, staining cells for total SHIP-1 (Figure 9A) and phosphorylated SHIP-1 (pSHIP-1 Y1020) (Figure 9E). We found that the average SHIP-1 to Fab’ MFI ratios in both flox control and cNKO B-cells decreased with Fab’ peak FI at similar rates (Figure 9A–D, black lines, and symbols), even though inhibition of contraction by cNKO reduced the Fab’ peak FI of BCR clusters (Figure 9A–D, brown lines, and symbols). Notably, the reduction in the SHIP-1 to Fab’ MFI ratios with increasing Fab’ peak FI occurred at the lowest detectable Fab’ peak FI (Figure 9B–D, brown lines, and symbols), when the Syk to Fab’ MFI ratios increased and were sustained (Figure 8B–D). Furthermore, this reciprocal relationship between the SHIP-1 to Fab’ MFI ratio and Fab’ peak FI continued over the entire Fab’ peak FI range. It also remained the same in both flox control and cNKO B-cells (Figure 9B–D). These results suggest that SHIP-1 disassociates from BCR clusters as their molecular density increases, and that the SHIP-1 disassociation is more sensitive to the molecular density of BCR clusters than Syk disassociation.
 
@@ -129,29 +177,305 @@ The results presented here have revealed novel insights into the mechanisms unde
 
 ## Materials and methods
 
-## Mice and B-cell isolation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>C57BL/6 (WT)</td>
+      <td>Jackson Laboratories</td>
+      <td>JAX stock #000664</td>
+      <td>Primary cells</td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>Wasp-/- mice (WKO)</td>
+      <td>Jackson Laboratories</td>
+      <td>JAX stock #019458</td>
+      <td>Primary cells</td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>Cd19Cre/+N-waspflox/flox mice (cNKO)</td>
+      <td>Lisa Westerberg laboratory</td>
+      <td></td>
+      <td>Primary cells</td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>N-waspflox/flox (Flox control)</td>
+      <td>Lisa Westerberg laboratory</td>
+      <td></td>
+      <td>Primary cells</td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>LifeAct-GFP</td>
+      <td>Roberto Weigert laboratory</td>
+      <td></td>
+      <td>Primary cells</td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>LifeAct-RFP</td>
+      <td>Klaus Ley laboratory</td>
+      <td></td>
+      <td>Primary cells</td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>GFP-NMIIA</td>
+      <td>Robert Adelstein laboratory</td>
+      <td></td>
+      <td>Primary cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phosphocholine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850375 P</td>
+      <td>Liposomes (5 mM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-cap-biotin</td>
+      <td>Avanti Polar Lipids</td>
+      <td>870273 C</td>
+      <td>Liposomes (50 µM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin</td>
+      <td>Jackson Immuno Research</td>
+      <td>016-000-084</td>
+      <td>(1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F(ab’)2 fragment of goat IgG anti-mouse Ig(G+M) (goat polyclonal)</td>
+      <td>Jackson Immuno Research</td>
+      <td>115-006-068</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-Fab fragment of goat anti-mouse IgG + M (goat polyclonal)</td>
+      <td>Jackson Immuno Research</td>
+      <td>115-167-020</td>
+      <td>(2.5 µg per 1x10⁶ cells)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>2-Mercaptoethylamine HCL</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>20408</td>
+      <td>(50 mM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EZ-Link Maleimide-PEG2-biotin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A39261</td>
+      <td>(20 mM per mM of protein)</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Alexa Fluor 546 antibody labeling kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A20183</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Biotinylated holo-transferrin (Tf)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>015-060-050</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat IgG2b anti-mouse CD90.2 (Thy1.2) (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>105351</td>
+      <td>(1 µl per 2x10⁶ cells)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>CK-689</td>
+      <td>Millipore Sigma</td>
+      <td>182517–25 MG</td>
+      <td>Inhibitor control (50 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>CK-666</td>
+      <td>Millipore Sigma</td>
+      <td>SML0006-5MG</td>
+      <td>Arp2/3 inhibitor (50 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Wiskostatin</td>
+      <td>Millipore Sigma</td>
+      <td>W2270-5MG</td>
+      <td>N-WASP inhibitor (10 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Blebbistatin</td>
+      <td>Cayman Chemicals</td>
+      <td>13013</td>
+      <td>NMII inhibitor (50 µM)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG anti-mouse Arp2 antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab47654</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG anti-mouse pWASP antibody (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PA5-105572</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG anti-mouse pN-WASP antibody (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PA5-105307</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF488-goat IgG anti-rabbit IgG antibody (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-11034</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF546-goat IgG anti-rabbit IgG antibody (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-11035</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Acti-stain-488 Phalloidin</td>
+      <td>Cytoskeleton</td>
+      <td>PHDG1-A</td>
+      <td>IF (200 nM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Acti-stain-555 Phalloidin</td>
+      <td>Cytoskeleton</td>
+      <td>PHDH1-A</td>
+      <td>IF (200 nM)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG anti-mouse NMIIA antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab75590</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG anti-mouse pCD79a (Y182) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>14732 S</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG anti-mouse pSyk (Y519/520) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2710 S</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG anti-mouse pSHIP-1 (Y1020) (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>3941 S</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG anti-mouse Syk (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PA5-17812</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG anti-mouse SHIP-1 (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PA5-115894</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>R2022a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji-ImageJ</td>
+      <td>Fiji organization</td>
+      <td>Version 2.9.0/1.53t</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>Version 9.2.0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and B-cell isolation
 
 Wild-type (WT) C57BL/6 mice and Wasp knockout (WKO) mice on the C57BL/6 background were purchased from Jackson Laboratories. C57BL/6 mice expressing LifeAct-GFP transgene (Riedl et al., 2010) were kindly provided by Dr. Roberto Weigert at the National Cancer Institute, USA. C57BL/6 mice expressing the LifeAct-RFP transgene were kindly provided by Dr. Klaus Ley at the La Jolla Institute for Allergy & Immunology. C57BL/6 mice expressing the GFP-non-muscle myosin IIA (NMIIA) transgene were kindly provided by Dr. Robert Adelstein at the National Heart, Lung, and Blood Institute, USA. WKO mice were bred with LifeAct-GFP mice to obtain LifeAct-GFP-expressing WKO mice. GFP-NMIIA mice were crossed with LifeAct-RFP mice to generate mice expressing both transgenes. N-waspflox/flox on a 129Sv background (Cotta-de-Almeida et al., 2007) were kindly provided by Dr. Lisa Westerberg at Karolinska Institute, Sweden. B-cell-specific N-wasp knockout mice (cNKO, Cd19Cre/+N-waspflox/flox) and floxed littermate controls (N-waspflox/flox) were obtained by breeding N-waspflox/flox mice with Cd19Cre/+ mice on a C57BL/6 background.
 
 Primary B-cells were isolated from the spleens of 6- to 18-week-old male or female mice, using a previously published protocol (Sharma et al., 2009). Briefly, mononuclear cells were isolated by Ficoll density-gradient centrifugation (Millipore Sigma), and T-cells were eliminated by complement-mediated cytolysis with anti-mouse CD90.2 mAb (BD Biosciences) and guinea pig complement (Innovative Research Inc). Monocytes and dendritic cells were eliminated by panning at 37 °C and 5% CO2. Isolated B-cells were kept on ice in DMEM (Lonza) supplemented with 0.6% BSA (Thermo Fisher Scientific). All work involving mice was approved by the Institutional Animal Care and Usage Committee of the University of Maryland and followed the public health service policy on humane care and use of laboratory animals.
 
-## Pseudo-antigen-coated planar lipid bilayers
+### Pseudo-antigen-coated planar lipid bilayers
 
 Planar lipid bilayers (PLB) were prepared using a previously described method (Dustin et al., 2007; Liu et al., 2012a). Briefly, liposomes were generated from a mixture of 5 mM (total concentration) 1,2-dioleoyl-sn-glycero-3-phosphocholine and 1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-cap-biotin (Avanti Polar Lipids) at a 100:1 molar ratio by sonication. Glass coverslips, cleaned overnight with Piranha solution (KMG chemicals), were attached to eight-well chambers (Lab-Tek) and incubated with liposomes (0.05 mM) in PBS for 20 min at room temperature and washed with PBS. The chambers were then incubated with 1 µg/ml streptavidin (Jackson ImmunoResearch Laboratories) for 10 min, washed with PBS, and then incubated with 10 µg/ml mono-biotinylated Fab’ fragment of goat anti-mouse Ig(G+M) (pseudo-antigen) (Fab’-PLB) for 10 min, followed by PBS wash. For transferrin-coated PLB (Tf-PLB), 16 µg/ml biotinylated holoTF was used. To visualize Fab’ clustering, a mixture of 0.5 µg/ml Alexa Fluor (AF) 546-labeled and 9.5 µg/ml unlabeled mono-biotinylated Fab’ fragment of goat anti-mouse Ig(G+M) was used. The lateral mobility of AF546-Fab’ on the PLB was tested using fluorescence recovery after photobleaching (FRAP) to ensure ≥85% AF546 fluorescence recovery within 1 min after photobleaching using a Zeiss LSM 710 equipped with a 60 X oil-immersion objective.
 
 Mono-biotinylated Fab’ fragments were generated as previously described (Liu et al., 2011). Briefly, the disulfide bond linking the two Fab fragments of F(ab’)2 goat anti-mouse Ig(G+M) was reduced using 2-mercaptoethylamine HCL (Thermo Fisher Scientific) and biotinylated by using maleimide-PEG2-biotin (Thermo Fisher Scientific). Mono-biotinylated Fab’ fragments of goat anti-mouse Ig(G+M) were labeled with AF546 using an Alexa Fluor 546 antibody labeling kit (Thermo Fisher Scientific). The molar ratio of AF546 to Fab’ in the AF546-labeled Fab’ was ~2 determined by a Nanodrop spectrophotometer (Nanodrop Technologies).
 
-## Total internal fluorescence microscopy
+### Total internal fluorescence microscopy
 
 To visualize molecules proximal to interacting sites between B-cells and Fab’- or Tf-PLB, we utilized total internal reflection fluorescence microscopy (TIRF) and interference reflection microscopy (IRM). Images were acquired using a Nikon TIRF system on an inverted microscope (Nikon TE2000-PFS, Nikon Instruments Inc) equipped with a 60 X, NA 1.49 Apochromat TIRF objective (Nikon), a Coolsnap HQ2 CCD camera (Roper Scientific), and two solid-state lasers of wavelength 491 and 561 nm. IRM, AF488, and AF546 images were acquired sequentially.
 
 The plasma membrane area of B-cells contacting PLB was determined using IRM images and custom MATLAB codes [Source code 1–3 and 5files 1, 2, 3, and 5]. Whether a B-cell contracted or not was determined using the area versus time plots, wherein if a B-cell’s contact zone area reduced by ≥5% for at least 10 s after reaching a maximum value, it was classified as contracting. To image intracellular molecules, B-cells were incubated with Fab’-PLBs for varying lengths of time in PBS at 37 °C, fixed with 4% paraformaldehyde, permeabilized with 0.05% saponin, and stained for various molecules. For live-cell imaging, B-cells were pre-warmed to 37 °C and imaged as soon as B-cells were dropped into coverslip chambers coated with Fab’-PLB containing PBS in a humidity chamber at 37 °C, at 2 s per frame, up to 7 min. All images from multiple independent experiments were analyzed using Fiji ImageJ and custom MATLAB scripts [Source code 4–8; 10–14 files 4, 5, 6, 7, 8, 10, 11, 12, 13 and 14]. Acquired FI data were normalized to the one with the lowest FI.
 
-## Inhibitors
+### Inhibitors
 
 CK-666 (50 µM, Millipore Sigma) was used to perturb Arp2/3 activity (Nolen et al., 2009), and its non-functional derivative CK-689 (50 µM, Millipore Sigma) as a control. CK-666 or CK-689 was added at either 0 min, the start of incubation with Fab’-PLB, or at 2 min when most B-cells reached maximum spreading under the described condition. Notably, B-cells take approximately 1–1.5 min to land on PLB. The time when B-cells were added to Fab’-PLB is referred to as 0 min, and the time when B-cells landed on PLB as the start of spreading. The effectiveness of CK-666 was determined by its inhibitory effects on the recruitment of Arp2/3, stained by an anti-Arp2 antibody (Abcam), to the B-cell contact zone using TIRF (Figure 1—figure supplement 2). Wiskostatin (Wisko, 10 µM, Millipore Sigma) was used to perturb N-WASP activity in B-cells (Peterson et al., 2004), with DMSO used as a vehicle control. Splenic B-cells were pretreated with Wisko for 10 min at 37 °C before and during incubation with Fab’-PLB. The effectiveness of Wisko was determined by its inhibitory effects on the level of phosphorylated N-WASP in the B-cell contact zone using immunostaining and TIRF (Figure 1—figure supplement 4A and C). Possible effects of Wisko on WASP activation were evaluated by measuring the mean fluorescence intensity (MFI) of phosphorylated WASP in the contact zone of B-cells treated with or without Wisko for 10 min (Figure 1—figure supplement 4B and D). Blebbistatin (Bleb, 50 µM, Cayman Chemicals) was used to inhibit the NMII motor activity (Seeley-Fallen et al., 2022). Splenic B-cells were pretreated with Bleb for 20 min before and during incubation with Fab’-PLB.
 
-## Analysis of the actin cytoskeleton
+### Analysis of the actin cytoskeleton
 
 F-actin was visualized by phalloidin staining in fixed cells and by LifeAct-GFP or LifeAct-RFP expressed by primary B-cells from transgenic mice in live cells. Inner F-actin foci, visualized by both phalloidin staining and LifeAct-GFP, were identified using Fiji ImageJ based on the following three criteria: (1) ≥250 nm in diameter, (2) peak FI ≥twofold higher than the FI of a nearby area containing no foci, and (3) ≥1 µm away from the outer edge of the B-cell contact zone. The horizontal or vertical length of a focus was measured, and the lesser of the two values was used as its diameter. To analyze the spatiotemporal relationship between inner F-actin foci and the lamellipodial F-actin network, we generated 8 radially and equally spaced kymographs from each cell using time-lapse images and MATLAB [Source code 9]. Each kymograph was either classified as contracting or not contracting based on the movement of the leading edge of the B-cell contact zone. The percentage of eight kymographs from each cell exhibiting inner F-actin foci that could be traced back to lamellipodial F-actin when the B-cell switched from spreading to contraction was determined.
 
@@ -159,18 +483,18 @@ The relative speeds and lifetimes of F-actin foci were determined using three ky
 
 To determine the rate of myosin recruitment, GFP-NMIIA MFI in the B-cell contact zone was plotted over time, and the slope for the initial segment of the MFI versus the time plot was determined using linear regression. The percentage of B-cells with the NMIIA ring was determined by visual inspection.
 
-## Analysis of BCR-Fab’ clusters
+### Analysis of BCR-Fab’ clusters
 
 BCR clusters were identified by clustering of AF546-Fab’ on PLBs using custom code by MATLAB [Source code 10]. We utilized the median FI of the Fab’-PLB within the same area outside but near the B-cell contact zone as the background. The median, but not the mean FI value, was used for background FI calculations to minimize fluctuations due to debris. To ensure that individual clusters with varying FI were detected as distinct objects, we used 16 graded thresholds from 1.1 to 4.1 fold of the background (0.2 fold apart) to acquire 16 sets of binary masks for each frame of time-lapse images from each cell. When clusters were detected by multiple thresholds at the same location, only the one identified by the highest threshold was retained. Objects that were smaller than 250 nm in diameter or could not be tracked for at least 20 s were eliminated. This allowed us to detect the position of BCR-Fab’ clusters and track them over time until they merged with other clusters. The horizontal or vertical length of a focus was measured, and the lesser of the two values was used as its diameter. We chose the peak FI as a metric for the extent of Fab’ clustering by the BCR, because it does not rely on the area occupied by each cluster. The rate of peak FI increase was determined by linear regression of peak FI versus time curves for each cluster for a given window of time.
 
-## BCR signaling
+### BCR signaling
 
 Splenic B-cells were incubated with AF546-Fab’-PLB at 37 °C and fixed at 1, 3, 5, 7, and 9 min. After fixation, cells were stained for phosphorylated CD79a (pCD79a, Y182) (Cell Signaling Technology), Syk (pSyk, Y519/520) (Cell Signaling Technology), SHIP-1 (pSHIP-1, Y1020) (Cell Signaling Technology), or total Syk or SHIP-1 proteins (Thermo Fisher Scientific). We identified BCR-Fab’ clusters as described. We determined the peak FI of AF546-Fab’ and the MFI of AF546-Fab’, pCD79a, pSyk, pSHIP-1, Syk, or SHIP-1 within each cluster. The ratio of pCD79a MFI to AF546-Fab’ MFI in the same cluster was used to estimate the relative phosphorylation level of BCRs in that cluster. This MFI ratio was plotted against AF546-Fab’ peak FI to analyze the relationship between BCR phosphorylation and BCR density of individual clusters. We calculated the MFI ratio of Syk to Fab’ or SHIP-1 to Fab’ in individual clusters to estimate the relative recruitment level of Syk or SHIP-1 to BCR clusters. We plotted these MFI ratios against Fab’ peak FI to determine the relationship between Syk and SHIP-1 recruitment levels and BCR density in individual clusters. We calculated the MFI ratio of pSyk to Fab’ or pSHIP-1 to Fab’ to estimate the amount of pSyk or pSHIP-1 relative to BCR in individual clusters. We plotted these MFI ratios against Fab’ peak FI to determine the relationship between Syk or SHIP-1 phosphorylation and BCR density in individual clusters. We identified pSyk or pSHIP-1 puncta using the criteria: ≥1.3 fold of the background staining outside the B-cell contact zone and ≥250 nm in diameter. We calculated the MFI ratio of pSyk to Fab’ or pSHIP-1 to Fab’ in individual puncta to estimate the amount of pSyk or pSHIP-1 relative to BCR in individual puncta. We plotted these MFI ratios against Fab’ peak FI to determine the relationship between Syk or SHIP-1 phosphorylation and BCR density in individual puncta. We determined the fraction of clusters with graded increases in Fab’ peak FI (every 20 FI units) out of the total to analyze the distribution of clusters with different Fab’ peak FI. We also determine the average MFI ratios of pCD79a, Syk, pSyk, SHIP-1, and pSHIP-1 relative to Fab’ in each graded cluster population. We further divided AF546-Fab’ clusters into three populations based on their peak AF546-Fab’ FI, relatively low (<190), medium (190-280), and high (>280, detected only in contracted cells) and compared the MFI ratios of pCD79a, pSyk, pSHIP-1, Syk, and SHIP-1 relatively to AF546-Fab’ among the three populations using statistical analysis described below. The data were generated from three independent experiments with 20~23 (60~69 total) cells and 125~140 individual clusters (1500~1680 total) per condition, per time point, and per experiment.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using the Mann-Whitney U non-parametric test for unpaired groups having different sample sizes or the Student’s t-test for paired groups with the same sample size. To compare curves, the Kolmogorov-Smirnov test was used. Statistical analyses were performed in Microsoft Excel, GraphPad Prism, and MATLAB. All data are presented as mean ± SEM (standard error of the mean). When testing multiple hypotheses, p-values acquired using t-tests were corrected using the Benjamini-Hochberg/Yekutieli method for false discovery rate control.
 
-## MATLAB scripts
+### MATLAB scripts
 
 All MATLAB scripts used for this study are available as Source code files in the supplemental materials.

@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01an3r305 University of Pittsburgh School of Pharmacy, Department of Pharmaceutical Sciences, Center for Pharmacogenetics Pittsburgh United States
+1. University of Pittsburgh School of Pharmacy, Department of Pharmaceutical Sciences, Center for Pharmacogenetics Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
 
 † Corresponding author
 

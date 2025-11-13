@@ -10,12 +10,12 @@
 
 ### Affiliations
 
-1. https://ror.org/03cve4549 Department of Psychological and Cognitive Sciences, Tsinghua University Beijing China
-2. https://ror.org/05qbk4x57 State Key Laboratory of Brain and Cognitive Science, Institute of Biophysics, Chinese Academy of Sciences Beijing China
-3. https://ror.org/053w1zy07 University of Chinese Academy of Sciences Changsha China
-4. https://ror.org/034t30j35 Department of Psychology and Cognition and Human Behavior Key Laboratory of Hunan Province, Hunan Normal University Hunan China
-5. https://ror.org/053w1zy07 Center for Mind & Brain Sciences, Hunan Normal University Changsh China
-6. https://ror.org/03cve4549 THU-IDG/McGovern Institute for Brain Research, Tsinghua University Beijing China
+1. Department of Psychological and Cognitive Sciences, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))
+2. State Key Laboratory of Brain and Cognitive Science, Institute of Biophysics, Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
+3. University of Chinese Academy of Sciences Changsha China ([ROR:053w1zy07](https://ror.org/053w1zy07))
+4. Department of Psychology and Cognition and Human Behavior Key Laboratory of Hunan Province, Hunan Normal University Hunan China ([ROR:034t30j35](https://ror.org/034t30j35))
+5. Center for Mind & Brain Sciences, Hunan Normal University Changsh China ([ROR:053w1zy07](https://ror.org/053w1zy07))
+6. THU-IDG/McGovern Institute for Brain Research, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))
 7. Institute of Artificial Intelligence, Hefei Comprehensive National Science Center Hefei China
 
 † Corresponding author
@@ -38,11 +38,57 @@ To better understand the mesoscale functional organizations and neural circuits 
 
 Figure 1A shows the stimuli for the color, disparity, and texture experiments. Color-selective activation was defined as the contrast of fMRI responses between chromatic (Chr) and achromatic (Ach) gratings (first column). Disparity-selective activation was the response difference between disparity-defined sinusoidal gratings (3D) by random dot stereograms (RDSs) and their zero-disparity (2D) counterparts (second column). Texture-selective activation was the response difference between naturalistic textures (T) and spectrally matched noise (N) (third column).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig1-v1.jpg)
+
+**Figure 1.:** (A) Visual stimuli for the fMRI experiments. Left: chromatic and achromatic gratings for the color experiment; Middle: disparity-defined grating and zero-disparity disc from random dots for the disparity experiment; Right: naturalistic texture and spectrally matched noise for the texture experiment. (B) Parallel information processing pathways in the early visual areas. (C) Layer-specific neural circuitry of feedforward, feedback, and horizontal connections in the early visual areas. S: superficial layers; M: middle layers. D: deep layers.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** RGB indices of gray (A) and red (B) that match the luminance of maximum blue values across three eccentricities. Error bars indicate 1 SEM across ten subjects.
+
 Figure 1B illustrates a simple model for the building blocks of parallel processing streams in area V2 and their connections with lower (V1) and higher-order visual areas (V3ab and V4). Previous studies in anesthetized macaques found neural selectivity to binocular disparity in the layer 4B of V1, V2 thick stripes, and V3ab in the dorsal stream (Hubel and Livingstone, 1987; Livingstone and Hubel, 1987; Tootell et al., 1983; Ts’o et al., 2001; Tsao et al., 2003), color selectivity in the color blobs in the V1 superficial layers, V2 thin stripes, and V4 in the ventral stream (Hubel and Livingstone, 1987; Livingstone and Hubel, 1987; Livingstone and Hubel, 1988; Lu and Roe, 2008; Zeki, 1973), and strong orientation selectivity in layer 2/3 of V1, V2 pale stripes, and V4 (Hubel and Livingstone, 1987; Roe and Ts’o, 1995; Tanigawa et al., 2010; Ts’o et al., 2001). Only major connections are shown here. There are also other connections, such as V1 interblobs projecting to thick stripes (Federer et al., 2021; Hu and Roe, 2022; Sincich and Horton, 2005). Given a strong dependency on the output of orientation filters (Portilla and Simoncelli, 2000; Simoncelli and Olshausen, 2001), naturalistic textures might be selectively processed by orientation-selective neurons in the pale stripes of V2.
 
 Figure 1C illustrates a simplified model for the layer-specific neural circuitry in the early visual cortex (Felleman and Van Essen, 1991; Nassi and Callaway, 2009). In addition to feedforward and local horizontal connections, feedback modulations may also play important roles in processing visual information, especially in conscious visual perception (Ge et al., 2020). Here, we focused on major connections in the early visual areas. There are also other connections such as feedforward connections from V1 to V4 (Ungerleider et al., 2008), and feedback connections from the superficial layers to lower-order visual areas (Briggs, 2020; Rockland and Pandya, 1979). Using cortical depth-dependent fMRI, we aim to investigate the feedforward, feedback, and local processing of color, disparity, and texture information in the human visual system.
 
-## Functional organizations on the cortical surface of V2
+### Functional organizations on the cortical surface of V2
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig2-v1.jpg)
+
+**Figure 2.:** (A) Activation maps in a representative subject (S09). The scale bar denotes percent signal change of BOLD response. From left to right: Chr – Ach (color), 3D – 2D (disparity), color – disparity, T – N (texture). The bottom panels show enlarged activations in the black square. The highlighted region in the bottom panels represents area V2. Color-selective and disparity-selective stripe-shaped activations arranged perpendicular to the V1-V2 border. Red arrowheads denote the location of color-selective (thin) stripes and blue arrowheads denote the location of disparity-selective (thick) stripes. Black arrowheads in the fourth column highlight the texture-selective activations in anterior V2 (corresponding to peripheral visual field). The regions of interest (ROIs) for pale stripes were defined as vertices in-between adjacent thin and thick stripes (see ‘Materials and methods’ for details). (B) Inter-session correlations for the color- and disparity-selective functional maps in S09. Each blue dot represents one vertex on V2 surface. (C) Selectivity indices for color, disparity and naturalistic texture in different types of columns. Error bar indicates 1 SEM across subjects. **p<0.01, ***p<0.001. n.s.: none significance. Circles represent data from individual participants. (D) Texture selectivity at different eccentricities. Error bars represent 1 SEM across ten participants. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The scale bar denotes percent signal change of BOLD response. Color-selective thin and disparity-selective thick stripes were denoted by red and blue arrows, respectively. The number of stripes in each category is summarized in Figure 2—figure supplement 1—source data 1. LH: left hemisphere; RH: right hemisphere.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Color-selective thin and disparity-selective thick stripes are denoted by red and blue arrows, respectively.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The results for S09 are shown in Figure 2.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The scale bar denotes percent signal change of BOLD response. The stripes are framed with dashed lines. Black: thin and thick stripes (Figure 2A); purple: pale stripes.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Dashed lines indicate zero selectivity. Color- and disparity-selective indices both show significant differences across three stripes. Texture-selective index shows non-significant difference across different stripes.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** From left to right: 10%, 20%, and 30% of extreme voxels. We defined the stripe ROIs using different thresholds to investigate whether the results were independent of the threshold for ROI definition. Specifically, we ranked the voxels in manually defined stripe ROIs by the color-disparity response. We then defined the lowest 10% as the thick stripe voxels, the highest 10% as thin stripe voxels, and the middle 10% as pale stripe voxels. Additionally, we adjusted the thresholds to select 20% or 30% of extreme voxels to define the three stripes (with 30% being the least strict threshold). Notably, in all threshold conditions, there was no significant difference in texture selectivity across different stripes. Error bars indicate 1 SEM across ten subjects.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** The six naturalistic textures were used as stimuli in both 3T and 7T fMRI experiments. MRI data were collected using a 3T Siemens scanner (Prisma) with a 32-channel phased-array coil. Stimuli were back- projected via an MRI-safe projector (spatial resolution: 1024 × 768, refresh rate: 60 Hz). Anatomical volumes were acquired with a T1-weighted MPRAGE sequence at 1 mm isotropic resolution. Functional data were collected with a gradient echo planar imaging sequence (TE = 34 ms; TR = 2 s; FOV = 200 × 200 mm2; matrix = 100 × 100; flip angle = 90°; slice thickness = 2 mm; 72 axial slices). Each run consisted of thirty 24 s stimulus blocks, starting and ending with 16 s fixation periods. Blocks of naturalistic texture and spectrally matched noise stimuli were presented alternatively. In each block, a random sequence of images from one texture family (naturalistic texture or spectrally matched noise) were presented at 5 Hz. There were 15 pairs of naturalistic texture and spectrally matched noise in one run. Eight runs were collected for two subjects while four runs for the other three subjects. MRI data analyses were similar as those in the 7T experiment. Error bars indicate 1 SEM across ten subjects.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig2-figsupp8-v1.jpg)
+
+**Figure 2—figure supplement 8.:** Selectivity maps for three experiments were initially thresholded at p<0.05 and then normalized by linearly scaling the values from 0 to 1. A vertex was classified as selective for a particular feature (i.e., either color, disparity or texture) if its normalized value was times greater than the value for any other feature. Inter-session correlations were also calculated for the activation maps showing selectivity for color-selective, disparity-selective, and texture-selective in V4 (left panel) and V3ab (right panel).
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig2-figsupp9-v1.jpg)
 
 As shown in Figure 2A in a representative subject, color-selective (Chr – Ach, first column, red arrows) and disparity-selective activations (3D – 2D, second column, blue arrows) show stripe-shaped organizations in area V2. These interdigitated stripes can be more clearly seen on the differential map between color and disparity activations [(Chr – Ach) – (3D – 2D), third column]. However, the texture-selective activation map does not exhibit a clear columnar organization (T – N, fourth column). Stronger texture-selective activations can be found from the more anterior part of V2, corresponding to the peripheral visual field. Similar functional organizations can be found from other subjects (Figure 2—figure supplement 1).
 
@@ -54,15 +100,27 @@ Although none of the CO-stripes demonstrated a preference for naturalistic textu
 
 Texture-selective activations in our results are weaker compared to those in the previous study (Freeman et al., 2013). There also appears to be residual texture patterns in some of the noise stimuli (Figure 1A). Thus, to demonstrate the efficacy and specificity of our stimuli, we performed a 3T fMRI experiment using the same stimuli as in Freeman et al.’s study. Different texture families and noise stimuli were presented in separate blocks. Figure 2—figure supplement 7 shows the 3T results for stimuli that were also used in the 7T experiment. All texture families showed significantly stronger activation in V2 compared to the corresponding noise patterns, even for those that ‘appeared’ to have residual texture information (e.g., the third texture family). These results demonstrate that our stimuli are effective in activating texture-selective neural populations in area V2. The 3T data also showed a notable increase in texture-selective activations compared to the 7T experiment, likely due to the increased stimulus presentation speed.
 
-## Cortical depth-dependent response selectivity
+### Cortical depth-dependent response selectivity
 
 A response selectivity index was calculated for each stimulus contrast (see ‘Materials and methods’ for details). The original BOLD responses are also provided (see Figure 3—figure supplement 1). Within each ROI, repeated-measures ANOVA was conducted on each type of selectivity index with cortical depth (deep/middle/superficial) as the within-subject factor, followed by post hoc t-tests between different depths. Color selectivity was significantly stronger in the superficial cortical depth compared to the middle and deep cortical depths in both V1 (F(2,9) = 15.08, p<0.001, BF10 = 133.72; S vs. M: t(9) = 4.70, p<0.01; S vs. D: t(9) = 4.12, p<0.01) and V2 (F(2,9) = 12.93, p<0.001, BF10 = 64.83; S vs. M: t(9) = 3.77, p<0.01; S vs. D: t(9) = 3.85, p<0.01). No significant difference was observed across different depths in other visual areas (Figure 3A). According to the hierarchical model, the strongest color selectivity in the superficial cortical depth is consistent with the fact that color blobs locate in the superficial layers of V1 (Figure 1B, Felleman and Van Essen, 1991; Hubel and Livingstone, 1987; Nassi and Callaway, 2009). The strongest color selectivity in superficial V2 suggests that both local and feedforward connections are involved in processing color information (Figure 1C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig3-v1.jpg)
+
+**Figure 3.:** Error bars indicate 1 SEM across ten subjects. *p<0.05, **p<0.01. See Figure 3—figure supplement 1 for the original BOLD response across cortical depth.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Error bars indicate 1 SEM across ten subjects.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93171/elife-93171-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Red pixels in (B) represent vertices with extremely large signal changes (top 5%) that were excluded.
 
 Disparity selectivity was significantly higher in the superficial cortical depth compared to the middle and deep cortical depths in V3ab (Figure 3B) (F(2,9) = 9.06, p<0.01, BF10 = 16.81; S vs. M: t(9) = 3.11, p<0.05; S vs. D: t(9) = 3.75, p<0.01). No significant difference was found across cortical depths in other ROIs (all F(2,9) < 2.85, p>0.08). The absence of laminar difference in disparity selectivity may suggest that both feedforward, feedback, and local mechanisms are involved in processing disparity information in area V2.
 
 Response selectivity to naturalistic texture was strongest in the deep cortical depth in both V1 (F(2,9) = 12.91, p<0.001, BF10 = 63.57; D vs. M: t(9) = 2.28, p<0.05; D vs. S: t(9) = 4.76, p<0.01) and V2 (F(2,9) = 8.6, BF10 = 14.08, p<0.01; D vs. M: t(9) = 2.49, p<0.05; D vs. S: t(9) = 4.29, p<0.01). Texture selectivity showed no significant difference across cortical depths in the higher-level visual areas V4 (F(2,9) = 1.64, p=0.22) or V3ab (F(2,9) = 3.53, p=0.051), which were significantly larger than those in V1 and V2 (all paired comparisons between ROIs, p<0.001, BF10 > 1106.79). Thus, the depth-dependent effect on feature selectivity does not seem to depend on original BOLD response difference. V1 responses to naturalistic textures were also significantly weaker compared to spectrally matched noise, in line with the top-down feedback hypothesis of predictive coding (Friston, 2005; Murray et al., 2002; Rao and Ballard, 1999). The strongest selectivity in the deep layers of V2 suggests that feedback modulations from higher-level visual areas play a crucial role in processing naturalistic statistical information in this region.
 
-## Cortical depth-dependent informational connectivity
+### Cortical depth-dependent informational connectivity
 
 To further investigate the information flow in the visual hierarchy, we conducted layer-specific informational connectivity analysis among V1, V2, V3ab, and V4 (Aly and Turk-Browne, 2016; Coutanche and Thompson-Schill, 2014; Haxby et al., 2001; Huffman and Stark, 2017; Jia et al., 2020; Koster et al., 2018). For each pair of stimuli, an support vector machine (SVM) classifier was trained to decode the stimulus type (e.g., chromatic or achromatic gratings). Block-by-block multivariate distances to the decision boundary were used to calculate the co-variability of stimulus representations between two brain regions. Feedforward connectivity was defined as the connection between the superficial layer of a lower-level area and the middle layer of a higher-level area, whereas feedback connectivity was defined as the connection between the deep layers of two brain regions.
 
@@ -94,63 +152,161 @@ Due to the limitations of the T2*w GE-BOLD signal in its sensitivity to large dr
 
 ## Materials and methods
 
-## Participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FreeSurfer (version 6.0)</td>
+      <td>https://surfer.nmr.mgh.harvard.edu</td>
+      <td>RRID:SCR_001847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AFNI</td>
+      <td>http://afni.nimh.nih.gov/afni/</td>
+      <td>RRID:SCR_005927</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ANTs</td>
+      <td>Avants et al., 2011</td>
+      <td>RRID:SCR_004757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>mripy</td>
+      <td>https://pypi.org/project/mripy/; herrlich10, 2025</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Psychophysics toolbox</td>
+      <td>http://psychtoolbox.org/</td>
+      <td>RRID:SCR_002881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JASP</td>
+      <td>https://jasp-stats.org/</td>
+      <td>RRID:SCR_015823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Portilla-Simoncelli model</td>
+      <td>Portilla and Simoncelli, 2000</td>
+      <td>-</td>
+      <td>Used for synthesizing naturalistic texture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>7T MAGNETOM MRI scanner</td>
+      <td>Siemens Healthineers</td>
+      <td>-</td>
+      <td>MRI data collection</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>32-channel receive, 4-channel transmit open-face surface coil</td>
+      <td>Sengupta et al., 2016</td>
+      <td>-</td>
+      <td>Custom-built open-face visual coil</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Custom anaglyph spectacles (red and cyan)</td>
+      <td>This paper</td>
+      <td>-</td>
+      <td>Used for disparity experiment</td>
+    </tr>
+  </tbody>
+</table>
+
+### Participants
 
 Ten participants (four females; age range 21–40 years) were recruited for this study. All participants had normal or corrected-to-normal vision and reported no history of neuropsychological or visual disorders. A sample size of 10 participants is relatively large according to the literature on columnar and laminar fMRI studies with long scanning durations (Nasr et al., 2016; Tootell and Nasr, 2017). The experimental procedures were approved by the ethical review board of Institute of Biophysics, Chinese Academy of Sciences (no. 2012-IRB-011). Written informed consent was obtained from all participants prior to their participation in the study.
 
-## General procedures
+### General procedures
 
 Each participant underwent three fMRI experiments in the 7T scanner. Six subjects participated in color, disparity, and texture experiments in three daily sessions (five subjects scanned both color and disparity experiments in two sessions, and the texture experiment in a single session; one subject scanned one experiment in each session). For each experiment, 10 runs of fMRI data were collected. The remaining four participants completed all three experiments in a single session, consisting of 12 runs in total (four runs for each experiment). The order of stimulus presentation was counterbalanced both within and across fMRI runs for each participant. Visual stimuli subtended 46.7° × 35.9° in visual angle, with a fixation point (0.3° in diameter) in the center. During fMRI scans, each run started and ended with 16 s fixation periods. In the remaining periods, visual stimuli were presented in 24 s stimulus blocks. Participants were required to maintain fixation and to detect sparsely and randomly presented color changes of the fixation point.
 
-## Stimuli and apparatus
+### Stimuli and apparatus
 
 Visual stimuli were presented through an MRI-safe projector (1024 × 768 pixel resolution, 60 Hz refresh rate) onto a rear-projection screen. The experiment was conducted using MATLAB 2016a (MathWorks) based on Psychophysics toolbox extensions version 3.0 (Brainard, 1997; Pelli, 1997). Participants viewed the screen via a mirror mounted inside the head coil.
 
-## Color experiment
+#### Color experiment
 
 The MRI-safe projector was calibrated using a PR-655 photometer to have a linear luminance output. To account for changes in isoluminance at different eccentricities (Nasr et al., 2016; Bilodeau and Faubert, 1997; Livingstone and Hubel, 1987; Mullen, 1985), we measured blue-red and blue-gray isoluminance for each participant at three eccentricity ranges (0°–3°, 3°–8°, and 8°–16°). Blue was set as the reference color because the project has lower light intensity for blue compared with red and gray. A minimal motion procedure was used to match the perceived luminance between blue and red/gray (Anstis and Cavanagh, 1983). During isoluminance adjustment, achromatic and chromatic gratings were presented in alternating frames, with pi/2 phase difference between adjacent frames. Blue luminance was fixed at the maximum level, participants adjusted the match-color luminance until no consistent apparent motion was seen (i.e., bi-stable motion directions with equal durations). For each eccentricity range, the isoluminance adjustment was repeated four times and the results were averaged. Figure 1—figure supplement 1A and B illustrates the blue-matched luminance levels (in RGB index) of gray and red, respectively, at the three eccentricity ranges. Consistent with previous findings (Nasr et al., 2016; Bilodeau and Faubert, 1997; Livingstone and Hubel, 1987; Mullen, 1985), the isoluminance level varied significantly as eccentricity (blue-gray: F(2,9) = 87.9, p<0.001, FWE corrected; blue-red: F(2,9) = 35.71, p<0.001, FWE corrected). During fMRI scans, chromatic and achromatic gratings (0.2 cycles-per-degree concentric rings, 46.7° × 35.9° in size, Figure 1A, left panel) moved in either centrifugal or centripetal direction with a speed of 0.8 cycles/s, alternating in 24 s blocks (five blocks per stimulus condition). A 16 s fixation period with uniform gray background was presented at the beginning and the end of each run. Ten runs of fMRI data were collected for six subjects and four runs for the other four subjects.
 
-## Disparity experiment
+#### Disparity experiment
 
 The binocular disparity stimulus (46.7° × 35.9°) was random red/green dot stereograms (RDSs) presented against a black background. Subjects viewed the stimulus through custom anaglyph spectacles (red and cyan). The RDSs generated a stereoscopic percept, with the depth of each dot sinusoidally modulating between –2.2°–2.2° in front of and behind the frontoparallel plane of fixation (Figure 1A, middle panel). In the zero-disparity 2D control condition, randomly moving dots formed a frontoparallel plane intersecting the fixation point (i.e., zero depth at that point). Each run began and ended with a 16 s fixation period. The disparity-defined grating and zero-disparity disc stimuli were presented in alternation every 24 s. Ten runs of fMRI data were collected for six subjects and four runs for the other four subjects.
 
-## Texture experiment
+#### Texture experiment
 
 The naturalistic texture and spectrally matched noise (Figure 1A, right panel) were synthesized using the Portilla–Simoncelli model (Portilla and Simoncelli, 2000). Thirty image pairs were generated. The stimuli (46.7° × 35.9°) were presented in the middle of the screen, centered on the fixation point. Each fMRI run consisted of ten 24 s stimulus blocks, starting and ending with 16 s fixation periods. Each stimulus block consisted of 30 pictures in a random order, with a duration of 0.6 s for each picture. Ten runs of fMRI data were collected for six subjects and four runs for the other four subjects. Although the number of runs was not equal across participants, there were at least four runs (i.e., 20 blocks for each stimulus condition) of data in each experiment, which should be sufficient to investigate within-subject effects. In support of this, the split-half analysis revealed reproducible columnar organizations with five runs of data (Figure 2).
 
-## MRI data acquisition
+### MRI data acquisition
 
 MRI data were acquired on a 7T MAGNETOM MRI scanner (Siemens Healthineers, Erlangen, Germany) with a custom-built 32-channel receive and 4-channel transmit open-face surface coil (Sengupta et al., 2016), in the Beijing MRI center for Brain Research. Functional data were collected with a T2*-weighted 2D GE-EPI sequence (1.0 mm isotropic voxels, 39 slices, TR = 2400 ms, TE = 25 ms, image matrix = 128 × 128, FOV = 128 × 128 mm2, GRAPPA acceleration factor = 3, nominal flip angle = 80°, partial Fourier factor = 7/8, phase encoding direction from head to foot, receiver bandwidth = 1148 Hz/Pix). Slices were oriented perpendicular to the calcarine sulcus. After each fMRI run, five EPI images with reversed phase encoding direction (F to H) were also acquired for EPI distortion correction. High-resolution anatomical volumes were acquired with a T1-weighted MP2RAGE sequence at 0.7 mm isotropic resolution (256 sagittal slices, centric phase encoding, acquisition matrix = 320 × 320, FOV = 224 × 224 mm2, GRAPPA = 3, TR = 4000 ms, TE = 3.05 ms, TI1=750 ms, flip angle = 4°, TI2 = 2500 ms, flip angle = 5°). A bite-bar was settled for each subject to minimize head motion to ensure high data quality.
 
-## MRI data analysis
+### MRI data analysis
 
-## Preprocessing
+#### Preprocessing
 
 The anatomical data were preprocessed using FreeSurfer version 6.0 (Fischl, 2012), which involved the segmentation and reconstruction of inflated and flattened cortical surfaces based on high-resolution anatomical data. We inspected visually and edited manually the surface segmentation to eliminate dura matter, sinus, etc., ensuring correct gray matter boundaries. The functional data were preprocessed and analyzed with AFNI (Cox, 1996), ANTs (Avants et al., 2011), and the mripy package developed in our lab (https://github.com/herrlich10/mripy; herrlich10, 2025). Preprocessing steps included head motion correction, de-spiking, slice timing correction, EPI distortion correction (nonlinear warping with blip-up/down method), and per-run scaling as percent signal change. All spatial transformations were combined and applied in a single interpolation step (sinc interpolation) to minimize the loss of spatial resolution (Wang et al., 2022). No spatial smoothing was applied to the main functional imaging data. We aligned the anatomical volume as well as the reconstructed surfaces to the mean of preprocessed EPI images. General linear models (GLMs) were used to estimate the BOLD responses (β values) to visual stimuli with a canonical hemodynamic response function (BLOCK4 in AFNI). Slow baseline drift and motion parameters were included as nuisance regressors in GLMs.
 
-## Cortical depth definition
+#### Cortical depth definition
 
 To perform the cortical depth-dependent analysis, we resampled the functional volumes to 0.5 mm isotropic resolution using cubic interpolation (3dresample in AFNI). An equi-volume method was used to calculate the relative cortical depth of each voxel to the white matter and pial surface (0: white matter surface; 1: pial surface, Figure 3—figure supplement 2A), using mripy (https://github.com/herrlich10/mripy). The voxels in each ROI were sorted and divided into three bins: deep depth (0–0.33), middle depth (0.33–0.67), and superficial depth (0.67–1.00) (Ge et al., 2020; Kemper et al., 2018).
 
-## ROI definition
+#### ROI definition
 
 ROIs were defined on the inflated cortical surface. Surface ROIs for V1, V2, V3ab, and V4 were defined based on the polar angle atlas from the 7T retinotopic dataset of Human Connectome Project (Benson et al., 2014; Benson et al., 2018). Moreover, the boundary of V2 was edited manually based on columnar patterns. All ROIs were constrained to regions where mean activation across all stimulus conditions exceeded 0. In V2, ROIs for the thin and thick ‘stripe’-shaped columns were manually defined in two stages. Firstly, we defined thin stripes by contrast between the chromatic and achromatic stimuli, and thick stripes by contrast between binocular disparity and 2D control stimuli. Secondly, we defined final stripes by contrast between these two, resulting in interdigitated thin and thick stripes distributed without overlap. The pale stripes were defined as the regions located between the thin and thick stripes. We compared the fMRI signal changes elicited by the three stimulus contrasts in each stripe. For the cortical depth-dependent analyses in Figure 3, we used all voxels in the retinotopic ROI. Pooling all voxels in the ROI avoids the problem of double-dipping and also increases the signal-to-noise ratio of ROI-averaged BOLD responses.
 
-## Stimulus-selectivity index
+#### Stimulus-selectivity index
 
-The ROI-averaged BOLD responses were calculated for each stimulus condition. We defined a selectivity index (SI) for color, disparity, and texture processing, respectively:SIcolor=(βchar−βach)/(βchar+βach)SIdisparity=(β3D−β2D)/(β3D+β2D)SItexture=(βT−βN)/(βT+βN)
+The ROI-averaged BOLD responses were calculated for each stimulus condition. We defined a selectivity index (SI) for color, disparity, and texture processing, respectively:
+
+$$
+SI_{color}=(\beta_{char}−\beta_{ach})/(\beta_{char+\beta_{ach}})SI_{disparity}=(\beta_{3D}−\beta_{2D})/(\beta_{3D}+\beta_{2D})SI_{texture}=(\beta_{T}−\beta_{N})/(\beta_{T}+\beta_{N})
+$$
 
 Here, βchr, βach, β3D, β2D, βT, and βN represent the beta estimates of BOLD responses for the chromatic, achromatic, binocular disparity, 2D control, naturalistic texture, and spectrally matched noise stimuli, respectively.
 
-## Test–retest reliability of columnar organizations
+#### Test–retest reliability of columnar organizations
 
 For five subjects who participated in both color and disparity experiments across two daily scan sessions, we generated color (βchr – βach) and disparity (β3D – β2D) selective functional maps on the cortical surface in area V2. Pearson’s correlations were computed to evaluate the test–retest reliability of color- and disparity-selective response patterns between the two scan sessions. FWEs of the pattern correlations were controlled by a null distribution generated from Monte Carlo simulation (Qian et al., 2023). In this procedure, the first session’s GLM residual volumes were used to estimate the spatial auto-correlation function (3dFWHMx in AFNI), and it was then used to generate a simulated GLM volume for the second session (3dClustSim in AFNI). We then projected the first and second sessions’ GLM volumes onto the cortical surface and calculated the inter-session correlations of color- and disparity-selective response patterns in V2. This process was repeated 10,000 times (Figure 2—figure supplement 9). Finally, the measured correlation coefficients were compared to the critical value of the null distribution.
 
-## Pial vein removal
+#### Pial vein removal
 
 To mitigate the strong BOLD effect from large pial veins on layer-specific signals in the gray matter (Cheng et al., 2001; Gati et al., 1997; Kay et al., 2019; Yacoub et al., 2005), we excluded vertices with extremely large signal changes and their corresponding voxels in the gray matter. Specifically, the top 5% cortical vertices with large signal changes from baseline (all stimulus conditions vs. fixation) and the corresponding voxels across all cortical depths were excluded from analysis in V1, V2, V4, and V3ab (Figure 3—figure supplement 2B). According to our previous study (Liu et al., 2021), this large vein removal approach can effectively reduce the superficial bias in laminar response profiles of the visual cortex.
 
-## Cortical depth-dependent informational connectivity
+#### Cortical depth-dependent informational connectivity
 
 To investigate stimulus-specific information flow in the visual processing hierarchy, we calculated informational connectivity between the input and output layers of two brain regions (Aly and Turk-Browne, 2016; Coutanche and Thompson-Schill, 2014; Haxby et al., 2001; Huffman and Stark, 2017; Jia et al., 2020; Koster et al., 2018). This approach is analogous to the functional connectivity method in multivariate pattern analysis, where connectivity is inferred from shared changes (covariation) in decoding accuracy between regions over time (i.e., across blocks). The layer-specific neural circuitry was further used to define the direction of informational connectivity (Jia et al., 2020). Specifically, feedforward connectivity was defined as the connection between the superficial layer of the lower visual area and the middle layer of the higher visual area, whereas feedback connectivity was defined as the connection between two deep layers (Figure 1C).
 
@@ -158,6 +314,6 @@ In the analysis, a separate GLM regressor was first used to estimate the activat
 
 The correlation coefficients were Fisher z-transformed before statistical analysis. One-sample t-test against 0 was conducted on each connectivity value, and the results were submitted to false discovery rate (FDR) correction. The reported correlations are the original r values to facilitate interpretation and visualization.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using MATLAB 2021a, JASP (v0.17.1), and custom Python code. Repeated-measures ANOVA and paired t-tests were used for most of the statistical analyses of ROI data. An FWE-corrected threshold of p<0.05 was used for each group of ANOVA. We further performed an FWE correction for paired t-tests only when the corrected p-value from ANOVA exceeded threshold, according to the (Fisher, 1936; Levin et al., 1994). We conducted Bayesian repeated-measures ANOVA to complement the classical null-hypothesis test with JASP (Wagenmakers et al., 2018). The calculated Bayes factor (BF10) falling into 0.33–1 indicates anecdotal evidence for the null hypothesis (H0), whereas a value between 10–30 and >100 refers to strong and extreme evidence for the alternative hypothesis (H1), respectively. Moreover, we used the nonparametric permutation test to test if selectivity indices differ across stripes. For each selectivity index, we resampled with replacement and computed the mean value within each type of stripe, and calculated the difference between each pair of stripes. This process was repeated 10,000 times to derive the null distribution. The critical value was set to 0.

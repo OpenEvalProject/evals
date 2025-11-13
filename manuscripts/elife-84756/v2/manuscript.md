@@ -10,14 +10,14 @@
 
 ### Affiliations
 
-1. https://ror.org/00a0jsq62 Department of Infection Biology, London School of Hygiene and Tropical Medicine London United Kingdom
-2. https://ror.org/00a0jsq62 Department of Infectious Disease Epidemiology, London School of Hygiene and Tropical Medicine London United Kingdom
+1. Department of Infection Biology, London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
+2. Department of Infectious Disease Epidemiology, London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
 
 † Corresponding author
 
 ## Abstract
 
-Pathogen evolution of drug resistance often occurs in a stepwise manner via the accumulation of multiple mutations that in combination have a non-additive impact on fitness, a phenomenon known as epistasis. The evolution of resistance via the accumulation of point mutations in the DHFR genes of Plasmodium falciparum ( Pf ) and Plasmodium vivax ( Pv ) has been studied extensively and multiple studies have shown epistatic interactions between these mutations determine the accessible evolutionary trajectories to highly resistant multiple mutations. Here, we simulated these evolutionary trajectories using a model of molecular evolution, parameterised using Rosetta Flex ddG predictions, where selection acts to reduce the target-drug binding affinity. We observe strong agreement with pathways determined using experimentally measured IC50 values of pyrimethamine binding, which suggests binding affinity is strongly predictive of resistance and epistasis in binding affinity strongly influences the order of fixation of resistance mutations. We also infer pathways directly from the frequency of mutations found in isolate data, and observe remarkable agreement with the most likely pathways predicted by our mechanistic model, as well as those determined experimentally. This suggests mutation frequency data can be used to intuitively infer evolutionary pathways, provided sufficient sampling of the population.
+Pathogen evolution of drug resistance often occurs in a stepwise manner via the accumulation of multiple mutations that in combination have a non-additive impact on fitness, a phenomenon known as epistasis. The evolution of resistance via the accumulation of point mutations in the DHFR genes of Plasmodium falciparum (Pf) and Plasmodium vivax (Pv) has been studied extensively and multiple studies have shown epistatic interactions between these mutations determine the accessible evolutionary trajectories to highly resistant multiple mutations. Here, we simulated these evolutionary trajectories using a model of molecular evolution, parameterised using Rosetta Flex ddG predictions, where selection acts to reduce the target-drug binding affinity. We observe strong agreement with pathways determined using experimentally measured IC50 values of pyrimethamine binding, which suggests binding affinity is strongly predictive of resistance and epistasis in binding affinity strongly influences the order of fixation of resistance mutations. We also infer pathways directly from the frequency of mutations found in isolate data, and observe remarkable agreement with the most likely pathways predicted by our mechanistic model, as well as those determined experimentally. This suggests mutation frequency data can be used to intuitively infer evolutionary pathways, provided sufficient sampling of the population.
 
 ## Introduction
 
@@ -65,13 +65,134 @@ In addition, we analysed if evolutionary pathways can be inferred from the frequ
 
 ## Results
 
-## Rosetta Flex ddG captures general trends in binding free energy changes and epistasis
+### Rosetta Flex ddG captures general trends in binding free energy changes and epistasis
 
 We investigated if Flex ddG predictions agree with experimentally measured binding free energy and if these predictions can be used to calculate the non-additivity in binding free energy (interaction energy), which for a double mutant defines the epistasis between the two mutations and, for a triple mutant or higher, captures the level of epistatic interactions but does not quantify it. We calculated the interaction energy by finding the difference between the predicted change in binding free energy of a multiple mutation and the sum of the predictions of their independent binding free energy changes. A positive value of the interaction energy indicates the sum of the independent impacts is more destabilising than the impact of the multiple mutation and a negative value indicates the sum is less destabilising than the combined impact.
 
 The change in binding free energy was predicted using Flex ddG for the combinatorically complete set of the four PfDHFR pyrimethamine resistance mutations N51I, C59R, S108N, and I164L.
 
-We compared the predictions to the data from Sirawaraporn et al., 1997, in which they determined binding free energy changes for a subset of the possible combinations of mutations, the sum of the independent mutations (calculated for multiple mutants to compare to the experimentally determined binding free energy changes of multiple mutants), and the interaction energy of the multiple mutants (Table 1). A positive ΔΔG value indicates a destabilising mutation and a negative ΔΔG value indicates a stabilising mutation. (Note: Rosetta Flex ddG calculates the change in binding free energy as ΔΔG=ΔGmut−ΔGWT, whereas Sirawaraporn et al., 1997, calculated the change as the reverse, ΔΔG=ΔGWT−ΔGmut, where WT indicates the wild-type free energy and mut indicates the mutant free energy. Therefore, in Sirawaraporn et al., 1997, a mutation that destabilised the binding corresponded to a negative ΔΔG, whilst here we have reversed the signs of their data to enable comparison with our predictions.)
+We compared the predictions to the data from Sirawaraporn et al., 1997, in which they determined binding free energy changes for a subset of the possible combinations of mutations, the sum of the independent mutations (calculated for multiple mutants to compare to the experimentally determined binding free energy changes of multiple mutants), and the interaction energy of the multiple mutants (Table 1). A positive $ΔΔG$ value indicates a destabilising mutation and a negative $ΔΔG$ value indicates a stabilising mutation. (Note: Rosetta Flex ddG calculates the change in binding free energy as $ΔΔG=ΔG_{mut}−ΔG_{WT}$, whereas Sirawaraporn et al., 1997, calculated the change as the reverse, $ΔΔG=ΔG_{WT}−ΔG_{mut}$, where WT indicates the wild-type free energy and mut indicates the mutant free energy. Therefore, in Sirawaraporn et al., 1997, a mutation that destabilised the binding corresponded to a negative $ΔΔG$, whilst here we have reversed the signs of their data to enable comparison with our predictions.)
+
+**Table 1.**
+ Correlation between Flex ddG predictions for 250 runs and experimental data (see table 4 of Sirawaraporn et al., 1997) for P. falciparum dihydrofolate reductase (PfDHFR) pyrimethamine resistance mutations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutation</th>
+      <th>ΔΔGexp*(kcal/mol)</th>
+      <th>Exp. sum†</th>
+      <th>Exp I.E.‡</th>
+      <th>ΔΔGFlexddG §(kcal/mol)</th>
+      <th>Sum¶</th>
+      <th>I.E.§**</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N51I</td>
+      <td>–0.783</td>
+      <td></td>
+      <td></td>
+      <td>–0.124</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C59R</td>
+      <td>–0.184</td>
+      <td></td>
+      <td></td>
+      <td>–0.033</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S108N</td>
+      <td>1.297</td>
+      <td></td>
+      <td></td>
+      <td>0.312</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I164L</td>
+      <td>–0.351</td>
+      <td></td>
+      <td></td>
+      <td>–0.323</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N51I,S108N</td>
+      <td>1.89</td>
+      <td>0.514</td>
+      <td>1.376</td>
+      <td>–0.166</td>
+      <td>0.188</td>
+      <td>–0.354</td>
+    </tr>
+    <tr>
+      <td>C59R,S108N</td>
+      <td>2.29</td>
+      <td>1.113</td>
+      <td>1.177</td>
+      <td>0.399</td>
+      <td>0.279</td>
+      <td>0.119</td>
+    </tr>
+    <tr>
+      <td>N51I,C59R,S108N</td>
+      <td>2.595</td>
+      <td>0.33</td>
+      <td>2.265</td>
+      <td>0.162</td>
+      <td>0.155</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>C59R,S108N,I164L</td>
+      <td>3.283</td>
+      <td>0.762</td>
+      <td>2.521</td>
+      <td>0.018</td>
+      <td>–0.043</td>
+      <td>0.061</td>
+    </tr>
+    <tr>
+      <td>N51I,C59R,S108N,I164L</td>
+      <td>3.761</td>
+      <td>–0.021</td>
+      <td>3.782</td>
+      <td>0.301</td>
+      <td>–0.168</td>
+      <td>0.469</td>
+    </tr>
+    <tr>
+      <td>Pearson correlation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.611</td>
+      <td>0.660</td>
+      <td>0.756</td>
+    </tr>
+    <tr>
+      <td>Correctly classified</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>8/9</td>
+      <td>4/5</td>
+      <td>4/5</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Experimentally measured PfDHFR pyrimethamine binding free energy change data from Sirawaraporn et al., 1997.†Sum of experimental values of binding free energy change for independent mutations.‡Interaction energy calculated as the difference between experimentally measured values of binding free energy change of multiple mutant compared to the sum of the independent mutations involved.§Change in PfDHFR pyrimethamine binding free energy predicted by Flex ddG calculated as the average of the distribution of runs. Free energy predictions from Rosetta are in Rosetta Energy Units, however the authors of Flex ddG applied a generalised additive model to reweight the predictions and make the output more comparable to units of kcal/mol (Barlow et al., 2018).¶Sum of Flex ddG predictions for independent mutations.** Interaction energy calculated as the difference between Flex ddG predicted binding free energy change of multiple mutant compared to the sum of the independent mutations._
 
 The authors of the Flex ddG protocol suggest conducting a minimum of 35 runs and taking the average of the distribution as the prediction for that mutation (Barlow et al., 2018). We found the average of the distributions converges and the rank order of the mutations is constant at around 250 runs (Appendix 1—figure 3 and Appendix 1—figure 4). We compared the predictions for 250 runs and the data from Sirawaraporn et al., 1997 (Table 1) and observed a correlation of 0.611 for the binding free energy data (with a p-value of 0.04 for a one-sided t-test), 0.660 for the sum of the independent predictions for multiple mutants, and 0.756 for the interaction energy. We found 8/9 binding free energy predictions were correctly classified, 4/5 of the sum of the independent predictions were correctly classified, and 4/5 of the interaction energies were correctly classified. We used a confusion matrix to determine how accurate Flex ddG is at classifying mutations as stabilising or destabilising, which gave an accuracy of 0.89, a sensitivity of 0.83, and a specificity of 1.0, suggesting Flex ddG performs well overall. The p-value associated with the confusion matrix was 0.14, despite the high accuracy. This is likely due to the small sample size making it difficult to determine significance.
 
@@ -85,7 +206,7 @@ We also observed large negative interaction energy between S108N and C59R, where
 
 We conclude that although there are some disagreements between the predictions and the data, Flex ddG is able to capture the general trend of the data. However, if we use the average of the distributions as a summary metric of the predictions for the combinatorically complete set of the four mutations and try to infer a pathway through to the quadruple mutation, under the criteria that each subsequent mutation must destabilise pyrimethamine binding more than the last, then we are unable to find a pathway through (see Appendix 2—figure 1 for fitness hypercube). However, since the predictions capture the general trend observed in the data, and the summary metric does not fully characterise the entire distribution of predictions, we used the distributions to parameterise an evolutionary model to determine if we can predict a pathway through to the quadruple mutation and if the predicted evolutionary trajectories agree with experimentally determined evolutionary trajectories.
 
-## A thermodynamic evolutionary model predicts the most likely evolutionary trajectories to quadruple mutations in both PfDHFR and PvDHFR
+### A thermodynamic evolutionary model predicts the most likely evolutionary trajectories to quadruple mutations in both PfDHFR and PvDHFR
 
 Whilst the fitness landscape of DHFR is a function of many factors including stability, abundance, and activity (Bershtein et al., 2015; Rodrigues et al., 2016), we sought to construct a simple biophysical model that could be parameterised using existing computational tools. Therefore, we used a simple model that considered only predicted changes in binding free energy, that would be easy to implement, undertaken purely computationally with good accuracy and without the need for extensive wet lab experiments. We sought to determine if simulated trajectories using this simple fitness model could capture observed evolutionary trajectories, despite not considering all factors that contribute to DHFR fitness. We simulated the evolutionary trajectories to the quadruple mutants described above for the genes PfDHFR and PvDHFR using an evolutionary model, adapted from previous studies (Eccleston et al., 2021; Pollock et al., 2017; Pollock et al., 2012). In this model, selection acts to reduce the binding affinity between target protein and the antimalarial drug with which the mutations have been associated with resistance. Briefly, starting from the wild-type protein, we randomly sample a value from the Flex ddG distributions for each of the four single mutations and calculate the fitness of the mutated protein (Equation 1) and the fixation probability (Equation 2). A mutation is then chosen with a probability proportional to the fixation probability and this is repeated until the quadruple mutation is reached. If the set of sampled mutations at a step all have a fixation probability of zero, the algorithm terminates at that point in the pathway and begins the next run at the single mutation step. Therefore, it is not guaranteed that a run will reach the quadruple mutation. We carried out 50,000 runs and determined (i) the number of runs that reached a single, double, triple, or the quadruple mutation before the run ended (files ending ‘_endpoint_numbers.csv’ on Zenodo), (ii) the frequency of the observed trajectories up to the quadruple mutation, including trajectories that terminated before the quadruple mutation (files ending ‘_pathway_endpoints.csv’), (iii) the frequency at which a mutational step was chosen in all runs (files ending ‘_total_pathway_probabilities.csv’), and (iv) the most likely trajectories to the quadruple mutation predicted by our simulations (files ending ‘_quadruple_pathways.csv’).
 
@@ -95,7 +216,7 @@ However, since we are interested in how epistasis influences the order of fixati
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/84756/elife-84756-fig1-v2.jpg)
 
-**Figure 1.:** a) N51I,C59R,S108N,I164L in P. falciparum dihydrofolate reductase (PfDHFR) and (b) N50I,S58R,S117N,I173L in P. vivax DHFR (PvDHFR).Line thickness indicates the total probability of a mutation when considering all pathways it can occur in, determined from the frequency of that step in all realised mutational pathways from all runs. Dotted lines indicate zero probability of a mutation at that step. The most likely pathway in total is denoted by a red star. The most likely pathway to the quadruple mutation is highlighted in dark red and the second most likely pathway to the quadruple mutation is highlighted in lighter red. The probabilities corresponding to these plots can be found in supplementary files ‘PfDHFR_total_pathway_probabilities.csv’ and ‘PvDHFR_total_pathway_probabilities.csv’ on Zenodo for (a) and (b), respectively.
+**Figure 1.:** Line thickness indicates the total probability of a mutation when considering all pathways it can occur in, determined from the frequency of that step in all realised mutational pathways from all runs. Dotted lines indicate zero probability of a mutation at that step. The most likely pathway in total is denoted by a red star. The most likely pathway to the quadruple mutation is highlighted in dark red and the second most likely pathway to the quadruple mutation is highlighted in lighter red. The probabilities corresponding to these plots can be found in supplementary files ‘PfDHFR_total_pathway_probabilities.csv’ and ‘PvDHFR_total_pathway_probabilities.csv’ on Zenodo for (a) and (b), respectively.
 
 Considering the frequency at which the single mutations were chosen as the first step in all simulated pathways (’PfDHFR_total_pathway_probabilities.csv’ on Zenodo), S108N was the most likely single mutation and C59R was the second most likely single mutation, in agreement with the two most likely first steps in the pathways predicted in Lozovsky et al., 2009. The most likely pathway to a double mutation realised in all trajectories in both our simulations and the simulations in Lozovsky et al., 2009, is S108N/C59R. Similarly, the most likely pathway to a triple mutation realised in all our simulations and in Lozovsky et al., 2009, was S108N/C59R/N51I.
 
@@ -105,9 +226,9 @@ Considering the order of fixation up to the quadruple mutation, we compared the 
 
 The first step in the evolutionary trajectories determined in Jiang et al., 2013, for the highest concentration was S58R whereas for the three lower concentrations it was S117N. The most likely first step in all pathways predicted by our simulations was S58R (Figure 1b), whilst S117N was the second most likely first step (‘PvDHFR_total_pathway_probabilities.csv’ on Zenodo).
 
-To quantify the predictability of an evolutionary landscape, previous studies have calculated the Gibbs-Shannon entropy distribution of the path weights (Szendro et al., 2013; de Visser and Krug, 2014), namely S=−∑Piln⁡Pi, where Pi is the probability of the ith pathway and the value of S ranges from 0 to ln⁡n for n equally likely pathways. The lower the value of S the higher the predictability of the evolution, i.e., most of the probability is concentrated around a small number of pathways, suggesting epistasis is influential in constraining the accessible trajectories. The value of S when considering the probability distribution of all realised evolutionary trajectories in the simulations was 1.19 for PfDHFR and 2.82 for PvDHFR (both simulations have an equal number of possible pathways because they have an equal number of mutations, so the values of S are comparable and the maximum value of S for both simulations is 4.16). This means the evolutionary trajectories were more constrained in the PfDHFR simulations than in the PvDHFR simulations and suggests that epistasis between the mutations plays a greater role in constraining the trajectories in the evolution of PfDHFR resistance. Unfortunately, the probabilities of all possible pathways determined in Lozovsky et al., 2009, and Jiang et al., 2013, are not made available (the data is represented in pathway diagrams, the probabilities of a step are indicated by line thickness and only the probabilities of the most likely pathways annotated), therefore we cannot calculate the corresponding values of S for these distributions for comparison.
+To quantify the predictability of an evolutionary landscape, previous studies have calculated the Gibbs-Shannon entropy distribution of the path weights (Szendro et al., 2013; de Visser and Krug, 2014), namely $S=−\sumP_{i}ln⁡P_{i}$, where $P_{i}$ is the probability of the ith pathway and the value of $S$ ranges from 0 to $ln⁡n$ for $n$ equally likely pathways. The lower the value of $S$ the higher the predictability of the evolution, i.e., most of the probability is concentrated around a small number of pathways, suggesting epistasis is influential in constraining the accessible trajectories. The value of $S$ when considering the probability distribution of all realised evolutionary trajectories in the simulations was 1.19 for PfDHFR and 2.82 for PvDHFR (both simulations have an equal number of possible pathways because they have an equal number of mutations, so the values of $S$ are comparable and the maximum value of $S$ for both simulations is 4.16). This means the evolutionary trajectories were more constrained in the PfDHFR simulations than in the PvDHFR simulations and suggests that epistasis between the mutations plays a greater role in constraining the trajectories in the evolution of PfDHFR resistance. Unfortunately, the probabilities of all possible pathways determined in Lozovsky et al., 2009, and Jiang et al., 2013, are not made available (the data is represented in pathway diagrams, the probabilities of a step are indicated by line thickness and only the probabilities of the most likely pathways annotated), therefore we cannot calculate the corresponding values of $S$ for these distributions for comparison.
 
-## The frequency of mutations in isolate data can be used to infer evolutionary trajectories to multiple resistance mutations
+### The frequency of mutations in isolate data can be used to infer evolutionary trajectories to multiple resistance mutations
 
 It was noted in Lozovsky et al., 2009, that their most likely pathways to the PfDHFR quadruple mutation were consistent with combinations of these four mutations observed in high frequencies in worldwide surveys of P. falciparum polymorphisms. To expand on this idea, we analysed the frequency of the combinations of mutations in PfDHFR and PvDHFR found in our isolate data to identify if there is agreement between these frequencies, the experimentally determined trajectories, and our predicted trajectories and if, therefore, isolate frequency data may be used to infer evolutionary trajectories. We inferred evolutionary trajectories from the frequency data by assuming if a specific mutation was found in high frequency (and is part of the combinatorically complete set of four mutations found in the four genes) then it is likely to be part of the evolutionary trajectory towards the quadruple mutation. To infer the first step in the most likely trajectory, we considered the frequency of single mutations of the set of four mutations considered for each gene and selected the most frequent mutation. To infer subsequent steps in the trajectory, we considered the frequency of only those mutations that contain the previous mutation and another of the set of four mutations in some combination and chose the most frequent mutation at each step. We also inferred alternative pathways which from the frequency data are less likely than the main pathway, but still a possibility due to the occurrence of intermediate mutations in the isolate data. To do this, we considered each step in the most likely trajectory and identified any other high-frequency mutations that would enable alternative pathways from the double mutation onwards. If there were no alternative pathways, we began the process again but chose the second most frequent single mutation (if applicable) and built the pathway from there. In the event of multiple alternative pathways, we are unable to quantify their relative likelihoods, only that they are less likely than the most likely pathway. It is sometimes not clear which pathway is most likely. For example, for the set of mutation frequencies A:9, D:10, AB:20, CD:2, ABC:50, BCD:1, ABCD:75, the most likely pathway from the method stated above would be D/C/B/A and the alternative pathway would be A/B/C/D, purely because mutation D is more abundant than mutation A. However, the frequencies of the intermediate mutations in the most likely pathway are low compared to the alternative pathway. Therefore, in these situations where it is unclear which pathway is most likely, we will not refer to any one pathway as the most likely pathway and will refer to all pathways as possible trajectories.
 
@@ -115,7 +236,7 @@ Considering the total frequency of each mutation in the set of four PfDHFR mutat
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/84756/elife-84756-fig2-v2.jpg)
 
-**Figure 2.:** a) N51I, C59R, S108N, and I164L in P. falciparum dihydrofolate reductase (PfDHFR), and (b) N50I, S58R, S117N, and I173L in P. vivax DHFR (PvDHFR).All frequencies have been multiplied by a factor of 10 to enable clear identification of those mutations occurring in one isolate only. The frequencies are also given as the percentage of the total number of isolates, which for PfDHFR is 6762 and PvDHFR is 847.
+**Figure 2.:** All frequencies have been multiplied by a factor of 10 to enable clear identification of those mutations occurring in one isolate only. The frequencies are also given as the percentage of the total number of isolates, which for PfDHFR is 6762 and PvDHFR is 847.
 
 Triple mutation C59R,S108N,I164L was found in 101/6762 isolates, suggesting that the second most likely pathway to the quadruple from our simulations and experimental data, S108N/C59R/I164L/N51I, is a possible alternative trajectory to the quadruple mutation. Double mutation N51I,S108N was the second most frequent double mutation in the isolate data (198/6762 isolates), allowing for another alternative pathway S108N/N51I/C59R/I164L. This agrees with the third most likely pathway presented by Lozovsky et al., 2009, however this pathway was unlikely in our simulations.
 
@@ -131,17 +252,17 @@ Single mutation S58R was the second most frequent single mutation in our isolate
 
 A Chi-squared test on the frequency distributions of the single and double PvDHFR mutations (the triple mutations were too infrequent to include in the analysis, see Appendix 3 and Appendix 3—figure 1 for more details) revealed the worldwide distribution of PvDHFR mutations is significantly different than would be expected if there were no preferred order of fixation of this set of mutations, with S117N and S58R,S117N being overrepresented in the single and double distributions, respectively. This supports our inference that pathway S117N/S58R/I173L is the most likely pathway in the worldwide data.
 
-## Analysis of geographical distribution of mutations found in our isolate data reveals alternative pathways to resistance
+### Analysis of geographical distribution of mutations found in our isolate data reveals alternative pathways to resistance
 
 We next considered the evolutionary trajectories by geographical location to determine if there are any differences in the inferred trajectories compared to the global trajectories, and which areas agree with the trajectories predicted by our simulations. The P. falciparum isolates were grouped into seven geographical regions (Figure 3), as defined by the United Nations Statistics Division: South America (Brazil, Colombia, and Peru), West Africa (Benin, Burkina Faso, Cameroon, Cape Verde, Cote d’Ivoire, Gabon, Gambia, Ghana, Guinea, Mali, Mauritania, Nigeria, and Senegal), Middle Africa (Congo [DRC]), Eastern Africa (Eritrea, Ethiopia, Kenya, Madagascar, Malawi, Tanzania, Uganda), Southern Asia (Bangladesh), Southeastern Asia (Cambodia, Indonesia, Laos, Myanmar, Thailand, and Vietnam), and Melanesia (Papua New Guinea). The P. vivax isolates were grouped into seven broad geographical regions (Figure 4), as defined by the United Nations Statistics Division: Central America (Mexico), South America (Brazil, Colombia, Guyana, Panama, Peru), Eastern Africa (Ethiopia, Eritrea, Madagascar, Sudan, Uganda), Southern Asia (Afghanistan, Bangladesh, India, Pakistan, Sri Lanka), Southeastern Asia (Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Thailand, and Vietnam), Eastern Asia (China), and Melanesia (Papua New Guinea). The mutation frequency data discussed in this section for each country can be found in Supplementary data folders ‘PfDHFR/IsolateMutationFrequency’ and ‘PvDHFR/IsolateMutationFrequency’.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/84756/elife-84756-fig3-v2.jpg)
 
-**Figure 3.:** P. falciparum dihydrofolate reductase (PfDHFR) isolate data was grouped into seven geographical areas: South America, West Africa, Middle Africa, Eastern Africa, Southern Asia, Southeastern Asia, and Melanesia.The bar charts display the frequency (log scale) of the combinations of the four mutations N51I, C59R, S108N, and I164L. The frequency data has been multiplied by a factor of 10 to enable clear identification of those mutations occurring in one isolate only. The most likely evolutionary trajectory inferred from the frequency of combinations are included above the corresponding frequency chart from which the pathways were inferred indicated by mutations separated by dark red arrows. Alternative pathways are indicated by mutations separated by light red arrows. Where only single mutations are present a pathway is not inferred. (See Supplementary data folder ‘PfDHFR/IsolateMutationFrequency’ for the frequency of all mutations found in the isolate data from these regions.)
+**Figure 3.:** The bar charts display the frequency (log scale) of the combinations of the four mutations N51I, C59R, S108N, and I164L. The frequency data has been multiplied by a factor of 10 to enable clear identification of those mutations occurring in one isolate only. The most likely evolutionary trajectory inferred from the frequency of combinations are included above the corresponding frequency chart from which the pathways were inferred indicated by mutations separated by dark red arrows. Alternative pathways are indicated by mutations separated by light red arrows. Where only single mutations are present a pathway is not inferred. (See Supplementary data folder ‘PfDHFR/IsolateMutationFrequency’ for the frequency of all mutations found in the isolate data from these regions.)
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/84756/elife-84756-fig4-v2.jpg)
 
-**Figure 4.:** P. vivax dihydrofolate reductase (PvDHFR) isolate data was grouped into seven geographical areas: Central America, South America, Eastern Africa, Southern Asia, Eastern Asia, Southeastern Asia, and Melanesia.The bar charts display the frequency (log scale) of the combinations of the four mutations N50I, S58R, S117N, and I173L. The frequency data has been multiplied by a factor of 10 to enable clear identification of those mutations occurring in one isolate only. The most likely evolutionary trajectory inferred from the frequency of combinations are included above the corresponding frequency chart from which the pathways were inferred indicated by mutations separated by dark red arrows. Alternative pathways are indicated by mutations separated by light red arrows. Where only single mutations are present a pathway is not inferred.
+**Figure 4.:** The bar charts display the frequency (log scale) of the combinations of the four mutations N50I, S58R, S117N, and I173L. The frequency data has been multiplied by a factor of 10 to enable clear identification of those mutations occurring in one isolate only. The most likely evolutionary trajectory inferred from the frequency of combinations are included above the corresponding frequency chart from which the pathways were inferred indicated by mutations separated by dark red arrows. Alternative pathways are indicated by mutations separated by light red arrows. Where only single mutations are present a pathway is not inferred.
 
 As in the previous section, we inferred the most likely pathway by assuming the most frequent mutation at each step corresponds to the most likely evolutionary trajectory. When inferring pathways at a regional level, it is possible we may encounter instances where genotypes with multiple mutations are observed in a specific region, but the precursor mutations in the pathway are absent. This could happen either due to insufficient sampling of the region or due to ‘migration’ of the variant from a neighbouring region. To infer pathways in the former case more samples would be required, whereas in the latter case we can look to the data from neighbouring regions where the variant is present and use the frequency data of the precursor mutations.
 
@@ -163,7 +284,7 @@ We performed an analysis of the significance of the regional distributions, simi
 
 We have presented a method for predicting the most likely evolutionary trajectories to multiple mutants by parameterising thermodynamic evolutionary model using Flex ddG predictions. The most likely pathways predicted by our model to the pyrimethamine-resistant quadruple PfDHFR mutant correspond well to those predicted in Lozovsky et al., 2009, generated using experimentally determined IC50 values of PfDHFR pyrimethamine binding. The two most likely pathways based on experimental IC50 values were found in the top two most likely pathways to the quadruple mutation based on our simulations using predictions of binding free energy. Whilst our simulations disagreed with the simulations in Lozovsky et al., 2009, in terms of which were the most frequently realised pathways out of the total number of runs, where a realised pathway does not necessarily have to reach the quadruple mutation, our model is able to capture the most likely order of fixation of mutations leading to a particular multiple mutant in general agreement with the simulations in Lozovsky et al., 2009.
 
-We also simulated the most likely evolutionary trajectories to the PvDHFR quadruple mutation N50I,S58R,S117N,I173L and compared our results to those predicted in Jiang et al., 2013. They considered the relative growth rates of the different alleles at different drug concentrations when simulating evolutionary trajectories, which incorporate both change in pyrimethamine binding affinity (Ki) and catalytic activity (kcat). Our top two most likely pathways to the quadruple correspond to their top two most likely pathways for the highest pyrimethamine concentration they consider, albeit in reverse order. At high pyrimethamine concentrations, it is likely mutations that significantly reduce binding affinity will be selectively favoured even if there is a slight reduction in catalytic activity. Indeed, Rodrigues et al., 2016, observed a clear trade-off between catalytic activity and binding affinity for increased drug resistance. This may be why our predictions agree well their predictions for high pyrimethamine concentration, but not for low-to-middle pyrimethamine concentrations, because even though ligand concentration is included in our equation for protein fitness (Equation 1), our model cannot account for adaptive conflict between Ki and kcat. This highlights a limitation of our method as it only accounts for changes in binding affinity and does not account for changes in protein function.
+We also simulated the most likely evolutionary trajectories to the PvDHFR quadruple mutation N50I,S58R,S117N,I173L and compared our results to those predicted in Jiang et al., 2013. They considered the relative growth rates of the different alleles at different drug concentrations when simulating evolutionary trajectories, which incorporate both change in pyrimethamine binding affinity ($K_{i}$) and catalytic activity ($k_{cat}$). Our top two most likely pathways to the quadruple correspond to their top two most likely pathways for the highest pyrimethamine concentration they consider, albeit in reverse order. At high pyrimethamine concentrations, it is likely mutations that significantly reduce binding affinity will be selectively favoured even if there is a slight reduction in catalytic activity. Indeed, Rodrigues et al., 2016, observed a clear trade-off between catalytic activity and binding affinity for increased drug resistance. This may be why our predictions agree well their predictions for high pyrimethamine concentration, but not for low-to-middle pyrimethamine concentrations, because even though ligand concentration is included in our equation for protein fitness (Equation 1), our model cannot account for adaptive conflict between $K_{i}$ and $k_{cat}$. This highlights a limitation of our method as it only accounts for changes in binding affinity and does not account for changes in protein function.
 
 Similarly, Ogbunugafor et al., 2016, demonstrated the importance of environmental variables on the evolution of drug resistance in PfDHFR by simulating evolution considering empirical growth measures and IC50 values across drug concentrations. They found that the rank order of allele fitness is a function of drug concentration and the preferred pathways to the fittest allele depend upon the environment. Therefore, whilst the model presented here captures the most likely pathways to resistance for high drug concentration, it is unable to predict important evolutionary dynamics that arise as a function of the environment. Therefore, the pathways predicted here should be considered the most likely pathways under sustained use of high concentrations of pyrimethamine.
 
@@ -201,38 +322,46 @@ We have presented a computational method for predicting the most likely evolutio
 
 ## Materials and methods
 
-## Homology modelling
+### Homology modelling
 
 Homology modelling was carried out in Modeller (Webb and Sali, 2016) to produce complete structures of the target proteins bound to their drug molecules. Several crystal structures of PfDHFR exist in the Protein Data Bank (PDB). The entry 3QGT provides the crystal structure of wild-type PfDHFR complexed with NADPH, dUMP, and pyrimethamine, however residues in the ranges 86–95 and 232–282 are missing from the structural model. Homology modelling was used to complete the structure using a second wild-type PfDHFR structure PDB entry 1J3I along with a wild-type PvDHFR structure PDB entry 2BLB.
 
 To produce a complete structural model of PvDHFR, PDB entry 2BLB was used as a template, which provides the X-ray crystal structure of wild-type P. vivax DHFR in complex with pyrimethamine. This structure was only missing a loop section between residues 87–105 and so Modeller was used to build this missing loop.
 
-## Flex ddG binding free energy predictions
+### Flex ddG binding free energy predictions
 
-The Rosetta Flex ddG protocol was used to estimate the change in binding free energy upon mutation, ΔΔG=ΔGmut−ΔGWT, for each step in all possible mutational trajectories for a set of stepwise resistance mutations (see Supplementary data Flex_ddG folder for examples of a Rosetta script, resfile, and command line. The protein-ligand structure files and ligand parameter files can be found in the folders named for the specific targets). To predict the change in binding free energy for a single or multiple mutation, we used the structure of the target protein with the drug molecule bound as input to Flex ddG and ran the protocol for 250 times per mutation to produce a distribution of predictions of the change in the free energy of binding. We then found the mean of the distribution to produce a single estimate of the change in the binding free energy for the mutation, denoted ΔΔGX∗ for mutation X.
+The Rosetta Flex ddG protocol was used to estimate the change in binding free energy upon mutation, $ΔΔG=ΔG_{mut}−ΔG_{WT}$, for each step in all possible mutational trajectories for a set of stepwise resistance mutations (see Supplementary data Flex_ddG folder for examples of a Rosetta script, resfile, and command line. The protein-ligand structure files and ligand parameter files can be found in the folders named for the specific targets). To predict the change in binding free energy for a single or multiple mutation, we used the structure of the target protein with the drug molecule bound as input to Flex ddG and ran the protocol for 250 times per mutation to produce a distribution of predictions of the change in the free energy of binding. We then found the mean of the distribution to produce a single estimate of the change in the binding free energy for the mutation, denoted $ΔΔG_{X}^{∗}$ for mutation X.
 
-To predict the stepwise evolutionary trajectories, we must consider the interactions between the mutations in the pathway. The interaction energy (or epistasis) in the binding free energy between two mutations X and Y can be written ϵX,Y=ΔΔGX,Y−(ΔΔGX+ΔΔGY). This quantifies by how much the change in binding free energy of the double mutant X,Y deviates from additivity of the single mutants, where each are calculated with respect to the wild-type. Therefore, the change in binding free energy when mutation Y occurs in the background of mutation X can be written ΔΔGX/Y=ΔΔGX,Y−ΔΔGX, where ΔΔGX/Y=ΔΔGY+ϵX,Y.
+To predict the stepwise evolutionary trajectories, we must consider the interactions between the mutations in the pathway. The interaction energy (or epistasis) in the binding free energy between two mutations X and Y can be written $ϵ_{X,Y}=ΔΔG_{X,Y}−(ΔΔG_{X}+ΔΔG_{Y})$. This quantifies by how much the change in binding free energy of the double mutant X,Y deviates from additivity of the single mutants, where each are calculated with respect to the wild-type. Therefore, the change in binding free energy when mutation Y occurs in the background of mutation X can be written $ΔΔG_{X/Y}=ΔΔG_{X,Y}−ΔΔG_{X}$, where $ΔΔG_{X/Y}=ΔΔG_{Y}+ϵ_{X,Y}$.
 
-For a third mutation, Z, occurring in the background of double mutation X,Y, the interaction energy between Z and X,Y is ϵXY,Z=ΔΔGX,Y,Z−(ΔΔGX,Y+ΔΔGZ). The quantity ϵXY,Z is not the same as the third-order epistasis between mutations X, Y, and Z, or the interaction energy ϵXYZ=ΔΔGX,Y,Z−(ΔΔGX+ΔΔGY+ΔΔGZ) as it does not account for the interaction between X and Y, rather it only quantifies the interaction between Z and the two mutations X and Y. Therefore, the change in binding free energy when mutation Z occurs in the background of double mutant X,Y can be calculated as ΔΔGX,Y/Z=ΔΔGX,Y,Z−ΔΔGX,Y, where ΔΔGX,Y/Z=ΔΔGZ+ϵXY,Z.
+For a third mutation, Z, occurring in the background of double mutation X,Y, the interaction energy between Z and X,Y is $ϵ_{XY,Z}=ΔΔG_{X,Y,Z}−(ΔΔG_{X,Y}+ΔΔG_{Z})$. The quantity $ϵ_{XY,Z}$ is not the same as the third-order epistasis between mutations X, Y, and Z, or the interaction energy $ϵ_{XYZ}=ΔΔG_{X,Y,Z}−(ΔΔG_{X}+ΔΔG_{Y}+ΔΔG_{Z})$ as it does not account for the interaction between X and Y, rather it only quantifies the interaction between Z and the two mutations X and Y. Therefore, the change in binding free energy when mutation Z occurs in the background of double mutant X,Y can be calculated as $ΔΔG_{X,Y/Z}=ΔΔG_{X,Y,Z}−ΔΔG_{X,Y}$, where $ΔΔG_{X,Y/Z}=ΔΔG_{Z}+ϵ_{XY,Z}$.
 
-To estimate the change in binding free energy when mutation Y occurs in the background of mutation X, ΔΔGX/Y for stepwise pathway X/Y, we subtracted the predictions ΔΔGXi for the first mutation X, from the predictions for the double mutation X,Y, ΔΔGX,Yi, to create a set of 250 ‘predictions’ for the change in binding free energy when Y occurs in the background of X, ΔΔGX/Yi, i.e., ΔΔGX/Yi=ΔΔGX,Yi−ΔΔGXi for i={1,...,150}. To estimate the change in binding free energy when mutation Z occurs in the background of mutations X and Y, we calculated ΔΔGX,Y/Zi=ΔΔGX,Y,Zi−ΔΔGX,Yi. We applied a similar method for the quadruple mutations, so that we had a set of ‘predictions’ for each step in the possible evolutionary trajectories.
+To estimate the change in binding free energy when mutation Y occurs in the background of mutation X, $ΔΔG_{X/Y}$ for stepwise pathway $X/Y$, we subtracted the predictions $ΔΔG_{X}^{i}$ for the first mutation $X$, from the predictions for the double mutation $X,Y$, $ΔΔG_{X,Y}^{i}$, to create a set of 250 ‘predictions’ for the change in binding free energy when $Y$ occurs in the background of $X$, $ΔΔG_{X/Y}^{i}$, i.e., $ΔΔG_{X/Y}^{i}=ΔΔG_{X,Y}^{i}−ΔΔG_{X}^{i}$ for $i={1,...,150}$. To estimate the change in binding free energy when mutation Z occurs in the background of mutations X and Y, we calculated $ΔΔG_{X,Y/Z}^{i}=ΔΔG_{X,Y,Z}^{i}−ΔΔG_{X,Y}^{i}$. We applied a similar method for the quadruple mutations, so that we had a set of ‘predictions’ for each step in the possible evolutionary trajectories.
 
-## Simulating evolutionary trajectories
+### Simulating evolutionary trajectories
 
-The Rosetta energy function is a mix of a combination of physic-based and statistics-based potentials and so raw predictions using this function don’t match up with physical energy units (e.g. kcal/mol or kJ/mol). However, the authors of Flex ddG applied a generalised additive model-like approach to the Rosetta energy function to reweight its terms and to fit experimentally known values (in kcal/mol). The resulting nonlinear reweighting model reduced the absolute error between the predictions and experimental values and so improved the agreement with experimentally determined interface ΔΔG values. They found that by doing this the Flex ddG predictions of binding free energy changes were in a similar range as experimental binding free energy changes and observed improved correlation and classification of mutations as stabilising or destabilising (Barlow et al., 2018). Therefore, we assume Flex ddG can provide approximate predictions of binding free energy changes comparable to experimental changes in kcal/mol and can therefore be used to parameterise a thermodynamic model.
+The Rosetta energy function is a mix of a combination of physic-based and statistics-based potentials and so raw predictions using this function don’t match up with physical energy units (e.g. kcal/mol or kJ/mol). However, the authors of Flex ddG applied a generalised additive model-like approach to the Rosetta energy function to reweight its terms and to fit experimentally known values (in kcal/mol). The resulting nonlinear reweighting model reduced the absolute error between the predictions and experimental values and so improved the agreement with experimentally determined interface $ΔΔG$ values. They found that by doing this the Flex ddG predictions of binding free energy changes were in a similar range as experimental binding free energy changes and observed improved correlation and classification of mutations as stabilising or destabilising (Barlow et al., 2018). Therefore, we assume Flex ddG can provide approximate predictions of binding free energy changes comparable to experimental changes in kcal/mol and can therefore be used to parameterise a thermodynamic model.
 
-To predict the most likely evolutionary trajectories to reach a quadruple mutant, we used a model based in thermodynamics and statistical mechanics where the fitness of a protein is determined by the probability it would not be bound to a ligand, Punbound. We consider a two-state system in which the protein can either be bound or unbound and do not explicitly account for if the protein is folded or unfolded in either the bound or unbound state. For ligand concentration [L] it can be shown that the probability a protein is unbound is(1)Punbound=1[L]Kd+1
+To predict the most likely evolutionary trajectories to reach a quadruple mutant, we used a model based in thermodynamics and statistical mechanics where the fitness of a protein is determined by the probability it would not be bound to a ligand, $P_{unbound}$. We consider a two-state system in which the protein can either be bound or unbound and do not explicitly account for if the protein is folded or unfolded in either the bound or unbound state. For ligand concentration $[L]$ it can be shown that the probability a protein is unbound is
 
-where Kd is the protein-ligand dissociation constant and can be calculated as c0eΔG/kT, where c0 is a reference ligand concentration (set here arbitrarily to 1 M), ΔG is the protein-ligand binding free energy, k is the Boltzmann constant, and T is the temperature in Kelvin. This equation is derived under the assumption that the concentration of unbound ligand Lfree≈L0, where L0 is the total concentration. This captures the ideal scenario in which the concentration of the antimalarial drug is very high. Whilst resistance is trade-off between many biophysical factors, our aim is to predict evolutionary trajectories without the need for experimental measurements and ligand binding prediction tools are readily available and easy to use, whereas it is more difficult to predict IC50 or growth rates. We therefore chose to use a simplified model of the system to approximate its behaviour, capture its general properties, and make the model more tractable.
+$$
+P_{unbound}=\frac{1}{\frac{[L]}{K_{d}}+1}
+$$
 
-Starting from the wild-type protein, with binding free energy ΔGWT and fitness PunboundWT, we extract one sample i from the 250 values of the predicted binding affinity changes for the single mutations to determine the binding free energy after mutation X, ΔGXi=ΔGWT+ΔΔGXi, and calculate the fitness of each single mutant protein PunboundX(i). We can calculate the probability the mutation will fix in the population using the Kimura fixation probability for a haploid organism(2)pfix=1−e−2s1−e2sNe
+where $K_{d}$ is the protein-ligand dissociation constant and can be calculated as $c_{0}e^{ΔG/kT}$, where $c_{0}$ is a reference ligand concentration (set here arbitrarily to 1 M), $ΔG$ is the protein-ligand binding free energy, $k$ is the Boltzmann constant, and $T$ is the temperature in Kelvin. This equation is derived under the assumption that the concentration of unbound ligand $L_{free}≈L_{0}$, where $L_{0}$ is the total concentration. This captures the ideal scenario in which the concentration of the antimalarial drug is very high. Whilst resistance is trade-off between many biophysical factors, our aim is to predict evolutionary trajectories without the need for experimental measurements and ligand binding prediction tools are readily available and easy to use, whereas it is more difficult to predict IC50 or growth rates. We therefore chose to use a simplified model of the system to approximate its behaviour, capture its general properties, and make the model more tractable.
 
-where Ne is the effective population size (set to 106 as previous models in Eccleston et al., 2021; Pollock et al., 2012) and s is the selection coefficient s=(PunboundX,i−PunboundWT)/PunboundWT. We also took into account the mutational bias of P. falciparum using the nucleotide mutation matrix calculated in Lozovsky et al., 2009. The probabilities of fixation for each mutation were normalised by the sum of the probabilities of fixation for all possible mutations at that step in the trajectory. A mutation is then chosen with a probability proportional to this normalised probability of fixation.
+Starting from the wild-type protein, with binding free energy $ΔG_{WT}$ and fitness $P_{unbound}^{WT}$, we extract one sample i from the 250 values of the predicted binding affinity changes for the single mutations to determine the binding free energy after mutation X, $ΔG_{X}^{i}=ΔG_{WT}+ΔΔG_{X}^{i}$, and calculate the fitness of each single mutant protein $P_{unbound}^{X(i)}$. We can calculate the probability the mutation will fix in the population using the Kimura fixation probability for a haploid organism
 
-Once a single mutation is chosen, the binding free energy is set to ΔGXi of the chosen mutation, and a value is sampled from the distribution of each of the possible next steps, X/Y in the trajectory, i.e., ΔΔGX/Yi. This continues until the end of the trajectory is reached. If the fixation probabilities of all mutations sampled at a step are effectively zero, no mutation is chosen at that step and the algorithm begins again by choosing a single mutation. Therefore, not all of the runs produce a complete trajectory and some will terminate before reaching the quadruple mutation. The algorithm was written in R.
+$$
+p_{fix}=\frac{1−e^{−2s}}{1−e^{2sN_{e}}}
+$$
 
-We calculate the probabilities, Pi, of each realised pathway (even those which don’t reach the quadruple mutation) by dividing the total number of times that specific pathway occurs by the number of runs. We calculate the probability of a particular step by dividing the number of times that step occurs in all realised pathways by the total number of runs.
+where $N_{e}$ is the effective population size (set to 106 as previous models in Eccleston et al., 2021; Pollock et al., 2012) and s is the selection coefficient $s=(P_{unbound}^{X,i}−P_{unbound}^{WT})/P_{unbound}^{WT}$. We also took into account the mutational bias of P. falciparum using the nucleotide mutation matrix calculated in Lozovsky et al., 2009. The probabilities of fixation for each mutation were normalised by the sum of the probabilities of fixation for all possible mutations at that step in the trajectory. A mutation is then chosen with a probability proportional to this normalised probability of fixation.
 
-## SNP data
+Once a single mutation is chosen, the binding free energy is set to $ΔG_{X}^{i}$ of the chosen mutation, and a value is sampled from the distribution of each of the possible next steps, X/Y in the trajectory, i.e., $ΔΔG_{X/Y}^{i}$. This continues until the end of the trajectory is reached. If the fixation probabilities of all mutations sampled at a step are effectively zero, no mutation is chosen at that step and the algorithm begins again by choosing a single mutation. Therefore, not all of the runs produce a complete trajectory and some will terminate before reaching the quadruple mutation. The algorithm was written in R.
+
+We calculate the probabilities, $P_{i}$, of each realised pathway (even those which don’t reach the quadruple mutation) by dividing the total number of times that specific pathway occurs by the number of runs. We calculate the probability of a particular step by dividing the number of times that step occurs in all realised pathways by the total number of runs.
+
+### SNP data
 
 P. falciparum and P. vivax data was obtained from publicly available raw sequence data from European Nucleotide Archive. These data include Illumina raw sequences from the MalariaGEN Community Project for P. falciparum (Ahouidi et al., 2021) and P. vivax (Adam et al., 2022). P. vivax data additionally includes the Public Health England Malaria Reference Laboratory isolates from returning travelers to UK from regions where malaria is endemic (study accession number ERP128476) (Benavente et al., 2021). Data was filtered and processed to SNP data with the methodology described in the recent publications Turkiewicz et al., 2020, and Benavente et al., 2021, respectively. In this study, we analysed genotype data for 6762 high-quality isolates from 32 countries across regions of Africa, South Eastern Asia, Oceania, and South America to identify the genetic diversity in the PfDHFR gene. A similar analysis was carried out on 847 P. vivax isolates spanning 25 countries across Eastern Africa, Southern Asia, Southeastern Asia, Eastern Asia, and South America to identify genetic diversity in PvDHFR gene. SNPs occurring in non-unique, low-quality, or low coverage regions were discarded, and those with a missense effect in the candidate genes were analysed. Functional annotation was done with SnpEff (version 5.0) (Cingolani et al., 2012) with the following options: -no-downstream -no-upstream.

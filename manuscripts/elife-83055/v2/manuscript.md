@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02c2kyt77 Laboratory of Immunoengineering, Department of Biomedical Engineering, Eindhoven University of Technology Eindhoven Netherlands
-2. https://ror.org/02c2kyt77 Institute for Complex Molecular Systems (ICMS), Eindhoven University of Technology Eindhoven Netherlands
-3. https://ror.org/02c2kyt77 Department of Biomedical Engineering, Eindhoven University of Technology Eindhoven Netherlands
-4. https://ror.org/01sbq1a82 Department of Electrical and Computer Engineering, University of Delaware Newark United States
+1. Laboratory of Immunoengineering, Department of Biomedical Engineering, Eindhoven University of Technology Eindhoven Netherlands ([ROR:02c2kyt77](https://ror.org/02c2kyt77))
+2. Institute for Complex Molecular Systems (ICMS), Eindhoven University of Technology Eindhoven Netherlands ([ROR:02c2kyt77](https://ror.org/02c2kyt77))
+3. Department of Biomedical Engineering, Eindhoven University of Technology Eindhoven Netherlands ([ROR:02c2kyt77](https://ror.org/02c2kyt77))
+4. Department of Electrical and Computer Engineering, University of Delaware Newark United States ([ROR:01sbq1a82](https://ror.org/01sbq1a82))
 
 † Corresponding author
 
@@ -33,11 +33,23 @@ In this study, we addressed the influence of various stochastic and deterministi
 
 ## Results
 
-## Reporter cell model to study early IFN-I responses
+### Reporter cell model to study early IFN-I responses
 
 Studying IFN-I dynamics in (human) primary immune cells allows for translation toward clinical applications, however, experimental approaches are often limited by relatively low cell counts, possible immune cell impurities, and additional layers of stochasticity introduced by the presence of heterogeneous subsets (Van Eyndhoven et al., 2021a). Besides, a crucial role for structural cells as key regulators of organ-specific immune responses is getting increasingly recognized and established (Krausgruber et al., 2020). Therefore, we utilized murine reporter cells to provide us with a robust model to study early IFN-I responsiveness (Rand et al., 2012). In fact, fibroblast models, both human primary and murine, have broadly proven their suitability for studying antiviral immunity (Drayman et al., 2019; Krausgruber et al., 2020).
 
 The early IFN-I phase is characterized by the detection of viral nucleic acids by pathogen recognition receptors, leading to the phosphorylation and translocation of IRFs (e.g., IRF3 and IRF7) from the cytoplasm to the nucleus, where they initiate the transcription of IFN-Is (Honda et al., 2006; Rehwinkel and Gack, 2020; Figure 1A). Subsequently, the later phase is characterized by the signaling induced by IFN-Is activating IFN-I receptors (IFNARs). This leads to the phosphorylation, complex formation, and translocation of signal transducer and activator of transcription 1 (STAT1), STAT2, and IRF9, termed IFN-stimulated gene factor 3 (ISGF3), to initiate the transcription of interferon-stimulated genes (ISGs). Accordingly, we used a NIH3T3:IRF7-CFP reporter cell line, expressing low, physiological background levels of IRF7-CFP fusion proteins, to monitor signaling dynamics during early phase IFN-I response dynamics (Figure 1B). For this cell model, IRF7 translocation correlates with IRF3 translocation, making IRF7 translocation as only readout sufficient to study first responders (Rand et al., 2012). The NIH3T3:STAT1-CFP/STAT2-YFP reporter cell line was utilized for validation of the production of IFN-Is upon translocation of IRF7.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic overview of the early (I) and later (II) phase IFN-I responses. The early phase is characterized by the detection of nucleic acids by nucleic acid receptors (NAS), followed by the phosphorylation (p) and translocation of interferon regulatory factors (IRFs) and subsequent induction of IFN-Is. Upon paracrine signaling, IFN-Is bind to IFN-I receptors (IFNARs), leading to the phosphorylation and translocation of interferon-stimulated gene factor 3 (ISGF3), consisting of STAT1, STAT2, and IRF9, respectively, inducing the production of interferon-simulated genes (ISGs). (B) Microscopy image of NIH3T3 cells stably expressing the fusion protein IRF7-CFP. Scale bar equals 100 μm. (C) Image processing and analysis steps in CellProfiler script for the detection of fluorescent signal in the nuclei and cytoplasms. (D) Example image with six identified objects. Scale bar equals 100 μm. (E) IRF7 translocation ratios of example objects plotted.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) Identification of primary, secondary, and tertiary objects.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Identification and indexing of objects. (B) Detection of nuclei. (C) Detection of cytoplasm. (D) Creation of masks aligning the nuclei and cytoplasm.
 
 To identify first responders, translocation IRF7-CFP fusion proteins were monitored in an unbiased fashion using a custom-made automated image analysis script developed in the CellProfiler software (Figure 1C; Figure 1—figure supplement 1A–C; Figure 1—figure supplement 2A–D; Stirling et al., 2021). Primary objects (nuclei) were detected and defined based on the Hoechst signal after nuclei staining. Next, the secondary objects (cells) were detected and defined based on the CFP signal originating from the IRF7-CFP fusion proteins molecules. Finally, the tertiary objects (cytoplasms) were defined by subtracting the primary objects from the secondary objects.
 
@@ -45,9 +57,17 @@ First responders could be defined by determining the IRF7 translocation ratio by
 
 Together, we established the detection of first responding cells in a high-throughput, unbiased manner, based on the translocation of fluorescent signal corresponding with IRF7 molecules from the cytoplasm to the nucleus.
 
-## Validation of first responders in a reporter cell model
+### Validation of first responders in a reporter cell model
 
 To elicit early IFN-I responses in our model, we used rhodamine-labeled Poly(I:C), instead of live or attenuated viruses, thereby avoiding any additional stochasticity introduced by viral extrinsic factors (e.g., genetic variability among the virus population, variability in viral replication, etc.). By using rhodamine-labeled Poly(I:C) over regular Poly(I:C), we were able to carefully track transfection efficiencies over time (Figure 2A, B). To limit noise introduced to the system, resulting from poor transfection timing and efficiencies, we optimized transfection to achieve fast and potent delivery of stimulus (Figure 2C; Figure 2—figure supplement 1A, B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig2-v2.jpg)
+
+**Figure 2.:** (A) Microscopy picture of NIH3T3: IRF7-CFP, stained with Hoechst nuclear stain, transfected with rhodamine-labeled Poly(I:C). Scale bar equals 100 μm. (B) Overview of transfected cells. Scale bar equals 100 μm. (C) Transfection efficiency quantification over time, based on rhodamine mean intensity detected in cells. The red dotted line represents the transfection threshold. The orange lines represent the mean values. (D) Experimental design of first responder validation in NIH3T3: IRF7-CFP cells. (E) Percentages of noise corrected responding cells. Cells were seeded on coverslips 16 hr prior to transfection with 2.5 μg/ml Poly(I:C). Over the first 9 hr, the percentages of translocated cells were determined (n = 3 experimental replicates). (F) Percentages of responding cells after 7 hr of Poly(I:C) transfection, compared to unstimulated cells (n = 10; p = 0.0003); data are represented as mean ± standard error of the mean (SEM). ****p ≤ 0.001 (Student’s t-test). (G) Microscopy image of NIH3T3: STAT1-CFP; STAT2-YFP, for additional first responder validation. Cells were seeded and transfected as described before. Translocation of STAT1 was assessed after 7-hr post transfection. Scale bar equals 100 μm. (H) Corresponding image of STAT2-YFP signal. Scale bar equals 100 μm. (I) Corresponding overview image of population of NIH3T3: STAT1-CFP; STAT2-YFP, with responding (translocated) cells indicated with red dots. Scale bar equals 1 mm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fibroblasts were transfected as described previously. After 3 hr, cells were washed, fixed, and analyzed using confocal microscopy. Scale bar equals 100 μm. (B) Fibroblasts were transfected, incubated, trypsinized, thoroughly washed, and measured using flow cytometry. Depicted are the total fibroblast events, for unstimulated (0 hr), and for the first 3 hr after transfection, and their corresponding fluorescent mean fluorescent intensity (MFI) values for PE-Rhodamine.
 
 Next, we set out to explore the response dynamics over the first 9-hr post transfection to determine the response peak (Figure 2D). Earlier studies indicated a peak of IRF7 translocation around 8 hr, and a peak of IFN-beta (IFNβ) production around 10-hr post activation (i.e., using Poly(I:C) and Newcastle Disease Virus) (Rand et al., 2012). Accordingly, upon transfection optimization, in our experiments the response peaked at 7-hr post transfection, with an average of 2.1% of responding cells (Figure 2E, F). This percentage is in line with what has been found across literature, species (i.e., human and mice) and cell types (i.e., fibroblasts, monocyte-derived DCs, plasmacytoid DCs), which ranges from 0.8 to 10% of early responders, emphasizing the elegant yet robust feature of only a fraction of first responding cells driving the population-wide IFN-I system (Bauer et al., 2016; Drayman et al., 2019; Patil et al., 2015; Shalek et al., 2014; Van Eyndhoven et al., 2021a; Wimmers et al., 2018). Besides, the background numbers of translocated cells possibly reflect the intrinsic feature of the IFN-I system to ensure basal IFN-I expression and IFNAR signaling to equip immune cells to rapidly mobilize effective antiviral immune responses, and homeostatic balance through tonic signaling (Gough et al., 2012; Ivashkiv and Donlin, 2014).
 
@@ -55,7 +75,7 @@ Accordingly, we wondered whether we could capture the orchestrating role of firs
 
 Taken together, we established a methodology for rapid and potent delivery of stimulus, thereby minimizing the potential noise introduced by extrinsic factors, to further reveal the multilayered stochasticity driving first responders. Additionally, we validated the presence of fractions of first responders, and validated their ability to induce population-wide IFN-I signaling.
 
-## Extrinsic and intrinsic stochasticity dictating first responders
+### Extrinsic and intrinsic stochasticity dictating first responders
 
 In contrast to the role of host-intrinsic factors, literature stated that the role of extrinsic factors (those that are introduced by the virus/stimulus itself) is rather small in determining the fraction of first responders, indicated by the lack of dose-dependent effects and the robustness of percentages of first responders across stimulus types (Shalek et al., 2014; Van Eyndhoven et al., 2021a; Wimmers et al., 2018). Of note, on the contrary, extrinsic factors can correlate with the percentage of second responders, though studies often do not distinguish between these two different cell fates, but focusing on population-wide responses instead (Rand et al., 2012; Zhao et al., 2012). To test the effect of a variety of extrinsic factors on the first responders, we first tested for a correlation between the responsiveness (i.e., IRF7 translocation ratio) and the actual amount of stimulus received by the cells, which was only very low, though significant (R2 = 0.0171, p < 0.0001) (Figure 3A). While the events displaying the highest IRF7 translocation ratios (above 2) only displayed very low levels of Poly(I:C) mean intensities, we conclude that first responders are only minorly, if at all, influenced by stimulus dosage.
 
@@ -69,9 +89,19 @@ Next, we wondered whether cell cycle state could be a potential driver, since st
 
 In short, the extrinsic and intrinsic factors that were assessed in this study turned out to be only minorly dictating the cellular decision to become a first responder. Of note, these results do not exclude other (extrinsic or intrinsic) factors (e.g., those involved in the phosphorylation and translocation of IRF7), those that were not included in this study, from playing important roles in dictating first responders.
 
-## Epigenetic regulation dictating first responders
+### Epigenetic regulation dictating first responders
 
-Our results thus far indicated that stochastic features are only minorly driving first responders, which made us further explore the influence of deterministic features instead. Remarkably, throughout the experiments we observed the occurrence of two neighboring cells showing translocation (Figure 4A, B; Figure 4—figure supplement 1). If being a first responder is stochastically regulated, the probability of one of the neighboring cells also being a responder is remarkably small, knowing the response rate is only 2.134%. In fact, assuming a cell has on average 4 neighboring cells, the probability of at least one of them being a responder equals the probability of 1-none responds= 1- 0.978664= 0.0826=8.26%. Therefore, the observation of responding neighboring cells further supported the hypothesis that first responders are dictated by deterministic, perhaps heritable cell fates. In other words, it seemed more likely that cells that were predispositioned to become a first responder passed this on to their daughter cells, that upon activation both show translocation. Also, after realizing that in the general experimental setup cells were seeded approximately 24 hr before imaging, allowing all cells to have divided once by the time of imaging, the appearance of responding neighboring cells could be further explained and quantified. Accordingly, we can assume that two responding neighboring cells are sister cells, although our current methodology lacks the ability to fully prove that. Interestingly, comparing the two sister cells, the background levels of IRF7 only occasionally differed drastically (Figure 4A), whereas for the majority of sister cells the translocation ratios were remarkably similar (Figure 4B). Accordingly, a similar phenomenon on a greater intra- than inter-lineage transcriptional similarity has been observed for CD8+ lymphocyte differentiation, which is also considered to be a deterministic process (Kimmerling et al., 2016).
+Our results thus far indicated that stochastic features are only minorly driving first responders, which made us further explore the influence of deterministic features instead. Remarkably, throughout the experiments we observed the occurrence of two neighboring cells showing translocation (Figure 4A, B; Figure 4—figure supplement 1). If being a first responder is stochastically regulated, the probability of one of the neighboring cells also being a responder is remarkably small, knowing the response rate is only 2.134%. In fact, assuming a cell has on average 4 neighboring cells, the probability of at least one of them being a responder equals the probability of $1-none responds=$ $1- 0.97866^{4}= 0.0826=8.26%$. Therefore, the observation of responding neighboring cells further supported the hypothesis that first responders are dictated by deterministic, perhaps heritable cell fates. In other words, it seemed more likely that cells that were predispositioned to become a first responder passed this on to their daughter cells, that upon activation both show translocation. Also, after realizing that in the general experimental setup cells were seeded approximately 24 hr before imaging, allowing all cells to have divided once by the time of imaging, the appearance of responding neighboring cells could be further explained and quantified. Accordingly, we can assume that two responding neighboring cells are sister cells, although our current methodology lacks the ability to fully prove that. Interestingly, comparing the two sister cells, the background levels of IRF7 only occasionally differed drastically (Figure 4A), whereas for the majority of sister cells the translocation ratios were remarkably similar (Figure 4B). Accordingly, a similar phenomenon on a greater intra- than inter-lineage transcriptional similarity has been observed for CD8+ lymphocyte differentiation, which is also considered to be a deterministic process (Kimmerling et al., 2016).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig4-v2.jpg)
+
+**Figure 4.:** (A) NIH3T3: IRF7-CFP cells were seeded on coverslips and transfected with 2.5 μg/ml Poly(I:C) for 7 hr. Microscopy image of two responding, neighboring cells, referred to as responding sister cells, displaying different background levels of IRF7. Scale bar equals 100 μm. (B) Microscopy image of two responding sister cells, displaying similar background levels of IRF7. Scale bar equals 100 μm. (C) Data on percentages of responding sister cells for unstimulated conditions (background translocation) versus stimulated conditions, transfected with Poly(I:C) after 7 hr; data are represented as mean ± standard error of the mean (SEM). **p ≤ 0.01, ***p ≤ 0.001, ****p ≤ 0.0001 (Mann–Whitney test). (D) Schematic of theoretical lineage fates and subsequent experimental outcomes (depicted as percentages of responders and of total population) upon cellular division. (E) Experimental design of epigenetics experiments in NIH3T3: IRF7-CFP cells. Cells were seeded 40 hr prior to the start of the experiment. 24-hr post transfection, cells were treated with DNMTi to induce hypomethylation. Next, cells were transfected with 2.5 μg/ml Poly(I:C) and assessed for nuclear translocation of IRF7 after 7 hr. (F) Percentages of responding cells for unstimulated, stimulated (Poly(I:C)), and DNMTi (1 μM) treated + stimulated conditions; data are represented as mean ± SEM. **p ≤ 0.01, ***p ≤ 0.001, ****p ≤ 0.0001 (Mann–Whitney test). (G) Data on paired percentages of responding cells (unstimulated versus stimulated) for different concentrations of DNMTi. (H) Scatter plot of a representative biological replicate comparing the IRF7 mean intensity of individual cells of untreated, unstimulated conditions, versus DNMTi treated, unstimulated conditions. **p ≤ 0.01, ***p ≤ 0.001, ****p ≤ 0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Several examples of neighboring cells showing translocation, transfected with 2.5 μg/ml Poly(I:C) for 7 hr, imaged and analyzed for IRF7 translocation. +20% brightness and +20% contrast were applied for visualization purposes. Scale bar, 100 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig4-figsupp2-v2.jpg)
 
 Next, we quantified the percentage of responding sister cells (neighboring cells) for both the unstimulated (observed background translocation levels) and stimulated conditions, which were not significantly different from one another (Figure 4C). The criteria for responders being assigned as responding sister cells included a maximum distance between the two cells of 300 μm, and a maximum of one nonresponding cells between the two responders. In theory, with an average of 22.85% of responding sister cells, it implies that two responding sister cells originated from one mother cell in 22.85% of the cases (Figure 4D). In 77.15% of the cases, only one of the two sister cells turned out to become a first responder. For this scenario, it is yet unclear whether the potential transfer of responder fate (assuming the mother cell was a responder) was only succeeded for only one daughter cell, or whether this single responding daughter appeared stochastically from a nonresponding lineage (assuming the mother cell was a nonresponder). Both have been described in the literature, referred to as transiently heritable cell fates (Shaffer et al., 2020).
 
@@ -79,17 +109,37 @@ Continuing the hypotheses of transiently heritable cell fates stated in literatu
 
 Taken together, we show that, at least partly, the cellular decision-making to become a first responder is epigenetically regulated via both methylation and histone acetylation. Although the self-activation by retroviruses upon hypomethylation might be considered as an artifact, the results still indicate that upon hypomethylation and activation (i.e., either by only retroviruses or in combination with Poly(I:C)), the fraction of first responders increases.
 
-## Fluctuation analysis on first responders
+### Fluctuation analysis on first responders
 
 Another elegant approach to assess whether epigenetic mechanisms are involved in driving first responders involves the classical Luria–Delbrück fluctuation test (Luria and Delbrück, 1943). It was originally used to demonstrate the occurrence of genetic mutations in bacteria in the absence of selection, rather than being a response to selection, in which variability between different clonal populations is assessed. Similarly, a stochastic feature would be equally present among different clones, whereas a (transiently) heritable feature can widely fluctuate between different clones, depending on the cell fate of the mother cells.
 
 Assuming first responders are purely stochastically regulated, probability calculations can predict from which generation number the probability of at least one first responder present is close to one, knowing that on average only 2.134% first responders are present in a population (see Materials and methods). From generation 6 onwards, the probability of at least one responder being present becomes considerably high. Subsequently, each clone, consisting of ~64 cells, would have 1.37 responding cells on average. To generate the clones of generation 1 through 6, and up, we used low cell seeding (for generation 1–9) and conventional limited dilution approaches (for generations 13 and 16) (Figure 5A; Figure 5—figure supplement 1A, B). For example, clones of generation 6 were seeded 6 days prior to transfection and imaging, allowing the single cells to have divided six times (generation 6). Of note, in this experimental setting, the generation number is only an indication of the number of cellular divisions that the clone has undertaken, rather than a determinantal factor, as cells do not remain synchronized over multiple generations. Performing a limited dilution for the early clones was practically too challenging. Instead, upon low cell seeding, there is still enough empty space surrounding the clusters of cells to determine which cells originated from a single cell.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig5-v2.jpg)
+
+**Figure 5.:** (A) Experimental design of fluctuation experiments in NIH3T3: IRF7-CFP cells. Cells were either seeded following limited dilution or at only ~50 cells per 24-well, depending on the generation number. Next, cells were transfected with 2.5 μg/ml Poly(I:C) and assessed for nuclear translocation of IRF7 after 7 hr. (B) Fluctuation plots on percentages of responding cell of clones of different generations. Generation ∞ equal regular cultures. (C) Microscopy images of clone of generations 1 (gen1), 2 (gen2), and 6 (gen6) displaying varying percentages of translocated cells, some of which are indicated with white arrows. (D) Scatter plot on data obtained from clones of generation 1 through 9.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Probability curves for the presence of at least one first responder per clone over the first 10 generations, assuming stochasticity. Solid line represents the probability based on the mean percentage of first responders in regular cultures; dashed lines represent the mean plus and minus the standard deviation (SD). (B) Curves on predicted numbers of first responders present over the first 10 generations, based on the mean percentages obtained from regular cultures (solid line), and the mean ± SD (dashed line).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Percentages of responding cells of clones of different generations. Data are represented as mean ± standard deviation (SD); Welch’s t-test, two-tailed; ***p < 0.001; *p = 0.0446.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A–D) Several examples of clones of generation 6, transfected with 2.5 μg/ml Poly(I:C) for 7 hr, imaged and analyzed for IRF7 translocation, displaying numerous translocated cells, some of which are indicated with white arrows. +20% brightness and +20% contrast were applied for visualization purposes. Scale bar equals 500 μm.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A–D) Several examples of clones of generation 9, transfected with 2.5 μg/ml Poly(I:C) for 7 hr, imaged and analyzed for IRF7 translocation. +20% brightness and +20% contrast were applied for visualization purposes. Scale bar equals 500 μm.
+
 Next, clones were stimulated and checked for first responders as described before. Interestingly, the early generation clones showed remarkably high fractions of responders. In fact, the majority (14/18) of generation 1 clones (consisting of two cells) showed 100% responsiveness (Figure 5B). With increasing generation numbers, corresponding with increasing cell numbers, the percentage of responders dropped drastically (Figure 5C, D; Figure 5—figure supplement 2; Figure 5—figure supplement 3A–D; Figure 5—figure supplement 4A–D). From generation 13 onwards, the percentage of responders did no longer differ significantly compared to the regular clones (generation ꝏ). These results are similar to the ones described earlier on subpopulations of cancer cells purified for a given phenotypic state to return toward equilibrium proportions over time (Gupta et al., 2011). In our experiments, up till clones of generation 6, the fluctuation across clones was rather large, with some clones showing no single translocation event. The rather long timescales of switching from responders to nonresponders, and the other way around, imply epigenetic mechanisms at play, and indeed, prior work has indicated an important role for epigenetics dictating IFN-I response dynamics (reviewed in Barrat et al., 2019).
 
 Altogether, the results from the fluctuation assay indicate a yet unknown, deterministic phenomenon which dictates responsiveness, which seems to overrule stochasticity.
 
-## Modeling first responder cellular decision-making across generations
+### Modeling first responder cellular decision-making across generations
 
 For a proper interpretation of the results obtained from the fluctuation assay, we modeled cellular decision-making during early IFN-I responses, where individual cells are either displaying IRF7 translocation, making them first responders, or not. Assuming a purely stochastic process, upon cloning, the total mean across clones should be equal to the mean obtained from regular cultures, which would be 2.134% (Figure 6A). Accordingly, the coefficient of variation (CV) is determined by the biological and technological variation, therefore considered relatively low. The rate in which responders appear in the population (kon) is also relatively low, corresponding with the probability of a cell to become a responder (p = 0.02134). Assuming a strictly heritable fate, meaning that all responding cells will divide into responding daughter cells, the total mean across clones will not change (Figure 6B). However, the CV will be much higher than the biological and technological noise, determined by the occurrence of responding lineages. The kon is not defined, as individual cells will no longer change fate across the generations.
 
@@ -103,13 +153,21 @@ Surprisingly, the data obtained from clones of generation 1 through 9 resulted i
 
 Together, we validated transiently heritable cellular decision-making driving responders using mathematical modeling.
 
-## Quorum sensing drives cellular decision-making during early IFN-I responses
+### Quorum sensing drives cellular decision-making during early IFN-I responses
 
 One possible explanation for the observed higher responsiveness in early generation clones, like described before, lies in the possible effect of cell density dictating responsiveness, which closely relates to the phenomenon called quorum sensing. Intuitively, the immune strategy in which the fraction of responders, in this case IFN-I producers, is based on the amount of available cells seems crucial to establish proper antiviral immunity at any circumstance (Van Eyndhoven and Tel, 2022). Accordingly, a small population of cells needs to contribute to greater extend, involving relatively more responders, than a large population of cells, to ensure the overall IFN-I production is similar. In our experiments, ranging from clones of generation 1 toward generation 13, the cell density (absolute cell count per area/volume) increases exponentially. Therefore, we hypothesized that at a lower cell density, corresponding with low generation numbers, cells tend to be programmed to become more responsive, meaning that percentages of responding cells become higher.
 
 The phenomenon of different cellular behaviors upon differences in cell density is in agreement with the concept of (immune) quorum sensing, which describes the ability of (immune) cells to perceive the density of their own population and adjust their behavior accordingly (Antonioli et al., 2019; Polonsky et al., 2018). Subsequent alterations in responsiveness are thought to be coordinated via epigenetic regulations. As we previously indicated a role for epigenetics driving first responders, we wondered whether we could explore the effects of quorum sensing in cellular decision-making during early IFN-I responses. Therefore, we hypothesized that cellular decision-making is defined by epigenetic profiling, which allows switching over time between a responding and nonresponding state, even before stimulation, and is subject to the phenomenon of quorum sensing.
 
-To test this final part of our hypothesis, we generated clones of generation 6 in low and high densities on coverslips as described before (Figure 7A). We hypothesized that clones at low seeding densities display more fluctuations in the percentage of responders compared to high seeding densities, based on the results obtained in the fluctuation assay. Low seeding densities were obtained by seeding 250 cells per 24-well and verified upon visual inspection, meaning that these clusters of cells did not exceed the expected cell count of single clones (26/7 =64/128 cells, depending on their grow speed), and were clearly separated from other clusters of cells, with over a 1400-μm distance between the center points of the clones (Figure 7B, C; Figure 7—figure supplement 1A–C). High seeding densities were obtained by seeding 1000 cells per 24-well, which resulted in merged groups of clones, thereby evidently exceeding the expected cell counts per cluster (Figure 7D, E). In practice, clones seeded at high sending densities occasionally led to single clones, as observed upon low cell seeding. For these instances, these clusters were considered as a single clones.
+To test this final part of our hypothesis, we generated clones of generation 6 in low and high densities on coverslips as described before (Figure 7A). We hypothesized that clones at low seeding densities display more fluctuations in the percentage of responders compared to high seeding densities, based on the results obtained in the fluctuation assay. Low seeding densities were obtained by seeding 250 cells per 24-well and verified upon visual inspection, meaning that these clusters of cells did not exceed the expected cell count of single clones ($2^{6/7} =64/128 cells$, depending on their grow speed), and were clearly separated from other clusters of cells, with over a 1400-μm distance between the center points of the clones (Figure 7B, C; Figure 7—figure supplement 1A–C). High seeding densities were obtained by seeding 1000 cells per 24-well, which resulted in merged groups of clones, thereby evidently exceeding the expected cell counts per cluster (Figure 7D, E). In practice, clones seeded at high sending densities occasionally led to single clones, as observed upon low cell seeding. For these instances, these clusters were considered as a single clones.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig7-v2.jpg)
+
+**Figure 7.:** (A) Experimental design of quorum sensing experiments with NIH3T3: IRF7-CFP cells. Cells were either seeded at low numbers or high numbers (250 versus 1000 cells per 24-well) 6 days prior to the start of the experiment. Next, cells were transfected with 2.5 μg/ml Poly(I:C) and assessed for nuclear translocation of IRF7 after 7 hr. (B) Schematic representation of single clones of generation 6 on coverslips, seeded at low cell densities. (C) Microscopy image of DAPI (4′,6-diamidino-2-phenylindole) channel, visualizing the nuclei of cells, displaying clear clustering of single clones of generation 6. (D) Schematic representation of grouped clones of generation 6 on coverslips, seeded at high cell densities. (E) Microscopy image of DAPI channel, visualizing the nuclei of cells, displaying grouped clusters of cells, consisting of numerous clones of generation 6. (F) Scatter plots on percentages of responding cell of clones of generation 6 seeded in low densities (n = 22 clones), and grouped clones seeded at high densities (n = 7). (G) Schematic on cell fate switching, influenced by cell density.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/83055/elife-83055-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Visualization of two clusters of cells that were considered two separate clones, with over 140 μm distance between the centers of the clusters, depicted by the star symbol. (B, C) Several examples of clones of generation 6, in dashed boxes, with in the same field a grouped clone, in solid box. +20% brightness and +20% contrast were applied for visualization purposes. Scale bar equals 1000 μm.
 
 The results confirmed that single clones of generation 6 displayed high fluctuation, which closely matched with the data obtained earlier (average of 10.67 compared to 10.81; CV of 0.87 compared to 1.04, respectively) (Figure 7F). Interestingly, the averages of merged clones of generation 6 displayed percentages of responding cells which closely matched with the numbers obtained from regular cultures (1.96% compared to 2.13, respectively).
 
@@ -131,32 +189,132 @@ While transcriptional regulators have been the main focus of studying IFN-I dyna
 
 ## Materials and methods
 
-## Cell culture and activation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH3T3: IRF7-CFP</td>
+      <td>Obtained from Ulfert Rand and Mario Köster, Helmholtz Centre for Infection Research, Germany</td>
+      <td></td>
+      <td>Rand et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH3T3: STAT1-CFP, STAT2-YFP</td>
+      <td>Obtained from Ulfert Rand and Mario Köster, Helmholtz Centre for Infection Research, Germany</td>
+      <td></td>
+      <td>Rand et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine2000</td>
+      <td>Invitrogen</td>
+      <td>cat #12566014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly(I:C) (LMW) Rhodamine</td>
+      <td>InvivoGen</td>
+      <td>cat#tlrl-piwr</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Aza-2′-deoxycytidine</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat#A3656</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trichostatin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat#T8552</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler</td>
+      <td>https://www.cellprofiler.org</td>
+      <td></td>
+      <td>Stirling et al., 2021</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and activation
 
 Reporter murine fibroblastoid NIH 3T3 cells with stable expression of IRF7-CFP, STAT1-CFP, and STAT2-YFP fusion proteins were provided by Ulfert Rand and Mario Köster (Helmholtz Centre for Infection Research, Germany). Both cell lines have been authenticated and checked for mycoplasma contamination. Cells were cultured under standard tissue culture conditions in Dulbecco's Modified Eagle Medium (DMEM; Sigma) supplemented with 10% fetal calf serum, glutamine, penicillin, streptomycin, and selection antibiotic G418 or puromycin. pIRF7-CFP, pSTAT1-CFP, and STAT2-YFP were created by introducing cDNA (C57BL/6) in a pMBC-1 vector containing linker and sequences for CFP and YFP via EcoRI restriction sites (Dirks et al., 1994). Transfections of plasmid DNA were performed with Metafectene (Biontex) according to the manufacturer’s instructions. G418- or puromycin-selected representative clonal cells showing stable expression of the reporter construct and strong signal to background ratio of the fluorescent marker were used. For experiments, cells were seeded on glass coverslips in 24-well plates, and activated using Lipofectamine2000 (Invitrogen) transfection reagent according to the manufacturer’s instructions. At all times, fluorescently labeled stimuli (rhodamine-labeled LMW Poly(I:C), InvivoGen) were used to assess transfection timing and efficiencies throughout the experiments. For additional transfection optimization, cells were analyzed using confocal microscopy (Nikon Eclipse Ti2), and measured with a flow cytometer (FACS Canto).
 
-## Image and data analysis
+### Image and data analysis
 
-Coverslips with cells were thoroughly washed (3×) with medium containing 10% fetal calf serum to loosen sticky liposomes from the glass and from the cell’s surfaces, to avoid false positivity upon assessing transfection efficiency. Next coverslips were fixed with 3% formaldehyde for 15 min at room temperature, washed, and stained with Hoechst 33343 to visualize nuclei. Next, coverslips were mounted on microscopy slides using Vectashield mounting media (Vector Laboratories), and imaged with a Nikon Eclipse Ti2 fluorescent microscope (Nikon). Image acquisition was performed by making multi-tile images at a magnification of ×20. Images were analyzed with ImageJ (National Institutes of Health) and a customized CellProfiler script (https://www.cellprofiler.org). Transfection efficiencies were determined based on the mean intensities provided by the CellProfiler script. The transfection threshold was based on the maximum intensity obtained from the untransfected cells. IRF7 translocation ratios were calculated using the following equation:IRF7 translocation ratio=NucleusCFP median intensityCytoplasmCFP median intensity
+Coverslips with cells were thoroughly washed (3×) with medium containing 10% fetal calf serum to loosen sticky liposomes from the glass and from the cell’s surfaces, to avoid false positivity upon assessing transfection efficiency. Next coverslips were fixed with 3% formaldehyde for 15 min at room temperature, washed, and stained with Hoechst 33343 to visualize nuclei. Next, coverslips were mounted on microscopy slides using Vectashield mounting media (Vector Laboratories), and imaged with a Nikon Eclipse Ti2 fluorescent microscope (Nikon). Image acquisition was performed by making multi-tile images at a magnification of ×20. Images were analyzed with ImageJ (National Institutes of Health) and a customized CellProfiler script (https://www.cellprofiler.org). Transfection efficiencies were determined based on the mean intensities provided by the CellProfiler script. The transfection threshold was based on the maximum intensity obtained from the untransfected cells. IRF7 translocation ratios were calculated using the following equation:
+
+$$
+IRF7 translocation ratio=\frac{Nucleus_{CFP median intensity}}{Cytoplasm_{CFP median intensity}}
+$$
 
 Images from which the percentage of translocated cells were drawn were at all times manually and visually checked, considering the relatively low percentages. Besides, the translocation ratio threshold for distinguishing responders from nonresponders was optimized per experiment, again based on visual validation. Data visualization and statistical analysis were performed using the GraphPad Prism software (GraphPad).
 
-## Fluctuation assay
+### Fluctuation assay
 
-Single cells were seeded into 96-well plates using limited dilution in regular growth medium supplemented with 20% fetal calf serum and 20% conditioned medium obtained from regular cultures. Upon cell stretching, all wells were visually inspected to detect multiple seeded cells per well, and excluded from the experiments. For sixth and ninth generation clones, cells were seeded on glass coverslips in a concentration of 10 or 50 cells per well, respectively, and tracked over time to assure single-cell clones. Probability calculations were performed using the following equations:P1≤first responders=1-Pno respondersP(no responders)=fractionnonresponders2generation
+Single cells were seeded into 96-well plates using limited dilution in regular growth medium supplemented with 20% fetal calf serum and 20% conditioned medium obtained from regular cultures. Upon cell stretching, all wells were visually inspected to detect multiple seeded cells per well, and excluded from the experiments. For sixth and ninth generation clones, cells were seeded on glass coverslips in a concentration of 10 or 50 cells per well, respectively, and tracked over time to assure single-cell clones. Probability calculations were performed using the following equations:
 
-## Mathematical modeling
+$$
+P1\leqfirst responders=1-Pno responders
+$$
 
-We consider a simple model where single cells can be in either one of two states: responsive and unresponsive. Cells in the unresponsive state become responsive with rate kon, and responsive cells become unresponsive with rate  koff. At steady-state, only f=2% of cells are in the responsive state implyingkonkon+koff=f ⟹kon=kofff1−f
 
-Our data show that at the start of the fluctuation test experiment, single cells are mostly in the responsive state, and as the colony proliferates, the fraction of responsive cells converge back to f over time. The average fraction of responsive cells x(t) over time is given by the ODE                                                                dxdt=kon1-xt-koffx(t)
 
-Assuming an initial condition x0=100%, we fit the solution of this equationxt=f+1-fe-kon+kofft=f+1-fe-kofft1-f
+$$
+P(no responders)=fraction_{nonresponders}^{2^{generation}}
+$$
 
-to the mean fraction of responsive cells over time to obtain koff≈0.29 days−1 that corresponds to the average time 1/koff in the responsive state to be ≈3.5 days with a 95% confidence interval of (2.8, 4.1) days (Figure 6D). Since f≪1, for the initial time pointsxt≈e-kofft⟹Log xt≈-kofft
+### Mathematical modeling
 
-and we performed a linear regression between Log x(t) and t using the data from days 0 to 5 to get the 95% confidence interval for the slope koff.
+We consider a simple model where single cells can be in either one of two states: responsive and unresponsive. Cells in the unresponsive state become responsive with rate $k_{on},$ and responsive cells become unresponsive with rate $ k_{off}$. At steady-state, only $f=2%$ of cells are in the responsive state implying
 
-Having estimated the kinetics of switching, we next considered a stochastic formulation of the model, where the time individual cells stay in the responsive (unresponsive) state is an exponentially distributed random variable with mean 1/koff (1/kon). We refer the reader to Saint-Antoine et al. for mathematical details on the stochastic model (Saint-Antoine et al., 2022). The colony-to-colony fluctuations CVmodel in the fraction of responsive cells (as quantified by the CV) was obtained by solving equations 12, 13, and 23 in Saint-Antoine et al. assuming that the initial single cell was in the responsive state. To account for the technical noise, we further modify this equation toCV2=CVmodel2+CVtech2
+$$
+\frac{k_{on}}{k_{on}+k_{off}}=f ⟹k_{on}=k_{off}\frac{f}{1−f }
+$$
 
-where CVtech≈0.32 is the fluctuations in the fraction responsive cells between independent bulk samples. The model-predicted CV matches the measured inter-colony fluctuations over time (Figure 6E). The stochastic tuning off of cells from responsive to unresponsive states results in the CV first increasing with time to reach a maximum at day 5, and then it monotonically decreases to the technical noise levels.
+Our data show that at the start of the fluctuation test experiment, single cells are mostly in the responsive state, and as the colony proliferates, the fraction of responsive cells converge back to $f$ over time. The average fraction of responsive cells $x(t)$ over time is given by the ODE
+
+$$
+                                                                \frac{dx}{dt}=k_{on}1-xt-k_{off}x(t)
+$$
+
+Assuming an initial condition $x0=100%,$ we fit the solution of this equation
+
+$$
+xt=f+1-fe^{-k_{on}+k_{off}t}=f+1-fe^{-\frac{k_{off}t}{1-f}}
+$$
+
+to the mean fraction of responsive cells over time to obtain $k_{off}≈0.29 days^{−1}$ that corresponds to the average time $1/k_{off}$ in the responsive state to be $≈3.5 days$ with a 95% confidence interval of $(2.8, 4.1) days$ (Figure 6D). Since $f≪1$, for the initial time points
+
+$$
+xt≈e^{-k_{off}t}⟹Log xt≈-k_{off}t
+$$
+
+and we performed a linear regression between $Log x(t)$ and $t$ using the data from days 0 to 5 to get the 95% confidence interval for the slope $k_{off}.$
+
+Having estimated the kinetics of switching, we next considered a stochastic formulation of the model, where the time individual cells stay in the responsive (unresponsive) state is an exponentially distributed random variable with mean $1/k_{off }(1/k_{on})$. We refer the reader to Saint-Antoine et al. for mathematical details on the stochastic model (Saint-Antoine et al., 2022). The colony-to-colony fluctuations $CV_{model}$ in the fraction of responsive cells (as quantified by the CV) was obtained by solving equations 12, 13, and 23 in Saint-Antoine et al. assuming that the initial single cell was in the responsive state. To account for the technical noise, we further modify this equation to
+
+$$
+CV^{2}=CV_{model}^{2}+CV_{tech}^{2}
+$$
+
+where $CV_{tech}≈0.32$ is the fluctuations in the fraction responsive cells between independent bulk samples. The model-predicted $CV$ matches the measured inter-colony fluctuations over time (Figure 6E). The stochastic tuning off of cells from responsive to unresponsive states results in the $CV$ first increasing with time to reach a maximum at day 5, and then it monotonically decreases to the technical noise levels.

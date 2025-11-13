@@ -13,14 +13,14 @@
 
 ### Affiliations
 
-1. https://ror.org/01e6qks80 Department of Medical Neuroscience, Brain Repair Centre, Faculty of Medicine, Dalhousie University Halifax Canada
-2. https://ror.org/04bdffz58 Department of Neurobiology and Anatomy, College of Medicine, Drexel University Philadelphia United States
+1. Department of Medical Neuroscience, Brain Repair Centre, Faculty of Medicine, Dalhousie University Halifax Canada ([ROR:01e6qks80](https://ror.org/01e6qks80))
+2. Department of Neurobiology and Anatomy, College of Medicine, Drexel University Philadelphia United States ([ROR:04bdffz58](https://ror.org/04bdffz58))
 
 † Corresponding author
 
 ## Abstract
 
-Speed-dependent interlimb coordination allows animals to maintain stable locomotion under different circumstances. The V3 neurons are known to be involved in interlimb coordination. We previously modeled the locomotor spinal circuitry controlling interlimb coordination (Danner et al., 2017). This model included the local V3 neurons that mediate mutual excitation between left and right rhythm generators (RGs). Here, our focus was on V3 neurons involved in ascending long propriospinal interactions (aLPNs). Using retrograde tracing, we revealed a subpopulation of lumbar V3 aLPNs with contralateral cervical projections. V3 OFF mice, in which all V3 neurons were silenced, had a significantly reduced maximal locomotor speed, were unable to move using stable trot, gallop, or bound, and predominantly used a lateral-sequence walk. To reproduce this data and understand the functional roles of V3 aLPNs, we extended our previous model by incorporating diagonal V3 aLPNs mediating inputs from each lumbar RG to the contralateral cervical RG. The extended model reproduces our experimental results and suggests that locally projecting V3 neurons, mediating left–right interactions within lumbar and cervical cords, promote left–right synchronization necessary for gallop and bound, whereas the V3 aLPNs promote synchronization between diagonal fore and hind RGs necessary for trot. The model proposes the organization of spinal circuits available for future experimental testing.
+Speed-dependent interlimb coordination allows animals to maintain stable locomotion under different circumstances. The V3 neurons are known to be involved in interlimb coordination. We previously modeled the locomotor spinal circuitry controlling interlimb coordination (Danner et al., 2017). This model included the local V3 neurons that mediate mutual excitation between left and right rhythm generators (RGs). Here, our focus was on V3 neurons involved in ascending long propriospinal interactions (aLPNs). Using retrograde tracing, we revealed a subpopulation of lumbar V3 aLPNs with contralateral cervical projections. V3OFF mice, in which all V3 neurons were silenced, had a significantly reduced maximal locomotor speed, were unable to move using stable trot, gallop, or bound, and predominantly used a lateral-sequence walk. To reproduce this data and understand the functional roles of V3 aLPNs, we extended our previous model by incorporating diagonal V3 aLPNs mediating inputs from each lumbar RG to the contralateral cervical RG. The extended model reproduces our experimental results and suggests that locally projecting V3 neurons, mediating left–right interactions within lumbar and cervical cords, promote left–right synchronization necessary for gallop and bound, whereas the V3 aLPNs promote synchronization between diagonal fore and hind RGs necessary for trot. The model proposes the organization of spinal circuits available for future experimental testing.
 
 ## Introduction
 
@@ -34,47 +34,75 @@ Here, we identified a subset of V3 neurons with cell bodies in the lumbar spinal
 
 ## Results
 
-## Experimental studies
+### Experimental studies
 
-## Lumbar propriospinal V3 interneurons provide ascending excitatory drives to the contralateral cervical locomotor circuits
+#### Lumbar propriospinal V3 interneurons provide ascending excitatory drives to the contralateral cervical locomotor circuits
 
 Several subpopulations of V3 neurons have been found and characterized in the mouse spinal cord (Borowska et al., 2013; Chopek et al., 2018; Deska-Gauthier et al., 2020). Until now, however, it has not been shown whether any V3 neurons can serve as LPNs to connect the spinal circuits in lumbar and cervical regions for fore–hindlimb coordination. Previous studies indicated that there might be only a limited number of excitatory dLPNs projecting from cervical to lumbar regions (Ruder et al., 2016; Flynn et al., 2017). Therefore, we primarily focused on studying the aLPNs with projections from lumbar to cervical regions for potential overlap with the V3 neuronal population. To do so, we injected a retrograde tracer, cholera-toxin B (CTB), into the cervical C5 to C8 region of Sim1Cre/+; Rosa26floxstopTdTom (Sim1TdTom) mice (Figure 1A1). After 7 days, we harvested the lumbar spinal cords, and then identified and mapped the tdTomato (tdTom) fluorescent protein and CTB double-positive neurons in lumbar cross sections (Figure 1A2). CTB and tdTom double-positive neurons were indicative of V3 neurons with ascending projections to the cervical region (V3 aLPNs). We found that V3 aLPNs were almost exclusively located contralaterally to the cervical injection sites. Overall, 30% of V3 neurons (n = 3 mice) in L1–L3 were stained by CTB but only 12% of V3 neurons in L4 to L6 were CTB positive. Even though clusters of V3 neurons were distributed across ventral to deep dorsal horn (Zhang et al., 2008; Borowska et al., 2013; Borowska et al., 2015; Blacklaws et al., 2015), the highest density of V3 aLPNs was found in deep dorsal horn, lamina IV to VI, in rostral lumbar segments (Figure 1A3). A relatively small number of these neurons were located in the intermediate and ventral regions, lamina VII and VIII, in caudal lumbar segments (Figure 1A4).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig1-v1.jpg)
+
+**Figure 1.:** (A1) Illustration of the experimental strategy to identify lumbar V3 ascending long propriospinal interactions (aLPNs). Cholera-toxin B (CTB; green) injected into the cervical region is picked up at axon terminals and retrogradely transported to cell bodies located in the lumbar region. (A2) Representative image of cross section of the lumbar spinal cord of Sim1tdTom mouse (far left panel). The ‘ipsilateral’ and ‘contralateral’ sides are relative to the injection side in the cervical region. Immunohistochemical staining with different antibodies to illustrate the neurons expressing TdTom (magenta) and CTB (green) (right panels). (A3, A4) Color-coded heat maps of the distribution pattern of V3 aLPNs in the rostral (A3) and caudal (A4) lumbar segments. Scale bars of cell numbers for heat maps are shown below. (B1) Schematic of the experimental strategy to identify lumbar V3 aLPN synapses onto the cervical locomotor region, AAV2/9-hSyn-eGFP is injected into the lumbar region. (B2) Left: a representative image of a cervical hemisection injected with AAV2/9-hSyn-eGFP in the lumbar region. The dashed lines indicate approximate Rexed’s laminae, and white squares indicate the approximate positions of the enlarged images. Middle (lamina VII) and right (lamina IX): representative images of the Vglut2-positive terminals (blue) of lumbar V3 aLPNs (magenta) expressing GFP (green) in cervical locomotor regions. Three random regions (~480 µm × 370 µm) in lamina IX and six regions (~370 µm × 370 µm) in lamina VII region from two cords were sampled. The Vglut2/GFP double-positive puncta (mean of 481.7 ± 47.4 in lamina IX; 143.2 ± 33.4 in lamina VII) and Vglut2/GFP/tdTom triple-positive puncta (12.7 ± 1.7 in lamina IX; 39.5 ± 9.3 in lamina VII) were quantified. (C1) Illustration of an isolated neonatal spinal cord placed in a split bath recording chamber. The suction electrodes for the electroneurogram (ENG) recordings were placed at ventral roots in the lumbar and cervical segments. The chamber is partitioned into two sides with a Vaseline wall (represented by yellow cloud in the figure). The photoactivation (blue light), indicated by the blue transparent circle, is on the ventral side of rostral lumbar, L1–L3, segments. (C2) Averaged traces of rectified ENG recordings at ventral roots of both sides of cervical (C5, C8) and L5 lumbar spinal segments of a P2 Sim1Ai32 mouse, before (Ringer, black), during (kynurenic acid [KA], yellow), and after washout (Washout, gray) of KA application. The time period of photostimulation is indicated by the blue shadowed area. (C3) The changes in integral ENG activity during light stimulation (n = 12) at the period before (dark gray circles), during (yellow circles), and after (light gray circles) KA application. Each circle represents the value of estimated parameter for one trace. Statistics for C3 can be found in Supplementary file 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the experimental strategy to identify lumbar V3 ascending long propriospinal interactions (aLPNs) synapses onto the cervical locomotor region, laminae VII and IX. AAV2/9-hSyn-eGFP was injected into the rostral lumbar region. (B) Representative image of a cross section of the lumbar spinal cord expressing GFP (green, top panel). Enlarged representative images (bottom) show V3 neurons (magenta) that express eGFP (green) from the lumbar AAV injection.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A1, B1) Schematics of the experimental strategy. Isolated neonatal spinal cord with suction electrodes attached to ventral roots is placed in a split bath recording chamber. The chamber is partitioned into two sides with a Vaseline wall (represented by yellow cloud in the figure). The electroneurogram (ENG) activities of left and right cervical or lumbar ventral roots were recorded. The photoactivation (blue light) indicated by the blue circle is on the ventral side of rostral cervical, C5–C7 (A1), or of rostral lumbar, L1–L3 (B1), segments. (A2, B2) Averaged traces of rectified ENG recordings at ventral roots are indicated by thick, black lines. The individual raw recording traces from each light stimulation are indicated by the thin lines in different colors.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The individual raw traces from each light stimulation are indicated by the thin lines in different colors. Averaged traces of rectified ENG recordings at ventral roots are indicated by thick, black lines.
 
 To identify lumbar V3 aLPN synapses on neurons within the cervical locomotor region, such as laminae VII/VIII and IX, we injected AAV2/9-hSyn-eGFP in the lumbar spinal cords of Sim1tdTom mice (Figure 1B1) and detected V3 neurons expressing GFP in the intermediate and deep dorsal regions of lumbar cord, as expected (Figure 1—figure supplement 1). In the cervical segments, C5–C8, we observed a broad distribution of GFP-positive axon terminals (Figure 1B2). We detected GFP/TdTom/Vglut2 (vesicular glutamate transporter 2) triple-positive terminals in the ventral interneuron (lamina VII/VIII) and motoneuron (lamina IX) regions (Figure 1B2), indicating that lumbar V3 aLPNs broadly innervate ventral cervical neurons. Interestingly, within the randomly sampled areas in these regions, tdTom-positive puncta are ~2.5% of total Vglut2/GFP puncta in the motoneuron region and ~28% in the interneuron regions (Figure 1B2), indicating that V3 aLPNs may strongly influence cervical RG circuits.
 
 To test whether these ascending V3 LPNs in the lumbar segment affect motor output in the cervical region, we employed Sim1Cre/+; Ai32 (Sim1Ai32) mice, which expressed channelrhodopsin 2 (ChR2) specifically in Sim1-positive V3 neurons. Isolated spinal cords from P2–3 Sim1Ai32 mice were placed in a perfusion chamber split into two compartments. This split chamber was constructed over the thoracic T6–T8 segments with petroleum jelly (Vaseline) walls (Figure 1C1). Suction electrodes for electroneurogram (ENG) recordings were placed on the lumbar and cervical ventral roots. We first applied photostimulation on the cervical region, which evoked strong activation at cervical ventral roots, while the lumbar roots were silent (Figure 1—figure supplement 2A1 and A2). These results confirm the lack of descending V3 projections, which is consistent with previous studies (Flynn et al., 2017; Ruder et al., 2016). Then, we applied photostimulation to the V3 neurons in the lumbar region. In this case, the stimulation evoked strong activity in all recorded lumbar and cervical ventral roots (Figure 1—figure supplement 2B1 and B2, see also Figure 1C2 and C3). Then, to test whether this excitation measured in the cervical roots was provided directly by ascending projections of lumbar V3 neurons, we blocked glutamatergic transmission selectively in the lumbar region with 2 mM of kynurenic acid (KA), which completely blocked NMDA and AMPA/kainate receptors (Hägglund et al., 2010). We found that in this case photostimulation of lumbar V3 neurons evoked small or no responses in lumbar ventral roots, while the motor responses in the cervical roots were still present (Figure 1C2 and C3, Figure 1—figure supplement 3). The lumbar responses reappeared after the drug was washed out. Such differential responses of lumbar and cervical roots to lumbar glutamatergic receptor blockade were consistent in all of our testing episodes with lumbar V3 photoactivation (Figure 1C3). Taken together with our anatomical findings, these results demonstrate that lumbar V3 aLPNs directly innervate the cervical spinal cord affecting cervical motor output.
 
-## V3 aLPNs are active during locomotion
+#### V3 aLPNs are active during locomotion
 
 To test whether V3 aLPNs were active during locomotion, we injected CTB in the cervical region of young adult (P35–40) Sim1tdTom mice. Seven days post-injection, we subjected the animals to treadmill locomotion at either 15 cm/s or 40 cm/s for an hour. The control group was left undisturbed in the cage for one hour. Then, after one hour of rest in the home cage, which maximizes c-Fos expression in neurons (Dai et al., 2005), we harvested the lumbar spinal cord and used immunohistochemical staining to detect the expression of c-Fos protein in V3 neurons (Figure 2A). We found that the number of triple-labeled (c-Fos/CTB/tdTom) V3 neurons significantly increased after treadmill locomotion at both speeds compared to animals that only rested, but the percentage of these triple-positive V3 aLPNs almost tripled at 40 cm/s compared to 15 cm/s (Figure 2B1–B3 and C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig2-v1.jpg)
 
-**Figure 2.:** (A) Representative image of TdTom+ V3 neurons (magenta), cholera-toxin B (CTB) (green), and c-Fos (white) of a half cross section of the spinal cord from a Sim1 (Sim1tdTom) mouse. Enlarged images showing triple-positive cells. Scale bars: 200 μM and 20 μM. (Cre/+; Rosa26floxstopTdTomB1–B3) Color-coded heat maps showing the distribution of c-Fos, CTB, and TdTom triple-positive V3 neurons in a cross section of lumbar spinal cord during resting (B1), 15 cm/s (B2), and 40 cm/s (B3) treadmill locomotion (nresting = 3, n15cm/s=3, n40cm/s = 3). (C) Histogram of the corresponding percentage of triple-positive cells in TdTom/CTB double-positive population in L1–L3 segments. *0.01<p<0.05. Statistics for (C) can be found in Supplementary file 1.
+**Figure 2.:** (A) Representative image of TdTom+ V3 neurons (magenta), cholera-toxin B (CTB) (green), and c-Fos (white) of a half cross section of the spinal cord from a Sim1Cre/+; Rosa26floxstopTdTom (Sim1tdTom) mouse. Enlarged images showing triple-positive cells. Scale bars: 200 μM and 20 μM. (B1–B3) Color-coded heat maps showing the distribution of c-Fos, CTB, and TdTom triple-positive V3 neurons in a cross section of lumbar spinal cord during resting (B1), 15 cm/s (B2), and 40 cm/s (B3) treadmill locomotion (nresting = 3, n15cm/s=3, n40cm/s = 3). (C) Histogram of the corresponding percentage of triple-positive cells in TdTom/CTB double-positive population in L1–L3 segments. *0.01<p<0.05. Statistics for (C) can be found in Supplementary file 1.
 
 Taken together, we conclude that there are subsets of lumbo-cervical projecting commissural V3 neurons providing direct excitatory drive to cervical locomotor networks, particularly at medium locomotor speeds.
 
-## Elimination of V3 neurons in the mouse spinal cord limits locomotor speed
+#### Elimination of V3 neurons in the mouse spinal cord limits locomotor speed
 
 To study the contribution of V3 neurons to the control of locomotion and interlimb coordination, we generated Sim1Cre/+; Slc17a6flox/flox (V3OFF) mice, in which the expression of Vglut2 was deleted in V3 neurons (Chopek et al., 2018). We then subjected the control (WT) and V3OFF mice to treadmill locomotion at different speeds. We found that the highest speed that the V3OFF mice could reach was around 35 cm/s (mean = 34.17 ± 6.69 cm/s; Figure 3), and only 3 out of 11 mice could reach 40 cm/s (the maximal speed included for the subsequent analysis). Under the same experimental conditions, WT mice could run with higher speeds, up to 75 ± 7.56 cm/s (Figure 3). This result indicates that V3 neurons are essential for high-speed locomotion in mice.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig3-v1.jpg)
 
-**Figure 3.:** OFF mice on the treadmill.The box-and-whisker plots showing the highest speed of the individual WT mice (n = 7) and V3OFF mice (n = 11) on the treadmill. **p<0.01. Statistics can be found in Supplementary file 1.
+**Figure 3.:** The box-and-whisker plots showing the highest speed of the individual WT mice (n = 7) and V3OFF mice (n = 11) on the treadmill. **p<0.01. Statistics can be found in Supplementary file 1.
 
-## Elimination of V3 neurons changed speed-dependent interlimb coordination
+#### Elimination of V3 neurons changed speed-dependent interlimb coordination
 
 To understand the changes in interlimb coordination at low and medium speeds caused by V3 silencing, we calculated the phase differences (relative phases) between different pairs of limbs in both WT and V3OFF mice: homologous (left–right), between two forelimbs and two hindlimbs; homolateral, between left forelimb and hindlimb; and diagonal, between left hindlimb and right forelimb (Figure 4, Figure 4—figure supplement 1). We then compared the corresponding relative phases and their variability between WT and V3OFF mice on average (Figure 4A1–D1) and at different treadmill speeds (Figure 4A2–D2, Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig4-v1.jpg)
+
+**Figure 4.:** (A1–D1) Circular plots of hindlimb (A1) and forelimb (B1) left–right phase differences, homolateral phase differences (C1), and diagonal phase differences (D1) in WT (blue) and V3OFF (red) mice. Except for the forelimb left–right phase differences, the left hindlimbs are used as the reference limb. Each vector, blue line (WT) and red line (V3OFF), in the circular plot, indicates the mean value (direction) and robustness (radial line/length) of the phase difference. The circle is evenly separated into eight fractions. The circular histograms represent the distribution of phase differences of all steps at all tested speeds (WT, n = 1292; V3OFF, n = 1478). (A2–D2) Plots of mean values of coupling phases at individual speeds of V3OFF (red) and WT (blue) mice. *p<0.01; **p<0.001; ***p<0.0001 for comparisons of mean phase differences; †p<0.01; ††p<0.001; †††p<0.0001 for comparisons of the variability (concentration parameter κ) of the phase differences. Statistics for (A1–D1) and (A2–D2) can be found in Supplementary file 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Circular plots of hindlimb (A) and forelimb (B) left–right phase differences, homolateral phase differences (C), and diagonal phase differences (D) in WT (blue) and V3OFF (red) mice at individual treadmill speeds. Except for the forelimb left–right phase differences, the left hindlimbs are used as the reference limb. Each vector, blue line (WT) and red line (V3OFF), in the circular plot, indicates the mean value (direction) and robustness (radial line/length) of the phase differences. The circle is evenly separated into eight fractions. The circular histograms represent the distribution of phase differences of all steps at all tested speeds.
 
 The left–right hindlimb and forelimb phase differences did not significantly differ between WT and V3OFF mice across speeds (Figure 4A1, B1, A2 and B2, Figure 4—figure supplement 1A and B); mean values were close to 0.5 (perfect alternation) in both WT and V3OFF mice. The tests at individual treadmill speeds showed no significant differences, except at 40 cm/s, where the mean forelimb and hindlimb left–right phase differences of V3OFF mice differed slightly from those of the WT mice (Figure 4—figure supplement 1A and B). However, the variability of left–right phase differences in V3OFF mice significantly increased compared to WT mice at higher locomotor speeds (Figure 4A2 and B2).
 
 In contrast to the left–right phase differences, the mean values of the homolateral (Figure 4C1 and C2, Figure 4—figure supplement 1C) and diagonal phase differences (Figure 4D1 and D2, Figure 4—figure supplement 1D) in V3OFF mice significantly deviated from those in WT mice. Post-hoc tests showed that these differences were significant across almost all tested speeds. At the highest speed (40 cm/s), the difference between the homolateral phase differences was smaller than that at lower speeds but still significant, and the diagonal phase differences did not differ significantly. This indicates that, at least at low to medium speeds, the V3OFF mice were unable to support diagonal synchronization and homolateral alternation.
 
-## Elimination of V3 neurons changes the preferred gait from trot to walk at intermediate speeds and causes gait instability at higher speeds
+#### Elimination of V3 neurons changes the preferred gait from trot to walk at intermediate speeds and causes gait instability at higher speeds
 
 Phase relationships between the four limbs define locomotor gaits (Hildebrand, 1976; Hildebrand, 1980; Hildebrand, 1989; Bellardita and Kiehn, 2015; Lemieux et al., 2016). Thus, the changes in the homolateral and diagonal phasing after functional removal of V3 neurons should impact gait expression.
 
 Indeed, the step patterns and gait expression of V3OFF mice were altered in a speed-dependent manner compared to WT littermates. Figure 5B1 and B2 shows representative stance phases of all four limbs at different treadmill speeds in WT and V3OFF mice, respectively (see also Figure 5—videos 1–4).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig5-v1.jpg)
+
+**Figure 5.:** (A) Illustration of limb couplings (left). The footprint diagrams of individual limb are represented by color-coded bar graphs (right): the stance phase of each step is shown with solid bar and swing phase is the interval between two bars. The step cycle is measured from the duration between the onset of contacts of two consecutive steps of the same foot. Phase difference between the limbs was calculated as the interval between the start of stance of a specific limb and the reference limb divided by the period or step-cycle duration of the reference limb. (B1, B2) Representative stance phases of 1.5 s episodes of WT (B1) and V3OFF (B2) mice at low (15 cm/s and 25 cm/s) and medium (35 cm/s and 40 cm/s) treadmill speeds. x1–9, exemplary steps; y1–3, exemplary episodes referred to from the text. The shading color indicates the gait (pink, lateral-sequence walk; yellow, trot; light gray, other). Blue and gray shadows highlight periods of overlap between stance phases of the homologue limbs. The black bars show the stance phase of the reference foot (left hindlimb).
 
 At low treadmill speeds (15 cm/s and 25 cm/s), WT mice mainly used trot (a two-beat gait characterized by diagonal synchronization and left–right alternation; Figure 5B1, e.g., steps x2, x5); however, these are transition speeds and the WT mouse exhibited a comparatively high step-to-step variability with steps that could be classified as different types of walks or even canter (a three-beat gait with only one diagonal synchronized) interspersed (e.g., steps x1, x3, x6) between trot steps. At the same low treadmill speeds (15 cm/s and 25 cm/s), V3OFF mice used a lateral-sequence walk (a four-beat gait with longer stance than swing phases where the stance of a hindlimb is followed by that of the ipsilateral forelimb; Figure 5B2, e.g., steps x4, x7). The lateral-sequence walk of V3OFF mice was stable and consistent with little variability between the different step cycles (Figure 5B2, Figure 5—video 1, Figure 5—video 2).
 
@@ -82,11 +110,19 @@ At higher treadmill speeds (35 cm/s and 40 cm/s), the step pattern of V3OFF mice
 
 To further understand how V3 silencing affected speed-dependent gait expression across animals, we calculated the occurrence, persistence, and attractiveness of each gait (Lemieux et al., 2016) at different speeds in WT and V3OFF mice (Figure 6, Figure 6—figure supplement 1). The occurrence was the percentage of steps of a certain gait within the total steps; the persistence of a certain gait was the likelihood of a step of this gait to be followed by another step of the same gait; the attractiveness was calculated as the number of steps transferring to the target gait divided by the total number of all circumstances of gait transition in two consecutive steps.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig6-v1.jpg)
+
+**Figure 6.:** The size of circle indicates the relative occurrence of the indicated gait. The full size of the circle meaning 100% occurrence is shown on the far right. The intensity gradient of the color of the circles indicates the persistence of the corresponding gait. The intensity gradient of the color of the arrows indicates the likelihood of a transition.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Color-coded matrices of occurrence, persistence, and attractiveness values of each type of gait (row) at each tested speed (column). The matrices in (A) are from WT and (B) are from V3OFF mice. The number in each cell shows the value of the parameter of corresponding gait and speed. L-walk, lateral-sequence walk; OPW, out-of-phase walk.
+
 The relative values of these parameters for each gait and the probability of transitions between different gaits at different speeds are illustrated in Figure 6. These analyses together clearly demonstrated that gait expression of V3OFF mice was altered compared to the WT mice in a speed-dependent manner (Figure 6, Figure 6—figure supplement 1). WT mice used trot as the preferred gait at all tested speeds (15–40 cm/s) and its occurrence, persistene, and attractiveness increased with speed (Figure 6A, Figure 6—figure supplement 1A). In contrast, the most prevalent, persistent, and attractive gait in V3OFF mice at low to medium speeds up to 35 cm/s was a lateral-sequence walk (L-walk; Figure 6B, Figure 6—figure supplement 1B). Although V3OFF animals exhibited steps that could be classified as trot, the occurrence and persistence of trot episodes were low. The difference in the preferred gait between trot in WT mice and lateral-sequence or out-of-phase walk in V3OFF mice was associated with the changes in the homolateral and diagonal phase differences (Figure 4C2 and D2). As mentioned above, WT mice have trot as a dominant gait, which becomes even more prevalent and attractive with increasing speed (Figure 6A, Figure 6—figure supplement 1A). In contrast, in V3OFF mice the prevalence and attractiveness of the lateral-sequence walk, representing their dominant gait, decreased with speed, while the prevalence and attractiveness of less structured out-of-phase walk increased (Figure 6B, Figure 6—figure supplement 1B). This is likely associated with the increased variability of phase differences in V3OFF mice at higher speeds.
 
 In summary, silencing V3 neurons limited the ability of mice to locomote at high speed (Figure 3), distorted interlimb coordination, and changed homolateral and diagonal phase relationships between fore- and hindlimbs at low and medium speeds (Figure 4). This resulted in converting gaits in V3OFF mice from trot to lateral-sequence walk at lower speeds and significantly reduced gait stability when speed increased (Figures 5 and 6).
 
-## Modeling spinal locomotor circuits incorporating V3 neurons with local and long propriospinal projection
+### Modeling spinal locomotor circuits incorporating V3 neurons with local and long propriospinal projection
 
 Our experimental results clearly indicate that V3 neurons should play important roles in speed-dependent interlimb coordination. Yet, the specific function and connectivity of different V3 subpopulations (i.e., V3 aLPNs and local V3 CINs) remain unknown and cannot be explicitly drawn from the current experimental data. Therefore, we extended our previous computational model of central control of interlimb coordination (Danner et al., 2017) and used it to study potential mechanisms by which the different V3 subpopulations may interact with the RG spinal circuitry and affect limb coordination.
 
@@ -100,7 +136,7 @@ Similar to the previous models (Danner et al., 2016; Danner et al., 2017; Ausbor
 
 **Figure 7.:** (A) The model incorporates two bilateral compartments (cervical and lumbar). Each compartment includes the left and right rhythm generators (RGs) each controlling a single limb and interacting via commissural interneurons (CINs). The cervical and lumbar compartments interact via homolaterally and diagonally projecting, descending and ascending long propriospinal neurons (LPNs). (B) Interactions between four RGs by different populations of V3 interneurons.
 
-## Modeling the organization of spinal circuits involved in control of locomotion
+#### Modeling the organization of spinal circuits involved in control of locomotion
 
 The basic architecture of the model has been developed for several years to be able to reproduce experimental data from multiple independent experimental studies (Rybak et al., 2013; Rybak et al., 2015; Molkov et al., 2015; Shevtsova et al., 2015; Danner et al., 2016; Danner et al., 2017; Danner et al., 2019; Shevtsova and Rybak, 2016; Ausborn et al., 2019; Ausborn et al., 2021; Latash et al., 2020) and was extended here to incorporate the results of experimental studies described above. A detailed schematic of the model is shown in Figure 8, and its major components are shown in Figure 9 and described below.
 
@@ -112,15 +148,15 @@ The basic architecture of the model has been developed for several years to be a
 
 **Figure 9.:** (A) Connections between the left and right rhythm generators (RGs) within each compartment (see text for details). (B) Cervical-to-lumbar connections via descending long propriospinal neurons (dLPNs). (C) Lumbar-to-cervical connections via ascending long propriospinal neurons (aLPNs). (D) Brainstem drive to the extensor and flexor half-centers (E and F), commissural interneurons (CINs), and long propriospinal neurons (LPNs). (E) Local and long propriospinal connections in the model mediated by V3 interneurons. Neural populations are shown by spheres. Excitatory and inhibitory connections between populations are shown by arrowheads and circles, respectively.
 
-## Rhythm generators
+##### Rhythm generators
 
 Each of the four RGs includes flexor (F) and extensor (E) half-centers, mutually inhibiting each other via inhibitory interneuron populations (InF and InE; Figures 8 and 9). The neurons in the F and E half-centers incorporate a slowly inactivating persistent sodium current (INaP) and are connected by excitatory synaptic connections allowing them to generate synchronized populational bursting activity in a certain range of an external tonic excitatory drive. As in our previous models (Rybak et al., 2013; Rybak et al., 2015; Molkov et al., 2015; Shevtsova et al., 2015; Danner et al., 2016; Danner et al., 2017; Danner et al., 2019; Shevtsova and Rybak, 2016; Ausborn et al., 2019; Latash et al., 2020), only the F half-centers operate in a bursting regime and generate intrinsically rhythmic activity, while the E half-centers receive a relatively high drive and are tonically active if uncoupled. The E half-centers generate rhythmic activity only due to inhibition from the intrinsically oscillating F half-centers. Thus, each RG generates the locomotor-like (flexor-extensor alternating) activity in a certain range of frequencies, depending on the external (‘brainstem’) drive to the F half-center.
 
-## Local commissural (left–right) interactions
+##### Local commissural (left–right) interactions
 
 Left–right interactions within cervical and lumbar compartments include several commissural pathways (Figure 9A). Two pathways are mediated by V0 (V0V and V0D) CINs and support left–right alternating activity and alternating gaits (i.e., walk and trot). The inhibitory V0D CINs provide direct mutual inhibition between the homologue flexor half-centers. The excitatory V0V CINs also provide mutual inhibition between the homologue flexor half-centers (receiving inputs from excitatory V2a and acting through inhibitory Ini1 populations). Two other commissural pathways mediated by two types of local V3 CINs (V3-E and V3-F) support synchronization of the left and right RG activities and promote left-right (quasi-) synchronized gaits (gallop and bound) at higher locomotor frequencies. The V3-F subpopulations provide mutual excitation between the F half-centers, similar to our previous models (Rybak et al., 2015; Shevtsova et al., 2015; Danner et al., 2016; Danner et al., 2017), while the V3-E CINs mediate mutual excitation between the E half-centers and are incorporated to fit our previous experimental and modeling results (Danner et al., 2019).
 
-## Long propriospinal interactions between cervical and lumbar circuits
+##### Long propriospinal interactions between cervical and lumbar circuits
 
 The cervical and lumbar compartments interact via descending (cervical-to-lumbar) (Figure 9B) and ascending (lumbar-to-cervical) LPN pathways (Figure 9C) whose organization is based on our previous computational models (Danner et al., 2017; Ausborn et al., 2019). The lumbar-to-cervical pathways additionally incorporate ascending diagonal V3 LPNs (aV3), which is based on the present experimental data (Figure 1).
 
@@ -128,27 +164,35 @@ The descending homolateral connections (Figure 9B) are mediated by the excitator
 
 The ascending connections in the model (Figure 9C) include the homolateral excitatory pathway mediated by Shox2 populations (Sh2), providing excitation from each lumbar E half-center to the homolateral cervical F half-center, and the diagonal excitatory pathway mediated by the diagonal ascending V3 (aV3) populations, providing excitation of each cervical F half-center from the diagonal lumbar F half-center. The diagonal aV3 populations also excite the In2 populations, thus regulating activity of the diagonal V0D LPNs.
 
-## Supraspinal (brainstem) drive to cervical and lumbar circuits
+##### Supraspinal (brainstem) drive to cervical and lumbar circuits
 
 The tonic brainstem drives are organized to excite all E and F half-centers, the local V3-F in both compartments, and the diagonal aV3 populations, and to inhibit the local V0 CINs in both compartments and the descending diagonal V0V and V0D LPNs (Figure 9D). The excitatory drive to all E half-centers was kept constant, while the value of the drive to the F half-centers, local CINs, and diagonal LPNs varied to provide control of locomotor frequency and the frequency-dependent gait expression (for details, see Danner et al., 2016; Danner et al., 2017).
 
-## Circuit interactions mediated by V3 subpopulations
+##### Circuit interactions mediated by V3 subpopulations
 
 Figure 9E shows connectivity of all V3 subpopulations. In our previous models, we suggested that the local V3 CINs promote left–right synchronization by providing mutual excitation between left and right flexor (Danner et al., 2016; Danner et al., 2017) and left and right extensor half-centers (Danner et al., 2019; Ausborn et al., 2021). In the present model, this function is performed by V3-F and V3-E populations, respectively. Both of these populations support synchronization of left and right RG activities and promote gallop and bound at higher locomotor frequencies. Furthermore, the diagonal ascending propriospinal V3 subpopulations (aV3) mediate excitation of each cervical F half-center from the contralateral lumbar F half-center and support diagonal synchronization necessary for trot at medium locomotor frequencies. In addition, both the cervical V3-F subpopulations and the contralateral aV3 subpopulations inhibit the diagonal V0D LPNs through the inhibitory In2 populations, hence securing the stable transition from walk to trot (Danner et al., 2017).
 
-## Model operation in the intact case
+### Model operation in the intact case
 
-To show that the model with the updated V3 connectivity can reproduce speed-dependent gait expression of WT mice, we investigated the model behavior with all populations and connections intact. Figure 10 shows the model performance for three sequentially increased values of parameter α controlling the brainstem drive to the spinal network (see Figures 8 and 9D). Increasing the brainstem drive caused an increase in frequency of locomotor oscillations and consecutive gait transitions from lateral-sequence walk (Figure 10A1) to trot (Figure 10A2) and finally to bound (Figure 10A3). Figure 10B shows a raster plot of activity of all neurons in the left ascending propriospinal aV3 population. When the brainstem drive was progressively increased (from α = 0 to α = 1), the oscillation frequency increased from 2 to 8 Hz. This increase of V3 population activity with the increase of locomotor frequency (reflecting locomotor speed) was consistent with our experimental results (Figure 2C).
+To show that the model with the updated V3 connectivity can reproduce speed-dependent gait expression of WT mice, we investigated the model behavior with all populations and connections intact. Figure 10 shows the model performance for three sequentially increased values of parameter α controlling the brainstem drive to the spinal network (see Figures 8 and 9D). Increasing the brainstem drive caused an increase in frequency of locomotor oscillations and consecutive gait transitions from lateral-sequence walk (Figure 10A1) to trot (Figure 10A2) and finally to bound (Figure 10A3). Figure 10B shows a raster plot of activity of all neurons in the left ascending propriospinal aV3 population. When the brainstem drive was progressively increased (from $\alpha$ = 0 to $\alpha$ = 1), the oscillation frequency increased from 2 to 8 Hz. This increase of V3 population activity with the increase of locomotor frequency (reflecting locomotor speed) was consistent with our experimental results (Figure 2C).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig10-v1.jpg)
 
-**Figure 10.:** (A1–A3) Model performance for three sequentially increased values of parameter α ( = {0.1; 0.5; 1}) that controls brainstem drive to the network. In all panels, activities of flexor and extensor (F and E) half-centers and only left cervical (fore, f-) and lumbar (hind, h-) interneuron populations are shown. Integrated activities of all populations are shown as average histograms of neuron activity [spikes/(N × s), where N is a number of neurons in population; bin = 10 ms]. (αB) Raster plot (upper panel) of activity of the left lumbar aV3 population when the brainstem drive (lower panel) was increased from 0.1 to 1. Note increased recruitment of aV3 neurons with the increased drive. rf, right fore; lf, left fore; rh, right hind; lh, left hind.
+**Figure 10.:** (A1–A3) Model performance for three sequentially increased values of parameter α ($\alpha$ = {0.1; 0.5; 1}) that controls brainstem drive to the network. In all panels, activities of flexor and extensor (F and E) half-centers and only left cervical (fore, f-) and lumbar (hind, h-) interneuron populations are shown. Integrated activities of all populations are shown as average histograms of neuron activity [spikes/(N × s), where N is a number of neurons in population; bin = 10 ms]. (B) Raster plot (upper panel) of activity of the left lumbar aV3 population when the brainstem drive (lower panel) was increased from 0.1 to 1. Note increased recruitment of aV3 neurons with the increased drive. rf, right fore; lf, left fore; rh, right hind; lh, left hind.
 
-Figure 11A1 shows bifurcation diagrams reflecting changes in the normalized phase differences between oscillations in the left and right hind (lumbar) RGs, left and right forelimb (cervical) RGs, homolateral, and diagonal RGs with a progressive increase in brainstem drive. Increasing brainstem drive in the intact model resulted in sequential changes of gait from lateral-sequence walk to trot and then to gallop and bound (Figure 11A1) and was accompanied by increased frequency of stable locomotor oscillations (Figure 11B1). The sequential gait changes in the model were consistent with the previous experimental observations (Bellardita and Kiehn, 2015; Lemieux et al., 2016) and our modeling studies (Danner et al., 2016; Danner et al., 2017; Ausborn et al., 2019). During transitions from walk to trot and from trot to gallop and bound, the model exhibited bi- or multistable behaviors (Figure 11A1 and B1). In these areas, a small disturbance or noise could result in spontaneous transitions of model activity from one steady state regime to the other. While building the bifurcation diagrams in Figure 11, noise was added to all tonic drives in the model, and, as a result, in the range of the parameter α from 0.4 to 0.5, spontaneous transitions between walk and trot occurred; in the range of α between 0.7 and 0.85, the model exhibited either trot, gallop, or bound; and at α values larger than 0.85 both gallop and bound coexisted. These model behaviors correspond to previous experimental and modeling studies (Bellardita and Kiehn, 2015; Lemieux et al., 2016; Danner et al., 2017). Thus, the proposed model organization (including V3 CIN and aLPN populations and their connectivity) can account for the speed-dependent gait expression observed in WT mice.
+Figure 11A1 shows bifurcation diagrams reflecting changes in the normalized phase differences between oscillations in the left and right hind (lumbar) RGs, left and right forelimb (cervical) RGs, homolateral, and diagonal RGs with a progressive increase in brainstem drive. Increasing brainstem drive in the intact model resulted in sequential changes of gait from lateral-sequence walk to trot and then to gallop and bound (Figure 11A1) and was accompanied by increased frequency of stable locomotor oscillations (Figure 11B1). The sequential gait changes in the model were consistent with the previous experimental observations (Bellardita and Kiehn, 2015; Lemieux et al., 2016) and our modeling studies (Danner et al., 2016; Danner et al., 2017; Ausborn et al., 2019). During transitions from walk to trot and from trot to gallop and bound, the model exhibited bi- or multistable behaviors (Figure 11A1 and B1). In these areas, a small disturbance or noise could result in spontaneous transitions of model activity from one steady state regime to the other. While building the bifurcation diagrams in Figure 11, noise was added to all tonic drives in the model, and, as a result, in the range of the parameter $\alpha$ from 0.4 to 0.5, spontaneous transitions between walk and trot occurred; in the range of $\alpha$ between 0.7 and 0.85, the model exhibited either trot, gallop, or bound; and at $\alpha$ values larger than 0.85 both gallop and bound coexisted. These model behaviors correspond to previous experimental and modeling studies (Bellardita and Kiehn, 2015; Lemieux et al., 2016; Danner et al., 2017). Thus, the proposed model organization (including V3 CIN and aLPN populations and their connectivity) can account for the speed-dependent gait expression observed in WT mice.
 
-## Modeling the effects of elimination of V3 neurons
+![Figure 11.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig11-v1.jpg)
 
-The model described above was used to investigate the effects of removing the V3 population to simulate our experimental studies using V3OFF mice, in which all V3 neurons were genetically silenced. Deletion of all V3 neurons produced notable changes in model operation (Figure 11A2 and B2). First, the frequency range of stable locomotor oscillation was reduced, so that above the frequency of 3.8 Hz (α = 0.57), the model transitioned to uncoordinated locomotor oscillations resulting in unstable, variable gaits (Figure 11A2). Second, the range of brainstem drive values and the range of frequencies in which the lateral-sequence walk occurred was extended, while trot and other gaits (gallop/bound) became unstable or even failed to occur (Figure 11A2). Both of these effects were qualitatively consistent with our experimental results (Figures 3, 4 and 6).
+**Figure 11.:** Bifurcation diagrams reflecting changes in the normalized phase differences between oscillations in the left and right hind (lumbar) rhythm generators (RGs), left and right fore (cervical) RGs, homolateral, and diagonal RGs with a progressive increase in brainstem drive ($\alpha$) from 0.1 to 1 with a step of 0.01 (see for details ‘Modeling methods’ and Danner et al., 2017). (A1) Intact model. (A2) The result of removal of all V3 neurons (V3OFF simulation). (A3) Only the diagonal aV3 are removed. Parameter α that represents the brainstem drive was used as bifurcation parameters. Each diagram shows phase differences calculated for five locomotor periods when α was fixed. The vertical dashed lines correspond to three values of α = {0.3; 0.6; 0.9} for which complimentary circular plot diagrams are built showing phase differences between activities of the left hind E population (lh-E) and other relative populations for the intact model and after deletion of all V3 or aV3 neurons. (B1–B3) Average oscillation frequency corresponding to simulations shown in (A1–A3).
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig11-figsupp1-v1.jpg)
+
+**Figure 11—figure supplement 1.:** Phase differences between activities of the left hind E population and other rhythm generator (RG) (rh-E, lf-E, rf-E, lh-F, lf-F, rh-F, and rf-F) and left V3 (lh-V3-E, lh-V3-F, and lh-aV3) populations for the intact model and after deletion of all V3 or aV3 neurons are shown as circular plot diagrams for all steps for three values of α = {0.3; 0.6; 0.9} for 5 s of simulation time. rf, right fore; lf, left fore; rh, right hind; lh, left hind.
+
+### Modeling the effects of elimination of V3 neurons
+
+The model described above was used to investigate the effects of removing the V3 population to simulate our experimental studies using V3OFF mice, in which all V3 neurons were genetically silenced. Deletion of all V3 neurons produced notable changes in model operation (Figure 11A2 and B2). First, the frequency range of stable locomotor oscillation was reduced, so that above the frequency of 3.8 Hz ($\alpha$ = 0.57), the model transitioned to uncoordinated locomotor oscillations resulting in unstable, variable gaits (Figure 11A2). Second, the range of brainstem drive values and the range of frequencies in which the lateral-sequence walk occurred was extended, while trot and other gaits (gallop/bound) became unstable or even failed to occur (Figure 11A2). Both of these effects were qualitatively consistent with our experimental results (Figures 3, 4 and 6).
 
 To investigate the specific role of the ascending long propriospinal V3 (aV3) neurons, we simulated a separate case when only V3 aLPN subpopulations were removed (Figure 11A3 and B3). Our simulations show that the deletion of only aV3 neurons in the model also leads to elimination of trot at medium locomotor frequencies. However, with further increases in brainstem drive, after some period of instability, sharp transitions to the (quasi-)synchronized gaits (gallop and bound) took place, which in this case were supported by the remaining local populations of V3-F and V3-E CINs. This suggests that V3 aLPNs support trot by promoting diagonal synchronization through excitation of the diagonal forelimb flexor half-centers by the hindlimb flexor half-centers (Figures 8 and 9C). This result can be considered as a modeling prediction for future experimental studies.
 
@@ -158,19 +202,19 @@ In addition, we examined our simulation results to determine the effects of remo
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig12-v1.jpg)
 
-**Figure 12.:** A) and after all V3 neurons were deleted (B).For each rhythm generator (RG), the lengths of the corresponding extensor phases are shown for 1.5 s of the simulation time for three values of α = {0.1; 0.5; 0.7}. At α = 0.1, both intact and V3-deleted models demonstrate stable lateral-sequence walking gait. At α = 0.5, the intact model exhibits a trot, and the V3-deleted model demonstrates a lateral-sequence walk. At α = 0.7, the intact model has a stable trot while the V3-deleted model demonstrates unstable behavior. The solid color bars show the extensor phases of all four RGs: rf, right fore; lf, left fore; rh, right hind; lh, left hind. The black bars show the reference RG (lh). Blue and gray shadows highlight periods of overlap between extensor phases of the homologue RGs. The shading color indicates the gait (pink, lateral-sequence walk; yellow, trot; light gray, other).
+**Figure 12.:** For each rhythm generator (RG), the lengths of the corresponding extensor phases are shown for 1.5 s of the simulation time for three values of α = {0.1; 0.5; 0.7}. At α = 0.1, both intact and V3-deleted models demonstrate stable lateral-sequence walking gait. At α = 0.5, the intact model exhibits a trot, and the V3-deleted model demonstrates a lateral-sequence walk. At α = 0.7, the intact model has a stable trot while the V3-deleted model demonstrates unstable behavior. The solid color bars show the extensor phases of all four RGs: rf, right fore; lf, left fore; rh, right hind; lh, left hind. The black bars show the reference RG (lh). Blue and gray shadows highlight periods of overlap between extensor phases of the homologue RGs. The shading color indicates the gait (pink, lateral-sequence walk; yellow, trot; light gray, other).
 
 A comparison of normalized left–right, homolateral, and diagonal phase differences in the intact model and after deletion of all V3 neurons (Figure 13) demonstrated that the intact model exhibited phase relationships typical for trot. In contrast, after removal of all V3 neurons, homolateral and diagonal phase differences were shifted towards lower values, corresponding to a lateral-sequence walk, which was similar to our experimental results (Figure 4A2–D2).
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/73424/elife-73424-fig13-v1.jpg)
 
-**Figure 13.:** Interlimb coordination in the intact (blue) and V3-deleted (red) models for six values of the brainstem drive is shown for left–right hind (A), left–right fore (B), homolateral (C), and diagonal (D) normalized phase differences. For each value of , phase differences were averaged over 10–20 consecutive oscillation periods. In (αA), (C), and (D), the extensor phase of the left hind rhythm generator (RG) is chosen as the reference. Note the homolateral and diagonal phase difference shift toward walking in V3-deleted model compared to trotting gate in the intact case.
+**Figure 13.:** Interlimb coordination in the intact (blue) and V3-deleted (red) models for six values of the brainstem drive is shown for left–right hind (A), left–right fore (B), homolateral (C), and diagonal (D) normalized phase differences. For each value of $\alpha$, phase differences were averaged over 10–20 consecutive oscillation periods. In (A), (C), and (D), the extensor phase of the left hind rhythm generator (RG) is chosen as the reference. Note the homolateral and diagonal phase difference shift toward walking in V3-deleted model compared to trotting gate in the intact case.
 
 ## Discussion
 
 In this study, we identified a population of ascending V3 LPNs (V3 aLPNs) located in the lumbar cord that innervates and activates neurons in cervical locomotor circuits and shows increasing populational activity with increasing locomotor speed. In mice in which the entire V3 population was silenced (V3OFF mice), the maximal locomotor speed was significantly reduced, and these mice were unable to stably trot because of a lack of synchronization between diagonal pairs of limbs. Furthermore, V3OFF mice exhibited high step-to-step variability in left–right coordination close to their maximum locomotor speed. We extended our previous spinal circuit model (Danner et al., 2017) to investigate the specific contribution of the individual subpopulations of V3 neurons (local CINs and aLPNs) to the speed-dependent control of interlimb coordination and gait expression. The proposed ascending long propriospinal connections mediated by V3 aLPNs support diagonal synchronization necessary for trot, whereas the local V3 commissural connections support left–right synchronization necessary for gallop and bound. The proposed model is able to reproduce the experimentally observed speed-dependent gait expression of WT mice as well as changes in interlimb coordination following V3 silencing. The model strongly suggests the crucial and unique roles of V3 aLPNs in control of interlimb coordination during locomotion. Finally, the model provides a potentially testable prediction for the removal of only the V3 aLPNs subset, which broadens our understanding of the locomotor circuits and will guide our future experiments.
 
-## Lumbar V3 neurons with ascending long propriospinal projections to the contralateral cervical region
+### Lumbar V3 neurons with ascending long propriospinal projections to the contralateral cervical region
 
 The proper coordination between limb movements during locomotion, expressed as locomotor gaits, and adaptive gait changes is essential for animals to maintain stable movement within a wide range of locomotor speeds (Hildebrand, 1976; Hildebrand, 1980; Hildebrand, 1989). Each limb is primarily controlled by separate RG circuits located in a particular spinal cord compartment (Forssberg et al., 1980; Frigon, 2017). The central interlimb coordination is provided by multiple populations of spinal neurons that mediate mutual interactions between RG circuits controlling different limbs (Stein, 1976; Schöner et al., 1990; Danner et al., 2016; Danner et al., 2017; Frigon, 2017). These neuronal populations include local CINs, operating within the cervical and lumbar enlargements and coordinating movements of left and right forelimbs and left and right hindlimbs, respectively, as well as LPNs coordinating movements of forelimbs and hindlimbs.
 
@@ -180,11 +224,11 @@ Here, we revealed a subpopulation of lumbar V3 neurons with long ascending proje
 
 While we have not identified the exact neuronal targets of V3 aLPNs in the cervical cord, we showed that a relatively large proportion of V3 ascending terminals is present in cervical lamina VII/VIII, the region where RG intraneuronal circuits are located. Furthermore, the recruitment of V3 aLPNs increased with an increase of locomotor speed, suggesting their engagement during locomotion and an increase of their involvement with an increase in locomotor speed. Our model reproduced this recruitment of V3 aLPNs. Based on our modeling results, we suggest that V3 aLPNs mediate excitation from each lumbar flexor half-center to the contralateral cervical flexor half-center, which promotes diagonal synchronization necessary for trot.
 
-## The V3 neurons are necessary for high-speed locomotion, and their removal significantly limits the locomotor speed due to distortion of limb coordination
+### The V3 neurons are necessary for high-speed locomotion, and their removal significantly limits the locomotor speed due to distortion of limb coordination
 
 In our study, WT mice were able to locomote on the treadmill with high speeds up to 68–83 cm/s. Silencing V3 neurons led to a significant reduction of maximal locomotor speed. Our analysis of V3OFF mouse locomotion has shown a lack of diagonal synchronization at medium speeds and an increase of variability of left–right coordination with increasing locomotor speed. Similarly, removal of all V3 neurons from our model (simulating V3OFF mice) reduced the maximal frequency of stable locomotor oscillation. Model analysis revealed that this frequency reduction occurred due to the distortion of coordination between left–right homologous RGs and between diagonal lumbar and cervical RGs, both of which were mediated by V3 neurons. Yet, selective deletion of only V3 aLPNs in the model allowed for stable coordination of limb activities at high speeds, that is, during gallop and bound, whereas trot was completely lost, and the model transitioned from walk directly to gallop and bound. Together, our experimental and modeling results suggest that the significant reduction of locomotor speed in V3OFF mice results from the distortion of interlimb coordination, particularly the properly synchronized couplings, which are necessary for trot, gallop, and bound gaits that are normally used by WT mice at these speeds.
 
-## The V3 neurons are involved in speed-dependent gait changes and are necessary for the expression of trot, gallop, and bound
+### The V3 neurons are involved in speed-dependent gait changes and are necessary for the expression of trot, gallop, and bound
 
 A precise yet flexible control of interlimb coordination in a wide range of speeds allows animals to maintain dynamic stability in a continuously changing environment. This interlimb coordination, expressed as gaits, depends on, and changes with, locomotor speed and is controlled by the locomotor circuits in the spinal cord (Kiehn, 2016). Mice sequentially change gait from walk to trot and then to gallop and bound as locomotor speed increases (Clarke and Still, 1999; Herbin et al., 2004; Herbin et al., 2007; Batka et al., 2014; Bellardita and Kiehn, 2015; Lemieux et al., 2016). WT mice use walking gaits only during low-speed exploratory locomotion and generally prefer trot for overground and treadmill locomotion (Gruntman et al., 2007; Bellardita and Kiehn, 2015; Lemieux et al., 2016; Caggiano et al., 2018). Gallop and bound are mainly used for escape behavior and are expressed only at high speeds (i.e., >75 cm/s) during both overground and treadmill locomotion (Bellardita and Kiehn, 2015; Lemieux et al., 2016).
 
@@ -194,7 +238,7 @@ The specific function of V3 aLPNs would be best determined using selective activ
 
 In summary, our experimental and modeling results allow the suggestion that the V3 neurons critically contribute to speed-dependent gait expression and are necessary for the expression of trot, gallop, and bound.
 
-## Modeling predictions and limitations of the model
+### Modeling predictions and limitations of the model
 
 While this study was mainly focused on V3 neurons, the importance of the proposed model would be low if the model could only reproduce data regarding the manipulation of V3 neurons described here. Our ultimate goal has always been to develop a generalized model that would be consistent with a large body of data obtained in multiple laboratories under different experimental conditions. Major parts of the network architecture used in the present model were based on our previous models (Rybak et al., 2015; Shevtsova et al., 2015; Danner et al., 2017; Danner et al., 2019), which are able to reproduce experimental data from multiple studies using selective removal, silencing, inhibition, or activation of different types of genetically identified spinal interneurons. Using these previous models as a basis, we were very careful to make sure that the updated model presented here is still able to reproduce the previous experimental data. Therefore, despite the relative complexity of the model, the number of different experimental phenomena that the final model can reproduce provides additional validation of the proposed model.
 
@@ -214,29 +258,29 @@ Nevertheless, here, we took advantage of available experimental and computationa
 
 ## Materials and methods
 
-## Experimental materials and methods
+### Experimental materials and methods
 
-## Animals
+#### Animals
 
 The generation and genotyping of Sim1Cre/+ mice were described previously by Zhang et al., 2008. Conditional knock-out of Vglut2 in Sim1-expressing V3 INs, Sim1cre/+; Slc17a6flox/flox (V3OFF mice) was described previously by Chopek et al., 2018. Ai32 mice (Gt(ROSA)26floxstopH134R/EYFP/+, Jackson Laboratory, Stock No. 012569) were crossed with Sim1Cre/+ to generate Sim1Cre/+; Ai32 mice. TdTomato Ai9 mice (Rosa26floxstopTdTom, Jackson Laboratory, Stock No. 007909) were crossed with Sim1Cre/+ to generate Sim1Cre/+; Rosa26floxstopTdTom (Sim1TdTom) mice (Blacklaws et al., 2015). All procedures were performed in accordance with the Canadian Council on Animal Care and approved by the University Committee on Laboratory Animals at Dalhousie University.
 
-## Treadmill locomotion
+#### Treadmill locomotion
 
 Treadmill locomotion tests were performed using 11 (six males, five females) V3OFF (Sim1cre/+; Slc17a6flox/flox) mice and 7 (two males, five females, Sim1+/+; Slc17a6flox/flox or Sim1+/+; Slc17a6+/flox) control littermates (WT) at postnatal days 40–48 (P40–48). No training was performed before any locomotion tests. During the locomotion tests, the mice were subjected to a treadmill, Exer Gait XL (Columbus Instruments), at speeds from 15 cm/s to 40 cm/s in 5 cm/s increments. To avoid their fatigue, animals would not perform more than two trials for each speed during each experiment, and each trail was <20 s. There was a >1 min rest period between consecutive trials.
 
 A mirror was placed underneath the transparent treadmill belt with 45° angle to project the image of the paws to a high-speed camera. The paw movements were captured at 100 frames/s. Episodes with at least 10 consecutive steps were included for analysis. For the maximum speed test, if the mouse failed to hold the speed for more than 3 s after five tries, this speed was defined as the maximum speed for this mouse.
 
-## Gait analysis
+#### Gait analysis
 
 The movement of four paws in the videos was manually tracked using Vicon Motus software. The foot contact was defined as the time of the first frame in three consecutive frames in which the size of the image of the paw on the ground did not change. The foot lift was defined as the time of the frame when the front part of the paw disappeared from the image. The time sequences of the paw movement were exported and processed using a custom-written script in Spike2 (version 7.09a, Cambridge Electronic Design). The stride duration was defined as the duration between two consecutive foot contacts of the same paw. A stance phase started at the foot contact and ended at the foot-lift. A swing phase was the period from the offset of stance to the onset of the next stance. The normalized phase differences between the limbs were calculated as the time difference between stance onset of the tested limb and the reference limb (left hindlimb; lh) divided by the step-cycle duration of the reference limb (Figure 5A). All normalized phase differences ranged from 0 to 1. The value of 0 or 1 indicated a perfect in-phase coupling (synchronization), while 0.5 indicated a perfect anti-phase coupling (alternation). We classified trot, lateral-sequence walk (L-walk), bound, and out-of-phase walk (OPW) gaits as described in Lemieux et al., 2016. All other gaits defined by Lemieux et al., 2016 were categorized as ‘others.’
 
 To describe the role of different gaits during treadmill locomotion, we calculated their occurrence, persistence, and attractiveness in all steps (Lemieux et al., 2016). The occurrence was the percentage of a given gait within the total steps of a trial. The persistence of a certain gait was the percentage of two consecutive steps using the same gait out of all the consecutive steps. The attractiveness was the possibility of other gaits transferring to the focused gait.
 
-## CTB and AAV-GFP injections
+#### CTB and AAV-GFP injections
 
 To identify and characterize V3 aLPNs, we did two microinjections: (i) CTB conjugated with Alexa Fluor 488 (0.5 mg/1 ml PBS, Thermo Fisher) was injected at C5 to C8 segments. Briefly, mice were anesthetized under isoflurane throughout the surgery. A 1 cm sagittal incision was made centered over the sixth cervical spinous process for cervical injection or over the spine around the last rib for lumbar injection. A laminectomy was performed, and the bone covering the lower fifth, sixth, seventh, and upper eighth cervical segments (caudal C5 to rostral C8) was removed. The glass micropipette filled with the CTB at the tip was lowered into the spinal cord. The manipulator adjusted the position of the micropipette. Using a Nanoject II (Drummond), 500–700 nl of CTB was injected at multiple locations on one side of the spinal cord. The pipette was kept in place for additional 5 min for diffusion. After injection, the muscles were sewn back together in layers with absorbable sutures, and the skin was sewn closed with polypropylene surgical sutures. The spinal cords were harvested 7 days after CTB injections. (ii) AAV2/9-hSyn-eGFP (Molecular Tools Platform, Canada) was injected at L1–L3 segments of P30–35 Sim1TdTom mice. The procedures are the same as described above, but for the lumbar injection, the laminectomy was performed on the 11th and 12th thoracic vertebrae to uncover the L1–L3 spinal cord segments, and AAVs were injected to both sides of the spinal cord. The spinal cords were harvested 3 weeks after the AAV injections.
 
-## Immunohistochemical procedures and confocal imaging
+#### Immunohistochemical procedures and confocal imaging
 
 To detect the c-Fos expression, after 7 days for the CTB transport, the animals were subjected to walk (15 cm/s) or run (40 cm/s) on a treadmill for three times 15 min with a 5 min interval between trials. The animals in the control group were left in the home cage through the experiments. After the task, mice were put back into the home cage for 60 min prior to perfusion and tissue extraction.
 
@@ -246,58 +290,260 @@ Confocal images were obtained using a Zeiss LSM 880 laser scanning confocal micr
 
 To sample synaptic terminals in the cervical region, ×63 objective lens and the tiling function of Zeiss ZEN Pro imaging software were used, specifically 2 vertical × 3 horizontal (~370 µm × 480 µm) in lamina IX and 2 × 2 (~370 µm × 370 µm) in lamina VII/VIII. Images were analyzed using Imaris 8.1.2 software. The ‘spots’ function in Imaris was used to identify individual tdTom+ contacts, and these contacts were manually and individually analyzed to identify dual-labeled Vglut2+/AAV+ and triple-labeled tdTom+/Vglut2+/AAV+ contacts.
 
-## Electrophysiology
+#### Electrophysiology
 
 All experiments were performed using spinal cords from Sim1Ai32 mice at P2–P3. The mice were anesthetized, and the spinal cords caudal to C1 were dissected out in Ringer’s solution at room temperature (111 mM NaCl, 3.08 mM KCl, 11 mM glucose, 25 mM NaHCO3, 1.25 mM MgSO4, 2.52 mM CaCl2, and 1.18 mM KH2PO4, pH 7.4). The spinal cord was then transferred to the recording chamber to recover at room temperature for at least 1 hr before recording in Ringer’s solution. The recording chamber was partitioned by a narrow petroleum jelly (Vaseline) bridge into two parts with independent perfusion systems. The T6–T8 spinal segments were in the petroleum jelly and the whole lumbar (L) and cervical (C) region were exposed in the bath. A dye was added into one of the compartments to check the water tightness in the end of experiment. ENG recordings of the L5 and C5/C8 ventral roots were conducted using differential AC amplifier (A-M system, model 1700) with the band-pass filter between 300 Hz and 1 kHz. Analog signals were transferred and recorded through the Digidata 1400 A board (Molecular Devices) under the control of pCLAMP10.3 (Molecular Devices).
 
 To activate ChR2 in V3 INs, 488 nm fluorescent light was delivered by Colibri.2 illumination system (Zeiss) through 10 × 1.0 numerical aperture (NA) objectives mounted on an upright microscope (Examiner, Zeiss) onto the ventral surface of L1–L3 or C5–C7 segments of the isolated spinal cord. Continuous light stimuli with duration of 200 ms were used. The stimulation was applied 12 times. Then, 2 mM KA (Sigma-Aldrich) was added into the compartment for the lumbar spinal cord. The same optical stimulation to the same area was applied during the drug application and after the washout.
 
-## Statistical analysis
+#### Statistical analysis
 
 Statistical analysis was performed in Prism 7 (GraphPad Software, Inc) and MATLAB (version R2018a, The MathWorks, Inc). Brown–Forsythe ANOVA test was used to compare the ENG activity change in the same root among different conditions. Kolmogorov–Smirnov test was used to compare the difference of maximum speed between WT and V3OFF mice. Welch’s t-test was used to compare the difference of c-Fos expression in Sim1 cells and Sim1/CTB cells among different conditions. Watson–Williams test of Homogeneity of Means was used to compare phase differences between WT and V3OFF mice across all speeds and at specific speeds. The Equal Kappa test was used to compare the concentration (a measure of variability) of the phase differences between WT and V3OFF mice across all speeds and at specific speeds. p-Values of all post-hoc tests (comparisons at specific treadmill speeds) were adjusted using Bonferroni’s method.
 
-## Modeling methods
+### Modeling methods
 
-## Single neuron
+#### Single neuron
 
-All neurons were simulated in the Hodgkin–Huxley style as single-compartment models. The membrane potential, V, in neurons of the flexor (F) and extensor (E) half-centers is described as(1)C×ddtV=−INa−INaP−IK−IL−ISynE−ISynI,
+All neurons were simulated in the Hodgkin–Huxley style as single-compartment models. The membrane potential, V, in neurons of the flexor (F) and extensor (E) half-centers is described as
+
+$$
+C\times\frac{d}{dt}V=−I_{Na}−I_{NaP}−I_{K}−I_{L}−I_{SynE}−I_{SynI},
+$$
 
 where C is the membrane capacitance; t is time; INa is the fast Na+ current; INaP is the persistent (slowly inactivating) Na+ current; IK is the delayed-rectifier K+ current; IL is the leakage current; and ISynE and ISynI are synaptic excitatory and inhibitory currents.
 
-In all other populations, the neuronal membrane potential is described as follows:(2)C×ddtV=−INa−IK−IL−ISynE−ISynI.
+In all other populations, the neuronal membrane potential is described as follows:
 
-The ionic currents in Equations (1) and (2) are described as follows:(3)INa=g¯Na×mNa3×hNa×(V−ENa);INaP=g¯NaP×mNaP×hNaP×(V−ENa);IK=g¯K×mK4×(V−EK);IL=gL×(V−EL);
+$$
+C\times\frac{d}{dt}V=−I_{Na}−I_{K}−I_{L}−I_{SynE}−I_{SynI}.
+$$
 
-where g¯Na, g¯NaP (present only in RG neurons), g¯K and gL are maximal conductances of the corresponding currents; ENa, EK, and EL are the reversal potentials for Na+, K+, and leakage currents, respectively; variables m and h are the activation and inactivation variables of the corresponding ionic channels (indicated by the indices). The maximal conductances for ionic currents and the mean leak reversal potentials, EL0, were defined as follows: in F and E half-centers, g¯Na = 25 mS/cm2, g¯NaP = 0.8 mS/cm2, g¯K = 2 mS/cm2, and gL = 0.18 mS/cm2, EL0 = −66.4 (±0.664) mV; in all other populations, g¯Na = 10 mS/cm2, g¯K = 5 mS/cm2, and gL = 0.1 mS/cm2, EL0 = –68( ± 2) mV.
+The ionic currents in Equations (1) and (2) are described as follows:
 
-Activation m and inactivation h of voltage-dependent ionic channels (i.e., Na, NaP, and K) in Equation (3) are described by the differential equations:(4)τmi(V)×ddtmi=m∞i(V)−mi;τhi(V)×ddthi=h∞i(V)−hi,
+$$
+I_{Na}=g¯_{Na}\timesm_{Na}^{3}\timesh_{Na}\times(V−E_{Na});I_{NaP}=g¯_{NaP}\timesm_{NaP}\timesh_{NaP}\times(V−E_{Na});I_{K}=g¯_{K}\timesm_{K}^{4}\times(V−E_{K});I_{L}=g_{L}\times(V−E_{L});
+$$
 
-where m∞i(V) and h∞i(V) define the voltage-dependent steady-state activation and inactivation of the channel i, respectively, and τmi(V) and τhi(V) define the corresponding time constants. Activation of the sodium channels was considered instantaneous. The expressions for channel kinetics in Equation (4) are described as follows:(5)m∞Na(V)=(1+exp(−(V+34)/7.8))−1;τmNa=0;h∞Na(V)=(1+exp((V+55)/7))−1;τhNa(V)=20/(exp((V+50)/15)+exp(−(V+50))/16);m∞NaP(V)=(1+exp(−(V+47.1)/3.1))−1;τmNaP=0h∞NaP(V)=(1+exp((V+50)/6.8))−1;τhNaP(V)=180/cosh((V+50)/13.6);m∞K(V)=(1+exp(−(V+28)/4))−1;τmK(V)=3.5/cosh((V+40)/40);hk=1.
+where $g¯_{Na}$, $g¯_{NaP}$ (present only in RG neurons), $g¯_{K}$ and $g_{L}$ are maximal conductances of the corresponding currents; ENa, EK, and EL are the reversal potentials for Na+, K+, and leakage currents, respectively; variables m and h are the activation and inactivation variables of the corresponding ionic channels (indicated by the indices). The maximal conductances for ionic currents and the mean leak reversal potentials, EL0, were defined as follows: in F and E half-centers, $g¯_{Na}$ = 25 mS/cm2, $g¯_{NaP}$ = 0.8 mS/cm2, $g¯_{K}$ = 2 mS/cm2, and $g_{L}$ = 0.18 mS/cm2, EL0 = −66.4 (±0.664) mV; in all other populations, $g¯_{Na}$ = 10 mS/cm2, $g¯_{K}$ = 5 mS/cm2, and $g_{L}$ = 0.1 mS/cm2, EL0 = –68( ± 2) mV.
 
-The synaptic excitatory (ISynE with conductance gSynE and reversal potential ESynE) and inhibitory (ISynI with conductance gSynI and reversal potential ESynI) currents are described as follows:(6)ISynE=gSynE×(V−ESynE);ISynI=gSynI×(V−ESynI)
+Activation m and inactivation h of voltage-dependent ionic channels (i.e., Na, NaP, and K) in Equation (3) are described by the differential equations:
 
-where gSynE and gSynI are equal to zero at rest and are activated by the excitatory or inhibitory inputs, respectively:(7)gSynEi(t)=g¯E×∑jS{wji}×∑tkj<texp⁡(−(t−tkj)/τSynE)+g¯Ed⋅S{wdi}⋅di;gSynIi(t)=g¯I×∑jS{−wji}×∑tkj<texp⁡(−(t−tkj)/τSynI)+g¯Id⋅S{−wdi}⋅di,
+$$
+\tau_{mi}(V)\times\frac{d}{dt}m_{i}=m_{∞i}(V)−m_{i};\tau_{hi}(V)\times\frac{d}{dt}h_{i}=h_{∞i}(V)−h_{i},
+$$
 
-where S{x} = x, if x ≥ 0, and 0 if x < 0. In Equation 7, the excitatory and inhibitory synaptic conductance have two terms: one describing the effects of excitatory or inhibitory inputs from other neurons in the network and the other describing effects of inputs from the external brainstem excitatory or inhibitory drives (see also Rybak et al., 2006). Each spike arriving to neuron i in a target population from neuron j in a source population at time tkj increases the excitatory synaptic conductance by g¯E×wji if the synaptic weight wji > 0 or increases the inhibitory synaptic conductance by -g¯E×wji if the synaptic weight wji < 0. g¯E and g¯I define an increase in the excitatory or inhibitory synaptic conductance, respectively, produced by one arriving spike at |wji| = 1. τSynE and τSynI are the decay time constants for gSynE and gSynI , respectively. In the second terms of Equation 7, g¯Ed and  g¯Id are the parameters defining the increase in the excitatory or inhibitory synaptic conductance, respectively, produced by external input drive di = 1 with a synaptic weight of |wdi| = 1.
+where m∞i(V) and h∞i(V) define the voltage-dependent steady-state activation and inactivation of the channel i, respectively, and τmi(V) and τhi(V) define the corresponding time constants. Activation of the sodium channels was considered instantaneous. The expressions for channel kinetics in Equation (4) are described as follows:
 
-Excitatory and inhibitory drives to population i were modeled as a linear function of the free parameter α:, (8)di(α)=ki⋅α+d0i+dnoise
+$$
+m_{∞Na}(V)=(1+exp(−(V+34)/7.8))^{−1};\tau_{mNa}=0;h_{∞Na}(V)=(1+exp((V+55)/7))^{−1};\tau_{hNa}(V)=20/(exp((V+50)/15)+exp(−(V+50))/16);m_{∞NaP}(V)=(1+exp(−(V+47.1)/3.1))^{−1};\tau_{mNaP}=0h_{∞NaP}(V)=(1+exp((V+50)/6.8))^{−1};\tau_{hNaP}(V)=180/cosh((V+50)/13.6);m_{∞K}(V)=(1+exp(−(V+28)/4))^{−1};\tau_{mK}(V)=3.5/cosh((V+40)/40);h_{k}=1.
+$$
 
-where ki is the slope, d0i is the intercept, and α is the strength of brainstem drive. The values of ki and d0 for all populations receiving the brainstem drive are indicated in Table 1. For the calculation of the bifurcation diagrams (Figure 11), Gaussian noise with a mean of 0 and a standard deviation of 10% of the drive amplitude was added to the drive to characterize the model stability and facilitate transition between gaits in the areas of bi- and multistability.
+The synaptic excitatory (ISynE with conductance $g_{SynE}$ and reversal potential ESynE) and inhibitory (ISynI with conductance $g_{SynI}$ and reversal potential ESynI) currents are described as follows:
 
-The following general neuronal parameters were used: C = 1 μF·cm−2; ENa = 55 mV; EK = − 80 mV; ESynE = −10 mV; ESynI = −70 mV; g¯E=g¯I=g¯Ed=g¯Id= 0.05 mS/cm2; τSynE = τSynI = 5 ms.
+$$
+I_{SynE}=g_{SynE}\times(V−E_{SynE});I_{SynI}=g_{SynI}\times(V−E_{SynI})
+$$
 
-## Neuron populations
+where $g_{SynE}$ and $g_{SynI}$ are equal to zero at rest and are activated by the excitatory or inhibitory inputs, respectively:
 
-The F and E half-centers in the model had 200 neurons, all other populations incorporated 100 neurons. Random synaptic connections between the neurons of interacting populations were assigned prior to each simulation based on probability of connection, p, so that, if a population A was assigned to receive an excitatory (or inhibitory) input from a population B, then each neuron in population A would get the corresponding synaptic input from each neuron in population B with the probability p{A, B}. If p{A, B} < 1, a random number generator was used to define the existence of each synaptic connection; otherwise, (if p{A, B} = 1) each neuron in population A received synaptic input from each neuron of population B. Values of synaptic weights (wji) were set using random generator and were based on average values of these weights w¯ and variances, which were defined as 5% of w¯ for excitatory connections (w¯ > 0) and 10% of w for inhibitory connections (w¯ < 0). The average weights and probabilities of connections are specified in Table 2.
+$$
+g_{SynEi}(t)=g¯_{E}\times\sumjS{w_{ji}}\times\sumt_{kj}<texp⁡(−(t−t_{kj})/\tau_{SynE})+g¯_{Ed}⋅S{w_{di}}⋅d_{i};g_{SynIi}(t)=g¯_{I}\times\sumjS{−w_{ji}}\times\sumt_{kj}<texp⁡(−(t−t_{kj})/\tau_{SynI})+g¯_{Id}⋅S{−w_{di}}⋅d_{i},
+$$
 
-Heterogeneity of neurons within each population was provided by random distributions of the mean leakage reversal potentials E¯L0 and initial conditions for the values of membrane potential and channel kinetics variables. The values of EL0 and all initial conditions were assigned prior to simulations from their defined average values and variances using a random number generator. A settling period of 1–5 s was allowed in each simulation to stabilize the model variables.
+where S{x} = x, if x ≥ 0, and 0 if x < 0. In Equation 7, the excitatory and inhibitory synaptic conductance have two terms: one describing the effects of excitatory or inhibitory inputs from other neurons in the network and the other describing effects of inputs from the external brainstem excitatory or inhibitory drives (see also Rybak et al., 2006). Each spike arriving to neuron i in a target population from neuron j in a source population at time $t_{kj}$ increases the excitatory synaptic conductance by $g¯_{E}\timesw_{ji}$ if the synaptic weight $w_{ji}$ > 0 or increases the inhibitory synaptic conductance by $-g¯_{E}\timesw_{ji}$ if the synaptic weight $w_{ji}$ < 0. $g¯_{E}$ and $g¯_{I}$ define an increase in the excitatory or inhibitory synaptic conductance, respectively, produced by one arriving spike at |wji| = 1. $\tau_{SynE}$ and $\tau_{SynI}$ are the decay time constants for $g_{SynE}$ and $g_{SynI}$ , respectively. In the second terms of Equation 7, $g¯_{Ed}$ and  $g¯_{Id}$ are the parameters defining the increase in the excitatory or inhibitory synaptic conductance, respectively, produced by external input drive di = 1 with a synaptic weight of |wdi| = 1.
 
-## Computer simulations
+Excitatory and inhibitory drives to population $i$ were modeled as a linear function of the free parameter $\alpha$:
+
+$$
+d_{i}(\alpha)=k_{i}⋅\alpha+d_{0i}+d_{noise}
+$$
+
+where $k_{i}$ is the slope, $d_{0i}$ is the intercept, and $\alpha$ is the strength of brainstem drive. The values of $k_{i}$ and $d_{0}$ for all populations receiving the brainstem drive are indicated in Table 1. For the calculation of the bifurcation diagrams (Figure 11), Gaussian noise with a mean of 0 and a standard deviation of 10% of the drive amplitude was added to the drive to characterize the model stability and facilitate transition between gaits in the areas of bi- and multistability.
+
+**Table 1.**
+ Brainstem drive parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Target population</th>
+      <th>ki</th>
+      <th>d0i</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Excitatory drives</td>
+    </tr>
+    <tr>
+      <td>RG-E</td>
+      <td>0.0</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>RG-F (f)</td>
+      <td>0.15</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>RG-F (h)</td>
+      <td>0.3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>V3-F</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>aV3</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="3">Inhibitory drives</td>
+    </tr>
+    <tr>
+      <td>V0V</td>
+      <td>-8</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>V0D</td>
+      <td>–10</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Diagonal V0V</td>
+      <td>-3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Diagonal V0D</td>
+      <td>-3</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_f, forelimb; h, hindlimb; RG, rhythm generator._
+
+The following general neuronal parameters were used: C = 1 μF·cm−2; ENa = 55 mV; EK = − 80 mV; ESynE = −10 mV; ESynI = −70 mV; $g¯_{E}=g¯_{I}=g¯_{Ed}=g¯_{Id}=$ 0.05 mS/cm2; $\tau_{SynE}$ = $\tau_{SynI}$ = 5 ms.
+
+#### Neuron populations
+
+The F and E half-centers in the model had 200 neurons, all other populations incorporated 100 neurons. Random synaptic connections between the neurons of interacting populations were assigned prior to each simulation based on probability of connection, p, so that, if a population A was assigned to receive an excitatory (or inhibitory) input from a population B, then each neuron in population A would get the corresponding synaptic input from each neuron in population B with the probability p{A, B}. If p{A, B} < 1, a random number generator was used to define the existence of each synaptic connection; otherwise, (if p{A, B} = 1) each neuron in population A received synaptic input from each neuron of population B. Values of synaptic weights (wji) were set using random generator and were based on average values of these weights $w¯$ and variances, which were defined as 5% of $w¯$ for excitatory connections ($w¯$ > 0) and 10% of $w$ for inhibitory connections ($w¯$ < 0). The average weights and probabilities of connections are specified in Table 2.
+
+**Table 2.**
+ Connection weights.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Target (wij)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Within cervical and lumbar circuits</td>
+    </tr>
+    <tr>
+      <td>i-F</td>
+      <td>i-F (0.0125, P = 0.1); i-InF (0.3, P = 0.1), i-V0D (0.3, P = 0.1), i-V2a (0.3, P = 0.1), i-V3-F (0.3, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>i-E</td>
+      <td>i-E (0.0125, P = 0.1); i-InE (0.2, P = 0.1), i-V3-E (0.2, P = 0.05), i-Sh2 (0.1, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>i-InF</td>
+      <td>i-E (–0.6, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>i-InE</td>
+      <td>i-F (–0.07, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>i-V2a</td>
+      <td>i-V0V (0.4, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>i- V0V</td>
+      <td>c-Ini1 (0.4, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>i-Ini1</td>
+      <td>i-F (–2, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>i-V0D</td>
+      <td>c-F (–1, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>i-V3-E</td>
+      <td>c-E (0.01, P = 0.05), c-InE (0.2, P = 0.05)</td>
+    </tr>
+    <tr>
+      <td>i-V3-F</td>
+      <td>c-F (0.03, P = 0.1), i-Ini2 (0.05, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Within cervical circuits</td>
+    </tr>
+    <tr>
+      <td>i-F</td>
+      <td>i-LPNi (0.4, P = 0.1), diagonal i-V0D (0.25, P = 0.1), diagonal i-V0V (0.25, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Within lumbar circuits</td>
+    </tr>
+    <tr>
+      <td>i-F</td>
+      <td>i-aV3 (0.1, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Between cervical and lumbar circuits</td>
+    </tr>
+    <tr>
+      <td>i-Sh2 (f)</td>
+      <td>ih-F (0.02, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>i-Sh2 (h)</td>
+      <td>if-F (0.05, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>i-LPNi (f)</td>
+      <td>ih-F (–0.2, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>diagonal i-V0D (f)</td>
+      <td>ch-F (–1.2, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>diagonal if-V0V (f)</td>
+      <td>ch-F (0.1, P = 0.1)</td>
+    </tr>
+    <tr>
+      <td>i-aV3</td>
+      <td>cf-F (0.12, P = 0.1), c-Ini2 (0.5, P = 0.1)</td>
+    </tr>
+  </tbody>
+</table>
+
+_i, ipsilateral; c, contralateral; f, forelimb; h, hindlimb._
+
+Heterogeneity of neurons within each population was provided by random distributions of the mean leakage reversal potentials $E¯_{L0}$ and initial conditions for the values of membrane potential and channel kinetics variables. The values of EL0 and all initial conditions were assigned prior to simulations from their defined average values and variances using a random number generator. A settling period of 1–5 s was allowed in each simulation to stabilize the model variables.
+
+#### Computer simulations
 
 All simulations were performed using the custom neural simulation package NSM 2.5.6. The simulation package and model configuration file to create the simulations presented in this article are available at https://github.com/RybakLab/nsm, (copy archived at swh:1:rev:b66ab0ab77d02f1e7fe639a4fa78231d4df58968; Markin et al., 2022) and https://github.com/RybakLab/nsm/tree/master/models/Zhang-Shevtsova-2022. The simulation package was previously used for the development of several spinal cord models (Rybak et al., 2006, Rybak et al., 2013; McCrea and Rybak, 2007; McCrea and Rybak, 2008; Zhong et al., 2012; Shevtsova et al., 2015; Shevtsova and Rybak, 2016). Differential equations were solved using the exponential Euler integration method with a step size of 0.1 ms. Simulation results were saved as ASCII files containing time moments of spikes for all RG populations.
 
-## Data analysis in computer simulations
+#### Data analysis in computer simulations
 
 The simulation results were processed using custom MATLAB scripts (The MathWorks, Inc, MATLAB 2020b). To assess the model behavior, the averaged integrated population activities (average number of spikes per neuron per second) were used to determine the onsets and offsets of bursts and calculate the burst durations for particular population. The timing of onsets of the populational bursts was determined at a threshold level equal to 10% (for RG populations) or 30% (for V3 populations) of the average difference between maximal and minimal burst amplitude for a particular population in the current simulation. The locomotor period was defined as the duration between two consecutive onsets of the extensor bursts of the reference (left hind) RG. Duration of individual simulations depended on the value of parameter α, and to robustly estimate average values of burst duration and oscillation, for each value of α, the first 10–20 transitional cycles were omitted to allow stabilization of model variables.
 
-Normalized phase differences for each cycle were calculated as the durations between the onsets of the population burst and the onsets of the extension phase of the reference RG divided by the period. Gait classification was performed as for the experimental data using the definitions of Lemieux et al., 2016. To evaluate possible gaits with increasing brainstem drive, parameter α was linearly increased, and for each value of α, the average frequency and left–right, homolateral, and diagonal phase differences were calculated. The frequency and phase differences were then plotted against the parameter α (Figures 11 and 13) or shown as circular plot diagrams (Figure 11—figure supplement 1).
+Normalized phase differences for each cycle were calculated as the durations between the onsets of the population burst and the onsets of the extension phase of the reference RG divided by the period. Gait classification was performed as for the experimental data using the definitions of Lemieux et al., 2016. To evaluate possible gaits with increasing brainstem drive, parameter $\alpha$ was linearly increased, and for each value of $\alpha$, the average frequency and left–right, homolateral, and diagonal phase differences were calculated. The frequency and phase differences were then plotted against the parameter $\alpha$ (Figures 11 and 13) or shown as circular plot diagrams (Figure 11—figure supplement 1).

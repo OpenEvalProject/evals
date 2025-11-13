@@ -51,31 +51,514 @@ In Guyana in 2010, 5.1% (5 out of 98) of P. falciparum-infected clinical samples
 
 ## Results
 
-## Recent circulation of the pfk13 C580Y mutation on a single clonal background
+### Recent circulation of the pfk13 C580Y mutation on a single clonal background
 
 We genotyped the propeller domain of the pfk13 gene by Sanger sequencing 854 samples collected between March 2016 and September 2017 from different malaria-endemic regions of Guyana. Fourteen samples bearing the pfk13 C580Y variant were identified, representing a prevalence of 1.6% (CI950.8–2.5%). The prevalence of mutants was 8.8% (CI953.6–14.0%) in Region 1, 0.7% (CI950.0–2.0%) in Region 8 and 0.5% (CI950.0–1.1%) in Region 7 (Figure 1, Figure 1—source data 1). We also genotyped the sequence outside of the propeller domain for 283 samples. Among these, 57.2% (CI9551.5–63.0%) were the 3D7 reference genotype, 42.0% (CI9536.3–47.8%) carried the pfk13 K189T mutation and 0.7% (CI950.0–1.7%) had a mixed genotype (wild-type/K189T). All samples bearing the pfk13 C580Y variant also exhibited the pfk13 K189T mutation, which to date has not been associated with artemisinin resistance.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/51015/elife-51015-fig1-v1.jpg)
 
-**Figure 1.:** pfk13 C580Y mutant parasites among Guyana regions.Pie charts represent the total number of isolates analyzed per region. Mutants are represented in red.Figure 1—source data 1.pfk13 propeller segment WT or C580Y mutant, analyzed by sampling regions in Guyana from March 2016 to September 2017.
+**Figure 1.:** Pie charts represent the total number of isolates analyzed per region. Mutants are represented in red.
 
 To understand the origin of the C580Y mutation and examine the genetic relatedness of the mutant strains, we performed whole-genome sequencing (WGS) on thirteen of the fourteen Guyana samples exhibiting the pfk13 C580Y mutation, as well as 40 comparator samples exhibiting wild-type pfk13 and collected at comparable locations and times. The variant profile observed in the sequenced samples identified that the pfk13 C580Y variant arose on a single Guyanese parasite genetic background, and was not imported from Southeast Asia (Figure 2a). Deeper examination of the genomic similarity was performed by estimating the proportion of the genome that was identical-by-descent between sample pairs. This analysis revealed an extremely high level of relatedness between sample pairs bearing pfk13 C580Y (identity by descent (IBD) >0.77) relative to pairwise comparisons containing at least one wild-type pfk13 sample (Figure 2b). This indicates that the parasite lineage on which C580Y arose in Guyana in 2010 probably engaged in limited sexual outcrossing with other parasite lineages in Guyana, despite having persisted for a sufficient duration of time to be observed in multiple regions of the country and to have risen to a non-negligible frequency in the Region 1 population.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/51015/elife-51015-fig2-v1.jpg)
+
+**Figure 2.:** (a) Comparison of the haplotypic background of pfk13 C580Y mutant parasites from Guyana, 2016, and Southeast Asia, 2010–2012. Across Pf3k samples from Cambodia, Thailand, and Vietnam, 45 unique C580Y-coding haplotypic backgrounds were identified and compared to haplotypes from Guyana. Columns represent 149 sites containing non-singleton single nucleotide polymorphisms (SNPs) found within a 150 kb segment surrounding the pfk13 C580Y-coding allele. At a given site, the more common allele is marked blue, the less common allele is orange, and missing calls are grey. The Y-coding variant for codon 580 of pfk13 is represented by the red blocks; wild-type is blue. Only the five pfk13 C580Y mutant samples with fewer than 15% missing calls are depicted here. (b) Analysis of relatedness at the whole-genome level among Guyana clones. Pairwise identity-by-descent (IBD) was estimated for all pairs of Guyana samples with high quality whole-genome sequence data (<70% missing calls). Pairwise comparisons between samples exhibiting the pfk13 C580Y allele are indicated in red, and show uniformly high levels of relatedness, suggesting a single clonal lineage harboring the resistance mutation. (c, d) Principal components analysis of parasites from Guyana or other geographic regions using SNP calls from whole-genome sequence data. (c) The parasites from Guyana and French Guiana form a single cluster when compared with parasites from Africa. (d) The two edited parasite lines from French Guiana are highly similar to the sequenced parasite samples from Guyana including a pfk13 mutant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51015/elife-51015-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The median number of nucleotide differences between the two edited French Guianan lines and Guyanese parasites (FrGu-Guy; 0.23 per thousand nucleotides) is lower than the median nucleotide differences between parasite pairs drawn from within any of the other analyzed populations. To account for potential differences in sequencing depth and quality across populations, calculations were made using a set of high quality SNP calls (GATK quality score >20;<80% missing calls for the given population). FrGu: French Guiana, Guy: Guyana, DRC: Democratic Republic of Congo.
+
 In the 75 kb segments flanking the 2016–2017 C580Y-coding variant, WGS identified only two low-quality single nucleotide variants among the 13 mutant samples (Figure 2a). We also analyzed pfk13 C580Y parasites using eight microsatellite loci flanking the pfk13 gene. Despite missing data for some loci in some samples, two different haplotypes were identified, differing at one locus positioned at −6.36 kb (Table 1). The previously identified Guyana A mutant haplotype (Chenet et al., 2016) matched the most common haplotype in the 2016–2017 samples, which was markedly distinct from the one observed in pfk13 Cambodian mutants (Chenet et al., 2016). The second 2016 haplotype exhibiting the 280 allele at the locus −6.36 kb has not been previously identified. As replicate genotyping efforts reproduced the allelic variant at locus −6.36, it is likely that a de novo microsatellite mutation occurred at locus −6.36 following the origin of the C580Y mutation. The high similarity of the microsatellite haplotypes bearing C580Y between 2010 (Chenet et al., 2016) and 2016 suggests that the chromosome 13 resistance haplotype, and perhaps the full clonal lineage, has persisted over this timespan, as several of the allelic markers associated with the C580Y mutation are rare in both studies (e.g. allele 277 at marker −6.36: 11%; allele 206 at marker −0.15: 9%; allele 244 at marker 72.3: 6% Chenet et al., 2016). We were not able to procure remaining DNA from the samples collected in 2010 to determine whether the entire genomic background has been preserved intact as a clonal lineage between 2010 and 2016. However, the genotypes of the molecular markers for resistance (pfcrt, pfdhps, pfdhfr and pfmdr1) were also similar between 2010 and 2016 mutant samples (Supplementary file 1).
 
-## Evidence for a Guyana-specific genetic background of pfk13 C580Y mutants
+**Table 1.**
+ pfk13 microsatellite analysis of Guyanese and Cambodian isolates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Region</th>
+      <th>Year of collection</th>
+      <th>−31.9</th>
+      <th>−6.36</th>
+      <th>−3.74</th>
+      <th>−0.15</th>
+      <th>K13°</th>
+      <th>3.4</th>
+      <th>8.6</th>
+      <th>15.1</th>
+      <th>72.3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T145</td>
+      <td>1</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>277</td>
+      <td>170</td>
+      <td>206</td>
+      <td>C580Y</td>
+      <td>138</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T237</td>
+      <td>7</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>277</td>
+      <td>170</td>
+      <td>206</td>
+      <td>C580Y</td>
+      <td>138</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T244</td>
+      <td>1</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>280</td>
+      <td>170</td>
+      <td>NA</td>
+      <td>C580Y</td>
+      <td>138</td>
+      <td>NA</td>
+      <td>144</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>T305</td>
+      <td>1</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>277</td>
+      <td>170</td>
+      <td>206</td>
+      <td>C580Y</td>
+      <td>138</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T345</td>
+      <td>1</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>277</td>
+      <td>170</td>
+      <td>206</td>
+      <td>C580Y</td>
+      <td>138</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T364</td>
+      <td>1</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>277</td>
+      <td>170</td>
+      <td>206</td>
+      <td>C580Y</td>
+      <td>138</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T378</td>
+      <td>1</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>277</td>
+      <td>170</td>
+      <td>206</td>
+      <td>C580Y</td>
+      <td>NA</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T385</td>
+      <td>7</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>277</td>
+      <td>170</td>
+      <td>206</td>
+      <td>C580Y</td>
+      <td>138</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T445</td>
+      <td>1</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>277</td>
+      <td>170</td>
+      <td>206</td>
+      <td>C580Y</td>
+      <td>NA</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T490</td>
+      <td>7</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>280</td>
+      <td>170</td>
+      <td>206</td>
+      <td>C580Y</td>
+      <td>NA</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T508</td>
+      <td>8</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>277</td>
+      <td>170</td>
+      <td>206</td>
+      <td>C580Y</td>
+      <td>138</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T314</td>
+      <td>1</td>
+      <td>2016</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>C580Y</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>T649</td>
+      <td>1</td>
+      <td>2016</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>C580Y</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>GUY0183</td>
+      <td>1</td>
+      <td>2017</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>C580Y</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>T208</td>
+      <td>7</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>280</td>
+      <td>152</td>
+      <td>192</td>
+      <td>WT</td>
+      <td>138</td>
+      <td>284</td>
+      <td>138</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T265</td>
+      <td>7</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>280</td>
+      <td>156</td>
+      <td>192</td>
+      <td>WT</td>
+      <td>102</td>
+      <td>262</td>
+      <td>144</td>
+      <td>238</td>
+    </tr>
+    <tr>
+      <td>T317</td>
+      <td>1</td>
+      <td>2016</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>156</td>
+      <td>190</td>
+      <td>WT</td>
+      <td>NA</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T332</td>
+      <td>7</td>
+      <td>2016</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>154</td>
+      <td>190</td>
+      <td>WT</td>
+      <td>102</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T504</td>
+      <td>8</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>280</td>
+      <td>152</td>
+      <td>192</td>
+      <td>WT</td>
+      <td>138</td>
+      <td>284</td>
+      <td>138</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>T524</td>
+      <td>7</td>
+      <td>2016</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>170</td>
+      <td>192</td>
+      <td>WT</td>
+      <td>102</td>
+      <td>270</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>T634</td>
+      <td>8</td>
+      <td>2016</td>
+      <td>205</td>
+      <td>280</td>
+      <td>156</td>
+      <td>192</td>
+      <td>WT</td>
+      <td>102</td>
+      <td>262</td>
+      <td>144</td>
+      <td>238</td>
+    </tr>
+    <tr>
+      <td>T724</td>
+      <td>8</td>
+      <td>2016</td>
+      <td>203</td>
+      <td>280</td>
+      <td>154</td>
+      <td>192</td>
+      <td>WT</td>
+      <td>NA</td>
+      <td>284</td>
+      <td>138</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Guyana A*</td>
+      <td>1 and 7</td>
+      <td>2010</td>
+      <td>203</td>
+      <td>277</td>
+      <td>170</td>
+      <td>206</td>
+      <td>C580Y</td>
+      <td>138</td>
+      <td>262</td>
+      <td>144</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>Guyana B*</td>
+      <td>7</td>
+      <td>2010</td>
+      <td>203</td>
+      <td>277</td>
+      <td>170</td>
+      <td>206</td>
+      <td>C580Y</td>
+      <td>138</td>
+      <td>262</td>
+      <td>144</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MRA 1236*</td>
+      <td></td>
+      <td>2010</td>
+      <td>201</td>
+      <td>283</td>
+      <td>146</td>
+      <td>194</td>
+      <td>C580Y</td>
+      <td>130</td>
+      <td>286</td>
+      <td>138</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MRA 1240*</td>
+      <td></td>
+      <td>2011</td>
+      <td>201</td>
+      <td>283</td>
+      <td>146</td>
+      <td>194</td>
+      <td>R539T</td>
+      <td>122</td>
+      <td>264</td>
+      <td>138</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>MRA 1241*</td>
+      <td></td>
+      <td>2011</td>
+      <td>201</td>
+      <td>283</td>
+      <td>146</td>
+      <td>194</td>
+      <td>I453T</td>
+      <td>130</td>
+      <td>290</td>
+      <td>138</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3D7</td>
+      <td></td>
+      <td></td>
+      <td>207</td>
+      <td>283</td>
+      <td>164</td>
+      <td>226</td>
+      <td>WT</td>
+      <td>160</td>
+      <td>274</td>
+      <td>147</td>
+      <td>242</td>
+    </tr>
+    <tr>
+      <td>7G8</td>
+      <td></td>
+      <td></td>
+      <td>225</td>
+      <td>280</td>
+      <td>158</td>
+      <td>196</td>
+      <td>WT</td>
+      <td>102</td>
+      <td>262</td>
+      <td>144</td>
+      <td>240</td>
+    </tr>
+  </tbody>
+</table>
+
+_°Codons 438–704, NA: No Amplification, ND: Not Done, *: Mutants from Chenet et al., 2016 according to the new size-assignment for microsatellites._
+
+### Evidence for a Guyana-specific genetic background of pfk13 C580Y mutants
 
 The observation of the C580Y mutation persisting in only one clonal lineage suggests that genomic background may be an important determinant of the emergence and persistence of pfk13 propeller mutations in Guyana, as was previously observed in Southeast Asia (Miotto et al., 2013; Miotto et al., 2015; Cerqueira et al., 2017; Amato et al., 2018). We therefore compared the genetic background of 53 isolates from Guyana (40 pfk13 wild-type and 13 pfk13 C580Y) and the artemisinin-resistant background observed in Southeast Asian parasites, in order to explore whether partner mutations associated with pfk13-mutant parasites may be responsible for the preservation of this clonal lineage (Miotto et al., 2015). None of the previously described mutations were observed, including the pffd D193Y, pfcrt N326S, pfcrt I356T, pfarps V127M and pfmdr2 T484I variants. The pfcrt gene was of South American origin with a 7G8 haplotype comprising the mutations C72S, K76T, A220S, N326D and I356L, with no particular difference between wild-type and pfk13 C580Y parasites (Supplementary file 1). However, within this candidate gene set, we observed two fixed differences between wild-type and pfk13 C580Y parasites, both within the gene PF3D7_1252100 (RON3) (Supplementary file 2). Although overall genotyping rates were low in this gene (successful for 15 out of 53), all genotyped pfk13 C580Y mutants (n = 5) contained a V1661L-coding variant and all genotyped pfk13 wild-type parasites (n = 9) carried a synonymous non-reference variant at codon 1801. We also analyzed other molecular markers for resistance (pfcrt, pfdhps, pfdhfr and pfmdr1) (Supplementary file 1). All pfk13 C580Y variants were pfcrt SVMNT (72-76)/A220S/N326D/C350/I356L (i.e. the pfcrt 7G8 haplotype), pfdhfr double-mutant (N51I/S108N), pfdhps triple-mutant (A437G/K540E/A581G) and pfmdr1 triple-mutant (Y184F/N1042D/D1246Y). In summary, Guyanese parasites bearing pfk13 C580Y also exhibited variants in genes previously associated with separate antimalarial drug resistance phenotypes in Southeast Asia.
 
-## A single pfk13 C580Y clone has fluctuated through time without massive spreading
+### A single pfk13 C580Y clone has fluctuated through time without massive spreading
 
 The highest prevalence of the Guyanese pfk13 C580Y variant was found in Region 1. This variant was first observed in April 2016 and achieved a maximum prevalence of 25.0% (CI953.8–46.2%) in June 2016 (Figure 3, Figure 3—source data 1). Thereafter, it was not identified between September 2016 and March 2017 despite a constant transmission level of malaria in this region during this period. To understand these fluctuations in prevalence, we studied the parasite population dynamics in the country. We compared parasites from Guyana to samples from Africa and Southeast Asia (Supplementary file 3). At synonymous sites within 4888 genes, pairwise nucleotide diversity (πsyn) in Guyana was 3.4 × 10−4, less than half the level observed in Southeast Asia (7.4 × 10−4) and nearly a third of that measured in Africa (1.0 × 10−3). In Guyana, 46 samples had sufficient sequencing coverage to assess their complexity of infection (COI), and only one (2.2%) showed evidence of multiple parasite lineages (COI > 1). In contrast, multiclonal infection estimates from Africa and Southeast Asia are routinely higher (Chang et al., 2017; Galinsky et al., 2015; Assefa et al., 2014; Zhu et al., 2019). Despite the low nucleotide diversity and small proportion of multiclonal infections, Guyana harbors a relatively high number of distinct parasite lineages and few parasite pairs with identical genomes. We found that only 0.54% of wild-type Guyanese parasite pairs showed evidence of belonging to the same clonal lineage (IBD >0.75).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/51015/elife-51015-fig3-v1.jpg)
 
-**Figure 3.:** pfk13 C580Y mutants in Region 1 of Guyana per month of collection, 2016–2017.The percentage of pfk13 C580Y mutants for each month of identification is represented above each bar.Figure 3—source data 1.pfk13 WT or C580Y mutant alleles in Region 1 of Guyana from March 2016 to September 2017.
+**Figure 3.:** The percentage of pfk13 C580Y mutants for each month of identification is represented above each bar.
 
-## pfk13 C580Y and R539T mutations generate in vitro artemisinin resistance in cultured parasites from the Amazonia
+### pfk13 C580Y and R539T mutations generate in vitro artemisinin resistance in cultured parasites from the Amazonia
 
 To evaluate the impact of the pfk13 C580Y mutation on artemisinin susceptibility in parasites, we culture-adapted two P. falciparum isolates (O141-A and R086) from French Guiana (a neighboring country in the Guiana Shield) and genetically edited these lines using a previously described zinc-finger nuclease (ZFN) based approach (Straimer et al., 2015). We also evaluated the impact of the variant arginine to threonine mutation at codon 539 (R539T), associated with one of the highest in vitro artemisinin resistance levels in Asian parasites (Ariey et al., 2014; Straimer et al., 2015). These two culture-adapted lines both exhibit the pfcrt SVMNT haplotype that is associated with chloroquine resistance, but only R086 carries the pfcrt C350R mutation that was earlier found to restore chloroquine susceptibility to South American parasites despite the presence of the SVMNT haplotype (Pelleau et al., 2015). These parasite lines from French Guiana exhibit a high level of genomic similarity to our genome-sequenced Guyanese parasites (Figures 2c and d; Figure 2—figure supplement 1). These findings suggest that phenotypes observed in these lines from French Guiana are relevant for understanding the impact of the pfk13 C580Y variant in Guyanese parasites, none of which have yet been adapted to in vitro culture.
 
@@ -83,11 +566,23 @@ We produced isogenic lines expressing the wild-type pfk13 allele (R086ctrl, O141
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/51015/elife-51015-fig4-v1.jpg)
 
-**Figure 4.:** Data show survival rates of ring-stage parasites (0–3 hr post invasion of human erythrocytes) after a 6 hr pulse of 700 nM DHA, as measured by microscopy 66 hr later. Data illustrate mean ± SEM percent survival from three independent repeats compared with dimethyl sulfoxide (DMSO)-treated parasites as a control for two isolates from French Guiana (O141-A, R086). Parents harbored wild-type pfk13 allele, and for zinc-finger nuclease edited isogenic parasites, control (ctrl) isolates harbored wild-type pfk13 allele with silent mutations or pfk13 mutations (C580Y or R539T). IPC4912, a Cambodian reference strain harboring the I543T pfk13 mutation was used as a control. A parasite line is considered resistant when the survival rate is greater than 1%. Student’s t-test was used to assess significant differences between survival rates of parental and pfk13-edited parasites. *p<0.05; **p<0.01; ns: not significant.Figure 4—source data 1.pfk13 gene-edited (wild-type, C580Y or R539T) isogenic field isolates from French Guiana.
+**Figure 4.:** Data show survival rates of ring-stage parasites (0–3 hr post invasion of human erythrocytes) after a 6 hr pulse of 700 nM DHA, as measured by microscopy 66 hr later. Data illustrate mean ± SEM percent survival from three independent repeats compared with dimethyl sulfoxide (DMSO)-treated parasites as a control for two isolates from French Guiana (O141-A, R086). Parents harbored wild-type pfk13 allele, and for zinc-finger nuclease edited isogenic parasites, control (ctrl) isolates harbored wild-type pfk13 allele with silent mutations or pfk13 mutations (C580Y or R539T). IPC4912, a Cambodian reference strain harboring the I543T pfk13 mutation was used as a control. A parasite line is considered resistant when the survival rate is greater than 1%. Student’s t-test was used to assess significant differences between survival rates of parental and pfk13-edited parasites. *p<0.05; **p<0.01; ns: not significant.
 
-## Pfk13 C580Y and R539T have a fitness impact on parasites depending on the genetic background
+### Pfk13 C580Y and R539T have a fitness impact on parasites depending on the genetic background
 
 To assess the in vitro fitness of the pfk13 mutants relative to the wild-type isogenic lines, we performed a competitive growth assay by co-culturing each pair of mutant and wild-type isogenic parasite lines and measuring the pfk13 allele frequencies over 60 days (~30 asexual generations). This was achieved using a highly sensitive and robust Taqman allelic discrimination real-time PCR (qPCR) assay (Figure 5—figure supplement 1, Figure 5—figure supplement 2, Figure 5—figure supplement 1—source data 1, Figure 5—figure supplement 2—source data 1) that was able to accurately quantify the different proportions of the mutant alleles in these samples. Results showed a modest growth deficit in pfk13 mutants compared to the wild-type parent for both the R086 and O141-A lines, suggesting that the pfk13 C580Y and R539T mutations negatively impact parasite growth. Over the 60 day period, we observed an 18% reduction in the frequency of the R539T mutant for the R086 line, and larger significant reductions of 24% and 40% in allele frequencies of the C580Y mutants of R086 and O141-A compared to their respective isogenic wild-type counterparts (Figure 5a, Figure 5—source data 1). This reflected an average reduced growth rate of −0.6%, −0.8% and −1.3% per 48 hr generation of the R086R539T, R086C580Y and O141-AC580Y mutant lines, respectively, across 30 generations (Figure 5b, Figure 5—source data 1). In addition to observing that the C580Y mutation conferred a higher fitness cost compared to the R539T mutation, we also saw that the parasite genetic background contributed to the severity of the fitness deficit, as the growth defect in the C580Y mutation was substantially more pronounced in O141-A compared with R086 parasites (Figure 5, Figure 5—source data 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/51015/elife-51015-fig5-v1.jpg)
+
+**Figure 5.:** (a) Frequency of wild-type and mutant parasites in co-culture, as measured by TaqMan allelic discrimination qPCR. Data show the percentage of pfk13 mutant parasites in the culture over 60 days with sampling every two days. Error bars represent the SEM of pfk13 mutant allele frequency between the two biological replicates (including two technical replicates for qPCR). A percentage below 50% indicates the mutant was less fit than the isogenic pfk13 wild-type line. (b) Percentage change per generation of pfk13 mutant allele frequency relative to wild-type. Data show that pfk13 mutations confer an in vitro fitness cost in both parasite lines. Differences in growth rates were calculated as the percent change in pfk13 mutant allele frequency averaged over 30 generations. Error bars represent the SEM of percentage growth change between the two biological sampling experiments calculated for every generation in each co-culture. Significance was calculated using the Wilcoxon signed-rank test in every generation across the two biological replicate experiments. **p<0.01, ***p<0.001; ns: not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51015/elife-51015-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a, b) Standard curves showing good amplification efficiency (between 88% and 95%) and high sensitivity using 10-fold serially diluted genomic DNA obtained from wild-type pfk13 C580 and R539 or mutant pfk13 C580Y or R539T parasites. (c, d) Scatter plots for percent wild-type and mutant alleles in multiplexed qPCR assays using pre-defined mixtures of plasmids. We used mixtures comprising of pfk13 C580 and C580Y or R539 and R539T expressing plasmids in fixed molar ratios of wild-type: mutant alleles (0:100, 20:80, 40:60, 50:50, 60:40, 80:20, 100:0) to validate the specificity of using TaqMan qPCR assays to determine the pfk13 allele frequency.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/51015/elife-51015-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Scatter plots show the percentage of pfk13 R539T parasites in two separate qPCR technical replicate runs which correlate perfectly. (b) Scatter plots show the percentage of pfk13 R539T parasites in two independent sampling replicates over 60 days in culture, which showed consistent trends.
 
 ## Discussion
 
@@ -105,31 +600,31 @@ The World Health Organization (WHO) has categorized countries regarding artemisi
 
 ## Materials and methods
 
-## Sample collection
+### Sample collection
 
 In collaboration with PAHO, 854 P. falciparum isolates were collected in Guyana from March 2016 to September 2017 in febrile individuals visiting the malaria clinic. Parasites associated with these samples came mainly from Region 1 (n = 114), 7 (n = 572) and 8 (n = 150) (Figure 1, Figure 1—source data 1). Those are the three main endemic regions for malaria in the country. Sample collection was done in patients who provided informed consent. As part of molecular surveillance established in the country, consent from the patients was not required and filter papers were collected at the diagnosis time in different clinics and hospital of the country.
 
-## DNA extraction and pfk13 genotyping
+### DNA extraction and pfk13 genotyping
 
 DNA was extracted from dried blood spots using the QIAmp DNA mini kit according to the manufacturer’s protocol (Qiagen, Germany). The pfk13 gene of each sample was amplified by nested PCR using published primers (Ariey et al., 2014; Menard and Ariey, 2013). For the primary PCR, 1 µl of DNA was amplified in a Mastermix containing: 1X of HOT FIREPol Blend Master Mix Ready to Load (12.5 mM MgCl2, Solis BioDyne), 3.5 mM MgCl2, and 0.2 µM of each primer to a final volume of 25 µl. The amplification program was: 15 min at 95°C, then 35 cycles of 30 s at 95°C, 2 min at 60°C, 2 min at 72°C, and a final extension of 10 min at 72°C. For the nested PCR, 1 µl of primary PCR product was amplified under the same conditions with the following program: 15 min at 95°C, then 40 cycles of 30 s at 95°C, 1 min at 60°C, 1 min at 72°C, and a final extension of 10 min at 72°C. Nested PCR products were detected using 2% agarose gel electrophoresis and ethidium bromide staining. Double-strand sequencing was performed by Eurofins (France). Sequences were aligned with Geneious v8.1.7 using the 3D7 pfk13 sequence as a reference. Mutant isolates were analyzed twice to confirm results.
 
-## pfk13-flanking microsatellite analysis
+### pfk13-flanking microsatellite analysis
 
 The analysis of eight microsatellite loci located upstream (−31.9,–6.36, −3.74,–0.15 kb) and downstream (3.4, 8.6, 15.1, 72.3 kb) of the pfk13 gene within isolates from Guyana was performed as previously described (Chenet et al., 2016; Cheeseman et al., 2012; Talundzic et al., 2015).
 
-## Genetic modification of parasites at the positions 580 and 539 of the pfk13 gene
+### Genetic modification of parasites at the positions 580 and 539 of the pfk13 gene
 
 Parasites were cultured in human red blood cells in enriched RPMI medium containing 10% human serum and were propagated at 37°C in 10% O2, 5% CO2 and 85% N2. The enriched medium is composed of RPMI-1640 (ref 4130, Sigma Aldrich) with HEPES [25 mM], L-glutamine [5 mM], glucose [22 mM], NaHCO35% [25 mM], gentamycin [20 mM], hypoxanthine [0.37 mM] and orotic acid [1.6 µM]. Two P. falciparum isolates collected in French Guiana in 2011 (O141-A) and 2014 (R086) were genetically modified using the ZFN method as previously described (Straimer et al., 2015). Briefly, donor plasmids (pZFN-K13-18/20-hDHFR-bsmut carrying the wild-type pfk13 allele and pZFN-K13-18/20-hDHFR-C580Y and pZFN-K13-18/20-hDHFR-R539T carrying the mutated pfk13 allele) were purified from XL10-Gold bacteria using the QIAGEN plasmid Maxi kit (ref12162) and resuspended in Cytomix. Parasites were electroporated with 50 µg of donor plasmid using the Biorad Gene-PulserII electroporator with settings of 0.31 kV and 950 µF (Fidock and Wellems, 1997). The day after electroporation and for 6 days, parasites were exposed to 2.5 nM WR99210 (a gift from Jacobus Pharmaceuticals, Princeton, NJ). Between 20–35 days after electroporation, parasites were detectable by microscopy. To check plasmid integration into parasites, DNA was extracted from bulk culture with the QIAamp DNA Mini Kit (Qiagen) and was PCR amplified using primers p16 (5’-GCTAATAAGTAATATCAATATAAGGG-3’) and p17 (5’-GGTATTAAATTTTTACCATTCCCATTAGTATTTTGTATAGG-3’). Sequencing was done by Eurofins with the p16 primer and sequences were analyzed using Geneious v8.1.7. Edited parasites were cloned by limiting dilution and selected after 3 weeks by lactate dehydrogenase assay using Malstat reagent (Goodyer and Taraschi, 1997; Adjalley et al., 2010). Selected clones were pfk13 genotyped.
 
-## In vitro drug sensitivity assays (ring-stage survival assay)
+### In vitro drug sensitivity assays (ring-stage survival assay)
 
 Parental and pfk13-edited parasites were phenotyped using the Ring-stage Survival Assay (RSA0-3h) method as previously described (Witkowski et al., 2013). RSA0-3h were performed independently three times for each line. The pfk13 I543T-mutant IPC4912 strain (MRA1241) was used as an artemisinin-resistant control. RSA0-3h was interpretable if the initial parasitemia was greater than 0.25% and if the growth rate was greater than two-fold per 48 hr. Statistical significance between survival rates of the different lines were calculated using Student’s t-test.
 
-## Competitive growth fitness assays
+### Competitive growth fitness assays
 
 Fitness assays were performed by inoculating an equal number of wild-type and mutant isogenic ring-stage parasites in a 6 ml culture at an initial parasitemia of 1%. Each co-culture experiment was performed in duplicate on two independent occasions and monitored for 60 days. Saponin-lysed parasite pellets of each co-culture were harvested every two days during 60 days and genomic DNA was extracted using the QIAmp DNA mini kit. The percentage of wild-type or mutant allele in each co-culture was determined using genomic DNA in a TaqMan Allelic Discrimination Real-Time PCR Assays. Wilcoxon signed-rank test was applied to test for statistical significance in the observed percentage of the pfk13 mutant allele in each of the individual paired co-cultures against an expected no change in the percentage of the mutant.
 
-## TaqMan allelic discrimination real-time PCR (qPCR) assays
+### TaqMan allelic discrimination real-time PCR (qPCR) assays
 
 Primers (forward and reverse) and TaqMan fluorescence-labeled MGB probes (Eurofins, Germany) for real-time quantitative PCR (qPCR) were designed to specifically detect the pfk13 propeller mutations R539T and C580Y, or the ZFN silent binding mutations, in parasites. The sequences of the forward and reverse primers, and probes (FAM and HEX probe) are shown in Supplementary file 4. We first determined the efficiency and sensitivity of amplifying the pfk13 allele in real-time PCR assays using standard curves comprising 10-fold serially diluted DNA templates ranging from 10 ng to 0.001 ng. Robustness was demonstrated by high efficiency (88–95%) and R2 values (0.98–1.00) (Figure 5—figure supplement 1a and b, Figure 5—figure supplement 1—source data 1). Next, we tested the quantitative accuracy in genotype calling by performing multiplex qPCR assays using a pre-defined set of mixtures containing plasmids expressing wild-type to mutant alleles in fixed ratios (0:100, 20:80, 40:60, 50:50, 60:40, 80:20, 100:0). The triplicate points clustered tightly, indicating high reproducibility in the data across the fitted curve (linear polynomial order = 2, R2 = 0.92 to 0.94) (Figure 5—figure supplement 1c and d, Figure 5—figure supplement 1—source data 1). Hence, our assay was able to accurately quantify the different proportions of the mutant alleles in these pre-mixed samples. For a single set of samples, we ran the qPCR on two separate occasions to test the consistency of amplification between runs. The results showed excellent correlations (Figure 5—figure supplement 2a, Figure 5—figure supplement 2—source data 1), and thus we concluded that it was not necessary to perform qPCR in replicate runs for each sample. Nevertheless, we always included three replicate qPCR reactions per sample in every run. The data showed consistently high correlations between independent sampling experiments (Figure 5—figure supplement 2b,Figure 5—figure supplement 2—source data 1).
 
@@ -137,10 +632,10 @@ Purified DNA templates were amplified with a species-specific primer set and the
 
 The software analyzed the background fluorescence level and calculated background normalized media dye fluorescence (ΔRn) as a function of cycle number for the wild-type or mutant allele. To determine the wild-type or mutant allele frequency in each sample, we first confirmed the presence of the allele by only taking values where the Ct of sample was less than that of the no template control minus three cycles. Next, we subtracted the sample’s ΔRn from the background (control plasmid: absence of wild-type or mutant expressing allele) and normalized to 100% (control plasmid: 100% wild-type or mutant expressing allele) to obtain the percentage of mutant and wild-type allele. Then we calculated the average of (mutant and 100% - wild-type) to derive the percentage of mutant allele.
 
-## Whole-genome sequencing and variant calling
+### Whole-genome sequencing and variant calling
 
 For the Guyana samples, we performed selective whole-genome amplification (SWGA) on DNA samples as previously described (Oyola et al., 2016) to enrich parasite DNA prior to sequencing on an Illumina HiSeqX instrument at the Broad Institute. We used the enriched DNA to construct Illumina sequencing libraries from the amplified material using the Nextera XT library kit (catalog no. FC-131–1002). We aligned reads to the P. falciparum v3 reference genome assembly using BWA-MEM (Li, 2013) and called SNPs and INDELs using the GATK HaplotypeCaller (Van der Auwera et al., 2013; McKenna et al., 2010; DePristo et al., 2011) according to the best practices for P. falciparum as determined by the Pf3K consortium (https://www.malariagen.net/projects/pf3k). Analyses were limited to the callable segments of the genome (Miles et al., 2016) and excluded sites where over 20% of samples were heterozygous. Additional BAM files for comparative analyses among populations were downloaded from the Pf3k project (release 5; www.malariagen.net/projects/pf3k). For each of four countries in Africa (Democratic Republic of Congo, Ghana, Guinea, and Malawi) and two countries in Southeast Asia (Cambodia and Thailand), 50 samples were chosen based on their high coverage (greatest number of sites with at least 10 × coverage).
 
-## Genomic analysis
+### Genomic analysis
 
 We calculated pairwise identity by descent (IBD) using a hidden Markov model (hmmIBD) (Schaffner et al., 2018). Samples with a missing call rate >0.7 were excluded from the analysis. We conducted PCA analyses using R (R Development Core Team, 2016) after removing samples that showed high relatedness (IBD >0.5) to another sample with higher sequencing coverage. Pairwise nucleotide diversity was calculated using a custom Perl script (Source Code File 1, Source Code File 2, Source Code File 3). All genomic analyses were limited to samples containing only a single clonal lineage, as determined by THE REAL McCOIL (Chang et al., 2017) or as identified by the Pf3K consortium (Zhu et al., 2019).

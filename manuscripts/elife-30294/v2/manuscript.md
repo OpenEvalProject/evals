@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.30294.001 Phase transitions of linear multivalent proteins control the reversible formation of many intracellular membraneless bodies. Specific non-covalent crosslinks involving domains/motifs lead to system-spanning networks referred to as gels. Gelation transitions can occur with or without phase separation. In gelation driven by phase separation multivalent proteins and their ligands condense into dense droplets, and gels form within droplets. System spanning networks can also form without a condensation or demixing of proteins into droplets. Gelation driven by phase separation requires lower protein concentrations, and seems to be the biologically preferred mechanism for forming membraneless bodies. Here, we use coarse-grained computer simulations and the theory of associative polymers to uncover the physical properties of intrinsically disordered linkers that determine the extent to which gelation of linear multivalent proteins is driven by phase separation. Our findings are relevant for understanding how sequence-encoded information in disordered linkers influences phase transitions of multivalent proteins.
+Phase transitions of linear multivalent proteins control the reversible formation of many intracellular membraneless bodies. Specific non-covalent crosslinks involving domains/motifs lead to system-spanning networks referred to as gels. Gelation transitions can occur with or without phase separation. In gelation driven by phase separation multivalent proteins and their ligands condense into dense droplets, and gels form within droplets. System spanning networks can also form without a condensation or demixing of proteins into droplets. Gelation driven by phase separation requires lower protein concentrations, and seems to be the biologically preferred mechanism for forming membraneless bodies. Here, we use coarse-grained computer simulations and the theory of associative polymers to uncover the physical properties of intrinsically disordered linkers that determine the extent to which gelation of linear multivalent proteins is driven by phase separation. Our findings are relevant for understanding how sequence-encoded information in disordered linkers influences phase transitions of multivalent proteins.
 
 ## Introduction
 
@@ -52,15 +52,169 @@ To set the stage for our investigations, we first performed proteome-wide bioinf
 
 ## Results
 
-## Disordered linkers between folded domains in the human proteome span the entire range of effective solvation volumes
+### Disordered linkers between folded domains in the human proteome span the entire range of effective solvation volumes
 
 We first sought to obtain accurate and efficient estimates of the effective solvation volume (ves) for a large set of disordered segments. For this we used all-atom simulations, which have a proven track record of describing sequence-specific conformational properties of intrinsically disordered proteins (Das et al., 2015; Martin et al., 2016; Vitalis and Pappu, 2009a2009; Das et al., 2016). Although a formal and rigorous calculation of ves is technically possible using these simulations, this approach is computationally expensive and non-trivial for large numbers of sequences. Recognizing that the effective solvation volume directly determines the global dimensions of a linker, we used the ensemble-averaged conformational properties to calculate a proxy for ves (Mao et al., 2013). Specifically, we leverage the profile of inter-residue distances to determine how a given linker sequence deviates from a sequence-specific theoretical reference that recapitulates ves = 0, which is the Flory Random Coil (FRC) (Holehouse et al., 2015). These profiles (Figure 3a) describe the average spatial separation between all pairs of residues as a function of their separation along the polypeptide sequence.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/30294/elife-30294-fig3-v2.jpg)
 
-**Figure 3.:** (a) Inter-residue distance profiles for fourteen representative sequences, each 40-residues long. The legend shows the fraction of charged residues within each linker. The green dashed curve shows the inter-residue distance profile for the reference FRC limit. (b) Summary of the variation of ∆ as a function of the fraction of charged residues for the fourteen representative sequences. Here, ∆ , �=1N∑k⟨  Rk⟩−⟨  RkFRC⟩⟨  RkFRC⟩N is the number of linker residues,is the average spatial separation between residue pairs that are ⟨  Rk⟩k apart in the linear sequence, is the corresponding spatial separation for a FRC chain, and the summation index ⟨  RkFRC⟩k runs across all sequence-separations. Linkers for which ∆ < –0.1 will have negative effective solvation volumes (ves < 0); linkers for which –0.1 ≤ ∆≤0.1 will have near zero effective solvation volumes (ves ≈ 0); and linkers for which ∆>0.1, will have positive effective solvation volumes (ves > 0). For the self-avoiding random coil (SARC) linkers, ∆ ≈ 0.5 and this is shown as a horizontal red line. (c) Length distribution of all 226 unique disordered linkers. (d) Distribution of ∆ values extracted from all-atom simulations of all 226 linkers. Based on the results shown in panel (B), we delineate the ∆-distribution into three regimes: ∆ < –0.1 (blue bars), –0.1 ≤ ∆≤0.1 (green bars), and ∆>0.1 (red bars). These regimes correspond, respectively to linkers for which ves is less than zero, near zero, or greater than zero.
+**Figure 3.:** (a) Inter-residue distance profiles for fourteen representative sequences, each 40-residues long. The legend shows the fraction of charged residues within each linker. The green dashed curve shows the inter-residue distance profile for the reference FRC limit. (b) Summary of the variation of ∆ as a function of the fraction of charged residues for the fourteen representative sequences. Here, ∆ $�=\frac{1}{N}\sumk\frac{⟨R_{k}⟩−⟨R_{k}^{FRC}⟩}{⟨R_{k}^{FRC}⟩}$, N is the number of linker residues,$⟨R_{k}⟩$is the average spatial separation between residue pairs that are k apart in the linear sequence, $⟨R_{k}^{FRC}⟩$is the corresponding spatial separation for a FRC chain, and the summation index k runs across all sequence-separations. Linkers for which ∆ < –0.1 will have negative effective solvation volumes (ves < 0); linkers for which –0.1 ≤ ∆≤0.1 will have near zero effective solvation volumes (ves ≈ 0); and linkers for which ∆>0.1, will have positive effective solvation volumes (ves > 0). For the self-avoiding random coil (SARC) linkers, ∆ ≈ 0.5 and this is shown as a horizontal red line. (c) Length distribution of all 226 unique disordered linkers. (d) Distribution of ∆ values extracted from all-atom simulations of all 226 linkers. Based on the results shown in panel (B), we delineate the ∆-distribution into three regimes: ∆ < –0.1 (blue bars), –0.1 ≤ ∆≤0.1 (green bars), and ∆>0.1 (red bars). These regimes correspond, respectively to linkers for which ves is less than zero, near zero, or greater than zero.
 
 We obtained sequence-specific inter-residue distance profiles by performing all-atom Metropolis Monte Carlo simulations using the ABSINTH implicit solvent model and forcefield paradigm (Vitalis and Pappu, 2009b) as described in the methods section. Figure 3a shows the calculated inter-residue distance profiles for fourteen distinct sequences, each of length 40 residues. Details of the sequences are shown in (Table 1). Figure 3a illustrates changes to the inter-residue distance profiles as a function of changes to the fraction of charged residues. Figure 3a also shows the inter-residue distance profile for a reference FRC linker. Sequences with positive ves will have inter-residue distance profiles that lie above the FRC reference. Conversely, sequences with negative ves will have profiles with uniformly smaller inter-residue spatial separations for given sequence separations when compared to the FRC reference. Accordingly, Figure 3a shows that sequences deficient in charged residues are expected to have negative ves values, whereas sequences enriched in charges are expected to have positive ves values.
+
+**Table 1.**
+ Summary of the parameters, the physical description of these parameters, and the default values used for the parameters of the lattice model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Physical interpretation</th>
+      <th>Default value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Valence</td>
+      <td>Number of PRMs and SH3 domains per poly-PRM and poly-SH3</td>
+      <td>5 (but titrated for results in Figure 6)</td>
+    </tr>
+    <tr>
+      <td>Interaction Strength</td>
+      <td>Intrinsic affinity between PRMs and SH3 domains</td>
+      <td>–2kBT</td>
+    </tr>
+    <tr>
+      <td>Linker Length</td>
+      <td>Length of disordered linker between interaction domains</td>
+      <td>5 (but titrated for results in Figure 8)</td>
+    </tr>
+    <tr>
+      <td>Effective solvation volume (ves)</td>
+      <td>Degree to which the Linker Prefers Interacting with Solvent</td>
+      <td>Proportional to the number of explicitly modeled linker beads</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Details of the fourteen sequences chosen at random from the human proteome.All sequences have identical lengths (40 residues) and are enriched in disorder promoting residues. The sequences are listed in descending order of the fraction of charged residues.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sequence</th>
+      <th>FCR*</th>
+      <th>NCPR†</th>
+      <th>Fraction of disorder promoting residues</th>
+      <th>UNIPROT identifier of protein from which the sequence was drawn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EDEDSEKEEEEEDKEMEELQEEKECEKPQGDEEEEEEEEE</td>
+      <td>0.80</td>
+      <td>–0.60</td>
+      <td>0.93</td>
+      <td>P37275</td>
+    </tr>
+    <tr>
+      <td>DEEGNAYGSEREEEDEEEDEEDGKRELELEEEELGGEEED</td>
+      <td>0.70</td>
+      <td>–0.55</td>
+      <td>0.88</td>
+      <td>P78415</td>
+    </tr>
+    <tr>
+      <td>REKDREKYSQREQERDRQQNDQNRPSEKGEKEEKSKAKEE</td>
+      <td>0.65</td>
+      <td>0.00</td>
+      <td>0.93</td>
+      <td>Q9H0G5</td>
+    </tr>
+    <tr>
+      <td>DRVVVTDDSDERRLKGAEDKSEEGEDNRSSESEEESEGEE</td>
+      <td>0.60</td>
+      <td>–0.30</td>
+      <td>0.88</td>
+      <td>Q9BQG0</td>
+    </tr>
+    <tr>
+      <td>EAYRLSLEADRAKREAHEREMAEQFRLEQIRKEQEEEREA</td>
+      <td>0.55</td>
+      <td>–0.10</td>
+      <td>0.88</td>
+      <td>Q9UNN5</td>
+    </tr>
+    <tr>
+      <td>RRQRRWEDIFNQHEEELRQVDKDKEDESSDNDEVFHSIQA</td>
+      <td>0.50</td>
+      <td>–0.15</td>
+      <td>0.73</td>
+      <td>Q7Z2Y5</td>
+    </tr>
+    <tr>
+      <td>NNRKGRGGNRGREFRGEENGIDCNQVDKPSDRGKRARGRG</td>
+      <td>0.45</td>
+      <td>0.15</td>
+      <td>0.76</td>
+      <td>Q5T6F2</td>
+    </tr>
+    <tr>
+      <td>QKQKLRLLSSVKPKTGEKSRDDALEAIKGNLDGFSRDAKM</td>
+      <td>0.40</td>
+      <td>0.10</td>
+      <td>0.75</td>
+      <td>Q9UMZ2</td>
+    </tr>
+    <tr>
+      <td>AEMKVLESPENKSGTFKAQEAEAGVLGNEKGKEAEGSLTE</td>
+      <td>0.35</td>
+      <td>–0.10</td>
+      <td>0.78</td>
+      <td>Q8N3D4</td>
+    </tr>
+    <tr>
+      <td>MAAAESDKDSGFSDGSSECLSSAEQMESEDMLSALGWSRE</td>
+      <td>0.30</td>
+      <td>–0.20</td>
+      <td>0.78</td>
+      <td>Q9C0C6</td>
+    </tr>
+    <tr>
+      <td>DHFMKSGFASGRNFGNRDAGECNKRDNTSTMGGFGVGKSF</td>
+      <td>0.25</td>
+      <td>0.05</td>
+      <td>0.68</td>
+      <td>Q9NQI0</td>
+    </tr>
+    <tr>
+      <td>TAVSTSGPEDICSSSSSHERGGEATWSGSEFEVSFLDSPG</td>
+      <td>0.20</td>
+      <td>–0.15</td>
+      <td>0.80</td>
+      <td>Q9BQQ3</td>
+    </tr>
+    <tr>
+      <td>FSTLGRLRNGIGGAAGIPRANASRTNFSSHTNQSGGSELR</td>
+      <td>0.15</td>
+      <td>0.10</td>
+      <td>0.73</td>
+      <td>Q9Y252</td>
+    </tr>
+    <tr>
+      <td>KSSSQTSGSLVSKSTSLASVSQLASKSSSQTSTSQLPSKS</td>
+      <td>0.10</td>
+      <td>0.10</td>
+      <td>0.85</td>
+      <td>Q9NXV6</td>
+    </tr>
+  </tbody>
+</table>
+
+_*FCR: Fraction of charged residues defined as (f++f–) where f+ and f– denote the fraction of positive and negative charges, respectively;†NCPR: Net charge per residue defined as (f+ – f–)_
 
 Since inter-residue distance profiles are direct manifestations of sequence-specific effective solvation volumes (Mao et al., 2013), we use these profiles to calculate a parameter ∆ that serves as a proxy for sequence-specific ves values. This parameter is defined as the mean signed difference between the sequence-specific inter-residue distance profile and the corresponding profile for a FRC reference. In Figure 3b we plot the calculated ∆ values against the fraction of charged residues for the fourteen disordered sequences from Figure 3a. The value of ∆ can be negative, equal to zero, or positive and this depends on whether the value of ves is negative, zero, or positive, respectively.
 
@@ -72,7 +226,7 @@ Supplementary file 1 summarizes key details regarding the naturally occurring l
 
 For linkers with negative effective solvation volumes the linkers serve as additional drivers of phase separation (Crick et al., 2013). These attractive linkers should be thought of as separate interaction domains and are hence distinct from regions that modulate the phase behavior of interaction domains. Therefore, we focused our studies on disordered linkers with near zero or positive effective solvation volumes (ves ≥ 0).
 
-## Design of coarse-grained simulations to model the phase behavior of linear multivalent proteins
+### Design of coarse-grained simulations to model the phase behavior of linear multivalent proteins
 
 Numerical simulations of phase transitions require the inclusion of hundreds to thousands of distinct multivalent proteins and a titration of a spectrum of protein concentrations. Furthermore, phase transitions are characterized by sharp changes to a small number of parameters, and the observation of these sharp transitions is computationally intractable with all-atom simulations. Therefore, we developed and deployed coarse-grained lattice models to study the impact of linkers on phase transitions. Parameters of the lattice models are summarized in Table 1 of the Materials and methods section.
 
@@ -86,17 +240,17 @@ We modeled each multivalent poly-SH3 and poly-PRM protein using a coarse-grained
 
 We start with two stylized linkers namely, Flory random coil (FRC) linkers and the self-avoiding random coil (SARC) linkers. FRC linkers correspond to chains with ves = 0. We model FRC linkers as implicit linkers (Figure 3a) – the linkers have a fixed length and tether the domains together, but do not occupy any volume on the lattice. Practically this is realized by imposing a cubic infinite square well potential to ensure that the lattice spacing between tethered interaction domains does not exceed n, which is the linker length in terms of the number of lattice sites. For the SARC linkers with positive ves, we use explicit linkers as shown in Figure 3b. A SARC linker of length n has n beads, where each bead is constrained to occupy vertices adjacent to its nearest neighbor beads on the lattice. Each explicitly modeled linker bead occupies a finite volume corresponding to one lattice site.
 
-## Parameters to distinguish between phase separation and gelation
+### Parameters to distinguish between phase separation and gelation
 
-Phase separation results from a change in density. We quantify a parameter ρ, which we define as the ratio of Rlattice to Rgproteins. Here, Rlattice is the radius that we would obtain if all proteins were uniformly dispersed across the lattice (Figure 5). Conversely, Rgproteinsis the actual ensemble-averaged radius of gyration over the spatial dimensions of the SH3, PRM, and linker beads (Figure 5). For a system that has undergone phase separation, the parameter ρ will be >1. ρ is directly related to the relative density of the proteins and measures the extent of spatial clustering of domains and linker residues. If ρ is equal to one, then the proteins are uniformly dispersed through the lattice.
+Phase separation results from a change in density. We quantify a parameter ρ, which we define as the ratio of Rlattice to $R_{g}^{proteins}$. Here, Rlattice is the radius that we would obtain if all proteins were uniformly dispersed across the lattice (Figure 5). Conversely, $R_{g}^{proteins}$is the actual ensemble-averaged radius of gyration over the spatial dimensions of the SH3, PRM, and linker beads (Figure 5). For a system that has undergone phase separation, the parameter ρ will be >1. ρ is directly related to the relative density of the proteins and measures the extent of spatial clustering of domains and linker residues. If ρ is equal to one, then the proteins are uniformly dispersed through the lattice.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/30294/elife-30294-fig5-v2.jpg)
 
-**Figure 5.:** c are calculated.(a) The scenario where ρ >>1. The radius of gyration over all proteins is the root mean square distance of each of the proteins from the center of mass of the system of proteins and is depicted as the radius of the dashed red envelope. Although the red envelope is centered on the cluster, it extends beyond the cluster boundary due to the presence of proteins outside of the cluster; that is, R is always calculated over gproteinsall proteins in the system. When a majority of the proteins are spatially clustered, the calculated R is considerably smaller than the radius of the lattice, and hence the ratio ρ >>1. gproteinsR is shown as a black dashed envelope. In panel (glatticea) a majority of the proteins are found within a single droplet-spanning cluster. This cluster encompasses ~ 80% of the modules, hence ϕc ~80%. Modules belonging to the single largest system spanning clusters are shown in yellow, the crosslinks are shown in green, and the ‘system’ here refers to the droplet. (b) The scenario where ρ ≈ 1. In this case, the modules are dispersed across the lattice volume as shown by the fact that the dashed red envelope is essentially coincident with the dashed black envelope. Here, we depict a scenario where 80% of the modules are incorporated into the single largest system-spanning cluster, where the ‘system’ volume corresponds to that of the entire lattice.
+**Figure 5.:** (a) The scenario where ρ >>1. The radius of gyration over all proteins is the root mean square distance of each of the proteins from the center of mass of the system of proteins and is depicted as the radius of the dashed red envelope. Although the red envelope is centered on the cluster, it extends beyond the cluster boundary due to the presence of proteins outside of the cluster; that is, Rgproteins is always calculated over all proteins in the system. When a majority of the proteins are spatially clustered, the calculated Rgproteins is considerably smaller than the radius of the lattice, and hence the ratio ρ >>1. Rglattice is shown as a black dashed envelope. In panel (a) a majority of the proteins are found within a single droplet-spanning cluster. This cluster encompasses ~ 80% of the modules, hence ϕc ~80%. Modules belonging to the single largest system spanning clusters are shown in yellow, the crosslinks are shown in green, and the ‘system’ here refers to the droplet. (b) The scenario where ρ ≈ 1. In this case, the modules are dispersed across the lattice volume as shown by the fact that the dashed red envelope is essentially coincident with the dashed black envelope. Here, we depict a scenario where 80% of the modules are incorporated into the single largest system-spanning cluster, where the ‘system’ volume corresponds to that of the entire lattice.
 
 We quantify gelation in terms of the fraction of molecules in the system that are part the single largest cluster. This is denoted as ϕc (Figure 5). We analyze each configuration of multivalent proteins to detect the formation of connected clusters. Within each configuration, each molecule is a node. An edge is drawn between two nodes if an SH3 domain from one molecule interacts with a PRM from another molecule. The connected cluster with the largest number of nodes is designated as the largest cluster and the number of molecules corresponding to this cluster is recorded. This quantity is calculated across the entire ensemble of configurations in order to generate an ensemble averaged value of ϕc for the system of interest. As a result of the finite surface tension associated with droplet formation and the precautions taken to reach convergence (see Materials and methods), we find that the single largest cluster absorbs all other clusters, thus giving rise to a true two-phase system as pictured in Figure 5a.
 
-## Multivalent proteins with FRC linkers undergo gelation driven by phase separation
+### Multivalent proteins with FRC linkers undergo gelation driven by phase separation
 
 We performed a series of Monte Carlo simulations using a coarse-grained lattice model for poly-SH3 and poly-PRM systems of valence 3, 5, and 7 and all combinations of these valencies. Unless otherwise specified, in all of our simulations, the linker length n was set to five lattice sites, approximately 35 residues. This linker length corresponds to the main mode in the distribution of linker lengths shown in Figure 3c.
 
@@ -110,15 +264,23 @@ Figure 6b shows results for ϕc obtained for poly-SH3 and poly-PRM systems with 
 
 The bottom row in Figure 6 shows how ρ changes for each of the multivalent systems and provides a quantification of phase separation. Figure 6d, which summarizes the results for FRC linkers, shows sharp changes to ρ as valence increases. This recapitulates the observations in Figure 6a for ϕc indicating that changes to connectivity are coupled to changes in density. This is illustrated in plots for the 7:7, 7:5, 5:7, and 5:5 systems. In contrast, the 5:3, 3:5, and 3:3 systems show gelation transitions with negligible changes to ρ. In the highly asymmetric 7:3 and 3:7 systems, the changes in ρ are considerably less pronounced when compared to changes in ϕc. In each simulation, the initial conditions correspond to the multivalent proteins being randomly dispersed across the cubic lattice (see Video 1). The movie and comparative analysis of results in Figure 6a and d provide visual support for the suggestion that systems with FRC linkers undergo phase separation plus gelation.
 
+![Video 1.](https://cdn.elifesciences.org/articles/30294/elife-30294-video1.mp4.jpg)
+
+**Video 1.:** The color-coding is such that SH3 domains are in red and PRMs are in blue. The simulations start with the molecules dispersed uniformly across the simulation volume. The movie shows droplet formation leading to gelation for bulk concentrations of SH3 domains and PRMs that lie above the saturation concentration csl.
+
 Figure 6e shows the results obtained for poly-SH3 and poly-PRM systems with SARC linkers. The results provide a striking contrast to the results obtained for proteins with FRC linkers (see Video 2 ). None of the systems show discernible changes to ρ. This implies that gelation occurs only when the concentrations are large enough to enable networking through random encounters. The positive effective solvation volumes of SARC linkers suppress phase separation and these systems undergo gelation without phase separation. Figure 6f summarizes the distinctions between FRC and SARC linkers by plotting ρ versus the concentration of modules for the symmetric cases with equal ratios of SH3 domains and PRMs. For SARC linkers, ρ ≈ 1 across the entire concentration range for (solid curves). This emphasizes the suppression of phase separation for systems with SARC linkers. For proteins with FRC linkers, the values of ρ increase sharply above unity beyond system-specific critical concentrations.
+
+![Video 2.](https://cdn.elifesciences.org/articles/30294/elife-30294-video2.mp4.jpg)
+
+**Video 2.:** The movie shows the formation of a system-spanning network formation leading to gelation for bulk concentrations of SH3 domains and PRMs that lie above the gel point cg.
 
 Representative post-equilibration configurations for 7:7 systems with FRC and SARC linkers of length five are shown in Figure 7. Both snapshots correspond to values of ϕc being above the gel point. The bounding box corresponds to the volume of the simulation cell and provides perspective regarding the change in density and networking within the system. In Figure 7a,a dense (high ρ) spherical droplet, which is a gel (ϕc is above the percolation threshold), coexists with a dilute sol of well-dispersed proteins. In contrast, Figure 7b shows how a system spanning network, that is, gelation occurs in the absence of phase separation.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/30294/elife-30294-fig7-v2.jpg)
 
-**Figure 7.:** a), and SARC linkers, panel (b) of length n = 5.In panel (a), the SH3 modules are shown in red and the PRMs in blue. In panel (b), the coloring is similar to panel (a). Additionally, molecules that are part of the single largest, system-spanning cluster are shown in orange. The main message conveyed here is that the SARC linkers suppress phase separation whereas the FRC linkers lead to gelation driven by phase separation.
+**Figure 7.:** In panel (a), the SH3 modules are shown in red and the PRMs in blue. In panel (b), the coloring is similar to panel (a). Additionally, molecules that are part of the single largest, system-spanning cluster are shown in orange. The main message conveyed here is that the SARC linkers suppress phase separation whereas the FRC linkers lead to gelation driven by phase separation.
 
-## Linkers influence the degree and type of cooperativity in sol-gel transitions
+### Linkers influence the degree and type of cooperativity in sol-gel transitions
 
 If the linkers are short, then irrespective of the effective solvation volume, the formation of a physical crosslink between a pair of multivalent proteins will increase the probability that a second crosslink can form between the same pair of proteins. In this scenario, there is positive local cooperativity, in that the apparent affinities will increase (Jencks, 1981) but the network cannot grow because the apparent valence is lower than the actual valence. In the limit of positive local cooperativity, phase separation and gelation are suppressed because collective interactions amongst the molecules are weakened in favor of forming network terminating dimers and oligomers. This scenario corresponds to infinite negative global cooperativity. In this scenario, there will neither be gelation nor phase separation.
 
@@ -130,13 +292,13 @@ Linear multivalent proteins with large positive effective solvation volume linke
 
 To summarize, gelation driven by phase separation will lead to positive global cooperativity, and enable the formation of a percolated network at bulk concentrations that are considerably smaller than the Flory-Stockmayer limit. Systems with zero or negative global cooperativity undergo gelation without phase separation and sol-gel transitions occur at or above the Flory-Stockmayer limit.
 
-## A dimensionless parameter to quantify cooperativity
+### A dimensionless parameter to quantify cooperativity
 
 To put the ideas described above on a quantitative footing and enable comparisons across different systems we calculated the percolation threshold in terms of ϕc, and we designate this as ϕcc. We then use the value of ϕcc to quantify the gel point cg. The gel point is the concentration threshold beyond which the system crosses the percolation threshold. The methods for computing ϕcc for a system with prescribed values for the valence and the binding energy between interaction domains, as well as the calculation of the gel point from ϕcc, are described in the methods section.
 
 We introduced a dimensionless parameter c* to quantify the magnitude and type of cooperativity that characterizes phase transitions of linear multivalent proteins. The parameter c* is defined as the ratio of cg,sim to cg,FS, that is, c* = (cg,sim/cg,FS). Here, cg,sim is the gel point quantified in simulations with linkers of specified length and effective solvation volume. It is defined as the lowest concentration of modules at which ϕc>0.17. This is the percolation threshold for our system of finite-sized linear multivalent proteins (see Materials and methods section). In contrast, cg,FS is the gel point obtained from Flory-Stockmayer theories (Flory, 1974, 1941, 1942b; Stockmayer, 1943). Therefore, the value of cg,FS provides an important touchstone for quantifying the influence of linkers on phase transitions, and provides a measure of the deviation from the mean-field behavior expected of long inert linkers. For a system with positive global cooperativity, c*<1; for a system with zero global cooperativity, c*=1; and for a system with negative global cooperativity, c*>1. The value of c* quantifies the joint effects on changes to the apparent affinities of interaction modules and the extent of crosslinking.
 
-## FRC linkers have an optimal range of lengths for positive cooperativity
+### FRC linkers have an optimal range of lengths for positive cooperativity
 
 We quantified the impact of linker lengths on the degree and magnitude of cooperativity for FRC linkers. Figure 8a shows a plot of c* as a function of linker lengths for 3:3, 5:5, and 7:7 systems with FRC linkers. The profile of c* is non-monotonic. In the short linker limit (n ≤ 2) the value of c* is greater than one. These linkers are too short and therefore complexes terminate in dimers of poly-SH3 and poly-PRM proteins. This is the regime of positive local and negative global cooperativity where phase transitions do not occur.
 
@@ -146,17 +308,17 @@ We quantified the impact of linker lengths on the degree and magnitude of cooper
 
 For multivalent proteins with a valance of 5 or 7 and linker lengths in the range 3 ≤ n < 12 (or 21 ≤ N ≤ 84, where N is the number of linker residues), the value of c* is less than one, and the lowest values of c* are realized for linkers of length 3 < n < 6. FRC linkers within a defined length range engender positive global cooperativity and for linker lengths in this optimal range, positive global cooperativity increases with increasing valence. This is the regime where phase separation promotes gelation and c* is less than 1. Positive global cooperativity weakens with increasing linker lengths. Accordingly, for long linker lengths, c* converges to one implying that the domains interact independently when the FRC linkers are sufficiently long. This is the regime of zero global cooperativity where gelation occurs without phase separation in accord with the predictions of Flory-Stockmayer theory (Stockmayer, 1943).
 
-## SARC linkers lead to negative global cooperativity
+### SARC linkers lead to negative global cooperativity
 
 Figure 8b shows a plot of c* as a function of linker lengths for 3:3, 5:5, and 7:7 systems with SARC linkers. Here, c* is greater than one for all the linker lengths. This is a signature of negative global cooperativity. Linkers with positive effective solvation volumes suppress phase separation and shift the gel point to higher concentrations when compared to the threshold predicted by Flory-Stockmayer theories. Explicit linkers also lower the apparent affinity through negative global cooperativity because their positive effective solvation volumes promote solvation thus diminishing productive associations among domains. This becomes less of an issue as the linkers become longer. If one corrects the intrinsic affinity to account for the weakened apparent affinity, then the convergence of the systems with long linkers to the Flory-Stockmayer limit is recovered (not shown). However, the profiles do not change qualitatively and this points to fundamental differences between systems with FRC versus SARC linkers.
 
 The analysis in Figure 8 has ramifications for drawing inferences from the proteome-wide analysis summarized in Figure 3. We find that the values of ∆ and linker length are essentially uncorrelated. This is not surprising because the main determinant of the effective solvation volumes is the sequence/amino acid composition and not the length of the linker. This point is underscored in the analysis summarized in Figure 3. Our analysis of linker sequences in linear multivalent systems shows that approximately 30% of all linkers in the inventory will have 50 or fewer residues and ∆ values less than 0.1 (Supplementary file 1). These linkers are the most likely candidates for enabling gelation driven by phase separation in linear multivalent proteins. Approximately, 18% of all linkers have fewer than 50 residues and ∆ values greater than 0.1. These are the most likely candidates for weakening phase separation and sequences with large positive values of ∆ will drive gelation without phase separation. The remainder of the linkers,~50% in all, are longer than 50 residues and these are unlikely to be major modulators of gelation transitions since the analysis in Figure 8 suggests that these linkers cross into the Flory-Stockmayer limit, where the interaction modules become independent of one another.
 
-## Phase diagrams delineate parameters for distinct types of phase transitions
+### Phase diagrams delineate parameters for distinct types of phase transitions
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/30294/elife-30294-fig9-v2.jpg)
 
-**Figure 9.:** Here, for each linker, two of the linker beads were modeled explicitly, while the other three were modeled implicitly. For low binding affinities between SH3 domains and PRMs (<3 ), the system undergoes a sol-gel transition as a function of module concentration, and the affinity-specific gel points lie on the green dashed line. The red asterisk denotes the critical point located at an interaction affinity of ~3 kBT and a module concentration of ~10kBT–3polymers/voxel. Above an interaction affinity of ~3 , the system undergoes phase separation plus gelation. Phase separation is characterized by a coexistence curve with two arms, shown in blue and purple. A solution with a bulk concentration that falls within the yellow region will never form a one-phase solution. Instead, it will separate into coexisting dilute and dense phases. The concentrations within these phases are equal to the concentrations taken from coexistence curves that intersect with the corresponding tie line (red dotted line). This is illustrated for interaction strengths of 4.5kBTk. Any solution with a bulk concentration along the tie line will phase separate into a dense phase and a dilute phase of a fixed concentration BTc and slc, respectively. For this system, the high concentration arm of the coexistence curve always lies beyond the gel-line, and therefore, the dense phase will always form a gel. The gel line within the two-phase region is calculated based on the percolation threshold and is shown as a dotted green line, which is really an extrapolation of the green dashed line. It highlights the fact that shc <slcg < csh throughout the two-phase regime. The callouts on the right show schematics of the dilute sol coexisting with a dense gel (top right) and a system spanning gel that forms via gelation without phase separation (bottom right).
+**Figure 9.:** Here, for each linker, two of the linker beads were modeled explicitly, while the other three were modeled implicitly. For low binding affinities between SH3 domains and PRMs (<3 kBT), the system undergoes a sol-gel transition as a function of module concentration, and the affinity-specific gel points lie on the green dashed line. The red asterisk denotes the critical point located at an interaction affinity of ~3 kBT and a module concentration of ~10–3polymers/voxel. Above an interaction affinity of ~3 kBT, the system undergoes phase separation plus gelation. Phase separation is characterized by a coexistence curve with two arms, shown in blue and purple. A solution with a bulk concentration that falls within the yellow region will never form a one-phase solution. Instead, it will separate into coexisting dilute and dense phases. The concentrations within these phases are equal to the concentrations taken from coexistence curves that intersect with the corresponding tie line (red dotted line). This is illustrated for interaction strengths of 4.5kBT. Any solution with a bulk concentration along the tie line will phase separate into a dense phase and a dilute phase of a fixed concentration csl and csh, respectively. For this system, the high concentration arm of the coexistence curve always lies beyond the gel-line, and therefore, the dense phase will always form a gel. The gel line within the two-phase region is calculated based on the percolation threshold and is shown as a dotted green line, which is really an extrapolation of the green dashed line. It highlights the fact that csl <cg < csh throughout the two-phase regime. The callouts on the right show schematics of the dilute sol coexisting with a dense gel (top right) and a system spanning gel that forms via gelation without phase separation (bottom right).
 
 Figure 9 shows the phase diagram that we computed from concentration dependent simulations for a 5:5 system and a hybrid five-site linker. This phase diagram is shown in the two-parameter space of the concentration of domains along the abscissa and increasing intrinsic affinities along the ordinate. For affinities below 3kBT, the system undergoes a continuous transition from a sol to a gel and the green dashed line demarcates the sol-gel line. The gels correspond to system-spanning networks that percolate through the entire simulation volume. The critical point for this system, shown as a red asterisk, is defined jointly by a critical interaction affinity (3kBT) and a critical module concentration (~10–3polymers/voxel).
 
@@ -164,13 +326,13 @@ Above the critical point, the system undergoes gelation driven by phase separati
 
 The width of the two-phase regime increases with interaction affinity. This implies that phase separation is realized at lower concentrations of the interacting domains and is depicted by a leftward shift of the arm shown in light blue in Figure 9. Concomitantly the droplet becomes more concentrated and this is depicted by a rightward shift of the arm shown in purple in Figure 9. Therefore, if the linker sequence is fixed, mutations to interaction domains or SLiMs that increase affinity will enhance phase separation, giving rise to concentrated droplets encompassing gels that coexist with dilute sols.
 
-## Phase separation is destabilized as the effective solvation volumes of linkers increase
+### Phase separation is destabilized as the effective solvation volumes of linkers increase
 
 The effective solvation volumes of linkers were titrated by fixing the linker length and changing the number of linker beads that were modeled implicitly versus explicitly. The magnitude of the effective solvation volume is quantified in terms of the number of explicitly modeled beads within each linker. For example, if two out of five linker beads are modeled explicitly, then ves is proportional to the volume of two lattice units as is the case for linkers that yield phase diagrams shown in Figures 9 and 10c.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/30294/elife-30294-fig10-v2.jpg)
 
-**Figure 10.:** es values on coupling between phase separation and gelation for 5:5 systems with linkers of length n = 5.Progressing from panel a) to panel f), the value of ves for each of the linkers increases from 0 to 5 in terms of number of lattice units. The widths of the regimes that correspond to phase separation (yellow regions) shrink as the effective solvation volumes of linkers increase. For the fully implicit, FRC linker (panel a), gelation without phase separation either requires shorter linkers or interaction affinities that are weaker than 2k. The sol-gel lines are shown as dashed lines in each panel. Accordingly, for a) and b) the gelation without phase separation are realized for SH3: PRM affinities that are weaker than 2BTk and hence they are not shown in these panels. Each panel is annotated with a schematic to show the design of hybrid linkers and each schematic we shown only a single linker for clarity.BT
+**Figure 10.:** Progressing from panel a) to panel f), the value of ves for each of the linkers increases from 0 to 5 in terms of number of lattice units. The widths of the regimes that correspond to phase separation (yellow regions) shrink as the effective solvation volumes of linkers increase. For the fully implicit, FRC linker (panel a), gelation without phase separation either requires shorter linkers or interaction affinities that are weaker than 2kBT. The sol-gel lines are shown as dashed lines in each panel. Accordingly, for a) and b) the gelation without phase separation are realized for SH3: PRM affinities that are weaker than 2kBT and hence they are not shown in these panels. Each panel is annotated with a schematic to show the design of hybrid linkers and each schematic we shown only a single linker for clarity.
 
 Each of the panels in Figure 10 corresponds to a distinct type of linker, defined by the effective solvation volume, that is, the number of explicitly modeled linker beads for a linker of length five. The results are shown for interaction affinities of modules that range from 2kBT to 5kBT. Progressing from the top left corner to the bottom right corner, we find that the critical point shifts to higher interaction affinities as the effective solvation volumes of linkers increase. If the linkers have more of an FRC-like character, then the phase transitions are likely to fit the description of being gelation driven by phase separation. For a given value of the affinity, the width of the two-phase regime increases as the magnitude of the effective solvation volume decreases. In contrast, the two-phase regime becomes negligibly small as the magnitude of the linker effective solvation volume increases. In fact, for high effective solvation volumes of linkers, the presence of a two-phase regime is discernible only for very high affinities and phase transitions occur mainly via gelation without phase separation.
 
@@ -196,63 +358,91 @@ The inventory of linker sequences, shown in Supplementary file 1, combined with 
 
 ## Materials and methods
 
-## Design of the lattice model and interaction matrix
+### Design of the lattice model and interaction matrix
 
 The interaction matrix includes the following terms: Each interaction domain (SH3 domain or PRM) or explicitly modeled linker bead has a finite ves such that each lattice site may have only one domain or linker bead. All other interactions are nearest neighbor interactions such that adjacent sites x and y on the lattice are assigned an interaction energy εxy in units of kBT, where kB is Boltzmann’s constant and T is the simulation temperature. We designate lattice sites occupied by SH3 domains using the letter S; sites occupied by PRMs by the letter P; and sites occupying linker beads by the letter L. In the default model, the interaction energies have the form: uSS = uPP = uLL=uSL = uPL=0 and uSP = –2kBT.
 
-## Design of Monte Carlo moves for simulating the phase behavior of multivalent proteins
+### Design of Monte Carlo moves for simulating the phase behavior of multivalent proteins
 
 Five types of moves were deployed to evolve the system. (i) In addition to occupying adjacent lattice sites, two interacting domains are in a bound state if and only if this is specified by the interaction state of the domains. Accordingly, one of the moves randomly changes the interaction state of a domain without changing lattice positions. (ii) The torsional state of an end module that is tethered on one side is altered and a new interaction state is chosen at random. This attempts to move the module to a new location that is within tethering range of the linker, which is the maximum allowable length for the linker. If the module is an interaction domain, then this move also changes the interaction state of the domain similar to move 1. (iii) Crankshaft motions are applied to modules tethered on both sides. The module is moved to a new location that is within tethering range of all linkers that connect to the module in question. This is followed by randomly choosing a new interaction state if the module is an interaction domain. (iv) This move involves the collective translation of all modules that are part of a connected network. The latter is calculated by analyzing the list of all proteins that are connected through interacting domains. An arbitrary translation in any direction is then attempted. (v) Finally, individual chains are allowed to undergo reptation via a slithering motion of a protein by removing an end domain and its linker and appending it to the other end. The domain and linker are placed in a random position that maintains the tether ranges. After the new position has been assigned, the interaction state of the domain is randomly assigned.
 
-## Acceptance and rejection of Monte Carlo moves
+### Acceptance and rejection of Monte Carlo moves
 
-If a move results in placement of a domain or module on a site that is already occupied, then the move is rejected. For rotational, torsional, crankshaft, and reptation moves, the moves that do not lead to steric overlap with occupied sites are accepted according to a modified Metropolis criterion viz., min{1,wexp(−ΔE)}. Here, ∆E is the change in the energy of the system that results from the proposed move. The energy is normalized with respect to kBT. The parameter w is set based on the proposed type of move. For rotational moves, w = 1; for torsional and crankshaft moves, w=(NpNc), where Np and Nc are the number of possible interacting states in the proposed and current states, respectively; finally, for reptation moves, w=(NpVpNcVc), where Np and Nc are the number of possible interacting states in the proposed and current states, respectively whereas Vp and Vc are the total number of conformations the domain and linker could be placed in the proposed state and current state respectively. These modifications to the standard Metropolis Monte Carlo acceptance criterion ensure the preservation of microscopic reversibility. The translation of a connected network does not create or destroy interactions, nor does it move the relevant linkers. Therefore, the proposed translational moves are always accepted if the move does not lead to steric overlaps.
+If a move results in placement of a domain or module on a site that is already occupied, then the move is rejected. For rotational, torsional, crankshaft, and reptation moves, the moves that do not lead to steric overlap with occupied sites are accepted according to a modified Metropolis criterion viz., $min{1,wexp(−ΔE)}$. Here, ∆E is the change in the energy of the system that results from the proposed move. The energy is normalized with respect to kBT. The parameter w is set based on the proposed type of move. For rotational moves, w = 1; for torsional and crankshaft moves, $w=(\frac{N_{p}}{N_{c}})$, where Np and Nc are the number of possible interacting states in the proposed and current states, respectively; finally, for reptation moves, $w=(\frac{N_{p}V_{p}}{N_{c}V_{c}})$, where Np and Nc are the number of possible interacting states in the proposed and current states, respectively whereas Vp and Vc are the total number of conformations the domain and linker could be placed in the proposed state and current state respectively. These modifications to the standard Metropolis Monte Carlo acceptance criterion ensure the preservation of microscopic reversibility. The translation of a connected network does not create or destroy interactions, nor does it move the relevant linkers. Therefore, the proposed translational moves are always accepted if the move does not lead to steric overlaps.
 
-## Production runs to generate phase diagrams
+### Production runs to generate phase diagrams
 
 For a majority of the simulations, except those where finite size artifacts were queried or the binding affinities were titrated, the interaction energy between adjacent sites with SH3 domains and PRMs was set to –2kBT. In every system, there were 2.4 × 103 interaction domains. Concentrations of domains were titrated by changing the number of lattice sites. Each simulation was run for 5 × 109 steps and the average over the last half was used to calculate the size of the largest connected network.
 
 In order to query the onset of a gelation transition, we quantified the fraction of molecules that make up the largest connected cluster within the system. We designate this as ϕc. The value of ϕc that is associated with crossing the critical concentration for percolation, defined as the gel point, is determined by comparing the largest connected network from a randomly generated network to the critical concentration predicted by Flory-Stockmayer theory. Here, the number of nodes in the random network is set to the number of interaction domains used in the lattice simulations. The random network was generated for stoichiometric concentrations of complementary domains. For each domain of type A, a random number was compared to the gross probability p that an individual domain would be interacting with a domain of type B. If the random number was less than p, a partner was chosen randomly among the domains of type B that do not already have a binding partner.
 
-## The impact of finite sampling
+### The impact of finite sampling
 
 In order to determine how many Monte Carlo steps the simulations should be run for, we tracked the changes in the largest cluster size for simulations near the critical concentration, where convergence is expected to be the slowest. We then ran our simulations for at least an order of magnitude longer than the equilibration time and analyzed the last half of each simulation to obtain the reported values. For select simulation conditions, we ran independent replicas and reproducibly obtained the same cluster sizes (± < 1%).
 
-## Production runs to generate phase diagrams
+### Production runs to generate phase diagrams
 
 In order to locate the concentration where ϕc exceeds the gel point, we ran simulations using a variety of different sized lattices, ranging from 50 to 340 lattice units. The range of box lengths was incrementally refined until the threshold at which the gel point was crossed could be distinguished at the resolution of a single lattice unit. Under the rare case of statistical ambiguity with respect to this threshold, we ran multiple independent simulations at each box length at the approximate gel point, and then averaged the results over all simulations at each box length to obtain a statistically accurate expected value.
 
-## Calculating the gel points from Flory-Stockmayer theory
+### Calculating the gel points from Flory-Stockmayer theory
 
 The gel point or more precisely, the percolation threshold for multivalent polymers can be estimated by analytical methods, one of which is based on Flory-Stockmayer theories. Here, the important parameters are the number of interacting modules within the polymers, V, and the fraction of bound modules, x. For a specific multivalent protein that is incorporated into a pre-formed network, the average number of additional proteins recruited into the network is denoted as ε and is expressed as: ε = (V – 1)x. In a system with two types of multivalent proteins a and b, such as the poly-SH3 and poly-PRM system, the average number of proteins that are recruited into a pre-formed network of multivalent proteins and their ligands can be expressed as: ε = εaεb = (Va – 1)xa(Vb – 1)xb.
 
-If ε is greater than 1, then on average, each protein that is incorporated into the network will bring more than one additional protein with it thus expanding the network. This cascades into an infinitely large cluster of proteins. However, if ε is less than 1 then the proteins that are added are more likely to terminate the network rather than propagate it. For our synthetic poly-SH3 and poly-PRM system, we can calculate the fraction of interactions through knowledge of the dissociation constant, Kd. We designate the SH3 domains as a and the PRMs as b. It follows that:(1)Kd=([ a ]−[ ab ])([ b ]−[ ab ])[ ab ];
+If ε is greater than 1, then on average, each protein that is incorporated into the network will bring more than one additional protein with it thus expanding the network. This cascades into an infinitely large cluster of proteins. However, if ε is less than 1 then the proteins that are added are more likely to terminate the network rather than propagate it. For our synthetic poly-SH3 and poly-PRM system, we can calculate the fraction of interactions through knowledge of the dissociation constant, Kd. We designate the SH3 domains as a and the PRMs as b. It follows that:
 
-Here, [a], [b], and [ab] are the concentrations of SH3 domains, PRMs, and bound complexes, respectively. The concentration [ab] can be calculated by a simple rearrangement of Equation (1), such that:(2)[ab]=([a]+[b]+Kd−([a]+[b]+d)2−4[a][b])2;
+$$
+K_{d}=\frac{([a]−[ab])([b]−[ab])}{[ab]};
+$$
 
-Accordingly,(3)xa=[ ab ][ a ]=([ a ]+[ b ]+Kd−([ a ]+[ b ]+d)2−4[ a ][ b ])2[ a ],xb=[ ab ][ b ]=([ a ]+[ b ]+Kd−([ a ]+[ b ]+d)2−4[ a ][ b ])2[ b ],and ε=([ a ]+[ b ]+Kd−([ a ]+[ b ]+d)2−4[ a ][ b ])4[ a ][ b ](Va−1)(Vb−1);
+Here, [a], [b], and [ab] are the concentrations of SH3 domains, PRMs, and bound complexes, respectively. The concentration [ab] can be calculated by a simple rearrangement of Equation (1), such that:
 
-We can solve for the percolation threshold or the concentration at the gel point of module a as a function of the concentration of module b by setting ε = 1. This yields:(4)[ a ]c=[ b ]+λ2[ b ]−2λKd±(λ+1)[ b ]2(λ−1)2−4λKd2λ;
+$$
+[ab]=\frac{([a]+[b]+K_{d}−\sqrt{([a]+[b]+d)^{2}−4[a][b]})}{2};
+$$
 
-Here, λ = (Va – 1)(Vb –1). The percolation threshold can also be calculated for the situation where [a] = [b]. In this scenario,(5)[ a ]c=Kdλ(1−λ)2;
+Accordingly,
+
+$$
+x_{a}=\frac{[ab]}{[a]}=\frac{([a]+[b]+K_{d}−\sqrt{([a]+[b]+d)^{2}−4[a][b]})}{2[a]},x_{b}=\frac{[ab]}{[b]}=\frac{([a]+[b]+K_{d}−\sqrt{([a]+[b]+d)^{2}−4[a][b]})}{2[b]},and \epsilon=\frac{([a]+[b]+K_{d}−\sqrt{([a]+[b]+d)^{2}−4[a][b]})}{4[a][b]}(V_{a}−1)(V_{b}−1);
+$$
+
+We can solve for the percolation threshold or the concentration at the gel point of module a as a function of the concentration of module b by setting ε = 1. This yields:
+
+$$
+[a]_{c}=\frac{[b]+\lambda^{2}[b]−2\lambdaK_{d}\pm(\lambda+1)\sqrt{[b]^{2}(\lambda−1)^{2}−4\lambdaK_{d}}}{2\lambda};
+$$
+
+Here, λ = (Va – 1)(Vb –1). The percolation threshold can also be calculated for the situation where [a] = [b]. In this scenario,
+
+$$
+[a]_{c}=\frac{K_{d}\sqrt{\lambda}}{(1−\sqrt{\lambda})^{2}};
+$$
 
 We performed simulations of random percolation models that do not account for linkers or the structure of the lattice models. Each simulation takes the valence, the number of multivalent proteins, and the fraction of bound modules as inputs. The value of ϕc is calculated for prescribed values of the fraction of bound modules and these are shown as solid sigmoidal curves in Figure 11. The theories of Flory (Flory, 1941, 1942b) and Stockmayer (Stockmayer, 1943) can be used to calculate ϕcc analytically for given values of V and the binding energies, as detailed in the Materials and methods section – see Equations (1) – (Zhu and Brangwynne, 2015). These are shown as vertical dashed lines in Figure 11. For a given valence V, the horizontal intercept that passes through intersection of the vertical dashed lines and the solid curve defines the value of ϕcc. We find this value to be ≈ 0.17, irrespective of the valence. The concentration of modules at which ϕc becomes greater than 0.17 is taken to be the value of the gel point cg for the system of interest. We can calculate the value of cg directly from our simulations for the multivalent proteins and compare this to the value of cg that is estimated from Flory-Stockmayer theories.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/30294/elife-30294-fig11-v2.jpg)
 
-**Figure 11.:** cc – the critical value of the fraction of molecules in the largest cluster, ϕc that defines the gel point: To estimate ϕ we plot cc,ϕ against the fraction of SH3 domains and PRMs that are bound.cϕc was calculated using a random network model (see Materials and methods) and for a prescribed affinity between interaction domains. ϕc shows a sigmoidal transition that shifts to the right for systems of lower valence (V). For each system, the dashed vertical lines quantify the percolation thresholds, which refer to the fraction of modules for a given valence V that must be bound in order to make a percolated network as prescribed by the theories of Flory and Stockmayer. For a given system of multivalent proteins, the intersection between the solid sigmoidal curve and the dashed vertical line quantifies the value of ϕcc.
+**Figure 11.:** ϕc was calculated using a random network model (see Materials and methods) and for a prescribed affinity between interaction domains. ϕc shows a sigmoidal transition that shifts to the right for systems of lower valence (V). For each system, the dashed vertical lines quantify the percolation thresholds, which refer to the fraction of modules for a given valence V that must be bound in order to make a percolated network as prescribed by the theories of Flory and Stockmayer. For a given system of multivalent proteins, the intersection between the solid sigmoidal curve and the dashed vertical line quantifies the value of ϕcc.
 
-## Calculation of phase boundaries
+### Calculation of phase boundaries
 
-We utilized ρ as the order parameter for differentiating between the sol-gel transitions and phase separation. The coexisting concentrations corresponding to the polymer-rich and polymer-poor phases that delineate the two-phase boundary for a given intrinsic affinity between interaction domains were calculated by assuming that the polymer-rich phase is a uniform density sphere and the polymer-poor phase has a uniform density across the remainder of the lattice. The radius of the polymer-rich phase is the radius of the sphere that is the physically relevant root of the equation:(6)1225πNTrN5−43NTRg2rN3−925NNL3rN2+(NN−NT)L54+NTL3Rg3=0;
+We utilized ρ as the order parameter for differentiating between the sol-gel transitions and phase separation. The coexisting concentrations corresponding to the polymer-rich and polymer-poor phases that delineate the two-phase boundary for a given intrinsic affinity between interaction domains were calculated by assuming that the polymer-rich phase is a uniform density sphere and the polymer-poor phase has a uniform density across the remainder of the lattice. The radius of the polymer-rich phase is the radius of the sphere that is the physically relevant root of the equation:
 
-Here, NT is the total number of proteins in the simulation, NN is the number of proteins within the largest network, L is the lattice length on a side, Rg is the radius of gyration over all the proteins in the simulation, and rN is the desired radius of the polymer-rich phase. This equation typically admits only one real root that fits within the lattice and this is true for all of our simulations. The phase boundaries were calculated using:(7)csl=(NT−NN)(L3−4πrN33)Nandcsh=3NN4πrN3.
+$$
+\frac{12}{25}\piN_{T}r_{N}^{5}−\frac{4}{3}N_{T}R_{g}^{2}r_{N}^{3}−\frac{9}{25}N_{N}L^{3}r_{N}^{2}+\frac{(N_{N}−N_{T})L^{5}}{4}+N_{T}L^{3}R_{g}^{3}=0;
+$$
 
-## The impact of finite sampling
+Here, NT is the total number of proteins in the simulation, NN is the number of proteins within the largest network, L is the lattice length on a side, Rg is the radius of gyration over all the proteins in the simulation, and rN is the desired radius of the polymer-rich phase. This equation typically admits only one real root that fits within the lattice and this is true for all of our simulations. The phase boundaries were calculated using:
+
+$$
+c_{sl}=\frac{(N_{T}−N_{N})}{(L^{3}−\frac{4\pir_{N}^{3}}{3})N}andc_{sh}=\frac{3N_{N}}{4\pir_{N}^{3}}.
+$$
+
+### The impact of finite sampling
 
 In addition to starting simulations in the random coil state, we also calculated phase diagrams using simulations that were initialized from a dense phase separated state. For each simulation we equilibrated the proteins in the gel state in a box size of 34 lattice units for 5 × 109 steps. The resulting conformation was then used to initialize simulations in a larger box by expanding the lattice boundary to achieve the desired concentration. For proteins that span the periodic boundary, the first domain was used as the reference for picking which protein image to keep. These initial conditions reproduced the critical concentrations as a function of valence and length.
 
-## All atom simulations
+### All atom simulations
 
 We identified 226 disordered linkers in the human proteome associated with multi-domain proteins. Specifically, we defined disordered linkers in multi-domain proteins as regions predicted to be disordered (Dosztányi et al., 2005) that connected two Pfam domains (Finn et al., 2014) that were predicted or known to be folded. We then filtered for linkers that were between 15 and 200 residues in length, and sub-selected for individual proteins where two or more linkers were found. For each of these sequences all-atom simulations were run to provide a general picture of the global conformational behavior associated with disordered linkers in the human proteome.
 

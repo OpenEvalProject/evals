@@ -32,17 +32,89 @@ Understanding the fundamental role played by bilayer forces in MS channel gating
 
 ## Results
 
-## Structure of membrane-embedded MscS
+### Structure of membrane-embedded MscS
 
 We first determined the structure of nanodisc-reconstituted MscS (PC:PG, 4:1) with a histidine tag at its N-terminal end (6xHis-MscS-ND) to a resolution of 3.1 Å (Figure 1—figure supplement 2). While the EM structure (Figure 1A) recapitulates some of the major characteristic seen in the MscS crystal structure (Bass et al., 2002; Steinbacher et al., 2007), the channel shows a slightly different angle for the TM1-TM2 hairpin and displays additional density towards its periplasmic face. This is a consequence of a newly resolved N-terminal domain and additional ~3 turns of helix that further extends TM1 in MscS-ND (Figure 1A, right). This new density is also present in the absence of imposed symmetry (Figure 1—figure supplement 3). This domain displays some anisotropic behavior, and together with the lower end of the TM1-TM2 hairpin, they represent the most flexible regions of the channel (Figure 1—figure supplement 2).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig1-v2.jpg)
+
+**Figure 1.:** (A) Left, the 3.1 Å resolution structure of the nanodisc-reconstituted (E3D1) MscS heptamer, shown in cartoon representation. Each subunit is shown in a different color. Bound lipids are shown as stick representation. The transparent EM density is shown overlapped to the cartoon of the protein. Right, cartoon diagram showing the MscS monomer. Colored grey are regions of the channel resolved in the crystal structure (2OAU), regions newly resolved in the MscS-ND structure are shown in cyan. The putative location of the lipid bilayer is shown as a pair of dashed lines. (B) Residue conservation and inter-subunit interactions stabilizing the anchor domain. Highly conserved sites are shown in blue, variable sites in red. Shown in sticks and balls representation are residues participating in inter-subunit interactions, either polar in nature (E2–Q11) or hydrophobic (van der Waals) packing (L23–L24, Y27–V29). On the left, a cartoon representation of the TM segments in two adjacent subunits, where the top box indicates the location of the diagram on the right.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Overall construction design of wt MscS and MscS-Cryst (Δ2–26). (B) Nanodisc (ND) lipid compositions. (C) Left. A Superdex 200 size exclusion chromatography trace of wt MscS reconstituted in POPC:POPG ND. Inside the trace are the major peaks 1 and 2 ran on a stain free SDS PAGE. Peak one was used for Cryo-EM. Right. A Superdex 200 size exclusion chromatography trace of MscS-Cryst reconstituted in POPC:POPG ND. Inside the trace is the major peak one ran on a stain free SDS PAGE. Peak one was used for Cryo-EM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** From 4403 movies, about 1 million particles were picked and 2D classified. The selected 2D classes were subjected to multiple rounds of 3D classification were truncated (possibly denatured due to the air-water interface) particles were classified out. The final reconstruction used only the 3D classes with the entire molecule. As can been seen in the 2D classes, the angular distribution of particles and the 3D FSC (Tan et al., 2017) there is an orientation preference of the top views, which in turn cause anisotropy in the Z direction. Finally, the Resmap map shows the structure is 3 Å or better except for the anchor domain and the TM1/2 hairpin.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The 3D refined model from Figure S2 was processed without symmetry (C1) in Relion. The C1 processed data were aligned with the C7 processed density. Shown is the full model of MscS contorted at the same level down to remove the ND density formed from the union of one half of the grey density, C7 symmetry, and the red density, C1 symmetry. (A) Left is a side view, while the right is top view. In the C1 processing, ND lipid density is skewed to one side of MscS, suggesting a potential asymmetric placement of MscS in the ND. (B) Pore and hook lipids with the C7 density shown as transparent gray.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Sequence from the N-terminus and first three turns of TM1 for MscS orthologs with equivalently predicted TM segments as E. coli. (A) Alignment from Enterobacterales and Vibrionales MscS proteins sequence MUSCLE (v.3.5) with default parameters. A sample of 10 sequence (put of 168) are shown. (B) Maximum likelihood phylogeny of Enterobacteriales and Vibrionales MscS protein sequences inferred using RAxML (v.8.2.11) under the best-fit model of evolution (LG + G + X). The relative rate of evolution for each site (in log base 2) were normalized by setting the mean to be zero. (C) A sequence logo for the anchor domain of Enterobacteriales MscS proteins sequences. The 168 sequences from the primary alignment were resampled to distribute sequences more evenly across sequence space.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** MscS-ND aligned using backbone atoms. (A) 2OAU is the deposited MscS crystal structure. (B) MscS in a DDM micelle. (C) MscS-ND with the His-tag cleaved with Thrombin. RMSD was calculated using the backbone atoms. 2OAU was solved asymmetrically, and therefore some TM1/TM2 hairpins align, while other hairpins do not as shown with the black arrow.
 
 The N-terminal domain sits atop TM1, forming a returning loop that projects away from the seven-fold symmetry axis and lines the periphery of an N-terminal ring at the periplasmic face of the channel (Figure 1B). Despite the overall lower resolution in the region, we were able to fit a Cα backbone and buildout sidechains using the existing density information and molecular dynamic flexible fitting (Croll, 2018). The N-terminal ring is potentially stabilized by both polar (E2-Q11) and hydrophobic (van der Waals) (L23-L24, Y27-V29) interacting pairs at the inter-subunit interface (Figure 1B). As will be described below, a key finding of the MscS-ND structure is that this newly resolved N-terminal domain is membrane-embedded and seems to dominate its interactions with the outer leaflet of the bilayer. Comparing the sequences of MscS homologs revealed that this particular structural motif is largely present in Enterobacteriales (Figure 1—figure supplement 4). Figure 1B shows the relative rate of evolution of individual residues mapped on the newly resolved domain. Conserved residues (in blue) are predominantly found at the subunit interface, while W16 sits deep in a pocket at the bottom of the N-terminal domain. Indeed, tryptophan residues have been shown to be enriched at the membrane interface and contribute about ~4 kcal/mol as ‘anchors’ of TM segments in membranes (de Jesus and Allen, 2013). Given its membrane placement and location of the conserved W16, we named the MscS N- terminal the ‘anchor’ domain.
 
 Strikingly, other than the upper third of TM1 and anchor domain the structure of MscS-ND is rather similar to the MscS crystal structure in detergent (2OAU) (Steinbacher et al., 2007) (~1.4 Cα RMSD, Figure 1—figure supplement 5). Previous attempts to reconfigure the interactions between TM2 and TM3 to compensate for perceived low inter-helical packing (Anishkin et al., 2008a; Vásquez et al., 2008) are not supported by the present data. In fact, we reason that the present EM structure represents the physiological closed state: The channel is at rest, embedded in a lipid bilayer and ostensibly, in the absence of any applied tension. Furthermore, as MscS-ND includes a 6xHis tag at the N-terminus (with a 10 residue linker), clear density corresponding to the oligomeric assembly of individual Hisx6 tags is observed as a ‘crown’ on top of MscS (Figure 2A left, Figure 3, left and Figure 4—figure supplement 1). This crown leads to the formation of a strong stabilizing force, which precludes N-terminal movement in the closed state. Interestingly, the quality of the density of the anchor domain is significantly degraded in the absence of the N-terminal Hisx6 tag (Figure 3, left-center), presumably due to an increase in local dynamics in the absence of the stabilizing His-tag. Besides being a fortuitous result, the N-terminal Hisx6 serves as a useful probe of MscS conformational changes. 6xHis-MscS-ND appears insensitive to mechanical stimulation in HEK293 cells patch-clamp experiments under high-speed pressure clamp conditions (Figure 4—figure supplement 1C). This functional inhibition is fully relieved upon in situ thrombin treatment (Figure 4—figure supplement 1D), strongly suggesting that the anchor domain must move away from its current position upon channel opening, in a way consistent with the MscS expanded conformation (Lai et al., 2013; Wang et al., 2008).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig2-v2.jpg)
+
+**Figure 2.:** (A) Close-up of MscS-ND EM density (in Chimera’s ‘solid’ representation). Left, Side view. The location of the bilayer in the nanodisc in indicated by dashed yellow likes (approximately 38 Å in diameter). Density for the putative heptameric histidine tag complex is shown by a dotted arrow. Right, Top view. The yellow circle represents the putative average size of the E3D1 nanodisc (~130 Å) in relation to the density, which points to a partial averaging of the density likely due to MscS lateral mobility. (B) Comparison between the location of the membrane interface in MscS-ND, the FC14 crystal structure (2OAU) and the ‘Cryst’ deletion construct. Black dashed lines depict the limits of the lipid bilayer based on the nanodisc EM density. Left, EM density for the protein (red) and the nanodisc (grey) for MscS-ND, the black ovals highlight the fact that the prominent cavities formed between the TM1-TM2 hairpin and TM3 are fully located outside the membrane. Center, relative positioning of 2OAU based on a rigid fit of the structure onto MscS-ND EM density. The gray rectangle in the background represents the previous consensus membrane location. Right, the low-resolution cryoEM structure of MscS ∆2–27 (‘Cryst’,~20 Å) shows an overall architecture for the nanodisc-embedded channel. In spite of the N-terminal deletion, the nanodisc is located at the same position as in MscS-ND. (C) Probing the energetics of the membrane interface. A Potential of mean force (PMF) calculation was carried out by relocating a lipid bilayer from a coordinate origin (0 Å) predicted by the CHARM-GUI server (Jo et al., 2008) and moved up to 16 Å (the thickness of a lipid monolayer) along the Z-axis coordinate (see Figure 2—figure supplement 2). Left, free energy as a function of Z-axis displacement. A global minima was found at ~25 Å (~8 Å above the prediction) and the free energy increases exponentially beyond this point. The energy minima coincides with the location if the interface as defined by the EM density of MscS-ND. Right, evolution of MD simulation starting at three membrane interface locations: predicted by CHARM-GUI (0 Å, red trace), at the cryo-EM density (+ 8 Å, black trace) and a further +16 Å (Higher placement, blue trace). After ~60 ns simulation all membrane interfaces converge to that defined by the cryo-EM density.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A map of all surface-exposed charged residues (in VDW sphere representation) fully agrees with the location of membrane interface based on the MscS-ND EM density. With the exception of Arginine 88 (which coordinates the phosphate group of the hook lipid), there are no charge residues in the proposed TM region. (B) OPM predicted the location of the bilayer for the crystal structure 2OAU (Lomize et al., 2012). (C) MemProtMD predicted location of the bilayer for the crystal structure 2OAU (Newport et al., 2019).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Example of MscS (MscS Cryo-EM) embedded in a membrane for MD simulation. (B) Root mean square deviation (RMSD) of different MD models used in this study. (C) The reaction coordinate for the PMF calculations has been defined as the distance between the Z coordinate of the center mass of phosphate molecules of the lipid bilayer and the Z coordinate of center mass of the pore-forming helices of MscS (i.e. residue 105 to 115). (D) Counts with respect to different sampling windows (reaction coordinates ranging from 16 Å to 31 Å); 10 ns Simulation for each histogram.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Surface representation of MscS with residue-type color map. Red color shows negatively charged residues, blue shows positively charged residues, green hydrophilic and grey hydrophobic residues of MscS while embedded in the bilayer. A van der Waals illustration of residues W16 and I48 at the lipid-protein interface has been shown for determining the hydrophobic length of the protein, $d_{p}$. (B) An example membrane thickness ($d_{l}$) distribution (from the simulation with Z distance = 31 $Å$) shown in color spectrum ranging from ~ 30 $Å$ (around the protein) to ~ 47 $Å$ (near the edges). (C) Snapshots of the membrane with different curvatures (C), which are calculated based on the length (l) and the height (h) of the bilayer. (D–F) The mean-field free energy change due to change in the bilayer curvature and lipid-protein hydrophobic mismatch as a result of different MscS position with respect to the membrane. Top panel indicates the free energy change assuming constant curvature across the bilayer area and the bottom panel assume variable curvature across the bilayer area. (D) Indicates the free energy contribution of curvature change at different umbrella sampling windows, (E) shows the contribution of the free energy change due to hydrophobic mismatch between MscS and the bilayer, and (F) shows the combination of the free energy from both curvature and hydrophobic mismatch. Hydrophobic mismatch is the main contributing factor in change in the free energy level across different reaction coordinates. The values are mean ± std.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The membrane is discretized into concentric ribbons of areas $a_{1}$ to $a_{n}$ with curvatures $c_{1}$ to $c_{n}$.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig3-v2.jpg)
+
+**Figure 3.:** CryoEM structures for three additional lipid reconstitution/detergent conditions show a common membrane interface. Four independently determined structures are shown: Left, MscS-ND (in POPC:POPG 4:1) determined at 3.1 Å. This structure includes the N-terminal 6xHis (red rectangle). Center left, MscS-ND (in POPC:POPG 4:1) after thrombin proteolysis of the N-terminal 6xHis, determined at 4.1 Å. Center right, MscS-ND (in E. coli lipids) after thrombin proteolysis of the N-terminal 6xHis, determined at ~10 Å. Right, DDM-solubilized MscS after thrombin proteolysis of the N-terminal 6xHis, determined at 3.4 Å. In all cases, EM density is shown as Chimera’s ‘solid’ representation with the protein depicted in ribbon representation (cyan). The calculated location of the membrane is shown as a yellow slab with black dash lines, while the previous membrane interface consensus location is represented by the grey dashed lines. The red arror points to a partially unfolded region of the N-terminal loop region.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** From 2110 movies, 111,244 particles were used after 2D classification. The selected 2D classes were subjected to a 3D classification where truncated (possibly denatured due to the air-water interface) particles were classified out. The final reconstruction used only the 3D class with the entire molecule. As can be seen in the 2D classes, the angular distribution of particles and the 3D FSC (Tan et al., 2017) there are multiple orientations. Finally, the resmap map shows the structure is mostly 4–5 Å.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** From 1328 movies, 72,501 particles were used after 2D classification. The selected 2D classes were subjected to a 3D classification where truncated (possibly denatured due to the air-water interface) particles were classified out. The final reconstruction used only the 3D class with the entire molecule. As can be seen in the 2D classes, the angular distribution of particles and the 3D FSC (Tan et al., 2017) there are multiple orientations.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) MscS ND (B) DDM (C) MscS ND No His-Tag.
+
 To evaluate the role of the anchor domain on MscS function, we designed a construct lacking the first 26 residues of the channel: Δ2–26 MscS (‘Cryst’), physically recapitulating the resolved regions crystal structure (2OAU) model, which has been the basis of many past experimental and computational insights (Cox et al., 2018; Naismith and Booth, 2012; Perozo, 2006; Sukharev and Corey, 2004). This construct displays a severe loss of function (LOF) phenotype and is unable to elicit any mechanically activated currents in either HEK293 cells patch clamp experiments (Figure 4A) or in downshock assays (Figure 4B). To further evaluate the functional role of the anchor domain, we carried out an alanine scan at residues 2–30 for in vivo analysis of MS channel activity (Figure 4B). The effect of alanine substitutions was dramatic. About 70% of the mutants displayed LOF phenotypes, 8 of those severe (E2A, V6A, S9A, G12A, N20A, Q21A, L24A, L25A). Some of these severe LOF mutations might be potential GOF mutations due to their survival being lower than the negative control of no MscS. A severe MscS GOF mutant will have dramatic effects on the survival of any cell, but final demonstration requires electrophysiological data under pressure clamp conditions. Remarkably, mapping the positions of the alanine LOF mutants (Figure 4C) show that they are located almost exclusively at the membrane or inter-subunit contact interfaces (Figure 4C, dotted line). These results not only highlight the importance of subunit-subunit interactions for MscS function, but point to a role of the anchor domain in MscS mechanotransduction. In fact, an earlier cysteine scan of the same region (Figure 4—figure supplement 2) (Vásquez et al., 2008), shows that almost a third of the mutants display a noticeable LOF phenotype (V7C, N11C, A13C, V18C, and L25C), two were severe (V6C and A19C) and most map to the subunit interface.
 
-## Redefining MscS interaction with the lipid bilayer
+![Figure 4.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig4-v2.jpg)
+
+**Figure 4.:** (A) Functional consequences of deleting the anchor domain (MscS ∆1–27). High-speed pressure clamp recordings of co-expressed MscS and MscL in HEK296 cells under voltage clamp conditions. A family of macroscopic currents elicited by pressure ramps are shown for co-expressed wt-MscL and wt-MscS (left traces), wt-MscL and Cryst (center traces) or Cryst alone (right traces). (B) Osmotic downshock assays of N-terminal alanine scan mutants. Box plots are shown for nine independent experiments, where the central bar represents the median, the box 25%−75% quartiles and the individual data are depicted as black dots. Data were normalized to the wild-type behavior and the dotted lines represent the mean survival for the negative control (red, empty vector) and wt-MscS (green). Asterisks indicate residues located at the subunit interface. (C) Functional complementation of alanine scan mutants mapped onto the anchor domain structure. Left, side view of the anchor domain monomer. Right, top view of the anchor domain as a heptamer with data mapped on two adjacent subunits. The residues are colored by surivial relative to Wt (LOF Severity index) where 0 corresponds to no survival compared and one is equal or greater survival than wild-type. Black residues are wild-type alanines (not evaluated). The dashed line indicates the location of the subunit interface.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 3D refined model from Figure S2 without masking the His-tag region. Insets show a 45-degree view of the 6xHis tag density (top) and a center section (bottom). The his-tag residues were modeled using coot and molecular dynamic flexible fitting (Ref). (B) As stable 6xHis tag ‘crown’ oligomer inhibits MscS opening. High-speed pressure clamp recordings of reconstituted MscS in HEK296 DMPC:DMPG 3:1. Families of macroscopic currents, elicited by pressure ramps are shown for Wt-MscS with the 6x His-Tag at its C-terminal (C) MscS with the 6x His-Tag at its N-terminus and (D) MscS with the 6x His-Tag after Thrombin cleavage. These data strongly suggest that the N-terminal anchor domain likely separates (in the plane of the bilayer) upon MscS opening.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Influence of cysteine substitutions in the anchor domain, estimated from downshock assays. Box plots are shown for nine independent experiments, replotted form Vasquez et al. (2008), where the central bar represents the median, the box 25%−75% quartiles, and the individual data are depicted as black dots. Data were normalized to the wild-type behavior, and the dotted lines represent the mean survival for the negative control (red, empty vector) and wt-MscS (green). (B) Like in Figure 1E, functional complementation of Cystine scan mutants mapped onto the anchor domain structure made using molecular dynamic flexible fitting into the density. Left, side view of the anchor domain monomer. Right, top view of the anchor domain as a heptamer with data mapped on two adjacent subunits. The dashed line indicates the location of the subunit interface.
+
+### Redefining MscS interaction with the lipid bilayer
 
 Based on the MscS crystal structure (2AOU) (Bass et al., 2002; Steinbacher et al., 2007), a de facto consensus had been reached where the bilayer interacted with the channel at the level of the resolved regions of the TM segments (see Booth and Blount, 2012; Cox et al., 2018; Edwards et al., 2004; Perozo, 2006; Pliotas and Naismith, 2017; Zhang et al., 2016). In fact, early MD simulations of membrane-embedded MscS showed unexpected instabilities in the putative transmembrane segments, even under different force fields (Anishkin et al., 2008a; Sotomayor and Schulten, 2004; Spronk et al., 2006). We note, however, that a partial shift in membrane location had been previously suggested after modeling the N-terminus of the channel (Anishkin et al., 2008a). The present MscS-ND EM density now redefines the nature and extent of MscS interactions with the lipid bilayer. Remarkably, our data show that the disc-like region corresponding to the nanodisc lipid bilayer (Figure 2A B left) is upwards shifted ~14 Å when compared to the previous consensus placement (Figure 2B, center). This is also highlighted on side views from 2D classes (Figure 1—figure supplement 2).
 
@@ -52,9 +124,25 @@ As a quantitative evaluation of the bilayer interaction energetics, we carried o
 
 To expand on this result, we pursued additional MscS EM structures under various lipid/detergent conditions. Two specific questions were addressed: Is the location of the bilayer related to its lipid composition? What is the EM structure of MscS in DDM and what is its micelle placement? The structure of MscS-ND was determined in nanodiscs containing PC:PG 4:1, yet E. coli membranes are composed mostly of PE, PG, and cardiolipin (Raetz and Dowhan, 1990). Figure 3 shows that the same bilayer placement is observed in the EM densities for two PC:PG MscS-ND structures (with and without N-terminal 6xHis, Figure 3—figure supplements 1,3) and in nanodiscs containing E. coli polar lipids (at 10 Å resolution), suggesting that MscS-bilayer placement is not affected by alternative lipid compositions. The EM density in DDM (at about 3.4 Å, Figure 3—figure supplements 2,3) appears to show a similar placement for the detergent micelle. However, the structure of the N-terminal domain has partially unraveled (Figure 3, red arrow), suggesting a rationale for why this region is unresolved under crystallographic conditions or in nanodiscs in the absence of the N-terminal 6xHis (Rasmussen et al., 2019).
 
-## Lipids bound to dynamic regions of MscS
+### Lipids bound to dynamic regions of MscS
 
 At the present resolution, the MscS-ND maps provide an excellent template to evaluate the nature and extent of the interactions between the channel and the lipid bilayer. Notably, we find lipid-like densities both, in a newly defined cavity between subunits and at the center of the permeation pathway (Figure 5A). Seven clearly defined phospholipids appear to ‘hook’ the top of each of the TM2-TM3 loops, a region that putatively displays large conformational rearrangements during gating (Lai et al., 2013; Wang et al., 2008). The hook lipids are firmly embedded by threading their head group through an inter-subunit opening formed by the extended TM1 and the top of the TM2-TM3 hairpin (Figure 5—figure supplement 1A–B) and facing the permeation path. At the present resolution, the nature of the hook lipids head group was not defined, but was ultimately modeled as PC due to the nanodisc composition. But given the E. coli membrane composition, it is likely that the hook lipids are PE or PG.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig5-v2.jpg)
+
+**Figure 5.:** (A) Side (left) and top (right) views of EM density (transparent red surface) associated with putative lipid molecules bound to MscS-ND (shown in white cartoon representation). A ‘hook’ phospholipid is cradled at the subunit interface atop the TM2-TM3 hairpin, while seven individual acyl chains line the permeation pathway along TM3, above the narrowest portion of the gate. (B) Contact map and coordination of the hook lipid. Left, TM helices from two adjacent subunits (red and blue) are shown. Key interactions are highlighted for R88 (in the red subunit) with the head group nitrogen (PC or PE) and Y27 (in the blue subunit) with the phosphate group. Residues within van der Waals distances are shown in red. Right, a cartoon representation of the contact/coordination map. (C) Same as (B), but with the pore lipid acyl chains.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Close up of the hook lipid density fitted to a POPC molecule and pore lipid density fitted as a hexadecane. (A), Hook lipid density highlighted in red showing the insertion into a cavity formed by two adjacent TM1 helices and the hairpin of TM2-TM3a. One of the acyl chains is presumably partially averaged out due to local dynamics. (B) EM density corresponding to a hook lipid. Coordinating side chains Y27 and R88 (from two adjacent subunits) are shown in stick representation. (C) Overview of the hook and pore lipids in the context of the entire density. (D) Close up of pore lipids in close interaction with the N-terminal end of TM3 and the TM2-TM3 linker. (E) Top view of the lipids in the context of the entire density. (A), (C) and (E) have the lipids and overall density contorted at the same level. (F) Predicted pathway connecting the location of the putative pore lipids in the permeation path with the intracellular TM2/TM3a cavity. Volume predicted by MOLEonline (https://mole.upol.cz) is depicted as a blue transparent envelope. The tan ribbon corresponds to the TM3 a and TM3b helices with G104 colored red along with a red arrow points to the potential connecting gap between G104 residues in adjacent subunits.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Hydrophobicity map of the residues lining the pore (Chimera, Pettersen et al., 2004). Pore lining lipids (Figure 3C) are located in the hydrophobic region just above the L105 ‘gate’ residue (black box). (B) A Tryptophan scan of TM3a (Rasmussen et al., 2015), when mapped onto the ND-MscS structure shows two severe loss of function (LOF) areas (red arrows): A region that includes residues that coordinate the Hook Lipid (top) and a region (bottom arrow) around and below the L105 gate residue (black box).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Lipid density in MscS DDM cryo-EM structure. Like in Figure 3A, Side (left) and top (right) views of EM density (transparent red surface) associated with the putative lipid molecules bound to MscS-ND (shown in white cartoon representation). A ‘hook’ phospholipid is cradled at the subunit interface atop the TM2-TM3 hairpin, while seven individual acyl chains line the permeation pathway along TM3, above the narrowest portion of the gate. (B) Electron density maps of 2OAU, in Foscholine-14. 2Fo-Fc map is a grey mesh while the Fo-Fc map is in green. MscS ND cryo-EM model was aligned to the 2OAU model in cyan. The MscS ND hook lipid (POPC), in green, the phosphate group is within the green density. Despite the crystal structure not having any explicit lipids, this density would correspond to the highest electron-dense chemical group in the crystal (Phosphate). Residues Y27 and R88 are precisely positioned to coordinate this density in an equivalent way as the hook lipid in ND-MscS (Figure 3—figure supplement 3A).
 
 Given that hook lipids bind to a conformationally active region of MscS, we suggest they might participate in the transduction of bilayer forces that influence the conformation of the MscS gate (TM3a). Indeed, binding of the hook lipids is stabilized by R88 in one subunit and Y27 from the neighboring subunit (Figure 5B). Both residues are known to generate LOF phenotypes when mutated (Figure 4D; Rasmussen et al., 2015). Additional residues along TM1 and the TM2-TM3 linker participate via hydrophobic contacts (Figure 5B). A cluster of seven linear densities is also observed lining the patch of hydrophobic residues immediately above the narrowest region of the permeation pathway (L105) (Figure 5—figure supplement 1C–E). Although there is no clear indication of EM density associated with headgroups (whether it is PE or PG), we hypothesize these are either acyl chains from a fairly mobile (and not fully resolved) phospholipid or perhaps bound fatty acids trapped along the permeation pathway. Modeled as hexadecanes, the pore lipids are stabilized (likely weakly) via hydrophobic interactions along TM3 (Figure 5C). Though not currently resolved, a potential pore lipid head group might thread through an inter-subunit gap between the G104s in TM3a (Figure 5—figure supplement 1F). Interestingly, a tryptophan scan encompassing TM3a and the TM2-TM3 linker (Rasmussen et al., 2015) shows a remarkable correlation with LOF residues aligning at the putative hook lipid binding pocket and the pore lipids interaction surface (Figure 5—figure supplement 2B).
 
@@ -68,7 +156,7 @@ Previous studies of closed state water permeation in MscS (Anishkin and Sukharev
 
 ## Discussion
 
-## On the mechanism of force-from lipid gating in MscS
+### On the mechanism of force-from lipid gating in MscS
 
 The new MscS structural features, membrane footprint and bound lipids all have important mechanistic consequences regarding MscS force transduction. For one, TM3b can no longer be considered an interfacial helix (Bavi et al., 2016b) as it is located almost 15 Å away from the membrane/water interface (Figures 1A,2B, left). This is confirmed by our five structures presented here and elsewhere (Rasmussen et al., 2019). The proposed gating mechanisms where lipids act as ligands are based on the assumption that the TM2/TM3a cavity is open and accessible to the lipid bilayer (Pliotas et al., 2015) are unlikely due to the location of the TM2/TM3a cavity (or TM pocket) in relation to the membrane annulus around MscS (Figure 2B) seems incompatible with a proposed phospholipid exchange between bilayer and TM pockets. Accordingly, the suggestion that lateral tension would 'pull' on lipid acyl chains located in TM pockets appears unrealistic. Although our data only shows marginal additional density within the TM pockets, a recent structure of MscS in nanodiscs does find density that has been interpreted as lipidic (Rasmussen et al., 2019). Because of the volume change observed in the TM pockets of the expanded MscS conformation (Lai et al., 2013; Pliotas et al., 2015) it is expected that this lipid density should change during gating. The relative contribution of all bound lipids to force transduction in MscS will require further investigation.
 
@@ -76,61 +164,206 @@ Our structure in nanodiscs reveals much of the anchor domain locked in the close
 
 Earlier spectroscopic work (Vasquez et al., 2008) provides excellent clues regarding the types of conformational changes expected at the periplasmic side of the channel during its transition towards the open state. Changes in the NiEdda (water) accessibility between closed (at rest, in liposomes) and open MscS conformations (after LysoPC activation) show a massive reduction in water accessibility for the majority of the anchor domain (Figure 7A) when compared to the values at rest (Figure 7—figure supplement 1). This suggests that in the open state the anchor domain transitions to a deeper location in the outer leaflet of the bilayer (most likely as an extension of TM1), while it tilts and moves away from the permeation pathway (as seen in the MscS expanded conformations, Lai et al., 2013; Wang et al., 2008).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig7-v2.jpg)
+
+**Figure 7.:** (A) Extent and direction of environmental parameter changes upon MscS opening. Left, NiEdda accessibility (ΠNiEdda) mapped on MscS-ND transmembrane segments. Right, Changes in NiEdda accessibility (ΔΠNiEdda) mapped on MscS-ND transmembrane segments. Data from Vasquez et al. (2008). Note, however that the EPR data were obtained on an unconstrained (though lipid embedded) N-terminal domain and should be treated as a general guide. A decrease in NiEdda accessibility corresponds to a decrease in accessibility to the aqueous milieu. (B) A lipid-centric mechanism of force transduction in MscS. In the nominal absence of external forces, MscS populates the resting, closed state represented by the MscS-ND structure (Figure 1). The non-conductive nature of the closed conformation is determined by a narrow cuff of hydrophobic residues around L105 (black circles) and above that, a plug of acyl chains from the pore lipid. The inter-subunit hook lipid links the top of the TM2-TM3a hairpin and the hydrophobic core of the bilayer. Applying forces in the plane of the bilayer lead to two gating scenarios, depending on whether the hook lipid stays bound to the open channel or not. In the first case (top) the expansion of TM1 in the periphery of MscS is allosterically communicated to the TM2-TM3 hairpin through the hook lipid, leading to the expansion of TM3a and release of the pore lipid. In the second option (bottom), expansion of TM1 destabilizes the binding of the hook lipid which exchanges with the bulk of the bilayer. Acting as a ligand, the release of the hook lipid triggers a conformational rearrangement in TM3a, with subsequent release of the pore lipid, leading to conduction.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/50486/elife-50486-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Ni-DOGS-NTA accessibility mapped on MscS-ND transmembrane segments at rest. (B) NiEdda accessibility mapped on MscS-ND transmembrane segments. Data from Vasquez et al. (2008).
+
 We find that at least two general gating models are consistent with both the data provided by the present MscS-ND structure and the conformational changes observed crystallographically (Figure 7B). In the first one (Open 1), the hook lipid remains bound to its pocket, allosterically coupling intramembrane forces with anchor domain rearrangements, TM1-TM2 hairpin reorientation and the expansion of the TM3a inner bundle. The second possibility (Open 2), would be reminiscent of the mechanism proposed to explain mechanosensitivity in the K2P channels TRAAK (Brohawn, 2015). As such, membrane stretch would trigger rearrangements at the anchor domain and TM1-TM2 hairpin, destabilizing the hook lipid pocket and leading to diffusion of the hook lipid into the bilayer. In turn, the release of the hook lipid triggers expansion of the TM3a inner bundle, opening the channel. Of course, in both gating models, channel opening ought to be accompanied by a release of the pore lipid, unblocking of the permeation path. Further research is needed to elucidate potential mechanisms of pore lipid dynamics.
 
 The present results suggest that, for MscS, the energetic differences derived from tension changes in the plane of the lipid bilayer should be evaluated in the context of key lipids bound to mechanistically important regions of the channel (TM2 and TM3a). Functionally, MscS behaves as a lipo-protein complex, where the hook lipid may help transduce bilayer forces and the pore lipid is poised to influence ion and water fluxes at rest. These interactions, together with the revised location of the lipid-protein interface must be accounted for by mechanotransduction models which strong allosteric coupling between TM segments and the lipid-protein interface.
 
 ## Materials and methods
 
-## MscS expression purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (E. coli</td>
+      <td></td>
+      <td>Addgene# 7855</td>
+      <td></td>
+      <td>6x N-Terminal His-Tag</td>
+    </tr>
+    <tr>
+      <td>Gene (E. coli)</td>
+      <td></td>
+      <td>Addgene# 20066</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MJF465</td>
+      <td>Ian Booth and Samantha Miller, University of Aberdeen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>POPC</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850457C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>POPG</td>
+      <td>Avanti Polar Lipids</td>
+      <td>840457C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>E. coli Polar Lipids</td>
+      <td>Avanti Polar Lipids</td>
+      <td>100600C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bio-Beads SM-2 Resin</td>
+      <td>Bio Rad</td>
+      <td>1523920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Quantifoil 2/2 Mesh 200</td>
+      <td>Quantifoil</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Quantifoil 1.2/1.3 Mesh 300</td>
+      <td>Quantifoil</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Octyl Maltoside, Fluorinated</td>
+      <td>Anatrace</td>
+      <td>O310F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>n-Dodecyl-β-D-Maltopyranoside</td>
+      <td>Anatrace</td>
+      <td>D310A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fos-Choline-14</td>
+      <td>Anatrace</td>
+      <td>F312S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>Rosetta 2</td>
+      <td>Millipore Sigma</td>
+      <td>71400-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Thrombin</td>
+      <td>MP Biomedicals</td>
+      <td>154163</td>
+      <td>Bovine</td>
+    </tr>
+  </tbody>
+</table>
+
+### MscS expression purification
 
 Full-length E. coli MscS was expressed and purified as previously described (Vásquez et al., 2007). In brief, MscS was sub-cloned into pET28a containing a His6 tag and a thrombin cleavage site on the N-termini. Rosetta 2 (Millipore Sigma) E. coli cells were transformed with MscS-pET28a vector and grown overnight in the presences of kanamycin and chloramphenicol. The cells were diluted 1:100 in LB medium and grown at 37°C to an OD600 of 0.8-1.0. Before induction, the cell culture was supplemented to a final concentration of 0.4% glycerol and allowed to cool to 26°C, and protein expression was induced with 0.8mM IPTG. The cells were grown for 4h at 26°C and were harvested, and either were frozen at -80°C for later use or immediately resuspended in PBS pH 7.4 (Sigma), 10% glycerol, protease inhibitors, and homogenized (high-pressure homogenizer, EmulsiFlex-C3). The membranes were isolated via centrifugation at 100,000g for 30 min, and the pellet was resuspended in PBS and 10% glycerol. Solubilization was carried out in 1% Fos-Choline (Anatrace) 14 for 4-16h at 4°C. This resuspension was spun down at 100,000g for 30 min, and the supernatant supplemented with a final concentration of 5mM imidazole (Fisher) was incubated with cobalt resin(Clonetech) for 2-4h at 4 °C. The resin was washed with 20-bed volumes of 1 mM DDM(Anatrace), 10mM imidazole and 10% glycerol in PBS buffer. MscS was eluted in 1 mM DDM, 300mM imidazole, and 10% glycerol in PBS buffer. Unless explicitly stated MscS His, thrombin was added to cleave the his tag and incubated overnight. The final purification step was to run the protein on a Superdex 200 Increase 10/30 column (GE Healthcare) with 1 mM DDM and PBS buffer. The removal of glycerol is critical for EM grid preparation. The typical yield of MscS is about 5-8mg per liter of E. coli. For the MscS-Cryst construct, residues 2-26 residues were removed and subcloned into pQE70 and grown in MJF465 E. coli cells (to avoid co-assembly with chromosomal wt-MscS), a gift from Ian Booth (Levina et al., 1999). Typical yield of MscS-Cryst is less than 0.1mg per liter of MJF465 E. coli. Otherwise, the purification steps were the same. The MscS structure solved in DDM was solubilized in 1% DDM instead of Fos-Choline 14.
 
-## MscS nanodisc preparation
+### MscS nanodisc preparation
 
 MscS nanodiscs (ND) were prepared following previously described protocol (Ritchie et al., 2009). Several variants of ND scaffold proteins were tested, and Msp1 E3D1 was deemed the most homogenous by size exclusion. The molar ratio of MscS:MSP1 E3D1:Lipids was 7:10:650, respectively, after extensive optimizations. Each lipid solution of mixed micelles contained 30-50mM DDM with a final lipid concentration of 10-17mM. The compositions of the mixed micelles were either (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine) POPC and (1-palmitoyl-2-oleoylglycero-3-phosphoglycerol) POPG (4:1) or E. coli Polar Lipids (EPL). Nanodiscs were made by adding mix micelles to protein for 20 minutes on ice. MSP was added to the solution and incubated on ice for 5 minutes. The reconstitution mixture was incubated in activated bio beads (Biorad) overnight at 4°C. The detergent free mixture was run on a Superdex 200 Increase 10/30 column to separate the empty ND peak. The MscS ND peak was concentrated to ~2mg/ml and stored at 4°C.
 
-## EM data collection and structure determination
+### EM data collection and structure determination
 
 To help with orientation preferences and ice thickness, MscS ND was supplemented with Octyl Maltoside, Fluorinated (Anatrace) to a final concentration of 0.01%. MscS and was applied twice, with a filter paper blotting between each application, onto Mesh 200 2/1 or Mesh 300 1.2/1.3 Quantifoli holey carbon grids and flash frozen in a Vitrobot (Thermofisher) set at 3 seconds with a force of 3 with 100% humidity at 22°C. MscS His ND POPC:POPG, MscS No His ND POPC:POPG, and MscS DDM were collected on a Titan Krios with a K2 detector in counting mode with a GIF energy filter using Latitude S (Thermofisher). Movies were acquired at 1e-/A2 per frame for 50 frames. MscS ND EPL was collected on Titan Krios with a Falcon 3 detector in counting mode. MscS-Cryst ND POPC:POPG was collected on Talos Artica with a Falcon 3 detector in counting mode. Movies were acquired at 1e-/A2 per frame for 50 frames. Motion correction was performed using Motioncor2 (Zheng et al., 2017), and K2 movies were binned by 2. CTF estimation was done using CTFFIND4.1 (Rohou and Grigorieff, 2015). Initial particle picking was done using Eman’s (Tang et al., 2007) neural net particle picker or Relion’s built-in reference based auto picker and the coordinates were fed into Relion (Scheres, 2012) for particle extraction. Subsequent structure determination steps were done in Relion. An initial 2D refinement was done to remove non-particles and poor-quality classes, which were fed into 3D classification. 3D classification was performed using the MscS crystal structure as an initial model. After a subset of particles were identified for the final refinement, the particles underwent per particle CTF refinement followed by Bayesian polishing. The final 3D reconstruction used the classes with both top and side views and refined using a tight mask excluding the membrane and his-tag (when necessary) and C7 symmetry. Model building was based on the MscS crystal structure (PDBID: 2OAU) and used coot to build the remaining TM1, N-terminal domain, and the hook and pore lipids. EM density maps used in subsequent steps were not were not postprocessed or sharpened. While postprocessing and sharpening did improve the density for the most part, the N-terminal domain became much noiser. The initially built model was iteratively refined using Coot (Emsley et al., 2010), Chimera (Pettersen et al., 2004), MDFF (McGreevy et al., 2014) using VMD (Humphrey et al., 1996) and NAMD (Phillips et al., 2005) or ChimeraX (Goddard et al., 2018) with the ISOLDE (Croll, 2018) plugin, Arp/Warp (Langer et al., 2008), and Phenix’s (Adams et al., 2010) real space refine.
 
-## Downshock assay
+### Downshock assay
 
 Downshock assays were performed from a modified protocol from what was previously described (Batiza et al., 2002; Vásquez et al., 2007). MJF465 cells transformed with various MscS mutants in pEQ70 were grown modified Luria-Bertani (LB) medium with 500mM NaCl and 100µg/ml ampicillin(Fisher), 50 µg/ml kanamycin(Fisher), and 25 µg/ml chloramphenicol(Fisher) at 37°C to an OD600 of 0.6. The cells were cooled to room temperature and induced with 1 mM IPTG (Fisher) for 2 hours at 25°C. The OD600 was measured and downshocks were performed by diluting cells 1:50 into a modified LB medium at 50mM NaCl and 1:100 was plated on standard LB agar plates overnight at 37°C. The colonies on the LB agar plates were imaged and counted and normalized by the OD600 readings. Additionally, to assess the expression of each mutant, a western blot was performed. The western blot of each MscS expressing mutant was from a pellet from the downshock experiment and resuspended in PBS and SDS to a final 1% solution. The lysate was then sonicated, ran on a 4-20% SDS-PAGE gel (Biorad), transferred to PVDF and probed with the Penta-HIS(Qiagen) primary and anti-mouse conjugated to Alexa 488 secondary.
 
-## Phylogeny analyses
+### Phylogeny analyses
 
 Enterobacteriales and Vibrionales MscS protein sequences were extracted from the complete proteomes in the NCBI Assembly database. From each proteome, only one protein showing the highest BLAST bit score (Camacho et al., 2009) to the E. coli MscS protein query was extracted. Sequences were aligned using MUSCLE (v.3.5) (Edgar, 2004), and the ML phylogeny was inferred using RAxML (v.8.2.11) (Stamatakis, 2014) (best-fit model of evolution: LG+G+X). The schematic representation of the phylogeny was generated using iTOL (Letunic and Bork, 2019). The relative rate of evolution for each site was inferred from an alignment of Enterobacteriales MscS proteins using RAxML (v.8.2.11) (Stamatakis, 2014).The rate of evolution was mapped on protein structure using Chimera (Pettersen et al., 2004). The sequence logo was generated from an alignment of Enterobacteriales MscS proteins using WebLogo 3 (Crooks et al., 2004).
 
-## Proteoliposome preparation and patch clamp electrophysiology
+### Proteoliposome preparation and patch clamp electrophysiology
 
 Proto-liposomes were prepared using Dehydration Rehydration (D/R) method as fully described in previous studies (Nomura et al., 2015). Briefly, Avanti soybean lipid dissolved in chloroform were dried with nitrogen flow to create a thin lipid film on a glass tube. The film was suspended and vortexed with D/R buffer (200 mM KCl, 5 mM HEPES, adjusted to pH 7.2 with KOH) and was subjected to 15 min of sonication. MscS was added to the lipid at a protein to lipid ratio of 1:200 (w/w) and incubated at 4°C for 1 h. to remove detergent, Biobeads (BioRad,Hercules,CA, USA) were added and incubated at 4°C overnight (minimum 3 h). The proteoliposomes were collected by ultracentrifugation and resuspended in 50 ml of D/R buffer. Small aliquots were spotted onto the glass cover slips and dehydrated overnight under vacuum conditions and at 4°C. The dried proteoliposomes were then rehydrated with 20-25 µl D/R buffer. After 6 h incubation at 4°C, they are ready for electrophysiological experimentation. The channel activity was examined in excised (inside-out) configuration. An isotonic recording solution were used in the bath and pipette (200 mM KCl, 40 mM MgCl2, and 5 mM HEPES adjusted to pH 7.2 with KOH). Borosilicate glass pipettes were pulled using Sutter micropipette puller (P-1000, Flaming/Brown). The resistance of the capillary pipettes was from 2 to 4 mOhm. The current was amplified with an Axopatch 200B amplifier (Molecular Devices, Sunnyvale, CA, USA), filtered at 2 kHz and the data acquired at 5 kHz with a Digidata 1322A (Axon instruments) interface using pCLAMP 10 acquisition software (Molecular Devices). Negative pressure was applied using High Speed Pressure Clamp-1 apparatus (ALA Scientific Instruments, Farmingdale, NY, USA).
 
-## All-atom molecular dynamics (MD) simulation
+### All-atom molecular dynamics (MD) simulation
 
 CHARMM GUI was used to embed MscS structure into a POPC:POPG (4:1) bilayer mix (to mimic our nanodisc lipid composition) (Jo et al., 2008). Different computational models have been generated as listed in Supplementary file 1 The equilibration steps were performed similarly to our previous MD simulation of EcMscL (Bavi et al., 2016a). TIP3P water molecule was used to solvate the system. The lipid and water molecules in close proximity to the channel (<0.5 Å and <0.5 Å respectively) were removed first. The system was ionized by 200 mM KCl. Short lipid tail randomization was done for 20 ps. Lipid and water were packed around the protein for 1 ns, while the Cα atoms in the protein were fixed. The restraint on the protein was released, and the equilibration run was performed for 60 ns. In order to simulate our system in an NPT ensemble, a modified Nosé-Hoover Langevin piston pressure control provided in NAMD (Phillips et al., 2005) was applied to control fluctuations in the barostat around the constant pressure of 1 atm, whereas the temperature was controlled at 298 K via Langevin dynamics. The Particle-Mesh Ewald (PME) method was used in all simulations to compute electrostatic interactions beyond a real-space cut-off of 1.2 nm using a Fourier grid spacing of 0.1 nm. van der Waals interactions were smoothly switched off at 8−10 Å. Periodic boundary conditions were applied in all three directions. The CHARMM c36 Force field was used for all MD calculations (Brooks et al., 2009). We used VMD and Chimera for visualization and illustration of our simulation results (Humphrey et al., 1996; Pettersen et al., 2004). We continued the equilibration until the RMSD values of the protein backbone over the equilibration time was plateaued (Figure 2—figure supplement 2B).
 
-## Pore hydration calculations
+### Pore hydration calculations
 
 Water molecules were counted for the last 10 ns of equilibration for each model. A custom TCL script was used (Bavi, 2019 at https://github.com/Perozo-lab/PMF; copy archived at https://github.com/elifesciences-publications/PMF), which counts the number of hydrating water molecules that pass the central hydrophobic pore (i.e. L105) over the simulation period.
 
-## Potential mean force (PMF) energy calculations
+### Potential mean force (PMF) energy calculations
 
 PMF calculations were performed using a similar approach to previous studies (Corry and Thomas, 2012; Li et al., 2018; Shen and Guo, 2012). Free-energy values for different bilayer-to-protein position along the Z-axis (bilayer thickness) (Figure 2—figure supplement 2C) were calculated by umbrella sampling simulations (Egwolf and Roux, 2010; Torrie and Valleau, 1977). Three different models were built to explore the most energetically favorable position of the lipid bilayer with respect to MscS along the Z-axis. The first model is Model 4 (Supplementary file 1 ) where the MscS position in the bilayer has been determined based on the CRARMM-GUI potentials (Jo et al., 2008). We first defined our reaction coordinates as the distance between the Z coordinate of center mass of phosphate molecules of the lipid bilayer and Z coordinate of center mass of the pore-forming helices of MscS (i.e. TM3a, Figure 2—figure supplement 2D). The predicted model was shifted upward (in the +Z direction, i.e., along with the bilayer thickness) by ~ 8 Å to match the bilayer position based on our Cryo-EM structure determined in nanodisc (Model 3, Figure 4C). The third model was built such that it was 16 Å higher than the position predicted by CHARMM-GUI (Model 5, Figure 4C). The starting configurations for the umbrella sampling simulations were taken from the MD trajectory of Model 3, Model 4 and Model 5 (varying in 1 Å steps from reaction coordinates of 16 Å to 31 Å) (Figure 2—figure supplement 2B).
 
 As there is sufficient overlap between the sampling windows (Figure 2—figure supplement 2D), the number of windows is, therefore, enough to have an acceptable evaluation of the free energy landscape. A biasing harmonic potential force of 5 kcal/mol/Å2 was used to constrain the position of the bilayer with respect to the protein. Therefore, 16 simulations were performed, where each simulation consisted of 1ns equilibration (no harmonic force) followed by 10 ns of production run (in the presence of harmonic force). Data were unbiased and combined using the weighed histogram analysis method using WHAM package (Grossfield, 2010). The minimum-energy path connecting the free-energy minima with respect to the reaction coordinate (bilayer-to-protein position) was shown in Figure 4C. We are aware there are differences between the ND membrane crossectional area (~130Å diameter) vs. the membrane in MD (160Å x-y box), however we believe MscS is not restricted in either case as even at its widest predicted TM point, MscS is less than 75Å in diameter. Considering the crossectional area of a POPC lipid is ~67Å2 (Bayburt and Sligar, 2010) this maintains lipids several layers deep before hitting the edge (Figure 4A).
 
-## Continuum Mean-Field calculations of the free energy change
+### Continuum Mean-Field calculations of the free energy change
 
-Hydrophobic length of the protein, dp, was determined based on the average Z distance between the center of mass (COM) of residue W16 to I48 (Figure 2—figure supplement 3A). The hydrophobic length of lipid, dl, was calculated as the average Z distance between the COM of C1 atoms in the upper leaflet and the lower leaflet. Given the membrane thickness changes drastically from around the channel towards the boundary of our simulation box (Figure 2—figure supplement 3B left), we calculated the dl for lipids that are within r = 8Å of the protein (Figure 2—figure supplement 3B right). The hydrophobic mismatch length, dH, then can be estimated as:(1)dH=dp−dl
+Hydrophobic length of the protein, $d_{p}$, was determined based on the average Z distance between the center of mass (COM) of residue W16 to I48 (Figure 2—figure supplement 3A). The hydrophobic length of lipid, $d_{l}$, was calculated as the average Z distance between the COM of C1 atoms in the upper leaflet and the lower leaflet. Given the membrane thickness changes drastically from around the channel towards the boundary of our simulation box (Figure 2—figure supplement 3B left), we calculated the $d_{l}$ for lipids that are within r = 8Å of the protein (Figure 2—figure supplement 3B right). The hydrophobic mismatch length, $d_{H}$, then can be estimated as:
 
-The maximum radius of curvature (R) and curvature (C) were estimated by measuring the l and h values as following (Figure 2—figure supplement 3C),(2)R=h2+l28h & C=1R
+$$
+d_{H}=d_{p}−d_{l}
+$$
 
-Here we investigate whether the binomial curve seen in our free energy diagram (Figure 2—figure supplements 2,3D, E), is due to change in the membrane curvature or due to hydrophobic mismatch between the protein and lipid bilayer at different Z distances (reaction coordinates). For this aim, we have monitored and measured the average curvature (C) and hydrophobic mismatch (dH) values over the last 5 ns of each umbrella sampling window for the PMF calculation. The free energy contribution of curvature, ΔGC, and hydrophobic mismatch, ΔGH, can be described as the following phenomenological expressions (Marsh, 2007; Kralj-Iglič et al., 1999; Kralj-Iglic et al., 1996; Bavi et al., 2016b; Svetina, 2015).ΔGC=12KC (C1+C2−C0)2A+ KGC1C2A(3)ΔGH=2(KA3KBt6)0.25 |dp−dl|24 2πRave
+The maximum radius of curvature (R) and curvature (C) were estimated by measuring the l and h values as following (Figure 2—figure supplement 3C),
 
-Here for simplicity, it is assumed that since the MscS is an isotropic inclusion (i.e. cylindrical or conical in both principal planar directions), its insertion in the membrane causes symmetric curvature (i.e., C1=C2=C) in the membrane planar directions. Moreover, the intrinsic curvature of the protein has been assumed zero due to its shape. Where KA, KC and C0 are the area expansion and bending moduli and spontaneous curvature of the lipid bilayer which, based on previous and our current MD simulations are assumed to be 200 mN/m, 31 kBT and ~0 Å-1, respectively (Akitake et al., 2005; Feller and Pastor, 1999; Marrink and Mark, 2001). C0 is assumed to be ~ 0 Å-1 based on the flat shape of the bilayer (including the embedded MscS structure) at equilibrium (Figure 6 and Figure 2—figure supplement 3C). t is the global thickness and A is the surface area of each monolayer and Rave is the average external radius of the transmembrane part of the protein which is assumed to be ~ 2 nm. KG is the elastic modulus for Gaussian curvature, which has experimentally approximated to be ~ - 0.1 KC (Venable et al., 2015; Siegel and Kozlov, 2004; Templer et al., 1998; Marsh, 2007; Raghunathan et al., 2012; Venable et al., 2015).
+$$
+R=\frac{h}{2}+\frac{l^{2}}{8h} & C=\frac{1}{R}
+$$
 
-We also investigated whether variable C as a function of lipid bilayer area would change the final values of the free energy. To do this, we discretized the membrane into concentric ribbons, a1 to an with c1 to cn being their corresponding curvature values (Figure 2—figure supplement 4). Each value was averaged across different frames of the simulation (i.e. last 20 ns). Then the integral below (Equation 4) was used for calculating the free energy due to curvature change.(4)ΔGC=12KC ∫C2dA=12KC∑i=1naici2
+Here we investigate whether the binomial curve seen in our free energy diagram (Figure 2—figure supplements 2,3D, E), is due to change in the membrane curvature or due to hydrophobic mismatch between the protein and lipid bilayer at different Z distances (reaction coordinates). For this aim, we have monitored and measured the average curvature (C) and hydrophobic mismatch ($d_{H}$) values over the last 5 ns of each umbrella sampling window for the PMF calculation. The free energy contribution of curvature, Δ$G_{C}$, and hydrophobic mismatch, Δ$G_{H}$, can be described as the following phenomenological expressions (Marsh, 2007; Kralj-Iglič et al., 1999; Kralj-Iglic et al., 1996; Bavi et al., 2016b; Svetina, 2015).
+
+$$
+ΔG_{C}=\frac{1}{2}K_{C} (C_{1}+C_{2}−C_{0})^{2}A+ K_{G}C_{1}C_{2}A
+$$
+
+
+
+$$
+ΔG_{H}=\sqrt{2}(\frac{K_{A}^{3}K_{B}}{t^{6}})^{0.25}\frac{ |d_{p}−d_{l}|^{2}}{4} 2\piR_{ave}
+$$
+
+Here for simplicity, it is assumed that since the MscS is an isotropic inclusion (i.e. cylindrical or conical in both principal planar directions), its insertion in the membrane causes symmetric curvature (i.e., $C_{1}=C_{2}=C$) in the membrane planar directions. Moreover, the intrinsic curvature of the protein has been assumed zero due to its shape. Where $K_{A}$, $K_{C}$ and $C_{0}$ are the area expansion and bending moduli and spontaneous curvature of the lipid bilayer which, based on previous and our current MD simulations are assumed to be 200 mN/m, 31 kBT and ~0 Å-1, respectively (Akitake et al., 2005; Feller and Pastor, 1999; Marrink and Mark, 2001). $C_{0}$ is assumed to be ~ 0 Å-1 based on the flat shape of the bilayer (including the embedded MscS structure) at equilibrium (Figure 6 and Figure 2—figure supplement 3C). t is the global thickness and A is the surface area of each monolayer and $R_{ave}$ is the average external radius of the transmembrane part of the protein which is assumed to be ~ 2 nm. $K_{G}$ is the elastic modulus for Gaussian curvature, which has experimentally approximated to be ~ - 0.1 $K_{C}$ (Venable et al., 2015; Siegel and Kozlov, 2004; Templer et al., 1998; Marsh, 2007; Raghunathan et al., 2012; Venable et al., 2015).
+
+We also investigated whether variable C as a function of lipid bilayer area would change the final values of the free energy. To do this, we discretized the membrane into concentric ribbons, $a_{1}$ to $a_{n}$ with $c_{1}$ to $c_{n}$ being their corresponding curvature values (Figure 2—figure supplement 4). Each value was averaged across different frames of the simulation (i.e. last 20 ns). Then the integral below (Equation 4) was used for calculating the free energy due to curvature change.
+
+$$
+ΔG_{C}=\frac{1}{2}K_{C} \intC^{2}dA=\frac{1}{2}K_{C}\sumi=1na_{i}c_{i}^{2}
+$$
 
 The resulting trend is similar to the case where we assumed a constant curvature across the bilayer, where the contribution of free energy due to change in the curvature is still an order of magnitude smaller than that of the hydrophobic mismatch (Figure 2—figure supplement 3D-F).
 

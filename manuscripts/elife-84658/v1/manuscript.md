@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0347fy350 Strategic area: Protecting Crops and the Environment, Rothamsted Research Harpenden United Kingdom
-2. https://ror.org/013meh722 Department of Biochemistry, University of Cambridge Cambridge United Kingdom
+1. Strategic area: Protecting Crops and the Environment, Rothamsted Research Harpenden United Kingdom ([ROR:0347fy350](https://ror.org/0347fy350))
+2. Department of Biochemistry, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
@@ -40,17 +40,178 @@ In this study, three key issues were addressed in order to develop the curation 
 
 ## Results
 
-## Enabling multispecies curation with UniProtKB accessions
+### Enabling multispecies curation with UniProtKB accessions
 
 In any curation context, stable identifiers are required for annotated entities. The UniProt Knowledgebase (UniProtKB) (Bateman et al., 2021) is universally recognized, provides broad taxonomic protein coverage, and manually curates standard nomenclature across protein families. Protein sequences are both manually and computationally annotated in UniProtKB, providing a wealth of data on catalytic activities, protein structures, and protein–protein interactions, Gene Ontology (GO) annotations, and links to PHI-base phenotypes (Ashburner et al., 2000; Carbon et al., 2021; Urban et al., 2022). To improve interoperability with other resources, we used UniProtKB accession numbers for retrieving protein entities, gene names, and species information for display in PHI-Canto. PHI-Canto accesses the UniProtKB API to automatically retrieve the entities and their associated data.
 
-## Developing the metagenotype to capture interspecies interactions
+### Developing the metagenotype to capture interspecies interactions
 
 To enable the annotation of interspecies interactions, we developed the concept of a ‘metagenotype,’ which represents the combination of a pathogen genotype and a host genotype (Figure 3). A metagenotype is created after the individual genotypes from both species are created. Each metagenotype can be annotated with pathogen–host interaction phenotypes to capture changes in pathogenicity (caused by alterations to the pathogen) and changes in virulence (caused by alterations to the host and/or the pathogen). Pathogenicity is a property of the pathogen that describes the ability of the pathogen to cause an infectious disease in another organism. When a pathogenic organism causes disease, the severity of the disease that occurs is referred to as ‘virulence’ and this can also be dependent upon the host organism. Metagenotypes must always include at least one named pathogen gene with a genotype of interest, but need not include a host gene if none is referenced in a given experiment: instead, the wild-type host species and strain may be used for the host part of the metagenotype.
 
-## Annotation types and annotation extensions in PHI-Canto
+![Figure 3.](https://cdn.elifesciences.org/articles/84658/elife-84658-fig3-v1.jpg)
+
+**Figure 3.:** The curator selects a pathogen genotype and a host genotype to combine into a metagenotype. The metagenotype can be annotated with pathogen–host interaction phenotypes from PHIPO (the Pathogen–Host Interaction Phenotype Ontology).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84658/elife-84658-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Simplified UML class diagram showing the relations between entities (things of interest) in a Canto curation session. The numbers on the connecting lines represent the cardinality of the relation, meaning how many of one entity can be related to another entity: 0...n means ‘zero or more;’ 1...n means ‘one or more.’ Lines with a hollow arrowhead indicate that the target entity (at the head of the arrow) is a generalization of the source entity (at the tail of the arrow). Boxes outlined in bold indicate new entities which were added to support curation in the Pathogen–Host Interaction Community Annotation Tool (PHI-Canto).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/84658/elife-84658-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** This database stores data that is shared across all curation sessions. Database tables are represented as boxes, and arrows between boxes indicate a connection between tables. The table and property names contain numerous abbreviations, which are expanded as follows: curs: curation session, pub: publication, db: database, xref: cross-reference, cv: controlled vocabulary.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/84658/elife-84658-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** This database stores data that is unique to a curation session. Database tables are represented as boxes, and arrows between boxes indicate a connection between tables. The ‘pub’ table stands for ‘publication.’
+
+### Annotation types and annotation extensions in PHI-Canto
 
 In PHI-Canto, ‘annotation’ is the task of relating a specific piece of knowledge to a biological feature. Three types of biological features can be annotated in PHI-Canto: genes, genotypes, and metagenotypes. Genotypes can be further specified as pathogen genotypes or host genotypes. Each of these biological features has a corresponding set of annotation types. The relation between biological features, annotation types, and the values that can be used for annotation are shown in Table 1. To capture additional biologically relevant information associated with an annotation, curators use the concept of annotation extensions (which include Gene Ontology annotations described by Huntley et al., 2014) to extend the primary annotation. For Canto and PHI-Canto, the meaning of ‘annotation extension’ was broadened to capture additional properties related to the annotation, such as the metagenotype used as an experimental control. The aforementioned additional properties are simply referred to as ‘annotation extensions (AEs)’ in this study (Table 1, Supplementary file 1 and Supplementary file 2). Descriptions of the new AEs for PHI-Canto and the core collection of AEs from Canto are available in the PHI-Canto user documentation (see the Code availability section).
+
+**Table 1.**
+ Annotation types and annotation extensions in the Pathogen–Host Interaction Community Annotation Tool (PHI-Canto), grouped by the biological feature being annotated.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Annotation type</th>
+      <th>Annotation extensions *</th>
+      <th>Annotation value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Annotation types for the gene biological feature †</td>
+    </tr>
+    <tr>
+      <td colspan="2">Gene Ontology annotation</td>
+      <td>Gene Ontology term</td>
+    </tr>
+    <tr>
+      <td rowspan="2"></td>
+      <td>with host species</td>
+      <td>NCBI Taxonomy ID</td>
+    </tr>
+    <tr>
+      <td>with symbiont species</td>
+      <td>NCBI Taxonomy ID</td>
+    </tr>
+    <tr>
+      <td colspan="2">Wild-type expression</td>
+      <td>PomBase Gene Expression ontology term</td>
+    </tr>
+    <tr>
+      <td rowspan="3"></td>
+      <td>during</td>
+      <td>Gene Ontology biological process term ‡</td>
+    </tr>
+    <tr>
+      <td>in presence of</td>
+      <td>Chemical entity (ChEBI ontology)</td>
+    </tr>
+    <tr>
+      <td>tissue type</td>
+      <td>BRENDA Tissue Ontology term</td>
+    </tr>
+    <tr>
+      <td colspan="3">Annotation types for the genotype biological feature</td>
+    </tr>
+    <tr>
+      <td colspan="2">Single species phenotype(Pathogen phenotype or Host phenotype)</td>
+      <td>PHIPO term (single-species phenotype branch)</td>
+    </tr>
+    <tr>
+      <td rowspan="6"></td>
+      <td>affected proteins</td>
+      <td>UniProtKB accession number (one for each affected protein)</td>
+    </tr>
+    <tr>
+      <td>assayed RNA §</td>
+      <td>UniProtKB accession number</td>
+    </tr>
+    <tr>
+      <td>assayed protein</td>
+      <td>UniProtKB accession number</td>
+    </tr>
+    <tr>
+      <td>observed in organ</td>
+      <td>BRENDA Tissue Ontology term ¶</td>
+    </tr>
+    <tr>
+      <td>penetrance</td>
+      <td>Qualitative value (low, normal, high, complete) or quantitative value (percentage)</td>
+    </tr>
+    <tr>
+      <td>severity</td>
+      <td>Qualitative value (low, normal, high, variable) or quantitative value (percentage)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Annotation types for the metagenotype biological feature</td>
+    </tr>
+    <tr>
+      <td colspan="2">Pathogen–host interaction phenotype or Gene-for-gene phenotype</td>
+      <td>PHIPO term (pathogen–host interaction phenotype branch)</td>
+    </tr>
+    <tr>
+      <td rowspan="11"></td>
+      <td>affected proteins</td>
+      <td>UniProtKB accession number (one for each affected protein)</td>
+    </tr>
+    <tr>
+      <td>assayed protein</td>
+      <td>UniProtKB accession number</td>
+    </tr>
+    <tr>
+      <td>assayed RNA</td>
+      <td>UniProtKB accession number</td>
+    </tr>
+    <tr>
+      <td>compared to control metagenotype</td>
+      <td>Metagenotype **</td>
+    </tr>
+    <tr>
+      <td>extent of infectivity ††</td>
+      <td>PHIPO term</td>
+    </tr>
+    <tr>
+      <td>gene-for-gene interaction ‡ ‡</td>
+      <td>PHIPO Extension (PHIPO_EXT) ontology term</td>
+    </tr>
+    <tr>
+      <td>host tissue infected</td>
+      <td>BRENDA Tissue Ontology term</td>
+    </tr>
+    <tr>
+      <td>inverse gene-for-gene interaction ‡ ‡</td>
+      <td>PHIPO Extension (PHIPO_EXT) ontology term</td>
+    </tr>
+    <tr>
+      <td>outcome of interaction ††</td>
+      <td>PHIPO term</td>
+    </tr>
+    <tr>
+      <td>penetrance</td>
+      <td>Qualitative value (low, normal, high, complete) or quantitative value (percentage)</td>
+    </tr>
+    <tr>
+      <td>severity</td>
+      <td>Qualitative value (low, normal, high, variable) or quantitative value (percentage)</td>
+    </tr>
+    <tr>
+      <td>Disease name</td>
+      <td></td>
+      <td>PHIDO term § §</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>host tissue infected</td>
+      <td>BRENDA Tissue Ontology term</td>
+    </tr>
+  </tbody>
+</table>
+
+_*PHI-Canto uses 44 annotation extension (AE) relations, of which nine are unique to PHI-base, while the remaining 35 are shared with PomBase.†Additional AEs shared with PomBase for the gene annotation types are available in Supplementary file 2.‡Restricted to GO:0022403, GO:0033554, GO:0072690, GO:0051707 and their descendant terms.§AE relates to mRNA.¶Restricted to BTO:0001489, BTO:0001494, BTO:0001461 and their descendant terms.**Metagenotypes are selected from those already added to the curation session.††AE only applies to pathogen–host interaction phenotypes.‡ ‡AE only applies to gene-for-gene phenotypes.§ §Curated list of disease names._
 
 Metagenotypes can be annotated with terms from an ontology or controlled vocabulary following either the ‘pathogen–host interaction phenotype,’ ‘gene-for-gene phenotype,’ or ‘disease name’ annotation types (Table 1). Phenotype annotations on metagenotypes can be supported by AEs providing additional qualifying information required to fully interpret the experiment, such as the infected tissue of the host.
 
@@ -58,35 +219,313 @@ Phenotypes can also be curated for single-species experiments involving either t
 
 PHI-Canto also supports the annotation of gene and gene product attributes to represent the evolved functional role of a gene product, described here as the ‘gene annotation’ workflow (Table 1). The Gene Ontology is used for the annotation of a gene product’s molecular functions, biological processes, and cellular components, while PSI-MOD is used for the annotation of protein modifications (Montecchi-Palazzi et al., 2008), and BioGRID experiment types are used to capture genetic and physical interactions (Oughtred et al., 2021). GO annotations are submitted to the EBI GO Annotation Database (GOA), from where they are propagated to the main GO knowledge base (Carbon et al., 2021; Huntley et al., 2015).
 
-## Trial curation of interspecies interaction publications
+### Trial curation of interspecies interaction publications
 
 Ten publications covering a wide range of typical plant, human, and animal pathogen–host interactions were selected for trial curation in PHI-Canto before the tool was made available to publication authors and communities to add further publications (Table 2). These publications included experiments with early-acting pathogen virulence proteins, the first host targets of pathogen effectors, and resistance to antifungal chemistries. These publications guided the development of the ontology terms and controlled vocabulary terms that were required for PHI-Canto, as well as the curation methods required for different experiments. Major curation problems and their solutions are summarized in Table 3, and example annotations are described below and in Appendix 1 and Appendix 2.
 
-## Curating an experiment with a metagenotype
+**Table 2.**
+ Publications selected for trial curation using the Pathogen–Host Interaction Community Annotation Tool (PHI-Canto).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject of publication</th>
+      <th>PMID</th>
+      <th>Publication title</th>
+      <th>Genotype * annotated with</th>
+      <th>Metagenotype † annotated with</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bacteria–human interaction</td>
+      <td>28715477 ‡</td>
+      <td>The RhlR quorum-sensing receptor controls Pseudomonas aeruginosa pathogenesis and biofilm development independently of its canonical homoserine lactone autoinducer.</td>
+      <td>Pathogen phenotype</td>
+      <td>unaffected pathogenicity, altered pathogenicity or virulence</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fungal–human interaction/novel antifungal target</td>
+      <td>28720735 §</td>
+      <td>A nonredundant phosphopantetheinyl transferase, PptA, is a novel antifungal target that directs secondary metabolite, siderophore, and lysine biosynthesis in Aspergillus fumigatus and is critical for pathogenicity.</td>
+      <td>Pathogen phenotype</td>
+      <td>unaffected pathogenicity, altered pathogenicity or virulence</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Secondary metabolite clusters required for pathogen virulence</td>
+      <td>30459352 §</td>
+      <td>Phosphopantetheinyl transferase (Ppt)-mediated biosynthesis of lysine, but not siderophores or DHN melanin, is required for virulence of Zymoseptoria tritici on wheat.</td>
+      <td>Pathogen phenotype</td>
+      <td>unaffected pathogenicity, altered pathogenicity or virulence</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Early acting virulence proteins</td>
+      <td>29020037 §, ¶</td>
+      <td>A conserved fungal glycosyltransferase facilitates pathogenesis of plants by enabling hyphal growth on solid surfaces.</td>
+      <td>Pathogen phenotype</td>
+      <td>altered pathogenicity or virulence</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mutualism interaction</td>
+      <td>16517760 **</td>
+      <td>Reactive oxygen species play a role in regulating a fungus-perennial ryegrass mutualistic interaction</td>
+      <td>Pathogen phenotype</td>
+      <td>mutualism</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>First host targets of pathogen effectors</td>
+      <td>31804478 §, ††</td>
+      <td>An effector protein of the wheat stripe rust fungus targets chloroplasts and suppresses chloroplast function.</td>
+      <td>N/A</td>
+      <td>altered pathogenicity or virulencea pathogen effector</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Receptor decoys</td>
+      <td>30220500 ††</td>
+      <td>Suppression of plant immunity by fungal chitinase-like effectors.</td>
+      <td>Pathogen phenotype</td>
+      <td>a pathogen effector</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R-Avr interactions</td>
+      <td>20601497 ‡ ‡, § §</td>
+      <td>Activation of an Arabidopsis resistance protein is specified by the in planta association of its leucine-rich repeat domain with the cognate oomycete effector.</td>
+      <td>Host phenotype</td>
+      <td>a pathogen effectora gene-for-gene interaction</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fungal toxins required for virulence on plants</td>
+      <td>22241993 ¶ ¶</td>
+      <td>The cysteine rich necrotrophic effector SnTox1 produced by Stagonospora nodorum triggers susceptibility of wheat lines harboring Snn1.</td>
+      <td>N/A</td>
+      <td>a pathogen effectora gene-for-gene interaction (inverse)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resistance to antifungal chemistries</td>
+      <td>22314539 ***</td>
+      <td>The T788G mutation in the cyp51C gene confers voriconazole resistance in Aspergillus flavus causing aspergillosis.</td>
+      <td>Pathogen phenotypePathogen chemistry phenotype</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Single species genotypes could be annotated with either a pathogen phenotype, a pathogen chemistry phenotype, or a host phenotype. Genotypes are annotated with in vitro or in vivo phenotypes from PHIPO, using either the Pathogen phenotype or Host phenotype annotation type workflow.†Metagenotype comprises of a pathogen and a host genotype in combination. Phenotypes from PHIPO can be annotated to metagenotypes using either the ‘Pathogen–Host Interaction Phenotype’ or ‘Gene-for-Gene Phenotype’ annotation type workflow.‡Example of curating 'unaffected pathogenicity' available in Appendix 1.§Example of curating 'altered pathogenicity or virulence' available in Appendix 1 and Appendix 2.¶Example of 'in vitro pathogen phenotype' available in Appendix 1.**Example of curating 'mutualism' available in Appendix 1. Although ‘mutualism interactions’ are generally out of scope for PHI-base, PHI-Canto can be used to curate these publications if required. In this study, the fungal gene mutation altered the interaction from mutualistic to antagonistic.††Example of curating 'a pathogen effector’ available in Appendix 1.‡ ‡Example of curating 'a gene-for-gene interaction' available in Appendix 1.§ §Example of 'in vivo host phenotype' available in Appendix 1.¶ ¶Example of curating 'an inverse gene-for-gene interaction' available in Appendix 1.***Example of 'in vitro pathogen chemistry phenotype' available in Appendix 1._
+
+**Table 3.**
+ Issues encountered whilst curating ten example publications with the Pathogen–Host Interaction Community Annotation Tool (PHI-Canto).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Curated feature</th>
+      <th>Problem description</th>
+      <th>Solution</th>
+      <th>Context in PHI-Canto</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Species strain</td>
+      <td>UniProtKB sequence information is commonly from a reference genome strain. This sequence may differ from the experimental strain curated in PHI-Canto.</td>
+      <td>Develop a selectable list of strains for curators to assign to the genotype (and metagenotype).</td>
+      <td>Strain selected after UniProtKB entry on gene entry page. Strain used within genotype creation.</td>
+      <td>URL1All phenotype annotation examples in Appendix 1 contain a ‘strain name’ within the genotype/metagenotype.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Delivery mechanism</td>
+      <td>Pathogen–host interaction experiments use a wide array of mechanisms to deliver the treatment of choice (to cells, tissues, and host and non-host species) which are required for experimental interpretation.</td>
+      <td>Develop terms prefixed with ‘delivery mechanism’ in the Pathogen–Host Interaction Experimental Conditions Ontology (PHI-ECO).</td>
+      <td>Selection of experimental conditions whilst making a phenotype annotation to a metagenotype.</td>
+      <td>URL2Examples in Appendix 1 PMID:20601497, PMID:31804478 and PMID:22241993.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Physical interaction</td>
+      <td>Physical interactions (i.e. protein–protein interactions) could only be annotated between proteins of the same species, so it was not possible to annotate interactions between a pathogen effector and its first host target.</td>
+      <td>Adapt the ‘Physical Interaction’ annotation type to store gene and species information from two organisms (instead of one).</td>
+      <td>Physical Interaction annotation type.</td>
+      <td>URL3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pathogen effector</td>
+      <td>There was no available ontology term to describe a ‘class’ pathogen effector (a ‘transferred entity from pathogen to host’), because effectors have heterogeneous functions (specific enzyme inhibitors, modulating host immune responses, and targeting host gene-silencing mechanisms). Effector is not a phenotype, and so did not fit into the Pathogen–Host Interaction Phenotype Ontology (PHIPO).</td>
+      <td>Develop new Gene Ontology (GO) biological process terms (and children), to group ‘effector-mediated’ processes.</td>
+      <td>GO Biological Process annotation on a pathogen gene.</td>
+      <td>URL4Example in Appendix 1 PMID:31804478.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wild-type control phenotypes</td>
+      <td>Natural sequence variation between strains of both pathogen and host organisms can alter the phenotypic outcome within an interaction. The wild-type metagenotype phenotype needs to be curated so that the phenotype of an altered metagenotype is informative.</td>
+      <td>Allow creation of metagenotypes containing wild-type genes. Develop a new annotation extension (AE) property ‘compared to control,’ used in annotation of altered metagenotypes.</td>
+      <td>Annotation of phenotypes and AEs to metagenotypes (using the ‘PHI phenotype’ or ‘Gene for gene phenotype’ annotation type).</td>
+      <td>URL5Examples in Appendix 1 PMID:28715477, PMID:16517760, PMID:29020037, PMID:20601497, PMID:22241993.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>How to record chemicals for resistance or sensitivity phenotypes.</td>
+      <td>Follow PomBase model to pre-compose PHIPO terms to include chemical names from the ChEBI ontology.</td>
+      <td>Annotation of phenotypes to single species genotypes.</td>
+      <td>URL4Example in Appendix 1 PMID:22314539.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene for gene interactions</td>
+      <td>Complex gene-for-gene interactions within plant pathogen–host interactions required additional detail to describe the function of the pathogen and host genes within the metagenotype (including the specified strains).</td>
+      <td>Develop the additional metagenotype curation type ‘Gene for gene phenotype.’ Develop two new AEs, ‘gene_for_gene_interaction’ and ‘inverse gene_for_gene_interaction,’ using PHIPO_EXT terms describing three components of the interaction.*</td>
+      <td>Annotation of phenotypes and AEs to metagenotypes using the ‘Gene for gene phenotype’ annotation type.</td>
+      <td>URL4Examples in Appendix 1 PMID:20601497 and PMID:22241993.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nine high-level legacy terms (from PHI-base 4)</td>
+      <td>PHI-base should incorporate legacy data from PHI-base 4 into new PHI-base 5 gene-centric pages.</td>
+      <td>Maintain the nine high level terms as ‘tags’ within the new PHI-base 5 user interface. Develop mapping methods to enable this.</td>
+      <td>Three locations described in Supplementary file 3.</td>
+      <td>Urban et al., 2015 NAR (PMID:25414340).</td>
+    </tr>
+  </tbody>
+</table>
+
+_URL1 https://canto.phi-base.org/docs/getting_started#adding_strains.URL2 https://canto.phi-base.org/docs/phipo_annotation#experimental_conditions.URL3 https://canto.phi-base.org/docs/physical_interaction_annotation.URL4 https://canto.phi-base.org/docs/phipo_annotation#pathogen_host_interaction_phenotypes.URL5 https://canto.phi-base.org/docs/genotypes#metagenotype_management.*Namely, (i) the compatibility of the interaction (ii) the functional status of the pathogen gene, and (iii) the functional status of the host gene._
+
+### Curating an experiment with a metagenotype
 
 A large proportion of the curation in PHI-Canto requires the use of metagenotypes: one of the simpler cases involves early-acting virulence proteins, where a genetically modified pathogen is inoculated onto a host (without a host gene being specified). A metagenotype is created to connect the genotypes of both species and is annotated with a phenotype term. These experiments are curated following the ‘pathogen–host interaction phenotype’ workflow, including any relevant AEs (Table 1). This two-step curation process is illustrated by PMID:29020037 curation (Table 2, Appendix 1 and Appendix 2) where the GT2 gene is deleted from the fungal plant pathogen Zymoseptoria tritici and inoculated onto wheat plants; the observed phenotype ‘absence of pathogen-associated host lesions’ (PHIPO:0000481) is annotated to the metagenotype; and the AE for ‘infective ability’ is annotated with ‘loss of pathogenicity’ compared to the unaltered pathogen.
 
-## Curating pathogen effector experiments
+### Curating pathogen effector experiments
 
 A pathogen effector is defined as an entity transferred between the pathogen and the host that is known or suspected to be responsible for either activating or suppressing a host process commonly involved in defense (Houterman et al., 2009; Jones and Dangl, 2006; Figure 2). To curate an effector experiment, a metagenotype is created and annotated with a phenotype term. To indicate that the pathogen gene functions as an effector, it is necessary to make a concurrent gene annotation (Table 1) with the GO biological process term ‘effector-mediated modulation of host process’ (GO:0140418) or an appropriate descendant term. This GO term (GO:0140418) and its descendant terms were created in collaboration with the Gene Ontology Consortium (GOC) and are used for pathogen effectors in PHI-base (version 5) (Supplementary file 3). Reported activities of pathogen effectors can also be curated with GO molecular function terms. An example of curation of a pathogen effector experiment is illustrated using PMID:31804478 (Table 2 and Appendix 1) where the pathogen effector Pst_12806 from Puccinia striiformis suppresses pattern-triggered immunity in a tobacco leaf model. Here, the metagenotype is annotated with the phenotype ‘decreased level of host defense-induced callose deposition’ (PHIPO:0001015) and the effector is annotated with ‘effector-mediated suppression of host pattern-triggered immunity’ (GO:0052034). A further experiment demonstrated that the pathogen effector protein was able to bind to the natural host (wheat) protein PetC and inhibit its enzyme activity, resulting in a GO molecular function annotation ‘enzyme inhibitor activity’ (GO:0004857) for Pst_12806, with PetC captured as the target protein (see Appendix 1).
 
-## Curating experiments with a gene-for-gene relationship
+### Curating experiments with a gene-for-gene relationship
 
 For a gene-for-gene pathogen–host interaction type, the ‘gene-for-gene phenotype’ metagenotype workflow is followed (a gene-for-gene interaction is when a known genetic interaction is conferred by a specific pathogen avirulence gene product and its cognate host resistance gene product) (Figure 2c and d, further described in the figure legend Flor, 1956; Jones and Dangl, 2006; Kanyuka et al., 2022). The metagenotypes and phenotype annotations are made in the same way as the standard ‘pathogen–host interaction phenotype’ workflow, but with different supporting data. A new AE was created to indicate the following three components of the interaction: (i) the compatibility of the interaction, (ii) the functional status of the pathogen gene, and (iii) the functional status of the host gene. An example of an annotation for a biotrophic pathogen gene-for-gene interaction has been illustrated with PMID:20601497 (Table 2 and Appendix 1). Inverse gene-for-gene relationships occur with necrotrophic pathogens, where the pathogen necrotrophic effector interacts with a gene product from the corresponding host susceptibility locus and activates a host response that benefits the pathogen (a compatible interaction). If the necrotrophic effector cannot interact with the host target, then no disease occurs (an incompatible interaction) (Breen et al., 2016). An example of an inverse gene-for-gene interaction using the appropriate AEs is illustrated with PMID:22241993 (Table 2 and Appendix 1).
 
-## Curating an experiment with a single species genotype in the presence or absence of a chemical
+### Curating an experiment with a single species genotype in the presence or absence of a chemical
 
 Single species genotypes (pathogen or host) can also be annotated with phenotypes following the ‘single species phenotype’ workflow (Table 1). This is illustrated using PMID:22314539 in Table 2 (and Appendix 1) with an example of an in vitro pathogen chemistry phenotype, where a single nucleotide mutation in the Aspergillus flavus cyp51C gene confers ‘resistance to voriconazole’ (PHIPO:0000590), an antifungal agent.
 
-## Supporting curation of legacy information
+### Supporting curation of legacy information
 
 PHI-Canto’s curation workflows maintain support for nine high-level terms that describe phenotypic outcomes essential for taxonomically diverse interspecies comparisons, which were the primary annotation method used in previous versions of PHI-base (Urban et al., 2015) and which are displayed in the Ensembl Genomes browser (Yates et al., 2022). For example, the ‘infective ability’ AE can be used to annotate the following subset of high-level terms: ‘loss of pathogenicity,’ ‘unaffected pathogenicity,’ ‘reduced virulence,’ ‘increased virulence,’ and ‘loss of mutualism’ (formerly ‘enhanced antagonism’). The mapping between the nine high-level terms and the PHI-Canto curation process is further described in Supplementary file 3.
 
-## Resolving additional problems with curating complex pathogen–host interactions
+### Resolving additional problems with curating complex pathogen–host interactions
 
 Table 3 shows a selection of the problems encountered during the development of PHI-Canto and the solutions we identified: for example, recording the delivery mechanism used within the pathogen–host interaction experiment. New experimental condition terms were developed with a prefix of ‘delivery mechanism’: for example, ‘delivery mechanism: agrobacterium,’ ‘delivery mechanism: heterologous organism,’ and ‘delivery mechanism: pathogen inoculation.’ Another issue encountered was how to record a physical interaction between two proteins from different species, especially for the curation of pathogen effectors and their discovered first host targets. This was resolved by adapting the existing Canto module for curating physical interactions to support two different species.
 
-## Development of the Pathogen–Host Interaction Phenotype Ontology and additional data lists
+### Development of the Pathogen–Host Interaction Phenotype Ontology and additional data lists
 
 To support the annotation of phenotypes in PHI-Canto, PHIPO was developed. PHIPO is a species-neutral phenotype ontology that describes a broad range of pathogen–host interaction phenotypes. Terms in PHIPO were developed following a pre-compositional approach, where the term names and semantics were composed from existing terms from other ontologies, in order to make the curation process easier. For example, the curator annotates 'resistance to penicillin' (PHIPO:0000692) instead of annotating ‘increased resistance to chemical’ (PHIPO:0000022) and ‘penicillin’ (CHEBI:17334) separately. Terms in PHIPO have logical definitions that follow design patterns from the uPheno ontology (Shefchek et al., 2020), and mapping PHIPO terms to the uPheno patterns is an ongoing effort. These logical definitions provide relations between phenotypes in PHIPO and terms in other ontologies, such as PATO, GO, and ChEBI. PHIPO is available in OWL and OBO formats from the OBO Foundry (Jackson et al., 2021).
 
@@ -96,21 +535,145 @@ Annotations in PHI-Canto include experimental evidence, which is specified by a 
 
 PHI-Canto includes a ‘disease name’ annotation type (Table 1) for annotating the name of the disease caused by an interaction between the pathogen and host specified in a wild-type metagenotype (this annotation type is described in the PHI-Canto user documentation and in Appendix 2). Diseases are specified by a controlled vocabulary of disease names (called PHIDO), which was derived from disease names curated in previous versions of PHI-base (Urban et al., 2022). PHIDO was developed as a placeholder to allow disease names to be annotated on a wide variety of pathogen interactions, including those on plant, human, animal, and invertebrate hosts, especially where such diseases were not described in any existing ontology.
 
-## Summary of the PHI-Canto curation process
+### Summary of the PHI-Canto curation process
 
 The PHI-Canto curation process is outlined in Figure 4, Figure 4—figure supplement 1, the PHI-Canto user documentation, a detailed worked example provided in Appendix 2 and curation tutorials on the PHI-base YouTube channel (https://www.youtube.com/@PHI-base), under the playlist ‘PHI-Canto tutorial videos.’ Each curation session is associated with one publication (using its PubMed identifier). One or more curators can collaborate on curating the same publication. An instructional email is sent by PHI-Canto to curators when they begin a new curation session, and PHI-base provides further guidelines on what information is needed to curate a publication in PHI-Canto (Figure 4—figure supplement 2) and how to identify UniProtKB accession numbers from reference proteomes (Figure 4—figure supplement 3).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84658/elife-84658-fig4-v1.jpg)
+
+**Figure 4.:** This diagram shows the curation workflow from the start of a curation session to its submission. The PubMed ID of the publication to be curated is entered and the title is automatically retrieved. The curator enters their name, email address, and ORCID iD. On the species and genes page, the experimental pathogen and host genes are entered using UniProtKB accession numbers, and for experiments where a mutant pathogen genotype is assayed on a wild-type host with no specified genes, there is the option to select the host species from an autocomplete menu. Information on the specific experimental strains used for each species is entered. After entering this initial information, the curator follows one of three distinct workflows depending on the biological feature the user wants to annotate (metagenotype, genotype, or gene annotation type). Except for genes, biological features are created by composing less complex features: genotypes from alleles (generated in the pathogen or host genotype management pages), and metagenotypes from genotypes (generated in the metagenotype management page). Biological features are annotated with terms from a controlled vocabulary (usually an ontology), plus additional information that varies based on the annotation type. The curator has the option to generate further annotations after creating one, but this iterative process is not represented in the diagram for the sake of brevity. After all annotations have been made, the session is submitted into the Pathogen–Host Interactions database (PHI-base) version 5. * Note that the 'Ontology annotation' group covers multiple annotation types, all of which annotate biological features with terms from an ontology or controlled vocabulary. These annotation types are described in Table 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84658/elife-84658-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The flow diagram represents the Pathogen–Host Interaction Community Annotation Tool (PHI-Canto) curation process from beginning to end in five steps. This diagram is an alternative representation to the image depicted in Figure 4. During step 2 of the workflow, the curator chooses either the gene annotation or genotype/metagenotype annotation process. Multiple annotations can be made using both annotation processes which can then be submitted for review.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84658/elife-84658-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/84658/elife-84658-fig4-figsupp3-v1.jpg)
 
 The curator first adds genes from the publication, then creates alleles from genes, genotypes from alleles, and metagenotypes from pathogen and host genotypes. Pathogen genotypes and host genotypes are created on separate pages, that only include genes from the relevant pathogen or host. A genotype can consist of multiple alleles, therefore, a metagenotype can contain multiple alleles from both the pathogen and the host. A ‘copy and edit’ feature allows the creation of multiple similar annotations.
 
 To make annotations, the curator selects a gene, genotype, or metagenotype to annotate, then selects a term from a controlled vocabulary, adds experimental evidence, experimental conditions, AEs (where available), and any additional comments. The curator can also specify a figure or table number from the original publication as part of the annotation. Curators can use a term suggestion feature to suggest new terms for any controlled vocabulary used by PHI-Canto, and experimental conditions can be entered as free text if no suitable condition is found in PHI-ECO. Subsequently, new condition suggestions are reviewed and approved by expert curators. The curation session can be saved and paused at various stages during the curation process. Once the curation process is complete, the curator submits the session for review by a nominated species expert.
 
-## Display and interoperability of data
+### Display and interoperability of data
 
 The process of incorporating FAIR principles fully into the PHI-base curation process will promote interoperability between data resources (Wilkinson et al., 2016). Figure 5 illustrates the internal and external resource dependencies for curation in PHI-Canto. URLs and descriptions of the use of each resource are provided in Figure 5—figure supplement 1. All data curated in PHI-Canto will be displayed in the new gene-centric version 5 of PHI-base, introduced in Urban et al., 2022. Additional detail on the data types displayed in PHI-base 5 is available in Table 4. Reciprocally, components of the interspecies curation framework (Figure 6a) will provide data to other resources (Figure 6b). For example, GO terms will be used in curation with PHI-Canto and these annotations will be made available in the GO knowledge base via submission to the GOA Database (Carbon et al., 2021; Huntley et al., 2015). PHI-base is a member of ELIXIR, an organization that aims to unite leading life science resources and is a major proponent of FAIR data (Durinx et al., 2016).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/84658/elife-84658-fig5-v1.jpg)
+
+**Figure 5.:** Of the databases shown, the Pathogen–Host Interactions database (PHI-base) provides data (experimental conditions, disease names, and species strain names) used to create terms in the PHI-base controlled vocabularies; the UniProt Knowledgebase (UniProtKB) provides accession numbers for proteins that PHI-Canto uses to identify genes; and the NCBI Taxonomy database is used to generate a mapping file relating taxonomic identifiers lower than species rank to their nearest taxonomic identifiers at species rank. The OBO ontologies group contains ontologies in the OBO format that PHI-Canto uses for its annotation types. The parenthesized text after the ontology name indicates the term prefix for the ontology.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84658/elife-84658-fig5-figsupp1-v1.jpg)
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/84658/elife-84658-fig6-v1.jpg)
 
 **Figure 6.:** (a) The interspecies curation framework consists of three main components. First, a curation tool called PHI-Canto, second, a new species-neutral phenotype ontology called PHIPO (the Pathogen–Host Interaction Phenotype Ontology), and thirdly, a selection of additional controlled vocabularies for disease names (PHIDO), experimental conditions (PHI-ECO), pathogen and host species, and natural strains associated with each species. The two-way arrows indicate that terms from the ontology and controlled vocabularies are used in curation with PHI-Canto, and that new terms required for curation may be suggested for inclusion within the ontology and controlled vocabularies. (b) The PHI-Canto and PHIPO content curation framework (gray box) uses persistent identifiers and cross-referenced information from UniProt, Ensembl Genomes, and the Gene Ontology. PHIPO is made available at the OBO Foundry. Newly minted wild-type gene annotations are suggested for inclusion into the Gene Ontology via the EBI Gene Ontology Annotation database. Data curated in PHI-Canto, following expert review, is then shared with ELIXIR data resources such as UniProtKB, Ensembl Genomes, FungiDB, and KnetMiner, and provided on request to other databases (FgMutantDB, GloBI). Researchers can look up curated information via the Pathogen–Host Interactions database (PHI-base) web interface or can download the whole dataset from PHI-base for inclusion in their bioinformatics pipelines. Authors can submit data to PHI-base by curating their publications into PHI-Canto. The origin of data is indicated by directional arrows.
+
+**Table 4.**
+ Automatically and manually curated types of data displayed in the gene-centric version 5 of the Pathogen–Host Interactions database (PHI-base).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data type</th>
+      <th>Data source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Metadata</td>
+    </tr>
+    <tr>
+      <td>Entry Summary *</td>
+      <td>UniProtKB †</td>
+    </tr>
+    <tr>
+      <td>Pathogen species</td>
+      <td>NCBI Taxonomy †</td>
+    </tr>
+    <tr>
+      <td>Pathogen strain</td>
+      <td>PHI-base strain list</td>
+    </tr>
+    <tr>
+      <td>Host species</td>
+      <td>NCBI Taxonomy †</td>
+    </tr>
+    <tr>
+      <td>Host strain</td>
+      <td>PHI-base strain list</td>
+    </tr>
+    <tr>
+      <td>Publication</td>
+      <td>PubMed †</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Phenotype annotation sections</td>
+    </tr>
+    <tr>
+      <td>Pathogen–Host Interaction Phenotype</td>
+      <td>PHIPO ‡ pathogen–host interaction phenotype branch</td>
+    </tr>
+    <tr>
+      <td>Gene-for-Gene Phenotype</td>
+      <td>PHIPO pathogen–host interaction phenotype branch</td>
+    </tr>
+    <tr>
+      <td>Pathogen Phenotype</td>
+      <td>PHIPO single species phenotype branch</td>
+    </tr>
+    <tr>
+      <td>Host Phenotype</td>
+      <td>PHIPO single species phenotype branch</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Other annotation sections</td>
+    </tr>
+    <tr>
+      <td>Disease name</td>
+      <td>PHIDO</td>
+    </tr>
+    <tr>
+      <td>GO Molecular Function</td>
+      <td>GO §</td>
+    </tr>
+    <tr>
+      <td>GO Biological Process</td>
+      <td>GO</td>
+    </tr>
+    <tr>
+      <td>GO Cellular Component</td>
+      <td>GO</td>
+    </tr>
+    <tr>
+      <td>Wild-type RNA level ¶</td>
+      <td>FYPO_EXT **</td>
+    </tr>
+    <tr>
+      <td>Wild-type Protein level</td>
+      <td>FYPO_EXT</td>
+    </tr>
+    <tr>
+      <td>Physical Interaction</td>
+      <td>BioGRID ††</td>
+    </tr>
+    <tr>
+      <td>Protein Modification</td>
+      <td>PSI-MOD ‡ ‡</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The Entry Summary section includes information on which gene is being displayed in the gene-centric results page. The UniProtKB accession number is used to automatically retrieve the name and function of the protein, plus any cross-referenced identifiers from Ensembl Genomes and NCBI GenBank. The section also displays the PHI-base 5 gene identifier (PHIG) and any of the high-level terms (Supplementary file 3) annotated to the gene.†Data from UniProtKB, NCBI Taxonomy, and PubMed are automatically retrieved, while all other data are manually curated.‡PHIPO is the Pathogen–Host Interaction Phenotype Ontology.§GO is the Gene Ontology.¶This relates to mRNA.**FYPO_EXT is the Fission Yeast Phenotype Ontology Extension.††BioGRID is the Biological General Repository for Interaction Datasets.‡ ‡PSI-MOD is the Human Proteome Organization (HUPO) Proteomics Standards Initiative (PSI) Protein Modifications Ontology._
 
 ## Discussion
 
@@ -138,35 +701,35 @@ PHI-Canto, PHI-base, and PHIPO were devised and built over the past seven years 
 
 ## Methods
 
-## Changes to the Canto data model and configuration
+### Changes to the Canto data model and configuration
 
 PHI-Canto stores its data in a series of relational databases using the SQLite database engine. A primary database stores data shared across all curation sessions, and each curation session also has its own database to store data related to a single publication (such as genes, genotypes, metagenotypes, etc.). PHI-Canto can export its data as a JSON file or in more specialized formats, for example, the GO Annotation File (GAF) format.
 
 To implement PHI-Canto several new entities were added to the Canto data model in order to support pathogen–host curation, as well as new configuration options (the new entities are illustrated in Figure 3—figure supplement 1). These entities were ‘strain,’ ‘metagenotype,’ and ‘metagenotype annotation.’ The complete data model for PHI-Canto is illustrated in Figure 3—figure supplements 2 and 3.
 
-## Pathogen and host roles
+### Pathogen and host roles
 
 Genotype entities in PHI-Canto’s data model were extended with an attribute indicating their status as a pathogen genotype or a host genotype. Genotypes inherit their status (as pathogen or host) from the organism, which in turn is classified as a pathogen or host based on a configuration file that contains the NCBI Taxonomy ID (taxid) (Schoch et al., 2020) of each host species in PHI-base. Only host taxids need to be specified since PHI-Canto defaults to classifying a species as a pathogen if its taxid is not found in the configuration file.
 
 PHI-Canto also loads lists of pathogen and host species that specify the scientific name, taxid, and common name (if any) of each species. These species lists are used to specify which host species can be added as a component of the metagenotype in the absence of a specific studied gene, and to override the scientific name provided by UniProtKB in favor of the name used by a scientific community studying the species (for example, to control whether the anamorph or teleomorph name of a fungal species is displayed in PHI-Canto’s user interface).
 
-## Metagenotype implementation
+### Metagenotype implementation
 
 Metagenotypes were implemented by adding a ‘metagenotype’ entity to PHI-Canto’s data model. The metagenotype is the composition of two genotype entities. We also changed the data model to allow annotations to be related to metagenotypes (previously, only genes and genotypes could be related to annotations).
 
-## Strain implementation
+### Strain implementation
 
 Support for strain curation was implemented by adding a ‘strain’ entity to PHI-Canto’s data model. Strains are related to an organism entity and its related genotype entities. In the user interface, PHI-Canto uses the taxid of the organism to filter an autocomplete system, such that only the strains of the specified organism are suggested. The autocomplete system can also use synonyms in the strain list to suggest a strain based on its synonymous names. Unknown strains are represented by a preset value of ‘Unknown strain.’
 
-## Ontologies
+### Ontologies
 
 PHIPO was developed using the Protégé ontology editor (Musen and Team, 2015). PHIPO uses OBO namespaces to allow PHI-Canto to filter the terms in the ontology by annotation type, ensuring that genotypes are annotated with single-species phenotypes and metagenotypes with pathogen–host interaction phenotypes.
 
 PHI-ECO was also developed using Protégé, starting from a list of experimental conditions originally developed by PomBase. PHIDO was initially derived from a list of diseases already curated in PHI-base and is now maintained as a flat file that is converted into an OBO file using ROBOT (Jackson et al., 2019).
 
-## Data availability
+### Data availability
 
-## Code availability
+### Code availability
 
 PHI-Canto’s source code is available on GitHub, at https://github.com/PHI-base/canto, (copy archived at swh:1:rev:dd310334974d9471c1916c0ac080550bfd153707). PHI-Canto is freely licensed under the GNU General Public License version 3, with no restrictions on copying, distributing, or modifying the code, for commercial use or otherwise, provided any derivative works are licensed under the same terms. PHI-base provides an online demo version of PHI-Canto at https://demo-canto.phi-base.org/ which can be used for evaluating the tool. The demo version and the main version of PHI-Canto will remain freely available online.
 

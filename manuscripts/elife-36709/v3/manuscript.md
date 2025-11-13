@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.36709.001 Hepatitis B virus (HBV) infection constitutes a global public health problem. In order to establish how HBV was disseminated across different geographic regions, we estimated the levels of regional clustering for genotypes D and A. We used 916 HBV-D and 493 HBV-A full-length sequences to reconstruct their global phylogeny. Phylogeographic analysis was conducted by the reconstruction of ancestral states using the criterion of parsimony. The putative origin of genotype D was in North Africa/Middle East. HBV-D sequences form low levels of regional clustering for the Middle East and Southern Europe. In contrast, HBV-A sequences form two major clusters, the first including sequences mostly from sub-Saharan Africa, and the second including sequences mostly from Western and Central Europe. Conclusion: We observed considerable differences in the global dissemination patterns of HBV-D and HBV-A and different levels of monophyletic clustering in relation to the regions of prevalence of each genotype.
+Hepatitis B virus (HBV) infection constitutes a global public health problem. In order to establish how HBV was disseminated across different geographic regions, we estimated the levels of regional clustering for genotypes D and A. We used 916 HBV-D and 493 HBV-A full-length sequences to reconstruct their global phylogeny. Phylogeographic analysis was conducted by the reconstruction of ancestral states using the criterion of parsimony. The putative origin of genotype D was in North Africa/Middle East. HBV-D sequences form low levels of regional clustering for the Middle East and Southern Europe. In contrast, HBV-A sequences form two major clusters, the first including sequences mostly from sub-Saharan Africa, and the second including sequences mostly from Western and Central Europe. Conclusion: We observed considerable differences in the global dissemination patterns of HBV-D and HBV-A and different levels of monophyletic clustering in relation to the regions of prevalence of each genotype.
 
 ## Introduction
 
@@ -38,21 +38,415 @@ The epidemiological history of the HBV-D and HBV-A genotypes remains unclear bec
 
 ## Results
 
-## HBV genotype D
+### HBV genotype D
 
 To analyze the global dispersal patterns of HBV-D, we used 916 full-length, non-recombinant, unique sequences per patient (Table 1), because recombination analysis revealed evidence for mosaicism for 73 sequences out of the original dataset of 999 sequences. We also identified 10 multiple sequences, which were excluded from the analysis.
 
+**Table 1.**
+ Sampling of HBV* genotype D sequences from different geographic regions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region of sampling</th>
+      <th>Countries (N)</th>
+      <th>Sequences (N, %)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>North Africa/Middle East</td>
+      <td>5</td>
+      <td>394 (43.0)</td>
+    </tr>
+    <tr>
+      <td>South Asia</td>
+      <td>2</td>
+      <td>151 (16.5)</td>
+    </tr>
+    <tr>
+      <td>Western Europe</td>
+      <td>9</td>
+      <td>70 (7.6)</td>
+    </tr>
+    <tr>
+      <td>Central Asia</td>
+      <td>4</td>
+      <td>44 (4.8)</td>
+    </tr>
+    <tr>
+      <td>Australasia</td>
+      <td>2</td>
+      <td>40 (4.4)</td>
+    </tr>
+    <tr>
+      <td>Asia-Pacific</td>
+      <td>1</td>
+      <td>36 (3.9)</td>
+    </tr>
+    <tr>
+      <td>East Asia</td>
+      <td>2</td>
+      <td>35 (3.8)</td>
+    </tr>
+    <tr>
+      <td>Eastern Europe</td>
+      <td>3</td>
+      <td>27 (3.0)</td>
+    </tr>
+    <tr>
+      <td>Latin America</td>
+      <td>2</td>
+      <td>25 (2.7)</td>
+    </tr>
+    <tr>
+      <td>Oceania</td>
+      <td>6</td>
+      <td>23 (2.5)</td>
+    </tr>
+    <tr>
+      <td>Sub-Saharan Africa</td>
+      <td>8</td>
+      <td>20 (2.2)</td>
+    </tr>
+    <tr>
+      <td>North America</td>
+      <td>2</td>
+      <td>16 (1.8)</td>
+    </tr>
+    <tr>
+      <td>Central Europe</td>
+      <td>2</td>
+      <td>14 (1.5)</td>
+    </tr>
+    <tr>
+      <td>Caribbean</td>
+      <td>2</td>
+      <td>11 (1.2)</td>
+    </tr>
+    <tr>
+      <td>Southeast Asia</td>
+      <td>2</td>
+      <td>10 (1.1)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>52</td>
+      <td>916 (100)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* HBV, hepatitis B virus._
+
 Conducting an all-embracing phylogenetic analysis using globally sampled, non-recombinant sequences, we showed that HBV genotype D formed regional clusters at different levels depending on the geographic origin of sampling (Figure 1, Figure 1—figure supplement 1). In detail, 90% of the Australasian sequences form a single monophyletic subcluster (D1), as is the case for sequences from Oceania (83%; RS-D4), Asia-Pacific (83%; D2), Southeast Asia (80%; RS-D6), Caribbean (64%; RS-D4), Latin America (56%; RS-D4), and North America (50%; D3) (Table 2). Sequences from East Asia (69%; D1 and D2) and sub-Saharan Africa (55%; D3 and RS-D8) formed two monophyletic subclusters each, while sequences from Western Europe (30%), South Asia (23%), Eastern Europe (19%), and North Africa/Middle East (16%) revealed the lowest monophyly levels (Table 2). The sequences from Central Europe and Central Asia did not present any monophyletic pattern (Table 2).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36709/elife-36709-fig1-v3.jpg)
+
+**Figure 1.:** HBV genotype D sequences (N = 916) categorized according to the geographic region of sampling were used in the analysis. Monophyletic clusters are indicated as triangles. Major clusters are indicated in Roman numerals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36709/elife-36709-fig1-figsupp1-v3.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36709/elife-36709-fig1-figsupp2-v3.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36709/elife-36709-fig1-figsupp3-v3.jpg)
+
+**Table 2.**
+ HBV* genotype D percentages of clustering based on the geographic region of sampling.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region of sampling</th>
+      <th>Monophyletic clusters (N)</th>
+      <th>Clustered sequences (N, %)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Australasia</td>
+      <td>1</td>
+      <td>36 (90)</td>
+    </tr>
+    <tr>
+      <td>Oceania</td>
+      <td>1</td>
+      <td>19 (83)</td>
+    </tr>
+    <tr>
+      <td>Asia-Pacific</td>
+      <td>1</td>
+      <td>30 (83)</td>
+    </tr>
+    <tr>
+      <td>Southeast Asia</td>
+      <td>1</td>
+      <td>8 (80)</td>
+    </tr>
+    <tr>
+      <td>East Asia</td>
+      <td>2</td>
+      <td>24 (69)</td>
+    </tr>
+    <tr>
+      <td>Caribbean</td>
+      <td>1</td>
+      <td>7 (64)</td>
+    </tr>
+    <tr>
+      <td>Latin America</td>
+      <td>1</td>
+      <td>14 (56)</td>
+    </tr>
+    <tr>
+      <td>Sub-Saharan Africa</td>
+      <td>2</td>
+      <td>11 (55)</td>
+    </tr>
+    <tr>
+      <td>North America</td>
+      <td>1</td>
+      <td>8 (50)</td>
+    </tr>
+    <tr>
+      <td>Western Europe</td>
+      <td>3</td>
+      <td>21 (30)</td>
+    </tr>
+    <tr>
+      <td>South Asia</td>
+      <td>3</td>
+      <td>34 (23)</td>
+    </tr>
+    <tr>
+      <td>Eastern Europe</td>
+      <td>1</td>
+      <td>5 (19)</td>
+    </tr>
+    <tr>
+      <td>North Africa/Middle East</td>
+      <td>6</td>
+      <td>63 (16)</td>
+    </tr>
+    <tr>
+      <td>Central Asia</td>
+      <td>0</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Central Europe</td>
+      <td>0</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>24</td>
+      <td>279 (31)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* HBV, hepatitis B virus._
 
 Country-wise analysis showed the following monophyly patterns: Greenland: 100% (D2), New Zealand: 97% (D1), Japan: 83% (D2), Tunisia: 66% (RS-D7) and China: 65% (D1) (Supplementary file 1). On the other hand, we observed very low monophyly patterns for Iran, Syria, Turkey, Belgium, India, Lebanon, and Russia (mostly sampled from the Asian part of Russia) (Supplementary file 1, Figure 1—figure supplement 1). The number of local transmission networks-LTNs (monophyletic clusters) for each country is shown in Supplementary file 1.
 
 Phylogeographic analysis showed North Africa/Middle East as the putative origin of genotype D (Figures 1 and 2), however from the present dataset, the exact origin cannot be accurately inferred. Similarly, inclusion of RS-D5, for which discordant phylogenetic clustering was found (see Materials and Methods), did not provide stronger evidence about the origin of genotype D (Figure 1—figure supplement 2, Figure 2—figure supplement 1, Figure 1—figure supplement 3,). Major dispersal pathways for genotype D were complex including different geographic regions (Figure 2). Moreover, major clusters were connected by short internal nodes, suggesting similar genetic distances to the root of genotype D (Figure 1, Figure 1—figure supplement 1). Initial disseminations include the two subclusters (Tunisia, sub-Saharan Africa and Latin America/Caribbean, Australasia/Oceania) within the major clade I (RS-D7, RS-D8 and RS-D4) (Figure 2, Figure 1—figure supplement 1). This clade is distinct from the rest of the phylogeny that can be further divided into three major clusters (Figures 1 and 2, Figure 1—figure supplement 1). Clade II consisting mostly of viral sequences from South and Southeast Asia, North America (D3 and RS-D6), clade III including East Asia, Greenland, India, Russia and a large monophyletic clade from Japan (D2), and clade IV that can be further divided into subclade IVa and IVb (D1). Iran, Turkey, Syria and India dominate within subclade IVa, while in IVb, three large regional subclusters were found for China, New Zealand and India (Figure 2, Figure 1—figure supplement 1). Inclusion of RS-D5 results in an additional early pathway towards India (Figure 1—figure supplement 2, Figure 2—figure supplement 1, Figure 1—figure supplement 3).
 
-## HBV genotype A
+![Figure 2.](https://cdn.elifesciences.org/articles/36709/elife-36709-fig2-v3.jpg)
+
+**Figure 2.:** The origin is depicted with dotted line. Subgenotypes and their corresponding dispersal routes are shown with different colors. Colored circles depict the geographic areas where subgenotypes are the most prevalent.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36709/elife-36709-fig2-figsupp1-v3.jpg)
+
+### HBV genotype A
 
 Of the 744 full-length genotype A sequences, evidence for inter-genotypic recombination and multiple sequences was found for 13 and 238 sequences, respectively, thus the final analysis included 493 sequences (Table 3). HBV genotype A formed two major clusters including sequences mostly from sub-Saharan Africa (clade I; QS-A3 and A1), and Western Europe (clade II; A2) (Figure 3). Clade I consisted of three subclades, the first (subclade Ia; QS-A3) and the second (subclade Ib; A1) including sequences mostly from sub-Saharan Africa, while the third (subclade Ic; A1) from Caribbean, Latin America and South Asia (Figure 3). The highest levels of regional clustering were found for South Asia (88%; A1), Caribbean (85%, A1 and QS-A3), Latin America (71%; A1 and A2) and sub-Saharan Africa (63%; A1 and QS-A3) (Table 4). Sequences from Western Europe (31%) and Asia-Pacific (21%) showed low levels of regional dispersal (Table 4), whereas for Central and Eastern Europe, Southeast Asia, East Asia, North America, North Africa/Middle East and Central Asia no monophyletic clustering was detected (Table 4).
 
+**Table 3.**
+ Sampling of HBV* genotype A sequences from different geographic regions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region of sampling</th>
+      <th>Countries (N)</th>
+      <th>Sequences (N, %)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sub-Saharan Africa</td>
+      <td>14</td>
+      <td>112 (22.7)</td>
+    </tr>
+    <tr>
+      <td>Western Europe</td>
+      <td>8</td>
+      <td>108 (21.9)</td>
+    </tr>
+    <tr>
+      <td>Latin America</td>
+      <td>5</td>
+      <td>62 (12.6)</td>
+    </tr>
+    <tr>
+      <td>Asia-Pacific</td>
+      <td>1</td>
+      <td>53 (10.8)</td>
+    </tr>
+    <tr>
+      <td>Caribbean</td>
+      <td>2</td>
+      <td>52 (10.5)</td>
+    </tr>
+    <tr>
+      <td>Central Europe</td>
+      <td>2</td>
+      <td>37 (7.5)</td>
+    </tr>
+    <tr>
+      <td>South Asia</td>
+      <td>3</td>
+      <td>26 (5.3)</td>
+    </tr>
+    <tr>
+      <td>Eastern Europe</td>
+      <td>4</td>
+      <td>17 (3.5)</td>
+    </tr>
+    <tr>
+      <td>North America</td>
+      <td>2</td>
+      <td>11 (2.2)</td>
+    </tr>
+    <tr>
+      <td>Southeast Asia</td>
+      <td>2</td>
+      <td>8 (1.6)</td>
+    </tr>
+    <tr>
+      <td>East Asia</td>
+      <td>2</td>
+      <td>4 (0.8)</td>
+    </tr>
+    <tr>
+      <td>North Africa/Middle East</td>
+      <td>2</td>
+      <td>2 (0.4)</td>
+    </tr>
+    <tr>
+      <td>Central Asia</td>
+      <td>1</td>
+      <td>1 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>48</td>
+      <td>493 (100)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* HBV, hepatitis B virus._
+
+**Table 4.**
+ HBV* genotype A percentages of clustering based on the geographic region of sampling.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region of sampling</th>
+      <th>Monophyletic clusters (N)</th>
+      <th>Clustered sequences (N, %)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>South Asia</td>
+      <td>1</td>
+      <td>23 (88)</td>
+    </tr>
+    <tr>
+      <td>Caribbean</td>
+      <td>3</td>
+      <td>44 (85)</td>
+    </tr>
+    <tr>
+      <td>Latin America</td>
+      <td>4</td>
+      <td>44 (71)</td>
+    </tr>
+    <tr>
+      <td>Sub-Saharan Africa</td>
+      <td>6</td>
+      <td>70 (63)</td>
+    </tr>
+    <tr>
+      <td>Western Europe</td>
+      <td>1</td>
+      <td>33 (31)</td>
+    </tr>
+    <tr>
+      <td>Asia-Pacific</td>
+      <td>2</td>
+      <td>11 (21)</td>
+    </tr>
+    <tr>
+      <td>Central Europe</td>
+      <td>0</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Eastern Europe</td>
+      <td>0</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Southeast Asia</td>
+      <td>0</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>East Asia</td>
+      <td>0</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>North America</td>
+      <td>0</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>North Africa/Middle East</td>
+      <td>0</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Central Asia</td>
+      <td>0</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>17</td>
+      <td>255 (52)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* HBV, hepatitis B virus._
+
 In a more detailed analysis (country-wise), we found two regional clusters (monophyletic subclusters/LTNs) within subclade Ia, which consist of sequences sampled from Haiti (N = 20; 1 LTN; QS-A3) and the Cameroon (N = 8; 1 LTN; QS-A3). Three regional clusters were found within subclade Ib (A1), consisting of sequences from South Africa (N = 43; 3 LTNs) (Supplementary file 2, Figure 3—figure supplement 1). Similarly, with regard to subclade Ic (A1), sequences from Haiti (N = 24; 2 LTNs) and Brazil (N = 20; 2 LTNs) formed four monophyletic clusters (Supplementary file 2, Figure 3—figure supplement 1). For clade II (A2), we found five regional clusters included samples from Japan (N = 11; 2 LTNs), Argentina (N = 6; 1 LTN), Belgium (N = 33; 1 LTN), and Panama (N = 13; 1 LTN) (Supplementary file 2, Figure 3—figure supplement 1). In addition, for some countries the patterns of monophyly were negligible (Supplementary file 2). The tree reconstruction revealed that sequences sampled from sub-Saharan Africa were located close to the root (Figure 3, Figure 3—figure supplement 1). With respect to the putative origin of genotype A, clade I was very close to the root of the tree, while the internal branch connecting clade II to the root was much longer than that for clade I (Figure 3, Figure 3—figure supplement 1). These findings suggest that viral diversity within clade I originated much earlier than clade II and closer to the date of the most recent common ancestor of genotype A (Figure 4). Phylogeographic estimations showed that the origin of clades I and II was in Africa (sub-Saharan Africa with the most probable areas in the Cameroon or neighboring countries) and in Europe (most probable areas France and Belgium), respectively (Figures 3,4, Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/36709/elife-36709-fig3-v3.jpg)
+
+**Figure 3.:** HBV genotype A sequences (N = 493) categorized according to the geographic region of sampling were used in the analysis. Monophyletic clusters are indicated as triangles. Major clusters are indicated in Roman numerals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36709/elife-36709-fig3-figsupp1-v3.jpg)
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/36709/elife-36709-fig4-v3.jpg)
 
@@ -82,7 +476,7 @@ In conclusion, the observed differences of the dispersal patterns and the levels
 
 ## Materials and methods
 
-## DNA sequences, alignment and HBV genotyping
+### DNA sequences, alignment and HBV genotyping
 
 We downloaded all available full-length HBV sequences found in public repositories National Center for Biotechnology Information (NCBI; http://www.ncbi.nlm.nih.gov) and the Hepatitis B virus database (HBVdb; https://hbvdb.ibcp.fr/HBVdb/) for genotype D (N = 999) and genotype A (N = 733) with available geographic area of sampling. Data were collected between May 2014 and December 2015. Duplicate sequences from NCBI and HBVdb were removed if they had the same accession number. Information about geographic area of sampling for each sequence was retrieved from the NCBI database. Detailed information about the country of birth or the immigration status of patients, from whom HBV sequences were included in the analysis, was not available. Alignment for each genotype was performed by MUSCLE as implemented in MEGA v7 (Kumar et al., 2016).
 
@@ -92,16 +486,16 @@ We also looked for the presence of multiple sequences from individual patients a
 
 HBV genotypes were confirmed by the Oxford HBV Automated Subtyping Tool v1.0 (Alcantara et al., 2009) and phylogenetic analysis using as references 110 sequences from all previously known HBV genotypes downloaded from the NCBI database. Phylogenetic analysis was performed using the approximate maximum likelihood method with the Generalized Time Reversible (GTR + cat) model of nucleotide substitution model including a gamma (Γ) distributed rate of heterogeneity among sites parted on 20 categories as implemented in FastTree v2.1 program (Price et al., 2010).
 
-## HBV nomenclature
+### HBV nomenclature
 
 In order to be consistent with the updated HBV nomenclature (Pourkarim et al., 2010, 2014), we present our results using the updated nomenclature system. According to the new system, formerly introduced subgenotypes ‘A3’, ‘A4’ and ‘A5’ have been named as QS-A3 (Pourkarim et al., 2010). The reasons for the new classification were: (i) full-length genomic regions were unavailable; (ii) inter-subgenotypic nucleotide divergence was <4%, and (iii) monophyletic clustering was supported by weak bootstrap values (Pourkarim et al., 2014). The previously introduced ‘A6’ was named ‘A4 ’(Pourkarim et al., 2014). With regard to genotype D, previously named ‘D4’, ‘D5’, ‘D6’, ‘D7’, ‘D8’, ‘D9’ were classified as RS-D4, RS-D5, RS-D6, RS-D7, RS-D8, RS-D9, respectively. This was due to the putative recombinant nature of these subgenotypes (Yousif and Kramvis, 2013; Meldal et al., 2009; Ghosh et al., 2013, 2012).
 
 Our analysis, as explained in the next paragraph, showed that subgenotypes RS-D4, RS-D6, RS-D7 and RS-D8 were not found to be recombinants. However, to avoid confusion for the readers we decided not to change the existing HBV nomenclature.
 
-## Recombination analysis and country grouping
+### Recombination analysis and country grouping
 
 We used specialized programs (Oxford HBV Automated Subtyping Tool v1.0, RDP4 v4.36, Simplot v3.5.1) in order to detect the recombinant forms of the virus (Martin et al., 2015; Lole et al., 1999). In order, to analyze the global dispersal patterns of HBV-D and HBV-A the final datasets consisted of 916 and 493 full-length, non-recombinant and non-redundant sequences, respectively. Recombination analysis detected sequences of subgenotype RS-D9 to be recombinants (Ghosh et al., 2013). On the other hand, sequences of subgenotypes RS-D4, RS-D6, RS-D7 and RS-D8 were not found to be recombinants and therefore they have been included in our analyses. Recombination analysis included bootscanning plots for each subgenotype against genotypes A, B, C, D, F, G and H. Genotype E was not included in the analysis because of its recombinant nature with D (Simmonds and Midgley, 2005). Analysis was performed in two steps including: (i) only pure subgenotypes D1, D2 and D3 and (ii) all subgenotypes of genotype D expect the query. Recombination analysis was also performed using RDP4 v4.36, which combines many diverse recombination detection methods and is one of the most sensitive tools to detect recombination, against the same dataset of references. Notably, we found no evidence of recombination using bootscanning and RDP4 analysis for RS-D4, RS-D6, RS-D7 and RS-D8. The potential reason for their previous classification as recombinants (i.e. RS-D7, RS-D8) was that they were found to consist of a partial genotype E region, however, in this region, all genotype D sequences cluster with genotype E (data not shown). Therefore, this phylogenetic relationship with genotype E is not unique to the previously reported recombinant subgenotypes but occurs for all genotype D sequences. Therefore, subgenotypes RS-D4, RS-D6, RS-D7 and RS-D8 were included in our analysis since there was no evidence for recombination. Recombination analysis using bootscanning and RDP4 for RS-D5 showed that several RS-D5 sequences were intragenotypic recombinants consisting of diverse mosaic patterns. Phylogenetic analysis of the two subgenomes of the full-length HBV genome (1–2000 and 2001–3078 nts; corresponding to sites 60–2059, 2060–3179 of the reference X02496) revealed discordant phylogenetic signal with regard to the clustering of RS-D5. Specifically, in the first part of the genome (1–2000 nts) RS-D5 clustered as an outlier to genotype D, while in the second half of the genome (2001–3078 nts) RS-D5 clustered within genotype D. The discordant clustering of the RS-D5 prompted us to perform phylogenetic analysis with and without RS-D5.
 
-## Phylogenetic and phylogeographic analysis
+### Phylogenetic and phylogeographic analysis
 
 Phylogeny reconstruction with bootstrap evaluation was conducted by the maximum likelihood method for each genotype separately, using the GTR + G nucleotide substitution model as implemented in RAxML v8.0.20 (Stamatakis, 2014). We defined as monophyletic clusters as those having bootstrap values higher than 70%, within which 70% of strains share the same geographic area (country or a geographic region) of sampling. Trees were converted to midpoint rooted by using the FigTree v1.4.2 program (http://tree.bio.ed.ac.uk/software/figtree/). The origin of genotypes A and D was inferred by character reconstruction using parsimony on the estimated maximum likelihood phylogeny using Mesquite v3.2 (Maddison and Maddison, 2017). We conducted two kinds of phylogeographic analyses; one grouping sequences according to country of sampling and another, grouping them according to large geographic areas as defined by the Global Burden of Disease classification system (http://www.who.int). The geographic areas are described in Supplementary files 5 and 6 for genotypes D and A, respectively. The dispersal pathways were estimated as follows: Mesquite reconstructs the geographic origin of different clades (viral lineages), which in combination with their hierarchical clustering, provide evidence about the putative dispersal pathways of the virus. For example, for genotype A there are two major branches (I and II) for which their geographic origin was estimated in Africa and Western Europe, respectively. The finding about two geographically distinct lineages point to the fact that the early dispersal occurred through two different pathways in the corresponding regions. The putative pathways can be further unraveled in a similar way as soon as we move downstream from the root to the tips.

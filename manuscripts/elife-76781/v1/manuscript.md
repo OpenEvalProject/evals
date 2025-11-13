@@ -13,9 +13,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04dkp9463 Department of Medical Biology, Amsterdam University Medical Centers, University of Amsterdam Amsterdam Netherlands
-2. https://ror.org/04dkp9463 Department of Experimental Cardiology, Amsterdam University Medical Centers, University of Amsterdam Amsterdam Netherlands
-3. https://ror.org/04dkp9463 Department of Cardiology, Amsterdam University Medical Centers, University of Amsterdam Amsterdam Netherlands
+1. Department of Medical Biology, Amsterdam University Medical Centers, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+2. Department of Experimental Cardiology, Amsterdam University Medical Centers, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+3. Department of Cardiology, Amsterdam University Medical Centers, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
 
 † Corresponding author
 
@@ -39,23 +39,43 @@ Our results provide insight into the early specification and diversification of 
 
 ## Results
 
-## Differentiation of hiPSCs to sinoatrial nodal and ventricular cardiomyocytes
+### Differentiation of hiPSCs to sinoatrial nodal and ventricular cardiomyocytes
 
 Differentiation of hiPSCs toward MESP1+ mesoderm was initiated by activating Activin/Nodal, BMP and WNT signaling, as previously described (Devalla et al., 2015; Devalla et al., 2016). To steer mesoderm toward a cardiomyocyte fate, WNT signaling was inhibited using XAV 939 for 96 hr, which resulted in predominantly ventricular-like cardiomyocytes (VCMs). To direct mesoderm toward SANCM, we treated cultures with BMP4, RA, WNT inhibitor (XAV 939), FGF inhibitor (PD173074), and ALK5 inhibitor (SB431542) for 48 hr from day 4 to day 6 (Figure 1A; Protze et al., 2017). Contracting cardiomyocytes were observed from day 10 onward and phenotypical differences in beating rates were apparent; SANCM monolayers exhibited faster beating rates in contrast to slower beating rates of VCM monolayers. TNNT2 expression was used as a measure of differentiation efficiency and flow cytometry analysis on day 19 demonstrated the presence of 60–90% cardiomyocytes in both groups (Figure 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of protocols used to differentiate hiPSCs to VCM and SANCM. (B) Representative histograms (left) and summarized data (right) showing percentage of TNNT2+ cells in VCM (orange) and SANCM (blue) at day 19 of differentiation. A corresponding IgG isotype antibody was used as negative control for flow cytometry (gray). N=7 independent differentiations. Error bars, s.e.m. Mann-Whitney U test: p>0.05 (ns). (C–E) RT-qPCR depicting expression of pan cardiomyocyte genes (C), SAN-associated genes (D), and ventricular-associated genes (E) at day 19 of differentiation. N=8 independent differentiations; corrected to GEOMEAN of reference genes RPLP0 and GUSB. Error bars, s.e.m. Mann-Whitney U test: p<0.05 (*), p<0.005 (**), p<0.0005 (***). (F–G) Immunofluorescence stainings demonstrating the expression of nuclear stain DAPI, SHOX2, and TNNT2 (F), MYL2 and ACTN2 (G), in SANCM and VCM. Scale bars, 50 μm. Also see Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) RT-qPCR analysis of ISL1 expression at day 19 of differentiation. N=8 independent differentiations; corrected to GEOMEAN of reference genes RPLP0 and GUSB. Error bars, s.e.m. Mann-Whitney U test: p<0.0005 (***). (B) Immunofluorescence staining of ISL1 co-stained with TNNT2 and DAPI in SANCM and VCM. Scale bars, 50 μm.
+
 To assess cardiomyocyte identity, gene expression profiling was performed by RT-qPCR. Both cardiomyocyte subtypes expressed sarcomeric genes TNNT2, ACTN2, and the transcription factor NKX2-5 (Figure 1C). Although NKX2-5 expression was generally lower in SANCM compared with VCM, the difference was not statistically significant. The expression of transcription factors SHOX2, TBX3, TBX18, and ISL1, each required for proper SAN function (van Eif et al., 2018), was significantly higher in SANCM, indicating a SAN-like phenotype (Figure 1D and Figure 1—figure supplement 1A). VCM identity was verified by the expression of genes enriched in the ventricles, such as MYL2, HOPX, and MYH7 (Figure 1E). In line with the above findings, immunofluorescence staining confirmed that SHOX2 and ISL1 are predominantly expressed in SANCM, whereas MYL2 expression was exclusively found in VCM (Figure 1F, G and Figure 1—figure supplement 1B).
 
-## SANCM and VCM display distinct electrophysiological properties
+### SANCM and VCM display distinct electrophysiological properties
 
 Besides transcription factors, a number of ion channel genes are differentially expressed between the SAN and the ventricles, which confer distinct electrophysiological properties. The expression of HCN1 and HCN4, which contribute to cardiac funny current If, implicated in pacemaking, was significantly higher in SANCM compared with VCM. Similarly, the L-type and T-type Ca2+ channel genes CACNA1D and CACNA1G, respectively, as well as the inward rectifying K+ channel Kir3.1, encoded by KCNJ3, were significantly upregulated in SANCM compared with VCM (Figure 2A). On the contrary, expression of SCN5A, the gene encoding cardiac Na+ channel NaV1.5, was higher in VCM (Figure 2A). Consistently, action potential parameters (analyzed as in Figure 2B) of SANCM and VCM measured by single cell patch clamp confirmed expected subtype-specific electrophysiological differences. Representative traces of spontaneous action potentials are shown in Figure 2C, demonstrating shorter cycle length in SANCM (496.6±33.0 ms, mean ± s.e.m., N=12) compared with VCM (1241.5±111.7 ms, N=12) (Figure 2D). Consistent with a SAN phenotype, the maximum diastolic potential (MDP) was less negative in SANCM (–62.5±1.9 mV) compared with VCM (–69.9±1.4 mV). Furthermore, SANCM displayed a lower action potential amplitude (APA) and slower upstroke velocity (Vmax; 5.2±0.9 V/s SANCM versus 23.1±3.7 V/s VCM). Notably, MDPs and Vmax recorded in SANCM are similar to freshly isolated human SAN cells (Verkerk et al., 2007). On the contrary, longer action potential durations (APDs) at 20%, 50%, and 90% repolarization (APD20, APD50, and APD90, respectively) characterized the VCM (Figure 2D and Figure 2—source data 1). In addition, treatment with 3 µM ivabradine (IVA), an If channel blocker (Bucchi et al., 2002), resulted in a significant increase in cycle length in SANCMtra (baseline [BL]: 491.1±76.8 ms; IVA: 771.9±124.7 ms, N=6), whereas cycle length in VCM was unaffected (BL: 838.0±110.9 ms; IVA: 817.9±114.0 ms, N=6) (Figure 2E and Figure 2—source data 1). Taken together, these results affirm the cellular identities expected for SANCM and VCM.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig2-v1.jpg)
 
-**Figure 2.:** (A) RT-qPCR showing expression of ion channel genes at day 19 of differentiation. N=8 independent differentiations; corrected to GEOMEAN of reference genes RPLP0 and GUSB. Error bars, s.e.m. Mann-Whitney U test: p<0.05 (*), p<0.005 (**), p<0.0005 (***). (B) Action potential (AP) illustration depicting analyzed electrophysiological parameters. (C) Representative traces of spontaneous APs of day 19 SANCM (blue) and VCM (orange). (D) Cycle length, MDP, APA, Vmax, and APD20, APD50, and APD90 of VCM and SANCM at day 19 of differentiation. N=12 cells from four independent differentiations. Error bars, s.e.m. Mann-Whitney U test: p<0.05 (*), p<0.005 (**), p<0.0001 (****). (E) Cycle lengths of SANCM and VCM measured at baseline (BL) and after treatment with 3 µM ivabradine (IVA). N=6 cells from three independent differentiations. Error bars, s.e.m. Wilcoxon signed-rank test: p<0.05 (*). MDP, maximal diastolic potential; APA, action potential amplitude; Vmax, upstroke velocity; APD20, APD50, APD90, AP duration at 20%, 50%, 90% repolarization, respectively. Also see related source data file Figure 2—source data 1.Figure 2—source data 1.
+**Figure 2.:** (A) RT-qPCR showing expression of ion channel genes at day 19 of differentiation. N=8 independent differentiations; corrected to GEOMEAN of reference genes RPLP0 and GUSB. Error bars, s.e.m. Mann-Whitney U test: p<0.05 (*), p<0.005 (**), p<0.0005 (***). (B) Action potential (AP) illustration depicting analyzed electrophysiological parameters. (C) Representative traces of spontaneous APs of day 19 SANCM (blue) and VCM (orange). (D) Cycle length, MDP, APA, Vmax, and APD20, APD50, and APD90 of VCM and SANCM at day 19 of differentiation. N=12 cells from four independent differentiations. Error bars, s.e.m. Mann-Whitney U test: p<0.05 (*), p<0.005 (**), p<0.0001 (****). (E) Cycle lengths of SANCM and VCM measured at baseline (BL) and after treatment with 3 µM ivabradine (IVA). N=6 cells from three independent differentiations. Error bars, s.e.m. Wilcoxon signed-rank test: p<0.05 (*). MDP, maximal diastolic potential; APA, action potential amplitude; Vmax, upstroke velocity; APD20, APD50, APD90, AP duration at 20%, 50%, 90% repolarization, respectively. Also see related source data file Figure 2—source data 1.
 
-## Unmasking the cellular compositions in SANCM and VCM cultures
+### Unmasking the cellular compositions in SANCM and VCM cultures
 
 The variations in the expression of key genes, such as TBX18 in SANCM and MYL2 in VCM, are suggestive of heterogeneity in cellular composition (Figure 1D and E). In order to better understand the basis for this, we performed scRNA-seq according to the SORT-seq protocol (Muraro et al., 2016). A total of 1287 cells passed pre-processing and quality control. Since plate-to-plate variations were observed, the dataset was corrected using the standard integration workflow on SCTransform normalized data (Figure 3—figure supplement 1; Hafemeister and Satija, 2019; Stuart et al., 2019). Next, unsupervised clustering was performed with the top 15 principal components (PCs), which identified 12 clusters. One of the 12 clusters (cluster 9) showed enriched expression of spike-in DNA/ERCCs (Figure 3—figure supplement 1B), indicating the amplification of mostly ambient RNA and was therefore excluded from further analysis. We also removed two other small clusters (clusters 10 and 11), which showed enrichment in cell cycle-associated genes and genes associated with extraocular muscle development, respectively (Figure 3—figure supplement 1B). The remaining nine clusters (comprised of 1083 cells) were visualized using uniform manifold approximation and projection (UMAP) (McInnes et al., 2018; Figure 3A). The majority of the clusters highly expressed cardiac sarcomeric genes such as TNNT2 and ACTN2, validating cardiomyocyte identity (Figure 3B). Clusters containing cells from the VCM differentiation protocol (clusters 0–3) did not overlap with cell clusters from the SANCM protocol (clusters 4–8), confirming the generation of transcriptionally different cardiomyocyte subtypes (Figure 3—figure supplement 1A). In addition, we observed that the non-cardiomyocyte side populations are specific for each differentiation protocol (Figure 3A and B and Figure 3—figure supplement 1A). List of genes differentially expressed in each cluster are provided in Supplementary file 1.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig3-v1.jpg)
+
+**Figure 3.:** (A) UMAP representation of single cell transcriptomes of SANCM and VCM at day 19 of differentiation. (B) UMAP feature plots and violin plots showing TNNT2 and ACTN2 expression in cell clusters. (C) Heatmap showing the top 10 differentially expressed genes in clusters at day 19 of differentiation. (D–F) Violin plots depicting expression of compact SAN-associated genes (D), SAN-TZ-associated genes (E), and proepicardial-associated genes (F). (G) Immunofluorescence staining of GNAO1 co-stained with SHOX2, NKX2-5, and DAPI in E17.5 embryonic mouse heart. Scale bar 500 μm. G1 is a zoom in of the marked SAN area. Scale bar 100 μm. (H) Schematic representation of the in vivo organization of the SV and SAN region during development. RA, right atrium; rvv, right venous valve; SAN, sinoatrial node; SV, sinus venosus; UMAP, uniform manifold approximation and projection. Also see Figure 3—figure supplement 1 and Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) UMAP depicting all single cell transcriptomes before filtering out low-quality cells and unrelated clusters (left). UMAP showing the original identifier of collection (right). (B) Heatmap showing top 10 differentially expressed genes of clusters excluded from the analysis: low-quality/ERCC-spike-in DNA-enriched cells (cluster 9), cell cycle-enriched gene cluster (cluster 10) and a cluster associated with extraocular muscle development (cluster 11). (C–H) Violin plots showing expression of ventricular-enriched genes (C), genes associated with outflow tract development (D), fetal endocardium-associated genes (E), atrial- and SAN-TZ-associated genes (F), fibroblast-associated genes (G), and SAN-enriched genes with yet unknown function (H). (I) Immunofluorescence staining of VSNL1 co-stained with SHOX2, NKX2-5, and DAPI in E17.5 embryonic mouse heart. Scale bar 500 μm. I1 is a magnification of the marked SAN area. Scale bar 100 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–B) Genes enriched in the SAN-head population (A) and genes enriched in SAN-tail (KCNIP2, NKX2-5) and SAN-TZ cells (NKX2-5, NPPA, and ADM) (B) at day 19 of differentiation. Epi, proepicardial-like population; SV, sinus venosus-like population.
 
 Analysis of cell clusters belonging to the VCM group unmasked the presence of three cardiomyocyte populations (clusters 1, 2, 3) and one non-cardiomyocyte population (cluster 0) as determined by the expression of sarcomeric genes TNNT2 and ACTN2 (Figure 3B). Clusters 2 and 3 expressed MYH7 and MYL2 indicating their ventricular identity (Figure 3C and Figure 3—figure supplement 1C). However, we observed differences in the expression of other ventricular genes between these two clusters. While the expression of HOPX was higher in cluster 2, HEY2 and IRX4 expression was restricted to cluster 3 (Figure 3—figure supplement 1C). The abundant expression of HOPX in cluster 2 likely may represent a more mature cardiomyocyte pool as reported in other similar studies (Churko et al., 2018; Friedman et al., 2018). Nevertheless, the top 10 differentially expressed genes of clusters 2 and 3 greatly overlap (Figure 3C) and differences in gene expression may also be the result of different transcriptional states resulting from transcriptional bursts.
 
@@ -65,9 +85,21 @@ The SANCM population revealed four cardiomyocyte clusters (clusters 4–7), mark
 
 Besides well-established SAN genes, we also identified other markers such as VSNL1 and GNAO1, which were specifically expressed in the SANCM clusters compared with the VCM clusters (Figure 3—figure supplement 1H). Visinin like 1 protein (VSNL1, also referred to as VILIP-1 or NVP-1) is a well-conserved Ca2+-binding protein involved in various cellular signaling cascades (Braunewell et al., 2009) and has previously been identified in mouse, primate, as well as human SAN (van Eif et al., 2019; Liang et al., 2021). Immunofluorescence staining of E17.5 mouse heart confirmed robust expression of VSNL1 in the mouse SAN (Figure 3—figure supplement 1I). GNAO1 encodes the guanine nucleotide-binding protein G(o) subunit α, which is a part of the G-protein signal transducing complex (Lambright et al., 1994). We corroborated enriched expression of GNAO1 in the SAN of E17.5 mouse (Figure 3G). Both proteins were also expressed in the atria albeit to a lesser extent (Figure 3G and Figure 3—figure supplement 1I). In summary, hiPSC differentiation toward SANCM closely recapitulates the in vivo situation generating subpopulations with gene expression patterns resembling those of SAN-head, SAN-tail, and SAN-TZ cardiomyocytes (schematic in Figure 3H). Furthermore, small populations of co-differentiating sinus venosus-like and proepicardial-like cells alongside SANCM is reflective of shared developmental origins.
 
-## hiPSC differentiation to SANCM recapitulates in vivo development
+### hiPSC differentiation to SANCM recapitulates in vivo development
 
 In order to gain a better understanding of the differentiation and specification process of hiPSCs to SANCM, we performed scRNA-seq at several stages during differentiation. At five additional time points (days 0, 4, 5, 6, and 10) (Figure 4A), cells were sorted and sequenced. A total of 3300 cells including the D19 SANCM population presented in Figure 3 passed pre-processing and quality control. Unsupervised clustering was performed with the top 20 PCs, which identified 14 clusters. Two of the 14 clusters showed enriched expression of spike-in DNA/ERCCs (Figure 4—figure supplement 1A), indicating the amplification of ambient RNA and were therefore excluded from further analysis. The remaining clusters (comprised of 3103 cells) closely correlated with the time of collection, revealing that substantial transcriptional changes occur during the differentiation process in vitro (Figure 4B and Figure 4—figure supplement 1B). The expression of TNNT2 and ACTN2 steadily increased from day 5 (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig4-v1.jpg)
+
+**Figure 4.:** (A) Timeline of hiPSC differentiation to SANCM representing sample collection time points. (B) UMAP representation of single cell transcriptomes collected at different time points throughout differentiation from hiPSC to SANCM. Arrow indicates course of differentiation. (C) UMAP feature plots and violin plots showing TNNT2 and ACTN2 gene expression at different stages of SANCM differentiation. (D–H) Violin plots of pluripotency genes (D), mesodermal genes (E), posterior cardiac progenitor genes (F), proepicardial genes (G), and SAN-associated transcription factor genes (H). hiPSCs, human induced pluripotent stem cells; CPC, cardiac progenitor cells; CMs, cardiomyocytes; UMAP, uniform manifold approximation and projection; SANCM, sinoatrial node-like cardiomyocyte. Also see Figure 4—figure supplement 1 and Figure 4—figure supplement 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Heatmap showing top 10 differentially expressed genes of all clusters identified before filtering low-quality cells. Two clusters with low-quality/ERCC-spike-in DNA-enriched transcriptomes (spike_in_1 and spike_in_2) were excluded from the analysis. (B) Uniform manifold approximation and projection (UMAP) showing the original identifier of each collection time point. (C) Violin plots depicting expression of endoderm-associated genes in cluster D4_2. (D) UMAP depicting annotation of cluster 7 (sinus venosus-like cluster, Figure 3A) on entire time series dataset. Majority of cluster 7 (Figure 3A) cluster together with cells collected on day 10 (cluster D10_1).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A–C) Time course RT-qPCR of SAN progenitor-enriched genes (A), SAN-head-enriched genes (B) and SAN-tail (KCNIP2) or SAN-TZ-enriched genes (C). N=4 independent differentiations; corrected to GEOMEAN of reference genes RPLP0 and GUSB.
 
 Next, we compared the gene expression profile (Supplementary file 2) of our time course dataset with a range of established stage-specific genes reflecting fate choices toward cardiomyocytes. From a pluripotent state at day 0 (SOX2+/NANOG+/POU5F1+), the cells were directed toward germ layer specification with the majority of the cells (cluster D4_1) exhibiting a cardiac mesoderm-like profile expressing EOMES, MESP1, and MESP2 (Kitajima et al., 2000; Costello et al., 2011; Figure 4D and E). A smaller endoderm-like population was also identified on day 4 (cluster D4_2), based on the specific expression of FOXA2 and SOX17 (Tosic et al., 2019; Figure 4—figure supplement 1C). After 24 hr with SAN specification medium (day 5, D5), we identified a gene expression pattern, characteristic for posterior cardiac progenitors (HOXA1+/NR2F2+/TBX5+) (Figure 4F; Bertrand et al., 2011; Stefanovic et al., 2020). The first onset of TBX18 expression was observed at day 6 (D6) of differentiation (Figure 4G), a transcription factor marking sinus venosus progenitors (Mommersteeg et al., 2010). Similarly, TBX3 was expressed in a cell fraction collected on day 6 (D6) (Figure 4G).
 
@@ -77,9 +109,17 @@ On D19 of differentiation, three separate clusters were identified comprising SA
 
 To complement our single cell analysis with additional time points collected during the differentiation process, we performed RT-qPCR for key SAN markers including genes differentially expressed in the different subpopulations. As also identified by scRNA-seq, TBX5 and TBX18 appear early in the differentiation process (Figure 4F, G and Figure 4—figure supplement 2). SHOX2 expression begins on day 8 and gradually increases over time. With the exception of FLRT3, which is already expressed at day 6, most subpopulation markers begin to be expressed from day 8 onward (Figure 4—figure supplement 2B, C). Taken together, our findings reveal that the in vitro differentiation described here is a valuable model to study the earliest steps of pacemaker cell specification, overcoming the limitation of accessibility to comparable in vivo developmental stages.
 
-## WNT signaling mediates the divergence of myocardial and proepicardial lineages
+### WNT signaling mediates the divergence of myocardial and proepicardial lineages
 
 scRNA-seq of SANCM revealed the presence of different SAN subtypes, such as SAN-head, SAN-tail, and SAN-TZ, which co-differentiate with a small population of proepicardial-like cells (Epi). To gain insight into the developmental ontogeny of these cell types, we used URD (Farrell et al., 2018). URD reconstructs transcriptional trajectories based on user-defined origin (root) and end points (tips). We assigned the cardiac mesoderm stage (day 4) as the root and the distinct subclusters identified on day 19 (Figure 3), that is, SAN-head, SAN-tail, SAN-TZ, and proepicardial cells as the tips, resulting in a pseudotime tree consisting of six main segments (Figure 5A). Sinus venosus-like cells were excluded as a tip since it partially clustered with progenitors of day 10 and is a cell type independent of the SAN niche (Figure 4—figure supplement 1D). Cells from day 5, day 6, and a fraction of day 10 were located near the root of the tree in segment 1, constituting a common progenitor pool. From segment 1, the pseudotime tree branches off into two lineages, the proepicardial branch (segment 2) and the myocardial branch (segment 3). The proepicardial branch contained cells collected on day 10 as well as day 19, whereas the myocardial branch primarily consisted of cells collected on day 10. While most myocardial cells at day 10 were present in segment 3, a small fraction appeared committed to SAN-TZ lineage (segment 4). SAN-tail (segment 5) and SAN-head (segment 6) were assigned later pseudotimes and only contained cells from day 19. Similar findings were obtained using a second trajectory inference method, Slingshot (Street et al., 2018; Figure 5—figure supplement 1A-C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig5-v1.jpg)
+
+**Figure 5.:** (A) URD trajectory tree starts at late mesoderm stage (day 4) and proceeds to terminally differentiated cell clusters identified on day 19. Colors correspond to the time point of cell collection. (B) Expression of TNNT2 and MYH6 marking the myocardial lineage (C) Expression of WT1 and ALDH1A2 marking the proepicardial lineage in the trajectory tree. (D–E) Representative gene ontology (GO) terms based on differentially expressed genes between the common progenitor, segment 1, and the myocardial branch, segment 3, (D) or the proepicardial branch, segment 2 (E) . (F) Representative contour plots and (G) summarized data demonstrating percentage of TNNT2+ and PDPN+ cells in baseline condition containing WNT inhibitor, XAV (WNTInh), excluding WNT inhibitor, XAV (WNTBasal), and addition of WNT activator, CHIR (WNTAct). N=5 independent differentiations. Error bars represent s.e.m., Kruskal-Wallis, post hoc Mann-Whitney U test: p<0.005 (**). (H) RT-qPCR demonstrating the expression of cardiomyocyte gene TNNT2 and the proepicardial gene WT1 in WNTInh, WNTBasal, and WNTAct conditions. N=5 independent differentiations; corrected to GEOMEAN of reference genes RPLP0 and GUSB. Error bars, s.e.m. Kruskal-Wallis, post hoc Mann-Whitney U test: p<0.05 (*), p<0.005 (**). (I) Schematic representation of divergence of myocardial and proepicardial lineages from a common progenitor. Also see Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Ordering of cell populations by principal component 1. (B–C) Lineages inferred by Slingshot (Street et al., 2018) with points colored by cluster (B) and pseudotime (C). Green dot indicates manually chosen starting point of trajectory; red point indicates manually chosen end time point of trajectory. Similar to URD, Slingshot identified the correct order of the cells. Furthermore, a similar number of trajectories was obtained. Slingshot did not recognize day 5 as part of the main trajectory and instead connected cells from day 4 directly to day 6, with day 5 cells forming an individual lineage. This outcome might reflect the transcriptional burst induced by the treatment with pacemaker differentiation factors (BMP4, retinoic acid and others) introduced in the culture on day 4. Similar to URD, Slingshot identified a lineage branching off toward the proepicardial cells around day 10, and two separate cardiomyocyte lineages. These results are consistent with the clustering outcome shown in Figure 4B, where cells collected on day 19 of differentiation form three individual groups (SAN-head/SAN-tail, SAN-TZ, and proepicardial cells). All in all, predictions made by URD, and Slingshot are very comparable. (D) Representative contour plots (left) and summarized data (right) demonstrating percentage of TNNT2+ and PDPN+ cells (day 19) of baseline condition including ALK5 inhibitor (SANCM) and without ALK5 inhibitor (w/o ALK5Inh) from day 4 to day 6 of differentiation. N=5 independent differentiations. Error bars represent s.e.m., Mann-Whitney U test: p>0.05 (ns). (E) RT-qPCR analysis at day 19 of differentiation showing the expression of the cardiac gene TNNT2 and the proepicardial gene WT1 in the baseline condition including ALK5 inhibitor (SANCM) and without ALK5 inhibitor (w/o ALK5Inh) from day 4 to day 6 of differentiation. N=5 independent differentiations; corrected to GEOMEAN of reference genes RPLP0 and GUSB. Error bars, s.e.m. Mann-Whitney U test: p>0.05 (ns).
 
 The ordering of cell populations in the trajectory tree suggests that cells on day 5 and day 6 could potentially give rise to both the myocardial and proepicardial lineages. The first divergence was only apparent at day 10 (Figure 5A) with the majority of the cells directed toward the myocardial lineage whereas a small population branched off toward the proepicardial lineage. Accordingly, cardiomyocyte genes such as TNNT2 and MYH6 were selectively expressed in the myocardial branch (Figure 5B), and proepicardial genes such as WT1 and ALDH1A2 were enriched in the proepicardial branch (Figure 5C). Thus, day 10 of differentiation appears to be a critical branching point for myocardial and proepicardial cell fates driven by BMP and RA.
 
@@ -87,7 +127,7 @@ In order to identify the key players that regulate myocardial versus proepicardi
 
 Next, we tested the role of WNT signaling in myocardial versus proepicardial branching. From the SANCM differentiation cocktail containing the WNT inhibitor, XAV939 (WNTInh) (Figure 1A), we either removed the WNT inhibitor (WNTBasal) or replaced it with the WNT agonist, CHIR (WNTAct). Applying the standard cocktail containing the WNT inhibitor resulted in an average of 60% TNNT2+ cells with a small side population of 10% PDPN+ cells (Figure 5F and G). Strikingly, removal of the WNT inhibitor strongly compromised the percentage of cardiomyocytes (~10% TNNT2+), whereas percentage of PDPN+ cells increased. Addition of a WNT agonist had a similar effect although it did not further enhance the percentage of proepicardial cells. RT-qPCR confirmed a proepicardial-like gene expression in WNTBasal and WNTAct conditions evidenced by higher expression of WT1 and lower expression of TNNT2 mRNA compared with WNTInh (Figure 5H). These findings demonstrate that in the presence of active WNT signaling, BMP and RA steer common progenitors toward the proepicardial fate and that inhibition of WNT signaling is crucial for their differentiation toward the myocardial lineage (Figure 5I).
 
-## Diversification between the myocardial SAN subpopulations involves WNT and TGFβ signaling
+### Diversification between the myocardial SAN subpopulations involves WNT and TGFβ signaling
 
 To better understand the mechanisms implicated in the specification of SAN subpopulations, we looked at transcriptional changes between common progenitor state (segment 3) and day 19 SANCM subpopulations (segments 4–6). Ordering of cells in the trajectory tree in Figure 5A suggests that a large majority of myocardial cells remain uncommitted at day 10 and specification toward SAN-head and SAN-tail cells only occurs after day 10. GO term analysis of differentially expressed genes between the common myocardial progenitor at day 10 (segment 3) and each SANCM subtype of day 19 (segments 4–6) revealed enrichment of several WNT signaling modulators, such as DKK1, WNT5A, SFRP1, and APP, primarily in the SAN-head branch (segment 6) (Figure 6A and Supplementary file 4). Whilst DKK1 is an inhibitor of canonical WNT signaling, WNT5A is a non-canonical WNT ligand. Therefore, we posited that inhibition of canonical WNT signaling may enhance differentiation to SAN-head-like cells. To test this assumption, we treated SANCM cultures with XAV 939 from day 10 to day 17, following the findings from the trajectory tree. We determined the effect of this treatment on SANCM by assessing the expression of genes specific to or enriched in individual SANCM fractions, such as SHOX2, VSNL1, NTM, and FLRT3 for SAN-head, KCNIP2 for SAN-tail, and NKX2-5, NPPA, and CPNE5 for SAN-TZ (Figure 3—figure supplement 1F and Figure 3—figure supplement 2A and B). Our results show that inhibition of canonical WNT signaling from days 10 to 17 significantly increased expression of SAN-head-enriched genes, such as SHOX2, NTM, and VSNL1, and a trend for higher expression in FLRT3 (Figure 6B) but did not influence the expression of SAN-tail or SAN-TZ genes (data not shown).
 
@@ -97,9 +137,17 @@ To better understand the mechanisms implicated in the specification of SAN subpo
 
 Similarly, members of the TGFβ/BMP signaling pathway were preferentially expressed in SANCM subpopulations at day 19. These included ligands BMP4 (SAN-head) and BMP2 (SAN-TZ), as well as genes involved in TGFβ/BMP signaling such as HTRA1 (SAN-head; SAN-tail) and FBN2 (SAN-TZ) (Figure 6C and Supplementary file 4), implicating this pathway in differentiation toward SAN subpopulations. Moreover, the percentage of TNNT2+ cells in the w/o ALK5Inh condition were unaffected (Figure 5—figure supplement 1D and E), suggesting that basal TGFβ signaling does not affect myocardial specification itself. These observations led us to evaluate the effect of TGFβ signaling on the identity of pacemaker subpopulations, which was achieved by replacing the TGFβ signaling inhibitor SB531542 with the TGFβ ligand TGFB2 from day 4 to day 6 of SANCM differentiation (SANCMTGFB2). RT-qPCR revealed a downregulation of SAN-head-associated genes, such as SHOX2 and NTM, and a trend for reduced expression of VSNL1 and FLRT3, even though not statistically significant (Figure 6D). Furthermore, we observed a higher expression of SAN-tail-associated gene KCNIP2 and SAN-TZ-associated genes, NPPA and ADM, in TGFB2 supplemented differentiations, even though not statistically significant (Figure 6E). Taken together, these findings underscore a stage-specific role for WNT and TGFβ signaling in differentiation toward specific SANCM subpopulations (Figure 6F).
 
-## TGFβ signaling promotes differentiation toward transitional cells
+### TGFβ signaling promotes differentiation toward transitional cells
 
 Because SANCMs showed a shift in marker expression toward SAN-TZ cells in SANCMTGFB2 condition, we next asked whether and to what extent the composition of SANCM subpopulations would change in this condition. We performed scRNA-seq of day 19 SANCMTGFB2 cultures and included day 19 SANCM as well as hiPSC-derived atrial cells (ACM) (Devalla et al., 2015; Li et al., 2019) as gene expression characteristics of SAN-TZ cells are expected to overlap with both these cell types. Unsupervised clustering of day 19 cells collected from SANCM, SANCMTGFB2, and ACM identified eight different clusters (Figure 7—figure supplement 1A and B). Based on TNNT2 and ACTN2 expression, non-cardiomyocyte clusters were excluded (Figure 7—figure supplement 1C), which resulted in a total of five cardiomyocyte clusters (Figure 7A). Based on the expression profiles (Figure 7A), we determined that cluster 0 contains atrial cardiomyocytes and cluster 1 is composed of pacemaker cells. Furthermore, cluster 3 consisted of sinus venosus-like cells. The identity of cluster 4 could not be discerned but the expression of IRX5 suggests these are a subpopulation of atrial cells as reported in vivo (Bosse et al., 2000; Gaborit et al., 2012). Lastly, cluster 2 expressed several atrial genes such as NKX2-5, NPPA, HAMP (Figure 7—figure supplement 1D), but also shared similarities with pacemaker cells in cluster 1 (Figure 7—figure supplement 1E). In addition, this cluster expressed CPNE5 suggesting that they are transitional cells (Goodyer et al., 2019; Figure 7—figure supplement 1D).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig7-v1.jpg)
+
+**Figure 7.:** (A) Uniform manifold approximation and projection (UMAP) representation of single cell transcriptomes of cardiomyocyte clusters derived from SANCM, SANCMTGFB2, and ACM differentiation at day 19. (B) Heatmap depicting the top 10 differentially expressed genes in each cluster. (C) UMAP showing the distribution of cells from different conditions in clusters 0–4. (D) UMAP highlighting previously annotated SAN subpopulation clusters (SAN-TZ, SAN-head, and SAN-tail) (Figure 3) in the cluster analysis comparing SANCM, SANCMTGFB2, and ACM. (E) Representative traces of spontaneous APs of day 19 SANCM (black) and SANCMTGFB2 (green). (F–G) Cycle length and MDP (F), Vmax, APA, and APD20, APD50, and APD90 (G) of SANCM and SANCMTGFB2 at day 19 of differentiation. N=6–8 cells. Error bars, s.e.m. Mann-Whitney U test: p<0.05 (*), p<0.005 (**), p<0.0001 (****). MDP, maximal diastolic potential; APA, action potential amplitude; Vmax, upstroke velocity; APD20, APD50, APD90, AP duration at 20%, 50%, 90% repolarization, respectively. Also see Figure 7—figure supplement 1 and related source data file Figure 7—source data 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/76781/elife-76781-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Uniform manifold approximation and projection (UMAP) depicting all identified single cell transcriptomes (eight clusters). (B) UMAP showing the distribution of cells from different conditions in clusters 0–7. (C) UMAP feature plots showing TNNT2 and ACTN2 expression. (D) Violin plots depicting expression of atrial/SAN-TZ-associated genes. (E) UMAP feature plots showing genes shared between cluster 2 (SAN-TZ) and cluster 1 (SAN-head and SAN-tail). (F) MDP and Vmax comparing SANCM, SANCMTGFB2, and ACM cells (ACM data from Li et al., 2019). N=6–9 cells. Error bars, s.e.m. Wilcoxon: p<0.05 (*), p<0.005 (**), p<0.0005 (***). MDP, maximal diastolic potential; Vmax, upstroke velocity.
 
 Next, we assessed the origin of cells present in the five clusters (Figure 7A). Cells from SANCM differentiations were present in cluster 1 (pacemaker cells) and cluster 2 (transitional cells), and cells from ACM differentiations were present in cluster 0 (atrial cells) and cluster 2 (transitional cells). Consistent with the expression analysis (Figure 6D and E and Supplementary file 5), cells from SANCMTGFB2 were present mainly in cluster 2 containing transitional cells. In order to identify which SANCM subpopulations are present in cluster 2, we highlighted the cells previously annotated as SAN-head, SAN-tail, and SAN-TZ in Figure 3 in the cluster analysis comparing SANCM, SANCMTGFB2, and ACM (Figure 7D). This visualization confirmed that SAN-TZ cells and SANCMTGFB2 cells clustered together in cluster 2, whereas SAN-head and SAN-tail cells independently formed cluster 1 (Figure 7D). In essence, TGFB2 supplementation during SANCM differentiation steers cells toward a transitional phenotype distinct from SAN-head, SAN-tail, and atrial cardiomyocytes.
 
@@ -123,7 +171,206 @@ Principles of stage-specific manipulation of signaling pathways described in thi
 
 ## Materials and methods
 
-## Maintenance of hiPSC lines and differentiation to cardiomyocytes
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>hiPSC line (female)</td>
+      <td>iPSC core facility of Leiden University Medical Center</td>
+      <td>LUMC0099iCTRL04</td>
+      <td>https://hpscreg.eu/cell-line/LUMCi004-A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cTNT(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab45932</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ACTN2 (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>A7811</td>
+      <td>(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SHOX2 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab55740</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MYL2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>79935</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ISL1 (goat polyclonal)</td>
+      <td>Neuromics</td>
+      <td>GT15051</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HCN4 (rabbit polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>AB5808-200uL</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NKX2-5 (goat polyclonal)</td>
+      <td>LabNed</td>
+      <td>LN2027081</td>
+      <td>(1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GNAO1 (rabbit polyclonal)</td>
+      <td>Protein Tech Group</td>
+      <td>12635-1-AP</td>
+      <td>(1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VSNL1 (rabbit polyclonal)</td>
+      <td>Abbexa</td>
+      <td>abx007357</td>
+      <td>(1:450)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cTNT -REAfinity (recombinant human; APC)</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-120-403</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Podoplanin (rat monoclonal; Alexa Fluor 488)</td>
+      <td>Biolegend</td>
+      <td>337005</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Activin-A</td>
+      <td>Miltenyi Biotec</td>
+      <td>#130-115-012</td>
+      <td>Human, premium grade</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BMP4</td>
+      <td>R&amp;D Systems</td>
+      <td>#314BP-010/CF</td>
+      <td>Recombinant human protein, carrier-free</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TGFB2</td>
+      <td>R&amp;D Systems</td>
+      <td>#302-B2-002/CF</td>
+      <td>Recombinant human protein</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR99021</td>
+      <td>Axon Medchem</td>
+      <td>#1386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>XAV939</td>
+      <td>Tocris Bioscience</td>
+      <td>#3748/10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB431542</td>
+      <td>Tocris Bioscience</td>
+      <td>#1614</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD173074</td>
+      <td>Selleck Chemicals</td>
+      <td>#1264</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Retinoic acid</td>
+      <td>Sigma</td>
+      <td>#R2625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat V3/V4</td>
+      <td>Stuart et al., 2019 (V3) Hao et al., 2021 (V4)</td>
+      <td>https://github.com/satijalab/seurat/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>URD</td>
+      <td>Farrell et al., 2018</td>
+      <td>https://schierlab.biozentrum.unibas.ch/urd</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism version 9.1.0</td>
+      <td>GraphPad Software, San Diego, CA</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>mTESR1</td>
+      <td>Stem Cell Technologies</td>
+      <td>#5850</td>
+      <td>iPSC Maintenance Media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Matrigel</td>
+      <td>Corning</td>
+      <td>#356234</td>
+      <td>Substrate for iPSC culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>×1 TryPLE Select</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#12563011</td>
+      <td>Cell dissociation reagent</td>
+    </tr>
+  </tbody>
+</table>
+
+### Maintenance of hiPSC lines and differentiation to cardiomyocytes
 
 hiPSC line LUMC0099iCTRL04 used in this study was generated by the iPSC core facility of Leiden University Medical Center following due protocols for informed consent and use of these cells for research purposes. The cell line is registered in Human Pluripotent Stem Cell Registry (https://hpscreg.eu/cell-line/LUMCi004-A).
 
@@ -131,50 +378,50 @@ hiPSCs were maintained in mTESR1 medium (Stem Cell Technologies, #5850) on growt
 
 For cardiac differentiation, cells were seeded at a density of 2.5–3×104 cells/cm2. Differentiation was induced when cells reached 80–90% confluency using BPEL medium (Ng et al., 2008) supplemented with 20 ng/mL Activin-A (Miltenyi Biotec, #130-115-012), 20 ng/mL BMP4 (R&D Systems, #314 BP-010/CF), and 1.5 µmol/L CHIR99021 (Axon Medchem, #1386). Three days after initiation, medium was replaced with BPEL containing 5 µmol/L XAV939 (Tocris Bioscience, #3748/10). For SANCM differentiation, 5 µmol/L XAV939, 2.5 ng/mL BMP4, 5 µmol/L SB431542 (Tocris, #1614), 250 nmol/L RA (Sigma, #R2625-50MG), and 250 nmol/L PD173074 (Selleck Chemicals, #1264) were added on day 4. Differentiation medium was replaced with BPEL medium after 48 hr (SANCM) or 96 hr (VCM) and cells refreshed every 3 days thereafter. To evaluate the role of canonical WNT signaling for differentiation toward SAN-head lineage, XAV939 (5 µmol/L), was added from day 10 to day 17. To evaluate the role of TGFβ signaling for differentiation toward SAN-TZ lineage, TGFβ2 (R&D Systems, #302-B2-002/CF; 5 ng/mL) was added from day 4 to day 6.
 
-## RT-qPCR
+### RT-qPCR
 
 Total RNA of day 19 hiPSC-derived cultures was isolated using Nucleospin RNA kit (Machery Nagel, # MN740955.50) according to the manufacturer’s instructions. Reverse transcription was performed using Superscript II (Thermo Fisher Scientific, #18064071) with oligo dT primers (125 μmol/L). qPCR was performed on the LightCycler 2.0 Real-Time PCR system (Roche Life Science). Primer pairs were designed to span an exon-exon junction or at least one intron (Supplementary file 6). qPCR mix was prepared using the LightCycler 480 SYBR Green I Master (Roche, #4887352001), primers (1 μmol/L), and cDNA (equivalent to 10 ng RNA). Amplification of target sequences was performed using the following protocol: 5 min at 95°C followed by 45 cycles of 10 s at 95°C, 20 s at 60°C, and 20 s at 72°C. Data analysis was performed using LinRegPCR program (Ruijter et al., 2009). For data normalization, two experimentally assessed reference genes, RPLP0 and GUSB, were used.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Cells cultured as a confluent monolayer on glass coverslips were fixed with 4% paraformaldehyde. Permeabilization was performed with 0.1% Triton-X (Sigma-Aldrich #T8787) and a blocking step was carried out with 4% swine serum (Jackson ImmunoResearch, #014-000-121) for 1 hr. Primary and secondary antibodies were diluted in 4% swine serum as stated in the key resource table and incubated at room temperature for 1 hr or at 4°C overnight. Cell nuclei were stained with DAPI (Sigma-Aldrich #D9542). Imaging was carried out with Leica TCS SP8 X DLS confocal microscope. Data visualization and processing was performed with the Leica LAS-X software.
 
-## Single cell patch clamp
+### Single cell patch clamp
 
 Day 16 cardiomyocytes were dissociated using ×1 TryPLE Select (Thermo Fisher Scientific #12563011) and plated at a density of 7.0^103 per coverslip. After 1 week, cells with a smooth surface and intact membrane were chosen for measurements. Action potentials were recorded at 37°C with the amphotericin-B-perforated patch clamp technique using a Axopatch 200B Clamp amplifier (Molecular Devices Corporation). Measurements were carried out in Tyrode’s solution containing 140 mmol/L NaCl, 5.4 mmol/L KCl, 1.8 mmol/L CaCl2, 1.0 mmol/L MgCl2, 5.5 mmol/L glucose, and 5.0 mmol/L HEPES. pH was adjusted to 7.4 with NaOH. Pipettes (borosilicate glass; resistance 1.5–2.5 MΩ) were filled with a solution containing 125 mmol/L potassium gluconate, 20 mmol/L KCl, 10 mmol/L NaCl, 0.4 mmol/L amphotericin-B, and 10 mM HEPES, pH was adjusted to 7.2 with KOH. Signals were low-pass-filtered (cutoff frequency 10 kHz) and digitized at 40 kHz. Action potentials were corrected for the estimated change in liquid junction potential (Barry and Lynch, 1991). Data acquisition and analysis were performed using custom software.
 
-## Immunohistochemistry on mouse heart tissue
+### Immunohistochemistry on mouse heart tissue
 
 Paraffin-embedded hearts were sectioned at 7 µm. Sections were mounted onto silane-coated slides, deparaffinized in xylene, rehydrated in graded ethanol series and washed in phosphate-buffered saline (PBS, pH 7.4). Heat-induced antigen retrieval was performed using unmasking solution (Vector Labs #H-3300–250). Sections were incubated with primary antibodies (Key resources table) diluted in 4% bovine serum albumin (BSA; Sigma-Aldrich #A7906) at 4°C overnight. After washing in TBST buffer (25 mM Tris, 150 mM NaCl, 2.5 mM KCl, and 0.5% Tween w/v) sections were incubated with fluorochrome-conjugated secondary antibodies at room temperature for 2 hr in the dark. Sections were washed in TBST, stained with DAPI (Sigma-Aldrich #D9542) and mounted in PBS-glycerol (1:1). Imaging was performed with Leica DMI6000 inverted microscope.
 
-## Flow cytometry
+### Flow cytometry
 
 Day 18–20 cardiomyocytes were dissociated using ×1 TrypLE Select (Thermo Fisher Scientific #12563011). For intracellular staining, cells were fixed and stained using the FIX & PERM kit (Thermo Fisher Scientific; #GAS004) according to the manufacturer’s instructions. For cell surface antigens, the antibody was added to the cell suspension resuspended in a buffer containing 10% BSA (Sigma-Aldrich, #A8022) and 0.5 M EDTA (Thermo Fisher Scientific #15575020). All antibody incubations were performed for 30 min on ice protected from light. Acquisition was performed on FacsCanto II Cell Analyzer (Beckton Dickinson). Data was analyzed using FlowJo version 10. Antibody information is provided in the Key resources table.
 
-## Cell sorting for single cell RNA-seq
+### Cell sorting for single cell RNA-seq
 
 Single cell sequencing was performed using SORT-seq method (Muraro et al., 2016). Cells from one representative differentiation were collected at different stages (days 0, 4, 5, 6, and 10). At the end time point on day 19, cells from two independent differentiations were collected to ascertain reproducibility. For each time point, cells were sorted into two (D0–10, D19 SANCMTGFB2) or three (D19 SANCM and D19 ACM) 384-well plates, each well containing an oil droplet with barcoded primers, spike-ins, and dNTPs. Preparation of single cell libraries was performed using the CEL-Seq2 protocol (Muraro et al., 2016; Hashimshony et al., 2016). Paired-end sequencing was performed on the NextSeq500 platform using 1×75 bp read length kit.
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
-## Reference genome annotation
+#### Reference genome annotation
 
 Mapping was performed using BWA-MEM against the (human) genome assembly GRCh38 (hg38). Count matrices were generated using MapAndGo, filtering reads with a minimum quality score of 60 and no alternative hits.
 
-## scRNA-seq data pre-processing, normalization and batch correction, clustering, differential gene expression, cell-type identification and visualization
+#### scRNA-seq data pre-processing, normalization and batch correction, clustering, differential gene expression, cell-type identification and visualization
 
 Data analysis was performed using the R toolkit Seurat versions 3 and 4 (Stuart et al., 2019, Hao et al., 2021). Data QC and pre-processing, dimensional reduction, clustering, and differential gene expression were performed according to the standard workflow (https://satijalab.org/seurat/). Briefly, high-quality single cells collected on D19 were selected according to the following parameters: gene count >1000 and <9000, mRNA molecule count <60,000 and mitochondrial gene count <50%. The filters for the time series dataset were set as per the following: gene count >600; mRNA molecule count <100,000; mitochondrial gene count <50%. Next, normalization, scaling, and identification of variable features (nfeatures = 3000) based on variance stabilizing transformation (‘vst’) was performed using the SCTransform command (Hafemeister and Satija, 2019). Since technical plate-to-plate variations were observed, SCTransform data integration was performed by normalizing each dataset individually, identifying integration anchors within the datasets collected on the same time point and integrating the datasets. Dimensionality reduction was performed using PC analysis (PCA) and UMAP with the top 15 PCs (day 19 datasets, Figure 3 and Figure 7), top 20 PCs (day 0–19 SANCM dataset, Figure 4) and seed set to 2020. For cell clustering, a KNN (K-nearest neighbor) graph was constructed based on euclidean distance in PCA space and clusters were identified using the Louvain algorithm, as implemented in the FindNeighbors and FindClusters command. Identified clusters were then visualized in a UMAP using the DimPlot command. For differential expression testing and visualization, LogNormalization was performed according to the standard workflow on the uncorrected dataset and differential gene expression was determined using Wilcoxon rank sum test. Differentially expressed gene lists show genes, which are expressed in at least 25% in either of the two fractions of cells and limited to genes, which are differentially expressed (on average) by at least 0.25-fold (log-scale) between the two compared cell fractions. Cell type-specific marker genes were used to annotate cell clusters. VlnPlot, FeaturePlot, and DoHeatMap commands were used to visualize gene expression.
 
-## Pseudotime and trajectory inference
+#### Pseudotime and trajectory inference
 
 For the reconstruction of transcriptional trajectories from the mesodermal stage (day 4) to SANCM (day 19), the URD algorithm was used (Farrell et al., 2018). hiPSC clusters (D0_1, D0_2) were excluded as we reasoned that cell lineage diversification will not occur before mesoderm induction. A small endoderm-like cluster (D4_2) was also excluded. Identification of highly variable genes, PCA and tSNE projection (RunTSNE command, dims = 1:20) were performed using Seurat, as described above. The Seurat object was converted into a URD object. All steps were performed according to the manual provided by the Schier lab (https://schierlab.biozentrum.unibas.ch/urd).
 
 Briefly,KNN graph was calculated using k=100 and poorly connected cells (outliers) were removed. Outliers were identified as cells, which are unusually far from their nearest neighbor and their 20th nearest neighbor (based on their distance to their nearest neighbor). Next, transition probabilities were calculated between transcriptomes to connect cells with similar gene expression patterns and a diffusion map was constructed using KNN = 50 and global sigma = 12. Diffusion map was visualized and assessed by plotting diffusion component pairs using PlotDimArray function. Then, the root of the specification tree was defined (cells in cluster D4_1, corresponding to mesoderm stage) and pseudotime was assigned to each cell by simulated ‘floods’ (n=100, minimum.cells.flooded=2), using previously calculated transition probabilities. The tips of the trajectory tree were assigned using clusters derived from terminally differentiated cells (day 19). Cluster 7 (Figure 3A) was not assigned as tip cluster as those cells appear to be halted during differentiation. Clusters 4, 5, 6, and 8 were used as tip clusters corresponding to SAN-TZ, SAN-tail, SAN-head, and proepicardial-like cells, respectively. Trajectories from the tips back to the root were identified using biased random walks with the following parameters: optimal.cells.forward=50, max.cells.back=80; n.per.tip=25,000,, root.visits=1, max.steps=5000. In order to build the developmental trajectory and branching tree structure, the visitation frequency of each cell was determined by the random walks from each tip. Visitation frequencies were visualized to ensure a well-connected tree structure from the tips to the root. Lastly, the branching tree structure was constructed using the following parameters: divergence.method = ‘preference’, cells.per.pseudotime.bin=35, bins.per.pseudotime.window=10, save.all.breakpoint.info=T, p.thresh=0.000001. Gene expression within the dendrogram was visualized using the plotTree command. Differential gene expression between different segments of the developmental tree were performed using the markersAUCPR command (auc.factor=0.9, effect.size=0.4, frac.must.express=0.5). Slingshot analysis was performed as described in the Bioconductor vignette.
 
-## GO enrichment analysis
+### GO enrichment analysis
 
 GO enrichment analysis was performed using Protein Analysis Through Evolutionary Relationships (PANTHER) Classification System version 16.0, release date 2020-12-01 (Ashburner et al., 2000; Carbon et al., 2021).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was carried out in GraphPad Prism version 9.1.0 for Windows GraphPad Software, San Diego, CA, https://www.graphpad.com/. Data were represented as mean ± s.e.m. (standard error of the mean). Non-parametric tests were performed in all cases. Number of samples (n) and the method used to test statistical significance are stated in each figure legend. p<0.05 was considered statistically significant.

@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02hpadn98 Neuro-Cognitive Psychology Group, Bielefeld University Bielefeld Germany
+1. Neuro-Cognitive Psychology Group, Bielefeld University Bielefeld Germany ([ROR:02hpadn98](https://ror.org/02hpadn98))
 
 † Corresponding author
 

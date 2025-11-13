@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01dr6c206 Institute of Psychology, Polish Academy of Sciences Warsaw Poland
+1. Institute of Psychology, Polish Academy of Sciences Warsaw Poland ([ROR:01dr6c206](https://ror.org/01dr6c206))
 
 † Corresponding author
 

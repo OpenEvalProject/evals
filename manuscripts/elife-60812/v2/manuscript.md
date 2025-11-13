@@ -39,15 +39,27 @@ Here, we sought to elucidate the potential role of the mPFC and BNST and other n
 
 ## Results
 
-## Lower freezing to a partially reinforced CS
+### Lower freezing to a partially reinforced CS
 
 The PRF conditioning procedure entailed presenting male C57BL/6J (B6) mice with three pairings of a tone CS and a footshock US, along with three interspersed presentations of the same CS without concomitant footshock (McHugh et al., 2015; Glover et al., 2017). For comparison, a fully reinforced fear (FRF) group received 3x CS+US pairings, and a CS-only control group received 6x CS presentations without the US (Figure 1A,B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60812/elife-60812-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic depiction of experimental procedure for assessing, in B6 mice, PRF and FRF, along with CS-only controls. (B) Schematic depiction of experimental procedure for assessing, in B6 mice, PRF and FRF retrieval in a novel context (context B) and the conditioning context (context A) (C) Lower CS-related freezing during retrieval in PRF mice than in FRF mice. Higher baseline and CS-related freezing in PRF and FRF mice relative to CS-only controls (n = 4–8 mice per group). (D) Schematic depiction of experimental procedure for assessing PRF and FRF retrieval in the B6 and S1 genetic strains. (E) Lower CS-related freezing during retrieval in PRF than in FRF in B6, not S1, mice (n = 7–8 mice per group/strain). Data are means ± SEM. *p<0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60812/elife-60812-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic depiction of experimental procedure for assessing, in B6 mice, PRF and FRF, along with CS-only controls. (B) No group differences in CS-related freezing during conditioning (n = 4–8 mice per group). (C) No difference in CS-related freezing between FRF and PRF mice during retrieval, broken down by CS presentation (n = 8 mice per group). (D) Schematic depiction of experimental procedure for assessing PRF and FRF retrieval in the B6 and S1 genetic strains. (E) No group differences in CS-related freezing during conditioning (n = 7–8 mice per group/strain). Data are means ± SEM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60812/elife-60812-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic depiction of experimental procedure for assessing behavior on the novelty-suppressed feeding (NSF) test after PRF or FRF conditioning, along with context-exposed controls. (B) Longer latencies to eat under high, but not low, illumination in PRF and FRF versus controls and in PRF versus FRF. n = 8 mice per group. Data are means ± SEM. *p<0.05.
 
 Freezing increased to a similar extent over the six conditioning trials in the PRF group and over the three conditioning trials, plus the corresponding three no-trial periods, in FRF group, but did not significantly increase in the CS-only group (analysis of variance [ANOVA] group-effect: F(2,17)=5.74, p=0.0125; trial-effect: F(5,85)=13.49, p<0.0001; interaction: F(5,85)=1.64, p=0.1099). On a retrieval test conducted in a novel context (context B) the following day, the PRF and FRF groups froze more than CS-only controls during pre-CS baseline and CS presentation. Notably, however, CS-evoked freezing was lower in the PRF, relative to the FRF, group (ANOVA group-effect: F(2,17)=53.02, p<0.0001; CS-effect: F(1,17)=216.90, p=0.0001; interaction: F(2,17)=25.51, p=0.0001, followed by post-hoc tests: CS-only vs PRF p<0.0001, CS-only vs FRF p<0.0001, PRF vs FRF p=0.0008) (Figure 1C, Figure 1—figure supplement 1).
 
 These data show that B6 mice express less freezing in the PRF, as compared to FRF, procedure despite the number of CS–US pairings being equivalent in both conditions. These differences are in line with lower freezing in the PRF procedure in a mixed C57BL/6J;CBA/J;129S6/SvEvTac genetic background (Tsetsenis et al., 2007) but, indicating a degree of strain dependency of PRF, differ from data in outbred CD-1 mice, in which freezing is equivalent between PRF and FRF groups (Glover et al., 2017).
 
-## Mice with an abnormal fear phenotype do not exhibit lower PRF
+### Mice with an abnormal fear phenotype do not exhibit lower PRF
 
 We next reasoned that an inbred strain (S1), which exhibits impaired contextual (and cued) fear discrimination, deficits in limiting fear following extinction and conditioned inhibition, and high fear expression in a different assay for PRF (Camp et al., 2012), might exhibit deficits in the current PRF assay (Camp et al., 2009; Camp et al., 2012; Figure 1D).
 
@@ -55,7 +67,7 @@ Across conditioning trials, there was increased freezing in the PRF and FRF grou
 
 The finding that S1 mice exhibit similar freezing to the PRF and FRF procedures aligns with the excessive fear shown by this strain to innocuous stimuli and following extinction (Camp et al., 2009; Camp et al., 2012) and further illustrates the strain dependency of PRF.
 
-## Increased latency to feed in the novelty-suppressed feeding test after PRF
+### Increased latency to feed in the novelty-suppressed feeding test after PRF
 
 An earlier study by Glover et al., 2017 found that following PRF conditioning, CD-1 mice had a higher latency to feed, as compared to a FRF group, in the novelty-suppressed feeding (NSF) test, an assay sensitive to anxiolytics and antidepressants (Ramaker and Dulawa, 2017).
 
@@ -63,17 +75,29 @@ To test whether PRF had a similar effect in B6 mice, NSF was assessed under eith
 
 These data show that PRF conditioning increases anxiodepressive-like anxiety-like behavior under relatively aversive (high illumination) conditions of approach–avoidance conflict.
 
-## Ex vivo neuronal regional activity correlates of PRF
+### Ex vivo neuronal regional activity correlates of PRF
 
 The complex behavioral sequelae of PRF suggest that this form of fear may have different neural substrates than FRF. We, therefore, sought to identify neural correlates of PRF by quantifying the number of c-Fos+ cells, as a proxy for neuronal activity, in forebrain regions following retrieval (for corresponding behavioral data, see Figure 1B).
 
 There were a higher number of c-Fos+ cells in the basolateral amygdala (BLA) of FRF mice (ANOVA group-effect: F(2,17)=6.79, p=0.0068, followed by post hoc tests: FRF vs CS-only p=0.0038, FRF vs PRF p=0.0132), as compared to either PRF mice or a set of controls that had received CS-only trials during conditioning. In the paraventricular nucleus of the thalamus (PVT), another region implicated in fear (Penzo et al., 2015), c-Fos+ counts were higher in the PRF and FRF groups than controls (ANOVA group-effect: F(2,17)=4.01, p=0.0374, followed by post-hoc tests: CS-only vs PRF p=0.0281, CS-only vs FRF p=0.0145). No group differences were evident in the lateral or medial habenula, or ventral or dorsal hippocampus (Figure 2A–I, Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60812/elife-60812-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic depiction of experimental procedure for assessing ex vivo neuronal regional activity (via c-Fos immunohistochemistry) after PRF or FRF retrieval, along with CS-only controls. Representative images and c-Fos+ cell count differences for basal amygdala (B), paraventricular nucleus of the thalamus (C), infralimbic cortex (D), prelimbic cortex (E), posterior portion of the anterior cingulate cortex (F), anteroventral BNST (G), anterodorsal BNST (H), and lateral habenula (I). For corresponding behavioral data, see Figure 1B. Scale bars = 30 µm (B,D–F), 100 µm (C,I), 300 µm (G,H). n = 4–8 mice per group. Data are means ± SEM. *p<0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60812/elife-60812-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic depiction of experimental procedure for assessing ex vivo neuronal regional activity (via c-Fos immunohistochemistry) after PRF or FRF retrieval. Representative images and c-Fos+ cell counts for the dorsal dentate gyrus (B), dorsal CA3 (C), and ventral CA1/subiculum (D) regions of the hippocampus and the medial habenula (E). There were no group differences. Scale bars = 100 µm. n = 4–8 mice per group. Data are means ± SEM.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60812/elife-60812-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic depiction of viral strategy to label mPFC inputs to BNST neurons and their onward projections to the hypothalamus. (B) Representative image of synaptophysin-mCherry labeling in BNST neurons receiving mPFC input (scale bar = 1000 µm). (C) Representative image of synaptophysin-mCherry labeling in mPFC-innervated BNST neuronal projections in hypothalamus (scale bar = 500 µm). (D) Schematic depiction of viral strategy to label PVN oxytocin cell inputs to the PAG in Oxt-Cre mice. (E) Representative image of ChR2-EYFP labeling in the PVN (scale bar = 200 µm). Low (F) and high (G) magnification images of ChR2-EYFP labeling in the PAG (scale bars = 200 µm and 100 µm, respectively). (H) Schematic depiction of viral strategy to label PVN oxytocin cell inputs to the PAG in Oxt-Cre mice. (I) Representative image of synaptophysin-EYFP labeling in the PVN (scale bar = 200 µm). Low (J) and high (K) magnification images of synaptophysin-EYFP labeling in the PAG (scale bars = 200 µm and 100 µm, respectively). Note: LH = Lateral Hypothalamus; PVN = paraventricular nucleus of the hypothalamus; IPAG = lateral periaqueductal gray; vlPAG = ventrolateral periaqueductal gray; Aq = aqueduct.
+
 In subregions of the mPFC, however, there were more c-Fos+ cells in the IL (F(2,17)=8.21, p=0.0032, followed by post-hoc tests: CS-only vs PRF p=0.0009, CS-only vs FRF p=0.0411, FRF vs PRF p=0.0420), but not the posterior ACC (F(2,17)=1.01, p=0.3862) of PRF and FRF mice, relative to CS-only controls. Counts in the PL were higher in PRF mice relative to controls and trended higher in the FRF group (F(2,17)=3.60, p=0.0499, followed by post hoc tests: CS-only vs PRF p=0.0196). The same pattern of elevated activity in the PRF group, relative to the other groups, was also evident in the BNST, though specifically in the anteroventral BNST (avBNST) (F(2,17)=19.43, p=0.0001, followed by post hoc tests: CS-only vs PRF p=0.0001, CS-only vs FRF p=0.0294, PRF vs FRF p=0.0005), not the anterodorsal BNST (adBNST) (F(2,14)=1.38, p=0.2831) (Figure 2A–I).
 
 These findings show that retrieval of a PRF CS, despite being characterized by lower freezing than FRF, associates with a unique pattern of regional brain activation, with preferentially high activation in the IL and PL subregions of the mPFC and the avBNST.
 
-## Connectivity between mPFC, BNST, and downstream targets
+### Connectivity between mPFC, BNST, and downstream targets
 
 Previous studies in the rat have demonstrated a direct (GABAergic) input from the mPFC to the BNST that is particularly dense between the IL and avBNST (Dong et al., 2001), but also present between the PL and avBNST (Johnson et al., 2016; Johnson et al., 2019). As our c-Fos data indicated activation of the IL, PL, and avBNST by PRF, we sought to verify an mPFC-to-BNST projection in mice.
 
@@ -83,15 +107,35 @@ A corollary to the existence of a disynaptic mPFC–BNST–PVN circuit in mice i
 
 Together these data provide evidence of input from the mPFC to the BNST in the mouse, as well as onward connections from the BNST to the PVN and in turn possibly on to the vl/PAG. Thus, PRF engagement of the mPFC and BNST can be viewed in the context of a direct connection between these regions and their downstream access to a broader fear-regulating neural circuitry.
 
-## Inhibition of mPFC→BNST neurons increases freezing to a PRF CS
+### Inhibition of mPFC→BNST neurons increases freezing to a PRF CS
 
 To causally interrogate the contribution of the mPFC→BNST pathway to PRF, a retrogradely transported Cre-containing construct viral construct was infused into the BNST and a construct containing a Cre-dependent form of hM4Di (or mCherry control) infused into the mPFC, enabling the expression of the inhibitory DREADD in mPFC→BNST neurons to inhibit their activity, via systemic injection of clozapine N-oxide (CNO), during retrieval (Figure 3A,B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60812/elife-60812-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic depiction of experimental procedure for assessing effects of chemogenetic inhibition of mPFC→BNST neurons during retrieval. (B) Cartoon of viral strategy and representative images of hM4Di–mCherry labeling in BNST neurons receiving mPFC input (scale bars = 200 µm). (C) Lower CS-related freezing during retrieval in PRF mice than in FRF mice transfected with mCherry, not hHM4Di. Data are means ± SEM. *p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60812/elife-60812-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic depiction of viral strategy to selectively inhibit BNST-projecting mPFC neurons during retrieval. (B) Freezing increased across CS trials, irrespective of virus group. (C) Trial-by-trial breakdown of freezing during each CS of retrieval indicated a non-significant trend for decreasing freezing across trials in the mCherry PRF group. n = 8–9 mice group/virus. Freezing data are means ± SEM.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60812/elife-60812-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Estimated location of tips of the electrodes at the center of the multi-array in the IL of PRF (A) and FRF (B) mice. Estimated extent of virus, as indicated by mCherry expression, in the BNST of PRF (C) and FRF (D) mice (darker shading represents areas of greater overlap across mice).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/60812/elife-60812-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Schematic depiction of experimental procedure for in vivo IL single-unit recordings, combined with chemogenetic inhibition of mPFC→BNST neurons during retrieval (n = 8–9 mice per group/virus). (B) Cartoon of viral strategy and representative image of hM4Di-mCherry labeling in the mPFC and electrode array placement in the IL (scale bar = 500 µm). (C) Raster plot of a representative IL unit firing in response to CS onset (CS-ON neuron). Baseline-normalized population trace of CS-ON neuronal activity during retrieval; average of all groups (D) and split by group (E). (F) Higher percentage of CS-ON units during PRF than FRF retrieval in mice transfected with mCherry, not hHM4Di (n = 17 recorded units in PRF/mCherry, n = 25 units in PRF/hM4Di, n = 20 units in FRF/mCherry, n = 17 units in FRF/hM4Di, from three mice per group/virus). Baseline-normalized population trace of freeze cessation (Freeze-OFF neurons) IL unit activity during retrieval; average of all groups (G) and split by group (H) (n = 3 CS units in PRF/mCherry, n = 6 units in PRF/hM4Di, n = 1 units in FRF/mCherry, n = 1 units in FRF/hM4Di). (I) Higher percentage of Freeze-OFF units during PRF than FRF retrieval in mice transfected with mCherry, not hHM4Di (n = 17 recorded units in PRF/mCherry, n = 25 units in PRF/hM4Di, n = 20 units in FRF/mCherry, n = 17 units in FRF/hM4Di, from three mice per group/virus, n = 4 Freeze-OFF units in PRF/mCherry, n = 6 units in PRF/hM4Di, n = 3 units in FRF/mCherry, n = 0 units in FRF/hM4Di). Baseline-normalized population trace of freeze onset (Freeze-ON neurons) IL unit activity during retrieval; average of all groups (J) and split by group (K). (L) No differences in the percentage of Freeze-OFF units during retrieval between groups (n = 17 units in PRF/mCherry, n = 25 units in PRF/hM4Di, n = 20 units in FRF/mCherry, n = 17 units in FRF/hM4Di, from three mice per group/virus, n = 4 Freeze-ON units in PRF/mCherry, n = 6 units in PRF/hM4Di, n = 4 units in FRF/mCherry, n = 2 units in FRF/hM4Di). Data are means ± SEM. *p<0.05.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/60812/elife-60812-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (﻿A﻿) Heat plots of unit activity aligned to CS onset (left columns), freeze cessation (center columns), and freeze onset (right columns). The same data shown as peri-event histograms and % event-related activity can be found in Figure 3—figure supplement 3.
 
 During conditioning, freezing increased over trials to a similar extent in all groups (ANOVA trial-effect: F(5,145)=23.54, p<0.0001; group effect: F(3,145)=0.91, p=0.4467; interaction: F(15,145)=0.61, p=0.08647) (Figure 3—figure supplement 1). Following CNO administration, CS-related freezing during retrieval was lower in PRF mice than in FRF mice expressing the control virus, replicating our earlier data. By contrast, there was no difference in freezing in mice expressing hM4Di (ANOVA conditioning-type effect: F(1,29)=9.35, p=0.0048; virus-group effect: F(1,29)=12.15, p=0.0016; CS: F(1,29)=1331.02, p<0.0001; three-way interaction: F(1,29)=6.58, p=0.0157, followed by post-hoc tests: mCherry PRF vs mCherry FRF p<0.0001, hM4Di PRF vs hM4Di FRF p=0.1425, mCherry PRF vs hM4Di PRF p=0.0013, mCherry PRF vs hM4Di PRF p=0.7951) (Figure 3C). Examination of the trial-by-trial freezing during retrieval indicated no significant trial-related differences in freezing, despite a trend for decreasing freezing across trials in the mCherry PRF group (ANOVA trial-effect: F(5,145)=1.83, p=0.1098; group-effect: F(3,29)=14.15, p<0.0001; trial x group interaction: F(15,145)=1.04, p=0.4213) (Figure 3—figure supplement 1).
 
 These data show that inhibition of mPFC→BNST neurons increases freezing to a PRF CS. This finding suggests that engagement of these mPFC→BNST neurons limits the expression ofto the unreliable, PRF, though it remains possible that inhibition of these neurons also produces an increase in PRF expression, which may have been masked due to high (ceiling) levels of freezing.
 
-## IL cells signal CS onset and freezing cessation
+### IL cells signal CS onset and freezing cessation
 
 The finding that inhibiting mPFC outputs to the BNST pathway increases freezing to a PRF CS implies that mPFC neurons likely encode some aspects of fear. To address this possibility, we devised an approach entailing chemogenetic inhibition of mPFC→BNST neurons (as described above) coupled with in vivo recordings of mPFC single-unit activity via chronically implanted electrode arrays, which we targeted at the IL (Figure 3—figure supplement 2). The average firing rate of units did not statistically differ between groups (FRF mCherry: 4.10 ± 0.64, FRF hM4Di: 3.45 ± 0.49, FRF mCherry: 2.67 ± 0.66, FRF hM4Di: 1.67 ± 0.34).
 
@@ -127,11 +171,11 @@ In summary, the current study found that B6 mice expressed lower fear to a CS th
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Subjects were adult male C57BL/6J (B6), 129S1/SvImJ (S1), and B6;129S-Oxttm1.1(cre)Dolsn/J (JAX strain 024234) (Oxt-Cre) mice obtained from the Jackson Laboratory (Bar Harbor, ME, USA) and were at least 8 weeks old at the time of testing. Mice were group-housed in a temperature (22 ± 3°C) and humidity (45 ± 15%) controlled vivarium under a 12 hr light/dark cycle (lights on 0600 hr). Mice undergoing surgery for chronic implantation were single housed after surgery to prevent the implant being damaged by a cage mate. All experimental procedures were approved by the National Institute on Alcohol Abuse and Alcoholism (NIAAA) and Santa Clara University Animal Care and Use Committees (SCU AWA: D18-01042) and followed the NIH guidelines outlined in ‘Using Animals in Intramural Research’ and the local Animal Care and Use Committees.
 
-## Partially versus fully reinforced threat (standard procedure)
+### Partially versus fully reinforced threat (standard procedure)
 
 The threat conditioning procedures were based on previous studies with slight modifications (McHugh et al., 2015; Glover et al., 2017). For this and all other experiments, prior to testing, mice were randomly assigned to experimental groups and habituated to handling for approximately 10 min per day for 4 days. The following procedures were used in all experiments, unless stated otherwise below.
 
@@ -141,15 +185,15 @@ CS retrieval took place one day after conditioning in a novel context B, a 27 
 
 Stimulus presentation was controlled by the Med Associates VideoFreeze system (Med Associates, Burlington, VT, USA). Freezing, scored manually every 5 s (as no visible movement except that required for breathing), was measured as an index of fear (Blanchard and Blanchard, 1972) and converted to a percentage ([number of freezing observations/total number of observations] x 100).
 
-## Novelty-suppressed feeding
+### Novelty-suppressed feeding
 
 Mice (assigned to FRF, PRF, and a control group exposed to the conditioning context for 1 min) underwent conditioning and were then food-deprived for 24 hr. Subsequently, they were assessed using the NSF test for anxiodepressive-like behavior, as previously described (Glover et al., 2017). The test apparatus was a novel, 50 cm3 white Plexiglas box with the floor covered by fresh cage substrate. A single pellet of regular home-cage food chow was placed within a plastic weigh-boat in the center of the box. Separate groups of mice underwent the test under 180 lux (low) and 1350 lux (high) illumination. The mouse was placed in a corner of the box, facing the center, and the latency to begin eating the chow was measured from a video-recording. The test ended when eating started or when 600 s had elapsed.
 
-## Behavior in mouse strain with a persistent and generalized fear phenotype
+### Behavior in mouse strain with a persistent and generalized fear phenotype
 
 B6 and S1 mice underwent conditioning and retrieval as described under ‘Partially versus fully reinforced threat (standard procedure)’.
 
-## Regional patterns of fear-related c-Fos activity
+### Regional patterns of fear-related c-Fos activity
 
 Mice (assigned into FRF, PRF, and a CS-only group) underwent conditioning and retrieval as described under ‘Partially versus fully reinforced threat (standard procedure)’. Ninety minutes after retrieval, mice were deeply anesthetized with sodium pentobarbital and transcardially perfused with ice-cold phosphate-buffered saline (PBS, pH 7.4) followed by ice-cold 4% paraformaldehyde (PFA). Brains were removed, and 50 µm coronal sections were cut on a vibratome (Leica VT1000 S, Leica Biosystems Inc, Buffalo Grove, IL, USA) and stored free floating in 0.1 M phosphate buffer (PB) at 4°C for <1 week.
 
@@ -159,7 +203,7 @@ Images of all three channels (c-Fos, NeuN, Hoechst) for all sections were acquir
 
 Counts were made in the following brain regions: PL, IL, ventromedial BNST, dorsolateral BNST, BLA, lateral and medial habenula, and ventral and dorsal hippocampus (for cartoons depicting region definitions and example images, see Figure 2, Figure 2—figure supplement 1). For each brain region, cell counts were conducted (blind to test group) in two to four sections from each hemisphere, for a total of six data points per region per mouse. It was unnecessary to correct for double counting because sections were non-consecutive. The ROIs were transferred to the c-Fos channel, and the mean number of c-Fos positive cells per 0.25 mm2 within the ROI was quantified in a semi-automated manner using a custom-written macro.
 
-## Trans-synaptic tracing of mPFC→BNST neuronal outputs to hypothalamus
+### Trans-synaptic tracing of mPFC→BNST neuronal outputs to hypothalamus
 
 Mice were placed in a stereotaxic alignment system (Kopf Instruments, Tujunga, CA, USA) and kept under isoflurane anesthesia. AAV1-hSyn Cre-WPRE-hGH (titer: 3.5 × 1013 GC/mL, plasmid# 55637, obtained from Addgene, Cambridge, MA, USA, and packaged by Vigene Biosciences, Rockville, MD, USA) was unliterally infused (0.15 µL) into the PFC, and AAV5-Ef1a-DIO-eYFP (titer: 2.1 × 1012, obtained from the UNC Vector Core) was unilaterally infused (0.15 µL) into the BNST of the same hemisphere. The coordinates for BNST infusions were Medial/Lateral = ±0.80, Dorsal/Ventral = −4.15, Anterior/Posterior = +0.03. The coordinates for mPFC infusions were Medial/Lateral = ±1.30 (20° angle), Dorsal/Ventral = −3.00, Anterior/Posterior = +2.00.
 
@@ -167,13 +211,13 @@ Four weeks later, mice were terminally anesthetized with sodium pentobarbital (5
 
 Far-Red nuclear staining dye (four to five drops of NucRed Dead 647 ReadyProbe Reagent, Thermo Fisher Scientific, and 0.1 M phosphate buffer [2.5 mL]) was pipetted onto the mounted sections. After 15–20 min, the excess solution was suctioned using a benchtop aspirator. Once sufficiently dried, the slides were coverslipped using the same aqueous mounting media. Fluorescent images were taken with a Zeiss (LSM 700, Carl Zeiss Microscopy, Thornwood, NY, USA) confocal microscope under a Plan-Apochromat 10x/0.8 M27 objective.
 
-## Output tracing of oxytocin PVN cells
+### Output tracing of oxytocin PVN cells
 
 Oxt-Cre mice were placed in a stereotaxic alignment system (Kopf Instruments) under isoflurane anesthesia. Either a viral vector-containing ChR2, fused to GFP (AAV2-EF1a-DIO-hChR2(E123T/T159C)-EYFP, titer: 6.10 × 1012 vp/mL, Addgene plasmid#35509, obtained from the UNC Vector Core, Chapel Hill, NC, USA) or a vector-containing synaptophysin, fused to GFP (AAV8.2-hEF1a-DIO-synaptophysin-EYFP, titer: 2.1 × 1013 vg/mL, generously provided by Dr. R. Neve, Massachusetts General Hospital, Belmont, MA, USA) was bilaterally infused (0.15 µL) into the PVN (coordinates ML = ±1.50 mm (15° angle), DV = −4.87 mm, and AP = +0.75 mm, relative to bregma).
 
 Five weeks later, mice were deeply anesthetized with sodium pentobarbital and transcardially perfused with PBS followed by 4% PFA. Coronal (50 µm thick) sections were prepared by vibratome (VT1000S; Leica). The general histological procedures were also the same as described under ‘Regional patterns of fear-related c-Fos activity’, with the exception that sections were successively immunostained with chicken anti-GFP (1:5000 dilution, cat# ab13970, Abcam, Cambridge, UK) and anti-chicken Alexa 488 secondary antibody (1:500 dilution, cat# ab150169, Abcam). Images were taken with a fluorescence microscopy (VS120; U Plan S Apo; 20×, NA 0.75; Olympus).
 
-## Effects of in vivo chemogenetic mPFC→BNST pathway inhibition
+### Effects of in vivo chemogenetic mPFC→BNST pathway inhibition
 
 Mice were placed in a stereotaxic alignment system (Kopf Instruments) and kept under isoflurane anesthesia. rAAV2-retro-Ef1a-Cre (titer: 1.0 × 1013 gc/mL, obtained from the Salk Institute, La Jolla, CA, USA) was bilaterally infused targeting the BNST (0.15 µL/hemisphere). Additionally, either AAV8-hSyn-DIO-hM4D(Gi)-mCherry-WPRE (titer: 2.25 × 1013 gc/mL, obtained from the Massachusetts General Hospital Gene Delivery Technology Core, Cambridge, MA, USA) or AAV8.2-hEF1-DIO-mCherry-WPRE (titer: 2.13 × 1013 vg/mL, obtained from the Massachusetts General Hospital Gene Delivery Technology Core) was bilaterally infused targeting the IL (0.15 µL/hemisphere). Each infusion was done over 10 min using a Hamilton syringe and 33-gauge needle. The needle was left in place for a further 5 min to ensure diffusion. The coordinates for mPFC and BNST infusions were as described above.
 
@@ -181,7 +225,7 @@ Four weeks after surgery, mice underwent conditioning and retrieval testing as d
 
 After the completion of testing, mice were terminally anesthetized with sodium pentobarbital (50–60 mg/kg). Brains were removed and suspended in 4% PFA overnight and then at 4°C in 0.1 M PB for 1–2 days. Coronal sections (50 μm thick) were cut with a vibratome (Leica VT1000 S, Leica Biosystems Inc) and coverslipped with Vectashield HardSet mounting medium with DAPI (Vector Laboratories, Inc, Burlingame, CA, USA). Sections were imaged using an Olympus BX41 microscope (Olympus America Inc, Center Valley, PA, USA). Mice without viral (i.e., mCherry) expression in the region of interest were removed from the analysis.
 
-## In vivo mPFC single-unit recordings during chemogenetic mPFC→BNST inhibition
+### In vivo mPFC single-unit recordings during chemogenetic mPFC→BNST inhibition
 
 Mice were placed in a stereotaxic alignment system (Kopf Instruments) and kept under isoflurane anesthesia. rAAV2-retro-Ef1a-Cre (titer: 1.0 × 1013 GC/mL, obtained from the Salk Institute) was bilaterally infused targeting the BNST (0.25 µL/hemisphere). In addition, either AAV8-hSyn-DIO-hM4D(Gi)-mCherry-WPRE (titer: 2.25 × 1013 GC/mL, obtained from the Massachusetts General Hospital Gene Delivery Technology Core) or AAV8.2-hEF1-DIO-mCherry-WPRE (titer: 2.13 × 1013 vg/mL, obtained from the Massachusetts General Hospital Gene Delivery Technology Core) was bilaterally infused targeting the IL (0.25 µL/hemisphere). Infusions were done over 10 min using a Hamilton syringe and 33-gauge needle. The needle was left in place for a further 5 min to ensure diffusion. The coordinates for mPFC and BNST infusions were as described above. During the same surgery, a microelectrode array (two rows of eight electrodes with 35 µm electrode spacing and 200 µm row spacing [Innovative Neurophysiology, Durham, NC, USA]) was unilaterally (hemisphere counterbalanced) targeting the IL (array center: ML = ±0.30 mm, DV = −2.70 mm, AP = +1.75 mm) and affixed to the skull with dental cement.
 
@@ -191,6 +235,6 @@ Single units were sorted manually using Offline Sorter v3.0 (Plexon Inc, Dallas
 
 On completion of testing, mice were anesthetized with 2% isoflurane and a current stimulator (S48 Square Pulse Stimulator, Grass Technologies, West Warwick, RI, USA) that delivered 2 s of 40 µA DC current through each electrode to make a small marking lesion. The next day, mice were overdosed via an intraperitoneal injection of 150 mg/kg Euthasol (Henry Schein, Melville, NY, USA) and perfused intracardially with PBS followed by 4% PFA. Brains were left in 4% PFA overnight, then transferred to a 30% sucrose PBS solution for cryoprotection. Coronal sections (50 µm thick) were cut on a cryostat (Leica Biosystems Inc) and mounted onto slides. Tissue was stained with DAPI (Sigma–Aldrich) and imaged using a Keyence BZ-X800 fluorescence microscope (Keyence Corporation of America, Itasca, IL, USA). Mice without viral (i.e., mCherry) expression in the mPFC or correct electrode placement in the IL were removed from the analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 Differences in freezing and c-Fos counts were analyzed using ANOVA followed by Dunn’s post hoc tests. Differences in z scored single-unit values were analyzed using paired t-tests. Differences in the percentage of recorded units responsive to the CS onset, freezing onset, and freezing cessation were analyzed using non-parametric Fisher’s exact tests. The threshold for statistical significance was set at p<0.05; significance values are shown up to p<0.0001.

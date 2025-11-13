@@ -20,11 +20,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00cv9y106 Department of Diagnostic Sciences, Ghent University Ghent Belgium
-2. https://ror.org/02afm7029 Cancer Research Institute Ghent Ghent Belgium
-3. https://ror.org/00cv9y106 Department of Biomolecular Medicine, Ghent University Ghent Belgium
-4. https://ror.org/05f950310 Laboratory of Immunobiology, Rega Institute for Medical Research, Department of Microbiology, Immunology and Transplantation, KU Leuven Leuven Belgium
-5. https://ror.org/00cv9y106 Department of Pharmaceutics, Ghent University Ghent Belgium
+1. Department of Diagnostic Sciences, Ghent University Ghent Belgium ([ROR:00cv9y106](https://ror.org/00cv9y106))
+2. Cancer Research Institute Ghent Ghent Belgium ([ROR:02afm7029](https://ror.org/02afm7029))
+3. Department of Biomolecular Medicine, Ghent University Ghent Belgium ([ROR:00cv9y106](https://ror.org/00cv9y106))
+4. Laboratory of Immunobiology, Rega Institute for Medical Research, Department of Microbiology, Immunology and Transplantation, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+5. Department of Pharmaceutics, Ghent University Ghent Belgium ([ROR:00cv9y106](https://ror.org/00cv9y106))
 
 † Corresponding author
 
@@ -46,9 +46,17 @@ In this study, we show that of the two principal isoforms, predominantly RUNX2-I
 
 ## Results
 
-## RUNX2 drives generation of human mature NK cells
+### RUNX2 drives generation of human mature NK cells
 
 We first analysed protein expression of RUNX1, RUNX2, and RUNX3 using flow cytometry in human HSC and in stages 1–5 of NK cell development from bone marrow, tonsil, or PB of healthy donors (gating is shown in Figure 1—figure supplement 1A). Additionally, RUNX protein expression was measured in corresponding stages obtained from human cord blood (CB) HSC-based NK cell differentiation cultures. While RUNX1 expression was highest in early differentiation stages, the opposite was true for RUNX3. In case of RUNX2, the expression reached its peak at stage 1 and stage 2 progenitors and declined thereafter. In line with previous studies (Collins et al., 2019; Allan et al., 2017; Dogra et al., 2020), RUNX2 expression was higher in CD56brightCD16− (stage 4) compared to CD56dimCD16+ (stage 5) PB NK cells (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/80320/elife-80320-fig1-v1.jpg)
+
+**Figure 1.:** (A) RUNX1, RUNX2, and RUNX3 expression were evaluated in ex vivo and in vitro NK cell developmental stages with flow cytometry and presented as mean fluorescence intensity (MFI). For ex vivo data, haematopoietic stem cells (HSC; CD34+CD45RA−) originated from bone marrow, stage 1 (CD34+CD45RA+CD117−), stage 2 (CD34+CD45RA−CD117+), and stage 3 (CD34−CD117+CD94−HLA-DR−NKp44−) progenitors from tonsil, and stage 4 (CD56+CD94+CD16−) and stage 5 (CD56+CD94+CD16+) NK cells from peripheral blood (mean ± SEM; n=2–4). In vitro expression levels were determined in equivalent stages from cord blood (CB) HSC-based NK cell differentiation cultures at indicated time points (mean ± SEM; n=6). (B) Schematic overview of the transcriptional regulation of the RUNX2 principal isoforms. The type II isoform (RUNX2-II, eight exons) is transcribed from distal promoter P1, while the type I isoform (RUNX2-I, seven exons) is regulated by proximal promoter P2. (C) Genome browser tracks of RUNX2 locus obtained from publicly available ATAC-seq data from HSC (d0), stages 4 and 5 NK cells (d21) of in vitro differentiation cultures (top panel) and histone ChIP-seq data from CB HSC (H3K27me3 and H2K27ac) and PB NK cells (H3K27ac and H3K4me3). The highlighted regions emphasise the promoter regions of the two RUNX2 isoforms. (D) Relative expression of the RUNX2 isoforms was measured in the indicated in vitro NK cell developmental stages and in ex vivo stages 4 and 5 PB NK cells using quantitative PCR (mean ± SEM; n=2–3). (E) CB-derived CD34+ HSC were transduced with either a lentiviral vector containing a RUNX2-specific shRNA or a retroviral vector with the RUNX2-I isoform cDNA. A lentiviral vector containing scrambled shRNA and an empty retroviral vector were negative controls. Transduced eGFP+ HSC (Lin−CD34+CD45RA−) were sorted and cultured in NK cell-specific differentiation conditions. Absolute cell numbers of indicated NK cell developmental stages in RUNX2(-I) knockdown and overexpression differentiation cultures were determined using flow cytometry at the indicated time points (mean ± SEM; n=4–12). Statistical significance was determined using the paired Student's t-test. *, **, ***, and **** represent statistical significance compared to control-transduced cultures with p<0.05, p<0.01, p<0.001, and p<0.0001, respectively. ND, not detectable.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80320/elife-80320-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Flow cytometry gating strategy of natural killer (NK) cell developmental stages, including haematopoietic stem cells (HSC), stage 1, stage 2, and stage 3 progenitors and stage 4 and 5 NK cells. (B) Schematic overview of the binding sites of the RUNX2 isoform-specific primers. The reverse primer binds to a common sequence and was used for both isoforms. The forward primers dock to isoform-specific regions. The specificity of the primers was validated using gBlocks of the RUNX2-I and RUNX2-II isoforms that consisted of the 5'-UTR and the first 100–150 bp of the coding sequence. (C) Expression of RUNX2 mRNA in knockdown differentiation cultures as measured with qPCR. The developmental stages were sorted at the indicated time points (mean ± SEM; n=1–6). (D) Expression of RUNX2 protein in knockdown and overexpression differentiation cultures analysed by flow cytometry at the indicated time points (mean ± SEM; n=3–7). (E) Percentage of CD16+ cells of NK cells (stage 5) at the indicated time points in RUNX2(-I) knockdown or overexpression cultures (mean ± SEM; n=5–12). Statistical significance was determined using the paired Student's t-test. * and ** represent statistical significance compared to the control-transduced cultures with p<0.05 and p<0.01, respectively. ND, not detectable.
 
 As illustrated in Figure 1B, RUNX2 expression is under control of two promoters, that give rise to two principal isoforms. Transcription starting from the proximal promoter (P2) results in the type-I (RUNX2-I) isoform, consisting of seven exons, whereas the type-II isoform (RUNX2-II) is a product of the distal promoter (P1), located upstream of P2, and therefore has one additional exon (Mevel et al., 2019; Stock and Otto, 2005). To identify which isoform is predominantly expressed in human NK cell development, we first investigated the epigenetic landscape of the RUNX2 gene locus in human HSC and NK cells from publicly available ATAC-sequencing (ATAC-seq) and from H3K4me3 and H3K27ac ChIP-seq data (Koues et al., 2016), that respectively mark active promoters and poised or active promoters and enhancers. These data reveal that the proximal promoter region of the RUNX2-I is more accessible and active in HSCs and NK cells compared to the distal promoter of RUNX2-II (Figure 1C), suggesting that the former isoform is more likely to be expressed in NK cell development. This is confirmed by qPCR analysis with isoform-specific primers (Figure 1—figure supplement 1B) of in vitro generated human NK cell developmental stages and of human PB NK cells (ex vivo; Figure 1D).
 
@@ -56,11 +64,19 @@ In order to identify the role of RUNX2 in human NK cell development, we either i
 
 Altogether, these results demonstrate that RUNX2-I is primarily expressed throughout human NK cell differentiation. Whereas RUNX2 knockdown inhibits NK development, overexpression accelerates the generation of mature NK cells.
 
-## RUNX2 controls human NK development possibly by regulating IL-2Rβ expression
+### RUNX2 controls human NK development possibly by regulating IL-2Rβ expression
 
 To uncover the underlying mechanism of RUNX2, we first examined whether RUNX2 knockdown affected survival and/or proliferation of NK cells. Interestingly, apoptosis was unaffected, whereas proliferation was even increased compared to control NK cells (Figure 2—figure supplement 1A-C). Next, we investigated NK cell development in more detail. NK cells strongly depend on IL-15 signalling during development, which is why NK lineage commitment is achieved when stage 3 progenitors express IL-2Rβ, also known as a subunit of the IL-15 receptor (Geiger and Sun, 2016; Wang and Malarkannan, 2020). Here, we used a high-affinity IL-2Rβ antibody and stained cells after overnight IL-15-depleted culture to increase antibody binding. The results show that RUNX2-I overexpression significantly increased the frequency of IL-2Rβ+ NK-committed progenitors after day 7 of culture (Figure 2A). However, no significant difference was detected after 14 days of overexpression culture nor after 7 or 14 days of RUNX2 knockdown cultures. The premature rise of NK-committed progenitors in overexpression cultures might be caused by RUNX2 either directly targeting IL-2Rβ expression, or by affecting the generation of NK-committed progenitors independent of IL-2Rβ. Interestingly, the RUNX2-specific ChIP-seq analysis of human PB NK cells supports the former hypothesis by demonstrating that IL2RB is a direct target gene of RUNX2 (Figure 2B, Supplementary file 1). Additional evidence for the direct regulation of IL-2Rβ expression was gathered by overexpressing RUNX2-I in ALL-SIL cells that are RUNX2lowIL-2Rβlow and by silencing RUNX2 in YTS cells that are RUNX2highIL-2Rβhigh. Overexpression in ALL-SIL cells resulted in increased IL-2Rβ expression, while knockdown in YTS did not provoke a significant change (Figure 2C). Together, these findings suggest that RUNX2 probably promotes NK cell differentiation by direct induction of IL-2Rβ expression, hereby supporting NK lineage commitment.
 
-## RUNX2 promotes the acquisition of a tissue-resident phenotype in human NK cells
+![Figure 2.](https://cdn.elifesciences.org/articles/80320/elife-80320-fig2-v1.jpg)
+
+**Figure 2.:** (A) The frequency of IL-2Rβ+ cells of stage 3 progenitors was determined by flow cytometry at day 7 and day 14 of RUNX2(-I) knockdown and overexpression cultures (mean ± SEM; n=3–4). The dot plots show representative CD117 versus IL-2Rβ stainings of gated stage 3 progenitors from the indicated cultures. (B) Genome browser tracks of the IL2RB locus of RUNX2 ChIP-seq of sorted human PB NK cells and of histone (H3K27ac and H3K4me3) ChIP-seq and ATAC-seq of PB NK cells. The significant RUNX2 ChIP peaks are marked in green. (C) RUNX2 knockdown and overexpression vectors were transduced in YTS and ALL-SIL cell lines, respectively. At 4 days after transduction, expression of IL-2Rβ was examined with flow cytometry. Statistical significance is determined using the paired Student's t-test. ** represents statistical significance compared to the control-transduced cultures with p<0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80320/elife-80320-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Sorted NK cells (CD45+CD56+CD94+) at day 18 of RUNX2 knockdown cultures were put in a secondary culture for an additional 4 and 8 days, after which the viable, dying, and dead cells were analysed with flow cytomery using AnnexinV and propidium iodide (PI) staining (mean ± SEM; n=3). (B–C) Proliferation of NK cells from RUNX2 knockdown cultures was examined by either adding Ki67-specific antibodies at d21 (mean ± SEM; n=6) (B) or by labelling NK cells with CellTrace at day 17. Sorted CellTrace-positive NK cells were subjected to a 4-day secondary culture, after which CellTrace signal was measured with flow cytometry (C). Statistical significance was determined using the paired Student's t-test. * represents statistical significance compared to the control-transduced cultures with p<0.05.
+
+### RUNX2 promotes the acquisition of a tissue-resident phenotype in human NK cells
 
 To explore the RUNX2-mediated molecular mechanism in more depth, the RUNX2-specific ChIP-seq results and the results of RNA-sequencing of sorted RUNX2(-I) knockdown or overexpressing NK cells were analysed in parallel (Supplementary files 1–4). In the RUNX2 ChIP-seq, a total of 12,121 filtered peaks were identified of which the majority was located in the promoter region of target genes (Figure 3A, Supplementary file 1). The RUNX motif was most highly enriched in the motif analysis, which further validated the experiment (Figure 3B). In addition, ETS1 and albeit with lower significance, TBX21 motifs were found with high frequency (Figure 3B), suggesting that RUNX2 is able to control gene expression by forming a transcriptional complex with these factors. Overlapping the ChIP-seq and RNA-seq results reveals that most of the differentially expressed genes were direct transcriptional targets of RUNX2 (Figure 3C, Supplementary file 4), further highlighting its importance as a transcriptional regulator.
 
@@ -70,15 +86,39 @@ To explore the RUNX2-mediated molecular mechanism in more depth, the RUNX2-speci
 
 Upon closer inspection of the transcriptome analysis, a considerable number of genes, associated with NK cell tissue residency and homing were differentially expressed (Figure 3D, Supplementary files 2 and 3). trNK cells express specific proteins that enable them to be retained in organs, while proteins that allow NK to (re)circulate are downregulated. Several studies have already used RNA-seq analysis to identify NK cell resident- and circulatory-specific markers in the liver (Cuff et al., 2016) and bone marrow (Melsen et al., 2018). We used these gene sets in a Gene Set Enrichment Analysis (GSEA) to confirm the key role of RUNX2 in NK cell tissue residency. As indicated in Figure 3E (top plots; Supplementary file 5), tissue-resident genes of both liver and bone marrow were highly enriched in RUNX2-I-overexpressing NK cells, while circulatory NK-specific genes, here presented as trNK-downregulated genes, were mainly expressed in control NK cells. Strikingly, the opposite was observed in knockdown cultures (Figure 3E, bottom plots, Supplementary file 5). Additionally, the public RNA-seq datasets show that RUNX2 transcript levels of ex vivo liver as well as bone marrow trNK are increased compared to their circulatory counterparts (fold changes are 25 and 13, respectively; Cuff et al., 2016; Melsen et al., 2018). This further supports our hypothesis that RUNX2 plays an important role in the development of human trNK cells. To confirm these results, we analysed homing factors by flow cytometry. While knockdown led to decreased expression of the tissue residency-specific markers CD69 and CD49a, circulatory markers such as CX3CR1, CCR7, CD62L, and S1PR1 were increased. On the contrary, forced expression of RUNX2-I generated NK cells with higher expression levels of CD69, CD49a, and CXCR4, and lower expression of CD49e and the above-mentioned circulation-specific markers, except for S1PR1 (Figure 4A). In addition, EOMES and T-BET expression can be used to distinguish resident (EOMEShighT-BETlow) and circulatory (EOMESlowT-BEThigh) NK cells in human (Hashemi and Malarkannan, 2020; Collins et al., 2017). Even though unaltered by knockdown, the frequency of EOMEShighT-BETlow and EOMESlowT-BEThigh NK cells in overexpression cultures was increased and decreased, respectively (Figure 4B). We also performed flow cytometric analysis of NK cell receptors, reported to be differentially expressed on trNK cells. Whereas RUNX2 knockdown only resulted in the reduced expression of NKp44, overexpression increased the frequency of NKG2C+ NK cells and the expression of NKp46 and NKG2A/CD94 but decreased the frequency of KIR+ NK cells (Figure 4C). Most genes encoding homing markers and NK cell receptors were also direct RUNX2 targets, as presented by ChIP-seq and ATAC-seq analysis in Figure 4—figure supplement 1A and B. In summary, these findings highlight a key role for RUNX2 in the acquisition of a tissue-resident phenotype in differentiating NK cells.
 
-## RUNX2 plays no role in cytotoxicity but inhibits cytokine and effector molecule production
+![Figure 4.](https://cdn.elifesciences.org/articles/80320/elife-80320-fig4-v1.jpg)
+
+**Figure 4.:** (A) Expression of tissue-resident (CD69, CD49a, CXCR4) and circulation-specific factors (CD49e, CX3CR1, CCR7, CD62L, S1PR1) in NK cells of RUNX2(-I) knockdown and overexpression cultures, was checked with flow cytometry (mean ± SEM; n=4). Histograms display expression of markers in representative donors. (B) Percentage of NK cells with a circulatory (EOMESlowT-BEThigh) or tissue-resident (EOMEShighT-BETlow) phenotype, determined by flow cytometry (mean ± SEM; n=4). Dot plots represent typical samples. (C) The expression of NK cell receptors NKp44, NKp46, NKG2C, NKG2A, CD94, KIR2DL1, KIR2DS1, KIR2DL2, KIR2DL3, KIR3DL1, KIR3DS1, and KIR2DS4 in gated NK cells from RUNX2(-I) knockdown and overexpression cultures was measured with flow cytometry (mean ± SEM; n=3–9). Statistical significance was determined using the paired Student's t-test. *, **, and *** represent statistical significance compared to control-transduced cultures with p<0.05, p<0.01, and p<0.001, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80320/elife-80320-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Tracks of gene loci of RUNX2 ChIP-seq, histone (H3K27ac and H3K4me3) ChIP-seq, and ATAC-seq of PB NK cells are presented for gene loci of tissue-resident (top panel) markers and circulatory associated markers (bottom panel). (B) Tracks of gene loci of NK cell receptors NCR2/NKp44, NCR1/NKp46, KLRC2/NKG2C, KIR2DS4, KLRC1/NKG2A, KLRD1/CD94, KIR2DL3, KIR3DL1, and KIR2DL4 are depicted. (A–B) Significant RUNX2 ChIP peaks are marked in green and those that also contain a RUNX2 motif are highlighted in pink.
+
+### RUNX2 plays no role in cytotoxicity but inhibits cytokine and effector molecule production
 
 The main functions of NK cells are killing malignant or virus-infected cells and shaping the local immune response by production of cytokines like IFN-γ and TNF-α (Abel et al., 2018. Bruno et al., 2014). Chromium release assays showed that killing by sorted NK cells from knockdown and overexpression cultures was not affected, despite RUNX2-silenced NK cells displaying decreased degranulation when co-incubated with K562 cells (Figure 5A–B). Whereas knockdown significantly increased granzyme B and perforin expression, overexpression resulted in a reduction or a negative trend in the expression of these effector molecules (Figure 5C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/80320/elife-80320-fig5-v1.jpg)
+
+**Figure 5.:** (A–C) Different functional aspects of NK cells of RUNX2(-I) knockdown and overexpression cultures were examined. (A) Sorted NK cells were incubated with K562 target cells in a (Bruno et al., 2014) chromium release killing assay at the indicated effector:target ratios for 4 hr, and the percentage of specific lysis was determined (mean ± SEM; n=6–7). (B) Percentage CD107a+ cells of NK cells as detected by flow cytometry after 2-hr co-culture with K562 cells (mean ± SEM; n=6–8). (C) Expression of cytotoxic effector molecules granzyme B (GZMB) and perforin (PRF). The mean fluorescence intensity was determined using flow cytometry (mean ± SEM; n=10). Histograms present expression of markers in representative donors. (D) Cells were stimulated in bulk with either phorbol myristate acetate (PMA)/ionomycin (6 hr), IL-12/IL-18, or IL-12/IL18/IL-15 (24 hr). IFN-γ and TNF-α production were analysed with flow cytometry (mean ± SEM; n=4–11). (E) Sorted NK cells were stimulated for 24 hr with either PMA/ionomycin, IL-12/IL-18, or IL-12/IL-18/IL-15. The supernatant was collected and the secretion of IFN-γ was analysed with ELISA (mean ± SEM; n=6). Statistical significance was determined using the paired Student's t-test. *, **, and *** represent statistical significance compared to control-transduced cultures with p<0.05, p<0.01, and p<0.001, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80320/elife-80320-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Tracks of gene loci of RUNX2 ChIP-seq, histone (H3K27ac and H3K4me3) ChIP-seq, and ATAC-seq of PB NK cells are presented for GZMB (granzyme B), PRF1 (perforin), IFNG (IFN-γ), and TNFA (TNF-α). Significant RUNX2- ChIP peaks are marked in green, and those that also contain a RUNX motif are highlighted in pink.
+
 To assess their cytokine response, cultured NK cells were stimulated with either phorbol myristate acetate (PMA)/ionomycin, or with IL-12/IL-18 in the presence or absence of IL-15. The production and/or secretion of IFN-γ and TNF-α was significantly increased or exhibited a positive trend in knockdown cultures. Inversely, overexpression resulted in the exact opposite, as shown in Figure 5D and E. These results imply that RUNX2 has a negative impact on the expression of cytotoxic effector molecules and cytokines. Additionally, the RUNX2-specific ChIP-seq analysis revealed that TNF-α and effector molecules were directly regulated by RUNX2 (Figure 5—figure supplement 1).
 
-## In vivo evidence for the role of RUNX2 in human NK cell tissue residency
+### In vivo evidence for the role of RUNX2 in human NK cell tissue residency
 
 To determine whether RUNX2 plays a role in human NK cell development and tissue residency in vivo, we generated a humanised mouse model by intravenously injecting equal numbers of bulk transduced UCB-derived haematopoietic progenitor cells (HPC) into lethally irradiated NSG-huIL-15 mice (Figure 6A and Figure 6—figure supplement 1A). The HPC were transduced with either control or RUNX2 shRNA lentivirus. After 6–7 weeks, we analysed the absolute numbers of NK cells in the lungs, liver, spleen, bone marrow, and intestinal lamina propria (LPL). NK cell numbers were drastically reduced in examined organs mice injected with RUNX2-silenced HPC compared to those that were injected with control HPC (Figure 6B). These findings show that RUNX2 is also required for human NK cell development in vivo. Next, the frequency of tissue-resident (CD69+CD49e−) and circulating (CD69−CD49e+) NK cells was examined. As shown in Figure 6C, the frequency of trNK cells is significantly reduced in the bone marrow and LPL fraction, while the percentage of circNK cells is increased (Figure 6—figure supplement 1B). This shows that in these organs, RUNX2 is involved in human NK cell tissue residency.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/80320/elife-80320-fig6-v1.jpg)
+
+**Figure 6.:** (A–C) CD34+ HPC were isolated from fresh cord blood (CB) and cultured in preculture medium for 16 hr before lentiviral transduction with either control or RUNX2 shRNA virus. Approximately 4 hr later, the control- or RUNX2 shRNA-transduced HPC were intravenously injected in NSG-huIL-15 mice, which were lethally irradiated. After 6–7 weeks, the presence of eGFP+ human NK cells (CD45+CD56+CD94+) (B) and the frequency of tissue-resident (CD69+CD49e−) and (C) circulating (CD69−CD49e+) NK cells were determined using flow cytometry (mean ± SEM; n=7). Statistical significance was determined using the unpaired Student's t-test. *, **, ***, and **** represent statistical significance compared to control mice with p<0.05, p<0.01, p<0.001, and p<0.0001, respectively. BM, bone marrow; HPC, haematopoietic progenitor cells; i.v., intravenous; LPL, lamina propria lymphocytes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80320/elife-80320-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) After isolating CD34+ haematopoietic progenitor cells (HPC) from fresh cord blood (CB), the cells were precultured for 16 hr, after which they were transduced with either control (top plots) or RUNX2 shRNA (bottom plots) lentivirus. The percentage of eGFP+CD34+ HPC was determined 48 hr later and is indicated. (B) At 6–7 weeks post-injection of HPC, mice (NSG-huIL-15) were sacrificed and the frequency of tissue-resident (CD69+CD49e−) and circulating (CD69−CD49e+) eGFP+ NK cells (CD45+CD56+CD94+) in lung, liver, spleen, bone marrow (BM), and intestinal lamina propria (LPL) was determined. The FACS plots of two representative mice are depicted (control top row, black; RUNX2 shRNA bottom row, red).
 
 ## Discussion
 
@@ -102,68 +142,512 @@ In conclusion, we have shown that predominantly the RUNX2-I isoform is expressed
 
 ## Materials and methods
 
-## Cell lines
+### Cell lines
 
 EL08-1D2 cells were kindly provided by E. Dzierzak (Erasmus University MC, Rotterdam, The Netherlands) and maintained in 50% Myelocult M5300 medium (Stem Cell Technologies, Grenoble, France), 35% α-MEM, 15% fetal calf serum (FCS; Biowest, Nuaillé, France), penicillin (100 U/mL), streptomycin (100 µg/mL), glutamine (2 mM; all from Life Technologies), and 10 µM β-mercaptoethanol on gelatine-coated (0.1%) plates at 33°C, 5% CO2. For inactivation, EL08-1D2 cells were exposed to mitomycin C (10 µg/mL; Sigma-Aldrich, St. Gallen, Switzerland) for 3 hr. After extensive rinsing, the cells were harvested using trypsin-EDTA (Lonza, Bazel, Switzerland). EL08-1D2 cells were plated at a density of 50,000 cells/24-well, coated with 0.1% gelatin at least 24 hr before seeding the HSC or cultured NK cells. K562 cells (ATCC, Manassas, VA) were cultured at 37°C, 5% CO2 in complete Iscove’s Modified Dulbecco’s Medium (IMDM, Life Technologies) supplemented with 10% FCS, penicillin (100 U/mL), streptomycin (100 µg/mL), and glutamine (2 mM; Life Technologies). 293T cells (ATCC) were maintained at 37°C, 7% CO2 in complete DMEM Glutamax supplemented with 10% FCS, penicillin (100 U/mL), streptomycin (100 µg/mL), and glutamine (2 mM). Phoenix-A cells (ATCC) were cultured at 37°C 7% CO2 in complete IMDM supplemented with 10% FCS, penicillin (100 U/mL), streptomycin (100 µg/mL), and glutamine (2 mM). ALL-SIL cells (DSMZ, Braunschweig, Germany) were cultured at 37°C 5% CO2 in complete RPMI medium supplemented with 20% FCS, penicillin (100 U/mL), streptomycin (100 µg/mL), and glutamine (2 mM; Life Technologies). YTS cells (ATCC) were maintained at 37°C 7% CO2 in complete IMDM medium supplemented with 15% FCS, penicillin (100 U/mL), streptomycin (100 µg/mL), glutamine (2 mM), HEPES (0.01 M; all from Life Technologies), and β-mercapthoethanol (50 µM; Sigma-Aldrich). The identities of the cell lines bought from ATCC or DSMZ were authenticated by STR profiling. The identity of the EL08-1D2 cells was verified by the donating research group. In addition, all cell lines tested negative for mycoplasma contamination.
 
-## Tissue collection and cell isolation
+### Tissue collection and cell isolation
 
 All tissues were collected with approval by the Ethics Committee of the Faculty of Medicine and Health Sciences of Ghent University (ref#2017/0227, Ghent, Belgium). Informed consents were received according to the Declaration of Helsinki. Human bone marrow was obtained by bone marrow puncture. Thereafter, CD34+CD19−CD56− cells were sorted and used for analysis. Human tonsils were retrieved fresh from surgery and processed to single-cell suspensions. CD3−CD19− mononuclear cells were enriched by Lymphoprep (Stem Cell Technologies, Grenoble, France) density gradient centrifugation followed by magnetic-activated cell sorting using biotin MicroBead kit (Miltenyi Biotec, Leiden, The Netherlands), according to manufacturer’s guidelines. Human umbilical cord blood (UCB) and PB were obtained from the Blood Bank of Ghent University. Mononuclear cells were isolated using Lymphoprep density gradient centrifugation. Enrichment of UCB-derived CD34+ precursors and PB-derived NK cells was accomplished by magnetic-activated cell sorting using the CD34 MicroBead kit and the NK cell isolation kit (Miltenyi Biotec), respectively.
 
-## Viral constructs
+### Viral constructs
 
 The RUNX2-specific shRNA (5’-CTACCTATCACAGAGCAATT-3’) was subcloned in the lentiviral vector (pLKO.1) containing eGFP as reporter gene. The scrambled shRNA pLKO.1 was used as a negative control. Lentivirus was generated by transfection in the 293T cell line using JetPEI (Polyplus transfection, Illkirch, France), as specified by the manufacturer. Viral supernatant was harvested 48 and 72 hr after transfection and stored at –80°C. RUNX2 has two principal isoforms, namely type-I and type-II RUNX2. cDNA of Type-I RUNX2 was subcloned in the LZRS-internal ribosome entry site (IRES)-eGFP retroviral vector, containing the puromycin resistance gene. The empty LZRS-IRES-eGFP vector was used as negative control. Retrovirus was produced by transfection in the Phoenix-A-based amphotropic packaging cell line using calcium-phosphate precipitation (Thermo Fisher, Waltham, MA). Viral supernatant was collected 2, 6 and 14 days after transfection and stored at –80°C.
 
-## UCB HSC-based NK cell differentiation cultures
+### UCB HSC-based NK cell differentiation cultures
 
 After 48 hr of culture in preculture medium (complete IMDM medium supplemented with 10% FCS, stem cell factor [SCF; 100 ng/mL, Peprotech], FMS-like tyrosine kinase-3 ligand [FLT3-L; 100 ng/mL, R&D systems], and thrombopoietin [TPO; 20 ng/mL, Peprotech]), CB-CD34+ precursors were transduced with lenti- (RUNX2 shRNA or control) or retrovirus (Type-I RUNX2 overexpression or control) by spinning at 950 g for 90 min at 32°C. To enhance transduction efficiency, RetroNectin (12 µg/mL, Takara Bio, Saint-Germain-en-Laye, France) was coated and the previously mentioned cytokines were added in combination with polybrene (8 µg/mL, Sigma-Aldrich). The latter was only used in case of lentiviral transduction, and it was removed after 24 hr by replacing medium and cytokines. CD34+CD45RA−Lin (CD3, CD14, CD56, CD19)− eGFP+ HSC were sorted 48 hr after transduction using the FACSAria III cell sorter (BD Biosciences, San Jose, CA) and cultured on a monolayer of mitomycin C-inactivated (Sigma-Aldrich) EL08-1D2 cells in NK coculture (NKCC) medium, which consists of DMEM (Life Technologies) and Ham’s F12 medium (2:1 ratio), supplemented with penicillin (100 U/mL), streptomycin (100 µg/mL), glutamine (2 mM), sodium pyruvate (10 mM; Life Technologies), 20% heat-inactivated human AB serum (Biowest, Nuaillé, France), β-mercapthoethanol (24 µM), ascorbic acid (20 µg/mL), and sodium selenite (50 ng/mL; all from Sigma-Aldrich). To induce NK cell differentiation, IL-3 (5 ng/mL), IL-7 (20 ng/mL), IL-15 (10 ng/mL; all from R&D systems), SCF (20 ng/mL), and FLT3-L (10 ng/mL) were also included. On day 7, the volume of the well was doubled with medium containing the previously mentioned cytokines with the exception of IL-3. On day 14, cells were harvested and transferred to new inactivated EL08-1D2 feeder cells in fresh medium enriched with cytokines.
 
-## Flow cytometry
+### Flow cytometry
 
 Samples for analysis by flow cytometry and for cell sorting were run on the LSRII or FACSARIAII (BD Biosciences, San Jose) flow cytometer. FlowJo_V10 software (Ashland, OR) was used for analysis. The antibodies and kits used according to the manufacturer’s guidelines are listed in Table 1.
 
-## qPCR analysis
+**Table 1.**
+ Antibodies and kits used in flow cytometric analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">ANTIBODIES</th>
+    </tr>
+    <tr>
+      <th>Marker</th>
+      <th>Alternative</th>
+      <th>Fluorochrome</th>
+      <th>Clone</th>
+      <th>Supplier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fc blocking agent (human)</td>
+      <td>/</td>
+      <td>/</td>
+      <td>/</td>
+      <td>Miltenyi Biotec, Leiden, The Netherlands</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse FcγII/III</td>
+      <td>/</td>
+      <td>Unconjugated</td>
+      <td>2.4G2</td>
+      <td>Kindly provided by Dr. J. Unkeless, Mount Sinai School of Medicine, NY</td>
+    </tr>
+    <tr>
+      <td>CD34</td>
+      <td>CD34</td>
+      <td>Phycoerythrin (PE), Pacific Blue (PB)</td>
+      <td>AC136</td>
+      <td>Miltenyi Biotec, Leiden, The Netherlands</td>
+    </tr>
+    <tr>
+      <td>CD45RA</td>
+      <td>CD45RA</td>
+      <td>Allophycocyanin (APC)</td>
+      <td>HI100</td>
+      <td>Biolegend, San Diego, CA</td>
+    </tr>
+    <tr>
+      <td>CD45</td>
+      <td>CD45</td>
+      <td>Allophycocyanin/Fire750 (APC-Fire)</td>
+      <td>2D1</td>
+      <td>Biolegend, San Diego, CA</td>
+    </tr>
+    <tr>
+      <td>CD117</td>
+      <td>KIT</td>
+      <td>Phycoerythrin-Cyanin7 (PECy7)</td>
+      <td>104D2</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>CD94</td>
+      <td>KLRD1</td>
+      <td>Peridinin Chlorophyll Protein-Cyanin5.5 (PerCP-Cy5,5)</td>
+      <td>DX22</td>
+      <td>Biolegend, San Diego, CA</td>
+    </tr>
+    <tr>
+      <td>CD56</td>
+      <td>NCAM1</td>
+      <td>VioBlue (VB), Allophycocyanin (APC)</td>
+      <td>5.1H11</td>
+      <td>Biolegend, San Diego, CA</td>
+    </tr>
+    <tr>
+      <td>CD16</td>
+      <td>FcγRIIIA</td>
+      <td>Phycoerythrin (PE), Allophycocyanin (APC)</td>
+      <td>B73.1</td>
+      <td>Biolegend, San Diego, CA</td>
+    </tr>
+    <tr>
+      <td>CD3</td>
+      <td>CD3</td>
+      <td>Allophycocyanin (APC)</td>
+      <td>SK7</td>
+      <td>BD Biosciences, San Jose, CA</td>
+    </tr>
+    <tr>
+      <td>CD14</td>
+      <td>CD14</td>
+      <td>Allophycocyanin (APC)</td>
+      <td>REA599</td>
+      <td>Miltenyi Biotec, Leiden, The Netherlands</td>
+    </tr>
+    <tr>
+      <td>HLA-DR</td>
+      <td>HLA-DR</td>
+      <td>eFluor780</td>
+      <td>LN3</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>NKp44</td>
+      <td>CD336;NCR2</td>
+      <td>eFluor450, Allophycocyanin (APC)</td>
+      <td>44.189</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>CD19</td>
+      <td>CD19</td>
+      <td>Allophycocyanin (APC)</td>
+      <td>SJ25C1</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>CD122</td>
+      <td>IL2RB</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>MIKβ3</td>
+      <td>BD Biosciences, San Jose, CA</td>
+    </tr>
+    <tr>
+      <td>EOMES</td>
+      <td>EOMES</td>
+      <td>Phycoerythrin (PE), Allophycocyanin (APC)</td>
+      <td>WD1928</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>T-BET</td>
+      <td>T-BET</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>4B10</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>HELIOS</td>
+      <td>IKZF2</td>
+      <td>Allophycocyanin (APC)</td>
+      <td>22F6</td>
+      <td>Biolegend, San Diego, CA</td>
+    </tr>
+    <tr>
+      <td>PLZF</td>
+      <td>ZBTB16</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>R17-809</td>
+      <td>BD Biosciences, San Jose, CA</td>
+    </tr>
+    <tr>
+      <td>CD107a</td>
+      <td>LAMP1</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>H4A3</td>
+      <td>BD Biosciences, San Jose, CA</td>
+    </tr>
+    <tr>
+      <td>Granzyme B</td>
+      <td>Granzyme B</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>GB11</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>Perforin</td>
+      <td>Perforin</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>dG9</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>IFN-γ</td>
+      <td>IFN-γ</td>
+      <td>eFluor 660</td>
+      <td>4 S.B3</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>TNF-α</td>
+      <td>TNF-α</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>Mab11</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>RUNX1</td>
+      <td>AML1, CBFA2</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>RXDMC</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>RUNX2</td>
+      <td>AML3, CBFA1</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>D1L7F</td>
+      <td>Cell Signalling Technologies, Leiden, The Netherlands</td>
+    </tr>
+    <tr>
+      <td>RUNX3</td>
+      <td>AML2, CBFA3</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>R3-5G4</td>
+      <td>BD Biosciences, San Jose, CA</td>
+    </tr>
+    <tr>
+      <td>NKp46</td>
+      <td>CD335;NCR1</td>
+      <td>Phycoerythrin-Cyanin7 (PECy7)</td>
+      <td>9E2</td>
+      <td>Biolegend, San Diego, CA</td>
+    </tr>
+    <tr>
+      <td>NKG2C</td>
+      <td>CD159c</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>FAB138P</td>
+      <td>R&amp;D systems, Minneapolis MN</td>
+    </tr>
+    <tr>
+      <td>NKG2A</td>
+      <td>CD159a</td>
+      <td>Allophycocyanin (APC)</td>
+      <td>REA110</td>
+      <td>Miltenyi Biotec, Leiden, The Netherlands</td>
+    </tr>
+    <tr>
+      <td>CD158a,h</td>
+      <td>KIR2DL1/KIR2DS1</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>3B6.B</td>
+      <td>Beckman Coulter, Brea, CA</td>
+    </tr>
+    <tr>
+      <td>CD158b1/b2</td>
+      <td>KIR2DL2/KIR2DL3</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>GL183</td>
+      <td>Beckman Coulter, Brea, CA</td>
+    </tr>
+    <tr>
+      <td>CD158i</td>
+      <td>KIR4DS1</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>FES172</td>
+      <td>Beckman Coulter, Brea, CA</td>
+    </tr>
+    <tr>
+      <td>CD158e1/e2</td>
+      <td>KIR3DL1/KIR3DS1</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>Z27.3.7</td>
+      <td>Beckman Coulter, Brea, CA</td>
+    </tr>
+    <tr>
+      <td>CD69</td>
+      <td>CD69</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>FN50</td>
+      <td>Biolegend, San Diego, CA</td>
+    </tr>
+    <tr>
+      <td>CD49a</td>
+      <td>ITGA1</td>
+      <td>Alexa Fluor 647</td>
+      <td>TS2/7</td>
+      <td>Biolegend, San Diego, CA</td>
+    </tr>
+    <tr>
+      <td>CD49e</td>
+      <td>ITGA5</td>
+      <td>Allophycocyanin (APC)</td>
+      <td>IlA1</td>
+      <td>BD Biosciences, San Jose, CA</td>
+    </tr>
+    <tr>
+      <td>CX3CR1</td>
+      <td>V28, GPR13</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>2A9-1</td>
+      <td>Biolegend, San Diego, CA</td>
+    </tr>
+    <tr>
+      <td>CCR7</td>
+      <td>CD197</td>
+      <td>Allophycocyanin/Fire 750 (APC-Fire)</td>
+      <td>G043H7</td>
+      <td>Biolegend, San Diego, CA</td>
+    </tr>
+    <tr>
+      <td>CD62L</td>
+      <td>L-selectin</td>
+      <td>Allophycocyanin (APC)</td>
+      <td>DREG-56</td>
+      <td>Biolegend, San Diego, CA</td>
+    </tr>
+    <tr>
+      <td>S1PR1</td>
+      <td>CD363</td>
+      <td>eFluor660</td>
+      <td>SW4GYPP</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>CXCR4</td>
+      <td>CD184</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>12G5</td>
+      <td>BD Biosciences, San Jose, CA</td>
+    </tr>
+    <tr>
+      <td>Ki67</td>
+      <td>Ki67</td>
+      <td>Phycoerythrin (PE)</td>
+      <td>SolA15</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>Streptavidin</td>
+      <td>Streptavidin</td>
+      <td>Allophycocyanin (APC)</td>
+      <td>/</td>
+      <td>BD Biosciences, San Jose, CA</td>
+    </tr>
+    <tr>
+      <td>Fixable viability dye</td>
+      <td>Fixable viability dye</td>
+      <td>eFluor506</td>
+      <td>/</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td colspan="4">KITS</td>
+    </tr>
+    <tr>
+      <td>AnnexinV apoptosis detection kit</td>
+      <td>Allophycocyanin (APC)</td>
+      <td>/</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+    <tr>
+      <td>FoxP3/Transcription Factor Staining Buffer set</td>
+      <td>/</td>
+      <td>/</td>
+      <td>Thermo Fischer Scientific, Waltham, MA</td>
+    </tr>
+  </tbody>
+</table>
+
+### qPCR analysis
 
 Cells were lysed in RLT PLUS buffer and stored at –80°C until RNA isolation with the RNeasy Micro Kit (Qiagen, Hilden, Germany). cDNA was generated using the iScript Advanced cDNA generation kit (Bio-Rad, Hercules, CA) according to the manufacturer’s guidelines. Quantitative PCR was performed in duplicate with the LightCycler 480 SYBR Green I Master mix (Roche, Bazel, Switzerland) on the LightCycler 480 real-time PCR system (Roche). Relative gene expression was determined using GAPDH and either TBP or actin-β as housekeeping genes. Primer sequences are listed in Table 2. RUNX2 isoform-specific primers were validated with gBlocks of RUNX2-I and RUNX2-II principal isoforms, depicted in Table 3.
 
-## CellTrace experiments
+**Table 2.**
+ qPCR primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Sense</th>
+      <th>Sequence (5’ → 3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">RUNX2-I</td>
+      <td>Sense</td>
+      <td>ATGCGTATTCCCGTAGATCC</td>
+    </tr>
+    <tr>
+      <td>Antisense</td>
+      <td>GGGCTCACGTCGCTCATTT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">RUNX2-II</td>
+      <td>Sense</td>
+      <td>AGGAGGGACTATGGCATCAAAC</td>
+    </tr>
+    <tr>
+      <td>Antisense</td>
+      <td>GGGCTCACGTCGCTCATTT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">RUNX2 (flanking shRNA binding site)</td>
+      <td>Sense</td>
+      <td>CACCACTCACTACCACACCT</td>
+    </tr>
+    <tr>
+      <td>Antisense</td>
+      <td>AGCATTCTGGAAGGAGACCG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">GAPDH</td>
+      <td>Sense</td>
+      <td>TCCTCTGACTTCAACAGCGACA</td>
+    </tr>
+    <tr>
+      <td>Antisense</td>
+      <td>GTGGTCGTTGAGGGCAATG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TBP</td>
+      <td>Sense</td>
+      <td>CACGAACCACGGCACTGATT</td>
+    </tr>
+    <tr>
+      <td>Antisense</td>
+      <td>TTTTCTTGCTGCCAGTCTGGAC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ACTB</td>
+      <td>Sense</td>
+      <td>ATGACCCAGATCATGTTTGAGA</td>
+    </tr>
+    <tr>
+      <td>Antisense</td>
+      <td>AGAGGCGTACAGGGATAGCA</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ gBlock sequences of RUNX2 isoforms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>gBlock</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RUNX2-I</td>
+      <td>GTCTCGCCTTCACCCCCCCAATTTCCTCCTTGCCCCTCATTTCCACCCTCCTCCCCCTCCCCCGGCCACTTCGCTAACTTGTGGCTGTTGTGATGCGTATTCCCGTAGATCCGAGCACCAGCCGGCGCTTCAGCCCCCCCTCCAGCAGCCTGCAGCCCGGCAAAATGAGCGACGTGAGCCCGGTGGTGGCTGCG</td>
+    </tr>
+    <tr>
+      <td>RUNX2-II</td>
+      <td>CAAACTTTCTCCAGGAGGACAGCAAGAAGTCTCTGGTTTTTAAATGGTTAATCTCCGCAGGTCACTACCAGCCACCGAGACCAACAGAGTCAGTGAGTGCTCTCTAACCACAGTCTATGCAGTAATAGTAGGTCCTTCAAATATTTGCTCATTCTCTTTTTGTTTTGTTTCTTTGCTTTTCACATGTTACCAGCTACATAATTTCTTGACAGAAAAAAATAAATATAAAGTCTATGTACTCCAGGCATACTGTAAAACTAAAACAAGGTTTGGGTATGGTTTGTATTTTCAGTTTAAGGCTGCAAGCAGTATTTACAACAGAGGGTACAAGTTCTATCTGAAAAAAAAAGGAGGGACTATGGCATCAAACAGCCTCTTCAGCACAGTGACACCATGTCAGCAAAACTTCTTTTGGGATCCGAGCACCAGCCGGCGCTTCAGCCCCCCCTCCAGCAGCCTGCAGCCCGGCAAAATGAGCGACGTGAGCCCGGTGGTGGCTG</td>
+    </tr>
+  </tbody>
+</table>
+
+### CellTrace experiments
 
 On day 17 of NK differentiation culture, cells were labelled using the CellTrace Violet Cell Proliferation Kit, for flow cytometry (Life Technologies, Waltham, MA), according to the manufacturer’s guidelines. Thereafter, eGFP+ CellTrace+ NK cells (CD45+CD94+CD56+) were sorted and recultured in NKCC medium with the previously mentioned cytokines. After 4 days, cells were stained for NK-specific markers, and proliferation was examined by flow cytometry.
 
-## ChIP-sequencing
+### ChIP-sequencing
 
 Viable human NK cells (PI−CD45+CD56+CD3−CD19−) were isolated from PB. The cells were then lysed by snap freezing. NK cells were fixed with 1% formaldehyde for 15 min and quenched with 0.125 M glycine. Chromatin was isolated by addition of lysis buffer, followed by disruption with a Dounce homogeniser. Lysates were sonicated on a microtip sonicator and the DNA sheared to an average length of 300–500 bp. Control genomic DNA (further referred to as input DNA) was prepared by treating aliquots of chromatin with RNase, proteinase K, and heat for de-crosslinking, followed by ethanol precipitation. Pellets were resuspended and the resulting DNA was quantified on a NanoDrop spectrophotometer. Extrapolation to the original chromatin volume allowed quantitation of the total chromatin yield. An aliquot of chromatin (30 µg) was precleared with protein A agarose beads. Genomic DNA regions of interest were isolated using 10 µl of RUNX2 antibody (Cell Signalling Technologies, clone D1H7). Complexes were washed, eluted from the beads with SDS buffer, and subjected to RNase and proteinase K treatment. Crosslinks were reversed by incubation overnight at 65°C, and ChIP DNA was purified by phenol-chloroform extraction and ethanol precipitation. Quantitative PCR reactions were carried out in triplicate on specific genomic regions using SYBR Green Supermix (Bio-Rad, Hercules, CA). The resulting signals were normalised for primer efficiency by carrying out qPCR for each primer pair using input DNA. Illumina sequencing libraries were prepared from the ChIP and input DNAs by the standard consecutive enzymatic steps of end-polishing, dA-addition, and adaptor ligation. After a final PCR amplification step, the resulting DNA libraries were quantified and sequenced on Illumina’s NextSeq 500 (75 nt reads, single end). QC on fastq files was performed with FastQCv0.11.7 (Andrews, 2010). Fastq files were aligned to hg38 using Burrows-Wheeler Aligner (BWA). Peak calling was done with MACS2 v2.1.0. The RUNX2 ChIP-seq peaks were analysed in IGV along with publicly available histone (H3K27ac and H3K4Me3) ChIP-seq and ATAC-seq data of human peripheral NK cells (GSE107147 and GSE77299; Koues et al., 2016). For H3K4Me3 and H3K27Ac, peaks were called from bedGraph files with the MACS2 peak calling software. First, MACS2 bdgcmp was used to compare ChIP and input files. Thereafter, peaks were called using MACS2 bdgpeakcall. Options for MACS2 bdgpeakcall were set to -c 2, -g 100 and -l 100 for H3K4Me3 or 150 for H3K27Ac. RUNX2 motifs in promoters and enhancers were identified using MACS2 and HOMER software (Heinz et al., 2010; Zhang et al., 2008).
 
-## Library preparation, RNA-sequencing, and analysis
+### Library preparation, RNA-sequencing, and analysis
 
 Human NK cells (eGFP+CD45+CD94+CD56+) of four to five replicates were sorted from RUNX2-I overexpression (d14) or RUNX2 knockdown (d21) cultures, or their respective controls. RNA was extracted from sorted NK cells using the RNeasy Micro Kit (Qiagen, Hilden, Germany). Concentration and quality of the RNA were checked using the ‘Quant-it ribogreen RNA assay’ (Life Technologies, Grand Island, NY) and the RNA 6000 nano chip (Aligent Technologies, Santa Clara, CA), respectively. The QuantSeq 3’ mRNA-Seq Library Prep Kit (Lexogen, Vienna, Austria) was used to perform an Illumina sequencing library preparation on 22 and 42 ng of RNA of NK cells from RUNX2 knockdown and RUNX2-I overexpression cultures, respectively. These libraries were quantified by qPCR, as reported by Illumina’s protocol ‘Sequencing Library qPCR Quantification protocol guide’, version February 2011. To control the library’s size distribution and quality, a high-sensitivity DNA chip (Agilent Technologies, Santa Clara, CA) was used, after which sequencing was performed on a high throughput Illumina NextSeq 500 flow cell generating 75 bp single reads. An average of 8.0 × 106 ± 0.2 × 106 reads and 5.0 × 106 ± 0.9 × 106 reads were generated per sample of RUNX2 knockdown and RUNX2-I overexpression cultures, respectively. Quality control was performed on fastq files with FasQCv0.11.7 (Andrews, 2010). Fastq files were aligned to hg38 using STAR2.42 and genes (Gencode v25) were quantified on the fly. Differential expression analysis was done in R with DESeq2 (Love et al., 2014) with Wald test. Genes with an FDR <0.1 were considered significantly differential.
 
-## GSEA analysis
+### GSEA analysis
 
 GSEA was performed using GSEA software tool v4.1.0 of the Broad Institute (Mootha et al., 2003; Subramanian et al., 2005). The ‘GSEAPreranked’ module was run using standard parameters and 1000 permutations. Datasets contained differentially expressed genes of NK cells from either RUNX2 knockdown (d21) or RUNX2-I overexpression (d14) cultures versus their respective controls. The liver gene set (GSE87392) comprised the top 500 significantly up- or downregulated genes of resident (CD69+CXCR6+EOMEShigh) versus recirculating (CD69−CXCR6−EOMESlow) NK cells (Cuff et al., 2016). The bone marrow gene set (GSE116178) consisted of all significantly up- or downregulated genes of resident CD56bright (CD69+CXCR6+) versus recirculating CD56bright NK cells (CD69−CXCR6−; Melsen et al., 2018).
 
-## Functional assays
+### Functional assays
 
-## 51Chromium release assay
+#### 51Chromium release assay
 
 K562 target cells were labelled with Na2CrO4 (Bruno et al., 2014; Perkin Elmer, Waltham, MA). eGFP+ NK cells (CD45+CD94+CD56+) were sorted and incubated in the presence of Bruno et al., 2014 Cr-labeled K562 cells at variable effector-target ratio’s (E:T) in triplicate for 4 hr. Thereafter, the supernatant was mixed with scintillation fluid and the signal was measured using a 1450 LSC&Luminescence Counter (Wallac Microbeta Trilux, Perkin Elmer). The mean percentage of specific lysis was determined.
 
-## Degranulation assay
+#### Degranulation assay
 
 Cultured cells were harvested and co-cultured in bulk with K562 target cells in NKCC medium at a 1:1 ratio for 2 hr. Thereafter, cells were stained with CD56, CD94, and CD107a antibodies. The presentation of CD107a+ NK cells was measured by flow cytometry.
 
-## Cytokine stimulation
+#### Cytokine stimulation
 
 Cultured cells were harvested and stimulated in bulk in NKCC medium supplemented with either PMA (5 ng/mL) and ionomycin (1 µg/mL) for 6 hr, or with IL-12/IL-18 (both 10 ng/mL) or with IL-12/IL-18/IL-15 (latter 4 ng/mL) for 24 hr. Brefeldin A (BD GolgiPlug, BD Biosciences) was added 4 hr prior to harvesting. NK cell-specific surface markers were stained and cells were fixed and permeabilised using the Cytofix/Cytoperm Kit (BD Biosciences) before adding anti-IFN-γ and anti-TNF-α. To investigate cytokine secretion, sorted eGFP+ NK cells (CD45+CD94+CD56+) were exposed to the previously described stimuli for 24 hr, after which supernatant was collected and analysed with IFN-γ ELISA assay (PeliKine-Tool Set, Sanquin, Amsterdam, The Netherlands).
 
-## Humanised mouse model
+#### Humanised mouse model
 
 All animal experiments were performed after approval and in accordance with the guidelines of the Ethical Committee for Experimental Animals at the Faculty of Medicine and Health Sciences of Ghent University (ref# ECD20/20, Ghent, Belgium). CD34+ HPC were isolated by magnetic-activated cell sorting using the CD34 MicroBead kit (Miltenyi Biotec) and cultured for 16 hr in preculture medium, after which cells were transduced with lentivirus (RUNX2 shRNA or control), as described in a previous section (‘UCB HSC-based NK cell differentiation cultures’). At 4 hr after transduction, bulk HPC were intravenously injected in lethally irradiated (200cGy) NOD SCID gamma mice, which were transgenic for human IL-15 (NSG-huIL-15). These mice were kindly given by B. Vandekerckhove. At 6–7 weeks post-injection, the mice were sacrificed by cervical dislocation and perfused with PBS. Single-cell suspensions of liver, spleen, bone marrow, and intestinal LPL were generated as previously described (Van Acker et al., 2017; Filtjens et al., 2016; Filtjens et al., 2013). Lungs were cut in pieces and digested in RPMI1640 (Life Technologies) supplemented with 2% FCS, collagenase D (2 mg/mL, Roche), and Dnase I (0.2 mg/mL, Roche). Thereafter, single-cell suspension was prepared using Percoll (VWR, Radnor, PA), and red blood cells were lysed with ACK lysis buffer (Life Technologies). The presence of human NK cells (CD45+CD56+CD94+) and the frequency of human tissue-resident (CD69+CD49e-) and circulating (CD69-CD49e+) NK cells were analysed using flow cytometry.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical significance of the in vitro experiments was determined with the Student’s ratio paired t-test, while the significance of the in vivo data was determined with the Student’s unpaired t-test. The statistical tests were performed with GraphPad Prism version 9.0.2 for Windows (GraphPad Software, San Diego, CA). A p-value <0.05 was considered statistically significant.
 
-## Data sharing statement
+### Data sharing statement
 
 ChIP-seq and RNA-seq data are accessible on GEO (accession number 172439). For original data, please contact georges.leclercq@ugent.be.

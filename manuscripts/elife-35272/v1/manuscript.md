@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.35272.001 We would like to address a number of concerns regarding this paper (Savory et al., 2017)
+We would like to address a number of concerns regarding this paper (Savory et al., 2017)
 
 ## Plant growth promotion by the Rhodococcus pistachio bushy top syndrome (PBTS) isolates
 

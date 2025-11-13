@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.22963.001 Our previous paper (Wilkinson et al , 2016) used high-resolution cryo-electron microscopy to solve the structure of the Escherichia coli RecBCD complex, which acts in both the repair of double-stranded DNA breaks and the degradation of bacteriophage DNA. To counteract the latter activity, bacteriophage λ encodes a small protein inhibitor called Gam that binds to RecBCD and inactivates the complex. Here, we show that Gam inhibits RecBCD by competing at the DNA-binding site. The interaction surface is extensive and involves molecular mimicry of the DNA substrate. We also show that expression of Gam in E. coli or Klebsiella pneumoniae increases sensitivity to fluoroquinolones; antibacterials that kill cells by inhibiting topoisomerases and inducing double-stranded DNA breaks. Furthermore, fluoroquinolone-resistance in K. pneumoniae clinical isolates is reversed by expression of Gam. Together, our data explain the synthetic lethality observed between topoisomerase-induced DNA breaks and the RecBCD gene products, suggesting a new co-antibacterial strategy. DOI: http://dx.doi.org/10.7554/eLife.22963.001
+Our previous paper (Wilkinson et al, 2016) used high-resolution cryo-electron microscopy to solve the structure of the Escherichia coli RecBCD complex, which acts in both the repair of double-stranded DNA breaks and the degradation of bacteriophage DNA. To counteract the latter activity, bacteriophage λ encodes a small protein inhibitor called Gam that binds to RecBCD and inactivates the complex. Here, we show that Gam inhibits RecBCD by competing at the DNA-binding site. The interaction surface is extensive and involves molecular mimicry of the DNA substrate. We also show that expression of Gam in E. coli or Klebsiella pneumoniae increases sensitivity to fluoroquinolones; antibacterials that kill cells by inhibiting topoisomerases and inducing double-stranded DNA breaks. Furthermore, fluoroquinolone-resistance in K. pneumoniae clinical isolates is reversed by expression of Gam. Together, our data explain the synthetic lethality observed between topoisomerase-induced DNA breaks and the RecBCD gene products, suggesting a new co-antibacterial strategy.
 
 ## Introduction
 
@@ -32,51 +32,216 @@ Many phage-encoded proteins manipulate host cell metabolism in order to promote 
 
 ## Results
 
-## Gam interacts with the DNA-binding site of RecBCD
+### Gam interacts with the DNA-binding site of RecBCD
 
-The Gam protein exists in two isoforms called GamL and GamS which differ in length (
+The Gam protein exists in two isoforms called GamL and GamS which differ in length (Sakaki et al., 1973). Previous work has shown that GamS inhibits RecBCD by competing with DNA binding (Court et al., 2007; Murphy, 2007). The structure we present here, of the GamS dimer complexed with RecBCD, was determined by cryo-electron microscopy at 3.8 Å resolution (Figure 1, Figure 1—source data 1, Figure 1—figure supplements 1 and 2, Video 1). It reveals that the GamS protein does indeed act as a steric block to the binding of DNA (Figure 1). The interaction with the duplex DNA-binding ‘arm’ of the RecB subunit is extensive and overlaps completely with that of the duplex DNA binding site (Figure 1 and Video 2). Furthermore, one of the long N-terminal helical extensions of GamS inserts deeply into RecBCD. It occupies a channel that normally accommodates the nascent 3’-ssDNA tail bound to the RecB helicase subunit, increasing the extent of the steric block (Figure 1). Although the structure of the RecBCD complex is closest to that of the initiation complex (Singleton et al., 2004) it responds to the binding of Gam by small changes in conformation. The 2B and C-terminal domains of the RecC subunit together with the 2B domain of RecB move as a unit away from the RecB helicase domains. The RecD subunit is also much more flexible.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/22963/elife-22963-fig1-v2.jpg)
 
-**Figure 1.:** (A) Surface representation of the electron density with a ribbon representation of the RecBCD subunits and the GamS protein dimer. (B) Cut away of the molecular surface of the RecBCD part of the model with the GamS dimer overlaid showing how the protein enters and fills the channel normally occupied by the 3’ssDNA tail. (C) The same view with the electron density for the GamS dimer overlaid.DOI: http://dx.doi.org/10.7554/eLife.22963.00210.7554/eLife.22963.003Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.22963.003
+**Figure 1.:** (A) Surface representation of the electron density with a ribbon representation of the RecBCD subunits and the GamS protein dimer. (B) Cut away of the molecular surface of the RecBCD part of the model with the GamS dimer overlaid showing how the protein enters and fills the channel normally occupied by the 3’ssDNA tail. (C) The same view with the electron density for the GamS dimer overlaid.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/22963/elife-22963-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Typical micrograph of RecBCD/GamS complex particles. (B) A selection of 2D classes during refinement. (C) Local resolution map of the final reconstruction. (D) Gold standard FSC correlation curve.DOI: http://dx.doi.org/10.7554/eLife.22963.004
+**Figure 1—figure supplement 1.:** (A) Typical micrograph of RecBCD/GamS complex particles. (B) A selection of 2D classes during refinement. (C) Local resolution map of the final reconstruction. (D) Gold standard FSC correlation curve.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/22963/elife-22963-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** 1 N-terminal helix for the deposited map compared to the same region in the maps of each of the three sub-classes.For each, only the extent of the map within 2.5 Å of the region of interest was displayed over the final refined coordinates (black), with all maps contoured to the same level in Chimera (0.04). ResMap was used to colour the surface of each map according to the local resolution as outlined by the scale bar. The three sub-classes were the major classes observed when the full dataset was re-classified using 3D classification without alignment as described in Materials and methods, with the resulting percentage distributions and final refined resolution limits indicated.DOI: http://dx.doi.org/10.7554/eLife.22963.005
+**Figure 1—figure supplement 2.:** For each, only the extent of the map within 2.5 Å of the region of interest was displayed over the final refined coordinates (black), with all maps contoured to the same level in Chimera (0.04). ResMap was used to colour the surface of each map according to the local resolution as outlined by the scale bar. The three sub-classes were the major classes observed when the full dataset was re-classified using 3D classification without alignment as described in Materials and methods, with the resulting percentage distributions and final refined resolution limits indicated.
 
-The crystal structure of the GamS protein alone (
+![Video 1.](https://cdn.elifesciences.org/articles/22963/elife-22963-media1.mp4.jpg)
+
+**Video 1.:** A region of the electron density is shown in the location of the N-terminal helix of the Gam subunit that is located in the ssDNA binding site of the RecB subunit. Side chain density is clearly visible.
+
+![Video 2.](https://cdn.elifesciences.org/articles/22963/elife-22963-media2.mp4.jpg)
+
+The crystal structure of the GamS protein alone (Court et al., 2007) revealed a pattern of negative charges on the surface that mimicked a DNA duplex, suggesting that molecular mimicry might be involved in binding. Consistent with this idea, a series of acidic side chains on Gam are located in positions equivalent to the phosphates of the DNA backbone and interact with many of the same residues on the RecBCD surface (Figure 2 and Figure 2—figure supplement 1). However, the interaction of RecBCD with GamS is much more extensive than with duplex DNA (Figure 2A and B). The interactions of the N-terminal helix with the ssDNA channel are less similar to those involved in ssDNA binding although there is some conservation of hydrophobic contacts across the site (Figure 2C and D and Figure 2—figure supplement 2). Instead, the main component of the interaction is simply a steric block; the helix makes a snug fit in the channel involving many more contacts than the equivalent contacts with ssDNA (Video 3). Overall, the interaction surface involves many contacts and covers approximately 2500 Å2 which explains why the interaction between the proteins is so tight (Court et al., 2007; Murphy, 2007).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/22963/elife-22963-fig2-v2.jpg)
 
-**Figure 2.:** (A) Cartoon representation of contacts between RecBCD and the duplex portion of bound DNA. RecB is in orange and RecC in cyan in all panels. Interactions involving main chain atoms are denoted as m/c. (B) The same interface but with the GamS dimer (shown in magenta and purple). The interaction is much more extensive than with DNA but contacts in common are shown in bold. (C) Contacts between RecBCD and the ssDNA tails of DNA. (D) The same interface but with the GamS dimer. Again the interactions are much more extensive but still include several residues in common (shown in bold).DOI: http://dx.doi.org/10.7554/eLife.22963.008
+**Figure 2.:** (A) Cartoon representation of contacts between RecBCD and the duplex portion of bound DNA. RecB is in orange and RecC in cyan in all panels. Interactions involving main chain atoms are denoted as m/c. (B) The same interface but with the GamS dimer (shown in magenta and purple). The interaction is much more extensive than with DNA but contacts in common are shown in bold. (C) Contacts between RecBCD and the ssDNA tails of DNA. (D) The same interface but with the GamS dimer. Again the interactions are much more extensive but still include several residues in common (shown in bold).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/22963/elife-22963-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.22963.009
-
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/22963/elife-22963-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Overlap of the ssDNA (pink) and N-terminal helix of Gam (magenta). (B) The same region as the box in (A) but with the RecB and DNA components shown and details of the interactions. (C) The same site but for Gam and RecB. Note that there is some mimicry of the hydrophobic stacking interactions in both complexes.DOI: http://dx.doi.org/10.7554/eLife.22963.010
+**Figure 2—figure supplement 2.:** (A) Overlap of the ssDNA (pink) and N-terminal helix of Gam (magenta). (B) The same region as the box in (A) but with the RecB and DNA components shown and details of the interactions. (C) The same site but for Gam and RecB. Note that there is some mimicry of the hydrophobic stacking interactions in both complexes.
 
-## Escherichia coli cells expressing Gam are hypersensitive to ciprofloxacin
+![Video 3.](https://cdn.elifesciences.org/articles/22963/elife-22963-media3.mp4.jpg)
 
-Quinolone antibacterials target DNA gyrase and topoisomerase IV and kill cells by stabilising covalent topoisomerase-DNA adducts to produce DSBs. Based on the sensitivity of
+### Escherichia coli cells expressing Gam are hypersensitive to ciprofloxacin
+
+Quinolone antibacterials target DNA gyrase and topoisomerase IV and kill cells by stabilising covalent topoisomerase-DNA adducts to produce DSBs. Based on the sensitivity of recBC cells to quinolones (Henderson and Kreuzer, 2015; González-Soltero et al., 2015; Tamae et al., 2008; McDaniel et al., 1978) and the well-characterised role of RecBCD in the repair of DSBs (Dillingham and Kowalczykowski, 2008), we hypothesised that expression of Gam would potentiate the killing effects of ciprofloxacin. To test this hypothesis, we engineered pBAD plasmids to express the two isoforms of Gam (GamL and GamS) from an arabinose-inducible promoter. In the absence of ciprofloxacin, expression of Gam had no apparent effect on the viability of E. coli MG1655 (Figure 3—figure supplement 1). We next compared the ciprofloxacin minimum inhibitory concentration (MIC) against E. coli cells either expressing Gam or containing an empty vector construct. In broth culture, expression of either GamS or GamL reduced the MIC by approximately four-fold compared to the control, and equivalent results were obtained using spot tests on agar plates (Figure 3A and Figure 3—figure supplement 1). The MIC potentiation effect was dependent on arabinose (Figure 3—figure supplement 1) and specific for quinolone-induced DSBs; equivalent experiments measuring the MIC for ampicillin showed no effect of Gam (data not shown). These experiments demonstrate, at the biochemical level, the synthetic lethality observed between topoisomerase malfunction and RecBCD in gene knockout studies (Tamae et al., 2008).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/22963/elife-22963-fig3-v2.jpg)
 
-**Figure 3.:** (A) Ciprofloxacin minimum inhibitory concentration (MIC) assay against E. coli MG1655 cells in the presence or absence of Gam isoforms as indicated. Experiments were performed as described in the Materials and methods in the presence of arabinose to induce expression of the small or large isoforms of Gam. Control experiments were performed under identical conditions with the empty pBADK expression vector. (B) Disc susceptibility assays are standardised tests that quantify antibacterial susceptibility in terms of an inhibition zone diameter, and also classify bacterial strains as either resistant, or not resistant, to antibacterial agents based on expected drug efficacy in a clinical setting. The experiments were performed and interpreted in accordance with CLSI guidelines (CLSI, 2015) with a range of fluoroquinolones (CIP; ciprofloxacin, OFL; ofloxacin, NOR; norfloxacin, LEV, levoxofloxacin). Illustrative results for wild type K. pneumoniae (Ecl8) and a resistant strain (Ecl8-CIP-M2) are shown using the GamL isoform. Note that the magnification of the plates is different for the two strains as is apparent from the disc sizes. The inhibition zone diameters for all strains, with both GamL and GamS, are summarised in Table 1.DOI: http://dx.doi.org/10.7554/eLife.22963.012
+**Figure 3.:** (A) Ciprofloxacin minimum inhibitory concentration (MIC) assay against E. coli MG1655 cells in the presence or absence of Gam isoforms as indicated. Experiments were performed as described in the Materials and methods in the presence of arabinose to induce expression of the small or large isoforms of Gam. Control experiments were performed under identical conditions with the empty pBADK expression vector. (B) Disc susceptibility assays are standardised tests that quantify antibacterial susceptibility in terms of an inhibition zone diameter, and also classify bacterial strains as either resistant, or not resistant, to antibacterial agents based on expected drug efficacy in a clinical setting. The experiments were performed and interpreted in accordance with CLSI guidelines (CLSI, 2015) with a range of fluoroquinolones (CIP; ciprofloxacin, OFL; ofloxacin, NOR; norfloxacin, LEV, levoxofloxacin). Illustrative results for wild type K. pneumoniae (Ecl8) and a resistant strain (Ecl8-CIP-M2) are shown using the GamL isoform. Note that the magnification of the plates is different for the two strains as is apparent from the disc sizes. The inhibition zone diameters for all strains, with both GamL and GamS, are summarised in Table 1.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/22963/elife-22963-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Spot tests show the viability of E.coli MG1655 at varying ciprofloxacin concentrations and in the presence of pBADK vectors expressing no protein (control), GamL or GamS as indicated and in the presence of 1% (w/v) arabinose. (B) The ciprofloxacin potentiation effect of Gam is arabinose-dependent. Experiments were performed at 4 ng/ml ciprofloxacin. Spot tests were performed by making five-fold serial dilutions of a ~105 colony forming units (cfu)/ml starting culture of E. coli MG1655 and spot plating onto agar supplemented with kanamycin (50 ug/ml), arabinose (±1% w/v as indicated) and ciprofloxacin (as indicated).DOI: http://dx.doi.org/10.7554/eLife.22963.013
+**Figure 3—figure supplement 1.:** (A) Spot tests show the viability of E.coli MG1655 at varying ciprofloxacin concentrations and in the presence of pBADK vectors expressing no protein (control), GamL or GamS as indicated and in the presence of 1% (w/v) arabinose. (B) The ciprofloxacin potentiation effect of Gam is arabinose-dependent. Experiments were performed at 4 ng/ml ciprofloxacin. Spot tests were performed by making five-fold serial dilutions of a ~105 colony forming units (cfu)/ml starting culture of E. coli MG1655 and spot plating onto agar supplemented with kanamycin (50 ug/ml), arabinose (±1% w/v as indicated) and ciprofloxacin (as indicated).
 
-## Inhibition of DSB repair reverses fluoroquinolone resistance in K. pneumoniae, including clinical isolates
+### Inhibition of DSB repair reverses fluoroquinolone resistance in K. pneumoniae, including clinical isolates
 
-K. pneumoniae is an important opportunistic human pathogen that causes a variety of infections and is of increasing concern due to the recent emergence of antibiotic resistant and hypervirulent strains (Paczosa and Mecsas, 2016). To test whether Gam expression increased the susceptibility of wild type K. pneumoniae to fluoroquinolones, we used disc susceptibility testing to four different fluoroquinolones. These are standardised assays based on inhibition zone diameter values defined by the CLSI (CLSI, 2015) which classify bacterial strains as either resistant, or not resistant, to fluoroquinolones based on the expected efficacy of the drug in a clinical context. Five strains were used: the wild-type strain Ecl8, two laboratory-selected Ecl8 mutant derivatives having sequentially reduced ciprofloxacin susceptibility, and two K. pneumoniae clinical isolates. Ecl8, and the single-step reduced susceptibility mutant Ecl8-CIP-M1 are not clinically resistant to any of the four test fluoroquinolones regardless of Gam expression, although cells containing the phage protein are significantly more susceptible (i.e. the inhibition zone diameters are greater in all cases) confirming fluoroquinolone potentiation by Gam in this species (Figure 3B and Table 1). The two-step mutant ECl8-CIP-M2 and clinical isolate R16 are classified as clinically resistant to all four test fluoroquinolones; isolate R20 is resistant to three of them. In all cases, expression of GamL increases fluoroquinolone susceptibility to a level that reverses clinical resistance. Whilst GamS generally had a smaller effect than GamL, it still reversed resistance in all but the least susceptible clinical isolate, R16 (Table 1).10.7554/eLife.22963.014Table 1.Disc susceptibility assay for K. pneumoniae Ecl8wt, derived mutants and clinical isolates expressing GamL or GamS from pBADK. The disc susceptibility assay were performed according to the CLSI protocol (CLSI, 2015) using Mueller-Hinton agar with 0.2% (w/v) arabinose to stimulate expression of cloned genes (in bracket) and 30 mg/L kanamycin to select for the pBADK plasmids. Resistance breakpoints are as set by the CLSI (CLSI, 2015). Values shaded designate resistance. Values reported are the means of three repetitions rounded to the nearest integer.DOI: http://dx.doi.org/10.7554/eLife.22963.014K. pneumoniae strainsDiameter of growth inhibition zone (mm) around fluoroquinolone discFluoroquinolone (µg in disc)Ciprofloxacin (5)Levofloxacin (5)Norfloxacin (10)Ofloxacin (5)Ecl8wt pBADK (Control)34323030Ecl8wt pBADK (GamL)40373737Ecl8wt pBADK (GamS)46424139Ecl8-CIP- M1 pBADK (Control)24212019Ecl8-CIP-M1 pBADK (GamL)31272424Ecl8-CIP-M1 pBADK (GamS)28272525Ecl8-CIP-M2 pBADK (Control)1412118Ecl8-CIP-M2 pBADK (GamL)21171614Ecl8-CIP-M2 pBADK (GamS)21181614R16 pBADK (Control)8886R16 pBADK (GamL)17161616R16 pBADK (GamS)15151512R20 pBADK (Control)15131411R20 pBADK (GamL)20191915R20 pBADK (GamS)18171715
+K. pneumoniae is an important opportunistic human pathogen that causes a variety of infections and is of increasing concern due to the recent emergence of antibiotic resistant and hypervirulent strains (Paczosa and Mecsas, 2016). To test whether Gam expression increased the susceptibility of wild type K. pneumoniae to fluoroquinolones, we used disc susceptibility testing to four different fluoroquinolones. These are standardised assays based on inhibition zone diameter values defined by the CLSI (CLSI, 2015) which classify bacterial strains as either resistant, or not resistant, to fluoroquinolones based on the expected efficacy of the drug in a clinical context. Five strains were used: the wild-type strain Ecl8, two laboratory-selected Ecl8 mutant derivatives having sequentially reduced ciprofloxacin susceptibility, and two K. pneumoniae clinical isolates. Ecl8, and the single-step reduced susceptibility mutant Ecl8-CIP-M1 are not clinically resistant to any of the four test fluoroquinolones regardless of Gam expression, although cells containing the phage protein are significantly more susceptible (i.e. the inhibition zone diameters are greater in all cases) confirming fluoroquinolone potentiation by Gam in this species (Figure 3B and Table 1). The two-step mutant ECl8-CIP-M2 and clinical isolate R16 are classified as clinically resistant to all four test fluoroquinolones; isolate R20 is resistant to three of them. In all cases, expression of GamL increases fluoroquinolone susceptibility to a level that reverses clinical resistance. Whilst GamS generally had a smaller effect than GamL, it still reversed resistance in all but the least susceptible clinical isolate, R16 (Table 1).
+
+**Table 1.**
+ Disc susceptibility assay for K. pneumoniae Ecl8wt, derived mutants and clinical isolates expressing GamL or GamS from pBADK. The disc susceptibility assay were performed according to the CLSI protocol (CLSI, 2015) using Mueller-Hinton agar with 0.2% (w/v) arabinose to stimulate expression of cloned genes (in bracket) and 30 mg/L kanamycin to select for the pBADK plasmids. Resistance breakpoints are as set by the CLSI (CLSI, 2015). Values shaded designate resistance. Values reported are the means of three repetitions rounded to the nearest integer.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>K. pneumoniae strains</th>
+      <th colspan="4">Diameter of growth inhibition zone (mm) around fluoroquinolone disc</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="4">Fluoroquinolone (µg in disc)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Ciprofloxacin (5)</th>
+      <th>Levofloxacin (5)</th>
+      <th>Norfloxacin (10)</th>
+      <th>Ofloxacin (5)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ecl8wt pBADK (Control)</td>
+      <td>34</td>
+      <td>32</td>
+      <td>30</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Ecl8wt pBADK (GamL)</td>
+      <td>40</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>Ecl8wt pBADK (GamS)</td>
+      <td>46</td>
+      <td>42</td>
+      <td>41</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ecl8-CIP- M1 pBADK (Control)</td>
+      <td>24</td>
+      <td>21</td>
+      <td>20</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Ecl8-CIP-M1 pBADK (GamL)</td>
+      <td>31</td>
+      <td>27</td>
+      <td>24</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Ecl8-CIP-M1 pBADK (GamS)</td>
+      <td>28</td>
+      <td>27</td>
+      <td>25</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ecl8-CIP-M2 pBADK (Control)</td>
+      <td>14</td>
+      <td>12</td>
+      <td>11</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Ecl8-CIP-M2 pBADK (GamL)</td>
+      <td>21</td>
+      <td>17</td>
+      <td>16</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Ecl8-CIP-M2 pBADK (GamS)</td>
+      <td>21</td>
+      <td>18</td>
+      <td>16</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R16 pBADK (Control)</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>R16 pBADK (GamL)</td>
+      <td>17</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>R16 pBADK (GamS)</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R20 pBADK (Control)</td>
+      <td>15</td>
+      <td>13</td>
+      <td>14</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>R20 pBADK (GamL)</td>
+      <td>20</td>
+      <td>19</td>
+      <td>19</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>R20 pBADK (GamS)</td>
+      <td>18</td>
+      <td>17</td>
+      <td>17</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -86,28 +251,28 @@ In this work, we determined the structural basis for inhibition of the RecBCD co
 
 ## Materials and methods
 
-## Cloning of the bacteriophage λ Gam protein
+### Cloning of the bacteriophage λ Gam protein
 
 For over-expression in E. coli, the gene encoding bacteriophage lambda GamS, corresponding to residues 41–138 of the full-length Gam protein, was synthesised with codon optimisation for E.coli expression (GeneArt, Thermo Fisher, Waltham, MA, USA). GamS was cloned into pET22b, between NdeI and BamHI, using In-Fusion cloning. For fluoroquinolone potentiation studies, the genes encoding GamS and full length GamL were cloned into the pBAD322K plasmid (which replicates in both E. coli and K. pneumoniae) under the control of an arabinose-inducible promoter (a gift from Prof. John Cronan, University of Illinois [Cronan, 2006]) using the NcoI and HindIII restriction sites. All plasmid sequences were verified by direct DNA sequencing.
 
-## Expression and purification of the RecBCD-Gam complex
+### Expression and purification of the RecBCD-Gam complex
 
 GamS protein was over-expressed using the pET22b construct in BL21 (DE3) cells with 4 hr induction at 27°C. The purification procedure for GamS was as described (Court et al., 2007). As observed previously, GamS purifies as a dimer. E. coli RecBCD complex was expressed and purified as described (Wilkinson et al., 2016). A 2:1 molar excess of dimeric GamS was incubated with RecBCD for 15 min at room temperature prior to size-exclusion chromatography with a Superdex 75 10/300 GL column, to separate free GamS. The buffer used contained: 25 mM Tris pH 7.5, 50 mM NaCl and 0.5 mM TCEP (pH 7.0). The peak fractions were pooled and concentrated to 1.4 mg/ml using Vivaspin 30 KDa molecular weight cut-off centrifugal concentrators.
 
-## Cryo-electron microscopy grid preparation and data collection
+### Cryo-electron microscopy grid preparation and data collection
 
 Thinned C-flat 1 × 1 µm holey carbon film grids were prepared as described (Wilkinson et al., 2016). Grids were thinned using a total of 3 min of glow discharge (in 30 s steps), left for two weeks and then treated using a 1 mM solution of Amphipol A8-35. Sample (3 µL) was evenly applied to the grid before blotting and freezing in liquid ethane using a Vitrobot Mark IV (FEI). For blotting, a relative blot force of −4 for 1 s at 4°C was used. Data were collected using a Titan Krios I microscope operated at 300 KV at eBIC, Diamond, UK. Zero loss energy images were collected automatically using EPU (FEI) on a Gatan K2-Summit detector in counting mode with a pixel size corresponding to 1.34 Å at the specimen. A total of 358 images were collected with a nominal defocus range of −1.2 to −2.4 µm. Each image consisted of a movie stack of 25 frames with a total dose of 36 electrons/Å2 over 10 s corresponding to a dose rate of 6.5 electrons/pixel/s.
 
-## Data processing
+### Data processing
 
 All 25 movie frames for each image stack were aligned and summed using Motioncorr (Li et al., 2013) prior to processing with Relion1.4 (Scheres, 2016). The actual defocus and other contrast transfer function (CTF) parameters for each summed movie stack were determined using Gctf (Zhang, 2016). Outlying micrographs were removed based on a number of criteria, leaving 334 images with Thon rings extending to an estimated resolution range from 6.2–2.8 Å (mean of 3.4 Å) and defocus range between −0.6 to −2.9 μm. The program Gautomatch (Urnavicius et al., 2015) was used for automated, template-free particle picking with a circular particle diameter of 140 Å, picking 134,124 particles. Initially, reference-free 2D classification was used to remove poor particles from autopicking, leaving 122,796 particles judged to represent potential protein complexes. These were subjected to 3D classification using the RecBCD:DNA crystal structure (PDB:1 W36) (Singleton et al., 2004), low-pass filtered to 45 Å, as a starting model. All four classes generated contained complexes of GamS with RecBCD although with different occupancy of the RecB nuclease and RecD 2A/2B domains. All particles were initially kept together for more robust classification after correcting for single-particle movement and per-frame radiation damage in particle polishing. 3D refinement of the 122,896 particles yielded a map with a resolution of 4.4 Å before masking (as estimated by the ‘gold-standard’ Fourier Shell Correlation (FSC) at the 0.143 cut-off criterion). After application of an auto-generated mask in Relion, the resolution of the map was 4.0 Å. Particle polishing improved the masked resolution to 3.8 Å.
 
 At this point 3D classification without alignment (Scheres, 2016) was used to separate the different conformations within the data. The data were split into 10 classes with the majority (82%) falling into three major distinct classes. There were 30% of the particles in a class that lacked density for the RecB nuclease. The other two classes both represented the full complex with a similar spread of views but, when refined separately, showed slightly different conformations of a block of domains including the RecB 2B domain, part of the RecC CTD and the RecD 2A/2B domains. Since the GamS and surrounding structure was consistent for all three classes, they were summed for the final map at 3.8 Å. The final applied b-factor for sharpening used in post-processing was −70 Å2 with the resulting FSC plot shown in Figure 1—figure supplement 1.
 
-## Model building and refinement
+### Model building and refinement
 
 Scripts for map conversion, cell matching and refinement in Refmac were kindly provided by Garib Murshudov (MRC-LMB). The recent cryo-EM structure of RecBCD in complex with DNA (PDB: 5LD2) (Wilkinson et al., 2016), and the crystal structure of GamS (PDB: 2UUZ) (Court et al., 2007), were used as starting models for global docking in Chimera (Pettersen et al., 2004). Jelly-body Refmac refinement was used to correct for conformational changes in the model from the template structures. The entire model was carefully edited and fit using real-space refinement in Coot (Emsley et al., 2010) with occasional jelly-body refinement with Refmac, monitoring geometry statistics throughout. Near the end, phenix.real_space_refine (Afonine et al., 2013) was used to generate the final model, assign two group B-factors per residue and model statistics (see Figure 1—source data 1).
 
-## Bacterial strains and fluoroquinolone sensitivity tests
+### Bacterial strains and fluoroquinolone sensitivity tests
 
 Fluoroquinolone sensitivity was tested in E. coli MG1655 and five different strains of K. pneumoniae; wild-type isolate Ecl8 (a fully susceptible strain (Forage and Lin, 1982) and a gift from Dr T. Schneiders, University of Edinburgh); Ecl8-CIP-M1, a mutant derivative selected for growth on LB agar containing 30 ng/mL of ciprofloxacin following plating of 100 µL of an overnight culture of Ecl8; Ecl8-CIP-M2, a mutant derivative selected for growth on LB agar containing 4 µg/mL of ciprofloxacin following plating of 100 µL of an overnight culture of Ecl8-CIP-M1; clinical isolates R16 and R20 selected because of their reduced ciprofloxacin susceptibility (cultured from the blood of patients being treated at Southmead Hospital, Bristol and a gift of Prof A. P. MacGowan). Minimum inhibitory concentration (MIC) assays were performed as described previously with some modifications (Wiegand et al., 2008). Ciprofloxacin stocks of 4 µg/ml were made by dissolving in 0.1M HCl. Antibiotic serial dilutions were made in Mueller Hinton broth (MHB). For assays using E. coli, cells were grown in the absence of the inducer arabinose at 37°C to reach stationary phase. Cells were then diluted in MHB to OD600 ~10−4 or an approximate cell count of 105 cfu.ml−1 within each well of a 96 well plate. The plates were incubated at 37°C for 18 hr. Where appropriate, the wells were supplemented with kanamycin (50 µg/ml), arabinose (1% w/v), and various antibiotics at the indicated concentrations. For K. pneumoniae, antibiotic susceptibility disc tests followed the CLSI protocol (CLSI, 2015). Media were supplemented with kanamycin (30 µg/ml) and arabinose (0.2% w/v) as appropriate. The zone of growth inhibition around each disc was determined, in triplicate, by taking multiple measurements of the diameter and quoting the mean value, rounded to the nearest integer.

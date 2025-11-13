@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/006w34k90 Howard Hughes Medical Institute, University of California Berkeley United States
+1. Howard Hughes Medical Institute, University of California Berkeley United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ Here, we interrogate the role of IDRs in driving TF cluster formation and nuclea
 
 ## Results
 
-## A hidden Markov model to predict IDRs from the proteome
+### A hidden Markov model to predict IDRs from the proteome
 
 In order to examine the in vivo behavior of IDRs, we first needed a high-throughput method to identify them in the proteome. Numerous protein disorder predictors exist, and there has been great progress in computationally predicting IDRs in recent years (Liu et al., 2019; Necci et al., 2021). Despite the ever-growing number of tools to predict disorder, at the outset of our study, we found that widely used predictors commonly output the probability that a given residue is located in an IDR, rather than the discrete coordinates that are reported for structured domains. Therefore, we sought to identify high-confidence IDRs in the Drosophila proteome by converting these scores into a set of coordinates.
 
@@ -45,7 +45,7 @@ To assess the overall predictive power of our HMM, we compared the presence of a
 
 Using this list of structured and unstructured regions, we sought to generate a list of candidate IDRs to assess experimentally. We first took all of the unstructured domains and filtered for those found within TFs (Shazman et al., 2014) and known to be expressed in the early embryo (Lott et al., 2011). We further filtered the list for IDRs by size and genomic position in order to identify those that would be feasible to clone into a plasmid library. Using these filters, we generated a list of 78 IDRs contained within 72 unique TFs (Supplementary file 1).
 
-## S2 cell screen for subnuclear clustering of IDRs
+### S2 cell screen for subnuclear clustering of IDRs
 
 With our list of IDRs in hand, we designed a high-throughput functional imaging screen to assess their sufficiency in driving subnuclear localization. We generated a plasmid library containing each IDR tagged with mNeonGreen. We were unable to amplify 3 of the IDRs from the genome, so the final library contained 75 IDRs. In order to rapidly screen the IDR library for clustering behavior, we conducted the first stage of our imaging using Drosophila Schneider-2 (S2) cultured embryonic cells. We used the plasmid library to generate stable cell lines expressing each IDR, along with a red (mRuby3) tagged Histone 2Av to mark the nucleus. High-throughput imaging of live cells revealed that nearly all of the IDRs were distributed homogeneously within the nucleus (Figure 2A), suggesting that IDRs alone are insufficient to drive subnuclear clustering behavior of the type that we observe in TFs in the embryo. While some IDRs show non-uniformity in the nucleus, very few resemble the fine-scale clusters that we observe for TF hubs in embryonic nuclei.
 
@@ -59,25 +59,150 @@ Brk is a transcriptional repressor that is negatively regulated by Dpp signaling
 
 Several of the IDRs also localize to different subnuclear or subcellular compartments (Figure 2C). For example, IDR13 is from the protein encoded by CG42748, which is predicted to be involved in the organization of cell-cell junctions (Lye et al., 2014), and localizes to both the nucleus and the plasma membrane. IDR31 appears to be strongly localized to the nucleolus. This IDR is from the largely uncharacterized protein encoded by CG7839, which contains a CCAAT binding factor domain (Blum et al., 2021). This domain is found in proteins known to play a role in 60S ribosomal subunit biogenesis in yeast (Edskes et al., 1998) and regulating hsp70 expression in humans (Lum et al., 1990). The localization patterns observed in S2 cells indicate that some of the IDRs retain some degree of function or nuclear addressing that would be expected from the full-length protein. This result suggests that these particular IDRs play a functional role in protein localization.
 
-## A subset of full-length TFs show strong subnuclear clustering in S2 cell nuclei
+### A subset of full-length TFs show strong subnuclear clustering in S2 cell nuclei
 
 The nuclear uniformity of the majority of the IDRs in S2 cells suggested that in the majority of cases (73/75), IDRs alone are insufficient to drive the subnuclear clustering that we observe in fluorescently tagged TFs in the embryo. We next investigated whether full-length TFs showed clustering in S2 cells. We queried our list of IDRs and identified corresponding full-length proteins that were encoded by a single exon and could therefore easily be cloned into an expression plasmid for transfection into S2 cells. This gave us a list of nine TFs, shown in Table 1, for which we generated cell lines expressing the full-length proteins. IDR prediction plots for each of the TFs are shown in Figure 3—figure supplement 1. We also generated an S2 cell line expressing full-length Zelda, as a positive control for subnuclear clustering. Indeed, Zelda showed the typical clustering observed for this TF in the embryo (Figure 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/88221/elife-88221-fig3-v1.jpg)
+
+**Figure 3.:** S2 cell lines expressing mNeonGreen-tagged intrinsically disordered regions (IDRs) or full-length proteins and mRuby3-tagged His2Av. The top four panels indicate control cell lines. IDRs and their full-length counterparts are shown in the remaining panels. The name of the TF is indicated at the far left. IDRs alone are shown in the panels on the left and full-length proteins on the right. The TFs that show the strongest clustering are indicated with red boxes. No positively transfected cells were identified for the full-length Rib expression construct. Images are maximum intensity z-projections, and contrast was adjusted uniformly across the entire image for display.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88221/elife-88221-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Plots showing the output of the intrinsically disordered region (IDR) prediction hidden Markov model (HMM) for each of the TFs in our data set. Schematics of the linear structure of each protein (modified from SMART) are shown above the plot. SMART domains are shown in green, low complexity sequences as identified by SMART are shown in purple, and coiled-coil domains are shown in teal.
+
+**Table 1.**
+ Panel of transcription factors (TFs) chosen for full-length expression constructs in Schneider-2 (S2) cells and Drosophila embryos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>IDR #</th>
+      <th>FlyBase ID</th>
+      <th>TF name</th>
+      <th>IDR length (AAs)</th>
+      <th>Full length</th>
+      <th>IDR start</th>
+      <th>IDR end</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6</td>
+      <td>FBpp0304504</td>
+      <td>Da</td>
+      <td>219</td>
+      <td>710</td>
+      <td>116</td>
+      <td>334</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>FBpp0303090</td>
+      <td>Rib</td>
+      <td>249</td>
+      <td>661</td>
+      <td>413</td>
+      <td>661</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>FBpp0071577</td>
+      <td>CG10321</td>
+      <td>270</td>
+      <td>835</td>
+      <td>307</td>
+      <td>576</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>FBpp0076735</td>
+      <td>CG13287</td>
+      <td>245</td>
+      <td>461</td>
+      <td>1</td>
+      <td>246</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>FBpp0081483</td>
+      <td>Tgo</td>
+      <td>251</td>
+      <td>642</td>
+      <td>392</td>
+      <td>642</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>FBpp0083950</td>
+      <td>Spps</td>
+      <td>265</td>
+      <td>968</td>
+      <td>372</td>
+      <td>636</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>FBpp0084158</td>
+      <td>CG31510</td>
+      <td>260</td>
+      <td>1150</td>
+      <td>90</td>
+      <td>349</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>FBpp0071007</td>
+      <td>Brk</td>
+      <td>264</td>
+      <td>704</td>
+      <td>1</td>
+      <td>264</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>FBpp0074028</td>
+      <td>Disco</td>
+      <td>206</td>
+      <td>568</td>
+      <td>220</td>
+      <td>425</td>
+    </tr>
+  </tbody>
+</table>
+
 Three of the nine full-length proteins, CG10321, Spps, and CG31510, showed notable subnuclear clustering relative to their corresponding IDR alone (Figure 3). The gene CG10321 encodes an 855 amino acid DNA-binding protein containing a zinc finger-associated domain and a cluster of C2H2-type zinc fingers (Gebali et al., 2019; Krystel and Ayyanathan, 2013; Letunic et al., 2015). Though it is largely uncharacterized, it is expressed throughout embryonic development and the Drosophila life cycle (Brown et al., 2014) and is predicted to act as a transcriptional regulator (Gaudet et al., 2011). Sp1-like factor for pairing sensitive-silencing (Spps) encodes a zinc finger DNA-binding protein that has been shown to bind to Polycomb group response elements and to potentially play a role in recruiting Polycomb repressive complexes to these sites (Brown and Kassis, 2010). It is expressed ubiquitously in the embryo and continues to be expressed throughout the larval and adult life cycle (Brown et al., 2014). CG31510 is expressed throughout the Drosophila life cycle (Brown et al., 2014) and encodes an 1150 amino acid protein that is almost entirely uncharacterized. Though it does not contain any annotated canonical DNA-binding domains, it contains two predicted C2H2-type zinc fingers (Gebali et al., 2019) in addition to its disordered sequence. The IDR from CG31510 appears to have nucleolar localization, which is maintained in the full-length version, in addition to bright clusters throughout the nucleus. The dramatic clustering of these full-length proteins relative to their IDRs alone suggests that amino acid sequences outside of the IDRs are necessary for the nuclear dynamics of these TFs.
 
-## IDRs are not sufficient to drive subnuclear clustering in the embryo
+### IDRs are not sufficient to drive subnuclear clustering in the embryo
 
 Given the differential clustering between full-length TFs and their IDRs in S2 cells, we next asked whether these behaviors would be consistent in Drosophila embryos. We created fly lines expressing fluorescently tagged versions of the same subset of TFs for which we generated full-length expression constructs in S2 cells. For this set of TFs, we used CRISPR to tag the endogenous locus of each TF with eGFP. We reasoned that eGFP would be a more versatile tag than mNeonGreen for downstream applications that require an antibody, such as western blots or pull-downs. In parallel to tagging the endogenous locus of each TF, we generated transgenic lines expressing each IDR alone, tagged with mNeonGreen. We imaged each of the TFs and their corresponding IDRs in live nuclear cycle 14 (NC14) embryos, a developmental time point when the zygotic genome is transcriptionally active and each of the TFs in our panel are known to be expressed (Tomancak et al., 2007).
 
 Similar to the results observed in S2 cells, the IDRs alone were largely homogenous within the nucleus (Figure 4A). In contrast to the IDRs alone, the full-length TFs show a range of subnuclear localization patterns, as well as expression levels (Figure 4B). Three of the nine TFs – CG10321, Spps, and CG31510 – show substantial subnuclear clustering. These behaviors reproduce the findings in S2 cells, where the same three TFs clustered when the full-length protein was expressed. Da, Rib, Tgo, Brk, and Disco are largely uniform or show very fine-scale clustering. One protein, CG13287, had no visible expression, though its mRNA is expressed in a small domain on the dorsal side of NC14 embryos (Tomancak et al., 2007). Taken together, the imaging data from live embryos recapitulates the findings in S2 cells, namely that the IDRs identified in this study are insufficient to drive the subnuclear clustering we observe for the full-length TFs.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88221/elife-88221-fig4-v1.jpg)
+
+**Figure 4.:** Expression of transgenic mNeonGreen-tagged IDRs (A) or full-length TFs tagged at the endogenous locus with eGFP (B) and His2Av-RFP in nuclear cycle 14 (NC14) embryos. The name of the TF is indicated at the far left. The TFs that show the strongest clustering are indicated with red boxes. No full-length CG13287 expression was observed in embryos. Images are maximum intensity z-projections, and contrast was adjusted uniformly across the entire image for display.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88221/elife-88221-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Nuclei from a nuclear cycle 14 (NC14) embryo expressing a transgenic mNeonGreen-tagged Brk intrinsically disordered region (IDR) and Mxc tagged at the endogenous locus with mRuby3. The image is a maximum intensity z-projection, and contrast was adjusted uniformly across the entire image for display.
+
 Interestingly, the patterns of clustering in CG10321, Spps, and CG31510 TFs are quite distinct from the clusters observed in S2 cells. In embryos, CG10321 forms bright foci that appear to localize around the edges of the nucleus. Spps, despite fairly low overall expression levels, shows many bright clusters throughout the nucleus that we might expect from a DNA-binding TF. We hypothesize that these clusters correspond to sites of Polycomb-mediated silencing. Finally, CG31510 forms bright clusters which are oriented apically in the nuclei, which are non-overlapping with the Histone 2Av signal. This is consistent with the formation of the nucleolus on the apical side of NC14 nuclei (Falahati et al., 2016), and therefore may recapitulate the nucleolar localization observed for both the IDR and full-length CG31510 protein in S2 cells.
 
 In the embryo, the IDR of Brk showed one or two bright foci of subnuclear localization (Figure 4A). This differed from its nuclear distribution in S2 cells, where it showed small clusters throughout the nucleus (Figure 2B). We suspected that these foci corresponded to the HLB. The HLB forms around the histone gene cluster, where factors required for the replication-coupled transcription and processing of histone mRNAs are concentrated (reviewed in Marzluff et al., 2008). To test whether the Brk IDR foci corresponded to the HLB, we generated a fly line expressing an mRuby3-tagged multi sex combs (mxc), a homeotic gene and structural component of the HLB (White et al., 2011). We imaged embryos expressing both the fluorescently tagged IDR from Brk and Mxc and found very strong co-localization within the HLB (Figure 4—figure supplement 1). This specialized localization of the Brk IDR indicates that IDRs can play a role in concentrating factors within the nucleus. However, our screen demonstrates that this is not a common function of IDRs in general. The Brk TF is not known to be associated with the HLB, and the full-length Brk protein does not appear to have this localization pattern (Figure 4B and Figure 5). It is therefore unclear why this particular IDR is addressed to the HLB. However, as the Brk IDR is the only IDR in our panel that also contains the DNA-binding domain, the HLB localization could also be the result of DNA binding to the histone locus.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/88221/elife-88221-fig5-v1.jpg)
+
+**Figure 5.:** Nuclear cycle 14 (NC14) embryos expressing transgenic mNeonGreen-tagged full-length TFs and His2Av-RFP. The name of the TF is indicated at the far left. Images are maximum intensity z-projections, and contrast was adjusted uniformly across the entire image for display.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88221/elife-88221-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Brk tagged at the endogenous locus with eGFP. The labeled protein is expressed at low levels in nuclei on the ventral side of the embryo. The ventral view panel shows a 2× zoom of the same embryo above. D and V denote dorsal and ventral sides of the embryo, respectively. (B) Expression of a transgenic mNeonGreen-tagged Brk with the IDR deleted. The transgenic protein is expressed uniformly throughout the embryo. Ventral and dorsal views show 2× zoom in two different regions of the embryo above. (C) Disco tagged at the endogenous locus with eGFP. The labeled protein is expressed late in nuclear cycle 14 (NC14) at very low levels in nuclei at the posterior of the embryo. The posterior view panel shows a 2× zoom of the same embryo above. A and P denote anterior and posterior sides of the embryo, respectively. (D) Expression of a transgenic mNeonGreen-tagged Disco with the IDR deleted. The transgenic protein is expressed uniformly throughout the embryo. Posterior and anterior views show 2× zoom in two different regions of the embryo above. All images are maximum intensity z-projections, and in each panel, contrast was adjusted uniformly across the entire image for display.
+
 Rib, Brk, Disco, and CG13287 are expressed at low levels or in spatially restricted patterns in the embryo that make detailed imaging challenging. In order to bypass this issue, we also generated transgenic versions of all of the full-length TFs, expressed from the nanos promoter and tagged with mNeonGreen. The transgenic TFs are expressed ubiquitously in the embryo and with a brighter fluorophore than eGFP, allowing for more effective imaging. These transgenes enable us to capture the potential behaviors of these proteins outside of the restrictions of their endogenous context. Despite all of the constructs being expressed from the same promoter, the transgenic TFs showed a range of nuclear expression levels that are similar to the endogenous proteins (Figure 5), indicating post-transcriptional regulation. The transgenic TFs reproduce the subnuclear clustering patterns of the endogenous TFs, but the brighter mNeonGreen fluorophore and ubiquitous spatial expression in the embryo allows for several additional observations. CG13287, which was not visible when tagged at its endogenous locus, shows a bright and fairly uniform distribution within nuclei. Rib shows fine-scale clustering that was not visible when the protein was tagged at the endogenous locus. Tgo, though still expressed at a low level, does show some degree of clustering. And finally, Brk and Disco both appear to be associated with chromatin. The range of subnuclear behaviors observed for the different TFs indicates a diversity in the binding patterns and interactions of these TFs throughout the nucleus.
 
-## IDRs are not necessary to drive subnuclear clustering in the embryo
+### IDRs are not necessary to drive subnuclear clustering in the embryo
 
 Though we have demonstrated that IDRs are not sufficient for TF clustering, it remains possible that they are still contributing to the localization of full-length TFs through inter- or intramolecular interactions. To test the necessity of the IDRs for the observed subnuclear localization, we generated uniformly expressed transgenic lines expressing each of the TFs with their IDRs deleted, tagged with mNeonGreen. Four of the TFs, Rib, CG10321, CG13287, and Tgo, had severely reduced nuclear expression when the IDR was deleted (Figure 6). This is possibly the result of the loss of a nuclear localization signal that resides within the IDR sequence. However, the most strongly clustering TFs in the set, CG10321, Spps, and CG31510, maintain their subnuclear clustering behavior with the IDRs deleted. Indeed, even with drastically reduced expression, the clusters in CG10321 are still visible. Brk and Disco also retain their chromatin localization with their IDRs deleted. These results demonstrate that the IDRs are not necessary for the clustering behavior of the full-length TFs.
 
@@ -101,7 +226,7 @@ The finding that IDRs are not the primary drivers of subnuclear clustering leave
 
 ## Materials and methods
 
-## Identifying IDRs in the proteome
+### Identifying IDRs in the proteome
 
 The Drosophila melanogaster genome (release 6.25) was downloaded from FlyBase (Larkin et al., 2021) as a GFF file. The genome file was parsed using Python3 to identify genes, mRNAs, and proteins, and to extract Pfam (Gebali et al., 2019) and SMART (Letunic et al., 2015) protein domain annotations. The FlyBase FASTA file for translations of protein coding transcripts from D. melanogaster (release 6.25) genome was parsed for amino acid sequences using the SeqIO tool from Biopython (Cock et al., 2009).
 
@@ -109,7 +234,7 @@ To predict disorder from the proteome, IUPred was run locally using the IUPred2A
 
 An HMM was initiated using the Python package pomegranate (Schreiber, 2018), taking the IUPred ‘long’ output as the input to the model. Starting states of the model were defined as state s0 (structured) or s1 (unstructured), and were determined from the distribution of IUPred scores in regions annotated as SMART or Pfam domains vs. the IUPred scores outside of annotated domains. Discrete continuous domains of protein disorder were defined using a Viterbi prediction, in which disordered domains were given a value of 1 and structured domains were given a value of 0. The domains identified by the model were filtered to exclude those containing Pfam/SMART domains and further filtered to include proteins classified DNA-binding TFs (Shazman et al., 2014). They were then filtered by size, to include only IDRs between 200 and 400 amino acids in length. This resulted in a list of 130 IDRs from the proteome. These were further filtered for IDRs encoded within a single exon, which could be amplified by PCR from the genome, giving a final set of 78 IDRs. The final list is shown in Supplementary file 1.
 
-## Generating stable S2 cell lines
+### Generating stable S2 cell lines
 
 From the IDRs identified in the Drosophila proteome, we filtered by size for ease of expression and cloning, and identified 130 IDRs between 200 and 400 amino acids. Of this subset, we identified 78 IDRs that were encoded by a single exon. Using this list, we designed primers to amplify each of the 78 IDRs from OregonR genomic DNA (Supplementary file 1). Using ligation-independent cloning, we cloned each IDR sequence into a pCopia expression vector (Parker et al., 2019) containing an N-terminal mNeonGreen or mRuby3 fluorescent tag, followed by a FLAG tag, and with an SV70 NLS sequence downstream of the IDR. We were unable to amplify three of the IDR sequences (#38, 59, and 77), so the final library contained 75 fluorescently tagged IDRs.
 
@@ -117,15 +242,15 @@ To generate stable integrations of the fluorescent IDR constructs, we co-transfe
 
 Stable cell lines expressing mNeonGreen-tagged full-length TFs were generated using the same cloning and transfection procedures described for the IDR library. Primer sequences are available in Supplementary file 1.
 
-## High-throughput imaging of S2 library
+### High-throughput imaging of S2 library
 
 The IDR S2 cell lines were prepared for imaging by resuspending and transferring to glass bottom 96-well microplates (Corning). Plates were imaged on an Opera Phenix high-throughput confocal microscope (Perkin Elmer). Cells were imaged using a 63×1.15 NA water objective, and z-stacks were collected with 0.5 µM slice intervals.
 
-## Imaging full-length TF cell lines
+### Imaging full-length TF cell lines
 
 The full-length TF and corresponding IDR S2 cell lines were expanded to six-well plates and prepared for imaging by resuspending and transferring to 27 mm glass bottom cell culture dishes (ThermoFisher). Cells were imaged on a Zeiss (Germany) LSM 800 scanning confocal microscope using 488 nm and 561 nm lasers in a 101.4 µM2 window. Cells were imaged using a Plan-Apochromat 63×1.40 NA oil-immersion objective, and z-stacks were collected with 1 µM slice intervals.
 
-## Generation of transgenic fly lines
+### Generation of transgenic fly lines
 
 For the IDR expression constructs, DNA fragments encoding IDRs or full TFs were amplified from genomic DNA extracted from a single OregonR fly. Primers for amplification are available in Supplementary file 2. The IDR fragments or full-length TF sequences were then cloned via Gibson Assembly into the pMRS-213 vector (Michael Stadler, unpublished), containing a nanos promoter, N-terminal mNeonGreen tag, and alpha-tubulin 3’UTR. For ease of amplification, the longer coding sequences to express the full-length TFs from transgenic constructs were amplified from the pCopia-mNeonGreen expression constructs used for S2 cell expression. The full-length sequences were then cloned by Gibson Assembly into pMRS-213.
 
@@ -133,6 +258,6 @@ The IDR deletion sequences were synthesized by GenScript (Piscataway, NJ, USA) a
 
 Full-length TF reporter lines were generated using CRISPR/Cas9 mutagenesis with homology directed repair (HDR). sgRNA targeting sequences were annealed and cloned into the pMRS-1 vector (Mir et al., 2018). HDR constructs were designed containing an N-terminal FLAG tag, eGFP, and a flexible linker, flanked by ~1 kb homology arms. The homology sequence directed the insertion of the tag in frame with the start codon of each gene. The HDR sequences were cloned into pUC19 via Gibson assembly. For two genes, tgo and CG13287, tagging at the N-terminus was unsuccessful. The HDR constructs were re-designed to insert a flexible linker, FLAG tag, and eGFP between the N-terminus of the encoded protein and the stop codon. The HDR plasmids were pooled with gene-specific sgRNA guide plasmids and pCFD3-ebony as a visible co-CRISPR marker (Kane et al., 2017), and sent to Rainbow Transgenic Flies for injection into embryos expressing Cas9 in the germline. After injected larvae hatched into adults, individual flies were crossed to balancer lines for the appropriate chromosome, each also carrying a TM3 balancer marked with ebony. The F1 progeny were screened for the presence of the ebony mutant phenotype, and ebony mutants were crossed again to an appropriate balancer stock to generate stable fly lines. After the F2 crosses were established, the ebony F1 parents were sacrificed for PCR genotyping with primers to amplify the junction between eGFP and the flanking HDR homology sequence. Positive eGFP-tagged lines were further characterized by amplification of the target region using primers outside of the homology arms, followed by Sanger sequencing to confirm the correct insertion of the fluorescent tag. Guide RNA sequences, primers for generating homology arms, and primers for screening CRISPR insertions are available in Supplementary file 3.
 
-## Confocal imaging in living embryos
+### Confocal imaging in living embryos
 
 Embryos were collected from apple juice plates and sorted by stage in halocarbon 27 oil. Appropriately staged embryos were mounted in halocarbon 27 oil between a coverslip and gas permeable membrane. Confocal images were collected on a Zeiss LSM 800, using 488 nm and 561 nm lasers in a 101.4 µM2 window. Embryos were imaged using a Plan-Apochromat 63×1.40 NA oil-immersion objective, and z-stacks were collected with 0.5 µM slice intervals.

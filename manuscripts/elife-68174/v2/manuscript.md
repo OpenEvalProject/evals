@@ -114,7 +114,7 @@
 
 ## Abstract
 
-It remains unclear whether combination antiretroviral therapy (ART) regimens differ in their ability to fully suppress human immunodeficiency virus (HIV) replication. Here, we report the results of two cross-sectional studies that compared levels of cell-associated (CA) HIV markers between individuals receiving suppressive ART containing either a non-nucleoside reverse transcriptase inhibitor (NNRTI) or a protease inhibitor (PI). CA HIV unspliced RNA and total HIV DNA were quantified in two cohorts (n = 100, n = 124) of individuals treated with triple ART regimens consisting of two nucleoside reverse transcriptase inhibitors (NRTIs) plus either an NNRTI or a PI. To compare CA HIV RNA and DNA levels between the regimens, we built multivariable models adjusting for age, gender, current and nadir CD4 + count, plasma viral load zenith, duration of virological suppression, NRTI backbone composition, low-level plasma HIV RNA detectability, and electronically measured adherence to ART. In both cohorts, levels of CA HIV RNA and DNA strongly correlated (rho = 0.70 and rho = 0.54) and both markers were lower in NNRTI-treated than in PI-treated individuals. In the multivariable analysis, CA RNA in both cohorts remained significantly reduced in NNRTI-treated individuals (p adj = 0.02 in both cohorts), with a similar but weaker association between the ART regimen and total HIV DNA (p adj = 0.048 and p adj = 0.10). No differences in CA HIV RNA or DNA levels were observed between individual NNRTIs or individual PIs, but CA HIV RNA was lower in individuals treated with either nevirapine or efavirenz, compared to PI-treated individuals. All current classes of antiretroviral drugs only prevent infection of new cells but do not inhibit HIV RNA transcription in long-lived reservoir cells. Therefore, these differences in CA HIV RNA and DNA levels by treatment regimen suggest that NNRTIs are more potent in suppressing HIV residual replication than PIs, which may result in a smaller viral reservoir size. This work was supported by ZonMw (09120011910035) and FP7 Health (305522).
+Background:It remains unclear whether combination antiretroviral therapy (ART) regimens differ in their ability to fully suppress human immunodeficiency virus (HIV) replication. Here, we report the results of two cross-sectional studies that compared levels of cell-associated (CA) HIV markers between individuals receiving suppressive ART containing either a non-nucleoside reverse transcriptase inhibitor (NNRTI) or a protease inhibitor (PI).Methods:CA HIV unspliced RNA and total HIV DNA were quantified in two cohorts (n = 100, n = 124) of individuals treated with triple ART regimens consisting of two nucleoside reverse transcriptase inhibitors (NRTIs) plus either an NNRTI or a PI. To compare CA HIV RNA and DNA levels between the regimens, we built multivariable models adjusting for age, gender, current and nadir CD4+ count, plasma viral load zenith, duration of virological suppression, NRTI backbone composition, low-level plasma HIV RNA detectability, and electronically measured adherence to ART.Results:In both cohorts, levels of CA HIV RNA and DNA strongly correlated (rho = 0.70 and rho = 0.54) and both markers were lower in NNRTI-treated than in PI-treated individuals. In the multivariable analysis, CA RNA in both cohorts remained significantly reduced in NNRTI-treated individuals (padj = 0.02 in both cohorts), with a similar but weaker association between the ART regimen and total HIV DNA (padj = 0.048 and padj = 0.10). No differences in CA HIV RNA or DNA levels were observed between individual NNRTIs or individual PIs, but CA HIV RNA was lower in individuals treated with either nevirapine or efavirenz, compared to PI-treated individuals.Conclusions:All current classes of antiretroviral drugs only prevent infection of new cells but do not inhibit HIV RNA transcription in long-lived reservoir cells. Therefore, these differences in CA HIV RNA and DNA levels by treatment regimen suggest that NNRTIs are more potent in suppressing HIV residual replication than PIs, which may result in a smaller viral reservoir size.Funding:This work was supported by ZonMw (09120011910035) and FP7 Health (305522).
 
 ## Introduction
 
@@ -126,7 +126,94 @@ It is also a matter of debate whether different ART regimens are equally potent 
 
 ## Materials and methods
 
-## Study participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>PBMC samples from HIV-infected individuals</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA-free DNA Removal Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# AM1906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Platinum Quantitative PCR SuperMix-UDG</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 11730–025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan β-Actin Detection Reagents</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 401846</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Ribosomal RNA Control Reagents</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 4308329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SuperScript III reverse transcriptase</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 18080–085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Random primers</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 48190–011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNaseOUT Recombinant Ribonuclease Inhibitor</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 10777–019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8.3.0</td>
+      <td>GraphPad Software</td>
+      <td>https://www.graphpad.com/; RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IBM SPSS Statistics (version 25)</td>
+      <td>IBM Corporation</td>
+      <td>https://www.ibm.com/; RRID:SCR_019096</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Study participants
 
 Participants for the COmorBidity in Relation to AIDS (COBRA) cohort were recruited at two clinical sites in Amsterdam (The Netherlands) and London (UK) from ongoing prospective cohort studies on co-morbidity and aging in HIV, the AGEhIV Cohort Study in Amsterdam (Schouten et al., 2014), and the POPPY study in London (De Francesco et al., 2016). All participants were required to be at least 45 years of age. The study design and participant characteristics were reported previously (De Francesco et al., 2018). Although most COBRA participants had two study visits within 2 years, for the present cross-sectional study, only peripheral blood mononuclear cell (PBMC) samples from the first study visit were used: 63 participants out of 100 were from the Amsterdam sub-cohort and 37 were from the London sub-cohort. The COBRA study was approved by the institutional review board of the Academic Medical Center (Medisch Ethische Toetsingscommissie, reference number NL 30802.018.09) and a UK Research Ethics Committee (REC) (reference number 13/LO/0584 Stanmore, London). All participants provided written informed consent.
 
@@ -134,25 +221,286 @@ Participants for the Adherence Improving Self-Management Strategy (AIMS) randomi
 
 Historical plasma HIV RNA measurements, CD4+ T-cell counts, and treatment data were retrieved from the outpatient medical records. The duration of continuous virological suppression was calculated as the duration of the latest period with undetectable plasma HIV RNA prior to the measurement, allowing isolated ‘blips’ of 50–999 copies/ml. The duration of cumulative suppression was calculated by adding together all such periods of continuous suppression. The duration of the current regimen was calculated as the period during which the participant had been receiving combination ART that included their current NNRTI or PI drug and no other NNRTI or PI.
 
-## Virological measurements
+### Virological measurements
 
 Plasma HIV RNA was measured using commercial assays with detection limits of 40 or 50 copies/ml. For CA HIV RNA and total HIV DNA measurements, total nucleic acids were extracted from PBMC using the Boom isolation method (Boom et al., 1990). Extracted cellular RNA was treated with DNase (DNA-free kit; Thermo Fisher Scientific) to remove DNA that could interfere with the quantitation and reverse transcribed using random primers and SuperScript III reverse transcriptase (all from Thermo Fisher Scientific). CA HIV unspliced RNA and total HIV DNA were measured using previously described quantitative polymerase chain reaction (qPCR)-based methods (Pasternak et al., 2008; Malnati et al., 2008). HIV DNA or RNA copy numbers were determined using a 7-point standard curve with a linear range of >5 orders of magnitude that was included in every qPCR run and normalized to the total cellular DNA (by measurement of β-actin DNA) or RNA (by measurement of 18S ribosomal RNA) inputs, respectively, as described previously (Pasternak et al., 2009). Non-template control wells were included in every qPCR run and were consistently negative. Total HIV DNA was detectable in 90.0% of participants in the COBRA cohort and in 87.8% in the AIMS cohort. CA HIV RNA was detectable in 86.9% of participants in the COBRA cohort and in 83.7% in the AIMS cohort. Undetectable measurements of CA RNA or DNA were assigned the values corresponding to 50% of the corresponding assay detection limits. The detection limits depended on the amounts of the normalizer (input cellular DNA or RNA), and therefore differed between samples.
 
-## Statistical analysis
+### Statistical analysis
 
 Variables were compared between NNRTI- and PI-based ART by using Mann-Whitney tests for continuous variables and Fisher’s exact tests or Chi-square tests for categorical variables. Strength of the associations between CA RNA or DNA and other variables was initially assessed by nonparametric Spearman or Mann-Whitney tests, as appropriate, and subsequently by fitting generalized linear models (GLMs) on rank-transformed dependent variables. Binary explanatory variables were included in the models if the representation of the least frequent category was >5%. Therefore, gender and plasma HIV RNA detectability were not included in the model in the COBRA cohort. Similarly, a threshold of 5% was used for inclusion of the NRTI backbone categories in the analysis, resulting in the inclusion of three most frequent categories for each cohort. The most frequent NRTI backbone category was used as a reference category. Explanatory variables that were associated with the dependent variables with a sufficient strength (p < 0.1) in univariable GLM analyses were included in multivariable models. Individual tests are described in the legends to figures and tables. Data were analyzed using Prism 8.3.0 (GraphPad Software) and IBM SPSS Statistics (version 25). All tests were two-sided. p-values <0.05 were considered statistically significant.
 
 ## Results
 
-## CA HIV RNA and DNA in the COBRA cohort
+### CA HIV RNA and DNA in the COBRA cohort
 
 We measured CA HIV unspliced RNA and total HIV DNA in PBMC samples from participants of the COBRA cohort (De Francesco et al., 2018). COBRA is a cohort of HIV-infected individuals aged 45 years or older with sustained HIV suppression on ART recruited from two large European HIV treatment centers in Amsterdam and London. Of the 132 COBRA participants with available PBMC samples, 100 were treated with ART that consisted of two NRTIs plus either one NNRTI (n = 58) or one ritonavir-boosted PI (n = 42) and were included in the analysis. Samples were obtained between April 2011 and December 2014. Table 1 shows the participant characteristics, grouped according to the treatment regimen. In brief, 95% were male and the median age was 55 years (interquartile range, 51–61 years). 98 participants had undetectable plasma HIV RNA (<50 copies/ml) and two had detectable but low levels (66 and 90 copies/ml). Participants had a median of 118 (62–163) months of cumulative and 99 (47–146) months of continuous virological suppression on ART prior to the measurements and had been treated with their current NNRTI or PI regimen for a median of 69 (38–116) months. The duration of virological suppression on ART and the duration of current regimen prior to the measurements were significantly different between NNRTI- and PI-treated participants (cumulative suppression: median of 137 vs 90 months, respectively, p = 0.004; continuous suppression, median of 118 vs 62 months, respectively, p = 0.001; current regimen: median of 99 vs 48 months, respectively, p < 0.0001).
 
+**Table 1.**
+ Characteristics of participants treated with NNRTI- and PI-based ART regimens.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Variable</th>
+      <th colspan="3">COBRA cohort (n = 100)</th>
+      <th colspan="3">AIMS cohort (n = 124)</th>
+    </tr>
+    <tr>
+      <th colspan="2"></th>
+      <th>NNRTI (n = 58)</th>
+      <th>PI (n = 42)</th>
+      <th>p[i]</th>
+      <th>NNRTI (n = 88)</th>
+      <th>PI (n = 36)</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Age (years)</td>
+      <td>55 (51–61)[ii]</td>
+      <td>56 (50–62)</td>
+      <td>0.97</td>
+      <td>47 (41–54)</td>
+      <td>44 (39–53)</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td colspan="2">Male gender</td>
+      <td>56 (96.6)</td>
+      <td>39 (92.9)</td>
+      <td>0.65</td>
+      <td>78 (88.6)</td>
+      <td>31 (86.1)</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <td colspan="2">Current CD4+ count (cells/mm3)</td>
+      <td>640 (511–796)</td>
+      <td>617 (408–782)</td>
+      <td>0.21</td>
+      <td>550 (368–798)</td>
+      <td>575 (470–745)</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td colspan="2">CD4+ count nadir (cells/mm3)</td>
+      <td>180 (115–253)</td>
+      <td>200 (88–253)</td>
+      <td>0.91</td>
+      <td>160 (83–240)</td>
+      <td>165 (85–220)</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td colspan="2">Plasma HIV RNA zenith (log10 copies/ml)</td>
+      <td>5.08 (4.71–5.52)</td>
+      <td>5.00 (4.72–5.70)</td>
+      <td>0.84</td>
+      <td>5.21 (4.68–5.62)</td>
+      <td>5.35 (4.96–5.97)</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td colspan="2">Duration of cumulative virological suppression (months)</td>
+      <td>137.0 (93.3–171.3)</td>
+      <td>90.4 (46.5–133.1)</td>
+      <td>0.004</td>
+      <td>55.6 (28.5–90.2)</td>
+      <td>40.2 (11.0–87.5)</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td colspan="2">Duration of continuous virological suppression (months)</td>
+      <td>118.3 (73.6–151.6)</td>
+      <td>62.2 (33.5–118.4)</td>
+      <td>0.001</td>
+      <td>45.4 (25.4–74.3)</td>
+      <td>19.9 (6.2–64.3)</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td colspan="2">Duration of the current NNRTI or PI regimen (months)</td>
+      <td>98.6 (48.4–136.6)</td>
+      <td>48.0 (26.3–68.2)</td>
+      <td>&lt;0.0001</td>
+      <td>39.1 (12.4–59.9)</td>
+      <td>12.5 (7.2–23.6)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td colspan="2">Current plasma HIV RNA &lt;50 copies/ml[iii]</td>
+      <td>56 (96.6)</td>
+      <td>42 (100.0)</td>
+      <td>0.51</td>
+      <td>80 (90.9)</td>
+      <td>27 (75.0)</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td colspan="2">Adherence to ART (%)[iv]</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>89.2 (63.6–100)</td>
+      <td>91.3 (65.5–100)</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>NRTI backbone</td>
+      <td>FTC + TDF[v]</td>
+      <td>47 (81.0)</td>
+      <td>31 (73.8)</td>
+      <td>0.43</td>
+      <td>8 (9.1)</td>
+      <td>4 (11.1)</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ABC + 3TC</td>
+      <td>4 (6.9)</td>
+      <td>6 (14.3)</td>
+      <td></td>
+      <td>4 (4.5)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3TC + TDF</td>
+      <td>5 (8.6)</td>
+      <td>2 (4.8)</td>
+      <td></td>
+      <td>42 (47.7)</td>
+      <td>21 (58.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3TC + AZT</td>
+      <td>2 (3.4)</td>
+      <td>1 (2.4)</td>
+      <td></td>
+      <td>26 (29.5)</td>
+      <td>6 (16.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Other[vi]</td>
+      <td>-</td>
+      <td>2 (4.8)</td>
+      <td></td>
+      <td>8 (9.1)</td>
+      <td>5 (13.9)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NNRTI</td>
+      <td>EFV[vii]</td>
+      <td>28 (48.3)</td>
+      <td>-</td>
+      <td></td>
+      <td>46 (52.3)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NVP</td>
+      <td>26 (44.8)</td>
+      <td>-</td>
+      <td></td>
+      <td>41 (46.6)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Other[viii]</td>
+      <td>4 (6.9)</td>
+      <td>-</td>
+      <td></td>
+      <td>1 (1.1)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PI</td>
+      <td>ATZ/r[ix]</td>
+      <td>-</td>
+      <td>19 (45.2)</td>
+      <td></td>
+      <td>-</td>
+      <td>22 (61.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DRV/r</td>
+      <td>-</td>
+      <td>16 (38.1)</td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LPV/r</td>
+      <td>-</td>
+      <td>3 (7.1)</td>
+      <td></td>
+      <td>-</td>
+      <td>9 (25.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Other[x]</td>
+      <td>-</td>
+      <td>4 (9.5)</td>
+      <td></td>
+      <td>-</td>
+      <td>5 (13.9)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_[i]Mann-Whitney tests were used for continuous variables and Fisher’s exact tests or Chi-square tests were used for categorical variables.[ii]Data are medians (interquartile ranges) for continuous variables and numbers (percentages) for discrete variables.[iii]Where detectable, plasma HIV RNA was <400 copies/ml for all patients.[iv]Adherence was measured electronically.[v]NRTIs: FTC, emtricitabine; TDF, tenofovir disoproxil fumarate; ABC, abacavir; 3TC, lamivudine; AZT, zidovudine; D4T, stavudine; DDI, didanosine.[vi]COBRA: ABC+TDF – 1 (PI), ABC+AZT – 1 (PI). AIMS: 3TC+D4T – 3 (NNRTI), 3TC+DDI – 3 (NNRTI) + 2 (PI), D4T+DDI – 1 (NNRTI), DDI+TDF – 1 (NNRTI) + 1 (PI), 3TC+FTC – 1 (PI), AZT+DDI – 1 (PI).[vii]NNRTIs: EFV, efavirenz; ETR, etravirine; NVP, nevirapine; RIL, rilpivirine.[viii]COBRA: ETR – 2, RIL – 2. AIMS: unknown – 1.[ix]PIs: ATZ, atazanavir; DRV, darunavir; FOS, fosamprenavir; LPV, lopinavir; SAQ, saquinavir; IDV, indinavir; /r, ritonavir-boosted PI. [x]COBRA: FOS/r – 3, SAQ/r – 1. AIMS: ATZ – 3, IDV/r – 1, IDV – 1._
+
 The median CA HIV RNA and total HIV DNA levels in the COBRA cohort were 2.15 (1.58–2.52) log10 copies/μg total RNA and 2.50 (1.84–2.77) log10 copies/106 PBMC, respectively. Figure 1A shows correlations of current CD4+ count, CD4+ count nadir, plasma HIV RNA zenith, and duration of continuous virological suppression prior to the measurements, with CA HIV RNA and DNA. Significant correlations with both HIV RNA and DNA were observed for the plasma HIV RNA zenith (rho = 0.22, p = 0.04 and rho = 0.36, p = 0.0004, respectively), but not for any other variable. Duration of cumulative virological suppression and duration of the current regimen were also not associated with either CA HIV RNA or DNA (cumulative suppression: rho = 0.04, p = 0.68 and rho = -0.06, p = 0.60; current regimen: rho = 0.02, p = 0.82 and rho = 0.02, p = 0.87). Furthermore, CA RNA and DNA strongly correlated (rho = 0.70, p < 0.0001) and both markers were lower in NNRTI- than in PI-treated participants (CA RNA: 1.78 (1.58–2.29) vs 2.36 (1.55–2.65) log10 copies/μg total RNA, p = 0.03; total DNA: 2.46 (1.78–2.64) vs 2.60 (1.93–2.90) log10 copies/106 PBMC, p = 0.07).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68174/elife-68174-fig1-v2.jpg)
+
+**Figure 1.:** Units of measurement are US RNA: log10 copies/μg total RNA, total DNA: log10 copies/106 peripheral blood mononuclear cells (PBMC), CD4 count and CD4 nadir: cells/mm3, plasma HIV RNA zenith: log10 copies/ml. Levels of significance were calculated by Spearman correlation analyses or Mann-Whitney tests, as appropriate. In all correlation graphs, non-nucleoside reverse transcriptase inhibitor (NNRTI)- and protease inhibitor (PI)-treated participants are color-coded (NNRTI - blue, PI - red).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68174/elife-68174-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Units of measurement are US RNA: log10 copies/μg total RNA, total DNA: log10 copies/106 PBMC. Levels of significance were calculated by Spearman correlation analyses.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68174/elife-68174-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Levels of significance were calculated by Mann-Whitney tests.
 
 To assess the association of CA HIV RNA and DNA with ART regimens, we built multivariable GLMs, adjusted for a number of demographic and clinical variables (Figure 2A, Supplementary file 1a). Higher plasma HIV RNA zenith and PI-based ART regimen remained significantly associated with higher levels of both CA HIV RNA and DNA in the multivariable analysis (plasma HIV RNA zenith: padj = 0.02 and padj = 0.0001, respectively; ART regimen: padj = 0.02 and padj = 0.048, respectively).
 
-## CA HIV RNA and DNA in the AIMS cohort
+![Figure 2.](https://cdn.elifesciences.org/articles/68174/elife-68174-fig2-v2.jpg)
+
+**Figure 2.:** Effect sizes and 95% confidence intervals for US RNA are plotted as log10 copies per microgram of total cellular RNA and for total DNA as log10 copies per million peripheral blood mononuclear cells (PBMC). Effect sizes were obtained by fitting generalized linear models. Variables associated with HIV RNA or DNA with p-values <0.1 in the univariable analyses were included in the multivariable analyses.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68174/elife-68174-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Effect sizes and 95% confidence intervals for US RNA are plotted as log10 copies per microgram of total cellular RNA and for total DNA as log10 copies per million PBMC. Effect sizes were obtained by fitting generalized linear models. Variables associated with HIV RNA or DNA with p-values <0.1 in the univariable analyses were included in the multivariable analyses.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68174/elife-68174-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Effect sizes and 95% confidence intervals for US RNA are plotted as log10 copies per microgram of total cellular RNA and for total DNA as log10 copies per million PBMC. Effect sizes were obtained by fitting generalized linear models. Variables associated with HIV RNA or DNA with p-values <0.1 in the univariable analyses were included in the multivariable analyses.
+
+### CA HIV RNA and DNA in the AIMS cohort
 
 Having established an association between CA HIV RNA and DNA and the ART regimen in the COBRA cohort, we sought to validate these observations in another cohort. To this end, we used PBMC samples from participants of the AIMS randomized controlled trial that investigated the effects of a behavioral intervention to increase adherence to ART (de Bruin et al., 2010). Participants for this trial with electronically measured adherence had been recruited from HIV-infected individuals on ART visiting the outpatient clinic of the Academic Medical Center (Amsterdam, The Netherlands). Samples were obtained between March 2005 and February 2007. Of the 147 AIMS participants with available PBMC samples, 124 were treated with ART that consisted of two NRTIs plus either one NNRTI (n = 88) or one PI (n = 36) and were included in the analysis. Table 1 shows the participant characteristics. In brief, 88% were male and the median age was 46 years (interquartile range, 40–54 years). Median adherence to ART was 91% (66–100%). 107 out of 124 participants had undetectable plasma HIV RNA (<50 copies/ml) and 17 had detectable but low levels (range, 52–366 copies/ml). The duration of cumulative (median, 47 (25–88) months) and continuous (40 (17–72) months) virological suppression on ART prior to the measurements, as well as the duration of current NNRTI or PI regimen (median, 26 (10–46) months), was shorter in the AIMS compared to the COBRA cohort. As in the COBRA cohort, the duration of continuous virological suppression on ART prior to the measurements and the duration of the current regimen were significantly different between NNRTI- and PI-treated participants (continuous suppression, medians of 45 vs 20 months, respectively, p = 0.01; current regimen, medians of 39 vs 13 months, respectively, p < 0.0001). In addition, low-level plasma HIV RNA was detectable more frequently in PI-treated than in NNRTI-treated participants (25.0% vs 9.1%, p = 0.04). Other variables, including adherence to ART, did not differ between NNRTI- and PI-treated participants.
 
@@ -160,11 +508,27 @@ The median CA HIV RNA and total HIV DNA levels in the AIMS cohort were 1.71 (1.2
 
 Next, we built multivariable GLMs to assess the association of CA HIV RNA and DNA with ART regimens in the AIMS cohort (Figure 2B, Supplementary file 1b). In addition to the same variables as for the COBRA cohort, these models included gender, plasma HIV RNA detectability, and adherence to ART. Due to co-linearity between the durations of continuous and cumulative virological suppression and the duration of current regimen, only duration of continuous suppression was included in the multivariable analysis, as its associations with HIV RNA and DNA were the strongest among these three measures. The shorter duration of continuous virological suppression prior to the measurements and PI-based ART regimen remained significantly associated with higher levels of CA HIV RNA in the multivariable analysis (duration of suppression: padj = 0.04; ART regimen: padj = 0.02). The shorter duration of continuous suppression was also significantly associated with higher total HIV DNA (padj = 0.03), while the association of ART regimen with HIV DNA did not achieve statistical significance (padj = 0.10). We also built three alternative models, in which either duration of cumulative suppression or the duration of current regimen was included instead of the duration of continuous suppression, or the duration of continuous suppression was included together with the duration of current regimen. The adjusted associations of CA HIV RNA with the ART regimen remained significant in these alternative models (Figure 2—figure supplement 1, Figure 2—figure supplement 2).
 
-## Sensitivity analysis and associations of individual antiretroviral drugs with CA HIV RNA and DNA in the pooled cohort
+### Sensitivity analysis and associations of individual antiretroviral drugs with CA HIV RNA and DNA in the pooled cohort
 
 Having observed similar associations of the ART regimen with CA HIV RNA and DNA in both COBRA and AIMS cohorts, we pooled the two cohorts in order to achieve sufficient statistical power to perform a sensitivity analysis and to assess the associations of individual antiretroviral drugs with the levels of CA HIV RNA and DNA. As 11 individuals participated in both cohorts 7 years apart, we excluded the second samples of these individuals from the analysis, bringing the total number of participants in the pooled cohort to 213.
 
 As expected, both CA HIV RNA and DNA were significantly lower in NNRTI- than in PI-treated participants of the pooled cohort (p = 0.0006 and p = 0.01, respectively) (Figure 3A). In accordance with this, CA RNA/DNA ratios were not significantly different by ART regimen, although a trend was observed toward lower CA RNA/DNA ratios in NNRTI-treated participants (p = 0.19) (Figure 3—figure supplement 1). To demonstrate that the associations of ART regimens with CA RNA and DNA also hold in those individuals who are stably suppressed on therapy, we performed a sensitivity analysis, limiting the analysis to a subset of participants with undetectable plasma HIV RNA and more than 6 months of continuous virological suppression on ART (n = 178). In this subset, CA HIV RNA remained significantly lower in NNRTI- than in PI-treated participants (p = 0.006), while a trend in the same direction was observed for total HIV DNA (p = 0.05) (Figure 3B). To confirm that the effects of the ART regimen were independent of the duration of virological suppression, we assigned the participants into four groups according to the duration of continuous suppression (0–1 years, 2–5 years, 6–9 years, and 10 years or more) and compared CA RNA and DNA between NNRTI- and PI-treated individuals in every group separately (Figure 3—figure supplement 2). In every group, CA RNA levels were lower in NNRTI- than in PI-treated participants, with a similar but weaker effect observed for CA DNA, in complete agreement to the results obtained in the total cohort.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68174/elife-68174-fig3-v2.jpg)
+
+**Figure 3.:** Associations of antiretroviral therapy (ART) regimens (non-nucleoside reverse transcriptase inhibitor (NNRTI)-based vs protease inhibitor (PI)-based) with the levels of cell-associated HIV unspliced RNA (US RNA) and total HIV DNA in either (A) the total pooled cohort (n = 213) or (B) limiting the analysis to participants with undetectable plasma viral loads (pVLs) and >6 months of virological suppression on ART (n = 178). (C) Differences in the levels of US RNA and total HIV DNA between participants treated with ART regimens based on efavirenz (EFV), nevirapine (NVP), or PIs in the total pooled cohort. (D) Differences in the levels of US RNA and total HIV DNA between participants treated with ART regimens based on different ritonavir-boosted PIs: atazanavir (ATZ/r), darunavir (DRV/r), or lopinavir (LPV/r) in the total pooled cohort. Units of measurement are US RNA: log10 copies/μg total RNA, total DNA: log10 copies/106 peripheral blood mononuclear cells (PBMC). Levels of significance were calculated by Mann-Whitney tests or Kruskal-Wallis tests with Dunn’s post-tests, as appropriate. For three-group comparisons, Kruskal-Wallis p-values are shown on top of the graphs and Dunn’s significance levels of pairwise comparisons are shown by asterisks only where significant; **0.001 < p < 0.01; *0.01 < p < 0.05. Participant numbers per regimen are indicated below the graphs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68174/elife-68174-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Level of significance was calculated by Mann-Whitney test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68174/elife-68174-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Participants were grouped according to the time of continuous virological suppression: 0–1 years, 2–5 years, 6–9 years, and 10 years or more. Units of measurement are US RNA: log10 copies/μg total RNA, total DNA: log10 copies/106 PBMC.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/68174/elife-68174-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Units of measurement are US RNA: log10 copies/μg total RNA, total DNA: log10 copies/106 PBMC. Levels of significance were calculated by Kruskal-Wallis tests. Participant numbers per regimen are indicated below the graphs.
 
 Next, we assessed the associations of individual drugs with CA HIV RNA and DNA levels (Figure 3—figure supplement 3). As the vast majority of NNRTI-treated participants received either efavirenz or nevirapine, we wondered whether these two drugs had a similar effect on CA RNA and DNA. To this end, we compared the HIV markers between these two drugs and PIs (Figure 3C). While no difference was observed in CA RNA or total DNA levels between efavirenz- and nevirapine-treated participants, CA RNA was significantly lower in participants treated with either of these drugs compared to PI-treated participants, and a trend in the same direction was observed for total DNA. Finally, no differences were observed in either CA RNA or total DNA levels between three individual ritonavir-boosted PIs that were used by the majority of PI-treated participants (atazanavir, darunavir, and lopinavir) (Figure 3D). These results demonstrate that the effects of ART regimens on CA RNA and DNA levels were ART class-specific and not drug-specific.
 

@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Several MRI measures have been proposed as in vivo biomarkers of myelin, each with applications ranging from plasticity to pathology. Despite the availability of these myelin-sensitive modalities, specificity and sensitivity have been a matter of discussion. Debate about which MRI measure is the most suitable for quantifying myelin is still ongoing. In this study, we performed a systematic review of published quantitative validation studies to clarify how different these measures are when compared to the underlying histology. We analyzed the results from 43 studies applying meta-analysis tools, controlling for study sample size and using interactive visualization ( https://neurolibre.github.io/myelin-meta-analysis ). We report the overall estimates and the prediction intervals for the coefficient of determination and find that MT and relaxometry-based measures exhibit the highest correlations with myelin content. We also show which measures are, and which measures are not statistically different regarding their relationship with histology.
+Several MRI measures have been proposed as in vivo biomarkers of myelin, each with applications ranging from plasticity to pathology. Despite the availability of these myelin-sensitive modalities, specificity and sensitivity have been a matter of discussion. Debate about which MRI measure is the most suitable for quantifying myelin is still ongoing. In this study, we performed a systematic review of published quantitative validation studies to clarify how different these measures are when compared to the underlying histology. We analyzed the results from 43 studies applying meta-analysis tools, controlling for study sample size and using interactive visualization (https://neurolibre.github.io/myelin-meta-analysis). We report the overall estimates and the prediction intervals for the coefficient of determination and find that MT and relaxometry-based measures exhibit the highest correlations with myelin content. We also show which measures are, and which measures are not statistically different regarding their relationship with histology.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ In this study, we systematically reviewed quantitative MRI-histology comparisons
 
 ## Results
 
-## Literature survey
+### Literature survey
 
 The screening process is summarized in the flowcharts in Figure 1 and Appendix 1—figure 1. The keywords as reported in the appendix returned 688 results on PubMed (last search on 03/06/2020). These results included 50 review articles. From the 50 review articles, six were selected as relevant for both the topics of myelin and related MRI-histology comparisons (Cohen-Adad, 2018; Laule and Moore, 2018; Laule et al., 2007; MacKay and Laule, 2016; Petiet et al., 2019; Turner, 2019). After the assessment, 58 original research studies were considered eligible, as shown in Appendix 1—table 1 (in the appendix) and Figure S2. All the data collected are available in the supplementary materials (Source data 1).
 
@@ -54,13 +54,13 @@ In terms of specific modalities, the survey shows that the most common MRI appro
 
 From these 58 studies, we then focused only on brain studies and we further excluded studies not reporting either the number of subjects or the number of ROIs per subject. We also excluded one single-subject study that relied on voxels as distinct samples, whereas the other studies in this review are based on ROIs (i.e. including more than one voxel). In the end, 43 suitable studies were identified for the subsequent analyses.
 
-## Meta-analysis
+### Meta-analysis
 
 To compare the studies of interest, we first organized them according to the MRI measure used. Figure 2 and Figure 3 (and also Figure S3-S4) show the R2 values for the selected studies across measures: the highest values (R2 >0.8) are obtained mostly from MT measures, but they are associated with small sample sizes (with an average of 32 sample points). The studies with largest sample sizes are associated with R2 values between 0.6 and 0.8 for MT and T2 relaxometry, but with lower values for T1 relaxometry and other approaches.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/61523/elife-61523-fig2-v2.jpg)
 
-**Figure 2.:** 2 values between a given MRI measure and histology for each study across MRI measures, with the area proportional to the number of samples.To see the interactive figure: https://neurolibre.github.io/myelin-meta-analysis/02/closer_look.html#figure-3.
+**Figure 2.:** To see the interactive figure: https://neurolibre.github.io/myelin-meta-analysis/02/closer_look.html#figure-3.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/61523/elife-61523-fig3-v2.jpg)
 
@@ -70,7 +70,7 @@ To combine the results for each measure, we then used a mixed-effect model: in t
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/61523/elife-61523-fig4-v2.jpg)
 
-**Figure 4.:** 2 values reported by the studies and estimated from the mixed-effect model for each measure.The hourglasses and the dotted lines in the mixed-effect model outcomes represent the prediction intervals. To see the interactive figure: https://neurolibre.github.io/myelin-meta-analysis/03/meta_analysis.html#figure-5.
+**Figure 4.:** The hourglasses and the dotted lines in the mixed-effect model outcomes represent the prediction intervals. To see the interactive figure: https://neurolibre.github.io/myelin-meta-analysis/03/meta_analysis.html#figure-5.
 
 Apart from MPF and MWF, all the measures showed R2 overall estimates in the range 0.21–0.53. To investigate the significance of the differences between measures, we conducted a repeated measures meta-regression on every R2 estimate recorded (98 in total over 43 studies). As shown in Figure 5 (and also Figure S6), the measures can be roughly subdivided in two groups: MT- and relaxometry-based measures gave significantly higher R2 estimates compared to diffusion-based measures. Within the diffusion-based measures, FA shows slightly higher estimates than the others, with marginal significance over RD and AD or no significance in case of MD.
 
@@ -84,11 +84,102 @@ When considering the prediction intervals calculated using τ2 (the variance of 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/61523/elife-61523-fig6-v2.jpg)
 
-**Figure 6.:** 2 values (top: reference techniques; middle: pathology model; bottom: tissue types).To see the interactive figure: https://neurolibre.github.io/myelin-meta-analysis/04/other_factors.html#figure-7.
+**Figure 6.:** To see the interactive figure: https://neurolibre.github.io/myelin-meta-analysis/04/other_factors.html#figure-7.
+
+**Table 1.**
+ Results from the mixed-effect models: for each measure we reported the number of studies, the estimate and standard error of the overall R2 distribution, the τ2 and the I2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>Number of studies</th>
+      <th>Estimate</th>
+      <th>Standard error</th>
+      <th>Tau2</th>
+      <th>I2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MTR</td>
+      <td>16</td>
+      <td>0.508</td>
+      <td>0.0691</td>
+      <td>0.07</td>
+      <td>96.03%</td>
+    </tr>
+    <tr>
+      <td>MPF</td>
+      <td>10</td>
+      <td>0.7657</td>
+      <td>0.0455</td>
+      <td>0.0128</td>
+      <td>83.18%</td>
+    </tr>
+    <tr>
+      <td>FA</td>
+      <td>17</td>
+      <td>0.3766</td>
+      <td>0.0663</td>
+      <td>0.0652</td>
+      <td>87.49%</td>
+    </tr>
+    <tr>
+      <td>RD</td>
+      <td>15</td>
+      <td>0.3364</td>
+      <td>0.0679</td>
+      <td>0.0615</td>
+      <td>92.30%</td>
+    </tr>
+    <tr>
+      <td>MD</td>
+      <td>12</td>
+      <td>0.2639</td>
+      <td>0.0679</td>
+      <td>0.044</td>
+      <td>87.35%</td>
+    </tr>
+    <tr>
+      <td>T1</td>
+      <td>8</td>
+      <td>0.5321</td>
+      <td>0.0692</td>
+      <td>0.0328</td>
+      <td>86.51%</td>
+    </tr>
+    <tr>
+      <td>AD</td>
+      <td>9</td>
+      <td>0.2095</td>
+      <td>0.0802</td>
+      <td>0.048</td>
+      <td>97.69%</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>7</td>
+      <td>0.3938</td>
+      <td>0.1023</td>
+      <td>0.0651</td>
+      <td>84.49%</td>
+    </tr>
+    <tr>
+      <td>MWF</td>
+      <td>4</td>
+      <td>0.6997</td>
+      <td>0.0432</td>
+      <td>0.0041</td>
+      <td>73.19%</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
-## Indirect measures are the most popular (for better or worse)
+### Indirect measures are the most popular (for better or worse)
 
 The literature survey offers an interesting perspective on popular research trends (Figure S2). The first consideration one can make is that every myelin imaging technique achieves myelin sensitivity through different means. A clear example is offered by the two most common approaches in this meta-analysis, DWI and MT: the MT effect is driven by saturation pulses interacting with myelin macromolecules that transfer their magnetization to water, whereas in diffusion experiments myelin is just not part of the picture. Diffusion acquisitions are blind to direct myelin measurement because the TEs used are too long (~100 ms) to be influenced by the actual macromolecules – with T2 of ~ 10 us (Stanisz et al., 1999) – or even the water molecules trapped in the myelin sheath – with T2 of ~ 30 ms (MacKay et al., 1994). To infer myelin content, one needs to rely on the interaction between intracellular and extracellular water compartments. The majority of diffusion studies included in this analysis used tensor-based measures (with fractional anisotropy being the most common), but some also used kurtosis-based analysis. The main issue with this approach is that other factors affect those measures (Beaulieu, 2002; Beaulieu, 2009), making it difficult to specifically relate changes in water compartments to changes in myelin.
 
@@ -100,7 +191,7 @@ Finally, other studies used a diverse collection of other measures, including T1
 
 After this general overview, it is clear that each modality could be a suitable candidate for a quantitative myelin biomarker. To then make a choice informed by the studies here reported, it becomes necessary to consider not only effect sizes in terms of correlation, but also sample sizes and acquisition times.
 
-## There is no myelin MRI measure true to histology
+### There is no myelin MRI measure true to histology
 
 When looking at the R2 values across the different measures, the first detail that catches one’s eye is how most measures present a broad range of values (Figure 2 and Figure 3). When taking into account the sample size, the largest studies show higher correlations for MT and T2 relaxometry studies than any other approach (Figure S3 and Figure S4). In quantitative terms, the meta-analysis corroborates this idea, showing that MPF and MWF tend to be more specific to myelin compared to the other measures (respectively with R2 = 0.7657 and R2 = 0.6997), in line with the underlying theory. Notably, diffusion-based measures show the lowest overall estimates (with values between R2 = 0.3766 for FA and R2 = 0.2095 for AD): this could be due to the fact, as already mentioned, that DWI does not specifically measure myelin properties, and despite FA and RD being influenced by the myelin content, they are also influenced by other factors that make them unsuitable as measures of myelin. The repeated measure meta-regression confirms this overall picture, clearly distinguishing MT- and relaxometry-based measures from diffusion-based ones (Figure 5).
 
@@ -112,19 +203,19 @@ In addition to differences in experimental and methodological designs, there are
 
 It should be clear at this point that any debate about a universal MRI-based measure of myelin is pointless, at least at the moment, as the overall picture provided by previous studies does not point to any such ideal measure. Nevertheless, is debating about a universal measure helpful for future studies?
 
-## Better biomarkers require more reproducibility studies
+### Better biomarkers require more reproducibility studies
 
 We hope this meta-analysis convinces the reader that a holy grail of myelin imaging does not exist, at least as long as we consider histology to be the ground truth. Given that we all have to pick our poison, the upside is that measures based on MT and relaxometry are not statistically different, and therefore, future studies have an actual choice among candidate measures. For further progress, rather than debating about a perfect measure, we would argue that what is missing at the moment is a clear picture of what can be achieved with each specific MRI modality. The studies examined here focus on a large set of different measures, and more than half of them considered at most two measures, highlighting how the field is mostly focused on formulating new measures. While it is understood that novel measures can provide new perspectives, it is also fundamentally important to understand the concrete capabilities and limitations of current measures. From this meta-analysis, what the literature clearly lacks is reproducibility studies, specifically answering two main questions: (1) what is the specificity of each measure? We should have a practical validation of our theoretical understanding of the relevant confounds; (2) what is the ‘parameter sensitivity’ of each measure? Here, we refer to parameter sensitivity in a broad sense, that includes also experimental conditions and methodological choices. The results here presented show how certain conditions (e.g. pathology) seem to affect the coefficient of determination more than others but given the limited number of studies for each modality, we refrained from additional analyses to avoid speculation. A warning message that is evident from these results is the inherent limitation of DWI for estimating myelin content: this is not by any means a novel result (Beaulieu, 2002; Beaulieu, 2009), but it is nevertheless worth reiterating given the outcomes of our analysis. If estimating myelin content is relevant in a diffusion study, it is important to consider complementing the diffusion measure with one of the modalities here reviewed; in this way, it would be possible to decouple the influence of myelin content from the many other factors that come into play when considering diffusion phenomena.
 
 Finally, an important factor to take into account when choosing a biomarker of myelin is the actual application. For animal research, long acquisitions are not a major issue. However, when considering biomarkers for potential clinical use, the acquisition time can become a relevant issue. An example is the well-established multi-echo spin-echo implementation of MWF, that can only be used for a specific slice in a hypothetical clinical scenario. Faster techniques have been proposed for estimating it with gradient- and spin-echo (GRASE) sequences (Does and Gore, 2000; Feinberg and Oshio, 1991; Prasloski et al., 2012). Even in this case, the acquisition time still reaches 15 min for acquiring roughly the whole brain with an isotropic resolution of 2 mm. Complex MT acquisitions such as qMT suffer from the same problem, although it is possible to use optimized and faster protocols to focus specifically on MPF (Khodanovich et al., 2019; Khodanovich et al., 2017; Yarnykh, 2012).
 
-## Conclusions
+### Conclusions
 
 Several MRI measures are sensitive to myelin content and the current literature suggests that most of them are not statistically different in terms of their relationship with the underlying histology. Measures highly correlated with histology are also the ones with a higher expected specificity. This suggests that future studies should try to better address how specific each measure is, for the sake of clarifying suitable applications.
 
 ## Materials and methods
 
-## Review methodology
+### Review methodology
 
 The Medline database (https://pubmed.ncbi.nlm.nih.gov) was used to retrieve the articles. The keywords used are specified in the appendix. We followed the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) guidelines for record screening and study selection. The results were first screened to remove unrelated work. Specifically we discarded: work relying only on MRI; work relying only on histology or equivalent approaches; work reporting only qualitative comparisons. After this first screening, the remaining papers were assessed. At this stage, we discarded: studies using MRI-based measures in arbitrary units (e.g. T1-weighted or T2-weighted data); studies using measures of variation in myelin content (defined either as the difference between normal and abnormal myelin content) either for MRI or for histology; studies using arbitrary assessment scales; studies comparing MRI-based absolute measures of myelin with histology-based relative measures (e.g. g-ratio); studies reporting other quantitative measures than correlation or R2 values; studies comparing histology from one dataset and MRI from a different one. As an additional source for potential candidate studies, we screened the review articles in the initial results, and we selected the relevant studies that were not already present in the studies already selected.
 
@@ -132,7 +223,7 @@ From the final papers, we collected first the following details: the DOI; which 
 
 We then proceeded to collect the quantitative results reported for each measure and for each study in the form of R2. Given that different studies may rely on a different strategy when reporting correlations, we adopted the following reasoning to limit discrepancies across studies while still objectively representing each of them. In case of multiple correlation values reported, for our analysis we selected the ones referring to the whole dataset and the entire brain if available, and considering each ROI in a given subject as a sample if possible; if only correlation values for specific ROIs were reported, the one for the most common reported structure would be chosen. In the case of multiple subjects, if data were provided separately for each group, the correlation for the control group was used. When different comparison methods were reported (e.g. both Pearson and Spearman correlation) or if the MRI data was compared with multiple references (e.g. both histology and immunohistochemistry), the correlations used were chosen on the basis of the following priority orders (from the most preferable to the least): for multiple comparison methods, linear regression, Spearman correlation, Pearson correlation; for multiple reference techniques, electron microscopy, immunohistochemistry, histology. Finally, in any other case where more than one correlation value was available, the most conservative value was used. Any other additional value was in any case mentioned in the notes of the respective study.
 
-## Meta-analysis
+### Meta-analysis
 
 For the quantitative analysis, we restricted our focus on brain studies and only on the ones providing an indication of both the number of subjects and the number of ROIs. For each study, we computed the sample size as the product between the number of subjects and the number of ROIs per subject. In this way, we were able to compare the reported R2 values across measures taking into account the related number of points actually used for correlation purposes. We note that correlation or regression analyses run on multiple ROIs and subjects represents a repeated measures analysis, for which the degrees of freedom computation can be complex; however, most papers neglected the repeated measures structure of the data and thus the sample size computation here represents a very approximate and optimistic view of the precision of each R2 value.
 

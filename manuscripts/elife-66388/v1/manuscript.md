@@ -11,16 +11,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04xs57h96 Department of Psychological Sciences, University of Liverpool Liverpool United Kingdom
-2. https://ror.org/026k5mg93 School of Psychology, University of East Anglia Norwich United Kingdom
-3. https://ror.org/01nrxwf90 Patrick Wild Centre, Division of Psychiatry, Royal Edinburgh Hospital, University of Edinburgh Edinburgh United Kingdom
-4. https://ror.org/00240q980 Dipartimento di Psicologia Generale, Università di Padova Padova Italy
+1. Department of Psychological Sciences, University of Liverpool Liverpool United Kingdom ([ROR:04xs57h96](https://ror.org/04xs57h96))
+2. School of Psychology, University of East Anglia Norwich United Kingdom ([ROR:026k5mg93](https://ror.org/026k5mg93))
+3. Patrick Wild Centre, Division of Psychiatry, Royal Edinburgh Hospital, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+4. Dipartimento di Psicologia Generale, Università di Padova Padova Italy ([ROR:00240q980](https://ror.org/00240q980))
 
 † Corresponding author
 
 ## Abstract
 
-It is now possible for scientists to publicly catalogue all the data they have ever collected on one phenomenon. For a decade, we have been measuring a brain response to visual symmetry called the sustained posterior negativity (SPN). Here we report how we have made a total of 6674 individual SPNs from 2215 participants publicly available, along with data extraction and visualization tools ( https://osf.io/2sncj/ ). We also report how re-analysis of the SPN catalogue has shed light on aspects of the scientific process, such as statistical power and publication bias, and revealed new scientific insights.
+It is now possible for scientists to publicly catalogue all the data they have ever collected on one phenomenon. For a decade, we have been measuring a brain response to visual symmetry called the sustained posterior negativity (SPN). Here we report how we have made a total of 6674 individual SPNs from 2215 participants publicly available, along with data extraction and visualization tools (https://osf.io/2sncj/). We also report how re-analysis of the SPN catalogue has shed light on aspects of the scientific process, such as statistical power and publication bias, and revealed new scientific insights.
 
 ## Introduction
 
@@ -58,7 +58,7 @@ To further explore these effects, we ran three meta-analyses (using the metamean
 
 The amplitudes of the P1 peak and the N1 trough from the same trials provide an instructive comparison. Our SPN papers do not need large P1 and N1 components, so these are unlikely to have a systematic effect on publication. P1 peak was essentially identical in published and unpublished work (4.672 vs 4.686, t (195.11) = –0.067, P=.946; Figure 3B). This is potentially an interesting counterpoint to the SPN. However, the N1 trough was larger in published work (–8.736 vs. –7.155. t (183.61) = –5.636, P<.001; Figure 3C). The funnel asymmetry was also significant for both P1 and N1.
 
-## Summary for horseman one: publication bias
+### Summary for horseman one: publication bias
 
 This analysis suggests a tendency for large SPNs to make it into the literature, and small ones to linger in the file drawer. In contrast, the P1 was essentially identical in published and unpublished work. However, we do not think publication bias is a problem in our SPN research. The published and unpublished SPNs are from heterogenous studies, with different stimuli and tasks. We would not necessarily expect them to have the same mean amplitude. In other words, the SPN varies across studies not only due to neural noise and measurement noise, but also due to experimental manipulations affecting the neural signal (although W-load and Task were similar in published and unpublished work, see Box 2). Furthermore, it is not the case that our published papers selectively report one side of a distribution with a mean close to zero. Our best estimate of mean SPN amplitude (–0.954 microvolts) is far below zero [95% CI = –1.049; –0.860]. The file drawer has no embarrassing preponderance of sustained posterior positivity.
 
@@ -82,23 +82,23 @@ Only a third of the 249 SPNs are 0.5 microvolts or less. However, many papers do
 
 The table in Figure 4G gives required sample size (N) for 80% chance of obtaining SPNs of a particular amplitude (power = 0.8, alpha = 0.05, two-tailed). This suggests relatively large 1.5 microvolt SPNs could be obtained with just 9 participants. However, estimates of effect size are less precise at the high end (see the supplementary polynomial regression analysis at https://osf.io/f2659). A conservative yet feasible approach is to collect at least 20 participants even when confident of obtaining a large SPN or SPN modulation. Alternatively, researchers may require a sample that allows them to find the minimum effect that would still be of theoretical interest. Brysbaert, 2019, suggests this may often be ~0.4 in experimental psychology, and this requires 52 participants. Indeed, the theoretically interesting effect of Task on SPN amplitude could be in this range.
 
-## Power of nonparametric tests
+### Power of nonparametric tests
 
 Of the 249 SPNs, 9.2% were not normally distributed about the mean according to the Shapiro-Wilk test (8.4% according to Kolmogorov-Smirnov test). Non-parametric statistics could thus be appropriate for some SPN analyses. For a non-parametric SPN, significantly more than half of the participants must have lower amplitude in the regular condition. We can examine this with a binomial test. Consider a typical 24 participant SPN: For a significant binomial test (P<.05, two tailed), we need at least 18/24=3/4 participants in the sample to show the directional effect (regular < random). Next, consider doubling sample size to 48: We now need only 32/48=2/3 participants in the sample to show the directional effect. Figure 4D–F illustrates the proportion of participants showing the directional effect as a function of SPN amplitude. Only 146 of the 249 grand-average SPNs (59%) were computed from a sample where at least 3/4 of the participants showed the directional effect. Meanwhile, 183 (73%) were from a sample where at least 2/3 of the participants showed the directional effect (blue horizontals in Figure 4D). This analysis recommends increasing sample size to 48 in future experiments.
 
-## Power of SPN modulation effects
+### Power of SPN modulation effects
 
 When there are more than two conditions, mean SPN differences may be tested with ANOVA. To assess statistical power, we reran 40 representative ANOVAs from published and unpublished work. This includes all those which support important theoretical conclusions (Makin et al., 2015; Makin et al., 2016; Makin et al., 2020c; see https://osf.io/hgncs/ for a full list of the experiments used in this analysis). Observed power was less than the desired 0.8 in 15 of 40 (Figure 4H). We note that several underpowered analyses are from Project 7 (Makin et al., 2015). This is still an active research area, and we will increase sample size in future experiments.
 
-## Increasing the number of trials
+### Increasing the number of trials
 
 Another line of attack is to increase the number of trials per participant. Boudewyn et al., 2018 argue that adding trials is alternative way to increase statistical power in ERP research, even when split-half reliability is apparently near ceiling (as it is in SPN research: Makin et al., 2020b). In one highly relevant analysis, Boudewyn et al., 2018 examined a within-participant 0.5 microvolt ERP modulation with a sample of 24 (our median sample). Increasing the number of trials from 45 to 90 increased the probability of achieving a significant effect from ~.54 to~.89 (see figure eight in Boudewyn et al., 2018). These authors caution that simulations of other ERP components are required to establish generalizability. We typically include at least 60 trials in each condition. However, going up to 100 trials per condition could increase SPN effect size, and this may mitigate the need to increase sample size (Baker et al., 2021). Of course, too many trials could introduce participant fatigue and a consequent drop in data quality. There is likely a sample size X trial number ‘sweet spot’ and are unlikely to have hit it already by luck.
 
-## Typical sample sizes in other EEG research
+### Typical sample sizes in other EEG research
 
 When planning our experiments, we have often assumed that 24 is a typical sample size in EEG research. This can be checked objectively. We searched open-access EEG articles within the PubMed Central database using a text-mining algorithm. A total of 1,442 sample sizes were obtained. Mean sample size was 35 (±22.97) and a median was 28. The most commonly occurring sample size was 20. We also extracted sample sizes from 74 EEG datasets on the OpenNeuro BIDS compliant repository. The mean sample size was 39.34 (±38.56), the median was 24, and the mode was again 20. Our SPN experiments do indeed have typical sample sizes, as we had assumed.
 
-## Summary for horseman two: low statistical power
+### Summary for horseman two: low statistical power
 
 Low statistical power is an obstacle to cumulative SPN research. Before the COVID pandemic stopped all EEG research, we were completing around 10 EEG experiments per year with a median sample of 24. When EEG research starts again, we may reprioritize, and complete fewer experiments per year with more participants in each. Furthermore, one can tentatively assume that other ERPs have comparable signal/noise properties to the SPN. If so, we can plausibly infer that many ERP experiments are underpowered for detecting 0.5 microvolt effects. Figure 4G thus provides a rough sample size guide for ERP researchers, although we stress that more ERP-specific estimates of effect size should always be treated as superior. We also stress that our sample size recommendations do not directly apply to multi-level or multivariate analyses, which are increasingly common in many research fields. Nevertheless, this investigation has strengthened our conviction that EEG researchers should collect larger samples by default. Several benefits more than make up for the extra time spent on data collection. Amongst other things, larger samples reduce Type 2 error, give more accurate estimates of effect size, and facilitate additional exploratory analyses on the same data sets.
 
@@ -106,7 +106,7 @@ Low statistical power is an obstacle to cumulative SPN research. Before the COVI
 
 Sensitivity of an effect to arbitrary analytical options is called the ‘vibration of the effect’ (Button et al., 2013). An effect that vibrates substantially is vulnerable to ‘P-hacking’: that is, exploiting flexibility in the analysis pipeline to nudge effects over the threshold for statistical significance (for example, P=.06 conveniently becomes P=.04, and the result is publishable). “Double dipping” is one particularly tempting type of P-hacking for cognitive neuroscientists because we typically have such large, multi-dimensional data sets (Kriegeskorte et al., 2009). Researchers can dip into a large dataset, observe where something is happening, then run statistical analysis on this data selection alone. For example, in one early SPN paper, Höfel and Jacobsen, 2007a state that "Time windows were chosen after inspection of difference waves" (page 25, section 2.8.3). It is commendable that Höfel and Jacobsen were so explicit: often double dipping is spread across months where researchers alternate between ‘preliminary’ data visualization and ‘preliminary’ statistical analysis so many times that they lose track of which came first. Double dipping beautifies results sections, but without appropriate correction, it inflates Type 1 error rate. We thus attempted to estimate the extent of P-hacking in our SPN research, with a special focus on double dipping.
 
-## Electrode choice
+### Electrode choice
 
 Post hoc electrode choice can sometimes be justified: Why analyse an electrode cluster that misses the ERP of interest? Post hoc electrode choice could be classed as a questionable research practice rather than flagrant malpractice (Agnoli et al., 2017; Fiedler and Schwarz, 2015; John et al., 2012). Nevertheless, we must at least assess the consequences of this flexibility. What would have happened if we had dogmatically stuck with the same electrodes for every analysis, without granting ourselves any flexibility at all?
 
@@ -126,7 +126,7 @@ To illustrate this in another way, Figure 6 shows a colour-coded table of p valu
 
 We applied the same reanalysis to our 40 representative ANOVA main effects and interactions. Here there is more cause for concern: 38 of the 40 effects were significant using the original electrode cluster, however this goes down to 33 with Cluster 1, 35 with Cluster 2, and to just 29 with Cluster 3 (Figure 5D). Flexible electrode choice has thus significantly increased the number of significant SPN modulations (χ2 (3)=8.107, P=.044).
 
-## Spatio-temporal clustering
+### Spatio-temporal clustering
 
 The above analysis examines consequences of choosing different electrode clusters a priori, while holding time window constant. Next, we used a spatio-temporal clustering technique (Maris and Oostenveld, 2007) to identify both electrodes and timepoints where the difference between regular and irregular conditions is maximal. Does this purely data driven approach lead to the same conclusions as the original analysis from a priori electrode clusters?
 
@@ -144,7 +144,7 @@ To quantify these consistencies, SPNs were recomputed using the electrode cluste
 
 There are two further noteworthy results from spatiotemporal clustering analysis. First, 74% of published data sets yielded a significant cluster, while the figure was only 57% for unpublished data (as of May 2022). This is another estimate of publication bias. Second, we can explain some of the amplitude variation shown in Figure 8. As described in Box 2, 33% of variance in grand-average SPN amplitude can be predicted by two factors called W and Task (SPN (microvolts) = –1.669 W – 0.416Task + 0.071). We also ran this regression analysis on the spatiotemporal cluster SPNs (i.e., the blue data points in Figure 8). The two predictors now explained just 16.8% of variance in grand-average SPN amplitude (SPN (microvolts) = –0.557 W – 0.170Task – 0.939). The reduced R2, shallower slopes and lower intercept are largely caused by the fact that many data sets had to be excluded because they did not yield a cluster (i.e., the red data points in Figure 8). This highlights one disadvantage of spatiotemporal clustering: For many purposes we want to include small and non-significant SPNs in pooled analysis of the whole catalogue. However, these relevant data points are missing or artificially set at zero if SPNs are extracted by spatiotemporal clustering.
 
-## Pre-processing pipelines
+### Pre-processing pipelines
 
 There are many pre-processing stages in EEG analysis (Pernet et al., 2020). For example, our data is often re-referenced to a scalp average, low pass filtered at 25 Hz, down-sampled to 128 Hz and baseline corrected using a –200 to 0ms pre-stimulus interval. We then remove some blink and other large artifacts with independent components analysis (Jung et al., 2000). We sometimes remove noisy electrodes with spherical interpolation. We then exclude trials where amplitude exceeds +/-100 microvolts at any electrode.
 
@@ -156,7 +156,7 @@ To examine whether these pre-processing norms are consequential, we reanalysed d
 
 We conclude that post-hoc selection of electrodes and time windows are weak points that can be exploited by unscrupulous P-hackers. Earlier points in the pipeline are less susceptible to P-hacking because changing them does not predictably increase or decrease the desired ERP effect.
 
-## Summary for horseman three: P-hacking
+### Summary for horseman three: P-hacking
 
 It is easier to publish a simple story with a beautiful procession of significant effects. This stark reality may have swayed our practice in subtle ways. However, our assessment is that P-hacking is not a pervasive problem in SPN research, although some effects rely too heavily on post hoc data selection.
 

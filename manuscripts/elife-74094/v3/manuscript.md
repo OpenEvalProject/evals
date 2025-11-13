@@ -16,13 +16,13 @@
 
 ### Affiliations
 
-1. https://ror.org/048a87296 Uppsala University, Immunology Genetics and Pathology Uppsala Sweden
-2. https://ror.org/00krab219 Department of Molecular Pathophysiology, Institute of Advanced Medical Sciences, Nippon Medical School Tokyo Japan
-3. https://ror.org/00pd74e08 Institute of Cardiovascular Organogenesis and Regeneration, Faculty of Medicine, WWU Münster Münster Germany
-4. https://ror.org/01v55qb38 Department of Cell Biology, National Cerebral and Cardiovascular Center Research Institute Suita Japan
-5. https://ror.org/048a87296 Department of Immunology, Genetics and Pathology, Rudbeck Laboratory, Uppsala University Uppsala Sweden
-6. https://ror.org/056d84691 Department of Medicine Huddinge (MedH), Karolinska Institutet, Campus Flemingsberg Huddinge Sweden
-7. https://ror.org/0464eyp60 Department of Molecular, Cellular, and Cancer Biology, University of Massachusetts Medical School Worcester United States
+1. Uppsala University, Immunology Genetics and Pathology Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
+2. Department of Molecular Pathophysiology, Institute of Advanced Medical Sciences, Nippon Medical School Tokyo Japan ([ROR:00krab219](https://ror.org/00krab219))
+3. Institute of Cardiovascular Organogenesis and Regeneration, Faculty of Medicine, WWU Münster Münster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))
+4. Department of Cell Biology, National Cerebral and Cardiovascular Center Research Institute Suita Japan ([ROR:01v55qb38](https://ror.org/01v55qb38))
+5. Department of Immunology, Genetics and Pathology, Rudbeck Laboratory, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
+6. Department of Medicine Huddinge (MedH), Karolinska Institutet, Campus Flemingsberg Huddinge Sweden ([ROR:056d84691](https://ror.org/056d84691))
+7. Department of Molecular, Cellular, and Cancer Biology, University of Massachusetts Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
 
 † Corresponding author
 
@@ -42,21 +42,65 @@ Here, we took advantage of transgenic zebrafish reporters which allowed us to vi
 
 ## Results
 
-## MCs and LECs interact during LEC migration
+### MCs and LECs interact during LEC migration
 
 To address a potential interaction between MCs and LECs around arteries, we examined their distribution around aISVs, using the reporter lines Tg(lyve1b:DsRed);Tg(flt1:YFP);Tg(pdgfrb:GFP), where lyve labels veins and lymphatics, flt1 arteries and pdgfrb high expression the MCs (Figure 1A–B and Figure 1—figure supplement 1). We found the spatial proximity, with MCs being sandwiched between the aISV and the migrating LEC at 4 dpf (Figure 1A). Subsequently, to identify the temporal sequence of LEC migration and appearance of MC along intersegmental vessels, we performed time-lapse imaging using the above reporter lines. We have observed that LECs migrated out from HM immediately after the emergence of pdgfrb+ MCs (Figure 1B and C, Figure 1—video 1). We confirmed these observations by time-lapse imaging of MCs and LECs, and blood vessels, respectively, in Tg(lyve1b:DsRed);Tg(kdrl:TagBFP);Tg(pdgfrb:GFP) transgenic lines that allows separation of lymphatic, only labelled by lyve, from veins which are co-labelled by lyve and kdrl (Figure 1—figure supplement 1, Figure 1—video 2), and in Tg(dab2:GAL4FF);Tg(UAS:GFP);Tg(pdgfrb:mCherry) where dab2 is expressed in LECs and venous endothelial cells (Figure 1—figure supplement 1, Figure 1—video 3). Utilizing these reporters, we found that in approximately 90% of the cases, LEC migrated towards and interacted with the MC residing on aISV (n = 21 Figure 1D–E, Figure 1—video 5, Figure 1—video 6). The number of MCs was not changed before and after the LEC migration (Figure 1). When LECs migrated out from the HM region, we noticed that LECs dynamically extended and regressed protrusions and actively reach towards the MCs (Figure 1E, Figure 1—video 4), while MCs appeared still on aISV (Figure 1—figure supplement 1). To understand the biological significance of the interaction between LECs and MCs, we quantified the velocity of LEC migration along aISV and found that the LECs in contact with the MCs migrated two times faster than LECs migrating along aISV without MCs (Figure 1G). These observations suggest that MCs might provide directional cues to promote robust LEC migration.
 
-## MCs promote lymphatic vessel formation
+![Figure 1.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig1-v3.jpg)
+
+**Figure 1.:** (A) Confocal stack image of trunk aISV in 4 dpf Tg(flt1:YFP); Tg(-5.2lyve1b:DsRed2);TgBAC(pdgfrb:GFP) of lymphatic endothelial cells (grey, LEC), arterial intersegments vessels (magenta, aISV) and mural cells (green, MC). Scale bar; 10 μm. (B) Confocal stack images from time-lapse images in the trunk of 2 dpf Tg(flt1:YFP); Tg(-5.2lyve1b:DsRed2); TgBAC(pdgfrb:GFP) embryos (LECs in grey). Boxed regions are enlarged (right panels). Arrowheads indicate pdgfrb+ MCs (green) next to aISVs (magenta during LEC migration). Scale bars; 100 μm or 50 μm (enlarged image). (C) Quantification of aISVs with (n=10) or without (n=3) MCs presence from n=7 embryos when LECs left HM for time lapse videos as in (E). (D) Quantification of LEC and MC interaction during migration (n=10 embryos, with four somites counted per embryo). Migrating following MC n=18, migrating not following MC n=3 from time lapse videos in (E). (E) Confocal stack images from time lapse movies of LEC migration. TgBAC(pdgfrb:GAL4FF);(UAS:GFP) in green and Tg(-5.2lyve1b:DsRed2) in grey. Scale bar: 50 μm (F) Quantification of MC number around aISVs (n=14) from n=7 embryos at the start and end of the migration, quantified from time lapse videos in (E). Data are presented as mean ± SEM, unpaired two-tailed Student’s t-test was used. Ns, no significance. (G) Quantification of duration of LEC migration with (n=5) or without (n=3) contacting MCs from n=6 embryos. Data are presented as mean ± SEM. unpaired two-tailed Student’s t-test was used. **p<0.005 (H) Confocal stack images of Tg(pdgfrb:GAL4FF); Tg(UAS:GFP) (green) and Tg(-5.2lyve1b:DsRed2) (grey) in the trunk of sibling (top) and pdgfrbum148 mutant (bottom) embryos at 5 dpf. Lymphatic vessle are rendered using lyve1b:DsRed2 channel in IMARIS s structure is rendered with lyve1b:DsRed2 channel in IMARIS (right panel). Scale bar: 100 μm. (I) Quantification of pdgfrb+ mural cell numbers around ISVs in siblings (n=20) and pdgfrbum148 mutants (n=10). Data are presented as mean ± SEM, Mann Whitney test was used. ***p<0.0001. (J) Quantification of surface area of lymphatic vasculature in siblings (n=20) and pdgfrbum148 mutants (n=10). Data are presented as mean ± SEM, unpaired two-tailed Student’s t-test was used. *p<0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Heatmap generated with confocal z-stack images from time-lapse images in the trunk of 2 days post fertilization (dpf) Tg(dab2:GALFF);Tg(UAS:GFP); Tg(pdgfrb:mCherry) embryos. Heatmap was generated based on the intensity of mCherry. Arrow indicates pdgfrbhigh MC around aISV. (B) Confocal z-stack images from time-lapse images in the trunk of 2 dpf Tg(lyve1b: mCherry);Tg(kdrl:TagBFP);TgBAC(pdgfrb:GFP) embryo. Boxed regions are enlarged in the bottom. Arrowheads indicate pdgfrb+ MCs (green) around aISV (magenta) prior to (bottom left) and during (bottom middle and right) LEC (grey) migration. Scale bars: 50 or 30 μm (enlarged image). (C) Confocal z-stack images from time-lapse images in the trunk of Tg(dab2:GALFF);Tg(UAS:GFP) (grey);Tg(pdgfrb:mCherry) (green) in left panels and TgBAC(pdgfrb:GAL4FF);(UAS:GFP) in right panels (green) and Tg(dab2:GALFF);Tg(UAS:GFP) (grey) in middle panels. White arrow heads, MCs appear around aISV. Arrow, sprouting front of migrating LEC. Scale bar: 100 μm. (D) Quantification of MC (n = 30) movement from n = 7 embryos as still (n = 26) and mobile (n = 4) during the time-lapse videos as in (Figure 1E). Data are presented as ratio of total number of cells counted.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Confocal z-stack images of 5 dpf Tg(fli1a:nEGFP);(–5.2lyve1b:DsRed2) treated with 20 μM PDGFR inhibitor AG1296 (n = 15) or DMSO (n = 15) from 48 hours post fertilization (hpf). Scale bar: 100 μm. (B) Quantification of total lymphatic endothelial cell (LEC) number in (C). Data are presented as mean ± SEM, Mann-Whitney test was used. ***p < 0.0005.
+
+### MCs promote lymphatic vessel formation
 
 We next asked if pdgfrb-positive MCs are necessary for lymphatic vessels formation. PDGFRβ is known to be essential for MC development, especially their proliferation and migration (Ando et al., 2016; Gaengel et al., 2009). The pdgfrbum148 mutant zebrafish (Kok et al., 2015) showed a 30% reduction of MC number around aISVs (Figure 1H–I). Coincidently, trunk lymphatic vasculature formation in pdgfrbum148 mutant zebrafish revealed slight reduction in the network formation. The rendering of lyve:DsRed labelled lymphatic vessels, as a measurement of lymphatic vessels density, revealed on average an area of 1 mm2 in the sibling vs. 0.7 mm2 in the pdgfrbum148 mutants (Figure 1H and J). Treatment with a PDGFRβ inhibitor, AG1296 from 48 hpf onwards, led to a greater reduction in MC coverage and LECs number (Figure 1—figure supplement 2A-B). Together, although it cannot be excluded that inhibitor treatment directly affected lymphatic vessels development, these observations suggest a requirement of pdgfrb+ MC for lymphatic development.
 
 As both mutant and AG1296-treated larvae retained a substantial proportion of their MCs, we decided to eliminate pdgfrb+ MCs utilizing MC-selective nitroreductases (NTR) and metorodinazole (MTZ) ablation system (NTR-MTZ ablation system) (Curado et al., 2008), TgBAC(pdgfrb:Gal4FF);Tg(14xUAS:3xFLAG-NTR, NLS-mCherry), to confirm the involvement of MCs in lymphatic vessel formation. In this transgenic line, MTZ is converted to its cytotoxic form by NTR expressed in pdgfrb+ MCs, which leads to selective MC death (Figure 2—figure supplement 1A). When ablating MCs just prior to LEC migration out from HM region by utilizing this MC-selective NTR-MTZ ablation system, LEC migration along aISV and subsequently TD formation were severely compromised (Figure 2A–C, Figure 2—figure supplement 1B). To further determine if MCs are necessary for LEC migration, we ablated MCs locally by two-photon laser just after LEC migrated out of the HM region (Figure 2D–G). To ensure that we did not damage the aISV during the ablations, we recorded the transmitted light videos and observed unperturbed blood flow in the aISV before and after ablation, suggesting that the vessel remained undamaged and intact (Figure 2—figure supplement 2A, Figure 2—videos 3; 4). As a control we targeted the tissue adjacent to the MCs in the same embryo (Figure 2). The time-lapse imaging over 5 hours post ablation (hpa) confirmed that LEC migration was dramatically inhibited in the MC-ablated group compared to the control non-MC-ablated group (Figure 2F and H, Figure 2—video 1, Figure 2—video 2). We also imaged the same embryos 1 day later and observed that 40% of the larvae receiving MC ablation failed to form DLLV completely, while all control larvae form DLLVs (Figure 2G and I). Together, these data demonstrate an important role of arterial-associated MCs for the robust LEC migration.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig2-v3.jpg)
+
+**Figure 2.:** (A) Work flow of cell ablation by the nitroreductases (NTR)-metorodinazole (MTZ) system. Tg(pdgfrb:Gal4FF);Tg(14xUAS:3xFLAG-NTR,NLS-mCherry) (red) and Tg(fli1a:GFP) (grey) were imaged at 120 hours post fertilization (hpf) after treatment with DMSO or 5 mM MTZ from 48 hpf, and the formation of thoracic duct (TD) was analysed. (B) Confocal stack images of the trunk in 5 days post fertilization (dpf) embryos treated as described in (A). Arrows indicates TD forming beneath dorsal aorta. Asterisks indicate the absence of TD. Scale bar: 100 μm. (C) Quantification of (B). Embryos were scored as fully (completely connected TD), partially (partially formed TD) and hardly (almost or no TD visible) formed based on the TD development. In the NTR- MTZ+ group (n = 36), n = 21 embryos with fully formed TD, n = 7 embryos with partly formed TD, n = 8 embryos with hardly formed TD were identified. In the NTR+ MTZ+ group (n = 34), n = 1 embryo with fully formed TD, n = 2 embryos with partly formed TD, n = 31 embryos with hardly formed TD were identified. Data were presented as ratio to total number of embryos analysed. (D) Work flow of cell ablation by multi-photon microscopy. Mural cells (MCs, green) labelled by TgBAC(pdgfrb:GAL4FF; UAS:GFP) and lymphatic endothelial cells (LECs) by Tg(–5.2lyve1b:DsRed2) (grey). MCs on intersegmental vessel in proximity to sprouting LEC were ablated at 57 hpf. For analysis, ablation was either followed by time-lapse imaging or confocal imaging at 3 dpf. (E) Confocal stack images before and after ablation. Control ablation (dashed box) in the adjacent region of GFP+ MCs and GFP+ MC on arterial intersegmental vessel (aISV) (solid grey box) was performed in the same embryos. Arrows indicate ablated GFP-positive cells. Scale bar: 100 μm. Middle and right panels, zoom-in images cropped in z-stacks. (F) Live imaging of lymphatic endothelial cell migration in the context of control (top images) and GFP+ MC on aISV (bottom images) after ablation, with confocal stack images from time lapse at selected timepoints from 0 to 4.96 hpa. Scale bar: 50 μm. (G) Confocal stack images of 3 dpf embryos in (E). Dashed box, control ablation. Solid grey box, MC ablation. DLLV, dorsal longitudinal lymphatic vessel; ISLV, intersegmental lymphatic vessel. Scale bar: 100 μm. (H) Quantification of migration distance from time-lapse videos corresponding to (F). Distance was calculated as both T0-T1 and the perpendicular distance between the T1 and HM for embryos with (n = 4) or without (control, n = 3) ablation. T0, the sprouting front of LECs at the start of video; T1, sprouting front of LECs at the end of video. Data are presented as mean ± SEM, unpaired two-tailed Student’s t-test or Mann-Whitney test was used on two types of measurements respectively. *p < 0.05. (I) Quantification of DLLV formation at 3 dpf. DLLV forming (n = 3), not forming (n = 2) in the ablated group and DLLV forming (n = 5) in the control group.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative confocal stack images of 5 days post fertilization (dpf) TgBAC(pdgfrb:Gal4FF);Tg(14xUAS:3xFlag-NTR, NLS-mCherry);Tg(fli1:GFP) treated with 5 mM MTZ or vehicle for 16 hr. NTR expression was highly selective on mural cells (MCs) population. MCs were ablated after 16 hours of 5 mM MTZ treatment. Arrows indicate floorplate (FP) and hyperchord (HP) were not ablated by the treatment despite the expression of NTR. Scale bar: 100 μm. (B) Confocal stack images from Tg(fli1a:Myr-GFP) in control and ablated embryos described in Figure 2A post injection of Qtracker 705 vascular labels (shown in grey) into common cardinal vein. Arrows indicate lymphatic vessels labelled by leaked dye when injected or during the circulation in the control but not in the MC-ablated larva. Scale bar: 100 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Confocal stack images with transmitted light channel as in Figure 2F. Black arrows indicate erythrocytes in the blood flow, white arrowheads indicate the ablating sites. Scale bar: 50 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Confocal stack images from time-lapse post multi-photon laser ablation in 2 days post fertilization (dpf) Tg(flt1:YFP) (magenta); TgBAC(pdgfrb:GFP) (green) and Tg(–5.2lyve1b:DsRed2) (grey) embryos. Arrowheads indicate remained GFP+ MCs without arterial intersegmental vessel (aISV). White arrows indicate the ablated site of aISV. Scale bar: 50 μm (Figure 2—figure supplement 2); arterial endothelial cell (aEC) ablation with multi-photon laser. (A–B) Quantification of lymphatic endothelial cell (LEC) (n = 4) and aISV (n = 4) migration distance post two-photon laser ablation.
+
 Arterial ISVs have been previously shown to be necessary for LEC migration (Bussmann et al., 2010), thus MC might be a link for a direct interaction between the two cell types or an indirect effect mediated via aISVs. Importantly, the absence of MCs does not affect arterial identity at early stages in zebrafish (Ando et al., 2019), arguing that the importance of MC in LEC development is not simply to regulate aEC presence or abundance. Therefore, we directly tested if aEC function is critical for MC-dependent LEC migration along aISVs. We ablated ECs in aISV after the emergence of MCs using the two-photon laser system (Figure 2—video 5). We observed that even in the absence of aECs, but remaining presence of MCs, LEC migration progressed (Figure 2—figure supplement 3), suggesting that signals from MCs are sufficient to promote LEC migration. Thus, the previously reported strong inhibition of LEC development in aISV-depleted mutants (Bussmann et al., 2010) might include the effects of MC loss as aISVs ECs are essential for MC formation (Ando et al., 2016). However, as the aISV rapidly regrow following laser ablation system (Figure 2—figure supplement 3B), the long-term effects cannot be assessed, and it remains to be determined to what extend the molecular signals from MC act in synergy with aECs to promote LEC migration.
 
-## Pdgfrb-positive pericytes express pro-lymphangiogenic factors
+### Pdgfrb-positive pericytes express pro-lymphangiogenic factors
 
 Our results suggest that pdgfrb-positive MCs play a direct role in guiding LEC migration along aISVs. To gain a better understanding of MC populations and pro-lymphatic factors that contribute to this process, we took advantage of recently published scRNA-seq data from TgBAC(pdgfrb:egfp) larvae at 5 dpf (Shih et al., 2021). We focused on prospective MC populations by re-clustering previously identified pericyte and smooth muscle cell types (Figure 3A; Figure 3—figure supplement 1). From this analysis we found two clusters that express a previously identified pericyte gene signature (e.g. high levels of notch3, pdgfrb, and ndufa4l2a; Figure 3B; Figure 3—figure supplement 1), as well as pericyte-like cells that lacked the definitive pericyte marker, ndufa4l2a (Shih et al., 2021). We also noted fibroblasts marked by pdgfra, along with smooth muscle cell clusters expressing high levels of desmb, myocd, cnn1b, and tagln, respectively (Figure 3B). Additional clusters included pharyngeal arch mesenchymal cells and the cells from bulbus arteriosus (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig3-v3.jpg)
+
+**Figure 3.:** (A) Uniform Manifold Approximation and Projection (UMAP) plot of smooth muscle cells and pericytes subclustered from 5 days post fertilization (dpf) pdgfrb:egfp-positive cells. bulbArt – bulbous arteriosus, fib – fibroblast, peri – pericyte, peri-like – pericyte-like, phArch – pharyngeal arch mesenchymal cell, smc – smooth muscle cell. (B) Violin plot showing markers for pericytes (pdgfrb, ndufa4l2a), smooth muscle (myocd), fibroblasts (pdgfra), bulbous arteriosus (elnb), and pharyngeal arch mesenchyme (nkx3.2, tbx1, dlx4a). (C) Violin plot showing expression of known non-autonomous pro-lymphatic factors. Expression level values are log2 normalized across all cells. (D) Illustration of fluorescence activated cell sorting (FACS) and qPCR analysis on 3 dpf embryos. (E) qRT-qPCR of cxcl12a, cxcl12b, vegfc, ccbe1, and dll4 in FACS sorted trunk arterial endothelial cells (aECs) and MCs cells at 3 dpf as described in (D). Graph represents gene expression relative to geometric average of rpl13 and β-actin from three biological repeats (mean ± SEM). Unpaired two-tailed Student’s t-test or Mann-Whitney test was used. No significance (ns), p ≥ 0.5. *p < 0.05, ***p < 0.0005, ****p < 0.0001. (F) Confocal z-projections for immunohistochemistry of fluorescent proteins in trunks of Tg(vegfc:Gal4; UAS:RFP; pdgfrb:GFP) and confocal image of Tg(ccbe1:YFP;pdgfrb:Gal4; UAS:NTRmcherry) embryos at 3 dpf. Scale bar: 100 μm; 50 μm in enlarged images. (G) Left panel, quantification of colocalization of vegfc+ and pdgfrb+ cells based on immunohistochemistry in (F). Right panel, quantification of colocalization of ccbe1+ and pdgfrb+ cells based on confocal images in (F), data presented as double positive ratio (mean ± SEM). Ns, no significance. (H) Confocal z-projections for immunohistochemistry of endogenous pERK (cyan, right) in migrating lymphatic endothelial cells (LECs) in trunks of Tg(–5.2lyve1b:venus) embryos (α-GFP, grey, middle) (n = 10) at 3 dpf. Scale bar: 100 μm; 50 μm in enlarged images.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) Re-clustering of prospective mural cells from published pdgfrb:egfp scRNA-seq. (A) Uniform Manifold Approximation and Projection (UMAP) plot of previously described clustering for cells isolated from TgBAC(pdgfrb:egfp) cells at 5 days post fertilization (dpf). Highlighted cells are those used for re-clustering. Adjacent text summarizes steps used for re-clustering. See Materials and methods section of additional details. (B) UMAP plot following analysis of cell highlighted in (A). (C) Violin plot showing markers used to assign cell identity to clusters identified in (B). (D) Violin plot showing expression of genes encoding receptors for Vegfc and Cxc12. Also shown are definitive markers for perivascular fibroblasts identified in previous studies.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Confocal z-projections of Tg(svep1:Gal4;UAS:RFP); Tg(pdgfrb:GFP) at 3 days post fertilization (dpf). Scale bar: 100 μm. (B) Quantification of colocalization of pdgfrb-positive and svep1-positive cells based on confocal images from (A). Data presented as mean ± SEM. Unpaired two-tailed Student’s t-test was used. ****p < 0.0001.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Illustration of FACS and qPCR analysis on 3 days post fertilization (dpf) Tg(prox1a:TagRFP; fli1a:nGFP) embryos. (B) (Left) Gating strategy for FACS sort of Tg(prox1a:TagRFP; fli1a:nGFP) as described in Figure 3—figure supplement 3A. Sorting was performed on all singlet, alive cells according to their expression of DsRed (red, 561 nm) and GFP/ YFP (green, 488 nm). (Right) RT-qPCR of cxcr4a, cxcr4b, and ackr3b expression in trunk LECs at 3 dpf. Graph represents gene expression relative to geometric average of kdrl and β-actin from three biological repeats (mean ± SEM). Unpaired two-tailed Student’s t-test or Mann-Whitney test was used. *p < 0.05, **p < 0.001. Ns, no significance. (C) Gating strategy for FACS sort of Tg(flt1:YFP) and Tg (abcc9:Gal;UAS:GFP) as described in Figure 3D. Sorting was performed on all singlet, alive cells according to their expression of GFP/ YFP (green, 488 nm).
 
 We next assessed expression of known non-autonomous regulators of lymphatic growth, including vegfc and the essential Vegfc-processing factors: ccbe1, adamts3, and adamts14 (Bui et al., 2016; Hogan et al., 2009a; Janssen et al., 2016; Jeltsch et al., 2014). We also surveyed expression of svep1, a putative ligand for LEC-expressed itga9, and the chemokines cxcl12a and cxcl12b, which have been implicated in trunk lymphatic vessel patterning (Figure 3B; Cha et al., 2012; Karpanen et al., 2017). We observed prominent vegfc expression in pericyte and pericyte-like cells, with lower levels detectable in several smooth muscle cell clusters (Figure 3B). However, only peri-like cells expressed ccbe1. Similarly, only a single SMC cluster expressed adamts3 while adamts14 was not detected in any clusters (Figure 3B). We observed svep1 transcript at low levels in two smooth muscle cell clusters. We confirmed absence of svep1 in MCs by analysis of pdgfrb and svep1 transgenic reporters (Figure 3—figure supplement 2A-B). Similar to vegfc, cxcl12a was seen in multiple cell types with prominent expression in pericytes, as well as the two vegfc-expressing smooth muscle cell clusters (Figure 3B). By contrast, prospective trunk MC clusters were largely devoid of genes encoding functional receptors for Vegfc (kdr, kdrl, and flt4) or Cxcl12 (cxcr4). Interestingly, putative pericytes expressed ackr3b, the atypical receptor for Cxcl12 (Figure 3—figure supplement 1). To assess the expression of the chemokines receptors in LECs, we sorted double positive cells for TagRFP and nEGFP from TgBAC(prox1a:KalTA4-4xUAS-ADV.E1b:TagRFP);Tg(fli1a:nEGFP) embryos at 3 dpf (Figure 3—figure supplement 3A). We observed expression of ackr3b but low levels of cxcr4a and cxcr4b (Figure 3—figure supplement 3B), thus supporting previously reported expression of chemokine receptors in LECs (Cha et al., 2012).
 
@@ -64,17 +108,39 @@ Previous studies have identified perivascular fibroblast populations that contri
 
 The pdgfrb:egfp cells used in Shih et al. were from whole embryos, and the pericytes noted above were therefore not necessarily associated with trunk blood vessels (Shih et al., 2021). Therefore, we determined expression of vegfc, ccbe1, and cxcl12a in (MC-enriched) EGFP-positive cells isolated from micro-dissected trunks of TgBAC(abcc9:Gal4FF);Tg(UAS:EGFP) larvae at 3 dpf, in comparison to negative cells (Figure 3D–E, Figure 3—figure supplement 3C; Ando et al., 2021). To assess the expression level of these genes in arteries, we also sorted aECs from micro-dissected trunks of Tg(flt1;YFP) line (Figure 3D–E, Figure 3—figure supplement 3C). We confirmed purity of MC in our sort by assessing dll4 gene expression in both aEC and MC, where we observed clear enrichment of dll4 in aEC (Figure 3E). Consistent with our scRNA-seq analysis, we found that abcc9-positive cells from dissociated trunks show significantly higher expression of cxcl12a, vegfc, and ccbe1 compared to EGFP-negative cells isolated in parallel. We also detected cxcl12a, cxcl12b, and vegfc in arteries, but not ccbe1 (Figure 3E). To confirm that vegfc and ccbe1 is expressed in the MCs, we used immunostaining of BAC-transgenic lines Tg(vegfc:Gal4; UAS:RFP; pdgfrb:GFP) and Tg(ccbe1:YFP;pdgfrb:Gal4; UAS:NTRmcherry), and observed a trend of enrichment of vegfc and ccbe1 expression in the pdgfrbhigh MCs on aISV compared to the rest of the pdgfrblow mesenchyme around aISV (Figure 3F–G). Subsequently, we determined that migrating LECs are positive for phospho(p)-ERK (Figure 3H), which is known to be activated downstream of Vegfc-Vegfr3 or Cxcl12-Cxcr4 signalling (Spinosa et al., 2019; Xing et al., 2017). Taken together, our molecular analysis suggests that MCs on aISVs, annotated as trunk pericytes in the transcriptomic dataset, can provide a source for essential pro-lymphangiogenic factors.
 
-## Chemokines guide LEC migration
+### Chemokines guide LEC migration
 
 Chemokines have been shown to be important for LEC migration with LECs being attracted by mosaic overexpression of cxcl12b, whereas the cxcl12a, cxcl12b, and cxcr4a mutants show defects in TD formation (Cha et al., 2012). To understand if signalling mediated by these ligands is essential for LEC migration during the timepoints harmonized with MC emergence, we took advantage of temporal administration of a Cxcr4 inhibitor, AMD3100, to the embryos (Figure 4A–B, Figure 4—figure supplement 1A, Figure 4—videos 1–4). We added the drug at 51 hpf, after the PL had reached the HM but before continuing to move dorsally and ventrally (Figure 4A). Time-lapse imaging revealed that in AMD3100-treated embryos, LECs migrated shorter distances with decreased velocity compared with the controls (Figure 4B–D). We also investigated the filopodia formation as an indicator for proper sensing of guidance cues (Meyen et al., 2015), in the AMD3100-treated embryos in the Tg(fli1a:lifeact-EGFP) background. We found an increased number of filopodia reaching statistical significance 7.5 hours after exposure (Figure 4E–F, Figure 4—videos 5–8). We observed filopodia formation extended not only towards the migrating front but also laterally in AMD3100-treated embryos, implying the compromised directional migration of LECs. While, we did not observe the LEC apoptosis in the AMD3100-treated embryos. Together our data show that chemoattractants drive LEC migration.
 
-## ERK activation promotes LEC migration and survival
+![Figure 4.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig4-v3.jpg)
+
+**Figure 4.:** (A) Work flow of Cxcr4 inhibitor treatment. Tg(fli1:GFP);Tg(lyve1b:mCherry) embryos were grown in PTU (1-phenyl 2-thiourea) from 24 hours post fertilization (hpf) to prevent pigment formation, then changed to 20 μM AMD3100 or E3 water (embryo medium) at 51 hpf. (B) Confocal stack images from time-lapse imaging of Tg(fli1a:GFP; lyve1b:mCherry) embryos as indicated in (A). Scale bar: 50 μm. (C) (Left) Quantification of dorso-ventral migration showing individual tracks for the sprouting LECs in embryos (n = 6) in E3 water or embryos (n = 10) in AMD3100. (Right) Quantification of dorso-ventral migration showing average (mean from single tracks; left) of tracks in E3 and AMD3100-treated groups. Data are presented as mean ± SEM, unpaired two-tailed Student’s t-test was used. **p < 0.005. (D) Quantification of velocity of dorso-ventral migration from time-lapse video described in (B). Sprouting front of LECs in E3 water (n = 6) and AMD3100- (n = 10) treated embryos were tracked and the distance between starting and end position of sprouting front was measured and subsequently divided by duration. Data are presented as mean ± SEM. Unpaired two-tailed Student’s t-test was used. Ns, no significance, p > 0.1. (E) Confocal stack images from time-lapse imaging of Tg(fli1a:lifeact-EGFP);Tg(kdrl:mCherry) as indicated in (A). Arrows indicate dynamic filopodia formation during LEC migration. Scale bar: 50 μm. (F) Quantification of frequency of filopodia formation from time-lapse video from (E). Number of protrusions in LEC sprouts were counted and normalized to the sprout length, control (E3, sprouts n = 8 from 8 embryos) and treated (AMD3100, n = 12 from 10 embryos) embryos. Data are presented as mean ± SEM. Unpaired two-tailed Student’s t-test was used. ***p < 0.0005. (G) Work flow of MEK inhibitor treatment. Tg(fli1:GFP);Tg(lyve1b:mCherry) embryos were grown in PTU from 24 hpf, then changed to 10 μM SL327, a MEK inhibitor, or DMSO at 51 hpf. Time-lapse imaging was started at 57 hpf. (H) Confocal z-stack images from time lapse of 57 hpf Tg(fli1a:nEGFP)y7 (green) and Tg(–5.2lyve1b:DsRed2) (grey) embryos treated with DMSO or 10 μM SL327 from 51 hpf. Grey arrowheads indicate cell death. Scale bar: 50 μm. (I) (Left) Quantification of dorso-ventral migration showing individual cell tracks for nuclei of sprouting LECs in DMSO- (embryos, n = 10; left panel) and SL327- (embryos, n = 9; right panel) treated embryos as described in (H). Red cross indicates cell death at the end of tracking. (Right) Average (mean) of tracks in DMSO- and SL327-treated groups. Data are presented as mean ± SEM, unpaired two-tailed Student’s t-test was used. ****p < 0.0001. (J) Quantification of total LEC numbers at beginning (T0) and end (T1) of the time lapse of embryos (n = 10) in DMSO- and SL327-treated embryos (n = 9); data are presented as mean ± SEM. T0 DMSO vs. T1 SL327 p < 0.0001, T0 SL327 vs. T1 SL327 p < 0.0001, T1 DMSO vs. T1 SL327 p < 0.0001. Other comparisons were ns. One-way ANOVA with Tukey’s post hoc test for statistical analysis. ****p < 0.0001. (K) Quantification of cell proliferation in DMSO (n = 9) and SL327-treated (n = 13) embryos as described in (E). Nuclear marker in green was used to count cell division events. Data are presented as mean ± SEM, Mann-Whitney test was used. ****p < 0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Confocal z-stack images of embryos as described in Figure 3A treated with 20μM AMD3100 or E3 water from 51 to 120 hpf. Scale bar: 100 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Confocal z-stack images of embryos as described in Figure 4G treated with 4 μM SL327 or DMSO from 51 to 120 hours post fertilization (hpf). Scale bar: 100 μm. (B) Confocal z-stack image of embryos treated with DMSO or SL327 as described in Figure 4G. Embryos were fixed at 3 days post fertilization (dpf) and used for TUNEL (cyan) and α-DsRed staining (grey). Zoom-in single slice images of TUNEL staining in merged and TUNEL channel showing the colocalization of the signal. Scale bar: 100 μm, 30 μm (enlarged images). (C) Corresponding quantification of TUNEL signal from (C). In SL327-treated group (n = 45), lymphatic endothelial cell (LEC) showed a positive TUNEL staining rate of 15.56% while it was 0% in DMSO-treated group (n = 45).
+
+### ERK activation promotes LEC migration and survival
 
 To search for the downstream signalling of chemokines needed for proper LEC migration, we decided to assess if ERK activation is required for the LEC migration from HM, as we observed ERK activation in migrating LECs. We treated embryos with MEK inhibitor, SL327, at 51 hpf just prior to their migration and observed defects in LEC formation at 5 dpf (Figure 4G, Figure 4—figure supplement 2A). We assessed the phenotypes by time-lapse imaging (Figure 4G–H, Figure 4—videos 9–12). Tracing the migration distance revealed a reduced number of migrating cells and increased number of cells that stalled or regressed their migration in SL327-treated embryos (n = 5) (Figure 4H–I). In addition, we found a dramatic decrease of LEC division from 25% in controls to 1.5% in SL327-treated embryos (Figure 4J–K), which is in agreement with the known necessary role of Vegfc-Vegfr3 in cell proliferation (Cao et al., 1998). SL327 treatment induced cell death in 7 out of 12 cells, which was further confirmed by TUNEL staining (Figure 4—figure supplement 2B-C), suggesting that during this lymphatic developmental window ERK activation acts as a LEC pro-survival factor. Together, these results indicate that ERK activation plays vital roles in lymphatic vessel formation. While, effects of SL327 were much greater than that of AMD3100, which may imply that other pathway such as Vegfc-Vegfr3 functions together in addition to Cxcl12-Cxcr4 signalling. It has been reported that ERK activation is primarily induced by Vegfc during the LEC specification and sprouting from the PCV (Karkkainen et al., 2004; Koltowska et al., 2015a), our results showed that Vegfc-Vegfr3 signalling also instructs LEC in the subsequent migratory events from HM to establish the lymphatic vessel network in the trunk.
 
-## Chemokine and growth factor signalling together coordinate LEC migration
+### Chemokine and growth factor signalling together coordinate LEC migration
 
 As it is speculated that both Vegfc-Vegfr3 and Cxcl12-Cxcr4 signalling to be necessary for LEC migration, albeit with nuances in cellular outputs in response to these signalling cascades, we decided to investigate the interaction between these molecular entities. By utilizing the temporally controlled Vegfc trapping by expression of soluble Flt4 (Vegfr3) in conjunction with AMD3100 chemical inhibition, we first assessed the migration phenotypes (Figure 5A). To assess the robustness of LEC migration in chemical-treated and heat-shocked embryos, we started the treatment at 60 hpf and time-lapse imaging from 62 hpf (Figure 5—videos 1–3). Embryos treated with soluble Flt4 showed severe impairments in LEC migration (Figure 5B–D, Figure 5—figure supplement 1A). In addition, we observed no difference in LEC survival between in heatshock only and the combinatory-treated group (Figure 5—figure supplement 1B). The combinatory treatment further decreased the LEC migrating distance, but only marginally. Interestingly we observed no additive effects on the velocity of migrating LEC by the combinatory treatment, suggesting cooperation rather than mechanistic interaction of these two signalling pathways in the coordination of LEC migration. ERK activation has been shown to be induced by Vegfc-Vegfr3 but also by Cxcl12-Cxcr4 signalling (Kukreja et al., 2005; Shin et al., 2016). To assess if the cooperation of these two singling cascades is required for activation of ERK during LEC migration, we assessed ERK activation in embryos treated with soluble Flt4 or AMD3100 or a combination of both treatments. As expected, we observed a dramatic reduction in LEC numbers and ERK activation upon soluble Flt4 treatment or combinatory treatment but not in AMD3100-treated group (Figure 5E–G). Surprisingly, we overserved no change in ERK activation in AMD3100 treatment alone (Figure 5E, Figure 5—figure supplement 2A). Thus, these data indicate that ERK activation may be induced mainly via Vegfc-Vegfr3 signalling rather than Cxcl12-Cxcr4 signalling during LEC migration. Together, our data provide evidence that these signalling pathways cooperate to promote proper LEC migration (Figure 5H).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig5-v3.jpg)
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Confocal z-stack images from time-lapse imaging as described in Figure 5A, wildtype with heatshock. Scale bar in 50 μm. (B) Quantification of LEC death from time-lapse video in Figure 5B. Data are presented as ratio to total LECs.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Endogenous pERK (cyan) in migrating lymphatic endothelial cell (LEC) in trunk of 3 dpf Tg(hsp70l;sflt4, cryaa:Cerulean) and Tg(flt1:YFP;lyve1b:DsRed2) embryos (α-DsRed2, grey) with treatment as described in Figure 5A. Box indicates enlarged area. Scale bar: 100 μm; 50 μm in enlarged images.
 
 ## Discussion
 
@@ -88,64 +154,137 @@ In summary, we demonstrate MC-LEC interaction at high spatio-temporal resolution
 
 ## Materials and methods
 
-## Zebrafish
+### Zebrafish
 
 Zebrafish were maintained in the Genome Engineering Zebrafish National Facility, Uppsala University, using standard husbandry conditions (Aleström et al., 2020). Animal experiments were carried out under ethical approval from the Swedish Board of Agriculture (5.2.18-7558/14). Previously published transgenic lines used were Tg(fli1a:nEGFP)y7, Tg(–5.2lyve1b:DsRed2)nz101 (Okuda et al., 2012), Tg(5xUAS:GFP) (Asakawa et al., 2008), TgBAC(pdgfrb:Gal4FF)ncv24, (Ando et al., 2016) TgBAC(pdgfrb:GFP) ncv22 (Ando et al., 2016), TgBAC(abcc9:GAL4FF)ncv34 (Ando et al., 2019), Tg(flt1:YFP)hu4881 (Hogan et al., 2009b), Tg(fli1a:GFP)y1 (Lawson and Weinstein, 2002), Tg(–7kdrl:DsRed2)pd27 (Kikuchi et al., 2011), pdgfrbum148 (Kok et al., 2015), Tg(kdrl:TagBFP)mu293Tg (Matsuoka et al., 2016), Tg(fli1a:Myr-GFP)ncv2Tg (Fukuhara et al., 2014), Tg(dab2:GFP)ncv67Tg (Shin et al., 2019), Tg(hsp70l:flt4, cryaa:Cerulean)bns82 (Matsuoka et al., 2016), Tg(UAS:RFP)nkuasrfp1a (Asakawa et al., 2008), Tg(vegfc:Gal4FF)mu402 (Wang et al., 2020), Tg(svep1:Gal4;UAS:RFP)hu4767/hu4767 (Karpanen et al., 2017), Tg(ccbe1:mCitrine)hu6741 (Wang et al., 2020) (referred to as Tg(ccbe1:YFP)), Tg(UAS-E1b:NfsB-mCherry)c264 (Davison et al., 2007) (referred to as Tg(UAS:NTR-mcherry)). Tg(lyve1:mCherry)ncv87Tg and Tg(14xUAS:3xFLAG-NTR,NLS-mCherry)ncv514Tg were generated in this study.
 
-## Genotyping
+### Genotyping
 
 For pdgfrbum148 the following primers were used for PCR:
 
 The PCR product was digested with Mbo1 restriction enzyme at 37°C for 1 hr. The digested product was run on 2% agarose gel. The cut of wildtype fragment results in two bands of 200 and 300 bps long; while the fragment from pdgfrbum148 mutants is not cut, resulting in 500 bps band; fragments from a heterozygous pdgfrbum148 is a combination of three fragments with bands sizes of 200, 300, and 500 bps.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemistry was performed according to a previously published protocol (Le Guen et al., 2014; Shin et al., 2016) with the following modifications. After acetone treatment embryos were treated with Proteinase K at 10 mg/ml diluted in PBST for 35 min. Antibodies used were chicken α-GFP (1:400, ab13970 Abcam), rabbit α-DsRed (1:400, Living colors, 632,496 Takara Bio), rabbit α-Phospho-p44/42 MAPK (1:250, #4370 Cell Signaling Technology), and α-rabbit IgG-HRP (1:1000, #7074 Cell Signaling Technology). TUNEL staining was performed with In Situ Cell Death Detection Kit, Fluorescein (Merck, 11684795910) with the instruction provided by the manufacturer.
 
-## Image acquisition
+### Image acquisition
 
 Embryos were anaesthetized and mounted in 1% low-melting agarose on a 35-mm diameter glass-base dish (627870 or 627861 Greiner). Confocal images were obtained using a Leica TCS SP8 confocal microscope (Leica Microsystems) equipped with water immersion 25× (Fluotar VISR, 0.95 NA) objective, water immersion 40× (HC PL APO CS2, 1.1 NA) objective and glycerol immersion 63× (HC PL APO CS2, 1.3 NA) objective or FluoView FV1000/FV1200/FV3000 confocal upright microscope (Olympus) equipped with a water immersion 20× (XLUMPlanFL, 1.0 NA) lens. The 473 nm (for GFP), 559 nm (for mCherry), and 633 nm (for Qdot 655) laser lines in FluoView FV1000/FV1200/FV3000 confocal microscope and the 488 nm (for GFP) and 587 nm (for mCherry) in Leica TCS SP8 confocal microscope were employed, and 488 and 651 nm on the Zeiss NLO710, respectively.
 
-## Image analysis
+### Image analysis
 
 Image quantification was performed using z-stacks in ImageJ 2.0.0 (Schindelin et al., 2012), Olympus Fluoview (FV10-ASW, FV31S-SW), or IMARISx64 9.5.1 software (Bitplane). Total LEC number was counted manually using the overlay of DsRed and GFP channels over five somites in the trunk. Lymphatic vessel area was calculated by rendering the surface using DsRed channel, the non-lymphatic structures were manually removed. Measurements of surface area were exported directly from Imaris (Bitplane).
 
-## Cell Tracking
+### Cell Tracking
 
 To quantify the migrating distance, the centre of PL nuclei in Figure 4H was manually tracked until either cell died or disappeared from the view in Imaris (Bitplane). The individual cell track was generated by ‘spot’ and ‘cell track’ function and then manually edited if needed. The data were exported to GraphPad for plotting and statistical analysis.
 
-## Distance measurement
+### Distance measurement
 
 The migrating distance in all figures was measured in three dimensions using the spot function in Imaris (Bitplane), see cell tracking. In Figure 3B–C, the sprouting front of PL just migrating away from the HM region was chosen as start point (T0) and the migrating front at the end of the time-lapse video was chosen as the end point (T1), respectively. A direct line was used to connect the dots and the length of the line segment was measured. In Figure 2H, the perpendicular distance between point T1 and HM was also measured in addition to the measurement above.
 
-## Chemical treatment
+### Chemical treatment
 
 To inhibit Cxcr4 signalling, the embryos were treated in 20 µM antagonist AMD3100 (Merk) diluted in E3 water (embryo medium) (Westerfield, 1993) from 51 to 72 hpf. To block phosphorylation and activation of ERK1/2, embryos were treated in 10 µM SL327 (EMD Millipore) diluted in E3 water with 1% DMSO, from 51 to 72 hpf. Embryos were anaesthetized and mounted in 1% low-melting agarose in a two-well slide with separate chambers, which allows spontaneous imaging of both groups. The prepared chemical solution (3 ml) was added on top of the agarose layer in one chamber and control medium (E3 water or 1% DMSO in E3 water) (3 ml) to the other chamber.
 
-## FACS and qPCR analysis
+### FACS and qPCR analysis
 
 Embryos of Tg(flt1:YFP) and Tg(abcc9:Gal; UAS:GFP) were collected at 3 dpf and screened as described in Figure 3D, dissociation was performed as previously described (Kartopawiro et al., 2014). The dissociated cells were sorted using a fluorescence activated cell sorting (FACS) Aria III (BD Biosciences) into 300 μl TRIzol LS Reagent (Thermo Fisher). Total RNA was extracted using the Quick-RNA Microprep kit (Cambridge Bioscience) following the manufacturer’s instructions. RNA quality and concentration were determined using 2100 Bioanalyser Instrument (Agilent) together with Bioanalyzer High Sensitivity RNA Analysis Kit (Agilent). One ng of RNA template was subjected to cDNA synthesis using SuperScript VILO cDNA Synthesis Kit (Thermo Fisher). The synthesized cDNAs were amplified in parallel using SsoAdvanced PreAmp Supermix (Biorad), and both of the amplified samples were included for further analysis. The qPCR analysis was performed using the primers in Table S1 on CFX384 Touch Real-Time PCR Detection System (BioRad). Data were analysed using the CFX Maestro Software (BioRad). The geometric average of rpl13 and β-actin or kdrl and β-actin expression was used as a reference to calculate relative gene expression of target genes with the ddCT method and the values were presented as log or normalized log fold. Primer sequences listed in the below table.
 
-## Ablation with multi-photon microscopy
+<table>
+  <thead>
+    <tr>
+      <th>Target gene</th>
+      <th>Forward primer sequence 5’–3’</th>
+      <th>Forward primer sequence 5’–3’</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>β-actin</td>
+      <td>CGAGCTGTCTTCCCATCCA</td>
+      <td>TCACCAACGTAGCTGTCTTT</td>
+      <td>Designed for this study</td>
+    </tr>
+    <tr>
+      <td>rpl13</td>
+      <td>CATCTCTGTTGACTCACGTCG</td>
+      <td>CATCTTGAGCTCCTCCTCAGTAC</td>
+      <td>Designed for this study</td>
+    </tr>
+    <tr>
+      <td>cxcr4a</td>
+      <td>CATGACAGACAAGTACCGTCT</td>
+      <td>TGCTGTACAAGTTTACCGTGTA</td>
+      <td>qPrimerDB</td>
+    </tr>
+    <tr>
+      <td>cxcr4b</td>
+      <td>TGCTAACATTCCTGATAAGACC</td>
+      <td>GTACTTTTATTGCCAGACCTAAAGG</td>
+      <td>qPrimerDB</td>
+    </tr>
+    <tr>
+      <td>cxcl12a</td>
+      <td>GCAAGTGCTTTGACACAAAAAG</td>
+      <td>TTTGTTTGGCAAAGTAACCCTG</td>
+      <td>qPrimerDB</td>
+    </tr>
+    <tr>
+      <td>cxcl12b</td>
+      <td>GATCGTGATAGCTTTGTGAACC</td>
+      <td>AATGTTAACAATGCTTGGCCTC</td>
+      <td>qPrimerDB</td>
+    </tr>
+    <tr>
+      <td>vegfc</td>
+      <td>TCTTAAAAGGGAGACGGTTTCA</td>
+      <td>TACATTTCCTTCTCTTGGGGTC</td>
+      <td>qPrimerDB</td>
+    </tr>
+    <tr>
+      <td>ccbe1</td>
+      <td>AGTGTCTGAAATGATCTACCCG</td>
+      <td>ACTTCTCTGTCTACATCCTCCT</td>
+      <td>qPrimerDB</td>
+    </tr>
+    <tr>
+      <td>dll4</td>
+      <td>GGACAAATGCACCAGTATGC</td>
+      <td>GTTTGCGCAGTCGTTAATGT</td>
+      <td>Ando et al., 2019</td>
+    </tr>
+    <tr>
+      <td>ackr3b</td>
+      <td>TGAACTTCTCAACTCTTGACGA</td>
+      <td>TACAGGTGAGTCTCATAACGTG</td>
+      <td>qPrimerDB</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ablation with multi-photon microscopy
 
 For MCs ablation, embryos of Tg(–5.2lyve1b:DsRed2);Tg(pdgfrb:GFP) were laterally mounted in 1% low-melting point agarose at 57 hpf. An aISV with migrating LEC was chosen randomly, a GFP-positive MC was identified using 488 nm laser. MCs located ahead of migrating route were ablated using a two-photon laser at 790 nm (Mai Tai, Spectr-Physics Millenia PRO). Control ablations were performed as above but the adjacent area to the pdgfrb+ cell targeted with the two-photon laser. For aISV ablation, Tg(–5.2lyve1b:DsRed2);Tg(flt:YFP);Tg(pdgfrb:GFP) embryos were prepared as described above and an aISV, with LEC migrating along, was ablated using the two-photon laser targeting the connection point of dorsal longitudinal anastomotic vessel and aISV as well as proximal end of the aISV at the connection point to the DA. Larvae were imaged before and after ablation with a Zeiss LSM 710 FCS confocal microscope, which was followed by either time-lapse imaging for around 5 hours or follow-up confocal imaging at 3 dpf.
 
-## Ablation with NTR-MTZ system
+### Ablation with NTR-MTZ system
 
 Embryos from TgBAC(pdgfrb:Gal4FF);Tg(UAS:NTR, mCherry);Tg(fli1a:GFP) were collected and screened as described in Figure 2A. The embryos were treated with E3 medium containing either 5 mM MTZ or DMSO from 48 hpf and the media was replaced daily with fresh ones. The TD was imaged at 120 hpf above the yolk extension spanning across eight to nine somites and the quantification of TD was performed by categorizing the extend of formed TD into three groups: fully (completely connected TD), partially (partially formed TD), and hardly (almost or no TD visible). The category percentages for all embryos per treatment group were calculated.
 
-## Dye injections
+### Dye injections
 
 Qtracker 705 Vascular Labels (ThermoFisher) diluted with (1:1) was injected into the common cardinal vein using a small capillary needle. Circulating Qtraceker 705 fluorescent dye in the blood vessels was visualized soon after the injection by confocal microscopy. Over time, in addition to blood vessels, lymphatic vessels were labelled by Qtracker 705 fluorescent dye.
 
-## scRNA-seq analysis to assess MC expression of pro-lymphatic factors
+### scRNA-seq analysis to assess MC expression of pro-lymphatic factors
 
 To assess expression of known pro-lymphatic genes in MCs, we re-analysed previously published scRNA-seq data from TgBAC(pdgfrb:egfp)ncv22 larvae at 5 dpf. Originally processed Cell Ranger outputs from this dataset are available at GEO (GSE176129). To identify cells for re-analysis, we used the RData object from previous clustering (Shih et al., 2021). All of the following analysis was performed in RStudio running R4.0.5 and using Seurat 4.0.3 (Hao et al., 2021). The following is an overview and we refer readers to Figure 3—source code 1 for accompanying annotated commands used for this analysis. We first manually selected clusters expected to contain prospective MC populations. These were named as follows in the original clustering: ‘39-pericyte’,’14-smc’, ‘52-smc’, ‘17-smc’, ‘51-smc’, ‘53-smc’, ‘6-smc’. We subsequently generated a list of barcodes comprising cells in these clusters and used those to obtain the original raw count data for these cells. We then performed normalization, identification of variable features, scaling, and clustering as described previously (Shih et al., 2021; Figure 3—figure supplement 1A-B). Previously identified genes for pericytes, smooth muscle cells, and fibroblasts were initially used to assign cell cluster identities. To classify remaining clusters (pharyngeal arch, bulbus arteriosus), we identified all cluster-specific markers and used these to find remaining lineage-defining genes.
 
-## Heatshock treatment
+### Heatshock treatment
 
 Embryos of Tg(hsp70l:flt4, cryaa:Cerulean)bns82; Tg(flt1:GFP; lyve1b:DsRed2) were raised at 28.5°C and then subjected to 37°C heatshock for 1 hour by replacing the E3 water plus PTU with fresh pre-warmed (37°C) one and then kept in a 37°C incubator. For the non-heatshock-treated group, embryos were kept at 28.5°C for the whole time (Figure 5A).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using Prism software (GraphPad). Gaussian distribution of samples was tested with Shapiro-Wilk normality test. Student’s t-test was used for comparison of two means. For not normal distributed data, Mann-Whitney test was used for comparison of two means. One-way ANOVA with post hoc test was used for multiple comparison as stated in corresponding figure legend.

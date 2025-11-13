@@ -16,18 +16,18 @@
 
 ### Affiliations
 
-1. https://ror.org/0064kty71 State Key Laboratory of Biocontrol, School of Life Sciences, Sun Yat-sen University Guangzhou China
-2. https://ror.org/034t30j35 State Key Laboratory of Genetic Resources and Evolution/Yunnan Key Laboratory of Biodiversity Information, Kunming Institute of Zoology, The Chinese Academy of Sciences Kunming China
-3. https://ror.org/00zat6v61 GMU-GIBH Joint School of Life Sciences, Guangzhou Medical University Guangzhou China
-4. https://ror.org/034t30j35 CAS Key Laboratory of Quantitative Engineering Biology, Shenzhen Institute of Synthetic Biology, Institute of Advanced Technology, Chinese Academy of Sciences Shenzhen China
-5. https://ror.org/0064kty71 Innovation Center for Evolutionary Synthetic Biology, Sun Yat-sen University Guangzhou China
-6. https://ror.org/024mw5h28 Department of Ecology and Evolution, University of Chicago Chicago United States
+1. State Key Laboratory of Biocontrol, School of Life Sciences, Sun Yat-sen University Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))
+2. State Key Laboratory of Genetic Resources and Evolution/Yunnan Key Laboratory of Biodiversity Information, Kunming Institute of Zoology, The Chinese Academy of Sciences Kunming China ([ROR:034t30j35](https://ror.org/034t30j35))
+3. GMU-GIBH Joint School of Life Sciences, Guangzhou Medical University Guangzhou China ([ROR:00zat6v61](https://ror.org/00zat6v61))
+4. CAS Key Laboratory of Quantitative Engineering Biology, Shenzhen Institute of Synthetic Biology, Institute of Advanced Technology, Chinese Academy of Sciences Shenzhen China ([ROR:034t30j35](https://ror.org/034t30j35))
+5. Innovation Center for Evolutionary Synthetic Biology, Sun Yat-sen University Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))
+6. Department of Ecology and Evolution, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
 ## Abstract
 
-Tumorigenesis, like most complex genetic traits, is driven by the joint actions of many mutations. At the nucleotide level, such mutations are cancer-driving nucleotides (CDNs). The full sets of CDNs are necessary, and perhaps even sufficient, for the understanding and treatment of each cancer patient. Currently, only a small fraction of CDNs is known as most mutations accrued in tumors are not drivers. We now develop the theory of CDNs on the basis that cancer evolution is massively repeated in millions of individuals. Hence, any advantageous mutation should recur frequently and, conversely, any mutation that does not is either a passenger or deleterious mutation. In the TCGA cancer database (sample size n =300–1000), point mutations may recur in i out of n patients. This study explores a wide range of mutation characteristics to determine the limit of recurrences ( i ) driven solely by neutral evolution. Since no neutral mutation can reach * i =3, all mutations recurring at * i ≥3 are CDNs. The theory shows the feasibility of identifying almost all CDNs if n increases to 100,000 for each cancer type. At present, only <10% of CDNs have been identified. When the full sets of CDNs are identified, the evolutionary mechanism of tumorigenesis in each case can be known and, importantly, gene targeted therapy will be far more effective in treatment and robust against drug resistance.
+Tumorigenesis, like most complex genetic traits, is driven by the joint actions of many mutations. At the nucleotide level, such mutations are cancer-driving nucleotides (CDNs). The full sets of CDNs are necessary, and perhaps even sufficient, for the understanding and treatment of each cancer patient. Currently, only a small fraction of CDNs is known as most mutations accrued in tumors are not drivers. We now develop the theory of CDNs on the basis that cancer evolution is massively repeated in millions of individuals. Hence, any advantageous mutation should recur frequently and, conversely, any mutation that does not is either a passenger or deleterious mutation. In the TCGA cancer database (sample size n=300–1000), point mutations may recur in i out of n patients. This study explores a wide range of mutation characteristics to determine the limit of recurrences (i*) driven solely by neutral evolution. Since no neutral mutation can reach i*=3, all mutations recurring at i≥3 are CDNs. The theory shows the feasibility of identifying almost all CDNs if n increases to 100,000 for each cancer type. At present, only <10% of CDNs have been identified. When the full sets of CDNs are identified, the evolutionary mechanism of tumorigenesis in each case can be known and, importantly, gene targeted therapy will be far more effective in treatment and robust against drug resistance.
 
 ## Introduction
 
@@ -55,23 +55,184 @@ In PART I, we search for the general mutation characteristics at and near high r
 
 To carry out the analyses, we first compile from the TCGA database the statistics of multiple hit sites (i hits in n samples) in 12 cancer types. This study focuses on the mutational characteristics pertaining to recurrence sites. We often present the three cancer types with the largest sample sizes (lung, breast, and CNS cancers), while many analyses are based on pan-cancer data. Analyses of every of the 12 cancer types individually will be done in the companion paper. The TCGA database is used as it is well established and covers the entire coding region (Cancer Genome Atlas Research Network et al., 2013). Other larger databases (Cerami et al., 2012; Tate et al., 2019; de Bruijn et al., 2023) are employed when the whole exon analyses are not crucial.
 
-## The compilation of multi-hit sites across all genes in the genome
+### The compilation of multi-hit sites across all genes in the genome
 
 Throughout the study, Si denotes the number of synonymous sites where the same nucleotide mutation occurs in i samples among n patients. Ai is the equivalent of Si for non-synonymous (amino acid altering) sites. Table 1 presents the numbers from lung cancer for demonstration. It also shows the Ai and Si numbers with CpG sites filtered out. There are 22.5 million nonsynonymous sites, among which ~0.2 million sites have one hit (A1=195,958) in 1035 patients. The number then decreases sharply as i increases. Thus, A2=2946 (number of 2-hit sites), A3=99, and A4 +A5 +...=79. We also note that the Ai/Si ratio increases from 2.89, 2.82, 3.04–4.71 and so on.
 
+**Table 1.**
+ An example of Ai and Si (from lung cancer, n=1035).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">All sites</th>
+      <th colspan="3">CpG sites removed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>i</td>
+      <td>Ai</td>
+      <td>Si</td>
+      <td>Ai / Si</td>
+      <td>Ai</td>
+      <td>Si</td>
+      <td>Ai / Si</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>22540623</td>
+      <td>7804281</td>
+      <td>2.89</td>
+      <td>21375384</td>
+      <td>7014012</td>
+      <td>3.04</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>195958</td>
+      <td>69393</td>
+      <td>2.82</td>
+      <td>168371</td>
+      <td>56821</td>
+      <td>2.96</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2946</td>
+      <td>969</td>
+      <td>3.04</td>
+      <td>2188</td>
+      <td>643</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>99</td>
+      <td>21</td>
+      <td>4.71</td>
+      <td>68</td>
+      <td>16</td>
+      <td>4.25</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>23</td>
+      <td>1</td>
+      <td>23</td>
+      <td>17</td>
+      <td>1</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>16</td>
+      <td>0</td>
+      <td>16 : 0</td>
+      <td>9</td>
+      <td>0</td>
+      <td>9 : 0</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>10</td>
+      <td>0</td>
+      <td>10 : 0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>6 : 0</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>5</td>
+      <td>0</td>
+      <td>5 : 0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>5 : 0</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>8</td>
+      <td>0</td>
+      <td>8 : 0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>6 : 0</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4 : 0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3 : 0</td>
+    </tr>
+    <tr>
+      <td>≥3</td>
+      <td>178</td>
+      <td>22</td>
+      <td>8.09</td>
+      <td>122</td>
+      <td>17</td>
+      <td>7.18</td>
+    </tr>
+    <tr>
+      <td>≥4</td>
+      <td>79</td>
+      <td>1</td>
+      <td>79</td>
+      <td>54</td>
+      <td>1</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>[10-20]</td>
+      <td>7</td>
+      <td>1</td>
+      <td>7</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4 : 0</td>
+    </tr>
+    <tr>
+      <td>≥20</td>
+      <td>6</td>
+      <td>0</td>
+      <td>6 : 0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4 : 0</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note –The ratio of Ai/ Si is provided as a measure of selection strength._
+
 Figure 2 shows the average of Ai and Si among the 12 cancer types (see Methods). The salient features are shown by differences between the solid and dotted lines. As will be detailed in PART II, the dotted lines, extending linearly from i=0 to i=1 in logarithmic scale, should be the expected values of Ai and Si, if mutation rate is the sole driving force. In the actual data, (A1) and S1 decrease to ~0.002 of A0 and S0, the step being least affected by selection (see PART II later). For A2 and S2, the decrease is only ~0.01 of A1 and S1. The decrease from i to i+1 becomes smaller and smaller as i increases, suggesting that the process in not entirely neutral. Furthermore, the lower panel of Figure 2 shows that Ai/Si continues to rise as i increases. These patterns again suggest a stronger positive selection at higher i values. The extrapolation lines shown in Figure 2 roughly define i=3 as a cutoff where the expected (A3) falls below 1 (see PART II for details). The precise model of PART II will define high recurrence sites (i≥3) as CDNs.
 
-## PART I - The mutational characteristic of high recurrence sites
+![Figure 2.](https://cdn.elifesciences.org/articles/99340/elife-99340-fig2-v1.jpg)
+
+**Figure 2.:** (Top): The average of Ai and Si in the log scale. Color lines - full data; gray lines - CpG sites removed. The dash lines are linear extrapolations. Bottom: The Ai / Si ratio as a function of i. The drop of Ai / Si ratio at i [8, 9] is due to the potential synonymous CDNs, see Supplementary file 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99340/elife-99340-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Single nucleotide changes within a local context of 3 bp across 12 cancer types. Mutations are grouped into 6 nucleotide change directions based on base complementarity, with colors representing each type. The Y-axis indicates the total number of each change type across the 12 cancers. The black box highlights the most abundant C>T (complementary G>A) changes occurring at CpG sites, while purple boxes designate the second-most prevalent nucleotide change at TCW (W = A or T) context which is potentially associated with APOBEC family of cytidine deaminases. (B) Context abundance within the human reference genome. For each coding region site, we extract the local context by extending 1 bp to either side. Contexts are then collapsed into 32 categories with centered base being C or T based on base complementarity. The Y-axis shows the site count for each context along the X axis. The four red bars (ACG, CCG, GCG, TCG) highlight the abundance of CpG sites in the human genome.
+
+### PART I - The mutational characteristic of high recurrence sites
 
 In this part, the analyses are done in two different ways. The sequence-feature approach is to examine the mutation characteristics of sequence features (say, 3 mers, 5 mers, etc.) across patients. The patient-feature approach is to examine patients for their mutation signatures and mutation loads.
 
-## The sequence-feature approach
+#### The sequence-feature approach
 
 The simplest and best-known sequence feature associated with high mutation rate is CpG sites. In mammals, methylation and de-amination would enhance the mutation rate from CpG to TpG or CpA by five-~tenfold (Hodgkinson and Eyre-Walker, 2011; Ségurel et al., 2014). As the CpG site mutagenesis has been extensively reported, we only present the confirmation in the Supplement (Figure 2—figure supplement 1). Indeed, CpG sites account for ~6.5% of the coding sequences but contributing ~22% among the mutated sites in Figure 2. Hence, the sevenfold increase in the CpG mutation rate should contribute more to Ai and Si as i increases. Table 1 has shown the effects of filtering out CpG sites in the counts of recurrences. Clearly, CpG sites do contribute disproportionately to the recurrences but, even when they are separately analyzed, the conclusion is unchanged. As shown later in PART II, every increment of i should decrease the site number by ~0.002 in the TCGA database. Thus, even with a 10-fold increase in mutation rate, the decrease rate would still be 0.02. In the theory sections, CpG site mutations are incorporated into the model.
 
 In this section, we aim to find out how extreme the mutation mechanisms must be to yield the observed recurrences. If these mechanisms seem implausible, we may reject the mutational-hotspot hypothesis and proceed to test the functional hotspot hypothesis.
 
-## The analyses of mutability variation by Artificial Intelligence (AI)
+### The analyses of mutability variation by Artificial Intelligence (AI)
 
 The variation of mutation rate at site level could be shaped by multiple mutational characteristics. Epigenomic features, such as chromatin structure and accessibility, could affect regional mutation rate at kilobase or even megabase scale (Stamatoyannopoulos et al., 2009; Makova and Hardison, 2015), while nucleotide biases by mutational processes typically span only a few base pairs around the mutated site (Roberts et al., 2013; Haradhvala et al., 2018; Herzog et al., 2021). AI-powered multi-modal integration offers a new tool to quantify the joint effect of various factors on mutation rate variability (Luo et al., 2019; Sherman et al., 2022; Song et al., 2023). Here we explore the association between the mutation recurrence (i) and site-level mutation rate predicted by AI.
 
@@ -79,27 +240,35 @@ Figure 3A shows the mutation rate landscape across all recurrence sites in breas
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/99340/elife-99340-fig3-v1.jpg)
 
-**Figure 3.:** Dig Sherman et al., 2022, a published AI tool.(A) Each dot represents the expected SNVs (Y-axis) at a site where missense mutations occurred i times in the corresponding cancer population. The boxplot shows the overall distribution of mutability at i, with the red dashed line denoting the average. There is no observable trend that sites of higher i are more mutable (The blank areas are due to the absence of CDNs with mutation recurrence counts of 8 or 9 in CNS cancer mutation data, see Supplementary file 1). (B) A detailed look at the coding region of PAX3 gene in colon cancer. The expected mutability of sites in the 200 bp window is plotted. The three mutated sites in this window, marked by green and red (a CDN site) stars, are not particularly mutable. Overall, the mutation rate varies by about tenfold as is generally known for CpG sites.
+**Figure 3.:** (A) Each dot represents the expected SNVs (Y-axis) at a site where missense mutations occurred i times in the corresponding cancer population. The boxplot shows the overall distribution of mutability at i, with the red dashed line denoting the average. There is no observable trend that sites of higher i are more mutable (The blank areas are due to the absence of CDNs with mutation recurrence counts of 8 or 9 in CNS cancer mutation data, see Supplementary file 1). (B) A detailed look at the coding region of PAX3 gene in colon cancer. The expected mutability of sites in the 200 bp window is plotted. The three mutated sites in this window, marked by green and red (a CDN site) stars, are not particularly mutable. Overall, the mutation rate varies by about tenfold as is generally known for CpG sites.
 
 In Figure 3B, we take a closer look at how CDN is situated against the background of mutation rate variation, using the example of PAX3 (Paired Box Homeotic Gene 3; Wang et al., 2008; Li et al., 2019). In this typical example, Dig predicts site mutability to vary from site to site. In the lower panel is an expanded look at a stretch of 200 bps. In this stretch, about 8% of sites are five- to tenfold more mutable than the average. But none of them are mutated in the data (i=0). There are indeed three sites with i>0 in this DNA segment including a CDN site C1271T (marked by the red star). This CDN site is estimated to have a twofold elevation in mutability, which is less than 1/50 of the necessary mutability to reach i≥3. The other two mutated sites, marked by the green star, are also indicated.
 
 Other AI methods have also been used in the mutability analysis (Fang et al., 2022), reaching nearly the same conclusion. Overall, while AI often suggests sequence context to influence the local variation in mutation rate, the reported variation does not correspond to the distribution of CDNs. In the next subsection, we further explore the local contexts for potential biases in mutability.
 
-## The conventional analyses of local contexts - from 3-mers to 101-mers
+### The conventional analyses of local contexts - from 3-mers to 101-mers
 
 Since the AI analyses suggest the dominant role of local sequence context in mutability, we carry out such conventional analyses in depth. Other than the CpG sites, local features such as the TCW (W=A or T) motif recognized by APOBEC family of cytidine deaminases (Burns et al., 2013; Roberts et al., 2013), would have impacts as well. We first calculate the mutation rate for motifs of 3-mer, 5-mer and 7-mer, respectively, with 64, 1024, 16384 in number (see Methods). The pan-cancer analyses across the 12 cancer types are shown in Figure 4A. We use α to designate the fold change between the most mutable motif and the average. Since the number of motifs increases 16-fold between each length class, the α value increases from 4.7 to 8.8 and then to 11.5. Nevertheless, even the most mutable 7-mer¸ TAACGCG, which has a CpG site at the center, is only 11.52-fold higher than the average. This spread is insufficient to account for the high recurrences, which decrease to ~0.002 for each increment of i (see PART II below).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/99340/elife-99340-fig4-v1.jpg)
+
+**Figure 4.:** (A) From top panel down - For the 64 (43) 3-mer motifs, their mutational rates are shown on the X-axis. The most mutable motif over the average mutability (α) is 4.69. For the 1024 (=45) 5-mer and 16,384 (47) 7-mer motifs, the α values are, respectively, 8.79 and 11.52. The most mutable motifs, as expected, are dominated by CpG’s. (B) Each dot represents the motif surrounding a high-recurrence site. The recurrence number is shown on the X-axis and the mutability of the associated motif’s mutability (mutations per 0.1 M) is shown on the Y-axis. The average mutation rate across all motifs of given length category is indicated by a red horizontal dashed line. The absence of a trend indicates that the high recurrence sites are not associated with the mutability of the motif. (C) The analysis is extended to longer motifs surrounding each CDN (21, 41, 61, 81, and 101 bp). For each length group, all pairwise comparisons are enumerated. The observed distributions (black bars and points) are compared to the expected Poisson distributions (red bars and curves) and no difference is observed. Thus, local sequences of CDNs do not show higher-than-expected similarity.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/99340/elife-99340-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The blue arrow indicates the positive strand of reference genome, with a mutated site highlighted by the red box. The green strip represents a sliding window covering the mutated site. With each stride of 10 bp, we extract the sequence context and conduct a pairwise comparison between all recurrence sites. The presence of consensus motifs would skew the Hamming distance distribution away from the expected Poisson model, reflecting non-randomness.
 
 A more direct approach is given in Figure 4B explained in the legends. The absence of a trend shows that the high recurrence sites are not associated with the mutability of the motif. In Figure 4C, the analysis extends to longer motifs of 21 bp, 41 bp, 61 bp, 81 bp, and 101 bp surrounding the high-recurrence sites. For example, the motif of 101 bp may be (10, 90), (20, 80) and so on either side of a recurrence site (Figure 4—figure supplement 1). We then compute the pairwise differences in sequences of the motifs among recurrence sites. The logic is that, if certain motifs dictate high mutation rates, we may observe unusually high sequence similarity in the pairwise comparisons. As can be seen in all 5 panels of Figure 4C, there are no outliers in the tail of the distribution. In other words, the sequences surrounding the high-recurrence sites appear rather random. Detailed motif analysis of CDNs within individual cancer types using deep learning models (ResNet, LSTM and GRU) further supports this conclusion.
 
 In conclusion, the analyses by the sequence approach do not find any association between high recurrence sites (i≥3) and the mutability of the local sequences.
 
-## The patient-feature approach
+#### The patient-feature approach
 
 In this second approach, we examine the mutation characteristics among patients across sequence features. The first question is whether high recurrence sites tend to happen in patients with higher mutation loads. Figure 5A depicts the distribution of mutation loads among patients harboring a CDN of recurrence i. Hence, a patient’s load may appear several times in the plot, each appearance corresponding to one CDN in the patient’s data. For the comparison across i values, the mutation load is normalized by a z-score within each cancer population to equalize the three cancer types. The overall trend shows consistently that patients with recurrence sites do not bias toward high mutation loads. The presence of recurrence sites in patients with low mutation loads suggests that overall mutation burden is not a determining factor of recurrence.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/99340/elife-99340-fig5-v1.jpg)
 
-**Figure 5.:** (A) Boxplot depicting the distribution of mutation load among patients with recurrent mutations. The X-axis denotes the count of recurrent mutations, while the Y-axis depicts the normalized z-score of mutation load (see Methods). The green dashed line indicates the mean mutation load. In short, the mutation load does not influence the mutation recurrence among patients. (B) Signature analysis in patients with mutations of recurrences ≥i (X-axis). For lung cancer (left), the upper panel presents the number of patients for each group, while the lower panel depicts the relative contribution of mutational signatures. For breast cancer, APOBEC-related signatures (SBS2 and SBS13) are notably elevated in all groups of patients with *i≥3, while patients with mutations of recurrence ≥ 20 in CNS cancer exhibit an increased exposure to SBS11 (*Blough et al., 2011; Lin et al., 2021; Noeuveglise et al., 2023). Again, patients with higher mutation recurrences do not differ in their mutation signatures.
+**Figure 5.:** (A) Boxplot depicting the distribution of mutation load among patients with recurrent mutations. The X-axis denotes the count of recurrent mutations, while the Y-axis depicts the normalized z-score of mutation load (see Methods). The green dashed line indicates the mean mutation load. In short, the mutation load does not influence the mutation recurrence among patients. (B) Signature analysis in patients with mutations of recurrences ≥i* (X-axis). For lung cancer (left), the upper panel presents the number of patients for each group, while the lower panel depicts the relative contribution of mutational signatures. For breast cancer, APOBEC-related signatures (SBS2 and SBS13) are notably elevated in all groups of patients with i*≥3, while patients with mutations of recurrence ≥ 20 in CNS cancer exhibit an increased exposure to SBS11 (Blough et al., 2011; Lin et al., 2021; Noeuveglise et al., 2023). Again, patients with higher mutation recurrences do not differ in their mutation signatures.
 
 With the results of Figure 5A, we then ask a related question: whether these high recurrence mutations are driven by factors that affect mutation characteristics. Such influences have been captured by the analyses of ‘mutational signatures’ (Alexandrov et al., 2013; Alexandrov et al., 2020). Each signature represents a distinct mutation pattern (e.g. high rate of TCT ->TAT and other tri-nucleotide changes) associated with a known factor, such as smoking or an aberrant mutator (aristolochic acid, for example). Each patient’s mutation profile can then be summarized by the composite of multiple mutational signatures.
 
@@ -107,23 +276,47 @@ The issue is thus whether a patient’s CDNs can be explained by the patient’s
 
 To conclude PART I, the high-recurrence sites do not stand out for their mutation characteristics. Therefore, the variation in mutation rate across the whole genome can reasonably be approximated mathematically by a continuous distribution, as will be done below.
 
-## PART II - The theory of CDNs
+### PART II - The theory of CDNs
 
 We now develop the theory for Si and Ai under neutrality where i is the recurrence of the mutation at each site. We investigate the maximal level of neutral mutation recurrences (i*), above which the expected values of Si and Ai are both <0. Since no neutral mutations are expected to reach i*, every mutation with the recurrence of i* or larger should be non-neutral. Importantly, given that the expected Si and Ai is a function of Ui where U=nE(u) is in the order of 10–2 and 10–3, i* is insensitive to a wide range of mutation scenarios. For that reason, the conclusion is robust.
 
 The mutation rate of each nucleotide (u) follows a Gamma distribution with a scale parameter θ and a shape parameter k. Gamma distribution is often used for its flexibility and, in this context, models the waiting time required to accumulate k mutations. Its mean (=kθ) and variance (=kθ2) are determined by both parameters but the shape (skewness and kurtosis) is determined only by k. In particular, the Gamma distribution has a long tail suited to modeling a small number of sites with very high mutation rate.
 
-We now use synonymous (Si) mutations as the proxy for neutrality. Hence, in n samples,(1)Si=∑l=1LSCniu(l)i[1−u(l)]n−i∼CniLSE(ui)
+We now use synonymous (Si) mutations as the proxy for neutrality. Hence, in n samples,
 
-where LS is the total number of synonymous sites and u(l) is the mutation rate of site l. In the equation above, the term 1−uln−i is dropped. We note that [1−u(l)]n−ie[−u(l)(n−i)]∼1 as u is in the order of 10–6 and n is in the order of 102 from the TCGA data. With the gamma distribution of u whereby the ith moment is given byE(ui)=Γ(k+i)Γ(k)θi=Γ(k+i)Γ(k)⋅kiE(u)i
+$$
+S_{i}=\suml=1L_{S}C_{n}^{i}u(l)^{i}[1−u(l)]^{n−i}∼C_{n}^{i}L_{S}E(u^{i})
+$$
 
-we obtain:Si=LS⋅g(i,k)[nE(u)]i
+where LS is the total number of synonymous sites and u(l) is the mutation rate of site l. In the equation above, the term $1−ul^{n−i}$ is dropped. We note that $[1−u(l)]^{n−i}e^{[−u(l)(n−i)]}∼1$ as u is in the order of 10–6 and n is in the order of 102 from the TCGA data. With the gamma distribution of u whereby the ith moment is given by
 
-here:g(i,k)=Ck+i−1i⋅1ki
+$$
+E(u^{i})=\frac{Γ(k+i)}{Γ(k)}\theta^{i}=\frac{Γ(k+i)}{Γ(k)⋅k^{i}}E(u)^{i}
+$$
 
-In a condensed form,(2)Si=G⋅[nE(u)]i
+we obtain:
 
-where G=LS⋅gi,k. Similarly, if nonsynonymous mutations are assumed neutral, then,(3)Ai=LA⋅g(i,k)[nE(u)]i∼2.3⋅Si
+$$
+S_{i}=L_{S}⋅g(i,k)[nE(u)]^{i}
+$$
+
+here:
+
+$$
+g(i,k)=C_{k+i−1}^{i}⋅\frac{1}{k^{i}}
+$$
+
+In a condensed form,
+
+$$
+S_{i}=G⋅[nE(u)]^{i}
+$$
+
+where $G=L_{S}⋅gi,k$. Similarly, if nonsynonymous mutations are assumed neutral, then,
+
+$$
+A_{i}=L_{A}⋅g(i,k)[nE(u)]^{i}∼2.3⋅S_{i}
+$$
 
 The number of 2.3 is roughly the ratio of the total number of nonsynonymous over that of synonymous sites (Hartl and Clark, 1989; Li, 1997; Chen et al., 2019). This number would vary moderately among cancers depending on their nucleotide substitution patterns.
 
@@ -131,39 +324,142 @@ E(u) of Equations 2 and 3 is generally (1~5)×10–6 per site in cancer genomic 
 
 For each cancer type, the conclusion of S3 <1 and A3 <1 is valid with the actual value of S3 and A3 ranging between 0.01 and 1. In other words, with n<1000,, neutral mutations are unlikely to recur 3 times or more in the TCGA data (i*=3). While Si ≥3 and Ai ≥3 sites are high-confidence CDNs, the value of i* is a function of n. At n≤1,000 for the TCGA data, i* should be 3 but, when n reaches 10,000, i* will be 6. The benefits of large n’s will be explored in PART III.
 
-## Possible outliers to the distribution of mutation rate
+### Possible outliers to the distribution of mutation rate
 
 Although we have explored extensively the sequence contexts, other features beyond DNA sequences could still lead to outliers to mathematically distributions. These features may include DNA stem loops (Buisson et al., 2019) or unusual epigenetic features (Zheng et al., 2014; Makova and Hardison, 2015; Supek and Lehner, 2015). We therefore expand the model by assuming a small fraction of sites (p) to be hyper-mutable that is α fold more mutable than the genomic mean. Most likely, α and p are the inverse of each other. For the bulk of sites (1 p) of the genome, we assume that their mutations follow the Gamma distribution. (Nevertheless, the bulk can be assumed to have a fixed mutation rate of E(u) without affecting the conclusion qualitatively.)
 
 We let p range from 10–2 to 10–5 and α up to 1000. As no stretches of DNA show such unusually high mutation rate (1000-fold higher than the average), such sites are assumed to be scattered across the genome and are rare. With the parameter space of defined above, we choose the (p, α) pairs that agree with the observed values of S1 to S3 which are sufficiently large for estimations. Table 2 presents the value range and standard deviation for p and α across the six cancer types that have >500 patient samples. Among the six cancer types, the lung cancer data do not conform to the constraints and we set p=0. With observed values for S1~3 as constraints, S4 rarely exceeds 1. Hence, even with the purely conjectured existence of outliers in mutation rate, i*=4 is already too high a cutoff.
 
+**Table 2.**
+ Summary for modeling outlier sites in six cancer types.Table 2—source data 1.The outlier model parameters and expected Si values for 6 cancer types analyzed.‘pMinor’ and ‘alpha’ correspond to (‘p, a’) as described in the main text. ‘Eu’ represents the average mutation rate per site per patient for the given cancer type (‘ccType’). ‘s2Expt’ ‘s3Expt’ ‘4’ ‘s5’ and ‘s6’ are the expected Si values for i = 2, 3, 4, 5, 6, respectively. ‘s2Obsv’ and ‘s3Obsv’ represent the observed Si values for S2 and S3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cancer Type</th>
+      <th>S3</th>
+      <th>p</th>
+      <th>α</th>
+      <th>S4</th>
+      <th>S5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lung*</td>
+      <td>--</td>
+      <td>0.0</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Breast</td>
+      <td>0.12</td>
+      <td>8.75E-04 (8.21E-04)</td>
+      <td>88.6 (32.0)</td>
+      <td>0.102 (0.068)</td>
+      <td>0.004 (0.004)</td>
+    </tr>
+    <tr>
+      <td>CNS</td>
+      <td>0.02</td>
+      <td>2.73E-04 (1.09E-04)</td>
+      <td>295.1 (57.0)</td>
+      <td>0.448 (0.173)</td>
+      <td>0.026 (0.015)</td>
+    </tr>
+    <tr>
+      <td>Kidney</td>
+      <td>0.03</td>
+      <td>3.03E-05 (2.98E-05)</td>
+      <td>304.1 (108.0)</td>
+      <td>0.067 (0.056)</td>
+      <td>0.005 (0.006)</td>
+    </tr>
+    <tr>
+      <td>Upper-AD tract</td>
+      <td>0.47</td>
+      <td>0.002 (0.001)</td>
+      <td>48.9 (10.7)</td>
+      <td>0.174 (0.078)</td>
+      <td>0.005 (0.003)</td>
+    </tr>
+    <tr>
+      <td>Large intestine</td>
+      <td>1.03</td>
+      <td>0.009 (0.001)</td>
+      <td>51.6 (1.4)</td>
+      <td>0.998 (0.087)</td>
+      <td>0.026 (0.003)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note – For each cancer type, p stands for the proportion of highly mutable sites, with mutation rate being α-fold of the average. S3 gives the expected number without mutable outliers (P=0). S4 and S5 denote the expected number with the best (p, α) pairs with the standard deviation in parentheses. For lung cancer, S2 and S3 do not fit the outlier model (Table 2—source data 1); therefore, we set P=0._
+
 Table 2 suggests that p has to be smaller than 10–5 and α>1,000 to yield S4 >1. Since the coding region has 3×107 sites, p<10–5 would mean that the outliers are at most in the low hundreds. In other words, the number of high recurrence sites projected by the theory is close to the observed numbers. Therefore, there are really no unknown outlier sites of high mutation rate. Positive selection would be a more straightforward explanation, explained below.
 
-## The influence of selection on mutation occurrences
+### The influence of selection on mutation occurrences
 
-We now show that, although the mutational bias alone cannot account for the high occurrences, selection can easily do so. We assume a fraction, f, of Ai’s to be under positive selection. The fraction should be small, probably ≪ 0.01, and will be labeled Ai∗. The rest, labeled Ai is considered neutral. Hence, Ai is proportional to [nE(u)i] and Ai/Si =LA/LS ~2.3. Like Si ≥4, Ai ≥4 ≪ 1. In contrast,(4)Ai∗=G∗[w⋅nE(u)]i(5)Ai∗Si=G∗Gwi
+We now show that, although the mutational bias alone cannot account for the high occurrences, selection can easily do so. We assume a fraction, f, of Ai’s to be under positive selection. The fraction should be small, probably ≪ 0.01, and will be labeled $A_{i}^{∗}$. The rest, labeled Ai is considered neutral. Hence, Ai is proportional to $[nE(u)^{i}]$ and Ai/Si =LA/LS ~2.3. Like Si ≥4, Ai ≥4 ≪ 1. In contrast,
 
-where G* is also a constant but its value depends on f. The crucial parameter, w (=2 Ns), is the selective advantage (s) scaled by the population size of progenitor cancer cell (N). Since w can easily be >10, even at i=3, A1∗/S1 would be >100 as large as (1−u)n−ie−u(n−i). In other words, observed mutation recurrences at i≥3 for advantageous mutation should not be uncommon. Equation 4 also shows that w and E(u) jointly affect the recurrence; therefore, CpG sites (many of which fall in functional sites) are expected to be strongly represented among high recurrence sites.
+$$
+A_{i}^{∗}=G^{∗}[w⋅nE(u)]^{i}
+$$
 
-## PART III. The theory of large samples (n > 105) and identification of all CDNs
+
+
+$$
+\frac{A_{i}^{∗}}{S_{i}}=\frac{G^{∗}}{G}w^{i}
+$$
+
+where G* is also a constant but its value depends on f. The crucial parameter, w (=2 Ns), is the selective advantage (s) scaled by the population size of progenitor cancer cell (N). Since w can easily be >10, even at i=3, $A_{1}^{∗}/S_{1}$ would be >100 as large as $(1−u)^{n−i}e^{−u(n−i)}$. In other words, observed mutation recurrences at i≥3 for advantageous mutation should not be uncommon. Equation 4 also shows that w and E(u) jointly affect the recurrence; therefore, CpG sites (many of which fall in functional sites) are expected to be strongly represented among high recurrence sites.
+
+### PART III. The theory of large samples (n > 105) and identification of all CDNs
 
 Using the theory of CDN developed above, the companion paper shows that each sequenced cancer genome in the current databases, on average, harbors only 1~2 CDNs. The number varies in this range depending on the cancer type (Zhang et al., 2024). For comparison, tumorigenesis may require at least 5~10 driver mutations as estimated by various criteria (Armitage and Doll, 1954; Hanahan and Weinberg, 2011; Belikov, 2017; Martincorena et al., 2017; Anandakrishnan et al., 2019; ICGC/TCGA Pan-Cancer Analysis of Whole Genomes Consortium, 2020). The results show that there are many more CDNs that have not been discovered. This is not unexpected since most CDNs are found in <1% of patients. If each CDN is observed in 1% of patients and each patient has 5 CDNs, then there should be at least 500 CDNs for each cancer type.
 
 In the companion study that uses the A/S ratios of Figure 1, the estimated number of CDNs ranges from 500 to 2000, whereas the current estimates based on Ai ≥3 sites is only 50~100 (Zhang et al., 2024). Where, then, are the undiscovered CDNs and how to find them? Since all Ai ≥3 sites are concluded to be CDNs, the bulk of CDNs must be among A1 and A2 sites. The best way to identify the CDNs hidden in A1 and A2 is to increase the sample size, n, dramatically.
 
-We hence extend Equation 1 for Si and Ai to large n’s. Note that Equation 1 drops the term of (1−u)n−i∼e−u(n−i) as it is ~1, when nE(u) ≪ 1. With a large n when e−u(n−i) is not near 1, the recurrence of mutations would follow a Poisson distribution with the expected value of nE(u). Assuming that u follows a gamma distribution with a shape parameter of k, the probability of observing i mutations would follow the negative binomial distribution as shown below:(6)f(i|k,n,E(u))=Γ(i+k)Γ(i+1)Γ(k)kk[nE(u)]i[k+nE(u)]−k−i
+We hence extend Equation 1 for Si and Ai to large n’s. Note that Equation 1 drops the term of $(1−u)^{n−i}∼e^{−u(n−i)}$ as it is ~1, when nE(u) ≪ 1. With a large n when $e^{−u(n−i)}$ is not near 1, the recurrence of mutations would follow a Poisson distribution with the expected value of nE(u). Assuming that u follows a gamma distribution with a shape parameter of k, the probability of observing i mutations would follow the negative binomial distribution as shown below:
 
-The cumulation density function for Equation 6 is then:(7)F(i≤i∗)=∑i=1i∗f(i|k,n,E(u))
+$$
+f(i|k,n,E(u))=\frac{Γ(i+k)}{Γ(i+1)Γ(k)}k^{k}[nE(u)]^{i}[k+nE(u)]^{−k−i}
+$$
 
-Then, by definition, Ai ≥i* should be ≪ 1 so that mutations with recurrences i>i* could be defined as CDN. Thus:(8)F(i≤i∗)=1−εLA
+The cumulation density function for Equation 6 is then:
 
-where ε=Ai≥i* denotes the number of sites with mutation recurrence ≥i* under the sole influence of mutational force. εLA could then be regarded as significance of i* since it controls the overall false positive rate of CDNs.
+$$
+F(i\leqi^{∗})=\sumi=1i^{∗}f(i|k,n,E(u))
+$$
 
-Specifically, with k=1, the probability function of mutation recurrence of a given site would transform to a geometric distribution with P=1 / (1+nE(u)), the cumulative density function (CDF) is then:(9)F(i≤i∗)=1−(1−11+nE(u))i∗
+Then, by definition, Ai ≥i* should be ≪ 1 so that mutations with recurrences i>i* could be defined as CDN. Thus:
 
-Combined with Equation 5, the mutation recurrence cutoff i* of being a CDN could be expressed as:(10)i∗=log⁡(εLA)log⁡(nE(u)1+nE(u))
+$$
+F(i\leqi^{∗})=1−\frac{\epsilon}{L_{A}}
+$$
 
-For very large n, 1/nE(u) is small and i*/n can be approximated as(11)i∗/n=log⁡(LA)⋅E(u)∼5×10−5
+where ε=Ai≥i* denotes the number of sites with mutation recurrence ≥i* under the sole influence of mutational force. $\frac{\epsilon}{L_{A}}$ could then be regarded as significance of i* since it controls the overall false positive rate of CDNs.
+
+Specifically, with k=1, the probability function of mutation recurrence of a given site would transform to a geometric distribution with P=1 / (1+nE(u)), the cumulative density function (CDF) is then:
+
+$$
+F(i\leqi^{∗})=1−(1−\frac{1}{1+nE(u)})^{i^{∗}}
+$$
+
+Combined with Equation 5, the mutation recurrence cutoff i* of being a CDN could be expressed as:
+
+$$
+i^{∗}=\frac{log⁡(\frac{\epsilon}{L_{A}})}{log⁡(\frac{nE(u)}{1+nE(u)})}
+$$
+
+For very large n, 1/nE(u) is small and i*/n can be approximated as
+
+$$
+i^{∗}/n=log⁡(L_{A})⋅E(u)∼5\times10^{−5}
+$$
 
 Equation 11 shows that i*/n would approach asymptotically as n increases. This asymptotic value is attained when n reaches ~106.
 
@@ -171,13 +467,13 @@ Figure 6 shows the range of i* for n up to 106. As expected, i* increases by sma
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/99340/elife-99340-fig6-v1.jpg)
 
-**Figure 6.:** i values (Y-axis, log scale) against sample sizes (n), X-axis across different shape parameter *k’s.The Y axis presents the i values under different sample sizes (n) of the X-axis in log scale. Five shape parameters (k) of the gamma-Poisson model are used. In the literatures on the evolution of mutation rate, *k is usually greater than 1. The inset figure illustrates how i/ n (prevalence) would decrease with increasing sample sizes. The prevalence would approach the asymptotic line of [*] when logLA⋅Eun reaches 106. In short, more CDNs (those with lower prevalence) will be discovered as n increases. Beyond n=106, there will be no gain.
+**Figure 6.:** The Y axis presents the i* values under different sample sizes (n) of the X-axis in log scale. Five shape parameters (k) of the gamma-Poisson model are used. In the literatures on the evolution of mutation rate, k is usually greater than 1. The inset figure illustrates how i*/ n (prevalence) would decrease with increasing sample sizes. The prevalence would approach the asymptotic line of [$logL_{A}⋅Eu$] when n reaches 106. In short, more CDNs (those with lower prevalence) will be discovered as n increases. Beyond n=106, there will be no gain.
 
 When n approaches 105, the number of CDNs will likely increase more than 10-fold as conjectured in Figure 7A. In that case, every patient would have, say, 5 CDNs that can be subjected to gene targeting. (The companion study shows that, at present, an average cancer patient would have fewer than one targetable CDN.) Before the project is realized, it is nevertheless possible to test some aspects of it using the GENIE data of targeted sequencing. Such screening for mutations in the roughly 700 canonical genes serves the purpose of diagnosis with n ranging between 10~17 thousands for the breast, lung and CNS cancers. Clearly, GENIE efforts did not engage in discovering new mutations although they would discover additional CDNs in the canonical genes. In the companion study, we demonstrate that the analysis of CDNs identifies a potential set of 1.6 times more driver genes than those detected by whole gene selection signal calls (Zhang et al., 2024).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/99340/elife-99340-fig7-v1.jpg)
 
-**Figure 7.:** (A) Schematic illustrating the impact of sample size expansion on the number of discovered CDNs. The two vertical lines show the cutoffs of i/*n at (3/1000) vs. (12/100,000). The Y axis shows that the potential number of sites would decrease with i/*n, which is a function of selective advantage. The area between the two cutoffs below the line represents the new CDNs to be discovered when n reaches 100,000. The power of n=100,000 is even larger if the distribution follows the blue dashed line. (B) The prevalence (i/n) of sites is well correlated between datasets of different n (TCGA with n<1000 and GENIE with generally tenfold higher), as it should be. Sites are displayed by color. ‘1-hit’: CDNs identified in GENIE but remain in singleton in TCGA, ‘2-hit’: CDNs identified in GENIE but present in doubleton in TCGA. ‘CDN both’: CDNs identified in both databases. (C–E) CDNs discovered in GENIE (n>9000) but absent in TCGA (n<1000). The newly discovered CDNs may fall in TCGA as 0–2 hit sites. The numbers in the middle column show the percentage of lower recurrence (non-CDN) sites in TCGA that are detected as CDNs in the GENIE database, which has much larger n’s.
+**Figure 7.:** (A) Schematic illustrating the impact of sample size expansion on the number of discovered CDNs. The two vertical lines show the cutoffs of i*/n at (3/1000) vs. (12/100,000). The Y axis shows that the potential number of sites would decrease with i*/n, which is a function of selective advantage. The area between the two cutoffs below the line represents the new CDNs to be discovered when n reaches 100,000. The power of n=100,000 is even larger if the distribution follows the blue dashed line. (B) The prevalence (i/n) of sites is well correlated between datasets of different n (TCGA with n<1000 and GENIE with generally tenfold higher), as it should be. Sites are displayed by color. ‘1-hit’: CDNs identified in GENIE but remain in singleton in TCGA, ‘2-hit’: CDNs identified in GENIE but present in doubleton in TCGA. ‘CDN both’: CDNs identified in both databases. (C–E) CDNs discovered in GENIE (n>9000) but absent in TCGA (n<1000). The newly discovered CDNs may fall in TCGA as 0–2 hit sites. The numbers in the middle column show the percentage of lower recurrence (non-CDN) sites in TCGA that are detected as CDNs in the GENIE database, which has much larger n’s.
 
 Figure 7A assumes that the prevalence, i/n, should not be much affected by n, but the cutoff for CDNs, i*/n, would decrease rapidly as n increases. (Figure 7B) shows that the i/n ratios indeed correspond well between TCGA and GENIE, which differ by 10–20-fold in sample size. Importantly, as predicted in Figure 6, the number of CDNs increases by three to fivefold (Figure 7C-E). Many of these newly discovered CDNs from GENIE are found in the A1 and A2 classes of TCGA while many more are found in the A0 class in TCGA. In conclusion, increasing n by one to two orders of magnitude would be the simplest means of finding all CDNs.
 
@@ -185,7 +481,7 @@ Figure 7A assumes that the prevalence, i/n, should not be much affected by n, bu
 
 The nature of high-recurrence mutations has been controversial. Many authors have argued for mutational hotspots (Hess et al., 2019; Stobbe et al., 2019; Nesta et al., 2021; Bergstrom et al., 2022; Wong et al., 2022) but just as many have contended that they are CDNs driven by selection (Gartner et al., 2013; Chang et al., 2016; Bailey et al., 2018; Cannataro et al., 2018; Juul et al., 2021; Zhao et al., 2021; Zeng and Bromberg, 2022). While the two views co-exist, they are in fact incompatible. If the mutational hotspot hypothesis is correct, the selection hypothesis, and the determination of CDNs, would not be needed.
 
-We believe that this study is the first to comprehensively test of the null hypothesis of mutational hotspots. In PART I, the mutational characteristics near all putative CDNs are examined and PART II presents the probability theory based on the analyses. The conclusion is that it is possible to reject the null hypothesis for recurrences as low as 3 in the TCGA data. The main reason for the high sensitivity is shown in Equations 2 and 3 where Ai and Si is proportional to nl or, roughly 0.002i. We recognized that the conclusion is based on what we currently know about mutation mechanisms. In a sense, the theory developed here can help the search for such unknown mutation mechanisms, if they do exist. Finally, the theory developed would permit the explorations in several new fronts when the sample size, n, expands to 105.
+We believe that this study is the first to comprehensively test of the null hypothesis of mutational hotspots. In PART I, the mutational characteristics near all putative CDNs are examined and PART II presents the probability theory based on the analyses. The conclusion is that it is possible to reject the null hypothesis for recurrences as low as 3 in the TCGA data. The main reason for the high sensitivity is shown in Equations 2 and 3 where Ai and Si is proportional to $n_{l}$ or, roughly 0.002i. We recognized that the conclusion is based on what we currently know about mutation mechanisms. In a sense, the theory developed here can help the search for such unknown mutation mechanisms, if they do exist. Finally, the theory developed would permit the explorations in several new fronts when the sample size, n, expands to 105.
 
 The first front is to identify (nearly) all CDNs. When n reaches 105, any point mutation with a prevalence higher than 12/100,000 would be a CDN, which is 25-fold more sensitive than in the TCGA data (3/1000). The companion analysis suggests that CDNs with lower prevalence, say 12/100,000 may still be highly tumorigenic in patients with the said mutation. If prevalence and potence are indeed poorly correlated, the search for lower prevalence CDNs by increasing n to 105 is equivalent to searching for less common but still potent cancer driving mutations.
 
@@ -197,88 +493,126 @@ There will be other fronts to explore with the full set of CDNs. A large databas
 
 ## Methods
 
-## Data collection
+### Data collection
 
 Single nucleotide variation (SNV) data for the TCGA cohort was downloaded from the GDC Data Portal (https://portal.gdc.cancer.gov/, data version 2022-02-28). Only mutations identified by at least two pipelines were included in this study. Mutations were further filtered based on their population frequency recorded in the Genome Aggregation Database (gnomAD, version v2.1.1), with an upper threshold of 1‰. We focused on coding region mutations of missense, nonsense, and synonymous types on autosomes. The mutation load for each patient was defined as the sum of these three types of mutations. Patients with a mutation load exceeding 3000 were identified as having a mutator phenotype and were excluded from our analysis. In total, 7369 samples representing 12 cancer types were included for mutation analysis.
 
-Additional mutation data was acquired from the AACR Project GENIE Consortium via cBioPortal. Due to the prevalence of targeted sequencing within the dataset, filtering was implemented to ensure the inclusion of samples with sequencing assays encompassing all exonic regions of target genes. Furthermore, sample-level filtering was performed to guarantee a unique sequencing sample per patient. Germline filtering was applied to the resulting point mutations, removing mutations with SNP frequencies exceeding 0.0005 in any subpopulation annotated by gnomAD. To exclude patients exhibiting hypermutator phenotypes, mutation loads were scaled to the whole exon level with nL~=nl⋅Ll, where nl and l represent the mutation load and genomic length of target sequencing region, respectively. L denotes the genome-wide whole coding region length. Patients with nL∼>3000 were subsequently excluded, consistent with the threshold employed for the TCGA dataset.
+Additional mutation data was acquired from the AACR Project GENIE Consortium via cBioPortal. Due to the prevalence of targeted sequencing within the dataset, filtering was implemented to ensure the inclusion of samples with sequencing assays encompassing all exonic regions of target genes. Furthermore, sample-level filtering was performed to guarantee a unique sequencing sample per patient. Germline filtering was applied to the resulting point mutations, removing mutations with SNP frequencies exceeding 0.0005 in any subpopulation annotated by gnomAD. To exclude patients exhibiting hypermutator phenotypes, mutation loads were scaled to the whole exon level with $n_{L}~=n_{l}⋅\frac{L}{l}$, where $n_{l}$ and l represent the mutation load and genomic length of target sequencing region, respectively. L denotes the genome-wide whole coding region length. Patients with $n_{L}∼>3000$ were subsequently excluded, consistent with the threshold employed for the TCGA dataset.
 
-## Calculation of missense and synonymous site number (LA and LS)
+### Calculation of missense and synonymous site number (LA and LS)
 
 The idea of missense or synonymous sites originates from the question that how many missense or synonymous mutations would be expected if each site of the genome were mutated once given background mutation patterns. Here, the background mutation patterns refer to intrinsic biases in the mutational process, such as the over-representation of C>T (or G>A) mutations at CpG sites due to spontaneous deamination of 5-methylcytosine. In coding regions, fourfold degenerate sites are generally considered neutral, as any mutation path would not alter the encoded amino acid sequence. This analysis follows established methods at the single-base level to infer the expected number of missense and synonymous sites across the genome (Gojobori et al., 1982; Wu and Maeda, 1987; Hartl and Clark, 1989; Martincorena et al., 2017).
 
-To illustrate the calculation process, we provide an example of synonymous site estimation. At four-fold degenerate sites throughout the genome, we tally the number of mutations from base m to base v as nm>v(m,v∈{A,C,G,T},m≠v). The likelihood of observing a mutation from reference base m to variant base v will be rm>v=nm>vNm , where Nm represents the number of fourfold degenerate site with reference base m. We then normalize all likelihoods by Rm>v=rm>v∑r, where ∑r represents the sum of likelihoods across 12 possible mutation paths, Rm>v thus describes the relative probability of an occurred mutation to be m>v at any site. For a given genomic coding region of length L, the synonymous site number will be:(S1)LS=∑Lδm>vsynRm>v
+To illustrate the calculation process, we provide an example of synonymous site estimation. At four-fold degenerate sites throughout the genome, we tally the number of mutations from base m to base v as $n_{m>v}(m,v\in{A,C,G,T},m\neqv)$. The likelihood of observing a mutation from reference base m to variant base v will be $r_{m>v}=\frac{n_{m>v}}{N_{m}}$ , where $N_{m}$ represents the number of fourfold degenerate site with reference base m. We then normalize all likelihoods by $R_{m>v}=\frac{r_{m>v}}{\sumr}$, where $\sumr$ represents the sum of likelihoods across 12 possible mutation paths, $R_{m>v}$ thus describes the relative probability of an occurred mutation to be $m>v$ at any site. For a given genomic coding region of length L, the synonymous site number will be:
 
-with δm>vsyn being a Kronecker delta function where:
+$$
+L_{S}=\sumL\delta_{m>v}^{syn}R_{m>v}
+$$
 
-m>v if is synonymous
+with $\delta_{m>v}^{syn}$ being a Kronecker delta function where:
 
-δm>vsyn=0 otherwise
+$m>v$ if is synonymous
 
-Similarly, the expected number of missense sites LA, is calculated as follows:(S2)LS=∑Lδm>vmisRm>v
+$\delta_{m>v}^{syn}=0$ otherwise
 
-## Calculation of Ai and Si
+Similarly, the expected number of missense sites LA, is calculated as follows:
 
-For each mutated site, we track its number of recurrent mutations i (i>0) across two mutation categories: missense and synonymous. Subsequently, we aggregate across entire coding region to count the number of sites harboring i missense mutations (Ai) and synonymous mutations (Si). For i=0, we define A0 and S0 as the estimated number of potential missense and synonymous sites that remain unmutated within the current sample size.  A0=LA−Σi>0Ai,S0=Ls−Σi>0Si.
+$$
+L_{S}=\sumL\delta_{m>v}^{mis}R_{m>v}
+$$
 
-## AI-based mutation rate analysis
+### Calculation of Ai and Si
+
+For each mutated site, we track its number of recurrent mutations i (i>0) across two mutation categories: missense and synonymous. Subsequently, we aggregate across entire coding region to count the number of sites harboring i missense mutations (Ai) and synonymous mutations (Si). For i=0, we define A0 and S0 as the estimated number of potential missense and synonymous sites that remain unmutated within the current sample size.  $A_{0}=L_{A}−Σ_{i>0}A_{i},S_{0}=L_{s}−Σ_{i>0}S_{i}.$
+
+### AI-based mutation rate analysis
 
 To capture the complex interplay of genomic and epigenomic factors influencing mutation susceptibility, we employed pre-trained artificial intelligence (AI) models from Dig, an aggregated tool combining deep learning and probabilistic models (Sherman et al., 2022). Downloaded from the Dig data portal (http://cb.csail.mit.edu/cb/DIG/downloads/), these models leverage a rich set of features encompassing both kilobase-scale epigenomic context (replicating timing, chromatin accessibility, etc.) and fine-grained base-pair level information (such as sequence context biases) to predict the site level mutation rate. For each cancer type, we re-fitted the pre-trained models with mutations analyzed in our study. The mutation rate for each site, scaled by population size, was obtained via the elementDriver function within Dig, and was represented by EXP_SNV from the final results. For a closer look at mutation rate landscape of PAX3, we re-fitted the AI-model with point mutations from large intestine cancer. The mutation rates were generated site-by-site for the coding regions of PAX3.
 
 Given the scarcity of mutated sites with recurrence i≥3 (comprising only 0.15% of all mutated sites), a rigorous statistical approach was adopted to assess the significance of mutability differences between these high-hit groups and low-hit groups. We implemented the procedure as follows:
 
-(1) Raw significance level: For each recurrence group i (containing Ai sites), a one-sided Kolmogorov-Smirnov (K-S) test was employed to calculate a raw significance level (denoted as p0) against the low-hit group.
+(1) Raw significance level: For each recurrence group i (containing Ai sites), a one-sided Kolmogorov-Smirnov (K-S) test was employed to calculate a raw significance level (denoted as $p_{0}$) against the low-hit group.
 
-(2) Resampling for Significance Pool: we resample Ai sites from the entire pool of mutated sites with missense mutations. The significance pj from one-sided K-S test is calculated against the low hit group. The resampling process was repeated 100,000 times, generating a distribution of resampled significance levels, denoted as {pj,j=1,2,...,100,000}.
+(2) Resampling for Significance Pool: we resample Ai sites from the entire pool of mutated sites with missense mutations. The significance $p_{j}$ from one-sided K-S test is calculated against the low hit group. The resampling process was repeated 100,000 times, generating a distribution of resampled significance levels, denoted as ${p_{j},j=1,2,...,100,000}$.
 
-(3) Adjusted Significance Level: the raw significance p0 was then compared to the resampled significance pool {pj,j=1,2,...,100,000}. The proportion of p0<pj was then calculated as the adjusted significance level that accounted for potential sampling effects.
+(3) Adjusted Significance Level: the raw significance $p_{0}$ was then compared to the resampled significance pool ${p_{j},j=1,2,...,100,000}$. The proportion of $p_{0}<p_{j}$ was then calculated as the adjusted significance level that accounted for potential sampling effects.
 
-## Motif-based mutability
+### Motif-based mutability
 
 For a given nucleotide base, we extended the sequence to each side by 1, 2, and 3 base pairs, producing sets of 3-mer, 5-mer, and 7-mer motifs, respectively. We then pooled point mutations from 12 cancer types to create a comprehensive dataset. For 3-mer and 5-mer motifs, we utilized synonymous mutations as the reference for mutation rate calculations. For 7-mer motifs, the vast number of possible sequence combinations (47=16,384) posed a challenge, as synonymous mutations alone might not adequately cover all potential contexts. To address this, we employed all singleton mutations (1-hit mutations) from both missense and synonymous categories for 7-mer motif analysis. This decision was based on the assumption that singleton mutations are less affected by selective pressures, supported by the genome-wide observation that the ratio of missense to synonymous singletons (A1/S1) approximates the ratio of unmutated missense to synonymous sites (A0/S0).
 
-The site number for 3-mer and 5-mer motifs of a given context c was calculated as follows:Lc,S=∑Lδc,m>vsyn⋅Rm>v
+The site number for 3-mer and 5-mer motifs of a given context c was calculated as follows:
 
-Which is an extension of Equation S1, with δc,m>vsyn being a Kronecker delta function where:
+$$
+L_{c,S}=\sumL\delta_{c,m>v}^{syn}⋅R_{m>v}
+$$
 
-δc,m>vsyn=1 if base change of m to v (m > v) is synonymous under sequence context c.
+Which is an extension of Equation S1, with $\delta_{c,m>v}^{syn}$ being a Kronecker delta function where:
 
-δc,m>vsyn=0  otherwise.
+$\delta_{c,m>v}^{syn}=1$ if base change of m to v (m > v) is synonymous under sequence context c.
 
-The mutation rate then could be expressed as:(S3)μc=nc,m>vsynLc,s
+$\delta_{c,m>v}^{syn}=0$  otherwise.
 
-for 7-mer motifs, the calculation is:Lc=Lc,S+Lc,A=∑Lδc,m>vsyn⋅Rm>v+∑Lδc,m>vmis⋅Rm>v(S4)μc=nc,m>vsyn+nc,m>vmisLc
+The mutation rate then could be expressed as:
 
-Where for Equations S3 and S4, nc,m>vsyn and nc,m>vmis represent the mutation numbers with m>v being synonymous and missense under sequence context c, respectively. The mutation rate is then scaled as the expected mutation number per 105 corresponding sequence motifs for better presentation.
+$$
+\mu_{c}=\frac{n_{c,m>v}^{syn}}{L_{c,s}}
+$$
 
-Significance for motif enrichment (Figure 4B) mirrored the AI analysis. For each i≥3 site, we calculated raw K-S p-values against motif mutabilities (denoted as p0). These were then compared to a resampled significance pool {pj,j=1,2,...,100,000}, with the proportion of p0≤pj employed as the final p-value, depicting enrichment significance for highly mutable motifs in recurrence group i against low hits.
+for 7-mer motifs, the calculation is:
 
-## Consensus length comparison
+$$
+L_{c}=L_{c,S}+L_{c,A}=\sumL\delta_{c,m>v}^{syn}⋅R_{m>v}+\sumL\delta_{c,m>v}^{mis}⋅R_{m>v}
+$$
+
+
+
+$$
+\mu_{c}=\frac{n_{c,m>v}^{syn}+n_{c,m>v}^{mis}}{L_{c}}
+$$
+
+Where for Equations S3 and S4, $n_{c,m>v}^{syn}$ and $n_{c,m>v}^{mis}$ represent the mutation numbers with m>v being synonymous and missense under sequence context c, respectively. The mutation rate is then scaled as the expected mutation number per 105 corresponding sequence motifs for better presentation.
+
+Significance for motif enrichment (Figure 4B) mirrored the AI analysis. For each i≥3 site, we calculated raw K-S p-values against motif mutabilities (denoted as $p_{0}$). These were then compared to a resampled significance pool ${p_{j},j=1,2,...,100,000}$, with the proportion of $p_{0}\leqp_{j}$ employed as the final p-value, depicting enrichment significance for highly mutable motifs in recurrence group i against low hits.
+
+### Consensus length comparison
 
 To explore potential sequence motifs associated with recurrent mutations (i≥3), we employ a sliding window of 10 bp stride to extract the local context from reference genome (Figure 4—figure supplement 1). We examined diverse window sizes (21, 41, 61, 81, and 101 bp) to capture potential motifs of varying lengths and distances to the mutated site. Consensus length of local contexts was measured by Hamming distance in pairwise comparisons of aligned windows (with same stride) between mutated sites.
 
 To prioritize sequence similarities likely driven by mutational mechanisms rather than functional constraints or gene structure, we restricted consensus comparisons to non-homologous genes. This approach effectively mitigated potential biases arising from homologous genes (e.g., KRAS and NRAS) or repeated domains within a single gene (e.g., FBXW7). The statistical significance of observed consensus lengths was assessed using the K-S test, which compared the empirical distribution of consensus lengths against a Poisson distribution, with mean of λ set to one-quarter of the window size, which reflects the expected distribution under random scenarios.
 
-## Mutational signature analysis
+### Mutational signature analysis
 
 The mutation load of each patient could be further decomposed to several known mutational processes, which is represented by mutational signatures. In general, each mutational signature embodies the relative mutabilities across distinct mutational contexts. Leveraging single base substitution (SBS) signatures from COSMIC (v3.3), we employed the SignatureAnalyzer tool to quantify the contribution of each signature to individual mutational loads (Kim et al., 2016). For composition analysis in Figure 5B, we focused on signatures contributing at least 2% to the total mutations within a given cancer type, given that there are 79 mutational signatures in use for deconvolution.
 
 To assess signature contribution changes across recurrence cutoffs (i), we grouped patients with mutations of recurrence i≥i* and scaled signature contributions to 1 to cancel out the population size effect. Pairwise K-S test between different i*s is employed to determine whether signature contributions are significantly different under each i*.
 
-## Outlier model
+### Outlier model
 
-The purpose of the outlier model is to investigate if high-hit sites could be explained by a fraction (p) of highly mutable sites (with mutability α-fold higher). By definition, we have:(S5)Si=(1−p)⋅LS⋅[nE(u)]i+p⋅LS⋅[α⋅nE(u)]i
+The purpose of the outlier model is to investigate if high-hit sites could be explained by a fraction (p) of highly mutable sites (with mutability α-fold higher). By definition, we have:
+
+$$
+S_{i}=(1−p)⋅L_{S}⋅[nE(u)]^{i}+p⋅L_{S}⋅[\alpha⋅nE(u)]^{i}
+$$
 
 With n represents the population size and E(u) denotes the average mutation rate per site per patient.
 
 We let p range from 10–5 to 10–2 and α from 1.1 to 1,000. For each (p, α) pair, we solve Equation S5 based on observed S1 (i=1) to obtain E(u). Then, we calculate expectedSi with i=2, 3. The (p, α) pairs are filtered by imposing constraints grounded in observed S2 and S3 values. Specifically, we retained only those pairs whose expected S2 and S3 values resided within the 95% quantile range of a Poisson distribution with λ set to the observed values. This filtering process yielded biologically plausible (p, α) pairs that were then used to derive S4 and S5. Finally, we computed the mean and standard deviation for p, α, S4, and S5 across all filtered pairs to capture their central tendencies and variability.
 
-## CDN analysis in GENIE
+### CDN analysis in GENIE
 
-To circumvent potential biases in E(u) estimation stemming from the varying target gene coverage across sequencing panels within the GENIE dataset, we leveraged E(u) values derived from the corresponding cancer types in the TCGA dataset. Specifically, we focused on 1-hit synonymous mutations within coding regions, as these are generally considered to be the least influenced by selective pressures in coding regions. Based on Equation 1 from the main text, we have:(S6)S1=LS⋅nE(u)e−(n−1)E(u)
+To circumvent potential biases in E(u) estimation stemming from the varying target gene coverage across sequencing panels within the GENIE dataset, we leveraged E(u) values derived from the corresponding cancer types in the TCGA dataset. Specifically, we focused on 1-hit synonymous mutations within coding regions, as these are generally considered to be the least influenced by selective pressures in coding regions. Based on Equation 1 from the main text, we have:
 
-where e(n−1)E(u) comes from approximation of [1−E(u)](n−1) from binomial distribution, and n is the population size in TCGA. The calculation for the threshold i*, based on Equation 10 from the main text, is:(S7)i∗=log(εLA)log(neE(u)1+neE(u))
+$$
+S_{1}=L_{S}⋅nE(u)e^{−(n−1)E(u)}
+$$
+
+where $e^{(n−1)E(u)}$ comes from approximation of $[1−E(u)]^{(n−1)}$ from binomial distribution, and n is the population size in TCGA. The calculation for the threshold i*, based on Equation 10 from the main text, is:
+
+$$
+i^{∗}=\frac{log(\frac{\epsilon}{L_{A}})}{log(\frac{n_{e}E(u)}{1+n_{e}E(u)})}
+$$
 
 The only difference in Equation S7 is that we use ne to represent the number of patients sequenced for a target gene in GENIE, considering the overlapping between different assays in use. In essence, we will have for each gene a CDN threshold i*.
 
-The comparison of CDNs between TCGA and GENIE are restricted to genes sequenced by GENIE panels. For CDNs identified in GENIE using Equation S7, we investigated their hit information and CDN identity within TCGA dataset. The CDN flow proportion depicted in Figure 7C–E represents the ratio of sites identified as CDN in GENIE to Ai∗ (i=0, 1, 2) of TCGA. Ai∗ mirrors Ai but specifically considers the coding region sequenced by the GENIE panel. For CDNs identified in TCGA, the flow ratio is just the proportion of sites being identified as CDNs in GENIE. Notably, for CDNs identified in GENIE but lacking mutations in TCGA (i=0), A0∗ is obtained using Equation S2 with L being the length of coding region sequenced in GENIE.
+The comparison of CDNs between TCGA and GENIE are restricted to genes sequenced by GENIE panels. For CDNs identified in GENIE using Equation S7, we investigated their hit information and CDN identity within TCGA dataset. The CDN flow proportion depicted in Figure 7C–E represents the ratio of sites identified as CDN in GENIE to $A_{i}^{∗}$ (i=0, 1, 2) of TCGA. $A_{i}^{∗}$ mirrors Ai but specifically considers the coding region sequenced by the GENIE panel. For CDNs identified in TCGA, the flow ratio is just the proportion of sites being identified as CDNs in GENIE. Notably, for CDNs identified in GENIE but lacking mutations in TCGA (i=0), $A_{0}^{∗}$ is obtained using Equation S2 with L being the length of coding region sequenced in GENIE.

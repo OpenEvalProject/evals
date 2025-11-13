@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Brain natriuretic peptide (BNP) treatment increases heart function and decreases heart dilation after myocardial infarction (MI). Here, we investigated whether part of the cardioprotective effect of BNP in infarcted hearts related to improved neovascularisation. Infarcted mice were treated with saline or BNP for 10 days. BNP treatment increased vascularisation and the number of endothelial cells in all areas of infarcted hearts. Endothelial cell lineage tracing showed that BNP directly stimulated the proliferation of resident endothelial cells via NPR-A binding and p38 MAP kinase activation. BNP also stimulated the proliferation of WT1 + epicardium-derived cells but only in the hypoxic area of infarcted hearts. Our results demonstrated that these immature cells have a natural capacity to differentiate into endothelial cells in infarcted hearts. BNP treatment increased their proliferation but not their differentiation capacity. We identified new roles for BNP that hold potential for new therapeutic strategies to improve recovery and clinical outcome after MI.
+Brain natriuretic peptide (BNP) treatment increases heart function and decreases heart dilation after myocardial infarction (MI). Here, we investigated whether part of the cardioprotective effect of BNP in infarcted hearts related to improved neovascularisation. Infarcted mice were treated with saline or BNP for 10 days. BNP treatment increased vascularisation and the number of endothelial cells in all areas of infarcted hearts. Endothelial cell lineage tracing showed that BNP directly stimulated the proliferation of resident endothelial cells via NPR-A binding and p38 MAP kinase activation. BNP also stimulated the proliferation of WT1+ epicardium-derived cells but only in the hypoxic area of infarcted hearts. Our results demonstrated that these immature cells have a natural capacity to differentiate into endothelial cells in infarcted hearts. BNP treatment increased their proliferation but not their differentiation capacity. We identified new roles for BNP that hold potential for new therapeutic strategies to improve recovery and clinical outcome after MI.
 
 ## Introduction
 
@@ -43,9 +43,17 @@ Thus, since high BNP levels in plasma are associated with increased collateral d
 
 ## Results
 
-## BNP direct action on cardiac NMCs after intraperitoneal injections
+### BNP direct action on cardiac NMCs after intraperitoneal injections
 
 MI was induced in mice by permanent ligation of the left anterior descending artery. Injection of BNP was immediately performed after surgery and then every 2 days for up to 10 days after surgery (Figure 1A). BNP injections may have systemic effects and affect several cell types expressing its receptors (such as fibroblasts, immune cells, endothelial cells in all organs and even cardiomyocytes). In previous work, we first controlled that with the doses of BNP used, we had no effect on systolic blood pressure (measured every day) (Bielmann et al., 2015). Secondly, we evaluated cardiac parameters and heart structure by echocardiography in BNP and saline-treated ‘unmanipulated’ and infarcted mice. No difference was detected in heart rate, cardiac output, left ventricular diastolic volume (LV Vol;d) as well as for the index of systemic vascular resistance between both groups, demonstrating that BNP treatment (at the dose used in this study) had no significant effect on volumia and no peripheral vascular effect (Bielmann et al., 2015). Third, contractility (EF@LV Vol;d) was twofold increased 4 weeks after MI in BNP-treated groups and BNP injections reduced clearly heart remodelling (which is the percentage of changes of the left ventricle volume) 1 (−45%, p=0.06) and 4 weeks (−79%, p=0.04) after MI (Bielmann et al., 2015). Accordingly, BNP treatment of infarcted hearts reduced also mRNA levels coding for vimentin in the RZ of infarcted hearts 1 (−59%, p=0.004) and 4 (-36%, p=0.025) weeks after MI, which suggests an effect on fibrosis development as already demonstrated by other (Moilanen et al., 2011). Finally, BNP treatment reduced also the infarct size (determined by echocardiography analysis with the % of MI length LA) by 15 and 20% 1 and 4 weeks after MI, respectively (results however not statistically different).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental protocol as described in details in Material and methods section. (B) cGMP level measurement in cardiac tissue of unmanipulated mice injected or not with BNP for 30 min and 1–2 hr. n = at least six mice. (C) cGMP plasma level measurement in unmanipulated or infarcted mice injected or not with BNP. n = 6–7 mice for unmanipulated hearts, n = 6 infarcted mice 24 hr after injection. (D) Representative western blots of total proteins isolated hearts of saline or BNP-injected mice, 3 and 10 days after surgery. Blots were stained with antibodies against phospho phospholamban (pPLB), phospholamban (PBL) and Tubulin (used as loading control). Only the bands at the adequate molecular weight were represented here: Tubulin 55 kDa, pPLB between 17 and 26 kDa and PLB 25 kDa. Quantification of the pPLB/PLB ratio. Data obtained from western blot analysis on unmanipulated (n = 7–11 mice per group) and infarcted hearts of mice treated or not with BNP. Results of BNP-treated hearts expressed relatively to the average of saline-treated hearts. 3 days after MI: n = 5 mice for the ZI+BZ and 7–8 mice for the RZ 10 days after MI: n = 10–11 mice for the ZI+BZ and n = 9–10 mice for the RZ. (E) NMCs were isolated from both areas of infarcted hearts treated or not with BNP 10 days after surgery. Proteins were extracted from these cells (n = 5 independent isolation per group for the ZI+BZ and n = 6–7 for the RZ) and pPLB/PLB ratio was evaluated. Only the western blots obtained for NMCs isolated from the ZI+BZ were represented. For B, C, D and E: Individual values are represented and the means ± SEM are represented in red. Statistical analysis was performed only for groups with n ≥ 6. # p<0.05 for different variance between groups, *p<0.05 using unpaired T tests with or without Welch’s corrections.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The presence of NPR-A (A) or NPR-B (B) was assessed by immunostainings on adult hearts 24 hr after MI or by flow cytometry analysis (C) on adult non-myocytes cells isolated from hearts 4 days after MI. Antibody against CD31 was used in combination with anti-NPR-A or NPR-B antibodies. The percentages of NPR-A or NPR-B expressing cells were evaluated on CD31+ cells.
 
 Altogether, these results clearly demonstrated that most BNP effects after MI depend on cardiac rather than on vascular effects.
 
@@ -57,7 +65,7 @@ BNP acts directly on the heart. Indeed, very rapidly after intraperitoneal (ip) 
 
 PLB protein is expressed by contractile (cardiomyocytes and smooth muscle cells) and also by non-contractile cells, such as endothelial cells (Sutliff et al., 1999). PLB phosphorylation after BNP injections was evaluated by western blot analysis on proteins extracted from all cardiac tissue or isolated NMCs (Figure 1D–E). The pPLB/PLB ratio increased 2.1-fold in ‘unmanipulated’ hearts 1 to 3 hr after BNP injection (Figure 1D). In infarcted hearts of BNP-treated mice, the pPLB/PLB ratio increased 3 days after MI, 2.1- and 1.5-fold in the infarct and border zone (ZI+BZ) and in the remote zone (RZ), respectively. 10 days after MI, the pPLB/PLB ratio increased 4.0-fold in the ZI+BZ and was unchanged in the RZ. Furthermore, the pPLB/PLB ratio increased 197- and 179-fold in NMCs isolated from the ZI+BZ and RZ of infarcted hearts in BNP-treated mice 10 days after MI (Figure 1E). According to these results, intraperitoneal injections of BNP can target cardiac NMCs.
 
-## Increased number of endothelial cells in infarcted hearts
+### Increased number of endothelial cells in infarcted hearts
 
 Endothelial cells in infarcted hearts express NPR-A and NPR-B (Figure 1—figure supplement 1). NMCs were thus isolated from both areas of infarcted hearts in saline and BNP-treated mice by enzymatic digestion and characterised for genes specific to endothelial cells by quantitative reverse transcription polymerase chain reaction (qRT-PCR). Increased mRNA levels coding for CD31 (x 1.3, p=0.025) and Ve-cadherin (x 1.3, p=0.07) were detected in the cells isolated from RZ of BNP-treated infarcted hearts 3 days after MI (Figure 2A). 10 days after MI, mRNA levels coding for vWF (x 1.5, p=0.023), VeCad (x 1.4, p=0.0007) and eNOS (x 1.4, p=0.049) were increased in the ZI+BZ after BNP treatment (Figure 2A). The number of CD31+ cells per mg of cardiac tissue was then evaluated in the ZI+BZ and RZ of infarcted hearts by flow cytometry analysis (Figure 2B–C). The number of CD31+ cells increased in the RZ (+ 100%) 3 days after MI following BNP treatment (Figure 2C). A higher number of CD31+ cells was found 10 days after MI in the ZI+BZ (+29%, p=0.04) and RZ (+28%, p=0.01) of BNP-treated hearts (Figure 2C). This was confirmed by western blot analysis (Figure 2D). CD31 protein levels were higher in the ZI+BZ (+26%, p=0.06) and RZ (+69%, p=0.0003) of BNP-treated hearts compared to saline-injected hearts 10 days after MI (Figure 2D).
 
@@ -67,6 +75,18 @@ Endothelial cells in infarcted hearts express NPR-A and NPR-B (Figure 1—figure
 
 Finally, cardiac vascularisation (evaluated by CD31 staining intensity) was determined 3, 10, and 28 days after MI in the BNP- or saline-treated hearts of mice (Figure 3A–B). Cardiac vascularisation increased 2.2-fold 3 days after MI in the RZ (p=0.002) of BNP-treated hearts, while it remained unchanged in the ZI+BZ. BNP treatment increased cardiac vascularisation 10 after MI in the ZI+BZ (+ 108%, p=0.02) and RZ (+76%, p=0.002) (Figure 3A–B). 4 weeks after MI, vascularisation remained 1.7-fold increased in BNP-treated hearts. We counted CD31+ cells on heart slices after immunostaining (Figure 3C), observing a 2.0 and 1.8-fold increase 3 days after MI in the ZI+BZ (p=0.003) and RZ (p=0.024) of BNP-treated hearts compared to saline-injected hearts, respectively. A 1.4- and 2-fold increase in CD31+ cells was counted 10 days after MI in the ZI+BZ (p=0.02) and RZ (p=0.05) of BNP-treated mice, respectively. This was also the case 28 days after MI (ZI+BZ: x 1.8, and RZ: x 2) (Figure 3C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative immunostainings against CD31 protein (green) on hearts removed from saline-(MI) and BNP-treated infarcted mice (MI + BNP) 10 days after surgery. Nuclei stained in blue with DAPI. Scale bars: 100 μm. (B) CD31 staining intensity measured on at least 10 different pictures per heart and per area 3, 10 and 28 days after MI. Number of pixel in BNP-injected mice related to the numbers of saline-injected mice. (C) CD31+ cell number counted on heart sections of the different area of saline- and BNP-treated infarcted hearts. Cells counted on at least 10 different pictures per area and mouse. (B–C): Individual values are represented and the means ± SEM are represented in red. Statistical analysis was performed only for groups with n ≥ 6. # p<0.05 for different variance between groups, *p<0.05 using unpaired T tests with or without Welch’s corrections.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A). Quantitative relative expression of mRNAs coding for CD31 (pecam1 gene), von Willbrand factor (vwf gene), Ve-cadherin (cdh5 gene), eNOS (nos3 gene), VEGF (vegfa gene), Stem Cell antigen 1 (Sca-1) (ly6a gene), Wilms’ tumour 1 (wt1 gene) and CD34 (cd34 gene). (B) Representative immunostainings against CD31 protein (green) of saline and BNP-treated unmanipulated hearts. Nuclei stained in blue with DAPI. CD31 staining intensity measured on at least 10 different pictures per heart and per area. The numbers of pixel obtained for saline-treated hearts related to the numbers obtained in BNP injected hearts. All the results are means ± SEM, # p<0.05 for different variance between groups, *p≤0.05 using unpaired T tests with or without Welch’s corrections.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The presence of CD31+ CD45+ cells was assessed by immunostainings on adult hearts 3 and 10 days after MI. (A) Representative pictures of the stainings 10 days after MI. (B–C) The numbers of double positive cells were counted (B) on heart sections (0.15 mm2) of the different area of saline (MI) and BNP-treated infarcted hearts (MI + BNP) and related (C) to the total number of CD31+ cells. Cells were counted on at least 10 different pictures per area and mouse. n = 4–6 mice per group. All the results are means ± SEM.
+
 In vitro studies allowed identifying by which receptor BNP acts. NMCs isolated from neonatal or adult hearts were treated or not with BNP until confluence in vitro (Figure 4). Cell cultures were analysed by qRT-PCR and the number of CD31+ cells evaluated by flow cytometry analysis. mRNA levels coding for von Willbrand factor, Ve-cadherin, and eNOS were upregulated in neonatal BNP-treated cells compared to untreated cells (Figure 4A). BNP treatment increased the number of CD31+ cells in vitro (+87% and +41% in neonatal and adult NMCs, respectively) (Figure 4C). The increase in CD31+ cells after BNP treatment completely disappeared in the NMCs isolated from the NPR-A knockout mouse model (Npr1 KO) but not from NPR-B KO hearts (Npr2 KO hearts) (+56%, p=0.04), suggesting that BNP binds to NPR-A to increase the number of endothelial cells (Figure 4C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig4-v1.jpg)
@@ -75,7 +95,7 @@ In vitro studies allowed identifying by which receptor BNP acts. NMCs isolated f
 
 Overall, our results clearly demonstrate that BNP injections after MI lead to more endothelial cells initially in the RZ (3 days after MI) and then in the ZI+BZ (10 days after MI). This is also the case in unmanipulated adult hearts where intraperitoneal BNP injections every 2 days for 10 days increase heart vascularisation (+37%, p=0.0007) (Figure 3—figure supplement 1). In vitro experiments suggest that BNP acts via NPR-A.
 
-## Mobilisation of resident mature endothelial cells and precursor cells
+### Mobilisation of resident mature endothelial cells and precursor cells
 
 The increased number of endothelial cells in infarcted hearts after BNP treatment resulted from either the direct effect of BNP on pre-existing cardiac endothelial cells and/or the effect of BNP on other cells. Indeed, BNP may increase the number of infiltrating endothelial cells or stimulate the differentiation of endothelial precursor cells into endothelial cells in infarcted hearts. We therefore studied the origin of endothelial cells in infarcted hearts of BNP-treated mice.
 
@@ -83,11 +103,19 @@ We first investigated whether the increased number of endothelial cells in BNP-t
 
 To understand whether the increased number of endothelial cells in BNP-treated hearts originated from pre-existing endothelial cells or from the differentiation of cardiac precursor cells, heterozygous tamoxifen-inducible Cdh5:ROSA26 mice were used to trace CD31+ cells (Figure 5—figure supplement 1). Tamoxifen injections given 2 weeks before MI induced green fluorescent protein (GFP) expression in CD31+ cells (Figure 5—figure supplement 1A–C). To avoid contamination with GFP- cells, our analysis focussed on the CD31+ cell subset with 94% expressing the GFP protein before MI (Figure 5—figure supplement 1C). Ten days after MI, immunostainings showed that almost all CD31+ cells expressed the GFP protein in the ZI+BZ and RZ of BNP-treated and untreated infarcted hearts (Figure 5A–B). As shown in Figure 5—figure supplement 1D, more GFP+ cells were apparent in the ZI+BZ of BNP-treated mice compared to those injected with saline. Numerous vessels and capillaries formed by GFP+ cells were detected in this area after BNP injections. However, we also detected some GFP- endothelial cells in the ZI+BZ of BNP- and saline-treated hearts (Figure 5B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative pictures of the ZI+BZ area of Cdh5:ROSA26 infarcted hearts 10 days after surgery, treated (B) or not (A) with BNP and stained with DAPI (nuclei in blue) and antibody against CD31 protein (red). Endothelial cells or cells originating from CD31+ cells express GFP protein. Scale bars represent 100 μm. (B) Orange rectangles are represented at high magnification below. (C) Quantification of the number of GFP+ and GFP- CD31+ cells. Results expressed in BNP-injected mice as fold-increase above the numbers obtained in saline-injected mice. Individual values are represented and the means ± SEM are represented in red. (D) Quantitative relative expression of mRNAs coding for endothelial precursor specific proteins (Flk-1 (kdr gene), c-kit (kit gene), stem cell antigen 1 (Sca-1) (ly6a gene), CD34 (cd34 gene) and Wilms’ tumour 1 (WT1) (wt1 gene)) in ZI+BZ 3 days after MI. Results expressed as fold-increase above the levels in saline-injected mice. Results are means ± SEM. (C–D): # p<0.05 for different variance between groups, *p≤0.05 using unpaired T tests with or without Welch’s corrections.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heterozygous Cdh5 Cre x ROSA mice were used to follow the Ve-Cadherin expressing cells. (B) Without tamoxifen injection no CD31+ cells expressed the GFP protein. (C) At time of surgery, 2 weeks after the first tamoxifen injection, 94% of CD31+ cells were GFP positive. (D) Representative pictures of infarcted hearts 10 days after MI. Only DAPI staining. The ZI+BZ in orange rectangles are represented at high magnification.
+
 We quantified this observation by isolating NMCs in infarcted Cdh5:ROSA hearts. The percentage of CD31+ cells expressing or not the GFP protein was determined by flow cytometry. BNP treatment increased the number of CD31+ GFP+ cells (i.e. originating from pre-existing endothelial cells) in the ZI+BZ (+37%, p=0.02) and RZ (+52%, p=0.03) (Figure 5C) of all treated hearts. Interestingly, the number of CD31+ GFP- cells increased significantly in the ZI+BZ (+95%, p=0.07) but not in the RZ (+23%, p=0.2) after BNP treatment (Figure 5C).
 
 Our results demonstrated that endothelial cells in the infarcted hearts of BNP-treated mice originate mainly from pre-existing endothelial cells in the ZI+BZ and RZ. However, endothelial cells originating from precursor cells (i.e. GFP-) also contribute to the neovascularisation of the ZI+BZ of BNP-treated infarcted hearts.
 
-## Stimulated proliferation of endothelial cells via p38 MAP kinase activation
+### Stimulated proliferation of endothelial cells via p38 MAP kinase activation
 
 We then investigated the capacity of BNP to stimulate the proliferation of endothelial cells (Figure 6) by performing immunostaining against CD31 and 5-Bromo-2′-deoxyuridine (BrdU) on BNP- and saline-treated infarcted hearts 1–3 and 10 days after surgery (Figure 6A–B). To obtain the percentage of proliferating endothelial cells in each area of the infarcted hearts, the number of CD31+ BrdU+ cells was divided by the total number of CD31+ cells (Figure 6B). During the first days after surgery (1–3 day after), BNP stimulated endothelial cell proliferation in the RZ (+53%, p=0.02). In the ZI+BZ, higher endothelial proliferation following BNP treatment was detected only 10 days after MI (+56%, p=0.02) (Figure 6B).
 
@@ -101,13 +129,21 @@ To determine whether higher levels of angiogenic factors could be responsible fo
 
 We determined the signalling pathway activated by BNP on endothelial cells. For this purpose, we sorted GFP+ endothelial cells from the hearts of unmanipulated Cdh5:ROSA mice injected with tamoxifen 2 weeks prior (Figure 6D) and then stimulated them for 1.5 hr with BNP in vitro. We extracted proteins from these cells and performed western blot analysis. The pp38/p38 ratio was 2.0-fold higher after BNP stimulation on the sorted pure endothelial cells compared to untreated cells (p=0.026). Interestingly, in vivo, in BNP-treated infarcted Cdh5:ROSA hearts, endothelial cells expressing pp38 were also detected (Figure 6E), suggesting that BNP is able to act directly on endothelial cells via p38 MAP kinase activation in vitro but also in vivo.
 
-## More NMCs expressing Wilms’ tumour one protein
+### More NMCs expressing Wilms’ tumour one protein
 
 The number of endothelial cells originating from GFP- cells increased in the hypoxic area of hearts isolated from BNP-treated mice, which could point to the mobilisation of vascular precursors by BNP treatment (Figure 5C). We measured mRNA levels coding for proteins expressed by endothelial precursors in NMCs from the ZI+BZ of BNP-treated or untreated infarcted hearts by qRT-PCR (Figure 5D). Three days after MI, mRNA levels coding for Flk1 (x 1.5, p=0.01), Sca-1 (x 1.4, p=0.04) and WT1 (x 1.6, p=0.01) increased in cells isolated from the ZI+BZ of BNP-treated infarcted hearts. mRNA levels coding for c-kit did not differ. In vitro, NMCs isolated from neonatal hearts were stimulated or not with BNP for 7–10 days. mRNA levels coding for c-kit (x 2.1), Flk1 (x 1.9), Sca-1 (x 2), and WT1 (x 1.6) were significantly higher after BNP treatment (Figure 7—figure supplement 1C). These results suggest that BNP could act on WT1+ cells in vivo and in vitro. We thus verified whether WT1+ cells express BNP receptors, NPR-A and/or NPR-B by immunostainings (Figure 7—figure supplement 1A).
 
 We performed also immunostainings on BNP- and saline-treated infarcted hearts to evaluate the number of WT1+ cells (Figure 7A–C). WT1+ cells were easily detected in the epicardium and endocardium of adult hearts after MI as reported by others (Duim et al., 2015; Balbi et al., 2019; Zhou et al., 2012). In the ZI+BZ area, compared to saline-injected infarcted hearts, BNP treatment led to more WT1+ cells 3 days (x 2.5 in epicardium and x 3.5 in endocardium) and 10 days after MI (x 2.9 in epicardium and x 1.7 in endocardium) (Figure 7A–C). In the RZ of BNP- versus saline-treated hearts, the number of WT1+ cells increased in the epicardium (x 2.5) and in the endocardium (x 2.3) 3 days after MI and in the epicardium 10 days after MI (x 3.6). No difference in the number of WT1+ cells was detected 28 days after MI (data not shown).
 
-## Stimulation of WT1+ cell proliferation near the infarct zone
+![Figure 7.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig7-v1.jpg)
+
+**Figure 7.:** (A) Representative pictures of the epicardium of the ZI+BZ area of C57BL/6 infarcted hearts treated or not with BNP 10 days after MI and stained with DAPI (nuclei in blue) and antibodies against WT1 protein (green) and BrdU (red). Scale bars: 100 μm. (B–C) WT1+ cell number per pictures in the ZI+BZ and RZ of infarcted hearts treated or not with BNP 3 (B) and 10 (C) days after surgery. (D:) Representative immunostainings of proliferating WT1+ cells in the epicardium and endocardium of the ZI+BZ area of BNP-treated infarcted heart 10 days after MI. Scale bars: 100 μm. (E) Percentages of proliferating WT1+ cells (number of WT1+BrdU+ cells/total number of WT1+ cells) 10 days after MI. B, C, E: Results obtained in the epicardium separated from those obtained in the endocardium. Individual values are represented and the means ± SEM are represented in red. # p<0.05 for different variance between groups, *p≤0.05 using unpaired T tests with or without Welch’s corrections only for groups with n ≥ 6. EPI: epicardium, ENDO: endocardium.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) WT1+ cells isolated from neonatal hearts express NPR-A and NPR-B. ( B). Representative immunostainings of NMC cultures treated or not with BNP (5 mg/ml) and stained with DAPI (Nuclei in blue), antibodies against WT1 (green) and BrdU (red). (C) Quantitative relative expression of mRNAs coding for endothelial precursor specific genes (Flk-1, c-kit, stem cell antigen 1 (Sca-1), CD34 and Wilms’ tumour 1 (WT1)) in NMCs isolated from neonatal hearts and treated or not with BNP (5 mg/ml) for 10 days. Results expressed as fold-increase above the levels in untreated cells. (D) Quantification of the number of WT1+ cells per pictures (0.15 mm2) after 7–10 days of culture. At least 10 different pictures were evaluated per cell culture. (E) The percentages of WT1+ cell proliferation were obtained by dividing the number of WT1+ BrdU+ cells per the total WT1+ cell number. Results expressed as fold-increase above the levels in untreated cells All the results are means ± SEM, *p<0.05 using paired Student T test.
+
+### Stimulation of WT1+ cell proliferation near the infarct zone
 
 WT1 is re-expressed by mature endothelial cells after hypoxia (Duim et al., 2015). To determine whether BNP stimulates WT1+ cell proliferation and/or WT1 re-expression in endothelial cells, the percentage of proliferating WT1+ cells (number of WT1+ BrdU+ cells relative to the total number of WT1+ cells) was assessed 3 and 10 days after MI in hearts from BNP-treated or untreated mice.
 
@@ -115,21 +151,29 @@ No increased WT1+ cell proliferation was detected in BNP-treated hearts 3 days a
 
 Stimulation of WT1+ cell proliferation by BNP treatment was also highlighted in vitro (Figure 7—figure supplement 1B,D and E). After BNP stimulation, the number of WT1+ cells increased (+38%, p=0.02) in cultured NMCs isolated from neonatal hearts. Immunostainings against WT1 and BrdU, allowed to demonstrate that BNP treatment stimulated their proliferation (+23%, p=0.003) compared to untreated NMCs.
 
-## Stimulation of WT1+ precursor cell proliferation
+### Stimulation of WT1+ precursor cell proliferation
 
 The next step was to identify proliferating WT1+ cell origin. In order to discriminate between WT1+ endothelial precursor cells and mature cells re-expressing WT1 after hypoxia, MI was induced in heterozygous inducible WT1:ROSA mice. Three injections of tamoxifen were administered 2 weeks before MI induction. GFP was expressed only in WT1+ cells. Thus, before surgery, 0.4 ± 0.08% of the NMCs were GFP+, while 0.6 ± 0.09% of the CD31+ cells expressed the GFP protein (n = 4 mice).
 
 Ten days after MI, flow cytometry analysis of NMCs isolated from infarcted WT1:ROSA hearts, showed that BNP treatment significantly increased the number of GFP+ cells by 2.3-fold in the ZI+BZ (p=0.05) (Figure 8A and D). As shown by immunostainings, GFP+ cells were mainly localised in the epicardium of the ZI+BZ of infarcted hearts (Figure 8A–B (left)). However, in the ZI+BZ of BNP-treated hearts, GFP+ cells migrated into the tissue (Figure 8A–B (right)), forming vessel-like structures (white arrows in Figure 8A and C). This is confirmed by immunostainings against CD31 (Figure 8B–C). Indeed, some of the GFP+ cells stained positive for BrdU, Sca-1 (the Stem cell antigen-1 protein), and CD31, showing that WT1+ precursor cells can proliferate and differentiate into endothelial cells, especially after BNP treatment (Figure 8—figure supplement 1, Figure 8B (right) and 8C). Flow cytometry analysis showed that, 10 days after MI, 10.5 ± 2% of CD31+ cells expressed the GFP protein (versus 5.0 ± 1.3% of endothelial cells in saline-treated hearts (p=0.03)) in the ZI+BZ of BNP-treated hearts. In the RZ, 8.5 ± 2% of endothelial cells originated from GFP+ cells following BNP treatment versus 4.0 ± 1% in saline-treated hearts (p=0.03) (Figure 8E). However, among the GFP+ cells, the percentage of cells differentiating into CD31+ cells was the same (around 48%) in the ZI+BZ and RZ between BNP- and saline-treated hearts (Figure 8F).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig8-v1.jpg)
+
+**Figure 8.:** (A) Representative immunostainings of ZI+BZ of WT1:ROSA hearts treated or not with BNP 10 days after surgery and stained with DAPI (nuclei in blue) and antibody against GFP protein (green). Hearts represented in full in the small inserts. The orange rectangles delimited the enlarged area below. (B) Representative immunostainings of WT1:ROSA hearts treated or not with BNP 10 days after MI and stained with DAPI (nuclei in blue) and antibodies against CD31 protein (red) and GFP (green). White arrows represented GFP+ CD31+ cells, that is endothelial cells originating from WT1+ cells. (C) High magnification of a part of the ZI+BZ of infarcted BNP-treated hearts where WT1+ cells contributed to the vessel formation (orange rectangle). (D) GFP+ cell number per mg of cardiac tissue 3 or 10 days after surgery, determined by flow cytometry analysis. Results in BNP-treated hearts related to those obtained in saline-treated hearts. E and F. Flow cytometry analysis on isolated NMCs stained with antibodies against CD31 and GFP. (E) Percentages of CD31+ cells originating from WT1+ precursor cells (GFP+CD31+ cells). The percentages of GFP+ cells determined among the selected CD31+ cells. (F) Percentages of differentiating WT1+ cells into CD31+ cells. The percentages of CD31+ cells determined among the selected GFP+ cells. (D:) 3 days after surgery: MI: n = 4, MI+BNP: n = 6. (D–F:) 10 days after surgery: MI: n = 6, MI+BNP: n = 7 different mice. Individual values are represented and the means ± SEM are represented in red. *p≤0.05 only for groups with n ≥ 6. No difference of variance between groups.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Cells expressing the GFP protein were mainly localized in the epicardium in MI hearts and migrate to the endocardium in BNP-treated infarcted hearts. (B) Some GFP+ cells proliferated and/or expressed the Sca-1 protein (C).
+
 Our results demonstrated that WT1+ precursor cells have the capacity to differentiate into endothelial cells in infarcted hearts. BNP increased the number of endothelial cells originating from WT1+ cells by stimulating WT1+ cell proliferation but not their differentiation into endothelial cells. The signalling pathway by which BNP stimulated WT1+ cell proliferation remains to be identified but we detected phosphorylation of the p38MAP kinase in some GFP+ cells from BNP-treated WT1:ROSA hearts (Figure 6E).
 
-## Increased vascularisation in infarcted hearts after LCZ696 treatment
+### Increased vascularisation in infarcted hearts after LCZ696 treatment
 
 LCZ696 (Entresto, Novartis) product associates both an angiotensin receptor blocker (valsartan) and an inhibitor of neprilysin (NEP, sacubitril). In the large, randomized, double-blind PARADIGM-HF trial, LCZ696 treatment has been shown to promote significant benefits in patients with chronic heart failure, when compared to angiotensin-converting enzyme inhibition (enalapril) (McMurray et al., 2014). NEP is an endopeptidase able to degrade several factors including the natriuretic peptides. Thus, treatments of rats, rabbits and humans with NEP inhibitor was shown to increase the blood level of the natriuretic peptides (ANP and BNP) and of cGMP (Gu et al., 2010; Kompa et al., 2018; Menendez, 2016). In the plasma of unmanipulated mice, we determined that cGMP concentration increased 3-fold (138 vs 44.5 pmoles/ml) 24 hr after LCZ696 treatment (60 mg/kg/day). We thus evaluated LCZ696 treatment on heart neovascularisation 10 days after MI. Mice were treated orally by two different concentrations of LCZ696 24 hr after MI induction (Figure 9A).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/61050/elife-61050-fig9-v1.jpg)
 
-**Figure 9.:** (A) Experimental protocol as described in details in Material and methods section. (B) Cardiac mass (heart weight (mg)/body weight (g)) of infarcted mice 10 days after MI. (C) Cardiac function and remodelling index measured by echocardiography 8–9 days after MI (i.e. 1 day before sacrifice). FS: fractional shortening; EF: ejection fraction. Two sets of experiment were performed. All results of the treated mice were related to their respective control (i.e. H2O-treated infarcted hearts). (D) CD31 staining intensity measured on at least 10 different pictures per heart and per area 10 days after MI. Number of pixels in hearts of LCZ696 treated mice related to the numbers of untreated mice (H). (20E) Representative pictures of the ZI+BZ area of infarcted hearts 10 days after surgery, treated with LCZ696 (6 or 60 mg/kg/day) or H20 and stained with DAPI (nuclei in blue) and antibodies against CD31 or WT1 protein (green) and BrdU (pink). Scale bars represent 100 μm. (F–G) Percentage of proliferating endothelial (F) or WT1+ (G) cells/per pictures in each area of the infarcted hearts (number of CD31+BrdU+ cells/total number of CD31+ cells (F) or WT1+BrdU+ cells/total number of WT1+ cells (G)). At least 10 different pictures evaluated per mouse and per area. B, C, D, F, G: Individual values are represented and the means ± SEM are represented in red. # p<0.05 for different variance between groups, *p≤0.05 using unpaired T tests with or without Welch’s corrections.
+**Figure 9.:** (A) Experimental protocol as described in details in Material and methods section. (B) Cardiac mass (heart weight (mg)/body weight (g)) of infarcted mice 10 days after MI. (C) Cardiac function and remodelling index measured by echocardiography 8–9 days after MI (i.e. 1 day before sacrifice). FS: fractional shortening; EF: ejection fraction. Two sets of experiment were performed. All results of the treated mice were related to their respective control (i.e. H2O-treated infarcted hearts). (D) CD31 staining intensity measured on at least 10 different pictures per heart and per area 10 days after MI. Number of pixels in hearts of LCZ696 treated mice related to the numbers of untreated mice (H20). (E) Representative pictures of the ZI+BZ area of infarcted hearts 10 days after surgery, treated with LCZ696 (6 or 60 mg/kg/day) or H20 and stained with DAPI (nuclei in blue) and antibodies against CD31 or WT1 protein (green) and BrdU (pink). Scale bars represent 100 μm. (F–G) Percentage of proliferating endothelial (F) or WT1+ (G) cells/per pictures in each area of the infarcted hearts (number of CD31+BrdU+ cells/total number of CD31+ cells (F) or WT1+BrdU+ cells/total number of WT1+ cells (G)). At least 10 different pictures evaluated per mouse and per area. B, C, D, F, G: Individual values are represented and the means ± SEM are represented in red. # p<0.05 for different variance between groups, *p≤0.05 using unpaired T tests with or without Welch’s corrections.
 
 LCZ696 treatment (at the both concentrations) did not affect body weight nor blood pressure (10 days after MI: saline: 103 ± 18 mmHg; LCZ6 treated mice: 103 ± 9 mmHg; LCZ60 treated mice: 109 ± 9 mmHg). Urea and creatinin plasma levels, were not changed after LCZ696 treatment, demonstrating no altered kidney functions (data not shown).
 
@@ -175,7 +219,7 @@ The findings presented in our study hold potential to offer new therapeutic stra
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 All animals were maintained in accordance with the recommendations of the U.S. National Institutes of Health Guide for the Care and Use of Laboratory Animals (National Institutes of Health publication 86–23, 1985). The experiments were approved by the Swiss animal welfare authorities (authorisations VD3111 and VD3292).
 
@@ -183,7 +227,7 @@ C57BL/6 mice (Wild Type mice, WT) were purchased from Janvier (Le Genest-Saint-I
 
 All colonies were established in our animal facility.
 
-## Experimental procedures
+### Experimental procedures
 
 Only male mice were used. MI was induced in 8-week-old male C57 BL/6 mice by ligation of the left anterior descending coronary artery (LAD). Briefly, mice were anaesthetised (ketamine (65 mg/kg)/xylazine (15 mg/kg), acépromazine (2 mg/kg)), intubated and ventilated. The chest cavity was entered through the third intercostal space at the left upper sternal border, and MI was induced by ligature of the LAD with a 7–0 nylon suture at about 1–2 mm from the atria.
 
@@ -197,15 +241,15 @@ For the experiments related to LCZ696 (Entresto, Novartis) treatment, mice after
 
 Mice were sacrificed 1, 3, 10, or 28 days after infarct induction and hearts were removed (Figure 1A). If immunofluorescence has to be carried out, apex was embedded into OCT and slowly frozen. Remaining heart was separated into three zones, the infarct zone (ZI), the border zone (BZ) and the remote zone (RZ). According the required experiment, ZI and BZ may be pooled. Tissues were either digested for flow cytometry analysis or quickly frozen for mRNA or protein analysis.
 
-## Cell culture
+### Cell culture
 
 NMCs were isolated from the hearts of neonatal C57BL/6, NPR-A KO or NPR-B KO pups (1–2 days) as previously described (Bielmann et al., 2015; Rignault-Clerc et al., 2017) and were cultured in medium composed of MEM Alpha (Gibco 32571–028), 10% FBS, 100 U/ml penicillin G, 100 µg/ml streptomycin with or without BNP (5 µg/ml) up to confluence (i.e. 10–11 days). Adult cardiac NMCs were isolated from adult C56BL/6 mice (6–8 weeks old) by digesting adult ventricles in buffer containing 1 mg/ml collagenase IV (Gibco 17104–019) and 1.2 mg/ml dispase II (Sigma, D4693) and were cultured in EGM−2 Endothelial Cell Growth Medium-2 BulletKit (Lonza, CC-3162) supplemented with 15% foetal calf serum (FCS) (invitrogen Corp) with or without BNP (5 µg/ml) up to confluence (i.e. 5–10 days). Neonatal and adult NMCs were maintained at 37°C in 5% CO2 and 3% O2.
 
-## Endothelial cell sorting
+### Endothelial cell sorting
 
 NMCs were isolated from Cdh5:ROSA hearts, injected with Tamoxifen 2 weeks before. GFP+ cells were sorted with the MoFlo Astrios Flow Cytometer System (Beckman Coulter). Then cells were split in half and treated or not with BNP (5 μg/ml) for 1h30 at room temperature. Cells were lysed and proteins extracted.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Cultured neonatal or adult NMCs were removed from dishes using Cell dissociation buffer enzyme-free PBS-based (Gibco 13151–014) and washed in PBS with 3% FCS.
 
@@ -213,11 +257,11 @@ Adult NMCs were isolated from adult infarcted hearts as described above. Samples
 
 The numbers of CD31+ cells in cell cultures or in NMCs isolated from hearts were obtained by relating the percentage of the CD31+ cells obtained by flow cytometry analysis and the total number of NMCs in culture or obtained after heart digestion in the different area of infarcted hearts. The number of GFP+ or GFP- cells among NMCs isolated from infarcted Cdh5:ROSA mice was determined by the same method, using flow cytometry analysis.
 
-## Echocardiography and measurements
+### Echocardiography and measurements
 
 Transthoracic echocardiographies were performed on adult unmanipulated or infarcted mice using a 30 M-Hz probe and the Vevo 770 Ultrasound machine (VisualSonics, Toronto, Ontario, Canada) as described (Bielmann et al., 2015). All measurements were done from leading edge to leading edge according to the American Society of Echocardiography guidelines. Ejection fraction (EF) and fractional shortening, were evaluated on lightly anaesthetised mice (1% isoflurane). Furthermore, according to the fact that changes in left ventricle volume can be considered as an index of remodeling (Konstam et al., 2011), we calculated the percentage of increase of the left ventricle volume 10 days after surgery, which is the ratio between (LV Vol;d 1 or 4 weeks − LV Vol;d before surgery) and LV Vol;d before surgery ×100.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Neonatal and adult hearts were embedded in OCT. Immunostainings were performed on 5 µm heart sections or on cells cultured for up to 11 days on coverslips. Tissue sections or cells were fixed 10 min in 2% PFA. The first antibodies were all incubated overnight at 4°C. Secondary antibodies were incubated 1 hr at room temperature (Supplementary file 1). For BrdU detection, heart slides were fixed 10 min in 2% PFA, DNA was denaturated 1 hr at room temperature in HCl 2N before neutralisation in Na Borate 0.1M pH = 8.5, 2 × 5 min. Rat anti-BrdU (1/100, Abcam) was incubated 1 hr at room temperature. Donkey anti-rat was used as secondary antibody. Nuclei were stained with DAPI (0.3 μM). All slides were mounted with Dabco mounting medium (Sigma D2, 780–2) and examined with a Nikon eclipse 90i microscope or Nikon SMZ 25 Stereomicroscope (for the hearts in full, Figure 8).
 
@@ -227,20 +271,20 @@ To study heart vascularisation, the number of pixels was obtained by processing 
 
 The percentages of proliferating endothelial (CD31+) or WT1+ cells were obtained by dividing the number of CD31+ BrdU+ cells or WT1+BrdU+ cells obtained by counting per the total number of CD31+ cells or WT1+ cells, respectively.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA was isolated from heart tissue or cell culture using Trizol (Ambion 15596026). Reverse transcriptase was carried out using PrimeScript RT Reagent kit with gDNA eraser (perfect Real Time) (Takara, RR047A).
 
 Quantitative real time polymerase chain reaction was performed in duplicates using the TB Green Premix Ex Taq kit (Takara RR420L) on a ViiA 7 Instrument (Applied Biosystems). Results were obtained after 40 cycles of a thermal step protocol consisting of 95°C (1 s), 60°C (20 s). The primer sequences were reported in Supplementary file 2. Gene expressions were normalized using the housekeeping gene 18S (ΔCT values). Means of ΔΔCT values (versus untreated cells) were calculated and results were represented as 2−ΔΔCT. Statistics were performed on ΔΔCT individual values (Moilanen et al., 2011).
 
-## Western blot
+### Western blot
 
 Total proteins were extracted from tissues or cells as described and transferred to nitrocellulose membranes before incubation with primary antibodies overnight at 4°C (Supplementary file 1). Secondary antibodies were added 2 hr at room temperature. The immunoblot signals were detected and quantified using the Odyssey infrared imaging system (LI-COR Biosciences, Bad Homburg, Germany). All results were related to their expression of tubulin.
 
-## Determination of cGMP concentration in plasma
+### Determination of cGMP concentration in plasma
 
 cGMP level was detected using the cGMP Enzyme Immuno Assay kit Direct (Sigma). BNP was injected in unmanipulated or infarcted mice. Blood was collected 1–2 hr after BNP injection for unmanipulated mice and 1or 3 days after surgery for infarcted hearts. EDTA-plasma were then processed as recommended in the kit.
 
-## Statistical analysis
+### Statistical analysis
 
 All results were presented as mean ± SEM. Statistical analyses were performed only if the number of experiments or mice is ≥6 per group. Paired or unpaired Student-T test were used (*p<0.05). We compared variances between both groups using the F test. If variance is different (#p<0.05), unpaired T test with Welch’s correction was used. The alpha level of all tests was 0.05.

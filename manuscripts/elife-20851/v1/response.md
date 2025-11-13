@@ -44,9 +44,7 @@ We hydrated the immobilized flies overnight using a small drinking capillary and
 
 Subsection “Normal aging manifests as diastolic dysfunction while preserving contractile performance”, second paragraph – The authors group data from the two 'wild-type' genetic backgrounds, w1118 and Canton S, for analysis. This is troublesome as these two genotypes have very different genetic backgrounds – known to influence heart function. The average fly size and heart size in these two genotypes are different. Having similar rates does not seem sufficient rational for grouping data from these two lines. Especially since they are also using this data to generate other parameters that are not based solely on rate (e.g. Cardiac output).
 
-Our conclusion that systolic function is preserved while the kinetics of relaxation are selectively affected during aging is true for both Canton S and w1118 genotypes (see Author response image 1). The data were combined because, in our experiments, we found them comparable.10.7554/eLife.20851.025Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.20851.025
-
-DOI: http://dx.doi.org/10.7554/eLife.20851.025
+Our conclusion that systolic function is preserved while the kinetics of relaxation are selectively affected during aging is true for both Canton S and w1118 genotypes (see Author response image 1). The data were combined because, in our experiments, we found them comparable.10.7554/eLife.20851.025Author response image 1.
 
 The Canton S background is the preferred genetic background for behavioral studies, while white and particularly yellow mutants are known to display behavioral defects in certain assays. We retained the w1118 allele to facilitate building and confirming transgenic backgrounds but outcrossed it for six generations to our Canton S stock to eliminate any unlinked polymorphisms. We collected the Canton S and w1118 datasets to confirm that the retention of w1118 did not grossly affect cardiac rhythmicity or output. This combined dataset was only used for Figure 2; all other figures utilized the w1118 dataset alone as all subsequent genetics were performed in that background.
 

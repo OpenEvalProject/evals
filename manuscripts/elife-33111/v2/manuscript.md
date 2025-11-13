@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.33111.001 3’ polyadenylation is a key step in eukaryotic mRNA biogenesis. In mammalian cells, this process is dependent on the recognition of the hexanucleotide AAUAAA motif in the pre-mRNA polyadenylation signal by the cleavage and polyadenylation specificity factor (CPSF) complex. A core CPSF complex comprising CPSF160, WDR33, CPSF30 and Fip1 is sufficient for AAUAAA motif recognition, yet the molecular interactions underpinning its assembly and mechanism of PAS recognition are not understood. Based on cross-linking-coupled mass spectrometry, crystal structure of the CPSF160-WDR33 subcomplex and biochemical assays, we define the molecular architecture of the core human CPSF complex, identifying specific domains involved in inter-subunit interactions. In addition to zinc finger domains in CPSF30, we identify using quantitative RNA-binding assays an N-terminal lysine/arginine-rich motif in WDR33 as a critical determinant of specific AAUAAA motif recognition. Together, these results shed light on the function of CPSF in mediating PAS-dependent RNA cleavage and polyadenylation.
+3’ polyadenylation is a key step in eukaryotic mRNA biogenesis. In mammalian cells, this process is dependent on the recognition of the hexanucleotide AAUAAA motif in the pre-mRNA polyadenylation signal by the cleavage and polyadenylation specificity factor (CPSF) complex. A core CPSF complex comprising CPSF160, WDR33, CPSF30 and Fip1 is sufficient for AAUAAA motif recognition, yet the molecular interactions underpinning its assembly and mechanism of PAS recognition are not understood. Based on cross-linking-coupled mass spectrometry, crystal structure of the CPSF160-WDR33 subcomplex and biochemical assays, we define the molecular architecture of the core human CPSF complex, identifying specific domains involved in inter-subunit interactions. In addition to zinc finger domains in CPSF30, we identify using quantitative RNA-binding assays an N-terminal lysine/arginine-rich motif in WDR33 as a critical determinant of specific AAUAAA motif recognition. Together, these results shed light on the function of CPSF in mediating PAS-dependent RNA cleavage and polyadenylation.
 
 ## Introduction
 
@@ -31,23 +31,268 @@ Despite its importance for mRNA biogenesis and the regulation of gene expression
 
 ## Results
 
-## A core module containing the N-terminal WD40 domain of WDR33 is sufficient for PAS recognition by CPSF
+### A core module containing the N-terminal WD40 domain of WDR33 is sufficient for PAS recognition by CPSF
 
 A recent study demonstrated that a four-subunit CPSF core complex containing WDR33 is necessary and sufficient to support AAUAAA motif-dependent polyadenylation in vitro (Schönemann et al., 2014). Human WDR33 is a ~145 kDa protein composed of an N-terminal WD40 beta-propeller domain and a poorly conserved C-terminal region containing low-complexity sequences. To shed light on the assembly of the CPSF polyadenylation module, we first reconstituted by co-expression in Sf9 insect cells a minimal complex consisting of full-length human CPSF160 (CPSF160FL), CPSF30 (CPSF30FL) and Fip1 (Fip1FL) proteins, and a fragment of WDR33 comprising only the N-terminal region containing the WD40 domain (WDR33M1-K410) (Figure 1—figure supplement 1A). We then tested whether the reconstituted complex is capable of specific binding to an RNA containing the PAS hexamer motif. To this end, we used a Atto532-labelled 16-nucleotide RNA containing the AAUAAA hexamer and tested its binding in a fluorescence polarization assay (Figure 1A). The RNA was bound with sub-nanomolar affinity (KD = 0.65 ± 0.09 nM), in general agreement with a previously reported value (KD ~2 nM) (Schönemann et al., 2014). By contrast, the affinity of the complex for a mutated version of the RNA containing a single nucleotide substitution in the hexanucleotide (AAGAAA) was reduced by more than 100-fold (Figure 1A). Together, these results indicate that a core module of the CPSF complex containing the WD40 domain of WDR33 is able to bind the AAUAAA motif with both high affinity and specificity, implying that the C-terminal region of WDR33 is not necessary for CPSF assembly and PAS recognition.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33111/elife-33111-fig1-v2.jpg)
+
+**Figure 1.:** (A) Equilibrium binding of CPSF160FL-WDR33M1-K410-CPSF30FL -Fip1FL to an Atto532-labelled, 16-nucleotide RNA containing the PAS hexanucleotide (AAUAAA), measured by fluorescence polarization. The polarization amplitude is normalized to 1. Error bars indicate standard error of means (SEM) for five consecutive measurements of a single representative sample. Each binding experiment was performed in triplicate and the mean KDvalues ± SEM are reported in Table 2. (B) Inter-subunit cross-link map of the CPSF160FL-WDR33M1-G474-CPSF30FL-Fip1FL complex. Observed inter-molecular cross-links between CPSF160FL, WDR33M1-G474 and CPSF30FL (upper panel) and between FipFL and the other three CPSF subunits CPSF160FL, WDR33M1-G474 and CPSF30FL (lower panel) are represented as dashed lines. A list of the cross-linked peptides identified by mass spectrometry is reported in Figure 1—source data 1. Proteins are indicated as schematic diagrams (not to scale) with featured domains highlighted in color. (CD, Fip1 conserved domain; ZF1-5, CPSF30 zinc finger domains 1 to 5; ZK, CPSF30 zinc knuckle domain; CTD, CPSF160 C-terminal domain; bP1-3, CPSF160 beta-propeller domains 1 to 3; NTD, WDR33 N-terminal domain. CPSF160: Uniprot Q10570; WDR33: Uniprot Q9C0J8-1; CPSF30: Uniprot O95639-3; Fip1: Uniprot Q6UN15-4).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33111/elife-33111-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) CPSF160, WDR33, CPSF30 and Fip1 are indicated as schematic diagrams (not to scale) with featured domains highlighted in color. Constructs used in this study are reported as grey lines below the corresponding protein scheme and domain boundaries are indicated (CD = Fip1 conserved domain; ZF1-5, CPSF30 zinc finger domains 1 to 5; ZK, CPSF30 zinc knuckle domain; CTD, CPSF160 C-terminal domain; bP1-3, CPSF160 beta-propeller domains 1 to 3; NTD, WDR33 N-terminal domain). Uniprot accession numbers are indicated in Figure 1 legend. (B) Size exclusion chromatography elution profile (left panel) and corresponding SDS-PAGE analysis (right panel) of the CPSF160FL-WDR33M1-G474-CPSF30FL-Fip1FL CPSF core module. The indicated elution volume (10.08 ml) corresponds to the complex elution peak. The pooled fractions, as indicated with a light blue box, were concentrated and loaded on SDS-PAGE for analysis. (C) Intra-subunit cross-link map of the CPSF160FL-WDR33M1-G474-CPSF30FL-Fip1FL complex. Observed intra-molecular cross-links are represented as dashed lines. A list of the cross-linked peptides identified by mass spectrometry is reported in Figure 1—source data 1.
+
 To dissect inter- and intra-subunit interactions within the CPSF core module, we used cross-linking coupled to mass spectrometry on a variant of the minimal CPSF complex described above, carrying a C-terminally extended version of WDR33 (WDR33M1-G474, Figure 1—figure supplement 1A,B). To this end, we used the cross-linking agent disuccinimidyl suberate (DSS), which cross-links lysine residues located within approximately 35 Å of each other, and identified cross-linked peptides by mass spectrometry. We identified 54 and 99 validated inter- (Figure 1B) and intra-protein (Figure 1—figure supplement 1C) cross-linked sites, respectively (as judged by xQuest score higher than 30, corresponding to an approximate false discovery rate of 10%, Figure 1—source data 1). The cross-links cover most of the sequences and structured domains of the constituent subunits. We observe distinct cross-linking patterns of CPSF160 to the other three subunits. Whereas Fip1 forms cross-links along the entire CPSF160 sequence, WDR33 and CPSF30 cross-links mostly to the middle and C-terminal regions of CSPF160, respectively. Notably, lysine residues K46, K50 and K55 in the N-terminal region of WDR33 upstream of the predicted WD40 domain form a cross-linking hotspot, interacting extensively with the central part of CSPF160, all five zinc finger domains of CPSF30 and a central, highly conserved region of Fip1 (Figure 1B). Additionally, we identify numerous cross-links between the conserved Fip1 region and the zinc finger and the C-terminal zinc knuckle domains of CPSF30. Finally, cross-links from CSPF160 residues map exclusively to CPSF30 zinc finger domains ZF1 and ZF2 (spanning residues K35-K92). Together, these results highlight extensive inter-subunit interactions within the polyA signal-binding core module of the CPSF complex and further underscore the critical role played by WDR33 in the assembly of the CPSF complex.
 
-## Crystal structure of the CPSF160-WDR33 heterodimer reveals the structural scaffold of the CPSF complex
+### Crystal structure of the CPSF160-WDR33 heterodimer reveals the structural scaffold of the CPSF complex
 
 To gain insights into the molecular architecture of the CPSF core complex, we reconstituted and crystallized a heterodimeric complex consisting of CPSF160FL (residues M1-F1443) and an N-terminal WDR33 fragment encompassing residues Q35-K410 (WDR33Q35-K410, Figure 1—figure supplement 1A). The structure of the complex was solved at 2.5 Å resolution by a combination of molecular replacement and tantalum bromide (Ta6Br12) and sulphur single-wavelength anomalous dispersion (SAD), refined to an Rfree factor of 26.2% (Table 1). The structure revealed that CPSF160 is a multidomain protein composed of three seven-bladed WD40 beta-propeller domains (bP1, bP2 and bP3 for beta propeller 1 to 3) and a C-terminal helical domain (CTD). The three beta-propellers form a compact tristar arrangement (Figure 2A), reminiscent of the domain arrangement observed in the DNA Damage Binding protein 1 (DDB1) (Li et al., 2006) (Figure 2—figure supplement 1A). The central beta-propeller domain (bP2) is located at the top of the bP1-bP3 contact region, with the CTD sealing the interaction between the three beta-propellers at their central junction (Figure 2A, side view). The N- and C-terminal propellers (bP1 and bP3) are oriented in a pseudosymmetric fashion and interact with each other at a ~60° angle, creating a deep cavity in between. The cavity is closed on the distal side by three elongated loops (el1-el3) comprising residues P223-T237 (el1), L300-C324 (el2) and C1044-K1069 (el3) projecting from bP1 and bP3 (Figure 2—figure supplement 2A). CPSF160 and DDB1 share a remarkable structural similarity despite low sequence identity (~16%), in particular for the bP1-bP3-CTD ensemble (RMSD 2.5 Å for 737 aligned Cα atoms) (Figure 2—figure supplement 1A). However, in contrast to DDB1, bP2 is tightly packed against the other two propeller domains and CTD in CPSF160, making extensive ionic and hydrophobic interactions (~3600 Å2 of total buried area and 54 charged interactions for CPSF160 in comparison to ~1000 Å2 and 10 interactions for DDB1). This tight packing suggests that bP2 is locked in a fixed position in CPSF160, whereas different crystal forms show significant conformational flexibility of bP2 in DDB1 (Li et al., 2006) (Figure 2—figure supplement 1A). As in DDB1, the three beta-propeller domains of CPSF160 do not follow a linear tandem topology; instead, three discontinuous regions of the CPSF160 polypeptide sequence contribute to bP3 (Figure 1B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/33111/elife-33111-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cartoon representation of the overall structure of the CPSF160FL-WDR33Q35-K410 complex. (B) Cartoon representation of the isolated WDR33 WD40 (light orange) and NTD (dark orange) domains. The N and C-termini are indicated as dashed lines. (C) CPSF160 beta-propeller domains bP1 and bP3 form a deep cavity that binds the WDR33 N-terminal domain (NTD). A vertical cross-section through the CPSF160 propeller domains (represented as surface) is shown. WDR33 is represented as cartoon.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33111/elife-33111-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Structural superposition of CPSF160 with two different conformations of DDB1, differing in the position of beta-propeller bP2. In the first conformation (PDB 2B5M), DDB1 bP2 propeller is oriented as in CPSF160 (left panel), whereas in the second conformation (PDB 2B5L) DDB1 bP2 is rotated by ~90 degrees relative to CPSF160 bP2. In both DDB1 conformations, the position of the bP1 and bP3 domains does not vary and superimposes to the respective domains of CPSF160. (B) Superposition of CPSF160 and DDB1 within the CPSF160-WDR33 and DDB1-DDB2 (PDB 3EI3) complexes. (C) The N-terminal helices of WDR33 and DDB2 show an almost perfect overlap even though their respective propeller domains are shifted by ~10 Å. WDR33 and DDB2 are oriented as in (B).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/33111/elife-33111-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The CPSF160 elongated loops el1, el2 and el3, projecting from the bP1 and bP3 propellers, participate in locking WDR33 in place. el1, el2 and el3 are colored in red. (B) Surface representation of CPSF160, showing that WDR33 NTD is completely buried within CPSF160 and excluded from the solvent. WDR33 is represented as cartoon.
+
+**Table 1.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">CPSF160-WDR33</th>
+    </tr>
+    <tr>
+      <th>Dataset</th>
+      <th>Native</th>
+      <th>Sulfur SAD</th>
+      <th>Ta6Br12 SAD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-ray source</td>
+      <td>SLS X06DA (PXIII)</td>
+      <td>SLS X06DA (PXIII)</td>
+      <td>SLS X06DA (PXIII)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P1</td>
+      <td>P1</td>
+      <td>P1</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>67.91 77.40 104.02</td>
+      <td>67.88 77.58 104.14</td>
+      <td>67.52 76.79 104.02</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (o)</td>
+      <td>87.56 76.41 67.00</td>
+      <td>87.39 76.60 66.76</td>
+      <td>87.36 76.72 66.30</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.0000</td>
+      <td>2.0733</td>
+      <td>1.2548</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)*</td>
+      <td>47.27–2.50 (2.59–2.50)</td>
+      <td>44.25–3.00 (3.11–3.00)</td>
+      <td>47.26–3.60 (3.73–3.60)</td>
+    </tr>
+    <tr>
+      <td>Rmerge*</td>
+      <td>0.090 (0.773)</td>
+      <td>0.211 (2.934)</td>
+      <td>0.140 (0.669)</td>
+    </tr>
+    <tr>
+      <td>CC1/2*</td>
+      <td>0.999 (0.834)</td>
+      <td>0.999 (0.847)</td>
+      <td>0.998 (0.926)</td>
+    </tr>
+    <tr>
+      <td>I/σI*</td>
+      <td>18.3 (2.5)</td>
+      <td>29.3 (2.5)</td>
+      <td>20.6 (4.6)</td>
+    </tr>
+    <tr>
+      <td>Observations*</td>
+      <td>488656 (34882)</td>
+      <td>2456831 (165849)</td>
+      <td>300048 (29753)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections*</td>
+      <td>65410 (6519)</td>
+      <td>37770 (3688)</td>
+      <td>21497 (2126)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity*</td>
+      <td>7.5 (5.4)</td>
+      <td>65.0 (45.0)</td>
+      <td>14.0 (14.0)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)*</td>
+      <td>100.0 (100.0)</td>
+      <td>100.0 (96.9)</td>
+      <td>99.9 (99.6)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>47.27–2.50</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>65395 (6517)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.228/0.263</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>12162</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>102</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mean</td>
+      <td>69.35</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>69.52</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>49.03</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond angles (o)</td>
+      <td>0.56</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>% favored</td>
+      <td>94.6</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>% allowed</td>
+      <td>5.4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>% outliers</td>
+      <td>0.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 WDR33 also forms a seven-bladed beta-propeller domain (corresponding to residues T108-T403) and additionally contains a ~50 residue N-terminal domain (NTD, residues R54-T107) protruding away from the beta-propeller (Figure 1A and Figure 2B). The NTD has a unique fold with no secondary structure features except for an N-terminal alpha-helix. The NTD is further supported by a short loop (residues R404-K410) extending C-terminally from the last beta-strand of the WD40 propeller. Upstream of the NTD, residues Q35-N53, which were included in the crystallized protein construct, are disordered in the crystal structure and could not be modeled (Figure 2B). The WDR33 NTD is completely buried in the cavity formed by CPSF160 bP1 and bP3 (Figure 2C and Figure 2—figure supplement 2B), with CPSF160 loops el1, el2 and el3 locking the NTD in place (Figure 2—figure supplement 2A). The CPSF160-WDR33 complex is further stabilized by contacts between WDR33 beta-propeller domain and CPSF160 bP1 and bP3. The CPSF160-WDR33 interaction is strikingly reminiscent of the architecture of the DDB1-DDB2 DNA repair complex (Scrima et al., 2008). Superposition of CPSF160 and DDB1 results in almost perfect overlap of the N-terminal alpha-helices of WDR33 and DDB2. However, due to local differences in the N-terminal domains WDR33 and DDB2, the respective beta-propeller domains of the two proteins are shifted by ~10 Å relative to each other (Figure 2—figure supplement 1B,C). Overall, CPSF160 and WDR33 establish an extensive network of interactions encompassing 45 hydrogen bonds and 19 salt bridges, with a total buried surface of ~6900 Å2, equally distributed over the two proteins. These structural observations are thus consistent with CPSF160 and WDR33 forming a tight heterodimeric subcomplex within the polyA signal-binding module of the human CPSF complex.
 
 The molecular architecture of the CPSF160-WDR33 heterodimer is in good agreement with our cross-linking mass spectrometry data (Figure 1B and Figure 1—source data 1), despite many of the cross-links originating from lysine residues within disordered regions of CPSF160 (internal loops) and WDR33 (N-terminal region). Among the cross-links that can be mapped on the atomic model of the CPSF160-WDR33 heterodimer, 12 are consistent with the conventional Euclidean distance of 35 Å. Notably, of the six cross-links with distance violations, five originate from the same CPSF160 residue (see Materials and methods). Four cross-links between CPSF160 K1055 located in loop el3 and WDR33 residues K46, K50, K55 and K410 are consistent with the CPSF160 beta-propeller three being in proximity of the N-terminal region of WDR33 (Figure 1B and Figure 2A).
 
-## Molecular topology of the core CPSF complex
+### Molecular topology of the core CPSF complex
 
 In light of the crystal structure of the CPSF160-WDR33 heterodimer, we sought to investigate the physical interactions linking CPSF30 and Fip1 to CPSF160-WDR33 within the AAUAAA-binding core module of CPSF. To this end, we co-expressed CPSF160FL and WDR33M1-K410 together with a series of N-terminally green fluorescent protein (GFP)-tagged constructs of CPSF30 in Sf9 cells, making use of the GFP tag for direct in-gel detection (Figure 3A, Figure 1—figure supplement 1A). In tandem affinity purifications utilizing the His6-(StrepII)2 epitope tag on WDR33, we initially observed efficient co-precipitation of full-length CPSF30 (CPSF30FL, Figure 3A, lane 1), indicating that CPSF30 is able to interact with CPSF160FL-WDR33M1-K410 independently of Fip1. Next, we examined a series of CPSF30 construct with different C-terminal deletions (Figure 3A, lanes 2–4). All tested CPSF30 constructs retained binding to CPSF160FL-WDR33M1-K410, indicating that the N-terminal ~60 residues of CPSF30 that include ZF1 are sufficient for the interaction with CPSF160-WDR33 (Figure 3A, lane 4). Moreover, deletion of the same residues indeed impaired CPSF30 binding to CPSF160FL-WDR33M1-K410 (CPSF30ZF2-5, Figure 3A, lane 5). A similar result was obtained when the N-terminal 34 residues of CPSF30 (upstream of ZF1) were deleted (CPSF30ZF1-5ΔN, Figure 3A, lane 6), but these residues alone were not sufficient to mediate binding to CPSF160FL-WDR33M1-K410 (CPSF30N, Figure 3A, lane 7). Together, these results indicate that the N-terminal region of CPSF30 up to and including ZF1 is necessary and sufficient to mediate the interaction between CPSF30 and the CPSF160-WDR33 heterodimer.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/33111/elife-33111-fig3-v2.jpg)
+
+**Figure 3.:** (A) CPSF30 ZF1 is necessary and sufficient for CPSF160FL-WDR33M1-K410 binding. Pull-down assay of GFP-labeled CPSF30 constructs interacting with CPSF160FL-WDR33M1-K410. Input and bound proteins were analyzed on a 4–12% gradient SDS-PAGE and visualized by Coomassie staining (upper panel) and by in-gel GFP fluorescence (middle and lower panels). The asterisk indicates free GFP present in the input lysate. (B) Fip1 is tethered to the CPSF complex by its short conserved domain (Fip1CD). Pull-down assay of GFP-labeled Fip1FL and Fip1CD interacting with the CPSF160FL-WDR33M1-K410-CPSF30FL complex. Input and bound proteins were analyzed on a 4–12% gradient SDS-PAGE and visualized by Coomassie staining (upper panel) and by in-gel GFP fluorescence (middle and lower panels). The asterisk indicates free GFP present in the input lysate. (C) CPSF30 zinc finger domains ZF4 and ZF5 are necessary and sufficient to mediate the interaction with Fip1. Pull-down assay of GFP-labeled Fip1CD interacting with CPSF160FL-WDR33M1-K410-CPSF30. Input and bound proteins were analyzed on a 4–12% gradient SDS-PAGE and visualized by Coomassie staining (upper panel) and by in-gel GFP fluorescence (middle and lower panels). In lane 6, His6-(StrepII)2-CPSF30ZF4-5 was used for the precipitation of GFP-Fip1CD, in the absence of WDR33M1-K410 and CPSF160FL.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33111/elife-33111-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fip1CD is highly conserved from human to yeast and parasites (Ciona and Encephalitozoon). Sequence alignment of the conserved central region of Fip1 from different organisms with numbering corresponding to the human sequence. The boundaries of the construct Fip1CD are shown as black box. The alignment was generated using Clustal Omega (Sievers et al., 2011) and displayed using ESPript (Robert and Gouet, 2014). (B) SDS-PAGE analysis of input and pull-down experiments performed using GST-Fip1CD immobilized on glutathione beads and incubated with MBP-tagged CPSF30 constructs.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/33111/elife-33111-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** CPSF160 and WDR33 lysine residues involved in cross-links with Fip1 and CPSF30 are represented in red and green, respectively. CPSF30 and Fip1 are represented as schematic diagrams with featured domains highlighted in color. Dashed lines indicate cross-links.
 
 To probe the interactions of Fip1 with the other subunits, we co-expressed in Sf9 cells GFP-tagged Fip1FL (Figure 1—figure supplement 1A) with CPSF160FL and His6-(StrepII)2-tagged WDR33M1-K410 in the presence or absence of CPSF30FL and performed a pull-down experiment. In the presence of CPSF30FL, Fip1FL was efficiently co-precipitated together with the rest of the complex (Figure 3B, lane 1). In contrast, Fip1FL did not interact with CPSF160FL and WDR33 M1-K410 in the absence of CPSF30FL expression (lane 2). Human Fip1 contains a central sequence motif that is highly conserved across organisms, including yeast (Figure 3—figure supplement 1A). A ~7 kDa fragment encompassing this conserved motif, spanning residues G130-K195, (henceforth termed the Fip1 conserved domain, Fip1CD, Figure 1—figure supplement 1A), retained the ability to interact with the CPSF30FL-CPSF160FL-WDR33 M1-K410 complex (Figure 3B, lane 3). As for Fip1FL, binding was dependent on the presence of CPSF30FL (Figure 3B, lanes 3–4), indicating that a direct physical interaction between CPSF30 and Fip1CD is required to recruit Fip1 to the CPSF core module. Altogether, these results thus indicate that Fip1 is tethered to the CPSF complex via CPSF30, although additional weaker interactions with CPSF160 and WDR33 cannot be excluded based on our cross-linking and mass spectrometry data (Figure 1B). Moreover, the conservation of the Fip1CD motif suggests that this mode of interaction is also conserved in the yeast CPF complex, the functional equivalent of metazoan CPSF.
 
@@ -55,9 +300,73 @@ To delineate specific domains in CPSF30 responsible for Fip1 interaction, we con
 
 Taken together, these results indicate that: (i) CPSF30 binds to CPSF160-WDR33 independently of Fip1 and that its N-terminal ~60 residues (including ZF1) are necessary and sufficient for this interaction; (ii) Fip1 is tethered to the CPSF complex by its short ~7 kDa conserved domain (Fip1CD); and (iii) the zinc finger domains ZF4 and ZF5 of CPSF30 are necessary and sufficient to mediate the interaction with Fip1. Furthermore, these conclusions are consistent with the cross-linking data between each subunit (Figure 1B), as mapping the molecular cross-links of CPSF30 and Fip1 onto the molecular surface of the CPSF160-WDR33 heterodimer suggests that CPSF30 binds at, or close to, the CPSF160-WDR33 molecular interface in proximity to the N-terminus of WDR33 (Figure 3—figure supplement 2).
 
-## AAUAAA motif recognition is mediated by CPSF30 ZF2-3 domains and an N-terminal motif in WDR33
+### AAUAAA motif recognition is mediated by CPSF30 ZF2-3 domains and an N-terminal motif in WDR33
 
 As cross-linking and immunoprecipitation studies previously implicated human CPSF30 and WDR33 in direct interactions with the AAUAAA signal (Chan et al., 2014; Schönemann et al., 2014), we sought to investigate the structural requirements for PAS hexamer motif binding by the CPSF complex and dissect the contributions of its individual subunits to AAUAAA motif recognition. To this end, we quantified the binding of an AAUAAA-containing RNA by the CPSF core module and variants thereof in a fluorescence polarization assay. The core module containing CPSF30FL and Fip1FL bound the AAUAAA RNA with subnanomolar affinity (Figure 1A, Figure 4A). The affinity was sustained and even increased with a complex containing Fip1CD and CPSF30 that lacked the C-terminal ZK domain (CPSF30ZF1-5, Figure 4 and Table 2). A complex lacking Fip1 and containing only CPSF30 domains ZF1-3 (CPSF30ZF1-3) also bound the AAUAAA RNA with extremely high affinity, with our assay setting an upper boundary of ~100 pM for the equilibrium dissociation constant. Although the observed increase in affinity upon removal of CPSF30 domains ZF4-5 and Fip1 is presently unclear, it is conceivable that CPSF30 ZF4-5 and/or Fip1 play an autoinhibitory role within CPSF by sterically hindering the accessibility of CPSF30 ZF2-3 domains to the AAUAAA motif.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/33111/elife-33111-fig4-v2.jpg)
+
+**Figure 4.:** Equilibrium binding measured by fluorescence polarization of CPSF complex variants containing different CPSF30 constructs (A) and WDR33M1-K410 mutants (B) to an Atto532-labelled 16-nucleotide RNA containing the PAS hexamer (AAUAAA). The polarization amplitude is normalized to 1. Error bars indicate standard error of means (SEM) for five consecutive measurements of the same sample. Error bars indicate standard error of means (SEM) for five consecutive measurements of a single representative sample. Each binding experiment was performed in triplicate and the mean KDvalues ± SEM are reported in Table 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33111/elife-33111-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Equilibrium binding of CPSF complex variants featuring different CPSF30 constructs and WDR33M1-K410 mutants to an Atto532-labelled 16-nucleotide RNA containing the wild-type (AAUAAA) or mutated (AAGAAA) PAS hexamer measured by fluorescence polarization. The polarization amplitude is normalized to 1. Error bars indicate standard error of means (SEM) for five consecutive measurements of a single representative sample. Each binding experiment was performed in triplicate and the mean KDvalues ± SEM are reported in Table 2. (B) Sequence alignment of the N-terminal region of WDR33 from different organisms with numbering corresponding to the human sequence. The conserved lysine/arginine-rich motif located N-terminally of WDR33 NTD is highlighted as a black box. Secondary structure elements are indicated above the sequence. The alignment was generated using Clustal Omega (Sievers et al., 2011) and displayed using ESPript (Robert and Gouet, 2014) (C) Size exclusion chromatography elution profile (left panel) and SDS-PAGE analysis (right panel) of the CPSF160FL-WDR33M1-K410-CPSF30ZF1-3 complex containing wild-type (wt) and mutant (K46A/R47A and R49A/K50A) WDR33M1-K410.
+
+**Table 2.**
+ Equilibrium dissociation constants of CPSF variants binding to wild-type or mutated PAS hexamer RNA.The equilibrium dissociation constants were determined using a fluorescence polarization binding assay, as shown in Figures 1A and 4A,B and Figure 4—figure supplement 1A. The values reported represent mean ±SEM of three independent measurements. For measurements denoted n.m. (not measurable), the KD was above the range measurable by the assay (>>1 μM).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CPSF variant</th>
+      <th>KD AAUAAA RNA</th>
+      <th>KD AAGAAA RNA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPSF160FL-WDR33M1-K410-CPSF30FL/Fip1FL</td>
+      <td>0.65 ± 0.90 nM</td>
+      <td>120 ± 23 nM</td>
+    </tr>
+    <tr>
+      <td>CPSF160FL-WDR33M1-K410-CPSF30ZF1-5/Fip1CD</td>
+      <td>0.11 ± 0.03 nM</td>
+      <td>70 ± 6 nM</td>
+    </tr>
+    <tr>
+      <td>CPSF160FL-WDR33M1-K410-CPSF30ZF1-3</td>
+      <td>&lt;0.1 nM</td>
+      <td>43 ± 2 nM</td>
+    </tr>
+    <tr>
+      <td>CPSF160FL-WDR33M1-K410-CPSF30ZF1-2</td>
+      <td>&gt;200 nM</td>
+      <td>n.m.</td>
+    </tr>
+    <tr>
+      <td>CPSF160FL-WDR33M1-K410-CPSF30ZF1</td>
+      <td>&gt;200 nM</td>
+      <td>n.m.</td>
+    </tr>
+    <tr>
+      <td>CPSF160FL-WDR33M1-K410</td>
+      <td>&gt;200 nM</td>
+      <td>n.m.</td>
+    </tr>
+    <tr>
+      <td>CPSF160 FL-WDR33M1-K410(K46A-R47A)-CPSF30ZF1-3</td>
+      <td>7.78 ± 0.78 nM</td>
+      <td>&gt;200 nM</td>
+    </tr>
+    <tr>
+      <td>CPSF160 FL-WDR33M1-K410(R49A-K50A)-CPSF30ZF1-3</td>
+      <td>2.42 ± 0.66 nM</td>
+      <td>&gt;500 nM</td>
+    </tr>
+  </tbody>
+</table>
 
 In contrast, deletion of the CPSF30 ZF3 domain (CPSF30ZF1-2) resulted in a dramatic (>2000 fold) reduction in AAUAAA RNA binding, indicating that the ZF3 domain is essential for the recognition of the PAS hexamer motif and that the presence of the ZF2 domain alone is not sufficient (Figure 4 and Table 2). This is in good agreement with previous experiments demonstrating that both the ZF2 and ZF3 domains are required for interactions with the AAUAAA motif (Chan et al., 2014). Surprisingly, however, no further reduction in AAUAAA RNA binding was observed when CPSF30 was further truncated to remove the ZF2 domain (CPSF30ZF1), or omitted from the core module altogether, indicating that in the absence of the ZF3 domain, the ZF2 domain of CPSF30 does not contribute to AAUAAA binding. Binding was significantly decreased for all CPSF complex variants when a mutant RNA containing a single-base substitution in the PAS hexamer motif (AAGAAA) was used (Figure 4—figure supplement 1A), indicating that some specificity for the AAUAAA RNA is retained also in the absence of CPSF30. Given that WDR33, as opposed to CPSF160, has been implicated in AAUAAA recognition (Chan et al., 2014; Schönemann et al., 2014), this suggests that WDR33 indeed contributes to specific recognition of the PAS hexanucleotide.
 
@@ -83,7 +392,7 @@ Based on our structural observations and interaction analysis, we conclude that 
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 All constructs of human CPSF160 (Uniprot Q10570), WDR33 (Uniprot Q9C0J8-1), CPSF30 (Uniprot O95639-3) and Fip1 (Uniprot Q6UN15-4) were cloned into ligation-independent MacroLab vectors developed by Scott Gradia, University of California, Berkeley (Gradia et al., 2017). The constructs were cloned in single-cassette, double-cassette or 438 MacroBac cloning system vectors as specified in Supplementary file 1. For 438 MacroBac cloning system vectors, two, three or four subunits, as appropriate, were combined in a single plasmid according to the MacroBac protocol (Gradia et al., 2017) as specified in Supplementary file 1. Recombinant baculoviruses were generated using the Bac-to-Bac system (Invitrogen) according to standard protocols. Sf9 insect cells were either infected with one virus or co-infected with two viruses as specified in Supplementary file 1. GST-Fip1CD and MBP-CPSF30 constructs used in pull-down experiments were cloned in the 2GT (Addgene #29707) and 1M (Addgene #29656) vectors, respectively.
 
@@ -93,20 +402,20 @@ For the purification of CPSF complexes used in fluorescence polarization RNA-bin
 
 GST-Fip1CD and MBP-CPSF30 were expressed in E. coli BL21 Star (DE3) cells grown until an OD600 of 0.6 and the expression was induced by addition of isopropyl-1-thio-β-D-galactopyranoside (IPTG) to a final concentration of 0.1 mM. GST-Fip1CD was expressed at 20°C overnight and MBP-CPSF30 at 37°C for 3 hr. Cells were harvested, resuspended in 20 mM Tris-HCl pH 7.5 and 500 mM NaCl supplemented with 1 mM PMSF/AEBSF protease inhibitor, and lysed by sonication. GST-Fip1CD was purified on glutathione sepharose 4 fast flow resin (GE Healthcare) and MBP-CPSF30 on amylose resin (NEB Inc., Ipswich, MA, USA). Both proteins were further purified by size exclusion chromatography on a Superdex-200 column (GE Healthcare) in 20 mM Tris-HCl pH 7.5, 150 mM NaCl and 1 mM DTT.
 
-## Cross-linking and mass spectrometry analysis
+### Cross-linking and mass spectrometry analysis
 
 80 µg of purified CPSF160FL-WDR33M1-G474-CPSF30FL-Fip1FL complex was cross-linked at a concentration of 2 mg ml−1 with a final concentration of 1 mM equimolar mixture of isotopically labeled di-succinimidyl suberate (DSS-d0, DSS-d12; CreativeMolecules Inc.) in a final volume of 40 µl of 20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM TCEP, incubated at 37°C for 30 min at 500 rpm on a Thermomixer (Eppendorf AG, Hamburg, Germany), as previously described (Leitner et al., 2014). The reactions were quenched with 50 mM (final concentration) of ammonium bicarbonate (NH4HCO3) for 20 min at 37°C and evaporated to dryness in a vacuum centrifuge. The dried pellets were dissolved in 50 µl of 8 M urea, reduced with 2.5 mM TCEP for 30 min at 37°C and alkylated with 5 mM iodoacetamide (Sigma-Aldrich) for 30 min at room temperature, in the dark. Digestion was carried out after diluting urea to 5 M with 50 mM NH4HCO3 and adding 1% (w/w) LysC protease (Wako Chemicals GmbH, Neuss, Germany) for 3 hr at 37°C and subsequently diluting to 1 M urea with 50 mM NH4HCO3 and finally adding 2% (w/w) trypsin (Promega, Fitchburg, WI, USA) for 14 hr at 37°C. Protein digestion was stopped by acidification with 1% (v/v) formic acid. Digested peptides were purified using Sep-Pak C18 cartridges (Waters, Milford, MA, USA) according to the manufacturer’s protocol. Cross-linked peptides were enriched by peptide size exclusion chromatography (SEC) as previously described (Leitner et al., 2014). SEC fractions were then reconstituted in 5% acetonitrile and 0.1% formic acid and analyzed in duplicates on an HPLC (Thermo Easy-nLC 1000) coupled to a mass spectrometer (Thermo Orbitrap Elite). Analytes were separated on an Acclaim PepMap RSLC column (25 cm x 75 µm, 2 µm particle size, Thermo Scientific, Waltham, MA, USA) over a 60 min gradient from 7% to 35% acetonitrile at a flow rate of 300 nl min−1. The mass spectrometer was operated in data-dependent acquisition (DDA) mode with MS acquisition in the Orbitrap analyzer at 120,000 resolution and MS/MS acquisition in the linear ion trap at normal resolution after collision-induced dissociation. DDA was set up to isolate the top 10 precursors from an MS1 full scan with a charge state of +3 or higher and a dynamic exclusion of 30 s (Leitner et al., 2014). MS data were converted to mzXML format with msConvert (Chambers et al., 2012) and searched with xQuest/xProphet (Walzthoeni et al., 2012) with an MS1 tolerance of 10 ppm and an MS2 tolerance of 0.2 and 0.3 Da for common ions and cross-link ions, respectively. Default settings for xQuest and xProphet settings were selected (Leitner et al., 2014). The search database contained the peptide sequences of the analyzed proteins and the corresponding decoy sequences. Cross-linked peptides were identified with a minimal length of 5 amino acids and at least four bond cleavages or three adjacent ones per peptide. Cross-linked peptides were defined as validated if they had a total ion current explained higher than 0.1 and an xQuest score higher than 30, corresponding to an approximate false discovery rate of 10%. 18 (12%) of the 153 validated cross-linked sites could be mapped to residues present in the atomic model of CPSF160-WDR33. From the subset of mapped cross-linked residues, 12 had an Euclidean distance lower that 35 Å, whereas six showed a distance between 42 and 100 Å. Notably, 5 of the six cross-linked sites originated from a common peptide on CPSF160 (682-LALHKPPLHHQSK-694). Figures were prepared with xiNET (Combe et al., 2015), UCSF Chimera (Pettersen et al., 2004) and UCSF Chimera X (Goddard et al., 2018).
 
-## CPSF160-WDR33 complex crystallization and structure determination
+### CPSF160-WDR33 complex crystallization and structure determination
 
 Crystals of CPSF160FL-WDR33Q35-K410 were obtained using the hanging drop vapor diffusion method by mixing 0.5 μl of protein at 4.4 mg/ml and 0.5 μl of reservoir solution containing 11% (w/v) PEG 3400, 37.5 mM ammonium formate and 112.5 mM magnesium formate (native data set) or 10% w/v PEG 3400 and 140 mM magnesium formate (Sulfur SAD data set). For derivatization with tantalum bromide (Ta6Br12), crystals were grown in 8% w/v PEG3400 and 70 mM magnesium formate and soaked in the reservoir solution containing 1 mM Ta6Br12 for one hour. For data collection, crystals were cryoprotected by transfer to a solution containing 20% (v/v) glycerol and 80% (v/v) of reservoir solution and flash cooled in liquid nitrogen. X-ray diffraction data were collected at beam line X06DA (PXIII) of the Swiss Light Source (Paul Scherrer Institute, Villigen, Switzerland) and processed using XDS (Kabsch, 2010). Data collection statistics are shown in Table 1. Native and Ta6Br12-SAD data comprised four data sets and native sulfur-SAD comprised 17 data sets collected on two different crystals. All data sets were collected by exposing different parts of the same crystal, rotating the crystal through 360° in each data set and changing the kappa angle between datasets in 5° increments to ensure data completeness and redundancy. The structure was solved by a combination of molecular replacement (MR) and single-wavelength anomalous diffraction (SAD) using the Phaser module in Phenix (Adams et al., 2010). A low-score MR solution (TFZ = 4) was obtained for the native data set using a polyalanine model based on the DDB1 structure (PDB entry 3EI3) as search model. The solution was subsequently used to perform MR-SAD on the sulfur- and Ta6Br12-SAD datasets. A homology model of CPSF160 was fitted in the map obtained by Ta6Br12 MR-SAD, manually rebuilt using Coot (Emsley and Cowtan, 2004) with the aid of the sulfur site positions identified by sulfur-MR-SAD and refined using phenix.refine (Afonine et al., 2012). The resulting atomic model was used to perform MR-SAD on the sulfur-SAD dataset, which yielded an improved map and additional sulfur sites. After several iterations of MR-SAD and manual building, whereby the manually optimized model was used as input for sulfur MR-SAD yielding an optimized map that allowed further building of the model, a homology model of WDR33 beta-propeller domain could be fitted in the map and manually refined. Finally, the CPSF160-WDR33 model was used to perform molecular replacement in the high resolution native data and manually built and improved using Coot and refined using phenix.refine.
 
-## Pull-down assays
+### Pull-down assays
 
 For pull-down assays from Sf9 cells expressing CPSF subunits, the cells were resuspended in 20 mM Tris-Cl pH 7.5, 200 mM NaCl, 10% glycerol and 0.05% Tween20, and lysed by sonication. The clarified lysate was incubated with 600 μl of NiNTA resin (Qiagen). After washing, the protein was eluted and incubated directly with 30 μl Streptactin sepharose beads (GE Healthcare). The beads washed three times with 1 ml of resuspension buffer and the protein eluted with SDS-PAGE loading buffer at room temperature. The eluted samples and the input lysate were loaded on SDS-PAGE with no prior boiling to avoid GFP denaturation, visualized on a Typhoon FLA9500 fluorescence scanner (GE Healthcare) and subsequently stained with Coomassie brilliant blue R250.
 
 For pull-down assays with purified proteins, 3 μg of GST-Fip1CD was immobilized on glutathione sepharose four fast flow beads (GE Healthcare) and incubated with 40 μg of MBP-CPSF30. The beads were washed three times with 500 μl of buffer containing 20 mM Tris-Cl pH 7.5, 150 mM NaCl and 0.05% Tween20, the sample eluted with SDS-PAGE loading buffer and analyzed by SDS-PAGE.
 
-## Fluorescence polarization RNA binding assays
+### Fluorescence polarization RNA binding assays
 
 Equilibrium binding experiments were carried out in a PheraStar FSX fluorescence plate reader (BMG Labtech, Ortenberg, Germany) at 25°C in 20 mM Tris pH 7.5, 150 mM NaCl, 1 mM DTT and 0.05% Tween 20 in 384-well non-binding surface, flat bottom black plates (Greiner) and 50 μl final volume. The CPSF complex at different concentrations was incubated with 0.1 nM 5’-Atto532-labelled L3 PAS RNA, either wild-type (CACACAAUAAAGGCAA) or mutant (CACACAAGAAAGGCAA). Fluorescence polarization was measured with an excitation filter with a central wavelength of 540 nm, and P and S emission filters with a central wavelength of 590 nm. The FP values were plotted as a function of concentration and fitted to a one-site binding model accounting for ligand depletion using Prism6 (GraphPad, Inc.). The polarization amplitude was normalized to 1. Error bars indicate standard error of means (SEM) for five consecutive measurements of a single representative sample. Each binding experiment was performed in triplicate and the mean KDvalues ± SEM are reported in Table 2.

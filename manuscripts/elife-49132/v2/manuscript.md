@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.49132.001 Tau pathology first appears in the transentorhinal and anterolateral entorhinal cortex (alEC) in the aging brain. The transition to Alzheimer’s disease (AD) is hypothesized to involve amyloid-β (Aβ) facilitated tau spread through neural connections. We contrasted functional connectivity (FC) of alEC and posteromedial EC (pmEC), subregions of EC that differ in functional specialization and cortical connectivity, with the hypothesis that alEC-connected cortex would show greater tau deposition than pmEC-connected cortex. We used resting state fMRI to measure FC, and PET to measure tau and Aβ in cognitively normal older adults. Tau preferentially deposited in alEC-connected cortex compared to pmEC-connected or non-connected cortex, and stronger connectivity was associated with increased tau deposition. FC-tau relationships were present regardless of Aβ, although strengthened with Aβ. These results provide an explanation for the anatomic specificity of neocortical tau deposition in the aging brain and reveal relationships between normal aging and the evolution of AD.
+Tau pathology first appears in the transentorhinal and anterolateral entorhinal cortex (alEC) in the aging brain. The transition to Alzheimer’s disease (AD) is hypothesized to involve amyloid-β (Aβ) facilitated tau spread through neural connections. We contrasted functional connectivity (FC) of alEC and posteromedial EC (pmEC), subregions of EC that differ in functional specialization and cortical connectivity, with the hypothesis that alEC-connected cortex would show greater tau deposition than pmEC-connected cortex. We used resting state fMRI to measure FC, and PET to measure tau and Aβ in cognitively normal older adults. Tau preferentially deposited in alEC-connected cortex compared to pmEC-connected or non-connected cortex, and stronger connectivity was associated with increased tau deposition. FC-tau relationships were present regardless of Aβ, although strengthened with Aβ. These results provide an explanation for the anatomic specificity of neocortical tau deposition in the aging brain and reveal relationships between normal aging and the evolution of AD.
 
 ## Introduction
 
@@ -34,13 +34,107 @@ The goal of this study was to examine whether tau spreads out of the EC through 
 
 ## Results
 
-## Participants
+### Participants
 
 Fifty-five YA (aged 20–35) and 123 cognitively normal OA (aged 60+) from the Berkeley Aging Cohort Study (BACS) were included in the study. All YA participants underwent structural and resting state functional 3T MRI. All OA participants received tau-PET with 18F-Flortaucipir (FTP), Aβ-PET with 11C-Pittsburgh Compound-B (PiB), and a standard cognitive assessment. A subset of OA (n = 87) also completed the same 3T MRI protocol as the YA participants, and their resting state fMRI data was used for supplemental FC analyses. Demographic information for each sample is presented in Table 1.
 
-## FC patterns of different entorhinal seeds are distinct
+**Table 1.**
+ Demographic information for the young adult (YA) and older adult (OA) samples.Table 1—source data 1.Source data for the demographic information presented in Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>YA FC (n = 55)</th>
+      <th>OA FC (n = 87)</th>
+      <th>OA PET (n = 123)</th>
+      <th colspan="2">OA FC vs. OA PET</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="3">M (SD) or n (%)</th>
+      <th>T or X2</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)*</td>
+      <td>24.9 (4.4)</td>
+      <td>77.5 (6.1)</td>
+      <td>76.5 (6.5)</td>
+      <td>1.17</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Sex (female)</td>
+      <td>26 (47.3%)</td>
+      <td>55 (63.2%)</td>
+      <td>73 (59.3%)</td>
+      <td>1.84</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Education (years)</td>
+      <td>16.2 (1.9)†</td>
+      <td>16.7 (1.9)</td>
+      <td>16.9 (1.9)</td>
+      <td>−0.69</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>MMSE</td>
+      <td>29.3 (1.1)‡</td>
+      <td>28.7 (1.3)</td>
+      <td>28.7 (1.2)</td>
+      <td>−0.28</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td>Global PiB†</td>
+      <td>N/A</td>
+      <td>1.16 (0.24)</td>
+      <td>1.15 (0.23)</td>
+      <td>0.57</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <td>Aβ+§</td>
+      <td>N/A</td>
+      <td>39 (45.3%)</td>
+      <td>49 (40.2%)</td>
+      <td>3.26</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>APOE ﻿ε4+¶</td>
+      <td>N/A</td>
+      <td>26 (30.6%)</td>
+      <td>31 (25.8%)</td>
+      <td>3.44</td>
+      <td>0.06</td>
+    </tr>
+  </tbody>
+</table>
+
+_YA, Young adult; OA, Older adult; FC, functional connectivity; MMSE, Mini Mental State Exam; Aβ+, Aβ-positive participants (Global PiB DVR > 1.065); APOE, alolipoprotein E; *Age at FC or age at tau; †6 YA missing education; ‡3 YA missing MMSE; §1 OA missing PiB (in both FC and PET samples); ¶2 OA missing APOE from FC sample, 3 from PET sample._
+
+### FC patterns of different entorhinal seeds are distinct
 
 We investigated the resting state FC of three different entorhinal seeds. To investigate the full extent of the EC, including the transentorhinal region, we used a structural entorhinal seed derived from the FreeSurfer segmentation of each participant’s native space MRI (Figure 1a). To investigate EC subregions, we used template space alEC and pmEC seeds defined in a previous study (Maass et al., 2015) (Figure 1b). We performed seed-to-voxel FC analyses using the CONN Toolbox (Whitfield-Gabrieli and Nieto-Castanon, 2012). First-level models were performed with semi-partial correlations, focusing on unilateral seeds and within-hemisphere FC to more accurately approximate EC neural pathways (see Materials and methods). Second-level results were obtained with one-sample t-tests controlling for age and sex, and thresholded at both the voxel (p<0.001) and cluster level (p<0.05, FDR correction).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/49132/elife-49132-fig1-v2.jpg)
+
+**Figure 1.:** (a) The full entorhinal seed (EC, green), including transentorhinal, lateral, and medial regions, was derived from FreeSurfer segmentation of each participant’s native space T1, and time series were extracted from native space fMRI data. (b) The anterolateral EC (alEC, red) and posteromedial EC (pmEC, blue) seeds were applied in template space, and time series were extracted before smoothing to preserve the spatial resolution of the seeds. (c–e) Seed-to-voxel FC analyses were performed for each seed with semi-partial correlations. Group level FC results were derived from one-sample t-tests controlling for age and sex, and thresholded at the voxel (p<0.001 uncorrected) and cluster level (p<0.05, FDR corrected). Results reflect t-statistics. (c) FC of the EC seed included medial temporal, lateral temporal, and limbic regions. (d) FC of the alEC seed included anterior temporal regions, such as medial and lateral temporal lobe. (e) FC of the pmEC seed included posterior medial regions, such as the parahippocampal gyrus and posterior cingulate. (f) Binary maps of alEC (red) and pmEC (blue) FC show little spatial overlap (purple) between the FC patterns. See Figure 1—figure supplement 1 for parallel results using OA FC. See Figure 1—figure supplement 2 for a visualization of gray matter voxels removed due to signal drop out, and alEC and pmEC seeds overlaid on the group-mean functional image.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49132/elife-49132-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Seed-to-voxel FC analyses were performed for each seed. Group level FC results were derived from one-sample t-tests controlling for age and sex, and thresholded at the voxel (p<0.001 uncorrected) and cluster (p<0.05 FDR corrected) levels. Results reflect t-statistics. (a) FC of the EC seed included medial temporal, lateral temporal, and limbic regions. The dice similarity coefficient (DSC) between the YA and OA EC maps was 0.45, reflecting moderate overlap. (b) FC of the alEC seed included anterior temporal regions, as well as some posterior medial regions such as the posterior cingulate cortex. DSC between YA and OA alEC maps was 0.36, reflecting fair overlap. (e) FC of the pmEC seed included posterior medial regions, although reduced in scope compared to YA FC patterns. DSC between YA and OA pmEC maps was 0.53, reflecting moderate overlap. (f) Binary maps of the alEC (red) and pmEC (blue) FC show spatial overlap (purple) between the FC patterns, especially in posteromedial cortex.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49132/elife-49132-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) A group-level explicit mask (yellow) was created by removing GM voxels of low signal (<40% of the mean signal across the gray matter; shown in brown) from a gray matter mask. This explicit mask was applied to all functional connectivity analyses to ensure regions of low signal did not contribute to results. (b) alEC (red) and pmEC (blue) template space seeds are overlaid on the group-mean functional image to visually demonstrate the average signal in these regions. For functional connectivity analyses, voxels of low signal were removed from each ROI on a participant-level basis.
 
 Group level patterns of FC derived from the YA sample are depicted in Figure 1c–f. The EC (Figure 1c) was functionally connected to other medial temporal lobe structures such as the hippocampus, amygdala, and temporal pole, and lateral temporal lobe structures such as the middle and inferior temporal gyrus. FC was also found with regions such as the angular gyrus, posterior cingulate, and medial frontal cortex.
 
@@ -50,17 +144,25 @@ We repeated these analyses using the data from the 87 OA with fMRI (Figure 1—f
 
 Importantly, all subsequent analyses shown relating FC to tau utilized the YA FC data. However, we conducted parallel analyses using the OA FC to confirm and extend our findings, which are briefly described at the end of each section and provided in full as supplemental information.
 
-## Tau preferentially deposits within regions of entorhinal FC
+### Tau preferentially deposits within regions of entorhinal FC
 
 To test the hypothesis that tau deposition paralleled patterns of entorhinal FC, we extracted and binarized each YA FC map, removing each seed region from their respective FC mask to derive non-EC FC masks. For the EC seed, we compared tau deposition within regions of FC to cortical gray matter regions that did not demonstrate significant FC (‘outside cortical regions’). For the alEC and pmEC subregions, we compared tau deposition between each FC mask and to outside cortical regions not included within either the alEC or pmEC FC masks. We quantified tau deposition in OA as the proportion of suprathreshold FTP voxels (>1.4 SUVR) within a region, which has been demonstrated as a reliable marker of AD-related tau pathology (Maass et al., 2017) and is not influenced by region size. We explored effects of Aβ by classifying each OA participant as Aβ- or Aβ+ based upon their global PiB DVR.
 
 To compare tau deposition between EC FC regions and outside cortical regions, we performed a repeated measures ANCOVA. We contrasted tau deposition by including region (EC FC vs. outside cortical regions) as a within subjects factor, Aβ status as a between subjects factor, and age and sex as covariates. We found a significant main effect of region (F(1)=119.30, p<0.001); Figure 2a). Post-hoc paired t-tests indicated higher tau deposition within regions of EC FC compared to outside cortical regions (t(121)=10.01, p<0.001). We further found a significant region by Aβ status interaction (F(1)=10.38, p=0.002), such that Aβ+ participants had a greater mean difference in tau deposition in regions of EC FC compared to outside cortical regions than did Aβ- participants (t(73.57) = 3.03, p=0.003).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/49132/elife-49132-fig2-v2.jpg)
+
+**Figure 2.:** Tau deposition, defined as the proportion of suprathreshold FTP voxels (>1.4 SUVR), was measured in each FC mask and in cortical regions that did not demonstrate FC with the seeds (‘Outside’). Tau deposition in each region was contrasted with repeated measures ANCOVAs and post-hoc t-tests. (a) Tau preferentially deposited within regions of EC FC (green) compared to outside cortical regions (gray). Region by Aβ status interactions were driven by an increased mean difference between the EC and outside cortical regions in the Aβ+ compared to the Aβ- group. (b) Tau preferentially deposited within regions of alEC FC (red) compared to both pmEC FC (blue) and outside cortical regions (gray), and in pmEC FC compared to outside cortical regions. Region by Aβ status interactions were driven by an increased mean difference between alEC FC and outside cortical regions in the Aβ+ compared to the Aβ- group. See Figure 2—figure supplement 1 for parallel results using OA FC. ***p<0.001, **p<0.01, *p<0.05; ‘x’ indicates the drivers of significant Aβ status interactions (p<0.05); Error bars indicate the standard error of the mean.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49132/elife-49132-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Tau deposition, defined as the proportion of suprathreshold FTP voxels (>1.4 SUVR), was measured in each FC mask and in outside cortical regions that did not demonstrate FC. Tau deposition in each region was contrasted with repeated measures ANCOVAs and post-hoc t-tests. (a) Tau preferentially deposited within regions of significant EC FC (green) compared to outside cortical regions (gray). Region by Aβ status interactions were driven by an increased mean difference between the EC and outside cortical regions in the Aβ+ compared to the Aβ- group. (b) Tau preferentially deposited within regions of alEC FC (red) compared to both pmEC FC (blue) and outside cortical regions (gray), and in pmEC FC compared to outside cortical regions. Region by Aβ status interactions were reduced to a trend. ***p<0.001, **p<0.01, *p<0.05; ‘x’ indicates the drivers of significant Aβ status interactions (p<0.05). Error bars indicate the standard error of the mean.
+
 We next tested the hypothesis that alEC FC would be a better predictor of tau deposition than pmEC FC or outside cortical regions. We performed a repeated measures ANCOVA with region (alEC FC vs. pmEC FC vs. outside cortical regions) as a within subjects factor, Aβ status as a between subjects factor, and age and sex as covariates. We again found a significant effect of region (F(1.65) = 43.88, p<0.001). Post-hoc paired t-tests indicated higher tau deposition within regions of alEC FC compared to pmEC FC (t(121)=3.42, p=0.001), as well as for both alEC FC (t(121)=6.97, p<0.001) and pmEC FC (t(121)=6.66, p<0.001) compared to outside cortical regions. We also found a region by Aβ status interaction (F(1.65) = 6.09, p=0.005), which was driven by Aβ+ participants having a greater mean difference in tau deposition in regions of alEC FC compared to outside cortical regions than did Aβ- participants (t(59.53) = 2.64, p=0.01), while this difference in alEC FC compared to pmEC FC regions was trending (t(56.64) = 1.90, p=0.06).
 
 We repeated these analyses using the OA FC masks and results were consistent with the YA results, except the region by Aβ status interaction in the subregion analysis was reduced to a trend (p=0.07) (Figure 2—figure supplement 1; Supplementary file 1).
 
-## FC-specific tau deposition increases with Aβ and EC tau
+### FC-specific tau deposition increases with Aβ and EC tau
 
 Based on these results, both entorhinal FC and the presence of Aβ are related to the cortical distribution of tau. We next sought to further probe how the amount of cortical Aβ and EC tau influenced tau deposition at the FC targets of EC. We constructed ‘FC specific’ measures of tau deposition defined as the mean difference per participant between suprathreshold FTP voxels in 1) each of the three FC masks compared to outside cortical regions and 2) alEC FC compared to pmEC FC regions.
 
@@ -72,9 +174,17 @@ Finally, we sought to determine whether higher levels of EC tau were associated 
 
 We repeated the Aβ and EC tau analyses using the OA FC masks, and the overall pattern of results was similar (Supplementary file 2).
 
-## Stronger FC is associated with higher levels of tau deposition
+### Stronger FC is associated with higher levels of tau deposition
 
 We next investigated whether stronger average FC between an entorhinal seed and a region was associated with higher levels of tau deposition in that region. We subdivided each seed’s FC mask into regions of low, medium, and high FC based on the YA group-average FC strength (beta value) in each voxel using one-dimensional k-means clustering (see Materials and methods). Results of this clustering are depicted in Figure 3a–c. We then calculated the proportion of suprathreshold FTP voxels within each FC strength region for each seed’s FC mask, as this tau measure was not influenced by the different FC strength region sizes.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49132/elife-49132-fig3-v2.jpg)
+
+**Figure 3.:** (a-c) To examine associations between tau and FC strength, group level YA FC masks for each EC seed were clustered into regions of low, medium, and high FC based upon the mean YA FC strength (beta value) of each voxel. (d-f) The proportion of suprathreshold FTP voxels (>1.4 SUVR) was calculated for each FC strength region (‘tau deposition’). Repeated measures ANCOVAs and post-hoc t-tests were performed to contrast tau deposition between each FC strength region. (d) EC FC strength was significantly related to tau deposition in a stepwise pattern, with tau increasing in low < medium < high FC regions. Aβ status interactions were observed between all comparisons. (e) Increasing alEC FC strength was also related to higher tau deposition in a stepwise fashion, and Aβ interactions were driven by the difference between high-medium and high-low FC regions. (f) Increasing pmEC FC strength was associated with decreases in tau deposition, and Aβ interactions were driven by the difference between high-medium and high-low FC regions. See Figure 3—figure supplement 1 for parallel results using OA FC. ***p<0.001, **p<0.01, *p<0.05; ‘x’ indicates the drivers of significant Aβ interactions (p<0.05). Error bars indicate the standard error of the mean.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49132/elife-49132-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a-c) Group level FC masks from the OA participants for each seed were divided into regions of low, medium, and high FC based upon the mean FC strength (beta value) of each voxel with one-dimensional k-means clustering. (d-f) The proportion of suprathreshold FTP voxels (>1.4 SUVR) was calculated in each FC strength region (‘tau deposition’). Repeated measures ANCOVAs and post-hoc t-tests were performed to contrast tau deposition in each FC strength region. (d) EC FC strength was significantly related to tau deposition in a stepwise pattern, with tau increasing in low <medium < high FC regions. Aβ status interactions were observed between all comparisons. (e) Regions of high alEC FC strength had more tau deposition than regions of medium or low FC. Aβ interactions were driven by the difference between high-medium and high-low FC regions. (f) Regions of low pmEC FC strength had more tau deposition than regions of medium or high FC. Aβ interactions were reduced to a trend. ***p<0.001, **p<0.01, *p<0.05; ‘x’ indicates the drivers of significant Aβ interactions (p<0.05). Error bars indicate the standard error of the mean.
 
 To test whether regions of stronger FC had a higher level of tau deposition, we performed a repeated measures ANCOVA within each seed’s FC mask separately. We contrasted tau deposition between FC strength regions (low vs. medium vs. high FC) as a within subjects factor, included Aβ status as a between subjects factor, and age and sex as covariates. We found significant main effects of FC strength for the EC (F(1.14) = 73.29, p<0.001); Figure 3d), alEC (F(1.05) = 29.99, p<0.001; Figure 3e), and pmEC (F(1.22) = 33.55, p<0.001; Figure 3f) seeds. For the EC and alEC, stronger FC was associated with an increase in tau deposition in a stepwise fashion, with low < medium < high FC (post-hoc paired t-tests, p’s < 0.001). However, we found the inverse association for the pmEC, where stronger FC was associated with a decrease in tau deposition (p’s < 0.05).
 
@@ -82,9 +192,17 @@ We additionally found a FC strength by Aβ status interaction for the EC (F(1.14
 
 These analyses were repeated using the OA FC masks and provided largely consistent results, except that the interaction between pmEC FC strength and Aβ status was reduced to a trend (p=0.09; Figure 3—figure supplement 1; Supplementary file 3).
 
-## Associations between EC tau and cortical tau increase with FC strength
+### Associations between EC tau and cortical tau increase with FC strength
 
 We found that stronger FC with EC is related to higher cortical tau deposition, and that the amount of EC tau is related to proportionally greater tau deposition within its FC targets, but it was not clear whether the correlation between EC tau and cortical tau was directly related to the FC strength. To test this, we began by performing a voxelwise regression across all OA participants using EC FTP SUVR as the independent variable and cortical FTP SUVR within each voxel as the dependent measure, controlling for age and sex (see Materials and methods). This analysis produced a group-level EC-cortical tau association map that shows voxels in the brain where tau is significantly positively correlated with the amount of tau in the EC across subjects (Figure 4a). The strongest associations were in the medial temporal lobe, middle and inferior temporal gyrus, and posterior parietal lobe, while other significant regions included the retrosplenial cortex, precuneus, and frontal cortex.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49132/elife-49132-fig4-v2.jpg)
+
+**Figure 4.:** (a) Voxelwise regressions were performed across OA participants between the mean EC FTP SUVR predicting voxelwise FTP. One-sample t-tests show a group level map depicting voxels that had strong positive associations between their FTP and the amount of FTP in the EC. (b–d) YA average FC strength per voxel (beta) was correlated with each voxel’s EC-cortical tau association strength (beta). FC of the EC (b) and alEC (c) seeds demonstrated positive associations, where stronger FC to a voxel was correlated with a stronger association between EC FTP and that voxel’s FTP. The pmEC (d) showed a weak association. See Figure 4—figure supplement 1 for parallel results using OA FC. ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49132/elife-49132-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a-c) Group average FC strength per voxel derived from the OA participants was correlated with each voxel’s EC-cortical tau association strength, where stronger FC to a voxel was correlated with a stronger association between EC FTP and that voxel’s FTP. The EC (a) and alEC (b) demonstrated positive associations that were of similar strength to the YA FC data, while the pmEC (d) had a stronger positive association than found in the YA data. ***p<0.001.
 
 To determine whether stronger FC between the EC and a voxel was correlated with a stronger association between EC tau and that same voxel’s tau, we performed a voxelwise correlation between the group-average YA FC strength (beta value) of each voxel, and the group-average EC-cortical tau association strength (beta value) at each voxel. We found a significant positive correlation between EC FC strength and EC-cortical tau association strength (r = 0.44, rs = 0.29, p’s < 0.001; Figure 4b), indicating that stronger FC from the EC to a voxel is related to more EC-associated tau in that voxel. We similarly found a positive correlation between alEC FC strength and EC-cortical tau association strength (r = 0.29, rs = 0.15, p’s < 0.001; Figure 4c). While pmEC FC strength was also correlated with EC-cortical tau association strength, the relationship was very weak (r = 0.08, rs = 0.04, p’s < 0.001; Figure 4d). These results replicated when using the OA group FC strengths (Figure 4—figure supplement 1).
 
@@ -120,7 +238,7 @@ Our findings provide an explanation for the topographically specific patterns o
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Fifty-five young adults (YA) ages 20–35 were included for analysis. YA participants received structural and functional 3T MRI. YA were recruited for the study through flyers posted on the UC Berkeley campus and by word of mouth. Inclusion criteria included no major health problems, no current or recent history of psychiatric illness, no history of neurological disorders or traumatic brain injury, no substance abuse problems, no depression or antipsychotic medications, and fluency in English.
 
@@ -128,71 +246,71 @@ Fifty-five young adults (YA) ages 20–35 were included for analysis. YA partici
 
 This study was approved by the Institutional Review Boards of the University of California, Berkeley, and the Lawrence Berkeley National Laboratory. All participants provided written informed consent.
 
-## 3T functional and structural MRI
+### 3T functional and structural MRI
 
-## 3T MRI acquisition
+#### 3T MRI acquisition
 
 All YA participants and a subset of OA participants received structural and functional MRI at the Henry H. Wheeler Jr. Brain Imaging Center. Data was acquired on a 3T TIM/Trio scanner (Siemens Medical System, software version B17A) using a 32-channel head coil. A whole brain high-resolution T1-weighted volumetric magnetization prepared rapid gradient echo image (MPRAGE) was first acquired (voxel size = 1 mm isotropic, TR = 2300 ms, TE = 2.98 ms, matrix = 256×240 x 160, FOV = 256×240 x 160 mm3, sagittal plane, 160 slices, 5 min acquisition time).
 
 A resting state functional MRI was then collected using T2*-weighted echo planar imaging (EPI, voxel size = 2.6 mm isotropic, TR = 1067 ms, TE = 31.2 ms, FA = 45, matrix = 80×80, FOV = 210 mm, sagittal plane, 300 volumes, anterior to posterior phase encoding, ascending acquisition, 5 min acquisition time). A multiband acceleration factor of 4 was used to obtain whole brain coverage at high spatial resolution by acquiring four slices at the same time (Feinberg and Setsompop, 2013; Todd et al., 2016). During acquisition, participants were instructed to remain awake with their eyes open and focused on the screen, which displayed a white asterisk on a black background.
 
-## Structural MRI processing
+#### Structural MRI processing
 
 Structural 3T T1 MRIs were processed using Statistical Parametric Mapping 12 (SPM12; www.fil.ion.ucl.ac.uk/sp). The T1 image was first segmented into gray, white, and CSF compartments in native space. DARTEL-imported tissue segments were used to create a study specific template to facilitate warping to MNI space, performed separately for the YA and OA participants. Native space T1 images and tissue segments were then warped to MNI space at 2 mm isotropic resolution using the group template created in the previous step. Additionally, a gray matter mask was created by averaging the MNI space gray matter images for the YA and OA groups, separately, and thresholded at >25% probability of gray matter voxels. Finally, native space T1 images were segmented with FreeSurfer v.5.3.0 (http://surfer.nmr.mgh.harvard.edu/) using the Desikan-Killany atlas parcellation (Desikan et al., 2006).
 
-## fMRI preprocessing
+#### fMRI preprocessing
 
 Resting state fMRI data were preprocessed with SPM12 using a standard pipeline. First, slice time correction was applied to correct for differences in the time of slice acquisition. EPIs were then realigned to the first EPI acquired, and realignment parameters (translation and rotation) were output. Next, each EPI was coregistered to the native space T1 image. This native space, coregistered fMRI data was used for the EC seed time series extraction (see details below). fMRI data was then warped to MNI space (2 mm isotropic) using the DARTEL templates created during structural preprocessing. Unsmoothed, MNI space fMRI data was used for the alEC and pmEC seed time series extraction (see details below). Spatial smoothing was then performed using a Gaussian kernel of FWHM of 4 × 4×4 mm. Smoothed, MNI space fMRI data was used to conduct the seed-to-voxel FC analyses (see details below).
 
 Next, all resting state fMRI data (including native space, unsmoothed MNI, and smoothed MNI) were optimized for FC analyses using the CONN functional connectivity toolbox (version 17 f) (Whitfield-Gabrieli and Nieto-Castanon, 2012) implemented in Matlab version 2015a (The MathWorks, Inc, Natick, MA) for YA and OA samples separately. ART motion detection was first performed to identify volumes of high motion, using a conservative movement threshold of >0.5 mm/TR and a global intensity z-score of 3. Outlier volumes were flagged and included as spike regressors during the denoising process (Lemieux et al., 2007; Power et al., 2015). We did not exclude any participants from analyses due to excess motion, as all participants had <20% of outlier volumes, with an average of 3.4 ± 2.5% outlier volumes for the YA sample, and an average of 4.9 ± 3.6% outlier volumes for the OA sample. Denoising was then performed with the following parameters included: realignment parameters (translations and rotations) and their first-order derivatives, spike motion regressors, and anatomical CompCor (first five components of time series signal from white matter and CSF) (Behzadi et al., 2007). A band pass filter of 0.008–0.1 Hz and linear detrending were then applied to the residual time series.
 
-## Seeds for functional connectivity analysis
+### Seeds for functional connectivity analysis
 
-## Entorhinal cortex (EC) seed
+#### Entorhinal cortex (EC) seed
 
 The EC seed was obtained from the FreeSurfer segmentation of each participant’s native space 3T T1 image. This segmentation includes the medial bank of the collateral sulcus, and thus likely contains the transentorhinal region (Desikan et al., 2006; Taylor and Probst, 2008). Each individual’s EC ROIs were masked by native space gray matter masks to ensure the voxels included had a high likelihood of being gray matter. This resulted in no more than 8% of voxels removed in the YA, and 16% of voxels removed in the OA sample. All seeds were manually inspected for quality. Seeds were then resliced using SPM to match the spatial resolution of the native space resting state fMRI data (2.6 mm isotropic). To address signal drop out within the EC seeds, we identified voxels with a mean intensity of <2 SD from the mean intensity across voxels within the seed, and subsequently removed these voxels (Libby et al., 2012; Maass et al., 2015). This step resulted in no more than 5% of voxels removed across both the YA and OA samples on average (see Supplementary file 4 for quantification). Time series for the left and right EC seeds were then extracted from the denoised, native space resting state fMRI data.
 
-## Anterolateral (alEC) and posteromedial (pmEC) EC seeds
+#### Anterolateral (alEC) and posteromedial (pmEC) EC seeds
 
 The alEC and pmEC seeds were functionally defined in a previous study using high-resolution 7T MRI (see Maass et al., 2015) for full details). Briefly, in that study the anatomical borders of the whole EC were first manually defined on a high-resolution T1-group template. Multivariate classification was then used to identify clusters of voxels within this mask that showed preferential FC with the perirhinal cortex (alEC ROI) or parahippocampal gyrus (pmEC ROI) in a group of younger adults. These ROIs were warped to MNI template (2 mm) and made publicly available for use in subsequent studies. In the current study, we used these unilateral MNI space ROIs as seeds for FC. Signal drop out within these seeds was addressed with the same method as described for the EC above, but using the MNI space fMRI data to calculate voxel intensity, again resulting in no more than 5% of voxels excluded from the seeds on average (see Supplementary file 4 for quantification). For a visual representation of the alEC and pmEC seeds on the group-mean functional image, see Figure 1—figure supplement 2. Because the alEC and pmEC seeds are spatially adjacent to each other, we extracted time series from the unsmoothed, denoised MNI space resting state data to prevent signal from each seed to be smoothed into the other, which may have obscured results.
 
-## Functional connectivity analysis
+### Functional connectivity analysis
 
-## First level analysis
+#### First level analysis
 
 Seed-to-voxel FC analysis was performed with the CONN toolbox using the smoothed MNI space fMRI data. Semi-partial correlations were used for all first-level analyses to determine the unique variance of each seed, controlling for the variance of all other seed regions entered into the same model. We first built a model to determine the FC of left and right EC seeds, controlling for the time series of the contralateral seed, by entering the EC-left and EC-right seeds into the same model. We then built a model to determine the functional connectivity of each EC subregion seed, controlling for the time series of all other EC subregion seeds, by entering the alEC-left, alEC-right, pmEC-left, pmEC-right seeds into the same model. The use of semi-partial correlations in this subregion analysis additionally helped control for the possibility of signal bleed in between alEC and pmEC seeds due to their spatially adjacent locations. All analyses were performed within an explicit mask derived to remove regions of signal dropout across the whole brain. To create this mask, we first calculated a mean functional MNI space image across all participants, and then masked it by a group level gray matter mask. We then removed voxels that had less than 40% of the mean signal intensity of the image. Voxels removed due to signal dropout occurred within inferior lateral temporal, medial temporal, and medial prefrontal regions (see Figure 1—figure supplement 2 for a visual representation).
 
-## Second-level analysis
+#### Second-level analysis
 
 To obtain group level patterns of FC, we performed a one sample t-test, controlling for age and sex as covariates of no interest, for the YA and OA samples separately. This resulted in a group level t-map for each unilateral seed, reflecting a positive contrast, with a voxel-level threshold of p<0.001 uncorrected and a cluster level threshold of p<0.05 with FDR correction. We then extracted the within-hemisphere thresholded t-map for each seed, and combined right and left hemispheres for each respective seed to produce the final group level FC t-maps. These final group level FC t-maps were binarized for tau-related analyses. Second-level analyses also resulted in group level beta maps for each seed, where the beta value in each voxel represents the group average Fisher’s z’ transformed correlation coefficient between the time series of the seed and that voxel. We similarly extracted within-hemisphere beta maps for each seed, and combined them to produce final group level beta maps for measures of ‘FC strength’.
 
-## Functional connectivity post-processing
+### Functional connectivity post-processing
 
 We removed each seed region from their respective FC mask to ensure that FC results did not reflect autocorrelations, and due to our interest in assessing FC between the EC and non-EC cortical regions. To match the resolution of the fMRI data, we smoothed each seed with a Gaussian kernel of FWHM of 4.77 mm, calculated by accounting for both the original resolution of the data (2.6 mm) and the extra spatial smoothing applied (4 mm). The smoothed seeds were then thresholded to include voxels that contained >15% influence from the seed, which ensured expanded coverage around the original seed region. These expanded seed regions were then removed from their respective FC mask.
 
 To examine associations between FC strength and tau deposition, we classified each seed’s FC mask into regions of low, medium, and high FC strength. To do this, we extracted the group-average beta value from each voxel within each final group level FC mask. The beta value at each voxel represents group-average Fisher’s z’ transformed correlation coefficient between the time series of the seed and that voxel. Because the beta values were non-normally distributed, we performed segmentation of the beta values into FC strength regions in a data driven manner rather than picking arbitrary cut-offs. We applied one-dimensional k-means clustering to the beta values within each FC mask, using the package ‘Ckmeans.1d.dp’ (Wang and Song, 2011), implemented in R version 3.5.1 (http:// www.r-project.org/). Like traditional k-means clustering, one-dimensional k-means clustering classifies data into groups with minimum variability within each group, but across one dimension (Wang and Song, 2011). This analysis resulted in each beta value being classified into one of three groups, each representing either low, medium, or high beta values, and therefore FC strength. We then created a separate FC strength mask for the voxels contained within each FC strength group, and calculated the proportion of suprathreshold FTP voxels within each FC strength mask.
 
-## PET and 1.5T structural MRI
+### PET and 1.5T structural MRI
 
-## 1.5T structural MRI acquisition
+#### 1.5T structural MRI acquisition
 
 Structural MRIs used for standard PET preprocessing were acquired on a 1.5T Siemens Magnetom Avanto scanner (Siemens, Inc) at Lawrence Berkeley National Laboratory (LBNL). A whole brain high-resolution T1-weighted volumetric magnetization prepared rapid gradient echo image (MPRAGE) was collected (1 mm isotropic voxels, TR = 2110 ms, TE = 3.58 ms, FA = 15).
 
-## PET acquisition
+#### PET acquisition
 
 PET was acquired for all OA participants at LBNL. Tau deposition was assessed using 18F-Flortaucipir (FTP; previously known as 18F-AV-1451), synthesized at the Biomedical Isotope Facility at LBNL as previously described (Schöll et al., 2016). Data was collected on a BIOGRAPH PET/CT Truepoint six scanner (Siemens, Inc) with one of two acquisition schemes: either 75–115 min post-injection or 0–100 and 120–150 min post-injection. Data was subsequently binned into 4 × 5 min frames from 80 to 100 min post-injection CT scans were performed before the start of each emission acquisition. Aβ was assessed using 11C-Pittsburgh Compound B (PiB), synthesized at the Biomedical Isotope Facility at LBNL (Mathis et al., 2003). Data was collected on either the BIOGRAPH scanner or an ECAT EXACT HR scanner (Siemens, Inc). Data was acquired across 35 dynamic frames for 90 min post-injection (4 × 15, 8 × 30, 9 × 60, 2 × 180, 10 × 300, and 2 × 600 s). Either a CT scan or a 10 min transmission scan was performed. All PET images were reconstructed using an ordered subset expectation maximization algorithm, with attenuation correction, scatter correction, and smoothing using a Gaussian kernel of 4 mm.
 
-## 1.5T structural MRI processing
+#### 1.5T structural MRI processing
 
 The 1.5T structural images underwent the same processing pipeline as the 3T MRI images used for fMRI, including tissue segmentation, creation of a group specific template with DARTEL, warping to 2 mm MNI space, and creation of an average gray matter mask. Additionally, native space structural MRIs were segmented with FreeSurfer. These ROIs were used to extract FTP in the EC in native space, for partial volume correction of the FTP data, and for calculation of the global PiB index.
 
-## PET processing
+#### PET processing
 
 FTP images were processed using SPM12. Images were realigned, averaged, and coregistered to the participant’s 1.5T structural MRI. Standardized uptake value ratio (SUVR) images were calculated by averaging mean tracer uptake over the 80–100 min data and normalized by an inferior cerebellar gray reference region (Baker et al., 2017). Native space SUVR images were warped to MNI space (2 mm) using a DARTEL template produced from the 1.5T structural data. No additional spatial smoothing was applied. Additionally, the mean SUVR of each ROI (structural MRI FreeSurfer segmentation) was extracted from the native space images. This ROI data was partial volume corrected using a modified Geometric Transfer Matrix approach (Rousset et al., 1998) as previously described (Baker et al., 2017). The mean, partial volume corrected EC FTP SUVR was used in subsequent analyses.
 
 PiB images were processed with SPM12. Images were realigned, averaged across frames from the first 20 min of acquisition, and coregistered to the participant’s 1.5T structural MRI. Distribution volume ratio (DVR) images were calculated with Logan graphical analysis over 35–90 min data and normalized by a whole cerebellar gray reference region (Logan, 2000; Price et al., 2005). Global PiB was calculated across cortical FreeSurfer ROIs as previously described (Mormino et al., 2012), and a threshold of 1.065 was used to classify participants into Aβ- and Aβ+ groups. To calculate FC mask specific levels of PiB, native space PiB images were warped to MNI space (2 mm) using a DARTEL template, and the mean PiB DVR within the FC mask was extracted. One participant was missing PiB DVR data, and thus this participant was excluded from any analyses involving measures of PiB or Aβ status.
 
-## FTP Post-processing
+#### FTP Post-processing
 
 To address concerns of off-target binding of the FTP tracer impacting voxelwise analyses (Marquié et al., 2015), we removed regions susceptible to off-target binding by creating a ‘cleaning mask’ that included: (1) removing subcortical regions known to exhibit off-target binding (i.e. caudate, putamen, pallidum, accumbens, thalamus, and cerebellum), (2) removing the choroid plexus, and parts of the hippocampus in close proximity to the choroid plexus, by applying a mask where the ventricles were masked and smoothed, and (3) removing regions of off-target FTP ‘hot spots’, which were identified by creating a mean FTP image of all Aβ- participants and removing any voxels with a group-mean SUVR of >1.4. This cleaning mask was then smoothed with a Gaussian kernel of FWHM of 4 mm, and thresholded to include voxels that contained >15% influence from the cleaning mask. Voxels within this cleaning mask were then removed from both the FC masks and the voxelwise FTP data.
 
@@ -200,7 +318,7 @@ To match the voxelwise FTP data to the FC masks, we also applied the explicit ma
 
 To quantify tau deposition, we used the proportion of suprathreshold FTP voxels (>1.4 SUVR). The proportion of FTP above this value has been previously demonstrated to be the most reliable marker of AD-related tau pathology (Maass et al., 2017). An additional benefit of using the proportion of suprathreshold FTP voxels rather than a measure such as mean SUVR is that measurements are not confounded by different region sizes. We quantified the proportion of suprathreshold FTP voxels on an individual participant basis by calculating the number of voxels within a region with FTP SUVR >1.4, and dividing by the total number of voxels in the region. This calculation was performed for each FC mask, cortical regions outside of the EC FC mask, cortical regions outside of a combined alEC/pmEC FC mask, and within FC strength clusters for each seed.
 
-## Statistical analysis
+### Statistical analysis
 
 We compared demographic information between the full sample of OA with PET and the subsample of OA who additionally received fMRI. Categorical variables were compared with Chi-squared tests, and continuous variables were compared with independent samples t-tests. Analyses were performed using SPSS version 25.
 

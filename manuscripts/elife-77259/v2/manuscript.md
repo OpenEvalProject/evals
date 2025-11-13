@@ -15,16 +15,16 @@
 
 ### Affiliations
 
-1. https://ror.org/012zs8222 Department of Biological Sciences, University at Albany, State University of New York Albany United States
-2. https://ror.org/012zs8222 The RNA Institute, University at Albany Albany United States
-3. https://ror.org/05bnh6r87 Department of Molecular Biology and Genetics, Cornell University Ithaca United States
-4. https://ror.org/012zs8222 Department of Psychology, University at Albany, State University of New York Albany United States
+1. Department of Biological Sciences, University at Albany, State University of New York Albany United States ([ROR:012zs8222](https://ror.org/012zs8222))
+2. The RNA Institute, University at Albany Albany United States ([ROR:012zs8222](https://ror.org/012zs8222))
+3. Department of Molecular Biology and Genetics, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
+4. Department of Psychology, University at Albany, State University of New York Albany United States ([ROR:012zs8222](https://ror.org/012zs8222))
 
 † Corresponding author
 
 ## Abstract
 
-Neuronal identity dictates the position in an epithelium, and the ability to detect, process, and transmit specific signals to specified targets. Transcription factors (TFs) determine cellular identity via direct modulation of genetic transcription and recruiting chromatin modifiers. However, our understanding of the mechanisms that define neuronal identity and their magnitude remain a critical barrier to elucidate the etiology of congenital and neurodegenerative disorders. The rodent vomeronasal organ provides a unique system to examine in detail the molecular mechanisms underlying the differentiation and maturation of chemosensory neurons. Here, we demonstrated that the identity of postmitotic/maturing vomeronasal sensory neurons (VSNs), and vomeronasal-dependent behaviors can be reprogrammed through the rescue of Tfap2e/ AP-2ε expression in the Tfap2e mice, and partially reprogrammed by inducing ectopic Null Tfap2e expression in mature apical VSNs. We suggest that the TF Tfap2e can reprogram VSNs bypassing cellular plasticity restrictions, and that it directly controls the expression of batteries of vomeronasal genes.
+Neuronal identity dictates the position in an epithelium, and the ability to detect, process, and transmit specific signals to specified targets. Transcription factors (TFs) determine cellular identity via direct modulation of genetic transcription and recruiting chromatin modifiers. However, our understanding of the mechanisms that define neuronal identity and their magnitude remain a critical barrier to elucidate the etiology of congenital and neurodegenerative disorders. The rodent vomeronasal organ provides a unique system to examine in detail the molecular mechanisms underlying the differentiation and maturation of chemosensory neurons. Here, we demonstrated that the identity of postmitotic/maturing vomeronasal sensory neurons (VSNs), and vomeronasal-dependent behaviors can be reprogrammed through the rescue of Tfap2e/AP-2ε expression in the Tfap2eNull mice, and partially reprogrammed by inducing ectopic Tfap2e expression in mature apical VSNs. We suggest that the TF Tfap2e can reprogram VSNs bypassing cellular plasticity restrictions, and that it directly controls the expression of batteries of vomeronasal genes.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ Here, we aimed to understand (1) if AP-2ε functions as a terminal selector fact
 
 ## Results
 
-## Transcriptome differences between apical and basal VSNs
+### Transcriptome differences between apical and basal VSNs
 
 Using scRNA-seq on VNOs from OmpCre heterozygous control mice at P10, we identified key features of VSNs based on the expression plots. We then clustered single cells into representative Uniform Manifold Approximation and Projections (UMAPs) (Figure 1). Ascl1 (Figure 1A), Neurogenin1 (Neurog1) (Figure 1B), and Neurod1 (Figure 1C) expression identified proliferative VSN progenitors and precursors (Katreddi and Forni, 2021). We determined that the dichotomy of apical-basal differentiation begins when the cells transition from Neurog1 to Neurod1 expression, and during the Neurod1 phase (Figure 1B and C; Katreddi et al., 2022). The later stages of apical and basal VSN maturation were marked by the expression of Gap43 (Figure 1D) in immature VSNs and Omp (Figure 1E) in more mature VSNs (Katreddi and Forni, 2021).
 
@@ -52,31 +52,47 @@ Using scRNA-seq on VNOs from OmpCre heterozygous control mice at P10, we identif
 
 Consistent with prior reports, the mRNA for the TF Bcl11b (Figure 1F) was found to be expressed in Neurog1+/Neurod1+ (Figure 1B and C) precursors and in differentiating apical and basal VSNs. While Bcl11b was expressed as a continuum along the basal differentiation trajectory, in the apical neurons, Bcl11b was not expressed until later stages of maturation (Figure 1F; Enomoto et al., 2011; Katreddi et al., 2022). Interestingly, the apical VSN-specific TF Meis2 was expressed in progenitor cells along with apical VSNs’ differentiating neurons (Figure 1G). In addition, apical VSNs also express Gnai2/Gαi2, Nrp2, and V1Rs at more mature stages (Figure 1I–K). On the other side, mRNA for Tfap2e (Figure 1K) was found to be expressed, in line with our prior works (Katreddi et al., 2022; Lin et al., 2018), in maturing and mature basal VSNs. The basal VSNs’ differentiation trajectory was further confirmed by the expression of known V2R/basal VSNs’ markers such as Robo2, Gnao1/Gαo, and Vmn2r receptors (Figure 1K–N). In addition, our transcriptome analysis revealed significant enrichments (q<0.05, Figure 1Q, Supplementary file 1) of several previously unreported genes in either apical or basal VSNs. Fbxo17, Mt3 (Figure 1O and P; Figure 4—figure supplement 3), and Keratin18 (Krt18) were among the genes that we found enriched in maturing basal VSNs.
 
-## Inducible R26AP-2ε rescues basal VSNs in AP-2ε KOs
+### Inducible R26AP-2ε rescues basal VSNs in AP-2ε KOs
 
 We hypothesized that Tfap2e can control gene expression during basal VSN maturation. So, we generated a new Cre-inducible mouse line (B6.Cg-Gt(ROSA)26Sortm(CAG-mTfap2e)For). We inserted a lox-P-flanked stop cassette to prevent the transcription of a CAG promoter-driven murine Tfap2e gene, which was knocked into the first intron of the Gt(ROSA)26Sor locus (Figure 2). We refer to this as R26AP-2ε. AP-2ε expression is normally restricted to basal regions of the VNO with higher expression levels of AP-2ε in the neurogenic marginal zones (Enomoto et al., 2011; Lin et al., 2018; Naik et al., 2020; Figures 1 and 2B,B’). To test our Cre-inducible AP-2ε line, we performed anti-AP-2ε immunostaining on wild-type (WT) controls, Tfap2eCre/Cre (Tfap2eNull) (Feng et al., 2009; Lin et al., 2018), and Tfap2eCre/Cre/R26AP-2ε (Tfap2eRescue) mice (Figure 2B–D). As expected (Lin et al., 2018), WT mice showed AP-2ε immunoreactivity in the basal regions of the VNE with strong immunoreactivity in the neurogenic regions (Figure 2B and B’). However, in Tfap2eNull mice, where Cre was knocked into the DNA binding domain of Tfap2e (Feng et al., 2009; Feng and Williams, 2003), we observed faint AP-2ε cytoplasmic immunoreactivity limited to the most marginal zones of the VNO and no immunoreactivity in the rest of the neuroepithelium (Figure 2C and C’). Tfap2eRescue mice showed restored AP-2ε immunoreactivity in the basal region of the VNE (Figure 2D). However, we observed that the AP-2ε expression pattern and immunoreactivity were not identical to controls in the neurogenic regions. In Tfap2eRescue mice, we observed no AP-2ε immunoreactivity at the tips of the neurogenic niche in the VNE (Figure 2D’), suggesting a delayed AP-2ε expression after Tfap2eCre-mediated recombination compared to controls (Figure 2B’ and D’).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig2-v2.jpg)
 
-**Figure 2.:** Tfap2e expression in Tfap2e mice.Null(A) Knock-in strategy through homologous recombination to generate the R26AP-2ε mouse line. The CAG-loxP-stop-loxP-mouse-Tfap2e cassette as integrated into the first intron of Rosa26. (B–D’) Immunohistochemistry on P21 wild-type (WT) (B, B’), Tfap2e (NullC,C’), and Tfap2e (RescueD,D’) mice against AP-2ε. (B,B’) In WT mice AP-2ε expression is in the marginal zones (MZ) and in the basal regions of the VSNs. (C,C’) In Tfap2e mice, some AP-2ε immunoreactivity is observed in the MZ but lost in the central regions where more mature neurons reside. (NullD,D’) In the Tfap2eRescue, AP-2ε is expressed in the basal region, but with less intensity and density at the MZ and in central regions compared to WT controls. (E–G) Immunostainings against V2R2 (magenta) and Meis2 (green) counterstained with 4’,6’-diamidino-2-phenylindole (DAPI) (white). (H–J) Immunostainings against Gαo (magenta) and Gαi2 (green) counterstained with DAPI. (K–M) Immunostainings against Krt18 (magenta) counterstained with DAPI (white). (N) Quantifications of the percentage of vomeronasal sensory neurons (VSNs) expressing apical/basal markers in WT, Tfap2e and Null,Tfap2e mice. RescueTfap2e mice show a dramatic reduction in basal VSNs and apical VSNs occupy most of the epithelium. The NullTfap2e has an intermediate phenotype between WT and RescueTfap2e mice, where the vomeronasal epithelium (VNE) contains more basal VSNs than in the NullTfap2e mice but does not reach the equivalency of the WT (p<0.05 = *, p<0.01 = **, p<0.001 = ***, p<0.0001 = ****). One-way ANOVA. Error bars are standard deviation. N=4 for WT in % AP-2ε, % meis2, % Gαo, % Gαi2, and % Krt18. N=6 for WT in % V2R2. N=2 for NullTfap2e in % AP-2ε. N=4 for NullTfap2e in % Meis2, % V2R2, and % Krt18. N=6 for NullTfap2e in % Gαo and % Gαi2. N=4 for NullTfap2e in % AP-2ε, % Meis2, and % V2R2. N=6 for RescueTfap2e in % Gαo, % Gαi2, and % Krt18.Rescue
+**Figure 2.:** (A) Knock-in strategy through homologous recombination to generate the R26AP-2ε mouse line. The CAG-loxP-stop-loxP-mouse-Tfap2e cassette as integrated into the first intron of Rosa26. (B–D’) Immunohistochemistry on P21 wild-type (WT) (B, B’), Tfap2eNull (C,C’), and Tfap2eRescue (D,D’) mice against AP-2ε. (B,B’) In WT mice AP-2ε expression is in the marginal zones (MZ) and in the basal regions of the VSNs. (C,C’) In Tfap2eNull mice, some AP-2ε immunoreactivity is observed in the MZ but lost in the central regions where more mature neurons reside. (D,D’) In the Tfap2eRescue, AP-2ε is expressed in the basal region, but with less intensity and density at the MZ and in central regions compared to WT controls. (E–G) Immunostainings against V2R2 (magenta) and Meis2 (green) counterstained with 4’,6’-diamidino-2-phenylindole (DAPI) (white). (H–J) Immunostainings against Gαo (magenta) and Gαi2 (green) counterstained with DAPI. (K–M) Immunostainings against Krt18 (magenta) counterstained with DAPI (white). (N) Quantifications of the percentage of vomeronasal sensory neurons (VSNs) expressing apical/basal markers in WT, Tfap2eNull, and Tfap2eRescue mice. Tfap2eNull mice show a dramatic reduction in basal VSNs and apical VSNs occupy most of the epithelium. The Tfap2eRescue has an intermediate phenotype between WT and Tfap2eNull mice, where the vomeronasal epithelium (VNE) contains more basal VSNs than in the Tfap2eNull mice but does not reach the equivalency of the WT (p<0.05 = *, p<0.01 = **, p<0.001 = ***, p<0.0001 = ****). One-way ANOVA. Error bars are standard deviation. N=4 for WT in % AP-2ε, % meis2, % Gαo, % Gαi2, and % Krt18. N=6 for WT in % V2R2. N=2 for Tfap2eNull in % AP-2ε. N=4 for Tfap2eNull in % Meis2, % V2R2, and % Krt18. N=6 for Tfap2eNull in % Gαo and % Gαi2. N=4 for Tfap2eRescue in % AP-2ε, % Meis2, and % V2R2. N=6 for Tfap2eRescue in % Gαo, % Gαi2, and % Krt18.
 
 By analyzing the expression of the basal markers downregulated in Tfap2e KOs (Lin et al., 2018), such as V2R2 (Figure 2E–G) and Gαo (Figure 2H–J), we confirmed restored expression in the rescued KOs. Cell quantifications indicated a significant increase in the number of basal cells expressing basal markers in Tfap2eRescue compared to Tfap2eNull mice, though the number of basal VSNs in the Tfap2eRescue was smaller when compared to controls (Figure 2N). Krt18 is normally enriched in basal neurons (Figure 1Q). Immunohistochemistry confirmed Krt18 protein expression in the basal territories of the VNO (Figure 2K). We observed reduced Krt18 immunoreactivity in Tfap2eNull mice and restored expression in Tfap2eRescue mice (Figure 2L–N). However, in Tfap2eRescue mice, Krt18 still showed lower expression levels than in WT mice (Figure 2N). Taken together, we conclude that exogenous AP-2ε in postmitotic VSNs can partially rescue the expression of basal VSN markers in Tfap2eNull mice. Rescue of the Tfap2enull phenotype indicates that our inducible R26AP-2ε mouse line is a suitable model for conditional expression of functional AP-2ε.
 
-## Re-expressing AP-2ε in Tfap2eNull mice rescue social behaviors
+### Re-expressing AP-2ε in Tfap2eNull mice rescue social behaviors
 
 The specification and organization of VSNs and their respective circuit assembly in the AOB are essential to trigger a variety of social and sexual behaviors (Chamero et al., 2011; Chamero et al., 2007; Stowers et al., 2002; Trouillet et al., 2019). We speculated that Tfap2eNull mice could not discriminate between urine of different sexes. Thus, we performed an odorant preference test. In this test, individual mice were simultaneously presented with male and female whole urine for a 2 min period (Figure 3). WT male mice showed a significant preference for urine from the opposite sex (Figure 3B; Pankevich et al., 2004; Stowers et al., 2002). However, Tfap2eNull male mice did not display significant preference for female urine, confirming a loss of function (LOF) of basal VSNs (Lin et al., 2018) and consequently a reduced ability to discriminate between urine from either sex (Figure 3B; Pankevich et al., 2004; Stowers et al., 2002). In line with our histological results (Figure 2D, G, J and M), Tfap2eRescue male mice showed a significant preference for female urine similar to WT controls (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig3-v2.jpg)
 
-**Figure 3.:** Tfap2e expression in mice.(A) The odorant preference paradigm where cotton swabs with either male or female whole urine are placed on opposite ends of a test cage and the amount of time spent smelling each odorant is measured. (B) Male wild-type (WT) mice spent significantly more time investigating female odorants than male odorants. Preference for female odorants is lost in Tfap2e knockout (KO) male mice but restored in Tfap2e mice (p<0.05 = *, p<0.01 = **, p<0.001 = ***). Unpaired t-test. Error bars are standard deviation. N=6 for WT, n=11 for RescueTfap2e and n=4 for NullTfap2e. (RescueC) Male-male aggression was evaluated using the resident intruder paradigm. (D) WT mice display aggressive behaviors toward male intruders and number of attacks were quantified. Tfap2e mice attacked intruders significantly less than WT mice. However, NullTfap2e mice showed significantly more aggressive behaviors that is not significantly different than the WT male mice (p<0.05 = *). One-way ANOVA. Error bars are standard deviation. N=6 for WT, n=11 for KO, n=4 for rescue. (RescueE) Seminal vesicle weight was not significantly different across all genotypes when normalized to body weight. One-way ANOVA. Error bars are standard deviation. N=6 for WT, n=11 for KO, n=4 for rescue.
+**Figure 3.:** (A) The odorant preference paradigm where cotton swabs with either male or female whole urine are placed on opposite ends of a test cage and the amount of time spent smelling each odorant is measured. (B) Male wild-type (WT) mice spent significantly more time investigating female odorants than male odorants. Preference for female odorants is lost in Tfap2e knockout (KO) male mice but restored in Tfap2eRescue mice (p<0.05 = *, p<0.01 = **, p<0.001 = ***). Unpaired t-test. Error bars are standard deviation. N=6 for WT, n=11 for Tfap2eNull and n=4 for Tfap2eRescue. (C) Male-male aggression was evaluated using the resident intruder paradigm. (D) WT mice display aggressive behaviors toward male intruders and number of attacks were quantified. Tfap2eNull mice attacked intruders significantly less than WT mice. However, Tfap2eRescue mice showed significantly more aggressive behaviors that is not significantly different than the WT male mice (p<0.05 = *). One-way ANOVA. Error bars are standard deviation. N=6 for WT, n=11 for KO, n=4 for rescue. (E) Seminal vesicle weight was not significantly different across all genotypes when normalized to body weight. One-way ANOVA. Error bars are standard deviation. N=6 for WT, n=11 for KO, n=4 for rescue.
 
 To further investigate the behavioral outcome of Tfap2e LOF, we performed a resident intruder assay for intermale aggression (Figure 3C; Chamero et al., 2011; Montani et al., 2013; Stowers et al., 2002). Tfap2eNull mice displayed significantly reduced aggressive behavior compared to WT controls (WT [mean # of attacks = 9.5 SE±0.7] vs. Tfap2eNull [mean # of attacks = 1.1 SE±0.2] t-test p=0.0138). Yet, when male Tfap2eRescue mice were exposed to male intruders, they displayed restored aggressive behavior (Tfap2eNull [mean # of attacks = 1.1 SE±0.2] vs. Tfap2eRescue [mean # of attacks = 22.8 SE±3.4] t-test p=0.0168). ANOVA test with post hoc analysis confirmed that Tfap2eRescue mice significantly differed in their aggressive behavior from Tfap2eNull (p=0.0252) but not from controls (Figure 3D).
 
 We measured the mass of the seminal vesicles from each genotype to rule out any changes in general androgen levels, which may explain any potential behavioral differences (Zuloaga et al., 2007). We found no significant differences when the seminal vesicle weights were normalized to the total body weight of each mouse (Figure 3E). Taken together, these data suggest that re-expression of Tfap2e in KO mice can reestablish the functional properties of basal VSNs.
 
-## Ectopic expression of Tfap2e in mature apical VSNs increases the expression of basal enriched genes
+### Ectopic expression of Tfap2e in mature apical VSNs increases the expression of basal enriched genes
 
 Several AP-2 family members have been proposed to have pioneer activity (Fernandez Garcia et al., 2019; Rothstein and Simoes-Costa, 2020; Seberg et al., 2017; Williams et al., 2009). We tested whether ectopic Tfap2e expression can alter the transcriptomic profile of maturing neurons. Olfactory marker protein (Omp) is an accepted marker for postmitotic/maturing olfactory and VSNs (Buiakova et al., 1994; Enomoto et al., 2011; Farbman and Margolis, 1980). By analyzing our scRNA-seq data from OmpCre mice, we confirmed that Omp mRNA expression can be detected in maturing apical neurons shortly after the apical basal dichotomy is established (Figure 1E). Thus, we used an OmpCre mouse line to drive expression of Tfap2e (OmpCre/R26AP-2ε) in all olfactory and vomeronasal neurons (Figure 4A and D). In this manuscript, we will often refer to OmpCre/R26AP-2ε as ectopic mutants. Notably, both apical and basal VSNs express several known Tfap2 cofactors, including Cited2 and Ep300 (Bamforth et al., 2001; Bragança et al., 2003; Eckert et al., 2005), suggesting that both VSN populations are molecularly competent for functional AP-2ε transcriptional activity (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig4-v2.jpg)
+
+**Figure 4.:** Immunostainings at P10 on OmpCre controls (A–C) and OmpCre/R26AP-2ε mutants (D–F). (A) IHC against AP-2ε in the vomeronasal organs (VNOs) shows that AP-2ε is expressed in only the basal vomeronasal sensory neurons (VSNs) (arrow) in controls but have extended AP-2ε immunoreactivity into apical (magenta arrowheads) and sustentacular regions (white arrowheads) in ectopic mutants (D). (A1) AP-2ε, Meis2 double immunofluorescence shows segregated AP-2ε (white arrow) and Meis2 (green arrowheads) in controls. (D1) In the ectopic mutants AP-2ε expression is detected in Meis2+ cells (green arrowheads). (B,E) ISH against Gnao1 show that in controls (B) Gnao1 mRNA expression is restricted to the basal regions of the VNE. (E) Ectopic mutants show Gnao1 mRNA reactivity in the apical regions of the VNE (magenta arrowheads). (C,F) Immunohistochemistry against V2R2 in the VNO of controls (C) shows no immunoreactivity in the apical regions of the VNE in controls (notched arrows) and is limited to the basal VSNs (white arrows). (F) In mutants, more of the VNE was positive for V2R2 in mutants, as expression expands into the apical regions of the epithelium (magenta arrowheads). (G) Quantifications at P10 show a significant increase (p<0.0001 = ****) in the amount of the neuroepithelium positive for Gnao1 in OmpCre/R26AP-2ε mutants. Significance calculated using arcsine transformation on percent values; unpaired two-tailed t-test analysis. Error bars are standard deviation. N=10 for OmpCre controls and n=8 for OmpCre/R26AP-2ε mutants. (H) Quantifications at P10 show a significant increase in the number of the VSNs positive for V2R2 in OmpCre/R26AP-2ε mutants. Unpaired t-test. Error bars are standard deviation. N=3 for both OmpCre controls and OmpCre/R26AP-2ε mutants (p<0.05 = *). (I,J) Violin plot of Vmn2r7 (I), and Gnao1 (J) mRNA expression between apical and basal VSNs in OmpCre controls and apical VSNs of OmpCre/R26AP-2ε mutant mice show significant upregulation of these basal markers in mutants based on p-value (p<0.05 = *, p<0.0004 = ****). (K,L) Immunofluorescence against V2R2 (magenta) and Meis2 (green) in controls (K) and OmpCre/R26AP-2ε mutants (L). Arrows indicate a Meis2+ cell immunoreactive against anti-V2R2 antibodies in mutants (L). (M,N) Single-molecule FISH (RNAscope) against Gnao1, Gnai2, and Meis2 of P10 wild-type (WT) and OmpCre/R26AP-2ε mutants. In WTs (M), a clear segregation between the Gnao1+ (red) basal VSNs and the apical cells positive for Meis2+ (white) and Gnai2+ (green) could be seen. Arrows show Meis2+/Gnai2+ apical VSNs in control VNO tissue negative for Gnao1. In OmpCre/R26AP-2ε mutants (N) low but obvious expansion of Gnao1 (red) expression to the apical domains of the VNO. Signal highlighting Gnao1 expression could be found in Meis2+ (white) and Gnai2+ (green) cells. The arrows point to Meis2+/Gnai2+ apical VSNs with ectopic expression of Gnao1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Feature plots of known AP-2 family cofactors Ep300, Cited2, Cited4, Kctd1, Sp1, Sp8, Yy1 in P10 VSNs.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** P10 OmpCre controls (A,B) and OmpCre/R26AP-2ε ectopic mutants (C,D). (A,C) Immunohistochemistry against AP-2ε in the main olfactory epithelium (OE) shows no immunoreactivity in controls (black notched arrows) and ectopic AP-2ε expression in the mutants (magenta arrowheads). (B,D) Immunohistochemistry against V2R2 in the main OE shows no expression (black notched arrowheads) in either control or ectopic mutants. (E) Dot plot shows that mutant mature apical neurons ectopically express Vmn2r. (F,G) Feature plot of OmpCre controls and OmpCre/R26AP-2ε mutants (F) and dot plot of mature control and mutant apical vomeronasal sensory neurons (VSNs) (G) shows that in mutants, there is increased expression of Vmn2r7 in apical VSNs. (H) Volcano plot showing upregulation of Vmn2rs in OmpCre/R26AP-2ε mutants.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Feature plot showing ectopic expression of Gnao1 in OmpCre/R26AP-2ε mutants. Black arrows indicate mature apical VSNs. Purple arrowheads indicate ectopic expression of Gnao1 in apical VSNs. (B) Feature plot showing ectopic expression of Mt3 in OmpCre/R26AP-2ε mutants. Black arrows indicate mature apical VSNs. Purple arrowheads indicate ectopic expression of Mt3 in apical VSNs. (C) RNAscope analysis shows that Mt3 is mainly expressed in basal VSNs in OMPCre controls (arrow outline) but ectopically expressed in Gnai2+ apical VSNs in OmpCre/R26AP-2ε mutants (arrows). (D) Feature plot showing ectopic expression of Fbxo17 in OmpCre/R26AP-2ε mutants. Black arrows indicate mature apical VSNs. Purple arrowheads indicate ectopic expression of Fbxo17 in apical VSNs.
 
 Immunostaining against AP-2ε showed no immunoreactivity in the main olfactory epithelium (OE) of control animals (Figure 4—figure supplement 2). However, in OmpCre/R26AP-2ε mutants, the OE expressed immunodetectable AP-2ε (Figure 4—figure supplement 2). OmpCre controls and OmpCre/R26AP-2ε mutants displayed comparable gross morphology of the OE with no ectopic V2R immunoreactivity (Figure 4—figure supplement 2).
 
@@ -92,21 +108,37 @@ In order to better follow the effects of ectopic Tfap2e expression on apical cel
 
 In controls (Figure 4M), we could observe a clear segregation between the basal VSNs positive for Gnao1 and the apical VSNs positive for Meis2 and Gnai2. Notably Meis2 was also expressed in the sustentacular cells and in newly formed cells in the marginal zone. However, in OmpCre/R26AP-2ε mutants (Figure 4N), we could observe, as after regular ISH (Figure 4E) a low but obvious expansion of Gnao1 expression to the apical domains of the VNO. Signal highlighting Gnao1 expression could be found in Meis2 and Gnai2 positive cells.
 
-## Ectopic Tfap2e expression leads to a progressive disorganization of the VNE
+### Ectopic Tfap2e expression leads to a progressive disorganization of the VNE
 
 In ectopic Tfap2e mutants, at P21 and more dramatically at 3 months of age, we noticed an increasing level of cellular disorganization of the VNE that is not seen in controls (Figure 5) with: (1) VSNs spanning from the basal territories to regions of the lumen devoid of Sox2+ sustentacular cells, and (2) ectopic sustentacular cells organized in spherical structures or intraepithelial cysts with a subsidiary lumen within apical and basal territories (Figure 5B–C’). Notably, the regions with ectopic sustentacular cells appeared to be mostly surrounded by apical VSNs expressing AP-2ε, Meis2, and Sox2 and were enriched in the intermediate zones of the VNE (Figure 5B–D). Interestingly, a low level of Sox2 immunoreactivity was observed in apical VSNs in both controls and OmpCre/R26AP-2ε mice with higher intensity in cells closer to the sustentacular cell layer (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig5-v2.jpg)
+
+**Figure 5.:** Immunofluorescence against Sox2 (cyan), AP-2ε (magenta), and Meis2 (green) with 4’,6’-diamidino-2-phenylindole (DAPI) (blue) counterstain. Neuroepithelium traced in yellow dotted line. (A) P21 OmpCre controls show highly organized stratified neuroepithelium with contiguous layers of AP-2ε+/basal (magenta), Meis2+/apical (green), and Sox2+/sustentacular cell (cyan) layers. (B–C’) OmpCre/R26AP-2ε vomeronasal organ (VNO) at (B) P21 show that Sox2+/sustentacular cells have intraepithelial cysts with internalized subsidiary lumens (red arrows). (C) Adult (3mo) OmpCre/R26AP-2ε mutants show an increase in the severity of intraepithelial cysts (red arrows) and breaks in the sustentacular layer and expansion of neurons to the luminal surface (red notched arrows). Unidentified matter (*) reactive to anti-mouse Abs was detected within the cysts. (D) Quantifications of the zonal distribution through Zone 1 (dorsal) → Zone 7 (ventral) of these cytoarchitecture abnormalities (which include both cell body abnormalities and dendritic disorganization, each point = 1 animal) show that these disruptions occur in the intermediate and central regions of the VNO, but not in the marginal zones (zones 1, 7). The highest rate of occurrence are in zones 3 and 6, which are intermediate regions in the VNO. N=21. (E) Dot plot showing the composition and intensity of differentially expressed genes involved in cellular adhesion in the VSNs of controls and ectopic mutants.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–F) Immunofluorescence on wild-type (WT) (A–C) and OmpCre/R26AP-2ε mutants (D–F) against AP-2ε (magenta) and Sox2 (green) counterstained with 4’,6’-diamidino-2-phenylindole (DAPI) (blue). (A–C) WT controls and ectopic mutants (D–F) show sustentacular (sus) cells with high immunoreactivity for Sox2 and no AP-2ε expression. Apical (a) vomeronasal sensory neurons (VSNs) closest to the sustentacular cell layer show low immunoreactivity for Sox2 (brackets, arrowheads) with apical VSNs closer to basal (b) VSNs with no immunodetectable Sox2 (notched arrows). No colocalization between AP-2ε and Sox2+ sustentacular cells (sus). (D–F) OmpCre/R26AP-2ε mice have some Sox2+ sustentacular cells that have ectopic AP-2ε expression (arrows). (G) Uniform Manifold Approximation and Projections (UMAPs) of sustentacular cells from OmpCre/R26AP-2ε adults showed that Tfap2e positive and negative clusters segregated from each other with accompanying feature plots showing the expression of sustentacular cell markers Hes1, Krt8, and Cyp2a5 along with ectopic Tfap2e mRNA expression. (H) Gene Ontology analysis of Tfap2e+ sustentacular cells showed an enrichment of dysregulated genes related to cytoskeleton organization, cell-cell junction organization, cytoskeletal organization, and cytoplasmic ribosomal proteins. (I) Heatmap of up- and downregulated genes found related to cytoskeleton organization, cell-cell junction organization, and cytoskeleton organization in Tfap2e positive and negative sustentacular cells.
 
 The affinity and positioning of epithelial cells are largely dictated by the expression of surface adhesion molecules (Fagotto, 2014; Polanco et al., 2021). Transcriptome comparison of OmpCre/R26AP-2ε mutants and controls suggest that the aberrant cell positioning in the VNE of mutants can arise from broad variations in expression levels of multiple adhesion molecules throughout Meis2+ cells (Figure 5E).
 
 Furthermore, scRNA-seq of the adult OmpCre/R26AP-2ε allowed us to understand whether sustentacular cells with ectopic Tfap2e expression was contributing to the disorganization of the VNE. By performing differential gene expression analysis on the Tfap2e positive and negative sustentacular cells from the adult OmpCre/R26AP-2ε mice, we observed significantly dysregulated genes (550 upregulated; 571 downregulated, adjusted p-value <0.05) with enrichment of genes related to tight junctions, cell-cell adhesion, and cytoskeletal organization (Figure 5—figure supplement 1), which may contribute to the disorganized neuroepithelium.
 
-## pS6 immunostaining reveals that OmpCre/R26AP-2ε mutants have defective response to female urines
+### pS6 immunostaining reveals that OmpCre/R26AP-2ε mutants have defective response to female urines
 
 Whole male mouse urine activates both V1Rs and V2Rs (Krieger et al., 1999), while female odorants mostly activate apical VSNs (Dudley and Moss, 1999; Kimoto et al., 2005; Norlin et al., 2001; Silvotti et al., 2018). To determine if OmpCre/R26AP-2ε mice had altered chemodetection, we quantified VSNs’ activation after exposure of control and mutant mice to either male- or female-soiled bedding. Brains were collected after 90 min of exposure to the soiled bedding, to allow adequate time for the phosphorylation of the ribosomal protein S6 (pS6) in the VSNs’ cell bodies (Silvotti et al., 2018). VSNs activation was quantified after immunostaining against pS6 (Ser 240/244) on coronal sections of the VNO (Figure 6). Apical and basal VSNs were identified with immunostaining against Meis2 and categorized as either pS6+/Meis2+ apical or pS6+/Meis2- basal VSNs (Figure 6A–D). When exposed to male bedding we observed that OmpCre/R26AP-2ε mice had a lower average number of activated apical VSNs compared to controls, however this difference was non-statistically significant (Figure 6A, B and E). Although this difference was non-statistically significant, we did find a significant reduction in the total activation of VSNs in female mutants.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig6-v2.jpg)
+
+**Figure 6.:** (A–D) Immunofluorescence against pS6 (magenta, arrows) and Meis2 (green) with 4’,6’-diamidino-2-phenylindole (DAPI) counterstain (blue) in the vomeronasal epithelium (VNE) of controls (A,C) and OmpCre/R26AP-2ε mutants (B,D). (A,B) VNE of adult male wild-type (WT) and ectopic mutants when exposed to male-soiled bedding show similar activation or pS6 immunoreactivity (arrows) in Meis2+/apical and Meis2-/basal vomeronasal sensory neurons (VSNs). (C,D) VNE of adult female WT and ectopic mutants when exposed to female-soiled bedding show that while WT females displayed a higher proportion of pS6+ apical VSNs, OmpCre/R26AP-2ε mutants showed a decreased number of activated Meis2+/apical VSNs. In both exposure conditions ectopic activation of sustentacular cells (notched arrows) and VSNs near the lumen (arrowheads). (E) Quantifications of activated VSNs in male and female mice after exposure to male-soiled bedding show a non-significant decrease in activated apical VSNs in mutants of both sexes. Mutant females show a significant decrease in total activation of VSNs (p<0.05) while mutant males show a small but non-significant increase in the total number of activated basal VSNs. Unpaired t-test. Error bars are standard deviation. N=6 for males and n=3 females for both genotypes. (F) Quantifications of activated VSNs after exposure to female-soiled bedding in male and female mice show a significant decrease in the number of activated apical VSNs as well as total activation of VSNs between mutants and controls of both sexes (p<0.05 = *, p<0.01 = **, p<0.001 = ***). Unpaired t-test. Error bars are standard deviation. N=4 for males and n=6 for females for both genotypes. (G) Quantifications of the number of attacks for all WT and OmpCre/R26AP-2ε mutants in a resident intruder test show male ectopic mutant mice display higher levels of intermale aggression but are not significantly different than controls. Unpaired t-test. Error bars are standard deviation. N=11 for WTs and n=17 for OmpCre/R26AP-2ε mutants. (H) Quantifications of odorant preference tests in male and female mice show that male and female OmpCre/R26AP-2ε mutants retain the preference for opposite sex odorants (p<0.05 = *, p<0.01 = **, p<0.001 = ***, p<0.0001 = ****). Unpaired t-test. Error bars are standard deviation. N=11 for WT males, n=14 for WT females, n=11 for OmpCre/R26AP-2ε mutant males, and n=10 for OmpCre/R26AP-2ε mutant females. (I) Accessory olfactory bulb (AOB) of adult male WT and ectopic mutants when exposed to female-soiled bedding show that ectopic mutants have lower levels of cFOS activated neurons in the anterior AOB (aAOB) but similar levels of activated neurons in the posterior AOB (pAOB). (J) Quantification of cFOS activated neurons in the AOB of female mice exposed to male-bedding show no significant differences between aAOB and pAOB activation in mutants and WT. Unpaired t-test. Error bars are standard deviation. N=4 for WT and n=3 for OmpCre/R26AP-2ε mutants. (K) Quantification of cFOS activated neurons in the AOB of male mice exposed to female-soiled bedding show a significant reduction in aAOB activation (p<0.05) in mutants compared to WT. Unpaired t-test. Error bars are standard deviation. N=3 for both WT and OmpCre/R26AP-2ε mutants.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A,B) Immunofluorescence against Nrp2 (green) and Robo2 (red) and counterstained with 4’,6’-diamidino-2-phenylindole (DAPI) (blue) showed that the expression of guidance cue molecules in WT (A) and OmpCre/R26AP-2ε mutant (B) mice was comparable with distinct anterior and posterior AOB regions (arrows). (C,D) Immunofluorescence against Kirrel2 (green) and Kirrel3 (red) and DAPI (blue) counterstain on WT (C) and OmpCre/R26AP-2ε mutant mice (D) AOBs showed that the glomerular organization and morphology was comparable between genotypes (arrows). (E) Quantifications of the average area of the AOB was not significantly different across genotypes. Analysis of the glomeruli size (F) and number (G) using IF against Kirrel2 and Kirrel3 showed no significant changes across genotypes. Unpaired t-test. Error bars are standard deviation. N=6 for OmpCre controls and OmpCre/R26AP-2ε mutants (E–G).
+
 In order to further analyze the activity of apical VSNs, we exposed control and OmpCre/R26AP-2ε males and females to female-soiled bedding which mostly activates apical VSNs. This experiment highlighted a dramatic reduction in apical VSNs’ activation, as well as total activation of VSNs (pS6+/Meis2+) of mutant mice for both sexes (Figure 6C, D and F).
 
-## Ectopic Tfap2e enhances intermale aggressive behavior but not preference for opposite sex odorants
+### Ectopic Tfap2e enhances intermale aggressive behavior but not preference for opposite sex odorants
 
 To determine whether the aberrant gene expression in apical VSNs could alter VSNs’ functions and related social behaviors, we evaluated intermale aggression and odorant preference (Koolhaas et al., 2013). By performing resident intruder tests, we showed that the level of intermale aggression of OmpCre/R26AP-2ε male mice was on average higher, but not significantly different than controls (p=0.051) (Figure 6G). However, among the animals that displayed aggressive behavior we observed significant increase in the number of attacks from WT to OmpCre/R26AP-2ε mutants (p=0.0015; WT = 16.00 SE±3.1; ectopic = 43.75 SE±4.8).
 
@@ -114,23 +146,39 @@ The sex urines preference test revealed that both male and female OmpCre/R26AP-2
 
 All together these data suggest that ectopic Tfap2e expression decreases apical VSNs’ functionality (Figure 6A–F) likely leading to an increase in aggression behavior but not compromising opposite sex odorants preferences (Figure 6G and H). These data are in line with previous findings indicating that loss of apical VSN signal transduction enhances territorial aggression in males without substantial changes in sex odor preferences (Trouillet et al., 2019).
 
-## The negative effects of ectopic Tfap2e expression in apical neurons functionality is reflected by reduced c-Fos activation in the anterior AOB
+### The negative effects of ectopic Tfap2e expression in apical neurons functionality is reflected by reduced c-Fos activation in the anterior AOB
 
 To further investigate if Tfap2e ectopic expression in apical neurons alters the vomeronasal signal transduction, we analyzed c-Fos activation in the AOB. To do this we analyzed the AOBs of control and OmpCre/R26AP-2ε animals exposed to opposite sex-soiled bedding. This analysis revealed that c-Fos activation in the anterior AOB (aAOB) was statistically different only after exposure to female-soiled bedding (Figure 6I and K). C-Fos activation in the aAOB of female OmpCre/R26AP-2ε mice exposed to male bedding was on average lower than, but not significantly different from controls (Figure 6J). These data suggest that ectopic Tfap2e expression reduces the functionality of the V1R VSNs projecting to the aAOB but does not alter the functionality of basal VSNs.
 
-## Ectopic expression of Tfap2e alters the transcriptional profile of apical neurons
+### Ectopic expression of Tfap2e alters the transcriptional profile of apical neurons
 
 To further elucidate the gene expression changes in apical (Meis2+) VSNs after Tfap2e expression, we analyzed the UMAPs using scRNA-seq from VSNs in controls and mutant mice. These revealed similar clustering at the stages of neurogenesis and differentiation across genotypes (Figure 7). However, control animals showed Tfap2e expression was limited to immature-mature basal VSNs (Figure 7A’–A’’’; Figure 4A1). In OmpCre/R26AP-2ε mutants, however, Tfap2e mRNA was expressed in maturing basal VSNs as well as in maturing and mature apical VSNs (Figure 7B’ and B’’’; Figure 4D1). When analyzing the UMAPs, we noticed that in the OmpCre/R26AP-2ε mutants, cells along the apical and basal developmental trajectories overlapped to those of controls. However, the maturing and mature apical VSNs of controls and mutants formed non-overlapping clusters (Figure 7A’’’–(A+B)’’’’). In fact, the apical VSNs of the ectopic mutants formed a cluster more proximal to the basal VSNs.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig7-v2.jpg)
+
+**Figure 7.:** (A–A’’’) Uniform Manifold Approximation and Projection (UMAP) clustering of VSNs from progenitor cells to differentiated mature apical and basal cells of control. (B–B’’’) Mutant mice split by genotype. (A’–A’’’, B’–B’’’) Blended feature plots of Tfap2e expression (red) and Meis2 (blue). Red arrowheads indicate the onset of Tfap2e expression. Black arrow indicates mature apical VSNs. OmpCre controls (A’–A’’’) show a divergent pattern of expression where the onset of Tfap2e (red, red arrowhead) is only on the basal branch. Meis2 expression (blue) occurs only on the apical branch where the cells lack Tfap2e expression. OmpCre/R26AP-2ε mutants (B’–B’’’) start to express Tfap2e on the basal branch in immature basal VSNs (red) however, onset of Tfap2e mRNA expression also occurs on the apical branch (blue). (B’’’) In ectopic mutants, Tfap2e mRNA is co-expressed with Meis2 in apical VSNs (purple cells). (A’’’’) Feature plot of apical cells in OmpCre controls (black arrow). (B’’’’) Feature plot of apical cells in OmpCre/R26AP-2ε mutants (black arrow). (A+B’’’’) Overlay shows that apical cells with ectopic Tfap2e expression (magenta, black arrow) clustered separately from mature apical cells of OmpCre controls (gray, black arrow). (C) Heatmap showing up/downregulated genes in mature apical and basal VSNs of OmpCre controls and in apical VSNs of OmpCre/R26AP-2ε mutants. Apical VSNs of ectopic mutants express genes enriched in both apical and basal VSNs. Gene names and values are available in Supplementary file 1, Supplementary file 2. (D) Violin plot shows Calreticulin (Calr) mRNA expression levels in apical VSNs from the OmpCre/R26AP-2ε mutants are reduced to levels similar to basal VSNs from OmpCre controls. (E) Violin plot shows Calreticulin-4 (Calr4) mRNA expression levels. (E) In control cells, Tfap2e mRNA expression (red arrowheads) and Meis2 mRNA expression (blue) are not co-expressed in the same cells. Tfap2e expression is upregulated in immature basal VSNs and not apical VSNs. (F,G) In situ hybridization (ISH) against Calr4 against P11 OmpCre controls (F) and OmpCre/R26AP-2ε mutants (G) show that while Calr4 mRNA is normally enriched in basal VSNs (arrowheads), ectopic mutants show expansion of Calr4 positivity in the apical regions when compared to controls (arrows). (H–K) Analysis of CUT&RUN against AP-2ε. (H) Tornado plot of AP-2ε occupancy in Tfap2e ectopic, wild-type (WT) and knockouts (KOs) in the dissociated tissue of the vomeronasal organ (VNO). AP-2ε signal in ectopic mutants and WTs is similar across all AP-2ε peaks, while Tfap2e KOs show no signal. The genomic regions are defined as the summit±1 kb. (I) Pie chart depicting the genomic distribution of putative AP-2ε binding sites show that most of AP-2ε peaks are found in promoter regions of putative target genes and to a lesser extent in intergenic and intronic regions of the genome. (J) Venn diagram of the determined AP-2ε targets and the genes enriched in the basal and apical VSNs. (K) Venn diagram of the determined AP-2ε targets and all the upregulated and downregulated genes in the ectopic mutant mouse. Significance defined as adjusted p-value ≤0.05.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** In control animals, specific sets of genes are expressed with high correlation level in either apical vomeronasal sensory neurons (VSNs) (boxed in green) or basal VSNs (boxed in red). Genes with higher expression correlation are close to each other in either X or Y axis, the legend indicates higher correlation of expression with darker shade of red. In OmpCre/R26AP-2ε mutants, ectopic expression alters the cell type-specific genes indicated by the different order of genes and different shades of red/expression correlation. These show that ectopic Tfap2e expression alters the normal correlation of apical and basal enriched genes.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Dot plot of enriched Gene Ontology (GO) terms shows many putative AP-2ε target genes being chromatin or histone modifiers. (B) Motif enrichment analysis validated our analysis as Tfap2 was the top motif found at putative binding sites. It also yielded transcription factor (TF) family motifs of potential cofactors including Sp, Klf, Ebf, Rfx, Elk, Nrf, Dlx, and Lhx TF families. (C) Tracks from CUT&RUN sequencing where AP-2ε peaks are found in the promoter regions of activated (purple) and repressed (yellow) genes. (D) Promotor plots of AP-2ε binding in ectopic mutants, WTs and KOs. In WTs, there is more Tfap2e binding at basal promotors compared to apical, however, in ectopic mutants, apical and basal binding is similar due to Tfap2e ectopic expression. Tfap2e KOs show little to no signal.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/77259/elife-77259-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Volcano plot of significantly up- and downregulated genes in apical vomeronasal sensory neurons (VSNs) in adult WT and OMPCre/R26AP-2ε mice show dysregulation of many key basal genes and downregulation of apical-enriched genes. (B) Volcano plot of significantly up- and downregulated genes in basal VSNs in adult WT and OMPCre/R26AP-2ε mice show that some genes may respond to Tfap2e regulation in a dose-dependent manner. (C) Dot plot of canonical genes expressed by apical and basal VSNs, and key genes identified in scRNA-seq analysis for P10 and adult control and mutant mice.
 
 To understand the extent to which AP-2ε can reprogram apical VSNs, we further compared the expression of the most enriched genes in apical and basal VSNs of OmpCre controls to the apical VSNs of OmpCre/R26AP-2ε. Interestingly, this analysis revealed that apical VSNs of OmpCre/R26AP-2ε mice had a mixed apical-basal RNA expression profile with a significant downregulation of ~22% of the apical-enriched genes (7/32), and a significant upregulation of ~28% of the basal-enriched genes (20/71) (Figure 7C; Supplementary file 2). Performing a correlation analysis, we observed that while in controls, sets of either apical- or basal-enriched genes had high correlation, this was no longer true for the OmpCre/R26AP-2ε mutants (Figure 7—figure supplement 1).
 
 Of the aberrantly expressed genes in the apical VSNs of OmpCre/R26AP-2ε mice, we identified a reduction in Calreticulin (Calr) mRNA levels together with a strong upregulation of Calreticulin4 (Calr4), which persists in adulthood (Figure 7D–G, Supplementary file 2). ISH at P11 confirmed that Calr4 is normally expressed by basal VSNs in controls. However, in OmpCre/R26AP-2ε mutants, Calr4 mRNA was found in both apical and basal VSNs (Figure 7F and G). Calr is a negative regulator of transport of V2R receptors to the cell membrane (Dey and Matsunami, 2011). In line with previous studies (Dey and Matsunami, 2011), we found that Calr was expressed below ISH detectability. Feature maps also pointed to the ectopic expression of other basal-enriched genes such as Gnao1, Mt3, and Fbxo17 in the apical VSNs (Figure 4; Figure 4—figure supplement 3). In apical cells, these genes are normally either silenced in mature VSNs or absent from the beginning of the differentiation. RNAscope analysis for Mt3 confirmed ectopic expression in apical cells (Figure 4—figure supplement 3).
 
-## OmpCre/R26AP-2ε ectopic mutants have normal axonal projections to the AOB
+### OmpCre/R26AP-2ε ectopic mutants have normal axonal projections to the AOB
 
 Axonal projection along the anterior-posterior axis of the AOB is largely determined by axon guidance molecules such as Nrp2, Robo2 while the coalescence of VSN axons into glomeruli is largely dictated by Kirrel adhesion molecules (Cloutier et al., 2002; Prince et al., 2013; Prince et al., 2009; Vaddadi et al., 2019). The mRNA expression levels for the guidance receptors, Robo2 and Nrp2, and the adhesion molecules, Kirrel2 and Kirrel3, did not significantly change after ectopic Tfap2e expression. In fact, by immunostaining against Robo2 and Nrp2, we confirmed immunoreactivity of Nrp2 in the aAOB and Robo2 in the posterior AOB (pAOB) similar to controls and observed no significant differences in the average size of aAOB or pAOB between genotypes (Figure 6—figure supplement 1). Moreover, quantifications based on Kirrel2 and Kirrel3 immunostaining did not reveal major changes in glomerular size or number in the AOB (Figure 6—figure supplement 1; Bahreini Jangjoo et al., 2021).
 
-## Identification of direct AP-2ε targets via CUT&RUN
+### Identification of direct AP-2ε targets via CUT&RUN
 
 Our findings suggest a key role for AP-2ε in controlling the expression of specific basal specific/enriched genes. Transcriptomic studies in Tfap2eNull mice showed loss of expression of basal VSN-specific genes suggesting that AP-2ε controls parts of the basal and apical VSN genetic programs (Lin et al., 2018). However, it remains unknown whether AP-2ε regulates VSN genetic programs directly or indirectly. So, we performed genome-wide mapping of TF occupancy with cleavage under targets and release using nuclease (CUT&RUN) to determine the direct genetic targets of AP-2ε in the VNO to pair with our scRNA-seq (Figure 7H–K). Our analyses identified over 5025 replicable peaks in VNO tissue indicating AP-2ε binding sites. Notably, performing CUT&RUN and sequencing from Tfap2e KOs revealed 203 peaks, of which 154 overlapped with called WT peaks. After subtracting out peaks called in the KO, we were left with 4871 peaks (Figure 7H). AP-2ε peaks of the WT were assigned to 3186 genes. None of the peaks of the Tfap2e KOs that were subtracted out were associated with apically or basally enriched genes. CUT&RUN peaks of ectopic mutants were largely similar to that of WTs (Figure 7H).
 
@@ -182,13 +230,527 @@ Our study suggests that as previously hypothesized by others (Hobert and Kratsio
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-gao (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>PA5-59337</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-gao (Mouse monoclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>271 111</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-gai2 (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>MAB3077</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-keratin 18 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab52948</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-kirrel2 (Goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF2930</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-kirrel3 (Mouse monoclonal)</td>
+      <td>NeuroMab</td>
+      <td>75–333</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-meis2 (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-81986</td>
+      <td>(1;500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-meis2 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab73164</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Nrp2 (Goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF567</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-olfactory marker protein (Goat polyclonal)</td>
+      <td>WAKO</td>
+      <td>54410001</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-S6 Ribosomal Protein (Ser240/244) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>D68F8</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-robo2 (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-376177</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-sox2 (Goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF2018</td>
+      <td>(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AP-2ε (goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF5060</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AP-2ε (Rabbit polyclonal)</td>
+      <td>ProteinTech Group</td>
+      <td>25829–1-AP</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-Fos (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab53212</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>V2R2 (Rabbit polyclonal)</td>
+      <td>Roberto Tirindelli (University of Parma)</td>
+      <td></td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat (Alexa488) (Donkey polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>a11055</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat (Alexa594) (Donkey polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>a11058</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat (biotinylated) (Horse polyclonal)</td>
+      <td>Vector</td>
+      <td>ba9500</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse (Alexa488) (Donkey polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>a21202</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse (Alexa594) (Donkey polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>a10037</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse (biotinylated) (Horse polyclonal)</td>
+      <td>Vector</td>
+      <td>ba2000</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit (Alexa488) (Donkey polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>a21206</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit (Alexa594) (Donkey polyclonal)</td>
+      <td>Jackson Labs</td>
+      <td>711-585-152</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit (biotinylated) (Horse polyclonal)</td>
+      <td>Vector</td>
+      <td>ba1100</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe-Mm-Abca7-C4</td>
+      <td>Acdbio</td>
+      <td>489021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe-Mm-Gnai2</td>
+      <td>Acdbio</td>
+      <td>868051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe-Mm-Gnao1-E4-E6-C2</td>
+      <td>Acdbio</td>
+      <td>444991</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe-Mm-Mt3-C3</td>
+      <td>Acdbio</td>
+      <td>504061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe-Mm-Meis2-C3</td>
+      <td>Acdbio</td>
+      <td>436371</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neuron Isolation Enzyme (with papain)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>88285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurobasal Medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>21103049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Sigma-Aldrich</td>
+      <td>472301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diaminobenzidine (DAB)</td>
+      <td>Sigma</td>
+      <td>D9015-100MG</td>
+      <td>(250 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>CALBIOCHEM</td>
+      <td>268298</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DIG Labelling Kit</td>
+      <td>Roche</td>
+      <td>11 175 025 910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DIG Detection Kit</td>
+      <td>Roche</td>
+      <td>11 175 041 910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>37% Formaldeyde</td>
+      <td>Sigma</td>
+      <td>F1635-500ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tissue-Tek O.C.T. Compound</td>
+      <td>VWR</td>
+      <td>25608-930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ABC HRP Kit</td>
+      <td>Vector</td>
+      <td>PK-6100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II DNA Library Prep Kit for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>E7645</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Intro Pack for Multiplex Fluorescent Reagent Kit v2- Mm</td>
+      <td>Acdbio</td>
+      <td>323136</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope 4-Plex Ancillary Kit for Multiplex Fluorescent Kit v2</td>
+      <td>Acdbio</td>
+      <td>323120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Tfap2eCre</td>
+      <td>Trevor Williams (University of Colorado, Denver)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>B6;129P2-Omptm4(cre)Mom/MomJ</td>
+      <td>Jackson Labs</td>
+      <td>Stock No: 006668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>B6.Cg-Gt(ROSA)26Sor tm(CAG-mTfap2e)For (R26AP-2ε)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Will Be available from Jackson Labs</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI ImageJ software (Version 2.1.0/1.53c)</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9 software</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop CC 2020</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/products/photoshop.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio (Version 1.3.1073)</td>
+      <td>RStudio</td>
+      <td>https://rstudio.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R version 4.0.2</td>
+      <td>The R Project</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat 4.0.5</td>
+      <td>Satija Lab</td>
+      <td>https://satijalab.org/seurat/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ButtonBox v.5.0</td>
+      <td>Behavioral Research Solutions, LLC</td>
+      <td></td>
+      <td>Shared by Damien Zuloaga (University at Albany) as Software is discontinued</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cutadapt</td>
+      <td>Martin, 2011</td>
+      <td>https://cutadapt.readthedocs.io/en/stable/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie 2</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2</td>
+      <td>Zhang et al., 2008</td>
+      <td>https://chipster.csc.fi/manual/macs2.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChIPseeker</td>
+      <td>Yu et al., 2015</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/ChIPseeker.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>clusterProfiler</td>
+      <td>Yu et al., 2012</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/clusterProfiler.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER</td>
+      <td>Benner Lab</td>
+      <td>http://homer.ucsd.edu/homer/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GGA GGG GGG CTCT GAG AT</td>
+      <td>This paper</td>
+      <td>R26-AP-2ε Common</td>
+      <td>Will Be available from Jackson Labs</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GGC TGG TGT GGC CAA TGC</td>
+      <td>This paper</td>
+      <td>R26-AP-2ε Mutant</td>
+      <td>Will Be available from Jackson Labs</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GTC GTG AGG CTG CAG GTC</td>
+      <td>This paper</td>
+      <td>R26-AP-2ε WT</td>
+      <td>Will Be available from Jackson Labs</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AGT TCG ATC ACT GGA ACG TG</td>
+      <td>Jackson Labs</td>
+      <td>Omp WT Fwd</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CCC AAA AGG CCT CTA CAG TCT</td>
+      <td>Jackson Labs</td>
+      <td>Omp WT Rvs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TAG TGA AAC AGG GGC AAT GG</td>
+      <td>Jackson Labs</td>
+      <td>Omp Mutant Fwd</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AGA CTG CCT TGG GAA AAG CG</td>
+      <td>Jackson Labs</td>
+      <td>Omp Mutant Rvs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GCT GGT GAG TCA ACC TGC CTG CAG</td>
+      <td>Trevor Williams (University of Colorado, Denver)</td>
+      <td>AP-2ε WT AK19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GGT CAC CTT GTA CTT GGA TGT TGA G</td>
+      <td>Trevor Williams (University of Colorado, Denver)</td>
+      <td>AP-2ε WT AK20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AGG TGT AGA GAA GGC ACT TAG C</td>
+      <td>Jackson Labs</td>
+      <td>Cre Fwd</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CTA ATC GCC ATC TTC CAG CAG G</td>
+      <td>Jackson Labs</td>
+      <td>Cre Rvs</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 The R26AP-2ε mice were produced by Cyagen (Santa Clara, CA) on a C57B/6 background. The Tfap2eCre line (Tfap2etm1(cre)Will) was obtained from Dr Trevor Williams, Department of Craniofacial Biology, University of Colorado. The R26AP-2ε (B6.Cg-Gt(ROSA)26Sortm(CAG-mTfap2e)For) mouse line was produced through Cyagen on a C56BL/6 background. The OmpCre line (B6;129P2-Omptm4(cre)Mom/MomJ) was obtained from Dr Paul Feinstein (Hunter College, City University of New York) on a 129P2/OlaHsd background and backcrossed to a C57BL/6 background for six generations at the time of this study. The characterization and comparison of the rescue of the Tfap2e phenotype (Tfap2eCre/R26AP-2ε), Tfap2e KO, and WTs were performed on a C57BL/6 background. OmpCre/R26AP-2ε mutant mice are viable. Genotyping of mutants was performed by PCR. Primers used are detailed in the Key resources table.
 
 Mice were housed under a 12 hr day/night cycle. Animals were collected/analyzed at P10, P21, and adult (P60-P90) ages. For all morphological analyses both males and females were included unless otherwise specified. All mouse studies were approved by the University at Albany Institutional Animal Care and Use Committee (IACUC). Mouse lines generated in this study will be deposited to Jackson Labs by the time of publication.
 
-## Generation of the Tfap2e conditional knock-in model
+### Generation of the Tfap2e conditional knock-in model
 
 The Tfap2e conditional knock-in allele was generated by targeting the Rosa26 gene in C57BL/6 ES cells. The ‘CAG-loxP-stop-loxP-mouse Tfap2e CDS-polyA’ cassette was cloned into intron 1 of Rosa26 in the reverse orientation. In the targeting vector, the positive selection marker (Neo) was flanked by SDA (self-deletion anchor) site, and DTA was used for negative selection. Mouse genomic fragments containing homology arms (Has) were amplified from BAC clone by using high fidelity Taq DNA polymerase and were sequentially assembled into a targeting vector together with recombination sites and selection markers.
 
@@ -196,25 +758,25 @@ The Rosa26 targeting construct was linearized by restriction digestion with AscI
 
 Genotyping for the R26AP-2ε mouse line was performed by PCR using R26-AP-2ε Common (5’ GGAGGGGGGCTCTGAGAT 3’), R26-AP-2ε Mutant (5’ GGCTGGTGTGGCCAATGC 3’), R26-AP-2ε WT (5’ GTCGTGAGGCTGCAGGTC 3’) with expected bands at 552 bp (mutant) and 400 bp (WT).
 
-## Both OmpCre and WT mice are used as controls depending on availability during performed experiments
+### Both OmpCre and WT mice are used as controls depending on availability during performed experiments
 
-## Innate olfactory preference test
+#### Innate olfactory preference test
 
 Adult mice were isolated for at least 1 week prior to testing. Individual mice were habituated to the experimental environment for at least 30 min, then to the test cage for an additional 2 min. After the habituation period, cotton swabs scented with either male or female whole urine was placed on either side of the test cage. The time spent sniffing each odorant was normalized to total investigation time.
 
-## Resident intruder test
+#### Resident intruder test
 
 The resident intruder assay was used to evaluate aggression in male mice of mutants and controls. Test subjects were housed with intact females for at least 1 week prior to testing. On the day of testing, all subjects (residents and intruders) were acclimated to the experimental environment for at least 30 min prior to the assay. Females were removed immediately before testing. Castrated C57B mice were swabbed with male whole urine immediately before being introduced into the resident male’s home cage. Interactions between isolated residents and intruders were recorded for 10 min and videos were evaluated using ButtonBox v.5.0 (Behavioral Research Solutions, Madison, WI) software for the number and duration of attacks. The same subjects used for innate olfactory preference tests were then used for the resident intruder tests.
 
-## Neuronal activation in response to sex-specific odorants
+### Neuronal activation in response to sex-specific odorants
 
 Adult mice were isolated for at least 1 week prior to exposure to either soiled bedding from male or female mice for ~90 min then perfused with PBS and 3.7% formaldehyde in PBS, then collected to evaluate neuronal activation with immunohistochemistry against pS6.
 
-## Tissue preparation
+### Tissue preparation
 
 Tissue collected at ages ≥P10 were perfused with PBS then 3.7% formaldehyde in PBS. Brain tissue was isolated at the time of perfusion and then immersion-fixed for 3–4 hr at 4°C. Noses were immersion fixed in 3.7% formaldehyde in PBS at 4°C overnight and then decalcified in 500 mM EDTA for 3–4 days. All samples were cryoprotected in 30% sucrose in PBS overnight at 4°C, followed by embedding in Tissue-Tek O.C.T. Compound (Sakura Finetek USA, Inc, Torrance, CA) using dry ice, and stored at –80°C. Tissue was cryosectioned using a CM3050S Leica cryostat at 16 μm for VNOs and 20 μm for brain tissue and collected on VWR Superfrost Plus Micro Slides (Radnor, PA) for immunostaining and ISH. All slides were stored at –80°C until ready for staining.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For immunohistochemistry and immunofluorescence, antigen retrieval was performed on slides that were submerged in citrate buffer (pH 6.0) above 95°C for at least 15 min before cooling to room temperature, then permeabilized with and blocked in horse serum-based blocking solution before transferring into primary antibodies overnight at 4°C. For immunohistochemistry slides were additionally incubated in an H2O2 solution (35 mL PBS + 15 mL 100% methanol + 500 μL 30% H2O2) after antigen retrieval.
 
@@ -222,50 +784,50 @@ For chromogen-based reactions, staining was visualized with the Vectastain ABC K
 
 Confocal microscopy pictures were taken on a Zeiss LSM 710 microscope. Epifluorescence pictures were taken on a Leica DM4000 B LED fluorescence microscope equipped with a Leica DFC310 FX camera. Images were further analyzed using FIJI/ImageJ software. Antibodies and concentrations used in this study are detailed in the Key resources table.
 
-## ISH and RNAscope
+### ISH and RNAscope
 
 Digoxigenin-labeled RNA probes were prepared by in vitro transcription (DIG RNA labeling kit; Roche Diagnostics, Basel, Switzerland). ISH were performed on 16 μm cryosections that were rehydrated in ×1 PBS for 5 min, fixed in 4% PFA in 0.1 M phosphate buffer for 20 min at 4°C, treated with 10 μg/mL proteinase K (Roche) for 12 min at 37°C, and then refixed in 4% PFA at 4°C for 20 min. To inactivate the internal alkaline phosphatase, the tissue was treated with 0.2 M HCl for 30 min. Nonspecific binding of the probe to slides was reduced by dipping slides in 0.1 M triethanolamine (pH 8.0)/0.25% acetic anhydride solution, then washed with ×2 saline-sodium citrate (SSC) buffer before incubating in hybridization solution for 2 hr at room temperature. Slides were then hybridized with 200 μL of probe in hybridization solution at 65°C overnight in a moisture chamber. After hybridization, the slides were washed in ×2 SSC, briefly, then in ×1 SSC/50% formamide for 40 min at 65°C. RNase A treatment (10 μg/mL) was carried out at 37°C for 30 min. The slides were then washed with ×2 SSC then ×0.2 SSC for 15 min each at 65°C. Hybridization was visualized by immunostaining with an alkaline phosphatase conjugated anti-DIG (1:1000), and NBT/BCIP developer solution (Roche Diagnostics). After color reaction, the slides were put into 10 mM Tris-HCl pH 8.0/1 mM EDTA, rinsed in PBS and air-dried before mounting with Sub-X mounting medium. The probe against Gαo (Gnao1) was generated as previously described (Lin et al., 2018).
 
 Single-molecule fluorescence ISH was performed using the RNAscope Multiplex Fluorescence v2 assay and probes (RNAscope Probe-Mm-Abca7-C4 #489021, RNAscope Probe-Mm-Gnai2 #868051, RNAscope Probe-Mm-Gnao1-E4-E6-C2 #444991, RNAscope Probe-Mm-Mt3-C3 #504061, RNAscope Probe-Mm-Meis2-C3 #436371) from ACDbio. The assay was performed on 16 μm fixed-frozen P10-P11 mouse cryosections, following the manufacturer’s protocol.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
 The VNOs of OmpCre at P10 and OmpCre/R26AP-2ε at P10 and 3mo were isolated and dissociated into single-cell suspension using neural isolation enzyme/papain (NIE/Papain in Neurobasal Medium with 0.5 mg/mL Collagenase A, 1.5 mM L-cysteine, and 100 U/mL DNAse I) incubated at 37°C. The dissociated cells were then washed with HBSS and reconstituted in cell freezing medium (90% FBS, 10% DMSO). Cells were frozen from room temperature to –80°C at a –1 °C/min freeze rate. Single-cell suspension was sent to SingulOmics for high-throughput single-cell gene expression profiling using the ×10 Genomics Chromium Platform. Data were analyzed along with using Seurat 4.0.5. The scRNA-seq data discussed in this publication have been deposited in NCBI’s Gene Expression Omnibus and are accessible through GEO series accession number GSE192746. We also utilized previously published data from Katreddi et al., 2022, available through GEO series accession number GSE190330.
 
-## CUT&RUN
+### CUT&RUN
 
 Cells frozen in 90% FBS/10% DMSO were thawed at 37°C and resuspended in CUT&RUN wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.5 mM spermidine, plus Roche Complete Protease inhibitor, EDTA-free). CUT&RUN experiments were performed as previously described (Meers et al., 2019) with minor modifications; 0.025% digitonin was used for the Dig-wash buffer formulation. Antibody incubation was performed overnight at 4°C, followed by Protein A-MNase binding for 1 hr at 4°C. Prior to targeted digestion, cell-bead complexes were washed in low-salt rinse buffer (20 mM HEPES pH 7.5, 0.5 mM spermidine, 0.025% digitonin, plus Roche Complete Protease inhibitor, EDTA-free) followed by targeted digestion in ice-cold high-calcium incubation buffer (3.5 mM HEPES pH 7.5, 10 mM CaCl2, 0.025% digitonin) for 30 min at 0°C. Targeted digestion was halted by replacing the incubation buffer with EGTA-STOP buffer (170 mM NaCl, 20 mM EGTA, 0.025% digitonin, 20 µg/mL glycogen, 25 µg/mL RNase A), followed by chromatin release and DNA extraction. Protein AG-MNase was kindly provided by Dr Steve Henikoff. A rabbit polyclonal Anti-TFAP2E antibody (Proteintech 25829-1-AP) was used at a concentration of 1:50 for CUT&RUN experiments.
 
-## CUT&RUN library preparation
+### CUT&RUN library preparation
 
 CUT&RUN libraries were prepared using the NEBNext ultra II DNA library prep kit (New England Biolabs E7645). Quality control of prepared libraries was conducted using an ABI 3730xl DNA analyzer for fragment analysis. Libraries were pooled to equimolar concentrations and sequenced with paired-end 37 bp reads on an Illumina NextSeq 500 instrument.
 
-## Quantification and statistical analyses of microscopy data
+### Quantification and statistical analyses of microscopy data
 
 All data were collected from mice kept under similar housing conditions in transparent cages on a normal 12 hr light/dark cycle. Tissue collected from either males or females in the same genotype/treatment group were analyzed together unless otherwise stated. Ages analyzed are indicated in text and figures. The data are presented as mean ± SEM. Prism 9.2.0 was used for statistical analyses, including calculation of mean values, and standard errors. Two-tailed, unpaired t-test were used for all statistical analyses, between two groups, and calculated p-values <0.05 were considered statistically significant. Sample sizes and p-values are indicated as single points in each graph and/or in figure legends.
 
 Measurements of VNE and cell counts were performed on confocal images or bright-field images of coronal serial sections immunostained or ISH for the indicated targets. In animals ≥P15, the most central 6–8 sections on the rostro-caudal axis of the VNO were quantified and averaged, and in animals ≥P0, the most medial 4–6 sections were quantified and averaged. Measurements and quantifications were performed using ImageJ 2.1.0 and Imaris. Statistical differences between two genotypes were quantified with two-tailed unpaired t-test using Prism 9.2.0 (GraphPad Software, San Diego, CA). Microscopy data reported in this paper will be shared by the lead contact upon request.
 
-## Statistical analyses of behavior
+### Statistical analyses of behavior
 
 Two-tailed unpaired t-test using Prism 9.2.0 (GraphPad Software, San Diego, CA) was used to determine statistical significance between two independent distributions. p-Values <0.05 were considered statistically significant. Sample sizes and p-values are indicated as single points in each graph and/or in figure legends. When performing one-way ANOVA test, Tukey-HSD post hoc comparison was used if statistical significance (p-value <0.05) was determined.
 
-## CUT&RUN data analysis
+### CUT&RUN data analysis
 
 In processing CUT&RUN data, paired-end sequencing reads were trimmed using Cutadapt t (Martin, 2011) using the following arguments: ‘-a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT --minimum-length=25’. Reads were aligned to the reference mouse mm10 assembly from the UCSC genome browser using Bowtie 2 (Langmead and Salzberg, 2012) using the following arguments: ‘--local --very-sensitive-local --no-unal --no-mixed --no-discordant -I 10X 1000’. BAM files were filtered with SAMtools to discard unmapped reads, those which were not the primary alignment, reads failing platform/vendor quality checks, and PCR/optical duplicates (-f 2F 780). Peak calling was performed using MACS2 (Zhang et al., 2008). Peak-gene annotation was done by mapping peaks to their closest annotated gene using the ChIPseeker R package (Yu et al., 2015). GO term analysis was performed in R using clusterProfiler (Yu et al., 2012). Motif enrichment analysis was performed using HOMER (Heinz et al., 2010). The data from this CUT&RUN experiment has been deposited into the NCBI’s Expression Omnibus and are accessible through GEO series accession number GSE193139.
 
-## Resource availability
+### Resource availability
 
-## Lead contact
+#### Lead contact
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Paolo E Forni (pforni@albany.edu).
 
-## Materials availability
+#### Materials availability
 
 Mouse lines generated in this study will be deposited to Jackson Labs by the time of publication.
 
 There are restrictions in availability of the antibody Rabbit anti-V2R2 which was obtained from the lab of Dr Roberto Tornielli (University of Parma, Italy) and is not commercially available.
 
-## Data and code availability
+#### Data and code availability
 
 The single-cell RNA-sequencing and CUT& RUN sequencing data discussed in this publication have been deposited at NCBI’s Gene Expression Omnibus and are publicly available as of the date of publication. Accession numbers are listed in the Key resources table. This paper reports no original code. Any additional information required to reanalyze the data reported in this paper is available from the lead contact upon request.

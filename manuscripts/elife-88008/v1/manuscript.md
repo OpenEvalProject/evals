@@ -19,15 +19,15 @@
 
 ### Affiliations
 
-1. https://ror.org/059wbyv33 Igenomix Foundation, INCLIVA Health Research Institute Valencia Spain
-2. https://ror.org/059wbyv33 Carlos Simon Foundation, INCLIVA Health Research Institute Valencia Spain
+1. Igenomix Foundation, INCLIVA Health Research Institute Valencia Spain ([ROR:059wbyv33](https://ror.org/059wbyv33))
+2. Carlos Simon Foundation, INCLIVA Health Research Institute Valencia Spain ([ROR:059wbyv33](https://ror.org/059wbyv33))
 3. Clinica Fertty Barcelona Spain
-4. https://ror.org/04n0g0b29 Department of Medicine and Life Sciences, University Pompeu Fabra Barcelona Spain
-5. https://ror.org/052g8jq94 Department of Pediatrics, Obstetrics and Gynecology, School of Medicine, UAB Bellaterra Spain
-6. https://ror.org/01ej9dk98 School of Biosciences, University of Melbourne Parkville Australia
-7. https://ror.org/04z4kmw33 Melbourne IVF East Melbourne Australia
-8. https://ror.org/043nxc105 Department of Pediatrics, Obstetrics and Gynecology, School of Medicine, University of Valencia Valencia Spain
-9. https://ror.org/02cpjkp59 Department of Obstetrics and Gynecology, BIDMC, Harvard University Boston United States
+4. Department of Medicine and Life Sciences, University Pompeu Fabra Barcelona Spain ([ROR:04n0g0b29](https://ror.org/04n0g0b29))
+5. Department of Pediatrics, Obstetrics and Gynecology, School of Medicine, UAB Bellaterra Spain ([ROR:052g8jq94](https://ror.org/052g8jq94))
+6. School of Biosciences, University of Melbourne Parkville Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+7. Melbourne IVF East Melbourne Australia ([ROR:04z4kmw33](https://ror.org/04z4kmw33))
+8. Department of Pediatrics, Obstetrics and Gynecology, School of Medicine, University of Valencia Valencia Spain ([ROR:043nxc105](https://ror.org/043nxc105))
+9. Department of Obstetrics and Gynecology, BIDMC, Harvard University Boston United States ([ROR:02cpjkp59](https://ror.org/02cpjkp59))
 
 † Corresponding author
 
@@ -47,11 +47,27 @@ Here, we investigated the vertical transmission of DNA encapsulated within EVs s
 
 ## Results
 
-## Morphological, molecular, and nanoparticle tracking-mediated identification of endometrial EV populations secreted into the endometrial fluid
+### Morphological, molecular, and nanoparticle tracking-mediated identification of endometrial EV populations secreted into the endometrial fluid
 
 We first isolated EV subpopulations from EF samples obtained at distinct time points during the female menstrual cycle to investigate those EVs secreted by the endometrium. We analyzed EVs using transmission electron microscopy (TEM), protein marker expression, dynamic light scattering (DLS), and nanoparticle tracking analysis (NTA).
 
 During the receptive phase (phase IV of the natural menstrual cycle), we identified the existence of ABs from EF samples in sizes ranging from 1.5 µm to 8 µm (Figure 1A and Figure 1—figure supplement 1A and B), which appeared as a multimodal population of two main sizes in DLS analysis (Note: NTA could not be used to measure AB concentration due to their large size). A main AB population displayed a mean size of 2029 nm and accounted for 61.6% of total measured particles, while a second population displaying a mean size of 274.7 nm accounted for 38.4% of total particle content (Figure 1B). ABs expressed all AB/MB molecular marker proteins evaluated (i.e. ARF6, VDAC1, Calreticulin, Calnexin, TSG101, CD63, and CD9) due to their heterogeneous origin (Figure 1C), while the detection of membranous-like structures within ABs (Figure 1—figure supplement 1B, Image 3) suggested that this EV population also encapsulated different organelle structures. While these structures may represent mitochondria, we could not study their presence with organelle-specific markers.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/88008/elife-88008-fig1-v1.jpg)
+
+**Figure 1.:** (A–I) Analysis of ABs, MVs, and EXOs isolated from human EF samples: morphology by TEM (A, D, and G), size distribution by DLS (B, E, and H), and protein marker expression by Western blotting (C, F, and I). TEM images obtained using two different protocols for an external (deposition processing, upper images) or internal (ultrathin slide processing, lower images) view of EVs. Size distribution analyzed in a single EF sample by DLS during the receptive phase for (B) ABs, (E) MVs, and (H) EXOs. Graphs show the average size distribution and percentage of total particles contained within the populations. Specific protein markers analyzed by Western blotting for (C) ABs, (F) MVs, and (I) EXOs. Analyzed markers (and associated molecular mass) were calnexin (90–100 kDa), calreticulin (60 kDa), VDAC1 (31 kDa), ARF6 (18 kDa), CD9 (24 kDa), CD63 (30–60 kDa), and TSG101 (45–50 kDa). (J and K) Particle concentration and size distribution measured by NTA for (J) MVs and (K) EXOs secreted throughout the menstrual cycle. One-way ANOVA and Kruskal-Wallis rank sum tests performed to compare the distinct menstrual cycle phases - no significant differences were observed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88008/elife-88008-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** TEM micrographs show morphological details of human EF (A and B) ABs, (C) MVs, and (D) EXOs. Images obtained via two different protocols to obtain an external (deposition processing) and internal (ultrathin slide processing) view. Isolated ABs displayed a wide range of vesicle sizes (>1 µm to <50 nm) with heterogeneous content composition, including membranous structures within ABs (B3). Image B2 corresponds to a higher magnification of image B1. MVs were considerably more abundant, with sizes from 200 to 700 nm (C1 and C2) with highly electron-dense heterogeneous contents (C3 and C4). EXOs displayed a similar aspect and abundance to MVs (D) with sizes of 40–160 nm but more homogeneous structures.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88008/elife-88008-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Size patterning and total particle concentration of isolated (A) MVs and (B) EXOs obtained from a single human EF sample isolated during the receptive phase of the menstrual cycle. The standard error of five measurements shown as the grey area in each graph.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/88008/elife-88008-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Particle concentration and size distribution by NTA for (A) MVs and (B) EXOs analyzed throughout the menstrual cycle.
 
 MVs displayed sizes ranging from 200 to 700 nm and possessed a heterogeneous electron-dense content, as noted by TEM (Figure 1D and Figure 1—figure supplement 1C, Image 3). MVs existed as a single population (98.7%) with a mean size of 290.8 nm by DLS (Figure 1E) and expressed specific molecular marker proteins (i.e. Calnexin, Calreticulin, ARF6, CD9, CD63, TSG101, and VDAC1) (Figure 1F). We observed an average MV concentration of 3.27·109±6.22·108 part/mL, as analyzed by NTA (Figure 1—figure supplement 2A).
 
@@ -61,17 +77,25 @@ We also measured the relative abundances of secreted MVs and EXOs across the men
 
 In summary, we discovered that the human endometrium secretes the three major EV subtypes and that the concentration of MVs and EXOs secreted into the EF does not significantly change during the different phases of the menstrual cycle.
 
-## Sequencing of endometrial EV-derived DNA isolated during the periconception period
+### Sequencing of endometrial EV-derived DNA isolated during the periconception period
 
 Next, we sequenced the DNA content of EF-derived EV populations (n=10) isolated during the periconceptional period (receptive endometrium, phase IV). We first used DNase pre-treatment of EVs to ensure bona fide DNA content for sequencing (Figure 2—figure supplement 1A and B and Materials and Methods). We compared the coding sequences obtained from isolated EVs with the ENSEMBL database, revealing the homogenous and more differentiated nature of ABs compared to MVs and EXOs, which possessed a more dispersed overlapping distribution. The grouping together of AB samples indicates a similar content, which differs from other EV subtypes. ABs, mainly generated by apoptotic cells, typically display greater homogeneity than MVs or EXOs, given their large size and the encapsulation of a greater amount of intracellular material, making their contents less specific (Figure 2—figure supplement 1C).
 
 All EV subtypes can encapsulate DNA, and we analyzed if any differences existed regarding DNA content using paired comparisons, with results displayed as volcano plots. MVs displayed significant differences regarding DNA content compared to ABs (Figure 2A) and EXOs (Figure 2B), while ABs and EXOs displayed no significant differences (data not shown). This suggests that MVs contain more specific DNA sequences than other EVs, as shown in volcano plots regarding FWER (α<0.05) and >twofold-change.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/88008/elife-88008-fig2-v1.jpg)
+
+**Figure 2.:** (A and B) Volcano plots comparing DNA sequence enrichment between ABs, MVs, and EXOs. Only MVs show significant sequence enrichment compared to ABs and EXOs. (C) Specific gene ID DNA sequences encapsulated within MVs compared to ABs and EXOs, which are mainly mitochondrial DNA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88008/elife-88008-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Sequencing analysis results for (A) ABs and (B) EXOs treated with (+DNase) and without (- DNase) DNase type I. (A and B; Left Panels) PCA analyses show grouping due to DNase treatment for both ABs and EXOs. (A and B; Right Panels) Volcano plots show the significant enrichment of DNA sequences in treated EVs (purple dots in volcano plots) versus untreated EVs (yellow dots in volcano plots). (C) Principal component analysis shows EV sample grouping due to specificity in coding-gene sequences.
+
 While elucidating the specific sequences of DNA encapsulated within EVs, we observed an average 11.12±0.53 fold change enrichment in thirteen specific known mitochondrial genes in MVs compared with EXOs (Figure 2C). MVs also displayed enrichment for two mitochondrial pseudogenes and a long intergenic non-coding RNA from the Chr1:536816–659930 genomic region compared to EXOs, and a mitochondrial pseudogene and three protein-coding genes from different genomic loci compared to ABs (Figure 2C).
 
 These results demonstrate that all EVs generally encapsulate DNA (nDNA and mtDNA), although MVs contain higher levels of mtDNA than ABs and EXOs.
 
-## Endometrial EVs encapsulate mtDNA while mtDNA levels become reduced in the receptive endometrium
+### Endometrial EVs encapsulate mtDNA while mtDNA levels become reduced in the receptive endometrium
 
 To understand the encapsulation of mtDNA in EVs and their secretion by endometrial cells, we analyzed the relative mtDNA content compared to the nDNA content of endometrial tissue biopsies from women undergoing hormone replacement therapy (HRT) during the receptive or periconceptional period (P+5). We analyzed receptivity status using the endometrial receptivity analysis (ERA) test (n=70), which demonstrated the number of women in pre-receptive, receptive or periconceptional, and post-receptive periods. We quantified the ratio between mtDNA/nDNA content using qRT-PCR, as previously described (DiezJuan et al., 2015). We observed a significant reduction (both p<0.001) of mtDNA in receptive (n=25) and post-receptive endometria (n=23) compared to the pre-receptive (n=22) phase (Figure 3A); furthermore, the post-receptive endometrium displays a significantly lower content of mtDNA compared to the receptive endometrium (p<0.001).
 
@@ -85,13 +109,29 @@ As MVs possess a considerable content of mtDNA during the receptive phase, we me
 
 Altogether, these data indicate a reduction in mtDNA content and the activation of mitochondrial clearance mechanisms in the human endometrium at times associated with embryo implantation alongside the secretion of mtDNA in endometrial MVs.
 
-## Vertical transmission of EV-derived DNA from the maternal endometrium to the embryo
+### Vertical transmission of EV-derived DNA from the maternal endometrium to the embryo
 
 To provide evidence for the internalization of EVs (and associated DNA) by murine embryos, we used the endometrial Ishikawa cell line to produce EVs containing DNA tagged with a synthetic molecule (Materials and methods) to support the tracking of EV-derived DNA uptake. Before confocal experiments, we first confirmed the ability of DNA to become internalized by EVs/packaged into EVs by flow cytometry (Figure 4—figure supplement 1). Confocal imaging demonstrated that ABs released from Ishikawa cells effectively transported DNA into the cells of the embryo, reaching the cytoplasm (Figure 4) and colocalizing with nuclei (Arrows in Figure 4—figure supplement 2). A considerable amount of AB-delivered DNA accumulated in large deposits in discrete zones of the embryo, but mainly in the cytoplasm (Figure 4). MVs delivered DNA into the trophectoderm of the embryo (Figure 4 and Figure 4—figure supplement 2), with DNA transmission occurring in a widespread spotted pattern at the perinuclear level. We also observed evidence for the delivery of DNA into the embryo cell cytoplasm and nuclei by EXOs; of note, the small size of EVs makes their robust imaging more challenging than for ABs and MVs (Figure 4 and Figure 4—figure supplement 2). Regardless of the subtype, EV-derived DNA internalized into hatched trophectoderm (sites where direct contact is possible; Figure 4). The control conditions (Figure 4 - Neg), which contained cell-free DNA and residual small-sized EVs, failed to demonstrate any detectable signal indicating the transfer of DNA into the cells of the embryo, suggesting that DNA transport from the mother to the embryo at the endometrial level requires EVs (Figure 4). As final proof of the internalization of EV-derived DNA into the cytoplasm/nuclei of embryo cells, we constructed Z-stack/orthogonal projection images (Figure 4—figure supplement 2). To prove the internalization of mtDNA, we analyzed the incorporation of free (not encapsulated within EVs or other artificial vesicles) synthetic molecules of labeled mtDNA within embryos using confocal microscopy; overall, we also observed robust mtDNA internalization by trophectodermal cells of hatched embryos (Figure 4—figure supplement 3).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88008/elife-88008-fig4-v1.jpg)
+
+**Figure 4.:** Confocal images show hatched embryos after co-culture with EdU-tagged ABs, MVs, and EXOs isolated from Ishikawa cell supernatants. Embryo membranes were visualized with Wheat germ agglutinin (WGA) in red, embryo nuclei with DAPI, and EdU-tagged transferred DNA in green. Zoomed images taken from the areas demarcated by white boxes in merge images. Cell-free DNA and residual small-sized EVs were used as control conditions (Neg). Scale bar in zoom = 20 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88008/elife-88008-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** EXOs, MVs, and ABs isolated from non-EdU-tagged (Control) and EdU-tagged DNA (EdU-DNA) were analyzed by flow cytometry for complexity (SSC-A) and EdU-488 staining (FITC-A). Gates show positive EdU-488 EVs percentage in the distinct populations.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88008/elife-88008-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Images show hatching/hatched embryos after co-culture with EdU-tagged EVs (ABs, MVs, and EXOs). White arrows show the co-localization of tagged DNA and nuclei, indicating the nuclear location of extracellular vesicle-derived DNA. Embryo membranes are visualized with WGA in red, embryo nuclei with DAPI, and EdU-tagged transferred DNA in green. Cell-free DNA and residual small-sized EVs were used as control conditions (Neg). Bars = 20 µm. Red lines indicate the intersection for orthogonal image acquisition.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/88008/elife-88008-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Embryos co-incubated with 10 µM of an ATP8 DNA sequence (mtDNA fragment) conjugated with Biotin overnight ATP8-Biotin DNA were detected with streptavidin-Cy3 (Green) and nuclei counterstained with DAPI (Blue). Negative control embryos incubated without the ATP8-Biotin show the background signal after streptavidin-Cy3 staining.
+
 Overall, we demonstrate that DNA-containing EVs generated by human endometrial cells become internalized by the trophectoderm of murine embryos in vitro.
 
-## Bioenergetic impact of endometrial EV-derived DNA uptake by the embryo
+### Bioenergetic impact of endometrial EV-derived DNA uptake by the embryo
 
 To assess the functional relevance of vertical endometrial EV-derived DNA transmission and the impact on embryo bioenergetics, we analyzed ATP concentrations in cells of the embryo. We co-cultured overnight hatched murine blastocysts with different human EF-derived EV populations (either separately or combined) derived from five donors during the receptive phase of the menstrual cycle and compared results with those from embryos cultured in the absence of endometrial EVs (Control, Cnt). We found a significant reduction in ATP levels following embryo co-culture with ‘All EVs’ or EXOs compared to control embryos (both p<0.001; Figure 5A); however, murine embryos incubated with only ABs or MVs from human EF maintained ATP levels similar to control (p>0.05). These results suggest that EVs (EXOs in particular) significantly impact ATP consumption/production in the embryo. The observed reduction in ATP concentration after exposure to ‘All EVs’ and EXOs indicates an increase in cellular metabolic rate; therefore, embryos display ATP turnover after internalizing endometrial EVs, a situation that imitates the physiological state at periconception when the embryo comes into contact with the EF and EVs secreted by the endometrium.
 
@@ -119,21 +159,21 @@ We suggest EVs as vectors for transporting nDNA and mtDNA into the pre-implantat
 
 ## Methods
 
-## Experimental design
+### Experimental design
 
 EF samples were collected from women undergoing natural (healthy volunteers aged 18–35) cycles and women undergoing hormonal replacement therapy. EF samples for the natural menstrual cycle were collected from each donor (one from each) and classified according to the menstrual cycle as phase I (early proliferative, days 0–8 (n=6)), phase II (late proliferative, days 9–14 (n=7)), phase III (early secretory, days 15–18; (n=7)), phase IV (mid-secretory or preconception period, days 19–24; n=36), and phase V (late secretory phase, days 25–30; (n=6)). Additional sets of EF samples were collected from women undergoing hormonal replacement therapy in pre-receptive (P+2), receptive (P+5), or post-receptive (P+8) stages (n=12 donors; three collections/donor) for a total of n=30 EF. The total number of EF samples collected for this study was n=62. Endometrial biopsies were collected from women undergoing hormonal replacement therapy in receptive (P+5) stages (n=70). The number of samples used in every experiment is specified throughout the methods section.
 
 Inclusion criteria were patients with regular menstrual cycles, body mass index (BMI) of 18–30 kg/m2, no contraceptive devices or hormonal treatment in the past three months, negative for bacterial/viral infectious diseases, and without obvious uterine or adnexal pathologies. The IRB committee approved this study at IVI Valencia, Spain (1603-IGX-017-FV and IGX1-VES-FV-21–04), and all subjects provided signed informed consent.
 
-## Endometrial fluid sampling
+### Endometrial fluid sampling
 
 After cleansing the vaginal channel, EF samples were obtained from the uterine fundus using a double lumen embryo transfer catheter (Wallace, Smiths Medical International, Minneapolis, MN, USA) introduced into the uterine cavity and applying gradual suction using a 10-mL syringe. The vacuum was stopped to prevent contamination with cervical mucus, the catheter was gently removed, and EF was introduced in an Eppendorf tube for storage at –80 °C until processing.
 
-## EV isolation from endometrial fluid
+### EV isolation from endometrial fluid
 
 Each EF sample was resuspended in 1 mL of cold (4 °C) Dulbecco’s PBS without Ca2+/Mg2+ (L0615-500; Biowest, Barcelona, Spain) to prevent salt precipitation. Resuspensions were homogenized by extensive pipetting and vortex, and samples were treated with 50 U/mL DNase type I (D4513; Sigma-Aldrich, Madrid, Spain) to disaggregate mucus and eliminate extravesical DNA. For EV isolation, each resuspended EF sample volume was increased to 4 mL with PBS, and samples underwent a series of differential centrifugations and filtration; centrifuged twice at 300 x g for 10 min to pellet residual cells and debris, with the resulting supernatants centrifuged at 2000 x g for 10 min, passed through 0.8 µm-diameter filters (GE Healthcare, Life Sciences, Whatman, UK), centrifuged at 10,000 x g for 30 min, passed through 0.22 µm-diameter filters (Acrodisc syringe filters, Pall Corp., Newquay, Cornwall, UK), and ultracentrifuged at 120,000 x g for 70 min using a P50AT4 rotor (Hitachi Koki Co. Ltd., Tokyo, Japan). Pellets were washed in 1 mL PBS and centrifuged again under the same conditions to obtain fractions subsequently enriched in ABs (2,000 x g for 15 min), MVs (10,000 x g for 40 min), and EXOs (120,000 x g for 70 min, using a Hitachi P50A3 rotor). The resulting supernatants were kept as negative controls. All centrifugations were carried out at 4 °C.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Pellets from serial differential centrifugations of single EF samples (n=4, 2 per each technique) obtained in phase IV of the natural cycle were analyzed by two TEM techniques.
 
@@ -141,21 +181,21 @@ Deposition and positive staining (to evaluate external aspects and preliminary s
 
 Inclusion in LR-white resin and ultrathin cuts (to evaluate EV internal structures and general contents): Isolated pellets were carefully fixed in 50 μL of Karnovsky’s solution without disturbing the pellet. Fixed pellets were washed five times in PBS for 5 min each and stained in a 2% osmium tetroxide/0.2 M PBS solution for 2 hr. Samples were dehydrated, embedded in resin (Epoxy), and ultra-sectioned in 60 nm slices. Samples were observed using a JEM-1010 TEM (Jeol Korea Ltd., Seoul, South Korea) at 80 kV coupled to a digital camera MegaView III.
 
-## Western blotting
+### Western blotting
 
 EV populations isolated from phase IV of natural cycle human EF (n=3) were lysed in 50 μL of RIPA buffer (150 mM NaCl, 1% IGEPAL CA 630, 0.5% Na-DOC, 0.1% SDS, 0.5 M EDTA, 50 mM Tris-HCl, pH 8) prepared with protease inhibitors [89% RIPA, 1% 0.1 M PMSF (Sigma-Aldrich, Madrid, Spain), 10% Roche Mini Complete (Roche, Madrid, Spain)]. The protein content of EV samples, supernatants obtained during EV isolation, and tissue cell lysates were quantified by Bio-Rad Protein Assay (Bio-Rad Laboratories, Hercules, CA, USA). The cell lysate was generated as a Western blot positive control from the human endometrial epithelium Ishikawa cell line (Sigma-Aldrich, Madrid, Spain), as in a previous study (Vilella et al., 2015). Equal protein amounts were denatured at 95 °C, electrophoresed by SDS-PAGE, and transferred to PVDF membranes (Bio-Rad Laboratories).
 
 Membranes were blocked in 5% skim milk in 1% Tween-20 in PBS (PBS-T) and incubated overnight at 4 °C with the following primary antibodies: rabbit anti-calnexin (1:1000; ADI-SPA-865; Enzo Life Sciences, Farmingdale, NY, USA), mouse anti-calreticulin (1:1000; ab22683; Abcam, Cambridge, UK), rabbit anti-VDAC1 (1:1000; ab154856; Abcam), rabbit anti-ARF6 (1:1000; ab77581; Abcam), mouse anti-CD63 (1:1000; ab59479; Abcam), rabbit anti-CD9 (1:1000; ab92726; Abcam), and rabbit anti-TSG101 (1:1000; 125011; Abcam). The following day, membranes were washed and incubated with secondary antibodies: goat anti-mouse (1:10,000; sc-2005; Santa Cruz Biotechnology, Dallas, TX, USA) or goat anti-rabbit (1:20,000; EXOAB-KIT-1; System Biosciences, Palo Alto, CA, USA). Protein signals were detected using the SuperSignal West Femto Chemiluminescent kit (Thermo Fisher Scientific, Waltham, MA, USA) and a LAS-3000 imaging system (Fujifilm, Japan).
 
-## Dynamic light scattering
+### Dynamic light scattering
 
 Two EF samples were used for the ZetaSizer Nano (Malvern Instruments Corp., Malvern, UK), a device based on dynamic light scattering (DLS) technology, which was used to generate general size distribution patterns of the different EV fractions in a wide size range (1–6000 nm). For analysis, pellets from serial differential centrifugation steps were resuspended in 1 mL of PBS without Ca2+/Mg2+, transferred to 4 mL polystyrene cuvettes, and analyzed on a Malvern ZetaSizer Nano‐ZS 90.
 
-## Nanoparticle tracking analysis
+### Nanoparticle tracking analysis
 
 EF samples for the natural menstrual cycle, phase I (early proliferative, days 0–8 [n=6]), phase II (late proliferative, days 9–14 [n=7]), phase III (early secretory, days 15–18; [n=7]), phase IV (mid-secretory or preconception period, days 19–24; n=6), and phase V (late secretory phase, days 25–30; (n=6)). NanoSight 300 (Malvern Instruments Corp.), a technology based on nanoparticle tracking analysis (NTA) principles, was used to finely analyze EV size distribution and concentrations from EF samples throughout the menstrual cycle using light scattering properties. Due to its more limited size working range (up to 1000 nm), ABs could not be analyzed. To normalize concentration measurements, EF volumes were measured prior to EV isolation so that we could refer to EV concentration per mL. Pellets containing isolated vesicles were resuspended in 1 mL PBS without Ca2+/Mg2+ and introduced into the NanoSight 300.
 
-## High throughput sequencing of the DNA cargo from human endometrial EVs
+### High throughput sequencing of the DNA cargo from human endometrial EVs
 
 To analyze the DNA cargo of the different EV populations within the human EF, EVs were isolated from single EF samples in phase IV (n=10) of the menstrual cycle as described above. To eliminate DNA stuck externally to the vesicles, isolated EVs were treated with 50 U/mL DNaseI (Sigma-Aldrich, ref D4513) in a solution containing 20 mM Tris-HCl, 10 mM MgCl2 and 1 mM CaCl2 and incubated at 37 °C for 30 min while gently shaking. DNase type I pre-treatment was performed to ensure that bona fide DNA cargo was sequenced. To prove the use of DNase, a total of six EF phase IV samples were pooled and separated in fractions and divided into three different groups: control group (no DNase), treated with DNaseI, and treated with DNaseI +exonuclease T5; the PCA for coding gene sequences demonstrated that DNase treatment accounted for 56% and 57% of the total variability for ABs and EXOs, respectively, in PC1 (Figure 2—figure supplement 1A, B). Associated volcano plots revealed abundant enrichment in coding sequences over whole genomic DNA after DNase treatment (Yellow dots). These results indicated that external DNA contamination masks EVs DNA cargo, which should be prevented by DNase treatment to investigate specific EVs DNA inner cargo.
 
@@ -163,31 +203,31 @@ After digestion, DNaseI was heat-inactivated by incubating at 75 °C for 10 min 
 
 In all cases, libraries were constructed using the Nextera XT DNA Library Prep Kit (Illumina, ref FC-131–1024) following the manufacturer’s instructions. As variable parameters, libraries AMPure XP (Beckman Coulter, ref 082A63881) purification was carried out at 1 X, bead-based normalization was chosen, and, following Illumina’s instructions, a 4 µL volume was chosen for serial dilution in 996 µL and 750 µL/750 µL in HT1. Finally, libraries were sequenced by an Illumina NextSeq 500 (Illumina) using a 300-cycle NextSeq 500 High Output v2 Kit cartridge (Illumina, ref FC-404–2004).
 
-## DNA sequencing analysis
+### DNA sequencing analysis
 
 Raw data from pair-ended Illumina sequencing was converted into FASTQ files using bcl2fastq (version 2.16.0.10). Raw counts were normalized using the TMM method from the edgeR R package, and each sample was aligned to the reference genome (GRCh37) using BWA (version 0.7.10). Reads with mapping quality >90% were filtered using Samtools (version 1.1), and duplicates were removed with PICARD software. Insert size was retrieved from filtered reads using PICARD software, and feature coverage was obtained with Bedtools (version 2.17.0) using Ensembl Biomart hg19 annotations. For the following bioinformatics analysis, reads mapping to chromosome Y and noisy samples were filtered out. The approach used for differential DNA enrichment analysis was based on the edgeR methodology. PCA graphs were obtained from log2 normalized CPM using the prcomp R function for all samples and comparisons. Descriptive and Pearson’s correlation analyses were carried out to analyze the effect of reducing initial DNA concentration.
 
-## Endometrial biopsies
+### Endometrial biopsies
 
 All patients underwent an HRT cycle for endometrial preparation (n=70). Endometrial biopsies were collected from the uterine fundus using a pipette under sterile conditions. The day of the endometrial biopsy is calculated after estrogen priming, leading to a trilaminar endometrium measuring ≥6.5 mm after five full days of progesterone impregnation (~120 hr). After the biopsy, the endometrial tissue was transferred to a cryotube containing 1.5 mL RNAlater (Qiagen), vigorously shaken for a few seconds, and kept at 4 °C or on ice for ≥4 hr. Determining the receptivity window used the ERA test, as previously described (DiazGimeno et al., 2011). Biopsies were classified as receptive (n=25), pre-receptive (n=22), and post-receptive (n=23).
 
-## Determination of mitochondrial DNA copy number in biopsies
+### Determination of mitochondrial DNA copy number in biopsies
 
 Relative amounts of nDNA and mtDNA were determined by quantitative RT-PCR as previously described (DiezJuan et al., 2015). The nuclear gene β-actin was selected as a housekeeping gene for normalization. mtDNA was quantified using an mtDNA fragment within the ATP8 gene. The ratio of mtDNA/nDNA was used to indicate the mitochondrial copy number per cell.
 
-## Quantitative RNA sequencing in Biopsies
+### Quantitative RNA sequencing in Biopsies
 
 A total of 100 ng total RNA was reverse transcribed using the Ion AmpliSeq Transcriptome Human Gene Expression Kit following the manufacturer’s protocol (Thermo Fisher Scientific). Target genes (SQSTM1, MAP1LC3A, PINK1, MRPS16, MRPS9, and TOMM22) were amplified using an Ion AmpliSeq Transcriptome Human Gene Expression Core Panel (Thermo Fisher Scientific). Amplicons were ligated to barcode adapters and purified using Agencourt AMPure XP reagent (Beckman Coulter Inc). After purification, amplicons were eluted and normalized before emulsion PCR and chip loading on the Ion Chef system, obtaining reads with an average length of 200 bp. The sequencing data were aligned using the ampliSeqRNA plugin for Ion Torrent sequencing platforms (Thermo Fisher Scientific).
 
-## mtDNA copy number quantification in MVs
+### mtDNA copy number quantification in MVs
 
 As detailed above, EVs isolated from EF (n=21) in different menstrual cycle stages (P+2 n=7, P+5 n=7, P+8 n=7) were DNase treated to eliminate extravesical DNA contamination. MVs-derived DNA was amplified using the Sureplex DNA amplification system (Illumina) according to the manufacturer’s instructions. This amplification step increases the DNA yield obtained per sample to ensure a sufficient amount for qPCR analysis without altering the proportion of the different sequences. Samples were purified using AMPure XP beads (Beckman Coulter), and the DNA was quantified using D1000 ScreenTape in a TapeStation 4200 instrument (Agilent). Only DNA samples containing >0.1 ng/µL were used for the qPCR analysis. The mitochondrial ATP8 gene was amplified in a qPCR machine using the following primers: Forward 5'-CTAAAAATATTAAACACAAACTACCACCTACCTC-3' and Reverse 5'-GTTCATTTTGGTTCTCAGGGTTTGTTATAA-3'. Standard curves were created by qPCR amplifying serial dilutions of the ATP8 amplicon and used to calculate the copy number of mtDNA in 250 pg of DNA per reaction. Half of the MVs samples were used to calculate the concentration of MVs by NTA analysis, and the mtDNA copy number was normalized with the number of MVs (mtDNA copy number/MV).
 
-## Murine embryo isolation and culture
+### Murine embryo isolation and culture
 
 Murine embryos were obtained from B6C3F1/Crl mice (Charles River Laboratories, Saint-Germain-Nuelles, France). The Animal Care and Use Committee of Valencia University (CEBA) authorized the project under the identifier: 2015/VSC/PEA/00048. The embryo recovery and culture processes were adapted from our previous work (Vilella et al., 2015). Briefly, female mice aged 6–8 weeks were stimulated to ovulate by 10 IU intraperitoneal injection of Foligon/PMSG (MSD Animal Health, Spain) followed by intraperitoneal administration of 10 IU of Ovitrelle 250 µg/0.5 mL (Merck Serono, Germany) 48 hr later. At that point, females were mated with males of the same strain for 48 hr, checking for the presence of a vaginal plug. Plug-positive females were sacrificed by cervical dislocation, and embryos were collected from the oviduct by flushing with PBS using a 30-gauge blunt needle. Embryos were then washed four times in overnight oxygenated G-2 plus medium (G-2 PLUS, Vitrolife, Barcelona, Spain) and cultured until hatching for 48 hr in the same medium (day E3.5 of embryo development). An average of 30–40 embryos per female were obtained, with 60% reaching the hatching state with excellent quality at E3.5.
 
-## Tagged-DNA production and EV internalization by murine embryos
+### Tagged-DNA production and EV internalization by murine embryos
 
 The human authenticated Ishikawa cell line were bought on Sigma Aldridge (99040201-DNA-5UG), that came from ECACC, and tested as mycoplasma negative prior to perform the experiment. The cells were grown in flasks in Modified Eagle’s Medium (MEM, Gibco, Thermo Fisher Scientific, ref 10370021), supplemented with 5% fetal bovine serum (Biowest, Barcelona, Spain, ref S181B-500), 1% non-essential amino acids (Gibco, Thermo Fisher Scientific, ref 11140035), 1% Glutamax (Gibco, Thermo Fisher Scientific, ref 35050–038), 0.2% 50 mg/mL gentamicin (Gibco, Thermo Fisher Scientific, ref 15750–037) and 0.2% 250 µg/mL amphotericin B (Gibco, Thermo Fisher Scientific, ref 15290026), until 60–70% confluence.
 
@@ -197,19 +237,19 @@ Pellets containing Ishikawa EdU DNA-tagged EVs were added to good-quality E3.5 h
 
 The Click-iT EdU Alexa Fluor 488 flow cytometry assay Kit (Thermo Fisher Scientific, ref: C10420) was used to analyze EdU incorporation within the different EV subpopulations obtained from Ishikawa cells. A fraction of the isolated EVs from EdU-labeled and non-labeled Ishikawa cells were pelleted and resuspended with the Click-it Plus reaction cocktail following the manufacturer’s instructions. After a washing step, EVs were analyzed in a cytoFLEX flow cytometer (Beckman Coulter), and the data were analyzed with FlowJo software.
 
-## mtDNA internalization by mouse embryos
+### mtDNA internalization by mouse embryos
 
 Hatched mouse embryos (3.5 days) were co-culture with an ATP8 sequence (Forward: /5Biosg/ctaaaaatattaaacacaaactaccacctacctccctcaccaaagcccataaaaataaaaaattataacaaaccctgagaaccaaaatgaac; Reverse: /5Biosg/gttcattttggttctcagggtttgttataattttttatttttatgggctttggtgagggaggtaggtggtagtttgtgtttaatatttttag) conjugated with Biotin (manufactured by IDT) overnight at 37 °C and 5% CO2. Embryos were permeabilized with 0.1% Triton-X-100 in PBS for 20 min, blocked with 3% bovine serum albumin in PBS for 30 min shaking, incubated with Streptavidine-Cy3 (S6402, Merck; dilution 1:100) for 45 min, washed twice in PBS, and then visualized using an SP8 confocal microscope (Leica).
 
-## Analysis of embryo ATP level modulation after co-incubation with human EVs
+### Analysis of embryo ATP level modulation after co-incubation with human EVs
 
 To analyze the impact of EVs in embryo bioenergetics modulation, EF samples (n=5) in phase IV of the menstrual cycle were pooled, and their EV populations were isolated as described above. Embryos from ten mice were obtained and incubated until day E3.5, when only hatching embryos were co-incubated with isolated EF-derived EVs overnight. The following day, embryos were washed in PBS, collected in 1 µL PBS, and passed into 96-well opaque plates (Sigma-Aldrich, ref: CLS3917-100EA) in 50 µL H2O. Replicates of ten good-quality embryos were employed, achieving six replicates (n=60) for ABs and MVs, five for EXOs and all EVs conditions, and three for fresh G2 condition media. One µL PBS was included in duplicate in 50 µL H2O as a control of the embryo transport vehicle, and an ATP standard curve was generated with fifteen total ATP points from 5 fmol to 50 pmol in duplicate (including a blank) in 50 µL H2O. ATP measurements were carried out using an ATP bioluminescent somatic cell assay kit (FLASC, Sigma), adapting the protocol from previous studies of human/murine blastomeres and oocytes (Van Blerkom et al., 1995; Stojkovic et al., 2001). Stock solutions were prepared following the manufacturer’s instructions. The reaction mix was prepared by diluting FLAAM working solution 1:10 in FLAAB and incubating for 5 min at 28 °C in the dark. Samples on the plate were added 100 µL 1 X ice-cold FLSAR, incubated for 5' at 4 °C, and continued processing in a ClarioStar BMG Labtech (BMG Labtech, Germany, Software Version 5.21 .R2). The device dispensed 100 µL reaction mix and measured luminescence produced by the luciferase reporter system in consecutive cycles of 1.8 s reaction mix injection, 2 s shaking, and 2 s measurement. The gain was adjusted with the higher ATP standard.
 
-## Mitochondrial function assays in embryos
+### Mitochondrial function assays in embryos
 
 The Seahorse XFe96 Extracellular Flux Analyzer instrument (Agilent) was used to measure the OCR of cultured murine embryos. Hatching/hatched stage embryos were incubated with pre-receptive (P+2; n=4) and receptive stage (P+5; n=5) EF-derived EVs P+2 derived EXOs (n=4; total embryos: 110); P+2 derived MVs (n=4; total embryos: 130); P+5 derived EXOs (n=4; total embryos: 120); P+5 derived MVs (n=5; total embryos: 150) overnight. Embryos incubated without EVs were used as a control group (n=6; total embryos: 160), while blocked embryos were used as negative control (n=3; total embryos: 120). A total of 720 murine embryos were used for this experiment. Embryos were seeded at ten embryos/well with XF DMEM medium containing 10 mM glucose, 2 mM L-glutamine, and 1 mM pyruvate and stimulated sequentially with 1 µM oligomycin, 1.5 µM carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP), and 0.5 µM rotenone +antimycin A. Three/four replicates per condition were used in each experiment.
 
-## Data analysis
+### Data analysis
 
 ZetaSizer Nano corresponding to particle concentrations for different EV populations were obtained as an average value from five independent measures of random NTA fields. The standard error for different measures was calculated and represented for each curve as an indicator of the evenness of particles across the sample.
 

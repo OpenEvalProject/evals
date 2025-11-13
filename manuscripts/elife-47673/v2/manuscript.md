@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.47673.001 The functions of FGF receptors (FGFRs) in early development of the cerebral cortex are well established. Their functions in the migration of neocortical projection neurons, however, are unclear. We have found that FGFRs regulate multipolar neuron orientation and the morphological change into bipolar cells necessary to enter the cortical plate. Mechanistically, our results suggest that FGFRs are activated by N-Cadherin. N-Cadherin cell-autonomously binds FGFRs and inhibits FGFR K27- and K29-linked polyubiquitination and lysosomal degradation. Accordingly, FGFRs accumulate and stimulate prolonged Erk1/2 phosphorylation. Neurons inhibited for Erk1/2 are stalled in the multipolar zone. Moreover, Reelin, a secreted protein regulating neuronal positioning, prevents FGFR degradation through N-Cadherin, causing Erk1/2 phosphorylation. These findings reveal novel functions for FGFRs in cortical projection neuron migration, suggest a physiological role for FGFR and N-Cadherin interaction in vivo and identify Reelin as an extracellular upstream regulator and Erk1/2 as downstream effectors of FGFRs during neuron migration.
+The functions of FGF receptors (FGFRs) in early development of the cerebral cortex are well established. Their functions in the migration of neocortical projection neurons, however, are unclear. We have found that FGFRs regulate multipolar neuron orientation and the morphological change into bipolar cells necessary to enter the cortical plate. Mechanistically, our results suggest that FGFRs are activated by N-Cadherin. N-Cadherin cell-autonomously binds FGFRs and inhibits FGFR K27- and K29-linked polyubiquitination and lysosomal degradation. Accordingly, FGFRs accumulate and stimulate prolonged Erk1/2 phosphorylation. Neurons inhibited for Erk1/2 are stalled in the multipolar zone. Moreover, Reelin, a secreted protein regulating neuronal positioning, prevents FGFR degradation through N-Cadherin, causing Erk1/2 phosphorylation. These findings reveal novel functions for FGFRs in cortical projection neuron migration, suggest a physiological role for FGFR and N-Cadherin interaction in vivo and identify Reelin as an extracellular upstream regulator and Erk1/2 as downstream effectors of FGFRs during neuron migration.
 
 ## Introduction
 
@@ -36,61 +36,121 @@ In this paper we report that FGFR1-3 have overlapping functions during the multi
 
 ## Results
 
-## FGFRs are required for multipolar neurons to orient correctly and become bipolar in vivo
+### FGFRs are required for multipolar neurons to orient correctly and become bipolar in vivo
 
 To avoid potential functional redundancy, we tested the importance of FGFRs in neuron migration by inhibiting all family members. Cytoplasmic domain deletion mutants of FGFR1-3 are dominant negative (DN) because they form non-functional heterodimers with all FGFR family members (Ueno et al., 1992). To avoid effects on neurogenesis, DN mutants were expressed from the NeuroD promoter, which is activated after cells leave the VZ (Jossin and Cooper, 2011). Apical neural stem cells located at the VZ were electroporated in utero (Tabata and Nakajima, 2001) at embryonic day E14.5 with DN FGFR1-3 along with GFP and the positions of daughter cells were monitored 3 days later at E17.5. While most control neurons expressing GFP alone had entered the RMZ, neurons over-expressing DN mutant but not full-length FGFR1-3 were arrested in the MMZ (Figure 1a). These results suggest that the FGFR1-3 cytoplasmic domains are important for multipolar migration. The knock-down of FGFR1 or FGFR2 using specific shRNAs also induced an arrest of cells at the MMZ, with a more pronounced phenotype when the two receptors are downregulated together (Figure 1b, Figure 1—figure supplement 1). The knock-down of FGFR3 resulted in a small, statistically non-significant effect on cell positioning (Figure 1b, Figure 1—figure supplement 1). These results suggest that FGFRs work redundantly with a prominent role for FGFR1 and FGFR2.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig1-v2.jpg)
+
+**Figure 1.:** (a,b) shRNA against FGFR1, 2 or 3 and dominant-negative (DN) but not wildtype FGFR1, 2 or 3 induce an accumulation of neurons at the MMZ. (a) pNeuroD-FGFR(DN) and pNeuroD-FGFR plasmids, expressed in neurons, and (b) shRNA against FGFR1, 2 or 3 or negative control shRNA (shCtrl) were co-electroporated in utero with pCAG-GFP, expressed in progenitors and neurons, at embryonic day (E) 14.5. (a,b) Three days later, cryosections were prepared and labeled for DAPI (blue) and GFP (green). The cerebral wall was subdivided into radial morphology zone (RMZ), multipolar morphology zone (MMZ) and VZ. Graphs show the percentage of cells in the RMZ. n = 5 Control, 7 FGFR1(DN), 4 FGFR2(DN), 4 FGFR3(DN), 3 FGFR1, 3 FGFR2, 4 FGFR3, 6 shCtrl, 4 shFGFR1, 4 shFGFR2, 4 shFGFR3, 5 shFGFR1+2, 3 shFGFR1+3, 3 shFGFR2+3. P values: FGFR1(DN): 9.6E-6, FGFR2(DN): 4.2E-6, FGFR3(DN): 4.0E-5, FGFR1: 0.245, FGFR2: 0.170, FGFR3: 0.353, shFGFR1: 3.0E-4, shFGFR2: 2.9E-3, shFGFR3: 0.169, shFGFR1+2: 6.4E-5, shFGFR1+3: 1.0E-4, shFGFR2+3: 3.2E-3. Error bars, s.e.m. ***p<0.001, **p<0.01, *p<0.05, NS, not significant Scale bar 100 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) HEK293T cells were transfected with pCAG-FGFR1-GFP, FGFR2-GFP, FGFR3-GFP together with expression vectors for shRNAs against the corresponding receptor or a negative control shRNA (shCtrl). Protein levels were determined by Western blot two days later. (b) E14.5 embryos were electroporated in utero with a mixture of pCAG-CherryFP, pNeuroD-FGFR1-GFP, FGFR2-GFP or FGFR3-GFP and an expression vectors for shRNA against the corresponding receptor or negative control shRNA. Two days later, CherryFP and FGFRs-GFP were detected by epifluorescence.
 
 To test whether inhibition of FGFRs alters cell proliferation, fate or apoptosis, we examined marker expression 2 days after electroporation. At this stage there is no significant difference between FGFR-inhibited and control cells in their position in the cortex, with most GFP+ cells located within the IZ. FGFR1(DN) had no effect on the proportion of GFP+Ki67+ proliferative cells, GFP+Sox2+ apical neural stem cells or GFP+Tbr2+ basal progenitors (Figure 2a). FGFR-inhibited neurons were correctly specified, as shown by the normal expression of Satb2, a marker for upper layer neurons born at the time of the electroporation. Immunostaining for activated caspase-3 showed no increase in cell death (Figure 2a).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig2-v2.jpg)
 
-**Figure 2.:** In utero electroporation was performed at embryonic day E14.5 and analyzed 2 days later (a–f) or 3 days later (g–i). (a) Inhibition of FGFRs did not affect cell division (Ki67), apical (Sox2) or basal (Tbr2) progenitor cells, neuronal commitment (Satb2), or survival (cleaved Caspase-3). Expression of CherryFP (red) alone (control) or with FGFR1(DN) as indicated. After immunostaining for the indicated markers (green), the results were quantified by counting the number of labeled electroporated cells in a constant area of each section and averaged across sections from at least three different embryos for each antibody. Values are normalized to control (100%). (mean ± s.e.m.). NS, not significant. Scale bars, 50 μm for Ki67, Sox2 and Tbr2, 25 µm for Satb2, 100 μm for cleaved Caspase 3. (b, c, d) Inhibition of FGFR did not affect the number of neurites or the length to width morphology of multipolar cells. (b) High magnification of GFP+ multipolar neurons within the MMZ following overexpression of GFP or FGFR(DN). (c) Proportion of GFP+ cells with the indicated number of neurites within the MMZ. (d) Ratio of length/width of the GFP+ cells within the MMZ as an indicator of cell shape. P value: 0.196. (mean ± s.e.m.). NS, not significant. Arrows indicate the neurites, arrowheads indicate the axons. Scale bar 10 µm e) FGFR-inhibited neurons are disoriented. Golgi staining (green) of MMZ neurons (purple). The figure shows examples of multipolar neurons with their Golgi facing the CP (white arrows) or facing other directions (white arrowheads). The percentage of cells with Golgi facing the cortical plate was calculated (mean ± s.e.m.). *p<0.05, P value: 0.013. Scale bar 10 µm. (f) FGFR inhibition affects the multipolar to radial transition. Computer-based reconstruction of GFP+ neurons morphologies at the multipolar to radial transition zone (MRT) and the lower RMZ. The graph shows the percentage of bipolar radially oriented neurons. Scale bar 30 µm. Error bars, s.e.m. ***p<0.001, P value: 6.5E-6. (g, h, i) Inhibition of FGFR did not affect the length of the leading process and the length-to-width morphology of radially migrating cells. (g) High magnification of GFP+ bipolar neurons within the RMZ following overexpression of GFP or FGFR(DN). (h) Length of the leading process of GFP+ bipolar cells within the RMZ. P value: 0.180. (i) Ratio of length/width of the GFP+ cells within the RMZ as an indicator of cell shape. P value: 0.155 Arrows indicate the leading process, Scale bar 10 µm. (mean ± s.e.m.). NS, not significant.10.7554/eLife.47673.006Figure 2—source data 1.(a) Inhibition of FGFRs did not affect cell division (Ki67), apical (Sox2) or basal (Tbr2) progenitor cells, neuronal commitment (Satb2), or survival (cleaved Caspase-3). Expression of CherryFP (red) alone (control) or with FGFR1(DN) as indicated. After immunostaining for the indicated markers (green), the results were quantified by counting the number of labeled electroporated cells in a constant area of each section and averaged across sections from at least three different embryos for each antibody. (c, d) Inhibition of FGFR did not affect the number of neurites or the length to width morphology of multipolar cells. (c) Proportion of GFP+ cells with the indicated number of neurites within the MMZ. (d) Ratio of length/width of the GFP+ cells within the MMZ as an indicator of cell shape. (e) FGFR-inhibited neurons are disoriented. Golgi staining (green) of MMZ neurons (purple). The figure shows examples of multipolar neurons with their Golgi facing the CP (white arrows) or facing other directions (white arrowheads). The percentage of cells with Golgi facing the cortical plate was calculated (mean ± s.e.m.). (f) FGFR inhibition affects the multipolar to radial transition. Computer-based reconstruction of GFP+ neurons morphologies at the multipolar to radial transition zone (MRT) and the lower RMZ. The table shows the percentage of bipolar radially oriented neurons. (h, i) Inhibition of FGFR did not affect the length of the leading process and the length-to-width morphology of radially migrating cells. (h) Length of the leading process of GFP+ bipolar cells within the RMZ. (i) Ratio of length/width of the GFP+ cells within the RMZ as an indicator of cell shape.
+**Figure 2.:** In utero electroporation was performed at embryonic day E14.5 and analyzed 2 days later (a–f) or 3 days later (g–i). (a) Inhibition of FGFRs did not affect cell division (Ki67), apical (Sox2) or basal (Tbr2) progenitor cells, neuronal commitment (Satb2), or survival (cleaved Caspase-3). Expression of CherryFP (red) alone (control) or with FGFR1(DN) as indicated. After immunostaining for the indicated markers (green), the results were quantified by counting the number of labeled electroporated cells in a constant area of each section and averaged across sections from at least three different embryos for each antibody. Values are normalized to control (100%). (mean ± s.e.m.). NS, not significant. Scale bars, 50 μm for Ki67, Sox2 and Tbr2, 25 µm for Satb2, 100 μm for cleaved Caspase 3. (b, c, d) Inhibition of FGFR did not affect the number of neurites or the length to width morphology of multipolar cells. (b) High magnification of GFP+ multipolar neurons within the MMZ following overexpression of GFP or FGFR(DN). (c) Proportion of GFP+ cells with the indicated number of neurites within the MMZ. (d) Ratio of length/width of the GFP+ cells within the MMZ as an indicator of cell shape. P value: 0.196. (mean ± s.e.m.). NS, not significant. Arrows indicate the neurites, arrowheads indicate the axons. Scale bar 10 µm e) FGFR-inhibited neurons are disoriented. Golgi staining (green) of MMZ neurons (purple). The figure shows examples of multipolar neurons with their Golgi facing the CP (white arrows) or facing other directions (white arrowheads). The percentage of cells with Golgi facing the cortical plate was calculated (mean ± s.e.m.). *p<0.05, P value: 0.013. Scale bar 10 µm. (f) FGFR inhibition affects the multipolar to radial transition. Computer-based reconstruction of GFP+ neurons morphologies at the multipolar to radial transition zone (MRT) and the lower RMZ. The graph shows the percentage of bipolar radially oriented neurons. Scale bar 30 µm. Error bars, s.e.m. ***p<0.001, P value: 6.5E-6. (g, h, i) Inhibition of FGFR did not affect the length of the leading process and the length-to-width morphology of radially migrating cells. (g) High magnification of GFP+ bipolar neurons within the RMZ following overexpression of GFP or FGFR(DN). (h) Length of the leading process of GFP+ bipolar cells within the RMZ. P value: 0.180. (i) Ratio of length/width of the GFP+ cells within the RMZ as an indicator of cell shape. P value: 0.155 Arrows indicate the leading process, Scale bar 10 µm. (mean ± s.e.m.). NS, not significant.
 
 To gain insight into the mechanism underlying the migration defect, we analyzed the morphology of migrating neurons. Analysis of the morphology revealed no difference in the number of neurites or in the cell body length-to-width ratio of FGFR-inhibited multipolar neurons compared to control multipolar neurons (Figure 2b–d). However, while most control multipolar cells had their Golgi apparatus oriented towards the CP, fewer FGFR-inhibited neurons had their Golgi facing the CP, suggesting a failure to orient correctly (Figure 2e). In addition, while most control electroporated neurons at the multipolar to radial transition zone had transformed into bipolar cells, FGFR-inhibited neurons were still mostly multipolar (Figure 2f). Yet, the few FGFR-inhibited bipolar neurons migrating in the RMZ exhibited no difference in the length of the leading process and the cell body length-to-width ratio compared to control cells and possess an axon at the rear (Figure 2g–i). These results suggest that FGFRs are required for multipolar neurons to orient correctly, become bipolar, exit the MMZ, and enter the RMZ. For simplicity we will call this phenotype a defect in multipolar migration.
 
-## Rap1 and NCad regulate FGFRs protein levels to control multipolar migrating neurons in vivo
+### Rap1 and NCad regulate FGFRs protein levels to control multipolar migrating neurons in vivo
 
 Since the phenotype induced by dominant-negative FGFRs resembles that induced by inhibiting Reelin receptors, NCad or Rap1 (Jossin and Cooper, 2011), there may be a common mechanism. Therefore, we tested for epistasis by over-expressing FGFRs when Rap1 is inhibited by the Rap1 GTPase-activating protein (Rap1GAP). The migration defect induced by Rap1GAP was partly suppressed by over-expression of wild-type FGFR1, 2 or 3 (Figure 3a). This suggests that signals from the Reelin-Rap1-NCad pathway may require FGFRs to stimulate multipolar migration, perhaps in parallel with or downstream of NCad.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig3-v2.jpg)
+
+**Figure 3.:** (a) FGFR1, 2 and 3 partially rescue the neuronal migration phenotype induced by Rap1 inhibition. E14.5 embryos were electroporated in utero with pCAG-GFP, pNeuroD vector or pNeuroD-Rap1GAP (RG), and pNeuroD-FGFR1, 2 or 3 as shown. Cryosections were prepared 3 days later and labeled for DAPI (blue) and GFP (green). The cerebral wall was subdivided into radial morphology zone (RMZ), multipolar morphology zone (MMZ) and VZ. Graphs show the percentage of cells in the RMZ (mean ± s.e.m.). ***p<0.001; *p<0.05, P values: Rap1GAP (RG): 9.8E-8, RG+FGFR1: 7.0E-4, RG+FGFR2: 3.0E-4, RG+FGFR3: 0.020 (n = 4 Control, 4 Rap1GAP (RG), 7 RG+FGFR1, 7 RG+FGFR2, 4 RG+FGFR3). (b) Protein abundance of FGFR1-GFP is regulated by Rap1 in vivo. E14.5 embryos were electroporated in utero with a mixture of pCAG-CherryFP, pNeuroD-FGFR1-GFP and either vector or pNeuroD-Rap1GAP. Two days later, mCherry and FGFR1-GFP were detected by epifluorescence. The graphs show mean and standard deviation of image intensity measured across lines drawn through the center of the cell body for eight neurons in each case. (c) Embryonic cortical neurons were electroporated to overexpress pCAG-NCad-HA or with a control plasmid, cultured for 2 days then analyzed for the protein level of NCad-HA and endogenous FGFR1 by Western blot.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Cells were transfected with pCAG-NCad-HA, ECad-HA or vector together with pCAG-FGFR1, 2 or 3-Myc and protein abundance determined by Western blot 24 hr later. (b) FGFR1(DN) does not change NCad protein level and does not reduce NCad homophilic interaction. Cells were transfected with pCAG-NCad-Myc, pCAG-NCad-HA and pCAG-FGFR1(DN)-GFP or vector. One day later, cells were lysed and immunoprecipitated with anti-HA. Lysates and co-immunoprecipitated proteins were analyzed by Western blot. (c) NCad-HA accumulates at cell-cell junctions in the presence of FGFR(DN)-GFP. Immunostaining of cells expressing NCad-HA alone of with FGFR(DN)-GFP. Arrows show NCad-HA at cell-cell junctions.
 
 NCad can bind to, stabilize, and activate FGFR1 in cell culture (Suyama et al., 2002; Sanchez-Heras et al., 2006), providing a potential mechanism for FGFR activation in multipolar neurons. Therefore, we tested whether Rap1 regulates FGFR protein abundance in vivo. Since we could not reliably detect endogenous FGFR by immunofluorescence, we co-electroporated FGFR1-GFP and CherryFP with Rap1GAP or control plasmid in utero. The level of FGFR1-GFP in CherryFP+ neurons was reduced when Rap1 was inhibited (Figure 3b). In addition, over-expressing NCad-HA in cultured primary neurons increased the level of endogenous FGFR1 (Figure 3c), consistent with NCad mediating Rap1-dependent FGFR1 stabilization in vivo. As expected, expressing NCad but not ECad increased protein levels of all three FGFRs in cultured cells (Figure 3—figure supplement 1). Control experiments showed that FGFR inhibition did not change the protein abundance of NCad and did not perturb NCad homophilic interaction properties (Figure 3—figure supplement 1b). NCad was still able to accumulate at cell-cell junctions in the presence of FGFR1(DN) (Figure 3—figure supplement 1c).
 
 These results extend previous reports that NCad can increase FGFRs protein levels in cell culture to an in vivo developmental system.
 
-## NCad homophilic adhesion is dispensable for the multipolar migration and for increasing FGFR protein levels
+### NCad homophilic adhesion is dispensable for the multipolar migration and for increasing FGFR protein levels
 
 If NCad regulates FGFRs during multipolar migration, NCad-mediated cell-cell adhesion may be dispensable. To test this possibility, we generated a mutant NCad that is incapable of forming homophilic cell-cell adhesion. W161 of NCad (numbered from the initiator methionine, corresponding to W2 in the mature protein) is required for NCad-NCad binding between cells (Tamura et al., 1998; Pertz et al., 1999). As expected, NCadW161A did not bind NCad expressed on different cells (Figure 4—figure supplement 1a lane 2) but still bound NCad expressed on the same cell (Figure 4—figure supplement 1b lane 2). Remarkably, NCadW161A rescued the movement of Rap1-inhibited neurons in vivo (Figure 4), and increased FGFR1 protein level in vitro (Figure 4—figure supplement 1c). NCadW161A was expressed at the same level as NCad (Figure 4—figure supplement 2). These results suggest that NCad function in multipolar migration is independent of NCad-NCad trans interactions but may require NCad binding to FGFR.
 
-## NCad EC4 is required for NCad-FGFR Cis interaction and multipolar migration in vivo
+![Figure 4.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig4-v2.jpg)
+
+**Figure 4.:** E14.5 embryos were electroporated in utero with pCAG-GFP, pNeuroD-Rap1GAP (RG), and pNeuroD vector, NCad, NCadW161A or ECad. Cryosections were prepared 3 days later and labeled for DAPI (blue) or GFP (green). The graph shows the percentage of cells in the RMZ (mean ± s.e.m.). P values: RG+NCad: 9.8E-6, RG+ NCadW161A: 9.3E-6, RG+ECad: 0.213 (n = 5 Rap1GAP (RG), 5 RG+NCad, 6 RG+NCadW161A, 5 RG+ECad). Error bars, s.e.m. ***p<0.001, NS, not significant. Scale bar 100 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Cells were transfected separately to express NCad-GFP (B, D and F), NCad-HA (A), NCadW161A-HA (C), or vector (E). Twice the amount of DNA was used for NCadW161A-HA transfection to equalize the protein level with NCad-HA. After transfection, cells were mixed as described in the table and re-plated allowing only trans interactions to be detected. 24 hr later, cells were lysed, immunoprecipitated with anti-HA antibody, and proteins detected by Western blot. (b) Cells were co-transfected with NCad-GFP and either NCad-HA, NCadW161A-HA or vector. Cells were then left in contact or kept in suspension to prevent cell contact and enable cis interactions only. Receptor interactions were then tested by co-immunoprecipitation as above. (c) NCadW161A increased the protein abundance of FGFR1 as efficiently as wild-type NCad. 293T cells were transfected for the expression of the indicated proteins. Twice the amount of DNA was used for NCadW161A in order to equalize protein levels. Cell lysates were analyzed by Western blot. All experiments were repeated three times with similar results.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Embryos were electroporated in utero at E14.5 with the indicated genes under the NeuroD promoter (HA immunolabelling in green) and CherryFP under the ubiquitous CAG promoter (Red). Brains were analyzed 3 days after electroporation.
+
+### NCad EC4 is required for NCad-FGFR Cis interaction and multipolar migration in vivo
 
 To test whether NCad-FGFR binding is necessary to increase FGFR protein levels and rescue migration, we generated an NCad mutant that does not bind FGFRs. To do this, we deleted NCad extracellular domain 4 (EC4), previously reported to mediate NCad-FGFR binding (Williams et al., 2001). NCadΔEC4 no longer bound to FGFR1 in transfected cells (Figure 5a), although it retained homophilic binding to co-transfected NCad (Figure 5b). Also, NCadΔEC4 failed to increase the protein abundance of co-transfected FGFR1 or to activate FGFRs, as observed by an increase in FGFR auto-phosphorylation on tyrosines 653/654 and phosphorylation of the well-known downstream signaling kinases Erk1/2 (Figure 5c). Finally, an FGFR inhibitor (Nakanishi et al., 2014) prevented NCad-induced FGFR auto-phosphorylation and phosphorylation of Erk1/2 (Figure 5c). We also found that NCad binds FGFRs in cis, on the same cell, but not trans, between cells (Figure 5—figure supplement 1). Together, these results show that NCad cis interaction with FGFRs induces FGFR accumulation and FGFR-dependent Erk1/2 phosphorylation in cell culture. Importantly, NCadΔEC4 did not rescue the migration of Rap1-inhibited neurons (Figure 5d). The requirement for EC4 to bind and activate FGFRs and to rescue migration supports the idea that cell autonomous NCad-FGFR binding and activation are required to stimulate multipolar migration in vivo.
 
-## NCad but not ECad domains 1–2 increase FGFR protein levels and promote multipolar migration in vivo
+![Figure 5.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig5-v2.jpg)
+
+**Figure 5.:** (a) NCad EC4 is required for FGFR1 binding in vitro. Cells were transfected with pCAG-FGFR1-Myc and pCAG-NCad-HA, NCadΔEC4-HA or vector. To equalize FGFR1-Myc expression, half the amount of FGFR1-Myc was transfected with wildtype NCad. One day later, cells were lysed and immunoprecipitated with anti-HA. Lysates and co-immunoprecipitated proteins were analyzed by Western blot. (b) EC4 is dispensable for NCad homophilic binding. Cells were transfected with pCAG-NCad-FLAG and pCAG-NCad-HA, NCadΔEC4-HA or vector. One day later, cells were lysed and immunoprecipitated with anti-HA. Lysates and co-immunoprecipitated proteins were analyzed by Western blot. (c) NCad increases FGFR protein level dependent on EC4, and increases FGFR and Erk1/2 phosphorylation dependent on EC4 and FGFR kinase activity. HEK293T cells were transfected with equal amounts of pCAG-FGFR1-Myc DNA and either pCAG-NCad-HA, pCAG-NCadΔEC4-HA or vector. 24 hr after transfection, the specific FGFR inhibitor Debio1347 was used at 5 µM for 2 hr. Lysates were analyzed by Western blot using the indicated antibodies. Experiments a–c) were repeated independently three times with similar results. (d) NCad EC4 is required for the multipolar migration. E14.5 embryos were electroporated in utero with pCAG-GFP and pNeuroD-Rap1GAP (RG), pNeuroD-NCadΔEC4-HA or vector. Cryosections were prepared three days later and labeled for DAPI (blue) and GFP (green). The graph shows the percentage of cells in the RMZ. n = 4 control, 4 Rap1GAP (RG), 6 RG+ NCadΔEC4. P value: 0.116. Scale bar 100 µm. Error bars, s.e.m., NS, not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) FGFR1-NCad binding does not occur in trans, between cells. Cells were transfected with FGFR1-Myc and NCad-HA together (A), NCad-HA and vector (C), or FGFR1-Myc and vector (D and F). The transfected cells were removed from the dish, mixed as shown, and re-plated to allow cell-cell contact. One day later the cells were lysed and immunoprecipitated with anti-HA. Lysates and immunoprecipitates were analyzed by Western blotting. FGFR1-Myc co-precipitated with NCad-HA when co-expressed (A) but not when binding could only occur between cells (C+D). (b) FGFR1-NCad binding occurs in cis, within cells. Cells were transfected with FGFR1-Myc and NCad-HA or vector, then left in contact or placed in suspension to prevent cell-cell interaction. One day later the cells were lysed and immunoprecipitated with anti-HA. Lysates and immunoprecipitates were analyzed by Western blotting. FGFR1-Myc co-precipitated with NCad-HA whether or not cell-cell contact was permitted. All experiments were repeated three times with similar results.
+
+### NCad but not ECad domains 1–2 increase FGFR protein levels and promote multipolar migration in vivo
 
 Cell culture studies differ as to whether FGFRs bind to both NCad and ECad or only NCad (Williams et al., 2001; Brown et al., 2016). Since we found that NCad but not ECad rescues multipolar migration in vivo (Figure 4a), despite being expressed at similar levels (Figure 4—figure supplement 2), we re-examined interactions between FGFRs, NCad and ECad in cell culture. In our hands, NCad, NCadW161A and ECad all bound FGFRs in transfected cells (Figure 6—figure supplement 1) but only NCad and NCadW161A increased the protein levels of co-transfected FGFRs (Figure 3—figure supplement 1a and Figure 4—figure supplement 1c). Thus, NCad but not ECad rescue of multipolar migration correlates with the ability to increase FGFR protein abundance while receptors interaction is necessary but not sufficient.
 
 Our results suggest that a unique feature of NCad, not shared with ECad, is required to increase FGFR protein levels and stimulate migration. We identified the critical region of NCad by the use of NCad/ECad chimeras. Classic cadherins are composed of an extracellular domain (ECD) with five extracellular cadherin (EC) repeats and a highly conserved intracellular domain (ICD) that interacts with signaling proteins. We switched the entire ECD and ICD of NCad and ECad, creating ENCad and NECad (Figure 6a). NECad but not ENCad was able to increase FGFR protein abundance (Figure 6a). Moreover, NECad but not ENCad rescued the positional defect observed when Rap1 is inhibited in vivo (Figure 6b). This suggests that the specificity of NCad to protect FGFR from degradation and to function in multipolar migration in vivo lies in the ECD. To map the NCad-specific function more closely, we prepared two other chimeric proteins: ENNCad has the EC1, EC2 and the first half of EC3 domains of ECad and the remainder of NCad, while NENCad has the second half of EC3, EC4 and EC5 domains of ECad and the remainder of NCad. NENCad but not ENNCad was able to increase FGFR protein level and rescue the positional defect observed when Rap1 is inhibited in vivo (Figure 6). These results show that EC4-5 of either NCad or ECad can protect FGFRs from degradation and stimulate migration provided that EC1-2 and part of EC3 are derived from NCad. Overall, these data demonstrate that cadherin EC4 interaction with FGFR is necessary but not sufficient to stabilize and activate FGFRs and regulate multipolar migration in vivo. Additional unique features carried by NCad EC1-2 are also needed.
 
-## FGFR K27/K29-linked polyubiquitination and lysosomal degradation control multipolar migration in vivo
+![Figure 6.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig6-v2.jpg)
+
+**Figure 6.:** (a) NCad EC1-2 are necessary to increase FGFR protein abundance. Cells were transfected to express the indicated proteins. 2 days later, protein levels were observed by Western blot. Similar results were obtained from three independent experiments. The figure includes a schematic representing the chimeric proteins used. (b) NCad EC1-2 promote neuronal migration in vivo. In utero electroporation at embryonic day E14.5 and analysis 3 days later. pNeuroD plasmids coding for the indicated proteins and pCAG-GFP were co-electroporated. The graph shows the percentage of cells in the RMZ (mean ± s.e.m.). P values: RG+NCad: 9.8E-6, RG+ECad: 0.215, RG+NECad: 5.4E-4, RG+ENCad: 0.080, RG+NENCad: 4.0E-3, RG+ENNCad: 0.206. n = 5 Rap1GAP (RG), 5 RG+NCad, 5 RG+ECad, 8 RG+NECad, 5 RG+ENCad, 5 RG+NENCad, 5 RG+ENNCad. Error bars, s.e.m. ***p<0.001, **p<0.01, NS, not significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** 24 hr later, cells were lysed and lysates and anti-HA immunoprecipitates analyzed by Western blot. To equalize FGFR1-Myc expression level, half the amount of FGFR1-Myc DNA was transfected with NCad-HA or NCadW161A-HA.
+
+### FGFR K27/K29-linked polyubiquitination and lysosomal degradation control multipolar migration in vivo
 
 The Rap1/NCad-dependent increase in FGFR protein in vivo (Figure 3b,c) and in vitro (Figure 3—figure supplement 1a) suggests that NCad may inhibit FGFR degradation, as observed in some cancer cells (Suyama et al., 2002). Degradation of many cell surface receptors involves ubiquitination of their cytoplasmic domains and targeting to the lysosome (Piper et al., 2014). When FGFR1-Myc was co-expressed with HA-ubiquitin, a ladder of FGFR1-ubiquitin conjugates could be immunoprecipitated with antibodies against Myc (Figure 7a lane 3) or HA (data not shown). FGFR ubiquitination was inhibited by co-expressed NCad but not NCadΔEC4 (Figure 7a) or ECad (data not shown), consistent with NCad binding inhibiting FGFR ubiquitination. Ubiquitin ladders can result from the addition of single ubiquitin moieties at many sites (multi-monoubiquitination) or addition of ubiquitin chains (polyubiquitination). Seven lysine (K) residues on the ubiquitin molecule may be used for polyubiquitination, resulting in diverse outcomes for the target protein (Ikeda and Kerppola, 2008; Fushman and Wilkinson, 2011; Sadowski et al., 2012). To test whether over-expressed FGFR1-Myc is multi-monoubiquitinated or polyubiquitinated, we inhibited polyubiquitination by co-over-expressing a ubiquitin mutant (UbiK0), in which all 7 K residues substituted to arginine (R) (Lim et al., 2005). When co-expressed with FGFR1, HA-UbiK0 but not HA-UbiWT increased FGFR1 protein level and decreased FGFR1 ubiquitination (Figure 7b) suggesting polyubiquitination. To identify the specific polyubiquitin linkage, we used ubiquitin mutants that contain single K to R substitutions. We found that over-expressing UbiK27R or UbiK29R but not other mutants increased FGFR protein level to the same level as that induced by the presence of NCad-HA (Figure 7c). Co-expression of UbiK27R or UbiK29R with NCad did not have any cumulative effect, suggesting that FGFR is degraded following attachment of K27- and K29-linked polyubiquitin and that NCad inhibits this process. To test whether K27 or K29 linkages are sufficient or whether both are needed, we used ubiquitin mutants where all lysines except 27 or 29 are mutated to arginine (UbiK27 and UbiK29). Co-expressing together UbiK27 and UbiK29, which allows only K27 and K29 linkages, did not inhibit FGFR degradation (compare to UbiWT, Figure 7d). However, expressing either UbiK27 or UbiK29 inhibited FGFR degradation, suggesting that both K27 and K29 ubiquitin linkages are required for FGFR degradation. Importantly, preventing FGFR degradation in vivo by the overexpressing UbiK27R in utero partially rescued the multipolar migration of Rap1-inhibited neurons (Figure 7e).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig7-v2.jpg)
+
+**Figure 7.:** (a) NCad but not NCadΔEC4 inhibits FGFR1 ubiquitination. Cells were transfected with pCAG-FGFR1-Myc and pCAG-NCad, NCadΔEC4-HA or vector. One day later, cells were lysed and proteins immunoprecipitated with anti-Myc. Lysates and immunoprecipitates were analyzed with Western blotting using antibodies to Myc and ubiquitin. To equalize FGFR1-Myc levels, half the amount of DNA was used for FGFR1-Myc when expressed with NCad-HA. (b) HA-UbiKO but not HA-UbiWT increased FGFR1 protein level and decreased FGFR1 ubiquitination. Cells were transfected with pCAG-FGFR1-Myc and HA-UbiKO or HA-UbiWT. One day later, cells were lysed and proteins immunoprecipitated with anti-Myc. Lysates and immunoprecipitates were analyzed with Western blotting using antibodies to Myc and HA. (c) Inhibition of K27- and K29-linked polyubiquitination increases FGFR1 protein level. Ubiquitin-GFP mutants in which one lysine is mutated into arginine were used to identify lysine residues required for polyubiquitin chain formation. Co-translational cleavage detaches the GFP and frees the terminal glycine of ubiquitin for subsequent conjugation (Boname et al., 2010). The cleaved GFP was used to quantify ubiquitin mutant expression. The graph shows the relative FGFR1-Myc band intensity when expressed in the presence or absence of NCad-HA and in the presence of an ubiquitin mutant as indicated (mean ± s.e.m.). P values: UbiK6R: 0.026, UbiK11R: 0.034, UbiK27R: 0.490, UbiK29R: 0.466, UbiK33R: 0.036, UbiK48R: 0.032, UbiK63R: 0.024, UbiWT: 4.8E-4. n = 4 UbiK6R, 3 UbiK11R, 3 UbiK27R, 3 UbiK29R, 4 UbiK33R, 4 UbiK48R, 3 UbiK63R, 8 UbiWT. (d) FGFR1 levels remain normal only when both K27- and K29-linked polyubiquitination are permitted. HA-Ubiquitin mutants in which all but one lysine is mutated into arginine were used to allow only one type of polyubiquitin chain formation (UbiK27 and UbiK29). (e) Inhibition of K27-linked polyubiquitin chain formation in vivo rescues the migration defect of Rap1GAP-expressing cells. In utero electroporation at embryonic day E14.5 and analysis 3 days later. Plasmids coding for the indicated proteins and GFP were co-electroporated. The graph shows the percentage of cells in the RMZ (mean ± s.e.m.). P values: RG+UbiK27R: 1.7E-3, RG+UbiWT: 0.471. n = 4 Rap1GAP (RG), 8 RG+UbiK27R, 6 RG+UbiWT. (f) Endogenous FGFR1 is degraded by the lysosome in vivo. Primary embryonic cortical neurons were cultured in the presence of 250 nM proteasome inhibitor epoxomycin or 300 µM lysosome inhibitor leupeptin for 4 hr and analyzed by Western blot. Similar results were obtained in three independent experiments. Scale bar 100 µm. *p<0.05, **p<0.01 ***p<0.001, NS not significant.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Cells co-transfected with pCAG-FGFR1-Myc and pCAG-NCad-HA or vector were incubated with 250 nM proteasome inhibitor epoxomycin or 300 µM lysosome inhibitor leupeptin for 4 hr and analyzed by Western blot. Epoxomycin inhibited proteasomal degradation of many ubiquitinated cell proteins, as indicated by an increase in total protein ubiquitination.
+
 The requirement for both K27 and K29 polyubiquitin linkages suggested that FGFR may be targeted for lysosomal degradation (Chastagner et al., 2006; Ikeda and Kerppola, 2008; Zotti et al., 2011). Indeed, adding lysosome inhibitor leupeptin but not proteasome inhibitor epoxomycin to primary cortical embryonic neurons increased the protein abundance of endogenous FGFR1 (Figure 7f). Leupeptin but not epoxomycin also increased levels of transfected FGFR1 to the same extent as over-expressed NCad, suggesting that NCad protects FGFRs from lysosomal degradation (Figure 7—figure supplement 1). Lysosome inhibition did not have a cumulative effect on FGFR1 in cells over-expressing NCad, confirming that NCad protects FGFRs from degradation by the lysosome (Figure 7—figure supplement 1). We verified that the proteasome inhibitor was active and induced the accumulation of ubiquitinated proteins (Figure 7—figure supplement 1). Overall, these results suggest that NCad regulates multipolar migration in vivo by inhibiting FGFR K27- and K29-linked polyubiquitination and degradation through the lysosome, thereby raising FGFR protein levels. This raises the question of whether FGFR levels are increased when NCad is upregulated by Reelin.
 
-## Reelin induces NCad-dependent FGFR and Erk1/2 activation in cortical neurons
+### Reelin induces NCad-dependent FGFR and Erk1/2 activation in cortical neurons
 
 To test whether Reelin activation of the Rap1-NCad pathway increases FGFR protein levels and signaling, we stimulated primary cortical embryonic neurons with partly-purified Reelin or Mock conditioned media and assayed FGFR1 levels and Erk1/2 phosphorylation. As a positive control for FGFR1 signaling, neurons were treated for 20 min with FGF2, which activated Erk1/2 phosphorylation (Figure 8a). As expected, treating for 20 min with Reelin induced phosphorylation of Dab1, a known rapid effect of Reelin (Howell et al., 1999), but did not activate Erk1/2 or increase FGFR1 levels (Figure 8a). However, Reelin did increase FGFR1 protein abundance after 15 hr, consistent with inhibition of FGFR degradation and slow accumulation of FGFR1 over time (Figure 8b lane 4). Remarkably, 15 hr Reelin treatment also activated Erk1/2, to a similar extent as 20 min exposure to EGF or FGF2 (Figure 8b lanes 2 and 3). FGFR1 protein level and Erk1/2 phosphorylation were also increased by 15 hr treatment with R3-6 (Figure 8c), a fragment of Reelin that is produced in vivo and is necessary and sufficient for Reelin regulation of neuron migration (Jossin et al., 2004; Jossin et al., 2007).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig8-v2.jpg)
+
+**Figure 8.:** E16.5 mouse cortical neurons were cultured for 3 days then stimulated with FGF2 or Reelin for different times. All experiments were repeated three times with similar results. (a) Short-term Reelin stimulation does not increase FGFR1 protein level or Erk1/2 phosphorylation. Neurons were stimulated for 20 min with 75 ng/ml FGF2, Mock- or Reelin-conditioned media. (b) Long-term Reelin stimulation increases FGFR1 protein level and FGFR1 and Erk1/2 phosphorylation dependent on FGFR1 kinase activity. Neurons were stimulated for 15 hr with Mock- or Reelin-conditioned media or for 20 min with FGF2 or EGF. FGFR inhibitor Debio1347 was used at a concentration of 5 µM for a total of 17 hr before cell lysis. (c) Reelin fragment R3-6 induces FGFR1 accumulation and Erk1/2 activation. Neurons were stimulated for 15 hr with Mock, R3-6 or Reelin-conditioned medium. (d) Long-term Reelin stimulation of FGFR1 protein level and Erk phosphorylation requires Rap1 and NCad. Neurons were electroporated with pCAG-Rap1GAP, pCAG-NCadDN, or vector, incubated for 2 days, then stimulated with Mock- or Reelin-conditioned media for 15 hr and analyzed by Western blotting.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** E16.5 mouse cortical neurons were cultured in the presence of mock-conditioned or Reelin-conditioned media for 20 min. 5 μM FGFR inhibitor Debio1347 was added 2 hr before and during stimulations. Cell lysates were analyzed by Western blotting.
 
 Reelin-induced Erk1/2 phosphorylation but not FGFR1 accumulation was completely abrogated by FGFR kinase inhibitor Debio1347. Debio1347 was specific because it inhibited Erk1/2 activation by 20 min FGF2 but did not inhibit Erk1/2 activation by EGF (Figure 8b) or Reelin-induced Dab1 phosphorylation (Figure 8—figure supplement 1). These results suggest that Reelin-induced Erk1/2 phosphorylation is dependent on FGFR activity and correlates with its effect on FGFR protein levels.
 
 To test whether FGFR1 protein upregulation and Erk1/2 activation require Rap1 or NCad, cortical neurons were transfected with Rap1GAP or NCadDN, both of which inhibit NCad accumulation at the plasma membrane and inhibit multipolar migration (Jossin and Cooper, 2011). Inhibiting Rap1 or NCad prevented Reelin-induced FGFR1 protein increase and Erk1/2 activation (Figure 8d). Taken together, these results show that Reelin or R3-6 can activate FGFR1 signaling and Erk1/2 through the Rap1-NCad pathway.
 
-## Erk1 and Erk2 regulate neuron migration in vivo
+### Erk1 and Erk2 regulate neuron migration in vivo
 
 Since Reelin, Rap1, NCad and FGFRs are all important to activate Erk1/2 and stimulate multipolar migration, we tested whether Erk1/2 are needed for multipolar migration in vivo. We overexpressed dominant-negative mutants of Erk1 or Erk2, each of which inhibits both family members (Watts et al., 1998; Li et al., 1999; Zampieri et al., 2007). Over-expression of either Erk1DN or Erk2DN, but not wildtype Erk1 or Erk2, induced partial migration arrest of multipolar neurons (Figure 9a). Overall our results suggest that multipolar migration of projection neurons requires a Reelin-Rap1-NCad-FGFR-Erk1/2 pathway.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/47673/elife-47673-fig9-v2.jpg)
 
-**Figure 9.:** (a) Erk1/2 inhibition impairs multipolar migration. E14.5 embryos were electroporated in utero with pCAG-GFP and dominant-negative (DN) or wildtype pNeuroD-Erk1/2. Cryosections were prepared three days later. The graph shows the percentage of cells in the RMZ (mean ± s.e.m.). P values: Erk1(DN): 1.4E-3, Erk2(DN): 1.2E-3, Erk1: 0.497, Erk2: 0.173. n = 4 Control, 6 Erk1(DN), 5 Erk2(DN), 6 Erk1, 4 Erk2. Scale bar 100 µm; Error bars, s.e.m, **p<0.01, NS, not significant. (b) Working model. (1) Reelin, its central fragment R3-6, and possibly other signals activate Rap1 in multipolar neurons. Rap1 upregulates NCad on the cell surface. (2) The NCad fourth cadherin extracellular domain (EC4, orange color) binds FGFRs. This binding, together with a specific function of NCad EC1 and EC2 (green color) prevents FGFR polyubiquitination by mixed K27- and K29-linked polyubiquitin chains and lysosomal degradation. (3) Decreased FGFR ubiquitination causes FGFR accumulation and persistent activation of FGFR signaling pathways, including Erk1/2. Erk1/2 and maybe other effectors are required for the multipolar migration in vivo. The mechanisms by which NCad EC1-2 regulate FGFR stability and by which Erk1/2 regulate migration remain unknown. See text for discussion.10.7554/eLife.47673.026Figure 9—source data 1.Erk1/2 inhibition impairs multipolar migration.E14.5 embryos were electroporated in utero with pCAG-GFP and dominant-negative (DN) or wildtype pNeuroD-Erk1/2. Cryosections were prepared three days later. The table shows the percentage of cells in the RMZ. n = 4 Control, 6 Erk1(DN), 5 Erk2(DN), 6 Erk1, 4 Erk2.
+**Figure 9.:** (a) Erk1/2 inhibition impairs multipolar migration. E14.5 embryos were electroporated in utero with pCAG-GFP and dominant-negative (DN) or wildtype pNeuroD-Erk1/2. Cryosections were prepared three days later. The graph shows the percentage of cells in the RMZ (mean ± s.e.m.). P values: Erk1(DN): 1.4E-3, Erk2(DN): 1.2E-3, Erk1: 0.497, Erk2: 0.173. n = 4 Control, 6 Erk1(DN), 5 Erk2(DN), 6 Erk1, 4 Erk2. Scale bar 100 µm; Error bars, s.e.m, **p<0.01, NS, not significant. (b) Working model. (1) Reelin, its central fragment R3-6, and possibly other signals activate Rap1 in multipolar neurons. Rap1 upregulates NCad on the cell surface. (2) The NCad fourth cadherin extracellular domain (EC4, orange color) binds FGFRs. This binding, together with a specific function of NCad EC1 and EC2 (green color) prevents FGFR polyubiquitination by mixed K27- and K29-linked polyubiquitin chains and lysosomal degradation. (3) Decreased FGFR ubiquitination causes FGFR accumulation and persistent activation of FGFR signaling pathways, including Erk1/2. Erk1/2 and maybe other effectors are required for the multipolar migration in vivo. The mechanisms by which NCad EC1-2 regulate FGFR stability and by which Erk1/2 regulate migration remain unknown. See text for discussion.
 
 ## Discussion
 
@@ -108,46 +168,679 @@ While we were writing this manuscript, FGFR2 was reported to regulate neuronal m
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>One shot TOP10</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: C404010</td>
+      <td>Chemically Competent Cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>CD1</td>
+      <td>Charles River Laboratories</td>
+      <td>022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T cells</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Embryonic primary mouse cortical neuron</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primary culture at E16,5.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA.11 clone 16B12 (Mouse monoclonal)</td>
+      <td>Eurogenetic</td>
+      <td>Cat# MMS-101R-500, RRID: AB_10063630</td>
+      <td>WB (1:8000) IF (1:100) IP (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2272, RRID: AB_10692100</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc-tag clone 9B11 (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2276, RRID: AB_331783</td>
+      <td>IP (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti mono- and polyubiquitinated conjugated, clone FK2 (Mouse monoclonal)</td>
+      <td>Enzo Life Science</td>
+      <td>Cat# BML-PW8810-0500, RRID: AB_2051891</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B-actin (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# MA5-15739, RRID: AB_10979409</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- p44/42 MAPK (Erk1/2) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9102, RRID: AB_330744</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-p44/42 MAPK (Erk1/2) (Thr202/Tyr204) clone D13.14.4E (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4370, RRID: AB_2315112</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FGFR1(D8E4) XP (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9740, RRID: AB_11178519</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Dab-1 (E1) (Mouse)</td>
+      <td>Jossin et al., 2004</td>
+      <td>N/A</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-Tyrosine (P-Tyr-100) #9411(Mouse Monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9411, RRID: AB_331228</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Reelin(G10) Mouse</td>
+      <td>de Bergeyck et al., 1997</td>
+      <td>N/A</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DYKDDDDK (FLAG) Tag (FG4R) (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# MA5-15255, RRID: AB_2537646</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11122, RRID: AB_221569</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 556003, RRID: AB_396287</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Sox2 (L1D6A2) (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4900, RRID: AB_10560516</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tbr2 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab23345, RRID: AB_778267</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Satb2 (mouse</td>
+      <td>Abcam</td>
+      <td>Cat# ab51502 RRID: AB_882455</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved caspase3 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9661, RRID: AB_2341188</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GM130 (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 610823, RRID: AB_398142</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG, HRP-linked Antibody (horse)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 7076, RRID: AB_330924</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-linked Antibody (goat polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 7074, RRID: AB_2099233</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 488 (Goat Polyclonal)</td>
+      <td>invitrogen</td>
+      <td>Cat# A-11001, RRID: AB_2534069</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (H+L) Antibody, Alexa Fluor 488 Conjugated (Goat polyclonal)</td>
+      <td>invitrogen</td>
+      <td>Cat# A-11008, RRID: AB_143165</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG (H+L) Antibody, Alexa Fluor 568 Conjugated (goat polyclonal)</td>
+      <td>invitrogen</td>
+      <td>Cat# A-11004, RRID: AB_2534072</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 568 (Goat polyclonal)</td>
+      <td>invitrogen</td>
+      <td>Cat# A-11011, RRID: AB_143157</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 647 (Goat polyclonal)</td>
+      <td>invitrogen</td>
+      <td>Cat# A-21235, RRID: AB_2535804</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 647 (Goat polyclonal)</td>
+      <td>invitrogen</td>
+      <td>Cat# A-21244, RRID: AB_2535812</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NeuroD: Rap1GAP</td>
+      <td>Jossin and Cooper, 2011</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NeuroD: NCad CAG: NCad</td>
+      <td>Jossin and Cooper, 2011</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBS mFgfr1 (CT#92)</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_14005</td>
+      <td>mFgfr1 subcloned into pCAG and pNeuroD vectors.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG:FGFR2 NeuroD:FGFR2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG:FGFR3 NeuroD-FGFR3</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG:FGFR1-DN NeuroD:FGFR1-DN</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Deletion of the ICD, replace by GFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG:FGFR2-DN NeuroD:FGFR2-DN</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Deletion of the ICD, replace by GFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG:FGFR3-DN NeuroD:FGFR3-DN</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Deletion of the ICD, replace by GFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRK5:HA-ubiquitin-KO</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_17603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRK5:HA-ubiquitin-K27</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_22902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRK5:HA-ubiquitin-K29</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_22903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHRSIN:6HIS-UbiWT-GFP</td>
+      <td>Schaller et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHRSIN:6HIS-UbiK6R-GFP</td>
+      <td>Schaller et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHRSIN:6HIS-UbiK11R-GFP</td>
+      <td>Schaller et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHRSIN:6HIS-UbiK27R-GFP</td>
+      <td>Schaller et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHRSIN:6HIS-UbiK29R-GFP</td>
+      <td>Schaller et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHRSIN:6HIS-UbiK33R-GFP</td>
+      <td>Schaller et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHRSIN:6HIS-UbiK48R-GFP</td>
+      <td>Schaller et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHRSIN:6HIS-UbiK63R-GFP</td>
+      <td>Schaller et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-CMV-hErk1</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_49328</td>
+      <td>hErk1 subcloned into pCAG and pNeuroD vectors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-CMV-hErk1K71R</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_49329</td>
+      <td>hErk1K71R subcloned into pCAG and pNeuroD vectors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p3XFLAG-CMV7-Erk2</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_39223</td>
+      <td>Erk2 subcloned into pCAG and pNeuroD vectors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p3XFLAG-CMV7-Erk2_KR</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_39224</td>
+      <td>Erk2_KR subcloned into pCAG and pNeuroD vectors</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NeuroD:NCadΔEC4 CAG: NCadΔEC4</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Deletion of residues515–604</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG:NCadDN NeuroD:NCadDN</td>
+      <td>Jossin and Cooper, 2011</td>
+      <td>N/A</td>
+      <td>Deletion of residues 99–708</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG: NcadW161A NeuroD: NcadW161A</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Codon 161 TGG replaced by GCG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG:Ecad NeuroD:ECad</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG:ENCad NeuroD: ENCad</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG:NECad NeuroD: NECad</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG: NENCad NeuroD: NENCad</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG: ENNcad NeuroD: ENNcad</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLKO.1.shFGFR1</td>
+      <td>Sigma</td>
+      <td>Cat #: TCRN0000378435</td>
+      <td>Target sequence: 5’-CTGGCTGGAGTCTCCGAATAT-3’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLKO.1.shFGFR2</td>
+      <td>Sigma</td>
+      <td>Cat #: TRCN0000023715</td>
+      <td>Target sequence: 5’-GCCAGGGATATCAACAACATA-3’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLKO.1.shFGFR3</td>
+      <td>Sigma</td>
+      <td>Cat #: TRCN0000363373</td>
+      <td>Target sequence: 5’CCACTTCAGTGTGCGTGTAAC-3’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV:Reelin and pCMV:R3-6</td>
+      <td>Jossin et al., 2004</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>hFGF-2</td>
+      <td>PeproTech</td>
+      <td>Cat #: 100-18B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>mEGF-2</td>
+      <td>PeproTech</td>
+      <td>Cat #: 315–09</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease inhibitor cocktail</td>
+      <td>Roche</td>
+      <td>Cat# 05056489001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphatase inhibitor cocktail</td>
+      <td>Roche</td>
+      <td>Cat #: A32957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B27</td>
+      <td>invitrogen</td>
+      <td>Cat #: 17504–044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Epoxomycin</td>
+      <td>Sigma</td>
+      <td>Cat #: E3652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Leupeptin</td>
+      <td>Carl Roth</td>
+      <td>Cat #: CN33</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Debio1347</td>
+      <td>Selleckchem</td>
+      <td>Cat #: S7665</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin-streptomycin</td>
+      <td>Gibco</td>
+      <td>Cat #: 11548876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Plasmid DNA Purification Mini Prep Kit</td>
+      <td>Intron Biotechnology</td>
+      <td>Cat# 17098</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick Gel extraction Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# K2100-12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiPure Plasmid Maxiprep Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# K2100-07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI staining</td>
+      <td>Sigma</td>
+      <td>Cat #: D9542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PolyJet In Vitro DNA Transfection Reagent</td>
+      <td>Signagen</td>
+      <td>Cat #: SL100688</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads protein A</td>
+      <td>invitrogen</td>
+      <td>Cat #: 10001D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads protein G</td>
+      <td>İnvitrogen</td>
+      <td>Cat #: 1003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Super signal West Pico PLUS chemuluminescent substrate</td>
+      <td>Thermo Scientific</td>
+      <td>Cat #: 34578</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>O.C.T.</td>
+      <td>VWR</td>
+      <td>Cat # 361603E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM-F-12</td>
+      <td>Gibco</td>
+      <td>Cat #: 21331–020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM, high glucose</td>
+      <td>Gibco</td>
+      <td>Cat #: 41965–039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CL-X Posure film</td>
+      <td>Thermo fisher</td>
+      <td>Cat #: 34091</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 CD1 mice were bred in standard conditions and animal procedures were carried out in accordance with European guidelines and approved by the animal ethics committee of the Université catholique de Louvain.
 
-## In utero electroporation
+### In utero electroporation
 
 In utero microinjection and electroporation was performed at E14.5 essentially as described (Tabata and Nakajima, 2001), using timed pregnant CD-1 mice. Timed-pregnant mice were anesthetized and each uterus was exposed under sterile conditions. Plasmid solutions containing 1 µg/µl of DNA were injected into the lateral ventricles of the embryos using a heat-pulled capillary. Needles for injection were pulled from Wiretrol II glass capillaries (Drummond Scientific) and calibrated for 1 μl injections. DNA solutions were mixed in 10 mM Tris, pH 8.0, with 0.01% Fast Green. Forceps-type electrodes (Nepagene) with 5 mm pads were used for electroporation (five 50 ms pulses of 45 V using the ECM830 electroporation system, Harvard Apparatus). Embryos were placed back into the abdominal cavity, and mice were sutured.
 
-## Histology and immunofluorescence
+### Histology and immunofluorescence
 
 Embryos were collected at E16.5 or E17.5. Brains were dissected and successful electroporations were chosen by epifluorescence microscopy. Positive brains were fixed in a 3.7% paraformaldehyde (PFA) in phosphate-buffered saline (PBS) solution and cryoprotected in a 30% sucrose/PBS solution overnight at 4°C. Brains were frozen in optimal cutting temperature compound (OCT), and sectioned with a cryostat at 14-μm-thickness. Sections were placed on slides, permeabilized for 30 min in 0.4% Triton X-100/PBS then blocked for 30 min with 5% normal goat serum (NGS) in 0.4% Triton X100/PBS. Primary antibodies were diluted in 0.4% Triton X100/PBS incubated on slides overnight at 4°C. Sections were washed 3 times for 5 min in 0.4% Triton X100/PBS. Secondary antibodies were diluted in 0.4% Triton X100/PBS and incubated for 1 hr at room temperature. Nuclei were stained with 4,6-diamidino-2-phenylindole (DAPI). Slides were washed three times as before and coverslipped with Fluoroshield with 1, 4-Diazabicyclo [2.2.2] octane (Sigma) as an anti-fade reagent. Images were acquired with an Olympus FV1000 confocal microscope.
 
-## Isolation, culture and nucleofection of primary Cortical Neuron
+### Isolation, culture and nucleofection of primary Cortical Neuron
 
 Neurons were dissected from E16.5 mouse embryo telencephalons. Cells were plated in DMEM-F12 medium (Fisher) with 2% B27 supplement (Fisher) and Penicillin-Streptomycin (Fisher) on 12 well-plate coated with poly-D-lysine (Sigma) and E-C-L (entactin-collagen IV-laminin) Cell Attachment Matrix (Upstate Biotechnology) at a density of 2 × 106 cells per dish. Cultures were maintained at 37°C in a 5% CO2 incubator. After 2 days in culture, neurons were stimulated with partly-purified Reelin or Mock-conditioned media (see below), EGF (Pepro Tech, 100 ng/mL), FGF-2 (Pepro Tech, 75 ng/mL). Debio1347 (5 µM, Selleckchem) was used to inhibit FGFR1, 2 and 3 (Nakanishi et al., 2014; Nakanishi et al., 2015). Cells were lysed with ice-cold NP-40 buffer (150 mM NaCl, 50 mM Tris-HCl (pH 8.0), 1% NP-40, 5 mM EDTA) supplemented with protease and phosphatase inhibitor cocktail (Roche). For plasmid DNA transfection, cells were Amaxa nucleoporated with 5 µg of plasmid DNA in 0.2 mm cuvette using A-033 program and 100 µl of electroporation buffer containing 120 mM Na2HPO4/NaH2PO4 pH 7.2, 5 mM NaCl, 5 mM KCl, 20 mM MgCl2, and 0.5 mM reduced glutathione.
 
-## Production of recombinant reelin and R3-6
+### Production of recombinant reelin and R3-6
 
 HEK293T cells cultured in Dulbecco modified Eagle medium (Fisher) with 10% fetal bovine serum (Fisher) were transfected with the Reelin or R3-6 cDNA constructs (Jossin et al., 2004), using Polyjet (Tebu-Bio). After 24 hr, the medium was replaced with a serum-free medium, which was collected 2 days later and stored at 4°C in the presence of a protease inhibitor cocktail (Complete, Roche). Prior to use, the supernatants were concentrated using Amicon Ultra columns with 100,000-molecular weight cutoff filters (Millipore) to reach the approximate concentration of 400 pM, which was estimated as described previously (Jossin et al., 2004), and dialyzed against culture medium by drop dialysis (Millipore VSWP02500). Mock solutions were prepared from control transfected HEK293T cells and used to control for potential co-purifying proteins.﻿﻿﻿
 
-## Immunoprecipitation and western blot
+### Immunoprecipitation and western blot
 
 Transfected 293T cells were lysed with ice-cold NP-40 buffer supplemented with protease and phosphatase inhibitor cocktail (Roche). Lysates were clarified by centrifugation at 14,000Xg for 10 min at 4°C. Antibodies were added to the lysates for 2 hr at 4°C. Dynabeads protein A or protein G magnetic beads (Invitrogen) were washed three times in PBS then blocked in 1% BSA/PBS for 2 hr at 4°C. Beads were washed twice with PBS and once in NP-40 buffer then added into cell lysate mixture and incubated overnight at 4°C. Beads were washed three times with NP-40 lysis buffer. Proteins were eluted by boiling for 5 min in polyacrylamide gel electrophoresis loading buffer and analyzed by sodium dodecyl sulfate (SDS)-polyacrylamide gel electrophoresis.
 
 Proteins were separated by SDS-gel electrophoresis then transferred to nitrocellulose membrane (Amersham Biosciences) by electroblotting. Membranes were blocked in 5% skimmed milk and 0.05% Tween 20 in PBS for 1 hr and incubated overnight at 4°C with antibodies. After three washing steps in PBS with 0.05% Tween 20, membranes were incubated with horseradish peroxidase-conjugated secondary antibodies (DAKO) in blocking solution for 1 hr at room temperature and washed three times. Membranes were treated with the SuperSignal West Pico chemiluminescent substrate (Pierce) and exposed to Hyperfilm ECL (Amersham Biosciences).
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used for immunofluorescence, immunoprecipitation or biochemistry: mouse anti-HA.11 clone 16B12 monoclonal antibody (Eurogentec), rabbit anti-myc (Cell Signaling), anti mono- and poly-ubiquitinated antibody clone FK2 (Enzo), mouse anti-β-Actin(Thermo Pierce), rabbit anti-Erk1/2 (Cell Signaling), rabbit anti p44/42 Erk (Thr 202/Tyr 204) monoclonal antibody (Cell Signaling), rabbit anti-FGFR1(D8E4) monoclonal antibody (Cell Signaling), rabbit anti-FGFR(phosphor-Tyr653/654) (Cell Signaling), mouse anti-Dab1 (E1) (Jossin et al., 2004), mouse anti-phospho-tyrosine antibody (Cell Signaling), mouse anti-Reelin (G10) (de Bergeyck et al., 1997), mouse anti-Flag (Thermo Pierce), rabbit anti-GFP (Invitrogen), mouse anti-Ki67 (Beckton Dickinson), mouse anti-Sox2 (Cell Signaling), Rabbit anti Tbr2 (Abcam), mouse anti-Satb2 (Abcam), rabbit anti-cleaved caspase 3 (Cell Signaling), mouse GM130 (Beckton Dickinson).
 
 Goat secondary antibodies labeled with Alexa 488, 568, and 647 (Invitrogen) for immunofluorescence. Goat anti-mouse or anti-rabbit horseradish peroxidase-conjugated secondary antibodies (Cell Signaling) for biochemistry.
 
-## Vector constructions
+### Vector constructions
 
 Rap1GAP and NCad sequences inserted into the pNeuroD vector were described previously (Jossin and Cooper, 2011). Plasmid containing the coding sequences for FGFR1 (Addgene plasmid # 14005) was used as template to insert the sequences into pCAG or pNeuroD vectors. FGFR2 and FGFR3 were amplified from E16.5 embryonic mouse cortex. Dominant negative forms of FGFR1, 2 and 3 contain the transmembrane and extracellular domains while the intracellular domains where replace by GFP. pRK5-HA-Ubiquitin-KO was a gift from Ted Dawson (Addgene plasmid # 17603). pRK5-HA-Ubiquitin-K27 and pRK5-HA-Ubiquitin-K29 were a gift from Sandra Weller (Addgene plasmid # 22902 and # 22903). Wild-type and all single lysine to arginine ubiquitin mutant vectors pHRSIN-6HIS-UbiWT-GFP, UbiK6R-GFP, UbiK11R-GFP, UbiK27R-GFP, UbiK29R-GFP, UbiK33R-GFP, UbiK48R-GFP, UbiK63R-GFP were provided by R Rezsohazy with the permission of M Malim (Schaller et al., 2014). pFLAG-CMV-hErk1, pFLAG-CMV-hErk1K71R, p3xFlag-CMV7-Erk2, p3xFlag-CMV7-Erk2_KR were a gift from Melanie Cobb (Addgene plasmid # 49328, # 49329, # 39223, # 39224) and subcloned into pCAG and pNeuroD vectors. NCadΔEC4 was made by PCR using junction primers at the KpnI site already present in the sequence resulting in the deletion of residues 515–604. NCadW161A was made by site-directed mutagenesis with oligo 5’-GCT CTA CAA AGG CAG AAG CGA GAC GCG GTC ATC CCG CCA ATC AAC-3’ and its reverse complement, changing codon 161 from TCG to GCG and introducing a silent mutation to destroy an EarI restriction site that was used for screening. NCadDN contains the transmembrane and intracellular domains (deletion of residues 99–708) and was described before (Jossin and Cooper, 2011). ENCad and NECad were made by using PCR using junction primers that inserted SpeI sites five residues N-terminal to the transmembrane domain (between ECad codons 704 and 705, and between NCad codons 717 and 720). NENCad and ENNCad were made using overlap extension PCR with recombination junctions between residues 420–421 of NCad and 415–416 of ECad. All cadherin constructs were of murine origin, terminated with an HA tag and cloned into pCAG and pNeuroD vectors. Codon numbers are given from the initiator methionine. Several FGFR targeting shRNAs (pLKO.1 plasmids either from Sigma or generously provided by Slobodan Beronja and shRNA expression vectors kindly provided by Laura Cancedda and Giovanni Piccoli; Szczurkowska et al., 2018) were tested and the most efficient shRNAs were selected for in vivo experiments. The most effective shRNAs are shFGFR1: clone ID TRCN0000378435 (target sequence 5’-CTGGCTGGAGTCTCCGAATAT-3’), shFGFR2: clone ID TRCN0000023715 (target sequence 5’-GCCAGGGATATCAACAACATA-3’) and shFGFR3: clone ID TRCN0000363373 (target sequence 5’-CCACTTCAGTGTGCGTGTAAC-3’).
 
-## Cell line culture
+### Cell line culture
 
 HEK293T cells (ATCC) maintained in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10% FBS, 100 IU/mL penicillin, and 100 μg/mL streptomycin were transfected using Polyjet (Tebu-bio). Cells were cultured at 37°C under 5% CO2, and are mycoplasma-free. The following inhibitors were used: Epoxomycin, (Sigma), Leupeptin (Roth), Debio1347 (Selleckchem).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis made use of Student’s t-test across N samples, where N is the number of embryos or experiments as defined in the figure legends.

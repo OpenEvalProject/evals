@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/027bh9e22 Department of Cell and Chemical Biology, Leiden University Medical Center Leiden Netherlands
-2. https://ror.org/03gnh5541 Institute of Science and Technology Austria (ISTA) Klosterneuburg Austria
-3. https://ror.org/0524sp257 School of Biochemistry, University of Bristol Bristol United Kingdom
+1. Department of Cell and Chemical Biology, Leiden University Medical Center Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))
+2. Institute of Science and Technology Austria (ISTA) Klosterneuburg Austria ([ROR:03gnh5541](https://ror.org/03gnh5541))
+3. School of Biochemistry, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
 
 † Corresponding author
 
 ## Abstract
 
-Segmentation is a critical data processing step in many applications of cryo-electron tomography. Downstream analyses, such as subtomogram averaging, are often based on segmentation results, and are thus critically dependent on the availability of open-source software for accurate as well as high-throughput tomogram segmentation. There is a need for more user-friendly, flexible, and comprehensive segmentation software that offers an insightful overview of all steps involved in preparing automated segmentations. Here, we present Ais: a dedicated tomogram segmentation package that is geared towards both high performance and accessibility, available on GitHub . In this report, we demonstrate two common processing steps that can be greatly accelerated with Ais: particle picking for subtomogram averaging, and generating many-feature segmentations of cellular architecture based on in situ tomography data. Featuring comprehensive annotation, segmentation, and rendering functionality, as well as an open repository for trained models at aiscryoet.org, we hope that Ais will help accelerate research and dissemination of data involving cryoET.
+Segmentation is a critical data processing step in many applications of cryo-electron tomography. Downstream analyses, such as subtomogram averaging, are often based on segmentation results, and are thus critically dependent on the availability of open-source software for accurate as well as high-throughput tomogram segmentation. There is a need for more user-friendly, flexible, and comprehensive segmentation software that offers an insightful overview of all steps involved in preparing automated segmentations. Here, we present Ais: a dedicated tomogram segmentation package that is geared towards both high performance and accessibility, available on GitHub. In this report, we demonstrate two common processing steps that can be greatly accelerated with Ais: particle picking for subtomogram averaging, and generating many-feature segmentations of cellular architecture based on in situ tomography data. Featuring comprehensive annotation, segmentation, and rendering functionality, as well as an open repository for trained models at aiscryoet.org, we hope that Ais will help accelerate research and dissemination of data involving cryoET.
 
 ## Introduction
 
@@ -33,13 +33,115 @@ To demonstrate the use of Ais, we outline its use in two such tasks: first, to a
 
 The first step in image segmentation using CNNs is to manually annotate a subset of the data for use as a training dataset. Ais facilitates this step by providing a simple interface for browsing data, drawing overlays, and selecting boxes to use as training data (Figure 1A, Figure 1—figure supplements 1–4). Multiple features, such as membranes, microtubules, ribosomes, and mitochondrial granules, can be segmented and edited at the same time across multiple datasets (even hundreds). These annotations are then extracted and used as ground truth labels upon which to condition multiple neural networks, each trained to segment a single feature type, with which one can automatically segment the same or any other dataset (Figure 1B). Segmentation in Ais is performed on-the-fly and can achieve interactive framerates, depending on the size of the datasets and network architectures that are used. With a little experience, users can generate a training dataset and then train, apply, and asses the quality of a model within a few minutes (Figure 1C), including on desktop or laptop Windows and Linux systems with relatively low-end GPUs (e.g. we often use an NVIDIA T1000).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig1-v1.jpg)
+
+**Figure 1.:** The various panels represent sequential stages in the Ais processing workflow, including annotation (A), testing convolutional neural networks (CNNs) (B), and visualizing segmentation (C). These images (A–C) are unedited screenshots of the software. (A) The interface for annotation of datasets. In this example, a tomographic slice has been annotated with various features – a detailed explanation follows in Figure 5. (B) After annotation, multiple neural networks are set up and trained on the aforementioned annotations. The resulting models can then be used to segment the various distinct features. In this example, double-membrane vesicles (double membrane vesicles DMVs, red), single membranes (blue), ribosomes (magenta), intermediate filaments (orange), mitochondrial granules (yellow), and molecular pores in the DMVs (lime) are segmented. (C) After training or downloading the required models and exporting segmented volumes, the resulting segmentations are immediately available within the software for 3d rendering and inspection. (D) The repository at aiscryoet.org facilitates the sharing and reuse of trained models. After validation, submitted models can be freely downloaded by anyone. (E) Additional information, such as the pixel size and the filtering applied to the training data, is displayed alongside all entries in the repository, in order to help a user identify whether a model is suited to segment their datasets.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The image shows an example of microtubules (green) being annotated and positive (green boxes) and negative (orange boxes) training boxes being placed. Neural networks in Ais operate on square input images (here 64 × 64 pixels), and the training data thus consists of square pairs of images, with the grayscale data in a placed box as the training input and the user-drawn annotations in that same box as the training output.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** After annotation and boxing, different training datasets can be exported by selecting which annotations to use as positives and which as negatives. In this example, the ‘Microtubule’ annotations are included as a positive feature, meaning both the input grayscale and output annotation are sampled. The feature ‘Not microtubule’ is included as a negative feature, meaning input grayscale is sampled and the corresponding output annotations are all zeroes. Using separate positive and negative annotation classes is not necessary (including unlabelled boxes in the ‘Microtubule’ annotations has the same effect as using a negative class), but can be convenient.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** After preparing a suitable network for segmentation, users can apply this network to any tomogram in the ‘Export’ tab. Applying one network to one volume typically takes around 1 min, although depending on the available hardware and the size of the volume. In this example, the network is only applied to a selected area of interest in order to save time processing.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** After exporting segmented volumes, these segmentations are immediately available for 3D rendering in the ‘Render’ tab. Volumes are rendered as isosurface meshes, and can also be saved as such (as.obj files), or opened in other rendering software such as Blender or ChimeraX11.
+
 Many cryoET datasets look alike, especially for cellular samples. A model prepared by one user to segment, for example, ribosomes in a dataset with a pixel size of 10 Å, might also be adequate for another user’s ribosome segmentation at 12 Å per pixel. To facilitate this sort of reuse and sharing of models, we launched an open model repository at aiscryoet.org where users can freely upload and download successfully trained models (Figure 1D). Models that pass screening become public, are labelled with relevant metadata (Figure 1E), and can be downloaded in a format that allows for direct use in Ais. Thus, users can skip the annotation and training steps of the segmentation workflow. To kickstart the repository, all 27 models that are presented in this article have been uploaded to it.
 
 Our software is not the first to address the challenge of segmenting cryoET datasets; established suites such as EMAN2 (Galaz-Montoya et al., 2015), MIB (Belevich et al., 2016), SuRVOS (Luengo et al., 2017), or QuPath (Bankhead et al., 2017) also provide some or most of the functionality that is available in Ais. Each comes equipped with one or various choices of neural network architectures to use, and many more designs for neural networks for semantic image segmentation can be found in the literature. Therefore, as well as creating a package geared specifically towards ease of use and fast results, we also wanted to include functionality that enables a user to quickly compare different models in order to facilitate determining which models are best suited for a particular segmentation task. The software thus includes a library of a number of well-performing architectures, including adaptations of single-model CNN architectures such as InceptionNet (Szegedy et al., 2014), ResNet (Szegedy et al., 2016), various UNets (Ronneberger et al., 2015), VGGNet (Simonyan and Zisserman, 2015), and the default architecture available in EMAN2 Galaz-Montoya et al., 2015, as well as the more complex generative-adversarial network Pix2pix (Isola et al., 2017). This library can also be extended by copying any Python file that adheres to a minimal template into the corresponding directory of the project (Appendix 1).
 
-## A library of neural network architectures supports varied applications
+### A library of neural network architectures supports varied applications
 
 To illustrate how useful it can be to rapidly test various architectures before selecting one that is well suited for the segmentation of any particular feature, we used six different architectures for the segmentation of three distinct features within the same tomogram, and analyzed the results (Table 1). We used a cryoET dataset that we had previously acquired (Abendstein et al., 2023), which contained liposomes with membrane-bound Immunoglobulin G3 (IgG3) antibodies that form an elevated Fragment crystallizable (Fc) platform, prepared on a lacey carbon substrate. The features of interest for segmentation were the membranes, antibody platforms, and carbon support film (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig2-v1.jpg)
+
+**Figure 2.:** (A) A representative example of the manual segmentation used to prepare training datasets. Membranes are annotated in red, carbon film in bright white, and antibody platforms in green. For the antibody training set, we used annotations prepared in multiple slices of the same tomogram, but for the carbon and membrane training set the slice shown here comprised all the training data. (B) A tomographic slice from a different tomogram that contains the same features of interest, also showing membrane-bound antibodies with elevated Fc platforms that are adjacent to carbon (red arrowheads). (C) Results of segmentation of membranes (top; red), carbon (middle; white), and antibody platforms (bottom; green), with the six different neural networks.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Training neural networks can often be an iterative process: an initial training dataset is compiled, a model trained, and the resulting segmentations are likely to contain readily identifiable false negatives (i.e. parts of antibody platforms not annotated by a model) and positives (e.g. membranes segmented as antibody platforms). To improve the model, it is then useful to perform a second iteration of annotating boxes for use in training and then training the model anew. In Ais, this is facilitated by being able to switch back and forth between the ‘annotation’ and ‘models’ tabs, and by being able to quickly test models on and annotate new boxes in many different datasets. In this example, we initially trained Pix2pix on the same training dataset as used for the other networks discussed in Figure 2 and Table 1 in the main text. Although the loss of the UNet network was the lowest, we found that in comparison to most other networks the output of the Pix2pix model contained fewer false positive predictions (e.g. compare the segmentations of the liposome membranes). Since Pix2pix is a large model, it is likely to benefit the most from further training on an expanded training dataset. We thus included additional samples in the training dataset and trained a new instance of a Pix2pix model for 50 epochs. The resulting model produced segmentations that were much closer to the manual annotations. Further information and tips for preparing useful models are also discussed in the video tutorials, available at youtube.com/@scNodes.
+
+**Table 1.**
+ Comparison of some of the default models available in Ais.aThe computational cost is only roughly proportional to the number of model parameters, which is reported in the software. The specifics of the network architecture affect the processing speed more significantly. bTime required to process one 511 × 720 pixel-sized tomographic slice. cThese columns list the loss values after training, calculated as the binary cross-entropy (bce) between the prediction and original annotation. The loss is a (rough) metric of how well a trained network performs (see Methods). dUnlike the other architectures, Pix2pix is not trained to minimize the bce loss but uses a different loss function instead. The bce loss values shown here were computed after training and may not be entirely comparable.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Architecture</th>
+      <th>Parameters</th>
+      <th>Training timea</th>
+      <th>Processing timea, b</th>
+      <th>Membranec</th>
+      <th>Carbonc</th>
+      <th>Antibodyc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EMAN2</td>
+      <td>378,081</td>
+      <td>38 s</td>
+      <td>50 ms</td>
+      <td>0.044</td>
+      <td>.072</td>
+      <td>.010</td>
+    </tr>
+    <tr>
+      <td>InceptionNet</td>
+      <td>550,529</td>
+      <td>462 s</td>
+      <td>295 ms</td>
+      <td>0.046</td>
+      <td>.120</td>
+      <td>.008</td>
+    </tr>
+    <tr>
+      <td>UNet</td>
+      <td>922,881</td>
+      <td>132 s</td>
+      <td>110 ms</td>
+      <td>0.013</td>
+      <td>.007</td>
+      <td>.001</td>
+    </tr>
+    <tr>
+      <td>VGGNet</td>
+      <td>1,493,059</td>
+      <td>91 s</td>
+      <td>85 ms</td>
+      <td>0.011</td>
+      <td>.125</td>
+      <td>.013</td>
+    </tr>
+    <tr>
+      <td>ResNet</td>
+      <td>4,887,265</td>
+      <td>1533 s</td>
+      <td>980 ms</td>
+      <td>0.047</td>
+      <td>.060</td>
+      <td>.014</td>
+    </tr>
+    <tr>
+      <td>Pix2pixd</td>
+      <td>29,249,409</td>
+      <td>793 s</td>
+      <td>225 ms</td>
+      <td>0.050d</td>
+      <td>.129d</td>
+      <td>.016d</td>
+    </tr>
+  </tbody>
+</table>
 
 After training, we applied the resulting models to a different tomogram containing the same features, that were not previously used to generate the training data (Figure 2B), so that there was no overlap between the training and testing datasets. Next, we compared the training times, relative loss values, and quality of the segmentations.
 
@@ -47,7 +149,7 @@ Based on the loss values (the loss is a metric of how well predictions match the
 
 When taking the training and processing speeds into account as well as the segmentation results, there is no overall best architecture. We, therefore, included multiple well-performing model architectures in the final library, in order to allow users to select from these models to find one that works well for their specific datasets. Although it is not necessary to screen different network architectures and users may simply opt to use the default (VGGNet), these results thus show that it can be useful to test different networks to identify one that is best. Moreover, these results also highlight the utility of preparing well-performing models by iteratively improving training datasets and re-training models in a streamlined interface. To aid in this process, the software displays the loss value of a network during training and allows for the application of models to datasets during training. Thus, users can inspect how a model’s output changes during training and decide whether to interrupt training and improve the training data or choose a different architecture.
 
-## Fine-tuning segmentation results with model interactions
+### Fine-tuning segmentation results with model interactions
 
 Although the above results go some way towards distinguishing the three different structures, they also show demonstrate a common limitation encountered in automated tomogram segmentation: some parts of the image are assigned a high segmentation value by multiple of the networks, leading to false classifications and ambiguity in the results. For example, the InceptionNet and ResNet antibody platform models falsely label the edges of the carbon film.
 
@@ -57,7 +159,7 @@ To further improve the segmentation results, we decided to implement a system of
 
 **Figure 3.:** (A) An overview of the settings available in the ‘Models’ menu in Ais. Three models: (1) ‘membrane’ (red), (2) ‘carbon’ (white), and (3) ‘antibody platforms’ (green) are active, with each showing a different section of the model settings: the training menu (1), prediction parameters (2), and the interactions menu (3). (B) A section of a tomographic slice is segmented by two models, carbon (white; parent model) and membrane (red; child model), with the membrane model showing a clear false positive prediction on an edge of the carbon film (panel ‘without interactions’). By configuring an avoidance interaction between the membrane model that is conditional upon the carbon model’s prediction, this false positive is avoided (panel ‘with interactions’). (C) By setting up multiple model interactions, inaccurate predictions by the ‘antibody platforms’ model are suppressed. In this example, the membrane model avoids carbon while the antibody model is set to colocalize with the membrane model. (D) 3D renders (see Methods) of the same dataset as used in Figure 2 processed three ways: without any interactions (left), using model competition only (middle), or by using model competition as well as multiple model interactions (right).
 
-These interactions are implemented as follows: first, a binary mask is generated by thresholding the parent model’s predictions using a user-specified threshold value. Next, the mask is then dilated using a circular kernel with a radius R, a parameter that we call the interaction radius. Finally, the child model’s prediction values are multiplied with this mask.
+These interactions are implemented as follows: first, a binary mask is generated by thresholding the parent model’s predictions using a user-specified threshold value. Next, the mask is then dilated using a circular kernel with a radius $R$, a parameter that we call the interaction radius. Finally, the child model’s prediction values are multiplied with this mask.
 
 Besides these specific interactions between two models, the software also enables pitching multiple models against one another in what we call ‘model competition’. Models can be set to ‘emit’ and/or ‘absorb’ competition from other models. Here, to emit competition means that a model’s prediction value is included in a list of competing models. To absorb competition means that a model’s prediction value will be compared to all values in that list, and that this model’s prediction value for any pixel will be set to zero if any of the competing models’ prediction value is higher. On a pixel-by-pixel basis, all models that absorb competition are thus suppressed whenever their prediction value for a pixel is lower than that of any of the emitting models.
 
@@ -65,13 +167,29 @@ With the help of these model interactions, it is possible to suppress common err
 
 By conditionally combining and editing the prediction results of multiple neural networks, model interactions can thus be helpful in fine-tuning segmentations to be better suited for downstream applications. To illustrate this, we generated a comparison of segmentation results using (i) no interactions, (ii) model competition only, and (iii) model competition as well as model interactions (Figure 3D), which demonstrates the degree to which false positives can be reduced by the use of model interactions (although at times at the expense of increasing the rate of false negatives).
 
-## Automating particle picking for subtomogram averaging
+### Automating particle picking for subtomogram averaging
 
 Protein structure determination by cryoET requires the careful selection of many subtomograms (i.e. sub-volumes of a tomogram that all contain the same structure of interest), and aligning and averaging these to generate a 3D reprojection of the structure of interest with a significantly increased signal to noise ratio. The process of selecting these sub-volumes is called ‘particle picking,’ and can be done either manually or in an automated fashion. Much time can be saved by automating particle picking based on segmentations. In many cases, though, segmentation results are not readily usable for particle picking, as they can often introduce numerous false positives. This is particularly the case with complex, feature-rich datasets such as those obtained within cells, where the structures of interest can visually appear highly similar to other structures that are also found in the data, or when the structures of interest are located close to other features and are, therefore, hard to isolate. An example of this latter case is the challenge of picking membrane-bound particles.
 
 Recently, we have used cryoET and subtomogram averaging to determine the structures of membrane-bound IgG3 platforms and of IgG3 interacting with the human complement system component 1 (C1) on the surface of lipid vesicles (Abendstein et al., 2023). The reconstructions of the antibody platforms alone and of the antibody-C1 complex were prepared using 1193 and 2561 manually selected subtomograms, extracted from 55 and 101 tomograms, respectively. Manual picking of structures of interest, although very precise, is very time-consuming and in this particular case took approximately 20 hr of work.
 
 To demonstrate the utility of our software for particle picking, we re-analyzed these same datasets, this time using Ais to automate the picking of the two structures: antibody platforms and antibody-C1 complexes. For the antibody platforms, we used the same models and model interactions as described above, while we trained an additional neural network to identify C1 complexes for the segmentation of the antibody-C1 complexes. To prepare a training dataset for this latter model, we opened all 101 tomograms in Ais and browsed the data to select and annotate slices where one or multiple antibody-C1 complexes were clearly visible (Figure 4A). The training dataset thus consisted of samples taken from multiple different tomograms; the annotation and data selection in this case took around 1 hr of work.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig4-v1.jpg)
+
+**Figure 4.:** (A) Manually prepared annotations used to train a neural network to recognize antibody platforms (top) or antibody-C1 complexes (bottom). (B) Segmentation results as visualized within the software. Membranes (red) and carbon support film (white) were used to condition the antibody (green) and antibody-C1 complex (yellow) predictions using model interactions. (C) 3D representations of the segmented volumes rendered in Ais. (D) Tomographic slices showing particles picked automatically based on the segmented volume shown in panel c. (E) Subtomogram averaging result of the 2499 automatically picked antibody platforms. (F) Subtomogram averaging result obtained with the 602 automatically picked antibody-C1 complexes. The quadrants in panels e and f show orthogonal slices of the reconstructed density maps and a 3D isosurface model (the latter rendered in ChimeraX [Goddard et al., 2018]).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The steps employed in the process of converting a segmented.mrc volume to a list of particle coordinates. The example is shown in 2D; the actual picking process is performed in 3D. (1) The input segmentation (values 0–255), (2) a binary mask, generated by thresholding the input image at a value of 127, (3) the distance transform of the binary mask, (4) groups of pixels, labelled using a watershed algorithm (skimage.segmentation.watershed) with local maxima in the distance transform output used as sources, (5) centroid coordinates (marked by crosses) of the pixel groups, (6) example of removing particles by applying a minimum spacing, (7) example of removing particles by specifying a minimum particle size.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** After picking particles, the resulting localizations are immediately available for inspection in the renderer. In this example, yellow markers indicate the coordinates of molecular pores, picked in a tomogram from the dataset by Wolff et al., 2020 (see main text Figure 5).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The FSC curve for the two half maps of the automatically-picked C1-IgG3 complex reconstruction gives a resolution of 44 Å at the FSC = 0.143 (yellow, 'auto picked half maps'). In the original publication (Abendstein et al., 2023) various resolutions are reported for different maps that were obtained by focused refinement on different parts of the complex. In the current report, we did not apply further refinement steps beyond the initial even/odd reconstructions on the entire complex that the above FSC curve is based on. The value of 44 Å must thus be compared to the corresponding initial reconstruction in the original report (in Abendstein et al., 2023, their Supplementary Fig. 10c, map #1) which was reported at FSC = 0.143 with the same resolution of 44 Å. A comparison between the full maps (black FSC curve, 'intermap') at FSC coefficient 0.5 gives a value of 46 Å for the resolution, thus indicating that the two independent reconstructions did indeed converge on the same structure.
 
 The antibody platform and antibody-C1 complex models were then applied to the respective datasets, in combination with the membrane and carbon models and the model interactions described above (Figure 4B): the membrane avoiding carbon, and the antibody platforms colocalizing with the resulting membranes. We then launched a relatively large batch segmentation process (3 models × 156 tomograms) and left it to complete overnight.
 
@@ -85,13 +203,25 @@ After picking, we used EMAN2 (Galaz-Montoya et al., 2015, spt_boxer.py) to extra
 
 After applying the same approach to subtomogram averaging as used previously (Abendstein et al., 2023), the resulting averages were indeed highly similar to the original reconstructions (Figure 4E and F, Figure 4—figure supplement 3). These results demonstrate that Ais can be successfully used to automate particle picking, and thus to significantly reduce the amount of time spent on what is often a laborious processing step.
 
-## Many-feature segmentations of complex in situ datasets
+### Many-feature segmentations of complex in situ datasets
 
 Aside from particle picking, segmentation is also often used to visualize and study the complex internal structure of a sample, as for example encountered when applying tomography to whole cells. Here too, the accuracy of a segmentation can be a critical factor in the success of downstream analyses such as performing measurements on the basis of 3D feature maps generated via segmentation.
 
 A challenging aspect of the segmentation of cellular samples is that these datasets typically contain many features that are biologically distinct, but visually and computationally difficult to distinguish. For example, one challenge that is often encountered is that of distinguishing between various linearly shaped components: lipid membranes, actin filaments, microtubules, and intermediate filaments, which all appear as linear features with a relatively high density. To show the utility of Ais for the accurate segmentation of complex cellular tomograms, we next demonstrate a number of examples of such feature-rich segmentations.
 
 The first example is a segmentation of seven distinct features observed in the base of Chlamydomonas reinhardtii cilia (Figure 5A), using the data by van den Hoek et al., 2022 that was deposited in the Electron Microscopy Public Image Archive (EMPIAR, Iudin et al., 2023) with accession number 11078. The features are: membranes, ribosomes, microtubule doublets, axial microtubules, non-microtubular filaments, interflagellar transport trains (IFTs), and glycocalyx. This dataset was particularly intricate (the supplementary information to the original publication lists more than 20 features that can be identified across the dataset) and some rare features, such as the IFTs, required careful annotation across all tomograms before we could compile a sufficiently large training dataset. The final segmentation correctly annotates most of the selected characteristics present in the sample: the ribosome exclusion zone that surrounds the ciliary base (van den Hoek et al., 2022) is clearly recognizable, and the structures of the glycocalyx, membranes, and microtubule doublets within the cilia are well defined. Some fractions of the meshwork of stellate fiber and Y-link proteins are also detected within the cilium.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig5-v1.jpg)
+
+**Figure 5.:** (A) A segmentation of seven distinct features observed in the base of C. reinhardtii cilia (van den Hoek et al., 2022, EMPIAR-11078, tomogram 12): membranes (gray), ribosomes (magenta), microtubule doublets (green) and axial microtubules (green), non-microtubular filaments within the cilium (blue), inter-flagellar transport trains (yellow), and glycocalyx (orange). Inset: a perpendicular view of the axis of the cilium. The arrows in the adjacent panel indicate these structures in a tomographic slice. (B) A segmentation of six features observed in and around mitochondria in a mouse neuron with Huntington’s disease phenotype (Wu et al., 2023) (EMD-29207): membranes (gray), mitochondrial granules (yellow), membranes of the mitochondrial cristae (red), microtubules (green), actin (turquoise), and ribosomes (magenta). (C) Left: a segmentation of ten different cellular components found in tomograms of coronavirus-infected mammalian cells (Wolff et al., 2020): double-membrane vesicles (double membrane vesicles DMVs, light red), single membranes (gray), viral nucleocapsid proteins (red), viral pores in the DMVs (blue), nucleic acids in the DMVs (pink), microtubules (green), actin (cyan), intermediate filaments (orange), ribosomes (magenta), and mitochondrial granules (yellow). Right: a representative slice, with examples of each of the features (except the mitochondrial granules) indicated by arrows of the corresponding colour.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** A side-by-side overview of the 10 segmented features in the coronavirus-infected mammalian cells dataset.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/98552/elife-98552-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** As with the C1-IgG3 complexes and IgG3 platforms (main Figures 3 and 4), the segmentations of the molecular pores in the coronavirus replication organelle (main Figure 5) can be used to automatically pick particles. In the above image, tomographic slices are shown that were cropped at the location of 56 particles (picked in two tomograms). Although it can be difficult to tell at the single particle level whether an image contains the exact structure of interest, the images are all centered on sections of double-membrane vesicles and many show additional density between the membranes as well as at the outside (convex side) of the vesicle, characteristic of the molecular pore. The accuracy of picking and the quality of the resulting particle datasets are dependent on the quality of the original segmentations and on the parameters used in picking. Converting a 3D grayscale volume to a list of coordinates requires a number of parameters to be specified (in Ais, but also in many other programs). First, a threshold value is used to convert from grayscale to a binary volume. Contiguous regions of nonzero voxels in the volumes are then considered ‘particles,’ and various metrics can be used to determine whether particles are included in the final list of coordinates. Example are the particle volume, integrated prediction value for the voxels included in the particle’s volume, or a minimum particle spacing. In Ais, users can specify the first and the latter (we experimented with using the second metric as well, but found it very similar but less intuitive than the metric of particle volume, so we did not include it). The threshold values chosen for these metrics and for the conversion of the grayscale volume to a binary one thus define what is ‘dust.’ In practice, choosing these values entails a trade-off between the number of particles, and the ‘quality’ of the selected set of particles. Low thresholds yield a large number of particles, which can introduce the need to perform classification during reconstruction by subtomogram averaging. High thresholds yield fewer particles, but the resulting selection may be more uniform, and their images of higher quality. In practice, it is advisable to test different thresholds and to inspect the resulting particle datasets, in order to ensure that (i) good particles are not being excluded, and (ii) large numbers of bad particles (e.g. densities that correspond to structures other than the structure of interest) are not being included. As with manually picked particle sets, classification is likely required to curate the selection of particles.
 
 In the second example, we show a segmentation of six features found in and around a mitochondrion in a mouse neuron (Figure 5B), using the data by Wu et al., 2023 as available in the Electron Microscopy Data Bank (EMDB) (Lawson et al., 2016) with accession number 29207. In the original publication, the authors developed a segmentation method to detect and perform measurements on the granules found within mitochondria. Using Ais, we were able to prepare models to segment these granules, as well as microtubules, actin filaments, and ribosomes, and to distinguish between the highly similar vesicular membranes on the one hand, and the membranes of the mitochondrial cristae on the other.
 
@@ -101,28 +231,28 @@ To conclude, our aim with the development of Ais was to simplify and improve the
 
 ## Materials and methods
 
-## Neural network comparisons
+### Neural network comparisons
 
 The comparison presented in Table 1 was prepared with the use of the same training datasets for all architectures, consisting of 53/52/58 positive images showing membranes/carbon/antibody platforms and corresponding annotations alongside 159/51/172 negative images that did not contain the feature of interest, but rather the other two features, reconstruction artefacts, isolated protein, or background noise. Images were 64 × 64 pixels in size and the dataset was resampled, in random orientations, such that every positive image was copied 10 times and that the ratio of negatives to positives was 1.3:1. Networks were trained for 50 epochs with 32 images per batch, with the exception of the ResNet and Pix2pix antibody platform models, which were trained for 30 epochs to avoid a divergence that occurred during training after a larger number of epochs, due to the large number of network parameters and relatively low number of unique input images.
 
 The reported loss is that calculated on the training dataset itself, i.e., no validation split was applied. During regular use of the software, users can specify whether to use a validation split or not. By default, a validation split is not applied in order to prioritize training accuracy by making full use of the input set of ground truth annotations. When the training dataset is sufficiently large, we recommend increasing the size of the validation split. Depending on the chosen split size, the software reports either the overall training loss or the validation loss during training.
 
-## Data visualization
+### Data visualization
 
 Images shown in the figures were either captured within the software (Figures 1 and 3BC ‘original image’, Figure 4ABC), output from the software that was colourized in Inkscape (Figures 2C and 3BC), or output from the software that was rendered using ChimeraX11 (Figures 3D and 4EF, Figure 5). For the panels in Figure 3D, segmented volumes were rendered as isosurfaces at a manually chosen suitable isosurface level and with the use of the ‘hide dust’ function (the same settings were used for each panel, different settings used for each feature). This ‘dust’ corresponds to small (in comparison to the segmented structures of interest) volumes of false positive segmentations, which are present in the data due to imperfections in the used models. The rate and volume of false positives can be reduced either by improving the models (typically by including more examples of the images that would be false negatives or positives in the training data) or, if the dust particles are indeed smaller than the structures of interest, they can simply be discarded by filtering particles based on their volume, as applied here. In particle picking a ‘minimum particle volume’ is specified – particles with a smaller volume are considered ‘dust’.
 
-## Hardware
+### Hardware
 
 The software does not require a GPU, but works optimally when a CUDA-capable GPU is available. For the measurements shown in Table 1 we used an NVIDIA Quadro P2200 GPU on a PC with an Intel i9-10900K CPU. We’ve also extensively used the software on a less powerful system equipped with an NVIDIA T1000 and an Intel i3-10100 CPU, as well as on various systems with intermediate specifications, and found that the software reaches interactive segmentation rates in most cases. For batch processing of many volumes, a more powerful GPU is useful.
 
-## Tomogram reconstruction and subtomogram averaging
+### Tomogram reconstruction and subtomogram averaging
 
 Data collection and subtomogram averaging (Figures 3 and 4) was performed as described in a previously published article (Abendstein et al., 2023). Briefly, tilt series were collected on a Talos Arctica 200 kV system equipped with a Gatan K3 detector with an energy filter at a pixel size of 1.74 Å per pixel using a dose-symmetric tilt scheme with a range ±57° and tilt increments of 3° with a total dose of 60 e/Å (Belevich et al., 2016). Tomograms were reconstructed using IMOD (Mastronarde and Held, 2017). Particle picking was done in Ais (and is explained in more detail in the online documentation). Subtomogram averaging was done using a combination of EMAN (Galaz-Montoya et al., 2015) and Dynamo (Castaño-Díez et al., 2012). For a detailed description of the subtomogram averaging procedure, see Abendstein et al., 2023.
 
-## Open-source software
+### Open-source software
 
 This project depends critically on a number of open-source software components, including: Python, Tensorflow (Abadi, 2015), numpy (Harris et al., 2020), scipy (Virtanen et al., 2020), sci-kit-image (van der Walt et al., 2014), mrcfile (Burnley et al., 2017), and imgui (Cornut, 2023).
 
-## Software availability
+### Software availability
 
 A standalone version of the software is available as ‘Ais-cryoET’ on the Python package index and on GitHub, (copy archived at Last, 2024), under the GNU GPLv3 license. We have also integrated the functionality into scNodes (Last et al., 2023), our dedicated processing suite for correlated light and electron microscopy. In the combined package, the segmentation editor contains additional features for visualization of fluorescence data and the scNodes correlation editor can be used to prepare correlated datasets for segmentation. Documentation for both versions of Ais can be found at ais-cryoet.readthedocs.org. Video tutorials are available via youtube.com/@scNodes.

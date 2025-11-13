@@ -15,19 +15,19 @@
 
 ### Affiliations
 
-1. https://ror.org/01dq60k83 Department of Ecological Developmental Adaptability Life Sciences, Graduate School of Life Sciences, Tohoku University Sendai Japan
-2. https://ror.org/01s7jxc19 Department of Biology, Miyagi University of Education Sendai Japan
-3. https://ror.org/02j6c0d67 Department of Biological Sciences, Faculty of Science, Kanagawa University Yokohama Japan
-4. https://ror.org/0516ah480 Department of Basic Biology, School of Life Science, SOKENDAI (The Graduate University for Advanced Studies) Okazaki Japan
-5. https://ror.org/05q8wtt20 Division of Environmental Photobiology, National Institute for Basic Biology Okazaki Japan
-6. https://ror.org/02z1n9q24 Tropical Biosphere Research Center, University of the Ryukyus Okinawa Japan
-7. https://ror.org/03599d813 Graduate School of Humanities and Sciences, Ochanomizu University Tokyo Japan
+1. Department of Ecological Developmental Adaptability Life Sciences, Graduate School of Life Sciences, Tohoku University Sendai Japan ([ROR:01dq60k83](https://ror.org/01dq60k83))
+2. Department of Biology, Miyagi University of Education Sendai Japan ([ROR:01s7jxc19](https://ror.org/01s7jxc19))
+3. Department of Biological Sciences, Faculty of Science, Kanagawa University Yokohama Japan ([ROR:02j6c0d67](https://ror.org/02j6c0d67))
+4. Department of Basic Biology, School of Life Science, SOKENDAI (The Graduate University for Advanced Studies) Okazaki Japan ([ROR:0516ah480](https://ror.org/0516ah480))
+5. Division of Environmental Photobiology, National Institute for Basic Biology Okazaki Japan ([ROR:05q8wtt20](https://ror.org/05q8wtt20))
+6. Tropical Biosphere Research Center, University of the Ryukyus Okinawa Japan ([ROR:02z1n9q24](https://ror.org/02z1n9q24))
+7. Graduate School of Humanities and Sciences, Ochanomizu University Tokyo Japan ([ROR:03599d813](https://ror.org/03599d813))
 
 † Corresponding author
 
 ## Abstract
 
-Reef-building corals thrive in oligotrophic environments due to their possession of endosymbiotic algae. Confined to the low pH interior of the symbiosome within the cell, the algal symbiont provides the coral host with photosynthetically fixed carbon. However, it remains unknown how carbon is released from the algal symbiont for uptake by the host. Here we show, using cultured symbiotic dinoflagellate, Breviolum sp., that decreases in pH directly accelerates the release of monosaccharides, that is, glucose and galactose, into the ambient environment. Under low pH conditions, the cell surface structures were deformed and genes related to cellulase were significantly upregulated in Breviolum . Importantly, the release of monosaccharides was suppressed by the cellulase inhibitor, glucopyranoside, linking the release of carbon to degradation of the agal cell wall. Our results suggest that the low pH signals the cellulase-mediated release of monosaccharides from the algal cell wall as an environmental response in coral reef ecosystems.
+Reef-building corals thrive in oligotrophic environments due to their possession of endosymbiotic algae. Confined to the low pH interior of the symbiosome within the cell, the algal symbiont provides the coral host with photosynthetically fixed carbon. However, it remains unknown how carbon is released from the algal symbiont for uptake by the host. Here we show, using cultured symbiotic dinoflagellate, Breviolum sp., that decreases in pH directly accelerates the release of monosaccharides, that is, glucose and galactose, into the ambient environment. Under low pH conditions, the cell surface structures were deformed and genes related to cellulase were significantly upregulated in Breviolum. Importantly, the release of monosaccharides was suppressed by the cellulase inhibitor, glucopyranoside, linking the release of carbon to degradation of the agal cell wall. Our results suggest that the low pH signals the cellulase-mediated release of monosaccharides from the algal cell wall as an environmental response in coral reef ecosystems.
 
 ## Introduction
 
@@ -41,13 +41,55 @@ As walled organisms, microalgae respond to the environments in a variety of ways
 
 To investigate the physiological effects of low pH, a characteristic environmental factor in symbioses, on algal intrinsic properties, a Symbiodiniaceae alga Breviolum sp. SSB01 (hereafter, Breviolum) was grown in a host-independent manner and cell proliferation and photosynthetic activities were measured (Figure 1—figure supplement 1). By comparing the growth rate of Breviolum in normal culture medium (pH 7.8) and acidic medium (pH 5.5, hereafter called ‘low pH’), we showed that the low pH medium considerably suppressed algal growth (Figure 1A) and the cells in low pH media were more spread out and less clustered than the cells in normal media (Figure 1B and C). In addition, culturing at low pH for 1 day resulted in significant declines in photosynthesis activity (Figure 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/80628/elife-80628-fig1-v1.jpg)
+
+**Figure 1.:** (A) Growth rate (n = 6 per treatment, t-test). Asterisks indicate statistically significant differences (t-test, p < 0.005). (B) Bright field images of the cells under different conditions. The lower panels show high-magnification views of boxed areas in the upper panels. Scale bar = 50 μm. (C) Quantification of the number of cells forming clusters (Fisher’s exact test for “1 or 2” vs “3 or more”, p = 1.727 × 10-7). (D) Photosynthesis activity (n = 4 per treatment, t-test) (E, F) Quantification of glucose (E) and galactose (F) secreted in normal, low pH and normal+DCMU media during incubation for 1 day using ion chromatography (n = 4 per treatment, t-test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80628/elife-80628-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80628/elife-80628-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The quantification of glucose (A) and galactose (B) in the media of the Breviolum cultures on 0- and 1-day incubation using ion chromatography (n = 4-11 per treatment, t-test).
+
 Contrary to our expectation, the amount of glucose secreted into the culture medium was higher at low pH (Figure 1E) and the secreted galactose similarly showed an increasing trend (Figure 1F). These trends suggest that Breviolum is capable of secreting monosaccharides autonomously without host signals, and that low pH enhanced the secretion. On the addition of the photosynthesis inhibitor 3-(3,4-dichlorophenyl)–1,1-dimethylurea (DCMU), the concentrations of glucose and galactose in the medium increased (Figure 1E and F, Figure 1—figure supplement 2), suggesting the presence of a pathway uncharacterized in previous studies, where the transport of newly fixed glucose, not glycerol, to the host sea anemone was blocked by DCMU addition (Burriesci et al., 2012).
 
 To investigate the response of Breviolum to acidic environments at the morphological level, cells cultured in different media were examined by microscopy (Figure 1—figure supplement 1). Scanning electron microscope (SEM) observations revealed that many of the Breviolum cells cultured at low pH exhibited wrinkled structures on their cell surfaces (Figure 2A and B). Furthermore, transmission electron microscopy (TEM) revealed that the cell surface structures of the low pH media group were more ‘exfoliated’ (Figure 2C and D). These suggest that low pH affects the structures and properties of a cellulosic cell wall found in coccoid Symbiodiniaceae cells (Colley and Trench, 1983; Markell et al., 1992).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/80628/elife-80628-fig2-v1.jpg)
+
+**Figure 2.:** (A) SEM images of the representative cells. Scale bar = 1 μm. (B) Quantification of the cell surface structures of the SEM images (Fisher’s exact test, #1; p < 2.2 × 10-16, #2; p < 2.2 × 10-16). (C) TEM images of the representative cells. NP, ‘non-peeled’ where the outer struc- ture of the cell wall is not shed from the cell surface; P, ‘peeled’ at some parts of the cell surface; CP, ‘completely peeled’. Scale bar = 2 μm. (D) Quantification of the cell surface structures of the TEM images (Fisher’s exact test for “P or CP” vs “NP”, #1; p = 4.621 × 10-11, #2; p = 3.525 × 10-4).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80628/elife-80628-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Representative examples of Smooth and Wrinkled. Scale bar = 1 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80628/elife-80628-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Representative examples of NP (non-peeled), P (peeled) and CP (completely peeled). Scale bar = 2 μm.
+
 To identify the mechanism involved in the monosaccharide secretion of Breviolum, we compared gene expression changes between the ‘control vs normal’ and ‘control vs low pH’ comparisons (Figure 1—figure supplement 1), and identified 3 and 4527 differentially expressed genes (DEGs), respectively (Figure 3A, Figure 3—source data 1). The gene ontology (GO) term enrichment and KEGG pathway analysis of these two gene sets resulted in the detection of 0 (control vs normal) and 16 (control vs low pH) terms (Figure 3—source data 2), which included categories related to carbon metabolism (Figure 3B, Figure 3—figure supplement 1). The CAZy database (Lombard et al., 2014) analysis showed that 12 DEGs (28 isoforms) were annotated with Carbohydrate-Active enZymes (CAZymes) activity (Figure 3—source data 3). One of the the gene models, TRINITY_DN40554_c2_g2, was shown to encode Glycoside Hydrolase Family 7 (GH7) endo-β–1,4-glucanase (exocrine cellulolytic enzyme) harbouring a signal peptide and a sequence motif called Carbohydrate-Binding Module Family 1 (CBM1) (Figure 3C) with high similarity to dinoflagellate cellulases (Kwok and Wong, 2010; Figure 3—figure supplement 2). Among four isoforms of this cellulase gene annotated as GH7, one lacked the N-terminal region including a signal peptide and CBM1 motif (labelled as ‘GH7 +CBM1' in Figure 3C), but the rest of the sequences were highly conserved at the amino acid level and only distinguished by small variations. Notably, this cellulase gene was detected as a DEG in the comparison between free-living and symbiotic algae using the published dataset (Figure 3—source data 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/80628/elife-80628-fig3-v1.jpg)
+
+**Figure 3.:** (A) Venn diagram showing the numbers of DEGs under different conditions. (B) GO term enrichment analysis. Circles indicate the statistical significance (FDR) of the enriched GO terms, with the numbers of DEGs (numDEG) associated with each GO term. (C) Isoform-level expression analysis of genes encoding Carbohydrate-Active enZymes (CAZymes). Symbols indicate isoforms associated with the DEGs, with the presence (triangle) or absence (rhombus) of signal peptide predicted in the amino acid sequence. Symbol colors represent the log2 fold-changes (log2FC) of the expression levels of each isoform (low pH/control). Dashed line indicates a threshold for differential expression (FDR = 0.01).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80628/elife-80628-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The KEGG pathways for glycolysis/gluconeogenesis are shown. The colours indicate gene expression levels.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80628/elife-80628-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** A maximum likelihood tree of cellulase proteins labeled with species names and GenBank IDs is shown. Support values using an SH-like approximate likelihood ratio test (left) and ultrafast boot strap approximation (right) are shown for each branch. For Breviolum sp. SSB01, the Trinity assembly contig IDs are shown.
+
 To confirm the effect of cellulase on monosaccharide secretion, we examined whether secretions were inhibited by the cellulase inhibitor Para-nitrophenyl 1-thio-beta-d-glucopyranosid (PSG) (Yoshida, 1995). Prior to examining this, we confirmed the inhibitory effect of PSG on cellulase activity in Breviolum cells in vitro. Although the cellulase activity in the cell supernatant was too low to be detected, PSG inhibited the cellulase activity in Breviolum cell homogenate in a concentration-dependent manner (Figure 4—figure supplement 1). Then, we examined the effect of PSG on the amount of glucose and galactose secreted in vivo using the cell cultures under low pH (Figure 1—figure supplement 1). PSG inhibited the secretion of both glucose and galactose in a dose-dependent manner (Figure 4), suggesting that degradation of the cell wall containing glucose and galactose by cellulase is involved in the secretion of monosaccharides from Breviolum cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80628/elife-80628-fig4-v1.jpg)
+
+**Figure 4.:** The quantification of glucose (A) and galactose (B) in the medium on 1 day incubation with PSG using LC-MS/MS (n = 3 per treatment, t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80628/elife-80628-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The cellulase activity of the Breviolum cell homogenate incubated with PSG are shown. Confidence interval = 95%.
 
 ## Discussion
 
@@ -59,11 +101,11 @@ Generally, within ecosystems energy is transferred from photosynthetic primary p
 
 ## Materials and methods
 
-## Strains and culture conditions
+### Strains and culture conditions
 
 We obtained the Breviolum (formerly Symbiodinium clade B) strain SSB01, an axenic uni-algal strain closely related to the genome-sequenced strain B. minutum Mf1.05b (clade B), as a generous gift from Profs. John R. Pringle and Arthur R. Grossman (Shoguchi et al., 2013; Xiang et al., 2013). The Breviolum was maintained according to previous study (Ishii et al., 2018). Stock cultures were incubated at 25°C in medium containing 33.5 g/L of Marine Broth (MB) (Difco Laboratories, New Jersey, USA), 250 mg/L of Daigo’s IMK Medium (Nihon Pharmaceutical, Japan), and PSN (Gibco, Thermo Fisher Scientific, Massachusetts, USA), with final concentrations of penicillin, streptomycin, and neomycin at 0.01, 0.01, and 0.02 mg/mL, respectively. Light was provided at an irradiance of approximately 100 µmol photons/m2s in a 12 hr light:12 h dark cycle. In experiments, IMK medium containing 33.5 g/L of sea salt (Sigma-Aldrich, Merck Millipore, Germany), 250 mg/L of Daigo’s IMK Medium, and PSN with final concentrations of penicillin, streptomycin, and neomycin at 0.01, 0.01, and 0.02 mg/mL, respectively, was used as normal medium (pH 7.8). For the low pH experiments, the pH was adjusted to 5.5 using HCl to make low pH medium (pH 5.5). Prior to measurements, Breviolum was pre-incubated in normal medium for one week unless otherwise specified (Figure 1—figure supplement 1). Breviolum was pre-incubated in normal medium for one week unless otherwise specified (Figure 1—figure supplement 1).
 
-## Growth rate, cell clumping and photosynthesis activity assay
+### Growth rate, cell clumping and photosynthesis activity assay
 
 Breviolum cultures were inoculated to fresh normal or low pH media for four weeks to measure growth rate (n=6 biological replicates). Growth rate comparisons between the normal and low pH media conditions were conducted using 100 µL of media (625 cells/µL) in a 96-well plate. Cell growth was monitored by measuring the optical density at 730 nm (OD730) of the liquid cultures using a Multiskan GO microplate spectrophotometer (Thermo Fisher Scientific, Massachusetts, USA) for once par week.
 
@@ -71,21 +113,21 @@ To compare the cell clumping conditions, Breviolum cultures were inoculated to f
 
 To measure photosynthesis activities, Breviolum cultures were inoculated to fresh normal or low pH media for 1 day (n=4 biological replicates). Photosynthesis and respiration rates were measured with a Clark-type oxygen electrode (Hansatech Instruments, Norfolk, UK) in a closed cuvette under light at 1,000 µmol/m2s photons at 25°C. The cultures were preincubated in the dark for 10 min and then exposed to saturating light for 20 min. Photosynthesis activities were determined using cultures at densities of 1×106 cells/mL in fresh normal and low pH media, on days 0 and 1 after changing the medium. Respiration rates were calculated using the dark-phase oxygen consumption rates and photosynthesis rates were calculated by subtracting the respiration rates from the light-phase oxygen evolution rates. Mean estimates with standard errors were calculated from single measurements of four different cultures per medium condition.
 
-## Ion chromatography
+### Ion chromatography
 
 Breviolum cultures were inoculated to fresh normal or low pH media for 1 day to measure the concentrations of monosaccharides. Breviolum cultures were incubated at densities of 8×106 cells/20 mL in T25 culture flasks with a filter cap (TrueLine Cell Culture Flasks, TR6000) under a light-dark cycle. DCMU (Tokyo Chemical Industry, Japan) was dissolved in ethanol at the concentration of 20 mM and was added to cultures to a final concentration of 20 µM followed by 1 day incubation, while the control samples contained the same amount of ethanol. The cells cultured with and without DCMU for 1 day were removed by centrifugation at 2000×g for 5 min at room temperature. Samples (n=4 biological replicates) of the supernatant from the control (0 day), normal (1 day) and low pH (1 day) cultures were filtered using a 0.22 µm PVDF filter (Merck Millipore, Germany). These samples were loaded onto an OnGuard column (Dionex OnGuard II Ba/Ag/H 2.5 cc Cartridge) (Thermo Fisher Scientific) to remove the sulphate and halogen, according to the manufacturer’s instructions. The samples were quantified using high-performance anion-exchange chromatography with pulsed amperometric detection (HPAEC-PAD) using a Dionex ICS-5000 system equipped with a CarboPac PA1 column (Dionex) (Shinohara et al., 2017). The column was operated at a flow rate of 1.1 mL/min with the following phases: (1) a linear gradient of 0–100 mM NaOH from 0 to 31 min, (2) a linear gradient of 0–150 mM sodium acetate containing 100 mM NaOH from 31 to 34 min, and (3) an isocratic 150 mM sodium acetate/100 mM NaOH from 34 to 41 min. Myo-inositol (2 µg/mL) was added to each sample as an internal standard for quantification.
 
 The concentrations of monosaccharides were calculated by comparing the peak ratios between the targets of interest and standards. The secretion rates were calculated by subtracting the concentrations on 0 day from those of 1 day.
 
-## Electron microscopy
+### Electron microscopy
 
 Breviolum cultures were inoculated to fresh normal or low pH media for 1 day to examine morphological change. Breviolum cultures were incubated at densities of 8×106 cells/20 mL in T25 culture flasks with a filter cap (TrueLine Cell Culture Flasks, TR6000) under a light-dark cycle. For SEM observation, cells were fixed in 2% glutaraldehyde and 2% osmium (VIII) oxide, dehydrated with ethanol, and dried using the critical point drying technique. The samples were coated with osmium plasma and observed under a JSM-7500F microscope at 5 kV (Hanaichi UltraStructure Research Institute, Japan). The surface patterns of the cells were manually scored and classified as ‘Smooth’ or ‘Wrinkled’ (73 and 129 cells pooled form n=4–5 technical replicates in each of biological replicates (n=2) were blindly scored under the normal and low pH conditions, respectively). For TEM observation, cells were fixed in 2% glutaraldehyde and 2% osmium (VIII) oxide, dehydrated with ethanol and embedded in EPON812 polymerized with epoxy resin. Sections 80–90 nm thick were cut, coated with evaporated carbon for stabilisation, and stained with uranyl acetate and lead citrate. The sections were then imaged at 100 kV using a HITACHI H-7600 transmission electron microscope (Hanaichi UltraStructure Research Institute, Japan). The cells were then categorized as NP (non-peeled), P (peeled) or CP (completely-peeled) (cells from two pairs of biological replicates under normal and low pH conditions, pooled form n=10 technical replicates for each, were blindly scored).
 
-## RNA extraction and sequencing
+### RNA extraction and sequencing
 
 After pre-incubated in normal media for one week, Breviolum cultures were inoculated to fresh normal or low pH IMK media for 1 day to examine the transcriptional change. Breviolum cultures were incubated at densities of 8×106 cells/20 mL in T25 culture flasks with a filter cap (TrueLine Cell Culture Flasks, TR6000) under a light-dark cycle. The cultured cells were collected by centrifugation at 2000×g for 5 min at room temperature. Four samples (n=4 biological replicates) from each of the control (day 0), normal (day 1), or low pH (day 1) cultures were added to 500 µL of TRIZOL reagent (Thermo Fisher Scientific, Massachusetts, USA) and stored at –80°C. The samples were ground with two sizes of glass beads (20 µL volume each of ‘≤106 µm’ and ‘425–600 µm’) (Sigma-Aldrich, Merck Millipore, Germany) using a vortex mixer and performing 5 cycles of freezing and thawing with a –80°C freezer. RNA extraction with TRIZOL reagent and a high salt solution for precipitation (plant) (Takara Bio, Japan) was conducted according to the manufacturer’s instructions. The quality and quantity of the RNA was verified using an Agilent RNA 6000 Nano Kit on an Agilent Bioanalyzer (Agilent Technologies, California, USA) and a Nanodrop spectrophotometer (Thermo Fisher Scientific, Massachusetts, USA), respectively. Total RNA samples were subjected to library preparation using an NEB Next Ultra RNA Library Prep Kit (New England Biolabs, Ipswich, MA, USA) according to the manufacturer’s protocol (NEB #E7530). These mRNA libraries were sequenced in an Illumina NovaSeq6000 (S2 flow cell) in dual flow cell mode with 150-mer paired-end sequences (Filgen Inc, Japan). The raw read data were submitted to DDBJ/EMBL-EBI/GenBank under the BioProject accession number PRJDB12295.
 
-## Transcriptome analysis
+### Transcriptome analysis
 
 A total of 12 libraries were obtained, trimmed, and filtered using the trimmomatic option (ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:5 TRAILING:5 SLIDINGWINDOW:4:5 MINLEN:25) of the Trinity program. Paired output reads were used for analysis, and de novo assembly was performed using the Trinity program (Grabherr et al., 2011) to obtain the transcript sequences. The reads from each library were mapped onto the de novo assembly sequences and read count data, and the transcripts per million (TPM) were calculated using RSEM (Li and Dewey, 2011) with bowtie2 (Langmead and Salzberg, 2012).
 
@@ -97,11 +139,11 @@ To annotate the de novo transcript sequences, BLASTp search was performed (E-val
 
 To compare our results with a previous study using free-living and symbiotic algae (Xiang et al., 2020), data were downloaded from NCBI (https://trace.ncbi.nlm.nih.gov; accessions are SRR10578483 and SRR10578484) and analysed in the same way as described earlier. Briefly, expression levels were calculated by RSEM using the de novo assembled references generated in this study, and differential expressed genes were identified by TCC with FDR of 0.01 as the cutoff.
 
-## Cellulase inhibition experiment in vitro
+### Cellulase inhibition experiment in vitro
 
 After pre-incubated in normal IMK media for more than one week, Breviolum cells were incubated in fresh normal media for 1 day at densities of 4.3x107 cells/20 ml per T25 culture flask with a filter cap (TrueLine Cell Culture Flasks, TR6000). The cells were collected by centrifuging 8 ml of culture medium and ground with two sizes of glass beads (5 and 30 µL volume of ‘≤106 µm’ and ‘425–600 µm’, respectively) (Sigma-Aldrich, Merck Millipore, Germany) in 200 µl Reaction buffer (Cellulase Activity Assay kit, Abcam, UK) using a vortex for 5 min. The homogenates were centrifuged (10,000 g at 4°C for 10 min) to collect the supernatants. The supernatants were diluted five times with Reaction buffer and used for measuring cellulase activity. PSG (Biosynth Ltd., United Kingdom) was added to reach a final concentration of 10 and 1 mM. Cellulase activity was conducted according to the manufacturer’s instruction (Cellulase Activity Assay kit, Abcam, the UK), using a microplate reader (SH-9000Lab, Hitachi High-Tech Co., Japan) for measurement.
 
-## Cellulase inhibition experiment in vivo
+### Cellulase inhibition experiment in vivo
 
 After pre-incubated in normal IMK media for more than one week, Breviolum cells were inoculated to fresh low pH media containing 0, 0.1, and 1 mM PSG (Biosynth Ltd., United Kingdom) for 1 day to examine the effect of cellulase inhibitor in monosaccharide secretion. The cells were incubated at densities of 4×106 cells/ml in a 24well plates (n=4 biological replicates for each condition). The supernatant from each culture was collected following centrifugation at 2000×g for 2 min at room temperature and filtered using a 0.22 µm PVDF filter (Merck Millipore, Germany).
 

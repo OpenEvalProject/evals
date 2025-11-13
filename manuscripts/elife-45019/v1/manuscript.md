@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.45019.001 Models based in differential expansion of elastic material, axonal constraints, directed growth, or multi-phasic combinations have been proposed to explain brain folding. However, the cellular and physical processes present during folding have not been defined. We used the murine cerebellum to challenge folding models with in vivo data. We show that at folding initiation differential expansion is created by the outer layer of proliferating progenitors expanding faster than the core. However, the stiffness differential, compressive forces, and emergent thickness variations required by elastic material models are not present. We find that folding occurs without an obvious cellular pre-pattern, that the outer layer expansion is uniform and fluid-like, and that the cerebellum is under radial and circumferential constraints. Lastly, we find that a multi-phase model incorporating differential expansion of a fluid outer layer and radial and circumferential constraints approximates the in vivo shape evolution observed during initiation of cerebellar folding.
+Models based in differential expansion of elastic material, axonal constraints, directed growth, or multi-phasic combinations have been proposed to explain brain folding. However, the cellular and physical processes present during folding have not been defined. We used the murine cerebellum to challenge folding models with in vivo data. We show that at folding initiation differential expansion is created by the outer layer of proliferating progenitors expanding faster than the core. However, the stiffness differential, compressive forces, and emergent thickness variations required by elastic material models are not present. We find that folding occurs without an obvious cellular pre-pattern, that the outer layer expansion is uniform and fluid-like, and that the cerebellum is under radial and circumferential constraints. Lastly, we find that a multi-phase model incorporating differential expansion of a fluid outer layer and radial and circumferential constraints approximates the in vivo shape evolution observed during initiation of cerebellar folding.
 
 ## Introduction
 
@@ -38,7 +38,7 @@ Here we show that cerebellar folding emerges from differential expansion between
 
 ## Results
 
-## Tissue level mechanics drive folding
+### Tissue level mechanics drive folding
 
 It is well known that differentially expanding bilayer systems can wrinkle to relax building stress (Richman et al., 1975; Nelson, 2016; Hannezo et al., 2012; Shyer et al., 2013; Wiggs et al., 1997). We reasoned that in the cerebellum the EGL could behave as a quickly expanding outer layer and its attachment to a more slowly growing core could generate forces that result in a wrinkling-like phenotype. To test whether the cerebellum has differential expansion between the two layers, we measured the expansion of the EGL and the core during the time of initiation of folding from midline sagittal sections (Figure 1a–d). Unlike the cerebral cortex, the unfolded murine cerebellum is a simple cylinder-like structure elongated in the medio-lateral axis (Figure 1e) (Szulc et al., 2015). All folds in the medial cerebellum (vermis) are aligned in the same axis allowing 2-D measurements to estimate expansion in the anterior-posterior axis of the vermis. Therefore the length of the surface of the EGL was used as a measure of the cerebellum surface area and the area of the core as an approximation of cerebellum volume (Figure 1d), and measurements were made each day from embryonic day 16.5 (E16.5) through postnatal day 0 (P0). In cross-section the unfolded cerebellum approximates a semicircle, therefore we reasoned that if the cerebellum were to remain unfolded then the ratio of expansion between the length of the EGL and the area of the core should approximate the ratio of the circumference of a semi-circle to its area. Of significance, we found that at E16.5 and E17.5 the ratios of growth between the EGL and core closely approximated the expansion of a semi-circle. However, at E18.5 and P0 the expansion rate of the EGL was greater than the rate of core expansion (Figure 1f). Thus we uncovered that the cerebellum does indeed go through a phase of differential expansion. We next determined whether differential expansion correlates with when folding occurs by calculating a folding index (the convex curvature of the EGL divided by the length of the EGL) at each stage (Mota and Herculano-Houzel, 2015). Indeed, we found that the cerebellum remains unfolded during the initial proportional expansion between the EGL and core and only folds when the differential expansion is initiated (Figure 1g). These results provide quantitative evidence that cerebellar folding involves tissue level mechanical forces arising from differential expansion.
 
@@ -46,21 +46,57 @@ It is well known that differentially expanding bilayer systems can wrinkle to re
 
 **Figure 1.:** (A–D), H and E stained midline sagittal sections of FVB/N mice at the indicated embryonic (E) and postnatal days (P). Anterior to the left. Stars: ACs. Brackets: anterior/posterior ends of the EGL. Black line and red line in (D): EGL and convex length, respectively. Shaded area: core. (E) manganese enhanced magnetic resonance imaging of P11 cerebellum outlined in white adapted from Szulc et al. (2015). Anterior to the top. Vermis indicated by dotted yellow lines. (F), At E16.5 and E17.5 expansion of EGL length and cerebellar area fit the proportional expansion of a semi-circle (curve). At E18.5 and P0 EGL expansion is greater than core area growth creating differential expansion. (G), Folding index [1 - (convex length/EGL length) x 100] reveals folding initiates during differential expansion. Scale bars: 200 μm.
 
-## In vivo data contradict elastic bilayer models
+### In vivo data contradict elastic bilayer models
 
-Since there is differential expansion between the EGL and the core and as this type of expansion is the driver of elastic bilayer models we tested whether the properties of cerebellar tissue are consistent with the requirements and predictions of such models. Briefly, the initial resulting wrinkling instability defines the distance between folds as the initial sinusoidal undulations increase in amplitude to ultimately turn into lobules. The folding wavelength depends on the thickness of the external layer (EGL) and the ratio of the stiffness of the two layers (EGL/core). In particular, for a planar geometry, with the stiffness of the external layer defined as Eo, the stiffness of the core as Ei, and the thickness of the external layer denoted as t, the folding wavelength λ is given by Allen (1969)λ=2 π t 13EoEi1/3.
+Since there is differential expansion between the EGL and the core and as this type of expansion is the driver of elastic bilayer models we tested whether the properties of cerebellar tissue are consistent with the requirements and predictions of such models. Briefly, the initial resulting wrinkling instability defines the distance between folds as the initial sinusoidal undulations increase in amplitude to ultimately turn into lobules. The folding wavelength depends on the thickness of the external layer (EGL) and the ratio of the stiffness of the two layers (EGL/core). In particular, for a planar geometry, with the stiffness of the external layer defined as Eo, the stiffness of the core as Ei, and the thickness of the external layer denoted as t, the folding wavelength λ is given by Allen (1969)
 
-If the length of the system is l, then the number of folds is inversely proportional to the thickness of the EGLn=lλ∝ltEiEo1/3.
+$$
+\lambda=2\pit\frac{1}{3}\frac{E_{o}}{E_{i}}^{1/3}.
+$$
+
+If the length of the system is $l$, then the number of folds is inversely proportional to the thickness of the EGL
+
+$$
+n=\frac{l}{\lambda}∝\frac{l}{t}\frac{E_{i}}{E_{o}}^{1/3}.
+$$
 
 We explored a standard elastic bilayer model in a circular geometry using the observed ratio of thickness of the EGL to radius of the cerebellum near the onset of shape change (E16.5) and invoked a neo-Hookean elastic solid for both layers (Zhao and Zhao, 2017). The resulting shape change was studied as a function of the ratio of the layer stiffness values (Figure 2a). We found that to produce the observed number of folds (three in the semi-circular cerebellum and six in the circular model) at initiation of folding through wrinkling based models constrained by our measurements of the embryonic cerebellum, a large stiffness ratio was required of around 50. To map the stiffness contrast in the cerebellum we used scanning acoustic microscopy (SAM) to measure the bulk modulus of the cerebellum daily from E16.5 to P18.5 (Figure 2b–c, Figure 2—figure supplement 1) using established methods (Rohrbach et al., 2015; Rohrbach et al., 2018; Rohrbach and Mamou, 2018). For small deformations, the instantaneous bulk modulus should linearly relate to the stiffness and, therefore, the ratio of the instantaneous bulk moduli should scale similarly to the ratio of stiffnesses (assuming the same Poisson’s ratio for the EGL and for the core, neither of which have been directly measured). While this qualitative approach and SAM tissue preparation protocols may not be able to produce the absolute values of the elastic properties of the tissues, it can give a reasonable indication of the relative stiffnesses of different parts in the cerebellum. Using this estimation, we found that the EGL has a slightly higher instantaneous bulk modulus than the core at all stages measured. Unsurprisingly, the ratio (~1.05:1) was not close to being sufficient to produce a folding wavelength similar to that in the cerebellum (Figure 2d). Consistent with our finding, small modulus contrasts have been reported for other brain regions with multiple loading modes, such as shear, compression, and tension (Xu et al., 2010; Lejeune et al., 2016; Budday et al., 2017). Elastic material models with graded growth profiles have been developed that predict folding of cerebral cortex without a large stiffness differential (Tallinen et al., 2014). However, these models are still bound by other measurable requirements as discussed below.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/45019/elife-45019-fig2-v1.jpg)
+
+**Figure 2.:** (A), Inducing the correct number of folds through a wrinkling model requires a stiffness differential between the layers of 50 fold (μf/μs = 50, g = 1.05). (B,C) Acoustic mapping of cerebellar slices show a slightly stiffer EGL than core at each stage (anova df = 5; p=1.0e−4, F = 13.59), but not the required differential. Stars indicate statistical differences. (D) Wrinkling simulations constrained by developmental data produce wavelengths inconsistent with the embryonic mouse cerebellum. (E) Elastic simulations predict the EGL remains closed after cutting. (F,G) Images of a live cerebellar slice before and after cutting, and images from time lapse movie, (H) show the EGL opens, revealing circumferential tension along the EGL. Red and yellow dots: cut edges. Lines: relaxation angle. (I) Staining of nuclei with EGL outlined and lines used to measure thickness. (J–L) Normalized EGL thickness (thickness/mean thickness) at the ACs increases during folding initiation (anova E16.5 df = 29, p=8.2e−20, F = 12.59. E17.5 df = 29, p=3.4e−116, F = 62.78, E18.5 df = 57, p=6.8e−67, F = 13.28). At E16.5 only brains with visible ACs were included. Error bars: S.D.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45019/elife-45019-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–F) Examples of the Region of Interest (ROI) measured for each for core and EGL. (H–J), Representative bulk modulus maps.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/45019/elife-45019-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C), Example of a live cerebellar slice before (A) and after (B) a radial cut through the EGL, and still images from a time-lapse (C). Time = 0 min is at the time it takes to remove the knife and start the imaging, therefore the cut has already begun opening. (D–F) Example of a live cerebellar slice before (D) and after (E) a horizontal cut through between the EGL and ventricular zone (VZ), and still images from a movie (F). (G–I) radial cuts through the EGL open more quickly initially than horizontal cuts between the EGL and the Ventricular zone, but the latter continue to relax for longer ((G) f-test for unequal variance p=0.09, two tailed t-test df = 16, p=0.03, T = −2.43; (H) f-test p=0.04 and unequal variance two-tailed t-test df = 12.8 P=0.16, T = −1.48; (I) f-test p=0.49 and two tailed t-test df = 16, p=0.03, T = 2.43). (J) The degree of opening is tightly related to the length of the opening in horizontal cuts but not in radial cuts (f-test p=0.02, unequal variance two tailed t-test df = 11.89, p=0.02, T = −2.80). Stars: statistical differences. Error bars: S.D.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/45019/elife-45019-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Only E16.5 cerebella that showed regional thickening in the geometry where ACs normally arise were used for the measurements, and one embryo did not yet have an AC3. (A–C) Thickness variation in and surrounding AC1 (anova (A) df = 17, p=0.13, F = 1.55 (B) df = 29, p=7.0e−14, F = 6.82 (C) df = 57, p=9.1e−11, F = 4.05). (D–F) Thickness variation in and surrounding AC2 (anova (D) df = 17, p=0.08, F=1.74 (E) df = 29 P=3.9e−22, F = 11.88 (F) df = 57 P=2.9e−35, F = 16.35). (G–I) Thickness variation in and surrounding AC3 (anova (G) df = 17, p=0.59, F=0.89 (H) df = 29, p=2.4e−17, F = 9.81 (I) df = 57, p=7.6e−33, F = 14.57). Error bars are S.D.
+
 Elastic bi-layer wrinkling models predict compressive forces in the outer layer. Simulations performed of cuts through the outer layer and into the inner layer predict that upon relaxation the outer layer should not open (Figure 2e). We tested whether this prediction reflects the biology using surgical dissection blades to make radial cuts across the meninges, EGL, and into the core of live E16.5 tissue slices. Time-lapse imaging revealed that, in contrast to the prediction, the EGL opens as well as part of the underlying cut in the core (Figure 2f–h, Figure 2—figure supplement 2a–c, and Video 1). This result indicates there is circumferential tension within the outer layers of the cerebellum. This finding also rules out the elastic models with graded growth profiles as they predict compressive forces in the outer region as well.
+
+![Video 1.](https://cdn.elifesciences.org/articles/45019/elife-45019-video1.mp4.jpg)
+
+**Video 1.:** Time-lapse video shows relaxation of live tissue slice after cutting radially through the EGL and into the underlying core. Images were acquired every 10 s for 10 min. The time-lapse was started moments after the tissue was collected in frame after the cut. The slice shown in the video is the same as in Figure 2f–h.
 
 The elastic bi-layer model requires the EGL to be thinnest at the base of each AC, which are the lowest parts of the cerebellar surface. Thus, the EGL should have an ‘in-phase’ thickness variation. Without this feature, a purely elastic model – bi-layer based or even graded growth profile based – cannot be in mechanical equilibrium (in the quasistatic limit) (Engstrom et al., 2018). However, we previously reported that the embryonic EGL is thickest in the ACs when folding initiates, that is it has an ‘out-of-phase’ thickness variation (Sudarov and Joyner, 2007). To validate this observation, we quantified the thickness variations in the EGL centered at the ACs present at E16.5–18.5. Not all cerebella have visible AC at E16.5. However in the subset that do and in the three ACs present at E17.5, the EGL was found to be 1.2–1.4 times thicker in the ACs than in the surrounding EGL (Figure 2i–l and Figure 2—figure supplement 3). Moreover, the thickness ratio increased to 1.7 times at E18.5 (Figure 2l). As described above, the final thickness variations of the IGL (as well as the molecular layer) of the cerebellar cortex are in-phase, just as the layers of the adult cerebral cortex. These results further show that traditional elastic wrinkling models cannot capture the initiation of cerebellum folding, and highlight the importance of making biological measurements at the time of folding rather than when it is complete.
 
-## Uniform outer layer expansion without a cellular pre-pattern
+### Uniform outer layer expansion without a cellular pre-pattern
 
 As elastic bi-layer models do not align with the biology of cerebellar folding, we looked for other drivers of morphometric changes. Since the EGL drives the majority of cerebellar growth (Leto et al., 2016; Legué et al., 2015; Legué et al., 2016), we first tested whether regional differences in EGL proliferation rates are present that could influence the folding pattern of the cerebellum. Proliferation rates (S phase index) were measured in the EGL during folding initiation (E16.5 and E17.5) in the inbred FVB/N strain to reduce variation between samples. First we asked if the regions that will give rise to distinct sets of lobules have different rates of proliferation that could contribute to the larger and smaller sizes that the lobules ultimately attain. We focused on the anterior cerebellum that divides into a larger region with lobules 1–3 (L123) and smaller region (L45), as well as the central area that comprises lobules 6–8 (L678) of the cerebellum (Figure 3a–b). The more posterior cerebellum does not consistently fold at this stage, thus measurements were not included. Interestingly, we found that the proliferation rates were similar in the three regions at E16.5 (Figure 3c). The EGL proliferation rate at E17.5 in L678 was slightly reduced compared to the L123 region, but no other differences were found (Figure 3d). Thus proliferation is uniform just before initiation of folding and the small difference found during folding does not correlate with lobule size. This result indicates that lobule size is not determined by modulating the levels of proliferation at the onset of folding. Rather, lobule size could be set by both the timing of invagination, and the distance between ACs as granule cell precursors in one lobule do not cross the surrounding ACs to contribute to an adjacent lobule (Legué et al., 2015).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/45019/elife-45019-fig3-v1.jpg)
+
+**Figure 3.:** (A,B) Low and high power images of immuno-histochemical (IHC) staining of sagittal cerebellar sections to measure proliferation in the lobules (L) indicated at 25 μm windows surrounding the ACs (stars). Scale bar: 200 μm. (C,D) EGL proliferation rates are shown before and during the onset of invagination (Two-way anova: df = 2. (C) p=0.10, F = 4.36 (D) p=0.03, F = 10.31). (E,F) Proliferation rates are shown in the AC and in the surrounding EGL showing uniformity (Two-way anova: df = 18. (E) p=0.03, F = 2.15 (F) p=2.1e−3, F = 3.06). (G) Section of Atoh1-CreER/+; R26MTMG/+ E16.5 cerebellum showing masked labeled cells. Scale bar: 20 μm. (H,I) Cell shape (sphericity) measurements before and during folding (anova df = 3. (H) p=0.34, F = 1.13 i p=0.61, F = 0.61). (J,K) Cell size measurements before and during folding (anova df = 3. (J) p=3.6e−3, F = 4.75, (K) p=0.85, F = 0.26). Stars indicate statistical differences. Error bars: S.D.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45019/elife-45019-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Proliferation is reduced in lobule region L678 compared to other lobules (anova: df = 2; p=0.01, F = 9.24). (B) Proliferation through the AC regions is uniform with the surrounding EGL (anova: df = 10; p=0.17, F = 1.64). (C) At E18.5 cells within the EGL are smaller than at earlier stages (two-tailed t-test df = 330 P=2.92e−20, T = 9.85). Stars: statistical differences. Error bars: S.D.
 
 Each AC is first detected as a regional inward thickening of the EGL (Sudarov and Joyner, 2007) (Figure 2i–l and Figure 2—figure supplement 3). We measured the proliferation of the EGL specifically within the forming AC regions to test whether altered proliferation rates could explain the thickenings and therefore the initiation of an AC. We found the rate of proliferation within each forming AC region at E16.5 and E17.5 was the same as in the surrounding EGL (Figure 3e,f), thus proliferation within all regions of the EGL at the initiation of folding is uniform. Furthermore, regional modulation of proliferation does not form or position the ACs.
 
@@ -68,7 +104,7 @@ At E18.5, after the initiation of folding, we found that the rate of proliferati
 
 Changes in cell size and shape have been shown to induce morphological changes (Mammoto and Ingber, 2010; Harding et al., 2014; Stemple, 2005; He et al., 2014). To test if regionally specific regulation of cell shape or size directs folding, we fluorescently labeled cell membranes of scattered granule cell precursors (GCPs) in the EGL using genetics (Atoh1-CreER/+; R26MTMG/+ mice injected with tamoxifen two days prior to analysis). We then segmented the cells in 3D and quantified their sphericity (Figure 3g). We discovered that GCPs in the EGL take on a large variation of shapes and sizes at E16.5 and E18.5. However, we found no difference in cell shape in the different lobule regions of the EGL or between the AC areas and the surrounding EGL at each age (Figure 3h,i). Cell size was uniform at both stages except for a slight reduction in L678 at E16.5 when compared with L123 and the AC regions. However, the size of cells is reduced at E18.5 compared to E16.5 (Figure 3j,k and Figure 3—figure supplement 1c). Thus, the proliferating GCPs that drive expansion of the EGL have both uniform proliferation rates and similar shapes and sizes across the lobule regions defined by the first three ACs at folding initiation.
 
-## Uniform fiber distribution and radial tension at folding initiation
+### Uniform fiber distribution and radial tension at folding initiation
 
 The EGL is traversed by fibers of Bergmann glial and radial glial cells (Leung and Li, 2018; Yuasa, 1996; Yamada and Watanabe, 2002). We tested whether the fibers are distributed in patterns that could locally change the physical properties of the EGL and induce invaginations. Genetics was used to fluorescently label cell membranes of scattered glial cells (nestin-creER/+;R26MTMG/+ mice injected with tamoxifen at E14.5) (Figure 4a). Fibers crossing the EGL at E16.5 were counted in sagittal slices and aligned relative to the ACs (Figure 4b). This analysis showed that the Bergmann glial and radial glial fibers are distributed evenly along the AP axis of the EGL, and therefore are not directing the positions where folding initiates based on an uneven regional distribution.
 
@@ -78,9 +114,13 @@ The EGL is traversed by fibers of Bergmann glial and radial glial cells (Leung a
 
 Tension based folding models suggest constraints from axons and other fibers could direct folding (Xu et al., 2010; Van Essen, 1997). Since the cerebellum is under circumferential tension, as demonstrated above, we examined evidence of radial tension between the EGL and the ventricular zone (VZ) at the initiation of folding. Cuts were made in live E16.5 tissue slices between the EGL and VZ running approximately parallel to them so that they cut across radial fibers in the anterior cerebellum (Figure 4c). As predicted, after cutting the tissue relaxed revealing tension directed radially within the cerebellum (Figure 4d,e and Figure 2—figure supplement 2 and Video 2). Interestingly, quantification of how the radial and horizontal cuts open revealed that only the horizontal cuts opened along the full length of the cut although they opened more slowly than radial cuts (Figure 2—figure supplement 2g–j), indicating different stress profiles in the two orientations.
 
+![Video 2.](https://cdn.elifesciences.org/articles/45019/elife-45019-video2.mp4.jpg)
+
+**Video 2.:** Time-lapse video shows relaxation of live tissue slice after cutting horizontally into the core between the EGL and the VZ. Images were acquired every 10 s for 10 min. The time-lapse was started moments after the tissue was collected in frame after the cut. The Slice shown in the video is the same as in Figure 4c–e.
+
 Taken together, at the time of folding initiation the EGL, which is driving the differential expansion, is itself growing uniformly and the cerebellum is under both radial and circumferential constraints. Finally, there is no evidence of any pre-patterning in the EGL in either cellular behaviors or fiber distribution.
 
-## The EGL is fluid-like as cells undergo dynamic rearrangement
+### The EGL is fluid-like as cells undergo dynamic rearrangement
 
 As the granule cells within the EGL have such varied shapes as shown above, we looked to see if the cells within the EGL were undergoing any rearrangement movements that may indicate fluid properties. A small, scattered fraction of nuclei in the EGL were fluorescently labeled (Atoh1-CreER/+; R26ntdTom/+ injected with tamoxifen two days prior to imaging) and ex vivo slice-culture time-lapse imaging was performed for up to five hours. Tracking the cell positions through time revealed that granule cells within the EGL are highly motile within the EGL. Furthermore, there was no obvious directionality or collectivity to the movement. However, the dynamic motility resulted in the constant exchanging of nearest neighbors over the course of tens to hundreds of minutes and shows that at the timescale of folding the EGL is more fluid-like than a solid epithelial layer (Figure 5 and Videos 3 and 4).
 
@@ -88,11 +128,29 @@ As the granule cells within the EGL have such varied shapes as shown above, we l
 
 **Figure 5.:** (A) Image of E16.5 live cerebellar slice (Atoh1-creER/+R26Ai75/+) showing scattered labeling within the EGL. (B) Red dots indicate starting position, displacement arrows show final position of marked cells after 5 hr. White dashed line indicates outer edge of EGL. (C) Still images from time-lapse, inset above. Cells tracked and marked with colored spheres exchange nearest neighbors over a time-scale of tens of minutes. Scale bars are 20 μm.
 
-## Multi-phase wrinkling model simulates cerebellar shape change during folding initiation
+![Video 3.](https://cdn.elifesciences.org/articles/45019/elife-45019-video3.mp4.jpg)
+
+**Video 3.:** Time-lapse video shows dynamic cell rearrangement of progenitors within the EGL. Image stacks were acquired every ~3.5 min for 5 hr. Cells undergo mixing and neighbor exchange in the tens to hundreds of minutes.
+
+![Video 4.](https://cdn.elifesciences.org/articles/45019/elife-45019-video4.mp4.jpg)
+
+**Video 4.:** Time-lapse shown in Video 3, with a subset of cells tracked through time and their positions marked with colored spheres.
+
+### Multi-phase wrinkling model simulates cerebellar shape change during folding initiation
 
 We recently developed a model for folding from differentially expanding bi-layer tissues that takes into account the out-of-phase thickness of the outer layer of several systems and possible contribution of radial mechanical constraints present in neurological tissue (Engstrom et al., 2018). We applied the model here to the initiation of cerebellar folding based on five primary assumptions. First, the core is an incompressible material (μ) as indicated by the bulk modulus measurements. Second the outer layer, that is the EGL, expands uniformly (kt) as shown by the proliferation rate. Third, the EGL is assumed to be a fluid-like material as demonstrated by the live-imaging of neighbor exchanges. Fourth, there is an elastic component radially to the entire cerebellum (kr), seen in the cutting and relaxation experiment and possibly mediated by radial glia. Fifth, the EGL is constrained towards a uniform thickness (β), possibly by Bergmann glia fibers spanning the EGL. Given the interplay between incompressible material, compressible fibrous material, and a proliferating non-elastic EGL, this model is multi-phase.
 
-An energy functional parameterized by both the inner and outer boundary of the EGL and incorporating the above five assumptions into three dimensionless parameters (μ/kr, kr/kt, kt/β) is minimized to yield an equation for a driven harmonic oscillator resulting in sinusoidal shapes for both the inner and outer boundary of the EGL given an initial elliptical shape. In contrast with the elastic bilayer wrinkling model, EGL thickness oscillations are found to be out-of-phase with the surface height (radius) oscillations when 0 < μ/kr <1. Additionally, the model predicts that the ratio of the measured surface height amplitude (Ar) and the EGL thickness amplitude (At) is given byArAt=μkr1-μkr  ,which need not be ≫1 as is typical of elastic bilayer wrinkling, and the number of initial folds at E16.5 is determined byn=ktβ1+μkt1-μkr
+An energy functional parameterized by both the inner and outer boundary of the EGL and incorporating the above five assumptions into three dimensionless parameters (μ/kr, kr/kt, kt/β) is minimized to yield an equation for a driven harmonic oscillator resulting in sinusoidal shapes for both the inner and outer boundary of the EGL given an initial elliptical shape. In contrast with the elastic bilayer wrinkling model, EGL thickness oscillations are found to be out-of-phase with the surface height (radius) oscillations when 0 < μ/kr <1. Additionally, the model predicts that the ratio of the measured surface height amplitude (Ar) and the EGL thickness amplitude (At) is given by
+
+$$
+\frac{A_{r}}{A_{t}}=\frac{\frac{\mu}{k_{r}}}{1-\frac{\mu}{k_{r}}},
+$$
+
+which need not be $≫1$ as is typical of elastic bilayer wrinkling, and the number of initial folds at E16.5 is determined by
+
+$$
+n=\sqrt{\frac{k_{t}}{\beta}}\sqrt{1+\frac{\frac{\mu}{k_{t}}}{1-\frac{\mu}{k_{r}}}}
+$$
 
 Note that in contrast with elastic wrinkling, the number of initial folds does not depend on the thickness (a length scale) of the EGL, but only on material properties.
 
@@ -104,7 +162,7 @@ To rigorously test the shape prediction of the model, we first constrained 3 of 
 
 **Figure 6.:** (A) Schematic of multiphase model showing types of tension. (B) Thickness variations that arise concomitant with folding approximate those seen in the cerebellum. (C) Shape factor analysis: model for semicircle (red), multi-phase model shape prediction (blue) and actual shape measured from sections (black). Assumed linear relationship between ε and time, ε(T) = 0.3(T −15.5).
 
-## Hierarchical folding involves differential growth
+### Hierarchical folding involves differential growth
 
 The cerebellum has hierarchical folding in which the initial folds become subdivided. Given that ACs hold their position during development and compartmentalize granule cells within lobules of the EGL (Legué et al., 2015) we reasoned that the ACs could be acting as mechanical boundaries enabling similar mechanics to drive the secondary folding. To test this possibility we measured the expansion of the EGL and the core of the individual lobule regions from E18.5 to P3. We found that indeed in the lobule regions that undergo folding there is a temporal correlation between when the onset of sub-folding and differential expansion occur (Figure 7a–d). In contrast, the region (L45) that does not fold during the same time period has a different, more rectangular shape, and the ratio of EGL growth to core growth is proportional for a rectangle during the time measured (Figure 7).
 
@@ -132,13 +190,93 @@ Unlike the cerebellum, the cerebral cortex is not divided into a simple bilayer 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M.Musculus)</td>
+      <td>FVB/N</td>
+      <td>Jax Mice, The Jackson Laboratory</td>
+      <td>Jackson Labs Stock number: 001800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M.Musculus)</td>
+      <td>Atoh1-CreER</td>
+      <td>Machold and Fishell, 2005</td>
+      <td>Jackson Labs Stock number: 007684</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M.Musculus)</td>
+      <td>Nestin-CreER</td>
+      <td>Imayoshi et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M.Musculus)</td>
+      <td>Rosa26MTMG</td>
+      <td>Muzumdar et al., 2007</td>
+      <td>Jackson labs Stock number: 007676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M.Musculus)</td>
+      <td>Rosa26Ai75</td>
+      <td>Daigle et al., 2018</td>
+      <td>Jackson labs Stock number: 025106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-P27</td>
+      <td>BD Pharmingen</td>
+      <td>610241</td>
+      <td>Dilution 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-GFP</td>
+      <td>Life Technologies</td>
+      <td>A11122</td>
+      <td>Dilution 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat monoclonal anti-GFP</td>
+      <td>Nacalai Tesque</td>
+      <td>04404–84</td>
+      <td>Dilution 1:500</td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or Kit</td>
+      <td>EDU</td>
+      <td>Invitrogen</td>
+      <td>C10340</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experiments were performed following protocols approved by Memorial Sloan Kettering Cancer Center’s Institutional Animal Care and Use Committee. The inbred FVB/N stain was used for all proliferation rate, area, length, and expansion rate measurements. Atoh1-CreER (Machold and Fishell, 2005), Nestin-CreER (Imayoshi et al., 2006), Rosa26MTMG (Muzumdar et al., 2007), Rosa26Ai75 (Daigle et al., 2018) were used to quantify cell shape and size as well as fiber distribution and were maintained on the outbred Swiss Webster background. The Swiss Webster strain was used for scanning acoustic microscopy. Both sexes were used for the analysis. Animals were kept on a 12 hr light/dark cycle and food and water were supplied ad libitum. All experiments were performed following protocols approved by Memorial Sloan Kettering Cancer Center’s Institutional Animal Care and Use Committee.
 
 The appearance of a vaginal plug set noon of the day as Embryonic day 0.5 (E0.5). All animals were collected within two hours of noon on the day of collection. Tamoxifen (Tm, Sigma-Aldrich) was dissolved in corn oil (Sigma-Aldrich) at 20 mg/mL. Pregnant females carrying litters with Atoh1-CreER/+;R26MTMG/MTMG or NestinCER/+;R26MTMG/MTMG embryos were given one 20 μg/g dose of TM via subcutaneous injection two days prior to analysis. 25 μg/g of 5-ethynyl-2-deoxyruidine (EDU; Invitrogen) was administered via subcutaneous injection one hour prior to collection.
 
-## Tissue processing, immunohistochemistry, and imaging
+### Tissue processing, immunohistochemistry, and imaging
 
 For embryonic stages heads were fixed in 4% paraformaldehyde overnight at 4°C. For postnatal animals, the brain was dissected out first before fixation. Tissues were stored in 30% sucrose. For all proliferation, area, length, and thickness measurements brains were embedded in optimal cutting temperature (OCT) compound. Parasagittal sections were collect with a Leica cryostat (CM3050s) at 10 μm.
 
@@ -148,7 +286,7 @@ For cell size, shape and fiber density analysis 60 μm parasagittal sections wer
 
 For scanning acoustic microscopy brains were processed for paraffin embedding and parasagittal sections of 10 μm thick were collected on a microtome (Leica RM2255). Structured illumination and confocal Imaging was done with Zeiss Observer Z.1 with Apatome or Zeiss LSM 880 respectively.
 
-## Quantification of proliferation, length, area, folding index and thickness
+### Quantification of proliferation, length, area, folding index and thickness
 
 Measurements for all analysis were taken from the three most midline sagittal sections and averaged. The most midline section was determined by dividing the distance in half between the lateral edges where the third ventrical and the mesencephalic vesicle are no longer connected. Quantifications were made using Imaris (Bitplane) and MATLAB (Mathworks) software.
 
@@ -158,52 +296,102 @@ EGL length was measured from the outer surface of the EGL following the curvatur
 
 EGL thickness was measured by defining the outer and inner curvature of the EGL. The shortest distance lines were drawn to the outer curvature from discrete points distributed at every 12.5 μm along the inner curvature of the EGL. Nine ACs and surrounding regions from five cerebella were quantified at E16.5 and 13 ACs from five cerebellar were analyzed at E17.5. At E18.5 six ACs from two cerebellar were quantified.
 
-## Quantification of cell shape
+### Quantification of cell shape
 
 Midline sections were imaged with a Zeiss LSM 880. Serial images were taken to cover the entire EGL of lobule regions L123, L45, and L678 and the ACs. Manual cell masks were created with Imaris software defining the curvature at every z-slice. Every cell that was completely included in the imaging window and that was distinguishable from surrounding cells was counted to reduce sampling bias. Cells from three brains were measured at each stage for a total of 131 at E16.5 and 201 at E18.5. Shape was defined via sphericity, which is the surface area of a sphere having the same volume as the cell of interest divided by the surface area of the cell of interest.
 
-## Quantification of fibers within the EGL
+### Quantification of fibers within the EGL
 
 Midline sections were imaged with a Zeiss LSM 880. Image tiling was used to cover the EGL. Using Python, a fourth or fifth order polynomial was fitted to the outer edge of the EGL in each image, and five scan lines were positioned at 12.2 μm intervals beneath the surface, and parallel to it. A bin width of 50 μm as measured along the polynomial contour was centered at the AC. Bins of equal distance were extended both anteriorly and posteriorly. Staining intensity was counted along each scan line at every z-slice of the confocal stack. Each image was normalized to the mean intensity and smoothed with a Gaussian filter. Peak counting was done using minimum and maximum filters, keeping neighborhood size and threshold parameters constant for all images. The results from the five scan lines were averaged.
 
-## Tissue cutting
+### Tissue cutting
 
 Live cerebella of E16.5 FVB/N mice were collected in dissection buffer as previously described (Wojcinski et al., 2017) and embedded in low-melting point agarose (Invitrogen). Sagittal slices at a thickness of 250 μm were collected. Slices were removed from the agarose and place in petri-dishes coated with Poly(2-hydroxyethyl methacrylate)(Sigma-Aldrich). Tissue cuts (eight horizontal, 10 radial) were made with a 30° Premier Edge stab knife (Oasis Medical). Slices were allowed to relax for 10 min. Time-lapse images were acquired on a Leica MZ75 dissection scope.
 
-## Live imaging analysis
+### Live imaging analysis
 
 Live cerebella of E16.5 Atoh1-CreER/+; R26Ai75/+mice were collected and slices of a thickness of 250 μm were cultured on Millicell cell culture inserts (Millipore) in glass bottom plates (Matek) as previously described (Wojcinski et al., 2017). Image stacks were acquired on a Zeiss LSM 880 at intervals of around 3.5 min for up to 5 hr. Cell positions were tracked using Imaris (Bitplane) software. Three time-lapses were analzyed.
 
-## Scanning acoustic microscopy
+### Scanning acoustic microscopy
 
 Mechanical tissue properties were analyzed using a 250 MHz Scanning Acoustic Microscope (SAM), described previously (Rohrbach et al., 2015; Rohrbach et al., 2018; Rohrbach and Mamou, 2018). Briefly, 12 μm paraffin sections of mouse embryonic brains were de-parafinized, hydrated in de-ionized water and raster scanned (2 µm steps in both direction) on the SAM to acquire radio-frequency (RF) ultrasound data. At each scan location, signal processing was performed to compute the amplitude, sample thickness, speed of sound, acoustic impedance, attenuation, bulk modulus, and mass density (Rohrbach and Mamou, 2018). Two-dimensional maps of tissues properties were formed using the values obtained at each scan location. Bulk modulus was computed from the product of the acoustic impedance and the speed of sound. Co-registered histology and SAM amplitude images were used to identify regions-of-interest (ROIs) corresponding to the EGL layer and underlying core of the cerebellum in each sample. Bulk modulus was analyzed as a measure of tissue stiffness: ROI measurements were acquired from 3 sections from three embryos at each developmental stage.
 
-## Finite element simulations
+### Finite element simulations
 
 The wrinkle of a circular bilayer structure in Figure 3a was simulated with commercial software ABAQUS. Both film and substrate were modeled as incompressible neo-Hookean materials. The ratio between shear moduli of the film and substrate was 50 and the initial radius of the simulated structure was 16 times that of the film thickness. The differential growth of the EGL and core was modeled by an isotropic expansion of the film in the bilayer structure.
 
-To test the elastic wrinkling model, we conducted finite element (FE) simulations for bilayer structures with a film bonded on a substrate, which represents the EGL layer and core structure, respectively. The structures were assumed to be under 2D plane strain deformation to mimic the quasi-2D nature of cerebellum wrinkles. Neo-Hookean model was adopted to describe the elastic properties of both film and substrate, whose strain energy can be expressed asU=12μ(I1-3)where μ is the shear modulus and I1 represents the first invariant of the right Cauchy-Green strain tensor. The Poisson’s ratios for the film and substrate were set to be 0.5, based on experimental observations that the bulk modulus of EGL and core are in the order of GPa, much larger than the shear modulus of soft tissues (~ kPa).
+To test the elastic wrinkling model, we conducted finite element (FE) simulations for bilayer structures with a film bonded on a substrate, which represents the EGL layer and core structure, respectively. The structures were assumed to be under 2D plane strain deformation to mimic the quasi-2D nature of cerebellum wrinkles. Neo-Hookean model was adopted to describe the elastic properties of both film and substrate, whose strain energy can be expressed as
 
-We carried out FE simulations through commercial software ABAQUS. A second order 6 node hybrid element (CPE6MH) was utilized to discretize the film and substrate. Very fine FE meshes were used to make sure the results independent of mesh size. To incorporate differential growth in real EGL layer and core, an isotropic growth deformation tension was applied to the modeled film by decoupling the deformation tenor F into elastic deformation part A and growth part G.F=A∙G
+$$
+U=\frac{1}{2}\mu(I_{1}-3)
+$$
 
-For simplicity, we assume the growth part is isotropic and controlled by a scalar variable gG=g100010001where g>1 represents a faster growth in EGL than the core. To trigger instabilities in numerical simulations, random perturbations (e.g., White Gaussian noise with 0.001t mean magnitude) were applied to the nodal positions at the top surface of the film and the interface between the film and substrate.
+where $\mu$ is the shear modulus and $I_{1}$ represents the first invariant of the right Cauchy-Green strain tensor. The Poisson’s ratios for the film and substrate were set to be 0.5, based on experimental observations that the bulk modulus of EGL and core are in the order of GPa, much larger than the shear modulus of soft tissues (~ kPa).
+
+We carried out FE simulations through commercial software ABAQUS. A second order 6 node hybrid element (CPE6MH) was utilized to discretize the film and substrate. Very fine FE meshes were used to make sure the results independent of mesh size. To incorporate differential growth in real EGL layer and core, an isotropic growth deformation tension was applied to the modeled film by decoupling the deformation tenor $F$ into elastic deformation part $A$ and growth part $G$.
+
+$$
+F=A∙G
+$$
+
+For simplicity, we assume the growth part is isotropic and controlled by a scalar variable $g$
+
+$$
+G=g100010001
+$$
+
+where $g>1$ represents a faster growth in EGL than the core. To trigger instabilities in numerical simulations, random perturbations (e.g., White Gaussian noise with 0.001t mean magnitude) were applied to the nodal positions at the top surface of the film and the interface between the film and substrate.
 
 To qualitatively understand the cut experiments we ran a FE simulation of a pre-cut circular bilayer structure and then assigned swelling strain to the film. This neglected the dynamical process in the real cut experiments and only focused on the final equilibrium of the cerebellum after long time relaxation. All the simulation parameters were the same as those in the wrinkling simulation. The initial cut length a is equal to 8 t. The minimum in-plane principal stress corresponds to the hoop stress in the film.
 
-## Details of multi-phase model as applied to initiation of cerebellar folds
+### Details of multi-phase model as applied to initiation of cerebellar folds
 
 For a full treatment of the mathematics please see Engstrom et al. (2018).
 
 We, formulated a two-dimensional model based on the parameters of a midsagittal section of the cerebellum. The distance of the outer edge of the EGL and, hence, the outer edge of the cerebellum from the center of the cerebellum was defined as r(θ) with θ as the angular coordinate. We assumed that r(θ) was single-valued. The thickness of the EGL was defined as t(θ). See model schematic in.
 
-Taking into account the four assumptions discussed in the main text, we constructed the following energy functional to be minimizedE[r,t,dtdθ ]=∫dθ{kr(r−r0)2−kt(t−t0)2+β(dtdθ2)},with kr as the stiffness modulus (a spring constant in one-dimension) of the radial glial fibers and the pial surface contained in the meninges surrounding the cerebellum since the cerebellar radius is proportional to its perimeter, r0 as the preferred radius of the cerebellum, kt denoting a growth potential due to cell proliferation, t0 as thickness of the EGL (cortex), and, β quantified the mechanical resistance to changing the thickness of the EGL. Given our first assumption of an incompressible cerebellar core, we imposed the constraint12∫dθ(r-t)2=A0,with A0 as a preferred cerebellar area. We applied the variational principle to minimize the energy functional subject to the core constraint, that isδ(E-μ∫dθ r-t2)=0,where μ is a Lagrange multiplier. Assuming the preferred radius of the cerebellum is constant and the thickness of the EGL/cortex is also constant, then the preferred cerebellar shape was a circle and the EGL an annulus.
+Taking into account the four assumptions discussed in the main text, we constructed the following energy functional to be minimized
 
-The variational analysis yielded the following equation of shape for t(θ);d2tdθ2 + q2 t(θ)=ktβ (t0+μr0kt1−μkr ),with q2= ktβ1+μkt1-μkr. The solution to the equation of shape wast(θ)=Atsin⁡(qθ+ϕ)+C1(r0, t0, kr,kt,μ),with C1 independent of θ and At= 21-μkrA0π-C2r0, t0, kr,kt,μ such that A0>πC2. There was an additional equation of shape for r(θ) from the variational principle that depended on t(θ) and so was determinedr(θ)=−μkr1−μkrAtsin⁡(qθ+ϕ)+C3(r0, kr,μ).
+$$
+E[r,t,\frac{dt}{d\theta} ]=\intd\theta{k_{r}(r−r_{0})^{2}−k_{t}(t−t_{0})^{2}+\beta(\frac{dt}{d\theta}^{2})},
+$$
 
-We used the measured data at E16.5 to set the parameters to make predictions for the shape of both the EGL and core (and so the relationship between the two) at later times. Because we are primarily interested in shape changes, rather than size changes, a nondimensionalized model solution was used, that is we chose units where r0 = 1. This reduces the total number of parameters specifying the model to five dimensionless parameters. Plots assumed a circular preferred shape, and with other parameters as follows: ϵ=μ/kr is shown in Figure 6b,c, c=kr/kt=0.06/ϵ, At/r0=ϵ/9.6, t0/r0=ϵ/4.8, and q=6. Note that for ϵ=0.3, these parameters are numerically consistent with our E16.5 measurements: At/t0=0.5 and  r0/t0=16, as well as the observed number of invaginations in the half circle: q/2=3. All of these parameters are either constant or depend on the time-like parameter ϵ. One of these dependencies has a functional form that is physically justifiable (At~ϵ), another has a form that is biologically justifiable (c~1/ϵ), owing to the decrease in the number of radial glia over time.
+with kr as the stiffness modulus (a spring constant in one-dimension) of the radial glial fibers and the pial surface contained in the meninges surrounding the cerebellum since the cerebellar radius is proportional to its perimeter, r0 as the preferred radius of the cerebellum, kt denoting a growth potential due to cell proliferation, t0 as thickness of the EGL (cortex), and, β quantified the mechanical resistance to changing the thickness of the EGL. Given our first assumption of an incompressible cerebellar core, we imposed the constraint
 
-We defined a dimensionless 'shape factor' as half of the perimeter divided by the square root of half of the area as appropriate for a semi-circle. To compare the model’s predictive deviation of this quantity form the semi-circular value we assumed a linear relationship between ϵ and time T measured in embryonic days: ϵ(T) = 0.3(T-15.5).
+$$
+\frac{1}{2}\intd\theta(r-t)^{2}=A_{0},
+$$
 
-## Statistical analyses
+with A0 as a preferred cerebellar area. We applied the variational principle to minimize the energy functional subject to the core constraint, that is
+
+$$
+\delta(E-\mu\intd\thetar-t^{2})=0,
+$$
+
+where $\mu$ is a Lagrange multiplier. Assuming the preferred radius of the cerebellum is constant and the thickness of the EGL/cortex is also constant, then the preferred cerebellar shape was a circle and the EGL an annulus.
+
+The variational analysis yielded the following equation of shape for t(θ);
+
+$$
+\frac{d^{2}t}{d\theta^{2}} + q^{2} t(\theta)=\frac{k_{t}}{\beta} (t_{0}+\frac{\frac{\mur_{0}}{k_{t}}}{1−\frac{\mu}{k_{r}}} ),
+$$
+
+with $q^{2}=\frac{k_{t}}{\beta}1+\frac{\frac{\mu}{k_{t}}}{1-\frac{\mu}{k_{r}}}.$ The solution to the equation of shape was
+
+$$
+t(\theta)=A_{t}sin⁡(q\theta+ϕ)+C_{1}(r_{0}, t_{0}, k_{r},k_{t},\mu),
+$$
+
+with C1 independent of θ and $A_{t}=\sqrt{2}1-\frac{\mu}{k_{r}}\sqrt{\frac{A_{0}}{\pi}-C_{2}r_{0},t_{0},k_{r},k_{t},\mu}$ such that $A_{0}>\piC_{2}.$ There was an additional equation of shape for r(θ) from the variational principle that depended on t(θ) and so was determined
+
+$$
+r(\theta)=−\frac{\frac{\mu}{k_{r}}}{1−\frac{\mu}{k_{r}}}A_{t}sin⁡(q\theta+ϕ)+C_{3}(r_{0}, k_{r},\mu).
+$$
+
+We used the measured data at E16.5 to set the parameters to make predictions for the shape of both the EGL and core (and so the relationship between the two) at later times. Because we are primarily interested in shape changes, rather than size changes, a nondimensionalized model solution was used, that is we chose units where r0 = 1. This reduces the total number of parameters specifying the model to five dimensionless parameters. Plots assumed a circular preferred shape, and with other parameters as follows: $ϵ=\mu/k_{r}$ is shown in Figure 6b,c, $c=k_{r}/k_{t}=0.06/ϵ$, $A_{t}/r_{0}=ϵ/9.6$, $t_{0}/r_{0}=ϵ/4.8$, and $q=6$. Note that for $ϵ=0.3$, these parameters are numerically consistent with our E16.5 measurements: $A_{t}/t_{0}=0.5$ and $r_{0}/t_{0}=16$, as well as the observed number of invaginations in the half circle: $q/2=3$. All of these parameters are either constant or depend on the time-like parameter $ϵ$. One of these dependencies has a functional form that is physically justifiable ($A_{t}~ϵ$), another has a form that is biologically justifiable ($c~1/ϵ$), owing to the decrease in the number of radial glia over time.
+
+We defined a dimensionless 'shape factor' as half of the perimeter divided by the square root of half of the area as appropriate for a semi-circle. To compare the model’s predictive deviation of this quantity form the semi-circular value we assumed a linear relationship between $ϵ$ and time T measured in embryonic days: $ϵ$(T) = 0.3(T-15.5).
+
+### Statistical analyses
 
 Statistical analyses were performed using Matlab software. Significance was determined at p<0.05. Two-way ANOVA was used for proliferation analysis as two variables were tracked, mouse and region. Cell shape, volume, fiber distribution, EGL thickness and bulk modulus were run under a standard ANOVA. After ANOVA analysis a multiple comparison was run with Tukey’s honestly significant difference criterion. F-test for variance and two-tailed student’s paired t-test were used for slice cutting and relaxation quantifications. The degrees of freedom, where appropriate, and P values are given in the figure legends. All error bars are standard deviations. No statistical methods were used to predetermine the sample sizes. We used sample sizes aligned with the standard in the field. No randomization was used nor was data collection or analysis performed blind.

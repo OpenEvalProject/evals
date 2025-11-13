@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Identifying neural substrates of behavior requires defining actions in terms that map onto brain activity. Brain and muscle activity naturally correlate via the output of motor neurons, but apart from simple movements it has been difficult to define behavior in terms of muscle contractions. By mapping the musculature of the pupal fruit fly and comprehensively imaging muscle activation at single-cell resolution, we here describe a multiphasic behavioral sequence in Drosophila . Our characterization identifies a previously undescribed behavioral phase and permits extraction of major movements by a convolutional neural network. We deconstruct movements into a syllabary of co-active muscles and identify specific syllables that are sensitive to neuromodulatory manipulations. We find that muscle activity shows considerable variability, with sequential increases in stereotypy dependent upon neuromodulation. Our work provides a platform for studying whole-animal behavior, quantifying its variability across multiple spatiotemporal scales, and analyzing its neuromodulatory regulation at cellular resolution.
+Identifying neural substrates of behavior requires defining actions in terms that map onto brain activity. Brain and muscle activity naturally correlate via the output of motor neurons, but apart from simple movements it has been difficult to define behavior in terms of muscle contractions. By mapping the musculature of the pupal fruit fly and comprehensively imaging muscle activation at single-cell resolution, we here describe a multiphasic behavioral sequence in Drosophila. Our characterization identifies a previously undescribed behavioral phase and permits extraction of major movements by a convolutional neural network. We deconstruct movements into a syllabary of co-active muscles and identify specific syllables that are sensitive to neuromodulatory manipulations. We find that muscle activity shows considerable variability, with sequential increases in stereotypy dependent upon neuromodulation. Our work provides a platform for studying whole-animal behavior, quantifying its variability across multiple spatiotemporal scales, and analyzing its neuromodulatory regulation at cellular resolution.
 
 ## Introduction
 
@@ -41,25 +41,342 @@ Here, we use body-wide fluorescence imaging from the dorsal, lateral, and ventra
 
 ## Results
 
-## Pupal behavior described at cellular resolution
+### Pupal behavior described at cellular resolution
 
 Previous characterization of pupal ecdysis has distinguished three principal phases (Diao et al., 2017; Kim et al., 2006; Figure 1A–C, Video 1). The first phase (P1) consists of sustained longitudinal compression (‘lifting’) of posterior abdominal segments accompanied by unilateral, anteriorly propagating, ‘rolling contractions’ of the dorsal body wall that alternate left-to-right. The second (P2) features left-to-right alternating lateral ‘swinging’ movements formed by unilateral, anteriorly directed contractions, while the third (P3) consists of alternating left-right posteriorly directed contractions that change into bilaterally symmetric, backward peristaltic contractions. These phases always proceed in the same order. The movements increase internal pressure to evert the head (i.e., force it out of the body cavity) and push the developing legs and wings to the body surface and elongate them (Zdarek and Friedman, 1986). Phalloidin labeling demonstrates that approximately half of larval muscles persist until pupal ecdysis, and all retain innervation by Ib synapses (Prokop, 2006; Figure 1D, E). The most prominent loss of muscles occurs in the ventral and posterior compartments. Only 5 of 13 larval ventral muscles survive (Figure 1F vs. G), and one of these (M12) is absent in posterior segments (Supplementary file 1). Also missing from posterior segments are muscles M4 and M5. All five dorsal longitudinal muscles, except M4, are present in all segments, as are five of the six lateral transverse muscles. This was consistent across 17 animals, indicating that pupal ecdysis is executed by a standard set of persistent larval muscles.
 
+![Video 1.](https://cdn.elifesciences.org/articles/68656/elife-68656-video1.mp4.jpg)
+
+**Video 1.:** Bright-field video taken from the lateral side showing a pupa performing the pupal ecdysis sequence. Phases 1–3 are labeled. Sped up to 50 fps. Scale bars, 250 μm. Time, seconds.
+
 Although Drosophila behavior has been recorded at single-cell resolution, the drivers used to make such recordings express weakly at the pupal stage and cannot be used with Gal4 drivers targeting other cells such as neurons. We identified a striated muscle-specific gene, l(2)01289 (aka CG9432), that expresses robustly from early larval stages through adulthood, which we call hulk (hlk). We generated a Trojan exon insertion in the hlk gene that co-expresses LexA:QF and combined it with the Ca++ biosensor LexAop-GCaMP6s to report muscle activity. With this hlk-LexA>LexAop-GCaMP6s line (i.e., hlk>GCaMP6s), we imaged muscle Ca++ activity through the clarified puparium for approximately 90 min to capture pupal ecdysis behavior, in vivo (see Materials and methods; Figure 2, Figure 2—figure supplements 1 and 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig2-v2.jpg)
+
+**Figure 2.:** (A) Muscle activity in a P1 bout (dorsal view) from a pupa expressing hlk>GCaMP6s. Schematic on left shows dorsal muscle anatomy. Trace above images shows bulk Ca++ activity signal with movements (see Table 1). Times in min:s format. Scale bar, 250 μm. T = 0, bout onset. (B) Time traces of bulk Ca++ activity on the left (black) and right (brown dotted) sides of a pupa executing the pupal ecdysis sequence and imaged from the dorsal side, as in (A). Alternating activity is evident. Dotted lines: onset of ecdysis phases. T = 0, imaging onset. (C) Time trace of bulk Ca++ activity from a pupa imaged from the lateral side. Dotted lines, onset of ecdysis phases. Arrowheads, peak-double peak bouts of late P3. T = 0, imaging onset. (D) Muscle activity in a P1 bout (lateral view) from a pupa expressing hlk>GCaMP6s. Times in min:s format. Schematic on left shows lateral muscle anatomy. Trace above images shows bulk Ca++ activity signal with movements (see Table 1). Scale bar, 250 μm. T = 0, bout onset. (E) Bouts in each phase (%) with P-to-A activity, such as shown in (D). N = 16 pupae. *p<0.05; **p<0.01. See also Figure 2—figure supplement 1, Table 1, and Videos 2 and 3 Data presented in this and other figures are available on Figshare DOI: https://doi.org/10.6084/m9.figshare.c.5489637.v1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Schematic of imaging workflow for single-muscle resolution data collection. Epi-illuminated stereomicroscope on the left was used to image coverslips containing TDE-filled chambers and animals oriented as shown enlarged on the right for live imaging (sampling rate 2 Hz).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** On left, schematic of hlk>GCaMP6s pupa (muscles in green) from the lateral view. On right, three representations of an image montage from a P1 activity bout taken from the lateral view: (top) background-subtracted and scaled to show muscle activation; (middle) not background-subtracted to show abdominal body wall deflections (orange arrowheads) via autofluorescence; and (bottom) Laplacian transformed to enhance body wall deflections. Orange line, posterior limit of body. T=0, bout onset. Scale bars, 250 μm.
 
 The muscle activity patterns of animals imaged from the dorsal side match known behaviors, such as the bilateral posterior ‘Lifts’ and left-right alternating ‘rolling contraction’ (RollCon) movements of P1 (Figure 2A, Video 2). Temporal patterns of bulk Ca++ activity differentiated phases P1, P2, and P3 (Figure 2B). Traces show phase-specific oscillations of varying amplitude and frequency, with individual oscillations conforming to bouts of movement (see Materials and methods). Consistent with Diao et al., 2017, the alternating left-right oscillations of P1 persisted through P2 and P3, with coordinated bilateral activity becoming dominant only in P3. Bulk Ca++ activity imaged from the lateral side showed the same three phases (Figure 2C), and oscillations reflected bouts that included identifiable movements (Figure 2D). The Lift is performed by most muscles across the dorsal-ventral (D-V) axis in the posterior segments, while RollCons typically lack activity in the ventral longitudinal muscles 12, 13, and 15 (Video 3). Posterior-to-anterior (P-to-A) waves of activity in P1 reverse direction after head eversion in P2 (Figure 2E), as previously shown (Kim et al., 2006). These data confirm and refine previous observations and demonstrate that the hlk>GCaMP6s line accurately reports the ecdysis sequence behaviors.
 
-## Muscle imaging reveals an initial phase of random neurogenic activity
+![Video 2.](https://cdn.elifesciences.org/articles/68656/elife-68656-video2.mp4.jpg)
+
+**Video 2.:** Dorsal view of a P1 bout with Lift and RollCon movements alternating bilaterally in a hlk>GCaMP6s animal; data were sampled at 2 Hz and sped up to 10 fps. Scale bars, 250 μm. Time, seconds.
+
+![Video 3.](https://cdn.elifesciences.org/articles/68656/elife-68656-video3.mp4.jpg)
+
+**Video 3.:** Lateral view of a P1 bout with Lift and RollCon movements in a hlk>GCaMP6s animal; data were sampled at 2 Hz and sped up to 10 fps. Scale bars, 250 μm. Time, seconds.
+
+### Muscle imaging reveals an initial phase of random neurogenic activity
 
 Ca++ imaging revealed a phase of random muscle activity prior to the onset of pupal ecdysis (Figure 2B, C), which we call Phase 0 (P0). It begins approximately 3 hr before P1 and divides into distinct bouts of muscle activation (Figure 3A, Video 4). Individual muscle length changes during P0 are small (≤25%) compared to P1–P3 (25–40%; Figure 3—figure supplement 1A) and coincide with small body wall twitches rather than coherent movements. Such twitches are also observed during embryonic motor development and are initially myogenic, but later become neurogenic (Crisp et al., 2008; Crisp et al., 2011). To determine if random P0 muscle activation is myogenic or neurogenic, we created a dual-reporter fly line with hlk-LexA driving expression of the red fluorescent Ca++ biosensor jRGECO in the muscle and VGlut-Gal4 driving a Synaptotagmin-GCaMP6s fusion protein (Syt-GCaMP6s) in motor neurons, where it localizes to the neuromuscular junction (NMJ, Figure 3B). In vivo imaging revealed synaptic Ca++ activity at the NMJ 30–40 min prior to the first muscle Ca++ response (Figure 3C). As P0 progresses, coincident synaptic and muscle activity increases until the onset of P1, when nearly all muscles and their synaptic inputs are synchronously active (Figure 3D) except M12, which remains unresponsive to input until P2 (Figure 3—figure supplement 1B). Near-complete muscle responsiveness may serve as a checkpoint for starting the ecdysis sequence and is possibly implemented by proprioceptive feedback. Class I dendritic arbor (da) neurons, dmd1, vbd, and dbd act as proprioceptors during larval locomotion (Vaadia et al., 2019) and remain present at the pupal stage at least through ecdysis (Figure 3E). Moreover, bulk Ca++ activity in sensory neurons is correlated with muscle activity during P0 (Figure 3F), and sensory neurons commonly show correlated Ca++ activity with adjacent muscles (Figure 3G). When class I da neurons were suppressed with UAS-Kir2.1, Ca++ became sustained and widely distributed during P0 before twitching stopped (Figure 3—figure supplement 2A, B). Unexpectedly, all animals died before P1 (n = 10).
 
-## Muscle activity patterns identify elementary movements
+![Figure 3.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig3-v2.jpg)
+
+**Figure 3.:** (A) Time-coded projections of muscle Ca++ activity (lateral view) in five P0 bouts. Muscle activity is distinct for each bout. Bout durations as indicated; image frames were color-coded according to color scale (left). Scale bar, 250 μm. (B) Muscle (magenta; hlk>jRGECO) and neuromuscular junction (NMJ, green; VGlut>Syt-GCaMP6s) activity in body wall hemisegments (HS) A2–A5. Arrows, active NMJs. Scale bar, 200 μm. (C) Representative raster plots generated from peaks in hlk>jRGECO (magenta) and VGlut>Syt-GCaMP6s (green) activity for the indicated muscles and their respective NMJs. Arrow, P1 onset. T = 0, imaging onset. (D) Pearson correlation coefficients for VGlut>Syt-GCaMP6s and hlk>jRGECO activity peaks in multiple muscle/NMJ pairs during early, mid, and late temporal bins, relative to P1 onset. Early P0, N = 19 muscles; mid P0, N = 89; late P0, N = 35. ***p≤0.001. (E) HS A3 from pupa expressing mCD8-GFP (green) in class I dendritic arbor (da) neurons using the 410-Gal4 driver (Vaadia et al., 2019). Phalloidin-stained muscles (gray). Neuronal somata: a: vpda, b: vbd, c: dbd, d: ddaD, e: ddaE, f: dmd1. Scale bar, 50 μm. (F) Pearson correlation coefficient for bulk Ca++ activity peaks in muscles labeled with hlk>jRGECO and sensory neurons labeled with ChaT>GCaMP6s. N = 10 pupae. (G) Rasters compare Ca++ activity peaks of the indicated muscle (magenta; hlk>jRGECO) with those in an adjacent sensory neuron (black; ChaT-GCaMP6s) during P0. T = 0, imaging onset. See also Figure 3—figure supplements 1 and 2 and Video 4.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Bar plots with percent change in length (ΔL/L) plotted as mean ± SD for muscles measured during P0. Colored lines represent mean length changes of all muscles for each phase (green, P0; orange, P1; blue, P2; pink, P3). N = 11 muscles, three hemisegments, eight animals. (B) Raster plot of peaks in muscle M12 Ca++ activity (magenta) measured with hlk>jRGECO and M12 neuromuscular junction (NMJ) activity (green) measured with Syt-GCaMP6s during P0, P1, and P2, as indicated. Coincidence in NMJ and muscle activity begins near the onset of P2. Images of M12 (outlined) in hemisegment 4 showing that during P1 (left), M12 muscle activity (magenta) is low in response to NMJ activation (arrowhead, green), whereas in P2 (right) activity is high. Scale bars, 50 μm. T = 0, imaging onset.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Image montage of bulk muscle activity in a hlk>GCaMP6s animal with class I dendritic arbor (da) proprioceptors suppressed by two copies of Kir2.1. Scale bars, 250 μm. T = 0, imaging onset. Times in hr:min:s format. (B) Bulk Ca++ fluorescence trace (mean ± SD) for N = 10 animals like the one shown in (A). Stochastic activity is lost, followed by death before ecdysis onset. T = 0, imaging onset.
+
+![Video 4.](https://cdn.elifesciences.org/articles/68656/elife-68656-video4.mp4.jpg)
+
+**Video 4.:** Lateral view of P0 in a hlk>GCaMP6s animal; data were sampled at 2 Hz and sped up to 10 fps. Scale bars, 250 μm. Time, seconds.
+
+### Muscle activity patterns identify elementary movements
 
 The transition from P0 to P1 is accompanied by the first overt movements, with bouts typically consisting of a Lift followed by a RollCon. The transition from P1 to P2 is demarcated by a sudden behavioral switch in which a P1 bout is followed by 4–5 bouts containing only a Swing. We used changing muscle activity patterns with associated body wall displacements to define five further canonical movements, all executed in characteristic anatomical compartments (Figure 4A, Video 5, Table 1). We also define a precise onset for P3, which had previously been difficult (e.g., see Diao et al., 2017; Kim et al., 2006).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig4-v2.jpg)
+
+**Figure 4.:** (A) Time-coded projections of muscle activity (lateral view) executed during labeled movements of the indicated phases. Scale bars, 250 μm. (B) Muscle activity comprising a Swing from (A) color-coded by time showing the P-to-A wave of coordinated activation across the dorsoventral axis. Times in min:s format. Schematic on left indicates muscle anatomy. Scale bars, 250 μm. (C) Representative Ca++ traces from a single Swing bout measured for dorsal (M3), ventral (M13), and lateral (M22) muscles in hemisegment (HS) A4 show co-incident activity across dorsoventral compartments. (D) Dorsal and lateral P2 muscle Ca++ activity during the Brace. Orange boxes, active lateral Brace muscles, coincident with Swing movement on the opposite side of the animal (dorsal view). White, dorsal midline. Times in min:s format. Scale bars, 250 μm. T = 0, movement onset. See also Figure 4—figure supplement 1 and Video 5.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Graphs showing the CNN’s accuracy of movement prediction per epoch for the five training samples (named 917, 115, 821, 925, 114) from a ‘leave-one-out’ cross-validation. The last graph (labeled ‘All’) shows the training accuracy using all five training samples, which represents the model used on the other animals (N = 16). T = 0, imaging onset. (B) Movement durations shown as mean ± SD for the five manually annotated animals, color-coded by phase: orange, P1; blue, P2; pink, P3. (C) Movement durations (left) and numbers (right) as determined by the CNN (mean ± SD), color-coded as in (B). N = 16 animals.
+
+**Table 1.**
+ Composition and function of pupal ecdysis movements.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>P0</th>
+      <th colspan="2">P1</th>
+      <th colspan="2">P2</th>
+      <th colspan="4">P3</th>
+    </tr>
+    <tr>
+      <th>Movements</th>
+      <th>-</th>
+      <th>Lift</th>
+      <th>RollCon</th>
+      <th>Swing</th>
+      <th>Brace</th>
+      <th>Crunch</th>
+      <th>AntComp</th>
+      <th>PostCon</th>
+      <th>PostSwing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Compartments</td>
+      <td>-</td>
+      <td>P D/L/V</td>
+      <td>A/P D/L/V</td>
+      <td>A/P D/L/V</td>
+      <td>A/P L</td>
+      <td>A/P D/L/V</td>
+      <td>A D/L/V</td>
+      <td>P D/L/V</td>
+      <td>P D/L/V</td>
+    </tr>
+    <tr>
+      <td>Syllables</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PME1</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PME2</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PME3</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PME4</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PME5</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PME6</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PME7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PME8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M1</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M2</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M8</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M12</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M13</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M15</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>M26</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L-R rhythm</td>
+      <td>L-R</td>
+      <td>-</td>
+      <td>L-R</td>
+      <td>L-R</td>
+      <td>L-R</td>
+      <td>L-R</td>
+      <td>-</td>
+      <td>L-R</td>
+      <td>L-R</td>
+    </tr>
+    <tr>
+      <td>A-P rhythm</td>
+      <td>-</td>
+      <td>P-A</td>
+      <td>P-A</td>
+      <td>P-A</td>
+      <td>A-P</td>
+      <td>A-P P-A</td>
+      <td>A-P</td>
+      <td>-</td>
+      <td>A-P</td>
+    </tr>
+    <tr>
+      <td>Function</td>
+      <td>-</td>
+      <td colspan="2">Fragment trachea</td>
+      <td colspan="2">Evert head, shed trachea</td>
+      <td colspan="4">Elongate appendages</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 5.](https://cdn.elifesciences.org/articles/68656/elife-68656-video5.mp4.jpg)
+
+**Video 5.:** Scale bars, 250 μm. Time, seconds.
+
 Muscle activity in a Swing is coordinated across the dorsoventral axis as it travels anteriorly (Figure 4B, C). While initial Swings are rapid, they slow after head eversion (Kim et al., 2006) and are then accompanied contralaterally by a movement we call the ‘Brace’ (Figure 4A, D, orange box). The Brace is performed by concurrent contraction of lateral transverse muscles M21–23 and M8 in anterior hemisegments, followed by contraction of these same muscles in posterior hemisegments (Figure 4D, lateral view). The Brace begins the shift of activity from P-to-A waves in P1 to A-to-P waves in P3. Onset of P3 is indicated by a movement we call the ‘Crunch’ (Figure 4A). The first Crunch follows the last P2 bout after a relatively long interbout interval and combines ventral contractions in the posterior compartment with dorsal contractions in the anterior compartment. The compartmentalized and complex movements that follow the Crunch include what we call the ‘Anterior Compression’ (AntComp), ‘Posterior Contraction’ (PostCon), and ‘Posterior Swing’ (PostSwing). The first two comprise what have been termed ‘stretch compressions’ (Kim et al., 2006). All of these movements are unique to P3. Each of the elementary movements defined in Figure 4A and Video 5 is associated with the activity of specific muscles, and we trained a CNN to recognize and annotate the movements (Figure 4—figure supplement 1A). Using the CNN to measure movement durations (Figure 4—figure supplement 1B, C), together with measurements of bout and phase durations (see Materials and methods), we characterized the variability of pupal ecdysis behavior at the level of phases, bouts, and movements.
 
-## Behavioral stereotypy increases with spatiotemporal level of description
+### Behavioral stereotypy increases with spatiotemporal level of description
 
 The relative stereotypy of the pupal ecdysis sequence can be seen from bulk Ca++ traces (Figure 5A), but variation exists in the bout and interbout interval durations of all phases (Supplementary file 2, Figure 5B), and in the bout number of P1 and P2 (Figure 5C). Coefficients of variation (CV) were lowest for P2 for all phase and bout parameters examined (Supplementary file 2). This finding is consistent with the developmental importance of P2 and suggests that its execution is the most tightly regulated of all the phases. Movement durations also showed variability, with CVs exceeding 50% (Supplementary file 2). However, the order in which movements were executed as determined by the SequenceMatcher algorithm (see Materials and methods) indicated considerable stereotypy. Sequence similarity scores (SS) for movements were computed pairwise for all bouts within each animal by phase and compared across animals. The mean SSs of the sequences for P1, P2, and P3 were all above 0.6, a threshold for similarity (Figure 5D), with CVs of 20–44%. P3 had the lowest SS and P2 the highest.
 
@@ -75,15 +392,35 @@ To evaluate the stereotypy of the muscle activation patterns used to generate in
 
 We used the SequenceMatcher algorithm to evaluate the stereotypy of syllable activation during movements in each of the three phases (Figure 6E). Surprisingly, the order in which syllables were recruited was quite variable, with SSs below 0.5. However, those of P2 and P3 movements were significantly more consistent than the sequence of recruited individual muscles (Figure 6E). Syllables associated with P1 movements showed SSs similar to those obtained using the muscle sequences (see also Figure 6B, orange plots). This suggests that random muscle activations outside of syllables may contribute to the P1 movements, and such idiosyncratic activations were common in movements of all phases (Figure 6F). Because syllables are often confined to particular anatomical compartments, we also compared the activity sequences in the D-V and A-P compartments across P1–P3. P1 bouts exhibit only modest similarity but the bouts of P2 and P3 are intermediate in similarity to those of movements and syllables (compare Figures 6E and 5D). Thus, the observed stereotypy for ordered motor execution in pupal ecdysis is highest for phases, and incrementally decreases with spatiotemporal scale. The least stereotypy (SSs <40%, CVs >40%) is seen in the recruitment order of individual muscles, which is less consistent than the activation of syllables.
 
-## Movements are composed by phasic activation of syllables
+### Movements are composed by phasic activation of syllables
 
 The SequenceMatcher results indicate variability in the recruitment of syllables into movements. To more comprehensively examine their contribution to movement, we sought to examine the phasic relationships between syllables that participate in the movements of P1 and early P2 (i.e., prior to the brace). These syllables are shown in Figure 7A–C for the lateral, dorsal, and ventral views. The phasic activation of the syllables that can conveniently be monitored from the lateral view during P1 bouts is represented in Figure 7D. As expected, these bouts initiate in the posterior compartment (see key, Figure 7D, E, right) with the activation of syllables in A6 driving the Lift (Figure 7D, bottom). This activity precedes the activity of the syllables driving the RollCon in A4 (Figure 7D, top). The syllables initially activated in A6 are predominantly located in the ventral compartment and their activity is followed by prolonged activity in the dorsal compartment by PME4, which comprises dorsal longitudinal muscles M1–3. Together, the ventral and dorsal contractions span the P1 bout and serve to compress posterior segments. In anterior segments, compression is transient, with roughly coincident activity of syllables M2 and PME6 in the dorsal and ventral compartments, respectively. This activity overlaps with and is outlasted by contractions of the strictly lateral transverse muscles of PME2 and M8. Contraction of the latter muscles constricts the body wall, effectively pulling the dorsal surface away from the puparium. Separation of the dorsal body wall may be facilitated by reduced surface tension as the RollCons push air anteriorly between the puparium and dorsal body wall. In contrast to P1, syllable activation in P2 bouts is considerably more uniform across hemisegments, body axes, and time (Figure 7E). Syllables representing all dorsoventral compartments activate together in each hemisegment, compressing the animal longitudinally and along the D-V axis, with a wave of such compressions traversing the body wall in the P-to-A direction as can be seen by the delayed activation of syllables in A4 relative to A6 (compare dotted lines in Figure 7E top vs. bottom). Full details of the compression wave constituting the Swing can be achieved by integration of information about muscle Ca++ activity from the dorsal and ventral views, which permits the reconstruction of the movement from the posterior to anterior end of the animal (Figure 7—figure supplement 1). In general, the phasic patterns of syllable activation provide a framework for understanding the evolution of pupal ecdysis movements and behavior.
 
-## Muscle mechanics provide insight into movement composition and function
+![Figure 7.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig7-v2.jpg)
+
+**Figure 7.:** (A–C) Syllables associated with (A) Lift, (B) RollCon, and (C) Swing muscle activity are illustrated in images from the lateral, dorsal, and ventral views. Scale bars, 250 μm. (D, E) Phase relationships between syllables visible from the lateral view that form the Lift, RollCon, and Swing in both anterior (A4, top) and posterior (A6, bottom) hemisegments during characteristic bouts of (D) P1 and (E) P2. The average onset and offset times (± SD; N = 10) are shown, and each syllable is color-coded according to which D-V compartment(s) are occupied by its component muscles. Key at right indicates anatomical compartments: ventral, blue; lateral, green; dorsal, fuschia; and anterior (A)-posterior (P) boundary between A4 and A5 (magenta line). Hemisegments A4 and A6 are boxed and enlarged schematics on right show muscle composition of each. In A6, white muscles are absent. Dotted lines in (E) indicate the average midpoint of activation for all syllables for each hemisegment during the P2 bout. See also Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Schematics show the timecourse of muscle activity during a single swing from dorsal (top), lateral (middle), and ventral (bottom) views. PMEs in each labeled segment are colored as in Figure 6D. Boxes on the right show the order of single muscle recruitment. Order of activation in a representative is indicated by color: blue, earliest; red, latest.
+
+### Muscle mechanics provide insight into movement composition and function
 
 Although the hemisegmental patterns of muscle Ca++ activity represented by the PMEs provide a general description of the pupal ecdysis movements, not all body wall movement is a consequence of local muscle contractions. This is because the pliable cuticle of the pupa provides little rigidity. Like other animals reliant on a hydroskeleton (Kier, 2012; Kristan et al., 2000), the pupa uses muscle contractions not only to produce local movement in the body wall, but also to increase hydrostatic pressure of the internal fluid to produce movement in distant parts of the body wall. Isometric contractions of antagonistic muscles also create body wall rigidity to resist body wall distortion so that pressure is appropriately directed. Directing pressure to particular parts of the body is, in fact, a central function of pupal movements, which thus rely on two types of muscle Ca++ activity: activity that results in muscle shortening to deflect the body wall and generate local movement and pressure changes, and isometric activity that does not result in length changes and promotes body wall rigidity to direct pressure.
 
 To better characterize how Ca++ activity in muscles of the pupal syllabary generates movement and facilitates and responds to pressure changes, we measured the normalized maximum shortening (ΔL/L) and peak fluorescence intensity (ΔF/F) for each muscle contraction in segments A3–A5 for each ecdysis phase. Increases in fluorescence only moderately correlated with muscle shortening (r = –0.54; Figure 8—figure supplement 1A). To determine which muscles shorten the body wall, we calculated the average ΔL/L for each muscle over each phase, focusing first on P2 because of its role in promoting morphological change. For P2, M12 and the muscles comprising PMEs 1 (M26, M13, M8), 2 (M21–23), 3 (M2, M3), and 4 (M1–M3) shorten the most (Figure 8A). As noted above, these contractions create a wave of hemisegmental compressions in the P-to-A direction during the Swing (Figure 8C, Video 5). The greatest constriction across the D-V axis occurs in posterior segments, consistent with pronounced shortening in PME2 muscles (M21–23) in A5. Progressively decreased shortening of PME2 muscles is observed in A4 and A3. Shortening of the ventral and dorsal longitudinal muscles (M12, M13, M1–3) is more uniform across hemisegments, but the absence of M12 in posterior hemisegments and somewhat greater shortening of the dorsal longitudinal muscles anteriorly is consistent with the greater longitudinal compression of anterior hemisegments (Figure 8C).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig8-v2.jpg)
+
+**Figure 8.:** (A, B) Changes in muscle properties during contraction of indicated muscles in hemisegments (HS) A3–A5 during P2. (A) Change in muscle fiber length (ΔL/L). (B) Change in GCaMP6s fluorescence (ΔF/F). % changes were calculated from values at activity onset and at maximum activity for N = 24 pupae and color-coded as indicated. (C) Muscle activity of a Swing after Laplace transform to show body wall distortion during movement (black, HS boundaries; beige outlines, pupal body). Scale bars, 250 μm. T = 0, movement onset. Times in min:s format. (D) Images before (left) and after (right) head eversion. Dotted lines indicate anterior end of the body prior to head eversion. Head, arrow; larval mouth hooks, arrowhead. Scale bars, 200 μm. (E) Illustrated effects of the Swing movement on internal pressure. The P-to-A bending of the body wall pushes hemolymph forward, increasing pressure (blue gradient and arrows) in the anterior compartment. Darker blue and thicker arrows, increased pressure. (F) Larval dorsal tracheal trunks (magenta arrows) are deposited on the puparium wall during P2 Swings by a pupa expressing tdTomato in muscles. Trachea are visualized by scattered light from fluorescent muscles (grayscale, left) and highlighted in magenta in Laplace transformed image (right) for clarity. Scale bar, 250 μm. See also Figure 8—figure supplements 1 and 2, Table 1, Video 5.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Scatter plots of normalized change in length (ΔL/L) vs. normalized change in fluorescence (ΔF/F) for muscles from eight animals (colored by animal) for each phase. Line shows Pearson correlation; r indicated. (B, C) Heatmaps of changes in muscle properties during contraction of the indicated muscles in hemisegments A3–A5 during P1 RollCon activity. (B) % change in muscle fiber length (ΔL/L). (C) % change in GCaMP6s fluorescence (ΔF/F). In both cases, changes were measured at the onset of activity and at maximum activity for N = 24 animals. (D) Image montage of muscle activity comprising a P1 RollCon after Laplace transformation to show body wall distortion during movement (black lines, segments; beige dotted lines, pupal body). Scale bars, 250 μm. T = 0, movement onset. Times in min:s format.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Muscle activity comprising P3 movements color-coded by time. Schematics on left indicate pupal muscle ensembles (PMEs) represented in white outlines on the time-series montages (right), as labeled. Scale bars, 250 μm. Times in min:s format. (B) Leg extension during P3 imaged from the ventral side. Ends of the extending legs (arrows) are shown at early and late P3. (C) Leg length during the first (Early) and last (Late) 10 bouts recorded of P3. Scale bars, 250 μm. ****p≤0.0001.
 
 Comparing ΔL/L with the corresponding average (ΔF/F) reveals hemisegmental differences (Figure 8B vs. Figure 8A) including an increase in peak Ca++ activity of PME2 muscles (M21–23), moving from A5 to A3 (Figure 8B). This trend runs opposite to muscle shortening, which means that in successive anterior hemisegments, the PME2 muscles work harder to generate a smaller length change. This suggests counterforces on the anterior body wall, consistent with increased pressure to evert the head (Figure 8D) as has been measured in blowflies (Zdarek and Friedman, 1986). Each Swing is initiated posteriorly when the hemolymph is uniformly distributed throughout the body cavity and internal pressure is low. Ascending compression of the body wall on one side pushes the opposite side of the body against the static puparium. This prevents further body wall distension on that side and the compression wave drives hemolymph forward, like squeezing a tube of toothpaste from the bottom up. This creates pressure anteriorly, which is maintained by isometric contractions so that the head is pushed out (Figure 8E). While a bilaterally coordinated compression might evert the head more efficiently, the unilateral Swing has a second function: it extrudes the larval tracheal linings on each side of the body. These are deposited in ascending segments on the puparium with each Swing (Figure 8F).
 
@@ -93,19 +430,35 @@ In P3, coordinated movement across anatomical compartments separates into the mu
 
 The block of movements containing sequentially a Crunch, Brace, AntComp, PostCon, and PostSwing yield an A-to-P flow of activity. They constitute a fairly regular repeating unit with some variation in the order. This block forms the wide peak leading the double peaks seen in the bulk Ca++ trace (Figure 2C, arrows), and as P3 evolves it increasingly alternates with a modified block that lacks the PostSwing and is followed by long interbout intervals. The double peaks typically consist of a Brace-AntComp-PostCon block followed quickly by a Crunch-Brace combination. In addition, later P3 blocks also include M12 contractions in PostSwings and sometimes Crunches, which visibly increase the compaction of the anterior segments. The increased compaction may increase pressure posteriorly, driving hemolymph into the appendages to lengthen them (Figure 8—figure supplement 2B, C).
 
-## Neuromodulators increase behavioral stereotypy
+### Neuromodulators increase behavioral stereotypy
 
 We used the inwardly rectifying K+ channel, Kir2.1, to selectively silence neurons that critically regulate entry into P1 and P2 (Diao et al., 2016; Kim et al., 2015). Specifically, we suppressed neurons expressing the B isoform of the ETH receptor (NETHRB), and two overlapping populations of neurons expressing CCAP and Bursicon. The former manipulation disrupts P1 initiation by blocking abdominal lifting, while the latter blocks initiation of P2 (Diao et al., 2017). We monitored the effects on Ca++ activity using hlk>GCaMP6s.
 
 In animals in which NETHRB neurons are suppressed, the baseline increase in bulk muscle Ca++ during P1 is severely attenuated relative to WT (Figure 9A, B). Although PMEs 2, 3, and 6 characteristic of P1 (Table 1) appear 10–15 min prior to P2 (Figure 9C), activity in M15 and M1 (and thus PME4) is missing. Muscles of PME1 are also not simultaneously active and thus do not exhibit ensemble activity (Figure 9D). Finally, activity in the D-V compartments is not usually synchronized in the posterior segments. These data indicate that a principal population of ETH-targeted neurons coordinates muscles into syllables to produce the lift movement. Components of the Lift also remain absent from later movements. For example, M1 activity remains disrupted during Swings (Figure 9—figure supplement 1A).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig9-v2.jpg)
+
+**Figure 9.:** (A, B) Lateral view bulk Ca++ activity traces, mean (black), and SD (gray) for (A) animals with suppressed NETHRB (N = 6) and (B) wild-type (WT) pupae (N = 16). Lack of change in activity precludes discrimination between P0 and P1 for NETHRB-suppressed animals. T = 0, imaging onset, all traces aligned to P2 start. (C) Comparison of muscle activity in NETHRB-suppressed (NETHRB) and WT animals during the execution, or attempted execution, of the RollCon movement. Syllables are outlined. Scale bars, 250 μm. (D) Muscle activity montages for NETHRB-suppressed and WT pupae show disruption in posterior muscle activation. PME1 is outlined in WT image. Scale bars, 250 μm. T = 0, movement onset. Times in min:s format. (E) Top: Ca++ activity trace (lateral view) for an animal with suppressed CCAP-expressing neurons (NCCAP). Dotted lines indicate identifiable phase onset times. Black arrow indicates a single partial swing-like movement where P2 typically begins. T = 0, imaging onset. Bottom: mean Ca++ activity (± SD) for 10 NCCAP-suppressed pupae. T = 0, imaging onset, all traces aligned to P1 start. (F) Images of muscle activity during a Swing in WT or a partial swing-like movement in NCCAP-suppressed animals. Schematic on left indicates the A-P boundary (magenta) and ventral, lateral, and dorsal compartments. On the right are Ca++ traces for M3, M13, and M22 in hemisegment (HS) A4 from a single swing for a WT and NCCAP-suppressed animal. Co-incidence across the dorsal (D), lateral (L), and ventral (V) compartments is lost in NCCAP. Scale bars, 250 μm.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Schematic on left shows L-R and A-P axes with lines indicating the dorsal midline (cyan) and the A-P boundary between segments A4 and A5 (magenta). Dorsal images of a left Swing from wildtype (left) and two NETHRB-suppressed animals (middle and right) showing disrupted M1 activity. Orange arrows, M1 activity; dotted boxes, missing M1 activity. Scale bars, 250 μm. (B) Image montage (dorsal view) of muscle activity comprising the single, partial ‘P2’ swing of an animal with suppressed NCCAP. PME4 incompletely forms (orange arrowheads) and the P-to-A activity reaches only segment 4. Left image indicates the dorsal midline (green line) and P-A boundary (magenta line). Scale bars, 250 μm. T = 0, movement onset. Times in min:s format. (C) Image montage (lateral view) of muscle activity comprising the single, swing-like movement of an animal with suppressed NCCAP after Laplace transformation to show segmental compressions. Black lines, segmental boundaries. Scale bars, 250 μm. T = 0, movement onset. Times in min:sec format. (D) The number of movements in NCCAP-suppressed animals as detected by convolutional neural network (CNN) and plotted as mean (± SD), color-coded by phase: orange, P1; blue, P2; pink, P3. N = 10 animals.
+
 Suppressing CCAP-secreting neurons (NCCAP) results in normal Ca++ activity during P0 and P1, but P2 and P3 activity is absent (Figure 9E). Although repetitive P2 swinging is absent, a single, partial swing-like movement is observed after numerous P1 bouts, suggesting that the transition to P2 may be attempted but is not maintained (Video 6). M1–3 activate asynchronously in anterior segments so that PME4 fails to form correctly. Consequently, the P-to-A wave on the dorsal side is disrupted by anterior contractions occurring too early (Figure 9—figure supplement 1B). The partial swing propagates only through segment A5 and accompanying segmental compression is limited to A6 and A7 (Figure 9—figure supplement 1C). The lateral muscles comprising PME2 are unsynchronized with the dorsal and ventral longitudinal muscles (Figure 9F). Finally, the dorsal and ventral longitudinal muscles in segments A4–A5 change less in fluorescence (ΔF/F = 157.2 ± 33.2) and length (ΔL = 29.4 μm ± 6.23) than in WT animals (ΔF/F = 272.3 ± 92.6; ΔL = 42.2 μm ± 2.52). While NCCAP-suppression is lethal (Diao et al., 2016), there is persistent activity resembling P1 Lifts and RollCons with no significant reversal in P-to-A direction before death. There are no obvious transitions and our CNN detected few P3-specific movements (Figure 9—figure supplement 1D). We conclude that NCCAP modulates several aspects of the transition to P2, including (1) generalized increase in muscle activity during P2; (2) coordination of syllables along the A-P axis that facilitates full body swings; and (3) coordination of activity across the D-V axis, as indicated by the desynchronization of PME2 activity.
+
+![Video 6.](https://cdn.elifesciences.org/articles/68656/elife-68656-video6.mp4.jpg)
+
+**Video 6.:** Scale bars, 250 μm. Time, seconds.
 
 The loss of synchronous activity across D-V compartments led us to investigate the innervation pattern of motor neurons that express the CCAP receptor (CCAP-R, Diao et al., 2017). Intersectional labeling of CCAP-R-expressing motor neurons using the Split Gal4 system (Luan et al., 2006) showed that these neurons innervate approximately half of the pupal muscles via Ib synapses, including all dorsal and three of the six ventral muscles (Figure 10A, C). Although none of the motor neurons innervating the lateral transverse muscles express CCAP-R, the transverse muscles M21–23 of PME2 are labeled by the CCAP-R-Gal4 driver (Figure 10B, C, Supplementary file 1). This suggests that CCAP centrally modulates motor neuron output to dorsal and ventral muscles, while directly modulating lateral transverse muscles. At the larval stage, CCAP is co-released with Bursicon from type III terminals on muscles M12 and M13, which straddle the muscles of PME2 (Veverytsa and Allan, 2011). Anti-Bursicon staining established the persistence of type III terminals on M12 (Figure 10B, magenta, arrow). In addition, we confirmed the responsiveness of M21–23 to CCAP in fillet preparations treated with bath-applied peptide (Figure 10D, E, Video 7). Our results demonstrate a role for NCCAP in coordinating syllable activity across both the A-P and D-V axes and a peripheral role for CCAP in directly modulating lateral muscles.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/68656/elife-68656-fig10-v2.jpg)
 
 **Figure 10.:** (A) Motor axons expressing mCD8-GFP (green) under the control of the CCAP-R∩Vglut Split Gal4 driver innervate a subset of muscles (phalloidin, gray) at synapses stained for the postsynaptic marker DLG1 (magenta). Hemisegment (HS) A3 is shown. Scale bar, 50 μm. (B) CCAP-R-expressing muscles M21–M23, visualized with CCAP-R-Gal4>mCD8-GFP (green), are located adjacent to the type III terminal on M12, which is immunopositive for CCAP and Bursicon (magenta, white arrow). HS A4 is shown. Gray, phalloidin-stained muscles. Scale bar, 50 μm. (C) Map of CCAP-R motor neuron innervation (green circles) of pupal muscles. Innervation by motor neurons expressing only VGlut, and not CCAP-R (white circles), is also shown, as are muscles expressing CCAP-R (green rectangles) and the type III synapse on M12 that releases CCAP and Bursicon (fuchsia circles). (D) CCAP application elicits robust Ca++ responses from M21–M23 (green; mean ± SD) in live, filleted hlk>GCaMP6s animals. No response is seen with vehicle only (blue line; mean ± SD) or in Ca++-free media (yellow; mean ± SD). N = 7–10 pupae, 12 HS/pupa. T = 0, imaging onset. (E) Peak GCaMP6s (ΔF/F) activity from experiments in (D) expressed as mean ± SD. See also Supplementary file 1 and Videos 6 and 7.
+
+![Video 7.](https://cdn.elifesciences.org/articles/68656/elife-68656-video7.mp4.jpg)
+
+**Video 7.:** Scale bars, 250 μm. Time, seconds.
 
 Genetic data suggest that CCAP and Bursicon act synergistically at pupal ecdysis (Lahr et al., 2012), and neurons expressing the Bursicon receptor have been identified as essential for ecdysis motor programs (Diao et al., 2017). Consistent with Bursicon’s colocalization with CCAP in central neurons, we find that suppressing the subset of Bursicon-expressing neurons (NBurs) has effects similar to NCCAP suppression: P1 activity is normal, but P2 and P3 are not correctly executed (Figure 11A) and the animals die without everting their heads. Animals also execute a single swing-like movement after numerous bouts of P1, but in this case it consists of an entire anteriorly directed wave and some subsequent patterned activity is observed that resembles AntComp, Crunch, Brace, and PostSwing movements, which can be identified by our CNN (Figure 11B). This activity lacks organization and remains desynchronized during the swing-like movement activity in the D-V compartments (Figure 11C). Additional swing-like movements also occur, but always separated by other types of movement. We conclude that D-V synchronization for abdominal swinging requires NBurs, as does sustained execution of swinging behavior, and that full coordination of activity across the A-P axis additionally requires non-Bursicon-expressing neurons in NCCAP. The results of suppressing neuromodulatory signaling support both central and peripheral roles for the ecdysis hormones in promoting syllable coordination across the A-P and D-V axes. This coordination promotes the observed coherence of behavioral execution despite the variable timing of activation of individual muscles.
 
@@ -117,7 +470,7 @@ Genetic data suggest that CCAP and Bursicon act synergistically at pupal ecdysis
 
 Behavior is linked to neural mechanisms by the muscle activity that governs movement. To gain insight into how nervous systems specify behavior, we examined muscle activity during the Drosophila pupal ecdysis sequence at single-cell resolution using genetic Ca++ indicators. The pupal ecdysis sequence consists of multiple motor programs, dependent for their execution on hormonal cues. We find that hormonal signaling coordinates muscle activity across individual muscle ensembles and anatomical compartments to ensure stereotypy of behavioral execution. Although stereotypy is evident at the level of phases, the recruitment of muscles into movements is not stereotyped and some muscle activity is not correlated with movement. Importantly, a phase of stochastic muscle Ca++ activity precedes the onset of behavior, indicating that prior to the action of ETH, nervous system activity exhibits intrinsic variability. This variability is reduced, but not eliminated, by the action of neuromodulators, which incrementally increase behavioral coherence.
 
-## The emergence of stereotypy from variable muscle activity
+### The emergence of stereotypy from variable muscle activity
 
 Our results significantly extend previous descriptions of pupal ecdysis and illustrate the power of pan-muscle Ca++ imaging. Behavioral fine-mapping at single-cell resolution permits the definition and automated detection of elemental movements, the identification of a syllabary of movement-associated muscles and muscle ensembles, and the analysis of their sensitivity to neuronal manipulations. Importantly, single-cell analysis permits the identification of muscle activity that is not consistently associated with movements. The most salient example of such idiosyncratic activity occurs in P0, a previously undescribed phase of muscle activity lacking coordinated movement. Variability persists in phases P1–P3, which exhibit idiosyncratic muscle activation comingled with stereotyped movement syllables. Furthermore, muscle recruitment into syllables, and recruitment of syllables into movements, exhibits considerable variability both within and across animals. All observations suggest that variability in the order of recruitment of behavioral elements is a pervasive feature of the pupal ecdysis sequence with stereotypy emerging only at higher levels of behavioral description.
 
@@ -131,13 +484,13 @@ The variability of P0 muscle bouts is reminiscent in some ways of the neurogenic
 
 This apparently intrinsic variability may relate to the tradeoffs required of any multifunctional system. Pupal ecdysis, like most behaviors, depends on the integration of signals from CPGs, proprioceptors, neuromodulators, and possibly higher-order command systems—all of which are likely used in the context of larval behavior. For example, circuits that generate waves of activity along the anteroposterior axis are required for both larval locomotion and pupal ecdysis, but while they generate coordinated bilateral activity in locomotion (Heckscher et al., 2012; Lemon et al., 2015; Pulver et al., 2015; Zarin et al., 2019), they generate mostly alternating activity during ecdysis. This degree of flexibility may be bought at the cost of reproducibility of execution. Indeed, precise reproducibility may not be prioritized by nervous systems, which may instead favor solutions that are ‘good enough’ as has been generally proposed for biological control systems (Partridge, 1982). According to this view, further optimization of pupal ecdysis—in the form of behavioral stereotypy—may incur costs on performance in the execution of other behaviors that rely on the same circuit elements.
 
-## Neuromodulatory regulation of behavioral transitions and variability
+### Neuromodulatory regulation of behavioral transitions and variability
 
 Variability in pupal motor output is substantially altered by the neuromodulatory action of the ecdysis hormones ETH, CCAP, and Bursicon. Previous evidence indicates that these hormones induce the motor activity characteristic of P1 and P2, even in an isolated pupal nervous system (Diao et al., 2017; Kim et al., 2006). Consistent with the ability of neuromodulators to reconfigure motor networks (Marder, 2012), this induction likely represents reorganization and possibly stabilization of network activity, and also increased network coherence. P1 is distinguished from P0 by the presence of coherent movements and P2 is more coherent than P1 in recruitment of muscles, syllables, and compartmental activity. The reduced stereotypy in P3 may result from waning neuromodulatory action. The ecdysis hormones thus reorganize motor output and increase the stereotypy of its execution. This conclusion is supported by suppression of neuromodulatory signaling, which disrupts muscle activity at multiple levels, as expected from the broad distribution of ecdysis hormone receptors (Diao et al., 2017; Diao et al., 2016; Kim et al., 2006).
 
 What causes the release of Bursicon, CCAP, and ETH at pupal ecdysis is unknown, but our results suggest that ecdysis activity itself may be a factor. Release of ETH occurs only after muscle responsiveness to neural stimulation is ensured, suggesting that the latter may represent a checkpoint for release. Similarly, the aborted swing-like activity occurring in the absence of NCCAP and NBurs activity indicates that entry into P2 has a hormone-independent component that may act as a checkpoint for hormone release, which then sustains P2 network activity. One possible mechanism might be that as the animal pulls back during P1 and creates an anterior space, sensory feedback from the head signals the readiness for P2. Similar checkpoint control mechanisms have been proposed to operate in the adult ecdysis sequence of locusts and crickets (Carlson, 1977; Hughes, 1980b).
 
-## Neuromodulation and compartmentalization of movement
+### Neuromodulation and compartmentalization of movement
 
 The granular analysis of muscle activity presented here also reveals how neuromodulators may serve to coordinate action across anatomically and functionally distinct compartmental boundaries. ETHRB neuron suppression blocks the Lift, a movement of the posterior compartment, while suppressing CCAP neurons prematurely terminates the first (and only) swing-like movement by blocking its progression into the anterior compartment. Additionally, the distribution of CCAP-R appears to reflect mechanisms for selectively regulating distinct compartments across the D-V axis. CCAP-R is expressed selectively in motor neurons that innervate dorsal and ventral muscles. These motor neurons have dendrites that occupy similar positions on the myotopic map and share similar synaptic inputs (Landgraf et al., 2003; Zarin et al., 2019). This distinguishes them from motor neurons that innervate the lateral transverse muscles, which do not express CCAP-R. However, a subset of lateral transverse muscles (i.e., M21–23) themselves express CCAP-R, and the pattern of CCAP-R expression may thus represent a mechanism for synchronizing activity across the D-V axis during the swing movements of P2 when CCAP is released. Notably, muscle synchrony across compartments in posterior segments is lost in the one, partially executed Swing when CCAP-expressing neurons are suppressed (Figure 9) and no further Swings are executed.
 
@@ -145,7 +498,7 @@ The putative source of CCAP for the muscles of PME2 are the type III terminals o
 
 It is worth noting that the expression of CCAP-R by the lateral transverse muscles indicates the potential importance of muscle modulation in shaping behavior. Whether modulation of muscle properties also underlies the generalized failure of muscles to respond to synaptic input at the onset of P0 is unclear. Animals stop moving shortly after pupariation and do not resume until pupal ecdysis, but neuromuscular activity may be maintained throughout this period. We observed neuromuscular activity without muscle responses at the earliest pre-pupal stages we examined (approximately stage P2 of Bainbridge and Bownes, 1981; data not shown). However, more detailed imaging would be required to determine the extent, continuity, and pattern of the input. Drosophila muscles are targets of a variety of neuropeptides including myoinhibitory peptides, which have also been implicated in pupal ecdysis behavior (Kim et al., 2015), and it is possible that these play a role in suppressing muscle responses to neural input. Alternatively, neuromuscular signaling may be progressively potentiated during P0. Such a mechanism has been proposed to operate in pupal moth flight muscles, which respond electrically—but fail to contract—to synaptic input corresponding to flight motor patterns (Fitch and Kammer, 1986; Klaassen and Kammer, 1985). As animals approach eclosion, rising octopamine levels upregulate neuromuscular efficacy so that flight muscles activate in response to input.
 
-## Identifying neural determinants of behavior
+### Identifying neural determinants of behavior
 
 A goal of computational neuroethology (Datta et al., 2019) is to describe behavior at a level of resolution that permits the identification of its neural determinants. The muscle-level description provided here lends itself naturally to this purpose. For example, the activity patterns of the muscles comprising PME2 have likely neural correlates within the synaptic and neuromodulatory networks that govern pupal ecdysis behavior. At the neuromodulatory level, the NCCAP cells that terminate on M12 are likely sources of CCAP modulation of PME2 muscles, perhaps to help reverse their P-to-A activation at P2. At the synaptic level, the regular, intersegmental pattern of activation of PME2 muscles in nearly all pupal movements and behavioral bouts (Table 1) suggests that PME2 motor neurons are driven by CPG neurons that generate anteroposterior rhythms. Our results thus provide testable predictions about the patterns of neuromodulatory and synaptic connectivity between muscles, motor neurons, and premotor interneurons of various types.
 
@@ -153,64 +506,305 @@ Testing these predictions will be facilitated by data emerging from reconstructi
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-pBurs</td>
+      <td>Aaron Hsueh/ Willi Honegger</td>
+      <td></td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 555 Phalloidin</td>
+      <td>ThermoFisher/ Invitrogen</td>
+      <td>A34055</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP</td>
+      <td>ThermoFisher/ Invitrogen</td>
+      <td>A11122; RRID:AB_221569</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-DLG</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>4F3; RRID:AB_528203</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG Alexa Fluor 647</td>
+      <td>ThermoFisher/ Invitrogen</td>
+      <td>A21236; RRID:AB_2535805</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG Alexa Fluor 488</td>
+      <td>ThermoFisher/ Invitrogen</td>
+      <td>A11008 RRID:AB_143165</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CCAP</td>
+      <td>BACHEM</td>
+      <td>4015114</td>
+      <td>(1 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Schneider’s insect medium</td>
+      <td>Sigma-Aldrich</td>
+      <td>S0416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Schneider’s insect medium w/o calcium</td>
+      <td>Sigma-Aldrich</td>
+      <td>s9895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,2-Thiodiethanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>166782</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProLong Diamond Antifade Mountant</td>
+      <td>ThermoFisher/ Invitrogen</td>
+      <td>P36961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>D. melanogaster: ETHRB-Gal4 (ETHRBMI00949-Gal4)</td>
+      <td>Diao et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: CCAP-R-Gal4 (CCAP-RMI05804-GAL4)</td>
+      <td>Diao et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: CCAPR-p65AD (CCAP-RMI05804-p65AD)</td>
+      <td>Diao et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: w; CCAP-Gal4; +</td>
+      <td>Gift of J. Ewer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: VGlut-Gal4DBD (VGlutMI04979-Gal4DBD)</td>
+      <td>Diao et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: UAS-GCaMP6S, insertions on Chromosomes II and III</td>
+      <td>Bloomington Drosophila Stock Center (BDSC)</td>
+      <td>RRID:BDSC_42746; RRID:BDSC_42749</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: UAS-Kir2.1 insertion on Chromosomes II and III</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_6596; RRID:BDSC_6595</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: yw; UAS-mCD8GFP/Cyo; +</td>
+      <td>Gift of L. Luo</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: hlk-T2A-LexA::QFAD</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: hlk-T2A-Gal4</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: LexAOp-GCaMP6s, insertion on Chromosomes II and III</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_44589; RRID:BDSC_44274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: UAS-jRGECO1a, insertion on Chromosomes II and III</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_64426; RRID:BDSC_63794</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: 410-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_63298</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: ChaT-Gal4</td>
+      <td>Diao et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: UAS-sytGCaMP6s insertion on Chromosome III</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_64416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.7 (Anaconda)</td>
+      <td>Anaconda</td>
+      <td>RRID:SCR_018317; RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LasX</td>
+      <td>Leica</td>
+      <td>RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIS-Elements</td>
+      <td>Nikon</td>
+      <td>RRID:SCR_014329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji, ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by Benjamin White (benjaminwhite@mail.nih.gov).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Drosophila stocks and rearing conditions
+#### Drosophila stocks and rearing conditions
 
 Vinegar flies of the species Drosophila melanogaster were used in this study. Flies were raised on cornmeal-molasses-yeast medium or Nutri-Fly German food (Genesee Scientific) and housed at 25°C and 65% humidity in a 12 hr light/dark cycle. Both males and females were used in this study and all experiments analyzed animals at stages L3 (third instar), P2 (Bainbridge and Bownes, 1981) ~6 hr after pupariation, or at the time of pupal ecdysis, ~12 hr after pupariation. Fly stocks described in previous publications include VGlut-Gal4DBD (i.e., VGlutMI04979-Gal4DBD) and ChaT-Gal4 from Diao et al., 2015 and CCAP-R-p65AD and CCAP-R-Gal4 (Diao et al., 2017), ETHRB-Gal4 (Diao et al., 2016). hlk was identified by the larval muscle expression pattern of the NP3137-Gal4 enhancer trap line whose P{GawB} element is inserted at the 5′ end of the l(2)01289 gene. To make hlk-T2A-LexA and hlk-T2A-Gal4 lines, either PBS-KS-attb1-2-PT-SA-SD-1-T2A-LexA:QFAD-Hsp70 or PBS-KS-attb1-2-PT-SA-SD-1-T2A-Gal4-Hsp70 was injected into y w; l(2)01289MI05738/Cy; + embryos (Bloomington stock# 42105) and adults were screened for loss of the y+ marker. All injections were made by Rainbow Transgenic Flies, Inc (Camarillo, CA). The CCAP-Gal4 line was a kind gift from J. Ewer (Universidad de Valparaiso, Chile). All other fly lines, listed in the Key Resources tTable, were obtained from the Bloomington Drosophila Stock Center at Indiana University.
 
-## Method details
+### Method details
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 Third instar larvae and stage P4 pupae with an air bubble and visible gut movement indicating ecdysis proximity (Bainbridge and Bownes, 1981) were isolated from their vials, chilled for 20 min on ice, and placed into a dissection dish with 1× phosphate-buffered saline (1× PBS). Animals were pinned dorsal-side or ventral-side up (as indicated) at the anterior and posterior ends, a small incision was made along the entire dorsal or ventral midline, and the visceral organs were removed. Tissues were then fixed in 4% paraformaldehyde for 30 min at room temperature (RT) and washed in 1× PBS three times. A block was performed for 1 hr at RT in PBT (1× PBS, 0.5% Triton-X) with 5% Normal Goat Serum (NGS). The tissues were then incubated with Rabbit anti-GFP (Life Technologies, USA) diluted to 1:250 in PBT and mouse anti-DLG (Developmental Studies Hybridoma Bank, Iowa City, IA) at 1:500 for 48 hr at 4°C. After six 30 min washes in PBT with shaking, samples were incubated with secondary antibodies Alexa Fluor 647, 488, and Alexa Fluor Phalloidin 555 (Life Technologies) at 1:500 in PBT with 5% NGS for 48 hr at 4°C (Life Technologies). Samples were washed again three times for 20 min washes in 1× PBT with shaking and mounted on #1.5 glass coverslips with Prolong Diamond (Life Technologies). Confocal imaging was performed using a Leica SP8 with AOBS, bidirectional resonant scanning, and a 20×/0.75 NA air objective. Unless otherwise noted, the images presented are maximum intensity projections (MIPs), produced in Fiji ImageJ (Schindelin et al., 2012), of multi-point Z-stacks collected through the entire preparation.
 
-## Manipulation of neuronal activity
+### Manipulation of neuronal activity
 
 All neuronal suppression experiments were conducted using two copies of UAS-Kir2.1 in a parental line generated by combining insertions on chromosomes II and III with hlk-LexA::QFAD and LexAOP-GCaMP6s, respectively. Control animals bearing the UAS-Kir2.1 transgene, but no Gal4 driver, perform the ecdysis sequence normally, and animals in which the 410-Gal4, CCAP-Gal4, ETHRB-Gal4, and Burs-Gal4 drivers express mCD8-GFP are healthy and viable to adulthood.
 
-## Live fluorescence microscopy
+### Live fluorescence microscopy
 
-## Intact animals
+#### Intact animals
 
 P4 stage pupae were isolated as for immunohistochemistry, rinsed with 50% bleach for 3 min, rinsed in PBS, and immersed in a custom-chamber with 2,2-thiodiethanol (TDE, Sigma-Aldrich), which rendered the puparium transparent and immobilized the animal with the dorsal, ventral, or lateral side facing the objective (Figure 2—figure supplement 1). Muscles only on the selected side were imaged using an epifluorescence stereomicroscope (Nikon SMZ25) with a 1×/0.3 NA objective, GFP filter cube, 4× magnification, low depth-of-field, and a partially closed aperture diaphragm. Fluorescence from muscles opposite the imaging field is effectively excluded because the pupal musculature lies superficially along the body wall and light is scattered by internal tissues. All muscle activity on one side could be rapidly captured in a single frame using a high-speed sCMOS detector and data were collected at 2 Hz for 90–120 min.
 
-## Filleted animals
+### Filleted animals
 
 P2 stage pupae (Bainbridge and Bownes, 1981) were cold-anesthetized, washed in PBS, and dissected as for immunohistochemistry. The brain was removed by severing ventral nerve cord (VNC) projections and removing the brain and VNC. Once filleted, the PBS was replaced with 1 mL of Schneider’s insect medium (SIM, Sigma-Aldrich). Imaging was performed for 30 min on a Nikon SMZ25 stereomicroscope with a 1×/0.3 NA objective and sampled at 2 Hz. After the first 5 min, 1 μM CCAP solution in SIM was added to the bath, for a final effective concentration of 0.5 μM, and image collection continued for the remaining 25 min. The vehicle control was SIM without CCAP. Ca++-free controls were conducted with SIM without Ca++ (Sigma-Aldrich). CCAP (BACHEM, Torrence, CA) stock solutions were prepared by dilution to 1 mM in water.
 
-## Dual-channel imaging
+### Dual-channel imaging
 
 For experiments requiring GCaMP6s and jRGECO1a fluorescence, animals were prepared as intact animals above (pupal stage P2 for NMJ/muscle experiments and pupal stage P4 for sensory/muscle experiments) and imaging was conducted on a Nikon Ti epifluorescence microscope with a 10×/0.5 NA air objective, Cairn twin-cam, two PCO edge 4.2 sCMOS cameras, and filters for GFP and RFP. Images were acquired at 2 Hz for 60–90 min.
 
-## Image processing
+### Image processing
 
 Unless otherwise noted, all live experimental image series were background subtracted in Fiji ImageJ2 (Schindelin et al., 2012). Where values of length and fluorescence are indicated, the line tool (width, 3 px) was used to manually measure intensity and length for muscles 1, 2, 3, 5, 12, 13, 15, 22, 26, and 28 in hemisegments 3, 4, and 5 for each of the ecdysis sequence phases at the onset of muscle activity (visible fluorescence), the peak of the muscle activity (brightest fluorescence), and the offset of muscle activity (fluorescence returns to baseline). Single-muscle identification was facilitated by the histolysis of half of the larval musculature and the occlusion of opposing side muscles by thick and highly scattering internal tissue. Data were collected sub-saturation but most videos and figures presented are contrast-enhanced to aid the eye. Bulk Ca++ traces were extracted from ROIs defined as the entire animal excluding the puparium, or as single muscles/neurons where indicated, and normalized to F0, defined here as the average fluorescence intensity over the first 50 frames in the image series. Raster plots were generated from activity peaks identified from Ca++ traces using a peak finding algorithm in Python with manually determined thresholds for GCaMP6s and jRGECOa1.
 
-## Behavior annotation
+### Behavior annotation
 
 A subset of four animals from the total hlk>GCaMP6s experimental dataset (N = 16) were annotated frame-by-frame by expert raters to identify the muscles newly activated in each frame. These data were used to determine the frequency and order of activation for each muscle. Movements were annotated manually for these four animals plus one more by visual inspection of muscle activity pattern and deflections of the body wall with respect to the puparium from raw image series (before background subtraction) that were contrast-enhanced to allow visualization of autofluorescence from the body wall. Bouts were identified manually from a subset of 10 hlk>GCaMP6s animals as the start of a sequence of muscle activations flanked on either side by ≥ 2 frames of no new activations, which were defined as inter-bout intervals. The criteria for defining PMEs were determined empirically based on frame-by-frame analysis of 10 complete image series of the pupal ecdysis sequence. Groups of muscles that were repeatedly observed (≥80% of bouts in ≥8 animals) to be co-active in a regular pattern were subsequently analyzed for the duration of co-activity. A group in which the activity of all muscles overlapped for three or more frames was defined as a PME. Post-hoc analysis revealed that three frames on average represent approximately 15% of the total period of co-active duration for PMEs.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Sample calculations and general statistics
+#### Sample calculations and general statistics
 
 Sample sizes were predetermined using power calculations with 85% power from ecdysis phase 2 behavior duration data presented in Diao et al., 2017. N calculated for suppression of the CCAP, non-ETHRA population vs. WT is 6 animals and N calculated for suppressing CCAP/ETHRA population vs. WT is 12 animals. Sample sizes in the current paper are listed with each figure and in Supplementary file 1 and range from 10 to 16 with the exception of manually annotated data, for which sample sizes were not statistically predetermined. Statistical analyses were performed using GraphPad Prism 8 or Python 3.7 (https://anaconda.com, versions 2–2.4.0). Individual statistical methods and parameters are reported in the figure legends.
 
-## Directionality analysis
+### Directionality analysis
 
 To find direction of activation (A->P or P->A) (Figure 1K), we first computed a MIP along the x (horizontal) axis of the hlk>GCaMP6s image. For every frame, the MIP was a 1D vector of length H for an HxW image. Then we computed the location of the mode of the MIP vector on the y axis. An intensity mode indicates the location of the most dominant muscle activation. Therefore, the locations of the modes give an estimate of the direction of motion during the muscle activity period. Note that we are interested in finding the location of maximum motion, which is efficiently captured by the mode of the intensities, not by the mean. Once the intensity modes were identified for every frame using MIPs, we computed the number of modes above and below a threshold, indicating P->A and A->P motion, respectively. The threshold is automatically computed as the median of all modes. We then calculated the ratio of the number of modes below the median line to the number of modes above the median line and used this ratio to determine if the direction of activation is posteriorly or anteriorly directed.
 
-## Automated movement analysis
+### Automated movement analysis
 
 We used a CNN to automatically estimate the type of motion in each hlk>GCaMP6s image frame. The network model is a modified version of Inception-v3 (Szegedy et al., 2015). To fit the model in available GPU memory based on the image size, we removed the final Dense layer and replaced it with a GlobalAveragePooling2D layer. In addition, a dropout layer was also added to introduce stochasticity into the model to avoid overfitting. There were totally 21.8M parameters in the model. The detailed network is described in the train.py provided as supplementary material. The model was trained to predict nine motions (Anterior Compression, Posterior Swing, Brace, Crunch, Rolling Contraction, Lift, Posterior Contraction, Rest, Swing) from the hlk>GCaMP6s images of five animals. For each animal, the images were resized to 403 × 129 × N, where N is the variable number of frames based on the duration of the phases. Each frame was obtained at 2 Hz. Every frame, starting from phase 1, was assigned to one of the above-mentioned motions and was derived by consensus of three expert raters. Since the motion cannot possibly be derived by looking at a single frame, we used windows of 25 frames (12 previous and 12 following) to estimate the motion at one frame. Therefore, the training data for each frame consisted of a 403 × 129 × 25 matrix. The CNN model was then trained by predicting the motion of the center (13th) frame.
 
 Since there were only five animals available for training, we used all possible overlapping frames to augment the training data. Categorical cross-entropy with the Adam (Kingma and Ba, 2015) optimizer was used with learning rate of 0.0001 to obtain a probabilistic estimation of motion for each frame. An early termination criterion was used to prevent the model from overfitting, where the training was stopped if the categorical cross-entropy did not increase for 10 consecutive training epochs. Figure 4—figure supplement 1A shows the accuracy of motion prediction averaged over all available frames for each of the five training animals in a leave-one-out cross-validation. The final (magenta) curve shows the training accuracy where frames from all five animals were aggregated and then the model was trained on the aggregated frames. Similar accuracy between cross-validation and aggregated training shows that the CNN model did not overfit the data. However, to use information from all training animals, we applied the aggregated trained model (i.e., magenta) on the remaining 11 animals. For every frame of a test animal image, the motion with maximum probability was used as the final motion. For better accuracy, the predicted motions of the 11 animals were corrected by an expert rater.
 
-## Muscle activation order analysis
+### Muscle activation order analysis
 
 The annotated muscle datasets were sorted by onset frame number and then by muscle. Then, cells were concatenated into strings by bout, movement, or syllable, and assessed pairwise via the Python SequenceMatcher algorithm to score for similarity in string order. Other behavioral features were similarly analyzed using the onset times of syllables, movements, or compartments to order the sequences. Documentation for this algorithm is provided by the difflib library (https://docs.python.org/3/library/difflib.html).

@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05jtef216 Ottawa Hospital Research Institute Ottawa Canada
-2. https://ror.org/03c4mmv16 Departments of Medicine and Biochemistry, Microbiology and Immunology, University of Ottawa Ottawa Canada
+1. Ottawa Hospital Research Institute Ottawa Canada ([ROR:05jtef216](https://ror.org/05jtef216))
+2. Departments of Medicine and Biochemistry, Microbiology and Immunology, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))
 
 † Corresponding author
 

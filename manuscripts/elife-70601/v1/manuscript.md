@@ -36,7 +36,7 @@ The FP4-binding pocket of the EVH1 domain is 100 % conserved across ENAH, VASP, 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig1-v1.jpg)
 
-**Figure 1.:** (A) Sequence alignment of the EVH1 domains of ENAH, VASP, and EVL. Black denotes residues that are 100 % conserved; residues in gray share similar physicochemical properties. (B) Surface representation of ENAH EVH1 bound to an FP4 peptide (PDB 1EVH) highlighting conservation among Ena/VASP paralogs. Residues shared between all three paralogs are white; residues shared by two paralogs are orange, residues that differ in each paralog are red. (C) Biolayer interferometry data and curves fit to determine the dissociation constants for peptide PCARE B binding to ENAH, EVL, or VASP EVH1 domains. Error reported as the standard deviation of two replicates.Figure 1—source data 1.Figure 1C.
+**Figure 1.:** (A) Sequence alignment of the EVH1 domains of ENAH, VASP, and EVL. Black denotes residues that are 100 % conserved; residues in gray share similar physicochemical properties. (B) Surface representation of ENAH EVH1 bound to an FP4 peptide (PDB 1EVH) highlighting conservation among Ena/VASP paralogs. Residues shared between all three paralogs are white; residues shared by two paralogs are orange, residues that differ in each paralog are red. (C) Biolayer interferometry data and curves fit to determine the dissociation constants for peptide PCARE B binding to ENAH, EVL, or VASP EVH1 domains. Error reported as the standard deviation of two replicates.
 
 Using a high-throughput screen of the human peptidome, we identified, among other interaction partners, a peptide from photoreceptor cilium actin regulator (PCARE) that binds with high affinity to the ENAH EVH1 domain. PCARE is almost exclusively expressed in the retina, and mutations in PCARE are associated with inherited retinitis pigmentosa and retinal dystrophy (Collin et al., 2010; Nishimura et al., 2010; Kevany et al., 2015). Prior work implicates PCARE as a scaffold protein important for recruiting complexes that regulate actin assembly as part of new outer segment disk formation in photoreceptor cells (Corral-Serrano et al., 2020). Previous investigations identified ENAH as an interaction partner for PCARE based on tandem-affinity purification experiments in HEK293T cells and colocalization of PCARE with Ena/VASP at ciliary membrane expansions in hTERT RPE1 cells (Boldt et al., 2016; Corral-Serrano et al., 2020). PCARE was also associated, via protein tandem-affinity purification studies, with 17 other proteins with actin-related functions, including Wiskott–Aldrich syndrome protein family member 3 (WASF3), which is recruited via PCARE to the cilium, leading to membrane expansions that involve actin polymerization (Corral-Serrano et al., 2020).
 
@@ -44,17 +44,29 @@ Here, we report that PCARE is surprisingly selective for binding to ENAH in pref
 
 ## Results
 
-## An extended SLiM from ciliary protein PCARE binds selectively to ENAH EVH1 and reduces adhesion in mammalian cells
+### An extended SLiM from ciliary protein PCARE binds selectively to ENAH EVH1 and reduces adhesion in mammalian cells
 
 In a separate study, we performed a proteomic screen that identified peptides that bind to the ENAH EVH1 domain with dissociation constants primarily in the low- to midmicromolar range (KD = 2–60 μM). The highest affinity hit from our screen was a 36-residue peptide from PCARE (PCARE813–848) that bound to ENAH with a KD of 0.19 μM (Hwang et al., 2021). Truncation studies showed that 23-residue PCARE826–848, which we call PCARE B, maintains high affinity for ENAH EVH1 (KD = 0.32 μM). To explore the paralog specificity of PCARE B, we quantified binding to EVL and VASP EVH1 domains using biolayer interferometry (BLI) and discovered a 70- to 140-fold preference for binding to ENAH over EVL or VASP (Figure 1C). This was initially very surprising, given that PCARE B includes the FP4 sequence LPPPP and the Ena/VASP paralogs are 100 % conserved in the FP4-binding groove (Figure 1B). However, this was also an exciting observation, because it suggested that PCARE B could serve as a reagent for selectively targeting ENAH in cell biological studies of its functions.
 
 To test for association of Ena/VASP proteins and PCARE B in cells, we used Ena/VASP-family-deficient cell line MVD7 (Bear et al., 2000) and expressed the individual paralogs ENAH, EVL, and VASP. MVD7 are embryonic fibroblasts derived from ENAH−/− VASP−/− mice, and they have low EVL expression (Damiano-Guercio et al., 2020). We used an shRNA against EVL to further decrease residual EVL (Figure 2—figure supplement 1). We tagged PCARE B with mRuby2 (mRuby2-PCARE B) and coexpressed this construct with green fluorescent protein (GFP), or GFP fusions to ENAH, an EVH1 deletion mutant of ENAH (ΔEVH1-ENAH), EVL, or VASP. ENAH, EVL, and VASP all robustly localized to focal adhesions as previously observed (Puleo et al., 2019) while ΔEVH1-ENAH localization was cytoplasmic. mRuby2-PCARE B exhibited diffuse cytoplasmic localization under all conditions except when coexpressed with ENAH, in which case mRuby2-PCARE B was moderately enriched at focal adhesions, consistent with an ENAH–PCARE B interaction (Figure 2A). To demonstrate the specificity of PCARE B for ENAH, we quantified the enrichment ratio of the mean intensity of mRuby2-PCARE B at focal adhesions and in the cytoplasm in each condition. The mean intensity values at focal adhesions and the cytoplasm were divided by the average background intensity of mRuby2-PCARE B. We observed significant enrichment (p < 0.0001) of mRuby2-PCARE B with GFP-ENAH at focal adhesions compared to the cytoplasm. The enrichment ratios for mRuby2-PCARE B with GFP-EVL and GFP-VASP were not significant (Figure 2B). In addition, plots of fluorescence intensity along a line passing through focal adhesions showed colocalization of PCARE B and ENAH (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig2-v1.jpg)
+
+**Figure 2.:** (A) Live MVD7shEVL cells expressing mRuby2-PCARE B with GFP, GFP-ENAH, GFP-dEVH1-ENAH, GFP-EVL, or GFP-VASP, imaged using total internal reflection fluorescence (TIRF) microscopy. Scale bar = 25 μm. (B) Enrichment ratio of mRuby2-PCARE B at GFP-positive focal adhesions over cytosolic signal under indicated overexpression conditions. n = 30 focal adhesions, N = 3 biological replicates. (C) Normalized fluorescence intensity of GFP signal (left axis) and mRuby2-PCARE B signal (right axis) along a line drawn through focal adhesions, indicated by the red arrow in (A). (D) Live MVD7shEVL cells expressing Mito-mRuby2-PCARE B with GFP, GFP-ENAH, GFP-dEVH1-ENAH, GFP-EVL, or GFP-VASP. Image is a maximum intensity projection of z-stack acquired using widefield fluorescence microscopy. Scale bar = 25 μm. (E) Enrichment ratio of GFP-tagged constructs to Mito-mRuby2-PCARE B-positive mitochondria over cytosolic signal under indicated overexpression conditions. n = 30 mitochondria, N = 3 biological replicates. (F) Magnified region of interest indicated by the box in (D), showing colocalization of Mito-mRuby2-PCARE B and GFP-ENAH at increasing depths in the cell. Scale bar = 5 μm. (G) Immunofluorescence labeling of MCF7 cells expressing nontargeting LKO control, ENAH-targeting shRNA, mRuby2-PCARE B, or Mito-mRuby2-PCARE B. Cells were fixed 8 hr after plating and immunolabeled for focal adhesion marker paxillin and endogenous ENAH, and additionally stained with phalloidin for F-actin. Box indicates positions of magnified regions of interest (ROI). Scale bar = 25 μm, magnified ROI scale bar = 5 μm. (H) Box-and-whisker plot of total paxillin-positive area per cell normalized to the total cell area, for indicated conditions. N = 3 biological replicates, n = 45–49 cells. (I) Violin plot of individual focal adhesion size (for adhesions greater than 0.25 μm2) for indicated conditions. The central black line indicates the median, peripheral gray lines indicate interquartile ranges. N = 3 biological replicates, n = 1452–2159 individual adhesions. In panels B, E, H, and I, * p ≤ 0.05, ** p ≤ 0.01, *** p ≤ 0.001, **** p ≤ 0.0001, Kruskal–Wallis test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Relative expression of MVD7shEVL vs. MVD7ntEVL (nontargeting control) is 42.8 ± 1.8 % by quantitative PCR (qPCR), three biological replicates.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Representative western blot showing expression of ENAH, EVL, and VASP in MCF7 cells. At right, representative western blot showing the magnitude of knockdown using ENAH-targeted shRNA.
+
 Historically, a mito-tagged ActA peptide has served as a valuable sideways knockout tool that can deplete Ena/VASP proteins from other cytoplasmic locations by recruiting them to the mitochondria. This strategy has been used to dissect Ena/VASP-dependent functions (Bear et al., 2000). To test whether PCARE B could serve a similar function, but with specificity for ENAH, we tagged PCARE B with a mitochondrial localization sequence, generating Mito-mRuby2-PCARE B. In MVD7shEVL cells with exogenously expressed Ena/VASP paralogs, ENAH was significantly colocalized with Mito-mRuby2-PCARE B at mitochondria, although some ENAH remained associated with focal adhesions. In contrast, EVL and VASP remained entirely localized to focal adhesions and did not localize to mitochondria (Figure 2D–F). There is significant enrichment (p < 0.0001) of Mito-mRuby2-PCARE B with GFP-ENAH at the mitochondria compared to the cytoplasm, whereas the enrichment ratios of Mito-mRuby2-PCARE B with GFP-EVL and GFP-VASP were not significant (Figure 2E). Together, these findings indicate that PCARE B can recruit ENAH, but not EVL or VASP, to artificial localization sites such as the mitochondria, supporting interaction specificity between PCARE B and ENAH in cells.
 
 We also tested whether cytoplasmic expression of PCARE B could disrupt the function of endogenous ENAH. We examined focal adhesion maturation as a readout of ENAH function in MCF7 breast cancer cells, which express significant levels of ENAH (Figure 2—figure supplement 2). We compared the effects of PCARE B expression to the effects of ENAH knockdown by shRNA by assessing cell adhesion, using paxillin immunofluorescence labeling to delineate focal adhesions (Figure 2G). As expected, ENAH knockdown was associated with diminished adhesion and smaller focal adhesion size as compared to cells expressing nontargeting shRNA (Figure 2F–H). Intriguingly, expression of PCARE B resulted in a similar decrease in adhesion, suggesting suppression of ENAH function at focal adhesions (Figure 2G–I). Importantly, the expression of PCARE B in MCF7 cells shifted the enrichment of ENAH from focal adhesions to membrane protrusions (Figure 2G center inset). ENAH enrichment at protrusions was not observed in MCF7 cells expressing Mito-mRuby2-PCARE B, which exhibited strong mitochondrial localization of ENAH and markedly decreased adhesion (Figure 2G right inset, Figure 2H,I). This suggests that in MCF7 cells, blockade of the EVH1 domain by cytosolic PCARE B liberates ENAH from focal adhesions while permitting other EVH1-independent interactions elsewhere in the cell. In contrast, Mito-mRuby2-PCARE B can recruit ENAH away from its normal sites of action at focal adhesions and the cell membrane and to the mitochondria.
 
-## FP4 motif-flanking elements in ciliary protein PCARE confer high affinity by inducing noncanonical binding
+### FP4 motif-flanking elements in ciliary protein PCARE confer high affinity by inducing noncanonical binding
 
 To understand the structural basis for the high-affinity and selective interaction of PCARE B with ENAH, we solved a crystal structure of ENAH EVH1 domain fused to a 36-mer PCARE sequence to 1.65 Å resolution. Fusing a short peptide to its binding domain can assist with structure determination, in part by controlling the stoichiometry of domains and peptides in the crystallization mixture (Appleton et al., 2006; Teyra et al., 2017; Li et al., 2019). To minimize the influence of the fusion on the domain–peptide interaction, we introduced a long, flexible linker between C-terminus of the ENAH EVH1 domain and the PCARE B sequence. The linker consisted of the 6-residue sequence GGSGSG and then 13 residues of PCARE that lie N-terminal to PCARE B and that we determined using truncation studies are dispensable for high-affinity binding (Hwang et al., 2021). Consistent with our truncation studies, our structure showed that only 21 residues of PCARE were fully resolved in the electron density (PCARE828–848, Figure 3A). Notably, neither the Gly and Ser residues nor any of PCARE residues 813–827 gave clear density in our maps, consistent with this part of the fusion protein being disordered and not forming specific interactions that might influence the peptide-binding geometry.
 
@@ -68,17 +80,81 @@ Contacts between the extended, alpha-helical region of PCARE and ENAH are shown 
 
 To test whether high-affinity binding of PCARE B in solution is consistent with the interactions that we observe in the structure, we made ENAH EVH1 domain with Pro65 substituted with aspartate (ENAH P65D). Residue 65, shown in Figure 3C, is remote from the canonical FP4-binding site and, as expected, this mutation has little effect on the binding of ActA (Table 1). However, this single mutation led to a dramatic 100-fold weakening of the affinity of ENAH EVH1 for free PCARE B peptide. This change in affinity is consistent with the contacts observed in our crystal structure playing a critical role in stabilizing peptide binding, and not consistent with a model in which PCARE binds in the previously observed FP4 docking geometry, for example as observed for ActA peptides, which would orient the C-terminal residues that are essential for affinity in the opposite direction (Prehoda et al., 1999; Fedorov et al., 1999; Barone et al., 2020). Collectively, our results reveal a noncanonical mode of binding where the FP4 motif of PCARE binds to the ENAH EVH1 domain in a reversed N-to-C orientation and makes extra contacts to achieve high affinity.
 
-## PCARE achieves paralog selectivity by stabilizing an ENAH EVH1 domain-specific conformation with a novel FP4-flanking sequence element
+**Table 1.**
+ Affinity of EVL and ENAH EVH1 domain mutants for peptides ActA and PCARE B.Table 1—source data 1.Raw data for Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>ActA KD (μM)*, †</th>
+      <th>PCARE B KD (μM)*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ENAH</td>
+      <td>5.2 ± 0.2</td>
+      <td>0.32 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>EVL</td>
+      <td>2.7 ± 0.3</td>
+      <td>22.3 ± 1.5</td>
+    </tr>
+    <tr>
+      <td>EVL V65P</td>
+      <td>2.4 ± 0.1</td>
+      <td>112.1 ± 9.6</td>
+    </tr>
+    <tr>
+      <td>EVL Y62C</td>
+      <td>7.1 ± 0.7</td>
+      <td>19.0 ± 2.8</td>
+    </tr>
+    <tr>
+      <td>EVL Y62C V65P</td>
+      <td>5.8 ± 1.0</td>
+      <td>2.2 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>ENAH P65D</td>
+      <td>7.2 ± 0.5</td>
+      <td>32.0 ± 3.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Affinities determined by biolayer interferometry (BLI) as described in the methods and in, Hwang et al., 2021.†The ActA peptide has sequence FNAPATSEPSSFEFPPPPTEDELEIIRETASSLDS (see methods for the exact construct tested)._
+
+### PCARE achieves paralog selectivity by stabilizing an ENAH EVH1 domain-specific conformation with a novel FP4-flanking sequence element
 
 Interestingly, our structure of ENAH EVH1 domain bound to PCARE828–848 shows that 16 of the 18 residues that are within 4 Å of PCARE in ENAH are identical in ENAH ,VASP, and EVL. Thus, whereas the FP4-binding site is 100 % conserved, the extended binding site engaged by PCARE is also highly conserved. Residue 63 is alanine in ENAH and VASP, and the corresponding residue 64 in EVL is serine. Modeling serine at position 63 in the PCARE-bound structure of ENAH shows that the side-chain hydroxyl group can be readily accommodated in a solvent-facing conformation without interfering with PCARE binding. On the other hand, residue 65 is proline in ENAH and the corresponding residue is valine in EVL and VASP. As discussed in the previous section, Pro65 is remote from the canonical FP4-binding groove but makes extensive contacts with PCARE and is largely buried at the domain–peptide interface (Figure 3C). We speculated that proline vs. valine might contribute to the ENAH-binding preference of PCARE. To test this, we made EVL with a valine-to-proline mutation, with the expectation that this would increase the binding affinity for PCARE B. Surprisingly, EVL V65P bound to PCARE B fivefold weaker than did wild-type EVL (KD = 112.1 vs. 22 μM, Table 1). In contrast, EVL V65P bound to an FP4-containing ActA peptide, which does not contact Val65 (Barone et al., 2020), with the same affinity as wild-type EVL (KD = 2.4 vs. 2.7 μM, Table 1), indicating that the V65P mutation does not lead to global disruption of the domain structure but does influence its interaction with PCARE.
 
 Comparing the structures of ENAH EVH1 domain bound to PCARE828–848 vs. the peptide FPPPP (PDB 1EVH; Prehoda et al., 1999) shows a conformational difference in ENAH: a loop composed of residues 80–86, which forms part of the extended PCARE-binding site, is shifted by 3 Å (Figure 4A). Structure gazing suggested that hydrophobic core residues Tyr63 in EVL (Cys62 in ENAH), and Trp89 and Leu15 in VASP (Tyr87 and Val15 in ENAH), are incompatible with this conformational change (Figure 4A). To test this, we made EVL EVH1 domain variants EVL Y62C and EVL V65P Y62C. EVL V65P, EVL Y62C, and EVL Y62C V65P EVH1 domains all ran identically as monomers on size-exclusion chromatography (Figure 4—figure supplement 1). The Y62C mutation alone had almost no measurable effect on the binding of EVL EVH1 domain to PCARE (Table 1), but the EVL Y62C V65P EVH1 domain double mutant bound to PCARE B with KD = 2.2 μM, which is 10-fold lower than the KD for wild-type EVL and a striking 56-fold lower than the KD for binding to EVL V65P (Table 1). This dramatic enhancement in affinity for the double mutant relative to either single mutant indicates strong coupling between positions 62 and 65, consistent with the rearrangement of a loop upon PCARE binding. However, these two mutations enhanced binding to EVL EVH1 domain by only 10-fold over wild type, whereas the difference in binding affinity between ENAH and EVL is 70-fold (Figure 1C). We concluded that a broader set of residues must contribute to stabilizing the ENAH-specific conformation, but it was not readily apparent which residues these might be.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig4-v1.jpg)
+
+**Figure 4.:** (A) Superposition of ENAH EVH1 domains bound to PCARE or FP4 peptide (PDB 1EVH). The black arrow highlights a 3 Å shift in a loop that forms part of the binding pocket. Insets show residues that differ between ENAH and VASP or EVL near this loop. (B) Lowest dTERMen energy obtained when swapping 0–6 residues from ENAH into EVL, when modeled on the structure of ENAH EVH1 bound to PCARE. * indicates the mutation was added based on manual inspection. (C) ENAH EVH1 domain bound to a peptide from PCARE, with residues that were swapped into the EVL EVH1 domain to rescue affinity marked as purple spheres. On the right are binding curves for WT EVL EVH1 domain and EVLswapped EVH1 domain binding to PCARE B. Error reported as the standard deviation of two replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** EVL mutants run on a Superdex 75 column using fast protein liquid chromatography.
+
 To identify the ENAH residues responsible for PCARE-binding specificity, we used the structure-based modeling method dTERMen (Zhou et al., 2020). dTERMen is a protocol for scoring the compatibility of a sequence with a backbone structure. Energies are computed based on the frequencies with which combinations of residues are found in tertiary motifs in known protein structures. As expected, when scoring different sequences on the structure of ENAH bound to PCARE, the EVL sequence scored considerably worse than the sequence of ENAH itself. Guided by the dTERMen score, we introduced increasing numbers of residues from ENAH into EVL, in an attempt to identify mutations sufficient to confer high affinity binding to PCARE. Seven replacements were sufficient to recapitulate dTERMen energies similar to that for ENAH in the PCARE828–848-bound conformation (Figure 4B). These residues are distributed across the EVH1 domain, and several are distant from the PCARE828—848-binding site (Figure 4C). We made a mutated EVL EVH1 domain with the seven corresponding residues from ENAH. This protein, EVLswapped, bound as tightly to PCARE B as did ENAH EVH1 (KD = 0.35 vs. 0.32 μM) (Figure 4C). Given that wild-type EVL and ENAH differ at 29 sites, and there are 1.56 million potential residue swaps of 7 residues, it is particularly notable that dTERMen quickly led us, in just a single attempt, to a combination of residues sufficient to transfer binding specificity.
 
-## Engineered binders engage ENAH EVH1 domain with increased affinity and specificity
+### Engineered binders engage ENAH EVH1 domain with increased affinity and specificity
 
 Based on our structure of PCARE bound to ENAH, we aimed to design even higher affinity, ENAH-selective peptides. To this end, we took a rational design approach. Our strategy relied on designing peptides that can simultaneously engage two binding sites on ENAH EVH1: the canonical FP4-binding site that is occupied by FP4 peptides such as ActA, ABI1, and PCARE (Prehoda et al., 1999; Fedorov et al., 1999; Barone et al., 2020; Hwang et al., 2021), and a noncanonical site previously identified in VASP EVH1 that we have shown is also important for certain ENAH–peptide complexes (Acevedo et al., 2017; Hwang et al., 2021, Figure 5A, B). Using a structural model based on PDB structure 5NC7, we estimated appropriate lengths for connecting linkers (Barone et al., 2020; Hwang et al., 2021). We then made and tested different combinations of binding motifs and linkers that we predicted could bridge these two sites.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig5-v1.jpg)
+
+**Figure 5.:** (A) Surface representation of ENAH EVH1 with binding sites discussed in this study indicated. (B) Design scheme for high-affinity binders ABI1-LPP and PCARE-Dual. (C) Biolayer interferometry (BLI)-binding and dissociation curves. Blue, orange, green, red, purple, and brown curves denote EVH1 concentrations in descending order. LPP: 80, 36, 16, 7.0, 3.1, and 1.4 μM. PCARE B and ABI1-LPP: 2.5, 1.3, 0.63, 0.31, 0.16, and 0.078 μM. PCARE-Dual: 0.50, 0.25, 0.0625, 0.031, 0.016, and 0.0078 μM. Values reported as kdiss ± SD for two independent BLI replicates. (D) BLI-binding curves for PCARE-Dual binding to the EVH1 domains of ENAH, VASP, or EVL. Errors for (B) and (D) are reported as the standard deviation of two replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70601/elife-70601-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Affinities determined by biolayer interferometry (BLI) as described in the methods and in Hwang et al., 2021. Errors reported are the standard deviation of two to three replicates.
 
 In one design, we fused the high-affinity PCARE B sequence, via a short GSGS linker, to a second FP4 motif designed to support bivalent binding while stabilizing the ENAH-specific conformation. Peptide PCARE-Dual bound ~ sevenfold tighter than PCARE B, with KD = 50 nM (Figure 5B, D). Consistent with the designed two-site binding, PCARE-Dual interacted ~ eightfold less tightly with a mutant of ENAH EVH1 domain that had a Y38E substitution in the noncanonical site (KD = 0.38 ± 0.01 μM; Figure 5—figure supplement 1). In a second design, we used a peptide from ABI1 in place of PCARE B and fused this to a peptide from the protein LPP. ABI1 is an Ena/VASP interaction partner that contains the sequence FP8. We have shown that proline residues C-terminal to the FP4 motif, as well as surrounding acidic residues, enhance affinity for the ENAH EVH1 domain (Hwang et al., 2021). In particular, the seventh proline of the ABI1 FP4 motif engages ENAH EVH1 at what we call the Pro7 site (green in Figure 5A, B). LPP is another ENAH-binding partner that we have shown engages the noncanonical EVH1-binding site. We fused a 17-residue segment of ABI1 to part of the LPP linker and a second FP4 motif to make ABI1-LPP (Figure 5B). Our rationale was that the ABI1-derived segment would occupy the canonical FP4-binding site and the LPP linker would wrap along the surface of the EVH1 domain and position a second FP4 motif near the noncanonical FP4 site. The ABI1–LPP fusion peptide bound with KD = 0.76 μM, which is threefold tighter than the ABI1 portion alone and fivefold tighter than the LPP portion alone, although weaker overall than PCARE-Dual.
 
@@ -108,50 +184,207 @@ The role of ENAH in cancer metastasis has motivated work to identify inhibitors 
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5a</td>
+      <td>NEB</td>
+      <td>Cat# 2987H</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Novagen</td>
+      <td>Cat# 71400</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF7</td>
+      <td>Joan Brugge, Harvard</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MVD7</td>
+      <td>Bear et al., 2000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ENAH (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# HPA028448</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Paxillin (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 612405</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse Alexa Fluor 488 (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse Alexa Fluor 647 (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit Alexa Fluor 405 (donkey polyclonal)</td>
+      <td>Abcam</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SureLight Allophycocyanin-anti-FLAG antibody (mouse monoclonal)</td>
+      <td>Perkin Elmer</td>
+      <td>Cat# AD0059F</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-actin (mouse monoclonal)</td>
+      <td>ProteinTech Group</td>
+      <td></td>
+      <td>(1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5174S</td>
+      <td>(1:000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EVL (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# HPA018849</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VASP (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3132S</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin, R-Phycoerythrin Conjugate (SAPE)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# S866</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 488-Phalloidin</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td>(1:40)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 647-Phalloidin</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td>(1:40)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLKO.1-Enah shRNA (plasmid)</td>
+      <td>GE Dharmacon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLKO.1-Evl shRNA (plasmid)</td>
+      <td>Sigma</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Protein sequences can be found in Supplementary file 1.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Monomeric ENAH, EVL, or VASP EVH1 domains for use in BLI and ITC experiments, and ENAH EVH1–peptide fusions for crystallography were cloned into a pMCSG7 vector (gift from Frank Gertler, MIT), which places a 6x-His and TEV cleavage tag N-terminal to the EVH1 domain. These constructs were transformed into Rosetta2(DE3) cells and grown in 2xYT media supplemented with 100 μg/ml ampicillin. Cells were grown while shaking at 37 °C to an O.D. 600 of 0.5–0.7 and then cooled on ice for at least 20 min. Cells were then induced with 0.5 mM IPTG and grown while shaking at 18 °C overnight. Induced cultures were resuspended in 25 ml of wash buffer (20 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES ) pH 7.6, 500 mM NaCl, 20 mM imidazole) and frozen at −80 °C overnight. The next day, cultures were sonicated, spun down, and applied to Ni-NTA agarose resin equilibrated with wash buffer, and washed as described above. Samples were eluted in 10 ml elution buffer (20 mM HEPES pH 7.6, 500 mM NaCl, 30 mM imidazole). TEV protease was added to the elution at a ratio of 1 mg TEV:50 mg tagged protein along with 1 mM dithiothreitol(DTT). This mixture was dialyzed against TEV cleavage buffer (50 mM HEPES pH 8.0, 300 mM NaCl, 5 mM DTT, 1 mM EDTA) at 4 °C overnight and then applied over Ni-NTA agarose resin equilibrated with wash buffer. The column was washed with 2 × 8 ml of wash buffer, and the resulting flow-through and washes were pooled, concentrated, and applied to an S75 26/60 column equilibrated in gel filtration buffer (20 mM HEPES pH 7.6, 150 mM NaCl, 1 mM DTT, 1 % glycerol). Purity was verified by sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS–PAGE) and combined fractions were concentrated and flash frozen at −80 °C.
 
-## Small-scale protein purification for Biolayer Interferometry
+### Small-scale protein purification for Biolayer Interferometry
 
 SUMO–peptide fusions were cloned into a pDW363 vector that appends a biotin acceptor peptide (BAP) sequence and 6x-His tag to the N-terminus of the protein and transformed into Rosetta2(DE3) cells (Novagen). Rosetta2(DE3) cells encoding SUMO–peptide fusions were grown in 20 ml of LB +100 μg/ml ampicillin + 0.05 mM D‐(+)‐biotin dissolved in DMSO for in vivo biotinylation. Cells were grown to an OD of 0.5–0.7 with 1 mM IPTG and induced for 4–6 hr at 37 °C. Pellets were spun down and frozen at −80 °C for at least 2 hr. Pellets were then thawed and resuspended in B-PER reagent (Thermo Fisher) at 4 ml/g of pellet with 0.2 mM PMSF. This suspension was shaken at 25 °C for 10–15 min and then spun down at 15,000 g for 10 min. The supernatant was applied to 250 μL of Ni‐NTA agarose resin equilibrated in 20 mM Tris pH 8.0, 500 mM NaCl, 20 mM imidazole (Buffer A), and then washed three times with 1 ml of this buffer. Peptides were eluted in 1.8 ml of 20 mM Tris pH 8.0, 500 mM NaCl, 300 mM imidazole to use in BLI assays.
 
-## Biolayer Interferometry
+### Biolayer Interferometry
 
 All BLI experiments were performed on an Octet Red96 instrument (ForteBio). Biotinylated, 6x-His-SUMO–peptide fusions purified in small scale were diluted into BLI buffer (phosphate-buffered saline [PBS] pH 7.4, 1 % Bovine Serum Albumin (BSA), 0.1 % Tween-20, 1 mM DTT) and immobilized onto streptavidin-coated tips (ForteBio) until loading reached a response level between 0.5 and 0.6 nm. The loaded tips were immersed in a solution of ENAH EVH1 domain at a relevant dilution series in BLI buffer at an orbital shake speed of 1000 rpm and data were collected until the binding signal plateaued. ENAH-bound tips were subsequently placed into BLI buffer for dissociation and data were collected until the binding signal plateaued. KD values were obtained through steady-state analysis. Briefly, the data were corrected for background by subtracting the signal obtained when doing the same experiment using biotinylated, 6x-His-SUMO lacking any peptide, instead of an immobilized ENAH-binding peptide. The association phases were then fit to a one-phase-binding model in Prism and the equilibrium steady-state-binding signal values from that fit were plotted against ENAH concentration and fit to a single-site-binding model in Prism to obtain dissociation constants. Errors are reported as the standard deviation of two replicates.
 
-## Crystallography
+### Crystallography
 
 Crystals of ENAH fused at the C-terminus to PCARE were grown in hanging drops containing 0.1 M Tris pH 8.0 and 3.30 M NaCl at 18 °C. 1.5 μl of ENAH-PCARE (769 μM in 20 mM HEPES, 150 mM NaCl, 1 mM DTT) was mixed with 0.5 μl of reservoir solution, and football-shaped crystals appeared in 2 days. Diffraction data were collected at the Advanced Photon Source at Argonne National Laboratory, NE-CAT beamline 24-IDE. The ENAH-PCARE data were integrated and scaled to 1.65 Å with XDS, and the structure was solved with molecular replacement using the ENAH EVH1 structure PDB 6RD2 as a search model (Barone et al., 2020). The structure was refined with iterative rounds of model rebuilding with PHENIX and COOT (Adams et al., 2010; Emsley et al., 2010). Supplementary file 2 reports refinement statistics. The structure is deposited in the PDB with the identifier 7LXF. Note that the PCARE828–848 peptide is numbered as 133–153 in the PDB file in accordance with the ENAH–PCARE fusion protein numbering.
 
-## Modeling using dTERMen
+### Modeling using dTERMen
 
 The dTERMen scoring function and protocol are described in Zhou et al., 2020. The method requires that a template-specific scoring function be computed, based on statistics derived from structures in the PDB. After that, the inputs to dTERMen are the backbone coordinates of a structure and a sequence. dTERMen returns a score for the input sequence adopting the input structure; lower scores correspond to lower energies. Side-chain positions are not modeled explicitly. To score the EVL sequence on the ENAH-PCARE backbone template, we generated pairwise alignments of the EVH1 domains of ENAH and EVL to determine how to map sequence to structure. The EVL EVH1 domain is longer than that of ENAH by one residue, so Lys27 was not included in modelingLys27 was also removed from the EVL V65P, EVL Y62C, and EVL V65P Y62C mutants, that were tested (Supplementary file 1).
 
 We then used dTERMen to score all possible combinations of residue swaps between EVL and ENAH, up to six possible positions. Residue swap combinations that led to the minimum energy score were recorded. The best six mutations were sufficient to nearly recapitulate the energy score of the native ENAH sequence on the ENAH-PCARE template. We also included an I26A mutation based on manual inspection of the ENAH-PCARE828–848 structure, which also lowered the dTERMen energy. We cloned, overexpressed, and purified this swapped EVL sequence, as described in Hwang et al., 2021, to test for binding to PCARE B.
 
-## Plasmids for cell culture
+### Plasmids for cell culture
 
 For experiments in mammalian cells, the following plasmids were used: pLKO.1-Enah shRNA (GE Dharmacon TRCN0000061827, Homo sapiens antisense 5′-TTAGAGGAGTCTCAACAGAGG-3′), pLKO.1-Evl shRNA (Sigma TRCN0000091075, Mus musculus antisense 5′- TTGTTCATTTCTTCCATGAGG-3′), and nontargeting pLKO.1 control (a gift from Felicia Goodrum, University of Arizona). GFP, and mouse cDNA sequences for GFP-tagged ENAH, VASP, and EVL (gifts from Frank Gertler, MIT) were subcloned into the pCIB lentiviral expression vector (Addgene plasmid #120862) as previously described (Puleo et al., 2019). ENAH EVH1 domain deletion mutant was generated using inverse PCR site-directed mutagenesis of full-length ENAH. All sequences of constructed plasmids were confirmed by Sanger sequencing. mRuby2-PCARE B and Mito-mRuby2-PCARE B inserts were synthesized (Twist Bioscience) and subcloned into a SFFV-promoter lentiviral expression vector.
 
-## Cell culture
+### Cell culture
 
 MCF7 and HEK293T cells were cultured in high-glucose Dulbecco’s modified Eagle’s medium (DMEM) base media with sodium pyruvate (Corning) supplemented with 10 % fetal bovine serum (FBS; Millipore), 2 mM L-glutamine (Corning), and 100 U/ml penicillin with 100 μg/ml streptomycin (Corning). MCF7 cells were confirmed mycoplasma negative and validated by STR testing through the Arizona Cancer Center EMSR core facility. MVD7 cells were cultured in high-glucose DMEM supplemented with 15 % FBS, 2 mM L-glutamine, 100 U/ml mouse interferon-γ (Millipore). MCF7 and HEK293T cells were maintained in a 37 °C humidified incubator under 5 % CO2. MVD7 cells were maintained in a 32 °C humidified incubator under 5 % CO2. For lentiviral production, second-generation lentiviral particles were generated by PEI transfection of 293T cells as previously described (Yang et al., 2017) with transfer plasmid, pMD2.G, and psPAX2 (Addgene #12259, #12260, gifts from Didier Trono). HEK293T media containing lentiviral particles was collected, filtered, and added directly to cultures with polybrene (Gibco). Puromycin (2 μg/ml final concentration; Thermo Fisher) and blasticidin (4 μg/ml final; Gibco) were used to select for cells stably expressing shRNA sequences or Ena/VASP constructs, respectively, after lentiviral transduction. For immunofluorescence experiments, MCF7 cells were cultured on fibronectin-coated coverslips (10 μg/ml; Corning). For live cell imaging (MVD7), cells were cultured in fibronectin-coated glass-bottom dishes (Mattek).
 
-## Reverse-transcription quantitative PCR
+### Reverse-transcription quantitative PCR
 
 To assess EVL knockdown in MVD7, total cellular RNA was isolated using the Isolate II RNA kit (Bioline) according to the manufacturer’s instructions. cDNA was synthesized from 1000 ng of input RNA using qScript cDNA Synthesis kit (Quantabio). Reverse-transcription quantitative PCR reactions were run in duplicate on an ABI 7500 Fast Real-Time PCR System (Applied Biosystems) with PowerTrack SYBR Green Master Mix (Thermo Fisher). Primer pairs were confirmed to have 85–110% efficiency based on the slope of the standard curve from a cDNA dilution series. CTs were normalized to the CT GAPDH housekeeping genes. Percent knockdown was determined using the comparative CT method. M. musculus GAPDH Fwd AGGTCGGTGTGAACGGATTTG, Rev GGGGTCGTTGATGGCAACA. EVL Fwd TGAGAGCCAAACGGAAGACC, Rev TTCTGGACAGCAACGAGGAC.
 
-## Western blotting
+### Western blotting
 
 Cells were lysed in buffer containing 140 mM NaCl, 10 mM Tris pH 8.0, 1 mM EDTA, 0.5 mM EGTA, 1 % Triton X-100, 0.1 % sodium deoxycholate, and 0.1 % SDS with protease and phosphatase inhibitors (Boston Bio Products). Samples were resolved by SDS–PAGE and transferred onto nitrocellulose membranes. Membranes were blocked in Odyssey Blocking Buffer (LI-COR) for 1 hr and incubated at 4 °C overnight with primary antibodies. Primary antibodies were used as follows: mouse Actin 1:2,500 (ProteinTech Group, 66009-1-Ig), mouse GAPDH 1:1000 (Cell Signaling Technology, 5174 S), rabbit ENAH 1:250 (Sigma, HPA028696), rabbit EVL 1:1000 (Sigma, HPA018849), rabbit VASP 1:1000 (Cell Signaling Technology, 3132 S). Membranes were incubated with secondary antibodies conjugated to either Alexa Fluor 680 or 790 (Thermo Fisher) for 1 hr. Immunoblots were scanned using Odyssey CLx imager (LI-COR).
 
-## Immunofluorescence
+### Immunofluorescence
 
 MCF7 cells were fixed and immunolabeled 8 hr after plating onto fibronectin (10 μg/ml; Corning) coated coverslips to assay focal adhesions. Cells were fixed with 4 % paraformaldehyde (PFA; Electron Microscopy Services) with 0.075 mg/ml saponin (Alfa Aesar, Sigma) diluted in PBS at 37 °C for 10 min. PFA was quenched with 100 mM glycine in PBS at room temperature for 10 min. Cells were then blocked in 1 % BSA plus 1 % FBS in PBS either overnight at 4 °C or for 1 hr at room temperature. The following immunofluorescence reagents and antibodies were used: mouse anti-Paxillin (1:200, clone: 349; BD Biosciences, 612405), rabbit anti-ENAH (1:100; HPA028448, Sigma), goat anti-mouse Alexa Fluor 488 and Alexa Fluor 647 (1:1000, Thermo Fisher), donkey anti-rabbit Alexa Fluor 405 (Abcam), and Alexa Fluor 488- and Alexa Fluor 647-Phalloidin (1:40, Thermo Fisher). Primary antibodies were diluted in block solution and incubated for 1.5 hr at room temperature. After washing, coverslips were incubated for 1 hr in secondary antibody solution with fluorescently labeled phalloidin. Coverslips were mounted using ProLong Gold Antifade (Invitrogen) and allowed to cure for at least 24 hr before imaging.
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 Cells were imaged on a Ti-E inverted microscope (Nikon), with a ×100 Apo TIRF 1.49 NA objective (Nikon) and an ORCA-Flash 4.0 V2 CMOS camera (Hamamatsu). For focal adhesion assessment, cells were imaged with total internal reflection fluorescence (TIRF) microscopy. To increase the depth of imaging for examination of mitochondrial localization, standard widefield fluorescence microscopy was used. Focal adhesion quantification was performed as previously described (Puleo et al., 2019). Briefly, a binary mask was generated for paxillin signal and actin signal, denoting focal adhesions and cell area, respectively. To facilitate semiautomated segmentation of focal adhesions, we generated a sharp, high contrast image of the paxillin and actin channels by the following processing steps: deconvolution using five iterations of the Richardson–Lucy algorithm, shading correction using rolling ball, and unsharp masked (NIS Elements). Focal adhesion area was quantified by measuring the paxillin area of each cell within the whole cell area, or by examining individual focal adhesions. Enrichment ratio was quantified by measuring the mean fluorescence intensity of mRuby2-PCARE B, Mito-mRuby2-PCARE B, or GFP-ENAH/EVL/VASP at regions of interest and normalizing to average cytosolic intensity. Each experimental condition was performed in triplicate and plotted together. Images presented in figures have been lightly processed in NIS Elements, including by applying 2 iterations of the Richardson–Lucy deconvolution algorithm and rolling ball shading correction to reduce background in live cell images.

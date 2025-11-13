@@ -11,15 +11,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03b94tp07 Department of Obstetrics and Gynaecology, Faculty of Medical and Health Sciences, University of Auckland Auckland New Zealand
-2. https://ror.org/03b94tp07 School of Biological Sciences, University of Auckland Auckland New Zealand
-3. https://ror.org/03b94tp07 Maurice Wilkins Centre, University of Auckland Auckland New Zealand
+1. Department of Obstetrics and Gynaecology, Faculty of Medical and Health Sciences, University of Auckland Auckland New Zealand ([ROR:03b94tp07](https://ror.org/03b94tp07))
+2. School of Biological Sciences, University of Auckland Auckland New Zealand ([ROR:03b94tp07](https://ror.org/03b94tp07))
+3. Maurice Wilkins Centre, University of Auckland Auckland New Zealand ([ROR:03b94tp07](https://ror.org/03b94tp07))
 
 † Corresponding author
 
 ## Abstract
 
-Single-cell technologies (RNA-sequencing, flow cytometry) are critical tools to reveal how cell heterogeneity impacts developmental pathways. The placenta is a fetal exchange organ, containing a heterogeneous mix of mesenchymal cells (fibroblasts, myofibroblasts, perivascular, and progenitor cells). Placental mesenchymal stromal cells (pMSC) are also routinely isolated, for therapeutic and research purposes. However, our understanding of the diverse phenotypes of placental mesenchymal lineages, and their relationships remain unclear. We designed a 23-colour flow cytometry panel to assess mesenchymal heterogeneity in first-trimester human placentae. Four distinct mesenchymal subsets were identified; CD73 + CD90 + mesenchymal cells, CD146 + CD271 + perivascular cells, podoplanin + CD36 + stromal cells, and CD26 + CD90 + myofibroblasts. CD73 + CD90 + and podoplanin + CD36+ cells expressed markers consistent with cultured pMSCs, and were explored further. Despite their distinct ex-vivo phenotype, in culture CD73 + CD90 + cells and podoplanin + CD36 + cells underwent phenotypic convergence, losing CD271 or CD36 expression respectively, and homogenously exhibiting a basic MSC phenotype (CD73 + CD90 + CD31 - CD144 - CD45 - ). However, some markers (CD26, CD146) were not impacted, or differentially impacted by culture in different populations. Comparisons of cultured phenotypes to pMSCs further suggested cultured pMSCs originate from podoplanin + CD36 + cells. This highlights the importance of detailed cell phenotyping to optimise therapeutic capacity, and ensure use of relevant cells in functional assays.
+Single-cell technologies (RNA-sequencing, flow cytometry) are critical tools to reveal how cell heterogeneity impacts developmental pathways. The placenta is a fetal exchange organ, containing a heterogeneous mix of mesenchymal cells (fibroblasts, myofibroblasts, perivascular, and progenitor cells). Placental mesenchymal stromal cells (pMSC) are also routinely isolated, for therapeutic and research purposes. However, our understanding of the diverse phenotypes of placental mesenchymal lineages, and their relationships remain unclear. We designed a 23-colour flow cytometry panel to assess mesenchymal heterogeneity in first-trimester human placentae. Four distinct mesenchymal subsets were identified; CD73+CD90+ mesenchymal cells, CD146+CD271+ perivascular cells, podoplanin+CD36+ stromal cells, and CD26+CD90+ myofibroblasts. CD73+CD90+ and podoplanin + CD36+ cells expressed markers consistent with cultured pMSCs, and were explored further. Despite their distinct ex-vivo phenotype, in culture CD73+CD90+ cells and podoplanin+CD36+ cells underwent phenotypic convergence, losing CD271 or CD36 expression respectively, and homogenously exhibiting a basic MSC phenotype (CD73+CD90+CD31-CD144-CD45-). However, some markers (CD26, CD146) were not impacted, or differentially impacted by culture in different populations. Comparisons of cultured phenotypes to pMSCs further suggested cultured pMSCs originate from podoplanin+CD36+ cells. This highlights the importance of detailed cell phenotyping to optimise therapeutic capacity, and ensure use of relevant cells in functional assays.
 
 ## Introduction
 
@@ -35,9 +35,158 @@ Here, we developed what to our knowledge is the largest multicolour spectral flo
 
 ## Results
 
-## Design of a 23-colour flow cytometry panel to characterise the placental villous core
+### Design of a 23-colour flow cytometry panel to characterise the placental villous core
 
 In order to investigate mesenchymal populations of the placental core a 23-colour flow cytometry panel (Panel One) was developed by starting from a 16-colour panel designed to investigate adipose-derived stromal vascular fraction on a conventional flow cytometer (BD FACS Aria II) (Brooks et al., 2020). The antigens included in this panel are based on the current literature surrounding the placenta, pMSCs, stromal/mesenchymal populations, endothelial progenitors and haematopoietic cells (Table 1).
+
+**Table 1.**
+ Antigens included in Panel One and their functional roles with respect to the villous core.Antigens are grouped by cell type (grey and white boxes).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Full name/s</th>
+      <th>Functional capacity/relevance</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ITGβ4/CD104</td>
+      <td>β4 integrin</td>
+      <td>Cell adhesion molecule that uniquely identifies cytotrophoblasts in the placenta.</td>
+      <td>James et al., 2015</td>
+    </tr>
+    <tr>
+      <td>CD45</td>
+      <td>Protein tyrosine phosphatase, receptor type, C. lymphocyte common antigen</td>
+      <td>Expressed on all nucleated haematopoietic cells.</td>
+      <td>Hermiston et al., 2003</td>
+    </tr>
+    <tr>
+      <td>HLA-DR</td>
+      <td>Human Leukocyte Antigen – DR isotype</td>
+      <td>Expressed by antigen presenting cells i.e. macrophages, MHC class II cell surface receptor, involved in antigen presentation and adaptive immunity,</td>
+      <td>Cruz-Tapias et al., 2013</td>
+    </tr>
+    <tr>
+      <td>CD235a/GPA</td>
+      <td>Glycophorin A</td>
+      <td>Red blood cell marker, identifies early emerging RBCs/erythroblasts from haemogenic endothelium</td>
+      <td>Garcia-Alegria et al., 2018; Mao et al., 2016</td>
+    </tr>
+    <tr>
+      <td>CD41</td>
+      <td>Integrin alpha-IIb</td>
+      <td>Platelet marker. Expressed by earliest emerging haematopoietic cells from haemogenic endothelium</td>
+      <td>Garcia-Alegria et al., 2018; Li et al., 2005</td>
+    </tr>
+    <tr>
+      <td>CD117/cKIT</td>
+      <td>Mast/stem cell growth factor receptor</td>
+      <td>Receptor expressed on haematopoietic stem cells and involved in their differentiation</td>
+      <td>Rönnstrand, 2004</td>
+    </tr>
+    <tr>
+      <td>CD144 /VE-cadherin</td>
+      <td>Vascular endothelial cadherin</td>
+      <td>Endothelial cell-cell adherens junctional marker, stabilises vessels, inhibits vascular growth, regulates vascular permeability.</td>
+      <td>Giannotta et al., 2013</td>
+    </tr>
+    <tr>
+      <td>CD34</td>
+      <td>Haematopoietic Progenitor Cell Antigen</td>
+      <td>Expressed by haematopoietic and vascular progenitors and adipose-derived MSCs. Transmembrane phosphoglycoprotein, thought to identify early placental progenitors</td>
+      <td>Brooks et al., 2020; Sidney et al., 2014; Yoder, 2009</td>
+    </tr>
+    <tr>
+      <td>CD31/PECAM1</td>
+      <td>Platelet endothelial cell adhesion molecule</td>
+      <td>Expressed by endothelial cells, platelets, macrophages and Kupffer cells, granulocytes, lymphocytes, megakaryocytes. Adhesion molecule found at endothelial intercellular junctions.</td>
+      <td>Marelli-Berg et al., 2013</td>
+    </tr>
+    <tr>
+      <td>VEGFR2/KDR</td>
+      <td>Vascular Endothelial Growth Factor Receptor 2/Kinase Insert Domain Receptor</td>
+      <td>Expressed by endothelial cells and thought to identify placental core progenitors. Receptor for angiogenic VEGF, involved in vasculogenesis and angiogenesis.</td>
+      <td>Demir et al., 2007</td>
+    </tr>
+    <tr>
+      <td>CD54/ICAM1</td>
+      <td>Intercellular Adhesion Molecule 1</td>
+      <td>Expressed at low levels on endothelial cells, monocytes and lymphocytes. Increased expression in response to inflammatory cytokines.</td>
+      <td>Hubbard and Rothlein, 2000</td>
+    </tr>
+    <tr>
+      <td>CD36/FAT</td>
+      <td>Platelet glycoprotein 4/fatty acid translocase</td>
+      <td>Expressed by microvascular endothelial cells, and fibroblasts. Has an anti-angiogenic effect via binding Thrombospondin 1. Involved in fatty acid uptake.</td>
+      <td>Dye et al., 2001; Heinzelmann et al., 2018; Silverstein and Febbraio, 2009</td>
+    </tr>
+    <tr>
+      <td>CD90 /Thy-1</td>
+      <td>Thymocyte differentiation antigen 1</td>
+      <td>Expressed by MSCs, haematopoietic stem cells, fibroblasts, myofibroblasts.</td>
+      <td>Viswanathan et al., 2019</td>
+    </tr>
+    <tr>
+      <td>CD73 /NT5E</td>
+      <td>Ecto-5′-nucleotidase</td>
+      <td>Expressed by MSCs and endothelial cells. Works with CD39 to convert extracellular ATP to adenosine to create immunosuppressive effect.</td>
+      <td>Roh et al., 2020; Viswanathan et al., 2019</td>
+    </tr>
+    <tr>
+      <td>CD39 /NTPDase</td>
+      <td>Ectonucleoside triphosphate diphosphohydrolase-1</td>
+      <td>Upregulated by MSCs to suppress lymphocyte activation. Immunosuppressive actions via the conversion of extracellular ATP (inflammatory) into adenosine (anti-inflammatory)</td>
+      <td>Saldanha-Araujo et al., 2011; Zhao et al., 2017</td>
+    </tr>
+    <tr>
+      <td>CD55/DAF</td>
+      <td>Decay-accelerating factor</td>
+      <td>Expressed by MSCs. Complement regulatory protein, inhibits C3 convertases thereby creating a threshold for complement activation, increased expression correlated with evasion of innate immune system</td>
+      <td>Ruiz-Argüelles and Llorente, 2007; Soland et al., 2013</td>
+    </tr>
+    <tr>
+      <td>CD271 /NGFR / p75NTR</td>
+      <td>Low-affinity Nerve Growth Factor Receptor</td>
+      <td>Used in MSC and pericyte identification. Hypothesised to identify “stem-cell” or progenitor populations with superior differentiation and colony forming capacity.</td>
+      <td>Barilani et al., 2018; Kumar et al., 2017</td>
+    </tr>
+    <tr>
+      <td>CD146/MCAM</td>
+      <td>Melanoma cell adhesion molecule</td>
+      <td>Adhesion molecule expressed by pericytes, endothelial cells and smooth muscle cells. Involved in the regulation of angiogenesis and vessel permeability.</td>
+      <td>Crisan et al., 2009; Leroyer et al., 2019</td>
+    </tr>
+    <tr>
+      <td>CD248</td>
+      <td>Endosialin/ tumor endothelial marker 1</td>
+      <td>Pericyte and stromal cell marker. Involved in cell–cell adhesion, and host defence.</td>
+      <td>Lax et al., 2010; Tomkowicz et al., 2010</td>
+    </tr>
+    <tr>
+      <td>CD142/TF</td>
+      <td>Tissue Factor/ thromboplastin</td>
+      <td>Expression correlated with pericytes, smooth muscle and fibroblasts. Activates blood clotting after injury, located outside the vasculature,</td>
+      <td>Abe et al., 1999; Morrissey, 2004</td>
+    </tr>
+    <tr>
+      <td>CD26/DDP4</td>
+      <td>Dipeptidyl peptidase-4, adenosine deaminase complexing protein 2</td>
+      <td>Expressed by many tissues; T-cells, epithelial cells, ESCs, progenitor cells, placental myofibroblasts. Serine protease that cleaves a range of chemokines. Downregulation is correlated with increased stromal/myofibroblast proliferation.</td>
+      <td>Kohnen et al., 1996; Mezawa et al., 2019; Ou et al., 2013</td>
+    </tr>
+    <tr>
+      <td>PDPN</td>
+      <td>Podoplanin</td>
+      <td>Lymphatic vascular marker. Expression is correlated with increased fibroblast migration. Binds to CLEC-2 receptor on platelets.</td>
+      <td>Astarita et al., 2012; Suchanski et al., 2017</td>
+    </tr>
+  </tbody>
+</table>
 
 Placental explants were dissected from the villous tissue and enzymatically digested to obtain a single cell suspension for flow cytometry (Figure 6). To enable us to focus on the mesenchymal core cells of interest, we needed to exclude trophoblasts (epithelial cells found in a bilayer on the outer edge of placental villi), endothelial cells, and hematopoietic cells. Whilst the initial enzymatic digestion removed the outer syncytiotrophoblast layer, inclusion of the cytotrophoblast maker β4 integrin in Panel One ensured any potential contaminating cytotrophoblasts directly beneath this were also excluded from analysis (Table 1, Figure 1B and C). Endothelial cells were identified by expression of CD31 and CD144, specific expression of which is seen in blood vessels and early endothelial cell cords in first trimester placental villi (Figure 1E). The hematopoietic marker CD45 was used to exclude all cells of this lineage, while CD235a was used to identify and exclude red blood cells (Table 1). All remaining cells were considered to constitute the stromal fraction that makes up the mesenchymal core of the villi.
 
@@ -45,7 +194,7 @@ Placental explants were dissected from the villous tissue and enzymatically dige
 
 **Figure 1.:** (A) Placental villous morphology and plane of section, (B) haematoxylin and eosin staining of a thin section though a placental villus (7.1 weeks), localisation of (C) β4 integrin (red) to cytotrophoblasts and (E) CD144 (red) and CD31 (green) to blood vessels (white arrows) in placental villus sections confirmed antibody specificity. No fluorescence is seen in negative IgG controls (D, F) run simultaneously. Nuclei are counterstained with DAPI (blue). Scale bar = 100 µm. Rendered images in (A) have been acquired from Biorender.com.
 
-## Full spectrum flow cytometry uncovers heterogeneous mesenchymal populations in the core of first trimester placental villi
+### Full spectrum flow cytometry uncovers heterogeneous mesenchymal populations in the core of first trimester placental villi
 
 First trimester placental villous explants were enzymatically digested to obtain a single-cell suspension that was stained with a master mix for Panel One and analysed on a Cytek Aurora. Due to the complexity of data obtained from a 23 colour panel, unbiased high-dimensional clustering of the data was undertaken using viSNE (Cytobank). viSNE enables visualization of high-dimensional single-cell data and is based on the t-Distributed Stochastic Neighbour Embedding (t-SNE) algorithm (Amir et al., 2013). To run the algorithm, debris, doublets, dead cells, β4 integrin +cytotrophoblasts and CD45+/CD235a hematopoietic cells were excluded by manual gating, then an equal number of cells from each villous core digest was selected using down-sampling (n=5) (Figure 2). Combining viSNE with known population marker expression, five distinct subsets were uncovered (Figure 2). Endothelial cells co-expressed CD31 and CD34 (Subset One) and made up 3.9% ± 2.5% of villous core cells (Figure 3C and D). CD73+CD90+ mesenchymal cells (Subset Two) made up 6.8% ± 9.7% of villous core cells on average, but decreased in abundance with increasing gestational age within the first trimester (Figure 2C). This gestational difference was confirmed by the inclusion of data from 22 additional first trimester villous core digests, analysed using a smaller panel targeted at cell sorting but containing the markers required to identify this population (Figure 2D). Together this data showed that at <10 weeks of gestation CD73+CD90+ cells constituted 14.02+8.84% of villous core cells, but significantly decreased to 0.77+0.83% of villous core cells at ≥10 weeks of gestation (P<0.001, n=27, placentae = 7–13.1 weeks of gestation) (Figure 3C). Perivascular cells (Subset Three) were identified by their expression of CD146+CD271+, and constituted 10.3% ± 4.7% of villous core cells (Figure 3C). Subset Four made up the largest proportion of mesenchymal cells in the core (47.8+17.0%) and were identified by co-expression of podoplanin+CD36+ (Figure 3C). The remaining cells, expressing only the myofibroblast-associated markers CD26+CD90+, were classified as Subset Five and constituted 31.3% ± 12.6% of villous core cells. Subset Five were negative for all other markers investigated, suggesting they are more differentiated myofibroblast-like cells (Figure 3C).
 
@@ -57,7 +206,7 @@ First trimester placental villous explants were enzymatically digested to obtain
 
 **Figure 3.:** (A) The gating strategy used to identify subsets (CD31+CD34+, CD73+CD90+, perivascular cells, podoplanin+CD36+ and CD26+CD90+), and (B) heat maps comparing the expression of specific antigens between subsets (n=5).
 
-## Mesenchymal subsets have distinct phenotypes indicating functionally diverse roles in the villus core
+### Mesenchymal subsets have distinct phenotypes indicating functionally diverse roles in the villus core
 
 In order to consider what the different subsets functionally represent within the core of placental villi, we further interrogated their phenotype and proportional contribution to the villus core, with consideration to which subset phenotypes pMSCs may originate from. CD73+CD90+ cells (Subset Two) were the only villous population to co-express CD90 and CD73, both MSC-associated markers. This subset also expressed podoplanin (correlated with increased migratory capacity), low levels of CD142 (involved in blood coagulation [Morrissey, 2004]), and had heterogeneous expression of CD146 and CD271 (perivascular associated markers) (Figure 3B). A lack of CD26 (associated with myofibroblasts and cell proliferation) made this population distinct from the other perivascular and mesenchymal cell populations identified in the villous core using Panel One.
 
@@ -65,9 +214,17 @@ Perivascular cells (Subset Three), identified by expression of CD271 or CD146, d
 
 Subset Four was identified by expression of podoplanin and CD36, and co-expressed CD26, CD90, and CD142, but was negative for the MSC-associated marker CD73 (Figure 3B). As the largest population within the villous core and expressing proliferative/migratory associated markers (CD26, podoplanin [Suchanski et al., 2017]) this subset was considered the most likely in vivo candidate to contribute to pMSCs that are derived in explant derived cultures.
 
-## Phenotypically divergent mesenchymal stromal cell populations converge after in vitro culture
+### Phenotypically divergent mesenchymal stromal cell populations converge after in vitro culture
 
 In order to investigate the origins of in vitro cultured pMSCs in relation to the subsets identified with Panel One we used fluorescence activated cell sorting (FACS) to isolate subsets of interest from first trimester villous digests and assessed their phenotype in relation to cultured pMSCs obtained using an explant outgrowth method. Here we focussed on two ex vivo cell populations; CD73+CD90+ cells (Subset Two) as the only population to phenotypically align with the ISCT marker criteria for MSCs (Dominici et al., 2006), and podoplanin+CD36+ cells (Subset Four), which expressed markers of proliferative/migratory cells (characteristics associated with pMSCs). Following sorting, cells were cultured for 7 days in EGM-2 previously demonstrated to sustain fetal-derived pMSCs (Boss et al., 2020; Figure 4). In culture, both populations underwent phenotypic convergence, forming cells with a mesenchymal-like morphology, that were CD90+CD73+CD142+CD271-CD36- at day 7 of culture (Figure 4B and C and Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/76622/elife-76622-fig4-v2.jpg)
+
+**Figure 4.:** (A) FACS sorting was used to isolate CD73+CD90+ and podoplanin+CD36+ cells from placental villous core cells (n=3). (B) Morphology and phenotype of CD73+CD90+ cells after 7 days in culture. (C) Phenotype of podoplanin+CD36+ cells after 7 days in culture. (D) CD146 and CD142 expression on CD73+CD90+ analysed with Panel One (day 0, n=5) or at 7 days after culture (n=3). (E) CD146 and CD142 expression on podoplanin+CD36+ cells analysed with Panel One (day 0, n=5) or at 7 days after culture (n=3). (F) Isolation of explant-derived pMSCs, and morphology and phenotype of passaged pMSCs (n=3). Error bars = standard error of the mean and scale bar = 100 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76622/elife-76622-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/76622/elife-76622-fig4-figsupp2-v2.jpg)
 
 Despite this overall convergence, differences between the two populations did remain. The proliferation/myofibroblast associated marker CD26 was only expressed by a small proportion of CD73+CD90+ cells at the time of isolation and although the percentage of CD26+ cells increased over time in culture, most cells remained negative suggesting this marker was not upregulated with the culture conditions used here. Conversely, all podoplanin+CD36+ cells were CD26+ at isolation and remained CD26+ after culture. Although CD146, was used to identify perivascular cells in the placenta (Castrechini et al., 2010), was not assessed on cells during isolation (this marker was not contained in Panel Two), phenotyping experiments with Panel One demonstrated that a subpopulation of CD73+CD90+ cells expressed CD146 (5.89+5.82%) and therefore, could be perivascular. Whereas, podoplanin+CD36+ cells were negative for CD146. After 7 days culture this CD146+ subpopulation was still present in CD73+CD90+ cells (15.55+6.87%). However, all podoplanin+CD36+ cells expressed CD146 after seven days in culture, demonstrating differential response of these subsets to the in vitro culture conditions (Figure 4D and E, and Figure 4—figure supplements 1 and 2).
 
@@ -77,7 +234,7 @@ In previous work we have demonstrated that pMSCs upregulate the contractile mark
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/76622/elife-76622-fig5-v2.jpg)
 
-**Figure 5.:** +CD90+ and podoplanin+CD36+ cells upregulate markers consistent with contractile cells.(A) FACS sorting was used to isolate CD73+CD90+ and podoplanin+CD36+ cells from placental villous core digests (n=3). CD73+CD90+ (B) and podoplanin+CD36+ (I) cell expression of αSMA (C, F, J, M), calponin (D, G, K, H) or MYH-11 (E, H, L, O) following 7 days of culture in advanced-DMEM/F12 or EGM-2. Irrelevant mouse IgG (P) and rabbit IgG (Q) were used as negative controls. Decidual sections containing spiral arteries with intact smooth muscle layers were used as positive controls for staining (R–T). Scale bar = 100 µm.
+**Figure 5.:** (A) FACS sorting was used to isolate CD73+CD90+ and podoplanin+CD36+ cells from placental villous core digests (n=3). CD73+CD90+ (B) and podoplanin+CD36+ (I) cell expression of αSMA (C, F, J, M), calponin (D, G, K, H) or MYH-11 (E, H, L, O) following 7 days of culture in advanced-DMEM/F12 or EGM-2. Irrelevant mouse IgG (P) and rabbit IgG (Q) were used as negative controls. Decidual sections containing spiral arteries with intact smooth muscle layers were used as positive controls for staining (R–T). Scale bar = 100 µm.
 
 ## Discussion
 
@@ -101,11 +258,50 @@ In conclusion, this work has demonstrated how simplistic post-culture MSC phenot
 
 ## Materials and methods
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 All placentae used in this work were collected following informed consent with approval from the Northern X Health and Disability Ethics Committee (NTX/12/06/057/AM09). First trimester placental villous tissue (7–10 weeks of gestation) was snap-frozen in OCT compound (VWR) and 5 µm cryosections of tissue were cut and fixed in ice-cold acetone for 5 minutes. Sections were blocked with Fc Blocking Reagent (Miltenyi Biotech) for 30 minutes, then incubated with primary antibodies for 1 hour (Table 2). β4 integrin and CD31 were visualised by their directly conjugated fluorophores (Table 2). CD144-BV421 was visualised by the addition of Biotin-SP AffiniPure Goat Anti-Mouse IgG (1 µg/mL) (Jackson Lab, JI115065166) for 1 hr, washing in PBS-tween, and then the addition of Streptavidin Alexa Fluor 594 (0.5µg/mL, Invitrogen) for 30 minutes. Nuclei were visualised by counterstaining with DAPI (2 µg/ml) for 5 minutes. Sections were mounted using Citifluor AF1 (Agar Scientific), and imaged on an inverted Zeiss Axioplan 2 fluorescent microscope (Zeiss).
 
-## Isolation of placental villous core cells for ex vivo phenotyping
+**Table 2.**
+ Primary conjugated antibodies used to confirm specificity of cytotrophoblast or endothelial markers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Fluorophore</th>
+      <th>Clone</th>
+      <th>Dilution</th>
+      <th>Supplier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>β4 integrin</td>
+      <td>FITC/APC</td>
+      <td>450-9D</td>
+      <td>1:200</td>
+      <td>Thermofisher</td>
+    </tr>
+    <tr>
+      <td>CD144</td>
+      <td>BV421</td>
+      <td>55–7 H1</td>
+      <td>1:200</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD31</td>
+      <td>BV480</td>
+      <td>WM59</td>
+      <td>1:200</td>
+      <td>BD</td>
+    </tr>
+  </tbody>
+</table>
+
+### Isolation of placental villous core cells for ex vivo phenotyping
 
 In order to assess placental villous core cells we modified the protocol developed by Pelekanos et al., 2016; Figure 6. In brief, villous tissue was carefully dissected away from the fetal membranes and washed thoroughly in PBS to remove maternal blood and debris. Placental explants (~1 cm2) were denuded of trophoblasts (the epithelial cells that are present around the outside of placental villi) by digestion in 10 mL/1 g tissue of Enzyme Digest Solution (1 mg/mL Dispase II, 0.5 mg/mL Collagenase A and 1.5 mg/mL DNAse l (Sigma-Aldrich, USA)) in advanced-DMEM/F12 (Thermofisher) for ten minutes at 37 °C as previously described (Boss et al., 2020). Explants were then washed repeatedly (at least 10 times) in PBS, until cellular material is no longer released. Washed explants were then placed in a 90 mm Falcon petri dish (Corning, US) and finely macerated with two sterile disposable scalpels (Swann Morton No.20, England). The tissue was transferred to a 50 mL Falcon tube (Corning, China) with 10 mL of Enzyme Digest Solution. The Falcon tube was briefly vortexed and then placed onto a rocker at room temperature overnight. The next morning the Falcon tube containing the digested villous tissue and enzyme solution was diluted with 40 mL PBS and filtered through a 70 µm filter. The filtrate containing villous core cells was centrifuged at 220xg for five minutes, and the supernatant was removed. 10 mL of 1 x RBC Lysis Buffer (Biolegend, USA) was incubated with the cell suspension for ten minutes to remove unwanted RBCs. Remaining cells were centrifuged at 220xg for five minutes and supernatant removed prior to flow cytometry.
 
@@ -117,30 +313,436 @@ Large amounts of syncytiotrophoblast fragments are released during the washing s
 
 **Figure 7.:** (A) Villous core cells and, (B) cells from the first digest washing steps known to contain extravillous trophoblasts were used as a positive control.
 
-## Multicolour panel design and optimisation
+### Multicolour panel design and optimisation
 
 Panel One was designed for analysis on a three laser Cytek Aurora and aimed to characterise mesenchymal lineages but with specific design considerations for first trimester placental villous core cells (Table 3). First, antigens specific for cytotrophoblasts (an epithelial cell that is present around the outside of placental villi, identified by β4 integrin) or haematopoietic cells (CD235a, CD45) were incorporated to allow their exclusion from analysis. Then endothelial, mesenchymal, myofibroblast, and progenitor antigens were selected based on reported literature in the placental and mesenchymal fields, or included in an exploratory role based on reported antigen expression in other tissues or stem cell models (Table 1 and Table 3).
+
+**Table 3.**
+ Panel One designed to assess villous core cells on a 3 L Cytek Aurora.Table 3—source data 1.All antibodies used in Panel One were titrated on placental villous core digest cells.Table 3—source data 2.Titration of additional antibodies, not contained in Panel One, required for the FACS sorting with Panel Two.Table 3—source data 3.Representative images depicting how forward scatter (FSC) (A) or addition of cell-specific antibodies improved detection of appropriate doses for specific placental populations.(B) β4 integrin+ cells were negative for podoplanin but demonstrated an unspecific shift in expression at higher doses. (C) Removal of β4 integrin+ improved detection of the optimal podoplanin dose.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Fluorophore</th>
+      <th>Clone</th>
+      <th>Flow cytometry Dose (μL)</th>
+      <th>Reference control</th>
+      <th>Supplier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD55</td>
+      <td>BB515</td>
+      <td>IA10</td>
+      <td>0.6</td>
+      <td>Villous core cells</td>
+      <td>Beckman Coulter</td>
+    </tr>
+    <tr>
+      <td>β4 integrin</td>
+      <td>FITC</td>
+      <td>450-9D</td>
+      <td>0.6</td>
+      <td>Villous core cells</td>
+      <td>Thermofisher</td>
+    </tr>
+    <tr>
+      <td>CD34</td>
+      <td>PerCP</td>
+      <td>581</td>
+      <td>0.3</td>
+      <td>Villous core cells</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD36</td>
+      <td>PerCpVio700</td>
+      <td>REA760</td>
+      <td>0.6</td>
+      <td>Villous core cells</td>
+      <td>Miltenyi Biotec</td>
+    </tr>
+    <tr>
+      <td>VEGFR2</td>
+      <td>PE</td>
+      <td>7D4-6</td>
+      <td>0.6</td>
+      <td>Villous core cells</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD271</td>
+      <td>PE-CF594</td>
+      <td>C40-1457</td>
+      <td>0.6</td>
+      <td>Stromal vascular fraction</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD142</td>
+      <td>BB700</td>
+      <td>HTF-1</td>
+      <td>1.25</td>
+      <td>Villous core cells</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD26</td>
+      <td>PE/Cy5</td>
+      <td>BA5b</td>
+      <td>0.15</td>
+      <td>Villous core cells</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>PDPN</td>
+      <td>PE/Cy7</td>
+      <td>NC-08</td>
+      <td>0.3</td>
+      <td>Villous core cells</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD248</td>
+      <td>Alexa Fluor 647</td>
+      <td>B1/35</td>
+      <td>0.6</td>
+      <td>Stromal vascular fraction</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD41</td>
+      <td>APC</td>
+      <td>HIP8</td>
+      <td>0.3</td>
+      <td>Beads</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD90</td>
+      <td>Alexa700</td>
+      <td>5E10</td>
+      <td>0.6</td>
+      <td>Villous core cells</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD39</td>
+      <td>BUV737</td>
+      <td>TU66</td>
+      <td>1.25</td>
+      <td>Beads</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>ICAM1</td>
+      <td>APC/Fire750</td>
+      <td>HA58</td>
+      <td>2.5</td>
+      <td>Stromal vascular fraction</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD144</td>
+      <td>BV421</td>
+      <td>55–7 H1</td>
+      <td>1.25</td>
+      <td>Villous core cells</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD235a</td>
+      <td>Pacific Blue</td>
+      <td>H1264</td>
+      <td>0.3</td>
+      <td>Villous core cells</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD31</td>
+      <td>BV480</td>
+      <td>WM59</td>
+      <td>0.3</td>
+      <td>Villous core cells</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD45</td>
+      <td>Krome-Orange</td>
+      <td>B61840</td>
+      <td>0.3</td>
+      <td>Villous core cells</td>
+      <td>Beckman Coulter</td>
+    </tr>
+    <tr>
+      <td>CD146</td>
+      <td>BV605</td>
+      <td>PIH12</td>
+      <td>0.3</td>
+      <td>Villous core cells</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD117</td>
+      <td>BV650</td>
+      <td>104D2</td>
+      <td>0.3</td>
+      <td>Beads</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>HLADR</td>
+      <td>BV750</td>
+      <td>L243</td>
+      <td>0.3</td>
+      <td>Villous core cells</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD73</td>
+      <td>BV785</td>
+      <td>AD2</td>
+      <td>0.3</td>
+      <td>Villous core cells</td>
+      <td>BD</td>
+    </tr>
+  </tbody>
+</table>
 
 The online Cytek Full Spectrum Viewer was used to identify fluorophores with distinct signatures that could be included in each panel. The panel was designed to spectrally spread out antigens with high density expression in order to prevent spectral overlap or interference. Where possible the brightest fluorophores were combined with the weakest antigens or where antigen was of special interest (ie PE) (Ferrer-Font et al., 2020). Conversely, where the targets of the antigen were highly expressed dim fluorophores were selected (ie CD34 PerCP).
 
 Each antibody was titrated on first trimester placental villous core cells (Table 3—source data 1 and Table 3—source data 2). For some antibodies the optimal dose was difficult to detect due to the different autofluorescence and size of cells. Therefore, forward scatter was often employed to look at different sized cells, or CD45/β4 integrin were used to exclude hematopoietic and cytotrophoblast cells that interfered with detection of optimal antibody concentration in cell populations of interest (Table 3—source data 3). Where required the specificity of the antibody was confirmed using immunofluorescence (Figure 1). Biological controls included stromal vascular fraction and peripheral blood mononuclear cells, as have been previously characterised (Boss et al., 2020).
 
-## Spectral flow cytometry
+### Spectral flow cytometry
 
 Freshly isolated cells were blocked with 5 μL of Human TruStain FcX (Biolegend, USA) and 5 μL of True-Stain Monocyte Blocker (Biolegend, USA) on ice for 30 minutes. An antibody master mix containing antibodies listed in Table 3 was prepared in 5 μl of Brilliant Stain Buffer (Biosciences, US) in order to block BD Horizon Brilliant fluorescent polymer dyes from interacting with each other. The master mix was added to the cells in blocking solution to make a final volume of 50 μl and incubated on ice for 30 minutes in the dark. Stained cells were washed with 1 mL of ice cold FACS buffer (PBS, 2 mM EDTA (Thermofisher, US) and 1% FBS (Thermofisher, NZ)) and centrifuged at 220xg for five minutes at 4 °C. The supernatant was decanted and the wash was repeated. Cells were then resuspended in 100 μl of FACS buffer and kept at 4 °C. DAPI (1:5000, Akoya Biosciences) was spiked into FACS tubes directly prior to analysis on a Cytek Aurora in order to detect live/dead cells. Spectral data was processed using the Cytek SpectroFlo Software Package.
 
 Fluorescence minus one (FMO) experiments were performed to accurately gate cell populations and to assess fluorophore spreading error where required. This was completed by creating a master mix containing all the antibodies in the panel minus the antibody of interest. The FMO was then compared to the full panel stain to identify whether the expression detected by that antibody is only present in the full stain, and therefore represents true positive expression. FCS files relating to the characterisation of primary cells can be found on FlowRepository ID FR-FCM-Z4TJ.
 
-## Data analysis
+### Data analysis
 
 Spectrally unmixed FCS files were exported from SpectroFlo and either manually analysed using 2 dimensional dot plots with FCS Express (v7) or uploaded onto Cytobank, a platform enabling datasets to be analysed by algorithms designed to assess high dimensional flow cytometry datasets https://cytobank.org/ (Kotecha et al., 2010). In Cytobank, debris, doublets, and dead cells were excluded by manual gating then equal sampling (200,000 villous cells from each placentae were selected, n=5). ViSNE enables visualisation of high dimensional data in two dimensions, each cell is displayed as a point on a scatter-like plot where cells with similar antigen expression will group closely and dissimilar cells will be further apart.
 
 For further analysis of subsets of core populations, cytotrophoblasts (identified by their expression of β4 integrin) and hematopoietic cells (identified by their expression of CD45 or CD235a) were excluded by gating. Villus core subsets were then interrogated using expression heatmaps (Cytobank) and flow cytometry plots (FCS Express7). The gating strategy employed to identify populations is displayed in Figure 3.
 
-## FACS sorting and in vitro culture of mesenchymal populations
+### FACS sorting and in vitro culture of mesenchymal populations
 
 In order to determine in vitro characteristics of Subset Two (CD73+CD90+) and Subset Four (podoplanin+CD36+) these populations were isolated using FACS for in vitro culture. To do this, placental villous core cells were isolated and stained with Panel Two master mix (Table 4) using the same methods as above. Cells were resuspended in 500 µL of Sort Buffer (10% FBS, 2 mM EDTA in PBS) and incubated on ice until immediately prior to sorting. Subset Two (CD73+CD90+) and Subset Four (podoplanin+CD36+) were sorted into 5 mL FACS tubes containing endothelial basal media (EGM-2 medium without supplements added, Lonza, USA) supplemented with 10% FBS at 4 °C degrees. To sort cells of interest, the gating strategy displayed in Figure 3 was used to exclude debris, doublets, dead cells, trophoblasts, and endothelial cells, before gating the populations of interest. For each population 3000 cells/cm2 were seeded onto 24-well plates in EGM-2. After 7 days, the in vitro phenotype of cells was determined using Panel Three (Table 5). In brief, TryPLE express was used to detach cells from flasks. Cells were blocked and then stained with a master mix for Panel Three (Table 5) as described above. Placental MSCs were isolated in EGM-2 using an explant method as described in our previous work (Boss et al., 2020) were assessed in parallel by flow cytometry. FCS files relating to the cultured experiments can be found on FlowRepository ID FR-FCM-Z4TL.
 
-## Immunocytochemistry
+**Table 4.**
+ Composition of Panel Two.This panel was developed to sort CD73 + CD90 + and podoplanin + CD36 + cells from placental villous core using a BD FACS Aria II.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Fluorophore</th>
+      <th>Clone</th>
+      <th>Dose (μL)</th>
+      <th>Supplier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD45</td>
+      <td>FITC</td>
+      <td>HI30</td>
+      <td>0.3</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>PDPN</td>
+      <td>PE</td>
+      <td>NC-08</td>
+      <td>0.3</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD26</td>
+      <td>PE/Cy7</td>
+      <td>BA5b</td>
+      <td>0.6</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD271</td>
+      <td>PE/Dazzle 594</td>
+      <td>C40-1457</td>
+      <td>0.6</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD144</td>
+      <td>PerCP-5.5</td>
+      <td>55–7 H1</td>
+      <td>0.6</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD90</td>
+      <td>Alexa700</td>
+      <td>5E10</td>
+      <td>0.6</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD36</td>
+      <td>APC-Cy7</td>
+      <td>5–271</td>
+      <td>0.6</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>β4 integrin</td>
+      <td>APC</td>
+      <td>450-9D</td>
+      <td>0.6</td>
+      <td>Thermofisher</td>
+    </tr>
+    <tr>
+      <td>CD31</td>
+      <td>BV480</td>
+      <td>WM59</td>
+      <td>0.3</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD73</td>
+      <td>BV785</td>
+      <td>AD2</td>
+      <td>0.3</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD34</td>
+      <td>BUV395</td>
+      <td>581</td>
+      <td>1.25</td>
+      <td>BD</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Composition of Panel Three.This panel was designed to assess the phenotype of placental populations after culture in vitro using a three laser Cytek Aurora.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Fluorophore</th>
+      <th>Clone</th>
+      <th>Dose</th>
+      <th>Supplier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD34</td>
+      <td>PerCP</td>
+      <td>581</td>
+      <td>0.3</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD36</td>
+      <td>PerCpVio700</td>
+      <td>REA760</td>
+      <td>0.6</td>
+      <td>Miltenyi Biotec</td>
+    </tr>
+    <tr>
+      <td>VEGFR2</td>
+      <td>PE</td>
+      <td>7D4-6</td>
+      <td>0.6</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD271</td>
+      <td>PE/Dazzle 594</td>
+      <td>C40-1457</td>
+      <td>0.6</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD142</td>
+      <td>BB700</td>
+      <td>HTF-1</td>
+      <td>1.25</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD26</td>
+      <td>PE/Cy5</td>
+      <td>BA5b</td>
+      <td>0.15</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>PDPN</td>
+      <td>PE/Cy7</td>
+      <td>NC-08</td>
+      <td>0.3</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD90</td>
+      <td>Alexa700</td>
+      <td>5E10</td>
+      <td>0.6</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD144</td>
+      <td>BV421</td>
+      <td>55–7 H1</td>
+      <td>1.25</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD31</td>
+      <td>BV480</td>
+      <td>WM59</td>
+      <td>0.3</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD45</td>
+      <td>Krome-Orange</td>
+      <td>B61840</td>
+      <td>0.3</td>
+      <td>Beckman Coulter</td>
+    </tr>
+    <tr>
+      <td>CD146</td>
+      <td>BV605</td>
+      <td>PIH12</td>
+      <td>0.3</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>HLADR</td>
+      <td>BV750</td>
+      <td>L243</td>
+      <td>0.3</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>CD73</td>
+      <td>BV785</td>
+      <td>AD2</td>
+      <td>0.3</td>
+      <td>BD</td>
+    </tr>
+  </tbody>
+</table>
+
+### Immunocytochemistry
 
 In order to determine the capacity of Subset Two (CD73+CD90+) and Subset Four (podoplanin+CD36+) to upregulate contractile markers, in a similar way to pMSCs (Boss et al., 2020), cells were FACS sorted (as above) and seeded into 96 well plates at 2000 cells/cm2 in EGM-2, with medium replaced every 2–3 days. At day 7 medium was switched to advanced-DMEM/F12 or kept as EGM-2 for a further 7 days. At day 14 of culture, cells were fixed with methanol for 10 min, washed in PBS, then incubated in 10% normal goat serum in PBS-tween for 1 h at room temperature. Cells were incubated with primary antibodies either 5 μg/ml of anti-Calponin (Abcam-ab216651), 1 μg/ml anti-α-smooth muscle actin (αSMA) (Thermofisher Scientific, 14-9760-82) or 1 μg/ml anti-smooth muscle heavy chain 11 (Abcam-ab53219) or the relevant control antibodies rabbit IgG (Abacus, JI111036144) or mouse IgG (Abacus, JI115036146), for 1 h at room temperature. Endogenous peroxidase activity was quenched by addition of 3% H2O2 in methanol for 5 minutes. A Histostain Plus Bulk Kit (Invitrogen) with AEC chromogen (Invitrogen) was used as per the manufacturer’s instructions to visualise antibody binding. Nuclei were counterstained with Gills II Haematoxylin (Sigma-Aldrich).

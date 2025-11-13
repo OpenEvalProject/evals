@@ -35,9 +35,17 @@ Our current study used a proximity-based labeling method in conjunction with mas
 
 ## Results
 
-## A proximity labeling system to enrich P granule proteins
+### A proximity labeling system to enrich P granule proteins
 
 To probe the composition of P granules, we employed a biotin ligase-based proximity labeling approach to label P granule proteins. TurboID—an engineered promiscuous biotin ligase derived from bacterial BirA—generates reactive biotin derivatives that label proteins in close proximity to the enzyme (Branon et al., 2018). TurboID is active from 20°C to 25°C, a range of temperature suitable for C. elegans cultivation (Branon et al., 2018). We thus sought to target TurboID to P granules (Figure 1A). To this end, we used CRISPR/Cas9 to introduce TurboID sequences to genomic loci of deps-1, glh-1, pgl-1, or ife-1, which encode proteins known to reside in P granules (Figure 1A and B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/72276/elife-72276-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of proximity-based labeling. Known P granule bait proteins are tagged with the promiscuous biotin ligase—TurboID—to label proteins present in P granules. (B) Brood sizes of strains endogenously tagged at the loci encoding deps-1, glh-1, ife-1, pgl-1, and N2 control. Five independent lines of pgl-1::TurboID heterozygotes are sterile. ns: not significant, *** p<0.0005, two-tailed Student’s t-test. (C) Streptavidin-horseradish peroxidase blotting. The left panel shows whole animal lysates prepared from N2 (untagged control), and strains expressing DEPS-1::TurboID or TurboID::GLH-1 blotted with streptavidin-HRP to visualize biotinylated proteins. The right panel shows Coomassie blue stain of the same membrane. An asterisk marks endogenously biotinylated protein (Based on its size, the protein likely is PCCA-1). (D) Streptavidin-Alexa Fluor 488 staining of gonad dissected from N2 (untagged control), and animals expressing DEPS-1::TurboID and TurboID::GLH-1. Scale bar=10 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72276/elife-72276-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Fluorescence micrographs showing pachytene nuclei of wild-type, deps-1::TurboID, and TurboID::glh-1 animals expressing either PGL-1::TagRFP or GFP::CSR-1.Scale bar=10 µm. Animals were cultured at 25°C. (B) Streptavidin-horseradish peroxidase blotting showing pull-down efficiency. Biotinylated proteins are present in the input, depleted in the flow-through and enriched in the pull-down fraction.
 
 We first assessed if tagged alleles generate functional proteins by examining the fertility of animals expressing individual TurboID-tagged P granule proteins. Loss of deps-1, glh-1, pgl-1, or ife-1 results in reduced fertility (Updike and Strome, 2010). Under normal growth conditions, wild-type strains produced ~209 progeny/animal. We found that strains expressing DEPS-1::TurboID and TurboID::GLH-1 yielded ~88 and ~167 progeny/animal, respectively (Figure 1B). The brood size of TurboID::ife-1 animals exhibited a large variation. A small portion of animals became completely sterile and each animal on average produced ~77 progeny (Figure 1B). The strain expressing PGL-1::TurboID was completely sterile, a phenotype that is more severe than pgl-1 null mutants (Figure 1B; Kawasaki et al., 1998). This finding suggests that the expression of TurboID could cause toxicity. We used the healthiest strains, expressing DEPS-1::TurboID or TurboID::GLH-1, for the proximity labeling experiments.
 
@@ -47,11 +55,19 @@ We next examined biotinylation of proteins to assess the activity of TurboID. Tw
 
 For the second assay, we stained dissected gonads with fluorescently labeled streptavidin to examine the subcellular localization of biotinylated proteins. We observed weak cytoplasmic signals in the stained wild-type gonad (Figure 1D, upper panel). In the deps-1::TurboID and TurboID::glh-1 gonads, signals of biotinylated proteins were observed in the cytoplasm, but highly enriched in perinuclear structures (Figure 1D, middle and bottom panels). These findings indicate that TurboID can be applied to label proteins in C. elegans germ line.
 
-## Proteomic analysis of P granules
+### Proteomic analysis of P granules
 
 We next carried out streptavidin affinity pull-down to enrich TurboID-biotinylated proteins. In brief, adult animal lysate was prepared under a denaturing condition. After incubating with streptavidin beads, samples were washed under stringent and denaturing conditions to reduce nonbiotinylated protein contaminants and enrich proteins covalently tagged by TurboID (Branon et al., 2018). We found that biotinylated proteins were depleted from the flow-through and efficiently enriched in the pull-down (Figure 1—figure supplement 1B).
 
 Biotinylated proteins from untagged control, TurboID::glh-1 and deps-1::TurboID strains were enriched in three independent biological replicates, and identified by mass spectrometry (Figure 2A and B). As compared to untagged control, 155 and 127 proteins were significantly enriched by labeling with TurboID::GLH-1 and DEPS-1::TurboID, respectively (fold change ≥8, p<0.05) (Figure 2A). Supplementary file 1 provides a detailed overview of candidate proteins identified in TurboID strains. Of the combined 204 candidates, 38.2% (78/204) were recovered from both deps-1::TurboID and TurboID::glh-1 strains (Figure 2B and Supplementary file 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72276/elife-72276-fig2-v2.jpg)
+
+**Figure 2.:** (A) Volcano plots showing statistically significant enriched proteins from strains expressing TurboID::GLH-1 and DEPS-1::TurboID in green. One-tailed Student’s t-test, p<0.05, log2(fold change)≥3. GLH-1 and DEPS-1 proteins are shown in red on the respective plots. (B) Venn diagram showing overlapping proteins recovered from strains expressing TurboID::GLH-1 and DEPS-1::TurboID, along with previously reported P granule, Z granule, and mutator foci proteins. The list shows proteins enriched by both pull-down experiments. Argonaute proteins (purple), nuclear pore proteins (NPPs, green), and core P granule components GLH and PGL-1 family proteins (red). P granule and Z granule proteins are marked with an asterisk and two asterisks, respectively. No reported mutator foci proteins were significantly enriched. (C) Schematic of nuclear pores and P granules. Pull-down experiments enrich NPPs (NPP-6, NPP-9, and NPP-14) composing either the cytoplasmic filaments or outer ring (purple). NPPs and their vertebrate homologs are shown. (D) Functional gene set enrichment analysis of proteins significantly enriched in both pull-down experiments organized by molecular function, biological processes, and cellular compartments. Top three enriched categories (based on p-value) are labeled. (E) Boxplot showing the average disorder of proteins enriched in both TurboID::glh-1 and deps-1::TurboID (n=78) as predicted using IUPRED compared to a random control set (n=78). The average disorder of proteins was derived by comparing the total IUPRED score of each protein to its length. Wilcoxon rank-sum test (p<0.01 **). (F) The same analysis as in (E), but with proteins labeled in either TurboID::glh-1 or deps-1::TurboID pull-down experiments (n=204). Wilcoxon rank-sum test (p<0.0001 ****).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72276/elife-72276-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** STRING network analysis of proteins enriched in both pull-down experiments from strains expressing DEPS-1::TurboID and TurboID::GLH-1 (n=78). Known P granule and Z granule proteins are shown in red, nuclear pore proteins are shown in turquoise, EGGD-1 is shown in green, and EGGD-2 is shown in orange. Other proteins are shown in gray. Network was visualized in Cytoscape.
 
 Germ cells in C. elegans possess P granules, Z granules, and Mutator foci, three membraneless and perinuclear organelles (Phillips et al., 2012; Strome and Wood, 1982; Wan et al., 2018). Genetic and biochemical approaches identified several components localizing to these three compartments (Supplementary file 2; Manage et al., 2020; Updike and Strome, 2010; Wan et al., 2018). Our streptavidin affinity enrichment recovered 90% (18/20) of known P granule proteins and all Z granule proteins—ZNFX-1 and WAGO-4 (Figure 2B and Supplementary file 2; Wan et al., 2018). In contrast, none of the proteins (0/11) in Mutator foci were enriched (Figure 2B and Supplementary file 2). Our result is consistent with the previous finding that P granules physically contact Z granules, but not Mutator foci (Wan et al., 2018).
 
@@ -59,7 +75,7 @@ We inspected candidates identified in both TurboID experiments and found that so
 
 To assess the specificity of proximity labeling, we examined labeled components of nuclear pore complexes. Nuclear pore complexes are among the largest protein structures in cells and comprised of multiple copies of ~30 different proteins known as nucleoporins (Nups) in humans or nuclear pore proteins (NPPs) in C. elegans (Strambio-De-Castillia et al., 2010; Updike et al., 2011). The structure of the nuclear pore complex contains two main functional regions: the central structure which is embedded within the nuclear envelope, and the peripheral structures which extend to both the nuclear interior and cytoplasm termed the nuclear basket and the cytoplasmic filaments, respectively (Figure 2C; Strambio-De-Castillia et al., 2010). In C. elegans germ cells, P granules are associated with the cytoplasmic face of nuclear pore complexes (Pitt et al., 2000; Sheth et al., 2010; Updike et al., 2011). Under stringent purification conditions, we expected to preferentially enrich cytoplasmic-facing NPPs from DEPS-1::TurboID and TurboID::GLH-1 expressing strains. Indeed, components of cytoplasmic filaments NPP-9 and NPP-14, and cytoplasmic ring component NPP-6 were significantly enriched in both TurboID experiments (Figure 2B and C, Supplementary file 3; Strambio-De-Castillia et al., 2010). In summary, we demonstrate that TurboID proximity labeling can be applied to enrich proteins within P granules.
 
-## Properties of the P granule proteome
+### Properties of the P granule proteome
 
 We next proceeded to characterize the properties of the P granule proteome. First, we conducted gene ontology (GO) enrichment analysis (Ashburner et al., 2000; Raudvere et al., 2019). As expected, the top three enriched GO terms in the domain of cellular component were ‘cytoplasmic ribonucleoprotein granule,’ ‘ribonucleoprotein granule,’ and ‘P granule’ (Figure 2D and Supplementary file 4). In the domain of biological process, the top GO terms are ‘negative regulation of gene expression,’ ‘gene silencing by RNA,’ and ‘posttranscriptional regulation of gene expression’ (Figure 2D and Supplementary file 4). Additionally, GO terms including ‘oocyte construction’ and ‘oocyte anterior/posterior axis specification’ were highly enriched (Supplementary file 4), consistent with the notion that P granules are essential for gametogenesis and germ line maintenance. In the domain of molecular function, GO terms including ‘RNA binding,’ ‘nucleic acid binding’ and ‘helicase activity’ were significantly enriched, suggesting P granule proteins interact extensively with RNAs (Figure 2D and Supplementary file 4).
 
@@ -67,13 +83,21 @@ We constructed the P granule protein interaction network using publicly availabl
 
 Proteins containing IDRs are often found in biomolecular condensates (Markmiller et al., 2018; Molliex et al., 2015; Nott et al., 2015). IDRs themselves fail to form stable structures. Yet they participate in multivalent protein–protein, protein–DNA, and/or protein–RNA interactions (Oldfield and Dunker, 2014; Uversky, 2017). We next determined if IDR-containing proteins were enriched in the P granule proteome defined by TurboID. We employed the IUPred algorithm which predicts protein disorder by estimating the total pairwise inter-residue interaction energy of amino acids (Dosztányi et al., 2005). A probabilistic score of each residue ranging from 0 (complete order) to 1 (complete disorder) was generated. We calculated the sum of probabilistic scores and further normalized it to the protein length (Supplementary file 1). Compared to a randomly selected control group the P granule proteome displayed a higher degree of disorder (Figure 2E and F). These data suggest that IDR-containing proteins are overrepresented in P granules.
 
-## An RNAi-based screen to identify factors required for P granule formation
+### An RNAi-based screen to identify factors required for P granule formation
 
 P granule proteomic data obtained by TurboID provided a unique opportunity to identify factors that directly participate in P granule assembly. To this end, we have begun to conduct an RNA interference (RNAi)-based screen using a reporter strain expressing PGL-1::TagRFP. Different from a previous genome-wide RNAi screen (Updike and Strome, 2009), the reporter in this study had a null allele of rrf-3, which renders the strain hypersensitive to RNAi (Simmer et al., 2002). We used fluorescence microscopy to search for changes in PGL-1::TagRFP expression in animals in which candidate genes were depleted. Out of 31 genes, we screened so far 11 genes upon depletion caused PGL-1::TagRFP phenotypes in adult animals (Figure 3A). Among these 11 genes, cpf-2 has been reported to be required for proper PGL-1 localization (Updike and Strome, 2009). A recent study showed that depletion of cey-2 and cey-3, two genes encoding Y-box binding proteins, induces PGL-1 aggregation (Calculli et al., 2021). We placed PGL-1::TagRFP phenotypes into broad categories including detached from nuclear envelope, reduced expression, diffuse, large aggregates, and none observed (Figure 3A). This search identified C38D4.4 which is required for proper PGL-1::TagRFP localization in the pachytene region (Figure 3B). Depletion of C38D4.4 resulted in the formation of large PGL-1-containing aggregates, many of which are separated from the nuclear envelope of germ cells. Based on this phenotype, we named C38D4.4 as eggd-1 for embryonic and germline P granule detached.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/72276/elife-72276-fig3-v2.jpg)
+
+**Figure 3.:** (A) PGL-1::TagRFP phenotypes. Summarized PGL-1::TagRFP phenotypes from an RNAi-based screen. RNAi targets are grouped by the observed PGL-1::TagRFP phenotypes in rrf-3; pgl-1::TagRFP adult germ lines. (B) Fluorescence micrographs of dissected gonads from pgl-1::TagRFP reporter animals after two successive generations of control RNAi or C38D4.4/eggd-1 RNAi. Scale bar=10 µm. (C) Single confocal slices of the edge and rachis of the germ line in live adult animals expressing PGL-1::TagRFP. Wild-type animals, and animals bearing mutations in eggd-1, eggd-2, and eggd-1; eggd-2 are shown. Scale bar=10 µm. Images are representative of at least four animals. (D) Boxplot of quantified rachis versus edge PGL-1::TagRFP signal intensity in eggd-1, eggd-2, and eggd-1; eggd-2 mutant backgrounds. ns: not significant, *p<0.05, **p<0.005, two-tailed Student’s t-test (n=4). (E) Germ line morphology in adult eggd-1, eggd-2, and eggd-1; eggd-2 mutants compared to wild-type animals. All strains express PGL-1::TagRFP. Representative images of absent, atrophy, small, and normal classifications are shown in Figure 3—figure supplement 1D. (F) Brood counts of wild-type, eggd-1, eggd-2, and eggd-1; eggd-2 animals. All strains express PGL-1::TagRFP. **p<0.005, ***p<0.0005, two-tailed Student’s t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72276/elife-72276-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fluorescence micrographs of pachytene nuclei in adult wild-type, eggd-2 (17-nt insertion), and eggd-2 (deletion). All strains express PGL-1::TagRFP. Scale bar=10 µm. (B) One example of regions of interest drawn to quantify PGL-1::TagRFP signal intensity plotted in Figure 3D. The equation used to quantify rachis/edge signal intensity is located in the Materials and methods section. (C) Maximum intensity projections of confocal z stacks spanning the depth of embryos expressing PGL-1::TagRFP at the indicated stages in eggd-1, eggd-2, and eggd-1; eggd-2 mutants. Dashed line outlines the embryos. Images are representative of at least four embryos. (D) Brightfield and fluorescence images of adult animals with normal, small, atrophied, and absent germ lines. The gonad is outlined by a yellow dashed line in the brightfield images. The genotype of imaged animals is indicated at the bottom left of each brightfield image. Scale bar=20 µm. (E) Mortal germ line assay showing the percentage of plates with fertile wild-type, eggd-1, eggd-2, and eggd-1; eggd-2 animals over successive generations beginning the first generation that outcrossed homozygous animals were obtained. eggd-1, eggd-2, and eggd-1; eggd-2 mutants become sterile more rapidly over generations compared to wild-type animals. Log-rank test (p<0.0005).
+
 F58G11.3 is a predicted paralog of EGGD-1. It is 33.3% identical to EGGD-1 at the amino acid level. Interestingly, F58G11.3 was also identified from TurboID experiments (Figure 2B and Supplementary file 1). We named F58G11.3 as eggd-2, although RNAi against F58G11.3 did not yield noticeable change in PGL-1::TagRFP localization (Figure 3A). Of note, an independent study refers to EGGD-1 and EGGD-2 as MEG-3 interacting proteins MIP-1 and MIP-2, respectively (Cipriani et al., 2021).
 
-## EGGD-1 and EGGD-2 promote perinuclear localization of P granules and fertility
+### EGGD-1 and EGGD-2 promote perinuclear localization of P granules and fertility
 
 Using CRISPR/CAS9 editing, we generated a null allele of eggd-1 by deleting the full open reading frame. Consistent with the result from RNAi experiments, PGL-1::TagRFP was dispersed into the cytoplasm in eggd-1 mutants (Figure 3B and C). We generated a null allele of eggd-2 by deleting its full open reading frame, and another allele of eggd-2 bearing a 17-nucleotide insertion downstream of the start codon. Neither of eggd-2 alleles yielded noticeable change in PGL-1::TagRFP localization in the pachytene region (Figure 3B, Figure 3—figure supplement 1A). Thereafter, we further characterized the phenotype of eggd-2 that bears the 17-nucleotide insertion. In C. elegans, germ cell nuclei are situated along the outer surface of the gonadal tube and share a central cytoplasmic core, termed rachis (Amini et al., 2015). We inspected PGL-1::TagRFP fluorescence on the surface and core of the germ line. In wild-type animals, fluorescence signal was primarily associated with the periphery of germ cell nuclei. In eggd-1 mutants, however, fewer PGL-1 foci were perinuclear, and most diffused into the rachis (Figure 3C). Loss of eggd-2 appeared to have a minor effect on PGL-1 localization (Figure 3C). Deletion of both eggd-1 and eggd-2 caused dispersal of perinuclear PGL-1::TagRFP and accumulation of large cytoplasmic PGL-1 aggregates (Figure 3C). We used ImageJ to quantify PGL-1::TagRFP signal at the germline edge and rachis (Figure 3—figure supplement 1B). Compared to that in wild-type, the rachis/edge ratio was increased in eggd-1 mutants, and further increased in eggd-1; eggd-2 double mutants (Figure 3D).
 
@@ -83,13 +107,21 @@ Disruption of germ granule formation causes defects in germ line development and
 
 We next evaluated the fertility of C. elegans strains upon loss of eggd-1 and/or eggd-2 using two approaches. In the first approach, we outcrossed mutants with wild-type animals and measured the brood sizes of outcrossed strains at approximately generation 12. The wild-type strain produced ~263 progeny/animal (Figure 3F). As compared to wild-type, eggd-1 and eggd-2 animals displayed moderate reduction in brood size, generating ~170 and ~204 progeny/animal, respectively. Strikingly, eggd-1; eggd-2 double mutants exhibited an additive fertility deficit and produced only ~37 progeny/animal (Figure 3F). In the second approach, we outcrossed mutant animals with wild-type, tracked 10 lines of eggd-1, eggd-2, and double mutants, and scored whether or not each line generated offspring every two generations. Wild-type animals were fertile in the course of the experiment (~21 generations) (Figure 3—figure supplement 1E). Animals deficient for EGGD-1 or EGGD-2 exhibited decline in fertility over generations (Figure 3—figure supplement 1E). The eggd-1; eggd-2 double mutants became sterile more rapidly when compared to single mutants (Figure 3—figure supplement 1E). Altogether, these observations suggest that EGGD-1 and EGGD-2 are required for the maintenance and immortality of C. elegans germ line.
 
-## EGGD-1 and EGGD-2 contain two IDRs and two putative LOTUS domains
+### EGGD-1 and EGGD-2 contain two IDRs and two putative LOTUS domains
 
 We next characterized EGGD-1 and EGGD-2 amino acid sequences. First, both EGGD-1 and EGGD-2 were relatively disordered (Supplementary file 1). Based on IUPred algorithm, two IDRs were identified in EGDD-1 and EGGD-2, one close to their N-termini and the other located at their C-termini (Figure 4A and B; Dosztányi et al., 2005).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/72276/elife-72276-fig4-v2.jpg)
+
+**Figure 4.:** (A, B). Domain architecture and IUPRED score for EGGD-1 (A) and EGGD-2 (B). Regions of proteins with an IUPRED score above 0.5 are predicted to be disordered, while regions below 0.5 are predicted to be ordered. Intrinsically disordered regions are shown in blue and abbreviated as ‘IDR.’ LOTUS domains are shown in green. (C) Spinning disc confocal images (100× objective) showing the localization of EGGD-1::GFP protein, and a series of EGGD-1::GFP domain deletion mutants in pachytene germ cells of live animals expressing PGL-1::TagRFP. Images are representative of over five animals. Scale bar=10 µm. (D) Super-resolution Zeiss Airyscan image of a single pachytene nucleus in animals co-expressing EGGD-1::GFP and PGL-1::TagRFP. Scale bar=2 µm. (E) Intensity profile of EGGD-1::GFP and PGL-1::TagRFP signals along the dotted arrow in panel (D). AU, arbitrary unit; IDR, intrinsically disordered region.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72276/elife-72276-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Alignment between the extended LOTUS domains of Drosophila melanogaster Oskar mouse TDRD7, TDRD5, and the putative LOTUS domains present in EGGD-1 and EGGD-2. In the ‘secondary structure’ row, ‘h’ indicates a consensus prediction for an alpha-helical secondary structure, while ‘e’ indicates a prediction for a beta sheet. (B) Single confocal slices of EGGD-1::GFP and mCherry::EGGD-2 protein in the adult germ line. Scale bar=20 µm. (C) Maximum intensity projections made from confocal images spanning the depth of embryos, visualizing EGGD-1::GFP, and mCherry::EGGD-2 during embryonic development. Scale bar=5 µm.
+
 We next searched for conserved domains within EGGD-1 and EGGD-2 using the HHpred program (Zimmermann et al., 2018). HHpred is one of the most sensitive methods for remote homology detection (Zimmermann et al., 2018). The HHpred search identified two regions in EGGD-1 and EGGD-2 that are homologous to the LOTUS domain of D. melanogaster Oskar and H. sapiens TDRD5 and TDRD7. LOTUS domains are divided into two subclasses depending on the absence or presence of a C-terminal extension: minimal LOTUS (mLOTUS) and extended LOTUS (eLOTUS) which contains an extra C-terminal alpha-helix (Jeske et al., 2017). Similar to the LOTUS domains in Oskar, TDRD5 or TDRD7, LOTUS domains in EGGD-1 and EGGD-2 are predicted to contain the C-terminal alpha-helix extension (Figure 4—figure supplement 1A; Anantharaman et al., 2010; Callebaut and Mornon, 2010; Kubíková et al., 2020). We conclude that EGGD-1 and EGGD-2 harbor four domains: two eLOTUS domains and two IDRs (Figure 4A and B).
 
-## Roles of EGGD-1 LOTUS domains and IDRs in perinuclear P granule formation
+### Roles of EGGD-1 LOTUS domains and IDRs in perinuclear P granule formation
 
 We next examined EGGD-1 and EGGD-2 protein localization. CRISPR/CAS9 was used to generate fluorescently tagged alleles of eggd-1 and eggd-2. Both proteins are expressed in the adult germ line and germ lineage of embryos (Figure 4—figure supplement 1B and C). Consistent with the TurboID data, both EGGD-1::GFP and mCherry::EGGD-2 localize to perinuclear P granules (Figure 4—figure supplement 1B and C). Of note, the fluorescent signal of EGGD-2 was much weaker than EGGD-1::GFP or PGL-1::TagRFP. Considering EGGD-1 has a stronger impact on P granule assembly in the adult germ line (Figure 3C), we decided to focus on EGGD-1 for further characterization.
 
@@ -97,7 +129,7 @@ To interrogate the role of IDRs and LOTUS domains, we employed CRISPR/CAS9 to ge
 
 When the first LOTUS domain was deleted (ΔLOTUS 1), EGGD-1 displayed prominent perinuclear localization. In contrast, PGL-1::tagRFP was mislocalized. Upon removal of the second LOTUS domain (ΔLOTUS 2), EGGD-1 localized to the nuclear periphery while perinuclear PGL-1 foci were modestly lost. Deletion of both LOTUS one and LOTUS two did not appear to affect EGGD-1 localization. However, PGL-1 became predominantly cytoplasmic (Figure 4C). When the first IDR was deleted (ΔIDR 1), perinuclear EGGD-1 foci remained, but some EGGD-1 became dispersed into the cytoplasm. When the second IDR was deleted (ΔIDR 2), both EGGD-1 and PGL-1::tagRFP foci were largely attached to the nuclear periphery albeit the presence of some large aggregates. When both IDR one and IDR two were deleted, we found that EGGD-1 was almost completely dispersed in the cytoplasm in the pachytene region. And similarly, PGL-1::TagRFP became cytoplasmic (Figure 4C). These findings imply that LOTUS domains and IDRs in EGGD-1 have distinct roles in promoting perinuclear P granules: IDRs are required to anchor EGGD-1 protein to the nuclear periphery, and LOTUS domains likely recruit additional P granule proteins.
 
-## EGGD-1 acts upstream of GLH-1 in P granule assembly
+### EGGD-1 acts upstream of GLH-1 in P granule assembly
 
 Previous studies showed one conserved function of eLOTUS domains is to interact with Vasa (Jeske et al., 2015; Jeske et al., 2017). C. elegans Vasa protein GLH-1 is known to localize to P granules and promote their assembly (Chen et al., 2020; Marnik et al., 2019; Updike et al., 2011). We thus tested the interaction between EGGD-1/2 and GLH-1. In particular, we performed epistasis analyses to order EGGD-1/2 and GLH-1 in the P granule assembly pathway. As expected, GFP::GLH-1 localized to P granules in wild-type animals. However, when eggd-1 was deleted, GFP::GLH-1 became diffuse and most of the protein was no longer associated with the nuclear periphery (Figure 5A). Deletion of eggd-2 did not appear to affect GFP::GLH-1 localization. There was a striking change in GFP:GLH-1 distribution in eggd-1; eggd-2 double mutant animals, with the majority of fluorescence signals appearing throughout the cytoplasm (Figure 5A). These findings suggest perinuclear GFP::GLH-1 primarily depends on EGGD-1.
 
@@ -109,7 +141,7 @@ We next used RNAi to deplete GLH-1 from EGGD-1::GFP; PGL-1::TagRFP expressing wo
 
 A subset of NPPs, such as NPP-10, localize to P granules and are indispensable for their integrity (Updike and Strome, 2009; Voronina and Seydoux, 2010). We next sought to determine if EGGD-1 localization depends on NPPs. Indeed, depletion of npp-10 caused diffuse PGL-1::TagRFP (Updike and Strome, 2009; Voronina and Seydoux, 2010). Similarly, EGGD-1::GFP became detached from the nuclear membrane and formed aggregates in the cytoplasm upon depletion of npp-10 (Figure 5B). Taken together, the epistasis analysis demonstrates perinuclear EGGD-1 requires intact nuclear pores and recruitment of GLH-1 to the nuclear periphery depends on EGGD-1.
 
-## Ectopic expression of EGGD-1 drives formation of perinuclear granules
+### Ectopic expression of EGGD-1 drives formation of perinuclear granules
 
 So far, our data suggest that EGGD-1 is necessary for the perinuclear localization of P granules. We wondered if EGGD-1 alone is sufficient to recruit GLH-1 to form perinuclear granules. To test this idea, an ectopic expression system was employed. EGGD-1 and/or GLH-1 were expressed under the muscle-specific myo-3 promoter so that these proteins were expressed in somatic cells. This enabled us to examine the relationship between these proteins and granule assembly independently of other P granule or germline proteins.
 
@@ -127,19 +159,19 @@ Using proximity labeling and genetic approaches, we discovered and characterized
 
 Based on these findings, we propose a model for the molecular function of EGGD proteins (Figure 6D). IDRs of EGGD proteins may form multivalent interactions with cytoplasmic filaments of the nuclear pore complex. It is possible that IDRs preferentially associate with phenylalanine/glycine-rich NPPs that are intrinsically disordered (Marnik et al., 2019; Updike et al., 2011). Dimerization of LOTUS domains may serve as an interface for the binding of Vasa protein GLH-1 (Cipriani et al., 2021; Jeske et al., 2015; Jeske et al., 2017). Association of GLH-1 with the nuclear periphery initiates the recruitment of PGL-1 and additional P granule proteins. More experiments, both in vitro and in vivo, will be required to dissect this complex PPI network.
 
-## Interplay between EGGD-1 and EGGD-2
+### Interplay between EGGD-1 and EGGD-2
 
 The interplay between EGGD-1 and EGGD-2 seems complex. In the adult germ line, EGGD-1 and EGGD-2 function partially redundantly. EGGD-1 plays a more dominant role in promoting the perinuclear localization of P granules (Figure 3C). In the embryos, however, both proteins are required for P granule partitioning and attachment to the nuclear periphery (Figure 3—figure supplement 1B). One speculative explanation is that EGGD-1 and EGGD-2 interact with different Vasa proteins and thus make distinct contributions to P granule assembly in the germ line and zygotes.
 
 Most LOTUS domain proteins, including Oskar, TDRD5, and TDRD7, harbor a single eLOTUS domain. In contrast, EGGD-1 and EGGD-2 are predicted to contain two eLOTUS domains (Figure 4—figure supplement 1A). The eLOTUS domain of Drosophilla Oskar is capable of forming dimers (Jeske et al., 2015; Jeske et al., 2017). In vitro pull-down assays revealed that recombinant MIP-1 physically interacts with itself and MIP-2 (Cipriani et al., 2021). Here we show EGGD-1 self-aggregates into granules when expressed ectopically (Figure 6). It is possible that MIP-1/EGGD-1 and MIP-2/EGGD-2 form homodimers, heterodimers, or even oligomers in vivo through their eLOTUS domains. Of note, an independent study identified a third LOTUS domain protein LOTR-1 which is homologous to mammalian TDRD5/7 (Marnik et al., 2021). Interestingly, similar to EGGD-1 and EGGD-2, LOTR-1 was also enriched from our TurboID experiments (Figure 2B and Supplementary file 1). Future genetic experiments will be required to determine the interplay of these three LOTUS domain proteins in regulating perinuclear P granule formation.
 
-## LOTUS domain proteins as scaffolds for germ granule assembly
+### LOTUS domain proteins as scaffolds for germ granule assembly
 
 LOTUS domains are found in bacteria, plants, and animals (Anantharaman et al., 2010; Callebaut and Mornon, 2010). LOTUS domains exhibit minimum sequence homology (Figure 4—figure supplement 1A; Anantharaman et al., 2010; Callebaut and Mornon, 2010). Yet they adopt a common helix-turn-helix conformation (Anantharaman et al., 2010; Callebaut and Mornon, 2010; Jeske et al., 2015; Jeske et al., 2017). The fact that diverse sequences yield a similar structure implies that the LOTUS domain acts as a structural scaffold. Indeed, the conserved function of eLOTUS domains is to bind to Vasa (Jeske et al., 2017).
 
 Consistent with the idea the structure of a protein largely determines its functional properties, LOTUS proteins are essential for the development of metazoan germ cells. In Drosophila, Oskar is required for germ plasm assembly and germ cell formation (Jeske et al., 2017; Lehmann, 2016). In mice, TDRD7 localizes to chromatoid bodies (P granule counterpart), and is required for spermatogenesis (Lachke et al., 2011; Smith et al., 2004; Tanaka et al., 2011; Yabuta et al., 2011). In this study, we show that C. elegans EGGD-1 and EGGD-2 are key components for germ granule assembly on the nuclear periphery. Taken together, these findings suggest that LOTUS domain proteins belong to a unique family that has low sequence identity, but high structure homology and functional similarity. It will be important to use structure-based, but not sequence-based, search programs to identify more LOTUS domain proteins across phyla.
 
-## Advantage and limitation of proximity labeling in this study
+### Advantage and limitation of proximity labeling in this study
 
 Proximity labeling is a powerful approach to map the proteome composition of organelles in living cells. Compared to conventional affinity purification, the key advantage lies in its ability to capture weak and transient interaction. In addition, the strong binding of biotin to streptavidin permits stringent protein extraction which reduces background contaminants. It is therefore an ideal tool to define the composition of phase-separated membraneless organelles that are formed by weak multivalent interactions (Bracha et al., 2019). Proximity labeling uses a promiscuous enzyme such as BioID, APEX, or TurboID (Branon et al., 2018; Rhee et al., 2013; Roux et al., 2012). TurboID appears to be the best choice for C. elegans labeling for several reasons: (1) TurboID is active from 20°C to 25°C, a range of temperature suitable for C. elegans cultivation (Branon et al., 2018). (2) TurboID uses ATP and biotin as substrates which are readily available in cells, while APEX requires exogenous cofactors which may not be easily transported into worms (Branon et al., 2018; Rhee et al., 2013). (3) TurboID catalyzes biotinylation with much greater efficiency than BioID (Branon et al., 2018).
 
@@ -151,84 +183,1141 @@ In addition to P granules, C. elegans germ cells possess other membraneless orga
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>N2</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>N2</td>
+      <td>Wildtype C. elegans, RRID:WB-STRAIN:WBStrain00000001</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>deps-1::TurboID</td>
+      <td>This study</td>
+      <td>WHY14</td>
+      <td>deps-1(how1[deps-1::TurboID]) I</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>TurboID::ife-1</td>
+      <td>This study</td>
+      <td>WHY12</td>
+      <td>ife-1(how2[TurboID::ife-1]) III</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>TurboID::glh-1</td>
+      <td>This study</td>
+      <td>WHY10</td>
+      <td>glh-1(how3[TurboID::glh-1]) I</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pgl-1::TurboID</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>pgl-1(how4[pgl-1::TurboID]) IV-- this strain is sterile and cannot be grown</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pgl-1::TagRFP</td>
+      <td>This study</td>
+      <td>WHY100</td>
+      <td>pgl-1(gg547[pgl1::3xflag::tagRFP]) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>rrf-3; pgl-1::TagRFP</td>
+      <td>This study</td>
+      <td>WHY134</td>
+      <td>rrf-3(pk1426)II; pgl-1(gg547[pgl-1::3xflag::tagRFP]) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>eggd-1; pgl-1::TagRFP</td>
+      <td>This study</td>
+      <td>WHY219</td>
+      <td>eggd-1(how5) III; pgl-1(gg547[pgl-1::3xflag::tagRFP]) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>eggd-2(17nt insertion); pgl-1::TagRFP</td>
+      <td>This study</td>
+      <td>WHY178</td>
+      <td>pgl-1(gg547[pgl-1::3xflag::tagRFP]) IV; eggd-2(how6) V</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>eggd-2(deletion);pgl-1::TagRFP</td>
+      <td>This study</td>
+      <td>WHY297</td>
+      <td>eggd-1(how7[eggd-1::GFP::TEV::3xFLAG::AID]) III; pgl-1(gg547[pgl-1::3xflag::tagRFP]) IV; eggd-2(how14) V</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>eggd-1; eggd-2; pgl-1::TagRFP</td>
+      <td>This study</td>
+      <td>WHY285</td>
+      <td>eggd-1(how5) III; pgl-1(gg547[pgl-1::3xflag::tagRFP]) IV; eggd-2(how6) V</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>eggd-1::GFP; pgl-1::TagRFP</td>
+      <td>This study</td>
+      <td>WHY170</td>
+      <td>eggd-1(how7[eggd-1::GFP::TEV::3xFLAG::AID]) III; pgl-1(gg547[pgl-1::3xflag::tagRFP]) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>ΔLOTUS1</td>
+      <td>This study</td>
+      <td>WHY203</td>
+      <td>eggd-1(how8[eggd-1(ΔLOTUS 1)::GFP::TEV::3xFLAG::AID]) III; pgl-1(gg547[pgl-1::3xflag::tagRFP]) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>ΔLOTUS2</td>
+      <td>This study</td>
+      <td>WHY180</td>
+      <td>eggd-1(how9[eggd-1(ΔLOTUS 2)::GFP::TEV::3xFLAG::AID]) III; pgl-1(gg547[pgl-1::3xflag::tagRFP]) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>ΔLOTUS1; ΔLOTUS2</td>
+      <td>This study</td>
+      <td>WHY182</td>
+      <td>eggd-1(how10[eggd-1(ΔLOTUS 1&amp;2)::GFP::TEV::3xFLAG::AID]) III; pgl-1(gg547[pgl-1::3xflag::tagRFP]) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>ΔIDR1</td>
+      <td>This study</td>
+      <td>WHY186</td>
+      <td>eggd-1(how11[eggd-1(ΔIDR 1)::GFP::TEV::3xFLAG::AID]) III; pgl-1(gg547[pgl-1::3xflag::tagRFP]) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>ΔIDR2</td>
+      <td>This study</td>
+      <td>WHY216</td>
+      <td>eggd-1(how12[eggd-1(ΔIDR 2)::GFP::TEV::3xFLAG::AID]) III; pgl-1(gg547[pgl-1::3xflag::tagRFP]) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>ΔIDR1; ΔIDR2</td>
+      <td>This study</td>
+      <td>WHY282</td>
+      <td>eggd-1(how13[eggd-1(ΔIDR 1&amp;2)::GFP::TEV::3xFLAG::AID]) III; pgl-1(gg547[pgl-1::3xflag::tagRFP]) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gfp::glh-1</td>
+      <td>Gift from Craig Mello</td>
+      <td>WM704</td>
+      <td>glh-1(ne4816[GFP::glh-1]) I</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gfp::glh-1; eggd-1</td>
+      <td>This study</td>
+      <td>WHY273</td>
+      <td>glh-1(ne4816[GFP::glh-1]) I; eggd-1(how5) III</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gfp::glh-1; eggd-2</td>
+      <td>This study</td>
+      <td>WHY274</td>
+      <td>glh-1(ne4816[GFP::glh-1]) I; eggd-2(how6) V</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gfp::glh-1; eggd-1; eggd-2</td>
+      <td>This study</td>
+      <td>WHY275</td>
+      <td>glh-1(ne4816[GFP::glh-1]) I; eggd-1(how5) III; eggd-2(how-6) V</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-119</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>EG4322</td>
+      <td>ttTi5605 II; unc-119(ed9) III</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>myo-3p::mCherry::glh-1</td>
+      <td>This study</td>
+      <td>WHY276</td>
+      <td>ttTi5605 II; unc-119(ed9) III; howEx1[myo-3p::mCherry::glh-1::unc-54 3'UTR+ Cbr-unc-119(+)]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>myo-3p::eggd-1::GFP</td>
+      <td>This study</td>
+      <td>WHY277</td>
+      <td>ttTi5605 II; unc-119(ed9) III; howEx2[myo-3p::eggd-1::GFP::unc-54 3'UTR+ Cbr-unc-119(+)]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>myo-3p::mCherry::glh-1; myo-3p::eggd-1::GFP</td>
+      <td>This study</td>
+      <td>WHY278</td>
+      <td>ttTi5605 II; unc-119(ed9) III; howEx3[myo-3p::mCherry::glh-1::unc-54 3'UTR+ myo-3p::eggd-1::gfp::unc-54 3'UTR+ Cbr-unc-119(+)]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>GFP::csr-1</td>
+      <td>Gift from Craig Mello</td>
+      <td>WM343</td>
+      <td>csr-1(GFP::csr-1) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>TurboID::deps-1; GFP::csr-1</td>
+      <td>This study</td>
+      <td>WHY304</td>
+      <td>deps-1(how1[deps-1::TurboID]) I; csr-1(GFP::csr-1) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>TurboID::deps-1; pgl-1::TagRFP</td>
+      <td>This study</td>
+      <td>WHY305</td>
+      <td>deps-1(how1[deps-1::TurboID]) I; eggd-1(how7[eggd-1::GFP::TEV::3XFLAG::AID]) III; pgl-1(gg547[pgl-1::3xFLAG::TagRFP]) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>glh-1::TurboID; GFP::csr-1</td>
+      <td>This study</td>
+      <td>WHY312</td>
+      <td>glh-1(how3[TurboID::glh-1]) I; csr-1(GFP::csr-1) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>glh-1::TurboID; pgl-1::TagRFP</td>
+      <td>This study</td>
+      <td>WHY313</td>
+      <td>glh-1(how3[TurboID::glh-1]) I; eggd-1(how7[eggd-::GFP::TEV::3XFLAG::AID]) III; pgl-1(gg547[pgl-1::3xFLAG::TagRFP]) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>OP50</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>OP50</td>
+      <td>Bacteria. Uracil auxotroph. E. coli B.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>HT115</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>HT115</td>
+      <td>E. coli [F-, mcrA, mcrB, IN(rrnD-rrnE)1, rnc14::Tn10(DE3 lysogen: lacUV5 promoter) -T7 polymerase]., RRID:WB-STRAIN:WBStrain00041080</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>Control RNAi</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>L4440</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>C38D4.4</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00008005</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>wago-1</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00011061</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>hsp-110</td>
+      <td>DOI: 10.1101/gr.2505604</td>
+      <td>WBGene00016250</td>
+      <td>Vidal RNAi Library</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>cpf-2</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00000774</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>puf-5</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00004241</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>ran-2</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00004303</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>cey-2</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00000473</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>cey-3</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00000474</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>ubh-4</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00006724</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>ani-1</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00013038</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>ifg-1</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00002066</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>maph-1.2</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00009113</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>F56C9.6</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00018950</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>ppw-2</td>
+      <td>DOI: 10.1101/gr.2505604</td>
+      <td>WBGene00004094</td>
+      <td>Vidal RNAi Library</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>M01H9.3</td>
+      <td>DOI: 10.1101/gr.2505604</td>
+      <td>WBGene00019719</td>
+      <td>Vidal RNAi Library</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>Y37E11B.10</td>
+      <td>DOI: 10.1101/gr.2505604</td>
+      <td>WBGene00021381</td>
+      <td>Vidal RNAi Library</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>F01G4.4</td>
+      <td>DOI: 10.1101/gr.2505604</td>
+      <td>WBGene00008503</td>
+      <td>Vidal RNAi Library</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>hmg-12</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00001977</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>edc-4</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00021551</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>ppw-1</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00004093</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>frm-4</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00001491</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>haf-9</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00001819</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>prg-1</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00004178</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>F52B5.3</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00009922</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>hip-1</td>
+      <td>DOI: 10.1101/gr.2505604</td>
+      <td>WBGene00010281</td>
+      <td>Vidal RNAi Library</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>F58G11.3</td>
+      <td>DOI: 10.1101/gr.2505604</td>
+      <td>WBGene00008385</td>
+      <td>Vidal RNAi Library</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>lotr-1</td>
+      <td>DOI: 10.1101/gr.2505604</td>
+      <td>WBGene00008399</td>
+      <td>Vidal RNAi Library</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>D2005.4</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00004143</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pqn-59</td>
+      <td>DOI: 10.1101/gr.2505604</td>
+      <td>WBGene00002263</td>
+      <td>Vidal RNAi Library</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>lea-1</td>
+      <td>DOI: 10.1101/gr.2505604</td>
+      <td>WBGene00001029</td>
+      <td>Vidal RNAi Library</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>dnj-11</td>
+      <td>DOI: 10.1101/gr.2505604</td>
+      <td>WBGene00011735</td>
+      <td>Vidal RNAi Library</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>npp-10</td>
+      <td>DOI: 10.1016/s1046-2023(03)00050–1</td>
+      <td>WBGene00003796</td>
+      <td>(C. elegans RNAi Collection (Ahringer), RRID:SCR_017064)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>glh-1</td>
+      <td>doi: 10.1534/genetics.107.083469</td>
+      <td>WBGene00001598</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Plasmid)</td>
+      <td>TurboID HDR donor template</td>
+      <td>DOI: 10.1038/nbt.4201</td>
+      <td>pAS31</td>
+      <td>RRID:Addgene_118220</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Plasmid)</td>
+      <td>pCFJ104</td>
+      <td>DOI: 10.1038/ng.248</td>
+      <td>pCFJ104</td>
+      <td>RRID:Addgene_19328</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Plasmid)</td>
+      <td>pCFJ151</td>
+      <td>DOI: 10.1038/ng.248</td>
+      <td>pCFJ151</td>
+      <td>RRID:Addgene_19330</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Plasmid)</td>
+      <td>myo-3p::eggd-1::gfp</td>
+      <td>This study</td>
+      <td>pIP1</td>
+      <td>myo-3p::eggd-1::gfp::unc-54 3′ UTR</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Plasmid)</td>
+      <td>myo-3p::mCherry::glh-1</td>
+      <td>This study</td>
+      <td>pIP12</td>
+      <td>myo-3p::mCherry::glh-1::unc-54 3′ UTR</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>18×18 Cover Glass # 1</td>
+      <td>MedSupply Partners</td>
+      <td>Cat# G07-140110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Microscope Slides, Diamond White Glass, 25×75 mm2, 90° Ground Edges, Plain</td>
+      <td>MedSupply Partners</td>
+      <td>Cat# G07-1380-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fisherbrand Fluorescent Antibody Microscope Slides w/ two 10 mm diameter circles</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 22-339408</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nail Polish</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# 72180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>cOmplete, Mini EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 11836170001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Streptavidin-Alexa Fluor 488 conjugate</td>
+      <td>Life Technologies</td>
+      <td>Cat# S11223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Streptavidin-Horseradish Peroxidase conjugate</td>
+      <td>Life Technologies</td>
+      <td>Cat# S911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Streptavidin magnetic beads</td>
+      <td>NEB</td>
+      <td>Cat# S1421S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE 4–12% Bis-Tris Gel</td>
+      <td>Invitrogen</td>
+      <td>cat# NP0323BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Immobilon-FL PVDF membrane</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# IPFL00010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vectashield antifade mounting medium with DAPI</td>
+      <td>Vector Labs</td>
+      <td>Cat# H-1200-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NOVEX colloidal blue staining kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# LC6025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lysing Matrix D</td>
+      <td>mpbio</td>
+      <td>Cat# 6913100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agarose</td>
+      <td>Genesee Scientific</td>
+      <td>Cat# 20-102GP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# O4042-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methanol</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A408-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetone</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A929-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Chloride</td>
+      <td>VWR</td>
+      <td>Cat# BDH9286</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agar</td>
+      <td>Genesee Scientific</td>
+      <td>Cat# 20-248</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloesterol</td>
+      <td>VWR</td>
+      <td>Cat# 0433-250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Magnesium Chloride</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# M35-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium Phosphate Monobasic</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP362-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium Phosphate Dibasic</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP363-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Citrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# S297-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# H4034-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium Hydroxide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# P250-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urea</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# AC140750010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trition X-100</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP151-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tween 20</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP337-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R version 4.0.3</td>
+      <td>The R Project for Statistical Computing</td>
+      <td>https://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2 version 3.3.2</td>
+      <td>Tidyverse</td>
+      <td>https://www.tidyverse.org/</td>
+      <td>RRID:SCR_019186</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institutes of Health</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/products/illustrator.html</td>
+      <td>RRID:SCR_010279</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HHPRED</td>
+      <td>DOI: 10.1016/j.jmb.2017.12.007</td>
+      <td>https://toolkit.tuebingen.mpg.de/tools/hhpred</td>
+      <td>RRID:SCR_010276</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen Blue 3.0</td>
+      <td>Carl Zeiss Microscopy GmbH</td>
+      <td>https://www.zeiss.com/microscopy/int/home.html</td>
+      <td>RRID:SCR_013672</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaMorph Premier Acquisition version 7.8.1.0</td>
+      <td>Molecular Devices</td>
+      <td>https://www.moleculardevices.com/</td>
+      <td>RRID:SCR_002368</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>g:Profiler</td>
+      <td>doi:10.1093/nar/gkz369</td>
+      <td>https://biit.cs.ut.ee/gprofiler/gost</td>
+      <td>RRID:SCR_006809</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IUPred2A</td>
+      <td>DOI: 10.1093/bioinformatics/bti541</td>
+      <td>https://iupred2a.elte.hu/</td>
+      <td>RRID:SCR_014632</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STRING</td>
+      <td>DOI: 10.1093/nar/gki005</td>
+      <td>https://string-db.org/</td>
+      <td>RRID:SCR_005223</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PROMALS3D</td>
+      <td>doi: 10.1093/nar/gkn072</td>
+      <td>http://prodata.swmed.edu/promals3d/promals3d.php</td>
+      <td>RRID:SCR_018161</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Alt-R S.p. Cas9 Nuclease V3 Cat# 1081058</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Cat# 1081058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Alt-R CRISPR-Cas9 tracrRNA, 20 nmol</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Cat# 1072533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ife-1 5′ guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>TTGAGAAGCTGAAAATCTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>deps-1 3′ guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>gtatatatttaaTTAGACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>glh-1 5′ guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>ttttctgcgaaaATGTCTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pgl-1 3′ guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>tagaaattattaaaggcgcA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eggd-1 5′ guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>GACATTCACTTGGCAAATGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eggd-1 3′ guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>CACCAACTATCCTTATCCGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eggd-2 5′ guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>TGAAAAATGTCTGAAGAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eggd-2 3′ guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>GCACTGCTTCAACTACGCCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eggd-1 5′ ΔLOTUS1 guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>CGACCCCAAATCAAGTAGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eggd-1 3′ ΔLOTUS1 guide RNA, 5′ ΔIDR1 guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>GCTTTGAGATCAGATTGATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eggd-1 5′ ΔLOTUS2 guide RNA, 3′ ΔIDR1 guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>TGGCTGCAACTCGGAACAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eggd-1 3′ ΔLOTUS2 guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>ATACACTTCGAGTCAATCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eggd-1 5′ ΔIDR2 guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>GGAACTCCAAAAGATCTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eggd-1 3′ ΔIDR2 guide RNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Guide RNA oligo</td>
+      <td>CTCCAGCTGTCTTTGTCTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>turboID::ife-1 5′ homology arm</td>
+      <td>Integrated DNA Technologies</td>
+      <td>5′ primer to amplify dsDNA donor</td>
+      <td>cacgattagttggcgttttccccagttgttctcggcttctcagatcagtcctgtttttgccttgccagttgtcgaggtgc gaaaattttaagcgcaaATG tacccatacgaCgtCccaga</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>turboID::ife-1 3′ homology arm</td>
+      <td>Integrated DNA Technologies</td>
+      <td>3′ primer to amplify dsDNA donor</td>
+      <td>tgaataatttatagtactcaaacgataatgaaaaagggaatggctcacCTTCTTTCTCTCCAGAGATTTTCAGCTTCTCAAATGCTATTTCAGAATCTGA CTTCTCGGCGGAACGAAGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>deps-1::turboID 5′ homology arm</td>
+      <td>Integrated DNA Technologies</td>
+      <td>5′ primer to amplify dsDNA donor</td>
+      <td>CAGTGAGCTCAAACgtaagtttatttttaaggttggaagatgataaaaacaagtttttcagCGATTCGTTGGCCCTTCAA GCCGCAGAACTCCATCTGGTACTCCACAAAGCTCAACATCTTCCAGGGTC tacccatacgaCgtCccaga</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>deps-1::turboID 3′ homology arm</td>
+      <td>Integrated DNA Technologies</td>
+      <td>3′ primer to amplify dsDNA donor</td>
+      <td>gaatgggatggtggtggaacttgaagtttaaataaataaatgtttggttggataacgggtagattaaaaatgagcagaacatttgaaacacaaatacgggggaaaacgggatgcgtatatatttaaTTA CTTCTCGGCGGAACGAAGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>turboID::glh-1 5′ homology arm</td>
+      <td>Integrated DNA Technologies</td>
+      <td>5′ primer to amplify dsDNA donor</td>
+      <td>acctcgacacactcatctactaaattttgggacagttcctaattctttttgctgttttcaactcaattttctggaaaaat cttaattttctgcgaaaATG tacccatacgaCgtCccaga</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>turboID::glh-1 3′ homology arm</td>
+      <td>Integrated DNA Technologies</td>
+      <td>3′ primer to amplify dsDNA donor</td>
+      <td>CTACCGAATCCAGTTTTGGctgaaataaagtttttaatcaaaataaaaccggtggaaagttcaaaataaaactcacCCTTAGCAGCACTTTCGCTATCACTCCAACCATCAGA CTTCTCGGCGGAACGAAGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pgl-1::turboID 5′ homology arm</td>
+      <td>Integrated DNA Technologies</td>
+      <td>5′ primer to amplify dsDNA donor</td>
+      <td>tctataaaatctataacaagttaaacatattatttaattataaaaccccgcattgattaaacatattttgatttgaaaaa aaaaactagaaaataggtaaaataaatctggaaatagttcagaaacttagaaattattaaaggcgcATGtacccatacgaCgtCccaga</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pgl-1::turboID 3′ homology arm</td>
+      <td>Integrated DNA Technologies</td>
+      <td>3′ primer to amplify dsDNA donor</td>
+      <td>ttcgagattagaattcaaaaaaacgcaaaatttacCCAAAAAAGTAAGAAAACGGAAAAGAAAATTGGGACGAGATCGAAATTGCAACTTCCGCGTTCGCGTCGAGTTGTTCGTTTCGAGACCCGTAGATCTGAAACTTC CTTCTCGGCGGAACGAAGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eggd-1::FLAG::AID::GFP::TEV 5′ homology arm</td>
+      <td>Integrated DNA Technologies</td>
+      <td>5′ primer to amplify dsDNA donor</td>
+      <td>TACAAAAGTGCCATCCACGACTAGAAGTGTAGTTCTCCCACCAATGTCAAAAGGACCAGGATTGGCACGTTCTCGTAACT TTTCACCACAACAATCGACTACATCTTCAATTGATAATGAGTGTCTAGAAGCTATCAATGCTGCGTTGCCGTCaGAcAAa GAcAGcTGGAGATCCAGTAAAGGAGAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eggd-1::FLAG::AID::GFP::TEV 5′ homology arm</td>
+      <td>Integrated DNA Technologies</td>
+      <td>3′ primer to amplify dsDNA donor</td>
+      <td>tgaatgactcgcatccaaaatataaaaaaaacaatgttactattaaaactaattaaaaaataattttacaaaaacacata aacaggatattttaaagcacgtaaaatttcgaTCActtcacgaacgccgccgcct</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mCherry::eggd-2 5′ homology arm</td>
+      <td>Integrated DNA Technologies</td>
+      <td>5′ primer to amplify dsDNA donor</td>
+      <td>acttctgccacgattttgacatttttaagttttaaatcatttttttgtattcgttatttcagatttccgttttctgaata tttaaagtcattcaactgattgttttactgtttccagcatttgcctgaaaaATGGTCTCAAAGGGTGAAGAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mCherry::eggd-2 3′ homology arm</td>
+      <td>Integrated DNA Technologies</td>
+      <td>3′ primer to amplify dsDNA donor</td>
+      <td>AAGAAGAACACTATAAGCGTCCCGTTCGATGCGCTTACGCATTTTGTTCATTTTTTCTTTGCCcTCcTCcTCtGAAGCTC CACCTCCACCTCCCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ΔLOTUS1 single strand donor</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Single-stranded repair template</td>
+      <td>AGAAAATACGCGCGCGCATCGAGCGCGACGTGTACAGTGTTCTGCTATCAAAGAAAAAAAAGAAAGGTGGAAAAGGTGCA AAGCCCATTCGTGCAGCTAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ΔLOTUS2 single-strand donor</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Single-stranded repair template</td>
+      <td>TTGTTCAAAGACTGTCGTCTACAGTGGCTGTTCCAGTTTTGCAACCCGGGAAGGAACCCTGGTTCACAAATTTTGGAGCT GCGTTAAAGAAATCAATGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ΔIDR1 single strand donor</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Single-stranded repair template</td>
+      <td>caatacattcgttttcagCGCAAATGAGGACAATCAAGAtCTAATtAAcCTtATtTCtAAACAaAAaAAgAAgAAaAAgG GaGGAAAgGGaACaGTcGTgCAgAGACTtTCtTCaACtGTtGCaGTgCCgGTcTTaCAgCCaGGaATcGAtTCaAAaTGc ATGCCTTCGATCGTTGATTTTTCGAACAACGTTAAGCGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ΔIDR2 single strand donor</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Single-stranded repair template</td>
+      <td>ttttagGACTCACAGTGAGTGCCCGTAGCGTAATGAGATCCAGTAAAGGAGAAGAACTTTTCACTGGAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5′ amplify eggd-1::GFP for cloning</td>
+      <td>Integrated DNA Technologies</td>
+      <td>PCR primer</td>
+      <td>CTTCTT CCTAGG ATG ACGGAAGCTGACGATCCCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>3′ amplify eggd-1::GFP for cloning</td>
+      <td>Integrated DNA Technologies</td>
+      <td>PCR primer</td>
+      <td>CTTCTT GAGCTC TCA CGATTGGAAGTAGAGGTTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5′ amplify mCherry::GLH-1 for cloning</td>
+      <td>Integrated DNA Technologies</td>
+      <td>PCR primer</td>
+      <td>CTTCTT CCTAGG ATGGTCTCAAAGGGTGAAGAAGATAACATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>3′ amplify mCherry::GLH-1 for cloning</td>
+      <td>Integrated DNA Technologies</td>
+      <td>PCR primer</td>
+      <td>CTTCTT GAGCTC CTACCAGCCTTCTTCATCTTGA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
 
 Worms were cultured according to standard methods at 20°C unless otherwise indicated (Brenner, 1974). N2 strain serves as untagged control. pgl-1::TagRFP strain serves as wild-type in germ line atrophy characterization, brood size counting, and germ line mortality assay. Mutant animals were generated using CRISPR editing or obtained from the CGC. All strains used in this study are listed in the Key resources table.
 
-## CRISPR genome editing
+### CRISPR genome editing
 
 TurboID strains, eggd-1::GFP::TEV::FLAG::AID, and mCherry::eggd-2 were generated by the co-CRISPR strategy (Kim et al., 2014). A vector containing a dominant allele of rol-6 was used as a co-injection marker. Repair templates for insertion were made by PCR and purified by agarose gel purification. Prior to injection, repair templates were melted to improve HDR efficiency (Ghanta and Mello, 2020). Roller F1 were picked and presence of insertions at edited loci were screened for by PCR. Domain deletion alleles of eggd-1 were generated by co-injecting guide RNAs targeting the region flanking the deletion. Single-stranded DNA donors served as a repair template for precise mutations as described (Paix et al., 2017). Guide RNA sequences, repair oligo sequences, and primer sequences for repair template amplification can be found in the Key resources table.
 
-## Molecular cloning and generation of ectopic expression strains
+### Molecular cloning and generation of ectopic expression strains
 
 Endogenously tagged loci of eggd-1::GFP, and mCherry::glh-1 were amplified by PCR. pCFJ104 (Pmyo-3::mCherry::unc-54) was digested with XbaI and SacI, the plasmid backbone was separated by gel purification. PCR products were digested with XbaI or AvrII and SacI and ligated into the pCFJ104 backbone. Plasmids were isolated by miniprep and sequence-verified by sanger sequencing. unc-119(ed9) animals were injected with a plasmid mixture including the genes of interest and pCFJ151 that contains C.Briggsae unc-119 rescue gene (Frøkjaer-Jensen et al., 2008). non-unc F1 progeny were single-picked. non-unc F2 progeny were used to establish at least three independent transmission lines that carry extrachromosomal arrays.
 
-## RNAi by feeding
+### RNAi by feeding
 
 The HT115 RNAi feeding strains were picked from the C. elegans RNAi Collections (Key resources table) (Kamath and Ahringer, 2003; Lamesch et al., 2004). All RNAi experiments were performed on NGM plates supplemented with 50 µg/ml ampicillin and 5 mM IPTG. For the genetic analysis, L4 larvae were transferred to plates seeded with HT115 bacteria expressing dsRNAs against the gene of interest. After 4–5 days, their progeny were imaged and scored.
 
-## Brood size counting
+### Brood size counting
 
 TurboID animals were assayed at 15°C. Wild-type, eggd-1, eggd-2, and eggd-1; eggd-2 animals were assayed at 20°C at approximately generation 12 after outcrossing one time to wild-type. Newly hatched L1 larvae were placed singly on plates. Halfway through egg-laying, animals were transferred to fresh plates until egg-laying stopped. The brood size for each animal was calculated by adding the progeny on the original and transferred plates.
 
-## Germ line mortality assay
+### Germ line mortality assay
 
 Prior to starting the assay, animals were freshly outcrossed once to wild-type animals. 10 lines of wild-type, eggd-1, eggd-2, and eggd-1; eggd-2 were grown continuously at 20°C on OP50. Four L1 larvae for each line were transferred to fresh plates seeded with OP50 bacteria every two generations (approximately every 4–5 days). Lines were recorded as fertile until animals no longer produce viable progeny.
 
-## Streptavidin staining
+### Streptavidin staining
 
 Animals were synchronized by hypochlorite lysis. Synchronized L1 were transferred to NGM seeded with OP50 and incubated at 15°C until L4 stage. Animals were then transferred to 25°C overnight for biotin labeling. Worms were suspended in M9 and washed three times. Animals were then transferred to M9 supplemented with 0.25 mM levamisole and dissected on slides coated with poly-L-Lysine. Slides were submerged in –20°C methanol for 10 min, followed by 15 min in 3% paraformaldehyde solution in phosphate-buffered saline (PBS) at room temperature. Paraformaldehyde solution was removed, and slides were washed 3× in PBS and then 1:2000 streptavidin-Alexa Fluor 488 in PBS + 0.1% Triton X-100 was added to the slides. Slides were kept in a humidified chamber overnight at 4°C. The slides were then washed four times for 30 min with PBS + 0.1% Triton X-100 and two times with PBS. 5 µl of antifade media with DAPI was added to the slides and covered with a coverslip. The slides were sealed with nail polish and kept at 4°C until imaging.
 
-## Whole worm fixation
+### Whole worm fixation
 
 Animals carrying myo-3p::glh-1 and/or myo-3p::eggd-1 extrachromosomal arrays were resuspended in M9 and washed two times to remove bacteria. M9 was replaced with –20°C methanol. Animals were incubated at –20°C for 15 min and then briefly centrifuged at 100×g. methanol was removed and replaced with –20°C acetone. Tubes were kept at –20°C for 20 min, and animals were centrifuged as before. Acetone was replaced with a solution of 50% acetone, 50% ultrapure water, and animals were incubated at –20°C for 15 min. This process was repeated with 25% acetone at 4°C. Fixed animals were centrifuged and supernatant was removed. 30 µl of antifade medium+ DAPI was added to the tube. Fixed animals were transferred to slides using a glass Pasteur pipette, covered with a coverslip, and sealed with nail polish.
 
-## Microscopy
+### Microscopy
 
 Live animals were suspended in M9 buffer, immobilized using 0.5 mM levamisole, and mounted on fresh 5% agar pads. Live embryos were dissected from gravid adult worms in M9 buffer and transferred to agar pads for imaging. Spinning disc confocal images were acquired using a Nikon TiE inverted microscope equipped with an Andor Revolution WD spinning disc system. Images were taken using a CFI Plan Apo VC 60×/1.2NA water immersion objective, or a CFI Plan Apo VC 100×/1.4NA oil immersion objective with an Andor Neo sCMOS detector. Airyscan images were acquired using a Zeiss Axio Observer microscope equipped with an Airyscan two detector and a Plan Apo 63×/1.4NA objective. Image processing was performed using standard 3D Airyscan processing.
 
-## Quantification of PGL-1::TagRFP in the rachis and edge of the germ line
+### Quantification of PGL-1::TagRFP in the rachis and edge of the germ line
 
-Single-plane 54×37.8 µm2 rectangular optical cross-section images of the adult germ line in the pachytene region were obtained for four separate animals. Due to the heterogeneity of PGL-1::tagRFP foci in eggd-1 and eggd-1; eggd-2 mutants, it was challenging to accurately quantify PGL-1::tagRFP signals that are associated with germ cell nuclei or rachis. Instead, we took an unbiased approach. ROI (region of interest) was drawn about each edge of the germ line, and the rachis (Figure 3—figure supplement 1B). The background fluorescence of the image was determined by drawing an ROI outside of where the animal was located. The mean intensity of each ROI was determined using the measure function in ImageJ and the ratio of rachis and edge PGL-1::TagRFP was calculated as follows:2*rachis-backgroundedge1+edge2-2*background
+Single-plane 54×37.8 µm2 rectangular optical cross-section images of the adult germ line in the pachytene region were obtained for four separate animals. Due to the heterogeneity of PGL-1::tagRFP foci in eggd-1 and eggd-1; eggd-2 mutants, it was challenging to accurately quantify PGL-1::tagRFP signals that are associated with germ cell nuclei or rachis. Instead, we took an unbiased approach. ROI (region of interest) was drawn about each edge of the germ line, and the rachis (Figure 3—figure supplement 1B). The background fluorescence of the image was determined by drawing an ROI outside of where the animal was located. The mean intensity of each ROI was determined using the measure function in ImageJ and the ratio of rachis and edge PGL-1::TagRFP was calculated as follows:
 
-## Germ line atrophy characterization
+$$
+\frac{2*rachis-background}{edge1+edge2-2*background}
+$$
+
+### Germ line atrophy characterization
 
 Wild-type animals and eggd mutants expressing PGL-1::TagRFP were synchronized by hypochlorite lysis and plated to NGM on day 1. Animals were maintained at 20°C until day 4 and imaged using a Leica DMIRE2 inverted microscope equipped with a Zeiss Axiocam 305 mono camera using a dry 40× objective. Germ line defects were broadly sorted into four categories: normal, small, atrophy, and absent/few cells.
 
-## Streptavidin-HRP blotting
+### Streptavidin-HRP blotting
 
 100 synchronized L1 animals were plated to NGM. Animals were grown at 15°C until they reached the L4 stage. Animals were then incubated overnight at 25°C and harvested. Worm lysates were prepared by boiling animals at 100°C, and then were separated on precast denaturing polyacrylamide gels, transferred onto PVDF membrane (Bio-Rad), and probed with HRP-Conjugated Streptavidin 1:4000 (Thermo Fisher Scientific) for detection using Clarity ECL Western Blotting Substrate (Bio-Rad). The blot then was stained by Coomassie blue (Thermo Fisher Scientific).
 
-## TurboID proximity-based labeling
+### TurboID proximity-based labeling
 
 TurboID strains and N2 animals were synchronized by hypochlorite lysis. 40,000 synchronized L1 animals were plated to NGM seeded with concentrated OP50 food. Animals were grown at 15°C until they reached the L4 stage. Animals were then incubated overnight at 25°C, collected in M9 and washed two times in M9, once in ddH2O and once in RIPA buffer (50 mM Tris-HCl (pH 7.5), 150 mM NaCl, 0.125% SDS, 0.125% sodium deoxycholate, 1% Triton X-100 in ddH2O). Animals were then resuspended in RIPA buffer supplemented with cOmplete mini EDTA-free Protease Inhibitor Cocktail tablets (Sigma-Aldrich). Resuspended pellets of animals were flash-frozen in liquid N2 until further use. Worm pellets were lysed using a bead mill homogenizer. Lysate was centrifuged at 14,000× RPM. The supernatant was mixed with 80 µl Streptavidin magnetic beads (Thermo Fisher Scientific) and incubated overnight at 4°C with constant rotation. Beads were then washed for 5 min, two times with RIPA buffer, once with 1 M KCl, once with 0.1 M Na2CO3, and once with 2 M urea in 10 mM Tris-HCl (pH 8.0). Beads were resuspended in PBS and subjected to on-beads trypsin digestion.
 
-## On beads digestion and mass spectrometry analysis
+### On beads digestion and mass spectrometry analysis
 
 Streptavidin magnetic beads were washed with 50 mM ammonium bicarbonate three times. After the third wash, DTT (Thermo Fisher Scientific) was added and the sample was incubated at 4°C for 15 min. After the incubation, iodoacetamide was added and the sample was kept in dark at room temperature for 30 min. 250 ng of sequencing grade-modified trypsin (Promega) prepared in 50 mM ammonium bicarbonate was mixed with sample at 37°C overnight. The reaction was quenched by adding acetic acid for acidification. Supernatant was taken out and concentrated for LC/MSMS analysis.
 
 Capillary-liquid chromatography-nanospray tandem mass spectrometry of protein identification was performed on an orbitrap Fusion mass spectrometer equipped with an EASY-Spray source (Thermo Fisher Scientific). Sequence information from the MS/MS data was processed by converting the raw files into a merged file (.mgf) using MSConvert (ProteoWizard). Isotope distributions for the precursor ions of the MS/MS spectra were deconvoluted to obtain the charge states and monoisotopic m/z values of the precursor ions during the data conversion. The resulting.mgf files were searched using Mascot Daemon by Matrix Science version 2.5.1 and the database was searched against C. elegans Uniprot database.
 
-## TurboID protein enrichment analysis
+### TurboID protein enrichment analysis
 
 Following pre-processing, the data were further analyzed using custom R scripts. Briefly, the mean spectral count (n=3) was compared between TurboID tagged strains and wild-type using a pseudo-count of 0.01 to account for zeros in the data; p-values were derived using one-tailed t-test. Volcano plots were generated using ggplot2 and Venn diagrams of enriched proteins were generated using BioVenn.
 
-## Protein domain identification
+### Protein domain identification
 
 Putative LOTUS domains of EGGD-1 and EGGD-2 were first identified using HHpred (Zimmermann et al., 2018). To confirm the presence of LOTUS domains in EGGD-1 and EGGD-2, secondary structure prediction was performed using 103 amino acid long windows about the putative LOTUS domains along with the known extended LOTUS domains from Drosophila melanogaster Oskar, and Mus musculus TDRD5 and TDRD7 using PROMALS3D (Pei et al., 2008). EGGD-1 and EGGD-2 LOTUS domains were determined to be extended LOTUS domains by the presence of an alpha-helical C-terminal extension (α5) (Jeske et al., 2017). IDRs were defined using the IUPRED server (Dosztányi et al., 2005). Regions with sustained IUPRED scores over 0.5 were classified as disordered regions.
 
-## Protein-protein interaction network
+### Protein-protein interaction network
 
 Proteins enriched in both DEPS-1 and GLH-1 TurboID pull-down experiments were submitted for PPI network analysis to STRING (string-db.org) using a high confidence and full interaction method with all active interaction sources selected (Jensen et al., 2009). The resulting network was exported to Cytoscape for visualization (Shannon et al., 2003).
 
-## Protein disorder analysis
+### Protein disorder analysis
 
 Using a custom shell script, the longest protein isoform for each protein in the C. elegans proteome was parsed from a protein annotation fasta file (C. elegans release WS230). The per-residue disorder for each protein was then calculated using IUPRED (Dosztányi et al., 2005). A custom python script was then used to calculate the mean disorder for each protein by dividing total IUPRED score by protein length. A custom R script was used to compare the mean disorder of proteins between proteins enriched in either/both turboID tagged strain with that in a random control. The random sample of proteins used for comparison was generated using the sample_n() R function from the dplyr R package. A Wilcoxon rank-sum test was used to statistically compare the disorder of tagged proteins with that of the randomized control group.
 
-## Gene ontology analysis
+### Gene ontology analysis
 
 Enriched proteins present in both turboID tagged strains were used in GO analysis using g:Profiler (Raudvere et al., 2019). Results from g:Profiler GO analysis were plotted using a custom R script.
 
-## Data availability
+### Data availability
 
 The full data set including raw data and metadata files is deposited to Dryad (https://doi.org/10.5061/dryad.q2bvq83k9). All scripts used in this report are available at GitHub (https://github.com/benpastore/TurboID; Pastore, 2021; copy archived at swh:1:rev:24fd901d6cb08c2689d08cd4d7c09173a90decb9). Raw mass spectrometry data are available via PRIDE and ProteomeXchange under the accession number PXD027998.

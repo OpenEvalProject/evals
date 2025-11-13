@@ -20,24 +20,24 @@
 
 ### Affiliations
 
-1. https://ror.org/04drvxt59 Beth Israel Deaconess Medical Center, Harvard Medical School Boston United States
-2. https://ror.org/04b6nzv94 Brigham and Women’s Hospital, Harvard Medical School Boston United States
-3. https://ror.org/00rzspn62 University of Malaya Kuala Lumpur Malaysia
-4. https://ror.org/046rm7j60 University of California, Los Angeles Los Angeles United States
-5. https://ror.org/01xf75524 H Lee Moffitt Cancer Center and Research Institute Tampa United States
-6. https://ror.org/040gcmg81 National Cancer Institute Bethesda United States
-7. https://ror.org/03hjgt059 ISGlobal Barcelona Spain
-8. https://ror.org/001w7jn25 Charité - Universitätsmedizin Berlin Berlin Germany
-9. https://ror.org/046ak2485 Freie Universität Berlin Berlin Germany
-10. https://ror.org/01hcx6992 Humboldt Universität zu Berlin Berlin Germany
-11. https://ror.org/04cpxjv19 McGill University Health Centre Montreal Canada
+1. Beth Israel Deaconess Medical Center, Harvard Medical School Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
+2. Brigham and Women’s Hospital, Harvard Medical School Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
+3. University of Malaya Kuala Lumpur Malaysia ([ROR:00rzspn62](https://ror.org/00rzspn62))
+4. University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+5. H Lee Moffitt Cancer Center and Research Institute Tampa United States ([ROR:01xf75524](https://ror.org/01xf75524))
+6. National Cancer Institute Bethesda United States ([ROR:040gcmg81](https://ror.org/040gcmg81))
+7. ISGlobal Barcelona Spain ([ROR:03hjgt059](https://ror.org/03hjgt059))
+8. Charité - Universitätsmedizin Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
+9. Freie Universität Berlin Berlin Germany ([ROR:046ak2485](https://ror.org/046ak2485))
+10. Humboldt Universität zu Berlin Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))
+11. McGill University Health Centre Montreal Canada ([ROR:04cpxjv19](https://ror.org/04cpxjv19))
 12. Pima County Tucson United States
-13. https://ror.org/02zhqgq86 University of Hong Kong Hong Kong China
-14. https://ror.org/02dwcqs71 All India Institute of Medical Sciences New Delhi India
-15. https://ror.org/013meh722 University of Cambridge Cambridge United Kingdom
+13. University of Hong Kong Hong Kong China ([ROR:02zhqgq86](https://ror.org/02zhqgq86))
+14. All India Institute of Medical Sciences New Delhi India ([ROR:02dwcqs71](https://ror.org/02dwcqs71))
+15. University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 16. Australian Centre for the Prevention of Cervical Cancer Melbourne Australia
-17. https://ror.org/043mz5j54 University of California, San Francisco San Francisco United States
-18. https://ror.org/03grnna41 Melbourne Medical School, Royal Women’s Hospital Melbourne Australia
+17. University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+18. Melbourne Medical School, Royal Women’s Hospital Melbourne Australia ([ROR:03grnna41](https://ror.org/03grnna41))
 
 † Corresponding author
 
@@ -75,7 +75,7 @@ Similarly, there were drastic reductions in cervical cancer screening and treatm
 
 We have yet to see how the disruption in health services due to the COVID-19 pandemic will impact cervical cancer burden on a global scale. Diagnoses of all cancers were reduced during the COVID-19 pandemic relative to pre-pandemic rates, resulting in a backlog of diagnoses (Eskander et al., 2022). A study in 2022 in Romania reported presentation of cervical cancer at more advanced stages during the pandemic, which accompanied significant changes in treatment courses due to interruptions in surgical and radiation services (Popescu et al., 2022). Recent modeling studies from the United Kingdom and United States estimate that the burden of cervical cancer will increase regardless of the length of time taken to catch up on missed screening, diagnosis and treatment due to COVID-19 (Castanon et al., 2021b; Burger et al., 2021). It is expected that greater disparity in these effects will be seen in settings without capacity to augment screening, diagnostic and treatment services to account for the backlog (Bonadio et al., 2021; Castanon et al., 2021a).
 
-## Why was cervical screening so vulnerable during the pandemic?
+### Why was cervical screening so vulnerable during the pandemic?
 
 Cervical cancer screening was particularly vulnerable to losing traction during the COVID-19 pandemic because at the start of the pandemic, screening in most countries required a pelvic examination. Pelvic examination is difficult to make “COVID-friendly”. Counseling with examinations and treatment takes up to 30 minutes in a closed space. Disinfection protocols require additional time between patients. Waiting times for services are thus long, and a risk of exposure to a high volume of potential contacts is inherent to the process. Clinics were forced to compensate with reduced patient volume (Sormani et al., 2021).
 
@@ -119,7 +119,7 @@ Cervical screening programs must capitalize on the momentum of individual engage
 
 Finally, COVID-19 forced the rapid development of web-based systems that could be adapted to engage individuals and monitor cervical screening programs (Dixon et al., 2022). These advances could create options that complement existing technological solutions that already exist. Brazil has demonstrated the success of an automated call and recall system to invite women due for screening, provide results directly and schedule follow-up appointments (Corrêa et al., 2022). Bangladesh monitored cervical screening during the pandemic through customization of the District Health Information Software (DHIS2), a platform that demonstrated its flexibility in adapting to pandemic tracking during the pandemic (Basu et al., 2021). Such technological innovation can optimize the implementation of population-level screening with HPV self-sampling and facilitate monitoring and evaluation of cervical cancer programs (recommendations 10 and 11) (Woo et al., 2021).
 
-## Reimagining cervical cancer prevention
+### Reimagining cervical cancer prevention
 
 The success of cervical cancer elimination lies beyond innovation, technology and commodities – it must be one component of strong health systems with long-term strategies for managing endemic diseases. Integration into existing health systems was an area where the global coordinated response to COVID failed – it gathered international organizations without representation of global voices and failed to include sufficient perspective on delivery within variable health systems (World Health Organization, 2022b). A robust international network can support an equitable allocation of commodities and implementation for cervical cancer elimination. However, top-down global policy that is not contextualized in individual national planning is not effective long-term and perpetuates disparities. We need to examine the model by which externally-funded programs are designed and implemented, and focus on sustained success beyond project and strategy cycles. We need to work with countries to develop meaningful process indicators of successful programming that will lead to long-term progress towards eliminating cervical cancer. Pre-specified indicators must be subject to routine and rapid adjustment based on feedback that will improve programming (recommendation 12). Furthermore, long-term outcomes assessing progress on cervical cancer prevention, must include not only health indicators, but also consider economic and social metrics (recommendation 13).
 

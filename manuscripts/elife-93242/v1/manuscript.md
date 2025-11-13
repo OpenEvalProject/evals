@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00cv9y106 Department of Data Analysis and Mathematical Modelling, Ghent University Ghent Belgium
+1. Department of Data Analysis and Mathematical Modelling, Ghent University Ghent Belgium ([ROR:00cv9y106](https://ror.org/00cv9y106))
 
 † Corresponding author
 
@@ -28,9 +28,9 @@ It has been described that some known resistance mechanisms are outside of the m
 
 We posit that the most pertinent challenge healthcare workers face regarding AMR is to choose between all possible drugs given an infection, not whether one specific drug will be effective or not. For this reason, we argue that our models and evaluation metrics should be designed to optimally answer that question. In this study, a recommender model is proposed that can predict AMR for the whole range of pathogens and drugs encountered in clinical microbiology. In addition, species-specific recommender models for a range of common species are also trained. Our method jointly learns representations for antibiotic drugs and bacterial MALDI-TOF spectra. It can be used to recommend the most likely drug to work for any drug–spectrum combination. Consequently, the model is broadly applicable and practical to use. To summarize, our contributions are as follows:
 
-## Related work
+### Related work
 
-## MALDI-TOF-based machine learning
+#### MALDI-TOF-based machine learning
 
 The most canonical task for MALDI-TOF-based methods is species identification. Identification solutions are usually provided by the MS manufacturers and are built on large, proprietary, in-house databases (van Belkum et al., 2012). It is unclear how these closed-source identification pipelines work, but it is likely that query spectra are directly compared to the in-house database in an approach akin to nearest neighbors (Dauwalder et al., 2023). While this approach works excellently for identification of most species, some strains remain problematic (Cao et al., 2018; Vrioni et al., 2018). Furthermore, by presumably focusing on the presence or absence of specific peaks, a lot of spectral information stands unused (Florio et al., 2018).
 
@@ -38,7 +38,7 @@ For various difficult prediction cases, such as strain typing, researchers often
 
 During peer review, our attention was brought to a similar concurrent study by Visonà et al., 2023. Their study similarly shows that recommender systems-like models outperform more narrowly trained single-species and single-drug models. Their analysis, however, remains limited to fingerprint-based molecular representations. In addition, in this work, we demonstrate transfer learning between hospitals.
 
-## Dual-branch neural networks
+#### Dual-branch neural networks
 
 The idea of processing and combining two separate streams of information with two neural networks is applied in many fields of machine learning, collectively referred to as deep multitarget prediction (Waegeman et al., 2019; Iliadis et al., 2022).
 
@@ -50,13 +50,13 @@ Most of these applications can, to varying extents, be interpreted as (collabora
 
 ## Methods
 
-## Data
+### Data
 
 To train models, we use the recently published DRIAMS database, consisting of 765,048 AMR measurements derived from 55,773 spectra across four different hospitals, spanning in total 74 different drugs (Weis et al., 2022). (These figures reflect the size of the dataset as downloaded from the original Dryad repository https://doi.org/10.5061/dryad.bzkh1899q, and after processing. For example, the number of spectra listed here corresponds to all spectra in DRIAMS for which there exists at least one AMR measurement. The total number of spectra in DRIAMS counts 250,070, but no labels are associated with these extra spectra. Further, the naming of drugs was further preprocessed such that every drug can be linked to a single chemical identifier. For more information on which drugs were merged and how this was performed, see Appendix 1.) Every drug is characterized by a canonical SMILES string obtained from PubChem (Kim et al., 2023). As in the original DRIAMS publication, AMR measurements are binarized according to the EUCAST norms per drug. Specifically, intermediate or resistant values are assigned a positive label, and susceptible samples a negative one. Furthermore, spectra are identically processed as in the original publication. Briefly, the following steps are performed: (1) square-root transformation of the intensities, (2) smoothing using a Savitzky–Golay filter with half-window size of 10, (3) baseline correction using 20 iterations of the SNIP algorithm, (4) trimming to the 2000–20,000 Da range, (5) intensity calibration so that the total intensity sums to 1, and (6) binning the intensities by summing all values in intervals of 3 Da. After preprocessing, every spectrum is represented as a 6000-dimensional vector.
 
 The main experiments concern models that are trained on data from one hospital only (DRIAMS-A, University Hospital Basel). All spectra and measurements derived from the other three hospitals in DRIAMS are left out for transfer learning experiments (see Results). Within DRIAMS-A, all spectra from before 2018 are allocated to the training set, and all spectra measured during 2018 are evenly split between validation and test set. This split in time reflects a realistic evaluation scenario, as models trained on historical data need to generalize to new patients possibly infected by newly evolved strains. The final sizes of all splits are as follows: 409,395 labels across 28,331 spectra for the training set, 76,431 labels across 4994 spectra for the validation set, and 76,133 labels across 4999 spectra for the test set.
 
-## Metrics
+### Metrics
 
 The main objective of this study is to train models to effectively recommend treatments for patients. Hence, unless otherwise noted, metrics are computed on a per-patient basis, and then averaged. This is equivalent to macro-averaged metrics, but then computed per instance (spectrum), instead of per class (drug) (Waegeman et al., 2019). For simplicity, we omit the ‘macro’ prefix from metrics, and – unless otherwise indicated – always use spectrum-macro metrics.
 
@@ -64,21 +64,57 @@ The area under the receiver operating characteristic curve (ROC-AUC) measures th
 
 The Precision at 1 of the negative class (Prec@1(-)) evaluates how often the top-ranked prediction is correct. Hence, in this case, it reports the proportion of cases for which the ‘most likely susceptible drug’ prediction is actually an effective one. In a scenario where the top recommended drug is always administered, it corresponds to the percentage of correctly suggested treatments.
 
-## Model architecture
+### Model architecture
 
-We formulate AMR prediction as a multitarget classification problem with side information for both instances and targets, also referred to as dyadic prediction (Waegeman et al., 2019). In this context, let us denote a sample in the dataset D by a triplet (𝒔i,𝒅j,yij), where yij denotes the resistance label of a microbial spectrum 𝒔i∈{1,...,n} w.r.t. a drug 𝒅j∈{1,...,m}. This dataset can be arranged in an incomplete score matrix 𝒀∈{0,1}n×m. In what follows, the final architectural set-ups used to present the results are described. For details on hyperparameter tuning, readers are referred to Appendix 2.
+We formulate AMR prediction as a multitarget classification problem with side information for both instances and targets, also referred to as dyadic prediction (Waegeman et al., 2019). In this context, let us denote a sample in the dataset $D$ by a triplet $(𝒔_{i},𝒅_{j},y_{ij})$, where $y_{ij}$ denotes the resistance label of a microbial spectrum $𝒔_{i\in{1,...,n}}$ w.r.t. a drug $𝒅_{j\in{1,...,m}}$. This dataset can be arranged in an incomplete score matrix $𝒀\in{0,1}^{n\timesm}$. In what follows, the final architectural set-ups used to present the results are described. For details on hyperparameter tuning, readers are referred to Appendix 2.
 
-The model consists of two separate neural network embedders Es(⋅) and Ed(⋅) for processing the spectra and drugs, respectively. The resulting instance and target embeddings 𝒙i and 𝒕j are then combined into a single score by their scaled dot product y^=𝒙i⋅𝒕jh (Rendle et al., 2020). The scaling factor h, with h the dimensionality of both embeddings, is inspired by the formulation of self-attention (Vaswani et al., 2017). It ensures the dot products to be of manageable magnitudes, even for large values of h. This score can be used together with the sigmoid function and the cross-entropy loss to optimize the two-branch neural network to map a spectrum–drug pair to a resistance label (Iliadis et al., 2022). An overview of the model is visualized in Figure 1.
+The model consists of two separate neural network embedders $E_{s}(⋅)$ and $E_{d}(⋅)$ for processing the spectra and drugs, respectively. The resulting instance and target embeddings $𝒙_{i}$ and $𝒕_{j}$ are then combined into a single score by their scaled dot product $y^=\frac{𝒙_{i}⋅𝒕_{j}}{\sqrt{h}}$ (Rendle et al., 2020). The scaling factor $\sqrt{h}$, with $h$ the dimensionality of both embeddings, is inspired by the formulation of self-attention (Vaswani et al., 2017). It ensures the dot products to be of manageable magnitudes, even for large values of $h$. This score can be used together with the sigmoid function and the cross-entropy loss to optimize the two-branch neural network to map a spectrum–drug pair to a resistance label (Iliadis et al., 2022). An overview of the model is visualized in Figure 1.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/93242/elife-93242-fig1-v1.jpg)
 
-**Figure 1.:** Antimicrobial resistance (AMR) labels of spectrum–drug pairs can be represented in an incomplete matrix. A microbial sample that is susceptible to a drug is denoted by a negative label (orange), whereas positive labels (blue) signify an intermediate or resistant combination. Instance (spectrum) and target (drug) embeddings  and 𝒙i are obtained from their respective input representations passed through their respective neural network branch. The two resulting embeddings are aggregated to a single score by their (scaled) dot product. The cross-entropy loss optimizes this score to be maximal or minimal for positive or negative combinations of microbial spectra and drugs, respectively.𝒕j
+**Figure 1.:** Antimicrobial resistance (AMR) labels of spectrum–drug pairs can be represented in an incomplete matrix. A microbial sample that is susceptible to a drug is denoted by a negative label (orange), whereas positive labels (blue) signify an intermediate or resistant combination. Instance (spectrum) and target (drug) embeddings $𝒙_{i}$ and $𝒕_{j}$ are obtained from their respective input representations passed through their respective neural network branch. The two resulting embeddings are aggregated to a single score by their (scaled) dot product. The cross-entropy loss optimizes this score to be maximal or minimal for positive or negative combinations of microbial spectra and drugs, respectively.
 
-The representations of the instance vectors 𝒙i are extracted from a neural network Es(⋅) operating on the processed and binned MALDI-TOF spectra 𝒔i. Es(⋅) is parameterized by a multi-layer perceptron (MLP), consisting of a series of fully connected layers. Between every two such layers, a series of operations consisting of (1) a GeLU activation (Hendrycks and Gimpel, 2016), (2) a dropout rate of 0.2 (Srivastava et al., 2014), and (3) layer normalization (Ba et al., 2016) is applied. We include multiple model sizes in our final results (Table 1). To make comparisons easier, all models output the same number of hidden dimensions that are used in the dot product, 𝒙i∈ℝ64.
+The representations of the instance vectors $𝒙_{i}$ are extracted from a neural network $E_{s}(⋅)$ operating on the processed and binned MALDI-TOF spectra $𝒔_{i}$. $E_{s}(⋅)$ is parameterized by a multi-layer perceptron (MLP), consisting of a series of fully connected layers. Between every two such layers, a series of operations consisting of (1) a GeLU activation (Hendrycks and Gimpel, 2016), (2) a dropout rate of 0.2 (Srivastava et al., 2014), and (3) layer normalization (Ba et al., 2016) is applied. We include multiple model sizes in our final results (Table 1). To make comparisons easier, all models output the same number of hidden dimensions that are used in the dot product, $𝒙_{i}\inℝ^{64}$.
 
-Drug identity can be communicated to the model in a number of ways. In this work, we study the following different input representations 𝒅j and embedder Ed(⋅) combinations:
+**Table 1.**
+ All tested model sizes for the (instance) spectrum branch.Hidden sizes represent the evolution of the hidden state dimensionality as it goes through the model, with every hyphen defining one fully connected layer. The listed number of parameters only includes those of the instance (spectrum) branch.
 
-For all these combinations, the embedder outputs target embeddings 𝒕j∈ℝ64. For more details on the different drug embedders and their hyperparameters (as well as their tuning), see Appendix 2. For every combination of spectrum embedder (four sizes: S, M, L, and XL) and drug embedder (seven types), six different learning rates ({1e-5,5e-5,1e-4,5e-4,1e-3,5e-3}) are tested. For all these different combinations, five models are trained (using different random seeds for model initialization and batching of data). For every spectrum and drug embedder combination, only results from the best learning rate are presented; that is, the learning rate resulting in the best average validation ROC-AUC for that combination.
+
+<table>
+  <thead>
+    <tr>
+      <th>Size</th>
+      <th># weights</th>
+      <th>Hidden sizes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S</td>
+      <td>1,578,176</td>
+      <td>6000-256-128-64</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>3,246,784</td>
+      <td>6000-512-256-128-64</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>6,846,144</td>
+      <td>6000-1024-512-256-128-64</td>
+    </tr>
+    <tr>
+      <td>XL</td>
+      <td>15,093,440</td>
+      <td>6000-2048-1024-512-256-128-64</td>
+    </tr>
+  </tbody>
+</table>
+
+Drug identity can be communicated to the model in a number of ways. In this work, we study the following different input representations $𝒅_{j}$ and embedder $E_{d}(⋅)$ combinations:
+
+For all these combinations, the embedder outputs target embeddings $𝒕_{j}\inℝ^{64}$. For more details on the different drug embedders and their hyperparameters (as well as their tuning), see Appendix 2. For every combination of spectrum embedder (four sizes: S, M, L, and XL) and drug embedder (seven types), six different learning rates (${1e-5,5e-5,1e-4,5e-4,1e-3,5e-3}$) are tested. For all these different combinations, five models are trained (using different random seeds for model initialization and batching of data). For every spectrum and drug embedder combination, only results from the best learning rate are presented; that is, the learning rate resulting in the best average validation ROC-AUC for that combination.
 
 All models are trained with the Adam optimizer (Kingma and Ba, 2014) for a maximum of 50 epochs with a batch size of 128. A linear learning rate warm-up over the first 250 steps is applied, after which the rate is kept constant. As every epoch constitutes one pass over every label and, hence, multiple passes over every individual drug and spectrum, a branch can technically already be overfitting before the end of the first epoch. Because of this, performance on the validation set is checked every tenth of an epoch. Training is halted early when validation ROC-AUC has not improved for 10 validation set checks. The checkpoint of the best performing model (in terms of validation ROC-AUC) is used as the final model.
 
@@ -86,7 +122,7 @@ All models are trained with the Adam optimizer (Kingma and Ba, 2014) for a maxim
 
 The following section will first relay the results of the different dual-branch model configurations. Afterward, the ‘general’ AMR recommender is matched up against ‘species-specific’ and ‘species–drug-specific’ models. Finally, the models’ capabilities and representations are examined through transfer learning and embeddings.
 
-## Encoding species and drugs effectively
+### Encoding species and drugs effectively
 
 Figure 2 shows the performance of all trained models in terms of their average ROC-AUC and Prec@1(-). It can be seen that, in general, performance differences between model configurations occupy a small margin. However, trends can still be found. Models using Morgan fingerprints typically outperform other drug embedding strategies. Morgan fingerprints provide a compressed and preprocessed input format, the nature of which provides an apparent advantage over input representations that require more pattern extraction. The small number of different antimicrobial drugs may not be conducive to learning complex representations. Indeed, embedding drugs without a compound information (i.e., one-hot embedding) is a competitive approach for this problem, resulting in the – on average – second best models in terms of ROC-AUC. On the spectrum embedder side, it is observed that the medium or large variants typically perform best. The full ROC curve (showing sensitivity and specificity) for the best-performing model is shown in Appendix 3—figure 1.
 
@@ -98,15 +134,58 @@ Performance in terms of Macro ROC-AUC can be found in Appendix 3—figure 2. The
 
 In Appendix 3—figure 3, the performance of the spectrum embedder sizes is compared against a linear baseline. The linear baseline uses the same preprocessed input spectrum representation, but only uses a single linear combination to produce an embedding. For this comparison, only the Morgan fingerprint drug embedders are used as they produce the best-performing models overall. Models using nonlinear multi-layer spectrum embedders obtain considerably better performance over linear embedders.
 
-## Species-specific models improve recommendation
+### Species-specific models improve recommendation
 
 The recommender systems presented in the previous section provide an incredibly general tool. Trained as single models for all species and drugs, their versatility is unparalleled compared to previous studies that create classifiers for specific drug–species combinations (Weis et al., 2020b). In between the extremes of ‘one model for everything’ and ‘a model per species and per drug’, there lies a compromising approach: a species-specific recommender system for all drugs. Such recommender systems would be more specialized in nature, but their usefulness hinges upon having done prior species identification. As these are typically included in the MS’ manufacturer’s software, a more specialized species-specific recommender may provide better performance without incurring extra cost. The disadvantage of such models is that (1) they cannot be used for species for which there is not enough data to train a separate model (i.e., rarely occurring species), and (2) they rely on the prior identification step to be correct.
 
 Here, we create species-specific recommender models for the 25 most occurring species in DRIAMS-A. The training setup for these models is kept the same as in the previous section. The difference between ‘general’ recommenders and ‘species-specific recommenders’ is that each species-specific recommender model is only trained on the subset of data covering their respective species (as these models use a smaller training set, validation is checked every fourth of an epoch instead of every tenth). Together, the test predictions of the 25 species-specific recommenders cover 4229 spectra, 56 drugs, and 69,827 AMR labels (covering 91.27% of the original test set). Table 2 compares the two best ‘general’ recommenders from the previous section to their species-specific recommender counterparts. It is observed that species-specific recommenders deliver better predictions across all evaluated metrics.
 
+**Table 2.**
+ Test performance of selected general and species-specific dual branch recommender models.The listed averages and standard deviations are calculated over five independent runs of the same model. Performance is computed on the subset of labels spanning the 25 most common species in DRIAMS-A.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>ROC-AUC</th>
+      <th>Prec@1(-)</th>
+      <th>Macro ROC-AUC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>General recommender (Morgan fingerprints – M)</td>
+      <td>0.9411 ± 0.0007</td>
+      <td>0.9967 ± 0.0011</td>
+      <td>0.7684 ± 0.0050</td>
+    </tr>
+    <tr>
+      <td>General recommender (one-hot – L)</td>
+      <td>0.9408 ± 0.0011</td>
+      <td>0.9940 ± 0.0009</td>
+      <td>0.7746 ± 0.0316</td>
+    </tr>
+    <tr>
+      <td>Species-specific recommenders (Morgan fingerprints – M)</td>
+      <td>0.9461 ± 0.0010</td>
+      <td>0.9973 ± 0.0004</td>
+      <td>0.7905 ± 0.0151</td>
+    </tr>
+    <tr>
+      <td>Species-specific recommenders (one-hot – L)</td>
+      <td>0.9468 ± 0.0012</td>
+      <td>0.9950 ± 0.0011</td>
+      <td>0.7686 ± 0.0155</td>
+    </tr>
+  </tbody>
+</table>
+
+_ROC-AUC, area under the receiver operating characteristic curve._
+
 As opposed to the species-specific models, the ‘general’ recommender can use learned representations from one species to enhance predictions for other species, benefitting from multitask learning. The fact that this latter mode of learning performs worse on this problem, however, indicates that such transfer of learned knowledge is of limited usefulness for AMR prediction. Still, the ‘general’ recommender model remains useful in instances where the species could not be identified, or is rare. In Appendix 3—table 2, the 25 species for which specific recommenders were trained are listed, along with their performances.
 
-## Dual-branch recommenders improve over baselines
+### Dual-branch recommenders improve over baselines
 
 In order to gain better insight into the performance of our models, in this section, both our ‘general’ and ‘species-specific’ recommenders are squared up against extensive baselines.
 
@@ -114,13 +193,110 @@ Previous studies have studied AMR prediction in specific species–drug combinat
 
 There exist many species–drug combinations for which there are either only positive or only negative labels. As it is impossible to train and evaluate models for these cases, models are trained only for the 200 most occurring combinations for which both labels are present in the training, validation, and test set. We refer to these models as ‘species–drug classifiers’.
 
-In addition, it is useful to probe model performance against what experts may be able to guess. Given knowledge of the species identity in question, an expert will – in many cases – already be able to make a good guess toward what drugs will be effective or not. Hence, baseline ‘best guess’ performance would not result in a ROC-AUC of 0.5. A way to simulate such ‘expert’s best guess’ baseline predictions is through counting label frequencies in the training set. More specifically, for a test label belonging to a certain species and drug, the labels in the training set corresponding to that drug and species can be gathered. The frequency by which that training set is positive or negative can be used to infer a test predicted probability. We refer to this baseline as ‘simulated expert’s best guess’. More formally, considering all training spectra as Strain, all training labels corresponding to one drug j and species t are gathered: Ysubsetj,t={yij|si∈Strain∧species(si)=t}. The ‘simulated expert’s best guess’ predicted probability for any spectrum si and drug dj, then, corresponds to the fraction of positive labels in their corresponding training label set Ysubsetj,t:Pr(yij=1|species(si)=t,dj)=∑y∈Ysubsetj,ty|Ysubsetj,t|.
+In addition, it is useful to probe model performance against what experts may be able to guess. Given knowledge of the species identity in question, an expert will – in many cases – already be able to make a good guess toward what drugs will be effective or not. Hence, baseline ‘best guess’ performance would not result in a ROC-AUC of 0.5. A way to simulate such ‘expert’s best guess’ baseline predictions is through counting label frequencies in the training set. More specifically, for a test label belonging to a certain species and drug, the labels in the training set corresponding to that drug and species can be gathered. The frequency by which that training set is positive or negative can be used to infer a test predicted probability. We refer to this baseline as ‘simulated expert’s best guess’. More formally, considering all training spectra as $S_{train}$, all training labels corresponding to one drug $j$ and species $t$ are gathered: $Y_{subset}^{j,t}={y_{ij}|s_{i}\inS_{train}∧species(s_{i})=t}$. The ‘simulated expert’s best guess’ predicted probability for any spectrum $s_{i}$ and drug $d_{j}$, then, corresponds to the fraction of positive labels in their corresponding training label set $Y_{subset}^{j,t}$:$Pr(y_{ij}=1|species(s_{i})=t,d_{j})=\frac{\sumy\inY_{subset}^{j,t}y}{|Y_{subset}^{j,t}|}$.
 
 Table 3 compares the recommenders from the previous section to non-recommender baselines. As the baselines are only trained on the 200 most common species–drug combinations, performance is computed on that subset of test labels. This reduced test set spans 4017 spectra, 35 drugs, and 53,503 labels (covering 70.28% of the original test set). Dual-branch recommenders outperform baselines on all but one metric. Logistic regression baselines result in the best average ROC-AUC for individual species–drug combinations. By all other metrics, dual-branch recommenders outshine a collection of species–drug-specific classifiers. It is illustrated that, when the question is to choose between drugs for a patient (evaluated by the patient-averaged ROC-AUC or Prec@1(-)), a model designed as a recommender will outperform binary classification models trained to predict AMR for specific drugs. On the other hand, species-specific binary classifiers are optimal for distinguishing spectra for a specific drug. The crux of our case in favor of recommender models relies, hence, on the fact that patient-averaged metrics are more representative of AMR models’ utility in clinical diagnostics.
 
+**Table 3.**
+ Test performance of selected recommender models, compared to the performance of a collection of models – each trained on only one species–drug combination – coined ‘species–drug classifiers’.‘Species–drug classifiers’ refer to a collection of binary classifiers, each trained to predict antimicrobial resistance (AMR) status for a subset of data comprising a single species–drug combination. ‘Simulated expert’s best guess’ refers to counting AMR label frequencies in single species–drug combinations and taking those as predictions. The listed averages and standard deviations are calculated over five independent runs of the same model. Given the non-stochastic nature of the logistic regression and XGBoost implementations, only one set of models is trained and, hence, no standard deviations are reported. Performance is computed on the subset of labels spanning the 200 most common species–drug combinations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>ROC-AUC</th>
+      <th>Prec@1(-)</th>
+      <th>Macro ROC-AUC</th>
+      <th>Species–drug macro ROC-AUC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Species-specific recommenders (Morgan fingerprints – M)</td>
+      <td>0.9009 ± 0.0018</td>
+      <td>0.9830 ± 0.0015</td>
+      <td>0.8283 ± 0.0059</td>
+      <td>0.6381 ± 0.0121</td>
+    </tr>
+    <tr>
+      <td>Species-specific recommenders (one-hot – L)</td>
+      <td>0.9030 ± 0.0018</td>
+      <td>0.9814 ± 0.0020</td>
+      <td>0.8129 ± 0.0079</td>
+      <td>0.6511 ± 0.0290</td>
+    </tr>
+    <tr>
+      <td>General recommender (Morgan fingerprints – M)</td>
+      <td>0.8939 ± 0.0016</td>
+      <td>0.9746 ± 0.0006</td>
+      <td>0.8114 ± 0.0064</td>
+      <td>0.6517 ± 0.0076</td>
+    </tr>
+    <tr>
+      <td>General recommender (one-hot – L)</td>
+      <td>0.8933 ± 0.0020</td>
+      <td>0.9778 ± 0.0023</td>
+      <td>0.8124 ± 0.0033</td>
+      <td>0.6521 ± 0.0078</td>
+    </tr>
+    <tr>
+      <td>Species–drug classifiers (MLP – S)</td>
+      <td>0.8341 ± 0.0135</td>
+      <td>0.9420 ± 0.0123</td>
+      <td>0.8005 ± 0.0032</td>
+      <td>0.6745 ± 0.0218</td>
+    </tr>
+    <tr>
+      <td>Species–drug classifiers (MLP – M)</td>
+      <td>0.8382 ± 0.0077</td>
+      <td>0.9421 ± 0.0196</td>
+      <td>0.8075 ± 0.0049</td>
+      <td>0.6797 ± 0.0097</td>
+    </tr>
+    <tr>
+      <td>Species–drug classifiers (MLP – L)</td>
+      <td>0.8457 ± 0.0088</td>
+      <td>0.9505 ± 0.0100</td>
+      <td>0.8037 ± 0.0079</td>
+      <td>0.6648 ± 0.0149</td>
+    </tr>
+    <tr>
+      <td>Species–drug classifiers (MLP – XL)</td>
+      <td>0.8611 ± 0.0049</td>
+      <td>0.9722 ± 0.0041</td>
+      <td>0.8106 ± 0.0069</td>
+      <td>0.6801 ± 0.0101</td>
+    </tr>
+    <tr>
+      <td>Species–drug classifiers (logistic regression)</td>
+      <td>0.8684</td>
+      <td>0.9432</td>
+      <td>0.7989</td>
+      <td>0.7200</td>
+    </tr>
+    <tr>
+      <td>Species–drug classifiers (XGBoost)</td>
+      <td>0.8346</td>
+      <td>0.9196</td>
+      <td>0.7763</td>
+      <td>0.6236</td>
+    </tr>
+    <tr>
+      <td>Simulated expert’s best guess</td>
+      <td>0.8681</td>
+      <td>0.9743</td>
+      <td>0.7159</td>
+      <td>0.5000</td>
+    </tr>
+  </tbody>
+</table>
+
+_ROC-AUC, area under the receiver operating characteristic curve._
+
 It is useful to note that any gain in performance over the ‘simulated expert’ means that AMR signal could be mined from the spectra. Hence, any performance above this level results in a real-world information gain for clinical diagnostic laboratories.
 
-## Efficient transfer learning to new hospitals
+### Efficient transfer learning to new hospitals
 
 An AMR prediction model trained using data from one hospital may not be suitable for use in other hospitals for several reasons. First, protocols such as sample preparation and culturing media differ from hospital to hospital, resulting in systematic differences in MALDI-TOF spectra (Weis et al., 2022). Second, epidemiology is spatially varied. Drug-resistant clades may be prevalent in one region or country, but absent in another (Humphries, 2022). Finally, the MALDI-TOF instruments themselves may also be specific to the hospital and influence the readout. This influences prediction models, as a hospital-specific effect is reported by the study introducing the DRIAMS dataset (Weis et al., 2022). They find that models typically perform best when trained with data from the same hospital. Here, hospital transferability is studied in the context of transfer learning.
 
@@ -134,13 +310,13 @@ For all three hospitals, we train models in the same way as previously (see Meth
 
 Lowering the amount of data required is paramount to expedite the uptake of AMR models in clinical diagnostics. The transfer learning qualities of dual-branch models may be ascribed to multiple properties. First of all, since different hospitals use much of the same drugs, transferred drug embedders allow for expressively representing drugs out of the box. Secondly, owing to multitask learning, even with a limited number of spectra, a considerable fine-tuning dataset may be obtained, as all available data is ‘thrown on one pile’.
 
-## MALDI-TOF spectra embeddings
+### MALDI-TOF spectra embeddings
 
-To investigate what the dual-branch models have learned to represent, MALDI-TOF spectra embeddings are examined. For this purpose, both the best-performing ‘general’ recommender and ‘species-specific’ recommender are used. Here, we visualize the embeddings 𝒙i∈ℝ64 of all test set spectra from the 25 most occurring pathogens. To visualize in a two-dimensional space, UMAP is applied (using default parameters apart from min_dist = 0.5) (Increasing this parameter helps reduce UMAP packing points too tightly together, hence, making for a more-legible plot.). Figure 4 shows the resulting embeddings, colored by species identity, as well as by their AMR status to a selection of drugs.
+To investigate what the dual-branch models have learned to represent, MALDI-TOF spectra embeddings are examined. For this purpose, both the best-performing ‘general’ recommender and ‘species-specific’ recommender are used. Here, we visualize the embeddings $𝒙_{i}\inℝ^{64}$ of all test set spectra from the 25 most occurring pathogens. To visualize in a two-dimensional space, UMAP is applied (using default parameters apart from min_dist = 0.5) (Increasing this parameter helps reduce UMAP packing points too tightly together, hence, making for a more-legible plot.). Figure 4 shows the resulting embeddings, colored by species identity, as well as by their AMR status to a selection of drugs.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93242/elife-93242-fig4-v1.jpg)
 
-**Figure 4.:** .𝒙iTop: embeddings from a ‘general’ (trained on all species) recommender. Only embeddings belonging to the 25 most occurring species in the test set are shown. The panels on the right show the same embeddings as on the left, but colored according to its antimicrobial resistance (AMR) status to a certain drug. The four displayed drugs are selected based on a ranking of the product of the number of positive and negative labels . In this way, the drugs that have a lot of observed labels, both positives and negatives, are displayed. Bottom: highlighted embeddings from a ∑i=1n[yij=0]⋅∑i=1n[yij=1]S. epidermidis-specific recommender model.
+**Figure 4.:** UMAP scatterplots of test set matrix-assisted laser desorption/ionization time-of-flight (MALDI-TOF) spectra embeddings $𝒙_{i}$.Top: embeddings from a ‘general’ (trained on all species) recommender. Only embeddings belonging to the 25 most occurring species in the test set are shown. The panels on the right show the same embeddings as on the left, but colored according to its antimicrobial resistance (AMR) status to a certain drug. The four displayed drugs are selected based on a ranking of the product of the number of positive and negative labels $\sumi=1n[y_{ij}=0]⋅\sumi=1n[y_{ij}=1]$. In this way, the drugs that have a lot of observed labels, both positives and negatives, are displayed. Bottom: highlighted embeddings from a S. epidermidis-specific recommender model.
 
 The MALDI-TOF embeddings from the ‘general’ recommender model are grouped primarily per species. This shows that, without being instructed to discriminate between species, the model has learned to group spectra of the same species together. Furthermore, species under the same genus are typically grouped close together, illustrating that the model can pick up hierarchical relations in the tree of life from the data. Within species clusters, the AMR status subplots show that samples are often grouped according to their resistance. For example, for Staphylococcus epidermidis and S. aureus, multidrug-resistant variants clearly form subclusters. In addition, the cluster of E. coli spectra shows a clear tail with samples resistant to ciprofloxacin. Embeddings from the species-specific recommender models show this phenomenon more clearly. UMAP embedding plots from the ‘general recommender’ colored by other drugs are shown in Appendix 3—figure 5. In addition, species-specific recommender system embeddings for some prominent species are shown in Appendix 3—figure 6.
 

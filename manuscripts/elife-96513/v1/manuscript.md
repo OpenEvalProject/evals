@@ -13,16 +13,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01tgmhj36 Centre for Health and Life Sciences, Coventry University Coventry United Kingdom
-2. https://ror.org/041zkgm14 Dipartimento di Scienze Chimiche, Farmaceutiche ed Agrarie, University of Ferrara Ferrara Italy
-3. https://ror.org/00240q980 Molecular Modeling Section (MMS), Dipartimento di Scienze del Farmaco, University of Padua via Marzolo Padova Italy
-4. https://ror.org/02nkf1q06 School of Life Sciences, University of Essex, Wivenhoe Park Colchester United Kingdom
+1. Centre for Health and Life Sciences, Coventry University Coventry United Kingdom ([ROR:01tgmhj36](https://ror.org/01tgmhj36))
+2. Dipartimento di Scienze Chimiche, Farmaceutiche ed Agrarie, University of Ferrara Ferrara Italy ([ROR:041zkgm14](https://ror.org/041zkgm14))
+3. Molecular Modeling Section (MMS), Dipartimento di Scienze del Farmaco, University of Padua via Marzolo Padova Italy ([ROR:00240q980](https://ror.org/00240q980))
+4. School of Life Sciences, University of Essex, Wivenhoe Park Colchester United Kingdom ([ROR:02nkf1q06](https://ror.org/02nkf1q06))
 
 † Corresponding author
 
 ## Abstract
 
-The structural basis for the pharmacology of human G protein-coupled receptors (GPCRs), the most abundant membrane proteins and the target of about 35% of approved drugs, is still a matter of intense study. What makes GPCRs challenging to study is the inherent flexibility and the metastable nature of interaction with extra- and intracellular partners that drive their effects. Here, we present a molecular dynamics (MD) adaptive sampling algorithm, namely multiple walker supervised molecular dynamics (mwSuMD), to address complex structural transitions involving GPCRs without energy input. We first report the binding and unbinding of the vasopressin peptide from its receptor V 2 . Successively, we present the complete transition of the glucagon-like peptide-1 receptor (GLP-1R) from inactive to active, agonist and G s -bound state, and the guanosine diphosphate (GDP) release from G s . To our knowledge, this is the first time the whole sequence of events leading from an inactive GPCR to the GDP release is simulated without any energy bias. We demonstrate that mwSuMD can address complex binding processes intrinsically linked to protein dynamics out of reach of classic MD.
+The structural basis for the pharmacology of human G protein-coupled receptors (GPCRs), the most abundant membrane proteins and the target of about 35% of approved drugs, is still a matter of intense study. What makes GPCRs challenging to study is the inherent flexibility and the metastable nature of interaction with extra- and intracellular partners that drive their effects. Here, we present a molecular dynamics (MD) adaptive sampling algorithm, namely multiple walker supervised molecular dynamics (mwSuMD), to address complex structural transitions involving GPCRs without energy input. We first report the binding and unbinding of the vasopressin peptide from its receptor V2. Successively, we present the complete transition of the glucagon-like peptide-1 receptor (GLP-1R) from inactive to active, agonist and Gs-bound state, and the guanosine diphosphate (GDP) release from Gs. To our knowledge, this is the first time the whole sequence of events leading from an inactive GPCR to the GDP release is simulated without any energy bias. We demonstrate that mwSuMD can address complex binding processes intrinsically linked to protein dynamics out of reach of classic MD.
 
 ## Introduction
 
@@ -40,19 +40,215 @@ These results demonstrate the usefulness of mwSuMD for illuminating the molecula
 
 ## Results
 
-## Short mwSuMD time windows improve the AVP dynamic docking prediction
+### Short mwSuMD time windows improve the AVP dynamic docking prediction
 
 AVP is an endogenous hormone (Figure 1a) that mediates antidiuretic effects on the kidney by signaling through three class A GPCR subtypes: V1a and V1b receptors activate phospholipases via Gq/11, while the V2R activates adenylyl cyclase by interacting with Gs (Birnbaumer, 2000) and is a therapeutic target for hyponatremia, hypertension, and incontinence (Ball, 2007). AVP is amphipathic and in the bound state interacts with both polar and hydrophobic V2R residues located on TM helices and ECLs (Figure 1b). Although AVP presents an intramolecular C1-C6 disulfide bond that limits the backbone’s overall conformational flexibility, it has many rotatable bonds, making dynamic docking complicated (Gioia et al., 2017). We compared the performance of mwSuMD to the parent algorithm SuMD in reconstructing the experimental V2R:AVP complex using different settings, simulating a total of 92 binding events (Table 1). As a reference, the AVP root mean square deviation (RMSD) during a classic (unsupervised) equilibrium MD simulation of the X-ray AVP:V2R complex was 3.80±0.52 Å (Figure 1—figure supplement 1). SuMD (Cuzzolin et al., 2016; Sabbadin and Moro, 2014) produced a minimum RMSD to the cryo-EM complex of 4.28 Å, with most of the replicas (i.e. distribution’s mode) having an RMSD close to 10 Å (Figure 1—figure supplement 2a). mwSuMD, with the same settings (Figure 1—figure supplement 2b, Table 1) in terms of time window duration (600 ps), metric supervised (the distance between AVP and V2R), and acceptance method (slope) produced slightly more precise results (i.e. distribution’s mode RMSD = 7.90 Å) but similar accuracy (minimum RMSD = 4.60 Å). Supervising the AVP RMSD to the experimental complex rather than the distance (Figure 1—figure supplement 2c) and using the SMscore (Equation 1) as the acceptance method (Figure 1—figure supplement 2d) worsened the prediction. Supervising distance and RMSD at the same time (Figure 1—figure supplement 2e), employing the DMscore (Equation 2), recovered accuracy (minimum RMSD = 4.60 Å) but not precision (distribution mode RMSD = 12.40 Å). Interestingly, decreasing the time window duration from 600 ps to 100 ps impaired the SuMD ability to predict the experimental complex (Figure 1a), but enhanced mwSuMD accuracy and precision (Figure 1b–d). The combination of RMSD as the supervised metric and SMscore produced the best results in terms of minimum RMSD and distribution mode RMSD, 3.85 Å and 4.40 Å, respectively (Figure 1d, Video 1), in agreement with the AVP deviations in the equilibrium MD simulation of the X-ray AVP:V2R complex (Figure 1—figure supplement 1). These results confirm the inherent complexity of reproducing the AVP:V2R complex via dynamic docking and suggest that short time windows can improve mwSuMD performance on this system. However, it is necessary to know the final bound state to employ the RMSD as the supervised metric, while the distance is required to dynamically dock ligands with unknown bound conformation as previously reported (Cuzzolin et al., 2016; Wall et al., 2022). Both distance and RMSD-based simulations delivered insights into the binding path and the residues involved along the recognition route. For example, mwSuMD pinpointed V2R residues E184ECL2, P298ECL3, and E303ECL3 (Figure 2a) as involved during AVP binding, although not in contact with the ligand in the orthosteric complex. None of them are yet characterized through mutagenesis studies according to the GPCRdb (Isberg et al., 2016).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig1-v1.jpg)
+
+**Figure 1.:** (a) Chemical structure and (b) binding more within the V2R orthosteric binding site; AVP is represented in orange stick, while V2R is in white ribbon and gray stick. For each set of settings (c–f) the root mean square deviation (RMSD) of AVP Cα atoms to the cryo-electron microscopy (cryo-EM) structure 7DW9 is reported during the time course of each SuMD (c) or mwSuMD (d–f) replica alongside the RMSD values distribution and the snapshot corresponding to the lowest RMSD values (AVP from the cryo-EM structure 7DW9 is in a cyan stick representation, while AVP from simulations is in a tan stick representation). A complete description of the simulation settings is reported in Table 1 and the Methods section. The dashed red line indicates the AVP RMSD during a classic (unsupervised) equilibrium MD simulation of the X-ray AVP:V2R complex (Figure 1—figure supplement 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The average AVP root mean square deviation (RMSD) (computed on the Cα atoms) after stabilization of the system (second half of the trajectory) is indicated. AVP, arginine vasopressin; V2R, vasopressin 2 receptor.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** For each set of settings (a-e), the RMSD of AVP Cα atoms to the cryo-EM structure 7DW9 is reported during the time course of each SuMD (a) or mwSuMD (b-e) replica, alongside the RMSD values distribution and the snapshot corresponding to the lowest RMSD (AVP from the cryo EM structure 7DW9 is in a cyan stick representation, while AVP from simulations is in a tan stick representation). A complete description of the simulation settings is reported in Table 1 and the Methods section. The dashed red line indicates the AVP RMSD during a classic (unsupervised) equilibrium MD simulation of the X-ray AVP:V2R complex (Figure 1—figure supplement 1).
+
+**Table 1.**
+ Summary of all the simulations performed and the settings employed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th># Replicas</th>
+      <th>TWduration</th>
+      <th># Walkers</th>
+      <th>Metric</th>
+      <th>Acceptance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>V2R:AVPcomplex</td>
+      <td>1 classic MD</td>
+      <td>500 ns</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="9">V2R:AVPbinding</td>
+      <td>9 (SuMD)</td>
+      <td>600 ps</td>
+      <td>N/A</td>
+      <td>Distance</td>
+      <td>Slope</td>
+    </tr>
+    <tr>
+      <td>10 (mwSuMD)</td>
+      <td>600 ps</td>
+      <td>3</td>
+      <td>Distance</td>
+      <td>Slope</td>
+    </tr>
+    <tr>
+      <td>11 (mwSuMD)</td>
+      <td>600 ps</td>
+      <td>3</td>
+      <td>RMSD</td>
+      <td>Slope</td>
+    </tr>
+    <tr>
+      <td>8 (mwSuMD)</td>
+      <td>600 ps</td>
+      <td>3</td>
+      <td>Distance</td>
+      <td>SMscore</td>
+    </tr>
+    <tr>
+      <td>9 (mwSuMD)</td>
+      <td>600 ps</td>
+      <td>3</td>
+      <td>Distance and RMSD</td>
+      <td>DMscore</td>
+    </tr>
+    <tr>
+      <td>12 (mwSuMD)</td>
+      <td>100 ps</td>
+      <td>10</td>
+      <td>Distance and RMSD</td>
+      <td>DMscore</td>
+    </tr>
+    <tr>
+      <td>11 (mwSuMD)</td>
+      <td>100 ps</td>
+      <td>10</td>
+      <td>Distance</td>
+      <td>SMscore</td>
+    </tr>
+    <tr>
+      <td>11 (mwSuMD)</td>
+      <td>100 ps</td>
+      <td>10</td>
+      <td>RMSD</td>
+      <td>SMscore</td>
+    </tr>
+    <tr>
+      <td>10 (SuMD)</td>
+      <td>100 ps</td>
+      <td>N/A</td>
+      <td>Distance</td>
+      <td>Slope</td>
+    </tr>
+    <tr>
+      <td rowspan="2">V2R:AVPunbinding</td>
+      <td>5 (SuMD)</td>
+      <td>100 ps</td>
+      <td>N/A</td>
+      <td>Distance</td>
+      <td>Slope</td>
+    </tr>
+    <tr>
+      <td>5 (mwSuMD)</td>
+      <td>100 ps</td>
+      <td>10</td>
+      <td>Distance</td>
+      <td>SMscore</td>
+    </tr>
+    <tr>
+      <td>β2 AR:Gs proteinbinding</td>
+      <td>3 (mwSuMD)</td>
+      <td>100 ps</td>
+      <td>5</td>
+      <td>Distance and RMSD</td>
+      <td>DMscore</td>
+    </tr>
+    <tr>
+      <td>A1R:Gi binding</td>
+      <td>1 (mwSuMD)</td>
+      <td>100 ps</td>
+      <td>3</td>
+      <td>RMSD</td>
+      <td>SMscore</td>
+    </tr>
+    <tr>
+      <td>GLP-1R:PF06882961</td>
+      <td>1 (mwSuMD)</td>
+      <td>100 ps</td>
+      <td>5</td>
+      <td>Distance or RMSD (or a combination)</td>
+      <td>SMscoreor DMscore</td>
+    </tr>
+    <tr>
+      <td>GLP-1R:Gs protein binding</td>
+      <td>3 (mwSuMD)</td>
+      <td>200 ps</td>
+      <td>3</td>
+      <td>Distance or RMSD</td>
+      <td>SMscoreor DMscore</td>
+    </tr>
+    <tr>
+      <td>Gs AHD opening</td>
+      <td>1 (mwSuMD)</td>
+      <td>100 ps</td>
+      <td>3</td>
+      <td>Distance</td>
+      <td>SMscore</td>
+    </tr>
+    <tr>
+      <td>GLP-1R:GsGDP unbinding</td>
+      <td>3</td>
+      <td>50 ps</td>
+      <td>5</td>
+      <td>Distance</td>
+      <td>SMscore</td>
+    </tr>
+  </tbody>
+</table>
+
+_N/A: not applicable; SuMD was not performed._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig2-v1.jpg)
 
 **Figure 2.:** Vasopressin 2 receptor (V2R) residues involved in mwSuMD simulations of AVP. (a) Binding (dynamic docking); (b) unbinding simulations. (c) Dissociation of AVP from V2R. The root mean square deviation (RMSD) of AVP to the initial bound state is reported during the time course of five replicas of SuMD and mwSuMD, respectively.
 
+![Video 1.](https://cdn.elifesciences.org/articles/96513/elife-96513-video1.mp4.jpg)
+
+**Video 1.:** Two-view of the mwSuMD replica better reproducing the AVP:V2R experimental complex. Left side: V2R is represented in white quick surface, while AVP is in transparent quick surface and green stick; right side: V2R is represented in white ribbon and cyan stick, while AVP is a green stick. The bound AVP conformation from PDB 7DW9 is reported as a reference in transparent orange ribbon and stick.
+
 Further to binding, an SuMD approach was previously employed to reconstruct the unbinding path of ligands from several GPCRs (Deganutti et al., 2020b; Atanasio et al., 2020). We assessed mwSuMD’s capability to simulate AVP unbinding from V2R. Five mwSuMD and five SuMD replicas were collected using 100 ps time windows (Table 1). Overall, mwSuMD outperformed SuMD in terms of time required to complete a dissociation (Figure 2c, Video 2), producing dissociation paths almost 10 times faster than SuMD. Such rapidity in dissociating inherently produces a limited sampling of metastable states along the pathway, which can be compensated by seeding classic (unsupervised) MD simulations from configurations extracted from the unbinding pathway (Deganutti et al., 2021b; Deganutti et al., 2020a). Here, the V2R residues involved during the dissociation were comparable to the binding (Figure 2a and b), although ECL2 and ECL3 were slightly more involved during the association than the dissociation, in analogy with other class A and B GPCRs (Dong et al., 2020; Deganutti et al., 2021b).
 
-## PF06882961 binding and GLP-1R activation
+![Video 2.](https://cdn.elifesciences.org/articles/96513/elife-96513-video2.mp4.jpg)
+
+**Video 2.:** Two-view of the five mwSuMD replicas performed. Left side: V2R is represented in white quick surface, while AVP is in transparent quick surface and green stick; right side: V2R is represented in white ribbon and cyan stick, while AVP is a green stick.
+
+### PF06882961 binding and GLP-1R activation
 
 The GLP-1R has been captured by cryo-EM in both the inactive and the active (Gs-bound) conformations and in complex with either peptide or non-peptide agonists (Zhao et al., 2020; Kawai et al., 2020; Ma et al., 2020; Zhang et al., 2020; Cong et al., 2021; Cong et al., 2022b). In the inactive GLP-1R, residues forming the binding site for the non-peptide agonist PF06882961 are dislocated and scattered due to the structural reorganization of the transmembrane domain (TMD) and ECD (Figure 3—figure supplement 1a) that occurs on activation. Moreover, GLP-1R in complex with GLP-1 or different agonists present distinct structural features, even among structurally related ligands (Figure 3—figure supplement 1b and c). This complicates the scenario and suggests divergent recognition mechanisms among different agonists. We simulated the binding of PF06882961, reaching an RMSD to its bound conformation in 7LCJ of 3.79±0.83 Å (computed on the second half of the merged trajectory, superimposing on GLP-1R Cα atoms of TMD residues 150–390), using multistep supervision on different system metrics (Figure 3) to model the structural hallmark of GLP-1R activation (Videos 3 and 4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig3-v1.jpg)
+
+**Figure 3.:** Each panel reports the root mean square deviation (RMSD) to the position of the ligand in the active state (top panel) or a GLP-1R structural element over the time course (all but ECL3 converging to the active state). ECD: extracellular domain; TM: transmembrane helix; ECL: extracellular loop. The mwSuMD simulation was performed with four different settings over 1 µs in total. The red dashed lines show the initial RMSD value for reference.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) PF06882961 binding site in the apo and holo GLP-1R. In the apo GLP-1R (left transparent ribbon) the residues forming the binding site of the NPA PF06882961 are scattered due to the different conformation of the receptor. (b, c) NPAs stabilize divergent GLP-1R active conformations: (a) Different orientations of TM2, ECL1, and TM3; (b) divergent conformations of extracellular domain (ECD), ECL3, and TM7; (c) interaction fingerprint of NPAs (TT-OAD2, CHU-128, and PF06882911) and the endogenous agonist peptide GLP-1. Red bars indicate interactions with distinct residues in the GLP-1R.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Rotation of TM6 during glucagon-like peptide-1 receptor (GLP-1R) activation simulated by multiple walker supervised molecular dynamics (mwSuMD). The angle was measured as the dihedral formed by the backbone alpha carbon atoms T353, I357, T362, and I366. The angle values of the inactive and active cryo-electron microscopy (cryo-EM) structures are reported as references; (b) PF06882961 MM-GBSA binding energy during Gs binding; (d) guanosine diphosphate (GDP) MM-GBSA binding energy during Gs binding.
+
+![Video 3.](https://cdn.elifesciences.org/articles/96513/elife-96513-video3.mp4.jpg)
+
+**Video 3.:** The first and last frames of the PF06882961 binding simulations have been interpolated to produce a smoothed representative transition.
+
+![Video 4.](https://cdn.elifesciences.org/articles/96513/elife-96513-video4.mp4.jpg)
+
+**Video 4.:** PF06882961 is represented in cyan van der Waals spheres, while GLP-1R is orange ribbon; the GLP-1R experimental active conformation is reported in transparent green ribbon as reference.
 
 Several metrics were supervised consecutively. First, the distance between PF06882961 and the TMD as well as the RMSD of the ECD to the active state (stage 1); second, the RMSD of ECD and ECL1 to the active state (stage 2); third, the RMSD of PF06882961 and ECL3 to the active state (stage 3); lastly, only the RMSD of TM6 (residues I345-F367, Cα atoms) to the active state (stage 4). The combination of these supervisions produced a conformational transition of GLP-1R toward the active state (Figure 3, Video 4). Noteworthy, mwSuMD, like any other CV-based technique, requires some knowledge of the simulated system. The sequence of these supervisions was arbitrary and does not necessarily reflect the right order of the steps involved in GLP-1R activation. This kind of planned multistep approach is feasible when the end-point receptor inactive and active structures are available, and the inherent flexibility of different domains is known. In class B GPCRs, the ECD is the most dynamic substructure, followed by the ECL1 and ECL3, which display high plasticity during ligand binding (Dong et al., 2020; Cong et al., 2022a). For this reason, we first supervised these elements of GLP-1R, leaving the bottleneck of activation, TM6 outward movement, as the last step. However, the protocol employed can be tweaked to study how each conformational transition takes place and influences the receptor domains. Structural elements not directly supervised, such as TM1 or TM7, were influenced by the movement of supervised helixes or loops and therefore displayed an RMSD reduction to the active state. For example, the supervision of ECL3 (stage 3) and TM6 (stage 4) facilitated the spontaneous rearrangement of the ECD to an active-like conformation after the ECD had previously experienced transient high flexibility during stages 2 and 3 (Figure 3). These results suggest a concerted conformational transition for ECD and ECL1 during the binding of PF06882961 and an allosteric effect between ECL3 and the bottom of TM6. While the intracellular polar interactions were destabilized by the ECL3 transition to an active-like conformation (stages 2 and 3), the outward movement of TM6 (stage 4) did not favor the closure of ECL3 toward PF06882961, which appears to be driven by direct interactions between the ligand and R3105.40 or R3807.35. Interestingly, the mwSuMD simulation during stage 4 (TM6 supervision) sampled a counterclockwise helix rotation (Figure 3—figure supplement 2a) consistent with the GLP-1R cryo-EM structures in the active, Gs-coupled state (Zhang et al., 2020; Zhang et al., 2021).
 
@@ -64,15 +260,39 @@ During the supervision of ECL3 and PF06882961 (stage 3), we observed a loosening
 
 **Figure 4.:** (a) Root mean square deviation (RMSD) to the active state GLP-1R (7LCI) of the residues forming the central polar network (magenta) and TM6 kink (orange) during mwSuMD of receptor activation; at the end of the simulations minimum values were reached (dashed square). (b) The position of the polar network within the core of transmembrane domain (TMD) (left-hand panel) and comparison between inactive, active, and mwSuMD final states for the side chains of the residues forming of the polar network. (c) The position of the TM6 kink (right-hand panel) and comparison between inactive, active, and mwSuMD final states for the side chains of the residues forming the TM6 kink.
 
-## Gs protein binding to GLP-1R and GDP release
+### Gs protein binding to GLP-1R and GDP release
 
 We then focused on simulating the Gs binding to GLP-1R, after activation, without energy input. For this purpose, we first tested the binding between the prototypical class A receptor β2 adrenoreceptor (β2 AR) and the stimulatory G protein (Gs) (Video 5, Figure 5—figure supplement 1a and b) by supervising the distance between Gs helix 5 (α5) and β2 AR as well as the RMSD of the intracellular end of TM6 to the fully active state of the receptor (see Supplementary Methods). During two out of three replicas, both Gα and Gβ achieved distance values close to 5 Å (minimum RMSD = 3.94 Å and 3.96 Å respectively), in good agreement with the reference (the β2 AR:Gs complex, PDB 3SN6, Figure 5—figure supplement 1c). A possible pitfall is that G proteins bear potential palmitoylation and myristoylation sites that anchor the inactive trimer to the plasma membrane (Linder et al., 1993; Zhang et al., 2004), de facto restraining possible binding paths to the receptor. To address this point and test different conditions, we prepared the adenosine A1 receptor (A1R) and its principal effector, the inhibitory G protein (Gi) considering the Giα residue C3 and Gγ residue C65 as palmitoylated and geranylgeranylated respectively and hence inserted in the membrane. Recently, the Gi binding to A1R was simulated by combining the biased methods GaMD with SuMD (Li et al., 2022) but without considering membrane-anchoring posttranslational modifications. Both classic (unsupervised) and mwSuMD simulations were performed on this system for comparison (Video 6, Figure 5—figure supplement 1d). In about 50 ns of mwSuMD, the Giα subunit engaged its intracellular binding site on A1R and formed a complex in good agreement with the cryo-EM structure (PDB 6D9H, RMSD ≈ 5 Å). For comparison, 1 μs of cMD did not produce a productive engagement as the Giα remained at RMSD values >40 Å (Figure 5—figure supplement 1d), suggesting the effectiveness of mwSuMD in sampling G protein binding rare events without the input of energy. The membrane anchoring affected the overall Gi binding and the final complex, which was rotated compared to the experimental structure due to the lipidation of Giα and Gγ (Figure 5—figure supplement 1e).
 
+![Video 5.](https://cdn.elifesciences.org/articles/96513/elife-96513-video5.mp4.jpg)
+
+**Video 5.:** The inactive Gs (Gα subunit in orange, Gβ subunit in green, and Gγ subunit in yellow) recognizes β2AR (black ribbon) bound to epinephrine (van der Waals spheres). The experimental β2AR:Gs cryo-EM complex is reported in white ribbon for reference.
+
+![Video 6.](https://cdn.elifesciences.org/articles/96513/elife-96513-video6.mp4.jpg)
+
+**Video 6.:** The Gi (Gα subunit in magenta, Gβ subunit in green, and Gγ subunit in yellow) recognizes A1R (blue ribbon) bound to adenosine (not shown). The experimental A1R:Gi cryo-EM complex is reported in transparent ribbon for reference.
+
 Encouraged by results obtained on Gs and Gi binding to β2 AR and A1R (Figure 5—figure supplement 1), we extracted the GLP-1R active conformation described above and simulated the Gs binding to its intracellular side. Starting from the inactive, membrane-anchored Gs, we performed three independent mwSuMD replicas by supervising the distance between Gs helix α5 and GLP-1R residues located at the intracellular binding interface (Figure 5a and e). All three mwSuMD replicas showed the Gs approaching GLP-1R, with two out of three reaching an RMSD of the Gsα subunit close to or less than 10 Å, compared to the experimental complex 7LCI (Figure 5e). Replica 2, in particular, reproduced the cryo-EM GLP-1R:Gs complex with RMSD values to 7LCI of 7.59±1.58 Å, 12.15±2.13 Å, and 13.73±2.24 Å for Gα, Gβ, and Gγ, respectively. Such values do not support convergence with the static experimental structure but are not far from the RMSDs measured in our previous simulations of GLP-1R in complex with Gs and GLP-1 (Deganutti et al., 2022) (Gα=6.18 ± 2.40 Å; Gβ=7.22 ± 3.12 Å; Gγ=9.30 ± 3.65 Å), which indicates overall higher flexibility of Gβ and Gγ compared to Gα, which acts as a sort of fulcrum bound to GLP-1R.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig5-v1.jpg)
+
+**Figure 5.:** (a–d) Sequence of simulated events during the multiple walker supervised molecular dynamics (mwSuMD) Gs:GLP-1R simulations. (e) Root mean square deviation (RMSD) of Gsα to the experimental GLP-1R:Gs complex (PDB 7LCJ) during three mwSuMD replicas; the RMSD to the experiential bound conformation (7LCJ) during the second part of Replica 2 (red dashed line) is reported for each Gs subunit. RMSDs were computed on Gα residues 11–43 and 205–394 to the experimental structure 7LCI after superimposition on GLP-1R residues 140–240 Cα atoms. (f) RMSD of the αG-α4 loop (purple), the distance between K3426.31 and D323Gα (salmon), and the distance between guanosine diphosphate (GDP) and D295Gα (green) during Gs binding, alpha-helical domain (AHD) opening and GDP dissociation; (g) and (h) comparison between states extracted from before and after AHD opening. Before AHD opening (a), GLP-1R ICL3 interacted with D323Gα and D295Gα interacted with GDP; after AHD opening (b) and αG-α4 loop reorganization (curved red arrow), αG and D295Gα moved away from GDP (straight red arrow), destabilizing its binding to Gs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Root mean square deviation (RMSD) of Gsα to the experimental complex (PDB 3NS6) during three multiple walker supervised molecular dynamics (mwSuMD) replicas; (b) RMSD of Gsβ to the experimental complex (PDB 3NS6) during three mwSuMD replicas; (c) superposition of the experimental Gs:β2 AR complex (transparent ribbon) and the MD frame with the lowest Gsα RMSD (3.94 Å); (d) RMSD of Giα (residues 243–355) to the A1R experimental complex (PDB 6D9H) during an mwSuMD simulation (red, magnified in the box) and a 1000-ns-long classic MD simulation (black); (e) two-view superposition of the experimental Gi:A1R complex (transparent ribbon) and the MD frame with the lowest Giα RMSD (4.82 Å).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Bound (white, 6EG8) and dissociated (green, mwSuMD) GDP is shown as a stick representation.
 
 According to the model of G protein activation, the G protein binding has the effect of allosterically stabilizing the orthosteric agonist in complex with the receptor (Deganutti et al., 2022) and destabilizing the GDP bound to Gα, triggering its release and exchange with guanosine triphosphate (Gregorio et al., 2017), upon opening of the G protein alpha-helical domain (AHD). Following this model, PF06882961 and GDP were respectively stabilized and destabilized during the simulated Gs association (Figure 3—figure supplement 2b and c). The analysis of atomic contacts along the binding path of Gs to GLP-1R highlights a few persistent interactions not observed in the equilibrium MD simulations of GLP-1R:Gs cryo-EM complexes Deganutti et al., 2022; e.g., we propose the hidden interaction between D3446.33 and R385α5 to be important for Gs coupling (Appendix 1—table 1), which would explain the GLP-1 EC50 reduction upon mutation of position 344 to Ala (Yuan et al., 2023).
 
 Extending Replica 2, we further investigated the Gs activation mechanism by supervising the opening of the Gs AHD, which is considered a necessary step to allow GDP release from the Ras-like domain (Dror et al., 2015). We first easily obtained the opening of AHD (Figure 5b) and successively supervised the GDP unbinding in a further three replicas, seeded after the AHD opening. In one of these three mwSuMD simulations, the nucleotide dissociated from Gs (Figure 5d). Video 7 shows the full Gs binding, AHD opening, and GDP release. mwSuMD suggested several structural changes as implicated in GDP dissociation (Figure 5f–h): (i) the AHD opening; (ii) the conformational change of αG-α4 loop (residues A303Gα-P332Gα), in concert with a loosening of interactions between D323Gα and K3426.31, and (iii) the rupture of the hydrogen bond between GDP and D295Gα triggered by the movement of αG away from the GDP binding site (Figure 5f). The involvement of αG through the αG-α4 during the release of GDP from Gs is supported by hydrogen/deuterium exchange experiments (Du et al., 2019), while the role of D275Gα has been probed with functional assays on the Gi isoform mutant D272GαiA (Ham et al., 2021). Moreover, a similar αG behavior was recently suggested by MD simulations of the Gs binding pathway to β2 AR (Batebi et al., 2024). We also note that the αG-α4 loop length and amino acidic composition diverge among G protein isoforms, further suggesting a role in G protein selectivity consistent with the hypothesis that, in different G proteins, distinct domains of the Gα subunit could be responsible for receptor selectivity (Glukhova et al., 2018). However, a more subtle allosteric communication through internal structural elements like the β2-β3 strands, prompted by α5 tilting, could have weakened GDP phosphate binding as previously suggested by other groups (Sun et al., 2018; Kaya et al., 2016; Flock et al., 2015). Interestingly, no significant conformational changes of the β6-α5 loop happened before or during the GDP dissociation, suggesting that its conformational change as captured in the nucleotide-free GLP-1R:Gs complex (Figure 5—figure supplement 2) occurs after the GDP release as a result of the loss of binding stabilization, rather than being an initiator of the GDP dissociation.
+
+![Video 7.](https://cdn.elifesciences.org/articles/96513/elife-96513-video7.mp4.jpg)
+
+**Video 7.:** The Gs protein binds GLP-1R (light grey) in complex with PF06882961 (stick representation) before the alpha-helical domain opens and allows GDP release from Gsα. The Gsα subunit is yellow, Gβ is dark gray, and Gγ is orange.
 
 ## Discussion
 
@@ -92,17 +312,25 @@ In summary, we showcased the applicability domain of mwSuMD to key, but scarcely
 
 ## Methods
 
-## mwSuMD protocol
+### mwSuMD protocol
 
 The SuMD is an adaptive sampling method (Deganutti and Moro, 2017) based on a tabu-like algorithm for speeding up the simulation of binding events between small molecules (or peptides [Salmaso et al., 2017; Bower et al., 2018]) and proteins (Cuzzolin et al., 2016; Sabbadin and Moro, 2014) without the introduction of any energetic bias. Briefly, during SuMD, a series of short unbiased MD simulations are performed, and after each simulation, the distances between the centers of mass (or the geometrical centers) of the ligand and the predicted binding site (collected at regular time intervals) are fitted to a linear function. If the resulting slope is negative (showing progress toward the target), the next simulation step starts from the last set of coordinates and velocities, otherwise, the simulation is restarted by randomly assigning the atomic velocities.
 
 mwSuMD is designed to increase the sampling from a specific configuration by seeding user-decided parallel replicas (walkers) rather than one short simulation as per SuMD. Since one replica for each batch of walkers is always considered productive, mwSuMD gives more control than SuMD on the total wall-clock time used for a simulation. On the flip side, to maximize mwSuMD, it is optimal to assign one walker per GPU, requiring multiple GPUs to be effective. However, modern multi-threaded GPUs can still employ mwSuMD with a smaller cost in GPU performance. In the implementation for ACEMD used in this work, mwSuMD needs as input the initial coordinates of the system as a pdb file, the coordinates, and the atomic velocities of the system from the equilibration stage, the topology file of the system, and all the necessary force field parameters. The user can decide to supervise one (X) or two metrics (X’, X’’) of the simulated system over short simulations seeded in batches, called walkers. In the former case, either the slope of the linear function interpolating the metric values or a score can be adopted to decide whether to continue the mwSuMD simulation. When the user decides to supervise two metrics, a specific score is used. In the present work, distances between centroids, RMSDs, or the number of atomic contacts between two selections were supervised (Table 1). The choice of the metrics is system and problem-dependent, as the RMSD is most useful when the final state is known, while the distance is required when the target state is unknown; details on the scores are given below. The decision to restart or continue mwSuMD after any short simulation is postponed until all the walkers of a batch are collected. The best short simulation is selected and extended by seeding the same number of walkers, with the same duration as the step before.
 
-For each walker, the score for the supervision of a single metric (SMscore) is computed as the square root of the product between the metric value in the last frame (Xlast frame) and the average metric value over the short simulation (X̅):(1)SMscore=Xlastframe∗X¯
+For each walker, the score for the supervision of a single metric (SMscore) is computed as the square root of the product between the metric value in the last frame (Xlast frame) and the average metric value over the short simulation (X̅):
+
+$$
+SMscore=\sqrt{X_{lastframe}∗X¯}
+$$
 
 If the metric is set to decrease (e.g. binding or dimerization) the walker with the lowest SMscore is continued, otherwise (e.g. unbinding or outward opening of domains), the walker with the highest score is continued. Using the SMscore rather than the slope should give more weight to the final state of each short simulation, as it is the starting point for the successive batch of simulations. Considering the average of the metric should favor short simulations consistently evolving in the desired direction along the metric.
 
-If both X’ and X’’ are set to increase during the mwSuMD simulations, the score for the supervision of two metrics (DMscore) on each walker is computed as follows:(2)DMscore=((Xlastframe′X¯batchwalkers′−1)+(Xlastframe′′X¯batchwalkers′′−1))∗100
+If both X’ and X’’ are set to increase during the mwSuMD simulations, the score for the supervision of two metrics (DMscore) on each walker is computed as follows:
+
+$$
+DMscore=((\frac{X_{lastframe}^{′}}{X¯_{batchwalkers}^{′}}−1)+(\frac{X_{lastframe}^{′′}}{X¯_{batchwalkers}^{′′}}−1))∗100
+$$
 
 where X’last frame and X’’last frame are the metrics values in the last frame, while X̅’batch walkers and X̅’’batch walkers represent the average value of the two metrics over all the walkers in the batch. Subtracting the value 1 to the metric ratio ensures that if one of the two metrics from the last frame (X’last frame or X’’last frame) is equal to the average (X̅’’batch walkers or X̅’’batch walkers), then that metric addend is null, and DMscore depends only on the remaining metric. If any of the two metrics is set to decrease, then the corresponding component in Equation 2 is multiplied by –1 to maintain a positive score. Considering the average value of the two metrics over all the walkers rather than only over the considered walker should be more representative of the system evolution along the defined metric. In other words, the information about the metric is taken from all the walkers to better describe the evolution of the system.
 
@@ -110,29 +338,29 @@ The DMScore is designed to preserve some degree of independence between the two 
 
 The current implementation of mwSuMD is for Python3 and exploits MDAnalysis (Michaud-Agrawal et al., 2011) and MDTRaj (McGibbon et al., 2015) modules.
 
-## Force field, ligands parameters, and general systems preparation
+### Force field, ligands parameters, and general systems preparation
 
 The CHARMM36 (Huang and MacKerell, 2013; Huang et al., 2017) /CGenFF 3.0.1 (Vanommeslaeghe and MacKerell, 2012; Vanommeslaeghe et al., 2012; Yu et al., 2012) force field combination was employed in this work. Initial ligand force field, topology, and parameter files were obtained from the ParamChem webserver (Vanommeslaeghe and MacKerell, 2012). Restrained electrostatic potential (Woods and Chappelle, 2000) partial charges were assigned to all the non-peptidic small molecules but adrenaline and GDP using Gaussian09 (HF/6-31G* level of theory) and AmberTools20.
 
 Six systems were prepared for MD (Table 1). Hydrogen atoms were added using the pdb2pqr (Dolinsky et al., 2004) and propka (Olsson et al., 2011) software (considering a simulated pH of 7.0); the protonation of titratable side chains was checked by visual inspection. The resulting receptors were separately inserted in a 1-palmitoyl-2-oleyl-sn-glycerol-3-phosphocholine (POPC) bilayer (previously built by using the VMD Membrane Builder plugin 1.1, Membrane Plugin, Version 1.1, at http://www.ks.uiuc.edu/Research/vmd/plugins/membrane/), through an insertion method (Sommer, 2013). Receptor orientation was obtained by superposing the coordinates on the corresponding structure retrieved from the OPM database (Lomize et al., 2006). Lipids overlapping the receptor TM helical bundle were removed and TIP3P water molecules (Jorgensen et al., 1983) were added to the simulation box employing the VMD Solvate plugin 1.5 (Solvate Plugin, Version 1.5. at https://www.ks.uiuc.edu/Research/vmd/plugins/solvate/). Finally, overall charge neutrality was reached by adding Na+/Cl- counterions up to the final concentration of 0.150 M, using the VMD Autoionize plugin 1.3 (Autoionize Plugin, Version 1.3. at https://www.ks.uiuc.edu/Research/vmd/plugins/autoionize/).
 
-## System equilibration and general MD settings
+### System equilibration and general MD settings
 
 The MD engine ACEMD3 (Harvey et al., 2009) was employed for both the equilibration and productive simulations. The equilibration was achieved in isothermal-isobaric conditions (NPT) using the Berendsen barostat (Berendsen et al., 1984) (target pressure 1 atm) and the Langevin thermostat (Loncharich et al., 1992) (target temperature 300 K) with low damping of 1 ps–1. For the equilibration (integration time step of 2 fs): first, clashes between protein and lipid atoms were reduced through 1500 conjugate-gradient minimization steps, then a positional constraint of 1 kcal mol–1 Å–2 on all heavy atoms was gradually released over different time windows: 2 ns for lipid phosphorus atoms, 60 ns for protein atoms other than alpha carbon atoms, 80 ns for alpha carbon atoms; a further 20 ns of equilibration was performed without any positional constraints.
 
 Productive trajectories (Table 1) were computed with an integration time step of 4 fs in the canonical ensemble (NVT). The target temperature was set at 300 K, using a thermostat damping of 0.1 ps–1; the M-SHAKE algorithm (Forester and Smith, 1998; Kräutler et al., 2001) was employed to constrain the bond lengths involving hydrogen atoms. The cutoff distance for electrostatic interactions was set at 9 Å, with a switching function applied beyond 7.5 Å. Long-range Coulomb interactions were handled using the particle mesh Ewald summation method (Essmann et al., 1995) by setting the mesh spacing to 1.0 Å.
 
-## Vasopressin binding simulations
+### Vasopressin binding simulations
 
 The V2R in complex with vasopressin (AVP) and the Gs protein (Zhou et al., 2021) was retrieved from the Protein Data Bank (Berman et al., 2000) (PDB 7DW9). The Gs was removed from the system and the missing residues on ECL2 (G185-G189) were modeled from scratch using Modeller 9.19 (Fiser and Sali, 2003), considering the solution with the lowest DOPE score out of 10 conformations produced. AVP was placed away from V2R in the extracellular bulk and the resulting system was prepared for MD simulations and equilibrated as reported above.
 
 During SuMD simulations, the distance between the centroids of AVP residues C1-Q4 (backbone and side chains), anticipated to bind deep into V2R, and the V2R residues lining the peptide binding site Q96, Q174, Q291, and L312 (Cα atoms only) was supervised over time windows of 600 ps or 100 ps (Table 1). mwSuMD simulations considered the same distance, the RMSD of AVP residues C1-Q4 to the experimental bound complex, or the combination of the two during time windows of 600 ps (3 walkers) or 100 ps (10 walkers) (Table 1). Slope, SMscore, or DMscore (see Methods section mwSuMD protocol) was used in the different mwSuMD replicas performed (Table 1). Simulations were stopped after 300 ns (time window duration = 600 ps) or 50 ns (time window duration = 100 ps) of total SuMD or mwSuMD simulation time.
 
-## Vasopressin unbinding simulations
+### Vasopressin unbinding simulations
 
 The V2R:AVP complex was prepared for MD simulations and equilibrated as reported above. During both SuMD and mwSuMD simulations (Table 1), the distance between the centroids of AVP residues C1-Q4 (backbone and side chains) and V2R residues Q96, Q174, Q291, and L312 (Cα atoms only) was supervised over time windows of 100 ps (10 walkers seeded for mwSuMD simulations). Replicas were stopped when the AVP-V2R distance reached 40 Å.
 
-## GLP-1R:PF06882961 binding simulations
+### GLP-1R:PF06882961 binding simulations
 
 The inactive GLP-1R was retrieved from the Protein Data Bank (Berman et al., 2000) (PDB 6LN2) (Wu et al., 2020). Fab and the intracellular negative allosteric modulator were removed, and missing residues in the stalk (129–134) and ICL2 (256–263) were modeled with Modeller 9.19, considering the solutions with the lowest DOPE score out of 10 conformations produced. The PF06882961 initial conformation was extracted from the complex with the fully active GLP-1R (Zhang et al., 2021) (PDB 7LCJ) and placed away from GLP-1R in the extracellular bulk. The resulting system was prepared for MD simulations and equilibrated as reported above. CGenFF dihedral force field parameters of PF06882961 with the highest penalties (dihedrals NG2R51-CG321-CG3C41-CG3C41 [penalty = 143.5] and NG2R51-CG321-CG3C41-OG3C51 [penalty = 152.4]) were optimized (Figure 6a) employing Gaussian09 (geometric optimization and dihedral scan at HF/6-31g(d) level of theory) and the VMD force field toolkit plugin (Mayne et al., 2013).
 
@@ -144,13 +372,13 @@ Four classic MD replicas, for a total of 8 μs, were performed on the inactive r
 
 mwSuMD simulations (Table 1) were performed stepwise to dock the ligand within GLP-1R first and then relax the receptor toward the active state. The PF06882961 binding was obtained by supervising at the same time the distance between the ligand’s heavy atoms centroid and the centroid of GLP-1R TM7 residues L3797.34-F3817.36 (Cα atoms only), which are part of the orthosteric site, and the RMSD of the ECD (residues W33ECD-W120ECD, Cα atoms only) to the active state (PDB 7LCJ) until the former distance reached 4 Å. In the second phase of mwSuMD, the RMSD of the ECD (residues W33ECD-W120ECD, Cα atoms only) and the ECL1 to the active state (PDB 7LCJ, Cα atoms of residues M2042.74-L2243.27) were supervised until the latter reached less than 4 Å. During the third phase, the RMSDs of PF06882961, as well as the RMSD of ECL3 (residues A3686.57-T3787.33, Cα atoms), were supervised until the former reached values lower than 3 Å. In the last mwSuMD step, only the RMSD of TM6 (residues I3456.34-F3676.56, Cα atoms) to the active state (PDB 7LCJ) was supervised until less than 5 Å. RMSDs were computed after superimposition on TM2, ECL1, and TM3 residues 170–240 (Cα atoms), which is the GLP-1R less flexible part (Deganutti et al., 2022).
 
-## Membrane-anchored Gs protein:GLP-1R simulations and GDP dissociation
+### Membrane-anchored Gs protein:GLP-1R simulations and GDP dissociation
 
 The PDB 6EG8 was processed through Charmm-GUI (Jo et al., 2008) to palmitoylate residue C3Gαi and geranylgeranylate residue C65Gγ. The resulting system was inserted into a 120×120 Å POPC membrane and previously built by using the VMD Membrane Builder plugin 1.1, Membrane Plugin, Version 1.1, at http://www.ks.uiuc.edu/Research/vmd/plugins/membrane. Lipids overlapping the palmitoyl and geranylgeranyl groups were removed and TIP3P water molecules (Jorgensen et al., 1983) were added to the simulation box by means of the VMD Solvate plugin 1.5 (Solvate Plugin, Version 1.5. at https://www.ks.uiuc.edu/Research/vmd/plugins/solvate/). Finally, overall charge neutrality was reached by adding Na+/Cl- counterions up to the final concentration of 0.150 M, using the VMD Autoionize plugin 1.3 (Autoionize Plugin, Version 1.3. at https://www.ks.uiuc.edu/Research/vmd/plugins/autoionize/). The first stage of equilibration was performed as reported above (Methods section System equilibration and general MD settings) for 120 ns, followed by a second stage in the NVT ensemble for a further 1 μs without any restraints to allow the membrane-anchored heterotrimeric Gs protein to stabilize within the intracellular side of the simulation box. After this two-stage long equilibration, GLP-1R from the final frame of the activation simulation (in complex with PF06882961) was manually inserted into the equilibrated membrane above the Gs protein using the corresponding structure retrieved from the OPM database as a reference, and the system further equilibrated for 120 ns as reported above (Methods section System equilibration and general MD settings). The GLP-1R-Gs system was then subjected to three simulations (Table 1). Each mwSuMD replica was interrupted by 500 ns of classic MD twice, to relax the system during the transition. In the supervised stages, the distance between residues M386-L394 Gαs (all-atoms centroid) of helix 5 (α5) and the GLP-1R intracellular residues R1762.46, R3486.37, S3526.41, and N4057.60 (Cα atoms only) was monitored, seeding 3 walkers of 200 ps each.
 
 The AHD opening was simulated starting from the GLP-1R:Gs binding mwSuMD replica with the final lowest Gs RMSD, the lowest PF06882961 binding energy and the highest GDP binding energy (Replica 2 in Figure 5e) by supervising the distance between AHD residues G70-R199Gαs and K300-L394Gαs (all-atoms centroids) during 3 walkers of 100 ps each. 300 ns of classic MD was performed to relax the system. Finally, the GDP unbinding was supervised as the distance between GDP (all-atoms centroid) and residues E50Gαs, K52Gαs, T55Gαs, K293Gαs, and V367Gαs (Cα atoms only) of Gαs; 5 walkers were used in a 50-ps-long mwSuMD simulations.
 
-## MD analysis
+### MD analysis
 
 Interatomic distances were computed through MDAnalysis Michaud-Agrawal et al., 2011; RMSD were computed using VMD (Humphrey et al., 1996) and MDAnalysis (Michaud-Agrawal et al., 2011). Interatomic contacts and ligand-protein hydrogen bonds were detected using the GetContacts scripts tool (https://getcontacts.github.io), setting a hydrogen bond donor-acceptor distance of 3.3 Å and an angle value of 120° as geometrical cutoffs. Contacts and hydrogen bond persistency are quantified as the percentage of frames (over all the frames obtained by merging the different replicas) in which protein residues formed contacts or hydrogen bonds with the ligand.
 
@@ -158,14 +386,14 @@ The MMPBSA.py (Miller et al., 2012) script, from the AmberTools20 suite (The Amb
 
 Supplementary videos were produced employing VMD and avconv (at https://libav.org/avconv.html). Molecular graphics images were produced using the UCSF Chimera (Pettersen et al., 2004) (Version 1.14).
 
-## Gs protein:β2 AR binding simulations
+### Gs protein:β2 AR binding simulations
 
 mwSuMD simulations started from a not fully active, agonist-bound conformation of the β2 AR and the inactive Gs to resemble pre-coupling conditions. The full-length model of the adrenergic β2 receptor (β2 AR) in a not fully active state was downloaded from GPCRdb (https://gpcrdb.org/). The full agonist adrenaline (ALE) was inserted in the orthosteric site by superposition with the PDB ID 4LDO (fully active β2 AR) (Ring et al., 2013). The structure of the inactive, GDP-bound Gs protein (Liu et al., 2019) was retrieved from the Protein Data Bank (Berman et al., 2000) (PDB ID 6EG8) and placed in the intracellular bulk. The resulting system (Gs >50 Å away from β2 AR) was prepared for MD simulations and equilibrated as reported above. The PDB ID 3SN6 (fully active β2 AR in complex with Gs [Rasmussen et al., 2011]) was used as the reference for RMSD computations. Three mwSuMD replicas (Table 1) were performed supervising at the same time the distance between the helix 5 (α5) Gαs residues R385-L395 (Cα atoms centroid) and the β2 AR (residues V31-P330 Cα atoms centroid) as well as the RMSD (superimposing on β2 AR residues 70–170 Cα atoms) of β2 AR TM6 residues C265-I278 (Cα atoms only) to the fully active state, during 100 ps time windows (5 walkers). To monitor the progression of the simulations, we computed the RMSD of the Cα atoms of the Gα (residues 11–43 and residues 205–394) and Gβ subunits (residues 3–340) to the experimental complex (Rasmussen et al., 2011; Video 3, Figure 5—figure supplement 1). The flexibility of Gsβ is backed by both MD and cryo-EM data suggesting G protein rocking motions around Gsα:receptor interactions (Dong et al., 2020; Liang et al., 2020).
 
-## Membrane-anchored Gi protein:A1R simulations
+### Membrane-anchored Gi protein:A1R simulations
 
 Since the full-length structure of the inactive human Gi protein has not yet been resolved by X-ray or cryo-EM, it was modeled by superimposing the AlphaFold2 (Jumper et al., 2021) AI models of the Gαi (P63096-F1), Gβ (Q9HAV0-F1), and Gγ (P50151-F1) subunits to the PDB file 6EG8 (a Gs heterotrimer). The resulting homotrimer (without GDP) was processed through Charmm-GUI (Jo et al., 2008) to palmitoylate residue C3Gαi and geranylgeranylate residue C65Gγ (Linder et al., 1993; Mystek et al., 2019). The side chains of these two lipidated residues were manually inserted into a 120×120 Å POPC membrane and previously built by using the VMD Membrane Builder plugin 1.1, Membrane Plugin, Version 1.1. at http://www.ks.uiuc.edu/Research/vmd/plugins/membrane/. Lipids overlapping the palmitoyl and geranylgeranyl groups were removed and TIP3P water molecules (Jorgensen et al., 1983) were added to the simulation box by means of the VMD Solvate plugin 1.5 (Solvate Plugin, Version 1.5. at https://www.ks.uiuc.edu/Research/vmd/plugins/solvate/). Finally, overall charge neutrality was reached by adding Na+/Cl- counterions up to the final concentration of 0.150 M, using the VMD Autoionize plugin 1.3 (Autoionize Plugin, Version 1.3. at https://www.ks.uiuc.edu/Research/vmd/plugins/autoionize/). The first stage of equilibration was performed as reported above (Methods section System equilibration and general MD settings) for 120 ns, followed by a second stage in the NVT ensemble for a further 1 μs without any restraints to allow the membrane-anchored heterotrimeric Gi protein to stabilize within the intracellular side of the simulation box. After this two-stage long equilibration, the active state A1R in complex with adenosine (PDB 6D9H) was manually inserted into the equilibrated membrane above the Gi protein using the corresponding structure retrieved from the OPM database as a reference, and the system further equilibrated for 120 ns as reported in the Methods section System equilibration and general MD settings. The A1R-Gi system was then subjected to a 1-μs-long classic MD simulation and an mwSuMD simulation (Table 1). During the mwSuMD simulation, the RMSD (superimposing on A1R residues 40–140 Cα atoms) of helix 5 (α5) Gαi residues 329–354 to the PDB 6D9H was supervised, seeding 3 walkers of 100 ps each until the productive simulation time reached 50 ns (total simulation time 150 ns).
 
-## Numbering system
+### Numbering system
 
 Throughout the manuscript, the Ballesteros-Weinstein residues numbering system for class A (Ballesteros and Weinstein, 1995) and the Wootten residues numbering system for class B GPCRs (Wootten et al., 2013) are adopted.

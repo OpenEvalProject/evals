@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.40308.001 Outer membrane proteins (OMPs) are the proteins in the surface of Gram-negative bacteria. These proteins have diverse functions but a single topology: the β-barrel. Sequence analysis has suggested that this common fold is a β-hairpin repeat protein, and that amplification of the β-hairpin has resulted in 8–26-stranded barrels. Using an integrated approach that combines sequence and structural analyses, we find events in which non-amplification diversification also increases barrel strand number. Our network-based analysis reveals strand-number-based evolutionary pathways, including one that progresses from a primordial 8-stranded barrel to 16-strands and further, to 18-strands. Among these pathways are mechanisms of strand number accretion without domain duplication, like a loop-to-hairpin transition. These mechanisms illustrate perpetuation of repeat protein topology without genetic duplication, likely induced by the hydrophobic membrane. Finally, we find that the evolutionary trace is particularly prominent in the C-terminal half of OMPs, implicating this region in the nucleation of OMP folding.
+Outer membrane proteins (OMPs) are the proteins in the surface of Gram-negative bacteria. These proteins have diverse functions but a single topology: the β-barrel. Sequence analysis has suggested that this common fold is a β-hairpin repeat protein, and that amplification of the β-hairpin has resulted in 8–26-stranded barrels. Using an integrated approach that combines sequence and structural analyses, we find events in which non-amplification diversification also increases barrel strand number. Our network-based analysis reveals strand-number-based evolutionary pathways, including one that progresses from a primordial 8-stranded barrel to 16-strands and further, to 18-strands. Among these pathways are mechanisms of strand number accretion without domain duplication, like a loop-to-hairpin transition. These mechanisms illustrate perpetuation of repeat protein topology without genetic duplication, likely induced by the hydrophobic membrane. Finally, we find that the evolutionary trace is particularly prominent in the C-terminal half of OMPs, implicating this region in the nucleation of OMP folding.
 
 ## Introduction
 
@@ -40,7 +40,7 @@ By correlating this structural data with evolutionary relationships, we find a s
 
 ## Results
 
-## Several groups of OMBBs
+### Several groups of OMBBs
 
 We compiled a data set of 138 OMBBs at <85% sequence similarity, 118 of which share <50% sequence similarity (Franklin et al., 2018a; Franklin and Slusky, 2018b). To determine evolutionary relationships, we selected homologues to the structurally solved proteins from a database of 279,715 nonredundant sequences and generated hidden Markov model (HMM) profile alignments. The HMMs determine the likelihood of a relationship using a probabilistic model of the multiple sequence alignment and are therefore representative of all homologous sequences in the profile. The results were given as sequence alignments and a score called an E-value, which is the expected probability that there is false positive with a similarity greater than the given score (Söding, 2005). These results were mapped into a network model with proteins as nodes and alignments as connections drawn based on the magnitude of the E-value.
 
@@ -50,7 +50,19 @@ The majority (71% or 97/138) of OMBBs fall into this single, highly interconnect
 
 Our group of structurally solved prototypical OMBBs is composed of multiple subclusters (Figure 1 and Video 1). The subclusters are organized by strand number; most barrels that share a strand number are more closely related than barrels that differ in the number of strands. The relationships between the subclusters articulate evolutionary relationships between the strand numbers.
 
-## Connections between and among barrels of different strand numbers
+![Figure 1.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig1-v2.jpg)
+
+**Figure 1.:** Each edge represents sequence similarity between two nodes (barrels) with an E-value less than or equal to the subcaption. Multiple edges between the same pair of nodes have been removed for clarity; the edge with the lowest E-value was kept for visualization. (A) E-values ≤ 10−3, (B) E-values ≤ 10−5, (C) E-values ≤ 10−7, (D) E-values ≤ 10−12. A gif toggling through the E-values is shown in Video 1. The equivalent of Figure 1 at 25% sequence similarity is shown in Figure 1—figure supplement 1. Supplementary file 1 lists the list the PDBs of the full OMBB dataset. Figure 1—source data 1 show all the alignments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Each edge represents an interaction between two nodes (barrels) with an E-value less than or equal to the subcaption. Multiple edges between the same pair of nodes have been removed for clarity; the edge with the lowest E-value was kept for visualization.
+
+![Video 1.](https://cdn.elifesciences.org/articles/40308/elife-40308-video1.mp4.jpg)
+
+**Video 1.:** Gif toggles from E-value ≤10−3 to E-value ≤10−12.
+
+### Connections between and among barrels of different strand numbers
 
 Overall, we find that as barrels increase in strand number there is a slight increase in the average amino acid volume in the strands (Figure 2—figure supplement 1), likely because larger barrels would require larger amino acids to enforce the smaller curvature of the larger barrel’s circumference. However, such differences do not mute the relationships between barrels of different sizes.
 
@@ -58,7 +70,15 @@ As discussed above, it is generally understood that a change in strand number wo
 
 With respect to the quality of alignments, we find that E-values are always lower among barrels of the same strand number than between barrels of different strand numbers (Figure 2—source data 1). With respect to the quantity of alignments, there is, in all cases, a higher frequency of alignments between strands of the same size barrel than alignments between different sized barrels (Figure 2). The close relationships among barrels of the same size suggest that the different quantity of structures for each barrel size in the PDB may not have a strong biasing effect on our data as barrels of the same size tend to be related. Moreover, although duplication events are known to be more frequent than mutation events, the high frequency and high quality of the alignments between barrels of the same size strongly suggest that for OMBBs, mutation events are much more frequently fixed than duplication events.
 
-## Internal repeats
+![Figure 2.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig2-v2.jpg)
+
+**Figure 2.:** Probability of barrels aligning with other prototypical barrels of the same number of strands compared to the probability of barrels aligning with prototypical barrels with different numbers of strands. Only prototypical OMBBs with <25% sequence similarity were considered. Alignments of OMBBs shown at E-values < 10−3 (left), E-values < 10−5 (center), E-values < 10−7 (right). If multiple alignments between two proteins existed, we used only the alignment with the smallest E-value. Probability was calculated as the number of alignments in each group divided by the possible combinations of barrel alignments for each group. Moreover, we find that E-values are always lower among barrels of the same strand number than between barrels of a different strand number (Figure 2—source data 1). Although barrel residues increase in size as they increase in strand number (Figure 2—figure supplement 1) such differences do not mute the relationships between barrels of different sizes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Inward-facing residues face towards the barrel pore, while the outward-facing residues face the membrane. R2 values for the line of best fit are shown.
+
+### Internal repeats
 
 In order to better understand the repeat nature of the evolution from one strand number to another for all barrel types described above, alignments of sequence similar strands were found internally by allowing eache barrel to self-align. We will refer to internal alignments as internal repeats and to external alignments as alignments.
 
@@ -66,25 +86,49 @@ Internal repeats show the duplications that lead to a full-length protein. All i
 
 Internal repeats are identified in 39% of the prototypical barrels and are more characteristic of the smaller β-barrels than the larger ones (Figure 3A with a breakdown by type of internal repeat in Figure 1—figure supplement 1A and B). Internal repeats are generally quite robust – even at an E-value of ≤10−5, 36% of the prototypical barrels maintain an internal repeat. A full list of internal alignments identified for all 138 proteins can be found in the supplement (Figure 2—source data 1). Here, we enumerate the patterns that we find in the prototypical barrels (Figure 3 and Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig3-v2.jpg)
+
+**Figure 3.:** (A) Distribution of all prototypical barrels with an internal repeat. The blue bars represent the total counts, while the red bars represent the counts with an internal repeat. (B) Internal repeats are identified for the barrels that are circled. Red circles indicate a single hairpin shift; black indicates a double hairpin shift (See text for definition). (C,D) Strands are shown going right to left, N to C, following the orientation in the membrane, with up indicating extracellular and down indicating intracellular. Dark grey strands indicate that all barrels of that size share those strands in the repeat; light grey strands indicate that only some of the barrels have those strands involved in the internal repeat. White strands indicate that these strands are never observed to participate in an internal repeat. The top row of numbers represents the strand number and the bottom row of numbers represents the strand numbers that align with the top numbers in the internal repeat. (C) 8-stranded barrels, (D) 16-stranded barrels. Figure 3—figure supplement 1 shows the breakdown of Figure 3A by type of repeat as well as the repeat patterns for 12- and 14-stranded barrels. Figure 3—source data 1 show all internal alignments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Strands are shown going right to left, N to C, following the orientation in the membrane, with up indicating extracellular and down indicating intracellular. Dark grey strands indicate that all barrels of that size share those strands in the repeat; light grey strands indicate that only some of the barrels have those strands involved in the internal repeat. White strands indicate that these strands are never observed to participate in an internal repeat. The top row of numbers represents the strand number and the bottom row of numbers represents the strand numbers that align with the top numbers in the internal repeat. (A) Distribution by barrel size of the types of internal repeats. Compare with Figure 3A. (B) Distribution of internal repeat type identified in the prototypical barrels. (C and D) Diagram of the internal repeat for the 12- and 14- stranded barrels.
+
 The 8-stranded barrels only have double hairpin shifts (Figure 3C), while the 12-, 14-, and 16-stranded barrels have single hairpin shifts (Figure 3—figure supplement 1C and D, and Figure 3D). No internal repeats are detected in the 10- or 18-stranded barrels. Regardless of the internal repeats that do exist, the 8-, 12-, 14-, and 16-stranded barrels all contain at least one strand that does not contribute to an internal repeat. In the 8-stranded barrels, the fourth and eighth (last) strands are not found in any repeat. In the 12-, 14-, and 16-stranded barrels, the unaligned strands are the first few strands (strand one, strands one to three, and strands one to five, in the 12-, 14-, and 16- stranded barrels respectively).
 
-## Alignments
+### Alignments
 
 While internal repeats within a protein may reveal the duplications that lead to a full length protein, alignments between proteins can tell us how the proteins are evolutionarily linked to each other. The alignments between barrels of different strand numbers in the prototypical group (Figure 4) suggest a potential evolutionary pathway. In this section, we describe these alignments in two steps: (1) how the eight-stranded barrels align with the 10-, 12-, 14-, and 16-stranded barrels; and (2) how 14-stranded barrels align with 22-stranded barrels and how 16-stranded barrels align with 18-stranded barrels. The same strands that align within the first step are included in the alignment in the second step. So, although 8-stranded barrels do not align with 18- or 22-stranded barrels, many of the strands are passed through. This means that strands from 8-stranded barrels that align with the 16-stranded barrels are included in the strands in the 16-stranded barrels that align with the 18-stranded barrels. Similarly, the strands in the 8-stranded barrels that align with 14-stranded barrels are included in the strands in the 14-stranded barrel that align with the 22-stranded barrels. Examples of sequence alignments between barrels of different sizes and the lengths of the alignments are shown in the supplement (Figure 4—figure supplement 1, Figure 4—source data 1).
 
-## Step 1
+![Figure 4.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig4-v2.jpg)
+
+**Figure 4.:** 8-stranded proteins are found to align to proteins with 10, 12, 14 and 16 strands. The strands that initially align from the 8-stranded barrels in the 16-stranded barrels can be aligned from 16-stranded barrels to 18-stranded barrels. Moreover, the strands that align between the 8- and 14-stranded barrels align between the 14- and 22-stranded barrels. However, 8-stranded barrels themselves do not directly align with the 18- or 22- stranded barrels. Arrows indicate alignment between proteins of different strand numbers. Pink strands align with pink strands, red strands align with red strands, etc. An asterisk indicates multiple patterns are observed as described in the text though only the most prevalent one is shown. White strands are strands that are not found to align to the original eight strands between barrels of different sizes, although they may be part of the alignment between proteins of different strand numbers. Examples of sequence alignments between barrels of different sizes and the lengths of the alignments are in supplement Figure 4—figure supplement 1, Figure 4—source data 1 respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Number of strands involved in the alignments between barrels of different sizes at an E-value ≤10–5 at 85% sequence identity. The number of strands of the smaller barrel is counted.
+
+#### Step 1
 
 The alignments between 8-stranded barrels to 10-, 12-, 14-, and 16-stranded barrels represents the first step of strand number diversification. The eight-stranded barrels are at the center of the network (Figure 1A–C) and have similar alignments to 10-, 12-, 14-, and 16-stranded barrels. When the 8-stranded barrels align with the other barrels, the alignment includes at least two, and often as many as all 8, of the strands (Figure 4—figure supplement 1, Figure 4—source data 1). These alignments are positioned at the C-terminus such that the last strands of both barrels align, the penultimate strands align, the third-to-last strands align, etc. We find a C-terminal alignment in 165/186 alignments involving an 8-stranded barrel. These alignments represent relationships among 22,176 sequences included in the HMMs. However, all 8 strands of the 8-stranded barrel are not always involved in these alignments – although 145/186 alignments involve the last strand of both barrels, just 41/186 cases of this type of alignment contain all eight strands (representing relationships among 19,460 and 13,736 sequences included in the HMMs, respectively).
 
 Moreover, we find alignments between 10- and 12-stranded barrels (Figure 4—figure supplement 1E), 12- and 14-stranded barrels (Figure 4—figure supplement 1F), and 12- and 16-stranded barrels (Figure 4—figure supplement 1G). We are unable to differentiate, however, between scenarios in which the alignments between two such barrels resulted from the evolution from one barrel to another and those in which they both evolved from an original 8-stranded barrel. Essentially, all alignments between barrels in the second tier of Figure 4 follow the pattern of C-terminal alignment observed in step one (32/33 cases representing relationships among 14,198 sequences included in the HMMs).
 
-## Step 2
+#### Step 2
 
 The diversification from 14 to 22 strands, and from 16 to 18 strands is the second step of the strand number diversification. The alignment from the 14- to the 22-stranded barrel is relatively homogeneous. All alignments are between strands 4–13 of the 14-stranded barrels and strands 10–19 of the 22-stranded barrels (Figure 4—figure supplement 1H).
 
 The alignments from the 16-stranded barrels to 18-stranded barrels show extensive variation (Figure 4—figure supplement 1I), falling into four broad categories. The largest category (46% of the alignments observed at E-value <10−3, representing relationships among 7815 sequences included in the HMMs) are a C-terminal alignment of two to ten strands in length, similar to that observed in step 1 with the 8-stranded barrels. The second-largest category (32% of the alignments, representing relationships among 8635 sequences included in the HMMs) are an N-terminal alignment in which the first strands align, the second strands align, etc., with between two and 16 strands involved. In the third-largest group (14% of the alignments representing relationships among 5897 sequences included in the HMMs), strands 1–14 of the 16-stranded barrel align with strands 4–18 of the 18-stranded barrel. Finally, in the fourth and smallest group 24 alignments (9%) have strands which align with loops or loops which align with strands. We sub-categorize these loop-to-strand alignments in the fourth category as 4A) loop to hairpin, 4B) loop to hairpin with alternate alignment, and 4C) large rearrangement (Figure 5A). This fourth category, in which loops and strands align, is perhaps the most interesting as it illustrates a potentially new, non-duplication method of strand number diversification.
 
 In order to trust these new but infrequent methods of strand number diversification, it is important that homologues of different strand numbers aren’t heavily populating each other’s HMMs leading profiles to have mistaken alignments between strands and loops. To confirm we haven’t corrupted the strand identities in this way, we checked for homologues which overlapped between HMMs of different strand numbers. Only minimal overlap was found with the average percent overlap between aligned sequences in barrels of different sizes at 0.041% and a maximum percent overlap of 3.7%.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig5-v2.jpg)
+
+**Figure 5.:** (A) The subnetwork of unusual alignments with E-values shown above the arrow. 16-stranded barrels are shown in cyan; 18-stranded barrels are shown in blue. Full alignments with E-values are shown in Figure 5—source data 1. In (B) and (C) loops are colored to reflect the strands that they were or have become. Strand boundaries are determined by a combination of ϕ and φ angles and hydrogen bonding patterns as described in the materials and methods section. A representative alignment is shown below each diagram. Only strands are colored in the alignments to match the colors in the diagrams. (B) Loop to hairpin. A large loop in the left barrel (yellow/orange) becomes two strands in the right barrel. (C) Large rearrangement. In this rearrangement, the loop between a and b in the 16-stranded barrel becomes two strands in the 18-stranded barrel and strand b of the 16-stranded barrel becomes a loop in the 18-stranded barrel while the loop between c and d becomes a strand. Some barrels have alternative structures in which some amino acids in the extracellular region of the barrel may be defined as loop where in other structures they are defined as strand or vice versa. Only one of the 1653 alignments in the 10–3 E-value network changes strand number alignment based on alternative structure. That alignment is shown in Figure 5—figure supplement 1 and does not change any data shown in Figure 5.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The only alignment with a different number of strands involved using the alternative structures, is the alignment between PDB IDs 2wjr and 2 × 9 k. While the number of strands are identical, in the alternative alignment using the strand definitions of PDB ID 5mwv, it is only aligned with gap residues and therefore the alignment is considered to be one strand shorter.
 
 The first of the three loop-to-strand alignment mechanisms is a loop to hairpin transition (Figure 5B) in which a long loop folds down to form a new hairpin between two existing strands. We observe two examples of this type of transition (Figure 5A orange arrows from cyan to blue) in which the 16-stranded loop folds down to form a hairpin in the 18-stranded barrel (representing relationships among 2903 sequences included in the HMMs). We also observe loop to hairpin transitions in which the 18-stranded barrel contains the loop and the 16-stranded barrel contains the hairpin (Figure 5A orange arrows from blue to cyan blue). We identify nine examples of this transition, representing relationships among 4398 sequences included in the HMMs. If this diversification occurred from the 16-stranded barrel to the 18-stranded barrel these represent a hairpin to loop transition. If this diversification occurred in the 18- to 16-stranded barrel direction, then it must be accompanied by a four strand deletion.
 
@@ -104,33 +148,45 @@ Beta-strands have a sequence hallmark of alternating polar and non-polar amino a
 
 In contrast to the similarity in polarity alternation between loops and strands, we found that the loop regions were less hydrophobic than the strand regions with which they aligned although they are more hydrophobic than the loops in our control. We averaged hydropathy values (Kyte and Doolittle, 1982) for the amino acids which are part of the alignments and are loops in one structure and strands in another structure. The average hydropathy in the loop conformation is −0.57 and the average hydropathy in the strand conformation is −0.22 (negative is hydrophilic and positive is hydrophobic). Though these differ from each other, they are more hydrophobic and less different than our control loops and control strands which we found to have hydropathy scores of −1.11 and −0.40 respectively.
 
-## C-terminal conservation
+### C-terminal conservation
 
 Determining the positional preference of alignments between barrels of different strand numbers allows us to trace a conserved, possibly ‘original’, set of strands through all the barrel sizes (Figure 4). The last seven strands of the 8-stranded barrels can be traced to the last strands of the 10-, 12-, 14-, 16- barrels, and then to the last strands of the 18-stranded barrels and to the middle of the 22-stranded barrels.
 
 Because many of the alignments that we find are between fragments of proteins, we can assess the alignment preference for fragments at different positions within the protein. For each strand-position of each barrel of the same strand number (all strand 1s of 8-stranded barrels, all strand 2 of 8-stranded barrels, etc.) we assessed the number of times that strand position participated in an alignment. Documenting these alignments led to the observation that we find a significant conservation (i.e., reuse of sequence between proteins) of strands in the C-terminal half of the protein and a much lower conservation overall for the N-terminus (Figure 6, Figure 6—figure supplement 1 at 25% sequence identity shows a similar trend). We find this C-terminal half’s conservation to be the case for proteins of all strand numbers.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig6-v2.jpg)
+
+**Figure 6.:** For each alignment involving two prototypical barrels, we determined the identity of the strands in each barrel. Each graph represents the distribution of the strands reused in that barrel size. Figure 6—figure supplement 1 shows a similar trend at 25% sequence identity. The length distribution of these alignment (at 85% sequence) is shown in Figure 6—figure supplement 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Identity of strands involved in alignments at 25% sequence identity. For each alignment involving two prototypical barrels, we determined the identity of the strands in each barrel. Each graph represents the distribution of the strands reused in that barrel size.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/40308/elife-40308-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Length of the strands involved in the alignments between barrels at 85% sequence identity and an E-value ≤10–3.
+
 ## Discussion
 
 Looking at a combination of structural and sequence information allows us to trace how genetic changes influence structural changes, revealing evolutionary pathways and challenging the relationship between genetic duplication and structural repetition of repeat proteins. For this analysis high resolution structures are necessary to find these detailed evolutionary pathways. The 97 experimentally solved structures of prototypical barrels in our data set map to 50,832 homologous sequences incorporated into our HMM alignments. Given that the total number of OMBB sequences was assessed to be 48,731 (Freeman and Wimley, 2012) or 76,760 (Reddy and Saier, 2016), our methods have good coverage of the space of the non-structurally characterized OMBBs.
 
-## Prevalence of divergence from mutations vs. duplication
+### Prevalence of divergence from mutations vs. duplication
 
 Our analysis of the relative frequency and quality of alignments between barrels of the same size and barrels of different sizes illustrates that alignments are always more likely to be among barrels of the same strand number than between barrels of different strand numbers (Figure 2—source data 1). Moreover, as demonstrated by lower E-values, the quality of the alignments between barrels of the same strand numbers are better than those between barrels of different strand numbers. This difference in alignment quality demonstrates that for OMBBs partial-gene duplication events that are fixed are rare, despite duplication events being more common than mutation events generally. Strand-number changes may thus be understood as discrete events which can be charted as steps of evolutionary diversification.
 
-## Internal repeats and the primordial barrel
+### Internal repeats and the primordial barrel
 
 The large percentage of prototypical barrels that have internal alignments suggests that strand number diversification – when it occurs – largely results from amplification. Our data are consistent with these duplications occurring for many different numbers of strands. Although the 8-stranded barrel is the smallest known OMBB single chain barrel, we see an internal double hairpin shift, an interval of four strands from each other. Strands 1–3 align with strands 5–7 in 8/14 of 8-stranded barrels. This alignment points to the idea that the 8-stranded beta barrel evolved from a smaller segment, likely the double hairpin described previously (Remmert et al., 2010). Given the large number of 3- and 7-stranded alignments (Figure 6—figure supplement 2), the structure further implies that the last strand of these double hairpin units has degenerated, possibly due to evolutionary pressure.
 
 A primordial 8-stranded barrel with an internal double hairpin repeat raises the possibility that a primordial four strands formed a multi-chain beta barrel. These strands would then have been duplicated to form the first single-chain barrel. Since most repeat proteins do not have function as individual domains, it has been hypothesized that many repeat proteins were originally homo-oligomers (Ponting and Russell, 2000). This hypothesis supports the idea of the primordial barrel as a multi-chain beta barrel like YadA (Franklin et al., 2018a): a trimeric adhesion protein, where each chain contributes four strands (a double hairpin) to create a 12-stranded barrel.
 
-## A pathway for strand number diversification
+### A pathway for strand number diversification
 
 Our graph of strand number connectivity (Figure 4) demonstrates a likely evolutionary path towards strand number diversification. The alignment data are consistent with the notion of a primordial 8-stranded barrel that developed more strands at the N-terminus through hairpin duplication (or some other evolutionary mechanism) to ultimately create 10-, 12-, 14-, and 16-stranded barrels. From these branching points, there were two secondary evolutionary transitions: 22-stranded barrels evolved from the 14-stranded barrels and 18-stranded barrels evolved from the 16-stranded barrels.
 
 For many of the branch points there is only one location of the aligned strands from one strand number to another. The consistency of that location indicates that either there was a single event that caused the additional strands and then diversification from that point, or that there is a preferred pathway of duplication which all strand-increase events follow. The fact that the 18- and 22-stranded barrels overwhelmingly have alignments among them that encompass the entirety of both barrels (Figure 6 and Figure 6—figure supplement 2) suggests that many barrels of these sizes are orthologs.
 
-## Novel diversification mechanisms
+### Novel diversification mechanisms
 
 The pattern of conservation in the 16- to 18-stranded barrels illustrates that a repeating topology can be created without motif duplications. Moreover, the alignments between 16- and 18-stranded barrels suggest more than one evolutionary path to an addition of two strands. Since we are hypothesizing that the 16-strand to 18-strand barrel transition event is among the more recent of the strand number diversification events (i.e., step 2), it makes sense that we can map these events more clearly than the other strand diversification events. These novel diversification mechanisms may have been used by other strand number transitions, but as those transitions would be older they would in turn be more likely to have been obscured by further evolution.
 
@@ -138,27 +194,27 @@ Some of the transitions between 16- and 18-stranded barrels occur through large 
 
 The novel mechanisms of strand number diversification are a strong counterargument to the intuitive understanding that all repeat segments in repeat proteins are made from gene/motif duplications. Moreover, the creation of a repeat segment by something other than a duplication event indicates that both the environment and function of OMBBs required the repeated structural motif. In the process of collecting this data, we created other iterations of the alignment dataset, with slightly fewer sequence inputs. These iterations generated different alignments, but presented the same novel mechanisms of diversification with similar rates of occurrence. Therefore, it appears that the environment and function of the barrel enforces the structural repeats of hairpins in the beta barrel, even without sequence repeats.
 
-## Transition from 14- to 22-stranded barrels
+### Transition from 14- to 22-stranded barrels
 
 The mechanism of amplification for the 14- to 22-stranded barrel transition remains opaque. It may be that barrels larger than 18 strands require a large stabilizing domain plugging the pore, such as the β-sandwich observed in the middle of the 22-stranded barrels. The 14-stranded barrels from which the 22-stranded barrels evolved have small N-terminal plug domains with tertiary structure; other barrels with more than 10 strands have occluding loops but not domains with tertiary structure. The presence of the more structured plug could have facilitated the 22-stranded barrels to branch off of the 14-stranded barrels. However, the unusual, non-C-terminal localization of the strands from the 14-stranded barrel in the 22-stranded barrel, as well as the overall lack of internal duplication in 22-stranded barrels, implies that this transition used a different style of amplification than the mechanisms described here. We hope that future analysis will explain this puzzling transition.
 
-## No change in direction
+### No change in direction
 
 The existence of strand number diversification events that are not hairpin duplications means that strand number diversification could occur with single strand additions. This raises the question: if single strand additions are possible, why are all bacterial OMBBs even-stranded? We believe that this is because the strands and loops encode a membrane topology that is difficult to override. Unlike inner membrane proteins with a positive inside rule (von Heijne and Gavel, 1988), outer membrane proteins show a charge-out rule within their strands (Seshadri et al., 1998; Slusky and Dunbrack, 2013). Addition of an odd number of strands anywhere but the C-terminus would change the directionality of all subsequent strands. The preference for directional maintenance is so intense that of all 2642 alignments represented in Figure 1, there are only 11 instances of strand redirection (Figure 5A and C, Figure 5—source data 1) in which any strands change topology (from N-terminus periplasmic to N-terminus extracellular or vice versa). The 11 instances we document (Figure 5A, Figure 5—source data 1) representing relationships among 6978 sequences in the HMM profiles) all have a single strand that flips from the N-terminal end of the strand facing into the cell to the N-terminal end of the strand facing out of the cell. However, in all cases the topology flip is then corrected by a subsequent strand becoming a loop so that the topology reversal is not perpetuated through the entire protein. The topological rigidity of duplications in beta barrels contrasts with duplications in helical proteins, which are distributed roughly evenly between parallel and antiparallel duplications (Hennerdal et al., 2010).
 
-## Increasing strand numbers more prevalent than decreasing
+### Increasing strand numbers more prevalent than decreasing
 
 The relational network shows frequent strand additions; however, it is less clear on the prevalence of strand subtractions. If Figure 1 is viewed with a primordial 8-stranded barrel (Figure 4) in mind, all nodes of a lower strand number branch off groups of nodes of a higher strand number. The most ambiguous example is the unusual case of 12-stranded 2wjr, which aligns to 8-stranded barrels and 16-stranded barrels. Since many of the 8- and 16-stranded barrels align with each other, it is unclear if this 12-stranded barrel evolved from the gain of four strands from the 8-stranded barrels or if it is an unusual case of a loss of four strands from the 16-stranded barrel.
 
 Though we find no clear cases of strand deletion, we cannot exclude the possibility that some of the alignments between larger and smaller barrels are deletions from the large to the small barrel rather than duplications from the small to the large barrel. For example, some of the alignments between 16- and 18-stranded barrels may originate at the 18-stranded barrel and result in the 16-stranded barrel. The observed loop-to-hairpin transitions from 18-stranded barrels to 16-stranded barrels, although not evidence of a deletion, may be evidence of a mechanism of diversification that can proceed from larger barrels to smaller barrels. We attribute the lack of any unambiguous strand loss events to any one of the following three causes, or a combination thereof: 1) The rate of gene or domain deletions in bacteria (Nilsson et al., 2005) is generally regarded to be lower than that of gene or domain duplications in bacteria (Starlinger, 1977; Reams et al., 2010; Katju and Bergthorsson, 2013); 2) Because the primordial, 8-stranded, single-chain barrel appears to be the smallest, starting from that barrel would require two strand change events—one addition and then one subtraction—in order to see a subtraction; 3) Strand change events are sufficiently difficult to fix and happen infrequently enough that the sample size is underpowered to detect them.
 
-## No 20-stranded barrels
+### No 20-stranded barrels
 
 It is surprising that structures have been resolved for every even number of stranded barrel from 8 to 26, with the exception of 20-stranded barrels (Figure 3A). Even the more permissive search used by Reddy and Saier, which predicts over 50,000 barrels, does not find any 20-stranded OMBBs for bacteria (Reddy and Saier, 2016).
 
 Our sequence similarity networks shed some light on this mystery. If 20-stranded barrels require a large plug for stabilization, they would need to have diversified from the small set of large-plug-containing barrels, as the 22-stranded barrels did. Moreover, OMBB strand numbers are clearly not randomly distributed. Our network demonstrates that strand number transitions are rare, likely requiring distinct and improbable events. Based on the type of transitions we have seen, the most likely pathways would be either a doubling of a 10-stranded barrel or one of the mechanisms of strand addition seen in the 16-to-18 strand transition, applied to an 18-stranded barrel. However, 10-stranded barrels are rare enough themselves, with only three occurrences in our data set. Moreover, a strand addition from 18 would be three transitions away from the primordial group, a number of steps that has not yet been documented. Given the rarity of amplification events, it may be that 20-stranded barrels have not yet been sampled.
 
-## C-terminal strand conservation
+### C-terminal strand conservation
 
 While prior work has shown that membrane proteins diversify more than other proteins (Shimizu et al., 2004; Sojo et al., 2016), we extend these results to demonstrate that this diversification is applied unequally. It is easier to find evolutionary traces in the C-terminal half of outer membrane proteins than in the N-terminal half. This is an overarching feature of OMBBs; however, it is most distinct for 16-stranded barrels (Figure 6, Figure 6—figure supplement 1). These results are either due to negative selection (i.e., suppression of fixation in the C-terminal half), or positive selection that leads to diversification in the N-terminal half.
 
@@ -174,7 +230,7 @@ Overall, mapping sequence alignments with solved structures of prototypical beta
 
 ## Materials and methods
 
-## Barrel network creation
+### Barrel network creation
 
 The barrel network was created following the method previously described (Franklin et al., 2018a). Briefly, we generated an HMM profile for each barrel in our set of 138 proteins from the database uniclust30_2017_10 (available at http://wwwuser.gwdg.de/~compbiol/uniclust/2017_10/) using default parameters for HHblits including a MAC threshold at 0.35. HMM-HMM aligners are more sensitive than using PSI-BLAST or HMMER3 for building iterative HMM profiles (Remmert et al., 2011). The MSA in a3m format for our HMMs are available online at https://github.com/SluskyLab/OMBB_A3Mfiles.git (copy archived at https://github.com/elifesciences-publications/OMBB_A3Mfiles). Then, we identified evolutionary relationships using the sensitive HMM sequence aligner HHsearch (Söding, 2005). HHsearch uses local alignments, meaning that it is not forced to align full sequences. Rather it can align subsections within proteins and can identify more than one possible alignment. We applied a 20-residue cutoff which is a length that includes 99.7% of hairpins in our database. The prototypical barrel cluster was defined as the large cluster that had no connection with an E-value ≤10−3 to any other OMBB.
 
@@ -184,11 +240,11 @@ Strands were defined using in-house software, Polar Bearal, as previously descri
 
 Some barrels have alternative structures in which some amino acids in the extracellular region of the barrel may be defined as loop where in other structures they are defined as strand or vice versa. Barrels for which multiple structures are available, were analyzed using the longest and shortest strand definitions. Using alternative structures alters the number of strands in only one of the 1653 alignments in the 10–3 E-value network (Figure 5—figure supplement 1). That alignment does not change the features reported here nor is it one of the transitions described in Figure 5.
 
-## Internal repeats
+### Internal repeats
 
 Internal repeats were identified by self-aligning each of the 138 β-barrels using HHalign. Results were filtered to only include alignments with an HHalign probability >75% and E-value ≤10−3. The HHalign probability is the log-odds probability of whether the alignment was produced by the HMM versus a random model (Söding, 2005). The full set of results can be found in the supplemental file InternalRptsE10-3.xlsx.
 
-## Polarity alternation and hydrophobicity calculations
+### Polarity alternation and hydrophobicity calculations
 
 Alignments of 16-and 18-stranded β-barrels where strands aligned with loops were selected for hydrophobicity and alternating polarity assessment. Any residue that aligned with a gap was not used in the calculation. Strand/loop regions that had alignments with multiple other strand/loops were included if they contained less than 50% amino acid identity compared to the same region in other alignments. Control datasets for both loops and strands were created using all the strands and extracellular loops in 16- and 18- stranded β-barrels that were not part of any loop-strand transition alignment.
 

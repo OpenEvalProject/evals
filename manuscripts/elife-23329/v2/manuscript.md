@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.23329.001 Myelination speeds conduction of the nerve impulse, enhancing cognitive power. Changes of white matter structure contribute to learning, and are often assumed to reflect an altered number of myelin wraps. We now show that, in rat optic nerve and cerebral cortical axons, the node of Ranvier length varies over a 4.4-fold and 8.7-fold range respectively and that variation of the node length is much less along axons than between axons. Modelling predicts that these node length differences will alter conduction speed by ~20%, similar to the changes produced by altering the number of myelin wraps or the internode length. For a given change of conduction speed, the membrane area change needed at the node is >270-fold less than that needed in the myelin sheath. Thus, axon-specific adjustment of node of Ranvier length is potentially an energy-efficient and rapid mechanism for tuning the arrival time of information in the CNS. DOI: http://dx.doi.org/10.7554/eLife.23329.001
+Myelination speeds conduction of the nerve impulse, enhancing cognitive power. Changes of white matter structure contribute to learning, and are often assumed to reflect an altered number of myelin wraps. We now show that, in rat optic nerve and cerebral cortical axons, the node of Ranvier length varies over a 4.4-fold and 8.7-fold range respectively and that variation of the node length is much less along axons than between axons. Modelling predicts that these node length differences will alter conduction speed by ~20%, similar to the changes produced by altering the number of myelin wraps or the internode length. For a given change of conduction speed, the membrane area change needed at the node is >270-fold less than that needed in the myelin sheath. Thus, axon-specific adjustment of node of Ranvier length is potentially an energy-efficient and rapid mechanism for tuning the arrival time of information in the CNS.
 
 ## Introduction
 
@@ -29,17 +29,17 @@ Although most interest has focussed on the effect of changes of myelin thickness
 
 ## Results
 
-## Variation of node length in the optic nerve and cortex
+### Variation of node length in the optic nerve and cortex
 
-We first measured the length of nodes of Ranvier and axon diameter in adult rat optic nerve using both confocal and serial electron microscopy (
+We first measured the length of nodes of Ranvier and axon diameter in adult rat optic nerve using both confocal and serial electron microscopy (Figure 1, Figure 1—figure supplement 1). Using electron microscopy (EM) we found the mean node length was 1.08 ± 0.02 µm (mean ± s.e.m., n = 46 nodes). Node lengths varied 2-fold, from 0.7 to 1.4 µm with a standard deviation of 0.15 µm (Figure 1—figure supplement 1). Node lengths were not significantly correlated with axon diameter at the node, which had a mean value of 0.80 ± 0.03 µm (standard deviation 0.19 µm; Figure 1—figure supplement 1, the slope of the regression line is not significantly different from zero, p=0.46). Thus, the different node lengths observed did not simply reflect axons being of different sizes.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23329/elife-23329-fig1-v2.jpg)
 
-**Figure 1.:** (A) Confocal image of a single optic nerve node of Ranvier showing the node labelled with antibody to NaV1.6 (green) and paranodes labelled for Caspr (red). (B) Intensity profile of Caspr staining for the node in A. Node length was measured as the distance between the half maximum intensity for each paranode. (C, D) Confocal images of nodes in the optic nerve (C) and layer V of the cortex (D) highlighting the different range of node of Ranvier sizes in these areas. (E) Mean ± s.e.m. of the node lengths measured in optic nerve (ON, red) and layer V of the cortex (blue). (F, G) Distribution of node lengths from data in E for optic nerve (F) and cortex (G). (H) Node diameter as a function of node length in the optic nerve (red) and in grey matter of the cerebral cortex (blue). Slope of regression lines in H are not significantly different from zero (p=0.14 (optic nerve) and p=0.42 (cortex)). (I) NaV1.6 immunolabel intensity (summed over each node) as a function of node length in cerebral cortex (each point is one node). NaV1.6 labelling is correlated with node length (slope of regression line is significantly greater than zero, p=1.2×10−15).DOI: http://dx.doi.org/10.7554/eLife.23329.003
+**Figure 1.:** (A) Confocal image of a single optic nerve node of Ranvier showing the node labelled with antibody to NaV1.6 (green) and paranodes labelled for Caspr (red). (B) Intensity profile of Caspr staining for the node in A. Node length was measured as the distance between the half maximum intensity for each paranode. (C, D) Confocal images of nodes in the optic nerve (C) and layer V of the cortex (D) highlighting the different range of node of Ranvier sizes in these areas. (E) Mean ± s.e.m. of the node lengths measured in optic nerve (ON, red) and layer V of the cortex (blue). (F, G) Distribution of node lengths from data in E for optic nerve (F) and cortex (G). (H) Node diameter as a function of node length in the optic nerve (red) and in grey matter of the cerebral cortex (blue). Slope of regression lines in H are not significantly different from zero (p=0.14 (optic nerve) and p=0.42 (cortex)). (I) NaV1.6 immunolabel intensity (summed over each node) as a function of node length in cerebral cortex (each point is one node). NaV1.6 labelling is correlated with node length (slope of regression line is significantly greater than zero, p=1.2×10−15).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/23329/elife-23329-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Top: EM picture of node of Ranvier in the adult optic nerve, showing surrounding oligodendrocytes (paranodal loops false-coloured green), an astrocyte (pink) and the node length. In practice node length was measured from the total thickness of the transverse sections across the nerve that were between the surrounding oligodendrocytes. Bottom: Node length as a function of node diameter in the optic nerve for 46 nodes measured by EM. Slope of regression line is not significantly different from zero (p=0.46).DOI: http://dx.doi.org/10.7554/eLife.23329.004
+**Figure 1—figure supplement 1.:** Top: EM picture of node of Ranvier in the adult optic nerve, showing surrounding oligodendrocytes (paranodal loops false-coloured green), an astrocyte (pink) and the node length. In practice node length was measured from the total thickness of the transverse sections across the nerve that were between the surrounding oligodendrocytes. Bottom: Node length as a function of node diameter in the optic nerve for 46 nodes measured by EM. Slope of regression line is not significantly different from zero (p=0.46).
 
 In contrast to EM, confocal microscopy allowed us to measure a greater number of nodes in different parts of the CNS. In addition, given that oligodendrogenesis and myelination continues well into adulthood (Dimou et al., 2008; Young et al., 2013), confocal microscopy of antibody-labelled nodes allowed us to distinguish developing nodes from mature nodes, ensuring that any differences in size observed were not due to different developmental stages. Mature nodes of Ranvier were identified from their NaV1.6 staining (a marker of mature nodes: Boiko et al., 2001; Kaplan et al., 2001) flanked by Caspr-labelled paranodes (Figure 1A), and node length was measured from the Caspr intensity profile across the node (Figure 1B, see Materials and methods). We first assessed whether, using confocal microscopy (Figure 1C), we could observe variability of node lengths in the rat optic nerve similar to that found when using EM. We again found node length variability (Figure 1C,E,F,H), the mean node length was not significantly different (p=0.06) from that obtained with EM (1.02 ± 0.02 μm, standard deviation 0.29 µm, n = 164, Figure 1E), and there was again no significant dependence on either node diameter (Figure 1H, p=0.14) or axon diameter at the paranode (measured as the diameter of the Caspr labelling: p=0.89). However, the node length range was slightly broader, covering a 4.4-fold range (Figure 1F,H), perhaps due to the ~4 fold greater number of nodes quantified.
 
@@ -49,25 +49,178 @@ Thus, variability of node length is a general feature of myelinated axons. The g
 
 To investigate whether this node length variability was accompanied by a similar variability in sodium channel number, we summed the intensity of NaV1.6 staining over individual nodes in cortex and compared this with node length (Figure 1I). We found that there is a linear correlation between summed NaV1.6 staining and node length (p=1.2×10−15) indicating that the number of sodium channels at nodes is approximately proportional to node length (cf. Rios et al., 2003), consistent with larger nodes being generated by the insertion of more NaV-containing membrane. However, at any given sodium channel labelling intensity there was still a large variation in node lengths, suggesting that sodium channel density is not absolutely constant, and that it may be possible to vary node length in a manner independent of sodium channel number.
 
-## Node lengths vary far more between axons than along axons
+### Node lengths vary far more between axons than along axons
 
-If adjustment of node length is used to tune conduction speed, one might expect all the nodes along one axon to have similar lengths (e.g. all long or all short). To assess whether the variability in node lengths mainly occurs along axons or between axons we iontophoretically injected a fluorescent dye into the cortex of adult rats (see Materials and methods). This was taken up into axons and diffused along them, allowing us to measure the lengths of up to 13 successive nodes (mean 6.7 ± 0.8 nodes in 18 axons) along single fluorescently labelled axons in the corpus callosum (
+If adjustment of node length is used to tune conduction speed, one might expect all the nodes along one axon to have similar lengths (e.g. all long or all short). To assess whether the variability in node lengths mainly occurs along axons or between axons we iontophoretically injected a fluorescent dye into the cortex of adult rats (see Materials and methods). This was taken up into axons and diffused along them, allowing us to measure the lengths of up to 13 successive nodes (mean 6.7 ± 0.8 nodes in 18 axons) along single fluorescently labelled axons in the corpus callosum (Figure 2A). Remarkably, along individual axons (Figure 2B,C), the distribution of node lengths was much narrower than that observed over all callosal axons examined (Figure 2C), with a 48.8% ± 3.5% lower coefficient of variation (s.d./mean, Figure 2D, p=1.1×10−10, one sample t-test, n = 18 axons). Importantly, even when excluding axons with mean node lengths >2.25 µm (which were found less frequently, as predicted by the distribution in Figure 1G–H), the coefficient of variation for single axons was 38.8% ± 4.7% lower than that observed over all axons (p=6.6×10−7). Node length was not correlated with internode length (p=0.1, Figure 2E).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/23329/elife-23329-fig2-v2.jpg)
 
-**Figure 2.:** (A) Composite confocal image of a single axon in the corpus callosum iontophoretically labelled with tetramethylrhodamine dextran (red). Three consecutive nodes of Ranvier are highlighted and shown in high resolution images. Nodes of Ranvier are identified as NaV1.6 positive clusters (green) flanked by Caspr positive paranodes (blue). (B) Successive node lengths along three example axons with different mean node lengths. The mean node length for each axon is plotted as a dashed line. (C) Distributions of node lengths of 18 individual axons (in 0.5 µm bins, centered on the median node length for each axon) show that the variability along each axon is much less than the variability between axons. (D) Mean coefficient of variation for node lengths along 18 individual axons and the overall coefficient of variation for all axons examined. (E) Mean internode length for each axon plotted against the mean node length for that axon. Each axon is represented by a different colour, and that colour is maintained for panels B, C and E. Regression line slope is not significantly different from zero (p=0.1).DOI: http://dx.doi.org/10.7554/eLife.23329.005
+**Figure 2.:** (A) Composite confocal image of a single axon in the corpus callosum iontophoretically labelled with tetramethylrhodamine dextran (red). Three consecutive nodes of Ranvier are highlighted and shown in high resolution images. Nodes of Ranvier are identified as NaV1.6 positive clusters (green) flanked by Caspr positive paranodes (blue). (B) Successive node lengths along three example axons with different mean node lengths. The mean node length for each axon is plotted as a dashed line. (C) Distributions of node lengths of 18 individual axons (in 0.5 µm bins, centered on the median node length for each axon) show that the variability along each axon is much less than the variability between axons. (D) Mean coefficient of variation for node lengths along 18 individual axons and the overall coefficient of variation for all axons examined. (E) Mean internode length for each axon plotted against the mean node length for that axon. Each axon is represented by a different colour, and that colour is maintained for panels B, C and E. Regression line slope is not significantly different from zero (p=0.1).
 
 Thus, node lengths are similar along axons but differ significantly between axons. This raises the possibility that individual axons consistently adjust their node length to tune conduction speed.
 
-## Predicted effects of node length variation on conduction speed
+### Predicted effects of node length variation on conduction speed
 
-To examine the consequences of nodes of Ranvier having different lengths, we simulated action potential propagation in optic nerve and cortical grey matter myelinated axons, as described in the Materials and methods. The differential equations of the model were derived and solved as in Halter and Clark (1991). Details of the parameters used are summarised in Table 1. The conduction speeds predicted for the mean node lengths observed (2.95 m/s for the optic nerve and 2.61 m/s for the cortex) were within the range of values observed experimentally in the adult rat optic nerve (2.5–15 m/s: Foster et al. (1982); Sefton and Swinburn (1964); Sjöström et al. (1985)) and for different classes of rat cortical grey matter output axons (1.8–5.9 m/s: Kelly et al., 2001).10.7554/eLife.23329.006Table 1.Electrical and geometrical parameters of the models.DOI: http://dx.doi.org/10.7554/eLife.23329.006Parameter Symbol Value Units Nodal Na+ conductance*gNa3000 mS/cm2Nodal K+ conductance*gKs80mS/cm2Nodal persistent Na+ conductance*gNap5mS/cm2Leakage conductanceNode*InternodegL   800.1 mS/cm2mS/cm2Myelin membrane conductancegmy1.0mS/cm2Axon membrane capacitance†NodeInternode cax  0.90.9 μF/cm2μF/cm2Myelin membrane capacitance†,‡cmy0.9μF/cm2Axoplasmic resistivityρax70Ω.cmPeriaxonal resistivityρp70Ω.cmResting potentialEr−82 mVLeakage potentialELk−83.38 mVNa+ reversal potentialENa50mVK+ reversal potentialEK−84 mVNode diameterOptic nerveCortex  0.730.64 μmμmNode lengthOptic nerveCortex  1.021.50 μmμmParanode lengthOptic nerveCortex  2.111.90 μmμmParanodal effective periaxonal spaceOptic nerveCortex  0.00770.0123 nmnmInternodal axon diameterOptic nerveCortex  0.820.73 μmμmInternodal periaxonal space 15nmG ratioOptic nerveCortex  0.780.81 Number of myelin wrapsOptic nerveCortex  75 Internode lengthOptic nerveCortex  139.2681.7 μmμm*Values for standard node length: 1.02 µm in optic nerve, 1.50 µm in cortex; these are constant for simulations with fixed nodal conductance density, but scaled inversely with node length for simulations where number of nodal channels is kept constant.†Membrane capacitance values are from Gentet et al. (2000).‡Figures are per myelin membrane. There are two membranes per myelin lamella.
+To examine the consequences of nodes of Ranvier having different lengths, we simulated action potential propagation in optic nerve and cortical grey matter myelinated axons, as described in the Materials and methods. The differential equations of the model were derived and solved as in Halter and Clark (1991). Details of the parameters used are summarised in Table 1. The conduction speeds predicted for the mean node lengths observed (2.95 m/s for the optic nerve and 2.61 m/s for the cortex) were within the range of values observed experimentally in the adult rat optic nerve (2.5–15 m/s: Foster et al. (1982); Sefton and Swinburn (1964); Sjöström et al. (1985)) and for different classes of rat cortical grey matter output axons (1.8–5.9 m/s: Kelly et al., 2001).
+
+**Table 1.**
+ Electrical and geometrical parameters of the models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Symbol</th>
+      <th>Value</th>
+      <th>Units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nodal Na+ conductance*</td>
+      <td>gNa</td>
+      <td>3000</td>
+      <td>mS/cm2</td>
+    </tr>
+    <tr>
+      <td>Nodal K+ conductance*</td>
+      <td>gKs</td>
+      <td>80</td>
+      <td>mS/cm2</td>
+    </tr>
+    <tr>
+      <td>Nodal persistent Na+ conductance*</td>
+      <td>gNap</td>
+      <td>5</td>
+      <td>mS/cm2</td>
+    </tr>
+    <tr>
+      <td>Leakage conductanceNode*Internode</td>
+      <td>gL</td>
+      <td>800.1</td>
+      <td>mS/cm2mS/cm2</td>
+    </tr>
+    <tr>
+      <td>Myelin membrane conductance</td>
+      <td>gmy</td>
+      <td>1.0</td>
+      <td>mS/cm2</td>
+    </tr>
+    <tr>
+      <td>Axon membrane capacitance†NodeInternode</td>
+      <td>cax</td>
+      <td>0.90.9</td>
+      <td>μF/cm2μF/cm2</td>
+    </tr>
+    <tr>
+      <td>Myelin membrane capacitance†,‡</td>
+      <td>cmy</td>
+      <td>0.9</td>
+      <td>μF/cm2</td>
+    </tr>
+    <tr>
+      <td>Axoplasmic resistivity</td>
+      <td>ρax</td>
+      <td>70</td>
+      <td>Ω.cm</td>
+    </tr>
+    <tr>
+      <td>Periaxonal resistivity</td>
+      <td>ρp</td>
+      <td>70</td>
+      <td>Ω.cm</td>
+    </tr>
+    <tr>
+      <td>Resting potential</td>
+      <td>Er</td>
+      <td>−82</td>
+      <td>mV</td>
+    </tr>
+    <tr>
+      <td>Leakage potential</td>
+      <td>ELk</td>
+      <td>−83.38</td>
+      <td>mV</td>
+    </tr>
+    <tr>
+      <td>Na+ reversal potential</td>
+      <td>ENa</td>
+      <td>50</td>
+      <td>mV</td>
+    </tr>
+    <tr>
+      <td>K+ reversal potential</td>
+      <td>EK</td>
+      <td>−84</td>
+      <td>mV</td>
+    </tr>
+    <tr>
+      <td>Node diameterOptic nerveCortex</td>
+      <td></td>
+      <td>0.730.64</td>
+      <td>μmμm</td>
+    </tr>
+    <tr>
+      <td>Node lengthOptic nerveCortex</td>
+      <td></td>
+      <td>1.021.50</td>
+      <td>μmμm</td>
+    </tr>
+    <tr>
+      <td>Paranode lengthOptic nerveCortex</td>
+      <td></td>
+      <td>2.111.90</td>
+      <td>μmμm</td>
+    </tr>
+    <tr>
+      <td>Paranodal effective periaxonal spaceOptic nerveCortex</td>
+      <td></td>
+      <td>0.00770.0123</td>
+      <td>nmnm</td>
+    </tr>
+    <tr>
+      <td>Internodal axon diameterOptic nerveCortex</td>
+      <td></td>
+      <td>0.820.73</td>
+      <td>μmμm</td>
+    </tr>
+    <tr>
+      <td>Internodal periaxonal space</td>
+      <td></td>
+      <td>15</td>
+      <td>nm</td>
+    </tr>
+    <tr>
+      <td>G ratioOptic nerveCortex</td>
+      <td></td>
+      <td>0.780.81</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of myelin wrapsOptic nerveCortex</td>
+      <td></td>
+      <td>75</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Internode lengthOptic nerveCortex</td>
+      <td></td>
+      <td>139.2681.7</td>
+      <td>μmμm</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values for standard node length: 1.02 µm in optic nerve, 1.50 µm in cortex; these are constant for simulations with fixed nodal conductance density, but scaled inversely with node length for simulations where number of nodal channels is kept constant.†Membrane capacitance values are from Gentet et al. (2000).‡Figures are per myelin membrane. There are two membranes per myelin lamella._
 
 Our data suggest a positive correlation between the number of NaV1.6 channels and node length (indicating a fixed channel density), but also raise the possibility of node length varying in a manner independent of channel number (Figure 1I). We therefore modelled two extreme situations, for both the optic nerve and the cortical axons studied: either the density of nodal ion channels was assumed to be constant (so the number of ion channels increases in proportion to node length), or the number of ion channels at the node was held constant at the values assumed for the mean node length observed (so the density of channels varies inversely with node length).
 
+Figure 3A and B show that, when the number of channels was held constant at each node, the predicted conduction speed falls with increasing node length (dashed curves). This occurs for two reasons: the increase in node length increases the nodal capacitance (so each node takes longer to charge), and the intracellular axial resistance to current flow from the node into the internode is increased. The changes in conduction speed for the optic nerve are shown in Figure 3A (the range of measured node lengths is shown for comparison). Increasing the node length from its mean value of 1.02 µm to the largest value observed (2.2 µm) is predicted to decrease the conduction speed by 6.5%, while decreasing the node length to the smallest value measured (0.5 µm) increases the speed by 3.2% (giving a speed that is 10.3% larger than at a length of 2.2 µm). For cortical axons (Figure 3B) the predicted changes are larger, partly because, with a 1.5-fold longer node and a 1.7-fold shorter internode length, the nodal membrane contributes a larger fraction of the total membrane capacitance (14% in cortical axons versus 8% in optic nerve axons). The node length variation observed in rat cortex (Figure 1G–H and 0.43 µm to 3.7 µm) results in conduction speeds that are 11.6% slower (for the longest node) and 7% faster (for the shortest node) than the speed for the mean node length of 1.5 µm. Thus, altering node length from 3.7 to 0.43 µm would increase the speed by approximately 21%.
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/23329/elife-23329-fig3-v2.jpg)
 
-**Figure 3.:** (A–F) Calculated conduction speed as a function of node length for axons in (A) the optic nerve and (B–F) the cortical grey matter. For panels A–F, simulations were carried out assuming either that the density of ion channels at the node is constant as the node length is changed (solid lines), or that the number of ion channels is kept constant (dashed lines) at the value assumed for the mean node length. (C–D) Simulations for cortex as in B but examining the effect of altering internode length (INL, given by each curve). (E–F) Calculated dependence of conduction speed of cortical axons on internode length for different assumed node lengths (NL). The observed range of each abscissa parameter is indicated on the graphs. (G). Change in membrane area needed, in the myelin sheath (myelin wrap) or node of Ranvier (node length, NL), to change the conduction speed by 8.6% in optic nerve or 10.5% in cortical axons, when nodal ion channel density is held constant (note logarithmic scale).DOI: http://dx.doi.org/10.7554/eLife.23329.007
+**Figure 3.:** (A–F) Calculated conduction speed as a function of node length for axons in (A) the optic nerve and (B–F) the cortical grey matter. For panels A–F, simulations were carried out assuming either that the density of ion channels at the node is constant as the node length is changed (solid lines), or that the number of ion channels is kept constant (dashed lines) at the value assumed for the mean node length. (C–D) Simulations for cortex as in B but examining the effect of altering internode length (INL, given by each curve). (E–F) Calculated dependence of conduction speed of cortical axons on internode length for different assumed node lengths (NL). The observed range of each abscissa parameter is indicated on the graphs. (G). Change in membrane area needed, in the myelin sheath (myelin wrap) or node of Ranvier (node length, NL), to change the conduction speed by 8.6% in optic nerve or 10.5% in cortical axons, when nodal ion channel density is held constant (note logarithmic scale).
 
 When the nodal ion channel density is kept constant another factor affects the predicted conduction speed, in addition to the change of capacitance and axial resistance at the node: as the node length is decreased the reduction in the number of ion channels present leads to a decrease of conduction speed. Consequently, the plot of speed against node length shows a maximum (solid curves in Figure 3A–B: note that, above this maximum, increasing node length decreases speed for the reasons stated above, despite the increase in number of sodium channels at the node). Decreasing the optic nerve node length from its mean value of 1.02 µm to the lowest length observed (0.5 µm) is predicted to decrease conduction speed by 14.1%, while increasing node length to the value generating the maximum conduction speed (1.7 µm) increases the speed by 3.3% (Figure 3A), to a value that is 20.2% higher than at a length of 0.5 µm. Similarly, for the cortex, decreasing the node length from the mean value of 1.5 µm to the smallest observed value of 0.43 µm decreases the conduction velocity by 19.6% while increasing the length slightly to 1.7 µm increases the speed by 0.2% to a value 24.6% larger than at a node length of 0.43 µm (Figure 3B).
 
@@ -91,32 +244,36 @@ Our data and simulations suggest that modulation of node length could be a viabl
 
 ## Materials and methods
 
-## Electron microscopy
+### Electron microscopy
 
 For the optic nerve, 3 male (8–10 weeks old) Sprague-Dawley rats were anaesthetised and perfused through the heart with fixative containing 2.5% glutaraldehyde and 2% paraformaldehyde in 0.1 M cacodylate buffer. The optic nerves were dissected out, post-fixed with 1% OsO4 in 0.1 M cacodylate buffer, embedded in EPON and polymerised. Serial ultrathin (70 nm) sections, perpendicular to the nerve’s long axis, were cut on an ultramicrotome and picked up on an osmium-coated glass slide. Back-scattered images were obtained on a scanning electron microscope (Hitachi SU8010) with a working distance of 2 mm, 1–1.5 kV accelerating voltage, scan speed of 40 or 80 s, and a typical pixel size of 1.65 nm at x30,000 magnification, and were analysed with ImageJ (FIJI). Node length (assessed from the number of sections containing the node) and mean axon diameter at the node (assessed as axon perimeter/π) were measured (uncorrected for tissue shrinkage during fixation).
 
-## Tracer injections and node labelling
+### Tracer injections and node labelling
 
 Four male 8–10 week old rats were anaesthetized with isoflurane and killed by cervical dislocation in accordance with United Kingdom animal experimentation regulations. After decapitation the brain was carefully dissected from the skull and 1 mm thick coronal slices containing the corpus callosum were obtained from the forebrain (from 4 to 8 mm rostral of the olfactory bulb) using a tissue cutter block. A 10% solution of tetramethylrhodamine dextran (MW 3000, Invitrogen, Paisley, UK) was iontophoretically injected into the cortical grey matter. Thereafter slices were incubated in oxygenated aCSF containing (in mM) 124 NaCl, 26 NaHCO3, 1 NaH2PO4, 2.5 KCl, 2 MgCl2, 2 CaCl2, 10 glucose, bubbled with 95% O2/5% CO2 for 2 hr at room temperature to allow for diffusion of the tracer. After incubation slices were immersion fixed in PFA and resliced at 80–100 µm for subsequent immunohistochemical labelling of nodal (NaV1.6) and paranodal (Caspr) marker proteins.
 
-## Immunohistochemistry and confocal microscopy
+### Immunohistochemistry and confocal microscopy
 
 Optic nerves and 4 mm thick coronal sections of fronto-parietal (motor) cortex (from 4 to 8 mm rostral of the olfactory bulb) from brains of 4 male (8–10 week old) Sprague-Dawley rats were either perfusion or immersion-fixed in 4% paraformaldehyde in PBS. Fixed tissue was then cut into 50 µm slices using a Leica vibratome VT1200S or, for NaV1.6 density experiments, cut into 10 µm sections using a cryostat. Slices were blocked and permeabilised in 10% horse serum and 0.5% Triton X-100 in PBS. Immunofluorescence labelling was performed over 3 days with the following primary antibodies: rabbit anti-NaV1.6 (Alomone, 1:500); mouse anti-Caspr clone K65/35 (Neuromab, UC Davies, 1:100). Slices were then washed extensively (3 × 20 min) and incubated overnight with secondary antibodies: anti-rabbit AlexaFluor488 (Invitrogen, 1:500), anti-mouse Dy-Light 647 (Jackson Immunoresearch, 1:500). Slices were then washed 3 × 10 min in PBS and mounted with Dako Fluorescent Mounting Medium. Slices were viewed using an LSM700 or LSM780 confocal microscope using a 63x (NA 1.4) oil immersion lens, and images were acquired with LSM software with the pinhole set to 1 Airy unit for the Caspr signal, resulting in an optical slice of 0.8 µm. Pixel size was 39.7 nm for Figure 1A–H and 99.2 nm for Figure 1I and 52.7 nm for node measurements in Figure 2 and 263.6 nm for internode measurements in Figure 2.
 
-## Image analysis
+### Image analysis
 
 For node length analysis, confocal images were analysed using ImageJ software. Images were background subtracted and only nodes that lay approximately parallel to the plane of section (i.e. displayed nodal NaV1.6 labelling with flanking Caspr-labelled paranodes all within a single 0.8 µm optical slice) were selected. Measuring the angle of the axon to the plane of the slice for a subset of 10 randomly chosen axons showed that the apparent node length measured in this way underestimated the actual node length by only 1.7% ± 0.6%. A maximum intensity projection was generated of the sections in which Caspr labelling was present for a particular node (up to five interleaved confocal slices at 0.38 µm intervals, with a maximum stack thickness of 2.32 µm), and a line intensity profile (the thickness of which was slightly less than the Caspr labelling thickness) was drawn spanning both Caspr-labelled paranodes. The size of the node was then calculated using a MATLAB (The MathWorks, Inc.) script which measures the distance between the half maximum intensity for each paranode. Node diameter, paranode length and axon diameter were measured using the line tool in ImageJ over NaV1.6 staining (for node diameter) and over the Caspr staining (for axon diameter and paranode length). NaV1.6 staining was summed over the nodal area to obtain a parameter assumed to be proportional to sodium channel number. Internode length was measured in three dimensions in FIJI using the simple neurite tracer plugin (Longair et al., 2011). Data were not corrected for tissue shrinkage during fixation.
 
-## Simulations
+### Simulations
 
 To simulate action potential propagation along myelinated axons, we implemented, in MATLAB, model C of Richardson et al. (2000) (at 37°C, with the unphysiologically low membrane capacitance of Richardson et al. (2000) corrected to a normal value). The differential equations of the model were derived and solved as in Halter and Clark (1991). In brief, the axon is divided into compartments representing the node, paranode and internode. For each time step, current flow across the axonal or total myelin membrane is calculated from the values of voltage (and its rate of change), and the membrane capacitance and membrane conductances present per unit length (simultaneously solving the differential equations that define activation and inactivation of the voltage-gated currents present at the node), and intracellular and periaxonal axial current flow are calculated from the intracellular or periaxonal resistance per unit length and the gradient of intracellular or periaxonal voltage. Details of the parameters used are summarised in Table 1. The MATLAB code used can be obtained immediately on request from the authors; it will be written up and documented as a resource for free access from GitHub by August 1st 2017.
 
-Simulations were carried out as in Bakiri et al. (2011) except that the periaxonal space under the myelin was included (51 nodes were simulated and conduction speed was measured between nodes 20 and 30). This model includes fast and persistent Na+, and slow K+, voltage-gated channels at the node, but omits voltage-gated K+ channels at the juxtaparanode (which are little activated because the 100 mV voltage change of the action potential is distributed across the 11–15 membranes of the 5–7 myelin wraps and the axon, implying only a 7–9 mV voltage change across the axonal membrane). For simplicity, the node length was usually assumed to be the same at all nodes on the axon, i.e. we ignored the variability in node length along the same axon described in Figure 2. The node diameter was set to the mean value measured experimentally, i.e. 0.73 µm (in 164 nodes) for the optic nerve, and 0.64 µm (in 158 nodes) for cortex. The region between two nodes, 139.3 µm long for the optic nerve (Butt et al., 1994) and 81.7 µm long for the cortical axons (the mean value measured in layer V from 30 internodes, see main text), was kept constant when node length was varied (both for simplicity, and because there was no correlation of node length and internode length: Figure 2E). This internodal region was divided (along its length) into 66 and 86 compartments for the optic nerve and the cortex, respectively, the end 2.11 and 1.90 µm parts of which represent the paranode where the myelin attaches to the axon (values measured in 164 and 158 nodes, respectively, from the length of the Caspr labelling; the number of compartments used has to be large for the simulation to be accurate, and needs to be chosen so that an integral number of compartments can represent the paranodal junction; the number was adjusted appropriately when simulating different internode lengths). The internodal axon diameter is larger than the diameter at the node (Halter and Clark, 1991; Berthold and Rydmark, 1983), although this difference is a much smaller percentage for small than for large axons (Rydmark and Berthold, 1983). The internodal and paranodal axon diameters were set to 0.82 µm and 0.73 µm for the optic nerve and cortex, respectively (mean values obtained from 164 axons in optic nerve and 158 cortical axons from the diameter of the paranodal Caspr labelling), so that the node diameters were 88% and 86% of the internodal axon diameters respectively. Apart from at the paranodes, the internodal axon was assumed to be surrounded by a periaxonal space of thickness 15 nm (Robertson, 1959; Mierzwa et al., 2010; Möbius et al., 2016), and to have a g ratio (axon diameter/myelin diameter) of 0.79 in the optic nerve and 0.8 in the cortex (Sugimoto et al., 1984; Oorschot et al., 2013; to obtain an integral number of myelin wraps these values were adjusted slightly, to 0.78 and 0.81 respectively). This led to the optic nerve and cortical axons having 7 and 5 myelin wraps, respectively assuming a myelin wrap periodicity of 15.6 nm (Agrawal et al., 2009; Harris and Attwell, 2012). The periaxonal space at the paranode, because of the structure of the attachment of the myelin to the axon at the paranode, is thought to comprise (Mierzwa et al., 2010) a pathway of cross sectional area A = 170 nm2, which spirals around the axon (from the node to the periaxonal space of the internode) for a total distance of approximately D = π.d.Nwraps where Nwraps is the number of myelin wraps and d is the axon diameter. A periaxonal space of width w, along a paranode of length L, would have the same resistance as this pathway ifL/(π.d.w)=D/Aorw=A.L/(π.D.d)=A.L./[(π.d)2.Nwraps]
+Simulations were carried out as in Bakiri et al. (2011) except that the periaxonal space under the myelin was included (51 nodes were simulated and conduction speed was measured between nodes 20 and 30). This model includes fast and persistent Na+, and slow K+, voltage-gated channels at the node, but omits voltage-gated K+ channels at the juxtaparanode (which are little activated because the 100 mV voltage change of the action potential is distributed across the 11–15 membranes of the 5–7 myelin wraps and the axon, implying only a 7–9 mV voltage change across the axonal membrane). For simplicity, the node length was usually assumed to be the same at all nodes on the axon, i.e. we ignored the variability in node length along the same axon described in Figure 2. The node diameter was set to the mean value measured experimentally, i.e. 0.73 µm (in 164 nodes) for the optic nerve, and 0.64 µm (in 158 nodes) for cortex. The region between two nodes, 139.3 µm long for the optic nerve (Butt et al., 1994) and 81.7 µm long for the cortical axons (the mean value measured in layer V from 30 internodes, see main text), was kept constant when node length was varied (both for simplicity, and because there was no correlation of node length and internode length: Figure 2E). This internodal region was divided (along its length) into 66 and 86 compartments for the optic nerve and the cortex, respectively, the end 2.11 and 1.90 µm parts of which represent the paranode where the myelin attaches to the axon (values measured in 164 and 158 nodes, respectively, from the length of the Caspr labelling; the number of compartments used has to be large for the simulation to be accurate, and needs to be chosen so that an integral number of compartments can represent the paranodal junction; the number was adjusted appropriately when simulating different internode lengths). The internodal axon diameter is larger than the diameter at the node (Halter and Clark, 1991; Berthold and Rydmark, 1983), although this difference is a much smaller percentage for small than for large axons (Rydmark and Berthold, 1983). The internodal and paranodal axon diameters were set to 0.82 µm and 0.73 µm for the optic nerve and cortex, respectively (mean values obtained from 164 axons in optic nerve and 158 cortical axons from the diameter of the paranodal Caspr labelling), so that the node diameters were 88% and 86% of the internodal axon diameters respectively. Apart from at the paranodes, the internodal axon was assumed to be surrounded by a periaxonal space of thickness 15 nm (Robertson, 1959; Mierzwa et al., 2010; Möbius et al., 2016), and to have a g ratio (axon diameter/myelin diameter) of 0.79 in the optic nerve and 0.8 in the cortex (Sugimoto et al., 1984; Oorschot et al., 2013; to obtain an integral number of myelin wraps these values were adjusted slightly, to 0.78 and 0.81 respectively). This led to the optic nerve and cortical axons having 7 and 5 myelin wraps, respectively assuming a myelin wrap periodicity of 15.6 nm (Agrawal et al., 2009; Harris and Attwell, 2012). The periaxonal space at the paranode, because of the structure of the attachment of the myelin to the axon at the paranode, is thought to comprise (Mierzwa et al., 2010) a pathway of cross sectional area A = 170 nm2, which spirals around the axon (from the node to the periaxonal space of the internode) for a total distance of approximately D = π.d.Nwraps where Nwraps is the number of myelin wraps and d is the axon diameter. A periaxonal space of width w, along a paranode of length L, would have the same resistance as this pathway if
+
+$$
+L/(\pi.d.w)=D/Aorw=A.L/(\pi.D.d)=A.L./[(\pi.d)^{2}.N_{wraps}]
+$$
 
 The effective value of w used to model this spiral pathway for the optic nerve and cortical axons was thus 0.0077 nm and 0.0123 nm respectively.
 
 In the main text we present calculations showing that a given change of conduction speed can be produced far more efficiently (in terms of the change of membrane area needed) by shortening of the node than by adding another wrap of myelin. Those calculations ignore the possibility that, when the node is shortened, the internode needs to be lengthened by the same amount in order to maintain the axon length. It is unclear whether the sub-micron node length changes postulated in our calculation would actually require remodelling of the adjacent myelin sheath – conceivably slackness in the somewhat non-straight internode would allow the change of node length to be accommodated without a change of internode length, and furthermore node length might change by an eversion of the paranodal loops closest to the node without any other significant change to the myelin sheath (reviewed by Arancibia-Carcamo and Attwell, 2014). Thus, small changes in nodal length might well occur without major remodelling of the myelin sheath. Nevertheless, if one assumes that node shortening by X µm absolutely does require an X µm elongation of the myelin sheath, then more membrane changes are needed than are accounted for in our simple calculation. One can show mathematically that the sheath membrane area increase is larger than the area decrease at the node by a factor of 2x(number of myelin wraps)x(mean radius of wraps)/(node radius), which is roughly 18.4 for the optic nerve and 13 for the cortex. Accounting for these area changes (and noting that, in this situation, there is no change of total axon length) would reduce the ratio of the membrane area changes needed to produce a given speed change (when adding a layer of myelin to the sheath versus changing the node length) from 1006-fold to 55-fold for the optic nerve and from 273-fold to 21-fold for the cortex, but these ratios remain impressively large, and so the energetic argument favouring speed tuning by alteration of the node length still holds.
 
-## Statistics
+### Statistics
 
 Data are shown as mean±s.e.m. Comparisons are via 2-tailed Student’s t-tests unless otherwise stated. Assessment of whether the slope of linear regressions differed significantly from zero was obtained using the t-statistic for the slope.

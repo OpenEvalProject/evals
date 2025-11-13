@@ -43,7 +43,7 @@
 
 ## Abstract
 
-Parkinson’s disease (PD) is a common neurodegenerative disorder without effective disease-modifying therapeutics. Here, we establish a chemogenetic dopamine (DA) neuron ablation model in larval zebrafish with mitochondrial dysfunction and robustness suitable for high-content screening. We use this system to conduct an in vivo DA neuron imaging-based chemical screen and identify the Renin-Angiotensin-Aldosterone System (RAAS) inhibitors as significantly neuroprotective. Knockdown of the angiotensin receptor 1 ( agtr1 ) in DA neurons reveals a cell-autonomous mechanism of neuroprotection. DA neuron-specific RNA-seq identifies mitochondrial pathway gene expression that is significantly restored by RAAS inhibitor treatment. The neuroprotective effect of RAAS inhibitors is further observed in a zebrafish Gaucher disease model and Drosophila pink1 -deficient PD model. Finally, examination of clinical data reveals a significant effect of RAAS inhibitors in delaying PD progression. Our findings reveal the therapeutic potential and mechanisms of targeting the RAAS pathway for neuroprotection and demonstrate a salient approach that bridges basic science to translational medicine.
+Parkinson’s disease (PD) is a common neurodegenerative disorder without effective disease-modifying therapeutics. Here, we establish a chemogenetic dopamine (DA) neuron ablation model in larval zebrafish with mitochondrial dysfunction and robustness suitable for high-content screening. We use this system to conduct an in vivo DA neuron imaging-based chemical screen and identify the Renin-Angiotensin-Aldosterone System (RAAS) inhibitors as significantly neuroprotective. Knockdown of the angiotensin receptor 1 (agtr1) in DA neurons reveals a cell-autonomous mechanism of neuroprotection. DA neuron-specific RNA-seq identifies mitochondrial pathway gene expression that is significantly restored by RAAS inhibitor treatment. The neuroprotective effect of RAAS inhibitors is further observed in a zebrafish Gaucher disease model and Drosophila pink1-deficient PD model. Finally, examination of clinical data reveals a significant effect of RAAS inhibitors in delaying PD progression. Our findings reveal the therapeutic potential and mechanisms of targeting the RAAS pathway for neuroprotection and demonstrate a salient approach that bridges basic science to translational medicine.
 
 ## Introduction
 
@@ -57,9 +57,13 @@ Here, we report a DA neuron-based neuroprotective drug discovery pipeline for PD
 
 ## Results
 
-## The Nitroreductase-Metronidazole (NTR-MTZ) chemogenetic DA neuron ablation model shows mitochondrial damage prior to neuronal loss and is scalable for DA neuron imaging-based small molecule screening
+### The Nitroreductase-Metronidazole (NTR-MTZ) chemogenetic DA neuron ablation model shows mitochondrial damage prior to neuronal loss and is scalable for DA neuron imaging-based small molecule screening
 
 Genetic PD models in rodents generally have weak, variable, and late onset degeneration phenotypes (Dawson et al., 2010). Modeling neurodegeneration in zebrafish is a promising approach (Paquet, 2009; Flinn, 2013; Ana Lopez, 2017; Zhang, 2017), but neuroprotective screening based on direct imaging of DA neuron integrity has not been reported, in large part because high content screening needs assays that are sufficiently robust, sensitive, and scalable. Neurotoxins such as MPTP are highly toxic to experimenters and not scalable. We have therefore used an inducible chemogenetic DA neuron ablation model, employing the nitroreductase-metronidazole (NTR-MTZ) system (Williams, 2015; Pisharath and Parsons, 2009; Curado et al., 2008): NTR was expressed as a transgene in tyrosine hydroxylase (TH+) DA neurons to convert the pro-drug MTZ (a commonly used antibiotic) to the toxic nitroso radical form in vivo. Twenty-four hours (hrs) after adding MTZ to 5 days post fertilization (dpf) larval zebrafish, we observed at 6 dpf robust DA neuronal loss in the ventral forebrain region (Figure 1A), the homologous group to mammalian substantia nigDA (Rink and Wullimann, 2001). The specificity of ventral forebrain DA neuron labeling in this transgenic line has been previously validated (Liu, 2016).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig1-v1.jpg)
+
+**Figure 1.:** (A) Confocal images of ventral forebrain DA neurons in 0.2% DMSO control and 9 mM MTZ-treated 6 days post fertilization (dpf) transgenic larval zebrafish brains show significant difference in normalized fluorescent intensity (n = 10; p < 0.05, unpaired t test). The red fluorescence in the eyes is due to pigment-derived autofluorescence. (B) Long-range PCR of mitochondrial DNA versus nuclear DNA products using ventral forebrain DA neurons from control and MTZ-treated 6 dpf larval zebrafish brains anterior to the mid-hindbrain boundary (4.5 mM, 8 hrs) (n = 4 pools of 25 larval brains per pool; p < 0.01, unpaired t test). (C) Live confocal imaging of mitochondrial dynamics with mitochondria-targeted DsRed and mitochondria-targeted photoactivatable GFP in 5dpf larvae treated with 0.2% DMSO (control) or 4.5 mM MTZ for 16 hr. Arrowheads point to the elongated appearance of mitochondria in DA axons of MTZ-treated animals. (D–H) Analysis of mitochondrial dynamics including total mitochondrial count, length, % moving, velocity, and direction of movement between control and MTZ-treated samples (n = 8–10; **p < 0.01, ****p < 0.0001, unpaired t test). (I–M) Overexpression of PD-associated human genes including PARK2, PARK6, PARK7, PARK1, and associated mutant forms. mRNAs were microinjected into one-cell stage transgenic embryos and treated with 4.5 or 9 mM MTZ at 30hpf for 24 hrs to determine the neuroprotective effect of experimental conditions compared to control GFP-encoding mRNA injection (n = 10–12; *p < 0.05, **p < 0.01, ***p < 0.001, unpaired t test).
 
 Although the NTR-MTZ system has been used for cell ablation and noted to induce apoptotic cell death (Chen et al., 2011), the underlying mechanisms of cell death are not well understood. Previous reports suggest that MTZ as an antibiotic targets bacterial DNA (Edwards, 1979). In vertebrate cells, two organelles containing DNA are the nucleus and the mitochondria. A semi-quantitative PCR assay based on the notion that DNA lesions block DNA polymerase progression (Furda et al., 2012; Yakes and Van Houten, 1997), was used to detect nuclear and mitochondrial DNA integrity. Total DNAs were extracted from DA neurons in DMSO control and 4.5 mM MTZ-treated transgenic larvae (8 hr after MTZ treatment, when DA neurons remain morphologically intact). Anterior brains (rostral to the mid-hindbrain boundary) were dissected and acutely dissociated. The mCherry+ DA neurons were manually aspirated under a fluorescent microscope. PCR of equally long-length (~10 kb) nuclear or mitochondrial DNA products was carried out using primers as previously described (Furda et al., 2012; Yakes and Van Houten, 1997). This data uncovered a significant damage of mitochondrial DNA but not nuclear DNA in MTZ-exposed individuals (Figure 1B). The nuclear DNA was unaffected possibly due to protection by nucleosomes; this observation also supports the notion that the time of our DNA integrity assessment precedes that of overt neurodegeneration.
 
@@ -67,9 +71,29 @@ We next performed in vivo time-lapse imaging, which uncovered mitochondrial dysf
 
 Given the observed mitochondrial deficits prior to neurodegeneration in the NTR-MTZ model, we next wondered whether enhancing the activity of genes functioning in mitochondrial quality control would protect against neurodegeneration in the model. Homozygous parkin mutations account for the majority of early onset autosomal recessive PD (Kitada, 1998). The parkin gene encodes a conserved E3 ubiquitin ligase that promotes mitochondrial quality control (Pickrell and Youle, 2015). The zebrafish Parkin protein is approximately 80% identical to the human counterpart in functionally relevant domains. We therefore synthesized mRNAs encoding full-length human parkin gene or EGFP (control) and micro-injected them into one-cell stage Tg[fuguth:gal4-uas:GFP; uas-NTRmCherry] embryos. Expressivity of microinjected mRNAs was verified by observing the GFP fluorescent reporter following egfp mRNA injection. Because of the short-lived nature of all microinjected mRNAs, we treated control or parkin mRNA-injected embryos with MTZ at an earlier stage, 30 hr post fertilization (hpf), and subsequently imaged for mCherry at 50 hpf (rather than treatment at 5 dpf and imaging at 6 dpf as shown in Figure 1A). This regimen of MTZ administration similarly led to DA neuron loss. Increased expression of Parkin significantly protected DA neurons (Figure 1I). Moreover, increased expression of pink1 and DJ-1, two other genes associated with mitochondrial quality control (Pickrell and Youle, 2015), was also neuro-protective (Figure 1J–K). In the case of pink1, the kinase dead mutant form failed to show protective effects, further validating the specificity of our assay system (Figure 1J). Human α-synuclein (either the wildtype or the A53T mutant form), associated with a dominant form of PD (Polymeropoulos, 1997), did not show any protection under the 9 mM MTZ treatment condition; mis-expression of the A53T mutant form of α-synuclein significantly worsened DA neuron integrity under the milder 4.5 mM MTZ treatment condition (Figure 1L–M). This is consistent with the toxic nature of α-synuclein when mis-expressed. These results suggest that DA neuron degeneration in the NTR-MTZ model can be alleviated by enhancing the activity of mitochondrial quality control genes and aggravated by the activity of A53T mutant form of α-synuclein.
 
-## A whole organism DA neuron-imaging based chemical screen identifies inhibitors of RAAS signaling as neuroprotective
+### A whole organism DA neuron-imaging based chemical screen identifies inhibitors of RAAS signaling as neuroprotective
 
 We have previously described a high throughput in vivo brain imaging method in zebrafish larvae (Liu, 2016). Using this method and the established DA neuron ablation model as described above, we screened >1400 bioactive compounds (SelleckChem) that are part of the UCSF Small Molecule Discovery Center (SMDC) bioactive screening set. Many have validated biological and pharmacological activities, with demonstrated safety and effectiveness in preclinical and clinical research, and some are FDA-approved therapeutics. A dual-flashlight plot of Brain Health Score (BHS) and strictly standardized mean difference (SSMD) score were generated as previously described (Liu, 2016), in order to quantitatively document the effects of each compound on DA neuron integrity (Figure 2A). In addition to the DMSO-positive control and MTZ-only negative control, N-acetyl cysteine (NAC) was also used as a positive control. NAC is an over-the-counter available supplement that works primarily by restoring body’s natural antioxidant glutathione for proposed DA improvement in PD (Monti, 2019). In our screen, NAC had an SSMD score of 0.826. Around 100 out of 1403 compounds had the same or better SSMD scores than NAC (ranged from 0.826 to 6.832). Validation of these candidate hit compounds is ongoing. Among them, compounds that target different components of the renin-angiotensin-aldosterone system (RAAS) in particular caught our attention: First, compounds that target three different components of the RAAS signaling pathway (Figure 2—figure supplement 1) were all among the top 100 candidate hits [e.g. Olmesartan (angiotensin receptor 1-AGTR1 inhibitor) with the SSMD scores of 1.649 - ranked 14, aliskiren (renin inhibitor)’s SSMD score was 1.540 - ranked 20, imidapril (ACE inhibitor)’s SSMD score was 0.938 - ranked 69]. Additionally, a Wilcoxon rank-sum test comparing all 13 RAAS pathway inhibitors from the primary screen with the entire screening library uncovered a significantly higher SSMD score for RAAS Inhibitors (Figure 2B). Multiple hits targeting the same pathway thus built strong confidence in these compounds and in the involvement of RAAS pathway in DA neuron degeneration. Furthermore, literature search has uncovered reports of RAAS pathway inhibition for neuroprotection against PD and Alzheimer’s disease (AD) (Grammatopoulos, 2007; Muñoz, 2006; Nelson et al., 2013). However, given the well-established role of these inhibitors in vascular remodeling and blood pressure control, it is conventionally thought that the neuroprotective effects of RAAS inhibition are due to their vascular actions, despite that RAAS pathway expression is detected in the CNS (Wright and Harding, 2011). It therefore remains unclear how RAAS inhibition might be neuroprotective. Finally, since RAAS inhibitors are commonly used anti-hypertensives, it offers an opportunity to investigate their role in PD patients via retrospective clinical data analysis. Taken together, we have therefore chosen RAAS inhibitors for in-depth analysis in this study.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig2-v1.jpg)
+
+**Figure 2.:** (A) A flow chart outlining the screening pipeline. 5dpf transgenic larvae expressing Tg[fuguth:gal4-uas:GFP;uas:NTRmCherry] were arranged in glass bottom 96-well plates and treated with MTZ (4.5 mM, 48 hrs) along with each of the 1403 bioactive compounds (n = 3 per screening compound). The dual flashlight plot of Brain Health Score (BHS) and Strictly Standardized Mean Difference (SSMD) score was used to quantify the neuroprotective effects of all compounds in the screen. (B) Wilcoxon rank sum test was performed to compare data of all 1403 compounds with those representing RAAS inhibitors (n = 13) in the screened compound set, revealing a significantly higher SSMD score distribution in the RAAS inhibitor group (p = 0.012, Wilcoxon rank sum test). (C) Secondary hit validation. To obtain more precise data, before and after treatment imaging was carried out for each larva embedded in agarose and a treatment regimen with 9 mM MTZ for 24 hr was used. Compounds including the RAAS inhibitors and the N-acetyl cysteine (NAC) control compound were tested at 10 µM with increased sample size (n = 40 per group; *p < 0.05, **p < 0.01, ***p < 0.001, unpaired t test). (D) Confocal images of ventral forebrain DA neurons. Positive control (0.2 % DMSO), negative control (9 mM MTZ), and 9 mM MTZ +10 µM olmesartan following 24 hrs of treatment. (E) Schematic of the chronic drug treatment and behavior test for adult zebrafish. (F) Quantification of total distance traveled across 5 min recording in the home tank for adult zebrafish treated with 0.2 % DMSO (positive control), 5 mM MTZ (negative control), 5 mM MTZ +10 mM levodopa, and 5 mM MTZ +10 µM olmesartan (with daily change of drug solutions after behavioral recording). Distance recordings were conducted for baseline, 3, 6, 9, 12, and 14 days. ANOVA and post-hoc Tukey test showed significant difference in 12 and 14 days for the MTZ versus MTZ+ olmesartan-treated groups. [n = 6 (three males, three females) for MTZ and MTZ+ Olm, n = 4 (two males, two females) for DMSO control and levodopa; p < 0.01, one-way ANOVA post-hoc Tukey’s test]. (G) Mass spectrometry data of adult zebrafish homogenized brain versus body samples after 14 days of chronic treatment with Olmesartan (n = 6, three males and three females). (H) Quantification of relative fluorescent intensity of DA neurons at 6 dpf in positive control (0.2% DMSO), negative control (9 mM MTZ, 24 hr from 5 dpf to 6 dpf), agtr1a morphant +9 mM MTZ, agtr1b morphant +9 mM MTZ, agtr1a/agtr1b double morphant +9 mM MTZ, and 10 µM olmesartan +9 mM MTZ (n = 10–12; *p < 0.05, ***p < 0.001, unpaired t test).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Olmesartan, captopril, and aliskiren are antihypertensive medications working on the Renin-Angiotensin Signaling (RAAS) pathway by blocking the binding of angiotensin II to the receptor, inhibiting the conversion of angiotensin I to angiotensin II, and directly inhibiting the renin enzyme respectively. Ten other RAAS inhibitors also in the 1403-compound bioactive screen are imidapril, enalaprilat, quinapril, ramipril, moexipril, enalapril, which are angiotensin converting enzyme (ACE) inhibitors, and valsartan, telmisartan, azilsartan, and eprosartan, which are angiotensin receptor blockers (ARBs).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Blind counting of ventral forebrain DA. Neurons in transgenic Tg[fuguth:gal4-uas:GFP; uas-NTRmCherry] 6dpf larvae after 24 hrs of MTZ (9 mM) and RAAS compound (10 μM) treatment (n = 6–8; *p < 0.05, ***p < 0.001, unpaired t-test compared to negative control). (B–D) Dose response studies of RAAS pathway inhibitors. Tg[fuguth:gal4-uas:GFP; uas-NTRmCherry] larvae were imaged 5dpf (Before MTZ treatment) and 6dpf (After MTZ treatment). The Y-axis is the ratio of DA neuron intensity after vs. before MTZ treatment. The MTZ concentration for all dose response studies is 10 mM. (n = 12–24; *p < 0.05, **p < 0.01, ***p < 0.001, unpaired t-test compared to negative control). (E) Quantification of ventral forebrain DA neurons in adult zebrafish under different treatment conditions (E). (F) Representative images showing ventral forebrain DA neurons in adult zebrafish under different treatment conditions. Note the preservation of DA neurons in in MTZ+ olmesartan condition. These DA neurons appeared, however, more scattered in the brain compared to control.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Translational blocking morpholino (MO) designs for agtr1a and agtr1b. The mRNA target shows the site within the agtr1a and agtr1b transcripts that is targeted by the translational blocking MO. (B) Western blot image showing successful knockdown of the agtr1 protein in the agtr1a + 1 b morpholino-injected samples compared to control (β-Actin). (C) Representative confocal images of DA neurons in different treatment conditions.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Timeline of chemical treatment for MTZ and olmesartan for experiment 1 (8 hr MTZ pretreatment) and experiment 2 (24hr MTZ pretreatment). After pretreating with MTZ for 8 or 24 hr, 10 μΜolmesartan was added and imaged after 16 hr (at 24 and 40 hr, respectively). For both experiments 1 and 2, MTZ concentration was 4.5 mM. (B) DA neuron intensity is significantly greater in the olmesartan-treated samples compared to MTZ alone for both 8 hr (left) and 24 hr MTZ pre-treatment groups (right) (n = 10–12; p < 0.05, unpaired t test).
 
 We next performed secondary hit validation for olmesartan, captopril (another ACE inhibitor similar to imidapril), and aliskiren. all of them showed significant DA neuron neuroprotection, either by automated fluorescence intensity quantification (Figure 2C–D) or blinded manual neuronal counting (Figure 2—figure supplement 2). For dose-response curves of these compounds, we implemented dual imaging (imaging both before and after MTZ treatment) to further control for possible individual variability in DA neuron fluorescent intensity (Figure 2—figure supplement 2B,D).
 
@@ -81,25 +105,53 @@ To verify whether the chemical inhibitors indeed target RAAS signaling component
 
 In our primary screen and secondary validations, prophylactic dosing was used (i.e. screening compounds were added earlier than MTZ). In order to determine whether the neuroprotective benefits of RAAS inhibitors can be observed after MTZ treatment (i.e. mimicking therapeutic dosing), we carried out MTZ ablation 8 hrs or 24 hrs prior to administering olmesartan (Figure 2—figure supplement 4A). In both cases, olmesartan showed significant neuroprotection, suggesting that RAAS inhibitors can be beneficial even after the onset of neurotoxic insults (Figure 2—figure supplement 4B).
 
-## agtr1 inhibition in DA neurons is neuroprotective
+### agtr1 inhibition in DA neurons is neuroprotective
 
 The RAAS pathway as a peptidergic system is composed of ligands and G-protein-coupled receptors (GPCRs) classically known to regulate blood pressure and salt retention (Bader, 2010). RAAS inhibitors are widely used drugs for treating high blood pressure. In recent years, RAAS signaling expression is detected outside vasculature and in the central nervous system (Wright and Harding, 2011). To understand the potential contribution of neuronal RAAS to DA neuron degeneration, we first performed qPCR on DA neurons purified by Fluorescence-Activated Cell Sorting (FACS) from the anterior brains of 5 day old Tg[fuguth:gal4-uas:GFP; uas:NTRmCherry] larvae (Figure 3A; Supplementary file 1). qPCR results uncovered enriched expression of pro-renin receptor, angiotensinogen, agtr1a, agtr1b, and Angiotensin Converting Enzyme (ace), whereas the expression of renin and ace2 was undetectable in DA neurons compared to the rest of non-DA cells (Figure 3B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic showing the procedure of FACs to isolate DA neurons for qPCR analysis of RAAS pathway gene expression. (B) qPCR data of 5 dpf larval samples show the relative expression of RAAS pathway genes normalized to the house-keeping gene eef1a1, in DA neurons (red bars) versus non-DA cells (blue bars). PRR (prorenin receptor), agtr1a (Angiotensin II receptor, type 1a), agtr1b (Angiotensin II receptor, type 1b), agtr2 (Angiotensin II receptor, type 2), ace (Angiotensin I converting enzyme), ace2 (Angiotensin I converting enzyme 2) (n = 2 biological replicates, 6 technical replicates). (C) A schematic showing the conditional CRISPR design, imaging, and analysis procedure to inactivate agtr1a and agtr1b in DA neurons. (D) Confocal images of DA neurons in 5 dpf (before MTZ treatment) and 6 dpf (24 hr after 10 mM MTZ treatment) larvae injected with either the scrambled control sgRNA construct (top) or the effective agtr1a and agtr1b sgRNA construct (bottom). Yellow cells express both NTR-mCherry and Cas9. (E) Quantification shows a significant preservation of DA neuron intensity in the agtr1a and agtr1b sgRNA construct-injected animals compared to the scrambled sgRNA control upon 10 mM MTZ treatment. (n = 15, p < 0.01, unpaired t-test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) sgRNA target sequences (green) with PAM sites highlighted in yellow in the agtr1a (left) and agtr1b (right) genes. 8 different targets for each gene were examined to determine the highest sgRNA KO efficiency. (B) Primers used to construct template plasmids for sgRNA synthesis. sgRNA efficiency was calculated based on sequencing followed by ICE software analysis (https://ice.synthego.com/#/) comparing the knockouts to control. CRISPRScan scores with predicted efficiency is also shown in column 5. The sgRNAs highlighted in yellow were used for conditional CRISPR KO of agtr1a and agtr1b on DA neurons. (C) Schematic showing the workflow for validating successful knockout of agtr1a and agtr1b in DA neurons. After DA neuron imaging, larval zebrafish brains were dissociated and DA neurons expressing Cas9-GFP and NTR-mCherry were collected via mouth-pipetting and pooled. PCR was performed to amplify genomic DNA regions targeted by agtr1a and agtr1b sgRNAs followed by sequencing. The samples were also amplified with th primers for QC. Sequencing results were analyzed with the Synthego ICE software. In this example dataset, at least 50% or 40% of sequenced reads carry open reading frame-shifting deletions in agtr1a and agtr1b genes, respectively. The scrambled sgRNAs for agtr1a and agtr1b showed no indel mutations when compared to controls.
+
 To address whether RAAS inhibition is cell autonomously required in DA neurons for neuroprotection, we performed CRISPR-mediated conditional knockout (Auer et al., 2014) of agtr1a and agtr1b in DA neurons (Figure 3C). Eight sgRNAs for each gene were designed and screened to identify those with high knockout efficiency, by microinjecting sgRNA and Cas9 protein into one-cell stage embryos followed by sanger sequencing and analysis using the ICE (Inference of CRISPR Edits) software (Figure 3—figure supplement 1A, B). The Gal4-UAS system was then used to selectively express the GFP-tagged Cas9 enzyme under the control of th1 promoter. DNA constructs containing both the UAS-Cas9 and U6 promoter-driven high-efficiency sgRNAs were delivered into one-cell stage Tg[th1:gal4; uas:NTRmCherry] embryos, followed by quantification of DA neuronal integrity. The efficacy of agtr1a and agtr1b-targeting sgRNAs was verified by genotyping DA neurons isolated by manual aspiration (Figure 3—figure supplement 1C). We found that DA neurons conditionally expressing Cas9 and effective agtr1a and agtr1b-targeting sgRNAs (i.e. yellow neurons, expressing Cas9-GFP and NTR-mCherry) were better preserved than those expressing control scrambled sgRNAs following MTZ treatment (Figure 3D–E). These results suggest that inhibition of agtr1 in DA neurons is cell autonomously neuroprotective.
 
-## RAAS inhibitors are neuroprotective for DA neurons in a chemically induced Gaucher disease model and an MPP+ model
+### RAAS inhibitors are neuroprotective for DA neurons in a chemically induced Gaucher disease model and an MPP+ model
 
 Given that NTR-MTZ-induced DA neuron degeneration does not occur in human patient settings, we next tested whether RAAS inhibitors are neuroprotective in other models relevant to human PD. Mutations in the glucocerebrosidase (gba1) gene cause Gaucher disease (GD), the most common genetic risk factor for PD (Riboldi and Di Fonzo, 2019). The zebrafish genetic model for GD has a weak and later-onset DA neurodegeneration phenotype (Keatinge, 2015). Chemical inhibition of GBA using conduritol B-epoxide (CBE) has been successfully used to model the disease in both mice (Vardi, 2016) and zebrafish (Artola, 2019). CBE exhibits some selectivity for GBA1 but can also inhibit lysosomal α-glucosidase (GAA), non-lysosomal glucosylceramidase (GBA2), and lysosomal β-glucuronidase (GUSB).
 
 We first observed that CBE dose-dependently reduced DA neuron integrity and locomotor activity in larval zebrafish, with 500 μM in the medium yielding significant results (Figure 4—figure supplement 1). We next tested whether olmesartan exerted a protective effect against CBE-induced DA neuron loss and locomotor deficit. Levodopa was used in comparison. While both levodopa and olmesartan ameliorated locomotor deficits induced by CBE (Figure 4A–B), only olmesartan rescued TH immunoreactivity deficits induced by CBE treatment (Figure 4C–D). Furthermore, CBE preferentially damaged TH neurons as revealed by the double immunofluorescent staining of TH and 5HT (serotonin) (Figure 4C and E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig4-v1.jpg)
+
+**Figure 4.:** (A) Locomotor tracks of 5 dpf larvae treated 24 hr with 0.2 % DMSO, 500 µM CBE, 10 µM olmesartan, and 500 µM levodopa. The background subtraction method was used to identify and track movement for 5 min duration. (B) Quantification of total distance (in millimeters, mm) travelled during 5 min recordings for each sample group. Drugs were added at the indicated concentrations and incubated for 24 hr before behavioral recording (n = 12–13; *p < 0.05, ***p < 0.001, unpaired t test) (C) Confocal images of TH-immunoreactive DA neurons (red) and 5HT-immunoreactive serotonin neurons (green) in 6dpf larval zebrafish brains after treatments as indicated in (B). (D–E) Quantification of neurons in the demarcated regions as shown in (C). Fluorescent intensity was quantified using ImageJ and normalized against the control (0.2% DMSO) (n = 8; *p < 0.05, **p < 0.01, unpaired t test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Brightfield images of 6 dpf larvae treated with CBE at varying doses (100, 500, 1000 µM) for 24 hr. No significant alterations in morphology were observed. (B–C) Confocal images of DA neurons after 24 hr of CBE treatment. Treatment with 500 µM CBE caused a significant reduction in DA neuron fluorescent intensity. CBE 1 mM was lethal to all larvae. (n = 10; p < 0.05, unpaired t test) (D) Total distance moved in a 5 min recording upon CBE treatment for 6 dpf larvae after 24 hr of chemical treatment. (n = 12, p < 0.01, unpaired t test).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Timeline of the MPP+ and RAAS inhibitor treatment. (B) Olmesartan and captopril treatment showed significant neuroprotection against MPP+ (n = 10–12, *p < 0.05, **p < 0.05, unpaired t test compared to MPP+ treatment alone). (C) Confocal images of ventral forebrain DA neurons in DMSO control, MPP+, and RAAS inhibitor-treated animals after 24 hr of drug treatment.
+
 We also tested whether RAAS inhibitors might protect against the neurotoxin and mitochondrial complex I inhibitor 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP). MPTP is a prodrug to MPP+, and both have been shown to damage DA neurons in larval zebrafish (Bretaud et al., 2004; Lam et al., 2005). Zebrafish were therefore treated with 1 mM MPP+ (dissolved in 0.02% Tween-80 to facilitate membrane penetration) from 1 to 3 dpf, and RAAS inhibitors or vehicle (0.02% DMSO) were administered 4 hrs prior to MPP+ treatment. Imaging of ventral forebrain DA neurons showed that MPP+ treatment significantly reduced DA neuron intensity, and treatment with Olmesartan and captopril significantly protected against DA neuronal loss (Figure 4—figure supplement 2).
 
 Together, these results demonstrate that RAAS inhibitors are not only neuroprotective in the synthetic NTR-MTZ model but is also neuroprotective in a Gaucher disease model and a MPP+ model. These findings reinforce the validity of the NTR-MTZ synthetic model for neuroprotective small molecule screening.
 
-## DA neuron-specific RNA-Seq reveals that the AGTR1 inhibitor olmesartan restores the expression of mitochondrial pathway genes disrupted by neurotoxic insults
+### DA neuron-specific RNA-Seq reveals that the AGTR1 inhibitor olmesartan restores the expression of mitochondrial pathway genes disrupted by neurotoxic insults
 
 To further understand the molecular basis underlying the neuroprotective effects of RAAS inhibitors, we carried out DA neuron-specific RNA-seq (Figure 5A). Tg[th1:gal4; uas:NTRmCherry] larvae were treated with vehicle, CBE, MTZ, olmesartan, CBE+ olmesartan, or MTZ+ Olmesartan for a defined time window, followed by FACs purification of DA neurons from anterior brains and cell type-specific RNA-seq. MTZ and CBE models were theretofore referred to as the neurotoxic models. Upon annotating the sequence reads with the GRCz11 genome assembly, normalizing the read counts, and plotting all the significant gene expression changes (α = 0.05, FDR = 0.1)(Figure 5—figure supplement 1), we noted that the two neurotoxic models shared significant overlap and formed distinct clusters compared to the DMSO- or olmesartan alone control groups. Furthermore, treatment of both neurotoxic models with olmesartan restored transcriptomic expression to levels that were similar to controls, especially on the transcriptomes up regulated in the neurotoxic models (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig5-v1.jpg)
+
+**Figure 5.:** (A) A schematic showing the RNA-seq procedure of larval samples from chemical treatment to FACs, library preparation, and differential gene expression analysis. (B) A heatmap of clustering analysis comparing the differential gene expression in DMSO control, olmesartan, CBE, MTZ, MTZ+ olmesartan, and CBE+ olmesartan treatment groups. Gene counts were normalized and analyzed with the R program DESeq2 package. All samples are numbered 1, 2, and 3 to indicate biological replicates. (C–D) Venn diagrams showing the overlapping gene expression alterations between different conditions: MTZ/control and CBE/control (C) and MTZ+ Olmesartan/MTZ and CBE+ Olmesartan/CBE (D) (α = 0.05, FDR = 0.1, Wald test). (E–F) Metascape ontology clusters highlighting the top enriched GO terms for differential gene expression common between that of MTZ/Control and CBE/Control (E) and that of MTZ+ olmesartan/MTZ and CBE+ olmesartan/CBE (F). The colors of the nodes correspond to significant values. The size of the nodes is proportional to the number of input genes in the GO term. The most significant GO terms in both (E) and (F) include oxidative phosphorylation, respiratory electron transport, ATP metabolic process, and inorganic cation transport.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative FastQC output of a CBE-treated sample. All samples underwent FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) for quality control. Mappings were aligned with the GRCz11 genome assembly and all samples showed greater than 75% uniquely mapped reads as the example. (B) The Principal Component Analysis (PCA) plot of the RNA-seq sample replicates shows that each sample group forms distinct clusters. (C) Volcano plots showing the differential gene expression comparing CBE vs control, MTZ vs control, MTZ+ olmesartan vs MTZ, and CBE+ olmesartan vs CBE. Log transformed adjusted p-values are plotted on the y-axis and log2 fold change values are plotted on the x-axis. (α = 0.05, FDR = 0.1; Wald test) (D) Pathway enrichment analysis of the differential gene set for olmesartan treatment compared to control using gProfiler. The top 20 pathways are shown. Thirteen additional pathways (not shown) also showed significance with Padj <0.05. (E) List of top 10 upregulated genes and downregulated genes under different conditions listed in the first column.
 
 The expression of 1248 genes were commonly altered in the two neurotoxic models compared to vehicle controls (Figure 5C), while the expression of 507 genes were commonly altered by olmesartan co-treatment in comparison to each of the neurotoxic insult alone (α = 0.05, FDR = 0.1) (Figure 5D). The expression of RAAS pathway genes prorenin receptor (PRR, gene name atp6ap2), agtr1b, and ace2 were significantly upregulated in the MTZ treated group compared to the control (padj = 0.001, 0.032, and 0.015 respectively). The atp6ap2 was also significantly upregulated in the CBE-treated group compared to the control (padj <0.001).
 
@@ -111,7 +163,34 @@ Given the prominence of mitochondrial pathway gene alterations in the neurotoxic
 
 The differentially expressed genes related to mitochondrial function were further divided into up-regulated and down-regulated categories (Table 1). Fourteen genes that were significantly up regulated in the neurotoxic models behaved oppositely upon olmesartan treatment (genes highlighted in blue in Table 1). They function in the mitochondrial electron transport chain (e.g. Complex I, III, IV, and V) and TOM-TIM complex critical for protein translocation through the mitochondrial membrane. One gene, trim3, which was significantly down-regulated in the neurotoxic models, was up-regulated by olmesartan co-treatment (highlighted in red in Table 1). Trim3 (Tripartite motif containing 3), with reported ubiquitin ligase activity, is found to be down-regulated in PD patient plasma (Dong, 2019) and can attenuate apoptosis via activating PI3K/AKT signaling pathway in PD models (Dong, 2020). Many of these mitochondrial pathways were no longer significantly altered when comparing the olmesartan+ CBE or olmesartan+ MTZ groups to the vehicle control group (Supplementary file 1). Taken together, these findings suggest that active AGTR1 receptor is necessary for upregulating the expression of mitochondrial electron transport pathway genes and downregulating trim3 in both neurotoxic models. Inhibiting its activity can help restore normalcy of these pathways, leading to neuroprotection.
 
-## The AGTR1 inhibitor olmesartan rescues the phenotypes of Pink1-deficient Drosophila
+**Table 1.**
+ Mitochondrial function-related genes that are commonly up-regulated and down-regulated in the two types of neurotoxic insults (MTZ and CBE), and their significant changes in olmesartan-treated conditions.Genes highlighted in blue are downregulated in the neurotoxic conditions compared to control but upregulated in olmesartan treatment compared to neurotoxic conditions. Genes highlighted in red are up-regulated in the neurotoxic conditions compared to control, but down-regulated in olmesartan treatment compared to neurotoxic conditions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Significantly upregulated mito-expressed genes common in MTZ/C and CBE/C</th>
+      <th>Significantly downregulated mito-expressed genes common in MTZ/C and CBE/C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Atp5l: ATP synthase, H + transporting, mitochondrial F0 complex, subunit g (C-V) coa5: cytochrome c oxidase assembly factor 5cox5aa,cox5ab,cox6a1, cox6c, cox7a2a, cox7c, cox8a, mt-co3: cytochrome c oxidase subunit 5Aa, 5Ab, 6A1, 6 C, 7A2a, 7 C, 8A, III (C-IV) cycsb: cytochrome c, somatic b (C-III) mdh2: malate dehydrogenase 2, NAD (mitochondrial) mrpl13, mrpl32, mrpl36: mitochondrial ribosomal protein L13, L32, L36mrps18c, mrps21: mitochondrial ribosomal protein s18C, S21ndufa1, ndufb2, ndufs4, ndufv2: NADH:ubiquinone oxidoreductase subunit A1, B2, S4, core subunit V2 (C-I) timm9: translocase of inner mitochondrial membrane 9tomm6, tomm20a, tomm20b: translocase of outer mitochondrial membrane 6, 20uqcc3: ubiquinol-cytochrome c reductase complex assembly factor 3uqcr10: ubiquinol-cytochrome c reductase, complex III subunit X</td>
+      <td>atad3: ATPase family AAA domain containing 3A bnip3la: BCL2 interacting protein three like cpox: coproporphyrinogen oxidase ctnnbip1: catenin beta interacting protein 1kcnh3: potassium voltage-gated channel subfamily H member 3mthfd1l: methylenetetrahydrofolate dehydrogenase (NADP+ dependent) one like slc25a37: solute carrier family 25 member 37timm17b: translocase of inner mitochondrial membrane 17B top1mt: DNA topoisomerase I mitochondrial trim3: tripartite motif containing 3</td>
+    </tr>
+    <tr>
+      <td>Significantly upregulated mito-expressed genes common in MTZ + Olm/MTZ and CBE + Olm/CBE</td>
+      <td>Significantly downregulated mito-expressed genes common in MTZ + Olm/MTZ and CBE + Olm/CBE</td>
+    </tr>
+    <tr>
+      <td>trim3: tripartite motif containing 3rims3: regulating synaptic membrane exocytosis 3phldb1: pleckstrin homology like domain family B member 1</td>
+      <td>Atp5l: ATP synthase, H + transporting, mitochondrial F0 complex, subunit g cox4i2,cox5aa, cox6a1, cox6c, cox7a2a, cox7c, cox8a: cytochrome c oxidase subunit 4I2, 5Aa, 6A1, 6 C, 7A2a, 7 C, 8A cox20: cytochrome c oxidase assembly factor 20cyc1: cytochrome c-1mrpl13,mrpl33, mrpl35, mrpl54: mitochondrial ribosomal protein L13, L33, L35, L54mrps2,mrps18c,mrps36: mitochondrial ribosomal protein S2, S18C, S36, ndufa1, ndufb2, ndufs4, ndufv2: NADH:ubiquinone oxidoreductase subunit A1, B2, S4, core subunit V2timm10: translocase of inner mitochondrial membrane 10tomm6: translocase of outer mitochondrial membrane 6</td>
+    </tr>
+  </tbody>
+</table>
+
+### The AGTR1 inhibitor olmesartan rescues the phenotypes of Pink1-deficient Drosophila
 
 Drosophila offers a plethora of genetic PD models in which DA neuronal loss is evident (West et al., 2015; Lu and Vogel, 2009). The conserved PINK1-Parkin pathway that directs mitochondrial quality control (MQC) has been originally delineated in flies (Yang et al., 2006; Yang et al., 2003; Greene, 2003; Park, 2006; Clark, 2006). These models have been used in genetic and pharmacological testing for genes and agents that offer neuroprotection (Wang, 2006).
 
@@ -119,11 +198,19 @@ Although the RAAS pathway similar to vertebrates has not been fully described in
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig6-v1.jpg)
 
-**Figure 6.:** Drosophila pink1 mutant model.(A–F) images show the abnormal wing posture (B) and thoracic indentation (E) in the mutant compared to wild-type siblings (A,D). Quantification of %mutant individuals with abnormal wing posture (C) and thoracic indentation (F) showed a significant difference between vehicle- and drug (olmesartan)-treated samples. (G–J) Effect of olmesartan on the mitochondrial aggregation and DA neuron loss phenotypes of pink1 mutant, in comparison to DMSO control. Mitochondria are labeled with mito-GFP reporter. Data quantification shown in I, J. (n = 12; **, p < 0.01, *** p < 0.001, unpaired t-test).
+**Figure 6.:** (A–F) images show the abnormal wing posture (B) and thoracic indentation (E) in the mutant compared to wild-type siblings (A,D). Quantification of %mutant individuals with abnormal wing posture (C) and thoracic indentation (F) showed a significant difference between vehicle- and drug (olmesartan)-treated samples. (G–J) Effect of olmesartan on the mitochondrial aggregation and DA neuron loss phenotypes of pink1 mutant, in comparison to DMSO control. Mitochondria are labeled with mito-GFP reporter. Data quantification shown in I, J. (n = 12; **, p < 0.01, *** p < 0.001, unpaired t-test).
 
-## RAAS inhibitors slow down disease progression in human PD patients
+### RAAS inhibitors slow down disease progression in human PD patients
 
 Since RAAS inhibitors are commonly used anti-hypertensives, this provided us with an opportunity to ask whether the neuroprotective benefits of RAAS inhibitors shown in zebrafish and Drosophila can be observed in human PD patients. We used the Parkinson’s Progression Markers Initiative (PPMI) database, which includes a total of 423 de novo PD patients, 308 of which had complete data (accurate medication and medical history records for each visit throughout the longitudinal study, no missing records on age, gender, duration of PD, and high visit compliance with no more than three missing records for motor assessment score). The de novo PD patients refer to subjects who have a diagnosis of PD for two years or less and are not taking any PD medications at the time of enrollment. Among them, 96 patients were on RAAS inhibitors (RAAS) while 212 patients were not (non-RAAS). Among the non-RAAS cohort, 42 patients were hypertensive and taking other medications such as calcium channel blockers or diuretics for the management of hypertension (Figure 7A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig7-v1.jpg)
+
+**Figure 7.:** (A) Flow chart showing the patient cohort studied in the PPMI data. Red circles indicate groups of patients on RAAS, not on RAAS, and on other anti-hypertension medications (HTN) used for the time to levodopa analysis. Green circles indicate the patient cohorts not on levodopa for 3+ years that were used for the UPDRS Part 1, 2, and 3 analyses. (B) Average time to levodopa therapy for de novo PD patients shows significant difference in patients taking RAAS inhibitors versus patients not on RAAS inhibitors (n = 96 and 212; p < 0.05, unpaired t-test) (C) Kaplan Meier survival curve showing the percentage of HTN patients free of levodopa over time for those on RAAS inhibitors versus on other anti-hypertensive medications. HTN patients on RAAS inhibitors showed greater percentage free of levodopa over time compared to patients on other HTN medications (n = 96 and 42; p < 0.05, Log-rank Mantel-cox test). (D) UPDRS Score part one shows significantly worsened (higher) scores for subsequent visits in the No RAAS group and the group using other anti-hypertensives compared to the group on RAAS inhibitors (n = 46, 24, and 103; p = 0.023, one-way ANOVA, post-hoc Tukey).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69795/elife-69795-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Baseline characteristics of the de novo PD patients on RAAS inhibitors and not on RAAS inhibitors. (B) Plots of the covariates against the estimated propensity score, separated by patients on RAAS inhibitors versus patients not on RAAS inhibitors. There was no significant difference in means upon matching (Welch two sample t-test; Age p = 0.98, Race p = 0.93, Gender p = 0.93, Caffeine intake p = 0.52, History of head injury p = 0.81, Smoking p = 0.84, Alcohol intake p = 0.91) (C) Pairwise Pearson correlation of the covariables including age, gender, duration of PD, race, time to levodopa, smoking status, caffeine, alcohol consumption, history of head injury, and RAAS inhibitor use. The lower left panel shows the correlation without matching and the upper right panel shows the correlation upon matching. Prior to matching, the RAAS cohort was significantly different in gender, age, and time to levodopa compared to the No RAAS group (*p < 0.05, **p < 0.01). Upon matching, the RAAS inhibitor use was significantly correlated with time to levodopa (*p < 0.05). (D) Mean UPDRS scores and standard deviation progression for the RAAS inhibitor, Non-RAAS, and other anti-hypertensive medication cohort starting from baseline to visit 12. (E) UPDRS part 2 and (F) part 3 progression showed no significant difference across the RAAS inhibitor, Non-RAAS, and other hypertension cohort. (n = 39–46 for RAAS cohort, n = 92–103 for No RAAS cohort, n = 21–24 for No RAAS_HTN cohort; Part 2 p = 0.53; Part 3 p = 0.85, one-way ANOVA).
 
 Using this dataset, we sought to compare PD progression in patients on RAAS inhibitors to those who were not. At present, there are no accepted progression biomarkers for PD (Espay et al., 2017). The Unified Parkinson’s Disease Rating Scale (UPDRS), while widely utilized, suffers from limitations including subjectivity and ambiguities in the written text (Movement Disorder Society Task Force on Rating Scales for Parkinson’s Disease, 2003). Because of the wear-off and debilitating side effects of levodopa after prolonged use (Espay, 2018), clinicians delay the prescription of levodopa to PD patients until absolutely necessary for treating debilitating motor symptoms. Therefore, we used the Time-to-Levodopa as a quantifiable and objective parameter to measure disease progression. After propensity score matching between RAAS and no-RAAS cohorts (Figure S8A-C), our analysis found that the patients on RAAS inhibitors had a significantly delayed onset of levodopa therapy compared to the patients not on RAAS inhibitors (difference, –5.8; 95% CI –11.26 to –0.4254; p = 0.035) (Figure 7B). To control for hypertension as a variable, we compared patients on RAAS inhibitors to those on other classes of anti-hypertensive medications. This analysis also uncovered a significant effect of RAAS inhibitors in delaying the onset of levodopa therapy as shown in the Kaplan Meier curve (p = 0.032) (Figure 7C).
 
@@ -151,23 +238,446 @@ Our sample size of 308 PD patients is relatively modest. It would therefore be o
 
 ## Materials and methods
 
-## Summary
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>agtr1a</td>
+      <td>Ensembl</td>
+      <td>ENSDART00000021528.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>agtr1b</td>
+      <td>Ensembl</td>
+      <td>ENSDART00000066834.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>ace1</td>
+      <td>Ensembl</td>
+      <td>ENSDART00000114637.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>agt</td>
+      <td>Ensembl</td>
+      <td>ENSDART00000010918.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>pink1</td>
+      <td>Ensembl</td>
+      <td>FBtr0100416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio, AB Wild Type)</td>
+      <td>AB WT</td>
+      <td>Zebrafish International Resource Center</td>
+      <td>ZFIN ID: ZDB-GENO-960809–7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio, fuguth:gal4-uas:GFP; uas-NTRmCherry)</td>
+      <td>Tg[fuguth:gal4-uas:GFP; uas-NTRmCherry]</td>
+      <td>doi:10.1371/journal.pone.0164645</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio, UAS:mtPAGFP:mtDsRed2)</td>
+      <td>Tg[UAS:mtPAGFP:mtDsRed2]</td>
+      <td>doi: 10.1016/jj.nbd.2016.07.020</td>
+      <td>ZFIN ID: ZDB-TGCONSTRCT-161116–1Edward Burton Lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio, th1:gal4; uas:NTRmCherry)</td>
+      <td>Tg[th1:gal4; uas:NTRmCherry]</td>
+      <td>doi: 10.1016/j.nbd.2016.07.020</td>
+      <td>Jiulin Du lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>PINK1B9</td>
+      <td>doi: 10.1038/nature04788</td>
+      <td>Gift from the Chung Lab.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>TH-Gal4</td>
+      <td>DOI: 10.1002/neu.10185</td>
+      <td>Gift from the Birman Lab.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>UAS-mito-GFP</td>
+      <td>doi: 10.1091/mbc.e05-06-0526</td>
+      <td>Gift from the Saxton Lab.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Morpholino Oligonucleotide)</td>
+      <td>agtr1a</td>
+      <td>Gene Tools LLC</td>
+      <td>agtr1a_MO</td>
+      <td>0.5 mM(5'-GACGTTGTCCATTTTGGAGATTTGT-3')</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Morpholino Oligonucleotide)</td>
+      <td>agtr1b</td>
+      <td>Gene Tools LLC</td>
+      <td>agtr1b_MO</td>
+      <td>0.5 mM(5'-TCATTGCTGATGTTTGGTTCTCCAT-3')</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (PCR Master mix)</td>
+      <td>GoTaq Green Master Mix</td>
+      <td>Promega</td>
+      <td>M7122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Renin Angiotensin Pathway Primers</td>
+      <td>This Paper</td>
+      <td>PCR primers</td>
+      <td>Refer to Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nuclear DNA_F</td>
+      <td>doi: 10.1016/j.ymeth.2010.01.033</td>
+      <td>PCR primers</td>
+      <td>5’-AGAGCGCGATTGCTGGATTCAC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nuclear DNA_R</td>
+      <td>doi: 10.1016/j.ymeth.2010.01.033</td>
+      <td>PCR primers</td>
+      <td>5’-GTCCTTGCAGGTTGGCAAATGG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mitochondria DNA_F</td>
+      <td>doi: 10.1016/j.ymeth.2010.01.033</td>
+      <td>PCR primers</td>
+      <td>5’-TTAAAGCCCCGAATCCAGGTGAGC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mitochondria DNA_R</td>
+      <td>doi: 10.1016/j.ymeth.2010.01.033</td>
+      <td>PCR primers</td>
+      <td>5’- GAGATGTTCTCGGGTGTGGGATGG –3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA primers for agtr1</td>
+      <td>This Paper</td>
+      <td>PCR primers</td>
+      <td>Refer to Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>agtr1a_1b sgRNA plasmid</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Agtr1a and agtr1b sgRNA cloned into addgene: 74,009</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Agtr1a_1b sgRNA scrambled</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Agtr1a and agtr1b scrambled sgRNA cloned into addgene: 74,009</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Cas9-NLS protein</td>
+      <td>UC Berkeley</td>
+      <td>https://qb3.berkeley.edu/facility/qb3-macrolab/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-AGTR1 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>25343–1-AP</td>
+      <td>WB(1:500)IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-5HT (Rabbit polyclonal)</td>
+      <td>Immunostar</td>
+      <td>cat#20,080</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TH (Mouse monoclonal)</td>
+      <td>Immunostar</td>
+      <td>cat#22,941</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H + L) Cross-Adsorbed Secondary Antibody</td>
+      <td>Thermofisher</td>
+      <td>Alexa Fluor 488 (cat# A-11001)</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H + L) Highly Cross-Adsorbed Secondary Antibody,</td>
+      <td>Thermofisher</td>
+      <td>Alexa Fluor 568 (cat# A-11036)</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>chicken anti-GFP</td>
+      <td>Abcam</td>
+      <td>ab92456</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-TH</td>
+      <td>Pel-Freez</td>
+      <td>P41301</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit IgG H&amp;L Horseradish Peroxidase conjugated antibody</td>
+      <td>Abcam</td>
+      <td>ab6721</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Mouse IgG H&amp;L Horseradish Peroxidase conjugated antibody</td>
+      <td>Abcam</td>
+      <td>ab6728</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Long-Range PCR Kit</td>
+      <td>QIAGEN</td>
+      <td>cat# 206,402</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantSeq 3’ mRNA-Seq Library Prep Kit FWD for Illumina</td>
+      <td>Lexogen</td>
+      <td>cat# 015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAprep Gel Extraction Kit</td>
+      <td>Qiagen</td>
+      <td>cat# 28,704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mini-PROTEAN TGX Gels</td>
+      <td>Bio-Rad</td>
+      <td>cat# 4561083</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Trans-Blot Turbo Transfer System</td>
+      <td>Bio-Rad</td>
+      <td>cat# 1704150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bioactive Compound Library</td>
+      <td>SelleckChem; curated set from UCSF Small Molecular Discovery Center</td>
+      <td>cat# L1700</td>
+      <td>10 µM Screening concentration</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Olmesartan</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat#144689-63-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aliskiren</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat# 62571-86-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Captopril</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 173334-58-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Metronidazole</td>
+      <td>Selleck Chemicals</td>
+      <td>cat# S1907</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-acetylcysteine</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat# S1623</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Conduritol B Epoxide</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#6090-95-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MPP+</td>
+      <td>Millipore Sigma</td>
+      <td>CAS 36913-39-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1 % low melting point agarose</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#39346-81-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td>1.5.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 7.03</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td>Version R2018</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler</td>
+      <td>The Broad Institute of Harvard and MIT</td>
+      <td>RRID:SCR_007358</td>
+      <td>Version 3.1.8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R DESeq2 package</td>
+      <td>Bioconductor</td>
+      <td>RRID:SCR_015687</td>
+      <td>Version 4.0.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R MatchIt package</td>
+      <td></td>
+      <td>https://github.com/kosukeimai/MatchIt, Ho et al., 2011</td>
+      <td>Version 4.2.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>InCell Analyzer</td>
+      <td>GE Life Sciences</td>
+      <td>RRID:SCR_015790</td>
+      <td>Version 1.9</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision XT</td>
+      <td>Noldus</td>
+      <td>RRID:SCR_000441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMARIS</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td>Version 8.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Synthego ICE software</td>
+      <td>Synthego</td>
+      <td>https://ice.synthego.com/#/</td>
+      <td>version 2.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnapGene Viewer</td>
+      <td>SnapGene</td>
+      <td>RRID:SCR_015053</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Summary
 
 This study was designed to identify neuroprotective small molecules for Parkinson’s disease (PD). A chemo-genetic DA neuron degeneration model employing the NTR-MTZ system was first characterized to uncover mitochondrial dysfunction as a plausible cause of cell death. A whole organism DA neuron imaging-based small molecule screen employing such transgenic zebrafish was then carried out. By screening 1,403 bioactive small molecule compounds, the RAAS pathway inhibitors were identified to be significantly neuroprotective. Their neuroprotective actions were further validated in multiple animal models and in human PD patients. Cell type-specific CRISPR and RNA-seq revealed a DA neuron-autonomous regulation of mitochondrial function as a mechanism underlying the neuroprotective effects of RAAS inhibitors. In vivo studies employing zebrafish were approved by the Institutional Animal Care Use Committee at University of California, San Francisco (Approval Number: AN179000). Use of patient data in the PPMI database was approved by the Michael J Fox Foundation PPMI Data and Publications Committee. No statistical methods were used to predetermine sample size. The sample size (n) for each experimental group was indicated in the figure legends. The compound treatment, image collection, and data analysis, for the compound screening, manual counting for secondary hit validation of RAAS inhibitors, western blot of morpholino injections, mass spectrometry of adult fish brains, and adult zebrafish behavior studies were performed in a blinded manner. For all other experiments, the investigators were not blinded to allocation during experiments and outcome assessment. All the experiments were replicated at least two independent times.
 
-## Zebrafish husbandry and transgenic lines
+### Zebrafish husbandry and transgenic lines
 
 Zebrafish were raised on a 14:10 hr light/dark cycle and maintained in the zebrafish facility according to the University of California San Francisco Institutional Animal Care and Use Committee standards. Embryos were raised in Blue Egg Water (2.4 g CaSO4, 4 g IO Salt, 600 μl of 1 % Methylene per 20 L).
 
 The following transgenic lines were used: Tg[fuguth:gal4-uas:GFP; uas-NTRmCherry](for in vivo drug screening, hit validation, MO injection, and behavioral assessment) (Liu, 2016); Tg[UAS:mtPAGFP:mtDsRed2] for imaging mitochondrial dynamics, kindly provided by Dr. Edward Burton’s lab (Dukes, 2016); Tg[th1:gal4; uas:NTRmCherry](for CBE double immunofluorescence staining of TH and 5HT, conditional CRISPR knockout of agtr1a and agtr1b, DA neuron specific RNA-seq). Tg[th1-gal4] was kindly provided by Dr. Jiulin Du’s lab (Li, 2015).
 
-## Agtr1a and agtr1b morpholino knockdown and western blot validation of knockdown
+### Agtr1a and agtr1b morpholino knockdown and western blot validation of knockdown
 
 Morpholino (MO) antisense oligonucleotides that inhibit protein translation were designed for agtr1a and agtr1b (Figure 2—figure supplement 3A) and purchased from Gene Tools, LLC. 0.5 mM agtr1a and agtr1b MO working solution was mixed with 1% phenol red and micro-injected into 1 cell stage embryos (estimated 1–4 nls per embryo). At 5 dpf, control and morphants were treated with 9 mM MTZ for 24 hr and confocal imaging was performed with brightfield and DsRed channel at 6dpf. Eight-bit images were cropped to isolate the diencephalic region of the brain and the DA neuron intensity was quantified with ImageJ.
 
 For western blotting, the 6dpf larvae with DMSO or MTZ treatment were collected after performing confocal imaging. Thirty larvae for each group were homogenized in 150 uL of SDS sample buffer and boiled for 10 minutes at 99°C and transferred to ice. The samples were centrifuged for 1 min at 12,000 rpm and the supernatant was transferred to a new tube with 5 x SDS protein loading buffer. The samples were loaded into Mini-PROTEAN TGX Gels (cat# 4561083) and run at 180 V for 50 min. Transblotting was done using the Trans-Blot Turbo Transfer System (cat# 1704150) and washed with PBS. Primary antibodies were incubated at 4°C overnight. For the anti-rabbit agtr1 antibody (Proteintech 25343–1-AP), 1:500 was used; for the anti-mouse beta actin control (Sigma A5441), 1:2000 dilution was used. Horseradish Peroxidase conjugated secondary antibodies were used (Abcam ab6721 and ab6728) with 2 hr incubation. After washing off the secondary antibodies with PBS, the western blot was visualized with the iBright CL750 Imaging System (Invitrogen A44116). The expected bands of 37 kda for anti-beta actin and 50 kda for anti-AGTR1 were identified and analyzed with imageJ using the ‘Mean Grey Value’ measurement tool.
 
-## In vivo whole organism imaging-based high-content screening assay and secondary validation
+### In vivo whole organism imaging-based high-content screening assay and secondary validation
 
 The NTR/MTZ model with NTR expressed in DA neurons was used for drug screening, secondary hit validation, and mechanistic studies of DA neuron degeneration. 4.5 mM, 9 mM, or 10 mM MTZ were used in larval zebrafish with varying time courses (ranging from 8 to 48 hr) to achieve different goals (e.g. pre-, mild, moderate, or severe DA neuron loss). Five mM MTZ was used for prolonged treatment in adult zebrafish.
 
@@ -175,52 +685,52 @@ Drug screening was performed in 96-well plates with the bioactive compound libra
 
 For secondary hit validations, 40 µL of 1.5% agarose was added to ensure that the larvae were embedded in a dorsal down position for confocal imaging before and after MTZ treatment. The live confocal imaging was conducted using In Cell Analyzer 6000 with DsRed and FITC channels with 200 ms exposure time. For manual counting of DA neurons, experimenters were blinded to the treatment conditions. Individual larval zebrafish were mounted in 1.5% agarose. Ventral forebrain DA neurons were observed under a Zeiss epi-fluorescent microscope and counted on one side of the brain in an identical manner across all larval zebrafish. For the dose response studies, concentrations of the RAAS inhibitors were prepared from a series of fold dilutions. The RAAS pathway inhibitors used in the study including olmesartan, aliskiren, captopril, were purchased from Sigma-Aldrich (cat #144689-63-4, 62571-86-2, 173334-58-2). Metronidazole and NAC were purchased from Selleck Chemicals (cat# S1907, S1623). CBE was purchased from Sigma Aldrich (cat# 6090-95-5). MPP+ was purchased from Millipore Sigma (cat # 36913-39-0).
 
-## Adult and larval Zebrafish locomotor behavior assay
+### Adult and larval Zebrafish locomotor behavior assay
 
 For all adult and larval behavior assays, animals were individualized and incubated in their home tanks in a 26°C behavior room overnight for habituation. Six-well plates were used to house individual larva in each well with 5 mL of total volume per well. The wells were placed on a lightbox and the videos were recorded from a top-down view. For the adult behavior experiments, the fish were individually housed in their home tank with 500 mL of system water. For the 2-week duration of the adult behavior test, they were fed with flakes in the morning and replaced with fresh water containing the test compounds daily. The recordings were taken from the top view for 5 min. The total distance moved for the 5-min duration was analyzed through the EthoVision XT software using the dynamic subtraction algorithm with detection limits between 10 and 100 pixels. For larval fish, the static subtraction algorithm was used with detection limits between 10 and 40 pixels.
 
-## Assessment of nuclear and mitochondrial DNA integrity
+### Assessment of nuclear and mitochondrial DNA integrity
 
 Tg[fuguth:gal4-uas:GFP; uas-NTRmCherry] were treated with PTU (1:100)(200 µM) on 1dpf. At 5dpf, the larvae were treated with 4.5 mM MTZ for 8 hr and immediately transferred to HBSS (Ca/Mg Free) Buffer (Gibco 14170120) and the brains anterior to the mid/hindbrain boundary were acutely dissected and dissociated with TrypLE (Gibco 12604013) for 30 min. DA neurons were collected via mouth pipetting and the genomic DNA was extracted using extraction buffer (10 mM Tris pH 8.2, 10 mM EDTA, 200 mM NaCl, 0.5 % SDS, 200 µg/ml proteinase K). The nuclear DNA was PCR amplified using the primer sequences: Forward 5’ to 3’ AGAGCGCGATTGCTGGATTCAC, Reverse 5’ to 3’ GTCCTTGCAGGTTGGCAAATGG and the mitochondrial DNA was PCR amplified using the primer sequences: Forward 5’ to 3’ TTAAAGCCCCGAATCCAGGTGAGC, Reverse 5’ to 3’ GAGATGTTCTCGGGTGTGGGATGG. The target base pair sizes are 10.7 kb and 10.3 kb, respectively. The PCR was performed with the QIAGEN Long-Range PCR Kit (cat# 206402) optimized for long-range amplification of genomic DNA. The PCR was performed with an initial denaturation step at 94°C for 1 min, 24 cycles (nuclear DNA) or 19 cycles (mitochondrial DNA) of 94°C for 15 s, 69°C for 45 s, and 72°C for 30 s, with final extension at 72°C for 10 min. The DNA integrity was evaluated by gel electrophoresis (2% agarose) and the bands were analyzed with ImageJ using the ‘Calibrate’ function to determine the optical density of the molecular weight standard, the nuclear DNA, and mitochondrial DNA bands.
 
-## In vivo imaging of mitochondrial dynamics
+### In vivo imaging of mitochondrial dynamics
 
 Transgenic zebrafish Tg[th1:gal4; uas:NTRmCherry] were crossed with Tg[UAS:mtPAGFP:mtDsRed2] and treated with PTU (1:100) (200 µM) at 1dpf. The larvae were screened for th1-NTRmCherry on 4dpf and were treated with either 0.2% DMSO (control) or 4.5 mM MTZ for 16 hr. The larvae were embedded with 1% low melting point agarose (Sigma 39346-81-1)(1:100 tricaine added, 0.168 µg/mL) in 35 mm glass bottom dishes (Corning). The PA-GFP was activated with the Nikon 40 x WI objective DAPI channel for 1 min. Upon successful activation, the mitochondria were observable under GFP. Live imaging was performed with 10 s intervals for a total of 10 min. The imaging movies were processed with ImageJ and IMARIS software (version 9.7) where the xyz coordinates of the mitochondria movements were obtained. The values were exported to a custom MATLAB script to calculate total displacement, velocity, and direction.
 
-## Mass spectrometry of adult zebrafish for olmesartan detection
+### Mass spectrometry of adult zebrafish for olmesartan detection
 
 Zebrafish were treated with 10 μM of olmesartan medoxomil (Sigma Aldrich cat# 144689-63-4, the pro-drug form of olmesartan) for 14 days. The drug was freshly dissolved in the system water and administered daily. On day 14, adult zebrafish were dissected to collect the body and the brain which were then pooled to obtain approximately 125 mg per sample (n = 10 males, 10 females). Brain samples were prepared by addition of PBS at a 1:5 ratio and homogenizing (Bertin Precellys 24). Homogenates were mixed with acetonitrile and methanol (1:1 v/v) containing 0.05 µg/mL niflumic acid as an internal standard before filtering with Captiva ND plates (0.2 um) into water and analyzed for the active olmesartan (Sigma Aldrich cat# 144689-24-7) with a QTRAP 5500 tandem mass spectrometer (Sciex) coupled with a Nexera X2 series UHPLC (Shimadzu).
 
-## Drug treatment in the chemically induced Gaucher disease model in larval zebrafish
+### Drug treatment in the chemically induced Gaucher disease model in larval zebrafish
 
 Zebrafish treated with CBE (a chemical inhibitor of GBA) and the RAAS inhibitor olmesartan were tested for both locomotor behavior and confocal imaging of DA neurons. Initially, CBE concentrations ranging from 100 μM, 500 μM, and 1 mM were used to treat embryonic and larval zebrafish from 1dpf to 5dpf with fresh compounds dissolved in Blue Egg Water changed daily to determine that 500 μM is the optimal concentration for the study (Figure 4—figure supplement 1). Prior to treatment with CBE, olmesartan, or levodopa, 5dpf larvae were embedded in 96-well glass bottom plates with 1.5% agarose and blue egg water and imaged using a 20 x objective under the InCell 6000 confocal microscope. CBE (500 μM), olmesartan (10 μM) or levodopa (500 μM) were added to the agarose-embedded larvae. Twenty-four hr later, the 6 dpf larvae were again imaged and the before vs. after TH intensity was quantified using ImageJ. For behavioral recording, 5 dpf larvae were treated with CBE, olmesartan, or levodopa for 24 hr in six-well plates and behavior was analyzed using Ethovision XT using the methodologies described above.
 
-## Drug treatment in the MPP+ model in larval zebrafish
+### Drug treatment in the MPP+ model in larval zebrafish
 
 Treatment conditions were used similar to what has been previously described (Lam et al., 2005). In brief, 10 μM olmesartan in 0.02% DMSO was administered to 1 dpf zebrafish. Four hr later, 1 mM MPP+ in 0.02% Tween-80 was added. The treatment lasted till 3 dpf. Positive control was treated with vehicle only (0.02% Tween-80, 0.02% DMSO), and negative control was treated with MPP+ only. DA neurons were imaged and quantified as described above.
 
-## Drug treatment in the Drosophila Pink1-deficient model
+### Drug treatment in the Drosophila Pink1-deficient model
 
 Newly eclosed PINK1B9; TH-Gal4> UAS-mito-GFP male flies were raised on instant fly food (Carolina) or instant fly food containing 100 μM olmesartan. Flies were transferred to fresh vials daily. After two weeks, the flies were scored for wing posture or examined under dissecting microscope for thoracic indentation. Afterwards, flies were dissected for DA neuron staining. At least seven individuals were examined for each condition. Dissected brain tissue samples were briefly washed with 1 x PBS and fixed with 4% formaldehyde in 1 x PBS containing 0.25% Triton X-100 for 30 min at room temperature. Fixed samples were subsequently blocked with 1 x PBS containing 5% normal goat serum and incubated for 1 hr at room temperature followed by incubation with primary antibodies at 4°C overnight. The primary antibodies used were: chicken anti-GFP (1:5000, Abcam), and rabbit anti-TH (1:1000, Pel-Freez). After three washing steps with 1 x PBS/0.25% Triton X-100 each for 15 min at room temperature, the samples were incubated with Alexa Fluor 594- and Alexa Fluor 488-conjugated secondary antibodies (1:500, Molecular Probes) for 3 hr at room temperature and subsequently mounted in SlowFade Gold (Invitrogen). Samples were observed under a Leica SP8 confocal microscope and fluorescent confocal images were processed using Photoshop.
 
-## FACs, qPCR, and RNA sequencing
+### FACs, qPCR, and RNA sequencing
 
 FACs was performed on the BD FACSaria III Cell Sorter with 488 nm, 561 nm and 638 nm channels. To ensure high accuracy of cell sorting, DA neurons were sorted with both 488 and 561 nm channels from Tg[fuguth:gal4-uas:GFP; uas:NTRmCherry]. The dead cells stained with DAPI (1 ng/mL) were sorted with the 405 nm channel. The FACs-sorted cells were immediately processed for RNA extraction (Ambion) and converted to cDNA for qPCR. Transcript sequences were obtained from the Ensembl genome browser for zebrafish (GRCz11; https://uswest.ensembl.org/Danio_rerio/Info/Index) as shown in column 6. The primers were designed with NCBI primer blast (https://www.ncbi.nlm.nih.gov/tools/primer-blast/) spanning a product length between 70bp to 200 bp while minimizing self 3’ complementary score. All primers were validated with gel electrophoresis prior to qPCR. The Ct values were compared relative to eef1a1 as a housekeeping Gene (Supplementary file 1).
 
 For RNA-seq, approximately 500 DA neurons were collected per sample with biological triplicates using the FACs procedure described above. RNA was extracted using the Lexogen SPLIT RNA extraction kit (cat 008) and the quality was assessed in the Agilent 2,100 Bioanalyzer (cat# G2939BA). The library was prepared using the Lexogen QuantSeq 3’ mRNA-Seq Library Prep Kit FWD for Illumina (cat# 015). The libraries were quality controlled using Agilent 2100 Bioanalyzer and pooled at 20 mL of 3 ng/mL concentration. The RNA-seq was performed on the Illumina HiSeq 4000 (cat SY-401–4001), with single end 50 bp, generating 350 million reads per lane. FastQC was performed for quality check and all sequences showed high per base sequence quality with greater than 75% uniquely mapped reads aligned against GRCz11 (Figure 5—figure supplement 1A). The count normalization was performed using the DESeq2’s median of ratios method which accounts for sequencing depth and RNA composition. This normalization method allows for gene count comparisons between samples, which is suitable for comparing differential gene expression across different sample groups with high sensitivity and specificity (Li et al., 2020; Bullard et al., 2010). To visualize the similarity of our samples, initially a sample-level QC was performed using Principal Component Analysis (PCA) as shown in Figure 5—figure supplement 1B. Each dot represents a sample from the respective group. The raw counts for each gene were modeled and the log2 fold changes were shrunken and differential gene expression analysis was performed using DESeq2 in R with an α level of 0.05 and FDR of 0.1. The gene set was then annotated and converted from the zebrafish ensemble Gene (ENSG) to Homo sapiens ENTREZ gene ID with gProfiler. The pathway analysis was conducted on DAVID for the KEGG pathway maps and Metascape for enriched ontology clusters.
 
-## Antibody staining of 5HT and DA neurons in larval zebrafish
+### Antibody staining of 5HT and DA neurons in larval zebrafish
 
 Antibody staining was performed as previously described (Yang et al., 2012). In brief, 6 dpf larvae were fixed in 4% PFA overnight, washed with PBS, and their brains were dissected. After 24 hr of dehydration in 100 % methanol overnight followed by rehydration, the samples were incubated in primary antibodies for 72 hr at 4°C with the rabbit anti-5HT (Immunostar cat#20080) and mouse anti-TH (Immunostar cat#22941) primary antibodies. The brains were then subjected to secondary antibody labeling, using Alexa Fluor 488 anti-mouse (cat A-11001) and Alexa Fluor 568 anti-rabbit (cat A-11036). The brains were stored in 75% Glycerol and mounted for confocal imaging. The confocal imaging was taken on the Nikon Ti inverted fluorescence microscope with CSU-W1 large field of view using Apo LWD 40 x/1.15 water immersion lens under GFP and RFP channels.
 
-## Conditional CRISPR
+### Conditional CRISPR
 
 The sgRNA sequences were predicted and designed based on the CHOPCHOP and CRISPRscan database (Figure 3—figure supplement 1A). The sgRNAs were synthesized and co-injected with Cas9-LS protein (UC Berkeley, https://qb3.berkeley.edu/facility/qb3-macrolab/) into one-cell stage embryos. The genomic DNAs were extracted and sequenced. Upon different designs of sgRNAs (eight for each gene), a maximal knockout efficiency of 58% and 65% were obtained for agtr1a and agtr1b respectively, based on the analysis with the Synthego ICE software (version 2.0, https://ice.synthego.com/#/). The plasmid backbone used for the conditional knockout construct was the Tol2-pUAS:Cas9T2AGFP;U6:sgRNA1;U6:sgRNA2, in which UAS elements drive the expression of Cas9 and GFP linked via the T2A peptide and two sgRNA targets can be simultaneously used. The BsaI and BsmBI restriction sites were used for the sgRNA target sequence cloning as previously described (Auer et al., 2014). After cloning, the obtained plasmid construct was co-injected with Tol2 transposase mRNA (Kawakami et al., 2000) into one-cell stage embryos derived from Tg[th1:gal4; UAS:NTRmCherry]. To validate successful knockout of the genes, after live imaging of DA neurons under both GFP and RFP channels, the zebrafish brains were dissociated with TrypLE Express for 30 min and mouth-pipetting was used to collect the GFP+NTRmCherry+ DA neurons for PCR and sequencing (Figure 3—figure supplement 1B).
 
-## Parkinson’s progression markers initiative data analysis
+### Parkinson’s progression markers initiative data analysis
 
 The PPMI is an observational clinical study providing a comprehensive database for clinical, imaging, and biological data. The PPMI repository contains clinical data with subject demographics, comprehensive medication history, UPDRS motor assessments, and non-motor assessments. The data were downloaded and accessed in May 2019. Initially 423 de novo PD patients, defined as subjects with a diagnosis of PD with two years or less who are not taking any PD medications, were identified, in which 115 patients had missing information or withdrew from the study making the total included subjects to be 308 patients. Among the 308 patients, 96 patients were taking either ACE inhibitors or ARBs (RAAS group) while 212 patients were not taking ACE inhibitors or ARBs (no RAAS group). Based on the medication history, the average Time-to-Levodopa was compared between the two groups. Among the 212 patients, 42 patients had a diagnosis of hypertension (ICD code R03.0) and were taking other medications for the management of their hypertension. A total of 170 patients were neither hypertensive nor taking other blood pressure medications. For the patient cohorts, propensity score matching was used to match the covariates including age, gender, race, smoking, caffeine consumption, alcohol consumption, and history of head injury (Figure 7—figure supplement 1A-C) between the cohorts taking RAAS inhibitors (RAAS group) and not taking RAAS inhibitors (no RAAS group). For the UPDRS motor assessment analysis, a subset of patients from each cohort not taking levodopa for at least three years from their initial PPMI enrollment were selected to remove the possible confounding effects of levodopa on motor improvement. Part 1 (non-motor experiences of activities of daily living), part 2 (motor experiences of activities of daily living), and part 3 (motor examination) were assessed (Figure 7—figure supplement 1E, F).
 
-## Statistical analysis
+### Statistical analysis
 
 The imaging data from screening studies and behavior studies were analyzed by unpaired t-test using R program and Graphpad Prism software and expressed as means ± SEM unless otherwise stated. Wilcoxon rank sum test was used for the analysis of the high throughput screening database. Differential gene expression analysis of the RNA-seq data was done using the DESeq2 package in R and the fold changes of gene expressions were evaluated with Wald test at an α of 0.05 and FDR 0.1. Clinical data analysis of the PPMI database on Time-to-Levodopa was conducted with a Log-rank Mantel-cox test; the UPDRS motor scores were analyzed with nonparametric one-way analysis of variance (ANOVA) and post-hoc Tukey Test.

@@ -38,9 +38,29 @@ We provide a whole-brain analysis of bidirectional connectivity of the longitudi
 
 ## Results
 
-## Viral-tracing approach to reveal the input-output connectivity of the mouse IC
+### Viral-tracing approach to reveal the input-output connectivity of the mouse IC
 
 To map the connectivity of the entire mouse IC, we injected viral tracers into three evenly spaced locations along the rostro-caudal axis with the aim of comprehensively tracing from its entire extent and to assess possible parcellation of the mouse IC into connectivity-based subdomains. The most anterior region, aIC, ranged from +2.45 mm to +1.20 mm from Bregma; the medial part, mIC, from +1.20 mm to +0.01 mm from Bregma, and the posterior part, pIC, from +0.01 mm to −1.22 mm from Bregma (see also Figure 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55585/elife-55585-fig1-v2.jpg)
+
+**Figure 1.:** Schematic representation of Cre-dependent (A) monosynaptic retrograde Rabies virus tracing (RV) and (B) anterograde axonal AAV tracings (AAV) used to determine respective input and output connectivity to the IC. Tracings were performed in both excitatory (Camk2a-Cre) and inhibitory (Gad2-Cre) mouse lines for RV, and only in the Camk2a-Cre mouse line for AAV. For RV tracings, AAV-FLEX helper viruses expressing mCherry-tagged TVA (1) and rabies-virus-specific G protein (2) were co-injected into the IC region of interest. Three weeks later EnvA-coated, eGFP-expressing modified RV lacking G protein was injected at the same location (3). For anterograde tracings, a one-off injection of eYFP-expressing AAV-FLEX virus was administered into the chosen location. Three distinct IC subregions were chosen for each tracing technique: anterior (aIC, red), medial (mIC, green) or posterior (pIC, blue). (C) Schematic illustration of the lateral view of the IC including distances from Bregma (top panel) and heatmap showing average starter cell distribution for each tracing strategy at each specific IC target (bottom panels). The three IC target subregions were mostly non-overlapping, and only a minimal percentage of cells were detected in the Motor and Sensory Cortex (M/S), or Piriform Cortex (Pir) neighboring the IC. n = 3 mice per injection site/tracing strategy. Heatmap intensity scale is the same for all three IC target subregions. Regions absent at specific Bregma levels indicated by dark gray squares.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55585/elife-55585-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Starter cell identification pipeline for RV helper system. (1) High-resolution image of a representative section at the injection site in the IC. Starter cells are double-labeled with TVA-mCherry and RV-GFP, and appear yellow. Scale bars 200 µm (main image), 50 µm (inset). Number of starter cells were identified in an automated fashion using Cell Profiler. First RV+ cells were identified ([2], yellow cell outlines) from the GFP image, then RV+ cells that also contain mCherry-TVA were identified from the mCherry signal ([3], red rings within yellow RV+ cell outlines). Double-labeled cells were counted as starter cells. (B) Starter cell identification pipeline for AAV tracing system. (1) Representative epifluorescent image of YFP-labeled AAV starter cells. Scale bars 200 µm (main image), 50 µm (inset). (2) YFP-positive cells were identified in an automated manner using Cell Profiler. Data given as cells per brain subregion, which was manually defined before cell identification. (C) Raw data for each individual animal used. Starter cell range values given as distance from Bregma in mm. Ratio shown as total cells/starter cells. Hemisphere indicates injection site.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55585/elife-55585-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Starter cell exclusion threshold. High-resolution image of a representative section at the injection site in the IC. Starter cells are double-labeled with TVA-mCherry and RV-GFP, and appear yellow. The center of the population is marked with a circle. Scale bars 200 µm. (1) Example of a brain without spillover into adjacent regions (2) Example of a brain with an acceptable amount of spillover into Primary Sensory Cortex (S1) (3) Image of an excluded brain with high spillover into S1 and Piriform Area (Pir). (B) Percent of total starter cell population sorted by layer occupation. A two-way ANOVA followed by Tuckey’s multiple comparison test was performed to compare starter cell distribution between and within layers. Significant differences were labeled as ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05. (C) Percent of total starter cell population sorted by region occupation; showing spillover. Group comparisons per region were made using one-way ANOVAs followed by Tuckey’s multiple comparison tests. Significant differences were labeled as **p<0.01, *p<0.05. (D) Comparison of percent of total input between individual brains with varying amount of spillover to either the Motor- and Somatosensory cortices (M/S) or Piriform cortex (Pir). The darkest color indicates the sample with the highest spillover and lightest color the lowest/no spillover. For detailed statistics see Supplementary file 3. n = 3 mice per condition, data shown as average ± SEM.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55585/elife-55585-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A–C) Example pictures depicting (1) The raw GFP channel signal of labeled input cells, (2) Human counts laid over the raw GFP signal and (3) The automated counts laid over the segmented image of the GFP channel. Exemplary counts are shown for (A) VP, (B) Po and (C) parts of the Amygdala (CeA, LA and BLA). (D–E) Cell count comparisons, including number of sections on which the brain region was present and cells were counted as well as the average difference in cell counts per section (human vs. automated) and Relative Percent Difference (RPD). (D) Comparison within a single brain showing differences between several human counters (left part of the table) and the difference between averaged human counts and the automated counts (right part of the table). (E) Comparisons between human and automated counts for three different brains.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/55585/elife-55585-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** All data available at https://github.com/GogollaLab/tracing_quantification_and_analysis (Gehrlach, 2020; copy archived at https://github.com/elifesciences-publications/tracing_quantification_and_analysis). Pipeline to detect (A) RV+ input neurons to the IC and (B) AAV+ output neurons from the IC. Brains were fixed and coronally sectioned (thickness: 70 µm). Every second section was stained for DAPI and imaged either using slide scanner epifluorescent microscopy (RV) or scanning confocal microscopy (AAV). For RV, positive cells were identified using supervised machine learning (https://github.com/GogollaLab/tracing_quantification_and_analysis/blob/master/autonomous_neuron_detection.ijm) and allocated to manually adjusted ROIs corresponding to the Paxinos and Franklin mouse brain atlas (https://github.com/GogollaLab/tracing_quantification_and_analysis/blob/master/counting_RV.ijm). For AAV tracings, YFP-positive pixels were segmented with hessian ridge detection (https://github.com/GogollaLab/tracing_quantification_and_analysis/blob/master/autonomous_pixel_detection.ijm) and allocated to manually adjusted ROIs from the mouse brain atlas (https://github.com/GogollaLab/tracing_quantification_and_analysis/blob/master/counting_AAV.ijm). (C) Pipeline of data analysis in python. After cleaning of the raw data, it was clustered and calcualtions done before a final clustering. The output was pivot tables. https://github.com/GogollaLab/tracing_quantification_and_analysis/blob/master/analysis_AAV.py and https://github.com/GogollaLab/tracing_quantification_and_analysis/blob/master/analysis_RV.py. (D) Assessment of the specificity and spread of experimental and control conditions. In contrast to experimental conditions (red: Camk2a-Cre, N = 9 mice; blue: Gad2-Cre, N = 9 mice), we could not detect long-range RV+ neurons in the wildtype- (black, N = 2 mice) and TVA control conditions (grey, N = 2 mice). This confirms, that in the experimental conditions, the brain-wide signals are indeed from a transsynaptic retrograde transfer. Further, combining the results from the WT controls (black) and TVA controls (grey) revealed that there is some leakage of the AAV-FLEX system and that SADdG-eGFP(EnvA) can still infect a minor fraction of TVA-negative neurons. Guided by these control experiments, we omitted quantification of RV+ neurons for ±1 mm from the injection center within the IC and claustrum.
 
 In order to trace the monosynaptic inputs to the IC, we utilized a modified SAD∆G-eGFP(EnvA) rabies virus (RV), which has been shown to label monosynaptic inputs to selected starter cells with high specificity (Wall et al., 2010; Wickersham et al., 2007b). This virus lacks the genes coding for the rabies virus glycoprotein (G) and is pseudotyped with the avian viral envelope EnvA. This restricts its infection to neurons expressing the avian TVA receptor and to monosynaptic retrograde infection of afferents (Figure 1A). We infected the IC of Camk2a-Cre and Gad2-Cre expressing mouse lines to specifically target TVA and rabies virus glycoprotein expression to excitatory pyramidal or inhibitory interneurons, respectively (see Figure 1A and Materials and methods).
 
@@ -58,9 +78,29 @@ For both RV and AAV tracings, we determined the spatial location of the starter 
 
 To ensure Cre-dependence of our approach, we performed control infections of WT mouse brains. Mice lacking Cre-recombinase should not express eGFP when infected with RV. Indeed only some GFP+ neurons were detected at the injection sites within the boundaries that we would normally exclude from our quantitative analysis (Figure 1—figure supplement 4D). To test the dependence on RG supplementation for the synaptic jump of the virus and thus to ensure the monosynaptic restriction, we injected TVA and RV into Camk2a-Cre or Gad2-Cre mice without the addition of RG. As expected, eGFP expression was detected in transfected neurons, but none was expressed outside the boundaries that we would normally exclude from our quantitative analysis, indicating that no synaptic jump had occurred and no long-range projections were labeled (Figure 1—figure supplement 4D).
 
-## Whole brain input/output map of mouse IC
+### Whole brain input/output map of mouse IC
 
 To provide a detailed account of the brain-wide connectivity of the mouse IC, we analyzed its bidirectional connectivity with 75 anatomical subregions (the detailed connectivity maps of the IC with all subregions analyzed can be found in the Figure 2—figure supplements 1–3). To first gain an overview of the overall IC connectivity, we pooled these detailed datasets into overall connectivity patterns between the IC and 17 larger brain regions (Figure 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55585/elife-55585-fig2-v2.jpg)
+
+**Figure 2.:** (A) Comparison of inputs to excitatory and inhibitory IC neurons (left) and outputs of excitatory neurons of the IC (right) of all three IC subregions (aIC, red; mIC, green; pIC, blue) across the 17 major brain regions that displayed connectivity. Region values are given as percentage of total cells (RV) or of total pixels (AAV). Data is shown as average ± SEM. n = 3 mice per condition. Top panel shows cortical connectivity, bottom panel shows subcortical connectivity. One-way ANOVAs per subregion followed by Tuckey’s multiple comparison test were performed to generate p-values. Significant differences between inputs to excitatory or inhibitory neurons to IC subregions or between outputs from the IC subregions were labeled as ***p<0.001, **p<0.01, *p<0.05. For detailed statistics see Supplementary file 3. (B) Individual input-output maps for the three IC subdivisons highlighting selected brain regions. Weight of arrowhead and thickness of arrow shaft indicate strength of connection. Green arrowheads indicate inputs, red arrowheads indicate outputs.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55585/elife-55585-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Brain-wide global datasets were divided into 75 subregions for comparison. Data shows excitatory (Camk2a) and inhibitory (Gad2) input strengths, and excitatory output strength (Camk2a) from each IC- subregion (aIC, mIC, and pIC, Figure 2—figure supplements 1, 2, and 3, respectively). Values are presented as normalized percentage of total cells (RV) or total pixels (AAV). Data shown as average ± SEM. N = 3 mice per condition. Top panel shows cortical connectivity, bottom panel shows subcortical connectivity.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55585/elife-55585-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Brain-wide global datasets were divided into 75 subregions for comparison. Data shows excitatory (Camk2a) and inhibitory (Gad2) input strengths, and excitatory output strength (Camk2a) from each IC- subregion (aIC, mIC, and pIC, Figure 2—figure supplements 1, 2, and 3, respectively). Values are presented as normalized percentage of total cells (RV) or total pixels (AAV). Data shown as average ± SEM. N = 3 mice per condition. Top panel shows cortical connectivity, bottom panel shows subcortical connectivity.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/55585/elife-55585-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Brain-wide global datasets were divided into 75 subregions for comparison. Data shows excitatory (Camk2a) and inhibitory (Gad2) input strengths, and excitatory output strength (Camk2a) from each IC- subregion (aIC, mIC, and pIC, Figure 2—figure supplements 1, 2, and 3, respectively). Values are presented as normalized percentage of total cells (RV) or total pixels (AAV). Data shown as average ± SEM. N = 3 mice per condition. Top panel shows cortical connectivity, bottom panel shows subcortical connectivity.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/55585/elife-55585-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** From the accompanying excel resource sheet, all plots presented in this study can be recreated. In addition, the reader can query the dataset with his own questions, by creating pivot tables. The workflow, how to create such a pivot table in excel is described here. (1) After opening the excel sheet, navigate to the ‘RAW DATA’ tab. Then go to the ‘Insert’ tab and insert a pivot table. In the subsequent pop-up dialogue, make sure the entire range of the dataset is selected and click ‘OK’. Next, (2) set Filters for at least the tracing type (AAV or RV), as RV and AAV results do not share the same values. Optionally, you can set filters for the Genotype (Camk2a-Cre and Gad2-Cre) and from which part of the insula the tracings should be selected (aIC, mIC, pIC). Depending on your question and how you want the data to be plotted, you have to choose which values to use (3). In the manuscript we present the data as percent of total output or input, respectively. Additionally, we provide cell density and pixel density measurements for RV and AAV tracings, respectively. Important: (4) Because of the raw data structure, it is necessary to use ‘sum of percent_total_input or output’. Double-check that the percentages add up to 100% in the grand total fields. For density measurements, please use ‘average of’. (5) Depending on how you want the data to be arranged, drag and drop the fields into either columns or rows window. For example if you are interested in inputs from a region along the anterior-posterior axis, put ‘Bregma’ into either Columns or Rows. Then select the entire pivot table and insert a chart.
 
 While there were some quantitative differences, overall the anterior to posterior extent of the IC connected to largely the same major brain regions and no major brain region was exclusively connected to one but not the other IC regions. We also did not observe marked differences in the connectivity patterns of inhibitory versus excitatory neurons, as both major neuronal cell classes exhibited similar connectivity patterns. However, while both, excitatory and inhibitory cells of all IC subregions received strong intrainsular inputs and inputs from sensory cortices, ordinary one way-ANOVAs, performed for each brain region separately, revealed that specifically the prefrontal (F(2,6) = 7.610, *p=0.0226), motor (F(2,6) = 8.586, *p=0.0174) and association cortices (F(2,6) = 22.16, *p=0.0017) sent significantly different amounts of inputs onto inhibitory neurons of the aIC, the mIC or pIC (Figure 2A, top left; see also Supplementary file 3 for statistics). Tuckey’s posthoc multiple comparisons test showed that aIC received stronger inputs from the prefrontal cortex compared to mIC and pIC (aIC vs. mIC *p=0.0413 and aIC vs. pIC *p=0.0413) and from the motor cortex compared to pIC (*p=0.0185). Associative cortices on the other hand sent stronger inputs onto pIC inhibitory neurons than onto aIC or mIC inhibitory neurons (pIC vs. aIC **p=0.0017 and pIC vs. mIC *p=0.0141). Inputs to mIC were stronger compared to inputs to the aIC (*p=0.0407).
 
@@ -70,7 +110,7 @@ We next assessed the connectivity of the IC with subcortical brain regions. Over
 
 The aIC sent almost one third of its projections to the striatum, while for the mIC and pIC about 10% of the efferents were innervating the striatum. (aIC 32 ± 6% of outputs, as compared to 9 ± 1% for mIC and 11 ± 2% for the pIC). An inverse pattern was observed for the amygdala projections. About 5–7% of the mIC’s and pIC’s efferents were directed to different amygdala subnuclei, while only 1.5% of the aIC efferents were directed to the amygdaloid complex. Given the strong connectivity of the entire IC with important subcortical regions, such as the striatum, the amygdala or the thalamus, we describe the IC connectivity to these major interactions partners in more detail in the following sections.
 
-## IC-amygdala connectivity
+### IC-amygdala connectivity
 
 It has been well established that IC and amygdala are heavily interconnected (Allen et al., 1991; Augustine, 1996; McDonald et al., 1999; Santiago and Shammah-Lagnado, 2005) and many important brain functions, for example in valence processing or emotion regulation and awareness, have been suggested to rely on this anatomical link. However, we still lack a detailed understanding of the functional interplay of IC and amygdala, a network affected across many psychiatric disorders. Recent studies in mice have begun to expose functionally distinct projection pathways between the IC and amygdala (Gehrlach et al., 2019; Lavi et al., 2018; Schiff et al., 2018; Wang et al., 2018). We thus next analyzed the detailed connectivity between the nuclei of the mouse amygdala and the IC.
 
@@ -84,7 +124,7 @@ Interestingly, the APir sent very strong inputs to the IC. Inhibitory neurons of
 
 Concerning the outputs emerging from the IC, we found that for the majority of amygdala subnuclei, the inputs from the IC emerged in a gradient manner with most inputs provided by the pIC, fewer inputs from the mIC and almost no inputs from the aIC. The only exceptions for this trend were the LA, the aBLA, and the EA. (Figure 3C,D). Ordinary one-way ANOVAs revealed significant differences among output strength to the aBMA (F(2,6) = 5.803, *p=0.0396) and APir (F(2,6) = 11.37, *p=0.0091). Posthoc Tuckey’s multiple comparison tests showed that to the APir, outputs were significantly stronger from the pIC than aIC (**p=0.0086) or mIC (*p=0.0365). On the other hand, aBMA received more inputs from the mIC than from the aIC (*p=0.0379).
 
-## IC-striatum connectivity
+### IC-striatum connectivity
 
 The striatum, the main input region of the basal ganglia, is implicated in optimizing behavior through refining action selection, reward- and aversion processing, habit formation and modulating motor responses (Graybiel and Grafton, 2015). Previous work in rodents describing projections to the striatum indicated that the IC targeted the ventral and ventro-lateral striatum, converging with projections from piriform cortex (Pir), medial prefrontal cortex (mPFC), perirhinal cortex (PERI) and the BLA (Hintiryan et al., 2016; Hunnicutt et al., 2016).
 
@@ -98,7 +138,7 @@ The mIC and pIC also projected to the CPu, but to a much weaker extent than aIC
 
 Taken together, we found a large difference in the innervation of the striatum along the rostro-caudal axis of the insula, with the aIC providing the strongest projections.
 
-## IC-thalamic connectivity
+### IC-thalamic connectivity
 
 We next assessed the third largest subcortical connectivity partner of the IC: the thalamus. Thalamo-cortical projections are thought to be essential drivers of cortical activity in sensory areas and associative brain regions (Hunnicutt et al., 2014). Cortico-thalamic feedback projections stemming from layer 6, in turn, shape thalamic cell activity via monosynaptic and disynaptic connections (Crandall et al., 2015). The function of cortical regions has often been inferred by characterizing the type of thalamic input they receive (Sherman and Guillery, 2006).
 
@@ -110,9 +150,17 @@ The afferent connectivity to the aIC originated mainly from higher-order associa
 
 As expected from thalamo-cortical pathways (Hunnicutt et al., 2014), IC outputs reciprocated their thalamic inputs. For example, the aIC strongly and densely innervated the VM, MD and CM, thus putatively closing the thalamo-cortico-thalamic loop. The strongest aIC projection innervated the VM, and these projections tended to be stronger than projections from the mIC or pIC (Figure 5C, right). The pIC strongly and densely innervated the VPC in particular, and had almost no projections to any other thalamic nucleus. Furthermore, there was a significant difference found by one-way ANOVA between output strengths to the VP (F(2,6) = 9.316, *p=0.0145). Overall, the VP received its strongest inputs from the pIC and much less input from aIC (*p=0.0224) or mIC (*p=0.0260) (Figure 5C, right).
 
-## Bidirectional connectivity
+### Bidirectional connectivity
 
 We next investigated the reciprocity of the IC connectivity with other brain areas by correlating inputs to excitatory neurons with their respective outputs (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/55585/elife-55585-fig6-v2.jpg)
+
+**Figure 6.:** The global dataset was further subdivided into subregions of higher specificity (see Figure 2—figure supplements 1–3). (A) The average value for each excitatory input and output was correlated for the three IC subregions. Data is divided into cortical (left panels) and subcortical (right panels) regions. Subregions that lacked both input and output neurons are not included in the graphs. Note the high correlation in the cortical connectivity as compared to the connectivity in the subcortex for all datasets (r = Pearson’s correlation coefficients). (B) Heatmaps showing fold-difference between inputs to outputs per brain subregion for each IC target. Green gradient represents connectivity characterized by stronger inputs to the IC from target regions, blue gradient represents connectivity characterized by stronger projections from the IC to target regions. Subregions where no signal was detected for both input and output conditions were omitted. Data shown as ratio from the average of three mice per condition per IC subregion. The meaning of the abbreviations can be found in Supplementary file 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55585/elife-55585-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Correlation data is divided into cortical (left panels) and subcortical (right panels) regions. The average value for each inhibitory input and output was correlated for the three IC subregions.
 
 We first assessed the reciprocity of the connections between the IC and other cortical regions. We found a significant correlation for the connectivity of the mIC and pIC with other cortical regions and a strong trend for correlation for the mIC with other cortical regions. Thus, the IC was mostly bidirectionally connected to many other cortical regions.
 
@@ -122,7 +170,7 @@ This analysis revealed, that amongst the amygdala subnuclei, the CeA was strongl
 
 However, this analysis did not address reciprocity of connectivity at the level of single neurons but rather brain regions. Thus, inhibitory neurons in the IC could receive inputs from a brain region that is densely innervated by IC axons. For this reason, we also compared reciprocity of connections for inhibitory neurons (Figure 6—figure supplement 1). In line with the finding that we detected very few overall differences between excitatory and inhibitory cell connectivity, this analysis revealed very similar results as shown in Figure 6A for excitatory neurons.
 
-## Comparison of input and output distributions
+### Comparison of input and output distributions
 
 Throughout our analyses, we have seen distinctions arising between the three IC subregions we targeted. To test whether these observations represent meaningful differences, we correlated in an unbiased manner all input tracings to each other (including inhibitory and excitatory connectivity experiments). We additionally performed the same analysis for all output tracings. We compared the 17 major brain regions in a pairwise fashion and hierarchically clustered the correlation coefficients (Figure 7 and Materials and methods). Overall, there was a high degree of similarity for the input-input comparisons (average correlation coefficients of 0.7 ± 0.16), and, to a lesser extent, for the output-output comparison (average correlation coefficients of 0.45 ± 0.28). However, for both inputs and outputs, two distinct clusters did form, separating the aIC tracings from a grouped mIC/pIC pool. Furthermore, for both inputs and output correlations (Figure 7A,B), the mIC and pIC tracings were so similar that they did not fall into separate clusters. Indeed, the relative location of the starter cell population (left columns, green gradient) did not lead to a separate clustering of mIC and pIC targeted tracings. Finally, for the input data, there was no correlation separating excitatory and inhibitory tracings, supporting our conclusions stated earlier that the IC afferents for these two cell types is similar.
 
@@ -178,23 +226,166 @@ Taken together, our dataset combined with functional studies suggest that the in
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Camk2a-Cre</td>
+      <td>https://www.jax.org/strain/005359</td>
+      <td>IMSR Cat# JAX:005359, RRID:IMSR_JAX:005359</td>
+      <td>B6.Cg-Tg(Camk2a-cre) T29-1Stl/J</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>GAD2-Cre</td>
+      <td>https://www.jax.org/strain/010802</td>
+      <td>IMSR Cat# JAX:010802, RRID:IMSR_JAX:01002</td>
+      <td>Gad2tm2(cre)Zjh/J</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler 3.0.0</td>
+      <td>https://cellprofiler.org/</td>
+      <td>CellProfiler Image Analysis Software, RRID:SCR_007358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>Fiji is just ImageJ, NIH (https://imagej.net/Fiji)</td>
+      <td>Fiji, RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Autonomous_neuron_ detection.ijm</td>
+      <td>This paper, GitHub (https://github.com/GogollaLab/ tracing_quantification_and_analysis/ blob/master/autonomous_ neuron_detection.ijm)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Counting_RV.ijm</td>
+      <td>This paper, GitHub (https://github.com/GogollaLab/ tracing_quantification_and_analysis/ blob/master/counting_RV.ijm)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Roi_set_atlas</td>
+      <td>This paper, GitHub (https://github.com/GogollaLab/ tracing_quantification_and_analysis/ tree/master/ROI_set_atlas)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica Application Suite X 3.3.0.16799</td>
+      <td>https://www.leica-microsystems.com/ products/microscope-software/ details/product/leica-las-x-ls/</td>
+      <td>Leica Application Suite X, RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Autonomous_pixel_ detection.ijm</td>
+      <td>This paper, GitHub (https://github.com/GogollaLab/ tracing_quantification_and_analysis/ blob/master/autonomous_ pixel_detection.ijm)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Counting_AAV.ijm</td>
+      <td>This paper, GitHub (https://github.com/GogollaLab/ tracing_quantification_and_analysis/ blob/master/counting_AAV.ijm)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.6</td>
+      <td>http://www.python.org/</td>
+      <td>Python Programming Language, RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Analysis_RV.py</td>
+      <td>This paper, GitHub (https://github.com/GogollaLab/ tracing_quantification_and_analysis/ blob/master/analysis_RV.py)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Analysis_AAV.py</td>
+      <td>This paper, GitHub (https://github.com/GogollaLab/ tracing_quantification_and_analysis/ blob/master/analysis_AAV.py)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software, CA (https://graphpad.com)</td>
+      <td>GraphPad Prism, RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV2/5-EF1a-DIO-eYFP</td>
+      <td>UNC Vector Core https://www.med.unc.edu/ genetherapy/vectorcore/</td>
+      <td>In-Stock AAV Vectors – Dr. Karl Deisseroth, 100 ul Aliquots</td>
+      <td>5.6 × 1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV2/8-EF1a-FLEX- TVA-mCherry</td>
+      <td>UNC Vector Core https://www.med.unc.edu/ genetherapy/vectorcore/</td>
+      <td>In-Stock AAV Vectors – Dr. Karl Deisseroth, 100 ul Aliquots</td>
+      <td>4.2 × 1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV2/8-CA-FLEX-RG</td>
+      <td>UNC Vector Core https://www.med.unc.edu/ genetherapy/vectorcore/</td>
+      <td>In-Stock AAV Vectors – Dr. Karl Deisseroth, 100 ul Aliquots</td>
+      <td>2.5 × 1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SAD∆G-eGFP(EnvA)</td>
+      <td>UNC Vector Core https://www.med.unc.edu/ genetherapy/vectorcore/</td>
+      <td>In-Stock AAV Vectors – Dr. Karl Deisseroth, 100 ul Aliquots</td>
+      <td>3 × 108 ffu/ml</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Mice between 2 and 6 months of age were used in accordance with the regulations from the government of Upper Bavaria (Animal license AZ: 55.2-1-54-2532-56-2014). Camk2a-Cre (B6.Cg-Tg(Camk2a-cre)T29-1Stl/J) mice were used for both retrograde rabies virus tracings and anterograde axonal tracings. Retrograde rabies virus tracings were also performed in Gad2-Cre (Gad2tm2(cre)Zjh/J) mice. Both female and male mice were employed (Fig S1c). For controls, we used male C57Bl6\NRj mice. All mice group housed 2–4 mice/cage and were kept on an inversed 12 hr light/dark cycle (lights off at 11:00 am). Mice were provided with ad libitum access to standard chow and water.
 
-## Viral constructs
+### Viral constructs
 
 Unless otherwise stated, the following constructs were obtained from the UNC Vector Core (Gene Therapy Center, University of North Carolina at Chapel Hill, USA). For anterograde tracings AAV2/5-EF1α-DIO-eYFP (5.6 × 1012 vg/ml) was used. For retrograde rabies virus tracings AAV2/8-EF1α-FLEX-TVA-mCherry (4.2 × 1012 vg/ml), AAV2/8-CA-FLEX-RG (2.5 × 1012 vg/ml), and G-deleted EnvA-pseudotyped rabies virus -eGFP (SAD∆G-eGFP(EnvA)) (3 × 108 ffu/ml), were prepared as described before (Gehrlach et al., 2019; Wickersham et al., 2007b).
 
-## Surgeries
+### Surgeries
 
 Anesthesia was initiated with 5% isoflurane and maintained at 1–2.5% throughout surgery. Metamizol (200 mg/kg, s.c., WDT, Garbsen, Germany) was injected for peri-operative analgesia and carprofen (s.c., 5 mg/kg, once daily for 3 days, Zoetis) for post-operative pain management. Mice were secured in a stereotaxic frame (Stoelting, IL), placed on a heating pad (37°C) and eye ointment (Bepanthen, Bayer) was applied. For viral infusions, pulled glass-pipettes were attached to a microliter syringe (5 µL Model 75 RN, Hamilton, NV) using a glass needle compression fitting (#55750–01, Hamilton), mounted on a syringe pump controlled by a microcontroller (UMP3 + micro4, WPI). After trepanation of the skull, mice were unilaterally injected with 100–150 nL of a 6:1 (RG: TVA) mixture of helper-viruses. The following coordinates (mm from Bregma) were used: for anterior IC: AP: +1.9 mm, ML: + or - 2.7 mm, DV: −3.0 mm. For medial IC: AP: 0.7 mm, ML: + or – 3.7 mm, DV: −4.0 mm. For posterior IC: AP: −0.5 mm, ML: + or – 4.05 mm, DV:- 4.0 mm. The trepanation was sealed with bone wax and the skin sutured. After 3–4 weeks, 350 nL of SAD∆G-eGFP(EnvA) was injected into the same coordinates. Mice were sacrificed 7 days after infusion of the rabies virus. For axonal AAV-tracings in Camk2a-Cre mice, AAV2/5-EF1α-DIO-eYFP (80–100 nl) was injected unilaterally into either the aIC, mIC or pIC coordinates mentioned above. Mice were sacrificed 4 weeks after the injections.
 
-## Histology
+### Histology
 
 Animals were anesthetized with ketamine/xylazine (100 mg/kg and 20 mg/kg BW, respectively, Serumwerk Bernburg) and perfused intra-cardially with 1x PBS followed by 4% paraformaldehyde (PFA) in PBS. Brains were post-fixed for an additional 24 hr in 4% PFA at 4°C. Brains were embedded in agarose (3% in Water) and 70 µm coronal sections were cut with a VT1000S vibratome (Leica Biosystems). Every second section, ranging between approximately +2.65 to −6.2 mm from Bregma, was mounted on glass slides using a custom-made mounting medium containing Mowiol 4–88 (Roth, Germany) as described elsewhere (Mowiol mounting medium, 2006) with 0.2 mg/mL DAPI (Sigma-Aldrich, MO).
 
-## Imaging
+### Imaging
 
 Slides containing rabies virus tracings were imaged using a 5x/0.15 NA objective on an Axioplan2 epifluorescent microscope (Zeiss, Jena, Germany) equipped with a Ludl controllable stage (Visitron Systems, Puchheim, Germany), a CoolSnapHQ2 CCD camera (Teledyne Photometrics, AZ), and orchestrated by µManager 2.0 beta software (Edelstein et al., 2014). Excitation was provided by an X-cite halogen lamp (Excelitas Technologies, MA) with 350/50x (DAPI) and 470/40x (eGFP) filter cubes.
 
@@ -202,7 +393,7 @@ Axonal AAV tracings were imaged on an SP5 or SP8 laser scanning confocal microsc
 
 Starter volumes for RV tracings were determined by imaging sections covering the injection site with an SP5 microscope using the 10x objective. 10 z-stacks of 7 μm step-size through each section were acquired. For AAV starter cells, sections covering the injection site were imaged as a single plane on the epifluorescent microscope with a 5x objective.
 
-## Starter volume detection
+### Starter volume detection
 
 Both RV and AAV starter cell volumes were determined semi-automatically using CellProfiler 3.0.0 (Kamentsky et al., 2011). For each image, a set of ROIs were defined for the insular and adjacent regions present. For RV images, rabies-virus-positive cells were detected in the eGFP image, and the corresponding cell objects masked over the mCherry (TVA) image. mCherry signal was then detected and back-related to the eGFP+ cell. The individual double-positive cells were traced through the z-stacks and related to their corresponding ROI. For AAV images, eYFP+ cell bodies were segmented and related to their corresponding ROI.
 
@@ -210,7 +401,7 @@ To determine starter cell volumes per cortical layer, ROIs were defined for the 
 
 To address the potential issue that starter cell spillover into brain regions neighboring the IC could affect our data, we compared starter cell distributions between all three brains of each condition. We quantified the percentage of spillover into the piriform cortex (Pir) and motor and sensory cortex (M/S). We then compared the connectivity patterns of the brains with the least amount/absent spillover and the brain with the highest amount of spillover. Only brains that did not show differences to brains without spillover were included in this study. Overall, we excluded two brains where starter cell populations were clearly detected outside the IC and that would have shown different connectivity patterns, and three brains that did not yield strong starter cell populations.
 
-## Monosynaptic retrograde rabies virus tracing
+### Monosynaptic retrograde rabies virus tracing
 
 All image processings were performed in FIJI (Figure 1—figure supplement 4A). Collated images for each brain section were stitched to a single image with the Grid/StitchCollection plugin. Autonomous detection of labeled neurons was performed using a customized macro script. eGFP images were background subtracted (rolling ball, pixel width 20), and the eGFP+ cell bodies detected using Trainable Weka Segmentation (University of Waikato, New Zealand), trained on a small subset of images for each tracing. For training of the classifier, images from a single brain with different amounts of eGFP+ cell bodies and noise were used. After background subtraction, the Trainable Weka Segmentation classifier was retrained until it reliably picked up the cell bodies in the subsets of images used for training. The settings obtained through this process were applied for autonomous eGFP+ neuron detection in which segmented images were binarized and a watershed segmentation run (https://github.com/GogollaLab/tracing_quantification_and_analysis/blob/master/autonomous_neuron_detection.ijm). To count labeled neurons and assign them to a brain region, a second customized macro script was used on the binary image (https://github.com/GogollaLab/tracing_quantification_and_analysis/blob/master/counting_RV.ijm).
 
@@ -220,17 +411,25 @@ For each section to analyze, we first determined the distance from Bregma, takin
 
 The number of positive cells was determined using the ‘Analyze Particles’ plugin (size = 70–1000, circularity = 0.30–1.0). Data output was calculated as cell counts for a given ROI normalized to the total cell counts for the individual brain (% of total input). Additionally, cell density was calculated as total cell number per ROI area. The injection site was excluded from the analysis, to ensure no starter cells are counted as input cells.
 
-We calculated the relative difference between three individual human counts as:RPD1=| (human count1−human count2−human count3)(human count1+human count2+human count3)/3 |
+We calculated the relative difference between three individual human counts as:
 
-We tested the performance of our semiautomated approach compared to the average human counts by:RPD2=| (average human count−automated count)(average human count+automated count)/2 |
+$$
+RPD_{1}=| \frac{(human count1−human count2−human count3)}{(human count1+human count2+human count3)/3} |
+$$
+
+We tested the performance of our semiautomated approach compared to the average human counts by:
+
+$$
+RPD_{2}=| \frac{(average human count−automated count)}{(average human count+automated count)/2} |
+$$
 
 We compared the counts of one human in three brains versus the automated approach using the same equation as RPD2.
 
-## Axonal AAV tracing
+### Axonal AAV tracing
 
 Collated images were stitched for each brain section using Leica Application Suite X 3.3.0.16799. Image processing was done in FIJI using customized macro scripts (Figure 1—figure supplement 4B). First, hessian ridge detection and thresholding was performed as described elsewhere (Grider et al., 2006). Threshold settings were determined before running the macro script to ensure equal processing within a sample. Briefly, this results in binary images of the eYFP+ axons while eliminating background fluorescence (https://github.com/GogollaLab/tracing_quantification_and_analysis/blob/master/autonomous_pixel_detection.ijm). These images were then quantified with a second script where, similar to the rabies virus quantification, the custom-made ROI atlas was manually adjusted for every coronal section (https://github.com/GogollaLab/tracing_quantification_and_analysis/blob/master/counting_AAV.ijm). The particle analyzer was used to count pixels. Percent of total output was calculated from the thresholded image, with the eYFP+ pixel count of each ROI normalized to the total of all eYFP+ pixels identified from the individual brain. Additionally, percent innervation density was calculated as the proportion of eYFP+ pixels covering the maximal pixel count for its ROI. Clearly distinguishable passing fiber bundles (such as in the striatum, cerebral peduncles, anterior commissure, internal- and external capsules, and pyramidal tract) were excluded from the analysis. As with the RV tracings, the starter volume was also excluded from all analysis.
 
-## Data collection and statistical analysis
+### Data collection and statistical analysis
 
 Data acquired by RV and AAV tracings was analyzed using a custom-written code in Python 3.6 (see Figure 1—figure supplement 4C and the code found at: https://github.com/GogollaLab/tracing_quantification_and_analysis/blob/master/analysis_RV.py, https://github.com/GogollaLab/tracing_quantification_and_analysis/blob/master/analysis_AAV.py). Cells (for RV) and pixels (for AAV) were grouped in both 17 large brain regions, and the 75 sub-regions thereof. Regions with less than 0.03% connectivity were considered below background threshold, and set to zero. Starter cell volume and artificial signals were excluded before further processing of data. First, total cell count across bregma/ROI and ROI/bregma were calculated. After calculation of cell count, percent input and density/bregma, data was clustered into lower and higher hierarchies. Separate analysis of amygdala, thalamus and striatum was obtained by sorting of the respective ROIs into separate data frames for the creation of pivot tables.
 

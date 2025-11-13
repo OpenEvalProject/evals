@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.25784.001 Successful recognition of partially occluded objects is presumed to involve dynamic interactions between brain areas responsible for vision and cognition, but neurophysiological evidence for the involvement of feedback signals is lacking. Here, we demonstrate that neurons in the ventrolateral prefrontal cortex (vlPFC) of monkeys performing a shape discrimination task respond more strongly to occluded than unoccluded stimuli. In contrast, neurons in visual area V4 respond more strongly to unoccluded stimuli. Analyses of V4 response dynamics reveal that many neurons exhibit two transient response peaks, the second of which emerges after vlPFC response onset and displays stronger selectivity for occluded shapes. We replicate these findings using a model of V4/vlPFC interactions in which occlusion-sensitive vlPFC neurons feed back to shape-selective V4 neurons, thereby enhancing V4 responses and selectivity to occluded shapes. These results reveal how signals from frontal and visual cortex could interact to facilitate object recognition under occlusion.
+Successful recognition of partially occluded objects is presumed to involve dynamic interactions between brain areas responsible for vision and cognition, but neurophysiological evidence for the involvement of feedback signals is lacking. Here, we demonstrate that neurons in the ventrolateral prefrontal cortex (vlPFC) of monkeys performing a shape discrimination task respond more strongly to occluded than unoccluded stimuli. In contrast, neurons in visual area V4 respond more strongly to unoccluded stimuli. Analyses of V4 response dynamics reveal that many neurons exhibit two transient response peaks, the second of which emerges after vlPFC response onset and displays stronger selectivity for occluded shapes. We replicate these findings using a model of V4/vlPFC interactions in which occlusion-sensitive vlPFC neurons feed back to shape-selective V4 neurons, thereby enhancing V4 responses and selectivity to occluded shapes. These results reveal how signals from frontal and visual cortex could interact to facilitate object recognition under occlusion.
 
 ## Introduction
 
@@ -38,7 +38,7 @@ To test this hypothesis, we conducted neurophysiological recordings in rhesus mo
 
 **Figure 1.:** (A) On each trial, monkeys viewed two sequentially presented stimuli: an unoccluded shape (reference) and either an unoccluded or a partially occluded shape (test). Monkeys reported whether the two shapes were the same or different by making a saccade to the right or left choice target, respectively. (B) Monkey performance on example individual sessions (top) and average performance across all sessions (bottom). Performance was near 100% for unoccluded stimuli (100% visible area) and declined gradually for higher occlusion levels (i.e. <100% visible area).
 
-## Responses to partially occluded shapes in ventrolateral prefrontal cortex
+### Responses to partially occluded shapes in ventrolateral prefrontal cortex
 
 To determine how vlPFC contributes to the representation and recognition of partially occluded objects, we studied single neuronal responses in monkeys performing a sequential shape discrimination task. In this task, monkeys reported whether two sequentially presented shapes, the ‘reference’ and ‘test’, were the same or different by making a saccade to one of two choice targets (Figure 1A). To test discrimination under occlusion, the test stimulus was partially occluded with a field of randomly positioned dots. The level of occlusion was titrated by varying dot diameter and was quantified as the percentage of the shape area that remained visible (% visible area). In each session, two shapes were chosen from a standard stimulus set (Pasupathy and Connor, 2001; Kosai et al., 2014) to serve as the discriminanda. For both monkeys, task performance was high for unoccluded stimuli (100% visible area) and decreased gradually as the % visible area decreased (Figure 1B) — that is as occlusion increased (gray arrow).
 
@@ -47,6 +47,18 @@ To determine how vlPFC contributes to the representation and recognition of part
 **Figure 2.:** (A–B) Responses of one neuron to its preferred and non-preferred shape (compare A and B) at different occlusion levels (colors). Responses to unoccluded stimuli were weak (black; gray lines show standard error of the mean) whereas responses to occluded stimuli were stronger (colors). For PSTHs, σ was 10 ms. (C) Neuronal shape selectivity across time for unoccluded (black) and occluded (red) stimuli quantified by a sliding window ROC curve analysis (see Materials and methods). (D–E) Responses of a second vlPFC neuron, showing comparable responses to both shapes (compare D and E). Responses to unoccluded stimuli were weak whereas responses to occluded stimuli were stronger. The test stimulus was extinguished at 600 ms and the elevation in response beyond this time point was due to the saccadic response. (F) Neuronal shape selectivity across time (same format as in C).
 
 We analyzed the responses of vlPFC neurons during the test stimulus epoch in which occlusion level was varied. Many neurons responded strongly to occluded stimuli and weakly to unoccluded stimuli. Data from two example neurons are shown (Figure 2). The responses of the first example neuron demonstrate a preference for one of the two shapes used (compare Figure 2A–B). For both the preferred and non-preferred shape, responses were stronger when the shapes were occluded (colored lines) than unoccluded (black lines). These responses were also more discriminable when the shapes were occluded: shape selectivity was stronger for occluded than unoccluded stimuli (Figure 2C; see Materials and methods). The responses of the second example neuron were also stronger when the shapes were occluded than unoccluded (Figure 2D–F). However, this neuron showed no preference for either of the two shapes used; shape selectivity was therefore weak for occluded and unoccluded stimuli (Figure 2F). The responses of this second example neuron are consistent with sensitivity for the total area or circumference of the occluding dots. In contrast, the responses of the first example neuron are inconsistent with this interpretation because the stronger responses to occluded stimuli were also accompanied by stronger shape selectivity.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig3-v1.jpg)
+
+**Figure 3.:** (A) Normalized average responses (80–230 ms) to preferred shapes across occlusion level (columns). Along the abscissa, % visible area is rank ordered; so each column could represent a different occlusion level for each neuron. From left to right, occlusion level decreases and % visible area increases, with 100% representing the unoccluded case. Neurons were tested with five or six occlusion levels (62/98 and 36/98 neurons, respectively), including the unoccluded case. Responses were normalized by the maximum response for each neuron, separately. For most neurons, responses were weak (blue) for unoccluded stimuli and stronger (yellow) for higher occlusion levels. Responses to the unoccluded stimuli were strongest for only 17/98 neurons. (B) Distribution of linear regression slopes fit to the responses in A. Most neurons (71/98) had negative slopes, indicating stronger responses to occluded stimuli; the median slope was −0.12. (C) Normalized average responses derived from the responses of occlusion-sensitive neurons to the preferred shapes at different occlusion levels. vlPFC neurons were studied at 5–6 oc clusion levels chosen from a set of 9 possible values (100, 99, 95, 90, 82, 72, 59, 45% and 27% visible area). The occlusion levels presented to each neuron was different, and not all neurons were studied at all the occlusion levels listed. The numbers of neurons contributing to each curve are listed in brackets (see Materials and methods). Data for the highest occlusion levels tested (45% and 27% visible area) are not shown because too few neurons contributed to the population average and the curves for these occlusion levels were highly variable. Across the population, responses were weakest to unoccluded stimuli (black) and stronger for intermediate and high occlusion levels. (D) Average shape selectivity as a function of occlusion level. Shape selectivity was weak for unoccluded stimuli (black) at all time points whereas it gradually increased for occluded shapes (colors), reaching maximal values between ~100–300 ms. Also see Figure 3—figure supplement 1 and Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Neurons that are shape-selective but not occlusion-sensitive. (B) All shape-selective neurons. (C) All shape-selective and occlusion-sensitive neurons, that is neurons that carry any task-relevant information. (D) All visually-responsive neurons. Shape and occlusion sensitivity was assessed with a 2-way ANOVA (see Materials and methods for details). Shape selectivity was stronger for shape-selective than occlusion-sensitive neurons (compare panels A–B with Figure 3D) but across all neuronal groups, including neurons not significantly influenced by occlusion (in A), shape selectivity was strongest at intermediate occlusion levels.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Neurons that responded preferentially to stimuli at lower occlusion levels (higher % visible area). (B) Neurons that responded preferentially to stimuli at higher occlusion levels (lower % visible area). Neurons with a positive slope in Figure 3B contributed to the data in (A) whereas neurons with a negative slope contributed to the data in (B). Two patterns are evident. First, even among vlPFC neurons that responded more strongly to unoccluded stimuli, shape selectivity was not stronger for unoccluded stimuli compared to occluded stimuli. Second, vlPFC neurons that preferred higher occlusion levels also carried more information about the occluded shape.
 
 Most of the vlPFC neurons we recorded responded more strongly to occluded stimuli (Figure 3). Of 216 neurons that were visually responsive during the test stimulus epoch (see Materials and methods), 98 neurons (45%) were significantly modulated by occlusion level (2-way ANOVA, p<0.05). The responses of most of these occlusion-sensitive neurons were stronger for higher occlusion levels (Figure 3A). For individual neurons, this observation manifested as a negative linear regression slope between % visible area and the average responses during the test epoch (Figure 3B). Of the 98 occlusion-sensitive neurons, 71 had a negative regression slope; 59 neurons had a slope that was significantly less than zero (p<0.05). For the subset of occlusion-sensitive neurons, normalized responses were also stronger at higher occlusion levels (Figure 3C). The results were also qualitatively similar when all visually responsive vlPFC neurons were included.
 
@@ -60,11 +72,27 @@ The vlPFC results presented thus far differ markedly from what we and others hav
 
 **Figure 4.:** (A–B) Responses (rasters and PSTHs) of one neuron to the preferred shape at different occlusion levels (colors). This neuron had only one transient response peak. Responses were strongest to the unoccluded stimulus (black; gray lines show standard error of the mean) and declined gradually with increasing occlusion level (i.e. lower % visible area). (C–D) Responses of another V4 neuron. This neuron had two transient response peaks (black and red horizontal bars in (D) with different dependence on occlusion level.
 
-## Responses to partially occluded shapes in visual area V4
+### Responses to partially occluded shapes in visual area V4
 
 If feedback signals originating in vlPFC contribute to V4 responses, their influence on V4 would be evident after the onset of vlPFC responses. Additionally, their influence would manifest in V4 as stronger responses for occluded than unoccluded stimuli, consistent with the vlPFC response properties described earlier. Many V4 neurons in our dataset did not show evidence of feedback modulation in their temporal response profiles. The responses of one such example neuron (Figure 4A–B) had a temporal response profile with a single transient response phase (i.e. peak) followed by a sustained response phase. During both the transient and sustained phases, responses were stronger for unoccluded than occluded stimuli, unlike what we observed in vlPFC. However, many other V4 neurons showed a different temporal profile with two transient response peaks – one early and one late – each of which showed a different dependency on occlusion level. The responses of one such example neuron (Figure 4C–D) had two transient response peaks: the first ~82 ms and the second ~150 ms after test stimulus onset. The neuron’s responses during the first peak (Figure 4D, black bar) were strongest for the unoccluded stimulus and declined gradually with increasing occlusion level. In contrast, the neuron’s responses during the second peak (Figure 4D, red bar) were strongest for intermediate occlusion levels.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig5-v1.jpg)
+
+**Figure 5.:** (A–B) PSTHs of responses to the preferred shape at different occlusion levels (colors; same format as in Figure 4B, D). Also see Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** For each neuron, there was a statistically significant increase in response at the time of the second peak relative to the preceding trough (t Test, p<0.05, Bonferroni corrected).
+
 The responses of two other V4 neurons with two peaks are shown (Figure 5). For one neuron (Figure 5A), the first and second peaks occurred ~63 ms and ~191 ms after stimulus onset. For the other neuron (Figure 5B), the first and second peak occurred ~66 ms and ~218 ms after stimulus onset. Additional examples of V4 neurons with two peaks are provided (Figure 5—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig6-v1.jpg)
+
+**Figure 6.:** (A–B) Population-level, normalized PSTHs for 30/85 V4 neurons that showed two transient response peaks (A) and for V4 neurons without two peaks (B), identified using an ad hoc algorithm (see Materials and methods). The numbers of neurons contributing to each curve are listed in brackets. (C) Distribution of the first (black) and second (red) response peak times for V4 neurons with two peaks. (D) Distribution of the latency of peak responses for occlusion-sensitive vlPFC neurons; median latency was 157 ms (diamond). The first and second response peaks in V4 typically occurred before and after the peak response of vlPFC neurons, respectively. Also see Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) We demonstrate this procedure for the responses of an example V4 neuron with two peaks (same data as in Figure 4B). (B) We constructed an average PSTH from the individual PSTHs to each occlusion level (% visible area <100) that evoked strong responses. We then used a zero-crossing algorithm to identify local peaks (filled circles) and an intervening trough (open circles) in the average PSTH, and within 300 ms of test stimulus onset. Small peaks (<50% of the initial transient response; that is y/z < 0.5) and small trough-to-peak modulations (<15% of the local peak magnitude, that is x/y < 0.15) were rejected. For each putative second peak that met these criteria, we asked whether there was a statistically significant increase in response relative to the preceding trough. To do this, we conducted a paired t Test between the average activity in a 30 ms window centered on the putative second peak and on the preceding trough (p<0.05, Bonferroni corrected). For this example neuron, there was one peak (labeled peak 2) that passed the criteria and t Test. (D) Example of neuronal responses where the local maxima in the average PSTH were rejected as candidates for second response peak because the candidate peak was too small relative to the first peak (top, y/z < 0.5) or because the trough-to-peak modulation was too small (bottom, x/y < 0.15). See B for schematic representations of x, y, and z.
 
 We developed an ad hoc peak finding algorithm to identify V4 neurons with and without two transient response peaks (see Materials and methods; Figure 6—figure supplement 1). The algorithm detected the occurrence of two robust transient peaks separated by a sizeable intervening trough, and the results were vetted using statistical tests. Of 85 neurons, 30 neurons (35%; 14 neurons recorded in Monkey O and 16 neurons recorded in Monkey M) were classified as having two peaks (Figure 6A) and 55 neurons were classified as not having two peaks (Figure 6B). The second response peak was less striking when the responses were averaged across neurons (Figure 6C) due to variability in second peak times for individual neurons (see also Figure 10—figure supplement 6). Across all V4 neurons with two peaks, the timing of the first and second peaks had a broad range, with a median of 84 ms and 214 ms, respectively (Figure 6C). In comparison, across all occlusion-sensitive vlPFC neurons, the peak response occurred later than in V4, 93–581 ms after test stimulus onset, with a median of 157 ms (Figure 6D). Thus, the median peak time in vlPFC straddled the median peak times of the first and second response peaks in V4.
 
@@ -75,6 +103,34 @@ We developed an ad hoc peak finding algorithm to identify V4 neurons with and wi
 If feedback signals from vlPFC contribute to V4 activity during the second response peak, we expect that V4 responses would differ in their dependence on occlusion level over time. We therefore assessed neuronal sensitivity to occlusion during the first and second response peaks in V4. Data from three example V4 neurons are shown (Figure 7A–C). For the first neuron (Figure 7A; same neuron as in Figure 4C–D), responses during the first peak (black) declined gradually as occlusion level increased. In contrast, responses during the second peak were strongest at intermediate occlusion levels. Thus, the difference in responses between the first and second peak (gray) was largest at intermediate occlusion levels. The two other example neurons showed similar results (Figure 7B–C; same neurons as in Figure 5A–B, respectively): the difference in responses between the first and second peak was larger for occluded stimuli than unoccluded stimuli for both neurons.
 
 We compared the first and second peak responses for V4 neurons with and without two peaks. For both groups of neurons, responses during the first peak (69–99 ms) declined gradually as occlusion level increased. There was no significant difference between neurons with and without two peaks in their responses during the first peak at any occlusion level (t Test, p>0.1). However, later in the test stimulus epoch (199–229 ms), around the time of the second peak, the responses of the two groups of neurons had different trends. For neurons with two peaks, the difference in responses between the first and second peak was largest for intermediate occlusion levels and small for unoccluded stimuli and high occlusion levels (Figure 7D, dark gray). Thus, the response difference curve had an inverted U shape, as seen for the example neurons (compare dark gray curves, Figure 7A–D). In contrast, for neurons without two peaks, the difference in responses between the two time points was small and similar in magnitude across all occlusion levels (Figure 7D, light gray). The difference in responses between the first and second peaks was significantly greater for neurons with two peaks than other neurons at intermediate occlusion levels (compare curves in 7D; t Test, p<0.05, asterisks). This finding is explained by the observation that V4 neurons without two peaks had responses that declined gradually over time, for all occlusion levels (Figure 6B). In contrast, neurons with two peaks showed a relative increase in responses to occluded stimuli during the second peak (Figure 6A), a pattern that mirrored the responses of occlusion-sensitive neurons in vlPFC.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig8-v1.jpg)
+
+**Figure 8.:** (A–B) Time course of average shape selectivity for unoccluded (black) and occluded (colors) stimuli for V4 neurons with two peaks (A) and V4 neurons without two peaks (B). For unoccluded stimuli (black), the time course and magnitude of shape selectivity were similar for the two neuronal groups. For stimuli at intermediate occlusion levels (72–95% visible area), shape selectivity was stronger and reached a maximal value later for neurons with two peaks (compare corresponding colors in A and B, also see Figure 8—figure supplement 1). (C) For most neurons with two peaks, shape selectivity at the time of the second peak (ordinate) was stronger than during the first peak (abscissa). Shape selectivity for occluded stimuli was significantly higher during the second peak than during the first peak (t Test, p<0.01). We computed shape selectivity using ROC analysis across all occlusion trials (i.e. % visible area <100) based on spike counts in a 30 ms window centered around the times of the first and second peaks, respectively (also see Figure 8—figure supplement 2). (D–E) For neurons with two peaks, the time of the second peak (gray) is compared to the time of maximal shape selectivity (black and red), separately for unoccluded (black, D) and occluded stimuli (red, E). Shape selectivity for unoccluded stimuli reached a maximal value significantly earlier than the second peak (t Test, p<0.01); this was not the case for occluded stimuli (t Test, p=0.98). Also see Figure 8—figure supplements 3–6.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Each panel shows shape selectivity as a function of time for unoccluded stimuli (black) and for stimuli at different occlusion levels (colors). Data are shown separately for neurons with (solid) and without (dashed) two peaks. At intermediate occlusion levels (blue to yellow), shape selectivity was stronger and reached a maximal value later for V4 neurons with two peaks, close to the median of second peak times (~214 ms). These data are as in Figure 8A–B, and replotted to facilitate direct comparison between neuronal groups.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Change in shape selectivity (second peak – first peak, ordinate) is plotted against the relative response amplitude (second peak/first peak, abscissa; same as y/z, see Figure 6—figure supplement 1B). For each peak, shape selectivity and response amplitude were measured during a 30 ms window centered on the second peak. Most neurons (24/30; black) showed an increase in shape selectivity during the second peak; this enhanced selectivity was observed even for neurons that responded more weakly during the second peak than the first, that is the relative amplitude of the second peak, y/z < 1.0. (B) Relative amplitude during the second peak for preferred (abscissa, as in A) and non-preferred stimuli (ordinate). For most neurons with increased shape selectivity during the second peak (black), the relative amplitude of the second peak was larger for the preferred than non-preferred stimuli. Neurons with decreased shape selectivity during the second peak (gray) lie close to, or above the diagonal. Thus, shape selectivity increased during the second peak, in large part because the size of the second peak relative to the first peak was smaller for non-preferred than preferred stimuli.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** The amplitude of the putative second peak relative to the initial transient (y/z, see inset) is plotted against the size of the trough-to-peak modulation (x/y) for 42 neurons that had a second peak with a sizable amplitude and trough-to-peak modulation (i.e. for neurons with y/z > 0.5 and x/y > 0.15; see Figure 6—figure supplement 1B for details). Thirty neurons that also passed the statistical test are shown in black. Dotted lines indicate alternative threshold criteria for the peak amplitude and modulation parameters used in Figure 8—figure supplement 4 to classify neurons as having two peaks.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig8-figsupp4-v1.jpg)
+
+**Figure 8—figure supplement 4.:** Population PSTHs (A, C, E, G) and average shape selectivity plots (B, D, F, H) for neurons with and without two peaks based on alternative parameter choices. Threshold criteria were: y/z > 0.75 and x/y > 0.25 for (A–D) and y/z > 1.0 and x/y > 0.25 for (E–H) (see Figure 8—figure supplement 3). In both cases, the second peak had to show a statistically significant increase in responses relative to the preceding trough (p<0.05, Bonferroni corrected). In (A–D) and (E–H), 26/85 and 16/85 neurons were classified as having two peaks. In both cases, results were similar to those shown in Figures 6 and 8. The median peak times for the second peak were 201 ms (A) and 196 ms (E). Shape selectivity was stronger and more delayed for neurons with two peaks.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig8-figsupp5-v1.jpg)
+
+**Figure 8—figure supplement 5.:** (A) Responses of an example neuron with two peaks (same data as in Figure 4B). (B) Responses of an example neuron without two peaks (same data as in Figure 4D). (C–D) Response predictions of a linear model (dotted lines) and the residuals (solid lines), derived from the responses in (A–B), as described below. Responses to stimuli at different occlusion levels were modeled as gain modulations of responses to unoccluded stimuli (black lines) using the following equation. $r(u,t)=k(u)\timesr(u=100,t)$ where r is the response as a function of occlusion level u and time t. k is a scalar value that specifies the response gain. For each occlusion level, we estimated k using a linear regression between the responses to occluded and unoccluded stimuli in the interval 65–150 ms. For the V4 neuron whose responses are shown in A, the predicted responses provide a good match to the observed responses and the residuals are low. This implies that the neuron’s temporal response profile is similar across occlusion levels up to a multiplicative scale factor, and that the dynamical response has a stereotypic trajectory with a single input parameter k(u). This result suggests that the dependence of this neuron’s responses on occlusion level is governed by its earliest input signals and that this relationship is stationary during the test stimulus epoch. For the V4 neuron whose responses are shown in (B), the predicted responses do not provide a good match to the observed data. The residuals are large and positive: they reach a maximal value around 150 ms, and are strongest for intermediate occlusion levels. Thus, a good minimal description of the dynamical response trajectories can be obtained by including an additive term that is stronger for occluded than unoccluded stimuli. Specifically. $r(u,t)=k(u)\timesr(u=100,t)+f(u,t)$ where f(u,t) is given by the residual (in D). This result is consistent with the possibility that the additive input given by f(u,t) is derived from vlPFC inputs because f(u,t) emerges (~150 ms) after response onset in roughly half the PFC neurons, and that f(u,t) is stronger for responses to occluded than unoccluded stimuli as in vlPFC.
+
+![Figure 8—figure supplement 6.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig8-figsupp6-v1.jpg)
+
+**Figure 8—figure supplement 6.:** (A) Scatter plot of the sum of residuals (ordinate) derived from the predictions of the gain-modulation model versus the relative amplitude of the second peak (y/z, same as abscissa in Figure 8—figure supplement 3) for neurons with (black) and without (gray) two peaks. Neuronal classifications were based on the peak-finding algorithm. Of the neurons classified as having one transient response peak (gray), 43 neurons did not have a candidate second peak with a sizable amplitude and trough-to-peak modulation and are therefore assigned y/z = 0; 12 neurons that did have a candidate second peak with y/z > 0.5, did not pass the statistical criterion. We fit the linear gain-modulation model as described in Figure 8—figure supplement 5 and summed the residuals in the time window 45–600 ms after test stimulus onset, allowing for V4 response latency. For 43 neurons that had no candidate second peak in their responses, y/z = 0. For most neurons with two peaks (black dots), the sum of the residuals was >0. The average sum of residuals (diamonds) was significantly greater (t Test, p<0.05) for neurons with two peaks. (B) We examined the time course of the residuals for 25 neurons with the highest summed residuals, that is those neurons above the dashed line in (A). These are neurons with stronger responses to occluded stimuli than expected based on multiplicative scaling of the initial transient in response to unoccluded shapes. Of these 25 neurons, 17 were classified as having two peaks (by the peak-finding algorithm), a significantly greater proportion than expected by chance (Binomial test, p<0.01). The average residual across these 25 neurons (white line) reached a maximal value at 208 ms, close to the median time of the second peak (Figure 6C). (C–F) Population PSTHs and shape selectivity for the 25 neurons in B, showing similar results to those in Figures 6 and 8.
 
 To quantify how shape selectivity evolves during the test stimulus epoch, we examined average neuronal shape selectivity across time for unoccluded and occluded stimuli for V4 neurons with two peaks (Figure 8A) and those without (Figure 8B). For unoccluded stimuli (black lines), shape selectivity was similar in magnitude and time course for the two groups, reaching a maximum value at ~120 ms. For occluded stimuli (colored lines), shape selectivity was similar for the two groups (t Test, p=0.6) early in the test stimulus epoch, around the time of the first peak (69–99 ms). However, shape selectivity for neurons with two peaks was significantly stronger (t Test, p<0.01) later in the test stimulus epoch, around the time of the second peak (199–229 ms). This is because for neurons with two peaks, shape selectivity for occluded stimuli increased over time and reached a maximal value closer to the time of the second peak (Figure 8—figure supplement 1).
 
@@ -88,19 +144,47 @@ Collectively, these results support the hypothesis that occlusion-sensitive sign
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig9-v1.jpg)
 
-**Figure 9.:** The two-layer dynamical network model includes two V4 units (1 and 2) and two vlPFC units (1 and 2). The V4 units prefer two different shapes. Each vlPFC unit receives inputs from both V4 units; the shape preference of a vlPFC unit is determined by the preference of the V4 unit that provides the stronger input. V4 units receive feedforward input from upstream visual areas denoted by  and feedback from both vlPFC units denoted by uFFiIn this notation, uPFC(j)i.i indexes the recipient unit and j indexes the sender unit. Feedback inputs are passed through a rectifying nonlinearity prior to arrival in V4. Each vlPFC unit receives feedforward inputs from both V4 units, denoted by (), as well as a modulatory signal,uV4(j)i, that depend on occlusion level (for modeling details, see Materials and methods).f-
+**Figure 9.:** The two-layer dynamical network model includes two V4 units (1 and 2) and two vlPFC units (1 and 2). The V4 units prefer two different shapes. Each vlPFC unit receives inputs from both V4 units; the shape preference of a vlPFC unit is determined by the preference of the V4 unit that provides the stronger input. V4 units receive feedforward input from upstream visual areas denoted by $u_{FF}^{i}$ and feedback from both vlPFC units denoted by $u_{PFC(j)}^{i}.$In this notation, i indexes the recipient unit and j indexes the sender unit. Feedback inputs are passed through a rectifying nonlinearity prior to arrival in V4. Each vlPFC unit receives feedforward inputs from both V4 units, denoted by ($u_{V4(j)}^{i}$), as well as a modulatory signal,$f-$, that depend on occlusion level (for modeling details, see Materials and methods).
 
-## A model of V4–vlPFC interactions
+### A model of V4–vlPFC interactions
 
 To demonstrate the plausibility of feedback signals from vlPFC contributing to V4 responses to occluded stimuli, we constructed a two-layer dynamical model of V4 and vlPFC interactions (Figure 9; see Materials and methods). In this model, shape-selective V4 units send feedforward inputs to vlPFC units (Figure 9, light gray arrows). The shape preference of each vlPFC unit is inherited from the V4 unit which provides the strongest input. vlPFC units also receive a gain modulation signal that increases with increasing occlusion level (dashed box), imparting a preference for occluded stimuli that is not observed in the feedforward V4 inputs to vlPFC. Additionally, vlPFC units send feedback inputs onto V4 units (medium gray arrows) with connection strengths that are proportional to the feedforward signals from each V4 unit. Importantly, feedback signals from vlPFC first pass through a rectifying nonlinearity prior to their arrival in V4 (Equation 7, Materials and methods). The vlPFC feedback signals contribute to two key response features of the V4 units: a second transient response peak and a dynamic preference for occlusion level over the test stimulus epoch.
 
+![Figure 10.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig10-v1.jpg)
+
+**Figure 10.:** (A) Input to a V4 unit, $u_{FF}^{1}$, when its preferred stimulus was presented at different occlusion levels (colors). The input was strongest for the unoccluded stimulus (black) and declined gradually with increasing occlusion level. (B) Responses of a vlPFC unit. Responses were weak for the unoccluded stimulus and stronger for occluded stimuli. (C) Responses of a V4 unit receiving feedback from the vlPFC unit (in B) showing two transient peaks. Also see Figure 10—figure supplements 1–6.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** (A) To demonstrate the necessity of feedback from vlPFC to V4, we set $u_{PFC(j)}^{i}=0,$ for all i and j (see Equation 7 in Methods and materials). With only feedforward connections from V4 to vlPFC, the responses of the V4 unit (left) did not show a second transient peak. (B) To demonstrate the necessity of synaptic adaptation on the feedforward connections from V4 to vlPFC, the feedforward connection weights from V4 to vlPFC ($w_{wff}$and $w_{sff})$ were set to be constant over time (see Equation 9, Materials and methods). This resulted in ‘ringing’ and ‘blow up’ of V4 (left) and vlPFC (right) responses. (C) To demonstrate the necessity of gain-modulation, we set, $f-_{PFC}=30$ (Equation 6, Materials and methods). In this case, vlPFC unit responses and V4 unit responses during the second peak resembled those during the first peak in V4: responses were strongest for unoccluded stimuli and declined with increasing occlusion level.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig10-figsupp2-v1.jpg)
+
+**Figure 10—figure supplement 2.:** (A) When we excluded the thresholding and half-wave rectification on the feedback from vlPFC to V4 (see Equation 7, Materials and methods), our simulations produced a large second peak in V4 unit responses both to preferred (left) and to non-preferred stimuli (middle). Thus, without rectification, the model fails to reproduce the enhanced shape selectivity for occluded stimuli during the second peak (right). (B) When thresholding and half-wave rectification are included, a large second peak is observed only in V4 unit responses to the preferred shape (left), and shape selectivity for the occluded stimuli is enhanced at the time of the second peak (right). To compute shape selectivity, we first generated Poisson spikes on 1000 trials, within a 30 ms window centered on the first and the second peaks for responses to both the preferred and non-preferred shapes. We then constructed spike-count distributions and used the area under the ROC curve to compute shape selectivity, as was done for the neuronal data (see Materials and methods).
+
+![Figure 10—figure supplement 3.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig10-figsupp3-v1.jpg)
+
+**Figure 10—figure supplement 3.:** To consider the possibility that gain modulation signals carrying information about occlusion level ($f-_{PFC}$, see Figure 9) may be communicated via feedforward signals from IT cortex to vlPFC, we tested the effect of delays of 10 ms (A), 20 ms (B) and 50 ms (C) on the arrival of gain modulation signals relative to the arrival of feedforward shape-selective signals from V4. By increasing this delay, the peak time of vlPFC responses and the second peak in V4 were slightly delayed, but in all three cases, our simulations produced robust second peak in the V4 unit.
+
+![Figure 10—figure supplement 4.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig10-figsupp4-v1.jpg)
+
+**Figure 10—figure supplement 4.:** We varied the shape selectivity of vlPFC neurons by modifying the relative strengths of feedforward connections from the two V4 units (see parameters listed in A–C). For all three sets of parameters, V4 unit shape selectivity during the first peak (black) was strongest for the unoccluded shape and declined gradually for higher occlusions, as observed in the neuronal data. vlPFC shape selectivity (gray) was strongest for intermediate levels of occlusion, consistent with the neuronal data. vlPFC shape selectivity was weaker overall when the weights for the two V4 units were comparable (in C) and this resulted in a smaller second response peak in the V4 unit. However, in all three cases (A–C), V4 shape selectivity for the occluded shape was enhanced during the second peak. These simulations confirm that the model produces similar results for a range of vlPFC shape selectivity indices. In all cases, feedback connection strengths were proportional to feedforward connection strengths.
+
+![Figure 10—figure supplement 5.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig10-figsupp5-v1.jpg)
+
+**Figure 10—figure supplement 5.:** (A) Varying feedback connection strength produces second response peaks of different magnitude; stronger feedback produced larger peaks. (B) Varying synaptic delay produces second response peaks at different delays relative to the first peak. These simulations confirm that our model can generate the diversity of responses observed in the neuronal data.
+
+![Figure 10—figure supplement 6.](https://cdn.elifesciences.org/articles/25784/elife-25784-fig10-figsupp6-v1.jpg)
+
+**Figure 10—figure supplement 6.:** We generated sets of parameters with varied feedback delays ($\tau_{d,fb}=20-80$ms), feedforward synaptic strengths between V4 and PFC units sharing the same shape preferences ($w_{∞,sff}=0.4-0.6$) and different shape preferences ($w_{∞,wff}=0-0.2$), and feedback synaptic strengths ($w_{∞,sfb}=0.1-1.3$;$w_{∞,wfb}=w_{∞,sfb}w_{∞,wff}/w_{∞,sff}$). Varying these parameters produced V4 model unit responses with heterogeneous peak magnitudes and peak times; averaging across these units produced population results that resemble the neuronal population data in Figure 6A. Specifically, the second response peak was less striking than in the responses of individual V4 units (Figure 10—figure supplement 5) due to variability in second peak times for individual neurons consistent with neuronal data.
+
 To demonstrate model performance, we present data for a simulated V4 and vlPFC unit (Figure 10). In the model, feedforward input to the V4 unit is modulated both by shape and occlusion level (Figure 10A): it is strongest when the preferred shape is unoccluded and is progressively weaker for higher occlusion levels. This pattern is consistent with our V4 neuronal data and captures responses during the first peak for V4 neurons with two peaks, as well as the responses of V4 neurons without two peaks. Occlusion-dependent gain modulation of feedforward input from V4 produced vlPFC unit responses that were weak to unoccluded stimuli and stronger to occluded stimuli (Figure 10B). Furthermore, the V4 unit receiving feedback signals from vlPFC had two transient response peaks: one earlier and one later than the response peak of the vlPFC unit (Figure 10C). The V4 unit’s responses during the first peak were strongest for the unoccluded stimulus and declined with increasing occlusion level. In contrast, the V4 unit’s responses during the second peak were strongest at intermediate occlusion levels. Thus, the response dynamics generated by this V4–vlPFC interaction model successfully recapitulated the dynamics observed in our neuronal recordings (Figures 2 and 4).
 
-## Parsimonious model construction
+### Parsimonious model construction
 
 Our model was constructed to include only the minimal set of mechanisms that were needed to account for the main features of the neurophysiological data. We started with the simplest feedforward model composed of two V4 units and two vlPFC units, and we included four mechanisms to achieve the desired dynamics in V4 and vlPFC responses: (1) feedback from vlPFC to V4; (2) synaptic adaptation in the feedforward inputs from V4 to vlPFC; (3) half-wave rectification of feedback signals from vlPFC to V4; (4) occlusion-dependent gain modulation input to vlPFC. We included feedback from vlPFC to V4 because a network with only feedforward connections from V4 to vlPFC units cannot generate the second response peak in V4 units (Figure 10—figure supplement 1A). Thus, in our model, feedback from vlPFC to V4 is necessary to reproduce the response dynamics observed in V4. Second, without synaptic adaptation on the feedforward connections from V4 to vlPFC (Equation 9, Materials and methods), the feedforward-feedback loop reinforces activity in V4 and PFC units positively (Figure 10—figure supplement 1B). The resulting ‘ringing’ and ‘blow up’ in simulated model responses are inconsistent with the data, thus arguing for the inclusion of an adaptation mechanism. Indeed, such an adaptation mechanism is often used in models to soften positive feedback loops (e.g. Wei and Wang, 2016). Third, without half-wave rectification of the feedback input from vlPFC to V4 units, the model produces a large second response peak even to presentation of non-preferred stimuli (Figure 10—figure supplement 2), which conflicts with the data (Figure 8—figure supplement 2B). Thus, without half-wave rectification, the enhanced shape selectivity during the second peak in the V4 neuronal data (Figure 8C) is not reproduced by the model. Given that rectifying nonlinearities can occur when synaptic inputs are transformed into output spikes, the model suggests that feedback from vlPFC may arrive in V4 after passing through a synapse. Indeed, anatomical observations of disynaptic feedback connections between V4 and vlPFC exist (Ninomiya et al., 2012). Fourth, when all other mechanisms are in place but the gain modulation is removed, vlPFC responses decrease with increasing occlusion level (Figure 10—figure supplement 1C). Consequently, V4 shape selectivity under occlusion is not enhanced during the second peak. To consider the possibility that gain modulation of vlPFC may be mediated by signals from V4 or IT cortex, we verified that our simulations were unaffected by delays of up to ~50 ms in the arrival of gain modulation relative to the arrival of shape selective signals (Figure 10—figure supplement 3).
 
-## Heterogeneity in model V4 and vlPFC responses
+### Heterogeneity in model V4 and vlPFC responses
 
 To generate the simulated responses shown (Figure 10), we chose model parameters that reproduced the response dynamics of example neurons (Figures 2A, 4 and 5). However, V4 neurons show substantial diversity in the magnitude and timing of the second response peak (Figure 5—figure supplement 1). vlPFC neurons also show diversity in terms of their shape selectivity and the dependence of their responses on occlusion level. Therefore, we systematically varied the model parameters governing synaptic strengths and delays to generate diverse simulated response dynamics and patterns in V4 and vlPFC model units. We varied the relative strengths of the feedforward input from the two V4 units to vlPFC, and we verified that a second response peak was observed in the V4 unit responses even when vlPFC units are only weakly shape-selective (Figure 10—figure supplement 4). By varying the feedback connection strengths, and the synaptic delays between the two areas, we were able to generate a range of second peak magnitudes (Figure 10—figure supplement 5A) and second peak times (Figure 10—figure supplement 5B). Finally, the population average response across model V4 units (Figure 10—figure supplement 6) resembles the V4 population data (Figure 6A).
 
@@ -108,7 +192,7 @@ To generate the simulated responses shown (Figure 10), we chose model parameters
 
 To determine the contributions of prefrontal cortex to the representation and recognition of partially occluded objects, we compared the response dynamics of vlPFC and V4 neurons in monkeys discriminating shapes in the presence and absence of occluders. Our study provides three new insights. First, neuronal responses in vlPFC are strongest for occluded stimuli and weaker for unoccluded stimuli, in contrast to neuronal responses in visual areas V4 and IT (Kosai et al., 2014; Kovács et al., 1995; Tang et al., 2014a). Second, the responses of many V4 neurons have two transient peaks, the second of which emerges after the onset of vlPFC responses and shows a stronger preference for occluded stimuli. Third, neuronal shape selectivity for occluded stimuli in V4 is enhanced during the second transient peak. Our results support the hypothesis that feedback signals from vlPFC mediate V4 responses during the second transient peak and that these signals facilitate object recognition under occlusion.
 
-## Representation of occluded stimuli in vlPFC
+### Representation of occluded stimuli in vlPFC
 
 Our results demonstrate that visual representations in vlPFC do not always mirror representations in visual cortex and suggest that vlPFC may play an important role in representing objects. We used different experimental approaches for the V4 and vlPFC recordings, but these methodological differences cannot account for differences in how V4 and vlPFC neurons represent occluded and unoccluded stimuli. In V4 recording sessions, but not in vlPFC sessions, we tailored the stimulus color and shape to the preferences of the neuron; this may explain the preponderance of V4 neurons that responded preferentially to unoccluded shapes in our dataset. Without tailoring stimuli we would expect a roughly equal proportion of neurons showing responses that increased and decreased with increasing occlusion level. We found, however, that 72% of vlPFC neurons responded preferentially to occluded shapes, a proportion that deviates significantly from the null hypothesis (binomial test, p<0.01). Furthermore, because the visible difference between any two shapes declines with increasing occlusion level, we expect shape selectivity to decline regardless of whether we tailored visual stimuli. The enhanced shape selectivity we observed in vlPFC under occlusion defies this expectation.
 
@@ -118,7 +202,7 @@ The dependence of vlPFC responses on occlusion level varied across neurons. The 
 
 We propose that vlPFC responses arise from the modulation of occlusion-dependent, shape-selective feedforward signals from V4 by another feedforward signal that is dependent only on the occlusion level. In our simple behavioral task, where the occluding dots have a different color than the occluded shapes, a neuron sensitive to the color and area of the occluding dots could signal the level of occlusion. Indeed, in one monkey performing the same behavioral task used in the current study, we found that the responses of many IT neurons were consistent with encoding the total area of the occluders (Namima and Pasupathy, 2016). However, in the natural world, where there are multiple objects and the attributes of the occluders are not known a priori, identifying which object is occluded, and by how much, could be challenging. Extending our simple model to tackle more complex, naturalistic cases would likely require the incorporation of attention and memory processes.
 
-## Implications for decision-making and recognition
+### Implications for decision-making and recognition
 
 To perform the sequential shape discrimination task used in the current study, the reference stimulus held in memory must be compared to the test stimulus on the screen. Given its role in working memory, the PFC is a plausible neural locus for this comparison (Fuster, 1989; Kim and Shadlen, 1999; Romo and de Lafuente, 2013). Our results suggest, however, that the comparison of reference and test stimuli is unlikely to be implemented in vlPFC. We found stronger neuronal selectivity in vlPFC for occluded than unoccluded test stimuli. Thus, if behavioral performance depended on comparisons implemented in vlPFC, discriminability would be higher for occluded stimuli and lower for unoccluded stimuli – the opposite of the performance we observed (Figure 1B). The weak neuronal responses in vlPFC to unoccluded stimuli are consistent with a report of weak neuronal selectivity in this area for stimulus color in monkeys performing a color change detection task (Lara and Wallis, 2014). Together, these findings challenge the notion that vlPFC activity mediates perceptual discriminations of form and color directly. The comparison of sensory representations could be implemented in other parts of the PFC or in sensory cortex, where signals correlated with monkeys’ behavioral decisions have been reported (Kim and Shadlen, 1999; Eskandar et al., 1992; Miller and Desimone, 1994; Wallis and Miller, 2003; Romo and Salinas, 2003; Zaksas and Pasternak, 2006; Kosai et al., 2014). The evidence for functional connectivity between V4 and lateral PFC during memory maintenance also supports the implementation of decision computations in visual cortex (Liebe et al., 2012).
 
@@ -126,7 +210,7 @@ The finding that neuronal responses in vlPFC are stronger for occluded stimuli i
 
 An alternative possibility is that the preference of vlPFC neurons for occluded stimuli may be related to the specific engagement of vlPFC in the recognition of occluded objects. Previous work has argued that the processing of complex visual scenes containing clutter and occlusions may be guided by higher cognitive, memory processes (Cavanagh, 1991; Kveraga et al., 2007). For example, image representations in early and mid-level areas of the ventral visual pathway may be relayed to higher processing stages where they are compared to stored representations of object prototypes, leading to the recognition of objects in the scene (Kveraga et al., 2007). This recognition process may then guide the grouping of appropriate contours and regions, thereby facilitating object segmentation and scene understanding (McDermott, 2004; Kveraga et al., 2007). Our results are also broadly consistent with the possibility that vlPFC activity embodies a recognition signal that is fed back to V4 to refine object representations. Further experiments are needed to differentiate between the two alternative roles for vlPFC.
 
-## Response dynamics in V4
+### Response dynamics in V4
 
 Studies of object representation and recognition often consider spiking activity only within the first hundred milliseconds after stimulus onset (e.g. Hung et al., 2005). The rationale for choosing this early temporal epoch for analysis is based on the argument that successful categorization can be achieved by feedforward processes alone (VanRullen and Thorpe, 2001; Serre et al., 2007). However, neuronal responses to visual stimuli depend not only on signals carried by feedforward connections but also by feedback and horizontal connections. Feedback and horizontal connections may modulate neuronal responses based on stimulus context and behavioral goals, and confer selectivity for more complex visual stimuli (Lamme and Roelfsema, 2000; Gilbert and Li, 2013).
 
@@ -144,88 +228,240 @@ Partial occlusions pose a major challenge to the successful recognition of visua
 
 ## Materials and Methods
 
-## Experimental subjects
+### Experimental subjects
 
 Two adult male rhesus macaques (Macaca mulatta) were prepared for neurophysiological recordings using sterile surgical procedures. For experiments in prefrontal cortex, recording chambers were centered over the principal sulcus and targeted the ventrolateral prefrontal cortex (vlPFC), located ventral to and along the caudal third of the principal sulcus. The stereotaxic, central coordinates of prefrontal recording chambers were derived based on structural MRI images for each animal, and were ~21 mm anterior of interaural zero and ~19 mm lateral to the midline. For experiments in visual cortex, recording chambers were centered on the dorsal surface along the prelunate gyrus and targeted area V4, extending between the lunate sulcus and the superior temporal sulcus. Recordings from the two areas were carried out serially in the same monkeys, starting with V4 then vlPFC. All animal procedures conformed to NIH guidelines and were approved by the Institutional Animal Care and Use Committee at the University of Washington.
 
-## Neurophysiology
+### Neurophysiology
 
 Extracellular recordings were performed using epoxy-coated tungsten microelectrodes (250 µm, FHC) lowered into cortex through an acute microdrive system (Gray Matter Research, 8-channel). Voltage signals were amplified and band-pass filtered (0.1–8 kHz) using a recording system (Plexon Systems, 16-channel). The waveforms of single units were isolated manually using spike-sorting software (Plexon Systems, Offline Sorter). The results reported in the current study are based on 381 vlPFC neurons (260 and 121 from Monkey M and Monkey O, respectively) and on 85 V4 neurons (41 from Monkey M and 44 from Monkey O, respectively). A subset of the V4 neurons (62 of 85 neurons) contributed to a previous study (see Kosai et al., 2014).
 
-## Visual stimuli
+### Visual stimuli
 
 Visual stimuli were presented on a calibrated CRT monitor (1600 x 1200 pixels; 97 Hz frame rate; 57 cm in front of the monkey). Stimuli were presented against an achromatic gray background of mean luminance 5.4 cd/m2. Stimulus onset and offset times were based on photodiode detection of synchronized pulses in one corner of the monitor. Stimulus presentation and behavioral events were controlled by custom software written in Python (Pype, originally developed by Jack Gallant and James Mazer; Mazer, 2013). Eye position was monitored using a 1 kHz infrared eye-tracking system (Eyelink 1000; SR Research).
 
-## Behavioral task
+### Behavioral task
 
 Monkeys performed a sequential shape discrimination task in the presence and absence of occluders (Figure 1A). Each trial began with the presentation of a central point (0.1°), which the monkey had to fixate within a circular window of radius 0.75°. After acquiring fixation, two stimuli were presented: a ‘reference’ stimulus, followed by a ‘test’ stimulus. The reference stimulus was always an unoccluded, 2D shape. The test stimulus was a 2D shape that was unoccluded or partially occluded by a field of randomly positioned dots. Occlusion level was quantified as the percentage of the shape area that remained visible (‘% visible area’) and was titrated by varying the diameter of the occluding dots (for details, see Kosai et al., 2014). Each stimulus was presented for 600 ms, with an inter-stimulus interval of 200 ms between the reference and the test stimuli. Following a 50 ms delay, the fixation point was extinguished and two peripheral choice targets appeared (left and right dots, 6° eccentric; Figure 1A). The monkey reported whether the two shapes presented were the same or different via a saccade to the right or left target, respectively, and within 500 ms of target onset. The monkey received liquid reward for correct performance. In cases where the monkey broke fixation or failed to respond, the trial was repeated later in the session. Behavioral trials were separated by an inter-trial interval of 2 s.
 
-## Approach to data collection
+### Approach to data collection
 
 V4 data were collected by studying one neuron at a time and tailoring the shapes, occluding dots, colors and position of the test stimulus to the preferences of the neuron recorded. Based on preliminary characterizations (for details, see Kosai et al., 2014) we chose two shapes as the discriminanda: one preferred and one non-preferred. The two shapes were presented in the neuron’s preferred color whereas the occluding dots were presented in a contrasting, non-preferred color. The reference stimulus was presented at central fixation whereas the test stimulus was presented at the center of the neuron’s RF. The vlPFC data were collected by studying several neurons simultaneously, an approach that precluded tailoring the shapes and occluding dots to the preferences of individual neurons. To equate behavioral task difficulty across V4 and vlPFC recording sessions, we chose, at random, stimulus parameters for each vlPFC recording session from among those used for V4 recording sessions.
 
 Two shapes were used in each behavioral session, yielding four trial conditions per occlusion level (2 shapes x two behavioral outcomes). We studied each neuron’s responses to the two shapes under four or more occlusion levels, including the unoccluded case. In V4 recordings, we sampled 4–9 oc clusion levels (median = 6). In vlPFC recordings, we sampled 5–6 oc clusion levels (median = 5). We only included data from neurons tested with at least seven repeated presentations of each trial condition and of each occlusion level tested. The median number of repeats was 24 for V4 recordings and 15 for vlPFC recordings.
 
-## Data analysis
+### Data analysis
 
-## Visually responsive and occlusion-sensitive vlPFC neurons
+#### Visually responsive and occlusion-sensitive vlPFC neurons
 
 We identified visually responsive vlPFC neurons by comparing the firing rate during a 150 ms window, beginning 80 ms after test stimulus onset, to the firing rate during the fixation epoch before reference stimulus onset. Neuronal responses to the test stimulus were often transient (see Figure 2), motivating us to calculate firing rates in a 150 ms window rather than the full duration of stimulus presentation. The 80 ms offset was introduced to account for the visual response latency of neurons. Among 381 vlPFC neurons, 216 (142/260 in Monkey M and 74/121 in Monkey O) were significantly responsive during the test stimulus epoch (t Test, p<0.01). All further data analyses were restricted to these visually responsive neurons (57% of vlPFC neurons recorded).
 
 To assess whether neuronal responses to the test stimulus were modulated by shape and/or occlusion level, we conducted a 2-way ANOVA on activity during the same response window defined above, with stimulus shape and occlusion level as factors. Among the 216 visually responsive neurons, the responses of 98 neurons (71/260 in Monkey M and 27/121 in Monkey O) showed a significant dependence on occlusion level (p<0.05) and the responses of 66 neurons showed a significant dependence on stimulus shape (p<0.05).
 
-## Shape selectivity
+#### Shape selectivity
 
 To examine the dynamics of neuronal shape selectivity, we performed a sliding-window Receiver Operating Characteristic (ROC) curve analysis on responses to the preferred and non-preferred shapes at each occlusion level. For V4 neurons, the preferred shape was that which evoked the largest average response across all occlusion levels. For vlPFC, because many neurons did not respond to unoccluded shapes, we computed the average response for each shape across all occlusion levels (i.e. visible area <100%) during the test epoch, and identified the preferred shape as that which evoked the largest average response. At every time point (1 ms steps), we counted spikes in a centered window of duration 75 ms (for V4) or 150 ms (for vlPFC). We then assessed shape selectivity by computing the area under the ROC curve derived from the spike count distributions of responses to preferred and non-preferred shapes. Shape selectivity values ranged from 0.5 (unselective) to 1.0 (very selective). To identify the time of maximal shape selectivity for occluded stimuli (Figure 8D, red bars), we also computed shape selectivity as described above, pooling across all levels of occlusion tested for each neuron.
 
-## Population response histograms
+#### Population response histograms
 
 To generate population response histograms (Figures 3 and 6), we normalized the responses of each neuron to the maximum across all occlusion levels then averaged the data at each occlusion level for all neurons. We did not test all neurons at the same occlusion levels (for each neuron, we tested 4–9 occlusion levels), so the number of neurons contributing to the average histograms varied for each occlusion level; these numbers are listed in the figures. For both cortical areas, population response histograms for the occlusion conditions of 44% and 27% visible area were based on only a few neurons and were therefore excluded.
 
-## Peak latency
+#### Peak latency
 
 To find the time to peak response for each neuron, we first constructed an average response histogram from the Gaussian-smoothed (σ = 10 ms) PSTHs across all occlusion levels. We then identified the time of maximal response between 50–600 ms after test stimulus onset. This temporal window allowed us to identify peaks associated with responses to the test stimulus rather than responses related to the preceding reference stimulus, memory delay or saccades that followed the test stimulus.
 
-## Peak finding algorithm
+#### Peak finding algorithm
 
 To identify V4 neurons with two transient peaks in their responses to occluded shapes, we devised an ad hoc algorithm, described below. This procedure was designed to identify neurons with a robust second transient response peak that could not be attributed to small, noisy ripples in the response. For each neuron, we first constructed an average PSTH of its responses to the preferred shape at different occlusion levels, smoothed with a Gaussian function (σ = 10 ms). We only included occlusion levels that evoked a response that was at least 33% of the maximal response to the unoccluded preferred shape. We then used a zero-crossing algorithm to identify local peaks within 300 ms of stimulus onset. Small peaks (<50% of the first transient peak) and small trough-to-peak modulation ratios (<15% of local peak magnitude) were rejected as false positives (see Figure 6—figure supplement 1 for a schematic of the procedure and examples of rejection cases). For each putative peak that met the peak amplitude and modulation criteria, we asked whether there was a statistically significant response increase relative to the preceding trough. To assess statistical significance, we conducted a paired t-Test between single trial spike counts within a 30 ms window centered at the peak and at the preceding trough (p<0.05, Bonferroni corrected). Of 85 V4 neurons, 43 had no robust peaks beyond the first transient that passed the peak amplitude and modulation criteria. Of the remaining 42 neurons, 30 had a second peak that showed a statistically significant response increase relative to the preceding trough; these neurons were classified as having two peaks. Specifically, 29/30 neuons had exactly one peak that qualified as the second response peak.
 
-## Dynamic network model
+### Dynamic network model
 
-To evaluate whether interactions between vlPFC and V4 could account for the observed response dynamics, we constructed a network model (Figure 9). The model includes two stages of cortical processing that are intended to map onto areas vlPFC and V4. The V4 stage comprises two units (V41 and V42), each selective for one of the shapes used in a testing session. The vlPFC stage also comprises two units (PFC1 and PFC2) that receive excitatory feedforward input from V4 units. Each vlPFC unit inherits a preference for stimulus shape from the V4 unit that provides the strongest input (e.g. PFC1 receives the strongest feedforward input from V41). In the model simulations presented here, feedforward and feedback connections strengths are proportional. However, we have verified that the results hold for a broad range of connection strengths, as long as each vlPFC unit sends stronger feedback input to the V4 unit which provides its dominant feedforward input.
+To evaluate whether interactions between vlPFC and V4 could account for the observed response dynamics, we constructed a network model (Figure 9). The model includes two stages of cortical processing that are intended to map onto areas vlPFC and V4. The V4 stage comprises two units ($V4_{1}$ and $V4_{2}$), each selective for one of the shapes used in a testing session. The vlPFC stage also comprises two units ($PFC_{1}$ and $PFC_{2}$) that receive excitatory feedforward input from V4 units. Each vlPFC unit inherits a preference for stimulus shape from the V4 unit that provides the strongest input (e.g. $PFC_{1}$ receives the strongest feedforward input from $V4_{1}$). In the model simulations presented here, feedforward and feedback connections strengths are proportional. However, we have verified that the results hold for a broad range of connection strengths, as long as each vlPFC unit sends stronger feedback input to the V4 unit which provides its dominant feedforward input.
 
 All model parameters (listed in Table 1) were chosen to reproduce the response dynamics observed in the experimental data. In addition, we also varied synaptic weights and delays over a range of values (see Table 2) to compare the heterogeneity of model units to observed data (Figure 10—figure supplements 3–5).
 
-We modeled the dynamical firing rate response of each model V4 unit, rV4,i, as:(1)τV4drV4,itdt=-rV4,it+FUV4,it-rthr,V4+ηt,
+**Table 1.**
+ Parameters used for the model (fixed)
 
-and the firing rate response of each model vlPFC unit, rPFC, i, as:(2)τPFCdrPFC,itdt=-rPFC,it+f-PFC∙FUPFC,it-rthr,PFC+ηt
 
-where τV4 and τPFC denote the time constants of the responses; t denotes time; F(x)is a nonlinear function of the Naka Rushton form given by:(3)F(x)={fmax⋅xNσN+xN,x≥00,x<0
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>τV4 (ms)</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>τPFC (ms)</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>rthr,V4  (spikes/s)</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>rthr,PFC  (spikes/s)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>σ</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>fmax</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>rthr1(spikes/s)</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>rthr2(spikes/s)</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>τa (ms)</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
 
-where rthr,V4 and rthr,PFC are the firing rate thresholds, and η is a Gaussian white noise term with a standard deviation of 300*dt and a timestep dt = 0.01 (ms). We omitted the noise term for some simulations (Figure 10—figure supplements 1–6). Note that the precise form of the nonlinear function F(x) is not critical; any monotonically increasing nonlinear function with saturation and threshold, along with the dynamics of firing rates defined in Equations (1) and (2) provide a standard firing rate model (Dayan and Abbott, 2005).
+**Table 2.**
+ Parameters used for the model (varied)
 
-For V4 model units, the input UV4,iwas the sum of two sources: (i) excitatory feedforward input from upstream visual areas, uFFi, and (ii) excitatory feedback inputs from vlPFC, uPFC(1)i and uPFC(2)i. The feedforward input uFFi confers shape selectivity to the V4 model units and a dependence of their responses on occlusion level (Figure 9). For the preferred stimulus, this input is strong and declines gradually with increasing occlusion level. For the non-preferred shape, this input is weak, as is the modulatory influence of occlusion level. The feedforward input, uFFi, was constructed by first convolving a difference of Gaussian filter k (the standard kernel normalized difference of g1=15⋅exp⁡[-(t-30)2800] and g2=10⋅exp⁡[-(t-50)2800])) with a 500ms-long ramp Ri(c,t) followed by cubing, normalization and half-wave rectification:(4)uFFi=[(k∗Ri)3(max[k∗Ri])2]+
 
-The ramp function (R), defined separately for the preferred (i = 1) and nonpreferred (i = 2) shapes, increases monotonically with the percentage of visible area (c) and declines over time with a support of 500 ms, that is(5)Ri(c,t)={(2.5c+20)−0.05t, i=1,(12c1/3+120)−0.05t, i=2,
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Figure 10, Figure 10—figure supplements 1,2</th>
+      <th colspan="3">Figure 10—figure supplement 4</th>
+      <th>Figure 10—figure supplement 5</th>
+      <th>Figure 10—figure supplement 6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>τd,ff (ms)</td>
+      <td>40</td>
+      <td colspan="3">40</td>
+      <td>40</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>τd,fb (ms)</td>
+      <td>40</td>
+      <td colspan="3">40</td>
+      <td>20, 40, 80</td>
+      <td>20–80</td>
+    </tr>
+    <tr>
+      <td>w∞,sff</td>
+      <td>0.5</td>
+      <td>0.7</td>
+      <td>0.6</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>0.4–0.6</td>
+    </tr>
+    <tr>
+      <td>w∞,wff</td>
+      <td>0.2</td>
+      <td>0</td>
+      <td>0.1</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0–0.2</td>
+    </tr>
+    <tr>
+      <td>w∞,sfb</td>
+      <td>1.3</td>
+      <td colspan="3">1</td>
+      <td>0.2, 0.8, 1.3, 1.5</td>
+      <td>0.1–1.3</td>
+    </tr>
+    <tr>
+      <td>w∞,wfb</td>
+      <td colspan="6">w∞,sfb∙w∞,wff/w∞,sff</td>
+    </tr>
+  </tbody>
+</table>
 
-when 30≤t≤530. Riis 0 otherwise.
+We modeled the dynamical firing rate response of each model V4 unit, $r_{V4,i}$, as:
 
-Equations 4 and 5 were designed to simulate the input to V4 units (e.g. Figure 10A) with an onset latency of 30 ms, a strong initial transient response, a gradually declining sustained response, collectively lasting ~500 ms. Note that the precise function defining uFFi is not critical as long as it produces strong input signals for the preferred shape that decrease with increasing occlusion level, thus capturing the observed V4 neuronal response properties.
+$$
+\tau_{V4}\frac{dr_{V4,i}t}{dt}=-r_{V4,i}t+FU_{V4,i}t-r_{thr,V4}+ηt,
+$$
 
-For the vlPFC units, the input, UPFC, i is the excitatory feedforward inputs from both V4 units, uV4(1)i and uV4(2)i. In addition, the vlPFC units receive a gain modulation signal, f-PFC, that is proportional to the occlusion level. We modeled f-PFC as a nonlinear, cubic function of the % visible area,c. The function’s output was lowest for the unoccluded shape (c=100%) and increased for higher occlusion levels (Figure 9, f-). The coefficients were fit so that the model responses closely resembled the neuronal data, but the qualitative results were independent of the coefficient values used:(6)f-PFC=-0.0017⋅c3+0.39⋅c2-29.6⋅c+806.
+and the firing rate response of each model vlPFC unit, $r_{PFC,i}$, as:
 
-Inputs between model units were modulated by connection weights: wsfffor the stronger feedforward inputs from V4 units to vlPFC units of the same shape preference (e.g. V4 unit 1→ vlPFC unit 1), wsfb for the corresponding feedback inputs (e.g. vlPFC unit 1→ V4 unit 1), wwff for the weaker feedforward inputs from V4 units to vlPFC units of a different shape preference (e.g. V4 unit 1→ vlPFC unit 2), and wwfb for the corresponding feedback inputs (e.g. vlPFC unit 1→ V4 unit 2). Thus, the feedback input from vlPFC unit j onto V4 unit i, uPFC(j)i, was implemented as follows:(7)uPFC(j)i(t)={wsfb ⋅[rPFC,j(t−τd,fb)−rthr1]+,i=j.wwfb⋅[rPFC,j(t−τd,fb)−rthr1]+,i≠j.
+$$
+\tau_{PFC}\frac{dr_{PFC,i}t}{dt}=-r_{PFC,i}t+f-_{PFC}∙FU_{PFC,i}t-r_{thr,PFC}+ηt
+$$
 
-where the responses of vlPFC units were thresholded (rthr1) and half-wave rectified. This threshold on vlPFC firing rates was introduced to reduce the magnitude of the second transient peak in V4 unit responses to the non-preferred shape (see Figure 10—figure supplement 2).
+where $\tau_{V4}$ and $\tau_{PFC}$ denote the time constants of the responses; t denotes time; $F(x)$is a nonlinear function of the Naka Rushton form given by:
 
-The feedforward excitatory input from V4 unit j to vlPFC unit i was implemented as:(8)uV4(j)i(t)={wsff⋅rV4, j(t−τd,ff),i=j.wwff⋅rV4, j(t−τd,ff),i≠j.
+$$
+F(x)={\frac{f_{max}⋅x^{N}}{\sigma^{N}+x^{N}},x\geq00,x<0
+$$
 
-The feedforward and feedback temporal delays between vlPFC and V4 unit responses, τd,ff and τd,fb were chosen to be consistent with the difference in time between the vlPFC and V4 response peaks observed in our neuronal data.
+where $r_{thr,V4}$ and $r_{thr,PFC}$ are the firing rate thresholds, and $η$ is a Gaussian white noise term with a standard deviation of $300*\sqrt{dt}$ and a timestep $dt=0.01(ms)$. We omitted the noise term for some simulations (Figure 10—figure supplements 1–6). Note that the precise form of the nonlinear function $F(x)$ is not critical; any monotonically increasing nonlinear function with saturation and threshold, along with the dynamics of firing rates defined in Equations (1) and (2) provide a standard firing rate model (Dayan and Abbott, 2005).
 
-To prevent the second response peak of V4 units from inducing a second response peak in vlPFC units (see Figure 10—figure supplement 1B), the feedforward connections from V4 to vlPFC included an adaptation term, as follows:(9)dwffdt=1τa(w∞,ff−wff)w∞,ff←0 if rPFC,i≥rthr2
+For V4 model units, the input $U_{V4,i}$was the sum of two sources: (i) excitatory feedforward input from upstream visual areas, $u_{FF}^{i}$, and (ii) excitatory feedback inputs from vlPFC, $u_{PFC(1)}^{i}$ and $u_{PFC(2)}^{i}$. The feedforward input $u_{FF}^{i}$ confers shape selectivity to the V4 model units and a dependence of their responses on occlusion level (Figure 9). For the preferred stimulus, this input is strong and declines gradually with increasing occlusion level. For the non-preferred shape, this input is weak, as is the modulatory influence of occlusion level. The feedforward input, $u_{FF}^{i}$, was constructed by first convolving a difference of Gaussian filter $k$ (the standard kernel normalized difference of $g_{1}=15⋅exp⁡[-\frac{(t-30)^{2}}{800}]$ and $g_{2}=10⋅exp⁡[-\frac{(t-50)^{2}}{800}]$)) with a $500ms$-long ramp $R_{i}(c,t)$ followed by cubing, normalization and half-wave rectification:
 
-where the weight wff of connections from V4 to vlPFC represents both wwff and wsff, and evolves with time scale τa. When vlPFC activity exceeds the value of rthr2 (10 spk/sec, see Table 1), the steady state feedforward connection from V4 to vlPFC, w∞,ff, goes to 0, and any subsequent input from V4 will fail to activate vlPFC. The feedback connectivity weight was time-independent and set to steady state values: wsfb= w∞,sfb, wwfb= w∞,wfb.
+$$
+u_{FF}^{i}=[\frac{(k∗R_{i})^{3}}{(max[k∗R_{i}])^{2}}]_{+}
+$$
 
-The set of differential equations, with stochastic noise term η,was solved using the Forward Euler Method in MATLAB. The initial firing rate values for rV4,i and rPFC,i were set to 0 spikes per second. The initial connectivity weights were equivalent to the steady-state weights w∞,sff, w∞,wff, w∞,sfb and w∞,wfb; these and other parameters are given in Tables 1 and 2.
+The ramp function (R), defined separately for the preferred (i = 1) and nonpreferred (i = 2) shapes, increases monotonically with the percentage of visible area (c) and declines over time with a support of 500 ms, that is
+
+$$
+R_{i}(c,t)={(2.5c+20)−0.05t, i=1,(12c^{1/3}+120)−0.05t, i=2, 
+$$
+
+when $30\leqt\leq530$. $R_{i}$is $0$ otherwise.
+
+Equations 4 and 5 were designed to simulate the input to V4 units (e.g. Figure 10A) with an onset latency of 30 ms, a strong initial transient response, a gradually declining sustained response, collectively lasting ~500 ms. Note that the precise function defining $u_{FF}^{i}$ is not critical as long as it produces strong input signals for the preferred shape that decrease with increasing occlusion level, thus capturing the observed V4 neuronal response properties.
+
+For the vlPFC units, the input, $U_{PFC,i}$ is the excitatory feedforward inputs from both V4 units, $u_{V4(1)}^{i}$ and $u_{V4(2)}^{i}$. In addition, the vlPFC units receive a gain modulation signal, $f-_{PFC}$, that is proportional to the occlusion level. We modeled $f-_{PFC}$ as a nonlinear, cubic function of the % visible area,$c$. The function’s output was lowest for the unoccluded shape ($c=100%)$ and increased for higher occlusion levels (Figure 9, $f-$). The coefficients were fit so that the model responses closely resembled the neuronal data, but the qualitative results were independent of the coefficient values used:
+
+$$
+f-_{PFC}=-0.0017⋅c^{3}+0.39⋅c^{2}-29.6⋅c+806.
+$$
+
+Inputs between model units were modulated by connection weights: $w_{sff}$for the stronger feedforward inputs from V4 units to vlPFC units of the same shape preference (e.g. V4 unit 1→ vlPFC unit 1), $w_{sfb}$ for the corresponding feedback inputs (e.g. vlPFC unit 1→ V4 unit 1), $w_{wff}$ for the weaker feedforward inputs from V4 units to vlPFC units of a different shape preference (e.g. V4 unit 1→ vlPFC unit 2), and $w_{wfb}$ for the corresponding feedback inputs (e.g. vlPFC unit 1→ V4 unit 2). Thus, the feedback input from vlPFC unit $j$ onto V4 unit $i$, $u_{PFC(j)}^{i}$, was implemented as follows:
+
+$$
+u_{PFC(j)}^{i}(t)={w_{sfb} ⋅[r_{PFC,j}(t−\tau_{d,fb})−r_{thr1}]_{+},i=j.w_{wfb}⋅[r_{PFC,j}(t−\tau_{d,fb})−r_{thr1}]_{+},i\neqj.
+$$
+
+where the responses of vlPFC units were thresholded $(r_{thr1})$ and half-wave rectified. This threshold on vlPFC firing rates was introduced to reduce the magnitude of the second transient peak in V4 unit responses to the non-preferred shape (see Figure 10—figure supplement 2).
+
+The feedforward excitatory input from V4 unit $j$ to vlPFC unit $i$ was implemented as:
+
+$$
+u_{V4(j)}^{i}(t)={w_{sff}⋅r_{V4, j}(t−\tau_{d,ff}),i=j.w_{wff}⋅r_{V4, j}(t−\tau_{d,ff}),i\neqj.
+$$
+
+The feedforward and feedback temporal delays between vlPFC and V4 unit responses, $\tau_{d,ff}$ and $\tau_{d,fb}$ were chosen to be consistent with the difference in time between the vlPFC and V4 response peaks observed in our neuronal data.
+
+To prevent the second response peak of V4 units from inducing a second response peak in vlPFC units (see Figure 10—figure supplement 1B), the feedforward connections from V4 to vlPFC included an adaptation term, as follows:
+
+$$
+\frac{dw_{ff}}{dt}=\frac{1}{\tau_{a}}(w_{∞,ff}−w_{ff})w_{∞,ff}←0 if r_{PFC,i}\geqr_{thr2}
+$$
+
+where the weight $w_{ff}$ of connections from V4 to vlPFC represents both $w_{wff}$ and $w_{sff}$, and evolves with time scale $\tau_{a}$. When vlPFC activity exceeds the value of $r_{thr2}$ (10 spk/sec, see Table 1), the steady state feedforward connection from V4 to vlPFC, $w_{∞,ff}$, goes to 0, and any subsequent input from V4 will fail to activate vlPFC. The feedback connectivity weight was time-independent and set to steady state values: $w_{sfb}=w_{∞,sfb}$, $w_{wfb}=w_{∞,wfb}$.
+
+The set of differential equations, with stochastic noise term $η,$was solved using the Forward Euler Method in MATLAB. The initial firing rate values for $r_{V4,i}$ and $r_{PFC,i}$ were set to 0 spikes per second. The initial connectivity weights were equivalent to the steady-state weights $w_{∞,sff}$, $w_{∞,wff}$, $w_{∞,sfb}$ and $w_{∞,wfb}$; these and other parameters are given in Tables 1 and 2.
 
 The code for the full model is available on Github (Choi, 2017). A copy is archived at https://github.com/elifesciences-publications/V4-PFC-dynamics.

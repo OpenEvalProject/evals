@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.43842.001 For fast-flying birds, the ability to respond to wind during landing is critical, as errors can lead to injury or even death. Nonetheless, landing ability, and its ecological significance, remain unstudied. We show that for auks, 60% of attempts to land at their cliff nests fail in a strong breeze (80% in near-gale winds). This is most likely because wind interferes with the ability to maintain flight control in the last phase of landing. Their extreme flight costs mean that the energetic penalty for multiple landing attempts is high. We propose that exposure, and ability to respond to, such conditions will influence the suitability of breeding habitat. In support of this (i) auk colonies appear to be orientated away from prevailing winds and (ii) landing success within colonies is higher on crowded ledges with more airspace for manoeuvring. More generally, the interplay between wind and flight capacities could impact breeding distributions across species and scales.
+For fast-flying birds, the ability to respond to wind during landing is critical, as errors can lead to injury or even death. Nonetheless, landing ability, and its ecological significance, remain unstudied. We show that for auks, 60% of attempts to land at their cliff nests fail in a strong breeze (80% in near-gale winds). This is most likely because wind interferes with the ability to maintain flight control in the last phase of landing. Their extreme flight costs mean that the energetic penalty for multiple landing attempts is high. We propose that exposure, and ability to respond to, such conditions will influence the suitability of breeding habitat. In support of this (i) auk colonies appear to be orientated away from prevailing winds and (ii) landing success within colonies is higher on crowded ledges with more airspace for manoeuvring. More generally, the interplay between wind and flight capacities could impact breeding distributions across species and scales.
 
 ## Introduction
 
@@ -33,49 +33,232 @@ We quantify how landing ability varies in relation to wind speed at arguably the
 
 ## Materials and methods
 
-## Study site and landing observations
+### Study site and landing observations
 
 Data were collected on Skomer Island, Pembrokeshire, UK (51.73611°N 5.29628°W). Here guillemots and razorbills form large, sympatric breeding colonies. Colony location and density were defined as follows: a digital elevation model (DEM, 0.5 m resolution, Lle Geo-Portal for Wales) was used to identify coastal cliffs, taken as regions with slopes > 20°. Cliffs were divided into breeding and non-breeding areas by digitising the 2015 Skomer Island breeding bird survey (Stubbings et al., 2015). Colonies were then defined as areas where birds were breeding, separated by distinct, unoccupied regions. The density of each colony was estimated by allocating the bird count to the associated cliff area, where the minimum height of the cliff was taken as 10 m ASL (to account for wave and tidal height [Harris et al., 1997]) extending to 15 m from the top of each cliff (using measurements made for the three largest colonies, E Shepard unpubl. data). We identified the densest colonies using a breakpoint in the density distribution. The mean orientation of each of these colonies was calculated, and a Rayleigh test was used to assess whether they were uniformly distributed. Analyses were conducted in ArcMap 10.5.1.
 
 The landing attempts of guillemots and razorbills were observed over 26 days (28.4.2016–4.5.2017) at five breeding colonies, selected for being readily accessible and situated at different locations around the Island (SI, Table 1). Birds were assumed to be making landing attempts when they approached a cliff, usually ascending to it from below, steadily reducing the distance to the cliff until their ventral surface was orthogonally aligned with the cliff face. A landing was scored as successful if the bird touched down and stopped flying. An aborted attempt would begin in the same way, but birds would falter at the last moment and slip or fly away from the cliff. It was only possible to track the path of an individual over multiple landing attempts at one colony (High Cliff), as the return flight paths were partly obscured at all other observation points. The main dataset of landing attempts therefore refers to the success of focal individuals that were picked at random from all birds flying towards a breeding cliff. As such, our approach assumes that the overall dataset is not biased by a few individuals undertaking a large number of repeated attempts. We consider this reasonable given that landing attempts are short-lived events and that colonies are composed of hundreds of breeding pairs (SI Table 1). A smaller sample of birds was followed at High Cliff to count the number of repeat attempts under a given wind condition.
 
+**Table 1.**
+ The output of the best performing model.High frequency wind speed measurements were obtained for 6140 observations and all models of landing success were run using this dataset. Height and ledge were included as factors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Df</th>
+      <th>Estimate ± SE</th>
+      <th>p-value</th>
+      <th>F value</th>
+      <th>Deviance explained</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>wind</td>
+      <td>1</td>
+      <td>−0.62 ± 0.22</td>
+      <td>&lt;0.001</td>
+      <td>223.22</td>
+      <td>25.04</td>
+    </tr>
+    <tr>
+      <td>ledge</td>
+      <td>2</td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>72.51</td>
+      <td>16.27</td>
+    </tr>
+    <tr>
+      <td>medium ledge</td>
+      <td></td>
+      <td>−1.21 ± 0.12</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>small ledge</td>
+      <td></td>
+      <td>−2.48 ± 0.15</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>turbulence</td>
+      <td>1</td>
+      <td>−0.81 ± 0.43</td>
+      <td>0.467</td>
+      <td>0.53</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>species</td>
+      <td>1</td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>122.57</td>
+      <td>13.75</td>
+    </tr>
+    <tr>
+      <td>razorbill</td>
+      <td></td>
+      <td>1.10 ± 0.11</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>height</td>
+      <td>3</td>
+      <td></td>
+      <td>0.008</td>
+      <td>3.93</td>
+      <td>1.32</td>
+    </tr>
+    <tr>
+      <td>lowest height</td>
+      <td></td>
+      <td>−0.58 ± 0.19</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>wind * ledge</td>
+      <td>2</td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>14.21</td>
+      <td>3.19</td>
+    </tr>
+    <tr>
+      <td>wind*medium ledge</td>
+      <td></td>
+      <td>0.03 ± 0.04</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>wind*small ledge</td>
+      <td></td>
+      <td>0.22 ± 0.05</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>turbulence * ledge</td>
+      <td>2</td>
+      <td></td>
+      <td>0.015</td>
+      <td>4.23</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>turb*medium ledge</td>
+      <td></td>
+      <td>0.95 ± 0.38</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>turb*small ledge</td>
+      <td></td>
+      <td>0.07 ± 0.50</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Landing ledges were grouped into the following categories according to the space available for landing (aligned with the platforms, ledges and niches identified in Harris et al., 1997): (1) relatively large, flat areas that were wider than an individual bird length in both horizontal dimensions, (2) ledges that were wider, but not deeper, than the length of an individual bird, and (3) areas that were less than the length of the bird in both horizontal dimensions. Each breeding cliff was also visually divided into four height bands of roughly 10 m, using landmarks to allow easy categorisation of the landing height.
 
 Wind speed was recorded using a Kestrel anemometer positioned near the breeding cliff and the observer (SI, Table 1) at a height of 1.5 m AGL. This near-ground height was selected in order to assess conditions that birds might experience during the final phase of landing. The anemometer was positioned in the same location for all data collection sessions at a given colony and set to record once per minute.
 
-## Modelling airflows
+### Modelling airflows
 
-A modelling approach was used to (i) assess the extent to which wind speeds measured near observers varied from those on the breeding cliffs (it is logistically exceedingly difficult to measure wind speeds at the cliffs directly), (ii) relate near-ground values to the upwind/at sea condition, and (iii) estimate turbulence levels in relation to breeding colony and wind direction. Islands are particularly well suited to such modelling given that the upstream flow conditions are essentially uninterrupted. Airflows were modelled over Skomer using the open source computational fluid dynamics (CFD) software OpenFOAM (openfoam.org). OpenFOAM has previously been validated and used for other atmospheric boundary flow problems, including the well-known Bolund test case (Bechmann et al., 2011) which involves modelling air flow over a small, steep island (Cavar et al., 2016). Our model domain was 5100×4950×1000 m, with a basic horizontal grid spacing of 25 m and a vertical spacing of 10 m. The height data for the lower boundary were taken from a DEM of the island at 5 m resolution (OS Terrain five dataset sourced from Digimap). The model mesh was fitted over the terrain and refined (2:1 refinement) up to twice near the lower surface using the OpenFOAM SnappyHexMesh tool. This gave the finest resolution near the surface as approximately 6.25 m in the horizontal and 2.5 m in the vertical plane. At the upwind boundary, a logarithmic wind profile was imposed, while outflow boundary conditions were applied at the downwind boundaries. The roughness length was set to 0.1 m. The model uses a k-ε turbulence closure scheme to find a steady state solution, which therefore provides both mean wind speed, U (m s−1), and the turbulent kinetic energy, k (J m−3). This is the kinetic energy associated with the turbulence rather than the mean wind, and is defined as:(1)k=12ρ(u′2+v′2+w′2)where u', v' and w' are the fluctuations about the mean in the three components of wind velocity (in the x, y and z directions) and ρ is the density (kg m−3). Assuming u', v' and w' are all similar in magnitude (isotropic turbulence) then a ‘typical’ velocity perturbation, u, is given by u'2 + v'2 + w'2 = 3 u2. Substituting the equation for k and rearranging it gives:(2)u=((2/3)k/ρ)with u in m s−1. In the model ρ is taken as 1 kg m−3 and so can be neglected.
+A modelling approach was used to (i) assess the extent to which wind speeds measured near observers varied from those on the breeding cliffs (it is logistically exceedingly difficult to measure wind speeds at the cliffs directly), (ii) relate near-ground values to the upwind/at sea condition, and (iii) estimate turbulence levels in relation to breeding colony and wind direction. Islands are particularly well suited to such modelling given that the upstream flow conditions are essentially uninterrupted. Airflows were modelled over Skomer using the open source computational fluid dynamics (CFD) software OpenFOAM (openfoam.org). OpenFOAM has previously been validated and used for other atmospheric boundary flow problems, including the well-known Bolund test case (Bechmann et al., 2011) which involves modelling air flow over a small, steep island (Cavar et al., 2016). Our model domain was 5100×4950×1000 m, with a basic horizontal grid spacing of 25 m and a vertical spacing of 10 m. The height data for the lower boundary were taken from a DEM of the island at 5 m resolution (OS Terrain five dataset sourced from Digimap). The model mesh was fitted over the terrain and refined (2:1 refinement) up to twice near the lower surface using the OpenFOAM SnappyHexMesh tool. This gave the finest resolution near the surface as approximately 6.25 m in the horizontal and 2.5 m in the vertical plane. At the upwind boundary, a logarithmic wind profile was imposed, while outflow boundary conditions were applied at the downwind boundaries. The roughness length was set to 0.1 m. The model uses a k-ε turbulence closure scheme to find a steady state solution, which therefore provides both mean wind speed, U (m s−1), and the turbulent kinetic energy, k (J m−3). This is the kinetic energy associated with the turbulence rather than the mean wind, and is defined as:
 
-The strength of the turbulence was measured through the non-dimensional turbulence intensity, I:(3)I=u/U
+$$
+k=\frac{1}{2}ρ(u^{′2}+v^{′2}+w^{′2})
+$$
+
+where u', v' and w' are the fluctuations about the mean in the three components of wind velocity (in the x, y and z directions) and ρ is the density (kg m−3). Assuming u', v' and w' are all similar in magnitude (isotropic turbulence) then a ‘typical’ velocity perturbation, u, is given by u'2 + v'2 + w'2 = 3 u2. Substituting the equation for k and rearranging it gives:
+
+$$
+u=\sqrt{((2/3)k/ρ)}
+$$
+
+with u in m s−1. In the model ρ is taken as 1 kg m−3 and so can be neglected.
+
+The strength of the turbulence was measured through the non-dimensional turbulence intensity, I:
+
+$$
+I=u/U
+$$
 
 Simulations were run for the following wind directions; N, NE, E, SE, S, SW, W and NW. The upwind wind profile was defined by the reference wind speed of 10 m s−1 at a reference height of 20 m above the surface. Values of wind magnitude were normalised by the wind speed at an upwind reference point. For the W wind direction, additional simulations with input speeds of 5, 10 and 20 m s−1 confirmed that both the normalised wind values and the turbulence intensities were independent of the input reference wind speed. Data were extracted 2 m normal to ground at the horizontal and vertical centre point of each of the five focal breeding cliffs, as well as at the associated observer positions.
 
-## Statistical analysis
+### Statistical analysis
 
 We used chi-squared tests to establish whether the two species differed in landing height and ledge size. Binomial generalised linear mixed effects models were applied to the landing success data using the R package LME4 and fitted with the bobyqa optimizer (Bates et al., 2014). Given that hypotheses could be developed for interactions between wind speed (as measured near the cliffs), turbulence levels, ledge type and species, an initial model was run with a 4-way interaction between these predictors, in order to identify which interactions featured regularly in the best fitting models. These interactions were included in the global model and model simplification was then performed using AIC values. The global model included two-way interactions between wind speed and ledge, and turbulence and ledge. Wind speed and turbulence values were centred to remove collinearity between the individual and interaction terms (Schielzeth, 2010). A variable combining day and colony was created and fitted as a random intercept in order to account for temporal and spatial autocorrelation in landing success that could occur due to wind direction (which would be altered from the mean condition in a particular way by the topography surrounding each colony). Tests for collinearity (using the CAR package [Fox and Weisberg, 2011]) and over-dispersion were run on the global model. Residual interpretation and goodness of fit tests were performed using the DHARMa package (Hartig, 2017) simulating residuals from 500 runs of the fitted model. Marginal and conditional R2 values were estimated using the MuMIn package (Barton and Barton, 2018). All analyses were conducted in R Studio Version 1.1.456 (R Development Core Team, 2016).
 
-## Probabilistic modelling of landing failure
+### Probabilistic modelling of landing failure
 
 The statistical modelling related landing success to the wind speed recorded in that minute, as measured close to ground level. However, when wind speeds are considered over time, for example through the breeding season, or between years, it is the mean wind speed that is considered, and these records are made from anemometers stationed on weather buoys or at a greater altitude above ground level. We therefore developed a probabilistic model to (i) predict how landing success varies with mean wind speed, as measured further from the cliff (using the coefficients from the statistical model, as well as the airflow modelling), and (ii) derive the probability of landing in n attempts, which was later used to estimate the metabolic cost of landing.
 
 In both cases, a bird coming into land at a cliff effectively samples a distribution of wind speeds around a specified mean. We assumed that the instantaneous cliff wind speeds could be modelled as a Log Normal random variable. The probability distribution for the number of attempts taken to land successfully can then be derived from these parameters and the log odds of landing, with the latter taken from the best-fitting statistical model. This was converted to the probability of landing according to the mean wind speed over open water using constants derived from the airflow modelling.
 
-Specifically, in our model, for a given situation (ledge, height, species) and fixed value of turbulence intensity, the probability of landing p=p(W) is a function of wind speed W of the form(4)pW= aa+ebWfor constants a, b determined by the statistical model. If a bird tries to land repeatedly until successful, the instantaneous wind speed at the cliff can be modelled as an independent Log normal random variable W∼LogNormal(m,s2) where the parameters m and s are chosen so that the random variable W has mean U (mean wind speed at the cliff) and standard deviation u (the root mean square of the turbulent fluctuations). That is, we choose m and s so that,(5)U=em+s22                 u2=es2-1e2m+s2
+Specifically, in our model, for a given situation (ledge, height, species) and fixed value of turbulence intensity, the probability of landing p=p(W) is a function of wind speed W of the form
 
-Let S denote the number of attempts required for a successful landing. Then S has a geometric distribution with parameter P given by the mean of p(W) where W is the instantaneous wind speed at the cliff at the moment of each attempt to land. That is,(6)P(S=n)=(1−P)n−1Pwhere,(7)P=E(p(W))=∫0∞a(a+ebW)2πs2W2e−(ln W−m)22s2 dW
+$$
+pW=\frac{a}{a+e^{bW}}
+$$
+
+for constants a, b determined by the statistical model. If a bird tries to land repeatedly until successful, the instantaneous wind speed at the cliff can be modelled as an independent Log normal random variable $W∼LogNormal(m,s^{2})$ where the parameters $m$ and $s$ are chosen so that the random variable W has mean U (mean wind speed at the cliff) and standard deviation u (the root mean square of the turbulent fluctuations). That is, we choose m and s so that,
+
+$$
+U=e^{m+\frac{s^{2}}{2}}u^{2}=e^{s^{2}}-1e^{2m+s^{2}}
+$$
+
+Let S denote the number of attempts required for a successful landing. Then S has a geometric distribution with parameter P given by the mean of p(W) where W is the instantaneous wind speed at the cliff at the moment of each attempt to land. That is,
+
+$$
+P(S=n)=(1−P)^{n−1}P
+$$
+
+where,
+
+$$
+P=E(p(W))=\int_{0}^{∞}\frac{a}{(a+e^{bW})\sqrt{2\pis^{2}W^{2}}}e^{−\frac{(ln W−m)^{2}}{2s^{2}}} dW
+$$
 
 ## Results
 
-## Wind data
+### Wind data
 
 Wind speeds at observer locations ranged between 0 and 11.6 m s−1 during landing attempts. Similar wind speeds were recorded across study colonies, with median speeds ranging from 2.1 to 3.5 m s−1 and reasonable maxima between 5.3 and 7.7 m s−1.
 
 Airflow models showed that there was a reduction in the wind speed close to the cliffs compared to the at-sea condition, with substantial areas of reduced wind speed in the lee of Skomer Island (Figure 1A) (Figure 1—figure supplement 1). In these downstream areas, the flow field tended to be more variable. Areas of high turbulence intensity also tended to occur in areas of reduced wind (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig1-v2.jpg)
+
+**Figure 1.:** (A) A horizontal cross section of wind speed (m s−1) at 10 m above sea level (which intersects the island, given in grey) shows the reduction in wind strength near the cliffs (see supplement 1). (B) The horizontal wind vectors within the inset in A, modelled at 2 m normal to the surface, and coloured according to the total wind speed (m s−1). Wind is funnelled into the canyon on the left of the image (the Wick colony is located along the South side of this canyon), forcing birds to enter this area with a tailwind. (C) The turbulence intensity, TI, (a dimensionless ratio of the RMS of the turbulent wind fluctuations to the mean wind) at a distance of 2 m normal to the surface, within the inset shown in A. Typical values are ~0.1, so values of ~1 (red areas), indicate highly variable winds. Note these high values occur in areas with low mean winds (blue colours in B), so actual gust strength is low.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Within each colony, relative wind speeds are shown at different heights (observer locations are marked as top, the vertical mid-point of the cliff is given as middle, and bottom gives conditions at the base of the cliff). At most cliff sites the speed is less than upwind, a pattern that is particularly evident at the base of the cliffs. The only exception to this is at the Mew Stone where flow is channelled between the rock and the main island in westerly/easterly wind directions, leading to higher speeds.
+
 Hourly records of at-sea wind speeds from the M5 wave buoy (51.41°N, −6.42 °W, where values are adjusted from 3.5 to 2 m ASL) showed that the median wind speed during the breeding season (taken as March to August) was 6.1 m s−1 (±2.1 IQR) and the reasonable maximum was 13.5 m s−1 (actual maximum = 25.3 m s−1).
 
-## Landing data
+### Landing data
 
 Overall, 8623 landing attempts were recorded (guillemots n = 6140, razorbills n = 2483). Within this sample, birds were most likely to land on long thin ledges (42–52% of observations across study colonies) and least likely to land on the smallest ledges (11–33% of observations across study colonies). However, species differed in the ledges they selected, with razorbills landing on the smallest ledges more often than guillemots (Pearson’s chi-squared test, χ2 = 2639, df = 2, p<0.01, n = 8623) (Figure 3—figure supplement 1) and also landing on higher ledges (χ2 = 813, df = 3, p<0.01, n = 8623).
 
@@ -85,21 +268,31 @@ Wind speed was the variable that explained the greatest amount of variation in l
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig2-v2.jpg)
 
-**Figure 2.:** (A) The probability of landing (derived from the statistical model), declines to ~0.1 in winds of 10 m s−1. Binned raw data are shown for both species (guillemots as filled circles, razorbills as open circles; data are grouped with n ≥ 30 observations per bin). As success also varies with ledge type, both the model output and raw data refer to birds landing on long narrow ledges. (B) The probability of landing according to the mean, at-sea wind speed, as derived from the probabilistic model (also for long narrow ledges and a TI value of 0.2). The difference between the x-axes indicates the increase in wind speed over open water, compared to near the cliffs, as estimated using airflow model outputs averaged across all wind directions. (C) The distribution of at-sea wind speeds across the breeding season (for 2005–2018, recorded at the M5 wave buoy and reduced to 2 m ASL).10.7554/eLife.43842.006Figure 2—source data 2.
+**Figure 2.:** (A) The probability of landing (derived from the statistical model), declines to ~0.1 in winds of 10 m s−1. Binned raw data are shown for both species (guillemots as filled circles, razorbills as open circles; data are grouped with n ≥ 30 observations per bin). As success also varies with ledge type, both the model output and raw data refer to birds landing on long narrow ledges. (B) The probability of landing according to the mean, at-sea wind speed, as derived from the probabilistic model (also for long narrow ledges and a TI value of 0.2). The difference between the x-axes indicates the increase in wind speed over open water, compared to near the cliffs, as estimated using airflow model outputs averaged across all wind directions. (C) The distribution of at-sea wind speeds across the breeding season (for 2005–2018, recorded at the M5 wave buoy and reduced to 2 m ASL).
 
-## Probabilistic models of landing failure
+### Probabilistic models of landing failure
 
 The relationship between landing success and at-sea wind speeds was qualitatively similar to the statistical model, although the success was higher for any at-sea wind speed due to the reduction in wind speed that occurs close to the cliffs (Figure 2).
 
 The number of attempts required to land increased with wind speed for both species (Figure 3). All birds were predicted to land within 3–8 attempts for low wind speeds (4 m s−1), depending on species and ledge size. In winds of 10 m s−1, which are close to the reasonable maximum speeds expected during the breeding season (Figure 2C), guillemots may need up to 20 attempts to land, even on the largest landing platforms, whereas razorbills are predicted to land in roughly half the number of attempts.
 
-## Colony orientation
+![Figure 3.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig3-v2.jpg)
+
+**Figure 3.:** Seasonal wind speeds near the breeding cliffs will vary with wind direction and colony location (Figure 1—figure supplement 1 ). For the prevailing SW wind direction, median wind speeds across the breeding season are predicted to be ≤7 m s−1 (first two columns). Upper quartile speeds are predicted to be ≤ 9 m s−1 (third column), and reasonable maxima ≤ 16 m s−1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** A long ledge runs roughly half way down the cliff. This has sections where it expands into large platforms and others, such as that to the left of the picture, where it forms a long, narrow ledge.
+
+### Colony orientation
 
 The cliff area occupied by breeding auks was 76,673 m2, compared to 122,302 m2 of unoccupied cliff. While the 11 densest colonies appeared to be orientated in a range of directions bar those facing the prevailing SW wind, a Rayleigh test failed to reject the null hypothesis that the orientations were not uniformly distributed (Z = 0.314, p=0.346, df = 10) (Figure 4). In contrast, a number of unoccupied sites had a south-westerly orientation (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig4-v2.jpg)
 
-**Figure 4.:** Stubbings et al., 2015]).(A) Breeding colonies (grey and black regions) appear to be distributed all around Skomer, however, bearings of the 11 densest colonies (marked in black), given in (B), show that while colonies appear uniformly distributed overall (Z = 0.314, p=0.346, df = 10, Rayleigh test), none are oriented towards the prevailing south-westerly wind direction, despite the availability of cliff habitat (unoccupied sections are indicated with open circles). Study colonies are indicated with stars.
+**Figure 4.:** (A) Breeding colonies (grey and black regions) appear to be distributed all around Skomer, however, bearings of the 11 densest colonies (marked in black), given in (B), show that while colonies appear uniformly distributed overall (Z = 0.314, p=0.346, df = 10, Rayleigh test), none are oriented towards the prevailing south-westerly wind direction, despite the availability of cliff habitat (unoccupied sections are indicated with open circles). Study colonies are indicated with stars.
 
 ## Discussion
 
@@ -117,6 +310,6 @@ The ability to land more readily in some locations than others represents an asp
 
 Habitat suitability and quality are therefore likely to vary according to the prevailing conditions, how these interact with local topography (which will determine exposure levels and the ability of individuals to adjust the direction of their final approach), and fine-scale ledge characteristics that affect the extent that birds can manoeuvre above the landing spot. Nonetheless, the importance of these factors will also vary with species, with a given area being simultaneously accessible to some species and inaccessible to others. In our study, guillemots were much more susceptible to the effects of wind than razorbills. In fact, in the strongest winds we recorded, the probability of guillemots landing on small ledges in 10 attempts was just 0.55, compared to 0.85 in razorbills. The morphology of guillemots and razorbills is extremely similar, but guillemots are larger and out-compete razorbills for access to the bigger platforms (Linnebjerg et al., 2013). Indeed, in this study, razorbills landed on the smallest ledges more often than expected, with the reverse being true for guillemots. If ledge type were the sole determinant of landing ability, we would therefore expect razorbills to have inferior landing success. The increased manoeuvrability of razorbills (due to their lower wing loading and hence flight speed) is likely to be the reason why the opposite is true, as razorbills should be able to turn more tightly, and hence respond appropriately to wind in the last phase of landing. The chances of wind having a substantial impact on the energetic costs of landing are therefore far greater in guillemots, which could, in turn, influence their motivation to compete for the larger ledges.
 
-## Conclusions
+### Conclusions
 
 Decisions such as when and where to fly are fundamentally linked to wind conditions, because flight speed and flight costs vary with the wind vector (Hedenstrom and Alerstam, 1995). This affects population processes in a number of ways, influencing the most cost-effective migration routes (Kranstauber et al., 2015), species distributions (Davies et al., 2010) and shift durations in breeding birds (Weimerskirch et al., 2012). Our study provides evidence of an additional mechanism by which wind can affect birds, effectively preventing cliff-nesting auks from landing in high winds. The issue of how to land safely in windy conditions is pertinent for a wide range of species, as the diversity of several seabird groups increases with latitude and wind speed (Davies et al., 2010; Cairns et al., 2008). Low manoeuvrability may represent a constraint in this regard for auks – and one that is likely to be most critical in Brünnich's guillemots, which have a wing loading some 20% higher than common guillemots (Elliott et al., 2013). However, other aspects of flight control, such as stability, could be limiting for species with lower wing loading. This opens up a great many questions on how birds of different morphologies and flight capacities respond to strong and potentially variable airflows during landing, and the extent to which this modulates patterns of space use in the breeding season. Indeed, we expect that inter-specific variation in flight capacities may help explain why there is such clear distinction between the areas that different seabird taxa occupy on offshore islands. In general, we predict that cliff-nesting species with low manoeuvrability should select sheltered sites for breeding. The preference for low wind speeds may also affect the timing of breeding, with birds postponing their return to the breeding cliffs, or their lay date, if these periods coincide with persistent strong winds (cf. Wanless et al., 2009). This highlights the importance of monitoring the timing of strong winds during the breeding season, as well as the frequency. Overall, this is pertinent as wind regimes are changing (Young et al., 2011) and there is a need to establish a comprehensive framework to understand, and ultimately predict, which species are likely to be affected, and how (Lewis et al., 2015).

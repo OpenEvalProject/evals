@@ -19,13 +19,13 @@
 
 ### Affiliations
 
-1. https://ror.org/04jrwm652 Facultad de Medicina y Ciencia, Universidad San Sebastián Puerto Montt Chile
-2. https://ror.org/0460jpj73 Departamento de Microbiología, Facultad de Ciencias Biológicas, Universidad de Concepción Concepción Chile
-3. https://ror.org/0460jpj73 Departamento de Bioquímica y Biología Molecular, Facultad de Ciencias Biológicas, Universidad de Concepción Concepción Chile
+1. Facultad de Medicina y Ciencia, Universidad San Sebastián Puerto Montt Chile ([ROR:04jrwm652](https://ror.org/04jrwm652))
+2. Departamento de Microbiología, Facultad de Ciencias Biológicas, Universidad de Concepción Concepción Chile ([ROR:0460jpj73](https://ror.org/0460jpj73))
+3. Departamento de Bioquímica y Biología Molecular, Facultad de Ciencias Biológicas, Universidad de Concepción Concepción Chile ([ROR:0460jpj73](https://ror.org/0460jpj73))
 4. Hospital Dr. Eduardo Schütz Schroeder Puerto Montt Chile
-5. https://ror.org/05mf35n34 Hospital Base San José Osorno Chile
-6. https://ror.org/029ycp228 Instituto de Medicina, Facultad de Medicina, Universidad Austral Valdivia Chile
-7. https://ror.org/04a9tmd77 Division of Infectious Diseases, Department of Medicine, Immunology Institute, Icahn School of Medicine at Mount Sinai New York United States
+5. Hospital Base San José Osorno Chile ([ROR:05mf35n34](https://ror.org/05mf35n34))
+6. Instituto de Medicina, Facultad de Medicina, Universidad Austral Valdivia Chile ([ROR:029ycp228](https://ror.org/029ycp228))
+7. Division of Infectious Diseases, Department of Medicine, Immunology Institute, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
 
 † Corresponding author
 
@@ -45,9 +45,200 @@ Here, we designed a longitudinal comparison between mild and severe patients, ch
 
 ## Results
 
-## Clinical features and temporal gene expression patterns in SARS-CoV-2 infected patients
+### Clinical features and temporal gene expression patterns in SARS-CoV-2 infected patients
 
 A total of 22 peripheral blood samples were obtained from eight COVID-19 patients. These samplings following a longitudinal schedule complemented with two samples from healthy donors. All patients were recruited after an average period of 5 days after symptoms onset (Figure 1A). Some samples were taken from patients at the Hospital of Osorno and the Hospital of Puerto Montt, which are cities located in the region Los Lagos. The remaining samples were collected from patients at the Hospital Base and Clínica Alemana in Valdivia, a city located in the Region Los Ríos. All infections occurred between November 2020 and May 2021 (Table 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94242/elife-94242-fig1-v1.jpg)
+
+**Figure 1.:** (A) Longitudinal sampling schedule for severe and mild COVID-19 donors of peripheral blood (22 samples in total from 8 donors). Three sampling times (black dots) are displayed with respect to the recruitment day (D0). In addition, panel A shows the diagnosis day with positive PCR (green star), symptoms onset day (orange star), and hospitalization day (red cross). (B) The COVID-19 progression according to the WHO ordinal scale describes the temporal disease severity for each donor. Severe patients (S1–S4) are displayed in lines with colors scaling from green to red, while mild patients (M1–M4) are shown in blue line colors. The X-axis represents the days relative to the recruitment day. The vertical dot lines indicate the three sampling times used in this study (days 0, 7, and 28). (C) Principal component analysis plot based on gene expression profiles for mild (blue) and severe (red) COVID-19 patients and grouped by their sampling time (0, 7, and 28 days after recruitment). In addition, peripheral blood samples from two healthy donors are shown in green. PC = principal component. (D) Heatmap of the 100 most significant differentially expressed genes related to the COVID-19 disease progression. At the bottom, each column corresponds to the sampling points (0, 7, and 28 days since recruitment) of mild and severe patients. Genes are displayed as horizontal rows and are clustered by the similarity of expression profiles, represented by the dendrogram to the left of the heatmap. Red indicates higher expression, while blue means lower expression represented by the z-score of normalized read counts. Some COVID-19 severity-associated genes previously reported are indicated to the right of the heatmap in red.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94242/elife-94242-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** At the top, each column corresponds to the sampling points (0, 7, and 28 days since recruitment) of mild and severe patients. Genes are displayed as horizontal rows and are clustered by the similarity of expression profiles, represented by the dendrogram to the left of the heatmap. To the right of the heatmap, yellowish color indicates higher expression, while bluish color means lower expression represented by the z-score of normalized read counts.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94242/elife-94242-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Red or blue indicates genes that were significantly over- or sub-expressed at a particular sampling time, based on filtering by FDR ≤0.05 and the absolute value of −log10 (FC) (≥2.0). The remaining genes that do not show differential expression are indicated in gray. FDR = false discovery rate; FC = fold change.
+
+**Table 1.**
+ Clinical characteristics of the cohort.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clinical characteristics</th>
+      <th>Mild</th>
+      <th>Severe</th>
+      <th>All</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sex, n (female/male)</td>
+      <td>(2/2)</td>
+      <td>(2/2)</td>
+      <td>(4/4)</td>
+    </tr>
+    <tr>
+      <td>Total, n</td>
+      <td>4</td>
+      <td>4</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Median age, years ± SD</td>
+      <td>39.0 ± 3.9</td>
+      <td>46.7 ± 8</td>
+      <td>42.9 ± 7</td>
+    </tr>
+    <tr>
+      <td>Days from onset of symptoms to recruitment, median ± SD</td>
+      <td>1.2 ± 1.3</td>
+      <td>10.0 ± 1.8</td>
+      <td>5 ± 4.7</td>
+    </tr>
+    <tr>
+      <td>Days from COVID-19 diagnosis to recruitment, median ± SD</td>
+      <td>3.0 ± 0.7</td>
+      <td>8.5 ± 2.1</td>
+      <td>6 ± 3.4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Symptoms, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fever</td>
+      <td>1 (25%)</td>
+      <td>3 (75%)</td>
+      <td>4 (50%)</td>
+    </tr>
+    <tr>
+      <td>Chills</td>
+      <td>1 (25%)</td>
+      <td>2 (50%)</td>
+      <td>3 (37.5%)</td>
+    </tr>
+    <tr>
+      <td>Fever feeling</td>
+      <td>1 (25%)</td>
+      <td>2 (50%)</td>
+      <td>3 (37.5%)</td>
+    </tr>
+    <tr>
+      <td>Odynophagia</td>
+      <td>2 (50%)</td>
+      <td>1 (25%)</td>
+      <td>3 (37.5%)</td>
+    </tr>
+    <tr>
+      <td>Cough</td>
+      <td>1 (25%)</td>
+      <td>4 (100%)</td>
+      <td>5 (62.5%)</td>
+    </tr>
+    <tr>
+      <td>Expectoration</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dyspnea</td>
+      <td>-</td>
+      <td>4 (100%)</td>
+      <td>4 (50%)</td>
+    </tr>
+    <tr>
+      <td>Thoraxic pain</td>
+      <td>1 (25%)</td>
+      <td>1 (25%)</td>
+      <td>2 (25%)</td>
+    </tr>
+    <tr>
+      <td>Diarrhea</td>
+      <td>1 (25%)</td>
+      <td>2 (50%)</td>
+      <td>3 (37.5%)</td>
+    </tr>
+    <tr>
+      <td>Anosmia</td>
+      <td>1 (25%)</td>
+      <td>-</td>
+      <td>1 (12.5%)</td>
+    </tr>
+    <tr>
+      <td>Ageusia</td>
+      <td>1 (25%)</td>
+      <td>-</td>
+      <td>1 (12.5%)</td>
+    </tr>
+    <tr>
+      <td>Myalgia</td>
+      <td>1 (25%)</td>
+      <td>2 (50%)</td>
+      <td>3 (37.5%)</td>
+    </tr>
+    <tr>
+      <td>Headache</td>
+      <td>2 (50%)</td>
+      <td>1 (25%)</td>
+      <td>3 (37.5%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Treatment</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hospitalization, n (%)</td>
+      <td>-</td>
+      <td>4 (100%)</td>
+      <td>4 (50%)</td>
+    </tr>
+    <tr>
+      <td>Intubation, n (%)</td>
+      <td>-</td>
+      <td>4 (100%)</td>
+      <td>4 (50%)</td>
+    </tr>
+    <tr>
+      <td>Mechanical ventilation, n (%)</td>
+      <td>-</td>
+      <td>4 (100%)</td>
+      <td>4 (50%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Samples, n</td>
+      <td>12</td>
+      <td>10</td>
+      <td>22</td>
+    </tr>
+  </tbody>
+</table>
 
 A crucial issue with longitudinal studies is defining an appropriate sampling schedule that provides a reasonable comparison between patients during the time course of naturally occurred infections. To align the comparability and consistency of data measured between patients, we designed a protocol consisting of three donations per patient to monitor events occurring during both acute infection and the recovery phase. We collected peripheral blood samples on days 0, 7, and 28 (D0, D7, and D28) during the peaks of symptoms (Figure 1B).
 
@@ -59,7 +250,7 @@ The transcriptional profiles of severely ill patients changed during the recover
 
 The timing of COVID-19-related gene expression differed between mild and severely ill patients. We focused on the temporal variation of gene expression to identify differentially expressed genes (DEGs) associated with COVID-19 progression. We found statistically significant differences in the timing of differential gene expression between mild and severely ill individuals (Figure 1D and figure supplement 1). We observed that severe patients displayed a transcriptional response completely different from that of mild patients at the sequential time points of D0 and D7 (Figure 1D). Previous longitudinal studies identified molecular markers associated with severe COVID-19 (Bernardes et al., 2020; Notarbartolo et al., 2021; Zheng et al., 2020). We detected these same molecular markers in our severely ill cohort (Figure 1D). The expression profiles of those genes varied significantly between mild and severe patients. For instance, the expression of MMP9 metalloproteinase (Zheng et al., 2020), S100A8/A9 alarmins (Bernardes et al., 2020), PADI2 (Notarbartolo et al., 2021), and IL18Rap peptidyl-arginine deiminases (Masood et al., 2021; Schultze and Aschenbrenner, 2021) were higher in severe patients on D0 than mild or control patients (Figure 1D). In addition, we found that IFNG, CCL2, and CXCL10 cytokines, which were previously described as molecular markers in severely ill patients (Sette and Crotty, 2021; Vabret et al., 2020), displayed low expression in our severe COVID-19 patients in comparison with mildly ill patients during the progression of disease (Figure 1D).
 
-## The immune response of mild and severe patients is activated differentially during the acute phase of the COVID-19 infection
+### The immune response of mild and severe patients is activated differentially during the acute phase of the COVID-19 infection
 
 Most of the variations observed in the gene expression profiles of mild and severely ill patients occurred during the acute phase of disease. We performed pairwise gene expression comparisons between mild and severe patients and found DEGs mainly on D0 and D7. On D0, we found a total of 812 DEGs including 298 upregulated and 514 downregulated genes (Figure 1—figure supplement 2). On D7, the number of DEGs was similar to D0, with 319 genes showing higher expression and 563 genes with lower expression. We found no differential gene expression between mild and severe patients at D28, supporting the interpretation that most imbalances in the gene expression profiles in the PBMCs of severely ill patients leveled out by D28 (Figure 1—figure supplement 2).
 
@@ -73,23 +264,55 @@ In addition to enriched biological processes, we also focused on Kyoto encyclope
 
 Taken together, we show that there are distinct transcriptional responses along the COVID-19 progression, which suggest that immune responses to SARS-CoV-2 infection occur differently in individuals; thus, there might exist a differential imprinting associated with the severity of the COVID-19 infection.
 
-## Higher expression of NK cell hub-genes is a core event of acute phase that distinguishes mild from severe symptoms in COVID-19 individuals
+### Higher expression of NK cell hub-genes is a core event of acute phase that distinguishes mild from severe symptoms in COVID-19 individuals
 
 Given that our findings pointed out changes in the immune response after SARS-CoV-2 infection of the patients cataloged as mild and severely ill, we decided to uncover molecular pathways that might be responsible of the differences observed between patient groups during COVID-19 progression. To do so, we first identified genes that were differentially expressed between severity groups, and second, we chose only those that also showed changes in their trajectories across sampling times. In doing so, we found 828 genes that exhibited temporal differences in expression level during disease progression. Then using the Enrichr platform, we discovered additional biological processes and KEGG pathways that were differentially enriched during the COVID-19 progression in mild and severe patients (Figure 3). For instance, mild-infected patients exhibited expression of genes involved in kinase activity, enzyme-linked receptor activity, and apoptotic process not only at D0 (acute phase) but also at D7 (middle phase) (Figure 3A, C). In contrast, severely ill patients exhibited high level expression of genes involved in neutrophil activity. This observation was the most notorious outcome elicited by SARS-CoV-2 during acute COVID-19 in this group (Figure 3B, D, F). We observed that NK cell cytotoxicity was the most enriched pathway among the temporal and differential expressed genes in mildly ill patients during the acute phase (Figure 3B, C). Among these enriched genes, we found abundant membrane receptor genes that included KLRC1, KLRC3, KLRD1, KIR3DL2, NCR3, as well as other intra- and extra-cellular effectors that included SH2D1A, PRF1, GZMB, FASLG, ZAP70, IFNG, CD247, and LAT. Furthermore, the ZAP70, CD4, IFNG, IL2RB, STAT4, CD247, DLL1, LAT, and IL12RB2 genes were enriched in COVID-19 mild patients during the acute phase (Figure 3—source data 1 and 2). This data indicated that the Th1/Th2 cell differentiation pathway was robust and active during this phase and likely played an important role in the effective adaptation to dynamic events during the progression of the infection that protected mildly ill patients from experiencing severe symptoms. Interestingly, metabolic pathways involved with hematopoietic cell lineages were enriched in severely ill patients at this matched moment in time with the mildly ill patients (Figure 3B, D). Collectively, these observations indicate that coordination between humoral- and cell-mediated immunity were more tightly regulated in mildly ill patients than in severely ill patients.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/94242/elife-94242-fig3-v1.jpg)
 
-**Figure 3.:** Bar plots show gene ontology analysis for biological processes in light-blue/dark-blue and KEGG pathway in light-green/dark-green, using upregulated genes (A, C, E) and downregulated genes (B, D, F). The size of each bar is according to its −log10 p-value, and name pathways with asterisk indicates a q-value ≤0.05.Figure 3—source data 1.Figure 3A, C, E.Figure 3—source data 2.Figure 3B, D, F.
+**Figure 3.:** Bar plots show gene ontology analysis for biological processes in light-blue/dark-blue and KEGG pathway in light-green/dark-green, using upregulated genes (A, C, E) and downregulated genes (B, D, F). The size of each bar is according to its −log10 p-value, and name pathways with asterisk indicates a q-value ≤0.05.
 
 To confirm the importance of the differentially enriched pathways between mild and severe COVID-19 patients, we focused on analyzing the context of gene–gene interactions (Figure 4A and Figure 4—figure supplement 1) and changes in their quantitative expression levels overtime graphed as a heatmap (Figure 4B). The genes displayed in this KEGG pathway graph represent the upregulated genes (red boxes) in mild patients and their interactions involved in NK cell-mediated cytotoxicity (Figure 4A). Interestingly, all these genes showed overtime trajectories with high levels on days 0 and 7 in mild patients. These gene expression levels became roughly equivalent by D28 in both the mild and severe groups (Figure 4B). Complementing these observations, we constructed a protein–protein interaction (PPI) network using only upregulated genes during the early phase (days 0 and 7), followed by a clustering process that detected proteins with more significant interactions among the selected genes (Figure 4C). Notably, we detected KLRD1, CD247, and IFNG as central nodes of PPI networks. This finding makes sense because these proteins exhibit numerous interactions with other proteins involved in activating or inhibiting NK cell cytotoxicity (e.g., KLRC1, KLRC3, and KIR3DL2), as well as Th1/Th2 cell differentiation (CD4) and cytokine-cytokine receptor interaction (IL5RA and IL2RB). In Figure 4D, we show the comparative trajectories of these node genes between both groups of severity. Interestingly, we found a convergence of KLRD1 and CD247 genes on D28, while IFNG remained differentially expressed between patient groups.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/94242/elife-94242-fig4-v1.jpg)
+
+**Figure 4.:** (A) Kyoto encyclopedia of gene and genomes (KEGG) pathway of NK cell-mediated cytotoxicity represents the set NK cell hub-genes upregulated (red-boxes) in mild versus severe patients. The green boxes correspond to genes without differential expression. (B) Heatmap shows the differential expression levels of NK cell hub-genes over time (D0, D7, and D28 after recruitment) separated by mild and severe groups. The expression levels are represented by the z-score of normalized counts. Dendrogram shows the hierarchical clustering of genes. (C) Protein–protein interaction (PPI) network for upregulated genes during the acute phase in mild patients. The network corresponds to the principal clusters with more interaction between proteins and highlights the three most represented pathways: Cytokine–cytokine receptor interaction (blue); NK cell-mediated cytotoxicity (red); and Th1 and Th2 cell differentiation (yellow). (D) Time course expression levels for the main protein nodes identified in PPI network during the acute phase of COVID-19. The trajectories of these genes are graphed as days after recruitment (D0, D7, and D28) for mild (red triangle) and severe (green circle) groups and their enrichment is represented by the z-score of normalized counts.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94242/elife-94242-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Red boxes depict upregulated genes in mild COVID-19 patients during the acute phase of the disease, whereas green boxes depict genes without significant differential gene expression within the KEGG pathways.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/94242/elife-94242-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Bar graphs showing the enrichment of GO biological processes (in blue color), GO molecular functions (in purple color), KEGG pathways (in dark green color), and Reactome pathways (in light green color) between mild and severe COVID-19 patients. Enrichment results are sorted by −log10(p-value) (higher on top) with a cut-off for DEGs ≥4 fold-change considering the upregulated genes at D0 (A), upregulated genes at D7 (B), downregulated genes at D0 (C), and downregulated genes at D7 (D).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/94242/elife-94242-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Topological representation of the PPI network of upregulated genes in mild patients on D0. (B) Topological representation of the PPI network of upregulated genes in mild patients on D7. Some nodes are color-coded to highlight proteins involved in the following pathways: Cytokine–cytokine receptor interaction (blue), natural killer (NK) cell-mediated cytotoxicity (red); and Th1 and Th2 cell differentiation (yellow).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/94242/elife-94242-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Bar graphs show the enrichment of GO terms for biological processes while the networks reveal Kyoto encyclopedia of gene and genomes (KEGG) enriched pathways for upregulated genes (A, B) and downregulated genes (C, D) in mild patients, respectively. The size of each bar is according to its −log10 p-value, and name GO terms with asterisk indicates a q-value ≤0.05.
 
 Once we identified the trajectories of NK cell hub-genes participating in COVID-19 progression, we asked whether there were any DEGs (adj. p ≤ 0.05 and log2-fold change ≥2.0) obtained from a pairwise comparison of mildly and severely ill patients at days 0 and 7 that would have been left out from the longitudinal analysis. Given that the number of DEGs at each time point is higher when compared to the list of genes exhibiting differential trajectories, we performed a gene ontology (GO) and pathways analysis with the new set list of genes (Figure 4—figure supplement 2). The main result showed that NK cell-mediated cytotoxicity was predominant on D7. This finding reinforced the interpretation that there is a dysregulation of innate immunity, as previously suggested in severe patients (Paludan and Mogensen, 2022), with an over-representation of neutrophil activation. The results shown in Figure 4—figure supplement 3 and Figure 4—source data 1 summarize the pathway and PPI network analysis for these genes on D0 and D7, respectively, and show the predominant enrichment of NK genes. Taken together, these data are consistent with an active and regulated innate NK cytotoxic immune response mounted during the acute phase of infection in mild COVID-19 patients. This observation contrasts with the humoral- and neutrophil-biased response observed in severely ill individuals.
 
 Previous comparisons were done with the assumption that both cohorts were at the peak of their symptoms on D0. However, taking into account the delta at the days of symptoms onset, we also analyzed the pairwise comparison for D7 in mild patients, but this time comparing it to D0 in severe patients. Figure 4—figure supplement 4 highlights GO terms related to NK cell response and enriched pathways for NK cell cytotoxicity in mild patients. This result supports the idea that the transcriptional program differs between mild and severe individuals with the outstanding contribution of NK cells in mild patients. Otherwise, severe patients exhibit an inflammatory response reflected by the complement and coagulation pathways, which is according to our previous analysis.
 
-## Gene co-expression identifies NK hub-genes linked to the innate and adaptive immune response of mild COVID-19 patients
+### Gene co-expression identifies NK hub-genes linked to the innate and adaptive immune response of mild COVID-19 patients
 
 We identified genes that were coordinately expressed during COVID-19. We developed a weighted gene correlation network to simultaneously analyze all peripheral blood samples collected from patients during the longitudinal protocol and those from heathy donors to identify genes with coordinated expression. By using a differential co-expression approach, we identified 10 modules of co-expressed genes (Figure 5A). We then used these networks to correlate each module with available clinical information of the patients by calculating the module significance (MS) for each module–trait correlation. Not surprisingly, we found that most module eigen genes grouped according to the degree of COVID-19 infection (i.e., mild or severe patients) (Figure 5B). Among co-expressed gene modules, we focused on three modules that contained the largest number of genes. These modules correspond to blue (704 genes), brown (508 genes), and turquoise (712 genes). The blue and brown modules, which are correlated positively with mild patients (Figure 5B), were enriched with genes related to T cell activation and platelet function, respectively (Figure 5C). In contrast, the turquoise module, which was correlated positively with severe COVID-19 patients (Figure 5B), was enriched with genes related to neutrophil activation and inflammatory responses (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/94242/elife-94242-fig5-v1.jpg)
+
+**Figure 5.:** (A) Gene hierarchical clustering dendrogram of 10 detected modules based on Topological Overlap Matrices (TOM) measure. The branches and color bands represent the assigned module. (B) Module–trait relationships (MTRs) between detected modules and disease severity of COVID-19. MTRs are obtained by calculating Pearson correlation between the traits and the module eigengenes. The red and blue colors indicate strong positive or negative correlations, respectively. Rows represent module eigengene (ME) and columns indicate the disease severity of COVID-19, where correlations from each patient are shown from left to right according to their sampling time (D0, D7, and D28). (C) Gene ontology (GO) enrichment analysis of genes in the blue, brown, and turquoise modules. The color in the bar graphs refers to the module eigengene (ME). Enrichment results are sorted by −log10(p-value) (higher on top) of each biological process GO term. (D–F) Network visualization of enriched pathways based on co-expression genes from blue, brown, and turquoise modules, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94242/elife-94242-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The genes from the modules red, black, magenta, green, pink, yellow, and gray were used to study GO biological process terms. GO terms with statistically significant q-values are marked with an asterisk.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/94242/elife-94242-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Genes from modules red (A), black (B), pink (C), yellow (D), green (E), magenta (F), and gray (G) were used for analysis and the networks show the most enriched pathways.
 
 As shown thus far, the Th1/Th2 cell differentiation pathway was relevant in the immune response of mild COVID-19 patients, and because the blue module is enriched in lymphocyte-based immune response genes, we performed a gene–gene network analysis to determine how the genes from this module might have worked in the context of an adaptive immune response. In this analysis, we found genes belonging to the NK cell-mediated cytotoxicity pathway grouped together with the cytokine–cytokine receptor interaction and Th1/Th2 cell differentiation pathways (Figure 5D). Furthermore, these genes were previously identified as differentially expressed in the NK cytolytic pathway, like KLRD1, KLRC3, and KLRC1 receptors, as well as FASLG, SH2DB1A/B, and LAT. All of this evidence is consistent with the interpretation that highly interconnected genes from blue module had a functional significance in limiting the progression COVID-19 in mild patients. In the other modules, the brown network (Figure 5E) depicts enriched pathways for platelet activation, extracellular matrix–receptor interaction, hematopoietic cell lineage, gap junction, and complement and coagulation cascades which complemented with GO terms is an important focus of interest in COVID19 (Sb et al., 2024). Furthermore, the enriched pathways for the turquoise module include leishmaniasis, malaria, osteoclast differentiation, and nitrogen metabolism (Figure 5F), some of which are implicated in a neutrophil response as indicated by the GO terms (Babatunde and Adenuga, 2022; Passelli et al., 2021).
 
@@ -121,32 +344,32 @@ In conclusion, the longitudinal trajectories of gene expression, the differentia
 
 ## Materials and methods
 
-## Patient cohort and PBMCs sampling
+### Patient cohort and PBMCs sampling
 
 We recruited a total of eight patients diagnosed to be suffering from COVID-19 who were separated into two groups, one composed of four mild outpatients and another, conformed of four severe hospitalized individuals. Peripheral venous blood samples were obtained by using the venipuncture technique in Vacutainer K2 ethylenediamine-tetraacetic acid (EDTA) tubes (BD, USA) from each patient three times, including two clinical stages (acute phase and convalescence). PBMC was isolated from each fresh heparinized peripheral blood sample, through density gradient centrifugation on Ficoll-Paque Plus (GE Healthcare Life Sciences, USA) by centrifuging at 1600 rpm for 30 min (using minimum acceleration and no deceleration configurations). PBMC-containing fraction was then washed two times with 2 mM EDTA in phosphate-buffered saline (PBS) and stored in RNAlater solution (Sigma, USA) at −20°C until RNA extraction. The detailed clinical features of all patients and the detailed sampling time are shown in Figure 1 and Table 1. All samples were processed in a qualified BSL-2 laboratory and, according to protocols and approval from Institutional Review Boards, CEC-SSLR Ord N°226 and Ord N°399. Written informed consent was received before the participation of each patient.
 
-## RNA extraction, library preparation, and PBMC transcriptome sequencing
+### RNA extraction, library preparation, and PBMC transcriptome sequencing
 
 Total RNA extraction was performed from PBMC by Diagenode (Belgium). RNA samples were quantified using QubitTM RNA BR Assay Kit (Thermo Fisher Scientific, USA) and secondly checked for integrity using HS RNA Kit (Agilent, USA) on a Fragment analyzer system (Agilent, USA). The library preparation was performed using NEBnext ultraII Directional Kit and sequencing of the samples was performed on an Illumina NovaSeq 6000 instrument producing 150 bp paired-end reads running Control Software 1.7.0.
 
-## Identification of DEGs along COVID-19 progression and between disease severities
+### Identification of DEGs along COVID-19 progression and between disease severities
 
 Sequencing-quality check was performed using FastQC (Andrews, 2010), and low-quality reads were trimmed using Trim_Galore! (Krueger, 2019) with --clip_R1 3 and --clip_R2 3 options. High-quality reads were aligned to the human reference genome version GRCh38 with STAR v2.6.1a_08–27 (Zhang et al., 2022). Transcript counts were generated using featureCounts v1.6.3 (Bastard et al., 2020) with default settings. Differential gene expression analysis was performed in two ways using edgeR package v3.36.0 (Delorey et al., 2021). Temporally and DEGs and DEGs between mild and severe COVID-19 patients at each sampling time point were identified using the generalized log-linear model option in edgeR. Genes were considered as differentially expressed either with temporal expression differences or disease severity condition using a false discovery rate (Benjamini–Hochberg), an adjusted p-value of <0.05, and an absolute log2 fold change of 2. Transcript counts (normalized using TMM approach) were used to generate heatmaps for visualization of DEGs using the pheatmap R package. Expression was scaled by row z-scores for visualization, taking into account the mild and severe patients to obtain the mean and standard deviation of each group.
 
-## Gene set enrichment analysis
+### Gene set enrichment analysis
 
 In order to perform gene set enrichment analysis (GSEA) (Schultze and Aschenbrenner, 2021), after DEGs analysis only values of log2 fold change equal to or greater than 1 were considered. Then the GSEA was performed through ClusterProfiler package (v.3.16) (Yu et al., 2012) in R, we evaluated the significantly enriched biological process (GO) using gseGO function and pathways from KEGG using gseKEGG function.
 
-## Enrichment analysis of DEGs along COVID-19 progression and between mild and severe patients
+### Enrichment analysis of DEGs along COVID-19 progression and between mild and severe patients
 
 GO and pathways enrichment analyses were performed with both upregulated and downregulated genes using Enrichr platform (Xiong et al., 2020). Significant GO terms (Biological processes and Molecular functions) and pathways (KEGG and Reactome) were calculated from the adjusted p-value (q-value) using the Benjamini–Hochberg method for correction for multiple hypothesis. Considering a difference of one unit in z-score between the two severity groups, for mild patients we analyzed 365, 359, and 101 genes for days 0, 7, and 28, respectively, while for severe patients we analyzed 369, 414, and 136 genes for days 0, 7, and 28, respectively.
 
-## Weighted correlation network analysis
+### Weighted correlation network analysis
 
 Based on the assumption that DEGs may explain transcriptional differences observed between mild and severe COVID-19 patients. Read counts from DEGs among all samples were selected as a reference set for construction of a weighted gene co-expression networks and modules detection. Co-expressed gene modules were constructed using WGCNA R package v1.71 (Langfelder and Horvath, 2008) under a signed networks approach because it provides a better understanding of molecular regulatory mechanisms at the systemic level, facilitating better separation of modules in terms of biological performances. To do so, we removed outliers using the adjacency function and a standardized connectivity score of <−2.0; then we used the pickSoftThreshold function to identify the soft thresholding power β value, which was subsequently transformed into a Topological Overlap Matrix (TOM). Next, an average linkage hierarchical clustering analysis was performed based on the TOM dissimilarity (1-TOM) and modules were detected through a dynamic hybrid tree cutting algorithm.
 
 After the modules were identified, the module eigengene (ME) was summarized by the first principal component of the module expression levels. Module–trait relationships were estimated using Pearson correlation between MEs and disease severity. To evaluate the correlation strength, we calculated the MS that is defined as the average absolute gene significance of all genes involved in a module.
 
-## PPI network
+### PPI network
 
 All genes with differential trajectories over time (#827 genes) were included to construct a PPI network by STRING V11.5 (Szklarczyk et al., 2021). After clusterization, we focused our analysis on the principal cluster (one of three) with the highest connectivity between genes and highlighted the genes involved in the most significant pathways according to KEGG.

@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.39435.001 Antibiotic use is a primary driver of antibiotic resistance. However, antibiotic use can be distributed in different ways in a population, and the association between the distribution of use and antibiotic resistance has not been explored. Here, we tested the hypothesis that repeated use of antibiotics has a stronger association with population-wide antibiotic resistance than broadly-distributed, low-intensity use. First, we characterized the distribution of outpatient antibiotic use across US states, finding that antibiotic use is uneven and that repeated use of antibiotics makes up a minority of antibiotic use. Second, we compared antibiotic use with resistance for 72 pathogen-antibiotic combinations across states. Finally, having partitioned total use into extensive and intensive margins, we found that intense use had a weaker association with resistance than extensive use. If the use-resistance relationship is causal, these results suggest that reducing total use and selection intensity will require reducing broadly distributed, low-intensity use.
+Antibiotic use is a primary driver of antibiotic resistance. However, antibiotic use can be distributed in different ways in a population, and the association between the distribution of use and antibiotic resistance has not been explored. Here, we tested the hypothesis that repeated use of antibiotics has a stronger association with population-wide antibiotic resistance than broadly-distributed, low-intensity use. First, we characterized the distribution of outpatient antibiotic use across US states, finding that antibiotic use is uneven and that repeated use of antibiotics makes up a minority of antibiotic use. Second, we compared antibiotic use with resistance for 72 pathogen-antibiotic combinations across states. Finally, having partitioned total use into extensive and intensive margins, we found that intense use had a weaker association with resistance than extensive use. If the use-resistance relationship is causal, these results suggest that reducing total use and selection intensity will require reducing broadly distributed, low-intensity use.
 
 ## Introduction
 
@@ -40,23 +40,55 @@ To test this hypothesis, we first characterized the distribution of outpatient a
 
 ## Results
 
-## Antibiotic use is not evenly distributed
+### Antibiotic use is not evenly distributed
 
 Our analysis included 99.8 million outpatient pharmacy antibiotic prescription fills among 62.4 million unique people, approximately 20% of the US population, during 2011–2014 using the MarketScan database (Truven Health Analytics, 2015). In 2011, 34% of people received an antibiotic, and 10% of people received 57% of all antibiotic prescriptions. This distribution varied by population but was similar across data years (Figure 1—figure supplement 1). To characterize the distribution of specific antibiotics, we grouped individual antibiotic generic formulations into drug groups based on their chemical structures and mechanisms of action (Supplementary file 1 - Table 1). For all drug groups, most people had zero prescriptions for that antibiotic in a given year, but antibiotics differed in their distributions (Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/39435/elife-39435-fig1-v2.jpg)
+
+**Figure 1.:** Bars indicate the proportion of members in the MarketScan data with different numbers of prescription fills in 2011 for each of the drug groups. TMP/SMX: trimethoprim/sulfamethoxazole.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39435/elife-39435-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Each point represents a group of people with a certain number of associated claims for any antibiotic, starting at the left with the members with the greatest number of claims. The upper-right line segment shows members with one claim, the next segment shows members with two claims, etc. Colors indicate data years. Panels indicate study population. MarketScan: main data set. Children: MarketScan data including only members 15 and younger.
 
 We next examined the distribution of antibiotic use for each drug group and US state. To quantify the distribution of antibiotic use, we labeled each antibiotic pharmacy claim as ‘first’ if it was the first pharmacy fill for that drug group made by that individual in that calendar year, and ‘repeat’ if it was a second, third, etc. fill for an antibiotic in the same drug group made by the same individual in the same calendar year. An individual’s first and repeat claims in a calendar year add up to their total number of claims for that year. We then partitioned population-level annual total use, measured as pharmacy fills per 1000 members per year, into the sum of annual first use, measured as first fills per 1000 members per year, and repeat use, measured as repeat fill per 1000 members per year, for each drug group and US state. Annual first use of a drug group is equivalent to the proportion of the population taking an antibiotic in that group in that year.
 
 Total use varied between drug groups and across states (Figure 2). Annual repeat use made up a steady one-quarter to one-third of annual total use across drugs and states, with the exception of tetracyclines, for which high repeat use was associated with young adults (Figure 2—figure supplements 1 and 2), probably for acne treatment. This distribution of first and repeat use is distinct from the pattern predicted by the single-parameter Poisson and geometric distributions (Figure 2), but the ratio of first use to repeat use for each drug was nearly constant across US Census regions (Figure 2—figure supplement 3). Thus, the higher antibiotic use in the Southern states (Zhang et al., 2012; Hicks et al., 2013) is primarily attributable to a greater proportion of people taking antibiotics, not because those who receive antibiotics receive more of them.
 
-## Landscape of correlations between total use and resistance across pathogens and antibiotics
+![Figure 2.](https://cdn.elifesciences.org/articles/39435/elife-39435-fig2-v2.jpg)
+
+**Figure 2.:** Each point indicates first use and repeat use of a single drug group in a single US state (averaged over the data years). Points falling on the black line have three times as much first use as repeat use (i.e. repeat use is one-quarter of total use). The curves show the relationships between first use and repeat use expected from the Poisson and geometric distributions. TMP/SMX: trimethoprim/sulfamethoxazole.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39435/elife-39435-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Colors indicate data years.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39435/elife-39435-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Each point represents average use of a drug group in a state across data years. Children: MarketScan data including only members 15 and younger.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/39435/elife-39435-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Each point shows use for a drug group in a state, averaged over data years. Colors indicate US Census region (red, South; light red, Midwest; gray, Northeast; black, West). Line shows unweighted linear best fit.
+
+### Landscape of correlations between total use and resistance across pathogens and antibiotics
 
 To verify that our antibiotic use and resistance data sources could be used to distinguish the associations of first use and repeat use with antibiotic resistance, we first measured the landscape of Spearman correlations between total use and antibiotic resistance for multiple pathogens and antibiotics (Goossens et al., 2005; García-Rey et al., 2002; Bronzwaer et al., 2002; Bell et al., 2014; European Centre for Disease Prevention and Control et al., 2017; van de Sande-Bruinsma et al., 2008). To measure antibiotic resistance, we used ResistanceOpen, a US nationwide sample of hospital antibiotic susceptibility reports (MacFadden et al., 2016), which included resistance of 38 pathogens to 37 antibiotics in 641 antibiotic susceptibility reports from 230 organizations (hospitals, laboratories, and surveillance units) spread over 44 US states. Although most organizations contributing antibiotic susceptibility reports were hospitals, hospital antibiotic susceptibility reports are biased toward community-acquired organisms (Wang et al., 2017; Hindler and Stelling, 2007), community antibiotic use can drive antibiotic resistance measured in hospitals (Knight et al., 2018; MacFadden et al., 2018b), and studies often compare hospital antibiotic susceptibility reports with community antibiotic use (Goossens et al., 2005; MacDougall et al., 2005; Hicks et al., 2011).
 
 Because the epidemiology and pharmacology of each pathogen-antibiotic combination is unique, each combination could have a unique use-resistance relationship (Turnidge and Christiansen, 2005). We therefore aggregated antibiotic resistance into the same drug groups with which we aggregated antibiotic use (Supplementary file 1 – Table 1) and evaluated the 72 pathogen-antibiotic combinations that were adequately represented in the antibiotic resistance data (see Materials and methods). Across those 72 combinations, correlation coefficients ranged from –32% to 64% (Figure 3, Supplementary file 1 - Table 2). The strongest correlation (Spearman’s ρ = 64%, 95% CI 41% to 80%) was between macrolide use and the proportion of Streptococcus pneumoniae isolates that were macrolide nonsusceptible (Figure 4). Correlation coefficients were mostly positive (median correlation coefficient 21%, IQR 8% to 34%). Use-resistance correlations involving macrolides, quinolones, and cephalosporins were more positive than those for nitrofurantoin, and correlations involving quinolones were more positive than those for trimethoprim/sulfamethoxazole (pairwise Mann-Whitney tests, two-tailed, FDR = 0.05). Coefficients were not significantly more positive for any particular pathogen.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/39435/elife-39435-fig3-v2.jpg)
+
+**Figure 3.:** Error bars show 95% confidence intervals. The color strip visually displays the drug groups. Statistical significance is indicated by color of the points (black, significant at FDR = 0.05, two-tailed; dark gray, significant at α = 0.05, two-tailed; light gray, not significant). TMP/SMX: trimethoprim/sulfamethoxazole. CoNS: coagulase-negative Staphylococcus.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39435/elife-39435-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Error bars show 95% confidence intervals. Statistical significance is indicated by color of the points (black, significant at FDR = 0.05, two-tailed; dark gray, significant at α = 0.05, two-tailed; light gray, not significant). IP: inpatient. OP/ER: outpatient/emergency room. TMP/SMX: trimethoprim/sulfamethoxazole. CoNS: coagulase-negative Staphylococcus.
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/39435/elife-39435-fig4-v2.jpg)
 
-**Figure 4.:** Streptococcus pneumoniae correlate across US states.Labels indicate selected states. Colors indicate US Census region (red, South; light red, Midwest; gray, Northeast; black, West). Line shows unweighted linear best fit. Southern states have highest macrolide use and resistance.
+**Figure 4.:** Labels indicate selected states. Colors indicate US Census region (red, South; light red, Midwest; gray, Northeast; black, West). Line shows unweighted linear best fit. Southern states have highest macrolide use and resistance.
 
 Because isolates from older adults are disproportionately represented in antibiotic susceptibility reports (Kanjilal et al., 2018), we suspected that population-wide resistance might, in some cases, correlate better with antibiotic use among older adults. We therefore queried outpatient pharmacy antibiotic claims records from individuals 65 and older on Medicare (see Materials and methods). When antibiotic use among Medicare beneficiaries was substituted for antibiotic use as measured in the MarketScan data (Figure 2—figure supplement 2), correlation coefficients were similar (Supplementary file 1 – Tables 2 and 3). Conversely, children are the primary carriers for some pathogens (e.g. Streptococcus pneumoniae (García-Rodríguez and Fresnadillo Martínez, 2002)), so we suspected that resistance might, in other cases, better correlate with children’s antibiotic use. Restricting the antibiotic use data to members at most 15 years old (Figure 2—figure supplement 2) again yielded similar coefficients (Supplementary file 1 - Tables 2 and 3). Thus, the landscape of correlations we observed was mostly robust to the exact population in which antibiotic use was measured.
 
@@ -64,7 +96,7 @@ We also evaluated the sensitivity of the results to the measurement of antibioti
 
 We finally evaluated the sensitivity of the results to the exact antibiotic resistance data (Figure 3—figure supplement 1, Supplementary file 1 – Tables 2 and 3). First, we excluded all antibiotic susceptibility reports whose annotations indicated they include isolates exclusively from inpatient settings. Most reports include isolates from a mix of settings, so this analysis excluded only 7% of the total number of isolates from the data. Second, we included only reports whose annotations indicated their isolates were exclusively from outpatient or emergency room settings, which retained only 14% of the isolates. Correlations using the resistance data excluding inpatient-only isolates were slightly stronger than the baseline data (Wilcoxon test, two-tailed; pseudomedian difference in absolute correlation coefficient 1.1 percentage points, 95% CI 0.01 to 2.2), but correlations computed using the outpatient-only data were not systematically stronger or weaker.
 
-## Lack of evidence for more positive association with repeat use
+### Lack of evidence for more positive association with repeat use
 
 Having examined the landscape of the relationships between total use and resistance across pathogen-antibiotic combinations, we set out to test the hypothesis that repeat use has a stronger association with resistance than first use. For each pathogen-antibiotic combination, we performed a multiple regression predicting proportion nonsusceptible from first use and repeat use (Figure 5). First use and repeat use are highly correlated in some cases (Supplementary file 1 - Table 4) which will widen the confidence intervals on the regression coefficients but should not introduce bias (Schisterman et al., 2017). Regression coefficients for first use were more often positive than negative (54 of 72 [75%]; binomial test, 95% CI 63% to 84%). That is, first use was positively associated with resistance when controlling for repeat use. In contrast, regression coefficients for repeat use were more often negative than positive (44 of 72 [61%]; binomial test, 95% CI 49% to 72%). That is, repeat use was negatively associated with resistance when controlling for first use.
 
@@ -76,7 +108,7 @@ We evaluated the sensitivity of this result to age group, data source, metric of
 
 ## Discussion
 
-## Landscape of use-resistance relationships
+### Landscape of use-resistance relationships
 
 We used US nationwide datasets measuring antibiotic use in 60 million individuals and antibiotic resistance in 3 million bacterial isolates to analyze relationships between antibiotic use and resistance, examining 72 pathogen-antibiotic combinations simultaneously, using identical data sources and analytical methods across combinations. Although previous studies have examined multiple pathogen-antibiotic combinations, usually no more than five pathogens or antibiotics are considered at once (Goossens et al., 2005; García-Rey et al., 2002; van de Sande-Bruinsma et al., 2008). We found that correlations between total use and resistance were mostly positive and that certain drugs tended to have more positive correlations, but that there was no clear pattern by organism (Bell et al., 2014). The overall landscape of correlations was mostly robust to the age groups studied, the subset of resistance data used, and the geographic scale of the analysis, although correlations were somewhat weaker when conducting analysis at smaller geographic scales (van de Sande-Bruinsma et al., 2008; Priest et al., 2001; Magee et al., 1999; Livermore et al., 2000). We used outpatient antibiotic use as the predictor of resistance because 80–90% of antibiotic use occurs in the outpatient setting (Centers for Disease Control and Prevention, 2017) and because most antibiotic pressure on pathogens is due to ‘bystander selection’, in which the patient is treated for some reason other than an infection caused by that pathogen (Tedijanto et al., 2018).
 
@@ -92,7 +124,7 @@ Third, because of the limitations in statistical power, we did not address the p
 
 Finally, like in other studies of antibiotic use, we did not address patient adherence, and typical approaches to address adherence using claims data (Steiner and Prochazka, 1997) are problematic when the intended duration of treatment is not clear. The measured correlation would then be biased if, for example, poor patient adherence increased resistance and patient adherence were also correlated with antibiotic use.
 
-## Distribution of antibiotic use and antibiotic resistance
+### Distribution of antibiotic use and antibiotic resistance
 
 We described the distribution of antibiotic use across drug groups and US states, finding that 34% of the study population took an antibiotic in a year, and 10% of the population had 57% of the antibiotic fills in that year, similar to results from the UK (Shallcross et al., 2017), although this distribution varied by population (Figure 1—figure supplement 1). By partitioning annual total use into annual first use and annual repeat use, we were able to show that, for each drug, annual first use makes up the majority of annual total use and that variations in annual first use explain more variance in annual total use than do variations in annual repeat use. We also found that first use tends to have a positive association with resistance when controlling for repeat use, while repeat use tends to have negative associations with resistance when controlling for first use. This result held across sensitivity analyses.
 
@@ -114,7 +146,7 @@ In conclusion, we find that population-wide antibiotic use and population-wide r
 
 ## Materials and methods
 
-## Study population and antibiotic use
+### Study population and antibiotic use
 
 MarketScan (Truven Health Analytics, 2015) data covering 2011–2014 were used to identify insurance plan members and characterize their outpatient antibiotic use. To ensure quality of the antibiotic use distribution data, only members who were on their insurance plan for 12 months during a given calendar year were included. Prescription fills for oral and injected antibiotics were identified by generic formulation (Supplementary file 1 - Table 6) and drug forms (Supplementary file 1 - Table 7). We treated multiple claims on the same day for the same generic formulation with the same refill code as a single prescription fill. In the main analysis, antibiotic use was measured using fills, rather than days supply of drug, because some previous research has suggested that prescriptions better correlate with resistance (Bruyndonckx et al., 2015) and that this choice is probably not detrimental (van de Sande-Bruinsma et al., 2008; Lipsitch, 2001). Generic drugs were grouped into antibiotic drug groups designed to correspond to the antibiotic resistance drug groups described below (Supplementary file 1 - Table 1). All measures of antibiotic use were computed for each year 2011 to 2014, and the mean for each value across the 4 years was reported and used in analyses of the use-resistance relationship.
 
@@ -122,12 +154,12 @@ Antibiotic use among Medicare beneficiaries was measured as previously described
 
 This study was deemed exempt from review by the institutional review board at the Harvard T. H. Chan School of Public Health.
 
-## Antibiotic resistance
+### Antibiotic resistance
 
 Antibiotic resistance prevalences for common bacterial pathogens were identified from ResistanceOpen, a previously developed database of spatially localized patterns of antibiotic resistance (MacFadden et al., 2016). This continuously updated database contains antibiotic resistance data from online sources during 2012 to 2015. At the time of analysis, the resistance data consisted of approximately 86,000 records, each indicating the fraction of isolates of an organism that were nonsusceptible to a particular drug in a particular antibiotic susceptibility report (‘antibiogram’). The median number of isolates corresponding to each record was 93, but records had up to 75,000 associated isolates. Seven records (<0.01%) with missing numbers of isolates were excluded. In antibiograms that separated S. aureus into MRSA and MSSA, resistance of aggregate S. aureus to individual drugs was taken as the average of the MRSA and MSSA records, weighted by number of isolates. MRSA and MSSA were not considered as separate species in any analysis.
 
 Antibiotics used in antibiotic resistance assays were grouped into antibiotic drug groups (Supplementary file 1 - Table 1) designed to correspond to the antibiotic use groups. If resistance to more than one antibiotic in a drug group was reported for a particular pathogen in a particular antibiogram, resistance to that drug group for that pathogen in that antibiogram was computed as the mean of the resistances measured for the antibiotics in that group, weighted by the number of isolates. The proportion of nonsusceptible isolates in a state for a particular pathogen-antibiotic combination was computed as the average of the proportions from each contributing antibiogram in that state, weighted by number of isolates.
 
-## Statistical methods
+### Statistical methods
 
 Antibiotic use and resistance were compared using Spearman correlations and multiple linear regressions. Of the 887 pathogen-antibiotic combinations present in the data, we analyzed the 72 combinations that were present in at least 34 states. This excluded 21% of the pathogen-antibiotic-antibiogram combinations. We established the cut-off for number of states because 80% power to detect a Pearson correlation coefficient of magnitude 0.55 at α = 0.01 under a two-sided hypothesis requires at least 34 samples. There is no straightforward power calculation methodology for Spearman correlations, so we used the Pearson power calculation as an approximation. We aggregated data across all years, rather than comparing use and resistance in each year, because of the sparsity of the resistance data: of 2767 pathogen-antibiotic-state combinations in the data, only 182 have data for all 4 years. No pathogen-antibiotic combination had more than 4 states with data for all 4 years. Confidence intervals on correlation coefficients were computed using the Fisher transformation and normal approximation method. Multiple comparisons were accounted for using the Benjamini-Hochberg false discovery rate (FDR) (Benjamini and Hochberg, 1995). Multiple regressions predicted proportion of isolates nonsusceptible from first use and repeat use.

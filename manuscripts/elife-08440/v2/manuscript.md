@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.08440.001 We mapped the distribution of atrophy in Parkinson's disease (PD) using magnetic resonance imaging (MRI) and clinical data from 232 PD patients and 117 controls from the Parkinson's Progression Markers Initiative. Deformation-based morphometry and independent component analysis identified PD-specific atrophy in the midbrain, basal ganglia, basal forebrain, medial temporal lobe, and discrete cortical regions. The degree of atrophy reflected clinical measures of disease severity. The spatial pattern of atrophy demonstrated overlap with intrinsic networks present in healthy brain, as derived from functional MRI. Moreover, the degree of atrophy in each brain region reflected its functional and anatomical proximity to a presumed disease epicenter in the substantia nigra, compatible with a trans-neuronal spread of the disease. These results support a network-spread mechanism in PD. Finally, the atrophy pattern in PD was also seen in healthy aging, where it also correlated with the loss of striatal dopaminergic innervation. DOI: http://dx.doi.org/10.7554/eLife.08440.001
+We mapped the distribution of atrophy in Parkinson's disease (PD) using magnetic resonance imaging (MRI) and clinical data from 232 PD patients and 117 controls from the Parkinson's Progression Markers Initiative. Deformation-based morphometry and independent component analysis identified PD-specific atrophy in the midbrain, basal ganglia, basal forebrain, medial temporal lobe, and discrete cortical regions. The degree of atrophy reflected clinical measures of disease severity. The spatial pattern of atrophy demonstrated overlap with intrinsic networks present in healthy brain, as derived from functional MRI. Moreover, the degree of atrophy in each brain region reflected its functional and anatomical proximity to a presumed disease epicenter in the substantia nigra, compatible with a trans-neuronal spread of the disease. These results support a network-spread mechanism in PD. Finally, the atrophy pattern in PD was also seen in healthy aging, where it also correlated with the loss of striatal dopaminergic innervation.
 
 ## Introduction
 
@@ -36,69 +36,281 @@ We also sought to provide support for the network-spread hypothesis in PD by sho
 
 ## Results
 
-## ICA detects a PD-specific pattern of deformation
+### ICA detects a PD-specific pattern of deformation
 
 DBM was used as the measure of local brain atrophy. It is a measure of the change in the shape of each voxel that results from applying non-linear spatial normalization of the entire brain to a standard template (Aubert-Broche et al., 2013). For each subject, we obtained one parametric image of MRI-determined voxel-wise difference in volume, compared to the template brain. ICA was conducted on these DBM images using FSL MELODIC software (Beckmann and Smith, 2004). No constraint was imposed on the number of components, and probabilistic ICA estimated 30 independent components of deformation in the PPMI data set (PD patients and controls combined). Each ICA component consists of a spatial map and the average deformation value in that map for each subject.
 
 In each of these 30 independent components, the average deformation between PD and control groups was compared using an unpaired t-test. PD patients had significantly lower DBM values in one and only one of the 30 deformation components (p = 0.0001 uncorrected, p = 0.003 with Bonferroni correction). The next spatial component in terms of statistical significance (p = 0.06, uncorrected) consisted of cerebellar areas VIIIA, VIIB, CrusII, and IX known for their involvement in motor and executive function (Stoodley and Schmahmann, 2009). None of the other components demonstrated a difference between PD and controls (p > 0.05 uncorrected for all remaining components). We will call the deformation pattern showing a group difference the PD-ICA network from this point on. Ten of the other ICA components demonstrated an effect of age in the entire group. In three of these, there was a positive correlation between the component expression and age (meaning increased volume with age) and all three consisted of ventricle or cerebrospinal fluid space enlargement (Figure 1—figure supplement 1). The other seven age-related components demonstrated a negative correlation (volume loss with age) and consisted of areas of gray or white matter (Figure 1—figure supplement 2). The PD-ICA network also demonstrated greater atrophy with increasing age in both PD patients (r = −0.38, p < 10−9) and controls (r = −0.53, p < 10−9).
 
-## Spatial analysis of PD-ICA network
+### Spatial analysis of PD-ICA network
 
-Each spatial map was converted to a z-statistic image via a normalized mixture model and then thresholded at z ≥ 3. Regions were identified using the atlases of
+Each spatial map was converted to a z-statistic image via a normalized mixture model and then thresholded at z ≥ 3. Regions were identified using the atlases of Talairach and Tournoux (1988) and Mai et al. (2003). The PD-ICA network includes all components of the basal ganglia (substantia nigra, subthalamic nucleus, nucleus accumbens, putamen, caudate nucleus, and internal and external globus pallidus), the pedunculopontine nucleus, basal forebrain, including bed nucleus of the stria terminalis and an area containing the nucleus basalis of Meynert, the hypothalamus, amygdala, hippocampus, parahippocampal gyrus, and two thalamic regions, the ventrolateral nucleus and pulvinar. Cortical regions in this network are the insula, occipital cortex Brodmann area 19, superior temporal gyrus, rostral anterior cingulate cortex, premotor and supplementary areas, and parts of lateral prefrontal cortex (Figure 1, Tables 1, 2; see also Figure 1—figure supplement 4).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08440/elife-08440-fig1-v2.jpg)
 
-**Figure 1.:** This image displays the only one of the 30 independent component analysis (ICA) networks showing a significant difference between Parkinson's disease (PD) and Controls (p = 0.003 after correction for multiple comparison). The ICA spatial map was converted to a z-statistic image via a normalized mixture–model fit and then thresholded at z = 3. Selected sections in Montreal Neurological Institute (MNI) space at coordinates z = −16, z = −12, z = −7, z = −2, z = 8, z = 14, z = 20, z = 70. See Tables 1, 2 for anatomical localization. Note that the value at each voxel is the z-score of the ICA component, not the group difference.DOI: http://dx.doi.org/10.7554/eLife.08440.003
+**Figure 1.:** This image displays the only one of the 30 independent component analysis (ICA) networks showing a significant difference between Parkinson's disease (PD) and Controls (p = 0.003 after correction for multiple comparison). The ICA spatial map was converted to a z-statistic image via a normalized mixture–model fit and then thresholded at z = 3. Selected sections in Montreal Neurological Institute (MNI) space at coordinates z = −16, z = −12, z = −7, z = −2, z = 8, z = 14, z = 20, z = 70. See Tables 1, 2 for anatomical localization. Note that the value at each voxel is the z-score of the ICA component, not the group difference.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/08440/elife-08440-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** The average deformation for each subject in all 30 ICA networks was correlated with age. 10 networks showed a significant correlation after Bonferroni correction. The three components depicted here show a significant positive effect of age (expansion). They represent cerebrospinal fluid spaces.DOI: http://dx.doi.org/10.7554/eLife.08440.004
+**Figure 1—figure supplement 1.:** The average deformation for each subject in all 30 ICA networks was correlated with age. 10 networks showed a significant correlation after Bonferroni correction. The three components depicted here show a significant positive effect of age (expansion). They represent cerebrospinal fluid spaces.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/08440/elife-08440-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (The PD-ICA network is not shown here, but it also displays a correlation with age.)DOI: http://dx.doi.org/10.7554/eLife.08440.005
+**Figure 1—figure supplement 2.:** (The PD-ICA network is not shown here, but it also displays a correlation with age.)
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/08440/elife-08440-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** Masuda-Suzukake et al. (2013).Plot of the regions from Masuda-Suzukake et al. (2013) that demonstrated synucleinopathy after injection of pathogenic synuclein fibrils in the substantia nigra, and their anatomical connectivity. The dark green regions were present in the PD-ICA network in the current analysis after thresholding with z > 3. Entorhinal cortex and stria terminali depicted with light green were marginally outside the map 2.7 < z < 3.DOI: http://dx.doi.org/10.7554/eLife.08440.006
+**Figure 1—figure supplement 3.:** Plot of the regions from Masuda-Suzukake et al. (2013) that demonstrated synucleinopathy after injection of pathogenic synuclein fibrils in the substantia nigra, and their anatomical connectivity. The dark green regions were present in the PD-ICA network in the current analysis after thresholding with z > 3. Entorhinal cortex and stria terminali depicted with light green were marginally outside the map 2.7 < z < 3.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/08440/elife-08440-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** This map displays the univariate z-score of the group difference in atrophy at each voxel within the PD-ICA.DOI: http://dx.doi.org/10.7554/eLife.08440.007
+**Figure 1—figure supplement 4.:** This map displays the univariate z-score of the group difference in atrophy at each voxel within the PD-ICA.
 
-## Clinical correlation
+**Table 1.**
+ PD-ICA subcortical anatomical areas
 
-To confirm that the PD-ICA network identified above was disease-related, we compared individual deformation values in the network to measures of disease severity. The two clinical measures used were the striatum binding ratio (SBR) measured with single photon emission computed tomography (SPECT) using the tracer [
+
+<table>
+  <thead>
+    <tr>
+      <th>Brain area</th>
+      <th>Sub-areas</th>
+      <th>Z-score L/R</th>
+      <th>Peak coordinate L/R</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Entorhinal cortex</td>
+      <td>–</td>
+      <td>na (2.94)/3.1</td>
+      <td>−20, −7, −32/19, −4, −34</td>
+    </tr>
+    <tr>
+      <td>Claustrum</td>
+      <td>–</td>
+      <td>na/4.3</td>
+      <td>na/36, 0, −21</td>
+    </tr>
+    <tr>
+      <td>Amygdala</td>
+      <td>Basolateral</td>
+      <td>3.8/4.1</td>
+      <td>−23, −5, −21/22, −4, −20</td>
+    </tr>
+    <tr>
+      <td>Hippocampus</td>
+      <td>Dentate Gyrus</td>
+      <td>4.7/4.2</td>
+      <td>−34, −18, −14/34, −15, −17</td>
+    </tr>
+    <tr>
+      <td>Substantia nigra</td>
+      <td>–</td>
+      <td>5/4.9</td>
+      <td>−8, −18, −15/7, −17, −15</td>
+    </tr>
+    <tr>
+      <td>Periaqueductal gray</td>
+      <td>–</td>
+      <td>5.6/5.4</td>
+      <td>−3, −34, −12/3, −33, −12</td>
+    </tr>
+    <tr>
+      <td>Pedunculopontine nucleus</td>
+      <td>–</td>
+      <td>4.7/4.6</td>
+      <td>−6, −30, −11/6, −29, −11</td>
+    </tr>
+    <tr>
+      <td>Hypothalamus</td>
+      <td>–</td>
+      <td>3.4/4.2</td>
+      <td>−5, −3, −11/4, −3, −11</td>
+    </tr>
+    <tr>
+      <td>Hippocampus</td>
+      <td>CA1, CA2, CA3</td>
+      <td>5.3/4.5</td>
+      <td>−30, −27, −10/31, −27, −11</td>
+    </tr>
+    <tr>
+      <td>Subthalamic nucleus</td>
+      <td>–</td>
+      <td>5.2/5.2</td>
+      <td>−8, −16, −10/9, −16, −10</td>
+    </tr>
+    <tr>
+      <td>Nucleus accumbens</td>
+      <td>–</td>
+      <td>5/4.9</td>
+      <td>−9, 11, −9/8, 11, −8</td>
+    </tr>
+    <tr>
+      <td>Basal forebrain</td>
+      <td>BNST</td>
+      <td>3.3/3.6</td>
+      <td>−6, 4, −8/9, 3, −10</td>
+    </tr>
+    <tr>
+      <td>Basal forebrain</td>
+      <td>Extended amygdala</td>
+      <td>6/5.8</td>
+      <td>−16, −6, −8/10, −6, −8</td>
+    </tr>
+    <tr>
+      <td>Basal forebrain</td>
+      <td>Substantia innominata</td>
+      <td>3.6/5.1</td>
+      <td>−8, 0, −8/8, 0, −8</td>
+    </tr>
+    <tr>
+      <td>Putamen</td>
+      <td>Anterior putamen</td>
+      <td>5.6/4.8</td>
+      <td>−25, 11, −5/25, 11, −5</td>
+    </tr>
+    <tr>
+      <td>Putamen</td>
+      <td>Posterior putamen</td>
+      <td>6.1/4.8</td>
+      <td>−30, −12, −6/31, −15, −2</td>
+    </tr>
+    <tr>
+      <td>Globus pallidus</td>
+      <td>Internal + external</td>
+      <td>5.7/4.7</td>
+      <td>−20, 1, −1/21, −3, −3</td>
+    </tr>
+    <tr>
+      <td>Caudate nucleus</td>
+      <td>Head</td>
+      <td>8.2/6.2</td>
+      <td>−10, 12, 4/10, 10, 2</td>
+    </tr>
+    <tr>
+      <td>Pulvinar</td>
+      <td>Medial/Lateral</td>
+      <td>5.3/4.5</td>
+      <td>−19, −31, 5/11, −26, −4</td>
+    </tr>
+    <tr>
+      <td>Thalamus</td>
+      <td>Ventrolateral/Ventroanterior</td>
+      <td>5.3/3.6</td>
+      <td>−17, −14, 11/14, −14, 12</td>
+    </tr>
+    <tr>
+      <td>Caudate</td>
+      <td>Body</td>
+      <td>4/4.8</td>
+      <td>−15, 11, 12/17, 10, 15</td>
+    </tr>
+  </tbody>
+</table>
+
+_List of subcortical regions belonging to the PD-ICA network and their peak z-scores. (BA: Brodmann area, na: not applicable, BNST: bed nucleus of the stria terminalis, ICA: independent component analysis, PD: Parkinson's disease)._
+
+**Table 2.**
+ PD-ICA cortical anatomical areas
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Brain area</th>
+      <th>Sub-areas</th>
+      <th>Z-score L/R</th>
+      <th>Peak coordinate L/R</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Superior temporal gyrus</td>
+      <td>Temporal pole BA 38</td>
+      <td>5.6/3.6</td>
+      <td>−50, 11, −18/50, 10, −12</td>
+    </tr>
+    <tr>
+      <td>Occipital lobe</td>
+      <td>BA 19</td>
+      <td>3.1/3.4</td>
+      <td>−39, −77, −18/35, −79, −14</td>
+    </tr>
+    <tr>
+      <td>Insula</td>
+      <td>Mid-insula</td>
+      <td>4.5/4.6</td>
+      <td>−39, 0, −5/38, 5, −2</td>
+    </tr>
+    <tr>
+      <td>Inferior frontal gyrus</td>
+      <td>BA 45</td>
+      <td>3.4/4.4</td>
+      <td>−38, 26, 19/53, 26, 15</td>
+    </tr>
+    <tr>
+      <td>Anterior cingulate cortex</td>
+      <td>Rostral ACC</td>
+      <td>4.3/na</td>
+      <td>−6, 31, 18/na</td>
+    </tr>
+    <tr>
+      <td>Middle frontal gyrus</td>
+      <td>DLPFC BA 9/46</td>
+      <td>4.1/na</td>
+      <td>−22, 51, 19/na</td>
+    </tr>
+    <tr>
+      <td>Superior frontal gyrus</td>
+      <td>BA 6</td>
+      <td>4/3.7</td>
+      <td>−18, −10, 66/23, −10, 54</td>
+    </tr>
+    <tr>
+      <td>Supplementary motor area</td>
+      <td>–</td>
+      <td>na/3.4</td>
+      <td>na/5, −12, 67</td>
+    </tr>
+  </tbody>
+</table>
+
+_List of cortical regions belonging to the PD-ICA network and their peak z-scores. (BA: Brodmann area, na: not applicable, ACC: anterior cingulate cortex, DLPFC: dorsolateral prefrontal cortex, ICA: independent component analysis, PD: Parkinson's disease)._
+
+### Clinical correlation
+
+To confirm that the PD-ICA network identified above was disease-related, we compared individual deformation values in the network to measures of disease severity. The two clinical measures used were the striatum binding ratio (SBR) measured with single photon emission computed tomography (SPECT) using the tracer [123I]FP-CIT (Booij and Knol, 2007) to measure dopamine nerve terminal density, and the score on the Movement Disorder Society revised Unified Parkinson's Disease Rating Scale (UPDRS) part III (Goetz et al., 2008), an objective measure of motor disability. For SBR, we used the average value of left and right putamen. There was a significant correlation between individual SBR and DBM values in the PD-ICA network in the PD group (r = 0.23, p < 0.0005, Figure 2). This shows that the greater the loss of dopamine nerve terminals, the greater the volume loss in the PD-ICA network. There was also a significant correlation between these two measures in the control group (r = 0.33, p < 0.0005).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08440/elife-08440-fig2-v2.jpg)
 
-**Figure 2.:** Left: Unified Parkinson's Disease Rating Scale (UPDRS) part III (a measure of motor function and disease severity—higher value means more severe disease) was significantly correlated with the degree of atrophy in the network (r = −0.22, p < 0.001). Right: plot of [123I]FP-CIT striatum binding ratio (SBR) vs deformation value in the PD-ICA (Figure 1). Correlation: r = 0.23, p < 0.0005 for PD patients, and r = 0.33, p < 0.0005 for age-matched controls.DOI: http://dx.doi.org/10.7554/eLife.08440.010
+**Figure 2.:** Left: Unified Parkinson's Disease Rating Scale (UPDRS) part III (a measure of motor function and disease severity—higher value means more severe disease) was significantly correlated with the degree of atrophy in the network (r = −0.22, p < 0.001). Right: plot of [123I]FP-CIT striatum binding ratio (SBR) vs deformation value in the PD-ICA (Figure 1). Correlation: r = 0.23, p < 0.0005 for PD patients, and r = 0.33, p < 0.0005 for age-matched controls.
 
 There was a significant correlation between DBM values within the PD-ICA network and UPDRS III in the PD patients (r = −0.22, p < 0.001; Figure 2). SBR was not significantly correlated with age in the PD subjects (r = −0.10, p = 0.12) but it was in controls (r = −0.35, p < 0.0001). Also, in PD subjects, SBR was significantly correlated with UPDRS III (r = 0.20, p = 0.002). We also tested whether UPDRS III was correlated with DBM values obtained from any one of the other 29 ICA components. There was only one other component marginally correlated with disease severity (r = −0.2, p = 0.048, Bonferroni corrected) consisting of the previously mentioned cerebellar network, areas VIIIA, VIIIB, CrusII, and IX. Because age, UPDRS III, and SBR all correlated with PD-ICA DBM, we performed multiple linear regressions. In the PD group, the model (PD-ICA ~ 1 + Age + UPDRS III + SBR) showed an effect of age (p = 2.4 e−08), UPDRS III (p = 0.06) and SBR (p = 0.01). In the controls, the model (PD-ICA ~ 1 + Age + SBR) demonstrated an effect of age (p = 4.7 e−08) but not SBR (p = 0.17).
 
 Finally, multivariate analysis was used to look for an effect of scanning site. For each obtained DBM-network, we applied the model: DBM ~ Group (PD/Control) + Age + Gender + Site. There was no significant effect of site after correcting for multiple comparisons (p > 0.1).
 
-## Comparing disease-related atrophy to functional networks in health
+### Comparing disease-related atrophy to functional networks in health
 
 We next tested the hypothesis that the PD-ICA deformation network represents an intrinsic functional network. We compared the PD-ICA network as well as the other 29 ICA maps obtained from the DBM ICA analysis to intrinsic brain networks in healthy brain. In order to increase confidence in the results, we determined normal intrinsic brain networks in several different ways:A seed-based functional connectivity map obtained from resting-state fMRI (rsfMRI) in 51 healthy volunteers with an a priori region of interest in the SN.Two sets of 70 and 100 typical functional resting-state networks from healthy volunteers previously identified with MELODIC ICA by Smith et al. (2009) and Smith et al. (2013).
 
-First, we compared the resting-state SN seed-based map (
+First, we compared the resting-state SN seed-based map (Figure 3B) with all 30 structural maps obtained from the PPMI ICA analysis. Only two ICA networks passed the threshold of |r| > 0.25. These two networks correspond to very similar subcortical networks in basal ganglia and brainstem, one of which is mostly white matter areas (r = 0.36), while the other is mostly gray matter areas (r = 0.30). The latter is the aforementioned PD-ICA network in which atrophy correlated with disease severity (Figure 3—figure supplement 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08440/elife-08440-fig3-v2.jpg)
 
-**Figure 3.:** Selected sections for (A) PD-ICA network from the Parkinson's Progression Markers Initiative (PPMI) data set thresholded at z = 3. (B) Seed-based resting-state functional MRI (fMRI) connectivity with substantia nigra as a priori seed. (C) Intrinsic connectivity network (ICN) correlated with PD-ICA from Smith et al. (2009). (D) Regions responding to stimulus value during fMRI (meta-analysis of Bartra et al., 2013) (Selected slices in MNI space z = −2, x = −8, x = −23, y = 10.)DOI: http://dx.doi.org/10.7554/eLife.08440.011
+**Figure 3.:** Selected sections for (A) PD-ICA network from the Parkinson's Progression Markers Initiative (PPMI) data set thresholded at z = 3. (B) Seed-based resting-state functional MRI (fMRI) connectivity with substantia nigra as a priori seed. (C) Intrinsic connectivity network (ICN) correlated with PD-ICA from Smith et al. (2009). (D) Regions responding to stimulus value during fMRI (meta-analysis of Bartra et al., 2013) (Selected slices in MNI space z = −2, x = −8, x = −23, y = 10.)
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/08440/elife-08440-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (Selected slices in MNI space z = −2, x = −8, x = −23, y = 10).DOI: http://dx.doi.org/10.7554/eLife.08440.012
+**Figure 3—figure supplement 1.:** (Selected slices in MNI space z = −2, x = −8, x = −23, y = 10).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/08440/elife-08440-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Smith et al. (2009) is displayed in red.The highest correlation ICN is depicted in Figure 3A. We generated random ICNs by reassigning the voxel coordinates of each of the 70 ICNs and measured the spatial correlation of each permutated ICN with the PD-ICA network. This was repeated 1000 times to generate a mean correlation and confidence interval, depicted in blue.DOI: http://dx.doi.org/10.7554/eLife.08440.013
+**Figure 3—figure supplement 2.:** The highest correlation ICN is depicted in Figure 3A. We generated random ICNs by reassigning the voxel coordinates of each of the 70 ICNs and measured the spatial correlation of each permutated ICN with the PD-ICA network. This was repeated 1000 times to generate a mean correlation and confidence interval, depicted in blue.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/08440/elife-08440-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** We used the 100 component parcellation of RSNs available at db.humanconnectome.org (https://db.humanconnectome.org/megatrawl/index.html) generated using MELODIC software. The bottom left panel shows the overlap/similarity between the PD-ICA network and each of the 100 RSNs. The top 4 RSNs in terms of both correlation and Dice coefficient are displayed in the bottom right panel along with a hierarchical clustering of all 100 components (top panel) based on correlation of fMRI time series from each RSN. This shows that the four RSNs belong to the same cluster, supporting the notion that they form an intrinsically connected network. Moreover, permutation testing among the 100 RSNs demonstrated that the fMRI time series from the 4 RSNs of interest were significantly correlated with each other (p < 0.0016).DOI: http://dx.doi.org/10.7554/eLife.08440.014
+**Figure 3—figure supplement 3.:** We used the 100 component parcellation of RSNs available at db.humanconnectome.org (https://db.humanconnectome.org/megatrawl/index.html) generated using MELODIC software. The bottom left panel shows the overlap/similarity between the PD-ICA network and each of the 100 RSNs. The top 4 RSNs in terms of both correlation and Dice coefficient are displayed in the bottom right panel along with a hierarchical clustering of all 100 components (top panel) based on correlation of fMRI time series from each RSN. This shows that the four RSNs belong to the same cluster, supporting the notion that they form an intrinsically connected network. Moreover, permutation testing among the 100 RSNs demonstrated that the fMRI time series from the 4 RSNs of interest were significantly correlated with each other (p < 0.0016).
 
 Then, we compared the PD-ICA network to the 70 rsfMRI ICNs in normal brain provided by Smith et al. (2009). One of the 70 networks passed the threshold (with r = 0.32). This network has been related to reward tasks, interoceptive functions, and motor/sensory processing (Figure 3C). We assessed statistical significance by generating 1000 permutations of each of the 70 ICNs by reassigning the coordinates of each voxel randomly (Figure 3—figure supplement 2). We then repeated this comparison using a finer decomposition of 100 resting-state ICNs from the Human Connectome Project (HCP) (Smith et al., 2013) using MELODIC. Four components showed spatial overlap to the PD-ICA network using spatial correlation (Figure 3—figure supplement 3). The mean fMRI time series from these components were then used to determine whether they themselves belonged to one larger ICN. These time series demonstrated significant inter-correlation (p < 0.0016 by permutation testing). Finally, hierarchical clustering (Smith et al., 2013) confirmed that all four components clustered together.
 
@@ -106,33 +318,303 @@ We also compared the PD-ICA network to a map of regions responding to stimulus v
 
 In summary, the PD-ICA network exhibited significant spatial overlap with presumed intrinsic brain networks determined by three different methods.
 
-## Testing the propagation model
+### Testing the propagation model
 
 The sequential propagation model predicts that the spatial progression of the disease process will be determined by brain network topology. Connectivity between any region and the presumed disease epicenter will determine how severely it is affected. Here, we evaluated this assumption by exploring whether the gray matter atrophy patterns observed in PD patients could be explained by functional and geodesic distance (i.e., the number of edges separating two nodes in a graph) to the hypothetical pathogenic epicenter. We chose to use the SN as the epicenter based on known PD pathology. Note that the SN is unlikely to be the first affected site in the central nervous system (CNS) (Braak et al., 2003, 2004); however, we postulate that it is likely to function as a source for propagation to the supratentorial brain. Network connectivity in health can be defined functionally, using rsfMRI, or structurally, using DW-MRI. The influence of disease on each node can be estimated from the statistical difference in deformation between PD and control groups. We parcellated the brain into 112 regions of interest (ROIs, Figure 4—figure supplement 1) and computed the degree of deformation in each region. We also generated two connectomes from these ROI using rsfMRI and DW-MRI data from two different pools of healthy subjects. The connection strength between each pair of regions was computed as described in the ‘Materials and methods’.
 
-There was a significant correlation between resting-state functional connectivity of each node with SN (in healthy brain) and the PD-related deformation (PD minus control t-score), (r = 0.40, p < 0.0001). We repeated the same analysis controlling for spatial proximity between each region and SN by entering Euclidean distance as a covariate. The correlation was unchanged (r = 0.38, p < 0.0001), suggesting that the relationship cannot be explained by spatial proximity. The correlation implies that higher functional connection between a given region and SN is related to higher PD-related atrophy in that region (
+There was a significant correlation between resting-state functional connectivity of each node with SN (in healthy brain) and the PD-related deformation (PD minus control t-score), (r = 0.40, p < 0.0001). We repeated the same analysis controlling for spatial proximity between each region and SN by entering Euclidean distance as a covariate. The correlation was unchanged (r = 0.38, p < 0.0001), suggesting that the relationship cannot be explained by spatial proximity. The correlation implies that higher functional connection between a given region and SN is related to higher PD-related atrophy in that region (Figure 4). When using an anatomical measure of connectivity (DW-MRI) (Figure 4), we also observed a significant relationship between the level of atrophy of each region and its geodesic distance to the SN (r = −0.28, p < 0.003). These results were not different after controlling for Euclidean distance to SN (r = −0.25, p < 0.005). Finally, we repeated this analysis using every ROI as a potential disease propagator and found that SN was the likeliest disease propagator when using the rsfMRI connectome (Table 3). However, the red nucleus (r = 0.28) and subthalamic nucleus (r = 0.28) were also identified as potential propagators. Repeating this analysis using a tractography-derived connectome also revealed that the SN was one of the likeliest propagators, but numerous cerebellar regions also emerged as potential propagators (Figure 4—source data 2). This may be due to difficulty in accurate identification of the targets of brainstem white matter tracts using DW-MRI (Ford et al., 2013).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08440/elife-08440-fig4-v2.jpg)
 
-**Figure 4.:** The brain was parcellated into 112 regions (Figure 4—figure supplement 1). SN was chosen a priori as the region of interest, and the functional and structural connectivities between each given region and SN were calculated. The statistical difference (t-score) between the average deformation in PD and controls in each region was used as an atrophy measure. Using correlation, the relationship between regional atrophy and both regional functional connectivity with SN using resting-state fMRI (rsfMRI) (left) and regional anatomical distance using diffusion-weighted imaging (DW-MRI) (right) was examined. There was significantly greater atrophy with proximity to the SN determined functionally (r = 0.4, p < 0.0001) and anatomically (r = −0.28, p < 0.003). Note that the connectivity measure in rsfMRI is correlation, resulting in greater values for more connected regions, whereas the connectivity measure in DW-MRI is distance, resulting in smaller values for more connected regions.DOI: http://dx.doi.org/10.7554/eLife.08440.01510.7554/eLife.08440.016Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.08440.01610.7554/eLife.08440.017Figure 4—source data 2.Each brain region from the atlas was used as a potential propagator. The statistical difference (t-value) between the average deformation in PD and controls in each region was used as an atrophy measure. The correlation between this atrophy measure and the anatomical (or geodesic) distance to the potential propagator was used as a measure of propagation strength. The potential propagator regions are sorted by correlation values.DOI: http://dx.doi.org/10.7554/eLife.08440.017
+**Figure 4.:** The brain was parcellated into 112 regions (Figure 4—figure supplement 1). SN was chosen a priori as the region of interest, and the functional and structural connectivities between each given region and SN were calculated. The statistical difference (t-score) between the average deformation in PD and controls in each region was used as an atrophy measure. Using correlation, the relationship between regional atrophy and both regional functional connectivity with SN using resting-state fMRI (rsfMRI) (left) and regional anatomical distance using diffusion-weighted imaging (DW-MRI) (right) was examined. There was significantly greater atrophy with proximity to the SN determined functionally (r = 0.4, p < 0.0001) and anatomically (r = −0.28, p < 0.003). Note that the connectivity measure in rsfMRI is correlation, resulting in greater values for more connected regions, whereas the connectivity measure in DW-MRI is distance, resulting in smaller values for more connected regions.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/08440/elife-08440-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.08440.018
+**Table 3.**
+ Best propagators (resting-state fMRI connectome)
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Seed region</th>
+      <th>r</th>
+      <th>Seed region</th>
+      <th>r</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Substantia nigra</td>
+      <td>0.40</td>
+      <td>Cerebellum VIIIb</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>Subthalamic nucleus</td>
+      <td>0.28</td>
+      <td>Insula</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Red nucleus</td>
+      <td>0.28</td>
+      <td>Anterior temporal lobe (lateral part)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Cerebellum dentate</td>
+      <td>0.27</td>
+      <td>Cerebellum CrusI</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Pallidum</td>
+      <td>0.23</td>
+      <td>Superior temporal gyrus (anterior part)</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Hippocampus</td>
+      <td>0.22</td>
+      <td>Caudate nucleus</td>
+      <td>−0.06</td>
+    </tr>
+    <tr>
+      <td>Cerebellum vermis X</td>
+      <td>0.21</td>
+      <td>Superior temporal gyrus (posterior part)</td>
+      <td>−0.07</td>
+    </tr>
+    <tr>
+      <td>Cerebellum vermis VIIIa</td>
+      <td>0.20</td>
+      <td>Middle and inferior temporal gyrus</td>
+      <td>−0.07</td>
+    </tr>
+    <tr>
+      <td>Cerebellum interposed</td>
+      <td>0.20</td>
+      <td>Lingual gyrus</td>
+      <td>−0.08</td>
+    </tr>
+    <tr>
+      <td>Cerebellum fastigial</td>
+      <td>0.20</td>
+      <td>Postcentral gyrus</td>
+      <td>−0.08</td>
+    </tr>
+    <tr>
+      <td>Cerebellum vermis IX</td>
+      <td>0.20</td>
+      <td>Precentral gyrus</td>
+      <td>−0.09</td>
+    </tr>
+    <tr>
+      <td>Cerebellum vermis VIIIb</td>
+      <td>0.18</td>
+      <td>Posterior temporal lobe</td>
+      <td>−0.09</td>
+    </tr>
+    <tr>
+      <td>Cerebellum I IV</td>
+      <td>0.18</td>
+      <td>Inferior frontal gyrus</td>
+      <td>−0.10</td>
+    </tr>
+    <tr>
+      <td>Cerebellum vermis VIIb</td>
+      <td>0.17</td>
+      <td>Middle frontal gyrus</td>
+      <td>−0.10</td>
+    </tr>
+    <tr>
+      <td>Parahippocampal gyrus</td>
+      <td>0.16</td>
+      <td>Cuneus</td>
+      <td>−0.10</td>
+    </tr>
+    <tr>
+      <td>Cerebellum V</td>
+      <td>0.16</td>
+      <td>Anterior cingulate gyrus</td>
+      <td>−0.12</td>
+    </tr>
+    <tr>
+      <td>Anterior temporal lobe (medial part)</td>
+      <td>0.15</td>
+      <td>Occipital lobe (lateral part)</td>
+      <td>−0.12</td>
+    </tr>
+    <tr>
+      <td>Cerebellum vermis CrusII</td>
+      <td>0.14</td>
+      <td>Lateral orbital gyrus</td>
+      <td>−0.16</td>
+    </tr>
+    <tr>
+      <td>Occipitotemporal gyrus (lateral part)</td>
+      <td>0.14</td>
+      <td>Superior frontal gyrus</td>
+      <td>−0.16</td>
+    </tr>
+    <tr>
+      <td>Cerebellum VIIb</td>
+      <td>0.13</td>
+      <td>Parietal lobe (Inferiolateral)</td>
+      <td>−0.16</td>
+    </tr>
+    <tr>
+      <td>Cerebellum CrusII</td>
+      <td>0.13</td>
+      <td>Superior parietal gyrus</td>
+      <td>−0.20</td>
+    </tr>
+    <tr>
+      <td>Cerebellum IX</td>
+      <td>0.12</td>
+      <td>Pre-subgenual frontal cortex</td>
+      <td>−0.20</td>
+    </tr>
+    <tr>
+      <td>Cerebellum VI</td>
+      <td>0.12</td>
+      <td>Posterior orbital gyrus</td>
+      <td>−0.23</td>
+    </tr>
+    <tr>
+      <td>Amygdala</td>
+      <td>0.12</td>
+      <td>Posterior cingulate gyrus</td>
+      <td>−0.23</td>
+    </tr>
+    <tr>
+      <td>Cerebellum X</td>
+      <td>0.11</td>
+      <td>Medial orbital gyrus</td>
+      <td>−0.27</td>
+    </tr>
+    <tr>
+      <td>Cerebellum vermis CrusI</td>
+      <td>0.10</td>
+      <td>Straight gyrus</td>
+      <td>−0.31</td>
+    </tr>
+    <tr>
+      <td>Putamen</td>
+      <td>0.10</td>
+      <td>Anterior orbital gyrus</td>
+      <td>−0.33</td>
+    </tr>
+    <tr>
+      <td>Cerebellum vermis VI</td>
+      <td>0.08</td>
+      <td>Subgenual frontal cortex</td>
+      <td>−0.34</td>
+    </tr>
+    <tr>
+      <td>Cerebellum VIIIa</td>
+      <td>0.07</td>
+      <td>Nucleus accumbens</td>
+      <td>−0.38</td>
+    </tr>
+    <tr>
+      <td>Thalamus</td>
+      <td>0.06</td>
+      <td>Subcallosal area</td>
+      <td>−0.42</td>
+    </tr>
+  </tbody>
+</table>
+
+_Each brain region from the atlas was used as a potential propagator. The statistical difference (t-value) between the average deformation in PD and controls in each region was used as an atrophy measure. The correlation between this atrophy measure and the functional connectivity to the potential propagator was used as a measure of propagation strength. The potential propagator regions are sorted by correlation values.fMRI: functional MRI, PD: Parkinson's disease._
 
 ## Discussion
 
-## Pattern of atrophy in PD
+### Pattern of atrophy in PD
 
-The combination of DBM and ICA of an unprecedentedly large set of MRI data at a magnetic field strength of 3T allowed us to map out the brain regions affected in de novo PD. Patients included in this study were diagnosed on average 7 months prior to the investigation and had no evidence of dementia (Table 4). Most MRI studies to date using T1-weighted images in PD have reported normal volumes of brainstem, basal ganglia, and cerebral cortex. In the SN, measurements of volume and shape have been inconclusive, reporting either no change, a decrease, or increase in volume depending on the method used (Pyatigorskaya et al., 2014). However, most studies using parametric mapping have failed to report a difference in SN. Reduced putamen or caudate volume has been reported but only in advanced cases with mild cognitive impairment or dementia (Apostolova et al., 2010; Silbert and Kaye, 2010; Pyatigorskaya et al., 2014). Similarly, hippocampus and amygdala atrophy are typically linked to cognitive impairment (for review see Silbert and Kaye, 2010; Ibarretxe-Bilbao et al., 2011). With regard to cortical areas, studies using voxel-based morphometry (VBM), DBM, or cortical thickness measurements have reported significant differences between PD and controls in parahippocampal gyrus, inferior, middle and frontal temporal gyrus, parietal lobe and occipital lobe, but, once again, typically in advanced patients with cognitive impairment (Silbert and Kaye, 2010; Ibarretxe-Bilbao et al., 2011; Camicioli, 2013; Pyatigorskaya et al., 2014). Our finding of an atrophy network including brainstem and subcortical regions in these de novo patients is likely due to the larger number of participants available through the PPMI database compared to previous relatively underpowered investigations.10.7554/eLife.08440.020Table 4.Clinical characteristics of subjectsDOI: http://dx.doi.org/10.7554/eLife.08440.020Control (n = 117)PD (n = 232)p valueAge (years)59.7 ± 11.361.2 ± 9.10.1Years of education (years)15.7 ± 2.9115.4 ± 2.8NSSex (M/F/% males)74/43/63.2155/77/66.8NSHandedness–R/L/A98/11/8210/17/5NSStriatum binding ratio2.6 ± 0.61.4 ± 0.4<0.0001MoCA28.2 ± 1.227.3 ± 2.2<0.0001Disease duration (months)–6.9 ± 7.1–MDS UPDRS part III–21.9 ± 9.1–H&Y stage–1.6 ± 0.5–M = male, F = female, NS = not significant, H&Y: Hoehn and Yahr, PD: Parkinson's disease, MoCA, Montreal Cognitive Assessment, UPDRS, Unified Parkinson's Disease Rating Scale. Statistical differences analyzed through an unpaired t-test or chi square test. Listed values are the mean ± standard deviation.
+The combination of DBM and ICA of an unprecedentedly large set of MRI data at a magnetic field strength of 3T allowed us to map out the brain regions affected in de novo PD. Patients included in this study were diagnosed on average 7 months prior to the investigation and had no evidence of dementia (Table 4). Most MRI studies to date using T1-weighted images in PD have reported normal volumes of brainstem, basal ganglia, and cerebral cortex. In the SN, measurements of volume and shape have been inconclusive, reporting either no change, a decrease, or increase in volume depending on the method used (Pyatigorskaya et al., 2014). However, most studies using parametric mapping have failed to report a difference in SN. Reduced putamen or caudate volume has been reported but only in advanced cases with mild cognitive impairment or dementia (Apostolova et al., 2010; Silbert and Kaye, 2010; Pyatigorskaya et al., 2014). Similarly, hippocampus and amygdala atrophy are typically linked to cognitive impairment (for review see Silbert and Kaye, 2010; Ibarretxe-Bilbao et al., 2011). With regard to cortical areas, studies using voxel-based morphometry (VBM), DBM, or cortical thickness measurements have reported significant differences between PD and controls in parahippocampal gyrus, inferior, middle and frontal temporal gyrus, parietal lobe and occipital lobe, but, once again, typically in advanced patients with cognitive impairment (Silbert and Kaye, 2010; Ibarretxe-Bilbao et al., 2011; Camicioli, 2013; Pyatigorskaya et al., 2014). Our finding of an atrophy network including brainstem and subcortical regions in these de novo patients is likely due to the larger number of participants available through the PPMI database compared to previous relatively underpowered investigations.
+
+**Table 4.**
+ Clinical characteristics of subjects
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Control (n = 117)</th>
+      <th>PD (n = 232)</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>59.7 ± 11.3</td>
+      <td>61.2 ± 9.1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Years of education (years)</td>
+      <td>15.7 ± 2.91</td>
+      <td>15.4 ± 2.8</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Sex (M/F/% males)</td>
+      <td>74/43/63.2</td>
+      <td>155/77/66.8</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Handedness–R/L/A</td>
+      <td>98/11/8</td>
+      <td>210/17/5</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Striatum binding ratio</td>
+      <td>2.6 ± 0.6</td>
+      <td>1.4 ± 0.4</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>MoCA</td>
+      <td>28.2 ± 1.2</td>
+      <td>27.3 ± 2.2</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Disease duration (months)</td>
+      <td>–</td>
+      <td>6.9 ± 7.1</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>MDS UPDRS part III</td>
+      <td>–</td>
+      <td>21.9 ± 9.1</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>H&amp;Y stage</td>
+      <td>–</td>
+      <td>1.6 ± 0.5</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_M = male, F = female, NS = not significant, H&Y: Hoehn and Yahr, PD: Parkinson's disease, MoCA, Montreal Cognitive Assessment, UPDRS, Unified Parkinson's Disease Rating Scale. Statistical differences analyzed through an unpaired t-test or chi square test. Listed values are the mean ± standard deviation._
 
 Eidelberg and colleagues (Eidelberg, 2009) were the first to use data reduction techniques (principal component analysis) to map PD pathology using [18F]fluorodeoxyglucose (FDG) positron emission tomography. They identified a PD-related pattern (PDRP) implicating several regions identified in our analysis, namely globus pallidus, putamen, thalamus, premotor and supplementary motor areas. The expression of this PDRP differentiates patients from healthy controls and correlates with measures of disease severity. However, it probably reflects functional effects of the disease more than neuronal atrophy, as evidenced by the fact that it is normalized by levodopa or deep brain stimulation (Eidelberg, 2009).
 
-## PD targets an intrinsic brain network
+### PD targets an intrinsic brain network
 
 We found that the set of regions demonstrating atrophy in the PD group corresponded spatially to one ICN in normal brain. rsfMRI and anatomical imaging have identified consistent sets of regions that act as functional networks, by virtue of anatomical connectivity and temporal covariance of neuronal activity. We showed that our PD-ICA set of regions corresponded to a normal ICN identified by seed-based resting-state functional connectivity and ICA (Smith et al., 2009, 2013). The finding that PD targets a set of connected brain regions supports the network-spread hypothesis, although an alternate explanation is that neurons in one network could share a common vulnerability. The brain regions that make up the PD-ICA network are involved in reward and motivation, as demonstrated by the fact that they respond to the subjective value of a perceived stimulus during fMRI (Bartra et al., 2013). All the regions of this value network receive projections from midbrain dopamine neurons, in keeping with this neurotransmitter's role in signaling incentive value (Salamone et al., 2005; Berridge, 2006).
 
-## Network spread in PD
+### Network spread in PD
 
 Recent evidence supports a hypothesis originally put forward by Braak (Braak et al., 2003, 2006; Goedert et al., 2013), according to which pathogenic forms of the protein alpha-synuclein spread throughout the nervous system leading to a stereotypical step-wise pattern of neurological impairment in PD. Misfolded synuclein fibrils injected focally into rodent brains spread to neuronally connected but not adjacent areas (Luk et al., 2012; Masuda-Suzukake et al., 2013) (see also Figure 1—figure supplement 3).
 
@@ -142,17 +624,17 @@ Nonetheless, comparing the atrophy pattern identified here to the stages describ
 
 Another prediction of the network-spread model is that connectome hubs should be especially vulnerable to disease spread (Zhou et al., 2012). Hubs are defined as brain regions that are highly connected using graph theoretical metrics such as degree (Crossley et al., 2014) or betweenness (He et al., 2009). In theory, hubs, being highly connected, should have greater exposure to a toxic agent that is spread trans-neuronally. In a recent meta-analysis, Crossley et al. (2014) found that most neurodegenerative diseases, including AD and fronto-temporal dementia, did indeed target hubs. However, one salient exception was PD. One possibility is that the PD studies included in the meta-analysis were too small in scale or methodologically incapable of detecting the true extent of damage. It is intriguing that our study identified numerous hub regions (Bassett et al., 2008; He et al., 2009; Crossley et al., 2014) in the PD-ICA network, including the medial temporal lobe, putamen, insula, occipital cortex, anterior cingulate, superior frontal gyrus, and middle frontal gyrus. One notable hub region absent from our PD-ICA network is the posterior cingulate gyrus/precuneus, an area typically affected in AD (Buckner et al., 2009). It would be interesting to see if this area eventually develops atrophy as PD progresses, and whether this is associated with cognitive impairment.
 
-## Atrophy in healthy aged subjects
+### Atrophy in healthy aged subjects
 
 The PD-ICA network demonstrated a correlation between atrophy and dopamine denervation measured with SPECT, in both PD patients and age-matched control subjects. Atrophy and dopamine denervation also both correlated with age in the control group. In sum, the control subjects demonstrated age-related loss of dopamine innervation and atrophy in the PD-ICA network. This finding is also novel. It is known that healthy aging is associated with a progressive loss of dopamine neurotransmission (Fearnley and Lees, 1991), and that this may account for motor slowing and executive cognitive impairment that occurs with age (Jagust, 2013). Indeed, subtle Parkinsonian signs such as stooped posture, bradykinesia, and reduced facial expression in the healthy elderly were associated with SN neuron loss at post-mortem (Ross et al., 2004). Our results extend these findings by showing that neurodegeneration of the extended dopamine network also occurs in healthy aging, albeit without attaining the severity of outright PD, possibly via loss of neurotrophism, or perhaps, due to low-level mitochondrial dysfunction or synucleinopathy (Olanow and Brundin, 2013). PD might then target the PD-ICA network due to a dual hit effect of pathology superimposed upon normal aging.
 
 ## Materials and methods
 
-## Subjects and data collection
+### Subjects and data collection
 
 Data used in this article were primarily obtained from the PPMI database. In addition, rsfMRI and DW-MRI in healthy subjects were used to generate normal human connectomes for investigation of the network propagation model.
 
-## PPMI data set
+### PPMI data set
 
 The PPMI is described at www.ppmi-info.org. PPMI is a public–private partnership funded by the Michael J Fox Foundation for Parkinson's Research and funding partners listed at www.ppmi-info.org/fundingpartners. It is an observational, multicenter longitudinal study designed to identify PD biomarkers (Marek et al., 2011). Each participating PPMI site received approval from a local research ethics committee before study initiation and obtained written informed consent from all subjects participating in the study.
 
@@ -160,15 +642,15 @@ For this study, we used the initial visit 3T high-resolution T1-weighted MRI sca
 
 We also made use of the following data for each participant: age, sex, disease duration, score on the Movement Disorder Society—UPDRS III (Goetz et al., 2008) while off medications, score on the Montreal Cognitive Assessment battery and striatal binding ratio (SBR) from SPECT measurements with the tracer [123I]FP-CIT, a measure of dopamine neuron terminal density (Booij and Knol, 2007). In total data from 355 subjects (237 PD patients and 118 age-matched controls) were used. Six subjects, five PD patients and one age-matched control, were excluded from analysis due to failure in MRI processing. Clinical characteristics are shown in Table 4.
 
-## rsfMRI
+### rsfMRI
 
 We acquired rsfMRI in 51 healthy, right-handed volunteers (mean age: 23.6 ± 5.9, range: 18–47, 32 men, 63%). None of the subjects reported a history of drug abuse, neurological or psychiatric disorder. The experimental protocol was reviewed and approved by Research Ethics Board of MNI. All subjects gave informed consent. Scans were acquired using a Siemens MAGNETOM Trio 3T MRI system at the MNI. High-resolution, T1-weighted, three-dimensional volume acquisition for anatomic localization (1-mm3 voxel size) and resting-state echoplanar T2*-weighted images with blood oxygenation level-dependent (BOLD) contrast (3.5-mm isotropic voxels, TE 30 ms, TR 2 s, flip angle 90°) were acquired from all participants. Each resting-state scan was 5-min long (150 vol). Subjects were instructed to rest quietly with eyes open.
 
-## DW-MRI
+### DW-MRI
 
 To obtain white matter connectivity maps of normal brain, we used the Illinois Institute of Technology Human Brain Atlas v.3 (Varentsova et al., 2014) (http://www.nitrc.org/projects/iit2/). This atlas contains structural (T1) and high angular resolution DW-MRI data, and probabilistic gray matter maps of the adult human brain in MNI space. The atlas was generated from MRI data from 72 human subjects (42 females (59%): mean age 26.6 ± 4.8 years, range 20–39 years; 30 males: mean age 31.9 ± 4.9 years, range 22–40 years).
 
-## DBM
+### DBM
 
 Local change in tissue density was calculated using DBM. DBM consists in spatially transforming each MRI non-linearly to a stereotaxic template, and using the local deformation as a measure of tissue expansion or atrophy. There are other methods to detect population differences in brain structure. VBM measures local gray matter density by transforming the brain to stereotaxic space, segmenting the tissue into gray and white matter and cerebrospinal fluid, and performing spatial smoothing on the gray matter maps so that local image intensity reflects gray matter density (Ashburner and Friston, 2000). We decided against VBM as it does not preserve the entirety of the MRI data, and there is some suggestion that it is less sensitive than DBM to subcortical atrophy (Borghammer et al., 2010; Scanlon et al., 2011). Another approach is to measure cortical thickness from the MRI (Pereira et al., 2014), but this would also make it impossible to detect subcortical changes.
 
@@ -176,49 +658,73 @@ For DBM, we registered every brain non-linearly to the MNI152-2009c template (av
 
 The resulting images were registered to MNI space using the MNI152-2009c template, in two steps: (1) A hierarchical nine-parameter linear registration was computed between native MRI images and the template by maximizing the cross correlation of intensities as the similarity measure (Collins et al., 1994). The resulting transformation was applied to the MR image to resample it onto a 1-mm3 voxel grid and bring it into MNI space. (2) A hierarchical non-linear registration was performed on the linearly resampled scan to align it with the MNI152-2009c template (Collins and Evans, 1997). The resulting non-linear transformation field was inverted to generate a map of the deformations in template (MNI) space for each subject. Quality control was performed on each individual data set: the brain mask, and linear and non-linear registrations were visually inspected, and data sets with faulty registration were discarded.
 
-After the registration procedure, for each MRI and for each position in the brain x = x1, x2, x3, we obtain a displacement value in each direction to generate a field of vectors: U(x) = (u1(x), u2(x), u3(x)); that is, during the registration procedure position, x is displaced to the new position x + U(x) in the template space. This shows how much each voxel was moved from the MNI152-2009c template to match the subject's brain. To estimate local atrophy, an extra step is needed. Since a completely uniform displacement results in no change of volume, we are interested in the derivative of the displacement in each direction, that is, the determinant of the local Jacobian matrix of displacement.J=∂U∂x=[∂u1∂x1∂u1∂x2∂u1∂x3∂u2∂x1∂u2∂x2∂u2∂x3∂u3∂x1∂u3∂x2∂u3∂x3].
+After the registration procedure, for each MRI and for each position in the brain x = x1, x2, x3, we obtain a displacement value in each direction to generate a field of vectors: U(x) = (u1(x), u2(x), u3(x)); that is, during the registration procedure position, x is displaced to the new position x + U(x) in the template space. This shows how much each voxel was moved from the MNI152-2009c template to match the subject's brain. To estimate local atrophy, an extra step is needed. Since a completely uniform displacement results in no change of volume, we are interested in the derivative of the displacement in each direction, that is, the determinant of the local Jacobian matrix of displacement.
 
-This Jacobian matrix is estimated using a first order approximation:∂u3∂x2≅u3(x1,x2+δ,x3)−u3(x1,x2−δ,x3)2⋅δ,where δ is the voxel dimension along the x2 axis. To calculate the relative ratio of the local volume change, we use the determinant of the Jacobian matrix |J| minus 1, that is, |J| − 1. By performing this calculation at each voxel, we obtain a map of local relative volumetric difference between each subject image and the MNI152-2009c template, reported in the MNI152-2009c template Talairach-like coordinate system (Chung et al., 2001).
+$$
+J=\frac{∂U}{∂x}=[\frac{∂u_{1}}{∂x_{1}}\frac{∂u_{1}}{∂x_{2}}\frac{∂u_{1}}{∂x_{3}}\frac{∂u_{2}}{∂x_{1}}\frac{∂u_{2}}{∂x_{2}}\frac{∂u_{2}}{∂x_{3}}\frac{∂u_{3}}{∂x_{1}}\frac{∂u_{3}}{∂x_{2}}\frac{∂u_{3}}{∂x_{3}}].
+$$
 
-## Anatomical atlas
+This Jacobian matrix is estimated using a first order approximation:
+
+$$
+\frac{∂u_{3}}{∂x_{2}}≅\frac{u_{3}(x_{1},x_{2}+\delta,x_{3})−u_{3}(x_{1},x_{2}−\delta,x_{3})}{2⋅\delta},
+$$
+
+where δ is the voxel dimension along the x2 axis. To calculate the relative ratio of the local volume change, we use the determinant of the Jacobian matrix |J| minus 1, that is, |J| − 1. By performing this calculation at each voxel, we obtain a map of local relative volumetric difference between each subject image and the MNI152-2009c template, reported in the MNI152-2009c template Talairach-like coordinate system (Chung et al., 2001).
+
+### Anatomical atlas
 
 We created a composite anatomical atlas of gray matter regions in the cerebral hemispheres, cerebellum, and midbrain. For the supratentorial regions, we used the Hammers atlas (Copyright Imperial College of Science, Technology and Medicine, Alexander Hammers and University College London 2011. All rights Reserved) (Hammers et al., 2003) excluding the brainstem, cerebellum, and white matter. For the cerebellum, we used a public-domain high-resolution digital cerebellar atlas (Diedrichsen et al., 2009). These two atlases do not have adequate segmentation of three midbrain structures, the SN, subthalamic nucleus, and red nucleus. We therefore manually segmented these three structures using the Display software tool (McConnell Brain Imaging Centre) and three sources of anatomical information: the high-resolution MRI template (T1-weighted ICBM 2009c template, resolution = 0.5 mm3), the BigBrain (Amunts et al., 2013), a 20-micron resolution digital brain atlas in MNI space, and the brainstem anatomical atlas of Duvernoy et al. (1995). The three structures were manually drawn on the high-resolution ICBM 2009c template. We then confirmed the segmentation of these three regions with a recently developed subcortical atlas based on ultra high-field MRI (Keuken et al., 2014). The composite atlas thus created contains 112 cortical and subcortical structures (Figure 4—figure supplement 1, Figure 4—source data 1) and excludes all brainstem regions caudal to the SN.
 
-## Extracting independent components of the structural deformation
+### Extracting independent components of the structural deformation
 
 We used ICA to extract patterns of deformation in PD patients and age-matched controls. ICA is a statistical method to decompose multivariate data into statistically independent components (Calhoun et al., 2001; Beckmann and Smith, 2004; Hyvärinen et al., 2004). In this case, we used ICA to decompose the deformation maps into spatially distinct subcomponents. ICA was performed with MELODIC (http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/MELODIC), a toolbox that is part of the FSL analysis package (Beckmann and Smith, 2004, 2005; Smith et al., 2004; Douaud et al., 2014). All the individual DBM images (patients and controls combined) were concatenated to create a 4-D image in which the first three dimensions are the individual 3-D deformation maps and the fourth dimension consists of the subjects. MELODIC applies an initial principal component analysis-based dimension estimation to find the optimal number of independent components and then uses this number in the decomposition procedure to identify the independent spatial components. Each of these components consists of a vector of normalized DBM values (one per subject) as well as a corresponding 3-D spatial map. The spatial maps were converted to z-statistic images via normalized mixture-model fitting, and thresholded at z = 3 (Beckmann and Smith, 2004; Smith et al., 2009). The ICA algorithm in MELODIC is sensitive to sparsely distributed (super-Gaussian) data (Daubechies et al., 2009) as typically seen in fMRI. We confirmed that the DBM data used here possessed this super-Gaussian property (kurtosis >4).
 
-## Statistical analysis of independent networks
+### Statistical analysis of independent networks
 
 To identify regions showing greater atrophy in PD, the average DBM values for each ICA component and each subject were entered in an unpaired t-test comparing PD subjects and age-matched controls (Bonferroni corrected for multiple comparisons). Also, the DBM values from each component were correlated with the age of each subject to identify patterns of deformation associated with aging. Again, Bonferroni corrections were applied. The DBM values from the component(s) that demonstrated a statistically significant group difference were compared to two disease-related clinical measures using linear regression: SBR and UPDRS III.
 
-## rsfMRI analysis
+### rsfMRI analysis
 
 In order to test the theory that PD targets normal brain networks, we analyzed rsfMRI data from 51 young healthy individuals. The rsfMRI data were preprocessed using the Neuroimaging Analysis Kit (NIAK) (Bellec et al., 2010, 2012), to perform slice timing correction, rigid body motion correction, and removal of slow temporal drift using a high-pass filter with 0.01 Hz cut-off (Perlbarg et al., 2007). Physiological noise was accounted for by including white matter and cerebrospinal fluid signals as covariates. In the next step, the mean motion-corrected volume of each subject's fMRI data was first linearly (6 parameters: 3 translations, 3 rotations) registered to the native individual T1 image and then non-linearly registered to the MNI152 non-linear template (http://www.bic.mni.mcgill.ca/ServicesAtlases/HomePage). All data were resampled and smoothed with a 6-mm Gaussian kernel. All fMRI time series further underwent level one auto-regression (AR1) temporal de-noising.
 
 The mask of the SN described above was used to extract the average BOLD time series of each individual scan. The time series from right and left SN were averaged. Seed-based functional connectivity analysis was performed (Worsley et al., 2002; Worsley, 2005) as implemented in fmristat (http://www.math.mcgill.ca/keith/fmristat/). The SN average BOLD signal was entered as a regressor in the design matrix and its correlation calculated with all voxels in the brain. A mixed effects model was applied to generate a t-map for the group. This was thresholded based on random field theory to achieve a p value of 0.05 after correction for multiple comparisons.
 
-## Comparing PD-related structural atrophy networks and functional networks in healthy brain
+### Comparing PD-related structural atrophy networks and functional networks in healthy brain
 
 We quantified the spatial similarity between PD-ICA atrophy maps and intrinsic networks in the healthy brain. We compared the PD-ICA map to intrinsic brain networks obtained from three different sources: the functional connectivity map obtained from the SN seed region, and ICNs from two published sources (Smith et al., 2009, 2013). We also compared the PD-ICA network map to a map derived from a meta-analysis of fMRI experiments where subjects tracked the value of rewarding stimuli (Bartra et al., 2013).
 
 First, the functional connectivity map obtained from the SN seed-based analysis was compared to the 30 different ICA maps from the deformation analysis. Second, we compared the PD atrophy map (PD-ICA network) to the 70 ICNs identified by Smith et al. based on ICA analysis of resting-state data in healthy subjects (Smith et al., 2009). We further compared the PD-ICA map to 100 ICNs identified from the HCP rsfMRI data (Smith et al., 2013). Then, we compared the 30 ICA maps from the deformation analysis to a map identified in a meta-analysis of value-related fMRI studies, reasoning that dopamine networks implicated in PD would be similar to value networks in healthy brains (i.e., regions where BOLD signal tracks the value of experimental stimuli). Spatial cross-correlation (Pearson) was used as the measure of similarity. We chose |r| > 0.25 as indicative of similarity between two spatial maps as this has been argued to guard against false positives in a similar comparison between ICA-derived spatial maps (Smith et al., 2009).
 
-## Relating deformation to the normal connectome
+### Relating deformation to the normal connectome
 
 We generated the normal connectome of our 112 region brain atlas (52 paired bilateral regions, 8 midline regions), in two different ways, with rsfMRI and with DW-MRI. The goal here was to test the theory that geodesic (synaptic) proximity to the SN in healthy brain would predict the distribution of regional atrophy in PD.
 
-## Generation of the functional connectome
+### Generation of the functional connectome
 
-The modified Hammers-Cerebellum-Brainstem atlas was used to extract the average BOLD time-series, after correction for physiological noise, for all regions for each of the 51 rsfMRI acquisitions. All 112 regions in the atlas were used as separate masks and average time series were extracted for each. The time series used were the residuals of the linear model after correction for physiological noise and head motion. As a result, we obtained the correlation between all region pairs, which gives a 112 × 112 connectivity matrix for each acquisition. Then, a common group-based matrix called Rgroup was calculated. To do so, we followed steps explained in Carbonell et al. (2014): each individual subject's (j) correlation matrix Rindj was converted to a standard normal metric using the Fisher transformationZindj=12log(1+Rindj1−Rindj).
+The modified Hammers-Cerebellum-Brainstem atlas was used to extract the average BOLD time-series, after correction for physiological noise, for all regions for each of the 51 rsfMRI acquisitions. All 112 regions in the atlas were used as separate masks and average time series were extracted for each. The time series used were the residuals of the linear model after correction for physiological noise and head motion. As a result, we obtained the correlation between all region pairs, which gives a 112 × 112 connectivity matrix for each acquisition. Then, a common group-based matrix called Rgroup was calculated. To do so, we followed steps explained in Carbonell et al. (2014): each individual subject's (j) correlation matrix $R_{ind}^{j}$ was converted to a standard normal metric using the Fisher transformation
 
-Then, all the Fisher transformed results were averaged.Zgroup=∑j=1NZindjN,where N is the number of subjects. Finally, the group Z correlation matrix result was converted back to the correlation space using an inverse Fisher transformRgroup=e2Zgroup−1e2Zgroup+1.
+$$
+Z_{ind}^{j}=\frac{1}{2}log(\frac{1+R_{ind}^{j}}{1−R_{ind}^{j}}).
+$$
+
+Then, all the Fisher transformed results were averaged.
+
+$$
+Z_{group}=\frac{\sumj=1NZ_{ind}^{j}}{N},
+$$
+
+where N is the number of subjects. Finally, the group Z correlation matrix result was converted back to the correlation space using an inverse Fisher transform
+
+$$
+R_{group}=\frac{e^{2Z_{group}}−1}{e^{2Z_{group}}+1}.
+$$
 
 The modified Hammers-Suit-Brainstem atlas was also used to extract the average deformation values (Jacobian) for each region for each PD and age-matched control subject. A t-test was performed in each region to assess the difference between the PD and control groups, corrected for age. These t-values are a measure of the difference between the two groups and the sign of the t-value shows the direction of the effect, with negative values chosen to mean greater deformation (atrophy) in PD.
 
 The relationship between functional connectivity of each brain region with the selected seed region (SN) and the t-value of the deformation in each region (PD minus age-matched controls) was investigated using correlation analysis.
 
-## Generation of the DW-MRI connectome
+### Generation of the DW-MRI connectome
 
 Probabilistic anatomical connectivity values between each pair of atlas regions were estimated using a fully automated fiber tractography algorithm (Iturria-Medina et al., 2007) and the intravoxel fiber orientation distribution functions from the IIT Human Brain Atlas v.3 (Varentsova et al., 2014). A maximum of 500-mm trace length and a curvature threshold of ±90° were imposed as tracking parameters. Based on the resulting voxel-region connectivity maps, the anatomical connection probability (ACP) between any pair of regions i and j (ACPij = ACPji) was calculated as the maximum voxel-region connectivity value between both regions. The ACP measure (Iturria-Medina et al., 2007) reflects the degree of evidence supporting the existence of each hypothetical white matter connection, independently of the density/strength of this connection, and is thus a measure of low susceptibility to gross fiber degeneration related to the aging processes. Then, effective anatomical distances between each region i and all the other ROI were estimated as the lengths of the shortest paths (in terms of ACP values) linking that region to all the other regions (Iturria-Medina et al., 2014).
 

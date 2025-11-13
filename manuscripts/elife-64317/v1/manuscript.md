@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Although most Drosophila species lay eggs in overripe fruit, the agricultural pest Drosophila suzukii lays eggs in ripe fruit. We found that changes in bitter taste perception have accompanied this adaptation. We show that bitter-sensing mutants of Drosophila melanogaster undergo a shift in egg laying preference toward ripe fruit. D. suzukii has lost 20% of the bitter-sensing sensilla from the labellum, the major taste organ of the head. Physiological responses to various bitter compounds are lost. Responses to strawberry purées are lost from two classes of taste sensilla. Egg laying is not deterred by bitter compounds that deter other species. Profiling of labellar transcriptomes reveals reduced expression of several bitter Gr genes ( gustatory receptors ). These findings support a model in which bitter compounds in early ripening stages deter egg laying in most Drosophila species, but a loss of bitter response contributes to the adaptation of D. suzukii to ripe fruit.
+Although most Drosophila species lay eggs in overripe fruit, the agricultural pest Drosophila suzukii lays eggs in ripe fruit. We found that changes in bitter taste perception have accompanied this adaptation. We show that bitter-sensing mutants of Drosophila melanogaster undergo a shift in egg laying preference toward ripe fruit. D. suzukii has lost 20% of the bitter-sensing sensilla from the labellum, the major taste organ of the head. Physiological responses to various bitter compounds are lost. Responses to strawberry purées are lost from two classes of taste sensilla. Egg laying is not deterred by bitter compounds that deter other species. Profiling of labellar transcriptomes reveals reduced expression of several bitter Gr genes (gustatory receptors). These findings support a model in which bitter compounds in early ripening stages deter egg laying in most Drosophila species, but a loss of bitter response contributes to the adaptation of D. suzukii to ripe fruit.
 
 ## Introduction
 
@@ -31,11 +31,11 @@ Here, we analyze bitter taste and its role in the evolution of oviposition behav
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig1-v1.jpg)
 
-**Figure 1.:** Drosophila suzukii among a broad range of ripening stages.(A) Phylogenetic tree depicting the relationship between D. suzukii and closely related Drosophila species. From http://spottedwingflybase.org/. (B) The multiple-choice oviposition assay. (C–E) Oviposition preferences of Drosophila melanogaster (C), D. suzukii (D), and Drosophila biarmipes (E) for different ripening stages: 1 = white-green, 2 = mature first blush, 3 = light red, 4 = dark red, 5 = ripe, 6 = early fermented, and 7 = fermented. One-way ANOVA followed by Tukey’s multiple comparison test; n = 5. Error bars are SEM. Values indicated with different letters are significantly different (p<0.05).Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Phylogenetic tree depicting the relationship between D. suzukii and closely related Drosophila species. From http://spottedwingflybase.org/. (B) The multiple-choice oviposition assay. (C–E) Oviposition preferences of Drosophila melanogaster (C), D. suzukii (D), and Drosophila biarmipes (E) for different ripening stages: 1 = white-green, 2 = mature first blush, 3 = light red, 4 = dark red, 5 = ripe, 6 = early fermented, and 7 = fermented. One-way ANOVA followed by Tukey’s multiple comparison test; n = 5. Error bars are SEM. Values indicated with different letters are significantly different (p<0.05).
 
 ## Results
 
-## Oviposition preferences of D. suzukii among a broad range of ripening stages
+### Oviposition preferences of D. suzukii among a broad range of ripening stages
 
 In a natural environment, female fruit flies seeking an oviposition site often have a wide range of choices. A given plant may simultaneously bear fruit at stages ranging from green to ripe to overripe, with fermenting fruit on the ground underneath. To determine which stages are most and least preferred by D. suzukii we used a multiple-choice oviposition paradigm.
 
@@ -47,23 +47,31 @@ We also tested a third species, D. biarmipes, which is phylogenetically much clo
 
 These results from our multiple-choice paradigm confirm and extend previous studies (Bernardi et al., 2017; Karageorgi et al., 2017; Lee et al., 2011; Olazcuaga et al., 2019; Shrader et al., 2019) showing that D. suzukii has an oviposition preference for early maturation stages, including both ripe fruit and earlier ripening stages, unlike D. melanogaster and many other drosophilids.
 
-## Taste contributes to the oviposition difference between D. suzukii and D. melanogaster
+### Taste contributes to the oviposition difference between D. suzukii and D. melanogaster
 
 We asked whether taste plays a role in the oviposition differences between D. melanogaster and D. suzukii. For this purpose we tested the oviposition preference of D. melanogaster and D. suzukii for ripe and overripe strawberry in a two-choice assay (Figure 2A). D. melanogaster preferred the overripe fruit, whereas D. suzukii preferred the ripe fruit, as expected (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig2-v1.jpg)
 
-**Figure 2.:** Drosophila suzukii and Drosophila melanogaster.(A) The two-choice oviposition assay. (B) Oviposition preferences of D. suzukii and D. melanogaster for ripe and overripe strawberry. *p<0.05, Mann-Whitney test, n = 7. The numbers of eggs laid were 43 ± 7 for D. melanogaster and 77 ± 12 for D. suzukii. Error bars are SEM. (C,D) Preferences of two Gr33 mutants and control w flies for ripe and overripe strawberry. The strawberries used in (1118 Canton-SD) were from a different source than those in all other experiments. **p<0.01, ****p<0.0001, Mann-Whitney test; n = 18 for Gr33a and n = 19–20 for 2Gr33a and control. In (3C) the numbers of eggs laid were 156 ± 15 for the control and 90 ± 10 for Gr33a; in (2D) the numbers were 56 ± 7 for the control and 173 ± 25 for Gr33a. Error bars are SEM.3
+**Figure 2.:** (A) The two-choice oviposition assay. (B) Oviposition preferences of D. suzukii and D. melanogaster for ripe and overripe strawberry. *p<0.05, Mann-Whitney test, n = 7. The numbers of eggs laid were 43 ± 7 for D. melanogaster and 77 ± 12 for D. suzukii. Error bars are SEM. (C,D) Preferences of two Gr33 mutants and control w1118 Canton-S flies for ripe and overripe strawberry. The strawberries used in (D) were from a different source than those in all other experiments. **p<0.01, ****p<0.0001, Mann-Whitney test; n = 18 for Gr33a2 and n = 19–20 for Gr33a3 and control. In (C) the numbers of eggs laid were 156 ± 15 for the control and 90 ± 10 for Gr33a2; in (D) the numbers were 56 ± 7 for the control and 173 ± 25 for Gr33a3. Error bars are SEM.
 
 We then tested D. melanogaster mutant for Gr33a (gustatory receptor), a receptor that is expressed in many taste neurons and is required for behavioral and physiological responses to many bitter tastants (Dweck and Carlson, 2020; Moon et al., 2009). Surprisingly, Gr33a2 showed a shift in preference similar to that of D. suzukii (Figure 2C; the genetic background control is w1118 Canton-S, p<0.0001, n = 18, Wilcoxon signed-rank test). We confirmed this shift with another allele, Gr33a3, and a different source of strawberries (Figure 2D, p<0.01, n = 19–20).
 
 These results support a role for bitter taste in the oviposition preference between early and late ripening stages. One hypothesis suggested by these results is that the adaptation of D. suzukii to ripe fruit has been accompanied by a loss of bitter responses.
 
-## A reduced repertoire of taste sensilla in D. suzukii
+### A reduced repertoire of taste sensilla in D. suzukii
 
 We next investigated the anatomical basis of taste in D. suzukii. We examined three organs that make direct contact with potential oviposition sites: the labellum, the legs, and the ovipositor. These organs all harbor sensilla that could differ in number, structure, or position from those in closely related Drosophila species with different oviposition preferences.
 
 We first examined the labellum, the main taste organ of the fly head, via scanning electron microscopy (SEM). Three types of taste sensilla were identified: short (S), intermediate (I), and long (L) (Figure 3A–D). S sensilla are present on the most medial region (Figure 3A, white dots); I sensilla are found more laterally (Figure 3A, arrowheads); L sensilla (Figure 3A, arrows) are located between S and I sensilla. Corresponding classes with similar distributions are found in D. melanogaster (Shanbhag et al., 2001; Stocker, 1994; Weiss et al., 2011). Taste sensilla in both species fall into two classes distinguishable by the morphology of their tips: straight (Figure 3B) and forked (Figure 3C). In D. melanogaster, the straight tip and each prong of the forked tip have been shown to contain a terminal pore (Nayak and Singh, 1983). Two other sensilla lie near the periphery (Figure 3A, asterisks) in both species. They are ~17 μm long and taper to a fine tip with no pore, arguing against a function in taste.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig3-v1.jpg)
+
+**Figure 3.:** (A) Scanning electron micrograph of the labellum of D. suzukii showing short taste sensilla (white dots), intermediate taste sensilla (white arrowheads), long taste sensilla (white arrows), and sensilla that have no terminal pores (asterisks). (B) Scanning electron micrograph of an intermediate taste sensillum with a straight tip. (C) Scanning electron micrograph of a long taste sensillum with a forked tip. (D) Maps of labellar taste sensilla in the three species. (E) Map of taste sensilla on the two most distal tarsal segments of the female foreleg; the map applies to all three species.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Scanning electron micrograph of the ovipositor of D. suzukii showing bristles on each vaginal plate (VP). White arrowheads = thorn bristles type 1. White arrows and black arrowheads = thorn bristles type 2. (B) The distal part of the ovipositor of D. suzukii showing trichoid sensillum (TS), long bristle (LB), and thorn bristle type 1 (TB1). Extended description: Three TS are at the distal end of each VP (B). Each is inserted in a basal socket, is ~10 μm in length, and tapers to a fine tip. One LB, ~25 μm in length, is at the distal end of each VP (B). Each LB has a large socket and a smooth, slender, curved shaft that ends in a fine tip. TB1 are stout, blunt-tipped bristles ~14 μm in length (white arrowheads in A). There are 12–14 TB1 in a row, close to the distal lower margin of each vaginal plate. They have a longitudinally grooved shaft inserted in a narrow socket. This type of bristle has no counterpart in D. melanogaster, and could conceivably function in evaluation of the stiffness of oviposition sites; D. suzukii differs from related species in its preference for substrate stiffness. TB2 are similar to TB1 but are less stout, have wider sockets, and are located in two groups. The first group is a row of four bristles of variable size (A, white arrows), located on the upper margin of the distal half of each vaginal plate. The second group consists of 10–15 bristles (A, black arrowheads) in variable locations on the proximal half of each vaginal plate. In D. melanogaster, this type of bristle is represented only by a row of 10–15 bristles along the length of each vaginal plate (Hodgkin and Bryant, 1978; Lauge, 1982).
 
 A striking difference in sensillum morphology was found between D. suzukii and D. melanogaster: sensilla in D. suzukii are much longer. S sensilla of D. suzukii are ~43–53 μm long compared to ~20–30 μm in D. melanogaster; I sensilla are ~57–63 μm vs. 30–40 μm; L sensilla are ~73–100 μm vs. ~ 40–50 μm.
 
@@ -75,13 +83,25 @@ Ovipositors have taste function in larger flies (Merritt and Rice, 1984). Althou
 
 Thus, of the three D. suzukii organs that make contact with potential oviposition sites, the labellum and legs but not the ovipositor have a repertoire of sensilla whose morphology is characteristic of taste sensilla. We focused on them for a functional analysis.
 
-## Shifts in coding of bitter tastants in the D. suzukii labellum
+### Shifts in coding of bitter tastants in the D. suzukii labellum
 
 Since we had found that bitter taste contributes to the difference in oviposition preference between D. suzukii and D. melanogaster (Figure 2), we analyzed the coding of bitter taste in D. suzukii. Bitter taste is the interface between drosophilids and many plant secondary metabolites that are toxic to insects (Briscoe et al., 2013; Dweck and Carlson, 2020; Pentzold et al., 2017; Weiss et al., 2011). A wide variety of insect species have undergone evolutionary shifts that allow them to specialize on particular plant hosts that are toxic to other species, thereby reducing competition (Whiteman and Pierce, 2008).
 
 To examine bitter taste coding in female D. suzukii, we systematically measured electrophysiological responses of all 27 labellar sensilla to a panel of 16 bitter compounds, that is, 432 sensillum-tastant combinations, in an analysis comprising >3100 recordings. The compounds are structurally diverse and include naturally occurring alkaloids, terpenoids, and phenolic compounds. They also include DEET (N,N-Diethyl-meta-toluamide), the most widely used insect repellent worldwide (Diaz, 2016).
 
 We found that L sensilla of D. suzukii showed little or no response to any tested bitter compound (Figure 4). Two S sensilla, S3 and S7, also showed little response to bitter compounds (n < 10 spikes/s to all tastants). I sensilla responded to a subset of bitter compounds, and most S sensilla responded to different subsets. The strongest responses were from several S sensilla to escin (ESC) and aristolochic acid (ARI), ~60 spikes/s in each case (Figures 4 and 5A). Some bitter compounds, such as DEET and saponin (SAP), elicited little or no response from any sensillum.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig4-v1.jpg)
+
+**Figure 4.:** For Drosophila suzukii, n = 5–10 for 84% of the 459 tastant-sensillum combinations; n > 10 for the remaining 16%. For Drosophila biarmipes, n = 5–10 for 96% of the 459 tastant-sensillum combinations; n > 10 for the remaining 4%. Responses of Drosophila melanogaster are adapted from Weiss et al., 2011. Responses to the diluent control, tricholine citrate (TCC), were subtracted. Values for D. suzukii and D. biarmipes are in a Supplementary file.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Some values are too small to be seen.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The diluent control was subtracted from each response. Although the S-a and S-b sensilla occupy similar map positions in Drosophila simulans and D. biarmipes, there are two fewer S sensilla in these species than in D. melanogaster and the positions of the remaining S sensilla do not align precisely with those in D. melanogaster; we acknowledge that it is accordingly more difficult to correlate with confidence each S cluster of D. melanogaster with a particular S cluster of the other two species. In D. melanogaster, values are taken from Figure 4 and Figure 4—figure supplement 1; data from D. melanogaster are from Weiss et al., 2011.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig5-v1.jpg)
 
@@ -111,11 +131,23 @@ I sensilla all fall into a single class, I-a, in both D. suzukii and D. biarmipe
 
 These results, taken together, reveal that functional classes of taste neurons and their tuning breadths expanded or contracted during the evolution of the three species.
 
-## Strawberry extracts elicit different labellar responses from D. suzukii than from other species
+### Strawberry extracts elicit different labellar responses from D. suzukii than from other species
 
 Having characterized labellar sensilla of the three species, we next asked whether there were functional differences among species that could contribute to their oviposition preferences. We measured electrophysiological responses of the entire ensemble of labellar sensilla of all three species to extracts of ripe and overripe strawberry.
 
 The response of S sensilla to ripe strawberry was low in all three species (Figure 6A, left). However, total spike input was lower in D. suzukii and D. biarmipes than in D. melanogaster in both S-a and S-b (Figure 6B, left; p<0.05, one-way ANOVA followed by Tukey's multiple comparison test, n = 5).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig6-v1.jpg)
+
+**Figure 6.:** (A) Labellar taste responses of Drosophila melanogaster, D. suzukii, and Drosophila biarmipes to ripe and overripe strawberry. The strawberry extracts were those used as stages 5 and 7 in the experiment shown in Figure 1. n = 5–15. Error bars are SEM. (B) Summed responses of S-a and S-b sensilla to ripe and overripe strawberry. One-way ANOVA followed by Tukey’s multiple comparison test; n = 5. Error bars are SEM. Values indicated with different letters are significantly different (p<0.05). (C) Sample traces of electrophysiological recordings from S7 of the control w1118 Canton S, Gr33a2, and Gr33a3 to overripe strawberry. (D) Electrophysiological responses of S5, S6, and S7 of w1118 Canton S, Gr33a2, and Gr33a3 to overripe strawberry (**p=0.001, ***p=0.0001, ****p<0.0001; Mann-Whitney test; n = 5–14).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Mean labellar responses of each functional class to ripe and overripe strawberry in all three species. Labellar taste responses of Drosophila melanogaster, D. suzukii, and Drosophila biarmipes to ripe and overripe strawberry. n = 5–15. Error bars are SEM. 'S-c' refers to the two S sensilla that show little or no response to any of the tested bitter compounds and that cluster with L sensilla. Data for I sensilla of D. melanogaster include I7. (B) Summed responses of L, S-c, and I sensilla to ripe and overripe strawberry. One-way ANOVA followed by Tukey’s multiple comparison test; n = 5. Error bars are SEM. Responses of S sensilla are shown in Figure 6B. Values indicated with different letters are significantly different. (C,D) Data from Figure 6B plotted as a comparison of responses to different extracts.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Principal component analysis (PCA), calculated from labellar responses to extracts of ripe (A) or overripe strawberry (B).
 
 The response to overripe strawberry also differed among species (Figure 6A, right column). Whereas all S sensilla of D. melanogaster responded, there was little or no response of any S-a or S-b sensilla of D. suzukii. Specifically, the responses of D. melanogaster to overripe strawberry in S-a and S-b sensilla were 13 ± 0.6 spikes/s and 14 ± 0.5 spikes/s, respectively (Figure 6—figure supplement 1A). In D. suzukii, the corresponding responses were 1.0 ± 0.2 spikes/s and 0.0 ± 0 spikes/s. Moreover, since D. suzukii has two fewer S-a sensilla than melanogaster, the difference in total spike input is even greater: 78 spikes/s compared to 4 spikes/s (Figure 6B; note the scale in the left and right panels of Figure 6B are different; see also Figure 6—figure supplement 1C,D).
 
@@ -129,15 +161,23 @@ Principal component analysis (PCA) showed that all three species are distinguis
 
 Taken together, these results indicate that labellar taste response to extracts of ripe and overripe strawberry have changed in D. suzukii compared to the other species.
 
-## Shifts in tarsal coding of bitter tastants in D. suzukii
+### Shifts in tarsal coding of bitter tastants in D. suzukii
 
 We analyzed coding of bitter tastants in the tarsal segments of the female forelegs, focusing on the same panel of 16 bitter tastants and 7 sensilla of the two most distal segments of all three species, that is, 336 tastant-sensillum combinations in all. As in the labellum, different sensilla responded to different subsets of tastants, and different tastants elicited responses from different subsets of sensilla (Figure 7A and Figure 7—source data 1). Some sensilla such as f5s responded to a number of tastants in all species, whereas others such as f5a and f4b responded to none in any species. f5v responded to several bitter compounds in D. biarmipes, but not in D. suzukii or D. melanogaster (Figure 7A,B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig7-v1.jpg)
+
+**Figure 7.:** (A) Heat map of electrophysiological responses to bitter compounds. n = 5–17. Responses to the diluent control, tricholine citrate (TCC), were subtracted. (B) Sample electrophysiological traces. Strychnine nitrate salt (STR) elicits little, if any, response from f5v in Drosophila melanogaster and D. suzukii but elicits a response from f5v in Drosophila biarmipes. (C) Coumarin (COU) elicits response from f4s in D. melanogaster and D. biarmipes but elicits little, if any, response from f4s in D. suzukii. (D) N,N-Diethyl-meta-toluamide (DEET) elicits a response from f5b in D. melanogaster and D. biarmipes but elicits little, if any, response from f5b in D. suzukii.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Cluster analysis, based on the bitter compounds and the sensilla tested in Figure 7, using Ward’s method. The diluent control was subtracted from each response. Values are taken from Figure 7 and Figure 7—source data 1.
 
 D. suzukii shows a striking loss of response to certain bitter compounds. Coumarin (COU) and DEET both elicit excitatory responses from f5b, f4s, and f4c in both D. melanogaster and D. biarmipes, but few, if any, excitatory responses (n > 0 spikes/s) from any sensilla in D. suzukii; interestingly, both tastants appear to inhibit f5s (Figure 7A,C,D).
 
 A hierarchical cluster analysis based on the bitter responses elicited from these sensilla identified classes of bitter-sensing neurons and shows that they have been dynamic over evolutionary time. Specifically, the analysis identified three classes in D. suzukii and D. melanogaster; each class contains the same sensilla in these two species (Figure 7—figure supplement 1). The tarsal sensilla in D. biarmipes fall into five classes. In all three species, one class consists of sensilla that responded to none of the tested tastants. In D. melanogaster and D. suzukii, this class contains three sensilla, f5a, f5v, and f4b; in D. biarmipes, the class contains only two, f5a and f4b, as f5v has evolved a different profile and falls into a separate class. In all three species f5s is the sole member of a class. All three species have another class that includes f5b and f4s; in D. melanogaster and D. suzukii, this class includes f4c, but in D. biarmipes f4c has evolved a different response profile and is the unique member of another class.
 
-## D. suzukii oviposition is not deterred by bitter compounds
+### D. suzukii oviposition is not deterred by bitter compounds
 
 The oviposition preference shift observed in Gr33a mutants (Figure 2), the loss of bitter-sensing sensilla in D. suzukii (Figure 3), and the loss of response to certain bitter compounds in the D. suzukii labellum (Figures 4 and 5B–D) and tarsi (Figure 7) together suggested the hypothesis that bitter compounds could play a role in the oviposition differences between species. We wondered if there were any bitter compounds in ripe fruit that deterred oviposition in D. melanogaster but not in D. suzukii.
 
@@ -145,13 +185,13 @@ We assessed the egg laying behavior of D. suzukii, D. melanogaster, and D. biarm
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig8-v1.jpg)
 
-**Figure 8.:** Drosophila suzukii oviposition is not deterred by bitter compounds that deter its close relatives.(A) The two-choice oviposition assay. The oviposition preference is defined as: (number of eggs on sucrose substrate – number of eggs on sucrose+bitter substrate)/(total number of eggs on both substrates). (B) Oviposition preferences of Drosophila melanogaster, D. suzukii, and for individual bitter compounds. One-way ANOVA followed by Dunnett’s multiple comparison test; n = 15–21. Error bars are SEM. (C) Oviposition preferences for three different concentrations of N,N-Diethyl-meta-toluamide (DEET), sparteine sulfate salt (SPS), coumarin (COU), (-)-lobeline hydrochloride (LOB), and denatoniumbenzoate (DEN). Data for 0.5 mM concentrations were taken from panel B. n = 6–11. Error bars are SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+**Figure 8.:** (A) The two-choice oviposition assay. The oviposition preference is defined as: (number of eggs on sucrose substrate – number of eggs on sucrose+bitter substrate)/(total number of eggs on both substrates). (B) Oviposition preferences of Drosophila melanogaster, D. suzukii, and for individual bitter compounds. One-way ANOVA followed by Dunnett’s multiple comparison test; n = 15–21. Error bars are SEM. (C) Oviposition preferences for three different concentrations of N,N-Diethyl-meta-toluamide (DEET), sparteine sulfate salt (SPS), coumarin (COU), (-)-lobeline hydrochloride (LOB), and denatoniumbenzoate (DEN). Data for 0.5 mM concentrations were taken from panel B. n = 6–11. Error bars are SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 To confirm and extend our finding that D. suzukii lacks oviposition avoidance of the five bitter compounds that elicited responses from either of the other two species, we tested higher concentrations of all five compounds. D. suzukii again showed no deterrence at either of the higher concentrations of any tested compound (Figure 8C; one-way ANOVA followed by Dunnett's multiple comparison test, p>0.05).
 
 Together these results demonstrate that D. suzukii has lost oviposition deterrence to at least some bitter compounds that deter its close relatives. This behavioral difference may represent an adaptation that facilitates the ability of D. suzukii to lay eggs on earlier ripening stages.
 
-## Reduced expression of bitter taste receptor genes in D. suzukii
+### Reduced expression of bitter taste receptor genes in D. suzukii
 
 We wondered if there were differences in gene expression between the taste systems of D. suzukii and its relatives, perhaps even differences in the expression of bitter receptors. Since the most striking anatomical and physiological differences we had found were in the labellum, we profiled the labellar transcriptomes of the three species. We carried out high-throughput sequencing of polyadenylated labellar RNA samples and obtained a total of 100–130 million paired-end reads from each species, deriving from a total of three biological replicates in each case.
 
@@ -160,6 +200,22 @@ As a test of the purity of our labellar RNA samples, we asked whether they conta
 To compare the transcriptomes, we considered those genes for which an ortholog was annotated in all three species. Among such genes, more than 4500 showed a discrepancy in the coding sequence length across the three species orthologs. We inspected the read coverage of nearly a quarter of these genes; most appeared to be misannotated or truncated in the D. suzukii genome (version 1.0). We manually fixed the annotation of the genes inspected (n ~ 1000) and excluded the other genes from the analysis (~3500). Additionally, we expanded the set of D. suzukii genes by annotating 86 chemosensory-related genes that had been missing or misannotated (<10% of all reannotated genes). Altogether we analyzed the labellar expression levels of more than 6000 genes. We detected transcripts from 4200 to 4500 genes in each species (≥10 Transcripts Per Million (TPM); Supplementary file 2).
 
 The labellar transcription profile of D. suzukii is more closely related to that of D. biarmipes than that of D. melanogaster, as determined by a hierarchical cluster analysis (Figure 9A). This finding is consistent with the phylogenetic relationship among these species (Figure 1A). We analyzed the relationship among the transcriptomes by PCA, which confirmed that each species has a distinct transcriptome (Figure 9B). The first component separates all three species (Figure 9B). Intriguingly, the second component clearly separated D. suzukii from its relatives but showed unexpected similarity between D. melanogaster and D. biarmipes. Such separation is reminiscent of the difference between the ecological niche occupied by D. suzukii and those of other Drosophila species.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig9-v1.jpg)
+
+**Figure 9.:** (A) Hierarchical clustering of the Drosophila melanogaster, Drosophila suzukii, and Drosophila biarmipes labellar transcriptomes. (B) Principal component analysis of the D. melanogaster, D. suzukii, and D. biarmipes labellar transcriptomes. (C) Volcano plot highlighting differentially expressed chemosensory-related genes between D. suzukii and D. melanogaster (|log2FC| ≥ 2, q < 0.01). All differentially expressed gustatory receptors (Grs) (pink) and ionotropic receptors (IRs) (blue) are labeled; metabolic enzymes (green) and other chemosensory genes (purple) are labeled only if differentially expressed between D. suzukii and both of the other species. We note that the genes indicated here belong to families of genes associated with chemosensation, but not all individual members have been implicated in chemoreception. (D) Volcano plot highlighting differentially expressed chemosensory-related genes between D. suzukii and D. biarmipes (|log2FC| ≥ 2, q < 0.01). For convenience of illustration we have plotted the log2 Fold Change but we note that in some cases, such as Gr22f and IR40a expression in D. suzukii, the expression level is extremely low, so that the fold-change is not informative.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Diagram of the Drosophila mouthparts and the labellar (blue) and pharyngeal (red) taste sensilla (adapted from Koh et al., 2014). (B) RNAseq coverage of typical labellar (blue) and pharyngeal (red) ionotropic receptor (IR) genes (n=3). (C) Drosophila melanogaster labellar expression (average Fragments Per Kilobase per Million mapped reads (FPKM)+1 values). Expression of IR62a was not determined because it could not be distinguished from CG12090 transcripts. IRs detected in the D. melanogaster mouthparts in previous studies (Koh et al., 2014; Sánchez-Alcañiz et al., 2018) are indicated in different font colors (detection in the labellum, blue; absence in the labellum and detection in the pharynx, red; previous detection in neither labellum nor pharynx, gray). Genes with an FPKM value ≥ 0.5 were considered expressed; the detection cutoff is denoted by the black dotted line.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** D. melanogaster labellar expression level of Grs (A) and Obps (B) average FPKM values ≥0.5; detection in the labellum in previous studies (Galindo and Smith, 2001; Moon et al., 2009; Weiss et al., 2011, blue).
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/64317/elife-64317-fig9-figsupp3-v1.jpg)
+
+**Figure 9—figure supplement 3.:** (A) RT-PCR (reverse transcription-polymerase chain reaction) analysis of Gr22f from labellar preparations of all three species. The same amount of RNA was used for RT-PCR amplification of elav (control) and Gr22f. 15 ng of genomic DNA (gDNA) was used to test the efficiency of the primer sets. In some reactions, primer dimers were detected (lower weak bands detected in all lanes: +RT, -RT, and gDNA). (B) Three additional Gr22f primer sets were tested and no product could be amplified from 15 ng D. suzukii labellar cDNA.
 
 We next performed a pairwise comparison between D. suzukii and D. melanogaster and between D. suzukii and D. biarmipes. We found 162 genes differentially expressed between D. suzukii and both of the other two species, as determined by the following conservative statistical criteria: |log2 Fold Change| > 2, and adjusted p-value<0.01 across all of four different differential expression (DE) analysis pipelines (Supplementary file 3, Supplementary file 4; see Materials and methods). Of these 162 genes, 13% were associated with the GO term ‘sensory perception of chemical stimulus,’ a fivefold enrichment compared to the set of all genes expressed in the labellum of any species (adjusted p-value=2.99E-5). Altogether, the results suggest a molecular basis for the evolutionary shift between D. suzukii and its relatives.
 
@@ -179,7 +235,7 @@ We note finally an observation that may have significance for pest control: Cyp6
 
 Capitalizing on the wealth of knowledge about the taste system of D. melanogaster, we have found that the evolutionary transition of D. suzukii to oviposition on ripe fruits was paralleled with several gustatory innovations. We found anatomical, physiological, behavioral, and molecular differences between the taste systems of D. suzukii and D. melanogaster. Our results support a major role for gustation in the altered oviposition preferences of D. suzukii.
 
-## Evolution of bitter taste coding in D. suzukii
+### Evolution of bitter taste coding in D. suzukii
 
 Early ripening stages of fruits differ in their physicochemical parameters from those of overripe stages (Ménager et al., 2004). We have focused on plant secondary metabolites that taste bitter to humans and that are aversive and toxic to many insects (Biere et al., 2004; Dagan-Wiener et al., 2017; Dweck and Carlson, 2020; Ibanez et al., 2012; Lee et al., 2010; Moon et al., 2009; Pontes et al., 2014; Poudel and Lee, 2016; Weiss et al., 2011; Whiteman and Pierce, 2008; Wiener et al., 2012). The profiles of these metabolites are dynamic, changing as the fruit develops (Cheng and Breen, 1991; Oikawa et al., 2015). For example, levels of flavonoids, many of which taste bitter to humans, decline as a function of developmental stage in strawberries (Cheng and Breen, 1991).
 
@@ -195,7 +251,7 @@ D. suzukii exemplifies a broad theme in drosophilid evolution: the successful ad
 
 Are the features of adaptation that we have observed in D. suzukii also found in these other species? D. suzukii differs from D. sechellia and D. erecta in that it has lost taste sensilla from the labellum; D. sechellia and D. erecta have retained the canonical numbers and map positions of taste sensilla defined originally in D. melanogaster (Dweck and Carlson, 2020). However, commonalities in adaptation mechanisms are also suggested by our results. First, analysis of the D. sechellia genome suggested that the rapid loss of 12 bitter Grs contributed to a loss of taste responses to bitter secondary metabolites of noni fruit (McBride, 2007; McBride et al., 2007). Our results in D. suzukii using RNAseq support this notion that loss of bitter Gr expression may contribute to a shift in evolutionary niche. Second, oviposition preference in D. sechellia was found to depend on two genes expressed in the legs, Obp57d (odorant binding protein) and Obp57e, leading to the suggestion that an evolutionary change in tarsal taste response contributed to its shift in oviposition preference (Matsuo et al., 2007). Our results now establish precedent via direct electrophysiological recording for such a change in tarsal response profiles. In fact, our results indicate how functional classes of taste neurons and their tuning breadths expanded or contracted during the evolution of the three species we examined. Plasticity was not restricted to a particular type of taste sensillum or taste organ.
 
-## Bitter taste and oviposition
+### Bitter taste and oviposition
 
 We have found a shift from overripe toward ripe preference in D. melanogaster mutants whose bitter taste responses are reduced compared to wild type. We also found that D. suzukii has bitter taste responses that are reduced in many ways relative to D. melanogaster. What is the link between bitter taste and oviposition preference?
 
@@ -209,45 +265,223 @@ Second, we emphasize that bitter neurons operate in a larger context; their acti
 
 Our results lay a foundation for a wide variety of avenues for future investigation. What specific bitter compounds in ripe or overripe strawberries influence oviposition decisions of each species in a natural context? Are the most influential compounds present in other fruits? We have tested individual compounds and purees, but we do not know the identities or quantities of the compounds that a fly encounters while exploring a fruit in nature. Which bitter receptors respond to these compounds, and is their expression reduced in D. suzukii? Might the receptors that respond to these compounds have undergone evolutionary changes in their functional characteristics? Finally, how is information about bitter compounds integrated with information about sugars, other tastants, and other cues to guide oviposition, and have there been evolutionary adaptations in the taste circuitry of D. suzukii?
 
-## Conclusion
+### Conclusion
 
 In summary, we have identified gustatory innovations – anatomical, physiological, behavioral, and molecular – in D. suzukii. Our results support a major role for gustation in the altered oviposition preferences of D. suzukii. Taken together our study provides, for the first time to our knowledge, new understanding of how the gustatory system of an invasive pest species has adapted in its evolutionary adaptation to a new niche.
 
 ## Materials and methods
 
-## Drosophila stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>Canton-S</td>
+      <td>Koh et al., 2014</td>
+      <td>NA</td>
+      <td>DOI:10.1016/j.neuron. 2014.07.012</td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>Canton-S w1118</td>
+      <td>Koh et al., 2014</td>
+      <td>NA</td>
+      <td>DOI:10.1016/j.neuron. 2014.07.012</td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>Gr33a2</td>
+      <td>Dweck and Carlson, 2020</td>
+      <td>NA</td>
+      <td>DOI:10.1016/j.cub.2019.11.005</td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>Gr33a3</td>
+      <td>Dweck and Carlson, 2020</td>
+      <td>NA</td>
+      <td>DOI:10.1016/j.cub.2019.11.005</td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila biarmipes)</td>
+      <td>Dbia</td>
+      <td>Drosophila species stock center</td>
+      <td>14023–0361.04</td>
+      <td>Drosophila species stock center</td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila suzukii)</td>
+      <td>Dsuz</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>Connecticut</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Aristolochic acid (ARI)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # A5512</td>
+      <td>CAS # 313-67-7</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Azadirachtin (AZA)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # A7430</td>
+      <td>CAS # 11141-17-6</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Berberine chloride (BER)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # Y0001149</td>
+      <td>CAS # Y0001149</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Caffeine (CAF)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # C1778</td>
+      <td>CAS # 58-08-2</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Coumarin (COU)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # C4261</td>
+      <td>CAS # 91-64-5</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>N,N-Diethyl-meta- toluamide (DEET)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # 36542</td>
+      <td>CAS # 134-62-3</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Denatonium benzoate (DEN)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # D5765</td>
+      <td>CAS # 3734-33-6</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Escin (ESC)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # E1378</td>
+      <td>CAS # 6805-41-0</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>(±)-Gossypol from cotton seeds (GOS)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # G8761</td>
+      <td>CAS # 303-45-7</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>(-)-Lobeline hydrochloride (LOB)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # 141879</td>
+      <td>CAS # 134-63-4</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Saponin (SAP)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # 47036</td>
+      <td>CAS # 8047-15-2</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>D-(+)-sucrose octaacetate (SOA)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # W303801</td>
+      <td>CAS # 126-14-7</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Sparteine sulfate salt (SPS)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# 234664</td>
+      <td>CAS # 6160-12-9</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Strychnine nitrate salt (STR)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # S2880</td>
+      <td>CAS # 66-32-0</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Theophylline (TPH)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # T1633</td>
+      <td>CAS # 58-55-9</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Tricholine citrate (TCC)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # T0252</td>
+      <td>CAS # 546-63-4</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Umbelliferone (UMB)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat # H24003</td>
+      <td>CAS # 93-35-6</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila stocks
 
 D. melanogaster Canton-S, D. suzukii, and D. biarmipes were reared on corn syrup and soy flour culture medium (Archon Scientific) at 25 °C and 60% relative humidity in a 12:12 hr light-dark cycle. D. suzukii stock was collected in Connecticut. D. biarmipes stock (14023–0361.04) was obtained from the Drosophila Species Stock Center. Gr33a2 is described in Dweck and Carlson, 2020; Gr33a3 is an independent allele generated by the same means in the same study.
 
-## Strawberries
+### Strawberries
 
 Ripening stages of strawberries were collected from Lockwood Farm, Connecticut Agricultural Experiment Station, Hamden, CT. Strawberries used in the single experiment shown in Figure 2D were from Elm City Market, New Haven, CT; in this case overripe strawberries were obtained by leaving ripe strawberries at room temperature for 3 days.
 
-## Bitter tastants
+### Bitter tastants
 
 Bitter tastants were obtained at the highest available purity from Sigma-Aldrich. All tastants were dissolved in 30 mM tricholine citrate (TCC), an electrolyte that inhibits the water neuron. All tastants were prepared fresh and used for no more than 1 day. For electrophysiological recordings, tastants were tested at the following concentrations unless otherwise indicated: ARI, 1 mM; azadirachtin (AZA), 1 mM; berberine chloride (BER), 1 mM; CAF, 10 mM; coumarin (COU), 10 mM; DEET, 10 mM; DEN, 10 mM; ESC, 10 mM; gossypol from cotton seeds (GOS), 1 mM; (-)-LOB, 1 mM; saponin from quillaja bark (SAP), 1%; D-(+)-sucrose octaacetate (SOA), 1 mM; SPS, 10 mM; strychnine nitrate salt (STR), 10 mM; TPH, 10 mM; UMB, 10 mM. All compounds were stirred for 24 hr. THE and UMB were additionally heated to increase their solubility, then cooled and tested while in solution.
 
-## Multiple-choice oviposition assay
+### Multiple-choice oviposition assay
 
 These experiments were carried out in a cage (24.5 cm x 24.5 cm x 24.5 cm) that was equipped with seven Petri dishes (60 mm × 15 mm, Falcon). Each Petri dish was filled with 1% agar containing 10% w/v purée of one of the ripening stages. One hundred 5- to 7-day-old flies (80 females and 20 males) were placed in each cage. Experiments were carried out in a climate chamber (22°C, 60% humidity, in the dark). The number of eggs was counted after 24 hr. The positioning of the oviposition plates was randomized in each replicate.
 
-## Two-choice oviposition assay
+### Two-choice oviposition assay
 
 The two-choice oviposition assay was modified from Joseph et al., 2009, except that corn meal food was replaced with 1% agar containing 100 mM sucrose. Oviposition plates consisted of plastic Petri dishes (60 mm × 15 mm, Falcon), which were divided into two halves; each half contained either sucrose or sucrose mixed with a bitter compound. Fifty flies (40 females and 10 males), when 5- to 7-day-old, were placed into an oviposition cage (Genesee Scientific) without anesthesia through a small funnel that fits in the lid of the cage, and left for 24 hr in the dark. Experiments were carried out in a climate chamber (22°C, 60% humidity). Eggs on each substrate were counted. An oviposition preference index was calculated as follows: (number of eggs on sucrose substrate – number of eggs on sucrose+bitter substrate)/(total number of eggs on both substrates).
 
-## Scanning electron microscopy
+### Scanning electron microscopy
 
 Flies were fixed in a solution of 0.1 M sodium cacodylate, 2% paraformaldehyde, and 2.5% glutaraldehyde for 2 hr in microporous specimen capsules (Electron Microscopy Sciences). Flies were then dehydrated in a graded series of ethanol washes until they were incubated overnight in 100% ethanol. Ethanol-dehydrated flies were dried in a Leica CPD300 critical point dryer. Flies were then glued to metallic pegs with graphite conductive adhesive (Electron Microscopy Sciences). Samples were then coated in 2 nm of iridium with a Cressington Sputter Coater and imaged in a Hitachi SU-70 SEM.
 
-## Electrophysiology
+### Electrophysiology
 
 Electrophysiological recordings were performed with the tip-recording method (Hodgson et al., 1955), with some modifications; 5- to 7-day-old mated female flies were used. Flies were immobilized in pipette tips, and the labellum or the female foreleg was placed in a stable position on a glass coverslip. A reference tungsten electrode was inserted into the eye of the fly. The recording electrode consisted of a fine glass pipette (10–15 µm tip diameter) and connected to an amplifier with a silver wire. This pipette performed the dual function of recording electrode and container for the stimulus. Recording started the moment the glass capillary electrode was brought into contact with the tip of the sensillum. Signals were amplified (10x; Syntech Universal AC/DC Probe; http://www.syntech.nl), sampled (10,667 samples/s), and filtered (100–3000 Hz with 50/60 Hz suppression) via a USB-IDAC connection to a computer (Syntech). Action potentials were extracted using Syntech Auto Spike 32 software. Responses were quantified by counting the number of spikes generated over a 500 ms period after contact. Different spike amplitudes were sorted; we did not convolve all neurons into a single value. However, in nearly all recordings in this study the great majority of the spikes were of uniform amplitude (e.g., Figures 5 and 7B–D), and those were the spikes whose frequencies we report. Responses to the TCC diluent alone were subtracted.
 
-## RNA purification, library preparation, and sequencing
+### RNA purification, library preparation, and sequencing
 
 Labella were meticulously hand-dissected from approximately one-hundred 5-day-old D. melanogaster, D. suzukii, and D. biarmipes females. The tissues were collected and mechanically disrupted in lysis buffer (‘RTL lysis buffer’ from Qiagen). Labellar RNA was extracted using the hot acid phenol procedure. Three biological replicates were produced for each species. Libraries were prepared using KAPA mRNA HyperPrep Kit (Kapa Biosystems) and sequenced on an Illumina HiSeq 2500 sequencer by the Yale Center for Genome Analysis. Thirty to fifty million 75 bp paired-end reads were obtains per sample. Raw reads are accessible at the Genbank SRA database (BioProject accession number PRJNA670502).
 
-## RNA sequencing analysis
+### RNA sequencing analysis
 
 Reads were aligned to the D. melanogaster genome (BDGP6), D. suzukii genome (version 1.0), or the D. biarmipes genome (version 2.0) using TopHat (version 2.1.1). Cufflinks (version 2.2.1) was used to generate de novo GTF files for each species and quantify D. melanogaster labellar transcripts (Ensemble annotation version 100) (Figure 9—figure supplement 1 and 2). IGV, Integrative genomics viewer (version 2.5.3), was used to inspect the read coverage of genes of interest.
 
@@ -259,6 +493,6 @@ RT-qPCR cDNA was made from 300 ng of labellar RNA as template from using EpiScri
 
 Primers used in Figure 9—figure supplement 3B:
 
-## Statistical analyses
+### Statistical analyses
 
 Hierarchical cluster analyses were performed using Ward’s method with PAST (Paleontological Statistics Software Package for Education and Data Analysis; Hammer et al., 2001). This technique organizes the data into clusters based on the response profiles of each sensillum to the panel of tastants. Euclidean distances were calculated according to Ward’s classification method for the hierarchical cluster analysis. Other statistical tests were performed in GraphPad Prism (version 6.01). All error bars are SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.

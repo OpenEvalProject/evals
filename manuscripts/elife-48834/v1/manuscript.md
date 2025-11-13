@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.48834.001 Lipoproteins are lipid-protein complexes that are primarily generated and secreted from the intestine, liver, and visceral endoderm and delivered to peripheral tissues. Lipoproteins, which are assembled in the endoplasmic reticulum (ER) membrane, are released into the ER lumen for secretion, but its mechanism remains largely unknown. Here, we show that the release of lipoproteins from the ER membrane requires VMP1, an ER transmembrane protein essential for autophagy and certain types of secretion. Loss of vmp1 , but not other autophagy-related genes, in zebrafish causes lipoprotein accumulation in the intestine and liver. Vmp1 deficiency in mice also leads to lipid accumulation in the visceral endoderm and intestine. In VMP1-depleted cells, neutral lipids accumulate within lipid bilayers of the ER membrane, thus affecting lipoprotein secretion. These results suggest that VMP1 is important for the release of lipoproteins from the ER membrane to the ER lumen in addition to its previously known functions.
+Lipoproteins are lipid-protein complexes that are primarily generated and secreted from the intestine, liver, and visceral endoderm and delivered to peripheral tissues. Lipoproteins, which are assembled in the endoplasmic reticulum (ER) membrane, are released into the ER lumen for secretion, but its mechanism remains largely unknown. Here, we show that the release of lipoproteins from the ER membrane requires VMP1, an ER transmembrane protein essential for autophagy and certain types of secretion. Loss of vmp1, but not other autophagy-related genes, in zebrafish causes lipoprotein accumulation in the intestine and liver. Vmp1 deficiency in mice also leads to lipid accumulation in the visceral endoderm and intestine. In VMP1-depleted cells, neutral lipids accumulate within lipid bilayers of the ER membrane, thus affecting lipoprotein secretion. These results suggest that VMP1 is important for the release of lipoproteins from the ER membrane to the ER lumen in addition to its previously known functions.
 
 ## Introduction
 
@@ -38,49 +38,85 @@ Physiologically, VMP1 is essential for survival under hypoosmotic and starvation
 
 ## Results
 
-## Loss of vmp1 in zebrafish causes larval lethality and defects in autophagy
+### Loss of vmp1 in zebrafish causes larval lethality and defects in autophagy
 
 To reveal the physiological functions of VMP1 in vertebrates, we used zebrafish and mice. We generated vmp1-deficient zebrafish using the CRISPR/Cas9 system. A frameshift mutation was introduced into exon 6 of the vmp1 gene (Figure 1A). Gross examination revealed that the abdominal part was less transparent in vmp1-/- zebrafish at 6 days post fertilization (dpf), indicating the presence of abnormal deposits (Figure 1B). We also noticed that the swimbladder was not inflated in vmp1-/- zebrafish, which will be described in more detail elsewhere. All vmp1-/- zebrafish died around at nine dpf (Figure 1C), suggesting that VMP1 is essential for survival during the larval period.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/48834/elife-48834-fig1-v1.jpg)
 
-**Figure 1.:** vmp1 in zebrafish causes lethality around 9 days post fertilization and defective autophagy.(A) Schematic representation of the Cas9-gRNA-targeted site in the zebrafish vmp1 genomic locus. The protospacer-adjacent motif (PAM) sequence is shown in red. The targeted site is underlined. A 7 bp deletion in the mutated allele is shown. (B) External appearance of 6-dpf vmp1, +/+vmp1, and +/-vmp1 zebrafish. Magnified images of the indicated regions are shown in the right panels. Dashed lines indicate abnormal deposits in the liver and intestine. Data are representative of four independent experiments. (-/-C) Survival rate (% of total fish) of vmp1 (n = 7), +/+vmp1 (n = 30), and +/-vmp1 (n = 11) zebrafish. Data are representative of two independent experiments. (-/-D) Representative images of GFP-LC3 signals in the midbrain, spinal cord, and skeletal muscle of 3-dpf vmp1 and +/-vmp1 zebrafish injected with GFP-LC3 mRNA. Data are representative of two independent experiments. Scale bars, 10 μm and 1 μm in the inset. (-/-E) Immunoblotting of LC3 and β-actin in two 7-dpf vmp1 and +/-vmp1 zebrafish. Data are representative of two independent experiments.-/-10.7554/eLife.48834.003Figure 1—source data 1.Figure 1C.
+**Figure 1.:** (A) Schematic representation of the Cas9-gRNA-targeted site in the zebrafish vmp1 genomic locus. The protospacer-adjacent motif (PAM) sequence is shown in red. The targeted site is underlined. A 7 bp deletion in the mutated allele is shown. (B) External appearance of 6-dpf vmp1+/+, vmp1+/-, and vmp1-/- zebrafish. Magnified images of the indicated regions are shown in the right panels. Dashed lines indicate abnormal deposits in the liver and intestine. Data are representative of four independent experiments. (C) Survival rate (% of total fish) of vmp1+/+ (n = 7), vmp1+/- (n = 30), and vmp1-/- (n = 11) zebrafish. Data are representative of two independent experiments. (D) Representative images of GFP-LC3 signals in the midbrain, spinal cord, and skeletal muscle of 3-dpf vmp1+/- and vmp1-/- zebrafish injected with GFP-LC3 mRNA. Data are representative of two independent experiments. Scale bars, 10 μm and 1 μm in the inset. (E) Immunoblotting of LC3 and β-actin in two 7-dpf vmp1+/- and vmp1-/- zebrafish. Data are representative of two independent experiments.
 
 Autophagy was defective in vmp1-/- zebrafish; many large LC3 puncta accumulated in several tissues, including the brain, spinal cord, and skeletal muscles, which were abnormal autophagy-related structures typically observed in VMP1-deficient mammalian cells (Itakura and Mizushima, 2010; Kishi-Itakura et al., 2014; Zhao et al., 2017) (Figure 1D). An increase in the levels of the lipidated form of LC3 (LC3-II) was also observed in vmp1-/- zebrafish (Figure 1E), as previously observed in VMP1-deficient mammalian cells (Itakura and Mizushima, 2010; Morita et al., 2018; Shoemaker et al., 2019; Zhao et al., 2017). These results suggest that autophagic flux is blocked in vmp1-/- zebrafish.
 
-## Accumulation of neutral lipids in intestinal epithelial cells and hepatocytes in vmp1-deficient zebrafish
+### Accumulation of neutral lipids in intestinal epithelial cells and hepatocytes in vmp1-deficient zebrafish
 
 The abnormal deposits in the abdomen were observed in all vmp1-/- zebrafish (n = 11), but not in vmp1+/- (n = 30) or vmp1+/+ zebrafish (n = 7). These deposits resemble neutral lipid accumulation in the intestine (Hölttä-Vuori et al., 2010). Indeed, the deposits in vmp1-/- zebrafish were stained with oil red O, a neutral lipid-soluble dye (Figure 2A). Oil red O staining of cross sections and electron microscopy revealed that, in vmp1-/- zebrafish, large neutral lipid-containing structures accumulated in intestinal epithelial cells and hepatocytes (Figure 2B,C) but not in other organs, including the brain (Figure 2—figure supplement 1A,B) and skeletal muscles (Figure 2—figure supplement 1A,C). Accumulation of large lipid-containing structures was not observed in zebrafish lacking the rb1cc1/fip200 (Figure 2—figure supplement 1D) or atg5 (Figure 2—figure supplement 1E) gene, both of which are required for autophagy (Hara et al., 2008; Mizushima et al., 2001). These results suggest that neutral lipids accumulate in vmp1-/- zebrafish, and that this lipid phenotype is not caused by deficient autophagy.
 
-## Loss of Vmp1 in mice causes early embryonic lethality and accumulation of lipids in visceral endoderm cells
+![Figure 2.](https://cdn.elifesciences.org/articles/48834/elife-48834-fig2-v1.jpg)
+
+**Figure 2.:** (A) Whole-mount oil red O staining of 8.5-dpf vmp1+/- and vmp1-/- zebrafish. Data are representative of three independent experiments. (B) Oil red O and hematoxylin staining of 6-dpf vmp1+/- and vmp1-/- zebrafish. Data are representative of two independent experiments. Scale bars, 20 μm. (C) Transmission electron microscopy of the intestine and liver from 6-dpf vmp1+/- and vmp1-/- zebrafish. Data are representative of three independent experiments. Scale bars, 5 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48834/elife-48834-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Oil red O and hematoxylin staining of 6-dpf vmp1+/- and vmp1-/- zebrafish. Data are representative of two independent experiments. Scale bars, 100 μm. (B) and (C) Transmission electron microscopy of the hindbrain (B) and skeletal muscle (C) from 6-dpf vmp1+/- and vmp1-/- zebrafish. Data are representative of two independent experiments. Scale bars, 1 μm. (D) and (E) Transmission electron microscopy of the intestine from 6-dpf rb1cc1+/-, rb1cc1-/- (D), atg5+/- and atg5-/- (E) zebrafish. L, lumen of the intestine. Data are representative of two independent experiments. Scale bars, 5 μm.
+
+### Loss of Vmp1 in mice causes early embryonic lethality and accumulation of lipids in visceral endoderm cells
 
 To elucidate the physiological functions of VMP1 in mammals, Vmp1-deficient mice were generated using an embryonic stem (ES) cell line carrying a gene-trap cassette downstream of exon 3 of the Vmp1 gene (Figure 3—figure supplement 1A). Heterozygous Vmp1gt/+ mice were healthy and phenotypically indistinguishable from wild-type littermates. In contrast, Vmp1gt/gt embryos were embryonic lethal; they were detected at 7.5 days postcoitum (dpc) but not after 9.5 dpc (Figure 3A). Vmp1gt/gt embryos at 7.5 dpc were smaller than wild-type embryos and accumulated the autophagy substrate p62 (Figure 3B), suggesting that VMP1 is important for early embryonic development as well as autophagy in mice.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/48834/elife-48834-fig3-v1.jpg)
+
+**Figure 3.:** (A) Genotypes of offspring from Vmp1gt/+ intercross. (B) 7.5-dpc embryos were extracted from the conceptus and stained with anti-p62 antibody. Data are representative of two independent experiments. Scale bars, 50 μm. (C) 7.5-dpc embryos were stained with LipidTOX Red and Hoechst33342. The visceral endoderm cells are magnified in the insets. Data are representative of two independent experiments. Scale bars, 50 μm and 10 μm in the insets. (D) Body weight of Vmp1flox/+;Villin-Cre (n = 4) and Vmp1flox/flox;Villin-Cre (n = 5) male mice at 7–10 months of age. The horizontal lines indicate the means for each group. Differences were determined by unpaired Student t-test (*, p<0.05). (E) The small intestine from 3-month-old Vmp1flox/+;Villin-Cre and Vmp1flox/flox;Villin-Cre mice was stained with anti-p62 antibody and DAPI. Scale bars, 20 μm. (F) The small intestine from 8-month-old Vmp1flox/+;Villin-Cre and Vmp1flox/flox;Villin-Cre mice fed ad libitum was stained with Nile red and DAPI. Scale bars, 50 μm. (G) The amount of serum cholesterol, triglyceride, LDL, and HDL in 18-month-old Vmp1flox/+;Villin-Cre and Vmp1flox/flox;Villin-Cre mice fed ad libitum. The horizontal lines indicate the means for each group. Differences were determined by unpaired Student t-test (*, p<0.05). LDL, low-density lipoprotein; HDL, high-density lipoprotein.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48834/elife-48834-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Genomic map of the wild-type and gene-trap (gt) alleles of the mouse Vmp1 gene. Black boxes indicate exons 2 to 5 and the lacZ and neo cassettes. Three loxP sites (triangles) and three primers (F1, F2, and R) used for genotyping are shown. SA, splice acceptor site. pA, poly A signal. (B) Genomic map of the wild-type, floxed, and recombined alleles of the mouse Vmp1 gene. Black boxes indicate exons 2 to 5 and neo cassettes. Triangles indicate loxP sites.
+
 The visceral endoderm is an extraembryonic layer critical for maternal-to-embryo transfer of nutrients such as neutral lipids between 5 and 10 dpc, before the placenta is formed (Bielinska et al., 1999). Like intestinal epithelial cells and hepatocytes, visceral endoderm cells secrete lipoproteins to the epiblast, an embryonic layer (Farese et al., 1996). Thus, we examined lipid distribution in these embryos. Indeed, neutral lipids accumulated in visceral endoderm cells in Vmp1gt/gt embryos at 7.5 dpc (Figure 3C), as observed in vmp1-deficient zebrafish intestinal epithelial cells and hepatocytes.
 
-## Intestinal epithelial cell-specific loss of Vmp1 in mice causes accumulation of lipids in intestinal epithelial cells
+### Intestinal epithelial cell-specific loss of Vmp1 in mice causes accumulation of lipids in intestinal epithelial cells
 
 To circumvent the lethality of Vmp1gt/gt mouse embryos and study the role of VMP1 in the intestine, we generated intestinal epithelial cell-specific Vmp1-deficient mice. Mice harboring a Vmp1flox allele were crossed with Villin-Cre transgenic mice expressing Cre recombinase under the control of the Villin promoter (el Marjou et al., 2004) (Figure 3—figure supplement 1B). Vmp1flox/flox;Villin-Cre mice weighed less than Vmp1flox/+;Villin-Cre mice (Figure 3D). Accumulation of p62 was observed in intestinal epithelial cells in 3-month-old Vmp1flox/flox;Villin-Cre mice (Figure 3E). The intestines of 8-month-old Vmp1flox/flox;Villin-Cre mice showed accumulation of neutral lipids within intestinal epithelial cells (Figure 3F), suggesting a conserved function of VMP1 in the intestine. In the serum from Vmp1flox/flox;Villin-Cre mice, the levels of cholesterol and lipoproteins such as high density lipoprotein (HDL) decreased compared to those from Vmp1flox/+;Villin-Cre mice (Figure 3G). These results suggest that VMP1 is critical for homeostasis of neutral lipids and lipoproteins in a whole body.
 
-## VMP1 is important for secretion of lipoproteins
+### VMP1 is important for secretion of lipoproteins
 
 Next, we examined the mechanism by which neutral lipids accumulate in VMP1-depleted organisms. Because intestinal epithelial cells, hepatocytes, and visceral endoderm cells are active in the secretion of lipoproteins (Farese et al., 1996; Sirwi and Hussain, 2018), we hypothesized that a block in lipoprotein secretion is the cause of lipid accumulation. To this end, we used the human hepatocellular carcinoma cell line HepG2 because these cells constitutively secrete lipoproteins. In VMP1-silenced HepG2 cells, the amount of triglyceride and cholesterol decreased in culture media (Figure 4A,B). In contrast, the intracellular amounts increased (Figure 4A,B), suggesting that the secretion of neutral lipids depends on VMP1. Chromatographic analysis using different detection methods for neutral lipids also revealed significant reductions in lipoproteins such as very low-density lipoproteins and low-density lipoproteins in the culture media of VMP1-silenced HepG2 cells both under normal and oleic acid-treated conditions, the latter of which stimulates lipoprotein secretion (Figure 4—figure supplement 1A,B). Likewise, knockdown of VMP1 reduced the amount of APOB in culture media (Figure 4C). Paradoxically, it also reduced the amount of intracellular APOB (Figure 4C). This was likely due to enhanced degradation of misfolded APOB by the ubiquitin-proteasome system because treatment with lactacystin, a proteasome inhibitor, restored the amount of intracellular APOB (Figure 4—figure supplement 1C). Nevertheless, the amount of extracellular APOB remained lower in VMP1-silenced cells than that in control cells (Figure 4—figure supplement 1C). These results suggest that VMP1 is critical not only for APOB homeostasis but also for the secretion of lipoproteins.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/48834/elife-48834-fig4-v1.jpg)
+
+**Figure 4.:** (A and B) HepG2 cells were treated with siRNA against luciferase (Luc) or VMP1 and cultured in serum-free medium for 24 hr. Triglycerides (A) and cholesterols (B) were extracted from culture medium and cells, measured and analyzed using the Student’s t-test (**, p<0.01; *, p<0.05). The horizontal lines indicate the means of three independent experiments for each group. (C) HepG2 cells were treated as in (A) and cultured in regular medium containing 200 nM oleic acid for 24 hr. Cells were then washed and re-cultured in serum-free medium for indicated times. The medium was concentrated by TCA precipitation. Samples (approximately 7% or 14% vol of total precipitated media or cell lysates, respectively) were subjected to immunoblot analysis. The amount of proteins was quantified through densitometric scanning of band intensities and the medium/cells ratio was determined. Data represent the mean ± standard error of the mean (n = 3), which was normalized to 0 hr, and statistically analyzed using the Student’s t-test (**, p<0.01; *, p<0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48834/elife-48834-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) HepG2 cells were treated with siRNA against luciferase (Luc) or VMP1 and cultured in 0.1% bovine serum albumin (BSA) containing media with or without 200 μM oleic acid for 2 days. Triglycerides- (A) and cholesterols-containing lipoproteins (B) in medium were fractionated by chromatography and analyzed. CM, chylomicron; VLDL, very-low-density lipoprotein; LDL, low-density lipoprotein; HDL, high-density lipoprotein. Data represent the mean ± standard error of the mean (n = 3). (C) HepG2 cells were treated as in (A) and cultured in serum-free medium containing 200 nM oleic acid in the presence or absence of 5 μM lactacystin for 24 hr. The medium was concentrated by TCA precipitation. Samples (approximately 7% or 14% vol of total precipitated media or cell lysates, respectively) were subjected to immunoblot analysis. The amount of APOB was quantified through densitometric scanning of bnd intensities. Data represent the mean ± standard error of the mean (n = 4), which was normalized to siLuc, and statistically analyzed using the Student’s t-test (*, p<0.05). (D and E) Dorsal (D) and lateral (E) views of the head skeleton of 6-dpf vmp1+/- and vmp1-/- zebrafish stained with Alcian blue. M, Meckel’s cartilage; ch, ceratohyal cartilage; cb, ceratobranchial cartilage; e, eye; hs, hyosymplectic cartilage. Scale bars, 500 μm.
+
 We next investigated whether VMP1 is required for secretion of proteins besides APOB. Secretion of APOE, a component of very low density lipoprotein (VLDL), and APOA-I, a component of HDL, was also impaired in VMP1-silenced HepG2 cells (Figure 4C). Secretion of APOA-I was affected only slightly. In contrast, secretion of albumin, which is transported from the ER to Golgi separately from lipoproteins (Tiwari and Siddiqi, 2012), was not significantly impaired in VMP1-silenced HepG2 cells (Figure 4C). Secretion of collagens, another type of large cargo that requires TANGO1 for secretion (Saito et al., 2009), was not affected by VMP1 deletion because cartilage structures, which are composed of collagens secreted from cartilage cells, was normal in vmp1-/- zebrafish (Figure 4—figure supplement 1D,E). This result is consistent with a previous report that showed the secretion of collagens and model cargo proteins such as VSVG, a glycoprotein of vesicular stomatitis virus, is normal in vmp1/epg-3 mutant Caenorhabditis elegans and VMP1 knockout COS7 cells, respectively (Zhao et al., 2017). Thus, a defect in secretion in VMP1-deficient cells is not general, but rather specific to lipoproteins.
 
-## Neutral lipids accumulate in the ER in the absence of VMP1
+### Neutral lipids accumulate in the ER in the absence of VMP1
 
 In intestinal epithelial cells and hepatocytes, neutral lipids are synthesized within the lipid bilayer of the ER membrane and released into the ER lumen for secretion (Demignot et al., 2014; Sundaram and Yao, 2010; Tiwari and Siddiqi, 2012; Yen et al., 2015). In vmp1-/- zebrafish, almost all large lipid-containing structures in intestinal epithelial cells and hepatocytes were surrounded by the ER transmembrane protein Sec61B (Figure 5A). In most cases, Sec61B covered only a part rather than all of the surface of the lipid structures. Also, in Vmp1gt/gt mouse embryos, almost all neutral lipid-containing structures were positive for SEC61B (Figure 5B). In contrast, neutral lipid structures in these tissues in vmp1+/- animals were mostly negative for Sec61B/SEC61B, suggesting that they are present outside the ER, most likely as cytosolic lipid droplets (Figure 5A,B). Thus, neutral lipids abnormally accumulate in the ER in vmp1-deficient zebrafish and mouse tissues.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/48834/elife-48834-fig5-v1.jpg)
 
-**Figure 5.:** Vmp1-deficient zebrafish and mice show accumulation of lipoproteins in the intestine, liver, and visceral endoderm.Immunohistochemistry of the intestine and liver from 6-dpf vmp1 and +/-vmp1 zebrafish (-/-A and C) and the visceral endoderm from 7.5-dpc Vmp1 and gt/+Vmp1 mice (gt/gtB and D) using anti-SEC61B antibody (A and B), anti-APOB antibody (C and D), LipidTOX Red, and Hoechst33342. Arrows indicate the regions where the Sec61B/SEC61B signals were weak. The regions of zebrafish intestinal epithelial cells (E), intestinal lumen (L) or mouse visceral endoderm cells (VE) are shown as dashed lines. Data are representative of two independent experiments. Scale bars, 10 μm and 1 μm in the inset. The number of LipidTOX Red (+) structures with (black columns) or without (white columns) SEC61B (A and B) or APOB (C and D) per observed area was analyzed from at least two randomly selected areas using ImageJ software.10.7554/eLife.48834.014Figure 5—source data 1.Figure 5A–D.
+**Figure 5.:** Immunohistochemistry of the intestine and liver from 6-dpf vmp1+/- and vmp1-/- zebrafish (A and C) and the visceral endoderm from 7.5-dpc Vmp1gt/+ and Vmp1gt/gt mice (B and D) using anti-SEC61B antibody (A and B), anti-APOB antibody (C and D), LipidTOX Red, and Hoechst33342. Arrows indicate the regions where the Sec61B/SEC61B signals were weak. The regions of zebrafish intestinal epithelial cells (E), intestinal lumen (L) or mouse visceral endoderm cells (VE) are shown as dashed lines. Data are representative of two independent experiments. Scale bars, 10 μm and 1 μm in the inset. The number of LipidTOX Red (+) structures with (black columns) or without (white columns) SEC61B (A and B) or APOB (C and D) per observed area was analyzed from at least two randomly selected areas using ImageJ software.
 
-## VMP1 is important for the release of lipoproteins from the ER membrane
+### VMP1 is important for the release of lipoproteins from the ER membrane
 
 We further narrowed down the step defective in VMP1-deficient cells. Neutral lipids accumulating within lipid bilayers of the ER are released into the ER lumen to form lipoproteins together with APOB (Sirwi and Hussain, 2018). In vmp1-/- zebrafish, most of the lipid-containing structures were positive for ApoB (Figure 5C). In addition, the lipid structures were mostly positive for APOB in Vmp1gt/gt mouse embryos (Figure 5D). In agreement with SEC61B staining data, most lipid structures in these tissues in vmp1+/- animals were ApoB/APOB-negative (Figure 5C,D). These results suggest that lipoproteins or lipoprotein-related structures are formed and accumulate in VMP1-deficient cells.
 
 In wild-type HepG2 cells, neutral lipid structures were mostly positive for adipose differentiation-related protein (ADRP, also known as perilipin 2), a marker for cytosolic lipid droplets, but negative for APOB irrespective of oleic acid treatment that increased the number of lipid-containing structures (Figure 6A–C), suggesting that these are lipid droplets rather than lipoproteins. In contrast, as shown in zebrafish and mice (Figure 5), large lipid structures accumulated in VMP1-silenced HepG2 cells (Figure 6A) and most of them were APOB positive (Figure 6C). Some of them were positive for both APOB and ADRP, where APOB and ADRP were distributed into distinct regions (Figure 6D). They should represent structures stuck within the ER lipid bilayers facing both the cytosol and the ER lumen, rather than those released into the ER lumen (Figure 6D). APOE, but not APOA-I, colocalized with APOB on the lipid structures in VMP1-silenced HepG2 cells (Figure 6E,F), suggesting that the defective secretion of APOB and APOE (Figure 4C) is at least partly caused by trapping in the lipid structures.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/48834/elife-48834-fig6-v1.jpg)
+
+**Figure 6.:** (A–C) HepG2 cells were treated with siRNA oligonucleotides against luciferase (Luc) or VMP1, cultured in regular medium in the presence or absence of 200 nM oleic acid for 24 hr, and stained with BODIPY-C12 558/568 for 1 hr to visualize the neutral lipids. Cells were fixed and stained with anti-APOB and anti-ADRP antibodies. Scale bars, 10 μm and 2 μm in the inset. The number of neutral lipid particles per cell (B) and ratio of APOB- or ADRP-positive neutral lipid particles (C) was quantified. Solid bars indicate median, boxes the interquartile range (25th to 75th percentile), and whiskers 1.5 times the interquartile range. The outliers are plotted individually. Differences were determined by Mann-Whitney U-test (**, p<0.01; *, p<0.05; n ≥ 17 cells). (D) Representative images of APOB- and ADRP-double positive neutral lipid particles in VMP1-depleted HepG2 cells. Scale bars, 2 μm. A model of APOB- and ADRP-double positive neutral lipid particles in VMP1-depleted cells is shown. (E and F) HepG2 cells were treated as in (A), cultured in regular medium, and stained with BODIPY-C12 558/568 for 1 hr. Cells were fixed and stained with indicated antibodies. Scale bars,10 μm and 2 μm in the inset.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48834/elife-48834-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) HepG2 cells were treated with siRNA oligonucleotides against luciferase (Luc) or VMP1 and cultured in regular medium in the presence or absence of 5 μM lactacystin for 24 hr. Chymotrypsin-like proteasome activity was measured. Data represent the mean ± standard error of the mean (n = 3) and were statistically analyzed using the Student’s t-test. (B and C) HepG2 cells were treated with siRNA oligonucleotides as in (A) and cultured in regular medium in the presence or absence of 200 nM oleic acid for 24 hr. Cell lysates were analyzed by immunoblotting.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/48834/elife-48834-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) HepG2 cells were treated with 10 μM MG132 or 5 μM lactacystin for 24 hr (without oleic acid), and stained with BODIPY-C12 558/568 for 1 hr. Cells were fixed and stained with anti-APOB and anti-ADRP antibodies. Scale bars, 10 μm and 1 μm in the inset. The ratio of APOB- or ADRP-positive neutral lipid particles was quantified. Solid bars indicate median, boxes the interquartile range (25th to 75th percentile), and whiskers 1.5 times the interquartile range. The outliers are plotted individually. Differences were determined by one-way ANOVA with Dunnett test (n ≥ 39 cells). (B and C) HepG2 cells were treated with 2 ng/ml tunicamycin, 100 nM thapsigargin (B), or 10 μM MTTP inhibitor (CP-346086) (C) for 24 hr, stained with BODIPY-C12 558/568 for 1 hr, fixed, and stained with anti-APOB and anti-ADRP antibodies. Scale bars, 10 μm and 1 μm in the inset. (D) HepG2 cells were treated with siRNA oligonucleotides against luciferase (Luc) or FITM2. The relative expression level of FITM2 was quantified by real-time PCR using ACTB as an internal control. Data represent the mean ± standard error of the mean performed in triplicate. (E) HepG2 cells were treated as in (D), cultured in regular medium in the presence of 200 nM oleic acid for 24 hr, stained with BODIPY-C12 558/568 for 1 hr, fixed, and stained with anti-APOB and anti-ADRP antibodies. Scale bars, 10 μm and 1 μm in the inset. Total pixel area of neutral lipids per cell was quantified using ImageJ software. Solid bars indicate median, boxes the interquartile range (25th to 75th percentile), and whiskers 1.5 times the interquartile range. The outliers are plotted individually. Differences were determined by two-tailed Welch’s t-test (**, p<0.01; n ≥ 35 cells).
 
 Similar crescent-shaped accumulations of APOB and ADRP around lipids trapped within the ER membranes were also observed in human hepatoma cell line Huh7 cells treated with proteasome inhibitors (Ohsaki et al., 2008). In VMP1-silenced HepG2 cells, however, proteasome activity was not suppressed (Figure 6—figure supplement 1A). In addition, treatment of wild-type HepG2 cells with proteasome inhibitors (MG132 or lactacystin) did not induce crescent-shaped accumulations of APOB and ADRP (Figure 6—figure supplement 2A). These results are somehow different from those in the previous report (Ohsaki et al., 2008), probably because of a difference in cell types or culture conditions. The crescent-shaped accumulations of APOB and ADRP was also observed by treatment with docosahexaenoic acid or cyclosporin A (Ohsaki et al., 2008), which induce APOB proteolysis by unknown molecular mechanisms (Fisher et al., 2001; Kaptein et al., 1994), suggesting the possible involvement of APOB proteolysis in the formation of these structures. APOB was degraded by induction of ER stress or depletion of MTTP (Ota et al., 2008; Sirwi and Hussain, 2018). However, neither ER stress (Figure 6—figure supplement 1B) or reduced MTTP protein level (Figure 6—figure supplement 1C) was observed in VMP1-silenced HepG2 cells. Treatment of wild-type HepG2 cells with ER stress inducers (tunicamycin or thapsigargin) (Figure 6—figure supplement 2B) or an MTTP inhibitor (CP-346086) (Figure 6—figure supplement 2C) did not induce the crescent-shaped accumulations of APOB and ADRP. Furthermore, the crescent-shaped accumulations of APOB and ADRP were not observed in HepG2 cells deficient for FITM2 (Figure 6—figure supplement 2D,E), a factor required for budding of lipid droplets from the ER membrane to the cytosol, but not for lipoprotein secretion (Choudhary et al., 2015; Goh et al., 2015; Kadereit et al., 2008). Taken together, these results suggest that the crescent-shaped accumulations of APOB and ADRP in VMP1-silenced HepG2 cells is not due to proteasome inhibition, ER stress, MTTP suppression, or defective budding of lipid droplets from the ER membrane.
 
@@ -88,7 +124,7 @@ Electron microscopy of intestinal epithelial cells (Figure 7A) and hepatocytes (
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/48834/elife-48834-fig7-v1.jpg)
 
-**Figure 7.:** (A–C) Transmission electron microscopy of intestinal epithelial cells (A) and hepatocytes (B) from 6-dpf vmp1 and +/-vmp1 zebrafish and VMP1-depleted HepG2 cells (-/-C). Black and white arrowheads indicate the presence and absence of a lipid bilayer on neutral lipid-containing structures, respectively. Arrows indicate the ER membrane. Data are representative of three independent experiments. Scale bars, 500 nm and 100 nm in magnified panels. (D) Models for the membrane structure on lipids in the ER in wild-type and VMP1-deficient cells. Black and white arrowheads correspond to those in (A) to (C). In VMP1-deficient cells, the surfaces of neutral lipid structures (monolayer) are continuous to the ER membranes (bilayer), whereas only phospholipid monolayers cover neutral lipid structures in normal cells.
+**Figure 7.:** (A–C) Transmission electron microscopy of intestinal epithelial cells (A) and hepatocytes (B) from 6-dpf vmp1+/- and vmp1-/- zebrafish and VMP1-depleted HepG2 cells (C). Black and white arrowheads indicate the presence and absence of a lipid bilayer on neutral lipid-containing structures, respectively. Arrows indicate the ER membrane. Data are representative of three independent experiments. Scale bars, 500 nm and 100 nm in magnified panels. (D) Models for the membrane structure on lipids in the ER in wild-type and VMP1-deficient cells. Black and white arrowheads correspond to those in (A) to (C). In VMP1-deficient cells, the surfaces of neutral lipid structures (monolayer) are continuous to the ER membranes (bilayer), whereas only phospholipid monolayers cover neutral lipid structures in normal cells.
 
 ## Discussion
 
@@ -102,13 +138,310 @@ Two independent genome-wide association studies in humans identified intronic si
 
 ## Materials and methods
 
-## Zebrafish
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>vmp1</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>rb1cc1/fip200</td>
+      <td>PMID: 27818143</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>atg5</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Vmp1-/-</td>
+      <td>KOMP Repository</td>
+      <td>MGI allele Vmp1tm1a(KOMP)Wtsi, clone EPD0846_3_F07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Vmp1flox/flox</td>
+      <td>The European Mouse Mutant Archive</td>
+      <td>EMMA ID: EM05506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Villin-Cre</td>
+      <td>Model Animal Research Center of Nanjing University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HepG2</td>
+      <td>ATCC</td>
+      <td>Cat. # HB-8065 RRID: CVCL_0027</td>
+      <td>Negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ADRP (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. #15294–1-AP</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-albumin (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. #16475–1-AP, RRID: AB_2242567</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-APOA-I (mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. #66206–1-Ig</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-APOA-I (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #ab64308</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-APOB (goat polyclonal)</td>
+      <td>Rockland Immunochemicals Inc</td>
+      <td>Cat. #600-101-111, RRID: AB_2056958</td>
+      <td>WB (1:1000) IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-APOB (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #ab20737, RRID: AB_2056954</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-APOE (mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. #66830–1-Ig</td>
+      <td>WB (1:1000) IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #T9026, RRID: AB_477593</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-actin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #A2228, RRID: AB_476697</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BiP (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #ab21685, RRID: AB_2119834</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HERP (mouse monoclonal)</td>
+      <td>Chondrex</td>
+      <td>Cat. #7039</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LC3 (mouse monoclonal)</td>
+      <td>Cosmo Bio</td>
+      <td>Cat. #CTB-LC3-2-IC</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LDH (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #ab52488, RRID: AB_2134961</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MTTP (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #sc-135994, RRID: AB_2148288</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p62 (rabbit polyclonal)</td>
+      <td>MBL International</td>
+      <td>Cat. #PM045, RRID: AB_1279301</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PDI (mouse monoclonal)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat. #ADI-SPA-891, RRID: AB_10615355</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SEC61B (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. #15087–1-AP, RRID: AB_2186411</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VMP1 (rabbit polyclonal)</td>
+      <td>MBL International</td>
+      <td>Cat. #PM072</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Cholesterol Quantitation Kit</td>
+      <td>Biovision inc</td>
+      <td>Cat. #K603-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Cell-Based Proteasome-Glo Assays</td>
+      <td>Promega</td>
+      <td>Cat. #G8660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Triglyceride Quantification Kit</td>
+      <td>Biovision inc</td>
+      <td>Cat. #K622-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>BSA-conjugated oleic acid</td>
+      <td>Nacalai Tesque</td>
+      <td>Cat. #25630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>CP-346086</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #PZ0103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Lactacystin</td>
+      <td>Peptide Institute Inc</td>
+      <td>Cat. #4368-v</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>MG132</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #M8699</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Thapsigargin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #586005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Tunicamycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #T7765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BODIPY 558/568 C12</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #D3835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4',6-diamidino-2-phenylindole (DAPI)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #D9542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst33342</td>
+      <td>Dojindo Molecular Technologies</td>
+      <td>Cat. #H342</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LipidTOX Red</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #H34476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nile red</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #N1142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Oil red O</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #O0625</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish
 
 RIKEN Wako wild-type strain was obtained from the Zebrafish National Bioresource Project of Japan, raised, and maintained in 14 hr light/10 hr dark conditions at 28.5°C according to established protocols (Kimmel et al., 1995). Vmp1-/- zebrafish were generated using the CRISPR/Cas9 system (Jao et al., 2013) including pT7-gRNA, a gift from Wenbiao Chen (plasmid #46759, Addgene), and Cas9 mRNA (CAS500A-1, System Biosciences). A region within exon 6 of zebrafish vmp1 gene was targeted based on CRISPRscan (Moreno-Mateos et al., 2015) (target sequence was 5’-ccaTTGGTGAGCTGCCTCCATAC-3’, where the protospacer adjacent motif is indicated by lower cases). gRNA was synthesized using a MEGAshortscript T7 transcription kit (AM1354, Thermo Fisher Scientific) and purified using a mirVana miRNA Isolation Kit (AM1560, Thermo Fisher Scientific). Wild-type embryos were microinjected at the one-cell stage with 100 pg of sgRNA and 300 pg of Cas9 mRNA using FemtoJet (Eppendorf) equipped with a Femtotip II injection capillary (Eppendorf). For genotyping of vmp1-/- zebrafish, heteroduplex mobility assay (Ota et al., 2014) was performed using genomic DNA, primers flanking the target site (forward primer, 5'-GCTCATCATTTGTACATGCGTGCGTG-3'; reverse primer, 5’-GCTCCAGCATCTCCTCGAATTCTTC-3’), PrimeSTAR Max DNA polymerase (R045A, TaKaRa Bio Inc), and 10% polyacrylamide gels. Vmp1-/- zebrafish were generated by intercrossing vmp1+/- zebrafish harboring a 7 bp deletion. Rb1cc1-/- and atg5-/- zebrafish were generated using rb1cc1+/- zebrafish harboring a 13 bp deletion in exon 4 and atg5+/- zebrafish harboring a 4 bp insertion in exon 3, respectively. Detailed descriptions of the phenotypes of the rb1cc1-/- and atg5-/- zebrafish will be reported elsewhere. Defects in autophagy in rb1cc1-/- zebrafish have been previously confirmed (Kaizuka et al., 2016).
 
 A survival assay of zebrafish larvae was performed on progeny from intercrosses of vmp1+/- zebrafish in the same nursery environment without food. Dead larvae were collected twice a day and frozen. At 13 dpf, the remaining larvae were sacrificed, and all larvae including dead zebrafish were genotyped. Results are shown as Kaplan-Meier survival curves. The external appearance of zebrafish larvae was observed and imaged by a stereoscopic microscope (SZX10, Olympus).
 
-## Mice
+### Mice
 
 The Vmp1gt/gt mouse line was generated using the ES cell line Vmp1_F07 (CSD80081) containing an insertion of a gene trap (gt) cassette in the Vmp1 gene (purchased from the Knockout Mouse Project Repository). ES cells were injected into C57BL/6 blastocysts to obtain chimeric mice, which were crossed with C57BL/6 mice to obtain heterozygous mutant mice. For genotyping of Vmp1gt/gt mice, genomic DNA was isolated from the tail or epiblasts dissected from the conceptus and amplified by PCR using primers (F1, 5'-CCCAAGTCTGCTTTACTGACAGCC-3'; F2, 5'-GGGATCTCATGCTGGAGTTCTTCG-3'; R, 5'-TTACTCAGACAGCCTTTCTCCACCC-3') to detect both 445 bp and 640 bp products for wild-type and gt alleles, respectively. The external appearance of mouse embryos was observed and imaged by a stereoscopic microscope (SZX10, Olympus). Wild-type C57BL/6 mice were obtained from Japan SLC, Inc.
 
@@ -116,70 +449,70 @@ The Vmp1flox mice were purchased from The European Mouse Mutant Archive (EM:0550
 
 All animal experiments were approved by the Institutional Animal Care and Use Committee of the University of Tokyo (Medical-P17-084) and the Institutional Committee of the Institute of Biophysics, Chinese Academy of Sciences (SYXK2016-35).
 
-## Cell culture
+### Cell culture
 
 HepG2 cells (HB-8065, ATCC) were cultured in Dulbecco’s modified Eagle’s medium (DMEM; D6546, Sigma-Aldrich) supplemented with 10% fetal bovine serum (172012, Sigma-Aldrich) and 2 mM L-glutamine (25030–081, Gibco; regular medium) in a 5% CO2 incubator. HepG2 cells were regularly tested and found to be mycoplasma-free by DAPI DNA staining. For neutral lipid staining, cells were cultured with regular medium containing 10% serum and 1 μg/mL BODIPY 558/568 C12 (D3835, Thermo Fisher Scientific) for 1 hr.
 
-## RNA interference
+### RNA interference
 
 Stealth RNAi oligonucleotide (Thermo Fisher Scientific) against human VMP1 or FITM2 was used for small interfering RNA (siRNA) experiments. The following sequences were used: human VMP1 siRNA 5'-GCAUCAACAGUAUGUGCAACGUAUA-3' and human FITM2 siRNA 5'- AAACAAGGUGCCAAACACCUUCUGG-3'. For the negative control, siRNA against luciferase (5'-CGCGGUCGGUAAAGUUGUUCCAUUU-3') (Thermo Fisher Scientific) was used. The Stealth RNAi oligonucleotides were transfected into cells using Lipofectamine RNAiMAX (13778–150, Thermo Fisher Scientific) according to the manufacturer’s protocols. After 2 days, the cells were again transfected with the same siRNA and cultured for an additional 3 days before analysis.
 
-## Antibodies and reagents
+### Antibodies and reagents
 
 For immunoblotting, goat polyclonal anti-APOB (600-101-111, Rockland Immunochemicals Inc), rabbit polyclonal anti-VMP1 (PM072, MBL International), anti-Albumin (16475–1-AP, Proteintech), anti-BiP (ab21685, Abcam), mouse monoclonal anti-LC3 (CTB-LC3-2-IC, Cosmo Bio), anti-α-tubulin (T9026, clone DM1A, Sigma-Aldrich), anti-β-actin (A2228, clone AC-74, Sigma-Aldrich), anti-APOA-I (66206–1-Ig, clone 1C9G5, Proteintech), anti-APOE (66830–1-Ig, clone 1B2c9, Proteintech), anti-HERP (7039, clone HT2, Chondrex), anti-MTTP (sc-135994, Santa-Cruz), anti-PDI (ADI-SPA-891, clone 1D3, Enzo Life Sciences), and rabbit monoclonal anti-lactate dehydrogenase (LDH; ab52488, Abcam) antibodies were used as primary antibodies. Anti-goat (305-035-003), anti-mouse (115-035-003), and anti-rabbit (111-035-144) horseradish peroxidase-conjugated immunoglobulin G (IgG; Jackson ImmunoResearch Laboratories) were used as secondary antibodies. For immunostaining, goat polyclonal anti-APOB antibody and rabbit polyclonal anti-APOE, anti-ADRP/perilipin2 (15294–1-AP, Proteintech), and anti-APOA-I (ab64308, Abcam) antibodies were used as primary antibodies for the staining of culture cells. Rabbit polyclonal anti-APOB (ab20737, Abcam), anti-SEC61B (15087–1-AP, Proteintech), and anti-p62 (PM045, MBL International) antibodies were used for the staining of tissues. AlexaFluor 488-conjugated anti-goat IgG (A11055, Thermo Fisher Scientific), AlexaFluor 488-conjugated anti-rabbit IgG (A11008, Thermo Fisher Scientific), AlexaFluor 647-conjugated anti-rabbit IgG (A31573, Thermo Fisher Scientific), and AlexaFluor 647-conjugated anti-mouse IgG (A31571, Thermo Fisher Scientific) were used as secondary antibodies. For staining of the mouse intestine, FITC-conjugated anti-rabbit IgG (111-095-003, Jackson ImmunoResearch Laboratories) was used. Hoechst33342 (H342, Dojindo Molecular Technologies) and 4′,6-diamidino-2-phenylindole (DAPI; D9542, Sigma-Aldrich) was used to stain DNA. LipidTOX Red (H34476, Thermo Fisher Scientific) was used to stain neutral lipids. Bovine serum albumin (BSA)-conjugated oleic acid (25630, Nacalai Tesque) was prepared as previously reported (Velikkakath et al., 2012). Lactacystin (4368 v) was purchased from the Peptide Institute Inc. MG132 (M8699), tunicamycin (T7765), thapsigargin (586005) and CP-346086 (PZ0103) were purchased from Sigma-Aldrich.
 
-## Live imaging of zebrafish embryos
+### Live imaging of zebrafish embryos
 
 Zebrafish eggs at the one-cell stage were microinjected with 50 ng/µL of GFP-LC3 mRNA, which was synthesized from pcDNA3-GFP-LC3-RFP-LC3ΔG plasmid (Kaizuka et al., 2016) using a mMESSAGE mMACHINE T7 Transcription Kit (AM1344, Thermo Fisher Scientific) and purified using RNeasy Mini Kit (74104, Qiagen). Embryos were anesthetized with 0.03% tricaine (A5040, Sigma-Aldrich), placed in water on a glass-bottomed dish, and viewed using a confocal microscope (FV1000 IX81; Olympus) with an objective lens (UPLSAPO30XS, Olympus).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemistry of tissues was performed as described previously (Morishita et al., 2013). In brief, zebrafish larvae and mouse embryos dissected from the conceptus were fixed in 4% paraformaldehyde (PFA) overnight at 4°C, infiltrated with 15% and 30% sucrose in phosphate-buffered saline (PBS) for 4 hr each, and embedded in Tissue-Tek OCT Compound (Sakura Japan Co.). Sections (7 μm) were prepared using a cryostat (CM3050 S, Leica Microsystems) and mounted on slides. For whole-mount staining of mouse embryos, embryos were dissected from the conceptus and fixed with 4% PFA for 15 min at 4°C. Cryosections or mouse embryos were washed with PBS, treated with 0.05% Triton X-100 for 15 min, blocked with 3% BSA in PBS for 30 min, and incubated with primary antibodies for 1 hr, followed by PBS wash and incubation with secondary antibodies for 1 hr. For staining of neutral lipids and nuclear DNA, samples were treated with LipidTOX Red and Hoechst33342 in PBS for 30 min and washed three times with PBS. The coverslips and mouse embryos in a glass-bottomed dish were mounted with SlowFade antifade reagents (S36936, Thermo Fisher Scientific), viewed using a confocal laser microscope (FV1000 IX81, Olympus), and captured with FluoView software (Olympus). The number of punctate structures was determined using FIJI software (ImageJ, National Institutes of Health) (Schindelin et al., 2012).
 
 For p62 and DAPI staining in intestinal epithelial cell-specific Vmp1-deficient mice, sections were deparaffinized in xylene and rehydrated in an ethanol series (100% × 3, 95%, and 75%). Antigen retrieval was performed using microwaves (0.01 M citrate buffer for 10 min). After blocking, sections were incubated with primary antibodies at 4°C overnight. After washing three times in PBS, sections were incubated with fluorescent-labeled secondary antibodies for 1 hr at room temperature. Samples were then counterstained with DAPI and detected under a confocal microscope (LSM 880 Meta plus Zeiss Axiovert zoom, Zeiss).
 
-## Oil red O and Nile red staining
+### Oil red O and Nile red staining
 
 Whole-mount oil red O staining was performed according to a previous method (Dai et al., 2015). In brief, zebrafish larvae were maintained in 0.2 mM 1-phenyl-2-thiourea (PTU) to avoid pigmentation from one dpf, fixed with 4% PFA overnight at 4°C, washed twice with PBS, infiltrated with 80% and 100% 1,2-propylene glycol for 30 min each, and stained with 0.5% oil red O (O0625, Sigma-Aldrich) in 100% 1,2-propylene glycol overnight at room temperature. Stained larvae were washed twice with PBS and the background color was faded with 100% and 80% 1,2-propylene glycol for 30 min each, and observed by a stereoscopic microscope (SZX10, Olympus). For oil red O staining of cryosections, zebrafish larvae were fixed in 4% PFA overnight at 4°C, infiltrated with 15% and 30% sucrose for 4 hr each at 4°C, and embedded in Tissue-Tek OCT Compound. Sections (6 μm) were mounted on slides and stained with oil red O in 60% isopropanol for 15 min at 37°C, followed by a 60% isopropanol wash, staining with hematoxylin for 3 min, and a wash with water. Slides were visualized using a microscope (BX51, Olympus) equipped with a digital camera (DP70, Olympus).
 
 For Nile red staining in intestinal epithelial cell-specific Vmp1-deficient mice fed ad libitum, frozen tissues were embedded and cryostat sectioned. Sections were washed three times with PBS and then stained with Nile red (1:1000, N1142, Thermo Fisher Scientific) for 15 min at room temperature. Coverslips were mounted with DAPI and examined under a confocal microscope (LSM 880 Meta plus Zeiss Axiovert zoom, Zeiss).
 
-## Alcian blue staining
+### Alcian blue staining
 
 Whole-mount Alcian blue staining to visualize the cartilage was performed according to the previous methods (Walker and Kimmel, 2007). In brief, zebrafish larvae were maintained in 0.2 mM PTU from one dpf, fixed with 4% PFA overnight at 4°C, dehydrated with 50% ethanol for 10 min, stained with acid-free stain solution (0.02% Alcian blue (A5268, Sigma-Aldrich), 60 mM MgCl2, 70% ethanol) at room temperature overnight, cleared with 50% glycerol and 0.25% KOH at room temperature for 2 hr, dipped into 50% glycerol and 0.1% KOH, and viewed and photographed with a stereoscopic microscope (SZX10, Olympus).
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Cells grown on coverslips (S2441, Matsunami) were washed with PBS and fixed with 4% PFA for 15 min at room temperature. Fixed cells were permeabilized with 0.1% Triton X-100 (35501–15, Nacalai Tesque) in PBS for 5 min and blocked with 3% BSA in PBS and incubated with specific antibodies for 1 hr. After washing with PBS, cells were incubated with Alexa Fluor 488- or 647-conjugated secondary antibodies for 1 hr. The coverslips were viewed using a confocal laser microscope (FV1000 IX81, Olympus) with a 100 × oil immersion objective lens (Olympus) and captured with FluoView software (Olympus). For the final output, the images were processed using Photoshop CS6 (Adobe). ImageJ software was used for quantification of the number and total pixel area of lipid-containing structures and the number of APOB- or ADRP-positive neutral lipid particles.
 
-## Electron microscopy
+### Electron microscopy
 
 Zebrafish larvae were dissected at the abdomen under anesthesia with 0.03% tricaine, and fixed with 2% glutaraldehyde and 2% PFA in 0.1 M sodium cacodylate buffer (0.1% calcium chloride) overnight. For HepG2 cells, cells were cultured on a poly-L-lysine coated cell tight C-2 cell disk (MS-0113K, Sumitomo Bakelite) and fixed in 2.5% glutaraldehyde (G015, TAAB) in 0.1 M phosphate buffer (pH 7.4) for 2 hr. Tissues and cells were then post-fixed with 1.0% osmium tetroxide in 0.1 M phosphate buffer for 2 hr, dehydrated, and embedded in Epon 812 according to a standard procedure. Ultrathin sections were stained with uranyl acetate and lead citrate and observed using an H-7100 electron microscope (Hitachi).
 
-## Immunoblotting
+### Immunoblotting
 
 Zebrafish embryos or HepG2 cells were lysed with lysis buffer (50 mM Tris-HCl [pH 7.5], 150 mM NaCl, 1 mM EDTA, 1% Triton X-100, 1 mM phenylmethanesulfonyl fluoride, and complete EDTA-free protease inhibitor cocktail [19543200, Roche]). After centrifugation at 15,000 × g for 20 min, the supernatants were collected, and the protein concentrations were adjusted using the bicinchoninic acid method (23228, Thermo Fisher Scientific). The lysates were solubilized with immunoblot sample buffer (46.7 mM Tris-HCl [pH 6.8], 5% glycerol, 1.67% sodium dodecyl sulfate [SDS], 1.55% dithiothreitol, and 0.003% bromophenol blue). The immunoblot samples were separated by SDS-polyacrylamide gel electrophoresis, transferred to an Immobilon-P polyvinylidene difluoride membrane (IPVH00010, Millipore), and blotted with primary and secondary antibodies. Each protein signal was detected with Super-Signal West Pico Chemiluminescent substrate (1856136, Thermo Fisher Scientific) or Immobilon Western Chemiluminescent HRP substrate (WBKLS0500, Millipore). Signal intensities were captured using FUSION SOLO7S (Vilber-Lourmat). The images were processed using Photoshop CS6 (Adobe).
 
-## Lipoprotein secretion assay
+### Lipoprotein secretion assay
 
 HepG2 cells were treated with siRNA twice as described above and cultured in serum-free DMEM supplemented with 200 nM oleic acids-BSA for 24 hr in 12-well plates. The cells were washed with PBS and re-cultured in serum-free DMEM before analysis. The culture medium was centrifuged at 5000 x g for 3 min to remove any cells or cellular debris. The culture medium was then precipitated with 10% trichloroacetic acid (TCA), and the pellets were washed with ice-cold acetone twice and dissolved in immunoblot sample buffer. The cells were washed with PBS and lysed as described above. Samples (approximately 7% or 14% vol of total precipitated media or cell lysates, respectively) were subjected to immunoblot analysis. ImageJ software was used for densitometric quantification.
 
 For chromatography analysis, siRNA-treated HepG2 cells (approximately 1.5 × 106 cells) were cultured in 0.1% BSA containing DMEM with or without oleic acids-BSA for 48 hr before analysis. Lipoproteins in culture medium were analyzed using the gel permeation high performance liquid chromatography (Skylight Biotech Inc) system as previously described (Okazaki and Yamashita, 2016). Briefly, lipoproteins in culture medium were separated with tandemly connected Skylight PakLP1-AA gel permeation columns (Skylight Biotech Inc; 300 mm × 4.6 mm I.D.). The column effluent was then equally split into two lines by a micro splitter, and each effluent was allowed to react at 37°C with the cholesterol and triglyceride reagents. Absorbance at 550 nm was continuously monitored after each enzymatic reaction in two reactor coils (PTFE; 25 m × 0.18 mm I.D.).
 
-## Triglyceride and cholesterol quantification
+### Triglyceride and cholesterol quantification
 
 Six pairs of 18-month-old Vmp1flox/+;Villin-Cre mice and Vmp1flox/flox;Villin-Cre mice fed ad libitum were examined. Blood was allowed to stand for 2 hr and centrifuged at 1600 g for 15 min for collecting the serum. Serum samples were then measured by OLYMPUS AU480 automatic biochemical analyzer.
 
 HepG2 cells were treated with siRNA twice as described above. HepG2 cells (approximately 1 × 105 cells) were cultured in serum-free medium for 24 hr before analysis. For total lipid extraction from culture medium, the Bligh and Dyer method was performed. Both extra- and intra-cellular cholesterol and triglyceride levels were measured using quantitation kits (K603-100 and K622-100, respectively, Biovision Inc) according to the manufacturer’s protocols.
 
-## Measurement of proteasome activity
+### Measurement of proteasome activity
 
 Proteasomal activity was measured with the Proteasome-Glo kit (G8660, Promega). HepG2 cells were treated with siRNA twice as described above and plated equally (approximately 1 × 104 cells per well) in 96-well white-walled plates. The cells were cultured with or without 5 μM lactacystin for 2 hr before measurement. Proteasome-Glo Cell-Based Reagent was prepared as per manufacturer’s protocol and an equal volume was added to each well. The plate was mixed for 2 min using TAITEC E-36 micromixer and then incubated at room temperature for 10 min. Luminescence was measured by a microplate leader EnSpire (2300–00J, PerkinElmer).
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA was extracted from HepG2 cells using ISOGEN (319–90211, Nippon Gene) and reverse-transcribed using ReverTraAce (FSQ-201, TOYOBO) according to the manufacturer’s instructions. PCR was performed by a Thermal Cycler Dice TP800 (TaKaRa Bio Inc) in triplicate using TB Green Premix Ex Taq II (RR820, TaKaRa Bio Inc). The expression level of FITM2 was normalized to that of ACTB. Primers used are listed as follows: FITM2, 5′-AAAGGAACACCAGAGCAAGC-3′ and 5′-CCTCATGCAGCACAGACATC-3′; ACTB, 5′-ATTGCCGACAGGATGCAGAA-3′ and 5′-ACATCTGCTGGAAGGTGGACAG-3′.
 
-## Statistical analysis
+### Statistical analysis
 
 Student t-test or Mann-Whitney U-test were performed to compare two groups. All data are presented as the mean ± standard error of the mean unless otherwise stated. Statistical analysis was performed using R software (R Core Team) or GraphPad Prism seven software (GraphPad software).

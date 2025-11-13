@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Endothelial cells (ECs) in the central nervous system (CNS) acquire their specialized blood–brain barrier (BBB) properties in response to extrinsic signals, with Wnt/β-catenin signaling coordinating multiple aspects of this process. Our knowledge of CNS EC development has been advanced largely by animal models, and human pluripotent stem cells (hPSCs) offer the opportunity to examine BBB development in an in vitro human system. Here, we show that activation of Wnt signaling in hPSC-derived naïve endothelial progenitors, but not in matured ECs, leads to robust acquisition of canonical BBB phenotypes including expression of GLUT-1, increased claudin-5, decreased PLVAP, and decreased permeability. RNA-seq revealed a transcriptome profile resembling ECs with CNS-like characteristics, including Wnt-upregulated expression of LEF1 , APCDD1 , and ZIC3 . Together, our work defines effects of Wnt activation in naïve ECs and establishes an improved hPSC-based model for interrogation of CNS barriergenesis.
+Endothelial cells (ECs) in the central nervous system (CNS) acquire their specialized blood–brain barrier (BBB) properties in response to extrinsic signals, with Wnt/β-catenin signaling coordinating multiple aspects of this process. Our knowledge of CNS EC development has been advanced largely by animal models, and human pluripotent stem cells (hPSCs) offer the opportunity to examine BBB development in an in vitro human system. Here, we show that activation of Wnt signaling in hPSC-derived naïve endothelial progenitors, but not in matured ECs, leads to robust acquisition of canonical BBB phenotypes including expression of GLUT-1, increased claudin-5, decreased PLVAP, and decreased permeability. RNA-seq revealed a transcriptome profile resembling ECs with CNS-like characteristics, including Wnt-upregulated expression of LEF1, APCDD1, and ZIC3. Together, our work defines effects of Wnt activation in naïve ECs and establishes an improved hPSC-based model for interrogation of CNS barriergenesis.
 
 ## Introduction
 
@@ -34,13 +34,41 @@ In this work, we aimed to define the effects of activating Wnt/β-catenin signal
 
 ## Results
 
-## Wnt activation in hPSC-derived endothelial progenitors
+### Wnt activation in hPSC-derived endothelial progenitors
 
 We adapted an existing protocol to produce endothelial progenitor cells (EPCs) from hPSCs (Lian et al., 2014; Bao et al., 2016; Figure 1A). To achieve mesoderm specification, this method employs an initial activation of Wnt/β-catenin signaling with CHIR 99021 (CHIR), a small molecule inhibitor of glycogen synthase kinase-3 (GSK-3), which results in inhibition of GSK-3β-mediated β-catenin degradation. After 5 days of expansion, the resulting cultures contained a mixed population of CD34+CD31+ EPCs and CD34–CD31– non-EPCs (Figure 1B and C). We used magnetic-activated cell sorting (MACS) to isolate CD31+ cells from this mixed culture and plated these cells on collagen IV-coated plates in a minimal EC medium termed hECSR (Nishihara et al., 2020). We first asked whether Wnt3a, a ligand widely used to activate canonical Wnt/β-catenin signaling (Kim et al., 2005; Kim et al., 2008; Liebner et al., 2008; Cecchelli et al., 2014; Praça et al., 2019), could induce GLUT-1 expression in the resulting ECs. After 6 days of treatment, we observed a significant increase in the fraction of GLUT-1+ ECs in Wnt3a-treated cultures compared to controls (Figure 1D and E). Consistent with previous observations (Nishihara et al., 2020), we also detected a population of calponin+ smooth muscle protein 22-⍺+ putative smooth muscle-like cells (SMLCs) outside the endothelial colonies (Figure 1—figure supplement 1), and these SMLCs expressed GLUT-1 in both control and Wnt3a-treated conditions (Figure 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig1-v3.jpg)
+
+**Figure 1.:** (A) Overview of the endothelial differentiation and Wnt treatment protocol. (B) Immunocytochemistry analysis of CD34 and CD31 expression in D5 endothelial progenitor cells (EPCs) prior to magnetic-activated cell sorting (MACS). Hoechst nuclear counterstain is overlaid in the merged image. Scale bars: 200 μm. (C) Flow cytometry analysis of CD34 and CD31 expression in D5 EPCs prior to MACS. (D) Immunocytochemistry analysis of β-catenin and GLUT-1 expression in Passage 1 ECs treated with Wnt3a or control. Hoechst nuclear counterstain is overlaid. Arrowheads indicate smooth muscle-like cells (SMLCs). Scale bars: 200 μm. (E) Quantification of the percentage of GLUT-1+ ECs in control- and Wnt3a-treated conditions. Points represent replicate wells from two independent differentiations of the IMR90-4 line, each differentiation indicated with a different color. Bars indicate mean values. p-value: two-way ANOVA.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Immunocytochemistry analysis of calponin and smooth muscle protein 22-⍺ (SM22⍺) in Passage 1 cultures containing endothelial cells (ECs) and SMLCs. Hoechst nuclear counterstain is overlaid in the merged image. Dashed area indicates an EC colony. Scale bars: 200 μm.
+
 Based on these promising results with Wnt3a, we next tested a low concentration (4 µM) of the GSK-3 inhibitor CHIR because of its ability to activate Wnt signaling in a receptor/co-receptor-independent manner. In addition to GLUT-1, we evaluated expression of two other key proteins: claudin-5, which is known to be upregulated in CNS ECs in response to Wnt (Benz et al., 2019), and caveolin-1, given the low rate of caveolin-mediated transcytosis in CNS compared to non-CNS ECs (Reese and Karnovsky, 1967; Andreone et al., 2017; Figure 2A). 4 µM CHIR robustly induced GLUT-1 expression in approximately 90% of ECs while increasing EC number and increasing EC purity to nearly 100% (Figure 2B). Furthermore, CHIR led to an approximately 1.5-fold increase in average claudin-5 abundance and a 10- to 30-fold increase in GLUT-1 abundance, but also a 2- to 4-fold increase in caveolin-1 (Figure 2B). We therefore titrated CHIR to determine an optimal concentration for EC expansion, purity, GLUT-1 induction, and claudin-5 upregulation while limiting the undesirable non-CNS-like increase in caveolin-1 abundance. Although 2 µM CHIR did not lead to increased caveolin-1 expression compared to vehicle control (DMSO), it also did not elevate claudin-5 or GLUT-1 expression compared to control and was less effective in increasing EC number and EC purity than 4 µM CHIR (Figure 2—figure supplement 1). On the other hand, 6 µM CHIR further increased GLUT-1 abundance but also further increased caveolin-1 abundance and did not improve EC number, EC purity, or claudin-5 expression (Figure 2—figure supplement 1). Therefore, we conducted further experiments using 4 µM CHIR. We confirmed that the CHIR-mediated increases in EC purity, EC number, and caveolin-1 and GLUT-1 expression were conserved in an additional hPSC line, although claudin-5 upregulation was not apparent (Figure 2—figure supplement 2). We also used two hPSC lines with doxycycline-inducible expression of short hairpin RNAs targeting CTNNB1 (β-catenin) to confirm that CHIR-mediated upregulation of GLUT-1 in ECs was β-catenin-dependent. Indeed, doxycycline treatment in combination with CHIR significantly reduced GLUT-1 abundance in ECs derived from these hPSC lines (Figure 2—figure supplement 3). Finally, we confirmed that increased EC number was the result of increased EC proliferation in CHIR-treated cultures (Figure 2—figure supplement 4). Together, these results suggest that activation of the Wnt/β-catenin pathway is capable of inducing CNS-like phenotypes in hPSC-derived endothelial progenitors.
 
-## Effects of CHIR-mediated Wnt activation in endothelial progenitors
+![Figure 2.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig2-v3.jpg)
+
+**Figure 2.:** (A) Immunocytochemistry analysis of claudin-5, caveolin-1, and GLUT-1 expression in Passage 1 endothelial cells (ECs) treated with DMSO or 4 µM CHIR. Hoechst nuclear counterstain is overlaid in the merged images. Dashed lines indicate the border between an EC colony and smooth muscle-like cells (SMLCs) in the DMSO condition. Scale bars: 200 μm. (B) Quantification of images from the conditions described in (A) for number of ECs per 20× field, percentage of ECs (claudin-5+ cells relative to total nuclei), percentage of GLUT-1+ ECs (relative to total claudin-5+ ECs), and mean fluorescence intensity of claudin-5, caveolin-1, and GLUT-1 normalized to Hoechst mean fluorescence intensity within the area of claudin-5+ ECs only. Points represent replicate wells from 2 to 6 independent differentiations of the IMR90-4 line, each differentiation indicated with a different color. Bars indicate mean values. For the fluorescence intensity plots, values were normalized within each differentiation such that the mean of the DMSO condition equals 1. p-values: two-way ANOVA on unnormalized data.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunocytochemistry analysis of claudin-5, caveolin-1, and GLUT-1 expression in Passage 1 endothelial cells (ECs) treated with 2 μM, 4 μM, or 6 μM CHIR, or DMSO vehicle control. Hoechst nuclear counterstain is overlaid in the merged images. Scale bars: 200 μm. (B) Quantification of images from the conditions described in (A) for number of ECs per 20× field and percentage of ECs (claudin-5+ cells relative to total nuclei). Points represent replicate wells from one differentiation of the IMR90-4 line, and bars indicate mean values. p-values: ANOVA followed by Tukey’s honest significant difference (HSD) test. (C) Quantification of claudin-5, caveolin-1, and GLUT-1 mean fluorescence intensity normalized to Hoechst mean fluorescence intensity within the area of claudin-5+ ECs only. Points represent replicate wells from one differentiation of the IMR90-4 line. Bars indicate mean values, with values normalized such that the mean of the DMSO condition equals 1. p-values: ANOVA followed by Tukey’s HSD test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Immunocytochemistry analysis of claudin-5, caveolin-1, and GLUT-1 expression in Passage 1 endothelial cells (ECs) differentiated from the WTC11 iPSC line treated with 2 μM, 4 μM, or 6 μM CHIR, or DMSO vehicle control. Hoechst nuclear counterstain is overlaid in the merged images. Scale bars: 200 μm. (B) Quantification of images from the conditions described in (A) for number of ECs per 20× field and percentage of ECs (claudin-5+ cells relative to total nuclei). Points represent replicate wells from 1 to 2 differentiations of the WTC11 line, each differentiation indicated with a different color. Bars indicate mean values. p-values: two-way ANOVA followed by Tukey’s honest significant difference (HSD) test. (C) Quantification of claudin-5, caveolin-1, and GLUT-1 mean fluorescence intensity normalized to Hoechst mean fluorescence intensity within the area of claudin-5+ ECs only. Points represent replicate wells from 1 to 2 differentiations of the WTC11 line, each differentiation indicated with a different color. Bars indicate mean values, with values normalized within each differentiation such that the mean of the DMSO condition equals 1. p-values: two-way ANOVA followed by Tukey’s HSD test on unnormalized data.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Immunocytochemistry analysis of GLUT-1 expression in Passage 1 endothelial cells (ECs) treated with DMSO, CHIR, or CHIR+ doxycycline (Dox) at 1, 2, or 4 μg/mL. Images from the H9-7TGP-ishcat2, 19-9-11-7TGP-ishcat3, and IMR90-4 lines are shown. Hoechst nuclear counterstain is overlaid. Dashed lines indicate borders between EC colonies and smooth muscle-like cells (SMLCs) in the DMSO condition. Scale bars: 200 μm. (B) Quantification of images from the conditions described in (A) for GLUT-1 mean fluorescence intensity normalized to Hoechst mean fluorescence intensity within the area of ECs only. At left, points represent replicate wells from one differentiation of the H9-7TGP-ishcat line (green) and one differentiation of the 19-9-11-7TGP-ishcat3 line (orange). Bars indicate mean values, with values normalized within each differentiation such that the mean of the DMSO condition equals 1. p-values: two-way ANOVA followed by Tukey’s honest significant difference (HSD) test on unnormalized data. At right, points represent replicate wells from one differentiation of the IMR90-4 line. Bars indicate mean values, with values normalized such that the mean of the DMSO condition equals 1. p-values: ANOVA followed by Tukey’s HSD test.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Immunocytochemistry analysis of CD31 and Ki67 expression in Passage 1 endothelial cells (ECs) treated with DMSO or CHIR. Hoechst nuclear counterstain is overlaid. Dashed lines indicate borders between the EC colony and smooth muscle-like cells (SMLCs) in the DMSO condition. Arrowheads indicate examples of Ki67+ ECs. Scale bars: 200 μm. (B) Quantification of the percentage of Ki67+ ECs in DMSO- and CHIR-treated conditions. Points represent replicate wells from one differentiation of the WTC11 line, and bars indicate mean values. p-value: Student’s t test. (C) Flow cytometry-based cell cycle analysis. Representative plots of Vybrant DyeCycle Green Stain abundance in CD31+ cells from Passage 1 cultures treated with DMSO or CHIR. (D) Quantification of the percentage of S/G2/M phase ECs. Points represent replicate wells from one differentiation of the WTC11 line, and bars indicate mean values. p-value: Student’s t test.
+
+### Effects of CHIR-mediated Wnt activation in endothelial progenitors
 
 Since CHIR elicited a robust Wnt-mediated response, we next asked whether other aspects of the CNS EC barrier phenotype were CHIR-regulated. PLVAP, a protein that forms bridges across both caveolae and fenestrae (Herrnberger et al., 2012), is one such canonically Wnt-downregulated protein. We therefore first evaluated PLVAP expression in Passage 1 control (DMSO) or CHIR-treated ECs using confocal microscopy (Figure 3A). We observed numerous PLVAP+ punctate vesicle-like structures in both conditions, with CHIR treatment reducing PLVAP abundance by approximately 20% (Figure 3A and B). This effect was not apparent in western blots of Passage 1 ECs, likely due to the relatively modest effect (Figure 4A and B). However, after two more passages (Figure 1A), Passage 3 ECs demonstrated a robust downregulation of PLVAP in CHIR-treated cells compared to controls (Figure 4C and D). We also used western blotting to confirm CHIR-mediated upregulation of GLUT-1 and claudin-5 both at Passage 1 and Passage 3 (Figure 4A–D). We next evaluated expression of the tricellular tight junction protein LSR (angulin-1) because of its enrichment in CNS versus non-CNS ECs, and the temporal similarity between LSR induction and the early stage of Wnt-mediated CNS barriergenesis (Sohet et al., 2015). We found that CHIR treatment led to a strong increase in LSR expression in both Passage 1 and Passage 3 ECs (Figure 4A–D), suggesting that Wnt signaling upregulates multiple necessary components of the CNS EC bicellular and tricellular junctions.
 
@@ -54,13 +82,57 @@ Since CHIR elicited a robust Wnt-mediated response, we next asked whether other 
 
 CHIR treatment produced two apparently competing changes in ECs related to vesicular transport: an expected downregulation of PLVAP and an unexpected upregulation of caveolin-1. We therefore asked whether the rate of total fluid-phase endocytosis differed between CHIR-treated and control ECs using a fluorescently labeled 10 kDa dextran as a tracer. After incubating Passage 1 cultures with dextran for 2 hr at 37°C, we used flow cytometry to gate CD31+ ECs and assess total dextran accumulation (Figure 5A and B). In ECs incubated at 37°C, CHIR treatment did not change the geometric mean dextran signal compared to DMSO (Figure 5B and C), but did cause a broadening of the distribution of dextran intensities as quantified by the coefficient of variation (CV), indicative of subpopulations of cells with decreased and increased dextran uptake (Figure 5B and D). We confirmed that the dextran signal measured by this assay was endocytosis-dependent by carrying out the assay at 4°C and with inhibitors of specific endocytic pathways (Figure 5—figure supplement 1A–C). Compared to vehicle control, chlorpromazine (inhibitor of clathrin-mediated endocytosis) and rottlerin (inhibitor of macropinocytosis) both decreased dextran uptake, while nystatin (inhibitor of caveolin-mediated endocytosis) did not significantly affect uptake (Figure 5—figure supplement 1B and C), consistent with the very small number of dextran+ caveolin-1+ puncta observed by confocal imaging (Figure 5—figure supplement 1D). Thus, despite the generally uniform elevation of caveolin-1 and decrease of PLVAP observed by immunocytochemistry in CHIR-treated ECs, our functional assay suggests neither an overall increase nor decrease in total fluid-phase endocytosis. Instead, it indicates that CHIR increases the heterogeneity of the EC population with respect to the rate of endocytosis.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig5-v3.jpg)
+
+**Figure 5.:** (A) Flow cytometry analysis of CD31 expression in Passage 1 ECs following the dextran internalization assay. CD31+ cells were gated for further analysis. (B) Flow cytometry analysis of 10 kDa dextran-Alexa Fluor 488 (AF488) abundance in CD31+ cells. Cells were treated with DMSO or CHIR for 6 days prior to the assay. Representative plots from cells incubated with dextran for 2 hr at 37°C are shown. (C) Quantification of 10 kDa dextran-AF488 geometric mean fluorescence intensity in CD31+ cells. Treatment and assay conditions were as described in (B). Points represent replicate wells from three independent differentiations of the IMR90-4 line, each differentiation indicated with a different color. Bars indicate mean values. p-value: two-way ANOVA. (D) Quantification of the coefficient of variation (CV) of 10 kDa dextran-AF488 fluorescence intensity in CD31+ cells. Points represent replicate wells from three independent differentiations of the IMR90-4 line, each differentiation indicated with a different color. Bars indicate mean values. p-value: two-way ANOVA. (E) Transendothelial electrical resistance (TEER) of Passage 3 ECs. The x-axis indicates the number of days after seeding cells on Transwell inserts. Points represent replicate wells from three independent differentiations of the IMR90-4 line, each differentiation indicated with a different shape. p-value: two-way ANOVA. (F) Permeability of Passage 3 ECs to sodium fluorescein. Points represent replicate wells from two independent differentiations of the IMR90-4 line, each differentiation indicated with a different color. Bars indicate mean values. p-value: two-way ANOVA.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Flow cytometry analysis of 10 kDa dextran-Alexa Fluor 488 (AF488) abundance in DMSO-treated CD31+ cells. Representative plots from cells incubated with dextran for 2 hr at 37°C (same plot shown in Figure 5B) or 4°C (A) or cells incubated with dextran and indicated inhibitors (B) are shown. (C) Quantification of 10 kDa dextran-AF488 geometric mean fluorescence intensity in CD31+ cells. Treatment and assay conditions were as described in (B). Points represent replicate wells from two independent differentiations of the IMR90-4 line, each differentiation indicated with a different color. Bars indicate mean values. p-values: two-way ANOVA followed by Dunnett’s test. CPZ: chlorpromazine. (D) Confocal immunocytochemistry analysis of caveolin-1 expression and 10 kDa dextran internalization in Passage 1 DMSO-treated endothelial cells (ECs). Hoechst nuclear counterstain is overlaid. Single confocal Z-slices from two representative fields are shown. XZ and YZ projections derived from serial Z-slices with 0.25 μm spacing are shown at right and below. Arrowheads indicate dextran+ caveolin-1+ puncta. Scale bars: 10 μm.
+
 We also compared the paracellular barrier properties of DMSO- and CHIR-treated ECs. Because Passage 1 cultures contain SMLCs that preclude formation of a confluent endothelial monolayer, we evaluated paracellular barrier properties of Passage 3 ECs that had undergone selective dissociation and replating (see Materials and methods), a strategy that effectively purifies the cultures (Nishihara et al., 2020). CHIR-treated Passage 3 ECs had elevated transendothelial electrical resistance (TEER) (Figure 5E) and decreased permeability to the small molecule tracer sodium fluorescein (Figure 5F). Together, these results are consistent with CHIR-mediated increases to tight junction protein expression (e.g., claudin-5 and LSR) and suggest that Wnt activation leads to functional improvements to paracellular barrier in this system.
 
 Given the relatively weak responses to Wnt activation in adult mouse liver ECs in vivo (Munji et al., 2019) and adult mouse brain ECs cultured in vitro (Sabbagh and Nathans, 2020), we sought to determine whether the immature, potentially more plastic state of hPSC-derived endothelial progenitors contributed to the relatively robust CHIR-mediated response we observed. To test this hypothesis, we matured hPSC-derived ECs in vitro for four passages (until approximately day 30) prior to initiating CHIR treatment for 6 days and compared the resulting cells to differentiation-matched samples treated with CHIR immediately after MACS (Figure 6A). Both Passage 1 DMSO-treated ECs and Passage 5 DMSO-treated ECs, which are analogous to EECM-BMEC-like cells we previously reported (Nishihara et al., 2020), did not have detectable GLUT-1 expression (Figure 6B). Compared to DMSO controls, the CHIR-treated Passage 5 ECs exhibited no increase in GLUT-1 abundance (Figure 6B–D), which contrasts with the marked increase observed when CHIR treatment was initiated immediately after MACS (Figure 6B–D). Furthermore, CHIR treatment in matured ECs did not increase claudin-5 expression and did not increase EC number (Figure 6B–D), in contrast to the increases observed in both properties when treatment was initiated immediately after MACS (Figure 6B–D). We observed a similar lack of robust GLUT-1 induction in an additional differentiation and an additional hPSC line in which CHIR treatment was carried out at Passage 4 (Figure 6—figure supplement 1). Together, these data suggest that early, naïve endothelial progenitors are more responsive to Wnt activation than more mature ECs derived by the same differentiation protocol.
 
-## Comprehensive profiling of the Wnt-regulated endothelial transcriptome
+![Figure 6.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig6-v3.jpg)
+
+**Figure 6.:** (A) Overview of the endothelial differentiation, extended culture, and CHIR treatment protocols. (B) Immunocytochemistry analysis of claudin-5 and GLUT-1 expression in endothelial cells (ECs) treated with DMSO or CHIR as outlined in (A). Images from the IMR90-4 line are shown. Hoechst nuclear counterstain is overlaid. Scale bars: 100 μm. (C) Quantification of images from the conditions described in (B) for number of ECs per 30× field. Points represent replicate wells from one differentiation of the IMR90-4 line. Bars indicate mean values. p-values: ANOVA followed by Tukey’s honest significant difference (HSD) test. (D) Quantification of images from the conditions described in (B) for GLUT-1 and claudin-5 mean fluorescence intensity normalized to Hoechst mean fluorescence intensity within the area of claudin-5+ ECs only. Points represent replicate wells from one differentiation of the IMR90-4 line. Bars indicate mean values, with values normalized such that the mean of the DMSO condition equals 1. p-values: ANOVA followed by Tukey’s HSD test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Immunocytochemistry analysis of claudin-5 and GLUT-1 expression in endothelial cells (ECs) treated with DMSO or CHIR at Passage 4 (as outlined in Figure 6A). Images from the IMR90-4 and H9-CDH5-eGFP lines are shown. Hoechst nuclear counterstain is overlaid. Scale bars: 100 μm. (B) Quantification of images from the conditions described in (A) for number of ECs per 20× field. Points represent replicate wells from one differentiation of the IMR90-4 line (orange) and one differentiation of the H9-CDH5-eGFP line (blue). Bars indicate mean values. p-value: two-way ANOVA. (C) Quantification of images from the conditions described in (A) for GLUT-1 and claudin-5 mean fluorescence intensity normalized to Hoechst mean fluorescence intensity within the area of claudin-5+ ECs only. Points represent replicate wells from one differentiation of the IMR90-4 line (orange) and one differentiation of the H9-CDH5-eGFP line (blue). Bars indicate mean values, with values normalized within each differentiation such that the mean of the DMSO condition equals 1. p-values: two-way ANOVA on unnormalized data.
+
+### Comprehensive profiling of the Wnt-regulated endothelial transcriptome
 
 We turned next to RNA-sequencing as an unbiased method to assess the impacts of Wnt activation on the EC transcriptome. We performed four independent differentiations and analyzed Passage 1 ECs treated with DMSO or CHIR using fluorescence-activated cell sorting (FACS) to isolate CD31+ ECs from the mixed EC/SMLC cultures. We also sequenced the SMLCs from DMSO-treated cultures at Passage 1 from two of these differentiations. DMSO- and CHIR-treated ECs at Passage 3 from three of these differentiations were also sequenced. Principal component analysis of the resulting whole-transcriptome profiles revealed that the two cell types (ECs and SMLCs) segregated along principal component (PC) 1, which explained 57% of the variance. In ECs, the effects of passage number and treatment were reflected in PC 2, which explained 21% of the variance (Figure 7A). We next validated the endothelial identity of our cells; we observed that canonical endothelial marker genes (including CDH5, CD34, PECAM1, CLDN5, ERG, and FLI1) were enriched in ECs compared to SMLCs and had high absolute abundance, on the order of 100–1000 transcripts per million (TPM) (Figure 7B, Supplementary file 1). SMLCs expressed mesenchymal (mural/fibroblast)-related transcripts (including PDGFRB, CSPG4, PDGFRA, TBX2, CNN1, and COL1A1), which ECs generally lacked, although we did observe slight enrichment of some of these genes in Passage 1 DMSO-treated ECs, likely reflective of a small amount of SMLC contamination despite CD31 FACS (Figure 7B). SMLCs also expressed SLC2A1 (Supplementary file 1) consistent with protein-level observations (Figure 1D). We also observed little to no expression of the epithelial genes CDH1, EPCAM, CLDN1, CLDN3 (Castro Dias et al., 2019), CLDN4, and CLDN6, reflecting the definitive endothelial nature of the cells (Figure 7B, Supplementary file 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig7-v3.jpg)
+
+**Figure 7.:** (A) Principal component (PC) analysis of EC and smooth muscle-like cell (SMLC) whole-transcriptome data subject to variance stabilizing transformation by DESeq2. Points from Passage 1 ECs represent cells from four independent differentiations of the IMR90-4 line, points from Passage 3 ECs represent cells from three independent differentiations of the IMR90-4 line, and points from SMLCs represent two independent differentiations of the IMR90-4 line. Points are colored based on treatment: DMSO (black), CHIR (red). Data are plotted in the space of the first two PCs, with the percentage of variance explained by PC1 and PC2 shown in axis labels. Dashed lines indicate points from Passage 1 and Passage 3 ECs, and are not confidence ellipses. (B) Heatmap of transcript abundance [log2(TPM + 1)] for endothelial, mesenchymal, and epithelial genes across all samples. Abundance data for all transcripts are provided in Supplementary file 1. (C) Differential expression analysis of Passage 1 CHIR-treated ECs compared to Passage 1 DMSO-treated ECs. Differentially expressed genes (adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction) are highlighted in green (upregulated) and red (downregulated). The number of upregulated, downregulated, and nonsignificant (ns) genes is shown in the legend. Complete results of differential expression analysis are provided in Supplementary file 2. (D) Transcript abundance (TPM) of Wnt-regulated, barrier-related genes in Passage 1 DMSO- and CHIR-treated ECs. Points represent cells from four independent differentiations of the IMR90-4 line and lines connect points from matched differentiations. All genes shown were differentially expressed (adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction). p-values are provided in Supplementary file 2. (E) Venn diagram illustrating the number of genes identified as upregulated or downregulated (adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction) in ECs treated with CHIR versus DMSO at Passage 1 compared to Passage 3. Gene lists are provided in Supplementary file 2, and selected genes are shown in Figure 7—figure supplement 1 and Figure 7—figure supplement 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Differential expression analysis of Passage 3 CHIR-treated ECs compared to Passage 3 DMSO-treated ECs. Differentially expressed genes (adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction) are highlighted in green (upregulated) and red (downregulated). The number of upregulated, downregulated, and nonsignificant (ns) genes is shown in the legend. Complete results of differential expression analyses are provided in Supplementary file 2. (B) Transcript abundance (TPM) of selected genes in Passage 1 and Passage 3 DMSO- and CHIR-treated ECs. Points represent cells from 3 to 4 independent differentiations of the IMR90-4 line. Lines connect points from matched differentiations between the DMSO and CHIR conditions; for clarity, lines connecting points between Passage 1 and Passage 3 are omitted. Genes shown were differentially expressed (CHIR vs. DMSO, adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction), except where indicated as ns. p-values are provided in Supplementary file 2.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** (A–C) Heatmaps of transcript abundance [log2(TPM + 1)] for genes encoding secreted factors (A), transcription factors (B), and transmembrane proteins (C) that are CHIR-upregulated (adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction) in both Passage 1 and Passage 3 endothelial cells (ECs). p-values are provided in Supplementary file 2. The log2(fold change) (CHIR vs. DMSO, average of Passage 1 and Passage 3 values) for each gene is shown at left.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig7-figsupp3-v3.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Heatmap representation of the weighted gene correlation network analysis (WGCNA) topological overlap matrix (TOM). Red indicates high topological overlap. Dendrogram from hierarchical clustering of genes based on dissimilarity (1 – TOM) is shown above. Module assignments (colors) are shown above and at left. (B) Correlation between module eigengenes and experimental variables (Passage number and CHIR treatment). Each box shows the Pearson correlation coefficient r and the p-value (P). (C) Network representation of the 30 genes in the green module with the highest intramodular connectivity. Edge color represents topological overlap. Edges with topological overlap less than 0.08 are not shown. For reference, maximum topological overlap (excluding the diagonal) within the entire network is 0.38, and topological overlap between AXIN2 (green module) and ACTB (turquoise module) is 3.8 × 10−4.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig7-figsupp4-v3.jpg)
+
+**Figure 7—figure supplement 4.:** (A) Differential expression analysis of Passage 3 DMSO-treated ECs compared to Passage 1 DMSO-treated ECs. Differentially expressed genes (adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction) are highlighted in green (upregulated) and red (downregulated). The number of upregulated, downregulated, and nonsignificant (ns) genes is shown in the legend. Complete results of differential expression analyses are provided in Supplementary file 2. (B) Transcript abundance (TPM) of selected genes. Genes shown were differentially expressed (adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction) except those indicated as ns. p-Values are provided in Supplementary file 2. (C) Flow cytometry analysis of CD34 and CD31 expression in D5 endothelial progenitor cells (EPCs) (prior to magnetic-activated cell sorting [MACS]) and in Passage 2 ECs.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig7-figsupp5-v3.jpg)
+
+**Figure 7—figure supplement 5.:** Heatmap of transcript abundance [log2(TPM + 1)] for blood–brain barrier (BBB) genes encompassing tight junctions, vesicle trafficking components, solute carriers, and efflux transporters. Solute carrier and efflux transporter genes that were expressed in human brain endothelial cells (ECs) at an average of >100 transcripts per million (TPM) in a meta-analysis of scRNA-seq datasets (Gastfriend et al., 2021) are included. Abundance data for all transcripts are provided in Supplementary file 1. At right, arrows indicate directionality of change for differentially expressed genes (adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction) for the three comparisons shown above. Changes with expected directionality for gain of central nervous system (CNS) EC character have arrows highlighted in green.
+
+![Figure 7—figure supplement 6.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig7-figsupp6-v3.jpg)
+
+**Figure 7—figure supplement 6.:** Abundance of transcripts (in transcripts per million [TPM]) encoding Wnt receptors, co-receptors, and other pathway components in Passage 1 DMSO-treated ECs. Points represent cells from four independent differentiations of the IMR90-4 line. Bars indicate mean values. ADGRA2 is also known as GPR124.
 
 First comparing CHIR- and DMSO-treated ECs at Passage 1, we identified 1369 significantly upregulated genes and 2037 significantly downregulated genes (Figure 7C, Supplementary file 2). CHIR-upregulated genes included SLC2A1, CLDN5, LSR, and CAV1, consistent with protein-level assays. PLVAP was downregulated, as were a number of mesenchymal genes (TAGLN, COL1A1), again reflective of slight contamination of SMLC transcripts in the DMSO-treated EC samples (Figure 7C and D). Additionally, important downstream effectors of Wnt signaling were upregulated, including the transcription factors LEF1 and TCF7, the negative regulator AXIN2, and the negative regulator APCDD1, which is known to modulate Wnt-regulated barriergenesis in retinal endothelium (Mazzoni et al., 2017; Figure 7C and D). We also identified upregulated transcription factors: ZIC3, which is highly enriched in brain and retinal ECs in vivo and downstream of Frizzled4 signaling (Wang et al., 2012; Sabbagh et al., 2018), and SOX7, which acts cooperatively with SOX17 and SOX18 in retinal angiogenesis (Zhou et al., 2015), were upregulated by CHIR in our system (Figure 7D). MSX1 and EBF1, which are expressed by murine brain ECs in vivo (Vanlandewijck et al., 2018), were also CHIR-upregulated (Figure 7D). Additional CHIR-upregulated genes included ABCG2 (encoding the efflux transporter breast cancer resistance protein [BCRP]), APLN, a tip cell marker enriched in postnatal day 7 murine brain ECs compared to those of other organs, and subsequently downregulated in adulthood (Sabbagh et al., 2018; Sabbagh and Nathans, 2020), and FLVCR2, a disease-associated gene with a recently identified role in brain angiogenesis (Santander et al., 2020; Figure 7C and D). Finally, we detected CHIR-mediated downregulation of the fatty acid-binding protein-encoding FABP4, which is depleted in brain ECs compared to those of peripheral organs (Sabbagh et al., 2018). We also observed similar downregulation of SMAD6, which is depleted in brain ECs compared to lung ECs and is a putative negative regulator of BMP-mediated angiogenesis (Mouillesseaux et al., 2016; Vanlandewijck et al., 2018; Figure 7D).
 
@@ -72,11 +144,23 @@ To determine the effects of extended culture, we next compared control (DMSO-tre
 
 Finally, to further understand the strengths and limitations of this model system both as a readout of early developmental changes in CNS ECs (Passage 1 cells) or as a source of CNS-like ECs for use in downstream modeling applications, we evaluated absolute transcript abundance and effects of treatment or passage number on 53 characteristic CNS EC genes encompassing tight junction components, vesicle trafficking machinery, solute carriers, and ATP-binding cassette (ABC) efflux transporters selected based on high expression in human brain ECs from a meta-analysis of single-cell RNA-seq data (Gastfriend et al., 2021; Figure 7—figure supplement 5). While ECs expressed CLDN5, TJP1, TJP2, OLCN, and LSR, they lacked MARVELD2 (encoding tricellulin) under all conditions. ECs under all conditions also lacked MFSD2A and, despite CHIR-mediated downregulation of PLVAP, retained high absolute expression of this and other caveolae-associated genes. Finally, while many solute carriers and ABC transporters were expressed (SLC2A1, SLC3A2, SLC16A1, SLC38A2, ABCG2), others expressed at the in vivo human BBB were not (SLC5A3, SLC7A11, SLC38A3, SLCO1A2, ABCB1) (Figure 7—figure supplement 5). Thus, while CHIR treatment yields ECs with certain elements of CNS-like character, additional molecular signals are likely necessary to impart other aspects of the in vivo CNS EC phenotype.
 
-## The Wnt-regulated endothelial transcriptome in multiple contexts
+### The Wnt-regulated endothelial transcriptome in multiple contexts
 
 To globally assess whether CHIR-mediated gene expression changes in our system are characteristic of the responses observed in ECs in vivo and similar to those observed in other in vitro contexts, we compared our RNA-seq dataset to those of studies that employed a genetic strategy for β-catenin stabilization (the Ctnnb1flex3 allele) in adult mouse ECs in several contexts: (i) pituitary ECs, which acquire some BBB-like properties upon β-catenin stabilization Wang et al., 2019; (ii) liver ECs, which exhibit little to no barriergenic response to β-catenin stabilization (Munji et al., 2019); (iii) brain ECs briefly cultured in vitro, which rapidly lose their BBB-specific gene expression profile even with β-catenin stabilization (Sabbagh and Nathans, 2020), and offer the most direct comparison to our in vitro model system. Upon recombination, the Ctnnb1flex3 allele produces a dominant mutant β-catenin lacking residues that are phosphorylated by GSK-3β to target β-catenin for degradation (Harada et al., 1999); as such, this strategy for ligand- and receptor-independent Wnt activation by β-catenin stabilization is similar to CHIR treatment, although GSK-3 phosphorylates targets other than β-catenin (discussed below).
 
 We first used literature RNA-seq data from postnatal day 7 murine brain, liver, lung, and kidney ECs (Sabbagh et al., 2018) to define core sets of genes in brain ECs that are differentially expressed compared to all three of the other organs (Figure 8A and B). Using the resulting sets of 1094 brain-enriched and 506 brain-depleted genes, we asked how many genes in our Passage 1 ECs were concordantly regulated by CHIR: 130 of the brain-enriched genes were CHIR-upregulated and 116 of the brain-depleted genes were CHIR-downregulated (Figure 8C). At Passage 3, 61 genes were concordantly upregulated and 46 downregulated (Figure 8—figure supplement 1). In pituitary ECs with β-catenin stabilization, 102 of the brain-enriched genes were upregulated and 48 of the brain-depleted genes were downregulated (Figure 8D). Compared with the pituitary ECs, there were far fewer concordantly regulated genes in liver ECs with β-catenin stabilization, with 25 upregulated and 1 downregulated (Figure 8E). Finally, cultured primary mouse brain ECs with β-catenin stabilization exhibited 72 concordantly upregulated and 16 downregulated genes (Figure 8F). The only gene concordantly regulated in all four comparisons was the canonical Wnt target AXIN2. Several additional genes were concordantly upregulated in three of four, including TCF7, FAM107A, NKD1, TNFRSF19, GLUL, SLC30A1, and ABCB1, which was the only gene concordantly regulated in all comparisons except the hPSC-derived ECs (Figure 8G). Several canonical target genes were shared by the hPSC-derived EC and pituitary EC systems, including APCDD1, LEF1, CLDN5, and SLC2A1; also in this category were LSR, the zinc/manganese transporter SLC39A8, and 12 additional genes (Figure 8G). Notably, the caveolae inhibitor MFSD2A was robustly upregulated by β-catenin in pituitary ECs, but not in any other context (Figure 8C–F), suggesting that other brain-derived factors may cooperate with Wnt to regulate expression of this important inhibitor of caveolin-mediated transcytosis. Complete gene lists from this comparative analysis are provided in Supplementary file 4. In sum, the data suggest that the hPSC-derived ECs responded to Wnt activation in a fashion that led to modest induction of CNS transcriptional programs and that the response was most similar to the pituitary β-catenin stabilization model. Importantly, this analysis also supports the hypothesis that immature endothelium is highly responsive to Wnt activation where mature (adult) endothelium is largely refractory except in regions proximal to barrier-forming regions.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig8-v3.jpg)
+
+**Figure 8.:** (A) Differential expression analysis of P7 murine brain ECs compared to liver, lung, or kidney ECs (Sabbagh et al., 2018). Differentially expressed genes (adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction) are highlighted in green (up, brain-enriched) and red (down, brain-depleted). The number of up, down, and nonsignificant (ns) genes is shown in the legends. (B) Venn diagrams illustrating the number of genes identified as brain EC-enriched (left) or brain EC-depleted (right) versus liver, lung, or kidney ECs (adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction). The 1094 genes enriched in brain ECs compared to each other organ, and the 506 genes depleted in brain ECs compared to each other organ, were used for subsequent analysis of the effects of Wnt activation in the various experimental contexts. (C–F) In each plot, the x-axis indicates average log2(fold change) of gene expression in brain ECs compared to liver, lung, and kidney ECs for the 1094 brain EC-enriched genes and 506 brain EC-depleted genes described in (B) with known mouse-human homology. Homologous human gene names are shown. The y-axes indicate differential expression [log2(fold change)] in Passage 1 CHIR-treated ECs compared to Passage 1 DMSO-treated ECs (C), in adult mouse pituitary ECs with stabilized β-catenin (gain-of-function, GOF) compared to controls (Wang et al., 2019) (D), in adult mouse liver ECs with stabilized β-catenin compared to controls (Munji et al., 2019) (E), or in cultured adult mouse brain ECs with stabilized β-catenin compared to controls (Sabbagh and Nathans, 2020) (F). Points are highlighted in blue if concordantly regulated (upregulated in both comparisons or downregulated in both comparisons). The number of concordantly upregulated and concordantly downregulated genes is shown. Genes were identified as upregulated or downregulated based on adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction. (G) Venn diagrams illustrating the number of brain EC-enriched genes concordantly upregulated with β-catenin GOF (top) and the number of brain EC-depleted genes concordantly downregulated with β-catenin GOF (bottom) for the four comparisons shown in (C–F). Complete results of this analysis are provided in Supplementary file 4.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** The x-axis indicates average log2(fold change) of gene expression in brain ECs compared to liver, lung, and kidney ECs for the 1094 brain EC-enriched genes and 506 brain EC-depleted genes described in Figure 8B with known mouse-human homology. Homologous human gene names are shown. The y-axis indicates differential expression [log2(fold change)] in Passage 3 CHIR-treated ECs compared to Passage 3 DMSO-treated ECs. Points are highlighted in blue if concordantly regulated (upregulated in both comparisons or downregulated in both comparisons). The number of concordantly upregulated and concordantly downregulated genes is shown. Genes were identified as upregulated or downregulated based on adjusted p-values<0.05, DESeq2 Wald test with Benjamini–Hochberg correction.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/70992/elife-70992-fig8-figsupp2-v3.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Enriched gene sets (false discovery rate <0.05) in Passage 1 CHIR-treated ECs compared to Passage 1 DMSO-treated ECs (top), Passage 3 CHIR-treated ECs compared to Passage 3 DMSO-treated ECs (middle), or adult mouse pituitary ECs with stabilized β-catenin (gain-of-function, GOF) compared to controls (Wang et al., 2019) (bottom). For each gene set, the ratio of the number of genes in the gene set that are upregulated (log2(fold change) > 0, adjusted p-value<0.05, DESeq2 Wald test with Benjamini–Hochberg correction) in the relevant comparison (k) to the total number of genes in the gene set (K) is shown. For each comparison, the 20 gene sets with the highest k/K ratio are shown. Supplementary file 5 lists all enriched gene sets, and values of k, K, and false discovery rate. (B) Venn diagram illustrating the number of enriched gene sets for the three comparisons in (A). (C) Genes driving gene set enrichment. Selected gene sets enriched in at least one comparison shown in (A) are shown, with squares highlighted in green indicating upregulation (log2(fold change) > 0, adjusted p-value<0.05, DESeq2 Wald test with Benjamini–Hochberg correction). Only genes upregulated in at least one of the three comparisons are shown.
 
 Last, because GSK-3 is a component of numerous signaling pathways in addition to Wnt/β-catenin (Eto et al., 2005; Beurel et al., 2015; Hermida et al., 2017), we used RNA-seq data to infer pathways that might be differentially regulated by the two strategies for activating Wnt/β-catenin signaling employed in the experiments above: CHIR treatment, which increases β-catenin stability by inhibiting GSK-3, or direct stabilization of β-catenin. We tested lists of upregulated genes in (i) our Passage 1 ECs treated with CHIR versus DMSO, (ii) Passage 3 ECs treated with CHIR versus DMSO, and (iii) pituitary ECs with β-catenin stabilization versus controls (Wang et al., 2019), against the Hallmark gene set collection (Liberzon et al., 2015; Figure 8—figure supplement 2, Supplementary file 5). In all three comparisons, the Wnt/β-catenin signaling gene set was significantly enriched (Figure 8—figure supplement 2A). Similarly, the Notch signaling, TNFα signaling via NF-κB, KRAS signaling up, and several additional gene sets were consistently enriched in all three comparisons (Figure 8—figure supplement 2A and B, Supplementary file 5), suggesting similar regulation by GSK-3 inhibition and direct β-catenin stabilization. In contrast, the PI3K AKT mTOR signaling gene set was enriched in Passage 1 ECs, but not in Passage 3 ECs or pituitary ECs. Similarly, the gene set mTORC1 signaling was enriched in Passage 1 ECs and pituitary ECs, but genes driving this enrichment were distinct (Figure 8—figure supplement 2C), and this gene set was not enriched in Passage 3 ECs. Thus, given the known, bidirectional interactions of GSK-3 and AKT/mTOR pathway components (Hermida et al., 2017), these results suggest that CHIR-mediated inhibition of GSK-3 may transiently activate this pathway in Passage 1 ECs. Conversely, the gene set TGF-β signaling was enriched only in pituitary ECs with β-catenin stabilization (Figure 8—figure supplement 2, Supplementary file 5). Taken together, these results, coupled with those of our CTNNB1 knockdown experiments and gene correlation network analysis, suggest a central role for β-catenin as a key effector of CHIR-mediated signaling, but also highlight some potential differences in the pathways activated in response to CHIR treatment versus β-catenin stabilization. Differences in other aspects of these two experimental paradigms (in vitro versus in vivo, naïve versus CNS-proximal, human versus mouse), however, caution against overinterpretation of these results.
 
@@ -94,11 +178,336 @@ Finally, our work establishes an improved hPSC-based model for investigating mec
 
 ## Materials and methods
 
-## hPSC maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>iPSC: IMR90-4</td>
+      <td>Available from WiCell; Yu et al., 2007</td>
+      <td>RRID:CVCL_C437</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>iPSC: WTC11</td>
+      <td>Available from Gladstone Institutes; Kreitzer et al., 2013</td>
+      <td>RRID:CVCL_Y803</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>iPSC: 19-9-11-7TGP-ishcat3</td>
+      <td>Laboratory stock</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hESC: H9-7TGP-ishcat2</td>
+      <td>Laboratory stockLian et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hESC: H9-CDH5-eGFP</td>
+      <td>Laboratory stockBao et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD31-FITC (mouse monoclonal IgG1, clone AC128)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-117-390;RRID:AB_2733637</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD31-APC (mouse monoclonal IgG1, clone AC128)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-119-891;RRID:AB_2784124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD34-FITC (mouse monoclonal IgG2a, clone AC136)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-113-178;RRID:AB_2726005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-catenin-Alexa Fluor 488 (mouse monoclonal IgG1, clone 14)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 562505;RRID:AB_11154224</td>
+      <td>(1:100, ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GLUT-1 (mouse monoclonal IgG2a, clone SPM498)</td>
+      <td>Invitrogen</td>
+      <td>Cat# MA5-11315;RRID:AB_10979643</td>
+      <td>(1:100, ICC)(1:500, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-calponin (mouse monoclonal IgG1, clone hCP)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C2687;RRID:AB_476840</td>
+      <td>(1:15,000, ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SM22⍺ (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab14106;RRID:AB_443021</td>
+      <td>(1:1000, ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-claudin-5 (mouse monoclonal IgG1, clone 4C3C2)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 35-2500;RRID:AB_2533200</td>
+      <td>(1:100, ICC)(1:500, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-caveolin-1 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3238;RRID:AB_2072166</td>
+      <td>(1:500, ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD31 (rabbit polyclonal)</td>
+      <td>Lab Vision</td>
+      <td>Cat# RB-10333-P;RRID:AB_720502</td>
+      <td>(1:100, ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (mouse monoclonal IgG1, clone B56)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 550609;RRID:AB_393778</td>
+      <td>(1:100, ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VE-cadherin (mouse monoclonal IgG2a, clone BV9)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-52751;RRID:AB_628919</td>
+      <td>(1:100, ICC)(1:250, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (rabbit monoclonal IgG, clone 13E5)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4970;RRID:AB_2223172</td>
+      <td>(1:1000, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PLVAP (rabbit polyclonal)</td>
+      <td>Prestige Antibodies</td>
+      <td>Cat# HPA002279;RRID:AB_1079636</td>
+      <td>(1:200, ICC)(1:250, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LSR (rabbit polyclonal)</td>
+      <td>Prestige Antibodies</td>
+      <td>Cat# HPA007270;RRID:AB_1079253</td>
+      <td>(1:250, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-mouse IgG (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11001;RRID:AB_2534069</td>
+      <td>(1:200, ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 goat anti-rabbit IgG (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-21245;RRID:AB_2535813</td>
+      <td>(1:200, ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-mouse IgG1 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-21121;RRID:AB_2535764</td>
+      <td>(1:200, ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 goat anti-mouse IgG2a (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-21241;RRID:AB_2535810</td>
+      <td>(1:200, ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 555 goat anti-rabbit IgG (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-21428;RRID:AB_2535849</td>
+      <td>(1:200, ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW goat anti-mouse IgG (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926-32210;RRID:AB_621842</td>
+      <td>(1:5000, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW goat anti-rabbit IgG (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926-32211;RRID:AB_621843</td>
+      <td>(1:5000, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD goat anti-rabbit IgG (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926-68071;RRID:AB_10956166</td>
+      <td>(1:5000, WB)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Micro Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>CHIR 99021</td>
+      <td>Tocris</td>
+      <td>Cat# 4423</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Vybrant DyeCycle Green Stain</td>
+      <td>Invitrogen</td>
+      <td>Cat# V35004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Dextran, Alexa Fluor 488; 10,000 MW, Anionic, Fixable</td>
+      <td>Invitrogen</td>
+      <td>Cat# D22910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software or algorithm</td>
+      <td>RSEM</td>
+      <td>Li and Dewey, 2011</td>
+      <td>RRID:SCR_013027</td>
+      <td>v1.3.3</td>
+    </tr>
+    <tr>
+      <td>Software or algorithm</td>
+      <td>Bowtie2</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>RRID:SCR_016368</td>
+      <td>v2.4.2</td>
+    </tr>
+    <tr>
+      <td>Software or algorithm</td>
+      <td>R</td>
+      <td>R Foundation</td>
+      <td>RRID:SCR_001905</td>
+      <td>v3.6.3</td>
+    </tr>
+    <tr>
+      <td>Software or algorithm</td>
+      <td>DESeq2</td>
+      <td>Love et al., 2014</td>
+      <td>RRID:SCR_015687</td>
+      <td>v1.26.0</td>
+    </tr>
+    <tr>
+      <td>Software or algorithm</td>
+      <td>biomaRt</td>
+      <td>Durinck et al., 2009</td>
+      <td>RRID:SCR_019214</td>
+      <td>v2.42.1</td>
+    </tr>
+    <tr>
+      <td>Software or algorithm</td>
+      <td>WGCNA</td>
+      <td>Langfelder and Horvath, 2008</td>
+      <td>RRID:SCR_003302</td>
+      <td>v1.70-3</td>
+    </tr>
+    <tr>
+      <td>Software or algorithm</td>
+      <td>Cytoscape</td>
+      <td>Shannon et al., 2003</td>
+      <td>RRID:SCR_003032</td>
+      <td>v3.8.2</td>
+    </tr>
+    <tr>
+      <td>Software or algorithm</td>
+      <td>FIJI/ImageJ</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td>v2.0.0-rc-68</td>
+    </tr>
+    <tr>
+      <td>Software or algorithm</td>
+      <td>Image Studio</td>
+      <td>LI-COR Biosciences</td>
+      <td>RRID:SCR_015795</td>
+      <td>v5.2</td>
+    </tr>
+    <tr>
+      <td>Software or algorithm</td>
+      <td>FlowJo</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_008520</td>
+      <td>v10.7.1</td>
+    </tr>
+    <tr>
+      <td>Software or algorithm</td>
+      <td>JMP Pro</td>
+      <td>SAS Institute</td>
+      <td>RRID:SCR_014242</td>
+      <td>v15.0.0</td>
+    </tr>
+    <tr>
+      <td>Software or algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td>v5.0.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### hPSC maintenance
 
 Tissue culture plates were coated with Matrigel, Growth Factor Reduced (Corning, Glendale, AZ). A 2.5 mg aliquot of Matrigel was thawed and resuspended in 30 mL DMEM/F-12 (Life Technologies, Carlsbad, CA), and the resulting solution used to coat plates at 8.7 µg/cm2 (1 mL per well for 6-well plates; 0.5 mL per well for 12-well plates). Plates were incubated at 37°C for at least 1 hr prior to use. hPSCs were maintained on Matrigel-coated plates in E8 medium (STEMCELL Technologies, Vancouver, Canada) at 37°C, 5% CO2. hPSC lines used were IMR90-4 iPSC, WTC11 iPSC, H9-CDH5-eGFP hESC, H9-7TGP-ishcat2 hESC, and 19-9-11-7TGP-ishcat3 iPSC. Medium was changed daily. When hPSC colonies began to touch, typically at approximately 70–80% confluence, cells were passaged using Versene (Life Technologies). Briefly, cells were washed once with Versene, then incubated with Versene for 7 min at 37°C. Versene was removed and cells were dissociated into colonies by gentle spraying with E8 medium. Cells were transferred at a split ratio of 1:12 to a new Matrigel-coated plate containing E8 medium. hPSC cultures were routinely tested for mycoplasma contamination using a PCR-based assay performed by the WiCell Research Institute (Madison, WI).
 
-## Endothelial progenitor cell differentiation
+### Endothelial progenitor cell differentiation
 
 EPCs were differentiated according to previously published protocols (Lian et al., 2014; Bao et al., 2016; Nishihara et al., 2020) with slight modifications. On day –3 (D-3), hPSCs were treated with Accutase (Innovative Cell Technologies, San Diego, CA) for 7 min at 37°C. The resulting single-cell suspension was transferred to 4× volume of DMEM/F-12 (Life Technologies) and centrifuged for 5 min, 200× g. Cell number was quantified using a hemocytometer. Cells were resuspended in E8 medium supplemented with 10 µM ROCK inhibitor Y-27632 dihydrochloride (Tocris, Bristol, UK) and seeded on Matrigel-coated 12-well plates at a density of (1.5–2.5) × 104 cells/cm2, 1 mL per well. Cells were maintained at 37°C, 5% CO2. On the following two days (D-2 and D-1), the medium was replaced with E8 medium. The following day (D0), differentiation was initiated by changing the medium to LaSR medium (Advanced DMEM/F-12 [Life Technologies], 2.5 mM GlutaMAX [Life Technologies], and 60 µg/mL l-ascorbic acid 2-phosphate magnesium [Sigma-Aldrich, St. Louis, MO]) supplemented with 7–8 µM CHIR 99021 (Tocris), 2 mL per well. The following day (D1), medium was replaced with LaSR medium supplemented with 7–8 µM CHIR 99021, 2 mL per well. On the following three days (D2, D3, and D4), the medium was replaced with pre-warmed LaSR medium (without CHIR), 2 mL per well.
 
@@ -106,13 +515,13 @@ On D5, EPCs were isolated using CD31 MACS. Cells were treated with Accutase for 
 
 The cell suspension was brought to a total volume of 2.5 mL with MACS buffer (for total cell number less than 2 × 108, the approximate maximum yield from two 12-well plates; for a larger number of plates/cells, a total volume of 5 mL was used). 2.5 mL of cell suspension was transferred to a sterile 5 mL round-bottom flow cytometry tube and placed in the EasySep magnet (STEMCELL Technologies) for 5 min. The magnet was inverted to pour off the supernatant, the flow tube removed, the retained cells resuspended in 2.5 mL of MACS buffer, and the flow tube placed back in the magnet for 5 min. This step was repeated three times, and the resulting cell suspension transferred to a centrifuge tube, and centrifuged for 5 min, 200× g. Cell number was quantified using a hemocytometer. Resulting EPCs were used directly for experiments as described below or cryopreserved in hECSR medium supplemented with 30% FBS and 10% DMSO for later use. hECSR medium is Human endothelial serum-free medium (Life Technologies) supplemented with 1× B-27 supplement (Life Technologies) and 20 ng/mL FGF2 (Waisman Biomanufacturing, Madison, WI).
 
-## Endothelial cell culture and treatment
+### Endothelial cell culture and treatment
 
 Collagen IV (Sigma-Aldrich) was dissolved in 0.5 mg/mL acetic acid to a final concentration of 1 mg/mL. Collagen IV-coated plates were prepared by diluting a volume of this stock solution 1:100 in water, adding the resulting solution to tissue culture plates, or #1.5 glass-bottom plates (Cellvis, Sunnyvale, CA) for cells intended for confocal imaging (1 mL per well for 6-well plates, 0.5 mL per well for 12-well plates, 0.25 mL per well for 24-well plates), and incubating the plates for 1 hr at RT. Collagen IV coating solution was removed, and EPCs obtained as described above were suspended in hECSR medium and plated at approximately 3 × 104 cells/cm2. In some experiments, ligands and small molecules were added to hECSR medium: CHIR 99021 (Tocris) was used at 4 µM except where indicated; DMSO (Sigma-Aldrich) was used as a vehicle control for CHIR; Wnt3a (R&D Systems) was used at 20 ng/mL; doxycycline was used at 1, 2, or 4 µg/mL. The hECSR medium, including any ligands or small molecules, was replaced every other day until confluent (typically 6 days). We denote this time point as ‘Passage 1.’
 
 For extended culture, ECs were selectively dissociated and replated as previously described (Nishihara et al., 2020). Cells were incubated with Accutase until ECs appeared round, typically 2–3 min at 37°C. The plate was tapped to release the ECs while SMLCs remained attached, and the EC-enriched cell suspension transferred to 4× volume of DMEM/F-12 and centrifuged for 5 min, 200× g. Cells were resuspended in hECSR medium and seeded on a new collagen IV-coated plate at approximately 3 × 104 cells/cm2. hECSR medium was replaced every other day until confluent (typically 6 days). The selective dissociation and seeding described above was repeated, and hECSR medium was again replaced every other day until confluent (typically 6 days). We denote this time point as ‘Passage 3.’ In one experiment, these steps were repeated for another two passages. Except where indicated, CHIR 99021 or vehicle (DMSO) was included in the hECSR medium for the entire duration of culture.
 
-## RNA-seq
+### RNA-seq
 
 RNA-seq was performed on ECs and SMLCs from the IMR90-4 hPSC line. Four independent differentiations were performed, with DMSO- and CHIR-treated ECs at Passage 1 analyzed from all four differentiations. DMSO- and CHIR-treated ECs at Passage 3 were analyzed from three of the four differentiations. DMSO-treated SMLCs at Passage 1 were analyzed from two of the four differentiations. FACS was used to isolate CD31+ ECs and CD31– SMLCs from mixed Passage 1 cultures. Cells were incubated with Accutase for 10 min at 37°C, passed through 40 µm cell strainers into 4× volume of DMEM/F-12, and centrifuged for 5 min, 200× g. Cells were resuspended in MACS buffer and incubated with CD31-APC antibody (Miltenyi Biotec) for 30 min at 4°C, protected from light. The cell suspension was brought to a volume of 15 mL with MACS buffer and centrifuged at 4°C for 5 min, 200× g. Cells were resuspended in MACS buffer containing 2 µg/mL 4′,6-diamidino-2-phenylindole (DAPI; Life Technologies). A BD FACSAria III Cell Sorter (BD Biosciences, San Jose, CA) was used to isolate DAPI–CD31+ cells (live ECs) and DAPI–CD31– cells (live SMLCs). The resulting cell suspensions were centrifuged at 4°C for 5 min, 200× g, and cell pellets immediately processed for RNA extraction as described below.
 
@@ -122,28 +531,28 @@ FASTQ files were aligned to the human genome (hg38) and transcript abundances qu
 
 Bulk RNA-seq data from the literature (FASTQ files; see ‘Previously published datasets used’) were obtained from the Gene Expression Omnibus (GEO). These FASTQ files were aligned to the mouse genome (mm10) and transcript abundances quantified as described above. DESeq2 was used for differential expression analysis as described above. For direct comparison of human and mouse data, the biomaRt package (v2.42.1) (Durinck et al., 2009) and Ensembl database (Yates et al., 2020) were used to map human gene names to mouse homologs. Venn diagrams were generated using the tool available at http://bioinformatics.psb.ugent.be/webtools/Venn/. To identify solute carrier and efflux transporter genes highly expressed at the human BBB in vivo, we used five human brain scRNA-seq datasets (Han et al., 2020; Hodge et al., 2019; La Manno et al., 2016; Polioudakis et al., 2019; Zhong et al., 2020; see ‘Previously published datasets used’) integrated in a previous meta-analysis (Gastfriend et al., 2021). SLC and ABC genes with average expression greater than 100 TPM in ECs across the five independent datasets were selected. For pathway enrichment analysis, lists of upregulated genes (log2(fold change) > 0, adjusted p-value<0.05, DESeq2 Wald test with Benjamini–Hochberg correction) were tested against the Hallmark gene sets collection (Liberzon et al., 2015) using the tool available at http://www.gsea-msigdb.org/gsea/msigdb/annotate.jsp.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Immunocytochemistry was performed in 24-well plates. Cells were washed once with 500 µL DPBS and fixed with 500 µL cold (–20°C) methanol for 5 min, except cells intended for calponin/SM22a and CD31/Ki67 detection, which were fixed with 500 µL of 4% paraformaldehyde for 15 min. Cells were washed three times with 500 µL DPBS and blocked in 150 µL DPBS supplemented with 10% goat serum (Life Technologies) for 1 hr at RT, except cells intended for calponin/SM22⍺ detection, which were blocked and permeabilized in DPBS supplemented with 3% BSA and 0.1% Triton X-100, or cells intended for CD31/Ki67 detection, which were blocked and permeabilized in DPBS supplemented with 5% non-fat dry milk and 0.4% Triton X-100. Primary antibodies diluted in 150 µL of the above blocking solutions (see Key resources table for antibody information) were added to cells and incubated overnight at 4°C on a rocking platform. Cells were washed three times with 500 µL DPBS. Secondary antibodies diluted in 150 µL of the above blocking solutions (see Key resources table for antibody information) were added to cells and incubated for 1 hr at RT on a rocking platform, protected from light. Cells were washed three times with 500 µL DPBS, followed by 5 min incubation with 500 µL DPBS plus 4 µM Hoechst 33342 (Life Technologies). Images were acquired using an Eclipse Ti2-E epifluorescence microscope (Nikon, Tokyo, Japan) with a 20× or 30× objective or an A1R-Si+ confocal microscope (Nikon) with a 100× oil objective. Confocal images were acquired with 1 µm slice spacing.
 
 Images were analyzed using FIJI (ImageJ) software. For epifluorescence images, five fields (20× or 30×) were analyzed per well, with 3–4 wells per treatment condition. For quantification of cell number, EC colonies were manually outlined, and the Analyze Particles function was used to estimate the number of nuclei within the EC colonies. Nuclei outside the EC colonies were manually counted. EC purity (% EC) was calculated as the number of nuclei within EC colonies relative to total nuclei. To estimate % GLUT-1+ ECs, cells within the EC colonies with membrane-localized GLUT-1 immunoreactivity were manually counted. To estimate % Ki67+ ECs, cells within the EC colonies with at least one nuclear-localized Ki67 punctum were manually counted. For quantification of fluorescence intensity in epifluorescence images, EC colonies were manually outlined, and the Measure function was used to obtain the mean fluorescence intensity for each image channel (fluorophore). A cell-free area of the plate was similarly quantified for background subtraction. Following background subtraction, the mean fluorescence intensity of each protein of interest was normalized to the mean fluorescence intensity of Hoechst to correct for effects of cell density. For confocal images, 3–4 fields (100×) containing only VE-cadherin+ ECs were analyzed per well, with four wells per treatment condition. The first slice with visible nuclei (closest to glass) was defined as Z = 0, and the Measure function was used to obtain the mean fluorescence intensity for each image channel (fluorophore) in each slice from Z = 0 to Z = 7 µm. A cell-free area of the plate was similarly quantified for background subtraction. After background subtraction, to approximate total abundance (area under the fluorescence versus Z curve [AUC]) for each channel, mean fluorescence intensities were summed across all slices. AUCs for the proteins of interest were normalized to Hoechst AUC.
 
-## Cell cycle analysis
+### Cell cycle analysis
 
 Passage 1 cultures were dissociated by treatment with Accutase for 10 min at 37°C. Cell suspensions were passed through 40 µm cell strainers into 4× volume of DMEM/F-12 and centrifuged for 5 min, 200× g. Approximately 5 × 105 cells per replicate were resuspended in MACS buffer and incubated with the CD31-APC antibody (Miltenyi Biotec) for 30 min at 4°C, protected from light. Cell suspensions were brought to a volume of 5 mL with MACS buffer and centrifuged at 4°C for 5 min, 200× g. Cells were resuspended in 500 µL MACS buffer containing 2 µg/mL DAPI and 0.5 µL Vybrant DyeCycle Green Stain (Invitrogen) and incubated at RT for 1 hr, protected from light. Cells were analyzed on an Attune NxT flow cytometer (Invitrogen). FlowJo software (BD Biosciences) was used to gate CD31+ cells and quantify the percentage of S/G2/M phase cells.
 
-## Western blotting
+### Western blotting
 
 To enrich samples from Passage 1 cultures for ECs, the Accutase-based selective dissociation method described above was employed. Dissociated cells were centrifuged for 5 min, 200× g, and resulting cell pellets were lysed in RIPA buffer (Rockland Immunochemicals, Pottstown, PA) supplemented with 1× Halt Protease Inhibitor Cocktail (Thermo Scientific). Passage 3 cells were lysed with the above buffer directly on plates. Lysates were centrifuged at 4°C for 5 min, 14,000× g, and protein concentration in supernatants quantified using the Pierce BCA Protein Assay Kit (Thermo Scientific). Equal amounts of protein were diluted to equal volume with water, mixed with sample buffer, and heated at 95°C for 5 min, except lysates intended for GLUT-1 western blotting, which were not heated. Samples were resolved on 4–12% Tris-Glycine gels and transferred to nitrocellulose membranes. Membranes were blocked for 1 hr in Tris-buffered saline plus 0.1% Tween-20 (TBST) supplemented with 5% non-fat dry milk. Primary antibodies (see Key resources table for antibody information) diluted in TBST plus 5% non-fat dry milk were added to membranes and incubated overnight at 4°C on a rocking platform. Membranes were washed five times with TBST. Secondary antibodies (see Key resources table for antibody information) diluted in TBST were added to membranes and incubated for 1 hr at RT on a rocking platform, protected from light. Membranes were washed five times with TBST and imaged using an Odyssey 9120 (LI-COR, Lincoln, NE). Band intensities were quantified using Image Studio software (LI-COR).
 
-## Dextran accumulation assay
+### Dextran accumulation assay
 
 A fixable, Alexa Fluor 488-conjugated dextran with an average molecular weight of 10 kDa (Invitrogen) was used as a tracer to estimate total fluid-phase endocytosis. Dextran was added at 10 µM to the medium of Passage 1 cultures. Plates were incubated on rotating platforms at 37 or 4°C for 2 hr. For inhibitor experiments, 20 µM chlorpromazine (Sigma), 100 U/mL nystatin (Sigma), or 2 µM rottlerin (Tocris) were added to the medium 30 min prior to addition of dextran. Medium was removed and cells were washed once with DPBS, and then incubated with Accutase for 10 min at 37°C. Cell suspensions were passed through 40 µm cell strainers into 4× volume of DMEM/F-12 and centrifuged for 5 min, 200× g. Cells were resuspended in MACS buffer and incubated with the CD31-APC antibody (Miltenyi Biotec) for 30 min at 4°C, protected from light. Cell suspensions were brought to a volume of 5 mL with MACS buffer and centrifuged at 4°C for 5 min, 200× g. Pellets were resuspended in DPBS supplemented with 4% paraformaldehyde and incubated for 15 min at RT, protected from light. Cells were centrifuged for 5 min, 200× g. Pellets were resuspended in MACS buffer and analyzed on a BD FACSCalibur flow cytometer (BD Biosciences). FlowJo software was used to gate CD31+ cells and quantify geometric mean fluorescence intensity and CV of dextran. For imaging, the dextran accumulation assay was performed on cells cultured on #1.5 glass-bottom plates. After 2 hr of dextran treatment, medium was removed and cells washed with DPBS. Cells were fixed with 4% paraformaldehyde for 15 min. Cells were washed three times with 500 µL DPBS and blocked and permeabilized with DPBS supplemented with 10% goat serum and 0.1% Triton X-100 for 1 hr at RT. Cells were stained with the caveolin-1 primary antibody and imaged on a confocal microscope as described above.
 
-## Transendothelial electrical resistance and sodium fluorescein permeability
+### Transendothelial electrical resistance and sodium fluorescein permeability
 
 Transwell inserts (6.5 mm diameter with 0.4 µm pore polyester filters) (Corning) were coated with 50 µL of a solution of collagen IV (400 µg/mL) and fibronectin (100 µg/mL) in water for 4 hr at 37°C. Passage 3 DMSO- and CHIR-treated ECs were seeded on Transwell inserts at 105 cells/cm2 in hECSR medium supplemented with DMSO or CHIR. Medium volumes were 200 µL for the apical chamber and 800 µL for the basolateral chamber. Beginning the day after seeding, TEER was measured daily for 6 days using an EVOM2 epithelial voltohmmeter with STX2 chopstick electrodes (World Precision Instruments, Sarasota, FL). Medium was replaced every other day. TEER values were corrected by subtracting the resistance of a collagen IV/fibronectin-coated Transwell insert without cells and multiplying by the filter surface area of 0.33 cm2. Permeability of endothelial monolayers to sodium fluorescein was assessed 6 days after seeding cells on Transwell inserts. Medium in both apical and basolateral chambers was replaced and cells returned to the incubator for 1 hr. Medium in apical chambers, including the apical chamber of a collagen IV/fibronectin-coated Transwell insert without cells, was then replaced with medium supplemented with 10 µM sodium fluorescein (Sigma-Aldrich), and plates placed on an orbital platform in an incubator. At 15, 30, 45, and 60 min, an 80 µL sample of the basolateral chamber medium was withdrawn from each Transwell, transferred to a 96-well plate, and 80 µL fresh medium replaced in the basolateral chamber of each Transwell. At 60 min, an 80 µL sample of apical chamber medium was also withdrawn from each Transwell and transferred to the 96-well plate. 80 µL of medium lacking sodium fluorescein was also transferred to the 96-well plate for background subtraction. Fluorescence intensity of all samples was measured using an Infinite M1000 PRO plate reader (Tecan, Männedorf, Switzerland) with 485 nm excitation and 530 nm emission wavelengths. Background-subtracted fluorescence intensity values at the 30, 45, and 60 min timepoints were corrected for sampling-induced dilution as previously described (Stebbins et al., 2016). The endothelial permeability coefficient (Pe), which is a concentration-independent parameter corrected for the permeability of a cell-free Transwell insert, was calculated as previously described (Stebbins et al., 2016).
 
-## Statistics
+### Statistics
 
 Individual wells of cultured cells that underwent identical experimental treatments are defined as replicates, and all key experiments were repeated using multiple independent hPSC differentiations. Detailed information about replication strategy is provided in figure legends. Student’s t test was used for comparison of means from two experimental groups. One-way analysis of variance (ANOVA) was used for comparison of means from three or more experimental groups, followed by Dunnett’s post-hoc test for comparison of multiple treatments to a single control, or Tukey’s honest significant difference (HSD) post-hoc test for multiple pairwise comparisons. When data from multiple differentiations were combined, two-way ANOVA (one factor being the experimental treatment and one factor being the differentiation) was used for comparison of means to achieve blocking of differentiation-based variability, followed by post-hoc tests as described above if more than two experimental treatments were compared. For fluorescence intensities (a.u.), two-way ANOVA was performed prior to normalization of these values to the control group within each differentiation (for visualization in plots). Statistical tests were performed in JMP Pro (v15.0.0). For RNA-seq differential expression analysis, the DESeq2 Wald test with Benjamini–Hochberg correction was used to calculate p-values. Descriptions of the statistical tests used are provided in figure legends.

@@ -35,11 +35,31 @@ Complete SNARE zippering is considered essential for SNARE-dependent fusion (Sø
 
 Vacuole SNAREs (Figure 1A) have an N-domain and a SNARE domain. Several of them have a TM anchor, but Qc lacks a hydrophobic membrane anchor, and instead associates with membranes through its affinities for the other SNAREs, for HOPS (Stroupe et al., 2006), and for phosphatidylinositol 3-phosphate through its N-terminal PX domain (Cheever et al., 2001). SNARE domain layers are numbered from the central 0-layer, as shown. Fusion requires that R- and at least one Q-SNARE be anchored to docked membranes (Song and Wickner, 2017). When they are, soluble forms of the other Q-SNAREs without membrane anchors, termed sQ (Figure 1A), will support Ypt7/HOPS-dependent fusion. Vacuolar SNAREs with C-terminal truncations, corresponding to partial zippering, form stable complexes (Figure 1—figure supplement 1), supporting their use in fusion studies. Based on the single-particle cryo-EM (Electron Microscope) structure of the homologous human neuronal NSF/αSNAP/SNARE complex (Zhao et al., 2015), we modeled the associations of Sec17 (αSNAP) (Figure 1B) and Sec18 (NSF) with vacuolar SNAREs, viewed in profile or in an end-on view from the membrane (Figure 1C). In this model, we assume that four Sec17 monomers (Figure 1B) assemble together, surrounding the 4-SNARE coiled coil (Figure 1C). In contrast, only two αSNAP molecules have been observed in EM structures of the NSF/αSNAP/V7-SNARE complex (Zhao et al., 2015) and the NSF/αSNAP/SNARE complex that included the linker between the two SNAP-25 SNARE domains (White et al., 2018). The presence of the SNAP-25 linker in these two complexes may interfere with the binding of the other two αSNAP molecules. Since the vacuolar SNARE complex does not contain a linker between SNARE domains, it is reasonable to postulate that four Sec17 molecules bind to the vacuolar SNARE complex, but the precise number of Sec17 molecules is yet to be determined for the Sec18/Sec17/vacuolar SNARE complex. Rapid fusion needs Sec17 and Sec18 in addition to HOPS and SNAREs (Song et al., 2017). To understand how they work together, we exploited direct assays of SNARE associations to show that incompletely zippered SNAREs can associate stably and that HOPS allows Sec17 to promote the completion of zippering and SNARE complex stability. We then examined their functional relationships to show that SNARE-bound Sec17 and Sec18 can promote rapid fusion when energy from zippering is greatly reduced or lost.
 
-## Sec17 alters SNARE complex conformation
+![Figure 1.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the four yeast vacuolar SNAREs, the soluble Q-SNAREs (sQx), and their deletion derivatives sQx3Δ lacking regions C-terminal to the +3 layer of the SNARE domain. (B) Structure of Sec17 (Rice and Brunger, 1999, PDB ID 1QQE). Residues mutated in certain experiments are highlighted as in Schwartz et al., 2017. (C) Modeling of the vacuolar Sec18/Sec17/SNARE complex. MODELLER (Webb and Sali, 2016) was used to create individual homology models of the vacuolar SNARE complex (Nyv1, Vam3, Vti1, Vam7) and of Sec18 starting from the coordinates of synaptobrevin-2, SNAP-25, syntaxin-1A, and NSF in the cryo-EM structure of the neuronal 20S complex (PDB ID 3J96) (Zhao et al., 2015). These homology models, together with the crystal structure of Sec17 (PDB ID 1QQE) (Rice and Brunger, 1999), were fit into the cryo-EM structure of the neuronal 20S complex (PDB ID 3J96) (Zhao et al., 2015). We used PDB ID 3J96 because this cryo-EM structure did not include the SNAP-25 linker and the Habc domain of syntaxin-1A. The vacuolar SNARE complex (Nyv1, Vam3, Vti1, Vam7) also does not include a linker between any of the SNARE motifs; in all structures of NSF/αSNAP/ternary SNARE complexes determined thus far, four αSNAP molecules are observed for SNARE complexes that do not contain a linker connecting two of the SNARE domains (White et al., 2018), and we therefore included four Sec17 molecules in our model of the vacuolar 20S complex. In the PDB coordinate file supplied as Source Data File of the homology model of the Sec18/Sec17/vacuolar SNARE complex, Sec18 molecules, chains A–F; Sec17, chains G–J; Nyv1, chain K; Vam3, chain L; Vti1, chain M; Vam7, chain N are included. Colors: cyan: Nyv1; magenta: Vam3; yellow: Vti1; salmon: Vam7; gray, orange, green, slate: Sec17; yellow, magenta, gray, blue, salmon, green: Sec18. Cartoon representations are shown. Two views related by a 90-degree rotation are included (left: side view; right: membrane-end view).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Purified full-length vacuolar SNAREs will spontaneously, though slowly, assemble into a parallel 4-helical coiled coil structure, which extends from the N-terminal (−7) layer of the SNARE domain to the C-terminal (+8) end of the SNARE domain. While the association of neuronal SNAREs has been studied extensively, the association of full-length or truncated vacuole SNAREs has received less study. Full-length R-SNARE, with a 6his-tag on its N-terminus, was mixed in octylglucoside with full-length Q-SNAREs, with soluble Q-SNAREs (sQ), or with sQ3Δs. Stable spontaneous complexes were isolated with nickel-NTA beads and examined by immunoblot. Complex formation with full-length SNAREs (lane 1) was not blocked by the absence of transmembrane domain from Qa, Qb, or﻿ both (lanes 2–4) or by the 3Δ deletion in the C-terminal end of the SNARE domain in any one or two Q-SNAREs (lanes 5–10). (A) Reactions (50 µl) containing 2.5 µM of each SNARE in Buffer 151 (20 mM HEPES-NaOH, pH 7.4, 150 mM NaCl, 10% glycerol, 1% ß-OG, 20mM imidazole) were nutated at 4°C for 2 hr. A 40 µl portion of each was transferred to a 0.5 ml Eppendorf tube containing 20 µl of a 50% slurry of Qiagen Nickel-NTA Agarose in Buffer 151. Suspensions were nutated at 4°C for 1 hr. Loosely bound proteins were removed by four successive suspensions in 0.5 ml Buffer 151, each followed by centrifugation (500xg, 6 min, 4°C) and removal of the supernatant. Bound proteins were eluted by boiling the agarose in 50 µl of sodium dodecyl sulphate (SDS) sample buffer (50 mM TrisCl, pH 6.8, 5% glycerol, 2% SDS, 0.2% bromophenol blue, 1% ß-mercaptoethanol) for 5 min. Samples were analyzed by SDS-PAGE followed by immunoblotting. (B) Western blots of three identical experiments were scanned and analyzed with UN-SCAN-IT Software (Silk Scientific, Orem, UT). Average pixel values were set at 100 for the all-wild-type positive control (lane 1). Means and standard deviations are shown.
+
+### Sec17 alters SNARE complex conformation
 
 The capacity of vacuolar SNAREs to form stable partially zippered structures raised the question of whether these SNAREs can zipper efficiently, especially when anchored to membranes or associated with other fusion proteins such as HOPS. To study the kinetics of SNARE interactions, we employed an ensemble fluorescence resonance energy transfer (FRET) assay of vacuolar SNARE associations (Torng et al., 2020). The Qc-SNARE was prepared with a unique cysteinyl residue in any of three positions (Figure 2A), either the native Cys208, which is upstream (U) of the SNARE domain or, after substitution of serine for this cysteine, with Met250Cys at the N-terminal end of the SNARE domain or with Ala316Cys at the C-terminal end of the SNARE domain. Each was derivatized with Oregon Green 488. Fusion proteins were also prepared with a unique cysteine either immediately N-terminal, or C-terminal, to the Qb SNARE domain, and each was derivatized with Alexa Fluor 568. As a model for exploring the effects of HOPS and Sec17 on SNARE dynamics, these fluorescent proteins were co-incubated with proteoliposomes bearing Ypt7, R, and Qa. cis-SNARE complex assembly can occur spontaneously on these proteoliposomes, but assembly is stimulated by HOPS, allowing direct comparison of HOPS-dependent and HOPS-independent SNARE assembly (Torng et al., 2020). The average FRET efficiency in these studies is modest because they include, in bulk reactions, all the fluorescent Qb and Qc, many of which do not enter SNARE complexes. SNARE complex assembly with HOPS gave a high average FRET efficiency when fluorophores were at the N-terminus of the Qb SNARE domain and at or near the N-terminal end of the Qc SNARE domain (Figure 2B, red and yellow curves). There was a lower FRET efficiency when the fluorophores were at opposite ends of the Qc and Qb SNARE domains (Figure 2B; blue, green, and indigo). When both fluorophores were at the C-terminal ends of the Qb and Qc SNARE domains, a low signal was seen (Figure 2B, purple), similar to the average FRET efficiency when fluorophores were at opposite ends of the SNARE domains, thus suggesting incomplete zippering. After 1 hr, Sec17 was added to each reaction. Strikingly, Sec17 only enhanced the average FRET efficiency between C-terminal fluorophores, rapidly rising to the level seen when the fluorophores were together at the N-terminii of the SNARE domains (Figure 2B, purple; Figure 2—figure supplement 1), indicating a Sec17-induced change at the C-terminal end of the SNARE complex. Sec17/αSNAP may promote the zippering of isolated SNARE domains (Ma et al., 2016) but is now seen to act in the context of membranes and HOPS.
 
-## Sec17-induced conformational change requires HOPS
+![Figure 2.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of fluorescently labeled SNARE constructs used in this study. SNAREs were derivatized as described previously (Torng et al., 2020). Wild-type Qc contains a single Cys residue at 208 at the upstream (U) position. (N)- and (C)-labeled constructs replace residues 250 and 316 with Cys, while also replacing Cys208 with Ser. Each Qc construct was derivatized with Oregon Green 488 as described (Torng et al., 2020). A fusion of maltose-binding protein (MBP), a TEV site, and the Qb SNARE domain (residues 133–187) was expressed with an added cysteinyl residue immediately upstream or downstream of the SNARE domain. Each Qb construct was derivatized with Alexa Fluor 568. Qc and Qb labeled with a fluorescent probe at any position are written as *Qc and *Qb. (B–G) Bar graphs are reported as the mean of the relative ensemble fluorescence resonance energy transfer (FRET) change (%) per trial with propagated standard deviation for n = 3 trials. The relative change was calculated by averaging 10 data points, each from just before Sec17 addition and from the end of the measurement period 20 min later, except where indicated. Specific time points used as well as the statistics for the propagation of uncertainty are shown in Supplementary Data. A bar graph representation for (B) and the kinetic curves for (C–G) are provided in Figure 2—figure supplement 1 . (B) Sec17 modifies the conformation of the C-terminus of the SNARE complex. Ypt7/RQa proteoliposomes were incubated with pairs of *Qb and *Qc labeled at the N, C, or upstream (U) locations as indicated in (A). Curves are averages of n = 3 trials, and the shaded regions behind each curve show the standard deviation per time point. (C) Sec17-promoted zippering requires HOPS. RQa proteoliposomes were incubated with either the N-labeled *Qb/*Qc pair (left) or the C-labeled *Qb/*Qc pair (right), with Ypt7 and HOPS as indicated. A reaction with a buffer (RB150) added instead of Sec17 serves as a negative control. (D) Sec17 does not promote C-terminal zippering if the SNARE domain of Qa is truncated. Ypt7/R proteoliposomes were incubated with C-terminally labeled *Qb and *Qc and either soluble Qa or Qa3Δ, and the relative FRET change was calculated over 10 min after Sec17 or buffer addition. (E) Sec17-induced zippering requires the apolar heptad-repeat amino acyl residues in Qa SNARE domain layers +4 to +8. Proteoliposomes bearing Ypt7, R-SNARE, and either wild-type Qa or Qa with the +4 to +8 layers inwardly-oriented apolar residues mutated to Gly were incubated with C-terminally labeled *Qb and *Qc, and then Sec17 or its mutants were added at t = 60 min. (F) Sec17-driven SNARE conformational change is stunted by the F22SM23S mutation of Sec17 (FSMS). Ypt/R proteoliposomes were incubated with sQa and C-terminally labeled *Qb and *Qc, and then Sec17 or mutants as indicated were added at t = 60 min. (G) Sec17 stabilizes incompletely zippered SNARE complexes. Ypt7/R proteoliposomes were incubated with sQa and C-terminally labeled *Qb and *Qc. Sec17 or the indicated mutants were added at t = 60 min. Non-fluorescent Qc (8.5 µM) was added at t = 80 min, and the loss of FRET over 35 min was measured starting immediately after the addition of non-fluorescent Qc.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of fluorescently labeled SNARE constructs used in this study. (B–G) Supplementary data for panels (B-G) in Figure 2. Subfigures are presented with the same subfigure labels and matching colors. All kinetic data are averages of three trials, and the shaded regions behind each curve show the standard deviation per time point. (B) The effect of Sec17 on SNARE average ensemble fluorescence resonance energy transfer (FRET) efficiency as a function of fluorophore position. The mean and standard deviation of three trials is shown for each reaction. (C) Representative kinetic data showing the effect of HOPS and Ypt7 on Sec17-induced zippering. Data for the N-terminally labeled *Qb/*Qc pair is shown on the left, and data for the C-terminally labeled pair is shown on the right. Reactions with HOPS are in purple, and reactions without HOPS are in orange. As a negative control, a buffer (RB150) was added instead of Sec17 for the reaction in gray. (D) Representative kinetic data showing that Sec17 has only minor effect on the average FRET efficiency of SNARE complexes bearing truncated Qa SNARE. (E) Representative kinetic data showing that Sec17 does not affect the average FRET efficiency of SNARE complexes bearing Qa SNARE with a mutated C-terminal half. (F) Representative kinetic data for the ability of Sec17 or mutants to promote C-terminal zippering of the SNARE complex. (G) Representative kinetic data showing that Sec17 stabilizes incompletely zippered SNARE complexes. Sec17, mutants, or buffer was added at t = 60 min (1), and non-fluorescent Qc was added at t = 80 min (2). Reactions containing wild-type Qc are shown with filled circles, and reactions with Qc3Δ are shown with open squares. The effect of wild-type Sec17 (red) is contrasted with no Sec17 (gray) in the left-side graph, and the four Sec17 mutants used in this experiment are compared in the right-side graph.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** gvSince proteoliposome fusion promoted by synthetic tethers is inhibited by all concentrations of Sec17, whereas HOPS-dependent fusion is only inhibited by very high Sec17 levels (Song and Wickner, 2019) and Sec17-triggered zippering requires HOPS (Figure 2C), we tested whether HOPS might directly associate with Sec17. Phosphatidylcholine liposomes were prepared without protein (‘naked’) or with TM-Sec17, a recombinant form of Sec17 with an N-terminal apolar transmembrane anchor (Song et al., 2017). These liposomes were incubated with HOPS, then floated through a density gradient. HOPS only bound in the presence of anchored Sec17, showing a direct and nearly stoichiometric binding between these proteins. (A) Liposomes composed of PC/PS/NBD (83.5/15/1.5%) were prepared from mixed micellar solutions by detergent dialysis as described in 'Materials and methods'. Liposomes bore either no proteins or TM-Sec17 (Song et al., 2017) at a 1:4000 protein to lipid molar ratio. Floatation assays were conducted as described in Song et al., 2020) (Figure 2). In brief, 30 μl reactions in RB150 contained 0.5 mM liposomal lipid, 125 nM integral TM-Sec17 where present, 0.2% defatted bovine serum albumin (BSA), 1 mM MgCl2, and 500 nM HOPS. Reactions were incubated (1 hr, 30°C) and liposomes floated through Histodenz (Sigma, St Louis, MO) density medium. Collected samples were solubilized in 0.125% Thesit, adjusted for lipid recovered, and analyzed for bound proteins by immunoblot for Vps16, a HOPS subunit. Because the reaction contained four times more HOPS than integrally bound TM-Sec17, we express the standard curve as the percent of molar equivalence (to total liposomal TM-Sec17) of HOPS. (B) Western blots from three repetitions of this experiment were analyzed by UN-SCAN-IT Software with standard curves. Mean values and standard deviations are shown.
+
+### Sec17-induced conformational change requires HOPS
 
 Proteoliposomes with R, Qa, and Ypt7 (where indicated) were incubated with Qb-SNARE domain and Qc. Both SNARE domains were either fluorescently labeled at their N-termini (Figure 2C, bars 1–5) or at their C-termini (Figure 2C, bars 6–10). Incubations were in the presence or absence of HOPS. Sec17 addition after 1 hr did not enhance the average FRET efficiency between N-terminally disposed fluorophores in the presence or absence of HOPS (Figure 2C, bars 1–5), but stimulated the average FRET efficiency between SNARE domain C-terminal fluorophores in a HOPS-dependent manner (Figure 2C, bars 6–10), since the enhanced FRET between the SNAREs in the presence of HOPS and Sec17 (bar 9) is not seen without HOPS (bar 8) or without Sec17 (bar 10). This indicates a HOPS-dependent and Sec17-induced SNARE conformational change. This was diminished when zippering was inhibited by the absence of the +4 to +8 layers of sQa (Figure 2D, bar 1 vs. 3) or by the conversion of each inward-facing apolar residue of the full-length Qa SNARE domain layers +4 to +8 to Gly (Figure 2E, bar 1 vs. 3). The F22SM23S mutation of Sec17 (FSMS hereafter), diminishing the hydrophobicity of its N-domain loop (Song et al., 2017), reduced the Sec17 capacity for inducing HOPS-dependent conformational change (Figure 2F). We also examined the effects of other mutants of Sec17. The K159E,K163E mutation (KEKE hereafter) diminishes Sec17:SNARE association (Marz et al., 2003); one of these residues (Sec17 K159) is in a pair (αSNAP K122, K163) that abolishes disassembly of the neuronal SNARE complex by NSF/αSNAP (Zhao et al., 2015). The C-terminal L291A,L292A mutation of Sec17 (LALA hereafter) interferes with its cooperation with Sec18 for SNARE complex disassembly (Barnard et al., 1997; Schwartz and Merz, 2009; Zick et al., 2015), and 6AtoN is the conversion of six inward-facing acidic residues of Sec17, which face basic SNARE residues in the 20S structure (Figure 1C), to neutral residues. Neither KEKE, LALA, nor 6AtoN had a large effect on the capacity of Sec17 to promote HOPS-dependent conformational change (Figure 2F).
 
@@ -47,17 +67,55 @@ Since this Sec17-induced SNARE conformational change is seen with C-terminal flu
 
 Sec17 also interacts with partially zippered SNARE complex to promote SNARE complex stability. SNARE complex was assembled by HOPS on Ypt7/R proteoliposomes with soluble Qa, with the Qb SNARE domain labeled with a fluorophore at a cysteinyl residue upstream of the SNARE domain, and with Qc of full length (w.t.) or with the 3Δ C-terminal truncation, each bearing a fluorophore at its native cysteinyl residue upstream of the SNARE domain. When the complex of proteoliposomes with these fluorescent Qb and Qc had full-length SNARE domains, it was stable whether or not it included Sec17, as there was no loss of average FRET efficiency after addition of excess non-fluorescent Qc (Figure 2G, bars 1 and 2; Figure 2—figure supplement 1G). In contrast, fluorescent Qc3Δ was ‘chased’ by exchange with non-fluorescent Qc (bar 3), but Sec17 stabilized this SNARE complex, blocking the chase (bar 4). Thus, in the absence of Sec17, the assembly of Qc3Δ into partially zippered SNARE complex is reversible. Each domain of Sec17 helps to stabilize Qc3Δ against exchange (bars 5–8), especially the Sec17 N-terminal apolar loop (bar 5). The HOPS-dependent functions of Sec17, such as promotion of zippering, may be aided by the direct affinity between these proteins (Figure 2—figure supplement 2).
 
-## Generality of Sec17 and Sec18 bypass of arrested zippering
+### Generality of Sec17 and Sec18 bypass of arrested zippering
 
 Sec17 can restore fusion when Qc has truncations at the C-terminal end of its SNARE domain (Schwartz and Merz, 2009), stimulated by Sec18 (Schwartz et al., 2017). We asked whether Sec17 can restore fusion with similar deletions of residues after the +3 layer in the other Q-SNAREs. Proteoliposomes bearing Ypt7 and R-SNARE were assayed for fusion with proteoliposomes bearing this Rab and any two anchored Q-SNAREs. Proteoliposome mixtures were incubated with HOPS, and the soluble form of the remaining Q-SNARE was deprived of its membrane anchor and a C-terminal portion of its SNARE domain (Figure 3; A, Qc3Δ; B, sQb3Δ; C, sQa3Δ). As reported by Schwartz et al., 2017, there was no fusion with Qc3Δ unless 600 nM Sec17, 300 nM Sec18, and ATP or ATPγS were present (Figure 3A); these concentrations are in the physiological concentration ranges of Sec17 (150–1100 nM) and Sec18 (250–760 nM) (Ho et al., 2018). While ATP and its non-hydrolyzable analog ATPγS support comparable fusion with wild-type SNAREs (Song et al., 2017), hydrolyzable ATP inhibits fusion through Sec17/Sec18-mediated disassembly of SNARE complexes when defective SNAREs such as Qc3Δ are present, a proofreading function. The same pattern was seen for fusion with sQb3Δ (Figure 3B) and sQa3Δ (Figure 3C). The unique spatial disposition of the Sec17/αSNAP molecules with respect to each SNARE (Figure 1C and Zhao et al., 2015) makes it unlikely that Sec17 could somehow fill each of the gaps left by each of these deletions to shield apolar residues within the SNARE bundle and thereby continue to drive zippering, or that Sec17 binding could induce the remaining R and two Q +4 to +8 layers to somehow rotate to form a hydrophobic two- or three-layered core.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig3-v2.jpg)
+
+**Figure 3.:** (A) Fusion incubations, as described in 'Materials and methods', had Ypt7/R and Ypt7/QaQb proteoliposomes (1:8000 Ypt7:lipid molar ratio, 1:16,000 SNARE:lipid molar ratio), 2 μM Qc3Δ, and, where indicated, 600 nM Sec17, 300 nM Sec18, 1 mM ATP (red), or ATPγS (blue). (B) Fusion with 2 μM sQb3Δ and with Ypt7/QaQc-tm proteoliposomes, but otherwise as in (A). (C) Fusion with 2 μM sQa3Δ and with Ypt7/QbQc-tm proteoliposomes, but otherwise as in (A). Mean and standard deviations from three independent experiments are shown in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Fusion blocked by deletion of the C-terminal five layers of any Q-SNARE domain is restored by Sec17 and Sec18. (A) Ypt7/R- and Ypt7/QaQb, (B) Ypt7/R- and Ypt7/QaQc-tm, and (C) Ypt7/R- and Ypt7/QbQc-tm. The experiment in Figure 3 was repeated in triplicate; mean values and standard deviations for fusion after 30 min are shown.
+
 Fusion assays were also performed with Ypt7/R proteoliposomes and each of the three Ypt7/single-anchored Q-SNARE proteoliposomes in the presence of HOPS and the other two soluble Q-SNAREs (Figure 4). With membrane-anchored Qa and with sQb and Qc having complete SNARE domains, there was HOPS-dependent fusion without further addition (Figure 4A, black line), though Sec17 and Sec18 with AMP-PNP, ATPγS, or ATP did stimulate (compare black curves, A–D). Deletion of the +4 to +8 layers from either soluble Qb or Qc abolished fusion (Figure 4A), which was restored by Sec17 and Sec18 with either AMP-PNP, ATPγS, or ATP (B–D, red and blue curves). There was no fusion when both soluble Q-SNAREs had truncated SNARE domains (Figure 4A, orange), but, strikingly, the fusion was partially restored by Sec17 and Sec18 with ATP (Figure 4D, orange) and more fully restored when the adenine nucleotide was resistant to hydrolysis (Figure 4, B and C, orange). With two Q-SNAREs lacking the C-terminal portion of their SNARE domains, the apolar amino acyl residues of the remaining two SNAREs would not be as effectively shielded from water if they continued zippering together. Fusion could not be restored by Sec17 and Sec18 if either soluble SNARE was omitted instead of truncated (green and purple). This fusion with sQb3Δ and Qc3Δ occurs in stages, initially sensitive to antibody to either the HOPS SM subunit Vps33 or Sec18, then acquiring resistance to Vps33 antibody while remaining sensitive to the Sec18 ligand (Figure 4—figure supplement 2). When only the Qb-SNARE was membrane anchored, there was little fusion without Sec17 and Sec18 (Figure 4E, black curve). When the SNARE domain of sQa or Qc had been truncated, fusion was strictly dependent on non-hydrolyzable ATP analogs, and little fusion was seen with dual SNARE domain truncation. Similar patterns were seen with anchored Qc (Figure 4, I–L). We term the fusion induced by Sec17 and Sec18 in the presence of 3Δ SNARE domain truncations ‘zippering bypass fusion’.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Fusion incubations, as described in 'Materials and methods', had Ypt7/R and Ypt7/Qa proteoliposomes (1:8000 Ypt7-TM:lipid molar ratio, 1:16,000 SNARE:lipid molar ratio), 50 nM HOPS, 2 μM sQb or sQb3Δ, 2 μM Qc or Qc3Δ, and, where indicated, 600 nM Sec17, 300 nM Sec18, and 1 mM ATP, AMP-PNP, or ATPγS. (E–H) Fusion incubations as for (A), but with Ypt7/Qb proteoliposomes and 2 μM sQa or sQa3Δ, 2 μM Qc or Qc3Δ and Sec17, Sec18, and adenine nucleotide as indicated. (I–L) Fusion incubations as for (A), but with Ypt7/Qc-tm proteoliposomes and 2 μM sQa or sQa3Δ, 2 μM Qb or sQb3Δ and Sec17, Sec18, and adenine nucleotide as indicated. Mean and standard deviations from more than three independent experiments are shown in Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Fusion between Ypt7/R and (A–D) Ypt/Qa, (E–H) Ypt7/Qb, or (I–L) Ypt7/Qc-tm proteoliposomes. Fusion assays are described in Figure 4, repeated more than three times. Mean values and standard deviations for fusion after 20 min are shown.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Ypt7/R and Ypt7/Qa proteoliposomes were co-incubated in the presence of HOPS and other fusion proteins or inhibitors, allowing resolution of an early, HOPS-dependent reaction stage from late, Sec18-dependent fusion. Incubations were in sets of three, with either of the three antibody preparations. When HOPS, Ypt7/R and Ypt7/Qa proteoliposomes were mixed with sQb3Δ, Qc3Δ, Sec17, Sec18, and ATPγS plus control IgG or specific antibody from the start of the incubation, fusion was blocked by affinity-purified antibody to either Sec18 (Haas and Wickner, 1996) or Vps33 (Seals et al., 2000), the SM subunit of HOPS (A, Set 1). In each set, any of these components not present in the initial incubation was added after 30 min. When the proteoliposomes were incubated for 29 min with HOPS, sQb3Δ, and Qc3Δ prior to antibody addition, followed by Sec17, Sec18, and ATPγS 1 min later, the restored fusion remained sensitive to each affinity-purified antibody (Set 2). If, however, the initial 29 min incubation also bore Qc3Δ, alone (Set 4) or in combination with other proteins (Sets 5–8), the restored fusion had acquired resistance to antibody to Vps33 prior to addition of the missing fusion proteins. Incubation with sQb3Δ did not confer resistance to anti-Vps33 (Set 3). Sec17 and Sec18 are not needed to form a reaction intermediate, which is resistant to antibody to Vps33 (Set 4). In contrast, when fusion reactions were blocked by the single omission of either sQb3Δ (Set 5) or Qc3Δ (Set 3), any intermediates that formed were not resistant to antibody to Sec18. A very partial resistance was seen when all the four SNAREs were present during the initial 29 min incubation (Sets 7 and 8). The specificity of inhibition by antibody to Sec18 was confirmed by its failure to inhibit Sec18-independent fusion with full-length sQb and Qc (B and C), but there was complete inhibition of Sec18-dependent fusion reactions with sQb3Δ and Qc3Δ (D and E, red). Sec18 thus acts late in the fusion pathway, as incubations of the proteoliposomes with HOPS and Qc3Δ, which confer fusion-resistance to antibody to Vps33 (Set 4), remain sensitive to antibody to Sec18. (A) Proteoliposomes with Ypt7/R and proteoliposomes with Ypt7/Qa (1:8000 Ypt7-TM:lipid molar ratio, 1:16,000 SNARE:lipid molar ratio) were mixed with 50 nM HOPS at t = 0. At either t = 0 or at t = 30, indicated subsets of 2 μM sQb3Δ, 2 μM Qc3Δ, 400 nM Sec17, 300 nM Sec18, and 1 mM ATPγS were added to the incubations. To block Sec18 or Vps33, affinity-purified antibody (1 μg) to each was added at t = 0 (sample 1) or at t = 29 (samples 2–8). As a control, 1 μg IgG was added to separate samples as indicated. The average and standard deviations of fusion 10 min after addition of any missing components are shown from three independent experiments. (B–E) Sec18 antibody or control IgG inhibition experiments were performed with Ypt7/R and Ypt7/Qa proteoliposomes with 50 nM HOPS, 2 μM sQb and 2 μM Qc (black curves) or 2 μM sQb3Δ and 2 μM Qc3Δ (red curves), 1 μg IgG (filled circles) or αSec18 (open circles), and without (B and C) or with (D and E) 400 nM Sec17, 300 nM Sec18, and 1 mM ATPγS as indicated. Kinetics shown are representative of four experiments. Mean and standard deviations from four independent experiments are shown. (F–M) Representative experiments from (A), Sets 1–8, are shown.
 
 To explore the capacity of Sec17 and Sec18 to compensate for partial SNARE zippering, we assayed the fusion of Ypt7/R and Ypt7/Qa proteoliposomes with sQb3Δ, Qc3Δ, and HOPS, using various concentrations of wild-type or mutant Sec17, and with or without Sec18 and ATPγS (Figure 5). Without Sec17, fusion is not supported by Sec18 (A and B, blue curves). Limited fusion is possible with 1 or 2 μM wild-type Sec17 alone (A, black and red), but Sec18 allows faster fusion and with less Sec17 (A and B; tan). Fusion requires the apolar loop near the N-terminus of Sec17, as the F21S,M22S mutation (FSMS) blocks fusion entirely (C and D). The K159E,K163E mutation (KEKE) diminishes Sec17:SNARE association (Marz et al., 2003). The KEKE mutation prevents fusion without Sec18 (E), but a slow and limited fusion with KEKE-Sec17 is restored by Sec18 (F). The C-terminal L291A,L292A mutation of Sec17 (LALA), which interferes with its cooperation with Sec18 for SNARE complex disassembly (Barnard et al., 1997; Schwartz and Merz, 2009; Zick et al., 2015), diminishes zippering bypass fusion (A vs. G, red curves), and a limited fusion is restored through the addition of Sec18 (H). These data suggest that Sec17 action directly requires its apolar loop domain, since the loss of this apolar region is not bypassed by Sec18. Sec18 may stimulate fusion by modulating the conformation of Sec17 associations with trans-SNARE complexes, but Sec18 is not simply promoting Sec17 binding, since it is still needed for fusion when Sec17 is joined to an integral N-terminal membrane anchor (Figure 5—figure supplement 2). Basic residues in the +3 to +8 layers near the C-terminus of the R and Qa SNARE domains are near acidic residues on the interior of the Sec17 assembly (Figure 5I). To determine whether Sec17 might rely on these ionic interactions to support fusion, we converted these acidic residues of Sec17 to alanine or serine, creating the mutant Sec17-E34S,E35S,D38S,E73A,D74A,E75A (termed Sec17 6 Acidic to Neutral or Sec17-6AtoN), but this mutant Sec17 still supports fusion (Figure 5, J and K). Interestingly, mutation of acidic residues of αSNAP near the C-terminal end of the neuronal SNARE complex also only had a modest effect on disassembly activity of NSF/αSNAP (Zhao et al., 2015).
 
-## Fusion despite triply-crippled SNARE zippering
+![Figure 5.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig5-v2.jpg)
+
+**Figure 5.:** (A-H, J, K) Fusion between Ypt7/R and Ypt7/Qa proteoliposomes (1:8000 Ypt7-TM:lipid and 1:16,000 SNARE/lipid molar ratios) was assayed with 50 nM HOPS, 2 μM sQb3Δ, 2 μM Qc3Δ, the indicated concentration of wild-type or mutant Sec17, and with or without 250 nM Sec18 and 1 mM ATPγS. (I) Ionic interactions between Sec17s and vacuolar SNAREs in the +4 to +8 layers in the model of the Sec18/Sec17/vacuolar SNARE complex (Figure 1). Colors: cyan: R; magenta: Qa; yellow: Qb; salmon: Qc; gray, orange, green, slate: Sec17; red: oxygen atoms; blue: nitrogen atoms. Cartoon representations are shown along with side chains shown as thin lines. Thick lines (sticks) are interacting glutamate and aspartate (acidic) residues on the surface of Sec17 (aminoacyl residues 34, 35, 38, 73, 74, 75) that interact with the vacuolar SNARE complex lysine and arginine basic residues in each of the four SNAREs. Mean and standard deviations from four independent experiments are shown in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** We prepared proteoliposomes with Ypt7, with R or Qa, and with either no Sec17, with an equimolar (to SNAREs) TM-Sec17 that bears an N-terminal hydrophobic transmembrane anchor domain derived from Qb, or with TM-Sec17-F21S,M22S (TM-FSMS hereafter). In the presence of HOPS, sQb3Δ, and Qc3Δ, membrane-anchored Sec17 supported zippering bypass fusion, which was strictly Sec18-dependent (A–C, no Sec18; D–F, with Sec18 and ATPγS). TM-Sec17 on both sets of proteoliposomes supported fusion (D and G, black), but fusion was not seen in the absence of TM-Sec17 (D and G, red), and only limited fusion was seen with TM-Sec17-FSMS (D and G, blue). Fusion was greatly diminished if TM-Sec17 or TM-Sec17-FSMS was only present on one of the fusion partner proteoliposomes (E and H), but there was substantial fusion if one of the proteoliposomes had TM-Sec17 and one had TM-Sec17-FSMS (F and I). The simplest model is that several Sec17 molecules are required to form the Sec17 assembly around the SNAREs but that the hydrophobic Sec17 N-domain loop is only necessary on one membrane for fusion. AMP-PNP functioned as well as ATPγS (compare G–I to D–F), but hydrolyzable ATP completely blocked fusion with membrane-anchored TM-Sec17 (J–L), similar to the lower activity of hydrolyzable ATP with wild-type Sec17 (Figure 4), reflecting the proofreading activity of Sec17/Sec18. (M) Statistics data for (A–L). Fusion reactions had the indicated proteoliposomes, 50 nM HOPS, 2 μM each of sQb3Δ and Qc3Δ, and either Sec18 buffer (black), 1 mM ATPγS and Sec18 (red), 1 mM AMP-PNP and Sec18 (blue), or 1 mM ATP and Sec18 (orange). Experiments were repeated in quadruplicate; mean values and standard deviations for fusion after 60 min are shown.
+
+### Fusion despite triply-crippled SNARE zippering
 
 Since SNARE zippering is driven by the sequestration of apolar residues into the interior of the 4-SNARE bundle, we examined the effect of converting the apolar residues of the Qa SNARE domain +4 to +8 layers to Ala, Ser, or Gly. Fusion between Ypt7/R and Ypt7/Qa proteoliposomes in the presence of HOPS, sQb, and Qc, but without Sec17 or Sec18 (Figure 6A, black curve), was diminished by replacing each of the +4 to +8 layer apolar residues of Qa with Ala (Figure 6A, green curve) and was abolished when they were replaced by Ser (red curve) or by Gly (blue curve). The persistence of some fusion with the Ala substitutions may reflect that two of the residues were already Ala, that Ala has the greatest propensity among the amino acids to form α-helices, Gly the least, and Ser is in-between (Pace and Scholtz, 1998), and that alanine itself is the least hydrophilic of these three amino acids. When these same incubations were performed with Sec17, Sec18, and ATPγS, rapid and comparable fusion was seen in each case (Figure 6B). When hydrolyzable ATP was used instead of ATPγS, there was little effect on the fusion kinetics with wild-type SNARE domain sequences (Figure 6, B vs. C, black curves). In contrast, hydrolyzable ATP led to fusion inhibition when SNARE packing stability was reduced by substitution of apolar residues by Ala, Ser, or Gly (Figure 6C). Though the apolar residues are not required for fusion aided by Sec17 and Sec18 (Figure 6B), they apparently stabilize the SNAREs against ATP-driven proofreading disassembly (Figure 6C). To triply weaken the completion of zippering, the same proteoliposomes with wild-type Qa or the Qa with +4 to +8 layers having small side-chain residues instead of apolar residues were incubated with HOPS, sQb3Δ, and Qc3Δ, either without Sec17 or Sec18 (Figure 6D) or with Sec17, Sec18, and ATPγS (Figure 6E) or ATP (Figure 6F). Fusion was optimally supported by Sec17, Sec18, and ATPγS (Figure 6E). The independence of this fusion from energy derived by zippering is underscored by the similar fusion rates in all incubations with Sec17, Sec18, and ATPγS, whether with apolar or polar Qa +4 to +8 residues or with full-length or +4to +8-truncated sQb and Qc (Figure 6, B vs. E). With the Qb and Qc SNARE domains truncated, and the Qa lacking apolar inward-facing amino acyl side chains, little or no energy could be gained from the completion of R and mutant-Qa zippering. Thus, Sec17 acts in three ways: triggering a zippering-dependent SNARE conformational change in the presence of HOPS and full-length SNARE domains (Figure 2), acting with Sec18 to promote fusion independent of energy from zippering (Figure 6), and supporting the disassembly of post-fusion cis-SNARE complexes by Sec18.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig6-v2.jpg)
+
+**Figure 6.:** Fusion incubations ('Materials and methods') had (A–C) Ypt7/R and Ypt7/Qa (w.t. (black), Gly mutant (blue), Ser mutant (red), or Ala mutant (green)) proteoliposomes (1:8000 Ypt7-TM:lipid molar ratio, 1:16,000 SNARE:lipid molar ratio), 50 nM HOPS, 2 μM sQb (w.t.), and 2 μM Qc (w.t.) (A–C) or (D–F) 2 μM Qc3Δ and 2 μM sQb3Δ. Sec17 and Sec18 buffers (A and D) or 600 nM Sec17, 300 nM Sec18, and 1 mM ATPγS (B and E) or ATP (C and F) were also present. Kinetics shown are representative of four experiments. Mean and standard deviations from four independent experiments are shown in Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67578/elife-67578-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Fusion with 2 μM sQb and 2 μM Qc. (D–F) Fusion with 2 μM sQb3Δ and 2 μM Qc3Δ. Experiments were repeated in quadruplicate; mean values and standard deviations for fusion after 30 min are shown.
 
 ## Discussion
 
@@ -81,9 +139,481 @@ While intracellular fusion reactions share many requirements, such as for SNAREs
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Nyv1</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004083</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vam3</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000005632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vti1</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vam7</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000003180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Ypt7</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004460</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Sec17</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000000146</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Sec18</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000000284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vps33</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004388</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vps39</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000002235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vps41</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000002487</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vps16</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000005966</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vps11</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004844</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vps18</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-R (Nyv1)</td>
+      <td>PMID:18650938</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-Qa (Vam3)</td>
+      <td>PMID:18650938</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-Qb (Vti1)</td>
+      <td>PMID:18650938</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-R (Nyv1)</td>
+      <td>PMID:22174414</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-sQa (soluble)</td>
+      <td>PMID:28637767</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-sQb (soluble)</td>
+      <td>PMID:24088569</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-Qb (Vti1)3Δ</td>
+      <td>This study</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-Qa (Vam3)3Δ</td>
+      <td>This study</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Qc (Vam7)</td>
+      <td>PMID:17699614</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Qc (Vam7)-tm</td>
+      <td>PMID:23071309</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Qc (Vam7) C208S, M250C</td>
+      <td>This study</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Qc (Vam7) C208S, A316C</td>
+      <td>This study</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Cys-sQb (SNARE domain)</td>
+      <td>PMID:28637767</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Cys-sQb (SNARE domain)</td>
+      <td>PMID:28637767</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ypt7</td>
+      <td>PMID:24088569</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ypt7-TM</td>
+      <td>PMID:31235584</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sec17</td>
+      <td>PMID:19414611</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sec17 FSMS</td>
+      <td>PMID:28925353</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sec17 KEKE</td>
+      <td>PMID:28925353</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sec17 LALA</td>
+      <td>PMID:19414611</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-Sec17 6AtoN</td>
+      <td>This study</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-Sec17-TM</td>
+      <td>PMID:28718762</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-Sec17-TM FSMS</td>
+      <td>PMID:28718762</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TEV protease</td>
+      <td>PMID:18007597</td>
+      <td></td>
+      <td>Purified from E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HOPS</td>
+      <td>PMID:18385512</td>
+      <td></td>
+      <td>Purified from Saccharomyces cerevisiae.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vam3 (rabbit polyclonal)</td>
+      <td>PMID:12566429</td>
+      <td>Wickner lab stock</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Nyv1 (rabbit polyclonal)</td>
+      <td>PMID:10385523</td>
+      <td>Wickner lab stock</td>
+      <td>WB: 0.65 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vti1 (rabbit polyclonal)</td>
+      <td>PMID:18007597</td>
+      <td>Wickner lab stock</td>
+      <td>WB: 0.47 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vam7 (rabbit polyclonal)</td>
+      <td>PMID:14734531</td>
+      <td>Wickner lab stock</td>
+      <td>WB: 0.1 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vps16 (rabbit polyclonal)</td>
+      <td>PMID:18007597</td>
+      <td>Wickner lab stock</td>
+      <td>WB: 1 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vps33 (rabbit polyclonal)</td>
+      <td>PMID:10944212</td>
+      <td>Wickner lab stock</td>
+      <td>Inhibition assay: 1 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sec18 (rabbit polyclonal)</td>
+      <td>PMID:11483507</td>
+      <td>Wickner lab stock</td>
+      <td>Inhibition assay: 1 μg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cy5-derivatized streptavidin</td>
+      <td>SeraCare Life Sciences</td>
+      <td>5270–0023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotinylated PhycoE</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>p811</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>434302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dilinoleoyl-sn-glycero-3-phosphocholine</td>
+      <td>Avanti polar lipids</td>
+      <td>850385</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dilinoleoyl-sn-glycero-3-phospho-L-serine</td>
+      <td>Avanti polar lipids</td>
+      <td>840040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dilinoleoyl-sn-glycero-3-phosphoethanolamine</td>
+      <td>Avanti polar lipids</td>
+      <td>850755</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dilinoleoyl-sn-glycero-3-phosphate</td>
+      <td>Avanti polar lipids</td>
+      <td>840885</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-α-phosphatidylinositol</td>
+      <td>Avanti polar lipids</td>
+      <td>840044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dipalmitoyl-sn-glycerol</td>
+      <td>Avanti polar lipids</td>
+      <td>800816</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ergosterol</td>
+      <td>Sigma</td>
+      <td>45480</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PI(3)P</td>
+      <td>Echelon Bioscience</td>
+      <td>P-3016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rhodamine DHPE</td>
+      <td>Invitrogen</td>
+      <td>L1392</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBD-PE</td>
+      <td>Invitrogen</td>
+      <td>N360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>Marina-blue</td>
+      <td>Invitrogen</td>
+      <td>M12652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithms</td>
+      <td>UN-SCAN-IT</td>
+      <td>Silk Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 568 C5-maleimide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A20341</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oregon Green 488 Maleimide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>O6034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oregon Green 488 Maleimide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>O6034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce TCEP-HCl</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>20490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-cysteine</td>
+      <td>Sigma-Aldrich</td>
+      <td>30089</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 PI3P was from Echelon (Salt Lake City, Utah), ergosterol from Sigma (St. Louis, MO), fluorescent lipids from Thermo Fisher (Waltham, MA), and other lipids were from Avanti (Alabaster, AL). Biobeads SM2 were from BioRad, Cy5-Streptavidin from SeraCare (Milford, MA), biotinylated phycoerythrin from Invitrogen (Eugene, OR), and underivatized streptavidin from Thermo Fisher. Spectrapor six dialysis tubing (7.5 mm diameter, 25 kDa cutoff) was from Spectrum Labs (Las Vegas, NV). Octyl-b-D-glucopyranoside was purchased from Anatrace (Maumee, OH).
 
-## Mutant constructions
+### Mutant constructions
 
 Sec17 with six acidic amino acids mutated to neutral residues, GST-Sec17 (E34S, E35S, D38S, E73A, D74A, E75A), was generated by PCR with Phusion high-fidelity DNA polymerase (NEB). The DNA fragment was cloned into BamHI- and SalI-digested pGST parallel1 vector (Sheffield et al., 1999) with an In-Fusion kit (Takara Bio USA, Mountain View, CA). Using inverse PCR, pParallel1-GST-Sec17 mutant (E34S, E35S, and D38S) was amplified with Phusion high-fidelity DNA polymerase (NEB) from a GST-Sec17 construct. The amplified linear DNA was re-circularized with an In-fusion kit (Takara Bio USA). To generate Sec17 acidic to neutral mutants, pParallel1-GST-Sec17 mutant (E34S, E35S, and D38S) was amplified with a Sec17 E73A, D74A, and E75A mutant primer set using Phusion high-fidelity DNA polymerase (NEB) and re-circularized with an In-fusion kit (Takara Bio USA).
 
@@ -91,36 +621,36 @@ GST-sQa3Δ with amino acyl residues 1–235 and GST-sQb3Δ with amino acyl resid
 
 To generate Qa with L238, M242, A245, L249, and A252 changed to Ala, Ser, or Gly, the pParallel1 GST vector with Qa lacking residues 228–257 was generated by inverse PCR with pParallel1 GST-Qa (Mima et al., 2008) using Phusion high-fidelity DNA polymerase (NEB). The DNA duplex with mutations (Gly, Ser, or Ala) of the +4 to +8 heptad repeats was cloned into the amplified vector bearing Qa 1–227 with an In-fusion kit (Takara Bio USA, Mountain View, CA).
 
-## For inverse PCR of pParallel1 GST and Qa 1–227,
+#### For inverse PCR of pParallel1 GST and Qa 1–227,
 
-## For the Gly mutant of Qa,
+#### For the Gly mutant of Qa,
 
-## For the Ser mutant of Qa,
+#### For the Ser mutant of Qa,
 
-## For the Ala mutant of Qa,
+#### For the Ala mutant of Qa,
 
 Vam7 mutants with cysteines inserted at the N- and C-termini of the SNARE domain were generated by inverse PCR with the Vam7 intein vector (Schwartz and Merz, 2009) and Phusion high-fidelity DNA polymerase (NEB). First, the native cysteine was removed by mutating it to serine (C208S) using the mutant primer set below. Vam7 mutants with cysteines inserted near the N- and C-termini of the SNARE domain, M250C and A316C, respectively, were generated from the cysteine-lacking plasmid in the same fashion.
 
-## Protein isolation
+### Protein isolation
 
 HOPS and prenyl-Ypt7 (Zick and Wickner, 2013), Ypt7-TM (Song et al., 2020), Sec17 (Schwartz and Merz, 2009), TM-anchored Sec17 and TM-anchored Sec17-F21SM22S (Song et al., 2017), Sec18 (Mayer et al., 1996), wild-type vacuolar SNAREs and his6-R (Mima et al., 2008; Schwartz and Merz, 2009; Zucchi and Zick, 2011; Izawa et al., 2012), sQb (Zick and Wickner, 2013) Qc-C208SM250C, Qc-C208SA316C, and Qc3Δ (Schwartz and Merz, 2009) were purified as described. sQa, sQa3Δ, and sQb3Δ were purified by a modification of prior methods (Zick and Wickner, 2013; Song et al., 2020). pGST-Parallel1 with sQa, sQa3Δ, or sQb3Δ was transformed into Rosetta2 (DE3)-pLysS cells (EMD Millipore, Billerica, MA). Luria–Bertani (LB) broth (100 ml) containing 100 μg/ml ampicillin and 34 μg/ml chloramphenicol was inoculated with a single colony. After overnight incubation with shaking at 37°C, 40 ml portions of the preculture were added to two 6 l flasks, each with 3 l of LB medium, containing 100 μg/ml ampicillin and 34 μg/ml chloramphenicol and shaken (200 rpm) at 37°C to an OD600 of 0.8. Isopropyl β-D-1-thiogalactopyranoside was added to 0.5 mM. After 3 hr of continued shaking at 37°C, bacteria were harvested by centrifugation (5000 rpm, 5 min, 4°C). Cell pellets were resuspended in 60 ml of 20 mM HEPES-NaOH (pH 7.4), 200 mM NaCl, 1 mM EDTA, 1 mM dithiothreitol (DTT), 200 mM phenylmethyl sulfonylfluoride, and 1 X protease inhibitor cocktail (Xu and Wickner, 1996). Resuspended cells were passed twice through a French press at 900 psi. The cell lysate was centrifuged (4°C, 1 hr, 50,000 rpm, SW 60Ti rotor [Beckman Coulter, Brea, CA]). The supernatant was added to 20 ml of Glutathione Agarose 4B resin (Genesee Scientific, San Diego, CA), which had been equilibrated with wash buffer (20 mM HEPES-NaOH (pH 7.4), 200 mM NaCl, and 1 mM EDTA, 1 mM DTT) and nutated at 4°C for 2 hr. The suspended resin was poured into a 2.5-cm-diameter column, drained, and washed with 100 ml wash buffer. The GST-tagged protein was eluted with 20 mM HEPES-NaOH (pH 7.4), 200 mM NaCl, 1 mM EDTA, 1 mM DTT, 5% glycerol, and 20 mM glutathione, and the GST tag removed by TEV protease.
 
-## Proteoliposome fusion
+### Proteoliposome fusion
 
 Proteoliposomes were prepared by detergent dialysis from β-octylglucoside-mixed micelles for fusion assays (Song et al., 2017; Song and Wickner, 2019) and SNARE assembly assays (Torng et al., 2020) as described. Briefly, for the fusion assay, proteoliposomes (1 mM lipid) were prepared with membrane-bound Ypt7 and R at 1:8000 and 1:16,000 molar ratios to lipid, respectively, and with lumenal biotin-phycoerythrin. Proteoliposomes were also prepared with membrane-bound Ypt7 and the indicated Q-SNAREs at 1:8000 and 1:16,000 molar ratios to lipid, respectively, plus lumenal Cy5-streptavidin. These were incubated separately for 10 min at 27°C with 1 μM GTP and 1 mM EDTA, and then MgCl2 was added to 2 mM. After prewarming (27°C for 10 min) the separately GTP-exchanged proteoliposomes in a 384-well plate, fusion reactions were initiated by mixing 5 μl of each proteoliposome preparation and supplementing with other fusion factors in volumes summing to 10 μl, continuing incubation at 27°C in a Spectramax fluorescent plate reader. Fusion incubations (20 μl) in RB150 (20 mM HEPES/NaOH, pH 7.4, 150 mM NaCl, 10% glycerol) had proteoliposomes (0.5 mM total lipid concentration), 50 nM HOPS, the indicated concentrations of sSNAREs, 400 or 600 nM Sec17, 300 nM Sec18, 1 mM ATP or its analogs, and 3 mM MgCl2, as modified in each figure legend.
 
-## SNARE assembly assay
+### SNARE assembly assay
 
 Assays were performed as described previously (Torng et al., 2020) with one addendum. In brief, reactions (20 µl) were performed at 27°C in a SpectraMax Gemini XPS (Molecular Devices) plate reader. Standard reactions include HOPS (160 nM), proteoliposomes (0.5 mM lipid, with SNARE and Ypt7 at a molar ratio of either 1:2000 or 1:4000 for Ypt7/R proteoliposomes and Ypt7/RQa proteoliposomes, respectively), and fluorescently labeled Qb and Qc (1 µM), and sQa (1 µM) as necessary. These were incubated for 60 min, and then Sec17 was added to 500 nM. Three fluorescence channels were read simultaneously at intervals of 30 s: the donor channel Oregon Green 488 from Qc (excitation [ex]: 497 nm; emission [em]: 527 nm; cutoff [c/o]: 515 nm), the acceptor channel Alexa Fluor 568 from Qb (ex: 568 nm; em: 605 nm; c/o: 590 nm), and the FRET channel (ex: 490 nm; em: 615 nm; c/o: 590 nm). For each time point, the bleed through-corrected FRET signal was obtained by subtracting the background signals coming from the donor and acceptor channels from the signal in the FRET channel as detailed in Torng et al., 2020. This was further corrected by dividing by the geometric mean of the donor and acceptor signals. The final corrected signal, reported as ‘Average FRET efficiency,’ is a combined measure of the proportion of fluorescent SNAREs undergoing FRET and their average FRET efficiency.
 
-## Molecular models
+### Molecular models
 
 MODELLER (Webb and Sali, 2016) was used to create individual homology models of the vacuolar SNARE complex (Nyv1, Vam3, Vti1, Vam7), and of Sec18 starting from the coordinates of synaptobrevin-2, SNAP-25, syntaxin-1A, and NSF in the cryo-EM structure of the neuronal NSF/αSNAP/SNARE complex (PDB ID 3J96) (Zhao et al., 2015). For Sec18, the linker between the N and D1 domains was deleted from the generated homology model since there was no information about these linkers in this structure (PDB ID 3J96) of the neuronal 20S complex.
 
 The MODELLER protocol consisted of an alignment step (python script file align.py) and a modeling step (python script file modeler-input.py). The script files are shown here for synaptobrevin (nyv1):
 
-## align.py
+#### align.py
 
-## modeler-input.py
+#### modeler-input.py
 
 The homology models of Nyv1, Vam3, Vti1, Vam7, and Sec18, together with the crystal structure of Sec17 (PDB ID 1QQE) (Rice and Brunger, 1999), were fit into the cryo-EM structure of the neuronal NSF/αSNAP/SNARE complex (PDB ID 3J96) (Zhao et al., 2015). The fit was performed by using the ‘align’ feature of PyMol to individually superimpose the coordinates of the vacuolar proteins with the corresponding coordinates of the neuronal proteins in the structure of the neuronal NSF/αSNAP/SNARE complex.

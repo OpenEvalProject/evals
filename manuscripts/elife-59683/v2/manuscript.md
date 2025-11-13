@@ -48,11 +48,21 @@ Using standard genetic approaches, the gap from gene to behavioural phenotype in
 
 ## Results
 
-## Three synthetic gRNAs per gene achieve over 90% biallelic knockouts in F0
+### Three synthetic gRNAs per gene achieve over 90% biallelic knockouts in F0
 
 What are the requirements for a zebrafish F0 knockout method applicable to large genetic screens studying continuous traits? First, it needs to be quick and reliable. Most techniques so far have used in vitro-transcribed gRNAs (Shah et al., 2015; Wu et al., 2018). In vitro transcription often necessitates the substitutions of nucleotides in the 5'-end of gRNAs, and this can hamper mutagenesis by introducing mismatches with the target locus. Commercial synthetic gRNAs circumvent this limitation (Hoshijima et al., 2019). Second, it needs to be readily applicable to any open-reading frame. Some protocols suggest targeting each gene with one or two synthetic gRNAs designed to target essential domains of the encoded protein (Hoshijima et al., 2019). This strategy requires detailed knowledge of each target, which is likely to be lacking in large genetic screens investigating poorly annotated genes. Third, the method must consistently convert most injected embryos into F0 biallelic knockouts, leaving few or no wild-type alleles within each animal. Complete conversion into null alleles may not be a primary requirement for detection of discrete or overt phenotypes but is a priority when studying continuous traits.
 
 To fulfil these criteria, we chose to maximise the probability of introducing a frameshift by optimising mutagenesis at multiple loci over each gene, as in theory this is a universal knockout mechanism (Figure 1A). In a simple theoretical model (Wu et al., 2018) where frameshift is the sole knockout mechanism and the probability of mutation at each target locus is over 80%, targeting the gene at three to four loci is predicted to be sufficient to routinely achieve over 90% biallelic knockout probability (Figure 1B). While targeting extra loci would increase this probability further, minimising the number of unique RNPs injected reduces both costs and potential off-target effects.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the F0 knockout strategy. Introduction of indels at multiple loci within the target gene leads to frameshift and premature stop codons and/or mutation of essential residues. (B) Simplified theoretical model of biallelic knockout probability as a function of number of targeted loci, assuming frameshift is the sole knockout mechanism. PKO, probability of biallelic knockout; Pmutation, mutation probability (here, 1.00 or 0.80); Pframeshift, probability of frameshift after mutation (0.66); nloci, number of targeted loci. (C–D) (top) Phenotypic penetrance as additional loci in the same gene are targeted. Pictures of the eye at 2 dpf are examples of the scoring method. (bottom) Unviability as percentage of 1-dpf embryos. (E–F) Proportion of alleles harbouring a frameshift mutation if 1, 2, 3, or 4 loci in the same gene were targeted, based on deep sequencing of each targeted locus. Each line corresponds to an individual animal. (G) 2.5-month wild-type and slc24a5 F0 knockout adult fish (n = 41). (H) 2-dpf progeny from slc24a5 F0 adults outcrossed to wild types (n = 283) or incrossed (n = 313). (I) Example of 3-dpf wild type, mab21l2u517 mutant, and mab21l2 F0 embryos (n = 96/100 injected). See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) (top) Phenotypic penetrance as gradually more Cas9 was injected; 1:6: 4.75 fmol Cas9, 1:3: 9.5 fmol Cas9, 1:2: 14.25 fmol Cas9, 1:1: 28.5 fmol Cas9. gRNA was kept constant at 28.5 fmol. Pictures of the eye at 2 dpf are examples of the scoring method (reproduced from Figure 1C,D). (bottom) Unviability as percentage of 1-dpf embryos.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig1-figsupp2-v2.jpg)
 
 To test the efficacy of multi-locus targeting to generate functional null mutations, we targeted the pigmentation genes slc24a5 and tyr at different numbers of loci and quantified phenotypic penetrance in individual animals. Homozygous null slc24a5 or tyr zebrafish lack eye pigmentation at 2 days post-fertilisation (dpf), while heterozygous and wild-type siblings are pigmented (Kelsh et al., 1996; Lamason et al., 2005). Additionally, Slc24a5 and Tyr act cell-autonomously, so any unpigmented cells within the eye carries a biallelic null mutation. To generate F0 embryos, we injected at the one-cell stage RNPs (Cas9 protein/synthetic crRNA:tracrRNA duplex) targeting one to four loci per gene. To estimate phenotypic penetrance, eye pigmentation was scored at 2 dpf on a scale from 1 (completely devoid of pigment, i.e. fully penetrant) to 5 (dark as wild types, i.e. no penetrance). The larvae were then followed until 5–6 dpf to quantify any reduced viability in the injected animals, reported as the sum of dead or dysmorphic embryos. Targeting slc24a5 with one or two RNPs generated clutches with low phenotypic penetrance, i.e. most larvae appeared wild-type or had patchy eye pigmentation. Conversely, when three RNPs were injected, 95% (55/58) of larvae were totally devoid of eye pigmentation (Figure 1C). Adding a fourth RNP did not increase the penetrance further. In some cases, the phenotypic penetrance was 100%. For example, using just two RNPs to target tyr yielded 59/59 F0 embryos with no eye pigmentation (Figure 1D). Addition of a third or fourth RNP yielded similar results. In both experiments, the number of unviable embryos remained at tolerable levels but increased when targeting a fourth locus (Figure 1C,D).
 
@@ -64,9 +74,17 @@ Finally, we confirmed the efficacy of the protocol by targeting two other develo
 
 For slc24a5, tyr, and tbx16 genes, we obtained strikingly similar results of phenotypic penetrance to that shown in previous work by Wu et al., 2018, but targeting three loci rather than four, which reduces potential off-target effects.
 
-## Sequencing of targeted loci reveals the diversity of null alleles in F0 knockout animals
+### Sequencing of targeted loci reveals the diversity of null alleles in F0 knockout animals
 
 F0 knockout of the developmental genes slc24a5, tyr, mab21l2, and tbx16 consistently replicated homozygous null mutant phenotypes. Does this actually reflect frameshift mutations in most or all copies of the genome? To assess the proportion and diversity of knockout alleles in the F0 larvae generated by the method, we performed deep sequencing of the slc24a5, tyr, and tbx16 loci, as well as most other loci we targeted throughout the study. We collected more than 100,000 reads for 32 targeted loci on 10 separate genes, each in 3–4 individual animals for a total of 123 samples sequenced each at a coverage of 995 ± 631×. We quantified the mutations with the ampliCan algorithm (Labun et al., 2019). At each locus, 87 ± 18% of the reads were mutated (Figure 2A). If a read was mutated, the mean probability that it also carried a frameshift mutation was 65.4%, confirming the absence of bias in frameshift probability (Moreno-Mateos et al., 2015) and verifying the assumption of the theoretical model that 2 out of every 3 mutations induce a frameshift. The same RNP produced the same mutations in different animals more often than expected by chance (Figure 2B; two animals injected with the same RNP shared 3.3 ± 1.6 of their top 10 most frequent indels vs 0.5 ± 0.7 if they were injected with different RNPs), in line with a non-random outcome of DNA repair at Cas9 breaks (Shen et al., 2018; van Overbeek et al., 2016). As expected (Moreno-Mateos et al., 2015; Varshney et al., 2015), shorter indels were observed more often than longer ones, with an overall bias towards deletions (Figure 2C; 57% deletions vs 43% insertions, n = 7015 unique indels). The positions of the deleted nucleotides are normally distributed with a peak at 4 bp before the protospacer adjacent motif (PAM) (Figure 2—figure supplement 1), confirming previous reports (Moreno-Mateos et al., 2015). The diversity of null alleles in individual F0 knockout animals was extensive: at each targeted locus, there were 40.5 ± 27.5 (median ± median absolute deviation) different alleles, which in theory can produce up to hundreds of thousands of different versions of the targeted gene. Importantly, the sequencing data demonstrates the build-up of frameshift probability achieved by multi-locus targeting, in line with the theoretical model (Figure 1B). For all genes targeted (n = 10) and 31/35 of individual animals sequenced, three RNPs were sufficient to achieve over 80% of alleles harbouring a frameshift mutation (Figure 2D). For slc24a5 and tyr, the fourth RNP only marginally augmented this proportion (+ 2.7% for slc24a5; + 4% for tyr) (Figure 1E,F).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig2-v2.jpg)
+
+**Figure 2.:** (A) Percentage of reads mutated (height of each bar, grey) and percentage of reads with a frameshift mutation (orange) at each gene, locus (capital letters refer to IDT’s database), larva (within each gene, the same number refers to the same individual animal; 0 is uninjected control). (B) Number of indels in common when intersecting the top 10 most frequent indels of two samples from different loci or from the same locus but different animals. Black crosses mark the means. *** p < 0.001; Welch’s t-test. (C) Frequency of each indel length (bp). Negative lengths: deletions, positive lengths: insertions. (D) Proportion of alleles harbouring a frameshift mutation if 1, 2, or three3 loci in the same gene were targeted, based on deep sequencing of each targeted locus. Each line corresponds to an individual animal. (E) Sanger sequencing of amplicons spanning multiple targeted loci of slc24a5. Arrowheads indicate each protospacer adjacent motif (PAM), capital letters refer to the crRNA/locus name. (F) Deep sequencing of the top 3 predicted off-targets of each slc24a5 gRNA (A, B, D). Each data point corresponds to one locus in one animal. Percentage of mutated reads at on-targets is the same data as in A (slc24a5 loci A, B, D). See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Nucleotide positions are given in relation to the protospacer adjacent motif (PAM), whose position is set at 0 (0 = PAM nucleotide adjacent to the gRNA binding site). The nucleotide 4 bp before the PAM (−4) was the most frequently deleted (67% of all deletions removed it). n = 4016 unique deletions.
 
 Introducing a frameshift is a robust, widely applicable strategy to prevent the production of the protein of interest. However, the proportion of alleles harbouring a frameshift mutation is not sufficient alone to generate the high phenotypic penetrance we observed. For example, of the larvae injected with three RNPs targeting slc24a5 or tyr, 3/6 had less than 90% alleles with a frameshift mutation (Figure 1E,F), but phenotypic penetrance was consistently > 94% (score 1 in Figure 1C,D and Figure 1—figure supplement 1). There are multiple reasons why the proportion of alleles carrying a frameshift mutation is a conservative underestimate of null alleles. First, mutations of residues at key domains of the protein can be sufficient for loss of function. Second, large indels may disrupt the sequencing PCR primers' binding sites, preventing amplification of such alleles. Third, the pooled RNPs may also lead to deletion of large sequences that span two loci being targeted (Hoshijima et al., 2019; Kim and Zhang, 2020; Moreno-Mateos et al., 2015; Wu et al., 2018). To test the latter possibility, we Sanger sequenced amplicons from regions that span multiple targeted loci within slc24a5. We identified clear instances where the gene underwent a large deletion between two targeted sites (Figure 2E). As large deletions are highly likely to prevent the expression of a functional protein, they further affirm the efficacy of the three-RNP strategy.
 
@@ -74,9 +92,25 @@ Mutations at off-target loci are a potential concern when using Cas9. We sequenc
 
 Overall, our simple protocol involving three synthetic RNPs at 1:1 Cas9 to gRNA ratio takes just a few hours to complete yet consistently achieves > 90% biallelic knockouts. While the method generates a diverse mix of null alleles in the injected animals, frameshift mutations are a universal mechanism which can be deployed on virtually any gene of interest.
 
-## Headloop PCR is a rapid sequencing-free method to validate gRNAs
+### Headloop PCR is a rapid sequencing-free method to validate gRNAs
 
 Deep sequencing allows for the quantification of frameshift mutations in F0 animals, but the cost is not always justified simply to confirm sufficient mutagenic activity of gRNAs. As an inexpensive and rapid alternative, we adapted a suppression PCR method called headloop PCR (Rand et al., 2005). We reasoned that suppressing amplification of the wild-type haplotype at a target locus would reveal the presence of mutant alleles. Suppression is achieved by adding to one of the PCR primers a 5' tag that is complementary to the wild-type sequence at the target locus. During PCR, the tag base-pairs to the target sequence in the same strand, directing elongation to form a stable hairpin, which prevents the use of the amplicon as template in the subsequent cycles (Figure 3A). Any indels generated in the target locus will prevent the formation of the headloop and allow exponential amplification. To demonstrate the efficacy of this technique, we used headloop PCR for five targeted loci in slc24a5 that we had also sequenced. No amplification with headloop primers was detected for any of the loci in uninjected embryos, indicating suppression of amplification of the wild-type haplotype (Figure 3B). In contrast, robust amplification of the targeted loci was observed from the F0 embryos injected with highly mutagenic RNPs. Amplification was absent at the locus targeted by a gRNA known to be ineffective (slc24a5 gRNA C, < 2% mutated reads; Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig3-v2.jpg)
+
+**Figure 3.:** (A) Principle of headloop PCR. A headloop tag complementary to the target locus is added to one PCR primer (here, to the forward primer). During PCR, the first elongation incorporates the primer and its overhang; the second elongation synthesises the headloop tag. (left) If the template is wild-type, the complementary tag base-pairs with the target locus and directs elongation (hatched sequence). The amplicon forms a hairpin secondary structure, which prevents its subsequent use as template. (right) If the targeted locus is mutated, the tag is no longer complementary to the locus. The amplicon remains accessible as a template, leading to exponential PCR amplification. (B) (left) Target loci (A, B, C, D, G) of slc24a5 amplified with the PCR primers used for sequencing (std, standard) or when one is replaced by a headloop primer (HL). Orange arrowheads mark the 300 bp ladder band. (right) Deep sequencing results of the same samples as comparison (reproduced from Figure 2A, except locus C); u, uninjected control, i, injected embryo. Framed are results for gRNA C, which repeatedly failed to generate many mutations. See also Figure 3—figure supplement 1, 2, 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The headloop score (HL score) for a given sample (here, tyr locus A larva 1) was calculated as the ratio between the headloop PCR band intensity (HL) and the standard PCR band intensity (std). As the standard PCR band intensity represents the sum of wild-type and mutated alleles, and the headloop PCR band intensity represents the mutated alleles only, the ratio approximates the proportion of mutated alleles in the sample. (B) Percentage of mutated reads (deep sequencing) as a function of headloop score. Each data point corresponds to one targeted locus in one F0 knockout animal. Some samples were artificially created to simulate mediocre gRNAs by mixing genomic DNA from an injected embryo with genomic DNA from the uninjected control in a 1:1 (diluted ½, squares) or 1:3 ratio (diluted ¼, triangles). For these, the percentage of mutated reads was not measured by deep sequencing but estimated by dividing the percentage of mutated reads of the original sample by 2 (diluted ½) or 4 (diluted ¼). The dark grey dashed line is the line of best fit by linear regression: proportion of mutated reads = 0.33 + 0.69 × headloop score; R2 = 0.44. Headloop score is a significant predictor of the proportion of mutated reads, p < 0.001 (linear regression); r = 0.66 (Pearson). The light grey dashed vertical line indicates a tentative threshold at headloop score 0.6 to discriminate mediocre gRNAs. Two tbx16 locus B samples were excluded because they appeared degraded on the agarose gel. n = 29 samples; each data point is the mean of at least three technical replicates.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) 5’–3’ genomic region of the wild-type and mutated alleles of the stable mutant lines we used to test the detection of small deletions by headloop PCR. apoea: 1 bp deletion followed by a T > A transversion. cd2ap: 2 bp deletion. Framed: headloop tag; grey underlay: headloop tag binding site. (B) For each mutant line (apoea, cd2ap), 32 embryos issued from a heterozygous to wild-type outcross were genotyped (around 50% of embryos expected to be heterozygous and the rest wild-type). Bands on agarose gels alternate between standard PCR (std) and headloop PCR (HL). The genotype (wild-type or heterozygous) was called based on the presence or absence of the headloop PCR band. If the embryo was wild-type, headloop PCR did not generate a product. If the embryo was heterozygous, headloop PCR generated a product, as half of the template DNA was mutated. (C) All genotype calls by headloop PCR were then verified by Sanger sequencing. Samples traces are included here. For the standard PCR heterozygous samples, two Sanger traces run alongside each other past the mutation site, as templates from both the wild-type and the heterozygous alleles were sequenced. Conversely, the Sanger trace for the headloop PCR heterozygous samples remains unique past the mutation as only the mutated allele was sequenced, which confirms that the wild-type allele was not amplified. (D) Summary of genotyping results by headloop PCR and Sanger sequencing for the two clutches of 32 embryos.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Comparison between results obtained with a proofreading (Phusion Hot Start II) or a non-proofreading (REDTaq) DNA polymerase for three target loci (A, B, C) of slc24a5 amplified with the PCR primers used for sequencing (std, standard) or when one is replaced by a headloop primer (HL). Samples were uninjected controls. Orange arrowheads mark the 300 bp ladder band. (B) Headloop primer designs, using slc24a5 locus G as an example. To perform headloop PCR, the forward or reverse primer from a previously verified primer pair is modified with a 5’ tag sequence and used in conjunction with its unmodified partner. The sequence of the headloop tag is selected so that the predicted Cas9 cleavage site (dashed line) is located towards the 5’-end of the tag. (left) If the modified primer and the gRNA binding site are in the same direction (headloop tag is added to the forward primer and gRNA binding site is on the 5’–3’ genomic strand), the reverse-complement of the gRNA binding site is sufficient (grey underlay). (right) If the modified primer and the gRNA binding site are in opposite directions (headloop tag is added to the reverse primer while gRNA binding site is on the 5’–3’ genomic strand), a sequence that includes the protospacer adjacent motif (PAM, orange font) and shifted from the gRNA binding site is sufficient. In both cases, after second strand elongation, the tag is able to bind the target sequence and direct elongation (hatched sequences) to form a hairpin, suppressing exponential amplification of the wild-type haplotype. Framed: headloop tag; grey font: gRNA binding site; grey underlay: headloop tag binding site.
 
 Next, we tested whether headloop PCR could be used in a semi-quantitative manner to estimate the proportion of mutated alleles in F0 knockout embryos. We derived a score for each sample from the standard PCR and headloop PCR band intensities on an agarose gel (Figure 3—figure supplement 1A). This score correlated well with the proportion of mutated reads measured by deep sequencing (Figure 3—figure supplement 1B; r = 0.66, n = 29 samples tested from n = 7 loci). A tentative headloop score threshold at 0.6 could discriminate gRNAs that were less mutagenic (tbx16 gRNA B and tyr gRNA A, both generated < 60% mutated reads). There was a false negative: tbx16 locus D repeatedly produced a low headloop score (< 0.5) while the gRNA generated close to 100% mutated reads. We conclude that headloop PCR can be used in a semi-quantitative manner to confirm that mutagenesis is high at every targeted site, although it may at times be overly conservative.
 
@@ -86,25 +120,41 @@ Importantly, we determined that use of a proofreading polymerase (with 3′→5�
 
 These results demonstrate that our adapted headloop PCR method is a simple, sensitive, inexpensive, and rapid approach to verify the mutagenic potential of gRNAs before undertaking an F0 phenotypic screen.
 
-## Multiple genes can be disrupted simultaneously in F0 animals
+### Multiple genes can be disrupted simultaneously in F0 animals
 
 Some applications require the simultaneous disruption of two or more genes. In epistasis analyses, combinations of genes are mutated to resolve a genetic pathway (Michels, 2002). Many traits and diseases are polygenic, with each gene variant contributing a small effect to the outcome. In this case, disrupting multiple genes collectively can reveal synergistic interactions. Mutating a gene can also lead to the upregulation of evolutionary-related counterparts if the mutated transcript is degraded by nonsense-mediated decay (El-Brolosy et al., 2019; Ma et al., 2019). Jointly inactivating evolutionary-related genes may therefore be necessary to overcome genetic robustness.
 
 To test the feasibility of double gene knockout in F0 animals, we targeted pairs of genes that each produce a distinct developmental phenotype when mutated. To compare our method with published work (Wu et al., 2018), we first targeted the pigmentation gene slc24a5 (Lamason et al., 2005) and the T-box transcription factor encoding gene tbx5a, which is required for pectoral fin development (Garrity et al., 2002). Double biallelic knockouts should therefore lack both pigmentation and pectoral fins. Each gene was targeted with a three-RNP set, then the two sets were injected together. Similar to previous results, single gene targeting produced high proportions of knockout animals—100% (37/37) of the slc24a5 F0 larvae had completely unpigmented eyes at 2 dpf and 100% (43/43) of the tbx5a F0 larvae did not develop pectoral fins (Figure 4A). When both genes were targeted in individual animals, 93% (26/28) displayed both phenotypes. This again precisely mirrors results obtained by Wu et al., 2018, but mutating fewer loci in each gene. We replicated this result by targeting a second pair of genes, the pigmentation gene tyr (Kelsh et al., 1996), and the T-box transcription factor encoding gene ta, which is required for tail development (Schulte-Merker, 1995). 100% of the injected embryos exhibited both the no pigmentation and no tail phenotypes (Figure 4B). These experiments demonstrate the feasibility of simultaneously disrupting two genes directly in the F0 animals.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig4-v2.jpg)
+
+**Figure 4.:** (A) Penetrance of single (slc24a5, tbx5a) and combined (both) biallelic knockout phenotype(s) in F0. Pictures of example larvae were taken at 3 dpf. No pigmentation refers to embryos clear of eye pigmentation at 2 dpf, as in Figure 1C. Pectoral fins were inspected at 3 dpf. (bottom) Unviability as percentage of 1-dpf embryos. (B) Penetrance of single (tyr, ta) and combined (both) biallelic knockout phenotype(s) in F0. Pictures of example larvae were taken at 2 dpf. (bottom) Unviability as percentage of 1-dpf embryos. (C) (left) Pictures of example elavl3:GCaMP6s larvae at 4 dpf. Left was uninjected; right was injected and displays the crystal phenotype. Pictures without fluorescence were taken with illumination from above to show the iridophores, or lack thereof. (right) Two-photon GCaMP imaging (z-projection) of the elavl3:GCaMP6s, crystal F0 larva shown on the left. (inset) Area of image (white box). See also Figure 4—video 1, Figure 4—video 2.
+
 We then assessed the feasibility of generating triple gene knockouts in F0 animals by directly recreating the fully pigmentless crystal mutant. crystal carries loss-of-function mutations in genes mitfa (Lister et al., 1999), mpv17 (D'Agati et al., 2017; White et al., 2008), and slc45a2 (Streisinger et al., 1986), which prevent respectively the development of melanophores, iridophores, and pigmented cells in the retinal pigment epithelium. The crystal mutant therefore lacks dark and auto-fluorescent pigments over the skin and eyes, making it useful for live imaging applications (Antinucci and Hindges, 2016). However, establishing a mutant allele or a transgene onto the crystal background takes months of breeding and genotyping, limiting its use. We therefore tested whether the crystal phenotype could be directly obtained in a transgenic line by targeting slc45a2, mitfa, and mpv17 in Tg(elavl3:GCaMP6s)a13203 (Kim et al., 2017) larvae, which express the calcium indicator GCaMP6s in post-mitotic neurons. We injected three sets of three RNPs, with each set targeting one gene. Targeting three genes simultaneously lowered viability by 4 dpf (50% of injected larvae were unviable). Nonetheless, 9/10 of viable larvae displayed the transparent crystal phenotype (Figure 4C left). The crystal F0 larvae expressing pan-neuronal GCaMP6s were suitable for live imaging under a two-photon microscope. The whole brain and the eyes could be effectively imaged in vivo at single-cell resolution (Figure 4C right, Figure 4—video 1, Figure 4—video 2). This included amacrine and ganglion cells in the retina, which are not normally accessible to imaging in other single-gene knockout lines routinely used for imaging, such as nacre (Lister et al., 1999), due to persistence of pigments in the retinal pigment epithelium (Antinucci and Hindges, 2016). The F0 knockout protocol rapidly produced crystal larvae directly in a transgenic line without the need for crossing.
 
-## Continuous traits, including behavioural, can be accurately quantified in F0 knockout animals
+### Continuous traits, including behavioural, can be accurately quantified in F0 knockout animals
 
 With some limited exceptions (Sunagawa et al., 2016), the F0 approach has been constrained to visible developmental phenotypes that can be assessed in individual animals. Continuous traits, for which phenotypic values vary within a continuous range, have rarely been studied using F0 knockouts due to concerns about the incomplete removal of wild-type alleles and diversity of null alleles within and across F0 animals. Both of these issues will potentially dilute the experimental pool with unaffected or variably affected animals, reducing the measurable effect size between experimental and control groups. This would make continuous traits less likely to be reliably detected in a population of F0 knockouts than in a population of stable line mutants, which will all harbour a single characterised mutation in every cell. We therefore tested whether F0 knockouts can recapitulate a variety of known loss-of-function continuous trait phenotypes in larval stages.
 
 We first asked whether a simple mutant behavioural phenotype could be observed in F0 knockouts. trpa1b encodes an ion channel implicated in behavioural responses to chemical irritants such as mustard oil (allyl isothiocyanate). While wild-type larvae show a robust escape response when exposed to this compound, trpa1bvu197 null mutants do not react strongly (Prober et al., 2008). We injected embryos with three RNPs targeting trpa1b and recorded the behavioural response of the F0 knockouts to mustard oil. To control for any non-specific effects of the injection procedure or presence of RNPs on behaviour, control larvae were injected with a set of three scrambled RNPs, which carry gRNAs with pseudo-random sequences predicted to not match any genomic locus. While scrambled-injected control larvae displayed an escape response when mustard oil was added to the water, most (19/22) trpa1b F0 knockout larvae failed to strongly respond (Figure 5A, Figure 5—video 1). Therefore, trpa1b F0 knockouts replicated the established stable trpa1bvu197 loss-of-function mutant behavioural phenotype.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig5-v2.jpg)
+
+**Figure 5.:** (A) Escape response to mustard oil in trpa1b F0 knockouts. (left) Activity (total Δ pixel/second) of scrambled controls and trpa1b F0 knockout larvae at 4 dpf. Pre: 3-min window before transfer to 1 µM mustard oil. Post: 3-min window immediately after. Traces are mean ± standard error of the mean (SEM). (right) Total activity (sum of Δ pixel/frame over the 3-min window) of individual larvae before and after transfer to 1 µM mustard oil. *** p < 0.001 (Δ total activity scrambled vs trpa1b F0); Welch’s t-test. (B) Circadian rhythm quantification in csnk1db F0 knockout larvae. (top) Timeseries (detrended and normalised) of bioluminescence from per3:luciferase larvae over five subjective day/night cycles (constant dark). Circadian time is the number of hours after the last Zeitgeber (circadian time 0 9 am, morning of 4 dpf). DMSO: 0.001% dimethyl sulfoxide; PF-67: 1 µM PF-670462. Traces are mean ± SEM. (bottom) Circadian period of each larva calculated from its timeseries. Black crosses mark the population means. ns, p = 0.825; * p = 0.024; *** p < 0.001; pairwise Welch’s t-tests with Holm’s p-value adjustment. See also Figure 5—video 1.
+
 Next, we tested whether a quantitative molecular phenotype could be accurately probed in a population of F0 knockouts generated by our approach. As in nearly all organisms, zebrafish physiology and behaviour are regulated by an internal circadian (24-hour) clock driven by transcription-translation feedback loops. The periodicity of this clock is in part regulated by the phosphorylation of the Period proteins, which constitutes a component of the negative arm of the feedback loop. Drugs and mutations that interfere with Casein Kinases responsible for this phosphorylation alter circadian period length (Lowrey et al., 2000; Price et al., 1998; Smadja Storz et al., 2013). We therefore targeted casein kinase 1 delta (csnk1db) in the Tg(per3:luc)g1 reporter line, which allows bioluminescence-based measurement of larval circadian rhythms (Kaneko and Cahill, 2005). The circadian period of control larvae injected with scrambled RNPs in constant dark conditions was 25.8 ± 0.9 hr, within the expected wild-type range (Kaneko and Cahill, 2005). In csnk1db F0 knockout animals, the circadian period was extended by 84 min to 27.2 ± 0.9 hr (Figure 5B). To demonstrate that this period lengthening was not due to non-specific or off-target effects, we measured the circadian period of larvae exposed to the pan-casein kinase inhibitor PF-670462. When PF-670462 was added to scrambled RNPs-injected larvae, the period increased more than 8 hr to 34.1 ± 0.9 hr. However, adding the inhibitor to the csnk1db F0 larvae did not further increase the period (34.3 ± 2.7 hr). Therefore, the phenotypic consequences of the casein-kinase inhibitor and csnk1db knockout are not additive, indicating that they influence circadian period length through the same target pathway. This experiment demonstrates that a quantitative molecular phenotype that unfolds over many days and in many tissues can be accurately detected in the population of F0 knockouts generated with our protocol.
 
 If the diversity of null alleles in F0 animals were to produce substantial phenotypic variation, quantitative differences in multi-parameter behaviours would be difficult to assess in populations of F0 knockouts. To test this, we targeted scn1lab, which encodes a sodium channel. In humans, loss-of-function mutations of its ortholog SCN1A are associated with Dravet syndrome, a rare and intractable childhood epilepsy (Anwar et al., 2019). In zebrafish, scn1lab homozygous null mutants display hyperpigmentation, seizures, and complex day-night differences in free-swimming behaviour (Baraban et al., 2013; Grone et al., 2017). As expected, all (91/91) scn1lab F0 knockouts were hyperpigmented (Figure 6A insert). We then video tracked the F0 larvae over multiple day-night cycles and compared the data to behavioural phenotypes collected from scn1labΔ44 mutant larvae. F0 knockouts and scn1labΔ44 homozygous null mutants had similar behavioural changes compared to their wild-type siblings. During the day, both F0 knockouts and scn1labΔ44 homozygotes spent less time active compared to wild types (all three experiments p < 0.001 by two-way ANOVA). At night, F0 knockouts and scn1labΔ44 homozygotes were as active as wild types initially, then showed a gradual ramping to hyperactivity (Figure 6A and Figure 6—figure supplement 1).
 
-To test whether scn1lab F0 knockouts also recapitulated finer, multi-parameter details of scn1labΔ44 mutant behaviour, we compared their locomotion across ten behavioural parameters describing down to sub-second scales the swimming bouts and pauses characteristic of larval zebrafish behaviour (Ghosh and Rihel, 2020) (see Materials and methods). To visualise these multi-dimensional traits, we calculated a behavioural fingerprint for each group, defined as the deviation of each mutant larva from its wild-type siblings across all parameters. This fingerprint was similar between F0 knockout larvae and scn1labΔ44 homozygotes (Figure 6B). The two clutches of scn1lab F0 knockouts had highly correlated behavioural fingerprints (r = 0.89), and each correlated well with the fingerprint of the scn1labΔ44 homozygotes (r = 0.86, r = 0.75). We then measured the Euclidean distance between each animal’s behavioural fingerprint and its paired wild-type mean. Unlike scn1labΔ44 heterozygous larvae, which do not display overt phenotypes, scn1labΔ44 homozygotes and both scn1lab F0 knockout clutches were significantly distant from their wild-type counterparts (Figure 6C). The F0 knockout larvae sit in average at greater distances from their wild-type siblings than stable knockout larvae. However, this difference was not significant when comparing effect sizes between experiments (stable knockout wild types vs stable knockout homozygotes: Cohen’s d = 1.57 is not significantly different than scrambled-injected controls vs F0 knockout larvae: d = 2.91 in F0 experiment 1, d = 2.57 in F0 experiment 2; respectively p = 0.18 and p = 0.27). Together, these results demonstrate that diversity of null alleles is not a barrier to measuring detailed mutant behavioural phenotypes in populations of F0 knockouts.
+![Figure 6.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig6-v2.jpg)
+
+**Figure 6.:** (A) Activity (total Δ pixel/second) of larvae across 2 days (14 hr each, white background) and two nights (10 hr each, grey background). Traces are mean ± SEM. (left) Stable scn1labΔ44 mutant line, from 5 to 7 dpf. The drops in activity in the middle of each day is an artefact caused by topping-up the water. (right) scn1lab F0 knockout, from 6 to 8 dpf. This replicate is called scn1lab F0 experiment 1 in B and C. (inset) Pictures of example scrambled-injected control and scn1lab F0 larvae at 6 dpf. (B) Behavioural fingerprints, represented as deviation from the paired wild-type mean (Z-score, mean ± SEM). 10 parameters describe bout structure during the day and night (grey underlay). Parameters 1–6 describe the swimming (active) bouts, 7–9 the activity during each day/night, and 10 is pause (inactive bout) length. (inset) Pairwise correlations (Pearson) between mean fingerprints. (C) Euclidean distance of individual larvae from the paired wild-type or scrambled-injected (scr) mean. Black crosses mark the population means. ns, p > 0.999; *** p < 0.001; pairwise Welch’s t-tests with Holm’s p-value adjustment. See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59683/elife-59683-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** This replicate is called scn1lab F0 experiment 2 in Figure 6C,D.
+
+To test whether scn1lab F0 knockouts also recapitulated finer, multi-parameter details of scn1labΔ44 mutant behaviour, we compared their locomotion across ten behavioural parameters describing down to sub-second scales the swimming bouts and pauses characteristic of larval zebrafish behaviour (Ghosh and Rihel, 2020) (see Materials and methods). To visualise these multi-dimensional traits, we calculated a behavioural fingerprint for each group, defined as the deviation of each mutant larva from its wild-type siblings across all parameters. This fingerprint was similar between F0 knockout larvae and scn1labΔ44 homozygotes (Figure 6B). The two clutches of scn1lab F0 knockouts had highly correlated behavioural fingerprints (r = 0.89), and each correlated well with the fingerprint of the scn1labΔ44 homozygotes (r = 0.86, r = 0.75). We then measured the Euclidean distance between each animal’s behavioural fingerprint and its paired wild-type mean. Unlike scn1labΔ44 heterozygous larvae, which do not display overt phenotypes, scn1labΔ44 homozygotes and both scn1lab F0 knockout clutches were significantly distant from their wild-type counterparts (Figure 6C). The F0 knockout larvae sit in average at greater distances from their wild-type siblings than stable knockout larvae. However, this difference was not significant when comparing effect sizes between experiments (stable knockout wild types vs stable knockout homozygotes: Cohen’s $d$ = 1.57 is not significantly different than scrambled-injected controls vs F0 knockout larvae: $d$ = 2.91 in F0 experiment 1, $d$ = 2.57 in F0 experiment 2; respectively p = 0.18 and p = 0.27). Together, these results demonstrate that diversity of null alleles is not a barrier to measuring detailed mutant behavioural phenotypes in populations of F0 knockouts.
 
 In summary, complex continuous traits, including behavioural phenotypes, can be rigorously measured directly in F0 animals. We demonstrated this by replicating in F0 knockouts the expected lack of escape response to a chemical irritant in trpa1b mutants, by recapitulating the predicted circadian clock phenotype when csnk1db is disrupted, and by phenocopying complex day-night differences in free-swimming behaviour in scn1lab loss-of-function mutants.
 
@@ -112,7 +162,7 @@ In summary, complex continuous traits, including behavioural phenotypes, can be 
 
 We have developed a simple and efficient CRISPR-Cas9 F0 knockout method in zebrafish by coupling multi-locus targeting with high mutagenesis at each locus. To validate gene targeting without the need for sequencing, we also adapted a simple headloop PCR method. The F0 knockout technique consistently converts > 90% of injected embryos into biallelic knockouts, even when simultaneously disrupting multiple genes in the same animal. These advances compress the time needed to obtain biallelic knockouts from months to hours, paving the way to large genetic screens of dynamic, continuously varying traits, such as behavioural phenotypes.
 
-## Design of F0 knockout screens
+### Design of F0 knockout screens
 
 Given the rapid pace at which genes are being associated to diseases by large sequencing projects, strategies to accelerate follow-up studies in animal models are vital for these associations to eventually inform therapeutic strategies. We share here some considerations for the design of F0 genetic screens in zebrafish.
 
@@ -128,13 +178,13 @@ The second round of injections generates the F0 knockouts used for phenotyping. 
 
 In screening situations in which every phenotyped animal is not genotyped, the reliability of the F0 method depends on the reliability of the injections. For instance, if some eggs were missed during injections, the F0 population would include a proportion of wild-type animals, which would reduce the effect size between the control and the experimental group and make the phenotype less likely to be detected. To evaluate how resilient phenotyping would be in such conditions, we used bootstrapping to simulate distributions where a gradually larger proportion of the F0 population are in fact wild-type animals. Power calculations on simulations derived from the trpa1b and csnk1db F0 knockout experimental data show that a single 96-well plate, i.e. sample sizes of 48 larvae in each group, is more than sufficient to detect mutant phenotypes at a power of 0.8 and a significance level of 0.05, even with a relatively low proportion of knockout animals in the F0 population (28 and 59%, respectively; Figure 7B). Therefore, the high efficacy and throughput of the F0 method allows one to discover phenotypes with robust statistical power.
 
-## F0 knockouts vs stable knockout line—diversity of null alleles
+### F0 knockouts vs stable knockout line—diversity of null alleles
 
 A key characteristic of the F0 knockout approach is the diversity of null alleles. The F0 mutants do not have a unique, definable genotype. This can be a shortcoming, for instance in disease modelling applications where a specific mutation needs to be reproduced. However, frequently the experimental goal is to assess the consequences of the lack of a specific protein, not the consequences of a specific allele. In this context, the diversity of null alleles in F0 knockouts may have some advantages over stable mutant lines. With CRISPR-Cas9, stable mutant lines are often generated by introducing a single frameshift mutation. However, the assumption that this leads to a complete loss of protein function is not infallible. For example, in a survey of 193 knockout lines in HAP1 cells, around one third still produced residual levels of the target protein, thanks in part to genetic compensatory mechanisms such as skipping of the mutated exon or translation from alternative start codons (Smits et al., 2019). Such compensation can allow production of a partially functional truncated protein. Exon skipping has also been documented in stable zebrafish knockout lines (Anderson et al., 2017; Lalonde et al., 2017). By creating a diverse array of mutations at three sites per gene, each on a separate exon wherever possible, such compensatory mechanisms are not likely to allow the production of a functional protein in the F0 knockouts. Furthermore, a given phenotype may differ between different null alleles (Chiavacci et al., 2017; Schuermann et al., 2015) or between different genetic backgrounds (Garrity et al., 2002; Sanders and Whitlock, 2003). The F0 knockout method generates a variety of null alleles and can be deployed directly on the progeny of wild-type animals of different backgrounds. Accordingly, we propose that a knockout phenotype detected in this genetically diverse population of animals is likely to be a robust and reproducible description of the impact caused by the absence of the protein, akin to reaching a synthesised conclusion after comparing stable knockout lines of different alleles and from different founder animals.
 
 Nevertheless, after screening, it is likely that stable knockout lines will need to be generated for more detailed and controlled studies. Directly raising the phenotyped F0 larvae may not be optimal as multi-locus targeting will result in complex genotypes. Instead, sequencing data, if available, can be used to select a gRNA that consistently generates high numbers of frameshift mutations. Furthermore, we have successfully used headloop PCR to detect mutations in tail clips from 48 to 72 hours post-fertilisation F1 embryos and sequenced the mutant haplotypes directly by Sanger sequencing. Embryos carrying mutant alleles could be identified within a single day, then grown directly into adults, thereby reducing drastically the number of fish that need to be raised and genotyped to generate a stable mutant line.
 
-## Other technical considerations for F0 knockouts
+### Other technical considerations for F0 knockouts
 
 Although unviability of injected larvae was not a limitation in our experiments, we observed some unviable embryos in the populations of F0 knockouts, similar to previous studies (Wu et al., 2018). While unviability was highly variable, even between replicates of the same experiment (e.g. Figure 1D vs Figure 1—figure supplement 1B), it may broadly correlate with the number of generated double-strand breaks. Indeed, developmental defects slightly increased when adding more Cas9 (Figure 1—figure supplement 1) and were always more frequent when targeting more loci (Figure 1C,D and Figure 4A,B). Moreover, unviability remained lower in scrambled RNP-injected embryos compared to F0 knockout siblings, likely excluding chemical toxicity unrelated to Cas9-induced double-strand breaks. A sound strategy to reduce the number of double-strand breaks, while maintaining high proportions of knockout alleles, would be to reduce the number of loci targeted. Machine learning tools can predict editing outcomes and indel frequencies in cell cultures based on target sequence and genomic context (Shen et al., 2018). Hence, it may be feasible to systematically apply the frameshift model (Figure 1B,E,F and Figure 2D) directly at the gRNA design stage using predicted mutations as input. This would allow the user to select specific gRNAs that are predicted to produce a high number of frameshift mutations.
 
@@ -142,19 +192,295 @@ We sequenced off-target loci and found that off-target effects are unlikely to b
 
 While multi-locus strategies like ours achieve high proportions of null alleles in F0 knockouts, they admittedly inflate both the number of potential off-target loci and number of double-strand breaks. This cost-benefit balance may be specific to the phenotype under investigation. For example, for a phenotype whose spatial variation is visible in individual animals (Watson et al., 2020), the mutation of one or two loci per gene may be a valuable strategy. However, the study of continuous traits, particularly behavioural ones, likely require consistently high proportions of null alleles. In this case, the mutation of three loci with synthetic gRNAs, as we demonstrate, offers a reasonable compromise.
 
-## Conclusion
+### Conclusion
 
 Building on published work (Hoshijima et al., 2019; Wu et al., 2018), we developed a simple and rapid zebrafish F0 knockout method using CRISPR-Cas9. By combining multi-locus targeting with high mutagenesis at each locus, the method converts the vast majority of wild-type or transgenic embryos directly into biallelic knockouts for any gene(s) of interest. We demonstrate that continuous traits, such as complex behavioural phenotypes, are accurately measured in populations of F0 knockouts. Cumulatively, methods like ours and pilot screens are establishing F0 knockouts as a revolutionary approach for large genetic screens in zebrafish.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>slc24a5</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000024771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>tyr</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000039077</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>mab21l2</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000015266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>tbx16</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000007329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>tbx5a</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000024894</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>ta (tbxta)</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000101576</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>slc45a2</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000002593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>mitfa</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000003732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>mpv17</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000032431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>trpa1b</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000031875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>csnk1db</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000006125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>scn1lab</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000062744</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(elavl3:GCaMP6s)a13203</td>
+      <td>PMID:28892088</td>
+      <td>ZFIN ID: ZDB-ALT-180502–2</td>
+      <td>Kim et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>mitfaw2 (nacre)</td>
+      <td>PMID:10433906</td>
+      <td>ZFIN ID: ZDB-ALT-990423–22</td>
+      <td>Lister et al., 1999</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(per3:luc)g1</td>
+      <td>PMID:15685291</td>
+      <td>ZFIN ID: ZDB-ALT-050225–2</td>
+      <td>Kaneko and Cahill, 2005</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(elavl3:EGFP)knu3</td>
+      <td>PMID:11071755</td>
+      <td>ZFIN ID: ZDB-ALT-060301–2</td>
+      <td>Park et al., 2000</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>mab21l2u517</td>
+      <td>PMID:32930361</td>
+      <td>mutant line</td>
+      <td>Wycliffe et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>scn1labΔ44</td>
+      <td>This study</td>
+      <td>mutant line</td>
+      <td>Available from Hoffman lab</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Alt-R CRISPR-Cas9 crRNAs</td>
+      <td>IDT</td>
+      <td></td>
+      <td>see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Alt-R CRISPR-Cas9 Negative Control crRNA #1</td>
+      <td>IDT</td>
+      <td>Catalog #: 1072544</td>
+      <td>see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Alt-R CRISPR-Cas9 Negative Control crRNA #2</td>
+      <td>IDT</td>
+      <td>Catalog #: 1072545</td>
+      <td>see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Alt-R CRISPR-Cas9 Negative Control crRNA #3</td>
+      <td>IDT</td>
+      <td>Catalog #: 1072546</td>
+      <td>see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Alt-R CRISPR-Cas9 tracrRNA</td>
+      <td>IDT</td>
+      <td>Catalog #: 1072532</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR primers</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td>see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Alt-R S.p. Cas9 Nuclease V3</td>
+      <td>IDT</td>
+      <td>Catalog #: 1081058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mustard oil (allyl isothiocyanate)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #: W203408</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Beetle luciferin</td>
+      <td>Promega</td>
+      <td>Catalog #: E1601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PF-670462</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #: SML0795</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ampliCan</td>
+      <td>PMID:30850374</td>
+      <td></td>
+      <td>bioconductor.org/packages/release/bioc/html/amplican.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioDare2</td>
+      <td>PMID:24809473</td>
+      <td></td>
+      <td>biodare2.ed.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZebraLab</td>
+      <td>ViewPoint Behavior Technology</td>
+      <td></td>
+      <td>viewpoint.fr/en/p/software/zebralab-zebrafish-behavior-screening</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB scripts for behaviour analysis: Vp_Extract.m and Vp_Analyse.m</td>
+      <td>PMID:32241874</td>
+      <td></td>
+      <td>Scripts included in the GitHub and Zenodo repositories (see Data/resource sharing)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R packages</td>
+      <td>CRAN</td>
+      <td></td>
+      <td>see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Command line packages</td>
+      <td>Conda</td>
+      <td></td>
+      <td>see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>MATLAB toolboxes</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td>see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R v3.6.2</td>
+      <td>CRAN</td>
+      <td></td>
+      <td>r-project.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB R2018a</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td>mathworks.com/products/matlab.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Adult zebrafish were reared by University College London’s Fish Facility on a 14 hr:10 hr light:dark cycle. To obtain eggs, pairs of males and females were isolated in breeding boxes overnight, separated by a divider. Around 9 am the next day, the dividers were removed and eggs were collected 7–8 min later. The embryos were then raised in 10-cm Petri dishes filled with fish water (0.3 g/L Instant Ocean) in a 28.5°C incubator on a 14 hr:10 hr light:dark cycle. Debris and dead or dysmorphic embryos were removed every other day with a Pasteur pipette under a bright-field microscope and the fish water replaced. At the end of the experiments, larvae were euthanised with an overdose of 2-phenoxyethanol (ACROS Organics). Experimental procedures were in accordance with the Animals (Scientific Procedures) Act 1986 under Home Office project licences PA8D4D0E5 awarded to Jason Rihel and PAE2ECA7E awarded to Elena Dreosti. Adult zebrafish were kept according to FELASA guidelines (Aleström et al., 2020).
 
 Wild types refer to AB × Tup LF fish. Throughout, F0 refers to embryos that were injected with gRNA/Cas9 RNPs at the single-cell stage. All experiments used wild-type progeny, except the crystal fish experiment, which used the progeny of an outcross of heterozygous Tg(elavl3:GCaMP6s)a13203/+ (Kim et al., 2017), mitfaw2/+ (nacre) (Lister et al., 1999) to wild type and the per3:luciferase (csnk1db) experiment, which used the progeny of a Tg(per3:luc)g1 (Kaneko and Cahill, 2005), Tg(elavl3:EGFP)knu3 (Park et al., 2000) homozygous incross.
 
-## Cas9/gRNA preparation
+### Cas9/gRNA preparation
 
 A protocol describing how to generate F0 knockout larvae for a single gene is available at dx.doi.org/10.17504/protocols.io.bfgyjjxw.
 
@@ -162,19 +488,19 @@ The protocol developed by Wu et al., 2018 served as a starting point. The key di
 
 The synthetic gRNA was made of two components which were bought separately from Integrated DNA Technologies (IDT): the crRNA (Alt-R CRISPR-Cas9 crRNA) and tracrRNA (Alt-R CRISPR-Cas9 tracrRNA).
 
-## crRNA selection
+#### crRNA selection
 
 The crRNA was the only component of the Cas9/gRNA ribonucleoprotein (RNP) which was specific to the target locus. IDT has a database of predesigned crRNAs for most annotated genes of the zebrafish genome (eu.idtdna.com). crRNAs for each target gene were ranked based on predicted on-target and off-target scores. Wherever possible, selected crRNAs targeted distinct exons, while proceeding down the list from the best predicted crRNA. RNPs were not tested for activity before experiments, with the exception of slc24a5 gRNA C which we identified as ineffective early during the development of the protocol.
 
 Sequences of the crRNAs and information about the targeted loci are provided in Supplementary file 1.
 
-## crRNA/tracrRNA annealing
+#### crRNA/tracrRNA annealing
 
 The crRNA and tracrRNA were received as pellets, which were individually resuspended in Duplex buffer (IDT) to form 200 μM stocks. Stocks were stored at −80°C before use.
 
 The crRNA was annealed with the tracrRNA to form the gRNA by mixing each crRNA of the set separately with an equal molar amount of tracrRNA and diluting to 57 μM in Duplex buffer. This was usually: 1 μL crRNA 200 μM; 1 μL tracrRNA 200 μM; 1.51 μL Duplex buffer, heated to 95°C for 5 min, then cooled on ice.
 
-## gRNA/Cas9 assembly
+#### gRNA/Cas9 assembly
 
 Pre-assembled RNPs composed of Cas9 protein and gRNA are more effective in zebrafish than using a combination of Cas9 mRNA and gRNA (Burger et al., 2016).
 
@@ -182,7 +508,7 @@ Cas9 protein was bought from IDT (Alt-R S.p. Cas9 Nuclease V3, 61 µM) and dilut
 
 For the experiments testing different ratios of Cas9 to gRNA (Figure 1—figure supplement 1), before assembly with gRNA, Cas9 was further diluted to final concentrations of 28.5 μM for a 1:2 ratio; 19 μM for 1:3; 9.3 μM for 1:6. Assembly with gRNA was then performed as above.
 
-## RNP pooling
+#### RNP pooling
 
 The three RNP solutions were pooled in equal amounts before injections. The concentration of each RNP was thus divided by three (9.5 µM each), leaving the total RNP concentration at 28.5 μM.
 
@@ -192,17 +518,17 @@ When targeting two genes simultaneously (Figure 4A,B), both three-RNP pools were
 
 The RNPs were usually kept overnight at −20°C before injections the following day.
 
-## Injections
+#### Injections
 
 Approximately 1 nL of the three-RNP pool was injected into the yolk at the single-cell stage before cell inflation. This amounts to around 28.5 fmol of RNP (28.5 fmol [4700 pg] of Cas9 and 28.5 fmol [1000 pg] of total gRNA). Each unique RNP is present in equal amounts in the pool. Therefore, in the case of three RNPs, 9.5 fmol of each RNP were co-injected.
 
 When targeting two genes simultaneously (Figure 4A,B), approximately 2 nL of the six-RNP mix were injected so the amount of RNP per gene would remain equal to when a single gene is targeted. Similarly, when targeting three genes for the crystal fish (Figure 4C), approximately 3 nL of the nine-RNP mix were injected.
 
-## scrambled RNPs
+#### scrambled RNPs
 
 For the experiments targeting trpa1b, csnk1db, or scn1lab, three scrambled crRNAs (Alt-R CRISPR-Cas9 Negative Control crRNA #1, #2, #3) were prepared into RNPs and injected following the same steps as above. Sequences of the scrambled crRNAs are provided in Supplementary file 1.
 
-## Phenotype scores
+### Phenotype scores
 
 In experiments targeting slc24a5 or tyr (Figure 1A,B and Figure 1—figure supplement 1), each animal was given a score from 1 to 5 based on its eye pigmentation at 2 dpf: score 5 if the eye was fully pigmented akin to wild types; 4 if it was mostly pigmented; 3 if approximately half the surface of the eye was pigmented; 2 if there were only one or two patches of pigmented cells; 1 if no pigmented cell could be detected. If the two eyes had substantially different pigmentation, the score of the darkest eye was recorded for that animal.
 
@@ -212,7 +538,7 @@ In the experiment targeting tbx5a (Figure 4A), both pectoral fins were inspected
 
 All scoring was done blinded to the condition.
 
-## Unviability
+### Unviability
 
 The percentage of unviable embryos was based on the total number of larvae that died or were dysmorphic (displaying developmental defects not associated with the expected phenotype) after 1 dpf. Unviable embryos at 0 dpf were excluded as they were likely either unfertilised eggs or eggs damaged by the needle. Common developmental defects included heart oedema, tail curvature, and absence of a swim bladder at 5 dpf. This death/dysmorphic count was divided by the total number of larvae at 1 dpf to get a percentage of unviable embryos. Percentage of unviable embryos in the uninjected or scrambled controls was usually zero or low (<9%). It was subtracted from the F0 unviability to account for only effects mediated by the mutagenic RNPs injection. For example, if 5% of the injected embryos died or were dysmorphic after 1 dpf, and 1% of the controls died, the unviability reported for the injected embryos was 4%.
 
@@ -222,67 +548,71 @@ As homozygous ta knockouts are lethal early in development (Halpern et al., 1993
 
 Unviable embryos were counted blinded to the condition.
 
-## Adult slc24a5 F0 fish
+### Adult slc24a5 F0 fish
 
 The slc24a5 F0 knockout larvae grown to adulthood (Figure 1G) were generated by injection of a three- set (slc24a5 gRNA A, B, D), and their lack of eye pigmentation was verified at 2 dpf.
 
-## crystal fish imaging
+### crystal fish imaging
 
 Progeny of an outcross of heterozygous Tg(elavl3:GCaMP6s)a13203/+, mitfaw2/+ (nacre) to wild type were injected with a pool of three sets of three RNPs, each set targeting one gene of mitfa, mpv17, and slc45a2. At 4 dpf, a GCaMP6s-positive crystal F0 fish and an uninjected control were mounted in 1% low melting point agarose (Sigma-Aldrich) in fish water. Pictures of the whole animal (Figure 4C left, pictures with fluorescence) were taken with an Olympus MVX10 microscope connected to a computer with the cellSens software (Olympus). A first picture was taken with white transillumination, then a second picture was taken with only 488 nm excitation light to visualise GCaMP6s fluorescence. Both pictures were then overlaid in ImageJ v1.51 (Schneider et al., 2012) with Image > Color > Merge channels. Pictures showing iridophores, or lack thereof (Figure 4C left, pictures without fluorescence), were taken with a Nikon SMZ1500 brightfield microscope with illumination from above the sample.
 
 The crystal F0 fish was imaged with a custom-built two-photon microscope: Olympus XLUMPLFLN 20× 1.0 NA objective, 580 nm PMT dichroic, bandpass filters: 501/84 (green), 641/75 (red) (Semrock), Coherent Chameleon II ultrafast laser. Imaging was performed at 920 nm with a laser power at sample of 8–10 mW. Images were acquired by frame scanning (10-frame averaging) with a z-plane spacing of 2 µm. Images were 1300 × 1300 pixels for the head stack (Figure 4C right and Figure 4—video 1) and 800 × 800 for the eye stack (Figure 4—video 2), both 0.38 × 0.38 µm pixel size. The image included in Figure 4C (right) is a maximum intensity z-projection of 10 frames of the head stack (Figure 4—video 1). Contrast and brightness were adjusted in ImageJ (Schneider et al., 2012).
 
-## Illumina MiSeq
+### Illumina MiSeq
 
 Throughout, deep sequencing refers to sequencing by Illumina MiSeq. For each gene, four injected larvae and one uninjected or scrambled RNPs-injected control larva were processed. For slc24a5, tyr, tbx16, tbx5a, ta, slc45a2, mitfa, mpv17, and scn1lab, injected larvae displaying the expected biallelic knockout phenotype were processed.
 
-## Genomic DNA extraction
+#### Genomic DNA extraction
 
 The larvae were anaesthetised and their genomic DNA extracted by HotSHOT (Meeker et al., 2007), as follows. Individual larvae were transferred to a 96-well PCR plate. Excess liquid was removed from each well before adding 50 μl of 1× base solution (25 mM KOH, 0.2 mM EDTA in water). Plates were sealed and incubated at 95°C for 30 min then cooled to room temperature before the addition of 50 μl of 1× neutralisation solution (40 mM Tris-HCL in water). Genomic DNA was then stored at 4°C.
 
-## PCR
+#### PCR
 
 Each PCR well contained: 7.98 µL PCR mix (2 mM MgCl2, 14 mM pH 8.4 Tris-HCl, 68 mM KCl, 0.14% gelatine in water, autoclaved for 20 min, cooled to room temperature, chilled on ice, then added 1.8% 100 mg/ml BSA and 0.14% 100 mM d[A, C, G, T]TP), 3 µL 5× Phusion HF buffer (New England Biolabs), 2.7 µL dH2O, 0.3 µL forward primer (100 µM), 0.3 µL reverse primer (100 µM), 0.12 µL Phusion High-Fidelity DNA Polymerase (New England Biolabs), 1.0 µL genomic DNA; for a total of 15.4 µL. The PCR plate was sealed and placed into a thermocycler. The PCR program was: 95°C – 5 min, then 40 cycles of: 95°C – 30 s, 60°C – 30 s, 72°C – 30 s, then 72°C – 10 min then cooled to 10°C until collection. The PCR product’s concentration was quantified with Qubit (dsDNA High Sensitivity Assay) and its length was verified on a 2.5% agarose gel with GelRed (Biotium). Excess primers and dNTPs were removed by ExoSAP-IT (ThermoFisher) following the manufacturer’s instructions. The samples were then sent for Illumina MiSeq, which used MiSeq Reagent Nano Kit v2 (300 Cycles) (MS-103–1001).
 
 Sequences and genomic positions of the PCR primers are provided in Supplementary file 1.
 
-## Illumina MiSeq data analysis
+### Illumina MiSeq data analysis
 
 Illumina MiSeq data was received as two fastq files for each well, one forward and one reverse. The paired-end reads were aligned to the reference amplicon with the package bwa v0.7.17 and the resulted bam alignment file was sorted and indexed with samtools v1.9 (Li et al., 2009). To keep only high-quality reads, any read shorter than 140 bp, with a Phred quality score below 40, or with more than 20% of its length soft-clipped were discarded from the bam file before analysis. Whenever necessary, bam alignment files were visualised with IGV v2.4.10. The resulting filtered bam file was converted back to a forward and a reverse fastq file using bedtools v2.27.1 (Quinlan and Hall, 2010). The filtered fastq files were used as input to the R package ampliCan (Labun et al., 2019), together with a csv configuration file containing metadata information about the samples. AmpliCan was run with settings min_freq = 0.005 (any mutation at a frequency below this threshold was considered as a sequencing error) and average_quality = 25; other parameters were left as default. AmpliCan detected and quantified mutations in the reads and wrote results files that were used for subsequent analysis. Reads from uninjected or scrambled-injected controls were used to normalise the mutation counts, i.e. any mutation present in the control embryo was not counted as a Cas9-induced mutation in the injected ones. Downstream of ampliCan, any samples with less than 30× paired-end (60× single-read) coverage were excluded from further analysis.
 
 Figure 2A plots the proportion of mutated reads and the proportion of reads with a frameshift mutation at each locus, as computed by ampliCan. If a read contained multiple indels, ampliCan summed them to conclude whether the read had a frameshift mutation or not. This frameshift prediction may be inaccurate in some rare cases where an indel was in an intron or disrupts an exon/intron boundary.
 
-## Probability of knockout by frameshift
+#### Probability of knockout by frameshift
 
 There may be cases where an indel at a downstream locus restored the correct frame, which had been shifted at one of the upstream targets. The model of biallelic knockout by frameshift (Figure 1B) assumes this situation also lead to a knockout.
 
-## Proportion of frameshift alleles
+#### Proportion of frameshift alleles
 
-The following refers to Figure 1E,F and Figure 2D. If a single locus is targeted, the proportion of frameshift alleles (pshift) was equal to the proportion of reads with a frameshift mutation, as counted by ampliCan in the MiSeq data. If only the first locus is targeted, the proportion of non-frameshift alleles is equal to the proportion of reads that did not have a frameshift mutation at this locus (either not mutated or total indel was of a length multiple of three), pnotshift1. If a second locus is targeted, proportion of frameshift alleles so far is pshift1→2=1−pshift2×pnotshift1, and proportion of non-frameshift alleles so far is pnotshift1→2=1− pshift1→2, and so on. At locus l;(1)pshiftl=1−pshiftl−1 ×pnotshift1→l
+The following refers to Figure 1E,F and Figure 2D. If a single locus is targeted, the proportion of frameshift alleles ($p_{shift}$) was equal to the proportion of reads with a frameshift mutation, as counted by ampliCan in the MiSeq data. If only the first locus is targeted, the proportion of non-frameshift alleles is equal to the proportion of reads that did not have a frameshift mutation at this locus (either not mutated or total indel was of a length multiple of three), $p_{notshift_{1}}$. If a second locus is targeted, proportion of frameshift alleles so far is $p_{shift_{1→2}}=1−p_{shift_{2}}\timesp_{notshift_{1}}$, and proportion of non-frameshift alleles so far is $p_{notshift_{1→2}}=1− p_{shift_{1→2}}$, and so on. At locus $l$;
+
+$$
+p_{shift_{l}}=1−p_{shift_{l−1} }\timesp_{notshift_{1→l}}
+$$
 
 This was done for each animal individually.
 
-The order of the loci at each gene (locus 1, 2, …, l in Equation 1) follows the ranking of crRNAs in IDT’s database, i.e. the alphabetical order of the locus names in Figure 2A.
+The order of the loci at each gene (locus $1, 2, …, l$ in Equation 1) follows the ranking of crRNAs in IDT’s database, i.e. the alphabetical order of the locus names in Figure 2A.
 
-Equation 1 assumes that genotypes at each locus of the allele were randomly assigned, i.e. that finding indel x at the first locus does not make it more or less likely to find indel y at the second locus of the same allele. While mutations at each locus may be independent events initially, some alleles might be disproportionately replicated across cell divisions, therefore it is an approximation. Equation 1 also assumes that reads at each locus were randomly sampled from the pool of alleles.
+Equation 1 assumes that genotypes at each locus of the allele were randomly assigned, i.e. that finding indel $x$ at the first locus does not make it more or less likely to find indel $y$ at the second locus of the same allele. While mutations at each locus may be independent events initially, some alleles might be disproportionately replicated across cell divisions, therefore it is an approximation. Equation 1 also assumes that reads at each locus were randomly sampled from the pool of alleles.
 
-## Comparisons of mutations between samples
+#### Comparisons of mutations between samples
 
 This refers to Figure 2B. Reads from control larvae were not used in this analysis. From each sample, the top 10 most frequent indels were extracted. Any sample with less than 10 indels in total was discarded for this analysis. Pairwise intersections were then performed between each sample’s top 10, each time counting the number of common indels, defined as having the same start and end positions, the same type (deletion or insertion) and in the case of insertion, the same inserted sequence. Positions are given by ampliCan in relation to the protospacer adjacent motif (PAM) position, which is set at 0. The results were then grouped whether the intersection was performed between two samples from different loci (e.g. slc24a5, locus D, fish 1 vs csnk1db, locus A, fish 4; n = 6286 intersections) or two samples from the same locus but different fish (e.g. slc24a5, locus D, fish one vs slc24a5, locus D, fish 4; n = 155 intersections).
 
-## Probability of indel lengths
+#### Probability of indel lengths
 
 This refers to Figure 2C. Reads from control larvae were not used in this analysis. Only unique mutations in each sample were considered here. Duplicates were defined as any indel from the same sample, at the same positions, of the same length and type (insertion or deletion), and in the case of insertion with the same inserted sequence. This was to control as far as possible for coverage bias, i.e. the mutations from a sample with a particularly high coverage would be over-represented in the counts. Considering only unique mutations approximated the probability of each indel length after a double-strand break repair event. For example, a mutation occurring early, for instance at the two-cell stage, would then be replicated many times across cell divisions. The proportion of such a mutation in the final dataset would be high but would not necessarily reflect how likely this indel length was to occur during the repair of the Cas9-induced double-strand break. The counts of unique mutations from all samples were pooled then tallied by length. The frequencies in Figure 2C are the proportions of unique indels of these lengths in the final dataset. There is likely a modest bias against large indels, as they may be missed by the short MiSeq reads or may disrupt a PCR primer binding site and therefore not be amplified. Conversely, the frequency of the larger deletions may be slightly over-estimated due to PCR length bias (Dabney and Meyer, 2012).
 
-## Positions of deleted nucleotides
+#### Positions of deleted nucleotides
 
 This refers to Figure 2—figure supplement 1. Reads from control larvae were not used in this analysis. Only unique deletions in each sample were considered here. For each indel, ampliCan provides the start and end positions in relation to the PAM position, i.e. the PAM nucleotide adjacent to the gRNA binding site is set at 0. If the gRNA binding site is on the positive strand, negative positions are on the 5'-side of the first PAM nucleotide and positive positions to the 3'-side of the first PAM nucleotide. If the gRNA binding site is on the negative strand, negative positions are on the 3'-side of the first PAM nucleotide and positive positions to the 5'-side of the first PAM nucleotide.
 
-## Sanger sequencing
+### Sanger sequencing
 
 Sanger sequencing was performed to detect large deletions between targeted loci of slc24a5 (Figure 2E). The same PCR primers as for MiSeq were used but were selected to amplify the whole region either between the first and second loci (B to D), or the second and third (D to A), or the first and third (B to A). Each PCR well contained: 9.4 µL PCR mix (as described above), 0.25 µL forward primer (100 µM), 0.25 µL reverse primer (100 µM), 0.1 µL Taq DNA polymerase (ThermoFisher), 1 µL genomic DNA (same lysates as used for Illumina MiSeq); for a total of 11 µL. PCR program was: 95°C – 5 min, then 40 cycles of: 95°C – 30 s, 60°C – 30 s, 72°C – 2 min, then 72°C – 10 min and cooled to 10°C until collection. The PCR product was verified on a 1% agarose gel by loading 2.5 µL of PCR product with 0.5 µL of loading dye (6×), with 2.5 µL of 100 bp DNA ladder (100 ng/µL, ThermoFisher) ran alongside. PCR products were then purified with the QIAquick PCR Purification Kit (Qiagen) and their concentrations were quantified with Qubit (dsDNA High Sensitivity Assay). Samples were sent to Source Bioscience for Sanger sequencing. Sanger traces in ab1 format were aligned to the reference amplicon by MAFFT v7 (Katoh and Standley, 2013) ran through Benchling (benchling.com). Traces included in Figure 2D were exported from Benchling.
 
-## Headloop PCR
+### Headloop PCR
 
 Headloop PCR (Rand et al., 2005) was adapted to test for gRNA activity at target loci by suppressing wild-type haplotype amplification. This was achieved by adding a 5′ tag to a primer that contained the reverse complement of the target sequence. After second strand elongation, the headloop tag is able to bind to the target sequence in the same strand, directing elongation and formation of a stable hairpin. If the target sequence is mutated, the headloop tag cannot bind and the amplicon continues to be amplified exponentially. Assessment of the headloop PCR products on an agarose gel was sufficient to determine if a target locus had been efficiently mutated in F0 embryos.
 
@@ -296,17 +626,17 @@ To calculate the headloop PCR score (Figure 3—figure supplement 1), the gels w
 
 For detection of the small deletion in genes apoea and cd2ap (Figure 3—figure supplement 2), the headloop and standard PCR reactions were performed as above, except for the PCR amplifying apoea, which needed 35 cycles to obtain a robust signal on an agarose gel. PCR products were then sent to Source Bioscience for Sanger sequencing. Sanger traces were manually inspected for mixed peaks at the mutated locus. Traces included in Figure 3—figure supplement 2 were exported from Benchling.
 
-## Mustard oil assay
+### Mustard oil assay
 
 trpa1b F0 knockouts were generated as described above. At 4 dpf, 10 trpa1b F0 knockout and 10 scrambled-injected control larvae were placed into the lids of two 35-mm Petri dishes filled with 7.5 mL of fish water. After a few minutes, 5 mL of 1 µM mustard oil (allyl isothiocyanate, Sigma-Aldrich) were added to the dishes with a Pasteur pipette (final concentration 0.66 µM) and left for a few minutes to observe the response. Figure 5—video 1 was recorded with a custom-built behavioural setup described previously (Dreosti et al., 2015).
 
 For quantification (Figure 5A), 24 trpa1b F0 knockout and 24 scrambled-injected control larvae were placed in individual wells of a mesh-bottom 96-well plate (Merck), with the receiver plate filled with fish water. After a few minutes, the mesh-bottom plate was transferred to a second receiver plate filled with 1 µM mustard oil and left for a few minutes to observe the response. Tracking was performed by a ZebraBox (ViewPoint Behavior Technology), as described below (see Behavioural video tracking). Upon inspection of the video, three larvae (2 trpa1b F0 and 1 scrambled-injected larvae) were excluded from subsequent analysis because a bubble had formed in the mesh-bottom of the wells. The activity trace (Figure 5A) was smoothed with a 60-second rolling average.
 
-## per3:luciferase assay
+### per3:luciferase assay
 
 Progeny of a homozygous Tg(per3:luc)g1, Tg(elavl3:EGFP)knu3 incross (Kaneko and Cahill, 2005) were injected at the single-cell stage with RNPs targeting csnk1db. At 4 dpf, using a P1000 pipet set at 150 μL with a tip whose end was cut-off, individual larvae were transferred to a white 96-round well plate (Greiner Bio-One). No animals were added in the last two columns of wells to serve as blanks. 50 mM (100×) Beetle luciferin (Promega) in water was mixed with 0.1% DMSO in water or 0.1 mM PF-670462 (Sigma-Aldrich) in DMSO to obtain a 4× luciferin/4 μM PF-670462 or 4× luciferin/0.004% DMSO solution. 50 μL of this solution was added on top of each well. Blank wells were topped with the luciferin/DMSO solution. Final concentrations in the wells were: luciferin 0.5 mM; DMSO 0.001%; PF-670462 1 µM. The plate was sealed and transferred to a Packard NXT Topcount plate reader (Perkin Elmer). Recording was performed in constant dark during 123 hr, starting around 12 noon the first day, or CT3, i.e. 3 hr after the last Zeitgeber. Temperature in the room was 25–28°C.
 
-## Circadian data analysis
+### Circadian data analysis
 
 The light intensity emitted from each well was collected by the Topcount plate reader every 9.92 min in counts-per-second (cps). After formatting the raw Topcount data in R, the data were imported in BioDare2 (https://biodare2.ed.ac.uk/) (Zielinski et al., 2014). The average light level from the blank wells was used for background subtraction. Six larvae (1 scrambled + DMSO, 4 csnk1db F0 + DMSO, 1 csnk1db F0 + PF-670462) were excluded for subsequent analysis; five upon inspection of the timeseries because their traces showed sudden changes in amplitude or dampened cycling and one because no satisfactory fit could be found during period analysis (see below).
 
@@ -316,33 +646,33 @@ The FFT NLLS algorithm fitted a cosine to the timeseries and extracted from the 
 
 After period analysis, BioDare2’s amplification and baseline detrending and normalisation to the mean were applied to the timeseries. The detrended and normalised timeseries were exported from BioDare2 and plotted in R (Figure 5B top). Traces were smoothed with a 20-data point (~ 198 min) rolling average and were artificially spread over the Y axis so they would not overlap.
 
-## scn1lab stable knockout line
+### scn1lab stable knockout line
 
 The scn1labΔ44 stable knockout line was generated using zinc-finger nucleases (ZFNs). A CompoZr ZFN was designed by Sigma-Aldrich to target exon 4 of scn1lab. CompoZr ZFN contained a DNA-binding domain and an obligate-heterodimer Fok1 nuclease domain, engineered for improved specificity (Miller et al., 2007). Activity of ZFN pairs as determined by the yeast MEL-1 reporter assay (Doyon et al., 2008) was 113.6%. ZFNs were prepared and used as previously described (Hoffman et al., 2016). We confirmed by Sanger sequencing the presence of a 44-nucleotide deletion in scn1lab exon 4 (chr6:10,299,906–10,299,949) and two SNPs: T>A at chr6:10,299,903 and T>C at chr6:10,299,904 (danRer11). The deletion includes the intron/exon four boundary.
 
 ZFNs binding sequences and sequences of the PCR primers used for sequencing and genotyping are provided in Supplementary file 1.
 
-## Behavioural video tracking
+### Behavioural video tracking
 
 For the F0 scn1lab knockout experiments (Figure 6 and Figure 6—figure supplement 1), wild-type embryos from two separate clutches were injected at the single-cell stage with RNPs targeting scn1lab. At 5 dpf, individual larvae were transferred to the wells of clear 96-square well plates (Whatman). To avoid any potential localisation bias during the tracking, conditions were alternated between columns of the 96-well plates. The plates were placed into two ZebraBoxes (ViewPoint Behavior Technology). From each well we recorded the number of pixels that changed intensity between successive frames. This metric, which we term Δ pixels, describes each animal’s behaviour over time as a sequence of zeros and positive values, denoting if the larva was still or moving. Tracking was performed at 25 frames per second on a 14 hr:10 hr light:dark cycle with the following ViewPoint parameters: detection sensitivity = 20, burst = 100, freezing = 3. Larvae were tracked for around 65 hr, generating sequences of roughly 5,850,000 Δ pixel values per animal. The day light level was calibrated at 125 μW with a Macam PM203 Optical Power Meter set at 555 nm. Evaporated water was replaced both mornings shortly after 9 am. At the end of the tracking, any larva unresponsive to a light touch with a P10 tip was excluded from subsequent analysis.
 
 For the scn1lab stable knockout line experiment (Figure 6A), larvae were the progeny of a scn1lab+/Δ44 (heterozygous) incross. Behavioural tracking was performed as above, with the following amendments: the experiment started at 4 dpf; recording was performed at 15 frames per second; evaporated water was replaced both days around 2 pm, which created an artefactual drop followed by a peak in activity (Figure 6A).
 
-## Behavioural data analysis
+### Behavioural data analysis
 
-Behavioural data were processed and analysed as previously described (Ghosh and Rihel, 2020). In brief, the raw file generated by the ZebraLab software (ViewPoint Behavior Technology) was exported into thousands of xls files each containing 50,000 rows of data. These files, together with a metadata file labelling each well with a condition, were input to the MatLab scripts Vp_Extract.m and Vp_Analyse.m (included in the GitHub and Zenodo repositories). To visualise larval activity over time, we summed Δ pixel changes into one-second bins and plotted the mean and standard error of the mean across larvae, smoothed with a 15-min rolling average. We considered the first day and night as a habituation period, and cropped these from all timeseries. For the scn1lab stable knockout line, the traces start at 9 am (lights on, ZT0) of 5 dpf (Figure 6A). For the scn1lab F0 knockout experiments, the traces start at 9 am of 6 dpf (Figure 6A and Figure 6—figure supplement 1). To quantify differences in behaviour between genotypes, we extracted 10 day and night behavioural parameters per larva: (1) active bout length (seconds); (2) active bout mean (Δ pixels); (3) active bout standard deviation (Δ pixels); (4) active bout total (Δ pixels); (5) active bout minimum (Δ pixels); (6) active bout maximum (Δ pixels); (7) number of active bouts; (8) total time active (%); (9) total activity (Δ pixels); and (10) inactive bout length (seconds). To compare F0 and stable line scn1lab mutant behaviour, we calculated the deviation (Z-score) of each mutant from their wild-type siblings across all parameters. We term these vectors behavioural fingerprints. We compared fingerprints across groups using both Pearson correlation and the Euclidean distance between each larva and its mean wild-type sibling fingerprint (Figure 6A). The statistical test used to compare effect sizes is a Z-test used for comparing two studies in meta-analysis (Borenstein et al., 2009). As a control, in the stable knockout experiment, the effect size between wild types and heterozygotes (Cohen’s d = 0.28) was significantly different (p = 0.04) than the effect size between wild types and homozygotes (Cohen’s d = 1.57).
+Behavioural data were processed and analysed as previously described (Ghosh and Rihel, 2020). In brief, the raw file generated by the ZebraLab software (ViewPoint Behavior Technology) was exported into thousands of xls files each containing 50,000 rows of data. These files, together with a metadata file labelling each well with a condition, were input to the MatLab scripts Vp_Extract.m and Vp_Analyse.m (included in the GitHub and Zenodo repositories). To visualise larval activity over time, we summed Δ pixel changes into one-second bins and plotted the mean and standard error of the mean across larvae, smoothed with a 15-min rolling average. We considered the first day and night as a habituation period, and cropped these from all timeseries. For the scn1lab stable knockout line, the traces start at 9 am (lights on, ZT0) of 5 dpf (Figure 6A). For the scn1lab F0 knockout experiments, the traces start at 9 am of 6 dpf (Figure 6A and Figure 6—figure supplement 1). To quantify differences in behaviour between genotypes, we extracted 10 day and night behavioural parameters per larva: (1) active bout length (seconds); (2) active bout mean (Δ pixels); (3) active bout standard deviation (Δ pixels); (4) active bout total (Δ pixels); (5) active bout minimum (Δ pixels); (6) active bout maximum (Δ pixels); (7) number of active bouts; (8) total time active (%); (9) total activity (Δ pixels); and (10) inactive bout length (seconds). To compare F0 and stable line scn1lab mutant behaviour, we calculated the deviation (Z-score) of each mutant from their wild-type siblings across all parameters. We term these vectors behavioural fingerprints. We compared fingerprints across groups using both Pearson correlation and the Euclidean distance between each larva and its mean wild-type sibling fingerprint (Figure 6A). The statistical test used to compare effect sizes is a Z-test used for comparing two studies in meta-analysis (Borenstein et al., 2009). As a control, in the stable knockout experiment, the effect size between wild types and heterozygotes (Cohen’s $d$ = 0.28) was significantly different (p = 0.04) than the effect size between wild types and homozygotes (Cohen’s $d$ = 1.57).
 
-## Sample size simulations
+### Sample size simulations
 
-This refers to Figure 7B. For trpa1b, each larva’s response to mustard oil was first summarised as the difference between the total activity (sum of Δ pixels/frame) during the first 3 min of exposure to mustard oil and the total activity during the 3 min just before switching the plates. Upon inspection of the density plots of these delta values, 3 trpa1b F0 animals that responded like scrambled controls and 1 scrambled control that did not respond to mustard oil (Figure 5A) were excluded to fit idealised normal distributions. For csnk1db, the values were the individual period lengths of the larvae treated with DMSO (scrambled + DMSO and csnk1db F0 + DMSO). The means and standard deviations of the resulting scrambled and knockout groups were used to fit normal distributions. At each simulation, 100 F0 knockout and 100 scrambled larvae were simulated. At the first simulation, the 100 values (delta activity or period lengths) of the F0 knockout group were randomly sampled from the scrambled normal distribution, simulating an experiment where all F0 eggs were missed during injections and are thus wild types (0% success rate). At the second simulation, 99 values of the F0 knockout group were randomly sampled from the scrambled normal distribution and 1 value was randomly sampled from the knockout normal distribution, simulating a 1% success rate at injections. As simulations progressed, more knockout larvae were gradually added to the F0 group, simulating improving success rates at injections. The simulations ended at the 101th iteration, where the 100 delta values of the F0 knockout group are sampled from the knockout distribution, simulating an ideal experiment where all the larvae in the F0 knockout group are biallelic knockouts (100% success rate). In all the 101 simulations, the data of the scrambled group were sampled every time from the scrambled distribution. At each simulation, Cohen’s d effect size was calculated then used to compute the minimum sample size for detection at 0.05 significance level and 0.8 statistical power. As simulations progressed, the F0 knockout and scrambled data gradually had less overlap, hence increasing effect size and decreasing the minimum sample size needed to detect the phenotype. The 101 simulations were iterated 10 times to produce error bars.
+This refers to Figure 7B. For trpa1b, each larva’s response to mustard oil was first summarised as the difference between the total activity (sum of Δ pixels/frame) during the first 3 min of exposure to mustard oil and the total activity during the 3 min just before switching the plates. Upon inspection of the density plots of these delta values, 3 trpa1b F0 animals that responded like scrambled controls and 1 scrambled control that did not respond to mustard oil (Figure 5A) were excluded to fit idealised normal distributions. For csnk1db, the values were the individual period lengths of the larvae treated with DMSO (scrambled + DMSO and csnk1db F0 + DMSO). The means and standard deviations of the resulting scrambled and knockout groups were used to fit normal distributions. At each simulation, 100 F0 knockout and 100 scrambled larvae were simulated. At the first simulation, the 100 values (delta activity or period lengths) of the F0 knockout group were randomly sampled from the scrambled normal distribution, simulating an experiment where all F0 eggs were missed during injections and are thus wild types (0% success rate). At the second simulation, 99 values of the F0 knockout group were randomly sampled from the scrambled normal distribution and 1 value was randomly sampled from the knockout normal distribution, simulating a 1% success rate at injections. As simulations progressed, more knockout larvae were gradually added to the F0 group, simulating improving success rates at injections. The simulations ended at the 101th iteration, where the 100 delta values of the F0 knockout group are sampled from the knockout distribution, simulating an ideal experiment where all the larvae in the F0 knockout group are biallelic knockouts (100% success rate). In all the 101 simulations, the data of the scrambled group were sampled every time from the scrambled distribution. At each simulation, Cohen’s $d$ effect size was calculated then used to compute the minimum sample size for detection at 0.05 significance level and 0.8 statistical power. As simulations progressed, the F0 knockout and scrambled data gradually had less overlap, hence increasing effect size and decreasing the minimum sample size needed to detect the phenotype. The 101 simulations were iterated 10 times to produce error bars.
 
-## Pictures
+### Pictures
 
 Pictures of embryos in Figure 1C,D,H,I; Figure 4A,B; Figure 6A; Figure 1—figure supplement 1 were taken with an Olympus MVX10 microscope connected to a computer with the software cellSens (Olympus). A black outline was added around the embryos in Figure 4A,B.
 
 Pictures of slc24a5 F0 adults (Figure 1G) were taken with a Canon 650D with a Sigma 30 mm f/1.4 DC HSM lens.
 
-## Statistics
+### Statistics
 
 Threshold for statistical significance was 0.05. In figures, ns refers to p > 0.05, * to p ≤ 0.05, ** to p ≤ 0.01, *** to p ≤ 0.001. In text, data distributions are reported as mean ± standard deviation, unless stated otherwise.
 
@@ -356,13 +686,13 @@ To compare the activity of scn1lab knockouts (F0 or stable) with their wild-type
 
 In Figure 6C, the Euclidean distances were first compared by a one-way ANOVA, then the values from each group were compared to one another by pairwise Welch’s t-tests with Holm’s p-value adjustment method.
 
-## Software
+### Software
 
 Data analysis was performed in R v3.6.2 ran through RStudio v1.2.5033 and MATLAB R2018a (MathWorks). Figures were prepared with Adobe Illustrator CC 2018 and assembled with Adobe InDesign CC 2018. Figure 4—videos 1 and 2 and Figure 5—video 1 were trimmed and annotated with Adobe Premiere Pro CC 2019.
 
 R, MatLab, and command line packages used throughout this study are listed in Supplementary file 2.
 
-## Data/resource sharing
+### Data/resource sharing
 
 Data and code are available at https://github.com/francoiskroll/f0knockout (Kroll, 2020; copy archived at swh:1:rev:6d7db3aa702a5bad79fe36a800163e3f76705c4f) and on Zenodo at https://doi.org/10.5281/zenodo.3898915.
 

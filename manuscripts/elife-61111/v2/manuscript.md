@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Subcellular lumen formation by single-cells involves complex cytoskeletal remodelling. We have previously shown that centrosomes are key players in the initiation of subcellular lumen formation in Drosophila melanogaster , but not much is known on the what leads to the growth of these subcellular luminal branches or makes them progress through a particular trajectory within the cytoplasm. Here, we have identified that the spectraplakin Short-stop (Shot) promotes the crosstalk between MTs and actin, which leads to the extension and guidance of the subcellular lumen within the tracheal terminal cell (TC) cytoplasm. Shot is enriched in cells undergoing the initial steps of subcellular branching as a direct response to FGF signalling. An excess of Shot induces ectopic acentrosomal luminal branching points in the embryonic and larval tracheal TC leading to cells with extra-subcellular lumina. These data provide the first evidence for a role for spectraplakins in single-cell lumen formation and branching.
+Subcellular lumen formation by single-cells involves complex cytoskeletal remodelling. We have previously shown that centrosomes are key players in the initiation of subcellular lumen formation in Drosophila melanogaster, but not much is known on the what leads to the growth of these subcellular luminal branches or makes them progress through a particular trajectory within the cytoplasm. Here, we have identified that the spectraplakin Short-stop (Shot) promotes the crosstalk between MTs and actin, which leads to the extension and guidance of the subcellular lumen within the tracheal terminal cell (TC) cytoplasm. Shot is enriched in cells undergoing the initial steps of subcellular branching as a direct response to FGF signalling. An excess of Shot induces ectopic acentrosomal luminal branching points in the embryonic and larval tracheal TC leading to cells with extra-subcellular lumina. These data provide the first evidence for a role for spectraplakins in single-cell lumen formation and branching.
 
 ## Introduction
 
@@ -34,9 +34,17 @@ In the present study, we uncover a novel role for the spectraplakin Shot in subc
 
 ## Results
 
-## Loss of shot causes defects in de novo subcellular lumen formation
+### Loss of shot causes defects in de novo subcellular lumen formation
 
 Shot is expressed during Drosophila development in several tissues such as the epidermis, the midgut primordia, the trachea and the nervous system (Lee and Kolodziej, 2002a; Röper and Brown, 2003). We began by analysing the effect of shot LOF during TC subcellular lumen formation. To do so, we analysed dorsal (DB) and ganglionic branch (GB) TCs at late stages of embryogenesis (st.15/16) (Figure 1A,B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig1-v2.jpg)
+
+**Figure 1.:** (A–B) Representation of dorsal and ganglionic TCs from embryonic st.15 to st.16 (DB and GB in grey, TC in pink). At st.15, the TC (cytoplasm in pink, nucleus in yellow, basal membrane in grey, apical membrane in blue and lumen in white) emits filopodia in the direction of cell elongation; apical membrane grows in the same direction giving rise to the outline of the subcellular lumen. At the same time the subcellular lumen is filled of chitin (white). At the end of st.16 the TC is elongated and the subcellular lumen is formed. (C–D) DBs at st.15 of btl >srcGFP (control) and shot3; btl >srcGFP fixed embryos stained with GFP to visualise tracheal cells, green in C and D, grey in C’’ and D’’, CBP to visualise the lumen, white in C and D black in C’ and D’ and DSRF in magenta. Anterior side is on the left and dorsal is up, scale bars 5 μm. (E) Quantification of total defective TCs in btl >shotRNAi (60%), shot3 (62.5%) and wt (2.25%) n = 20 embryos, 400TCs. Error bars are ± SEM and asterisks represent a p-value<0001. Statistics by two-tailed Student’s t-test. (F–K) DBs (F-J dorsal view) and GBs (G-K ventral view) of fixed embryos stained with anti-Gasp antibody at st.16 of wt (F and G), shot3 (H and I) and btl >shotRNAi (J and K) (L) Quantification of total TCs (genotype indicated) without subcellular lumen (wt 1.34% n = 400, shot3 25% n = 400, btl >shotRNAi 20%n = 300). *** p-value<0001. Statistics by two-tailed Student’s t-test. Scale bars 10 µm. (M–N) Different types of TC mutant phenotypes were produced in absence of Shot as observed in detail by confocal microscopy. (M) Dorsal branches of btl >srcGFP control and shot3 embryos stained with GFP (grey) to visualise membrane and CBP (in magenta) to visualise the lumen. Anterior side is on the left and dorsal side is up. Scale bars 5 μm. (I) TC partially elongated with formed lumen but with wrong directionality (52%); (II) the elongation was stopped prematurely and a primordium of subcellular lumen was formed (12%); (III) the cell elongated partially but the lumen was completely absent (16%); and (IV) the cell was not able to elongate and the lumen was completely absent (20%). Types III and IV were quantified in L as TCs without lumen. (E) Detailed quantification, by confocal microscopy, of the different types of TC mutant phenotypes reported as I-IV (n = 25 TCs).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Dorsal TCs from embryos btl >bazYFP control (A) and shot3 mutant (B–D) stained with anti-GFP antibody to detect bazooka/Par3 accumulation. In cases in which shot3 TC is partially elongated and the lumen is formed, no strong defects in apical membrane deposition are detected (B), instead when shot3 TCs are not elongated and the lumen is not formed (C and D), Bazooka/Par3 is scattered and disorganised, suggesting defects in membrane delivery. Anterior side is on the left and dorsal midline is up. The shape of TC is highlighted in white. Scale bars 5 μm.
 
 The shot3 null mutant TC phenotype consisted in subcellular lumen elongation defects with a penetrance of 100% per embryo (n = 40) and 62.5% per TC (n = 400) (Figure 1C,D and F–I and E). Of the total mutant TCs analysed, 25% did not develop a subcellular lumen (n = 600, Figure 1L). This phenotype resembled the previously reported for blistered (bs) mutants (Guillemin et al., 1996). bs encodes the transcription factor DSRF that regulates TC fate induction in response to Branchless-Breathless (Bnl-Btl) signalling (Gervais and Casanova, 2011; Guillemin et al., 1996). However, we observed that DSRF was properly accumulated in shot3 TC nuclei (Figure 1D), discarding a possible effect of Shot in TC fate induction.
 
@@ -48,9 +56,17 @@ Recently, it has been reported that endocytosis is involved in subcellular lumen
 
 Taken together, these results indicated that Shot is involved in de novo subcellular lumen formation and elongation.
 
-## Shot overexpression induces extra-subcellular branching independently of the centrosome
+### Shot overexpression induces extra-subcellular branching independently of the centrosome
 
 Having observed that Shot was necessary for subcellular lumen formation and extension, we hypothesised that Shot overexpression (ShotOE) would induce extra-subcellular branching events. Indeed, analysis of long-isoform ShotOE (shotA-GFP) in tracheal cells revealed that increasing Shot concentrations induced extra-subcellular lumina (ESL) in GB and DB TCs (Figure 2A–C,J). Since MTs and actin are essential for subcellular lumen formation (Gervais and Casanova, 2010), we then asked whether supernumerary luminal branching was due to the MT- or the actin-binding domains present in the Shot molecule (Bottenberg et al., 2009; Voelzmann et al., 2017). To this end, we overexpressed an isoform of Shot (ShotC-GFP) with a deletion of the first calponin domain (Figure 2K,L), resulting in a shorter actin-binding domain (ABD), which binds actin very weakly or not at all (Lee and Kolodziej, 2002a; Lee and Kolodziej, 2002a). The tracheal overexpression of shotA induced phenotypes in 95% of the embryos (n = 20), with an average of two TC bifurcations per embryo (n = 400). shotC overexpression induced phenotypes in 90% of the embryos (n = 20), with an average of two TC bifurcations per embryo (n = 400) (Figure 2D–F and G). In both cases approximately 15% of all TCs analysed displayed an ESL phenotype (Figure 2J). In all cases, we could detect more MT-bundles in TCs, associated with the ESLs (Figure 2A–F and Figure 2—figure supplement 1). ShotA-GFP and ShotC-GFP displayed different localisations within the TC. Full-length ShotA-GFP localisation can be detected at the cell-junctions, around the crescent lumen, in MT-bundles, and throughout the cytoplasm, whereas ShotC-GFP localised more to the MT/lumen region, in agreement with the lack of actin-binding capability of ShotC isoform (Figure 2—figure supplement 1). Interestingly, we observed a highly ramified subcellular lumen when higher amounts of ShotC were expressed in tracheal cells (Figure 2G) suggesting that the effect of ShotOE in subcellular lumen branching was dosage dependent.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig2-v2.jpg)
+
+**Figure 2.:** Lateral view of DB tip cells from st.14 to st.16, of btl >shotA-GFP embryos (A–C) and btl >shotCGFP (D–F). Embryos were stained with GFP (green in A-F and grey A’’-F’’) to visualise Shot-GFP, DSRF to mark the TC nuclei (in magenta) and CBP to stain the chitinous lumen (blue in A-F and white A’-F’). Both overexpressing conditions induced ESLs (white stars). Note the GFP was more diffuse in the cytoplasm of the TCs of embryos overexpressing shotA, and more organised in bundles in the TCs overexpressing shotC. Anterior side of embryo is on the left and dorsal side up. Scale bars 5 μm. (G) ESL induction by ShotOE is dosage sensitive. Example of dorsal TC of an embryo overexpressing two copies of btl >shotC-GFP, stained with anti-GFP (green) and CBP (white in G, black in G’). Red arrows indicate extra-subcellular lumen branching. Note that the extra-subcellular lumina are very thin and they follow Shot positive bundles detected with GFP. Anterior side is on the left, dorsal midline is on the top. Scale bars 5 μm. (H, I) Tips of GB TCs from btl >shotΔCtail embryos with a single subcellular lumen each (H) and btl >C-tail (I) in which one TC is bifurcated; stained with anti-Gasp (ventral view, anterior side of the embryo is on the left). Scale bars 10 µm. (J) The C-tail domain is involved in ESL formation. Percentage of TCs displaying ESLs in embryos overexpressing GFP, shotA, shotC, C-tail, and shotΔCtail in the tracheal system (n = 400 TCs all genotypes except btl >shotC where n = 800). *** p-value<0.001; ns refers to a p-value>0.1. Statistics by two-tailed Student’s t-test. There was no significant difference between overexpression of shotΔCtail and GFP alone. (K) Schematic representation of spectraplakin protein domains and (L) the different Shot constructs used in this study.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Dorsal TC of a late st.15 btl >shotCGFP;btl::moeRFP embryo stained with anti-GFP antibody (green in A, grey in A’), anti-RFP antibody (magenta in A, grey in A’’) and CBP (blue in A, grey in A’’’). The extra-subcellular lumen (ESL) appears inside the same cytoplasmatic protrusion in 75% of TCs analysed (n = 25). (B) Dorsal TCs of an early st. 15 btl >ShotC-GFP stained with anti-GFP antibody (green in B, grey in B’), anti-acetylated-tubulin antibody (magenta in B, grey in B’’) and CBP (blue in B, grey in B’’’). GFP positive bundles colocalise with MTs in 100% of TCs analysed (n = 20). (C) Ventral TC of a late st.15 btl >shotA-GFP;btl::moeRFP embryo stained with anti-GFP antibody (green in C, grey in C’), anti-RFP antibody (magenta in C, grey in C’’) and anti-acetylated-tubulin antibody (blue in C, grey in C’’’). Actin accumulation and acetylated-tubulin MT-bundles are not perturbed by Shot A overexpression (n = 10). Acetylated-tubulin antibody also detects the axonal bundles on the ventral midline (asterisk in C’’’). Scale bars 5 μm in all panels.
 
 Tracheal overexpression of shotC phenocopied that of shotA in inducing ESLs (14.63% and 15.5% ESL respectively, Figure 2D–F and J), suggesting that the ABD is not necessary for the induction of additional luminal branching events. In order to clarify this, we used two other isoforms of Shot: shot∆Ctail, lacking the C-terminal MT-binding domain, and shotCtail, a truncated form containing only the C-terminal MT-binding domain (Alves-Silva et al., 2012; Figure 2K,L). Whereas overexpressing shotΔ-Ctail in TCs we could only detect a branching phenotype in 1,5% of TCs analysed (n = 400), (Figure 2K), overexpression the C-tail domain alone induced TCs with extra branching in 9.5% of TCs (n = 400) (Figure 2I), indicating that the C-tail alone was sufficient to induce ESLs in TCs. Taken together these results using different Shot isoforms, lead us to conclude that the Shot MT-binding domain alone is sufficient for the extra branching events observed in ShotOE TCs.
 
@@ -58,29 +74,53 @@ ESLs were previously observed when higher numbers of centrosomes were present in
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig3-v2.jpg)
 
-**Figure 3.:** ShotOE is not associated with centrosome amplification.(A,B) GB TC of a st.14 embryo (A), prior to lumen extension, and st.15 when a bifurcated lumen can be detected in ShotOE conditions. (A,B) btl >shotC-GFP embryos stained with CBP to mark lumen (white), anti-GFP to visualise Shot (green) and anti-CP309 antibody to mark centrosomes (magenta); the outline of TCs is drawn in yellow. The box in A is a magnification of the apical side, showing the TC centrosome pair (in magenta) and GFP positive Shot bundles (in grey) emanating from centrosomes. White stars indicate centrosomes apically localised. Note in B’ the subcellular lumen (magenta arrow) bifurcated in a point downstream from the centrosome pair. Anti-CP309 antibody stains all centrosomes throughout the embryo and not just in TCs and cross-reacts with an unidentified antigen at the subcellular lumen. (C) Quantification of centrosome number in wt, btl >shotC and Rca1 embryos ± SEM. (D) GB tips from Rca1; btl >shotC-GFP embryos at st.15, stained with CBP (in white) to visualise the lumen and E-cadherin (magenta) to recognise the TC apical junction. Anterior side of the embryo is on the left and ventral is down. Scale bar 2 μm. In these cases, it is possible to detect two types of luminal bifurcations: one from the apical junction (white arrow), caused by Rca1 mutant supernumerary centrosomes, and another one arising from a pre-existing lumen, induced by ShotOE. (E–H) Details of GB TCs at st.16 from embryos stained with anti-Gasp antibody to mark the lumen. (E) wt TCs with a single lumen each; (F) btl >shotC showing subcellular lumen bifurcations; (G) Rca1 showing subcellular lumen bifurcations; (H) Rca1; btl >shotC showing a multi-branched subcellular lumen. Anterior side of the embryo is on the left ventral midline is down. Scale bars 5 μm. (I) Quantification of the number of bifurcations (GB TCs) per embryo of the indicated genotype. ‘n bifurcations’ is the number of ESL per TC.Figure 3—source data 1.
+**Figure 3.:** (A,B) GB TC of a st.14 embryo (A), prior to lumen extension, and st.15 when a bifurcated lumen can be detected in ShotOE conditions. (A,B) btl >shotC-GFP embryos stained with CBP to mark lumen (white), anti-GFP to visualise Shot (green) and anti-CP309 antibody to mark centrosomes (magenta); the outline of TCs is drawn in yellow. The box in A is a magnification of the apical side, showing the TC centrosome pair (in magenta) and GFP positive Shot bundles (in grey) emanating from centrosomes. White stars indicate centrosomes apically localised. Note in B’ the subcellular lumen (magenta arrow) bifurcated in a point downstream from the centrosome pair. Anti-CP309 antibody stains all centrosomes throughout the embryo and not just in TCs and cross-reacts with an unidentified antigen at the subcellular lumen. (C) Quantification of centrosome number in wt, btl >shotC and Rca1 embryos ± SEM. (D) GB tips from Rca1; btl >shotC-GFP embryos at st.15, stained with CBP (in white) to visualise the lumen and E-cadherin (magenta) to recognise the TC apical junction. Anterior side of the embryo is on the left and ventral is down. Scale bar 2 μm. In these cases, it is possible to detect two types of luminal bifurcations: one from the apical junction (white arrow), caused by Rca1 mutant supernumerary centrosomes, and another one arising from a pre-existing lumen, induced by ShotOE. (E–H) Details of GB TCs at st.16 from embryos stained with anti-Gasp antibody to mark the lumen. (E) wt TCs with a single lumen each; (F) btl >shotC showing subcellular lumen bifurcations; (G) Rca1 showing subcellular lumen bifurcations; (H) Rca1; btl >shotC showing a multi-branched subcellular lumen. Anterior side of the embryo is on the left ventral midline is down. Scale bars 5 μm. (I) Quantification of the number of bifurcations (GB TCs) per embryo of the indicated genotype. ‘n bifurcations’ is the number of ESL per TC.
 
 Regulator of cyclin A1 (Rca1) is the Drosophila ortholog of vertebrate Emi1 and a regulator of APC/C activity at various stages of the cell cycle (Grosskortenhaus and Sprenger, 2002). Rca1 mutants have supernumerary centrosomes at the TCs and develop ESLs at embryonic stages (Ricolo et al., 2016). In contrast with ShotOE alone (Figure 3B’), in Rca1 mutants the bifurcated subcellular lumen arose from the apical junction and continued to extend during TC development (Ricolo et al., 2016). When we analysed the luminal origins in Rca1, ShotOE conditions, both types of ESL where detected in the same TC in 25% of the cases (n = 12). In the same TCs two types of ESL were generated, one from the apical junction and another sprouted from the pre-existing lumen distally from the junction (Figure 3D, asterisks). In addition, the effect of Rca1 LOF and ShotOE was additive in producing TCs with a multiple-branched subcellular lumen (Figure 3I). These morphological ESL differences suggested that Rca1 and shot operate in different ways in the de novo formation and branching of the subcellular lumen.
 
-## Shot associates with stable microtubules and actin
+### Shot associates with stable microtubules and actin
 
 Spectraplakin expression is critical in cells that require extensive and dynamic cytoskeleton reorganisation, such as epithelial, neural, and migrating cells. Loss of spectraplakin function leads to a variety of cellular defects due to disorganised cytoskeletal networks (Hahn et al., 2016). In a plethora of tissues and in cultured S2 cells, Shot can physically interact with different cytoskeletal components (Applewhite et al., 2010; Lee and Kolodziej, 2002b; Sanchez-Soriano et al., 2009). Therefore, we investigated Shot localisation and its interaction with MTs and actin in control TCs.
 
 We analysed live embryos using time-lapse imaging and observed that Shot localisation was extremely dynamic throughout subcellular lumen formation. We could detect Shot in the apical TC junction as well as extending together with the growing subcellular lumen (Video 1 and Figure 4—figure supplement 1A). It was apparent that Shot localised dynamically with the growing luminal structures, showing a strong localisation at the middle/tip of the extending TC (Video 1 and Figure 4—figure supplement 1A).
 
+![Video 1.](https://cdn.elifesciences.org/articles/61111/elife-61111-video1.mp4.jpg)
+
+**Video 1.:** In vivo Shot localisation during lumen formation in two wild-type ganglionic branch (GB) TCs. Time-lapse images of a wt embryo expressing btlGAL4UASShotC-GFP visualised from a dorsal view. Note the accumulation of Shot at the apical junction of the TC and subsequently in association with subcellular lumen extension. Frames were taken every minute for 3.5 hr.
+
 In control conditions actin concentrated strongly at the tip of the TC, but was also detected in the TC cytoplasm, and these different actin populations have been shown to be important for subcellular lumen formation and extension (Gervais and Casanova, 2010; Oshima et al., 2006). During TC elongation, MTs polymerise from the centrosome pair at the apical junction toward the tip of the cell, reaching the area of high actin accumulation at the migrating tip of the TC (Gervais and Casanova, 2010; Ricolo et al., 2016). So, we next analysed ShotA and ShotC localisation in relation to the dynamically localised actin core present in the cytoplasm and at the tip of the migrating TC in live embryos (Videos 2, 3, and 4 and Figure 4—figure supplement 1). In both GB and DB TCs we could detect a dynamic interaction between the long Shot isoform (ShotA) and actin as detected by Moe::RFP (the ABD of moesin fused to RFP, thereby labelling the actin cytoskeleton of these cells, Video 4) or Life-actRFP (Video 3 and Figure 4—figure supplement 1C). ShotA dynamically interacted with different actin populations, namely the actin core and basal, filopodial actin (Videos 3 and 4 and Figure 4—figure supplement 1C). However, as the lumen extended, ShotC fibres extended with the cell, surrounding the growing luminal area, like Shot A, but no strong interaction was detected with the dynamic actin core and with the basal, filopodial actin (Video 2 and Figure 4—figure supplement 1B).
+
+![Video 2.](https://cdn.elifesciences.org/articles/61111/elife-61111-video2.mp4.jpg)
+
+**Video 2.:** In vivo Shot colocalisation with actin during lumen formation in a wild-type dorsal branch (DB) TC. Time-lapse images of a wt embryo expressing btlGAL4UASShotC-GFP; btl::moeRFP visualised from a dorsal view. Note the colocalisation of Shot with actin the apical junction of the TC. As the cell extends, ShotC localises to the growing lumen and there is no detectable strong association with the actin core and filopodial actin. Frames were taken every 2 min for 3.3 hr.
+
+![Video 3.](https://cdn.elifesciences.org/articles/61111/elife-61111-video3.mp4.jpg)
+
+**Video 3.:** In vivo Shot long-isoform colocalisation with actin during lumen formation in a wild-type dorsal branch (DB) TC. Time-lapse images of a wt embryo expressing btlGAL4UASShot-A-GFPUASlifeActRFP visualised from a dorsal view. Note the colocalisation of Shot with actin at the apical junction of the TC and subsequent association with the actin core and filopodial actin during subcellular lumen extension. Frames were taken every 40 s for 32 min.
+
+![Video 4.](https://cdn.elifesciences.org/articles/61111/elife-61111-video4.mp4.jpg)
+
+**Video 4.:** In vivo Shot long-isoform colocalisation with actin during lumen formation in a wild-type dorsal branch (DB) TC. Time-lapse images of a wt embryo expressing btlGAL4UASShotA-GFP; btl::moeRFP visualised from a dorsal view. Note the colocalisation of Shot with filopodial actin during subcellular lumen extension. Frames were taken every 30 s for 36 min.
 
 We followed these analyses, observing endogenous Shot in fixed and antibody stained embryos. At early stages, when TCs started to elongate, we detected Shot co-localizing with actin at the tip of the TC (Figure 4A). The overlap between Shot and actin was maintained until late st.15 (Figure 4B). Then, we examined Shot localisation in relation to MTs. Shot was strongly detected in the TC from early stages of lumen extension and until the end of TC elongation (Figure 4D–E). At the beginning of de novo lumen formation, when MTs emanated from the junction/centrosome pair, Shot co-localised with the first sprouting stable MTs (Figure 4C–D). The overlap between Shot and stable MTs was strongly observed also at embryonic st.15 when a MT track preceded subcellular lumen detection (Figure 4D). At st.16, both Shot and stable MTs localised to the apical side of the TCs in the area surrounding the subcellular lumen (Figure 4E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) Endogenous Shot, detected by an antibody in btl::moeRFP embryos, colocalised with actin during TC development. Tip of dorsal branches from st. 14 to late st. 15 of btl::moeRFP embryos stained with RFP (magenta) and Shot (green). In the magnification of the tip of the TCs (A’–B’) note Shot and RFP co-localisation in both embryonic stages. (C–E) Endogenous Shot accumulated around stable microtubules during subcellular lumen formation. The whole TC morphology changes overtime. This is a developing structure and both cell-shape and the cytoskeleton are changing throughout its development. Here we provide snapshots of different stages showing the beginning, middle and final stages of TC lumen formation. Dorsal TCs from fixed embryos btl >srcGFP stained with Shot and acetylated-tubulin antibodies and fluostain to detect chitin, from st.14 to st.16. GFP staining is showed in grey and cell contour in yellow (C–E), endogenous Shot is shown in grey in panels C’- E ‘’ (C’’- E’’ are magnification of C’- E’) and green C’’’’- E’’’’. Acetylated tubulin is in grey in C’’’- E’’’ and magenta in C’’’’ -E’’’’. The chitinous lumen was detected with fluostain, represented in cyan (C– E’’’). Acetylated tubulin and Shot are both accumulated ahead of the subcellular lumen at earliest stages (st. 14–15) and around the subcellular lumen at later stages (st.16). Note that co-localisation between acetylated tubulin and Shot is detected in the TCs. Anterior side is on the left, dorsal midline is up. Scale bar 5 μm. (F) Schematic representation of dorsal TC development from st.15 to st.16. Basal membrane in grey, apical membrane in light blue, subcellular lumen in white, the actin network in red and MTs are in green. Between st.14 and st.15 actin dots mature in an actin core in front of the tip of the subcellular lumen in formation that is surrounded by microtubules. Shot (represented on the bottom of the figure) was detected both inside the actin core and surrounding the lumen where stable MTs are organised.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Video 1 frames from the beginning of image acquisition to 180 min. Live embryos expressing ShotC-GFP in all tracheal cells. (B) Video 2 frames from the beginning of image acquisition to 180 min. Live embryos expressing ShotC-GFP and MoeRFP in all tracheal cells. (C) Video 3 frames from the beginning of image acquisition to 30 min. Live embryos expressing ShotA-GFP and lifeActinRFP in all tracheal cells.
+
 Shot localisation within the TC suggested that the spectraplakin localised with stable MTs all around the nascent lumen and with the actin at the tip of the TC, during the time of cell elongation and subcellular lumen formation. This suggests that Shot mediates the crosstalk between these two cytoskeletal components, helping their stabilisation and organisation during subcellular lumen formation and growth (Figure 4F).
 
-## Absence of shot leads to disorganised microtubules and actin
+### Absence of shot leads to disorganised microtubules and actin
 
 We then asked how actin and MTs were localised and organised in shot3 mutant embryos. We analysed the different types of TC mutant phenotypes ranging from cases in which the TC did not elongate and the subcellular lumen was not formed, to cases in which the TC was able to elongate and form the lumen albeit not to the levels in control embryos (Figure 5). In all cases, we found defects in both MTs and actin accumulation in mutant TCs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig5-v2.jpg)
 
-**Figure 5.:** (A–D) Asymmetric actin accumulation in extended TCs was affected in shot mutant embryos. Dorsal TC from fixed 3shot controls (3/+; btl::moeRFPA) and shot mutant embryos (3; btl::moeRFPB–D), stained with RFP (Magenta in A-D or in a colour scale in which blue is low, green is middle and red high intensity in A’- D’) and CBP (in white). In shot mutant TCs actin appeared affected in its accumulation (B–D). (A) control; (B) when the cell was not elongated and the lumen was not formed; (C) when the cell was partially elongated and the lumen was not formed; (D) when the cell elongated and the lumen was partially formed (D). Note that actin was affected even when the cell was elongated and a lumen was partially formed. (E–H) TC MT-bundles in shot. Dorsal TC from embryo at st.16 control (3A) and shot mutant embryos (3B–D) stained with GFP (green) acetylated tubulin (in magenta in E-H and in grey in E’’-H’’) and CBP (in blue in E-H and grey in E’’’-H’’’). The border of TC was drawn in cyan (E–H’’). In all cases, the organisation and the amount of stable MTs was strongly affected, in (F) MT-bundles were observed to be disorganised along the cytoplasmatic protrusion without subcellular lumen and in G and H only a thin track of MTs surrounds the subcellular lumen. Anterior side is on the left and dorsal midline is up. Scale bars 5 μm.
+**Figure 5.:** (A–D) Asymmetric actin accumulation in extended TCs was affected in shot3 mutant embryos. Dorsal TC from fixed shot3/+; btl::moeRFP controls (A) and shot3; btl::moeRFP mutant embryos (B–D), stained with RFP (Magenta in A-D or in a colour scale in which blue is low, green is middle and red high intensity in A’- D’) and CBP (in white). In shot mutant TCs actin appeared affected in its accumulation (B–D). (A) control; (B) when the cell was not elongated and the lumen was not formed; (C) when the cell was partially elongated and the lumen was not formed; (D) when the cell elongated and the lumen was partially formed (D). Note that actin was affected even when the cell was elongated and a lumen was partially formed. (E–H) TC MT-bundles in shot3. Dorsal TC from embryo at st.16 control (A) and shot3 mutant embryos (B–D) stained with GFP (green) acetylated tubulin (in magenta in E-H and in grey in E’’-H’’) and CBP (in blue in E-H and grey in E’’’-H’’’). The border of TC was drawn in cyan (E–H’’). In all cases, the organisation and the amount of stable MTs was strongly affected, in (F) MT-bundles were observed to be disorganised along the cytoplasmatic protrusion without subcellular lumen and in G and H only a thin track of MTs surrounds the subcellular lumen. Anterior side is on the left and dorsal midline is up. Scale bars 5 μm.
 
 Considering actin localisation, in control embryos at early st.16, Moe::RFP detecting actin was strongly localised at the tip of the TC, in front of the tip of the growing lumen (86% of TCs analysed, n = 21). Moreover, a few spots of actin were detectable in the cytoplasm, around the subcellular lumen (Figure 5A and Video 2). In shot3, we observed reduced actin accumulation at the TC-tip and an increase of scattered spots into the cytoplasm (86% of TCs analysed, n = 23) (Figure 5B–D), indicating that Shot contributed to TC actin organisation.
 
@@ -88,9 +128,17 @@ Regarding MT-bundles, we observed stable MTs organised in longitudinal bundles a
 
 These analyses, taken together with the previous analysis of Shot localisation in control TCs, suggested a spectraplakin role in organizing/stabilizing both MTs and Actin accumulation in the TC.
 
-## Subcellular branching depends on both actin and microtubule-binding domains of shot
+### Subcellular branching depends on both actin and microtubule-binding domains of shot
 
 In order to analyse how the different domains of Shot affected luminal development and branching, we expressed different isoforms of Shot in shot3 mutant TCs. As described previously, shot3 embryos displayed a variable expressivity in TC phenotypes. To simplify the quantification of the rescue experiments, we took in consideration the most severe luminal phenotype: the complete absence of a subcellular lumen. In shot3, we quantified that 22% of TCs (at the tip of GBs and DBs) did not develop a subcellular lumen at all (Figure 1H,I and Figure 6B,J). Targeted expression of full-length ShotA in the trachea of shot3 mutant embryos was able to rescue the subcellular lumen phenotype to the level of only 6% of the TCs analysed (n = 200) not developing a subcellular lumen (Figure 6C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig6-v2.jpg)
+
+**Figure 6.:** (A–I) Dorsal branches of st.16 embryos, stained with anti-GASP to visualise the lumen. Genotype is indicated above each panel. Null allele, shot3, rescue experiments (B–F) indicate that both the actin-binding domain (ABD) and the microtubule-binding domain are involved in subcellular lumen formation since the only construct able to rescue the null allele phenotype is the UASShotA (B and J). Both functional domains are needed in the same molecule since mutants affected only in the ABD (shotKakP2) or in the microtubule-binding domain (shotΔEGD) and the transheterozygous shot KakP2/ΔEGD display the same phenotype as shot3. Scale bars are 10 µm. (J) Quantification of TCs without lumen: wt (n = 820); shot3 (n = 600); shotKakP2 (n = 400); shotΔEGD (n = 400); shot KakP2/ΔEGD (n = 320 TCs); shot3, btl >shotA (n = 240); shot3; btl >shotC (n = 240); shot3; btl >shotCtail (n = 240); shot3; btl >shotΔCtail (n = 240). *** p-value<0.001; ns refers to a p-value>0.1. Statistics by two-tailed Student’s t-test. Only ShotA significantly rescued the shot3 TC luminal phenotype.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) shotKAKP2; btl::moeRFP (B–D) and shotΔEGC; btl::moeRFP (E–G) embryos stained with RFP (magenta in A-G), in a colour scale in which blue is low, green in middle and red high pixel intensity (A’–G’) and CBP in grey (A–G and A’’–G’’). Similarly to shot3 null allele, actin organisation was impaired in all cases in both mutants (ranging from partially elongated TCs with subcellular lumen to cases in which the cell did not elongate and a subcellular lumen was not formed). Scale bars 5 μm.
 
 We then proceeded to molecular dissect the function of Shot in TCs. To do so, we used the three different constructs Shot: ShotC, Shot∆Ctail and ShotCtail (Figure 2L). When we expressed ShotC in the tracheal TCs we found that 20% of TCs analysed (n = 200), had TCs with no lumen (Figure 6D and J), suggesting that the ABD domain is necessary for the correct de novo luminal morphogenesis.
 
@@ -104,23 +152,47 @@ In shot∆EGC/shotkakP2 transheterozygous embryos, Shot molecules contained excl
 
 Taken together these results indicate that Shot is able to mediate the crosstalk between MTs and actin during subcellular lumen formation, via its MT and actin-binding domains and that these have to be present in the same molecule for proper subcellular lumen formation.
 
-## Increased levels of shot are induced in TCs by DSRF
+### Increased levels of shot are induced in TCs by DSRF
 
 The TC-specific transcription factor bs/DSRF is important for TC specification and growth, and has been suggested to regulate the transcription of genes that modify the cytoskeleton (Guillemin et al., 1996; Olson and Nordheim, 2010). Considering the luminal phenotypes associated with bs LOF in TCs and the role of MTs in subcellular luminal formation, we asked whether shot expression in TCs could be regulated by DSRF.
 
 In order to test this, we searched in silico for DSRF binding sites in the promoter regions of all shot isoforms using the Matscan software (Blanco et al., 2006) and the reported position weight matrix (PWM) corresponding to SRF (Khan et al., 2018; Supplementary file 1). We found seven regions with at least one putative binding site (binding score larger than 70% of maximum value) within 2000 bases of the shot annotated TSS (Figure 7F and Supplementary file 1). These regions mapped to the locations of known Shot promoters (Figure 7F; Hahn et al., 2016). We then asked if lower Shot protein levels could be detected in bs mutant TCs. Indeed, when analysing bs in comparison to bs/+ TCs, we could detect lower levels of endogenous Shot protein and shot mRNA (Figure 7A,B and E). To rule out the possibility of DSRF regulating Shot protein levels, we analysed Shot mRNA in control and bs embryos by fluorescent in-situ hybridisation. We found that in bs TCs Shot mRNA levels were lower than in bs/+ embryos (Figure 7C,D). To confirm that the luminal phenotype observed in bs TCs was due to lower Shot levels, we analysed the TC phenotype of bs embryos upon tracheal expression of shot in these cells. We observed that increasing shot expression in TCs resulted in rescue of de novo lumen formation in bs TCs (Figure 7G–M) and recovery of cytoskeletal organisation (Figure 7—figure supplement 1). Taken together these results indicate that at least part of the luminal phenotypes associated with bs LOF in TCs are due to lower levels of Shot.
 
-## Shot and tau functionally overlap during subcellular lumen formation and branching
+![Figure 7.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig7-v2.jpg)
+
+**Figure 7.:** (A) and homozygous (B) mutant embryos, stained with Shot (magenta in A and B, grey in A’ and B’), DSRF (green) antibodies and CBP (grey). In yellow, the outline of the TCs. Shot protein was less accumulated in TCs from homozygous bs embryos (B, B’ and E) n = 9 TCs. Scale bars are 5 µm. (C,D) DB TCs from bs heterozygous (C) control and homozygous (D) mutant embryos from wholemount FISH with a ribo-shot probe (magenta), stained with anti-betagal (green, to detect the DSRF enhancer trap lacZ expression) and CBP (blue) to mark the lumen. LacZ expression is higher in mutant embryos, homozygous for the lacZ P-element insertion (D). The yellow line marks the TC outline. Lower levels of shot mRNA were detected in bs mutant TCs when compared to control TCs (n = 8). Scale bars are 5 µm. (E) Quantification of Shot protein in control and mutant TCs and stalk cells (SC). Quantification of raw integrated pixel density in arbitrary units measured in Fiji in the TC and attached SC in each embryo. **p<0.01; ns refers to a p-value>0.1. Statistics by two-tailed Student’s t-test. (F) P1, P2 and P3 transcription start sites of the shot locus together with the specific sequences recognised by the DSRF transcription factor (squares in magenta) (adapted from Hahn et al., 2016). Dorsal and ventral TCs from control (G and J) bs (H and K) mutant embryos. The tracheal overexpression of Shot is sufficient to restore the growth of TC subcellular lumina in bs mutant background (I, L). (M) Quantification of TCs with an extended lumen: bs/+ (n = 350); bs/bs (n = 280) and bs/bs;btl >Shot (n = 210). *** p-value<0001. Statistics by two-tailed Student’s t-test.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A and C) and ventral (B and D) TCs from bs embryos (A and B) and bs; btl >shotGFP (C and D) stained with anti β-gal antibody (blue in A – D, grey in A’ – D’) CBP probe (blue in A – D and grey in A’ – D’), anti-actin antibody (magenta in B and D, grey in B’’ and D’’) or anti-acetylated tubulin (magenta in A and C and grey in A’’ and C’’). Shot GFP is shown in green in merge panels (C and D). The cytoskeleton alterations observed in the actin and MT networks in bs mutant TCs (A and B), are partially restored with ShotOE (C and D, blue arrows). See control acetylated tubulin staining in Figure 5, panel E’’ and actin staining in Figure 8—figure supplement 3, panel A’’’. Anterior side is on the left and dorsal midline is up (A and C) or down (B and D). The shape of TC is highlighted in cyan. Scale bars 5 μm.
+
+### Shot and tau functionally overlap during subcellular lumen formation and branching
 
 Previous Drosophila work suggested that Shot could display potential functional overlap with Tau in microtubule stabilisation (Alves-Silva et al., 2012; Voelzmann et al., 2016). To assess this functional overlap during TC subcellular branching, we started by overexpressing Tau-GFP in TCs using GAL4 induced expression (Murray et al., 1998). Upon overexpression of Tau in otherwise wt TCs, we detected ESLs in 93% of TCs, which is comparable to the ShotOE phenotype (Figure 8A–C). Like in ShotOE, this effect was dosage dependent, with more TCs with ESLs when more Tau copies were expressed (Figure 8C). We then tried to rescue the shot LOF phenotype by targeted expression of Tau in TCs. Again, this effect was dosage dependent. We achieved a 64% rescue of the shot mutant phenotype with two copies of Tau expressed, indicating that Tau can execute a similar function to Shot in de novo subcellular lumen formation (Figure 8D,J and Figure 8—figure supplements 1 and 2). We then analysed TCs double mutant for shot3 and tauMR22 null alleles (shot-tau). These double mutants showed higher numbers of TCs without lumen (85%) than TCs from shot3 (22%) or tau MR22 (3%) alone, or a mere sum of these phenotypes, indicating a synergistic genetic effect between shot and tau (Figure 8D–H). These effects were not due to differences in tracheal cell number or fate (Figure 8—figure supplement 3). Furthermore, using a mouse Tau antibody, we could detect Tau colocalizing with the growing lumen in TCs (Figure 8K). These results indicate that, as seen in neurons (Voelzmann et al., 2016), in tracheal TCs Shot and Tau functionally overlap in subcellular lumen formation and branching.
 
-## Shot is required for subcellular luminal branching at larval stages
+![Figure 8.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig8-v2.jpg)
+
+**Figure 8.:** (A–B) DB (A) and GB (B) embryonic TCs expressing tauGFP in the tracheal system, stained with GFP (green), CBP (white) and DSRF (magenta), showing the ESL phenotype induced by Tau overexpression. In A’ in B’ lumen and TC nuclei are shown, anterior side on the left, dorsal side is up; scale bar 5 μm. (C) Quantification of TCs with ESL in embryos overexpressing GFP (n = 240); ShotA (n = 400); one copy of btl >tauGFP (n = 440) or two copies of btl >tauGFP (n = 300). ***p-value<0.001; ns refers to a p-value>0.1. Statistics by two-tailed Student’s t-test. (D) Quantification of TCs without subcellular lumen in control (n = 820), shot3(n = 600), tau[MR22] (n = 180), shot3; tau[MR22](n = 180), shot3; btl >Tau (n = 440) and shot3; btl >Tau btl >Tau (n = 260) embryos. ***p-value<0.001; ns refers to a p-value>0.1. Statistics by two-tailed Student’s t-test. (E–J) Dorsal view of TCs from st. 16 embryos (genotype indicated) stained with anti-Gasp. tau deletion mutant does not display a subcellular lumen phenotype (D and F) but enhances the effect of shot mutation in the double mutant shot3; tau[MR22]. One copy of Tau is not sufficient to rescue shot3 (D and I, n = 400) but two copies rescues the shot LOF TC phenotype (D and J n = 260). Scale bars 10 µm. (K) Tau is detected in embryonic TCs. Embryonic shot::GFP dorsal TC stained with GFP (green in K, grey in K’), anti-Tau antibody (magenta in K, grey in K’) and CBP (blue in K grey in K’). Scale bar 5 μm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Dorsal TCs from shot3;btl >GFP (A–A’’’); shot3; btl >shotAGFP (B–B’’’) shot3; 2Xbtl > TauGFP; (C–C’’’); and shot3; btl >shotCGFP (D–D’’’) embryos, stained with anti-GFP antibody (green in A–D’), CBP blue in A–D and grey (A’’–D’’) and anti-acetylated-tubulin antibody (magenta in A–D and grey in A’’’–D’’’). The MT network (control embryos Figure 5, panel E’’) disrupted in shot3 mutant TCs (A’’’), is partially restored in shot3;btl >shotA (B’’’) TCs and well reorganised in shot3 embryos overexpressing two copies of Tau-GFP (C’’’) but not in shot3,btl >shotC embryos (D’’’) (blue arrows). Anterior side is on the left and dorsal midline is up. The outline of TC is sketched in blue. Scale bar 5 μm.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Dorsal TCs from btl >GFP used as control (A–A’’’); shot3; btl >GFP (B–B’’’); shot3; btl >shotAGFP (C–C’’’); shot3;2Xbtl > TauGFP (D–D’’’) and shot3; btl >shotCGFP embryos, stained with anti-GFP antibody (green in A –E’), CBP (blue in A –E and grey in A’’–E’’) and anti-actin antibody (magenta in A – E and grey in A’’’–E’’’). The actin accumulation at the tip of TC (A’’’), disrupted in shot3 mutant TCs (B’’’), is restored in shot3 TCs overexpressing ShotA (C’’’) or two copies of Tau (D’’’), but not in shot3;btl >shotC embryos (E’’’), (see blue arrows). Anterior side is on the left and dorsal midline is up. The outline of TC is sketched in blue. Scale bar 5 μm.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** Dorsal branches of wt (A) and shot3; tau [MR22] embryos st.15 (B) stained with trachealess (trh) antibody to visualise all tracheal cell nuclei (magenta in A and B, grey in A’ and B’) and CBP to visualise the lumen (green in A and B, grey in A’’ and B’’) (n = 17 TCs) or wt (C) and shot3; tau [MR22] (D) stained with DSRF magenta in C and D (grey in C’ and D’) and CBP green in C and D and grey in C’’ and D’’ (n = 8 TCs). Dorsal view. Scale bar 10 μm.
+
+### Shot is required for subcellular luminal branching at larval stages
 
 During larval stages, TCs ramify extensively to form many branches from the same cell body, long cytoplasmic extensions that form one cytoplasmatic membrane-bound lumen each (Best, 2019; Ghabrial et al., 2011). We questioned if Shot was also necessary for the subcellular branching and lumen extension in these larval cells. To answer this, we expressed different isoforms of Shot, Shot-RNAi and Tau in TCs from embryonic stages with a TC-specific driver (DSRF-GAL4) and analysed the phenotypes on branching and ESL formation at the end of the larval stages (Figure 9). Downregulation of Shot induced TCs with lower levels of branching and fewer lumina (Figure 9B,G,I). Whereas in control TCs each branch is filled by a subcellular lumen, in Shot-RNAi TCs these were reduced to 37% of the TCs and even so absent in most branches (Figure 9B and G). Also, on average, each control TC develops 16.9 ± 1.4 branch points (n = 10), but Shot-RNAi TCs only developed an average of 6.5 ± 0.6 branch points each (n = 8) (Figure 9B and I). We then overexpressed the long isoform of Shot (ShotA-GFP aka ShotOE condition) and could not detect extra branching points in TCs, suggesting that more than just an increased Actin-MT crosstalk is needed for the induction of TCs with supernumerary cytoplasmatic extensions (Figure 9C). Nonetheless, overexpression of ShotA, ShotCtail and Tau induced ESL in TCs, with two or more lumina in all TCs analysed (n = 10) (Figure 9C–E and H). Like in embryos, targeted expression of Shot-∆C-tail did not induce ESL in larval TCs (Figure 9F and H). Taken together, these results indicate that Shot is necessary for larval lumen formation and branching and that Actin-MT crosstalk by Shot or Tau is sufficient for ESL formation within each TC cytoplasmatic extension.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/61111/elife-61111-fig9-v2.jpg)
 
-**Figure 9.:** Wandering larval (L3) TCs expressing only GFP (A) and different Shot and Tau constructs (B, C, D, E, F) under the control of a tracheal DSRFGAL4 driver (all except A and E where the driver used was btlGAL4). (A, A’) UASGFP (n = 8) (B, B’) UASshotRNAi, UASGFP (n = 8); (C, C’) UASShotA-GFP (n = 10); (D, D’) UASshotCtail-GFP (n = 8); (E, E’) UASTauGFP (n = 8); (F,F’) UASshot∆Ctail-GFP (n = 8). Scale bars 50 μm. (G) Quantification of the percentage of TCs with subcellular lumen; (H) quantification of the number of ESL per TC; (I) quantification of the number of branches per larval TC. *** represent a p-value<0.001; ns refers to a p-value>0.1. Statistics by two-tailed Student’s t-test.Figure 9—source data 1.
+**Figure 9.:** Wandering larval (L3) TCs expressing only GFP (A) and different Shot and Tau constructs (B, C, D, E, F) under the control of a tracheal DSRFGAL4 driver (all except A and E where the driver used was btlGAL4). (A, A’) UASGFP (n = 8) (B, B’) UASshotRNAi, UASGFP (n = 8); (C, C’) UASShotA-GFP (n = 10); (D, D’) UASshotCtail-GFP (n = 8); (E, E’) UASTauGFP (n = 8); (F,F’) UASshot∆Ctail-GFP (n = 8). Scale bars 50 μm. (G) Quantification of the percentage of TCs with subcellular lumen; (H) quantification of the number of ESL per TC; (I) quantification of the number of branches per larval TC. *** represent a p-value<0.001; ns refers to a p-value>0.1. Statistics by two-tailed Student’s t-test.
 
 ## Discussion
 
@@ -130,37 +202,488 @@ In this study, we analysed the importance of MT-actin crosstalk through Shot and
 
 **Figure 10.:** Schematic representation of st.16 embryonic (A, B, C) and third instar larval (D) TCs; cytoplasm is in pink and luminal space in white. (A) Cytoskeletal components in a wt embryo with the actin-network (dark pink) and MTs (green). Shot and Tau are able to organise the cytoskeleton by crosslinking MTs and actin; Shot (represented with the actin domain in red and the MT-binding domain in green) mediates the crosstalk between actin and MTs as the longer isoform (ShotA), but shorter isoforms lacking part of the ABD were reported not to bind/or very weakly bind actin (ShotC). Tau is represented in blue. (B) ESLs are formed by overexpressing shot or tau by an excess of MT stabilisation from the pre-existing lumen, which probably acts as a MTOC in this case. ESLs can be induced by Shot isoforms with affected (ShotC) or without ABD (ShotC-tail). (C) In the absence of the longer isoform of Shot (ShotA) proper cytoskeletal organisation, is not established, by defective MT-actin crosslinking, and cell elongation and lumen formation fail to occur. (D) Schematic representation of larval TCs in wt, in shotOE (or tauOE) where ESLs are formed without concomitant single-cell branching and in shot KD, where both single-cell and luminal branching are reduced.
 
-## Shot promotes subcellular branching by organizing and mediating the crosstalk between microtubules and actin
+### Shot promotes subcellular branching by organizing and mediating the crosstalk between microtubules and actin
 
 Previously, it was shown that Shot was involved in tracheal fusion cell anastomosis during embryonic development (Lee and Kolodziej, 2002a). It was observed that Shot accumulates at E-cadherin-dependent contacts between fusion cells and shot LOF disrupts this contact leading to cell-fusion phenotypes. In these cells, interactions of Shot with F-actin and microtubules are functionally redundant and both targeted expression of ShotC or ShotA is sufficient to rescue the cell-fusion phenotype (Lee and Kolodziej, 2002a). Our results are more akin to what has been reported in neuronal growth cones, and both actin and MT-binding domains of Shot are required for TC extension and subcellular lumen formation (Figure 10A). In neurons, like in tracheal cells, ShotC is unable to rescue the phenotype caused by shot LOF, which is only rescued by expression of the full-length ShotA isoform (Lee and Kolodziej, 2002b). Shot has also been shown to be required for sealing epithelial sheets during dorsal closure (Takács et al., 2017). In these epithelial cells, Shot acts as a MT-actin crosslinker to regulate proper formation of the MT network. As in the case of tracheal TCs presented here, the actin- and microtubule-binding activities of Shot are simultaneously required in the same molecule, indicating that like in TCs Shot is engaged as a physical crosslinker also during dorsal closure (Takács et al., 2017).
 
 MTs and the actin cytoskeleton perform many functions in tracheal TCs that are regulated by different actin- and MT-binding proteins. While mediators of actin function, such as Ena (Gervais and Casanova, 2010), and of MT function, like D-Lissencephaly-1 (DLis-1), have been identified previously, we show here that Shot is able to mediate crosstalk between MTs and actin during subcellular lumen formation. In Shot LOF conditions, MTs and actin are disorganised. Consequently, this Shot crosslinking function is essential for de novo lumen formation and extension. It has been previously described that in TCs of mutants affected in MT organisation, the actin-network is not perturbed (Gervais and Casanova, 2010), so the ‘actin phenotype’ observed in shot LOF cannot be a consequence of defects in the MT network. This observation indicates a possible spectraplakin function in organizing TC actin in agreement with previous observations that Shot and ACF7 can promote filopodia formation (Lee et al., 2007; Sanchez-Soriano et al., 2009).
 
-## Shot expression is regulated by DSRF in TCs
+### Shot expression is regulated by DSRF in TCs
 
 Our results show that molecular levels of Shot are important for cytoskeletal rearrangements, indicating that there is a dosage dependent effect in lumen formation and extension as well as in luminal branching events. Shot is present in many cells during development but Shot level regulation is likely to be more important in cells such as neurons and tracheal terminal cells, due to their morphology (Voelzmann et al., 2017). bs/DSRF is a TC-specific transcription factor, whose expression is triggered by Bnl signalling (Guillemin et al., 1996; Sutherland et al., 1996), and is required for TC cytoskeletal organisation (Gervais and Casanova, 2010). DSRF has also been shown to be necessary not just for the establishment of TC fate, but to ensure the progression of TC elongation (Gervais and Casanova, 2011). Cytoskeletal organisation and remodelling as well as TC elongation are tightly coupled during subcellular lumen formation and in bs mutants actin accumulation was impaired at the TC tip (Gervais and Casanova, 2010). We observe a similar actin phenotype in Shot mutants (Figure 5A–D) suggesting that the actin defects observed in DSRF mutants may be due to a lower expression of Shot in these cells.
 
-## Shot and Tau functionally overlap in subcellular lumen formation and branching
+### Shot and Tau functionally overlap in subcellular lumen formation and branching
 
 It has been suggested that spectraplakins functionally overlap with structural microtubule-associated-proteins (MAPs). Shot displays a strong functional overlap with Tau in MT stabilisation leading to the adequate delivery of synaptic proteins in Drosophila axons (Voelzmann et al., 2016). In addition, it has been proposed that a loss of MAP function in mammals results in a relatively mild phenotype due to a functional compensation accomplished by spectraplakins (Morris et al., 2011; Riederer, 2007). Furthermore, the effect of the complete lack of Shot function during dorsal closure is very subtle (Takács et al., 2017), hinting that in another Drosophila organ, Shot function might have overlaps with other MAPs.
 
 Our overexpression and genetic data suggest that also in the context of subcellular lumen formation these two proteins functionally overlap. When we tested the tracheal overexpression of Tau in wt background, we observed extra-subcellular lumina with morphology very similar to the one caused by ShotOE. Moreover, Tau overexpression in tracheal cells was able to rescue the shot LOF phenotype similarly to ShotA expression. We propose that Tau’s rescuing capability does not depend only on its classical MT-stabilisation activity, since expression of ShotC and ShotC-tail in tracheal cells was not able to restore subcellular lumen formation. Tau MT-binding is probably just one of its functions in TCs. In fact, Tau has been shown to co-organise dynamic MTs and the actin-network in cell-free systems and growth cones (Biswas and Kalil, 2018; Cabrales Fontela et al., 2017; Elie et al., 2015). Our rescue and double mutant analyses suggest that in TCs, Shot and Tau functionally overlap in organizing the coordination between MT-bundling and actin cytoskeleton crosstalk (Figure 10A,B).
 
-## Larval lumen formation and branching
+### Larval lumen formation and branching
 
 TC subcellular lumen formation starts at embryonic stages but most of its elongation and branching occurs during the extensive body growth of the third instar larva (L3). Some mutants have been reported to generate larger TCs with higher numbers of branches. Such mutants included the Hippo pathway member warts/lats1 (aka miracle-gro), and the TOR pathway inhibitor, Tsc1 (aka jolly green giant) (Ghabrial et al., 2011). In addition, activation of the FGF Receptor (Btl) pathway in TCs gives rise to ectopic branches (Jarecki et al., 1999; Lee et al., 1996). Interestingly, in all these cases, mutant TCs develop a higher number of branches but no reported ESL per branch. In larvae, as in embryonic TCs, actin is present at the basal plasma membrane and at the luminal/apical membrane. The connection between the basal actin network and the outer plasma membrane is made through Talin, which links the network to the extracellular matrix (ECM) via the integrin complex (Levi et al., 2006). Regulation of the luminal actin is done by Bitesise (Btsz), a Moe interacting protein (JayaNandanan et al., 2014). These interactions with actin are required for proper TC morphology, and mutations in either the Drosophila Talin gene rhea or btsz induce multiple convoluted lumina per TC branch (JayaNandanan et al., 2014; Levi et al., 2006). rhea and btsz ESLs seem to be misguided within the TC and present a series of U-turns and loops we did not observe in shot mutants. Also, mutations in rhea and btsz do not induce embryonic TC luminal phenotypes, suggesting that despite their interactions with actin, the mechanism of action during subcellular lumen formation and stabilisation is different. They do not seem to interact with MTs and they might have a more structural/less dynamic role in larval subcellular lumen formation. Our results suggest that Shot is able to induce larval ESLs by the same mechanism as in embryos. By modulating a dynamic crosstalk between MTs and actin that induces acentrosomal luminal branching. However, albeit necessary for larval luminal branching excess Shot alone is not sufficient to induce extra branching in TCs. Perhaps ShotOE TCs are able branch their subcellular lumen but lack a specific spatial cue to induce single-cell branching. This cue could be such as the one provided by a hypoxic tissue secreting the FGFR ligand, Bnl, which would allow for the cytoplasmic extensions needed to increase single-cell TC branching.
 
-## Spectraplakins and lumen formation in other organisms
+### Spectraplakins and lumen formation in other organisms
 
 The spectraplakin protein family of cytoskeletal regulators is present throughout the animal kingdom. In the most commonly studied model organisms we find VAB-10 in the worm Caenorhabditis elegans, and, in vertebrates, dystonin (also known as Bullous Pemphigoid Antigen 1/BPAG1) and Microtubule-Actin Crosslinking Fac- tor 1 (MACF1; also known as Actin Crosslinking Family 7/ACF7, Macrophin, Magellan) (Voelzmann et al., 2017). They are usually strongly expressed in the nervous system and most of their functions have been unraveled by studying nervous system development and axonal cell biology (Zhang et al., 2017). Spectraplakin roles have also been reported in cell-cell adhesion and cell migration (Röper and Brown, 2003). Recently, attention has gone into the role of spectraplakins not only during normal cellular processes but also in human disease, from neurodegeneration to infection and cancer (Zhang et al., 2017). However, not much is known about a role for spectraplakins neither during lumen formation nor during subcellular branching events. Here, we provide evidence for the involvement of the Drosophila spectraplakin Shot in subcellular lumen formation and luminal branching. Through its actin- and MT- binding domains, Shot is necessary for subcellular lumen formation and branching (Figure 10). This function can be functionally replaced by Tau, another microtubule- associated protein which has been shown to be able to crosslink MTs and actin (Biswas and Kalil, 2018). A similar crosslink between MTs and actin may in place during vertebrate lumen formation and in other subcellular branching events.
 
 ## Materials and methods
 
-## D. melanogaster strains and genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>shot3</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BSDC:2282 FBst0005141</td>
+      <td>Lee et al., 2000</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>shotkakP2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BSDC:29034 FBst0029034</td>
+      <td>Gregory and Brown, 1998</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>shotΔEGC</td>
+      <td>F. Jankovics</td>
+      <td>-</td>
+      <td>Takács et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Rca1G012</td>
+      <td>S.J. Araújo</td>
+      <td>-</td>
+      <td>Ricolo et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tau[MR22]</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:9530 FBst0009530</td>
+      <td>Doerflinger et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>bs0326</td>
+      <td></td>
+      <td>BSDC:83157 FBst0083157</td>
+      <td>Guillemin et al., 1996</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>btl::moeRFP</td>
+      <td>M. Affolter</td>
+      <td>-</td>
+      <td>Ribeiro et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>btl-Gal4</td>
+      <td>M. Affolter</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DSRF4X-Gal4</td>
+      <td>A.Ghabrial M. Metzstein</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-shot L(A) GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:29044 (FBst0029044)</td>
+      <td>Lee and Kolodziej, 2002a</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-shot L(C)-GFP</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC:29042 FBst0029042</td>
+      <td>Lee and Kolodziej, 2002a</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-shot L(C)-GFP</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC:29043 FBst0029043</td>
+      <td>Lee and Kolodziej, 2002a</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-shot-LA-ΔCtail-GFP</td>
+      <td>N. Sanchez-Soriano</td>
+      <td>-</td>
+      <td>Alves-Silva et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-shot-LA-Ctail-GFP</td>
+      <td>N. Sanchez-Soriano</td>
+      <td>-</td>
+      <td>Alves-Silva et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TauGFP</td>
+      <td>M. Llimargas</td>
+      <td>-</td>
+      <td>Llimargas et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bazooka YFP</td>
+      <td>J. Casanova</td>
+      <td>-</td>
+      <td>Gervais and Casanova, 2010</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-srcGFP</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC 5432 FBti0013990</td>
+      <td>Kaltschmidt et al., 2000</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-shot RNAi</td>
+      <td>Bloomington Stock Center</td>
+      <td>BSSC_64041 FBst0064041</td>
+      <td>Perkins et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-lifeActRFP</td>
+      <td>Bloomington Stock Center</td>
+      <td>BDSC:58715 FBti0164961</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>shot::GFP</td>
+      <td>J.Pastor-Pareja</td>
+      <td>-</td>
+      <td>Sun et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti GASP</td>
+      <td>DSHB</td>
+      <td>ID: AB_528492 2A12</td>
+      <td>1:5</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti DE-cad</td>
+      <td>DSHB</td>
+      <td>ID:AB528120 DCAD2</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>guinea Pig anti CP309</td>
+      <td>V. Brodu</td>
+      <td>-</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit and rat anti DSRF</td>
+      <td>J. Casanova</td>
+      <td>-</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-GFP</td>
+      <td>Abcam</td>
+      <td>Catalog # AB6673</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-GFP</td>
+      <td>Invitrogen</td>
+      <td>Catalog # A11122</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>chicken anti-βgal</td>
+      <td>Abcam</td>
+      <td>Catalog # AB134435</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-βgal</td>
+      <td>Promega</td>
+      <td>Catalog # 23783</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse antiacetylated tubulin</td>
+      <td>Millipore</td>
+      <td>Catalog # 3408</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>guinea pig anti Shot</td>
+      <td>K. Röper</td>
+      <td>-</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Tau-1</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # MAB3420 Clone PC1C6</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Actin</td>
+      <td>MP Biomedicals</td>
+      <td>Catalog # 691001</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-dig POD fragments</td>
+      <td>Roche</td>
+      <td>Catalog # 11 207 733 910</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse Cy3 (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Catalog # 115-165-003</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse Alexa555 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A-21424</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse Alexa488 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A11029</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti mouse Alexa647 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A31571</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-chicken Alexa555 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A-21437</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-chicken Alexa488 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A-11039</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-chicken Alexa Fluor 647 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A-21449</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit Alexa 555 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A-21429</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit Alexa488 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A11008</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit Alexa647 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A-21244</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-guinea pig Cy2 (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Catalog # 706-225-148</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-guinea pig 647 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A-21244</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti- mouse Alexa 555 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A31570</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti- mouse Alexa488 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A-21202</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti- mouse Alexa647 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A31571</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti- rabbit Alexa555 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A31572</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti- rabbit Alexa488 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A-21206</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti- rabbit Alexa647 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog #A31573</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-goat Alexa 555 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog #A21432</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-goat Alexa 488 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A32814</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rat Cy3 (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Catalog #712-165-150</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-rat Alexa 488 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A11006</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rat Alexa Fluor647 (Polyclonal)</td>
+      <td>LIFE TECHNOLOGIES/Thermofisher Scientific</td>
+      <td>Catalog # A-21247</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated goat anti-mouse IgM (Polyclonal)</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>Catalog #31804</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Shot mRNA probe</td>
+      <td>This work</td>
+      <td>-</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CBP</td>
+      <td>J. Casanova</td>
+      <td>-</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluostain</td>
+      <td>Sigma-Aldrich</td>
+      <td>FB28</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vectastain-ABC kit</td>
+      <td>Vector Laboratories</td>
+      <td>PKU-400</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TSA Cy3</td>
+      <td>Akoya Bio</td>
+      <td>NEL744001KT</td>
+      <td>1:100</td>
+    </tr>
+  </tbody>
+</table>
+
+### D. melanogaster strains and genetics
 
 shot3 (Lee et al., 2000), shotkakP2 (Gregory and Brown, 1998), shotΔEGC (Takács et al., 2017), Rca1G012 (Ricolo et al., 2016), tau[MR22] (Doerflinger et al., 2003), bs03267 (Guillemin et al., 1996), btl::moeRFP (Ribeiro et al., 2004), btl-Gal4 (Shiga Y., 1996), DSRF4x-Gal4 (gift from A. Ghabrial) UAS-shot L(A) and GFP and UAS-shot L(C)-GFP (Lee and Kolodziej, 2002a), UAS-shot-L(A)-ΔCtail-GFP and UAS-shot-L(A)-Ctail-GFP (Alves-Silva et al., 2012), UAS-TauGFP (Murray et al., 1998 and Llimargas et al., 2004), UAS-srcGFP (Kaltschmidt et al., 2000), UAS-shot-RNAi (TRiP.HMJ23381, BDSC), shot::GFP (Sun., T., 2019), UASlifeActRFP (BDSC), UAS-bazYFP (Gervais and Casanova, 2010). Chromosomes were balanced over LacZ or GFP-labelled balancer chromosomes (BDSC). Overexpression and rescue experiments were carried out either with btl-GAL4 (BDSC) or DSRF4X-GAL4 (M. Metzstein) at 25°C.
 
-## Immunohistochemistry, image acquisition, and processing
+### Immunohistochemistry, image acquisition, and processing
 
 All stage embryos, collected on agar plates overnight (O/N), were dechorionated with bleach and fixed for 20 min (or 10 min for MT staining) in 4% formaldehyde, PBS (0.1 M NaCl 10 mM phosphate buffer, pH 7.4)/Heptane 1:1. Washes were done with PBT (PBS, 0.1% Tween). Primary antibody incubation was performed in fresh PBT-BSA o/n at 4°C. Secondary antibody incubation was done in PBT-BSA at room temperature (RT) in the dark for 2 hr.
 
@@ -174,12 +697,12 @@ Fluorescent in-situ hybridisation (FISH) shot mRNA probe was synthesised using a
 
 Freshly fixed embryos were washed and kept at 56°C in Hybridisation Buffer for 3 hr for pre-hybridisation. In the last 10 min of pre-hybridisation, probes (1:100 in hybridisation buffer) were prepared for hybridisation. The probes were hybridised with the embryos at 56°C overnight. The next day the embryos were washed and incubated in POD-conjugated anti-Dig (in PBT) for 1 hr. The fluorescent signal was developed by the addition of Cy3 Amplification Reagent (1:100) diluted in TSA Amplification Diluent and incubation at room temperature in the dark for 10 min. Afterwards, the embryos were antibody stained and then mounted in Fluoromount medium and analysed.
 
-## Quantification and statistics
+### Quantification and statistics
 
 Total number of embryos and TCs quantified (n) are provided in the figure legends. Measurements were imported and treated in Microsoft Excel, where graphics were generated. Error bars in bar graphics and ±in text denote Standard Error of the Mean (SEM).
 
 Box Plot description: within each box, horizontal central line shows the median; box limits indicate the 25th (bottom) and 75th (top) percentiles as determined by Excel software. Whiskers extend vertically 1.5 times the interquartile range, from the 25th and 75th percentiles. The black x in the box represents the mean and the black dots denote observations outside the range (outliers). Statistical analyses were performed applying the T-test. Differences were considered significant when p<0.05. In graphics; **p<0.01, ***p<0.001.
 
-## Time-lapse imaging
+### Time-lapse imaging
 
 Dechorionated embryos were immobilised with heptane glue on a coverslip and covered with Oil 10 s Voltalef (VWR). To visualise tracheal Shot in vivo, btlGAL4UASShotC-GFP was used in the indicated backgrounds. Actin in tracheal cells was visualised with btl::moeRFP or btlGAL4UASlifeActRFP where indicated. Imaging was done with a spectral confocal microscope Leica TCS SP5. The images were acquired for the times specified over 50–75 µm from st. 15 embryos; Z-projections and videos were assembled using Fiji (Schindelin et al., 2012).

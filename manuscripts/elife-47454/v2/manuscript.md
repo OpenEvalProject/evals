@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.47454.001 Mechanical load of the skeleton system is essential for the development, growth, and maintenance of bone. However, the molecular mechanism by which mechanical stimuli are converted into osteogenesis and bone formation remains unclear. Here we report that Piezo1, a bona fide mechanotransducer that is critical for various biological processes, plays a critical role in bone formation. Knockout of Piezo1 in osteoblast lineage cells disrupts the osteogenesis of osteoblasts and severely impairs bone structure and strength. Bone loss that is induced by mechanical unloading is blunted in knockout mice. Intriguingly, simulated microgravity treatment reduced the function of osteoblasts by suppressing the expression of Piezo1. Furthermore, osteoporosis patients show reduced expression of Piezo1, which is closely correlated with osteoblast dysfunction. These data collectively suggest that Piezo1 functions as a key mechanotransducer for conferring mechanosensitivity to osteoblasts and determining mechanical-load-dependent bone formation, and represents a novel therapeutic target for treating osteoporosis or mechanical unloading-induced severe bone loss.
+Mechanical load of the skeleton system is essential for the development, growth, and maintenance of bone. However, the molecular mechanism by which mechanical stimuli are converted into osteogenesis and bone formation remains unclear. Here we report that Piezo1, a bona fide mechanotransducer that is critical for various biological processes, plays a critical role in bone formation. Knockout of Piezo1 in osteoblast lineage cells disrupts the osteogenesis of osteoblasts and severely impairs bone structure and strength. Bone loss that is induced by mechanical unloading is blunted in knockout mice. Intriguingly, simulated microgravity treatment reduced the function of osteoblasts by suppressing the expression of Piezo1. Furthermore, osteoporosis patients show reduced expression of Piezo1, which is closely correlated with osteoblast dysfunction. These data collectively suggest that Piezo1 functions as a key mechanotransducer for conferring mechanosensitivity to osteoblasts and determining mechanical-load-dependent bone formation, and represents a novel therapeutic target for treating osteoporosis or mechanical unloading-induced severe bone loss.
 
 ## Introduction
 
@@ -42,13 +42,33 @@ Given its widespread function in various cell types and biological processes (Mu
 
 ## Results
 
-## Expression and function of Piezo1 in the osteoblast cell line
+### Expression and function of Piezo1 in the osteoblast cell line
 
 To explore the role of Piezo1 in bone cell types, we initially examined the mechanical response of the commonly used pre-osteoblast cell line MC3T3-E1 and the pre-osteoclast cell line RAW264.7. To this end, we directly measured the mechanically evoked cationic currents using whole-cell patch clamp electrophysiology coupled with mechanical poking of the cell membrane with a piezo-driven blunt glass pipette. MC3T3-E1 displayed mechanically activated currents in a step-dependent manner with a maximal current of 87.7 ± 11.6 pA (Figure 1a,b). By contrast, much smaller mechanically activated currents were recorded in cell of the pre-osteoclast cell line RAW264.7 (24.0 ± 5.0 pA) (Figure 1a,b). In line with the recorded mechanically activated currents, the mRNA of Piezo1 was significantly higher in MC3T3-E1 cells than in RAW264.7 (Figure 1c). Furthermore, either siRNA-mediated knockdown of Piezo1 (Figure 1f,g) or the application of GsMTX4, a relatively specific blocker of the Piezo channel family (Bae et al., 2011), significantly reduced the mechanically activated currents in MC3T3-E1 cells (from 68.6 ± 7.0 pA to 17.3 ± 2.9 pA or 21.7 ± 5.6 pA, respectively) (Figure 1d,e). These data suggest that Piezo1 is expressed and mediates the mechanically activated currents in MC3T3-E1 cells. Interestingly, siRNA-mediated knockdown of Piezo1 in MC3T3-E1 cells decreased the expression of the functional marker genes of osteoblasts revealed by QRT-PCR, including alkaline phosphatase (Alp), osteocalcin (Bglap) and collagen 1 (Col1α1) (Figure 1h), and reduced the Alp staining (Figure 1i). Furthermore, we found that the expression of Piezo1 was increased in MC3T3-E1 cells cultured with osteogenic medium for 1 day, 3 days and 5 days (Figure 1—figure supplement 1a,b). These data suggest that Piezo1 might mediate the mechanical response and function of differentiated osteoblasts. Thus, we next focused on characterizing the role of Piezo1 in primary osteoblasts and in vivo bone formation.
 
-## Expression and function of Piezo1 in primary mouse osteoblasts
+![Figure 1.](https://cdn.elifesciences.org/articles/47454/elife-47454-fig1-v2.jpg)
+
+**Figure 1.:** (a) Representative traces of poking-induced inward currents recorded at −60 mV in the indicated cell lines. (b) Scatter plots of the maximal poking-induced currents in the indicated cell lines. (c) QRT-PCR analysis of Piezo1 mRNA level in the indicated cell lines. (d) Representative traces of poking-induced inward currents recorded at −60 mV in MC3T3-E1 under the indicated conditions. 'siRNA' indicates the siRNA-mediated knockdown of Piezo1. NC, Piezo1 negative-control siRNA. GsMTX4 is a relatively specific blocker of the Piezo channel family. (e) Scatter plots of the maximal poking-induced currents in MC3T3-E1 cells under the indicated conditions. (f, g) QRT-PCR analysis of Piezo1 mRNA level (f) and western blot analysis of Piezo1 protein level (g) in MC3T3-E1 cells transfected with control or Piezo1 siRNA for 48 hr. (h) QRT-PCR analysis of Alp, Bglap, and Col1α1 mRNA levels in MC3T3-E1 cells transfected with control or Piezo1 siRNA for 48 hr. (i) Representative images of Alp staining in MC3T3-E1 cells transfected with control or Piezo1 siRNA for 48 hr. Scale bar, 5 mm. *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47454/elife-47454-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** QRT-PCR analysis of Piezo1 mRNA level. (a) QRT-PCR analysis of Piezo1 mRNA level and (b) western blot analysis of Piezo1 protein level in the osteoblasts cultured with osteogenic medium for 1 day, 3 days and 5 days. All data are the mean ± s.e.m. from three independent experiments. *, p<0.05; **, p<0.01.
+
+### Expression and function of Piezo1 in primary mouse osteoblasts
 
 QRT-PCR analysis revealed that Piezo1 was highly expressed in the bone among the various examined mouse tissues (Figure 2a). To investigate the specific expression and function of Piezo1 in the bone-forming osteoblasts, we chose Ocn-Cre mice—which specifically express Cre recombinase under the osteocalcin (Ocn) gene promoter in osteoblast-lineage cells, but not in osteoclasts (Huang et al., 2016; Zhang et al., 2002)—to generate the conditional Piezo1 KO mice (Piezo1Ocn/Ocn) by crossing the Ocn-Cre mice with the Piezo1fl/fl mice (Cahalan et al., 2015). In line with the study of MC3T3-E1 cells (Figure 1), we detected mRNA and protein expression of Piezo1 in the bone tissue and primary osteoblasts derived from littermate Piezo1fl/fl mice (Figure 2b–e). The Piezo1Ocn/Ocn mice show significantly reduced expression of Piezo1 specifically in the bone, but not other tissues (Figure 2b,c), consistent with the specific knockout of Piezo1 in the bone. Furthermore, osteoblasts that were derived from Piezo1Ocn/Ocn mice also had drastically reduced expression of Piezo1 (Figure 2d,e). Notably, the reduction of Piezo1 was more complete in the osteoblasts than in the whole bone tissue, indicating the possible expression of Piezo1 in non-osteoblast-lineage cells (Figure 2b–e), which could not be ablated by using Ocn-Cre mice. We quantitatively compared the mechanically evoked currents of primary osteoblasts isolated from Piezo1fl/fl and Piezo1Ocn/Ocn mice. Consistent with the recordings from MC3T3-E1 cells, Piezo1fl/fl osteoblasts displayed poking-induced currents in a step-dependent manner with a maximal current of 152.3 ± 21.6 pA (Figure 2f,g). The inactivation Tau of the current is 32.8 ± 4.1 ms (Figure 2f,h). The maximal currents of the Piezo1Ocn/Ocn osteoblasts were significantly reduced to 66.0 ± 14.8 pA (Figure 2f,g), while the inactivation Tau was unchanged (27.8 ± 3.9 ms) (Figure 2f,h). The remaining mechanically evoked currents could be due to incomplete knockout of Piezo1, as residual Piezo1 proteins were detected in the Piezo1Ocn/Ocn osteoblasts (Figure 2e) and the excision rate in osteoblasts of Ocn-Cre mice was estimated to be ~88% (Zhang et al., 2002). Alternatively, other mechanosensitive channels that are independent of Piezo1 might account for the remaining mechanically activated currents in the Piezo1Ocn/Ocn osteoblasts. Nevertheless, these data demonstrate that Piezo1 is expressed and functionally mediates mechanically evoked responses in osteoblasts.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/47454/elife-47454-fig2-v2.jpg)
+
+**Figure 2.:** (a) QRT-PCR analysis of Piezo1 mRNA level in bone and other tissues from WT mice. (b) QRT-PCR analysis of Piezo1 mRNA level in different tissues from Piezo1fl/fl or Piezo1Ocn/Ocn mice. The Piezo1 mRNA level in all tissues from Piezo1Ocn/Ocn mice was normalized to that in Piezo1fl/fl mice. (c) Western blot analysis of Piezo1 protein level in bone tissues from Piezo1fl/fl and Piezo1Ocn/Ocn mice. (d) QRT-PCR analysis of Piezo1 mRNA level in primary osteoblasts isolated from Piezo1fl/fl or Piezo1Ocn/Ocn mice and cultured with osteogenic medium for 5 days. (e) Western blot analysis of Piezo1 protein level in primary osteoblasts cultured with osteogenic medium for 5 days. (f) Representative traces of poking-induced inward currents recorded at −60 mV in primary osteoblasts isolated from Piezo1fl/fl or Piezo1Ocn/Ocn mice. (g, h) Scatter plots of the maximal poking-induced currents (g) and inactivation tau (h) in primary osteoblasts isolated from Piezo1fl/fl or Piezo1Ocn/Ocn mice. (i) Average single-cell Ca2+ imaging traces of Piezo1fl/fl or Piezo1Ocn/Ocn osteoblasts showing the 340/380 ratio of the Ca2+-sensitive Fura-2 dye in response to the application of 30 μM Yoda1. (j) Scatter plot of baseline and Yoda1-induced Fura-2 amplitude changes in Piezo1fl/fl or Piezo1Ocn/Ocn osteoblasts. (k) Western blot analysis of p-CaMKII, CaMKII, p-Creb, Creb, Runx2 and Atf4 proteins in primary osteoblasts cultured with osteogenic medium for 5 days. (l) QRT-PCR analysis of Alp, Bglap and Col1α1 mRNA levels in primary osteoblasts cultured with osteogenic medium for 5 days. (m) Representative images of Alp staining in primary osteoblasts cultured with osteogenic medium for 5 days. Scale bar, 5 mm. The staining data were confirmed by three repeated tests. All data are the mean ± s.e.m. from three independent experiments. **, p<0.01; ***, p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47454/elife-47454-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a, b) QRT-PCR analysis of Piezo1 mRNA level (a) and western blot analysis of Piezo1 protein level (b) in osteoblasts derived from Piezo1fl/fl mice after transfection with pIRES-EGFP (Ctrl) or pCAG-Cre-IRES2-GFP (Cre) plasmid. (c) Representative traces of poking-induced inward currents recorded at −60 mV in an osteoblast from Piezo1fl/fl mice after transfection with Ctrl or Cre plasmid. Cells with green fluorescence were used to record current. (d) Scatter plots of the maximal poking-induced currents in osteoblasts from Piezo1fl/fl mice after transfection with Ctrl or Cre plasmid. (e) Western blot analysis of p-CaMKII, CaMKII, p-Creb, Creb, Runx2 and Atf4 proteins in osteoblasts from Piezo1fl/fl mice after transfection with Ctrl or Cre. (f) QRT-PCR analysis of Alp, Bglap and Col1α1 mRNA levels in osteoblasts from Piezo1fl/fl mice after transfection with Ctrl or Cre plasmid. (g) Representative images of Alp staining in osteoblasts from Piezo1fl/fl mice after transfection with Ctrl or Cre plasmid in osteogenic medium for 5 days. Scale bar, 5 mm. (h) Staining of calcium deposition by Alizarin red in osteoblasts derived from Piezo1fl/fl mice after transfection with Ctrl or Cre plasmid in osteogenic medium for 14 days. Scale bar, 5 mm. All data are the mean ± s.e.m. from three independent experiments. *, p<0.05; ***, p<0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47454/elife-47454-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a, b) QRT-PCR analysis of Piezo1 mRNA level (a) and western blot analysis of Piezo1 protein level (b) in osteocytes from Piezo1fl/fl and Piezo1Ocn/Ocn mice. (c) Representative traces of poking-induced inward currents recorded at −60 mV in osteocytes from Piezo1fl/fl and Piezo1Ocn/Ocn mice. (d) Scatter plots of the maximal poking-induced currents in osteocytes from Piezo1fl/fl and Piezo1Ocn/Ocn mice. (e) QRT-PCR analysis of Sost mRNA levels in bone tissues from Piezo1fl/fl and Piezo1Ocn/Ocn mice. All data are the mean ± s.e.m. from three independent experiments. *, p<0.05; **, p<0.01.
 
 Piezo1 is a non-selective cation channel that allows Ca2+ influx and initiation of downstream Ca2+ signaling events upon its opening. We therefore assayed whether Piezo1 mediates Ca2+ influx in osteoblasts. Using single-cell Ca2+ imaging with the ratiometric Ca2+ dye Fura2, we found that Yoda1, a previously identified Piezo1 chemical activator (Syeda et al., 2015), induced a Ca2+ response in WT osteoblasts, which was drastically reduced in Piezo1Ocn/Ocn osteoblasts (Figure 2i,j). Previous studies have shown that Ca2+ influx could lead to phosphorylation of CaMKII and activate the Creb pathway, promoting osteoblast differentiation (Choi et al., 2013; Zayzafoon et al., 2005). A Piezo-dependent Ca2+-CaMKII signaling pathway has been reported in the axon regeneration process (Song et al., 2019). In line with these previous findings, we found that the phosphorylation of CaMKII and Creb was apparently reduced in osteoblasts derived from the Piezo1Ocn/Ocn cells (Figure 2k). Furthermore, Runx2 and Atf4, key transcription factors involved in osteoblast differentiation, were downregulated in the Piezo1Ocn/Ocn cells (Figure 2k). Consistently, the Piezo1Ocn/Ocn osteoblasts showed decreased expression of the differentiation marker genes (Figure 2l) and reduced Alp activity (Figure 2m), indicating impaired osteogenesis.
 
@@ -58,47 +78,59 @@ Given that Ocn-Cre mice express the Cre recombinase under the osteocalcin (Ocn) 
 
 Collectively, these data suggest that Piezo1 functions as a critical mechanotransduction channel in osteoblast-derived lineage cells in bone, including both osteoblasts and osteocytes.
 
-## The Piezo1Ocn/Ocn mice show defective bone formation
+### The Piezo1Ocn/Ocn mice show defective bone formation
 
 We next examined the in vivo role of Piezo1 in bone formation. Alizarin red and Alcian blue staining revealed that the newborn Piezo1Ocn/Ocn mice had skeletal size similar to that of their Piezo1fl/fl littermates (Figure 3a). However, the Piezo1Ocn/Ocn mice exhibited incomplete closure of the cranial structure (Figure 3a). At 8 weeks of age, the male Piezo1Ocn/Ocn mice showed shorter stature (Figure 3—figure supplement 1a) and lower body weight (Figure 3—figure supplement 1b). The length of the femur and tibia of the Piezo1Ocn/Ocn mice was apparently shorter than that of the Piezo1fl/fl control mice (Figure 3—figure supplement 1c).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/47454/elife-47454-fig3-v2.jpg)
+
+**Figure 3.:** (a) Alcian blue and Alizarin red staining of the skeletons of Piezo1fl/fl or Piezo1Ocn/Ocn mice at 7 days old. (b, c) Representative images showing the three-dimensional cortical bone and trabecular architecture as shown by micro-CT reconstruction at the distal femurs from Piezo1fl/fl or Piezo1Ocn/Ocn mice at 2 months old. Scale bars: (b) 1.0 mm, (c) 0.5 mm. (d) Micro-CT measurements for bone mineral density (BMD), trabecular bone volume fraction (BV/TV), trabecular number (Tb.N), trabecular thickness (Tb.Th), trabecular separation (Tb.Sp) and cortical thickness (Cort.Th) at the distal femurs from Piezo1fl/fl (n = 6) or Piezo1Ocn/Ocn (n = 7) mice. (e) Relative maximal (max.) load at failure determined by three-point bending of femurs from Piezo1fl/fl (n = 6) and Piezo1Ocn/Ocn mice (n = 7). (f) Representative images showing new bone formation assessed by double calcein labeling in Piezo1fl/fl mice (n = 6) and Piezo1Ocn/Ocn mice (n = 7). MAR, mineral apposition rate. BFR/BS, bone formation rate/bone surface. Scale bar, 100 μm. (g) Histology images for Col1α1 and Ocn staining of the proximal tibia from Piezo1fl/fl and Piezo1Ocn/Ocn mice. Scale bar, 25 μm. (h) ELISA analysis of the levels of PINP and Ocn protein levels in the serum from Piezo1fl/fl (n = 8) and Piezo1Ocn/Ocn mice (n = 9). (i) QRT-PCR analysis of Alp, Bglap and Col1α1 mRNA levels in bone tissues collected from Piezo1fl/fl (n = 6) and Piezo1Ocn/Ocn mice (n = 7). All data are the mean ± s.e.m. *, p<0.05; **, p<0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47454/elife-47454-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) The appearance and body length of 2-month-old Piezo1fl/fl and Piezo1Ocn/Ocn mice. (b) The body weight of Piezo1fl/fl (n = 11) and Piezo1Ocn/Ocn mice (n = 11). (c) The appearance and the length of femurs and tibias from Piezo1fl/fl (n = 7) and Piezo1Ocn/Ocn mice (n = 7). (d) Representative images of Trap staining in bone tissue from Piezo1fl/fl and Piezo1Ocn/Ocn mice. N.Oc/B.Pm, osteoclast number/bone perimeter. (e) ELISA analysis of the levels of CTX-1 protein level in the serum from Piezo1fl/fl (n = 10) and Piezo1Ocn/Ocn mice (n = 9). (f) QRT-PCR analysis of Nfatc1, Acp5, Ctsk and Mmp9 mRNA levels in bone tissue from Piezo1fl/fl (n = 6) and Piezo1Ocn/Ocn mice (n = 8). All data are the mean ± s.e.m. **, p<0.01.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/47454/elife-47454-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) QRT-PCR analysis of Piezo1 mRNA level in bone tissue from Piezo1fl/fl or Piezo1Ocn/Ocn female mice at 2 months. (b) Western blot analysis of Piezo1 protein level in bone tissue from Piezo1fl/fl and Piezo1Ocn/Ocn female mice at 2 months. (c, d) Representative images showing three-dimensional cortical bone and trabecular architecture as determined by micro-CT reconstruction at the distal femurs of Piezo1fl/fl or Piezo1 Ocn/Ocn female mice at 2 months old. Scale bars: 1.0 mm (c), 0.5 mm (d). (e) Micro-CT measurements for BMD, BV/TV, Tb.N, Tb.Th, Tb.Sp and Cort.Th in the distal femurs of Piezo1fl/fl or Piezo1Ocn/Ocn female mice. (f) QRT-PCR analysis of Alp, Bglap and Col1α1 mRNA levels in bone tissues collected from Piezo1fl/fl and Piezo1Ocn/Ocn female mice. Each group, n = 3. All data are the mean ± s.e.m. *, p<0.05; **, p<0.01.
 
 We next carried out micro-CT analysis. The bodyweight-bearing long bones of the Piezo1Ocn/Ocn mice exhibited drastic loss of bone mass, reduced thickness and impaired trabeculation (Figure 3b,c). In the Piezo1Ocn/Ocn mice, bone parameters including the trabecular bone mineral density (BMD), bone volume (BV/TV), trabecular number (Tb.N), trabecular thickness (Tb.Th) and cortical bone thickness (Cort.Th) were all significantly decreased, whereas the trabecular spacing (Tb.Sp) was accordingly increased (Figure 3d). The strength of the long bones of the Piezo1Ocn/Ocn mice was only about half of that of the Piezo1fl/fl control littermates (Figure 3e). Moreover, the rate of bone formation and bone formation rate per area of bone surface were significantly reduced in the Piezo1Ocn/Ocn mice (Figure 3f). Consistent with the bone defects, immunostaining analysis revealed that the expression levels of the osteoblast differentiation markers, including Col1α1 and Ocn, were reduced in the tibias of the Piezo1Ocn/Ocn mice (Figure 3g). Accordingly, the levels of Ocn and PINP (N-Propeptide of type I Procollagen) were significantly decreased in serum derived from the Piezo1Ocn/Ocn mice (Figure 3h). Furthermore, the expression of the osteoblast differentiation marker genes was significantly decreased in femurs isolated from the Piezo1Ocn/Ocn mice (Figure 3i). However, the osteoclast activity remained similar in the Piezo1fl/fl and Piezo1Ocn/Ocn mice (Figure 3—figure supplement 1d–f), suggesting an osteoblast-lineage-specific defect in bone formation in the Piezo1Ocn/Ocn mice. As shown in Figure 4, the Piezo1Ocn/Ocn mice examined at 16 weeks of age showed bone defects that were essentially similar to those of mice at 8 weeks of age (Figure 3).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/47454/elife-47454-fig4-v2.jpg)
 
-**Figure 4.:** fl/fl and Piezo1Ocn/Ocn mice.(a) Representative images showing three-dimensional trabecular architecture as determined by micro-CT reconstruction of the distal femurs from the groups of mice indicated. Scale bar, 0.5 mm. (b) Micro-CT measurements for BMD, BV/TV, Tb.N and Tb.Th in the distal femurs from the groups of mice indicated. n = 6 in each group. (c) Relative maximal (max.) load at failure determined by three-point bending of femurs from the groups of mice indicated. Ctrl-Piezo1fl/fl group, n = 9; HS-Piezo1fl/fl group, n = 7; Ctrl- Piezo1Ocn/Ocn group, n = 7; HS-Piezo1Ocn/Ocn group, n = 8. (d) Histology images for Col1α1 and Ocn staining of the proximal tibia from the groups of mice indicated. Scale bar: 25 μm. (e) ELISA analysis of the levels of PINP and Ocn proteins in serum from the groups of mice indicated. Ctrl- Piezo1fl/fl group, n = 9; HS-Piezo1fl/fl group, n = 7; Ctrl-Piezo1Ocn/Ocn group, n = 7; HS-Piezo1Ocn/Ocn group, n = 10. (f) QRT-PCR analysis of Alp, Bglap and Col1α1 mRNA levels in bone tissues collected from the groups of mice indicated. n = 6 in each group. All data are the mean ± s.e.m. *, p<0.05; **, p<0.01; ***, p<0.001.10.7554/eLife.47454.015Figure 4—source data 1.fl/fl  and Piezo1Ocn/Ocn mice.
+**Figure 4.:** (a) Representative images showing three-dimensional trabecular architecture as determined by micro-CT reconstruction of the distal femurs from the groups of mice indicated. Scale bar, 0.5 mm. (b) Micro-CT measurements for BMD, BV/TV, Tb.N and Tb.Th in the distal femurs from the groups of mice indicated. n = 6 in each group. (c) Relative maximal (max.) load at failure determined by three-point bending of femurs from the groups of mice indicated. Ctrl-Piezo1fl/fl group, n = 9; HS-Piezo1fl/fl group, n = 7; Ctrl- Piezo1Ocn/Ocn group, n = 7; HS-Piezo1Ocn/Ocn group, n = 8. (d) Histology images for Col1α1 and Ocn staining of the proximal tibia from the groups of mice indicated. Scale bar: 25 μm. (e) ELISA analysis of the levels of PINP and Ocn proteins in serum from the groups of mice indicated. Ctrl- Piezo1fl/fl group, n = 9; HS-Piezo1fl/fl group, n = 7; Ctrl-Piezo1Ocn/Ocn group, n = 7; HS-Piezo1Ocn/Ocn group, n = 10. (f) QRT-PCR analysis of Alp, Bglap and Col1α1 mRNA levels in bone tissues collected from the groups of mice indicated. n = 6 in each group. All data are the mean ± s.e.m. *, p<0.05; **, p<0.01; ***, p<0.001.
 
 We also analyzed the in vivo role of Piezo1 in female mice. In the Piezo1Ocn/Ocn female mice, the expression of Piezo1 was reduced (Figure 3—figure supplement 2a,b). The bone parameters including the BMD, BV/TV, Tb.N, Tb.Th and Cort.Th were all significantly decreased, whereas the Tb.Sp was accordingly increased (Figure 3—figure supplement 2c,d). The expression of the osteoblast differentiation marker genes was significantly reduced in femurs isolated from the Piezo1Ocn/Ocn female mice (Figure 3—figure supplement 2e). Thus, the Piezo1Ocn/Ocn female mice showed a phenotype similar to that of male mice. Taken together, these data suggest that Piezo1 deficiency in osteoblast-lineage cells significantly impairs the formation and structural integrity of the bone.
 
-## The role of Piezo1 in mechanical-unloading-induced bone loss
+### The role of Piezo1 in mechanical-unloading-induced bone loss
 
 To determine whether a Piezo1-mediated mechanical response in the bone is responsible for mechanical-unloading-induced bone loss, we employed the commonly used hindlimb suspension (HS) model (Wang et al., 2013; Xu et al., 2017) to examine the bone remodeling process in response to the weight-bearing unloading of the Piezo1fl/fl and Piezo1Ocn/Ocn mice. When the Piezo1fl/fl mice were subjected to 28 days of HS, the trabecular bone mass and architecture related parameters, including BMD, BV/TV, Tb.N and Tb.Th, were significantly reduced (Figure 4a,b). These HS-induced phenotypes of the Piezo1fl/fl mice essentially resemble the bone deficits observed in the Piezo1Ocn/Ocn mice without HS treatment (Figure 4a,b). In contrast to the Piezo1fl/fl mice, the Piezo1Ocn/Ocn mice that were subjected to the HS treatment did not show a worsened phenotype in its already impaired bone (Figure 4a,b). Furthermore, HS treatment led to a significant reduction in the bone strength of the hindlimb of the Piezo1fl/fl mice, but not the Piezo1Ocn/Ocn mice (Figure 4c). We observed the corresponding change in the osteoblast function. HS-induced reduction of Ocn and Col1α1 staining in bone tissues (Figure 4d), serum PINP and Ocn levels (Figure 4e), as well as the expression of the differentiation marker genes of osteoblasts (Figure 4f), were specifically observed in the Piezo1fl/fl mice but not in the Piezo1Ocn/Ocn mice. These results demonstrate that the Piezo1fl/fl mice show drastic mechanical-unloading-induced remodeling of the bone, whereas the Piezo1Ocn/Ocn mice are essentially resistant to such remodeling, suggesting that Piezo1 functions as a critical mechanotransducer for the mediation of proper mechanical-load-induced bone remodeling.
 
-## HS or simulated microgravity treatment suppresses the expression of Piezo1 and impairs osteoblast function
+### HS or simulated microgravity treatment suppresses the expression of Piezo1 and impairs osteoblast function
 
 Given the observation that the HS-treated WT mice essentially recapitulated the defective bone phenotypes and osteoblast dysfunction of the Piezo1Ocn/Ocn mice, we asked whether mechanical unloading might lead to decreased expression of Piezo1 in the bone tissue derived from the Piezo1Ocn/Ocn mice. Indeed, the mRNA and protein levels of Piezo1 were significantly reduced in the Piezo1fl/fl mice, but there was no further reduction in these levels in the Piezo1Ocn/Ocn mice after treatment with HS for 28 days (Figure 5a,b). To examine whether mechanical unloading directly alters Piezo1 expression in osteoblasts, we utilized a cell rotation system to generate a microgravity condition that simulated the effect of mechanical unloading on osteoblasts. Intriguingly, when subjected to the simulated microgravity treatment, the primarily derived osteoblasts had significantly reduced expression of Piezo1 (Figure 5c,d). Furthermore, microgravity-treated osteoblasts showed decreased mechanically activated currents (Figure 5e,f). In line with the importance of Piezo1 in determining osteoblast activities, the simulated microgravity treatment led to significantly reduced expression of osteoblast marker genes (Figure 5g) and Alp activity (Figure 5h) in the Piezo1fl/fl cells, but not in the Piezo1Ocn/Ocn cells. These data suggest that mechanical unloading can affect the expression of Piezo1, resulting in dysfunction of osteoblasts and bone formation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/47454/elife-47454-fig5-v2.jpg)
 
-**Figure 5.:** Ocn/Ocn mice and osteoblasts.(a, b) QRT-PCR analysis of Piezo1 mRNA level (a) and western blot analysis of Piezo1 protein level (b) in bone tissues from the groups of mice with the indicated treatment conditions. (c, d) QRT-PCR analysis of Piezo1 mRNA level and western blot analysis of Piezo1 protein level in osteoblasts under control (Ctrl) and simulated microgravity (MG) conditions. (e) Representative traces of poking-induced inward currents recorded at −60 mV in osteoblasts under Ctrl and MG conditions. (f) Scatter plots of the maximal poking-induced currents in osteoblasts under Ctrl and MG conditions. (g) QRT-PCR analysis of Alp, Bglap and Col1α1 mRNA levels in primary osteoblasts isolated from Piezo1fl/fl and Piezo1Ocn/Ocn mice under Ctrl and MG conditions. (h) Representative images of Alp staining in osteoblasts isolated from the indicated mice under Ctrl and MG conditions. Scale bar: 5 mm. All data are the mean ± s.e.m. from three independent experiments. **, p<0.01; ***, p<0.001.10.7554/eLife.47454.017Figure 5—source data 1.
+**Figure 5.:** (a, b) QRT-PCR analysis of Piezo1 mRNA level (a) and western blot analysis of Piezo1 protein level (b) in bone tissues from the groups of mice with the indicated treatment conditions. (c, d) QRT-PCR analysis of Piezo1 mRNA level and western blot analysis of Piezo1 protein level in osteoblasts under control (Ctrl) and simulated microgravity (MG) conditions. (e) Representative traces of poking-induced inward currents recorded at −60 mV in osteoblasts under Ctrl and MG conditions. (f) Scatter plots of the maximal poking-induced currents in osteoblasts under Ctrl and MG conditions. (g) QRT-PCR analysis of Alp, Bglap and Col1α1 mRNA levels in primary osteoblasts isolated from Piezo1fl/fl and Piezo1Ocn/Ocn mice under Ctrl and MG conditions. (h) Representative images of Alp staining in osteoblasts isolated from the indicated mice under Ctrl and MG conditions. Scale bar: 5 mm. All data are the mean ± s.e.m. from three independent experiments. **, p<0.01; ***, p<0.001.
 
-## Mechanical-loading treatment promotes the expression of Piezo1 and osteoblast function
+### Mechanical-loading treatment promotes the expression of Piezo1 and osteoblast function
 
 To determine whether Piezo1-mediated mechanical response in the bone is responsible for mechanical-loading-induced bone formation, we subjected the Piezo1fl/fl and Piezo1Ocn/Ocn mice to an exercise model involving a treadmill for 21 days (Wallace et al., 2007). The mRNA and protein levels of Piezo1 were significantly increased in the Piezo1fl/fl mice, but not in the Piezo1Ocn/Ocn mice (Figure 6a,b). Exercise treatment led to a significant increase in the expression of the osteoblast function marker genes in the Piezo1fl/fl mice, but not in the Piezo1Ocn/Ocn mice (Figure 6c). These data suggest that Piezo1 might respond to mechanical loading in a way that affects bone function.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/47454/elife-47454-fig6-v2.jpg)
 
-**Figure 6.:** (a, b) QRT-PCR analysis of Piezo1 mRNA level (a) and Western blotting analysis of Piezo1 protein level (b) in bone tissues from the groups of mice with the indicated treatment conditions. Ex, Exercise. Ctrl-Piezo1fl/fl group, n = 4; Ex-Piezo1fl/fl group, n = 5; Ctrl-Piezo1Ocn/Ocn group, n = 3; Ex-Piezo1Ocn/Ocn group, n = 4. (c) QRT-PCR analysis of Alp, Bglap and Col1α1 mRNA levels in bone tissues collected from the groups of mice as indicated above. (d, e) QRT-PCR analysis of Piezo1 mRNA level (d) and Western blotting analysis of Piezo1 protein level (e) in osteoblasts isolated from Piezo1fl/fl and Piezo1Ocn/Ocn mice under control (Ctrl) and fluid shear stress (FSS) conditions. (f) QRT-PCR analysis of Alp, Bglap and Col1α1 mRNA levels in osteoblasts isolated from the indicated mice under Ctrl and FSS conditions. (g) Representative images of Alp staining in osteoblasts isolated from the indicated mice under Ctrl and FSS conditions. Scale bar: 1 cm. All data are the mean ± s.e.m. from three independent experiments. *, p<0.05; **, p<0.01; ***, p<0.001.10.7554/eLife.47454.019Figure 6—source data 1.
+**Figure 6.:** (a, b) QRT-PCR analysis of Piezo1 mRNA level (a) and Western blotting analysis of Piezo1 protein level (b) in bone tissues from the groups of mice with the indicated treatment conditions. Ex, Exercise. Ctrl-Piezo1fl/fl group, n = 4; Ex-Piezo1fl/fl group, n = 5; Ctrl-Piezo1Ocn/Ocn group, n = 3; Ex-Piezo1Ocn/Ocn group, n = 4. (c) QRT-PCR analysis of Alp, Bglap and Col1α1 mRNA levels in bone tissues collected from the groups of mice as indicated above. (d, e) QRT-PCR analysis of Piezo1 mRNA level (d) and Western blotting analysis of Piezo1 protein level (e) in osteoblasts isolated from Piezo1fl/fl and Piezo1Ocn/Ocn mice under control (Ctrl) and fluid shear stress (FSS) conditions. (f) QRT-PCR analysis of Alp, Bglap and Col1α1 mRNA levels in osteoblasts isolated from the indicated mice under Ctrl and FSS conditions. (g) Representative images of Alp staining in osteoblasts isolated from the indicated mice under Ctrl and FSS conditions. Scale bar: 1 cm. All data are the mean ± s.e.m. from three independent experiments. *, p<0.05; **, p<0.01; ***, p<0.001.
 
 To further examine whether mechanical force directly alters Piezo1 expression in osteoblasts, we utilized fluid shear stress (FSS) to stimulate osteoblasts. When subjected to 12 dyn/cm2 FSS treatment for 2 hr, the primary osteoblasts derived from Piezo1fl/fl mice had significantly increased expression of Piezo1 (Figure 6d,e) and of the osteoblast marker genes (Figure 6f), as well as increased Alp activity (Figure 6g). By contrast, the FSS-induced effect was not observed in the Piezo1Ocn/Ocn cells. These data suggest that Piezo1 can sense mechanical force and can consequently regulate its own expression, osteoblast function and bone formation.
 
-## Decreased Piezo1 expression correlates with defective osteoblast function in osteoporosis patients and mouse models
+### Decreased Piezo1 expression correlates with defective osteoblast function in osteoporosis patients and mouse models
 
 The close relationship between PIEZO1 expression and function in osteoblasts and bone formation prompted us to explore the pathological role of Piezo1 in human osteoporosis. We examined the expression of Piezo1 in femurs from patients with fractures (Supplementary file 1). Interestingly, the mRNA and protein expression levels of Piezo1 in osteoporosis patients (T ≤ −2.5) were significantly lower than those in control patients (T > −2.5) (Figure 7a,b). Furthermore, the expression of Piezo1 was positively correlated with the expression of the differential marker genes of osteoblasts, including ALP, BGLAP and COL1A1, in these human samples (Figure 7c). By contrast, there are no correlations between the expression of Piezo1 and that of the osteoclast marker genes, including Cathepsin K (CTSK), Tartrate-resistant acid phosphatase (ACP5) and Matrix metalloproteinase 9 (MMP9) (Figure 7d). However, there are also no correlations between the expression of Piezo1 and that of the osteocyte marker genes, including Dentin matrix acidic phosphoprotein 1 (DMP1) and Sclerostin (SOST) (Figure 7e). These data are consistent with the critical role of Piezo1 in osteogenesis and bone formation observed in mouse models.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/47454/elife-47454-fig7-v2.jpg)
 
-**Figure 7.:** (a) QRT-PCR analysis of Piezo1 mRNA level in bone specimens from two T-score groups. T > −2.5 group, n = 10, and T ≤ −2.5 group, n = 10. (b) Western blot analysis of Piezo1 protein level in bone specimens from two T-score groups. T > −2.5 group, n = 7, and T≤- 2.5 group, n = 7. Quantification of Piezo1 protein level was normalized to GAPDH. (c) Correlation analysis between Piezo1 level and the levels of ALP, BGLAP or COL1α1. T > −2.5 group, n = 10, and T ≤ −2.5 group, n = 10. (d) Correlation analysis between Piezo1 levels and the levels of CTSK (cathepsin K), ACP5 (acid phosphatase 5) or MMP9 (matrix metallopeptidase 9). T > −2.5 group, n = 10, and T ≤ −2.5 group, n = 10. (e) Correlation analysis between Piezo1 levels and the level of DMP1 (dentin matrix acidic phosphoprotein 1 ) or SOST (sclerostin). All data are the mean ± s.e.m. *, p<0.05; **, p<0.01; ***, p<0.001.10.7554/eLife.47454.021Figure 7—source data 1.
+**Figure 7.:** (a) QRT-PCR analysis of Piezo1 mRNA level in bone specimens from two T-score groups. T > −2.5 group, n = 10, and T ≤ −2.5 group, n = 10. (b) Western blot analysis of Piezo1 protein level in bone specimens from two T-score groups. T > −2.5 group, n = 7, and T≤- 2.5 group, n = 7. Quantification of Piezo1 protein level was normalized to GAPDH. (c) Correlation analysis between Piezo1 level and the levels of ALP, BGLAP or COL1α1. T > −2.5 group, n = 10, and T ≤ −2.5 group, n = 10. (d) Correlation analysis between Piezo1 levels and the levels of CTSK (cathepsin K), ACP5 (acid phosphatase 5) or MMP9 (matrix metallopeptidase 9). T > −2.5 group, n = 10, and T ≤ −2.5 group, n = 10. (e) Correlation analysis between Piezo1 levels and the level of DMP1 (dentin matrix acidic phosphoprotein 1 ) or SOST (sclerostin). All data are the mean ± s.e.m. *, p<0.05; **, p<0.01; ***, p<0.001.
 
 ## Discussion
 
@@ -112,11 +144,343 @@ Given that the Ocn-Cre mice used in the study could also drive Cre expression in
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ocn-Cre</td>
+      <td>PMID:27966526</td>
+      <td>RRID:MGI:5514364</td>
+      <td>Dr. Xiaochun Bai(Southern Medical University, Guangzhou, China)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Piezo1fl/fl</td>
+      <td>PMID:26001274</td>
+      <td>RRID:MGI:3603204</td>
+      <td>Dr. Ardem Patapoutian(The Scripps Research Institute, La Jolla, United States)</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MC3T3-E1</td>
+      <td>China Infrastructure of Cell Line Resource</td>
+      <td>RRID:CVCL_0409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>RAW264.7</td>
+      <td>China Infrastructure of Cell Line Resource</td>
+      <td>RRID:CVCL_0493</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Piezo1</td>
+      <td>Proteintech</td>
+      <td>Cat#:15939–1-AP</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Gapdh</td>
+      <td>ZSGB-BIO</td>
+      <td>Cat#:TA-08; RRID:AB_2747414</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-p-CamkII</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#:12716 s</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-CamkII</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#:4436 s</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-p-Creb</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#:9198 s</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Creb</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#:9197 s</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Runx2</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#:12556 s</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Atf4</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#:11815 s</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Col1α1</td>
+      <td>Abcam</td>
+      <td>Cat#:ab64883</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Ocn</td>
+      <td>Proteintech</td>
+      <td>Cat#:23418–1-AP</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-Cre-IRES2-GFP</td>
+      <td>Shanghai Biological Technology Co., Ltd. enzyme research</td>
+      <td>Cat#:MY8104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRES-EGFP</td>
+      <td>Addgene</td>
+      <td>Addgene plasmid Cat#:45567</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RT-qPCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See 'Materials and methods'</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant mouse RANKL protein</td>
+      <td>R and D</td>
+      <td>462-TR-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PrimeScript RT reagent Kit</td>
+      <td>TAKARA</td>
+      <td>RR037A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TB Green Premix Ex Taq II (Tli RNaseH Plus)</td>
+      <td>TAKARA</td>
+      <td>RR820A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vector Blue Substrate kit</td>
+      <td>Vector Laboratories</td>
+      <td>SK-5300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DAB kit</td>
+      <td>ZSGB-BIO</td>
+      <td>ZLI-9017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse PINP ELISA Kit</td>
+      <td>Immunoway</td>
+      <td>KE1744</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Ocn ELISA Kit</td>
+      <td>NOVUS</td>
+      <td>NBP2-68151</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse CTX-I ELISA Kit</td>
+      <td>Sangon Biotech</td>
+      <td>D720090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dulbecco's Modified Eagle Medium (DMEM)</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Gibco/Thermo Fisher:11965118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Minimum Essential Medium (MEM) α</td>
+      <td>HyClone</td>
+      <td>SH30265.01B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Opti-MEM I Reduced Serum Medium</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#:31985070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gibco Fetal Bovine Serum</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Gibco/Thermo Fisher:10099141C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin/streptomycin</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#:15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Sigma</td>
+      <td>Sigma D1796</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ascorbic acid</td>
+      <td>Sigma</td>
+      <td>Sigma A4544</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-glycerophosphate</td>
+      <td>Sigma</td>
+      <td>Sigma G9422</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase type 2</td>
+      <td>Worthington</td>
+      <td>Cat#:LS004176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Amresco</td>
+      <td>Cat#:0322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#:13778150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 3000</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#:L3000015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alcian Blue</td>
+      <td>Sigma</td>
+      <td>Cat#:A5268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alizarin red</td>
+      <td>Sigma</td>
+      <td>Cat#:A5533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcein green</td>
+      <td>Sigma</td>
+      <td>Cat#:C0875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://www.graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Osteomeasure Analysis System</td>
+      <td></td>
+      <td>OM-HRDVS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe Illustrator (http://www.adobe.com)</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 To delete Piezo1 specifically in osteoblasts, the conditional KO mice were generated by crossing the Piezo1 floxed mice (Piezo1fl/fl) (a generous gift from Dr. Ardem Patapoutian)(Cahalan et al., 2015) with the Ocn-Cre transgenic mice (a generous gift from Dr. Xiaochun Bai) (Huang et al., 2016). We selected Piezo1Ocn/Ocn as experimental mice, Piezo1fl/fl littermates served as controls. The newborn mice were analyzed by polymerase chain reaction genotyping using genomic DNA from the tail. All animal studies were performed according to approved guidelines for the use and care of live animals (Guideline on Administration of Laboratory Animals released in 1988, and 2006 Guideline on Humane Treatment of Laboratory Animals from China). All the experimental procedures were approved by the Committees of Animal Ethics and Experimental Safety of the China Astronaut Research and Training Center (Reference number: ACC-IACUC-2017–003).
 
-## Cell culture and differentiation
+### Cell culture and differentiation
 
 The mouse osteoblast cell line MC3T3-E1 was maintained in minimum essential Eagle’s medium, α modification (α-MEM) (Gibco) containing 10% fetal bovine serum (Gibco), 100 units/ml penicillin G, and 100 μg / ml streptomycin (Gibco) at 37°C with 5% CO2. Osteogenic medium was prepared by supplementing the maintenance medium with 10 nM dexamethasone (Sigma), 50 µg/ml of ascorbic acid (Sigma) and 10 mM β-glycerophosphate (Sigma). The murine osteoclast cell line RAW 264.7 was maintained in Dulbecco's modiﬁed Eagle's medium (DMEM) with 10% fetal bovine serum, 100 units/ml penicillin G, and 100 μg / ml streptomycin.
 
@@ -126,80 +490,80 @@ Primary osteoblasts were isolated from the calvarial bone of newborn (1–3 d) m
 
 Primary osteocytes were obtained after removal of the bone marrow, and then sequential collagenase and EDTA digestions of the long bone (Stern et al., 2012). Tibias and femurs of 7–9-week-old mice were cleaned to remove muscle and connective tissue. Epiphyses were cut, bone marrow was ﬂushed and the bone was cut into 1-mm to 2-mm lengths. These fragments were incubated in 1 mg/ml collagenase solution for 30 min at 37°C and this cell suspension was discarded. This was repeated two more times, for a total of three digestions. The remaining bone fragments were washed with PBS and incubated for 30 min at 37°C with EDTA (5 mM, PH 7.4) in PBS. Cell suspension was again discarded, and bone fragments were washed with PBS. This was repeated two more times for the incubation of bone chips with collagenase and EDTA. Cell suspension was again discarded and the bone fragments were ﬁnally incubated with 1 mg/ml collagenase for 30 min at 37°C. Cells were collected, passed through a 70-μm nylon mesh and washed twice. These cells were used for subsequent testing.
 
-## Cell transfection
+### Cell transfection
 
 Cells for RNA interference were transfected with Piezo1 siRNA or NC at 70% confluence using Lipofectamine RNAiMAX in OptiMEM as per the manufacturer’s instructions (Invitrogen). Sequences of the siRNA probes were as follows: Piezo1 negative control siRNA (NC), 5′-UUCUCCGAACGUGUCACGUTT-3′; Piezo1 siRNA, 5′-CACCGGCATCTACG TCAAATA-3′.
 
 pIRES-EGFP and pCAG-Cre-IRES2-GFP plasmid transfection, cells at 70% confluence were transfected with 500 ng pIRES-EGFP (Ctrl) and pCAG-Cre-IRES2-GFP (Cre) plasmid using Lipofectamine 3000 in OptiMEM as per the manufacturer’s instructions (Invitrogen), cells were analyzed for QRT-PCR, Western Blot and whole cell electrophysiology mechanical stimulation after transfection for 48 hr. Later, cells were analyzed for alp staining after transfection for 5 days and for Alizarin red staining after transfection for 14 days.
 
-## Whole-cell electrophysiology after mechanical stimulation
+### Whole-cell electrophysiology after mechanical stimulation
 
 MC3T3-E1, RAW 264.7, primary osteoblasts or osteocytes isolated from Piezo1fl/fl and Piezo1Ocn/Ocn mice were cultured on 5 cm2 coverslips. For pCAG-Cre-IRES2-GFP-mediated knockout experiments, the primary osteoblasts derived from Piezo1fl/fl mice were transfected with pIRES-EGFP and pCAG-Cre-IRES2-GFP plasmid for 48 hr, and cells with green fluorescence were isolated for electrophysiological recording. For simulated microgravity treatment, cells were cultured on coverslips in a six-well plate for 24 hr. Next, the coverslips were transferred to a cell cabinet, which was filled up with medium and sealed to prevent air bubbles. The cell cabinet was incubated in the clinostat system, with the clinostat being continuously rotated at 30 rpm/min, at 37°C for 16 hr. The control group was cultured in the same manner without clinorotation. Cells that were grown on coverslips were directly subjected to electrophysiological recording. All experiments were performed at room temperature (22–25°C). Mechanical stimulation was delivered to the cell during the patch-clamp recording at an angle of 80° using a fire-polished glass pipette (tip diameter 3–4 μm) as previously described (Zhao et al., 2016). The downward movement of the probe toward the cell was driven by a Clampex controlled piezo-electric crystal micro-stage (E625 LVPZT Controller/Amplifier; Physik Instrument). The probe had a velocity of 1 μm/ms during the downward and upward motion, and the stimulus was maintained for 150 ms. A series of mechanical steps in 1 μm increments was applied every 20 s, and the currents were recorded at a holding potential of −60 mV. GsMTx4 (Tocris Bioscience) at a concentration of 4 μM was added to the recording chamber for 30 min before the recording. For siRNA-mediated knockdown experiments, the MC3T3-E1 cells were transfected with 100 nM siRNA using Lipofectamine 3000 (Invitrogen) following the manufacturer’s instructions. After 4 to 6 hr, the medium was replaced with fresh α-MEM medium. 48 hr after transfection, the cells were dissociated with trypsin EDTA (GIBCO) and triturated in α-MEM medium (Life Technologies) supplemented with 10% bovine serum. The resulting cells were placed on coverslips and cultured in a humidiﬁed incubator in 5% CO2 at 37°C for 4 hr before the start of recording.
 
-## Single-cell Fura-2 Ca2+ imaging
+### Single-cell Fura-2 Ca2+ imaging
 
 Primary osteoblasts derived from WT and Piezo1 cKO mice and grown on coverslips were subjected to single-cell Fura-2 Ca2+ imaging as described previously (Wang et al., 2018). The Yoda1-induced amplitude change of the 340/380 fluorescence ratio was calculated by subtracting the baseline ratio prior to Yoda1 application. Yoda1 was solubilized in DMSO as a stock solution of 30 mM and diluted to a final concentration of 30 μM using the Ca2+ imaging buffer.
 
-## Quantitative RT-PCR (QRT-PCR)
+### Quantitative RT-PCR (QRT-PCR)
 
 Total RNA from bone tissues or cells was extracted with TRIzol Reagent (Invitrogen) according to the manufacturer's instructions. RNA (0.5 μg) was reverse transcribed with a PrimeScript RT reagent kit (TaKaRa) according to the manufacturer's instructions. cDNA were used to detect mRNA expression by quantitative PCR using TB Green Premix Ex Taq II (Tli RNaseH Plus) (TaKaRa). Gapdh was used as a normal control for mRNA. Primers used are listed in Supplementary file 2.
 
-## Western blot analysis
+### Western blot analysis
 
 Cells were lysed in lysis buffer (50 mM Tris, pH 7.5, 250 mM NaCl, 0.1% SDS, 2 mM dithiothreitol (DTT), 0.5% NP-40, 1 mM PMSF and protease inhibitor cocktail) on ice for 30 min. Bone tissues were ground with a mortar in liquid nitrogen and were lysed in lysis buffer at 4°C for 30 min. Protein fractions were collected by centrifugation at 12,000 g, 4°C for 10 min and then 10 μg of lysates were subjected to SDS-PAGE and transferred to polyvinylidene difluoride (PVDF) membranes. The membranes were blocked with 5% skimmed milk and incubated with specific antibodies overnight. We used the following antibodies to examine the protein levels in the lysates: Piezo1 (Proteintech, Cat# 15939–1-AP), p-CamkII (CST, Cat# 12716 s), CamkII (CST, Cat# 4436 s), p-Creb (CST, Cat# 9198 s), Creb (CST, Cat# 9197 s), Runx2 (CST, Cat# 12556 s), ATF4 (CST, Cat# 11815 s) and Gapdh (ZSGB-BIO, Cat# TA-08) . The ratios of the protein-band intensities relative to that of Gapdh were calculated for each sample using Image J.
 
-## Alkaline phosphatase staining
+### Alkaline phosphatase staining
 
 Alkaline phosphatase staining was monitored using a Vector Blue substrate kit (procedure number SK-5300, Vector Laboratories). According to the protocol, MC3T3-E1 or primary osteoblasts were incubated with the substrate working solution for 20–30 min. The whole procedure was protected from light.
 
-## Alizarin red staining
+### Alizarin red staining
 
 Cells were ﬁxed in 4% paraformaldehyde for 5 min and rinsed with double-distilled H2O. Cells were stained with 40 mM Alizarin red S (Sigma), pH 4.0, for 30 min with gentle agitation. Cells were rinsed ﬁve times with double-distilled H2O and then rinsed for 15 min using 1 × PBS with gently agitation.
 
-## Skeletal whole-mount staining
+### Skeletal whole-mount staining
 
 For skeletal preparation, whole-mount skeletal preparations of 5–7-day-old Piezo1fl/fl and Piezo1Ocn/Ocn mice were prepared by removing the skin and internal organs of the mice before immersion in 95% ethanol for 1–3 days. Specimens were stained with 0.015% Alcian Blue (Sigma) in 80% ethanol with 20% acetic acid. After staining, specimens were washed twice in 95% alcohol for 2 hr, cleared in 1% KOH for 5 hr and stained in 0.005% Alizarin red (Sigma) in 1% KOH for 1 hr. They were then cleared through 20%, 50%, and 80% glycerine in 1% KOH, then stored in 100% glycerine.
 
-## MicroCT analysis
+### MicroCT analysis
 
 For the distal femur, the whole secondary spongiosa of the left distal femur from each mouse was scanned ex vivo using a microCT system (µCT40, SCANCO MEDICAL, Switzerland). Briefly, 640 slices with a voxel size of 10 µm were scanned in the region of the distal femur beginning at the growth plate and extending proximally along the femur diaphysis. Eighty continuous slices beginning at 0.1 mm from the most proximal aspect of the growth plate in which both condyles were no longer visible were selected for analysis. Cortical bone measurements were performed in the diaphyseal region of the femur starting at a distance of 5.0 mm from the distal growth plate and extending a further longitudinal distance of 80 slices in the proximal direction.
 
-## Three-point bending analysis
+### Three-point bending analysis
 
 Immediately after the dissection, the femurs were stored in 70% ethanol. Before mechanical testing, the bones were rinsed in PBS. The three-point bending test (span length, 4.0 mm; loading speed 0.50 mm/s) at the mid femur was made using Texture Analyzer Texture Pro CT V1.6 Build, Brookfield Engineering Labs Inc.
 
-## Assessment of new bone formation
+### Assessment of new bone formation
 
 The mice were injected intraperitoneally with calcein green (10 mg/kg body weight) in a time sequence of 10 d and 2 d before euthanasia. The tibias were harvested for undecalcified histology analysis. Unstained 15 µm sections were examined using fluorescence microscopy. Statistical analyses were performed with the Osteomeasure Analysis System.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 The tibias of mice were fixed with 4% buffered formalin and embedded with paraffin after decalcification with 10% EDTA for 10–15 days, and 5–7 µm sections were prepared on a rotation microtome. Paraffin-embedded sections were deparaffinized in xylene, and rehydrated. Antigen retrieval was performed in citrate buffer (pH 6.0) for 15 min at 94–96°C. The sections were incubated with 5% goat serum for 1 hr at room temperature. The samples were stained with Col1α1 (abcam, Cat# ab64883) and Ocn (proteintech, Cat# 23418–1-AP) antibody overnight at 4°C. After three washes in PBS, corresponding biotinylated secondary antibodies were then added and incubated for 30 min at room temperature. Negative-control experiments were carried out by omitting the primary antibodies. DAB (ZSGB-bio) was used as chromogen, and hematoxylin was used to counterstain. Statistical analyses were performed with the Osteomeasure Analysis System.
 
-## Serum analysis
+### Serum analysis
 
 The analyses were performed according to the manufacturer’s instructions for serum concentrations of PINP (ELISA, Immunoway), Ocn (ELISA, NOVUS) and CTX-1 (ELISA, Sangon Biotech). In brief, 50 µl of serum was pipetted in duplicate into the wells of the precoated ELISA plate. Then, 50 µl of antibody solution was added to each well and incubated at room temperature for 90 min on a shaking device. After incubation, the plates were washed three times with wash buffer.
 
-## Hind-limb suspension mouse model
+### Hind-limb suspension mouse model
 
 The hindlimb-unloading procedure was achieved by tail suspension. Briefly, the 3 month Piezo1fl/fl or Piezo1Ocn/Ocn mice were individually caged and suspended by the tail using a strip of adhesive surgical tape attached to a chain hanging from a pulley. The mice were suspended at a 30° angle to the floor with only the forelimbs touching the floor; this allowed the mice to move and to access food and water freely. The mice were subjected to hindlimb unloading through tail suspension for 28 d. After euthanasia, the whole bone tissues were collected. All animal studies were performed according to approved guidelines for the use and care of live animals (Guideline on Administration of Laboratory Animals released in 1988, and 2006 Guideline on Humane Treatment of Laboratory Animals from China). All of the experimental procedures were approved by the Committees of Animal Ethics and Experimental Safety of the China Astronaut Research and Training Center (Reference number: ACC-IACUC-2017–003).
 
-## Microgravity simulation
+### Microgravity simulation
 
 To simulate microgravity, we used a 2D clinostat, which was designed and provided by the China Astronaut Research and Training Center (Beijing, China). Rotation causes a gravity vector that is not recognizable by cells. Therefore, the device prevents the cells from feeling gravity. In the present study, cells were seeded at a density of 1 × 106 cells in 25 cm2 cell-culture flasks or 2 × 105 cells on 5 cm2 coverslips adhered to the flask. After cell adhesion, flasks or flasks mounted with coverslips were ﬁlled up with culture medium to prevent the presence of air bubbles. The dishes were fixed carefully to the rotating panel of the clinostat system, and rotated at a constant speed of 30 rpm/min for 24 hr to simulate microgravity (0.01 g). For the control, cells were cultured in the same chamber mounted on a stationary clinostat (1 g).
 
-## Exercise mouse model
+### Exercise mouse model
 
 At 4 months of age, mice were divided into four groups: Ctrl- Piezo1fl/fl, Exercise (Ex)-Piezo1fl/fl, Ctrl-Piezo1Ocn/Ocn and Exercise (Ex)-Piezo1Ocn/Ocn. Each exercise group was subjected to running on a treadmill (Zhishuduobao, Beijing, China) at a 5° incline and speed of 12 m/min, 30 min/day for 21 consecutive days. All animal studies were performed according to approved guidelines for the use and care of live animals (Guideline on Administration of Laboratory Animals released in 1988, and 2006 Guideline on Humane Treatment of Laboratory Animals from China). All of the experimental procedures were approved by the Committees of Animal Ethics and Experimental Safety of the China Astronaut Research and Training Center (Reference number: ACC-IACUC-2017–003).
 
-## Fluid shear stress experiment
+### Fluid shear stress experiment
 
 Fluid flow was applied to cells in a parallel plate flow chamber using a closed flow loop. Cells were plated on 22 × 26 mm glass cover slips and placed into chambers at 80% confluence. After treatment with 12 dyn/cm2 FSS for 2 hr, the apparatus was maintained at 37 °﻿C throughout the duration of the experiment. The correlation between FSS and flow rate was calculated using the equation: τ = 6μQ/bh2, where Q is the flow rate (cm3/s), µ is the viscosity of the flow media (0.01 dynes/cm2), h is the height of the channel (0.05 cm), b is the slit width (2.5 cm), and τ is the wall shear stress (dyne/cm2).
 
-## Preparation of human bone tissue
+### Preparation of human bone tissue
 
 The bone tissues of 10 osteoporotic patients and 10 non-osteoporotic people were collected from a clinical setting. The patients were recruited at between 65 and 90 years of age. The classification of the patients into the osteoporotic and non-osteoporotic groups was based on DXA evaluation. We measured the T-score for BMD in the spine of women. A T-score of −2.5 or lower qualifies as osteoporosis. Others were control patients (T > −2.5). We obtained informed consent from all participants. The study protocol conformed to the ethical guidelines of the 1975 Declaration of Helsinki. All clinical procedures were approved by the Committees of Clinical Ethics in the Second Afﬁliated Hospital of Soochow University (Reference number: 2016 K-22).
 
-## Statistical analysis
+### Statistical analysis
 
 All numerical data are expressed as the mean ± SEM from at least three independent samples. Student’s t-test was used for statistical evaluations of two group comparisons. Statistical analysis with more than two groups was performed with one-way analysis of variance (ANOVA). All statistical analyses were performed with Prism software (Graphpad prism for windows, version 6.0). p<0.05 was considered statistically significant.

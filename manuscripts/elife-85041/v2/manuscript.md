@@ -13,14 +13,14 @@
 
 ### Affiliations
 
-1. https://ror.org/05gq02987 Department of Neuroscience, Brown University Providence United States
-2. https://ror.org/05gq02987 Carney Institute for Brain Science, Brown University Providence United States
+1. Department of Neuroscience, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
+2. Carney Institute for Brain Science, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
 
 † Corresponding author
 
 ## Abstract
 
-Transsynaptic tracing methods are crucial tools in studying neural circuits. Although a couple of anterograde tracing methods and a targeted retrograde tool have been developed in Drosophila melanogaster , there is still need for an unbiased, user-friendly, and flexible retrograde tracing system. Here, we describe retro -Tango, a method for transsynaptic, retrograde circuit tracing and manipulation in Drosophila . In this genetically encoded system, a ligand-receptor interaction at the synapse triggers an intracellular signaling cascade that results in reporter gene expression in presynaptic neurons. Importantly, panneuronal expression of the elements of the cascade renders this method versatile, enabling its use not only to test hypotheses but also to generate them. We validate retro -Tango in various circuits and benchmark it by comparing our findings with the electron microscopy reconstruction of the Drosophila hemibrain. Our experiments establish retro -Tango as a key method for circuit tracing in neuroscience research.
+Transsynaptic tracing methods are crucial tools in studying neural circuits. Although a couple of anterograde tracing methods and a targeted retrograde tool have been developed in Drosophila melanogaster, there is still need for an unbiased, user-friendly, and flexible retrograde tracing system. Here, we describe retro-Tango, a method for transsynaptic, retrograde circuit tracing and manipulation in Drosophila. In this genetically encoded system, a ligand-receptor interaction at the synapse triggers an intracellular signaling cascade that results in reporter gene expression in presynaptic neurons. Importantly, panneuronal expression of the elements of the cascade renders this method versatile, enabling its use not only to test hypotheses but also to generate them. We validate retro-Tango in various circuits and benchmark it by comparing our findings with the electron microscopy reconstruction of the Drosophila hemibrain. Our experiments establish retro-Tango as a key method for circuit tracing in neuroscience research.
 
 ## Introduction
 
@@ -42,17 +42,45 @@ To fill this gap, here we present retro-Tango, a retrograde version of trans-Tan
 
 ## Results
 
-## Design of retro-Tango
+### Design of retro-Tango
 
 retro-Tango is the retrograde counterpart of the transsynaptic tracing technique trans-Tango (Talay et al., 2017), and both are based on the Tango assay for G-protein coupled receptors (GPCRs) (Barnea et al., 2008). In the Tango assay, activation of a GPCR by its ligand is monitored via a signaling cascade that eventually results in reporter gene expression. This signaling cascade comprises two fusion proteins. The first is a GPCR tethered to a transcriptional activator via a cleavage site recognized by the tobacco etch virus N1a protease (TEV). The second is the human β-arrestin2 protein fused to TEV (Arr::TEV). A third component is a reporter gene under control of the transcriptional activator. Upon binding of the ligand to the receptor, arrestin is recruited to the activated receptor bringing TEV in close proximity to its recognition site. TEV-mediated cleavage then releases the transcriptional activator that in turn translocates to the nucleus to initiate transcription of the reporter gene. These components are conserved in both transsynaptic tracing techniques, trans-Tango (Talay et al., 2017) and retro-Tango. The novelty in both methods is in the tethering of the ligand to a transmembrane protein to localize it to pre- (trans-Tango), or post- (retro-Tango) synaptic sites. In this manner, the ligand activates its receptor only across the synaptic cleft and initiates the signaling cascade in synaptic partners. In both methods, the human glucagon (GCG) and the human glucagon receptor (GCGR) are used as the ligand-receptor pair, and the GCGR is tethered to the transcriptional activator QF (GCGR::TEVcs::QF) (Figure 1A) .
 
+![Figure 1.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig1-v2.jpg)
+
+**Figure 1.:** (A) The components of retro-Tango. (B) In retro-Tango, all neurons express two of the components of the signaling cascade: human glucagon receptor::TEV cleavage site::QF and human β-arrestin2::TEV protease. They also carry the gene encoding the presynaptic mtdTomato reporter (magenta) under the control of QF. Therefore, all neurons are capable of expressing the reporter. In starter neurons expressing Gal4, the ligand (human glucagon::mouse ICAM5) is expressed along with the GFP reporter (cyan) marking the postsynaptic starter neurons. The mICAM5 fusion localizes the ligand to the postsynaptic sites such that the ligand activates its receptor only across the synapse. Upon activation of the receptor in the presynaptic neuron, the Arrestin-TEV fusion is recruited. TEV-mediated proteolytic cleavage then releases the transcription factor QF from the receptor. QF in turn translocates to the nucleus and initiates transcription of the presynaptic magenta reporter. In neurons that are not presynaptic to the starter neurons, the reporter is not expressed. (C) In the absence of a Gal4 driver, the ligand is not expressed, and the signaling cascade is not triggered, resulting in no expression of the reporters.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The retro-Tango ligand and GFP-tagged Synaptotagmin1 was expressed in Kenyon cells of the mushroom body. The retro-Tango ligand localizes to the cell bodies and the mushroom body calyx where the dendrites of Kenyon cells reside. It is however absent in axons as it does not colocalize with the GFP-tagged Synaptotagmin1. Subset of the z-stack is shown for clarity. Syt::GFP (green), myc (magenta). Scale bar, 10 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Details of the genetic components used in retro-Tango are shown. Schematics are not drawn to scale. Elav: Drosophila melanogaster panneuronal promoter; polyA: polyadenylation signal; nSyb: Drosophila melanogaster panneuronal promoter; DSCP: Drosophila Synthetic Core Promoter; hGCGR: human Glucagon Receptor; TEVcs: cleavage site for N1a protease from the Tobacco Etch Virus; UAS: Upstream Activating Sequence for Gal4; hGCG: human Glucagon analogue with enhanced receptor binding; mICAM5: mouse intercellular adhesion molecule 5; P2A: 2A peptide from porcine teschovirus-1; GFPfar: farnesylated Green Fluorescent Protein; QUAS: Upstream Activating Sequence for QF.
+
 In retro-Tango, the targeting of glucagon to postsynaptic sites is achieved via the mouse intercellular adhesion molecule ICAM5 (Figure 1A). When expressed in Drosophila neurons, this protein is present at low levels in cell bodies and mainly localizes to the dendrites but not the axons, enabling its use as a dendritic marker (Nicolaï et al., 2010). Indeed, upon expression in the Kenyon cells of the mushroom body, the retro-Tango ligand localizes to the cell bodies and the mushroom body calyx, where the dendrites of Kenyon cells are present (Figure 1—figure supplement 1). By contrast, the ligand does not colocalize with Synaptotagmin1, a protein that labels presynaptic termini (Figure 1—figure supplement 1). In retro-Tango, the ligand and the postsynaptic reporter farnesylated GFP are stoichiometrically expressed under the control of the Gal4/UAS system via the self-cleaving P2A peptide (Daniels et al., 2014; Figure 1—figure supplement 2). In this manner, the presence of the ligand is coupled with the GFP signal, eliminating any discrepancy that might arise from differentially expressing them from two separate genomic sites. Both the GCGR::TEVcs::QF and the Arr::TEV fusion proteins are expressed panneuronally, and the expression of the presynaptic reporter mtdTomato is controlled by the QF/QUAS binary system (Potter et al., 2010; Figure 1—figure supplement 2). In postsynaptic starter cells, Gal4 drives the expression of both GFP and the ligand (Figure 1B). The interaction of the ligand with its receptor on the presynaptic partners triggers the retro-Tango cascade that culminates in mtdTomato expression in these neurons. By contrast, the ligand is not expressed in the absence of a Gal4 driver. Therefore, the cascade is not triggered, and no presynaptic signal is observed (Figure 1C). Since the presynaptic components of the pathway are expressed panneuronally, all neurons have the capacity to reveal the presynaptic signal when the ligand is expressed by their postsynaptic partners. Thus, the design of retro-Tango is not inherently biased.
 
-## Validation of retro-Tango
+### Validation of retro-Tango
 
 For the initial validation of retro-Tango, we chose the giant fibers (GFs) of the escape circuit. The GFs are descending command interneurons that respond to neural pathways sensing looming stimuli, such as from a predator. They then relay this information to downstream neurons for the fly to initiate the take-off response (Fotowat et al., 2009; von Reyn et al., 2014). The GFs receive direct input from two types of visual projection neurons: lobula columnar type 4 (LC4) (von Reyn et al., 2017) and lobula plate/lobula columnar type 2 (LPLC2) (Ache et al., 2019). They then integrate this information and convey it to the tergotrochanteral motor neurons (TTMns) and the peripherally synapsing interneurons (PSIs) in the ventral nerve cord (VNC). The GFs form chemical and electrical synapses with both of these types of neurons (Allen et al., 2006). All of these neurons are easily identifiable based on their morphology in the optic lobes or the VNC, rendering the GF system attractive for validating retro-Tango. In addition, there is a specific driver line that expresses only in the GFs (von Reyn et al., 2014). Further, the GFs are clearly annotated in the EM reconstruction of the hemibrain (Zheng et al., 2018), allowing for the comparison of the retro-Tango results with the annotated connectome.
 
 When we initiated retro-Tango from the GFs in adult males, we observed strong presynaptic signal in cells with dense arborizations in the brain and sparse processes in the VNC (Figure 2A). Upon close examination, we noticed few cell bodies in the VNC, suggesting that the VNC signal originates mostly from descending neurons with somata in the brain. As expected, we did not observe retro-Tango signal in the TTMns and PSIs, known postsynaptic partners of the GFs. Importantly, we could identify neurons in the optic lobes with the characteristic dendritic arborizations of the LC4s and the LPLC2s, established presynaptic partners of the GFs. By contrast, when we initiated trans-Tango from the GFs, we observed labeling in their predicted postsynaptic partners (Figure 2—figure supplement 1A). In addition, in trans-Tango experiments, there was little to no signal in the brain. Together, these results show that retro-Tango does not work in the anterograde direction. It is noteworthy that in retro-Tango we observed sporadic asymmetrical signal in the postsynaptic starter neurons, a phenomenon we notice when we use some split-Gal4 drivers. Likewise, we observe asymmetry in the retro-Tango signal in the presynaptic neurons. The stronger signals in the postsynaptic and the presynaptic neurons are in the same hemisphere, likely reflecting higher ligand expression in the starter neurons. Such differences in signal intensity may lead to qualitative differences in presynaptic neurons revealed in each hemisphere. For example, the LC4 neurons (marked by the arrow) are visible only in one hemisphere (Figure 2A). Nonetheless, we conclude that retro-Tango yields strong signal and labels the expected presynaptic partners of the GFs. Further, it does not exhibit false positive signal in the postsynaptic targets of the GFs. These results indicate that retro-Tango is indeed selective to the retrograde direction.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig2-v2.jpg)
+
+**Figure 2.:** (A) Initiating retro-Tango from the GFs (asterisks mark the cell bodies) results in presynaptic signal in the brain and VNC (223±59 neurons in 5 brains, 1±3 neurons in 5 VNCs). Both LC4 (arrow) and LPLC2 (arrowhead) neurons, known presynaptic partners of GFs, are identified by retro-Tango. Note the asymmetry between hemispheres in the signal in the postsynaptic starter neurons and their corresponding presynaptic partners. (B) retro-Tango exhibits little background noise in the absence of a Gal4 driver. Background is observed in the mushroom bodies, in the central complex, and in a few neurons in the VNC (68±10 neurons in 4 brains, 1±1 neurons in 4 VNCs). (C) Ligand expression in EPG neurons of the central complex leads to retro-Tango signal in their known presynaptic partners: PEN, PFR and Δ7 neurons (170±24 neurons in 5 brains). The signal in these neurons can be easily discerned from the background noise. 15do males were analyzed for all panels. Postsynaptic GFP (cyan), presynaptic mtdTomato (magenta) and neuropil (grey). Scale bars, 50 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Initiating trans-Tango from the GFs results in strong postsynaptic signal in the VNC and little to no signal in the brain (4±2 neurons in 4 brains, 48±16 neurons in 4 VNCs). (B) Expression of the trans-Tango ligand in the EPG neurons of the central complex reveals their postsynaptic partners (255±22 neurons in 5 brains). Note the stronger signal in the LAL (arrow) and the weaker signal in the EB (arrowhead) compared to retro-Tango results (Figure 2C). 20do males were analyzed for both panels. Presynaptic GFP (cyan), postsynaptic mtdTomato (magenta) and neuropil (grey). Scale bars, 50 μm. (C) Comparison of the pixel intensities for the signals of retro-Tango and trans-Tango for the EPG circuit in the ellipsoid body (n=5 brains each). (D) Comparison of the pixel intensities for the signals of retro-Tango and trans-Tango for the EPG circuit in the lateral accessory lobes (n=10 hemibrains each). Dots represent data points, the horizonal lines represent the mean and the error bars represent the standard error of the mean. Student’s t-test, *: p<0.05, ****: p<0.0001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Comparison of the pixel intensities in the central complex for the background noise signal of retro-Tango and retro-Tango signal when initiated from EPG neurons (n=5 brains each). Dots represent data points, the horizonal lines represent the mean and the error bars represent the standard error of the mean. Student’s t-test, ****: p<0.0001.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A–B) When retro-Tango is initiated from EPG neurons, the ligand present in the cell bodies does not lead to false positive presynaptic signal in neighboring neurons. For clarity, only a subset of the z-stack projection is shown. 15do males were analyzed. Postsynaptic GFP (cyan), presynaptic mtdTomato (magenta). Scale bars, 10 μm.
 
 It is noteworthy that we do not observe strong background noise with retro-Tango in the absence of a Gal4 driver where the ligand is not expressed (Figure 2B). There is, however, faint background noise in some of the Kenyon cells of the mushroom body as well as in the fan-shaped body and noduli of the central complex. In addition, we occasionally observe sporadic noise in a few neurons in the VNC. This background noise might be due to leaky expression of the ligand, albeit in low levels as reflected by the absence of the GFP signal. Alternatively, it might be due to leaky expression of the postsynaptic reporter mtdTomato itself.
 
@@ -66,7 +94,23 @@ Importantly, initiating retro-Tango from the EPGs resulted in a much stronger si
 
 We next sought to test the age-dependence of the presynaptic signal in retro-Tango. We initiated retro-Tango from the EPGs and examined the signal in adults at days 5, 10, 15, and 20 post-eclosion (Figure 3). We noticed that the signal accumulates and reaches saturation around day 10 post-eclosion (Figure 3—figure supplement 1). A similar analysis with GFs as the starter neurons indicated that the signal keeps accumulating over time in males (Figure 3—figure supplement 2) but not in females heterozygous for the reporter (Figure 3—figure supplement 3). Therefore, we concluded that the accumulation of the retro-Tango signal depends on the circuit of interest, and possibly, on the strength of the driver line being used. To be prudent, we examined adult flies 15 days post-eclosion for the remainder of the study.
 
-## Comparison of retro-Tango with the EM reconstruction of the female hemibrain
+![Figure 3.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig3-v2.jpg)
+
+**Figure 3.:** The retro-Tango signal is observed in 5 day intervals upon ligand expression in the EPGs. The signal accumulates with time and saturates around day 10 post-eclosion. Males were analyzed for all panels. Presynaptic mtdTomato (magenta) and neuropil (grey). Scale bars, 50 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Comparison of the pixel intensities in the central complex for the presynaptic signal in males of different ages where the retro-Tango was initiated from the EPG neurons (n=5 brains each). Dots represent data points, the horizonal lines represent the mean and the error bars represent the standard error of the mean. One-way ANOVA, *: p<0.05, ns: not significant.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) retro-Tango signal is observed in 5-day intervals upon ligand expression in the GFs. The signal accumulates over time. Males were analyzed for all panels. Presynaptic mtdTomato (magenta) and neuropil (grey). Scale bars, 50 μm. (B) Comparison of the pixel intensities in the whole brain for the presynaptic signal in males of different ages where the retro-Tango was initiated from the GF neurons (n=10 hemibrains each). Dots represent data points, the horizonal lines represent the mean and the error bars represent the standard error of the mean. One-way ANOVA, **: p<0.01, ns: not significant.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) retro-Tango signal is observed in 5-day intervals upon ligand expression in the GFs. The signal does not seem to change significantly over time. Females heterozygous for the reporter were analyzed for all panels. Presynaptic mtdTomato (magenta) and neuropil (grey). Scale bars, 50 μm. (B) Comparison of the pixel intensities in the whole brain for the presynaptic signal in females of different ages where the retro-Tango was initiated from the GF neurons (n=10 hemibrains each). Dots represent data points, the horizonal lines represent the mean and the error bars represent the standard error of the mean. One-way ANOVA, ns: not significant.
+
+### Comparison of retro-Tango with the EM reconstruction of the female hemibrain
 
 Having established the system in the GF and EPG circuits, we wished to benchmark it by comparing the presynaptic signal of retro-Tango with the EM reconstruction of the female hemibrain. In the connectome, we found 1101 neurons presynaptic to the giant fiber (Figure 4—figure supplement 1A). We observed fewer (223±60 neurons in 5 brains) presynaptic neurons with retro-Tango (Figure 2A). Based on the EM reconstruction, the number of synapses that these 1101 neurons form with the GF ranges from 1 to 380. We, therefore, reasoned that the number of synapses that a given presynaptic neuron forms with the starter neuron affects whether it is labeled by retro-Tango. In other words, there is a threshold in the number of synapses that a presynaptic neuron makes with a starter neuron under which it cannot be labeled with retro-Tango. Neurons with fewer synapses than this threshold likely constitute the false negatives of retro-Tango. This threshold could be affected by the circuit of interest and by the strength of the driver line.
 
@@ -74,19 +118,39 @@ To determine this threshold, we decided to count the presynaptic neurons of the 
 
 We subsequently used this newly determined threshold to sort the 1101 neurons revealed by the connectome as presynaptic to the GF and identified 265 neurons. We then plotted the skeletonizations of the EM segmentations of these 265 neurons (Figure 4A). When we initiated retro-Tango from the GF in females heterozygous for the reporter, we revealed a strikingly similar pattern (Figure 4B). It is noteworthy that we observe some differences in the retro-Tango signal between males and females. Based on the connectome, LPLC2s form an average of 13 synapses per neuron with the giant fiber (Ache et al., 2019). This is below the threshold, and indeed, we do not observe LPLC2s in females heterozygous for the retro-Tango reporter (Figure 4B). By contrast, we do observe them in males (Figure 2A). This discrepancy could be explained by the location of the presynaptic mtdTomato reporter on the X-chromosome. Accordingly, the reporter expression level in males is higher compared to heterozygous females due to X-chromosome upregulation for dosage compensation (Gorchakov et al., 2009). To test this, we analyzed females homozygous for the presynaptic reporter. In these animals, retro-Tango revealed the LPLC2s as presynaptic to the GFs (Figure 4—figure supplement 2) indicating that doubling of the reporter on the X-chromosome increases the sensitivity of retro-Tango. Thus, the threshold for retro-Tango to reveal the presynaptic partners in hemizygous males or homozygous females is significantly lower than in heterozygous females. This threshold also depends on the age at which the animals are dissected since the retro-Tango signal may accumulate with age (Figure 3—figure supplement 2).
 
-## Specificity of retro-Tango
+![Figure 4.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig4-v2.jpg)
+
+**Figure 4.:** (A) Plotting of the skeletonizations of the EM segmentations of presynaptic partners that connect with the GF via 17 synapses or more. (B) Presynaptic partners of the GFs in a female fly as revealed by retro-Tango. 15do females heterozygous for the tdTomato reporter were analyzed for panel (B). Presynaptic mtdTomato (magenta) and neuropil (grey). Scale bar, 50 μm. Note the high similarity between the patterns in both panels.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Flowchart explaining the steps in the comparison. (B) Driving retro-Tango from the GFs results in nuclear staining in an average of 191 neurons in ten hemibrains. (C) In the absence of a Gal4 driver, retro-Tango has background nuclear staining in 26 neurons. The areas analyzed are marked in light grey based on the approximate regions covered by the published hemibrain connectome. 15do females heterozygous for the nls-DsRed reporter were analyzed for panels (B) and (C). Presynaptic DsRed (magenta) and neuropil (grey). Scale bars, 50 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Initiating retro-Tango from the GFs in females homozygous for the reporter results in presynaptic signal in LPLC2 (arrow) neurons (157±20 neurons in 5 brains). 15do females homozygous for the tdTomato reporter were analyzed. Presynaptic mtdTomato (magenta) and neuropil (grey). Scale bar, 50 μm.
+
+### Specificity of retro-Tango
 
 Having benchmarked retro-Tango in tracing various connections, we sought to determine its specificity and reasoned that sexually dimorphic circuits would be apposite for this analysis. One such circuit involves the anterior dorsal neurons (aDNs), a pair of neurons in each hemisphere that receive inputs from distinct sensory systems in the two sexes. In males, the aDNs receive visual input, whereas in females, the input instead comes from the olfactory and thermo/hygrosensory systems (Nojima et al., 2021). Thus, we decided to use the sexual dimorphism in the inputs to aDNs for testing the specificity of retro-Tango. When we initiated retro-Tango from aDNs in males, we observed strong presynaptic signal in the central brain, and more importantly, in the visual system (Figure 5a). However, we did not observe presynaptic signal in LC10 neurons as would be predicted (Nojima et al., 2021). A possible explanation for the absence of labeling in LC10s could be that the strength of connections between LC10s and aDNs is below the detection threshold of retro-Tango. Alternatively, LC10s may not be directly presynaptic to aDNs as the connections between these neurons were revealed by a non-synaptic version of GRASP (Gordon and Scott, 2009; Nojima et al., 2021). By contrast, in females, we observed two neurons in the lateral antennal lobe tracts, few neurons in the lateral horns (LHs), and neuronal processes in the suboesophageal zone (SEZ) as previously reported (Figure 5B). However, the signal in females is low, likely because they are heterozygous for the presynaptic reporter. Indeed, it seems that retro-Tango does not identify all the presynaptic neurons reported in females (Nojima et al., 2021). Nonetheless, the difference in the signal pattern between male and female brains demonstrates the specificity of retro-Tango.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig5-v2.jpg)
 
-**Figure 5.:** retro-Tango in a sexually dimorphic circuit.(A) Initiating retro-Tango in aDNs in male flies reveals visual projection neurons (arrow) as presynaptic partners (223±59 neurons in 5 brains). (B) Initiating retro-Tango in aDNs in females results in presynaptic reporter expression in the lateral antennal lobe tract (arrowhead), the SEZ (asterisk), and the LH (hash) (24±11 neurons in 5 brains). 15do males hemizygous for the tdTomato reporter (A) and females heterozygous for the reporter (B) were analyzed. Postsynaptic GFP (cyan), presynaptic mtdTomato (magenta) and neuropil (grey). Scale bars, 50 μm.
+**Figure 5.:** (A) Initiating retro-Tango in aDNs in male flies reveals visual projection neurons (arrow) as presynaptic partners (223±59 neurons in 5 brains). (B) Initiating retro-Tango in aDNs in females results in presynaptic reporter expression in the lateral antennal lobe tract (arrowhead), the SEZ (asterisk), and the LH (hash) (24±11 neurons in 5 brains). 15do males hemizygous for the tdTomato reporter (A) and females heterozygous for the reporter (B) were analyzed. Postsynaptic GFP (cyan), presynaptic mtdTomato (magenta) and neuropil (grey). Scale bars, 50 μm.
 
-## Using retro-Tango to trace connections between the CNS and the periphery
+### Using retro-Tango to trace connections between the CNS and the periphery
 
 Our experiments in the giant fiber, the central complex circuits and the aDNs established retro-Tango for tracing connections within the CNS. Next, we wished to examine whether retro-Tango can be used to trace connections between the CNS and the periphery. To achieve this, we turned to two well-characterized circuits: the sex peptide (SP) circuit and the olfactory circuit.
 
 The SP circuit mediates the response of females to the presence of SP in the seminal fluid upon mating. SP is detected by the SP sensory neurons (SPSNs) located in the lower reproductive tract of females (Yapici et al., 2008). SPSNs project to the SP abdominal ganglion (SAG) neurons in the CNS to initiate the post-mating switch, a set of programs that alter the internal state of the female (Feng et al., 2014). Accordingly, initiating retro-Tango from SAG neurons reveals presynaptic signal in a pair of neurons in the lower reproductive tract, consistent with SPSNs (Figure 6A). This result confirms that retro-Tango can be used to reveal connections between the CNS and the periphery.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig6-v2.jpg)
+
+**Figure 6.:** (A) Expression of the retro-Tango ligand in SAG neurons reveals (B) SPSNs (asterisk) as presynaptic partners. (C) When retro-Tango is initiated from Or67d-expressing ORNs, OPNs (arrow) and LNs (arrowhead) are revealed as their presynaptic partners(134±17 neurons in 5 brains). 15do females heterozygous for the tdTomato reporter (A) and males (B) were analyzed. Postsynaptic GFP (cyan), presynaptic mtdTomato (magenta) and neuropil (A, C), or phalloidin (B) (grey). Scale bars, 50 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/85041/elife-85041-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Initiating trans-Tango from the Or67d-expressing ORNs results in strong postsynaptic signal in OPNs and LNs (102±17 neurons in 5 brains). Note the labeling in the mediolateral antennal lobe tract (arrow). 20do males were analyzed for both panels. Presynaptic GFP (cyan), postsynaptic mtdTomato (magenta) and neuropil (grey). Scale bars, 50 μm.
 
 In the olfactory circuit, olfactory receptor neurons (ORNs) located in the antennae and the maxillary palps, the two olfactory sensory organs, project their axons to the antennal lobe, a brain region consisting of multiple neuropil structures called glomeruli. The ORNs that express the same olfactory receptor converge on the same glomerulus where they form synapses with lateral interneurons (LNs) and olfactory projection neurons (OPNs). The OPNs, in turn, relay the information to higher brain areas, primarily the mushroom body (MB) and the LH. Thus, in a simplistic model, the flow of sensory information is from the ORNs to the OPNs while LNs form synapses with both neuronal types. However, all three neuronal types are interconnected via reciprocal synapses (Horne et al., 2018). Therefore, in this circuit, if we initiate retro-Tango in the ORNs, we expect to see presynaptic signal in the OPNs and LNs. We, hence, sought to test retro-Tango in these reciprocal synapses. To this end, we initiated retro-Tango from a subset of ORNs that express the olfactory receptor Or67d and project to the DA1 glomeruli. We, indeed, observed presynaptic signal in OPNs and LNs (Figure 6B). By contrast, when we initiated trans-Tango from the same neurons, we revealed a much stronger signal with some distinct patterns (Figure 6—figure supplement 1). For instance, the mediolateral antennal lobe tract, clearly visible with trans-Tango, is absent in retro-Tango. The distinction between the signals with the two systems can be explained by the higher number of synapses where ORNs are presynaptic to OPNs and LNs than vice versa (Horne et al., 2018). Further, the dissimilarity in the signal patterns observed with retro-Tango and trans-Tango demonstrates the absence of the retro-Tango ligand from the presynaptic sites. Together, these results confirm that retro-Tango can be used to reveal synaptic connections between the CNS and the periphery irrespective of the direction of information flow.
 
@@ -108,23 +172,173 @@ One of the features that retro-Tango shares with trans-Tango is its modular desi
 
 ## Materials and methods
 
-## Fly strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic Reagent(D. melanogaster)</td>
+      <td>GF-split-Gal4</td>
+      <td>von Reyn et al., 2014</td>
+      <td>RRID: BDSC#79602</td>
+      <td>Flybase symbols:P{R17A04-p65.AD}P{R68A06-GAL4.DBD}</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent(D. melanogaster)</td>
+      <td>Or67dGal4</td>
+      <td>Kurtovic et al., 2007</td>
+      <td>FlyBase: FBti0168583</td>
+      <td>Flybase symbol:TI{GAL4}Or67dGAL4-1</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent(D. melanogaster)</td>
+      <td>ss00090-Gal4</td>
+      <td>Wolff and Rubin, 2018</td>
+      <td>RRID: BDSC#75849</td>
+      <td>Flybase symbols:P{R15C03-GAL4.DBD}P{R19G02-p65.AD}</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent(D. melanogaster)</td>
+      <td>SAG-split-Gal4</td>
+      <td>Feng et al., 2014</td>
+      <td>RRID: BDSC#66875</td>
+      <td>Flybase symbols:P{VT007068-GAL4.DBD}P{VT050405-p65.AD}</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent(D. melanogaster)</td>
+      <td>aDN-split-Gal4</td>
+      <td>Nojima et al., 2021</td>
+      <td>FlyBase:FBal0243326FlyBase: FBal0325783</td>
+      <td>Flybase symbols:P{dVP16AD}VGlutOK371-dVP16ADTI{GAL4(DBD)::Zip-}dsxGAL4-DBD</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent(D. melanogaster)</td>
+      <td>QUAS-nls-DsRed</td>
+      <td>Snell et al., 2022</td>
+      <td>RRID: BDSC#95315</td>
+      <td>Isolated from BDSC#95315Flybase symbol:P{5xQUAS-nlsDsRedT4}su(Hw)attP8</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent(D. melanogaster)</td>
+      <td>QUAS-mtdTomato(3xHA)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Will be deposited to Bloomington Drosophila Stock Center</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent(D. melanogaster)</td>
+      <td>retro-Tango(panneuronal)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Will be deposited to Bloomington Drosophila Stock Center</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent(D. melanogaster)</td>
+      <td>retro-Tango(ligand)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Will be deposited to Bloomington Drosophila Stock Center</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent(D. melanogaster)</td>
+      <td>MB247-Gal4</td>
+      <td>Aso et al., 2009</td>
+      <td>RRID: BDSC#50742</td>
+      <td>Flybase symbol:P{Mef2-GAL4.247}</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent(D. melanogaster)</td>
+      <td>UAS-syt::GFP</td>
+      <td>Zhang et al., 2002</td>
+      <td>RRID: BDSC#6924</td>
+      <td>Flybase symbol:P{UAS-syt.eGFP}</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent(D. melanogaster)</td>
+      <td>Reporters +trans-Tango</td>
+      <td>Talay et al., 2017</td>
+      <td>RRID: BDSC#77124</td>
+      <td>Flybase symbols:P{trans-Tango}P{UAS-myrGFP.QUAS-mtdTomato-3xHA}</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-GFP (chicken polyclonal)</td>
+      <td>Gift from Susan Brenner-Morton (Columbia University)</td>
+      <td></td>
+      <td>IHC (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-RFP (guinea pig polyclonal)</td>
+      <td>Gift from Susan Brenner-Morton (Columbia University)</td>
+      <td></td>
+      <td>IHC (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Brp (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>RRID: AB_2314866</td>
+      <td>IHC (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-chicken 488 (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch# 703-546-155</td>
+      <td>RRID: AB_2340376</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-guinea pig 555 (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch# 706-165-148</td>
+      <td>RRID: AB_2340460</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-mouse 647 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific #A-31571</td>
+      <td>RRID: AB_162542</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phalloidin 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: A22287</td>
+      <td>(1:500)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains
 
 All fly lines were maintained in humidity-controlled incubators under standard 12 hr light/12 hr dark cycle. For trans-Tango experiments, flies were kept at 18°C; for all other experiments at 25°C. Flies were reared on standard cornmeal/agar/molasses media.
 
-## Generation of transgenic fly lines
+### Generation of transgenic fly lines
 
 HiFi DNA Assembly (New England Biolabs #2621) was used to generate the plasmids used in this study. The plasmids were then incorporated into su(Hw)attP8, attP40 or attP2 loci using the ΦC31 system.
 
-## QUAS-mtdTomato(3xHA)
+#### QUAS-mtdTomato(3xHA)
 
 The QUAS-mtdTomato(3xHA) was amplified from UAS-myrGFP, QUAS-mtdTomato(3xHA) from the original trans-Tango study (Talay et al., 2017) using the following primers: cacggcgggcatgtcgacactagtgGTTTAAACCCAAGCTTGGATCCGGGTAATCGC and aactaggctagcggccggccttaattaaACTAGTGGATCTAAACGAGTTTTTAAGC. First, the plasmid pUASTattB (Bischof et al., 2007) was digested with SpeI and the whole mix was ligated in order to reverse the orientation of the attB site. The resultant plasmid was digested with BamHI and NheI and the PCR product was cloned into the plasmid via HiFi DNA Assembly. The final plasmid was incorporated into su(Hw)attP8.
 
-## retro-Tango(panneuronal)
+#### retro-Tango(panneuronal)
 
 The retro-Tango(panneuronal) plasmid was generated using the trans-Tango plasmid (Talay et al., 2017). The trans-Tango plasmid was digested with PmeI and AscI to remove the ligand and subsequently ligated to a dsDNA oligo mix containing AAACtaaGGCCGGCCcagGG and CGCGCCctgGGCCGGCCttaGTTT. The final plasmid was incorporated into attP40.
 
-## retro-Tango(ligand)
+#### retro-Tango(ligand)
 
 The retro-Tango(ligand) plasmid was generated using multiple components.
 
@@ -138,12 +352,12 @@ The p10 sequence was amplified from the trans-Tango plasmid using tgtgctctcctgat
 
 All five PCR products were then cloned into pUASTattB11 digested with BamHI and NheI. The final plasmid was incorporated into attP2.
 
-## Immunohistochemistry, imaging, and image processing
+### Immunohistochemistry, imaging, and image processing
 
 Dissection of adult brains, immunohistochemistry, and imaging were performed as described in the trans-Tango article (Talay et al., 2017) with modifications to accommodate for the clearing protocol. Flies were cold anesthetized on ice and dissected in 0.05% PBST. Samples were fixed in 4%PFA/0.5% PBST for 30 min, washed four times in 0.5% PBST, blocked in heat inactivated donkey serum (5% in 0.5% PBST) for 30 min at room temperature. Samples were then treated with the primary antibody solution at 4°C for two overnights. After four washes in 0.5% PBST at room temperature, samples were treated with secondary antibody solution at 4°C for two overnights. After four washes in 0.5% PBST, samples were cleared following a previously published protocol (Aso et al., 2014). Reproductive system dissections were not subjected to the clearing protocol and were directly mounted on a slide (Fisherbrand Superfrost Plus, 12-550-15) using Fluoromount-G mounting medium (SouthernBiotech, 0100–01). Images were taken using confocal microscopy (Zeiss, LSM800) and were processed using the ZEN software from Zeiss. For nuclei counting, Imaris (version 9.1.2 Bitplane) was used. For cell body counting, FIJI (ImageJ2 version 2.3.0) was used and the cell bodies were counted manually. Mean number of cells ± standard deviation was reported in each figure. At least four brains for each figure were observed, a single one is represented in figures. In all images, maximum projections are shown unless otherwise stated.
 
 The pixel intensity analysis was performed on FIJI (ImageJ2 version 2.3.0) as follows. The whole brain (for GF experiments), the central complex (for EPG experiments), or the LAL and the EB (for retro-Tango vs trans-Tango comparisons were selected via hand drawing and their integrated density was measured using the measure function). The mean pixel intensity of the background was calculated using the measure function on an unlabeled part of the brain. The pixel intensity was calculated using the following formula: pixel intensity (AU)=Integrated density of the region of interest – (Area of the region of interest X The mean pixel intensity of the background). Pixel intensities were compared using one-way ANOVA (for >2 conditions) or Student’s t-test (for 2 conditions).
 
-## Comparisons to the Drosophila connectome
+### Comparisons to the Drosophila connectome
 
 Data from the full adult fly brain (FAFB) electron microscopy (EM) volume (Zheng et al., 2018) was analyzed via the hemibrain connectome (Scheffer et al., 2020) using the natverse suite for neuroanatomical analyses in R (Bates et al., 2020a). The neuprintr package (Bates et al., 2022) was used to query the relevant cell types that we used as the starting populations for our retro-Tango experiments, as well as the identity of their presynaptic partners. Synaptic strength was determined as the total number of identified synaptic connections between the starting neuron and its presynaptic partner. Neurons in which the cell bodies were not traced as part of the hemibrain connectome were excluded from our counting experiments. To plot presynaptic cells, we used neuprintr to retrieve skeletonizations of their respective EM segmentations. Since the hemibrain connectome contains only segmentations of neurons from one side of the brain, we used natverse tools for bridging registrations to mirror the presynaptic neurons across the sagittal plane to the opposite hemisphere. Briefly, skeletonizations were translated from the FAFB space to the JFRC2 template (Jenett et al., 2012), which contains information for translating coordinates across sagittal hemispheres. Mirrored skeletonizations were then translated back to the FAFB space and plotted alongside the unmirrored data. The R code used for analysis is available at: https://github.com/anthonycrown/retrotango, (copy archived at Crown, 2022).

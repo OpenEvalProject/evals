@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05byvp690 Department of Molecular Biology, University of Texas Southwestern Medical Center at Dallas Dallas United States
-2. https://ror.org/05byvp690 Department of Pharmacology, University of Texas Southwestern Medical Center at Dallas Dallas United States
+1. Department of Molecular Biology, University of Texas Southwestern Medical Center at Dallas Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+2. Department of Pharmacology, University of Texas Southwestern Medical Center at Dallas Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
 
 † Corresponding author
 
@@ -27,7 +27,7 @@ To test this hypothesis, we employed RNA interference (RNAi) and genetic mutatio
 
 ## Results
 
-## Loss of BMP signaling results in ectopic N pathway activity even when Dl is depleted
+### Loss of BMP signaling results in ectopic N pathway activity even when Dl is depleted
 
 Our previous study showed that depleting the type II receptor Punt (Put) for BMP in progenitor cells (ISC/EB) resulted in precocious ISC-to-EB differentiation, leading to stem cell loss (Tian and Jiang, 2014). In Put deficient progenitor cells, the N pathway was activated in the absence of detectable N ligand Delta (Dl). Progenitor cells deficient for both Put and N failed to differentiate to EBs and formed stem cell-like tumors (Tian and Jiang, 2014). These observations imply that inactivation of Put may unleash a ligand-independent N pathway activity that drives precocious ISC-to-EB differentiation, leading to stem cell depletion. However, it remains possible that a trace amount of Dl that is beyond the detection by immunostaining might activate N in Put deficient progenitor cells.
 
@@ -35,41 +35,49 @@ To further explore the relationship between the BMP and N pathways, we carried o
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig1-v1.jpg)
 
-**Figure 1.:** (A) A scheme for the ISC lineage in Drosophila midgut. (B-E’’) Representative images of Control guts (B–B’’), midguts expressing UAS-Put-RNAi (C–C’’), UAS-Dl-RNAi (D–D’’), or UAS-Put-RNAi+UAS-Dl-RNAi (E–E’’) with esg-Gal4 at 29°C for 10 days and immunostained for Su(H)-lacZ (gray or red) and GFP (green). Su(H)-lacZ is used as a marker for enteroblast (EB). DAPI (blue) staining indicates nuclei. Compared with control guts (ts, UAS-GFPB–B’’), Put knockdown (C–C’’) in precursor cells (green) caused an increase of EB pairs. Dl knockdown induced stem cell-like tumor. Put and Dl double knockdown induced a dramatic increase of EBs. (F) Quantification of percentage of EB cells of each genotype. Data are mean ± SD from three independent experiments. *p<0.05, ****p < 0.0001. One-way ANOVA was performed for statistical comparisons. Scale bar (20 μm) is shown in B.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) A scheme for the ISC lineage in Drosophila midgut. (B-E’’) Representative images of Control guts (B–B’’), midguts expressing UAS-Put-RNAi (C–C’’), UAS-Dl-RNAi (D–D’’), or UAS-Put-RNAi+UAS-Dl-RNAi (E–E’’) with esg-Gal4ts, UAS-GFP at 29°C for 10 days and immunostained for Su(H)-lacZ (gray or red) and GFP (green). Su(H)-lacZ is used as a marker for enteroblast (EB). DAPI (blue) staining indicates nuclei. Compared with control guts (B–B’’), Put knockdown (C–C’’) in precursor cells (green) caused an increase of EB pairs. Dl knockdown induced stem cell-like tumor. Put and Dl double knockdown induced a dramatic increase of EBs. (F) Quantification of percentage of EB cells of each genotype. Data are mean ± SD from three independent experiments. *p<0.05, ****p < 0.0001. One-way ANOVA was performed for statistical comparisons. Scale bar (20 μm) is shown in B.
 
-## Numb is important for ISC maintenance when BMP pathway activity is attenuated
+### Numb is important for ISC maintenance when BMP pathway activity is attenuated
 
 Our previous study showed that partial loss of BMP pathway activity in several genetic backgrounds including Mad RNAi and mad1-2, a hypomorphic allele of mad, did not lead to ISC loss whereas more complete loss of BMP signaling in Put RNAi guts or put mutant ISC-lineage clones resulted in ISC loss. It is possible that a backup mechanism for ISC self-renewal may exist, which could compensate for the partial loss of BMP signaling to prevent ectopic N pathway activation that drives differentiation. During an asymmetric ISC division, the N inhibitor Numb is segregated into the basally localized daughter that becomes the future ISC (Goulas et al., 2012; Sallé et al., 2017). We hypothesized that the asymmetric distribution of Numb may provide such a backup mechanism to ensure that the basally localized ISC daughter has lower N pathway activity than the apically localized one when differential BMP signaling is compromised so that the differential N signaling between the apical and basal is still sufficient to drive asymmetric fate determination. To test this hypothesis, we inactivated Numb and Mad either individually or in combination using two independent approaches: (1) RNAi and (2) genetic mutations. For the RNAi experiments, 3- to 5-day-old females expressing UAS-Numb-RNAi, UAS-Mad-RNAi, or UAS-Numb-RNAi + UAS-Mad-RNAi under the control of esgts were transferred to 29°C for 14 days. The guts were then dissected out for immunostaining to detect the expression of esg>GFP, Dl-lacZ (ISC marker), E(spl)mβ-CD2 (EB marker) and Pros (EE marker). Because preEE expressed both Dl-lacZ and Pros and Dl-lacZ signals could be found in some EBs due to its perdurance, we counted Dl-lacZ+ mβ-CD2− Pros− cells as ISCs and mβ-CD2+ cells as EBs. Compared with control guts (Figure 2A–A’’), Mad (Figure 2B–B’’), or Numb (Figure 2C–C’’) single RNAi guts contained comparable number of Dl-lacZ+ mβ-CD2− Pros− cells and E(spl)mβ-CD2+ cells (Figure 2E–G). By contrast, in Numb and Mad double RNAi guts (Figure 2D–D’’), there was a significant decrease in the number of precursor cells (Figure 2E) and Dl-lacZ+ mβ-CD2− Pros− cells (Figure 2F), and a simultaneous increase in the number of E(spl)mβ-CD2+ cells (Figure 2G), suggesting that inactivation of both Mad and Numb results in stem cell loss, likely due to precocious ISC-to-EB differentiation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig2-v1.jpg)
 
-**Figure 2.:** (A-D’’) Representative images of adult midguts expressing UAS-mCherry-RNAi (Control) (A–A’’), UAS-Mad-RNAi (B–B’’), UAS-Numb-RNAi (C–C’’), and UAS-Mad-RNAi+UAS-Numb-RNAi (D–D’’) with esg-Gal4, tsUAS-GFP at 30°C for 14 days and immunostained for Dl-lacZ (red), E(spl)mβ-CD2 (cytoplasmic magenta), and Pros (nuclear magenta), which are markers for ISC, enteroblast (EB), and enteroendocrine (EE), respectively. DAPI (blue) staining indicates nuclei. Yellow arrows indicate ISCs (Dl-lacZ+ E(spl)mβ-CD2− Pros−), white arrowheads indicate EBs (E(spl)mβ-CD2+), and white arrows indicate EEs (Pros+) in Control, Mad, or Numb single knockdown guts. Red arrow indicated a Dl-lacZ+, E(spl) mβ-CD2+ cells in Mad and Numb double knockdown guts. Scale bar (20 μm) is presented in (A). (E–G) Quantification of number of precursor cells (E), percentage of ISC cells (F), and percentage of EB cells (G) of each genotype. Data are mean ± SD from three independent experiments. *p < 0.05, ****p < 0.0001. One-way ANOVA was performed for statistical comparisons.Figure 2—source data 1.Figure 2E–G.
+**Figure 2.:** (A-D’’) Representative images of adult midguts expressing UAS-mCherry-RNAi (Control) (A–A’’), UAS-Mad-RNAi (B–B’’), UAS-Numb-RNAi (C–C’’), and UAS-Mad-RNAi+UAS-Numb-RNAi (D–D’’) with esg-Gal4ts, UAS-GFP at 30°C for 14 days and immunostained for Dl-lacZ (red), E(spl)mβ-CD2 (cytoplasmic magenta), and Pros (nuclear magenta), which are markers for ISC, enteroblast (EB), and enteroendocrine (EE), respectively. DAPI (blue) staining indicates nuclei. Yellow arrows indicate ISCs (Dl-lacZ+ E(spl)mβ-CD2− Pros−), white arrowheads indicate EBs (E(spl)mβ-CD2+), and white arrows indicate EEs (Pros+) in Control, Mad, or Numb single knockdown guts. Red arrow indicated a Dl-lacZ+, E(spl) mβ-CD2+ cells in Mad and Numb double knockdown guts. Scale bar (20 μm) is presented in (A). (E–G) Quantification of number of precursor cells (E), percentage of ISC cells (F), and percentage of EB cells (G) of each genotype. Data are mean ± SD from three independent experiments. *p < 0.05, ****p < 0.0001. One-way ANOVA was performed for statistical comparisons.
 
 In the second approach, we generated guts that carried mad1-2 or numb4 single mutant clones or mad1-2, numb4 double mutant clones using the MARCM system that positively mark the clones with GFP expression. Three- to five-day-old females of appropriate genotypes were heat-shocked for 1 hr for clonal induction and kept at 18°C for 14 days prior to dissection. ISCs were identified as Dl+ cells or mβ-CD2− Pros− cells containing small nuclei. ISC-containing clones (ISC+) and clones without ISCs (ISC−) were quantified for each genotype. We also quantified the size of ISC-lineage clones for each genotype by counting GFP+ cells in individual clones. Consistent with previous findings (Tian and Jiang, 2014; Sallé et al., 2017), the average size of mad1-2 clones is significantly larger than the control clones (Figure 3A–A’, B–B’, E–E’, F–F’, K) whereas numb4 clones had similar clone size distribution compared with control clones (Figure 3C–C’, G–G’, K). In addition, most of mad1-2 or numb4 clones contained at least one ISC similar to control clones (Figure 3K). However, the average size of mad1-2 numb4 clones is significantly smaller than that of control clones (Figure 3D–D’, H–H’, K). More importantly, a much larger fraction of mad1-2 numb4 clones (~40%; n = 252) did not contain ISC (Figure 3L), many of which only contained ECs with large nuclei and stained positive for Pdm1 (Figure 3I–J’). Taken together, these results suggest mad1-2 numb4 double mutation leads to ISC loss.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig3-v1.jpg)
 
-**Figure 3.:** numb and mad double mutations resulted in loss of intestinal stem cell (ISC).(A-H’) Representative images of adult midguts containing MARCM clones (green) of FRT40 (Control) (A, A’, E, E’), mad (1-2B, B’, F, F’), numb (4C, C’, G, G’), and mad (1-2, numb4D, D’, H, H’) and immunostained for GFP (green) and Dl (red in A–D’) or E(spl)mβ-CD2 and Pros (red in E–H’) at 14 days (grown at 18°C) after clone induction. GFP marks the clones. DAPI (blue) staining indicates nuclei. ISCs inside and outside the clones are indicated by yellow and white arrows, respectively. (I) Representative images of adult midguts containing MARCM clones (green) of control (I, I’) or mad (1-2, numb4J, J’) immunostained for GFP (green), E(spl)mβ-CD2 and Pros (red), and Pdm1 (magenta and gray). Scale bar (20 μm) is presented in (A). (K) Quantification of clone size for the indicated genotypes 14 days after clone induction. (L) Quantification of numbers of clones with or without ISCs. Data are mean ± SD from three independent experiments. **p < 0.01, ****p < 0.0001. ᵡ2 test was performed for statistical comparisons.Figure 3—source data 1.Figure 3L.
+**Figure 3.:** (A-H’) Representative images of adult midguts containing MARCM clones (green) of FRT40 (Control) (A, A’, E, E’), mad1-2 (B, B’, F, F’), numb4 (C, C’, G, G’), and mad1-2, numb4 (D, D’, H, H’) and immunostained for GFP (green) and Dl (red in A–D’) or E(spl)mβ-CD2 and Pros (red in E–H’) at 14 days (grown at 18°C) after clone induction. GFP marks the clones. DAPI (blue) staining indicates nuclei. ISCs inside and outside the clones are indicated by yellow and white arrows, respectively. (I) Representative images of adult midguts containing MARCM clones (green) of control (I, I’) or mad1-2, numb4 (J, J’) immunostained for GFP (green), E(spl)mβ-CD2 and Pros (red), and Pdm1 (magenta and gray). Scale bar (20 μm) is presented in (A). (K) Quantification of clone size for the indicated genotypes 14 days after clone induction. (L) Quantification of numbers of clones with or without ISCs. Data are mean ± SD from three independent experiments. **p < 0.01, ****p < 0.0001. ᵡ2 test was performed for statistical comparisons.
 
-## Inactivation of Numb and Mad leads to precocious ISC-to-EB differentiation
+### Inactivation of Numb and Mad leads to precocious ISC-to-EB differentiation
 
 We employed a two-color lineage tracing system called RGT (Tian and Jiang, 2014; Tian et al., 2017) to determine whether simultaneous inactivation of Numb and Mad would change the outcome of an ISC division. In this system, FLP/FRT-mediated mitotic recombination in individual dividing ISCs will generate two distinctly labeled clones that express either RFP (red) or GFP (green) (Figure 4A). As shown schematically in Figure 4B, asymmetric ISC division (ISC/EB) will generate one clone with multiple cells and a twin spot that contains only one EC. Symmetric self-renewing division (ISC/ISC) will produce two multiple-cell clones whereas symmetric differentiation division (EB/EB) will produce two clones each of which contains one EC. Control or RNAi expressing adult flies containing hs-FLP FRT19A ubi-GFPnls/FRT19A ubi-mRFPnls; esgts were grown at 29°C for 8 days (for Mad-RNAi only) or 14 days (for control, Numb-RNAi, and Numb-RNAi + Mad-RNAi) before clone induction by heat shock at 37°C for 1 hr. After clone induction, the flies were incubated at 18°C for another 4 days before guts were dissected out for analysis (Figure 4C). The frequencies of ISC/EB, ISC/ISC, and EB/EB divisions in control guts were 69%, 15%, and 16%, respectively (n = 119) (Figure 4D–F, P). Mad RNAi guts had higher frequency of ISC/ISC (30%), and lower frequency of EB/EB (5%) division compared to control guts (n = 73) (Figure 4G–I, P). The increase in symmetric self-renewing division in Mad RNAi guts is likely due to an increase in BMP ligand production in these guts because BMP signaling in EC inhibits BMP ligand expression (Tian et al., 2017). The frequencies of different ISC division classes in Numb RNAi guts are comparable to those of control guts (ISC/EB: 73%, ISC/ISC: 18%, EB/EB: 9%, n = 127) (Figure 4J–L, P). By contrast, Mad and Numb double RNAi guts had lower frequency of ISC/ISC division (11%) and much higher EB/EB division (37%) than control guts (n = 54) (Figure 4M–P). Thus, inactivation of Numb in backgrounds where BMP signaling was compromised altered the ISC division outcome that favors symmetric differentiation division leading to ISC loss.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig4-v1.jpg)
 
-**Figure 4.:** (A) Scheme of an ISC division that produces differentially labeled daughter cells (RFP+ GFP− and RFP− GFP+) through FRT-mediated mitotic recombination. Adapted from Tian and Jiang, 2014. (B) Scheme of differentially labeled twin clones generated by FLP/FRT-mediated mitotic recombination of dividing ISCs. Adapted from Tian and Jiang, 2014. (C) Scheme of twin-spot experiments. Three- to five-day-old adult flies of indicated genotype are grown at 29°C for 14 days before heat shock to induce clones. After 1-day recovery at 29°C, the flies are raised at 18°C for 4 days prior to analysis. (D–O) Representative images of twin-spot clones from adult midguts of the indicated genotypes. Scale bar 20 μm is shown in (D). (P) Quantification of twin spots of different classes from guts of the indicated genotypes. Data are mean ± SD from three independent experiments. *p < 0.05, **p < 0.01. ᵡ2 test was performed for statistical comparisons.Figure 4—source data 1.Figure 4P.
+**Figure 4.:** (A) Scheme of an ISC division that produces differentially labeled daughter cells (RFP+ GFP− and RFP− GFP+) through FRT-mediated mitotic recombination. Adapted from Tian and Jiang, 2014. (B) Scheme of differentially labeled twin clones generated by FLP/FRT-mediated mitotic recombination of dividing ISCs. Adapted from Tian and Jiang, 2014. (C) Scheme of twin-spot experiments. Three- to five-day-old adult flies of indicated genotype are grown at 29°C for 14 days before heat shock to induce clones. After 1-day recovery at 29°C, the flies are raised at 18°C for 4 days prior to analysis. (D–O) Representative images of twin-spot clones from adult midguts of the indicated genotypes. Scale bar 20 μm is shown in (D). (P) Quantification of twin spots of different classes from guts of the indicated genotypes. Data are mean ± SD from three independent experiments. *p < 0.05, **p < 0.01. ᵡ2 test was performed for statistical comparisons.
 
-## Numb mutant clones exhibit weak ISC loss phenotype
+### Numb mutant clones exhibit weak ISC loss phenotype
 
 When we examined adult midguts containing numb4 clones, we noticed a slight increase in the frequency of ISC− clones compared to the control guts even though the average clone size of numb4 clones was comparable to that of the control clones (Figure 3K, L), suggesting that numb mutation may result in a mild stem cell loss phenotype. To verify this result, we examined another numb allele, numb15. By immunostaining for Dl expression that marks ISC, we found that both numb4 and numb15 clones contained similarly higher frequencies of Dl− clones than the control clones (Figure 5A–C’, E). Consistent with previous findings (Bardin et al., 2010; Sallé et al., 2017), most numb15 clones grew into large size similar to the control clones (Figure 5D), suggesting that many ISC− numb clones lost ISC at late stages during their clonal growth. We also examined Pros expression and found that numb mutant clones did not contain Pros+ cells (Figure 5—figure supplement 1A–C’), which is consistent with a previous study showing that numb is required for EE fate regulation (Sallé et al., 2017).
 
-## Numb is important for ISC maintenance during regeneration
+![Figure 5.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig5-v1.jpg)
+
+**Figure 5.:** (A-C’) Representative images of adult midguts containing MARCM clone (green) of FRT40 (Control) (A, A’), numb4 (B, B’), and numb15 (C, C’) and immunostained for Dl (red), GFP (green), and DAPI (blue) at 14 days after clone induction. GFP marks the clones. Intestinal stem cells (ISCs) inside and outside the clones are indicated by yellow and white arrows, respectively. Scale bar (20 μm) is shown in (A). (D) Quantification of clone size distribution for the indicated genotypes at 14 days after clone induction. (E) Quantification of numbers of clones with or without ISC. Data are mean ± SD from three independent experiments. *p < 0.05, **p < 0.01. ᵡ2 test was performed for statistical comparisons.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A-C’) MARCM clone (green) of control (A, A’), numb4 (B, B’), and numb15 (C, C’) are stained for Pros (red) at 14 days after clone induction. Representative clone in control guts (A, A’) contains EE cells (Pros positive), as indicated with yellow arrows. Representative clones in numb4 (B, B’) and numb15 (C, C’) guts do not contain any EE cells. Scale bar (20 μm) is presented in (A).
+
+### Numb is important for ISC maintenance during regeneration
 
 The weak ISC loss phenotype associated with numb mutant clones could be due to fluctuation in BMP pathway activity under normal homeostasis because the expression of two BMP ligands Dpp and Gbb is uneven in homeostatic guts (Tian and Jiang, 2014). If so, the stem cell loss phenotype caused by numb mutations could be enhanced under conditions where tissue damage causes more dramatic and widespread fluctuation in BMP signaling activity in regenerative guts. To test this possibility, we fed adult female flies carrying either control or numb clones in the guts with sucrose (mock), bleomycin, or dextran sodium sulfate (DSS). In mock-treated control guts, approximately 12% (n = 178) of the clones did not contain Dl+ cell, while 21% (n = 216) of the numb4 and 24% (n = 219) of the numb15 clones were void of stem cells (Figure 6A–A’, D–D’, G–G’, J). Previous studies showed that bleomycin treatment caused EC damage and enhanced the fluctuation in BMP ligand production whereas DSS affected basement membrane organization but did not increase the fluctuation in BMP ligand production (Amcheslavsky et al., 2009; Tian et al., 2017). In guts treated with bleomycin, 12% (n = 160) of control clones did not contain Dl+ cells (Figure 6B–B’, J). However, bleomycin feeding resulted in a dramatic increase of Dl− ISC-lineage clones in guts containing numb mutant clones as Dl+ cells were absent in 43% (n = 149) of numb4 and 45% (n = 213) of numb15 clones (Figure 6E–E’, H–H’, J). By contrast, DSS feeding did not increase the frequency of Dl− clones in guts containing numb mutant clones, as the frequencies of Dl− clones in control, numb4 and numb15 clonal guts were 10% (n = 167), 24% (n = 165), and 21% (n = 141), respectively (Figure 6C–C’, F–F’, I–I’ J). Bleomycin also resulted in a reduction in numb mutant clone size, as compared with the mock treatment (Figure 6K). Taken together, these results suggest that Numb plays an important role in ISC maintenance in regenerative guts in response to bleomycin-induced tissue damage.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig6-v1.jpg)
 
-**Figure 6.:** (A–I’) Adult flies of indicated genotype were treated with sucrose, bleomycin, or dextran sodium sulfate (DSS) for 24 hr at 14 days after clone induction and recovered for another 4 days before dissection. Guts containing MARCM clones of the indicated genotype were stained for GFP (green) and Dl (red). GFP marks the clones. DAPI (blue) staining indicates the nuclei. Stem cells inside and outside the clones are indicated by yellow and white arrows, respectively. Scale bar (20 μm) is shown in (A). (J) Quantification of the percentage of clones with or without ISCs. (K) Quantification of clone size distribution for the indicated genotypes. Data are mean ± SD from three independent experiments. *p < 0.05, **p < 0.01, ****p < 0.0001. ᵡ2 test was performed for statistical comparisons.Figure 6—source data 1.Figure 6J.
+**Figure 6.:** (A–I’) Adult flies of indicated genotype were treated with sucrose, bleomycin, or dextran sodium sulfate (DSS) for 24 hr at 14 days after clone induction and recovered for another 4 days before dissection. Guts containing MARCM clones of the indicated genotype were stained for GFP (green) and Dl (red). GFP marks the clones. DAPI (blue) staining indicates the nuclei. Stem cells inside and outside the clones are indicated by yellow and white arrows, respectively. Scale bar (20 μm) is shown in (A). (J) Quantification of the percentage of clones with or without ISCs. (K) Quantification of clone size distribution for the indicated genotypes. Data are mean ± SD from three independent experiments. *p < 0.05, **p < 0.01, ****p < 0.0001. ᵡ2 test was performed for statistical comparisons.
 
 ## Discussion
 
@@ -87,40 +95,302 @@ Based on our findings in current and previous studies, we propose the following 
 
 ## Materials and methods
 
-## Drosophila genetics and transgenes
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>esg-Gal4</td>
+      <td>Jiang et al., 2009</td>
+      <td>FLYB: FBti0013268</td>
+      <td>FlyBase symbol: P{GawB}NP5130</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dl-lacZ</td>
+      <td>Zeng et al., 2010</td>
+      <td>FLYB: FBti0004778</td>
+      <td>FlyBase symbol: P{PZ}Delta[05151]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Su(H)-lacZ</td>
+      <td>Zeng et al., 2010</td>
+      <td>FLYB: FBtp0014034</td>
+      <td>FlyBase symbol: P{Ddc.E(spl)m8-HLH-lacZ.Gbe}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>E(spl)mβCD2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 83353FLYB: FBst0083353RRID:BDSC_83353</td>
+      <td>FlyBase symbol: w[*]; l(2)*[*]/CyO, P{ry[+t7.2]=en1}wg[en11]; P{w[+mC]=E(spl)mbeta-HLH-CD2.dC}T6</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tub-Gal80ts</td>
+      <td>Jiang et al., 2009</td>
+      <td>FLYB: FBti0027796</td>
+      <td>FlyBase symbol: P{tubP-GAL80ts}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Put RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC 107071FLYB: FBst0478894RRID:Flybase_FBst0473060</td>
+      <td>FlyBase symbol: P{KK102676}VIE-260B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dl RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 28032FLYB: FBst0028032RRID:BDSC_28032</td>
+      <td>FlyBase symbol: y (1) v(1); P{TRiP.JF02867}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Mad RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC 12635FLYB:FBst0450590RRID:Flybase_FBst0450590</td>
+      <td>FlyBase symbol: w1118; P{GD4121}v12635</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Numb RANi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 35045FLYB: FBst0035045 RRID:BDSC_35045</td>
+      <td>FlyBase symbol: y(1) sc[*] v(1) sev(21); P{y[+t7.7] v[+t1.8]=TRiP.HMS01459}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCherry RANi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 35785FLYB: FBst0035785RRID:BDSC_35785</td>
+      <td>FlyBase symbol: y(1) sc[*] v(1) sev(21); P{y[+t7.7] v[+t1.8]=VALIUM20-mCherry.RNAi}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>numb4</td>
+      <td>Skeath and Doe, 1998</td>
+      <td>FLYB: FBal0090215</td>
+      <td>FlyBase symbol: numb(4)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>numb15</td>
+      <td>Sallé et al., 2017</td>
+      <td>FLYB: FBal0146969</td>
+      <td>FlyBase symbol: numb(15)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>mad1-2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 7323FLYB: FBst0007323RRID:BDSC_7323</td>
+      <td>FlyBase symbol: w*; Mad(; 1-2) P{neoFRT}40A/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT 40A</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 8212FLYB: FBst0008212RRID:BDSC_8212</td>
+      <td>FlyBase symbol: w[1118]; P{ry[+t7.2]=neoFRT}40A/CyO; P{ry[+t7.2]=ey-FLP.N}6, ry[506]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>yw, hs-FLP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 1929FLYB: FBst0001929RRID:BDSC_1929</td>
+      <td>FlyBase symbol: P{ry[+t7.2]=hsFLP}12, y(1) w[*]; sna[Sco]/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT 40A, tub-GAL80</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 5192FLYB: FBst0005192RRID:BDSC_5192</td>
+      <td>FlyBase symbol: y(1) w[*]; P{w[+mC]=tubP-GAL80}LL10 P{ry[+t7.2]=neoFRT}40A/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 5130FLYB: FBst0005130RRID:BDSC_5130</td>
+      <td>FlyBase symbol: y(1) w[*]; betaTub60D[Pin-Yt]/CyO; P{w[+mC]=UAS-mCD8::GFP.L}LL6</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT 19A</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 1709FLYB: FBst0001709RRID:BDSC_1709</td>
+      <td>FlyBase symbol: P{ry[+t7.2]=neoFRT}19A; ry[506]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-GFPnls</td>
+      <td>Chen and Schüpbach, 2006</td>
+      <td>FLYB: FBti0015575</td>
+      <td>FlyBase symbol: P{Ubi-GFP(S65T)nls}X</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT 19A, ubi-mRFPnls</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 31418FLYB: FBst0031418RRID:BDSC_31418</td>
+      <td>FlyBase symbol: P{w[+mC]=Ubi-mRFP.nls}1, w[*], P{ry[+t7.2]=hsFLP}12P{ry[+t7.2]=neoFRT}19A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab13970; RRID:AB_300798</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-Galactosidase (rabbit polyclonal)</td>
+      <td>MP Biomedicals</td>
+      <td>Cat#: 08559761RRID:AB_3675281</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rat CD2 (mouse monoclonal)</td>
+      <td>Bio-Rad</td>
+      <td>Cat#: MCA154GARRID:AB_566608</td>
+      <td>IF (1:2000) (Formerly AbD Serotec)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Dl extracellular domain (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#: c594.9bRRID:AB_528194</td>
+      <td>IF (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Prospero (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#: ProsperoRRID:AB_528440</td>
+      <td>IF (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Pdm1(rabbit polyclonal)</td>
+      <td>Dr. Xiaohang Yang</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Chicken Alexa Fluor 488 (goat polyclonal secondary)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A-11039RRID:AB_2534096</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mouse Alexa Flour 546 (goat polyclonal secondary)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A-11030RRID:AB_2737024</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit Alexa Flour 546 (goat polyclonal secondary)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A-11035RRID:AB_2534093</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mouse Cy5 (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat#: 115-175-166RRID:AB_2338714</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit Cy5 (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat#: 111-175-144RRID:AB_2338013</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI (4′,6-diamidino-2-phenylindole, dihydrochloride)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: D1306</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSS (dextran sulfate sodium)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 42867</td>
+      <td>5% solution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bleomycin sulfate from Streptomyces verticillus</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: B8416</td>
+      <td>25 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Fisher Bioreagent</td>
+      <td>Cat#: BP220-212</td>
+      <td>5% solution</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila genetics and transgenes
 
 Flies were maintained on cornmeal at 25°C. Transgenic lines and mutants include: UAS-Put-RNAi (VDRC #107071); UAS-Dl-RNAi (BL#28032); UAS-Mad-RNAi (VDRC #12635); UAS-Numb-RNAi (BL #35045); UAS-mCherry-RNAi (BL #35785); tub-Gal80ts, esg-Gal4, Su(H) Gbe-lacZ (Su(H)-lacZ); E(spl)mβ-CD2 (BL#83353); numb4 is a strong allele, numb15 is a null allele, and mad1-2 is a hypomorphic allele (Flybase). yw hs-FLP UAS-GFP; tub-Gal80 FRT40A was used for MARCM clonal analysis. yw hs-FLP FRT19A ubi-GFPnls and yw FRT19A ubi-mRFPnls were used for twin-spot clone analysis. For experiments involving tubGal80ts, crosses were set up and cultured at 18°C to restrict Gal4 activity. Two- to three-day-old progenies were shifted to 29°C for the indicated periods of time to inactivate Gal80ts, allowing Gal4 to activate UAS transgenes in all experiments, only the female posterior midguts were analyzed.
 
-## Genotypes for Drosophila used in each figure
+### Genotypes for Drosophila used in each figure
 
-## Figure 1
+#### Figure 1
 
-## Figure 2
+#### Figure 2
 
-## Figure 3
+#### Figure 3
 
-## Figure 4
+#### Figure 4
 
-## Figure 5, Figure 5—figure supplement 1
+#### Figure 5, Figure 5—figure supplement 1
 
-## Figure 6
+#### Figure 6
 
-## MARCM clone analysis
+### MARCM clone analysis
 
 For MARCM clone induction, crosses were set up and cultured at 18°C to avoid spontaneous clones. 2-to-3-day-old females were subjected to heat shock at 37°C for 1 hr and then kept at 18°C for another 14 days before dissection. Flies were transferred to new vials with fresh food every 2 days. The sizes of the clones were quantified from at least 10 midguts for each genotype.
 
-## Twin-spot clone analysis
+### Twin-spot clone analysis
 
 For twin-spot clone generation, 2- to 3-day-old flies were kept at 29°C for 14 days and heat-shocked at 37°C for 1 hr and then raised at 29°C for another 4 days before dissection. Flies were transferred to new vials with fresh food every 2 days.
 
-## Feeding experiments
+### Feeding experiments
 
 Flies were cultured in an empty vial containing a piece of 2.5 × 3.75 cm chromatography paper (Fisher) wet with 5% sucrose (MP Biomedicals) solution as feeding medium (mock treatment) or with 25 μg/ml bleomycin (Sigma-Aldrich) or 5% DSS (40 kDa; MP Biomedicals) for 1 day at 30°C. After treatment, flies were recovered on normal food at 18°C for another 4 days before dissection.
 
-## Immunostaining
+### Immunostaining
 
 Female flies were used for gut immunostaining in all experiments. The entire gastrointestinal tract was taken and fixed in 1× PBS plus 8% EM grade formaldehyde (Polysciences) for 2 hr. Samples were washed and incubated with primary and secondary antibodies in a solution containing 1× PBS, 0.5% goat serum (Thermo Fisher), and 0.1% Triton X-100 (Bio-rad). The following primary antibodies were used: mouse anti-Delta (DSHB), 1:10; rabbit anti-LacZ (MP Biomedicals), 1:1000; mouse anti-CD2 (Thermo Fisher), 1:1000; chicken anti-GFP (Abcam), 1:1000; mouse anti-Pros (DSHB), 1:10; rabbit anti-Pdm1 (from Dr. Xiaohang Yang), 1:1000; Alexa Fluor-conjugated secondary antibodies were used at 1:1000 (Invitrogen). DAPI (4′,6-diamidino-2-phenylindole) is a nuclear dye (Thermo Fisher). Guts were mounted in 70% glycerol and imaged with a Zeiss confocal microscope (Zeiss LSM 710 inverted confocal) using ×40 oil objectives (imaging medium: Zeiss Immersol 518F). The acquisition and processing software was Zeiss LSM Image Browser, and image processing was done in Adobe Photoshop.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 For Figures 1 and 2, cell number of the indicated cell types was counted per ROI (region of interest) on images taken using LEICA DFC345 FX camera on a LEICA DMI 400 B microscope, equipped with a ×40 objective lens. For each genotype, 8–12 guts were analyzed. In each gut, three ROIs were randomly selected in R4 of midguts for quantification. One-way ANOVA was performed for statistical comparisons. For Figures 3—6, all GFP+ clone cells (≥2) in midguts were counted individually. For each genotype, at least 10 guts were calculated. ᵡ2 test was performed for statistical comparisons. All statistical significances were calculated in Prism 10 (GraphPad Software, Inc). *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; n.s., not significant.

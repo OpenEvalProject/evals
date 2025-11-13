@@ -21,13 +21,13 @@
 
 ### Affiliations
 
-1. https://ror.org/03eh3y714 Laboratory of Biomolecular Research, Division of Biology and Chemistry, Paul Scherrer Institute Villigen PSI Switzerland
-2. https://ror.org/04advdf21 Centro de Investigaciones Biológicas Margarita Salas, Consejo Superior de Investigaciones Científicas Madrid Spain
-3. https://ror.org/02drdmm93 State Key Laboratory of Bioactive Substances and Functions of Natural Medicines, Institute of Materia Medica, Chinese Academy of Medical Sciences & Peking Union Medical College Beijing China
-4. https://ror.org/05a28rw58 Department of Chemistry and Applied Biosciences, Institute of Pharmaceutical Sciences, ETH Zurich Zürich Switzerland
-5. https://ror.org/03qvqb743 Department of Biological Sciences, Faculty of Science and Engineering, Chuo University Tokyo Japan
-6. https://ror.org/04pmn0e78 Department of Biomedical Sciences, University of Alcalá Madrid Spain
-7. https://ror.org/02s6k3f65 University of Basel Basel Switzerland
+1. Laboratory of Biomolecular Research, Division of Biology and Chemistry, Paul Scherrer Institute Villigen PSI Switzerland ([ROR:03eh3y714](https://ror.org/03eh3y714))
+2. Centro de Investigaciones Biológicas Margarita Salas, Consejo Superior de Investigaciones Científicas Madrid Spain ([ROR:04advdf21](https://ror.org/04advdf21))
+3. State Key Laboratory of Bioactive Substances and Functions of Natural Medicines, Institute of Materia Medica, Chinese Academy of Medical Sciences & Peking Union Medical College Beijing China ([ROR:02drdmm93](https://ror.org/02drdmm93))
+4. Department of Chemistry and Applied Biosciences, Institute of Pharmaceutical Sciences, ETH Zurich Zürich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))
+5. Department of Biological Sciences, Faculty of Science and Engineering, Chuo University Tokyo Japan ([ROR:03qvqb743](https://ror.org/03qvqb743))
+6. Department of Biomedical Sciences, University of Alcalá Madrid Spain ([ROR:04pmn0e78](https://ror.org/04pmn0e78))
+7. University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
 
 † Corresponding author
 
@@ -53,7 +53,7 @@ Structural information of a taxane in complex with unassembled tubulin is curren
 
 ## Results
 
-## High-resolution crystal structure of a tubulin-taxane complex
+### High-resolution crystal structure of a tubulin-taxane complex
 
 To determine the high-resolution structure of a taxane bound to curved tubulin, we performed both soaking and co-crystallization experiments using the previously described protein complexes termed T2R-TTL and TD1. The former complex is composed of two αβ-tubulin heterodimers bound head-to-tail, the stathmin-like protein RB3, and the tubulin tyrosine ligase (PDB ID 4IIJ) (Prota et al., 2013a; Prota et al., 2013b); the latter complex contains one αβ-tubulin heterodimer and the DARP in D1 (PDB ID 4DRX) (Pecqueur et al., 2012). We did not succeed in procuring any valuable structural information from these two crystal ensembles using a first series of taxanes comprising paclitaxel, docetaxel, the more soluble 3’-N-m-aminobenzamido-3’-N-debenzamidopaclitaxel (N-AB-PT) (Li et al., 2000), and the engineered, high-affinity taxanes Chitax 40 (Matesanz et al., 2008) and Chitax 68 (Ma et al., 2018). We thus decided to approach the issue from a different angle and started off with baccatin III, a precursor in the biosynthesis of paclitaxel that contains both the C2-benzoyloxy ring C and the C10 acetate ester, but lacks the C13 side chain with both the 3’-N-benzamido phenyl ring A and the 3’-phenyl ring B moieties (Samaranayake et al., 1993; Figure 1C). Notably, baccatin III is largely biologically inactive despite displaying micromolar affinity for microtubules (Parness et al., 1982; Lataste et al., 1984; Kingston, 2000; Andreu and Barasoain, 2001).
 
@@ -61,17 +61,228 @@ We found that baccatin III shows detectable affinity (Kb 25°C 3.0±0.5 × 103 M
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/84791/elife-84791-fig2-v2.jpg)
 
-**Figure 2.:** 2R-TTL structures in complex with baccatin III, 2a, and 2b.Overall view of the T2R-TTL-baccatin III (PDB ID 8BDE) (A), the T2R-TTL-2a (PDB ID 8BDF) (B), and the T2R-TTL-2b (PDB ID 8BDG) crystal structures. The α- and β-tubulin chains are colored in dark and light gray, respectively. The TTL chains (cyan) and the RB3 (yellow-orange) are shown in ribbon representation. The tubulin-bound ligands are displayed as spheres and are colored following the same color scheme as in the main figures. (D–F) Electron-density maps highlighting the bound baccatin III, 2a, and 2b. The SigmaA-weighted 2mFo − DFc (dark blue mesh) and mFo − DFc (light green mesh) omit maps are contoured at +1.0σ and +3.0σ, respectively. The map calculations excluded the atoms of the corresponding ligands. (G) Anomalous density peaks detected in both the binding sites in chains B and D of T2R-TTL for the bromine moiety of compound 2b.
+**Figure 2.:** Overall view of the T2R-TTL-baccatin III (PDB ID 8BDE) (A), the T2R-TTL-2a (PDB ID 8BDF) (B), and the T2R-TTL-2b (PDB ID 8BDG) crystal structures. The α- and β-tubulin chains are colored in dark and light gray, respectively. The TTL chains (cyan) and the RB3 (yellow-orange) are shown in ribbon representation. The tubulin-bound ligands are displayed as spheres and are colored following the same color scheme as in the main figures. (D–F) Electron-density maps highlighting the bound baccatin III, 2a, and 2b. The SigmaA-weighted 2mFo − DFc (dark blue mesh) and mFo − DFc (light green mesh) omit maps are contoured at +1.0σ and +3.0σ, respectively. The map calculations excluded the atoms of the corresponding ligands. (G) Anomalous density peaks detected in both the binding sites in chains B and D of T2R-TTL for the bromine moiety of compound 2b.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/84791/elife-84791-fig3-v2.jpg)
 
-**Figure 3.:** 2R-TTL-baccatin III (PDB ID 8BDE) and T2R-TTL-2a (PDB ID 8BDF) complexes.(A) Close-up view of the interaction network observed between baccatin III (lemon) and β-tubulin (light gray). Interacting residues of tubulin are shown in stick representation and are labeled. Oxygen and nitrogen atoms are colored red and blue, respectively; carbon atoms are in lemon (baccatin III) or light gray (tubulin). Hydrogen bonds are depicted as black dashed lines. Secondary structural elements of tubulin are labeled in blue. (B) Close-up view of the interaction of 2a (violet) with β-tubulin in the same view and representation as in (A). (C) The same close-up view as in (A) and (B) with the superimposed baccatin III (lemon) and 2a (violet) complex structures. Water molecules belonging to the baccatin III structure are represented as lemon spheres.
+**Figure 3.:** (A) Close-up view of the interaction network observed between baccatin III (lemon) and β-tubulin (light gray). Interacting residues of tubulin are shown in stick representation and are labeled. Oxygen and nitrogen atoms are colored red and blue, respectively; carbon atoms are in lemon (baccatin III) or light gray (tubulin). Hydrogen bonds are depicted as black dashed lines. Secondary structural elements of tubulin are labeled in blue. (B) Close-up view of the interaction of 2a (violet) with β-tubulin in the same view and representation as in (A). (C) The same close-up view as in (A) and (B) with the superimposed baccatin III (lemon) and 2a (violet) complex structures. Water molecules belonging to the baccatin III structure are represented as lemon spheres.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/84791/elife-84791-fig4-v2.jpg)
 
 **Figure 4.:** (A) Close-up view of the superimposed baccatin III bound (ligand in lemon; protein in gray ribbon and sticks) to curved tubulin (PDB ID 8BDE) and paclitaxel bound to straight tubulin as found in a microtubule (PDB ID 6WVR; ligand in dark green; protein in slate ribbon and sticks) structures. Interacting residues of tubulin are shown in stick representation and are labeled. Oxygen and nitrogen atoms are colored red and blue, respectively. Hydrogen bonds are depicted as black dashed lines. Secondary structural elements of tubulin are labeled in blue. Water molecules belonging to the baccatin III structure are represented as lemon spheres. The structures were superimposed onto their taxane sites (residues 208–219+225–237+272–276+286–296+318–320+359–376); root-mean-square deviations (rmsd) 0.894 Å (52 Cα atoms). (B) Close-up view of superimposed 2a bound to curved tubulin (PDB ID 8BDF) (ligand in violet; protein in gray ribbon and sticks) and paclitaxel bound to straight tubulin (PDB ID 6WVR; ligand in dark green; protein in slate ribbon and sticks) structures (rmsd 0.826 Å over 52 Cα atoms) using the same settings as in (A). (C) Conformational changes on β-tubulin induced by paclitaxel upon binding to straight tubulin in microtubules (PDB ID 6WVR). The α-tubulin and β-tubulin chains are in ribbon representation and are colored in dark and light gray, respectively. The rmsd differences between unbound and paclitaxel-bound straight tubulin are represented as dark (backbone rmsd) blue spheres. Only the rmsd differences above a threshold of average ± standard deviation are displayed. The sphere radii correspond to the average-subtracted rmsd values displayed in panel (D). (D) Rmsd plots of backbone positions between the paclitaxel bound (PDB ID 6WVR) and the apo (PDB ID 6DPV) straight tubulin in microtubules. The gray error bar represents the average rmsd ± standard deviation. The top bar is colored according to the following domain assignment: N-terminal domain (N-domain., marine blue), intermediate domain (I-domain, orange), central helix βH7 (lemon), and C-terminal domain (C-domain, red). The β-tubulin chains of the corresponding structures were superimposed onto their β-tubulin N-terminal β-sheets (rmsd 0.304 Å over 30 Cα).
 
-## Generation of paclitaxel analogs that bind to tubulin crystals
+**Table 1.**
+ X-ray data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>T2R-TTL-BacIII</th>
+      <th>T2R-TTL-2a</th>
+      <th>T2R-TTL-2b</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P212121</td>
+      <td>P212121</td>
+      <td>P212121</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>104.1, 157.2, 179.2</td>
+      <td>104.8, 157.9, 179.1</td>
+      <td>105.3, 158.6, 179.2</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>49.2–1.9 (1.95–1.90)</td>
+      <td>49.3–1.95 (2.00–1.95)</td>
+      <td>49.4–2.35 (2.41–2.35)</td>
+    </tr>
+    <tr>
+      <td>Rmerge(%)</td>
+      <td>10.7 (491.9)</td>
+      <td>13.3 (516.6)</td>
+      <td>17.4 (403.5)</td>
+    </tr>
+    <tr>
+      <td>Rmeas (%)</td>
+      <td>11.1 (513.1)</td>
+      <td>13.6 (526.1)</td>
+      <td>17.7 (410.8)</td>
+    </tr>
+    <tr>
+      <td>Rpim (%)</td>
+      <td>3.3 (147.5)</td>
+      <td>2.9 (102.9)</td>
+      <td>2.6 (57.7)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>16.5 (0.5)</td>
+      <td>20.1 (0.7)</td>
+      <td>20.1 (0.9)</td>
+    </tr>
+    <tr>
+      <td>CC half</td>
+      <td>100 (17.8)</td>
+      <td>100 (31.4)</td>
+      <td>99.9 (46.6)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>100 (99.8)</td>
+      <td>100 (100)</td>
+      <td>100 (100)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>13.5 (12.4)</td>
+      <td>27.3 (27.8)</td>
+      <td>28.5 (28.3)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>49.2–1.9</td>
+      <td>49.3–1.95</td>
+      <td>49.4–2.35</td>
+    </tr>
+    <tr>
+      <td>No. unique reflections</td>
+      <td>229654</td>
+      <td>215774</td>
+      <td>125168</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>19.2/21.8</td>
+      <td>18.9/21.6</td>
+      <td>18.3/21.4</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>17555</td>
+      <td>17389</td>
+      <td>17227</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>42</td>
+      <td>120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>861</td>
+      <td>883</td>
+      <td>166</td>
+    </tr>
+    <tr>
+      <td>Average B-factors (Å2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>59.0</td>
+      <td>62.9</td>
+      <td>76.1</td>
+    </tr>
+    <tr>
+      <td>Ligand (chain B/D)</td>
+      <td>n.a. / 109.2</td>
+      <td>111.4/102.8</td>
+      <td>146.6/144.9</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>56.2</td>
+      <td>60.3</td>
+      <td>59.4</td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor</td>
+      <td>41.7</td>
+      <td>43.1</td>
+      <td>56.9</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.003</td>
+      <td>0.003</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.642</td>
+      <td>0.655</td>
+      <td>0.550</td>
+    </tr>
+    <tr>
+      <td>Ramachandran statistics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored regions (%)</td>
+      <td>98.1</td>
+      <td>98.1</td>
+      <td>98.0</td>
+    </tr>
+    <tr>
+      <td>Allowed regions (%)</td>
+      <td>1.8</td>
+      <td>1.8</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_For each structure, data were collected from a single crystal. Values in parentheses are for highest-resolution shell._
+
+### Generation of paclitaxel analogs that bind to tubulin crystals
 
 Aiming to understand the implication on tubulin activation of the paclitaxel’s bulky and hydrophobic C13 ring A moiety (or its equivalent tert-butyl in docetaxel) and to elucidate the reason why it apparently precludes binding to T2R-TTL and TD1 crystals (see above), we devoted a synthetic effort to obtaining new taxane ligands with modified C13 side chains. We produced a series of modified taxanes bearing smaller groups than paclitaxel at the 3’-N position, namely, acrylamide 2a, haloacetamides 2b, and 2c, and isothiocyanate 2d (Figure 1C). We could measure binding of 2a to unassembled tubulin dimers (Kb25°C 0.8±0.3 × 103 M–1), but not of N-AB-PT (Li et al., 2000), Chitax 40 (Matesanz et al., 2008), or Chitax 68 (Ma et al., 2018), thus indicating that the modification of the paclitaxel structure increased the binding affinity for unassembled tubulin. In fact (Figure 2B, C, E and F), we found unequivocal difference electron densities at the taxane site of β-tubulin in T2R-TTL crystals soaked with 2a (PDB ID 8BDF) and 2b (PDB ID 8BDG) and refined the corresponding structures to 1.95 and 2.35 Å resolution, respectively (Table 1).
 
@@ -83,7 +294,7 @@ Similar to paclitaxel bound to straight tubulin, the C39 carbonyl of the C13-3�
 
 Together, these structural data provide – for the first time – a high-resolution structural description of the interaction of taxanes harboring a C13 side chain with unassembled, curved tubulin. They indicate that the main interaction energy of this class of antitubulin agents is mediated by their common baccatin III core moieties. They further reveal that the taxane pose in both curved and straight tubulin is very similar; however, subtle structural details reveal why paclitaxel binds more favorably to straight tubulin. The knowledge of these structural determinants may support the development of next-generation taxanes to better tune their mechanism of action, thereby opening a new window to control undesired side effects. Overall, our results suggest that the tubulin-2a structure is an excellent model to study the interaction of paclitaxel with curved tubulin at high resolution and that X-ray crystallography is a valuable method to analyze the molecular mechanism of action of microtubule-stabilizing agents binding to the taxane site.
 
-## Conformational changes upon taxane binding to curved and straight tubulin
+### Conformational changes upon taxane binding to curved and straight tubulin
 
 Next, we investigated the conformational changes induced by binding of baccatin III and 2a to curved tubulin. To this end, we first superimposed the crystal structures of apo tubulin (PDB ID 4I55), tubulin-baccatin III (PDB ID 8BDE), and tubulin-2a (PDB ID 8BDF) onto the N-terminal β-sheets of β-tubulin (residues 3–9, 63–66, 132–138, 163–169, and 198–202), and calculated the root-mean-square deviations (rmsd) between the apo and the two ligand-bound states (rmsdBacIII 0.08 Å of 29 Cα; rmsd2a 0.10 Å of 29 Cα). These rmsd values were also plotted and mapped onto the corresponding structures to highlight the major regions of conformational change.
 
@@ -99,11 +310,27 @@ To investigate the effect of the observed conformational changes on the relative
 
 **Figure 6.:** The three structures were superimposed onto their central helices βH7 to highlight better the subtle domain movements relative to each other. The individual domains are colored according to their domain assignment and their borders are contoured using the same color scheme: N-terminal domain (N-domain, marine blue), intermediate domain (I-domain, orange), central helix βH7 (lemon), C-terminal domain (C-domain, red). The directions of the individual movements are highlighted with black arrows.
 
+![Video 1.](https://cdn.elifesciences.org/articles/84791/elife-84791-video1.mp4.jpg)
+
+**Video 1.:** Top view on β-tubulin (onto the ‘plus end’ in the context of a microtubule).
+
+![Video 2.](https://cdn.elifesciences.org/articles/84791/elife-84791-video2.mp4.jpg)
+
+**Video 2.:** Luminal view on β-tubulin (view from the lumen in the context of a microtubule).
+
+![Video 3.](https://cdn.elifesciences.org/articles/84791/elife-84791-video3.mp4.jpg)
+
+**Video 3.:** Top view on β-tubulin (onto the ‘plus end’ in the context of a microtubule).
+
+![Video 4.](https://cdn.elifesciences.org/articles/84791/elife-84791-video4.mp4.jpg)
+
+**Video 4.:** Luminal view on β-tubulin (view from the lumen in the context of a microtubule).
+
 We next wondered whether similar conformational changes are also observed in straight tubulin in the context of a microtubule upon paclitaxel binding. To this end, we performed the same type of analysis by superimposing the N-terminal β-sheets of β-tubulin from the cryo-EM reconstruction of paclitaxel-bound guanosine diphosphate (GDP)-microtubules (PDB ID 6WVR) onto the corresponding domains of the undecorated apo GDP-microtubule structure (PDB ID 6DPV; rmsd 0.304 Å 30 Cα). The rmsd analysis revealed similar significant conformational changes of both the βT5 and the βM loops as observed for the taxanes bound to curved tubulin, however, no prominent perturbations of the βS9-βS10 loop could be detected. In addition, we found significant conformational changes of the ‘βS2-βS2’’ loop (the secondary structural elements that interact with the βM loop of the neighboring protofilament) and the C-terminal βH11-βH12 helix region (Figure 4C and D), which were not detected in the curved tubulin structures.
 
 Together, these results suggest that taxane binding in the context of the microtubule have an effect on the lateral contact established by the βM loop, an effect that cannot be detected in curved tubulin as this contact does not exist in the crystal. Moreover, we observe an activation effect on the T5 loop, but do not see any direct structural evidence for that. Therefore, taxane binding likely exerts this activation by affecting the dynamicity of helix H7, thereby establishing a crosstalk to the T5 loop through the nucleotide.
 
-## Effects of taxanes on microtubule lattice parameters
+### Effects of taxanes on microtubule lattice parameters
 
 We have previously validated X-ray fiber diffraction of shear-flow aligned microtubules as an accurate technique to determine microtubule lattice parameters (Estévez-Gallego et al., 2020; Kamimura et al., 2016). In such diffraction patterns, the meridional 4 nm layer line is related to the axial helical rise of tubulin monomers in the microtubule lattice. When the lattice is expanded in the direction of the helix axis, a second, weaker 8 nm layer line emerges due to the length difference between the α- and β-tubulin subunits (Kamimura et al., 2016) and the position of the 1 nm layer line corresponding to the fourth harmonic of the 4 nm layer line moves toward the center of the image.
 
@@ -113,11 +340,108 @@ We used this method to analyze the effect of different conditions on the microtu
 
 **Figure 7.:** Microtubules assembled from guanosine triphosphate (GTP)-tubulin and paclitaxel (A), GTP-tubulin and docetaxel (B), GTP-tubulin and 2a (C), GTP-tubulin and 2b (D), and GTP-tubulin and baccatin III (E) are shown.
 
+**Table 2.**
+ Structural parameters of microtubules assembled in the presence of different nucleotides and drugs*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Paclitaxel-pre microtubules</th>
+      <th>Paclitaxel- post microtubules</th>
+      <th>Paclitaxel- GDP tubulin</th>
+      <th>GDP-microtubules</th>
+      <th>GMPCPP-microtubules</th>
+      <th>Docetaxel-microtubules</th>
+      <th>Baccatin III-microtubules</th>
+      <th>2a-microtubules</th>
+      <th>2b-microtubules</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microtubule radius (nm)</td>
+      <td>10.97±0.10</td>
+      <td>11.04±0.51</td>
+      <td>10.98±0.47</td>
+      <td>11.42±0.10</td>
+      <td>11.63±0.10</td>
+      <td>11.53±0.10</td>
+      <td>11.06±0.35</td>
+      <td>11.27±0.57</td>
+      <td>11.60±0.36</td>
+    </tr>
+    <tr>
+      <td>Avg. PF number</td>
+      <td>12.21±0.10</td>
+      <td>12.28±0.71</td>
+      <td>12.23±0.65</td>
+      <td>12.91±0.10</td>
+      <td>13.29±0.10</td>
+      <td>12.90±0.10</td>
+      <td>12.29±0.39</td>
+      <td>12.63±0.72</td>
+      <td>12.99±0.40</td>
+    </tr>
+    <tr>
+      <td>Inter-PF distances (nm)</td>
+      <td>5.58±0.01</td>
+      <td>5.59±0.33</td>
+      <td>5.57±0.29</td>
+      <td>5.50±0.03</td>
+      <td>5.45±0.03</td>
+      <td>5.57±0.01</td>
+      <td>5.61±0.18</td>
+      <td>5.55±0.31</td>
+      <td>5.56±0.17</td>
+    </tr>
+    <tr>
+      <td>Avg. monomer length (nm)</td>
+      <td>4.18±0.01</td>
+      <td>4.18±0.01</td>
+      <td>4.18±0.01</td>
+      <td>4.06±0.01</td>
+      <td>4.18±0.010</td>
+      <td>4.18±0.01</td>
+      <td>4.16±0.03</td>
+      <td>4.15±0.03</td>
+      <td>4.13±0.03</td>
+    </tr>
+    <tr>
+      <td>1 nm band peak position (nm–1)</td>
+      <td>6.02±0.01</td>
+      <td>6.02±0.01</td>
+      <td>6.02±0.01</td>
+      <td>6.19±0.01</td>
+      <td>6.02±0.01</td>
+      <td>6.02±0.01</td>
+      <td>6.04±0.5</td>
+      <td>6.06±0.05</td>
+      <td>6.08±0.05</td>
+    </tr>
+    <tr>
+      <td>8 nm band</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Errors are SE of three independent._
+
 As shown in Figure 7 and Table 2, and when compared to GDP-bound microtubules, both paclitaxel-bound microtubules and docetaxel-bound microtubules displayed a similar lattice expansion of 0.24 nm as seen for GMPCPP-bound microtubules. Interestingly, while paclitaxel-bound microtubules show a reduced microtubule radius of 10.97±0.1 nm (av. PF nr., 12.21), docetaxel-bound microtubules displayed a radius of 11.53±0.1 nm (av. PF nr., 12.9), which is similar to the value obtained for GDP-microtubules. In the case of paclitaxel, this expansion occurred either when the drug was added before the polymerization reaction was started with GTP- or GDP-tubulin, or when it was added to preformed microtubules, in consonance with the rapid structural transitions of microtubules observed upon taxane addition (Díaz et al., 1998). Interestingly, microtubules with bound 2a, 2b, or baccatin III showed similar lattice expansion as those bound to paclitaxel or docetaxel. Note that the diffraction patterns of microtubules stabilized with 2a or 2b showed a diffuse 1 nm layer line that reflects variations in the tubulin monomer (and consequently dimer) rise, in clear contrast to those bound by paclitaxel and docetaxel, which displayed a sharp band, that is, a robust monomer rise.
 
 Taken together, these results suggest that taxanes with or without a C13 side chain have the capacity to expand the microtubule lattice and thus affect longitudinal tubulin contacts along protofilaments. They further indicate that the nature of the C13 side chain can affect the radius of a microtubule and thus lateral tubulin contacts between protofilaments. We note, however, that microtubules assembled in the presence of baccatin III, which lacks a C13 side chain, display the same radius as paclitaxel-bound microtubules. Thus, the presence of a C13 side chain per se does not seem to modulate lateral tubulin contacts between protofilaments.
 
-## MD simulation analysis of taxane binding to tubulin, protofilament, and microtubule lattice models
+### MD simulation analysis of taxane binding to tubulin, protofilament, and microtubule lattice models
 
 Although the high-resolution crystallographic structures discussed above provide detailed information of the taxane binding site for the ligands, no large differences were observed between apo- and taxane-bound tubulin structures, indicating that additional ligand effects may be related to the dynamic behavior of the protein. For these reasons and to gain further insight into the underlying mechanism of taxane-induced microtubule stabilization, we next used MD simulations to study the behavior of different tubulin assemblies in solution. To this end, we built three types of fully solvated molecular models representing the different oligomerization states of tubulin: (i) the αβ-tubulin heterodimer; (ii) a short protofilament consisting of three longitudinally concatenated tubulin dimers ((αβ-tubulin)3); and (iii) a minimalist representation of a microtubule lattice (Sánchez-Murcia et al., 2019) made up of two laterally associated protofilament fragments ((α1-β1-α2)/(α1’-β1’-α2’)). All models were created in their apo- and taxane-bound forms. Baccatin III, 2a, and paclitaxel were chosen as representative taxane ligands for our fully atomistic simulations.
 
@@ -131,6 +455,10 @@ In good agreeement with the previous structural results, the MD simulations of t
 
 **Figure 9.:** (A,B) MD simulations of the free αβ-tubulin dimer. (A) Initial stage of the simulation, starting from a βM loop (residues β275-β286; yellow) organized as an α-helix akin to what is observed in a microtubule and (B) after 100 ns of an MD simulation. (C) Overlaid snapshots taken every 5 ns over the course of a 250 ns MD simulation of paclitaxel (left), 2a (middle), or baccatin III (right). (D) Snapshots of the protofilament model bound to paclitaxel or baccatin III and apo form. (E) Time evolution of the intermonomer distances (measured between the respective centers of mass; α2-β2 in blue and β2-α3 in yellow) in the simulated apo (lower graph) and liganded (upper graph) protofilaments.
 
+![Animation 1.](https://cdn.elifesciences.org/articles/84791/elife-84791-animation1-v2.gif.jpg)
+
+**Animation 1.:** 1 µs simulation, 1 snapshot every 5 ns, βM loop in yellow.
+
 ![Figure 10.](https://cdn.elifesciences.org/articles/84791/elife-84791-fig10-v2.jpg)
 
 **Figure 10.:** (A) The interfacial site 1 between neighboring protofilamentes. (B) The solvent-exposed site 2. These per-residue energies, which together represent a ‘binding fingerprint’, were calculated by means of the program MM-ISMSA (Klett et al., 2012) using 120 complex structures from the MD simulations after equilibration (5–600 ns), cooling down to 273 K and energy minimization. A cutoff of 1.5 kcal mol–1 was used in the plot for enhanced clarity. Bars are standard errors.
@@ -143,7 +471,7 @@ Finally, we used a minimalist model of a solvated microtubule lattice in which w
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/84791/elife-84791-fig11-v2.jpg)
 
-**Figure 11.:** 1-β1-α2)/(α1’-β1’-α2’)) in complex with the ligands employed.Baccatin III (green, A), 2a (red, B), paclitaxel (blue, C). α- (dark gray) and β-tubulin (light gray) are displayed as ribbons, with the βM loop colored in yellow and the side chain of Tyr283 as sticks. Guanosine diphosphate (GDP) and guanosine triphosphate (GTP) are shown as sticks, with C atoms colored in salmon. Mg2+ ions are displayed as green spheres. Each set of five overlaid structures represents a conformational ensemble made up of snapshots spaced by 5 ns taken from the equilibrated part of the trajectory and then cooled down to 273 K and energy minimized. Site 1 (at the top of each figure) is located at the interface between two neighboring protofilaments whereas site 2 (at the bottom of each figure) is devoid of any lateral contacts but exposed to the bulk solvent instead.
+**Figure 11.:** Baccatin III (green, A), 2a (red, B), paclitaxel (blue, C). α- (dark gray) and β-tubulin (light gray) are displayed as ribbons, with the βM loop colored in yellow and the side chain of Tyr283 as sticks. Guanosine diphosphate (GDP) and guanosine triphosphate (GTP) are shown as sticks, with C atoms colored in salmon. Mg2+ ions are displayed as green spheres. Each set of five overlaid structures represents a conformational ensemble made up of snapshots spaced by 5 ns taken from the equilibrated part of the trajectory and then cooled down to 273 K and energy minimized. Site 1 (at the top of each figure) is located at the interface between two neighboring protofilaments whereas site 2 (at the bottom of each figure) is devoid of any lateral contacts but exposed to the bulk solvent instead.
 
 Importantly, our simulations consistently reproduce the axial lattice expansion observed upon paclitaxel binding (Arnal and Wade, 1995; Alushin et al., 2014; Estévez-Gallego et al., 2020; Kellogg et al., 2017; Debs et al., 2020; Manka and Moores, 2018). We found that the expansion mainly originates from displacement of the βS9-βS10 loop caused by the Φ/Ψ backbone rearrangement in the βR369-βG370 stretch. Because the βS9-βS10 loop acts as a lid covering and stapling the bound taxanes in their final location, this motion propagates toward the attached α-tubulin subunit so that the distance between the α1- and β2-tubulin subunits of two longitudinally aligned, consecutive tubulin dimers increases by roughly 2 Å as compared to the unbound filament (Figure 9E), a feature that could not be detected in the taxane-bound crystal structures of curved tubulin.
 
@@ -165,71 +493,75 @@ Our results point to the βM loop as an essential structural element for the mod
 
 Finally, we found that binding of taxanes to assembled microtubules results in a displacement of the βS9-βS10 loop, which promotes a lattice expansion. The description of the effect of paclitaxel on microtubule lattice parameters has been controversial. Initial analyses suggested that paclitaxel induces lattice expansion (Arnal and Wade, 1995; Alushin et al., 2014); however, subsequent studies reported only a minor effect (Kellogg et al., 2017; Debs et al., 2020; Manka and Moores, 2018). Our present results reinforce the view that lattice expansion is indeed a general consequence of taxane binding and does not require the presence of a C13 side chain. Since baccatin III is essentially biologically inert (Parness et al., 1982; Lataste et al., 1984; Kingston, 2000; Andreu and Barasoain, 2001), our data further indicate that lattice expansion is not an important factor contributing to the mechanism of microtubule stabilization by paclitaxel. Our MD analyses offer a plausible explanation for the taxane-induced longitudinal expansion of microtubules. Although in the complexes with 2a and 2b − but not in that with baccatin III − the crystal structures show that (NH)βG370 hydrogen bonds to the taxane side chain, the simulated complexes indicate that in solution it is the (O=C)βR369 that consistently acts as the hydrogen bond acceptor for the O2' hydroxyl of taxanes. In our view, these findings point to the βS9-βS10 loop as a major structural element that changes on taxane binding, and this change is transmitted to the following α-tubulin subunits on both sides, hence the stretching or longitudinal expansion of the concatenated tubulin dimers. The fact that we observed the Φ/Ψ backbone rearrangement in the βR369-βG370 stretch upon cooling down the tubulin-paclitaxel and baccatin III complex obtained after the TMD procedure (Animation 2 and Animation 3) points to expansion of the cavity and consolidation of the hydrogen-bonding network as the main factors responsible for this conformational change.
 
+![Animation 2.](https://cdn.elifesciences.org/articles/84791/elife-84791-animation2-v2.gif.jpg)
+
+![Animation 3.](https://cdn.elifesciences.org/articles/84791/elife-84791-animation3-v2.gif.jpg)
+
 In conclusion, our combined experimental and computational approach allowed us to describe the tubulin-taxane interaction in atomic detail and assess the structural determinants for binding. Our structural analyses further suggest a mode of action of paclitaxel by means of which its core moiety provides the main tubulin-interaction network while its C13 side chain enables selective recognition of the prestructured βM loop of the microtubule-assembled tubulin state. Such differential recognition is expected to promote microtubule formation and stabilization. On the other hand, the longitudinal expansion of the microtubule lattices arises from the accommodation of the taxane core within the site, a process that is, however, not related to the microtubule stabilization mechanism of taxanes.
 
 ## Materials and methods
 
-## Proteins and ligands
+### Proteins and ligands
 
 Purified calf brain tubulin containing a mixture of isotypes (Ludueña and Banerjee, 2008) was obtained as described (Andreu, 2007) and used for biochemical, crystallographic, and fiber diffraction experiments. Paclitaxel (Taxol) was from Alfa Aesar Chemical, docetaxel (Taxotere) was kindly provided by Rhône Poulenc Rorer, Aventis (Schiltigheim, France), baccatin III was from Sigma, Flutax-2, Chitax 40, 3’-N-aminopaclitaxel (N-AB-PT) and Chitax 68 were synthesized as described (Li et al., 2000; Matesanz et al., 2008; Ma et al., 2018; Díaz et al., 2000). All compounds were diluted in 99.8% DMSO-D6 (Merck) to a final concentration of 20 mM and stored at –20°C. Their solubility in aqueous media was determined as described in Sáez-Calvo et al., 2017, Flutax-2 was found soluble, while a 100 μM solubility was found for docetaxel and a 50 μM for both paclitaxel and Chitax 40.
 
-## Synthesis of taxoids 2a-2d (Scheme 1)
+### Synthesis of taxoids 2a-2d (Scheme 1)
 
 ![Scheme 1.](https://cdn.elifesciences.org/articles/84791/elife-84791-scheme1-v2.jpg)
 
 **Scheme 1.:** (a) TESCl, triethylamine (TEA), 4-dimethylaminopyridine (DMAP), LiBr, THF, RT to 70°C, 84%; (b) LHMDS, THF, –45°C, 79%; (c) 10% Pd/C, H2, MeOH, 64%; (d) DCC, DMAP, acid, DCM, 0°C to RT; (e) HF, Py, CH3CN or 5% HCl/MeOH, 32% for 2a, 40% for 2b, 48% for 2c, and 83% for 2e for two steps (d, e); (f) PPh3, CS2, THF, 83%.
 
-## General experimental procedures
+#### General experimental procedures
 
 1H and 13C NMR spectra were recorded on Varian 400, 500 MHz spectrometers, or a Bruker AVANCE III 600 MHz NMR spectrometer. Mass spectra (ESI) was measured on JEOL Accu TOF CS (JMS T100CS). Reagents were purchased from J&K and Alfa Aesar Chemical companies. All anhydrous solvents were purified and dried according to standard procedures, unless otherwise indicated. Reactions were monitored by TLC (silica gel, GF254) with UV light and H2SO4-anisaldehyde spray visualization. The purity of the final compounds was analyzed by HPLC.
 
-## 7,10-O-di(triethylsilyl)-10-deacetylbaccatin III (4)
+#### 7,10-O-di(triethylsilyl)-10-deacetylbaccatin III (4)
 
 To a stirred solution of 3 (1.82 g, 3.3 mmol) in anhydrous tetrahydrofuran (THF) (36 mL) under argon, 4-dimethylaminopyridine (DMAP) (400 mg, 3.3 mmol), triethylamine (8.3 mL, 69.4 mmol), and (chlorotriethylsilane) TESCl (4.5 mL, 26.4 mmol) were added dropwise. After the reaction mixture was stirred at room temperature (RT) for 5.5 hr, the solution of anhydrous LiBr (291 mg, 3.3 mmol) in anhydrous THF (1.8 mL) was added, the reaction mixture was refluxed at 65–70°C for 7 hr. Once cooled down, the mixture was diluted with ethyl acetate (200 mL). The mixture was washed with saturated aqueous NaHCO3 solution (200 mL) and brine (200 mL), and dried over anhydrous Na2SO4. The organic layer was evaporated under reduced pressure. Purification of the crude product by silica gel chromatography (acetone:petroleum ether = 1:7) gave 84% yield of product 4 (2.13 g) as a light yellow oil: 1H-NMR (400 MHz, CDCl3): δ 0.55–0.71 p.p.m. (m, 12H), 0.94–1.02 (m, 18H), 1.04 (s, 3H), 1.18 (s, 3H), 1.65 (s, 3H), 1.85–1.91 (m, 1H), 2.01 (s, 3H), 2.22–2.28 (m, 5H), 2.49–2.57 (m, 1H), 3.91 (d, J=6.8 Hz, 1H), 4.14 (d, J=8.0 Hz, 1H), 4.27 (d, J=8.4 Hz, 1H), 4.42 (dd, J=10.4 Hz, 6.8 Hz, 1H), 4.81 (t, J=8.0 Hz, 1H), 4.93 (d, J=8.0 Hz, 1H), 5.21 (s, 1H), 5.61 (d, J=7.2 Hz, 1H), 7.45 (t, J=7.6 Hz, 2H), 7.57 (t, J=7.2 Hz, 1H), 8.09 (d, J=7.2 Hz, 2H). The 1H NMR data are identical to those for 7,10-O-di(triethylsilyl)-10-deacetylbaccatin III in Kung, 2012.
 
-## 7,10-O-di(triethylsilyl)-2’-O-(tert-butyldimethylsilyl)-3’-N-(de-tert-butoxycarbonyl)-3’-N-(benzyloxycarbonyl)docetaxel (6)
+#### 7,10-O-di(triethylsilyl)-2’-O-(tert-butyldimethylsilyl)-3’-N-(de-tert-butoxycarbonyl)-3’-N-(benzyloxycarbonyl)docetaxel (6)
 
 A stirred solution of 4 (2.12 g, 2.74 mmol) in anhydrous THF (35.7 mL) under argon was cooled to –45°C and lithium bis(trimethylsilyl)amide (LHMDS) (0.9 M in methylcyclohexane, 4.6 mL, 4.11 mmol) was added dropwise. The reaction mixture was stirred for 20 min at –45°C and then, the solution of 5 (Ojima et al., 1995) (1.352 g, 3.288 mmol) in anhydrous THF (9 mL) was added and the reaction mixture was stirred for 100 min at the same temperature. Afterward, the mixture was quenched with saturated aqueous NH4Cl solution (10 mL) and extracted with ethyl acetate (200 mL*2). The organic layer was washed with saturated aqueous NH4Cl solution (100 mL) and brine (100 mL), dried over anhydrous Na2SO4. Solvent was removed under reduced pressure. Purification of the crude product by silica gel chromatography (acetone:petroleum ether = 1:10~1:7) gave 79% yield of product 6 (2.57 g) as a light yellow oil: 1H-NMR (400 MHz, CDCl3): δ –0.31 p.p.m. (s, 3H), –0.08 (s, 3H), 0.56–0.72 (m, 12H), 0.75 (s, 9H), 0.95–1.03 (m, 18H), 1.20 (s, 3H), 1.22 (s, 3H), 1.69 (s, 3H), 1.84 (s, 3H), 1.88–1.96 (m, 2H), 2.33–2.39 (m, 1H), 2.49–2.54 (m, 4H), 3.86 (d, J=6.8 Hz, 1H), 4.21, 4.29 (ABq, J=8.4 Hz, each 1H), 4.41 (dd, J=10.4 Hz, 6.4 Hz, 1H), 4.55 (s, 1H), 4.93 (d, J=8.4 Hz, 1H), 4.97, 5.02 (ABq, J=12.4 Hz, each 1H), 5.16 (s, 1H), 5.37 (d, J=8.8 Hz, 1H), 5.67 (d, J=7.2 Hz, 1H), 5.72 (d, J=9.6 Hz, 1H), 6.25 (t, J=8.4 Hz, 1H), 7.20–7.32 (m, 8H), 7.38 (t, J=7.2 Hz, 2H), 7.48 (t, J=7.6 Hz, 2H), 7.57 (t, J=7.6 Hz, 1H), 8.13 (d, J=7.2 Hz, 2H); 13C-NMR (150 MHz, CDCl3): δ −6.0,–5.4, 5.3, 5.9, 6.9, 10.5, 13.7, 14.1, 14.2, 18.1, 20.9, 21.0, 22.7, 23.1, 25.4, 26.5, 29.3, 29.6, 29.7, 31.9, 35.6, 37.3, 43.2, 46.6, 57.2, 58.3, 60.3, 66.8, 71.4, 72.6, 75.2, 75.3, 75.5, 76.7, 78.9, 81.2, 84.0, 126.4, 127.7, 127.8, 128.0, 128.4, 128.6, 129.5, 130.2, 133.4, 134.2, 136.3, 137.7, 138.6, 155.7, 167.0, 170.1, 171.1, 171.2, 205.2; ESIMS m/z 1184.6 [M+H]+.
 
-## 7,10-O-di(triethylsilyl)-2’-O-(tert-butyldimethylsilyl)-3’-N-(de-tert-butoxycarbonyl)docetaxel (7)
+#### 7,10-O-di(triethylsilyl)-2’-O-(tert-butyldimethylsilyl)-3’-N-(de-tert-butoxycarbonyl)docetaxel (7)
 
 To a stirred solution of 6 (2.54 g, 2.14 mmol) in methanol (50 mL), 10% Pd/C (250 mg) was added under H2 and the reaction mixture was stirred at RT for 20 hr. The mixture was diluted with methanol (50 mL), filtered and washed with methanol. The organic layer was evaporated under reduced pressure. Purification of the crude product by silica gel chromatography (acetone:petroleum ether = 1:8) gave 64% yield of product 7 (1.44 g) as a colorless oil with 18% yield of 6 (0.46 g) recovery: 1H-NMR (500 MHz, DMSO-d6): δ –0.05 p.p.m. (s, 3H), –0.04 (s, 3H), 0.52–0.62 (m, 12H), 0.84 (s, 9H), 0.90–0.95 (m, 18H), 1.05 (s, 6H), 1.52 (s, 3H), 1.65–1.70 (m, 4H), 1.79–1.84 (m, 1H), 2.02–2.07 (m, 2H), 2.33 (s, 3H), 3.68 (d, J=7.0 Hz, 1H), 4.02–4.05 (m, 2H), 4.14, 4.30 (ABq, J=6.0 Hz, each 1H), 4.32 (dd, J=10.5 Hz, 6.5 Hz, 1H), 4.60 (s, 1H), 4.93 (d, J=9.5 Hz, 1H), 5.06 (s, 1H), 5.44 (d, J=7.0 Hz, 1H), 5.89 (t, J=9.0 Hz, 1H), 7.20–7.22 (m, 1H), 7.35–7.36 (m, 5H), 7.60 (t, J=7.5 Hz, 2H), 7.70 (t, J=7.5 Hz, 1H), 7.98 (d, J=7.0 Hz, 2H); 13C-NMR (125 MHz, DMSO-d6): δ −5.4,–5.3, 4.8, 5.4, 6.7, 6.8, 10.1, 13.7, 17.9, 20.7, 22.6, 25.5, 26.3, 34.9, 36.8, 42.9, 45.9, 57.7, 58.9, 70.4, 72.4, 74.5, 75.0, 75.5, 76.6, 78.0, 80.0, 83.0, 124.2, 127.3, 128.0, 128.6, 129.5, 130.0, 133.4, 134.2, 137.1, 141.6, 165.2, 169.8, 172.1, 204.7; ESIMS m/z 1050.5 [M+H]+.
 
-## 3’-N-(de-tert-butoxycarbonyl)-3’-N-(4-methoxy-2-methylene-4-oxobutanoyl)docetaxel (2a)
+#### 3’-N-(de-tert-butoxycarbonyl)-3’-N-(4-methoxy-2-methylene-4-oxobutanoyl)docetaxel (2a)
 
 To a stirred solution of 7 (43.6 mg, 0.042 mmol) in anhydrous dichloromethane (DCM) (0.34 mL) under argon, N,N'-dicyclohexylcarbodiimide (DCC) (17.1 mg, 0.083 mmol), DMAP (2.5 mg, 0.020 mmol), and the solution of itaconic acid monomethyl ester (Ram and Meher, 2000) (9.2 mg, 0.064 mmol) in DCM (0.15 mL) were added in ice bath. Then, the mixture was stirred for 2 hr at RT. The mixture was diluted with ethyl acetate (30 mL), filtered by celite and washed with ethyl acetate (30 mL). The organic layer was evaporated under reduced pressure. Purification of the crude product by silica gel chromatography (acetone:hexane = 1:9) gave crude product. Subsequently, to a stirred solution of the crude product in acetonitrile (1.7 mL), pyridine (1.0 mL, 12.1 mmol) and HF (0.52 mL, 12.1 mmol) was added and the reaction was stirred at RT for 24 hr. Following that, the mixture was diluted with ethyl acetate (50 mL), washed with brine (20 mL), extracted with ethyl acetate (20 mL), and dried over anhydrous Na2SO4. The organic layer was evaporated under reduced pressure. Purification of the crude product by silica gel chromatography (acetone:petroleum ether = 1:2) gave 32% yield (for two steps) of compound 2a (11.0 mg) as a white solid: 1H-NMR (600 MHz, CD3COCD3): δ 1.11 p.p.m. (s, 3H), 1.20 (s, 3H), 1.69 (s, 3H), 1.80–1.84 (m, 1H), 1.88 (d, J=1.2 Hz, 3H), 2.16–2.20 (m, 1H), 2.30–2.34 (m, 1H), 2.39–2.45 (m, 4H), 3.34 (s, 2H), 3.61 (s, 3H), 3.89 (d, J=6.6 Hz, 1H), 4.13, 4.18 (ABq, J=8.4 Hz, each 1H), 4.25 (dd, J=11.4 Hz, 6.6 Hz, 1H), 4.69 (d, J=4.2 Hz, 1H), 4.95 (dd, J=9.6 Hz, 1.8 Hz, 1H), 5.24 (s, 1H), 5.53 (d, J=4.2 Hz, 1H), 5.65 (d, J=7.2 Hz, 1H), 5.73 (d, J=1.2 Hz, 1H), 6.15–6.18 (m, 2H), 7.27 (t, J=7.2 Hz, 1H), 7.38 (t, J=7.8 Hz, 2H), 7.46 (d, J=7.2 Hz, 2H), 7.54 (t, J=8.4 Hz, 2H), 7.64 (t, J=7.2 Hz, 1H), 8.09 (dd, J=8.4 Hz, 1.2 Hz, 2H); 13C-NMR (150 MHz, CD3COCD3): δ 9.1, 13.1, 20.2, 21.7, 25.9, 35.4, 36.1, 38.4, 42.9, 46.1, 51.1, 54.8, 57.2, 70.9, 71.0, 73.2, 73.8, 74.7, 75.6, 77.1, 80.5, 83.9, 126.8, 127.0, 127.5, 127.9, 128.2, 129.6, 129.9, 132.8, 134.6, 136.1, 137.3, 138.9, 165.5, 166.4, 169.3, 170.0, 172.4, 210.1; HRMS (m/z): [M+Na]+ calcd for C44H51NaNO15, 856.3259; found, 856.3157.
 
-## 3’-N-(de-tert-butoxycarbonyl)-3’-N-(2-bromoacetyl)docetaxel (2b)
+#### 3’-N-(de-tert-butoxycarbonyl)-3’-N-(2-bromoacetyl)docetaxel (2b)
 
 To a stirred solution of 7 (90 mg, 0.086 mmol) in anhydrous DCM (0.9 mL) under argon, DCC (53.2 mg, 0.26 mmol), DMAP (10.5 mg, 0.086 mmol), and the solution of bromoacetic acid (35.9 mg, 0.26 mmol) in DCM (0.1 mL) were added in ice bath. Then, the mixture was stirred for 2 hr at RT. The mixture was diluted with ethyl acetate (30 mL), filtered by celite, and washed with ethyl acetate (30 mL). The organic layer was evaporated under reduced pressure. Purification of the crude product by silica gel chromatography (acetone:hexane = 1:9) gave crude product (71 mg). Then, a stirred solution of the crude product (54 mg) was solved in 5% HCl/methanol (0.41 mL) in ice bath, and the reaction was stirred in ice bath for 1 hr and at RT for 12 hr. Afterward, the mixture was diluted with ethyl acetate (50 mL), washed with brine (20 mL), extracted with ethyl acetate (20 mL), and dried over anhydrous Na2SO4. The organic layer was evaporated under reduced pressure. Purification of the crude product by silica gel chromatography (acetone:petroleum ether = 1:1.5) gave 40% yield (for two steps) of compound 2b (28.5 mg) as a white solid: 1H-NMR (600 MHz, CD3COCD3): δ 1.11 p.p.m. (s, 3H), 1.18 (s, 3H), 1.69 (s, 3H), 1.80–1.84 (m, 1H), 1.88 (d, J=1.2 Hz, 3H), 2.16–2.20 (m, 1H), 2.29–2.33 (m, 1H), 2.38 (s, 3H), 2.40–2.45 (m, 1H), 3.89 (d, J=7.2 Hz, 1H), 3.95, 4.00 (ABq, J=12.0 Hz, each 1H), 4.13, 4.18 (ABq, J=8.4 Hz, each 1H), 4.23 (dd, J=11.4 Hz, 6.6 Hz, 1H), 4.70 (d, J=4.2 Hz, 1H), 4.95 (dd, J=9.6 Hz, 1.8 Hz, 1H), 5.23 (s, 1H), 5.49 (d, J=4.2 Hz, 1H), 5.65 (d, J=7.2 Hz, 1H), 6.16 (t, J=8.4 Hz, 1H), 7.28 (t, J=7.2 Hz, 1H), 7.39 (t, J=7.2 Hz, 2H), 7.47 (d, J=7.2 Hz, 2H), 7.56 (t, J=7.8 Hz, 2H), 7.65 (t, J=7.2 Hz, 1H), 8.09 (d, J=8.4 Hz, 2H); 13C-NMR (150 MHz, CD3COCD3): δ 9.1, 13.1, 20.2, 21.7, 25.8, 35.4, 36.0, 42.8, 46.0, 55.3, 57.2, 59.4, 70.9, 73.0, 73.7, 74.7, 75.6, 77.1, 80.5, 83.8, 126.8, 127.2, 128.0, 128.1, 129.5, 129.9, 132.8, 136.1, 137.2, 138.3, 165.4, 165.9, 170.0, 172.1, 210.0; HRMS (m/z): [M+Na]+ calcd for C40H46NaBrNO13, 850.2153; found, 850.2037.
 
-## 3’-N-(de-tert-butoxycarbonyl)-3’-N-(2-iodoacetyl)docetaxel (2c)
+#### 3’-N-(de-tert-butoxycarbonyl)-3’-N-(2-iodoacetyl)docetaxel (2c)
 
 Taxoid 2c was synthesized with iodoacetic acid following the similar procedure for 2b. Yield of 48% (for two steps), 28.5 mg, white solid: 1H-NMR (600 MHz, CD3COCD3): δ 1.12 p.p.m. (s, 3H), 1.19 (s, 3H), 1.71 (s, 3H), 1.80–1.85 (m, 1H), 1.90 (d, J=1.2 Hz, 3H), 2.22–2.26 (m, 1H), 2.34–2.38 (m, 1H), 2.40 (s, 3H), 2.41–2.46 (m, 1H), 3.82, 3.87 (ABq, J=9.6 Hz, each 1H), 3.91 (d, J=7.2 Hz, 1H), 4.14, 4.19 (ABq, J=8.4 Hz, each 1H), 4.27 (dd, J=10.8 Hz, 6.6 Hz, 1H), 4.71 (d, J=3.6 Hz, 1H), 4.95 (dd, J=9.6 Hz, 2.4 Hz, 1H), 5.23 (s, 1H), 5.51 (d, J=3.6 Hz, 1H), 5.66 (d, J=7.2 Hz, 1H), 6.20 (t, J=9.0 Hz, 1H), 7.29 (t, J=7.2 Hz, 1H), 7.39 (t, J=7.2 Hz, 2H), 7.48 (d, J=7.2 Hz, 2H), 7.56 (t, J=7.8 Hz, 2H), 7.65 (t, J=7.8 Hz, 1H), 8.11 (d, J=9.0 Hz, 1.8 Hz, 2H); 13C-NMR (150 MHz, CD3COCD3): δ 9.3, 13.3, 20.4, 21.9, 26.1, 35.6, 36.3, 43.0, 46.3, 55.3, 57.4, 59.6, 71.1, 71.2, 73.2, 74.0, 74.9, 75.8, 77.4, 80.7, 84.0, 127.0, 127.3, 128.2, 128.3, 129.8, 130.1, 133.0, 136.3, 137.4, 138.7, 165.7, 167.7, 170.2, 172.4, 210.2; ESIMS m/z 876.2 [M+H]+, 898.2 [M+Na]+.
 
-## 3’-N-(de-tert-butoxycarbonyl)-3’-N-(2-azidoacetyl)docetaxel (2e)
+#### 3’-N-(de-tert-butoxycarbonyl)-3’-N-(2-azidoacetyl)docetaxel (2e)
 
 Taxoid 2e was synthesized with azidoacetic acid (Brabez et al., 2011) following the similar procedure for 2a. Yield of 83% (for two steps), 25.0 mg, colorless oil: 1H-NMR (500 MHz, CD3COCD3): δ 1.12 p.p.m. (s, 3H), 1.18 (s, 3H), 1.69 (s, 3H), 1.79–1.85 (m, 1H), 1.87 (s, 3H), 2.12–2.17 (m, 1H), 2.27–2.32 (m, 1H), 2.36 (s, 3H), 2.40–2.46 (m, 1H), 3.89 (d, J=7.0 Hz, 1H), 4.01 (s, 2H), 4.13, 4.17 (ABq, J=8.0 Hz, each 1H), 4.25 (dd, J=11.0 Hz, 6.5 Hz, 1H), 4.67 (d, J=4.5 Hz, 1H), 4.95 (d, J=8.0 Hz, 1H), 5.23 (s, 1H), 5.50 (d, J=4.5 Hz, 1H), 5.65 (d, J=7.5 Hz, 1H), 6.16 (t, J=9.0 Hz, 1H), 7.28 (t, J=7.5 Hz, 1H), 7.39 (t, J=7.5 Hz, 2H), 7.47 (d, J=7.5 Hz, 2H), 7.56 (t, J=7.5 Hz, 2H), 7.65 (t, J=7.0 Hz, 1H), 8.09 (d, J=7.5 Hz, 2H); 13C-NMR (125 MHz, CD3COCD3): δ 9.3, 13.3, 20.4, 22.0, 26.0, 35.7, 36.3, 43.0, 46.3, 51.3, 55.4, 57.4, 71.0, 71.2, 73.5, 74.0, 74.9, 75.8, 77.4, 80.7, 84.1, 127.1, 127.5, 128.3, 128.4, 129.8, 130.1, 133.0, 136.4, 137.4, 138.8, 165.6, 167.2, 170.2, 172.4, 210.3; ESIMS m/z 813.3 [M+Na]+.
 
-## 3’-N-(de-tert-butoxycarbonyl)-3’-N-(2-isothiocyanatoacetyl)docetaxel (2d)
+#### 3’-N-(de-tert-butoxycarbonyl)-3’-N-(2-isothiocyanatoacetyl)docetaxel (2d)
 
 To a stirred solution of 2e (16.4 mg, 0.021 mmol) in anhydrous THF (0.32 mL) under argon, Ph3P (8.5 mg, 0.032 mmol) and CS2 (12.6 μL, 0.21 mmol) were added and the mixture was stirred for 50 hr at RT. The mixture was evaporated under reduced pressure. Purification of the crude product by silica gel chromatography (acetone:hexane = 1:9) gave 83% yield of compound 2d (28.5 mg) as a white solid: 1H-NMR (600 MHz, CD3COCD3): δ 1.08 p.p.m. (s, 3H), 1.10 (s, 3H), 1.67 (s, 3H), 1.76–1.84 (m, 5H), 2.06–2.09 (m, 1H), 2.36 (s, 3H), 2.40–2.45 (m, 1H), 3.85 (d, J=7.2 Hz, 1H), 4.11, 4.15 (ABq, J=7.8 Hz, each 1H), 4.18–4.25 (m, 3H), 4.94 (dd, J=9.6 Hz, 1.8 Hz, 1H), 5.20 (s, 1H), 5.59 (d, J=7.2 Hz, 1H), 5.65 (d, J=6.6 Hz, 1H), 6.02 (t, J=9.0 Hz, 1H), 6.17 (d, J=10.2 Hz, 1H), 7.25 (t, J=7.2 Hz, 1H), 7.38 (t, J=7.8 Hz, 2H), 7.54 (d, J=7.8 Hz, 2H), 7.61 (t, J=7.8 Hz, 2H), 7.69 (t, J=7.8 Hz, 1H), 8.04 (dd, J=8.4 Hz, 1.2 Hz, 2H); 13C-NMR (150 MHz, CD3COCD3): δ 9.0, 13.0, 19.9, 21.7, 25.6, 35.2, 35.9, 42.6, 46.0, 47.4, 57.1, 59.4, 69.7, 69.8, 70.8, 73.6, 74.5, 75.5, 77.0, 80.3, 83.8, 128.0, 128.1, 128.5, 129.4, 129.8, 132.9, 135.5, 136.1, 136.9, 165.3, 169.9, 171.7, 173.3, 209.8; HRMS (m/z): [M+Na]+ calcd for C41H46NaN2O13S, 829.2721; found, 829.2619.
 
-## Crystallization, data collection, and structure determination
+### Crystallization, data collection, and structure determination
 
 Crystals of T2R-TTL were generated as described (Prota et al., 2013a; Prota et al., 2013b). Suitable T2R-TTL crystals were soaked for 8 hr in reservoir solutions (2–4% PEG 4 K, 2–10% glycerol, 30 mM MgCl2, 30 mM CaCl2, 0.1 M MES/imidazole pH 6.7) containing either 10 mM baccatin III, 5 mM 2a or 2b. Subsequently, crystals were flash cooled in liquid nitrogen following a brief transfer into cryo solutions containing the reservoir supplemented with 16% and 20% glycerol. All data were collected at beamline X06DA at the Swiss Light Source (Paul Scherrer Institut, Villigen PSI, Switzerland). Images were indexed and processed using XDS (Kabsch, 2010). Structure solution using the difference Fourier method and refinement were performed using PHENIX (Adams et al., 2010). Model building was carried out iteratively using the Coot software (Emsley et al., 2010). Data collection and refinement statistics for all three T2R-TTL-complexes are given in Table 1. Molecular graphics and analyses were performed with PyMol (The PyMOL Molecular Graphics System, Version 2.3.2, Schrödinger, LLC). To compare the structures of both baccatin III and 2a complexes in the curved tubulin conformation to the straight tubulin in paclitaxel stabilized microtubule (PDB ID 6WVR), all structures were superimposed onto the taxane site of 2a (residues 208–219+225-237+318–320+359–376+272–276+287–296; rmsdBacIII 0.171 Å [48 Cα atoms], rmsd5SYF 0.868 Å [52 Cα atoms]).
 
-## Biochemistry
+### Biochemistry
 
 The binding constants of both 2a and baccatin III to unassembled dimeric tubulin were measured by centrifugation. Increasing amounts of dimeric tubulin (up to 150 μM) prepared in NaPi-GTP buffer (10 mM sodium phosphate, 0.1 mM GTP, pH 7.0) were incubated with a fixed concentration (50 μM) of either baccatin III or 2a, incubated for 30 min at 25°C and centrifuged at 100,000 rpm in a TLA-100.2 rotor for 2 hr at 25°C. Then, samples were divided into upper (100 μL) and lower (100 μL) parts and 100 μL of NaPi were added to both of them. Afterward, 10 μM of either docetaxel or paclitaxel were added as internal standard and samples were subjected three times to an organic extraction using DCM (v:v). DCM was removed by evaporation and samples were resuspended in methanol 70%. Finally, ligand content was analyzed using an HPLC system (Agilent 1100 Series) and samples were separated using a Zorbax Eclipse XDB-C18 column (methanol 70% isocratic condition; 20 min runs). Tubulin content was determined by BCA for each sample. Ligand concentration in the upper 100 μL was considered as free concentration, while this in the lower 100 μL was considered as the sum of bound and free concentrations. Binding constants of tubulin for the ligand were calculated assuming a single binding site per tubulin dimer using SIGMAPLOT 14.5 Sigmastat Software Inc.
 
-## Microtubule shear-flow alignment and X-ray fiber diffraction experiments
+### Microtubule shear-flow alignment and X-ray fiber diffraction experiments
 
 X-ray fiber diffraction data were collected in BL11-NDC-SWEET beamline of ALBA Synchrotron at a λ=0.827 nm as described in Estévez-Gallego et al., 2020. Radial structural parameters (microtubule diameter and average inter-PT distances) and dimer/monomer length (from the fourth harmonic of the first layer-line signals) were determined as described in Estévez-Gallego et al., 2020.
 
-## Molecular modeling
+### Molecular modeling
 
-## In silico model building and MD simulations
+#### In silico model building and MD simulations
 
 Our reduced representation of a straight microtubule for simulation purposes consisted of the α1:β1:α2 subunits from one protofilament together with the closely interacting α1’:β1’:α2’ subunits from a neighboring protofilament, as found in the cryo-EM reconstruction of an undecorated microtubule in complex with zampanolide (PDB ID 5SYG, 3.5 Å resolution, α1β2 isotype) (Kellogg et al., 2017). Likewise, α1:β1 made up the isolated dimer, and three concatenated α:β dimers provided the starting straight protofilament. Missing residues 39–48 in the four α subunits were added, and the partially hydrated Ca2+ coordinated by Asp39, Thr41, Gly44, and Glu55 was replaced by Mg2+. Computation of the protonation state of titratable groups at pH 6.8 and addition of hydrogen atoms to each protein ensemble were carried out using the H++ 3.0 Web server (Anandakrishnan et al., 2012). Nonetheless, in agreement with previous work from our group, the side chain carboxylic group of βGlu200 in the colchicine-binding site was considered to be protonated (Bueno et al., 2018) and a disulfide bond was created to link the side chains of βCys241 and βCys356 (Sánchez-Murcia et al., 2019). The four GTP and two GDP molecules in the nucleotide-binding sites of α- and β-tubulin, respectively, were kept, together with their coordinated Mg2+ ions and hydrating water molecules. For consistency with the Protein Data Bank, residue numbering and secondary structure assignment herein follow the α-tubulin-based definitions given by Löwe et al., 2001.
 
@@ -237,12 +569,12 @@ The initial molecular models of the taxane complexes were built by best-fit supe
 
 All the ligand:tubulin complexes and their respective apo forms were solvated into a cubic box of TIP3P water molecules − with a minimal distance of the protein to the borders of 12 Å − and neutralized by addition of a sufficient number of Na+ ions. These ensembles were simulated under periodic boundary conditions and electrostatic interactions were computed using the particle mesh Ewald method (Salomon-Ferrer et al., 2013) with a grid spacing of 1 Å. The cutoff distance for the non-bonded interactions was 9 Å and the SHAKE algorithm (Ryckaert et al., 1977) was applied to all bonds involving hydrogens so that an integration step of 2.0 fs could be used. All hydrogens and water molecules were first reoriented in the electric field of the solute and then all protein residues, ligands, counterions, and waters were relaxed by performing 5000 steps of steepest descent followed by 50,000 steps of conjugate gradient energy minimization. The resulting geometry-optimized coordinate sets were used as input for the MD simulations at a constant pressure of 1 atm and 300 K using the pmemd.cuda_SPFP engine (Le Grand et al., 2013) as implemented in AMBER 18 for GeForce Nvidia GTX 980 graphics processing units. Ligands, water molecules, and counterions were first relaxed around the positionally restrained protein (1 kcal mol−1 Å−2 on Cα atoms) during a heating and equilibration period lasting 0.5 ns. For the remaining simulation time (from 250 to 1200 ns depending on the system), the macromolecular ensembles were allowed to evolve and coordinates were collected every 0.1 ns for further analysis by means of the cpptraj module in AMBER (Roe and Cheatham, 2013). Positional restraints were used only in the case of the apo- and ligand-bound microtubule, in which case a weak harmonic restraint (0.5 mol−1 Å−2) on all Cα atoms (except for those in amino acids 276–374 of both β subunits that make up the βM loops and a large part of the α:β interfaces) was employed to preserve the overall architecture observed in the cryo-EM structure. Snapshots taken every 5 ns were cooled down from 300 to 273 K over a 1 ns period using a simulated annealing procedure (Brunger and Adams, 2002); the geometries of these ‘frozen’ complexes were then optimized by carrying out an energy minimization until the root-mean-square of the Cartesian elements of the gradient was less than 0.01 kcal mol–1 Å–1. The resulting ensembles of low-energy and geometrically optimized representative structures, which are expected to be closer to the global energy minima (Sánchez-Murcia et al., 2019), were used to calculate the residue-based, solvent-corrected interaction energies.
 
-## Geometry and binding energy analysis
+#### Geometry and binding energy analysis
 
 Both the trajectory snapshots and the sets of representative optimized coordinates for each complex studied were analyzed in geometrical terms with the aid of the cpptraj routines (Roe and Cheatham, 2013) from the AmberTools18 suite. Estimations of the solvent-corrected binding energies were provided by our in-house MM-ISMSA software (Klett et al., 2012), which makes use of a sigmoidal, distance-dependent dielectric function (Morreale et al., 2007), and also provides a per-residue decomposition into van der Waals, coulombic, apolar, and desolvation contributions.
 
-## Steered MD simulations
+#### Steered MD simulations
 
-The macromolecular assemblies composed of an α:β dimer in complex with either baccatin or paclitaxel, as obtained after 5 ns of MD equilibration at 300 K, were additionally subjected to a targeted MD dynamics (tMD) procedure by means of which the trajectories were biased so as to force ligand exit first and then re-entry into the binding site. The tMD approach was followed essentially as described (Rodríguez-Barrios et al., 2005) and made use of the parallel implementation of the AMBER sander.MPI code running on four CPUs, which allows the solvent molecules to move freely and follow the dynamics of ligand and protein. A restraint was defined in terms of a mass-weighted root-mean-square (rms) superposition to the final reference structure (target) that is applied in the force field as an extra energy term of the form E=0.5krNrmsd-trmsd2 , where kr is the force constant, N is the number of atoms, and trmsd is the target rms deviation. A negative value of the force constant (−0.5 kcal mol–1 Å–2 over 0.5 ns using only the ligand’s oxygen atoms in the rms definition) was employed to force the ligand coordinates away from the initial docking location whereas a positive one was used to find a low-energy path leading from the unbound ligand obtained from the previous procedure back to the initial target structure.
+The macromolecular assemblies composed of an α:β dimer in complex with either baccatin or paclitaxel, as obtained after 5 ns of MD equilibration at 300 K, were additionally subjected to a targeted MD dynamics (tMD) procedure by means of which the trajectories were biased so as to force ligand exit first and then re-entry into the binding site. The tMD approach was followed essentially as described (Rodríguez-Barrios et al., 2005) and made use of the parallel implementation of the AMBER sander.MPI code running on four CPUs, which allows the solvent molecules to move freely and follow the dynamics of ligand and protein. A restraint was defined in terms of a mass-weighted root-mean-square (rms) superposition to the final reference structure (target) that is applied in the force field as an extra energy term of the form $E=0.5k_{r}Nrmsd-trmsd^{2}$ , where kr is the force constant, N is the number of atoms, and trmsd is the target rms deviation. A negative value of the force constant (−0.5 kcal mol–1 Å–2 over 0.5 ns using only the ligand’s oxygen atoms in the rms definition) was employed to force the ligand coordinates away from the initial docking location whereas a positive one was used to find a low-energy path leading from the unbound ligand obtained from the previous procedure back to the initial target structure.
 
 Whereas the same value of 0.5 kcal mol–1 Å–2 over 0.5 ns proved sufficient to bring baccatin back to its binding pocket, it was considerably more cumbersome to achieve the same goal in the case of paclitaxel, in which case it was imperative to apply additional conformational restraints to fixate both the T-shape of the ligand and an α-helical βM loop for reasons discussed in the text.

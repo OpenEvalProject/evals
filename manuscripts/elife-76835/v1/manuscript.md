@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01zgy1s35 Department of Systems Neuroscience, University Medical Center Hamburg-Eppendorf Hamburg Germany
-2. https://ror.org/00t3r8h32 Institute for Endocrinology & Diabetes, University of Lübeck Lübeck Germany
-3. https://ror.org/04qq88z54 German Center for Diabetes Research (DZD) Ingolstädter Landstraße Germany
+1. Department of Systems Neuroscience, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+2. Institute for Endocrinology & Diabetes, University of Lübeck Lübeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))
+3. German Center for Diabetes Research (DZD) Ingolstädter Landstraße Germany ([ROR:04qq88z54](https://ror.org/04qq88z54))
 
 † Corresponding author
 
@@ -39,9 +39,127 @@ Fifty overweight and obese older adults (age: 63.7 ± 5.9 years, range 55–78 y
 
 **Figure 1.:** (a) Timeline of the longitudinal design. Each participant attended four fMRI sessions, two each before and after the 3-month intervention interval. (b) Protocol of the experimental MRI sessions. (c) Timing of the fMRI paradigm. Example of a high sugar food trial. (d) Examples of low-sweet food and non-food items.
 
-## CR significantly reduces weight in dieters
+### CR significantly reduces weight in dieters
 
 Glucose, insulin, and c-peptide levels were assessed on all four study days in the morning after an overnight fast of at least 10 hr. Fasting glucose levels confirmed fasting state in all participants. Groups were well balanced regarding gender, age, overnight fasting times, and days between sessions (all p > 0.28). At T0, BMI, weight, bodyfat, waist, and HOMA-2 did not differ between groups (all p > 0.06, Table 1).
+
+**Table 1.**
+ Sample characteristics at baseline and follow-up.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">DG (N = 30)</th>
+      <th colspan="3">WG (N = 20)</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>T0</th>
+      <th>T1</th>
+      <th>p time</th>
+      <th>T0</th>
+      <th>T1</th>
+      <th>p time</th>
+      <th>p time × group</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BMI (kg/m²)</td>
+      <td>32.1 (0.7)</td>
+      <td>30.8 (0.6)</td>
+      <td>***</td>
+      <td>32.8 (1.1)</td>
+      <td>32.8 (1.2)</td>
+      <td>N.S.</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Waist (cm)</td>
+      <td>103.7 (1.8)</td>
+      <td>98.1 (1.9)</td>
+      <td>***</td>
+      <td>103.1 (2.7)</td>
+      <td>99.7 (2.8)</td>
+      <td>N.S.</td>
+      <td>N.S.</td>
+    </tr>
+    <tr>
+      <td>Bodyfat</td>
+      <td>37.4 (1.3)</td>
+      <td>36.7 (1.4)</td>
+      <td>N.S.</td>
+      <td>39.5 (1.6)</td>
+      <td>39.0 (1.7)</td>
+      <td>N.S.</td>
+      <td>N.S.</td>
+    </tr>
+    <tr>
+      <td>Blood</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HOMA-2</td>
+      <td>2.1 (0.1)</td>
+      <td>1.9 (0.1)</td>
+      <td>*</td>
+      <td>2.3 (0.2)</td>
+      <td>2.3 (0.1)</td>
+      <td>N.S.</td>
+      <td>N.S.</td>
+    </tr>
+    <tr>
+      <td>Glucose (mmol/l)</td>
+      <td>5.5 (0.1)</td>
+      <td>5.4 (0.1)</td>
+      <td>N.S.1</td>
+      <td>5.7 (0.1)</td>
+      <td>5.8 (0.1)</td>
+      <td>N.S.1</td>
+      <td>N.S.²</td>
+    </tr>
+    <tr>
+      <td>Insulin (pmol/l)</td>
+      <td>78.8 (4.0)</td>
+      <td>70.3 (4.4)</td>
+      <td>+</td>
+      <td>95.5 (8.7)</td>
+      <td>94.2 (7.7)</td>
+      <td>N.S.</td>
+      <td>N.S.</td>
+    </tr>
+    <tr>
+      <td>C-peptide (nmol/l)</td>
+      <td>0.9 (0.03)</td>
+      <td>0.8 (0.04)</td>
+      <td>*</td>
+      <td>1.1 (0.06)</td>
+      <td>1.0 (0.05)</td>
+      <td>N.S.</td>
+      <td>N.S.</td>
+    </tr>
+    <tr>
+      <td>HbA1C</td>
+      <td>5.4 (0.03)</td>
+      <td>5.4 (0.04)</td>
+      <td>N.S.</td>
+      <td>5.5 (0.07)</td>
+      <td>5.5 (0.07)</td>
+      <td>N.S.</td>
+      <td>N.S.</td>
+    </tr>
+  </tbody>
+</table>
+
+_***p < 0.001, *p < 0.05, +p < 0.10, s.e.m. in paranthesesDG, diet group; WG, waiting group; PL, placebo; IN, insulin; T0, baseline; T1, follow-up; 1 Wilcoxon-rank Test; ² Mann-Whitney-U-Test.BMI, body mass index; HOMA-2, c-peptide-based Homeostatic Model Assessment for Insulin Resistance; N.S, not significant._
 
 After 3 months (mean 96 ± 10 days, no group differences: p = 0.91), follow-up measurements showed a significant mean weight loss compared to baseline of 3.61 kg (±3.06, T(29) = 6.47, p < 0.001, d = 1.18) in the DG, reflecting on average a 4% loss of baseline bodyweight and BMI, respectively (T(29) = 6.66, p < 0.001, d = 1.22). Twenty-one dieters (70%) lost more than 2 kg (range: 2.5–9.6 kg), only one dieter gained more than 0.4 kg (3.1 kg). In the WG, mean weight change was 0.07 kg (±1.5 kg). Sixteen participants of the WG were able to maintain their weight ±2 kg. Two gained weight (2.3 and 2.7 kg), two lost weight of 2.3 and 4 kg, respectively. Accordingly, percentage BMI change differed significantly between groups (BMI%change: both T(48) = 5.45, p < 0.001, d = 1.39; Figure 2, Appendix 1—figure 1).
 
@@ -49,7 +167,7 @@ After 3 months (mean 96 ± 10 days, no group differences: p = 0.91), follow-up m
 
 **Figure 2.:** Violin plots show individual data, median, interquartile range, and 1.5× interquartile range.
 
-## Baseline peripheral insulin sensitivity predicts dietary success
+### Baseline peripheral insulin sensitivity predicts dietary success
 
 Fasted serum c-peptide and plasma glucose levels were used for the calculation of an effective measure of peripheral insulin resistance (HOMA-2, Levy et al., 1998; https://www.dtu.ox.ac.uk/homacalculator/index.php). To test the predictive value of baseline insulin resistance in the periphery for dietary success after 3 months, we correlated individual HOMA-2 scores assessed on the placebo session from T0 with BMI%change in dieters and found a significant correlation (r = −0.37; p = 0.046, n = 30, Pearson’s correlation). That is, higher insulin sensitivity at baseline predicted more subsequent weight loss in dieters (Figure 3a). Control analyses showed no such correlation in the WG and no correlation was observed between BMI%change and baseline BMI (all p > 0.16).
 
@@ -57,7 +175,7 @@ Fasted serum c-peptide and plasma glucose levels were used for the calculation o
 
 **Figure 3.:** (a) Higher peripheral insulin sensitivity measured via Homa-2 scores at baseline (T0) was related to higher percentage body mass index (BMI) reduction in dieters (N = 30) at follow-up (T1). (b) Correlation between insulin effects in the ventral tegmental area (VTA) at baseline and subsequent weight loss in dieters. Individual blood oxygenation level-dependent (BOLD) signals were extracted from the peak voxel in the VTA resulting from the parametric contrast PLHS>LS > INHS>LS within dieters, p < 0.05 FWE corrected for bilateral VTA mask.
 
-## Insulinergic inhibition of sweet food liking at baseline predicts dietary success
+### Insulinergic inhibition of sweet food liking at baseline predicts dietary success
 
 At T0, after an overnight fast of at least 10 hr (day 1: 12.5 ± 1.6 hr; day 2: 12.2 ± 1.6 hr, no group differences), all participants underwent a 2-day fMRI scanning procedure, separated by at least 1 week (9.0 ± 3.4 days) that was combined with 160 IU INI or placebo in a double-blind, randomized crossover design (Figure 1). Fasting time and hunger ratings did not differ between groups (all p > 0.32; Appendix 1—table 1).
 
@@ -69,7 +187,7 @@ As expected, in the T0 placebo session, food items were liked significantly more
 
 We then investigated the effects of INI on preference values at T0. Analyses across and between groups yielded no significant differences between the placebo and the insulin session, neither for food > non-food nor for HS > LS food items (all p > 0.14, rmANOVA). There was no interaction between insulin effects and insulin sensitivity as assessed by HOMA-2. To investigate the predictive value of individual differences in insulin effects on future weight changes we added BMI%change as a covariate into the analyses (rmANCOVA). While there was no interaction with insulin effects on general food versus non-food values, analysis on sugar-specific values (HS > LS) demonstrated a significant two-way interaction session × BMI%change (F(1,48) = 6.24; p = 0.016, ƞ² = 0.12, rmANCOVA). To further explore this finding, the analysis of insulin effects was limited to participants with a minimum BMI reduction of 1% (n = 25). In this subsample, insulin decreased sugar preference (i.e., percentage of sweet foods in preferred foods) at baseline significantly (T(24) = 2.10; p = 0.046, n = 25, d = 0.42, t-test) and this effect could not be explained by BMI or HOMA-2 (all p > 0.12).
 
-## Midbrain insulin effects during sugar liking predict weight loss in dieters
+### Midbrain insulin effects during sugar liking predict weight loss in dieters
 
 To examine the neural mechanisms of how insulin influenced the brain’s mesocorticolimbic reward circuitry, we analyzed blood oxygenation level-dependent (BOLD) activity measured during the preference task using a two-level random effects model. As expected from our previous study (Tiedemann et al., 2017), the analysis of differences in BOLD responses to food compared to non-food items in the placebo session at T0 yielded highly significant activations across all participants in a network of reward-related brain regions including the bilateral insula, medial OFC, and amygdala (Figure 4a). Also in line with our previous findings, regions that encode the subjective value of items, that is, regions that show a positive correlation between the amplitude of the BOLD response and subjective preference values, comprised regions of the brain’s valuation network including the vmPFC and NAc (Figure 4b). BOLD signals in these regions did not differ between groups. Furthermore, valuation of HS compared to LS food items evoked significantly stronger correlations between BOLD signal and preference values in the ACC/vmPFC (Figure 4c), the right caudate nucleus and thalamus (all p < 0.05 FWE corrected) and as trend in the right NAc (9, 10, −7; FWE = 0.09, Figure 4c).
 
@@ -79,11 +197,11 @@ To examine the neural mechanisms of how insulin influenced the brain’s mesocor
 
 We then investigated the effects of INI on these value signals. Here, in line with behavioral findings, analyses across and between groups yielded no significant changes of neural value signals for both general food items and HS versus LS items (see uncorrected results in Appendix 1—figure 3). There was also no relation between HOMA-2 and neural insulin effects across individuals or within the DG. Following up on the behavioral findings, we next analyzed whether individual insulin effects on neural signals during HS compared to LS food valuation predicted subsequent weight loss in the DG. Simple regression analysis including BMI%change as a covariate yielded insulin-induced signal changes in the left VTA to predict subsequent weight loss across all participants as well as within subjects from the DG alone (−8, −13, −13, p < 0.05 FWE corrected; Figure 3b). Results in the left VTA were still significant when including age and BMI as covariates in the analysis (p < 0.05 FWE corrected). This indicates that participants in whom INI reduced the HS-specific valuation signal in the midbrain at T0 are more likely to benefit from CR by weight loss as assessed at T1.
 
-## Baseline central and peripheral insulin sensitivity make independent contributions to the prediction of dietary success
+### Baseline central and peripheral insulin sensitivity make independent contributions to the prediction of dietary success
 
 To assess the incremental predictive value of baseline peripheral and central insulin sensitivity for weight changes after 3 months of intervention, we then performed a multiple regression analysis using HOMA-2 scores and the extracted BOLD signal from the contrast PLHS>LS > INHS>LS in the VTA to predict BMI%change. Within participants from the DG, this model turned out to be highly significant (F(2,27) = 10.07; adjusted R² = 0.39; p < 0.001), with both predictor variables explaining substantial variability (VTA-Bold: β = 0.54; T = 3.70; p < 0.001; HOMA-2: β = −0.35; T = 2.41; p = 0.023, p < 0.025 Bonferroni corrected). Inclusion of BMI in a control model demonstrate these effects not to be driven by baseline bodyweight (Appendix 1—table 3). This indicates, that peripheral and central insulin sensitivity at baseline have an independent positive impact on subsequent weight loss in overweight older dieters.
 
-## Improvement of peripheral insulin sensitivity is related to increased insulin effects on NAc HS value signals after weight loss
+### Improvement of peripheral insulin sensitivity is related to increased insulin effects on NAc HS value signals after weight loss
 
 We finally investigated metabolic and neurobehavioral changes due to successful weight loss. Within participants from the DG, HOMA-2 scores were significantly improved at follow-up (T(29) = 2.33; p = 0.027, d = 0.43). Moreover, the improvement in HOMA-2 scores was directly correlated with successful weight change within dieters (r = 0.43; p = 0.017; N = 30, Pearson’s correlation) and across all participants (r = 0.33; p = 0.020; N = 50, Pearson’s correlation, Figure 5).
 
@@ -121,7 +239,7 @@ We chose a relatively mild dietary intervention that reduced participants’ ind
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Sixty-four overweight and obese participants (age >55, BMI >25 kg/m²) with an explicit wish to lose weight were recruited for this study. Thirty-eight participants were randomized to the dietary intervention group while 26 were randomly assigned to the WG. Randomization was based on a predefined randomization list (allocation scheme 60:40) and was applied consecutively. Out of these 38 participants from the DG, two did not come back for the follow-up measurement, three individuals showed elevated glucose levels (cutoff ≥126) before at least one scanning session indicating they were not fasted, two showed incomplete task understanding (i.e., always pressed the same button), and one participant had to be excluded due to massive movement artifacts in the scanner. Out of the initial 26 members of the WG, two did not show up for the follow-up measurement, three had substantially increased insulin levels, and from one participant no task behavior could be recorded in the T1 insulin session due to technical issues. This led to a final sample size of 50 complete datasets (55–78 years, M = 63.7, standard error [SD] = 5.9, 20 men), 30 derived from the DG and 20 derived from the WG. Mean BMI was 32.4 kg/m² (25.9–43.6, SD = 4.3). Sample characteristics are summarized in Table 1.
 
@@ -129,13 +247,13 @@ Sample sizes were based on previous findings on successful CR in older adults (W
 
 Participants were recruited via newspapers and online announcements. Exclusion criteria were current or previous psychiatric or neurological disorders, chronic and acute physical illness including diabetes, current psychopharmacological medication as well as MR-specific exclusion criteria. Initial screening as well as all clinical measurements in this study were performed by a physician (P.F. and K.G.). No participant followed any specific diet at the start of the experiment. To exclude systematic confounds during food evaluation, severe food allergies and adherence to a vegan diet constituted further exclusion criteria. All participants had normal or corrected-to-normal visual acuity. The study was approved by the local ethics committee of the Ethical Board, Hamburg, Germany. All participants gave informed consent and were financially compensated for their participation. Additional financial incentives (50€) were provided to participants from the DG for successful weight loss (≥4 kg) and to participants from the WG for keeping their weight stable (weight changes ≤2 kg). The whole study was conducted at the Department of Systems Neuroscience, University Medical Centre Hamburg-Eppendorf. The study has been registered at DRKS (DRKS00028576).
 
-## Experimental protocol
+### Experimental protocol
 
-## Baseline (T0)
+#### Baseline (T0)
 
 After successful screening, participants attended two experimental sessions, separated by at least 1 week. On each day, participants arrived in the morning between 7:30 and 10:30 hr after an overnight fast of at least 10 hr. After anthropometric measurements, ratings of feelings of current hunger and collection of blood samples, participants received 160 IU of insulin (Insuman Rapid, 100 IU/ml) or vehicle (0.27% m-Kresol, 1.6% glycerol, and 98.13% water) by intranasal application. Participants received eight puffs per nostril, each puff consisting of 0.1 ml solution containing 10 IU human insulin or 0.1 ml placebo. The order of insulin and placebo was randomized and balanced, and the application was double blind. Before scanning, participants were familiarized with the task during a training session. Participants began the preference paradigm (in the fMRI scanner) 30 min after the nasal spray was applied; this delay was introduced to ensure that the insulin had time to take its full effect (Born et al., 2002). After completion of the scans, participants again rated their feeling of hunger and a second set of blood samples was collected (Figure 1).
 
-## Intervention
+#### Intervention
 
 Directly following the second scanning session, participants were randomly assigned to either the DG or the WG following a 60:40 randomization scheme. Participants of the DG received a 12-week professional diet program that consisted of (1) individual nutrition counseling by experienced clinical dieticians, who were blinded to the underlying study hypothesis, and (2) a psychological group intervention (Appendix 1—figure 4).
 
@@ -143,29 +261,29 @@ Within individual sessions and based on individual dietary records from the prev
 
 Participants from the WG were instructed to not change previous eating habits during the 3-month period. In week 6, they attended a 90-min group session which consisted of a psychoeducational unit about stress and stress management as well as a training of progressive muscle relaxation. After finishing all experimental sessions, participants of the WG were offered gratis dietary counseling identical to the one offered to the DG.
 
-## Follow-up (T1)
+#### Follow-up (T1)
 
 Three months after the last baseline measurement, participants from both groups repeated the double-blind randomized crossover design from T0, that is they attended another three study days (screening, fMRI + placebo, fMRI + insulin).
 
-## Blood measures
+#### Blood measures
 
 On each scanning day before insulin/placebo application, blood samples were collected, containing the following: 2.7 ml blood in a sodium fluoride for analysis of blood glucose, 7.5 ml blood in a serum tube for analysis of insulin and c-peptide. After completion of MR scans blood sample collection for insulin and glucose analysis was repeated. After 10 min of centrifugation (2800 × g and room temperature), the supernatants of the blood samples were stored at −80°C until further processing. Concentrations of insulin and c-peptide were measured using an electro-chemiluminescence immunoassay (Roche, ECLIA). Blood glucose was quantified through photometry (Beckman Coulter). We used fasted c-peptide serum levels for the calculation of an effective measure of insulin resistance (HOMA-2; Levy et al., 1998, https://www.dtu.ox.ac.uk/homacalculator/index.php). A c-peptide-based index is thought to be a more reliable indicator of insulin secretion that is minimally affected by hepatic insulin clearance, has longer half-life and that is more sensitive to incident T2D (Jones and Hattersley, 2013; Leighton et al., 2017; Okura et al., 2018). Indeed, in a control analysis we observed a significantly higher within-subject variability (coefficient of variance, COV) in prescan insulin levels at T0 as well as T1 compared to c-peptide levels (T0: T(49) = 4.79; p < 0.001; T1: T(49) = 4.47; p < 0.001).
 
-## Statistical analyses
+#### Statistical analyses
 
 Behavioral and metabolic data processing were conducted using MATLAB (Mathworks, MA) and SPSS 27 (IBM, NY). We report statistical tests from the general linear model framework, including one-sample t-tests, two-sample t-tests, rmANOVA, multiple regression, and Pearson’s correlations. We used the Kolmogorov–Smirnov test to test the null hypothesis that our data come from a normal distribution. In case when data were not normally distributed non-parametric testing was applied using the Wilcoxon test and the Mann–Whitney U-test. Statistical significance was assumed based on an alpha value of 0.05. Bonferroni correction was applied on multiple regression coefficients.
 
-## fMRI food-rating paradigm
+#### fMRI food-rating paradigm
 
 Four sets of stimuli were randomly presented on the four scanning days. Each one of the four parallel versions consisted of 70 food and 70 non-food color images selected from the internet. All pictures had a size of 400 × 400 pixels and were presented on a white background. Food pictures featured both sweet and savory items. Pictures were specifically selected to cover common high- and low-palatable foods. The four food sets did not differ in sugar content (see Appendix 1—figure 5 for distribution of sugar content). Non-food pictures, such as trinkets and accessories were chosen to evoke similar degrees of attractiveness. Validation of all four sets was conducted in an independent sample (n = 16) and revealed that the four sets did not differ significantly regarding the mean preference ratings (all p > 0.43). Importantly, preference ratings as well as picture saliency for HS and LS stimuli did not differ between sets (Appendix 1—table 2).
 
 On each scanning day, food and non-food stimuli were pseudo-randomly presented (not more than three pictures from one category in a row) during three runs; each run lasted ~12 min and runs were separated by a 1-min relaxation break. Every run began with the instructions (‘We will soon start with the question: Do you like the presented item or not?’) (Figure 1).
 
-## MRI data acquisition
+#### MRI data acquisition
 
 All imaging data were acquired on a Siemens PRISMA 3T scanner (Erlangen, Germany) using a 32-channel head coil. Functional data were obtained using a multiband echo-planar imaging sequence. Each volume of the experimental data contained 60 slices (voxel size 1.5 × 1.5 × 1.5 mm) and was oriented 30° steeper than the anterior to posterior commissure (AC–PC) line (repetition time [TR] = 2.26 s, echo time [TE] = 30 ms, flip angle = 80°, field of view [FoV] = 225 mm, multiband mode, number of bands: 2). An additional structural image (magnetization prepared rapid acquisition gradient echo [MPRAGE]) was acquired for functional preprocessing and anatomical overlay (240 slices, voxel size 1 × 1 × 1 mm).
 
-## fMRI data analysis
+#### fMRI data analysis
 
 Structural and functional data were analyzed using SPM12 (Welcome Department of Cognitive Neurology, London, UK) and custom scripts in MATLAB. All functional volumes were corrected for rigid body motion and susceptibility artifacts (realign and unwarp). The individual structural T1 image was coregistered to the mean functional image generated during realignment. Image diagnostics was performed using visual inspection of image-to-image variability (tsdiffana, https://imaging.mrc-cbu.cam.ac.uk/imaging/DataDiagnostics). The functional images were spatially normalized and smoothed with a 4-mm full-width at half maximum isotropic Gaussian kernel.
 

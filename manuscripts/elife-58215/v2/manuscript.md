@@ -39,13 +39,13 @@ In an attempt to understand the regulatory cascades underlying postnatal OB inte
 
 ## Results
 
-## Vax1 is expressed in a ventro-dorsal gradient along the lateral ventricle
+### Vax1 is expressed in a ventro-dorsal gradient along the lateral ventricle
 
 We investigated gene expression during postnatal OB neurogenesis by in vivo electroporation of neural stem cells in the lateral and dorsal aspects of the forebrain lateral ventricle at postnatal day 1 (P1), followed by the isolation of homotypic cohorts at different time points by microdissection and FACS. Microarray analyses provided detailed insight into gene expression changes between the two neurogenic lineages (‘in space’) and during the progression from stem cells to young neurons (‘in time’; Figure 1A; for detail see Tiveron et al., 2017).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/58215/elife-58215-fig1-v2.jpg)
 
-**Figure 1.:** Vax1 is expressed in the lateral V-SVZ.(A) Representation of the strategy used for transcriptomic analysis in time and space in the dorsal and lateral OB lineages. pCX-GFP plasmid was introduced into neural stem cells (NSCs) residing within the dorsal or lateral V-SVZ and GFP-positive cells were isolated by FACS at different time points after electroporation (Elpo). The mRNA content was analyzed by micro-array (Tiveron et al., 2017). (B) Quantification of Vax1 mRNA expression detected by micro-array analysis in dorsal (brown) and lateral (purple) progenies during neurogenesis. (C–H) In situ hybridization revealing Vax1 mRNA (in blue) combined with immuno-histochemistry using antibodies detecting (in brown) PAX6 (C, C’, G), ASCL1 (D, D’), DLX2 (E, E’, H) or KI67 (F, F’) proteins in the V-SVZ (C–F) or RMS (G, H) at postnatal day 3 (P3). (C’–F’) High magnification of cellular staining in the V-SVZ (area indicated by the yellow bracket in C-F). Arrows (C’): examples of strong PAX6 only positive cell in the dorso-lateral SVZ; blue staining underneath labels cells from a distinct plane. Arrow heads (E’, F’): double positive cells for DLX2 and KI67, respectively. High magnification of the RMS highlights the differential expression of Vax1 and Pax6 along the dorso-ventral axis (G’,G”) and the co-localization with Dlx2 (H’,H”). (I) Schematic representation of gene expression profile in different cell types of the neurogenic sequence. Circular arrow indicates proliferating cells. LV: lateral ventricle, RG: radial glia, TAP: transit amplified precursor, VZ: ventricular zone, SVZ: sub-ventricular zone. D: dorsal, L: lateral, S: septal, V: ventral. Scale bars: 100 µm (C–F), 20 µm (C’–F’), 50 µm (G–H).
+**Figure 1.:** (A) Representation of the strategy used for transcriptomic analysis in time and space in the dorsal and lateral OB lineages. pCX-GFP plasmid was introduced into neural stem cells (NSCs) residing within the dorsal or lateral V-SVZ and GFP-positive cells were isolated by FACS at different time points after electroporation (Elpo). The mRNA content was analyzed by micro-array (Tiveron et al., 2017). (B) Quantification of Vax1 mRNA expression detected by micro-array analysis in dorsal (brown) and lateral (purple) progenies during neurogenesis. (C–H) In situ hybridization revealing Vax1 mRNA (in blue) combined with immuno-histochemistry using antibodies detecting (in brown) PAX6 (C, C’, G), ASCL1 (D, D’), DLX2 (E, E’, H) or KI67 (F, F’) proteins in the V-SVZ (C–F) or RMS (G, H) at postnatal day 3 (P3). (C’–F’) High magnification of cellular staining in the V-SVZ (area indicated by the yellow bracket in C-F). Arrows (C’): examples of strong PAX6 only positive cell in the dorso-lateral SVZ; blue staining underneath labels cells from a distinct plane. Arrow heads (E’, F’): double positive cells for DLX2 and KI67, respectively. High magnification of the RMS highlights the differential expression of Vax1 and Pax6 along the dorso-ventral axis (G’,G”) and the co-localization with Dlx2 (H’,H”). (I) Schematic representation of gene expression profile in different cell types of the neurogenic sequence. Circular arrow indicates proliferating cells. LV: lateral ventricle, RG: radial glia, TAP: transit amplified precursor, VZ: ventricular zone, SVZ: sub-ventricular zone. D: dorsal, L: lateral, S: septal, V: ventral. Scale bars: 100 µm (C–F), 20 µm (C’–F’), 50 µm (G–H).
 
 These analyses showed that Vax1 was confined to the neurogenic lineage derived from the lateral ventricular wall (Figure 1B). Vax1 mRNA was induced at low levels at 1 day post-electroporation (dpe) when most GFP-positive cells were transit amplifying precursors [Boutin et al., 2008; Figure 1B]. Expression strongly increased at 2dpe and remained stably high at 4dpe, when most cells were migratory neuronal precursors, before steeply decreasing at 7dpe when cells arrived in the OB and emigrated from the RMS to invade the granule cell (GCL) and the glomerular (GL) layers (Tiveron et al., 2017). In comparison, isolates from dorsally electroporated brains showed no obvious Vax1 mRNA expression over all analyzed time points (Figure 1B).
 
@@ -53,17 +53,37 @@ Next, we investigated Vax1 co-expression with known markers of defined neuronal 
 
 Altogether, the combination of microarray studies in defined neuronal lineages and histological approaches led to the conclusion that Vax1 is expressed in the lateral and ventral SVZ in a subset of proliferating precursors and in most neuroblasts, the latter maintaining expression during their migration in the RMS.
 
-## Vax1 is necessary for the generation of calbindin-positive interneurons
+### Vax1 is necessary for the generation of calbindin-positive interneurons
 
 Previous work demonstrated that CB-N destined for the GL are generated from the ventral-most region of the anterior lateral ventricles (LV), and SHH signaling has been implicated in their specification (Merkle et al., 2007; Ihrie et al., 2011). As Vax1 is strongly expressed in this area, and has been shown to act as an intracellular mediator of SHH signaling (Take-uchi et al., 2003; Furimsky and Wallace, 2006; Zhao et al., 2010), we first asked if the TF is implicated in the generation of the CB-N subtype.
 
 Vax1 conditionally mutant mice (Vax1cKO) (Hoffmann et al., 2016) were bred to R26tdTomato mice to monitor CRE-induced recombination and to follow the distribution and fate of mutant and control cells over time. We used postnatal in vivo brain electroporation to express CRE protein in the lateral wall (Figure 2A). Since targeting of the Vax1-positive ventral region of the ventricular wall with DNA-based expression constructs is inefficient, we used Cre mRNA, that is highly efficient for the transfection of stem cells along the entire wall, including the most ventral aspect (Bugeon et al., 2017). Animals were electroporated at P0 and analyzed 15 days later, when labeled neurons reached the OB and integrated into the GCL and GL (Figure 2B). Quantification of labeled neurons in the GCL and GL revealed no significant differences between control and mutant mice (Figure 2C; Figure 2—figure supplement 2). TH-positive PGC were also not significantly affected (Figure 4I). However, there was a significant loss in the small population of CB-positive neurons in the GL (Figure 2D,E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/58215/elife-58215-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representation of the Vax1 conditional allele (Vax1cKO) and the the inducible reporter tdTomato allele in the Rosa26 locus (R26tdTom). Right panel: strategy used to recombine the Vax1 mutant allele in the V-SVZ cells in the lateral wall at postnatal day 0 (P0). TdTomato (Tom)-positive cells were analyzed 15 days post-electroporation (dpe) in the olfactory bulb (OB). (B) Images showing the distribution of Tom+ cells (in red) in the OB at 15dpe in control and mutant brains. Nuclei (in blue) are stained by Hoechst. (C) Quantification of granule cells (GC) number in the OB GCL in both conditions. Data are shown as means ± SD, dots represent individual animals. WT: n = 12, Vax1cKO: n = 17. (D) Images showing Calbindin+ (in green) and Tom+ cells in the GL at 15dpe. Arrow heads indicate double stained neurons. High magnification of representative double positive cells is shown below. (E) Quantification of the percentage of Calbindin+ neurons among the Tom+ PGC population (WT: n = 11, Vax1cKO: n = 17) showing reduction of CB-N in the mutant. GCL: granule cell layer, GL: glomerular layer. *p≤0.05. Scale bars: 200 µm (B), 50 µm (D).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58215/elife-58215-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Strategy used to target lateral V-SVZ NSCs with Cre-mRNA. Tomato+ recombined cells were isolated 2 days after electroporation. (B) Vax1 mRNA level quantified by RT-PCR was normalized to beta-actin and reported in Vax1cKO condition as relative level to control (WT).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58215/elife-58215-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Cells were analyzed 15 days after electroporation of lateral V-SVZ progenitors by Cre mRNA in WT or Vax1cKO mice. Data are shown as means ± SD, dots represent individual animals. WT: n = 12, Vax1cKO: n = 17.
+
 Thus, Vax1 expression in the ventro-lateral-derived neurogenic lineage is necessary for the correct generation of CB-N in the GL.
 
-## Vax1 regulates Pax6 during OB neurogenesis
+### Vax1 regulates Pax6 during OB neurogenesis
 
 In situ hybridization indicated that Vax1 mRNA was expressed in a ventro-dorsal gradient (Figure 1). To confirm the existence of such a gradient, we micro-dissected V-SVZ tissue from the dorsal, dorso-lateral, and ventro-lateral regions of the ventricular walls of postnatal and adult mice and subjected the isolates to RT-qPCR analyses for Vax1 mRNA. In agreement with the histological data, Vax1 mRNA showed a steep ventro-dorsal gradient, opposed to, and partially overlapping with, the well-described localization of Pax6 mRNA, that extends dorso-ventrally (Figure 3A, Figure 3—figure supplement 1; de Chevigny et al., 2012a). This observation appeared significant for two main reasons. First, several studies provided evidence that Vax1 can negatively regulate Pax6 expression during development (Bertuzzi et al., 1999; Hallonet et al., 1999; Mui et al., 2005). Second, repression of Pax6 translation along the lateral wall is necessary to confine Pax6 protein, and consequently DA-N phenotype, to the dorsal stem cell pool (de Chevigny et al., 2012a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58215/elife-58215-fig3-v2.jpg)
+
+**Figure 3.:** (A) Quantitative RT-PCR revealing Vax1 and Pax6 gene expression in tissue micro-dissected from three distinct areas of the V-SVZ. D: dorsal, DL: dorso-lateral, VL: ventro-lateral. (B) Strategy design for the Vax1 gain-of-function experiment. The Vax1 expressing plasmid (pCAG-Vax1) was introduced into lateral or dorsal progenitors in combination with pCX-GFP by electroporation at P1. Brains were analyzed at different time points in the V-SVZ or the OB. (C) Representative images showing simultaneous expression of PAX6 and GFP proteins in dorsal or lateral lineage in the V-SVZ. (D) High-magnification images illustrating the downregulation of Pax6 in GFP+ cells after electroporation of lateral V-SVZ by Vax1. White arrows: GFP/Pax6 double positive cells, yellow arrows point to cells with reduced or absentPax6 expression. (E) Quantification of PAX6 mean intensity in control or Vax1-overexpressing (OE) V-SVZ GFP+ cells from dorsal (D, n = 6 for the control, n = 7 for Vax1 condition) or lateral (L, n = 6 for the CTL, n = 7 for Vax1 condition) walls. (F) Images showing simultaneous expression of PAX6 and GFP in the OB glomerular layer of control or Vax1OE brains. Arrow head: double GFP/PAX6-positive cells; yellow arrow: GFP only cells. (G) Quantification of GFP+PAX6+ neurons in the OB GL at 15dpe (n = 6 for the CTL, n = 6 for Vax1OE) and 25dpe (n = 8 for the CTL, n = 6 for Vax1OE). PGC: periglomerular cell. *p≤0.05, **p≤0.01. Scale bars: 50 µm (C,F), 10 µm (D).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58215/elife-58215-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Cells were dissected out from three distinct areas of the V-SVZ. Error bars represent technical triplicate. D: dorsal, DL: dorso-lateral, VL: ventro-lateral.
 
 Based on this information, we hypothesized that Vax1 is implicated in Pax6 down-regulation in the postnatal SVZ. To test this, we overexpressed Vax1 in the dorsal and lateral neurogenic lineages by electroporation and investigated the impact on Pax6 expression. A Vax1 expression plasmid (pCAG-Vax1), or an empty control vector, was co-electroporated with pCX-GFP into either the dorsal or the lateral ventricular wall (Figure 3B). Two days later, animals were sacrificed and intensity of Pax6 immunostaining in GFP-positive cells was measured in the dorsal and dorso-lateral SVZ (Figure 3C,D,E). GFP-positive cells generated in both compartments showed a significant decrease in Pax6 expression levels at this early time point (Figure 3D,E).
 
@@ -71,11 +91,19 @@ Then we asked if Pax6 expression was affected at late time points, after the arr
 
 We conclude that Vax1 has the capacity to act as a negative regulator of Pax6 expression during postnatal OB neurogenesis.
 
-## Vax1 negatively regulates dopaminergic phenotype
+### Vax1 negatively regulates dopaminergic phenotype
 
 DA-N in the OB GL are derived from the dorsal and dorso-lateral aspects of the ventricle walls (Merkle et al., 2007; Fernández et al., 2011; de Chevigny et al., 2012a) and Pax6 expression is necessary and sufficient for the acquisition of this neurotransmitter phenotype (Hack et al., 2005; Kohwi et al., 2005). We asked if Vax1 overexpression in Pax6-positive cells was sufficient to inhibit the generation of DA-N in the OB.
 
 We first targeted the dorsal compartment (Figure 4A–D), where the majority of DA-N are generated (Fernández et al., 2011; de Chevigny et al., 2012a). Ectopic expression of Vax1 led to a significant loss of TH/GFP-positive neurons 15 days later in the OB (Figure 4B). Loss of TH-positive cells was robust over time and could be observed at 25 and 60 dpe (Figure 4C). Two observations pointed toward the specific loss of dopaminergic neurons. First, the number of the second major identified neuron type that is generated in the dorsal ventricular wall, CR-N of the glomerular layer (Fernández et al., 2011; Tiveron et al., 2017), was unaffected by Vax1 expression (Figure 4B), arguing against a fate shift toward this neuron type (Tiveron et al., 2017). Second, the density of total GFP+ cells in the GL of Vax1-electroporated animals was significantly reduced (Figure 4D), whereas the number of GFP+ granule cells was not affected (Figure 4—figure supplement 1). As dopaminergic neurons represent a substantial population of all dorsal generated periglomerular cells such an overall loss is coherent with a loss of the DA-N subtype.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58215/elife-58215-fig4-v2.jpg)
+
+**Figure 4.:** (A) Experimental design (left) for the electroporation of NSCs in the dorsal wall with pGAC-Vax1 + pCX-GFP. Images (right) showing expression of Tyrosine Hydroxylase (TH) and Calretinin (CR) in the OB glomerular layer 15 days after electroporation in Vax1 over-expression (OE) and control brains. White arrow head: GFP/CR- double positive neuron, yellow arrow head: GFP/TH double positive neuron, yellow arrow: GFP-only cell. (B) Histogram showing the reduction of the density of GFP+ periglomerular cells (PGC) in the Vax1OE OB (CTL n = 15, Vax1 n = 14). (C) The quantification of TH+ and CR+/GFP-positive cells shows a large decrease of the proportion of dopaminergic neurons among the total GFP+ cells in the OB of Vax1 condition (TH n = 14, CR n = 15) compared to control (n = 13/14). (D) The reduction of the TH+ population is sustained with time as it is still observed at 25- (CTL n = 7, Vax1 n = 5) and 60- (CTL n = 5, Vax1 n = 4) days post electroporation. (E) Experimental design (left) for the electroporation of NSCs in the lateral wall with pGAC-Vax1 + pCX-GFP. Representative images (right) of immunostaining with TH, Calbindin (CB), and CR antibodies in the OB GL. Arrow head: example of double positive staining with GFP for each marker. (F) Histogram presenting the quantification of the three different neuronal populations among the GFP+ neurons in the OB of control (n = 10 for each marker) or Vax1OE (TH n = 11, CB and CR n = 9) conditions. (G) Histogram showing the density of GFP + PGC in both conditions (CTL n = 10, Vax1 n = 10). (H) Lateral NSCs of Vax1cKO: rosa26tdTom brains were electroporated at birth with pCX-CRE and neuronal phenotype was analyzed in OB at 15 dpe. Representative images of TH staining in the GL of control or Vax1 deficient OB. Arrow head: GFP+ cells co-labelled with TH. Insert: high magnification of a double positive neuron. (I) Histograms presenting the percentage of TH+ neurons among Tom+ PGC (CTL: n = 12, three independent litters; Vax1: n = 12, three independent litters). A slight increase of the TH+ population was observed in absence of Vax1 compared to control but statistical test (Mann Whitney U test) failed to give significant p values (p=0.16). **p≤0.01, ****p≤0.0001. All scale bars: 20 µm except in H (50 µm).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58215/elife-58215-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Data are represented by mean ± SEM.
 
 Next, we targeted the lateral ventricular wall (Figure 4E–G), where smaller but still significant numbers of DA-N are produced from a dorso-lateral stem cell pool (Figure 4F). Overexpression of Vax1 in the lateral wall induced a significant loss of TH-positive neurons in the GL 15 days later (Figure 4F). At the same time point, numbers of CB-N and CR-N were unchanged (Figure 4F), indicating again that no phenotypic switch toward these subtypes occurred. The density of GFP+ cells was also unaffected in both GL (Figure 4G) and GCL (Figure 4—figure supplement 1). Thus, Vax1 overexpression specifically inhibits DA-N phenotype of newborn neurons in the OB.
 
@@ -83,13 +111,13 @@ We also investigated whether Vax1 loss-of-function had a positive impact on DA-N
 
 We conclude that Vax1, likely via regulation of Pax6, has the capacity to negatively control the generation of DA-N for the OB. Moreover, these data show that while Vax1 is necessary for the generation of CB-N, it is not sufficient.
 
-## Vax1 induces miR-7 expression in the lateral wall
+### Vax1 induces miR-7 expression in the lateral wall
 
 Previous work demonstrated that mature microRNA miR-7 is expressed in a ventro-dorsal gradient along the lateral ventricular wall and post-transcriptionally inhibits Pax6 protein expression. This interaction confines the generation of DA-N to the very dorso-lateral aspect (de Chevigny et al., 2012a). As Vax1 and miR-7 are expressed in a similar gradient, we hypothesized that the repression of Pax6 protein expression by Vax1 is mediated by miR-7. To address this idea, we overexpressed Vax1 together with GFP in the lateral stem cell compartment and isolated GFP-positive cells 2 days later by microdissection, dissociation and flow cytometry cell sorting (Figure 5A). qRT-PCR analyses demonstrated that augmented Vax1 expression (Figure 5B) led to a strong increase in miR-7 levels (Figure 5C), suggesting that Vax1 regulates MiR-7 expression. In agreement, bioinformatical analyses of the proximal promoters of the three MiR-7 loci (MiR-7–1, MiR-7–2, MiR-7b) identified a significant match of the Vax1 DNA binding motif within 500 bp of the transcription start site of each of the three MiR-7 loci present in the mouse genome (Figure 5D). Altogether, these results suggest that the negative impact of Vax1 on Pax6 expression is, at least in part, mediated via the positive regulation of MiR-7.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58215/elife-58215-fig5-v2.jpg)
 
-**Figure 5.:** Vax1 induces the expression of miR-7 in the lateral V-SVZ.(A) Strategy used to determine the expression of microRNAs in Vax1-overexpressing progenitors. PCAG-Vax1 and pCX-GFP were simultaneously introduced into NSCs by electroporation of the lateral wall of postnatal P1 brains. Lateral V-SVZ was dissected out 2 days after electroporation and GFP+ cells were isolated by flow cytometry (FACS) to perform quantitative RT-PCR analysis. (B) Quantification of Vax1 mRNA level by qRT-PCR in control and Vax1OE conditions, normalized to beta-actin and reported in Vax1 condition as relative level to control, validating the overexpression of Vax1 after electroporation. (C) Quantification of miR-7 expression in both conditions. Expression level of miR-7 was normalized by invariant expression of microRNA let-7a and reported in Vax1 condition as relative level to control. Experiments in B and C were performed in triplicate, and data were obtained from (B) two independent biological replications or (C) three technical replications. (D) Genome browser images representing the chromosomal portions encoding the three MiR-7 loci (depicted in pink). Mir-7–1 lies within an intronic sequence of the Hnrnpk gene whereas MiR-7–2 and MiR-7b reside within intergenic sequences. Vax1-binding sites found in the upstream regulatory region of the three MiR-7 are represented by red boxes. (E) Model of cross-regulatory interaction between Vax1, miR-7, and Pax6 in the lateral V-SVZ to control the number of dopaminergic neurons generated by the neural stem cells regionalized in this aspect. This model is supported by our present data and previous work (de Chevigny et al., 2012a) where it was shown that miR-7 was required to inhibit PAX6 expression in lateral NSCs to produce the correct number of dopaminergic neurons in the postnatal OB. Here, we propose that Vax1 acts upstream of miR-7 by positively regulating its expression and consequently inhibiting PAX6. However, it is also possible that Vax1 directly represses the expression of Pax6 mRNA (dashed line) by acting on its promoter (Mui et al., 2005). Additionally, Vax1 is required to generate Calbindin neurons from the ventral aspect of the lateral V-SVZ.  Figure 5—source data 1.Vax1 and miR-7 in V-SVZ cells.
+**Figure 5.:** (A) Strategy used to determine the expression of microRNAs in Vax1-overexpressing progenitors. PCAG-Vax1 and pCX-GFP were simultaneously introduced into NSCs by electroporation of the lateral wall of postnatal P1 brains. Lateral V-SVZ was dissected out 2 days after electroporation and GFP+ cells were isolated by flow cytometry (FACS) to perform quantitative RT-PCR analysis. (B) Quantification of Vax1 mRNA level by qRT-PCR in control and Vax1OE conditions, normalized to beta-actin and reported in Vax1 condition as relative level to control, validating the overexpression of Vax1 after electroporation. (C) Quantification of miR-7 expression in both conditions. Expression level of miR-7 was normalized by invariant expression of microRNA let-7a and reported in Vax1 condition as relative level to control. Experiments in B and C were performed in triplicate, and data were obtained from (B) two independent biological replications or (C) three technical replications. (D) Genome browser images representing the chromosomal portions encoding the three MiR-7 loci (depicted in pink). Mir-7–1 lies within an intronic sequence of the Hnrnpk gene whereas MiR-7–2 and MiR-7b reside within intergenic sequences. Vax1-binding sites found in the upstream regulatory region of the three MiR-7 are represented by red boxes. (E) Model of cross-regulatory interaction between Vax1, miR-7, and Pax6 in the lateral V-SVZ to control the number of dopaminergic neurons generated by the neural stem cells regionalized in this aspect. This model is supported by our present data and previous work (de Chevigny et al., 2012a) where it was shown that miR-7 was required to inhibit PAX6 expression in lateral NSCs to produce the correct number of dopaminergic neurons in the postnatal OB. Here, we propose that Vax1 acts upstream of miR-7 by positively regulating its expression and consequently inhibiting PAX6. However, it is also possible that Vax1 directly represses the expression of Pax6 mRNA (dashed line) by acting on its promoter (Mui et al., 2005). Additionally, Vax1 is required to generate Calbindin neurons from the ventral aspect of the lateral V-SVZ.
 
 ## Discussion
 
@@ -109,15 +137,214 @@ In conclusion, we identified in the postnatal brain a regulatory network, based 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Vax1flox</td>
+      <td>PMID:27013679</td>
+      <td>RRID:MGI:5796178</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Gt(ROSA)26Sortm14(CAG-tdTomato)Hze (Ai14)</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>CD1</td>
+      <td>Charles River</td>
+      <td>Crl : CD1(ICR) RRID:IMSR_CRL:022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Vax1 cDNA</td>
+      <td>GenBank</td>
+      <td>BC111818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cre mRNA</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-101-113</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCX-EGFP (plasmid)</td>
+      <td>PMID:17934458</td>
+      <td></td>
+      <td>Dr Xavier Morin (CNRS, Aix-Marseille University)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCX-CRE (plasmid)</td>
+      <td>PMID:17934458</td>
+      <td></td>
+      <td>Dr Xavier Morin (CNRS, Aix-Marseille University)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-digoxigenin (Sheep polyclonal)</td>
+      <td>Roche</td>
+      <td>11093274910 RRID:AB_514497</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pax6 (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>AB2237 RRID:AB_1587367</td>
+      <td>IF, IHC (1: 1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ascl1 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>556604 RRID:AB_396479</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>550609 RRID:AB_393778</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dlx2 (guinea pig polyclonal)</td>
+      <td>Prof. K. Yoshikawa, Osaka University, Osaka, Japan</td>
+      <td>PMID:16707790</td>
+      <td>IHC (1: 2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calbindin D-28K (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>AB1778 RRID:AB_2068336</td>
+      <td>IF (1 :1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calbindin D-28K (mouse monoclonal)</td>
+      <td>Swant</td>
+      <td>300 RRID:AB_10000347</td>
+      <td>IF (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Calretinin (mouse monoclonal)</td>
+      <td>Synaptic systems</td>
+      <td>214111 RRID:AB_2619906</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tyrosine hydroxylase (chicken polyclonal)</td>
+      <td>Avès Labs</td>
+      <td>TYH, RRID:AB_10013440</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR GreenER qPCR SuperMix</td>
+      <td>ThermoFisher Scientific</td>
+      <td>11762100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>miScript SYBR Green PCR Kit</td>
+      <td>Qiagen</td>
+      <td>218073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>miRCURY LNA miRNA PCR Assay</td>
+      <td>Qiagen</td>
+      <td>339306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>miRNAeasy kit</td>
+      <td>Qiagen</td>
+      <td>217004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN Blue</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Axiovision imaging system</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_002677</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>http://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Commander</td>
+      <td>https://CRAN.R-project.org/package=Rcmdr</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All animal procedures were carried out in accordance to the European Communities Council Directie 2010/63/EU and approved by French ethical committees (Comité d'Ethique pour l'expérimentation animale no. 14; permission numbers: 00967.03; 2017112111116881 v2). Animals were held on a 12 h day/night cycle and had access to food and water ad libitum. Animals of both sexes were used for experiments. CD1 mice (Charles River, Lyon, France) were used for in vivo electroporation and expression pattern analyses. Vax1flox (Vax1cKO) conditional mutants (Hoffman 2016) and Rosa26tdTomato reporter mice (Ai14, Jackson Laboratories, USA, RRID:IMSR_JAX:007914) were bred on a mixed C57BL/6*CD1 genetic background. Vax1flox genotyping was performed with Vax1flox forward: 5’-GCCGGAACCGAAGTTCCTA; Vax1wt forward: 5’-CCAGTAAGAGCCCCTTTGGG, reverse 5’-CGGATAGACCCCTTGGCATC. Ai14 genotyping was performed with R26wt forward: 5’-AAGGGAGCTGCAGTGGAGTA, reverse 5’-CCGAAAATCTGTGGGAAGTC; R26tdTom forward: 5’- CTGTTCCTGTACGGCATGG and reverse: 5’- GGCATTAAAGCAGCGTATCC.
 
-## Plasmid and in vivo electroporation
+### Plasmid and in vivo electroporation
 
 The full-length rat cDNA sequence of Vax1 was excised from pCMV2-Rn-Vax1-FLAG (a gift of Kapil Bharti) and subcloned into pCAGGS vector to produce pCAG-Vax1. Postnatal day 0 (P0) or day 1 (P1) pups were electroporated as previously described (Boutin et al., 2008; de Chevigny et al., 2012a) with plasmid DNA or RNA (Bugeon et al., 2017). CRE Recombinase mRNA (130-101-113, a generous gift from S. Wild and A. Bosio, Miltenyi Biotec, Bergisch Gladbach, Germany) and pCX-CRE (Morin et al., 2007) were used at a concentration of 0.5 µg/µl. Recombination efficiency was tested by qRT-PCR from tdTomato+ cells isolated by FACS (Figure 2—figure supplement 1). In CD1 pups, pCX-EGFP (Morin et al., 2007) was co-injected with pCAG-Vax1 or empty pCAGGS (as control) in a 1:2 molecular ratio to label the electroporated cells. Targeting of the dorsal or lateral wall of the lateral ventricle was directed by distinct orientation of the electrodes. Brains were collected at different time points after electroporation.
 
-## In situ hybridization and immunohistochemistry
+### In situ hybridization and immunohistochemistry
 
 For all procedures, tissues were fixed by intracardiac perfusion with ice-cold 4% paraformaldehyde (wt/vol) in phosphate buffered saline (PBS) and cryoprotected in 30% sucrose solution in PBS. Brains were sliced coronally using either a microtome (Microm Microtech, France) or a cryostat (Leica Biosystems, France).
 
@@ -125,7 +352,7 @@ Mouse Vax1 cDNA clone (GeneBank: BC111818, Imagene) was used to produce the anti
 
 For immunofluorescence, 50 µm floating sections were blocked in PBS supplemented with 0.5% Triton-X100, 10% foetal calf serum (FCS) and incubated overnight at 4°C in PBS, 0.1% Triton, 5% FCS with primary antibodies: anti-Calbindin D-28K (rabbit polyclonal, 1:1000, Millipore, AB1778, RRID:AB_2068336 or mouse IgG1, 1:3000, Swant, 300, RRID:AB_10000347), anti-Calretinin (mouse IgG1, clone 37C9, 1:1000, Synaptic systems, 214111, RRID:AB_2619906), anti-Tyrosine hydroxylase (chicken IgY, 1:1000, Avès labs, TYH, RRID:AB_10013440). After washing in PBS, Alexa Fluor-conjugated secondary antibodies (Jackson ImmunoResearch Laboratories) were applied diluted at 1:500 in blocking solution for 2 hr at room temperature. After staining of cell nuclei with Hoechst 33258 (Invitrogen, H3569), sections were mounted with Mowiol (Sigma-Aldrich, 81381).
 
-## RNA isolation, qRT-PCR, cell dissociation, and FACS
+### RNA isolation, qRT-PCR, cell dissociation, and FACS
 
 Animals (P1-P3) were decapitated and brains were cut into 300 μm thick sections using a Vibrating-Blade Microtome (Thermo Scientific, HM 650V). V-SVZ and RMS tissues were micro-dissected under a binocular microscope and kept in cold Hank’s balanced salt solution (HBSS, Gibco, 14170120). RNA was extracted using the miRNAeasy kit (Qiagen, 217004) or by Trizol reagent (life technologies, 15596026) according to manufacturer instructions, allowing the recovery of long and short RNAs. For Pax6 and Vax1 expression analysis, cDNA was prepared using superscript III reverse transcriptase (ThermoFisher Scientific, 12574–030) following manufacturer instructions and quantitative PCR was performed on a BioRad CFX system using SYBR GreenER qPCR SuperMix (ThermoFisher Scientific, 11762100) in technical triplicates. ß-Actin was used as reference gene. Primers used for mRNA detection are the following: Beta Actin forward 5’-CTAAGGCCAACCGTGAAAAG and reverse 5’-ACCAGAG GCATACAGGGACA; Pax6 forward 5’-TGAAGCGGAAGCTGCAAAGAAA and reverse 5’-TTTGGCCCTTCGATTAGAAAACC; Vax1 forward 5’- GCTTCGGAAGATTGTAACAAAAG and reverse 5’- GGATAGACCCCTTGGCATC.
 
@@ -133,14 +360,14 @@ For miRNA expression, cDNA was prepared using miScript II (Qiagen, 218160) and q
 
 To generate single-cell suspensions for FACS, dissected tissues were subjected to cell dissociation using a Papain solution and mechanical dissociation as described previously (Lugert et al., 2010). Cells were resuspended in HBSS/Mg/Ca supplemented with 10 mM HEPES (Gibco, 15630080), 40 μg/ml DNase I (Roche, 10104159001), 4.5 g/L Glucose (Gibco, A2494001) and 2 mM EDTA, filtered through a 30 μm pre-separation filter (Miltenyi Biotec, 130-041-407) and sorted on MoFlo Astrios EQ cytometer (Beckman- Coulter) gating on GFP- or tdTomato- positive population.
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
 Significant Vax1 DNA binding motif (JASPAR Core position-weight matrix MA0722.1) occurrences in the three MiR-7 loci (MiR7-1, MiR7-2, MiR7b) proximal promoters (defined as 500 bp upstream of the transcription start site) from the Mus musculus mm10 genome were determined using FIMO from the MEME suite (Bailey et al., 2009) with a maximum p-value limit of 0.001. FIMO-derived p-values of motif matches in the promoters were 0.000173 (MiR7-1), 0.000333 (MiR7-2), and 0.000806 (MiR7b). Genome browser images were created using the UCSC Genome Browser.
 
-## Image analyses
+### Image analyses
 
 All images were analyzed blind to the experimental condition. Optical images were acquired with an Axioplan2 ApoTome microscope (Zeiss, Germany) using ZEN software (Zeiss, RRID:SCR_013672), and processing was performed using Fiji software (RRID:SCR_002285, [Schindelin et al., 2012]) or ImageJ (NIH, https://imagej.nih. gov/ij/, RRID:SCR_003070). ISH/IHC double staining experiments were analyzed by counting labelled SVZ cells along the lateral ventricular wall on 40X magnification images (n = 3 SVZ for Ki67 and Dlx2, n = 8 SVZ for Ascl1). For cell counting in V-SVZ and OB tissues from electroporation experiments, a minimum of three sections per brain (n = animal) were analyzed and the totality of GFP+ or Tomato+ cells of each section were counted. To measure mean intensity of fluorescence after antibody staining, ROI were applied on individual electroporated cells.
 
-## Statistical analysis
+### Statistical analysis
 
 Control and Vax1 electroporation assays were performed from the same litter and were reproduced in two or three independent experiments for lateral or dorsal electroporation, respectively. Histograms were drawn with GraphPad Prism version 8 (GraphPad Software, San Diego, CA). Data are presented as mean ± SD. Each sample (n = animal/brain) is represented on histograms by dot. Statistical analyses were performed using R software (RRID:SCR_001905) and R Commander Package (https://CRAN.R-project.org/package=Rcmdr). The non-parametric two-tailed Mann Whitney U test was performed for all in vivo experiments, on pooled experimental repetitions when appropriate. Differences were considered statistically significant when p≤0.05.

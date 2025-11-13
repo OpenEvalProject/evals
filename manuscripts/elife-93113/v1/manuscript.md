@@ -11,20 +11,20 @@
 
 ### Affiliations
 
-1. https://ror.org/03az1t892 Research Center of Paleobiology, Yuxi Normal University Yuxi China
-2. https://ror.org/0040axw97 Key Laboratory for Palaeobiology and MEC International Joint Laboratory for Palaeoenvironment, Institute of Palaeontology, Yunnan University Kunming China
+1. Research Center of Paleobiology, Yuxi Normal University Yuxi China ([ROR:03az1t892](https://ror.org/03az1t892))
+2. Key Laboratory for Palaeobiology and MEC International Joint Laboratory for Palaeoenvironment, Institute of Palaeontology, Yunnan University Kunming China ([ROR:0040axw97](https://ror.org/0040axw97))
 3. Management Committee of the Chengjiang Fossil Site World Heritage Chengjiang China
-4. https://ror.org/03vek6s52 Museum of Comparative Zoology and Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States
-5. https://ror.org/03yghzc09 Centre for Ecology and Conservation, University of Exeter Penryn United Kingdom
-6. https://ror.org/013meh722 Department of Zoology, University of Cambridge, Downing Street Cambridge United Kingdom
-7. https://ror.org/02gp4e279 Institute of Geology, Chinese Academy of Geological Sciences Beijing China
-8. https://ror.org/019av8481 State Key Laboratory of Palaeobiology and Stratigraphy, Nanjing Institute of Geology and Paleontology Nanjing China
+4. Museum of Comparative Zoology and Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+5. Centre for Ecology and Conservation, University of Exeter Penryn United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))
+6. Department of Zoology, University of Cambridge, Downing Street Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+7. Institute of Geology, Chinese Academy of Geological Sciences Beijing China ([ROR:02gp4e279](https://ror.org/02gp4e279))
+8. State Key Laboratory of Palaeobiology and Stratigraphy, Nanjing Institute of Geology and Paleontology Nanjing China ([ROR:019av8481](https://ror.org/019av8481))
 
 † Corresponding author
 
 ## Abstract
 
-Euarthropods are an extremely diverse phylum in the modern, and have been since their origination in the early Palaeozoic. They grow through moulting the exoskeleton (ecdysis) facilitated by breaking along lines of weakness (sutures). Artiopodans, a group that includes trilobites and their non-biomineralizing relatives, dominated arthropod diversity in benthic communities during the Palaeozoic. Most trilobites – a hyperdiverse group of tens of thousands of species - moult by breaking the exoskeleton along cephalic sutures, a strategy that has contributed to their high diversity during the Palaeozoic. However, the recent description of similar sutures in early diverging non-trilobite artiopodans means that it is unclear whether these sutures evolved deep within Artiopoda, or convergently appeared multiple times within the group. Here, we describe new well-preserved material of Acanthomeridion , a putative early diverging artiopodan, including hitherto unknown details of its ventral anatomy and appendages revealed through CT scanning, highlighting additional possible homologous features between the ventral plates of this taxon and trilobite free cheeks. We used three coding strategies treating ventral plates as homologous to trilobite-free cheeks, to trilobite cephalic doublure, or independently derived. If ventral plates are considered homologous to free cheeks, Acanthomeridion is recovered sister to trilobites, however, dorsal ecdysial sutures are still recovered at many places within Artiopoda. If ventral plates are considered homologous to doublure or non-homologous, then Acanthomeridion is not recovered as sister to trilobites, and thus the ventral plates represent a distinct feature to trilobite doublure/free cheeks.
+Euarthropods are an extremely diverse phylum in the modern, and have been since their origination in the early Palaeozoic. They grow through moulting the exoskeleton (ecdysis) facilitated by breaking along lines of weakness (sutures). Artiopodans, a group that includes trilobites and their non-biomineralizing relatives, dominated arthropod diversity in benthic communities during the Palaeozoic. Most trilobites – a hyperdiverse group of tens of thousands of species - moult by breaking the exoskeleton along cephalic sutures, a strategy that has contributed to their high diversity during the Palaeozoic. However, the recent description of similar sutures in early diverging non-trilobite artiopodans means that it is unclear whether these sutures evolved deep within Artiopoda, or convergently appeared multiple times within the group. Here, we describe new well-preserved material of Acanthomeridion, a putative early diverging artiopodan, including hitherto unknown details of its ventral anatomy and appendages revealed through CT scanning, highlighting additional possible homologous features between the ventral plates of this taxon and trilobite free cheeks. We used three coding strategies treating ventral plates as homologous to trilobite-free cheeks, to trilobite cephalic doublure, or independently derived. If ventral plates are considered homologous to free cheeks, Acanthomeridion is recovered sister to trilobites, however, dorsal ecdysial sutures are still recovered at many places within Artiopoda. If ventral plates are considered homologous to doublure or non-homologous, then Acanthomeridion is not recovered as sister to trilobites, and thus the ventral plates represent a distinct feature to trilobite doublure/free cheeks.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ The presence, shape, and character of sutures in the trilobite cephalon have bee
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig1-v1.jpg)
 
-**Figure 1.:** Acanthomeridion and trilobites.(a) Cephalic morphology of Acanthomeridion serratum. (b) Cephalic morphology of a proetid trilobite (modified from Daley and Drage, 2016). (c) Cephalic morphology of a redlichid trilobite (modified from Whittington, 1989). (d) Ventral plates and librigenae as homologous with dorsal suture. (e) Ventral plates and doublure as homologous with marginal suture. (f) Non-homology between ventral plates of Acanthomeridion, librigenae, and doublure.
+**Figure 1.:** (a) Cephalic morphology of Acanthomeridion serratum. (b) Cephalic morphology of a proetid trilobite (modified from Daley and Drage, 2016). (c) Cephalic morphology of a redlichid trilobite (modified from Whittington, 1989). (d) Ventral plates and librigenae as homologous with dorsal suture. (e) Ventral plates and doublure as homologous with marginal suture. (f) Non-homology between ventral plates of Acanthomeridion, librigenae, and doublure.
 
 The origin of these fused dorsal ecdysial sutures – facial sutures – has traditionally been considered to fall within Trilobita (e.g. Fortey and Whittington, 1989; Edgecombe and Ramsköld, 1999; Lieberman, 2002). However, the presence of dorsal ecdysial sutures in earlier diverging artiopodans – the Protosutura (Du et al., 2019) and eye slits in Petalopleura (Chen et al., 2019) raised questions about the homology and origins within Artiopoda (e.g. Hou et al., 2017b; Du et al., 2019). An alternative hypothesis for the origins of the dorsal cephalic sutures emerged: that these had a deep root within Artiopoda and were subsequently lost in some groups including multiple times within Trilobita (Hou et al., 2017b; Du et al., 2019), rather than the traditional view that dorsal cephalic sutures in trilobites were derived within the clade, and thus these eye slits and facial sutures were acquired independently. Support for the deep root hypothesis comes from the variability of facial sutures in trilobites, and the recognition that convergence and loss of features is common when they have a function or allow adapation to a particular niche (e.g. Moore and Willmer, 1997). Further evidence for the variability of suture morphology comes from ontogenetic studies, such as the fusion of dalmanitinid facial sutures during ontogeny (Drage et al., 2018), and the loss of this feature in other trilobites such as ‘Cedaria’ woosteri (Hughes et al., 1997). This indicates that there is scope for a facial suture to have been lost repeatedly in artiopodan groups earlier diverging than Trilobita, should this feature prove to have a deeper origin within Artiopoda (Hou et al., 2017b; Du et al., 2019). A deep root for facial sutures within Artiopoda would have repercussions for the importance of the facial sutures in determining trilobite relationships (e.g. Jell, 2003) and the position of a grade of olenelline trilobites as the earliest diverging members of the group (e.g. Paterson et al., 2019). To date, a third possibility – that the ventral plates of Acanthomeridion are homologous to the doublure of olenellids, and thus Acanthomeridion and olenelline trilobites share the presence of an unfused marginal suture – has not received broad attention in the literature, but should also be considered in light of the similarities in a position of the ventral plates and olenelline doublure, and the marginal rather than dorsal position of the suture in Acanthomeridion.
 
@@ -44,43 +44,71 @@ Here, we describe new specimens of Acanthomeridion serratum collected from Jiucu
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig2-v1.jpg)
 
-**Figure 2.:** Acanthomeridion from the Cambrian Stage 3 Chengjiang Biota (red circles).All the specimens of A. serratum used here are collected from Jiucun town, Chengjiang County.
+**Figure 2.:** All the specimens of A. serratum used here are collected from Jiucun town, Chengjiang County.
 
 ## Results
 
-## Systematic palaeontology
+### Systematic palaeontology
 
-## ARTIOPODA Hou and Bergström, 1997
+#### ARTIOPODA Hou and Bergström, 1997
 
-## Acanthomeridion Hou et al., 1989
+##### Acanthomeridion Hou et al., 1989
 
 Type and only species. Acanthomeridion serratum Hou et al., 1989.
 
 Diagnosis. Non-biomineralized artiopodan with an elongate dorsal exoskeleton that gives the body an elliptical outline. Subtriangular head shield with deep lateral notches that accommodate stalked elliptical eyes, rounded genal angles of the head shield, an axe-like hypostome, and paired teardrop-shaped plates on either side of the hypostome. Head bears large eyes and long multi-segmented antennae consisting of over 40 articles anterior to three pairs of small cephalic limbs. The trunk is composed of 11 tergites bearing expanded tergopleurae with well-developed distal spines, and a terminal spine. The ninth tergite bears a pleural spine more elongated than others, the eleventh tergite is reduced and expanded into a leaf-like outline. Each tergite bears a pair of biramous limbs with long and dense spines on the endopodites, and slender stick-like exopodites with long and dense bristles. Modified from Hou et al., 1989.
 
-## Acanthomeridion serratum Hou et al., 1989 Syn. Nov.
+### Acanthomeridion serratum Hou et al., 1989 Syn. Nov.
 
 Figures 3—8.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig3-v1.jpg)
+
+**Figure 3.:** (a, b) CJHMD 00,052 a/b, respectively, an individual with hypostome, ventral plates, and 11 thoracic tergites. (c, d) CJHMD 00,053 a, showing ventral plate, dorsal sutures, and 11 thoracic tergites. (e-g) YRCP 0016 a, showing the ventral plates, and three post-antennal limbs. (h-k) Showing the post-antennal appendages under head, gnathobases of trunk limbs, stick-like exopodites with bristles (black arrows), and endopodites with long spines (white arrows). (f) Micro-CT image of YRCP 0016 a; (h, i, k) Micro-CT images of CJHMD 00,053 a. Abbreviations: ant, antenna; can, post-antennal appendage n beneath head; dbl, doublure; ds, dorsal suture; en, endopodites; ex, exopodites; ey, eye; hs, head shield; hy, hypostome; L, left; lam, lamellae; no, notch; pn, podomere n; R, right; Tn, tergite n; ts, terminal spine; vp, ventral plate.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) CJHMD 00052b articulated specimen preserved hypostome, librigena-like ventral plates, and 11 tergites with pleural spines. (b) CJHMD 00053b complete specimen with head, ventral plate, and 11 tergites. (c, d) Marginal spines (arrows) on the tergites. Abbreviations: ant, antenna; ca, post-antennal appendage beneath head; dbl, doublure; ds, dorsal suture; en, endopod; ex, exopod; ey, eye; es, eyestalk; gut, digestive tract; hs, head shield; hy, hypostome; lam, lamellae; no, notch; pn, podomere n; R, right; Tn, tergite n; ts, terminal spine; vp, ventral plate.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) YRCP 0016 a, articulated individual with antenna, ventral plates, and 11 tergites. (b) Details of ventral plate and notch. (c) Close-up of antenna and stalk eye. (d, g) Terminal spine and its joint. (e) attachment of antenna. (f) Counterpart of label (a), YRCP 0016b. (h) Detail of notch. (i-k) YRCP 0017, preserved head, compound eye, nine tergites, and marginal spines on tergite. For abbreviations, see Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) CJHMD 00,056 a, articulated specimen preserved ventral plates, gnathobases of limbs, endopods, and exopod. (b) CJHMD 00056b. (c) CJHMD 00057, showing the anterior sclerite, head, gnathobases, and five tergites. (d) details of gnathobases, endopods, and exopod. (e, f) Close-up of gnathobases. (g, h) Details of elliptical eye and ventral plate. (i) Close-up of gnathobases. (j) Details of marginal spines on tergite. For abbreviations, see Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (a) CJHMD 00058, articulated specimen with head, spine of ventral plate, stalked eyes, gut, midgut diverticulae (white arrows), and six tergites. (b) YRCP 0018, complete individual with long antennae, compound eyes, and 11 tergites. (c–e) Details of stalked eyes and the eyestalks. (f) Close-up of the gut. (g) Pleural spines of T7 and T8. For abbreviations, see Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (a) CJHMD 00059, articulated individual with hypostome, cephalic appendages, possible mouth, and 11 tergites. (b) YRCP 0019, complete individual with stalked eyes, long spines on T9, and 11 tergites. (c) YRCP 0020, articulated specimen with compound eyes and 11 tergites. (d) Elliptical eye. (e) Marginal spines (white arrows) on the long pleural spine of T9. (f) Marginal spines (white arrows) on the pleural spine of T7. (g) Paddle-like structure (red arrow). For abbreviations, see Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** (a) CJHMD 00,060 a, complete individual with head, 11 tergites, well-developed pleural spines, and terminal spine. (b) Counterpart of CJHMD 00060b. (c) Marginal spines on the posterior margin of head (white arrows) and T1 (black arrows). (d) Marginal spines on the posterior margin of tergites. (e) Pleural spines and marginal spines of T11, terminal spine. (f) Marginal spines on the posterior and lateral margins of tergite. (g, h) CJHMD 00061, articulated juvenile individual with head, notch, and nine tergites. (i, j) CJHMD 00062, juvenile individual with stalked eyes. For abbreviations, see Figure 3—figure supplement 1.
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig4-v1.jpg)
 
-**Figure 4.:** Acanthomeridion serratum from the Cambrian Stage 3 Chengjiang Biota.(a) CJHMD 00054, complete individual with head, eye, and 11 tergites. (b) Micro-CT image of panel (a) showing the stick-like exopods. Abbreviations: dbl, doublure; ex, exopod; ey, eye; es, eyestalk; hs, head shield; Tn, tergite n.
+**Figure 4.:** (a) CJHMD 00054, complete individual with head, eye, and 11 tergites. (b) Micro-CT image of panel (a) showing the stick-like exopods. Abbreviations: dbl, doublure; ex, exopod; ey, eye; es, eyestalk; hs, head shield; Tn, tergite n.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig5-v1.jpg)
 
-**Figure 5.:** Acanthomeridion serratum from the Cambrian Stage 3 Chengjiang Biota.(a–e) CJHMD 00055, showing the antenna, ventral plate, endopodites with long spines (arrows in d), 11 tergites, and paddle-like structure (red arrow). (a) Overview of whole specimen. (b) Detail of long left antenna. (c) Close-up of ventral plate. (d) Details of long spines (arrows) of right endopodites. (e) Close-up of paddle-like structure (red arrow). Abbreviations same as Figures 3 and 4.
+**Figure 5.:** (a–e) CJHMD 00055, showing the antenna, ventral plate, endopodites with long spines (arrows in d), 11 tergites, and paddle-like structure (red arrow). (a) Overview of whole specimen. (b) Detail of long left antenna. (c) Close-up of ventral plate. (d) Details of long spines (arrows) of right endopodites. (e) Close-up of paddle-like structure (red arrow). Abbreviations same as Figures 3 and 4.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig6-v1.jpg)
 
-**Figure 6.:** a–r) of Acanthomeridion and their ventrally curling pleurae (s, t).(a–r) Showing the individuals from smallest to largest with same scale bar. (s) Lateral view of (o), note the right curling pleurae and left flat pleurae. (t) Lateral view of (f), showing the left curling pleurae.
+**Figure 6.:** (a–r) Showing the individuals from smallest to largest with same scale bar. (s) Lateral view of (o), note the right curling pleurae and left flat pleurae. (t) Lateral view of (f), showing the left curling pleurae.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig7-v1.jpg)
 
-**Figure 7.:** Acanthomeridion serratum.(a) Scatterplot of raw data. (b) Data with a 95% forecast shown in pink. Specimens previously assigned to A. anacanthus indicated by blue lettering.
+**Figure 7.:** (a) Scatterplot of raw data. (b) Data with a 95% forecast shown in pink. Specimens previously assigned to A. anacanthus indicated by blue lettering.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig8-v1.jpg)
 
-**Figure 8.:** Acanthomeridion serratum in dorsal and ventral view.Only the protopodite of the head appendages has been observed. There appear to be three post-antennal limbs with the fourth pair below the cephalic-thoracic boundary.
+**Figure 8.:** Only the protopodite of the head appendages has been observed. There appear to be three post-antennal limbs with the fourth pair below the cephalic-thoracic boundary.
 
 1989 Acanthomeridion serratum Hou et al., pl. III, figs. 1–5; pl. IV, figs. 1–5; p. 46, text-figs. 3, 4.
 
@@ -120,9 +148,9 @@ Recently, the head of Retifacies abnormalis was interpreted to develop three pai
 
 The exopodites of Acanthomeridion also differ substantially from those known in other artiopodans. Specifically, the stick-like nature of the exopodite, the rows of lamellae combined with the apparent lack of segmentation, differ from the paddle-shaped exopodites thought to characterise the remainder of the group (e.g. Schmidt et al., 2022 and Figure 4 in Ortega-Hernández et al., 2013).
 
-## Possible affinities of the ventral plates in Acanthomeridion
+### Possible affinities of the ventral plates in Acanthomeridion
 
-## Ventral plates as homologs of trilobite free cheeks
+#### Ventral plates as homologs of trilobite free cheeks
 
 The ventral plates of Acanthomeridion have previously been suggested to be homologs to the free cheeks of trilobites, with the suture between these features and the remainder of the cephalon interpreted as a facial suture (Figure 1d) (e.g. Hou et al., 2017b). Morphological similarities are apparent between the ventral plates and free cheeks in many trilobites (Figure 9a and b; Whittington et al., 1997) as well as the path of suture separating them from the rest of the cephalon. Our new data provide additional support for interpreting the ventral plates as homologus of the librigenae. The ventral plates of Acanthomeridion are here shown to be transversely broad, tapering posteriorly to a spine, in a position directly comparable to the genal spine of many trilobites (Figure 1d; Figure 9a, b). Furthermore, the ventral plate is separated from the rest of the cephalon by a suture that passes near the compound eye. This path is similar to the facial suture (fused circumocular and marginal sutures) of many trilobites especially those bearing opisthoparian facial sutures, which separate the free cheeks from the cranidium passing through the visual surface (Figure 9a and b; Whittington et al., 1997). The homology of eye notches (e.g. Luohuilinella and Zhiwenia [Figure 9e and f]), and eye slits (e.g. Phytophilaspis Ivantsov, 1999; Figure 9c and d) of petalopleurans, dorsal ecdysial sutures in trilobites and Acanthomeridion has been suggested previously (Du et al., 2019). These eye slits join the dorsal eye with the anterolateral margin of the head shield, possibly forming a single suture that facilitated the release of the visual surface and created an anterior gape for the animal to leave the old exoskeleton during ecdysis. However, the evolution from eye notches to eye slits and finally to the loss of the eye slit has been inferred, calling into question the affinity between these structures and sutures (Chen et al., 2019). This hypothesis was tested explicitly in the first matrix, where the ventral plates of Acanthomeridion were considered homologous to the free cheeks of trilobites. In this analysis, the dorsal slits and sutures of other artiopodans were also treated as homologous ecdysial sutures in the cephalon (Figure 10a).
 
@@ -130,7 +158,23 @@ The ventral plates of Acanthomeridion have previously been suggested to be homol
 
 **Figure 9.:** (a, b) Trilobite Wutingaspis tingi from Chengjiang Biota, note its free cheeks and dorsal or facial sutures. (c, d) Xandarellid artiopodan Xandarella spectaculum from Chengjiang Biota bearing the distinctive dorsal sutures. (e, f) Holotype of the protosuturan artiopodan Zhiwenia coronata from Xiaoshiba Biota developing dorsal sutures. (g) The left dorsal suture of Acanthomeridion serratum from Chengjiang Biota, showing the morphological and positional similarities to that of W. tingi (a, b), X. spectaculum (c, d), and Z. coronata (e, f). (h, i) Right ventral plates of A. serratum from Chengjiang Biota bearing a terminal spine, which is similar to free cheek of trilobite like W. tingi (a, b).
 
-## Ventral plates as homologs to doublure in olenelloid trilobites
+![Figure 10.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig10-v1.jpg)
+
+**Figure 10.:** Comparison of results from matrices with different coding strategies, with coding of key characters for terminals within the analysis indicated by colored circles. (a) Ventral plates are considered homologous to free cheeks. (b) Ventral plates are considered homologous to trilobite doublure. (c) Ventral plates are not considered homologous to any artiopodan character.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** (a) Unconstrained analysis. (b) Clade comprising Anacheirurus adserai, Cryptolithus tesselatus, Eoredlichia intermedia, Olenoids serratus, Triarthrus eatoni constrained. Values at nodes are posterior probabilities.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig10-figsupp2-v1.jpg)
+
+**Figure 10—figure supplement 2.:** (a) Unconstrained analysis. (b) Clade comprising Anacheirurus adserai, Cryptolithus tesselatus, Eoredlichia intermedia, Olenoids serratus, Triarthrus eatoni constrained. Values at nodes are posterior probabilities.
+
+![Figure 10—figure supplement 3.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig10-figsupp3-v1.jpg)
+
+**Figure 10—figure supplement 3.:** (a) Unconstrained analysis. (b) Clade comprising Anacheirurus adserai, Cryptolithus tesselatus, Eoredlichia intermedia, Olenoids serratus, Triarthrus eatoni constrained. Values at nodes are posterior probabilities.
+
+#### Ventral plates as homologs to doublure in olenelloid trilobites
 
 In the above scenario, the ventral plates of Acanthomeridion would be homologous to the free cheeks both dorsally and ventrally in trilobites, including the doublure. However, it is possible that the ventral plates are only homologous to the doublure, and thus that the suture represents the marginal suture, rather than a fused facial suture. The difficulty lies in the marginal position of the eyes, which could support the interpretation that these are fused sutures but might also represent a position that facilitated ecdysis through a single, unfused, suture. Considered homologous only to the doublure, the suture in Acanthomeridion separating the ventral plates from the cephalon would be homologous to the unfused, marginal suture in olenelloids rather than the fused facial suture of most other trilobites (Figure 1e) (e.g. Stubblefield, 1936).
 
@@ -138,15 +182,46 @@ Few morphological features can be drawn to support this hypothesis beyond the ve
 
 This hypothesis was tested in the second matrix, where the ecdysial suture of Acanthomeridion was considered unfused (Figure 10b). In this scenario, the presence of eye slits and other dorsal sutures in other artiopodans would not represent homologous structures, as the proposed evolution is from a ventral-lateral structure to a dorsal one. Thus, the eye slits of the petalopleurans who bear them were not considered as ecdysial sutures for this analysis.
 
-## Ventral plates and eye slits of artiopodans as unique structures without homologs in trilobites
+#### Ventral plates and eye slits of artiopodans as unique structures without homologs in trilobites
 
 Eye slits of petalopleuran artiopodans as homologus to facial sutures of trilobites have drawn support from comparisons such as Loganopeltoides (Rasetti, 1948), where a suture charts a path from the dorsal eye to the anterolateral margin of the head shield. However, in Loganopeltoides this suture represents the vestiges of the free cheeks (Edgecombe and Ramsköld, 1999), a derived state within Trilobita. Given that the features in support of homology between the ventral plates of Acanthomeridion and trilobite-free cheeks, and implicit within this a deep root of the facial suture within Artiopoda rather than Trilobita, may not represent true homologus (e.g. spines are often evolved convergently, and the dorsal eye slits of artiopodans have previously been considered unique characters – see e.g. Edgecombe and Ramsköld, 1999; Chen et al., 2019) it is important to consider the hypothesis that these features are unique to Acanthomeridion. Thus for this third analysis, the ventral plates of Acanthomeridion were treated as their own character in the matrix (Figure 10c).
 
-## Phylogenetic analyses
+### Phylogenetic analyses
 
 All six Bayesian analyses produced the same broad relationships within Artiopoda, with the exception of the position of Acanthomeridion (Figure 10). Petalopleurans were recovered sister to Nektaspida, Australimicola sister to Conciliterga, and Vicissicaudata was not completely resolved. The positions of Bailongia, Emeraldella, Kwanyinaspis, Squamacula, and Zhiwenia were not resolved, and the internal relationships of Artiopodans were also not well resolved. Acanthomeridion was recovered as a sister to Trilobita when the ventral plates were considered homologous to the free cheeks of trilobites, but otherwise, its position was not well resolved. Within Trilobita, when the analysis was unconstrained, Olenellus and Eoredlichia formed a group sister to the other trilobites, or these two taxa were recovered in a polytomy with a clade containing the other trilobites (Figure 10—figure supplements 1–3). When the group Anacherirurus, Cryptolithus, Eoredlichia, Olenoides, and Triarthrus was constrained (with the exclusion of Olenellus), then Olenellus was recovered as sister to all other trilobites (Figure 10—figure supplements 1–3). This result is important for considering the hypothesis that the ventral plates of Acanthomeridion were homologous to the doublure of trilobites.
 
 When visualized in treespace, constrained and unconstrained analyses produce very similar results (Figure 11). Trees in the posterior sample of the analysis where the ventral plates of Acanthomeridion were treated as homologous to the free cheeks of trilobites fall in the area of treespace supporting Acanthomeridion as sister to trilobites. This result is corroborated by the raw counts in the full sample (Table 1), and by the support for this node as seen in the consensus tree (Figure 11). Posterior samples of analyses treating ventral plates as homologous to the doublure and those treating them as non-homologous with any trilobite feature overlapped in treespace, over a much broader region. These display a very similar confidence ellipse to the sample of trees where Acanthomeridion is not resolved as sister to trilobites, but instead in a different position in the tree (Figure 11). Again, these treespace results are corroborated by the raw counts in the full sample (Table 1) and by the poorly resolved position of Acanthomeridion in the consensus trees (Figure 11).
+
+**Table 1.**
+ Number of trees in posterior sample supporting Acanthomeridion as sister to trilobites / number of trees in the posterior sample total.Results tabulated for each coding strategy, with unconstrained and constrained analyses (constrained analyses where a monophyletic group of all trilobites except for Olenellus getzi was forced, in order to recover trilobite relationships compatible with Paterson et al., 2019).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Unconstrained</th>
+      <th>Constrained</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Homologous to free cheeks</td>
+      <td>7832/10504 (75%)</td>
+      <td>8083/10504 (77%)</td>
+    </tr>
+    <tr>
+      <td>Homologous to doublure</td>
+      <td>1496/12004 (12%)</td>
+      <td>1836/10504 (17%)</td>
+    </tr>
+    <tr>
+      <td>Not homologous</td>
+      <td>761/12004 (6%)</td>
+      <td>926/10504 (9%)</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/93113/elife-93113-fig11-v1.jpg)
 

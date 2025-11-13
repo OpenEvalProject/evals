@@ -23,7 +23,7 @@
 
 ## Abstract
 
-Cytotoxic immune cells are endowed with a high degree of heterogeneity in their lytic function, but how this heterogeneity is generated is still an open question. We therefore investigated if human CD8 + T cells could segregate their lytic components during telophase, using imaging flow cytometry, confocal microscopy, and live-cell imaging. We show that CD107a + -intracellular vesicles, perforin, and granzyme B unevenly segregate in a constant fraction of telophasic cells during each division round. Mathematical modeling posits that unequal lytic molecule inheritance by daughter cells results from the random distribution of lytic granules on the two sides of the cleavage furrow. Finally, we establish that the level of lytic compartment in individual cytotoxic T lymphocyte (CTL) dictates CTL killing capacity.
+Cytotoxic immune cells are endowed with a high degree of heterogeneity in their lytic function, but how this heterogeneity is generated is still an open question. We therefore investigated if human CD8+ T cells could segregate their lytic components during telophase, using imaging flow cytometry, confocal microscopy, and live-cell imaging. We show that CD107a+-intracellular vesicles, perforin, and granzyme B unevenly segregate in a constant fraction of telophasic cells during each division round. Mathematical modeling posits that unequal lytic molecule inheritance by daughter cells results from the random distribution of lytic granules on the two sides of the cleavage furrow. Finally, we establish that the level of lytic compartment in individual cytotoxic T lymphocyte (CTL) dictates CTL killing capacity.
 
 ## Introduction
 
@@ -41,11 +41,31 @@ Together, our results unveil a mechanism of stochastic uneven repartition of pre
 
 ## Results
 
-## Imaging flow cytometry reveals uneven repartition of lytic machinery in dividing human CD8+ T cells
+### Imaging flow cytometry reveals uneven repartition of lytic machinery in dividing human CD8+ T cells
 
 To investigate the mechanisms leading to the generation of CTL exhibiting heterogeneous killing ability, we first measured the distribution of lytic machinery components in dividing human CD8+ T cells. Telophase is the bona fide cell cycle phase where unambiguous measurement of molecular repartition in nascent daughter cells is performed (Chang et al., 2007; Filby et al., 2011). Lytic granule repartition during human CD8+ T cell division was evaluated using imaging flow cytometry, a technique that combines the advantages of both flow cytometry and microscopy (Basiji and O'Gorman, 2015; Doan et al., 2018; Hritzo et al., 2018). This approach allowed us to collect and analyze a substantial number of cells and to visualize and assess the repartition of molecules of interest within individual cells that were unambiguously identified as being in telophase. Cells in telophase were identified using a computer-assisted gating strategy, on the basis of nuclear and tubulin stainings (Figure 1—figure supplement 1). Nuclear staining with SYTOXorange identified bi-nucleated cells with elongated shape corresponding to cells in the late steps of division (anaphase and telophase). The cells in telophase were identified (and discriminated from possible cellular doublets) on the basis of tubulin staining that allowed us to highlight their midbodies. Figure 1—figure supplement 2A shows how masks were applied to delimit the cells and measure the fluorescence intensity of markers of interest in the nascent daughter cells. Cells were also stained with Cell Trace Violet (CTV), a probe that labels total cell proteins. As previously reported (Filby et al., 2011), we observed that total proteins distribute in nascent daughter cells within a range of 40–60% (Figure 1—figure supplement 2B). In our study, CTV staining served both as a marker of cell division (allowing us to identify cells in the different division rounds [Quah and Parish, 2012]), and to define total protein repartition in telophase (Filby et al., 2011). This procedure minimized the possibility that, if some images were taken slightly on an angle, with one daughter cell slightly more in focus than the other, the markers of interest would artificially appear as asymmetric. Indeed, asymmetric distribution was defined as cells in telophase in which repartition of the marker of interest in the nascent daughter cells was beyond the 40–60% limits observed for CTV repartition (Figure 1—figure supplement 2B). In addition, to further exclude the possibility of measurement artifacts, we verified individual cells by eyes and included in the analysis only cells in telophase that were on an even plane. Specificity of staining for the various markers was validated (see Material and methods).
 
 In a first approach, CD8+ T cells freshly isolated from healthy donor blood samples were stimulated with immobilized anti-CD3/anti-CD28/ICAM-1 for 72 hr. Anti-CD3/anti-CD28/ICAM-1 stimulation resulted in activation of human CD8+ T cells as shown by cell proliferation and CD137 upregulation (Figure 1—figure supplement 3). Repartition of the lysosomal marker CD107a was investigated in cells in telophase. As shown in Figure 1A, while CTV distribution ranged between 40 and 60% in dividing T cells, 23% of telophasic CD8+ T cells exhibited an uneven distribution of CD107a+ vesicles overcoming the 40–60% CTV range.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62691/elife-62691-fig1-v3.jpg)
+
+**Figure 1.:** (A–C) Freshly isolated polyclonal CD8+ T cells or (D) CTL clones were stimulated by immobilized anti-CD8/anti-CD28/ICAM-1 during 72 hr and stained with antibodies directed against the indicated markers. Cells in telophase were identified using imaging flow cytometry. (A) Left panel: Each dot represents one nascent daughter cell. Only one of the two nascent daughter cells in telophase is plotted. The percentage of staining for CD107a in the presented cell (x axis) is plotted against the percentage of staining for total cell proteins (CTV, y axis). Asymmetric cells were defined as cells in telophase in which repartition of CD107a in the nascent daughter cells was beyond the 40–60% observed for CTV repartition (n = 908 from three independent experiments). Right panel: Example of asymmetric and symmetric cell distribution of CD107a, as detected by imaging flow cytometry. (B) Left panel: The percentage of staining for perforin in the presented nascent daughter cell is plotted as in (A). Asymmetric cells were defined as indicated in (A) (n = 191 from three independent experiments). Right panel: Example of asymmetric and symmetric cell distribution of perforin. (C) Left panel: The percentage of staining for GrzB in the presented nascent daughter cell is plotted as in (A). Asymmetric cells were defined as indicated in (A) (n = 728 from two independent experiments). Right panel: Example of asymmetric and symmetric cell distribution of GrzB. (D) Left panel: The percentage of staining for CD107a is plotted as in (A). Asymmetric cells were defined as indicated in (A) (n = 352 from three independent experiments). Right panel: Example of asymmetric and symmetric cell distribution of CD107a. Numbers highlighted in blue in the plots indicate the percentage of cells exhibiting asymmetric repartition of the marker of interest. Red lines indicate the global distribution of the data. Red numbers indicate the slope of the linear regression curve for marker distribution. See Figures S1, S2, S3, and S4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62691/elife-62691-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Based on the brightfield illumination, all events were plotted for their aspect ratio (length/width, equal one for perfectly round cells) and their area. Cells in telophase were defined as those exhibiting a low aspect ratio and a big area. The region of interest (gray) included cell doublets and cells in anaphase and telophase. Based on the intensity of DNA staining (represented in linear axis), cells in G2/M were selected. We then applied a mask on the IsX image gallery (as described in Materials and methods) to define the limits of the nuclei. This strategy was used to determine the number of nuclei present in each gated cell. To unambiguously identify cells in telophase, we applied a mask on α-tubulin staining allowing to detect condensed microtubules in an elongated shape (as described in Materials and methods). This procedure allowed us to detect the midbody (a structure characteristic of telophase formed by highly condensed α-tubulin that bridges the two nascent daughter cells). Cells included the described gates were finally visually inspected. All the cells recognized as in telophases on the basis of nuclear and tubulin staining were included in the analysis of the markers of interest.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62691/elife-62691-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Analysis of individual cells in telophase. All IsX generated TIFF files were analyzed using the Fiji software. For each telophase cell, we used three TIFF image corresponding to (1) CTV staining, (2) α-tubulin staining, and (3) marker of interest. To standardize analysis, we used macro programming on Fiji (described in Supplementary results section). To determine a rupture zone between the two nascent daughter cells, we applied watershed function on tubulin mask. The watershed masks were used to determine the two nascent daughter cells in which the fluorescence intensities of CTV and of the markers of interest were measured (yellow lines). (B) Example of a cell exhibiting asymmetric distribution in telophase of a marker of interest. The yellow lines highlight the nascent daughter cell exhibiting a higher content of the marker of interest.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62691/elife-62691-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Freshly isolated polyclonal CD8+ T cells previously stained with CTV were stimulated 72 hr using immobilized anti-CD3/anti-CD28/ICAM1. (A) Imaging flow cytometry shows that stimulated cell undergo several rounds of division as shown by CTV staining dilution. (B) Flow cytometry shows upregulation of CD137 expression in stimulated cells.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/62691/elife-62691-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** The panels show staining for CD107a and perforin in human CD8+ memory T cells stimulated and analyzed as in Figure 1A,B. CD107a n = 978 from three independent experiments; perforin n = 1127 from three independent experiments. Numbers highlighted in blue in the plots indicate the percentage of cells exhibiting asymmetric repartition of the marker of interest. Red lines indicate the global distribution of the data. Red numbers indicate the slope of the linear regression curve for marker distribution.
 
 We next investigated the distribution in telophase of lytic components such as perforin and granzyme B (GrzB), molecules known to be pre-stored in lytic granules. As shown in Figure 1B,C, perforin and GrzB also unevenly segregated into the two nascent daughter cells in telophase, indicating that daughter cells received a heterogeneous quantity of lytic components.
 
@@ -57,31 +77,35 @@ We next investigated whether lytic machinery asymmetric repartition could also b
 
 Taken together, the above results indicate that a lysosomal-associated membrane protein known to be a marker of lytic granules and effector molecules involved in CTL lytic function, unevenly segregate in 10–23% of individual human CD8+ T cells undergoing division.
 
-## Confocal laser scanning microscopy confirms uneven repartition of lytic machinery in dividing CD8+ T cells
+### Confocal laser scanning microscopy confirms uneven repartition of lytic machinery in dividing CD8+ T cells
 
 Image flow cytometry allows the unambiguously identification and capture of rare events within a cell population, such as cells in telophase, albeit exhibiting a lower resolution when compared to classical imaging methods. This notion prompted us to confirm results obtained using imaging flow cytometry, with additional methods.
 
 We therefore used 3D confocal laser scanning microscopy to measure CD107a content in telophasic CD8+ T cells following stimulation with immobilized anti-CD3/anti-CD28/ICAM-1. Although this approach allowed us to collect a relatively small number of cells in telophase (n = 61 compared to n = 908 obtained by image flow cytometry), it revealed that 27% of the CD8+ T cells in telophase exhibited uneven repartition of CD107a, above a 1.5 threshold (corresponding to the 40–60% range used in imaging flow cytometry experiments) (Figure 2A). Figure 2B depicts the maximum intensity projection of a z-stack of images on which measurements of fluorescence intensity were performed (left panel) and a central z-section (right panel). The asymmetry of CD107a repartition in nascent daughter cells is better appreciated by looking at the 3D reconstructions of the dividing cell (Figure 2—video 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62691/elife-62691-fig2-v3.jpg)
+
+**Figure 2.:** Freshly isolated polyclonal CD8+ T cells were stimulated by immobilized anti-CD8/anti-CD28/ICAM-1 during 72 hr and stained with antibodies directed against CD107a. Cells in telophase were identified using confocal laser scanning microscopy. (A) Analysis of CD107a repartition in dividing cells. The fold increase of CD107a staining in the brighter nascent daughter cell as compared to the other nascent daughter cell is shown. The dotted red line indicates the limit between symmetric and asymmetric cells (1.5 fold increase, corresponding to a 60–40% variation) (n = 61 from two independent experiments). Each dot represents one CD8+ T cell in telophase. (B) Example of an asymmetric cell in division. Green CD107a, cyan DAPI, red Tubulin. A maximum intensity projection (MIP) of a z-stack of images (left panel) and one z-section (right panel) are shown. See Figure 2—video 1.
+
 Together, the above results indicate that confocal laser scanning microscopy provides results that reinforce those we obtained using imaging flow cytometry and supports the finding that lytic granules undergo uneven repartition in ~20% of dividing CD8+ T cells.
 
-## Uneven repartition of lytic machinery is not accompanied by asymmetric segregation of fate determining transcription factors and does not require a polarity cue
+### Uneven repartition of lytic machinery is not accompanied by asymmetric segregation of fate determining transcription factors and does not require a polarity cue
 
 The observation that lytic components were unevenly inherited in daughter cells prompted us to investigate whether this process was somehow related to mechanisms of cell fate determining ACD, a process reported to play a role in mouse naive T lymphocytes differentiation (Arsenio et al., 2015; Arsenio et al., 2014; Kamiński et al., 2016; Pham et al., 2014). Indeed, it has been reported that ACD can result in the generation of one daughter cell predisposed to become a short-lived effector cell (harboring a high level of the transcription factors T-bet and c-Myc, and of GrzB) and one daughter cell predisposed to become a memory T cell (Widjaja et al., 2017). We investigated whether uneven repartition of fate determining transcription factors T-bet and c-Myc (Chang et al., 2011; Verbist et al., 2016) might occur in telophase in freshly isolated peripheral blood CD8+ T cells stimulated with anti-CD3/anti-CD28/ICAM-1 for 72 hr. As shown in Figure 3A,B, both T-bet and c-Myc did not unevenly segregate into the two nascent daughter cells during telophase. Moreover, the slope of the linear regression curve for the distribution of T-bet and c-Myc as compared to CTV was close to 1, indicating that the repartition of these two molecules in telophase followed that of total proteins.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/62691/elife-62691-fig3-v3.jpg)
 
-**Figure 3.:** Freshly isolated polyclonal CD8+ T cells were stimulated by immobilized anti-CD8/anti-CD28/ICAM-1 during 72 hr and stained with antibodies directed against T-bet (A) or c-Myc (B). (A) T-bet analysis (n = 926 from three independent experiments). (B) c-Myc analysis (n = 703 from three independent experiments). Numbers highlighted in blue in the plots indicate the % of cells exhibiting asymmetric repartition of the marker of interest. Red lines indicate the global distribution of the data. Red numbers indicate the slope of the linear regression curve for marker distribution.Figure 3—source data 1.
+**Figure 3.:** Freshly isolated polyclonal CD8+ T cells were stimulated by immobilized anti-CD8/anti-CD28/ICAM-1 during 72 hr and stained with antibodies directed against T-bet (A) or c-Myc (B). (A) T-bet analysis (n = 926 from three independent experiments). (B) c-Myc analysis (n = 703 from three independent experiments). Numbers highlighted in blue in the plots indicate the % of cells exhibiting asymmetric repartition of the marker of interest. Red lines indicate the global distribution of the data. Red numbers indicate the slope of the linear regression curve for marker distribution.
 
 To further define whether the observed uneven repartition of lytic components was or was not related to ACD, we investigated whether uneven repartition of lytic components was dependent on a polarity cue (e.g. localized TCR stimulation) as previously described for ACD (Arsenio et al., 2015; Pham et al., 2014). Figure 4A,B shows that a polarity cue was not required to induce uneven distribution of lytic molecules, since comparable CD107a+ vesicle segregation was observed in peripheral blood CD8+ T cells stimulated by either immobilized (anti-CD3/anti-CD28/ICAM-1) or soluble (phorbol myristate acetate+ ionomycin) stimuli.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62691/elife-62691-fig4-v3.jpg)
 
-**Figure 4.:** (A) Freshly isolated polyclonal CD8+ T cells were stimulated using immobilized anti-CD8/anti-CD28/ICAM-1 (left) or with PMA/ionomycin (right) during 72 hr and stained with antibodies directed against CD107a. Each dot represents one nascent daughter cell. Only one of the two nascent daughter cells in telophase that were identified by Imaging Flow Cytometry is plotted. The percentage of staining for CD107a in the presented nascent daughter cell (x axis) is plotted against the percentage of staining for total cell proteins (CTV, y axis). Asymmetric cells were defined as in Figure 1. Left: CD107a analysis when cells were stimulated with immobilized stimuli (n = 1185 from three independent experiments). Right: CD107a analysis when cells were stimulated with PMA/ionomycin (n = 644 from three independent experiments). Numbers highlighted in blue in the plots indicate the % of cells exhibiting asymmetric repartition of the marker of interest. Red lines indicate the global distribution of the data. Red numbers indicate the slope of the linear regression curve for CD107a distribution. (B) Histograms represent the mean and standard deviation of the percentage of asymmetric cells in the three independent experiments. No statistical difference was revealed by paired t-test.Figure 4—source data 1.
+**Figure 4.:** (A) Freshly isolated polyclonal CD8+ T cells were stimulated using immobilized anti-CD8/anti-CD28/ICAM-1 (left) or with PMA/ionomycin (right) during 72 hr and stained with antibodies directed against CD107a. Each dot represents one nascent daughter cell. Only one of the two nascent daughter cells in telophase that were identified by Imaging Flow Cytometry is plotted. The percentage of staining for CD107a in the presented nascent daughter cell (x axis) is plotted against the percentage of staining for total cell proteins (CTV, y axis). Asymmetric cells were defined as in Figure 1. Left: CD107a analysis when cells were stimulated with immobilized stimuli (n = 1185 from three independent experiments). Right: CD107a analysis when cells were stimulated with PMA/ionomycin (n = 644 from three independent experiments). Numbers highlighted in blue in the plots indicate the % of cells exhibiting asymmetric repartition of the marker of interest. Red lines indicate the global distribution of the data. Red numbers indicate the slope of the linear regression curve for CD107a distribution. (B) Histograms represent the mean and standard deviation of the percentage of asymmetric cells in the three independent experiments. No statistical difference was revealed by paired t-test.
 
 Overall, the above results demonstrate that uneven partitioning of lytic compartment in telophase is not associated with asymmetric segregation of fate determining transcription factors. Moreover, a polarity cue is not required. All in all, the above results show that, in human CD8+ T cells, lytic machinery uneven repartition is not related to described mechanisms of fate determining ACD.
 
-## Asymmetric repartition of CD107a+ vesicles resets at each division event and generates heterogeneous daughter cells
+### Asymmetric repartition of CD107a+ vesicles resets at each division event and generates heterogeneous daughter cells
 
 We next investigated whether lytic machinery uneven repartition occurred during subsequent divisions and whether this process could be involved in preserving lytic machinery heterogeneity within CD8+ T cell populations.
 
@@ -89,7 +113,7 @@ We considered the cells in the different rounds of division (identified by diffe
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/62691/elife-62691-fig5-v3.jpg)
 
-**Figure 5.:** + vesicles resets at each division event.(A, B) Freshly isolated polyclonal CD8+ T cells were stimulated using immobilized anti-CD8/anti-CD28/ICAM-1 during 72 hr and stained with antibodies directed against CD107a. Cells in telophase were identified by imaging flow cytometry. The number of divisions accomplished and the cell cycle phase were determined on the basis of CTV and SYTOX nuclear staining. (A) Each dot represents one nascent daughter cell. Only one of the two nascent daughter cells in telophase that were identified by imaging flow cytometry is plotted. The percentage of staining for CD107a in the presented nascent daughter cell (x axis) is plotted against the percentage of staining for total cell proteins (CTV, y axis). Asymmetric cells were defined as in Figure 1. Numbers highlighted in blue in the plots indicate the % of cells exhibiting asymmetric repartition of the marker of interest. Red lines indicate the global distribution of the data. Red numbers indicate the slope of the linear regression curve for CD107a distribution. See Figure S3. (B) Histograms represent the mean and standard deviation of the percentage of asymmetric cells in three independent experiments. No statistical difference was revealed by paired t-test. (C, D) Statistical analysis of cells in telophase and in G1. (C) Cells in telophase are plotted against their CD107a FI. The different curves represent cells having undergone zero, one, or two mitoses. Each dot indicates one cell undergoing asymmetric CD107a repartition as compared to its CD107a FI. The χ2 statistical test showed that cells undergoing uneven repartition of lytic machinery in telophase were randomly distributed all over the CD107a expression curves (See Materials and methods). (D) Plots show cells in G1 from three different experiments. Curves represent the distribution of CD107a florescence intensity for all cells in G1. Individual plots, marked with different colors, show cells in G1 at different rounds of division. The Kolmogorov–Smirnov goodness-of-fit test rejected the hypothesis that the CD107a expression curves follow the same distribution at the different division round (see Supplementary Results). The χ2 test showed that variability was distributed all over the curves. See Figure S3.Figure 5—source data 1.
+**Figure 5.:** (A, B) Freshly isolated polyclonal CD8+ T cells were stimulated using immobilized anti-CD8/anti-CD28/ICAM-1 during 72 hr and stained with antibodies directed against CD107a. Cells in telophase were identified by imaging flow cytometry. The number of divisions accomplished and the cell cycle phase were determined on the basis of CTV and SYTOX nuclear staining. (A) Each dot represents one nascent daughter cell. Only one of the two nascent daughter cells in telophase that were identified by imaging flow cytometry is plotted. The percentage of staining for CD107a in the presented nascent daughter cell (x axis) is plotted against the percentage of staining for total cell proteins (CTV, y axis). Asymmetric cells were defined as in Figure 1. Numbers highlighted in blue in the plots indicate the % of cells exhibiting asymmetric repartition of the marker of interest. Red lines indicate the global distribution of the data. Red numbers indicate the slope of the linear regression curve for CD107a distribution. See Figure S3. (B) Histograms represent the mean and standard deviation of the percentage of asymmetric cells in three independent experiments. No statistical difference was revealed by paired t-test. (C, D) Statistical analysis of cells in telophase and in G1. (C) Cells in telophase are plotted against their CD107a FI. The different curves represent cells having undergone zero, one, or two mitoses. Each dot indicates one cell undergoing asymmetric CD107a repartition as compared to its CD107a FI. The χ2 statistical test showed that cells undergoing uneven repartition of lytic machinery in telophase were randomly distributed all over the CD107a expression curves (See Materials and methods). (D) Plots show cells in G1 from three different experiments. Curves represent the distribution of CD107a florescence intensity for all cells in G1. Individual plots, marked with different colors, show cells in G1 at different rounds of division. The Kolmogorov–Smirnov goodness-of-fit test rejected the hypothesis that the CD107a expression curves follow the same distribution at the different division round (see Supplementary Results). The χ2 test showed that variability was distributed all over the curves. See Figure S3.
 
 A complementary observation indicated that the heterogeneity process is stationary, but not hereditary: for example a daughter cell originating from a heterogeneous division has a constant stationary probability to produce a new uneven division. We arrived to this conclusion by generating CD107a fluorescence intensity (CD107a-FI) density curves of all telophasic cells having undergone zero, one, or two mitoses. Cells in telophase showing unequal CD107a-FI repartition were then plotted on these curves (Figure 5C). The χ2 statistical test showed that these cells were randomly and independently distributed on the CD107a-FI density curves, supporting the hypothesis that there is no inheritance in the decision to divide unevenly (see Materials and methods, Table 1).
 
@@ -97,9 +121,17 @@ We next asked whether this process might create a drift in lytic compartment con
 
 Taken together, the above results indicate that asymmetric distribution of CD107a+ vesicles in telophase is not limited to the first division, but it is rather a stochastic process, inherent to each division, that perpetuates variability in daughter cells.
 
-## Lytic granules randomly distribute on the two sides of the cleavage furrow
+### Lytic granules randomly distribute on the two sides of the cleavage furrow
 
 To gain direct information about the possibility that lytic components might stochastically distribute in nascent daughter cells, we visualized lytic granule repartition during division in individual CTL transfected with mCherry-tagged GrzB mRNA, by live-cell microscopy. mCherry-tagged GrzB showed no preferential localization within cell cytosol at the different phases of the division and appeared to randomly partition into the two nascent daughter cells. In some cases, nascent daughter cells exhibited approximately similar repartition of lytic granules (Figure 6A, Figure 6—video 1), and in some other cases, lytic granule repartition appeared to be rather asymmetric (Figure 6B, Figure 6—video 2). Furthermore, we investigated cell division in 4D (3D plus time). Sorted CD8+ T cells in G2/M phase were loaded with LysoTracker Red (LTR) to stain their late endosomal lysosomal vesicles (of which lytic granules are an important fraction [Faroudi et al., 2003]). Nascent daughter cells were imaged to monitor the distribution of LTR+ vesicles and measure the integrated fluorescence intensity. An example of one CD8+ T cell distributing LTR+ vesicles in a symmetric fashion during division is shown in Figure 6C, Figure 6—video 3 (LTR distribution ranged within 40–60% at all time points measured). One CD8+ T cell that distributed in an asymmetry fashion LTR+ vesicles is shown in Figure 6D, Figure 6—video 4 (LTR distribution ranged above or below 40–60% at all time points measured). Additional examples of cells dividing in symmetric and asymmetric fashion are shown in Figure 6—figure supplement 1 and Figure 6—video 5.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/62691/elife-62691-fig6-v3.jpg)
+
+**Figure 6.:** (A,B) Snapshots depict typical cells in division undergoing even (A) or uneven (B) repartition of lytic granules (mCherry-tagged GrzB, red) in telophase as detected by live-cell imaging. Images are from Figure 6—videos 1 and 2, respectively. Results are from three independent experiments. (C,D) Snapshots depict Imaris software reconstructions of typical cells undergoing even (C) or uneven (D) repartition of LTR+ (red) lytic granules in division as detected by 4D live-cell imaging. Images are from Figure 6—videos 3 and 4, respectively. Results are from four independent experiments. See Figure 6—videos 3–5. (E) Binomial modeling for the behavior of the population of n granules. The curve shows the probability of lytic granule asymmetric repartition in telophase as a function of lytic granule number. (F) Monte-Carlo simulation of particle correlation as a function of lytic granule number and probability of lytic granule asymmetric repartition.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62691/elife-62691-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A,B) Snapshots depict Imaris software reconstructions of typical cells undergoing uneven (A) and even (B) repartition of LTR+ (red) lytic granules in division as detected by 4D live-cell imaging. Images are from Figure 6—video 5.
 
 While lytic granules seemed to be overall randomly distributed between nascent daughter cells, in some cases the videos showed that lytic granules did not behave completely independently from each other and exhibited some clustering. We therefore used a computational approach to establish whether the above-described process might be linked to a random repartition of lytic components into the two nascent daughter cells. We first calculated the probability to obtain an asymmetric distribution of lytic granules (e.g. a repartition of the granules into the two daughter cells out of the 40–60% range) related to the granule number per dividing cell. This computation is naturally handled with a binomial modeling for the behavior of the population of n granules (see Materials and methods). This analysis showed that for n < 100 the probabilities that individual particles distribute asymmetrically on the two sides of the cleavage furrow are relatively high (Figure 6E). Using stimulated emission depletion (STED) on CTL stained for GrzB, we estimated that 14–65 (mean = 37) lytic granules are contained within individual CTL. Our estimation well matched with numbers published in previous studies, ranging between 10 and 100 (Chiang et al., 2017; Clark et al., 2003; Kataoka et al., 1996; Peters et al., 1991).
 
@@ -111,13 +143,13 @@ The analysis shows that for a probability of 20% asymmetric repartition of parti
 
 Taken together, cell imaging and computational results strongly suggest that the observed stationary unequal distribution of lytic granules in telophase is the result of a stochastic repartition of particulate cytosolic structures on the two sides of the cleavage furrow in dividing cells.
 
-## The level of lytic granule content in individual CTL dictates CTL killing capacity
+### The level of lytic granule content in individual CTL dictates CTL killing capacity
 
 To assess the consequences of an uneven distribution of lytic compartment on CTL-mediated cytotoxicity, we investigated cytotoxic efficacy in CTL expressing high and low lytic granule content. Clonal CTL were loaded with LysoTraker blue, and cells containing high (LysoTrackerHigh) and low (LysoTrackerLow) levels were sorted by fluorescence-activated cell sorting. As shown in Figure 7A, sorted LysoTrackerHigh and LysoTrackerLow CTL populations maintained their difference in LysoTracker staining at least 24 hr after cell sorting. The cytotoxic efficacy of sorted CTL populations was compared at different effector:target (E:T) ratios by measuring the percentage of killed targets (7-aminoactinomycin D [7-AAD]-positive targets). For each ratio, LysoTrackerHigh CTL were more efficient than LysoTrackerLow CTL in exerting cytotoxicity (Figure 7B,C), although basal killing (in the absence of peptide stimulation) was comparable between LysoTrackerHigh and LysoTrackerLow CTL (Figure 7C). The above results indicated that lytic granule content is associated with killing efficacy. To strengthen these findings, we performed additional experiments on sorted CTL for high and low LysoTracker staining and measured CD107a surface exposure and CD8 internalization following 4 hr conjugation with target cells. Results show that LysoTrackerhigh CTL exhibited a higher lytic granule secretion as detected by CD107a exposure when compared to LysoTrackerlow CTL (Figure 7D). However, productive TCR engagement was comparable in both populations as detected by similar levels of CD8 internalization (Huang et al., 2019; Xiao et al., 2007; Figure 7E).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/62691/elife-62691-fig7-v3.jpg)
 
-**Figure 7.:** Clonal CTL were FACS sorted on the basis of their LysoTracker Blue staining. (A) Representative FACS histograms showing LysoTracker Blue staining levels on LysoTrackerhigh and LysoTrackerlow sorted CTL at the indicated day (D) after cell sorting. Numbers indicate mean fluorescence intensity. Results are representative of three independent experiments (B,C) LysoTrackerHigh and LysoTrackerLow CTL-mediated cytotoxicity was evaluated by FACS analysis by measuring 7-AAD uptake in target cells either pulsed or not with antigenic peptide following overnight incubation with CTL at the indicated E/T ratio. (B) Cytotoxicity is expressed as the % of 7-AAD+-pulsed target cells minus % of 7-AAD+-unpulsed target cells (basal). Results are from three independent experiments. Each dot represents results from one experiment performed in triplicate. Means ± SEM are shown. Paired t-tests were performed, and p-values are indicated. (C) Histograms shown are from one representative experiment. Numbers indicate the percentage of 7-AAD-positive target cells. (D) LysoTrackerHigh and LysoTrackerLow CTL CD107a exposure after a 4 hr incubation with target cells pulsed or not with antigenic peptide (E/T ratio 0.5:1) was evaluated by FACS analysis. Each dot represents results from four independent experiments performed either in duplicate or triplicate. Means ± SEM are shown. Paired t-tests were performed, and p-values are indicated. (E) CD8 expression in LysoTrackerHigh and LysoTrackerLow CTL after a 4 hr incubation with target cells pulsed with antigenic peptide (E/T ratio: 0.5:1) was evaluated by FACS analysis. Results are normalized on CD8 MFI level of LysoTrackerHigh and LysoTrackerLow CTL cultured in the absence of target cells. Each dot represents results from four independent experiments performed either in duplicate or triplicate. Means ± SEM are shown.Figure 7—source data 1.Figure 7—source data 2.+ T cells.Figure 7—source data 3.
+**Figure 7.:** Clonal CTL were FACS sorted on the basis of their LysoTracker Blue staining. (A) Representative FACS histograms showing LysoTracker Blue staining levels on LysoTrackerhigh and LysoTrackerlow sorted CTL at the indicated day (D) after cell sorting. Numbers indicate mean fluorescence intensity. Results are representative of three independent experiments (B,C) LysoTrackerHigh and LysoTrackerLow CTL-mediated cytotoxicity was evaluated by FACS analysis by measuring 7-AAD uptake in target cells either pulsed or not with antigenic peptide following overnight incubation with CTL at the indicated E/T ratio. (B) Cytotoxicity is expressed as the % of 7-AAD+-pulsed target cells minus % of 7-AAD+-unpulsed target cells (basal). Results are from three independent experiments. Each dot represents results from one experiment performed in triplicate. Means ± SEM are shown. Paired t-tests were performed, and p-values are indicated. (C) Histograms shown are from one representative experiment. Numbers indicate the percentage of 7-AAD-positive target cells. (D) LysoTrackerHigh and LysoTrackerLow CTL CD107a exposure after a 4 hr incubation with target cells pulsed or not with antigenic peptide (E/T ratio 0.5:1) was evaluated by FACS analysis. Each dot represents results from four independent experiments performed either in duplicate or triplicate. Means ± SEM are shown. Paired t-tests were performed, and p-values are indicated. (E) CD8 expression in LysoTrackerHigh and LysoTrackerLow CTL after a 4 hr incubation with target cells pulsed with antigenic peptide (E/T ratio: 0.5:1) was evaluated by FACS analysis. Results are normalized on CD8 MFI level of LysoTrackerHigh and LysoTrackerLow CTL cultured in the absence of target cells. Each dot represents results from four independent experiments performed either in duplicate or triplicate. Means ± SEM are shown.
 
 Together, these results indicate that the lytic granule cargo of individual CTL and not their activation properties directly impact killing behavior. They imply that stochastic uneven distribution of lytic granules in dividing CTL determine heterogeneous killing behavior at the single-cell level.
 
@@ -143,11 +175,399 @@ It is interesting to note that our results present analogies with previously pub
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HLA-A2 restricted CD8+ T cell clone (VLAELVKQI)</td>
+      <td>Khazen et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HLA-A2 restricted CD8+ T cell clone (NLVPMVATV)</td>
+      <td>Khazen et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HLA-A2 restricted CD8+ T cell clone (VLAELVKQI)</td>
+      <td>Khazen et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>JY (EBV-transformed B cells)</td>
+      <td>Khazen et al., 2016; Vasconcelos et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Buffy coats of Healthy donors</td>
+      <td>EFS, Toulouse, France</td>
+      <td></td>
+      <td>With consent and approval AC-2014–2384</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD3 (Human monoclonal, TR66)</td>
+      <td>Enzo</td>
+      <td>Cat# ALX-804–822 RRID:AB_2051037</td>
+      <td>(1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD28 (Mouse monoclonal, CD28.2)</td>
+      <td>eBioscience</td>
+      <td>Cat# 16-0289-81 RRID:AB_468926</td>
+      <td>(1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant human ICAM-1-Fc fusion protein</td>
+      <td>R and D Systems</td>
+      <td>Cat# 720-IC</td>
+      <td>(0.5 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD107a (Mouse monoclonal, H4A3)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 555798 RRID:AB_396132</td>
+      <td>(10 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD107a AlexaFluor 647 (Mouse monoclonal, H4A3)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 562622 RRID:AB_2737684</td>
+      <td>(Diluted at 1/100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Granzyme B (Mouse monoclonal, GB11)</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# MA1-80734 RRID:AB_931084</td>
+      <td>(10 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Granzyme B AlexaFluor 647 (Mouse monoclonal, GB11)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 561999 RRID:AB_10897997</td>
+      <td>(10 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human T-bet (Rabbit polyclonal, Tbx21)</td>
+      <td>Abcam</td>
+      <td>Cat# ab181400</td>
+      <td>(10 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human C-myc (Mouse monoclonal, 9E10)</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# MA1-980 RRID:AB_558470</td>
+      <td>(10 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human α-tubulin (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab15246 RRID:AB_301787</td>
+      <td>(Diluted at 1/100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG1 Alexa Fluor 647 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A21240 RRID:AB_2535809</td>
+      <td>(10 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG1 Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-21121 RRID:AB_2535764</td>
+      <td>(10 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit (H+L) AlexaFluor488 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A11034 RRID:AB_2576217</td>
+      <td>(10 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit (H+L) AlexaFluor647 (Donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A31573 RRID:AB_2536183</td>
+      <td>(10 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit AlexaFluor555 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A21428 RRID:AB_2535849</td>
+      <td>(10 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG Abberior Star 580 (Goat polyclonal)</td>
+      <td>Abberior Instruments</td>
+      <td>Cat# 52403</td>
+      <td>(10 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD107a-PEcy7 (mouse monoclonal, H4A3)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 561348 RRID:AB_10644018</td>
+      <td>(Diluted at 1/50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD8-FITC (mouse monoclonal, HIT8A)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 555634 RRID:AB_395996</td>
+      <td>(Diluted at 1/50)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MGC Human GZMB Sequence verified cDNA (Clone Id: 5223876)</td>
+      <td>GE Healthcare BIO Sciences</td>
+      <td>Cat# MHS6278-202801737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCherry-SEpHluorin</td>
+      <td>Koivusalo et al., 2010</td>
+      <td>Addgene cat# 32001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT7-GZMB-mCherry-SEpHluorin</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: XhoI-T7-GzB Forward caaCTCGAGTAATACGACTC ACTATAGGGAGACCCGGTA CCatgcaaccaatcctgcttctgcc</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: EcoRI-GzB-noSTOP-R caaGAATTCcggcgtggcgtttcatggttttctttatccag</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CMV peptide p65 (NV-9)</td>
+      <td>GeneCust</td>
+      <td>Cat# 181329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human rIL-2</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-097-748</td>
+      <td>(150 IU/ml)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human rIL-15</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-095-766</td>
+      <td>(50 ng/mL)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep Negative human CD8+ T cell isolation kit</td>
+      <td>StemCell Technologies</td>
+      <td>Cat# 17953</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep human Memory CD8+ T cell enrichment kit</td>
+      <td>StemCell Technologies</td>
+      <td>Cat# 19159</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IDEAS SpotCount Threshold (M03,nucleus,60)</td>
+      <td>Amnis, Luminex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IDEAS Area Range Threshold (M02,tubulin,75),50–5000, 0–0.5</td>
+      <td>Amnis, Luminex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris Software</td>
+      <td>Oxford Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN ZEISS Efficient Navigation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Huygens Professional version 18.10 using CMLE algorithm with SNR:7</td>
+      <td>Scientific Volume Imaging, USA</td>
+      <td></td>
+      <td>STED images were deconvolved</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python software version 3.5</td>
+      <td></td>
+      <td></td>
+      <td>χ2 of independence test, χ2 of homogeneity test and Kolmogorov-Smirnov goodness-of-fit test</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software version five for windows</td>
+      <td></td>
+      <td></td>
+      <td>Paired Student’s t-test</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo software</td>
+      <td>TreeStar</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SYTOXOrange Dead Cell Stain</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# S11368</td>
+      <td>Manufacturer recommended dilution</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Molecular Probes, Invitrogen</td>
+      <td>Cat# D1306 RRID:AB_2629482</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 1399</td>
+      <td>(200 ng/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellTrace Violet Cell Proliferation kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# C34557</td>
+      <td>(5 µM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LysoTraker Blue (DND22) Dye</td>
+      <td>Molecular probes</td>
+      <td>Cat# L7525</td>
+      <td>(200 nM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LysoTraker Red (DND99) Dye</td>
+      <td>Molecular probes</td>
+      <td>Cat#L7528</td>
+      <td>(200 nM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>7-Aminoactinomycin D (7-AAD)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 559925</td>
+      <td>(0.25 µg)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ibidi μ-slide chambered coverslips Angiogenesis</td>
+      <td>Ibidi, Biovalley</td>
+      <td>Cat# 81506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ibidi μ-slide chambered coverslips eight well</td>
+      <td>Ibidi, Biovalley</td>
+      <td>Cat# 80821</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nunc Lab-Tek chamber slides eight wells</td>
+      <td>Nunc, ThermoFisher Scientific</td>
+      <td>Cat#1 54526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Micromesh array (100 μm)</td>
+      <td>Microsurface, Tebu- Bio</td>
+      <td>Cat# MMA-0500-100-08-01</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 Peripheral blood mononuclear cells were isolated from buffy coats of healthy donors obtained through the Etablissement Français du Sang (EFS, Toulouse, France). Blood samples were collected and processed following standard ethical procedures (Helsinki protocol), after obtaining written informed consent from each donor and approval by the French Ministry of the Research (transfer agreement AC-2014–2384). Approbation by the ethical department of the French Ministry of the Research for the preparation and conservation of cell lines and clones starting from healthy donor human blood samples has been obtained (authorization no DC-2018-3223).
 
-## Cell culture and stimulating conditions
+### Cell culture and stimulating conditions
 
 Total human CD8+ T cells were purified from healthy donor blood samples using the EasySep Negative Human CD8+ T cell Isolation Kit (StemCell Technologies). CD8+ T cells were routinely ~90% pure. Memory human CD8+ T cells were purified from healthy donor blood samples using the EasySep Human Memory CD8+ T cell Enrichment Kit (StemCell Technologies), and cells were routinely ~90% CD8+RO+RA−.
 
@@ -159,33 +579,33 @@ All cell lines are routinely screened for mycoplasma contamination using MycoAle
 
 For imaging flow cytometry (ImageStreamX, Merk) and confocal laser scanning microscopy human CD8+ T cells or CD8+ T cell clones were stimulated for 72h with immobilized anti-CD3 (1 µg/ml, TR66 [Valitutti et al., 1995]), anti-CD28 (1 µg/ml, clone CD28.2, eBioscience), and immobilized recombinant ICAM1-Fc fusion protein (0.5 µg/ml, R&D Systems) in complete RPMI/HS medium. For confocal laser scanning, cells were plated on anti-CD3/CD28/ICAM1 coated Nunc Lab-Tek Chamber Slide system 8 wells at 500,000 cells/well. For image stream analysis, cells were plated on anti-CD3/CD28/ICAM1-coated 24-well plates at 1.5 × 106 cells/well.
 
-## Image stream analysis
+### Image stream analysis
 
-## Staining and acquisition strategy
+#### Staining and acquisition strategy
 
 Cells were first stained with CellTrace Violet Cell Proliferation Kit (CTV) in phosphate-buffered saline (PBS) (5 µM, 20 min, 37°C). After 72 hr of stimulation (cf Cell culture and stimulating condition), cells were fixed in 1% paraformaldehyde (PFA) (10 min, 37°C) and permeabilized in permeabilization buffer (PBS 3% bovine serum albumin [BSA], 0.1% saponin, Sigma) for 5 min. Cells were incubated for 45 min with the indicated antibodies: AlexaFluor 647 anti-human CD107a antibody (diluted at 1/100, clone H4A3; BD Pharmingen ), anti-human Perforin (10 µg/ml, clone δG9; BD Pharmingen ), AlexaFluor 647 anti-human Granzyme B antibody (10 µg/ml, clone GB11, BD Pharmingen ), anti-human T-bet (Tbx21) (10 µg/ml, clone 4B10; Abcam), anti-human C-myc (10 µg/ml, clone 9E10; Thermo scientific), and anti-human α-tubulin (diluted at 1/100, rabbit polyclonal; Abcam). The following secondary antibodies were used: AlexaFluor488 or 647 goat anti-mouse IgG1 (10 µg/ml; Invitrogen), AlexaFluor488 or 647 anti-rabbit (H+L) (10 µg/ml; Invitrogen). For image acquisition, cells were adjusted to 10 × 106–20 × 106 /ml in FACS buffer (PBS, 1% FCS, 5% Hepes, 0.1% Azide) containing SYTOX Orange Dead Cell Stain (recommended dilution, ThermoFisher Scientific) for nuclear staining. Cells were acquired using ImageStreamX (IsX; Amnis, Luminex) technology.
 
-## Telophase discrimination strategy
+#### Telophase discrimination strategy
 
 Amnis IDEAS software was used to analyze IsX data and identify cells in telophase. As in classical cytometry data analysis, cells in G2/M phase were first selected according to their DNA content (fluorescence of SYTOX orange). A mask based on nuclear staining was employed (SpotCount Threshold [M03, nucleus, 60]) to visualize the nuclei of cells/events in the G2/M fraction at the single-cell level. A second mask (Area Range [Threshold (M02, tubulin, 75), 50–5000, 0–0.5]) based on the α-tubulin staining (to clearly identify the narrow intracellular bridge of highly condensed α-tubulin that participates to midbody formation) was employed to distinguish telophases from anaphases or cell doublets. Finally, the results from both masks were used to manually verify that selected cells were cells unambiguously in telophase.
 
-## Analysis of cell protein distribution during telophase using Fiji
+#### Analysis of cell protein distribution during telophase using Fiji
 
 Staining intensities of α-tubulin, CTV, and of the different markers of interest were analyzed on Fiji to determine the percentage of proteins inherited by the two nascent daughter cells in telophase.
 
 Watershed function of Fiji software was used on the α-tubulin staining intensity to determine the specific areas corresponding to the two nascent daughter cells in telophase. The obtained areas were converted to masks that were next applied to measure CTV and the fluorescence of the different markers of interest. This procedure allowed us to determine the intensity of fluorescence in the two nascent daughter cells in telophase. The percentage of staining in each nascent daughter cell was determined as follows: Fluorescence intensity of daughter cell 1/(fluorescence intensity of daughter cell 1 + fluorescence intensity of daughter cell 2) × 100. To test the specificity of the staining with the different antibodies used to study molecular repartition in telophase, we measured the fluorescent intensity of secondary antibodies or isotype controls as compared to specific antibodies. This analysis gave the following values of mean fluorescence intensity: CD107a 70.527 isotype control 13.621; perforin 716.312, secondary mouse antibody 56.383; GrzB 677.445 isotype control 13.621; T-Bet 356.228 secondary mouse antibody 56.383; and c-Myc 1.434.537 secondary rabbit antibody 14.231.
 
-## 3D laser scanning microscopy on fixed cells
+### 3D laser scanning microscopy on fixed cells
 
 After 72 hr of stimulation, cells were fixed in 1% PFA (10 min, 37°C). Permeabilization and staining with antibodies were performed in PBS 3% BSA, 0.1% saponin (Sigma) for 5 min and 45 min, respectively. The following antibodies were used: anti-human CD107a (10 µg/ml, cloneH4A3, BD Pharmingen) followed by AlexaFluor488 goat anti-mouse IgG1 (10 µg/ml; Invitrogen), anti-human α-tubulin (diluted at 1/100, rabbit polyclonal; Abcam) followed by AlexaFluor555 goat anti-rabbit (10 µg/ml; Invitrogen). Nuclei were labeled with DAPI (1 µg/ml, 5 min). The samples were mounted in 90% glycerol–PBS containing 2.5% DABCO (Sigma) and examined using a LSM710 (Zeiss) confocal microscope with a ×63 plan-Apochromat objective (1.4 oil) with an electronic zoom of 4. Cells in telophase were identified on the basis of nuclear and tubulin marker staining. 3D images (using the z-stack function) were acquired for every cell identified as being in telophase. CD107a fluorescence intensity in the two nascent daughter cells was measured on 2D image projections obtained applying the Sum function of Fiji Software to z-stack series. Since the background noise made the watershed function unsuitable to use, a region of interest corresponding to the nascent daughter cell was manually drawn on the basis of brightfield and tubulin staining. We determined the percentage of CD107a staining in each nascent daughter cell as follows: CD107a intensity of daughter cell 1/(CD107a intensity of daughter cell 1 + CD107a intensity of daughter cell 1) × 100.
 
-## Stimulated emission depletion microscopy
+### Stimulated emission depletion microscopy
 
 CTL were seeded on poly-l-lysin-coated high-performance coverslips and fixed in 3% PFA (10 min, 37°C). Permeabilization and staining were performed in PBS 3% BSA, 0.1% saponin (Sigma) for 5 min and 60 min, respectively. Cells were stained with an anti-human Granzyme B antibody (10 µg/ml, clone GB11, Thermo Scientific) followed by a goat anti-mouse IgG Abberior Star 580 (Abberior Instruments). Coverslips (high-performance D = 0.17 mm ± 0.005, ZEISS, Germany) were mounted on microscopy slides using Mowiol-DABCO.
 
 STED images were acquired with a Leica SP8 STED 3× microscope (Leica Microsystems, Germany) using a HC PL APO CS2 100×/1.4 oil immersion objective. To optimize resolution without bleaching in 3D, the 775 nm STED laser line was applied at the lowest power that can provide sufficient improvement in resolution compared to confocal. Z-stack series were acquired sequentially with the pulsed 532 nm laser. For image acquisition, we used the following parameters: three time average/line, 400 Hz scan speed. STED images were subsequently deconvoluted with Huygens Professional (SVI, USA) using the CMLE algorithm, with a signal to noise ratio (SNR) of 7. 3D image visualization was performed using the Fiji software.
 
-## Live-cell imaging
+### Live-cell imaging
 
 For 3D live-cell imaging, the T7 GZMB sequence was obtained by PCR amplification as a XhoI-EcoRI fragment from pCMV-SPORT6-GZMB by using XhoI-T7-GZB forward primer and EcoRI-GRZB noSTOP reverse primer (Employed primers: Name: XhoI-T7-GzB F caaCTCGAGTAATACGACTCACTATAGGGAGACCCGGTACCatgcaaccaatcctgcttctgcc; Name: EcoRI-GzB-noSTOP-R caaGAATTCcggcgtggcgtttcatggttttctttatccag).
 
@@ -197,11 +617,11 @@ Human CTL were transfected using a GenePulser Xcell electroporation system (Bio-
 
 For 4D live-cell imaging, 72 hr after stimulation, CD8+ T cells were stained with Hoechst (200 ng/ml, ThermoFisher Scientific) to sort cells in G2/M phase by flow cytometry (BD FACSAria-SORP, BD Biosciences). Sorted cells were stained with LysoTracker Red (200 nM, ThermoFisher Scientific) for 30 min at 37°C and washed. Twenty thousand cells in 5% HS/IL2/IL15 complete RPMI medium supplemented with 10 mM HEPES were seeded into poly-d-lysine-coated eight-well chambered slides (Ibidi, Munich, Germany) pre-coated with PDMS micromesh arrays (Microsurfaces, Melburn, Australia) containing 100-μm-diameter wells. Cells were 4D imaged (time and z-stack) on a heated stage within a temperature-controlled chamber maintained at 37°C and constant CO2 concentrations (5%) and inspected overnight by time-lapse laser scanning confocal microscopy with a Plan-Apochromat 40x/1.3 Oil DIC M27 using an LSM780 or LSM880, Zeiss, Germany, or by spinning-disk time-lapse microscopy using a spinning-disk microscope (Nikon) running on Metamorph software. A camera emCCD Evolve (Photometrics) was used for acquisitions. Image analysis was performed using Fiji software, and 4D videos and snapshots were generated with Imaris software.
 
-## Cytotoxicity assay
+### Cytotoxicity assay
 
 CTL were incubated with 200 nM LysoTracker Blue a probe staining the acidic lytic compartment of these cells (Faroudi et al., 2003) for 30 min at 37°C/5% CO2 in 5% FCS/RPMI/HEPES. After washing, cells expressing the highest and lowest 5–10% LysoTracker Blue staining were sorted using a FACSARIA-SORP (BD Biosciences). CTL were used for standard overnight killing assays on the day of cell. Target cells were left unpulsed or pulsed with 10 µM antigenic peptide during 2 hr at 37°C/5% CO2, washed three times, and subsequently transferred to a 96-well U-bottom plate at 10 × 103 cells/100 μl RPMI, 5% FCS/HEPES. CTL were added to the target cells at the indicated effector (CTL): target (JY) ratio, in 100 μl RPMI, 5% FCS/HEPES. Cells were pelleted for 1 min at 455 g and incubated at 37°C/5% CO2 overnight. Before FACS analysis, 0.25 µg 7-AAD (BD Biosciences) and FITC conjugated anti-CD8 antibody were added to each sample in order to measure the percentage of dead target cells. For the CD107a exposure and CD8 internalization assay, sorted CTL were incubated with target cells at 0.5:1 E/T ratio for 4 hr. Cells were stained with PE-cy7 conjugated anti-CD107a antibody and FITC conjugated anti-CD8 antibody for 30 min in FACS buffer (1% human serum, 1% FCS in PBS), washed, acquired on a Fortessa flow cytometer (BD Biosciences), and analyzed by using FlowJo software (TreeStar).
 
-## Statistical methods
+### Statistical methods
 
 Paired Student’s t-test was performed to determine the statistical significance of differences between the groups (GraphPad Prism software version 5).
 
@@ -211,28 +631,213 @@ Kolmogorov–Smirnov goodness-of-fit test was performed to compare law between p
 
 Chi-square of homogeneity test was performed (in addition Kolmogorov–Smirnov goodness-of-fit test) to determine where the probability distribution of a marker of interest varies (Python software version 3.5).
 
-## Statistical procedures
+### Statistical procedures
 
-In the independence chi-square test (Table 1), we compare the theoretical effective (ei,j) to the observed effective (ni,j). The test statistic is defined by:χ2=∑i,jni,j-ei,j²ei,j
+**Table 1.**
+ Results of independence chi-square test in telophase.
 
-We compare it to χ1-α,dl2, the quantile of the χ2 distribution associated with the 1-α quantile. The quantile with 1−α=95% is the value such that P(X<χ0.95,dl2)=95% where P stands for the probability distribution of the chi-square statistics with the associated degree of freedom dl.
 
-We reject the hypothesis of independence between division of heterogeneous cells and division of all cells in one experiment when χ2≥χ1-α,dl2 or when the p-value p satisfies p<α=5%.
+<table>
+  <thead>
+    <tr>
+      <th>Independence chi-square test between heterogeneous cells and all cells</th>
+      <th>Test statistic (χ2)</th>
+      <th>χ1-α,dl2</th>
+      <th>p-value (p)</th>
+      <th>Degree of freedom (dl)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD107a, Experiment 1, 0 division CD107a, Experiment 1, 1 division CD107a, Experiment 1, 2 divisions</td>
+      <td>4.060439 3.565087 1.614763</td>
+      <td>11.07 11.07 7.815</td>
+      <td>0.540748 0.613563 0.656047</td>
+      <td>5 5 3</td>
+    </tr>
+    <tr>
+      <td>CD107a, Experiment 2, 0 division CD107a, Experiment 2, 1 division CD107a, Experiment 2, 2 divisions</td>
+      <td>0.278928 0.413804</td>
+      <td>7.815 7.815</td>
+      <td>0.963942 0.937376</td>
+      <td>3 3</td>
+    </tr>
+    <tr>
+      <td>CD107a, Experiment 3, 0 division CD107a, Experiment 3, 1 division CD107a, Experiment 3, 2 divisions</td>
+      <td>2.36867 2.092976 0.655225</td>
+      <td>15.51 9.488 9.488</td>
+      <td>0.967574 0.718663 0.956734</td>
+      <td>8 4 4</td>
+    </tr>
+  </tbody>
+</table>
+
+In the independence chi-square test (Table 1), we compare the theoretical effective ($e_{i,j}$) to the observed effective ($n_{i,j}$). The test statistic is defined by:
+
+$$
+χ^{2}=\sum_{i,j}\frac{n_{i,j}-e_{i,j}²}{e_{i,j}}
+$$
+
+We compare it to $χ_{1-\alpha,dl}^{2}$, the quantile of the $χ^{2}$ distribution associated with the $1-\alpha$ quantile. The quantile with $1−\alpha=95%$ is the value such that $P(X<χ_{0.95,dl}^{2})=95%$ where P stands for the probability distribution of the chi-square statistics with the associated degree of freedom dl.
+
+We reject the hypothesis of independence between division of heterogeneous cells and division of all cells in one experiment when $χ^{2}\geqχ_{1-\alpha,dl}^{2}$ or when the p-value p satisfies $p<\alpha=5%$.
 
 The red boxes represent the situations where we do not reject the hypothesis of independence of division between heterogeneous cells and all cells in one experiment. We shall observe that we never reject the hypothesis of independence.
 
-The Kolmogorov–Smirnov test (Table 2) is used to define if two independent samples follow the same law, by comparing their cumulative distribution function. We denote the two samples X1,X2,…Xn and Y1,Y2,…Ym. If we denote by Fn and Fm, their cumulative distribution, respectively, the test statistic is defined by:Dn,m=x∈RFnx-Fmx
+**Table 2.**
+ Results of Kolmogorov–Smirnov test on G1.
 
-We compare it to dn,m,1-α, the quantile of the associated Kolmogorov–Smirnov distribution.
 
-We then reject the hypothesis of adequation between cells of one division and cells of one other division in one experiment when Dn,m≥dn,m,1-α or when the p-value p satisfies p<α=5%.
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Experiment 1</th>
+      <th rowspan="2">Kolmogorov–Smirnov test</th>
+      <th colspan="2">Zero division</th>
+      <th colspan="2">One division</th>
+      <th colspan="2">Two divisions</th>
+    </tr>
+    <tr>
+      <th>Dn,m</th>
+      <th>p-value</th>
+      <th>Dn,m</th>
+      <th>p-value</th>
+      <th>Dn,m</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">1</td>
+      <td>0 division</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1 division</td>
+      <td>0.13148</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2 divisions</td>
+      <td>0.220034</td>
+      <td>0</td>
+      <td>0.116283</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">2</td>
+      <td>0 division</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1 division</td>
+      <td>0.087873</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2 divisions</td>
+      <td>0.0891924</td>
+      <td>0</td>
+      <td>0.04634</td>
+      <td>0.03582</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3 divisions</td>
+      <td>0.054621</td>
+      <td>0.0159</td>
+      <td>0.067702</td>
+      <td>0.001185</td>
+      <td>0.047275</td>
+      <td>0.116534</td>
+    </tr>
+    <tr>
+      <td rowspan="4">3</td>
+      <td>0 division</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1 division</td>
+      <td>0.14714</td>
+      <td>0.002607</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2 divisions</td>
+      <td>0.209553</td>
+      <td>0</td>
+      <td>0.143594</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3 divisions</td>
+      <td>0.190642</td>
+      <td>0</td>
+      <td>0.121757</td>
+      <td>0</td>
+      <td>0.038549</td>
+      <td>0.3545</td>
+    </tr>
+  </tbody>
+</table>
+
+The Kolmogorov–Smirnov test (Table 2) is used to define if two independent samples follow the same law, by comparing their cumulative distribution function. We denote the two samples $X_{1},X_{2},…X_{n}$ and $Y_{1},Y_{2},…Y_{m}.$ If we denote by $F_{n}$ and $F_{m}$, their cumulative distribution, respectively, the test statistic is defined by:
+
+$$
+D_{n,m}=^{}x\inRF_{n}x-F_{m}x
+$$
+
+We compare it to $d_{n,m,1-\alpha}$, the quantile of the associated Kolmogorov–Smirnov distribution.
+
+We then reject the hypothesis of adequation between cells of one division and cells of one other division in one experiment when $D_{n,m}\geqd_{n,m,1-\alpha}$ or when the p-value p satisfies $p<\alpha=5%$.
 
 The red boxes represent the situation where we do not reject the hypothesis of adequation between cells in one division and cells in another division. The white box represents the situation where we reject this hypothesis.
 
-## Probability of an asymmetric repartition of lytic granules
+### Probability of an asymmetric repartition of lytic granules
 
 To obtain a tractable formula for the computation of the computation of the probability of an asymmetric repartition of lytic granules, we use a binomial model. The model postulates that each granule possesses a probability of 0.5 to attain each of the two daughter cells. The binomial model also assumes that all the granules behave independent of each other.
 
-In that case, the probability of an asymmetric division for n granules is then equal topn=2−n∑k<0.4nn!k!(n−k)!+2−n∑k>0.6nn!k!(n−k)!
+In that case, the probability of an asymmetric division for n granules is then equal to
 
-To evaluate the correlation level between particles (between 0 and 1) for a given probability of asymmetric repartition (outside the interval [40–60%]), we use a Monte-Carlo approach where we sampled a sequence of correlated random variables distributed according to a Bernoulli distribution of parameter 0.5 since to the best of our knowledge there is no explicit formula to calculate a such probability of asymmetric repartition. Even with a Monte-Carlo approach, the simulation is a little bit involved: if r is the correlation level and if Xi is the value of the random variable at step i, then Xi+1 is obtained by:Xi+1=XiYi+Zi1-YiFormulaAwhere Zi is a Bernoulli distribution of parameter 0.5 and Yi a Bernoulli distribution of parameter r. We shall verify that when X1, X2,⋅⋅⋅Xn are sampled according to Formula A, they are Bernoulli distributed and pairwise correlated with a correlation r. Hence, we then mimic the correlated division with this model and then estimate the probability of asymmetric repartition with 5000 Monte-Carlo simulations for each value of r and a size of n = 90 cells. We then evaluate the desired probability for r varying in a regularly spaced grid from 0 to 1 with a space equal to 0.02.
+$$
+p_{n}=2^{−n}\sumk<0.4n\frac{n!}{k!(n−k)!}+2^{−n}\sumk>0.6n\frac{n!}{k!(n−k)!}
+$$
+
+To evaluate the correlation level between particles (between 0 and 1) for a given probability of asymmetric repartition (outside the interval [40–60%]), we use a Monte-Carlo approach where we sampled a sequence of correlated random variables distributed according to a Bernoulli distribution of parameter 0.5 since to the best of our knowledge there is no explicit formula to calculate a such probability of asymmetric repartition. Even with a Monte-Carlo approach, the simulation is a little bit involved: if r is the correlation level and if $X_{i}$ is the value of the random variable at step i, then $X_{i+1}$ is obtained by:
+
+$$
+X_{i+1}=X_{i}Y_{i}+Z_{i}1-Y_{i}FormulaA
+$$
+
+where $Z_{i}$ is a Bernoulli distribution of parameter 0.5 and $Y_{i}$ a Bernoulli distribution of parameter r. We shall verify that when $X_{1}, X_{2},⋅⋅⋅X_{n}$ are sampled according to Formula A, they are Bernoulli distributed and pairwise correlated with a correlation r. Hence, we then mimic the correlated division with this model and then estimate the probability of asymmetric repartition with 5000 Monte-Carlo simulations for each value of r and a size of n = 90 cells. We then evaluate the desired probability for r varying in a regularly spaced grid from 0 to 1 with a space equal to 0.02.

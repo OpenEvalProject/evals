@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/028qa3n13 Department of Biology, Indian Institute of Science Education and Research (IISER) Pune India
-2. https://ror.org/03tjsyq23 Department of Biotechnology (with jointly merged Institute of Bioinformatics and Biotechnology), Savitribai Phule Pune University Pune India
-3. https://ror.org/028qa3n13 Department of Chemistry, Indian Institute of Science Education and Research (IISER) Pune India
+1. Department of Biology, Indian Institute of Science Education and Research (IISER) Pune India ([ROR:028qa3n13](https://ror.org/028qa3n13))
+2. Department of Biotechnology (with jointly merged Institute of Bioinformatics and Biotechnology), Savitribai Phule Pune University Pune India ([ROR:03tjsyq23](https://ror.org/03tjsyq23))
+3. Department of Chemistry, Indian Institute of Science Education and Research (IISER) Pune India ([ROR:028qa3n13](https://ror.org/028qa3n13))
 
 † Corresponding author
 
@@ -34,9 +34,19 @@ In this work, we have compared TRBP2-dsRBD1 with TRBP2-dsRBD2 in terms of the st
 
 ## Results and discussion
 
-## Structural and dynamical comparison of apo TRBP2-dsRBD1 and TRBP2-dsRBD2
+### Structural and dynamical comparison of apo TRBP2-dsRBD1 and TRBP2-dsRBD2
 
 Primary sequence comparison of TRBP2-dsRBD1 and TRBP2-dsRBD2 domain constructs (Figure 1A) revealed 30% identity and 38% similarity. The consensus for dsRNA-binding has been marked in red in Figure 1B. The two reported RNA-binding regions 1 (E) and 3 (KKxAK) of both the domains were matched to the consensus (Figure 1B). While RNA-binding region 2 (GPxH) (Figure 1B, region 2) of TRBP2-dsRBD2 was an exact match to the consensus, dsRBD1 harbored a mutation in region 2 (P56Q). Proline is a rigid amino acid with one less dihedral angle; it imparts flexibility to the backbone by causing secondary structure breaks (Imai and Mitaku, 2005; Krieger et al., 2005). Thus, the presence of conserved Pro186 in the β1–β2 loop of dsRBD2 (Figure 1B, region 2) may perturb the β1–β2 loop region plasticity, thereby making it more accessible to the incoming RNA partner. Additionally, dsRBD2 contains a KR-helix motif in the α2-helix (Figure 1B, region 3) known to increase its binding affinity, as reported earlier by Daviet et al., 2000. Owing to these tightly conserved RNA-binding regions and the presence of additional KR-helix motif, dsRBD2 could make stronger contact with RNA.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig1-v1.jpg)
+
+**Figure 1.:** (A) dsRBD constructs [TRBP2-dsRBD1 (1–105 aa) and TRBP2-dsRBD2 (154–234 aa)] of Human TRBP2 full-length protein used in this study. (B) Sequence alignment of the two constructs mentioned in (A). CS-Rosetta structures of (C) TRBP2-dsRBD1 (Paithankar et al., 2018), (D) TRBP2-dsRBD2, (E) an alignment of core residues of dsRBD1 and dsRBD2, and (F) model structure of 12 bp duplex D12 RNA.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig1-figsupp3-v1.jpg)
 
 The size-exclusion chromatography coupled with multiple angle light scattering (SEC-MALS) study of TRBP2-dsRBD2 in the experimental conditions used showed a single monomeric species in solution (Figure 1—figure supplement 1). The 1H-15N HSQC spectrum (Figure 1—figure supplement 2) of TRBP2-dsRBD2 indicated a well-folded protein. It (154–234 aa) was compared to the previously assigned spectrum of the TRBP2-D1D2 construct (19–228 aa) (Benoit and Plevin, 2013) to transfer the backbone amide resonance assignments. Resonance assignments were further confirmed using a set of double and triple resonance experiments, and a total of 73 non-proline residues were assigned, as shown in the representative 1H-15N HSQC (Figure 1—figure supplement 2). Overall, 89% 1H (151/169), 74% 13C (124/168), and 87% 15N (73/84) resonances from the backbone, and 43% 1H (174/402) and 25% 13C (59/238) from the side chains were assigned. Similar to the CS-Rosetta structure calculated previously for dsRBD1 (Figure 1C) by our group (Paithankar et al., 2018), the CS-Rosetta structure calculated for the dsRBD2 (Figure 1D) matched well with the previously reported structures in terms of characteristic dsRBD fold. The core residues (159–227 aa) of dsRBD2 were found to adapt the characteristic dsRBD αβββα fold with an RMSD (root mean square deviation) of 1.284 Å when compared to the previously reported solution structure of dsRBD2 (2CPN; Yamashita et al., 2011). An alignment of core structures between dsRBD1 and dsRBD2 (Figure 1E) yielded an RMSD of 0.894 Å, indicating a close match between the two domains. Despite their core length being identical (69 aa), the individual secondary structure spans were found to be different, as listed in Supplementary file 1a. The flexible regions, like loops 1 and 2 depicted in Figure 1B, E, are longer in dsRBD2, whereas the structured regions β2, β3, and α2 are longer in dsRBD1. Most importantly, loop 2 (β1–β2 loop) – critical for RNA binding (Masliah et al., 2013) – is equal to the canonical length in dsRBD2, while in dsRBD1, it is shorter by 1 residue (Figure 1E). We have used a 12-bp duplex RNA for the comparative study called the D12 RNA derived from the miR-16-1 (Figure 1F, Figure 1—figure supplement 3 and sequence mentioned in Supplementary file 1b).
 
@@ -47,6 +57,30 @@ Comparing the molecular dynamics (MD) simulation data of the core residue-specif
 **Figure 2.:** (A) RMSF profile (by Cα) of core dsRBD1 (black) and dsRBD2 (red). The secondary structure for the two domains has been shown on the top, and three RNA-binding regions in dsRBD1 and dsRBD2 have been highlighted using vertical grey and yellow bars, respectively. (B) RMSD of profiles of dsRBD1 (black) and dsRBD2 (red) over 1 μs simulation time. RMSD values for data measured in triplicate have been separated by vertical dashed lines.
 
 To gain insights into the picosecond to nanosecond (ps–ns) timescale motions of apo-dsRBD2, NMR spin relaxation data (R1, R2, and [1H]-15N nOe) were recorded on 600 and 800 MHz NMR spectrometers (Figure 3). The set of plots for R1, R2, and [1H]-15N nOe at both 600 and 800 MHz magnetic fields showed the expected trend (Figure 3—figure supplement 1 and Supplementary file 1c). R1 in the structured residues showed lower values at a higher magnetic field and similar values in the terminal regions at the two magnetic fields (Figure 3—figure supplement 1A). The increase of core R1 rates (decreasing T1) with increasing magnetic field indicates that most of the core residues lie on the right-hand side of the T1 minima in the standard plot of T1 vs. ωτc, where ω is the frequency of motions, τc and is rotational correlation time (Bloembergen et al., 1948). The core residues had average R1 rates of 1.43 ± 0.05 s−1 (Figure 3). The R2 rates (Figure 3—figure supplement 1B) of a few N-terminal (N159) and core residues (A163, V169, R174, E177, V180, R189, M194, R197, V198, G206, G207, G208, K210, L212, 221, 224, and A227) marginally increased (0.1–3 s−1) when measured at 800 MHz than when measured at 600 MHz, suggesting a very insignificant presence of the Rex component in the linewidth of these residues in the experimental conditions. The dsRBD2 core N- and C-terminal ends (S151–E157, N159, T227, V228, L230, and A232) and the loop residues (E177, G185, E191, S209, and K210) exhibited relatively higher flexibility as indicated by lower R2 rates in Figure 3B and nOe values in Figure 3C. A few residues lying in different secondary structures have been shown in Figure 3B, for e.g.: Q165, L167, and V168 in α1; T193 and T195 in β2; L212, A213, N216, and L223 in α2 exhibited only slightly higher (>1 s−1) than the average R2 rate (10.92 ± 0.37 s−1), indicating a thin conformational exchange in the secondary structured regions.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig3-v1.jpg)
+
+**Figure 3.:** Experiments were recorded on a 600-MHz NMR spectrometer at 298 K. The secondary structure of TRBP2-dsRBD2 has been mentioned at the top, and the RNA-binding region of the protein has been marked in grey vertical columns. Average R1, R2, and [1H]-15N-nOe of the core residues (159–227 aa) at 600 MHz has been depicted in the green bar, and at 800 MHz has been depicted in the red bars. The average values for spin relaxation parameters were calculated for 68 core residues (159-227 aa), and the standard error of the mean is calculated. The errors in the relaxation rates were calculated using duplicate delay data (two delays in duplicate) and Monte Carlo simulations (n=500). Errors in nOe values were obtained by propagating the errors from root-mean-square deviation (RMSD) values of baseline noise as obtained from Sparky in the respective spectra.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Longitudinal relaxation rates (R1), B transverse relaxation rates (R2), and heteronuclear [1H]-15N-nOe, as measured for common residues of TRBP2-dsRBD2 on 600 MHz (black) and 800 MHz (grey) magnetic fields at 298 K plotted against residue numbers for both fields. Average R1, R2, and [1H]-15N-nOe of the core residues (159–227 aa) at 600 MHz has been depicted in the green bar, and at 800 MHz has been depicted in the grey bar (average is calculated only for the common residues that could be analyzed between the data measured at two magnetic fields). The secondary structure of the protein has been shown on the top, and three RNA-binding regions have been highlighted using vertical grey bars. The average values for spin relaxation parameters were calculated for 68 core residues (159-227 aa), and the standard error of the mean was calculated. The errors in the relaxation rates were calculated using duplicate delay data (two delays in duplicate) and Monte Carlo simulations (n=500). Errors in nOe values were obtained by propagating the errors from root-mean-square deviation (RMSD) values of baseline noise as obtained from Sparky in the respective spectra.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The secondary structure of both proteins has been shown on the top, and three RNA-binding regions have been highlighted using vertical grey bars (for TRBP2-dsRBD1) and vertical yellow bars (for TRBP2-dsRBD2). The analysis was done for 80 residues (154-234 aa). The errors in different fitted parameters were obtained using Monte-Carlo simulations (n=500) in addition to the duplicate relaxation data points (two delays in duplicate).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Residue names and respective positions in the TRBP2 protein have been mentioned in each plot.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The secondary structure has been shown on the top, and three RNA-binding regions have been highlighted using vertical grey bars. The analysis was done for 68 core residues (159-227 aa). The error analysis for the selected model was done using the Monte Carlo simulations (n=500).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Residue names, along with respective positions in the TRBP2 protein, have been mentioned in each plot. Errors in R2,eff rates were obtained by propagating the errors from RMSD values of baseline noise obtained from Sparky in the respective spectra.
 
 The core (159–227 aa) average R1 (dsRBD1 = 1.52 ± 0.03 s−1; dsRBD2 = 1.43 ± 0.05 s−1) and R2 rates (dsRBD1 = 9.83 ± 0.17 s−1; dsRBD2 = 10.92 ± 0.37 s−1) for the two domains were very similar (Figure S15 of Paithankar et al., 2022). In contrast, dsRBD1 (Figure S15C of Paithankar et al., 2022) had significantly lower average heteronuclear steady-state nOe values (0.63 ± 0.02) than dsRBD2 (0.73 ± 0.03) shown in Figure 3C, indicating a more rigid core at the picosecond timescale motions in dsRBD2, thereby supporting the earlier observations made in the MD simulation study (Figure 2).
 
@@ -60,11 +94,19 @@ The heteronuclear adiabatic relaxation dispersion (HARD) NMR experiment (Mangia 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig4-v1.jpg)
 
-**Figure 4.:** (A) R1 data, (ρB) R2 data, recorded on apo ρ15N-TRBP2-dsRBD1, (C) R1 data, (ρD) R2 data, recorded on apo ρ15N-TRBP2-dsRBD2 using heteronuclear adiabatic relaxation dispersion (HARD) experiments on a 600-MHz NMR spectrometer at 298 K, plotted against residue numbers. An increase in the spin-lock field strength is achieved by an increase in the stretching factor of the adiabatic pulse used to create the spin lock, n (in HSn). The secondary structure has been depicted on the top, and three RNA-binding regions have been highlighted using vertical grey bars. Mapping of conformational exchange parameters (exchange rate constant between the ground state and excited state (kex), and excited state population (pB)) obtained by fitting the above-described data to a two-state model on the CS-Rosetta structures of (E) apo-dsRBD1, and (F) apo-dsRBD2. Residues have been marked in different colors to highlight the distribution of kex values, and the diameters of the sphere indicate the extent of pB along the protein backbone. The RNA-binding residues have been depicted in stick mode. The analysis was done for 105 residues of TRBP2-dsRBD1 (1–105 aa) and 80 residues of dsRBD2 (154-234 aa). The errors in different fitted parameters were obtained using Monte-Carlo simulations (n=500) and the duplicate relaxation data points (two delays in duplicate).
+**Figure 4.:** (A) R1ρ data, (B) R2ρ data, recorded on apo 15N-TRBP2-dsRBD1, (C) R1ρ data, (D) R2ρ data, recorded on apo 15N-TRBP2-dsRBD2 using heteronuclear adiabatic relaxation dispersion (HARD) experiments on a 600-MHz NMR spectrometer at 298 K, plotted against residue numbers. An increase in the spin-lock field strength is achieved by an increase in the stretching factor of the adiabatic pulse used to create the spin lock, n (in HSn). The secondary structure has been depicted on the top, and three RNA-binding regions have been highlighted using vertical grey bars. Mapping of conformational exchange parameters (exchange rate constant between the ground state and excited state (kex), and excited state population (pB)) obtained by fitting the above-described data to a two-state model on the CS-Rosetta structures of (E) apo-dsRBD1, and (F) apo-dsRBD2. Residues have been marked in different colors to highlight the distribution of kex values, and the diameters of the sphere indicate the extent of pB along the protein backbone. The RNA-binding residues have been depicted in stick mode. The analysis was done for 105 residues of TRBP2-dsRBD1 (1–105 aa) and 80 residues of dsRBD2 (154-234 aa). The errors in different fitted parameters were obtained using Monte-Carlo simulations (n=500) and the duplicate relaxation data points (two delays in duplicate).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig5-v1.jpg)
+
+**Figure 5.:** Top panel: The exchange rate constant between the ground state and excited state (kex); bottom panel: excited state population (pB) as obtained by the geometric approximation method, using the heteronuclear adiabatic relaxation dispersion (HARD) experiment, plotted against residue numbers. Mapping of core kex, and pB, on the CS-Rosetta structure of apo TRBP2-dsRBD2, as extracted for (C) apo TRBP2-dsRBD2 and (D) D12-bound TRBP2-dsRBD2. Different colors highlight the distribution of kex values, and the sphere’s diameter indicates the extent of pB along the protein backbone. The RNA-binding residues have been depicted in stick mode. The analysis was done for 68 residues of dsRBD2 (159-227 aa) in -apo and RNA bound state. The errors in different fitted parameters were obtained using Monte-Carlo simulations (n=500) and the duplicate relaxation data points (two delays in duplicate).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Top panel: R1ρ, and bottom panel: R2ρ rates plotted against residue numbers. Increasing applied spin-lock field strength is denoted by increasing the stretching factor, n (in HSn). The secondary structure has been shown on the top, and three RNA-binding regions have been highlighted using vertical grey bars. The analysis was done for 80 residues of dsRBD2 (154-234 aa) in apo and RNA bound state. The errors in different fitted parameters were obtained using Monte-Carlo simulations (n=500) and the duplicate relaxation data points (two delays in duplicate).
 
 A similar extensive fast and slower timescale conformational dynamics has also been studied in the case of DRB4 protein (Chiliveri et al., 2017), where the first domain was found to have a large conformational exchange when compared with that of the second domain. The conformational plasticity of dsRBD1 enables it to initiate primary interaction with various structurally and sequentially different dsRNAs in the TRBP2 protein (Paithankar et al., 2022).
 
-## dsRBD2 has a higher affinity for a short double-stranded A-form RNA duplex
+### dsRBD2 has a higher affinity for a short double-stranded A-form RNA duplex
 
 Target RNA sequences were designed based on the fact that TRBP interacts with miR-16-1 duplex (miRbase accession no. MI0000070) (Yan et al., 2019). Three mutants of miR-16-1 were created to perturb the RNA shapes as described previously (Paithankar et al., 2022). Briefly, (1) wt miR-16 (22–23 bp) has a bulge (unpaired uridine) and an internal loop (A:A mismatch), miR-16-1-M has only A:A mismatch, (2) miR-16-1-B has only U-bulge, and (3) miR-16-1-D has neither the bulge nor internal loop forming a perfect duplex (Figure 1 of Paithankar et al., 2022). It has been established that the TRBP2-dsRBD1 is able to recognize a set of topologically different dsRNA structures owing to its high conformational plasticity (Paithankar et al., 2022). In the current study, we have characterized the interaction of TRBP2-dsRBD2 with the same set of topologically different dsRNAs (wt miR-16-1 and mutants; sequences mentioned in Supplementary file 1b) used for TRBP2-dsRBD1 through 1H-15N HSQC-based NMR titrations shown in Figure 6—figure supplement 1. The NMR investigation regarding the interaction of TRBP-dsRBD2 with the wt miR-16-1 and the three mutant dsRNAs revealed only chemical shift perturbations (<0.1 ppm) in the presence of four topologically different RNAs as shown in Figure 6—figure supplement 1. This indicated that the tertiary structure/fold of the protein remained unperturbed upon RNA binding. The fact that the structure remains unperturbed is consistent with the previous findings reported by Yamashita et al., 2011, where the authors compared the solution structure of TRBP2-dsRBD2 structure with the crystal structure of GC10RNA-bound TRBP2-dsRBD2 (PDB ID: 3ADL) (Yang et al., 2010) and concluded that the structure of the dsRBD remains unperturbed upon RNA-binding. However, TRBP2-dsRBD2, in some cases, has shown the presence of chemical shift perturbation <1.0 ppm at the three RNA-binding regions upon binding with RNA (Benoit et al., 2013; Masliah et al., 2018), indicating subtle conformational changes at the RNA-binding interface (Yamashita et al., 2011; Yang et al., 2010). Furthermore, there were two intriguing observations in the 1H-15N HSQC-based titrations. First, the amide signals were getting broadened at as low as 0.1 RNA equivalents, suggesting the slow-to-intermediate timescale of binding as has also been observed previously by our and other research groups in TRBP2 dsRBD1, Staufen dsRBD3, hDus2 dsRBD, MLE dsRBD2, DBR4 dsRBD1, PKR dsRBD, and Dicer dsRBD (Ankush Jagtap et al., 2019; Bou-Nader et al., 2019; Chiliveri et al., 2017; Paithankar et al., 2022; Ramos et al., 2000; Ucci et al., 2007; Wostenberg et al., 2012; Yadav et al., 2020). Second, not only the reported RNA-binding residues but the entire backbone was undergoing line broadening, suggesting the presence of RNA-induced motions in the entire backbone. Since the protein is not saturated with the RNAs at 0.1 RNA equivalents (considering a reported Kd = 1.7 μM for a 22-bp dsRNA (Acevedo et al., 2015), [protein] = 50 μM, [RNA] = 5 μM, fraction bound of protein <10%) we can rule out an increase in the size due to the formation of a stable protein–RNA complex causing line broadening. Upon excess addition of RNA (to 1 equivalent of miR-16-1-M), the backbone amide signals were not recovered (Figure 6—figure supplement 1, top left panel), indicating the RNA–protein interaction does not seem to come out of the local minima of slow-to-intermediate exchange regime.
 
@@ -72,7 +114,23 @@ The amide NMR signals were, however, partially recovered by shortening the lengt
 
 The isothermal titration calorimetry (ITC)-based study was performed with D12 duplex RNA (Figure 6) to get the equilibrium dissociation constant (Kd) of the two N-terminal dsRBDs, change in enthalpy upon RNA binding (ΔH), and stoichiometry (n) (Supplementary file 1j). The differential potential against the time plot indicates that RNA did not get saturated with TRBP2-dsRBD1 (Figure 6A), while it got saturated with TRBP2-dsRBD2 as early as at the eighth injection (Figure 6B). The TRBP2-dsRBD1 data could not be fit conclusively to any binding model (Kd has large errors in these data) as depicted in Figure 6C. Our studies showed that TRBP2-dsRBD2 binds to D12 RNA with an average Kd of 1.18 ± 0.32 μM (Figure 6D and Supplementary file 1j), while TRBP2-dsRBD1 did not show any significant heat exchange (weak binding) during the titration. The integrated change in injection enthalpy (ΔH) versus the molar ratio of the reactants yielded an average ΔH of −10.12 ± 0.43 kcal/mol, suggesting an enthalpy-driven binding event. The entropy ΔS of the binding event was negative, indicating the absence of hydrophobic interaction between the D10 RNA and dsRBD2. ITC study was repeated for TRBP2-dsRBD1 with as high as 22 folds excess of protein, but RNA remained unsaturated. These results strongly suggest that TRBP2-dsRBD2 binds more efficiently to a small perfect A-form duplex, D12 RNA, than TRBP2-dsRBD1.
 
-## Dynamics perturbations of TRBP2-dsRBD2 at various timescales in the presence of RNA ligand
+![Figure 6.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig6-v1.jpg)
+
+**Figure 6.:** Top panel: the raw differential potential for each injection is plotted against the titration time for (A) TRBP2-dsRBD1 and (B) TRBP2-dsRBD2. Bottom panel: the integrated heat (enthalpy change) upon each injection (black dots) and the data fit for a single set of binding sites (red line) plotted against per mole of injectant for (C) TRBP2-dsRBD1 and (D) TRBP2-dsRBD2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** All the data were measured on a 600-MHz NMR spectrometer at 298 K in buffer D, pH 6.4.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** An overlay of 1H-15N -HSQC spectra of apo-protein (green), (R:P) = 0.1:1 (red), (R:P) = 0.35:1 (yellow), and (R:P) = 5:1 (blue) measured on 600 MHz NMR spectrometer at 298 K in buffer D, pH 6.4.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/94842/elife-94842-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Errors in R2,eff rates were obtained for 69 non-overlapping residues by propagating the errors from RMSD values of baseline noise as obtained from Sparky in the respective spectra. An example residue has been zoomed in to highlight the intensity decay.
+
+### Dynamics perturbations of TRBP2-dsRBD2 at various timescales in the presence of RNA ligand
 
 Minute structural changes in TRBP2-dsRBD2 in the presence of RNA necessitated a deeper insight into the perturbations of conformational dynamics at multiple timescales. Backbone 1H-15N dynamics measurements on TRBP2-dsRBD2 were carried out in the limiting concentration (RNA:protein = 0.05) of short duplex D12RNA as an increase in the RNA length and an increase in the RNA concentration, both caused line-broadening impacting dynamics measurements. In the presence of D12 RNA, the average R1 rates (apo = 1.43 ± 0.05 s−1; bound = 1.37 ± 0.07 s−1) and nOe values (apo = 0.73 ± 0.03; bound = 0.72 ± 0.076) remained unperturbed, while there was a significant increase in the average R2 rates (apo = 10.92 ± 0.37 s−1; bound = 20.04 ± 0.11 s−1) (Figure 3 and Supplementary file 1k). The apparent increase in the R2 rates (=R2*+ Rex) hinted toward a perturbation in the μs–ms timescale dynamics, to which only R2 rates are sensitive. This phenomenon could be attributed to either an increase in intrinsic R2* resulting from an increase in the residence time of the RNA on the protein, or an increase in the Rex component caused by a chemical exchange between apo- and D12-bound state, or RNA-induced conformational exchange in the protein. Interestingly, such a perturbation in R2 rates was not found for the dsRBD1 upon RNA binding (Paithankar et al., 2022). The core N- and C-terminal residues (S151, Q154, Q155, S156, E157, N159, V225, V228, L230, and A232), and a few residues in the vicinity of loop regions (E177, E183, G185, E191, and S209) harbored a lower than average bound-state R2 rates than the rest of the core indicating a faster motion induced in these residues (Figure 3). On adding RNA, the R2 rates and nOe values of the N- and C-terminal residues (S156, E157, T227, V228, L230, and A232), β1 (E177), the loop 2 region (E183, G185, 189, and E191), and the loop 4 region (S209) decreased, indicating further enhanced flexibility in one of the vital RNA-binding region (Figure 3 and Supplementary file 1k).
 
@@ -94,7 +152,7 @@ Thus, our study has led us to propose a model involving two tandem type-A dsRBDs
 
 **Figure 8.:** dsRBD2 with rigid and conserved RNA-binding regions is able to bind the RNA tightly, whereas dsRBD1 with high conformational exchange is able to recognize different RNA structures (often with bulges and internal loops). Following this, the two dsRBDs upon contacting the RNA undergoes enhanced conformational exchange at different extents. This enhanced conformational exchange coupled with differential binding affinity toward dsRNA might enable the tandem dsRBDs to move along the backbone of the RNA molecule, leading to ATP-independent diffusion.
 
-## Conclusions
+### Conclusions
 
 It has been long established that despite engaging with a wide array of dsRNA molecules exhibiting diverse structures and sequences, dsRBDs remain unaffected in their own structural conformation. However, the more significant question that has persisted is whether protein dynamics itself plays a crucial role in these intriguing interactions. Though variability in the binding affinity for the two type-A dsRBDs of TRBP has been reported, the specific contribution of conformational dynamics has remained unexplored until now. In the present investigation, we have exclusively delved into the role of conformational dynamics of the two type-A dsRBDs of TRBP2 in RNA recognition and binding. Our findings have unveiled that TRBP2-dsRBD2 samples a limiting conformational space in solution, and it is dsRBD1 that recognizes sequentially and structurally diverse RNA substrates through its high conformational plasticity. While dsRBD1 explores and engages dsRNA via its dynamically interactive RNA-binding surface, dsRBD2 holds the RNA in position via stronger canonical contacts. Once bound to the RNA, the ensuing conformational exchange in both dsRBD1 and dsRBD2 might facilitate the domains to diffuse over the length of the RNA freely, thus playing a pivotal role in assisting Dicer-mediated differential cleavage of RNA. Thus, this study not only adds valuable insights into the mechanics of RNA–protein interactions but also underscores the significance of conformational dynamics in dictating the functional outcome in such intricate biological processes.
 
@@ -102,33 +160,124 @@ Exploring the intricacies of RNA–protein interactions by delving into dynamics
 
 ## Materials and methods
 
-## Protein overexpression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>TARBP2</td>
+      <td>GenBank</td>
+      <td>HGNC:HGNC:11569</td>
+      <td>Gene ID: 6895(Uniprot ID: Q15633)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3) and DH5a</td>
+      <td>Others</td>
+      <td></td>
+      <td>Chemically competent cells obtained from Dr. Gayathri Pananghat (Indian Institute of Science Education and Research Pune, Pune, India) as kind gift and further amplified in our lab.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHMGWA (plasmid)</td>
+      <td>Others</td>
+      <td></td>
+      <td>TRBP2-dsRBD2 (154–234 aa) was cloned in pHMGWA vector via Gateway cloning and was obtained as a kind gift from N. L. Prof. Jennifer Doudna (University of California, Berkeley, CA, USA)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>miR-16-1-A; miR-16-1-D; miR-16-1-M; miR-16-1-B;D12 RNA</td>
+      <td>Integrated DNA Technologies (Coralville, IA, USA) or GenScript Biotech Corporation (Piscataway, NJ, USA)</td>
+      <td>RNA oligos</td>
+      <td>Guide:UAGCAGCACGUAAAUAUUGGCGPassenger:CCAGUAUUAACUGUGCUGCUGAA;Guide:UAGCAGCACGUAAAUAUUGGCGPassenger: CCAGUAUUUACGUGCUGCUGAA;Guide:UAGCAGCACGUAAAUAUUGGCGPassenger: CCAGUAUUAACGUGCUGCUGAA;Guide:UAGCAGCACGUAAAUAUUGGCGPassenger: CCAGUAUUAACGUGCUGCUGAA;Guide:CGUAAAUAUUCGPassenger:CGAGUAUUUACG</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>15NH4Cl; 13C-glucose</td>
+      <td>Cambridge Isotope Laboratories</td>
+      <td>NLM-467-50;CLM1396-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MicroCal PEAQ-ITC analysis software</td>
+      <td>Malvern Panalytical, Malvern, UK</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NMRPipe</td>
+      <td>https://doi.org/10.1007/BF00197809</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPARKY (version 3.115)</td>
+      <td>https://doi.org/10.1093/bioinformatics/btu830</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CARA</td>
+      <td>ISBN 3-85600-112-3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relax v4.0.3 software</td>
+      <td>https://doi.org/10.1093/bioinformatics/btu166</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein overexpression and purification
 
 The TRBP2-dsRBD1 (1–105 aa) and TRBP2-dsRBD2 (154–234 aa) cDNA clones were obtained as a kind gift from N. L. Prof. Jennifer Doudna (University of California, Berkeley, CA, USA). The residue numbers in the two constructs (Figure 1A) have been mentioned in reference to the full-length TRBP2 sequence (1–366 aa, Uniprot ID: Q15633-1). The cDNA for TRBP2-dsRBD2 was cloned in pHMGWA vector (AmpR), and was expressed as a fusion protein having N-terminal His6-Maltose-binding protein (MBP) tag-TEV protease cleavage site followed by the protein of interest. Treatment with TEV protease during purification resulted in non-native Ser–Asn–Ala residues at the N-terminal to TRBP2-dsRBD2 (154–234), which were excluded from all the NMR-based dynamics studies. For the NMR experiments, 15N- and 15N-13C-labeled (as required) TRBP2-dsRBD2 protein was prepared using 15NH4Cl and 13C-glucose (Cambridge Isotope Laboratories) as a sole source of nitrogen and carbon, respectively, in M9 minimal medium.
 
 TRBP2-dsRBD1 was overexpressed and purified as previously described (Paithankar et al., 2018). Briefly, the pHMGWA plasmid containing the cDNA for the TRBP2-dsRBD2 was transformed into E. coli BL21 (DE3) cells, and plated on an LB agar plate (containing 100 μg/ml ampicillin) and incubated at 37°C for 12 hr. A single isolated colony was inoculated into 20 ml LB broth (containing 100 μg/ml ampicillin) and incubated for 12 hr at 37°C, 225 rpm to initiate a starter culture that was eventually used to inoculate 2 l LB broth (containing 100 μg/ml ampicillin) and incubated at 37°C, 225 rpm till the OD600 reached to 0.8–1.0. For induction, IPTG (isopropyl β-d-1-thiogalactopyranoside) was added at the final concentration of 1 mM, and the culture was further incubated at 37°C, 225 rpm for another 8 hr. The cells were harvested by centrifuging the culture at 4500 × g, 4°C for 20 min and resuspended in 25 ml of buffer A (20 mM Tris–Cl, pH 7.5, 500 mM NaCl, 10% glycerol, 5 mM DTT :dithiothreitol, 10 mM imidazole). To the resuspended cells, lysozyme (Sigma-Aldrich) was added to a final concentration of 50 μg/ml and incubated in ice for 30 min. Post-incubation, 1% Triton X-100, 100 μl of 1 mM PMSF (phenylmethylsulfonyl fluoride), and 10× Protease Inhibitor Cocktail (PIC, Roche) (2 ml per 4 g of cell pellet) were added to the cell suspension. The partially lysed cells were sonicated using an ultrasonic sonicator microprobe at 60% amplitude, with 5 s ON and 10 s OFF pulse, for a period of 60 min in an ice bath for complete lysis. The cell lysate was centrifuged at 15,000 × g for 2 hr, at 4°C, to obtain the total soluble protein (TSP). The TSP was then circulated through a pre-equilibrated (buffer A) Ni-NTA column (HisTrap, 5 ml, GE HealthCare) for 4 hr at 4°C. After equilibrating with the TSP, the column was washed with 40 column volumes (CVs) of buffer A containing 30 mM imidazole to remove the impurities. The fusion protein was eluted with the elution buffer B (buffer A containing 300 mM imidazole). Nucleic acids were removed from the eluted protein using polyethyleneimine precipitation. To remove imidazole, the protein solution was dialyzed against cleavage buffer C (20 mM Tris–Cl, pH 7.5, 25 mM NaCl, 10% glycerol, 5 mM DTT). His6-MBP-tag was cleaved using TEV protease at a final concentration of 1:100 (protease: protein) at 4°C for 18 hr with intermittent mixing. The completion of the cleavage reaction was tested and confirmed by sodium dodecyl sulfate–polyacrylamide gel electrophoresis analysis. The cleavage mix was then passed through a sulphopropyl sepharose column (HiPrep SP FF 16/10 20 ml, GE HealthCare) and washed with buffer C. TRBP2-dsRBD2 protein was eluted from the cation-exchange column using a salt gradient ranging from 25 mM to 1 M NaCl in the buffer C. To further purify, the protein was subjected to size-exclusion chromatography using sephacryl S-100 HR 16/60 column (GE HealthCare). The final purified protein was concentrated to 1 mM using Amicon (3 kDa cutoff, Merck) and exchanged with NMR buffer D (10 mM sodium phosphate, pH 6.4, 100 mM NaCl, 1 mM EDTA:ethylenediaminetetraacetic acid, 5 mM DTT) before recording any experiment.
 
-## Design and preparation of RNA
+### Design and preparation of RNA
 
 RNA duplexes miR-16-1-A, miR-16-1-M, miR-16-1-B, and miR-16-1-D were designed and procured as mentioned previously (Paithankar et al., 2022). The shorter 12 bp RNA duplex RNA oligo (D12) was designed from miR-16-1-D and was procured from either Integrated DNA Technologies (Coralville, IA, USA) or GenScript Biotech Corporation (Piscataway, NJ, USA). All the RNA sequences used in this study have been listed in Supplementary file 1b.
 
 The preparation of RNA duplexes and the confirmation of their formation was performed, as described previously (Paithankar et al., 2022). Briefly, the respective guide and passenger RNA listed in Supplementary file 1b were mixed together in a 1:1 ratio, followed by denaturation at 90°C for 10 min and then cooling at 4°C for 30 min. The annealing of all four RNAs (miR-16-1-A, miR-16-1-M, miR-16-1-B, and miR-16-1-D) (Paithankar et al., 2022) and D12 RNA was confirmed by 1H-NMR by observing the imino proton signals (Figure 1—figure supplement 3). The annealed samples were maintained in buffer D for all data measurements.
 
-## Size-exclusion chromatography – multiple angle light scattering
+### Size-exclusion chromatography – multiple angle light scattering
 
 SEC-MALS experiments were performed using an S75 column (Superdex 75 10/300 GL 24 ml, GE HealthCare), Agilent HPLC system (Wyatt Dawn HELIOs II) and a refractive index detector (Wyatt Optilab T-rEX). The system was first calibrated by injecting 100 μl of 30 μM bovine serum albumin solution (Thermo Scientific). Post calibration, 100 μl protein samples were injected (in duplicate) at a concentration of 0.8 mM for TRBP2-dsRBD2. The respective molar mass values of the peaks were calculated using the Zimm model in ASTRA software version 7 (Wyatt Technologies).
 
-## Isothermal titration calorimetric binding assays
+### Isothermal titration calorimetric binding assays
 
 All ITC experiments were performed using a MicroCal PEAQ-ITC calorimeter (Malvern Panalytical, Malvern, UK) operating at 25°C. The final RNAs and protein solutions used for the assays were prepared in buffer D. The D12 dsRNA was used at a concentration of 10 or 20 μM in the sample cell. TRBP2-dsRBD1 concentration was varied from 5 to 19 folds of RNA, whereas, in the case of TRBP2-dsRBD2, it was varied from 10 to 18 folds. The first injection was 0.4 μl (discarded for data analysis), which was followed by eighteen 2 μl injections. All the ITC data were measured in triplicate.
 
 Data were fitted with a single-site-binding model using the MicroCal PEAQ-ITC analysis software (Malvern Panalytical, Malvern, UK) to extract the equilibrium dissociation constant (Kd), stoichiometry (n), and change in enthalpy (ΔH). The final values of the thermodynamic parameters are given as the average of triplicate measurements (Supplementary file 1j).
 
-## NMR spectroscopy
+### NMR spectroscopy
 
 All the NMR experiments were recorded at 298 K either on: (1) Ascend Bruker AVANCE III HD 14.1 Tesla (600 MHz) NMR spectrometer equipped with a quad-channel (1H/13C/15N/19F) Cryoprobe (in-house); or (2) Ascend Bruker Avance AV 18.89 Tesla (800 MHz) NMR spectrometer equipped with a triple-channel (1H/13C/15N) Cryoprobe and a Broad Band Inverse probe (located at National Facility for High-Field NMR at TIFR, Mumbai). The 1H-15N HSQC spectrum was collected with 2048 and 128 points and 12 and 28 ppm spectral width in 1H and 15N dimensions, respectively, giving an acquisition time of 100 ms in the direct dimension. An inter-scan delay of 1.0 s and 4 scans were used on a 1-mM 15N-labeled TRBP2-dsRBD2 sample in a 5-mm Shigemi tube (Shigemi Co, LTD, Tokyo, Japan) (Takeda et al., 2011). 1H-15N TOCSY-HSQC (mixing times = 60, 80, and 120 ms) and 1H-15N NOESY-HSQC (mixing times = 150, 300, and 400 ms) were recorded on a 600-MHz NMR spectrometer on 15N-labeled TRBP2-dsRBD2 for the backbone assignment of TRBP2-dsRBD2. Furthermore, triple resonance experiments like HNCO, HNCACO, HNCA, HNCOCA, HNN, CBCANH, and CBCA(CO)NH were carried out to make the sequential connections using 1.2 mM of 15N-13C-labeled TRBP2-dsRBD2 sample in a 5-mm Shigemi tube. All the NMR data were processed via TopSpin/NMRPipe (Delaglio et al., 1995) and were analyzed in SPARKY/CARA (Keller, 2004; Lee et al., 2015).
 
-For NMR-based titration assays, 1H-15N-HSQCs were measured on TRBP2-dsRBD2 (50 μM) with increasing concentrations of duplex RNAs from 0.05 to 0.2 equivalents (in the case of D12 RNA 0.05–5 equivalents) of the protein. After every RNA addition, the protein was allowed to equilibrate for 30 min before acquiring 1H-15N HSQC. Peak intensities were plotted against the RNA:protein concentration for each residue and were fit to the one-site binding isotherm using the below equation (Williamson, 2013):Δδobs=Δδmax([P]t+[L]t+Kd)−[([P]t+[L]t+Kd)2−4[P]t[L]t]1/2/2[P]t
+For NMR-based titration assays, 1H-15N-HSQCs were measured on TRBP2-dsRBD2 (50 μM) with increasing concentrations of duplex RNAs from 0.05 to 0.2 equivalents (in the case of D12 RNA 0.05–5 equivalents) of the protein. After every RNA addition, the protein was allowed to equilibrate for 30 min before acquiring 1H-15N HSQC. Peak intensities were plotted against the RNA:protein concentration for each residue and were fit to the one-site binding isotherm using the below equation (Williamson, 2013):
+
+$$
+Δ\delta_{obs}=Δ\delta_{max}([P]_{t}+[L]_{t}+K_{d})−[([P]_{t}+[L]_{t}+K_{d})^{2}−4[P]_{t}[L]_{t}]^{1/2}/2[P]_{t}
+$$
 
 where Δδobs is the change in the observed peak intensity from the apo state, Δδmax is the maximum peak intensity change on saturation with ligand, [P]t and [L]t are the total concentration of protein and ligand, respectively, and Kd is the equilibrium dissociation constant.
 
@@ -142,7 +291,7 @@ HARD experiments (Mangia et al., 2010; Traaseth et al., 2012) were recorded on a
 
 All relaxation experiments were measured using a single scan interleaving method, and the order of delays was randomized. The time periods marked with an asterisk have been recorded in duplicates for error estimation. An inter-scan delay of 2.5 s was used for all the above-mentioned relaxation experiments (unless mentioned otherwise).
 
-## NMR relaxation data analysis
+### NMR relaxation data analysis
 
 NMR spectra were processed with either TopSpin 3.5pl6 or NMRPipe and visualized through SPARKY (version 3.115). For the backbone resonance assignment, CARA (http://cara.nmr.ch/doku.php) was used. All the input NMR spectra were fed in the form of either ucsf or 3rrr file formats. Manual peak picking was done for double and triple-resonance NMR experiments using a synchroscope in CARA. Further identification, confirmation, and assignment of residues were done in a stripscope mode. The chemical shifts of the assigned residues were used as inputs (Supplementary file 1t) in the CS-Rosetta program in the BMRB server (https://csrosetta.bmrb.wisc.edu/csrosetta/submit) to get an ensemble of the 10 lowest energy structures the structure.
 
@@ -154,6 +303,6 @@ The effective transverse relaxation rates (R2,eff) from CPMG relaxation dispersi
 
 The relaxation rates have been depicted in different contexts across the manuscript and the figure legends describe the corresponding context. The raw data have been reported in the Supplementary Information as files.
 
-## MD simulations
+### MD simulations
 
 All the ensemble cluster analysis was done using UCSF Chimera (Pettersen et al., 2004) on the CS-Rosetta (Lange et al., 2012; Shen et al., 2010) structure of TRBP2-dsRBD2 to select the lowest energy structures. CS-Rosetta structure was used since the previously reported structure (PDB ID: 2CPN) did not have the extended C-terminal sequence used in this study (2CPN has an amino acid length of 150–225, while the construct used in this study is from 154 to 234). Moreover, the buffer conditions of previously reported structures differed from what is used in this study. The lowest energy structures in the ensemble were used as the seed structure for apo TRBP2-dsRBD2 MD simulation. Briefly, GROMACS V.2019.6 (https://www.gromacs.org) was used for all the atomistic MD simulations. All-atom additive CHARMM36 protein force field was used to build the topologies (Huang et al., 2017), and initial structure solvation was done TIP3P water molecules in a cubic simulation box with a minimum distance of 1.2 nm from protein in all directions. Microsecond timescale simulations (1 μs) were set up in triplicates in a similar way as described previously (Paithankar et al., 2022). All analysis was performed using GROMACS and VMD.

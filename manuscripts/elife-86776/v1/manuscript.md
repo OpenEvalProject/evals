@@ -13,12 +13,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Department of Biophysics, University of Michigan Ann Arbor United States
-2. https://ror.org/00jmfr291 Life Sciences Institute, University of Michigan Ann Arbor United States
-3. https://ror.org/00jmfr291 Department of Cell & Developmental Biology, University of Michigan Ann Arbor United States
-4. https://ror.org/00jmfr291 Department of Pathology, University of Michigan Ann Arbor United States
-5. https://ror.org/00jmfr291 Department of Computational Medicine and Bioinformatics, University of Michigan Ann Arbor United States
-6. https://ror.org/00jmfr291 Department of Biological Chemistry, University of Michigan Ann Arbor United States
+1. Department of Biophysics, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+2. Life Sciences Institute, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+3. Department of Cell & Developmental Biology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+4. Department of Pathology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+5. Department of Computational Medicine and Bioinformatics, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+6. Department of Biological Chemistry, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
@@ -31,6 +31,22 @@ Conventional kinesin-1 is the primary anterograde motor in cells for transportin
 The spatiotemporal regulation of organelle positioning is critical for proper cellular function. The movement of organelles and other intracellular cargo is largely driven by the cytoskeletal motor proteins (Hirokawa et al., 2009; Reck-Peterson et al., 2018). Among them, conventional kinesin-1 is the major anterograde motor in cells that is essential for transporting mitochondria (Schwarz, 2013), ER, and Golgi-derived vesicles (Hirokawa et al., 2009) to microtubule plus ends, typically located at the cell periphery.
 
 Kinesin-1 can exist in homodimeric and heterotetrameric forms. Kinesin-1 in the dimeric form is composed of two identical kinesin heavy chains (KHC) that can be divided into three parts: motor, stalk, and tail domains (Figure 1A; Hirokawa et al., 1989). The N-terminal motor domain functions as an engine that converts the chemical energy from ATP to the mechanical force to power kinesin walking along microtubules (Jon Kull et al., 1996). Downstream of the motor domain, a series of coiled-coils dimerize to form the stalk. The regulatory tail at the C-terminus is largely disordered (Seeger et al., 2012). In the heterotetramer form, two copies of the kinesin light chain (KLC) associate with the KHC stalk through its predicted N-terminal coiled-coil domain (Diefenbach et al., 1998; Verhey et al., 1998). The C-terminus of KLC consists of the TPR domain, which functions as a cargo binding platform to link kinesin-1 to various cellular cargo (Cockburn et al., 2018; Pernigo et al., 2013).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of the KIF5B domain diagram and the previous model of kinesin-1 autoinhibition. (B) Size-exclusion chromatography profile of KIF5B. (C) Negative staining electron microscopy (EM) analysis of KIF5B in two conformations. (D) Class averages of KIF5B in compact state. (E) End-to-end measurements of KIF5B in two states (N = 100). (F) Crosslinked lysine pairs in KIF5B were mapped onto the domain diagram and divided into four groups.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The domain diagram of KIF5C. (B) The size-exclusion chromatography profile of KIF5C. (C) The example micrographs from KIF5C negative staining electron microscopy (EM). (D) Class averages of compact KIF5C. (E) End-to-end length measurements of KIF5C in two states (N = 100). (F) Crosslinked lysine pairs in KIF5C were mapped onto the domain diagram and divided into four groups.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Coiled-coil prediction results from Marcoil (Delorenzi and Speed, 2002) on MPI Bioinformatics Toolkit (Gabler et al., 2020; Zimmermann et al., 2018). (B) SDS-PAGE analysis of crosslinked KIF5B and KIF5C samples.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Representative micrographs of KIF5B and KIF5C in extended and compact states.
 
 Human kinesin-1 contains various isoforms, and dysfunction of them causes diseases. In humans, KHC is encoded by three genes: KIF5A, KIF5B, and KIF5C, which share a very similar motor domain and stalk with minor differences in the C-terminal tail, whereas KLC has four isoforms (KLC1–4). These isoforms showed distinct tissue expression patterns. KIF5B and KLC2 are ubiquitously expressed, whereas KIF5A, KIF5C, and KLC1 are neuron-enriched (Kanai et al., 2000; Rahman et al., 1998). Mutations in KIF5A and KIF5C result in defects in axonal transport and thus can cause neurodevelopmental and neurodegenerative pathologies (Crimella et al., 2012; Nicolas et al., 2018; Poirier et al., 2013; Willemsen et al., 2014).
 
@@ -48,7 +64,7 @@ Here, we combined crosslinking mass spectrometry (XL-MS), negative stain electro
 
 ## Results
 
-## Autoinhibited kinesin-1 adopts a hierarchical folding pattern
+### Autoinhibited kinesin-1 adopts a hierarchical folding pattern
 
 To provide a detailed view of the interactions within autoinhibited kinesin-1, we set out to directly probe the architecture of autoinhibited kinesin-1 via negative stain EM and XL-MS. First, we selected human isoforms KIF5B and KIF5C as our targets which have ubiquitous and neuronal-specific expression, respectively. KIF5B and KIF5C have four coiled-coil (CC) domains, CC1 to CC4 (Figure 1A, Figure 1—figure supplements 1A and 2A), where CC1 corresponds to the neck coil, and CC2-CC4 form the stalk. Following CC4 is an unstructured tail domain that contains the inhibitory IAK motif. The region between CC2 and CC3 has a low coiled-coil prediction probability and was thus originally proposed to be the hinge where kinesin-1 folds in half.
 
@@ -58,11 +74,27 @@ To obtain higher-resolution structural information, we performed XL-MS on both K
 
 Our XL-MS data show that KIF5B and KIF5C exhibit similar folding patterns (Figure 1F, Figure 1—figure supplement 1F). Unexpectedly, we discovered that kinesin-1 engages in four intramolecular interactions that suggest a hierarchical folding pattern: (1) crosslinks within the motor domain (Figure 1F, Figure 1—figure supplement 1F, purple lines), (2) motor-to-tail crosslinks that surprisingly involve residues at the C-terminal end of CC4 (K903 and K909 in KIF5B or K905 and K911 in KIF5C) but not the IAK region itself (Figure 1F, Figure 1—figure supplement 1F, yellow lines), (3) motor-to-CC2 crosslinks (Figure 1F, Figure 1—figure supplement 1F, light gray lines), and (4) crosslinks within CC2, CC3, and CC4. Together, these crosslinks show that kinesin-1 does not fold back via the originally proposed hinge between CC2 and CC3, but rather, the folding of the stalk domain is mediated by a break within the CC3, which folds the C-terminus of CC3 and CC4 onto CC2 and the N-terminus of CC3 (Figure 1F, Figure 1—figure supplement 1F, dark gray lines).
 
-## Integrative modeling reveals the molecular architecture of autoinhibited kinesin-1
+### Integrative modeling reveals the molecular architecture of autoinhibited kinesin-1
 
 To generate a model for the autoinhibited kinesin-1 homodimer, we used AlphaFold2 predictions (Jumper et al., 2021) of kinesin-1 fragments and integrated them using information from XL-MS and EM. Given that KIF5B and KIF5C have very similar folding patterns (Figure 1, Figure 1—figure supplement 1), we selected KIF5B for the following analysis.
 
 To understand how the stalk folds on itself, we used AlphaFold-Multimer (Evans et al., 2022) to predict a KIF5B homodimer fragment containing CC2, CC3, CC4, and tail (residues 401–963). The homodimeric stalk model from AlphaFold (Figure 2—figure supplement 1A) is comparable to the coiled-coil prediction results (Figure 1—figure supplement 2A) but with two main exceptions. First, AlphaFold suggests that the originally proposed hinge between CC2 and CC3 is not a gap between coiled-coils but rather is a tetrameric coiled-coil linked by a short loop. Second, AlphaFold suggests that there is a breaking point within CC3. We surmise that the originally proposed hinge between CC2 and CC3 arose from coiled-coil prediction artifacts, and the real hinge that enables KHC folding is the breaking point in CC3, consistent with recent work (Weijman et al., 2022). Therefore, we divided CC3 into CC3a and CC3b and labeled the breaking point connecting CC3a and CC3b as the hinge (Figure 2A). This coiled-coil domain arrangement can also be seen in the predicted KIF5C stalk structure (Figure 2—figure supplement 1B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig2-v1.jpg)
+
+**Figure 2.:** (A) The proposed model of autoinhibited KIF5B in cartoon diagram. The dashed lines indicates the crosslinked pairs. (B) A model of autoinhibited KIF5B via the integrative modeling. The gray density is the 3D reconstruction from the negative staining electron microscopy (EM). Three eye icons showed the viewing directions in (C). (C) Three groups of crosslinked pairs were mapped onto the KIF5B model.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The predicted structure of KIF5B(401–963). (B) The predicted structure of KIF5C(401–957). The coiled-coil prediction results and location of the originally proposed hinge were mapped onto the structures. The newly identified hinge sits in between the CC3a and CC3b.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The predicted structure of KIF5B(1–540) containing motor domain, CC1 and CC2. (B) Superposition of predicted KIF5B motor domain structure (purple) with tail peptide bound fly kinesin heavy chain (KHC) motor domain structure (light gray) (PDB:2Y65). (C) Intra-motor domain crosslinks were mapped to the predicted motor domain structure. (D) The length distribution of crosslinks within the motor domain.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) The microtubules binding interface in motorA was crosslinked to the CC2 and CC4. The red-colored region is L11-α4-L12, mainly for interacting with α-tubulin. The cyan-colored region is β5-L8, which is responsible for interacting with β-tubulin. (B) Two elements (L5 and α1) in motorB were crosslinked to CC4.
 
 We used these predicted models and a negative stain 3D reconstruction of KIF5B to generate a model for the inhibited full-length KIF5B (Figure 2A). We used AlphaFold-Multimer (Evans et al., 2022) to independently predict the structure of four KIF5B fragments that are chosen based on the locations of coiled-coil domain breaks: motor-CC1-CC2 (aa 1–540), CC2-CC3a (aa 401–690), CC3b (aa 691–820), and CC4-tail (aa 821–963). For the motor-CC1-CC2 (aa 1–540) part, we found that the AlphaFold prediction results in a motor domain conformation similar to the tail-bound structure (PDB:2Y65; Kaan et al., 2011; Figure 2—figure supplement 2B). Interestingly, the prediction shows that the motor domain scaffolds back to dock one of the motor domains along the CC2 (Figure 2—figure supplement 2A), resulting in an asymmetric conformation. We then used the CC2 region to superimpose the CC2-CC3a fragment with the motor-CC1-CC2 fragment. Finally, with guidance from our negative stain 3D map, we placed the CC3b (aa 691–820) and CC4-tail (aa 821–963) regions along CC2 and CC3a and inserted the end of CC4 between the motor domains. The resulting assembled model of full-length KIF5B agrees with the low-resolution map from negative staining EM (Figure 2B) except the CC1 domain. We noticed that the CC1 domain extended beyond the contour of the 3D volume, which could indicate that our predicted CC1 structure did not reflect the true CC1 conformation.
 
@@ -76,17 +108,37 @@ Finally, we used the XL-MS data to verify the asymmetric arrangement of the moto
 
 Taken together, our integrative modeling approach revealed the molecular architecture of autoinhibited kinesin-1. Our model verified the new hinge position in between CC3a and CC3b and showed that the motor domain scaffolded back to dock on to CC2. The CC4 thus can insert in between the motor domain. We found that CC2 and CC4 sterically block the microtubule-binding interface, suggesting that autoinhibited kiesin-1 is incompatible with microtubule binding. Our model agrees with most of the crosslinks but the exact conformation of the motor domain and tail needs further study.
 
-## Kinesin light chains form extensive contacts with the heavy chain while maintaining the autoinhibited heavy chain folding pattern
+### Kinesin light chains form extensive contacts with the heavy chain while maintaining the autoinhibited heavy chain folding pattern
 
 To determine the role of KLCs in promoting autoinhibition, we utilized the EM and XL-MS data to characterize the architecture of the kinesin-1 heterotetramer. We recombinantly expressed and purified heterotetramers of KIF5B-KLC1 and KIF5C-KLC1 (Figure 3—figure supplement 2A and B) and found that KIF5C-KLC1 showed two distinct populations on the chromatogram, similar to previous reports (Weijman et al., 2022; Figure 3B). The first peak is the fully extended conformation with a length of around 75 nm (Figure 3C and E), whereas the second peak is the compact form with a length of around 35 nm. 2D class averages from the compact population revealed a structure comparable to kinesin-1 homodimers with a pair of globular densities corresponding to the motor domains at one end of the class averages (Figure 3D). Unlike kinesin-1 homodimers, however, we saw a new C-shaped density along the stalk in various orientations from 80% class averages, which we believe are the light chains (Figure 3D). Unlike KIF5C-KLC1, KIF5B-KLC1 was purified mainly in the compact form from the size-exclusion chromatography (Figure 3—figure supplement 1B) with a length of 35 nm (Figure 3—figure supplement 1C and E). The class averages revealed a similar overall architecture compared to the KIF5C-KLC1 (Figure 3—figure supplement 1D), with the motor domain and stalk easily identified along with the C-shaped density on the stalk.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig3-v1.jpg)
+
+**Figure 3.:** (A) Overview of KIF5C-KLC1 domain diagram. (B) Size-exclusion chromatography profile of KIF5C-KLC1. (C) Negative staining electron microscopy (EM) analysis of Kif5C-KLC1 in two states. (D) Class averages of KIF5C-KLC1 in compact conformation. (E) End-to-end length measurements of KIF5C-KLC1 in two states (N = 100). (F) Crosslinked lysine pairs in KIF5C-KLC1 were mapped onto the domain diagram.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The domain diagram of KIF5B-KLC1. (B) The size-exclusion chromatography profile of KIF5B-KLC1. (C) The example negative staining electron microscopy (EM) micrograph of KIF5B-KLC1 in compact state. (D) Examples of 2D class averages of KIF5B-KLC1. (E) End-to-end length measurements of KIF5B-KLC1 in compact state (N = 100). (F) Crosslinked lysine pairs in KIF5B-KLC1, shown in the domain diagram.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) SDS-PAGE analysis of KIF5B-KLC1. (B) SDS-PAGE analysis of KIF5C-KLC1. (C) Intra-KLC1 crosslinks from KIF5B-KLC1. (D) Intra-KLC1 crosslinks from KIF5C-KLC1.
 
 To probe the structure of autoinhibited kinesin-1 tetramer, we took the fractions corresponding to the compact form and crosslinked them using bis(sulfosuccinimidyl)suberate (BS3) (Figure 3—figure supplement 2A and B). The crosslinked samples were analyzed using the same pipeline as the kinesin-1 dimer. All high-confidence crosslinks (E value < 0.01) were plotted on the kinesin-1 heterotetramer domain diagram (Figure 3F, Figure 3—figure supplement 1F).
 
 Our XL-MS data show that the KHC folding pattern was not changed with the addition of the light chains (Figure 3F, Figure 3—figure supplement 1F). This suggests that the KLC did not induce a new structural state of the heavy chain. We observed that KLC1 made more extensive contacts with heavy chain isoform KIF5C than KIF5B (Figure 3F, Figure 3—figure supplement 1F). The N-terminus of KLC1 makes contact between the CC3 and CC4 in KIF5B-KLC1 and KIF5C-KLC1, which is consistent with the previously reported binding interface (Verhey et al., 1998). The TPR domain of KLC1 made extensive contacts with the motor domain, CC2, and CC4 in KIF5C-KLC1 (Figure 3F), while it was only sparsely linked to the motor domain and CC4 in the KIF5B-KLC1 (Figure 3—figure supplement 1F). We also observed intra-KLC1 crosslinks (Figure 3—figure supplement 2C and D) from both samples, though with slightly different patterns, indicating a difference in light chain conformations. Specifically, we found crosslinks between the C-terminus of the KLC1 coiled-coil and the TPR domain, as well as intra-TPR crosslinks. The exact conformation of KLC1 in the heterotetramer needs further investigation.
 
-## Kinesin light chains stabilize the folded conformation of the kinesin heavy chain
+### Kinesin light chains stabilize the folded conformation of the kinesin heavy chain
 
 We set out to model a structure of the autoinhibited kinesin-1 heterotetramer (Figure 4A) with the input from low-resolution EM reconstruction, XL-MS, and predicted structure fragments from AlphaFold. While we noticed that the folding patterns of KIF5B and KIF5C were not changed with the addition of KLC1, KLC1 made more contacts with KIF5C (Figure 3F, Figure 3—figure supplement 1F), which could be due to the different light chain conformation in the two tetramers. In our 3D modeling, we focused on KIF5C-KLC1 given the extensive crosslinks observed in this sample.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig4-v1.jpg)
+
+**Figure 4.:** (A) The proposed model of autoinhibited KIF5C-KLC1 in cartoon diagram. (B) A model of KIF5C-KLC1(CC) via integrative modeling. The gray density is the low-resolution map from negative staining electron microscopy (EM). (C) The crosslinked pairs between KLC1-CC and KIF5C stalk, shown in the structure model. (D) The locations for the TPR domains in the KIF5C-KLC1. (E) Crosslinked lysine pairs between TPR domains and KIF5C.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The predicted structure of KIF5B(401–963) – KLC1(1–200). (B) The predicted structure of KIF5C(401–957) – KLC1(1–200). The coiled-coil prediction results and location of binding site between kinesin heavy chain and light chain were mapped onto the structure.
 
 To generate our models, we began by using AlphaFold Multimer (Evans et al., 2022) to predict a structure of the KIF5C:KLC1 interface consisting of CC2 to the tail of KIF5C (aa 401–957) and the N-terminal domain of KLC1 (aa 1–200) containing the coiled-coil (Figure 4—figure supplement 1B). The predicted structure showed a similar coiled-coil domain arrangement within KIF5C as the predicted KIF5C homodimer structure (Figure 2—figure supplement 1B). Interestingly, the KIF5C-KLC1 interface was predicted to be an eight-helix bundle, also seen in a previous report (Weijman et al., 2022). The eight-helix bundle consists of a dimer of four coiled-coils formed by three short N-terminal helices from the KLC1 and the C-terminus of CC3b from KIF5C. The same KLC1 binding configuration can also be seen in the predicted structure of KIF5B-KLC1 (Figure 4—figure supplement 1A).
 
@@ -98,9 +150,23 @@ Finally, to map the location of the TPR domains within KIF5C-KLC1, we used the m
 
 We used the crosslinks between KIF5C and the TPR domain to verify these placements. The TPR domain crosslinked to three regions in KIF5C, which are the motor domain, CC2, and CC4 (Figure 3F). To best satisfy the distance constraints, we assigned crosslinks between the motor domain and TPR to TPR1 and noticed that TPR1 touches the ATP binding pocket (Figure 4E, green lines). The crosslinks between the C-terminus of CC4 (K877, K884, K905, and K911) and TPR were mainly assigned to TPR1 as they are in close proximity. The remaining crosslinks between the N-terminus of CC4 and TPR were mapped onto TPR2, consistent with the location of TPR2 along CC2 and CC4 (Figure 4E, blue lines). At last, the crosslinks between TPR and CC2 were mapped onto TPR2 (Figure 4E, brown lines). We noticed that several long-distance crosslinks could not be explained by our current model, especially the crosslinks between CC2 and TPR2 (Figure 4E, brown lines). Taken together, our XL-MS results suggest that our placement of two TPR domains likely reflects the real location but the exact conformation of TPR needs to be determined.
 
-## Disrupting the hierarchical folding of kinesin-1 activates motility
+### Disrupting the hierarchical folding of kinesin-1 activates motility
 
 Our integrative modeling suggests that kinesin-1 autoinhibition involves the hierarchical folding of the protein into a compact, inhibited state. To test this model, we generated mutations along the kinesin-1 heavy chain and tested whether there was a resulting increase in motility. Using KIF5B, we designed a series of mutations and deletions and performed single-molecule motility assays using an established cell lysate assay (Cai et al., 2007b), where the motility of the fluorescently KIF5B proteins along microtubules was visualized utilizing total internal reflection fluorescence (TIRF) microscopy. (Figure 5A, Figure 5—figure supplement 3).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig5-v1.jpg)
+
+**Figure 5.:** (A) The designed KIF5B mutations and truncations shown on the domain diagram. (B) Example kymographs of KIF5B with different truncations. And the corresponding landing rate. Landing rate (events/μm/s/μM): Lines show mean ± SEM: 1.07 ± 0.16 (WT), 14.92 ± 1.30 (1–909), 15.75 ± 0.70 (1–890), 26.87 ± 1.65 (1–565), 53.42 ± 3.47 (1–420). N = 2; n = 25, 20, 23, 15 and 14 MTs. One-way ANOVA followed by Dunnett’s test. ****p<0.0001. (C) Example kymographs of KIF5B with single mutation and the corresponding landing rate. Landing rate (events/μm/s/μM): Lines show mean ± SEM: 1.07 ± 0.16 (WT), 3.93 ± 0.32 (CC2), 4.93 ± 0.42 (hinge), 6.90 ± 0.78 (IAK), 0.67 ± 0.32 (linker). N = 2; n = 25, 25, 25, 20, and 9 MTs. One-way ANOVA followed by Dunnett’s test. *p<0.05, ***p<0.001, n.s., not significant. (D) Example kymographs of KIF5B with combined mutations and the corresponding landing rate. Landing rate (events/μm/s/μM): Lines show mean ± SEM: 1.07 ± 0.16 (WT), 6.44 ± 0.40 (CC2 + hinge), 7.66 ± 0.86 (CC2 + IAK), 9.65 ± 0.85 (hinge + IAK), 10.49 ± 0.57 (CC2 + hinge + IAK). N = 2; n = 25, 15, 12, 20, and 32 MTs. One-way ANOVA followed by Dunnett’s test. **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The landing rate distribution of KIF5B with different mutations and truncations. Landing rate (events/μm/s/μM): Lines show mean ± SEM: 1.07 ± 0.16 (full length), 53.42 ± 3.47 (1–420), 26.87 ± 1.65 (1–565), 15.75 ± 0.70 (1–890), 14.92 ± 1.30 (1–909), 3.93 ± 0.32 (CC2), 4.93 ± 0.42 (hinge), 6.90 ± 0.78 (IAK), 0.67 ± 0.32 (linker), 6.44 ± 0.40 (CC2 + hinge), 7.66 ± 0.86 (CC2 + IAK), 9.65 ± 0.85 (hinge + IAK), 10.49 ± 0.57 (CC2 + hinge + IAK). N = 2, n = 25, 14, 15, 23, 20, 25, 25, 20, 9, 15, 12, 20, and 32 MTs. One-way ANOVA followed by Dunnett’s test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, n.s., not significant. (B) The dwell time distribution of KIF5B with different mutations and truncations. Dwell time (s): lines show mean ± SEM: 9.88 ± 1.83 (full length), 1.91 ± 0.08 (1–420), 2.49 ± 0.16 (1–565), 3.67 ± 0.40 (1–890), 3.99 ± 0.41 (1–909), 9.93 ± 1.37 (CC2), 7.54 ± 0.64 (hinge), 7.91 ± 0.85 (IAK), 6.07 ± 1.55 (linker), 12.21 ± 1.42 (CC2 + hinge), 8.45 ± 1.42 (CC2 + IAK), 11.34 ± 0.76 (hinge + IAK), 6.46 ± 0.41 (CC2 + hinge + IAK). N = 2, n = 36, 253, 185, 182, 180, 61, 103, 83, 16, 75, 68, 143, and 223 events. One-way ANOVA followed by Dunnett’s test. *p<0.05, ****p<0.0001, n.s., not significant. (C) The velocity distribution of KIF5B with different mutations and truncations. Velocity (nm/s): line shown mean ± SEM: 241.2 ± 36.04 (full length), 844.5 ± 8.89 (1–420), 858.0 ± 9.72 (1–565), 781.3 ± 12.47 (1–890), 720.9 ± 13.75 (1–909), 396.7 ± 19.15 (CC2), 549.7 ± 17.94 (hinge), 424.1 ± 21.86 (IAK), 125.8 ± 40.93 (linker), 479.4 ± 22.83 (CC2 + hinge), 500.1 ± 22.4 (CC2 + IAK), 539.4 ± 15.24 (hinge + IAK), 654.7 ± 10.94 (CC2 + hinge + IAK). N = 2, n = 36, 253, 185, 182, 180, 61, 103, 83, 13, 75, 68, 143 and 223 events. One-way ANOVA followed by Dunnett’s test. ****p<0.0001, n.s., not significant. (D) The crosslinked pairs in KIF5B (1–565), suggesting that motor-CC2 folding is present in truncated kinesin and is independent of stalk folding.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Negative staining electron microscopy (EM) of crosslinked KIF5B(IAK/AAA). (B) The example class averages of KIF5B(IAK/AAA). (C) The crosslinked pairs in KIF5B(IAK/AAA) from crosslinking mass spectrometry (XL-MS). (D) End-to-end length measurement of KIF5B(WT) and KIF5B(IAK/AAA). (N = 300).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig5-figsupp3-v1.jpg)
 
 To set a baseline for fully activated kinesin-1, we measured the motile properties of truncated KIF5B constructs tagged at their C-terminus with monomeric NeonGreen. Full-length KIF5B showed very few motility events (Figure 5B), confirming that the kinesin-1 dimer is autoinhibited. In contrast, a minimal dimer construct consisting of only the motor and CC1 (neck coil) domains without any regulatory elements to lock it into inhibited sate, KIF5B(1–420), displays a significantly increased landing rate and processive events on microtubules (Figure 5B), although its dwell time on microtubules is relatively short (Figure 5—figure supplement 1B). A longer construct that includes CC2, KIF5B(1–565), and is widely used in the field to investigate kinesin-1 motility, has a lower landing rate and longer dwell time compared to KIF5B(1–420) but is still dramatically activated compared to full-length KIF5B (Figure 5B, Figure 5—figure supplement 1A and B). The lower landing rate relative to KIF5B(1–420) suggests that some degree of autoinhibition may still be present in KIF5B(1–565). Consistent with this possibility, XL-MS demonstrates that crosslinks between the motor domain and CC2 remain for this construct (Figure 5—figure supplement 1D), suggesting that its motor domain is partially prevented from binding microtubules. The motor-CC2 crosslinks in KIF5B(1–565) also reveal that the folding of the motor domain onto CC2 and folding of the remaining stalk are independent.
 
@@ -110,13 +176,13 @@ As mutation of the tail region was insufficient to relieve autoinhibition, we ex
 
 Since alterations that disrupt only one of the KIF5B intramolecular interactions were insufficient to fully relieve the autoinhibited state, we tested whether combinations of mutations could activate KIF5B motility. We first tested a double mutation of CC2 and hinge, hypothesizing that mutation of motor-CC2 interactions and prevention of CC3 folding would make the motor–tail interactions insufficient for autoinhibition. Although this construct showed a higher landing rate than the full-length KIF5B, it could not achieve the fully activated state of the KIF5B(1–420) protein (Figure 5D, Figure 5—figure supplement 1A). Similar results were obtained for double mutations of the CC2 with IAK and hinge with IAK (Figure 5D, Figure 5—figure supplement 1A). All of the double mutants showed landing rates and dwell times similar to the single IAK mutant (Figure 5—figure supplement 1A and B). We thus made a triple mutant that should release all sequences involved in hierarchical folding (CC2, hinge, and IAK) and found that the resulting construct could achieve a landing rate that approaches the tail truncation constructs (1–890 and 1–909), although it is still less active than the fully truncated (1–420) protein (Figure 5D, Figure 5—figure supplement 1A). These results suggest that multiple interactions contribute to the hierarchical folding of kinesin-1 and that all of these interactions need to be disrupted to fully activate microtubule-based motility.
 
-## The cargo adaptor TRAK1 destabilizes the folded conformation of kinesin-1
+### The cargo adaptor TRAK1 destabilizes the folded conformation of kinesin-1
 
 Since our modeling and mutagenesis suggest that hierarchical folding is required for kinesin-1 autoinhibition, we wanted to determine whether an activating adaptor disrupts the folding of kinesin-1. We selected the mitochondrial adaptor protein TRAK1 (Figure 6A) as it has been shown to activate kinesin-1 motility (Canty et al., 2021; Fenton et al., 2021; Henrichs et al., 2020). Previous work showed that the N-terminal coiled-coil of TRAK1 is sufficient to bind and activate kinesin-1 in vitro (Canty et al., 2021; van Spronsen et al., 2013).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/86776/elife-86776-fig6-v1.jpg)
 
-**Figure 6.:** (A) Proposed model of TRAK1 opening up KIF5B. (B) The size-exclusion chromatography profile of TRAK1(1–395)-KIF5B complex and the corresponding SDS-PAGE analysis. (C) The in vitro pull-down assay between different KIF5B fragments and TRAK1(1–395). (D) The mass photometry result for the TRAK1(1–395)-KIF5B complex. (E) The crosslinking mass spectrometry (XL-MS) results of TRAK1(1–395)-KIF5B.Figure 6—source data 1.
+**Figure 6.:** (A) Proposed model of TRAK1 opening up KIF5B. (B) The size-exclusion chromatography profile of TRAK1(1–395)-KIF5B complex and the corresponding SDS-PAGE analysis. (C) The in vitro pull-down assay between different KIF5B fragments and TRAK1(1–395). (D) The mass photometry result for the TRAK1(1–395)-KIF5B complex. (E) The crosslinking mass spectrometry (XL-MS) results of TRAK1(1–395)-KIF5B.
 
 We first confirmed the complex formation and stoichiometry of the TRAK1-kinesin-1 interaction. Using size-exclusion chromatography, we found that TRAK1(1–395) and KIF5B coeluted as a single species (Figure 6B). Then, we measured the stoichiometry of the complex using mass photometry and determined that one TRAK1(1–395) dimer binds to one KIF5B dimer (Figure 6C). To further map the binding interface between TRAK1 and kinesin-1, we performed a series of in vitro pull-down experiments using TRAK1(1–395) and KIF5B truncations. The pull-down data showed that TRAK1(1–395) binds to both CC3 and CC4 in KIF5B (Figure 6D). Taken together, these data show that a single TRAK1 homodimer binds to KIF5B at the interface of CC3 and CC4.
 
@@ -148,7 +214,7 @@ In summary, our work combined AlphaFold structure prediction, XL-MS, and EM to o
 
 ## Materials and methods
 
-## Plasmid construction
+### Plasmid construction
 
 For recombinantly expressed kinesin-1 in insect cells, full-length human KIF5B (sp|P33176) and KIF5C (sp|O60282) were synthesized and cloned into the pACEBac1 vector with a C-terminal TEV-ZZ tag. Full-length human KLC1 (sp|Q07866) was synthesized and cloned into the pACEBac2 vector. For the kinesin tetramers, KLC1 was first cloned into the pIDS vector. The pIDS-KLC1 vector was then fused with either pACEBac1-KIF5B or KIF5C via Cre-Lox recombination.
 
@@ -156,7 +222,7 @@ For KIF5B variants used in single-molecule motility assay, all KIF5B mutations a
 
 For KIF5B used in the pull-down assay with TRAK1, the corresponding stalk fragments were synthesized from IDT or amplified from pACEBac1-KIF5B, assembled with GST tag from pGEX6P plasmid and inserted into pACEBac1 vector via HIFI DNA assembly kit (NEB). The full-length KIF5B in pACEBac1 was replaced with a C-terminal TEV-Twin-Strep-tag via HIFI DNA assembly kit (NEB). The TRAK1 construct was made through assembling His-ZZ-TEV-SNAP tag and TRAK1(1–395) into a pACEBac1 vector via HIFI DNA assembly kit (NEB). All constructs were verified using whole plasmid sequencing from Plasmidsaurus.
 
-## Protein expression and purification
+### Protein expression and purification
 
 All the kinesin-1 constructs were expressed in the Sf9 cells using the Bac-to-Bac baculovirus expression system (Thermo Fisher Scientific). Sf9 cells were maintained as a suspension culture in serum-free medium (Insect-XPRESS, Lonza) at 27°C.
 
@@ -168,13 +234,13 @@ For the pull-down assays with TRAK1(1–395), KIF5B, and KIF5B(821–963), the T
 
 The pull-down assays with TRAK1(1–395), KIF5B(561–820), and KIF5B(561–916) were performed in a similar way. The GST-tagged KIF5B fragments were first immobilized on the Glutathione Sepharose 4B resin (Cytiva) and then incubated with cleared Sf9 cell lysate that overexpressed TRAK1(1–395). After incubation, the TRAK1-bound resin was transferred to a disposable column and washed with 40 ml kinesin buffer. The TRAK1-KIF5B complex was then eluted via prescission protease (GenScript) and subjected to SDS-PAGE.
 
-## Crosslinking mass spectrometry
+### Crosslinking mass spectrometry
 
 For crosslinking kinesin-1, peak fractions from the size-exclusion chromatography were used to prepare the sample for crosslinking mass spectrometry. 1–2 µM kinesin was prepared in 140 µl kinesin buffer where the total protein amount was less than 40 µg. 2 mg lysine-targeting crosslinker bis(sulfosuccinimidyl)suberate (Bfigure supplement 3) (Thermo Fisher Scientific) was dissolved in 500 µl kinesin buffer to a final concentration of 6.9 mM. Three reaction mixtures were prepared with 200×, 400×, and 600× excess of Bfigure supplement 3. The reaction mixtures were incubated at 4°C for 30 min, after which they were quenched with Tris-HCl (pH 7.5) at a final concentration of 25 mM. For each reaction, a 5 µl sample was used for SDS-PAGE to evaluate the crosslinking quality. For crosslinking TRAK1-KIF5B complex, 110 µl TRAK1-KIF5B complex eluted from the beads were incubated with 1.2 mM bis(sulfosuccinimidyl)suberate (Bfigure supplement 3) (Thermo Fisher Scientific) for 30 min at 4°C, which was then quenched with Tris-HCl (pH 7.5) at a final concentration of 25 mM. The resulting crosslinked samples were flash frozen by liquid nitrogen and stored at –80°C.
 
 The samples subjected to mass spectrometry analysis were processed as described earlier (Solon et al., 2021). After collecting the raw data, raw mass spectrometry files were searched using pLink 2.3.11 (Chen et al., 2019) against target-decoy FASTA files having the sequences of interest and contaminants. pLink was configured for conventional crosslinking with Bfigure supplement 3 linkers. The search was restricted to peptides containing trypsin digestion sites and having up to three missed cleavages. The peptide mass was set from 500 to 6000, and the peptide length set from 5 to 60. The precursor tolerance and fragment tolerance were set to 20 ppm. Search results were uploaded to xiView (Graham et al., 2019) for inspection and interpretation.
 
-## Negative stain electron microscopy
+### Negative stain electron microscopy
 
 Crosslinked kinesin-1 from size-exclusion chromatography was used for negative stain electron microscopy. Kineisn-1 was diluted in the kinesin buffer to 15–20 nM and applied on a glow-discharged carbon grid (Carbon Film 400-mesh copper, Electron Microscopy Sciences). After 1 min incubation, the grid was flipped and sequentially touched to three drops of 0.75% uranyl formate (Electron Microscopy Sciences) solution for 2 s, 10 s, and 20 s. The staining solution was then left to sit on the grid for 20 s and blotted away with filter paper (Whatman).
 
@@ -182,7 +248,7 @@ Sample screening and data collection were performed with Leginon (Suloway et al.
 
 Regarding the length measurement, we measured the length of individual molecules that show clear kinesin-1 particles in the micrographs. Molecules that show any sign of aggregation were not measured.
 
-## AlphaFold structure prediction and kinesin-1 modeling
+### AlphaFold structure prediction and kinesin-1 modeling
 
 All structure predictions on kinesin-1 were performed using the AlphaFold Multimer (Evans et al., 2022) or the ColabFold (Mirdita et al., 2022) on the COSMIC² platform (Cianfrocco et al., 2017). We tuned the number of recycles to obtain predicted structures. AlphaFold generates several possible models during the protein structure prediction process. These models are ranked based on their confidence scores, which reflect the degree of certainty with which AlphaFold has predicted each model. In our study, we chose the model with the highest score, while we noticed that the top 5 models from the AlphaFold prediction generally tend to be very similar in the case of the kinesin-1 structure prediction.
 
@@ -190,7 +256,7 @@ For the KIF5B dimer model building, we divided the KIF5B into four parts at the 
 
 For the KIF5C-KLC1 tetramer model building, we first made the model for the KIF5C-KLC1(CC). We predicted the structure of the KIF5C stalk plus the KLC1(CC) and used it as a reference. We then divided the KIF5C-KCL1(CC) into three segments: (1) motor-CC1-CC2 (1–540), (2) CC2-CC3a (401–690), and (3) CC3b-CC4-tail-KLC1(CC), and predicted them independently. These three fragments were then combined together manually based on distance restraints from XL-MS and EM map. We assigned the crosslinked pairs the same way as above and plotted them in the UCSF ChimeraX. For modeling the TPR domains, we used the crystal structure of the KLC1 TPR domain (PDB:3NF1) (Zhu et al., 2012) and placed them into the positions with extra densities in the EM map. We assigned the crosslinked pairs to the two TPR domains based on the distance restriction.
 
-## Cell culture, transfection, and lysis
+### Cell culture, transfection, and lysis
 
 COS-7 (monkey kidney fibroblast) cells obtained from ATCC (RRID: CVCL_0224) were cultured in DMEM (Gibco) with 10% (vol/vol) Fetal Clone III (HyClone) and 1% GlutaMAX (Gibco) at 37°C with 5% CO2. Cells are checked annually for mycoplasma contamination and were authenticated through mass spectrometry (the protein sequences match those in the Ceropithecus aethiops genome).
 
@@ -198,7 +264,7 @@ COS-7 cells were transfected with Trans-IT LT1 (Mirus) according to the manufact
 
 The concentration of KIF5B-mNG proteins in the lysates was measured by dot-blot, in which dilutions of COS-7 lysates expressing KIF5B-mNG WT or mutant proteins and standards of KIF5C(1–560)-mNG protein were spotted onto a nitrocellulose membrane. The membrane was air-dried for 1 hr and immunoblotted with a primary antibody against mNeonGreen tag (Chromotek) at room temperature for 1 hr followed by a secondary antibody (680 nm anti-mouse, Jackson ImmunoResearch Laboratories Inc) at room temperature for 30 min. The fluorescence intensity of the spots on the nitrocellulose membrane was detected by Azure c600 and quantified based on the standard curve of known concentration of KIF5C(1–560)-mNG protein using Fiji/ImageJ (NIH).
 
-## Single-molecule motility assays
+### Single-molecule motility assays
 
 HiLyte647-labeled microtubules were polymerized from purified tubulin including 10% Hily647-labeled tubulin (Cytoskeleton) in BRB80 buffer (80 mM Pipes/KOH pH 6.8, 1 mM MgCl2, and 1 mM EGTA) supplemented with 1 mM GTP and 2.5 mM MgCl2 at 37 °C for 30 min. 20 μM taxol in prewarmed BRB80 buffer was added and incubated at 37°C for additional 30 min to stabilize microtubules. Microtubules were stored in the dark at room temperature for further use. A flow cell (~10 μl volume) was assembled by attaching a clean #1.5 coverslip (Fisher Scientific) to a glass slide (Fisher Scientific) with two strips of double-sided tape. Polymerized microtubules were diluted in BRB80 buffer supplemented with 10 μM taxol and then were infused into flow cells and incubated for 5 min at room temperature for nonspecific adsorption to the coverslips. Subsequently, blocking buffer (1 mg/ml casein in BRB80 buffer) was infused and incubated for 5 min. Finally, 1.5 nM kinesin motors in motility mixture (2 mM ATP, 3 mg/ml casein, 10 μM taxol, and oxygen scavenging [1 mM DTT, 1 mM MgCl2, 10 mM glucose, 0.2 mg/ml glucose oxidase, and 0.08 mg/ml catalase] in BRB80 buffer) was added and the flow cell was sealed with molten paraffin wax.
 

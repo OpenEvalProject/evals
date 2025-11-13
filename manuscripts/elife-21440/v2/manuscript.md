@@ -14,13 +14,48 @@
 
 ## Abstract
 
-10.7554/eLife.21440.001 There are three main theories on how human grasping movements are controlled. Two of them state that grip aperture and the movement of the hand are controlled. They differ in whether the wrist or the thumb of the hand is controlled. We have proposed a third theory, which states that grasping is a combination of two goal-directed single-digit movements, each directed at a specific position on the object. In this study, we test predictions based on each of the theories by examining the transfer of prism adaptation during single-digit pointing movements to grasping movements. We show that adaptation acquired during single-digit movements transfers to the hand opening when subsequently grasping objects, leaving the movement of the hand unaffected. Our results provide strong evidence for our theory that grasping with the thumb and index finger is based on a combination of two goal-directed single-digit movements.
+There are three main theories on how human grasping movements are controlled. Two of them state that grip aperture and the movement of the hand are controlled. They differ in whether the wrist or the thumb of the hand is controlled. We have proposed a third theory, which states that grasping is a combination of two goal-directed single-digit movements, each directed at a specific position on the object. In this study, we test predictions based on each of the theories by examining the transfer of prism adaptation during single-digit pointing movements to grasping movements. We show that adaptation acquired during single-digit movements transfers to the hand opening when subsequently grasping objects, leaving the movement of the hand unaffected. Our results provide strong evidence for our theory that grasping with the thumb and index finger is based on a combination of two goal-directed single-digit movements.
 
 ## Introduction
 
 Two-digit grasping is a prototype of human motor coordination. Yet, there is an ongoing debate about how such movements are controlled (see for example Kleinholdermann et al., 2007; Smeets et al., 2010; van de Kamp and Zaal, 2007; Zaal and Bongers, 2014). Three main theories have been put forward. Jeannerod (1984) proposed that grasping consists of a transport component (movement of the wrist) that brings the hand to a location near the object and a grip component that ensures that the distance between the digits (grip aperture) changes in a manner that is appropriate for the size of the object. Others argue that the thumb is transported to a position on the object, with the index finger moving relative to the thumb to match grip aperture to the object’s size (Mon-Williams and McIntosh, 2000; Wing and Fraser, 1983). Finally, we have proposed that the trajectories of the tips of the digits when grasping is simply the combination of the trajectories of the same tips in goal-directed single-digit movements (‘pointing’), whereby each tip is moved to a specific position on the object (Schot et al., 2011; Smeets and Brenner, 1999; Smeets and Brenner, 2001; Verheij et al., 2012; Voudouris et al., 2013).
 
 We have previously shown that people can simultaneously adapt movements of the finger and thumb of one hand to opposite prismatic displacements (Schot et al., 2014). In the current study, we let people grasp a cube and a cuboid before and after a period in which their single-digit movements were adapted in opposite directions. The three theories on the control of grasping make different predictions for how aftereffects of opposite adaptation during the single-digit movements will transfer to the grip aperture and the grip position during subsequent grasping movements (Table 1).
+
+**Table 1.**
+ Whether or not adapting the two digits to opposite prisms during pointing movements would be expected to influence grip position and grip aperture during subsequent grasping movements according to the three main theories about the control of grasping.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Expected influence on</th>
+    </tr>
+    <tr>
+      <th>Controlled in grasping</th>
+      <th>Grip position</th>
+      <th>Grip aperture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Grip aperture and wrist position</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Grip aperture and thumb position</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Finger position and thumb position</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
 
 If, as Jeannerod (1984) suggested, grasping is controlled by planning the movement of the wrist and the opening and closing of the grip aperture, one would not expect opposite adaptation acquired during single-digit movements to transfer to grasping: the aftereffects of the opposite displacements of the wrist when adapting single-digit movements of the index finger and thumb will cancel each other during subsequent movements of both together when grasping, leaving the grip position unaltered. The grip aperture will also not be influenced by adapting pointing movements because it is irrelevant for single-digit movements.
 
@@ -34,7 +69,7 @@ The adaptation of pointing with the tip of each of the two single digits (centra
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/21440/elife-21440-fig1-v2.jpg)
 
-**Figure 1.:** Overview of the individual digits throughout the experiment (A) and a detailed view of the grip aperture (B) and grip position (C) for the grasping movements performed in the pre- and post- adaptation phases. In panel A the symbols show the overall mean effect of the prisms on the position of the digits for each block of 6 trials during the three phases of the experiment. In the adaptation phase (white background), the digits partially adapt to the prisms during pointing movements. When switching to grasping movements under normal vision (grey background on the right) we see an aftereffect. In panels B and C, the symbols show the trial-by-trial time course averaged over all participants. The bars in the center of each panel show the average values (Mean ±SEM of the individual participants’ median values within each phase; source file available as Figure 1—source data 1). A positive grip position is to the right. The inset shows one participant’s time course of grip aperture during the last movement towards the target cube in one of the pre-adaptation phases (black curve) and during the first movements towards the target cube in both post-adaptation phases (dashed blue and solid red curves). Time 0 is the moment at which we determined the digits’ positions for calculating grip aperture and grip position. The horizontal dashed line is the grip aperture at which the digits touch each other.10.7554/eLife.21440.004Figure 1—source data 1.Figure 1B,C.
+**Figure 1.:** Overview of the individual digits throughout the experiment (A) and a detailed view of the grip aperture (B) and grip position (C) for the grasping movements performed in the pre- and post- adaptation phases. In panel A the symbols show the overall mean effect of the prisms on the position of the digits for each block of 6 trials during the three phases of the experiment. In the adaptation phase (white background), the digits partially adapt to the prisms during pointing movements. When switching to grasping movements under normal vision (grey background on the right) we see an aftereffect. In panels B and C, the symbols show the trial-by-trial time course averaged over all participants. The bars in the center of each panel show the average values (Mean ±SEM of the individual participants’ median values within each phase; source file available as Figure 1—source data 1). A positive grip position is to the right. The inset shows one participant’s time course of grip aperture during the last movement towards the target cube in one of the pre-adaptation phases (black curve) and during the first movements towards the target cube in both post-adaptation phases (dashed blue and solid red curves). Time 0 is the moment at which we determined the digits’ positions for calculating grip aperture and grip position. The horizontal dashed line is the grip aperture at which the digits touch each other.
 
 Statistical analysis of the effects of session, adaptation phase, and target block size on grip aperture showed a significant phase by session interaction (F(1,7)=7.3, p=0.03) indicating that grip aperture indeed changed differently after thumb left and thumb right adaptation (Figure 1B). This difference is 1.2 cm. Besides the phase by session interaction, there were also significant effects of block size (the target cuboid was grasped with a 2.3 cm larger grip aperture than the target cube; F(1,7)=324.1, p<0.001) and of session (F(1,7)=24.8, p=0.002). Statistical analysis of the effects of session, adaptation phase, and target block size on the grip position did not show any significant effects (all p>0.1, Figure 1C). The difference corresponding to the non-significant tendency towards an adaptation phase by session interaction for grip position was only 0.1 cm, an order of magnitude smaller than the 1.2 cm that we found for grip aperture.
 
@@ -52,6 +87,10 @@ All three theories limit themselves to describing the movements of the task-rele
 
 How the wrist, elbow and shoulder move (or, more generally, how the redundancy problem is solved) is beyond the scope of any of the mentioned theories. We therefore interpret our findings in terms of the movements of the endpoints of the digits, completely ignoring how these movements are achieved in terms of muscles and joints. In doing so, we ignore the evidence that adaptation is specific for the joints involved in the pointing movements (Krakauer et al., 2006). Such evidence makes our findings even more surprising, because as can be seen in the example in Video 1, the participants mainly performed the pointing movements and their corrections from the elbow and shoulder, whereas changes in grip aperture must involve changing the angles of the digits relative to the hand. This suggests that the transfer that we found to grip aperture in grasping is not based on transfer of a joint-specific adaptation, but on a higher-level control of the trajectory of the digit in space.
 
+![Video 1.](https://cdn.elifesciences.org/articles/21440/elife-21440-video1.mp4.jpg)
+
+**Video 1.:** Three single digit trials (adaptation phase) and two grasping trials of one subject (pre- and post-adaptation phases). Note the presence/absence of the prisms, and the opening of the shutter glasses in front of one/both eyes.
+
 Finding transfer from transporting the separate digits in pointing to grip aperture in grasping (Figure 1B) contradicts the idea that grip aperture is controlled separately from transport of the hand or thumb (see Table 1). Finding that grip position was not systematically further to the left after thumb right adaptation (Figure 1C) contradicts the theory that the thumb determines the transport of the hand. Both the presence of an effect on grip aperture and the lack of effect on grip position are consistent with similar but independent adaptation of the movements of finger and thumb. Finding that the grip aperture can increase as well as decrease depending on the direction of the adaptation shows that the effect is due to the adaptation itself, rather than for instance uncertainty about the size of the object leading to a larger hand opening.
 
 The observation that the digits sometimes touch each other during the grasping movement (as in the example in the inset of Figure 1B) is also consistent with independent adaptation of the movements of finger and thumb. With independent control of the thumb and index finger, it is possible that people plan digit trajectories that cannot be executed simultaneously for anatomical reasons. This seems indeed to have happened in this study. Neither of the other theories can account for the digits touching each other during the grasping movement because if the aperture is controlled it is only expected to decrease (after reaching maximal grip aperture) until it matches the size of the object.
@@ -62,7 +101,7 @@ Together, these results provide strong evidence that grasping can be considered 
 
 The methods employed in this study, are very similar to those of our original adaptation study (Schot et al., 2014). The main difference is the use of grasping instead of single-digit pointing in the pre- and post-adaptation phases. This study was part of a research programme that has been approved by the Ethische Commissie Bewegingswetenschappen (ECB 2006–02). All participants gave their informed consent before participating in this study.
 
-## Procedure
+### Procedure
 
 Eight participants (25–29 years of age, two males) took part in the experiment after giving informed consent. They wore PLATO shutter glasses. Movements of Infrared emitting diodes attached to the fingernails of the thumb and index finger were recorded at 250 Hz using an Optotrak 3020 system. A target object was attached to a wooden board at one of three possible target locations (5 cm apart). The board obstructed the participants’ vision of the hand until just before contact with the target object.
 
@@ -76,7 +115,7 @@ Participants started all trials by grasping the starting cube with the glasses s
 
 The experiment consisted of two sessions that were performed on separate days with their order counterbalanced across participants. In one session, vision was displaced to the right when touching the cube with the index finger and to the left when touching the cube with the thumb (thumb left). In the other session, the displacements were reversed (thumb right). Within each session, trials were presented in pseudo-random order that ensured that all trial-types were distributed evenly: in the pre- and post-adaptation phase, each combination of target size and target location was presented once every six trials; in the adaptation phase, each combination of digit and target location was presented once every six trials.
 
-## Data analysis
+### Data analysis
 
 To make sure that we had a measure that is not influenced by movement corrections based on visual feedback, we based our analysis for both index finger and thumb on the marker position 1 cm before it crossed the far edge of the board. We calculated the grip aperture by taking the difference between these positions for the two digits and the grip position by taking the average of these positions. As we used three target positions, grip position was expressed relative to the target’s position.
 

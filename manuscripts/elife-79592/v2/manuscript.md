@@ -18,14 +18,14 @@
 
 ### Affiliations
 
-1. https://ror.org/05k8wg936 Laboratory of Molecular Epigenomics and Chromatin Organization, Genome Institute of Singapore Singapore Singapore
+1. Laboratory of Molecular Epigenomics and Chromatin Organization, Genome Institute of Singapore Singapore Singapore ([ROR:05k8wg936](https://ror.org/05k8wg936))
 2. Cardiovascular Disease Translational Research Programme, Yong Loo Lin School of Medicine Singapore Singapore
-3. https://ror.org/05k8wg936 Laboratory of Systems Biology and Data Analytics, Genome Institute of Singapore Singapore Singapore
-4. https://ror.org/05k8wg936 Laboratory of RNA Genomics and Structure, Genome Institute of Singapore Singapore Singapore
-5. https://ror.org/05k8wg936 Center for Genome Diagnostics, Genome Institute of Singapore Singapore Singapore
-6. https://ror.org/04xpsrn94 Stem Cells and Diabetes Laboratory, Institute of Molecular and Cell Biology Singapore Singapore
-7. https://ror.org/01tgyzw49 Department of Medicine, Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore
-8. https://ror.org/02j1m6098 Precision Medicine Translational Research Programme, Department of Biochemistry, Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore
+3. Laboratory of Systems Biology and Data Analytics, Genome Institute of Singapore Singapore Singapore ([ROR:05k8wg936](https://ror.org/05k8wg936))
+4. Laboratory of RNA Genomics and Structure, Genome Institute of Singapore Singapore Singapore ([ROR:05k8wg936](https://ror.org/05k8wg936))
+5. Center for Genome Diagnostics, Genome Institute of Singapore Singapore Singapore ([ROR:05k8wg936](https://ror.org/05k8wg936))
+6. Stem Cells and Diabetes Laboratory, Institute of Molecular and Cell Biology Singapore Singapore ([ROR:04xpsrn94](https://ror.org/04xpsrn94))
+7. Department of Medicine, Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
+8. Precision Medicine Translational Research Programme, Department of Biochemistry, Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore ([ROR:02j1m6098](https://ror.org/02j1m6098))
 
 † Corresponding author
 
@@ -39,15 +39,354 @@ Stable expression of transgenes is essential in both therapeutic and research ap
 
 ## Results
 
-## Computational filtering for safe and accessible loci
+### Computational filtering for safe and accessible loci
 
 A list of criteria has previously been suggested for a given locus to qualify as putative GSH (Papapetrou and Schambach, 2016; Sadelain et al., 2011). These criteria state that GSH: must not be in proximity to genes coding or non-coding, with added distance from known oncogenes and miRNAs, and must not disrupt transcriptional units or ultra-conserved genomic regions. To shortlist putative GSH we conducted a computational search of the human genome using publicly available data (Figure 1A). We included the previously published safety criteria and added a further filter to exclude any regions of DNaseI hypersensitivity, as these regions are likely enriched in transcription factor binding and regulatory elements (Meuleman et al., 2020). A total of 12,766 sites, ranging from 1 b to approximately 30 Mb, passed the filters used (Figure 1A–B; Supplementary file 1). For a universal GSH site to be useful, it needs not only to be safe, but also enable stable expression of a transgene in any tissue type. We filtered the human genome for regions consistently in the active chromatin compartment based on 21 different human cell and tissue types (Schmitt et al., 2016). To extend the analysis beyond the limited set of samples, we utilised RNA-seq data of all available tissue types from the GTEx portal (Carithers et al., 2015). We selected an empirical set of ubiquitously expressed genes with low variance. We then cross referenced the chromosomal locations of these genes with the consistently active chromatin regions. This analysis yielded 399 1 Mb active regions that overlapped with a ubiquitously expressed gene (Figure 1A–B; Supplementary file 1). By overlapping the two datasets, we found 49 safe sites within the active regions. We further filtered the 49 sites (Figure 1A–B; Supplementary file 1) using BLAT to remove candidate sites that had highly similar sequence matches at other genomic loci and generated a final shortlist of 25 unique putative universal GSH sites in the human genome (Figure 1A–B; Table 1).
 
-## Targeted knock-in at putative GSH with CRISPR/Cas9
+![Figure 1.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of the computational workflow for defining candidate GSH. (B) CIRCOS plot summarising computational search results. Ring 1: chromosome ideograms; ring 2: orange bars indicating safe sites; ring 3: blue bars indicating active regions; ring 4: candidate sites within active regions, red bars site failed BLAT screening, black bars site passed BLAT screening. (C) Locations of candidate GSH targeted in vitro. Blue labels: targeted clone established; green labels: no clone established.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Screenshots of Hi-C interaction matrices from H1 hESC for targeted GSH candidate locus on chromosome 1 (113339961-113340514). TADs are indicated by the ‘pyramids’ of high interaction observed in the Hi-C matrices. UCSC genome browser track annotating the candidate GSH (targeted GSH in pink), GENCODE v36 and H3K27Ac mark from ENCODE shown below.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** As in Figure 1—figure supplement 1 but for GSH targeted GSH candidate locus on chromosome 2 (128912721-128914814).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** As in Figure 1—figure supplement 1 but for GSH targeted GSH candidate locus on chromosome 2 (128932307-128935799).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** As in Figure 1—figure supplement 1 but for GSH targeted GSH candidate locus on chromosome 4 (17373361-17374159).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** As in Figure 1—figure supplement 1 but for GSH targeted GSH candidate locus on chromosome 6 (15727241-15727490).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** As in Figure 1—figure supplement 1 but for GSH targeted GSH candidate locus on chromosome 18 (56534775-56536439).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** As in Figure 1—figure supplement 1 but for GSH targeted GSH candidate locus on chromosome 19 (5400761-5402139).
+
+**Table 1.**
+ Coordinates of candidate GSH, their associated active chromosome regions & housekeeping gene, and BLAT score against the most similar region.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Chromosome</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Width</th>
+      <th>Active region start</th>
+      <th>Active region end</th>
+      <th>Housekeeping gene</th>
+      <th>BLAT-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>113289036</td>
+      <td>113289342</td>
+      <td>307</td>
+      <td>113000001</td>
+      <td>114000000</td>
+      <td>HIPK1</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>113314841</td>
+      <td>113318369</td>
+      <td>3529</td>
+      <td>113000001</td>
+      <td>114000000</td>
+      <td>HIPK1</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>1 *</td>
+      <td>113339961</td>
+      <td>113340514</td>
+      <td>554</td>
+      <td>113000001</td>
+      <td>114000000</td>
+      <td>HIPK1</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>2 *</td>
+      <td>128912721</td>
+      <td>128914814</td>
+      <td>2094</td>
+      <td>128000001</td>
+      <td>129000000</td>
+      <td>UGGT1</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>128918961</td>
+      <td>128919839</td>
+      <td>879</td>
+      <td>128000001</td>
+      <td>129000000</td>
+      <td>UGGT1</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>2*</td>
+      <td>128932307</td>
+      <td>128935799</td>
+      <td>3493</td>
+      <td>128000001</td>
+      <td>129000000</td>
+      <td>UGGT1</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>128963272</td>
+      <td>128965759</td>
+      <td>2488</td>
+      <td>128000001</td>
+      <td>129000000</td>
+      <td>UGGT1</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>208992998</td>
+      <td>208997459</td>
+      <td>4462</td>
+      <td>208000001</td>
+      <td>209000000</td>
+      <td>PIKFYVE</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>4*</td>
+      <td>17373361</td>
+      <td>17374159</td>
+      <td>799</td>
+      <td>17000001</td>
+      <td>18000000</td>
+      <td>MED28</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>131058585</td>
+      <td>131058947</td>
+      <td>363</td>
+      <td>131000001</td>
+      <td>132000000</td>
+      <td>FNIP1</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>148753741</td>
+      <td>148757219</td>
+      <td>3479</td>
+      <td>148000001</td>
+      <td>149000000</td>
+      <td>FBXO38</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>6 *</td>
+      <td>15727241</td>
+      <td>15727490</td>
+      <td>250</td>
+      <td>15000001</td>
+      <td>16000000</td>
+      <td>DTNBP1</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>4314741</td>
+      <td>4315279</td>
+      <td>539</td>
+      <td>4000001</td>
+      <td>5000000</td>
+      <td>FOXK1</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>4321017</td>
+      <td>4323839</td>
+      <td>2823</td>
+      <td>4000001</td>
+      <td>5000000</td>
+      <td>FOXK1</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>4328040</td>
+      <td>4329659</td>
+      <td>1620</td>
+      <td>4000001</td>
+      <td>5000000</td>
+      <td>FOXK1</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>4353504</td>
+      <td>4354219</td>
+      <td>716</td>
+      <td>4000001</td>
+      <td>5000000</td>
+      <td>FOXK1</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>4454808</td>
+      <td>4456201</td>
+      <td>1394</td>
+      <td>4000001</td>
+      <td>5000000</td>
+      <td>FOXK1</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>23945241</td>
+      <td>23945819</td>
+      <td>579</td>
+      <td>23000001</td>
+      <td>24000000</td>
+      <td>R3HCC1</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>23986981</td>
+      <td>23988319</td>
+      <td>1339</td>
+      <td>23000001</td>
+      <td>24000000</td>
+      <td>R3HCC1</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>23999628</td>
+      <td>24001194</td>
+      <td>1567</td>
+      <td>23000001</td>
+      <td>24000000</td>
+      <td>R3HCC1</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>56339813</td>
+      <td>56340245</td>
+      <td>433</td>
+      <td>56000001</td>
+      <td>57000000</td>
+      <td>TXNL1</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>56396821</td>
+      <td>56397319</td>
+      <td>499</td>
+      <td>56000001</td>
+      <td>57000000</td>
+      <td>TXNL1</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>56410681</td>
+      <td>56411039</td>
+      <td>359</td>
+      <td>56000001</td>
+      <td>57000000</td>
+      <td>TXNL1</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>18 *</td>
+      <td>56534775</td>
+      <td>56536439</td>
+      <td>1665</td>
+      <td>56000001</td>
+      <td>57000000</td>
+      <td>TXNL1</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>19 *</td>
+      <td>5400761</td>
+      <td>5402139</td>
+      <td>1379</td>
+      <td>5000001</td>
+      <td>6000000</td>
+      <td>SAFB</td>
+      <td>0.18</td>
+    </tr>
+  </tbody>
+</table>
+
+_*= GSH shortlisted for in vitro validation._
+
+### Targeted knock-in at putative GSH with CRISPR/Cas9
 
 To validate our candidate GSH, we selected 7 of the 25 sites at random for in vitro experiments (Figure 1C). None of the selected seven sites lie at or immediately adjacent to borders of topologically associated domains (TADs; Figure 1—figure supplements 1–7). We targeted H1 hESC using CRISPR/Cas9 and a donor landing pad construct (Figure 2) at each of the seven candidate sites (Methods and Supplementary file 2). To minimise potential off-target effects of CRISPR/Cas9 targeting, we used a version of Cas9 with enhanced specificity (Slaymaker et al., 2016) and effective guides with highest predicted specificity available. Following antibiotic selection, single clones were expanded and screened for successful homology directed repair driven integration of the expression construct with junction- and digital-PCR (Figure 2B, Supplementary file 3, and Figure 2—figure supplement 1). Successful heterozygous targeting of the donor construct was confirmed at three candidate GSH sites on chromosomes 1, 18, and 19. These three GSH sites were subsequently also targeted in H9 hESC for validation in an independent cell line (Figure 2—figure supplement 1, Supplementary file 3). No evidence of off-target activity was observed following PCR amplification and Sanger sequencing of the top five predicted off-target sites for each of the targeted clones (Figure 2—figure supplements 2–4). We named the successfully targeted safe harbours after real world harbours, designating them Pansio-1, Olônne-18, and Keppel-19.
 
-## In vitro validation of targeted GSH in hESCs
+![Figure 2.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic representation of CRISPR/Cas9 plasmid (pMIA3) and homology directed repair donor (pMIA4.721) used for targeting with functional components annotated. (B) Schematic of integrated landing pad expression construct. Positions of primers for junction-PCR as well as of ddPCR assay are indicated. Representative junction-PCR Sanger sequencing reads from Pansio-1 targeted clones shown in expanded view. (C) Log2-FC of mRNA expression levels against un-targeted H1 hESC samples for the nearest genes of Pansio-1, Olônne-18, and Keppel-19 candidate GSH. Evaluated samples: H1=un-targeted hESC, Pansio-1=landing pad construct integrated to Pansio-1 GSH in H1 hESC, Olônne-18=landing pad construct integrated to Olônne-18 GSH in H1 hESC and Keppel-19=landing pad construct integrated to Keppel-19 GSH in H1 hESC. Box plots representing 95% confidence intervals of mean log2-FC. Nearest gene for each GSH indicated in orange. Individual data points shown in pink with p-value for each comparison shown above. (D) Volcano plots of RNA-seq analysis against un-targeted H1 hESC. Samples analysed as in (C). Differentially expressed (DE) genes with FDR ≤0.01 and |logFC|≥1 in pink, genes with |logFC|≥1 in green, genes with FDR ≤0.01 in blue, others in grey. (E) Venn-diagrams illustrating the overlap of DE genes between un-targeted H1 hESC and the three GSH targeted H1 hESC lines.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Sanger sequencing traces of the top five predicted gRNA off-target sites for un-targeted wild type H1 & H9 hESC and Pansio-1 GSH targeted clones. All sequencing traces are ordered as follows: H1 WT, H1 clone, H9 WT & H9 clone.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** As in Figure 2—figure supplement 2, but for Olônne-18.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** As in Figure 2—figure supplement 2, but for Keppel-19.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Log2-FC of mRNA expression levels against un-targeted H9 hESC samples for the nearest genes of Pansio-1, Olônne-18, and Keppel-19 candidate GSH. Evaluated samples: H9=un-targeted hESC, Pansio-1=landing pad construct integrated to Pansio-1 GSH in H9 hESC, Olônne-18=landing pad construct integrated to Olônne-18 GSH in H9 hESC and Keppel-19=landing pad construct integrated to Keppel-19 GSH in H9 hESC. Box plots representing 95% confidence intervals of mean log2-FC. Nearest gene for each GSH indicated in orange. Individual data points shown in pink with P-value for each comparison shown above. (B) Volcano plots of RNA-seq analysis against un-targeted H9 hESC. Samples analysed as in (A). Differentially expressed (DE) genes with FDR ≤0.01 and |logFC|≥1 in pink, genes with |logFC|≥1 in green, genes with FDR ≤0.01 in blue, others in grey. (C) Venn-diagrams illustrating the overlap of DE genes between un-targeted H9 hESC and the three GSH targeted H9 hESC lines.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig2-figsupp6-v2.jpg)
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** Examples of mesodermal, endodermal, and ectodermal tissues are presented. Scale bar 100 µm.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** (A) Schematic representation of ‘all-in-one’ inducible transposon donor construct (pMIA10.7). (B) Schematic of landing pad construct with integrated ‘all-in-one’ inducible cassette. (C) Representative images of H1 Pansio-1 cells targeted with pMIA10.7 untreated or treated with 1 mg/ml doxycycline for 24 hr. Brightfield and GFP channels are shown. Scale bars for all images equal to 150 µm. (D) Bar plots representing the mean percentage of FITC-A positive cells from flow cytometry analysis of three replicate treatments as described in (A). Error bars indicate 95% confidence intervals. Individual data points shown in pink. (E) Representative scatter plots flow analysis described in (D).
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig2-figsupp9-v2.jpg)
+
+### In vitro validation of targeted GSH in hESCs
 
 To investigate the safety of our targeted GSH, we first checked the mRNA expression levels of the nearest genes MAGI3, TXNL1 and ZNRF4 to Pansio-1, Olônne-18 and Keppel-19 respectively using qPCR. When compared to un-targeted H1 hESCs, the mean log2 fold-change (log2-FC) values of the three nearest genes in the three H1 GSH clones as well as an independent un-targeted H1 sample ranged from –0.067 to 0.065 (Figure 2C, Supplementary file 4). The results from same comparison with our established H9 lines ranged from log2-FC of –0.14 to 0.04 (Figure 2–figure supplement 5, Supplementary file 4). Only three one sample Student’s t-tests on the log2-FC results showed p-values of less than 0.05, including the H1 vs. H1 comparison of MAGI3 (Figure 2C, Figure 2–figure supplement 5, Supplementary file 4). Overall, the nearest genes to our targeted GSH sites showed minimal change in expression levels when compared to untargeted cells.
 
@@ -56,6 +395,26 @@ We then conducted RNA-seq analysis to look for gene expression changes on a glob
 Functional enrichment analysis of the DE genes revealed relatively few terms; 2, 15, and 25 in H1 cells and 6, 5, and 18 in H9 for Pansio-1, Olônne-18, and Keppel-19, respectively (Supplementary files 5 and 6). Many of the terms highlighted by the functional enrichment included the CASP9 gene, which is over expressed from our targeting construct (Supplementary files 5 and 6). As a further safety check, we also conducted karyotyping of the established H1 and H9 lines and observed no abnormalities (Figure 2–figure supplement 6). We also used the Pansio-1, Olônne-18, and Keppel-19 H1 hES lines to generate teratomas in immunodeficient mice. All three lines were able to give rise to tissues from endoderm, ectoderm, and mesoderm lineages (Figure 2—figure supplement 7). Taken together, these results suggest minimal disruption of the native genome or the pluripotent cell identity and show a lack of karyotypic abnormalities following transgene integration to our three GSH.
 
 In addition to safety, a functional GSH also needs to allow for stable expression of a transgene. We took advantage of the landing-pad design of our targeting construct to swap in a sequence coding for Clover-fluorophore, by introducing a plasmid expressing BxbI-integrase as well as a donor construct into the three GSH lines (Figure 3A & B) in both H1 and H9 cells. Targeted cells were enriched with fluorescence activated cell sorting. Introduction of the payload transgene did not alter the expression of pluripotency markers OCT3/4 and SOX2 (Figure 3C–D, Figure 3—figure supplement 1A–B). We maintained the Clover targeted GSH lines in hESC state over 15 passages and consistently observed >98% Clover-positive cells (Figure 3E, Figure 3—figure supplement 1C). To investigate the stability of our GSH in other cell types, we conducted directed differentiation of our Clover-integrated hESC lines into cell types from the three germ lineages. Clover expression remained consistent in neuronal, liver, and cardiac cells (Figure 3F–H, Figure 3—figure supplements 1D and 2) in Pansio-1, Olônne-18, and Keppel-19 targeted H1 and H9 cells. In addition to neuronal, liver, and cardiac lineages, we also differentiated cells to pancreatic β-cells using the Pansio-1 targeted H9 line and observed Clover-transgene expression in marker-positive cells (Figure 3—figure supplement 1E). To further quantify the Clover-transgene expression in differentiated cell types, we conducted high-content imaging on the Pansio-1 Olônne-18, and Keppel-19 targeted H9 cells differentiated to neuronal, liver, and cardiac lineages (Figure 4). Quantification of the captured images indicated high correlation of the lineage markers and the Clover transgene signal, ranging from 75% to 99% (Figure 4—figure supplement 1 and Supplementary file 7). The expression from our landing-pad cassette is driven by a constitutive CAGG promoter (Figure 3A & B). To study whether our candidate GSH loci support transgene expression driven by other promoter sequences, we constructed an ‘all-in-one’ donor cassette for Tet-inducible transgene expression (Methods, Figure 2–figure supplement 8A). H1 Pansio-1 hESC successfully targeted with the donor cassette were first selected with puromycin and then treated with doxycycline. Twenty-four hour incubation with 1 µg/ml doxycycline was sufficient to drive expression of the GFP transgene on average in 73% of cells (Figure 2—figure supplement 8C–E, Supplementary file 8). Results from the above experiments indicate that our landing-pad GSH cell lines are able to support stable transgene expression under the CAGG promoter in hESC and derived cell types and that inducible expression from a tet-driven promoter can be observed in hESC.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic representation of integrase expression construct (pMIA22) and transposon donor construct (pMIA10.5). (B) Schematic of landing pad construct with integrated Clover transgene. (C) Representative immunofluorescence images of Clover-integrated GSH H1 cells. DAPI = nuclear staining with 4′,6-diamidino-2-phenylindole, Clover = fluorescence from Clover transgene, OCT3/4=antibody staining against OCT3/4, Overlay = overlay of the three imaged channels. (D) As in (C) apart from antibody staining against SOX2. (E) Histograms of flow cytometry analysis for FITC-A channel of un-targeted H1 hESC, and the three GSH targeted hESC lines over 15 passages. Percentages of FITC-A-positive cells according to the indicated gating. (F) Representative immunofluorescence images of Clover-integrated GSH H1 cells differentiated to neuronal-like cells. Channels imaged as in (C) apart from antibody staining against TUJ1. (G) As in (F) for cells differentiated to hepatocyte-like cells, antibody staining against AFP. (H) As in (F) for cells differentiated to cardiomyocyte-like cells, antibody staining against sarcomeric α-ACTININ. Scale bars for all immunofluorescence images equal to 150 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative immunofluorescence images of Clover-integrated GSH H9 cells. DAPI = nuclear staining with 4′,6-diamidino-2-phenylindole, Clover = fluorescence from Clover transgene, OCT3/4=antibody staining against OCT3/4, Overlay = overlay of the three imaged channels. (B) As in (A) apart from antibody staining against SOX2. (C) Histograms of flow cytometry analysis for FITC-A channel of un-targeted H9 hESC, and the three GSH targeted hESC lines over 15 passages. Percentages of FITC-A positive cells according to the indicated gating. (D) Representative immunofluorescence images of Clover-integrated GSH H9 cells differentiated to neuronal cells. stained for TUJ1 and MAP2, hepatic cells, stained for AFP and HNF4α and cardiac cells stainde for sarcomeric α-ACTININ and cardiac TROPONIN-T. Channels imaged as in (C) apart from respective antibody stain. Scale bars for all immunofluorescence images equal to 150 µm. (E) Flow cytometry analysis scatter plots of hESC-derived β-like cells at D35 of β cell differentiation of H9 wild-type and Pansio-1 Clover-targeted cells. Channels used in analysis were 488 for Clover and 647 for antibody staining. PDX1, Insulin and isotype control antibodies were used.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** DAPI = nuclear staining with 4′,6-diamidino-2-phenylindole, Clover = fluorescence from Clover transgene, AF594=staining with secondary antibody alone, Overlay = overlay of the three imaged channels.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig4-v2.jpg)
+
+**Figure 4.:** Staining for respective lineage markers TUJ1, HNF4α and cTnT and isotype controls is shown as well as nuclear staining with HOECHST and the channel for Clover-transgene. Images are composites of 61 individual images from HCI. Scale bars in all images equal to 500 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79592/elife-79592-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Error bars indicate 95% confidence intervals. Individual data points shown in pink.
 
 Overall, we have developed a computational pipeline to define GSH candidate sites from the human genome that fulfil criteria for safety as well as accessibility for transgene expression. Our pipeline defines 25 unique candidate GSH and we conducted in vitro validation experiments for three of them, Pansio-1, Olônne-18, and Keppel-19. Targeting and transgene expression in hESC at the three sites led to minimal or no change in the expression levels of the nearest native genes or the transcriptome overall and did not interfere with directed differentiation to the three germ lineages. The three tested GSH support transgene expression in the pluripotent state and in derived cell types from all the germ lineages. Furthermore, we established landing pad expression lines in H1 and H9 hESC of Pansio-1, Olônne-18, and Keppel-19, which we hope will serve as useful research tools.
 
@@ -73,141 +432,141 @@ Our data suggest that the three candidate GSH, Pansio-1, Olônne-18, and Keppel-
 
 ## Methods
 
-## Short-listing of putative safe harbour genomic regions
+### Short-listing of putative safe harbour genomic regions
 
 We applied a series of computational, whole-genome loci filtering criteria to pick a narrow list of high-confidence, putative safe harbour sites for experimental validation. In the first step, we selected genomic regions that satisfy simultaneously all of the following criteria: the loci should be located outside of ultra-conserved regions (Lomonaco et al., 2014; Taccioli et al., 2009) (coordinates lifted over from hg19 to hg38 assembly), outside of DNase clusters +/- 2 kb (ENCFF503GCK, ENCODE database https://www.encodeproject.org/9), more than 50 kb away from any transcription start site and outside a gene transcription unit (ENSEMBL Release 103, dataset hsapiens_gene_ensembl, http://www.ensembl.org/index.html), more than 300 kb away from cancer-related genes (Cancer Gene Census, GRCh38, COSMIC v92 database https://cancer.sanger.ac.uk/census), more than 300 kb away from any miRNA (ENSEMBL Release 103, dataset hsapiens_gene_ensembl, gene_biotype = miRNA, http://www.ensembl.org/index.html) and more than 100 kb away from any long non-coding RNA (ENSEMBL Release 103, dataset hsapiens_gene_ensembl, gene_biotype = lncRNA, http://www.ensembl.org/index.html). From the filtered loci we discarded the loci with high BLAT similarity to other sequences. On the RNA-seq level, we required the putative safe harbour sites to be associated with ubiquitously expressed, low variance genes. On the 3D chromosome organization level, they should belong to regions consistently located in active chromosomal compartments across multiple tissue types. Custom code used for in the computational search is available on https://github.com/Foo-Lab.
 
-## Ubiquitously expressed and low-variance genes
+### Ubiquitously expressed and low-variance genes
 
 We downloaded the median gene-level TPMs by tissue type from GTEx (https://www.gtexportal.org/home/datasets) and identified an empirical set of low-variance housekeeping genes. To this extent, we estimated the mean and the variance of each gene across all available tissue types and, independently, selected the genes with the lowest, insignificant variability using the HVG function of scran R package that decomposes the total variance of each gene into its biological and technical components. We picked the genes whose expression levels do not change significantly across the tissue types (FDR >0.9) and fit a mean vs variance non-parametric lowess regression model. We selected the genes with mean TPM ≥5 and variance below the average (smoothed) variance estimated from the lowess model.
 
-## Loci interaction via chromatin conformation capture
+### Loci interaction via chromatin conformation capture
 
 Using a set of publicly available Hi-C chromatin organization data (Schmitt et al., 2016) from human cell and tissue types, we shortlisted the genomic regions consistently located (at least 20/21 interrogated tissue types) in active (open chromatin) compartments (Lieberman-Aiden et al., 2009).
 
-## BLAT analysis
+### BLAT analysis
 
 We measured the uniqueness of target loci using BLAT (https://genome.ucsc.edu/cgi-bin/hgBlat) on the human genome GRCh38 with BLAT’S guess query type. BLAT takes the target DNA sequence as input and identifies similar ones in the whole human genome. Target sequences of more than 25,000 bps (BLAT’s limit) were split into multiple smaller overlapping segments of length between 9 000 and 11,000 bps each (depending on the original target length) and tested separately. We calculated the ratio of the BLAT scores for the second hit over the top hit from the BLAT search results. The top hit corresponds to the candidate GSH being tested and the second hit is the most similar sequence match in the genome. We filtered out the candidate loci where the ratio of (BLAT score for 2nd hit) / (BLAT score for 1st hit) was over 0.5 (Supp. File 1).
 
-## Selection of candidate GSH for in vitro validation
+### Selection of candidate GSH for in vitro validation
 
 Sites for in vitro validation were chosen by running the command round(runif(1, min = 1, max = 25)) in R to generate seven unique numbers. These numbers were then matched to the ordered list of candidate sites (Table 1.) to identify the candidate loci for targeting. Number of sites for targeting was capped at seven due to practical limitations of handling and screening of multiple clonal hES lines simultaneously.
 
-## TAD boundary check
+### TAD boundary check
 
 We checked the locations of our in vitro targeted GSH candidates against the TAD borders using data from H1 human embryonic stem cells (hESCs) (Dixon et al., 2015) on the 3D Genome Browser (http://3dgenome.fsm.northwestern.edu/; Wang et al., 2018). Visual inspection of the candidate loci confirmed that all the candidate GSH are more than 80,000 bp away from TAD borders (Figure 1—figure supplements 1–7).
 
-## Plasmid construction
+### Plasmid construction
 
 All restriction enzymes were purchased from NEB. PCR reactions were conducted using Q5 Hot Start High-Fidelity 2 X Master Mix (NEB, M0494L). Ligations were conducted using isothermal assembly with NEBuilder HiFi DNA Assembly Master Mix (NEB, E2621L). All gBlocks, primers & oligos were ordered from Integrated DNA Technologies, Singapore. Plasmids used in this manuscript will be made available via Addgene. Primers used for fragment amplification are listed in Supp. File 2.
 
-## pMIA4.721
+### pMIA4.721
 
 An in-house expression plasmid containing a CAGG promoter (pMIA4.9) was digested with BamHI & SphI. Two gBlocks (bxb-bsd and bxb-sv) were directly ligated into the digested plasmid. The resulting plasmid was digested with PmlI & KpnI. A fragment containing codon optimised iCasp9-2A-Bsd was amplified from a plasmid supplied by Genewiz (sequence of iCasp9 based on Straathof et al., 2005) and ligated into the digested plasmid. This plasmid was subsequently digested with AgeI & SbfI. The SV40 polyA signal was amplified from pMAX-GFP and ligated to the digested plasmid to generate pMIA4.271.
 
 To generate the HDR donors for each GSH candidate, the pMIA4.721 plasmid was digested with NheI for 5’ homology arm and with SbfI for 3’ homology arm. Homology arms ranging from 240bp to 769bp were amplified from H1 hESC gDNA. Ligation of homology arms was done in two sequential reactions. Order of ligation depended on the underlying sequence of homology arms for each target.
 
-## pMIA22
+### pMIA22
 
 pMAX-GFP (Lonza) was digested with KpnI and SacI. A gBlock encoding a codon optimised BxbI-integrase (Ghosh et al., 2005) with a C-terminal bi-partite nuclear localisation signal (Wu et al., 2009) was amplified and ligated to the digested backbone.
 
-## pMIA10.5-Clover
+### pMIA10.5-Clover
 
 An empty donor plasmid (pMIA10.5) containing a 5’ BxbI attB (CT) and a 3’BxbI attB (GT) was ordered from Genewiz. Clover transgene was amplified and ligated into the plasmid after digestion with AgeI & KpnI.
 
-## pMIA10.53-Clover
+### pMIA10.53-Clover
 
 We generated a donor plasmid with puromycin selection to allow for enrichment of successfully targeted cells without the need fluorescence activated cell sorting (Figure 2—figure supplement 9). pMIA10.5-Clover was digested with BsrGI. A gBlock encoding a stuffer sequence as well as PCR amplicons of an internal ribosome entry site (IRES) of the encephalomyocarditis virus as well as puromycin N-acetyltransferase were ligated into the digested 10.5-Clover vector to generate 10.53-Clover.
 
-## pMIA10.7
+### pMIA10.7
 
 pMIA10.5 empty donor was digested with AgeI & KpnI. Sequences containing the tet-response element and copGFP-SV40pA were amplified from pTRE3G (Clontech, 631173) and pMAX-GFP (Lonza) respectively. The two fragments were ligated to the digested vector to generate an intermediate vector. The intermediate vector was digested with AgeI and an amplicon of Tet-On 3 G (Clontech, 631335) and a gBlock encoding T2A-puromycin-rGlopA were ligated in to generate the pMIA10.7 plasmid.
 
-## Stem cell culture
+### Stem cell culture
 
 Human ESC lines H1 (WiCell, WA01) & H9 (WA09, a kind gift from Dr. Lawrence Stanton) were maintained using mTeSR medium (STEMCELL Technologies, 85850) on 1:200 Geltrex (ThermoFisher Scientific, A1413202) coated tissue culture plates and passaged regularly as cell aggregates every 4–5 days using RelesR (STEMCELL Technologies, 05872). Identity of H1 cells was authenticated by the supplier, WiCell. Identity of H9 cells was authenticated by short tandem repeat analysis (AxilScientific). The cell cultures were tested for mycoplasma contamination monthly and confirmed negative.
 
-## CRISPR/Cas9-mediated targeted construct integration in hESC
+### CRISPR/Cas9-mediated targeted construct integration in hESC
 
 H1 hESCs were targeted via nucleofection using an Amaxa-4D (Lonza) as described previously (Ang et al., 2018). Briefly, gRNAs were designed using CRISPOR (Concordet and Haeussler, 2018; http://crispor.tefor.net/). Three gRNAs with the highest predicted off-target scores and containing a native G-base in the first position were selected for each GSH candidate (Supp. File 2). The gRNAs were cloned into pMIA3 plasmid (Addgene #109399) digested with Esp3I and tested via a GFP reconstitution assay in HEK239T cells. The target locus of each candidate GSH was amplified from H1 hESC gDNA (for primers see Supp. File 2). The amplified target sequences, ranging from 232 to 974 bp were cloned into the pCAG-EGxxFP plasmid (Mashiko et al., 2013) (Addgene # 50716, a kind gift from Dr Masahito Ikawa). The pMIA3 with the tested gRNA and the respective pCAG-EGxxFP target plasmid were transfected into HEK293T using lipofectamine3000 (Thermo Fisher Scientific, L3000015), according to manufacturer’s recommendations. For each candidate GSH the gRNA with the highest GFP signal at 48 hr post transfection (data not shown) was selected for use in hESC targeting.
 
 Five micrograms of pMIA3 plasmid containing optimal gRNA for each candidate GSH and the respective pMIA4.721 HDR-donor plasmids were nucleofected into hESC using the P3 Primary Cell kit (V4XP-3024) and programme CA-137. A total of 1.5x106 cells were used for each targeting and were plated onto geltrex coated wells on six-well plates in mTeSR with CloneR (STEMCELL Technologies, 05889) following nucleofection. After 24 hr media was changed to mTeSR, and cells were allowed to recover for another 24–48 hr. Once cells reached 70–80% confluency, Blasticidin (ThermoFisher Scientific, A1113903) was added to the culture media at 10 µg/ml. Individual colonies were manually picked from the wells after 7–14 days of selection and expanded further for screening.
 
-## Junction PCR
+### Junction PCR
 
 Genomic DNA samples for all the collected GSH clones was isolated using PureLink Genomic DNA Mini Kit (ThermoFisher Scientific, K182002) according to manufacturer’s instructions. PCR reactions amplifying both 5’ and 3’ targeting HDR junctions as well as the wild type allele were set up using primers listed in Supp. File 2. Samples were checked for the correct amplification size and alignment of the Sanger sequencing reads for each junction PCR and wild type allele.
 
-## Off-target analysis
+### Off-target analysis
 
 The top five predicted off-targets were checked via PCR amplification and Sanger sequencing. PCR primers for respective off-targets for each gRNA are listed in Supp. File 2. Sanger sequencing traces covering the off-target site for wild type and the respective targeted clone are shown in Figure 2—figure supplements 2–4.
 
-## Copy number analysis
+### Copy number analysis
 
 We evaluated Blasticidin and RPP30 Copy Numbers using Droplet Digital Polymerase Chain Reaction (ddPCR) technology (Bio-Rad Technologies), according to manufacturer’s specifications. Briefly and following fluorescence-based quantification (Thermo Fisher Scientific, Qubit), 2.5 ng double-stranded DNA was added to a reaction mix containing target-specific primers/probe mixes (900 nM primer/250 nM probe per FAM and HEX fluorophore; Bio-Rad, 10042958 Unique Assay ID: dCNS626289650 and 10031243 Unique Assay ID: dHsaCP2500350), 0.05 U HaeIII Restriction Enzyme (New England Biolabs, R0108S) and ddPCR-specific Supermix for Probes (no dUTP) (Bio-Rad, 1863024). This was randomly partitioned into at least 10,000 discrete oil droplets per reaction using microfluidics within the QX200 Droplet Generator (Bio-Rad, 1864002; together with Droplet Generation Oil for Probes, 1863005), which were gently transferred using a multi-channel pipette into a semi-skirted 96-well plate before heat-sealing (Bio-Rad PX1 PCR Heat Sealer, 1814000). Target amplification within each droplet was conducted in the C1000 Touch Thermal Cycler with 96-Deep Well Reaction Module (Bio-Rad, 1851197) through the following PCR protocol: (1) Enzyme Activation at 95 °C for 10 min, (2) 40 cycles of Denaturation and annealing/extension at 94 °C for 30 s and 55 °C for 1 min, respectively, (3) Enzyme Deactivation at 98 °C for 10 min. The QX200 Droplet Reader (Bio-Rad, 1864003) then derived the number of target-containing droplets through assessing each droplet for elevated, target-specific fluorescence. Blasticidin (FAM)-positive droplet counts were normalised using its respective well-specific RPP30 (HEX)-positive counts prior to downstream analysis. All experiments were done in duplicates, with data visualised and assessed using the QuantaSoft software version 1.7.4.917 (Bio-Rad). We analysed the counts of RPP30 locus, a control locus on chr10 with a copy number of two, and the counts of Blasticidin, positive selection gene included in our landing pad targeting construct (Supp. File 3). We included a no template control, untargeted H1 and H9 cells and previously targeted H1 cells with known single copy integration of Blasticidin as controls for the copy number analysis. Clones whose normalised copy number was approximately 1 were selected for downstream analysis and banking.
 
-## qPCR analysis
+### qPCR analysis
 
 RNA was extracted from five biological replicates of the GSH targeted H1 & H9 hESC Pansio-1, Olônne-18 and Keppel-19and two independent cultures of untargeted cells using Direct-zolTm RNA Miniprep kit (Zymo Research, ZYR.R2052). One µg of RNA was converted into cDNA with Superscript IV Vilo MM (ThermoFisher Scientific, 11766050). Quantitative PCR reactions using TaqMan gene expression assays and master mix were used to compare the expression levels of MAGI3, TXNL1, and ZNRF4 against reference genes 18 S and GAPDH (Thermo Fisher Scientific, Hs00326365_m1; Hs00169455_m1; Hs00741333_s1; HS99999901_S1; Hs03929097_g1 and 4444557). Each reaction was run in three technical replicates on the same reaction plate. Quantitative RT-PCR analysis was done as described previously (Taylor et al., 2019) and resulting log2 fold change gene expression data was compared against reference H1 untargeted samples. A one sample Student’s t-test was used to determine the statistical significance of whether the mean log2-FC was different than 0 when comparing to untargeted hESC controls.
 
-## RNA-seq library prep
+### RNA-seq library prep
 
 RNA samples described above for qPCR were also used for RNA-seq. RNA concentration and quality were checked with an Agilent 2100 RNA Pico Chip (Agilent, 5067–1513). RNA sequencing libraries were prepared using the TruSeq Stranded Total RNA Sample Prep Kit (Illumina, 20020596) including Ribo-Zero to remove abundant cytoplasmic rRNA. The remaining intact RNA was fragmented, followed by first- and second-strand cDNA synthesis using random hexamer primers. ‘End-repaired’ fragments were ligated with a unique illumina adapters. All samples were multiplexed and pooled into a single library. Sequencing was done on a HiSeq 4000 to a minimum depth of 50 million 150 bp paired-end reads per biological sample. The raw fastq files are available on ENA under the study accession number PRJEB49564 (https://www.ebi.ac.uk/ena/browser/view/PRJEB49564), accession numbers: ERS16364945-ERS16364998.
 
-## RNA-seq quality control
+### RNA-seq quality control
 
 In all experiments, the raw paired-end reads in fastq format were initially processed with FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) for quality control at the base and sequence level. To remove the PCR duplicates we utilised the FastUniq algorithm (Xu et al., 2012). The adaptor trimming was performed by Trimmomatic (version 0.39) (Bolger et al., 2014). We quantified the 229,649 annotated human transcripts of GENCODE v35 by Kallisto (version 0.46) (Bray et al., 2016) followed by conversion of transcript to raw and TPM-normalized gene counts by the tximport package in R (Soneson et al., 2015). In total, 40,198 genes were quantified. Subsequently, we performed QC at the raw gene counts, checking for bad-quality samples having less than 100,000 reads or more than 10% reads mapped to mitochondrial RNA or less than 2000 detected genes. All samples of the various experiments were of high quality and were retained for the main analysis.
 
-## RNA-seq differential expression analysis
+### RNA-seq differential expression analysis
 
 The differential expression analysis was conducted by DEseq2 (Love et al., 2014) evaluating all pairwise comparisons of the four H1 and H9 test samples (1. Pansio-1 GSH targeted hESC; 2. Olônne-18 GSH targeted hESC; 3. Keppel-19 GSH targeted hESC; 4. Independent untargeted hESC) to an untargeted wild-type H1 or H9 control sample, respectively. In each comparison, we considered only the expressed genes, that is those with non-zero raw counts in at least one sample. The differentially expressed genes were those with |logFC|≥1 and FDR ≤0.01.
 
-## Functional enrichment analysis
+### Functional enrichment analysis
 
 Functional enrichment analysis was performed on the differentially expressed genes using the g:GOSt R package for g:Profiler (version e104_eg51_p15_3922dba) with g:SCS multiple testing correction method applying significance threshold of 0.05 (Raudvere et al., 2019).
 
-## Karyotyping
+### Karyotyping
 
 For each H1 and H9 cell line, 20 GTL-banded metaphases were counted, of which a minimum of four have been analysed and karyotyped.
 
-## Teratoma injections
+### Teratoma injections
 
 Pansio-1, Olônne-18, and Keppel-19 H1 hESCs from in a 10-cm tissue culture dish (~80% confluency) were dislodged in 3 ml of TeSR-E8 (STEMCELL Technologies, 05990) into small clumps by manual scraping using a serological pipette. Small clumps of hESCs were centrifuged and the pellet was resuspended in 50 µl of TeSR-E8, followed by 50 µl of matrigel (Corning) (after thawing on ice). The hESC suspension was kept on ice until injection. Six to 8 weeks old NOD-SCID mice were used for teratoma studies. Briefly, around 100 µl of hESC suspension was injected intra-muscularly into the gastrocnemius. After about 8 weeks, teratoma was observed and extracted from the mouse. Teratoma samples were fixed in zinc formalin overnight at 4 °C before being sent to the Advanced Molecular and Pathology Laboratory (A*STAR, Singapore) for paraffin embedding and sectioning. Tissue slides were stained with haematoxylin and eosin (H&E) and imaged using the Olympus BX-61 Upright microscope. All animal experiments were reviewed and approved ethics and animal care committees (IRB approval: A*STAR IRB 2020–096 & IACUC: 181366 and 221660).
 
-## Fluorescence activated cell sorting and flow cytometry
+### Fluorescence activated cell sorting and flow cytometry
 
 H1 and H9 wild type hESCs and respective Pansio-1, Olônne-18, and Keppel-19 lines targeted with pMIA22 and pMIA10.5-Clover were disassociated with accutase (STEMCELL Technologies, 07922) and resuspended in PBS. Cells positive for Clover were enriched with the BD Aria Fusion sorter at the Flow Cytometry Core, SIgN A*STAR. The wild type hESC were used to set up negative gating on the FITC-channel and positive cells were collected in CloneR media supplemented with penicillin-streptomycin (ThermoFisher Scientific, 15140148). After 24 hr of recovery in CloneR the cells were maintained in mTeSR as described above.
 
 For flow cytometry analysis at 5, 10, and 15 passages after Clover integration, H1 and H9 wild type hESCs and Pansio-1, Olônne-18, and Keppel-19 H1 and H9 lines carrying Clover-transgene were disassociated with accutase and resuspended in PBS. The single cells in PBS were analysed with a BD LSR Fortessa x-20 FACS Analyzer and FlowJo (v10.6.1).
 
-## hESC cardiac differentiation
+### hESC cardiac differentiation
 
 Two days prior to starting differentiation, cells were dissociated using Accutase and seeded as single cells in Geltrex-coated 12-well plates at seeding density between 1 and 1.5x106 cells. Cardiac differentiation was performed following the published protocol by Lian et al., 2013, with modifications as follows. Six µM of CHIR99021 (STEMCELL Technologies, 72054) was added on day 0 and left for 24 hr followed by medium change. On day 3, 5 µM IWP2 (Sigma-Aldrich, I0536) was added using 50/50 mix of new fresh medium and conditioned medium collected from each well and left for 48 hr. Culture medium from day 0 until day 7 was RPMI1640 (HyClone, SH30027.01) plus B-27 serum-free supplement without insulin (Gibco, A1895601). From day 7 and onwards RPMI1640 with B-27 serum-free supplement with insulin (Gibco, 17504044) was used and changed every 2–3 days.
 
-## hESC differentiation to hepatocyte-like cells
+### hESC differentiation to hepatocyte-like cells
 
 hESCs were differentiated into hepatocyte-like cells as described previously (Hannan et al., 2013; Ng et al., 2019), with some modifications. Briefly, hESCs were dissociated into small clumps using RelesR and plated onto gelatin-coated coverslips in a 12-well plate with mTeSR. Two days later, hESCs were induced to differentiate into definitive endoderm (DE) cells in RPMI-1640 medium (Gibco) containing 2% B-27 (Invitrogen), 1% non-essential amino acids (Gibco), 1% GlutaMAX (Gibco) and 50 μM 2-mercaptoethanol (Gibco) (basal differentiation medium), supplemented with 100 ng/ml Activin A (R&D Systems), 3 μM CHIR99021 (Tocris) and 10 μM LY294002 (LC Labs) for the first 3 days (D0 to D3). From D3 to D6, cells were incubated in basal differentiation medium supplemented with 50 ng/ml Activin A to form foregut endoderm cells. From D6 to D10, cells were incubated in basal differentiation medium supplemented with 20 ng/ml BMP4 (Miltenyi Biotec) and 10 ng/ml FGF10 (Miltenyi Biotec) to form hepatic endoderm cells. From D10 to D24, hepatic endoderm cells were incubated in HCM Bulletkit (Lonza) differentiation media supplemented with 30 ng/ml Oncostatin M (Miltenyi Biotec) and 50 ng/ml HGF (Miltenyi Biotec). Differentiation medium was replaced every 2 or 3 days.
 
-## hESC neural induction
+### hESC neural induction
 
 Human ES cells cultured in mTeSR complete medium for 1–2 days were then used for neural induction as published (Li et al., 2011; Wang et al., 2017). Briefly, 20–30% confluent hESC were treated with CHIR99021, SB431542 and Compound E in neural induction media, changed every 2 days; 7 days later, the cells were split 1:3 by Accutase and seeded on matrigel-coated plates. ROCK inhibitor (1254, Tocris) was added (final concentration 10 μM) to the suspension at passaging. Cells were then cultured in neural cell culture medium. These derived cells are neural precursor cells (NPC), which were used for further studies.
 
-## Neuronal differentiation
+### Neuronal differentiation
 
 Spontaneous neuronal differentiation was performed as previously described (Li et al., 2011). Briefly, the derived 2X105 NPCs were seeded on poly-l-lysine (P4707, Sigma) and laminin (L2020, Sigma) coated six-well plates in neural cell culture medium. The next day, the cells were cultured in neuron differentiation medium: DMEM/F12 (11330–032), Neurobasal (21103–049), 1 X N2 (17502–048), 1 X B27 (17504–044), 300 ng/ml cAMP (A9501), 0.2 mM vitamin C (A4544-25), 10 ng/ml BDNF (450-02), 10 ng/ml GDNF (450-10) until day 30.
 
-## Pancreatic β cell differentiation
+### Pancreatic β cell differentiation
 
 Human embryonic stem cells were differentiated to pancreatic β-like cells following a previously published protocol Pagliuca et al., 2014 with slight modifications. hESCs were dissociated into single cells using TrypLE Express (Gibco, 12605–010) for 3 min and 3–4 million cells were seeded at a density of 1 million cells/mL in mTeSR1 (STEMCELL Technologies, 85850) with 10 μM of Y-27632 (STEMCELL Technologies, 72302) into each well of a non-treated six-well plate. Cells were incubated on a shaker at 80 rpm in a humidified incubator at 37 °C with 5% CO2. The next day, the differentiation was initiated and carried out in five stages (S1, S2, S3, S5, and S6) with the media composition listed in Supplementary file 2. Media were changed every other day if the same type of media was required.
 
-## Flow cytometry analysis for pancreatic cells
+### Flow cytometry analysis for pancreatic cells
 
 At D35 of β cell differentiation, hESC-derived β-like cells were dissociated using TrypLE Express for 5 min. The TrypLE Express was then diluted 4 x with 10% FBS in PBS. Single cells were enriched by passing cell suspension through a 40 µm filter. After washing once with PBS, the cells were fixed in 4% PFA for 15 min before blocking in 5% FBS in PBS with 0.1% Triton X-100 (Merck Millipore, 9410). Cells were stained with primary antibody (Supp. File 2) for 1 hr at room temperature, followed by secondary antibody (Supp. File 2) for 1 hr at room temperature. Flow cytometry was performed using the BD FACSymphony analyser. 10,000 events were collected for each sample. FlowJo v10 software was used for analysis.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells on coverslips were fixed in 4% paraformaldehyde (Wako) for 15 min at room temperature, before blocking in 5% donkey serum (EMD Millipore) in PBS with 0.1% Triton X-100 for 1 hr at room temperature. Cells were stained with primary antibody overnight at 4 °C (see Supp. File 2 for antibodies used), or for control slides with blocking buffer. Secondary antibody staining was done with the appropriate AlexaFluor 594 for 1 hr at room temperature. Lastly, cells were stained with DAPI (Sigma-Aldrich, 1:5000) for 20 min at room temperature. Coverslips were mounted onto glass slides using Vectashield (Vector Laboratories). Images were taken using the EVOS M5000 microscope. Light intensity and gain were kept consistent across samples and controls with each antibody.
 
-## High-content imaging (HCI)
+### High-content imaging (HCI)
 
 For high content imaging of Pansio-1, Olônne-18, and Keppel-19 H9 clones were differentiated into neuronal, hepatocyte and cardiac cell types as described above, with minor adjustments. Differentiation to neuronal and hepatic cell types was conducted directly on the HCI 96-well plates (CellCarrier Ultra, PerkingElmer) by seeding undifferentiated cells into the plates and proceeding with differentiation protocol scaled to 96-wells. Differentiation to cardiac cells was conducted as above. Cells at day 14 of the protocol were disassociated and seeded onto the 96-well imaging plates as follows. Cells were incubated with 1 mg/ml Collagenase IV (Worthington Biochemical Corporation, LS004186) for approximately 30 min followed by an approximately 15 min incubation with 1:1 mixture of accutase and trypsin (ThermoFisher, 15400054). Once the cells were disassociated, they were spun down and supernatant was discarded. The cells were resuspended in 80% RPMI1640 with B-27 serum free supplement with insulin and 20% foetal bovine serum (ThermoFisher, 16000044) supplemented with ROCK inhibitor (STEMCELL TECHNOLOGIES, Y-27632) at 5 μM and seeded onto the imaging plates coated with geltrex. 24 hr after seeding the media was changed to normal cardiac media. Each of the clones was plated in six replicate wells for each different lineage.
 
@@ -215,7 +574,7 @@ Blocking and staining for lineage markers was done as described above with minor
 
 HCI was done using a PerkinElmer Opera Phenix confocal imager with a 20 x objective. Sixty-one fields were imaged for each well and the channels Alexa 488, Alexa 594 and HOECHST 33342 were recorded. Image analysis was conducted on PerkinElmer Columbus software. Details of the analysis pipelines used are found in the appendix. The raw HCI images are available on Dryad (https://doi.org/10.5061/dryad.p8cz8w9ww).
 
-## Generation and targeting of inducible GSH cells
+### Generation and targeting of inducible GSH cells
 
 H1 Pansio-1 cells were targeted with pMIA22 and pMIA10.7 constructs. After 48 hr of recovery puromycin (ThermoFisher, A1113803) was added at 1 μg/ml. The cells were selected for approximately 72 hr to ensure removal of untargeted cells. For induction of transgene expression, the cells were cultured with 1 mg/ml doxycycline (MerckMillipore, D5207-1G) for 24 hr before analysis.
 

@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Vaccine hesitancy can limit the benefits of available vaccines in halting the spread of COVID-19 pandemic. Previously published studies paid little attention to Arab countries, which has a population of over 440 million. In this study, we present the results of the first large-scale multinational study that measures vaccine hesitancy among Arab-speaking subjects. An online survey in Arabic was conducted from 14 January 2021 to 29 January 2021. It consisted of 17 questions capturing demographic data, acceptance of COVID-19 vaccine, attitudes toward the need for COVID-19 vaccination and associated health policies, and reasons for vaccination hesitancy. R software v.4.0.2 was used for data analysis and visualization. The survey recruited 36,220 eligible participants (61.1% males, 38.9% females, mean age 32.6 ± 10.8 years) from all the 23 Arab countries and territories (83.4%) and 122 other countries (16.6%). Our analysis shows a significant rate of vaccine hesitancy among Arabs in and outside the Arab region (83% and 81%, respectively). The most cited reasons for hesitancy are concerns about side effects and distrust in health care policies, vaccine expedited production, published studies and vaccine producing companies. We also found that female participants, those who are 30–59 years old, those with no chronic diseases, those with lower level of academic education, and those who do not know the type of vaccine authorized in their countries are more hesitant to receive COVID-19 vaccination. On the other hand, participants who regularly receive the influenza vaccine, health care workers, and those from countries with higher rates of COVID-19 infections showed more vaccination willingness. Interactive representation of our results is posted on our project website at https://mainapp.shinyapps.io/CVHAA . Our results show higher vaccine hesitancy and refusal among Arab subjects, related mainly to distrust and concerns about side effects. Health authorities and Arab scientific community have to transparently address these concerns to improve vaccine acceptance. This study received no funding.
+Background:Vaccine hesitancy can limit the benefits of available vaccines in halting the spread of COVID-19 pandemic. Previously published studies paid little attention to Arab countries, which has a population of over 440 million. In this study, we present the results of the first large-scale multinational study that measures vaccine hesitancy among Arab-speaking subjects.Methods:An online survey in Arabic was conducted from 14 January 2021 to 29 January 2021. It consisted of 17 questions capturing demographic data, acceptance of COVID-19 vaccine, attitudes toward the need for COVID-19 vaccination and associated health policies, and reasons for vaccination hesitancy. R software v.4.0.2 was used for data analysis and visualization.Results:The survey recruited 36,220 eligible participants (61.1% males, 38.9% females, mean age 32.6 ± 10.8 years) from all the 23 Arab countries and territories (83.4%) and 122 other countries (16.6%). Our analysis shows a significant rate of vaccine hesitancy among Arabs in and outside the Arab region (83% and 81%, respectively). The most cited reasons for hesitancy are concerns about side effects and distrust in health care policies, vaccine expedited production, published studies and vaccine producing companies. We also found that female participants, those who are 30–59 years old, those with no chronic diseases, those with lower level of academic education, and those who do not know the type of vaccine authorized in their countries are more hesitant to receive COVID-19 vaccination. On the other hand, participants who regularly receive the influenza vaccine, health care workers, and those from countries with higher rates of COVID-19 infections showed more vaccination willingness. Interactive representation of our results is posted on our project website at https://mainapp.shinyapps.io/CVHAA.Conclusions:Our results show higher vaccine hesitancy and refusal among Arab subjects, related mainly to distrust and concerns about side effects. Health authorities and Arab scientific community have to transparently address these concerns to improve vaccine acceptance.Funding:This study received no funding.
 
 ## Introduction
 
@@ -43,13 +43,368 @@ As for COVID-19 cases and death statistics, we used the COVID19 package v2.3.2 t
 
 ## Results
 
-## Demographics
+### Demographics
 
 Our online survey raw data were downloaded on 29 January 2021; there were 38,485 participants who started filling the survey of whom 36,958 consented and proceeded with the survey. A total of 738 participants reported receiving COVID-19 vaccination before filling the survey and were excluded from further analysis in this report bringing the total respondents who qualify for analysis to 36,220. The participants cover all the 23 Arab countries and territories (n = 30,200, 83.4%) and Arabs who live in 122 other countries (n = 6020, 16.6%). Participants from countries out of the Arab region were clustered into four groups: Europe (N = 3130, 52%), North America (n = 748, 12.4%), Turkey (n = 1630, 27.1%), and others (n = 512, 8.5%).
 
 The mean age was 32.6 years (±10.8). There were more males (n = 22,040, 61.1%) than females (n = 14,180, 38.9%) – Appendix 1—figure 2. Chronic diseases were reported by 5839 participants (16.1%). Previous COVID-19 infection – suspected or confirmed – was reported by 6637 (18.3%) participants; 11,458 (31.6%) other participants were not sure if they had contracted the virus. Among the 4494 participants who reported testing for COVID-19, there were 2792 participants with positive test results (62.1% positivity). Only 908 (2.5%) participants reported annual influenza vaccine, while 28,040 (77.4%) reported never receiving it. More than half of the participants had a bachelor’s degree or higher (22,236, 61.4%). Being a health care worker (HCW) was reported by 5708 participants (15.8%). When asked about the type of vaccine available in their countries, 15,057 (41.6%) did not know the type, while vaccines made in China and the United States were reported by 12,374 and 12,254 participants, respectively. Detailed participant characteristics are shown in Table 1.
 
-## COVID-19 vaccination hesitancy and related factors
+**Table 1.**
+ Characteristics of participants with distribution of COVID-19 vaccine willingness.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variables</th>
+      <th>Levels</th>
+      <th colspan="2">No</th>
+      <th colspan="2">Not sure</th>
+      <th colspan="2">Will wait for others</th>
+      <th colspan="2">Depending on type</th>
+      <th colspan="2">Yes</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Age</td>
+      <td>Below 29</td>
+      <td>5871</td>
+      <td>37.2</td>
+      <td>3607</td>
+      <td>22.9</td>
+      <td>3591</td>
+      <td>22.8</td>
+      <td>899</td>
+      <td>5.7</td>
+      <td>1803</td>
+      <td>11.4</td>
+    </tr>
+    <tr>
+      <td>30–39</td>
+      <td>4939</td>
+      <td>42.7</td>
+      <td>2484</td>
+      <td>21.5</td>
+      <td>2225</td>
+      <td>19.2</td>
+      <td>463</td>
+      <td>4.0</td>
+      <td>1454</td>
+      <td>12.6</td>
+    </tr>
+    <tr>
+      <td>40–49</td>
+      <td>2563</td>
+      <td>43.3</td>
+      <td>1213</td>
+      <td>20.5</td>
+      <td>1156</td>
+      <td>19.5</td>
+      <td>160</td>
+      <td>2.7</td>
+      <td>827</td>
+      <td>14.0</td>
+    </tr>
+    <tr>
+      <td>50–59</td>
+      <td>1009</td>
+      <td>43.9</td>
+      <td>429</td>
+      <td>18.6</td>
+      <td>455</td>
+      <td>19.8</td>
+      <td>72</td>
+      <td>3.1</td>
+      <td>336</td>
+      <td>14.6</td>
+    </tr>
+    <tr>
+      <td>Over 60</td>
+      <td>267</td>
+      <td>40.2</td>
+      <td>123</td>
+      <td>18.5</td>
+      <td>125</td>
+      <td>18.8</td>
+      <td>21</td>
+      <td>3.2</td>
+      <td>128</td>
+      <td>19.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Chronic Diseases</td>
+      <td>No</td>
+      <td>12,390</td>
+      <td>40.8</td>
+      <td>6614</td>
+      <td>21.8</td>
+      <td>6292</td>
+      <td>20.7</td>
+      <td>1368</td>
+      <td>4.5</td>
+      <td>3717</td>
+      <td>12.2</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>2259</td>
+      <td>38.7</td>
+      <td>1242</td>
+      <td>21.3</td>
+      <td>1260</td>
+      <td>21.6</td>
+      <td>247</td>
+      <td>4.2</td>
+      <td>831</td>
+      <td>14.2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Country</td>
+      <td>Arab countries</td>
+      <td>12,534</td>
+      <td>41.5</td>
+      <td>6414</td>
+      <td>21.2</td>
+      <td>6220</td>
+      <td>20.6</td>
+      <td>1464</td>
+      <td>4.8</td>
+      <td>3568</td>
+      <td>11.8</td>
+    </tr>
+    <tr>
+      <td>Other countries</td>
+      <td>2115</td>
+      <td>35.1</td>
+      <td>1442</td>
+      <td>24.0</td>
+      <td>1332</td>
+      <td>22.1</td>
+      <td>151</td>
+      <td>2.5</td>
+      <td>980</td>
+      <td>16.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Academic Education</td>
+      <td>Higher education</td>
+      <td>9128</td>
+      <td>41.1</td>
+      <td>4752</td>
+      <td>21.4</td>
+      <td>4277</td>
+      <td>19.2</td>
+      <td>1027</td>
+      <td>4.6</td>
+      <td>3052</td>
+      <td>13.7</td>
+    </tr>
+    <tr>
+      <td>Lower education</td>
+      <td>5521</td>
+      <td>39.5</td>
+      <td>3104</td>
+      <td>22.2</td>
+      <td>3275</td>
+      <td>23.4</td>
+      <td>588</td>
+      <td>4.2</td>
+      <td>1496</td>
+      <td>10.7</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Had Covid</td>
+      <td>No</td>
+      <td>7147</td>
+      <td>39.4</td>
+      <td>3885</td>
+      <td>21.4</td>
+      <td>3703</td>
+      <td>20.4</td>
+      <td>780</td>
+      <td>4.3</td>
+      <td>2610</td>
+      <td>14.4</td>
+    </tr>
+    <tr>
+      <td>Not sure</td>
+      <td>4445</td>
+      <td>38.8</td>
+      <td>2628</td>
+      <td>22.9</td>
+      <td>2642</td>
+      <td>23.1</td>
+      <td>548</td>
+      <td>4.8</td>
+      <td>1195</td>
+      <td>10.4</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>3057</td>
+      <td>46.1</td>
+      <td>1343</td>
+      <td>20.2</td>
+      <td>1207</td>
+      <td>18.2</td>
+      <td>287</td>
+      <td>4.3</td>
+      <td>743</td>
+      <td>11.2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Job</td>
+      <td>HCW</td>
+      <td>1886</td>
+      <td>33.0</td>
+      <td>1266</td>
+      <td>22.2</td>
+      <td>1034</td>
+      <td>18.1</td>
+      <td>432</td>
+      <td>7.6</td>
+      <td>1090</td>
+      <td>19.1</td>
+    </tr>
+    <tr>
+      <td>Not HCW</td>
+      <td>12,763</td>
+      <td>41.8</td>
+      <td>6590</td>
+      <td>21.6</td>
+      <td>6518</td>
+      <td>21.4</td>
+      <td>1183</td>
+      <td>3.9</td>
+      <td>3458</td>
+      <td>11.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Gender</td>
+      <td>Male</td>
+      <td>8152</td>
+      <td>37.0</td>
+      <td>4625</td>
+      <td>21.0</td>
+      <td>4776</td>
+      <td>21.7</td>
+      <td>1152</td>
+      <td>5.2</td>
+      <td>3335</td>
+      <td>15.1</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>6497</td>
+      <td>45.8</td>
+      <td>3231</td>
+      <td>22.8</td>
+      <td>2776</td>
+      <td>19.6</td>
+      <td>463</td>
+      <td>3.3</td>
+      <td>1213</td>
+      <td>8.6</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Influenza vaccine</td>
+      <td>Yearly</td>
+      <td>166</td>
+      <td>18.3</td>
+      <td>159</td>
+      <td>17.5</td>
+      <td>170</td>
+      <td>18.7</td>
+      <td>62</td>
+      <td>6.8</td>
+      <td>351</td>
+      <td>38.7</td>
+    </tr>
+    <tr>
+      <td>Some years</td>
+      <td>687</td>
+      <td>23.6</td>
+      <td>627</td>
+      <td>21.5</td>
+      <td>678</td>
+      <td>23.3</td>
+      <td>180</td>
+      <td>6.2</td>
+      <td>739</td>
+      <td>25.4</td>
+    </tr>
+    <tr>
+      <td>Rarely</td>
+      <td>1324</td>
+      <td>30.4</td>
+      <td>1019</td>
+      <td>23.4</td>
+      <td>1117</td>
+      <td>25.6</td>
+      <td>228</td>
+      <td>5.2</td>
+      <td>673</td>
+      <td>15.4</td>
+    </tr>
+    <tr>
+      <td>Never</td>
+      <td>12,472</td>
+      <td>44.5</td>
+      <td>6051</td>
+      <td>21.6</td>
+      <td>5587</td>
+      <td>19.9</td>
+      <td>1145</td>
+      <td>4.1</td>
+      <td>2785</td>
+      <td>9.9</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Vaccine type unknown</td>
+      <td>No</td>
+      <td>7937</td>
+      <td>37.5</td>
+      <td>4356</td>
+      <td>20.6</td>
+      <td>4364</td>
+      <td>20.6</td>
+      <td>1141</td>
+      <td>5.4</td>
+      <td>3365</td>
+      <td>15.9</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>6712</td>
+      <td>44.6</td>
+      <td>3500</td>
+      <td>23.2</td>
+      <td>3188</td>
+      <td>21.2</td>
+      <td>474</td>
+      <td>3.1</td>
+      <td>1183</td>
+      <td>7.9</td>
+    </tr>
+  </tbody>
+</table>
+
+### COVID-19 vaccination hesitancy and related factors
 
 When asked about their willingness to receive COVID-19 vaccine if the option is available to them, 4548 (12.6%) of the respondents answered ‘Yes’; 1615 (4.5%) answered ‘Depends on the type of vaccine’; 7552 (20.9%) answered ‘I will wait and see its effects on others’; 7856 (21.7%) answered ‘I am not sure’; and 14,649 (40.4%) chose ‘No’. The first two choices were considered acceptance to receive a vaccine, while the last three were labeled as vaccine hesitancy (Figure 1). Variations in responses were analyzed using different factors as covariates (Figure 2).
 
@@ -59,29 +414,611 @@ When asked about their willingness to receive COVID-19 vaccine if the option is 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/68038/elife-68038-fig2-v2.jpg)
 
-**Figure 2.:** A) country of residence, (B) age, (C) level of academic education, (D) being a health care worker, (E) having a chronic illness, (F) knowing the vaccine type available in participant’s country, (G) having a previous COVID-19 infection, (H) age, and (I) receiving annual influenza vaccine.
-
 Respondents from the Arab Gulf countries (Qatar, Oman, Kuwait, Bahrain, Saudi Arabia, and UAE) plus Libya and Sudan showed the highest willingness for vaccination, while those who showed the least willingness are participants from the west region (Algeria, Tunisia, Mauritania, and Morocco) (Figure 1). Arabic-speaking participants living in North America were more willing to receive vaccination than those in the other three clusters (Figure 1, Table 2).
+
+**Table 2.**
+ List of surveyed countries and the frequency (%) of participants COVID-19 vaccination choices.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th colspan="2">No</th>
+      <th colspan="2">Not sure</th>
+      <th colspan="2">Will wait for others</th>
+      <th colspan="2">Depending on type</th>
+      <th colspan="2">Yes</th>
+      <th>Total</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Algeria</td>
+      <td>1675</td>
+      <td>61.9</td>
+      <td>509</td>
+      <td>18.8</td>
+      <td>343</td>
+      <td>12.7</td>
+      <td>81</td>
+      <td>3.0</td>
+      <td>98</td>
+      <td>3.6</td>
+      <td>2706 (7.5)</td>
+    </tr>
+    <tr>
+      <td>Bahrain</td>
+      <td>40</td>
+      <td>34.8</td>
+      <td>22</td>
+      <td>19.1</td>
+      <td>28</td>
+      <td>24.3</td>
+      <td>6</td>
+      <td>5.2</td>
+      <td>19</td>
+      <td>16.5</td>
+      <td>115 (0.3)</td>
+    </tr>
+    <tr>
+      <td>Egypt</td>
+      <td>1949</td>
+      <td>36.5</td>
+      <td>1166</td>
+      <td>21.8</td>
+      <td>1315</td>
+      <td>24.6</td>
+      <td>480</td>
+      <td>9.0</td>
+      <td>429</td>
+      <td>8.0</td>
+      <td>5339 (14.7)</td>
+    </tr>
+    <tr>
+      <td>Europe</td>
+      <td>1139</td>
+      <td>36.4</td>
+      <td>749</td>
+      <td>23.9</td>
+      <td>677</td>
+      <td>21.6</td>
+      <td>61</td>
+      <td>1.9</td>
+      <td>504</td>
+      <td>16.1</td>
+      <td>586 (1.6)</td>
+    </tr>
+    <tr>
+      <td>Iraq</td>
+      <td>204</td>
+      <td>34.8</td>
+      <td>113</td>
+      <td>19.3</td>
+      <td>163</td>
+      <td>27.8</td>
+      <td>28</td>
+      <td>4.8</td>
+      <td>78</td>
+      <td>13.3</td>
+      <td>7020 (19.4)</td>
+    </tr>
+    <tr>
+      <td>Jordan</td>
+      <td>3032</td>
+      <td>43.2</td>
+      <td>1283</td>
+      <td>18.3</td>
+      <td>1407</td>
+      <td>20.0</td>
+      <td>369</td>
+      <td>5.3</td>
+      <td>929</td>
+      <td>13.2</td>
+      <td>529 (1.5)</td>
+    </tr>
+    <tr>
+      <td>Kuwait</td>
+      <td>168</td>
+      <td>31.8</td>
+      <td>115</td>
+      <td>21.7</td>
+      <td>122</td>
+      <td>23.1</td>
+      <td>7</td>
+      <td>1.3</td>
+      <td>117</td>
+      <td>22.1</td>
+      <td>492 (1.4)</td>
+    </tr>
+    <tr>
+      <td>Lebanon</td>
+      <td>205</td>
+      <td>41.7</td>
+      <td>104</td>
+      <td>21.1</td>
+      <td>110</td>
+      <td>22.4</td>
+      <td>14</td>
+      <td>2.8</td>
+      <td>59</td>
+      <td>12.0</td>
+      <td>229 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Libya</td>
+      <td>65</td>
+      <td>28.4</td>
+      <td>64</td>
+      <td>27.9</td>
+      <td>51</td>
+      <td>22.3</td>
+      <td>11</td>
+      <td>4.8</td>
+      <td>38</td>
+      <td>16.6</td>
+      <td>99 (0.3)</td>
+    </tr>
+    <tr>
+      <td>Mauritania</td>
+      <td>39</td>
+      <td>39.4</td>
+      <td>32</td>
+      <td>32.3</td>
+      <td>17</td>
+      <td>17.2</td>
+      <td>3</td>
+      <td>3.0</td>
+      <td>8</td>
+      <td>8.1</td>
+      <td>3775 (10.4)</td>
+    </tr>
+    <tr>
+      <td>Morocco</td>
+      <td>1750</td>
+      <td>46.4</td>
+      <td>961</td>
+      <td>25.5</td>
+      <td>631</td>
+      <td>16.7</td>
+      <td>135</td>
+      <td>3.6</td>
+      <td>298</td>
+      <td>7.9</td>
+      <td>187 (0.5)</td>
+    </tr>
+    <tr>
+      <td>North America</td>
+      <td>259</td>
+      <td>34.6</td>
+      <td>170</td>
+      <td>22.7</td>
+      <td>142</td>
+      <td>19.0</td>
+      <td>10</td>
+      <td>1.3</td>
+      <td>167</td>
+      <td>22.3</td>
+      <td>53 (0.1)</td>
+    </tr>
+    <tr>
+      <td>Oman</td>
+      <td>66</td>
+      <td>35.3</td>
+      <td>40</td>
+      <td>21.4</td>
+      <td>36</td>
+      <td>19.3</td>
+      <td>7</td>
+      <td>3.7</td>
+      <td>38</td>
+      <td>20.3</td>
+      <td>1624 (4.5)</td>
+    </tr>
+    <tr>
+      <td>Other Arabs</td>
+      <td>18</td>
+      <td>34.0</td>
+      <td>15</td>
+      <td>28.3</td>
+      <td>14</td>
+      <td>26.4</td>
+      <td>3</td>
+      <td>5.7</td>
+      <td>3</td>
+      <td>5.7</td>
+      <td>443 (1.2)</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>183</td>
+      <td>35.7</td>
+      <td>137</td>
+      <td>26.8</td>
+      <td>103</td>
+      <td>20.1</td>
+      <td>15</td>
+      <td>2.9</td>
+      <td>74</td>
+      <td>14.5</td>
+      <td>3588 (9.9)</td>
+    </tr>
+    <tr>
+      <td>Palestine</td>
+      <td>568</td>
+      <td>35.0</td>
+      <td>392</td>
+      <td>24.1</td>
+      <td>336</td>
+      <td>20.7</td>
+      <td>77</td>
+      <td>4.7</td>
+      <td>251</td>
+      <td>15.5</td>
+      <td>313 (0.9)</td>
+    </tr>
+    <tr>
+      <td>Qatar</td>
+      <td>114</td>
+      <td>25.7</td>
+      <td>113</td>
+      <td>25.5</td>
+      <td>89</td>
+      <td>20.1</td>
+      <td>7</td>
+      <td>1.6</td>
+      <td>120</td>
+      <td>27.1</td>
+      <td>1232 (3.4)</td>
+    </tr>
+    <tr>
+      <td>Saudi Arabia</td>
+      <td>1240</td>
+      <td>34.6</td>
+      <td>761</td>
+      <td>21.2</td>
+      <td>822</td>
+      <td>22.9</td>
+      <td>74</td>
+      <td>2.1</td>
+      <td>691</td>
+      <td>19.3</td>
+      <td>665 (1.8)</td>
+    </tr>
+    <tr>
+      <td>Sudan</td>
+      <td>136</td>
+      <td>43.5</td>
+      <td>60</td>
+      <td>19.2</td>
+      <td>50</td>
+      <td>16.0</td>
+      <td>19</td>
+      <td>6.1</td>
+      <td>48</td>
+      <td>15.3</td>
+      <td>979 (2.7)</td>
+    </tr>
+    <tr>
+      <td>Syria</td>
+      <td>504</td>
+      <td>40.9</td>
+      <td>266</td>
+      <td>21.6</td>
+      <td>279</td>
+      <td>22.6</td>
+      <td>51</td>
+      <td>4.1</td>
+      <td>132</td>
+      <td>10.7</td>
+      <td>226 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Tunisia</td>
+      <td>358</td>
+      <td>53.8</td>
+      <td>120</td>
+      <td>18.0</td>
+      <td>125</td>
+      <td>18.8</td>
+      <td>19</td>
+      <td>2.9</td>
+      <td>43</td>
+      <td>6.5</td>
+      <td>3130 (8.6)</td>
+    </tr>
+    <tr>
+      <td>Turkey</td>
+      <td>534</td>
+      <td>32.8</td>
+      <td>386</td>
+      <td>23.7</td>
+      <td>410</td>
+      <td>25.2</td>
+      <td>65</td>
+      <td>4.0</td>
+      <td>235</td>
+      <td>14.4</td>
+      <td>748 (2.1)</td>
+    </tr>
+    <tr>
+      <td>UAE</td>
+      <td>280</td>
+      <td>28.6</td>
+      <td>245</td>
+      <td>25.0</td>
+      <td>246</td>
+      <td>25.1</td>
+      <td>60</td>
+      <td>6.1</td>
+      <td>148</td>
+      <td>15.1</td>
+      <td>1630 (4.5)</td>
+    </tr>
+    <tr>
+      <td>Yemen</td>
+      <td>123</td>
+      <td>54.4</td>
+      <td>33</td>
+      <td>14.6</td>
+      <td>36</td>
+      <td>15.9</td>
+      <td>13</td>
+      <td>5.8</td>
+      <td>21</td>
+      <td>9.3</td>
+      <td>512 (1.4)</td>
+    </tr>
+  </tbody>
+</table>
 
 Several factors (shown in Figure 3, Table 3) were tested in a binomial logistic regression model to examine their correlation with vaccine hesitancy. Univariate and multivariate analyses showed that almost all tested factors were significant predictors for vaccine hesitancy, reflecting the large sample size tested. Odds ratio (OR) showed the stronger effect of the following factors on participants’ hesitance: Never (OR, 4.04) or rarely (OR, 2.69) receiving the influenza vaccine, not knowing the vaccine type available (OR, 1.93), female gender (OR, 1.91), and outside of the health care system (OR, 1.84). Vaccine acceptance in each Arab country was correlated with the number of confirmed COVID-19 cases and deaths using Spearman correlation. It was found out that the number of cases (p=0.0047) but not deaths (p=0.3) correlated significantly with vaccine acceptance (Appendix 1—figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/68038/elife-68038-fig3-v2.jpg)
 
-## Barriers to acceptance
+**Table 3.**
+ Predictors of vaccine hesitancy tested by univariate and multivariate binary logistic regression.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Levels</th>
+      <th>Acceptance</th>
+      <th>Hesitance</th>
+      <th>Univariate</th>
+      <th>Multivariate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>N (%)</td>
+      <td>N (%)</td>
+      <td>OR (95% CI)</td>
+      <td>OR (95% CI)</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>Below 29</td>
+      <td>2702 (17.1)</td>
+      <td>13,069 (82.9)</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>30–39</td>
+      <td>1917 (16.6)</td>
+      <td>9648 (83.4)</td>
+      <td>1.04 (0.98–1.11)</td>
+      <td>1.18 (1.10–1.26)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>40–49</td>
+      <td>987 (16.7)</td>
+      <td>4932 (83.3)</td>
+      <td>1.03 (0.95–1.12)</td>
+      <td>1.14 (1.05–1.24)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>50–59</td>
+      <td>408 (17.7)</td>
+      <td>1893 (82.3)</td>
+      <td>0.96 (0.86–1.08)</td>
+      <td>1.03 (0.91–1.17)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Over 60</td>
+      <td>149 (22.4)</td>
+      <td>515 (77.6)</td>
+      <td>0.71 (0.59–0.86)</td>
+      <td>0.89 (0.73–1.09)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Chronic diseases</td>
+      <td>No</td>
+      <td>5085 (16.7)</td>
+      <td>25,296 (83.3)</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>1078 (18.5)</td>
+      <td>4761 (81.5)</td>
+      <td>0.89 (0.83–0.96)</td>
+      <td>0.91 (0.84–0.99)</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>Arab countries</td>
+      <td>5032 (16.7)</td>
+      <td>25,168 (83.3)</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Other countries</td>
+      <td>1131 (18.8)</td>
+      <td>4889 (81.2)</td>
+      <td>0.86 (0.80–0.93)</td>
+      <td>0.90 (0.84–0.98)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Academic education</td>
+      <td>Higher education</td>
+      <td>4079 (18.3)</td>
+      <td>18,157 (81.7)</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Lower education</td>
+      <td>2084 (14.9)</td>
+      <td>11,900 (85.1)</td>
+      <td>1.28 (1.21–1.36)</td>
+      <td>1.18 (1.11–1.26)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Had COVID</td>
+      <td>No</td>
+      <td>3390 (18.7)</td>
+      <td>14,735 (81.3)</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Not sure</td>
+      <td>1743 (15.2)</td>
+      <td>9715 (84.8)</td>
+      <td>1.28 (1.20–1.37)</td>
+      <td>1.30 (1.22–1.39)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Yes</td>
+      <td>1030 (15.5)</td>
+      <td>5607 (84.5)</td>
+      <td>1.25 (1.16–1.35)</td>
+      <td>1.32 (1.22–1.43)</td>
+    </tr>
+    <tr>
+      <td>Job</td>
+      <td>HCW</td>
+      <td>1522 (26.7)</td>
+      <td>4186 (73.3)</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Not HCW</td>
+      <td>4641 (15.2)</td>
+      <td>25,871 (84.8)</td>
+      <td>2.03 (1.90–2.17)</td>
+      <td>1.82 (1.70–1.96)</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>Male</td>
+      <td>4487 (20.4)</td>
+      <td>17,553 (79.6)</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Female</td>
+      <td>1676 (11.8)</td>
+      <td>12,504 (88.2)</td>
+      <td>1.91 (1.80–2.03)</td>
+      <td>1.90 (1.79–2.03)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Vaccine type unknown</td>
+      <td>No</td>
+      <td>4506 (21.3)</td>
+      <td>16,657 (78.7)</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>1657 (11.0)</td>
+      <td>13,400 (89.0)</td>
+      <td>2.19 (2.06–2.33)</td>
+      <td>1.93 (1.81–2.06)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Annual influenza vaccine</td>
+      <td>Yearly</td>
+      <td>413 (45.5)</td>
+      <td>495 (54.5)</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Some years</td>
+      <td>919 (31.6)</td>
+      <td>1992 (68.4)</td>
+      <td>1.81 (1.55–2.11)</td>
+      <td>1.57 (1.34–1.83)</td>
+    </tr>
+    <tr>
+      <td>Rarely</td>
+      <td>901 (20.7)</td>
+      <td>3460 (79.3)</td>
+      <td>3.20 (2.76–3.72)</td>
+      <td>2.70 (2.31–3.15)</td>
+    </tr>
+    <tr>
+      <td>Never</td>
+      <td>3930 (14.0)</td>
+      <td>24,110 (86.0)</td>
+      <td>5.12 (4.47–5.86)</td>
+      <td>4.08 (3.54–4.70)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Barriers to acceptance
 
 There were 3905 participants who chose acceptance but yet had one or more barrier(s) selected. Of the 29 barriers, the most common responses were ‘I am afraid side effects of the vaccine will develop, other than what has been disclosed’ – 22,235 (61.4%), ‘Not enough time has passed to verify the vaccine’s safety’ – 20,172 (55.7%), ‘The vaccine production has been rushed, making me doubt the credibility of the producing company’ – 16,698 (46.1%), ‘I do not trust the health care policies applied in my country’ – 14,151 (39.1%), and ‘I do not trust the published studies, nor the company producing the vaccine’ – 11,968 (33%) (Figure 4).
 
-## Comparison of participants inside and outside the Arab World
+![Figure 4.](https://cdn.elifesciences.org/articles/68038/elife-68038-fig4-v2.jpg)
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68038/elife-68038-fig4-figsupp1-v2.jpg)
+
+### Comparison of participants inside and outside the Arab World
 
 Participants in the Arab World were slightly more likely to have vaccine hesitancy when compared to those living outside (83.3% vs. 81.2%) (Figure 1). Those living in North America were the least hesitant (76.3%), while those living in Turkey had the highest hesitancy (83.6%). Additionally, participants living in Arab countries were more likely to report ‘I do not trust the health care policies applied in my country’, ‘There are no published studies on the vaccine’, ‘I do not trust the published studies, nor the company producing the vaccine’, ‘No need for the vaccine as rates of viral infection are decreasing’, and ‘No need for the vaccine as most people in my country have already been infected’ (chi-square test, p<0.0001, with difference >5% for all) (supplementary file 2, Figure 4—figure supplement 1).
 
-## Attitudes toward vaccination policies and need
+### Attitudes toward vaccination policies and need
 
 When asked about their opinions regarding suggested vaccination policies, participants’ responses were to let people choose if they want to take it or not (59.5%); to mandate it on populations in which the vaccine was proven to be effective and safe as per clinical studies (13.6%), not sure (10.9%), should not be given to anybody (6.1%); and to give work and transportation privileges to whomever takes the vaccine (3.9%). When asked who needs the vaccine, responses were as follows: whomever – the vaccine was proven to be effective and safe as per clinical studies (35.4%), specific categories of people need it, but they are not the majority (30.5%), I don’t know (24.9%), and no one needs it (9.2%) (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/68038/elife-68038-fig5-v2.jpg)
-
-**Figure 5.:** A) national health policies and (B) selecting individuals who should be vaccinated.
 
 ## Discussion
 
@@ -119,6 +1056,6 @@ Health care workers (HCWs) are at increased risk of acquiring and transmitting C
 
 This study comes with few limitations. Similar to several previous surveys (Lin et al., 2020), participants were recruited through social media. Being an online survey, our study may have under-represented certain groups of individuals, including members of older age groups and those who are not active on social media. We cannot rule out selection bias that might have affected our results. Other high-risk groups such as people with chronic diseases are well represented (n = 5839) or even over-represented (HCW, n = 5708). Our sample size was not pre-planned but was rather arbitrary reflecting a convenience sample. We believe that the large number of participants and the consistency of results in different countries that were geographically close and similar socioeconomically confirm the reliability of our survey.
 
-## Conclusion
+### Conclusion
 
 Our results show high COVID-19 vaccine hesitancy among Arab respondents residing inside and outside the Arab world after millions of people around the world have received the vaccine. The main reasons for hesitancy are concerns about safety and distrust in health care policies, vaccine expedited production, and published studies, with the distrust being notably higher among respondents residing in the Arab countries. Given that the vaccine is being purchased from state expenditure, the high vaccine hesitancy could further compromise the economies of Arab countries in addition to the pandemic health hazard. At the same time, mandating the vaccine is not a desirable choice and could further increase the distrust. With the highly dynamic nature of the pandemic and vaccine production process and the interplay of ever-changing factors that affect vaccine acceptance, our study needs to be replicated at a later time to measure the change in public acceptance. The high proportion of people willing to wait until others have received the vaccine and the unavailability of the preferred vaccine for others show a need to create a uniform definition for vaccine acceptance in the surveys to avoid misestimation.

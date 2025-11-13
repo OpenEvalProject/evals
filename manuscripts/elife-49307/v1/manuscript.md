@@ -40,21 +40,33 @@ Last, our work reveals remarkable differences in the role of Dzip1 and Fam92 in 
 
 ## Results
 
-## Dzip1/Fam92/Cby form a complex at the ciliary transition zone in Drosophila
+### Dzip1/Fam92/Cby form a complex at the ciliary transition zone in Drosophila
 
 We initially identified mouse CBY1 interactors by LAP-Tag affinity purification using IMCD3 cells (murine Inner Medullary Collecting Duct cells) stably expressing CBY1 fused to the EGFP-TEV-S peptide tag (see Materials and methods section). This EGFP-TEV-S tag in N-terminus allows to detect the protein in cells and its purification by a two-step affinity procedure (Torres et al., 2009). Analysis of LAP-CBY1 complex revealed the presence of DZIP1 and FAM92 among 22 identified proteins (see full list in Supplementary file 1), in agreement with recently published data (Li et al., 2016b; Breslow et al., 2018; Wang et al., 2018). DZIP1/1L and FAM92a/b each show a unique ortholog gene in Drosophila, CG13617 and CG6405 respectively (Figure 1—figure supplement 1A), but are absent, like CBY1, from the C. elegans genome. Hereafter, we name CG13617 and CG6405 as Dzip1 and Fam92, respectively. By co-immunoprecipitating Cby-GFP and HA-Dzip1 or HA-Fam92, we demonstrate that Drosophila Dzip1 and Fam92, each interact with Cby (Figure 1—figure supplement 1B–C). Dzip1 or Fam92 do not apparently interact with each other in these co-IP experiments (Figure 1—figure supplement 1D). However, when all three proteins are expressed together, immunoprecipitation of GFP-Dzip1 pulls down both Cby and Fam92, suggesting that all three proteins are present in one complex when co-expressed in mammalian cells (Figure 1—figure supplement 1D).
 
 To identify the subcellular localization of Drosophila Dzip1 and Fam92, we generated transgenic flies expressing Dzip1-GFP or Fam92-GFP under the control of their respective promoters (Figure 1—figure supplement 2). We determined that both dzip1 and fam92 are exclusively expressed in the two kinds of Drosophila ciliated cell types, namely type I sensory neurons and male germ cells (Figures 1 and 2). Type I sensory neurons comprise chordotonal (Ch) and external sensory (ES) neurons, which harbor motile and immotile cilia respectively (Figure 1A) (Gogendeau and Basto, 2010; Jana et al., 2016). Each sensory neuron is enclosed in several support cells forming the sensory organ or scolopidia. Dzip1 and Fam92 decorate the base of the cilia at the tip of the sensory dendrites (labeled with 22C10) (Figure 1B, arrows). By performing, super-resolution 3D structured-illumination microscopy (3D-SIM), we confirmed that Dzip1 and Fam92 co-localize with Cby in sensory neurons (Figure 1C), demonstrating their restricted localization at the ciliary transition zone.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig1-v1.jpg)
+
+**Figure 1.:** (A) Scheme of the two types of sensory organs (or scolopidia) present in the antennae of the Drosophila head. Chordotonal scolopidia are proprioceptors present in the second antennal segment of the Drosophila head and respond to sound vibrations and gravity. Each chordotonal scolopidia is composed of several support cells (gray) and comprise two or three ciliated neurons (red). External sensory organs (or scolopidia) are present under each sensory sensilla of the third antennal segment and react to olfactory and chemical stimuli. In other body parts, ES organs also respond to mechanical stimuli. External sensory scolopidia comprise support cells (gray) and only one ciliated neuron (red). In ciliated sensory neurons, the two centrioles (or proximal and distal basal bodies) stand above each other at the tip of the dendrites. (B) Whole-mount staining of the second and third antennal segment showing neuronal cell bodies and dendrites (22C10), Dzip1-GFP and Fam92-GFP. Dzip1-GFP and Fam92-GFP are present at the tip of the dendrites in each type of neurons. Arrows point both to Dzip1-GFP and Fam92-GFP localization at the tip of the dendrites. (C) 3D-SIM imaging of Ch and ES neurons. Both Drosophila Dzip1 and Fam92 overlap with Cby at the transition zone. Bars = 10 μm for (B); = 0.5 μm for (C).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Phylogenic trees of dzip1 and fam92. dzip1 and fam92 genes are conserved in Drosophila and in protozoa. (B–D) COS-7 or HEK293 cells were transfected with the indicated plasmids and cell lysates were immunoprecipitated with GFP or HA antibodies coupled beads. Both cell lysates (Input) and immunoprecipitates (IP) were detected by western blotting (IB) with GFP, HA or V5 antibodies. Cby-GFP band is indicated by an arrow. (B) Drosophila Fam92 specifically interacts with Drosophila Cby but not with GFP. (C) Drosophila Cby specifically interacts with Drosophila Dzip1 but not with HA epitope. (D) Drosophila Dzip1 specifically interacts with Fam92 only in the presence of Cby. GFP-Dzip1 and GFP-Fam92 are indicated by an arrow.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Scheme of dzip1 locus, transgenic reporter and dzip11 mutant. dzip1::GFP reporter construct comprises upstream regulatory sequences and the entire coding sequence in frame with GFP. In dzip11 mutant, coding sequences from exon1, including the start codon, to exon two were replaced by the white gene using CRISPR/Cas9-induced homologous recombination. Asterisks indicate the presence of two potential start codons. (B) Scheme of the structure of the WT protein or putative truncated proteins produced by the dzip11 mutant gene. At least 649 aa are retained in the putative Dzip11 mutant protein. The first 79 aa of the WT protein including half of the Dzip1 N-ter conserved domain are absent in the putative Dzip11 mutant protein. (C) Scheme of fam92 locus, transgenic reporter and fam92 mutant. fam92::GFP reporter construct contains a GFP coding sequence in frame with the fam92 coding sequence under the control of its own endogenous promoter. fam921 mutant was obtained by CRISPR/Cas9 cleavage, leading to the complete removal of exon two and part of exon three generating a frameshift in the fam92 coding sequence. (D) Scheme of the structure of the WT protein. The truncated protein produced by the Fam921 mutant allele retains 47 aa from the WT protein and 39 aa translated from the frameshifted open reading frame.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig2-v1.jpg)
 
-**Figure 2.:** Drosophila Dzip1 and Fam92 are located at the transition zone during spermatogenesis.(A) Scheme illustrating centriole/basal bodies (BB) behavior during spermatogenesis in male germ cells. In early spermatocytes, two pairs of centrioles (gray) are present in each cell. During spermatocyte maturation, centrioles convert to BB and dock to the plasma membrane while extending a primary like cilium which is entirely decorated with TZ proteins (green and red). In late spermatocytes, the TZ, also described as the primary like cilium, reaches approximatively 500 nm and protrudes at the cell surface. During meiosis, BB with primary like cilia/TZ are internalized, thus retaining the ciliary membrane (yellow) connected to the plasma membrane, hence creating a membrane cap in spermatids. In round spermatid, BB are apposed to the nuclear membrane and the ciliary cap (yellow) connected to the plasma membrane is extended. The ring centriole (green) marks the base of the ciliary cap which is decorated by TZ proteins. At the onset of axoneme elongation, axonemal microtubule nucleation inside the cap extends the ciliary cap/TZ, and as the axoneme grows (black), the ring centriole is pushed away from the basal body. (B–C) Confocal imaging of whole-mount testes showing Dzip1-GFP (B), Fam92-GFP (C), Cby-Tom and Asterless (centrioles). Dzip1 and Fam92 appear together with Cby in early spermatocytes at the tip of centrioles. In elongating spermatids, Drosophila Dzip1 and Fam92 mark the ring centriole (arrows) separating from the BB (asterless, gray). (D) 3D-SIM imaging of male germ cells. Drosophila Dzip1 and Fam92 overlap with Cby in spermatocytes. Plots of the intensity profile of the centrioles along the dotted lines illustrate the overlay between Cby-Tom and Dzip-GFP or Fam92-GFP. Bars = 1 μm.
+**Figure 2.:** (A) Scheme illustrating centriole/basal bodies (BB) behavior during spermatogenesis in male germ cells. In early spermatocytes, two pairs of centrioles (gray) are present in each cell. During spermatocyte maturation, centrioles convert to BB and dock to the plasma membrane while extending a primary like cilium which is entirely decorated with TZ proteins (green and red). In late spermatocytes, the TZ, also described as the primary like cilium, reaches approximatively 500 nm and protrudes at the cell surface. During meiosis, BB with primary like cilia/TZ are internalized, thus retaining the ciliary membrane (yellow) connected to the plasma membrane, hence creating a membrane cap in spermatids. In round spermatid, BB are apposed to the nuclear membrane and the ciliary cap (yellow) connected to the plasma membrane is extended. The ring centriole (green) marks the base of the ciliary cap which is decorated by TZ proteins. At the onset of axoneme elongation, axonemal microtubule nucleation inside the cap extends the ciliary cap/TZ, and as the axoneme grows (black), the ring centriole is pushed away from the basal body. (B–C) Confocal imaging of whole-mount testes showing Dzip1-GFP (B), Fam92-GFP (C), Cby-Tom and Asterless (centrioles). Dzip1 and Fam92 appear together with Cby in early spermatocytes at the tip of centrioles. In elongating spermatids, Drosophila Dzip1 and Fam92 mark the ring centriole (arrows) separating from the BB (asterless, gray). (D) 3D-SIM imaging of male germ cells. Drosophila Dzip1 and Fam92 overlap with Cby in spermatocytes. Plots of the intensity profile of the centrioles along the dotted lines illustrate the overlay between Cby-Tom and Dzip-GFP or Fam92-GFP. Bars = 1 μm.
 
 In the male germline, Dzip1 and Fam92 appear first in spermatocytes (Figure 2) at the distal end of centrioles. In spermatocytes, centrioles have a specific behavior as both mother and daughter centrioles of each pair elongate and dock to the plasma membrane. All four basal bodies (BB) extend a TZ, also described as a primary cilium-like structure (Figure 2A) (Pasmans and Tates, 1971; Riparbelli et al., 2012; Gottardo et al., 2013; Vieillard et al., 2016). Subsequently, during meiosis, all four basal bodies are engulfed inside the cytoplasm, together with the primary like cilium which hence creates a ciliary cap that ensheaths each basal body distal end. After meiosis and at the onset of axoneme elongation, the ciliary cap is remodeled and a distinct domain, the ring centriole, appears at its base (Vieillard et al., 2016; Basiri et al., 2014; Fabian and Brill, 2012). The axoneme grows inside the ciliary cap, which concomitantly migrates, extruding the nascent axoneme out in the cytoplasm (Figure 2A) (Pasmans and Tates, 1971; Riparbelli et al., 2013; Gottardo et al., 2013). We observed that Dzip1, Fam92 and Cby all localize at the centriolar distal ends in early spermatocytes (Figure 2B–C). During centriolar/BB maturation, as the ciliary cap grows, Dzip1 and Fam92 localizations are extended and overlap with Cby, as revealed by 3D-SIM observations (Figure 2D). In spermatids, when the TZ migrates away from the basal body, we observed that Dzip1 and Fam92 strongly accumulate with Cby at the ring centriole (Figure 2B–C, arrows).
 
 Together, these results strongly indicate that Dzip1/Fam92/Cby interact at the ciliary transition zone.
 
-## Dzip1 and Fam92 are required for cilia and flagella formation in Drosophila
+### Dzip1 and Fam92 are required for cilia and flagella formation in Drosophila
 
 To determine the roles of the Dzip1/Fam92 module in TZ assembly or function, we generated two deletion alleles of dzip1 or fam92 (Figure 1—figure supplement 2 and Materials and method section). In the dzip11 allele, the 65 N-ter codons (including start codon) were deleted and replaced by a 3 kb insertion including the mini-white gene (Figure 1—figure supplement 2). In fam921, exon two and part of exon three were removed (294 bp, Figure 1—figure supplement 2), leading to the deletion of 81 aa and a frameshift with several stop codons in the remaining downstream sequence, leaving only 47 aa of the WT protein and 39 amino acids of the −1 frameshifted open reading frame.
 
@@ -62,7 +74,11 @@ dzip11 and fam921 flies are viable but show typical behavioral defects associate
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig3-v1.jpg)
 
-**Figure 3.:** Drosophila sensory cilia.(A) Quantification by bang assay of geotaxis response of fam92 flies compared to control or rescued flies. The percentage of flies that reach a defined level in the tube (0–2, 2–4, 4–6, 6–8) is represented. 1fam92 flies are unable to climb along the tube compared to control flies. This defect is partially rescued by adding two copies of 1fam92::GFP transgene (fam92 n = 61, 1/+fam92 n = 63, 1/fam921rescue n = 68). (B) EM analysis of cross sections of antennal Chordotonal (Ch) neurons. Whereas two neurons/cilia can be observed in each control scolopidia, cilia are almost completely absent in dzip1 scolopidia (arrowheads). In 1fam92, reduced number of cilia are observed on several Ch neurons (arrows). (1C) Ch neurons cilia ultrastructure of fam92 antennae, showing reduced number of microtubule doublets (asterisks) and/or accumulation of dense material (arrows) underneath the ciliary membrane and deformation of the membrane (dot). Similar defects are also observed on cross sections of the TZ (lower panels). Note that the linkers connecting the axoneme to the membrane are still present (arrowheads). (1D) Serial sections of the basal body-transition zone region of Ch neurons in dzip1 compared to control, from the basal body (proximal, lower panels) to the TZ (distal, upper panels). Whereas doublet microtubules are present and symmetrically organized at the basal body level (arrows, lower panels), they fail to elongate along the transition zone which is incompletely assembled. (1E) Longitudinal sections of dzip1 showing basal body with aberrant TZ compared to control (arrows). Membrane bulges (arrowhead) along the aberrant 1dzip1 TZ can also be detected. (1F) Quantifications of the cilium defects observed in scolopidia.
+**Figure 3.:** (A) Quantification by bang assay of geotaxis response of fam921 flies compared to control or rescued flies. The percentage of flies that reach a defined level in the tube (0–2, 2–4, 4–6, 6–8) is represented. fam921 flies are unable to climb along the tube compared to control flies. This defect is partially rescued by adding two copies of fam92::GFP transgene (fam921/+ n = 61, fam921/fam921 n = 63, rescue n = 68). (B) EM analysis of cross sections of antennal Chordotonal (Ch) neurons. Whereas two neurons/cilia can be observed in each control scolopidia, cilia are almost completely absent in dzip11 scolopidia (arrowheads). In fam921, reduced number of cilia are observed on several Ch neurons (arrows). (C) Ch neurons cilia ultrastructure of fam921 antennae, showing reduced number of microtubule doublets (asterisks) and/or accumulation of dense material (arrows) underneath the ciliary membrane and deformation of the membrane (dot). Similar defects are also observed on cross sections of the TZ (lower panels). Note that the linkers connecting the axoneme to the membrane are still present (arrowheads). (D) Serial sections of the basal body-transition zone region of Ch neurons in dzip11 compared to control, from the basal body (proximal, lower panels) to the TZ (distal, upper panels). Whereas doublet microtubules are present and symmetrically organized at the basal body level (arrows, lower panels), they fail to elongate along the transition zone which is incompletely assembled. (E) Longitudinal sections of dzip11 showing basal body with aberrant TZ compared to control (arrows). Membrane bulges (arrowhead) along the aberrant dzip11 TZ can also be detected. (F) Quantifications of the cilium defects observed in scolopidia.
+
+![Video 1.](https://cdn.elifesciences.org/articles/49307/elife-49307-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/49307/elife-49307-video2.mp4.jpg)
 
 To determine the impact of Dzip1 or Fam92 loss on cilia assembly, we performed ultra-structural analysis by transmission electron microscopy (EM). Strikingly, we observed that cilia were essentially absent in dzip11 antennal chordotonal organs, but were still present in fam921 antennae (Figure 3B and F), in agreement with their milder geotaxis defect behavior. In fam921 flies, 25% of scolopidia (total observed n = 54) showed reduced cilia number (one or no cilia). In addition, defects in axonemal structure were occasionally observed, such as lack of microtubule doublets (Figure 3C, asterisks, 6%), excess accumulation of material beneath the ciliary membrane (arrows) and deformation of the membrane (Figure 3C, upper panel, dot, 4%). Most TZ sections showed normal ultrastructure, but a few (6%) showed incomplete radial symmetry and accumulating material as observed for cilia. Linkers connecting the axoneme to the membrane could still be observed (Figure 3C, arrowhead, lower panel). Transition zones were completely disorganized in dzip11 antennae as revealed by serial-cross and longitudinal sections (Figure 3D–E) and no more axoneme-to-membrane linkers could be observed. Basal bodies were normally present at the dendrite distal tip (Figure 3D, lower panel), but we observed a rapid disorganization of the axoneme, with its complete abrogation a few microns above the basal body (Figure 3D–E).
 
@@ -70,11 +86,27 @@ Hence, these observations demonstrate that loss of Dzip1 or Fam92 affects TZ ass
 
 To address the function of Dzip1 and Fam92 in sperm flagellum assembly, we first investigated male fertility. We observed a strong reduction of the fertility of fam921 males compared to controls. This defect is restored by expressing Fam92-GFP (Figure 4A). Because dzip11 mutant flies are severely uncoordinated, their fertility could not be tested. However, dzip11 testes showed a marked dispersion of the nuclei along the cysts and, as a consequence, altered migration of sperm individualization complexes (Figure 4B and Figure 4—figure supplement 1A). Nuclear dispersion is also observed, to a lesser extent, in fam921 testes (Figure 4B and Figure 4—figure supplement 1A). One possible origin of nuclei dispersion is defective axonemal elongation (Vieillard et al., 2016; Soulavie et al., 2014) and EM analysis confirmed that axonemes were affected in fam921 cells (Figure 4D, 125/448 broken axonemes, 25/448 missing central pair, 52/448 missing axoneme). As well, in dzip11 or dzip11/Df mutant testes, marked axonemal defects could be observed. In dzip11 testes, we observed 6/126 broken axonemes, 1/126 missing central pair, 1/126 missing axonemes (Figure 4C). More severe defects were observed in very young dzip11/Df spermatid cysts, with up to 60% of spermatids with missing or broken axonemes (Figure 4—figure supplement 1B–C). However, in older cysts, the number of spermatids/cyst was much reduced compared to control (mean = 44 spermatids/cyst compared to control = 63.4), but almost all remaining elongated spermatids showed normal axonemes (Figure 4—figure supplement 1B). These observations suggest that young spermatids with severe axonemal defects fail to elongate and are not observed in cross sections of older spermatid cysts.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig4-v1.jpg)
+
+**Figure 4.:** (A) Fertility assays of fam921 males showing severe reduction of fertility in fam921 or fam921/Df compared to control or rescued flies (fam921/+ n = 18; fam921/fam921 n = 10; rescue n = 15; fam921/Df n = 15; Df/+ n = 16) ****, p<0.0001; ns, p>0,05. (B) Confocal analysis of whole mount testes of control, dzip11, dzip11/Df, fam921 and rescued genotypes stained for nucleus (Hoechst, cyan) and actin cones (phalloidin, red). Nuclei are dispersed in mutant cysts compared to controls, which could reflect axonemal elongation defects. As a consequence, actin cones required for spermatid individualization are mislocalized. Axoneme elongation and spermatid individualization are normal in rescued flies. Bars = 10 μm. (C) EM analysis of cross sections of axoneme of round spermatid. In dzip11, flagella ultrastructure is altered with missing microtubule doublets (arrows) or central pair (asterisks). (D) In fam921 mutant spermatids, most axonemes show altered ultrastructure, with missing microtubule central pairs (asterisks) or doublets (arrows), broken symmetry with each part of the axoneme being relocated along the mitochondria (M, arrowheads).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Confocal analysis of whole mount testes of control, dzip11/Df, and fam921 showing nuclei dispersion (Hoechst) which is stronger in dzip11/Df than fam921. Magnified view in boxes were taken from the region marked with an asterisk. Bars = 50 μm and 10 μm respectively for upper and lower panel. (B) EM observations of testis cross sections. In control and fam921 cysts, 63 or 64 spermatids are observed in each cysts, whereas a reduced number of spermatid/cysts is observed in older dzip11/Df cysts (upper panel) compared to very early cysts (lower panel). Note that mitochondria are misshaped with apparent cytoplasmic inclusions. (C) Axonemal defects are present in dzip11/Df and fam921 cysts. In dzip11/Df, more defects are observed in young cysts compared to old cysts.
+
 Taken together, these results demonstrate that Fam92 and Dzip1 are necessary at the ciliary TZ for cilia formation both in sensory neurons and male germ cells.
 
-## Dzip1 and Fam92 form a strictly ordered functional module with Cby
+### Dzip1 and Fam92 form a strictly ordered functional module with Cby
 
 To determine the functional hierarchy between Dzip1, Fam92 and Cby, we analyzed their respective localization in dzip11 or fam921 or previously described cby1 mutants (Figure 5 and Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig5-v1.jpg)
+
+**Figure 5.:** (A) Cby-Tom is present at the tip of the centrioles in control spermatocytes but strongly reduced in dzip11/Df (arrows) and can even be lost at one centriole of the pair (arrowhead), but in a few situations (2.3% see D quantifications below), Cby-Tom domain is extended (asterisk). In fam921 mutant, Cby-Tom is completely lost at the tip of the spermatocyte centrioles (arrowheads). (B) Fam92-GFP is reduced at both centrioles of the pair in dzip11/Df (arrows) compared to control and completely lost at the tip of the centrioles (arrowhead) in cby1 mutants. (C) Dzip1-GFP is strikingly expanded in a few cby1 spermatocyte centrioles (arrow, 4.4% see quantifications in D) and is reduced at the tip of both centrioles in fam921 testes (arrows). Bars = 5 μm. (D) Quantifications of the distribution of Dzip1-GFP, Fam92-GFP and Cby-Tom in the different mutant contexts. ****, p<0.0001; ***, p<0.001; ns, p>0,05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Confocal analysis of whole mount second antennal segment from dzip11/Df, fam921 or cby1 mutants. Actin staining (phalloidin) reveals scolopale rods that enclose cilia of chordotonal neurons. (A) Whereas Cby-Tom is located at the transition zone at the proximal region of the the scolopidia (phalloidin), it is strongly reduced in dzip11/Df and completely lost in fam921. (B) Fam92-GFP is strongly reduced at the transition zone in dzip11/Df and completely lost in cby1 antennae. (C) Localization of Dzip1-GFP is only slightly affected in fam921. To facilitate visualization of fluorescent signal intensity, GFP or Tomato signals were presented using a pixel intensity heat map with corresponding intensity values presented on the right of each panel. Bars = 5 μm.
 
 Cby-Tom is almost completely lost from ciliary TZ in dzip11/Df sensory neurons (Figure 5—figure supplement 1A). In spermatocytes, Cby-Tom signal is strongly reduced at the tip of centrioles (Figure 5A,D) but, in rare occasions, expanded at one centriole of the pair (asterisk, 2%). The amount of Fam92-GFP is severely reduced in dzip11/Df sensory cilia base (Figure 5—figure supplement 1B) and in spermatocytes (Figure 5B,D, arrows). Altogether, these observations indicate that Dzip1 is required at the basal body/TZ to recruit or stabilize both Cby and Fam92.
 
@@ -82,9 +114,21 @@ In fam921 mutant flies, Dzip1-GFP is slightly reduced at the distal tip of basal
 
 These observations establish a functional hierarchy for Dzip1, Fam92 and Cby: Dzip1 is required to recruit or stabilize both Fam92 and Cby at centrioles, but does not depend on Fam92 or Cby for its targeting to centrioles, the latter only restricting Dzip1 to the proximal TZ. Conversely, Fam92 and Cby mutually depend on each other to localize at the TZ.
 
-## Dzip1 and Fam92 restrict Cep290 to the proximal TZ
+### Dzip1 and Fam92 restrict Cep290 to the proximal TZ
 
 To understand how Dzip1 and Fam92 organize the ciliary base, we investigated their functional relationships with other core TZ components. We first investigated the behavior of Mks1, a component of the core conserved MKS complex (Weatherbee et al., 2009). In Drosophila, Mks1 is required to assemble the MKS complex, but removal of MKS components leads to only very mild defects of cilia assembly (Vieillard et al., 2016; Pratt et al., 2016). In dzip11/Df and fam921 mutant flies, Mks1-GFP is lost or reduced at the TZ in both ciliated tissues (Figure 6A, arrows, and Figure 6—figure supplement 1A). Dzip1 and Fam92 are hence important for the recruitment or stabilization of the MKS module at the TZ.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig6-v1.jpg)
+
+**Figure 6.:** (A) In spermatocytes, Mks1-GFP is severely reduced at the ciliary cap or lost in dzip11/Df and fam921 (arrows, quantifications on right graph). Cep290-GFP domain is expanded in dzip11/Df (arrows), but less affected in fam921 (quantifications on right graph). (B) Cep290-GFP is expanded in chordotonal cilia of dzip11/Df or fam921 antennae (arrows). (C) Fam92-GFP and Dzip1-GFP are strongly reduced (arrows) or lost (arrowheads) at the tip of the centrioles in cep2900153-G4 spermatocytes (quantifications are illustrated on the graphs). ****, p<0.0001; *, p<0.01; ns, p>0.05. Bars = 5 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) In dzip11/Df, Mks1-GFP is strongly reduced at the transition zone at the base of the scolopidia (phalloidin) and slightly reduced in fam921. (B) Dzip1-GFP and Fam92-GFP are completely lost at the TZ in chordotonal cilia in cep2900153-G4. To facilitate visualization of fluorescent signal intensity, GFP or Tomato signals were presented using a pixel intensity heat map with corresponding intensity values presented on the right of each panel. Bars = 5 μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) In control spermatocytes, nuclear clusters are clearly observed (arrow). In cep2900153-G4, no nuclear clusters are detected and all nuclei are dispersed along the cyst indicating strong defects in axoneme elongation. This phenotype is reverted in rescued flies (arrow). (B) Cep290-GFP fusion protein localization at the transition zone in cep2900153-G4 at the tip of the centriole (γ-tubulin) in spermatocytes. Bars = 50 μm (A); = 5 μm (B). (C) Whole mount testes expressing CG6652-GFP and labeled with anti-Asterless antibody. At lower magnification left, CG6652-GFP is detectable mostly along spermatid tails. At higher magnification, CG6652-GFP is observed at the tip of centrioles in spermatocytes (arrowhead) and along the flagella in early (short arrow) and late (long arrow) elongated spermatids. Scale bar = 50 μm. (D) In sas4s2214 mutant testes with no centrioles, spermatids elongate but do not exhibit any axonemes (Basto et al., 2006) and CG6652-GFP is not detected compared to the control situation where CG6652-GFP decorates the entire axoneme (arrow). Scale bar = 10 μm.
 
 Cep290 is a core conserved TZ component which plays a prominent role in TZ assembly in many organisms, including Drosophila (Craige et al., 2010; Rachel et al., 2015; Li et al., 2016a; Basiri et al., 2014). In flies, Cep290 is located at the base of the TZ in sensory neurons and is a critical component of the migrating ring centriole during spermatogenesis (Basiri et al., 2014). In the absence of Dzip1, besides a small but significant reduction of Cep290-GFP on spermatocyte centrioles, we observed striking Cep290-GFP expanded domains, both in spermatocytes and in Ch neurons (Figure 6A–B, arrows). Around 13% of centrioles in spermatocytes and a majority in antennae showed an expanded Cep290-GFP domain (Figure 6A–B). In fam921 mutants, we also observed a few Cep290-GFP expanded domains in spermatocytes and antennae, but with no significant difference in overall Cep290-GFP intensity (Figure 6A–B, arrows).
 
@@ -92,13 +136,13 @@ To further understand the relationships between Cep290, Dzip1 and Fam92, we took
 
 These observations demonstrate that Cep290 is required during TZ assembly to recruit Dzip1 and Fam92, which in turn restrict Cep290 scaffolding to the proximal part of the TZ.
 
-## Dzip1 and Fam92 facilitate basal body docking to the plasma membrane in spermatocytes
+### Dzip1 and Fam92 facilitate basal body docking to the plasma membrane in spermatocytes
 
 Defects in BB anchoring to the plasma membrane in spermatocytes lead to aberrant growth of axonemal microtubules (Vieillard et al., 2016). We used the specific axonemal marker CG6652-GFP that only labels axonemal microtubules in flies (Figure 6—figure supplement 2C–D). With this marker, we observed aberrant growth of axonemal microtubules in spermatocytes, with graded severities increasing from fam921, dzip11 to cep2900153-G4 mutant flies (Figure 7A–B). 30% of centrioles showed CG6652 extensions in fam921 testes, 34% in dzip11/Df and 76% in cep2900153-G4. More strikingly, whereas 68% of the centriole pairs present extensions from both centrioles in cep2900153-G4 spermatocytes, we observed that in fam921 testes, 96% of the centriole pairs present microtubule extensions on only one centriole. This asymmetric penetrance of the phenotype is related to centriole age. Indeed, among 24 centriole pairs for which mother and daughter identities could be unequivocally assigned, 19 daughter centrioles (79%) and only five mother centrioles (21%) were affected. As well, in dzip11/Df testes, among 40 centriole pairs, we found 30 daughter centrioles (75%) and 10 mother centrioles (25%) affected by the absence of Dzip1 (Figure 7A–B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/49307/elife-49307-fig7-v1.jpg)
 
-**Figure 7.:** Drosophila spermatogenesis.(A) Confocal imaging of whole-mount testes showing aberrant extensions of axonemes labeled by CG6652-GFP in fam92 and 1, dzip11cep290 spermatocytes. Asterisks point to the centriole in each pair that can be unambiguously assigned as the daughter. Bar = 5 μm (0153-G4B) Quantifications of the penetrance of CG6652-GFP labeled aberrant axonemes. Schemes representing the different classes that were quantified in the table: (i) two centrioles of the pair are affected; (ii) only one centriole of the pair is affected, either the daughter* or the mother**. (C) EM analysis of cross and longitudinal sections of centrioles in spermatocytes. In dzip1, centriole docking is impaired with partial docking of the centriole (arrowhead) or docking to the plasma membrane of only one centriole of the pair (arrow). Centrioles present an altered/irregular cap, compared with control (asterisk). In 1fam92, undocked centrioles are also observed in spermatocytes and show irregular distal end (asterisk) or microtubules extending from the tip (arrow). (1D) Scheme of the consequences of dzip1 and fam92 loss of function on basal body and cilium assembly in Drosophila ciliated tissues. Whereas basal body anchoring and TZ assembly is affected in male germ cells, only TZ and cilium assembly is affected in sensory cilia. In addition, Cep290-GFP is systematically expanded in dzip1 mutant and occasionally expanded in fam92 mutant chordotonal neurons. The scheme on the right summarizes the functional interactions observed between Dzip1, Cby, Fam92 and Cep290. Red arrows are inhibitory interactions and green arrows define positive interactions.
+**Figure 7.:** (A) Confocal imaging of whole-mount testes showing aberrant extensions of axonemes labeled by CG6652-GFP in fam921, dzip11 and cep2900153-G4 spermatocytes. Asterisks point to the centriole in each pair that can be unambiguously assigned as the daughter. Bar = 5 μm (B) Quantifications of the penetrance of CG6652-GFP labeled aberrant axonemes. Schemes representing the different classes that were quantified in the table: (i) two centrioles of the pair are affected; (ii) only one centriole of the pair is affected, either the daughter* or the mother**. (C) EM analysis of cross and longitudinal sections of centrioles in spermatocytes. In dzip11, centriole docking is impaired with partial docking of the centriole (arrowhead) or docking to the plasma membrane of only one centriole of the pair (arrow). Centrioles present an altered/irregular cap, compared with control (asterisk). In fam921, undocked centrioles are also observed in spermatocytes and show irregular distal end (asterisk) or microtubules extending from the tip (arrow). (D) Scheme of the consequences of dzip1 and fam92 loss of function on basal body and cilium assembly in Drosophila ciliated tissues. Whereas basal body anchoring and TZ assembly is affected in male germ cells, only TZ and cilium assembly is affected in sensory cilia. In addition, Cep290-GFP is systematically expanded in dzip1 mutant and occasionally expanded in fam92 mutant chordotonal neurons. The scheme on the right summarizes the functional interactions observed between Dzip1, Cby, Fam92 and Cep290. Red arrows are inhibitory interactions and green arrows define positive interactions.
 
 We analyzed the ultrastructure of the centrioles and primary like cilium in the initial stages of elongation (Figure 7C). We observed irregular distal end (asterisk) of centrioles in dzip11 testes at young spermatocytes stages before docking (upper panel). Whereas centrioles dock in polar spermatocytes before reaching their full size in control testes, undocked centrioles were observed in dzip11. Either both centrioles of the pair were undocked or partially docked (n = 2, lower panel) (Figure 7C, arrowhead) or only one centriole of the pair, the mother, was docked (n = 3) (Figure 7C, arrow). These results show that Dzip1 is required to cap the centriole distal end and foster its anchoring to the plasma membrane. As well, we observed undocked centrioles in fam921 mutant spermatocytes, with irregular distal end (asterisk) or with microtubules extending from the distal end (Figure 7C, arrow), illustrating the role of Fam92 in controlling centriolar distal growth and docking to the plasma membrane.
 
@@ -108,7 +152,7 @@ Altogether, these observations demonstrate that Dzip1 and Fam92 are required for
 
 Our work establishes the functional hierarchy of Dzip1, Fam92 and Cby, which thus define an intrinsic transition zone module for the initiation of ciliogenesis in Drosophila. Dzip1 is required to recruit Fam92 and Cby at the basal body distal end, allowing proper TZ assembly. Dzip1 and Fam92 act downstream of the core TZ protein Cep290 but also regulate its accumulation at the distal basal body. Our work sheds light on tissue specific variations in the initiation of ciliogenesis in the two Drosophila ciliated tissues. In testes, basal body docking strictly depends on the integrity of Dzip1 and Fam92. However, in sensory neurons alterations of the latter complex affect only TZ assembly and cilia formation but not BB docking. Last, our work demonstrates that Dzip1 and Fam92 control the distal elongation of basal bodies and their docking to the plasma membrane, which thus regulate the onset and proper elongation of axonemal microtubules in Drosophila male germ cells.
 
-## Conservation of TZ assembly pathways in eukaryotes
+### Conservation of TZ assembly pathways in eukaryotes
 
 In vertebrates, two orthologs have been described for Dzip1 and Fam92 and three for Cby. DZIP1, DZIP1L, FAM92a and b also interact with CBY1 in vertebrates (Wang et al., 2018; Breslow et al., 2017; Ye et al., 2014) indicating a conservation of the interacting capacities of the family members during evolution. The precise hierarchy between members of the complex has not been established in mammals, but depletion of CBY1 prevents the recruitment of FAM92a/b to the centriole (Li et al., 2016b) and DZIP1L was shown to act upstream of CBY1 (Wang et al., 2018; Keller et al., 2009).
 
@@ -116,17 +160,17 @@ In vertebrates, mutations in members of this module lead to ciliogenesis defects
 
 Despite the conserved role of Dzip1, Cby and Fam92 in TZ and cilia assembly from Drosophila to humans, no homologs could be detected in the genomes of C. elegans. This could be linked to the diversification of cilia function, with both motile and immotile cilia being present from Drosophila to humans, in contrast to C. elegans, where only one subtype of cilia that are immotile is found. Another possible explanation could be that DZIP1/FAM92/CBY are associated with specific signaling or developmental functions in animals that still need to be understood.
 
-## Tissue specific functional properties of the TZ proteins in BB docking
+### Tissue specific functional properties of the TZ proteins in BB docking
 
 This work emphasizes the essential role of Dzip1 and Fam92 in building the ciliary transition zone in the two types of ciliated tissues of Drosophila. Strikingly, it also reveals tissue specific function of these proteins in priming basal body/membrane docking in Drosophila testes. This reveals intrinsic differences in the mechanisms that link basal body to membranes in Drosophila ciliated tissues. In mammals, basal body docking requires transition fibers built from the distal appendages on the mother centriole prior to docking (Wei et al., 2015). In Drosophila, distal appendages have not been observed on centrioles, but structures similar to transition fibers are described at the base of sensory cilia (Ma and Jarman, 2011; Vieillard et al., 2016), whereas only scarce links could be observed in male germ cells (Gottardo et al., 2018; Roque et al., 2018). These differences could explain why destabilization of the TZ leads to basal body anchoring defects in spermatocytes, but not in sensory neurons. This structural characteristic of the spermatocyte TZ is likely to be related to its specific functional properties. Indeed, whereas the TZ is stably built at the ciliary base in sensory neurons, it shows a dynamic behavior during sperm flagella extension, separating from the basal body and migrating along the growing end of the axoneme (Basiri et al., 2014; Avidor-Reiss et al., 2017; Baker et al., 2004; Wei et al., 2008). In addition, in spermatocytes, basal bodies have a dynamic behavior, being first docked at the plasma membrane and next internalized during meiosis (Pasmans and Tates, 1971; Fabian and Brill, 2012). This could induce mechanical constraints on basal bodies that would increase their sensitivity to TZ disruption. In agreement with this hypothesis, when TZ maturation was challenged by modulating membrane phospholipids (Gupta et al., 2018), BB were released from the plasma membrane during meiosis, but their initial docking was not impaired. However, we observed by EM, that BB fail to initially dock in significant occurrences (8 among 13) in dzip11 and fam921 mutant spermatocytes, indicating that Dzip1 and Fam92 are at least involved in the initial steps of BB docking. Previous observations of another strong hypomorphic cep290mecH allele showed docked basal bodies in spermatocytes and spermatids (Basiri et al., 2014). In cep2900153-G4 mutant, we did not quantify the number of docked versus undocked basal bodies in spermatocytes, but we observed up to 76% of aberrant axonemal growth, suggesting that basal body to membrane attachment is compromised in this mutant.
 
 Differences in the organization of the ciliary base associated with variations in the distribution and function of several centriolar and TZ proteins have been documented in Drosophila ciliated cells (Jana et al., 2018). However, none of these identified differences help to explain the behavioral properties of BB docking and TZ dynamics that we have identified in the two ciliated Drosophila tissues. Hence, additional screens for specific factors of basal-body docking or TZ assembly either in sensory neurons or male germ cells need to be designed.
 
-## Mother and daughter centriole asymmetry in ciliogenesis
+### Mother and daughter centriole asymmetry in ciliogenesis
 
 In all our observations, there is a striking phenotypic difference between the mother and daughter centrioles in spermatocytes. In all mutants examined (i.e. dzip1, fam92 and cby) we observed a more penetrant defect on the daughter centriole than the mother. Thus, although the 2 centrioles of each pair are able to form cilia, the daughter centriole appears more sensitive to transition zone perturbations. We do not have molecular explanations for these intrinsic differences of mother and daughter centrioles in spermatocytes. In Drosophila sensory neurons, centrobin plays a critical role in maintaining the daughter centriole fate, precluding its capacity to build a cilium (Gottardo et al., 2015). In sperm cells, centrobin is required for the formation of the C tubule (Reina et al., 2018), which also plays a critical role in TZ assembly (Gottardo et al., 2018). However, in spermatocytes centrobin is equally distributed at the base of both the mother and daughter centrioles and does not show a functional asymmetry. Recently, a transient microtubule based structure that anchors the base of the mother centriole on one of the centriole pair at the onset of meiosis was identified, but its function is unknown (Riparbelli et al., 2018). This structure could stabilize the mother centriole and favor its attachment to the membrane, but the function of this microtubule rootlet in Drosophila spermatocytes needs further investigations. The intrinsic difference of the mother versus daughter centrioles could also be related to the timing of centriole docking during spermatogenesis (Gottardo et al., 2018), where the mother centriole was shown to dock first. This timing difference would be sufficient to better stabilize the TZ of the mother centriole, and hence explain the phenotypic differences observed in our study. There are other situations in the animal kingdom were both mother and daughter centrioles build a cilium. Among the best studied are the bi-flagellated Chlamydomonas and the peculiar case of multiple ciliated epithelia, where numerous de novo centrioles are assembled just at the onset of ciliogenesis. Interestingly, in mammals, CBY1 was shown to play a critical role in multiple ciliated cells to allow proper docking of the multiple basal bodies to the plasma membrane (Burke et al., 2014). It is tempting to speculate that the increased susceptibility of multiple ciliated cells to CBY1 loss, is related to a particular status of these de novo centrioles, as we observed for daughter centrioles in male germ cells. More work will be needed to understand the molecular determinants of the mother versus daughter centriolar functional asymmetry in Drosophila male germ cells.
 
-## Specific regulatory role of the ciliary cap in Drosophila male germ cells
+### Specific regulatory role of the ciliary cap in Drosophila male germ cells
 
 We observed that defects of TZ assembly and/or basal body docking lead to aberrant elongation of axonemal microtubules as revealed by the specific Drosophila axonemal marker CG6652-GFP. These abnormal elongation defects appear only in late G2 phase, just at the onset of meiosis, indicating that specific signals, yet to be identified, enable centrioles to start axonemal elongation at the onset of meiosis. The membrane cap restricts this capacity by inhibiting axonemal growth until the round spermatid stage, where a second signal turns on axonemal elongation and TZ migration. Among the candidate proteins recruited by the membrane cap which may coordinate axonemal assembly are microtubule depolymerizing kinesins as previously proposed (Vieillard et al., 2016). This membrane cap could also be involved in stabilizing centriolar capping proteins such as CP110 or CEP97, which in mammals need to be removed from centrioles to allow ciliary assembly (Spektor et al., 2007). However, there are no clear evidence in Drosophila that these proteins need to or are specifically removed before axonemal elongation (Galletta et al., 2016; Franz et al., 2013; Delgehyr et al., 2012). Our observations indicate that regulation of axonemal assembly and cell cycle regulation are tightly linked in these dividing cells, but the effectors of this control still need to be identified.
 
@@ -134,9 +178,369 @@ In conclusion, our work demonstrates the critical role of the conserved Dzip1/Fa
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>cby</td>
+      <td>Enjolras et al., 2012</td>
+      <td>FLYB: FBgn0067317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>fam92/CG6405</td>
+      <td>This study</td>
+      <td>FLYB: FBgn0032428</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>dzip1/CG13617</td>
+      <td>This study</td>
+      <td>FLYB: FBgn0039201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5alpha</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>18265017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Cep2900153-G4 mutant strain</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 62671; FLYB: FBst0062671 RRID:BDSC_62671</td>
+      <td>FlyBase symbol: w1118; PBac{IT.GAL4}cep2900153-G4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Df(3R)Exel8178</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC : 7993 FBab0038335 RRID:BDSC_7993</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Df(2L)Exel6033</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC : 7516 FLYB : FBab0037871 RRID:BDSC_7516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sas4s2214 mutant strain</td>
+      <td>Basto et al., 2006</td>
+      <td>BDSC : 12119 FLYB : FBal0196943 RRID:BDSC_12119</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>cby1 mutant strain</td>
+      <td>Enjolras et al., 2012</td>
+      <td>FLYB : FBal0270281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dzip11 mutant strain</td>
+      <td>This study</td>
+      <td></td>
+      <td>Section Materials and methods “Generation of dzip11 and fam921 alleles”</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>fam921 mutant strain</td>
+      <td>This study</td>
+      <td></td>
+      <td>Section Materials and methods “Generation of dzip11 and fam921 alleles”</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Unc::mkate</td>
+      <td>Vieillard et al., 2016</td>
+      <td>FLYB : FBal0324713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Cby::Tom</td>
+      <td>Vieillard et al., 2016</td>
+      <td>FLYB : FBal0270280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Cep290::GFP</td>
+      <td>Basiri et al., 2014</td>
+      <td>FLYB : FBal0301636</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>CG6652::GFP</td>
+      <td>Vieillard et al., 2016</td>
+      <td>FlyB: FBal0324714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>mks1::GFP</td>
+      <td>Vieillard et al., 2016</td>
+      <td>FLYB : FBal0324710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>fam92::GFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>Section Materials and methods “Plasmids and Drosophila reporter gene constructs”</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dzip1::GFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>Section Materials and methods “Plasmids and Drosophila reporter gene constructs”</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>IMCD3</td>
+      <td>ATCC</td>
+      <td>CRL-2123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>COS-7</td>
+      <td>ATCC</td>
+      <td>CRL-1651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Futsch/22C10</td>
+      <td>DHSB</td>
+      <td>AB_528403</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP</td>
+      <td>Abcam</td>
+      <td>AB6556</td>
+      <td>IF(1:1000) WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal anti-Asterless</td>
+      <td>Klebba et al., 2013</td>
+      <td></td>
+      <td>IF (1:50000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat polyclonal anti-Asterless</td>
+      <td>McLamarrah et al., 2018</td>
+      <td></td>
+      <td>IF (1:50000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-HA (clone 3F10)</td>
+      <td>Roche</td>
+      <td>11867423001</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>A11008</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit Alexa 647</td>
+      <td>Invitrogen</td>
+      <td>A21244</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-guinea pig Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>A11073</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-guinea pig Alexa 594</td>
+      <td>Invitrogen</td>
+      <td>A11076</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-guinea pig Alexa 647</td>
+      <td>Invitrogen</td>
+      <td>706-605-148</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rat Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>A11006</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rat Alexa 555</td>
+      <td>Invitrogen</td>
+      <td>A21434</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti rat Alexa 647</td>
+      <td>Invitrogen</td>
+      <td>A21247</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-V5</td>
+      <td>Invitrogen</td>
+      <td>R960-25</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit-HRP</td>
+      <td>Biorad</td>
+      <td>170–6515</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse-HRP</td>
+      <td>Biorad</td>
+      <td>170–6516</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rat-HRP</td>
+      <td>Sigma</td>
+      <td>A5795-1ML</td>
+      <td>WB (1:20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-γ-Tubulin</td>
+      <td>Sigma</td>
+      <td>GTU88</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>phalloidin FluoProbes 547</td>
+      <td>Interchim</td>
+      <td>FP-AZ0330</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>phalloidin FluoProbes 505</td>
+      <td>Interchim</td>
+      <td>FP-AZ0130</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GFP-TRAP</td>
+      <td>Chromotek</td>
+      <td>gta-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse monoclonal Anti-HA-agarose antibody</td>
+      <td>Sigma</td>
+      <td>A2095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>S-protein agarose</td>
+      <td>Merck</td>
+      <td>69704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>New England Biolabs, Inc</td>
+      <td>E5510S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBFv-U6.2</td>
+      <td>Kondo and Ueda, 2013 Nig-Fly</td>
+      <td>FLYB: FBmc0003127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBFv-U6.2B</td>
+      <td>Kondo and Ueda, 2013 Nig-Fly</td>
+      <td>FLYB: FBmc0003128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pG-LAP3 vector</td>
+      <td>Torres et al., 2009</td>
+      <td>Addgene#79704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-N1</td>
+      <td>Clontech</td>
+      <td>Cat #6085–1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 All primer sequences are described in Supplementary file 2.
 
-## Plasmids and Drosophila reporter gene constructs
+### Plasmids and Drosophila reporter gene constructs
 
 CBY1 coding sequence was PCR amplified from mouse ependymal primary cell cDNA with primers F-CBY1 and R-CBY1. PCR product was cloned into pDONR223 (Invitrogen) and then subsequently Gateway cloned into the pG-LAP3 vector (Torres et al., 2009; gift from P. Jackson, Addgene#79704). This vector contains the double EGFP-TEV-S peptide tag in N- terminus allowing a two step affinity purification.
 
@@ -144,7 +548,7 @@ Coding sequences of Drosophila cby, fam92/CG6405 and dzip1/CG13617 were obtained
 
 Drosophila reporter gene construct of dzip1/CG13617 was obtained by cloning 1.6 kb upstream regulatory sequences and the entire coding sequence (primers F-Dzip1GFPrep/R-Dzip1GFPrep) in frame with GFP of pJT61, a pattB plasmid with an extra EGFP-6xMycTag-SV40polyA cassette (Vieillard et al., 2016). The 4 kb fragment of fam92/CG6405 including 1.4 kb of upstream regulatory sequences, the entire coding sequence fused to the multipurpose tag cassette including GFP and the 3'UTR was obtained by PCR with primer F-Fam92GFPrep/R-Fam92GFPrep on fosmid from the FlyFos library (Sarov et al., 2016). The resulting constructs were integrated in the 53B2 VK00018 landing site on the second chromosome by PhiC31 integrase (BestGene). All transgenic lines were obtained from BestGene Inc.
 
-## Generation of dzip11 and fam921 alleles
+### Generation of dzip11 and fam921 alleles
 
 The dzip11 allele (CG13617) was generated by CRISPR/Cas9 induced homologous directed repair (Gratz et al., 2015). Two gRNA were selected using the http://crispor.tefor.net/crispor.py website: 5’- CCCGTTTCACGGACCATCTG CGG −3’ and 5’-GTTTCCAGCACTGTGCCCAG TGG −3’ (protospacer adjacent motifs are underlined). Oligos were phosphorylated by T4PNK (New England Biolabs, Inc) and annealed. Double-stranded 5’ gRNA and 3’ gRNA were cloned in the BbsI site of pBFv-U6.2 and pBFv-U6.2B vectors, respectively (Kondo and Ueda, 2013). 5’ gRNA was further subcloned in the EcoRI–NotI sites of pBFv-U6.2B to express the two gRNAs from one vector.
 
@@ -154,17 +558,17 @@ The fam921 allele (CG6405) was generated by CRISPR/Cas9 induced deletion. Two gR
 
 Males carrying a U6-double gRNA transgene were crossed to nos-Cas9 females to obtain male founder animals. Each male founder was crossed to three virgin females y2 cho2 v1 ; Sco/CyO. Deletion in the fam92 locus was characterized by PCR with primers F-Fam92KO/R-Fam92KO on genomic DNA from the resultant offspring. Flies showing a 294 bp deletion in the fam92 locus were selected for further studies.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 All reagents for cell culture were purchased from Thermo Fisher Scientific. IMCD3 cells (murine Inner Medullary Collecting Duct cells, ATCC CRL-2123 a gift from A. Benmerah, Institut Imagine, Paris) were cultured in DMEM/HAM'S F12 medium supplemented with 10% FBS, 1X non-essential amino acids, 100 U/ml penicillin-streptomycin and 100 µg/ml hygromycin. COS-7 cells (ATCC CRL-1651) or HEK293 (ATCC CRL-1573) were maintained in DMEM medium containing 10% FBS, 1X non-essential amino acids and 100 U/ml penicillin-streptomycin. Cells were tested negative for mycoplasma.
 
 Transfections were performed using jetPRIME (Polyplus transfection) according to the manufacturer’s instructions.
 
-## Stable cell lines
+### Stable cell lines
 
 IMCD3 cell lines expressing LAP-CBY1 or control LAP-GFP were created using the Flp-In system kit (Invitrogen) and established method (Torres et al., 2009).
 
-## Tandem affinity purification and mass spectrometry of CBY1-interacting proteins
+### Tandem affinity purification and mass spectrometry of CBY1-interacting proteins
 
 Two rounds of purification of CBY1-protein complexes were performed. Cells were seeded in 35 15 cm dishes and grown to confluence before serum starvation for 24 hr to induce primary cilia formation. Cells were washed once with ice-cold PBS1X and purification was performed as described previously (Nachury, 2008). Briefly, cells were collected by scraping and resuspended in 11 ml lysis buffer containing HEPES pH7.5 50 mM, EGTA pH8 1 mM, MgCl2 1 mM, KCl 300 mM, Glycerol 10%, NP-40 0.31% and 1X protease inhibitor cocktail (Roche). CBY1-complexes were purified using GFP-TRAP (Chromotek). S-Tag-CBY1 was cleaved off GFP beads by TEV cleavage and the eluate was further purified on S-protein agarose (Merck) and eluted in 100 μl 2X Laemmli Sample Buffer.
 
@@ -172,17 +576,17 @@ For protein identiﬁcation, samples were separated by 10% SDS-PAGE. Gels were s
 
 The peptides were separated using an Eksigent Ultra nano-LC HPLC system coupled with an AB Sciex Triple TOF 5600 mass spectrometer. The LC separations were performed using a Discovery Bio Wide Pore HPLC column (C18, 3 µm, 100 × 5 mm). The mobile phases used were 0.1% formic acid in water (A) and 100% acetonitrile with 0.1% formic acid. The gradient elution steps were performed with a flow rate of 5 µl/min as follows: 0–40% B for 106 min, 40–80% for 5 min, and then 80% B for an additional 5 min. All data were acquired using Analyst software (AB Sciex) in the data dependent mode. Peptide profiling was performed using a mass range of 350–1600 Da, followed by a MS/MS product ion scan from 100 to 1500 Da. For each survey MS1 scan (accumulation time of 250 msec), MS/MS spectra (accumulation time of 75 msec per MS/MS) were obtained for the 30 most abundant precursor ions. The protein identification was performed with the ProteinPilot Software 5.0 (AB Sciex). The MS/MS spectra obtained were searched against the mouse UniProt Proteome database (release 2015_09 with 46470 proteins). The search parameters for tryptic cleavage and accuracy are built-in functions of the software. The other data analysis parameters were as follows: sample type: identification; Cys-alkylation: Iodoacetamide; Digestion: Trypsin; Instrument: TripleTOF 5600; Special factor: gel based ID, and biological modifications; Species: Homo sapiens; Search effort: Thorough ID. Proteins comprising one or more peptides with a high confidence score (95%) and a low false discovery rate (FDR) (estimated local FDR of 1%) were considered positively identified.
 
-## Co-IP and western blotting
+### Co-IP and western blotting
 
 Co-IP assays were performed using transfected COS-7 cells or HEK293 cells, harvested in ice-cold PBS1X. Cell pellet was resuspended in either lysis buffer (NaCl 150 mM, Tris-HCl pH 7.2 50 mM, NP-40 1%, Desoxycholate Na 1%) or milder lysis buffer (NaCl 150 mM, Tris-HCl pH 7.2 50 mM, NP-40 0.5%, glycerol 10%) with 1X protease inhibitor cocktail (Roche) and incubated for 1 hr at 4°C under agitation. Cell lysates were cleared by centrifugation at 15 000 g for 20 min at 4°C. Supernatants were incubated with either GFP-TRAP (Chromotek) or HA-coupled beads (Sigma) as indicated for 1 or 2 hr at 4°C. The beads were collected and washed five times with 1 ml of ice-cold lysis buffer before SDS-PAGE. Eluates were loaded on 10 or 12% SDS-PAGE. After migration, proteins were transferred onto a P 0.45 µm PVDF or 0.45 µm nitrocellulose Amersham Hybond membranes (GE Healthcare) and immunoblotted with according antibodies. IP were repeated three times with anti-GFP for Cby-GFP/HA-Fam92 and once each (anti-HA or anti-GFP) for Cby-GFP/HA-Dzip1 and IP was performed once with anti-GFP for GFP-Dzip1/V5-Fam92/HA-Cby.
 
 Primary antibodies used for western blotting were the following: rat anti-HA (1:5000; Roche), rabbit anti-GFP (1:10000; Abcam) and mouse anti-V5 (1:5000; Invitrogen). HRP-conjugated secondary antibodies were the following: goat anti-rabbit (1:10000; Biorad), goat anti-mouse (1:3000; Biorad) and goat anti-rat (1:20000; Sigma). Membranes were visualized using ECL prime from GE Healthcare.
 
-## Fly stocks and maintenance
+### Fly stocks and maintenance
 
 The cby1 mutant and cby::Tomato transgene were previously described (Enjolras et al., 2012). The cep290::GFP transgene was a gift from T. Avidor- Reiss (University of Toledo, USA; Blachon et al., 2009; Basiri et al., 2014). CG6652::GFP, mks1::GFP and unc::mKate transgenes have been described in Vieillard et al. (2016). sas4s2214 mutant flies were kindly provided by R. Basto (Basto et al., 2006). Flies were raised on standard media between 21°C and 25°C. Df(3R)Exel8178 (dzip1 deficiency), Df(2L)Exel6033 (fam92 deficiency) were obtained from the Bloomington Stock Center and uncover the 95F8-−96A6 and 33E4-−33F2 cytological interval respectively. cep2900153-G4 (Bloomington Drosophila Stock Center) harbors a piggy-bac insertion in the beginning of exon 11.
 
-## Immunofluorescence and confocal microscopy
+### Immunofluorescence and confocal microscopy
 
 Testes from young adult flies or pupae were dissected in PBS1X, fixed 15 min in PBS1X/PFA 4% and either whole mounted or squashed between coverslip and slide and frozen in liquid nitrogen. Coverslip was removed and slides were soaked 2 min in ethanol 100% at −20°C. Testes were treated 15 min in PBS1X/Triton 0.1% (PBT) and blocked 2 hr in PBT/BSA 3%/NGS 5%.
 
@@ -196,26 +600,26 @@ Most slides were imaged using either the IX83 microscope from Olympus equipped w
 
 All images were processed with ImageJ. Figures were created with Adobe photoshop. Only contrasts and offset were adjusted.
 
-## 3D-SIM microscopy
+### 3D-SIM microscopy
 
 Testes or antennae were squashed on 12 diameter round coverslip with a 44 × 60 mm overlaying coverslip. Immunofluorescence protocols were the same as above using PFA. Images were acquired using the Elyra PS.1 system from Zeiss (Carl Zeiss, AG, Jena) equipped with a PCO edge 5.5 camera and the ZEN 2012 SP2 software (black edition). The objective used for all acquisitions is a Plan-apochromat 63 × 1.4 NA.
 
-## Antibodies
+### Antibodies
 
 The antibodies used were the following: mouse anti-Futsch/22C10 (1:250; DSHB = 22C10), mouse anti-γ-Tubulin (1:500; Sigma), rabbit anti-GFP (1:1000; Abcam), guinea pig and rat anti-Asterless (1:50000; gift from C. Rogers, University of Arizona, Tucson, USA; Klebba et al., 2013; McLamarrah et al., 2018).
 
 The following secondary antibodies were used (all at 1:1000 dilution): goat anti-mouse Alexa 594, goat anti-rabbit Alexa 488 or Alexa 647, goat anti-guinea pig Alexa 488 or Alexa 594, goat anti-rat Alexa 488 or Alexa 555 or Alexa 647 (Invitrogen) and donkey anti-guinea pig Alexa 647 (Jackson Immuno Research).
 
-## Quantifications
+### Quantifications
 
 Bang assays were performed as previously described (Enjolras et al., 2012). Approximately 20 staged female flies were placed in graduated tubes (8 cm) and banged on the table at t = 0. The % of flies that reached each quarter of the tube was counted after 30 s. three different batchs were quantified for each genotype.
 
 Quantifications of mother versus daughter centrioles were based on the principle that the daughter centriole, being nucleated from the mother centriole, is orthogonally positioned on the lateral wall of the mother centriole. Quantifications of TZ protein intensities was performed using ImageJ and by measuring the sum of pixel intensity in a defined region encompassing the centrioles. Background intensity was measured by measuring the sum of pixel intensity in an area close to and devoid of centrioles and then subtracted to TZ protein intensities.
 
-## Statistics
+### Statistics
 
 Results of fluorescence intensity quantifications are represented as scatter plots with the mean and SD on all figures. Statistical significance was determined by two-tailed unpaired parametric Student’s t test (Figure 4A, fertility assay; Figure 5D, Cby-Tom; Figure 6A, Cep290-GFP in fam921) or non-parametric Mann-Withney’s test when variances were not comparable (all other intensity quantifications of Figure 5D and Figure 6A–C). Results of phenotypic proportions are represented as contingency bar graph and statistical significance was determined by two-tailed Chi-square (Figures 5D and 6A). (Prism six software; ns, p>0.05; *, p≤0.05; **, p≤0.01; ***, p≤0.001; ****, p≤0.0001).
 
-## Electron microscopy
+### Electron microscopy
 
 Samples were processed as previously described (Enjolras et al., 2012; Vieillard et al., 2015). Observations were performed on at least two independent tissue samples.

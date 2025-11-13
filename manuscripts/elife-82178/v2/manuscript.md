@@ -21,4 +21,4 @@
 
 ## Abstract
 
-Imaging endogenous mRNAs in live animals is technically challenging. Here we describe an MS2-based signal amplification with the Suntag system that enables live-cell RNA imaging of high temporal resolution and with 8xMS2 stem-loops, which overcomes the obstacle of inserting a 1,300 nt 24xMS2 into the genome for the imaging of endogenous mRNAs. Using this tool, we were able to image the activation of gene expression and the dynamics of endogenous mRNAs in the epidermis of live C. elegans .
+Imaging endogenous mRNAs in live animals is technically challenging. Here we describe an MS2-based signal amplification with the Suntag system that enables live-cell RNA imaging of high temporal resolution and with 8xMS2 stem-loops, which overcomes the obstacle of inserting a 1,300 nt 24xMS2 into the genome for the imaging of endogenous mRNAs. Using this tool, we were able to image the activation of gene expression and the dynamics of endogenous mRNAs in the epidermis of live C. elegans.

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Abnormalities in skeletal muscle repair can lead to poor function and complications such as scarring or heterotopic ossification (HO). Here, we use fibrodysplasia ossificans progressiva (FOP), a disease of progressive HO caused by ACVR1 (Activin receptor type-1 receptor) mutation, to elucidate how ACVR1 affects skeletal muscle repair. Rare and unique primary FOP human muscle stem cells (Hu-MuSCs) isolated from cadaveric skeletal muscle demonstrated increased extracellular matric (ECM) marker expression, showed skeletal muscle-specific impaired engraftment and regeneration ability. Human induced pluripotent stem cell (iPSC)-derived muscle stem/progenitor cells (iMPCs) single-cell transcriptome analyses from FOP also revealed unusually increased ECM and osteogenic marker expression compared to control iMPCs. These results show that iMPCs can recapitulate many aspects of Hu-MuSCs for detailed in vitro study; that ACVR1 is a key regulator of Hu-MuSC function and skeletal muscle repair; and that ACVR1 activation in iMPCs or Hu-MuSCs may contribute to HO by changing the local tissue environment. R206H
+Abnormalities in skeletal muscle repair can lead to poor function and complications such as scarring or heterotopic ossification (HO). Here, we use fibrodysplasia ossificans progressiva (FOP), a disease of progressive HO caused by ACVR1R206H (Activin receptor type-1 receptor) mutation, to elucidate how ACVR1 affects skeletal muscle repair. Rare and unique primary FOP human muscle stem cells (Hu-MuSCs) isolated from cadaveric skeletal muscle demonstrated increased extracellular matric (ECM) marker expression, showed skeletal muscle-specific impaired engraftment and regeneration ability. Human induced pluripotent stem cell (iPSC)-derived muscle stem/progenitor cells (iMPCs) single-cell transcriptome analyses from FOP also revealed unusually increased ECM and osteogenic marker expression compared to control iMPCs. These results show that iMPCs can recapitulate many aspects of Hu-MuSCs for detailed in vitro study; that ACVR1 is a key regulator of Hu-MuSC function and skeletal muscle repair; and that ACVR1 activation in iMPCs or Hu-MuSCs may contribute to HO by changing the local tissue environment.
 
 ## Introduction
 
@@ -37,43 +37,87 @@ In this study, we used primary human muscle stem cells isolated from deceased FO
 
 ## Results
 
-## Lower efficiency engraftment of primary human FOP Hu-MuSCs
+### Lower efficiency engraftment of primary human FOP Hu-MuSCs
 
 Muscle tissue samples were obtained from FOP cadavers which allowed the study of markers in situ and the isolation of primary human cells with endogenous activated ACVR1 signaling. Hematoxylin and eosin and alcian blue staining of FOP primary muscle samples from two deceased FOP subjects in a region without HO showed no gross defects. FOP muscle tissue near a HO lesion showed increased ECM proteoglycan components (alcian blue staining) in the interstitial space of the muscle fibers near the HO lesion (Figure 1A). Primary Hu-MuSCs carrying the ACVR1R206H activating mutation were isolated from unfixed muscle tissue from two FOP autopsies. Biceps brachii muscle, commonly affected by HO, and diaphragm muscle, one of the rare skeletal muscle sites spared from HO in patients with FOP, were analyzed. PAX7 staining confirmed the presence of SCs in human FOP biceps (Figure 1B, middle and right). Interestingly, a small subregion showed Collagen Type 1 expression with embedded satellite cells (Figure 1B, right) suggesting possible early HO formation despite absence of gross HO.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66107/elife-66107-fig1-v2.jpg)
+
+**Figure 1.:** (A) Hematoxylin and eosin staining (top) and alcian blue staining (bottom) of muscle cross sections from FOP subjects, with no heterotopic ossification (left) and with heterotopic ossification, depicted by the white dashed line (right, 100 µm scale bar). (B) Immunofluorescence staining for PAX7 and COL1 of muscle cross sections from control and FOP subjects. White arrowheads mark Hu-MuSCs, 50 µm scale bar. (C) Heat map of normalized gene expression of sorted human satellite cells from two control subjects and two different muscles of 1 FOP subject. (D) Schematic and experimental time course. Hu-MuSCs from biceps and diaphragm muscles of a deceased FOP patient were sorted and transplanted into NSG mice. (E) Immunofluorescence staining 5 weeks after xenotransplantation. White arrowheads mark Hu-MuSCs, 50 µm scale bar. (F) Quantification of human DYSTROPHIN fibers and human PAX7+ cells 5 weeks after transplant. (G) Mice were re-injured 5 weeks after transplantation with bupivacaine. Immunofluorescence staining was performed at week 10. White arrows mark Hu-MuSCs, 50 µm scale bar. (H) Quantification of human DYSTROPHIN fibers and human PAX7+ cells after re-injury at week 10. n = 1, biological replicates, n ≥ 3 technical replicates. Error bars represent mean and SD. *, p < 0.05, **, p < 0.01. Muscle specimen and transplantation details are listed in Figure 1—source data 1 and Figure 1—source data 2 .
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66107/elife-66107-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Flow cytometry analysis sorting strategy to isolate human satellite cells. (B) Representative immunostaining of Hu-MuSCs. White arrows indicate PAX7+ satellite cells (scale bar, 50 µm). (C) X-ray of transplanted mice at 5 and 10 weeks after initial transplantation (scale bars, 4 mm (week 5), 7 mm (week 10)) showing no heterotopic ossification. Details about muscle specimens used in this figure are in Figure 1—source data 1.
 
 Sufficient Hu-MuSCs (Figure 1—figure supplement 1A) were sorted for transplant and gene expression analysis. FOP Hu-MuSCs showed lower PAX7 expression compared to control Hu-MuSCs. COL1A1 and ID3 were increased in affected FOP muscle (biceps) (Figure 1C). However, ID1 was increased in both the FOP diaphragm and biceps compared to control muscles (Figure 1C). Hu-MuSCs were transplanted into the irradiated tibialis anterior (TA) muscle of immunocompromised (NSG) mice (to hinder endogenous satellite cells) previously injured with bupivacaine (Garcia et al., 2017). The bupivicaine step induces myofiber injury and promotes engraftment of donor Hu-MuSCs. Five weeks after transplantation, biceps and diaphragm FOP Hu-MuSCs had engrafted and formed human fibers (Figure 1D and E). However, the number of human DYSTROPHIN-positive fibers was significantly lower with FOP Hu-MuSCs vs. control Hu-MuSCs (Figure 1F). The number of engrafted PAX7+ cells was qualitatively lower with FOP vs. control Hu-MuSCs (Figure 1F and Figure 1—figure supplement 1B). Ten weeks after re-injury with bupivacaine at week 5 (Figure 1D), the number of human DYSTROPHIN fibers was significantly decreased when FOP biceps Hu-MuSCs were transplanted compared to control Hu-MuSCs, but not when FOP diaphragm Hu-MuSCs were transplanted (Figure 1G and H). No differences in the number of human PAX7 cells were identified (Figure 1G and H). No radiologic evidence of HO was found in any mice (Figure 1—figure supplement 1C).
 
 Thus, primary Hu-MuSCs isolated from two FOP subjects can engraft and regenerate injured muscle of NSG mice. Our limited sample size suggests this may occur at lower efficiency than control MuSCs. In addition, the results suggest that the source of FOP Hu-MuSCs (biceps or diaphragm) may impact MuSC engraftment efficiency.
 
-## Human FOP iPSCs can differentiate into skeletal muscle cells
+### Human FOP iPSCs can differentiate into skeletal muscle cells
 
 The rarity of FOP disease and difficulty obtaining human tissue samples from patients with FOP makes it difficult to obtain a reliable source of muscle stem cells. Therefore, we used established and fully characterized control hiPSCs (Wtc11, 1323–2, and BJ2) and ACVR1R206H hiPSCs (F1-1, F2-3, F3-2) lines previously derived from patients with FOP (Matsumoto et al., 2013). We first asked whether our lines were able to differentiate into myogenic cells and specifically into muscle stem cell-like cells using an adapted version of recently published protocols (Hicks et al., 2018; Shelton et al., 2014; Figure 2A). The control hiPSCs yielded PAX7, MYOGENIN-expressing cells (Figure 2B and C and Figure 2—figure supplement 1A), expressed DYSTROPHIN (Figure 2B), and formed contractile myotubes (Figure 2C; Video 1 and Video 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66107/elife-66107-fig2-v2.jpg)
+
+**Figure 2.:** (A) Differentiation schematic of hiPSCs into skeletal muscle stem cell-like cells (iMPCs). (B) Immunofluorescence staining for PAX7, DYSTROPHIN and nuclear stain DAPI of iMPCs at day 50, 50 µm scale bar. (C) Immunofluorescence staining of PAX7 and MYOGENIN expressing cells. Control and FOP hiPSCs can form contractile myotubes, 100 µm scale bar. (D) PAX7, MYF5, MYOD1, and MYOGENIN gene expression at day 50 of differentiation (n = 3 biological replicates and n ≥ 3 technical replicates). Error bars represent mean ± SD. No statistically significant differences were detected. (E) Schematic describing the addition of the BMP pathway inhibitor LDN193189 (LDN). (F) Representative immunofluorescence staining of 2 control and 2 FOP hiPSC lines differentiated and stained for MHC (Myosin Heavy Chain) and nuclear stain DAPI at day 50±LDN addition, 200 µm scale bar.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66107/elife-66107-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) PAX7 immunofluorescence staining at day 50 of the myogenic differentiation in control and BMP impaired hiPSCs (scale bar, 50 µm). (B) TUJ-1immunostaining at day 50 of differentiation (scale bar, 50 µm).
+
+![Video 1.](https://cdn.elifesciences.org/articles/66107/elife-66107-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/66107/elife-66107-video2.mp4.jpg)
+
 Since BMPs control skeletal muscle differentiation from hiPSCs (Chal et al., 2016; Xi et al., 2017), we investigated if genetic activation of the BMP pathway via ACVR1R206H could alter the myogenic differentiation of hiPSCs (F1-1, F2-3, F3-2) derived from patients with FOP (Matsumoto et al., 2013). All three FOP iPSC lines formed contractile myotubes with cells expressing PAX7, MYOGENIN, and DYSTROPHIN (Figure 2B and C, Figure 2—figure supplement 1A). PAX7, MYF5, MYOD1, and MYOGENIN (Figure 2D) gene expression showed some heterogeneity among the different hiPSC lines but these differences were not statistically significant. The heterogeneity seen is likely due to the presence of other cell types in our differentiation such as neuronal cells (Figure 2—figure supplement 1C). Adding a SMAD inhibitor of the BMP pathway (LDN193189) into the differentiation protocol (Figure 2E) improved the differentiation of the control hiPSC lines. LDN also improved differentiation of the FOP F3-2 (Figure 2F) line, which had shown lower PAX7 and MYOGENIN expression (Figure 2D). These findings show that individual hiPSC lines are heterogeneous in differentiation to skeletal muscle lineages, similar to other protocols (Volpato and Webber, 2020), that FOP hiPSCs can form skeletal muscle cells and Hu-MuSC-like cells expressing PAX7 despite upregulation of the BMP pathway by ACVR1R206H, and that chemical blockade of the BMP pathway can improve the formation of Hu-MuSC-like cells from the FOP iPSC line that showed the lowest efficiency.
 
-## PAX7 expressing cells can be isolated from myogenic differentiation
+### PAX7 expressing cells can be isolated from myogenic differentiation
 
 To test the regenerative properties of PAX7-expressing MuSCs, we used FACS to purify HNK1-CD45-CD31- cells co-expressing CD29, CXCR4, and CD56 markers present on human PAX7+ cells (Garcia Steven et al., 2018; Figure 3A and Figure 3—figure supplement 1A–C). FACS analysis identified intermediate CD56 cells expressing high PAX7 and low MYOGENIN (Figure 3B and Figure 3—figure supplement 1C,D), consistent with Hu-MuSC expression profiles. All HNK1-CD45-CD31- CXCR4+CD29+CD56dim cells formed myotubes expressing MHC (Figure 3—figure supplement 1E) when cultured in terminal differentiation media demonstrating isolation of functional iMPCs with satellite cell-like characteristics from the cultures.
 
-## Isolated iMPCs can regenerate injured mouse muscle and form human fibers
+![Figure 3.](https://cdn.elifesciences.org/articles/66107/elife-66107-fig3-v2.jpg)
+
+**Figure 3.:** hiPSCs were differentiated into iMPCs until day 50 and sorted via flow cytometry. (A) Gating strategy. (B) Myogenic gene expression of CD56dim and CD56hi cells. CD56dim vs CD56hi, n = 6 (3 Ctrl and 3 FOP lines) biological replicates, ** p < 0.01, *** p < 0.001, **** p < 0.0001. No significant differences were found between control and FOP lines. (C) Representative human DYSTROPHIN (top, 200 µm scale bar), and human LAMIN A/C, human SPECTRIN, and PAX7 (bottom, 100 µm scale bar) immunohistochemistry of NSG mice anterior tibialis, where sorted iMPCs were transplanted. White arrows show engrafted hiPSC-derived muscle stem cells. (D) Quantification of human DYSTROPHIN fibers and human PAX7 cells at week 5 after transplant (n = 3 biological replicates). Transplantation details are in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66107/elife-66107-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative flow cytometry profiles of negative (CD45 and CD31) and positive (CD29 and CD56) markers used to purify muscle stem cells. (B) Quantification of the percentage of cells positive for CD45, CD31, CD29, and CD56 at day 20. (n = 3 biological replicates and n = 3 technical replicates). Error bars represent mean and SD. (C) FACS plots for the single staining controls. (D) FACS analysis of the myogenic differentiation at day 50. Cells were stained for PAX7, CD29, and CD56. (E) Representative immunofluorescence staining for MHC showing of sorted iMPCs after being cultured in differentiation media for 7 days (200 µm scale bar).
+
+### Isolated iMPCs can regenerate injured mouse muscle and form human fibers
 
 To assess iMPC regenerative capacity in vivo, we injected 1000–10,000 iMPCs derived from control or FOP hiPSCs (Figure 3—source data 1) into the irradiated TA muscle of NSG mice. New fibers expressing human DYSTROPHIN and PAX7 cells were found after 5 weeks, showing that iMPCs could engraft and promote muscle regeneration (Figure 3C). However, the number of human fibers and human PAX7+ cells remained low (Figure 3D) compared to primary Hu-MuSCs. While some iMPC transplants yielded up to 60 new human fibers, some did not yield any human fibers. By comparison, 2000 primary non-FOP Hu-MuSCs resulted in an average of 155 human fibers based on prior assessments using the same assay (Garcia Steven et al., 2018). No significant differences between control and FOP iMPCs were identified, though some individual FOP samples showed higher engraftment (Figure 3D).
 
 These results showed that iMPCs have engraftment potential into a muscle injury site in mice, but engraftment efficiency may be lower than primary Hu-MuSCs or be the result of differences in experimental conditions. Also, ACVR1R206H did not significantly impact muscle fiber regeneration in this assay.
 
-## Transcriptional profiling of iMPCs
+### Transcriptional profiling of iMPCs
 
 The lower engraftment of iMPCs compared to primary Hu-MuSCs suggested that the FACS-purified population was still heterogeneous or that iMPCs do not fully recapitulate adult primary Hu-MuSCs. Single cell RNA sequencing (scRNAseq) from control (1323–2) and FOP (F3-2) iMPCs (these lines were selected based on their lower intra-line variability, Figure 2) were analyzed (Figure 4A and Figure 4—source data 1). Cell populations for both samples were defined by the dimension reduction technique of uniform manifold approximation and projection (UMAP) (Becht et al., 2018) and unsupervised clustering with Seurat v3 package (Stuart et al., 2019; Figure 4—figure supplement 1A–B). Both control (Figure 4—figure supplement 1A) and FOP (Figure 4—figure supplement 1B) samples had clusters expressing myogenic genes (PAX7 and MYOD); mesenchymal genes (PDGFRA); and neuronal genes (SOX2) (Figure 4—figure supplement 1C). Merged analysis to allow direct comparison identified 13 distinct clusters (Figure 4B and Figure 4—figure supplement 1D). Cells expressing muscle markers (PAX7, MYF5, MYOD, and MYOG [MYOGENIN]) were found in clusters 0–2 (Figure 4B–C and Figure 4—figure supplement 1E). Mesenchymal genes (PDGFRA, ASPN, and COL1A1) were expressed in cluster 3. Cluster four consisted cells expressing retinal (OTX2) and neuroprogenitor cell (NPC) markers (SOX2, MAP2). Neuroprogenitor markers (SOX2, MAP2) and HES6 were upregulated in cluster 5. Clusters 6 and 7 were made of cycling neuroprogenitor cells (MKI67, TOP2A). We also found three clusters (8-11) to be neuroepithelial cells (NECs), with cluster 10 having and increased in expression of mTor gene downstream target. Glial cells (TNC, SLC1A2) were comprised in cluster 12 (Figure 4C and D and Figure 4—figure supplement 1E). The frequency of muscle cells (clusters 0–2) was higher in FOP (14%, 2.5%, and 1.7%) compared to controls (4.2%, 0.5%, and 0.5%) (Figure 4F) suggesting that FOP hiPSCs may be more efficient at making muscle progenitor cells. Thus, FACS-purified iMPC cultures contain muscle stem/progenitor cells, but other cell types such as mesenchymal, neuronal progenitor cells, and myoblasts persist in the culture. Furthermore, the frequency of iMPCs appears to be higher in FOP vs. control cell cultures.
 
-## FACS-sorted iMPC transcriptome is heterogeneous
+![Figure 4.](https://cdn.elifesciences.org/articles/66107/elife-66107-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of differentiating hiPSCs, sorting of iMPCs, and scRNAseq. (B) UMAP visualization plots of cells combined from both control and FOP samples. Cell types were assigned based on the expression of marker genes (Figure 4—figure supplement 1), MPC (muscle progenitor cells), NPCs (neuroprogenitor cells) and NECs (neuroepithelial cells). (C) Feature expression plots showing the localization of cells expressing myogenic markers (PAX7, MYF5), mesenchymal (COL1A1), and neural cell marker (SOX2). (D) Dot plot displaying expression genes associated with myogenesis, mesenchymal and neurogenesis markers. (E) Proportion of cells per cluster for each sample.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66107/elife-66107-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) UMAP visualization plots of cells from control (A) and FOP (B). (C) Dot plot displaying expression genes associated with each cluster for the control (top) and FOP (bottom) sample. (D) UMAP visualization plots of merged samples with cells colored by samples. (E) Heat map of the top five differentially expressed genes in each cluster of the merged sample analysis.
+
+### FACS-sorted iMPC transcriptome is heterogeneous
 
 Typical muscle progenitor cultures are expected to contain cells undergoing expansion, differentiation, and maturation. Sub-clustering (Figure 5A and B) identified five new myogenic subpopulations (Figure 5A and B). Clusters 0–3 expressed higher levels of PAX7 and MYF5 (markers of more quiescent MuSCs) while cluster four expressed higher levels of MYOD (or MYOD1), MYOG, SOX8, and MEF2C (markers of differentiated MuSCs/myoblasts/myocytes). Muscle stem-like cells expressing APOE, KRT17, and CAV1 defined cluster 0. Quiescence markers (SPRY1, HEY1, HES1) were also highly expressed in this cluster. CDH15, a niche regulator of SCs quiescence (Goel et al., 2017) was enriched in cluster 1. Cluster 1 also had increased expression of DES, CHRNA1, and MYOD1 suggesting that these cells have a transcriptome resembling the profile of progenitor cells. Cluster 2 consisted of muscle stem-like cells expressing high levels of FOS (Figure 5B and Figure 5—figure supplement 1A). Cell cycle (TOP2A or KI67) markers were increased in cluster 3 (Figure 5B and Figure 5—figure supplement 1B (left)). Cluster 3 had a higher proportion of cells in G2M and S phase (Figure 5—figure supplement 1B (left)). The cell cycle distribution was similar in control and FOP (Figure 5—figure supplement 1B (right)). The proportion of cells in clusters 3 and 4 were similar in both control (10% and 12.7%) and FOP (14.3% and 9%) samples. The proportion of cells in clusters 0 and 3 was higher in FOP (31.4% and 23.4%) compared to control (20% and 5.5%), while the proportion of cells in cluster two was increased in control (51.8% vs 21.9%) (Figure 5—figure supplement 1D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/66107/elife-66107-fig5-v2.jpg)
+
+**Figure 5.:** (A) Identified myogenic clusters (in red) were sub-clustered from the other clusters (neurogenic and mesenchymal) and re-analyzed. UMAP of the new myogenic subclusters was generated. (B) Dot plot displaying expression of cluster defining genes. (C) Feature expression plots of myogenic markers. (D) Myogenic cells were ordered as a function of pseudotime using the Monocle package. (E) Pseudotime trajectory plot of myogenic clusters.Arrows represents the direction and major branches of the pseudotime. Branches A-C are marked with letters along the trajectories. (F) Gene plots displaying the expression of specific myogenic genes as a function of pseudotime. (G–H) Violin plots of myogenic (G) and chondro/osteogenic genes (H) that were significantly differentially expressed. Violin plot width depicts the larger probability density of cells expressing each particular gene at the indicated expression level. *, significantly different following differential expression testing using the Wilcoxon rank sum test per cluster. (I) SMAD and P38MAPK pathway markers significantly differentially expressed between control and FOP myogenic cells. p values for (G–H) are in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66107/elife-66107-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heat map of the top five differentially expressed genes in each cluster. (B) Cycle genes were scored for each cluster. Bar plot depicting the proportion of cells in G1/G0, G/2 M and S phase for each cluster (left) and for each sample (right). (C) Proportion bar graph of cells per cluster for the control and FOP samples. (D) UMAP showing the distribution of the two merged samples. (E) Violin plots of additional genes significantly differentially expressed by more than onefold and (F) Chondro/osteogenic genes per cluster and per sample (G). (H) Dot plot displaying the expression of genes associated with BMP and P38MAPK pathways for each cluster.
 
 We ordered the myogenic cells into three major branches using the Monocle analysis package (Trapnell et al., 2014) based on genes that differ between clusters and constructed pseudotime differentiation trajectories (Figure 5D). The pseudotime ordering of the cells (Figure 5D) showed that cycling MuSCs (cluster 3) were located at the tip of the tree branch A while cluster 0 comprised of the most quiescent MuSCs were mainly distributed along branch A. Cells from the FOS upregulated MuSCs (cluster 2) were distributed along branch B. Cluster 1 (muscle progenitor cells) was distributed in the more proximal parts of branches B and C. Distal parts of branches B and C, were notably comprised of more mature cells from cluster 4 (myoblasts) (Figure 5E). PAX7 and MYF5 were upregulated in branch A but downregulated in the tip of branches B and C (Figure 5C and E) confirming the correct cell ordering. MYOD and MYOG showed higher expression patterns early in branch B and late in branch C (Figure 5E and F).
 
 Thus, hiPSC differentiation cultures contain subpopulations of iMPCs showing the expected spectrum of quiescence, activation, and differentiation with FOP cultures having a higher proportion of cells in the stem cell/progenitor and proliferating phases and fewer mature myoblasts.
 
-## FOP iMPCs cells express increased chondro/osteogenic and ECM markers
+### FOP iMPCs cells express increased chondro/osteogenic and ECM markers
 
 Differential expression analysis on the transcriptional profiles of the sub-clustered myogenic cells (Figure 5A and B and Figure 5—figure supplement 1A-E) was used to see if ACVR1R206H altered transcriptional signatures. While PAX7 was significantly increased in control vs. FOP cells in cluster three only, MYF5 was significantly increased in FOP cells from cluster 1 compared to control cells (Figure 5G, Figure 5—source data 1). Since Hu-MuSCs show heterogeneous levels of PAX7 and MYF5 expression (Kuang et al., 2007), this suggests the ACVR1R206H mutation may favor one sub-population over another. Interestingly, SPRY1, a known regulator of quiescence (Shea et al., 2010) which decreases with age (Bigot et al., 2015), was significantly downregulated in FOP cells in all the clusters, while DLK1, which act as a muscle regeneration inhibitor (Andersen et al., 2013) was significantly increased in FOP cells (Figure 5G and Figure 5—source data 1).
 
@@ -81,9 +125,17 @@ Since the ACVR1R206H mutation increases BMP pathway activity and expression of c
 
 Finally, expression of target genes of the BMP pathway (ID1, ID3, BMPs, and SMADs) and the p38MAPK pathway (Figure 5I and Figure 5—figure supplement 1H) was assessed to see if activated ACVR1 altered these pathways. ID1 was significantly higher in clusters 0 (MuSCs 1), 1 (MPCs), 3 (Cycling MuSCs), and 4 (Myoblasts) in control cells, while ID3 was significantly higher in FOP cells clusters 1 (MPCs) and 2 (MuSC 2). In addition, the BMP/TGFβ pathway downstream target gene SMAD5 was significantly higher in cluster 2 (MuSCs 2) of control cells. The p38 pathway components JUN (clusters 1, 3), JUNB (clusters 0–2), and FOS (clusters 1, 3) were significantly increased in FOP cells. Within the known ACVR1 co-receptors, BMPR2 (clusters 3, 4) and ACVR2B (clusters 0, 2, 3) expression were significantly higher in control cells while ACVR2A expression was significantly higher in FOP cells (clusters 1, 4). ACVR2B was significantly higher in control cells (clusters 0, 1, 4) (Figure 5I). Similar to the primary FOP Hu-MuSCs (Figure 1), these results suggest that FOP iMPCs may have a chondrogenic/osteogenic signature, increased ID3 expression, and also showed higher p38 pathway activity and higher levels of the ACVR2A co-receptor at different stages of myogenic differentiation.
 
-## iMPC transcriptome shows similarities to primary Hu-MuSCs
+### iMPC transcriptome shows similarities to primary Hu-MuSCs
 
 Comparing the iMPC scRNAseq to primary Hu-MuSCs data of sorted satellite cells from a human vastus lateralis muscle (Barruet et al., 2020) was used to identify if their lower engraftment efficiency was due to transcriptional differences. The merged data UMAP (Figure 6A) showed that clusters 0–5 contained myogenic cells (Figure 6B and C). PAX7+ + were identified in clusters 0–4 (Figure 6C). Myocyte contaminants present in the primary sorted cells constituted cluster 5. Although iMPCs expressed PAX7 and MYF5, the gene expression levels were higher in primary Hu-MuSCs. In contrast, MYOD was higher in iMPCs (Figure 6C and Figure 6—figure supplement 1). Mesenchymal cells were identified in cluster six while NPCs, NECs and Glial cells were identified in clusters 7–9, 10–12 and 13, respectively (Figure 6B and C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/66107/elife-66107-fig6-v2.jpg)
+
+**Figure 6.:** (A–B) UMAP of cells combined from human primary muscle stem cells (vastus muscle) and the control and FOP samples. (A) UMAP showing the distribution of cells per sample, and (B) with clusters labeled. (C) Dot plot displaying expression of cluster defining genes. (D) Myogenic cells (in red) are comprised in cluster 0–5. UMAP of the myogenic clusters. (E–G) Pseudotime trajectory plot generated via Monocle analysis depicting all myogenic clusters (E) and samples (F). (G) Level of expression of ECM/osteogenic genes along the cell trajectories. (H) Heatmap representing genes that are significantly branch dependent using the BEAM analysis (Figure 6—source data 1) and also genes that have similar lineage-dependent expression patterns. Branches are shown in the upper right panel.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66107/elife-66107-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Dot plot displaying the average expression and the percent of cells expressing myogenic genes across clusters for the three merged samples.
 
 Detailed analysis of the myogenic cell subset (cluster 0–5, Figure 6D) was performed using pseudotime trajectory analysis to elucidate the states of the iMPCs with respect to primary Hu-MuSCs. Cells from clusters 0, 1, and 4 were distributed along branches B and C. Myocytes ordered at the distal end of branch A. iMPCs ordered away from primary Hu-MuSCs (PAX7+) and primary myocytes (MYL1+) (Figure 6E–G). Branch expression analysis modeling (BEAM) allowed us to investigate significant gene that are branch-dependent in their expression (Figure 6—source data 1). Branch A was mainly constituted of primary Hu-MuSCs while branch B consisted of iMPCs and subset of primary Hu-MuSCs, expressed significantly higher levels of genes associated with mesenchymal, fibrogenic, chondrogenic, osteogenic lineages and extracellular matrix (Figure 6G and H). Thus, iMPCs retained strong bi-potency compared to primary Hu-MuSCs, suggesting that iMPCs may not be as committed to the muscle lineage as primary adult muscle stem cells (Xi et al., 2020).
 
@@ -111,23 +163,299 @@ This study shows that human iPSC-derived muscle progenitor cells can be a valuab
 
 ## Materials and methods
 
-## Cell culture and differentiation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ</td>
+      <td>https://www.jax.org/strain/005557</td>
+      <td>MGI:3577020</td>
+      <td>8–12 weeks old</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human RT-PCR Primers</td>
+      <td>Applied Biosystems Taqman Assays</td>
+      <td>ACTBHs01060665_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human RT-PCR Primers</td>
+      <td>Applied Biosystems Taqman Assays</td>
+      <td>DYSTROPHINHs007758098_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human RT-PCR Primers</td>
+      <td>Applied Biosystems Taqman Assays</td>
+      <td>PAX7Hs00242962_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human RT-PCR Primers</td>
+      <td>Applied Biosystems Taqman Assays</td>
+      <td>CD56Hs00941830_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human RT-PCR Primers</td>
+      <td>Applied Biosystems Taqman Assays</td>
+      <td>MYOD1Hs00159528_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human RT-PCR Primers</td>
+      <td>Applied Biosystems Taqman Assays</td>
+      <td>MYF5Hs00929416_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human RT-PCR Primers</td>
+      <td>Applied Biosystems Taqman Assays</td>
+      <td>MYOGENIN Hs01072232_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human RT-PCR Primers</td>
+      <td>Applied Biosystems Taqman Assays</td>
+      <td>COL1A1Hs01076780_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human RT-PCR Primers</td>
+      <td>Applied Biosystems Taqman Assays</td>
+      <td>ID1Hs03676575_s1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human RT-PCR Primers</td>
+      <td>Applied Biosystems Taqman Assays</td>
+      <td>ID3Hs00954037_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human DYSTROPHIN (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>AB_2618157</td>
+      <td>IF(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human/Mouse DYSTROPHIN (mouse monoclonal)</td>
+      <td>Thermofisher</td>
+      <td>AB_10978300</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human/Mouse PAX7 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>AB_528428</td>
+      <td>IF(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human/Mouse MHC (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>AB_2147781</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LAMININ (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>AB_477163</td>
+      <td>IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human SPECTRIN (mouse monoclonal)</td>
+      <td>Leica Microsystems</td>
+      <td>AB_442135</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human LAMIN A/C (mouse monoclonal)</td>
+      <td>Vector Laboratories</td>
+      <td>AB_2336546</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD31 (Beads) (Mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-091-935</td>
+      <td>2 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD45 (Beads, mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>AB_2783001</td>
+      <td>5 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD31 AF450(WM-59, mouse monoclonal)</td>
+      <td>Ebioscience</td>
+      <td>AB_10854276</td>
+      <td>5 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD34 eFluor450(4H11, mouse monoclonal)</td>
+      <td>Ebioscience</td>
+      <td>AB_10733282</td>
+      <td>5 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD45 AF450(30-F11, mouse monoclonal)</td>
+      <td>Ebioscience</td>
+      <td>AB_1518806</td>
+      <td>5 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD29 FITC(TS2/16, mouse monoclonal)</td>
+      <td>Ebioscience</td>
+      <td>AB_2043830</td>
+      <td>8 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Recombinant human anti-CD56 APC-vio-770 (REA196)</td>
+      <td>Miltenyi Biotec</td>
+      <td>AB_2733136</td>
+      <td>8 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CXCR4 PE(12G5, mouse monoclonal)</td>
+      <td>Ebioscience</td>
+      <td>AB_10669164</td>
+      <td>8 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human HNK1 PE (TB01, mouse monoclonal)</td>
+      <td>Ebioscience</td>
+      <td>AB_10804531</td>
+      <td>5 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD45 PE(30-F11, mouse monoclonal)</td>
+      <td>Ebioscience</td>
+      <td>AB_465668</td>
+      <td>5 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD31 PE(390, mouse monoclonal)</td>
+      <td>Ebioscience</td>
+      <td>AB_465632</td>
+      <td>5 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD56 APC (CMSSB, mouse monoclonal)</td>
+      <td>Ebioscience</td>
+      <td>AB_10854573</td>
+      <td>5 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CXCR4 PE-Cy7 (12G5, mouse monoclonal)</td>
+      <td>Ebioscience</td>
+      <td>AB_1659706</td>
+      <td>5 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FcR block</td>
+      <td>Miltenyi Biotec</td>
+      <td>AB_2892112</td>
+      <td>5 μl</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>SCr_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat (3.1.5)</td>
+      <td>https://satijalab.org/seurat/</td>
+      <td>SCR_007322</td>
+      <td>SCR_021002</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Monocle (2.12.0)</td>
+      <td>http://cole-trapnell-lab.github.io/monocle-release/</td>
+      <td>SCR_016339</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cellranger</td>
+      <td>https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/feature-bc</td>
+      <td>SCR_021002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>https://www.flowjo.com</td>
+      <td>SCR_008520</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and differentiation
 
 Pluripotent hiPSC lines derived from control and FOP fibroblasts (Matsumoto et al., 2013; Spencer et al., 2014) were cultured in mTeSR1 medium (StemCell Technologies) on irradiated SNL feeder cells (McMahon and Bradley, 1990) as described previously. hiPSCs were passaged at least once on Matrigel (Corning)-coated plates (150–300 µg/ml) to remove the SNLs before use in differentiation assays. ROCK inhibitor Y-27632 (10 µM, StemCell Technologies) was added to mTeSR1 when cells were split and removed the following day.
 
 hiPSC lines were differentiated into skeletal muscle cells using modifications based on prior protocols (Chal et al., 2016; Shelton et al., 2014). Our hiPSC lines differentiated better with a lower cell number seeding and a longer time of recovery between the seeding and the start of the differentiation (2 days, data not shown). Cells were seeded at 7.5 × 105 cells per well of a 12-well plate on Matrigel two days before the differentiation medium (E6 medium, supplemented with either 10 µM CHIR99021 (Tocris) for 2 days or with 3 µM CHIR99021 and 0.5 µM LDN193189 for six days). Cells were then grown in un-supplemented E6 media until day 12, then changed to StemPro-34 media supplemented with 10 ng/ml bFGF until day 20. The medium was then replaced by E6 medium until day 35, when DMEM/F12 supplemented with N2 (Gibco) and Insulin-Transferrin-Selenium (ITS-A, 100 X Gibco) was added. Media was changed daily until harvest at day 50. After sorting, cells were plated in satellite cell media [DMEM/F12 (Gibco), 20 % FBS (Hyclone), 1 X ITS (Gibco), 1 X Penicillin/ Streptomycin (Gibco)] for further functional assays (Figure 2A and F). Once cells reached confluence, cells were cultured in differentiation media (DMEM, 2 % horse serum, 1 X Penicillin/ Streptomycin; Gibco).
 
-## Cell lines
+### Cell lines
 
 Pluripotent hiPSC lines were previously derived from the following control and FOP fibroblasts (Matsumoto et al., 2013; Spencer et al., 2014): FF-WT-BJ (Foreskin, Stemgent 08–0027), HDF-WT-1323 (Fibroblast, Cell Applications 1323), HDF-WTc (Skin biopsies obtained from donors), HDF-FOP1 (Skin Fibroblast, Corrielle GM00513), HDF-FOP2 (Skin Fibroblast, Corrielle GM00783), and HDF-FOP3 (Skin biopsies obtained from donors). All hiPSCs are tested periodically for mycoplasma and have been negative to date. Cell lines are yearly authenticated using DNA fingerprinting.
 
-## Flow cytometry
+### Flow cytometry
 
 HNK1-CD45-CD31-CXCR4+CD29+CD56dim cells were sorted from skeletal muscle differentiation of control and FOP hiPSCs. Human primary satellite cells were isolated and sorted as described (Garcia Steven et al., 2018; Garcia et al., 2017). Human muscle was freshly harvested and stored in DMEM with 30 % FBS at 4 °C overnight or for two extra days (delay due to shipping). Muscle samples were digested, erythrocytes were lysed, and hematopoietic and endothelial cells were depleted with magnetic column depletion using CD31, CD34, and CD45 (eBioscience). Cells were further gated as described in Figure 1—figure supplement 1A and sorted for CXCR4+/CD29+/CD56+ and collected for subsequent experimentation.
 
 For the staining, cells were treated with Accutase for 20 min at 37 C, washed with FACS buffer, and stained for HNK1-PE, CD45-PE, CD31-PE, CD56-APC, CXCR4-PE-Cy7, and CD29-FITC (eBioscience). HNK1-CD45-CD31- cells [to select against neuronal cells (HNK1, Human Natural Killer-1) (Choi et al., 2016; Hicks et al., 2018), hematopoietic cells (CD45), and endothelial cells (CD31)], co-expressing CD29, CXCR4, and intermediate CD56, markers present on human PAX7+ cells (Garcia Steven et al., 2018; Garcia et al., 2017; Xu et al., 2015) were sorted with a FACSAriaIII (BD Biosciences) and Sytox Blue (Life Technologies) was used as a viability marker. Alternatively, cells were permeabilized and fixed (Fix/Perm Buffer Set, BioLegend). Fixed cells were first incubated with primary antibodies PAX7 (DSHB), CD29 (BD Biosciences), and CD56 (BD Biosciences) following by secondary antibodies (Alexa350-conjugated goat anti-mouse IgG, Alexa488-conjugated goat anti-rat IgG and Alexa546-conjugated donkey anti-goat IgG, Life Technologies).
 
-## Animal care and transplantation studies
+### Animal care and transplantation studies
 
 All mouse studies were performed using protocols approved by the UCSF Institutional Animal Care and Use Committee. Mice were either bred and housed in a pathogen-free facility at UCSF or purchased from The Jackson Laboratory. Eight to 12-week-old NSG (NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ) mice were randomized to all experimental groups by sex and littermates. Each mouse was irradiated with 18 Gy before transplantation. Isolated primary human satellite cells (Hu-MuSCs) or iMPCs were injected with 50 µl 0.5 % bupivacaine directly into the tibialis anterior (TA) muscle of one leg as described (Garcia Steven et al., 2018; Garcia et al., 2017). The TA for each mouse was harvested at week 5 or week 10 after transplantation and frozen in O.C.T. compound in 2-methylbutane chilled in liquid nitrogen. Serial 6 µm transverse frozen sections were analyzed or stored at –80 °C.
 
@@ -135,22 +463,22 @@ Collected tibialis anterior frozen cross sections were fixed in 4 % PFA for 10 m
 
 Cell Immunostaining and NSG Tibialis Anterior Analysis iMPCs were fixed with 4%PFA/PBS for 10 min at room temperature, permeabilized with 0.1%Triton-100X (Sigma-Aldrich), and blocked with 5 % BSA (Sigma-Aldrich). Cells were stained overnight with primary antibodies for PAX7, MYOGENIN, DYSTROPHIN, and MHC. Cells were then incubated for 1 hr at room temperature in the dark with secondary antibodies Alexa488-conjugated goat anti-mouse IgG and Alexa546-conjugated goat anti-mouse IgG (Invitrogen). Nuclei were stained with DAPI (Sigma-Aldrich). Images were taken on a Nikon Eclipse E800 or Leica DMI 4000B.
 
-## Immunohistochemistry and immunofluorescence of human muscle samples
+### Immunohistochemistry and immunofluorescence of human muscle samples
 
 Human muscle samples were fixed in neutral buffered formalin for 24 hr and then placed in 70 % ethanol for at least 24 hr. The sample with heterotopic bone was decalcified in 10 % EDTA (pH 7.2–7.4) before paraffin embedding and sectioning. Sections were stained with hematoxylin and eosin (J. David Gladstone Institutes Histology Core) or for alcian blue (pH 1.0) for cartilage and nuclear red stain for nuclei.
 
 Freshly harvested human muscle was stored in DMEM with 30 % FBS at 4 °C, or snap in frozen in O.C.T. compound in 2-methylbutane chilled in liquid nitrogen. Serial 6 µm transverse frozen sections were analyzed or stored at –80 °C and processed similarly to the mouse TA samples above. Sections were stained with PAX7 (DSHB) and mouse monoclonal anti-Collagen Type I (Millipore-Sigma). Details about specimens are in the Figure 1—source data 1.
 
-## RT-PCR and quantitative analysis
+### RT-PCR and quantitative analysis
 
 Tissues were collected in TRI Reagent (Sigma-Aldrich) to isolate total RNA using the Arcturus PicoPure RNA kit (Applied Biosystems) as previously described for small samples (Schepers et al., 2012). A total of 0.2–0.5 µg of RNA were transcribed into cDNA with VeriScript cDNA synthesis kit (Affymetrix). cDNA was then pre-amplified with GE PreAmp Master Mix (Fluidigm Inc). Real-time quantitative PCR was performed in triplicated with either VeriQuest Probe qPCR Master Mix (Affymetrix) or Taqman Universal PCR Master Mix (Life Technologies) on either a Viia7 thermocycler (Life Technologies) or on a BioMark 48.48 dynamic array nanofluidic chip (Fluidigm, Inc) according to manufacturers’ instructions. ACTB was used for normalization as endogenous control.
 
 Single cell RNA Sequencing and Analysis scRNAseq was performed using the Chromium Single Cell 3' Reagent Version 2 Kit from 10 X Genomics. 45,000 (FOP) and 30,000 (control) HNK1-CD45-CD31- CXCR4+CD29+CD56dim cells isolated from the iMPC differentiations were loaded onto one well of a 10X chip to produce Gel Bead-in-Emulsions (GEMs). GEMs underwent reverse transcription to barcode RNA before cleanup and cDNA amplification. Libraries were prepared with the Chromium Single Cell 3' Reagent Version 2 Kit. Each sample was sequenced on 1 lane of the NovaSeq 6,000 S4. Sequencing reads were processed with Cell Ranger version 2.0.0. using the human reference transcriptome GRCh38. The estimated number of cells, mean reads per cell, median genes per cells, median UMI (Unique Molecular Identifier) counts per cells as well as other quality control information are summarized in Figure 4—source data 1. Gene-barcoded matrices were analyzed with the R package Seurat v3.1.5 (Satija et al., 2015; Stuart et al., 2019; Team, 2014; Zheng et al., 2017). Gene core matrices from single cell RNA sequencing of primary human satellite cells isolated from a vastus muscle (Barruet et al., 2020) was used when comparing the transcriptional profile of hiPS-derived HNK1-CD45-CD31- CXCR4+CD29+CD56dim cells. For the comparison with primary Hu-MuSCs, hiPSC-derived cell sequencing reads were re-aligned using the human reference transcriptome hg19. Cells with fewer than 500 genes, greater than 5,000 genes and genes expressed in fewer than five cells were not included in the downstream analyses. Cells with more than 10 % mitochondrial counts were filtered out. Samples were normalized with NormalizeData using default settings. The FindVariableFeatures function was used to determine subset of feature that exhibit high cell-to-cell variation in each dataset based on a variance stabilizing transformation (‘vst’). We used the default setting returning 2000 feature per dataset. These were used for downstream analysis. In the case of the merged data analysis samples were combined utilizing the FindIntegrationAnchors function with the ‘dimensionality’ set at 30. Then, we ran these ‘anchors’ to the IntegratData function for batch correction for all cells enabling them to be jointly analyzed. The resulting outputs were scaled mitochondrial contamination regressed out with the ScaleData function. In addition, while we didn’t regress out heterogeneity associated with cell cycle stage since it is an important factor in determining the state of quiescence of our sorted human muscle stem cells, we regressed out differences between G2/M and S cell cycle stage. PCA was performed with RunPCA, and significant PCs determined based on the Scree plot utilizing the function PCElbowPlot. The resolution parameter in FindClusters was adjusted to 0.5. Clusters were visualized by UMAP with Seurat’s RunUMAP function. We performed differential gene-expression utilizing Seurat v3’s FindMarkers function with default settings which utilizes the Wilcoxon rank-sum test to calculate adjusted p values for multiple comparisons. We used the CellCycleScoring function to assign score based on the expression of G2/M and S phase markers (Regev et al., 2017). Myogenic cells were further analyzed by sub-clustering using the subset function. We then use the FindNeighbors (dims = 15) and FindClusters (resolution = 0.4) functions on the myogenic cell subset of the merged hiPSCs samples only to identify sub-clusters corresponding to different myogenic states. To order the cells in pseudotime based on their transcriptional similarity we used Monocle 2.12. Variable genes from Seurat analysis were used as input and clusters were projected onto the minimum spanning tree after ordering. Gene expression patterns were plotted with plot_genes_branched_heatmap, plot_genes_branched_pseudotime, and plot_multiple_branches_pseudotime. The BEAM (branch expression analysis modeling) function was used to score gene significance in a branch-dependent manner. Cells were re-ordered using the orderCells function to set branch A (myocytes) in Figure 6H as the ‘root-state’. This allowed us to determine genes that were significantly branch dependent in branch A (mainly Hu-MuSCs) vs branch B (hiPS-derived cells) using the BEAM analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 The data were analyzed utilizing GraphPad Prism v.7 software (GraphPad) using one-way (transplant) and two-way ANOVA with post hoc Tukey’s or Sidak’s multiple comparison test (gene expression). The Sidak test was used when comparing means between control and FOP, and the Tukey test was used when means of both control and FOP were compared together with other groups for the gene expression data. For the transplantation studies, at least three mice were used per group. At least three biological replicates were performed for each experiment unless indicated otherwise. All error bars are depicted as standard deviation, p-values are (*p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001).
 
-## Human specimen procurement
+### Human specimen procurement
 
 Human samples were collected through the UCSF Biospecimens and Skeletal Tissues for Rare and Orphan Disease Genetics (BSTROnG) Biobank, using protocols approved by the UCSF Institutional Review Board. All participants provided written consent. For the transplantation studies (Figure 1D–H and Figure 1—figure supplement 1), biopsy of the control subject was obtained from a 44 yo female healthy individual undergoing surgery at UCSF, and the muscle from the FOP patient was obtained at autopsy from a 55 yo female. Written informed consent was obtain from all subjects or their families.

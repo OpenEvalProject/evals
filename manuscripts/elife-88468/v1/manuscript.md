@@ -13,8 +13,8 @@
 
 ### Affiliations
 
-1. https://ror.org/059z11218 Department of Microbiology, Kawasaki Medical School Kurashiki Japan
-2. https://ror.org/02zhqgq86 State Key Laboratory for Emerging Infectious Diseases, Department of Microbiology, The University of Hong Kong Hong Kong China
+1. Department of Microbiology, Kawasaki Medical School Kurashiki Japan ([ROR:059z11218](https://ror.org/059z11218))
+2. State Key Laboratory for Emerging Infectious Diseases, Department of Microbiology, The University of Hong Kong Hong Kong China ([ROR:02zhqgq86](https://ror.org/02zhqgq86))
 
 † Corresponding author
 
@@ -36,7 +36,7 @@ In this paper, we introduce a statistical framework for systematically quantifyi
 
 ## Results
 
-## Diffraction-limited, single-colour imaging of viral mRNAs
+### Diffraction-limited, single-colour imaging of viral mRNAs
 
 First, we used single-molecule RNA FISH (smFISH) to study the viral transcription of PB1, HA, NP, and NS. The lung carcinoma cell line A549 was infected with the WSN strain of influenza A virus at the multiplicity of infection (MOI) of ~2 for 2 hr, and the viral mRNAs were visualised with a tile of short oligonucleotide probes, each labelled with a single fluorophore (Raj et al., 2008; Figure 1A). Viral mRNAs were detected as single diffraction-limited spots in the three-dimensional (3D) image stacks. Each spot represents a single mRNA molecule (Femino et al., 1998), allowing for quantification of the absolute number of mRNA molecules in individual cells (Figure 1B).
 
@@ -52,41 +52,97 @@ We wished to quantify the nuclear ratio of mRNAs in each cell. The mRNA count wi
 
 With this approximation, about 30% of the PB1, NP, and NS mRNAs were nuclear, while ~70% of HA mRNAs were in the nuclear fraction (Figure 1I), confirming the visual inspection that the HA mRNAs are more abundant in the nucleus at the early time point of infection (Figure 1E). This result indicates that the rate of viral mRNA export from the nucleus varies according to the viral segments. Note that our fluorescent probes could also detect complementary RNA (cRNA), an intermediate RNA that is produced for the viral genome replication, as it has the same polarity as viral mRNA. However, the fluorescent signals detected at 2 hr post-infection are deemed to be from the mRNAs because cRNA production occurs much later than the mRNA synthesis (Phan et al., 2021; Kawakami et al., 2011).
 
-## Mapping eight viral mRNAs in single cells by multiplex RNA FISH
+### Mapping eight viral mRNAs in single cells by multiplex RNA FISH
 
 Next, we wish to simultaneously quantify all the eight viral segments in situ. To this end, we applied multiplex error-robust RNA FISH (MERFISH) (Moffitt et al., 2016), an imaging-based transcriptome assay in which multiple rounds of probe hybridisation and imaging are performed to identify hundreds to thousands of mRNA species in situ by decoding binary fluorescent signals. For example, hundreds of distinct mRNAs can be encoded in 16-bit binary signals, in which case eight rounds of hybridisation and imaging would be required to read out the signals with two fluorophores (Moffitt et al., 2016). In our case of detecting eight influenza A virus segments, 6 bits were sufficient to accommodate all the eight mRNAs, with each code being separated by two or more binary flips from others (Figure 2A). Thus, only three rounds of hybridisation and two-colour imaging were required. We sought for an economical way of performing sequential rounds of hybridisation and imaging, instead of setting up a custom-built, automated liquid pumping system used elsewhere (Moffitt et al., 2016). Inspired by an in vitro reconstitution assay of molecular motors (Miura et al., 2010), we assembled a flow cell on a slide glass, comprising two stripes of double-sided tape and the coverslip, with cells on the coverslip facing inwards (Figure 2A). Liquids were introduced from the right open side and wicked from the left. During image acquisition, the two open sides were sealed with rubber cement. This easy implementation of flow cell allowed us to comfortably perform three rounds of hybridisation and two-colour imaging to read out the 6-bit binary tags; and by decoding the 6-bit encodings, the eight viral segments were identified in each cell (Figure 2B). On average, about 100–200 molecules of each segment were contained per cell (Figure 2C, top row). The difference in the total number of spots from the result presented in Figure 1D is likely due to the batch effect (experimental variation).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88468/elife-88468-fig2-v1.jpg)
+
+**Figure 2.:** (A) An overview of the assay. The viral mRNAs were hybridised with the encoding probes, and then the amplification probes were annealed (not shown in the diagram for simplicity). A flow cell was assembled in which the readout probes were hybridised and the cells were imaged in the three sequential rounds of hybridisation and imaging. Subsequently fluorescent signals were decoded according to the encodings listed on the right. (B) A representative mapping of identified viral mRNAs on the segmented cell and nuclear boundary in the entire field-of-view (left) and the close-up in the red square (right). The mesh grids indicate ~34 µm interval on the left, and ~17 µm interval on the right. Cells were removed if their cytoplasmic boundaries touched any edge of the field-of-view. (C) Total count of mRNAs in 204 single cells (top row) and the nuclear fraction (bottom row) for each segment. (D) Heatmap representation of mRNA counts in single cells. The viral segments are in rows, cells in columns. The cells were clustered column-wise to highlight the inequality in the abundance of transcripts carried per cell. The colour code for the absolute count is indicated in the vertical bar on the right. (E) A pair-wise analysis of the total transcript counts per cell between segments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88468/elife-88468-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A schematic diagram of in-house probe synthesis. The pool of single-stranded DNA templates were PCR-amplified, T7-transcribed, and reverse-transcribed using the fluorescent-labelled primer. The number of distinct probes contained in the pool is indicated for each segment. For HA, NA, M, and NS segments, two additional fluorescent probes bind to each probe. As a result, the number of fluorophores bound per mRNA molecule is theoretically three times as many as the probes for those segments. (B) Total count of mRNAs per cell for each segment. The sample size (n) indicates the number of cells analysed. (C) The nuclear ratio of mRNAs in each cell. The sample size is the same as the one indicated in panel B.
 
 The nuclear fraction of mRNAs varied between the viral segments (Figure 2C, bottom row): While ~30% of mRNAs were nuclear for PB1, NP, and NS segments, about 70% of mRNAs remained in the nucleus for HA and NA segments; for the other segments (PB2, PA, and M), around half of mRNAs were in the nucleus. This reiterates the idea that the rate of viral mRNA export from the nucleus varies according to the viral segments. These results were confirmed by smFISH using probes for each segment that were synthesised economically in-house (Figure 2—figure supplement 1A, B, and C).
 
 Single-cell clustering according to the abundance of eight viral segments revealed that the cell population was heterogeneous in terms of the abundance of viral mRNAs (Figure 2D). A pair-wise analysis of the abundance of viral segments indicated inequal distribution of viral mRNAs, regardless of the segments (Figure 2E): Cells that carry abundant mRNAs from one segment tend to also carry abundant mRNAs from the other segments. These observations suggest that the viral transcription is susceptible to the stochastic variation in each infection (Heldt et al., 2015; Russell et al., 2018), which we subsequently used in our statistical model to estimate the nuclear export rate.
 
-## Conceiving the model
+### Conceiving the model
 
 We suspected that the higher nuclear ratio of HA and NA mRNAs is due to the slower nuclear export rate for these mRNAs compared with other segments such as NP and NS. Thus, we wished to quantify the nuclear export rate of eight viral mRNA species from the observed nuclear-to-cytoplasmic distribution. To this end, we conceived a statistical model using the cell-to-cell variation in the abundance of viral transcripts of each segment (Figure 3A). In this model, influenza viral particles are added to the cell population at time 0 hr and are allowed to undergo viral attachment to the cell surface, membrane fusion, and vRNP migration to the nucleus. The waiting time for these processes vary in each infection due to the stochastic nature of biochemical events (Lakadamyali et al., 2003; Heldt et al., 2015; Heldt et al., 2012), and therefore, the onset of viral transcription varies from cell to cell in the population. In other words, each cell will have a varying duration for viral transcription by the time the observation is made at time 2 hr (Figure 3A, top). As a result, the population contains ‘front runners’ in which the viral transcription was initiated early, and therefore, abundant viral transcripts are carried; ‘slow starters’ in which the transcription began late, containing fewer transcripts; and many other cells that lie along the spectrum between the two. The cell population at the single point in time, therefore, forms a trajectory of the time development of viral transcription and subsequent nuclear export on the scale of nuclear fraction against the abundance of transcripts (Figure 3A, bottom): In a spontaneous transcription burst, the nascent transcripts emerge in the nucleus at the early stage of the burst, and they are exported to the cytoplasm as more transcripts are being synthesised (Billman et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88468/elife-88468-fig3-v1.jpg)
+
+**Figure 3.:** (A) A theoretical diagram of how viral mRNAs emerge in single cells in the population. The front runners designate ones in which the viral transcription was initiated earlier than others, and the slow starters are ones that started transcription lately. The bottom plot shows the theoretical relationship between the nuclear ratio and the abundance of transcripts in which the front runners and slow starters (and many more along the spectrum in between) compose the clusters as indicated. (B) Scatter plots of nuclear fraction against the total count in each cell, derived from the dataset presented in Figure 2C. (C) Time-course of the distribution of total nucleoprotein (NP) mRNA count per cell, measured by single-molecule RNA FISH (smFISH), at the indicated time points (top row); and the change in the nuclear fraction size, plotted against the total number of transcripts (bottom row). The sample size (n) indicates the number of cells observed at each time point.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88468/elife-88468-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The nuclear ratio of mRNAs in each cell was plotted against the total number of mRNAs in that cell. The original data were derived from Figure 2—figure supplement 1B and C.
 
 Indeed, when the nuclear ratio of viral mRNA was plotted against the total quantity of mRNA molecules observed by multiplex RNA FISH in each cell, the plots formed a curve: It originated from top left (i.e. nearly 100% of the nuclear ratio when a cell contained a few mRNA molecules), and descended as the number of mRNA molecules increased (30–70%, depending on the segments) (Figure 3B, Figure 3—figure supplement 1).
 
 We further validated this concept by performing smFISH measurements along the time-course with 40-min interval (Figure 3C). A549 was infected with WSN at the MOI of ~0.02. This low MOI allowed for spot quantification over longer time points without the spots becoming too crowded. At each time point, the NP mRNAs were stained and quantified. The total mRNA count was virtually zero at the beginning (0 and 40 min). As the mRNA count increased (80–200 min post-infection) (Figure 3C, top), the nuclear ratio against the total mRNA count obtained from the single cells progressed along a curve, from the top left to the bottom right (Figure 3C, bottom), supporting the concept of our statistical model.
 
-## Implementing a kinetic model to estimate the nuclear export rate
+### Implementing a kinetic model to estimate the nuclear export rate
 
-The curvature of the trace varied between segments (Figure 3B). We explored to see whether we could extract the nuclear export rate for each segment from the trace formed by the observed data. To this end, we formulated a simple kinetic model in which mRNAs are synthesised at the rate λ in the nucleus, and are exported with the reaction constant μ (Figure 4A). In this model, the molecules of mRNAs in the nuclear and cytoplasmic compartments are described, respectively,(1)d[Nuclear]dt=λ−μ[Nuclear](2)dCytoplasmicdt=μNuclear
+The curvature of the trace varied between segments (Figure 3B). We explored to see whether we could extract the nuclear export rate for each segment from the trace formed by the observed data. To this end, we formulated a simple kinetic model in which mRNAs are synthesised at the rate λ in the nucleus, and are exported with the reaction constant μ (Figure 4A). In this model, the molecules of mRNAs in the nuclear and cytoplasmic compartments are described, respectively,
+
+$$
+\frac{d[Nuclear]}{dt}=\lambda−\mu[Nuclear]
+$$
+
+
+
+$$
+\frac{dCytoplasmic}{dt}=\muNuclear
+$$
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88468/elife-88468-fig4-v1.jpg)
 
 **Figure 4.:** (A) A schematic diagram representing the production of viral transcripts in the nucleus and the export to the cytoplasm. The two spherical compartments are for the nucleus and the cytoplasm. Viral transcripts (magenta) are produced at a rate constant λ in the nucleus, and exported at a rate constant μ to the cytoplasm. (B) The relationship between the nuclear fraction and the total count in the kinetic model, according to the formula presented in panel A. The parameter α determines the curvature of the plot. (C) The parameter fit to the observed data points. The parameter α was estimated by fitting the equation to the observed data points presented in Figure 3B. The colour representation in each line is the same as the ones used in panel B, according to the parameter α. (D) Estimated nuclear export rate. The parameter μ was estimated from the three independent assays (indicated in black for each segment); the blue bar indicates the mean of the three measurements.
 
-Omitting the degradation of mRNAs (see the next section), the analytical solutions of these equations were as follows:(3)Nuclear=λμ(1−e−μt)(4)Cytoplasmic=λt−λμ(1−e−μt)
+Omitting the degradation of mRNAs (see the next section), the analytical solutions of these equations were as follows:
 
-Thus, the mRNA nuclear fraction ρ was described as a function of total mRNA molecules Ntotal,(5)Nuclearfractionρ=1αNtotal(1−e−αNtotal)
+$$
+Nuclear=\frac{\lambda}{\mu}(1−e^{−\mut})
+$$
 
-where(6)α=μλ
+
+
+$$
+Cytoplasmic=\lambdat−\frac{\lambda}{\mu}(1−e^{−\mut})
+$$
+
+Thus, the mRNA nuclear fraction ρ was described as a function of total mRNA molecules Ntotal,
+
+$$
+Nuclearfractionρ=\frac{1}{\alphaN_{total}}(1−e^{−\alphaN_{total}})
+$$
+
+where
+
+$$
+\alpha=\frac{\mu}{\lambda}
+$$
 
 The nuclear fraction ρ described in Equation 5 is time-independent, and the parameter α determines the curvature of the line that the single cells would trace in the time-course (Figure 4B). Thus, we estimated the parameter α by fitting to the observed data points derived at the time in which cells were fixed (Figure 4C). By obtaining the synthesis rate λ from the total number of mRNAs produced by the time of fixation (Figure 2C, top row), the parameter μ for each segment was obtained according to Equation 6 (Figure 4D). The parameter μ represents the fraction of mRNAs in the nucleus that are exported within an infinitesimal time (i.e. the nuclear export rate). The result reveals the variation of nuclear export rate in the eight viral segments (Figure 4D). The nuclear export rate μ agreed with the historical classification of the early and late influenza A virus genes (Lamb and Choppin, 1983; Hatada et al., 1989), suggesting the possibility that the timing of influenza A virus protein expression in the initial stage of infection is determined by the rate of the nuclear export.
 
-## Time-course study of viral mRNA degradation and nuclear export
+### Time-course study of viral mRNA degradation and nuclear export
 
 We omitted the mRNA degradation in the kinetic model described in the previous section. To confirm that this simplification can be justified, we measured the viral mRNAs over 5 hr after halting the viral transcription (Figure 5A). The influenza virus was allowed for transcription for 2 hr, after which the transcription was blocked by baloxavir (Noshi et al., 2018), inhibiting the nuclease activity that resides in the viral polymerase subunit PA. We examined the HA and NP segments by smFISH, the two extreme examples that showed the highest and lowest nuclear export rate in our model, and found no reduction in viral mRNAs over the 5 hr after inhibiting the viral transcription (Figure 5B, Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/88468/elife-88468-fig5-v1.jpg)
+
+**Figure 5.:** (A) A schematic diagram of the time-course measurement. Cells were infected with the virus 2 hr prior to the baloxavir treatment for halting the viral transcription. Cells were fixed at 1-hr interval thereafter, then subjected to single-molecule RNA FISH. (B) The total mRNA counts over time post baloxavir treatment for the hemagglutinin (HA) (top) and nucleoprotein (NP) (bottom) segments. (C) The change of mRNA fraction detected in the nucleus over time post baloxavir treatment. The exponential decay was fitted against the data using either all the data points (indicated with the blue line) or the first two time points (indicated with the orange line). The exponents (i.e. the nuclear export rates) estimated are shown on the panel with the corresponding colour.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88468/elife-88468-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The total mRNA counts over time post baloxavir treatment for the hemagglutinin (HA) and nucleoprotein (NP) segments. Two additional biological replicates accompanying the data presented in Figure 5B are shown.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88468/elife-88468-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The change of mRNA fraction detected in the nucleus over time post baloxavir treatment. The exponential decay was fitted against the data using either all the data points (indicated with the blue line) or the first two time points (indicated with the orange line). The exponents are shown inside the panel with the corresponding colour. These are two additional biological replicates accompanying the data in Figure 5C.
 
 Next, we estimated the mRNA export rate using the time-course measurement. The nuclear ratio of viral mRNAs was plotted at each time point, and the decay constant of the exponential decay (i.e. the rate of nuclear export, corresponding to the parameter μ in our model) was fitted against the nuclear ratio that declined over time (Figure 5C, Figure 5—figure supplement 2). For the HA segment, the nuclear export rate estimated using all the time points (indicated with the blue line) was 0.243 hr–1 (the mean of three replicates), in a good agreement with the one estimated in our model. On the other hand, for the NP segment, the nuclear export rate estimated from the time-course measurement was 0.631 hr–1 (the mean of three replicates), which was much lower compared with our model estimation for the NP segment. We gave the reason that the NP mRNAs were exported so rapidly that, in the time-course study, the nuclear ratio had already started to approach its lowest by the first time point following the baloxavir treatment, leading to the underestimation of the mRNA export rate. Using only the first two time points for the decay-constant fit (indicated with the orange line) did not make a significant difference (estimated rate 0.972 hr–1 for the NP segment, the mean of three replicates). This highlights that our model enables the estimation of mRNA export rate from a single snapshot of mRNA distribution in cells, eliminating the need for time-course measurements that could potentially underestimate the export rate.
 
@@ -112,17 +168,83 @@ We suggest that the nuclear export of influenza viral transcripts is intrinsic t
 
 ## Materials and methods
 
-## Cells and virus preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (influenza virus)</td>
+      <td>WSN</td>
+      <td>PMID:10430945</td>
+      <td>Influenza A virus (A/WSN/1933(H1N1))</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CCL-185</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Wash Buffer A</td>
+      <td>Stellaris</td>
+      <td>SMF-WA1-60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Wash Buffer B</td>
+      <td>Stellaris</td>
+      <td>SMF-WB1-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Hybridization Buffer</td>
+      <td>Stellaris</td>
+      <td>SMF-HB1-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Baloxavir acid</td>
+      <td>Shionogi</td>
+      <td>SH-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Coverslip</td>
+      <td>Matsunami Glass</td>
+      <td>C0180HT</td>
+      <td>0.17±0.005 mm thickness</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells and virus preparation
 
 The human lung carcinoma cell line A549 was maintained in Dulbecco’s Modified Eagle’s Medium (DMEM) (Sigma, D5796) supplemented with 10% FBS (Nichirei Biosciences, 175012), 100 U/ml penicillin, and 100 µg/ml streptomycin (Gibco, 15140-122) at 37°C in 5% CO2. Madin-Darby canine kidney (MDCK) cell line was maintained in Minimum Essential Medium (MEM) (Sigma, M4655) supplemented with 10% FBS, 100 U/ml penicillin, and 100 µg/ml streptomycin at 37°C in 5% CO2. Influenza A virus strain WSN was propagated in MDCK cells in a 75 cm2 flask. The plaque-forming unit of the harvested virus was determined using MDCK cells grown confluent in a six-well plate.
 
-## Coverslip preparation
+### Coverslip preparation
 
 An 18-mm round coverslip (0.17±0.005 mm thickness, Matsunami Glass) was used. For MERFISH, two straight sides were created by cutting two edges off the glass using a laser-wheel glass cutter (Nikken Dia, NC-X03 LASER 110°). The coverslip was rinsed in 70% ethanol and placed in a 12-well plate. A549 cells were seeded and attached onto the coverslip overnight. On the following day, cells were rinsed twice with PBS and infected with WSN at the indicated MOI in MEM for 2 hr (unless indicated otherwise in Figure 3C) in the absence of FBS. After the infection, cells were fixed with 4% paraformaldehyde (Electron Microscopy Sciences, 15714-S) in PBS for 10 min and then rinsed three times with PBS. The coverslip was immersed in 70–75% ethanol and stored at −20°C until use.
 
 For the baloxavir treatment in Figure 5, cells were infected with WSN for 2 hr as described above. Then, the medium with the virus was removed, and 800 µl of DMEM (containing 10% FBS, 100 U/ml penicillin, and 100 µg/ml streptomycin) with 100 nM baloxavir acid (Shionogi, SH-02) was added to each well. Subsequently, coverslips were prepared by fixing the cells at the intervals indicated in Figure 5A.
 
-## smFISH
+### smFISH
 
 The probes used in Figure 1, Figure 3C, Figure 2—figure supplement 1 (probes for NP), and Figure 6 were obtained from LGC Biosearch Technologies. Stellaris RNA FISH Probe Designer (https://www.biosearchtech.com/stellaris-designer) was used to design the probes against the coding region of WSN mRNAs.
 
@@ -132,7 +254,7 @@ For an economical reason and to allow for more flexible design of probes to incr
 
 The coverslip was equilibrated in 1 ml of 30% formamide buffer composed of 2×SSC and 30% deionised formamide (Sigma, F9037) in a 12-well plate for >5 min prior to hybridisation. Cells were hybridised with the probes at the concentration of 5.6 nM per probe in 100 µl Hybridisation buffer composed of 2×SSC, 30% deionised formamide, 0.1% yeast tRNA (Invitrogen, 15401-011), 1% (vol/vol) RNase inhibitor (NEB, M0314S), and 10% (wt/vol) dextran sulfate (Merck, S4030) (Moffitt et al., 2016) on a Hybrislip at 37°C overnight in a humidified chamber. On the following day, the coverslip was rinsed twice in 1 ml of 30% formamide buffer, each for 30 min. DAPI was included at 5 ng/ml in the second wash if additional staining was not performed with the external probes (for PB2, PB1, and PA). In this case, the coverslip was rinsed in 1 ml of PBS after the DAPI staining, mounted in anti-fade medium (Vector Laboratories, H-1900) on a slide glass, and sealed with nail polish. For staining HA, NA, M, and NS with the extra probes, the coverslip was first equilibrated with 10% formamide buffer composed of 2×SSC, 10% deionised formamide, and 0.05% (vol/vol) RNase inhibitor, and then hybridised with 10 nM each of probes for RS0332 and RS0406 (Moffitt et al., 2016), both labelled with Quasar 570 (LGC Biosearch) at the 3′ end, in Stellaris hybridisation buffer (containing 10% formamide) at 37°C in the humidified chamber for 1 hr. Cells were washed in 10% formamide buffer twice, with DAPI included in the second wash. The coverslip was rinsed in PBS, mounted in the anti-fade medium (Vector Laboratories, H-1900), and sealed with nail polish.
 
-## Sequential hybridisation and imaging in the flow cell
+### Sequential hybridisation and imaging in the flow cell
 
 An oligonucleotide pool for synthesising the encoding probes used in Figure 2, comprising the target-binding sequence, readout tags compatible with the two-step amplification probes (Moffitt et al., 2016; Xia et al., 2019), and the P5 and P7 PCR tags, were obtained from IDT. The target-binding sites were identified in the coding region of each segment using OligoMiner (Beliveau et al., 2018) and selected against human RefSeq. The readout tags RS0332, RS0343, RS0406, RS0255, RS0015, and RS0384 (Moffitt et al., 2016; Xia et al., 2019) were inserted adjacent to the upstream or downstream of the target-binding sites for the 6-bit encoding of each segment (Figure 2A). Probes were synthesised by PCR, T7 transcription, and reverse transcription as described above.
 
@@ -144,16 +266,76 @@ Readout-probe hybridisation and wash buffer was flushed in the chamber to equili
 
 After the imaging, the disulfide bond linking the probe and the fluorophore was cleaved with Cleavage buffer comprising 2×SSC and 50 mM TCEP (Sigma, 646547) for 15 min. The chamber was flushed with Readout-probe hybridisation and wash buffer to wash away the free fluorophores prior to introducing the readout probes for the next round. Readout probes used in this study are listed in Table 1.
 
-## Imaging platform
+**Table 1.**
+ Readout probes used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Round</th>
+      <th>Channel</th>
+      <th>Sequence (5′ to 3′) and fluorescent dye</th>
+      <th>Manufacturer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RS0332amp</td>
+      <td>1</td>
+      <td>1</td>
+      <td>TTC TTC CCT CAA TCT TCA TC -S-S- Q570</td>
+      <td>LGC Biosearch</td>
+    </tr>
+    <tr>
+      <td>RS0343amp</td>
+      <td>1</td>
+      <td>2</td>
+      <td>TAC TAC AAA CCC ATA ATC CC -S-S- Q670</td>
+      <td>LGC Biosearch</td>
+    </tr>
+    <tr>
+      <td>RS0406amp</td>
+      <td>2</td>
+      <td>1</td>
+      <td>AAT CTC ACC TTC CAC TTC AC -S-S- Q570</td>
+      <td>LGC Biosearch</td>
+    </tr>
+    <tr>
+      <td>RS0255amp</td>
+      <td>2</td>
+      <td>2</td>
+      <td>TCA CCT CTA ACT CAT TAC CT -S-S- Q670</td>
+      <td>LGC Biosearch</td>
+    </tr>
+    <tr>
+      <td>RS0015amp</td>
+      <td>3</td>
+      <td>1</td>
+      <td>TCT CAC ACC ACT TTC CTC AT -S-S- ATTO550</td>
+      <td>Generay</td>
+    </tr>
+    <tr>
+      <td>RS0384amp</td>
+      <td>3</td>
+      <td>2</td>
+      <td>TCC TCA TCT TAC TCC CTC TA -S-S- ATTO647N</td>
+      <td>Generay</td>
+    </tr>
+  </tbody>
+</table>
+
+### Imaging platform
 
 Images were acquired using a Nikon Ti2-E with a Nikon Plan Apo Lambda ×60 (NA 1.40) (Figures 1 and 6) or ×100 (NA 1.45) (Figure 3C) objective lens equipped with a Prime 95B 25MM back-illuminated sCMOS camera (Photometrics). Otherwise, an Olympus IX83 equipped with an Olympus UPlan XApo ×60 (NA 1.42) objective lens and a cooled monochrome CCD camera (DP80, Olympus) was used (Figure 2, Figure 2—figure supplement 1, Figure 3—figure supplement 1, Figure 5, Figure 5—figure supplement 1, and Figure 5—figure supplement 2).
 
-## Spot quantification
+### Spot quantification
 
 Fluorescent spots detected by smFISH were quantified using either FISH-QUANT (Mueller et al., 2013; Figures 1, 3C, and 6) or a more recent Python package Big-FISH (Imbert et al., 2022; Figure 2—figure supplement 1, Figure 3—figure supplement 1, Figure 5, Figure 5—figure supplement 1, and Figure 5—figure supplement 2). Cytoplasmic and nuclear segmentation was performed using Cellpose (Stringer et al., 2021; Pachitariu and Stringer, 2022). Objects that were on the boundary of the image was eliminated. Cytoplasmic regions with no nucleus therein due to the erroneous segmentation were also eliminated. The identification numbers assigned to each object by Cellpose were rearranged so that the cytoplasm and nucleus of the same cell correspond. In order to make the Cellpose mask readable in FISH-QUANT, the Cellpose mask were converted into X and Y coordinates by tracing each object in the mask using the Moore neighbourhood edge-finding algorithm.
 
 For MERFISH signal decoding, signals from the green-fluorescent carboxyl beads were used to register the images. Images at the corresponding field-of-view from the three rounds of imaging were registered using phase_cross_correlation from the Python package skimage.registration. The registered images were filtered using Laplacian-of-Gaussian implemented in Big-FISH, and the image intensity was manually normalised. Fluorescent signals were then decoded using PixelSpotDecoder in DetectPixels implemented in starfish (https://github.com/spacetx/starfish, Axelrod et al., 2018).
 
-## Data analyses and presentation
+### Data analyses and presentation
 
 Microscopy images were presented using the Python package microfilm (Guillaume Witz, Microscopy Imaging Center and Science IT Support, University of Bern, https://github.com/guiwitz/microfilm; Witz, 2025; Figure 1B). Cell clustering was performed with the method centroid implemented in scipy.cluster.hierarchy.linkage from SciPy (https://scipy.org/; Figure 2D). The parameter α in Equation 5 (Figure 4C) and the exponents in Figure 5C, Figure 5—figure supplement 2 were estimated using curve_fit implemented in scipy.optimize from SciPy.

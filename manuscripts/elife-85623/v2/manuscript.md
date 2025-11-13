@@ -16,11 +16,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01swzsf04 Psychiatry Department, Faculty of Medicine, University of Geneva Geneva Switzerland
-2. https://ror.org/01swzsf04 Faculte de Psychologie et Science de l’Education, University of Geneva Geneva Switzerland
-3. https://ror.org/01tmp8f25 Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas, Universidad Nacional Autónoma de México, Ciudad Universitaria Mexico City Mexico
+1. Psychiatry Department, Faculty of Medicine, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
+2. Faculte de Psychologie et Science de l’Education, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
+3. Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas, Universidad Nacional Autónoma de México, Ciudad Universitaria Mexico City Mexico ([ROR:01tmp8f25](https://ror.org/01tmp8f25))
 4. Fondation Pôle Autisme Geneva Switzerland
-5. https://ror.org/01xfzxq83 College of Medicine, Mohammed Bin Rashid University of Medicine and Health Sciences Dubai United Arab Emirates
+5. College of Medicine, Mohammed Bin Rashid University of Medicine and Health Sciences Dubai United Arab Emirates ([ROR:01xfzxq83](https://ror.org/01xfzxq83))
 6. Bosch Sensortec GmbH Reutlingen Germany
 
 † Corresponding author
@@ -45,9 +45,9 @@ In the current study, we opted for a comprehensive approach to characterize atyp
 
 ## Results
 
-## Divergence from the typical gazing patterns, its relation to clinical phenotype and movie properties
+### Divergence from the typical gazing patterns, its relation to clinical phenotype and movie properties
 
-## Moment-by-moment divergence from the referent gazing patterns
+#### Moment-by-moment divergence from the referent gazing patterns
 
 Gaze data from 166 males with ASD (3.37 ±1.16 years) were recorded while children watched a 3 min episode of the French cartoon Trotro (Lezoray, 2013). The cartoon depicts social interaction between the three donkey characters at a relatively slow pace. We were interested in capturing the difference in moment-to-moment gaze deployment in ASD children compared to the TD group while watching this animated social scene. For this, we compared the gaze allocation of each child with ASD to the referent gaze patterns obtained from 51 age-matched TD males (3.48 ±1.29 years) who watched the same social scene. Referent gaze patterns (‘reference’) were obtained by applying the probability density estimation function (Botev et al., 2010) on gaze data from the TD group on each frame. Hence, for each child with ASD, we obtained a measure indicating the closeness to the reference that we denote Proximity Index-PI, (see Figure 1 and Methods section for detailed explanation). Lower PI values indicate a higher divergence from the reference for the given frame. As the obtained measure dynamically determines the proximity to the referent gaze distribution, there is no need to define areas of interest based on the theoretical priors. Moreover, as it will be further detailed, this method allowed flexibly redefining the referent gaze distribution by constraining the reference sample to a specific age range or group.
 
@@ -63,7 +63,7 @@ As the gaze data of the TD group were used as a reference, we wanted to understa
 
 **Figure 2.:** Violin plots illustrate the distribution of Proximity Index (PI) values for two groups: typically developing (TD) in blue (n = 51) and autism spectrum disorder (ASD) in red (n = 166). The error bars on each plot represent the 95% confidence intervals around the means. Statistical significance of the differences between means was assessed using a two-sample t-test. The PI values for the TD group were derived using a leave-one-out approach, where the PI for each ASD child was calculated based on the referent gaze data from the 51 TD children in the original sample.
 
-## Less divergence in visual exploration is associated with better overall functioning in children with ASD
+#### Less divergence in visual exploration is associated with better overall functioning in children with ASD
 
 To explore how the gaze patterns, specifically divergence in the way children with ASD attended to the social content, related to the child’s functioning, we conducted a multivariate analysis. We opted for this approach to obtain a holistic vision of the relationship between visual exploration, as measured by PI, and different features of the complex behavioral phenotype in ASD. Behavioral phenotype included the measure of autistic symptoms and the developmental and functional status of the children with ASD. Individuals with ASD often present lower levels of adaptive functioning (Bal et al., 2015; Franchini et al., 2018) and this despite cognitive potential (Klin et al., 2007). Understanding factors that contribute to better adaptive functioning in very young children is of utmost importance (Franchini et al., 2018) given the important predictive value of adaptive functioning on later quality of life. The association between behavioral phenotype and PI was examined using the PLS-C analysis (Krishnan et al., 2011; McIntosh and Lobaugh, 2004). This method extracts commonalities between two data sets by deriving latent variables representing the optimal linear combinations of the variables of the compared data sets. We built the cross-correlation matrix using the PI on the left (A) and 12 behavioral phenotype variables on the right (B) side (see Methods section for more details on the analysis).
 
@@ -75,7 +75,7 @@ The PLS-C yielded one significant latent component (r=0.331, p=0.001), best expl
 
 **Figure 3.:** Loadings on the latent component were derived using partial least squares correlation analysis in the sample of 166 children with ASD. The cross-correlation matrix consisted of the Proximity Index on the imaging (A) side and 12 variables on the behavior (B) side. The behavioral matrix encompassed two domains of autistic symptoms assessed by ADOS-2: Social Affect (SA) and Repetitive and Restricted Behaviors (RRB); six subscales of the PEP-3: Verbal and Preverbal Cognition (VPC), Expressive Language (EL), Receptive Language (RL), Fine Motor Skills (FM), Gross Motor Skills (GM), and Oculomotor Imitation (OMI); and four domains from VABS-II: Communication (COM), Daily Living Skills (DAI), Socialization (SOC), and Motor Skills (MOT). Age was controlled for by regressing it out from both sides (A and B) of the cross-correlation matrix. There was a positive correlation between the Proximity Index and all measures of developmental (PEP-3) and adaptive functioning (VABS-II). Error bars represent the bootstrapping 5th to 95th percentiles. Results that were not robust are indicated by a gray boxplot color.
 
-## More ambient and less focal fixations in children with ASD compared to the TD group
+#### More ambient and less focal fixations in children with ASD compared to the TD group
 
 Next, we wanted to complement our analysis using standard measures of visual behavior. In our cross-sectional sample of 166 males with ASD (3.37 ±1.16 years) and 51 TD males (3.48 ±1.29 years), we did not find any significant difference between groups with regard to the overall number of fixations, saccades, median saccade duration, or saccade amplitude for the duration of the cartoon (p>0.05). However, there was a tendency in median fixation duration to be slightly higher in TD children compared to the ASD group (t(215) = 1.85, p=0.06), suggesting a more focused attentional style in the TD group. To characterize the predominant attention exploration mode while watching the cartoon, we defined two types of fixations based on their duration and the length of the preceding saccade. Thus using thresholds as in Unema et al., 2005, a fixation was considered as ‘focal’ if longer than 180 ms and preceded by a saccade of an amplitude smaller than 5° of visual angle. Shorter fixations <180 ms preceded by a longer saccade >5° were classified as ‘ambient.’ We then obtained the proportion of these two fixation types normalized for the overall fixation number. In the ASD group, we observed significantly more ambient fixations (Mann-Whitney test: U=2530, p<0.001) compared to the TD group. The TD group showed more focal fixations (U=2345, p<0.001) in comparison to the ASD group. In both groups, focal fixations were more frequent than ambient (p<0.001) (see Figure 4A1). Higher presence of focal fixations was positively correlated to higher values of Proximity Index in both groups (rTD=0.459, rASD = 0.434, p<0.001) while the opposite relationship was evidenced between Proximity index and proportion of ambient fixations (rTD=–0.400, rASD = –0.31, p=0.002) (see Figure 4 Panels A2 & 3). Compared to the ASD group, the TD group stays less in the ‘shallow’ exploration mode reflected by the ambient fixations. This exploration mode is deployed first to quickly extract the gist of a scene before a more in-depth scene analysis is carried out through focal fixations. Thus our findings suggest that, while in the TD group, the gist of the scene is rapidly extracted, the children in the ASD group spends significantly more time in the exploration mode, wondering where to place more deep attention compared to the TD group. Subsequently, they stay less in the focused mode of attention compared to the TD group.
 
@@ -83,17 +83,17 @@ Next, we wanted to complement our analysis using standard measures of visual beh
 
 **Figure 4.:** (A1) Relative proportion of focal and ambient fixations in a sample of 51 TD children and 166 ASD children. Box-and-whisker plots illustrate the distribution of fixation proportions. The interquartile range (IQR) is represented by each box, with the median shown as a horizontal line. Whiskers extend to the most extreme data points within 1.5 IQR from the box, as per Tukey's method. Differences between groups were statistically assessed using the Mann-Whitney U test, with asterisks (****) indicating p-values less than 0.0001. (A2 & A3): Scatter plots show the correlation between the proportion of focal (A2) or ambient (A3) fixations and PI. Red points represent ASD individuals and blue points represent TD individuals. Spearman's correlation was used for analysis. Each group's data is fitted with its own linear regression line and includes 95% confidence bands.
 
-## The relative contribution of the basic visual properties of the animated scene to gaze allocation in ASD and TD children
+#### The relative contribution of the basic visual properties of the animated scene to gaze allocation in ASD and TD children
 
 We next measured the group difference in the relative contribution of basic visual properties of the scene to visual exploration. Previous studies in adults with ASD have shown that these basic properties play an important role in directing gaze in ASD individuals while viewing naturalistic images (Amso et al., 2014; Wang et al., 2015). Less is known about the contribution of the basic scene properties to gaze allocation while viewing dynamic content. Moreover, besides using static stimuli, most studies focused on the adult population, while the early developmental dynamics of these mechanisms remain elusive. Therefore, we extracted the values of five salience features (intensity, orientation, color, flicker, motion) for each frame of the video using the variant of the biologically inspired salience model, namely graph-based visual saliency (GBVS) (Harel et al., 2006) as explained in details in the Methods section. We calculated salience measures for our cross-sectional sample with 166 males with ASD and age-matched 51 TD males individually for each frame. For each channel (intensity, orientation, color, flicker, and motion) as well as the full model (linear combination of all five channels), we calculated the area under a receiver operating characteristic curve (ROC) (Green and Swets, 1966). The mean ROC value was then used to compare the two groups.
 
-Contrarily to our hypothesis, for all channels taken individually as well as for the full model, the salience model better-predicted gaze allocation in the TD group compared to the ASD group (Wilcoxon t-test returned with the value of p<0.001, Figure 5). The effect sizes (r=Z/N, Rosenthal, 1991) of this difference were most pronounced for the flicker channel r=0.182, followed by the orientation channel r=0.149, full model r=0.132, intensity r=0.099, color r=0.083, and lastly motion r=0.066, Appendix 2. The finding that the salient model predicted better gaze location in TD groups compared to the ASD was not expected based on the previous literature. Still, most studies used static stimuli and the processes implicated in the process of the dynamic content are very different. The salience model itself was validated on the adult vision system. It might be that the gaze in TD better approximates the adult, mature gaze behavior than the gaze behavior in the ASD group.
+Contrarily to our hypothesis, for all channels taken individually as well as for the full model, the salience model better-predicted gaze allocation in the TD group compared to the ASD group (Wilcoxon t-test returned with the value of p<0.001, Figure 5). The effect sizes ($r=Z/\sqrt{N}$, Rosenthal, 1991) of this difference were most pronounced for the flicker channel r=0.182, followed by the orientation channel r=0.149, full model r=0.132, intensity r=0.099, color r=0.083, and lastly motion r=0.066, Appendix 2. The finding that the salient model predicted better gaze location in TD groups compared to the ASD was not expected based on the previous literature. Still, most studies used static stimuli and the processes implicated in the process of the dynamic content are very different. The salience model itself was validated on the adult vision system. It might be that the gaze in TD better approximates the adult, mature gaze behavior than the gaze behavior in the ASD group.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/85623/elife-85623-fig5-v2.jpg)
 
-**Figure 5.:** (A) Illustration of the graph-based visual saliency (GBVS) salience model (Full model combining five channels: I-Intensity, O-Orientation, C-Color, F-Flicker, M-Motion). From top to bottom: Saliency map extracted for a given frame, Saliency map overlay on the original image, Original image with 15% most salient parts shown. (B) Box plot depicting mean receiver operating characteristic (ROC) values, derived framewise from full salience maps and fixation coordinates (x,y), for a sample of 51 TD (Typically Developing) and 166 ASD (Autism Spectrum Disorder) children. Boxes indicate the interquartile range (IQR) and medians are shown as horizontal lines within the boxes. Whiskers extend to the farthest data points not exceeding 1.5 times the IQR from the box edges, in line with Tukey's method. Framewise statistical between group differences were evaluated using the Wilcoxon paired test, with asterisks (***) indicating p-values less than 0.001. Effect size is calculated using formula , (r=Z/NRosenthal, 1991).
+**Figure 5.:** (A) Illustration of the graph-based visual saliency (GBVS) salience model (Full model combining five channels: I-Intensity, O-Orientation, C-Color, F-Flicker, M-Motion). From top to bottom: Saliency map extracted for a given frame, Saliency map overlay on the original image, Original image with 15% most salient parts shown. (B) Box plot depicting mean receiver operating characteristic (ROC) values, derived framewise from full salience maps and fixation coordinates (x,y), for a sample of 51 TD (Typically Developing) and 166 ASD (Autism Spectrum Disorder) children. Boxes indicate the interquartile range (IQR) and medians are shown as horizontal lines within the boxes. Whiskers extend to the farthest data points not exceeding 1.5 times the IQR from the box edges, in line with Tukey's method. Framewise statistical between group differences were evaluated using the Wilcoxon paired test, with asterisks (***) indicating p-values less than 0.001. Effect size is calculated using formula $r=Z/\sqrt{N}$, (Rosenthal, 1991).
 
-## The association of movie content with divergence in visual exploration in ASD group
+#### The association of movie content with divergence in visual exploration in ASD group
 
 Taking into account previous findings of enhanced difficulties in processing more complex social information (Frank et al., 2012; Chita-Tegmark, 2016b; Parish-Morris et al., 2019) in individuals with ASD, we tested how the intensity of social content influenced visual exploration of the given social scene. As detailed in the Methods section, social complexity was defined as the total number of characters for a given frame and ranged from 1 to 3. Frames with no characters represented a substantial minority (0.02% of total video duration) and were excluded from the analysis. We also analyzed the influence of the overall visual complexity of the scene on this divergent visual exploration in the ASD group. The total length of edges defining details on the images was employed as a proxy for visual complexity (see Methods section for more details). Additionally, we identified the moments of vocalization (monologues versus directed speech) and more global characteristics of the scene (frame cuts and sliding background) to understand better how these elements might have influenced gaze allocation. Finally, as an additional measure, we considered how well the gaze of ASD children was predicted by the GBVS salience model or the average ROC scores we derived in the previous section Figure 6, panel A.
 
@@ -103,9 +103,9 @@ Taking into account previous findings of enhanced difficulties in processing mor
 
 To explore the relationship between the PI and different measures of the movie content as previously, we used a PLS-C analysis that is more suitable than the GLM in case of strong collinearity of the regressors this is particularly the case of the visual and social complexity (r=0.763, p<0.001), as well as social complexity and vocalization (r=0.223, p<0.001), as can be appreciated on the Figure 6, panel B. The PLS-C produced one significant latent component (r=0.331, p<0.001). The latent component pattern was such that lower PI was related to higher social complexity, followed by higher visual complexity and the presence of directed speech. In addition, moments including characters engaged in monologue, moments of frame change, and background sliding increased the PI in the group of ASD children. The monologue scenes also coincide with the moments of lowest social complexity that produces higher PI values. For the frame switch and the sliding background, the TD reference appears more dispersed in these moments as children may recalibrate their attention onto the new or changing scene, making the referent gaze distribution more variable in these moments and thus giving ASD more chance to fall into the reference space as it is larger. Finally, visual salience also positively contributed to the PI loading, which is in line with our previous finding of the salience model being more successful in predicting TD gaze than ASD gaze.
 
-## Developmental patterns of visual exploration
+### Developmental patterns of visual exploration
 
-## More divergence in visual exploration is associated with unfolding autistic symptomatology a year later
+#### More divergence in visual exploration is associated with unfolding autistic symptomatology a year later
 
 To capture the developmental change in the PI and its relation to clinical phenotype we conducted the multivariate analysis considering only the subjects that had valid eye-tracking recordings at two time points one year apart. Out of 94 eligible children (having two valid eye-tracking recordings a year apart), 81 had a complete set of phenotype measures. All 94 children had an ADOS, but ten children were missing PEP-3 (nine were assessed using Mullen Scales of Early Learning [Mullen, 1995], one child was not testable at the initial visit), and three children were missing VABS-II as the parents were not available for the interview at a given visit. The proximity index in this smaller paired longitudinal sample was defined using the age-matched reference composed of 29 TD children spanning the age (1.66–5.56) who also had a valid eye-tracking recording a year later. As the current subsample was smaller than the initial one, we limited our analyses to more global measures, such as domain scales (not the test subscales as in our bigger cross-sectional sample). Thus, for the measure of autistic symptoms, we used the total severity score of ADOS. Cognition was measured using the Verbal and preverbal cognition scale of PEP-3 (as the PEP-3 does not provide a more global measure of development Schopler, 2005) and adaptive functioning using the Adaptive behavior Composite score of Vineland (Sparrow et al., 2005). To test how the PI relates within and across time points, we built three cross-covariance matrices (T1-PI to T1-symptoms; T1-PI to T2-symptoms; T2-PI to T2-symptoms) with the PI on one side (A) and the measure of autistic symptoms, cognition, and adaptation on the other side (B). As previously, the significance of the patterns was tested using 1000 permutations, and the stability of the significant latent components using 1000 bootstrap samples.
 
@@ -115,7 +115,7 @@ The PLS-C conducted on simultaneous PI and phenotype measures at the first time 
 
 **Figure 7.:** Sample comprised 81 children with ASD who had valid eye-tracking recording and a complete set of behavioral phenotype measures a year after the baseline (T2). The PI for this paired longitudinal cohort was established using an age-matched reference group of 29 Typically Developing (TD) children. Loadings on the latent component were derived using PLS correlation analysis. The cross-correlation matrix included the Proximity Index (PI) on the imaging side A and three behavioral variables on the B side. The behavioral matrix accounted for two domains of autistic symptoms as assessed by ADOS-2, Verbal and Preverbal Cognition (VPC) from the PEP-3, and the Adaptive Behavior Composite Score from the VABS-II. Error bars represent the bootstrapping 5th to 95th percentiles. Results that were not robust are indicated by a gray boxplot color. (A) Proximity index (PI) obtained at T1 and phenotype measures obtained a year later (T2). PI at T1 positively correlated with reduced symptoms at T2 (B) Simultaneous PLS-C: both PI and phenotype measures were obtained at T2. PI at T2 positively correlated with symptoms at T2 and positively with adaptive behavior. Loading on the latent component was obtained using the partial least squares correlation analysis. The cross-correlation matrix was composed of the proximity index-PI on the imaging A and three variables on the behavior B side. The behavior matrix included two domains of autistic symptoms assessed by ADOS-2, Verbal and preverbal cognition (VPC) of PEP-3, and the Adaptive Behavior Composite Score of VABS-II.
 
-## Divergent developmental trajectories of visual exploration in children with ASD
+#### Divergent developmental trajectories of visual exploration in children with ASD
 
 After exploring the PI association with various aspects of the behavioral phenotype in ASD children, we were also interested in the developmental pathway of visual exploration in this complex social scene for both groups of children. Previous studies using cross-sectional designs have demonstrated important changes in how children attend to social stimuli depending on their age (Frank et al., 2012; Helo et al., 2014). As our initial sample spanned a relatively large age range (1.7–6.9 years), we wanted to obtain a more fine-grained insight into the developmental dynamic of visual exploration during the given period. To that end, when study-specific inclusion criteria were satisfied, we included longitudinal data from our participants who had a one-year and/or a two years follow-up visit (see Methods section). With the available 306 recordings for the ASD group and 105 for the TD group, we applied a sliding window approach (Sandini et al., 2018) (see Methods section). Our goal was to discern critical periods of change in the visual exploration of complex social scenes in ASD compared to the TD group. We opted for a sliding window approach considering its flexibility to derive a continuous trajectory of visual exploration and thereby capture such non-linear periods. The sliding window approach yielded a total of 59 age-matched partially overlapping windows for both groups covering the age range between 1.88–4.28 years (mean age of the window) (Figure 8, panel A illustrates the sliding window method).
 
@@ -151,25 +151,144 @@ The method presented in the current study can easily be applied to any eye-track
 
 ## Materials and methods
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Cross-sectional sample
+#### Cross-sectional sample
 
 Hundred sixty-six males with autism (3.37 ±1.16 years) and 51 age-matched typically developing males (3.48 ±1.29 years) participated in the study. Table 1 summarizes the clinical characteristics of our cross-sectional sample. Our study included only males due to fewer females with ASD. The clinical diagnosis of autism, based on DSM criteria, was confirmed using the standardized observational assessment of the child and interviews with caregivers(s) retracing the child’s medical and developmental history. All children with ASD reached the cut-off for ASD on Autism Diagnostic Observation Schedule-Generic (ADOS-G), (Lord et al., 2000) or Autism Diagnostic Observation Schedule-2nd edition (ADOS-2) (Lord et al., 2012). For children who underwent the ADOS-G assessment, the scores were recoded according to the revised ADOS algorithm (Gotham et al., 2007) to ensure comparability with ADOS-2.
+
+**Table 1.**
+ Description of the cross-sectional sample.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Measures</th>
+      <th>ASD (n=166)</th>
+      <th>TD (n=51)</th>
+      <th rowspan="2">p-value</th>
+    </tr>
+    <tr>
+      <th>Mean±SD</th>
+      <th>Mean±SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age</td>
+      <td>3.37±1.16</td>
+      <td>3.48±1.29</td>
+      <td>0.621a</td>
+    </tr>
+    <tr>
+      <td>Total Symptom Severity Score (ADOS-2 CSS)</td>
+      <td>7.19±1.78</td>
+      <td>1.10±0.300</td>
+      <td>&lt;0.001a</td>
+    </tr>
+    <tr>
+      <td>Social Affect (ADOS-2 SA-CSS)</td>
+      <td>6.08±2.06</td>
+      <td>1.18±0.478</td>
+      <td>&lt;0.001a</td>
+    </tr>
+    <tr>
+      <td>Repetitive Behaviors &amp;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Restricted Interests (ADOS-2 RRB CSS)</td>
+      <td>8.63±1.85</td>
+      <td>2.16±1.92</td>
+      <td>&lt;0.001a</td>
+    </tr>
+    <tr>
+      <td>Social Interaction (ADI-R: A)</td>
+      <td>14.8±5.70</td>
+      <td>1.04±1.39</td>
+      <td>&lt;0.001a</td>
+    </tr>
+    <tr>
+      <td>Communication (ADI-R: B)</td>
+      <td>9.97±3.44</td>
+      <td>1.12±1.35</td>
+      <td>&lt;0.001a</td>
+    </tr>
+    <tr>
+      <td>Repetitive Behaviors &amp;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Restricted Interests (ADI-R: C)</td>
+      <td>4.79±2.22</td>
+      <td>0.314±0.678</td>
+      <td>&lt;0.001a</td>
+    </tr>
+    <tr>
+      <td>Age of onset (ADI-R: D)</td>
+      <td>3.60±0.997</td>
+      <td>0.078±0.337</td>
+      <td>&lt;0.001a</td>
+    </tr>
+    <tr>
+      <td>Best Estimate IQ</td>
+      <td>83.6±24.0</td>
+      <td>119±16.5</td>
+      <td>&lt;0.001a</td>
+    </tr>
+    <tr>
+      <td>VABS-II Adaptive Behavior</td>
+      <td>80.2±10.2</td>
+      <td>103±8.21</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>VABS-II Communication</td>
+      <td>80.2±13.7</td>
+      <td>105±8.94</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>VABS-II Daily Living Skills</td>
+      <td>83.7±11.6</td>
+      <td>101±8.25</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>VABS-II Socialization</td>
+      <td>79.2±9.82</td>
+      <td>101±8.49</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>VABS-II Motor Skills</td>
+      <td>88.4±11.5</td>
+      <td>102±11.2</td>
+      <td>&lt;0.001a</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. p-valuesa are obtained using nonparametric Mann-Whitney tests of differences between the two groups._
 
 Before inclusion in the study, TD children were screened using a questionnaire focusing on medical history and history of pregnancy. Children were not included in our TD group if they were born prematurely or had a positive screen for the presence of any known neurological or psychiatric disorder in the child itself or known case of ASD in any first-degree relative of the child. Moreover, all TD children were also assessed using the ADOS-G or ADOS-2 evaluations to exclude the presence of ASD symptoms. The majority of TD participants had a minimal severity score of 1, except four children who had a score of 2.
 
 The data for the current study were acquired as a part of a larger longitudinal study of early development in autism based in Geneva. Detailed information about cohort recruitment has been given elsewhere (Franchini et al., 2017; Franchini et al., 2018; Kojovic et al., 2019). The study protocol was approved by the Ethics Committee of the Faculty of Medicine of Geneva University, Switzerland (Swissethics, protocol 12–163/Psy 12–014, referral number PB_2016–01880). All families gave written informed consent to participate.
 
-## Unstructured longitudinal sample
+#### Unstructured longitudinal sample
 
 As participants in our study are followed longitudinally, their repeated visits were included when satisfying the inclusion criteria (later detailed in the Method details section). This yielded a total of 308 recordings for the ASD group and 105 for the TD group (all recordings were collected a year apart; 101 children with ASD contributed two recordings each, and 41 children with ASD contributed three recordings each, while 33 and 21 TD children contributed respectively 2 and 3 recordings each) (see Figure 8 for illustration of the available recordings). This sample was employed to derive trajectories of visual exploration over the childhood years using mixed models analysis and considering both within-subject and between-subject effects (Mutlu et al., 2013; Mancini et al., 2020) and sliding windows approach (Sandini et al., 2018) (further detailed in the Method details subsection).
 
-## One-year follow-up longitudinal sample
+#### One-year follow-up longitudinal sample
 
 To obtain a longitudinal measure of change in visual exploration, we used a smaller subsample that included children who had recordings obtained a year apart. From the overall number of ASD children (101) that had two recordings, seven were removed as they were done two years apart. The same was done on the TD group, where four were removed. Thus, this final paired longitudinal sample included 94 males with ASD (1.66–5.43 years old) and 29 age-matched TD males (1.31–5.56 years old) who were evaluated a year later.
 
-## Behavioral phenotype measures
+#### Behavioral phenotype measures
 
 As detailed above, a direct assessment of autistic symptoms was obtained using the Autism Diagnostic Observation Schedule-Generic ADOS-G, (Lord et al., 2000) or Autism Diagnostic Observation Schedule-2nd edition (ADOS-2) (Lord et al., 2012). Since its latest version (ADOS-2) the ADOS yields a measure of severity of autistic symptoms ranging from 1 to 10, conceived to be relatively independent of the participant’s age or verbal functioning (Gotham et al., 2009; Estes et al., 2015). For subjects who were administered the older version of the ADOS (ADOS-G), the severity scores were obtained according to the revised ADOS algorithm (Gotham et al., 2007). For a more precise measure of symptoms according to their type, we included the domain severity scores, namely, social affect (SA) and restricted and repetitive behaviors (RRB) (Hus et al., 2014).
 
@@ -179,35 +298,35 @@ In our large longitudinal autism cohort, the cognitive functioning of children i
 
 Adaptive functioning was assessed using the Vineland Adaptive Behavior Scales, second edition (VABS-II; Sparrow et al., 2005). VABS-II is a standardized parent interview measuring adaptive functioning from childhood to adulthood in communication, daily-living skills, socialization, and motor domain. The adaptive behavior composite score (ABCS), a global measure of an individual’s adaptive functioning, is obtained by combining the four domain standardized scores.
 
-## Method details
+### Method details
 
-## Stimuli and apparatus
+#### Stimuli and apparatus
 
 The current experiment consisted of free-viewing of one episode of the French cartoon ‘Trotro’ lasting 2’53” (Lezoray, 2013). This cartoon was the first stimulus in an experiment involving the simultaneous acquisition of High-density EEG recorded with a 129-channel Hydrocel Geodesic Sensor Net (Electrical Geodesics Inc, Eugene, OR, USA). The findings concerning the EEG data are published separately (Jan et al., 2019). This cartoon depicts human-like interactions between three donkey characters at a relatively slow pace. The original soundtrack was preserved during recording. Gaze data were collected using Tobii TX300 eye tracker (https://www.tobiipro.com), sampled at 300 Hz, except for five recordings acquired at a lower sampling frequency (60 Hz) using Tobii TXL60. The screen size was identical for both eye-tracking devices height: 1200 pixels (29°38’) and width: 1920 pixels (45°53’), with a refresh rate of 60 Hz. Participants were seated at approximately 60 cm from the recording screen. The cartoon frames subtended a visual angle of 26°47’ × 45°53’ (height × width). A five-point calibration procedure consisting of child-friendly animations was performed using an inbuilt program in the Tobii system. Upon verification, the calibration procedure was repeated if the eye-tracking device failed to detect the participant’s gaze position accurately. The testing room had no windows, and lighting conditions were constant for all acquisitions.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Eye-tracking analysis
+#### Eye-tracking analysis
 
 We excluded data from participants who showed poor screen attendance, defined as binocular gaze detection on less than 65% of video frames. The screen attendance was higher in the TD sample (93.8 ±6.37 s) compared to the ASD group (87.8 ±9.33 s), U=2568, p<0.001. To extract fixations, we used the Tobii IV-T Fixation filter (Olsen, 2012) (i.e. Velocity threshold: 30° /s; Velocity window length: 20 ms. Adjacent fixations were merged Maximum time between fixations was 75 ms; Maximum angle between fixations was 0.5°). To account for differences in the screen attendance, we omitted instances of non-fixation data (saccades, blinks, off-screen moments) in all calculations.
 
-## Determining the ‘reference’ of visual exploration
+#### Determining the ‘reference’ of visual exploration
 
 To define the referent gaze distribution (‘reference’), against which we will compare the gaze data from the ASD group, we employed the kernel density distribution estimation function on gaze data from TD individuals on each frame of the video. The reference sample comprised 51 typically developing children (3.48 ±1.29 years). To create referent gaze distribution, we opted for a non-fixed bandwidth of a kernel as the gaze distribution characteristics vary significantly from frame to frame. Precisely, fixed bandwidth would result in over-smoothing the data in the mode and under-smoothing extreme distribution cases of gaze data at tails. We used the state-of-the-art adaptive kernel density estimation that considers the data’s local characteristics by employing adaptive kernel bandwidth (Botev et al., 2010). Thus a Gaussian kernel of an adaptive bandwidth was applied at each pair of gaze coordinates, and the results were summed up to obtain an estimation of the density of gaze data (see Figure 1). Obtained density estimation reflects a probability of gaze allocation at the given location of the visual scene for a given group. This probability is higher at the distribution’s taller peaks (tightly packed kernels) and diminishes toward the edges. We used the Matlab inbuilt function contour to delimit isolines of the gaze density matrix.
 
-## Quantifying the divergence in visual exploration
+#### Quantifying the divergence in visual exploration
 
 Upon the ‘reference’ definition, we calculated the distance of gaze data from this referent distribution on each frame for each child with ASD (n=166; 3.37 ±1.16 years). Comparison to this referent pattern yielded a measure of Proximity index-PI (see Figure 1). The calculation of the Proximity Index values was done for each frame separately. Proximity Index values were scaled from 0 to 1 at each frame for comparison and interpretation. We used the Matlab inbuilt function contour to delimit isolines of the gaze density matrix. To have a fine-grained measure, we defined 100 isolines per density matrix (i.e. each frame). Then we calculated the proximity index for each child with ASD framewise. Gaze coordinates that landed outside the polygon defined by contour(s) of the lowest level (1) obtained a PI value of 0. The gaze coordinates inside the area defined by gaze density matrix isolines obtained the PI value between 0.01 and 1. The exact value of these non-zero PI values was obtained depending on the level number of the highest isoline/contour that contained the x and y coordinates of the gaze. As we defined 100 isolines per density matrix, the levels ranged from 1 to 100. Accordingly, a gaze coordinate that landed inside the highest contour (level 100) obtained a PI value of 1, and the one that landed inside the isoline 50 obtained a PI value of 0.50. A high PI value (closer to the mode of the density distribution) indicates that the visual exploration of the individual for a given frame is less divergent from the reference (more TD-like). A summary measure of divergence in visual exploration from the TD group was obtained by averaging the PI values for the total duration of the video.
 
 While the smoothing kernel deployed in our density estimation function is Gaussian, the final distribution of the gaze data is not assumed Gaussian. As shown in Figure 1, right upper panel, the final distribution was sensitive to the complexity of gaze distribution (e.g. having two or more distant gaze foci in the TD group) which allowed a flexible and ecological definition of referent gaze behavior. The coexistence of multiple foci allows for pondering the relative importance of the different scene elements from the point of view of the TD group. It further distinguishes our method from hypothesis-driven methods that measure aggregated fixation data in the scene’s predefined regions. For the frames where the gaze of the TD group showed many distinct focal points, like the one in Figure 1, right upper panel, we calculated the PI in the same manner as for frames that had a unique focus distribution. For a given gaze coordinate from a child with ASD, we identify the level of the highest contour, ranging from 0.01 to 1, of any of the attention focus/clusters containing that coordinate. If we assume a hypothetical situation where the gaze data of the TD group are falling along two clusters identically (i.e. we obtain the density peaks of the same level/height), in this case, any two gaze coordinates that fall in the highest level of any of the peaks would obtain a PI value of 1.
 
-## Multivariate association between gaze patterns and behavioral data
+#### Multivariate association between gaze patterns and behavioral data
 
-The relation between behavioral phenotype and Proximity index was tested using the multivariate approach, Partial Least squares PLS-C (McIntosh and Lobaugh, 2004; Krishnan et al., 2011), Matlab-implemented source code is publicly available on https://github.com/MIPLabCH/myPLS; Zöller et al., 2019. This analysis focuses on the relationship between the two matrices, A (p by b) and B (p by k), formally expressed as R=BTA. Before computing the cross-correlation matrix R between A and B, both input elements are z-scored. As the correlation is not directional, the roles of A and B are symmetric, and the analyses focus on the shared information between the two. The cross-correlation matrix R was then decomposed using a singular value decomposition (SVD) according to the formula: R=UΔVT. The two singular vectors U and V are denoted as saliences, where U represents the behavioral pattern that best characterizes the R and V corresponds to the Proximity index pattern that best characterizes R. Finally, original matrix A and B are projected on their own saliences yielding two latent variables La=AV and Lb=BU. The PLS-C implements permutation testing to foster model generalization of the latent variables. Once a vector(s) of saliences is defined as generalized, its stability is tested using the bootstrapping approach with replacement. In all the analyses in this paper, we implemented 1000 permutations and 1000 bootstrapping to test the significance of the LC and the stability of the vectors of saliences, respectively.
+The relation between behavioral phenotype and Proximity index was tested using the multivariate approach, Partial Least squares PLS-C (McIntosh and Lobaugh, 2004; Krishnan et al., 2011), Matlab-implemented source code is publicly available on https://github.com/MIPLabCH/myPLS; Zöller et al., 2019. This analysis focuses on the relationship between the two matrices, A (p by b) and B (p by k), formally expressed as $R=B^{T}A$. Before computing the cross-correlation matrix R between A and B, both input elements are z-scored. As the correlation is not directional, the roles of A and B are symmetric, and the analyses focus on the shared information between the two. The cross-correlation matrix R was then decomposed using a singular value decomposition (SVD) according to the formula: $R=UΔV^{T}$. The two singular vectors U and V are denoted as saliences, where U represents the behavioral pattern that best characterizes the R and V corresponds to the Proximity index pattern that best characterizes R. Finally, original matrix A and B are projected on their own saliences yielding two latent variables $L_{a}=AV$ and $L_{b}=BU$. The PLS-C implements permutation testing to foster model generalization of the latent variables. Once a vector(s) of saliences is defined as generalized, its stability is tested using the bootstrapping approach with replacement. In all the analyses in this paper, we implemented 1000 permutations and 1000 bootstrapping to test the significance of the LC and the stability of the vectors of saliences, respectively.
 
-## Proximity Index with regards to the visual properties of the animated scene
+### Proximity Index with regards to the visual properties of the animated scene
 
-## Pixel level salience
+#### Pixel level salience
 
 Previous research has put forward the enhanced sensitivity to the low-level (pixel-level) saliency properties in adults with ASD while watching static stimuli (Wang et al., 2015) compared to healthy controls. We were interested in whether any low-level visual properties would more significantly contribute to the gaze allocation in one of the groups.
 
@@ -215,29 +334,29 @@ To extract values of basic visual qualities of the scene, we used a salience mod
 
 Considering the heavy computational cost of these analyses, all computations were performed at the University of Geneva on the Baobab and Yggdrasil clusters.
 
-## Movie characteristics
+#### Movie characteristics
 
-## Social complexity
+##### Social complexity
 
 Furthermore, given the findings of the failure of ASD in allocating attention to social content (Chita-Tegmark, 2016b; Frank et al., 2012), we aimed to test the hypothesis that the Proximity Index values will be lower for the moments in the videos with enhanced social complexity, involving two or three characters compared to moments involving only one character (Appendix 3A). Note that, with an increasing number of characters, we recognize that the scene is inevitably richer in details, an issue we address by measuring visual and vocalization complexity.
 
-## Visual complexity
+##### Visual complexity
 
 To measure visual complexity, we calculated the length of edges delimiting image elements (see Figure 1). Edge extraction was done on every image of the video using the Canny method (Canny, 1986) implemented in Matlab (version 2017 a; Mathworks, Natick, MA). This method finds edges by looking for the local maxima of the intensity gradient. The gradient is obtained using the derivative of a Gaussian filter and uses two thresholds to detect strong and weak edges. Weak edges are retained only if connected to strong edges, which makes this method relatively immune to noise (see Appendix 3B).
 
-## Vocal video aspects: Monologue and directed speech
+##### Vocal video aspects: Monologue and directed speech
 
 Speech properties of the scenes were also analyzed, using the BORIS software (https://www.boris.unito.it/). We manually identified the moments where characters were vocalizing or speaking. Then we annotated the moments as a function of the social directness of the speech. In particular, we distinguished between monologue (characters thinking out loud or singing) and moments of socially directed speech (invitation to play and responses to invitations).
 
-## Coarse movie characteristics: Frame switching and moving background
+##### Coarse movie characteristics: Frame switching and moving background
 
 Finally, to test how the global characteristics of video media influence gaze deployment, we focused on two movie features. The first feature, denoted as the ‘Frame switch,’ encompasses all instances in which the cartoon employs an abrupt frame transition using the hard-cut montage technique. To represent this feature numerically, a feature vector was created. In this vector, the first frame following the switch is assigned a code of 1, while all other frames are coded as 0. This coding scheme effectively highlights the occurrence of these abrupt shot changes within the movie. Throughout the duration of the movie, this event type occurs 25 times (as indicated in Figure 6).
 
 The feature labeled as the ‘Moving background’ pertains to moments when the cartoon’s background moves in tandem with the characters, following their directional motion. We aimed to distinguish these segments from scenes featuring a static background, as the overall motion dynamics in these frames varied. The occurrence of a moving background is observable in 5 distinct sequences within the movie (as illustrated in Figure 6). Frames with a moving background were coded 1 yielding a binary feature vector.
 
-## Maturational changes in visual exploration of complex social scene
+### Maturational changes in visual exploration of complex social scene
 
-## Sliding window approach
+#### Sliding window approach
 
 Besides understanding the behavioral correlates of atypical visual exploration in ASD, we wanted to characterize further the developmental pathway of visual exploration of the complex social scenes in both groups of children. We opted for a sliding window approach adapted from Sandini et al., 2018 to delineate fine-grained changes in visual exploration on a group level. Available recordings from our unstructured longitudinal sample were first ordered according to the age in both groups separately. Then, for each group, a window encompassing 20 recordings was progressively moved, starting from the first 20 recordings in the youngest subjects until reaching the end of the recording span for both groups. The choice of window width was constrained by the sample size of our TD group. The longitudinal visits in our cohort are spaced a year from each other, and the choice of a bigger window would result in significant data loss in our group of TD children as the windows were skipped if they contained more than one recording from the same subject. The chosen window width yielded 59 sliding windows in both groups that were age-matched and spanned the period from 1.88 to 4.28 years old on average.
 

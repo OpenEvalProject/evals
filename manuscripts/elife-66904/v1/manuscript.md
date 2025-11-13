@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Translation-dependent quality control pathways such as no-go decay (NGD), non-stop decay (NSD), and nonsense-mediated decay (NMD) govern protein synthesis and proteostasis by resolving non-translating ribosomes and preventing the production of potentially toxic peptides derived from faulty and aberrant mRNAs. However, how translation is altered and the in vivo defects that arise in the absence of these pathways are poorly understood. Here, we show that the NGD/NSD factors Pelo and Hbs1l are critical in mice for cerebellar neurogenesis but expendable for survival of these neurons after development. Analysis of mutant mouse embryonic fibroblasts revealed translational pauses, alteration of signaling pathways, and translational reprogramming. Similar effects on signaling pathways, including mTOR activation, the translatome and mouse cerebellar development were observed upon deletion of the NMD factor Upf2 . Our data reveal that these quality control pathways that function to mitigate errors at distinct steps in translation can evoke similar cellular responses.
+Translation-dependent quality control pathways such as no-go decay (NGD), non-stop decay (NSD), and nonsense-mediated decay (NMD) govern protein synthesis and proteostasis by resolving non-translating ribosomes and preventing the production of potentially toxic peptides derived from faulty and aberrant mRNAs. However, how translation is altered and the in vivo defects that arise in the absence of these pathways are poorly understood. Here, we show that the NGD/NSD factors Pelo and Hbs1l are critical in mice for cerebellar neurogenesis but expendable for survival of these neurons after development. Analysis of mutant mouse embryonic fibroblasts revealed translational pauses, alteration of signaling pathways, and translational reprogramming. Similar effects on signaling pathways, including mTOR activation, the translatome and mouse cerebellar development were observed upon deletion of the NMD factor Upf2. Our data reveal that these quality control pathways that function to mitigate errors at distinct steps in translation can evoke similar cellular responses.
 
 ## Introduction
 
@@ -32,13 +32,13 @@ Defects in translation and translation-dependent quality control pathways impair
 
 ## Results
 
-## Hbs1l is required for embryogenesis
+### Hbs1l is required for embryogenesis
 
 Multiple neurological abnormalities, including defects in motor control, were recently described in a patient with biallelic mutations in Hbs1l (O'Connell et al., 2019). Alternative splicing of Hbs1l produces transcripts that encode two distinct proteins (Figure 1A). Levels of full length Hbs1l (Hbs1l-V1 and Hbs1 in human and yeast, respectively) were dramatically decreased in Hbs1l patient fibroblasts (O'Connell et al., 2019). The levels of the shorter isoform II (Hbs1l-V3 in human), which is encoded by the first 4 exons of full-length Hbs1l and a unique last exon (‘exon 5a’) located between exon 4 and exon 5 of the Hbs1l locus, were relatively unaffected in the Hbs1l patient fibroblasts (O'Connell et al., 2019). In contrast to the translation-dependent quality control function of Hbs1l, previous studies suggest that isoform II of Hbs1l is likely an ortholog of the Saccharomyces cerevisiae protein SKI7 (Brunkard and Baker, 2018; Kalisiak et al., 2017; Marshall et al., 2018), which is involved in global mRNA turnover (Kalisiak et al., 2017). Although an additional splice variant (Hbs1l-V2 in human) which lacks the third coding exon is annotated in the human transcriptome (Mills et al., 2016; O'Connell et al., 2019), this splice variant is not annotated in mice, and we were unable to detect it by RT-PCR.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig1-v1.jpg)
 
-**Figure 1.:** Hbs1l is required for embryogenesis.(A) Domain structure of HBS1L and isoform II and the exons encoding the two splice variants. (B) Design of Hbs1l loss-of-function alleles that target Hbs1l and isoform II. Hbs1ltm1a allele, Hbs1l specific gene trap (hypomorph); Hbs1ldelta allele, Hbs1l specific deletion of exon 5 (Hbs1l-, knock out); and Hbs1lGTC allele, Hbs1l gene trap to target Hbs1l and isoform II (knock out). (C) Cresyl violet-stained cross-sections of testis from P45 control (Hbs1ltm1a/+) and Hbs1ltm1a/tm1a mice. Immunofluorescence was performed with antibodies to proliferating cell nuclear antigen (PCNA, red) and sections were counterstained with DAPI. (D) Cresyl violet-stained sagittal brain section from 4-month-old control (Hbs1l+/+) and Hbs1ltm1a/tm1a mice. (E) Splicing analysis of correctly spliced Hbs1l and trapped Hbs1l transcripts in various tissues from 4-month-old control (Hbs1l+/+) and Hbs1ltm1a/tm1a mice. β-actin was used as an input control. (F) Quantitative RT-PCR analysis of Hbs1l and isoform II using cDNA from E8.5 embryos. Data were normalized to Gapdh and the fold change in gene expression is relative to that of controls (Hbs1l+/+) from each cross. Data represent mean + SEM. (G) Bright field images of control (Hbs1l+/+ and Pelo+/+), Hbs1l-/- and Pelo-/- embryos at E7.5, E8.5, and E10.5. Scale bars: 500 μm and 200 μm (higher magnification), 50 μm (immunofluorescence image) (C); 500 μm (D); 100 μm (E7.5), 200 μm (E8.5), and 2 mm (E10.5) (G). PTC, premature termination codon; Frt, flippase-mediated recombination site; loxP, Cre recombinase-mediated recombination site; En2(SA), splice acceptor of mouse Engrailed-2 exon 2; SC, spermatocytes; SG, spermatogonia; St, spermatids; LC, Leydig cells. t-tests were corrected for multiple comparisons using Holm-Sidak method (F). ns, not significant; **p≤0.01; ***p≤0.001.Figure 1—source data 1.Hbs1l is required for embryogenesis.
+**Figure 1.:** (A) Domain structure of HBS1L and isoform II and the exons encoding the two splice variants. (B) Design of Hbs1l loss-of-function alleles that target Hbs1l and isoform II. Hbs1ltm1a allele, Hbs1l specific gene trap (hypomorph); Hbs1ldelta allele, Hbs1l specific deletion of exon 5 (Hbs1l-, knock out); and Hbs1lGTC allele, Hbs1l gene trap to target Hbs1l and isoform II (knock out). (C) Cresyl violet-stained cross-sections of testis from P45 control (Hbs1ltm1a/+) and Hbs1ltm1a/tm1a mice. Immunofluorescence was performed with antibodies to proliferating cell nuclear antigen (PCNA, red) and sections were counterstained with DAPI. (D) Cresyl violet-stained sagittal brain section from 4-month-old control (Hbs1l+/+) and Hbs1ltm1a/tm1a mice. (E) Splicing analysis of correctly spliced Hbs1l and trapped Hbs1l transcripts in various tissues from 4-month-old control (Hbs1l+/+) and Hbs1ltm1a/tm1a mice. β-actin was used as an input control. (F) Quantitative RT-PCR analysis of Hbs1l and isoform II using cDNA from E8.5 embryos. Data were normalized to Gapdh and the fold change in gene expression is relative to that of controls (Hbs1l+/+) from each cross. Data represent mean + SEM. (G) Bright field images of control (Hbs1l+/+ and Pelo+/+), Hbs1l-/- and Pelo-/- embryos at E7.5, E8.5, and E10.5. Scale bars: 500 μm and 200 μm (higher magnification), 50 μm (immunofluorescence image) (C); 500 μm (D); 100 μm (E7.5), 200 μm (E8.5), and 2 mm (E10.5) (G). PTC, premature termination codon; Frt, flippase-mediated recombination site; loxP, Cre recombinase-mediated recombination site; En2(SA), splice acceptor of mouse Engrailed-2 exon 2; SC, spermatocytes; SG, spermatogonia; St, spermatids; LC, Leydig cells. t-tests were corrected for multiple comparisons using Holm-Sidak method (F). ns, not significant; **p≤0.01; ***p≤0.001.
 
 To study the neurological function of Hbs1l in mice, we first examined an Hbs1l allele (Hbs1ltm1a) with a gene trap cassette inserted between ‘exon 5a’ and exon 5 (Figure 1B). As previously reported, homozygous Hbs1ltm1a/tm1a mice were viable, but male mice were infertile (O'Connell et al., 2019). Histological analysis of the Hbs1ltm1a/tm1a testis at postnatal day P45 revealed a dramatic loss of mitotically active (PCNA+) spermatogonia, as well as spermatocytes and spermatids that normally differentiate from these cells (Figure 1C). However, no overt defects were observed in the Hbs1ltm1a/tm1a brain (Figure 1D).
 
@@ -46,9 +46,21 @@ Residual levels of Hbs1l were still present in various tissues from Hbs1ltm1a/tm
 
 To determine if isoform II of Hbs1l is also necessary for embryonic viability, we utilized an additional allele (Hbs1lGTC) with a gene trap cassette located in intron 2 (Figure 1B). Expression of Hbs1l and isoform II transcripts in E8.5 heterozygous Hbs1lGTC/+ embryos was reduced by 51% and 41%, respectively (Figure 1F). Homozygous Hbs1lGTC/GTC embryos were not recovered at E6.5 from heterozygous matings (Supplementary file 1) demonstrating that they died even before Pelo-/- or Hbs1l-/- embryos. The early embryonic lethality of Hbs1lGTC/GTC embryos suggests that the Hbs1l isoforms are likely functionally distinct, and that their loss causes additive or synergistic defects during embryogenesis.
 
-## Hbs1l is required for cerebellar development
+### Hbs1l is required for cerebellar development
 
 Consistent with transcriptome data from a brain RNA sequencing database (Zhang et al., 2014), we observed expression of Hbs1l in multiple cell types of the brain (Figure 2A). Expression of HBS1L and its binding partner PELO was observed throughout and after cerebellar development (Figure 2A,B and C). However, levels of HBS1L and PELO decreased in the postnatal (P)14 cerebellum after the completion of development, a similar decrease was observed in the whole brain (Figure 2B and C, Figure 2—figure supplement 1A). To begin to investigate the role of Hbs1l in the brain, we deleted this gene in the developing cerebellum and midbrain by crossing the floxed allele to En1Cre mice (Kimmel et al., 2000). Differences in cerebellar size between mutant and control embryos were already apparent by E13.5 (Figure 2D). Although the trilaminar structure of the cerebellum appeared normal in En1Cre; Hbs1l cKO mice at postnatal day P21, cerebellar foliation was delayed in P0 mutant mice, and secondary fissures failed to form compared to control mice (Figure 2D). Consistent with previous studies no cerebellar abnormalities were observed in En1Cre mice (Dong and Kwan, 2020; Guo et al., 2010; Li et al., 2002; Sgaier et al., 2007; Tripathi et al., 2008).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig2-v1.jpg)
+
+**Figure 2.:** (A) In situ hybridization of Hbs1l mRNA (red) on cerebellar sections from E13.5 and P28 control (B6J) mice. Sections were counterstained with DAPI. (B) Western blot analysis using cerebellar lysates from B6J mice. Vinculin was used as a loading control. (C) The relative protein levels of HBS1L and PELO were normalized to levels of vinculin and protein levels are relative to those of E16.5 B6J cerebella. (D) Parasagittal (E13.5) and sagittal (P0 and P21) cerebellar sections from control (Hbs1lfl/+) and En1Cre; Hbs1l cKO mice stained with cresyl violet. Higher magnification images of lobules IV/V at P21 are shown below each genotype. Cerebellar lobules are indicated by Roman numerals. (E) Immunofluorescence using antibodies to Ki67 (red) on cerebellar section from E14.5 control (Hbs1l+/+) and En1Cre; Hbs1l cKO embryos. Sections were counterstained with DAPI and higher magnification images of boxed area are shown. (F) Number of cerebellar VZ-progenitors (Ki67+ cells) from control (Hbs1l+/+ or Hbs1lfl/+) and En1Cre; Hbs1l cKO embryos. Data represent mean + SD. (G) Immunofluorescence using antibodies to BrdU (green) and Ki67 (red) on cerebellar sections from E14.5 control (Hbs1lfl/+) and En1Cre; Hbs1l cKO embryos to determine the fraction of cells that exited the cell cycle. Embryos were injected with BrdU 24 hr prior to harvest. (H) Percentage of cerebellar VZ-progenitors that exited the cell cycle (BrdU+, Ki67- cells). Data represent mean + SD. (I) Immunofluorescence using antibodies to Lhx1/5 on cerebellar sections from E13.5 control (Hbs1l+/+) and En1Cre; Hbs1l cKO embryos. Sections were counterstained with DAPI and higher magnification images of boxed areas are shown. (J) Number of cerebellar Purkinje cell precursors (Lhx1/5+ cells). Data represent mean + SD. Scale bars: 100 μm and 20 μm (higher magnifications) (A); 200 μm (E13.5 and P0), 500 μm and 50 μm (higher magnification) (P21) (D); 100 μm and 20 μm (higher magnification) (E); 20 μm (G); 100 μm and 50 μm (higher magnification) (I). VZ, ventricular zone; NTZ, nuclear transitory zone; RL, rhombic lip; EGL, external granule cell layer; ML, molecular cell layer; PL, Purkinje cell layer; GCL, granule cell layer; IC, inferior colliculus. t-tests were corrected for multiple comparisons using Holm-Sidak method (C, F, H, J). ns, not significant; *p≤0.05; **p≤0.01; ***p≤0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blot analysis using brain lysates from B6J mice. Vinculin was used a loading control. (B) Immunofluorescence using antibodies to BrdU (green) and Ki67 (red) from cerebellar sections of E13.5 control (Hbs1lfl/+) and En1Cre; Hbs1l cKO embryos to determine the fraction of cells in S-phase. Embryos were injected with BrdU 30 min prior to harvest. Sections were counterstained with DAPI. (C) Percentage of cerebellar VZ-progenitors in S-phase (BrdU+, Ki67+ cells). Data represent mean + SD. (D) Percentage of cerebellar VZ-progenitors in M-phase (pH3+, PCNA+ cells). Data represent mean + SD. (E) Immunofluorescence using antibodies to Pax2 (red) on cerebellar sections from E13.5 control (Hbs1lfl/+) and En1Cre; Hbs1l cKO embryos. Sections were counterstained with DAPI. (F) Number of cerebellar VZ-derived interneuron precursors (Pax2+ cells). Data represent mean + SD. (G) Immunofluorescence using antibodies to Tbr1 (green) on cerebellar sections from E14.5 control (Hbs1lfl/+) and En1Cre; Hbs1l cKO embryos. Sections were counterstained with DAPI. (H) Immunofluorescence using antibodies to Ki67 (green) on cerebellar sections from E14.5 control (Hbs1lfl/+) and En1Cre; Hbs1l cKO embryos to identify granule cell precursors in the EGL. Sections were counterstained with DAPI. (I) Number of RL-derived granule cell precursors in the EGL (Ki67+ cells). Data represent mean + SD. (J) Immunofluorescence using antibodies to BrdU (green) and Ki67 (red) on cerebellar sections from E14.5 control (Hbs1lfl/+) and En1Cre; Hbs1l cKO embryos. Embryos were injected with BrdU 24 hr prior to harvest. (K) Number of RL-derived granule cell precursors (BrdU+ cells). Data represent mean + SD. (L) Percentage of RL-derived granule cell precursors that exited the cell cycle (BrdU+, Ki67- cells). Data represent mean + SD. (M) Percentage of RL-derived granule cell precursors in S-phase (BrdU+, Ki67+ cells). Embryos were injected with BrdU 30 min prior to harvest. Data represent mean + SD. (N) Percentage of RL-derived granule cell precursors in M-phase (pH3+, PCNA+ cells). Data represent mean + SD. (O) Number of oligodendroglial progenitors (Olig2+ cells) from E14.5 control (Hbs1lfl/+) and En1Cre; Hbs1l cKO cerebella. Scale bars: 20 μm (C); 50 μm (E, G, H, J). VZ, ventricular zone; NTZ; nuclear transitory zone; EGL, external granule cell layer; RL, rhombic lip. t-tests were corrected for multiple comparisons using Holm-Sidak method (C, D, F, I, K, L, M, N); Student’s t-test (O). ns, not significant; *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Cresyl violet staining of sagittal sections of En1Cre; Hbs1l cKO cerebellum expressing wild-type levels of n-Tr20 (n-Tr20B6N/B6N) or reduced levels of n-Tr20 (n-Tr20B6J/B6J) and Tg(Atoh1-Cre); Hbs1l cKO cerebella with reduced levels of n-Tr20 (n-Tr20B6J/B6J) or that completely lack n-Tr20 (n-Tr20-/-). Cerebellar lobules are indicated by Roman numerals. (B) Sagittal sections from 35-week-old control (Tg(Gabra6-Cre); Pelofl/+; n-Tr20B6J/B6J), Tg(Gabra6-Cre); Pelo cKO; n-Tr20B6J/B6J and Tg(Gabra6-Cre); Hbs1l cKO; n-Tr20B6J/B6J cerebella stained with hematoxylin and eosin. Higher magnification images of lobule IX are shown below. Cerebellar lobules are indicated by Roman numerals. (C) Number of cerebellar granule cells in lobule IX shown in B. Data represent mean + SD. (D) Western blot analysis using cerebellar lysates from P28 control (Hbs1lfl/fl; n-Tr20B6J/B6J or Pelofl/fl; n-Tr20B6J/B6J), Tg(Gabra6-Cre); Pelo cKO; n-Tr20B6J/B6J and Tg(Gabra6-Cre); Hbs1l cKO; n-Tr20B6J/B6J mice. GAPDH was used a loading control. (E) Quantification of HBS1L and PELO protein levels shown in D. Levelswere normalized to levels of GAPDH. Protein levels are relative to those of controls (Hbs1lfl/fl or Pelofl/fl) from each cross. Scale bars: 500 μm (A); 500 μm and 50 μm (higher magnification) (B). One-way ANOVA (C) and two-way ANOVA (E) were corrected for multiple comparisons using Tukey method. ns, not significant; **p≤0.01; ***p≤0.001.
 
 Lineage-restricted GABAergic precursors are generated beginning at ~E10.5 from progenitors in the ventricular zone (VZ) of the developing cerebellum (Ju et al., 2016; Leto et al., 2012). The pool of progenitors declines as progenitors either exit the cell cycle to generate precursors or retract from the VZ to form a secondary germinal zone in the prospective white matter to transition from neurogenesis to gliogenesis (Leto et al., 2012; Vong et al., 2015; Wizeman et al., 2019). Immunofluorescence with antibodies to the cell-cycle-associated protein Ki67 demonstrated a loss of progenitors between E12.5 to E16.5 in both the control and En1Cre; Hbs1l cKO cerebella. However, the number of progenitors remained higher in En1Cre; Hbs1l cKO compared to control cerebella (Figure 2E and F), suggesting that Hbs1l-deficient progenitors may aberrantly proliferate. In agreement, we observed a higher fraction of VZ-progenitors in S-phase in the E12.5 and E13.5 mutant cerebella by pulse labeling with BrdU for 30 min and performing co-immunofluorescence with BrdU and Ki67 antibodies (Figure 2—figure supplement 1B and C). Immunofluorescence with antibodies to the M-Phase marker phospho-histone 3 (pH3) and the general cell cycle marker PCNA demonstrated an increase of VZ-progenitors in M-phase in the mutant cerebellum (Figure 2—figure supplement 1D).
 
@@ -62,17 +74,33 @@ Hbs1l was also required for gliogenesis in the developing cerebellum. Cerebellar
 
 We have previously identified a mutation in the common C57BL/6J (B6J) strain that partially disrupts processing of the brain-specific arginine tRNA, n-Tr20 (n-Tr20B6J/B6J; n-Tr20 is also known as n-TRtct5). This processing defect in turn reduces the pool of available tRNAArgUCU, leading to ribosome pausing at the A-site at AGA codons in cerebellar mRNAs (Ishimura et al., 2014). Hbs1l cKO mice were generated with the B6J-associated mutation in n-Tr20. To test if the n-Tr20 deficiency influenced the developmental defects observed in the absence of Hbs1l, we either restored n-Tr20 to wild type levels or completely deleted n-Tr20 in Hbs1l cKO mice. Wild-type expression of the tRNA (n-Tr20B6N/B6N) did not rescue defects in En1Cre; Hbs1l cKO cerebella, nor did complete loss of n-Tr20 (n-Tr20-/-) cause developmental defects in Tg(Atoh1-Cre); Hbs1l cKO cerebella (Figure 2—figure supplement 2A). In addition, neither loss of Hbs1l or Pelo affected cell survival of terminally differentiated granule cells in 9-month-old mice even in the presence of the n-Tr20 deficiency (Figure 2—figure supplement 2B,C,D and E), indicating that Hbs1l and Pelo do not respond to AGA pausing.
 
-## Ribosome pausing correlates with pathology in Hbs1l-deficient mice
+### Ribosome pausing correlates with pathology in Hbs1l-deficient mice
 
 To determine if the developmental defects that occur upon loss of Hbs1l are accompanied by alterations in translation elongation, we performed ribosome profiling on wild type and Hbs1l-/- embryos at E8.5. Ribosome protected fragments (RPF) mapped primarily to the protein coding sequence of genes in both wild-type and mutant embryos (Figure 3A). Using the previously described methodology (Ishimura et al., 2014), we found a total of ~1300 sites with significant (z-score ≥10) increases in local ribosome occupancy (‘ribosome pauses’) in wild-type and mutant embryos (Figure 3B, Supplementary file 2). About 40% of the ribosome pauses, which mapped to 319 genes, were shared between genotypes suggesting they occurred independently of the loss of Hbs1l. Ten percent of ribosome pauses (mapped to 107 genes) were found only in wild-type embryos. The ribosome density derived from the total number of ribosome-protected fragments (RPF) serves as proxy for gene expression at the level of the translatome. Differential expression analysis of the translatome (DE RPF, Supplementary file 3) indicated translation of genes with wild type-specific pauses was decreased in mutant embryos (Figure 3C), which may contribute to the apparent specificity of these pauses to wild-type embryos. Strikingly, 50% of ribosome pauses (mapped to 459 genes) were uniquely observed in Hbs1l-/- embryos and like other pauses, occurred primarily in protein coding sequences (Supplementary file 2). Similar to the metagene analysis (Figure 3A), we didn’t observe genotype-dependent differences in the ribosome occupancy in different gene regions (i.e. untranslated 5’ or 3’ region). Only 9% of genes associated with Hbs1l-/--specific ribosome pauses were differentially translated in Hbs1l-/- embryos (DE RPF Hbs1l-/-) and translation of 26 genes and 15 genes was decreased and increased, respectively (Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig3-v1.jpg)
+
+**Figure 3.:** (A) Metagene profiles of RPFs from E8.5 control (Hbs1l+/+, gray traces) and Hbs1l-/- (red traces) embryos. (B) Analysis of significantly increased local ribosome occupancy (z-score ≥10, pause site detected in all three replicates) from E8.5 wild type (Hbs1l+/+) and Hbs1l-/- embryos (left) or P14 control (Tg(Atoh1-Cre); Hbs1l+/+) and Tg(Atoh1-Cre); Hbs1l cKO cerebella (right). The number of genes that pause sites map to is shown below for each genotype. (C) All translated genes (DE RPF Hbs1l-/-) from E8.5 Hbs1l-/- embryos were compared to the translation of genes which contained pauses specific to either Hbs1l-/- or wild-type embryos. Downward direction of arrows indicates significant reduction in translation of pausing genes in E8.5 Hbs1l-/- embryos relative to wild-type embryos. (D) Identification of upstream regulators using Ingenuity Pathway Analysis (IPA) of differentially translated genes of E8.5 Hbs1l-/- embryos (DE RPF Hbs1l-/-). Transcription factors that are involved in heart development are shown in red. Downward direction of arrows indicates predicated activity (downregulation) of transcription factors. RPFs, ribosome-protected fragments; nts, nucleotides. Wilcoxon rank-sum test was used to determine statistical significance (C).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Analysis of differentially translated genes (DE RPF Hbs1l-/-, adj. p≤0.05) of E8.5 Hbs1l-/- embryos (421 genes, gray). Genes that have ribosome pauses specific to Hbs1l-/- embryos with significant (adj. p≤0.05) changes in translation are shown in green (47 genes). (B) Comparison of z-scores of Hbs1l-/--specific pause sites detected in E8.5 Hbs1l-/- embryos and P14 Tg(Atoh1-Cre); Hbs1l cKO cerebella. Downward direction of the arrow indicates significant lower z-scores of these pauses in P14 Tg(Atoh1-Cre); Hbs1l cKO cerebella. (C) Comparison of differentially translated genes (DE RPF Hbs1l-/-, adj. p≤0.05) of E8.5 Hbs1l-/- embryos and P14 Tg(Atoh1-Cre); Hbs1l cKO cerebella. Downward direction of the arrow indicates significant lower fold changes in translation in P14 Tg(Atoh1-Cre); Hbs1l cKO cerebella. (D) KEGG pathway analysis of differentially translated genes (DE RPF Hbs1l-/-, adj. p≤0.05) of E8.5 Hbs1l-/- embryos. Top five significantly (p≤0.05) enriched pathways are shown and the heatmap indicates relative changes in genes associated with the respective pathway. (E) Ingenuity Pathway Analysis (IPA) of differentially translated genes (DE RPF Hbs1l-/-) from E8.5 Hbs1l-/- embryos. Pathways that are involved in heart, muscle contraction, cardiomyocyte, and cytoskeleton function are in italics. The red dashed line indicates the significance threshold (p=0.05). Up- or downward direction of arrows indicates predicated up- or downregulated activity of the pathway, respectively. RPF, ribosome protected fragments. Wilcoxon rank-sum test was used to determine statistical significance (B, C).
 
 Loss of Hbs1l did not affect survival of granule cells (Figure 2—figure supplement 2B and C), which constitute the vast majority of the cellular content of the cerebellum. Thus, to determine if elongation defects correlate with pathogenesis in Hbs1l mutant tissues, we also performed ribosome profiling on the cerebellum of P14 control and Tg(Atoh1-Cre); Hbs1l cKO mice (Supplementary file 2). We observed more ribosome pausing sites (~2700) in the cerebellum than in embryos, likely due to the higher amount of input RNA and sequencing depth. Consistent with the lack of a genetic interaction between the Hbs1l and the n-Tr20 mutation, no significant increase in ribosome occupancy on A-site AGA codons was observed in Hbs1l-/- cerebella (Supplementary file 4). Unlike the high percentage of pauses that were unique to Hbs1l-/- embryos, only 2% of ribosome pauses (mapped to 69 genes) were unique to the mutant cerebellum (Figure 3B). In addition, the z-scores (‘pause scores’) for Hbs1l-specific pauses were significantly higher in mutant embryos than the mutant cerebellum (Figure 3—figure supplement 1B).
 
 Mutant embryos also exhibited larger changes in the translatome (DE RPF) than the mutant cerebellum (Figure 3—figure supplement 1C), indicating that defects in translation also correlate with pathology. Kyoto Encyclopedia of Genes and Genomes (KEGG) and Ingenuity Pathway Analysis (IPA) of differentially translated genes (DE RPF Hbs1l-/-, adj. p≤0.05) in Hbs1l-/- embryos revealed that downregulated genes were significantly enriched for heart/cardiac muscle contraction and calcium signaling (Figure 3—figure supplement 1D and E). In agreement, upstream regulator analysis predicted downregulation of multiple transcription factors required for heart development (Cui et al., 2018; Molkentin et al., 1997; Muñoz-Martín et al., 2019; Steimle and Moskowitz, 2017; Figure 3D). Together these data suggest that HBS1L deficiency may cause defects in the embryonic heart, one of the first organs to begin developing in the mouse embryo.
 
-## Loss of Pelo/Hbs1l alters translation regulation and reprograms the translatome
+### Loss of Pelo/Hbs1l alters translation regulation and reprograms the translatome
 
 Our embryonic data suggested that defects in translation modulate the translatome. Because Pelo-/- embryos could not be profiled due to their early embryonic lethality, we conditionally deleted Pelo or Hbs1l in primary mouse embryonic fibroblasts (MEFs) using a tamoxifen-inducible Cre transgene (TgCAG-CreER) to compare changes in translation upon loss of Pelo and Hbs1l (Figure 4A). Consistent with previous studies (Juszkiewicz et al., 2020; O'Connell et al., 2019), deletion of Hbs1l was accompanied by decreased levels of PELO protein, but not its mRNA (Figure 4B, Figure 4—figure supplement 1A,B and C). In addition, we found deletion of Pelo also led to the loss of HBS1L without altering Hbs1l mRNA levels, suggesting degradation of PELO or HBS1L protein occurs in the absence of either interacting partner (Figure 4B, Figure 4—figure supplement 1A,B and C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experimental strategy for in vitro studies using tamoxifen (4-OHT) treatment of primary mouse embryonic fibroblasts (MEFs). (B) Western blot analysis of HBS1L and PELO using MEF lysates from tamoxifen-treated control (Hbs1lfl/+ or Pelofl/fl), Hbs1l-/- and Pelo-/- cells. Vinculin was used as a loading control. (C) Analysis of significantly increased local ribosome occupancy (z-score ≥10, pause site detected in all three replicates) from tamoxifen-treated control (TgCAG-CreER) and Pelo-/- (left), or control and Hbs1l-/- cells (right). The number of genes that pause sites map to is shown below for each genotype. (D) Comparison of the z-scores (‘pause score’) for pauses observed in Pelo-/- (blue) and Hbs1l-/- (red) cells. Downward direction of the arrow indicates significant lower pause scores of Hbs1l-/-- compared to Pelo-/--specific pauses. (E) Examples of mapped footprints (27–34 nucleotides) on genes from tamoxifen-treated control (TgCAG-CreER, gray) and Pelo-/- (blue), or control and Hbs1l-/- (red) cells. Upward direction of arrows indicates significant increase in local ribosome occupancy and the dashed line indicates the pause site. 4-OHT, 4-hydroxytamoxifin; nts, nucleotides; rpm, reads per million. Wilcoxon rank-sum test was used to determine statistical significance (D).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantitative RT-PCR analysis of Hbs1l and Pelo transcripts using cDNA from MEFs of tamoxifen-treated control (Hbs1lfl/+ or Pelofl/+), Hbs1l-/- and Pelo-/- cells at Day 2 (Passage P1). Data were normalized to Gapdh and fold change in expression is relative to those of control (Hbs1lfl/+ or Pelofl/+) cells. Data represent mean + SEM. (B) Western blot analysis of HBS1L and PELO using MEF lysates of tamoxifen-treated control (Hbs1lfl/+ or Pelofl/fl), Hbs1l-/- or Pelo-/- cells at Day 2 and 4 (Passage P1). Vinculin was used as a loading control. (C) Quantification of HBS1L and PELO protein levels shown in B. Levels were normalized to levels of vinculin. Protein levels are relative to those of control (Hbs1lfl/+ or Pelofl/fl) cells at Day 2 (Passage P1). Data represent mean + SD. (D) Location of pause sites. (E) Histogram of A count on the 3’end of ribosome footprints that mapped after removal of the 3’end A’s. (F) Fraction of 3’ end A ribosome footprints that mapped after removal of the 3’ end A’s relative to the total number of ribosome footprints from tamoxifen-treated control (TgCAG-CreER) and Hbs1l-/-, or control (TgCAG-CreER) and Pelo-/- cells. (G) Percent of unique pausing transcripts that are protein-coding or NMD transcripts. P1, Passage 1; MEFs, primary mouse embryonic fibroblasts; 4-OHT, 4-hydroxytamoxifin; PTC, premature termination codon; nd, not detected; A, adenosines; nts, nucleotides; CDS, coding sequence; UTR, untranslated region; NMD, nonsense-mediated decay. Two-way ANOVA was corrected for multiple comparisons using Tukey method (A, C); Fisher’s exact test (D, G); Student’s t-test (F). ns, not significant; **p≤0.01; ***p≤0.001; ****p≤0.0001.
 
 To analyze defects in translation elongation, we performed ribosome profiling of tamoxifen-treated control (TgCAG-CreER), Pelo-/- (TgCAG-CreER; Pelo cKO), and Hbs1l-/- (TgCAG-CreER; Hbs1l cKO) cells. Analyzing the ribosome occupancy in Pelo-/- and control cells revealed ~10,000 sites with significant (z-score ≥10) increases in local ribosome occupancy which mapped to 4693 genes (Figure 4C, Supplementary file 2). One percent of these ribosome pauses were only observed in control cells (‘control-pauses’), 57% were shared between control and Pelo-/- cells, and 42% were specific to Pelo-/- cells (‘Pelo-/--pauses’). In contrast, analysis of Hbs1l-/- and control cells revealed fewer ribosome pauses (~4200 - mapping to 1807 genes) and only 5% were specific to Hbs1l-/- cells (‘Hbs1l-/--pauses’) (Figure 4C). In addition to the fewer ribosome pause sites, the z-scores (‘pause scores’) for Hbs1l-/--pauses were also significantly lower than those of Pelo-/--pauses (Figure 4D). Approximately 80% of the Hbs1l-/--pausing genes also had pauses in Pelo-/- cells; however, only 30% of the ribosome pauses occurred at the same pause site (Figure 4E, Supplementary file 2). Together, these data suggest that the loss of Pelo or Hbs1l leads to translation elongation defects, but particularly severe defects are observed in the absence of Pelo.
 
@@ -92,19 +120,43 @@ In addition, 20% (1060) and 2% (70) of the differentially translated genes in Pe
 
 Interestingly, we observed an opposing relationship between transcriptional expression changes (DE mRNA) and changes in translational efficiency (TE) of many genes in Pelo-/- and Hbs1l-/- cells (Figure 5A). KEGG pathway analysis of genes with this opposing behavior revealed enrichment of several pathways (ribosome, ribosome biogenesis, RNA transport, spliceosome, cell cycle, and lysosome) that overlapped with those of differently translated genes (DE RPF) (Figure 5B, Figure 5—figure supplement 1E), suggesting that expression of genes in these pathways is translationally regulated, perhaps to restore homeostasis between the transcriptome and translatome.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig5-v1.jpg)
+
+**Figure 5.:** (A) Translational efficiency (TE) of genes that are transcriptionally upregulated or downregulated was compared to the remaining (‘other’) genes from Pelo-/- (blue) and Hbs1l-/- (red) MEFs, respectively. Downward direction of arrows indicates significant decrease in translational efficiency of transcriptionally upregulated genes in Pelo-/- and Hbs1l-/- MEFs. Upward direction of arrows indicates significant increase in translational efficiency of transcriptionally downregulated genes in Pelo-/- and Hbs1l-/- MEFs. (B) KEGG pathway analysis of genes from Pelo-/- MEFs in which the translational efficiency (TE Pelo-/-, adj. p≤0.05) is opposite to their transcriptional expression (DE mRNA Pelo-/-, q-value ≤0.05). Italicized pathways indicate pathways that overlapped with enriched pathways of differentially translated genes in Pelo-/- MEFs (DE RPF Pelo-/-, adj. p≤0.05) (Figure 5—figure supplement 1E). The red dashed line indicates the significance threshold (p=0.05). (C) Ingenuity pathway analysis (IPA) of genes with differential translational efficiency from Pelo-/- (TE Pelo-/-) and Hbs1l-/- (TE Hbs1l-/-) MEFs. EIF2 and mTOR/p70S6K signaling are in italics. The red dashed line indicates the significance threshold (p=0.05). (D) Western blot analysis of p-eIF2αS51 and p-p70S6KT389 using lysates of tamoxifen-treated control (Pelofl/fl) and Pelo-/- MEFs at Day 2 (Passage P1). Vinculin was used as a loading control. (E) Levels of p-eIF2αS51 or p-p70S6KT389 were normalized to total level of eIF2α or p70S6K, and phosphorylation levels are relative to those of control (Pelofl/fl). Data represent mean + SD. (F) Translational efficiency (TE) of genes with translational regulation by mTOR via their 5’TOP motif was compared to the remaining (‘other’) genes from Pelo-/- (blue) and Hbs1l-/- (red) MEFs. Upward direction of arrows indicates significant increase in translational efficiency of 5’TOP genes. 4-OHT, 4-hydroxytamoxifin; 5’TOP, 5’terminal oligopyrimidine motif. Student’s t-test (E); Wilcoxon rank-sum test was used to determine statistical significance (A, F). ns, not significant; **p≤0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Translational efficiency (TE) of Pelo-/-- and Hbs1l-/--pausing genes was compared to the TE of the remaining (‘other’) genes from Pelo-/- (blue) and Hbs1l-/- (red) MEFs. Upward direction of arrows indicates significant increase in translational efficiency of Pelo-/-- and Hbs1l-/--pausing genes. (B) Analysis of differentially translated genes in Pelo-/- (DE RPF Pelo-/-, adj. p≤0.05, left) and Hbs1l-/- (DE RPF Hbs1l-/-, adj. p≤0.05, right) MEFs are shown in gray. Pelo-/-- and Hbs1l-/--specific pausing genes (z-score ≥10, detected in all three biological replicates) that are differentially translated are highlighted. Twofold changes in expression are indicated by the black dashed lines. (C) Differentially translated genes in Hbs1l-/- MEFs (DE RPF Hbs1l-/-, adj. p≤0.05, x-axis, red) were plotted against genes that are differentially translated in Pelo-/- MEFs (DE RPF Pelo-/-, adj. p≤0.05, y-axis, blue). Genes those translation was significantly different in both Hbs1l-/- and Pelo-/- MEFs are shown in purple. (D) Differential translation of genes in Pelo (DE RPF Pelo-/-, adj. p≤0.05) and Hbs1l (DE RPF Hbs1l-/-, adj. p≤0.05) was compared to that of Pelo-/-- and Hbs1l-/--specific pausing genes. Downward direction of arrows indicates significantly reduced changes in RPFs from the pausing genes compared to non-pausing (‘other’) genes. (E) KEGG pathway analysis of differentially translated (up- and downregulated) genes (DE RPF Pelo-/-, adj. p≤0.05) in Pelo-/- MEFs. Top nine of the significantly enriched pathways are shown. The red dashed line indicates the significance threshold (p=0.05). Pathways that are positively (ribosome, ribosome biogenesis) and negatively (lysosome, autophagy) regulated by mTORC1 are in italics. (F) Ingenuity pathway analysis (IPA) of differentially transcribed genes in Pelo (DE mRNA Pelo-/-) and Hbs1l (DE mRNA Hbs1l-/-). EIF2 and mTOR/p70S6K signaling are in italics. The red dashed line indicates the significance threshold (p=0.05). RPF, ribosome protected fragments. Wilcoxon rank-sum test was used to determine statistical significance (A, D); Pearson coefficient (r) was determined to analyze linearity of gene expression changes (C).
+
 To identify signaling pathways that might control these changes in translation regulation upon loss of Pelo/Hbs1l, we performed IPA analysis on differentially transcribed (DE mRNA) genes and genes with altered translation efficiency (TE). EIF2 and mTOR/p70S6K signaling, both of which are known to regulate translation, were highly enriched in Pelo-/- cells but less enriched in Hbs1l-/- cells (Figure 5C, Figure 5—figure supplement 1F). Phosphorylation of eIF2α decreases translation initiation, while the activity of mTOR, in particular mTORC1 (mechanistic target of rapamycin complex 1), increases translation initiation and elongation. About 50% of the differentially regulated genes identified by IPA overlapped between the two pathways and therefore, we assessed the phosphorylation status of p-eIF2αS51 and p-p70S6T389, a known target of mTORC1, to determine if one or both signaling pathways were affected. Levels of p-eIF2αS51 in Pelo-/- cells were unchanged from those of control cells (Figure 5D and E). However, levels of p-p70S6T389 were significantly increased in Pelo-/- cells, indicating activation of mTOR signaling (Figure 5D and E). In agreement, the TE of genes that are known to be translationally regulated by mTORC1 via their 5’terminal oligopyrimidine motifs (5’TOP) (Yamashita et al., 2008) was significantly increased in Pelo-/- and Hbs1l-/- cells, although this increase was less pronounced in the latter (Figure 5F). Activation of mTORC1 may underlie some of the observed gene expression changes (DE RPF) given its role as a positive regulator for ribosome biogenesis and translation of ribosomal genes and a negative regulator of lysosomal biogenesis and autophagy (Kim et al., 2011; Mayer and Grummt, 2006; Puertollano, 2014; Rabanal-Ruiz et al., 2018; Roczniak-Ferguson et al., 2012), which parallels the directionality of the changes in these pathways (Figure 5—figure supplement 1E).
 
-## Convergent modulation of the translatome in cells with defects in translation-dependent quality control pathways
+### Convergent modulation of the translatome in cells with defects in translation-dependent quality control pathways
 
 Our findings suggest that translational reprogramming occurs upon loss of Pelo/Hbs1l. However, whether these changes are unique to Pelo/Hbs1l or reflect a more general cellular response upon impairment of translation-dependent quality control pathways is unclear. To investigate this possibility, we conditionally deleted the core NMD component, Upf2, in MEFs (Lelivelt and Culbertson, 1999; Serin et al., 2001). In contrast to NGD and NSD that resolve ribosomes on mRNAs impeding translation elongation, nonsense-mediated decay (NMD) targets aberrant mRNAs (e.g. mRNAs containing a premature termination codon) for degradation during translation (Karousis and Mühlemann, 2019; Schuller and Green, 2018). Consistent with the function of Upf2 in NMD, about 20% and 13% of upregulated transcripts (DE mRNA Upf2, q-value ≤0.05) were NMD transcripts or transcripts with retained introns, respectively (Figure 6—figure supplement 1A, Supplementary file 7). Although the accumulation of these transcripts was specific to Upf2 -/- cells (Figure 6—figure supplement 1A and B), we observed an inverse relationship between transcriptional gene expression changes (DE mRNA Upf2) and changes in translational efficiency (TE Upf2) in Upf2-/- cells as we did in Pelo-/- and Hbs1l-/- cells (Figure 6A). Surprisingly, IPA analysis on differentially transcribed (DE mRNA Upf2-/-) genes and genes with altered translation efficiency (TE Upf2-/-) revealed enrichment for EIF2 and mTOR signaling in Upf2-/- as observed in Pelo-/- and Hbs1l-/- cells (Figure 6B and C). Western blot analysis revealed the level of p-eIF2αS51 in Upf2-/- cells was unchanged from that of controls, but p-p70S6T389 levels and translation of 5’TOP genes were significantly increased (Figure 6C,D and E), indicating that mTORC1 is activated in Upf2-/- cells. Although translation of ribosomal genes was increased, transcriptional levels of ribosomal genes were decreased in Upf2-/- similar to Pelo-/- cells (Figure 6F), further supporting that mTORC1 activation may be a general response in an attempt to restore cellular homeostasis in Upf2-/- and Pelo-/- cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig6-v1.jpg)
+
+**Figure 6.:** (A) Translational efficiency (TE) of genes that are transcriptionally upregulated or downregulated was compared to the remaining (‘other’) genes from Upf2-/- (green) MEFs. Downward direction of the arrow indicates significant decrease in translational efficiency of transcriptionally upregulated genes in Upf2-/- MEFs. Upward direction of the arrow indicates significant increase in translational efficiency of transcriptionally downregulated genes in Upf2-/- MEFs. (B) Ingenuity pathway analysis (IPA) of differentially transcribed genes from Upf2-/- MEFs (DE mRNA Upf2-/-). EIF2 and mTOR/p70S6K signaling are in italics. The red dashed line indicates the significance threshold (p=0.05). (C) Western blot analysis of p-eIF2αS51 and p-p70S6KT389 of lysates from tamoxifen-treated control (Upf2fl/+) and Upf2-/- MEFs at Day 2 (Passage P1). Vinculin was used as a loading control. (D) Levels of p-eIF2αS51 or p-p70S6KT389 were normalized to total level of eIF2α or p70S6K, and phosphorylation levels are relative to those of control (Upf2fl/+) MEFs. Data represent mean + SD. (E) Translational efficiency (TE) of genes those translation is regulated by mTOR via their 5’TOP motif was compared to the remaining (‘other’) genes from Upf2-/- (green) MEFs. Upward direction of the arrow indicates significant increase in translational efficiency of 5’TOP genes. (F) Differential transcription (DE mRNA) or translational efficiency (TE) of ribosomal protein genes (small and large ribosomal subunit) was compared to the remaining (‘other’) genes from Pelo-/- (blue), Upf2-/- (green), and Hbs1l-/- (red) MEFs. Up- and downward direction of arrows indicates significant up- and downregulation of ribosomal protein genes, respectively. The heatmap indicates the gene expression changes of ribosomal protein genes. (G) Identification of upstream regulators of genes with differential translational efficiency in Upf2-/- (TE Upf2-/-) and Pelo-/- (TE Pelo-/-) MEFs. Top ten transcription factors are shown. Those enriched in both Upf2-/- and Pelo-/- MEFs and shown in red. Up- or downward direction of arrows indicates predicted up- or downregulation of transcription factors, respectively. (H) Differentially translated genes in Upf2-/- MEFs (DE RPF Upf2-/-, adj. p≤0.05, x-axis, green) were plotted against genes that are differentially translated in Pelo-/- MEFs (DE RPF Pelo-/-, adj. p≤0.05, y-axis, blue). Genes those translation was significantly different in both Upf2-/- and Pelo-/- MEFs are shown in purple. (I) KEGG pathway analysis of differentially translated (up- and downregulated) genes (DE RPF, adj. p≤0.05) in Upf2-/- (green), Pelo-/- (blue) and Hbs1l-/- (red) MEFs. Significantly (p≤0.05) enriched pathways are shown and pathways in bold indicate pathways that are shared between any of the mutant MEFs. Pathways known to be positively or negatively regulated by mTORC1 are in red. 4-OHT, 4-hydroxytamoxifin; 5’TOP, 5’terminal oligopyrimidine motif. Student’s t-test (D); Wilcoxon rank-sum test was used to determine statistical significance (A, E, F); Pearson coefficient (r) was determined to analyze linearity of gene expression changes (H). ns, not significant; **p≤0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Ensembl-annotated transcript biotypes of differentially transcribed mRNAs in Upf2-/- (DE mRNA Upf2-/-, q-value ≤0.05) and Pelo-/- (DE mRNA Pelo-/-, q-value ≤0.05) MEFs. (B) Transcriptional expression of NMD transcripts with significant (q-value ≤0.05) changes in expression in Upf2-/- (DE mRNA Upf2-/-) and Pelo-/- (DE mRNA Pelo-/-) was compared to expression of the remaining (‘other’) transcripts. The effect size (beta) is analogous to the natural log fold change in expression. Up- or downward direction of arrows indicates significant increase or decrease in expression of NMD transcripts in Upf2-/- or Pelo-/- MEFs. (C) Ingenuity pathway analysis (IPA) of genes with differential translational efficiency (TE) in Upf2-/- MEFs (TE Upf2-/-). EIF2 and mTOR signaling are in italics. The red dashed line indicates the significance threshold (p=0.05). (D) Comparison of z-scores (‘pause score’) of specific pauses observed in Pelo-/- (blue) and Upf2-/- (green) MEFs. Downward direction of the arrow indicates significantly lower pause scores specific to Upf2-/- compared to Pelo-/- MEFs. (E) Transcriptional expression of either Pelo- or Hbs1l-specific pausing transcripts (unique protein-coding pausing transcripts) was compared to the remaining (‘other’) transcripts in Upf2-/- (DE mRNA Upf2-/-) MEFs. The effect size (beta) is analogous to the natural log fold change in expression. Downward direction of arrows indicates a significant decrease in expression of Pelo- or Hbs1l-specific pausing transcripts in Upf2-/- MEFs. NMD, nonsense-mediated transcript; lncRNA, long noncoding RNA. Wilcoxon rank-sum test was used to determine statistical significance (B, D, E).
 
 Surprisingly, most of the top upstream regulators predicted by IPA analysis that may govern the observed gene expression changes were shared between Upf2-/- and Pelo-/- cells and included Trp53, Myc, Tgfb1, Errb2, Cdkn1a, Hras, and Nfkbia (Figure 6G). In agreement, genes with differential translational efficiency were strongly correlated between Upf2-/- and Pelo-/- cells (Pearson’s correlation, r = 0.6576). Furthermore, differentially translated genes in Upf2-/- (32% of genes, DE RPF Upf2-/-) and Pelo-/- (34% of genes, DE RPF Pelo-/-) cells also showed a strong linear correlation (Figure 6H), indicating that defects in these quality control pathways may not only lead to similar changes in translation regulation (TE) but also in global gene translation (DE RPF). Consistent with the similar changes in translation, KEGG pathway analysis of differentially translated genes (DE RPF, adj. p≤0.05) revealed similar enrichment of multiple pathways in Upf2-/-, Pelo-/-, and Hbs1-/- cells (Figure 6I).
 
 In contrast with the many ribosome pauses we observed specifically in Pelo-/- cells, only 4% of all ribosome pausing events observed in Upf2-/- and control cells were uniquely found in Upf2-/- cells (Figure 6—figure supplement 1D). Although only a small fraction (8%) of Pelo- and Hbs1l-specific pausing transcripts corresponded to NMD transcripts, we considered the possibility that some of the protein-coding transcripts with ribosome pauses in Pelo-/- and Hbs1l-/- cells may also be NMD sensitive given that 5–10% of mRNAs without premature termination codons are thought to be degraded by the NMD pathway (He et al., 2003; Jaffrey and Wilkinson, 2018; Lelivelt and Culbertson, 1999; Mendell et al., 2004). However, upregulation of these protein-coding pausing transcripts was not observed in Upf2-/- cells (Figure 6—figure supplement 1E), suggesting that these pausing transcripts are not NMD sensitive. Together, these findings suggest that while Pelo/Hbs1l and Upf2 largely function in distinct quality control pathways, disruption of either pathway results in similar translational gene expression changes.
 
-## Deletion of Upf2 or Pelo cause similar cerebellar developmental defects
+### Deletion of Upf2 or Pelo cause similar cerebellar developmental defects
 
 Intrigued by the similar changes in translation upon impairment of Upf2 and Pelo/Hbs1l in MEFs, we conditionally deleted Upf2 during cerebellar development to determine if phenotypic similarities exist upon loss of these different translation-dependent quality control pathways. Surprisingly, deletion of Upf2 (En1Cre; Upf2 cKO) or Pelo (En1Cre; Pelo cKO) using En1Cre resulted in largely indistinguishable defects with a grossly hypoplastic cerebellum and regions of the midbrain (superior and inferior colliculus) being nearly absent unlike in En1Cre; Hbs1l cKO mice (Figures 7A and 2D). Both Upf2 and Pelo mutant pups died shortly after birth, perhaps due to En1Cre deletion of these genes in other cell types (Britz et al., 2015; Kimmel et al., 2000; Sapir et al., 2004; Sgaier et al., 2007; Wurst et al., 1994).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig7-v1.jpg)
+
+**Figure 7.:** (A) Parasagittal (E13.5) and sagittal (P0) cerebellar sections of control (Pelofl/fl), En1Cre; Upf2 cKO and En1Cre; Pelo cKO mice stained with cresyl violet. (B) Sagittal cerebellar sections of P21 control (Pelofl/fl), Tg(Atoh1-Cre); Upf2 cKO and Tg(Atoh1-Cre); Pelo cKO mice stained with cresyl violet. Higher magnification images of lobule VI are shown below for each genotype. Cerebellar lobules are indicated by Roman numerals. (C) Immunofluorescence with antibodies to BrdU (green) and Ki67 (red) on sections of P6 control (Tg(Atoh1-Cre); Upf2fl/+), Tg(Atoh1-Cre); Upf2 cKO and Tg(Atoh1-Cre); Pelo cKO cerebellum. Mice were injected with BrdU 24 hr prior to harvest to determine the fraction of granule cell precursors in the EGL that exited the cell cycle. Images are shown for anterior (IV/V) and posterior (IX) lobules. (D) Quantification of the fraction of granule cell precursors in the EGL (lobules IV/V and IX) that exited the cell cycle (BrdU+, Ki67- cells) of control (Tg(Atoh1-Cre); Upf2fl/+), Tg(Atoh1-Cre); Upf2 cKO, Tg(Atoh1-Cre); Pelo cKO and Tg(Atoh1-Cre); Hbs1l cKO mice. Data represent mean + SD. (E) Quantification of terminally differentiated granule cells (NeuN+ cells) in the IGL in lobules IV/V and IX of control (Tg(Atoh1-Cre); Upf2fl/+), Tg(Atoh1-Cre); Upf2 cKO, Tg(Atoh1-Cre); Pelo cKO and Tg(Atoh1-Cre); Hbs1l cKO mice. Data represent mean + SD. Scale bars: 200 μm (E13.5) and 500 μm (P0) (A); 500 μm and 20 μm (higher magnification) (B); 50 μm (C). VZ, ventricular zone, EGL, external granule cell layer; NTZ, nuclear transitory zone; SC, superior colliculus; IC, inferior colliculus; ML, molecular cell layer; PL, Purkinje cell layer; GCL, granule cell layer; oEGL, outer external granule cell layer; iEGL, inner external granule cell layer; IGL, internal granule cell layer. Two-way ANOVA was corrected for multiple comparisons using Tukey method (D, E). ns, not significant; ***p≤0.001; ****p≤0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66904/elife-66904-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Immunofluorescence using antibodies to BrdU (green) and Ki67 (red) on cerebellar sections from E13.5 control (Upf2fl/fl), En1Cre; Upf2 cKO and En1Cre; Pelo cKO embryos to determine the fraction of cells in VZ that exited the cell cycle. Embryos were injected with BrdU 24 hr prior to harvest. (B) Percentage of cerebellar VZ-progenitors that exited the cell cycle (BrdU+, Ki67- cells). Data represent mean + SD. (C) Number of cerebellar Purkinje cell precursors (Lhx1/5+ cells). Data represent mean + SD. (D) Immunofluorescence using antibodies to Lhx1/5 on cerebellar sections from E13.5 control (Upf2fl/fl), En1Cre; Upf2 cKO and En1Cre; Pelo cKO embryos. Sections were counterstained with DAPI and higher magnification images of boxed areas are shown. (E) Immunofluorescence using antibodies to Pax2 (red) on cerebellar sections from E13.5 control (Upf2fl/fl), En1Cre; Upf2 cKO and En1Cre; Pelo cKO embryos. Sections were counterstained with DAPI. Arrowheads denote occasional Pax2+ cells. (F) Number of cerebellar VZ-derived interneuron precursors (Pax2+ cells). Data represent mean + SD. (G) Immunofluorescence using antibodies to Tbr1 (red) on cerebellar sections from E13.5 control (Upf2fl/fl), En1Cre; Upf2 cKO and En1Cre; Pelo cKO embryos. Sections were counterstained with DAPI. Arrowheads denote occasional Tbr1+ cells. (H) Number of RL-derived Tbr1+ deep cerebellar neurons. Data represent mean + SD. (I) Quantification of newborn granule cell precursors (BrdU+ cells) in E13.5 control (Upf2fl/fl), En1Cre; Upf2 cKO and En1Cre; Pelo cKO EGL. Data represent mean + SD. Embryos were injected with BrdU 24 hr prior to harvest. (J) Immunofluorescence using antibodies to cleaved caspase 3 (Casp3, red) on cerebellar sections from E13.5 control (Upf2fl/fl), En1Cre; Upf2 cKO, En1Cre; Pelo cKO and En1Cre; Hbs1l cKO embryos. Sections were counterstained with DAPI. Note: Because the number of apoptotic cells was noticeably higher in En1Cre; Upf2 cKO and En1Cre; Pelo cKO cerebella, arrowheads (magenta) to indicate these cells were not included. (K) Number of Casp3+ cells. Data represent mean + SD. (L) Immunofluorescence on sections of E13.5 control (Upf2fl/fl), En1Cre; Upf2 cKO and En1Cre; Pelo cKO cerebellum with antibodies to p-S6S240/244 (red) and PCNA (green). (M) Relative fluorescence intensity (FI) of p-S6S240/244 of control (Upf2fl/fl), En1Cre; Upf2 cKO and En1Cre; Pelo cKO embryos. Levels of p-S6S240/244 are relative to those of control (Upf2fl/fl). Data represent mean + SD. Scale bars: 100 μm and 20 μm (higher magnification) (A); 100 μm and 50 μm (higher magnification) (D); 50 μm (E, G); 20 μm (J); 25 μm (L). VZ, ventricular zone; RL, rhombic lip; NTZ; nuclear transitory zone; EGL, external granule cell layer. One-way ANOVA was corrected for multiple comparisons using Tukey method (B, C, F, H, I, K, M). ns, not significant; **p≤0.01; ***p≤0.001; ****p≤0.0001.
 
 Similar neurogenesis defects were observed in the Upf2 and Pelo mutant cerebellum. The fraction of ventricular zone (VZ) progenitors that remained in the cell cycle was higher in E13.5 Upf2- or Pelo-deficient cerebella compared to controls (Figure 7—figure supplement 1A and B), indicating that like Hbs1l, loss of Upf2 or Pelo impairs cell cycle exit of VZ-progenitors. Inversely, the number of VZ-derived precursors, for example Purkinje cells (Lhx1/5+ cells) and Pax2+ interneurons were reduced by ~83% and~90% in the En1Cre; Upf2 cKO and En1Cre; Pelo cKO cerebellum (Figure 7—figure supplement 1C,D,E and F). Glutamatergic deep cerebellar neurons (Tbr1+) were nearly absent in the E13.5 En1Cre; Upf2 cKO and En1Cre; Pelo cKO cerebellum (Figure 7—figure supplement 1G and H). In addition, the EGL was missing in En1Cre; Upf2 cKO and En1Cre; Pelo cKO cerebella at both E13.5 and P0 (Figure 7A, Figure 7—figure supplement 1I), indicating that neurogenesis defects are particularly more severe in the absence of Upf2 or Pelo relative to those observed upon Hbs1l loss.
 
@@ -136,7 +188,514 @@ How different translation-dependent quality control pathways can lead to similar
 
 ## Materials and methods
 
-## Mouse strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Hbs1lGTC</td>
+      <td>This study (see Materials and methods)</td>
+      <td>MMRRC #007694-UCD; RRID:MMRRC007694-UCD</td>
+      <td>International Gene Trap Consortium, IGTC, cell line ID: XE494</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Hbs1ltm1a(C57BL/6N-Atm1BrdHbs1ltm1a(KOMP)Wtsi)</td>
+      <td>Skarnes et al., 2011</td>
+      <td>MMRRC #048037-UCD, RRID:MMRRC048037-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6N.129S4-Gt(ROSA)26Sortm1(FLP1)Dym/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX:016226; RRID:IMSRJAX:016226</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6N.Cg-Edil3Tg(Sox2-Cre)1Amc/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX:014094; RRID:IMSRJAX:014094</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6.FVB-Tg(EIIa-Cre)C5379Lmgd/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX:003724; RRID:IMSRJAX:003724</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>En1tm2(Cre)Wrst/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX:007916; RRID:IMSRJAX:007916</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6.Cg-Tg(Atoh1-Cre)1Bfri/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX:011104; RRID:IMSRJAX:011104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6.Cg-Tg(CAG-Cre/Esr1*)5Amc/J</td>
+      <td></td>
+      <td>JAX:004682; RRID:IMSRJAX:004682</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6.Tg(Gabra6-Cre)B1Lfr</td>
+      <td>Fünfschilling and Reichardt, 2002</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6J-Pelofl/fl</td>
+      <td>This study (see Materials and methods)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Upf2fl/fl</td>
+      <td>Weischenfeldt et al., 2008</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6J.B6Nn-Tr20</td>
+      <td>Ishimura et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6J-n-Tr20-/-</td>
+      <td>Ishimura et al., 2016</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-eIF2alphaS51 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>CST #9721; RRID:AB_330951</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-eIF2alpha (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>CST #9722; RRID:AB_2230924</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-p70S6KT389 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>CST #9234; RRID:AB_2269803</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p70S6K (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>CST #2708; RRID:AB_390722</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-S6S240/244 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>CST #5364; RRID:AB_10694233</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved caspase 3 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>CST #9661; RRID:AB_2341188</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BrdU (Mouse monoclonal)</td>
+      <td>Dako/Agilent</td>
+      <td>M0744; RRID:AB_10013660</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Hbs1l (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>#10359–1-AP; RRID:AB_2114730</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pelo (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>#10582–1-AP; RRID:AB_2236833</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vinculin (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>V9131; RRID:AB_477629</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>CST #2118; RRID:AB_561053</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (Rabbit Polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab15580; RRID:AB_443209</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Olig2 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab109186; RRID:AB_10861310</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Lhx1/5 (Mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>#4F2-c; RRID:AB_531784</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NeuN (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>MAB377; RRID:AB_2298772</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tbr1 (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>AB9616; RRID:AB_2200223</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pax2 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#71–6000; RRID:AB_2533990</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pH3 (Rabbit polyclonal)</td>
+      <td>Upstate, Millipore</td>
+      <td>#06–570; RRID:AB_310177</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PCNA (Mouse monoclonal)</td>
+      <td>Invitrogen, Thermo Fisher Scientific</td>
+      <td>MA5-11358; RRID:AB_10982348</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNase I</td>
+      <td>Worthington</td>
+      <td>LS002139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bromodeoxyuridine (BrdU)</td>
+      <td>Sigma-Aldrich</td>
+      <td>B9285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Bromo-4-chloro-3-indolyl-β-D-galactopyranoside (X-Gal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>B4252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Z-4-hydroxytamoxifin (4OHT)</td>
+      <td>Sigma-Aldrich</td>
+      <td>H7905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Multiplex Fluorescent Reagent Kit v2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#323100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Stranded mRNA-seq. Kit</td>
+      <td>Roche</td>
+      <td>KR0960</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iQ SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>#1708880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III First-Strand Synthesis System</td>
+      <td>Invitrogen</td>
+      <td>#18080051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA-free DNA Removal Kit</td>
+      <td>Life Technologies</td>
+      <td>AM1906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA Plus Cyanine 3</td>
+      <td>PerkinElmer</td>
+      <td>NEL744001KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNA-seq. and ribosome profiling data</td>
+      <td>This study (see Materials and methods)</td>
+      <td>GSE162556</td>
+      <td>Deposited Data</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hbs1l GTC (Genotyping)</td>
+      <td>This study (see Materials and methods)</td>
+      <td>N/A</td>
+      <td>Common Forward:5’AGTCCAGGTGTTTCCTCACG3’; Wild type Reverse:5’CCCTGGCCTATTTTTGGTTT3’; GTC Reverse:5’TGTCCTCCAGTCTCCTCCAC3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hbs1l cKO (Genotyping)</td>
+      <td>This study (see Materials and methods)</td>
+      <td>N/A</td>
+      <td>Forward I: 5’CATGGCCTCCTATGGGTTGA3’; Forward II: 5’GCCTACAGTGAGCACAGAGT3’; Reverse: 5’TAGGTGCTGGGATTTGAACC3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pelo cKO (Genotyping)</td>
+      <td>This study (see Materials and methods)</td>
+      <td>N/A</td>
+      <td>Forward:5’TGTAACTGAACCCTGCAGTATCT3’; Reverse I: 5’GTGGAGCATGAAATGAAATTCGG3’; Reverse II: 5’ATCCAAGGCTTTTACTTCGCC3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Hbs1l-C2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#527471-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hbs1l Exon 3–6 (RT-PCR)</td>
+      <td>This study (see Materials and methods)</td>
+      <td>N/A</td>
+      <td>Forward Primer:5’GAAATTGACCAAGCTCGCCTGTA3’; Reverse Primer:5’CTCAGAAGTTAAGCCAGGCACT3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin (RT-PCR)</td>
+      <td>Terrey et al., 2020</td>
+      <td>N/A</td>
+      <td>Forward Primer:5’GGCTGTATTCCCCTCCATCG3’; Reverse Primer:5’CCAGTTGGTAACAATGCCATGT3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hbs1l Isoform I (quantitative RT-PCR)</td>
+      <td>This study (see Materials and methods)</td>
+      <td>N/A</td>
+      <td>Forward Primer:5’AGACCATGGGATTTGAAGTGC3’; Reverse Primer:5’CCGGTCTCAGGAATGTTAGGA3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hbs1l Isoform II (quantitative RT-PCR)</td>
+      <td>This study (see Materials and methods)</td>
+      <td>N/A</td>
+      <td>Forward Primer:5’TGAAGTTGAACAAAGTGCCAAG 3’; Reverse Primer:5’CTGCTTCCTCTGTGTTCCTC3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pelo (quantitative RT-PCR)</td>
+      <td>This study (see Materials and methods)</td>
+      <td>N/A</td>
+      <td>Forward Primer:5’CCCCAGGAAACGGAAAGGC3’; Reverse Primer:5’ACGCACTTTACAACCTCGAAG3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh (quantitative RT-PCR)</td>
+      <td>Ishimura et al., 2016</td>
+      <td>N/A</td>
+      <td>Forward Primer:5’CATTGTCATACCAGGAAATG3’; Reverse Primer:5’GGAGAAACCTGCCAAGTATG3’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070; https://imagej.nih.gov/ij</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td>GraphPad Prism</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pause site identification algorithm</td>
+      <td>Ishimura et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>biomaRt version 2.42.1</td>
+      <td>Durinck et al., 2005</td>
+      <td>RRID:SCR_019214; https://bioconductor.org/packages/release/bioc/html/biomaRt.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ShinyGO v0.61 (KEGG pathway)</td>
+      <td>Ge et al., 2020</td>
+      <td>RRID:SCR_019213; http://bioinformatics.sdstate.edu/go</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity Pathway Analysis (IPA)</td>
+      <td>QIAGEN Inc</td>
+      <td>RRID:SCR_008653; https://www.qiagenbioinformatics.com/products/ingenuity-pathway-analysis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 v1.26.0</td>
+      <td>Love et al., 2014</td>
+      <td>RRID:SCR_015687; https://bioconductor.org/packages/release/bioc/html/DESeq2.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ensembldb v2.6.8</td>
+      <td>Rainer et al., 2019</td>
+      <td>RRID:SCR_019103; https://www.bioconductor.org/packages/release/bioc/html/ensembldb.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>riborex v2.3.4</td>
+      <td>Li et al., 2017</td>
+      <td>RRID:SCR_019104; https://github.com/smithlabcode/riborex</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RiboWaltz v1.0.1</td>
+      <td>Lauria et al., 2018</td>
+      <td>RRID:SCR_016948; https://github.com/LabTranslationalArchitectomics/RiboWaltz</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bowtie2 v 2.2.3</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>RRID:SCR_005476; http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fastx_trimmer</td>
+      <td>Hannon Lab</td>
+      <td>http://hannonlab.cshl.edu/fastx_toolkit/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fastx_clipper</td>
+      <td>Hannon Lab</td>
+      <td>http://hannonlab.cshl.edu/fastx_toolkit/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>hisat2 v2.1.0</td>
+      <td>Kim et al., 2019</td>
+      <td>RRID:SCR_015530;https://daehwankimlab.github.io/hisat2/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>featureCounts</td>
+      <td>Liao et al., 2014</td>
+      <td>RRID:SCR_012919; http://bioinf.wehi.edu.au/featureCounts</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>sleuth v0.30.0</td>
+      <td>Pimentel et al., 2017</td>
+      <td>RRID:SCR_016883;https://pachterlab.github.io/sleuth/about</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>kallisto v0.42.4</td>
+      <td>Bray et al., 2016</td>
+      <td>RRID:SCR_016582;https://pachterlab.github.io/kallisto/about</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse strains
 
 Generation of Hbs1lGTC mice was performed by injection of targeted ES cells (International Gene Trap Consortium, IGTC, cell line ID: XE494) into C57BL/6J (B6J) blastocysts. B6N-Hbs1ltm1a (C57BL/6N-Atm1BrdHbs1ltm1a(KOMP)Wtsi, MMRRC:048037) mice were produced at the Wellcome Trust Sanger Institute Mouse Genetics Project as part of the International Mouse Phenotype Consortium (IMPC). In order to generate the conditional Hbs1l knock out allele, heterozygous B6N-Hbs1ltm1a/+ mice were crossed to B6N.129S4-Gt(ROSA)26Sortm1(FLP1)Dym/J (The Jackson Laboratory, #016226, MGI:5425632) to remove the gene trap cassette and generate B6N-Hbs1lfl/+ mice. Generation of the constitutive B6N-Hbs1l+/- knock out allele was accomplished by crossing homozygous B6N-Hbs1lfl/fl mice to B6N.Cg-Edil3Tg(Sox2-Cre)1Amc/J mice (The Jackson Laboratory, #014094, MGI:4943744). The B6N-Hbs1l+/- or B6N-Hbs1lfl/fl mice were backcrossed to congenic B6N.B6Jn-Tr20 mice (n = 2 backcross generations) to introduce the B6J-associated n-Tr20 mutation. The conditional knock out Pelo allele was generated by placing the 5’loxP site 117 bp upstream of exon 2 and the 3’loxP site 302 bp downstream of exon2. Targeted B6J ES cells were injected into B6J blastocysts to generate heterozygous B6J-Pelofl/+ mice. Generation of the ubiquitous B6J-Pelo+/- knock out allele was accomplished by crossing homozygous B6J-Pelofl/fl mice to B6.FVB-Tg(EIIa-Cre)C5379Lmgd/J mice (The Jackson Laboratory, #003724, MGI:2174520). The conditional Upf2 knock out allele (Upf2fl/fl mice) was kindly provided from Drs. Bo Torben Porse and Miles Wilkinson. Genotyping primers are listed below and for the conditional knock out alleles of Hbs1l and Pelo, genotyping primers were multiplexed to simultaneously detect the wild type, flox (fl) and delta (-) allele. Genotyping for the conditional knock out allele of Upf2, was performed as previously described (Weischenfeldt et al., 2008).
 
@@ -146,17 +705,74 @@ For conditional knock out experiments in primary mouse embryonic fibroblasts (ME
 
 All experiments and quantifications were performed with at least three mice/embryos of each genotype and time point using mice of either sex (embryos were not sexed). The Jackson Laboratory Animal Care and Use Committee and The University of California San Diego Animal Care and Use Committee approved all mouse protocols.
 
-## Strain abbreviation
+### Strain abbreviation
 
 For conditional knock out (cKO) experiments, animals were given a simplified abbreviation throughout the article. The complete genotype is shown below.
 
-AbbreviationGenotypeEn1Cre, Hbs1l cKOEn1Cre/+; Hbs1lfl/-; n-Tr20B6J/B6JEn1Cre, Pelo cKOEn1Cre/+; Pelofl/fl; n-Tr20B6J/B6JEn1Cre, Upf2 cKOEn1Cre/+; Upf2fl/fl; n-Tr20B6J/B6JTg(Atoh1-Cre), Hbs1l cKOTg(Atoh1-Cre); Hbs1lfl/-; n-Tr20B6J/B6JTg(Atoh1-Cre), Pelo cKOTg(Atoh1-Cre); Pelofl/fl; n-Tr20B6J/B6JTg(Atoh1-Cre), Upf2 cKOTg(Atoh1-Cre); Upf2fl/fl; n-Tr20B6J/B6JTg(Gabra6-Cre), Hbs1l cKOTg(Gabra6-Cre); Hbs1lfl/-; n-Tr20B6J/B6JTg(Gabra6-Cre), Pelo cKOTg(Gabra6-Cre); Pelofl/-; n-Tr20B6J/B6JTgCAG-CreER (control MEFs)Tg(CAG-Cre/Esr1); n-Tr20B6J/B6JTgCAG-CreER, Hbs1l cKO (Hbs1l-/- MEFs)Tg(CAG-Cre/Esr1); Hbs1lfl/-; n-Tr20B6J/B6JTgCAG-CreER, Pelo cKO (Pelo-/- MEFs)Tg(CAG-Cre/Esr1); Pelofl/fl; n-Tr20B6J/B6JTgCAG-CreER, Upf2 cKO (Upf2-/- MEFs)Tg(CAG-Cre/Esr1); Upf2fl/fl; n-Tr20B6J/B6J
+<table>
+  <thead>
+    <tr>
+      <th>Abbreviation</th>
+      <th>Genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>En1Cre, Hbs1l cKO</td>
+      <td>En1Cre/+; Hbs1lfl/-; n-Tr20B6J/B6J</td>
+    </tr>
+    <tr>
+      <td>En1Cre, Pelo cKO</td>
+      <td>En1Cre/+; Pelofl/fl; n-Tr20B6J/B6J</td>
+    </tr>
+    <tr>
+      <td>En1Cre, Upf2 cKO</td>
+      <td>En1Cre/+; Upf2fl/fl; n-Tr20B6J/B6J</td>
+    </tr>
+    <tr>
+      <td>Tg(Atoh1-Cre), Hbs1l cKO</td>
+      <td>Tg(Atoh1-Cre); Hbs1lfl/-; n-Tr20B6J/B6J</td>
+    </tr>
+    <tr>
+      <td>Tg(Atoh1-Cre), Pelo cKO</td>
+      <td>Tg(Atoh1-Cre); Pelofl/fl; n-Tr20B6J/B6J</td>
+    </tr>
+    <tr>
+      <td>Tg(Atoh1-Cre), Upf2 cKO</td>
+      <td>Tg(Atoh1-Cre); Upf2fl/fl; n-Tr20B6J/B6J</td>
+    </tr>
+    <tr>
+      <td>Tg(Gabra6-Cre), Hbs1l cKO</td>
+      <td>Tg(Gabra6-Cre); Hbs1lfl/-; n-Tr20B6J/B6J</td>
+    </tr>
+    <tr>
+      <td>Tg(Gabra6-Cre), Pelo cKO</td>
+      <td>Tg(Gabra6-Cre); Pelofl/-; n-Tr20B6J/B6J</td>
+    </tr>
+    <tr>
+      <td>TgCAG-CreER (control MEFs)</td>
+      <td>Tg(CAG-Cre/Esr1); n-Tr20B6J/B6J</td>
+    </tr>
+    <tr>
+      <td>TgCAG-CreER, Hbs1l cKO (Hbs1l-/- MEFs)</td>
+      <td>Tg(CAG-Cre/Esr1); Hbs1lfl/-; n-Tr20B6J/B6J</td>
+    </tr>
+    <tr>
+      <td>TgCAG-CreER, Pelo cKO (Pelo-/- MEFs)</td>
+      <td>Tg(CAG-Cre/Esr1); Pelofl/fl; n-Tr20B6J/B6J</td>
+    </tr>
+    <tr>
+      <td>TgCAG-CreER, Upf2 cKO (Upf2-/- MEFs)</td>
+      <td>Tg(CAG-Cre/Esr1); Upf2fl/fl; n-Tr20B6J/B6J</td>
+    </tr>
+  </tbody>
+</table>
 
-## Cell culture
+### Cell culture
 
 Primary mouse embryonic fibroblasts (MEFs) were isolated on embryonic day E13.0 and prepared by standard procedures (Nagy et al., 2014). MEFs were maintained in Dulbecco’s modified Eagle’s medium (Gibco, #41965039) with GlutaMAX (Gibco, #35050061), PSN (Gibco, # 15640055), and 10% embryonic stem cell fetal bovine serum (Gibco, #10439024) at 37°C in 5% CO2. Two days post-isolation (Passage P0), the cell culture media was replaced with fresh media and supplemented with 1 μM 4-OHT (4-hydroxytamoxifen, Sigma, H7904) for both control and mutant cells. After 48 hr, cells were washed, trypsinized, and seeded on a 10 cm dish (Passage P1). For RNA sequencing and ribosome footprint profiling experiments, cells were collected 48 hr (Passage P1, Day 2) later when cells reached ~80% confluency. For western blotting experiments, cells of Passage P1 were collected 48 hr (Day 2) and 96 hr (Day 4) post-seeding.
 
-## Histology and immunofluorescence
+### Histology and immunofluorescence
 
 Anesthetized mice were transcardially perfused with 4% paraformaldehyde (PFA, for immunofluorescence and histology), Bouins fixative (for histology) or 10% neutral buffered formalin (NBF, for in situ hybridization). Tissues were post-fixed overnight and embedded in paraffin. For histological analysis, sections were deparaffinized, rehydrated, and were stained with cresyl violet according to standard procedures. Histological slides were imaged using a digital slide scanner (Hamamatsu).
 
@@ -166,11 +782,11 @@ For immunofluorescence, antigen retrieval on deparaffinized PFA-fixed sections w
 
 For immunofluorescence quantification, the fluorescence intensity was measured in an area of 60 × 125 μm using ImageJ, averaged from three sections (spaced 35 μm apart) per embryo and expressed as the fold change relative to control.
 
-## RNAscope (in situ hybridization)
+### RNAscope (in situ hybridization)
 
 In situ hybridization of Hbs1l-C2 probes (ACD, #527471-C2) was performed with the ACD RNAscope Multiplex Fluorescent Reagent Kit v2 (ACD, #323100) using the manufacturer’s protocol. Briefly, deparaffinized NBF-fixed sections were treated for 15 min with Target Retrieval Reagent at 100°C and subsequently, treated with Protease Plus for 20 min (E13.5 embryos) or 30 min (P28 mice) at 40°C. RNAScope probes were hybridized for 2 hr; TSA Plus Cyanine 3 (PerkinElmer, 1:1,500) was used as a secondary fluorophore for Hbs1l-C2 probes.
 
-## Reverse transcription and quantitative PCR (qPCR) analysis
+### Reverse transcription and quantitative PCR (qPCR) analysis
 
 Whole mouse embryos, primary mouse embryonic fibroblasts, or adult mouse tissues were isolated and immediately frozen in liquid nitrogen. Total RNA was extracted with Trizol reagent (Life Technologies). cDNA synthesis was performed on DNase-treated (DNA-free DNA Removal Kit, Life Technologies AM1906) total RNA using oligo(dT) primers and SuperScript III First-Strand Synthesis System (Life Technologies). Quantitative RT-PCR reactions were performed using iQ SYBR Green Supermix (Bio-Rad) and an CFX96 Real-Time PCR Detection System (Bio-Rad). Expression levels of β-actin were used as input control for semi-quantitative RT-PCR. For quantitative RT-PCR (qPCR) analysis, expression levels of the genes of interest were normalized to Gapdh using the 2-ΔΔCT method (Livak and Schmittgen, 2001) and expressed as the fold change + standard error of the mean (SEM) relative to control.
 
@@ -178,7 +794,7 @@ Semi-quantitative RT-PCR Primers (F, Forward; R, Reverse):
 
 Quantitative RT-PCR Primers (F, Forward; R, Reverse):
 
-## Western blotting
+### Western blotting
 
 MEFs or tissues were immediately frozen in liquid nitrogen. Proteins were extracted by homogenizing frozen tissue or cell samples in five volumes of RIPA buffer with cOmplete Mini, EDTA-free Protease inhibitor Cocktail (Roche), sonicating tissues two times for 10 s (Branson, 35% amplitude) or triturating cells 10 times using a 26G needle. Lysates were incubated for 30 min at 4°C, centrifuged at 16,000xg for 25 min, and 25 µg of whole protein lysate were resolved on SDS-PAGE gels prior to transfer to PVDF membranes (GE Healthcare Life Sciences, #10600023) using a tank blotting apparatus (BioRad).
 
@@ -186,19 +802,19 @@ For detection of phosphoproteins, frozen tissue samples were homogenized in 5 vo
 
 After blocking in 5% nonfat dry milk (Cell Signaling, #9999S), blots were probed with primary antibodies at 4°C overnight: rabbit anti-phospho-eIF2αS51 (Cell Signaling, #9721, 1:1000), rabbit anti-eIF2α (Cell Signaling, #9722, 1:2000), rabbit anti-Hbs1l (Proteintech, 10359–1-AP, 1;1000), rabbit anti-Pelo (Proteintech, 10582–1-AP, 1:2000), rabbit anti-GAPDH (Cell Signaling, #2118, 1:10,000), rabbit anti-phospho-p70S6KT389 (Cell Signaling, #9234, 1:1000), rabbit anti-phospho-p70S6K (Cell Signaling, #2708, 1:1000), mouse anti-vinculin (Sigma, V-9131, 1:20,000). Primary antibodies were detected by incubation with HRP-conjugated secondary antibodies for 2 hr at room temperature: goat anti-rabbit IgG (BioRad, #170–6515) or goat anti-mouse IgG (BioRad, #170–6516). Signals were detected with SuperSignal West Pico Chemiluminescent substrate (ThermoScientific, #34080) or ProSignal Femto ECL Reagent (Genesee Scientific, #20–302).
 
-## RNA sequencing library construction
+### RNA sequencing library construction
 
 For RNA sequencing of primary mouse embryonic fibroblasts (MEFs), one 10 cm dish of tamoxifen (4-OHT) treated MEFs at Day 2 (Passage P1) from TgCAG-CreER (control), TgCAG-CreER; Hbs1l cKO (Hbs1l-/-), TgCAG-CreER; Pelo cKO (Pelo-/-) and TgCAG-CreER; Upf2 cKO (Upf2-/-) were collected. One 10 cm dish from one individual embryo was used as one biological replicate, and either two (Pelo) or three (control, Hbs1, Upf2) biological replicates were used per genotype. Two micrograms of DNase-treated (DNA-free DNA Removal Kit, Life Technologies AM1906) total RNA were used for the RNA library construction, performed as per the manufacturer’s protocol (KAPA Stranded mRNA-Seq Kit, KR0960) and the adapter ligation was performed for 3 hr at room temperature. Library quality and concentration was assessed using D1000 screen tape on the Agilent TapeStation and Qubit 2.0 Fluorometer. All libraries were pooled, and the pool of libraries was sequenced on two lanes using HiSeq4000 (PE100).
 
-## Analysis of RNA sequencing data
+### Analysis of RNA sequencing data
 
 Reads were quantified using kallisto version 0.42.4 (Bray et al., 2016) and pseudo-aligned to a Gencode M24 transcriptome reference with parameters –bias and -b 100. Differential expression was performed using sleuth version 0.30.0 (Pimentel et al., 2017). Pairwise comparisons were performed to identify differentially expressed transcripts and genes: TgCAG-CreER vs. TgCAG-CreER; Pelo cKO, TgCAG-CreER vs. TgCAG-CreER; Hbs1l cKO, and TgCAG-CreER vs. TgCAG-CreER; Upf2 cKO. We used functions within sleuth to perform differential transcript and gene expression. Briefly, we fit null models and models corresponding to the genotype of the samples for each transcript and performed Wald tests on the models for each transcript to identify differentially expressed transcripts. Differential gene expression was performed by aggregating transcript expression on Ensembl gene identifiers. Multiple hypotheses testing was corrected using Benjamini-Hochberg correction, referred to as q-value. Transcript biotypes were identified using biomaRt version 2.42.1 (Durinck et al., 2005). For downstream TE analysis, mapping to mm10 using a Gencode M24 transcript annotation was performed using hisat2 version 2.1.0 (Kim et al., 2019) using default parameters.
 
-## Ribosome profiling library construction
+### Ribosome profiling library construction
 
 Ribosome profiling libraries were generated as previously described (Ingolia et al., 2012; Ishimura et al., 2014) with some modifications. Cerebella were dissected and immediately frozen in liquid nitrogen. One cerebellum from P14 mice was used for each biological replicate, and three biological replicates were prepared for each control (Tg(Atoh1-Cre); Hbs1l+/+) and mutant (Tg(Atoh1-Cre); Hbs1l cKO) genotype. For profiling of mouse embryos, embryos from timed mating were dissected at embryonic day E8.5, frozen in a drop of nuclease free water on dry ice, and then flash frozen in liquid nitrogen. Five embryos were pooled for each biological replicate, and three biological replicates were prepared for each control (Hbs1l+/+) and mutant (Hbs1l-/-) genotype. For profiling of primary mouse embryonic fibroblasts (MEFs), tamoxifen (4-OHT) treated MEFs at Day 2 (Passage P1) from TgCAG-CreER (control), TgCAG-CreER; Hbs1l cKO (Hbs1l-/-), TgCAG-CreER; Pelo cKO (Pelo-/-) and TgCAG-CreER; Upf2 cKO (Upf2-/-) were collected. Two 10 cm dishes from one individual embryo were pooled as one biological replicate, and three biological replicates (three individual embryos) were used for each genotype. The tissue and embryo homogenization were performed with a mixer mill (Retsch MM400) in lysis buffer (20 mM Tris-Cl, pH 8.0, 150 mM NaCl, 5 mM MgCl2, 1 mM DTT, 100 µg/ml CHX, 1% (v/v) TritonX-100, 25units/ml Turbo DNase I). The cell homogenization was performed by triturating the cells in lysis buffer (20 mM Tris-Cl, pH 8.0, 150 mM NaCl, 5 mM MgCl2, 1 mM DTT, 100 µg/ml CHX, 1% (v/v) TritonX-100, 25units/ml Turbo DNase I) ten times through a 26G needle. RNase I-treated lysates were overlaid on top of a sucrose cushion in 5 ml Beckman Ultraclear tubes and centrifuged in an SW55Ti rotor for 4 hr at 4°C at 46,700 rpm. Pellets were resuspended and RNA was extracted using the miRNeasy kit (Qiagen) according to manufacturer’s instructions. 26–34 nts (cerebella samples) or 15–34 nts (embryo and MEF samples) RNA fragments were purified by electrophoresis on a denaturing 15% gel. Linker addition, cDNA generation (first-strand synthesis was performed at 50°C for 1 hr), circularization, rRNA depletion, and amplification of cDNAs with indexing primers were performed. Library quality and concentration was assessed using high sensitivity D1000 screen tape on the Agilent TapeStation and Qubit 2.0 Fluorometer. All libraries were pooled as set of six samples consisting of three control and mutant samples. Libraries were run on HiSeq4000 (SR75) and either three lanes (cerebella samples) or two lanes (embryo and MEF samples) per set of samples were sequenced.
 
-## Analysis of ribosome profiling data
+### Analysis of ribosome profiling data
 
 Reads were clipped to remove adaptor sequences (CTGTAGGCACCATCAAT) using fastx_clipper and trimmed so that reads start on the second base using fastx_trimmer (http://hannonlab.cshl.edu/fastx_toolkit/). Reads containing ribosomal RNAs, snoRNAs, and tRNAs were then filtered out by mapping to a ribosomal RNA reference using bowtie2 version 2.2.3 using parameters -L 13 (Langmead and Salzberg, 2012). Remaining reads were mapped to an mm10 mouse reference using a Gencode M24 annotation, or a Gencode M24 protein-coding transcript reference using hisat2 version 2.1.0 (Kim et al., 2019). Ribosomal A-sites were identified using RiboWaltz version 1.0.1 (Lauria et al., 2018), and reads with lengths of 27–34 nucleotides were retained for further analysis.
 
@@ -214,12 +830,12 @@ To identify ribosome footprint reads with 3’end As (untemplated reads), we ext
 
 For differential RPF and differential TE analysis, genome mapped reads were quantified using featureCounts (Liao et al., 2014) with footprints overlapping CDS features. For TE analysis specifically, RNA-Seq read pairs overlapping gene exon features were also quantified using featureCounts. Differential RPF analysis was performed using DESeq2 (v1.26.0) (Love et al., 2014) comparing 4-OHT-treated knock out (TgCAG-CreER; Hbs1l cKO, TgCAG-CreER; Pelo cKO and TgCAG-CreER; Upf2 cKO) to control (TgCAG-CreER) cells using default parameters. Histone mRNAs were removed from the analysis by removing gene names with the prefixes ‘Hist’, ‘H1f’, ‘H2a’, ‘H2b’, ‘H3’, and ‘H4’. TE was quantified and tested for using riborex version 2.3.4 using the DESeq2 engine (Li et al., 2017).
 
-## Pathway analysis
+### Pathway analysis
 
 Data were analyzed using Ingenuity Pathway Analysis (IPA, QIAGEN Inc, https://www.qiagenbioinformatics.com/products/ingenuity-pathway-analysis).
 
 Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis was performed using the ShinyGO v0.61 bioinformatics web server (http://bioinformatics.sdstate.edu/go) (Ge et al., 2020) by uploading the gene lists from our RNA sequencing or ribosome profiling analysis. ﻿Pathway enrichment terms with a P-value cutoff (FDR) ≤ 0.05 were considered enriched.
 
-## Statistics
+### Statistics
 
 For quantification of protein expression, RNA expression (quantitative RT-PCR), fluorescence intensity or histological quantifications, p-values were computed in GraphPad Prism using either student’s t-test, multiple t-tests, one-way ANOVA, or two-way ANOVA and statistical tests were corrected for multiple comparisons as indicated in the figure legends. All quantifications were performed with at least three mice/embryos of each genotype and time point using mice of either sex (embryos were not sexed).

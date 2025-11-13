@@ -56,21 +56,49 @@ Recent advances in single-cell and single-nucleus RNA-sequencing (scRNA-seq and 
 
 ## Results
 
-## Single-cell and -nucleus transcriptomic profiling
+### Single-cell and -nucleus transcriptomic profiling
 
 We used our previously described experimental approach (Tasic et al., 2016; Bakken et al., 2018; Tasic et al., 2018; Hodge et al., 2019; Figure 1, Materials and methods) to isolate and transcriptomically profile nuclei from macaque (Macaca nemestrina and Macaca fascicularis) and human dLGN, as well as cells from mouse dLGN. Nuclei were collected from microdissected anatomically defined regions: M or P layers of non-human primate dLGN; K, M, or P layers of human dLGN; and shell or core of mouse dLGN. We note that the microdissections are imperfect and likely include neighboring regions. This is especially evident for the K layers, which are very thin; their dissections inevitably included cells from neighboring M and P layers. Adjacent thalamic nuclei were also sampled, including ventral pulvinar from a single macaque donor, and lateral posterior (LP) and ventral lateral geniculate (LGv) nuclei from several mice. Single cells or nuclei were isolated by Fluorescence-Activated Cell Sorting (FACS) and enriched for neurons based on labeling with neuronal markers (NeuN in primates and tdTomato [tdT] in mouse). All single cells and nuclei were processed with SMART-seq v4 (Clontech) and Nextera XT (Illumina) and sequenced on HiSeq 2500 (Illumina). RNA-seq reads were aligned to corresponding genomes using the STAR aligner (Dobin et al., 2013). Gene expression was quantified as the sum of intronic and exonic reads per gene, normalized as counts per million (CPM), and log2-transformed as previously described (Tasic et al., 2018; Hodge et al., 2019). The Seurat v3 R package was used for clustering (Butler et al., 2018; Stuart et al., 2019) (Materials and methods). We report on 2003 macaque, 1209 human, and 2118 mouse QC-qualified single-cell and -nucleus transcriptomes with cluster-assigned identity (Figure 1—figure supplement 1A, Supplementary file 1). Samples were sequenced to a median depth of 1.3 million reads/nucleus for macaque, 2.4 million reads/nucleus for human, and 2.5 million reads/cell for mouse (Figure 1—figure supplement 1B). Median gene detection in macaque and human nuclei (~6000 and 6200, respectively) is lower than in mouse cells (~9000, respectively) (Figure 1—figure supplement 1C).
 
-## Transcriptomic cell types in macaque dLGN and pulvinar
+![Figure 1.](https://cdn.elifesciences.org/articles/64875/elife-64875-fig1-v1.jpg)
+
+**Figure 1.:** Dorsal lateral geniculate nucleus (dLGN) was dissected from postmortem human brain and acutely collected macaque and mouse brain according to the Allen Brain Atlas. Each sample was used to obtain single-cell or -nucleus suspensions. Individual cells or nuclei were sorted into eight-well strip PCR tubes by FACS and lysed. SMART-Seq v4 was used to reverse-transcribe and amplify full-length cDNAs. cDNAs were then tagmented by Nextera XT, PCR-amplified, and processed for Illumina sequencing. Initial clustering of single-cell or single-nucleus transcriptomes was performed independently for human, macaque and mouse. To further distinguish M and P types, the human data wereclustered with the macaque data. For cross-species comparison, macaque, human, and mouse data were co-clustered withSeurat v3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64875/elife-64875-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The number of cells at each step in the sc/snRNA-seq data analysis pipeline for each species. (B) Sequencing depth for all cluster-assigned cells, grouped by transcriptomic cell type per species. Median values in millions of reads are noted adjacent to the cell-type label and plotted as red dots; whiskers denote 25th and 75th percentiles. (C) The number of detected genes grouped by transcriptomic type for each species. Median values in thousands of genes are noted adjacent to the cell-type label and plotted as red dots; whiskers denote 25th and 75th percentiles.
+
+### Transcriptomic cell types in macaque dLGN and pulvinar
 
 Single nuclei were isolated from three macaque donors across two species from dLGN and pulvinar. The nuclei were subjected to snRNA-seq, mapped to the Macaca mulatta genome, clustered with Seurat, and the relationship among clusters was explored in 2D-UMAP projections. This projection revealed heterogeneity within clusters that is driven by donor identity (Figure 2—figure supplement 1A). 1026–1438 genes were significantly differentially expressed (greater than twofold change, FDR < 0.01) between pairs of donors for glutamatergic neurons. Based on ontology enrichment analysis, these genes were associated with neuronal signaling and connectivity and not with metabolic or activity-dependent processes (Supplementary files 2 and 3).
 
 To explore cell-type diversity shared across donors, we used the fastMNN implementation of Mutual Nearest Neighbors (MNN), which enables more accurate integration of imbalanced datasets compared to canonical correlation analysis (CCA) (Haghverdi et al., 2018; Figure 2—figure supplement 1B, Materials and methods). By removing donor-specific signatures, we defined nine shared neuronal types in macaque dLGN (Figure 2A, B, Figure 2—figure supplement 1C). We assigned cell-type identities based on known marker genes and dissection location (Figure 2—figure supplement 1D). The neuronal taxonomy has two major branches, GABAergic and glutamatergic (Figure 2A), that further branch into four and five types, respectively. We identified two distinct K types (Kap and Kp, Figure 2A) that express K-specific markers CAMK2A and PRKCG (Murray et al., 2008). The Kp-type selectively expresses PENK (Supplementary file 4). PENK-expressing cells are enriched in posterior K1 and K2 layers (Figure 2—figure supplement 1E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64875/elife-64875-fig2-v1.jpg)
+
+**Figure 2.:** (A) Top: Neuronal cell-type taxonomy based on median cluster gene expression of 2000 differentially expressed genes in 2003 nuclei from three donors across two macaque species. Known marker genes and dissection location were used to assign molecular cluster identity. Numbers of nuclei in each cluster are indicated at the bottom of the dendrogram. Bottom: gene expression dot plot showing the relative expression of marker genes (y-axis) across all clusters (x-axis). The color intensity of the dots represents the average expression level, whereas the size of the dot represents the proportion of cells expressing the gene. (B) UMAP representation of macaque dLGN neurons colored by cluster. (C) Heatmap of RNA-seq expression z-scores computed for the top 60 differentially expressed genes expressed (p adj<0.05, log2(fold change) > 1) between the M and P clusters. Each column in the heatmap is an individual nucleus.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64875/elife-64875-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) UMAP representation of 2003 macaque dLGN neurons colored by donor without correction (A) and after fastMNN correction of donor effects (B). (C) Confusion matrix showing cluster membership validation for the nine macaque cell types. Validation of cluster membership was performed as described previously (Tasic et al., 2016). (D) Bar plot representing the fraction of cells derived from a dissection ROI per cluster. (E) Confirmation of Kp marker gene PENK expression in K layers, across three anterior to posterior areas of macaque dLGN by chromogenic single-molecule RNA in situ hybridization. We also find and PENK+ cells in the white matter just dorsal to anterior dLGN.
+
 The Pulv cluster corresponds to pulvinar TC neurons and expresses GRIK3 and LHX2 (Figure 2A, Supplementary file 4; Jones and Rubenstein, 2004). The M projection neurons express previously reported markers ABHD17A (FAM108A), BRD4, CRYAB, EEF1A2, IL15RA, KCNA1, NEFM, PPP2R2C, and SFRP2 (Murray et al., 2008), and P projection neurons express FOXP2 (Iwai et al., 2013) and TCF7L2 (Murray et al., 2008). We also identified many novel M and P markers that are shared across donors (Figure 2C).
 
-## Transcriptomic cell types in human dLGN
+### Transcriptomic cell types in human dLGN
 
 We define six neuronal and four non-neuronal types in human dLGN (Figure 3A, B, Figure 3—figure supplement 1A–C) by transcriptomically profiling individual nuclei isolated from three postmortem donors using the same methods as described above for macaque. The neuronal taxonomy has two major branches: GABAergic and glutamatergic, which further branch into three types each (Figure 3A). Based on the expression of glutamatergic markers and K-specific markers (CALB1, CAMK2A, and PRKCG, Figure 3A, Supplementary file 4), two K types, Kap and Kp, could be identified (Hendry and Reid, 2000; Murray et al., 2008). Similar to the K types identified in macaque, the PENK-expressing K type (Kp) is limited to posterior K1 and K2 layers (Figure 3—figure supplement 1D). The remaining glutamatergic nuclei belong to a single cluster to which we assign the MP projection neuron identity based on the following observations: (1) it is the most numerous glutamatergic type that expresses the known M/P marker gene PVALB (Figure 3A; Yan et al., 1996), (2) it does not express K markers CALB1, CAMK2A, and PRKCG, and (3) it contains cells derived from both M and P layer dissections (Figure 3—figure supplement 2A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/64875/elife-64875-fig3-v1.jpg)
+
+**Figure 3.:** (A) Top: Cell-type taxonomy based on median cluster gene expression of 2000 differentially expressed genes and 946 nuclei from three donors. Known marker genes were used for cluster identity assignment. Numbers of nuclei in each cluster are indicated at the bottom of the dendrogram. Bottom: gene expression dot plot showing the relative expression of marker genes (y-axis) across all clusters (x-axis). (B) UMAP representation of human dLGN neurons colored by cluster. (C) UMAP representation of neurons within the MP cluster, colored by donor. (D) 32 single-nucleus marker genes show consistent enrichment between M and P dissections in three donors. Select marker genes that are differentially expressed (p adj<0.05, log2(fold change) > 1) are highlighted. (E) UMAP representation of joint analysis of human MP and macaque M and P nuclei using canonical correlation analysis (CCA). The macaque nuclei are labeled based on cluster identity defined by the macaque snRNA-seq clusteranalysis, whereas the human nuclei within the MP cluster are labeled by dissection ROI. (F, G) UMAP representation, as in panel (G), showing expression of the P marker FOXP2 (F) or the M marker ROBO2 in the macaque and human MP clusters (G).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64875/elife-64875-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) UMAP representation of all neuronal and non-neuronal nuclei from human dorsal lateral geniculate nucleus (dLGN) nuclei,, colored by cluster. (B) Gene expression dot plot showing the relative expression of non-neuronal marker genes (y-axis) across all clusters (x-axis). (C) Confusion matrix showing cluster membership validation for the 10 human cell types. (D) Confirmation of Kp marker gene PENK expression in K layers, across three anterior to posterior areas of human dLGN by chromogenic single-molecule RNA in situ hybridization, as well as in the white matter dorsal to dLGN.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64875/elife-64875-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Bar plot representing fraction of cells derived from a dissection region of interest (ROI) per cluster. (B) Distribution of dissection ROI per donor within the MP cluster. K: koniocellular; M: magnocellular; P: parvocellular; a: anterior; p: posterior. (C) The MP cluster UMAP shown in Figure 3D was split by donor and colored by dissection ROI. (D) Co-clustering diagrams for three independent donors depicting M nuclei enrichment within the MP cluster for each of the donors. Co-clustering matrices show the proportion of clustering iterations (100 total) in which each pair of nuclei was assigned to the same cluster (Bakken et al., 2018). The matrices were reordered by Ward’s hierarchical clustering and represented as heatmaps with coherent clusters ordered as squares along the diagonal. The row and column order of nuclei is the same for all heatmaps. The light blue box denotes the MP cluster, and the dark blue box highlights neurons derived from M dissections. (E, F) Confirmation of select marker gene expression in human dLGN by chromogenic single-molecule RNA in situ hybridization by RNAscope. Based on transcriptomic clustering, the M and P cells are grouped together in cluster MP. We confirmed expression of the pan-M/P marker gene BTNL9. Within MP, we identified a M-P gradient (Figure 3E, C, D). We verified expression for M marker genes CRH and SUSD2 and P marker gene EPHA7. Representative images are shown (E). Representative images of the pan-GABAergic marker GAD1 and specific cluster markers (F). (G) Scatter plot showing consistent single-cell marker gene expression between M and P dissections in macaque and human. Select marker genes are highlighted.
 
 We detect donor-related heterogeneity in the human MP cluster (Figure 3C). This heterogeneity is unlikely due to sampling different subregions of dLGN across donors because we did not find any significantly differentially expressed genes between anterior and posterior dLGN dissected from individual donors (Figure 3—figure supplement 2B). 877–1324 genes were significantly differentially expressed genes between pairs of human donors and were associated with ribosomal processing rather than neuronal function (Supplementary files 2 and 3). 130 of these genes were reported as upregulated in postmortem versus acute neurosurgical tissue (Hodge et al., 2019). These results suggest that dLGN tissue had variable quality across human donors, which limited discrimination of M and P cell populations. We were able to directly compare donor effects on gene expression in dLGN and cortex because the same donor brains were sampled in this study and our published study on cortical middle temporal gyrus (Hodge et al., 2019). Interestingly, only 456 genes were differentially expressed between donors for the most variable glutamatergic subclass, L2/3 IT neurons. This represents 40% of the differences seen in dLGN excitatory neurons for the same donors. Many factors could contribute to regional differences in donor effects, including sensitivity to tissue processing, differential heterogeneity in cell states, or cell type-dependent effects of genetic background and environment.
 
@@ -78,13 +106,29 @@ Next, we looked for signatures of M and P types within individual donors. Among 
 
 The gene expression differences between glutamatergic neurons from M and P dissections in some of the human donors were subtle, but they were clearly observable in the macaque dataset (Figure 2D, Figure 3—figure supplement 2G). We therefore wondered if the MP continuum in human would align with the M and P cluster division in macaque. To investigate this possibility, we examined human nuclei and batch-corrected macaque nuclei together by employing CCA in Seurat v3. After the cross-species integration, the macaque M and P clusters remained well segregated, whereas the nuclei from the human MP cluster still formed a continuum. Encouragingly, the human MP continuum aligned with the macaque M and P clusters; that is, the human M-pole nuclei aligned with the macaque M cluster, and likewise, the human P-pole nuclei aligned with the macaque P cluster (Figure 3E). This alignment indicates that there is a shared signature between species in the M/P cell populations. FOXP2 is a robust marker of P neurons (Iwai et al., 2013) and is enriched in the macaque P cluster and overlapping nuclei in the human MP cluster (Figure 3F) compared to other nuclei. Likewise, ROBO2 is enriched in the macaque M cluster and overlapping human nuclei (Figure 3G). Despite the differences among donors, species, and nuclear quality, integration of transcriptomic data enabled us to identify a common axis of gene expression variation that is conserved among macaque and human and aligns with the previously defined M/P anatomical axis.
 
-## Transcriptomic cell types in mouse dLGN, LP, and LGv
+### Transcriptomic cell types in mouse dLGN, LP, and LGv
 
 To profile cells from mouse dLGN while examining the reported diversity in TC neurons (Krahe et al., 2011; Cruz-Martín et al., 2014), we performed dissections that enriched for core and shell regions of dLGN. As noted before for macaque and human tissue, the microdissections are imperfect and should be considered enrichments for dissected regions of interest. We identified 12 neuronal and 3 non-neuronal types from mouse dLGN dissections (Figure 4A, B, Figure 4—figure supplement 1A–C). The 12 neuronal types could be further divided into 9 GABAergic and 3 glutamatergic types. However, due to the small size of dLGN in mice, we suspected that some of these types likely originated from neighboring areas that could not be clearly separated by microdissections. Therefore, as controls, we also profiled single cells from nearby thalamic nuclei, LP, and LGv. To assign anatomical location to clusters, we identified differentially expressed genes selective to each cluster and then examined expression patterns of these marker genes in the Allen Brain Atlas RNA ISH data (Lein et al., 2007; Supplementary file 4). Based on these marker genes, we assigned three GABAergic types to dLGN, whereas the remaining GABAergic types were likely from adjacent thalamic nuclei, including LP, LGv, and the reticular thalamic nucleus (RT, Figure 4C). Based on the dissection area as well as the differentially expressed genes, all glutamatergic cells from dLGN belong to a single cluster ‘dLGN’ (Figure 4A–C, Figure 4—figure supplement 1D). Cells within this cluster are not homogeneous, with the major axis of gene expression variation corresponding to the core vs. shell anatomical axis (Figure 4D, Supplementary file 5). These expression differences do not appear to be activity-dependent since there was minimal overlap with genes recently reported to be up- or downregulated in response to visual stimuli in mouse dLGN relay neurons (Cheadle et al., 2018). To confirm this anatomical and gene expression heterogeneity in situ, we identified differentially expressed genes between cells isolated from shell and core of dLGN (Figure 4E) and validated expression of a subset of genes by multiplexed RNA ISH (Figure 4F, Figure 4—figure supplement 1E, F). We confirm our scRNA-seq findings that neurons in the shell express higher levels of Necab1 and Calb1, and neurons in the core more highly express Pvalb and Scnn1a. A small subset of neurons co-express Pvalb and Necab1, suggesting that there are ‘intermediate’ cells in dLGN that share shell- and core-like properties. In agreement with this finding, Calb1 protein has been previously reported to be more highly expressed in the dLGN shell compared to the core as measured by immunohistochemical labeling (Grubb and Thompson, 2004).
 
-## Cross-species analysis of neuronal cell types in dLGN
+![Figure 4.](https://cdn.elifesciences.org/articles/64875/elife-64875-fig4-v1.jpg)
+
+**Figure 4.:** (A) Top: hierarchical taxonomy based on median cluster gene expression of >2000 differentially expressed genes and 2020 cells. Known and newly discovered marker genes were used to assign molecular cluster identity. Bottom: gene expression dot plot showing the relative expression of marker genes (y-axis) across all clusters (x-axis). (B) UMAP representation of mouse dLGN neurons colored by cluster. (C) Schematic representation of the relevant thalamic nuclei in the mouse brain with colored dots representing cell types identified in this study. Based on cell-type-specific marker expression and using the Allen Brain Atlas in situ hybridization (ISH) data, the anatomical location of cell types could be determined. (D) UMAP representation of neurons from the dLGN cluster colored by dissection ROI. The density plot in the margin shows the distribution of cells dissected from mouse dLGN-core (dark purple) and mouse dLGN-shell (light purple) along the x- and y-axes. (E) Heatmap of RNA-seq expression z-scores computed for the top 30 differentially expressed genes expressed (p adj<0.05, log2(fold change) > 1) between cells obtained from dLGN shell and core dissections belonging to dLGN cluster. The gene highlighted in red is confirmed by ISH in panel F. Each column in the heatmap is an individual sample. (F) Confirmation of differential expression of Pvalb and Necab1 between shell and core of mouse dLGN by single-molecule fluorescence ISH by RNAscope.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64875/elife-64875-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) UMAP representation of all mouse dLGN nuclei, neuronal and non-neuronal nuclei, colored by cluster. (B) Gene expression dot plot showing the relative expression of non-neuronal marker genes (y-axis) across all clusters (x-axis). (C) Confusion matrix showing cluster membership validation for the 15 mouse cell types. (D) Bar plot representing fraction of cells derived from a dissection ROI per cluster. (E, F) Confirmation of select differential marker gene expression between shell and core of mouse dLGN by single-molecule fluorescence in situ hybridization (ISH) by RNAscope. ISH result showing spatially restricted expression of Scnna1 and Necab1 (E) and expression of Pvalb and Calb1 in mouse dLGN (F).
+
+### Cross-species analysis of neuronal cell types in dLGN
 
 To examine cross-species correspondence of transcriptomic cell types, we integrated the macaque and human snRNA-seq datasets with the mouse scRNA-seq dataset using CCA in Seurat v3 (Figure 5A–C) for a dataset of n = 4979 neurons. We included data from all thalamic nuclei to assess similarities of cell populations across regions and species. 2D-UMAP projections show extensive intermingling of GABAergic types across the three species and more separation between glutamatergic types (Figure 5B, C). To assess the correspondence, we generated an integrated taxonomy of the cell types (n = 17) identified by analysis of each species independently and compared this to the integrated clustering result (n = 10 cell types, Figure 5D). The integrated taxonomy has two major branches: GABAergic and glutamatergic. The integrated GABAergic class contains 16 species-specific types that map to 4 integrated types (Figure 5D, Figure 5—figure supplement 1A). Cluster 8 from the integrated taxonomy contains only cells from the mouse GABA1 type. This type represents highly distinct RT neurons (Figure 4B, C) that were not sampled in primates and were profiled in mice likely due to imperfect dissections. The mouse GABAergic types can be roughly divided into two groups based on the expression of key transcriptional regulators (Sox14, Lef1, Otx2, Nkx2-2, and Dlx5) that reflect their developmental origin in the midbrain (Sox14+) or forebrain (Sox14-) (Scholpp and Lumsden, 2010; Jager et al., 2021). All mouse GABAergic types in dLGN and some types in the ventrolateral geniculate nucleus (LGv) and the intergeniculate leaflet (IGL) express Sox14, which is consistent with previous reports (Sellers et al., 2014; Jager et al., 2016). Similarly, two macaque and two human GABAergic types express SOX14 and are homologous to the Chrna6/Sox14-expressing GABAergic dLGN types in mouse and form a distinct branch in the integrated taxonomy (Figure 5D). A second GABAergic branch includes the macaque GABA1 type, human GABA1 type, and mouse GABA2-6 types that are defined by expression of Npy, Nkx2-2, and Dlx1/2/5/6 (Figure 5—figure supplement 1B–D). Interestingly, the mouse GABA2-6 types are not found in dLGN but are located only in the adjacent thalamic nuclei; IGL, LGv, and LP (Figure 4C). In human, the forebrain-derived GABA1 type was validated to be localized to dLGN based on RNA ISH (Figure 5—figure supplement 1E) and represents ~40% of GABAergic neurons. In contrast, in the macaque, the forebrain-derived GABA1 type represents only ~15% of GABAergic neurons in dLGN (Figure 2A, Figure 5—figure supplement 1F). In summary, we identify two major groups of GABAergic neurons that have distinct embryonic origins and are conserved across species with different proportions in dLGN.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64875/elife-64875-fig5-v1.jpg)
+
+**Figure 5.:** (A–C) All 4978 neurons from macaque, human, and mouse were integrated using Seurat v3. UMAP representation of the integrative analysis colored by integrated cluster call (A), colored by species (B), or colored by species-independent cluster call (C). (D) Correspondence of species-specific clustering and integrative clustering. The heatmap illustrates the proportion of the species-specific cell types contributing to the integrated cluster. The region color bar indicates the location of cell types in dorsal lateral geniculate nucleus (dLGN) (black) or in adjacent thalamic nuclei (gray). (E) Representation of glutamatergic neurons selected from UMAP as represented in panels (A) and (B) colored by dissection ROI. The density plot in the margin shows the distribution of cells dissected from mouse dLGN-core (dark purple) and mouse dLGN-shell (light purple) along the x- and y-axes. (F) Heatmap showing the Spearman correlation coefficient of the gene expression along the UMAP axes represented in panel (C) per species. For each axis, the top 30 genes are shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64875/elife-64875-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) UMAP representation of the integrative analysis of all neurons across the three species. The GABAergic types are divided into two subclasses (denoted by green and purple boxes) containing cell types from all species. (B–D) Dot plot showing expression of key transcriptional regulators of the GABAergic lineage in macaque (B), human (C), and mouse (D) GABAergic types. The color intensity of the dots represents the average expression level, whereas the size of the dot represents the proportion of cells expressing the gene. (E, F) Confirmation of GABAergic SOX14-positive and SOX14-negative populations in human (E) and macaque (F) dorsal lateral geniculate nucleus (dLGN). (G) Integration of macaque and human neuronal clusters. The heatmap shows the proportion of human nuclei or macaque nuclei that co-cluster. Rows show macaque clusters and columns show human clusters.
 
 Glutamatergic types did not align as clearly across species as GABAergic types, and mouse types were particularly distinct (Figure 5C, D). Homologies between macaque and human types, including K subtypes, were better resolved when mouse cells were excluded (Figure 5—figure supplement 1G). As expected, glutamatergic mouse LGv neurons clustered separately because this region was not sampled in primates. Transcriptomic signatures of mouse LP neurons resembled macaque inferior pulvinar neurons, located in what is considered the homologous structure in primates (Harting et al., 1972; Baldwin et al., 2017), as well as closely related K neurons. Like the integration of human and macaque data shown in Figure 3F, the human MP cells form a gradient along one axis with the macaque M and P types populating the distinct ends of that same gradient (Figure 5C–E). However, the mouse dLGN cluster variation not only aligns with this gradient of macaque and human M/P types, but rather spans both the continuum between the M and P types along UMAP axis 2 and the continuum between M/P and K/pulvinar/LP types on UMAP axis 1 (Figure 5E). Intriguingly, more shell- than core-dissected neurons from mouse dLGN resembled K/pulvinar neurons, consistent with reported similarities in their connectivity (Bickford et al., 2015). For each species, we correlated gene expression with position along these axes and found many genes with graded expression changes along both axes. There is clear conservation in the expression pattern of genes like ROBO2, FOXP2, and CAMK2A along UMAP axis 1, corresponding to the M/P to K/pulvinar difference (Figure 5F). These data show that despite conservation of cell types in the mature dLGN across species, there exist prominent differences in gene expression and cell-type proportions.
 
@@ -106,27 +150,128 @@ The discrepancy between the clear morphological, electrophysiological, and posit
 
 ## Materials and methods
 
-## Overall procedures and data analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J, Ai14(RCL-tdT)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: B6J.Cg-Gad2tm2(cre)Zjh/MwarJ, Gad2-IRES-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:028867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: B6J.129S6(FVB)-Slc17a6tm2(cre)Lowl/MwarJ, Slc17a6-IRES-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:028863</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: B6J.129S6(FVB)-Slc32a1tm2(cre)Lowl/MwarJ, Slc32a1-IRES-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:028862</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: B6;129S-Snap25tm2.1(cre)Hze/J, Snap25-IRES2-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:023525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMART-Seq v4 Ultra Low Input RNA Kit for Sequencing</td>
+      <td>Takara</td>
+      <td>634894</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Multiplex Fluorescent V2 Assay</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>323100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope 2.5 HD Duplex Assay Kit</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>322435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR 2.5.3</td>
+      <td>PMID:23104886</td>
+      <td>RRID:SCR_004463</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>PMID:29608179</td>
+      <td>PMID:29608179</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fastMNN</td>
+      <td>PMID:29608177</td>
+      <td>RRID:SCR_017351</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ToppGene</td>
+      <td>PMID:19465376</td>
+      <td>RRID:SCR_005726</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Overall procedures and data analysis
 
 Full experimental and data processing procedures are available at the Allen Institute web site within a detailed white paper: http://help.brain-map.org/display/celltypes/Documentation?preview=/8323525/10813526/CellTypes_Transcriptomics_Overview.pdf. Below, we list specific aspects that pertain only to this study.
 
-## Mouse breeding and husbandry
+### Mouse breeding and husbandry
 
 All procedures were carried out in accordance with the Institutional Animal Care and Use Committee protocols 1508, 1510, and 1511 at the Allen Institute for Brain Science. Animals were provided food and water ad libitum and were maintained on a regular 12 hr day/night cycle at no more than five adult animals per cage. Animals were maintained on the C57BL/6J background. Experimental animals were heterozygous for the recombinase transgenes and the reporter transgenes. We utilized four Cre lines crossed to the tdT-expressing Cre reporter Ai14 (Madisen et al., 2010): one pan-neuronal (Snap25-IRES2-Cre) (Harris et al., 2014), one pan-glutamatergic (Slc17a6-IRES2-Cre) (Vong et al., 2011), and two pan-GABAergic lines (Gad2-IRES-Cre and Slc32a1-IRES-Cre) (Tong et al., 2008; Taniguchi et al., 2011). Tissues were dissected from eight different donors. To dissect core and shell regions from mouse dLGN, block-face images were captured during slicing at 250 µm intervals. Slices were transferred into dissection dishes containing chilled, oxygenated ACSF. Brightfield and fluorescent images of each slice before and after ROI dissection were taken from the dissecting scope. To guide anatomical targeting of core- and/or shell-enriched dissections, boundaries were identified by trained anatomists, comparing the block-face image and the slice image to a matched plane of the Allen Mouse Brain Common Coordinate Framework version 3 (CCFv3) ontology Wang et al., 2020.
 
-## Macaque tissue
+### Macaque tissue
 
 The brain tissues of two adult M. nemestrina (southern pig-tailed macaque) and one M. fascicularis (crab-eating macaque) were obtained through the Tissue Distribution Program of the Washington National Primate Research Center and conformed to the guidelines provided by the US National Institutes of Health. All procedures were approved by the Institutional Animal Care and Use Committee of the University of Washington under protocol number 4277-01.
 
-## Human tissue
+### Human tissue
 
 Postmortem adult human brain tissue from three donors was collected after obtaining permission from decedent next-of kin. Postmortem tissue collection was performed in accordance with the provisions of the United States Uniform Anatomical Gift Act of 2006 described in the California Health and Safety Code section 7150 (effective 1/1/2008) and other applicable state and federal laws and regulations. The Western Institutional Review Board reviewed tissue collection processes and determined that they did not constitute human subjects research requiring institutional review board (IRB) review. In general, 3–5 slices were sufficient to capture the targeted region of interest, allowing for expression analysis along the anterior/posterior axis.
 
-## Single-cell/-nucleus processing for sc/snRNA-seq
+### Single-cell/-nucleus processing for sc/snRNA-seq
 
 We used previously described procedures to perform single-cell and single-nucleus RNA-seq (Bakken et al., 2018; Tasic et al., 2018). In brief, cells and nuclei were isolated by FACS: macaque and human nuclei were stained with the neuronal marker NeuN and NeuN+ nuclei were sorted, whereas mouse cells were collected from several transgenic Cre-driver lines that preferentially label neuronal cells. We reverse-transcribed mRNA and amplified cDNA using Smart-seq V4 (Clontech), prepared sequencing libraries using Nextera XT (Illumina), and sequenced the libraries using HiSeq2500 (Illumina). We employed previously described quality control (QC) steps (Bakken et al., 2018; Tasic et al., 2018) to arrive to the final datasets (Figure 1—figure supplement 1).
 
-## Data processing and analysis
+### Data processing and analysis
 
 Processing of sequencing data was performed as described before (Bakken et al., 2018; Tasic et al., 2018; Hodge et al., 2019; Bakken et al., 2020). For mouse, raw read (fastq) files were aligned to the mm10 mouse genome sequence (Church et al., 2011) with the RefSeq transcriptome version GRCm38.p3 (current as of 01/15/2016) and updated by removing duplicate Entrez gene entries from the gtf reference file. For human, raw read files were aligned to the GRCh38 human genome sequence (Genome Reference Consortium, 2011) with the RefSeq transcriptome version GRCh38.p2 (current as of 4/13/2015) and likewise updated by removing duplicate Entrez gene entries from the gtf reference file. For analysis of transcriptomes of M. nemestrina (southern pig-tailed macaque) and M. fascicularis (crab-eating macaque), which are the species of macaque used for experiments, we used the genome assembly and annotation Mmul_10 of M. mulatta (rhesus macaque). Alignment to the genome was performed using STAR v2.5.3 (Dobin et al., 2013). Only uniquely aligned reads were used for gene quantification. The observed bimodal pattern in reads per cell for some of the mouse clusters is due to a higher rate of multiplexing, leading to lower sequencing depth, for one batch of cells (Figure 1—figure supplement 1B). This lower read depth, however, does not result in lower number of genes detected in these mouse cells (Figure 1—figure supplement 1C). Cells that met any one of the following criteria were removed from the dataset: <100,000 total reads, <1000 detected genes (counts per million > 0), <75% of reads aligned to genome, CG dinucleotide odds ratio > 0.5, or doublet score > 0.25.
 
@@ -134,6 +279,6 @@ Cells that passed quality control criteria were included in clustering analysis,
 
 Differential expression between clusters was calculated with the R package limma using default settings and log2(CPM + 1) expression or using the Seurat ‘FindAllMarkers’ function. Significantly differentially expressed genes were defined as having greater than twofold change and a Benjamini–Hochberg corrected p-value<0.05 (p<0.01 for donor comparisons). Gene expression distributions of nuclei or cells within a cluster were visualized using dot plots, where the color intensity of the dots represents the average expression level and the size of the dot represents the proportion of cells expressing the gene. Gene Ontology enrichment analysis was performed using ToppGene (https://toppgene.cchmc.org/enrichment.jsp).
 
-## RNA ISH
+### RNA ISH
 
 Single-molecule RNA ISH by RNAscope (Advanced Cell Diagnostics, Newark, CA) was performed as previously described (Tasic et al., 2018) using fluorescent kits for mouse tissue and duplex chromogenic kits for human tissue according to the manufacturer’s instructions.

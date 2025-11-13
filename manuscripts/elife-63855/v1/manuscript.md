@@ -40,15 +40,138 @@ Similar research on the tricuspid valve is nearly absent, so much so that it has
 
 ## Results
 
-## Animal model outcomes
+### Animal model outcomes
 
 We successfully isolated 17 tricuspid valves from control (CTL) sheep and 33 tricuspid valves from sheep that underwent 19 ± 6 days of rapid pacing to induce biventricular heart failure (TIC). We included only anterior tricuspid valve leaflets in our study because the anterior leaflet has the largest major cusp of the three leaflets which allowed us to conduct all (or most) of our analyses on one and the same tissue. Furthermore, because of its tethering to the remodeling right ventricular free wall we suspected that the anterior leaflet also maladapts the most of the three leaflets. Echocardiographic data and hemodynamic data of the animals revealed significant parameter changes in TIC subjects consistent with clinical biventricular dysfunction and functional tricuspid valve regurgitation (Table 1). Most notably, we observed that TIC subjects had significant biventricular ejection fraction reduction, biventricular remodeling, tricuspid valve annular dilation, and increased TR severity.
 
-## Anterior leaflet area increases in TIC
+**Table 1.**
+ Echocardiographic and hemodynamic data of animal model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>CTL</th>
+      <th>TIC (baseline)</th>
+      <th>TIC (terminal)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Echocardiographic data</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TR grade (i.e., severity)</td>
+      <td>1.0 (0.0)</td>
+      <td>0.0 (0.0)</td>
+      <td>2.0 (1.0) * †</td>
+    </tr>
+    <tr>
+      <td>RV EF, %</td>
+      <td>67.0 ± 8.6</td>
+      <td>58.8 (20.5)</td>
+      <td>48.4 ± 12.9 * †</td>
+    </tr>
+    <tr>
+      <td>RV FAC, %</td>
+      <td>52.1 ± 6.0</td>
+      <td>53.9 ± 8.0</td>
+      <td>37.4 ± 8.7 * †</td>
+    </tr>
+    <tr>
+      <td>RV IDd, cm</td>
+      <td>2.5 ± 0.4</td>
+      <td>2.6 (0.6)</td>
+      <td>2.9 ± 0.7 *</td>
+    </tr>
+    <tr>
+      <td>TV annulus dimension, cm</td>
+      <td>2.5 (0.3)</td>
+      <td>2.5 ± 0.4</td>
+      <td>3.2 ± 0.5 * †</td>
+    </tr>
+    <tr>
+      <td>MR grade (i.e., severity)</td>
+      <td>0.0 (0.0)</td>
+      <td>0.0 (0.0)</td>
+      <td>2.0 (1.0) * †</td>
+    </tr>
+    <tr>
+      <td>LV EF, %</td>
+      <td>55.8 ± 4.4</td>
+      <td>61.3 ± 6.2</td>
+      <td>30.0 (11.2) * †</td>
+    </tr>
+    <tr>
+      <td>LV IDd, cm</td>
+      <td>4.2 ± 0.3</td>
+      <td>3.7 ± 0.6</td>
+      <td>4.6 ± 0.4 * †</td>
+    </tr>
+    <tr>
+      <td>Hemodynamic data</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HR, bpm</td>
+      <td>108 (11)</td>
+      <td>-</td>
+      <td>126 ± 23 *</td>
+    </tr>
+    <tr>
+      <td>RV PMax, mmHg</td>
+      <td>28.8 (11.4)</td>
+      <td>-</td>
+      <td>44.0 ± 11.5 *</td>
+    </tr>
+    <tr>
+      <td>RV PES, mmHg</td>
+      <td>22.3 ± 5.6</td>
+      <td>-</td>
+      <td>35.7 ± 11.0 *</td>
+    </tr>
+    <tr>
+      <td>RA PMean, mmHg</td>
+      <td>10.5 (3.2)</td>
+      <td>-</td>
+      <td>10.6 (5.6)</td>
+    </tr>
+    <tr>
+      <td>LV PMax, mmHg</td>
+      <td>96.1 ± 9.7</td>
+      <td>-</td>
+      <td>92.9 ± 13.8</td>
+    </tr>
+    <tr>
+      <td>LV PES, mmHg</td>
+      <td>63.1 ± 17.8</td>
+      <td>-</td>
+      <td>64.4 ± 13.6</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values are mean ± standard deviation or median (interquartile range).CTL = control, EF = ejection fraction, ES = end systolic, FAC = fractional area change, HR = heart rate, IDd = inner dimension at diastole, LV = left ventricular, Max = maximal, MR = mitral regurgitation, P = pressure, RA = right atrial, RV = right ventricular, TIC = tachycardia-induced cardiomyopathy, TR = tricuspid regurgitation, TV = tricuspid valve.*p<0.05 vs. CTL, † p<0.05 vs TIC (baseline)._
+
+### Anterior leaflet area increases in TIC
 
 Based on previous studies in the mitral and tricuspid valves, we hypothesized that anterior leaflets would increase in area in TIC animals. Toward testing this hypothesis, we measured the anterior leaflet’s area, and major cusp height and width (Figure 1a). Once isolated, all anterior leaflets appeared anatomically typical (Silver et al., 1971). However, in our analysis we found a significant increase of approximately 130% in anterior leaflet area for TIC animals compared to CTL animals (p=0.002, Figure 1b). These increases in area appeared to be driven by a significant increase in width (p=0.023), and a near significant increase in height (p=0.070) (Figure 1c–d). Furthermore, the anterior leaflet areas showed no correlation with animal weight in either animal groups (CTL: r = 0.239, p = 0.253, TIC: r = 0.077, p = 0.349) (Figure 1—figure supplement 1). In summary, TIC anterior leaflet areas were 130% larger when compared to CTL anterior leaflets, ostensibly driven by an increase in leaflet width.
 
-## Anterior leaflets thicken with TIC
+![Figure 1.](https://cdn.elifesciences.org/articles/63855/elife-63855-fig1-v1.jpg)
+
+**Figure 1.:** (a) An ovine tricuspid valve separated at the posterior-septal commissure (PS). Located between the antero-septal (AS) and antero-posterior (AP) commissures, the anterior leaflet and its measured area (black), height (blue), and width (red) are shown. Grid scale = 1 cm. (b–d) Comparisons between control (CTL, blue, n = 12) and TIC (red, n = 29) anterior leaflet (b) area, (c) height, and (d) width. Black bars represent data mean if normal, and data median if non-normal as determined by Shapiro-Wilk test: p-values below data. Values above data represent p-values from Student’s t-test or Wilcoxon Rank-Sum test, as appropriate.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63855/elife-63855-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Correlations between animal weight and anterior leaflet area with correlation coefficient, r, and p-value for tachycardia-induced cardiomyopathy (TIC, red, n = 12, Pearson), and control (CTL, blue, n = 29, Spearman) to ensure the changes we observed in leaflet area were not the result of animal weights.
+
+### Anterior leaflets thicken with TIC
 
 Based on previous reports of ovine mitral valve leaflet thickening in mitral regurgitation (Dal-Bianco et al., 2009; Dal-Bianco et al., 2016), we hypothesized TIC anterior leaflets to be thicker than CTL anterior leaflets. To test this hypothesis, we measured anterior leaflet thickness from fixed radial strips of tissue (Figure 2a). In TIC and CTL animals, the mean thickness of all anterior leaflets decreased from the near-annulus region (thickest) to the free edge (thinnest) (Figure 2b). Furthermore, the mean thickness of TIC anterior leaflets was consistently larger than CTL anterior leaflets in all three regions. When summarized into a single average thickness, we found a significant increase (140%) in TIC anterior leaflet thickness (p=0.006, Figure 2c). When analyzed by region, the increases in thickness were most strongly driven by a significant increase in the free edge region (p=0.003, Figure 2d). In summary, TIC anterior leaflets were 140% thicker when compared to CTL anterior leaflets, mostly driven by increases in the free edge thickness.
 
@@ -56,27 +179,59 @@ Based on previous reports of ovine mitral valve leaflet thickening in mitral reg
 
 **Figure 2.:** (a) (top) Representative fixed radial tissue strip approximated into regions of near-annulus, belly, and free edge. Inscribed box (black) is magnified (below) to show thickness measurement between atrialis (red) and ventricularis (blue) splines. Chordae tendineae (*) were excluded manually. Scale bars = 1 mm. (b) Profiles of control (CTL, blue, n = 8) and TIC (red, n = 19) anterior leaflet thickness approximated into equal-third regions of near-annulus, belly, and free edge. Pictured are mean (solid) +/- 1 standard deviation (shaded). (c–d) Thickness comparisons between CTL and TIC groups when data is (c) pooled across all regions and (d) pooled within regions. Black bars represent data mean if normal, and data median if non-normal as determined by Shapiro-Wilk’s test: p-values below data. Values above data represent p-values from Student’s t-test or Wilcoxon Rank-Sum test, as appropriate.
 
-## Increased metabolic and regulatory proteins in TIC anterior leaflets
+### Increased metabolic and regulatory proteins in TIC anterior leaflets
 
 We utilized proteomics to survey protein-level expression within the TIC anterior leaflets to infer which biological processes were up- or down-regulated in these tissues. To this end, we successfully identified 247 differentially expressed proteins between CTL and TIC anterior leaflets (Appendix 1—figure 1).
 
 Refer to Supplementary file 1 for a complete list of FASTA headers, gene names, family information, and expression levels for each of the 247 proteins identified. To better identify the molecular functions of the significant proteins, we built an interactome for easier visualization and interpretation of protein cluster interactions (Appendix 1—figure 2). Compared to CTL, TIC anterior leaflets overexpressed metabolic proteins (ENO1, ESD, ALDOA, ALDOC, ASPH, UGP2, AK1, PGK1, PGK2, PKM, LDHA, PGD, among others), serpins (A1, A5, C1, D1, and others), apolipoproteins (A1 and B), proteins related to matrix remodeling, such as COL6A3, which is tied to the alpha-chain of a type VI collagen, and FN1, GPC4, and PGLYRP1, all proteins involved in synthesis and regulation of glycans. Additionally, we found upregulation in specific proteins related to the mesenchymal phenotype, for example CD14, CD163, FERMT2, PLS3, and S100A1. Finally, we found that coagulation factor F9 was highly upregulated, along with a number of complement proteins (C2, C5, C6, and others), indicating the increased production of pro-inflammatory mediators downstream. We further classified the 247 differentially expressed proteins according to their primary families and gene ontologies (i.e., protein classes, molecular functions, cellular component, and biological process). We found that these 247 differentially expressed proteins most often belonged to protein classes of metabolite interconversion enzymes, protein binding modulators, and protein modifying enzymes. Furthermore, these 247 proteins were most associated with the molecular functions of catalytic, binding, and regulatory activity. The 247 proteins’ most common cell component were organelles, protein complexes, or membranes. Finally, the most common biological processes for these 247 proteins were metabolic, biological regulation or biogenesis (e.g., histones, ribosomal, and membrane proteins). In summary, we found 247 differentially expressed proteins in TIC anterior leaflets when compared to CTL anterior leaflets, including many proteins suggestive of increased metabolic and regulatory processes.
 
-## Expression of remodeling-associated cellular markers in TIC
+### Expression of remodeling-associated cellular markers in TIC
 
 We used marker expression in immunohistochemistry as a tool to determine regional snapshots of cell scale activity, cell phenotype, cell activation, or cell differentiation. Based on our hypothesis that anterior leaflet tissue remodels in disease, we investigated the presence of four cellular markers frequently associated with remodeling via immunohistochemistry: (i) α-smooth muscle actin (αSMA), (ii) Ki67, (iii) matrix metalloproteinase 13 (MMP13), and (iv) transforming growth factor β1 (TGF-β1) (Dal-Bianco et al., 2009; Stephens et al., 2009; Dal-Bianco et al., 2016; Stephens et al., 2008). We found an increase in TIC αSMA expression, indicative of cellular activation, mostly in the atrialis of near-annulus and belly regions (Figure 3a). Furthermore, Ki67, a marker for cell proliferation, was increased for TIC in the atrialis of the belly region and in much of the free edge region (Figure 3b). However, we observed only marginal changes in TIC cell nuclei density in the near-annulus (increased) and free edge (decreased) regions (Figure 3—figure supplement 1). Additionally, MMP13, a collagenase, was widely increased for TIC in both near-annulus and belly regions (Figure 3c). Lastly, TGF-β1 also increased primarily in the belly region of TIC samples (Figure 3d). It should be noted that CTL tissues also expressed these markers, albeit to a lesser degree, likely suggesting their involvement in maintaining tissue homeostasis. Also note that, similarly to other data presented herein, immunohistochemistry stains showed heterogeneity among TIC subjects. That is, some TIC leaflets showed more positive staining than others. Overall, we observed regional increases in cellular markers associated with tissue remodeling processes.
 
-## Collagen content increases in the anterior leaflets in TIC
+![Figure 3.](https://cdn.elifesciences.org/articles/63855/elife-63855-fig3-v1.jpg)
+
+**Figure 3.:** (a–d) Heat maps (left) showing regional expression of (a) alpha smooth muscle actin (αSMA), (b) Ki67, (c) matrix metalloproteinase 13 (MMP13), (d) transforming growth factor beta 1 (TGF-β1). Heat maps are separated by regions in radial (near-annulus (NA), belly (Bel), and free edge (FE)) and thickness (atrialis (Atr.), and ventricularis (Ven.)) axes. Fold change (FC) between control (CTL, n = 6) and TIC (n = 6) was determined by the ratio of positively stained pixel percentage between TIC and CTL. Color map indicates the logarithm base 2 of the fold change, interpreted as (positive, red): TIC expression is higher than CTL, (0, white): TIC and CTL expression are approximately equal, and (negative, blue): TIC expression is less than CTL. Representative images of CTL (middle) and TIC (right) are shown with atrialis surface upward. Black arrows indicate (a) increased TIC αSMA expression near the atrialis, (c) increase in TIC positively stained nuclei for MMP13, and (d) ‘pocket’ may be a neo-microvessel. Note, positive TGF-β1 staining in this pocket may be related to angiogenic signaling. Asterisk (*) denotes chordae tendineae excluded from analysis. Scale bars = 500 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63855/elife-63855-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Heat maps showing regional changes in cell nuclei density. Heat map is separated by regions in radial (near-annulus (NA), belly (Bel), and free edge (FE)) and thickness (atrialis (Atr.), and ventricularis (Ven.)) axes. Fold change (FC) between control (CTL, n = 5) and TIC (n = 19) was determined by the ratio of nuclei densities for each group. Color map indicates the logarithm base 2 of the FC, interpreted as: (positive, red) TIC nuclei density is higher than CTL, (0, white) TIC and CTL nuclei density are approximately equal, and (negative, blue) TIC nuclei density is less than CTL.
+
+### Collagen content increases in the anterior leaflets in TIC
 
 In the ovine mitral valve leaflets, collagen content increases with mitral regurgitation (Stephens et al., 2009; Stephens et al., 2008). Based on these results, we hypothesized that the TIC anterior leaflets would have an increased collagen content when compared to CTL anterior leaflets. To test our hypothesis, we quantified the wet tissue collagen content in the near-annulus, belly, and free edge regions of tissue. In both groups, we found collagen content decreased from the near-annulus region to the free edge (Figure 4a). Importantly, in all three regions, the mean collagen content was larger in TIC subjects than in CTL subjects. The strongest increase was in the free edge region (~150%, p=0.006) and the near-annulus region (~135%, p=0.023), but we failed to find a significant increase in the belly region (~125%, p=0.058). When we pooled all regions within subjects, we found a significant 140% increase in collagen content in TIC anterior leaflets (p=0.016, Figure 4b). We also tested if collagen content would positively correlate with TR severity, as collagen may stiffen and reduce the leaflet's range of motion. Here, we found a strong positive (r = 0.650) and significant (p=0.015) correlation (Figure 4—figure supplement 1). In summary, TIC anterior leaflets had 140% more collagen than CTL anterior leaflets, mostly driven by increases in the free edge and near-annulus content.
 
-## Anterior leaflets stiffen in TIC
+![Figure 4.](https://cdn.elifesciences.org/articles/63855/elife-63855-fig4-v1.jpg)
+
+**Figure 4.:** (a) Wet weight collagen content from quantitative collagen assay comparisons between control (CTL, blue, n = 12) and TIC (red, n = 12) groups with tissue samples from near-annulus, belly, and free edge regions with inscribed region visualization on tricuspid valve anterior leaflet, and (b) when regions are averaged across subjects. Black bars represent data mean if normal, and data median if non-normal as determined by Shapiro-Wilk test: p-values below data. Values above data represent p-values from Student’s t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63855/elife-63855-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Spearman correlation between echocardiography acquired TR grade (i.e., severity) with wet weight collagen content (Coll.) in tachycardia-induced cardiomyopathy (TIC, n = 12) subjects. Correlation coefficients (r) and p-values are inscribed along with a linear fit (black, dashed) for visualization.
+
+### Anterior leaflets stiffen in TIC
 
 Based on our hypothesis that TIC anterior leaflets remodel in TR, we further hypothesized that this remodeling would result in altered mechanical properties. Specifically, we expected a stiffer and more isotropic behavior (Grande-Allen et al., 2005b). To mechanically characterize the tissue, we tested anterior leaflets under planar biaxial tension. Under this loading, all tissues exhibited classic J-shaped loading curves, consistent with other biological collagenous tissues (Figure 5a; Sacks, 2000). In detail, the transition stretches and degrees of anisotropy of the curves remained mostly consistent between CTL and TIC subjects, overall behaving stiffer in the circumferential direction than in the radial direction (i.e., degree of anisotropy <1) (Figure 5—figure supplement 1). However, our major finding from mechanical characterization was a significant 130% (p=0.006) increase in TIC anterior leaflet stiffness at large stretches (calf stiffness) in the radial direction. (Figure 5b). Additionally, we found that TIC anterior leaflets had significantly increased circumferential stiffnesses at small stretches (toe stiffness) (p=0.008, Figure 5c). In summary, TIC anterior leaflets increased in stiffness. They increased predominantly in radial directions at higher stretches, and circumferential directions at lower stretches.
 
-## Altered collagen fiber dispersion in the TIC anterior leaflet atrialis
+![Figure 5.](https://cdn.elifesciences.org/articles/63855/elife-63855-fig5-v1.jpg)
+
+**Figure 5.:** (a) Control (CTL, blue, n = 11) and TIC (red, n = 23) membrane tension (Mem. Tens.) vs. stretch average curves (solid) with standard deviation (shaded) in (i) circumferential and (ii) radial directions. Inset in (a) is a visualization of where biaxial samples were acquired (dotted line) from anterior leaflets. (b–c) Comparisons of the (b) stiffness at large stretches (calf stiffness) and (c) stiffness at small stretches (toe stiffness) in circumferential and radial directions. Inset in (b) and (c) is the definition of calf stiffness (red, dashed) and toe (blue, dashed) we use to characterize a nonlinear material stiffness. Black bars represent data mean if normal and data median if non-normal as determined by Shapiro-Wilk test: p-values below data. Values above data represent p-values from Student’s t-test or Wilcoxon Rank-Sum test, as appropriate.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63855/elife-63855-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Comparisons of the transition stretch in circumferential and radial directions, defined as the stretch at which collagen engagement begins (i.e, the heel stretch). (b) Comparisons of the degree of anisotropy, defined as the ratio between circumferential and radial stretches at which 20 N/m membrane tensions are achieved under equibiaxial loading. Black bars represent data mean if normal, and data median if non-normal as determined by Shapiro-Wilk test: p-values below data. Values above data represent p-values from Student’s t-test.
+
+### Altered collagen fiber dispersion in the TIC anterior leaflet atrialis
 
 To investigate the microstructure of anterior leaflets as the intermediary between tissue scale changes and mechanical properties, we used two-photon microscopy. Specifically, we visualized the collagen and cell nuclei distributions and orientations throughout the entire anterior leaflet thickness. In our analysis, we found that throughout the tissue depth, the mean collagen orientation remained mostly circumferential in CTL and TIC animals, with no apparent changes in mean direction among groups (Figure 6a). However, we noted an increase in collagen fiber dispersion between CTL and TIC (indicated by a larger concentration parameter κ). In other words, in TIC animals, more fibers were oriented in the radial direction than in the CTL subjects. When separating our analysis into three depth regions we found a statistically significant increase in fiber dispersion in the 0–33% depth, nearest the atrialis, (p=0.017) in TIC subjects (Figure 6b). Similar analyses in cell nuclei for nuclear orientation, nuclear aspect ratio (NAR), and circularity showed no notable differences between CTL and TIC cell nuclei (Figure 6—figure supplement 1). In summary, we observed that collagen fibers in TIC anterior leaflets were more radially dispersed than CTL anterior leaflets near the atrialis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63855/elife-63855-fig6-v1.jpg)
+
+**Figure 6.:** (a) Heat map visualizations of von Mises probability distribution functions (VM PDF) fit to the collagen fiber orientation histograms of two-photon acquired images throughout the entire depth (0% - Atrialis surface, 100% - Ventricularis surface) of averaged CTL (blue, n = 9) and TIC (red, n = 9) tissue samples. Orientations of 90° align circumferentially, while 0°/180° align radially. We observed qualitative regional concentration (i.e., heat map width) differences (arrow), which we quantified by (b) averaging VM concentration parameter, κ, across depth regions D1, D2, and D3, by subject. Black bars represent data mean if normal, and data median if non-normal as determined by Shapiro-Wilk test: p-values below data. Values above data represent p-values from Student’s t-test, Welch’s t-test or Wilcoxon Rank-Sum, as appropriate.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63855/elife-63855-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a-f) Heat map visualizations of von Mises probability distribution functions (VM PDF) and normal probability distribution functions (PDF) fit to the nuclei (a,b) orientation, (c,d) NAR, and (e,f) circularity histograms of two-photon acquired images throughout the entire depth (0% - Atrialis surface, 100% - Ventricularis surface) of averaged (a,c,e) control and (b,d,f) tachycardia-induced cardiomyopathy tissue samples. Orientations of 90° align circumferentially, while 0°/180° align radially. Nuclei microstructure remained qualitatively similar between groups with no significant findings.
 
 ## Discussion
 
@@ -100,7 +255,87 @@ In conclusion, we used an ovine tachycardia-induced biventricular heart failure 
 
 ## Materials and methods
 
-## Animal model, medications, and procedures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Ovis aries, male)</td>
+      <td>Dorset Sheep</td>
+      <td>Hunter Dorsets (http://www.hunterdorsets.com)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti- αSMA</td>
+      <td>Abcam</td>
+      <td>Cat#:Ab5694; RRID:AB_2223021</td>
+      <td>IHC (1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti- Ki67</td>
+      <td>Thermo Scientific</td>
+      <td>Cat#:Rb1510-P0; RRID:AB_60158</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-MMP13</td>
+      <td>Abcam</td>
+      <td>Cat#:Ab39012; RRID:AB_776416</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-TGFβ−1</td>
+      <td>Abcam</td>
+      <td>Cat#:Ab9758; RRID:AB_296604</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>Invitrogen</td>
+      <td>Cat#:H3570</td>
+      <td>(5 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Total Collagen Assay Kit (Perchlorate-Free)</td>
+      <td>BioVision Incorporated</td>
+      <td>Cat#:K406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Microplate BCA Protein Assay Kit</td>
+      <td>Thermo Scientific</td>
+      <td>Cat#:23252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (OrientationJ)</td>
+      <td>ImageJ (http://imagej.nih.gov/ij); PMID:21744269</td>
+      <td>RRID:SCR_003070; RRID:SCR_014796</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal model, medications, and procedures
 
 All aspects of this research study were performed in accordance with the Principles of Laboratory Animal Care, formulated by the National Society for Medical Research, and the Guide for Care and Use of Laboratory Animals prepared by the National Academy of Science and published by the National Institutes of Health. Additionally, this protocol was developed, reviewed and performed in accordance with the approval of a local Institutional Animal Care and Use Committee.
 
@@ -112,38 +347,38 @@ During the terminal procedure of all animals, we acquired hemodynamic data over 
 
 For disclosure, we previously published the morphological, thickness, biaxial mechanics, and two-photon data for n = 6 CTL sheep included in this study (Meador et al., 2020a). However, these data were all supplemented with additional subjects for this study, as the focus of that study was to report our findings in only CTL matched subjects. Additionally, to maximize utilization of each animal model, some TIC subjects were also used in a previously published study, unrelated to the leaflet (mal)adaptive response (Jazwiec et al., 2019).
 
-## Morphology and storage
+### Morphology and storage
 
 Immediately after tricuspid valve isolation, we cut open the valve leaflet complex by separating the leaflets at the posterior-septal commissure to enable valve unfolding. We floated the tricuspid valve, atrialis side up in 1xPBS and orthogonally photographed the tricuspid valve leaflets on a calibrated grid. Using these photographs, an experienced cardiac surgeon identified the commissural points at which leaflets were separated and, using custom MATLAB code, we calculated the anterior leaflet area, major cusp width, and major cusp height (Figure 1a). All pixel measurements were translated to length metrics by means of the calibrated grid. We then cryogenically stored the tissue at −80°C in a 9:1 ratio of DMEM (VWR L0101-0500, Radnor, PA, USA):DMSO (VWR BDH1115-1LP) with protease inhibitor (ThermoFisher, A32953, Weltham, MA, USA) until further testing. Once ready to be tested, we rapidly thawed the vials in room temperature water and removed all chordae tendineae from the ventricularis surface of the anterior leaflets prior to tissue sample collection for testing.
 
-## High-throughput analysis of protein expression
+### High-throughput analysis of protein expression
 
 We used tricuspid valve anterior leaflet fragments without consideration of localization/region for high-throughput mass spectrometry analyses. We finely minced the tissues and lysed cells at 4°C in a buffering solution containing 50 mmol/L HEPES (pH = 7.4) supplemented with 150 mmol/L sodium chloride, 2 mmol/L dithiothreitol, 1% IGEPAL and a protease inhibitor cocktail (Active Motif, 100546). We incubated a total of six samples (n = 3 CTL and n = 3 TIC) with mild agitation at 4°C for 2 hr. We determined the total protein concentration of each sample by bicinchoninic acid assay (Thermo, PI-23252). After quantification, we ethanol precipitated 50 μg of protein from each sample. After precipitation, we re-dissolved the proteins in Laemmli buffer for one-dimensional gel electrophoresis, Coomassie blue staining and in-gel digestion, following a previously published protocol (Shevchenko et al., 2006). We dehydrated the gel pieces successively in 50% and 100% acetonitrile, and digested the proteins overnight in 0.1 μg sequencing-grade trypsin contained in 50 µL total volume. Finally, we extracted the peptides twice in 50% acetonitrile with 0.1% formic acid, which we dried to completion in a vacuum centrifuge.
 
 We submitted the dried peptides to the University of Texas at Austin CBRS Biological Mass Spectrometry Facility for protein identification by liquid chromatography-tandem mass spectrometry (LC-MS/MS) using the Dionex Ultimate 3000 RSLCnano LC coupled to the Thermo Orbitrap Fusion (Lee et al., 2013). Prior to HPLC separation, we desalted the peptides using Millipore U-C18 ZipTip pipette tips following the manufacturer’s protocol. We performed a C18 trap column, followed by a 75 µm I.D. x 25 cm long analytical column packed with C18 3 µm material (Thermo Acclaim PepMap 100) running a gradient from 5–35% acetonitrile. With a Fourier Transform Mass Spectrometry resolution of 120,000, and a 3 s cycle time, we acquired MS/MS in HCD ion trap mode. We uploaded the LC−MS/MS mzXML files to MaxQuant (Max Planck Institute of Biochemistry, Germany) and searched against a protein database of Ovis aries downloaded from UniProt. We used default search parameters in MaxQuant for label-free quantification with a 1% false discovery rate. We selected only the proteins which had at least two replicates of intensity values across all treatment groups for the remaining analyses. With this, we confidently identified a total of 2457 proteins. We normalized intensity values per total protein content, and we set a fold-change of two prior to analysis in the Multi-Experiment Viewer (MeV, TM4 Microarray Software Suite). Using the non-parametric Wilcoxon Rank-Sum statistical test to compare proteins in the two groups, we identified 247 significant differentially expressed proteins. We uploaded this list of proteins onto STRING v11 (Search Tool for the Retrieval of Interacting Genes/Proteins, STRING Consortium) for the generation of protein interaction maps. We further used the PANTHER (Protein ANalysis THrough Evolutionary Relationships, http://www.pantherdb.org/) classification system for the identification of Gene Ontologies (GO, http://www.geneontology.org). Refer to Supplementary file 1 for all protein identifiers, protein family descriptions, and ontology classifications.
 
-## Histology, thickness, and immunohistochemistry
+### Histology, thickness, and immunohistochemistry
 
 We fixed radial strips (Figure 2a) of anterior leaflets from annulus to free edge in 10% Neutral Buffered Formalin for 24 hr, and transferred them to 70% ethanol for storage until histological processing. We shipped the samples to a histological service (HistoServ, Inc, Amaranth, MD) for embedding, sectioning (5 µm), and H and E staining. Using a light microscope (BX53 Upright Microscope, Olympus, Tokyo, Japan) with a 10x objective, we acquired and stitched full section images. Using custom MATLAB code, we fit splines to the atrialis and ventricularis surface of each section. We calculated the normal vectors along the atrialis spline, using these vectors to determine the distance between atrialis and ventricularis splines (Figure 2a). Along the length, we summarized the thickness measurements into three regions (i.e. near-annulus, belly, and free edge), defined as three equidistant regions along the arc length of the atrialis spline.
 
 Additionally, the commercial histological service (HistoServ, Inc, Amaranth, MD) performed four immunohistochemistry stains on the same radial strips. These stains include commonly used markers for growth and remodeling processes in previous studies (Dal-Bianco et al., 2009; Stephens et al., 2009; Dal-Bianco et al., 2016; Stephens et al., 2008): (i) α-smooth muscle actin (α-SMA) (Abcam, ab5694, Cambridge, MA, US) as a marker for valvular interstitial cell (VIC) activation, (ii) Ki-67 (Thermo Scientific, rb-1510-P0, Waltham, MA, US) to determine cell proliferation, (iii) matrix metalloproteinase 13 (MMP13) (Abcam, ab39012, Cambridge, MA, US) to quantify collagenases, and (iv) transforming growth factor β1 (TGF-β1) (Abcam, ab9758, Cambridge, MA, US) as a key profibrotic factor. Using the light microscope with a 40x objective, we acquired and stitched full section images. Using custom MATLAB code, we fit splines to the atrialis and ventricularis surface of each section. Next, we excluded regions of annular muscle, as annular muscle often skewed positive results. Furthermore, we were specifically interested in the location of these markers as regions of tissue may be differentially active, due to regionally varying stimuli and composition (Meador et al., 2020a; Laurence et al., 2019; Kramer et al., 2019). Along three equidistant length regions of the atrialis spline, again representing near-annulus, belly, and free edge regions, we interpolated 10 thickness regions between the atrialis and ventricularis splines - altogether splitting each radial strip section into 30 regions. We then passed each region of the image into a custom validated MATLAB program which detects positive and total pixels in that region, from which we determined the normalized percentage of positive stain in that region.
 
-## Quantitative collagen assay
+### Quantitative collagen assay
 
 We acquired the wet mass of tissue samples from annulus, belly, and free edge regions of anterior leaflets (Figure 4a). For every 10 mg of wet tissue mass, we added 100 µL dH20 for homogenization. We hydrolyzed 100 µL of homogenate in 100 µL of 10 N concentrated NaOH at 120°C for 1 hr, after which we neutralized by adding 100 µL of 10 N concentrated HCl. After vortex mixing at 2000x g for 5 min, we transferred 10 µL of hydrolysate to each well in triplicate, which we allowed to evaporate to dryness on a 65°C heating plate. We then followed the protocol provided with a total collagen assay kit (Biovision Inc, K406, Milpitas, CA, USA). From the quantitative assay, we measured the colorimetric absorbance at 560 nm with a spectrophotometer (Tecan, Infinite 200 Pro, Männedorf, Switzerland) which we interpolated from a collagen type I standard linear-fit curve (R2 = 0.99 ± 0.01). Note: Due to tissue shortage, this experiment was supplemented with 7 CTL sheep (male, Dorset, 46 ± 6 kg) for a second cohort of control animals.
 
-## Biaxial testing and analysis
+### Biaxial testing and analysis
 
 We analyzed biaxial mechanics using methods previously described (Meador et al., 2020a). We isolated 7 x 7 mm square samples from the belly region of anterior leaflets, ensuring the major axes of the square aligned with the radial and circumferential directions of the leaflet (Figure 5a). On the atrialis surface, we applied an approximate 3 x 3 mm grid of four ink fiducial markers in the tissue center to enable strain tracking during testing. To establish a stress-free reference configuration, we photographed these fiducial markers while the tissue floated in 1xPBS on a calibrated grid. We mounted each sample on a biaxial testing device (Biotester, Cellscale, Waterloo, ON, Canada) with rakes, ensuring the radial and circumferential axes of the tissue aligned with the axial directions of the device. After submerging the mounted samples in 37°C 1xPBS, we initiated a 10 cycle preconditioning force-controlled protocol to 300 mN equibiaxially. After preconditioning we removed the tissue slack with a 10 mN preload. We tested the tissue at 300 mN equibiaxially for two cycles each, during which we recorded (5 Hz) rake-to-rake distances, circumferential and radial forces, and images of the fiducial markers to compute local tissue stretches of the final downstroke. All biaxial tests were within four hours of tissue thawing.
 
-Using the coordinates of the fiducial markers on the tissue throughout testing, we calculated the deformation gradient tensor, F, with respect to the floating stress-free reference configuration. We then calculated the right Cauchy-Green deformation tensor, C, via C=FTF, to acquire in-plane stretches throughout testing. Using the force data, we calculated the membrane tension as the force divided by the rake-to-rake distance in the orthogonal direction in the deformed configuration at each time point. In our analysis, we characterize these nonlinear J-shaped curves with four metrics: (1) toe stiffness, as the slope of the lower linear region of the curve, (2) calf stiffness, as the slope of the upper linear region (near 20 N/m membrane tension) (3) transition stretch, as the stretch at which the heel of the J-shaped curve is located (determined as the closest data point to the intersection of toe and calf stiffness lines), and (4) anisotropy index, as the ratio between the circumferential and radial stretches at 20 N/m.
+Using the coordinates of the fiducial markers on the tissue throughout testing, we calculated the deformation gradient tensor, $F$, with respect to the floating stress-free reference configuration. We then calculated the right Cauchy-Green deformation tensor, $C$, via $C=F^{T}F$, to acquire in-plane stretches throughout testing. Using the force data, we calculated the membrane tension as the force divided by the rake-to-rake distance in the orthogonal direction in the deformed configuration at each time point. In our analysis, we characterize these nonlinear J-shaped curves with four metrics: (1) toe stiffness, as the slope of the lower linear region of the curve, (2) calf stiffness, as the slope of the upper linear region (near 20 N/m membrane tension) (3) transition stretch, as the stretch at which the heel of the J-shaped curve is located (determined as the closest data point to the intersection of toe and calf stiffness lines), and (4) anisotropy index, as the ratio between the circumferential and radial stretches at 20 N/m.
 
-## Two-photon microscopy
+### Two-photon microscopy
 
 We analyzed the collagen microstructure and cell nuclei morphology using two-photon microscopy methods previously described (Meador et al., 2020a; Meador et al., 2020b). Briefly, post-mechanical testing, we counterstained the 7 mm x 7 mm belly tissue samples for cell nuclei (Thermo Fischer Scientific, Hoechst 33342, Waltham, MA, US) for 20 min. Afterward, we optically cleared the tissue in an optical clearing solution (Glycerol:DMSO:5xPBS, 50:30:20%) under sonication for 30 min to improve imaging depth. We imaged three centrally located 500 x 500 µm regions through the entire tissue thickness at 10 µm z-steps with a two-photon microscope (Bruker, Ultima IV, Billerica, MA, US) and 20x water immersion objective (Olympus, XLUMPLFLN, Center Valley, PA, US). We imaged with a coverslip on the atrialis surface to avoid imposed stresses, and the tissue on a foil-lined glass slide to visually verify full-thickness image acquisition. We utilized second harmonic generation (SHG) at an excitation wavelength of 900 nm and fluorescence at an excitation wavelength of 800 nm to image collagen and cell nuclei, respectively. We epicollected the emission signal of collagen and cell nuclei with a photomultiplier tube filter (460 ± 25 nm).
 
 On each collagen image, we acquired coherency-based histograms of collagen fiber orientation by first normalizing the image histogram based on saturation and utilizing the ImageJ plugin OrientationJ on this processed image (Rezakhaniha et al., 2012). Across the three z-stacks of each sample, we averaged and interpolated the OrientationJ output data into a single z-stack of normalized histograms from atrialis to ventricularis surfaces. From there, we fit von Mises distributions to each histogram acquiring the parameters µ and κ representing the mean fiber angle and the fiber orientation concentration, respectively. Collectively, for every sample we imaged, we acquired a set of von Mises parameters representing mean fiber angles and fiber concentration at all depths. On each cell nuclei image, we acquired metrics of nuclear orientation, nuclear aspect ratio (NAR), and circularity by means of a custom MATLAB program which identifies individual nucleus contours in each image. With many nuclei in a single image, we acquire histograms of each of the three metrics at each depth of the z-stack, which we process in the same way as above. For nuclear orientation, we used von Mises distribution fits, while on NAR and circularity we fit normal distributions with parameters µ and σ representing the mean and standard deviation, respectively.
 
-## Statistical analyses
+### Statistical analyses
 
 For all experimental data, we first performed Shapiro-Wilk tests to determine whether our data were normally distributed. Additionally, we tested whether the variances of our data sets were similar through an F-test. Under all disease versus control comparisons, a Student’s t-test was used if the data were normally distributed and had similar variances. If these assumptions were not met, we used the Wilcoxon Rank-Sum Test or Welch’s t-test, as appropriate. In correlations, if either variable failed the normality assumption or was ordinal in type, we used the nonparametric Spearman rank correlation. Otherwise, we used a Pearson correlation. For statistical comparisons and correlations we used either one-tailed or two-tailed tests, as appropriate, with our stated hypotheses. We defined a p-value less than 0.05 as significant. All statistical comparisons and correlations were implemented in MATLAB.

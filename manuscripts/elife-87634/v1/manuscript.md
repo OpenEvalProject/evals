@@ -14,20 +14,20 @@
 
 ### Affiliations
 
-1. https://ror.org/0387jng26 Otto Hahn Group Cognitive Neurogenetics, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
-2. https://ror.org/035kwsm70 INM-7, FZ Jülich Jülich Germany
-3. https://ror.org/024z2rq82 Institute for System Neurosciences, Heinrich Heine University Düsseldorf Germany
-4. https://ror.org/035rzkx15 Institute for Psychosocial Medicine, Psychotherapy and Psychooncology, Jena University Hospital, Friedrich-Schiller University Jena Germany
-5. https://ror.org/0387jng26 Research Group Social Stress and Family Health, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
-6. https://ror.org/00q5t0010 Leibniz Institute for Resilience Research Mainz Germany
-7. https://ror.org/01pxwe438 McConnell Brain Imaging Centre, Montreal Neurological Institute and Hospital, McGill University, Montreal Quebec Canada
-8. https://ror.org/01hhn8329 Social Neuroscience Lab, Max Planck Society Berlin Germany
+1. Otto Hahn Group Cognitive Neurogenetics, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
+2. INM-7, FZ Jülich Jülich Germany ([ROR:035kwsm70](https://ror.org/035kwsm70))
+3. Institute for System Neurosciences, Heinrich Heine University Düsseldorf Germany ([ROR:024z2rq82](https://ror.org/024z2rq82))
+4. Institute for Psychosocial Medicine, Psychotherapy and Psychooncology, Jena University Hospital, Friedrich-Schiller University Jena Germany ([ROR:035rzkx15](https://ror.org/035rzkx15))
+5. Research Group Social Stress and Family Health, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
+6. Leibniz Institute for Resilience Research Mainz Germany ([ROR:00q5t0010](https://ror.org/00q5t0010))
+7. McConnell Brain Imaging Centre, Montreal Neurological Institute and Hospital, McGill University, Montreal Quebec Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+8. Social Neuroscience Lab, Max Planck Society Berlin Germany ([ROR:01hhn8329](https://ror.org/01hhn8329))
 
 † Corresponding author
 
 ## Abstract
 
-The hippocampus is a central modulator of the HPA-axis, impacting the regulation of stress on brain structure, function, and behavior. The current study assessed whether three different types of 3 months mental Training Modules geared towards nurturing (a) attention-based mindfulness, (b) socio-affective, or (c) socio-cognitive skills may impact hippocampal organization by reducing stress. We evaluated mental training-induced changes in hippocampal subfield volume and intrinsic functional connectivity, by combining longitudinal structural and resting-state fMRI connectivity analysis in 332 healthy adults. We related these changes to changes in diurnal and chronic cortisol levels. We observed increases in bilateral cornu ammonis volume (CA1-3) following the 3 months compassion-based module targeting socio-affective skills ( Affect module), as compared to socio-cognitive skills ( Perspective module) or a waitlist cohort with no training intervention. Structural changes were paralleled by relative increases in functional connectivity of CA1-3 when fostering socio-affective as compared to socio-cognitive skills. Furthermore, training-induced changes in CA1-3 structure and function consistently correlated with reductions in cortisol output. Notably, using a multivariate approach, we found that other subfields that did not show group-level changes also contributed to changes in cortisol levels. Overall, we provide a link between a socio-emotional behavioural intervention, changes in hippocampal subfield structure and function, and reductions in cortisol in healthy adults.
+The hippocampus is a central modulator of the HPA-axis, impacting the regulation of stress on brain structure, function, and behavior. The current study assessed whether three different types of 3 months mental Training Modules geared towards nurturing (a) attention-based mindfulness, (b) socio-affective, or (c) socio-cognitive skills may impact hippocampal organization by reducing stress. We evaluated mental training-induced changes in hippocampal subfield volume and intrinsic functional connectivity, by combining longitudinal structural and resting-state fMRI connectivity analysis in 332 healthy adults. We related these changes to changes in diurnal and chronic cortisol levels. We observed increases in bilateral cornu ammonis volume (CA1-3) following the 3 months compassion-based module targeting socio-affective skills (Affect module), as compared to socio-cognitive skills (Perspective module) or a waitlist cohort with no training intervention. Structural changes were paralleled by relative increases in functional connectivity of CA1-3 when fostering socio-affective as compared to socio-cognitive skills. Furthermore, training-induced changes in CA1-3 structure and function consistently correlated with reductions in cortisol output. Notably, using a multivariate approach, we found that other subfields that did not show group-level changes also contributed to changes in cortisol levels. Overall, we provide a link between a socio-emotional behavioural intervention, changes in hippocampal subfield structure and function, and reductions in cortisol in healthy adults.
 
 ## Introduction
 
@@ -53,11 +53,165 @@ We analyzed structural MRI, resting-state functional MRI, as well as cortisol-ba
 
 In the Resource study, participants were randomly assigned to two training cohorts (TC1, N=80; TC2, N=81) and underwent a 9 months training consisting of three sequential Training Modules (Presence, Affect, and Perspective) with weekly group sessions and daily exercises, completed via cell-phone and internet platforms (Figure 1, Tables 1 and 2, Table 3, Materials and Methods and Supplementary file 1 for more details). TC1 and TC2 started their training regimen with the Presence module, and then underwent the latter two modules in different orders (TC1: Affect-Perspective; TC2 Perspective-Affect) to serve as active control groups for each other (Figure 1C). Another active control group (TC3; N=81) completed three months of Affect training only. Additionally, a matched test-retest control cohort did not undergo any training (RCC, N=90). All participants were examined at the end of each 3 months module (T1, T2, T3) using 3T MRI, behavioral and peripheral-physiological measures that were identical to the baseline (T0) measures.
 
-## Change in bilateral CA1-3 volume following Affect mental training
+**Table 1.**
+ Sample size per timepoint.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Structural MRI data</th>
+      <th>Structural and Functional MRI data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T0</td>
+      <td>288 (TC3:71)</td>
+      <td>258 (TC3: 70)</td>
+    </tr>
+    <tr>
+      <td>T1</td>
+      <td>272 (TC3:68)</td>
+      <td>238 (TC3: 64)</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>193</td>
+      <td>172</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>190</td>
+      <td>181</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Reason for missing data across the study duration.MR incidental findings are based on T0 radiological evaluations; participants who did not meet MRI quality control criteria refers to movement and/or artefacts in the T1-weighted MRI; dropout details can be found in Singer et al., 2016; no MRT: due to illness / scheduling issues / discomfort in scanner; other: non-disclosed; functional MRI missing: no complete functional MRI; functional MRI quality:>0.3 mm movement (low quality in volume +surface).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reason for dropout(TC1, TC2, RCC: N=251)</th>
+      <th>T0</th>
+      <th>T1</th>
+      <th>T2</th>
+      <th>T3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Structural MR incidental finding</td>
+      <td>5</td>
+      <td>(5 based on T0)</td>
+      <td>(5 based on T0)</td>
+      <td>(5 based on T0)</td>
+    </tr>
+    <tr>
+      <td>Structural MRI quality control</td>
+      <td>7</td>
+      <td>6</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Dropout</td>
+      <td>2</td>
+      <td>7 (2 based on T0)</td>
+      <td>9 (7 based on T01)</td>
+      <td>16 (9 based on T012)</td>
+    </tr>
+    <tr>
+      <td>Medical reasons</td>
+      <td>1</td>
+      <td>7 (1 based on T0)</td>
+      <td>8 (7 based on T01)</td>
+      <td>15 (8 based on T012)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4</td>
+      <td>10</td>
+      <td>7</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Functional MRI missing/low QC</td>
+      <td>29</td>
+      <td>30</td>
+      <td>21</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Hippocampal QC</td>
+      <td>15</td>
+      <td>12</td>
+      <td>25</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Reason for missing data across the study duration.MR incidental findings are based on T0 radiological evaluations; participants who did not survive MRI quality control refers to movement and/or artefacts in the T1-weighted MRI; dropout details can be found in Singer et al., 2016; no MRT: due to illness / scheduling issues / discomfort in scanner; other: non-disclosed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reason for dropout (TC3, N=81)</th>
+      <th>T0</th>
+      <th>T1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MR incidental finding</td>
+      <td>3</td>
+      <td>(3 based on T0)</td>
+    </tr>
+    <tr>
+      <td>MRI quality control</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Dropout</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Medical reasons</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Functional MRI missing</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Hippocampal QC</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Change in bilateral CA1-3 volume following Affect mental training
 
 The above design allowed us to examine whether the volume of hippocampal subfields shows increases or decreases following the distinct Training Modules. We tracked longitudinal changes in hippocampal subfield volumes using mixed-effects models (Caldairou et al., 2016). Excluding participants with missing or low quality structural and functional data, the sample included 86 individuals for Presence, 92 individuals for Affect, 83 individuals for Perspective, and 61 active controls (Affect) with hippocampal change scores. We included 164 change scores of retest controls over T1, T2, T3. To study whether there was any training module-specific change in hippocampal subfield volumes following mental training, we compared training effects between all three Training Modules (Presence, Affect, and Perspective). Main contrasts were: Presence vs Active control (between subjects) and Affect vs Perspective (within subjects). Supplementary comparisons were made vs retest controls and within training groups. We observed relative increases in right cornu ammonis 1–3 (CA1-3), but not in subiculum (SUB) or CA4 and dentate gyrus (CA4/DG) subfields, following Affect versus Perspective training (left: t=2.360, p=0.019, FDRq(q)>0.1, Cohens D=0.282; right: t=2.930, p=0.004, q=0.022, Cohens D=0.350), that could be attributed to subtle increases (p<0.05) in bilateral CA1-3 volume following Affect (left: t=2.495, p=0.013, q=0.08, M: 25.511, std: 130.470, CI [–1.509 52.531]; right: t=2.374, p=0.018, q>0.1, M: 40.120, std: 181.300, CI [2.573 77.666]), and subtle decreases (p<0.05) in right CA1-3 volume following Perspective (left: t=−1.143, p>0.1, q>0.1, M:–23.048, std: 137.810, CI [–53.139 7.043]; right: t=−2.118, p=0.035, q>0.1, M:–39.602, std: 208.470, CI [–85.122 5.917]). We did not observe differences between Presence and the Active control cohort, Affect TC3. Overall, for all hippocampal subfields, findings associated with volume increases in CA1-3 following the Affect training were most consistent across timepoints and contrasts (Supplementary file 1a-g). Moreover, associations between CA1-3 and Affect, relative to Perspective, seemed to go largely above and beyond changes in the other subfields (left: t-value: 2.298, p=0.022, Q>0.1; right: t-value: 3.045, p=0.0025, Q=0.015, see further Supplementary file 1h). We observed no overall change in hippocampal subfield volume following mental training of nine months (Supplementary file 1i). Although stereotaxic normalization to MNI space would in theory account for global sex differences in intra-cranial volume (ICV), we still observed sex differences in various subfield volumes at baseline. Yet, accounting for ICV did not impact our main results, suggesting changes in CA1-3 following Affect were robust to sex differences in overall brain volume (Supplementary file 1j).
 
-## Increased functional connectivity of CA1-3 following socio-affective versus socio-cognitive mental training
+### Increased functional connectivity of CA1-3 following socio-affective versus socio-cognitive mental training
 
 Subsequently, we studied whether volumetric change in hippocampal CA1-3 would show corresponding changes in intrinsic function following the Affect mental training. To probe the CA1-3 functional connectivity networks per subfield, we mapped the top 10% of normalized functional connections at baseline. Functional connectivity was strongest to medial prefrontal regions, precuneus extending to posterior cingulate, anterior temporal regions and angular gyrus (CA1-3: Figure 2; see Supplementary file 1 for other subfields). Evaluating functional connectivity changes, we found that the right CA1-3 functional network showed differential changes when comparing Affect training to Perspective training (2.420, p=0.016, q=0.032, Cohens D=0.289), which could be attributed to subtle (p<0.05) decreases in right CA1-3 mean FC following Perspective (t=−2.012, p=0.045, q>0.1, M:–0.024, std: 0.081, CI [-0.041–0.006]), but not Affect training (t=1.691, p=0.092, q>0.1, M: 0.010, std: 0.098, CI [–0.01 0.031]); changes were not present when comparing Affect training versus retest control (Table 4 and Supplementary file 1k-q). Comparing Affect TC3 relative to Presence training, we did not observe changes (Table 4). No other subfield showed differential changes in main contrasts within its functional network.
 
@@ -65,11 +219,123 @@ Subsequently, we studied whether volumetric change in hippocampal CA1-3 would sh
 
 **Figure 2.:** (A) upper: CA1-3 functional connectivity at baseline, top 10% of regions representing the CA1-3 functional network; lower: scatter plot visualizing change within the CA1-3 network across timepoints and groups; networks and scatters of SUB and CA4/DG are available in the supplements; (B) Regional change within CA1-3 functional network Affect versus Perspective (FDRq <0.05); right: scatter plot visualizing mean change within the CA1-3, FDRq <0.05 regions across timepoints and groups.
 
+**Table 4.**
+ Changes in mean CA1-3 functional network between training and active control cohorts [T0-T1] and [T1-T3].
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Affect TC3 vs Presence</th>
+      <th>LCA1-3</th>
+      <th>RCA1-3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>t-value</td>
+      <td>0.366</td>
+      <td>–0.411</td>
+    </tr>
+    <tr>
+      <td>p- and q-value</td>
+      <td>p&gt;0.1, q&gt;0.1</td>
+      <td>p&gt;0.1, q&gt;0.1</td>
+    </tr>
+    <tr>
+      <td>Cohens D</td>
+      <td>0.052</td>
+      <td>–0.058</td>
+    </tr>
+    <tr>
+      <td colspan="2">Affect vs Perspective</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>t-value</td>
+      <td>0.137</td>
+      <td>2.420</td>
+    </tr>
+    <tr>
+      <td>p- and q-value</td>
+      <td>p=0.891, q&gt;0.1</td>
+      <td>p=0.016, q=0.032</td>
+    </tr>
+    <tr>
+      <td>Cohens D</td>
+      <td>0.016</td>
+      <td>0.289</td>
+    </tr>
+  </tbody>
+</table>
+
 Exploring whether particular regions within the CA1-3 network showed alterations in intrinsic functional connectivity when comparing Affect to Perspective, we investigated connectivity changes within regions of the subfields’ functional networks. Left CA1-3 connectivity showed decreases in connectivity to left posterior insula when comparing Affect to Perspective training (FDRq <0.05; t=−3.097, p=0.003, Cohens D=−0.370). On the other hand, we observed connectivity increases between right CA1-3 to right mPFC for the same contrast (FDRq <0.05; t=3.262, p=0.002, Cohens D=0.389). No other subfield’s functional connectivity showed alterations when comparing Affect to Perspective or Presence to Affect TC3. These analyses indicate an overlap between volumetric increases and functional alterations when comparing changes following socio-affective mental training in CA1-3. In particular, the moderately consistent CA1-3 volume increases following Affect training were complemented with differential functional connectivity alterations of this subfield when comparing Affect to Perspective training.
 
-## Association between change in subfield volume, function, and stress markers
+### Association between change in subfield volume, function, and stress markers
 
 Last, we probed whether group-level changes in hippocampal subfield CA1-3 volume would correlate with individual-level changes in diurnal cortisol indices (Presence: n=86; Affect: n=92; Perspective: n=81), given that the hippocampal formation is a nexus of the HPA-axis (McEwen, 1999). We took a two-step approach. First, we studied univariate associations between cortisol and subfield change, particularly focusing on the Affect module and CA1-3 volume based on increases in CA1-3 volume identified in our group-level analysis. We observed that increases in bilateral CA1-3 following Affect showed a negative association with change in total diurnal cortisol output (operationalized as the area under the curve with respect to ground; AUCg) (Table 5, left: t=–2.237, p=0.028, q=0.056; right: t=−2.283, p=0.025, q=0.05), indicating that with a reduction in stress-levels as measured by AUCg, there were increases in CA1-3 volume. Post-hoc analyses indicated no other subfield showed an association with AUCg, or with any of the other cortisol indices, below p<0.05 (Supplementary file 1r). Assessing the associations between cortisol indices and the right CA1-3 subfield functional networks in Affect (n=92), we could not observe individual level modulation of diurnal cortisol markers and group-level effects (right CA1-3 functional network change and cortisol markers or within the PI or mPFC ROI, Table 6 and Supplementary file 1s). Yet, we observed positive associations between mean functional network of left CA1-3 and diurnal slope (t=2.653, p=0.01, q=0.02) and AUCg (t=2.261, p=0.026, q=0.052), Table 6 and Supplementary file 1t. When assessing whether particular regions within the CA1-3 network showed alterations in intrinsic functional connectivity, we observed that AUCg modulated increases in connectivity between left CA1-3 and parietal occipital area (q<0.05). These analyses extend group-level observations regarding the relation between socio-affective mental training and CA1-3 structure to the individual-level. Again, we observed some consistency in structure and function in case of CA1-3. We did not observe alterations in CA1-3 volume in relation to change in cortisol markers in Presence or Perspective. Yet, for Presence we observed association between slope and LCA4/DG change (t=−2.89, p=0.005, q=0.03) (Supplementary file 1uv). In case of intrinsic function, we also did not observe alterations in CA1-3 in relation to change in cortisol markers in Presence or Perspective, nor in other subfields (Supplementary file 1wx). When evaluating overall associations between diurnal cortisol change in CA1-3 volume in all modules combined, (Presence, Affect, and Perspective), we observed comparable patterns as for Affect only, further underscoring the association between cortisol markers and CA1-3 (Figure 3B; Supplementary file 1y and z). Last, we explored whether associations of subfield volume were found with levels of hair cortisol, a long-term marker of systemic cortisol exposure, in a sub-sample of N=44 participants repeatedly tested across modules (Presence, Affect, and Perspective), based on previous observations of domain-general effects of mental training on cortisol and cortisone (Puhlmann et al., 2021b). We identified consistent associations between increases in LCA1-3 volume and intrinsic function and hair cortisol decreases (volume: t=−2.574, p=0.011, q=0.022, function: t=−2.700, p=0.008, q=0.016). Exploring effects in subfields other than CA1-3 we revealed associations between right CA4/DG volume and hair cortisol (t=−3.138, p=0.002, q=0.01) and left SUB function (t=−2.890, p=0.005, q=0.03; Figure 3B; Supplementary file 1za and zb).
+
+**Table 5.**
+ Correlating change in CA1-3 subfield volume and diurnal cortisol indices in Affect.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LCA1-3</th>
+      <th>RCA1-3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CAR</td>
+      <td>–0,355, p&gt;0.1</td>
+      <td>–1,543, p&gt;0.1</td>
+    </tr>
+    <tr>
+      <td>Slope</td>
+      <td>–0,878, p&gt;0.1</td>
+      <td>–1,245, p&gt;0.1</td>
+    </tr>
+    <tr>
+      <td>AUCg</td>
+      <td>–2,237, p=0.028, q=0.056</td>
+      <td>–2,283, p=0.025, q=0.05</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 6.**
+ Correlating change in CA1-3 subfield functional network and diurnal cortisol indices in Affect.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LCA1-3</th>
+      <th>RCA1-3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CAR</td>
+      <td>–0,476, p&gt;0.1</td>
+      <td>–0,425, p&gt;0.1</td>
+    </tr>
+    <tr>
+      <td>Slope</td>
+      <td>2,653, p=0.009, q=0.018</td>
+      <td>0,773, p&gt;0.1</td>
+    </tr>
+    <tr>
+      <td>AUCg</td>
+      <td>2,261, p=0.026, q=0.052</td>
+      <td>0,024, p&gt;0.1</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/87634/elife-87634-fig3-v1.jpg)
 
@@ -80,6 +346,41 @@ We employed a multivariate partial least squares method, with 1000 permutations 
 ![Figure 4.](https://cdn.elifesciences.org/articles/87634/elife-87634-fig4-v1.jpg)
 
 **Figure 4.:** (A). Multivariate associations between bilateral CA1-3 volume and intrinsic function and stress markers. Left: Scatter of loadings, colored by Training Module; Right upper: individual correlations of stress markers; Right lower: individual correlation of subfields; (B). Multivariate associations between all subfields’ volume and intrinsic function and stress markers. Left: Scatter of loadings, colored by Training Module; Right upper: individual correlations of stress markers; Right lower: individual correlation of subfields.
+
+**Table 7.**
+ Multivariate PLS analyses linking cortisol markers to hippocampal subfield volume and function.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LC1</th>
+      <th>Overall</th>
+      <th>Presence</th>
+      <th>Affect</th>
+      <th>Perspective</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CA1-3</td>
+      <td>p&lt;0.01, 67%</td>
+      <td>r=0.20</td>
+      <td>r=0.17</td>
+      <td>r=0.27</td>
+      <td>r=0.16</td>
+    </tr>
+    <tr>
+      <td>all</td>
+      <td>p&lt;0.01, 71%</td>
+      <td>r=0.24</td>
+      <td>r=0.16</td>
+      <td>r=0.30</td>
+      <td>r=0.26</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -105,17 +406,17 @@ To conclude, using a longitudinal model, we investigated how different types of 
 
 The specifics on the experimental design are the similar to related works in the same sample (Valk et al., 2017; Trautwein et al., 2020). They are provided again here for completeness.
 
-## Participants
+### Participants
 
 We recruited a total of 332 healthy adults (197 women, mean ± SD = 40.7±9.2 years, 20–55 years), in the winters of 2012/2013 and 2013/2014. Participant eligibility was determined through a multi-stage procedure that involved several screening and mental health questionnaires, together with a phone interview [for details, see Singer et al., 2016]. Subsequently, a face-to-face mental health diagnostic interview with a trained clinical psychologist was carried out. The interview included a computer-assisted German version of the Structured Clinical Interview for DSM-IV Axis-I disorders, SCID-I DIA-X (Wittchen and Pfister, 1997), and a personal interview, SCID-II, for Axis-II disorders (Wittchen et al., 1997; First et al., 2012). Participants were excluded if they fulfilled criteria for: (i) an Axis-I disorder within the past two years, (ii) schizophrenia, psychotic disorders, bipolar disorder, or substance dependency, or (iii) an Axis-II disorder at any time in their life. Participants taking medication influencing the HPA axis were also excluded. None of the participants had a history of suffering from neurological disorders or head trauma, based on an in-house self-report questionnaire completed prior to the neuroimaging investigations. Included participants furthermore underwent a diagnostic radiological evaluation to rule out the presence of mass lesions (e.g. tumors, vascular malformations). The study was approved by the Research Ethics Committees of University of Leipzig (#376/12-ff) and Humboldt University in Berlin (#2013–02, 2013–29, 2014–10), and all participants provided written informed consent prior to participation. The study was registered with the Protocol Registration System of ClinicalTrials.gov under the title ‘Plasticity of the Compassionate Brain’ with the Identifier: NCT01833104. For more details on recruiting and sample selection, please see Singer et al., 2016.
 
-## Sample size estimation and group allocation
+### Sample size estimation and group allocation
 
 Overall, 2595 people signed up for the ReSource study in winter 2012/2013. Of these individuals, 311 potential participants met all eligibility criteria. From the latter group, 198 were randomly selected as the final sample. Participants were selected from the larger pool of potential participants and assigned to cohorts using bootstrapping without replacement, creating cohorts that did not differ (omnibus test p<0.1) in demographics (age, gender, marital status, income, and IQ) or self-reported traits (depression, empathy, interoceptive awareness, stress level, compassion for self and others, alexithymia, general mental health, anxiety, agreeableness, conscientiousness, extraversion, neuroticism, and openness). Seven participants dropped out of the study after assignment but before data collection began, leaving 30 participants in RCC1, 80 in TC1, and 81 in TC2.
 
 2144 people applied for the second wave of the study in winter 2013/2014. Of these people, 248 potential participants met all the eligibility criteria. From the latter pool, 164 were then randomly selected as the final sample. Participants were selected from the larger pool of potential participants and assigned to cohorts using bootstrapping without replacement, creating cohorts that did not differ significantly (omnibus test, p>0.1) from the Winter 2012/2013 cohorts or from one another in demographics (age, gender, marital status, income, and IQ) or self-reported traits (depression, empathy, interoceptive awareness, stress level, compassion for self and others, alexithymia, general mental health, anxiety, agreeableness, conscientiousness, neuroticism, and openness). The control cohorts (RCC1, RCC2, and RCC1&2) were significantly lower in extraversion than TC3; participants in the control cohorts were also more likely to have children than participants in TC3. Twenty-three participants dropped out of the study after assignment but before data collection began, leaving 81 participants in TC3 and 60 in RCC2. See further (Singer et al., 2016).
 
-## ReSource training program
+### ReSource training program
 
 In the ReSource Project, we investigated the specific effects of commonly used mental training techniques by parceling the training program into three separate modules (Presence, Affect, and Perspective). Participants were selected from a larger pool of potential volunteers by bootstrapping without replacement, creating cohorts not differing significantly with respect to several demographic and self-report traits (Singer et al., 2016). Each cultivated distinct cognitive and socio-affective capacities (Pascoe et al., 2017). Participants were divided in two 9-month training cohorts experiencing the modules in different orders, one 3-month Affect training cohort and one retest control cohort. In detail, two training cohorts (TC1, TC2) started their training with the mindfulness-based Presence module. They then underwent Affect and Perspective modules in different orders thereby acting as mutual active control groups. To isolate the specific effects of the Presence module, a third training cohort (TC3) underwent the 3-month Affect module only (Figure 1B).
 
@@ -123,42 +424,42 @@ As illustrated in Figure 1A, the core psychological processes targeted in the Pr
 
 The two contemplative dyads are partner exercises that were developed for the ReSource training (Kok and Singer, 2017). They address different skills such as perspective taking on self and others (Perspective dyad) or gratitude, acceptance of difficult emotions and empathic listening (Affect dyad), but are similar in structure (for details see: Singer et al., 2016). In each 10 min dyadic practice, two randomly paired participants share their experiences with alternating roles of speaker and listener. The dyadic format is designed to foster interconnectedness by providing opportunities for self-disclosure and non-judgmental listening (Singer et al., 2016; Kok and Singer, 2017). Our recommendation was to train for a minimum of 30 min (e.g. 10 min contemplative dyad, 20 min classic meditation) on five days per week.
 
-## MRI acquisition
+### MRI acquisition
 
 MRI data were acquired on a 3T Siemens Magnetom Verio (Siemens Healthcare, Erlangen, Germany) using a 32-channel head coil. Structural images were acquired using a T1-weighted 3D-MPRAGE sequence (repetition time [TR]=2300ms, echo time [TE]=2.98ms, inversion time [TI]=900ms, flip angle = 7°; 176 sagittal slices with 1 mm slice thickness, field of view [FOV]=240 × 256 mm2, matrix = 240 × 256, 1×1 × 1 mm3 voxels). We recorded task-free functional MRI using a T2*-weighted gradient EPI sequence (TR = 2000ms, TE = 27ms, flip angle = 90°; 37 slices tilted at approximately 30° with 3 mm slice thickness, FOV = 210 × 210 mm2, matrix = 70 × 70, 3×3 × 3 mm3 voxels, 1 mm gap; 210 volumes per session). During the functional session, participants were instructed to lie still in the scanner, think of nothing in particular, and fixate a white cross in the center of a black screen.
 
-## Structural MRI analysis: Hippocampal subfield volumetry
+### Structural MRI analysis: Hippocampal subfield volumetry
 
 Based on the available high-resolution T1-weighted images subiculum (SUB), CA1-3, and CA4/DG were segmented using a patch-based algorithm in all participants individually (see further Caldairou et al., 2016). Shortly, this procedure uses a population-based patch normalization relative to a template library (Kulaga-Yoskovitz et al., 2015), providing good time and space complexity. In previous validations work, this algorithm has shown high segmentation accuracy of hippocampal subfields (Caldairou et al., 2016), and in detecting hippocampal subfield pathology in patients with epilepsy (Bernhardt et al., 2016). It was furthermore demonstrated that these representations can be used to probe sub-regional functional organization of the hippocampus (Vos de Wael et al., 2018; Bayrak et al., 2022). Hippocampal volumes were estimated based on T1w data that were linearly registered to MNI152 using FSL flirt (http://www.fmrib.ox.ac.uk/fsl/), such that intracranial volume was implicitly controlled for.
 
 As previously reported (Puhlmann et al., 2021a), for successful hippocampus segmentations, an initial quality check was conducted by two independent raters, R.L. and L.P. Both raters were blind to participant characteristics including age, sex, and training or control group. In short, each segmentation was rated for quality on a scale of 1–10, with points being subtracted depending on the severity of detected flaws. One point was subtracted for minor flaws, for example part of a segmentation extends slightly beyond the hippocampal boundary, or does not cover a small aspect of the hippocampal formation. Two points were subtracted for medium flaws, for example gaps between subfield segmentations. Finally, major flaws immediately qualified for resampling, and included for example one or more subfield segmentations being clearly misplaced. Given a minimum of 70% inter-rater reliability, segmentation ratings were then averaged and evaluated, with scores of 5 and lower qualifying for reprocessing with the algorithm. Following this second round of processing, segmentations were rated again. Any remaining segmentations with average scores lower than 5 were excluded from the analysis.
 
-## Task-free functional MRI analysis: Hippocampal connectivity
+### Task-free functional MRI analysis: Hippocampal connectivity
 
 Processing was based on DPARSF/REST for Matlab [http://www.restfmri.net (Chao-Gan and Yu-Feng, 2010)]. We discarded the first five volumes to ensure steady-state magnetization, performed slice-time correction, motion correction and realignment, and co-registered functional time series of a given subject to the corresponding T1-weighted MRI. Images underwent unified segmentation and registration to MNI152, followed by nuisance covariate regression to remove effects of average WM and CSF signal, as well as 6 motion parameters (3 translations, 3 rotations). We included a scrubbing (Power et al., 2012) that modeled time points with a frame-wise displacement of ≥0.5 mm, together with the preceding and subsequent time points as separate regressors during nuisance covariate correction.
 
 We linearly co-registered the extracted hippocampal subfield volumes with the functional MRI data for each individual using FSL flirt (http://www.fmrib.ox.ac.uk/fsl/), followed by nearest neighbor interpolation. Following, we generated functional connectivity maps from both the left and right hippocampal subfields in each individual. Functional connectivity was calculated as the correlation between the mean time series of the seed region and the time series of all cortical parcels based on the Schaefer 400 parcellation. To render them normally distributed and scale the profiles across participants, correlation coefficients underwent a Fisher r-to-z transformation and were rescaled, resulting in connectivity profiles between 0 and 1 for each participant and timepoint. Functional networks were defined as the top 10% regions based on mean connectivity profile of the respective subfield in the ipsilateral hemisphere at baseline. Individuals with a framewise-displacement of >0.3 mm (<5%) were excluded.
 
-## Diurnal cortisol assessments
+### Diurnal cortisol assessments
 
 For cortisol assessment, 14 saliva samples (7 per day) were obtained over the course of two consecutive weekdays (Mondays/Tuesdays, Wednesdays/Thursdays or Thursdays/Fridays, depending on participant availability). In detail, samples were taken upon free awakening (while still in bed; S1) and at 30 min, 60 min, 4, 6, 8, and 10 hr after awakening. Saliva was collected using Salivette collection devices (Sarstedt, Nuembrecht, Germany). Participants were instructed to place collection swabs in their mouths and to refrain from chewing for 2 min. They were asked to not eat, drink (except water), or brush their teeth during the 10 min before sampling, and to not smoke during the 30 min before sampling. If deviating from this guideline, they were asked to thoroughly rinse their mouth with water before taking a sample. Participants otherwise followed their normal daily routine. To maximize adherence to the sampling protocol, participants were given pre-programmed mobile devices using an in-house application that reminded them to take each (except the first) Salivette at the designated time. Sampling times of the non-morning probes were jittered (+/-15 min) to avoid complete predictability. Samples were kept in the freezer until returned to the laboratory, where they were stored at –30 °C until assay (at the Department of Biological and Clinical Psychology, University of Trier, Germany). Cortisol levels (expressed in nmol/l) were determined using a time-resolved fluorescence immunoassay (Dressendörfer et al., 1992) with intra-/inter-assay variability of 10/12%.
 
 Raw cortisol data were each treated with a natural log transformation to remedy skewed distributions. Across the full sample, any values diverging more than 3 SD from the mean were labeled outliers and winsorized to the respective upper or lower 3 SD boundary to avoid influential cases. Logged and winsorized cortisol data was then averaged across the two sampling days, and the most commonly used summary indices of diurnal cortisol activity were calculated (Ross et al., 2014). The CAR was quantified as a change score from S1 to either the 30- or 60 min post-awakening sample, depending on the individual peak in hormone levels. If participants peaked at S1 rather than at 30 or 60 min thereafter, the 30-min data point was used to operationalize the (inverse) CAR, given that it was always closer in magnitude to S1 than the 60-min data point. The cortisol decline over the course of the day (diurnal slope) was operationalized as a change score from baseline to the final sample of the day (at 600 min after awakening). Total daily cortisol output was operationalized as the area under the curve with respect to ground, AUCg (Pruessner et al., 2003), which considers the difference between the measurements from each other (i.e. the change over time) and the distance of these measures from zero (i.e., the level at which the change over time occurs). Awakening, 240, 360, 480, and 600 min post-awakening cortisol values were included in the calculation of the AUCg. To prevent it from having an undue influence, the CAR samples at 30 and 60 min were excluded from the total output score calculation. On each sampling day, awakening time and sleep duration were registered using the pre-programmed mobile device immediately upon awakening in parallel to taking the first Salivette. These measures were averaged across the two sampling days to minimize situational influences.
 
-## Assay of steroid hormone concentration in hair
+### Assay of steroid hormone concentration in hair
 
 Please see further details on sample and dropout in Puhlmann et al., 2021b. To evaluate cortisol and cortisone, hair strands were taken as close as possible to the scalp from a posterior vertex position at T0 and after each following timepoint (T0-T3). Hair samples were enfolded in aluminum foil and stored in the dark at room temperature until assay at the Department of Psychology, TU Dresden, Germany. We evaluated the proximal 3 cm segment of hair to study accumulation of cortisol and cortisone over each 3-month period, based on the assumption of an average hair growth rate of 1 cm/month (Wennig, 2000). Hormone concentrations were captured using liquid chromatography–tandem mass spectrometry, the current criterion standard approach for hair steroid analysis (Gao et al., 2016). All hormone concentrations were reported in picograms per milligram. For the current longitudinal research aim, all samples of one participant were always run with the same reagent batch to avoid intraindividual variance due to batch effects.
 
-## Quality control and case selection
+### Quality control and case selection
 
 Structural MRI data without artifacts and acceptable automated segmentations were available in 943 participants. Functional MRI data were available in 849 participants. We opted to have consistent sample sizes in structure and function and therefor including only people that had both structural and functional data available. Please see Table 5 for participant numbers across timepoints and measures for structural and functional data.
 
 Among those, salivary cortisol measures were available in Presence n=85 (53 females, age = 40.87 std 9.69, 20–55), Affect n=89 (50 females, age = 40.11 std 9.87, 20–55), Perspective n=81 (48 females, age = 40.14 std 9.78, 20–55). Hair cortisol change scores were available in Presence n=31 (21 females, age = 39.55 std 10.40, 20–54), Affect n=44 (24 females, age = 37.52 std 10.78, 20–54), Perspective n=41 (24 females, age = 38.14 std 10.51, 20–54).
 
-## Statistical analyses
+### Statistical analyses
 
 Using SurfStat (Worsley et al., 2009; Larivière et al., 2023), we carried out structural and functional MRI analysis for the left and right hippocampal subfield difference scores between different 3-month timepoints. All models statistically corrected for nuisance effects of age and sex, as well as random effect of subject. Main contrasts considered in the group analyses concern Presence versus Active Control (T0-T1) and Affect versus Perspective (T1-T3). Additionally, investigations include analyses versus Retest Control Cohort as well as subgroups defined by training cohort and timepoint. In case of multiple comparison, we performed Bonferroni correction (Benjamini and Hochberg, 1995).
 
-## Partial least squares analysis
+### Partial least squares analysis
 
 To assess potential relationships between cortisol change and hippocampal subfield volume and functional change, we performed a partial least squares analysis (PLS; McIntosh and Lobaugh, 2004; Kebets et al., 2019). PLS is a multivariate associative model that to optimizes the covariance between two matrices, by generating latent components (LCs), which are optimal linear combinations of the original matrices (McIntosh and Lobaugh, 2004; Kebets et al., 2019). In our study, we utilized PLS to analyze the relationships between change in volume and intrinsic function of hippocampal subfields and diurnal cortisol measures. Here, we included all Training Modules and regressed out effects of age, sex, and random effects of subject on the brain measures before conducting the PLS analysis. The PLS process involves data normalization within training groups, cross-covariance, and singular value decomposition. Subsequently, subfield and behavioral scores are computed, and permutation testing (1000 iterations) is conducted to evaluate the significance of each latent factor solution (FDR corrected). We report then the correlation of the individual hippocampal and cortisol markers with the latent factors. To estimate confidence intervals for these correlations, we applied a bootstrapping procedure that generated 100 samples with replacement from subjects’ RSFC and behavioral data.

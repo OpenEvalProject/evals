@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.43158.001 In diverse bacterial species, the global regulator Hfq contributes to post-transcriptional networks that control expression of numerous genes. Hfq of the opportunistic pathogen Pseudomonas aeruginosa inhibits translation of target transcripts by forming a regulatory complex with the catabolite repression protein Crc. This repressive complex acts as part of an intricate mechanism of preferred nutrient utilisation. We describe high-resolution cryo-EM structures of the assembly of Hfq and Crc bound to the translation initiation site of a target mRNA. The core of the assembly is formed through interactions of two cognate RNAs, two Hfq hexamers and a Crc pair. Additional Crc protomers are recruited to the core to generate higher-order assemblies with demonstrated regulatory activity in vivo. This study reveals how Hfq cooperates with a partner protein to regulate translation, and provides a structural basis for an RNA code that guides global regulators to interact cooperatively and regulate different RNA targets.
+In diverse bacterial species, the global regulator Hfq contributes to post-transcriptional networks that control expression of numerous genes. Hfq of the opportunistic pathogen Pseudomonas aeruginosa inhibits translation of target transcripts by forming a regulatory complex with the catabolite repression protein Crc. This repressive complex acts as part of an intricate mechanism of preferred nutrient utilisation. We describe high-resolution cryo-EM structures of the assembly of Hfq and Crc bound to the translation initiation site of a target mRNA. The core of the assembly is formed through interactions of two cognate RNAs, two Hfq hexamers and a Crc pair. Additional Crc protomers are recruited to the core to generate higher-order assemblies with demonstrated regulatory activity in vivo. This study reveals how Hfq cooperates with a partner protein to regulate translation, and provides a structural basis for an RNA code that guides global regulators to interact cooperatively and regulate different RNA targets.
 
 ## Introduction
 
@@ -35,25 +35,53 @@ The mechanism by which Hfq and Crc act in translational repression of target mRN
 
 ## Results
 
-## An ensemble of Hfq/Crc/amiE6ARNRNA assemblies
+### An ensemble of Hfq/Crc/amiE6ARNRNA assemblies
 
 For cryo-EM structural studies of the Hfq/Crc/RNA complex, purified recombinant Hfq and Crc proteins were mixed with an 18 nucleotide Hfq binding motif from the translation initiation region of the CCR-controlled amiE mRNA (hereafter termed amiE6ARN). The defined sequence (5'-AAA-AAU-AAC-AAC-AAG-AAG-3') has a binding motif comprised of 6 repeats of an A-R-N pattern preferred by the distal face of Hfq (Sonnleitner and Bläsi, 2014). The 18 nucleotides of amiE6ARN could be distinguished in the cryoEM maps and will be referred to with numbers 1–18 from the 5´ to the 3´ end. The purified sample of Hfq/Crc/amiE6ARN, after mild chemical crosslinking, yielded well defined single particles on graphene oxide in thin, vitreous ice. Analysis of the reference free 2D class averages and subsequent 3D classification indicated three principal types of complexes corresponding to different stoichiometries of Hfq (hexamer):Crc:amiE6ARN with compositions 2:2:2, 2:3:2 and 2:4:2 (Figure 1). These higher order assemblies are in agreement with recently observed SEC-MALS and mass spectrometry results which excluded a simple 1:1:1 assembly (Sonnleitner et al., 2018). The maps for the complexes are estimated to be 3.1 Å, 3.4 Å and 3.2 Å in resolution, respectively, based on gold-standard Fourier shell correlations (Figure 1—figure supplement 1). The distribution of the complexes corresponds to roughly 49%, 29% and 23% for the 2:2:2, 2:3:2 and 2:4:2 complexes (Figure 1). The individual crystal structures of Hfq and Crc dock well into the cryoEM densities (Figure 1 and Figure 1—figure supplement 2), and aside from side chain rotations there are few other structural changes of the components (Figure 1—figure supplement 2). To probe for artefacts introduced by the crosslinking experiments, CryoEM analyses were subsequently performed with samples that had not been treated by crosslinking using grid preparation conditions optimised for the crosslinked specimens. Although limited to lower resolution, data from these specimens revealed that the quaternary structure remained unchanged within the resolution limits of the data for the model being compared (Supplementary file 1A).
 
-## A specialised and recurring RNA conformation in Hfq-mediated regulation
+![Figure 1.](https://cdn.elifesciences.org/articles/43158/elife-43158-fig1-v2.jpg)
+
+**Figure 1.:** Three main classes of particles were observed after reference-free 2D classification (top), corresponding to Hfq/Crc/amiE6ARN assemblies with compositional stoichiometries of 2:2:2, 2:3:2 and 2:4:2. The amiE6ARN species (red) constitute the main interaction interface between Hfq and Crc, together forming the 2:2:2 core complex observable in all three models (bottom). Cyan: Hfq hexamer, orange purple and pink: Crc monomers, red: amiE6ARN. All cryoEM maps were low-pass filtered to 6 Å for clarity of presentation and the crystal structures were docked in as rigid bodies. Only a subset of the high quality 2D classes are shown in the panel.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43158/elife-43158-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Local resolution estimates of the EM maps (left panel) and Gold standard Fourier shell correlation curves for all three reconstructions (central panel). FSC 0.143 and 0.5 are annotated. In the right panel, angular distributions of the 2D images are presented as a spherical bar plot, with red bars representing more preferred projections.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43158/elife-43158-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Raw micrograph after motion correction at three microns under focus, lowpass filtered to 20 Å. (B) High resolution cryo-EM maps with refined atomic models for all complexes showing the quality of the EM reconstructions. All maps and models were generated and refined independently of each other or a high-resolution reference structure, showing well defined and highly reproducible densities for all side chains in these signature regions. Even at the periphery the map density is of good quality, maintaining the six-fold symmetry of the Hfq components (inset 4). (C) Model versus map Fourier shell correlation (FSC) show a good correlation between the individual atomic models and the experimental cryo-EM maps. FSC 0.5 is annotated on the graph, whereas FSC 0.143 is annotated in the legends.
+
+### A specialised and recurring RNA conformation in Hfq-mediated regulation
 
 Link et al. (2009) described the crystal structure of E. coli Hfq bound to a polyriboadenylate 18-mer and observed that the RNA encircled the distal face of the Hfq hexamer via a repetitive tripartite binding scheme (Figure 2—figure supplement 1A). Each base triplet is partially embedded between adjacent Hfq monomers and is mostly surface exposed, folding into a’ crown-like’ conformation. We observe striking similarities with the fold of the authentic amiE6ARN species on the distal side of the P. aeruginosa Hfq hexamer (Figure 2 and Figure 2—figure supplement 1A). Notably, the cryoEM maps were calculated without any reference to Link et al. (2009). The agreement between the co-crystal structure of the analogous complex and the entirely independently derived cryoEM based model provides thus a strong validation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/43158/elife-43158-fig2-v2.jpg)
+
+**Figure 2.:** 6 RNA triplets are partially embedded in six binding pockets on the Hfq distal side, forming a weaving, crown-like pattern. The A and R sites are occupied by adenine and a purine, respectively, whereas the RNA entry/exit site has no discriminatory preferences and is therefore referred to as the ‘N’ site. The Cryo-EM density for amiE6ARN is depicted as a grey mesh, with the RNA ‘crown’ modelled in red. Positively charged protuberances (blue) guide the RNA to fold into a star-shaped conformation to maximize the surface interaction between the negatively charged RNA backbone, and the positively charged Hfq surface pattern. An atomic model of the A-R-N occupation pattern. Left panel: Adenosine specificity site. Right panel: Purine specificity site. amiE nucleotide carbon atoms are depicted in red, Hfq carbon atoms are in green.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43158/elife-43158-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Similarity of interactions between E. coli and P. aeruginosa Hfq and polyA18 and amiE6ARN RNA, respectively, on the distal face. The crystal structure of E. coli Hfq in complex with polyA18 reveals the A-R-N motif (red), which is strikingly congruent with the interactions between P. aeruginosa Hfq and amiE6ARN RNA (pink) in the complex with Crc. (B) The A-R-N motif is not supported by the Hfq of the Gram-positive bacteria Staphylococcus aureus and Bacillus subtilis, which instead use a R-L (purine, linker) motif (Horstmann et al., 2012). Based on this divergence, it seems unlikely that Hfq in the Gram-positive species form assemblies that resemble the P. aeruginosa Hfq/Crc assembly.
+
 Like its E. coli homologue, Pseudomonas Hfq contains six tripartite binding pockets on the distal side, capable of binding a total of 18 nucleotides. Each of the six RNA triplets of the amiE6ARN RNA fits into an inter-subunit cleft in Hfq (Figure 2). The specific, star-shaped RNA fold is guided by six positively charged protuberances on the distal face of Hfq, with the phosphate backbone circularly weaving in between these, seemingly to minimise steric hindrance while maximizing surface interactions (Figure 2). As described by Link et al. (2009), each pocket consists of an adenosine specificity site (A), a purine nucleotide specificity site (R), and a presumed RNA entrance/exit site (N) which is non-discriminatory (Figure 2—figure supplement 1A). Hfq thus has a structural preference for (ARN)n RNA stretches on its distal side, where N is any nucleotide. The adenosine specificity (A) sites are organised identically to the corresponding A sites in E. coli Hfq, forming hydrogen bonds between the peptide backbone and carboxyl-groups of Gln33 and the N6,7 atoms of the adenosine base, and a polar interaction between Gln52 (Nε) and the N1 atom of the adenosine base (Figure 2, Figure 2—figure supplement 1A). The peptide backbone amide of residue Lys31 interacts with the 5’ phosphate group of adenine. Finally, the adenine base is stacked against the side chain of Leu32 (Figure 2). The interactions with N1, by the carbonyl of Q33, and N7, by the amide of Q33, confer pocket-specificity for A as they are not compatible with a G, which would form a repulsive contact via its O6 and peptide carbonyl (Figure 2). The purine (R) specificity site is defined by two neighbouring monomers, where the side chains from Tyr25 and from Leu26’, Ile30’ and Leu32’ (where the prime denotes residues from a neighbouring subunit) contact the nucleotide aromatic base. In amiE6ARN, one R-site is populated by a guanine, forming a hydrogen bond between the Nε of Gln52’ and the guanine exocyclic O6 (Figure 2). Just like in the E. coli Hfq/polyA18 structure (Link et al., 2009), Gln52’ forms a physical link between the A and R sites. Previous structures were obtained from polyA RNA, whereas the structures presented here were solved with the authentic amiE Hfq recognition site. Interestingly, Thr61 Oγ forms a double hydrogen bond with the N1 and the exocyclic N2 from the guanine base, which was not seen previously (Link et al., 2009) as all R-sites were occupied by adenine residues (Figure 2). As we will describe further below, the N site base interacts with Crc, but without apparent sequence preference. Strikingly, the A-R-N motif is not supported by Hfq of the Gram-positive bacteria Staphylococcus aureus and Bacillus subtilis, which instead use a R-L (purine, linker) motif (Horstmann et al., 2012) (Figure 2—figure supplement 1B). Phe 30 hinders the RNA backbone, and thus the A-site base, from entering the A-site, while stabilising the R-site together with M32 via stacking interactions.
 
-## The quaternary structure of the core complex
+### The quaternary structure of the core complex
 
 In the core complex (with 2:2:2 stoichiometric composition of Hfq:Crc:RNA), two Hfq hexamers sandwich the RNA and Crc (Figure 3A), with each Hfq interacting with one amiE6ARN RNA and two Crc components. The assembly has C2 symmetry, with the molecular twofold axis passing through the interface of the two Crc molecules. The Crc´s in the assembly self-interact in the same way as observed in the crystal structure of the isolated Crc dimer, where the interface is generated through crystallographic symmetry (Wei et al., 2013; Milojevic et al., 2013). As anticipated from mutational analyses (Sonnleitner et al., 2018), the dominating protein/RNA interaction is made by the distal face of Hfq, forming an interface area of roughly 2270 Å2.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43158/elife-43158-fig3-v2.jpg)
+
+**Figure 3.:** (A) Atomic model of the 2:2:2 Hfq/Crc/RNA complex. The view is along the C2 molecular symmetry axis which passes through the homodimeric Crc interface. Hfq hexamers flank the Crc dimer and present the amiE6ARN RNA to form two different interfaces with the Crc protomers, which form an anti-parallel dimer. The Crc protomers form strong polar contacts with mainly the backbone phosphate groups and exposed ribose rings (bottom insets). Two small C2 symmetric binding interfaces constitute the Crc dimerisation (top insets). A single short stretch on each Crc monomer binds a Hfq monomer (middle left panel). Dimeric Crc in yellow and orange, amiE6ARN RNA in red, Hfq hexamers in cyan. (B) Translational regulation of an amiE::lacZ reporter gene by Crc variants. P. aeruginosa strain PAO1Δcrc(pME9655) harboring plasmids pME4510 (vector control), pME4510crcFlag (Crcwt) or derivatives thereof encoding the respective mutant proteins was grown to an OD600 of 2.0 in BSM medium supplemented with 40 mM succinate and 40 mM acetamide. The β-galactosidase values conferred by the translational amiE::lacZ fusion encoded by plasmid pME9655 in the respective strains are indicated. The results represent data from two independent experiments and are shown as mean and range. (C) Table of Crc-amiE contacts in the 2:2:2 assembly. BB: Crc contacts with the RNA backbone; Base: Crc contacts with RNA bases.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43158/elife-43158-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) In vitro association of Hfq and Crc and Crc variants in the presence of RNA. The in vitro co-IP experiments were performed with Hfq and Crc and variants thereof in the presence (lanes 1–4) and absence (lane 5) of amiE6ARN RNA as indicated on top. Anti-Hfq specific antibodies and magnetic protein G beads were used for co-IP of Crc and Crc variants. The in vitro association of Hfq with Crc and variants thereof was visualized by western-blot analysis using anti-Crc or anti-Hfq specific antibodies as indicated at the right. Lanes 6 and 7, 4 pmol Hfq and 12 pmol Crc were loaded, respectively. The western-blot analyses were performed in triplicate. The result from one representative experiment is shown. (B) Crc variants are synthesized at comparable levels. Cultures of PAO1Δcrc(pME9655,pME4510) (lane 1), PAO1Δcrc(pME9655,pME4510crcFlag) (lane 2), PAO1Δcrc(pME9655, pME4510crc(R140E)Flag) (lane 3), PAO1Δcrc(pME9655,pME4510crc(E142R)Flag) (lane 4), PAO1Δcrc(pME9655,pME4510crc(R229E)Flag) (lane 5), PAO1Δcrc(pME9655,pME4510crc(R230E)Flag) (lane 6), PAO1Δcrc(pME9655, pME4510crc(E142R,R229E)Flag) (lane 7), PAO1Δcrc(pME9655, pME4510crc(E142R,R230E)Flag) (lane 8) and PAO1Δcrc(pME9655, pME4510crc(E142R,R229E,R230E)Flag) (lane 9), respectively, were grown to an OD600 of 2.0 in BSM medium supplemented with 40 mM succinate and 40 mM acetamide. The protein levels of Crc, the Crc variants (top) and of ribosomal protein S1 (loading control) were determined by quantitative western-blot analysis using anti-Crc and anti-S1 antibodies, respectively. The western-blot analyses were performed in triplicate. The result from one representative experiment is shown.
 
 The two Crc molecules interact with RNA residues exposed on the surface of Hfq, and both Crc molecules contact the Hfq-rim on the distal side (Figure 3A). The Crc protomers form contacts mainly with the backbone phosphate groups and exposed ribose rings of the RNA (Figure 3A and C). Because the Crc forms antiparallel dimers, there are two modes of interaction of the Crc with amiE6ARN RNA. In one mode of interaction, Arg140 η1-NH2 and Arg141 ε-NH and η1-NH2 interact with the phosphodiester backbone of amiE6ARN. Arg140 and Arg196 form a sandwich with the purine-base of the A3 nucleotide at an Entry/Exit ‘N’ site of amiE6ARN RNA. Interestingly, Arg140 participates in the Crc1-Crc2 dimer interface in the Crc-dimer as solved by crystallography via contacts with E193 (pdb-ID 4jg3, data not shown), but our maps clearly show a rotamer shift of the R140 side chain away from E193, forming contacts with amiE as described above. The Arg196 ε-NH and η1-NH2 groups form hydrogen bonds with the U6-amiE6ARN backbone and the U6 O2 group forms a hydrogen bond with the Met156 amide. In the second mode of interaction, Lys155 ζ-NH2 makes a hydrogen bond with the OP2-group of C9 and the ribose hydroxyl group. Additional hydrogen bonds are formed between Trp161 ε1-NH and Arg162 η1/2-NH2 and the phosphate backbone of amiE6ARN (Figure 3A).
 
 The highly organised interactions in the core complex (Figure 3A) illustrate how the bases of amiE6ARN as presented by Hfq constitute a molecular interface for the RNA-mediated interactions between Hfq and Crc. Crc forms small contact surfaces to the RNA, to Hfq, and to itself as a homodimer; these small areas work together to give an assembly that is most likely stabilised through chelate cooperativity. Notably, there is a striking absence of any lower order assemblies in the cryo EM micrographs. The 2:2:2 complex is therefore likely to be the minimal complex formed when all components are present and must be constructed in an ‘all or nothing’ manner, somewhat like a binary switch.
 
-## Function, origins and validation of subunit cooperativity in the 2:2:2 complex
+### Function, origins and validation of subunit cooperativity in the 2:2:2 complex
 
 The dimer interface of the Crc pair is the largest protein-protein interface in the 2:2:2-complex and has a buried area of 766 Å2, which typically corresponds to a moderate intermolecular affinity. The key dimerization interface is maintained by salt bridges between Arg229-Arg230 of one Crc monomer and Glu142 of the second Crc monomer, which is further stabilised by pi-stacking of the Phe231-Phe231 rings across the twofold axis (Figure 3A). The phenylalanine residues are in turn stabilised by stacking interactions with Trp255 of the same Crc monomer (not shown). Two additional polar contacts are formed between Arg137 and the Asn184 carbonyl group of two pairs of helices in the Crc dimer, forming a smaller secondary interface (Figure 3A).
 
@@ -61,7 +89,7 @@ To verify selected interactions between the Crc protomers and Crc and RNA, we ex
 
 Next, we focused on the interactions in the E142 and R229/R230 ‘triangle’ (Figure 3A, top left inset) for the Crc-Crc interaction. The single mutant proteins CrcR229E and CrcR230E did not affect translational repression of amiE::lacZ, whereas the function of the CrcE142R variant was diminished (Figure 3B), indicating that E142 can interact with either R229 or R230. The de-repression of amiE:lacZ observed with the CrcE142R variant was partially compensated by the double mutant proteins CrcE142R, R229E and CrcE142R, R230E (Figure 3B). In addition, the CrcE142R and CrcR230E variants were impaired in Hfq/Crc/RNA complex formation as shown by the co-immunoprecipitation assay (Figure 3—figure supplement 1A). Strikingly, the compensatory changes present in the triple mutant protein CrcE142R, R229E, R230E almost fully restored translational repression of the amiE::lacZ reporter gene (Figure 3B). As the respective Crc variant proteins were produced at comparable levels (Figure 3—figure supplement 1B), these mutational studies support the in vivo role for the interactions of the Crc protomers observed in the cryo-EM models. The exchange of Glu142 with an Ala in the triple mutant protein CrcE142A, R229E, R230E restored as well translational repression of the amiE::lacZ reporter gene (Figure 3B). We interpret this as showing that the rescue of the deleterious mutations does not require charge compensation, but removing any potential charge repulsion.
 
-## Recruitment of additional Crc units to the core
+### Recruitment of additional Crc units to the core
 
 The quaternary organisation of the 2:2:2 complex forms a core unit that is also present in the 2:3:2 and 2:4:2 complexes. In that common core, the interaction of Crc with RNA leaves approximately half of the accessible surface of the nucleic acid exposed. For the 2:3:2 and 2:4:2 complexes, additional Crc units are recruited through interactions with the exposed portion of the RNA. As such, the C2 symmetry is broken by the third Crc molecule in the 2:3:2 complex (Figure 1). Interestingly, recruitment of a fourth Crc monomer to the complex restores the C2 symmetry, preserving the symmetry axis from the core complex, but with a conformationally different Crc dimer interface between Crc molecules 3 and 4 (Figure 4A). The two additional Crc monomers have small surface-area contacts with the rest of the complex and are likely to be comparatively mobile, which may account for the stronger variation in resolution for the 2:3:2 and 2:4:2 maps compared to the rather rigid 2:2:2 core assembly (Figure 1—figure supplement 1).
 
@@ -69,9 +97,11 @@ The quaternary organisation of the 2:2:2 complex forms a core unit that is also 
 
 **Figure 4.:** (A) Atomic model of the 2:4:2 Hfq/Crc/RNA complex. The insets show additional Hfq-Crc, Crc-Crc and Crc-RNA interactions not present in the 2:2:2 complex. The Crc3-4 dimer is formed by only one interface, with an R230-R230 interaction at the core, which globally overlaps with the dimer interface of the Crc1-Crc2 dimer (top left inset). Only one of two RNA-binding patches is presented to amiE6ARN in the Crc3-4 dimer, yet exploited more extensively (right inset). A small interface is formed between Crc3-4 and Hfq. Crc dimer in yellow, amiE6ARN RNA in red, Hfq hexamers in cyan, extra Crc dimer in magenta and purple. (B) Translational regulation of an amiE::lacZ reporter gene by Crc variants, as described in Figure 3B. The results represent data from two independent experiments and are shown as mean and range. (C) Two distinct dimeric Crc species are observed in the three complexes solved by cryoEM. i: The self-complementary interaction of the 2:2:2 core complex. ii: In the 2:4:2 complex, an alternative dimer is formed, showing a twisted dimer interface and more open configuration, with Arg230 serving as a dynamic hinge (bottom). (D) An electropositive half-channel runs along the dimer interface of the Crc1-2 dimer, and in the context of the Hfq/Crc/RNA assembly it could potentially serve as a conduit for RNA (dotted white arrow; see Figure 5). The A, R, and E RNA interaction sites of Hfq are annotated.
 
-## Function, origins and validation of subunit cooperativity in the 2:4:2 complex
+### Function, origins and validation of subunit cooperativity in the 2:4:2 complex
 
 The protomer interactions of the 2:2:2 assembly are highly interdependent, and once the core complex is generated it can apparently recruit additional Crc molecules, forming the 2:3:2 and 2:4:2 complexes. In the 2:4:2 complex, a second type of Crc dimer seems to assemble with a smaller buried surface (Figure 4A). Such additional dimers can only form when an intact 2:2:2 core complex is present, as they are not observed in the core complex itself. Notably, the additional Crc dimer is in a more ‘open’ conformation than the dimer in the core (Figure 4C). The same key Crc dimer interface is occupied but seems to serve as a dynamic hinge, whereas the secondary, smaller, dimer interface between the Crc helices is absent to allow the new Crc dimer to adopt an ‘open’ conformation. Arg230 is reorganised by Glu193 in the same protomer to self-interact with the corresponding Arg230 in the partner Crc, rather than with Glu142 (Video 1). Additional hydrogen bonds are formed between Arg233 and Glu193, whereas Arg229 is no longer part of the dimer interface (Figure 4A). Both Arg230 and Glu193 seem to play important roles in providing the structural freedom to form a dynamic hinge (Figure 4C). Glu193 is part of the Crc1-Crc2 interface in the crystal structure but does not participate in this interface when assembled in the 2:2:2 core complex. Instead it aids in coordinating the Crc3-Crc4 interface in the 2:4:2 assembly. Interestingly, Crc3 and Crc4 do not interact with Crc1 or Crc2, and seem to be recruited solely via Hfq/amiE6ARN. By reorganising the extra Crc molecules 3 and 4 that bind the 2:2:2 core (Figure 4A), the alternative Crc dimer is able to utilise one of two basic patches on its surface when engaging amiE6ARN without causing steric hindrance to the already bound Crc dimer.
+
+![Video 1.](https://cdn.elifesciences.org/articles/43158/elife-43158-video1.mp4.jpg)
 
 The Arg233-Glu193 interaction is unique for the 2:4:2 assembly and was therefore assessed in vivo. Strikingly, the CrcE193R mutation fully abrogated translational repression of the amiE:lacZ reporter gene (Figure 4B). The model predicts that the deleterious CrcE193R mutation can be compensated by the substitution of CrcR230E to re-establish the interaction. This pair does indeed behave as predicted, as the CrcE193R, R230E variant restored translational repression of the amiE::lacZ reporter gene, further confirming the in vivo importance of the 2:4:2 assembly during CCR (Figure 4B). The exchange of Glu193 with Ala in the CrcE193A, R230E mutant protein also restored translational repression of the reporter gene, albeit to a somewhat reduced extent when compared with the CrcE193R, R230E variant (Figure 4B). Again, these results suggest that the rescue of the deleterious mutations does not require charge compensation, but act by removing any potential charge repulsion.
 
@@ -101,15 +131,165 @@ Recent findings show that the regulatory spectrum of Hfq and Crc is much broader
 
 ## Materials and methods
 
-## Protein synthesis, purification and complex formation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Pseudomonas aeruginosa)</td>
+      <td>crc</td>
+      <td>NA</td>
+      <td>Pseudomonas genome database: PA5332</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. aeruginosa)</td>
+      <td>amiE</td>
+      <td>NA</td>
+      <td>Pseudomonas genome database: PA3366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PAO1</td>
+      <td>PMID: 111024</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PAO1Δcrc</td>
+      <td>PMID: 20080802</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>XL1-Blue</td>
+      <td>Stratagene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Novagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (P. aeruginosa)</td>
+      <td>amiE6ARN RNA</td>
+      <td>Microsynth, PMID: 29244160</td>
+      <td>sequence: 5'-AAAAAUAACAACAAGAAG-3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Crc (rabbit polyclonal)</td>
+      <td>Pineda</td>
+      <td>(1:5000)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Hfq (rabbit polyclonal)</td>
+      <td>Pineda</td>
+      <td>(1:10000)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-S1 (rabbit polyclonal)</td>
+      <td>Pineda</td>
+      <td>(1:10000)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG (goat polyclonal)</td>
+      <td>Sigma</td>
+      <td>Sigma: A3687</td>
+      <td>conjugated with alkaline phosphatase, (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pME9655 (plasmid)</td>
+      <td>PMID: 20080802</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pETM14lic-His6Crc (plasmid)</td>
+      <td>PMID: 23717639</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pME4510crcFlag (plasmid)</td>
+      <td>PMID: 29244160</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Hfq</td>
+      <td>PMID: 21330354</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Crc</td>
+      <td>PMID: 23717639</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion3</td>
+      <td>DOI: 10.7554/eLife.42166</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LocScale</td>
+      <td>DOI: 10.7554/eLife.27131</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LocalDeblur</td>
+      <td>DOI: 10.1101/433284</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein synthesis, purification and complex formation
 
 P. aeruginosa Hfq and Crc were produced in E. coli and purified as described by Sonnleitner et al. (2018). The synthetic 18-mer amiE6ARN RNA (5´-AAAAAUAACAACAAGAGG-3´) used in these studies consists of six tripartite binding motifs (Sonnleitner and Bläsi, 2014). The Hfq/Crc/RNA complex was prepared by first heating the amiE6ARN RNA at 95°C for 5 min followed by 50°C for 10 min and 37°C for 10 min. The RNA was then incubated with the Hfq hexamer at a 1:1 molar ratio on ice for 20 min to form a binary complex, then an equal molar ratio of Crc was added as recently described (Sonnleitner et al., 2018). The mixture was incubated on ice for 30 min prior to fractionation by size exclusion chromatography using a Superdex 200 column equilibrated in running buffer composed of 20 mM HEPES, pH 7.9, 10 mM KCl, 40 mM NaCl, 1 mM MgCl2, and 2 mM TCEP (tris(2-carboxyethyl) phosphine). The peak fractions were buffer exchanged into 20 mM HEPES, pH 7.9, 10 mM KCl, 40 mM NaCl, 5 mM MgCl2. Samples used for cross-linking were incubated with bis(sulfosuccinimidyl)suberate (BS3) at 150 µM for 30 min on ice, followed by quenching at 37.5 mM Tris-HCl pH 8.0.
 
-## CryoEM specimen preparation and data acquisition
+### CryoEM specimen preparation and data acquisition
 
 Graphene oxide grids are prepared as described by Pantelic et al. (2010). Briefly, 2 mg/ml of graphene oxide solution in water (Aldrich) was diluted ten times in water. After removing aggregation by spinning for 30 s at 300 rcf, 2 µl of graphene oxide solution was loaded on freshly glow discharged quantifoil Au-grids (R1.2/1.3, 300 mesh). Glow discharge was performed prior to graphene oxide coating at 45 mA for 60 s with an Edward Sputter Coater S150B at 0.2 m Bar at 0.75 KV. After the graphene oxide had been adsorbed for 1 min, the grids were washed 3 times with 20 μl water, then air-dried for 1 hr at room temperature prior to sample application. Specimens for cryoEM analysis were prepared by applying 2 μl of a 0.65 µM solution of the Hfq/Crc/RNA complex to the Quantifoil Au grids freshly coated with graphene oxide. After an adsorption time of 60 s, the grids were blotted for 10 s at a blot force of 5, then plunge frozen into liquid ethane using a Vitrobot (FEI). Images were recorded on a Krios G2, Falcon III direct electron detector at 300 kV operating in counting mode (Supplementary file 1C).
 
-## Movie processing, single particle analysis, 3D reconstruction and refinement
+### Movie processing, single particle analysis, 3D reconstruction and refinement
 
 Whole frame motion correction was performed on movies with motioncorr2 with dose weighting followed by CTF estimation using gctf (Zhang, 2016; Zheng et al., 2017). RELION-3.0 was used for data processing (Scheres, 2012). Final resolution estimates were calculated after the application of a soft binary mask and phase randomisation and determined based on the gold standard FSC = 0.143 criterion (Scheres and Chen, 2012; Chen et al., 2013).
 
@@ -117,30 +297,30 @@ For the BS3 treated complex, after manually picking 3159 particles and using sui
 
 Crystal structures for P. aeruginosa Crc (PDB code 1U1S) and Hfq (PDB code 4JG3) were manually docked into the EM density map as rigid bodies in Chimera (Pettersen et al., 2004). The RNA 18-mers were manually built into the density using Coot (Emsley et al., 2010). Refmac5 and Phenix real-space refinement with global energy minimization, NCS-restraints, group B-factor and geometry restraints were used to iteratively refine the multi-subunit complexes at high resolution, followed by manual corrections for Ramachandran and geometric outliers in Coot and ISOLDE (Supplementary file 1A) (Emsley et al., 2010; Murshudov et al., 2011; Afonine et al., 2012; Croll, 2018). Model quality was evaluated with Procheck in CCP4 and MolProbity (Williams et al., 2018). In silico 2 Å maps were generated from the atomic models and FSC validation against the experimental maps was performed with the EMDB Fourier shell correlation server (EMBL-EBI) (Figure 1—figure supplement 2B).
 
-## Bacterial strains and plasmids
+### Bacterial strains and plasmids
 
 The strains, plasmids and oligonucleotides used in this study are listed in Supplementary file 1B and 1C.
 
-## Construction of plasmids encoding Crc variant proteins for in vivo translational repression assay
+### Construction of plasmids encoding Crc variant proteins for in vivo translational repression assay
 
 To test the proficiency of Crc mutant proteins to co-repress translation of a translational amiE:lacZ reporter gene, derivatives of plasmid pME4510crcFlag (Supplementary file 1B) were constructed by means of Quick change site directed mutagenesis (Agilent Technologies). Plasmid pME4510crcFlag was used together with the corresponding mutagenic oligonucleotide pairs (Supplementary file 1C). The parental plasmid templates were digested with DpnI and the mutated nicked circular strands were transformed into E. coli XL1-Blue, generating plasmids pME4510crc(R140E)Flag, pME4510crc(E142R)Flag, pME4510crc(R229E)Flag, pME4510crc(E193R)Flag, pME4510crc(R230E)Flag, pME4510crc(E142R,R229E)Flag, pME4510crc(E193R,R230E)Flag, pME4510crc(E193A,R230E)Flag, pME4510crc(E142R,R230E)Flag and pME4510crc(E142R, R229E, R230E)Flag and pME4510crc(E142A, R229E, R230E)Flag.
 
-## In vivo translational repression of an amiE::lacZ reporter gene in the presence of Crc variants
+### In vivo translational repression of an amiE::lacZ reporter gene in the presence of Crc variants
 
 The ability of the Crc mutant proteins to repress translation of an amiE::lacZ reporter gene was tested in a PAO1 crc deletion strain bearing plasmids encoding the wt protein or the respective Crc variants (Supplementary file 1B) as described by Sonnleitner et al. (2018). The β-galactosidase activities were determined as described (Miller, 1972). The β-galactosidase units in the different experiments were derived from two independent experiments.
 
-## Construction of plasmids employed for the production of selected Crc mutant proteins
+### Construction of plasmids employed for the production of selected Crc mutant proteins
 
 The R140E, E142R, R230E single aa exchanges in Crc were obtained by using the QuickChange site-directed mutagenesis protocol (Agilent Technologies). The plasmid pETM14lic-His6Crc (Supplementary file 1B) was used together with the corresponding mutagenic oligonucleotide pairs (Supplementary file 1C). The entire plasmids were amplified with Pfu DNA polymerase (Thermo Scientific). The parental plasmid templates were digested with DpnI and the mutated nicked circular strands were transformed into E. coli XL1-Blue, generating plasmids pETM14lic-His6CrcR140E, pETM14lic-His6CrcE142R and pETM14lic-His6CrcR230E.
 
-## Purification of Crc and Crc variants
+### Purification of Crc and Crc variants
 
 The Crc protein and the Crc variants CrcR140E, CrcE142R and CrcR230E were purified from E. coli strain BL21(DE3) harboring either plasmid pETM14lic-His Crc or the respective derivatives using Ni-affinity chromatography, followed by removal of the His6-tag with GST-HRV14-3C ‘‘PreScission’’ protease as described by Milojevic et al., 2013.
 
-## In vitro co-IP studies
+### In vitro co-IP studies
 
 The co-IP studies in the presence of 40 pmol of Hfq-hexamer, 120 pmol of Crc protein or of the respective Crc mutant proteins and 40 pmol amiE6ARN RNA were performed as described (Sonnleitner et al., 2018).
 
-## Western blot analyses
+### Western blot analyses
 
 Equal amounts of proteins were separated on 12% SDS-polyacrylamide gels, and then electro-blotted onto a nitrocellulose membrane. The blots were blocked with 5% dry milk in TBS buffer, and probed with rabbit anti-Hfq (Pineda) and rabbit anti-Crc (Pineda) antibodies, respectively. Immuno-detection of ribosomal protein S1 served as a loading control. The antibody-antigen complexes were visualized with alkaline-phosphatase conjugated secondary antibodies (Sigma) using the chromogenic substrates nitro blue tetrazolium chloride (NBT) and 5-Bromo-4-chloro-3-indolyl phosphate (BCIP).

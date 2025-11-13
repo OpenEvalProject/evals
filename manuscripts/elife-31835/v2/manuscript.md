@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.31835.001 As species face rapid environmental change, we can build resilient populations through restoration projects that incorporate predicted future climates into seed sourcing decisions. Eucalyptus melliodora is a foundation species of a critically endangered community in Australia that is a target for restoration. We examined genomic and phenotypic variation to make empirical based recommendations for seed sourcing. We examined isolation by distance and isolation by environment, determining high levels of gene flow extending for 500 km and correlations with climate and soil variables. Growth experiments revealed extensive phenotypic variation both within and among sampling sites, but no site-specific differentiation in phenotypic plasticity. Model predictions suggest that seed can be sourced broadly across the landscape, providing ample diversity for adaptation to environmental change. Application of our landscape genomic model to E. melliodora restoration projects can identify genomic variation suitable for predicted future climates, thereby increasing the long term probability of successful restoration.
+As species face rapid environmental change, we can build resilient populations through restoration projects that incorporate predicted future climates into seed sourcing decisions. Eucalyptus melliodora is a foundation species of a critically endangered community in Australia that is a target for restoration. We examined genomic and phenotypic variation to make empirical based recommendations for seed sourcing. We examined isolation by distance and isolation by environment, determining high levels of gene flow extending for 500 km and correlations with climate and soil variables. Growth experiments revealed extensive phenotypic variation both within and among sampling sites, but no site-specific differentiation in phenotypic plasticity. Model predictions suggest that seed can be sourced broadly across the landscape, providing ample diversity for adaptation to environmental change. Application of our landscape genomic model to E. melliodora restoration projects can identify genomic variation suitable for predicted future climates, thereby increasing the long term probability of successful restoration.
 
 ## Introduction
 
@@ -46,11 +46,31 @@ Here we survey genomic variation in 275 individuals from 36 sites across the pre
 
 ## Results
 
-## Genotyping by sequencing
+### Genotyping by sequencing
 
 We selected leaf material from 39 sites, sampling 3–10 trees per site (Supplementary file 1). For each sample we Illumina sequenced a Genotyping by Sequencing (GBS) library (Elshire et al., 2011) and used a reference alignment approach to call genotypes. We conducted a preliminary analysis based on 123,227 SNPs and removed 69 samples due to greater than 60% missing data. Visual examination of a cluster dendrogram of genomic distance between samples showed that technical replicates cluster closely together (Figure 1—figure supplement 1). A preliminary principal coordinate analysis (PCoA) identified 19 samples that were strong genomic outliers (Figure 1—figure supplement 2), likely misidentified samples or recent hybrids. This result is consistent with minor morphological differences noted in these samples, as well as previous microsatellite work (Broadhurst et al., 2018). After removal of poor quality and geographic and genomic outlier samples, we re-ran the genotyping with the remaining 280 samples, resulting in 9,781 SNPs after filtering. A second preliminary PCoA identified an additional five outlier samples that we considered sufficiently differentiated from the main E. melliodora cluster to merit removal from downstream analyses (Figure 1—figure supplement 3). We removed these samples and reran the missing data filter. The final data set included 275 samples from 36 sites (Figure 1A), genotyped at 9,378 physically distinct SNPs (>300 bp apart).
 
-## Genomic analyses
+![Figure 1.](https://cdn.elifesciences.org/articles/31835/elife-31835-fig1-v2.jpg)
+
+**Figure 1.:** (A) A map of the geographic locations of the 36 sampling sites in southeastern Australia. Sampling locations are indicated with dots color coded in a rainbow gradient based on latitude. Black asterisks indicate the six sites also used for growth chamber experiments. The gray background shading indicates the species distribution polygon. (B) Principal coordinate analysis of the genomic distance between individual samples. Samples are color coded by site to match the map. The percentage on each axis indicates how much of the genomic variation between individuals was explained by the axis. Note that PCoA axes 1 and 2 are switched from standard for easier visualization of the latitudinal gradient. The inset shows the regression of PCoA axis 1 against latitude.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31835/elife-31835-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Dendrogram based on genomic distance between samples showing the strong clustering of technical replicates (denoted with an ‘R’ after the sample name and highlighted in yellow). Note that three of the technical replicates failed to pass quality control and are not included in the dendrogram. Additional sample pairs show strong clustering. In each of these cases, the individuals of the pair are from the same sampling site, indicating samples that are closely related.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/31835/elife-31835-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** PCoA of genomic distance between samples showing strong outliers that are likely misidentified samples or hybrids. The vertical line at 50 on PCoA axis 1 indicates the cutoff, with all samples to the right removed from further analyses.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/31835/elife-31835-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** PCoA of genomic distance between samples for the confirmed E. melliodora samples. The five samples on the left were deemed outliers and removed from further analyses.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/31835/elife-31835-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** PCoA of Fst between sampling sites. Sampling sites are labeled by name and color coded to match the map in Figure 1A. The percentage on each axis indicates how much of the variation in Fst between sampling sites was explained by the axis.
+
+### Genomic analyses
 
 To help determine an appropriate seed sourcing strategy, we examined the effects that geography and environment have on the distribution of genomic variation across the landscape. The genomic analyses focused on the effects on the genome as a whole, rather than individual genes. The study of individual genes is beyond the scope of the current study.
 
@@ -84,7 +104,7 @@ We also used the GDM model to compare the genomic composition under future envir
 
 These analyses suggest that for seed sourcing in woodland restoration, a model-based approach incorporating genomic variation, geographic distance, and environmental variables would allow for more genetic diversity and enable better matching of the selected genotypes to current and predicted future environmental conditions at the reforestation site.
 
-## Growth experiments
+### Growth experiments
 
 We conducted a climate controlled growth experiment to examine phenotypic variation among sampling sites and assay phenotypic plasticity. We grew seedlings from six sites, with six maternal lines per site, at two different climate regimes (average summer conditions and 5°C hotter than summer conditions). We measured variation in three seedling growth traits: seedling height, total leaf length, and relative height increment. For analysis of seedling height and total leaf length, we analyzed a total of 291 seedlings (from 32 maternal lines representing six sampling sites) that were determined to be well established at the five week measurement. For analysis of the relative height increment, we analyzed a total of 560 seedlings (from all 36 maternal lines) for which we were able to calculate this metric. There were four seedlings that were outliers for the relative height increment. These outliers had little effect on the results of the linear models, so we included them in the final analysis.
 
@@ -136,11 +156,11 @@ Our landscape genomic model can guide seed selection by empirically defining loc
 
 ## Materials and methods
 
-## Sample collection
+### Sample collection
 
 We obtained E. melliodora leaf samples from mature trees at 39 sampling sites—38 sites across the species' native range and a single site in Western Australia, well outside the species' natural distribution. We collected samples through a community science project described in Broadhurst et al., 2018 (Supplementary file 1). From each site, a citizen scientist collected leaf samples from up to 30 trees, put the samples in silica gel for drying, and shipped them to CSIRO for processing. In addition to leaf material, they also collected seeds from the sampled trees when available.
 
-## Genotyping by sequencing
+### Genotyping by sequencing
 
 We selected 3 to 10 trees per sampling site for sequencing and we processed each of the seven trees from Western Australia twice, using different leaves from the same tree to serve as technical replicates. No power analysis was used to determine sample size during the design of the study. Sample size was determined based on our experience and judgment, with consideration of the availability of samples. We sequenced these 379 samples using a modified Genotyping-By-Sequencing (GBS) protocol (Elshire et al., 2011). Briefly, we extracted genomic DNA from approximately 50 mg of leaf tissue using the Qiagen DNeasy Plant 96 Kit, digested with PstI for genome complexity reduction, and ligated with a uniquely barcoded sequencing adapter pair. We then individually PCR amplified each sample to avoid sample bias. We pooled samples in equimolar concentrations and extracted library amplicons between 350 and 600 bp from an agarose gel. We sequenced the library pool on an Illumina HiSeq2500 using a 101 bp paired-end protocol at the Biomolecular Resource Facility at the Australian National University, generating almost 260 million read pairs.
 
@@ -150,7 +170,7 @@ We used GATK's GenotypeGVCFs (v3.6–0-g89b7209, [McKenna et al., 2010]) for a p
 
 We reran GATK's joint genotyping on the final sample set. We again used GATK to remove variants that were indels, SNPs with no variation relative to the reference, and non-biallelic SNPs. We determined final filtering thresholds by examining parameter distributions. A locus was retained for subsequent analysis if ExcessHet < 13.0 (‘phred-scaled p-value for exact test of excess heterozygosity’), -0.3 < InbreedingCoeff < 0.3 (‘likelihood-based test for the inbreeding among samples’), MQ > 15.0 (‘Root Mean Square of the mapping quality of reads across all samples’), -10.0 < MQRankSum < 10.0 (‘Rank Sum Test for mapping qualities of REF versus ALT reads’), and QD > 8.0 (‘variant call confidence normalized by depth of sample reads supporting a variant’). We ran a second preliminary PCoA analysis to identify additional outlier samples. Finally, we used VCFtools (v0.1.12b, [Danecek et al., 2011]) to remove SNPs with greater than 60% missing data and thin the SNPs so that none were closer than 300 bp.
 
-## Genomic analyses
+### Genomic analyses
 
 To examine the genomic structure of E. melliodora and how it is influenced by geography, we conducted individual-based analyses. For these analyses, we converted the final genotypic data (a vcf file) to a sample-by-SNP matrix and imported it into a genind object (R adegenet v2.0.1, [Jombart, 2008]). We calculated the pairwise genomic distances between individuals using a euclidean distance in dist (R stats v3.1.2, [R Core Team, 2015]). To visualize the genomic distance among samples, we ran a PCoA using dudi.pco (R ade4 v1.7–4, [Dray and Dufour, 2007]). We plotted the first two PCoA axes, with samples colored in a rainbow gradient based on sample latitude. We calculated the linear regression and correlation between latitude and the first PCoA axis using lm (R stats 3.1.2, [R Core Team, 2015]). We calculated the geographic distance between samples based on their GPS coordinates using earth.dist (R fossil v0.3.7, [Vavrek, 2011]). We used a mantel test (R vegan v2.4–0, [Oksanen et al., 2016]), which examines the correlation between two distance matrices, to quantify the linear relationship between the genomic distance between individuals and the natural logarithm of the geographic distance.
 
@@ -168,7 +188,7 @@ To project the final GDM model onto the current environmental landscape, we firs
 
 We examined the implications of the GDM model for seed sourcing decisions by selecting two hypothetical reforestation sites. We compared predicted future GDM values at these two hypothetical reforestation sites to current climate GDM values across the landscape of potential seed sources. This enabled us to generate a map of the predicted genomic similarity of potential seed sources to the hypothetical reforestation sites under climate change.
 
-## Growth experiments
+### Growth experiments
 
 To examine the effect of provenance and environment on phenotype, we conducted experiments in climate controlled growth chambers under two different climate regimes. No power analysis was used to determine sample size during the design of the experiment. Sample size was determined based on our experience and judgment, with consideration of the availability of seed and space in the growth chambers. We selected six sites (11, B, D, G, T1, T3; asterisks in Figure 1A) and six maternal lines per site that had sufficient seed. For each of the 36 maternal lines, we grew a minimum of 64 replicate seedlings, with four seeds planted per pot (6.5 cm x 6.5 cm x 20 cm pots with soil that was 80% Martin's mix and 20% sand). We germinated seeds in climate controlled chambers with 12 hr of light at 25°C and 12 hr of dark at 15°C. We set lights to mimic summer morning light (photosynthetic photon flux 370 nm = 82, 400 nm = 83, 420 nm = 78, 450 nm = 37, 530 nm = 31, 620 nm = 72, 660 nm = 28, 735 nm = 34, 850 nm = 89, 6500 K = 94 µmol/m2/s). We watered all seeds twice daily to keep the soil moist. We culled to one seedling per pot 12–14 days after planting.
 
@@ -190,6 +210,6 @@ We visualized the distribution of values for the four response variables across 
 
 We examined local adaptation using a Qst-Fst analysis (R QstFstComp v0.2, [Gilbert and Whitlock, 2015]) for each phenotypic trait measured under each experimental condition. For each comparison, we estimated Qst under the model for offspring related as half-siblings through shared mothers and compared that value to the distribution of Fst values for the sampling sites included in the experiment. Statistical significance was determined based on the predicted null distribution of Qst-Fst using 10,000 simulation replicates.
 
-## Data access
+### Data access
 
 GBS sequencing reads are available at the NCBI Sequence Read Archive (SRA) (http://www.ncbi.nlm.nih.gov/sra) under BioProject PRJNA413429. Growth experiment data and scripts for genomic and phenotypic analyses are available at https://github.com/LaMariposa/emelliodora (Supple, 2018; copy archived at https://github.com/elifesciences-publications/emelliodora).

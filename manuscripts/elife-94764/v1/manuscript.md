@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/051fd9666 Department of Neurosciences, School of Medicine, Case Western Reserve University Cleveland United States
+1. Department of Neurosciences, School of Medicine, Case Western Reserve University Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))
 
 † Corresponding author
 

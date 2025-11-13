@@ -76,7 +76,7 @@ In addition to finding little evidence for the preservation of original proteina
 
 For details on the analytical methods of ATR FTIR, light microscopy, VPSEM, EDS, Py-GC-MS, HPLC amino acid analysis, radiocarbon AMS, DNA extraction, 16S rRNA amplicon sequencing, and epifluoresence microscopy see Appendix 1.
 
-## Fossil acquisition
+### Fossil acquisition
 
 Samples of Late Cretaceous fossil dinosaur bone, along with associated sediment and soil controls were obtained from the Dinosaur Park Formation (Late Campanian) in Dinosaur Provincial Park, Alberta, Canada (Appendix 1—figures 8–20, Appendix 1—table 2). The Dinosaur Park Formation is a well-sampled, alluvial-paralic unit deposited during a transgressive phase of the Western Interior Seaway. A diverse vertebrate fauna has been documented from the formation by more than a century of collection (Currie and Koppelhus, 2005). The bone samples were collected from a monodominant bonebed (BB180) of the centrosaurine Centrosaurus apertus (Ornithischia; Ceratopsidae), located 3 m above the contact with the underlying Oldman Formation (precise location data available at the Royal Tyrrell Museum of Palaeontology). The mudstone-hosted bone-bearing horizon is an aggregation of disarticulated but densely packed bones, with a vertical relief of 15–20 cm. Similar to other ceratopsid bonebeds from the same stratigraphic interval (Ryan et al., 2001; Eberth and Getty, 2005), the recovered skeletal remains are nearly exclusively from Ceratopsidae, and with all diagnostic ceratopsid material assignable to Centrosaurus apertus, with the site interpreted as a mass-death assemblage. Fossil material was collected under a Park Research and Collection Permit (No. 16–101) from Alberta Tourism, Parks and Recreation, as well as a Permit to Excavate Palaeontological Resources (No. 16–026) from Alberta Culture and Tourism and the Royal Tyrrell Museum of Palaeontology, both issued to CM Brown.
 
@@ -94,7 +94,7 @@ The aseptically collected Dinosaur Provincial Park fossil bone, mudstone, and so
 
 ## Results
 
-## Light microscopy, VPSEM, and EDS of HCl demineralized bone
+### Light microscopy, VPSEM, and EDS of HCl demineralized bone
 
 VPSEM and EDS of HCl demineralized, freeze-dried dinosaur bones revealed that vessels (and rare fibrous fragments) (Figure 1A,D–E,H–J) were white, Si-dominated with O present, contained holes, and were sometimes infilled with a slightly more prominent C peak internally. Vessels occurred alongside white quartz crystals, which had strong Si peaks and overall were elementally similar to the vessels, and smaller reddish minerals, originally presumed to be iron oxide or pyrite, but which had high-Si content with Ba also present.
 
@@ -102,11 +102,11 @@ Demineralization products differed from those of chicken bone (Figure 1C,G,M) an
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/46205/elife-46205-fig1-v2.jpg)
 
-**Figure 1.:** A–C) and VPSEM (D–G) images and EDS spectra (H–M) of HCl demineralized, freeze-dried samples.(A–C) Samples rested on carbon tape upon SEM stubs and the pitting was a result of prior VPSEM and EDS analysis. (A) Centrosaurus vessels and associated minerals. (B, F, L) Carcharias tooth. (C, G, M) Gallus. (D) Infilled Centrosaurus vessel. (E) Centrosaurus vessel, fibrous material along the center of the vessel, and associated reddish minerals around the vessel. (H) Centrosaurus vessel exterior from D. (I) Centrosaurus vessel infilling from D. (J) Associated reddish mineral in Centrosaurus. (K) Centrosaurus fibrous material from E. Centrosaurus samples are matrix-surrounded subterranean bone.
+**Figure 1.:** (A–C) Samples rested on carbon tape upon SEM stubs and the pitting was a result of prior VPSEM and EDS analysis. (A) Centrosaurus vessels and associated minerals. (B, F, L) Carcharias tooth. (C, G, M) Gallus. (D) Infilled Centrosaurus vessel. (E) Centrosaurus vessel, fibrous material along the center of the vessel, and associated reddish minerals around the vessel. (H) Centrosaurus vessel exterior from D. (I) Centrosaurus vessel infilling from D. (J) Associated reddish mineral in Centrosaurus. (K) Centrosaurus fibrous material from E. Centrosaurus samples are matrix-surrounded subterranean bone.
 
 These results show that the dinosaur bone yielded different structures when the bone apatite was removed compared to the more recent bone (i.e. primarily vessels as opposed to large fibrous masses). Furthermore, the dinosaur vessels are relatively inorganic in composition compared to the more recent bone, consistent with a mineralized biofilm (Schultze-Lam et al., 1996; Decho, 2010).
 
-## ATR FTIR of HCl demineralized bone
+### ATR FTIR of HCl demineralized bone
 
 ATR FTIR of a HCl demineralized, freeze-dried vessel from subterranean Centrosaurus bone revealed somewhat poorly resolved, broad organic peaks (Figure 2C) that were close in position to peaks that might be expected from various CH, CO, and amide bonds, as well as water, phosphate, and potentially carbonate and silicate bonds (Lindgren et al., 2011; Surmik et al., 2016; Lee et al., 2017); also see publicly available NIST libraries). Pleistocene-Holocene shark tooth (Figure 2B) and modern chicken bone (Figure 2A) demineralization products similarly revealed peaks consistent with organic and phosphatic peaks, and the chicken bone had particularly strong organic peaks relative to phosphate. Maintaining close contact of the sample to the Ge crystal was difficult, resulting in the poorly resolved peaks, especially in the shark tooth sample.
 
@@ -116,7 +116,7 @@ ATR FTIR of a HCl demineralized, freeze-dried vessel from subterranean Centrosau
 
 These results show how, although potentially poorly resolved, the ATR FTIR peaks in the dinosaur bone demineralization products could be consistent with various organic bonds present in more recent bone demineralization products. However, note that these bonds are relatively simple and could therefore be present in various organic molecules. Furthermore, they are not necessarily ancient, endogenous, or protein-derived.
 
-## Py-GC-MS
+### Py-GC-MS
 
 Data-rich Py-GC/MS results are primarily used here as a fingerprinting method via total ion chromatograms in order to complement the other analyses of this study. Centrosaurus bone had a low pyrolysate yield (Figure 3B) as evidenced by the significant column bleed at the end of the run and contained mostly early eluting compounds. Similarly, humic acid also contained many early eluting pyrolysis products (Figure 3D). The pyrogram for Centrosaurus bone does not match that of modern collagen-containing bone (Figure 3A), which contained many clear protein pyrolysis products such as nitriles and amides, and was most similar to mudstone matrix (Figure 3C).
 
@@ -128,15 +128,15 @@ Subterranean Centrosaurus bone pyrolysates included alkylated benzenes and some 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/46205/elife-46205-fig4-v2.jpg)
 
-**Figure 4.:** Centrosaurus bone ethanol rinsed before powdering.Potential doublets indicative of n-alkanes/n-alkenes are weakly apparent at best. A, m/z = 55. B, m/z = 57. C, m/z = 83. D, m/z = 85.
+**Figure 4.:** Potential doublets indicative of n-alkanes/n-alkenes are weakly apparent at best. A, m/z = 55. B, m/z = 57. C, m/z = 83. D, m/z = 85.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/46205/elife-46205-fig5-v2.jpg)
 
-**Figure 5.:** Centrosaurus bone ethanol rinsed before powdering.Doublets indicative of n-alkanes/n-alkenes are relatively more abundant than in Figure 4. A, m/z = 55. B, m/z = 57. C, m/z = 83. D, m/z = 85..
+**Figure 5.:** Doublets indicative of n-alkanes/n-alkenes are relatively more abundant than in Figure 4. A, m/z = 55. B, m/z = 57. C, m/z = 83. D, m/z = 85..
 
 These results show how the dinosaur bone lacked any clear pyrolysis products indicative of high levels of protein preservation and instead had a chemical composition that more closely resembles potential environmental sources (i.e. mudstone matrix or humic acids) than bone proteins. Homologous series of n-alkane/n-alkene doublets may signify the presence of a kerogen-like substance which could potentially be an ancient lipid-derived geopolymer in the dinosaur bone.
 
-## HPLC amino acid analysis
+### HPLC amino acid analysis
 
 Interpretation of amino acid data is restricted here to only those samples that were prepared to counter peak suppression (KOH-treated; Dickinson et al., 2019), although examination of the conventionally prepared (High et al., 2016) samples results in similar patterns, albeit with more noise (Appendix 1—figures 21–28, Appendix 1—tables 3–13). Matrix-surrounded subterranean Centrosaurus bone had a total hydrolysable amino acid (THAA) compositional profile that did not match collagen (Figure 6A,F). The matrix-surrounded subterranean Centrosaurus bone appeared to be dominated by Gly, with Tyr also prominent, while being highly depleted in all the other amino acids. Surface-eroded Late Cretaceous bone from the same outcrop showed a different THAA composition to the matrix-surrounded subterranean Centrosaurus bone, even when examining bone eroded out of the BB180 quarry itself (Figure 6B,F). Furthermore, the uncovered subterranean Centrosaurus bone did not match the matrix-surrounded subterranean bone and was similar to the surface-eroded Late Cretaceous bone in THAA composition. Relative Gly concentration in surface-eroded Late Cretaceous bone was not as high as in the matrix-surrounded subterranean Centrosaurus bone, where Gly dominated the compositional profile. The surface-eroded Late Cretaceous bone showed somewhat more similarity to collagen in THAA compositional profile than did the matrix-surrounded subterranean Centrosaurus bone, but ultimately did not align (Figure 6C,F). These results suggest that not only did the subterranean dinosaur bone not have an amino acid composition similar to collagen (i.e. Gallus and reference bone), but also that exposure to the surface changes the amino acid profile within these Cretaceous fossils.
 
@@ -152,49 +152,321 @@ Subterranean Centrosaurus bone had a far lower THAA concentration (summed total 
 
 Late Cretaceous bone tended to be L-amino acid dominated when amino acids were above detection limit (Table 1). Surface-eroded Late Cretaceous fossil bone seemed to show more variability in D/L values than the subterranean bone samples. Similar to the samples described here, other non-aseptically collected, room-temperature-stored Jurassic and Cretaceous surface-eroded bones have low amino acid concentrations and lack significant concentrations of D-amino acids (Appendix 1—tables 3–4). These low levels of racemization suggest that the amino acids in the dinosaur bone are not particularly ancient.
 
+**Table 1.**
+ Comparison of Late Cretaceous, Pleistocene-Holocene, and modern amino acid racemization values of the KOH-treated samples.NA indicates that amino acid concentration was below detection limit.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Sample treatment</th>
+      <th>Asx D/L</th>
+      <th>Glx D/L</th>
+      <th>Ser D/L</th>
+      <th>Ala D/L</th>
+      <th>Val D/L</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Matrix-surrounded subterranean Centrosaurus bone</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ethanol rinsed before powdering, gelated</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td colspan="2">Subterranean Centrosaurus bone uncovered from matrix before collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ethanol rinsed before powdering, gelated</td>
+      <td>0.21</td>
+      <td>0.55</td>
+      <td>0</td>
+      <td>0.21</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Adjacent mudstone matrix of subterranean Centrosaurus bone</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ethanol rinsed before powdering, gelated</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>0.30</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Surface-eroded Centrosaurus bone from BB180</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ethanol rinsed before powdering, gelated</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Surface-eroded Late Cretaceous bone on same ridge and ~ 21 m above BB180</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ethanol rinsed before powdering, gelated</td>
+      <td>0</td>
+      <td>0.95</td>
+      <td>0</td>
+      <td>0.32</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td colspan="2">Topsoil on same ridge and ~ 64 m above BB180</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ethanol rinsed before powdering, gelated</td>
+      <td>0.14</td>
+      <td>0.14</td>
+      <td>0.05</td>
+      <td>0.09</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td colspan="2">Pleistocene-Holocene surface-eroded Carcharias teeth</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3"></td>
+      <td>Unrinsed</td>
+      <td>0.21</td>
+      <td>0.04</td>
+      <td>0.09</td>
+      <td>0.03</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Ethanol rinsed before powdering</td>
+      <td>0.51</td>
+      <td>0.15</td>
+      <td>0.30</td>
+      <td>0.16</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Ethanol rinsed before powdering</td>
+      <td>0.53</td>
+      <td>0.15</td>
+      <td>0.30</td>
+      <td>0.17</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td colspan="2">Modern Gallus bone</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Unrinsed</td>
+      <td>0.05</td>
+      <td>0.03</td>
+      <td>0</td>
+      <td>0.02</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ethanol rinsed before powdering</td>
+      <td>0.06</td>
+      <td>0.03</td>
+      <td>0</td>
+      <td>0.02</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 The adjacent mudstone matrix did not match the subterranean Centrosaurus bone in THAA compositional profile (Figure 6D,F). Surface-eroded Late Cretaceous bone showed some degree of similarity to topsoil in THAA composition (Figure 6E,F), as did the various mudstone samples. Matrix-surrounded subterranean Centrosaurus bone showed the most different THAA compositional profile within the study (i.e. greatest separation from other data points in PC space). All these groups plotted separately in the PCA from modern collagen (Figure 6F). The greatest variation between the samples of this study was in relative Gly and Tyr concentrations, with the matrix-surrounded subterranean Centrosaurus bone tending to have notably higher Gly and Tyr than collagen. These results suggest that subterranean dinosaur bone had a different amino acid composition than the surrounding mudstone and that the amino acid composition changes upon surface exposure, approaching that of topsoil.
 
 Topsoil showed a greater THAA concentration than subterranean and surface-eroded Centrosaurus bones, but not as high as modern chicken bones (Figure 7A). Mudstone tended to have a very low THAA concentration, even compared to some of the Late Cretaceous bone samples (Figure 7B). The highest THAA concentration in mudstone appeared to be observed in the mudstone matrix adjacent to the subterranean Centrosaurus bone. When amino acids were above detection limit, mudstone was L-amino acid dominated, similar to the Late Cretaceous bone (Table 1). Topsoil, on the other hand, showed consistently moderate levels of racemization. These results show that topsoil contained a high amino acid concentration with relatively high rates of protein degradation, indicative of active biological accumulation and recycling, while mudstone contained low concentrations with very recent amino acids, indicative of low residence times of proteins within the mudstone. The fossil bones appeared to show instances of relatively greater accumulation of amino acids than the mudstone but with very recent amino acids, indicative of preferential localization of biologically active amino acids to the bone compared to the mudstone, but with less amino acid content than topsoil.
 
 Pleistocene-Holocene surface-eroded shark teeth had THAA compositional profiles that closely matched collagen (Figure 6A,C,F) and fairly high amino acid concentration with THAA concentrations between those of subterranean Centrosaurus bone and modern chicken bone (Figure 7A). Pleistocene-Holocene surface-eroded shark teeth, unlike the Late Cretaceous bone and mudstone, had consistently high racemization (Table 1), even more so than the topsoil sample. Ethanol rinsing appeared to lower amino acid concentration in the shark teeth but did not strongly affect the THAA compositional profile (Figures 6A,C,F and 7A). These results suggest that the Pleistocene-Holocene teeth contained detectable, ancient amino acids consistent with endogenous collagen.
 
-## Radiocarbon AMS
+### Radiocarbon AMS
 
 Total organic carbon (TOC) content was higher in the subterranean and surface-eroded Centrosaurus bone than the matrix, even the directly adjacent matrix, and was comparable to that found in the topsoil (Table 2). However, the organic carbon content in the Centrosaurus bones was significantly lower than the 82–71 ka Yarnton bovine bone sample known to contain well-preserved (radiocarbon-dead) collagen (Cook et al., 2012). TOC in the Centrosaurus bone was not found to be radiocarbon dead, but did exhibit lower F14C values than both the mudstone and especially the topsoil. Assuming all endogenous bone C is radiocarbon ‘dead’, based on these F14C values, a simple two-end-member mixing model would suggest that ~26% of the C in subterranean Centrosaurus bone originates in the adjacent mudstone matrix (for formula, see Appendix 1 under the section entitled Carbon analysis).
 
+**Table 2.**
+ Carbon data from Late Cretaceous fossil bone, mudstone, topsoil, and younger bone.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>% mass after HCl demineralization</th>
+      <th>C % (organic fraction)</th>
+      <th>F14C (organic fraction)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Matrix-surrounded subterranean Centrosaurus bone core (surface scraped prior to powdering)</td>
+      <td>53.98</td>
+      <td>2.777</td>
+      <td>0.0149</td>
+    </tr>
+    <tr>
+      <td>Adjacent mudstone matrix of subterranean Centrosaurus bone</td>
+      <td>82.27</td>
+      <td>1.32</td>
+      <td>0.0573</td>
+    </tr>
+    <tr>
+      <td>Topsoil on same ridge and ~ 64 m above BB180</td>
+      <td>91.63</td>
+      <td>2</td>
+      <td>0.766</td>
+    </tr>
+    <tr>
+      <td>Mudstone on same ridge and ~ 23 m above BB180</td>
+      <td>90.38</td>
+      <td>0.89</td>
+      <td>0.0628</td>
+    </tr>
+    <tr>
+      <td>Surface-eroded Late Cretaceous bone core on same ridge and ~ 21 m above BB180 (surface scraped prior to powdering)</td>
+      <td>43.4</td>
+      <td>1.63</td>
+      <td>0.0422</td>
+    </tr>
+    <tr>
+      <td>Yarnton bovine right femur (82–71 ka, Cook et al., 2012)</td>
+      <td>16.73</td>
+      <td>44.9</td>
+      <td>0.0056*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This sample was used for blank correction in the AMS analyses, therefore this value is not blank-subtracted._
+
 The fossil dinosaur bone therefore yielded a TOC content similar to relatively rich environmental carbon sources, such as topsoil, but not as high as more recent bone proteins. Although, some of the C in the fossil dinosaur bone is potentially ancient, there is still a sizable contribution of recent C from the immediate environment, consistent with the presence of a microbiome.
 
-## Fluorescence microscopy, DNA extraction, and 16S rRNA gene amplicon sequencing
+### Fluorescence microscopy, DNA extraction, and 16S rRNA gene amplicon sequencing
 
 DNA concentration was about 50 times higher in subterranean Centrosaurus bone than in adjacent mudstone matrix (Table 3; Appendix 1—table 25). PI staining for DNA on EDTA demineralized Centrosaurus bone revealed multi-cell aggregates forming organic vessel and fibrous conglomerate structures that fluoresce red (Figure 8A–D). The DNA concentration in the bone indicates a cell concentration of ~4×108 cells/g (calculation of cell abundance from DNA based on that of Magnabosco et al., 2018; also see Appendix 1—table 26). This is fairly similar to the observed THAA concentration indicating ~3×108 cells/g (calculation of cell abundance from total amino acids based on that of Onstott et al., 2014 and Lomstein et al., 2012), consistent with the idea that the amino acids within the bone are likely to be largely cellular (i.e. lipid-bound within living organisms) due to the discrepancy between DNA and amino acid stability over time. The DNA concentration in the adjacent mudstone matrix indicate a cell concentration of ~5×106 cells/g, but the observed THAA concentration is consistent with a cell concentration of ~2×109 cells/g. The greater amino acid abundance is a common feature of marine sediment and likely represents the amino acids of a microbial necromass (e.g. Braun et al., 2017). The adjacent mudstone matrix contains amino acids that seem to largely represent dead prokaryote remains, unlike the amino acids in the dinosaur bone that seem to largely represent a more recent, likely living community in comparison (i.e. the adjacent mudstone matrix has a greater amino acid concentration relative to the DNA concentration than does the dinosaur bone). These results suggest that the subterranean dinosaur bone was enriched in cell-bound DNA relative to the mudstone matrix. Furthermore, EDTA-extracted structures appeared to contain DNA from cells that aggregate within these structures, consistent with a modern biofilm; the DNA itself had possibly been exposed due to the EDTA treatment.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/46205/elife-46205-fig8-v2.jpg)
 
-**Figure 8.:** Centrosaurus bone.(A–B) Fibrous material. (C–D) Vessel. (A, C) Transmission light. (B, D) Fluorescence.
+**Figure 8.:** (A–B) Fibrous material. (C–D) Vessel. (A, C) Transmission light. (B, D) Fluorescence.
+
+**Table 3.**
+ DNA concentrations in mudstone matrix and bone quantified with Qubit fluorometry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>Average DNA concentration (ng/μL)</th>
+      <th>Total DNA (ng)</th>
+      <th>DNA per 1 g of bone or mudstone (ng/g)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Matrix-surrounded subterranean Centrosaurus bone core (surface scraped prior to powdering)</td>
+      <td>0.79</td>
+      <td>3965</td>
+      <td>793</td>
+    </tr>
+    <tr>
+      <td>Adjacent mudstone matrix of subterranean Centrosaurus bone</td>
+      <td>0.03</td>
+      <td>164</td>
+      <td>16.4</td>
+    </tr>
+    <tr>
+      <td>Laboratory blank</td>
+      <td>Below detection (&lt;0.01*)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Note: the detection limit corresponds to the actual concentration of DNA in the assay tube (0.0005 ng/µL) after 200 times dilution of the original sample according to the manufacturer’s protocol._
 
 The 16S rRNA gene amplicon sequencing revealed the predominance of Actinobacteria and Proteobacteria in subterranean Centrosaurus bone. Sequences affiliated with classes Nitriliruptoria and Deltaproteobacteria were more abundant relative to adjacent mudstone or even the surface scrapings from the bone itself (Figure 9). The majority of the sequences within Deltaproteobacteria were identified as belonging to the family Desulfurellaceae, which contains some sulfur-respiring species. However, the short reads prevented species level identification. In Centrosaurus bone, about 30% of sequences were phylogenetically close to the genus Euzebya, a deeply branching, aerobic, marine Actinobacterium (Appendix 1—figure 58). Furthermore, PCA of the species-level percentage data from these eight samples shows that the differences between the interior bone cores and the mudstone or bone surface scrapings is greater than the difference between the mudstone and bone surface scrapings (Appendix 1—figure 60). Likewise, one-way permutational multivariate analysis of variance (PERMANOVA) performed in PAST3 software of species-level sequence percentages of the two replicates of each of the four sample categories in Figure 9 yielded significant differences (Euclidean similarity index; 9999 permutations; F = 53.16; p-value=0.0084), with greater similarity between the mudstone and bone surface scrapings than between either of these and the interior bone core samples (Appendix 1—table 27). These results suggest that the subterranean dinosaur bone contained a different microbial community than the surrounding mudstone matrix with some species potentially impacting fossil bone taphonomy and chemical composition. Our initial sequence data, furthermore, suggests that some of these microbes might represent rare, poorly understood taxa.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/46205/elife-46205-fig9-v2.jpg)
 
-**Figure 9.:** Centrosaurus bone and adjacent mudstone matrix.There are two replicates per sample. Classes with <1% representation in all replicates and samples are combined into an ‘other’ category.
+**Figure 9.:** There are two replicates per sample. Classes with <1% representation in all replicates and samples are combined into an ‘other’ category.
 
 ## Discussion
 
-## Evidence for recent, exogenous organic material in dinosaur bones
+### Evidence for recent, exogenous organic material in dinosaur bones
 
-## Structure and elemental composition
+#### Structure and elemental composition
 
 The occasional infilling observed in the HCl demineralized dinosaur bone vessels with greater C concentration in the interior compared to the exterior of the vessel is consistent with a growing biofilm, given the assumption that a biofilm would grow inside the porous spaces of the bone while preserved vessels might be expected to be hollow.
 
 The Si dominance of the HCl demineralization products from the dinosaur bone likely suggest that they are at least partly silicified. HCl demineralization (especially the relatively intensive demineralization used on the samples that underwent microscopy, EDS, and ATR FTIR) may favor mineralized biofilm retrieval (assuming that low pH might degrade organically preserved biofilms), explaining why all the observed demineralization products of the dinosaur bone have high-Si content under EDS (especially in comparison to the presumably largely organic vessels and fibrous masses revealed using EDTA demineralization). If this is the case then it would indicate that any original organics are significantly more susceptible to acid (i.e. of different composition) than the organic masses in the identically treated younger bone samples, which survive well. It seems likely that mineral infilling in the Centrosaurus bone is largely of silicates, which have partly replaced the originally organic vessel-like structures, as well as, potentially, some barite or gypsum with minimal amounts of iron oxide or pyrite. Some of these inorganic compounds might contribute to the color of the fossils. The fibrous material from HCl demineralization of the dinosaur bone may be silicified biofilm with a collagenous texture imprinted from the surrounding apatite matrix or may simply be a small misinterpreted quartz crystal. A silicified biofilm might be a result of unique environmental conditions (either early or late in the taphonomic history) or microbial communities that these fossils experienced. Therefore, examining fossils from different localities, climates, lithologies, and taphonomic histories is vital to understanding variation in how biofilms in fossil bone might be mineralized.
 
-## Pyrolysis products
+#### Pyrolysis products
 
 Humic acids are common in soils and contain low molecular weight, aromatic components (Hatcher et al., 1981; Sutton and Sposito, 2005), and these were also detected in the humic acid standard, meaning that the early eluting, more volatile (i.e. lower boiling point), total ion chromatogram peaks from Py-GC/MS (e.g. the detected aromatic hydrocarbons) of the Centrosaurus bone may come from sources other than proteins.
 
 Py-GC/MS evidence of kerogen in the form of a homologous series of n-alkane/n-alkene doublets appears to have been detected in the Centrosaurus bone, but the doublets were very weak. Variation in the visibility of the doublets between the matrix-surrounded and uncovered subterranean Centrosaurus bone samples is likely representative of intra-bone variation in kerogen content rather than contamination since a strong kerogen signature is not likely to result from exposure to air or the sterilized excavating equipment. Future analyses should examine these samples by mass spectrometry under selected ion monitoring (SIM) scanning mode with comparison to authentic standards of n-alkane/n-alkenes or modify extraction methods prior to analysis in order to more clearly observe these potential doublets. Kerogen forming from in situ polymerization of endogenous labile lipids such as cell membranes might not be expected to preserve the tubular or hollow shape of ‘soft tissues’ such as vessels or cells in bone with high fidelity since initial hydrolytic cleavage from a hydrophilic group will eliminate the amphiphatic nature of these molecules and make them incapable of retaining their bilayer configuration in aqueous solution (Rand and Parsegian, 1989). Thus, cell membranes might lose their structure, and presumably, the tubular or hollow structure of vessels or cells might be influenced as well. The possibility that the resulting kerogen could contribute to a non-tubular, low-resolution organic mold of such ‘soft tissues’ formed in the cavities of the bone’s inorganic matrix should be considered in cases in which bone demineralization products are not mineralized. However, EDS revealed prevalent mineralization of the structures studied here, a common observation for such ‘soft tissue’ remains (Schweitzer et al., 2014). This mineralization is more consistent with a biofilm origin (Schultze-Lam et al., 1996; Decho, 2010) rather than a kerogen origin. Furthermore, kerogen-like aliphatic pyrolysis products have previously been detected using Py-GC-MS from the humic fraction of soil as well as the humic acid standard, potentially derived from stable plant biopolymers from the cuticle (Saiz-Jimenez and De Leeuw, 1987), so kerogen-like material in the fossil bone could be derived, at least partly, from soil contaminants rather than being derived from endogenous lipids.
 
-## Amino acids
+#### Amino acids
 
 The dominance of L-amino acids in the dinosaur fossils suggests significant leaching and degradation of endogenous amino acids, as well as relatively recent amino acid input. There appears to be a trend toward greater concentration of amino acids in the dinosaur bone compared to the mudstone, suggesting that the fossil bone might be preferentially concentrated in exogenous amino acids. Furthermore, Cretaceous bone samples, as in the uncovered subterranean Centrosaurus bone and the surface-eroded Late Cretaceous bone on the same ridge and ~21 m above BB180, show evidence of bacterial contamination. Their greater Glx D/L values than Asx D/L values are the reverse of that expected due to chemical racemization (Smith and Evans, 1980; Crisp et al., 2013), but in association with racemized Ala in these samples, they support the presence of peptidoglycans from bacterial cell walls, which contain D-amino acids, particularly D-Glu and D-Ala, in vivo (Höltje, 1998; Lam et al., 2009). This is consistent with the observed dominance of gram-positive Actinobacteria in the Cretaceous bone microbiome, since 26–75 wt% of the total cell dry weight of gram-positive bacteria comprises cell wall polymers and 7–56 wt% of the cellular amino acids comprises peptides from the cell wall peptidoglycan and teichoic acid and from S-layer glycoproteins (Onstott et al., 2014).
 
@@ -204,41 +476,41 @@ Variability in THAA concentration in the surface-eroded Late Cretaceous bones is
 
 The most surprising result might be that the uncovered subterranean Centrosaurus bone sample had a THAA composition more closely matching surface-eroded bone than the matrix-surrounded subterranean bone, and also had an elevated THAA concentration compared to the matrix-surrounded subterranean bone, suggesting that even relatively brief aerial exposure might lead to rapid contamination of the subterranean microbial community by surface microbes. The high THAA concentration in the adjacent mudstone matrix of the subterranean bone compared to the other mudstone samples may indicate that bone provides a nutrient source that encourages microbial proliferation.
 
-## Radiocarbon
+#### Radiocarbon
 
 As the C in the dinosaur bone is not radiocarbon dead, this suggests an influx of more modern C (i.e. not radiocarbon dead) into the fossil. However, lower F14C in the dinosaur bone compared to the mudstone or topsoil suggests some biologically inaccessible, old, and possibly endogenous C within the fossils. One possibility for this pattern is kerogen derived from in situ polymerization of endogenous dinosaur labile lipids, although this type of aliphatic geopolymer has only been weakly detected in the Centrosaurus bones through Py-GC-MS (potentially due to methodology rather than low concentration), and it should be kept in mind that the surrounding mudstone matrix yields a series of n-alkanes/n-alkenes after pyrolysis. Exogenous C could also become metabolically inaccessible in bone through biofilm mineralization, as suggested by the EDS data, allowing for 14C depletion. Additionally, biofilm formation and proliferation in bones could trap mobile organic C from sediment and groundwater at a rate faster than C exits the bone when not colonized by a biofilm. This would allow for a lower F14C steady state to be reached during the time it takes C outflux to increase in order to match C influx, assuming a simple 1-box model. Perhaps a combination of these three mechanisms influences F14C.
 
-## Nucleic acids
+#### Nucleic acids
 
 Analyses of nucleic acids reveal a diverse, unusual microbial community within the dinosaur bone, even when compared to the immediate mudstone matrix or the exterior surface of the bone, as evidenced by a strong enrichment in DNA and differing community composition in the bone relative to the surrounding matrix. The microbial community from the EDTA demineralized bone was similar to that of the non-demineralized bone, important since EDTA can be used as the demineralizing agent to study the ‘soft tissues’ of fossil bone (Cleland et al., 2012). Thus, bone samples treated with common methods of demineralization in other taphonomic studies (e.g. antibody-based studies) are also amenable for nucleic acid analyses that can be used to help test the endogeneity of organics (i.e. whether there are microbes present that could possibly explain the presence of specific organics).
 
 PI staining of soft tissues is very likely due to cell rupture from exposure to the high concentrations of EDTA used during demineralization (i.e. non-intact cells). The dominance of the aerobic Euzebya is consistent with the shallow depth of burial, although the presence of the Deltaproteobacteria lineages may indicate that the microenvironment inside the fossil bone creates anaerobic niches to support anaerobic metabolism. Further work is required to understand the relationship of the observed mineral phases and the microbiome. The fact that Actinobacteria were the most common microbes in the dinosaur bone based on 16S rRNA amplicon sequencing is reminiscent of the results from a 38 ka Neanderthal bone, where the majority of detected DNA sequences derived from non-ancient Actinobacteria (Zaremba-Niedźwiedzka and Andersson, 2013). The high cell concentrations of ~5×108 cells/g in the subterranean Centrosaurus bone and the consistency in the DNA and amino-acid-based estimates indicates a microbial community that is more substantial than that of the adjacent mudstone.
 
-## Lack of evidence for ancient, endogenous proteins in dinosaur bones
+### Lack of evidence for ancient, endogenous proteins in dinosaur bones
 
-## Structure and elemental composition
+#### Structure and elemental composition
 
 HCl demineralization products of dinosaur fossil bone differ structurally and elementally from the Pleistocene-Holocene and modern samples when examined using light microscopy and VPSEM. Low-pressure conditions of VPSEM and EDS, as well as charging during these analyses, may have affected subsequent light microscopy observation, but this is mitigated by the fact that light microscopy was done under a comparative framework between the samples.
 
 The Pleistocene-Holocene shark tooth and modern chicken bone demineralize to reveal large organic masses (i.e. rich in C and O) consistent with collagen protein as evidenced by discernable N and S peaks, unlike the much older dinosaur bone demineralization products. The relatively more pronounced S peak in the shark tooth as compared to the chicken bone might indicate sulfurization of the collagen protein or some other taphonomic incorporation of inorganic S from the environment into the tooth, the latter being consistent with pyrite. After all, the teeth are the only fossils in this study to derive from a marine depositional environment, so the potential for pyrite formation under euxinic conditions, for example, would not be surprising. The high Fe content in the shark tooth suggests some taphonomic mineral accumulation (e.g. iron oxide or pyrite) and may explain some of the dark discoloration in the teeth, potentially alongside a browning effect caused by the taphonomic formation of melanoidin-like N-heterocyclic polymers known as advanced glycoxidation/lipoxidation end products. Raman spectroscopy has not only been used to suggest that these N-heterocyclic polymers are present in ancient teeth, bone, and eggshell, but also that they lead to brown staining (Wiemann et al., 2018b). However, it should be kept in mind that, given the open system behavior of bone, detected polymers could derive from exogenous sources of polypeptides and lipids/polysaccharides (e.g. either ancient or more recent infiltrating microbes), and the presence of any amide bands in Raman spectra is likely insufficient evidence for endogenous oligopeptide preservation (see a similar discussion of amide bands in FTIR below) especially in association with polymers that form as a result of protein degradation (Singh et al., 2001; Vistoli et al., 2013).
 
-## IR active bonds
+#### IR active bonds
 
 Similar, albeit higher resolution, FTIR peaks to those detected here are used as evidence for purported dinosaur collagen (Lindgren et al., 2011; Surmik et al., 2016; Lee et al., 2017), but, it should be noted that such results are not conclusive of collagen. Detection of peaks such as those associated with amide bonds may not necessarily indicate intact proteins/peptides, since amide bonds are not specific to peptides and can be found in protein degradation products such as diketopiperazines (Chiavari and Galletti, 1992; Martins and Carvalho, 2007; Saitta et al., 2017b). CH and CO bonds are even more widely distributed, found in a variety of organic molecules. Some researchers have indeed attempted to observe how ATR FTIR spectra of bone collagen is modified when carbonaceous contamination (e.g. applied organics like consolidants, humic acids, or soil carbonate) is present (D'Elia et al., 2007), but it can be tempting for taphonomists to observe organic peaks in such IR spectra and attribute them to endogenous protein (Lindgren et al., 2011; Surmik et al., 2016; Lee et al., 2017). Even if such bonds are from proteins, without deconvolution of peaks to produce fingerprints of protein secondary structure (Byler and Susi, 1986), one cannot say from the presence of such organic bonds alone that the protein is collagen, let alone endogenous or ancient. Such deconvolution could be performed on the data collected here in the future.
 
 Despite the strong HCl demineralization treatment, it appears that some phosphate remained in the samples. It has been shown experimentally and theoretically that variation in the phosphate bands derived from ATR FTIR of bone can be affected by bone collagen content, with low-frequency symmetry of the phosphate peaks more apparent in bone containing lower amounts of collagen (Aufort et al., 2018). The observation of sharper, more symmetric phosphate peaks in the Centrosaurus bone compared to the younger bone might suggest lower relative collagen content. However, it should be noted that the described pattern in phosphate peak alteration was observed using a diamond ATR, and this method can result in differences in spectra from those made using Ge ATR, as was done here, due to different refractive indices of the crystals (Aufort et al., 2016), so such a comparison may be inappropriate. Additionally, it would be advisable to obtain ATR FTIR data from non-demineralized samples before trying to interpret the results here, since it is unclear how HCl demineralization might affect this correlation between phosphate peak symmetry and collagen content. Regardless, it might be worth discussing symmetry in the phosphate peaks on any future papers that attempt to use ATR FTIR data as evidence for purported Mesozoic collagen. Future work on the specimens analyzed here should also attempt ATR FTIR mapping on polished sections to examine how peaks are spatially distributed, perhaps in combination with time-of-flight secondary ion mass spectrometry (TOF-SIMS).
 
-## Pyrolysis products
+#### Pyrolysis products
 
 The dinosaur fossil bones show greater chemical resemblance in their total ion chromatograms to mudstone than to fresh, modern bone and appear somewhat low in organics relative to fresh, modern bone. Although compounds such as benzenes are protein pyrolysis products, the detected prominent pyrolysis products in the Centrosaurus bone are relatively simple and are not as indicative of high proteinaceous content as would be amides (as in the chicken bone studied here), succinimides, or piperazines (Saitta et al., 2017b), or even less protein-specific pyrolysis products such as the prominent nitriles detected in the chicken bone sample. Regardless, the presence of protein-related pyrolysis products does not indicate that these proteins are necessarily ancient, endogenous, or collagenous.
 
-## Amino acids
+#### Amino acids
 
 Amino acids in the dinosaur bone are dominated by proteins other than collagen and appear to be relatively recent. Low amino acid concentrations, low D-amino acid concentrations, and THAA compositional profiles that do not match collagen, despite high Gly content, suggest that the majority of the endogenous collagen protein has been lost from the dinosaur fossils. Changes in the THAA compositional profile as a result of taphonomic alteration and preferential loss of less stable amino acids would be expected in samples of this age, with any remaining endogenous protein likely to have low levels of sequence and higher order structural preservation, with a consequent impact on the preservation of epitopes for antibodies.
 
 In contrast to the Late Cretaceous bone, the much younger shark teeth from the Pleistocene-Holocene have relatively high amino acid concentrations whose THAA compositional profiles are consistent with a dominance of collagen. Since ethanol rinsing did not change the THAA compositional profile of shark teeth, this suggests that the majority of the organics are deriving from insoluble collagen with fairly well preserved higher order structure, rather than highly fragmented peptides with greater mobility. This observation is consistent with the results from light microscopy and VPSEM, which revealed fibrous masses. The shark teeth also have relatively high racemization, a testament to the antiquity of the amino acids as would be expected from endogenous proteins.
 
-## Conclusions
+### Conclusions
 
 Previous studies have often reported purported endogenous ‘soft tissues’ within fossil dinosaur bone (Pawlicki et al., 1966; Schweitzer et al., 2005a; Schweitzer et al., 2005b; Schweitzer et al., 2007a; Schweitzer et al., 2007b; Schweitzer et al., 2008; Schweitzer et al., 2009; Schweitzer et al., 2013; Schweitzer et al., 2014; Schweitzer et al., 2016; Asara et al., 2007; Organ et al., 2008; Schweitzer, 2011; Bertazzo et al., 2015; Cleland et al., 2015; Schroeter et al., 2017). However, these studies often do not fully address fossil bones being open systems that are biologically active. This can be seen in field observations, in Dinosaur Provincial Park and elsewhere, where fossil bone is frequently colonized by lichen on the surface or overgrown and penetrated by plant roots in the subsurface. This forces researchers to consider that subsurface biota (e.g. plant roots, fungi, animals, protists, and bacteria) could contaminate bone. Given that fungi can produce collagen (Celerin et al., 1996), the need to rule out exogenous sources of organics in fossil bone is made all the greater. Even deeply buried bone has the potential to be biologically active, given the high concentration of microorganisms in continental subsurface sedimentary rock (Magnabosco et al., 2018). The analyses presented here are consistent with the idea that far from being biologically ‘dead’, fossil bone supports a diverse, active, and specialized microbial community. Given this, it is necessary to rule out the hypothesis of subsurface contamination before concluding that fossils preserve geochemically unstable endogenous organics, like proteins.
 

@@ -30,7 +30,7 @@
 
 ## Abstract
 
-Iron is a biochemically critical metal cofactor in enzymes involved in photosynthesis, cellular respiration, nitrate assimilation, nitrogen fixation, and reactive oxygen species defense. Marine microeukaryotes have evolved a phytotransferrin-based iron uptake system to cope with iron scarcity, a major factor limiting primary productivity in the global ocean. Diatom phytotransferrin is endocytosed; however, proteins downstream of this environmentally ubiquitous iron receptor are unknown. We applied engineered ascorbate peroxidase APEX2-based subcellular proteomics to catalog proximal proteins of phytotransferrin in the model marine diatom Phaeodactylum tricornutum . Proteins encoded by poorly characterized iron-sensitive genes were identified including three that are expressed from a chromosomal gene cluster. Two of them showed unambiguous colocalization with phytotransferrin adjacent to the chloroplast. Further phylogenetic, domain, and biochemical analyses suggest their involvement in intracellular iron processing. Proximity proteomics holds enormous potential to glean new insights into iron acquisition pathways and beyond in these evolutionarily, ecologically, and biotechnologically important microalgae.
+Iron is a biochemically critical metal cofactor in enzymes involved in photosynthesis, cellular respiration, nitrate assimilation, nitrogen fixation, and reactive oxygen species defense. Marine microeukaryotes have evolved a phytotransferrin-based iron uptake system to cope with iron scarcity, a major factor limiting primary productivity in the global ocean. Diatom phytotransferrin is endocytosed; however, proteins downstream of this environmentally ubiquitous iron receptor are unknown. We applied engineered ascorbate peroxidase APEX2-based subcellular proteomics to catalog proximal proteins of phytotransferrin in the model marine diatom Phaeodactylum tricornutum. Proteins encoded by poorly characterized iron-sensitive genes were identified including three that are expressed from a chromosomal gene cluster. Two of them showed unambiguous colocalization with phytotransferrin adjacent to the chloroplast. Further phylogenetic, domain, and biochemical analyses suggest their involvement in intracellular iron processing. Proximity proteomics holds enormous potential to glean new insights into iron acquisition pathways and beyond in these evolutionarily, ecologically, and biotechnologically important microalgae.
 
 ## Introduction
 
@@ -50,35 +50,99 @@ Here, we provide further evidence for P. tricornutum phytotransferrin pTF endocy
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig1-v3.jpg)
 
-**Figure 1.:** Phaeodactylum tricornutum.(A) pTF-APEX2 encoding episome is introduced into P. tricornutum cells using bacterial conjugation. (B) Resulting transconjugants are genotyped and evaluated for fusion protein expression. APEX2 activity and fusion protein localization are then confirmed with an enzymatic assay and electron microscopy, respectively. (C) In a proximity-dependent proteomic mapping (proximity proteomics) experiment, pTF-APEX2 expressing cell line is supplemented with biotin-phenol and hydrogen peroxide, reaction quenched, and cells lysed. Cell lysate is then subjected to streptavidin pull-down, proteins analyzed with mass spectrometry (MS), peptides mapped to a P. tricornutum proteome database, and corresponding genes identified. (D) Interesting MS hits are further evaluated experimentally (e.g. for colocalization with the bait protein (i.e. pTF) and/or for predicted biochemical activity) as well as bioinformatically. Created with BioRender.com.
+**Figure 1.:** (A) pTF-APEX2 encoding episome is introduced into P. tricornutum cells using bacterial conjugation. (B) Resulting transconjugants are genotyped and evaluated for fusion protein expression. APEX2 activity and fusion protein localization are then confirmed with an enzymatic assay and electron microscopy, respectively. (C) In a proximity-dependent proteomic mapping (proximity proteomics) experiment, pTF-APEX2 expressing cell line is supplemented with biotin-phenol and hydrogen peroxide, reaction quenched, and cells lysed. Cell lysate is then subjected to streptavidin pull-down, proteins analyzed with mass spectrometry (MS), peptides mapped to a P. tricornutum proteome database, and corresponding genes identified. (D) Interesting MS hits are further evaluated experimentally (e.g. for colocalization with the bait protein (i.e. pTF) and/or for predicted biochemical activity) as well as bioinformatically. Created with BioRender.com.
 
 ## Results
 
-## P. tricornutum phytotransferrin (pTF) is localized to intracellular vesicles
+### P. tricornutum phytotransferrin (pTF) is localized to intracellular vesicles
 
 To confirm pTF association with intracellular vesicles as suggested by McQuaid et al., 2018, a pTF-mCherry encoding episome was conjugated into ΔpTF P. tricornutum cells (Diner et al., 2016; Karas et al., 2015; McQuaid et al., 2018). After labeling the fluorescent transconjugant cell line with 100 μM of the membrane dye MDY-64 for 10 min at room temperature, colocalized mCherry and MDY-64 signals were observed on the cell surface and within intracellular vesicles (Figure 2A).
 
-## APEX2 fused with P. tricornutum phytotransferrin (pTF) is enzymatically active in vivo
+![Figure 2.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig2-v3.jpg)
+
+**Figure 2.:** (A) pTF-mCherry colocalizes with the membrane dye MDY-64 on the cell surface and within intracellular vesicles. The fluorescent fusion protein was expressed under the pTF promoter and terminator in a ΔpTF P. tricornutum genetic background. Cells were stained with 100 μM MDY-64 for 10 min at room temperature. Scale bar is 10 μm. Fusion protein schematic created with BioRender.com. (B) Top: pTF-APEX2 flanked by nitrate-inducible NR (nitrate reductase) promoter, terminator, and untranslated regions (UTRs). Linker sequence (‘link’) between pTF and APEX2 encoded KGSGSTSGSG. Bottom: Schematic of the pTF-APEX2 expressing episome. Tetracycline (TetR) and ampicillin (AmpR) resistance genes for E. coli selection, bacterial replication origin, yeast centromere (CEN6-ARSH4-HIS3) for episome maintenance, phleomycin/zeocin (ShBle) resistance gene for P. tricornutum selection, origin of conjugative transfer (oriT). Plasmid map created with BioRender.com. (C) Anti-pTF western blot confirming pTF-APEX2 fusion protein (84.73 kDa) expression in four transconjugant P. tricornutum cell lines (lanes s1–s4; left: soluble cell lysate fraction, right: insoluble cell lysate fraction). Bacterial conjugation was performed with WT P. tricornutum cells which is why native pTF (57.05 kDa) bands were present in our samples. Teal circle: APEX2, white circle: linker, gray oval: pTF. (D) Left: pTF-APEX2 expressing, but not WT, cells convert APEX2 substrate Amplex UltraRed (50 μM) into a colored product resorufin in the presence of 2 mM H2O2. Right: >40 fold higher resorufin signal was observed in supernatants from pTF-APEX2 expressing cells than those from WT cells. Triplicate cultures from one WT and one pTF-APEX2 expressing cell line (cell line s2) were used in this experiment. Standard deviation is shown. P. tricornutum cartoons created with BioRender.com.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) pTF is a 537 amino acid residues (AAs) long cell membrane-associated iron receptor protein consisting of a signal peptide (AAs 1–18; predicted with SignalP 4.1), an iron-binding domain (AAs 19–493), a transmembrane domain (AAs 494–516; TMHMM Server v. 2.0 prediction output is shown to the right), and a tail domain (AAs 517–537). The latter is predicted to contain an endocytosis motif (Lommer et al., 2012). Bolded and light blue are conserved putative iron- (Asp48, Tyr71, Tyr214, His294) and carbonate-coordinating (Arg183) amino acid residues, respectively. (B) Direct visualization of resorufin (yellow) in pTF-APEX2 expressing cells. Both WT and pTF-APEX2 expressing cells were incubated in reaction buffer (50 μM Amplex UltraRed, 2 mM H2O2, PBS [pH 7.4]) for 6 min at room temperature prior to imaging. Red is chloroplast autofluorescence. (C) Supernatants after incubating cells from four pTF-APEX2 expressing cell lines (s1–s4) in reaction buffer (50 μM Amplex UltraRed, 2 mM H2O2, PBS [pH 7.4]) for 6 min at room temperature. Resorufin signal was observed only when both APEX2 substrates (Amplex UltraRed and hydrogen peroxide) were present.
+
+### APEX2 fused with P. tricornutum phytotransferrin (pTF) is enzymatically active in vivo
 
 To generate pTF-APEX2 expressing diatom cell lines, an episome encoding pTF with C-terminal APEX2 was assembled and conjugated into WT P. tricornutum cells (Figure 2B). Considering the predicted pTF domains (Figure 2—figure supplement 1A), APEX2 was likely facing the cytosol at the cell surface and once internalized into vesicles. Western blot with pTF-specific antibodies (McQuaid et al., 2018) confirmed the ~84.7 kDa fusion protein expression in four out of five tested transconjugant cell lines. The protein was present in the insoluble cell lysate fraction further indicative of its membrane localization (Figure 2C). Amplex UltraRed, a highly sensitive APEX2 substrate (Hung et al., 2016), was used to assay live pTF-APEX2 expressing cells. A resorufin (reaction product of Amplex UltraRed and APEX2) signal up to 4- and 40-fold above WT background was observed in experiments performed at room temperature (data not shown) and on ice (Figure 2D; Figure 2—source data 1), respectively, indicating active APEX2 with incorporated heme. Resorufin was also directly visualized by confocal microscopy and a strong cytosolic signal not tightly localized to the expected site of origin, similar to previous reports (Martell et al., 2012), was observed (Figure 2—figure supplement 1B), perhaps indirectly supporting our predicted APEX2 orientation. APEX2 was active only in the presence of both Amplex UltraRed and hydrogen peroxide (Figure 2—figure supplement 1C) implying that endogenous H2O2 levels are not sufficient to drive APEX2-catalyzed reactions, and that the overall cell surface and intracellular milieu in P. tricornutum is permissive to the APEX2 catalytic cycle.
 
-## pTF-APEX2 is localized to the cell membrane and intracellular vesicles
+### pTF-APEX2 is localized to the cell membrane and intracellular vesicles
 
 To confirm pTF-APEX2 is localized to the cell surface and intracellular vesicles similar to the pTF-mCherry fusion protein, pTF-APEX2 expressing cells (cell line s2, Figure 2C–D) were treated with 25 mM 3,3’-diaminobenzidine (DAB) in the presence of 3 mM H2O2 for 15 min on ice (Figure 3A). This reaction leads to DAB polymerization and local precipitation around APEX2 that can be stained with osmium tetroxide and visualized with an electron microscope. Cells were embedded in a 3% agar matrix to prevent losses during numerous washing steps (Figure 3—figure supplement 1A). Tightly localized signal was observed on the cell membrane and in intracellular vesicles indicating that pTF-APEX2 fusion trafficked to the correct subcellular sites (Figure 3B). Additionally, we observed mitochondrial signal in WT and pTF-APEX2 cell lines subjected to the DAB reaction (Figure 3B; Figure 3—figure supplement 1B). Analysis of the P. tricornutum proteome revealed eight peroxidases with Arg38, His42, His163, and Asp208; catalytic amino acid residues that are conserved across all identified ascorbate peroxidases (APX) including soybean APX (Raven, 2003) and its derivative APEX2 (Figure 3—figure supplement 1C). Three of them contain proline in place of alanine at position 134 relative to APEX2, a substrate-binding loop mutation rendering APEX2 highly active (Lam et al., 2015), and another one is predicted to localize to mitochondria (Figure 3—figure supplement 1D–E). It is plausible that one or more of these endogenous APEX2-like peroxidases are responsible for the observed mitochondrial signal. APEX2 was inactivated in iron-deplete conditions (40 nM total Fe) and could be reactivated by supplementing fixed cells with 10 μM hemin chloride for 3 hr (data not shown), but this substantially increased background in the Amplex UltraRed assay. Therefore, subsequent proximity labeling experiments were carried out on cells growing in iron-replete conditions.
 
-## Identification of the proximal phytotransferrin proteome with biotin-phenol labeling
+![Figure 3.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig3-v3.jpg)
+
+**Figure 3.:** (A) Electron microscopy protocol summary. Briefly: WT and pTF-APEX2 expressing cells (grown in triplicate) were fixed, treated with diaminobenzidine (DAB) and hydrogen peroxide, post-fixed with osmium tetroxide, embedded in agar, negatively stained with uranyl acetate, dehydrated, embedded in resin, and visualized. Created with BioRender.com. (B) Expected cell surface and intracellular pTF-APEX2 localization. Teal and brown arrows point to APEX2-induced signal and cell wall, respectively. Zoomed in (top left image) is cell periphery where it can clearly be seen that cell membrane, not cell wall, is occupied by the fusion protein. pTF-APEX2 containing vesicles were observed (bottom two left images; acquired with backscatter scanning electron microscopy). Zoomed in (middle left image) are cell membrane and vesicles with pTF-APEX2. Mitochondrial signal in both WT and pTF-APEX2 expressing cells is likely due to endogenous (mitochondrial) APEX2-like peroxidases. Scale bar is 1 μm. P. tricornutum cartoons created with BioRender.com.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Detail from the electron microscopy sample preparation protocol: agar blocks with embedded diaminobenzidine (DAB)-treated pTF-APEX2 expressing diatom cells. P. tricornutum cartoon and ‘zoom in’ objects created with BioRender.com. (B) Mitochondrial signal as shown here was observed in electron microscopy experiments with both WT and pTF-APEX2 expressing cells subjected to DAB and hydrogen peroxide. ‘Zoom in’ objects created with BioRender.com. (C) Amino acid sequence alignment of putative APEX2-like P. tricornutum peroxidases. Amino acid residues crucial for ascorbate peroxidase (APX) and likely crucial for APEX2 activity (Arg38, His42, His163, and Asp208; numbering is relative to APEX2; depicted with black triangles and shaded) are conserved in eight P. tricornutum peroxidases. Numbers above amino acid sequences indicate alignment position. (D) Amino acid sequence alignment of putative substrate binding loops in the identified APEX2-like peroxidases. Black and blue arrows point to enzymes with proline at position 134 (shaded; numbering is relative to APEX2)—an amino acid residue change rendering APEX2 much more active than its APEX predecessor (Lam et al., 2015)—and predicted mitochondrial localization, respectively. (E) Some additional properties of the identified APEX2-like peroxidases. They all belong to class I (intracellular) haem peroxidases; one may be membrane-associated. 1RedoxiBase database. 2APEX2 and horseradish peroxidase (HRP) have proline at this position. 3TargetP 1.1. 4TMHMM Server v. 2.0.
+
+### Identification of the proximal phytotransferrin proteome with biotin-phenol labeling
 
 To identify proteins proximal to pTF, quintuplicate cultures from one WT and one pTF-APEX2 expressing cell line (cell line s2, Figure 2C–D) were grown to mid- to late-exponential phase and supplemented with 2.5 mM biotin-phenol and 1 mM hydrogen peroxide, following the APEX2 proximity labeling protocol developed for yeast (Hwang and Espenshade, 2016; Hwang et al., 2016). These labeling reaction steps were performed at 4°C and the incubation with hydrogen peroxide was extended to 20 min to mirror Amplex UltraRed assay and DAB reaction conditions (Figure 4A). Increasing biotin-phenol concentration from 0.5 mM, usually used in mammalian cells, to 2.5 mM, and exposing cells to osmotic stress with 1.2 M sorbitol—both of which are critical for efficient labeling in yeast (Hwang and Espenshade, 2016)—was necessary to detect enrichment of biotinylated proteins in experimental samples (Figure 4B). This result confirmed our hypothesis that the lack of heavy silicification in P. tricornutum (Francius et al., 2008; Tesson et al., 2009), making its cell wall composition and cell membrane permeability likely similar to that of yeast, would permit labeling. Streptavidin pull-downs were then performed with clarified cell lysates followed by tandem mass tag (TMT)-based quantitative proteomics. WT and pTF-APEX2 proteomic replicates, with the exception of one WT and one pTF-APEX2 sample, formed two distinct clusters (Figure 4—figure supplement 1; Figure 4—figure supplement 1—source data 1) indicating minimal technical variability. Thirty-eight statistically significant proteins (p value ≤ 0.05) with APEX2/WT ratios of at least 1.5 were identified (Figure 4B; Figure 4—source data 1). These ratios were obtained from average total peptide counts across quintuplicates (Figure 4—source data 1). Endogenous biotinylated proteins were also detected and had APEX2/WT ratios close to one, thus acting as an intrinsic pull-down control (Supplementary file 1—Table S1; Figure 4—source data 1). Some background enrichment in WT cells was likely due to endogenous APEX2-like peroxidases and one would therefore expect mitochondrial proteins with APEX2/WT ratios close to one to be present in our MS dataset. Indeed, at least three were detected: mitochondrial chaperonin CPN60 (Phatr3_J24820, UniProt ID: B7FQ72, APEX2/WT = 0.99), mitochondrial import receptor subunit TOM70 (Phatr3_J47492, UniProt ID: B7G3J4, APEX2/WT = 0.91), and acetyl-CoA dehydrogenase (Phatr3_J11014, UniProt ID: B7FTR6, APEX2/WT = 1.23) (Figure 4—source data 1). Fourteen proteins with an APEX2/WT ratio of at least two were detected. Of these 14 proteins, nine are known to be transcriptionally sensitive to iron availability; this is also the case for an additional five proteins with APEX2/WT ratio of at least 1.5 (Figure 5—figure supplement 1—source data 1; Smith et al., 2016). We note that pTF was present, but not enriched, in our pTF-APEX2 proteomics samples (Figure 4—source data 1). One possible explanation for this result is that pTF may not have surface exposed amino acid residues that are permissive to biotinylation by APEX2-generated phenoxyl radicals and so its presence in all of our pull-down samples could be due to unspecific binding to streptavidin beads.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig4-v3.jpg)
+
+**Figure 4.:** (A) Summary of the proximity-dependent proteomic mapping experiment. Briefly: WT and pTF-APEX2 expressing cells (grown in quintuplicate) were chilled on ice, pelleted, treated with 1.2 M sorbitol, supplemented with 2.5 mM biotin-phenol and 1 mM H2O2. The labeling reaction was quenched, cells were lysed, and evaluated for biotin enrichment. Cleared cell lysates were then subjected to streptavidin pull-down followed by quantitative mass spectrometry using tandem mass tags (TMT). Created with BioRender.com. (B) Left: Enrichment of biotinylated proteins over WT background was observed with streptavidin blot; ~66.5 kDa biotinylated BSA control; equal loading. The most prominent band in all samples is likely the endogenous biotin-containing propionyl-CoA carboxylase (Phatr3_J51245, ~72.5 kDa). Right: Volcano plot of quantitative MS data highlighting proteins with APEX2/WT ratio of at least 1.5 and p value ≤ 0.05 (shaded area with teal data points). Proteins encoded by a known iron-sensitive gene cluster on chromosome 20 are highlighted (arrowed Ensembl IDs). P. tricornutum cartoons created with BioRender.com. (C) 14/38 (10 shown here) MS hits are proteins with iron-sensitive transcripts. Proteins chosen for further characterization are bolded. Chloroplast localization and the associated prediction confidence were determined with SignalP 4.1 and ASAFind version 1.1.7. *Experimentally shown to localize to the pyrenoid—a RuBisCO-containing proteinaceus organelle—in the interior of the P. tricornutum chloroplast (Allen et al., 2012). **Experimentally shown to be localized adjacently to the chloroplast (Kazamia et al., 2019; Kazamia et al., 2018).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Hierarchical clustering (Ward’s method as implemented in the JMP software package) of scaled quantitative mass spectrometry proteomics data reveals WT- and pTF-APEX2-specific clusters. The heat map as a whole suggests minimal technical variability in our proteomic experiment even though samples WT5 and pTF-APEX2.4 deviate slightly from other corresponding samples.
+
 Some of the most apparent biologically interesting hits are summarized in Figure 4C. Considering iron is critically involved in all of the major photosynthetic complexes—photosystem II, photosystem I, and cytochrome b6f (Rochaix, 2011)—we asked if some of the proteins are perhaps predicted to be targeted to the chloroplast. Indeed, five are, albeit with low confidence, by ASAFind (Gruber et al., 2015), including two (Phatr3_J51183 and Phatr3_J54986) that are part of a gene cluster on chromosome 20 and two (Phatr3_J41423 and Phatr3_J55031) that are known to associate with the P. tricornutum chloroplast (Figure 4C; Allen et al., 2012; Kazamia et al., 2019; Kazamia et al., 2018). We elaborate on the potential role for these proteins in intracellular iron trafficking in the Discussion.
 
-## Proteins encoded by an iron-sensitive gene cluster on chromosome 20 colocalize with pTF
+### Proteins encoded by an iron-sensitive gene cluster on chromosome 20 colocalize with pTF
 
 We focused on three proteins with APEX2/WT ratio of at least two—Phatr3 IDs: J51183 (hereafter pTF.CREG1), J52498 (hereafter pTF.CatCh1), and J54986 (hereafter pTF.ap1)—that are expressed from a previously identified iron- and silicon-sensitive gene cluster on chromosome 20 (Figure 5A; Allen et al., 2008; Sapriel et al., 2009). One additional protein, ISIP2b (Phatr3_J54987, UniProt ID: B7G9B1), which is also transcriptionally sensitive to iron and silicon and that we did not detect in our proximity proteomics experiment, is also encoded by this uncharacterized locus. We note that pTF is not co-located with these genes, but instead lies on chromosome 7 (genomic location 1,000,053–1,001,833, forward strand). All three genes exhibit a transcriptional profile similar to pTF (Figure 5—figure supplement 1), two proteins (pTF.CREG1 and pTF.ap1) are predicted to go to the chloroplast (with low confidence as determined by ASAFind), and two (pTF.CatCh1 and pTF.ap1) contain a C-terminal transmembrane domain (Figure 4C; Supplementary file 1—Table S2). To test whether they colocalize with pTF, co-expression episomes were assembled and conjugated into WT P. tricornutum cells which resulted in diatom cell lines expressing pTF-mCherry and MS hit-EYFP fusion proteins (Figure 5—figure supplement 2A–B). Imaging conditions were optimized with mCherry and Venus (yellow fluorescent protein with spectral properties very similar to those of EYFP) expressing P. tricornutum cell lines for minimal cross-channel bleed-through (Figure 5—figure supplement 2C). pTF.CREG1 and pTF.CatCh1 colocalized with pTF in the chloroplast vicinity and on the chloroplast margin, respectively (Figure 5B). Both proteins consistently exhibited these distinct colocalization patterns as demonstrated by additional three mCherry- and EYFP-positive cells from corresponding co-expression transconjugant cell lines (Figure 5—figure supplement 3A–B). Colocalization of pTF.ap1 with pTF close to the chloroplast was also evident, although somewhat less precise (Figure 5—figure supplement 4).
 
-## pTF.CREG1 has homologs across the tree of life and may possess a non-enzymatic role similar to human CREG1
+![Figure 5.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig5-v3.jpg)
+
+**Figure 5.:** (A) Genes corresponding to three statistically significant proteomic hits are clustered on chromosome 20. All three proteins were co-expressed with mCherry-tagged pTF as fusions with a yellow fluorescent protein. Corresponding Ensembl and UniProt IDs are noted. Numbers indicate base pairs. Created with BioRender.com. (B) Two proteins—pTF.CREG1 and pTF.CatCh1—show clear, yet distinct, colocalization with pTF and the chloroplast periphery. pTF.CREG1-EYFP was consistently punctate whereas pTF.CatCh1-EYFP lined the chloroplast margin. pTF-mCherry punctum was almost exclusively positioned next to this ‘chloroplast lining’ pattern. P. tricornutum is pleiomorphic which explains why different cell morphologies were observed in pTF.CREG1-EYFP (fusiform morphotype) and pTF.CatCh1-EYFP (triradiate morphotype) cell lines. Scale bar is 10 μm. Fusion protein schematics created with BioRender.com.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Transcriptional profiles of pTF and the three genes from the identified iron- and silicon-sensitive gene cluster on chromosome 20 across different growth conditions (L (low): 20 pM Fe’, M (medium): 40 pM Fe’, H (high): 400 pM Fe’) and sampling timepoints (10AM, 2PM, 6PM, 10PM, 2AM, 6AM) are shown. Fe’: sum of all iron species not complexed to EDTA. Red dashed lines correspond to genes’ transcriptional peaks (late night). Average RPKM: Reads Per Kilobase of transcript, per Million mapped reads averaged across across two (L and M) or three (H) replicates.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Summary of the pTF-mCherry MS hit-EYFP co-expression episome assembly strategy. Created with BioRender.com. (B) Colony PCR and western blot analyses indicate the presence of full-length fusion proteins in our co-expression cell lines. Left: Primers binding to Phatr3_J23658 (flavodoxin-encoding gene) promoter and terminator flanking MS hit-EYFP coding regions were used in PCR reactions which resulted in the expected ~3 kbp amplicons. Positive controls: pure episomes used for conjugation. Negative controls: WT P. tricornutum cells and water which yielded no amplicons (not shown). Right: Anti-pTF western blot revealed the expected pTF-mCherry (83.75 kDa) bands alongside the bands corresponding to native pTF (57.05 kDa) and what appears to be a pTF-mCherry truncation (the additional band at ~70 kDa). Protein schematics created with BioRender.com. (C) The observed lack of significant cross-channel bleed-through supports colocalization imaging data and conclusions. Imaging conditions with minimal bleed-through were determined with WT P. tricornutum cells (top row), P. tricornutum cells expressing mCherry alone (middle row), and P. tricornutum cells expressing a Venus-tagged protein (bottom row). Scale bar is 10 μm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Three additional cells from pTF-mCherry and pTF.CREG1-EYFP expressing cell line described in the main text exhibit similar punctate colocalization of both fusion proteins at the chloroplast periphery. (B) Three additional cells from pTF-mCherry and pTF.CatCh1-EYFP expressing cell line described in the main text exhibit similar ‘chloroplast lining’ colocalization pattern of both fusion proteins at the chloroplast periphery. pTF-mCherry punctum was typically positioned adjacently to this signal. Scale bar is 10 μm.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig5-figsupp4-v3.jpg)
+
+**Figure 5—figure supplement 4.:** pTF.ap1-EYFP was co-expressed with pTF-mCherry and colocalization of the two fusion proteins—although not as obvious as in the case of pTF.CREG1 and pTF.CatCh1—was observed. These cells are representative of a pooled non-clonal P. tricornutum culture. Scale bar is 10 μm. Fusion protein schematics created with BioRender.com.
+
+### pTF.CREG1 has homologs across the tree of life and may possess a non-enzymatic role similar to human CREG1
 
 To shed light on possible functions of the uncharacterized proteins colocalizing with pTF and to examine their occurrence in other diatoms and marine phytoplankton beyond Phaeodactylum tricornutum, phylogenetic analysis was performed. pTF.CREG1 homologs were identified across the tree of life (Figure 6; Figure 6—source data 1). Further investigation of the protein sequence alignment underlying the phylogenetic tree revealed 12 amino acid residues that are at least 90% conserved across all homologs (Figure 6—figure supplement 1). Diatom homologs can be seen in a crown group with proteins from other complex plastid-containing algae such as cryptophytes, haptophytes, pelagophytes, chlorarachniophytes, and dinoflagellates (Figure 6; Archibald, 2009; Füssy and Oborník, 2018). pTF.CREG1 and its iron-insensitive paralog Phatr3_J10972—which phylogenetically cluster together—have ~50% amino acid sequence similarity and belong to the flavin mononucleotide (FMN)-binding split barrel fold protein superfamily (SSF50475) according to their Ensembl Protists profiles.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig6-v3.jpg)
+
+**Figure 6.:** pTF.CREG1 homolog search was performed with the National Center for Biotechnology Information (NCBI) and the Marine Microbial Eukaryote Transcriptome Sequencing Project (MMETSP) databases (Caron et al., 2017; Keeling et al., 2014; O'Leary et al., 2016). Homologs from algae with complex plastids (including diatoms) form a crown group away from animal proteins. pTF.CREG1 clusters with its paralog Phatr3_J10972 (black rectangle). Red dots indicate predicted gene duplication events. Scale bar: 0.5 substitutions per position.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Protein sequence alignment (Figure 6—source data 1) leading to the phylogenetic tree shown in Figure 6 was examined for amino acid residues that are at least 90% conserved across all homologs. Twelve such amino acid residues (blue triangles) in nine examined regions were identified. Additional few amino acid residues surrounding each conserved site are shown. Putative loop tetrapeptide motifs (see the main text for details) shown to the far right directly precede the conserved proline and cysteine amino acid residues in region 4. The DPES tetrapeptide motif in pTF.CREG1 is also found in Pteridomonas danica (single-celled heterotrophic heterokont), a Pterosperma species (single-celled green alga), Gossypium barbadense, Durio zibethinus, and Theobroma cacao (all three are plants). Black arrows point to pTF.CREG1 and its paralog Phatr3_J10972. Human CREG1 and pTF.CREG1 sequences are shaded. Numbers above amino acid sequences indicate alignment position. *17 AAs between glycine (G) and arginine (R) in the conserved region 1 were omitted.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A) pTF.CREG1 (UniProt ID: B7G9B3) features and its amino acid sequence alignment with human CREG1 (UniProt ID: O75629). pTF.CREG1 has a signal peptide that ends in SGA (blue underline; predicted with SignalP 4.1). This motif is closely related to Type I signal peptidase recognition site AXA indicating that pTF.CREG1 may enter the secretory pathway (Tuteja, 2005). Blue triangle points to a putative peptidase cut site. The core signal peptide sequence is enriched in hydrophobic amino acid residues, a common signal peptide feature (black underline). N-terminal methionine in Met-Phe (gray underline) may be acetylated by an N-terminal acetyltransferase (NAT), perhaps NatC or NatE which use Met-Phe sequence as their substrate (Ree et al., 2018). Tyrosine immediately succeeding SGA (green triangle) was used by ASAFind version 1.1.7 to classify pTF.CREG1 as a low confidence chloroplast-directed protein. Ser32 and Ser133 (red triangles) are predicted to undergo mucin-type O-glycosylation. Yellow triangle indicates an asparagine amino acid residue (Asn132) that is predicted to be N-glycosylated in human CREG1 (Sacher et al., 2005). These putative glycosylation sites further support the notion that the protein trafficks along the secretory pathway. Amino acid residues 141–144 in human CREG1 (DPQS)—which are located on the FMN binding pocket-occluding loop (Sacher et al., 2005)—are largely conserved (DPES) in pTF.CREG1 (shaded black rectangle). Finally, magenta triangle points to the arginine mutation site, Asn79, which may—like the corresponding Asp87 in human CREG1—prevent coordination of the terminal FMN phosphate (Figure 6—figure supplement 3A; Sacher et al., 2005). (B) Structural comparison between human CREG1 (PDB ID: 1XHN) and pTF.CREG1 homology model (created with Phyre2 web portal) suggests pTF.CREG1 is unable to coordinate FMN at the possible dimer interface (Figure 6—figure supplement 3B). Human CREG1 does not bind FMN in vitro (Sacher et al., 2005) due to the FMN binding pocket-occluding loop (gray rectangle). Pro146 and Glu147 in pTF.CREG1 are predicted to protrude into this pocket similarly to their human CREG1 counterparts Pro142 and Gln143. Gray: human CREG1 chain A (i.e. monomer 1), colored by secondary structure: human CREG1 chain B (i.e. monomer 2), blue: pTF.CREG1 homology model. N- and C-termini in protein structures are depicted. Created with UCSF Chimera version 1.11.1 and BioRender.com. (C) pTF.CREG1 does not reduce physiologically relevant flavins. Left: Comparison of NADPH oxidation (measured by decrease in absorbance at 320 nm) by recombinant pTF.CREG1 (long dashed black line) supplemented with flavins (flavin mononucleotide (FMN) and riboflavin) versus a no enzyme, water control (solid gray line). Right: The same assay, but here comparing a negative control protein without known NADPH oxidation activity (bovine serum albumin, BSA; short dashed black line) versus a no enzyme, water control (solid gray line). Experiments were started by the addition of protein or water blank and carried out in triplicate for each treatment. Background 320 nm absorbance of water blanks was subtracted from each replicate. Standard deviation is shown.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Two mutated arginine amino acid residues in human CREG1—one (Asp87) can be inferred from Sacher et al., 2005—are believed to prevent the protein from coordinating the terminal FMN phosphate. Asn79 in pTF.CREG1 is a corresponding amino acid residue to the human Asp87 (inset). The steric similarity between their side chains sugests that pTF.CREG1 would also be unable to coordindate the terminal FMN phosphate even in the absence of the FMN binding pocket-occluding loop. Gray: human CREG1 chain A (i.e. monomer 1 from PDB ID: 1XHN), colored by secondary structure: human CREG1 chain B (i.e. monomer 2 from PDB ID: 1XHN), blue: pTF.CREG1 homology model. Created with UCSF Chimera version 1.11.1 and BioRender.com. (B) Putative homodimerization region in the pTF.CREG1 homology model exhibits features of the human CREG1 dimer one. Human CREG1 chain A (i.e. monomer 1 from PDB ID: 1XHN) from the visualization presented in Figure 6—figure supplement 2B was hidden which left us with a chimeric human-diatom dimer. Colored by secondary structure: human CREG1 chain B (i.e. monomer 2 from PDB ID: 1XHN), blue: pTF.CREG1 homology model. Gray rectangles indicate the FMN binding pocket-occluding loop (see the main text). Black rectangle depicts a modeled β-sheet region in pTF.CREG1 that is absent from human CREG1. Colored in magenta, red, orange, and green is a possible homodimerization interface in pTF.CREG1. Amino acid residue composition (written in N-terminal→C-terminal direction) corresponding to each color is as follows: magenta: PESPVCARLTLSG, red: KVSFTLTEASL, orange: WGVLTTI, green: PDGQPFGNVYSF. Bold: hydrophobic, underlined: hydrophobic and/or following Sacher et al., 2005. Created with UCSF Chimera version 1.11.1 and BioRender.com.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig6-figsupp4-v3.jpg)
+
+**Figure 6—figure supplement 4.:** Briefly, genes encoding various pTF.CREG1 truncations were placed under arabinose-inducible promoter, expressed in BL21 E. coli cells, and purified using cobalt, Co2+, resin-based gravity flow columns. CTHF: C-terminal His6 and FLAG tag. NTH: N-terminal His6 tag. L: PageRuler Plus Prestained Protein Ladder. (A) Final elutions of various pTF.CREG1 truncations from small scale (50 mL) protein expression experiments. Δ31_pTF.CREG1-His6 (bolded and black rectangle) was selected for scale-up. (B) The final Δ31_pTF.CREG1-His6 elution from a large-scale (2 L) protein expression experiment. NuPage 4–12% Bis-Tris gels were used to resolve protein samples.
 
 We analyzed pTF.CREG1 amino acid sequence (UniProt ID: B7G9B3, 234 AAs, ~26.4 kDa) and compared it to the human CREG1 ortholog (UniProt ID: O75629, 220 AAs, ~24 kDa). While human CREG1 is evolutionarily and structurally closely related to flavin mononucleotide (FMN)-coordinating dimeric oxidases and oxidoreductases such as pyridoxine 5’-phosphate (PNP) oxidases, it is unable to bind FMN and catalyze NADPH oxidation (Ghobrial et al., 2018; Sacher et al., 2005). pTF.CREG1 has a predicted N-terminal signal peptide ending in SGA that may be recognized by an endoplasmic reticulum-localized signal peptidase (Benham, 2012; Tuteja, 2005), and is likely modified by both N- and O-glycosylation, in line with human CREG1 (Figure 6—figure supplement 2A; Sacher et al., 2005). These features suggest that pTF.CREG1 enters and travels along the secretory pathway (Bard and Chia, 2016; Benham, 2012). Furthermore, the amino acid sequence alignment between pTF.CREG1 and human CREG1 revealed a similar tetrapeptide motif DP(Q/E)S which is located on the loop occluding the FMN-binding pocket at the human CREG1 dimer interface (Figure 6—figure supplement 1; Figure 6—figure supplement 2A; Sacher et al., 2005). This short amino acid sequence—while thought to contribute to the lack of catalytic activity in human CREG1—was found to be critical for mediating cell growth inhibition in human teratocarcinoma cell line NTERA-2 (Sacher et al., 2005). Structural comparison between a pTF.CREG1 homology model created using Phyre2 web portal (Kelley et al., 2015) and the human CREG1 monomer (PDB ID: 1XHN; Sacher et al., 2005) supports our hypothesis that pTF.CREG1 also contains a loop preventing FMN binding (Figure 6—figure supplement 2B). Two arginine amino acid residues involved in binding the terminal FMN phosphate in S. cerevisiae pyridoxine 5′-phosphate oxidase (UniProt ID: P38075, PDB ID: 1CI0) are mutated to aspartic acid and methionine amino acid residues in human CREG1 (Sacher et al., 2005), and one of these two key arginine residues is absent from pTF.CREG1 (Figure 6—figure supplement 3A). Finally, we note that a putative homodimerization region in pTF.CREG1 homology model contains many hydrophobic amino acid residues and overall follows the compositional character of the human CREG1 dimerization interface suggesting pTF.CREG1 is acting as a dimer in vivo (Figure 6—figure supplement 3B).
 
@@ -86,11 +150,23 @@ Given the apparent structural similarity of the P. tricornutum pTF.CREG1 to the 
 
 In conclusion, our homology modeling analyses and enzymatic assays indicate that pTF.CREG1 does not bind FMN and does not reduce flavins in an NADPH-dependent manner, respectively, both in agreement with our current knowledge about human CREG1. As such, pTF.CREG1 is an enticing candidate for further study as a key participant in the endocytic pTF receptor-mediated iron uptake pathway in diatoms. We put forth a hypothesis for its function in the Discussion.
 
-## pTF.CatCh1 is a heterokont-specific protein with conserved CX(X)C motifs
+### pTF.CatCh1 is a heterokont-specific protein with conserved CX(X)C motifs
 
 In contrast to pTF.CREG1, pTF.CatCh1 homologs were identified only in diatoms and other single-celled heterokonts (Figure 7A; Figure 7—source data 1). pTF.CatCh1 is a ~37.4 kDa (349 AAs) large protein with a predicted signal peptide (AAs 1–26) ending in ASA, two N-glycosylation NX(S/T) sequons (i.e. asparagines in the identified NST and NLS motifs may be glycosylated), and 13 predicted O-glycosylation sites (data not shown; Rao and Bernd, 2010). This protein is paralogous to the iron starvation induced protein 2b (ISIP2b/Phatr3_J54987) whose gene lies adjacently to pTF.CatCh1 in the same chromosome 20 gene cluster (Figure 5A). They share three CXC and one CXXC motifs typical of metal-binding, redox-active, and iron–sulfur cluster-containing proteins (Figure 7B; Blaby-Haas et al., 2014; Fomenko and Gladyshev, 2003; Poole, 2015; Przybyla-Toscano et al., 2018). One of the CXC motifs and the CXXC motif are conserved across all but two homologs in our phylogenetic analysis (Figure 7B; Figure 7—figure supplement 1A), and the latter is predicted to be located in one of the two disordered C-terminal regions in pTF.CatCh1 (AAs 196–292, AAs 321–349; Figure 7—figure supplement 1B). With additional 12 cysteines conserved between pTF.CatCh1 and ISIP2b, pTF.CatCh1 contains a total of 20 cysteine amino acid residues (all between AAs 34 and 226). Six of these 20 are 100% conserved across all homologs (Figure 7B). The predicted transmembrane domain (AAs 296–315) is flanked by a polyserine ([Ser]6) and a short arginine-rich stretch (RKL[R]3). Flexible polyserine linkers are found in modular, multidomain proteins (Uversky, 2015a), and positively charged amino acid residue tracts in the vicinity of transmembrane regions were shown to be orientation determinants in outer chloroplast membrane proteins (May and Soll, 1998). These observations are synthesized in a domain organization schematic shown in Figure 7—figure supplement 1C. We elaborate on possible roles of the conserved CX(X)C motifs, as well as other identified motifs and domains in pTF.CatCh1 in the Discussion.
 
-## pTF.ap1 homologs are present in marine microeukaryotes including diatoms
+![Figure 7.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig7-v3.jpg)
+
+**Figure 7.:** (A) pTF.CatCh1 homolog search was performed with NCBI and marine microbial eukaryote (MMETSP) databases. Numerous, almost exclusively diatom, proteins were identified. Interestingly, pTF.CatCh1 is paralogous to ISIP2b (black arrows). Scale bar: 0.1 substitutions per position. (B) pTF.CatCh1 and ISIP2b share three CXC and one CXXC motifs (boxed) commonly found in redox-active proteins and proteins involved in cellular metal homeostasis. Black boxes indicate the two CX(X)C motifs conserved across the majority of pTF.CatCh1 homologs. Blue triangles: additional conserved cysteine amino acid residues between pTF.CatCh1 and ISIP2b for a total of 20. Asterisks: cysteine amino acid residues that are 100% conserved across all homologs.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) CXXC and the adjacent CXC motifs are present in all but two identified pTF.CatCh1 homologs. Six additional cysteines are 100% conserved (Figure 7—source data 1). pTF.CatCh1 and ISIP2b (paralogs) are marked with black arrows. Amino acid residues immediately preceding the CXXC motif are also shown as aspartic acid residue (D) at this position is known to promote divalent metal ion binding (Banci et al., 2002; Banci et al., 2006). Numbers above amino acid sequences indicate alignment position. (B) pTF.CatCh1 contains two disordered C-terminal regions flanking the transmembrane domain. CXXC is predicted to be in one of them by PONDR VSL2 (top). No cysteines are predicted to be in this disordered region by IUPred2a (bottom). Approximate locations of the conserved CXC and CXXC motifs are depicted with blue and orange triangles, respectively. (C) pTF.CatCh1 features assuming disorder prediction with PONDR VSL2. Signal peptide (AAs 1–26; gray) is followed by a cysteine-rich domain (20 cysteines between amino acid residue 34 and 226; pink), and two disordered regions (green). The transmembrane (TM) domain (AAs 296–315; blue) nested between the predicted disordered regions is flanked by a polyserine ([S]6) and an arginine-rich (RKL[R]3) amino acid residue stretch. N- and C-terminus are shown. Created with BioRender.com.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** (A) pTF.ap1 (black arrow) homologs are present in diatoms and other marine microeukaryotes. Homolog search was performed with NCBI and marine microbial eukaryote (MMETSP) databases. Some notable species include common polar diatoms Fragilariopsis kergulensis and Fragilariopsis cylindrus, toxin-producing microeukaryotes (diatoms from the genus Pseudo-nitzschia, haptophyte Prymnesium parvum, and pelagophyte Aureococcus anophagefferens), cosmopolitan diatom Ditylum brightwelli, haptophyte Emiliana huxleyi, ultraplanktonic species Pelagomonas calceolate, colonial species Prasinoderma coloniale and Phaeocystis antarctica. Scale bar: 0.1 substitutions per position. (B) pTF.ap1 (black arrow) contains highly conserved motifs (five shown here). There are three 100% conserved cysteine amino acid residues across pTF.ap1 homologs (Figure 7—figure supplement 2—source data 1) in addition to the two here (blue triangles and gray shade). Numbers above amino acid sequences indicate alignment position.
+
+### pTF.ap1 homologs are present in marine microeukaryotes including diatoms
 
 Phylogenetic characterization was performed with pTF.ap1 as well and numerous homologs with at least five highly conserved motifs were identified in diatoms and other marine microeukaryotes, including chlorophytes, cryptophytes, and haptophytes (Figure 7—figure supplement 2A–B; Figure 7—figure supplement 2—source data 1). These pTF.ap1 homologs contain five 100% conserved cysteine amino acid residues, two of which are shown in Figure 7—figure supplement 2B, as well as 100% conserved tyrosine, histidine, and aspartic acid residues, indicating this protein may also be redox-active and/or have a metal ion processing role (Dokmanić et al., 2008).
 
@@ -138,188 +214,570 @@ Finally, the most enriched protein in our MS dataset was FBAC5 (Phatr3_J41423)�
 
 Our initial characterization of pTF.CREG1 and pTF.CatCh1, together with the discussion on the four other mass spectrometry hits, enable proposition of a model connecting cell surface ferric iron binding, internalization, and intracellular trafficking in Phaeodactylum tricornutum with many outstanding questions ripe for future investigation (Figure 8). Importantly, it remains to be determined which protein is responsible for intracellular ferric, Fe3+, iron reduction in P. tricornutum, activity that would be consistent with the non-reductive cell surface ferric, Fe3+, iron uptake proposed for phytotransferrin (pTF) (McQuaid et al., 2018; Morrissey et al., 2015). Perhaps notably, neither of the five proteins with clear ferric reductase annotation (FRE1–5, Phatr3 IDs: J54486, J46928, J54940, J54409, J54982) nor additional five hypothetical ferric reductases (Coale et al., 2019; Smith et al., 2016) were present in our mass spectrometry data. Further proximity-dependent proteomic mapping experiments will be essential for determining the full set of proteins in the non-reductive iron acquisition pathway in P. tricornutum as enzymatic Fe3+ reduction may happen later in the pathway and/or in a separate subcellular compartment.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig8-v3.jpg)
+
+**Figure 8.:** We propose a model for clathrin-mediated internalization of phytotransferrin (pTF)-bound ferric, Fe3+, iron, and its trafficking to the chloroplast periphery. In this model, pTF releases Fe3+ after undergoing a structural change upon endosome acidification driven by a vacuolar-type H+-ATPase. pTF.CREG1 may regulate this process at the endosome periphery and perhaps also in earlier endocytosis stages closer to the cell surface. It is unclear how intravesicular reduction of ferric iron is achieved and how the resulting ferrous iron gets exported. Given that no DMT1/NRAMP2 homologs are present in P. tricornutum, Zrt- and Irt-like proteins (ZIPs)—known to export Fe2+ from intracellular compartments—may mediate the latter (Blaby-Haas and Merchant, 2012; Kustka et al., 2007; Lampe et al., 2018). Ferrous iron could be offloaded to pTF.CatCh1 on the outer chloroplast membrane and ultimately transported further into the chloroplast interior for cellular assimilation and use (e.g. iron–sulfur cluster biosynthesis for incorporation into photosystems I and II). pTF.CatCh1 may alternatively (or additionally) be responsible for pTF recruitment to the chloroplast margin. The enrichment of FBP1 and ISIP1—both previously shown to localize to intracellular vesicles in P. tricornutum (Coale et al., 2019; Kazamia et al., 2019)—in our proximity proteomics experiment suggests the whole pathway intersects with that for internalizing organic, siderophore-bound, iron. Gray panel: pytotransferrin (pTF). Blue panels: proteins colocalized with pTF. Green panels: additional proteins enriched in our APEX2 experiment. One phytotransferrin-Fe3+ complex is shown for clarity. Orange vesicle interior indicates pH drop due to ATPase activity. Detailed chloroplast membrane layers are omitted (diatom chloroplasts contain four membranes). Created with BioRender.com.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/52770/elife-52770-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** Two diatom compartments of immediate interest are pyrenoid—proteinaceous RuBisCO-containing subchloroplastic organelle—and silica deposition vesicle (SDV)—diatom cell wall biosynthesis site. P. tricornutum and T. pseudonana—genetically tractable model marine diatoms—are appropriate for immediate dissection of pyrenoid and SDV proteomic composition, respectively. Created with BioRender.com.
+
 In conclusion, the identified proteins and the associated model we introduce in this work represent an important advance for the marine phytoplankton field, given that diatoms are central to the study of cellular iron homeostasis and its link to fluctuating iron levels in the ocean. The presented insights are vital as our understanding of intracellular iron trafficking is relatively incomplete even in significantly more established model systems such as mammalian cells, and our knowledge of chloroplast iron uptake is in its infancy (Blaby-Haas and Merchant, 2012; Philpott and Jadhav, 2019). We anticipate further molecular dissection of our proteomics dataset will not only provide details on the transformation dynamic of acquired ferric iron and its cellular sinks but will thereby also illuminate the extent to which phytotransferrin pathway mirrors the metazoan transferrin cycle.
 
 Implementing the use of APEX2 in a model marine diatom is itself a significant and timely advance as the field is expanding and moving from broad -omics-based surveys to detailed molecular studies (Faktorová et al., 2020; Falciatore et al., 2020). APEX2 and related molecular tools hold great promise to dissect additional key subcellular compartments in diatoms such as pyrenoids and silica deposition vesicles (Figure 8—figure supplement 1; Barrett et al., 2021; Hildebrand et al., 2018; Matsuda et al., 2017; Wang and Jonikas, 2020), two exciting future avenues for these single-celled heterokonts uniquely positioned at the nexus of evolutionary cell biology and blue biotechnology.
 
 ## Materials and methods
 
-## Key resources table
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Phaeodactylum tricornutum)</td>
+      <td>pTF; ISIP2a</td>
+      <td>PMID:29539640</td>
+      <td>Ensembl-Protists:Phatr3_J54465</td>
+      <td>Jeffrey B. McQuaid</td>
+    </tr>
+    <tr>
+      <td>Gene (Phaeodactylum tricornutum)</td>
+      <td>pTF.CREG1</td>
+      <td>This paper</td>
+      <td>Ensembl-Protists:Phatr3_J51183</td>
+      <td>The first subcellular localization and enzymatic activity reports for this P. tricornutum protein</td>
+    </tr>
+    <tr>
+      <td>Gene (Phaeodactylum tricornutum)</td>
+      <td>pTF.CatCh1</td>
+      <td>This paper</td>
+      <td>Ensembl-Protists:Phatr3_J52498</td>
+      <td>The first subcellular localization report for this P. tricornutum protein</td>
+    </tr>
+    <tr>
+      <td>Gene (Phaeodactylum tricornutum)</td>
+      <td>pTF.ap1</td>
+      <td>This paper</td>
+      <td>Ensembl-Protists:Phatr3_J54986</td>
+      <td>The first subcellular localization report for this P. tricornutum protein</td>
+    </tr>
+    <tr>
+      <td>Gene (Glycine max)</td>
+      <td>APEX2</td>
+      <td>PMID:25419960</td>
+      <td>NCBI-Gene:553156</td>
+      <td>APEX2 mutations relative to wild-type APX (encoded by NCBI-Gene:553156): K14D, W41F, E112K, A134P</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Phaeodactylum tricornutum)</td>
+      <td>Phaeodactylum tricornutum; P. tricornutum; WT P. tricornutum</td>
+      <td>NCMA</td>
+      <td>Catalog #:CCMP632 Starter Culture 2 × 15 ml</td>
+      <td>CCMP632 is synonymous with CCMP2561 and CCAP 1055/1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>EPI300</td>
+      <td>Lucigen</td>
+      <td>Catalog #:EC300110</td>
+      <td>Electrocompetent; recommended for bacterial conjugation of diatoms</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21</td>
+      <td>NEB</td>
+      <td>Catalog #:C2530H</td>
+      <td>Chemically competent</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Phaeodactylum tricornutum)</td>
+      <td>ΔpTF P. tricornutum</td>
+      <td>PMID:29539640</td>
+      <td></td>
+      <td>Jeffrey B. McQuaid; TALEN-generated pTF knockout P. tricornutum strain; available from the Allen Lab</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Phaeodactylum tricornutum)</td>
+      <td>pJT_NR_pTF-AP2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Figure 2B, Materials and methods, and Supplementary file 1—Table S4; available from the Allen Lab</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (ΔpTF Phaeodactylum tricornutum)</td>
+      <td>pJT_native_pTF-mCherry</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 1—Table S4; available from the Allen Lab</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Phaeodactylum tricornutum)</td>
+      <td>pJT_pTF-mCherry _pTF.CREG1-EYFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 1—Table S4; available from the Allen Lab</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Phaeodactylum tricornutum)</td>
+      <td>pJT_pTF-mCherry _pTF.CatCh1-EYFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 1—Table S4; available from the Allen Lab</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Phaeodactylum tricornutum)</td>
+      <td>pJT_pTF-mCherry _pTF.ap1-EYFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 1—Table S4; available from the Allen Lab</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Escherichia coli BL21)</td>
+      <td>pJT_Δ31_pTF.CREG1-His6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 1—Table S4; available from the Allen Lab</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pTF (rabbit monoclonal)</td>
+      <td>PMID:29539640</td>
+      <td></td>
+      <td>WB (1:10,000 of 1.14 mg/mL stock); custom-made at OriGene; available from the Allen Lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPtPBR1</td>
+      <td>Addgene</td>
+      <td>Catalog #:80388</td>
+      <td>Episomal vector for bacterial conjugation of P. tricornutum; available from the Allen Lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTA-Mob</td>
+      <td>PMID:24595202</td>
+      <td></td>
+      <td>Mobilization plasmid for bacterial conjugation of diatoms; available from the Allen Lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PtpBAD-CTHF</td>
+      <td>PMID:30262498</td>
+      <td></td>
+      <td>Escherichia coli protein expression vector; available from the Allen Lab</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JT01</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CGAATCAGGATCTAAAATGAACGCACGTCTGCGACCTGAGCAA; see Materials and methods and Supplementary file 1—Table S3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JT02</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GTCGCTTCACGTTCGCTC; see Materials and methods and Supplementary file 1—Table S3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JT03</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GATACGCGAGCGAACGTGAAGCGACTCACGTAGTGAAGTGATGTTG; see Materials and methods and Supplementary file 1—Table S3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JT04</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TTCCAGACGTAGAACCACTCCCTTTGATAGGAGTGCTGCCAGTG; see Materials and methods and Supplementary file 1—Table S3</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PrimeSTAR GXL DNA Polymerase</td>
+      <td>Takara Bio</td>
+      <td>Catalog #:R050B</td>
+      <td>Recommended for amplifying (parts of) diatom episomal vectors</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Bovine Serum Albumin, Biotinylated</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog #:29130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin, horseradish peroxidase (HRP) conjugate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog #:S911</td>
+      <td>WB (1:15,000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>WesternSure Pre-stained Chemiluminescent Protein Ladder</td>
+      <td>Li-COR</td>
+      <td>Catalog #:926–98000</td>
+      <td>Recommended for streptavidin blotting</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phire Plant Direct PCR Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog #:F160L</td>
+      <td>Recommended for diatom genotyping</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phire Plant Direct PCR Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog #:F130WH</td>
+      <td>Recommended for diatom genotyping</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>WesternBreeze Chemiluminescent Kit, anti-rabbit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog #:WB7106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TMT10plex Isobaric Label Reagent Set</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog #:90406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amplex UltraRed Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog #:A36006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3,3’-Diaminobenzidine (DAB)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #:D8001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-(+)-Biotin-tyramine amide (biotin-phenol)</td>
+      <td>Berry and Associates</td>
+      <td>Catalog #:BT 1015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SEQUEST (v. 28, rev. 12) algorithm</td>
+      <td>PMID:24226387</td>
+      <td></td>
+      <td>Algorithm for matching tandem mass spectra with peptide sequences</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JMP</td>
+      <td>SAS Institute</td>
+      <td></td>
+      <td>Interactive statistical discovery software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Core Team</td>
+      <td></td>
+      <td>Free software environment for statistical computing and graphics</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ASAFind</td>
+      <td>PMID:25438865</td>
+      <td></td>
+      <td>Plastidial protein localization prediction tool for algae with red secondary plastids; available at https://rocaplab.ocean.washington.edu/tools/asafind/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BLASTP</td>
+      <td>PMID:2231712</td>
+      <td></td>
+      <td>Algorithm for identifying homologous proteins</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HMMER</td>
+      <td>PMID:9918945</td>
+      <td></td>
+      <td>Software for identifying homologous proteins (or nucleotide sequences) using profile hidden Markov models</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAFFT</td>
+      <td>PMID:12136088</td>
+      <td></td>
+      <td>Multiple amino acid sequence alignment algorithm based on fast Fourier transform</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SeaView 4</td>
+      <td>PMID:19854763</td>
+      <td></td>
+      <td>Graphical User Interface (GUI)-based molecular phylogeny software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IQ-TREE</td>
+      <td>PMID:25371430</td>
+      <td></td>
+      <td>Algorithm for inferring phylogenetic trees by maximum likelihood</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phyre2</td>
+      <td>PMID:25950237</td>
+      <td></td>
+      <td>Web server to predict and analyze protein structure, function and mutations; available at http://www.sbg.bio.ic.ac.uk/~phyre2/html/page.cgi?id=index</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera version 1.11.1</td>
+      <td>PMID:15264254</td>
+      <td></td>
+      <td>Software for interactive visualization and analysis of molecular structures and related data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Yeast Vacuole Membrane Marker MDY-64</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog #:Y7536</td>
+      <td>Membrane stain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pierce Streptavidin Magnetic Beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog #:88816</td>
+      <td>Protein-coated iron oxide microparticles</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phaeodactylum tricornutum proteome</td>
+      <td>UniProt</td>
+      <td>Proteome-ID:UP000000759</td>
+      <td>Reference proteomic database</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phatr3 P. tricornutum genomic database</td>
+      <td>Ensembl Protists</td>
+      <td>Genome-Assembly:ASM15095v2</td>
+      <td>Reference genomic database</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Transcriptomic data</td>
+      <td>PMID:27973599</td>
+      <td>S1 Dataset. Active transcriptome and assignment of genes to WGCNA modules and response types.</td>
+      <td>P. tricornutum transcriptomic dataset; see Figure 5—figure supplement 1—source data 1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Marine Microbial Eukaryote Transcriptome Sequencing Project (MMETSP) database</td>
+      <td>PMID:24959919</td>
+      <td>NCBI-BioProject:PRJNA231566</td>
+      <td>Transcriptomic database</td>
+    </tr>
+  </tbody>
+</table>
+
+### Key resources table
 
 The quantitative mass spectrometry proteomics data used to generate Figure 4—source data 1 and Figure 4—figure supplement 1—source data 1 have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository (Perez-Riverol et al., 2019) with the dataset identifier PXD018022.
 
 The amino acid sequence alignment files Figure 6—source data 1, Figure 7—source data 1, and Figure 7—figure supplement 2—source data 1 can be read and interrogated with AlignmentViewer available at https://alignmentviewer.org/.
 
-## Vector cloning
+### Vector cloning
 
-## pJT_NR_pTF-AP2
+#### pJT_NR_pTF-AP2
 
 Gibson Assembly (Gibson et al., 2009) was performed with three DNA fragments: (1) linearized pPtPBR1 episome backbone (Addgene, Cambridge, MA, plasmid pPtPBR1, Catalog #80388) opened ~280 bp downstream of the tetracycline resistance gene, (2) amplicon with nitrate reductase gene (NR) promoter, 5’ NR untranslated region (UTR), and pTF, and (3) gBlocks Gene Fragment (Integrated DNA Technologies (IDT), Coralville, IA) with linker sequence, codon optimized APEX2 (using IDT Codon Optimization Tool and selecting ‘Thalassiosira pseudonana’ from the ‘Organism’ drop-down menu), 3’ NR UTR, and NR terminator.
 
-## pJT_native_pTF-mCherry
+#### pJT_native_pTF-mCherry
 
 Gibson Assembly was performed with three DNA amplicons: (1) pPtPBR1 episome backbone split into two fragments and (2) expression cassette including pTF, mCherry, and pTF promoter and terminator.
 
-## pJT_pTF-mCherry_MS hit-EYFP
+#### pJT_pTF-mCherry_MS hit-EYFP
 
 pJT_native_pTF-mCherry was split into two fragments via PCR stitching (keeping ampicillin resistance gene split). Genes corresponding to MS hits were amplified using cDNA from iron-starved WT P. tricornutum cells and assembled with EYFP and Phatr3_J23658 (flavodoxin-encoding gene) promoter and terminator through two PCR stitching rounds into a single fragment. Gibson Assembly was then performed to combine all three final amplicons. Detailed assembly scheme is presented in Figure 5—figure supplement 2A.
 
-## pJT_Δ31_pTF.CREG1-His6
+#### pJT_Δ31_pTF.CREG1-His6
 
 Cloning of gene fragments into the E. coli protein expression vector PtpBAD-CTHF was performed as described previously (Brunson et al., 2018). Briefly, PtpBAD-CTHF was linearized by digestion with XhoI (New England Biolabs (NEB), Ipswich, MA, Catalog #R0146S) and the resulting DNA was column purified. Δ18_pTF.CREG1 gene was obtained by PCR from P. tricornutum gDNA with PrimeSTAR GXL DNA Polymerase (Takara Bio, Kusatsu, Japan, Catalog #R050B) and primer set JT31/JT32 to incorporate the appropriate Gibson Assembly overhangs and remove the predicted N-terminal signal peptide (amino acid residues 1–18). Insertion of truncated pTF.CREG1 into linearized PtpBAD-CTHF was performed using Gibson Assembly Master Mix (NEB, Catalog #E2611S), 1 µL of the Gibson Assembly reaction mixture was transformed via heat shock into chemically competent NEB 5-alpha cells (NEB, Catalog #C2988J), and cells were incubated on lysogeny broth with 10 μg/mL tetracycline (LB-Tet10) 1% agar plates overnight at 37°C. Transformants were screened by colony PCR using the primer set JT37/JT38 and Sapphire polymerase (Takara Bio), and positive clones were selected for outgrowth. Isolated plasmids were sequence-validated by Sanger sequencing (Eurofins, Luxembourg, Luxembourg). A sequence-validated clone was designated as PtpBAD-Δ18_pTF.CREG1-CTHF and transformed into chemically competent BL21 E. coli cells (NEB, Catalog #C2530H) which were spread on LB-Tet10 1% agar plates. The resulting transformants were used for subsequent Δ18_pTF.CREG1 expression experiments. Following unsuccessful expression testing of the Δ18 N-terminal truncation construct, an additional set of genes encoding pTF.CREG1 with N-terminal truncations (Δ26, Δ31, Δ39, Δ43) was generated by PCR using PrimeStar GXL DNA Polymerase (Takara Bio), primer sets JT33/JT32, JT34/JT32, JT35/JT32, JT36/JT32, and PtpBAD-Δ18_pTF.CREG1-CTHF as a template. Assembly, colony PCR screening, plasmid isolation, sequencing, and transformation into chemically competent BL21 E. coli cells of all additional expression vectors, including PtpBAD-Δ31_pTF.CREG1-CTHF (=pJT_Δ31_pTF.CREG1-His6), was performed as above. An additional construct encoding pTF.CREG1 with an N-terminal His6 and Δ39 N-terminal truncation was built (PtpBAD-NTH-Δ39_pTF.CREG1) using the vector NTH-PtpBAD (constructed similarly to PtpBAD-CTHF; see Brunson et al., 2018 and Savitsky et al., 2010), but was not pursued beyond initial expression testing.
 
 pTF (Phatr3_J54465) in all episomes was in its native form (3 exons, 2 introns). Molecular cloning primers are listed in Supplementary file 1—Table S3. Vector details, further amplicon information, and fusion protein sequences are catalogued in Supplementary file 1—Table S4.
 
-## Related resource
+##### Related resource
 
 Turnšek J, Gholami P. 2017. Guidelines for highly efficient construction of diatom episomes using Gibson Assembly. protocols.io. DOI: dx.doi.org/10.17504/protocols.io.jy7cpzn.
 
-## Diatom culturing, conjugation, and genotyping
+### Diatom culturing, conjugation, and genotyping
 
-## Culturing
+#### Culturing
 
 Sequenced Phaeodactylum tricornutum strain CCMP632 (synonymous to CCMP2561 and CCAP 1055/1; National Center for Marine Algae and Microbiota (NCMA), East Boothbay, ME) was used throughout the study and grown at 18°C, 300 μmol quanta m−2 s−1, and a 10 hr:14 hr dark:light cycle in biotin-free L1 medium prepared by mixing 1 L Aquil salts, 2 mL nitrate and phosphate (NP) nutrient stock, 1 mL trace metal stock, and 1 mL thiamine hydrochloride and cyanocobalamin (TC) stock unless otherwise noted. Preparation of Aquil salts: 0.5 L anhydrous salts (0.5 L Milli-Q, 24.5 g NaCl, 4.09 g Na2SO4, 0.7 g KCl, 0.2 g NaHCO3, 0.1 g KBr, 900 μL 33.3 mg/mL H3BO3 stock, 300 μL 10 mg/mL NaF stock) and 0.5 L hydrous salts (0.5 L Milli-Q, 11.1 g MgCl2 × 6H2O, 1.54 g CaCl2 × 2H2O, 100 μL 170 mg/mL SrCl2 × 6H2O stock) were prepared separately, combined, filter sterilized (0.2 μm), and stored at room temperature. Preparation of NP nutrient stock: 37.5 g NaNO3 and 2.5 g NaH2PO4 were dissolved in 100 mL Milli-Q, filter sterilized (0.2 μm), and stored at 4°C. Preparation of trace metal stock (for 1 L 1000x stock): 3.15 g FeCl3 × 6H2O, 4.36 g Na2EDTA x 2H2O, 0.25 mL 9.8 g/L CuSO4 × 5H2O, 3.0 mL 6.3 g/L Na2MoO4 × 2H2O, 1.0 mL 22 g/L ZnSO4 × 7H2O, 1.0 mL 10 g/L CoCl2 × 6H2O, 1.0 mL 180 g/L MnCl2 × 4H2O, 1.0 mL 1.3 g/L H2SeO3, 1.0 mL 2.7 g/L NiSO4 × 6H2O, 1.0 mL 1.84 g/L Na3VO4, 1.0 mL 1.94 g/L K2CrO4, and Milli-Q up to 1 L were combined, filter sterilized (0.2 μm), and kept at 4°C. Preparation of TC stock: 20 mg thiamine hydrochloride and 0.1 mL 1 g/L cyanocobalamin stock were mixed in 100 mL Milli-Q. The resulting solution was stored at 4°C. ΔpTF P. tricornutum cell line (maintained in the Allen Lab; McQuaid et al., 2018) was additionally supplemented with 200 μg/mL nourseothricin (GoldBio, Saint Louis, MO, Catalog #N-500–1). All transconjugant P. tricornutum cell lines were supplemented with 50 or 100 μg/mL phleomycin (InvivoGen, San Diego, CA, Catalog #ant-ph-10p).
 
-## Conjugation
+#### Conjugation
 
 (1) Bacterial donor preparation: Chemically competent pTA-Mob-containing TransforMax EPI300 E. coli cells (Strand et al., 2014; Lucigen, Middleton, WI, Catalog #EC300110) were transformed via heat shock with sequence-verified pPtPBR1 episomes. Transformants were selected on gentamycin-, carbenicillin-, and tetracycline-containing LB 1% agar plates. 3 mL overnight LB cultures supplemented with antibiotics were inoculated from glycerol stocks. (2) P. tricornutum preparation: ~2×108 P. tricornutum cells (in 200 μL) in mid- to late-exponential phase were spread on pre-dried (i.e. plates with lid half open and kept in the laminar flow hood for at least 90 min) ½ L1 1% agar plates with 5% LB and left growing for 1 or 2 days. Plates were additionally supplemented with 200 μg/mL nourseothricin for conjugation of ΔpTF P. tricornutum cells. (3) Conjugation: Overnight donor bacterial cultures were diluted 1:50 in 25 mL LB supplemented with antibiotics, grown at 37°C until OD600 0.8–1, spun down, resuspended in 150 µL Super Optimal broth with Catabolite repression (SOC) medium, and spread as evenly as possible on top of a P. tricornutum lawn. Plates with donor-P. tricornutum co-culture were first left in dark and 30°C for 90 min, then for 1 or 2 days at standard growth conditions. (4) Selection: Co-culture lawn was scraped off of plates with 1 mL fresh L1 medium, transferred to a microcentrifuge tube, and 200 μL spread on pre-dried (see above) ½ L1 1% agar plates with 50 or 100 μg/mL phleomycin. Plates were additionally supplemented with 200 μg/mL nourseothricin for conjugation of ΔpTF P. tricornutum cells. Porous adhesive tape was used to seal the plates and transconjugants emerged after ~10 days of incubation under standard growth conditions. Please see Karas et al., 2015 and Diner et al., 2016 for further description of diatom conjugation.
 
-## Genotyping
+#### Genotyping
 
 Candidate transconjugant colonies were inoculated in 300 μL L1 medium supplemented with 50 or 100 μg/mL phleomycin (and 200 μg/mL nourseothricin in case of ΔpTF P. tricornutum cells) and typically grown for ~1 week. 0.5 μL liquid culture was then genotyped using either Phire Plant Direct PCR Master Mix (Thermo Fischer Scientific, Waltham, MA, Catalog #F160L) or Phire Plant Direct PCR Kit (Thermo Fischer Scientific, Catalog #F130WH). 200 μL of each genotype-positive cell line was passaged in 30 mL L1 medium supplemented with 50 or 100 μg/mL phleomycin (and 200 μg/mL nourseothricin in case of ΔpTF P. tricornutum cells).
 
-## Related resource
+##### Related resource
 
 Turnšek J. 2017. Simple and rapid genotyping of marine microeukaryotes. protocols.io. DOI: dx.doi.org/10.17504/protocols.io.jcdcis6.
 
-## RNA extraction and cDNA synthesis
+### RNA extraction and cDNA synthesis
 
-## Diatom culture
+#### Diatom culture
 
 100 mL WT P. tricornutum culture was grown in iron-deplete conditions (L1 medium with 7.5 nM total iron) for two weeks. Cells were then centrifuged, supernatants discarded, pellets flash frozen in liquid nitrogen, and stored at −80°C.
 
-## RNA extraction
+#### RNA extraction
 
 Direct-zol RNA Miniprep Plus RNA extraction kit was used (Zymo Research, Irvine, CA, Catalog #R2070). Briefly, cell pellets were resuspended in 800 μL Trizol, equal amount of 100% ethanol, and centrifuged in spin columns. Columns were then washed with 400 μL RNA Wash Buffer followed by on-column DNA digestion with 5 μL DNase I in 75 μL DNA Digestion Buffer for 15 min at RT, washing twice with 400 μL Direct-zol RNA PreWash, and once with 700 μL RNA Wash Buffer. RNA was eluted with 50 μL DNase/RNase-Free Water, RNA integrity number (RIN) evaluated with 2200 TapeStation (Agilent Technologies, Santa Clara, CA; measured RIN was 7.0), concentration estimated with Qubit 2.0 Fluorometer (Thermo Fischer Scientific; measured concentration was 27.6 ng/μL), and samples stored at −80°C.
 
-## cDNA synthesis
+#### cDNA synthesis
 
 cDNA synthesis kit from Thermo Fischer Scientific was used (SuperScript III First-Strand Synthesis System, Catalog #18080–051). Briefly, 1 μL total RNA was combined with 0.5 μL Oligo(dT)20 Primer, 0.5 μL 10 mM dNTP Mix, and 3 μL nuclease-free water followed by 5 min and 1 min incubation at 65°C and on ice, respectively. After 5 μL cDNA Synthesis Mix (1 μL 10x Reverse Transcription buffer, 2 μL 25 mM MgCl2, 1 μL 0.1 M DTT, 0.5 μL RNase OUT, 0.5 μL SuperScript III Reverse Transcriptase) was added, samples were incubated for 50 min and 5 min at 50°C and 85°C, respectively, then chilled on ice. Finally, 1 μL RNase H was added and sample kept for 20 min at 37°C. cDNA was stored at −20°C until use.
 
-## MDY-64 labeling and imaging
+### MDY-64 labeling and imaging
 
 Ten mL of a pTF-mCherry expressing ΔpTF P. tricornutum cell line grown in iron-deplete conditions (L1 medium with 7.5 nM total iron) were spun down, supernatant discarded, and pellet resuspended in 50 μL phosphate-buffered saline (PBS) (pH 7.4). 0.5 μL 10 mM MDY-64 stock (in DMSO; Thermo Fischer Scientific, Catalog #Y7536) was added, cells incubated for 10 min at RT, pelleted, and resuspended in 50 μL fresh PBS (pH 7.4). Cell suspension was prepared for imaging as follows: 5 μL was placed between a 1.5 mm microscope slide and a cover slip (this setup applies to all imaging experiments in the study). Imaging conditions: Leica TCS SP5 confocal microscope (Leica Microsystems, Wetzlar, Germany), argon laser strength set to 30%, 458 nm laser line at 50% maximum strength, emission window set to 477–517 nm (for visualizing MDY-64; MDY-64 excitation and emission maxima are 451 nm and 497 nm, respectively), 514 nm laser line at 50% maximum strength, emission window set to 620–640 nm (for visualizing mCherry; mCherry excitation and emission maxima are 587 nm and 610 nm, respectively).
 
-## Protein expression analyses
+### Protein expression analyses
 
-## pTF-APEX2 detection
+#### pTF-APEX2 detection
 
 Cell pellets from 8 mL mid- to late-exponential phase WT or transconjugant P. tricornutum cultures were resuspended in 150 μL cell lysis buffer (50 mM Tris-HCl, 200 mM NaCl, 1 mM DTT, 1 mM PMSF, pH 8.5) and sonicated for 5 min (30 s on, 1 min off) with Bioruptor UCD-200TM (Diagenode, Liège, Belgium). The resulting cell lysates were centrifuged, total protein content in supernatants measured with Bradford Assay Kit (Thermo Fischer Scientific, Catalog #23236), and insoluble fractions resuspended in 150 μL cell lysis buffer. One μg of each soluble protein sample and 0.5 μL of each resuspended insoluble protein fraction were resolved on a NuPage 4–12% Bis-Tris 1.5 mm gel (Thermo Fischer Scientific, Catalog #NP0335BOX), wet transferred to polyvinylidene difluoride (PVDF) membranes (Thermo Fischer Scientific, Catalog #LC2005), and visualized with WesternBreeze Chemiluminescent Kit, anti-rabbit (Thermo Fischer Scientific, Catalog #WB7106).
 
-## pTF-mCherry detection
+#### pTF-mCherry detection
 
 Cell pellets from 400 μL mid- to late-exponential phase WT or transconjugant P. tricornutum cultures were resuspended in 50 μL cell lysis buffer (50 mM Tris-HCl, 200 mM NaCl, 1 mM DTT, 1 mM PMSF, pH 8.5) and sonicated 15 min (30 s on, 1 min off) with Bioruptor UCD-200TM. One μL of each whole cell lysate was resolved on a NuPage 4–12% Bis-Tris 1.5 mm gel, wet transferred to PVDF membranes, and visualized with WesternBreeze Chemiluminescent Kit, anti-rabbit.
 
-## pTF antibody details
+##### pTF antibody details
 
 Amino acid residues 32–223 served as the immunogen (N-terminal pTF region just downstream of the signal peptide). The antibody was produced in a rabbit. 1:10,000 dilution of 1.14 mg/mL antibody stock was used in this study for background-free results.
 
-## Protein ladder
+##### Protein ladder
 
 MagicMark XP Western Protein Standard (Thermo Fischer Scientific, Catalog #LC5602).
 
-## Related resource
+##### Related resource
 
 Turnšek J. 2017. HA tag enables highly efficient detection of heterologous proteins in Phaeodactylum tricornutum (Pt) exconjugants. protocols.io. DOI: dx.doi.org/10.17504/protocols.io.j7ncrme.
 
-## Amplex UltraRed assay and resorufin imaging
+### Amplex UltraRed assay and resorufin imaging
 
-## Amplex UltraRed assay
+#### Amplex UltraRed assay
 
 Five mL of triplicate WT or pTF-APEX2 expressing P. tricornutum cultures in mid- to late-exponential phase were incubated on ice for 5 min, spun down, supernatant discarded, pellet resuspended in 500 μL ice-cold PBS (pH 7.4), and transferred to microcentrifuge tubes. Cells were spun down again, resuspended in 200 μL ice-cold reaction buffer (50 μM Amplex UltraRed [AUR; Thermo Fischer Scientific, Catalog #A36006], 2 mM H2O2, in PBS [pH 7.4]), and incubated on ice for 15 min unless otherwise noted. Fifty μL supernatant was mixed with 50 μL PBS (pH 7.4) and resorufin fluorescence measured in a black microtiter plate with black bottom using Flexstation 3 microtiter plate reader (Molecular Devices, San Jose, CA; excitation: 544 nm, emission: 590 nm; resorufin excitation and emission maxima are 568 nm and 581 nm, respectively). Horseradish peroxidase (HRP) was always included as a positive assay control. Fluorescence was normalized to OD750 of experimental P. tricornutum cultures. Amplex UltraRed was prepared as a 10 mM stock in DMSO and stored in 20 μL aliquots at −20°C. Three percent (w/w) H2O2 stock (Sigma-Aldrich, Saint Louis, MO, Catalog #323381–25 ML) was stored in 100 μL aliquots at −20°C.
 
-## Resorufin imaging
+#### Resorufin imaging
 
 WT and pTF-APEX2 expressing P. tricornutum cells after performing the Amplex UltraRed assay were imaged with Leica TCS SP5 confocal microscope using the following parameters: argon laser strength at 30%, 514 nm laser line at 50% maximum strength, resorufin emission window: 575–605 nm, autofluorescence emission window: 700–750 nm.
 
-## Transmission electron microscopy (TEM)
+### Transmission electron microscopy (TEM)
 
-## Part 1: Labeling
+#### Part 1: Labeling
 
 Five mL of triplicate WT or pTF-APEX2 expressing P. tricornutum cultures in mid- to late-exponential phase were spun down (4000 rpm, 4°C, 10 min) and fixed in 5 mL ice-cold 2% (w/v) paraformaldehyde (PFA) and 2% (v/v) glutaraldehyde in 0.15 M sodium cacodylate buffer (pH 7.4) for 30 min on ice. Cells were rinsed in 5 mL 0.15 M sodium cacodylate buffer (pH 7.4) five times for 3 min on ice, then once again in 5 mL 0.15 M sodium cacodylate buffer (pH 7.4) with 10 mM glycine for 3 min on ice. Cells were then treated with 25 mM 3,3’-diaminobenzidine (DAB; Sigma-Aldrich, Catalog #D8001) as follows: 5.36 mg DAB was dissolved in 1 mL 0.1 N HCl and sonicated for 45 min. Five mL of 0.3 M sodium cacodylate buffer (pH 7.4) was added to dissolved DAB, final volume adjusted to 10 mL with ddH2O, solution filtered through a 0.22 μm syringe filter, and 3 μL 30% (w/w) H2O2 added for 3 mM final concentration. Cells were incubated in 5 mL of this reaction buffer for 15 min on ice, rinsed five times for 3 min in 5 mL 0.15 M sodium cacodylate buffer (pH 7.4), post-fixed in 2 mL 1% osmium tetroxide (OsO4) (Electron Microscopy Sciences, Hatfield, PA, Catalog #19150) in 0.15 M sodium cacodylate buffer (pH 7.4) for 30 min on ice, and rinsed in 5 mL ice-cold ddH2O five times for 3 min. Cells were then resuspended in 300 μL melted 3% agar, poured onto a glass slide sitting on ice, left to solidify, and cut into small ~3×3×1 mm pieces which were transferred into scintillation vials with 10 mL ice-cold ddH2O. All shorter spin down steps were done at 4000 rpm and 4°C for 1.5 min. All buffers were used ice-cold.
 
-## Part 2: TEM sample preparation
+#### Part 2: TEM sample preparation
 
 Agar blocks with embedded P. tricornutum cells were fixed in 10 mL 2% (v/v) glutaraldehyde in ddH2O to crosslink agar, rinsed five times for 2 min in 5 mL ice-cold ddH2O, and left incubating in 5 mL 2% uranyl acetate (Electron Microscopy Sciences, Catalog #22400) overnight at 4°C. Next morning, agar blocks were first dehydrated in the following ethanol series: 20%, 50%, 70%, 90%, 100% (on ice, 10 mL), 100%, 100% (at RT, 10 mL), then infiltrated with 10 mL 50% epoxy resin for ~1 hr. To prepare 20 mL 100% resin, Durcupan ACM mixture (Electron Microscopy Sciences, Catalog #14040) components were combined as follows: 11.4 g A (epoxy resin), 10 g B (964 hardener), 0.3 g C (964 accelerator), and 0.1 g D (dibutyl phthalate) in this exact order (for 50% resin 1 part 100% resin was combined with 1 part 100% ethanol). Agar blocks were transferred into 10 mL 100% resin for ~4 hr, then into fresh 10 mL 100% resin overnight, again into fresh 10 mL 100% resin for 4 hr the following morning before finally being poured into aluminum boats and left to polymerize in 60°C oven for at least 48 hr (over the weekend). Polymerized resins were detached from aluminum boats, agar blocks dense with cells cut out and glued to ‘dummy’ blocks by incubation in a 60°C oven for at least 15 min. Approximately 500-nm-thick sections were cut with an ultramicrotome (Leica Ultracut), stained with 1% toluidine blue, and observed under light microscope to make sure embedded cells were exposed. Approximately 100-nm-thick sections were then cut, placed on TEM grids, labeled, and saved until imaging. Imaging was performed with JEOL JEM-1200 (Japan Electron Optics Laboratory, Akishima, Tokyo, Japan) transmission electron microscope at 80 keV. Backscatter scanning electron microscopy was performed with Zeiss Merlin (Oberkochen, Germany) scanning electron microscope (SEM) at two keV by placing ~80-nm-thick sections on a silicon wafer and imaged with inverted contrast which gives a TEM-like image.
 
-## Proximity-dependent proteomic mapping
+### Proximity-dependent proteomic mapping
 
-## Part 1: Labeling
+#### Part 1: Labeling
 
 Twenty-five mL of quintuplicate WT and pTF-APEX2 expressing P. tricornutum cultures in mid- to late-exponential phase—cell density of all cultures just prior to harvest was ~2×107 cells/mL which corresponds to OD750 ~0.4—were cooled on ice for 10 min and pelleted (4000 rpm, 4°C, 10 min). Supernatants were discarded, pellets resuspended in 0.5 mL ice-cold PBS (pH 7.4), transferred to microcentrifuge tubes, and spun down (4000 rpm, 4°C, 10 min). Cells were then resuspended in 0.5 mL ice-cold 1.2 M D-sorbitol in PBS (pH 7.4), supplemented with 2.5 mM biotin-phenol (Berry and Associates, Dexter, MI, Catalog #BT 1015), incubated on a tube rotator at 4°C for 90 min, supplemented with 1 mM H2O2, and incubated on a tube rotator at 4°C for another 20 min. Labeling reaction was quenched by washing cells twice (4000 rpm, 4°C, 5 min) with 0.5 mL ice-cold quenching solution (10 mM sodium ascorbate [VWR International, Radnor, PA, Catalog #95035–692], 5 mM Trolox [Sigma-Aldrich, Catalog #238813–5G], 10 mM sodium azide [VWR International, Catalog #AA14314-22] in PBS [pH 7.4]). Of quenched cell suspension, 50 μL was saved for a streptavidin blot. The remaining 450 μL was spun down (4000 rpm, 4°C, 10 min) and lysed in 250 μL cell lysis buffer (50 mM Tris-HCl, 200 mM NaCl, 1 mM DTT, 1 mM PMSF, pH 8.5) by sonication for 15 min (30 s on, 1 min off). Cell lysates were spun down at 4000 rpm and 4°C for 45 min and protein concentration in supernatants measured using Bradford Assay Kit. For streptavidin blot, 25 μL of saved quenched cells were first sonicated for 15 min (30 s on, 1 min off). A total of 2.5 μL of whole cell lysates and 1 ng biotinylated BSA positive control (Thermo Fischer Scientific, Catalog #29130) were then resolved on a NuPage 4–12% Bis-Tris 1.5 mm gel and wet transferred to a PVDF membrane. Membrane was washed twice with 15 mL PBST (PBS [pH 7.4] with 0.1% [v/v] Tween-20) for 5 min, left blocking overnight at RT and gentle shaking in PBST supplemented with 5% BSA (Sigma-Aldrich, Catalog #A9647-100G), and washed once the next morning with 15 mL PBST for 5 min. It was then incubated for 1 hr at RT and gentle shaking in 15 mL PBST supplemented with 5% BSA and 1:15,000 HRP-conjugated streptavidin (Thermo Fischer Scientific, Catalog #S911). Finally, membrane was washed three times with 15 mL PBST supplemented with 5% BSA for 5 min and once with 15 mL PBST for 10 min after which it was visualized with SuperSignal West Dura Extended Duration reagent (Thermo Fischer Scientific, Catalog #34075) using C-DiGit Blot Scanner (Li-COR, Lincoln, NE).
 
-## Protein ladder
+##### Protein ladder
 
 WesternSure Pre-stained Chemiluminescent Protein Ladder (HRP-conjugated protein ladder) (Li-COR, Catalog #926–98000).
 
-## Part 2: Pull-down and mass spectrometry
+#### Part 2: Pull-down and mass spectrometry
 
-## Pull-down
+##### Pull-down
 
 Fifty μL streptavidin beads (Thermo Fischer Scientific, Catalog #88816) transferred to microcentrifuge tubes were pelleted in a magnetic rack (tubes were left standing for ~5 min to pellet fully). Supernatants were discarded and beads were washed twice with 1 mL ice-cold cell lysis buffer (50 mM Tris-HCl, 200 mM NaCl, 1 mM DTT, 1 mM PMSF, pH 8.5). A total of 360 μg proteins in 500 μL total volume (x μL supernatant from cell lysis with 360 μg proteins and 500-x μL cell lysis buffer) were incubated on a tube rotator overnight at 4°C. Streptavidin beads were washed to remove nonspecific binders the next morning as follows: 2 × 1 mL cell lysis buffer, 1 × 1 mL 1 M KCl, 1 × 1 mL 0.1 M Na2CO3 (pH 11.5), 1 × 1 mL 2 M urea (pH 8.0) in 10 mM Tris-HCl, 2 × 1 mL cell lysis buffer, 2 × 1 mL PBS (pH 7.4). PBS after the final washing step was removed before storing beads at −80°C. Notes: All streptavidin beads collection steps were 5 min long. All the washing solutions were ice-cold. Microcentrifuge tubes were either very briefly vortexed (~2 s) or tapped by hand between each washing step to promote bead resuspension.
 
-## On-bead digestion and TMT labeling
+##### On-bead digestion and TMT labeling
 
 Samples were prepared as previously described (Kalocsay, 2019). Liquid reagents used were HPLC quality grade. Washed beads were resuspended in 50 μL of 200 mM EPPS (4-(2-hydroxyethyl)−1-piperazinepropanesulfonic acid) buffer (pH 8.5) and 2% (v/v) acetonitrile with 1 μL of 2 mg/mL lysil endoproteinase Lys-C stock solution (FUJIFILM Wako Pure Chemical Corporation, Richmond, VA, Catalog #125–05061), briefly vortexed, and incubated at 37°C for 3 hr. Fifty μL of trypsin stock (Promega, Madison, WI, Catalog #V5111) diluted 1:100 (v/v) in 200 mM EPPS (pH 8.5) was then added. After mixing, digests were incubated at 37°C overnight and beads were magnetically removed. Peptides were then directly labeled as follows: acetonitrile was added to 30% (v/v) concentration and peptides were labeled with TMT 10-plex reagent (Thermo Fisher Scientific, Catalog #90406) for 1 hr. Labeling reactions were quenched with hydroxylamine at a final concentration of 0.3% (v/v) for 15 min and 1% of labeled peptides was analyzed for label incorporation efficiency by mass spectrometry. After quenching, peptide solutions were first acidified with formic acid, trifluoroacetic acid (TFA) was then added to a concentration of 0.1% (v/v), and peptides were desalted by acidic C18 solid phase extraction (StageTip). Labeled peptides were finally resuspended in 1% (v/v) formic acid and 3% (v/v) acetonitrile.
 
-## Mass spectrometry
+##### Mass spectrometry
 
 Data were collected with a MultiNotch MS3 TMT method (McAlister et al., 2014) using an Orbitrap Lumos mass spectrometer coupled to a Proxeon EASY-nLC 1200 Liquid Chromatography (LC) system (both Thermo Fisher Scientific). The used capillary column was packed with C18 resin (35 cm length, 100 μm inner diameter, 2.6 μm Accucore matrix [Thermo Fisher Scientific]). Peptides were separated for 3 or 4 hr over acidic acetonitrile gradients by LC prior to mass spectrometry (MS) analysis. Data from two 4 hr runs and one 3 hr run were recorded and combined. After an initial MS1 scan (Orbitrap analysis; resolution 120,000; mass range 400–1400 Th), MS2 analysis used collision-induced dissociation (CID, CE = 35) with a maximum ion injection time of 150–300 ms and an isolation window of 0.5 m/z. In order to obtain quantitative information, MS3 precursors were fragmented by high-energy collision-induced dissociation (HCD) and analyzed in the Orbitrap at a resolution of 50,000 at 200 Th. Further details on LC and MS parameters and settings were described recently (Paulo et al., 2016). The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository (Perez-Riverol et al., 2019) with the dataset identifier PXD018022.
 
-## pTF-mCherry and MS hit-EYFP co-expression and imaging
+### pTF-mCherry and MS hit-EYFP co-expression and imaging
 
 Sequence-validated episomes with pTF-mCherry and MS hit-EYFP expression cassettes were conjugated into WT P. tricornutum cells, resulting transconjugants genotyped, and screened for fluorescence. Five μL of fluorescent transconjugant cell lines in mid- to late-exponential phase were imaged with settings that minimized cross-channel bleed-through: argon laser strength at 30%, 514 nm laser line at 50% maximum strength, mCherry emission window: 620–640 nm, EYFP emission window: 520–540 nm, autofluorescence emission window: 700–750 nm.
 
-## pTF.CREG1 protein expression conditions
+### pTF.CREG1 protein expression conditions
 
 Small-scale expression testing for the Δ31_pTF.CREG1-His6 (and all other pTF.CREG1 truncations not described here) was performed as follows: an overnight culture of BL21 E. coli cells carrying the PtpBAD-Δ31_pTF.CREG1-CTHF (=pJT_Δ31_pTF.CREG1-His6) expression vector was used to inoculate 50 mL of Terrific Broth (TB) supplemented with tetracycline (10 µg/mL). Cultures were grown in a shaking incubator (37°C, 200 rpm) until OD600 of 0.4–0.6 was reached. Incubator temperature was then lowered to 18°C and flasks were allowed to adjust to this temperature for about 30 min before arabinose was added to a final concentration of 0.5% (w/v). Growth at 18°C was continued overnight (12–18 hr) after which 10 mL of cultures were harvested by centrifugation at 6000 g for 10 min. Large-scale Δ31_pTF.CREG1-His6 expression was performed as above, but at 2 L total volume. Following arabinose induction and overnight growth of the 2 L culture, 500 mL was harvested for further processing.
 
-## pTF.CREG1 purification conditions
+### pTF.CREG1 purification conditions
 
 All purifications were performed using cobalt, Co2+, TALON Metal Affinity Resin (Takara Bio, Catalog #635502) which binds His6-tagged proteins with high affinity. Pellets from small scale expression testing (10 mL culture) were resuspended in 800 µL of lysis buffer (50 mM NaH2PO4 [pH 7.5], 500 mM NaCl, 0.1% [v/v] Triton X-100, 10 mM imidazole, 1 mg/mL lysozyme, and 10 μM β-mercaptoethanol) and subjected to microtip sonication on ice until lysis was complete. Lysates were then clarified by centrifugation (10 min, 15,000 g, 4°C) and supernatants (700 µL) were set aside. For each purification, 25 µL of TALON resin was equilibrated by washing three times with 10 volumes of lysis buffer and pelleting by centrifugation after each wash (30 s, 3000 g, RT). After third wash, 25 µL of lysis buffer was added to the resin to make a 50 µL slurry. Supernatants from previously clarified cell lysates were then added to the TALON resin slurry and incubated for 1 hr at RT with end-over-end mixing. Following the 1 hr incubation, the resin was pelleted by centrifugation (30 s, 3000 g, RT) and washed three times with 10 volumes of wash buffer (50 mM NaH2PO4 [pH 7.5], 500 mM NaCl, 30 mM imidazole). Proteins were eluted with 50 uL of elution buffer (50 mM NaH2PO4 [pH 7.5], 500 mM NaCl, 250 mM imidazole, 10% glycerol) and were either subjected to immediate SDS-PAGE electrophoresis or stored at −80°C.
 
 Pellets from large-scale expression (500 mL harvested bacterial culture) were processed with a few modifications. For lysis, cell pellets were resuspended in 20 mL of lysis buffer. For purification, 1 mL of TALON resin (i.e. 2 mL of equilibrated slurry) was used in combination with approximately 19 mL of clarified cell lysate which was allowed to incubate overnight at 8°C with end-over-end mixing. Final protein elution was performed using 5 mL of elution buffer. Purified protein was subjected to SDS-PAGE electrophoresis and concentrated using an Amicon Ultra-15 10 kDa cutoff concentrator (Millipore Sigma, Burlington, MA, Catalog #UFC901024). Following the concentration step, buffer exchange into 20 mM HEPES (pH 8.0), 10% glycerol, 300 mM KCl was performed using a PD-10 desalting column (GE Healthcare, Chicago, IL, Catalog #17-0851-01). Protein was then concentrated again and total protein content was determined by the Bradford method using the Protein Assay Dye Reagent (Bio-Rad, Hercules, CA, Catalog #5000006).
 
-## Flavin reduction assays
+### Flavin reduction assays
 
 To test for flavin reductase activity, we set up the following enzyme assay conditions in 100 uL final volume: 50 mM Tris-HCl (pH 7.5), 100 mM KCl, 10% glycerol, 30 μM flavin mononucleotide (FMN), 30 μM riboflavin, and 250 μM NADPH (Coves and Fontecave, 1993). Assays were started by the addition of 50 μg of pTF.CREG1, BSA, or Milli-Q water for no enzyme controls. Oxidation of NADPH was measured by the decrease in absorbance at 320 nm on a Flexstation 3 microtiter plate reader and the signal for each reaction was tracked over a period of 60 min. All assays were conducted in triplicate.
 
-## Bioinformatic and data analyses
+### Bioinformatic and data analyses
 
-## Mass spectrometry data analysis
+#### Mass spectrometry data analysis
 
 Peptide-spectrum matches used a SEQUEST (v. 28, rev. 12) algorithm (Eng et al., 1994). Data were searched against a size-sorted forward and reverse database of the Phaeodactylum tricornutum proteome (strain CCAP 1055/1, UniProt reference proteome UP000000759) with added common contaminant proteins and the pTF-APEX2 fusion protein sequence. Spectra were first converted to mzXML and searches were then performed using a mass tolerance of 50 ppm for precursors and a fragment ion tolerance of 0.9 Da. For the searches, maximally two missed cleavages per peptide were allowed. We searched dynamically for oxidized methionine residues (+15.9949 Da) and applied a target decoy database strategy. A false discovery rate (FDR) of 1% was set for peptide-spectrum matches following filtering by linear discriminant analysis (LDA) (Beausoleil et al., 2006; Huttlin et al., 2010). The FDR for final collapsed proteins was 1%. Quantitative peptide information was derived from MS3 scans. Quant tables were generated with the following filter criteria: MS2 isolation specificity of >70% for each peptide and a sum of TMT signal-to-noise (s/n) of >200 over all channels per peptide. Quant tables were exported to Excel and further processed therein. Details of the TMT intensity quantification method and additional applied search parameters were described previously (Paulo et al., 2016). Scaled proteomic data were subjected to two-way hierarchical clustering (Ward’s method) using JMP software package (SAS Institute). Volcano plot with log2-transformed average APEX2/WT ratios and associated p values was made in R using ggplot2 data visualization package (R Development Core Team, 2013). Gene IDs corresponding to protein hits were inferred using Ensembl Protists Phatr3 P. tricornutum genomic database.
 
-## Protein feature identification
+#### Protein feature identification
 
 Protein lengths, molecular weights, and isoelectric points (pI) were determined with ProtParam (Gasteiger et al., 2005). Signal peptides and transmembrane regions were identified with SignalP 4.1 (Petersen et al., 2011) and TMHMM Server v. 2.0 (Krogh et al., 2001), respectively. Protein localizations were predicted with a combination of tools: TargetP 1.1 (Emanuelsson et al., 2000), SignalP 4.1, and ASAFind (Gruber et al., 2015) version 1.1.7. All putative chloroplastic localizations in the study mean that a protein was predicted to be chloroplastic by ASAFind (state-of-the-art plastidial protein localization prediction tool for diatoms); chloroplast localization prediction confidences are noted. Low confidence prediction by ASAFind means that a protein satisfies the following filtering criteria: (1) it contains a signal peptide as detected by SignalP 4.1, (2) +1 position of ASAFind predicted cleavage site is phenylalanine (F), tryptophan (W), tyrosine (Y), or leucine (L) (making the protein ‘potentially plastid targeted’; it was tyrosine in pTF.CREG1), and (3) one or both of the following is false: the ASAFind predicted cleavage site coincides with the SignalP 4.1 prediction and the transit peptide score is higher than 2 (the latter is false for pTF.CREG1: transit peptide score was ~0.81). Peroxidase class prediction was done in RedoxiBase (Savelli et al., 2019). N-glycosylation and GalNAc-type O-glycosylation predictions were performed with NetNGlyc 1.0 (Gupta et al., 2004) and NetOGlyc 4.0 (Steentoft et al., 2013), respectively.
 
-## Amino acid sequence alignments
+#### Amino acid sequence alignments
 
 APEX2-like P. tricornutum peroxidases were aligned with Clustal Omega (Sievers et al., 2011) using the default settings and CLC Sequence Viewer 7.7 (QUIAGEN) using the following parameters: Gap open cost: 10.0, Gap extension cost: 1.0, End gap cost: As any other, Alignment: Very accurate (slow). Putative substrate-binding loops in these peroxidases were evaluated using the Clustal Omega alignment. Conserved motifs in amino acid sequence alignments underlying the phylogenetic trees were displayed in CLC Sequence Viewer 7.7.
 
-## Phylogenetic analyses
+#### Phylogenetic analyses
 
 Homologs of respective P. tricornutum proteins were retrieved from the non-redundant National Center for Biotechnology Information (NCBI) and the Marine Microbial Eukaryote Transcriptome Sequencing Project (MMETSP) databases using the BLASTP algorithm (e-value threshold set to e−15) (Altschul et al., 1990). The BLAST search retrieved only a handful of homologs for pTF.ap1 and no homologs for pTF.CatCh1 even among closely related diatoms. Therefore, more sensitive HMMER (Eddy, 1998) searches were employed to extend the datasets, which were afterward aligned using the Localpair algorithm as implemented in MAFFT (Katoh et al., 2002). Ambiguously aligned regions, regions composed mostly of gaps, and short fragments were manually removed in SeaView 4 (Gouy et al., 2010). For each alignment, the maximum likelihood analysis was carried out in IQ-TREE (Nguyen et al., 2015) under the best-fitting substitution matrix as inferred by the built-in model finder. Branching support was estimated using ‘thorough’ non-parametric bootstrap analysis from 500 replicates in IQ-TREE.
 
-## Identification of disordered protein regions
+#### Identification of disordered protein regions
 
 pTF.CatCh1 amino acid sequence was analyzed for the presence of disordered protein regions with PONDR (Predictor of Naturally Disordered Regions) VSL2 predictor (Peng et al., 2006) and IUPred2a long disorder prediction type (Mészáros et al., 2018).
 
-## Homology modeling of pTF.CREG1
+#### Homology modeling of pTF.CREG1
 
 Full-length pTF.CREG1 amino acid sequence was used as an input for Phyre2, an online protein structure prediction server (Kelley et al., 2015). Normal modeling mode was selected. Human CREG1 (PDB ID: 1XHN) was identified as the best modeling template (human CREG1 is ~37% identical to pTF.CREG1 as inferred from their Clustal Omega alignment). pTF.CREG1 was modeled with >90% confidence across 182 modeled amino acid residues (Pro43–Lys224) indicating the predicted structure is representative of the actual structure. pTF.CREG1 homology model was aligned with human CREG1 monomer in UCSF Chimera version 1.11.1 using MatchMaker tool with default settings (Pettersen et al., 2004).
 
-## Other data analyses
+#### Other data analyses
 
 Amplex UltraRed assay and transcriptomic data were plotted in R using ggplot2 data visualization package (R Development Core Team, 2013). Flavin reduction assay data were plotted in Excel.

@@ -13,7 +13,7 @@
 
 ### Affiliations
 
-1. https://ror.org/012mef835 Department of Physiology, Medical College of Georgia, Augusta University Augusta United States
+1. Department of Physiology, Medical College of Georgia, Augusta University Augusta United States ([ROR:012mef835](https://ror.org/012mef835))
 
 † Corresponding author
 
@@ -35,9 +35,17 @@ Using an innovative murine model of BPV, in the absence of overt hypertension, c
 
 ## Results
 
-## Pulsatile Ang II infusion-induced changes in blood pressure
+### Pulsatile Ang II infusion-induced changes in blood pressure
 
 We developed a novel murine model of high BPV using the experimental design shown in Figure 1A. The protocol consisted of a baseline phase (~5 days), corresponding to saline infusions in all mice, followed by a treatment phase (~20–25 days), where mice were either left on saline (control group) or subjected to robust BP transients induced via Ang II infusions (BPV group). Subcutaneous pumps were programmed to infuse 2 µL 6–8 times per day, with infusion periods corresponding to 1 hr every 3–4 hr (depending on the number of pulses), Figure 1B, right panel.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/104082/elife-104082-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the experimental design for middle-aged C57BL/6 J male mice, including implantation of a chronic cranial window (–28 days from treatment onset) and an infusion pump with telemetry (–7 days from treatment onset). Infusion pumps were programmed for intermittent delivery of saline (baseline phase) or angiotensin II (Ang II) (treatment phase) at a rate of 18.4 µg/day, administered in 1 hr intervals every 3–4 hr. In-vivo two-photon (2 P) imaging sessions were performed approximately 20 days into the treatment phase. Behavioral tests were conducted during the baseline period (Test 1) and 25 days into the treatment phase (Test 2). Created with BioRender.com. (B) Representative raw traces depicting minute-to-minute, 24 hr MAP, SBP, DBP, PP, and Activity levels during intermittent saline infusions (left) and Ang II infusions (right). Dashed lines indicate periods of active infusion (1 hr) or when the pump is on. (C) Average MAP, SBP, DBP, and PP (5 min) measured during infusion Off versus On conditions. (D) 24 hr average MAP, SBP, DBP, and PP during a 5 day saline infusion phase (Baseline) and on Day 20 of Ang II treatment. Two-way ANOVA repeated measures followed by Sidak’s multiple comparisons test (C, n=8 BPV mice) (D, n=13 control mice, n=8 BPV mice).Ang II = Angiotensin II, BPV = blood pressure variability, DBP = diastolic blood pressure MAP = mean arterial pressure, P=pulse pressure, SBP = systolic blood pressure.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104082/elife-104082-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative raw trace of one-hour average MAP for 24 hr of all control mice and BPV mice (B), with controls summarized in (C) and BPV in (D). Active corresponds to nighttime hours (6 pm-6 am). (A-D, n=13 control mice, n=8 BPV mice).BPV = blood pressure variability, MAP = mean arterial pressure.
 
 During the pump-off periods, BP corresponded to 97±2.0 mmHg and 91±1.9 mmHg for MAP, 113±2.6 mmHg and 105±2.6 mmHg for SBP, 80±1.7 mmHg, and 78±1.7 mmHg for DBP, and 34±1.3 mmHg and 27±1.8 mmHg for PP, for mice with pumps infusing saline vs. Ang II, respectively (Figure 1C). During the pump-on period, saline infusion did not change BP. However, Ang II infusions evoked significant BP transients corresponding to ∆37±3.9 mmHg (p<0.0001) for MAP, ∆70±3.0 mmHg (p<0.0001) for SBP, ∆29±4.1 mmHg (p<0.0001) for DBP, and ∆28±3.0 mmHg (p<0.0001) for PP, Figure 1C. Note that large dynamic activity-induced BP changes were apparent during both saline- and Ang II-infusions, Figure 1B. Despite robust BP transients, 20 days of treatment minimally affected the 24 hr averages (vs Baseline) in all cardiovascular variables, Figure 1D. The delta BP (Baseline vs Day 20) for MAP was –1±2.0 mmHg and 6±2.4 mmHg for control and BPV mice, respectively (Figure 1D). While the SBP in BPV mice significantly increased ∆9±2.9 mmHg (p=0.0088), mice remained within the lower range of high BP (131±4.4 mmHg). Additionally, prior to treatment, the baseline DBP in BPV was significantly lower than in control mice (p=0.0108), Figure 1D.
 
@@ -47,17 +55,852 @@ Blood pressure exhibits a circadian rhythm that is not discernible in minute-to-
 
 **Figure 2.:** (A) Summary data of two-day averages of MAP, SBP (B), DBP (C), and PP (D) during the inactive (daylight) period (left column) and the active (nighttime) period (right column). Dashed rectangles indicate the baseline period (~5-day saline infusion). ‘*’ and ‘&’ denote within group comparisons (p<0.05 vs Baseline) for BPV and control, respectively. ‘#’ denotes p<0.05 between groups comparisons. Two-way ANOVA repeated measures followed by Sidak’s comparison test; n = 13 control mice, n = 8 BPV mice. BPV=blood pressure variability, DBP=diastolic blood pressure, MAP=mean arterial pressure, PP=pulse pressure, SBP=systolic blood pressure.
 
-## Pulsatile Ang II infusion induced high BPV
+### Pulsatile Ang II infusion induced high BPV
 
 Having achieved minimal changes in the 24 hr average MAP, yet with prominent BP fluctuations, we quantified blood pressure variability (BPV) over time. Two indices of BPV were assessed: the average real variability (ARV), defined as the absolute difference between consecutive BP measurements, and the coefficient of variation (CV), defined as the ratio of the standard deviation to mean BP. A significant increase in BPV was observed in the BPV group over time relative to baseline, despite stable 24 hr BP averages. During the active period, ARV was significantly increased by day 3 and remained increased throughout the protocol, reaching 16.4±0.66 mmHg (p=0.04) for SBP and 8.12±0.71 mmHg (p=0.04) for PP, Table 1A. Similarly, during the inactive period, ARV was significantly increased by day 3 and persisted, with values of 13.4±0.33 mmHg (p<0.01) for MAP, 17.3±0.48 mmHg (p=0.02) for SBP, 11.3±0.47 mmHg (p<0.01) for DBP, and 7.9±0.55 mmHg (p=0.04) for PP (Table 1B) with SBP as the main variable driving BPV increases in this model. BPV indices using CV, based on hourly BP averages over 24 hr, were significantly increased from day 1 of treatment across all cardiovascular variables during both the inactive and active periods, except for DBP of the active period, which increased on day 3, Supplementary file 1.
 
-## Autonomic function in BPV mice
+**Table 1.**
+ Ang II-induced increases in blood pressure variability (BPV).(A-B) Summary data of calculated two-day average real variability of MAP, SBP, DBP, and PP during the active period (A) and the inactive period (B). Baseline corresponds to (~5-day saline infusion) and ‘*’ denotes within group comparisons (p<0.05 vs Baseline) and ‘#’ denotes p<0.05 between groups comparisons. Two-way ANOVA repeated measures followed by Dunnett’s comparison test; n = 13 control mice, n = 8 BPV mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="32">ARV mmHg ±SEM (Active)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="8">MAP</td>
+      <td colspan="8">SBP</td>
+      <td colspan="8">DBP</td>
+      <td colspan="8">PP</td>
+    </tr>
+    <tr>
+      <td>Days</td>
+      <td colspan="4">Control</td>
+      <td colspan="4">BPV</td>
+      <td colspan="4">Control</td>
+      <td colspan="4">BPV</td>
+      <td colspan="4">Control</td>
+      <td colspan="4">BPV</td>
+      <td colspan="4">Control</td>
+      <td colspan="4">BPV</td>
+    </tr>
+    <tr>
+      <td>Baseline</td>
+      <td>12.44</td>
+      <td>±</td>
+      <td>1.37</td>
+      <td></td>
+      <td>10.94</td>
+      <td>±</td>
+      <td>0.55</td>
+      <td></td>
+      <td>14.15</td>
+      <td>±</td>
+      <td>1.49</td>
+      <td></td>
+      <td>13.13</td>
+      <td>±</td>
+      <td>0.66</td>
+      <td></td>
+      <td>11.53</td>
+      <td>±</td>
+      <td>1.44</td>
+      <td></td>
+      <td>9.04</td>
+      <td>±</td>
+      <td>0.54</td>
+      <td></td>
+      <td>4.67</td>
+      <td>±</td>
+      <td>0.4</td>
+      <td></td>
+      <td>5.47</td>
+      <td>±</td>
+      <td>0.46</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1–2</td>
+      <td>12.91</td>
+      <td>±</td>
+      <td>1.29</td>
+      <td></td>
+      <td>10.99</td>
+      <td>±</td>
+      <td>0.35</td>
+      <td></td>
+      <td>14.86</td>
+      <td>±</td>
+      <td>1.28</td>
+      <td></td>
+      <td>14.56</td>
+      <td>±</td>
+      <td>0.44</td>
+      <td></td>
+      <td>11.7</td>
+      <td>±</td>
+      <td>1.48</td>
+      <td></td>
+      <td>9.29</td>
+      <td>±</td>
+      <td>0.41</td>
+      <td></td>
+      <td>5.12</td>
+      <td>±</td>
+      <td>0.4</td>
+      <td></td>
+      <td>7.67</td>
+      <td>±</td>
+      <td>0.69</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3–4</td>
+      <td>12.44</td>
+      <td>±</td>
+      <td>0.66</td>
+      <td></td>
+      <td>12.51</td>
+      <td>±</td>
+      <td>0.43</td>
+      <td></td>
+      <td>14.4</td>
+      <td>±</td>
+      <td>0.67</td>
+      <td></td>
+      <td>16.4</td>
+      <td>±</td>
+      <td>0.66</td>
+      <td>*</td>
+      <td>11.12</td>
+      <td>±</td>
+      <td>0.83</td>
+      <td></td>
+      <td>10.35</td>
+      <td>±</td>
+      <td>0.45</td>
+      <td></td>
+      <td>5.03</td>
+      <td>±</td>
+      <td>0.33</td>
+      <td></td>
+      <td>8.12</td>
+      <td>±</td>
+      <td>0.71</td>
+      <td>*#</td>
+    </tr>
+    <tr>
+      <td>5–6</td>
+      <td>11.78</td>
+      <td>±</td>
+      <td>0.52</td>
+      <td></td>
+      <td>12.8</td>
+      <td>±</td>
+      <td>0.39</td>
+      <td></td>
+      <td>13.64</td>
+      <td>±</td>
+      <td>0.61</td>
+      <td></td>
+      <td>16.44</td>
+      <td>±</td>
+      <td>0.53</td>
+      <td>*#</td>
+      <td>10.71</td>
+      <td>±</td>
+      <td>0.73</td>
+      <td></td>
+      <td>10.54</td>
+      <td>±</td>
+      <td>0.45</td>
+      <td></td>
+      <td>4.89</td>
+      <td>±</td>
+      <td>0.32</td>
+      <td></td>
+      <td>7.99</td>
+      <td>±</td>
+      <td>0.69</td>
+      <td>*#</td>
+    </tr>
+    <tr>
+      <td>7–8</td>
+      <td>12.35</td>
+      <td>±</td>
+      <td>0.61</td>
+      <td></td>
+      <td>12.85</td>
+      <td>±</td>
+      <td>0.41</td>
+      <td>*</td>
+      <td>14.02</td>
+      <td>±</td>
+      <td>0.67</td>
+      <td></td>
+      <td>16.73</td>
+      <td>±</td>
+      <td>0.43</td>
+      <td>*#</td>
+      <td>11.37</td>
+      <td>±</td>
+      <td>0.81</td>
+      <td></td>
+      <td>10.61</td>
+      <td>±</td>
+      <td>0.55</td>
+      <td>*</td>
+      <td>5.22</td>
+      <td>±</td>
+      <td>0.42</td>
+      <td></td>
+      <td>8.34</td>
+      <td>±</td>
+      <td>0.74</td>
+      <td>*#</td>
+    </tr>
+    <tr>
+      <td>9–10</td>
+      <td>12.34</td>
+      <td>±</td>
+      <td>0.69</td>
+      <td></td>
+      <td>12.84</td>
+      <td>±</td>
+      <td>0.4</td>
+      <td></td>
+      <td>13.88</td>
+      <td>±</td>
+      <td>0.75</td>
+      <td></td>
+      <td>16.37</td>
+      <td>±</td>
+      <td>0.72</td>
+      <td></td>
+      <td>11.32</td>
+      <td>±</td>
+      <td>0.79</td>
+      <td></td>
+      <td>10.82</td>
+      <td>±</td>
+      <td>0.24</td>
+      <td></td>
+      <td>4.95</td>
+      <td>±</td>
+      <td>0.39</td>
+      <td></td>
+      <td>7.86</td>
+      <td>±</td>
+      <td>0.65</td>
+      <td>*#</td>
+    </tr>
+    <tr>
+      <td>11–12</td>
+      <td>13</td>
+      <td>±</td>
+      <td>0.76</td>
+      <td></td>
+      <td>12.94</td>
+      <td>±</td>
+      <td>0.76</td>
+      <td>*</td>
+      <td>14.59</td>
+      <td>±</td>
+      <td>0.88</td>
+      <td></td>
+      <td>16.87</td>
+      <td>±</td>
+      <td>0.7</td>
+      <td>*</td>
+      <td>11.93</td>
+      <td>±</td>
+      <td>0.93</td>
+      <td></td>
+      <td>10.59</td>
+      <td>±</td>
+      <td>0.81</td>
+      <td></td>
+      <td>5.05</td>
+      <td>±</td>
+      <td>0.34</td>
+      <td></td>
+      <td>8.25</td>
+      <td>±</td>
+      <td>0.78</td>
+      <td>#</td>
+    </tr>
+    <tr>
+      <td>13–14</td>
+      <td>12.26</td>
+      <td>±</td>
+      <td>0.84</td>
+      <td></td>
+      <td>12.9</td>
+      <td>±</td>
+      <td>0.42</td>
+      <td>*</td>
+      <td>13.94</td>
+      <td>±</td>
+      <td>0.84</td>
+      <td></td>
+      <td>16.8</td>
+      <td>±</td>
+      <td>0.52</td>
+      <td>*</td>
+      <td>11.17</td>
+      <td>±</td>
+      <td>0.95</td>
+      <td></td>
+      <td>10.4</td>
+      <td>±</td>
+      <td>0.68</td>
+      <td>*</td>
+      <td>5.07</td>
+      <td>±</td>
+      <td>0.39</td>
+      <td></td>
+      <td>8.45</td>
+      <td>±</td>
+      <td>0.83</td>
+      <td>#</td>
+    </tr>
+    <tr>
+      <td>15–16</td>
+      <td>13.27</td>
+      <td>±</td>
+      <td>0.59</td>
+      <td></td>
+      <td>13.91</td>
+      <td>±</td>
+      <td>1.02</td>
+      <td></td>
+      <td>15.11</td>
+      <td>±</td>
+      <td>0.81</td>
+      <td></td>
+      <td>17.5</td>
+      <td>±</td>
+      <td>0.87</td>
+      <td>*</td>
+      <td>11.72</td>
+      <td>±</td>
+      <td>0.82</td>
+      <td></td>
+      <td>11.59</td>
+      <td>±</td>
+      <td>1.14</td>
+      <td></td>
+      <td>5.24</td>
+      <td>±</td>
+      <td>0.38</td>
+      <td></td>
+      <td>8.25</td>
+      <td>±</td>
+      <td>0.73</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>17–18</td>
+      <td>13.12</td>
+      <td>±</td>
+      <td>0.77</td>
+      <td></td>
+      <td>14.06</td>
+      <td>±</td>
+      <td>0.92</td>
+      <td></td>
+      <td>15.16</td>
+      <td>±</td>
+      <td>1.03</td>
+      <td></td>
+      <td>17.12</td>
+      <td>±</td>
+      <td>0.77</td>
+      <td>*</td>
+      <td>11.99</td>
+      <td>±</td>
+      <td>0.85</td>
+      <td></td>
+      <td>11.95</td>
+      <td>±</td>
+      <td>1.19</td>
+      <td></td>
+      <td>5.48</td>
+      <td>±</td>
+      <td>0.58</td>
+      <td></td>
+      <td>7.6</td>
+      <td>±</td>
+      <td>0.77</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19–20</td>
+      <td>12.62</td>
+      <td>±</td>
+      <td>0.45</td>
+      <td></td>
+      <td>12.75</td>
+      <td>±</td>
+      <td>0.92</td>
+      <td></td>
+      <td>14.75</td>
+      <td>±</td>
+      <td>0.52</td>
+      <td></td>
+      <td>16.57</td>
+      <td>±</td>
+      <td>0.94</td>
+      <td></td>
+      <td>11.09</td>
+      <td>±</td>
+      <td>0.7</td>
+      <td></td>
+      <td>10.48</td>
+      <td>±</td>
+      <td>1.23</td>
+      <td></td>
+      <td>6.32</td>
+      <td>±</td>
+      <td>0.6</td>
+      <td></td>
+      <td>8.44</td>
+      <td>±</td>
+      <td>1.15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="32">ARV mmHg ±SEM (Inactive)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="8">MAP</td>
+      <td colspan="8">SBP</td>
+      <td colspan="8">DBP</td>
+      <td colspan="8">PP</td>
+    </tr>
+    <tr>
+      <td>Days</td>
+      <td colspan="4">Control</td>
+      <td colspan="4">BPV</td>
+      <td colspan="4">Control</td>
+      <td colspan="4">BPV</td>
+      <td colspan="4">Control</td>
+      <td colspan="4">BPV</td>
+      <td colspan="4">Control</td>
+      <td colspan="4">BPV</td>
+    </tr>
+    <tr>
+      <td>Baseline</td>
+      <td>12.09</td>
+      <td>±</td>
+      <td>1.38</td>
+      <td></td>
+      <td>11.29</td>
+      <td>±</td>
+      <td>0.54</td>
+      <td></td>
+      <td>13.53</td>
+      <td>±</td>
+      <td>1.5</td>
+      <td></td>
+      <td>13.28</td>
+      <td>±</td>
+      <td>0.7</td>
+      <td></td>
+      <td>11.27</td>
+      <td>±</td>
+      <td>1.4</td>
+      <td></td>
+      <td>9.48</td>
+      <td>±</td>
+      <td>0.45</td>
+      <td></td>
+      <td>4.74</td>
+      <td>±</td>
+      <td>0.47</td>
+      <td></td>
+      <td>5.04</td>
+      <td>±</td>
+      <td>0.45</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1–2</td>
+      <td>12.15</td>
+      <td>±</td>
+      <td>1.04</td>
+      <td></td>
+      <td>11.4</td>
+      <td>±</td>
+      <td>0.69</td>
+      <td></td>
+      <td>14.08</td>
+      <td>±</td>
+      <td>1.03</td>
+      <td></td>
+      <td>14.69</td>
+      <td>±</td>
+      <td>0.77</td>
+      <td></td>
+      <td>10.95</td>
+      <td>±</td>
+      <td>1.15</td>
+      <td></td>
+      <td>9.76</td>
+      <td>±</td>
+      <td>0.68</td>
+      <td></td>
+      <td>4.92</td>
+      <td>±</td>
+      <td>0.24</td>
+      <td></td>
+      <td>7.09</td>
+      <td>±</td>
+      <td>0.55</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3–4</td>
+      <td>12.23</td>
+      <td>±</td>
+      <td>0.79</td>
+      <td></td>
+      <td>13.38</td>
+      <td>±</td>
+      <td>0.33</td>
+      <td>*</td>
+      <td>14.02</td>
+      <td>±</td>
+      <td>0.76</td>
+      <td></td>
+      <td>17.27</td>
+      <td>±</td>
+      <td>0.48</td>
+      <td>*#</td>
+      <td>11.19</td>
+      <td>±</td>
+      <td>1.02</td>
+      <td></td>
+      <td>11.29</td>
+      <td>±</td>
+      <td>0.47</td>
+      <td>*</td>
+      <td>4.76</td>
+      <td>±</td>
+      <td>0.32</td>
+      <td></td>
+      <td>7.9</td>
+      <td>±</td>
+      <td>0.55</td>
+      <td>*#</td>
+    </tr>
+    <tr>
+      <td>5–6</td>
+      <td>12.16</td>
+      <td>±</td>
+      <td>0.43</td>
+      <td></td>
+      <td>13.63</td>
+      <td>±</td>
+      <td>0.78</td>
+      <td>*</td>
+      <td>14.2</td>
+      <td>±</td>
+      <td>0.52</td>
+      <td></td>
+      <td>17.57</td>
+      <td>±</td>
+      <td>0.78</td>
+      <td>*#</td>
+      <td>10.68</td>
+      <td>±</td>
+      <td>0.53</td>
+      <td></td>
+      <td>11.34</td>
+      <td>±</td>
+      <td>0.86</td>
+      <td></td>
+      <td>4.95</td>
+      <td>±</td>
+      <td>0.3</td>
+      <td></td>
+      <td>8.23</td>
+      <td>±</td>
+      <td>0.69</td>
+      <td>*#</td>
+    </tr>
+    <tr>
+      <td>7–8</td>
+      <td>11.95</td>
+      <td>±</td>
+      <td>0.49</td>
+      <td></td>
+      <td>13.73</td>
+      <td>±</td>
+      <td>0.5</td>
+      <td>*</td>
+      <td>13.64</td>
+      <td>±</td>
+      <td>0.54</td>
+      <td></td>
+      <td>17.44</td>
+      <td>±</td>
+      <td>0.53</td>
+      <td>*#</td>
+      <td>10.88</td>
+      <td>±</td>
+      <td>0.59</td>
+      <td></td>
+      <td>11.61</td>
+      <td>±</td>
+      <td>0.67</td>
+      <td>*</td>
+      <td>4.9</td>
+      <td>±</td>
+      <td>0.32</td>
+      <td></td>
+      <td>8.45</td>
+      <td>±</td>
+      <td>0.89</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9–10</td>
+      <td>12.9</td>
+      <td>±</td>
+      <td>1.28</td>
+      <td></td>
+      <td>14.77</td>
+      <td>±</td>
+      <td>0.66</td>
+      <td>*</td>
+      <td>14.71</td>
+      <td>±</td>
+      <td>1.49</td>
+      <td></td>
+      <td>18.52</td>
+      <td>±</td>
+      <td>0.72</td>
+      <td>*</td>
+      <td>11.92</td>
+      <td>±</td>
+      <td>1.15</td>
+      <td></td>
+      <td>12.59</td>
+      <td>±</td>
+      <td>0.64</td>
+      <td>*</td>
+      <td>5.33</td>
+      <td>±</td>
+      <td>0.31</td>
+      <td></td>
+      <td>8.16</td>
+      <td>±</td>
+      <td>0.61</td>
+      <td>*#</td>
+    </tr>
+    <tr>
+      <td>11–12</td>
+      <td>12.49</td>
+      <td>±</td>
+      <td>0.79</td>
+      <td></td>
+      <td>14.53</td>
+      <td>±</td>
+      <td>0.57</td>
+      <td>*</td>
+      <td>14.09</td>
+      <td>±</td>
+      <td>0.82</td>
+      <td></td>
+      <td>18.65</td>
+      <td>±</td>
+      <td>0.62</td>
+      <td>*#</td>
+      <td>11.5</td>
+      <td>±</td>
+      <td>1.07</td>
+      <td></td>
+      <td>12.09</td>
+      <td>±</td>
+      <td>0.74</td>
+      <td>*</td>
+      <td>5.24</td>
+      <td>±</td>
+      <td>0.31</td>
+      <td></td>
+      <td>8.5</td>
+      <td>±</td>
+      <td>0.88</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>13–14</td>
+      <td>13.03</td>
+      <td>±</td>
+      <td>0.75</td>
+      <td></td>
+      <td>13.96</td>
+      <td>±</td>
+      <td>0.74</td>
+      <td>*</td>
+      <td>14.85</td>
+      <td>±</td>
+      <td>0.82</td>
+      <td></td>
+      <td>17.65</td>
+      <td>±</td>
+      <td>0.53</td>
+      <td>*</td>
+      <td>11.94</td>
+      <td>±</td>
+      <td>0.99</td>
+      <td></td>
+      <td>11.56</td>
+      <td>±</td>
+      <td>0.92</td>
+      <td></td>
+      <td>5.1</td>
+      <td>±</td>
+      <td>0.38</td>
+      <td></td>
+      <td>8.16</td>
+      <td>±</td>
+      <td>0.74</td>
+      <td>*#</td>
+    </tr>
+    <tr>
+      <td>15–16</td>
+      <td>13.35</td>
+      <td>±</td>
+      <td>0.79</td>
+      <td></td>
+      <td>15.04</td>
+      <td>±</td>
+      <td>0.87</td>
+      <td>*</td>
+      <td>14.87</td>
+      <td>±</td>
+      <td>0.93</td>
+      <td></td>
+      <td>18.85</td>
+      <td>±</td>
+      <td>0.87</td>
+      <td>*</td>
+      <td>12.21</td>
+      <td>±</td>
+      <td>0.98</td>
+      <td></td>
+      <td>12.66</td>
+      <td>±</td>
+      <td>1.07</td>
+      <td></td>
+      <td>4.97</td>
+      <td>±</td>
+      <td>0.36</td>
+      <td></td>
+      <td>8.54</td>
+      <td>±</td>
+      <td>1.06</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>17–18</td>
+      <td>12.99</td>
+      <td>±</td>
+      <td>0.7</td>
+      <td></td>
+      <td>15.61</td>
+      <td>±</td>
+      <td>1.36</td>
+      <td></td>
+      <td>14.19</td>
+      <td>±</td>
+      <td>0.82</td>
+      <td></td>
+      <td>19.39</td>
+      <td>±</td>
+      <td>1.09</td>
+      <td>*#</td>
+      <td>11.47</td>
+      <td>±</td>
+      <td>0.83</td>
+      <td></td>
+      <td>13.18</td>
+      <td>±</td>
+      <td>1.67</td>
+      <td></td>
+      <td>5.02</td>
+      <td>±</td>
+      <td>0.4</td>
+      <td></td>
+      <td>8.46</td>
+      <td>±</td>
+      <td>1.03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19–20</td>
+      <td>12.89</td>
+      <td>±</td>
+      <td>0.57</td>
+      <td></td>
+      <td>14.72</td>
+      <td>±</td>
+      <td>1</td>
+      <td>*</td>
+      <td>15.13</td>
+      <td>±</td>
+      <td>0.74</td>
+      <td></td>
+      <td>18.96</td>
+      <td>±</td>
+      <td>0.96</td>
+      <td>*</td>
+      <td>11.36</td>
+      <td>±</td>
+      <td>0.65</td>
+      <td></td>
+      <td>12.19</td>
+      <td>±</td>
+      <td>1.25</td>
+      <td></td>
+      <td>6.21</td>
+      <td>±</td>
+      <td>0.4</td>
+      <td></td>
+      <td>9.28</td>
+      <td>±</td>
+      <td>1.33</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_ARV=average real variability, BPV=blood pressure variability, DBP=diastolic blood pressure, MAP=mean arterial pressure, PP=pulse pressure, SBP=systolic blood pressure._
+
+### Autonomic function in BPV mice
 
 To compare pressure-induced bradycardic responses between BPV and control mice at both early and later treatment stages, a cohort of control mice received Ang II infusion on days 3–5 (early phase) (Figure 3—figure supplement 1) and days 21–25 (late phase), thereby transiently increasing BP. Ang II evoked significant increases in SBP in both the control and BPV groups which were accompanied by a pronounced bradycardic response, Figure 3A. For a single infusion-evoked BP peak, changes in HR were -∆291±34 bpm (p<0.0001) and -∆304±17 bpm (p<0.0001) for control and BPV mice, respectively (Figure 3B). While each Ang II infusion evoked significant bradycardic responses, the 24 hr HR average was not significantly altered, corresponding to 612±7 and 585±12 bpm for baseline and 570±25 and 546±8 bpm at day 20, for control and BPV mice, respectively, Figure 3C.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/104082/elife-104082-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative raw traces of 24 hr SBP (top) and HR (bottom) during intermittent Ang II infusions. (B) Five-minute average HR when the infusion pump is Off or On (actively infusing Ang II) for control and BPV groups, extracted from the inactive (daytime) period. (C) Twenty-four-hour average HR during the baseline period (~5 day saline infusion), and on day 20 of treatment (Day 20) for control and BPV mice. (D) Scatter plot of SBP and HR during Ang II infusion (100 min: 20 min before and after the 60 min pulse) in the inactive period for control and BPV mice (E). Linear trend lines for data shown in the insert. Early and Late periods correspond to days 3–5 and days 23–25 of the treatment phase, respectively. (F) Scatter plot of SBP and HR during the active period in controls and in BPV mice (G). Two-way ANOVA repeated measures followed by Sidak’s multiple comparisons test (B-C, n=6 control mice, n=8 BPV mice). Simple linear regression and ‘#’ denotes p<0.05 within group (D, F, n=6 control mice) (E, G, n=8 BPV mice).bpm = beats per minute, BPV = blood pressure variability, HR = heart rate, SBP = systolic blood pressure.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/104082/elife-104082-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Summary data of averaged BP (5 min) while the pump is Off or On and infusing Ang II in controls. Data was extracted from the inactive (daytime) period at days 3–5 of treatment protocol. Paired Wilcoxon test (n=6 control mice).DBP = diastolic blood pressure, MAP = mean arterial pressure, P=pulse pressure, SBP = systolic blood pressure.
+
 To assess whether chronic BP fluctuations affect the baroreflex response, we compared the slopes extracted from linear regression of SBP vs HR, focusing on within-group differences, Figure 3D–G. Comparisons were conducted over a 100 min window surrounding a single Ang II-evoked BP pulse (20 min before and after 60 min pulse), occurring during both the active and inactive periods, as well as between the early and late treatment phases. Linear regression analysis of SBP vs HR during Ang II infusion revealed no significant differences in the control group over time (Early vs Late), Figure 3D and F. However, the BPV group exhibited a significant reduction in the bradycardic response, indicated by flatter negative slopes during both the inactive (p<0.0001) and active periods (p<0.001) (Figure 3E and G). These data suggest that chronic (~25 days) BPV diminishes bradycardic responses, indicative of suppressed autonomic function.
 
-## Pulsatile norepinephrine infusion induced BPV
+### Pulsatile norepinephrine infusion induced BPV
 
 To determine whether the observed cardiovascular effects of BPV were limited to Ang II, norepinephrine (NE, 45 µg/kg/min) was utilized as an alternative agent to induce BP variations, Figure 4. The NE dosage was titrated to match Ang II-induced BP transient pulse levels (150–200 mmHg, SBP) using the same subcutaneous delivery protocol (pump on for 1 hr every 4 hr) resulting in 6 pulses/day, Figure 4A. Similar to Ang II-treated mice, NE-treated mice exhibited minimal changes in the 24 hr average MAP throughout the 20 day treatment, Figure 4B. While there was a trend towards increased ARV (p=0.08), it did not reach significance, Figure 4C left panel. However, CV, another BPV index, was significantly increased by day 3 (p=0.02) of the treatment, Figure 4C right panel.
 
@@ -67,9 +910,29 @@ To determine whether the observed cardiovascular effects of BPV were limited to 
 
 In contrast to the bradycardic response observed during Ang II-induced BP elevations, NE-induced BP pulses triggered a tachycardic response (Figure 4A), with significant positive correlation between SBP and HR appearing during the early phase in the treatment (Inactive period, p<0.0001; Active period, p=0.0002), Figure 4D. These data validate the intermittent infusion protocol as an effective method for inducing significant BPV while preserving normal 24 hr MAP. However, due to fundamental differences in bradycardic responses and the presence of off-target effects, the physiological actions of this vasopressor agent are not directly comparable to those of Ang II. These results underscore the necessity of careful vasopressor selection to mitigate off-target effects.
 
-## Chronic BPV enhanced parenchymal arteriole myogenic responses
+### Chronic BPV enhanced parenchymal arteriole myogenic responses
 
 CBF regulation involves complex processes that maintain the metabolic needs of working neurons. These include mechanisms active at baseline (e.g. cerebral autoregulation Claassen et al., 2021 and endothelial cell-mediated signaling Longden et al., 2017) and those involved in activity-mediated increases in CBF or neurovascular coupling (NVC) (Iadecola, 2017). To assess if BPV impacts the functional integrity of the neurovascular complex, we measured parenchymal arteriole responses to acute BP increases and determined if BP itself altered the sensory-evoked arteriole response. For these studies, in vivo two-photon imaging was combined with BP measurements via telemetry, Figures 5 and 6.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/104082/elife-104082-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of the experimental set-up, including a portable telemetry system for continuous blood pressure recordings alongside simultaneous 2 P imaging of parenchymal arteriole diameter. Created with BioRender.com. (B) Summary data for the average imaging depth below the brain surface. (C) Summary data for the average baseline diameters of imaged parenchymal arterioles. (D) Summary data of the average MAP recorded under infusion pump off conditions (low blood pressure, Low BP) and infusion pump on conditions (high blood pressure, High BP). (E) Representative raw trace (from a single mouse) showing MAP (top) and parenchymal arteriole diameter (bottom) over time. (F) Expanded data corresponding to dashed region in (E), highlighting Ang II-evoked BP changes. (G) Representative scatter plot and linear regression of MAP vs parenchymal arteriole diameter during an imaging session. (H) Summary data of MAP-diameter linear regression slopes. (I) Relationship between minimum MAP recorded during an imaging run and the slope shown in (H); dashed lines indicate the percent ∆ change in MAP relative to its minimum value. The insert provides a summary of percent ∆ change in MAP from the minimum MAP. (J) Scatter plot of MAP vs changes in arteriole diameter from baseline pressure (~70 mmHg), spanning a pressure range 46–122 mmHg. Data subsets extracted from (J): (K) MAP ≤51 mmHg (orange dashed region), (L) MAP 51-100 mmHg (green dashed region), and (M) MAP ≥101 mmHg (blue dashed region). (N) Illustration of the proposed leftward shift (and narrower plateau) in cerebral autoregulatory curve induced by chronic BPV. Created with BioRender.com. Unpaired t-test and Mann-Whitney test (B-C, H-I, n=10 runs/8 control mice, n=11 runs/8 BPV mice). Two-way ANOVA repeated measures followed by Sidak’s multiple comparison test (D, n=10 runs/8 control mice, n=11 runs/8 BPV mice). Simple linear regression and ‘#’ denotes p<0.05 between group (J-M, n=12 runs/9 control mice, n=8 runs/7 BPV mice).BPV = blood pressure variability, MAP = mean arterial pressure.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104082/elife-104082-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Summary data for averaged BP corresponding to the Low-to-High BP transition. (B) Representative raw trace showing MAP (top) and parenchymal arteriole diameter (bottom) during Low-to-High MAP transition shaded in orange (left) and the corresponding representative scatter plot of MAP vs parenchymal arteriole diameter (right). (C) Summary of MAP-diameter linear regression slopes corresponding to Low-to-High MAP transition. (D) Summary data of the average high and low MAP recorded immediately following cessation of pump infusion and blood pressure transitions from high to low BP (High-to-Low). (E) Representative raw trace showing MAP (top) and parenchymal arteriole diameter (bottom) during High-to-Low MAP transition shaded in green (left) and the corresponding representative scatter plot of MAP vs parenchymal arteriole diameter (right). (F) Summary of MAP-diameter linear regression slopes corresponding to High-to-Low MAP transition. Two-way ANOVA repeated measures followed by Sidak’s multiple comparisons test (A, n=12 runs/7 control mice, n=14 runs/8 BPV mice) (D, n=10 runs/8 control mice, n=12 runs/7 BPV mice). Unpaired t-test and Mann-Whitney test (C, n=12 runs/7 control mice, n=14 runs/8 BPV mice) (F, n=10 runs/8 control mice, n=12 runs/7 BPV mice).BPV = blood pressure variability, MAP = mean arterial pressure.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/104082/elife-104082-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–B) Representative raw traces (from one mouse) of MAP (top) and parenchymal arteriole diameter (bottom) showing WS-evoked dilations (A) and random dilatory events (B). Gray dashed rectangles outline the period when the pump is on and BP transitions to higher values (Ang II infusion). (C–F) Expanded data corresponding to the dashed rectangle shown in (A–B), with dilatory responses to WS outlined within green dashed rectangles (C) and transient dilatory events shown within orange dashed rectangles (D). (E–F) Representative raw traces of MAP (top) and parenchymal arteriole diameter (bottom) following removal of sensory-evoked dilations (C) or the random dilatory events outlined in (D). (G–H) Scatter plot and resultant linear regression line of the filtered MAP vs parenchymal diameter corresponding to (E–F).MAP = mean arterial pressure.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/104082/elife-104082-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic of the experimental setup in which a picospritzer delivered a puff of air for whisker stimulation (WS) at 10 Hz for 20 s. Created with BioRender.com. (B) Representative image showing the mask (outlined) used to track changes in parenchymal arteriole diameter. (C) Summarized data of average MAP recorded during low blood pressure (Low BP; pump off) and high blood pressure (High BP; pump on) conditions. (D) Summary data of the average imaging depth below the brain surface. (E) Representative raw trace (from a single mouse) showing MAP (top) and parenchymal arteriole diameter (bottom) during low and high blood pressure. Dashed green squares indicate WS response, with ‘a’ denoting the 30 s pre-stimulus diameter and ‘b’ denoting the 30 s post-stimulus diameter, summarized in (F). (G) Normalized averaged arteriole diameter traces with corresponding error bars (dashed lines) during the WS response, shown as % change from baseline (20 s before stimulus), during the 20 sstimulus (green shaded region), and 64 s post-stimulus (green dashed square). (H) Summarized data of stimulus-induced arteriole responses (green shaded region in G). (I) Summary data of recovery time, with rate of decay (ƙ) corresponding to 30 s post-stimulus period outlined in the green dashed square in (G). Two-way ANOVA repeated measures followed by Sidak’s multiple comparisons test (C–D, n=7 control mice, 5 BPV mice) (F, n=5–8 control mice, n=6–7 BPV mice) and (H, n=5–8 control mice, n=6–7 BPV mice). One-phase exponential decay nonlinear fit (I, n=5–8 control mice, n=6–7 BPV mice).BPV = blood pressure variability, k=rate of decay, MAP = mean arterial pressure, WS = whisker stimulation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/104082/elife-104082-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Summarized data of 24 hr MAP at baseline (5 days saline infusion) in mice with (+) or without (-) a cranial window. (B) Summarized data of two-day average MAP at baseline and 20 days of treatment. Spring-Summer corresponds to warmer months (May-September), and Fall-Winter corresponds to colder months (October-April). Mann-Whitney test (A, n=14 mice with craniotomy, 6 without craniotomy). Two-way ANOVA repeated measures followed by Sidak’s multiple comparisons test (B, n=11 mice in Spring-Summer, 9 mice in Fall-Winter).MAP = mean arterial pressure.
 
 To determine the impact of acute BP changes on the microcirculation, we simultaneously tracked parenchymal arteriole diameter changes before pump infusion onset (Low BP), and during Ang II infusions (High BP), Figure 5E. For these experiments, and prior to the imaging session, the pump reservoir for the control group was switched from saline to Ang II. Imaging was conducted at similar cortical depths (~layer 1/2 border of the somatosensory cortex) corresponding to 106±11.6 µm and 102±4.3 µm for control and BPV mice, respectively, Figure 5B. Arteriole diameters measured at baseline (Low BP) were comparable between groups, corresponding to 18.6±1.1 µm and 19±1.0 µm for controls and BPV mice, respectively, Figure 5C. Upon mild sedation resting BP dropped by –23±3.6 mmHg and –31±4.4 mmHg for the control and BPV group, respectively (not shown). However, BP values remained within the putative cerebral autoregulation plateau range throughout two-photon imaging sessions and were comparable between groups. During the pump infusion period (High BP), the BP increased from 68±4.2–102±5.9 mmHg for controls (p<0.0001) and from 59±4.5–96±6.4 mmHg for BPV mice (p<0.0001), Figure 5D.
 
@@ -79,19 +942,19 @@ The static cerebral autoregulation curve (CA), originally described by Lassen in
 
 Previous studies have shown directional sensitivity in parenchymal arteriole responses, whereby increases in MAP evoke more efficient responses as compared to decreases in MAP. Thus, we separated and quantified diameter changes evoked by BP transitions from Low-to-High (increase MAP) and High-to-Low BP (decrease MAP), Figure 5—figure supplement 1A–F. Ang II infusion evoked similar increases in MAP when BP transitioned from Low-to-High ∆27±3.6 mmHg in controls and ∆25±3.6 mmHg in BPV mice, Figure 5—figure supplement 1A. In addition, MAP decreases were comparable between groups (-∆21±2.8 mmHg for controls and -∆25±3.1 mmHg for BPV mice) upon cessation of pump infusion (High-to-Low), Figure 5—figure supplement 1D. The significantly steeper negative slopes in BPV arterioles relative to controls (p=0.0117, Low-to-High) (Figure 5—figure supplement 1C) demonstrate increased parenchymal arteriole constriction to increases in MAP. Conversely, we also observed steeper negative slopes in BPV arterioles compared to controls (p=0.0044, High-to-Low) (Figure 5—figure supplement 1F) with decreases in MAP suggestive of enhanced arteriole dilations. Collectively, these findings indicate that chronic BPV heightens the responsiveness of parenchymal arterioles to acute BP fluctuations.
 
-## Impaired NVC in high BPV mice
+### Impaired NVC in high BPV mice
 
 Because mechanisms underlying baseline CBF regulation differ from those evoked during the functional hyperemia response, we assessed whether chronic BPV affected functional-evoked outputs or neurovascular coupling (NVC). Functional hyperemia was assessed using two-photon imaging and evoked using air puffs to stimulate mouse whiskers. Blood pressure measurements were simultaneously measured via telemetry, Figure 6A. While sensory-evoked vascular responses are commonly used as a proxy for neuronal activation and function (Faraco et al., 2016; Lecrux et al., 2011), few studies have considered (or reported) BP during these in vivo protocols. Thus, we asked if chronic and acute BP fluctuations alter the NVC response at the level of parenchymal arterioles, Figure 6B. NVC responses were compared during low and high BP periods corresponding to pumps being off or on, respectively, Figure 6E.
 
 The average baseline (low BP) MAP was 78±2.5 mmHg and 71.0±3.4 for the control and BPV group, respectively, Figure 6C. Imaging was conducted at similar cortical depths within ~layers 1/2 border of the somatosensory cortex, corresponding to 107±1.0 µm and 96±0.4 µm for control and BPV arterioles, respectively, Figure 6D. To compare NVC responses at low and high BP, the pump reservoir for the control group was switched from saline to Ang II. Ang II infusion evoked significant (and comparable) increases in MAP, corresponding to 92±3.5 mmHg for controls and 92±5.7 mmHg for BPV mice, Figure 6C. Figure 6E, show a representative trace of the simultaneous MAP and arteriole diameter changes; WS denotes the stimulation period and ‘a’ and ‘b’ the timepoint from where diameters where measured before and after the stimulus, respectively and summarized in Figure 6F. Whisker stimulation caused significant dilations (vs. baseline) in all groups, regardless of MAP, Figure 6G and H. However, at higher BP, the magnitude of the NVC response in control mice was greater (p<0.0001, high BP vs low BP). Notably, this pressure-dependent response was abrogated (p=0.60) in the BPV group, Figure 6G and H. A closer look at the post-stimulus recovery phase showed a faster recovery rate (k=–0.45) for parenchymal arterioles of BPV mice during high BP periods compared to controls (p<0.0001), Figure 6I. These data revealed an acute pressure-dependent effect in control mice, with higher pressures resulting in greater sensory-evoked dilations. Additionally, the data shows that chronic BP fluctuations abrogated the pressure-dependent effects observed in control mice.
 
-## Cognitive decline in high BPV mice
+### Cognitive decline in high BPV mice
 
 Given impaired neurovascular outputs and the established association between high BPV and cognitive decline (McGrath et al., 2017), we used the NOR and Y-maze tests to assess cognitive performance. Mice were subjected to behavioral testing during the saline-infused period and following 25 days of BPV (via Ang II infusions). Using NOR, a significant decrease in the recognition index (p=0.006) and discriminatory index (p=0.006) was observed (Figure 7A), supporting impaired recognition memory. No differences were observed in the short-term spatial working memory assessed via Y-maze alternation (p=0.25), Figure 7B.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/104082/elife-104082-fig7-v1.jpg)
 
-**Figure 7.:** .(A) Schematic of the novel object recognition test with a 1 hr delay between the A-A and A-B trials (top), accompanied by summarized recognition and discriminatory index data for mice during the saline infusion period (baseline) and following 25 days of pulsatile Ang II infusion (Ang II). Created with BioRender.com. (B) Diagram of 10 min spontaneous Y-maze experimental setup (top) and the summary of % alternation and distance traveled during baseline and after 25 days of Ang II treatment (bottom). (C) Summary data of two-day, 24 hr activity averages throughout treatment during active and inactive periods, with the Baseline phase (~5 day saline infusion) marked by the dashed rectangle. (D) Summary data of 24 hour averaged activity recorded when the infusion pump was on vs off during Early (days 3–5) and Late (days 23–25) treatment phases. (E) Summary of activity when the pump is on vs off during the Early and Late phases of treatment for the inactive cycle. (F) Summary of activity when the pump is on vs off during the Early and Late phases of treatment for the active cycle. Paired t-test (A, n=10 BPV mice), (B, n=11 BPV mice). Two-way ANOVA repeated measures followed by Tukey’s comparison test (C, n=13 control mice, n=8 BPV mice) (D-F, n=6 control mice, n=8 BPV mice). ‘*’ denotes p<0.05 vs Baseline for control, active period. ‘$’ and ‘∆’ denote p<0.05 (active vs inactive period) for control and BPV, respectively.AU = arbitrary units, BPV = blood pressure variability.
+**Figure 7.:** (A) Schematic of the novel object recognition test with a 1 hr delay between the A-A and A-B trials (top), accompanied by summarized recognition and discriminatory index data for mice during the saline infusion period (baseline) and following 25 days of pulsatile Ang II infusion (Ang II). Created with BioRender.com. (B) Diagram of 10 min spontaneous Y-maze experimental setup (top) and the summary of % alternation and distance traveled during baseline and after 25 days of Ang II treatment (bottom). (C) Summary data of two-day, 24 hr activity averages throughout treatment during active and inactive periods, with the Baseline phase (~5 day saline infusion) marked by the dashed rectangle. (D) Summary data of 24 hour averaged activity recorded when the infusion pump was on vs off during Early (days 3–5) and Late (days 23–25) treatment phases. (E) Summary of activity when the pump is on vs off during the Early and Late phases of treatment for the inactive cycle. (F) Summary of activity when the pump is on vs off during the Early and Late phases of treatment for the active cycle. Paired t-test (A, n=10 BPV mice), (B, n=11 BPV mice). Two-way ANOVA repeated measures followed by Tukey’s comparison test (C, n=13 control mice, n=8 BPV mice) (D-F, n=6 control mice, n=8 BPV mice). ‘*’ denotes p<0.05 vs Baseline for control, active period. ‘$’ and ‘∆’ denote p<0.05 (active vs inactive period) for control and BPV, respectively.AU = arbitrary units, BPV = blood pressure variability.
 
 Mice activity levels were evaluated as another aspect of behavior. Throughout the study, activity remained consistently higher during the active vs inactive periods (p=0.049 for control, p=0.0287 for BPV), Figure 7C. However, following 23–25 days of treatment (Late), BPV mice exhibited a significant reduction in activity when the pump was on. This decline was evident in the 24 hr average data (p=0.0111, Figure 7D), as well as during the active period of the 12 hr activity averages (pump on vs off, p=0.0122, Figure 7F). These data support that mice subjected to chronic BPV become less active when the BP increases or the pump status is on. Notably, while the infusion protocol preserves BP-related circadian rhythms, 25 days of chronic BPV negatively impacts both recognition memory and overall activity levels.
 
@@ -123,63 +986,63 @@ Beyond blunting NVC, our study demonstrates that chronic BPV contributes to cogn
 
 To assess cognitive function, we employed the NOR test to evaluate episodic memory (Antunes and Biala, 2012) and the spontaneous Y maze test to assess short-term spatial memory (Kraeuter et al., 2019). Because telemetry systems necessitated individual housing to avoid signal interference, all mice used in this study were single-housed. Previous studies on C57BL/6 mice have reported conflicting effects of single housing on learning and memory (Liu et al., 2020; Benfato et al., 2022; Magalhães et al., 2024), with some suggesting stress-induced deficits and others reporting no impact (Hu et al., 2023; Panossian et al., 2020; Lander et al., 2017; Smolensky et al., 2024). These discrepancies may stem from variables such as age at isolation onset, duration of isolation, and behavioral test conditions. To minimize confounding factors, we implemented stringent efforts to ensure consistency across all groups, including standardized cage changes, food replenishment, and pump refills conducted on a single day between 1:00 and 4:00 PM. Our results indicate that while 25 days of chronic BPV does not affect short-term spatial memory, it significantly impairs episodic memory.
 
-## Conclusions
+### Conclusions
 
 Our study demonstrates that high BPV disrupts cellular communication in the neurovascular complex, contributing to cognitive decline. Importantly, our model elicited substantial BP fluctuations while preventing the onset of hypertension, providing direct evidence of BPV’s causal role in impaired neurovascular function. These findings support the inclusion of BPV assessment as a critical screening and diagnostic tool alongside conventional BP measurements to address cardiovascular and neurovascular risks. Moreover, the adaptable murine model developed in this study offers a robust framework for future investigations into BPV’s impact on brain function.
 
 ## Methods
 
-## Animals
+### Animals
 
 All experiments were conducted in middle-aged (12–15 month-old) male C57BL/6 mice (Jackson Laboratories) under protocols approved by the Institutional Animal Care and Use Committee of Augusta University (AU). Mice were housed at 20–22°C under a 12 hr:12 hr light-dark cycle with ad libitum access to food and water. Female mice were not included in the present study due to high post-surgery mortality observed in 12–14 month-old mice following complex procedures. To minimize confounding effects of differential survival and to establish foundational data for this model, we restricted the investigation to male mice.
 
-## Craniotomy surgery for chronic window
+### Craniotomy surgery for chronic window
 
 Surgeries were conducted using the aseptic technique. Animals were injected with dexamethasone and meloxicam 2–4 hr before surgery to prevent edema and/or inflammation. General anesthesia was induced with isoflurane (2%) and following loss of reflex, hair was removed from the scalp and the mouse was transferred to a sterile field. A single injection of ketamine/dexdomitor (60 mg/kg/0.5 mg/kg) was administered to maintain anesthesia in the sterile field. The scalp was scrubbed with betadine/alcohol (three times each, alternating). A scalp incision was made (~1 cm). A small aluminum head holder (300 mg) was fixed to the skull using cyanoacrylate glue followed by dental cement and a small craniotomy opened over the cortex. The bone flap was removed. A glass coverslip (3 mm) was glued to a 4 mm coverslip and placed into the craniotomy with the inner glass touching the cortex. The edges of the coverslip were then sealed with cyanoacrylate glue followed by dental cement covering everything, including the wound margins.
 
-## Telemetry and iPrecio pump implantation surgery
+### Telemetry and iPrecio pump implantation surgery
 
 Following a 3 week recovery period after craniotomy surgery, mice were implanted with a programmable pump (iPrecio, SMP-310R) and a biotelemetry transmitter device (PA-C10, Data Science International). Mice underwent brief anesthesia in a small chamber using 5% isoflurane for induction, followed by maintenance of anesthesia via a nose mask with 1.5–2% isoflurane. The neck fur was carefully clipped on both the anterior and posterior sides. Subsequently, mice were placed in a sterile field in a ventrally recumbent position, and a 1.5–2 cm horizontal incision was made. The pump and biotelemetry transmitter device were then implanted subcutaneously. The pump catheter was trimmed to 0.5 cm for subcutaneous drug delivery, while the telemeter catheter was tunneled subcutaneously over the shoulder, with its tip positioned within the left carotid artery. Closure of incisions was performed using 5–0 sutures, after which the mice were gradually brought out of anesthesia. It is important to note that due to the complexity of the surgeries involved, mice used for behavioral studies were not implanted with a telemetry catheter or cranial window. However, these mice were individually housed to simulate the conditions of the telemetry cohort.
 
-## Blood pressure assessment and BPV induction
+### Blood pressure assessment and BPV induction
 
 After recovery from surgery, mice were housed individually in standard mouse cages under the conditions described above and assigned to a control or experimental BPV group. During this recovery period (~7 days), both groups were infused with saline to determine baseline cardiovascular parameters. Blood pressure signals encompassing mean arterial pressure (MAP), systolic blood pressure (SBP), diastolic blood pressure (DBP), heart rate (HR), and pulse pressure (PP) (determined from the difference between the SBP and DBP) were continuously sampled at 250 Hz for 10 seconds and collected every 30 s, for 24 hr per day. Once a baseline MAP was established, the saline in the infusion pump (in the BPV group) was substituted with angiotensin II (Ang II, Sigma Aldrich, A9525) and administered intermittently at a calculated dose of 3.1 µg/hr (every 3–4 hr) for 25 days.
 
-## Controls receiving Ang II
+#### Controls receiving Ang II
 
 To facilitate between-group comparisons (control vs BPV), a cohort of control mice were subjected to the same pump infusion parameters as BPV mice but for shorter durations receiving Ang II infusions on days 3–5 and, then again, on days 21–25 of the experimental protocol. This paradigm was used for experiments assessing pressure-evoked responses, including bradycardic reflex, myogenic response, and functional hyperemia at high BP.
 
-## BPV induction with norepinephrine
+#### BPV induction with norepinephrine
 
 To validate the intermittent infusion protocol as an effective method for inducing significant BPV and not limited to Ang II, a separate cohort of mice received norepinephrine (NE, 45 µg/kg/min) using the same subcutaneous delivery protocol (2 µL every 4 hr).
 
-## Two-photon imaging
+### Two-photon imaging
 
 On the day of two-photon imaging acquisition, a mouse was anesthetized with chlorprothixene (0.04 cc) and a low dose of isoflurane (≤0.8%); a protocol to mildly sedate mice (O’Herron et al., 2022). A retro-orbital injection of Texas red (70 kDa dextran, 5% [wt/vol] in saline, 40 µl) was administered to label blood vessels. The mouse was head-fixed and a picospritzer (positioned on the contralateral hemisphere intended for imaging) was used to deliver a puff of air for whisker stimulation (WS) at a rate of 10 Hz for 20 s repeated six to eight times with ~90 s delay between each WS during an imaging session. Imaging sessions were conducted 106±3.6 µm below the brain’s surface while pump infusion was off (low BP period) and again during Ang II infusions (high BP period). Images were collected at a rate of 3.75 frames/second.
 
-## Behavioral studies
+### Behavioral studies
 
 Behavioral tasks were performed by an experimenter at the AU small animal behavioral core (SABC), who was blinded to the experimental protocol. BPV mice were subjected to behavioral tests at two time points. First, during the saline infusion period, with observations considered as baseline, and second, 25–26 days post-Ang II infusions. About 30 min before training and testing, animals were brought to the testing room to acclimate. Animals remained in the laboratory for 15 min following study completion. To eliminate olfactory cues, animal droppings were removed, and the space and objects were cleaned (dilute 50% (vol/vol) ethanol solution) between sessions where appropriate.
 
-## Novel object recognition (NOR) task
+#### Novel object recognition (NOR) task
 
-Animal behavior was assessed using the previously described NOR task procedure (Callahan et al., 2021). Animals were acclimated and then familiarized with an opaque plastic chamber (78.7 cm × 39.4 cm × 31.7 cm) containing bedding for 10 min. The next day, a training session involved animals exploring two identical objects for 10 min before returning to their home cages. Object recognition was assessed one hour later by placing an animal in the NOR apparatus with a familiar object and a new or novel object for 10 min. The objects' positions and roles (familiar or novel) were randomly assigned. Objects were positioned about 40 cm apart, 19.3 cm from the two short walls and 19.3 cm from the two long walls of the chamber. Exploration of an object was defined as direct interaction with nostrils or head position towards the object at a distance ≤2 cm. For data inclusion, a mouse had to explore an object for at least 4 s and spend a minimum of 10 seconds of total object exploration. Recognition index was calculated using the formula: RecognitionIndex=(timespentatnovelobject)(timespentatnovel+familiarobjects)\begin{document}$Recognition\, Index=\frac{\left (time\, spent\, at\, novel\, object\mathrm{\, }\right)}{\left (time\, spent\, at\, novel+familiar\, objects\right)}$\end{document}. The discrimination index was calculated as: DiscriminationRatio=(timespentatnovel−familiarobject)(timespentatnovel+familiarobjects)\begin{document}$Discrimination\, Ratio=\frac{\left (time\, spent\, at\, novel-familiar\, object\right)}{\left (time\, spent\, at\, novel+familiar\, objects\right)}$\end{document}. The one-hour delay for testing was determined based on earlier NOR tests assessing the cohort’s recognition capacity at 1, 4, and 24 hr delays. The animals exhibited normal recognition capacity with a 1 hr delay but failed at 4- and 24 hr delays. Hence, the one-hour delay was selected for subsequent tests.
+Animal behavior was assessed using the previously described NOR task procedure (Callahan et al., 2021). Animals were acclimated and then familiarized with an opaque plastic chamber (78.7 cm × 39.4 cm × 31.7 cm) containing bedding for 10 min. The next day, a training session involved animals exploring two identical objects for 10 min before returning to their home cages. Object recognition was assessed one hour later by placing an animal in the NOR apparatus with a familiar object and a new or novel object for 10 min. The objects' positions and roles (familiar or novel) were randomly assigned. Objects were positioned about 40 cm apart, 19.3 cm from the two short walls and 19.3 cm from the two long walls of the chamber. Exploration of an object was defined as direct interaction with nostrils or head position towards the object at a distance ≤2 cm. For data inclusion, a mouse had to explore an object for at least 4 s and spend a minimum of 10 seconds of total object exploration. Recognition index was calculated using the formula: $RecognitionIndex=\frac{(timespentatnovelobject)}{(timespentatnovel+familiarobjects)}$. The discrimination index was calculated as: $DiscriminationRatio=\frac{(timespentatnovel−familiarobject)}{(timespentatnovel+familiarobjects)}$. The one-hour delay for testing was determined based on earlier NOR tests assessing the cohort’s recognition capacity at 1, 4, and 24 hr delays. The animals exhibited normal recognition capacity with a 1 hr delay but failed at 4- and 24 hr delays. Hence, the one-hour delay was selected for subsequent tests.
 
-## Y-maze
+#### Y-maze
 
 Y-maze tasks were performed 24 hr after NOR tasks. The Y-maze consisted of three arms (35.4 cm long, 9.9 cm wide with a height of 13.8 cm). Spontaneous alternation behavior was assessed by randomly placing mice in one of the three arms and allowed them to explore for 10 min. Arm entries were visually scored into a series where a triplet set of arm entries constituted an alternation. An alternation was defined as successive consecutive entries into three different arms, and maximum alternations as the total number of arm entries minus 2. Percent alternation was calculated as the proportion of true alternations out of maximum alternations ((# of true alternations/# of maximum alternations) × 100).
 
-## Data analysis
+### Data analysis
 
-Two-day averaged values of 24 hr or 12 hr (active and inactive period) BP variables were compared to a baseline phase corresponding to saline infusion (~5 days). BPV was calculated using the average real variability (ARV) index (ARV=1N−1∑K=1N−1×|BPK+1−BPK|)\begin{document}$(\text{ARV} = \frac{1}{\rm N - 1} \sum_{\rm K=1}^{\rm N-1}\times \left| \text{BP}_{\rm K+1} - \text{BP}_\rm K \right|)$\end{document},  where K is the order of measurements and N denotes the number of BP readings. Absolute BP values were extracted every 15 min and averaged for the hour. The coefficient of variation (CV) was also used to calculate BPV. CV was calculated as the ratio of the standard deviation of hourly BP averages to the 24 hr BP average (CV=StandardDeviation(HourlyBPAverage)24HourBPAverage\begin{document}$\mathrm{C}\mathrm{V}=\frac{\mathrm{S}\mathrm{t}\mathrm{a}\mathrm{n}\mathrm{d}\mathrm{a}\mathrm{r}\mathrm{d}\mathrm{\, }\mathrm{D}\mathrm{e}\mathrm{v}\mathrm{i}\mathrm{a}\mathrm{t}\mathrm{i}\mathrm{o}\mathrm{n}\mathrm{\, }\left (\mathrm{H}\mathrm{o}\mathrm{u}\mathrm{r}\mathrm{l}\mathrm{y}\mathrm{\, }\mathrm{B}\mathrm{P}\mathrm{\, }\mathrm{A}\mathrm{v}\mathrm{e}\mathrm{r}\mathrm{a}\mathrm{g}\mathrm{e}\right)}{24\mathrm{\, }\mathrm{H}\mathrm{o}\mathrm{u}\mathrm{r}\mathrm{\, }\mathrm{B}\mathrm{P}\mathrm{\, }\mathrm{A}\mathrm{v}\mathrm{e}\mathrm{r}\mathrm{a}\mathrm{g}\mathrm{e}}$\end{document}). Similar to BP variables, two-day averages of 24 hr and 12 hr ARV and CV were compared to the average value of the last 5 days during the baseline phase. Parenchymal arteriole diameter responses to changes in MAP (myogenic responses) and whisker stimulation were analyzed using MatLab and ImageJ (Chhatbar and Kara, 2013; O’Herron et al., 2016). Simple linear regression determined from the relationship of SBP and HR assessed bradycardic responses; MAP and arteriole diameter changes assessed myogenic reactivity. For neurovascular coupling experiments, the baseline was defined as 30 frames before stimulus onset. The stimulus-response comprised 100 frames encompassing the 20 s stimulus and the first 6 s post-stimulus. Six to eight WS events were averaged for each run and responses were normalized to the baseline average.
+Two-day averaged values of 24 hr or 12 hr (active and inactive period) BP variables were compared to a baseline phase corresponding to saline infusion (~5 days). BPV was calculated using the average real variability (ARV) index $(ARV=\frac{1}{N−1}\sumK=1N−1\times|BP_{K+1}−BP_{K}|)$,  where K is the order of measurements and N denotes the number of BP readings. Absolute BP values were extracted every 15 min and averaged for the hour. The coefficient of variation (CV) was also used to calculate BPV. CV was calculated as the ratio of the standard deviation of hourly BP averages to the 24 hr BP average ($CV=\frac{StandardDeviation(HourlyBPAverage)}{24HourBPAverage}$). Similar to BP variables, two-day averages of 24 hr and 12 hr ARV and CV were compared to the average value of the last 5 days during the baseline phase. Parenchymal arteriole diameter responses to changes in MAP (myogenic responses) and whisker stimulation were analyzed using MatLab and ImageJ (Chhatbar and Kara, 2013; O’Herron et al., 2016). Simple linear regression determined from the relationship of SBP and HR assessed bradycardic responses; MAP and arteriole diameter changes assessed myogenic reactivity. For neurovascular coupling experiments, the baseline was defined as 30 frames before stimulus onset. The stimulus-response comprised 100 frames encompassing the 20 s stimulus and the first 6 s post-stimulus. Six to eight WS events were averaged for each run and responses were normalized to the baseline average.
 
-## Exclusion criteria
+#### Exclusion criteria
 
 Mice that died prematurely (before treatment onset) or exhibited abnormally elevated or low blood pressures following telemetry surgery, likely due to surgical complications, were excluded from the study.
 
 During two-photon imaging sessions, we observed unexplained, random transient dilatory events (Figure 5—figure supplement 2B, D) occurring in both control and BPV mice across low- and high-BP periods. Because similar random dilations have been documented in other mouse strains under comparable in vivo imaging conditions, these events may be attributed to the effects of the sedative. To isolate pressure-evoked parenchymal arteriole responses in the myogenic studies (Figure 5), transient dilatory events associated with baseline tone were excluded from the analysis, Figure 5—figure supplement 2F.
 
-## Study limitations
+#### Study limitations
 
 Experiments involving control and BPV mice were conducted across different seasons, raising the possibility for seasonal influences (Suckow and Tirado-Muñiz, 2023; Kastenmayer et al., 2006). To account for this, seven additional control mice were included to the original thirteen control mice, Figure 6—figure supplement 1. Six of these mice underwent identical treatment but were allocated to a separate branch of the study and did not receive chronic cranial window implantation−a procedure that does not significantly affect BP, Figure 6—figure supplement 1A. No differences in 24 hr averaged MAP were observed between control mice when grouped categorized by Georgia’s seasonal climate Fall-Winter (October-April) vs Spring-Summer (May-September), Figure 6—figure supplement 1B. Given the absence of seasonal effects on BP and the fact that mice were sourced from two independent suppliers (Jackson Laboratory and the National Institute of Aging Aged Colonies), we attribute our observations primarily to treatment effects.
 

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Mitochondrial Ca 2+ uptake is mediated by an inner mitochondrial membrane protein called the mitochondrial calcium uniporter. In humans, the uniporter functions as a holocomplex consisting of MCU, EMRE, MICU1 and MICU2, among which MCU and EMRE form a subcomplex and function as the conductive channel while MICU1 and MICU2 are EF-hand proteins that regulate the channel activity in a Ca 2+ -dependent manner. Here, we present the EM structures of the human mitochondrial calcium uniporter holocomplex (uniplex) in the presence and absence of Ca 2+ , revealing distinct Ca 2+ dependent assembly of the uniplex. Our structural observations suggest that Ca 2+ changes the dimerization interaction between MICU1 and MICU2, which in turn determines how the MICU1-MICU2 subcomplex interacts with the MCU-EMRE channel and, consequently, changes the distribution of the uniplex assemblies between the blocked and unblocked states.
+Mitochondrial Ca2+ uptake is mediated by an inner mitochondrial membrane protein called the mitochondrial calcium uniporter. In humans, the uniporter functions as a holocomplex consisting of MCU, EMRE, MICU1 and MICU2, among which MCU and EMRE form a subcomplex and function as the conductive channel while MICU1 and MICU2 are EF-hand proteins that regulate the channel activity in a Ca2+-dependent manner. Here, we present the EM structures of the human mitochondrial calcium uniporter holocomplex (uniplex) in the presence and absence of Ca2+, revealing distinct Ca2+ dependent assembly of the uniplex. Our structural observations suggest that Ca2+ changes the dimerization interaction between MICU1 and MICU2, which in turn determines how the MICU1-MICU2 subcomplex interacts with the MCU-EMRE channel and, consequently, changes the distribution of the uniplex assemblies between the blocked and unblocked states.
 
 ## Introduction
 
@@ -34,27 +34,69 @@ Since the molecular identification of the uniplex composition, multiple structur
 
 ## Results
 
-## Biochemistry and structure determination of the human MCU holocomplex
+### Biochemistry and structure determination of the human MCU holocomplex
 
 Our previous structural study demonstrated that human MCU and EMRE together function as a conductive channel by assembling into a tightly packed subcomplex in which four MCU subunits form the ion conduction pore, which is stabilized by four EMRE subunits that sits on the periphery (Wang et al., 2019; Figure 1—figure supplement 1). Two MCU-EMRE subcomplexes can further dimerize through electrostatic interactions along an interface at the N-terminal domain of MCU. To obtain the uniporter holocomplex (or uniplex), we first prepared the MCU-EMRE subcomplex by co-expressing MCU and EMRE in HEK293 cells and purifying the subcomplex in detergent followed by reconstitution into lipid nanodisc as previously described (Wang et al., 2019). MICU1 and MICU2 were expressed individually in E. coli and purified as described in the Materials and methods. The uniplex consisting of MCU-EMRE-MICU1-MICU2 was then reconstituted in vitro by mixing the MCU-EMRE subcomplex nanodisc with excessive amounts of MICU1 and MICU2 followed by purification using size exclusion chromatography (SEC). To obtain the uniplex samples in the Ca2+-bound and Ca2+-free state for cryo-EM studies, the buffers used in the final SEC purification step contained either 2 mM Ca2+ or 2 mM EGTA without Ca2+, respectively. The SEC elution volume of the purified uniplex indicates a size much larger than the dimeric form of the MCU-EMRE subcomplex, suggesting that the uniplex also forms a dimer in solution (Figure 1—figure supplement 2).
 
 3D classification of the uniplex sample prepared in the presence of Ca2+ yielded one major class that shows clear density of a V-shaped dimer of the MCU-EMRE subcomplexes with their tops bridged by a heterotetramer of MICU1 and MICU2 (Figure 1a and Figure 1—figure supplement 3). To better resolve the MICU1 and MICU2 in the uniplex, we subsequently performed focused 3D classification by masking around the region of the MICU1-MICU2 heterotetramer, and the final EM map was refined to 4.2 Å (Materials and methods, Figure 1—figure supplement 3 and Figure 1—source data 1). On the contrary, the particles of the uniplex sample prepared in the absence of Ca2+ were heterogeneous and could be classified into four classes with distinct conformations, indicating a diverse spectrum of uniplex assemblies (Figure 1b, Figure 1—figure supplement 4, and Figure 1—source data 1). The major class of particles (class 1) represents a blocked uniplex in which a heterodimer of MICU1 and MICU2 blocks the central ion conduction pore of a monomeric MCU-EMRE subcomplex. Similar MICU1-MICU2 blocking is also observed in the second class (class 2) with the exception being that MCU-EMRE subcomplex retains its dimeric form. By C2 symmetry expansion, particles of this class were combined with those of class one and yielded the structure of a blocked uniplex at 4.6 Å resolution (Materials and methods, Figure 1—figure supplements 4 and 5, and Figure 1—source data 1). The MICU1 and MICU2 in the EM maps of classes 3 and 4 were poorly resolved relative to the rest of the uniplex, likely due to their conformational heterogeneity. In the EM-map of class three that was determined at 4.7 Å, MICU1 and MICU2 form a heterotetramer and bridge the dimeric form of the MCU-EMRE subcomplex similar to that observed in the Ca2+-bound uniplex. Interestingly, the structure of class four represents a competing conformation in which both the MICU1-MICU2 heterotetramer – as a bridge – and the MICU1-MICU2 heterodimers – as pore blockers – are bound to the same MCU-EMRE subcomplex dimer. Because of this competition, the bridging MICU1-MICU2 tetramer is tilted to the side of the MCU-EMRE subcomplex. The particles of this class were highly heterogeneous and we were only able to reconstruct a 7 Å map with definable density for MICU1 and MICU2.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60513/elife-60513-fig1-v3.jpg)
+
+**Figure 1.:** Numbers in parentheses denote the percentage of particles for each class. (a) The major class of particles from the uniplex sample prepared in the presence of 2 mM Ca2+. (b) Four classes of particles from the uniplex sample prepared in the absence of Ca2+ (with 2 mM EGTA).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60513/elife-60513-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Structure of a dimeric MCU-EMRE subcomplex. Red line marks the dimerization interface. (b) Sequence and secondary structure assignment of an HsMCU subunit. (c) Sequence and secondary structure assignment of an HsEMRE subunit.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60513/elife-60513-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (a) SEC profile (left) of MCU-EMRE-MICU1-MICU2 holocomplex (red) reconstituted in nanodisc and purified in the presence of 2 mM Ca2+. The profile of the MCU-EMRE subcomplex in nanodisc (blue) is shown for comparison. Arrows indicate the three sample fractions shown on SDS PAGE (right). (b) SEC profile (left) and SDS PAGE (right) of the MCU-EMRE-MICU1-MICU2 holocomplex (red) reconstituted in nanodisc and purified in the absence of Ca2+ (with 2 mM EGTA).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60513/elife-60513-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (a) A representative micrograph. Scale bar is at 100 nm. (b) Flow chart of the cryo-EM data processing procedure. Selected 2D class averages are shown. The number of particles are indicated under the corresponding 3D classes with the percentage of the selected particles after 2D classification in parentheses for the first round of 3D classification. (c) Fourier Shell Correlation curves showing the overall resolution of 4.17 Å (FSC = 0.143) for the dimeric (magenta) form of the uniplex.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/60513/elife-60513-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (a) A representative micrograph. Scale bar is at 100 nm. (b) Flow chart of the cryo-EM data processing procedure. Selected 2D class averages are shown. The number of particles are indicated under the corresponding 3D classes with the percentage of the selected particles after 2D classification in parentheses for the first round of 3D classification. Selected classes are indicated in colored boxes. (c) Fourier Shell Correlation curves showing the overall resolution at FSC = 0.143 for the corresponding uniplex assemblies.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/60513/elife-60513-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Flow chart of the cryo-EM data processing procedure. The particles of the dimeric uniplex were taken from Figure 1—figure supplement 4, and the particles of monomeric uniplex were re-selected from 2D class averages. Both were further classified based on the density of MICU1-MICU2 and combined. Duplicated particles were removed from the star file. The number of particles are indicated under the corresponding 3D classes. (b) Fourier Shell Correlation curve showing the overall resolution of 4.6 Å (FSC = 0.143) for the apo blocked uniplex.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/60513/elife-60513-fig1-figsupp6-v3.jpg)
+
 In all these structures, the MCU-EMRE subcomplex appears to be the most stable part of the uniplex, as indicated by the well-defined density, whereas MICU1 and MICU2 are more dynamic and engage in the uniplex assembly with different configurations depending on the presence or absence of Ca2+. Despite their low overall resolutions, the EM density for the MCU-EMRE subcomplex is well defined in all of the maps and can be perfectly modeled by rigid-body docking of the previously determined structure with minor adjustments (Wang et al., 2019). In addition, multiple crystal structures of human MICU1 and MICU2 homodimer in both the apo and Ca2+-bound states, as well as the apo MICU1-MICU2 heterodimer have been determined (Kamer et al., 2019; Park et al., 2020; Wang et al., 2014; Wu et al., 2019; Xing et al., 2019), thus facilitating our model building for the MICU1 and MICU2 part of the uniplex (Figure 1—figure supplement 6). As the structures of the individual MICU1, MICU2 and MCU-EMRE subcomplex have all been extensively described before, our discussion will be focused on how MICU1 and MICU2 interact with MCU-EMRE to form a uniplex assembly in a Ca2+-dependent manner.
 
-## Uniplex assembly in the presence of Ca2+
+### Uniplex assembly in the presence of Ca2+
 
 In the presence of Ca2+, the uniplex adopts a two-fold symmetry and consists of a V-shaped dimer of MCU-EMRE subcomplexes and a MICU1-MICU2 heterotetramer that bridges the tops of the two subcomplexes (Figure 2a&b). The MICU1-MICU2 tetramer is formed by the dimerization of two MICU1-MICU2 heterodimers through a back-to-back packing between MICU2 subunits (Xing et al., 2019), resulting in a linear arrangement of MICU1-MICU2-MICU2-MICU1. MICU1 and MICU2 dimerize through a face-to-face contact in which the EF-1 motif of one subunit interacts with the EF-3 of the other (Figure 2c). This face-to-face dimerization mode has been commonly observed in the crystal structures of MICU1 and MICU2 homodimers as well as the MICU1-MICU2 heterodimer (Park et al., 2020; Wang et al., 2014; Wu et al., 2019; Xing et al., 2019). Major Ca2+-induced conformational changes also occur at the interface between MICU1 and MICU2 as will be further discussed later.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60513/elife-60513-fig2-v3.jpg)
+
+**Figure 2.:** (a) Side view of the 3D reconstruction of the Ca2+-bound uniplex with each protein component individually colored. Red line marks the two-fold axis of the complex. (b) Cartoon representation of the Ca2+-bound uniplex structure. Red arrows mark the two contact sites between MICU1 and MCU/EMRE. Red line marks the dimerization interface between two MCU/EMRE subcomplexes. (c) Down view of the MICU1-MICU2 heterotetramer in cartoon representation along the two-fold axis. EF-1 and EF-3 motifs are colored in yellow and red, respectively. Dotted lines mark the interfaces between neighboring MICU subunits. (d) Protein-protein interface between the MICU1 and MCU/EMRE subcomplex (boxed area in (b)) with the two contact sites numbered and boxed. (e) Zoomed-in view of the contact site 1. In the Ca2+-bound uniplex, the structure model for MICU1 starts at D108 and the model for EMRE ends at E101. (f) Zoomed-in view of the contact site 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60513/elife-60513-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** The MCU-EMRE subcomplexes without bound MICU1-MICU2 are shown in grey and the MCU-EMRE-MICU1-MICU2 holocomplexes are shown in color. (a) Comparison between the monomeric MCU-EMRE subcomplex and half of the Ca2+-bound, bridged uniplex (RMSD ~0.97 Å). (b) Comparison between the dimeric MCU-EMRE subcomplex and the Ca2+-bound, bridged uniplex (RMSD ~3.02 Å). Red arrows indicate the inward rigid-body movements of the two MCU-EMRE subcomplexes from the Ca2+-bound uniplex. (c) Comparison between the dimeric MCU-EMRE subcomplex and the apo, bridged uniplex (RMSD ~0.73 Å).
+
 The assembly of the MICU1-MICU2 tetramer and MCU-EMRE subcomplexes in the presence of Ca2+ is mediated by the interactions between MICU1 and EMRE. Each MICU1 subunit interacts with two EMRE subunits that are proximal to the central axis of the uniplex dimer by forming putative salt-bridge networks (Figure 2d–f). Firstly, the α1 helix of MICU1 is oriented parallel to the membrane surface with its N-terminus pointing toward the C-terminal end of the transmembrane helix of EMRE (Figure 2e). This configuration would lead to the convergence of the KKKKR poly-basic region that extends from the MICU1 α1 helix to the C-terminal poly-aspartate tail on EMRE. Although these two charged regions are not resolved in the structure, their close proximity would imply the formation of a network of salt bridges between them. Both charged regions are highly conserved and have been shown to be important for uniplex assembly and Ca2+ uptake (Tsai et al., 2016). The second point of contact is mediated by the α11 helix of MICU1 and the poly-aspartate tail of the other EMRE subunit. At this site, the poly-aspartate tail of EMRE forms an extended loop that runs parallel to and is positioned below the α11 helix of MICU1 (Figure 2f). The MICU1 α11 helix contains multiple basic residues whose side chains point directly toward the EMRE loop and likely form the second network of salt bridges with the poly-aspartate tail of EMRE. The binding of the MICU1-MICU2 tetramer does not block the channel pore of MCU, nor does it introduce any visible conformational change to each MCU-EMRE subcomplex, whose structure is virtually identical to that determined previously without bound MICU1 and MICU2 (Figure 2—figure supplement 1a). Thus, the uniplex structure obtained in the presence of Ca2+ represents the unblocked state in which the channel pore is poised for Ca2+ uptake. However, the tethering of two MCU-EMRE subcomplexes by the MICU1-MICU2 tetramer appears to exert a pulling force on the MCU-EMRE subcomplexes, resulting in a slightly narrower V-shaped dimer as compared to the subcomplex dimer structure previously determined without MICU1-MICU2 (Figure 2—figure supplement 1b).
 
-## Uniplex assembly with a blocked channel pore in the absence of Ca2+
+### Uniplex assembly with a blocked channel pore in the absence of Ca2+
 
 Multiple uniplex assemblies were observed in the absence of Ca2+, among which the blocking of the central channel pore by a MICU1-MICU2 heterodimer is the dominant form. This MICU1-MICU2 blocking event occurs on both the monomeric and dimeric forms of the MCU-EMRE subcomplex. As the MCU-EMRE subcomplex remained dimeric in the purified uniplex sample, we suspect that the particles of blocked monomeric subcomplex likely come from the dissociation of the subcomplex dimer during EM grid preparation. For simplicity, the monomeric form of the subcomplex will be used in the following discussion. With four-fold symmetry at the channel pore of MCU-EMRE, the MICU1-MICU2 dimer can bind and block the channel in four possible orientations (Figure 3—figure supplement 1). Symmetry expansion was used to align all the MICU1-MICU2 dimers in the same orientation so that they could be averaged together in the 3D reconstruction, yielding an EM map with clear density for the MICU1-MICU2 dimer and the symmetrical part of the MCU-EMRE subcomplex, which includes EMRE and the transmembrane domain (TMD) and the coiled coil domain (CCD) of MCU (Figure 3a and Figure 1—figure supplement 5). The density for the non-symmetrical linker-helix domain (LHD) and N-terminal domain (NTD) of MCU was averaged out.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/60513/elife-60513-fig3-v3.jpg)
+
+**Figure 3.:** (a) Side views of the 3D reconstruction (left) and cartoon representation (right) of the apo, blocked uniplex with each protein component individually colored. The map and model contain only the transmembrane domain (TMD) and the coiled coil domain (CCD) of MCU. The interface between MICU1 and MCU-EMRE subcomplex is boxed. (b) Zoomed-in view of the interface between MICU1 and the MCU/EMRE subcomplex with the three contact sites numbered and boxed. (c) Interactions between MICU1’s poly-basic sequence (KKKKR) and EMRE’s C-terminal poly-Asp tail. In the apo, blocked uniplex, the structure model for MICU1 starts at R104 and the model for EMRE ends at F98. (d) Interactions between MICU1 and MCU’s D-ring at the selectivity filter. MCU’s front subunit is removed for clarity. (e) Interactions between MICU1’s C-helix and MCU/EMRE.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60513/elife-60513-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Shown are maps from particles of the blocked MCU-EMRE subcomplex dimer after C2 symmetry expansion and focused 3D classification on the MICU1-MICU2 part. The map of the blocked MCU-EMRE subcomplex with bound MICU1-MICU2 in each orientation is individually colored.
+
 In the blocked uniplex structure, MICU1 engages with the MCU-EMRE subcomplex at three major points of contact using its N- and C-terminal helices (Figure 3b). Firstly, the α1 helix of MICU1 is oriented directly above the ion conduction pore with its N-terminus pointing toward the C-terminus of the EMRE helix. This would position the N-terminal poly-basic region of MICU1 within the proximity of the C-terminal poly-aspartate tail of EMRE, allowing for the formation of a putative salt-bridge network (Figure 3c). Although similar salt bridge interactions are also proposed in the Ca2+-bound uniplex structure, the orientation of the α1 helix is quite the opposite between the two structures. In the blocked uniplex, the C-terminus of the MICU1 α1 helix points toward the center of the channel rather than away from the channel as seen in the Ca2+-bound structure. Secondly, the α2 helix is positioned directly above the D-ring of MCU’s selectivity filter, which is formed by the four Asp261s from the DIME motif at the external entrance of the channel tetramer (Figure 3d). Several basic residues from MICU1 are in close proximity and can potentially engage in electrostatic interactions with the MCU D-ring Asp261s, including K126 and R129 in α2 as well as the basic resides (R259, R261 and R263) in the loop between α7 and α8, which is disordered in the Ca2+-bound MICU1. Most notably, Lys126 is well positioned to point its side chain directly toward the center of the D-ring and block the channel filter. The same electrostatic interactions have been observed in the recent structure of the human uniplex obtained in low [Ca2+] (Fan et al., 2020) as well as the structure of a holocomplex formed by the beetle MCU-EMRE and the human MICU1-MICU2 under resting [Ca2+] conditions (Wang et al., 2020). In both studies, it has also been shown that mutations of these positively charged residues in MICU1 destabilize the MCU-MICU1 interactions and mitigate the blocking of MCU by MICU1. Thirdly, the amphipathic C-terminal helix (C-helix, α17) of MICU1 lies on the membrane surface between two neighboring EMRE subunits with its N-terminus sandwiched between the C-termini of an EMRE helix and the TM1 from a neighboring MCU subunit (Figure 3e). Although the protein side chains are not resolved in the structure, the close proximity of multiple hydrophobic residues at this contact site would imply that van der Waals contacts mediate the interactions between MICU1’s C-helix and MCU-EMRE. Deletion of MICU1’s C-helix has been shown to weaken the interaction between MCU and MICU1 (Fan et al., 2020; Wang et al., 2014).
 
-## Unblocked uniplex assembly in the absence of Ca2+
+### Unblocked uniplex assembly in the absence of Ca2+
 
 While the blocked uniporter represents the majority of the uniplex particles in the absence of Ca2+, a smaller class of particles reveals the unblocked uniporter with the MICU1-MICU2 heterotetramer bridging the two MCU-EMRE subcomplexes similar to that observed in the presence of high Ca2+ (Figure 4a). In this apo, unblocked uniplex, the MCU-EMRE subcomplex part of the structure can be resolved to 3.7 Å (Figure 1—figure supplement 4). However, the MICU1 and MICU2 parts of the uniplex are poorly resolved in the EM map, suggesting that they are highly mobile and loosely attached to the MCU-EMRE subcomplex. Intriguingly, the MICU1-MICU2 tetramer in the apo uniplex has an overall structural arrangement as that of the Ca2+-bound uniplex, but it does not appear to induce any movement to the MCU-EMRE subcomplexes whose V-shaped dimer structure remains identical to that determined without MICU1 and MICU2 (Figure 2—figure supplement 1c). Interestingly, similar apo, bridged uniplex structure is also observed in a recent study of the human uniplex obtained in the absence of Ca2+ (Zhuo et al., 2020). The high degree of mobility exhibited by the MICU1-MICU2 tetramer in the apo, unblocked uniplex is also evident in another class of particles in which the bridging MICU1-MICU2 tetramer is pushed to the side of the MCU-EMRE subcomplex due to the competing binding of the MICU1-MICU2 dimer that occludes the channel pore (Figure 4b). The structures reconstructed from both classes of particles are of low resolution and do not allow us to define the interactions between MICU1 and the MCU-EMRE subcomplex. Nevertheless, the observation that the MICU1-MICU2 tetramer in a smaller subset of the apo uniplex particles and its weak association with the MCU-EMRE subcomplexes implies that the MICU1-MICU2 tetramer is not stable in the absence of Ca2+ and does not form tight contacts with the channel.
 
@@ -62,13 +104,13 @@ While the blocked uniporter represents the majority of the uniplex particles in 
 
 **Figure 4.:** (a) 3D reconstruction (upper, side view) and cartoon representation (lower, top view) of the apo, bridged uniplex with each protein component individually colored. Red line marks the dimerization interface between two MCU/EMRE subcomplexes. (b) 3D reconstruction (upper, side view) and cartoon representation (lower, top view) of the apo, bridged uniplex with competing binding of MICU1-MICU2 that blocks the pore. We were only able to model the MICU1 subunit (labeled as MICU1’) of the MICU1-MICU2 dimer that blocks the MCU-EMRE subcomplex on the right side. Note that the bridging MICU1-MICU2 tetramer is tilted to the side of the MCU-EMRE subcomplexes.
 
-## Ca2+-dependent conformational change at MICU1-MICU2
+### Ca2+-dependent conformational change at MICU1-MICU2
 
 Comparison of uniplex structures with or without Ca2+ reveals that the Ca2+-induced conformational changes mainly occur within the MICU1-MICU2 dimer. The structural changes within individual MICU1 or MICU2 subunit are quite subtle with the most noticeable difference observed at the EF-1 motif where the two helices (α6 as the E1 helix and α7 as the F1 helix in both MICU1 and MICU2) are relatively parallel in the apo state but swing apart and become more perpendicular to each other in the Ca2+-bound state (Figure 5a). As the EF-1 motifs from both MICU1 and MICU2 are directly involved in their face-to-face dimerization by forming hydrophobic interactions with the EF-3 motifs (α13 as the E3 helix and α14 as the F3 helix in both MICU1 and MICU2) from their respective partners, the conformational change at EF-1 results in a rearrangement of the hydrophobic contacts at the dimerization interface. Consequently, MICU1 and MICU2 form a more compact dimer in the Ca2+-bound state and their relative position also differs from that of the apo dimer (Figure 5b).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/60513/elife-60513-fig5-v3.jpg)
 
-**Figure 5.:** 2+-bound states.(a) Superimposition of individual MICU1 (left) or MICU2 (right) subunit structures between the apo (grey) and the Ca2+-bound (MICU1 in green and MICU2 in blue) states. EF-1 and EF-3 motifs of MICU1 and MICU2 in Ca2+-bound states are colored red. (b) Structural comparison of the MICU1-MICU2 heterodimer in the apo (upper) and Ca2+-bound (lower) states with the inter-subunit contact sites circled. Grey dashed lines mark the inter-subunit distances between the Ca atoms (red spheres) of MICU1’s Met442 and MICU2’s His396 (d1) and between the Ca atoms of MICU1’s Val318 and MICU2’s Gly274 (d2). Right panels show the inter-subunit packing between EF-1 and EF-3 at each contact site in the absence (upper two) and presence (lower two) of Ca2+. (c) Left, structure of the blocked MCU-EMRE channel pore by a MICU1-MICU2 dimer in the apo state. Right, hypothetical model of the channel pore being blocked by the Ca2+-bound MICU1-MICU2 dimer. The model is generated by superimposing the MICU1 subunit of the Ca2+-bound MICU1-MICU2 dimer onto the MICU1 of the apo, blocked uniplex.
+**Figure 5.:** (a) Superimposition of individual MICU1 (left) or MICU2 (right) subunit structures between the apo (grey) and the Ca2+-bound (MICU1 in green and MICU2 in blue) states. EF-1 and EF-3 motifs of MICU1 and MICU2 in Ca2+-bound states are colored red. (b) Structural comparison of the MICU1-MICU2 heterodimer in the apo (upper) and Ca2+-bound (lower) states with the inter-subunit contact sites circled. Grey dashed lines mark the inter-subunit distances between the Ca atoms (red spheres) of MICU1’s Met442 and MICU2’s His396 (d1) and between the Ca atoms of MICU1’s Val318 and MICU2’s Gly274 (d2). Right panels show the inter-subunit packing between EF-1 and EF-3 at each contact site in the absence (upper two) and presence (lower two) of Ca2+. (c) Left, structure of the blocked MCU-EMRE channel pore by a MICU1-MICU2 dimer in the apo state. Right, hypothetical model of the channel pore being blocked by the Ca2+-bound MICU1-MICU2 dimer. The model is generated by superimposing the MICU1 subunit of the Ca2+-bound MICU1-MICU2 dimer onto the MICU1 of the apo, blocked uniplex.
 
 The change in the relative position between MICU1 and MICU2 provides a plausible structural explanation for the destabilization of channel blocking by MICU1-MICU2 upon Ca2+ binding. If we allow the Ca2+-bound MICU1-MICU2 dimer to make the same blocking interactions with MCU-EMRE as the apo dimer – by superimposing its MICU1 subunit onto the MICU1 of the apo blocked uniplex – then the MICU2 subunit would be positioned much closer to the membrane surface and its α11 helix would directly clash with the C-helix of MICU1 or the membrane surface (Figure 5c). This steric interference implies that the Ca2+-induced change at the interfacial contact between MICU1 and MICU2, and the ensuing movement of MICU2 relative to MICU1, would destabilize the blocking interaction between MICU1 and MCU-EMRE and thus prevent the MICU1-MICU2 dimer from blocking the channel.
 
@@ -90,7 +132,164 @@ Among all those recently published uniplex structures (Fan et al., 2020; Wang et
 
 ## Materials and methods
 
-## Reconstitution of HsMCU-EMRE-MICU1-MICU2 holocomplex
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>HsMCU</td>
+      <td>doi:10.1038/nature10234; doi:10.1038/nature10230</td>
+      <td>NCBI:NM_001270679.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>HsEMRE</td>
+      <td>doi:10.1126/science.1242993</td>
+      <td>NCBI:NM_033318.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>HsMICU1</td>
+      <td>doi:10.1038/nature09358</td>
+      <td>NCBI:NM_001195518.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>HsMICU2</td>
+      <td>doi:10.1371/journal.pone.0055785</td>
+      <td>NCBI:NM_152726.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>pEZT-BM (plasmid)</td>
+      <td>doi:10.1016/j.str.2016.03.004</td>
+      <td>Addgene 74099</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>pET-28a (plasmid)</td>
+      <td>doi:10.1016/0022-2836(91)90856-2</td>
+      <td>Novagen 69864–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain Background (Escherichia coli)</td>
+      <td>TOP10</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 18258012</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain Background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# EC0114</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain Background (Escherichia coli)</td>
+      <td>DH10bac</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10361012</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>SF9</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11496015; RRID:CVCL_0549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293F</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# R79007; RRID:CVCL_D603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GCTF</td>
+      <td>Zhang, 2016</td>
+      <td>https://www.mrclmb.cam.ac.uk/kzhang/Gctf</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>Scheres, 2020</td>
+      <td>http://www2.mrclmb.cam.ac.uk/relion</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>https://www.cgl.ucsf.edu/chimera; RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>Schrödinger</td>
+      <td>https://pymol.org/2; RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley et al., 2010</td>
+      <td>https://www2.mrclmb.cam.ac.uk/personal/pemsley/coot; RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Adams et al., 2010</td>
+      <td>https://www.phenixonline.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginPro8</td>
+      <td>OriginLab Corp.</td>
+      <td>https://www.originlab.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>QUANTIFOIL R1.2/1.3</td>
+      <td>Quantifoil</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Reconstitution of HsMCU-EMRE-MICU1-MICU2 holocomplex
 
 Full-length human MICU1 (NCBI: NM_001195518.2) and MICU2 (NCBI: NM_152726.3) without mitochondrial targeting sequence (MTS) were PCR amplified from human cDNA library (purchased from the McDermott Center, UT Southwestern Medical Center) and sub-cloned into pET28a vectors with a C-terminal 8 × His tag using the restriction sites Xba I-Not I. E. coli (BL21 DE3) competent cells were freshly transformed, plated onto LB- kanamycin (LB-Kan) agar, and grown overnight. A single colony was picked from LB-Kan plate to seed LB media with 50 μg/mL kanamycin and grown in shaker flasks at 37°C in an orbital shaker until the cells reached an OD600 = 1.0 ~ 1.2 at which point they were chilled on icy water for half an hour before protein expression was induced by addition of IPTG to a final concentration of 0.3 mM. The cells were then grown at 16°C for 20 hr before being harvested. In general, 6 L of E. coli culture were used for each purification of MICU1 or MICU2.
 
@@ -102,11 +301,11 @@ The purified MICU1, MICU2 and HsMCU-EMRE in nanodisc were mixed with excess amou
 
 Cell lines used in this study were purchased from and verified by Thermo Fisher Scientific. They were tested negative for mycoplasma contamination.
 
-## EM data acquisition
+### EM data acquisition
 
 The cryo-EM grids were prepared by applying 3 μL of the human MCU-EMRE-MICU1-MICU2 complex in nanodisc (Ca2+-free or Ca2+-bound state) to a glow-discharged Quantifoil R1.2–1.3 300-mesh gold holey carbon grid (Quantifoil, Micro Tools GmbH, Germany) and blotted for 4.0 s under 100% humidity at 4°C before being plunged into liquid ethane using a Mark IV Vitrobot (FEI). Micrographs were acquired on a Titan Krios microscope (FEI) operated at 300 kV with a K3 Summit direct electron detector (Gatan), using a slit width of 20 eV on a GIF-Quantum energy filter. Serial EM (Mastronarde, 2005) software was used for automated data collection. A calibrated magnification of 105,000 × was used for imaging, yielding a pixel size of 0.833 Å on images. The defocus range was set at −0.9 ~ −2.2 μm. Each micrograph was dose-fractionated to 40 frames under a dose rate of 21 e-/pixel/s, with a total exposure time of 2 s, resulting in a total dose of about 60.5 e-/Å2.
 
-## Image processing
+### Image processing
 
 All movie frames were aligned using MotionCor2 (Zheng et al., 2017). CTF (Contrast transfer function) of motion-corrected micrographs was estimated using Gctf (Zhang, 2016). Data were processed using Relion 3.0.6 (Zivanov et al., 2018) for the Ca2+-bound state, and Relion 3.1-beta (Scheres, 2020; Zivanov et al., 2020) for the Ca2+-free state. All resolutions were reported according to the gold-standard Fourier shell correlation (FSC) using the 0.143 criterion (Henderson et al., 2012). Local resolution was estimated using Relion.
 
@@ -116,7 +315,7 @@ For the complex in the Ca2+-free state, a total number of 15,093 movies were col
 
 For the blocked uniplex with the dimeric MCU-EMRE subcomplex, we selected 69,343 particles from the second round of 3D classification. We then performed C2 symmetry expansion and subtracted one complete channel from this symmetry expanded particle stack. Next, we kept only the symmetrical region of the channel together with the bound MICU1-MICU2 density by another signal subtraction procedure. The resulting particles were then classified with a mask around the MICU1-MICU2 density. We observed that MICU1-MICU2 in this blocking conformation adopts four possible orientations that are 90 degrees apart, in accordance with the tetrameric nature of the MCU channel. We then manually rotated (by manipulating the AngleRot column in the star files) the other three classes to the same orientation as the first, which we defined as the consensus orientation, and combined them into one particle stack. Next, 2D classes with clear features of a monomeric MCU-EMRE subcomplex were re-selected. After two rounds of 3D classification, we obtained a subset of 126,457 particles, which were further classified based on the MICU1-MICU2 density. Next, signal subtraction was performed to remove the N-terminal domain of MCU, and the resulting particles were manually rotated to the consensus orientation and combined with the aforementioned particle stack from the dimeric channel followed by removal of duplicates. The resulting 171,471 particles were then classified with a mask around the MICU1-MICU2 region, and we obtained a class of 44,681 particles with the best MICU1-MICU2 density. This class was then auto-refined in Relion, resulting in a density map with an overall resolution of 4.6 Å.
 
-## Model building, refinement, and validation
+### Model building, refinement, and validation
 
 All EM maps of the HsMCU-EMRE-MICU1-MICU2 holocomplex show high quality density at the MCU-EMRE region, allowing us to confidently fit the structure of the MCU-EMRE subcomplex (Wang et al., 2019) (PDB: 6O5B) into the density using UCSF-Chimera. For the MICU1-MICU2 part of the uniplex in the Ca2+-bound state, the models of human MICU1 (Wang et al., 2014) (PDB: 4NSD) and human MICU2 (Wu et al., 2019) (PDB: 6IIH), both in the Ca2+-bound state, were used to fit into the density manually in Coot (Emsley et al., 2010). The regions that did not fit to the density map were adjusted as rigid bodies. The structures of the apo human MICU1 (Wang et al., 2014) (PDB: 4NSC) and apo human MICU2 (Xing et al., 2019) (PDB: 6AGJ) were used to model MICU1-MICU2 in the blocked uniplex structure in the Ca2+-free condition. For the modeling of the MICU1-MICU2 regions in the low-resolution structures of the apo uniplex with bridging and competing configurations, the MICU1-MICU2 structure obtained from the Ca2+-bound uniplex appeared to fit the density maps much better than that from the apo, blocked uniplex.
 

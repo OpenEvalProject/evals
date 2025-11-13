@@ -18,19 +18,19 @@
 
 ### Affiliations
 
-1. https://ror.org/034t30j35 State Key Laboratory of Freshwater Ecology and Biotechnology, Chinese Academy of Sciences Wuhan China
-2. https://ror.org/034t30j35 College of Advanced Agricultural Sciences, University of Chinese Academy of Sciences Beijing China
-3. https://ror.org/02yqt2385 Chinese Sturgeon Research Institute, China Three Gorges Corporation Hubei China
-4. https://ror.org/0064kty71 5State Key Laboratory of Biocontrol, Institute of Aquatic Economic Animals and Guangdong Provincial Key Laboratory of Improved Variety Reproduction in Aquatic Economic Animals, School of Life Sciences, Sun Yat-Sen University Guangzhou China
-5. https://ror.org/023b72294 College of Fisheries, Huazhong Agriculture University Wuhan China
-6. https://ror.org/01kj4z117 Key Laboratory of Freshwater Fish Reproduction and Development and Key Laboratory of Aquatic Science of Chongqing, School of Life Science, Southwest University Chongqing China
-7. https://ror.org/034t30j35 The Innovative Academy of Seed Design, Chinese Academy of Sciences Wuhan China
+1. State Key Laboratory of Freshwater Ecology and Biotechnology, Chinese Academy of Sciences Wuhan China ([ROR:034t30j35](https://ror.org/034t30j35))
+2. College of Advanced Agricultural Sciences, University of Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))
+3. Chinese Sturgeon Research Institute, China Three Gorges Corporation Hubei China ([ROR:02yqt2385](https://ror.org/02yqt2385))
+4. 5State Key Laboratory of Biocontrol, Institute of Aquatic Economic Animals and Guangdong Provincial Key Laboratory of Improved Variety Reproduction in Aquatic Economic Animals, School of Life Sciences, Sun Yat-Sen University Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))
+5. College of Fisheries, Huazhong Agriculture University Wuhan China ([ROR:023b72294](https://ror.org/023b72294))
+6. Key Laboratory of Freshwater Fish Reproduction and Development and Key Laboratory of Aquatic Science of Chongqing, School of Life Science, Southwest University Chongqing China ([ROR:01kj4z117](https://ror.org/01kj4z117))
+7. The Innovative Academy of Seed Design, Chinese Academy of Sciences Wuhan China ([ROR:034t30j35](https://ror.org/034t30j35))
 
 † Corresponding author
 
 ## Abstract
 
-Disruption of androgen signaling is known to cause testicular malformation and defective spermatogenesis in zebrafish. However, knockout of cyp17a1 , a key enzyme responsible for the androgen synthesis, in ar -/- male zebrafish paradoxically causes testicular hypertrophy and enhanced spermatogenesis. Because Cyp17a1 plays key roles in hydroxylation of pregnenolone and progesterone (P4), and converts 17α-hydroxypregnenolone to dehydroepiandrosterone and 17α-hydroxyprogesterone to androstenedione, we hypothesize that the unexpected phenotype in cyp17a1 -/-; androgen receptor ( ar )-/- zebrafish may be mediated through an augmentation of progestin/nuclear progestin receptor (nPgr) signaling. In support of this hypothesis, we show that knockout of cyp17a1 leads to accumulation of 17α,20β-dihydroxy-4-pregnen-3-one (DHP) and P4. Further, administration of progestin, a synthetic DHP mimetic, is sufficient to rescue testicular development and spermatogenesis in ar -/- zebrafish, whereas knockout of npgr abolishes the rescue effect of cyp17a1 -/- in the cyp17a1 -/-; ar -/- double mutant. Analyses of the transcriptomes among the mutants with defective testicular organization and spermatogenesis ( ar -/-, ar -/-; npgr -/- and cyp17a -/-; ar -/-; npgr -/-), those with normal phenotype (control and cyp17a1 -/-), and rescued phenotype ( cyp17a1 -/-; ar -/-) reveal a common link between a downregulated expression of insl3 and its related downstream genes in cyp17a -/-; ar -/-; npgr -/- zebrafish. Taken together, our data suggest that genetic or pharmacological augmentation of the progestin/nPgr pathway is sufficient to restore testis organization and spermatogenesis in zebrafish with the depletion of androgen signaling.
+Disruption of androgen signaling is known to cause testicular malformation and defective spermatogenesis in zebrafish. However, knockout of cyp17a1, a key enzyme responsible for the androgen synthesis, in ar-/- male zebrafish paradoxically causes testicular hypertrophy and enhanced spermatogenesis. Because Cyp17a1 plays key roles in hydroxylation of pregnenolone and progesterone (P4), and converts 17α-hydroxypregnenolone to dehydroepiandrosterone and 17α-hydroxyprogesterone to androstenedione, we hypothesize that the unexpected phenotype in cyp17a1-/-;androgen receptor (ar)-/- zebrafish may be mediated through an augmentation of progestin/nuclear progestin receptor (nPgr) signaling. In support of this hypothesis, we show that knockout of cyp17a1 leads to accumulation of 17α,20β-dihydroxy-4-pregnen-3-one (DHP) and P4. Further, administration of progestin, a synthetic DHP mimetic, is sufficient to rescue testicular development and spermatogenesis in ar-/- zebrafish, whereas knockout of npgr abolishes the rescue effect of cyp17a1-/- in the cyp17a1-/-;ar-/- double mutant. Analyses of the transcriptomes among the mutants with defective testicular organization and spermatogenesis (ar-/-, ar-/-;npgr-/- and cyp17a-/-;ar-/-;npgr-/-), those with normal phenotype (control and cyp17a1-/-), and rescued phenotype (cyp17a1-/-;ar-/-) reveal a common link between a downregulated expression of insl3 and its related downstream genes in cyp17a-/-;ar-/-;npgr-/- zebrafish. Taken together, our data suggest that genetic or pharmacological augmentation of the progestin/nPgr pathway is sufficient to restore testis organization and spermatogenesis in zebrafish with the depletion of androgen signaling.
 
 ## Introduction
 
@@ -44,29 +44,49 @@ Although an alternative pathway might exist in the cyp17a1-/- fish to facilitate
 
 ## Results
 
-## cyp17a1 knockout activates a compensatory pathway that promotes testis organization and spermatogenesis independent of Ar
+### cyp17a1 knockout activates a compensatory pathway that promotes testis organization and spermatogenesis independent of Ar
 
 In the cyp17a1-/- fish at 6 months post-fertilization (mpf), a significant increase in the number of spermatozoa and testicular development was observed (Zhai et al., 2018). We hypothesized that an alternative pathway facilitates testicular development and spermatogenesis in cyp17a1-/- fish. The ar mutation was introduced into the cyp17a1-/- fish to determine whether Ar contributes to the hypertrophic testis and the increase in the number of spermatozoa in the cyp17a1-/- fish. To generate the cyp17a1-/-;ar-/- fish, the double heterozygotes (cyp17a1+/-;ar+/-) among the F1 progeny were crossed. In agreement with previous studies, reduced testis size and defective spermatogenesis in the ar-/- male zebrafish were observed (Crowder et al., 2018; Tang et al., 2018; Yu et al., 2018; Figure 1B and G). However, anatomical examination (Figure 1A–D), Gridpoint Statistical Interpolation (GSI) statistical analysis (Figure 1E), histological analysis (Figure 1F–I), and spermatozoa number analysis (Figure 1J) demonstrated that, compared with that in the control males, the hypertrophic testis and increased spermatogenesis were observed in the cyp17a1-/-;ar-/- fish. These results support the hypothesis that cyp17a1 knockout activates a compensatory pathway that promotes testis organization and spermatogenesis independent of Ar.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/66118/elife-66118-fig1-v2.jpg)
 
-**Figure 1.:** cyp17a1 depletion is ar-independent.(A–D) Anatomical examination of the testes from control males, ar-/- males, cyp17a1-/- fish, and cyp17a1-/-;ar-/- fish at 6 months post-fertilization (mpf). Black and green arrows indicate the normal and impaired testis in control males and ar-/- males, respectively, whereas the red arrows indicate the hypertrophic testis in the cyp17a1-/- fish and cyp17a1-/-;ar-/- fish. (E) Gridpoint Statistical Interpolation (GSI) from the fish of the four genotypes at 6 mpf. (F–I) Histological analyses of the testes from control males, ar-/- males, cyp17a1-/- fish, and cyp17a1-/-;ar-/- fish at 6 mpf. Black and green letters of spermatozoa (SZ) indicate the normal and decreased number of SZ in control males and ar-/- males, respectively, whereas the red letters of SZ indicate the increased number of SZ in the cyp17a1-/- fish and cyp17a1-/-;ar-/- fish. (J) Statistical analysis of the SZ number in each lumen of seminiferous tubules from the fish of the four genotypes at 6 mpf. The letters in the bar charts (E) and (J) represent significant differences. SC: spermatocytes; SG: spermatogonia.Figure 1—source data 1.Figure 1E) and number of sperm per lumen (Figure 1J).
+**Figure 1.:** (A–D) Anatomical examination of the testes from control males, ar-/- males, cyp17a1-/- fish, and cyp17a1-/-;ar-/- fish at 6 months post-fertilization (mpf). Black and green arrows indicate the normal and impaired testis in control males and ar-/- males, respectively, whereas the red arrows indicate the hypertrophic testis in the cyp17a1-/- fish and cyp17a1-/-;ar-/- fish. (E) Gridpoint Statistical Interpolation (GSI) from the fish of the four genotypes at 6 mpf. (F–I) Histological analyses of the testes from control males, ar-/- males, cyp17a1-/- fish, and cyp17a1-/-;ar-/- fish at 6 mpf. Black and green letters of spermatozoa (SZ) indicate the normal and decreased number of SZ in control males and ar-/- males, respectively, whereas the red letters of SZ indicate the increased number of SZ in the cyp17a1-/- fish and cyp17a1-/-;ar-/- fish. (J) Statistical analysis of the SZ number in each lumen of seminiferous tubules from the fish of the four genotypes at 6 mpf. The letters in the bar charts (E) and (J) represent significant differences. SC: spermatocytes; SG: spermatogonia.
 
-## DHP and P4 are accumulated in the cyp17a1-/- fish, not in ar-/- males
+### DHP and P4 are accumulated in the cyp17a1-/- fish, not in ar-/- males
 
 In our previous studies, we have demonstrated that the concentrations of T and 11-KT in both the plasma and brain were significantly decreased in the cyp17a1-/- fish at 3 mpf (Shu et al., 2020; Zhai et al., 2018; Zhai et al., 2017). Moreover, T and 11-KT restored the loss of male-typical anal fin coloration, breeding tubercles in the pectoral fin, and sexual behaviors when mating with females in the cyp17a1-/- fish (Shu et al., 2020). These results indicate that gonadal steroidogenesis is impaired in cyp17a1-/- fish. In the present study, the concentrations of testis T and 11-KT were evaluated in control males and cyp17a1-/- fish using ELISA. We observed that the testis T and 11-KT concentrations in the cyp17a1-/- fish at 3 mpf were significantly lower than that in the control males (Figure 2—figure supplement 1A and B). Subsequently, the whole-body contents of 11-KT, DHP, and P4 of the control males and cyp17a1-/- fish at 3, 3.5, and 4 mpf were measured using ultra performance liquid chromatography tandem mass spectrometry (UPLC-MS/MS). Compared with their control male siblings at their corresponding stages, a significant decrease in 11-KT and an increase in DHP and P4 were observed in the cyp17a1-/- fish (Figure 2A–C). The whole-body contents of 11-KT, DHP, and P4 of the control males and ar-/- males at 3 mpf were also compared, which did not show any significant difference (Figure 2—figure supplement 2A–C). The phenomena of the increases in DHP and P4 and decrease in 11-KT in the whole-body lysates of cyp17a1-/- fish detected using UPLC-MS/MS were identical to that in the plasma or testes of cyp17a1-/- fish detected using ELISA reported previously (Zhai et al., 2018). These results not only confirmed that androgen biosynthesis is impaired in the cyp17a1-/- fish, but also reminded us that compared with the cyp17a1-/- males that have higher concentrations of DHP and P4 than their control male siblings, the ar-/- males have comparable concentrations of DHP and P4 with their control male siblings.
 
-## Progestin signaling is sufficient to compensate the androgen signaling insufficiency
+![Figure 2.](https://cdn.elifesciences.org/articles/66118/elife-66118-fig2-v2.jpg)
+
+**Figure 2.:** (A) 11-KT, (B) DHP, and (C) P4. *p<0.05; **p<0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66118/elife-66118-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Concentration of T in testes of control males and cyp17a1-/- fish at 3 months post-fertilization (mpf). (B) Concentration of 11-KT in testes of control males and cyp17a1-/- fish at 3 mpf. **p<0.01.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66118/elife-66118-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Whole-body lysates of the ar-/- males and their control male siblings were used to measure 11-KT. (B) Whole-body lysates of the ar-/- males and their control male siblings were used to measure DHP. (C) Whole-body lysates of the ar-/- males and their control male siblings were used to measure P4. n.s., no significance.
+
+### Progestin signaling is sufficient to compensate the androgen signaling insufficiency
 
 To confirm whether the increased concentration of DHP is responsible for testis organization and spermatogenesis in the cyp17a1-/- fish, ar-/- males were treated with 0.067 µg/mL DHP from 50 to 90 days post-fertilization (dpf). The results of anatomical examination (Figure 3A–D), GSI statistical analysis (Figure 3E), histological analyses (Figure 3F–I), and spermatozoa number analysis (Figure 3J) showed that DHP was sufficient to rescue the phenotypes of testis organization and spermatogenesis in ar-/- males (Figure 3D, E, I, and J). The effective restoration of testis organization and spermatogenesis after DHP treatment in ar-/- males confirmed that the accumulated DHP might facilitate testicular development and spermatogenesis by compensating for the efficiency of androgen signaling in the cyp17a1-/- fish. The ar-/- males after DHP administration showed a more than threefold higher concentration of DHP compared with those reared in the system water (ar-/- males reared in system water: 166.1 ± 70.46, n = 5; ar-/- males reared in DHP: 578.8 ± 379.6, n = 5) (Figure 3K). However, the fertility (sperm capacity) of ar-/- males was not rescued by DHP treatment as the fertilization ratios of ar+/+ males and ar-/- males after the DHP treatment were both significantly downregulated compared with that of ar+/+ males reared in the system water when artificial fecundation was performed with WT females (Figure 3—figure supplement 1).
 
-## The augmentation of progestin pathway facilitates testis organization, and spermatogenesis in the cyp17a1-/-;ar-/- fish depends on nPgr
+![Figure 3.](https://cdn.elifesciences.org/articles/66118/elife-66118-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) Anatomical examination of ar+/+ males and ar-/- males reared in system water. (C, D) Anatomical examination of ar+/+ males and ar-/- males reared in DHP. Green and black arrows indicate the decreased and normal testis, respectively, in the ar-/- males. (E) Gridpoint Statistical Interpolation (GSI) from ar+/+ males and ar-/- males reared in system water and DHP, respectively. (F, G) Histological analyses of testes from ar+/+ males and ar-/- males reared in system water. (H, I) Histological analyses of testes from ar+/+ males and ar-/- males reared in DHP. (J) Statistical analysis of the spermatozoa (SZ) number in each lumen of seminiferous tubules from the ar+/+ males and ar-/- males reared in system water and DHP, respectively. (K) The DHP concentrations measurement of the ar-/- males reared in system water and DHP, respectively. *p<0.05; **p<0.01. n.s., no significance; SC: spermatocytes; SG: spermatogonia.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66118/elife-66118-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The fertilization ratios of ar+/+ males and ar-/- males after the 17α,20β-dihydroxy-4-pregnen-3-one (DHP) treatment, and ar+/+ males reared in the system water at 3 months post-fertilization (mpf) were assessed by artificial fecundation with wild-type (WT) females.
+
+### The augmentation of progestin pathway facilitates testis organization, and spermatogenesis in the cyp17a1-/-;ar-/- fish depends on nPgr
 
 The significantly elevated concentration of DHP in the cyp17a1-/- fish and the effective restoration of testis organization and spermatogenesis of ar-/- males after DHP treatment reinforce the fact that the in vivo progestin signaling compensates for androgen signaling insufficiency (Figures 2 and 3). Therefore, the npgr mutation was introduced into the cyp17a1-/-;ar-/- fish. To generate the cyp17a1-/-;ar-/-;npgr-/- fish, the triple heterozygotes (cyp17a1+/-;ar+/-;npgr+/-) among the F1 progeny were crossed. The fish of the eight genotypes from the cyp17a1+/-;ar+/-;npgr+/- offspring, including cyp17a1+/+;ar+/+;npgr+/+ males (control males), ar-/- males, cyp17a1-/- fish, npgr-/- males, cyp17a1-/-;ar-/- fish, cyp17a1-/-;npgr-/- fish, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish were analyzed. Compared with that in the cyp17a1-/- fish and cyp17a1-/-;ar-/- fish, the results of the anatomical examination (Figure 4A–H), GSI statistical analysis (Figure 4I), histological analyses (Figure 4J–Q), and spermatozoa number analysis (Figure 4R) demonstrated that the GSI and spermatozoa number were both significantly decreased in the cyp17a1-/-;npgr-/- fish (Figure 4I and R). These results suggest that a potential compensatory role of progestin signaling exists in the cyp17a1-/- fish. On the other hand, compared with that in the cyp17a1-/-;ar-/- fish, testis organization and spermatogenesis failed in the cyp17a1-/-;ar-/-;npgr-/- fish (Figure 4H and Q), which showed a similar pattern in the ar-/- males and ar-/-;npgr-/- males (Figure 4B, G, K and P). In addition, compared with that in the cyp17a1-/- and cyp17a1-/-;ar-/- fish, greater spermatogonia and spermatocytes, and less spermatozoa in the ar-/- males, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish were observed in the histological analyses of testes (Figure 4J–Q). These results suggest that the compensatory pathway induced by cyp17a1 knockout to promote testis organization and spermatogenesis exists and depends on nPgr.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/66118/elife-66118-fig4-v2.jpg)
 
-**Figure 4.:** cyp17a1 depletion is npgr-dependent.(A–H) Anatomical examination of the testes of control males, ar-/- males, cyp17a1-/- fish, npgr-/- males, cyp17a1-/-;ar-/- fish, cyp17a1-/-;npgr-/- fish, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish at 6 months post-fertilization (mpf). Black and green arrows indicate the normal and impaired testis in control males, ar-/- males, npgr-/- males, cyp17a1-/-;npgr-/- fish, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish, respectively, whereas the red arrows indicate the hypertrophic testis in the cyp17a1-/- fish and cyp17a1-/-;ar-/- fish. (I) Gridpoint Statistical Interpolation (GSI) from the fish of the eight genotypes at 6 mpf. (J–Q) Histological analyses of the testes from the fish of the eight genotypes at 6 mpf. Black and green letters indicate the normal and decreased number of spermatozoa (SZ) in control males, ar-/- males, npgr-/- males, cyp17a1-/-;npgr-/- fish, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish, respectively, whereas the red letters of SZ indicate the increased number of SZ in the cyp17a1-/- fish and cyp17a1-/-;ar-/- fish. (R) Statistical analysis of the SZ number in each lumen of seminiferous tubules from the fish of the eight genotypes at 6 mpf. The letters in the bar charts (I) and (R) represent significant differences. SC: spermatocytes; SG: spermatogonia.Figure 4—source data 1.Figure 4I; number of sperm per lumen for Figure 4R.
+**Figure 4.:** (A–H) Anatomical examination of the testes of control males, ar-/- males, cyp17a1-/- fish, npgr-/- males, cyp17a1-/-;ar-/- fish, cyp17a1-/-;npgr-/- fish, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish at 6 months post-fertilization (mpf). Black and green arrows indicate the normal and impaired testis in control males, ar-/- males, npgr-/- males, cyp17a1-/-;npgr-/- fish, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish, respectively, whereas the red arrows indicate the hypertrophic testis in the cyp17a1-/- fish and cyp17a1-/-;ar-/- fish. (I) Gridpoint Statistical Interpolation (GSI) from the fish of the eight genotypes at 6 mpf. (J–Q) Histological analyses of the testes from the fish of the eight genotypes at 6 mpf. Black and green letters indicate the normal and decreased number of spermatozoa (SZ) in control males, ar-/- males, npgr-/- males, cyp17a1-/-;npgr-/- fish, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish, respectively, whereas the red letters of SZ indicate the increased number of SZ in the cyp17a1-/- fish and cyp17a1-/-;ar-/- fish. (R) Statistical analysis of the SZ number in each lumen of seminiferous tubules from the fish of the eight genotypes at 6 mpf. The letters in the bar charts (I) and (R) represent significant differences. SC: spermatocytes; SG: spermatogonia.
 
 The germ cell marker, Vasa, was examined by immunofluorescence staining in cyp17a1+/+;ar+/+;npgr+/+ males (control males), ar-/- males, cyp17a1-/- fish, cyp17a1-/-;ar-/- fish, and cyp17a1-/-;ar-/-;npgr-/- fish. As reported previously, Vasa signal intensity enriched in the cytoplasm decreases with the differentiation of germ cells from spermatogonia to advanced stages of spermatids and sperm (Dai et al., 2021; Yu et al., 2018). Compared with that in the control males (Figure 5A–C), the results of Vasa immunofluorescence localization showed a reduced number of spermatozoa in the lumen of seminiferous tubules of ar-/- males (Figure 5D–F), and an increased number of spermatozoa in the cyp17a1-/- fish (Figure 5G–I) and cyp17a1-/-;ar-/- fish (Figure 5J–L), again supporting that the reduced number of spermatozoa in the lumen of seminiferous tubules of ar-/- males was rescued after the cyp17a1 knockout (in the cyp17a1-/-;ar-/- fish). However, the restoration failed in the cyp17a1-/-;ar-/- fish with deletion of npgr (in the cyp17a1-/-;ar-/-;npgr-/- fish) (Figure 5M–O), which showed greater spermatogonia, primary spermatocytes and secondary spermatocytes, and less spermatozoa filling in the lumen of seminiferous tubules of cyp17a1-/-;ar-/-;npgr-/- fish (Figure 5O) and the ar-/- males (Figure 5F). These results suggest that spermatogenesis in the ar-/- males and cyp17a1-/-;ar-/-;npgr-/- fish were impaired during the second meiosis phase.
 
@@ -74,9 +94,23 @@ The germ cell marker, Vasa, was examined by immunofluorescence staining in cyp17
 
 **Figure 5.:** (A–C) Control male. (D–F) ar-/- male. (G–I) cyp17a1-/- fish. (J–L) cyp17a1-/-;ar-/- fish. (M–O) cyp17a1-/-;ar-/-;npgr-/- fish. Nuclear DNA was stained with 4',6-diamidino-2-phenylindole (DAPI). White and yellow asterisks in panels (C), (F), and (O) indicate the normal and decreased number of spermatozoa (SZ), respectively, whereas the red asterisks in panels (I) and (L) indicate the increased number of SZ in each lumen of seminiferous tubule. SG: spermatogonia; PSP: primary spermatocyte; SSP: secondary spermatocyte.
 
-## Abnormal expression of germ cell differentiation-related genes in the cyp17a1-/-;ar-/-;npgr-/- fish
+### Abnormal expression of germ cell differentiation-related genes in the cyp17a1-/-;ar-/-;npgr-/- fish
 
 Comparisons of transcriptome in the testes of the control males, ar-/- males, cyp17a1-/- fish, npgr-/- males, cyp17a1-/-;ar-/- fish, cyp17a1-/-;npgr-/- fish, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish, were performed. For the markers of Leydig cells, the genes related to gonadal steroidogenesis, including star, hsd3β1, cyp11a2, and cyp11c1, were all increased in the testes of ar-/- males, npgr-/- males, cyp17a1-/-;ar-/- fish, cyp17a1-/-;npgr-/- fish, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish. Interestingly, the expression levels of insl3, another specific gene of the Leydig cells, were significantly decreased in the ar-/- males, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish compared with that in the controls (Figure 6A). For the markers of Sertoli cells, the expression levels of sox9a, amh, dmrt1, igf3, and rxfp2b (the receptor of Insl3) were all decreased in the ar-/- males, cyp17a1-/- fish, npgr-/- males, cyp17a1-/-;ar-/- fish, cyp17a1-/-;npgr-/- fish, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish compared with that in the controls (Figure 6B). For the markers of the germ cells, the expression levels of dazl, vasa, dnd, nanos1, nanos2, piwil1, and piwil2 were all upregulated in the cyp17a1-/-;ar-/-;npgr-/- fish compared with that in the controls, with divergent transcriptional expression patterns in the testes of fish with other genotypes. Notably, rxfp2a (another receptor of Insl3) and the retinoic acid-degrading enzyme cyp26a1 were downregulated and upregulated, respectively, in the cyp17a1-/-;ar-/-;npgr-/- fish compared with that in the control males (Figure 6C and D). The expression levels of hsd3β1, insl3, igf3, dnd, and cyp26a1 were selected and further verified by qPCR (Figure 6E–I).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/66118/elife-66118-fig6-v2.jpg)
+
+**Figure 6.:** (A–D) Heatmap of the candidate genes. (A) The heatmap of star, hsd3β1, cyp11a2, cyp11c1, and insl3 of Leydig cells. (B) The heatmap of sox9a, amh, dmrt1, igf3, and rxfp2b of Sertoli cells. (C) The heatmap of dazl, vasa, dnd, nanos1, nanos2, piwil1, piwil2, and rxfp2a (another receptor of Insl3) of germ cells. (D) The expression of the retinoic acid-degrading enzyme, cyp26a1. (E–H) The expression of the selected genes with qPCR for confirmation of transcriptome analyses. (E) hsd3β1. (F) insl3. (G) igf3. (H) dnd. (I) cyp26a1. The letters in the bar charts represent significant differences.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66118/elife-66118-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The comparison of the dataset between cyp17a1-/-;ar-/-;npgr-/- fish and control males, cyp17a1-/-;ar-/- fish, and cyp17a1-/- fish, respectively. (B) The comparison of the dataset between control males and ar-/- males, ar-/-;npgr-/- males, and cyp17a1-/-;ar-/-;npgr-/- fish, respectively. The number represents the genes that were differentially expressed (p<0.05). The number highlighted in red represents the genes that were differentially expressed (p<0.05) in the three comparison groups. The numbers shown in black represent the genes that were differentially expressed (p<0.05) in only one or two comparison groups. The lists of the differentially expressed genes in the overlapped region are available in Supplementary file 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/66118/elife-66118-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–E) Anatomical examination of the testes from control males, ar-/- males, cyp17a1-/- fish, cyp17a1-/-;ar-/- fish, and cyp17a1-/-;ar-/-;fshβ-/- fish at 6 mpf. Black and green arrows indicate the normal and decreased size of testes in control males and cyp17a1-/-;ar-/-;fshβ-/- fish, and ar-/- males, respectively, whereas the red arrows indicate the hypertrophic testis in the cyp17a1-/- fish and cyp17a1-/-;ar-/- fish. (F) Gridpoint Statistical Interpolation (GSI) from fish of the five genotypes at 6 mpf. The letters in bar chart (F) represent significant differences. (G–K) Histological analyses of the testes from control males, ar-/- males, cyp17a1-/- fish, cyp17a1-/-;ar-/- fish, and cyp17a1-/-;ar-/-;fshβ-/- fish at 6 mpf. Black and green letters indicate the normal and decreased number of spermatozoa (SZ) in control males and cyp17a1-/-;ar-/-;fshβ-/- fish, and ar-/- males, respectively, whereas the red letters indicate the increased number of SZ in the cyp17a1-/- fish and cyp17a1-/-;ar-/- fish.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/66118/elife-66118-fig6-figsupp3-v2.jpg)
 
 Subsequently, we analyzed the expression of genes in fish of different genotypes. Since the normal spermatogenesis has been observed in the control males, cyp17a1-/-;ar-/- fish, and cyp17a1-/- fish, while the defective spermatogenesis has been observed in cyp17a1-/-;ar-/-;npgr-/- fish. Therefore, the expressed genes in cyp17a1-/-;ar-/-;npgr-/- fish compared with that in the control males, cyp17a1-/-;ar-/- fish, and cyp17a1-/- fish, respectively, were analyzed and presented in a Venn diagram (Figure 6—figure supplement 1A), which could be used to identify the common transcripts responsible for the normal spermatogenesis course. Out of 1380 annotated genes, we identified a total of 148 differentially expressed genes in the overlapped region, such as the downregulated gonadal somatic cell-derived factor (gsdf), npgr, axonemal dynein assembly factor 3 (dnaaf3), insl3, and upregulated inhibin subunit beta B (inhbb) (Supplementary file 1). The downregulated npgr may have resulted from the npgr deletion-mediated premature mRNA decay in the cyp17a1-/-;ar-/-;npgr-/- fish (El-Brolosy et al., 2019), and the aberrant expression of gsdf, insl3, and inhbb may contribute to the compromised testis organization and spermatogenesis in the cyp17a1-/-;ar-/-;npgr-/- fish.
 
@@ -104,38 +138,212 @@ In summary, our present study with a series of sex steroid signaling deficiency 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>cyp17a1 knockout</td>
+      <td>PMID:30202919</td>
+      <td>RRID:ZFIN_ZDB-GENO-191029-6</td>
+      <td>Dr. Zhan Yin (Institute of Hydrobiology, Chinese Academy of Sciences)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>fshβ knockout</td>
+      <td>PMID:30202919</td>
+      <td>RRID:ZFIN_ZDB-GENO-191029-7</td>
+      <td>Dr. Zhan Yin (Institute of Hydrobiology, Chinese Academy of Sciences)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>ar knockout</td>
+      <td>PMID:29849943</td>
+      <td>RRID:ZFIN_ZDB-GENO-190307-7</td>
+      <td>Dr. Wuhan Xiao (Institute of Hydrobiology, Chinese Academy of Sciences)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>npgr knockout</td>
+      <td>PMID:27333837</td>
+      <td>RRID:ZFIN_ZDB-GENO-170907-1</td>
+      <td>Dr. Xiaochun Liu (Sun Yat-Sen University)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>11-KT</td>
+      <td>Efebio</td>
+      <td>Cat# E092432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DHP</td>
+      <td>TRC</td>
+      <td>Cat# P712080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>P4</td>
+      <td>Aladdin</td>
+      <td>Cat# P106426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D2650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol reagent</td>
+      <td>Ambion</td>
+      <td>Cat# 15596</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T ELISA kit</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat# 582701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>11-KT ELISA kit</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat# 582751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>First-strand cDNA synthesis kit</td>
+      <td>Fermentas</td>
+      <td>Cat# K1621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vasa (rabbit polyclonal)</td>
+      <td>GeneTex</td>
+      <td>Cat# GTX128306</td>
+      <td>RRID:AB_2847856IF: (1:500)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 The zebrafish were maintained under standard conditions at 28.5°C. cyp17a1, ar, fshβ, and npgr knockout lines were established as previously described (Tang et al., 2016; Yu et al., 2018; Zhai et al., 2018; Zhai et al., 2017). The cyp17a1 heterozygote was crossed with an ar heterozygote to generate the cyp17a1/ar double heterozygous fish. The cyp17a1/ar double heterozygote was crossed with the fshβ heterozygote to generate the cyp17a1/ar/fshβ triple heterozygous fish. The cyp17a1/ar double heterozygote was crossed with the npgr heterozygote to generate the cyp17a1/ar/npgr triple heterozygous fish. Double and triple heterozygous fish were used to generate homozygous fish. Male zebrafish were sampled and analyzed from the genotypes mentioned above at 6 mpf. Fish genotypes from the population were examined as previously described (Tang et al., 2016; Yu et al., 2018; Zhai et al., 2018).
 
-## Steroid hormones measurement using UPLC-MS/MS
+### Steroid hormones measurement using UPLC-MS/MS
 
 The concentrations of 11-KT, DHP, and P4 from whole-body lysates were measured using UPLC-MS/MS (Wang et al., 2022). Briefly, the whole body of each fish was placed in a tube containing magnetic beads in a high-speed vortex destroyer instrument (Tissue Cell-destroyer 1000, Xinzhongke viral Disease Control Bio-Tech Ltd, Hubei, China), and then ice-cold acetonitrile (1.5 mL) was added. The centrifugation was performed at 4°C with the highest speed after the high-speed vortex and ultrasonic disruption. The upper layer was placed into a glass tube and evaporated at 30°C under a gentle stream of nitrogen. After dissolving with 0.6 mL of methanol, 2.4 mL of double-distilled water was added, mixed, and purified with C18 solid-phase extraction cartridges (100 mg sorbent per cartridge, RNSC1003-C18, Lvmeng, Jiangsu, China) for further measurement using UPLC-MS/MS (ACQUITY UPLC, Quattro Premier XE, Waters, USA). Then the purified products were evaporated with nitrogen and dissolved with 40% methanol. The 11-KT (E092432, Efebio, Shanghai, China), DHP (P712080, TRC, North York, Canada), and P4 (P106426, Aladdin, Shanghai, China) at a series of concentrations were used as standard samples for standard curve establishment. The standard samples (powders) were dissolved in DMSO (D2650, Sigma-Aldrich, St. Louis, MO) to a concentration of 1 mg/mL, and the gradient dilution with 40% methanol was performed. R > 0.995 was considered as qualified linear of the gradient dilution of the standard samples.
 
-## Steroid hormones measurement using ELISA
+### Steroid hormones measurement using ELISA
 
 The concentrations of T and 11-KT in testis were measured using commercial ELISA kits (T: 582701; and 11-KT: 582751, Cayman Chemicals, Ann Arbor, MI). Briefly, testis samples were isolated and homogenized in phosphate-buffered saline (PBS). After homogenization, an organic solvent was used to extract the sex steroids according to the manufacturer’s instructions. The layers were separated by vortexing and centrifugation, the organic layer was transferred to a fresh tube, and the extraction was repeated four times. The organic part was evaporated by heating to 30°C under a gentle stream of nitrogen. Finally, the extracts were dissolved in 200 µL ELISA buffer and prepared for measurement according to the manufacturer’s instructions.
 
-## Histological analyses (H&E staining) and spermatozoa number analysis
+### Histological analyses (H&E staining) and spermatozoa number analysis
 
 The dissected testes were fixed in 4% paraformaldehyde in PBS at room temperature, followed by dehydration and infiltration. The sectioning and staining procedures were performed as previously described (Lau et al., 2016). Briefly, the samples were embedded and processed for transverse sectioning in paraffin using a Leica RM2235 microtome (Leica Biosystems). Paraffin sections (5 µm in thickness) were mounted on slides, deparaffinized, rehydrated, and washed with deionized water. The sections were stained with hematoxylin and eosin (H&E), dehydrated, mounted, and visualized under a Nikon Eclipse Ni-U microscope (Nikon, Tokyo, Japan). Scale bars are provided for each image. For the spermatozoa number analysis, ImageJ software was used. Briefly, the area in each integrative lumen of seminiferous tubules containing spermatozoa was cut and saved as a new image file for further analysis. After the image was reloaded, the image was transferred to 8-bit gray, and the threshold was selected for sperm selection. The particle number was analyzed after the defining point under the binary submenu to dissect the stacked sperm.
 
-## DHP administration
+### DHP administration
 
 The population of ar heterozygotes containing ar+/+, ar+/-, and ar-/- fish was administered with DHP (P712080, TRC) from 50 to 90 dpf. Briefly, the population from ar heterozygotes was placed in a 3.5 L tank containing DHP (0.067 µg/mL). After the treatment, each fish was genotyped with a tail fin cut and subjected to anatomical examination, GSI analysis, testis HE staining, and spermatozoa number analysis.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Immunofluorescence staining was performed using an anti-Vasa rabbit polyclonal antibody (GTX128306-S, GeneTex, Irvine, CA) as the primary antibody (Zhu et al., 2019). Fluorescein (FITC)-conjugated goat anti-rabbit IgG (H+L) was used as the secondary antibody (SA00003, Proteintech, Rosemont, IL). As previously described, zebrafish testes were fixed, embedded, sectioned, and stained using standard protocols (Zhu et al., 2019). Nuclear DNA was stained with 4',6-diamidino-2-phenylindole (DAPI). Sections were visualized using ×40 objective lenses of an NOL-LSM 710 microscope (Carl Zeiss, Germany). Scale bars are provided for each image.
 
-## Transcriptome analyses
+### Transcriptome analyses
 
 Testis RNA was isolated from the testes of zebrafish by extraction with TRIzol reagent (15596, Ambion, Austin, TX). Using an Illumina NovaSeq 6000 system, RNA-seq reads were generated by sequencing. High-quality mRNA reads were mapped to the Danio rerio genome (GRCz11) using HISAT2 (version 2.2.4, http://daehwankimlab.github.io/hisat2/). Differential expression analysis was performed using the DESeq2 package (v1.30.1) with a fold change of 2 and a p-value cutoff of 0.05. Venn diagram analysis of differentially expressed genes was performed by the R package VennDiagram (version 1.7.1). A heatmap for candidate genes was plotted in R (version 4.1.0) using the heatmap package.
 
-## Quantitative real-time PCR (qPCR)
+### Quantitative real-time PCR (qPCR)
 
 Independent of the RNA samples for transcriptome analyses, another group of RNA samples was extracted and used for cDNA synthesis for qPCR to confirm the transcriptome results. According to the manufacturer’s instructions, a total of 1.5 μg of RNA template was used for reverse transcription to synthesize cDNA using a first-strand cDNA synthesis kit (K1621, Fermentas, Waltham, MA). The qPCR primers for hsd3β1, insl3, igf3, dnd, cyp26a1, and ef1a were used as previously described and are listed in Table 1. For amplification, the TransStart Tip Green qPCR SuperMix (AQ141-01, TransGen, Beijing, China) and Bio-Rad real-time system (Bio-Rad Systems, Berkeley, CA) were used. All mRNA levels were calculated as the fold expression relative to the housekeeping gene ef1a and expressed as a fold change compared to the control group.
 
-## Statistical analysis
+**Table 1.**
+ Primers for qPCR used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Primer direction and sequence (5′–3′)</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">hsd3β1</td>
+      <td>F: GATCCGACTGCTGGATAGAAACA</td>
+      <td rowspan="2">Crespo et al., 2021</td>
+    </tr>
+    <tr>
+      <td>R: CCCGGCAATCATCAAGAGA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">insl3</td>
+      <td>F: CGGACGGTGGTCGCATCGTG</td>
+      <td rowspan="2">Zhai et al., 2018</td>
+    </tr>
+    <tr>
+      <td>R: CTCTCTGGTGCACAACGAG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">igf3</td>
+      <td>F: CCAGGATTCATGCTGAAGGTG</td>
+      <td rowspan="2">Zhai et al., 2018</td>
+    </tr>
+    <tr>
+      <td>R: CTACGAGCTGCTCCAGGTTTG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">dnd</td>
+      <td>F: TCGTGGAAGCTTTTCGGAACCGG</td>
+      <td rowspan="2">Lin et al., 2017</td>
+    </tr>
+    <tr>
+      <td>R: TGTCCTCGACGCGCTTGGAC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">cyp26a1</td>
+      <td>F: TGGGCTTGCCGTTCATTG</td>
+      <td rowspan="2">Crespo et al., 2021</td>
+    </tr>
+    <tr>
+      <td>R: CATGCGCAGAAACTTCCTTCTC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ef1a</td>
+      <td>F: GCCGTCCCACCGACAAG</td>
+      <td rowspan="2">Crespo et al., 2021</td>
+    </tr>
+    <tr>
+      <td>R: CCACACGACCCACAGGTACAG</td>
+    </tr>
+  </tbody>
+</table>
+
+_F = forward; R = reverse._
+
+### Statistical analysis
 
 All the experiments were conducted at least two times. Data were analyzed using GraphPad Prism 8 software. All results are reported as mean ± SD. The statistical significance of differences was determined using Student’s t-test for paired comparisons and one-way ANOVA, followed by Fisher’s LSD test for multiple comparisons. For all statistical analyses, p<0.05 indicated a significant difference. Significant differences marked with asterisks and letters were analyzed using Student’s t-test for paired comparisons and one-way ANOVA, followed by Fisher’s LSD test for multiple comparisons, respectively.

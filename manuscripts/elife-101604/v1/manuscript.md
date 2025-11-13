@@ -22,20 +22,20 @@
 
 ### Affiliations
 
-1. https://ror.org/012eh0r35 Department of Gastroenterology, Fukushima Medical University, School of Medicine Fukushima Japan
+1. Department of Gastroenterology, Fukushima Medical University, School of Medicine Fukushima Japan ([ROR:012eh0r35](https://ror.org/012eh0r35))
 2. Department of Gastroenterology, Fukushima Rosai Hospital Iwaki Japan
-3. https://ror.org/012eh0r35 Department of Gastroenterology, Aizu Medical Center, Fukushima Medical University Aizu Japan
-4. https://ror.org/037wv7h91 Department of Gastroenterology, Ohta Nishinouchi Hospital Koriyama Japan
+3. Department of Gastroenterology, Aizu Medical Center, Fukushima Medical University Aizu Japan ([ROR:012eh0r35](https://ror.org/012eh0r35))
+4. Department of Gastroenterology, Ohta Nishinouchi Hospital Koriyama Japan ([ROR:037wv7h91](https://ror.org/037wv7h91))
 5. Department of Gastroenterology, Fukushima Redcross Hospital Fukushima Japan
-6. https://ror.org/0535vdn91 Department of Gastroenterology, Soma General Hospital Soma Japan
-7. https://ror.org/05c8e3213 Department of Gastroenterology, Saiseikai Fukushima General Hospital Fukushima Japan
-8. https://ror.org/012eh0r35 Department of Endoscopy, Fukushima Medical University Hospital Fukushima Japan
+6. Department of Gastroenterology, Soma General Hospital Soma Japan ([ROR:0535vdn91](https://ror.org/0535vdn91))
+7. Department of Gastroenterology, Saiseikai Fukushima General Hospital Fukushima Japan ([ROR:05c8e3213](https://ror.org/05c8e3213))
+8. Department of Endoscopy, Fukushima Medical University Hospital Fukushima Japan ([ROR:012eh0r35](https://ror.org/012eh0r35))
 
 † Corresponding author
 
 ## Abstract
 
-Post-endoscopic retrograde cholangiopancreatography (ERCP) pancreatitis (PEP) is a severe and deadly adverse event following ERCP. The ideal method for predicting PEP risk before ERCP has yet to be identified. We aimed to establish a simple PEP risk score model (SuPER model: Support for PEP Reduction) that can be applied before ERCP. This multicenter study enrolled 2074 patients who underwent ERCP. Among them, 1037 patients each were randomly assigned to the development and validation cohorts. In the development cohort, the risk score model for predicting PEP was established via logistic regression analysis. In the validation cohort, the performance of the model was assessed. In the development cohort, five PEP risk factors that could be identified before ERCP were extracted and assigned weights according to their respective regression coefficients: –2 points for pancreatic calcification, 1 point for female sex, and 2 points for intraductal papillary mucinous neoplasm, a native papilla of Vater, or the pancreatic duct procedures (treated as ‘planned pancreatic duct procedures’ for calculating the score before ERCP). The PEP occurrence rate was 0% among low-risk patients (≤0 points), 5.5% among moderate-risk patients (1–3 points), and 20.2% among high-risk patients (4–7 points). In the validation cohort, the C statistic of the risk score model was 0.71 (95% CI 0.64–0.78), which was considered acceptable. The PEP risk classification (low, moderate, and high) was a significant predictive factor for PEP that was independent of intraprocedural PEP risk factors (precut sphincterotomy and inadvertent pancreatic duct cannulation) (OR 4.2, 95% CI 2.8–6.3; p<0.01). The PEP risk score allows an estimation of the risk of PEP prior to ERCP, regardless of whether the patient has undergone pancreatic duct procedures. This simple risk model, consisting of only five items, may aid in predicting and explaining the risk of PEP before ERCP and in preventing PEP by allowing selection of the appropriate expert endoscopist and useful PEP prophylaxes. No external funding was received for this work.
+Background:Post-endoscopic retrograde cholangiopancreatography (ERCP) pancreatitis (PEP) is a severe and deadly adverse event following ERCP. The ideal method for predicting PEP risk before ERCP has yet to be identified. We aimed to establish a simple PEP risk score model (SuPER model: Support for PEP Reduction) that can be applied before ERCP.Methods:This multicenter study enrolled 2074 patients who underwent ERCP. Among them, 1037 patients each were randomly assigned to the development and validation cohorts. In the development cohort, the risk score model for predicting PEP was established via logistic regression analysis. In the validation cohort, the performance of the model was assessed.Results:In the development cohort, five PEP risk factors that could be identified before ERCP were extracted and assigned weights according to their respective regression coefficients: –2 points for pancreatic calcification, 1 point for female sex, and 2 points for intraductal papillary mucinous neoplasm, a native papilla of Vater, or the pancreatic duct procedures (treated as ‘planned pancreatic duct procedures’ for calculating the score before ERCP). The PEP occurrence rate was 0% among low-risk patients (≤0 points), 5.5% among moderate-risk patients (1–3 points), and 20.2% among high-risk patients (4–7 points). In the validation cohort, the C statistic of the risk score model was 0.71 (95% CI 0.64–0.78), which was considered acceptable. The PEP risk classification (low, moderate, and high) was a significant predictive factor for PEP that was independent of intraprocedural PEP risk factors (precut sphincterotomy and inadvertent pancreatic duct cannulation) (OR 4.2, 95% CI 2.8–6.3; p<0.01).Conclusions:The PEP risk score allows an estimation of the risk of PEP prior to ERCP, regardless of whether the patient has undergone pancreatic duct procedures. This simple risk model, consisting of only five items, may aid in predicting and explaining the risk of PEP before ERCP and in preventing PEP by allowing selection of the appropriate expert endoscopist and useful PEP prophylaxes.Funding:No external funding was received for this work.
 
 ## Introduction
 
@@ -49,7 +49,7 @@ Therefore, we aimed to establish a PEP prediction model using only risk factors 
 
 We performed a multicenter retrospective study at six institutions in Japan. This study was approved by the institutional review board of Fukushima Medical University and that of each partner medical institution (number 2453). The analysis used anonymous clinical data obtained after all the participants agreed to treatment with written consent; thus, patients were not required to provide informed consent for the study. The details of the study can be found on the homepage of Fukushima Medical University.
 
-## Patients
+### Patients
 
 Among 2176 patients who underwent ERCP between November 2020 and October 2022, 2074 were included in this study. The other 102 patients were excluded for the following reasons: history of choledochojejunostomy, acute pancreatitis, choledochoduodenal fistula, difficulty finding the Vater papilla, history of pancreatojejunostomy, or history of pancreatogastrostomy (Figure 1). The predictive PEP score is not necessary for the excluded patients. The reasons were as follows. Biliary duct cannulation was not attempted in patients for whom it was difficult to identify the Vater papilla. The biliary tract was separated from the pancreas in patients with a history of choledochojejunostomy, pancreatojejunostomy, or pancreatogastrostomy. PEP risk was thought to be clearly low in these patients and patients who underwent bile duct cannulation via the choledochoduodenal fistula. PEP diagnosis is difficult in patients with acute pancreatitis, whose diagnosis is currently in progress.
 
@@ -57,7 +57,7 @@ Among 2176 patients who underwent ERCP between November 2020 and October 2022, 2
 
 **Figure 1.:** ERCP, endoscopic retrograde cholangiopancreatography.
 
-## Study design
+### Study design
 
 We randomly sampled 50% of the patients as the development cohort and 50% as the validation cohort (Figure 1). In the development cohort, we established a risk scoring system for predicting PEP before ERCP, which was named the support for PEP reduction model (SuPER model). The validation cohort was used to confirm the effectiveness of the scoring system. PEP diagnosis and severity were assessed according to Cotton’s criteria (Cotton et al., 1991). Patients who experienced abdominal pain and had hyperamylasemia (more than three times the normal upper limit) at least 24 hr after ERCP were diagnosed with PEP. Mild PEP was defined as pancreatitis that required prolongation of the planned hospitalization by 2–3 days. Moderate PEP was defined as pancreatitis that required 4–10 days of hospitalization. Severe PEP was defined as pancreatitis that required more than 10 days of hospitalization or intervention or hemorrhagic pancreatitis, phlegmon, or pseudocysts.
 
@@ -65,11 +65,11 @@ To establish the risk score, the risk factors for PEP were investigated via data
 
 To demonstrate the independence of the established risk classification, the relationships between it and intraprocedural PEP risk factors (including precut sphincterotomy and inadvertent pancreatic duct cannulation) (Testoni et al., 2010; Wang et al., 2009) were investigated. Because of the retrospective nature of the data, the exact number of cannulations and the number of cannulation attempts were not available. Therefore, multiple cannulation attempts and a prolonged cannulation time could not be investigated as intraprocedural PEP risk factors.
 
-## Sample size
+### Sample size
 
 The primary aim of this study was to establish a PEP prediction model that could be used to calculate a risk score before ERCP. To construct a prediction model via logistic regression analysis, 10 events per explanatory variable were needed (Wynants et al., 2015). Seven variables were evaluated in the development cohort, so 70 PEP patients were included. Five variables were evaluated in the validation cohort, so 50 PEP patients were necessary. According to a previous systematic review, the rate of PEP occurrence was 9.7% (Kochar et al., 2015). Therefore, at least 722 and 521 patients were included in the development and validation cohorts, respectively.
 
-## Statistical analysis
+### Statistical analysis
 
 In the development cohort, univariate and multivariate logistic regression analyses were performed to identify the risk factors for PEP. The factors that had a p-value<0.10 in the univariate analysis were included in the multivariate analysis. To construct the scoring system for PEP risk, the factors with p<0.10 in the multivariate analysis were ultimately included in the risk score model. The factors selected in the multivariate analysis were assigned points according to the regression coefficient (each variable’s risk points = the ratio of the variable’s regression coefficient/minimum regression coefficient). The sum of the assigned points was calculated for each patient, and the patients were classified into three groups (low risk, moderate risk, and high risk) according to the expected rate of PEP occurrence (Friedland et al., 2002). The risk classification system (SuPER model) was also applied to the validation cohort.
 
@@ -81,19 +81,764 @@ Statistical analyses were performed using EZR version 1.62 (Saitama Medical Cent
 
 ## Results
 
-## Patient characteristics and ERCP outcomes in each cohort
+### Patient characteristics and ERCP outcomes in each cohort
 
 The patient characteristics and ERCP outcomes of each cohort are shown in Table 1. A total of 1037 patients were assigned to each of the development and validation cohorts, including 70 (6.8%) and 64 (6.2%) patients diagnosed with PEP, respectively. Age, history of pancreatitis, and procedures involving the pancreatic duct were significantly different between the development cohort and the validation cohort. The pre-ERCP prophylactic measures used at each hospital differed, and not all patients received prophylaxis.
 
-## Construction of the PEP risk scoring system
+**Table 1.**
+ Comparison of patient characteristics and ERCP outcomes between the development and validation cohorts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Development cohort(n=1037)</th>
+      <th>Validation cohort(n=1037)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patient factors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age, years, mean ± SD</td>
+      <td>73.8 ± 12.7</td>
+      <td>75.1 ± 12.5</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Sex, n, male/female</td>
+      <td>642/395</td>
+      <td>629/408</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>History of pancreatitis, n (%)</td>
+      <td>73 (7.0)</td>
+      <td>45 (4.4)</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>History of PEP, n (%)</td>
+      <td>26 (2.5)</td>
+      <td>24 (2.3)</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>History of gastrectomy, n (%)</td>
+      <td>82 (7.9)</td>
+      <td>88 (8.5)</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>Billroth-I reconstruction, n</td>
+      <td>24</td>
+      <td>25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Billroth-II reconstruction, n</td>
+      <td>23</td>
+      <td>25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Roux-en-Y reconstruction, n</td>
+      <td>33</td>
+      <td>36</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Double tract, n</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gastric tube reconstruction, n</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pancreatic cancer, n (%)</td>
+      <td>145 (14.0)</td>
+      <td>174 (16.8)</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>IPMN, n (%)</td>
+      <td>17 (1.6)</td>
+      <td>8 (0.8)</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Native papilla of Vater, n (%)</td>
+      <td>535 (51.6)</td>
+      <td>494 (47.7)</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Total bilirubin, mg/dl, mean ± SD *</td>
+      <td>3.5 ± 5.3</td>
+      <td>3.6 ± 5.0</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>Diameter of the MPD, mm, mean ± SD †</td>
+      <td>2.84 ± 2.63</td>
+      <td>3.1 ± 2.9</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Pancreatic calcification, n (%) ‡</td>
+      <td>107 (10.6)</td>
+      <td>87 (8.7)</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Periampullary diverticulum, n (%)</td>
+      <td>207 (20.0)</td>
+      <td>224 (21.6)</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td>Pre-ERCP prophylaxis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protease inhibitors, n (%)</td>
+      <td>709 (68.4)</td>
+      <td>703 (67.8)</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>Intravenous hydration, n (%)</td>
+      <td>22 (2.1)</td>
+      <td>14 (1.4)</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>NSAID suppository, n (%)</td>
+      <td>53 (5.1)</td>
+      <td>45 (4.3)</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <td>Factors related to the planned procedure</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EST, n (%)</td>
+      <td>449 (43.3)</td>
+      <td>434 (41.9)</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>EPBD, n (%)</td>
+      <td>31 (3.0)</td>
+      <td>40 (3.9)</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>EPLBD, n (%)</td>
+      <td>56 (5.4)</td>
+      <td>55 (5.3)</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Biliary stone removal, n (%)</td>
+      <td>327 (31.5)</td>
+      <td>342 (33.0)</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>Ampullectomy, n (%)</td>
+      <td>5 (0.5)</td>
+      <td>5 (0.5)</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Biliary stent, n (%)</td>
+      <td>594 (57.3)</td>
+      <td>611 (58/9)</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>Plastic stent, n (%)</td>
+      <td>445 (42.9)</td>
+      <td>436 (42.0)</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>SEMS, n (%)</td>
+      <td>119 (11.5)</td>
+      <td>122 (11.8)</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>CSEMS, n (%)</td>
+      <td>36 (3.5)</td>
+      <td>44 (4.2)</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>Biliary stent above the papilla, n (%)</td>
+      <td>45 (4.3)</td>
+      <td>47 (4.5)</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>Procedures on the pancreatic duct, n (%)</td>
+      <td>285 (27.5)</td>
+      <td>237 (22.9)</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>PEP occurrence, n (%)</td>
+      <td>70 (6.8)</td>
+      <td>64 (6.2)</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>Mild, n</td>
+      <td>60</td>
+      <td>53</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Moderate, n</td>
+      <td>8</td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Severe, n</td>
+      <td>2</td>
+      <td>4</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_ERCP, endoscopic retrograde cholangiopancreatography; PEP, post-ERCP pancreatitis; IPMN, intraductal papillary mucinous neoplasm; MPD, main pancreatic duct; EST, endoscopic sphincterotomy; EPBD, endoscopic papillary balloon dilation; SEMS, self-expandable metallic stent; CSEMS, covered SEMS.*Data were available for 2042 patients.†Data were available for 1671 patients.‡Data were available for 2017 patients._
+
+### Construction of the PEP risk scoring system
 
 According to the univariate analyses, age <50 years, female sex, IPMN, a native papilla of Vater, pancreatic calcification, EST, and procedures on the pancreatic duct had p-values<0.10 (Table 2). According to the multivariate analysis, female sex, IPMN, a native papilla of Vater, pancreatic calcification, and procedures on the pancreatic duct had p-values<0.10. These factors were assigned risk points according to their respective regression coefficients.
 
+**Table 2.**
+ Logistic regression analysis of predictive factors for PEP in the development cohort.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Univariate analysis</th>
+      <th colspan="4">Multivariate analysis</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>OR</td>
+      <td>95% CI</td>
+      <td>p- Value</td>
+      <td>OR</td>
+      <td>95% CI</td>
+      <td>p-Value</td>
+      <td>Regression coefficient</td>
+      <td>Points</td>
+    </tr>
+    <tr>
+      <td>Age &lt;50 years</td>
+      <td>2.42</td>
+      <td>0.99–6.0</td>
+      <td>0.053</td>
+      <td>1.76</td>
+      <td>0.67–4.63</td>
+      <td>0.25</td>
+      <td>0.56</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>1.91</td>
+      <td>1.17–3.10</td>
+      <td>&lt;0.01</td>
+      <td>1.72</td>
+      <td>1.03–2.89</td>
+      <td>0.039</td>
+      <td>0.55</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>History of pancreatitis</td>
+      <td>1.26</td>
+      <td>0.53–3.0</td>
+      <td>0.61</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>History of PEP</td>
+      <td>1.84</td>
+      <td>0.54–6.28</td>
+      <td>0.33</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>History of gastrectomy</td>
+      <td>0.89</td>
+      <td>0.35–2.27</td>
+      <td>0.81</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pancreatic cancer</td>
+      <td>1.03</td>
+      <td>0.51–2.06</td>
+      <td>0.94</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IPMN</td>
+      <td>8.15</td>
+      <td>2.92–22.7</td>
+      <td>&lt;0.01</td>
+      <td>3.04</td>
+      <td>0.97–9.52</td>
+      <td>0.056</td>
+      <td>1.11</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Native papilla of Vater</td>
+      <td>4.49</td>
+      <td>2.42–8.30</td>
+      <td>&lt;0.01</td>
+      <td>2.72</td>
+      <td>1.30–5.71</td>
+      <td>&lt;0.01</td>
+      <td>1.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Total bilirubin ≤1.2 mg/dl *</td>
+      <td>1.13</td>
+      <td>0.69–1.84</td>
+      <td>0.62</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Diameter of the MPD &gt;3 mm†</td>
+      <td>1.31</td>
+      <td>0.76–2.25</td>
+      <td>0.33</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pancreatic calcification‡</td>
+      <td>0.36</td>
+      <td>0.11–1.17</td>
+      <td>0.089</td>
+      <td>0.32</td>
+      <td>0.10–1.1</td>
+      <td>0.072</td>
+      <td>–1.13</td>
+      <td>-2</td>
+    </tr>
+    <tr>
+      <td>Periampullary diverticulum</td>
+      <td>0.65</td>
+      <td>0.33–1.30</td>
+      <td>0.22</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protease inhibitors</td>
+      <td>0.72</td>
+      <td>0.44–1.19</td>
+      <td>0.20</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intravenous hydration</td>
+      <td>1.39</td>
+      <td>0.32–6.08</td>
+      <td>0.66</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NSAID suppository before ERCP</td>
+      <td>1.47</td>
+      <td>0.57–3.83</td>
+      <td>0.43</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EST</td>
+      <td>1.71</td>
+      <td>1.05–2.79</td>
+      <td>0.03</td>
+      <td>0.83</td>
+      <td>0.45–1.52</td>
+      <td>0.54</td>
+      <td>–0.19</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>EPBD</td>
+      <td>&lt;0.01</td>
+      <td>0–infinity</td>
+      <td>0.98</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EPLBD</td>
+      <td>0.24</td>
+      <td>0.03–1.76</td>
+      <td>0.16</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biliary stone removal</td>
+      <td>0.68</td>
+      <td>0.39–1.19</td>
+      <td>0.18</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ampullectomy</td>
+      <td>3.49</td>
+      <td>0.39–31.6</td>
+      <td>0.27</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biliary stent</td>
+      <td>0.93</td>
+      <td>0.57–1.52</td>
+      <td>0.78</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plastic stent</td>
+      <td>0.72</td>
+      <td>0.44–1.20</td>
+      <td>0.21</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SEMS</td>
+      <td>1.66</td>
+      <td>0.87–3.20</td>
+      <td>0.13</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CSEMS</td>
+      <td>0.81</td>
+      <td>0.19–3.43</td>
+      <td>0.77</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biliary stent above the papilla</td>
+      <td>0.30</td>
+      <td>0.04–2.24</td>
+      <td>0.24</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Procedures on the pancreatic duct</td>
+      <td>4.77</td>
+      <td>2.89–7.89</td>
+      <td>&lt;0.01</td>
+      <td>3.49</td>
+      <td>1.99–6.12</td>
+      <td>&lt;0.01</td>
+      <td>1.25</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+_PEP, post–endoscopic retrograde cholangiopancreatography pancreatitis; IPMN, intraductal papillary mucinous neoplasm; MPD, main pancreatic duct; EST, endoscopic sphincterotomy; EPBD, endoscopic papillary balloon dilation; EPLBD, endoscopic papillary large balloon dilation; SEMS, self-expandable metallic stent; CSEMS, covered SEMS.*Data were available for 1024 patients in the development cohort.†Data were available for 985 patients in the development cohort.‡Data were available for 1012 patients in the development cohort._
+
 The risk score of each patient was calculated as the total number of risk points and ranged from –2 to 7 points (Table 3). The risk score was found to be correlated with PEP occurrence (p<0.01, Cochran–Armitage trend test). The patients were classified as low (≤0 points), moderate (1–3 points), or high risk (4–7 points) for PEP according to the risk score. The PEP rates were 0% (0/327) among the low-risk patients, 5.5% (27/492) among the moderate-risk patients, and 20.2% (39/193) among the high-risk patients. The risk classification was correlated with PEP occurrence (p<0.01, Cochran–Armitage trend test).
+
+**Table 3.**
+ Patient distribution in terms of risk score and classification.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2">Risk score</th>
+      <th colspan="3">Development cohort (n=1012) *</th>
+      <th colspan="3">Validation cohort (n=1005) †</th>
+    </tr>
+    <tr>
+      <th>PEP occurrence, N</th>
+      <th>PEP rate (95% CI) (%)</th>
+      <th>p-Value ‡</th>
+      <th>PEP occurrence, N</th>
+      <th>PEP rate (95% CI) (%)</th>
+      <th>p-Value ‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">-2</td>
+      <td>0/29</td>
+      <td>0 (0–11.9)</td>
+      <td>&lt;0.01</td>
+      <td>0/33</td>
+      <td>0 (0–10.6)</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td colspan="2">-1</td>
+      <td>0/9</td>
+      <td>0 (0–33.6)</td>
+      <td></td>
+      <td>0/5</td>
+      <td>0 (0–52.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">0</td>
+      <td>0/289</td>
+      <td>0 (0–1.3)</td>
+      <td></td>
+      <td>8/293</td>
+      <td>2.7 (1.2–5.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">1</td>
+      <td>6/140</td>
+      <td>4.3 (1.6–9.1)</td>
+      <td></td>
+      <td>5/160</td>
+      <td>3.1 (1.0–7.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">2</td>
+      <td>8/202</td>
+      <td>4.0 (1.7–7.7)</td>
+      <td></td>
+      <td>14/195</td>
+      <td>7.2 (4.0–11.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">3</td>
+      <td>13/150</td>
+      <td>8.7 (4.7–14.4)</td>
+      <td></td>
+      <td>8/158</td>
+      <td>5.1 (2.2–9.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">4</td>
+      <td>18/97</td>
+      <td>18.6 (11.4–27.7)</td>
+      <td></td>
+      <td>14/84</td>
+      <td>16.7 (9.4–26.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">5</td>
+      <td>17/83</td>
+      <td>20.5 (12.4–30.8)</td>
+      <td></td>
+      <td>14/71</td>
+      <td>19.7 (11.2–30.9)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">6</td>
+      <td>3/9</td>
+      <td>33.3 (7.5–70.1)</td>
+      <td></td>
+      <td>0/3</td>
+      <td>0 (0–70.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">7</td>
+      <td>1/4</td>
+      <td>25.0 (0.6–80.6)</td>
+      <td></td>
+      <td>1/3</td>
+      <td>33.3 (0.8–90.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Risk classification</td>
+      <td>Risk score</td>
+      <td>PEP occurrence, N</td>
+      <td>PEP rate (95% CI) (%)</td>
+      <td>p-Value ‡</td>
+      <td>PEP occurrence, N</td>
+      <td>PEP rate (95% CI) (%)</td>
+      <td>p-Value ‡</td>
+    </tr>
+    <tr>
+      <td>Low</td>
+      <td>≤0</td>
+      <td>0/327</td>
+      <td>0 (0–1.1)</td>
+      <td>&lt;0.01</td>
+      <td>8/331</td>
+      <td>2.4 (1.0–4.7)</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Moderate</td>
+      <td>1–3</td>
+      <td>27/492</td>
+      <td>5.5 (3.6–7.9)</td>
+      <td></td>
+      <td>27/513</td>
+      <td>5.3 (3.5–7.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>4–7</td>
+      <td>39/193</td>
+      <td>20.2 (14.8–26.6)</td>
+      <td></td>
+      <td>29/161</td>
+      <td>18.0 (12.4–24.8)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_PEP, post–endoscopic retrograde cholangiopancreatography pancreatitis.*There were missing data for 25 patients.†Data for 32 patients were missing.‡The correlations between the risk score or classification and PEP occurrence were evaluated via the Cochran–Armitage test._
 
 The C statistic of the risk score model was sufficiently high at 0.77 (95% CI 0.72–0.82) (Table 4). The goodness of fit of the risk score model was also confirmed by the Hosmer–Lemeshow test (p=0.59).
 
-## Validation of the PEP risk scoring system
+**Table 4.**
+ Goodness of fit of the risk score model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Development cohort</th>
+      <th>Validation cohort</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C statistic (95% CI)</td>
+      <td>0.77 (0.72–0.82)</td>
+      <td>0.71 (0.64–0.78)</td>
+    </tr>
+    <tr>
+      <td>Hosmer‒Lemeshow test, p value</td>
+      <td>0.59</td>
+      <td>0.40</td>
+    </tr>
+  </tbody>
+</table>
+
+### Validation of the PEP risk scoring system
 
 The risk score was associated with PEP occurrence in the validation cohort (p<0.01, Cochran–Armitage trend test) (Table 3). We found that 2.4% (8/331) of the patients at low risk, 5.3% (27/513) of those at moderate risk, and 18.0% (29/161) of those at high risk experienced PEP. The risk classification was also correlated with PEP occurrence in the validation cohort (p<0.01, Cochran–Armitage trend test).
 
@@ -103,7 +848,7 @@ The C statistic of the risk score was 0.71, which was also high in the validatio
 
 **Figure 2.:** ERCP, endoscopic retrograde cholangiopancreatography; IPMN, intraductal papillary mucinous neoplasm; PEP, post-ERCP pancreatitis.
 
-## Risk classification and unexpected PEP risk factors
+### Risk classification and unexpected PEP risk factors
 
 The relationships between the established risk classification and intraprocedural PEP risk factors are shown in Supplementary file 1. For all patients in the development cohort and the validation cohort, the risk classification was significantly associated with the occurrence of PEP. On the other hand, precut sphincterotomy and inadvertent pancreatic duct cannulation were not significantly associated with the occurrence of PEP.
 

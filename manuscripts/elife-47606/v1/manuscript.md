@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.47606.001 Deep-sea anglerfishes are relatively abundant and diverse, but their luminescent bacterial symbionts remain enigmatic. The genomes of two symbiont species have qualities common to vertically transmitted, host-dependent bacteria. However, a number of traits suggest that these symbionts may be environmentally acquired. To determine how anglerfish symbionts are transmitted, we analyzed bacteria-host codivergence across six diverse anglerfish genera. Most of the anglerfish species surveyed shared a common species of symbiont. Only one other symbiont species was found, which had a specific relationship with one anglerfish species, Cryptopsaras couesii . Host and symbiont phylogenies lacked congruence, and there was no statistical support for codivergence broadly. We also recovered symbiont-specific gene sequences from water collected near hosts, suggesting environmental persistence of symbionts. Based on these results we conclude that diverse anglerfishes share symbionts that are acquired from the environment, and that these bacteria have undergone extreme genome reduction although they are not vertically transmitted.
+Deep-sea anglerfishes are relatively abundant and diverse, but their luminescent bacterial symbionts remain enigmatic. The genomes of two symbiont species have qualities common to vertically transmitted, host-dependent bacteria. However, a number of traits suggest that these symbionts may be environmentally acquired. To determine how anglerfish symbionts are transmitted, we analyzed bacteria-host codivergence across six diverse anglerfish genera. Most of the anglerfish species surveyed shared a common species of symbiont. Only one other symbiont species was found, which had a specific relationship with one anglerfish species, Cryptopsaras couesii. Host and symbiont phylogenies lacked congruence, and there was no statistical support for codivergence broadly. We also recovered symbiont-specific gene sequences from water collected near hosts, suggesting environmental persistence of symbionts. Based on these results we conclude that diverse anglerfishes share symbionts that are acquired from the environment, and that these bacteria have undergone extreme genome reduction although they are not vertically transmitted.
 
 ## Introduction
 
@@ -39,15 +39,230 @@ Because strictly vertically transmitted symbionts will codiverge with their host
 
 ## Results
 
-## Anglerfish species host only two distinct symbiont species
+### Anglerfish species host only two distinct symbiont species
 
 Contigs closely matching genome sequences of the previously reported luminous symbionts E. escacola or E. luxaltus were found in all samples. These symbiont species were never recovered together and no additional luminescence genes from other taxa were found in any assemblies, confirming prior findings that individual anglerfish host a single species of symbiont (Hendry et al., 2018). Additionally, hosts for which both esca and caruncle samples were available (Cryptopsaras) hosted the same symbiont species in both light organs (Table 1). Phylogenetic analysis of conserved housekeeping genes confirmed that all new symbiont samples in this study are closely related to previously documented species (Hendry et al., 2018) (Figure 1). Short or nonexistent branch lengths within each symbiont species clade suggest that there are few genetic differences between samples, which was supported by ANI values (Table 1). Within a species there was greater than 99% ANI to the previously identified symbiont species (Hendry et al., 2018) and the between symbiont species ANI was less than 74%. All genomes had an average coverage depth of 15x or greater.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/47606/elife-47606-fig1-v1.jpg)
 
-**Figure 1.:** atpA, gapA, gyrB, rpoA, and topA.General time reversible was selected by modelfinder and a tree was constructed using IQ-TREE with 1000 bootstrap replicates. Those samples unique to this study are bolded, with samples from the Northern Atlantic denoted with ♦, and the bootstrap values over 60 are listed at tree nodes.
+**Figure 1.:** General time reversible was selected by modelfinder and a tree was constructed using IQ-TREE with 1000 bootstrap replicates. Those samples unique to this study are bolded, with samples from the Northern Atlantic denoted with ♦, and the bootstrap values over 60 are listed at tree nodes.
 
-## Host-specificity and codivergence
+**Table 1.**
+ Statistics for symbiont genome sequences analyzed in this study.Samples that are unique to this study are bolded. For binned genomes, the average nucleotide identity (ANI) of the genome compared to the reference sequence is shown. For E. luxaltus the reference was the CC26 symbiont and E. escacola was the MJ02 symbiont previously documented (Hendry et al., 2018). Results indicating similar species using ANI are bolded. Samples that could not be successfully binned and were not included in the ANI and completeness analysis are marked with a ‘--‘. Samples when compared to themselves are marked with ‘NA’. Statistics for total length and GC content were generated using OrthoANU, the percent completeness was generated using checkM, and the coverage was generated using BBmap. Sample location is denoted with a ♦ for those from the Northern Atlantic and without notation for those from the Gulf of Mexico.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>FishID</th>
+      <th>Light organ</th>
+      <th>Accession #</th>
+      <th>E. escacola ANI</th>
+      <th>E. luxaltus ANI</th>
+      <th>Length (Mb)</th>
+      <th>GC content (%)</th>
+      <th>Complete (%)</th>
+      <th>Ave coverage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CC26E</td>
+      <td>Cryptopsaras couesii</td>
+      <td>esca</td>
+      <td>GCA002300443.1</td>
+      <td>73.7</td>
+      <td>NA</td>
+      <td>2.14</td>
+      <td>37.7</td>
+      <td>91.3</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>CC32E</td>
+      <td>Cryptopsaras couesii</td>
+      <td>esca</td>
+      <td>SRR8206628</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>CC81C</td>
+      <td>Cryptopsaras couesii</td>
+      <td>caruncle</td>
+      <td>SRR8206630</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>CCS1E ♦</td>
+      <td>Cryptopsaras couesii</td>
+      <td>esca</td>
+      <td>RPOE00000000</td>
+      <td>73.6</td>
+      <td>99.9</td>
+      <td>2.14</td>
+      <td>37.7</td>
+      <td>90.8</td>
+      <td>567</td>
+    </tr>
+    <tr>
+      <td>CCS2C♦</td>
+      <td>Cryptopsaras couesii</td>
+      <td>caruncle</td>
+      <td>RPOF00000000</td>
+      <td>73.7</td>
+      <td>99.9</td>
+      <td>2.20</td>
+      <td>37.6</td>
+      <td>90.3</td>
+      <td>313</td>
+    </tr>
+    <tr>
+      <td>CC62E</td>
+      <td>Cryptopsaras couesii</td>
+      <td>esca</td>
+      <td>SRR8206629</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Csp75C</td>
+      <td>Ceratias uranoscopus</td>
+      <td>caruncle</td>
+      <td>RPGC00000000</td>
+      <td>99.9</td>
+      <td>73.8</td>
+      <td>2.73</td>
+      <td>39.8</td>
+      <td>91.0</td>
+      <td>1600</td>
+    </tr>
+    <tr>
+      <td>CspS10C ♦</td>
+      <td>Ceratias sp.</td>
+      <td>caruncle</td>
+      <td>RPGB00000000</td>
+      <td>99.2</td>
+      <td>73.6</td>
+      <td>2.72</td>
+      <td>39.8</td>
+      <td>91.1</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td>CspS9C ♦</td>
+      <td>Ceratias sp.</td>
+      <td>caruncle</td>
+      <td>RPGE00000000</td>
+      <td>99.1</td>
+      <td>73.8</td>
+      <td>2.69</td>
+      <td>39.8</td>
+      <td>89.3</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>CU44E</td>
+      <td>Ceratias uranoscopus</td>
+      <td>esca</td>
+      <td>RPGD00000000</td>
+      <td>99.1</td>
+      <td>74.0</td>
+      <td>3.04</td>
+      <td>39.8</td>
+      <td>88.3</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>CLS4E ♦</td>
+      <td>Chaenophryne longceps</td>
+      <td>esca</td>
+      <td>RPGF00000000</td>
+      <td>99.9</td>
+      <td>73.7</td>
+      <td>2.73</td>
+      <td>39.8</td>
+      <td>90.4</td>
+      <td>330</td>
+    </tr>
+    <tr>
+      <td>CDS3E ♦</td>
+      <td>Chaeonophryne sp.</td>
+      <td>esca</td>
+      <td>RPGG00000000</td>
+      <td>99.9</td>
+      <td>73.6</td>
+      <td>2.73</td>
+      <td>39.8</td>
+      <td>89.3</td>
+      <td>291</td>
+    </tr>
+    <tr>
+      <td>LMS8E ♦</td>
+      <td>Linophryne maderensis</td>
+      <td>esca</td>
+      <td>RPGH00000000</td>
+      <td>99.8</td>
+      <td>73.8</td>
+      <td>3.40</td>
+      <td>40.0</td>
+      <td>88.8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>MJ02E</td>
+      <td>Melanocetus johnsoni</td>
+      <td>esca</td>
+      <td>GCA002381345.1</td>
+      <td>NA</td>
+      <td>73.7</td>
+      <td>2.65</td>
+      <td>39.8</td>
+      <td>89.9</td>
+      <td>766</td>
+    </tr>
+    <tr>
+      <td>MJS5x ♦</td>
+      <td>Melanocetus johnsoni</td>
+      <td>esca</td>
+      <td>RPGI00000000</td>
+      <td>99.9</td>
+      <td>73.8</td>
+      <td>3.09</td>
+      <td>39.8</td>
+      <td>91.1</td>
+      <td>321</td>
+    </tr>
+    <tr>
+      <td>DP02E</td>
+      <td>Oneirodes sp.</td>
+      <td>esca</td>
+      <td>RPGJ00000000</td>
+      <td>100.0</td>
+      <td>73.7</td>
+      <td>2.68</td>
+      <td>39.8</td>
+      <td>89.3</td>
+      <td>910</td>
+    </tr>
+  </tbody>
+</table>
+
+### Host-specificity and codivergence
 
 Comparison of the host and symbiont phylogenies showed very little congruence, suggesting that neither symbiont species has co-diverged with their host (Figure 2). A symbiont phylogeny was constructed using 205 single-copy protein-coding genes shared by anglerfish symbionts and closely-related free-living bacteria. The construction of a protein-coding phylogeny was employed to get higher-resolution of the relationship between symbionts relative to the house keeping phylogeny. Both analyses showed similar relationships between symbionts (Figure 2). This symbiont topology was compared to a host phylogeny constructed using mitochondrial genes, which matches previous analysis of anglerfish evolutionary relationships (Miya et al., 2010) (Figure 2). Comparison of host and symbiont phylogenies found E. luxaltus was only associated with the fish species C. couesii, and that all fish in this clade hosted the same species of symbiont, indicating that E. luxaltus and C. couesii may have a specific interaction. In contrast, E. escacola was the symbiont associated with every other anglerfish sample evaluated. These other fish samples cover much of the diversity in the suborder, including four of the 11 ceratioid families distributed across the phylogeny. These diverse anglerfishes all hosted very genetically similar symbiont lineages that are polyphyletic with respect to host identity.
 
@@ -61,7 +276,7 @@ None of the symbiont phylogenies, including those constructed with single-copy p
 
 **Figure 3.:** SNPs phylogenies were analyzed for each species, and the scale for E. luxaltus was dissimilar to the E. ecacola; neither were statistically significant (p>0.5 for analysis of both species). The squared residuals below the median squared residual value (dotted line) are significantly codiverging with the host phylogenies (marked with an asterisk). Sample IDs from the Northern Atlantic are marked with a ♦ and those from the Gulf of Mexico are unmarked.
 
-## Symbiont-specific DNA found in environmental samples
+### Symbiont-specific DNA found in environmental samples
 
 In order to further evaluate the possibility of anglerfish symbionts persisting environmentally, we attempted to amplify DNA from environmental samples with symbiont-specific primers. We used a PCR assay for a highly conserved and species specific 198-basepair portion of the cheA locus from each symbiont on seawater bacterial samples. This locus was successfully amplified and sequenced from a subset of the samples, with sequences identified as E. luxaltus and E. escacola found in distinct environmental samples. Four samples (8% of those evaluated) were confirmed to contain the E. luxaltus cheA gene (Supplementary file 6). These nucleotide sequences were 99–100% similar to the cheA locus in all E. luxaltus genomes available (Hendry et al., 2018; this study). The amplicon sequences do not appear to be from other known bacteria, such as closely related Enterovibrio. The most similar match to the environmental sequences in GenBank databases (non-redundant, Refseq genome, and whole genome shotgun) with >60% coverage shared only 80% nucleotide identity. Four different samples (8% of those evaluated) were identified as E. escacola. Sequences of E. escacola cheA from the environment did not have significant matches in GenBank databases, but were 99% similar to the E. escacola locus from available genomes (Hendry et al., 2018; this study). The amplified cheA region is only 78% similar between E. escacola and E. luxaltus and phylogenetic analysis confirmed that the environmental sequences clustered with E. escacola and E. luxaltus sequences rather than cheA orthologs from the highest non-symbiont BLAST matches in GenBank (Figure 4). This phylogenetic clustering and high nucleotide identity suggest that the cheA locus is highly conserved within each species and distinctive from closely related bacteria, so we conclude that successful amplifications from seawater indicate that the symbionts were present in the environment.
 
@@ -69,13 +284,13 @@ In order to further evaluate the possibility of anglerfish symbionts persisting 
 
 **Figure 4.:** Modelfinder selected the general time reversible model and a tree was constructed using IQ-TREE with 1000 bootstrap replicates. Those samples from the Northern Atlantic denoted with ♦, and the bootstrap values over 60 are given at tree nodes.
 
-## Within a symbiont species, samples differed by SNPs
+### Within a symbiont species, samples differed by SNPs
 
 There was very little genetic diversity within both E. escacola and E. luxaltus at the loci analyzed above, which could possibly obscure codivergence between symbionts and hosts. To investigate this possibility, as well as any geographic patterns in symbiont distribution, phylogenies were constructed using more data in the form of genome-wide single nucleotide polymorphisms (SNPs) (Figure 5A B). Fewer SNPs present across samples were found in E. luxaltus genomes (2252) compared to E. escacola genomes (15272). The E. luxaltus SNP phylogeny does further differentiate between samples with high support (Figure 5A). Specifically, a host esca (E) and caruncle (C) from the North Atlantic were divergent from those collected in the Gulf of Mexico. However, with the limited number of available samples, we are not able to fully investigate if this is due to geographic patterns or the substantial time between sampling (~20 years) (Supplementary file 1). However, samples collected from the same location from different months (with a maximum difference in collection time of 12 months) did not form distinct clades. The SNP phylogeny constructed for E. escacola also showed more divergence than phylogenies from conserved genes, but samples did not form distinct clades by location or collection date (Figure 5B). Consistent with other analyses, E. escacola samples isolated from the same host genera were polyphyletic and there was often greater variation between symbionts isolated from the same anglerfish genus than between symbionts from different host genera. Some Ceratias symbiont samples did form a long branch that was distinct from all other E. escacola lineages, with the exception of a single Ceratias sample (Csp75C). To confirm a lack of codivergence with improved phylogenetic resolution, we performed the Procrustean analysis using the SNP phylogenies, but neither symbiont was significantly codiverging with their hosts (p>0.05) in this analysis.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/47606/elife-47606-fig5-v1.jpg)
 
-**Figure 5.:** A) E. luxaltus (2252 SNPs) and (B) E. escacola (15272 SNPs).Host identifications for each sample are listed in the right-hand column. Samples unique to this study are bolded and those from the Northern Atlantic are marked with a ♦.
+**Figure 5.:** Host identifications for each sample are listed in the right-hand column. Samples unique to this study are bolded and those from the Northern Atlantic are marked with a ♦.
 
 ## Discussion
 
@@ -84,6 +299,57 @@ Within the broad phylogenetic spectrum of ceratioid anglerfishes sampled in this
 Although some obligate bacteria show low genetic diversity within a host species, obligate symbionts from different host species are often distinct due to codivergence with their hosts (Clark et al., 2000; Jousselin et al., 2009). This pattern has been found in numerous symbionts that are known to be vertically transmitted and often results in phylogenetic congruence between distinct host and symbiont taxa (Fisher et al., 2017; Sachs et al., 2011), as has been documented in the bacterial symbionts of insects (Dale and Moran, 2006; Moran et al., 2008) and deep-sea clams (Goffredi et al., 2003; Hurtado et al., 2003). Within vertically transmitted symbionts, symbiont replacements or horizontal transfers can often be observed in specific lineages where congruence breaks down (Bright and Bulgheresi, 2010), as has been observed in Wolbachia-harboring insects (Kikuchi and Fukatsu, 2003; Lefoulon et al., 2016), bacterial symbionts of marine worms (Blazejak et al., 2006), and Prochloron associated with sea-squirts (Münchhoff et al., 2007). Neither of these patterns is seen in our data. Anglerfish symbionts and their hosts lack consistently congruent phylogenies and it does not seem likely that congruence is being obscured by symbiont replacements or transfers, since very diverse host species all share low diversity symbionts. These results support the hypothesis that anglerfish symbionts are not codiverging with their host species. This conclusion is robust for E. escacola and associated hosts, but we may not have enough samples, and genetic diversity within those samples, to rule out the possibility that E. luxaltus and C. couesii could be codiverging due to vertical transmission. An alternative hypothesis is that C. couesii and E. luxaltus have a specific interaction, and that either the host or the bacterium excludes the other symbiont species (Bongrand and Ruby, 2019; Koch et al., 2014).
 
 A lack of robust and statistically significant codivergence between hosts and symbionts contradicts the hypothesis that either symbiont species is vertically transmitted. This is consistent with previous studies of the luminous symbionts of squid and fish hosts, as they show no congruence between host and symbiont species (Dunlap et al., 2007). The most likely conclusion based on these data is that anglerfishes acquire their bacteria from an environmental symbiont pool that interacts with diverse anglerfish species. However, anglerfish symbiont genomes resemble vertically transmitted symbionts in multiple ways, including having extreme gene loss, expansion of transposable elements, and limited metabolic capacity (Hendry et al., 2018). Similar genomic patterns are seen in ‘Candidatus Photodesmus’ species, the luminous symbiont of anomalopid flashlight fishes (Hendry et al., 2016; Hendry et al., 2014). Both anglerfish and anomalopid symbionts have evaded culturing efforts and are divergent from known species of luminous bacteria in the Vibrionaceae (Haygood et al., 1992; Haygood and Distel, 1993; Hendry et al., 2018; Hendry and Dunlap, 2011). However, anglerfishes do not appear to school, nor do they exhibit diurnal cave dwelling, that is hypothesized to assist in pseudovertical transmission of Photodesmus species to flashlight fishes (Hendry et al., 2016; Hendry et al., 2014). Flashlight fishes and their symbionts lack sufficient sampling to test for codivergence, but symbiont sequencing from four fish species found high symbiont-host specificity (Hendry et al., 2014), a distinct pattern from the results presented here for E. escacola and six host species. We are not aware of other bacterial symbionts that have undergone extensive, degenerative genome reduction while maintaining environmental populations and associations with diverse and widespread hosts, as is seen with deep-sea anglerfish symbionts (For an overview of transmission modes and evolutionary patterns in symbionts, see Table 2).
+
+**Table 2.**
+ A summary of modes of symbiont transmission, examples of some bacterial species and the functions they perform for animal hosts, and trends in the reduction of symbiont genomes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Transmission</th>
+      <th>Description</th>
+      <th>Symbiont and function</th>
+      <th>Host</th>
+      <th>Genome</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Environmental</td>
+      <td>Acquired from free-living bacteria</td>
+      <td>Luminescence Aliivibrio fischeri Photobacterium leiognathi Photobacterium kishitanii Nutrition "Candidatus Endoriftia persephone" Various Gammaproteobacteria Burkholderia spp.</td>
+      <td>Fish and squid Fish Fish Tubeworms Mussels Insects</td>
+      <td>Comprable to free-living relatives</td>
+      <td>Dunlap and Urbanczyk, 2013; Gyllborg et al., 2012 Urbanczyk et al., 2011; Ast et al., 2007 Li et al., 2018; Kleiner et al., 2012 Ponnudurai et al., 2017 Kikuchi et al., 2005; Kikuchi et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Proposed Environmental</td>
+      <td>Environmentally persistant cells</td>
+      <td>Luminescence "Candidatus Enterovibrio escacola" "Candidatus Enterovibrio luxaltus"</td>
+      <td>Anglerfish Anglerfish</td>
+      <td>Ongoing reduction</td>
+      <td>Hendry et al., 2018 Hendry et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Mixed</td>
+      <td>Pseudovertical or surface transmission</td>
+      <td>Luminescence "Candidatus Photodesmus blepharus" "Candidatus Photodesmus katoptron" Nutrition Various Gammaproteobacteria “Candidatus Ishikawaella capsulata”</td>
+      <td>Flashlight fish Flashlight fish Clams Stink bug</td>
+      <td>Moderate toextreme reduction</td>
+      <td>Hendry et al., 2014; Hendry and Dunlap, 2014 Hendry et al., 2014; Hendry and Dunlap, 2014 Kuwahara et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Inherited</td>
+      <td>Direct passage from parent to offspring on egg or sperm</td>
+      <td>Nutrition Buchnera aphidicola Carsonella ruddii Portiera aleyrodidarum Varied "Candidatus Synechococcus spongiarum"</td>
+      <td>Aphids Psyllids Whiteflies Sponges</td>
+      <td>Greatly reduced</td>
+      <td>Moran et al., 2008; Fisher et al., 2017 Moran et al., 2008; Fisher et al., 2017 Moran et al., 2008; Fisher et al., 2017 Gao et al., 2014; Burgsdorf et al., 2015</td>
+    </tr>
+  </tbody>
+</table>
 
 Based on catch rates and limited observation, anglerfishes are thought to be relatively solitary, and different life stages are separated by hundreds to thousands of meters of ocean (Pietsch, 2009). Anglerfishes are unlikely to encounter environmental symbionts regularly, as symbionts are unlikely to establish widespread populations due to their limited metabolic capabilities (Hendry et al., 2018). Other environmentally transmitted luminescent symbionts have much higher host densities to enrich populations in the local environment (Nealson and Hastings, 1991). Anglerfishes may have evolved mechanisms to similarly increase the concentration of symbionts in their local environment. A small pore in the lure is likely seeding the environment with symbiotic bacteria (Munk, 1999), but the caruncles on Ceratias and Cryptopsaras species are also a likely source of symbiotic bacteria. The caruncle is not externally luminescent and its function for the fish is not established (Pietsch, 2009). Although it is not connected to the esca, the caruncle does connect to the surrounding water through a small distal pore (Pietsch, 2009). The conclusion that anglerfishes must acquire their symbionts from potentially sparse environmental populations leads us to propose that the caruncle evolved as a mechanism to increase the concentration of symbiotic bacteria in the environment, thereby increasing the likelihood of symbionts being transmitted to new fish generations.
 
@@ -97,30 +363,30 @@ The deep sea is the earth’s largest and most understudied ecosystem, where stu
 
 ## Materials and methods
 
-## Genome sequencing, assembly, and annotation
+### Genome sequencing, assembly, and annotation
 
 Anglerfish samples were collected in the Gulf of Mexico by the DEEPEND Consortium and from east of the Cape Verde Islands by Spencer Nyholm and Peter Herring on the RRS Discovery expedition D243 (sample information in Supplementary file 1). Morphological identification was done on ship by Tracey Sutton (DEEPEND) or Spencer Nyholm and Peter Herring. Molecular genetic confirmation of morphological identification is discussed below. Samples were named according to: initial morphological identification, order collected, and anglerfish light organ sampled--either esca (E) or caruncles (C). Lures were collected immediately after identification using a sterile scalpel and stored in ethanol or RNAlater (Qiagen, Hilden, Germany) at −80°C until processing. DNA extraction from samples collected in the Gulf of Mexico was performed at the Marine Microbiology and Genetics Laboratory at Nova Southeastern University’s Halmos College of Natural Sciences and Oceanography using the PowerLyzer PowerSoil kit (MoBio) as is described in Hendry et al. (2018) Samples collected in the Northern Atlantic were extracted using the DNeasy Blood and Tissue Kit (Qiagen). Paired-end 250 base pair Illumina sequence libraries were prepared using the Nextera kit (Illumina, San Diego, CA) and sequenced using HiSeq2500 at the Cornell University Institute of Biotechnology Resource Center Genomics Facility. Contigs were assembled using DISCOVAR de novo and binned and assessed for quality using multiple approaches which are detailed in the Supplementary Information. Binned symbiont genomes and sequences mapped to the reference genomes for E. luxaltus and E. escacola (GCA_002381345.1 and GCA_002300443.1) were submitted to NCBI (Supplementary file 1).
 
-## Genome assembly and validation
+### Genome assembly and validation
 
 High concentrations of an evident monoculture of symbionts within anglerfish escae enable assembly and study of symbiont genomes from samples that are technically metagenomic, as they include symbiont and host DNA as well as DNA from contaminant bacteria likely on the surface of the light organ (Hendry et al., 2018). After assembly using DISCOVAR de novo, bacterial genomes were binned using metabat2, which bins similar contigs according to tetranucleotide frequency and sequencing depth (Kang et al., 2015). Sequences that failed to bin using metabat2 were binned using the Pathosystems Resource Integration Center (PATRIC 3.5.23) (Wattam et al., 2014). Three C. couesii-associated samples were not successfully binned using metabat2 or PATRIC; these sample assemblies were processed as is outlined, with the exception of finding average nucleotide identity or annotating gene content. Binned contigs were evaluated through a local BLAST search for genes within the luciferase operon (luxA, luxB, and luxC) and contigs in the resulting bin were input into the NCBI BLAST database to confirm symbiont identification. The average genome coverage depth was calculated using BBmap (Bushnell, 2014). Genome completeness was evaluated using checkM (Parks et al., 2015), which previously estimated for E. luxaltus and E. escacola as only nearing 90% completion due to genome reduction (Hendry et al., 2018). The quality of the genome assemblies unique to this study are similar to previously documented anglerfish symbionts. Contig bins which had approximately 90% genomic completion, lux luminescence genes, and high BLAST similarity to previously sequenced anglerfish symbiont genomes were consider complete symbiont genome sequences and were submitted to Rapid Annotation using Subsystem Technology (RAST) for annotation. All other bins generated by metabat2 and PATRIC did not contain luciferase genes nor did they have sequences that closely resembled symbiont housekeeping genes.
 
-## Anglerfish host evolution
+### Anglerfish host evolution
 
 Anglerfish morphological identification and evolutionary relationships among samples were evaluated using mitochondrial genes. Similar methods and comparison species are discussed in Miya et al. (2010). Anglerfish mitochondrial sequences were identified using a local BLAST search of the unbinned contigs and deposited in GenBank (accession numbers MK118159-MK118174). Reference mitochondrial sequences were selected based on initial morphological identifications and supplemented with sequences of nearest neighbors present in GenBank and Miya et al., 2010 (Supplementary file 2). Mitochondrial sequences were aligned using MAFFT and a phylogenetic tree was assembled using IQ-TREE (Katoh et al., 2002; Nguyen et al., 2015). Within IQ-TREE modelfinder selects a phylogenetic model using a model-selection method that concurrently searches model and tree space to increase the accuracy of phylogenetic estimates (Kalyaanamoorthy et al., 2017). A consensus tree was constructed using the general time reversible model with empirical base frequencies, allowing for invariable sites, and four rate categories (GTR+F+I+G4) and 1000 bootstrap replicates. Based on phylogenetic analysis, samples were assigned to a species if they fell within the same clade as multiple representatives of the same species or by morphological species identification if sequences from representative species were not available for comparison. Samples were identified to a genus if there was an indeterminate species designation. The genetic identification of a single sample contradicted morphological identification, was reevaluated morphologically, and found to confirm the mitochondrial identification.
 
-## Evaluation of symbiont genomes
+### Evaluation of symbiont genomes
 
 Similarity among symbiont genomes isolated from individual anglerfish samples was evaluated using average nucleotide identity (ANI), housekeeping genes, and conserved single-copy protein-coding genes. ANI, a measure of nucleotide-level genomic similarity, was found using orthoANIu (Yoon et al., 2017); comparisons greater than 95% ANI considered the same species (Konstantinidis and Tiedje, 2005). Bacterial species trees were created using conserved housekeeping genes (16S rRNA gene, atpA, gapA, gyrB, pyrH, rpoA, topA) from both symbiont contigs and closely related bacterial genomes downloaded from NCBI (Supplementary file 3). Genes were aligned using MAFFT and a tree was constructed from the concatenated alignments in IQ-TREE as described above (GTR+F+I+G4 with 1000 bootstrap replicates). Single-copy protein-coding genes shared by bacterial symbionts and whole genome sequences of closely related free-living bacteria (Supplementary file 4) were found by inputting RAST protein annotations into PhyloPhLan. DNA sequence of shared proteins were then extracted from RAST annotations and used to construct a phylogenomic tree by aligning individual genes in MAFFT. The 205 shared genes were concatenated, and a tree was constructed from 331103 positions using the GTR+F+I+G4 model selected by modelfinder and using 1000 bootstrap replicates in IQ-TREE.
 
-## Evaluating codivergence between anglerfish and bacterial symbionts
+### Evaluating codivergence between anglerfish and bacterial symbionts
 
 Host-symbiont codivergence was evaluated using Procrustean Approach to Cophylogeny (PACo) as implemented in R (Balbuena et al., 2013; R Development Core Team, 2012). PACo is a global fit method that does not require fully resolved phylogenies to evaluate if the symbiont has evolved as a result of codivergence with the host species. In PACo, Procrustes superposition manipulates the symbiont genetic distance matrix to fit the host matrix, to evaluate the congruence of the symbiont to the host tree. Anglerfish phylogenies input into PACo were constructed as described above for mitochondrial sequences. Various bacterial phylogenies were analyzed in PACo, including the conserved housekeeping gene phylogeny, genome-wide SNP phylogenies (described below), and the conserved single-copy protein-coding gene (identified by PhyloPhLan) phylogeny (Segata et al., 2013). Symbiont and bacterial ultrametic trees were input into PACo as distance matrices, and 104 iterations were performed for significance testing. The contribution of each bacterial symbiont to the overall global codivergence was evaluated using jackknife estimation of the relative squared residuals; codivergence was indicated in those samples that have a significantly smaller fraction of the sum of squares.
 
-## Evaluating presence/absence of bacterial symbiont DNA in water samples
+### Evaluating presence/absence of bacterial symbiont DNA in water samples
 
 The 16S rDNA sequences matching anglerfish symbionts were previously found in environmental samples taken concurrently with anglerfish collections (Freed et al., 2019), suggesting that symbionts persist outside the host. To confirm that anglerfish symbionts can persist in the environment, symbiont species-specific primers were developed from whole genomes to amplify multicopy loci of a conserved chemotaxis protein cheA, which should be relatively more abundant than single copy loci in low density samples. We performed PCR assays on DNA extracted from environmental bacteria in 52 samples taken concurrently with anglerfish collections during DEEPEND consortium cruises (D01-D04) in the Gulf of Mexico. The filtering and extraction protocol used, as well as the 16S rDNA composition of a subset of these samples is described in Easson et al. (Easson and Lopez, 2019). Primers for cheA specific to each symbiont were designed by importing symbiont and closely related sequences found using the BLAST genome searches into DECIPHER (Wright et al., 2012) (Supplementary file 5). Sequences were amplified using nested PCR primers and the New England Biolabs standard taq polymerase kit (NE Biolabs, Ipswich, MA, USA) using the recommended protocol for amplifications under 500 base pairs. Reactions were prepared in a UV sterilized biosafety cabinet with surface sterilized implements. Negative controls prepared with sterile water were included in each round of PCR. No negative controls resulted in visible amplification. Amplifications were gel extracted using the Qiaquick gel extraction kit (Qiagen, Venlo, Netherlands) and Sanger Sequenced (Genewiz, New Jersey, USA). Sequence identity was evaluated using blastx and blastn searching and a phylogenetic tree was constructed using MAFFT and IQ-TREE (GTR+F+I+G4 and 1000 bootstrap replicates) from environmental amplifications and cheA sequences annotated from genomes available in RAST (Supplementary file 6).
 
-## Evaluation of symbiont diversity within a species using SNPs
+### Evaluation of symbiont diversity within a species using SNPs
 
 Evolution within each symbiont species was evaluated using genome-wide SNPs. Bacteria were grouped into different species based on the result of ANI and the conserved housekeeping gene phylogeny. SNPs were identified using snippy v.4.0-dev, which implements bwa mem and freebayes to compare reads from haploid genomes to a reference genome (Garrison and Marth, 2012; Li, 2013; R Development Core Team, 2012; Seemann, 2015). The reference genome was selected from the previously characterized anglerfish symbionts described in Hendry et al. (2018). SNPs were identified in sequence reads and snippy-core was used to generate a core alignment of SNPs common to all samples. A phylogenetic tree was constructed using this core alignment in IQ-TREE for each symbiont species with 1000 bootstrap replicates, with the models selected for by modelfinder. The E. luxaltus SNPs phylogeny was constructed using the Kimura 3-parameter and ascertainment bias correction model (K3P+ASC) and the E. escacola SNPs phylogeny was constructed using the symmetric model with unequal rates and an ascertainment bias correction model (SYM+ASC).

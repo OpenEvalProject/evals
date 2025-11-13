@@ -15,23 +15,23 @@
 
 ### Affiliations
 
-1. https://ror.org/02kkvpp62 Department of Sport and Health Sciences, Technical University of Munich Munich Germany
-2. https://ror.org/026nmvv73 Translational Sensory & Circadian Neuroscience, Max Planck Institute for Biological Cybernetics Tübingen Germany
-3. https://ror.org/052gg0110 Department of Experimental Psychology, University of Oxford Oxford United Kingdom
-4. https://ror.org/049e6bc10 Department of Psychology, Northumbria University Newcastle-upon-Tyne United Kingdom
-5. https://ror.org/04cw6st05 William Harvey Research Institute, Barts and The London School of Medicine and Dentistry, Queen Mary University of London London United Kingdom
-6. https://ror.org/04bwf3e34 German Aerospace Center, Institute of Aerospace Medicine, Sleep and Human Factors Research Köln Germany
-7. https://ror.org/029chgv08 Wellcome Trust London United Kingdom
+1. Department of Sport and Health Sciences, Technical University of Munich Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))
+2. Translational Sensory & Circadian Neuroscience, Max Planck Institute for Biological Cybernetics Tübingen Germany ([ROR:026nmvv73](https://ror.org/026nmvv73))
+3. Department of Experimental Psychology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+4. Department of Psychology, Northumbria University Newcastle-upon-Tyne United Kingdom ([ROR:049e6bc10](https://ror.org/049e6bc10))
+5. William Harvey Research Institute, Barts and The London School of Medicine and Dentistry, Queen Mary University of London London United Kingdom ([ROR:04cw6st05](https://ror.org/04cw6st05))
+6. German Aerospace Center, Institute of Aerospace Medicine, Sleep and Human Factors Research Köln Germany ([ROR:04bwf3e34](https://ror.org/04bwf3e34))
+7. Wellcome Trust London United Kingdom ([ROR:029chgv08](https://ror.org/029chgv08))
 8. Equality, Diversity and Inclusion in Science and Health Group London United Kingdom
 9. Data Sciences and Quantitative Biology, Discovery Science, R&D, AstraZeneca Cambridge United Kingdom
-10. https://ror.org/01a77tt86 Warwick Medical School, University of Warwick Warwick United Kingdom
-11. https://ror.org/05n7yzd13 Hepatobiliary Center, Hospital Paul Brousse (AP-HP) Villejuif France
-12. https://ror.org/03xjwb503 UPR Chronotherapy, Cancer and Transplantation, Medical School, Paris-Saclay University Gif-sur-Yvette France
-13. https://ror.org/02jx3x895 Centre for Cardiometabolic and Vascular Science, Division of Medicine, University College London London United Kingdom
-14. https://ror.org/00jmfr291 Sleep and Circadian Research Laboratory, Department of Psychiatry, University of Michigan Ann Arbor United States
-15. https://ror.org/02bfwt286 School of Psychological Sciences and Turner Institute for Brain and Mental Health, Monash University Clayton Australia
-16. https://ror.org/052gg0110 Department of Experimental Psychology, University of Oxford Oxford United Kingdom
-17. https://ror.org/01a77tt86 Warwick Medical School, University of Warwick Warwick United Kingdom
+10. Warwick Medical School, University of Warwick Warwick United Kingdom ([ROR:01a77tt86](https://ror.org/01a77tt86))
+11. Hepatobiliary Center, Hospital Paul Brousse (AP-HP) Villejuif France ([ROR:05n7yzd13](https://ror.org/05n7yzd13))
+12. UPR Chronotherapy, Cancer and Transplantation, Medical School, Paris-Saclay University Gif-sur-Yvette France ([ROR:03xjwb503](https://ror.org/03xjwb503))
+13. Centre for Cardiometabolic and Vascular Science, Division of Medicine, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+14. Sleep and Circadian Research Laboratory, Department of Psychiatry, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+15. School of Psychological Sciences and Turner Institute for Brain and Mental Health, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+16. Department of Experimental Psychology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+17. Warwick Medical School, University of Warwick Warwick United Kingdom ([ROR:01a77tt86](https://ror.org/01a77tt86))
 
 † Corresponding author
 
@@ -57,11 +57,11 @@ More recently, sleep regularity – the day-to-day consistency in sleep timing a
 
 Finally, while data remain sparse, the adverse health effects of sleep irregularity itself may also differ between the sexes. To the best of our knowledge, only one study examined this question (Roane et al., 2015), finding that variability in sleep duration was significantly associated with weight gain in male but not female students. Overall, despite the far-reaching health implications, sex differences in sleep and circadian physiology remain underresearched.
 
-## Impact of sex differences in sleep and circadian physiology in a non-clinical setting
+### Impact of sex differences in sleep and circadian physiology in a non-clinical setting
 
 Perhaps the most observable effect of sex differences in sleep and circadian physiology in a non-clinical setting is in shift work, a ubiquitous facet of modern society. Shift workers (approximately 50% of which are women) account for about a third of the workforce in North America and Europe, (Kervezee et al., 2018). Women have higher injury rates during night work than men, despite the injury rates between men and women being similar in day workers (Safe Work Australia, 2009). The physiological mechanisms underlying this difference remains unclear, partly due to a lack of research on the female circadian system. An exception is a recent study on sex differences in the effects of acute sleep deprivation on alertness (Smolensky et al., 2017). This work showed that women in the follicular phase of their menstrual cycle had more sleep loss-related alertness failure than men, whereas there were no differences between women in the luteal phase and men (Vidafar et al., 2018). This powerful influence of sex hormones and the menstrual cycle in female individuals highlight the pressing need to consider sex differences in biomedical research.
 
-## Impact of sex differences in sleep and circadian physiology in a clinical setting
+### Impact of sex differences in sleep and circadian physiology in a clinical setting
 
 Evidence is converging that sex differences in sleep and circadian phenotypes play a role in medical conditions and should therefore be considered in medical treatments and interventions. The emerging field of chronotherapeutics or chronotherapy (Shuboni-Mulligan et al., 2019; Smolensky et al., 2017; Dijk and Duffy, 2020) focuses on medical treatment approaches that incorporate a patient’s circadian phase, or at least the time of day, into the treatment regime. Here, we highlight a key therapeutic area, cancer treatment, in which sex-specific differences in underlying circadian mechanisms affect outcomes.
 
@@ -81,13 +81,13 @@ A preliminary literature search identified 545 papers, which were evaluated agai
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/65419/elife-65419-fig1-v2.jpg)
 
-**Figure 1.:** We analyzed a sample of the existing literature on the non-visual effects of light as a starting point for understanding the sex bias in the field. The sample included a total of 180 articles, and the breakdown of participant sex was then obtained in 166 articles. Binomial tests were conducted to evaluate the possibility that deviations from an even 50:50 sex distribution were attributable to chance alone. We implemented the Benjamini-Hochberg correction for multiple comparisons to control false-discovery rate (FDR). The proportion of female volunteers in each paper (represented by a dot) was plotted against the year of publication. Samples for which the proportion of female patients deviated significantly from 0.5 (P ≤ 0.05) were determined to be biased and colour-coded as orange. The marginal histograms show the numbers of papers irrespective of publication year (histogram on the right y axis), or irrespective of proportion (histogram on top x axis). Methods for paper selection are included in Methods.Figure 1—source code 1.Figure 1.Figure 1—source data 1.Figure 1.
+**Figure 1.:** We analyzed a sample of the existing literature on the non-visual effects of light as a starting point for understanding the sex bias in the field. The sample included a total of 180 articles, and the breakdown of participant sex was then obtained in 166 articles. Binomial tests were conducted to evaluate the possibility that deviations from an even 50:50 sex distribution were attributable to chance alone. We implemented the Benjamini-Hochberg correction for multiple comparisons to control false-discovery rate (FDR). The proportion of female volunteers in each paper (represented by a dot) was plotted against the year of publication. Samples for which the proportion of female patients deviated significantly from 0.5 (P ≤ 0.05) were determined to be biased and colour-coded as orange. The marginal histograms show the numbers of papers irrespective of publication year (histogram on the right y axis), or irrespective of proportion (histogram on top x axis). Methods for paper selection are included in Methods.
 
 Next, we examined studies that exclusively involved male or female participants (N = 63). Of these, only eleven (17.5%) provided text to justify this sample choice. For studies with only male participants the justifications included female physiology being subject to confounding factors such as menstruation (N = 3), research into the other sex being unnecessary due to previously published observations (n = 3), the study involving a sex-specific condition (N = 2), not being able to recruit females with a specific genetic polymorphism (N = 1), the study being a case study (N = 1), and the study being conducted in a location (field station) with only male staff (N = 1). We found some evidence that the number of females increased over time, with publication year and proportion of female participants being correlated (r(164)=0.17, P = 0.02895). Interestingly, the total sample size correlates with the fraction of female participants in a given study (r(164)=0.3, P = 0.00008; Spearman’s correlation): larger studies seem to recruit more balanced samples.
 
 In summary, we find a sex data gap in the literature on the non-visual effects of light, which needs to be considered in current efforts to translate research findings in the 'real world'.
 
-## Misconceptions underlying sex bias
+### Misconceptions underlying sex bias
 
 One of the important aspects of an experimental design is to simplify a complex world to generate a testing space where cause and effect can be isolated. This approach is necessary to generate ‘doable problems’, allowing researchers to better understand the mechanisms that underlie a biologically intricate world (Gompers, 2018). In animal research, this simplification has led to studying one sex and strain in one batch, an approach supported by an interpretation of the ‘Reduce’ element of the 3R ethical framework. Historically, this has been conceived as a requirement for minimizing the number of animals in a single experiment, thus encouraging researchers to generate a narrow testing space before extrapolating and generalizing the results. Male animals were consistently selected due to the belief that the sex hormone cycle in females would lead to greater variability in the data, which would then require a larger number of female animals to achieve the same statistical power (Karp and Reavey, 2019). A recent meta-analysis looking at 9,932 traits found that the variability seen in female mice was not greater than for male mice – and in some cases was less – yet the legacy remains (Prendergast et al., 2014).
 
@@ -107,11 +107,11 @@ The workshop series comprised three 90-minute sessions held a week apart and inc
 
 We used the web platform Mentimeter to implement polling amongst participants as well as open-ended questions. Prior to participating in the interactive sessions, attendees were informed that their responses would be used for write-up and published as a peer-reviewed article. Attendees were free to not participate in the interactive sessions. No personal data were collected as part of the interactive Mentimeter sessions. We combined yes/no, ranking and open-ended questions throughout the interactive sessions to vary the response modality. The results discussed below were selected from the results, which can be viewed in full on the Open Science Framework page. The number of responses to individual questions varied somewhat due to dropout during the interactive session as well as a time-limited response window; the total number of responses in the participatory parts are given on the bottom right-hand corner of the Materials document.
 
-## Workshop 1: Understanding differences
+### Workshop 1: Understanding differences
 
 In the first workshop, we explored sex as a variable in research. In an interactive polling segment following this workshop, only 58% of respondents (out of 100) indicated previously analyzing data in a sex-disaggregated fashion. However, 88.1% (out of 101) agreed that sex could be a variable in their research, showing the large scope for sex-disaggregated analyses. Of note, sex was identified as just one of many characteristics contributing to individual differences in research results, alongside age chronotype, mental health status, genetics, body mass index and prior light exposure. When asked for the most pressing research questions involving individual differences, the answers ranged from developmental and lifespan factors to more fundamental research questions with no obvious individual difference angle. The video recording for Workshop 1 is available here, and the materials related to the participatory part are available here.
 
-## Workshop 2: Understanding impact
+### Workshop 2: Understanding impact
 
 The second workshop focused on understanding the real-world impact of the participants’ research. In the interactive polling segment following this workshop, participants indicated that their research could mostly influence precision and personalized medicine, occupational timing and shift/rota planning, and guidelines for an indoor ‘circadian’ lighting.
 
@@ -121,7 +121,7 @@ When asked to identify the biggest barriers to addressing sex bias in research, 
 
 **Figure 2.:** These actions were derived from an interactive session with attendees (n = 38) during Workshop 3.
 
-## Workshop 3: Understanding change
+### Workshop 3: Understanding change
 
 The third workshop explored factors that would facilitate change in research. In the interactive polling segment, when asked to rank sources for guidance on sex-difference analysis, the participants first mentioned research institutes and universities, then societies and professional bodies and finally funders and publishers.
 
@@ -139,7 +139,92 @@ While none of these actions will suffice on their own, each will contribute to c
 
 To implement a breadth-first search for identifying relevant papers, we employed a pragmatic hybrid strategy, identifying relevant articles through three main sources, as listed in Table 1. We conducted a citation search of three key recent reviews (Brown, 2020; Souman et al., 2018; Lok et al., 2018) on the acute effects of light, producing a total of 88 papers of which 83 were included in the present analysis. We carried out a search for papers specifically discussing the melatonin-suppressive effects of light in SCOPUS (search carried out on 22 October 2019) through the search term “TITLE-ABS-KEY ((light AND melatonin AND suppress*)) AND (LIMIT-TO (DOCTYPE, "ar")) AND (LIMIT-TO (LANGUAGE, "English"))” (search carried out on 22 October 2019). Limiting the analysis to papers with a minimum of 30 citations, we identified 359 further papers (94 of which were included). Finally, relevant systematic reviews were identified in the Cochrane Library through the search terms "(light AND circadian OR sleep OR alertness)", generating 24 results with six relevant for the present analysis. A citation search was again conducted, generating a further 98 papers (of which three were included). Overall, a total of 545 papers were identified and analyzed, as shown in Table 1.
 
-## Inclusion and exclusion criteria
+**Table 1.**
+ Articles included in the meta-analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Database</th>
+      <th>Search strategy</th>
+      <th>Source paper</th>
+      <th>Articles considered</th>
+      <th>Articles included</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>–</td>
+      <td>–</td>
+      <td>Brown, 2020</td>
+      <td>19</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>–</td>
+      <td>Lok et al., 2018</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>–</td>
+      <td>Souman et al., 2018</td>
+      <td>49</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>SCOPUS</td>
+      <td>Citation count</td>
+      <td>-</td>
+      <td>359</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Cochrane</td>
+      <td rowspan="6">(light AND circadian OR sleep OR alertness)”</td>
+      <td>Pachito et al., 2018</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Forbes et al., 2014</td>
+      <td>13</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Montgomery and Dennis, 2002</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Tuunainen et al., 2004</td>
+      <td>49</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Slanger et al., 2016</td>
+      <td>21</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Dennis and Dowswell, 2013</td>
+      <td>10</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>545</td>
+      <td>180</td>
+    </tr>
+  </tbody>
+</table>
+
+### Inclusion and exclusion criteria
 
 Papers were excluded where the following exclusion criteria applied, leaving a total of 180 papers for the present analysis:
 

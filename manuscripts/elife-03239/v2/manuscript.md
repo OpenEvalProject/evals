@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.03239.001 Lamina-associated polypeptide 1 (LAP1) resides at the nuclear envelope and interacts with Torsins, poorly understood endoplasmic reticulum (ER)-localized AAA+ ATPases, through a conserved, perinuclear domain. We determined the crystal structure of the perinuclear domain of human LAP1. LAP1 possesses an atypical AAA+ fold. While LAP1 lacks canonical nucleotide binding motifs, its strictly conserved arginine 563 is positioned exactly where the arginine finger of canonical AAA+ ATPases is found. Based on modeling and electron microscopic analysis, we propose that LAP1 targets Torsin to the nuclear envelope by forming an alternating, heterohexameric (LAP1-Torsin) 3 ring, in which LAP1 acts as the Torsin activator. The experimental data show that mutation of arginine 563 in LAP1 reduces its ability to stimulate TorsinA ATPase hydrolysis. This knowledge may help scientists understand the etiology of DYT1 primary dystonia, a movement disorder caused by a single glutamate deletion in TorsinA. DOI: http://dx.doi.org/10.7554/eLife.03239.001
+Lamina-associated polypeptide 1 (LAP1) resides at the nuclear envelope and interacts with Torsins, poorly understood endoplasmic reticulum (ER)-localized AAA+ ATPases, through a conserved, perinuclear domain. We determined the crystal structure of the perinuclear domain of human LAP1. LAP1 possesses an atypical AAA+ fold. While LAP1 lacks canonical nucleotide binding motifs, its strictly conserved arginine 563 is positioned exactly where the arginine finger of canonical AAA+ ATPases is found. Based on modeling and electron microscopic analysis, we propose that LAP1 targets Torsin to the nuclear envelope by forming an alternating, heterohexameric (LAP1-Torsin)3 ring, in which LAP1 acts as the Torsin activator. The experimental data show that mutation of arginine 563 in LAP1 reduces its ability to stimulate TorsinA ATPase hydrolysis. This knowledge may help scientists understand the etiology of DYT1 primary dystonia, a movement disorder caused by a single glutamate deletion in TorsinA.
 
 ## Introduction
 
@@ -28,61 +28,229 @@ To better understand the function of LAP1 in relation to Torsin, we set out to d
 
 ## Results
 
-The conserved luminal domain of LAP1 (aa356–583) was recombinantly expressed, purified, and set up for crystallization. Because the protein failed to yield crystals alone, we produced a camelid single domain (VHH) antibody fragment, VHH-BS1, against LAP1 as a crystallization chaperone. The complex of VHH-BS1 and LAP1 yielded well-diffracting crystals (Table 1). The structure was solved using molecular replacement with VHH as the search model (for details, see ‘Materials and methods’). In the asymmetric unit we find two LAP1 molecules related by a non-crystallographic symmetry axis, each identically bound by one VHH. The final structure is completely built, except for four N-terminal residues in LAP1, which seem disordered in the crystal (six N-terminal residues in the second LAP1 copy).10.7554/eLife.03239.003Table 1.X-ray data collection and refinement statisticsDOI: http://dx.doi.org/10.7554/eLife.03239.003ProteinHuman LAP1356–583-VHH-BS1 complexPDB ID4TVSData collection Space groupP21 a, b, c (Å)69.79, 74.02, 85.43 α, ß, γ (°)90, 108.8, 90 Wavelength (Å)1.2548 Resolution range (Å)*66.1–1.60 (1.66–1.60) Total reflections630,312 (46,516) Unique reflections105,976 (10,195) Completeness (%)97.6 (94.3) Redundancy5.9 (4.6) Rsym (%)9.1 (141.2) Rp.i.m. (%)4.0 (68.6) I/σ12.5 (1.1) CC1/2 (%)99.8 (54.7)Refinement Resolution range (Å)66.1–1.60 Rwork (%)18.1 Rfree (%)22.9 Coordinate error (Å)†0.24 Number of reflections Total105,565 Rfree reflections2810 Number of non-hydrogen atoms Protein5520 Ligands29 Water612 R.m.s. deviations Bond lengths (Å)0.019 Bond angles (°)1.66 B-factors (Å2) Protein39.3 Ligands56.4 Water47.8 Ramachandran (%)‡ Favored (%)98.3 Outlier (%)0.0 Clashscore5.65 MolProbity score‡1.29 MolProbity percentile‡96th*Numbers in brackets refer to the highest resolution shell (10% of all reflections).†Maximum likelihood based (as determined by PHENIX; Adams et al., 2010).‡As determined by MolProbity (Chen et al., 2010).
+The conserved luminal domain of LAP1 (aa356–583) was recombinantly expressed, purified, and set up for crystallization. Because the protein failed to yield crystals alone, we produced a camelid single domain (VHH) antibody fragment, VHH-BS1, against LAP1 as a crystallization chaperone. The complex of VHH-BS1 and LAP1 yielded well-diffracting crystals (Table 1). The structure was solved using molecular replacement with VHH as the search model (for details, see ‘Materials and methods’). In the asymmetric unit we find two LAP1 molecules related by a non-crystallographic symmetry axis, each identically bound by one VHH. The final structure is completely built, except for four N-terminal residues in LAP1, which seem disordered in the crystal (six N-terminal residues in the second LAP1 copy).
 
-The LAP1 structure clearly has an AAA+ like fold (
+**Table 1.**
+ X-ray data collection and refinement statistics
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Protein</td>
+      <td>Human LAP1356–583-VHH-BS1 complex</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>4TVS</td>
+    </tr>
+    <tr>
+      <td colspan="2">Data collection</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P21</td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>69.79, 74.02, 85.43</td>
+    </tr>
+    <tr>
+      <td>α, ß, γ (°)</td>
+      <td>90, 108.8, 90</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.2548</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)*</td>
+      <td>66.1–1.60 (1.66–1.60)</td>
+    </tr>
+    <tr>
+      <td>Total reflections</td>
+      <td>630,312 (46,516)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>105,976 (10,195)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>97.6 (94.3)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>5.9 (4.6)</td>
+    </tr>
+    <tr>
+      <td>Rsym (%)</td>
+      <td>9.1 (141.2)</td>
+    </tr>
+    <tr>
+      <td>Rp.i.m. (%)</td>
+      <td>4.0 (68.6)</td>
+    </tr>
+    <tr>
+      <td>I/σ</td>
+      <td>12.5 (1.1)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 (%)</td>
+      <td>99.8 (54.7)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>66.1–1.60</td>
+    </tr>
+    <tr>
+      <td>Rwork (%)</td>
+      <td>18.1</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)</td>
+      <td>22.9</td>
+    </tr>
+    <tr>
+      <td>Coordinate error (Å)†</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of reflections</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>105,565</td>
+    </tr>
+    <tr>
+      <td>Rfree reflections</td>
+      <td>2810</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of non-hydrogen atoms</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>5520</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>612</td>
+    </tr>
+    <tr>
+      <td colspan="2">R.m.s. deviations</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.66</td>
+    </tr>
+    <tr>
+      <td colspan="2">B-factors (Å2)</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>39.3</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>56.4</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>47.8</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran (%)‡</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>98.3</td>
+    </tr>
+    <tr>
+      <td>Outlier (%)</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>5.65</td>
+    </tr>
+    <tr>
+      <td>MolProbity score‡</td>
+      <td>1.29</td>
+    </tr>
+    <tr>
+      <td>MolProbity percentile‡</td>
+      <td>96th</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Numbers in brackets refer to the highest resolution shell (10% of all reflections).†Maximum likelihood based (as determined by PHENIX; Adams et al., 2010).‡As determined by MolProbity (Chen et al., 2010)._
+
+The LAP1 structure clearly has an AAA+ like fold (Figure 1). AAA+ proteins are a functionally diverse group within the vast family of ‘P-loop’-type NTP-binding proteins (Iyer et al., 2004). Typically, AAA+ proteins are characterized by strongly conserved sequence motifs involved in nucleotide recognition. Subcategories within AAA+ proteins are based on distinct secondary structure topologies. The D2 domain of the two-ring AAA+ ATPase ClpB superimposes on LAP1 with an rmsd of 3.28 Å over 111 Cα positions (Figure 1; Zeymer et al., 2014). ClpB belongs to the additional strand conserved E (ASCE) family (Iyer et al., 2004). Like ASCE-type AAA+ proteins, such as ClpA, ClpB, and p97, LAP1 also has a central, five-stranded parallel β-sheet, surrounded on both sides by 10 helices in total (Figure 1A,B). The secondary structure topology is α(−1)α(0)β1α(1)β2-α(2a)α(2b)β3α(3a)α(3b)β4α(4)β5α(5)α(6), using the AAA+ nomenclature (Erzberger and Berger, 2006). In contrast to canonical ASCE-type ATPases (Figure 1C), LAP1 lacks a C-terminal domain. Instead the C terminus is attached to helix α1 via a disulfide bond between the highly conserved residues C424 and C582 (Figure 1—figure supplement 1). In a AAA+ ATPase, the nucleotide binding pocket is the most sequence-conserved region, defined by the essential Walker A and B motifs. LAP1 lacks a recognizable Walker A region, typically located between β1 and α1 (Figure 2A,B, Figure 1—figure supplement 1). Instead, helix α1 is N-terminally extended compared to AAA+ ATPases, thereby sterically blocking the nucleotide-binding pocket. The Walker B motif with the canonical sequence hhhhDE (h, hydrophobic), is instead hhhhHR in human LAP1, and therefore cannot interact with nucleotide. Finally, the conserved disulfide bridge would also interfere with nucleotide binding (Figure 2B, Figure 1—figure supplement 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03239/elife-03239-fig1-v2.jpg)
 
-**Figure 1.:** (A) Crystal structure of the luminal domain of LAP1 from Homo sapiens. The helices are numbered according to the nomenclature used for AAA+ proteins (Erzberger and Berger, 2006). A disulfide bridge (yellow) attaches the C terminus to helix α1. (B) Same as (A), but rotated around the x-axis by 50°. (C) Crystal structure of the AMPPCP-bound ClpB-D2 domain from Thermus thermophilus (4LJ6; Zeymer et al., 2014) in the same orientation as LAP1 in (A) revealing the striking topological similarity. In comparison to ClpB, LAP1 does not bind a nucleotide and has no C-terminal domain.DOI: http://dx.doi.org/10.7554/eLife.03239.004
+**Figure 1.:** (A) Crystal structure of the luminal domain of LAP1 from Homo sapiens. The helices are numbered according to the nomenclature used for AAA+ proteins (Erzberger and Berger, 2006). A disulfide bridge (yellow) attaches the C terminus to helix α1. (B) Same as (A), but rotated around the x-axis by 50°. (C) Crystal structure of the AMPPCP-bound ClpB-D2 domain from Thermus thermophilus (4LJ6; Zeymer et al., 2014) in the same orientation as LAP1 in (A) revealing the striking topological similarity. In comparison to ClpB, LAP1 does not bind a nucleotide and has no C-terminal domain.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03239/elife-03239-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Sequence alignment of phylogenetically diverse sequences of the luminal domain of LAP1 and LULL1. Residues are color-coded from dark blue (most conserved) to white (not conserved). Secondary structure elements of human LAP1 are shown above the sequences. The conserved disulfide bond is indicated with a yellow line. The strictly conserved arginine (‘R-finger’) is marked by a green circle.DOI: http://dx.doi.org/10.7554/eLife.03239.005
+**Figure 1—figure supplement 1.:** Sequence alignment of phylogenetically diverse sequences of the luminal domain of LAP1 and LULL1. Residues are color-coded from dark blue (most conserved) to white (not conserved). Secondary structure elements of human LAP1 are shown above the sequences. The conserved disulfide bond is indicated with a yellow line. The strictly conserved arginine (‘R-finger’) is marked by a green circle.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/03239/elife-03239-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** Stereo view of the binding site of VHH-BS1 (gray) with LAP1 (blue). Contacting residues between LAP1 and the variable loops of VHH-BS1 (red) are shown as sticks and are labeled. Waters, with direct contact to both binding partners, are in green. The 2Fo-Fc map is contoured at 1σ.DOI: http://dx.doi.org/10.7554/eLife.03239.006
+**Figure 1—figure supplement 2.:** Stereo view of the binding site of VHH-BS1 (gray) with LAP1 (blue). Contacting residues between LAP1 and the variable loops of VHH-BS1 (red) are shown as sticks and are labeled. Waters, with direct contact to both binding partners, are in green. The 2Fo-Fc map is contoured at 1σ.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/03239/elife-03239-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** (A) Overall structure of the LAP1-VHH-BS1 complex. LAP1 is in light blue, VHH-BS1 in gray. The variable loops, responsible for high affinity interaction with LAP1, are colored in red. The binding site on LAP1 is centered around arginine 563 (blue sticks). (B) Model of LAP1 (light blue) interacting with TorsinA (green) in a putative heterohexameric ring assembly in the same orientations as in (A). TorsinA-bound ATP molecule is in red. Note the overlap between the VHH-BS1 and the putative TorsinA binding site on LAP1. (C and D) In vitro precipitation assay shows that VHH-BS1 competes with TorsinA(E171Q) for LAP1 binding. Preformed TorsinA(E171Q)-LAP1 complex was incubated for several hours with VHH-BS1 (C) or a control VHH (D). The mixtures were centrifuged at the indicated times to separate soluble from insoluble protein. The samples were analyzed by SDS-PAGE. Due to the competition with VHH-BS1, TorsinA(E171Q) is released from LAP1. Since free TorsinA(E171Q) is insoluble, the process of the reaction can be monitored.DOI: http://dx.doi.org/10.7554/eLife.03239.007
+**Figure 1—figure supplement 3.:** (A) Overall structure of the LAP1-VHH-BS1 complex. LAP1 is in light blue, VHH-BS1 in gray. The variable loops, responsible for high affinity interaction with LAP1, are colored in red. The binding site on LAP1 is centered around arginine 563 (blue sticks). (B) Model of LAP1 (light blue) interacting with TorsinA (green) in a putative heterohexameric ring assembly in the same orientations as in (A). TorsinA-bound ATP molecule is in red. Note the overlap between the VHH-BS1 and the putative TorsinA binding site on LAP1. (C and D) In vitro precipitation assay shows that VHH-BS1 competes with TorsinA(E171Q) for LAP1 binding. Preformed TorsinA(E171Q)-LAP1 complex was incubated for several hours with VHH-BS1 (C) or a control VHH (D). The mixtures were centrifuged at the indicated times to separate soluble from insoluble protein. The samples were analyzed by SDS-PAGE. Due to the competition with VHH-BS1, TorsinA(E171Q) is released from LAP1. Since free TorsinA(E171Q) is insoluble, the process of the reaction can be monitored.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03239/elife-03239-fig2-v2.jpg)
 
-**Figure 2.:** (A and B) Comparison of the nucleotide binding pocket in ClpB-D2 (A) with the equivalent region in LAP1 (B). The nucleotide sensing elements of canonical ATPases are indicated. The nucleotide in (B) is modeled to illustrate how LAP1 blocks binding of it. (C and D) To activate ATP hydrolysis, an arginine residue (R-finger) from the neighboring protomer in the typical hexameric ring assembly is necessary. For ClpB-D2, this is R747 (light blue) (C). Modeled as a heterohexameric LAP1-TorsinA assembly, the strictly conserved R563 in LAP1 is positioned as an R-finger to point into the nucleotide-binding pocket of a neighboring TorsinA protomer (D). Residues important for nucleotide interaction are labeled in the TorsinA model.DOI: http://dx.doi.org/10.7554/eLife.03239.008
+**Figure 2.:** (A and B) Comparison of the nucleotide binding pocket in ClpB-D2 (A) with the equivalent region in LAP1 (B). The nucleotide sensing elements of canonical ATPases are indicated. The nucleotide in (B) is modeled to illustrate how LAP1 blocks binding of it. (C and D) To activate ATP hydrolysis, an arginine residue (R-finger) from the neighboring protomer in the typical hexameric ring assembly is necessary. For ClpB-D2, this is R747 (light blue) (C). Modeled as a heterohexameric LAP1-TorsinA assembly, the strictly conserved R563 in LAP1 is positioned as an R-finger to point into the nucleotide-binding pocket of a neighboring TorsinA protomer (D). Residues important for nucleotide interaction are labeled in the TorsinA model.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/03239/elife-03239-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Sequence alignment of phylogenetically diverse sequences of Torsin. Residues are color-coded from dark blue (most conserved) to white (not conserved). The canonical nucleotide interaction motifs, and other Torsin-specific regions, are labeled. Conserved cysteines are marked with yellow circles. Note that within the R-finger region, Torsin has no conserved arginine.DOI: http://dx.doi.org/10.7554/eLife.03239.009
+**Figure 2—figure supplement 1.:** Sequence alignment of phylogenetically diverse sequences of Torsin. Residues are color-coded from dark blue (most conserved) to white (not conserved). The canonical nucleotide interaction motifs, and other Torsin-specific regions, are labeled. Conserved cysteines are marked with yellow circles. Note that within the R-finger region, Torsin has no conserved arginine.
 
-Having established that LAP1 represents a nucleotide-free AAA+ domain, we asked how this might inform us about LAP1's interaction with Torsins, which can be modeled with great confidence as AAA+ ATPases (
+Having established that LAP1 represents a nucleotide-free AAA+ domain, we asked how this might inform us about LAP1's interaction with Torsins, which can be modeled with great confidence as AAA+ ATPases (Zhu et al., 2010). The four canonical nucleotide-sensing elements, Walker A, Walker B, Sensor 1, and Sensor 2 (Erzberger and Berger, 2006), are well conserved and immediately recognizable in TorsinA when compared to ClpB-D2 (Figure 2C,D, Figure 2—figure supplement 1; Kock et al., 2006; Zhu et al., 2010). AAA+ ATPases are often activated by an arginine residue (‘arginine finger’) in the neighboring protomer in the hexameric ring assembly, such that this arginine is positioned to reach the phosphate binding site (Wendler et al., 2012). While we do not find a conserved arginine in TorsinA (Figure 2—figure supplement 1) at the expected position at the end of helix α5, in LAP1 this residue is a strictly conserved arginine (R563). Consequently, modeling and phylogenetic analysis strongly suggest that LAP1 and TorsinA might form a heterohexameric ring (Figure 3A,B) with three active sites in which TorsinA and its partner subunits alternate to form the ring. This hypothesis is further strengthened by the recent observation that LAP1 and LULL1 activate TorsinA in vitro (Zhao et al., 2013).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03239/elife-03239-fig3-v2.jpg)
 
-**Figure 3.:** (A) Heterohexameric model of alternating LAP1 (light blue) and TorsinA (green hues), based on the hexameric ring of ClpC-D2 domains (3PXI; Wang et al., 2011). The C-terminal domain of Torsin is colored bright green. An ATP molecule (red) is modeled into the TorsinA nucleotide binding pocket. The conserved arginine finger in LAP1 is in blue. The disulfide bridge within LAP1 is in yellow. (B) Schematic diagram of (A), same coloring scheme. (C) A montage of representative particle classes of the TorsinA(E171Q):LULL1 complex obtained from negatively stained particles are shown. The particles are consistent with a toroidal hexameric conformation as shown in (A and B). The particle diameter is approximately 120 Å (double arrow).DOI: http://dx.doi.org/10.7554/eLife.03239.010
+**Figure 3.:** (A) Heterohexameric model of alternating LAP1 (light blue) and TorsinA (green hues), based on the hexameric ring of ClpC-D2 domains (3PXI; Wang et al., 2011). The C-terminal domain of Torsin is colored bright green. An ATP molecule (red) is modeled into the TorsinA nucleotide binding pocket. The conserved arginine finger in LAP1 is in blue. The disulfide bridge within LAP1 is in yellow. (B) Schematic diagram of (A), same coloring scheme. (C) A montage of representative particle classes of the TorsinA(E171Q):LULL1 complex obtained from negatively stained particles are shown. The particles are consistent with a toroidal hexameric conformation as shown in (A and B). The particle diameter is approximately 120 Å (double arrow).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/03239/elife-03239-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Elution profiles of TorsinA(E171Q):LAP1 (red) and TorsinA(E171Q):LULL1 (red dashes) are compared with uncomplexed LAP1 (blue) and LULL1 (blue dashes), respectively. The experiment was performed on a Superdex S200 HR10/300 column. Elution volumes of standard globular protein markers are displayed. SDS-PAGE analysis of peak fractions is shown. The fractions are indicated below the chromatogram. The TorsinA:LAP1 and TorsinA:LULL1 protein complexes elute at positions consistent with a heterodimer. SDS-PAGE analysis indicates a 1:1 stoichiometry for the complexes.DOI: http://dx.doi.org/10.7554/eLife.03239.011
+**Figure 3—figure supplement 1.:** Elution profiles of TorsinA(E171Q):LAP1 (red) and TorsinA(E171Q):LULL1 (red dashes) are compared with uncomplexed LAP1 (blue) and LULL1 (blue dashes), respectively. The experiment was performed on a Superdex S200 HR10/300 column. Elution volumes of standard globular protein markers are displayed. SDS-PAGE analysis of peak fractions is shown. The fractions are indicated below the chromatogram. The TorsinA:LAP1 and TorsinA:LULL1 protein complexes elute at positions consistent with a heterodimer. SDS-PAGE analysis indicates a 1:1 stoichiometry for the complexes.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/03239/elife-03239-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Protein samples were negatively stained with uranyl acetate and analyzed by electron microscopy. All samples were measured at closely comparable concentrations. Scale bars represent 100 nm. While ring-like structures are visible in the TorsinA(E171Q):LULL1 and TorsinA(E171Q):LAP1 samples (A and B), no discernible objects are seen on the micrographs of uncomplexed LAP1 and LULL1 (C and D). This indicates that LAP1 and LULL1 do not form homohexameric rings in the absence of TorsinA.DOI: http://dx.doi.org/10.7554/eLife.03239.012
+**Figure 3—figure supplement 2.:** Protein samples were negatively stained with uranyl acetate and analyzed by electron microscopy. All samples were measured at closely comparable concentrations. Scale bars represent 100 nm. While ring-like structures are visible in the TorsinA(E171Q):LULL1 and TorsinA(E171Q):LAP1 samples (A and B), no discernible objects are seen on the micrographs of uncomplexed LAP1 and LULL1 (C and D). This indicates that LAP1 and LULL1 do not form homohexameric rings in the absence of TorsinA.
 
 To experimentally confirm assembly of LAP1 and TorsinA into a heterohexameric ring, we co-expressed and co-purified TorsinA(E171Q) in complex with either LAP1 and LULL1 via nickel-affinity and size-exclusion chromatography. We obtained complexes with TorsinA(E171Q):LAP1 and TorsinA(E171Q):LULL1 1:1 stoichiometry (Figure 3—figure supplement 1). The E171Q mutation traps TorsinA in the ATP-bound form, which helps to stabilize the interaction with LAP1 and LULL1, respectively (Goodchild and Dauer, 2005). For negative-stain electron microscopic analysis, the nickel eluate was used directly. On individual micrographs, rings of expected size were observed for the two-complex preparation, but not for individually purified LAP1(356–583) or LULL1(322–570) (Figure 3—figure supplement 2). TorsinA(E171Q) is insoluble without binding partner, therefore the observed rings should not be homomeric (Figure 1—figure supplement 3). The best micrographs, obtained with the TorsinA(E171Q):LULL1 preparation, were further processed. Class averaging of 808 TorsinA(E171Q):LULL1 particles yielded multiple classes showing ring assembly (Figure 3C). The rings have a diameter of ∼120 Å, in good agreement with typical hexameric AAA+ ATPase assemblies.
 
-We then tested the ATPase activity of TorsinA in the context of LAP1 and LULL1. In comparison to wild-type TorsinA:LAP1, the mutants TorsinA:LAP1(R563A) and TorsinA:LULL1(R449A) showed substantial reduction in ATPase activity, while both TorsinA(E171Q):LAP1 and TorsinA(E171Q):LULL1 are essentially inactive (
+We then tested the ATPase activity of TorsinA in the context of LAP1 and LULL1. In comparison to wild-type TorsinA:LAP1, the mutants TorsinA:LAP1(R563A) and TorsinA:LULL1(R449A) showed substantial reduction in ATPase activity, while both TorsinA(E171Q):LAP1 and TorsinA(E171Q):LULL1 are essentially inactive (Figure 4). We note that the ATP hydrolysis rates are very slow and that the effect of the arginine finger mutation is not as drastic as seen with other AAA+ ATPases. We speculate that the ATP hydrolysis rate in the presence of substrate is likely higher, and that the effect of the arginine finger is likely more pronounced in a more physiological context.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03239/elife-03239-fig4-v2.jpg)
 
-**Figure 4.:** (A) TorsinA:LAP1 and TorsinA:LULL1 complexes were tested for ATPase activity in a coupled ADP/NADH assay, where the oxidation of NADH is monitored spectrometrically (Norby, 1988). Shown are the oxidation rate plots, from which the ATP hydrolysis rates are calculated using linear regression. Reactions were performed in triplicate. (B) Bar graph representation of ATPase assay results shown in (A).DOI: http://dx.doi.org/10.7554/eLife.03239.013
+**Figure 4.:** (A) TorsinA:LAP1 and TorsinA:LULL1 complexes were tested for ATPase activity in a coupled ADP/NADH assay, where the oxidation of NADH is monitored spectrometrically (Norby, 1988). Shown are the oxidation rate plots, from which the ATP hydrolysis rates are calculated using linear regression. Reactions were performed in triplicate. (B) Bar graph representation of ATPase assay results shown in (A).
 
-In summary, we conclude that LAP1 and LULL1 both activate Torsins by providing the arginine finger in a heterohexameric ring assembly in which LAP1 and LULL1 alternate with Torsin. Since LAP1 and LULL1 contain transmembrane helices immediately N-terminal to their luminal, nucleotide-free AAA+ Activator domain, they bring Torsin into close proximity to the membrane (
+In summary, we conclude that LAP1 and LULL1 both activate Torsins by providing the arginine finger in a heterohexameric ring assembly in which LAP1 and LULL1 alternate with Torsin. Since LAP1 and LULL1 contain transmembrane helices immediately N-terminal to their luminal, nucleotide-free AAA+ Activator domain, they bring Torsin into close proximity to the membrane (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03239/elife-03239-fig5-v2.jpg)
 
-**Figure 5.:** LAP1 (light blue) is localized to the nuclear envelope due to its interaction with the nuclear lamina, while LULL1 (dark blue) is found throughout the endoplasmic reticulum. Both proteins can bind inactive TorsinA (red) and target it to their respective locations. Both LAP1 and LULL1 activate TorsinA (green) when assembled into heterohexameric rings.DOI: http://dx.doi.org/10.7554/eLife.03239.014
+**Figure 5.:** LAP1 (light blue) is localized to the nuclear envelope due to its interaction with the nuclear lamina, while LULL1 (dark blue) is found throughout the endoplasmic reticulum. Both proteins can bind inactive TorsinA (red) and target it to their respective locations. Both LAP1 and LULL1 activate TorsinA (green) when assembled into heterohexameric rings.
 
 ## Discussion
 
@@ -96,7 +264,7 @@ Apart from the identification of Torsin substrate(s), understanding the catalyti
 
 ## Materials and methods
 
-## Plasmids, protein expression, and purification
+### Plasmids, protein expression, and purification
 
 Recombinant proteins were expressed in Escherichia coli. Human TorsinA (aa51–322), the luminal domain of human LAP1 (aa356–583), and the luminal domain of human LULL1 (aa233–470) were expressed from a modified ampicillin resistant pETDuet-1 (EMD Millipore, Billerica, MA) vector as N-terminally 6×His-7×Arg-tagged fusion proteins. A cleavage site for human rhinovirus 3C protease was inserted after the 7×Arg tag. For co-expression of TorsinA with LAP1 or LULL1, cells were co-transformed with the TorsinA vector described above and a second, modified kanamycin resistant pETDuet-1 vector containing untagged LAP1 or LULL1. VHH-BS1 was expressed as a C-terminally 6×His-tagged fusion protein from a kanamycin resistant pET-28b(+) (EMD Millipore) vector. Mutations were introduced by site-directed mutagenesis.
 
@@ -104,58 +272,58 @@ All proteins were expressed in LOBSTR(DE3) RIL strains (Kerafast, Boston, MA) (A
 
 The LAP1-VHH-BS1 complex was formed by mixing the individual components using a twofold molar excess of VHH-BS1 and incubating for 30 min on ice, followed by size exclusion chromatography on a Superdex S75 column (GE Healthcare) equilibrated in buffer (10 mM Tris/HCl pH 7.4, 150 mM NaCl).
 
-## Protein crystallization
+### Protein crystallization
 
 Purified LAP1-VHH-BS1 was concentrated to 10 mg/ml prior to crystallization. The complex crystallized in 20% (wt/vol) polyethylene glycol (PEG) 3350, 100 mM Bis-Tris pH 5.5, and 200 mM ammonium sulfate by the hanging drop vapor diffusion method in 2 µl drops at 18°C. Crystals grew within 4–12 days with dimensions of 35 μm × 35 μm × 35 μm. Prior to X-ray data collection, crystals were cryoprotected in the reservoir solution supplemented with 30% (wt/vol) PEG 3350 and 15% (vol/vol) glycerol. Data were collected at beamlines 24ID-C/-E at Argonne National Laboratory.
 
-## Structure determination
+### Structure determination
 
 Data reduction was carried out using HKL2000 software (Otwinowski and Minor, 1997); all other software was collectively used through SBGrid (Morin et al., 2013). The LAP1-VHH-BS1 structure was solved using molecular replacement. The MRage pipeline procedure from the PHENIX suite (Adams et al., 2010) was used for initial search model determination. The Phaser-MR tool was subsequently used for phasing and initial refinement. In the initial map, with phases only provided by the VHH search model, the outlines of the major secondary structure elements of LAP1 were visible. With iterative model building and refinement, the model phases gradually improved and the electron density maps became better defined. The final model was refined against native data extending to 1.6 Å. The data were cut judged by the CC1/2 value for the highest resolution shell, and visual inspection of the 2Fo-Fc map (Figure 1—figure supplement 2). Model building was carried out with Coot (Emsley et al., 2010) and refinement was done with phenix refine from the PHENIX suite.
 
-## Single-particle electron microscopy imaging and data analysis
+### Single-particle electron microscopy imaging and data analysis
 
 Ni-affinity purified TorsinA(E171Q)-LAP1(356–583), TorsinA(E171Q)-LULL1(233–470), LAP1(356–583), and LULL1(233–470) (∼0.1 mg/ml) were used for negative stain electron microscopy grids. Continuous carbon-film grids were glow-discharged (PELCO easiGlow, Redding, CA) at 15 mA for 30 s. Next, 5 µl specimen solution was loaded immediately onto the grid and blotted after 15 s. The specimen was then stained by uranyl acetate (1% wt/vol) for 10 s, blotted, and dried. Thirty single-particle electron micrographs were recorded using a 2K × 2K CCD camera on an FEI Tecnai Spirit electron microscope at 80 keV, 98,000× nominal magnification (3.63 Å/pixel). For TorsinA(E171Q)-LULL1(233–470), 808 particles were boxed out and subjected to ‘direct classification’, an unbiased, reference-free, alignment-free classification function in the PARTICLE software package (www.sbgrid.org/software/title/PARTICLE).
 
-## ATPase activity assay
+### ATPase activity assay
 
 ATP hydrolysis rates of TorsinA:LAP1 and TorsinA:LULL1 complexes were measured by an NADH-coupled assay (Norby, 1988). In this assay, each ATP hydrolysis event allows conversion of one molecule of phosphoenolpyruvate into pyruvate by pyruvate kinase. Thereafter, pyruvate is converted to lactate by L-lactate dehydrogenase, which results in oxidation of a single NADH molecule. Loss of NADH over time, which is quantifiably proportional to ATP hydrolysis rates, is monitored by a decrease in absorbance at 340 nm. All of the assays were conducted at room temperature in a buffer containing 10 mM HEPES/NaOH pH 8.0, 150 mM NaCl, and 10 mM MgCl2, and in the presence of 2 mM ATP. Measurements were performed in triplicates using 5 μM of protein complex. Absorbance was measured in 30 µl reaction volume using a 384-well plate reader. Data analysis was performed using Prism.
 
-## In vitro precipitation experiments
+### In vitro precipitation experiments
 
 TorsinA(E171Q):LAP1 complex was used in precipitation experiments. First, 100 pmol of TorsinA(E171Q):LAP1 complex was mixed with 200 pmol of VHH molecules and incubated at 4°C in the presence of 10 mM HEPES/NaOH pH 8.0, 150 mM NaCl, 10 mM MgCl2, and 0.25 mM ATP. Reactions were centrifuged at 13,000×g for 5 min at different time points to separate soluble and insoluble proteins, and the pellets were solubilized in 8 M urea. Equal volumes of samples from soluble and insoluble proteins were analyzed by SDS-PAGE gel electrophoresis.
 
-## Analytical gel filtration
+### Analytical gel filtration
 
 Size exclusion chromatography was performed on a 10/300 Superdex 200 column in 10 mM HEPES/NaOH pH 8.0, 150 mM NaCl, 10 mM MgCl2, and 0.5 mM ATP. Samples (7.5 nmol) of LAP1 and TorsinA(E171Q):LAP1 were loaded in 200 μl injections and peak fractions were analyzed by SDS-PAGE gel electrophoresis. For comparison, 2.5 nmol of LULL1 and TorsinA(E171Q):LULL1 were loaded in 200 μl injections.
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 Multiple sequence alignments of Torsin and LAP1 were performed using MUSCLE (Edgar, 2004) and visualized with Jalview (Waterhouse et al., 2009). Since differentiating between LAP1 and LULL1 is difficult based on primary sequence, we refer to the sequences as LAP1 for simplicity. The species nomenclature used for the alignments is as follows: Homo sapiens (hs), Ornithorhynchus anatinus (oa), Gallus gallus (gg), Takifugu rubripes (tr), Danio rerio (dr), Branchiostoma floridae (bf), Strongylocentrotus purpuratus (stp), Ciona savignyi (cs), Ciona intestinalis (ci), Nematostella vectensis (nv), Caenorhabditis elegans (ce), and Drosophila melanogaster (dm).
 
-## Modeling
+### Modeling
 
 The structure of human TorsinA was modeled using HHpred in combination with Modeler through the Bioinformatics Toolkit platform (Biegert et al., 2006). The D2 domain of ClpA (PDB entry 1R6B; Xia et al., 2004) was picked as the closest template structure. Models were generated with another four closely related structures. While there are a few uncertain loops and some discrepancies in modeling the C-terminal domain, the model of the nucleotide binding site is nearly identically in all cases.
 
 The structure of the heterohexameric TorsinA-LAP1 was modeled based on the hexameric D2 ring within the MecA-ClpC assembly (3PXI; Wang et al., 2011), by alternately superimposing the LAP1 structure and the TorsinA model onto neighboring ClpC-D2 domains within the ring.
 
-## Immunization of alpaca
+### Immunization of alpaca
 
 An adult male alpaca (Lama pacos) was purchased locally, maintained in pasture, and immunized following a protocol authorized by the Tufts University Cummings Veterinary School Institutional Animal Care and Use Committee. Recombinantly expressed LAP1 was used for immunization following a standard protocol (Maass et al., 2007). Following the final boost, peripheral blood lymphocytes (PBLs) were harvested from blood as described (Maass et al., 2007).
 
-## VHH library generation
+### VHH library generation
 
 Total RNA was isolated from 106 freshly isolated PBLs using an RNeasy Plus Mini Kit (Qiagen, Hilden, Germany), following the manufacturer's guidelines. First strand cDNA synthesis was performed using SuperScript III reverse transcriptase (ThermoFisher Scientific, Waltham MA) and a combination of poly (A) oligo dT, random hexamer or primers specific to alpaca immunoglobulin, AlCH2 and AlCH2.2. Subsequent PCR amplification of VHH sequences and phage library generation followed the procedure described in Maass et al. (2007), including the use of alpaca-specific primers for VHH gene amplification and a phagemid vector adapted for VHH expression as a pIII fusion. Following transformation into TGI cells (Agilent, Santa Clara, CA), the total number of independent clones was estimated to be 4 × 106/ml. Ninety six clones were selected at random and sequenced to assess library diversity. The resulting phagemid library was stored at −80°C.
 
-## Generation of M13 phage displaying VHH library
+### Generation of M13 phage displaying VHH library
 
 A 1 µl sample of the 4 × 106 library was used to inoculate 100 ml SOC with 10 µg/ml ampicillin. The culture was grown to mid-log phase, and infected with 100 µl 1014 pfu/ml VCSM13 helper phage. The culture was then incubated for 2 hr at 37°C, and the cells harvested by centrifugation, and resuspended in 100 ml 2YT, 0.1% glucose, 50 µg/ml kanamycin, and 10 µg/ml ampicillin. Cultures were incubated overnight at 30°C, then centrifuged for 20 min at 8000 rpm, and phage precipitated from the resulting supernatant with 1% PEG 6000/500 mM NaCl at 4°C, and resuspended in PBS.
 
-## Selection of VHHs by phage display
+### Selection of VHHs by phage display
 
 A 100 μg sample of LAP1 was labeled via coupling to primary amines with a fivefold molar excess of Chromalink NHS biotin reagent (Solulink, San Diego, CA) for 90 min in 100 mM phosphate buffer pH 7.4, 150 mM NaCl. The reaction was then run through an Amicon 10 kDa MWCO concentrator (EMD Millipore) to remove unreacted biotin. Incorporation of biotin was monitored spectrophotometrically. A 100 μl sample of MyOne Streptavidin T1 Dynabeads (ThermoFisher Scientific) was blocked in PBS/2% BSA for 2 hr at 37°C. Following blocking, 20 µg biotinylated antigen in PBS was added to the beads, and incubated for 30 min at room temperature (RT), with rotation. The beads were then washed 3× in PBS, and 200 µl of 1014 pfu/ml M13 phage displaying the VHH library was added in PBS/2% BSA for 1 hr at RT. The beads were then washed 15× in PBS/0.1% Tween 20. Phage was eluted by the addition of ER2738 E. coli (NEB, Ipswich, MA) for 15 min at 37°C, followed by elution with 200 mM glycine pH 2.2 for 10 min at RT. The glycine elution was neutralized and pooled with ER2738 culture, plated onto 2YT agar plates supplemented with 2% glucose, 5 µg/ml tetracycline, and 10 µg/ml ampicillin, and grown overnight at 37°C.
 
 This enriched library was then used for a second round of panning as described above with the following exceptions: 2 µg of biotinylated antigen was used as bait, and incubated with 2 µl 1014 pfu/ml M13 phage displaying the VHH library for 15 min at 37°C, followed by longer washes in PBS/0.1% Tween 20.
 
-## ELISA
+### ELISA
 
 Following two rounds of phage display panning, 96 colonies were isolated in 96-well round bottom plates and grown to mid-log phase at 37°C in 200 µl 2YT, 10 µg/ml ampicillin, and 5 µg/ml tetracycline, then induced with 3 mM IPTG, and grown overnight at 30°C. Plates were centrifuged at 2500 rpm for 10 min, and 100 µl of supernatant mixed 1:1 with PBS plus 5% non-fat dry milk was then added to an ELISA plate coated with 1 µg/ml antigen. Following multiple washes in PBS plus 1% Tween 20, anti-Etag-HRP antibody (Bethyl) was added at a 1:10,000 dilution in PBS plus 5% non-fat dry milk for 1 hr at RT. The plate was developed with fast kinetic TMB (Sigma-Aldrich), quenched with 1 M HCl and read out at 450 nm (Spectramax, Molecular Devices). ELISA positive clones were sequenced and subcloned into a bacterial expression vector (see above).

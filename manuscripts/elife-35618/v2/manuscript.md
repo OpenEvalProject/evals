@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.35618.001 Although alternative pre-mRNA splicing (AS) significantly diversifies the neuronal proteome, the extent of AS is still unknown due in part to the large number of diverse cell types in the brain. To address this complexity issue, we used an annotation-free computational method to analyze and compare the AS profiles between small specific groups of Drosophila circadian neurons. The method, the Junction Usage Model (JUM), allows the comprehensive profiling of both known and novel AS events from specific RNA-seq libraries. The results show that many diverse and novel pre-mRNA isoforms are preferentially expressed in one class of clock neuron and also absent from the more standard Drosophila head RNA preparation. These AS events are enriched in potassium channels important for neuronal firing, and there are also cycling isoforms with no detectable underlying transcriptional oscillations. The results suggest massive AS regulation in the brain that is also likely important for circadian regulation.
+Although alternative pre-mRNA splicing (AS) significantly diversifies the neuronal proteome, the extent of AS is still unknown due in part to the large number of diverse cell types in the brain. To address this complexity issue, we used an annotation-free computational method to analyze and compare the AS profiles between small specific groups of Drosophila circadian neurons. The method, the Junction Usage Model (JUM), allows the comprehensive profiling of both known and novel AS events from specific RNA-seq libraries. The results show that many diverse and novel pre-mRNA isoforms are preferentially expressed in one class of clock neuron and also absent from the more standard Drosophila head RNA preparation. These AS events are enriched in potassium channels important for neuronal firing, and there are also cycling isoforms with no detectable underlying transcriptional oscillations. The results suggest massive AS regulation in the brain that is also likely important for circadian regulation.
 
 ## Introduction
 
@@ -37,11 +37,23 @@ Here, we have comprehensively analyzed the global AS profiles in the transcripto
 
 ## Results
 
-## There are many novel AS patterns in neuron subpopulations
+### There are many novel AS patterns in neuron subpopulations
 
 To investigate how AS regulation differs with circadian neuron identity and function, we compared the pre-mRNA splicing profiles from three small groups of circadian neurons, the DN1s, LNds and LNvs, as well as from a non-circadian outgroup, the dopaminergic or tyrosine hydroxylase-expressing (TH) neurons. Total RNA and then mRNA from ~100 manually isolated neurons were purified from entrained flies every four hours across two days (12 samples for each group). A mixture of oligo-dT and random-primed cDNA was used to create RNA-seq libraries from each sample, as previously described (Abruzzi et al., 2015).
 
 To profile the AS patterns from each neuron group, we first collapsed the time-series RNA-seq data for each neuron group into two pooled datasets, one for each day, and compared the profiles of alternatively spliced junctions using JUM (Wang and Rio, 2017a). We chose the JUM software because of its unique ability to identify, categorize and quantitate global splicing patterns without any a priori knowledge of, or need for, a genome or transcriptome annotation. Since neurons often exhibit exceptionally diverse AS patterns that are not documented in current transcriptome annotations (Li et al., 2007; Wang et al., 2008; Irimia et al., 2014; Li et al., 2015), JUM allows for the discovery of novel and unannotated splicing events and patterns. JUM exclusively utilizes RNA-seq reads that map to splice junctions for AS analysis and defines alternatively spliced junctions (AS junctions) as splice junctions that have alternative 5’ - or 3’- splice sites (Figure 1A; left panel).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig1-v2.jpg)
+
+**Figure 1.:** Alternatively spliced junctions (AS junctions) were identified in RNA-seq libraries generated from isolated Drosophila neurons (DN1s, LNds, LNvs, and dopaminergic (TH)) as well as from a separately prepared heterogeneous Drosophila whole head sample. (A) Pictorial representation of the Junction Usage Model (JUM), using a cassette exon AS pattern as an example. AS junctions are identified in RNA-seq data from reads that have alternative 5’- or 3’- splice sites. These AS junctions are grouped into AS structures, defined as a set of splice junctions that share the same 5’- or 3’- splice site. The usage of each sub-AS-junction, that is the relative abundance of that sub-AS-junction compared to the other AS junctions in the same AS structure is calculated and can be compared across different conditions for differential AS analysis. AS structures are then assembled into conventionally recognized AS patterns based on the unique topological feature of the splice graph representing each pattern. (B) The bar graph on the left shows the number of AS junctions identified in each sample, including only the ones that are found within a gene. Darker blue indicates those AS junctions found in the heterogeneous whole head transcriptome and also annotated in the current genome annotation. Lighter blue denotes those junctions identified in the whole head transcriptome and not in the current genome annotation. Red denotes those junctions found in isolated neurons but not in the whole head transcriptome. The bar graph on the right shows the number of genes with the corresponding ALT junctions as specified on the left. (C) The majority of the AS junctions exclusively identified in neuron subtypes are novel and not annotated in the current genome annotation (~95%; shown in red). (D) Heat map of all AS junctions identified from the neuronal subtypes and the whole head sample. Every column is an AS junction and if the junction is identified in a sample, a blue grid is shown; otherwise a red grid is shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Alternatively spliced junctions (AS junctions) were identified in RNA-seq libraries generated from isolated Drosophila neurons (DN1s, LNds, LNvs, and dopaminergic (TH)) as well as from a separately prepared heterogeneous Drosophila whole head sample. (A) Bean plot depicting the length distribution of AS junctions identified from all neuronal samples. Many extremely long AS junctions are found, especially enriched in isolated neuronal subtypes. (B) The bar graph shows the number of total AS junctions (of all lengths) identified in each sample, including only the ones that are found within a gene. Darker blue indicates those AS junctions found in the heterogeneous whole head transcriptome and also annotated in the current genome annotation. Lighter blue denotes those junctions identified in the whole head transcriptome and not in the current genome annotation. Red denotes those junctions found in isolated neurons but not in the whole head transcriptome. (C) The majority of the total AS junctions (of all lengths) exclusively identified in neuron subtypes are novel and not annotated in the current genome annotation (>99%; shown in red). (D) Heatmap of all AS junctions (of all lengths) identified from the neuronal subtypes and the whole head sample. Every column is an AS junction and if the junction is identified in a sample, a blue grid is shown; otherwise a red grid is shown.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Gene ontology analyses of those transcripts that present neuron subgroup-specific novel ALT junctions that are not found in whole head samples for (A) LNv neurons, (B) LNd neurons, (C) DN1 neurons and (D) TH neurons, respectively.
 
 To further evaluate the tissue-specificity and diversity of AS from these neuron groups, we compared their profiles of AS junctions to those from a separately prepared Drosophila head sample, the most common source of adult nervous system RNA. We identified tens of thousands of AS junctions in each distinct neuronal sample with extensive length variation (Figure 1—figure supplement 1). Importantly, almost all AS junctions contain canonical splice sites (Supplementary file 1). Below, we will focus our description on the events that are typical of canonical AS junctions, which are located within single genes.
 
@@ -55,13 +67,29 @@ One of the circadian genes that shows a novel AS junction in DN1s is the circadi
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig2-v2.jpg)
 
-**Figure 2.:** Cry and CG10483 transcripts show neuron subtype-specific alternative splicing that is absent in the heterogeneous head sample.Neuron subtype-specific novel alternative splicing of cry and CG10483 are shown. RNA-seq data tracks derived from the neuronal samples are shown, with arcs representing splice junctions and the number of unique-mapped RNA-seq reads mapped to the junction across the arc. A percentage number is shown to indicate the usage of the specific junction or the corresponding splicing isoform. The orientation of the transcript is shown at the bottom: the red arrow indicates the direction of the promoter. The dotted lines indicate the region of transcript that is enlarged to highlight the alternatively spliced region. (A) The transcript of the blue-light photoreceptor, cry, has a novel alternative splicing junction in DN1s and LNds that is not observed in the head transcriptome: the first exon is spliced to a novel exonic region within the first intron. (B) The putative G-protein coupled receptor, CG10483, undergoes an exon-skipping event in LNds and DN1s that is not observed in whole heads. The skipped exon three is marked by ‘*’ and is skipped in ~10% of the CG10483 transcripts in LNds and ~30% of the CG10483 transcripts in DN1s.
+**Figure 2.:** Neuron subtype-specific novel alternative splicing of cry and CG10483 are shown. RNA-seq data tracks derived from the neuronal samples are shown, with arcs representing splice junctions and the number of unique-mapped RNA-seq reads mapped to the junction across the arc. A percentage number is shown to indicate the usage of the specific junction or the corresponding splicing isoform. The orientation of the transcript is shown at the bottom: the red arrow indicates the direction of the promoter. The dotted lines indicate the region of transcript that is enlarged to highlight the alternatively spliced region. (A) The transcript of the blue-light photoreceptor, cry, has a novel alternative splicing junction in DN1s and LNds that is not observed in the head transcriptome: the first exon is spliced to a novel exonic region within the first intron. (B) The putative G-protein coupled receptor, CG10483, undergoes an exon-skipping event in LNds and DN1s that is not observed in whole heads. The skipped exon three is marked by ‘*’ and is skipped in ~10% of the CG10483 transcripts in LNds and ~30% of the CG10483 transcripts in DN1s.
 
-## Circadian neurons present specific alternative pre-mRNA splicing patterns
+### Circadian neurons present specific alternative pre-mRNA splicing patterns
 
 To explore the potential regulatory role of alternative pre-mRNA splicing in circadian rhythms, we compared the global AS patterns in the three subtypes of circadian neurons (DN1, LNd and LNv) with the non-circadian TH neurons using JUM. To do this, JUM grouped all identified AS junctions into the basic AS quantitation unit called AS structures, which are a set of AS junctions that share the same 5’ splice site or 3’ splice site (Figure 1A; middle panel). Each AS junction within an AS structure is defined as a sub-AS-junction of the corresponding AS structure. JUM then quantifies the ‘usage’ of each sub-AS-junction in every AS structure, that is the relative abundance of each sub-AS-junction in the AS structure and identifies AS structures whose usage of sub-AS-junctions are significantly different between the circadian and non-circadian neuron groups. Finally, JUM faithfully assembles the AS structures into the conventionally recognized AS patterns (cassette exon - SE, alternative 5’ or 3’ splice site – A5SS/A3SS, mutually exclusive exons - MXE, and intron retention - IR) based on the unique topological features of each pattern (Figure 1A; right panel) (Wang and Rio, 2017a). While our first analysis identified ‘all or none’ neuronal group-specific splice junction usage, this approach allows for the identification of differential splice junction usage in which AS junctions are present in both neuronal subgroups but used at significantly different frequencies.
 
 Using this method, we found 249, 194 and 70 AS events that are significantly differentially spliced in the DN1, LNv and LNd neurons compared to the TH neurons, respectively, which cover all five conventionally classified AS patterns (Figure 3A; Materials and methods; Figure 3—source data 1–3). To test whether the differentially spliced AS events identified are specific to a particular group of neurons, we examined the overlap of the differentially spliced AS events in each neuronal subgroup (Figure 3B, top right; Figure 3—figure supplement 1). Remarkably, the majority of the differentially spliced AS events in DN1, LNv or LNd neurons, compared to TH neurons, are unique to each of the circadian neuronal subtypes (Figure 3B). Only approximately 1.6–6.6% (9-36) of these differentially spliced AS events were found to overlap between 2 of the three circadian neuronal subgroups, which is significantly lower than expected (Hypergeometric Test; p value = 2.38e-07 for DN1/TH and LNd/TH; p value = 3.68e-39 for DN1/TH and LNv/TH; p value = 1.7e-04 for LNd/TH and LNv/TH). Only 1.8% (8) of these differentially spliced AS events are found in all three circadian neuron groups. Three of these eight genes are involved in regulating neuronal plasticity, remodeling and synaptic transmission (Pten, Sap47, Rim). This result suggests that each circadian neuronal subgroup possesses a unique pattern of AS isoforms that contribute to the identity of each distinct neuronal group (see Discussion). To further support this conclusion, we also directly compared differential AS patterns within the circadian neuron subgroups; as predicted by the above results, we found many neuronal group-specific AS events (Figure 3—figure supplement 2; Figure 3—source data 4–6).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig3-v2.jpg)
+
+**Figure 3.:** (A) AS events that were differentially spliced in the circadian neurons (DN1, LNd and LNv) compared to the dopaminergic neurons (TH) were identified using JUM, respectively. The number and type of these differentially alternatively spliced AS events are shown. (Cassette exon - SE, alternative 5’/3’ splice site –A5SS/A3SS, intron retention – IR, mutually exclusive exons – MXE). (B) Venn graph in the top right showing the overlap of differentially alternatively spliced AS events among the three circadian neuron subtypes versus TH neurons, as well as the number of genes involved in these AS events. Most of the transcripts undergoing differential AS events are unique to one subset of the circadian neurons. Only eight transcripts in eight genes show differential AS events in all three circadian neuron groups. Venn graph in the lower left showing the overlap of differentially expressed RBPs (potential splicing regulators) in each of the three circadian neuron subtypes compared to TH neurons. Very limited overlap is also found for the differentially expressed RBPs among neuron subpopulations. The RBPs Syp and mub which are differentially expressed in LNvs versus TH neurons target 32 and 23 LNv-specific AS event transcripts as determined from publicly available CLIP and RIP-seq experiment datasets (Stoiber et al., 2015).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Venn graphs showing the overlap of differentially alternatively spliced AS events among the three circadian neuron subtypes versus TH neurons, in each splicing pattern category. Most of the transcripts undergoing differential AS events are unique to one subset of the circadian neurons.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** AS events that were differentially spliced in each of the circadian neuron subpopulations compared to another (DN1 vs. LNd, LNd vs. LNv and DN1 vs. LNv) were identified using JUM, respectively. The number and type of these differentially alternatively spliced AS events are shown.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Cross-species conservation comparison. Average PhastCon scores across 27 insect species for the set of differentially spliced cassette exons (AS) and non-differentially spliced cassette exons (non) in circadian versus non-circadian neurons are plotted as a boxplot. The panels on the right of the red dashed line showing the combined differentially spliced cassette exons and non-differentially cassette exons from all three circadian neurons versus TH neuron comparisons. (B) Reading frame preservation comparison. The percentages of cassette exons that preserve reading frame when excluded/included are plotted for the differentially spliced cassette exons (AS, dark shaded columns) and the non-differentially spliced exons (non, light gray-shaded columns).
 
 To explore mechanisms that might contribute to these circadian neuron group-specific AS profiles, we identified RNA binding proteins (RBPs) that are differentially expressed in each of the circadian neurons compared to the non-circadian TH neurons (Figure 3B; Figure 3—source data 7–9). Interestingly, each circadian neuron subpopulation expresses its own unique set of differentially expressed RBPs compared to TH neurons, with very limited overlap (Figure 3B, lower left panel). Further profiling of the identified targets of a subset of these RBPs using publicly available CLIP and RIP-seq experimental data (Stoiber et al., 2015; Hansen et al., 2015) suggest that these specific RBPs could account for many AS events. For example, Syb and mub, two RBPs that are differentially expressed in LNv neurons compared to TH neurons, target 23 and 32 LNv-specific differentially spliced AS target RNAs in LNv versus TH neurons, respectively, with five overlaps, which covers ~36% of total LNv neuron specific differentially spliced AS events. Although speculative, this analysis highlights the possibility that circadian neuron-specific RBP expression could drive much of the observed circadian neuron-specific AS patterns compared to TH neurons.
 
@@ -69,7 +97,7 @@ One example of a differentially spliced transcript in LNv neurons compared to TH
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig4-v2.jpg)
 
-**Figure 4.:** N-syb and Shab undergo differential splicing in circadian neurons compared to non-circadian, TH neurons.(A) In LNvs, the Neuronal synaptobrevin (N-syb) transcript is enriched for the isoform that includes an exon present in variant J. The alternatively spliced exon is marked by ‘*’. Use of this exon results in a N-syb protein with a different C-terminus (85 amino acids). (B) The transcript of the potassium-gated voltage channel, Shab, undergoes differential alternative splicing in LNvs and DN1s. This results in the higher usage of the terminal exon present in variant K of Shab (marked by ‘*’). This creates a protein with a novel C-terminus that lacks the sixth transmembrane region of the potassium channel. The high intronic signal seen in this region of Shab is due to the presence of a gene in this region on the opposite strand.
+**Figure 4.:** (A) In LNvs, the Neuronal synaptobrevin (N-syb) transcript is enriched for the isoform that includes an exon present in variant J. The alternatively spliced exon is marked by ‘*’. Use of this exon results in a N-syb protein with a different C-terminus (85 amino acids). (B) The transcript of the potassium-gated voltage channel, Shab, undergoes differential alternative splicing in LNvs and DN1s. This results in the higher usage of the terminal exon present in variant K of Shab (marked by ‘*’). This creates a protein with a novel C-terminus that lacks the sixth transmembrane region of the potassium channel. The high intronic signal seen in this region of Shab is due to the presence of a gene in this region on the opposite strand.
 
 The potassium channel Shab also undergoes alternative 3’-splice site use. In TH and LNd neurons the Shab transcripts preferentially utilize an alternative terminal exon (Figure 4B; marked by ‘*’). It results in a significantly shorter isoform and encodes a protein lacking the sixth transmembrane region of the potassium channel protein (Figure 4B), which function as a dominant negative protein. 61–74% of Shab transcripts encode this short isoform in TH and LNd neurons, whereas with the ratio of the short isoform decreases significantly, to 10 and 40%, in LNvs and DN1s (Figure 4B).
 
@@ -83,9 +111,25 @@ Other notable GO terms in the LNv neuronal population are neuronal projection (F
 
 To further explore the functional importance of the differentially spliced AS events in circadian neurons versus TH neurons, we examined the cross-species conservation of identified differentially spliced cassette exons and the preservation of reading frame from the AS of these cassette exons. We first plotted the PhastCons conservation score (Siepel et al., 2005) across 27 species of insects for the sets of alternatively spliced and non-alternatively spliced cassette exons, respectively, in each of the circadian neuron subgroup versus TH comparisons (Figure 3—figure supplement 3A). Interestingly, the alternatively spliced cassette exons are somewhat more conserved than the non-alternatively spliced cassette exons, although the result is not statistically significant (Mann-Whitney U Test; p value 0.17). We also found that the inclusion/exclusion of the alternatively spliced cassette exons are more prone to preserve reading frame than non-alternatively spliced exons (Figure 3—figure supplement 3B), further indicating that these AS events are important to the identity and function of the neuron subpopulation.
 
-## Identification of cycling alternatively spliced isoforms in circadian neurons
+### Identification of cycling alternatively spliced isoforms in circadian neurons
 
 To further investigate the role of AS regulation in circadian rhythms, we used JUM to identify AS events that exhibit cycling alternative splicing in each of the neuronal subtypes. To do this, we queried AS structures identified in each of the neuronal subgroups across the six time-point RNA-seq data (two independent replicas for each time point) to profile the changes in sub-AS- junction usage throughout the day (F24 and JTK-cycle; see Materials and methods). We identified cycling AS structures in all 3 groups of circadian neurons: 173 AS structures in DN1 neurons (5.7% of all AS structures), 92 in LNv neurons (5.0% of all AS structures), and 48 in LNd neurons (3.7% of all AS structures) (Figure 6—source data 1). These events affect 147, 81, 43, and nine genes in DN1, LNv, LNd and TH neurons, respectively (Figure 6A). Importantly, 85% of the transcripts that exhibit time-dependent changes in alternative splicing do not cycle at the total mRNA level (Figure 6A; RPKM based on ESAT quantification [Derr et al., 2016; Abruzzi et al., 2017]). The non-circadian TH neurons serve as a negative control for this analysis (only 11 cycling AS structures) because they have very few cycling mRNAs and probably do not express the clock genes (Abruzzi et al., 2017).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig6-v2.jpg)
+
+**Figure 6.:** To identify cycling time-of-day changes in alternative splicing, the frequency at which each sub-AS-junction is utilized in every profiled AS structure was examined across six timepoints taken at four hour intervals throughout the day. Two independent six-timepoint-datasets were examined. (A) The distribution of the number of genes with cycling AS structures identified in each neuronal group. The majority of the cycling AS structures identified occur in non-cycling mRNAs (dark blue). As a non-circadian neuronal group, the number of genes with cycling AS identified in TH neurons serves as a negative control and estimate of false positives of the analysis. (B) Overlap of genes with cycling AS structures across the three circadian neuron subtypes. Most cycling AS structures are neuron specific; only two transcripts undergo cycling AS in all three groups of circadian neurons. (C) Sashimi plots highlight RNA-seq signal at the 3’-end of the gene encoding the circadian kinase, Shaggy (Sgg). The architecture of the Sgg gene is shown below; the red arrow indicates the direction of transcription. Time of day is indicated by Zeitgeber time (ZT) on the left side of the figure; ZT0 is the beginning of 12 hr of lights-on and ZT12 is the beginning of 12 hr of lights-off. The transcript of the circadian kinase, Shaggy (sgg), undergoes time-of-day oscillations in alternative splicing at the 3’-end of the transcript in LNd neurons. In early morning (ZT2/ZT6), terminal exon a (marked by ‘**’) is preferred, generating a slightly longer protein isoform. In the night (ZT18/22), splicing shifts to utilize terminal exon b (marked by ‘*’) that generates a shorter protein isoform with different C-terminus. (D) The frequency at which the shorter protein isoform of Sgg (with exon b) is generated is graphed throughout the day for two independent days, over two independent set of 6-timepoints in red circles, following the y axis on the left. The time-of-day dependent expression levels of the cycling Qkr54B transcript is shown using green triangles, following the y axis on the right. Qkr54B is a predicted regulator of Sgg transcripts determined by publically available RIP-seq experiments (Stoiber et al., 2015).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The frequency of inclusion of exon b of the Sgg transcript in LNv (blue) and DN1 (red) neurons is shown. Low levels of exon b inclusion are found throughout the day. The x-axis shows Zeitgeber time (ZT). ZT0 denotes lights on and ZT12 denotes lights off.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Slowpoke (Slo) undergoes cycling alternative splicing in DN1 neurons. Sashimi plots highlight RNA-seq signals within the region of Slo that where exons 2a (marked by ‘*’) and exon 2b (marked by ‘**’) are mutually exclusively included. The architecture of the Slo gene is shown below; the red arrow indicates the direction of transcription. Time of day is indicated by Zeitgeber time (ZT) on the left side of the figure; ZT0 is the beginning of 12 hr of lights-on and ZT12 is the beginning of 12 hr of lights-off. In the morning, exon 2b of the Slo transcript is preferentially used then during the night there is a shift to the inclusion of exon 2a instead. (B) The slowpoke (slo) channel shows time-of-day dependent variation in the usage of exon 2a and 2b in DN1 neurons. Exon 2b is primarily included in the morning and then its usage drops in the night as splicing switches to include exon 2a instead.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Gene ontology analyses of those transcripts that have neuron subgroup-specific cycling AS structures for (A) LNv neurons, (B) LNd neurons, (C) DN1 neurons, respectively.
 
 The majority of these cycling AS structures are specific to a particular group of circadian neurons (Figure 6B). Some of this specificity is because certain AS structures are only found in one subgroup of circadian neurons (~40% in DN1, 14% in LNd and 25% in LNv). Moreover, only two transcripts show cycling alternative splicing in all three groups of circadian neurons: still life (sif) that regulates synaptic differentiation and the type II Camp-dependent protein kinase, pKa-R1 (Figure 6B). This striking specificity suggests that time-of-day changes in alternative pre-mRNA splicing acts as an additional and previously unappreciated level of circadian regulation in Drosophila clock neurons, as previously suggested in mammals based on microarrays (McGlincy et al., 2012).
 
@@ -96,6 +140,14 @@ The potassium channel SLOWPOKE is encoded by the Slo gene and also undergoes neu
 To explore how cycling AS could impact neuronal functions, we performed gene ontology analysis on transcripts undergo cycling AS in the circadian neurons. Interestingly, modulation of locomotor behavior is enriched for cycling AS transcripts in all three circadian neuron groups, although a distinct group of transcripts is implicated in each circadian neuronal group (Figure 6—figure supplement 3; Supplementary file 3). In LNvs and LNds neurons, the most significantly enriched GO term for cycling AS transcripts is male courtship behavior and olfactory learning, respectively (Figure 6—figure supplement 3A,B; Supplementary file 3). In DN1 neurons, the top enriched GO term for cycling AS transcripts is mRNA binding proteins and 8 out of the 12 genes in this category encode alternative splicing regulators. The cycling AS of these splicing regulators could further facilitate downstream time of day-dependent changes in global splicing profiles (Figure 6—figure supplement 3C; Supplementary file 3).
 
 Previous analysis of mRNA expression cycling in the circadian neurons revealed that mRNAs cycle with distinct phases in each subgroup of neurons (Abruzzi et al., 2017). Interestingly, the phases of the cycling AS structures also show neuron-group specific distributions (Figure 7A; Figure 7—figure supplement 1; blue). Most interesting were the DN1 neurons in which the majority of the time-of-day-dependent cycling AS structures peak in the late night (Figure 7A; blue). This peak is almost anti-phase to that of DN1 mRNA cycling (Figure 7A, red). In contrast, mRNA cycling and AS cycling show similar phases in the LNv neurons (Figure 7—figure supplement 1A). The LNd neurons have a third pattern: cycling mRNAs peak in the early evening, but cycling AS structures have a random distribution throughout the day (Figure 7—figure supplement 1B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig7-v2.jpg)
+
+**Figure 7.:** (A) The phase distribution of cycling AS structures in DN1 neurons is plotted as a histogram (blue) with the phase distribution of all cycling transcripts in DN1 neurons overlaid (orange). In DN1s, most cycling transcripts are at their highest level at mid-morning. In contrast, cycling AS structures are most abundant in the late night. (B) Cycling transcripts that encode RBPs that act as splicing modulators were identified. The Venn graph shows the overlap of these cycling RBPs in each of the circadian neuron subpopulations. Every circadian neuron expresses a unique set of cycling RBPs. Qkr54B (red dashed circle) is known to target the Sgg transcripts (Stoiber et al., 2015) that present cycling AS patterns in LNd neurons.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/35618/elife-35618-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The phase distribution of cycling AS structures in LNv and LNd neurons is plotted as a histogram (blue) with the phase distribution of all cycling transcripts overlaid (orange). In LNvs, cycling transcripts and cycling AS structures show a bimodal phase distribution in the mid-morning and mid-night. In LNds, cycling transcripts peak midday and cycling AS structures peak throughout the day.
 
 To probe potential mechanisms contributing to this neuron-specific AS cycling, we queried the list of cycling mRNAs within these neurons (Abruzzi et al., 2017) and identified cycling transcripts encoding RBPs in all three neuronal subgroups (Figure 7B). None of the identified RBP mRNAs cycle in more than one circadian neuron subgroup. Although there was no clear global correlation between the phases of these RBP mRNAs and cycling AS in any neuronal group, we did identify a cycling splicing factor in LNds, Qkr54B, that has been shown to target Sgg transcripts (Stoiber et al., 2015). Interestingly, Qkr54B mRNA peaks 3–4 hr prior to the time of day dependent inclusion of the alternative spliced Sgg terminal Exon b (Figure 6D; green line and triangle), suggesting that cycling RBP expression might contribute to the cycling AS patterns.
 
@@ -115,38 +167,132 @@ Taken together, the work presented here indicates that the number of alternative
 
 ## Materials and methods
 
-## Neuron dissection, RNA extraction and RNA-seq library preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RNA-seq data</td>
+      <td></td>
+      <td>(Abruzzi et al., 2017)</td>
+      <td>GSE77451</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNA-seq data</td>
+      <td></td>
+      <td>(Wang et al., 2016)</td>
+      <td>GSE79916</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Morpheus</td>
+      <td>N/A</td>
+      <td></td>
+      <td>https://software.broadinstitute.org/morpheus/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BoxPlotR</td>
+      <td>(Spitzer et al., 2014)</td>
+      <td></td>
+      <td>http://shiny.chemgrid.org/boxplotr/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR 2.5.3a</td>
+      <td>(Dobin et al., 2013)</td>
+      <td></td>
+      <td>https://github.com/alexdobin/STAR</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools 1.4.1</td>
+      <td>(Li, 2011)</td>
+      <td></td>
+      <td>http://samtools.sourceforge.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bedtools 2.26.0</td>
+      <td>N/A</td>
+      <td></td>
+      <td>http://bedtools.readthedocs.io/en/latest/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JUM 1.3.7</td>
+      <td>(Wang and Rio, 2017b)</td>
+      <td></td>
+      <td>https://github.com/qqwang-berkeley/JUM (copy archived at https://github.com/elifesciences-publications/JUM)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ 1.50i</td>
+      <td>(Schneider et al., 2012)</td>
+      <td></td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>David Bioinformatics Resources 6.8</td>
+      <td>(Huang et al., 2009b)</td>
+      <td></td>
+      <td>https://david.ncifcrf.gov/home.jsp</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGV 2.3.91</td>
+      <td>(Robinson et al., 2011; Thorvaldsdóttir et al., 2013)</td>
+      <td></td>
+      <td>http://software.broadinstitute.org/software/igv/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Neuron dissection, RNA extraction and RNA-seq library preparation
 
 Neuron dissection, RNA extraction and library preparation were performed as described in (Abruzzi et al., 2015).
 
-## RNA-seq data mapping for JUM
+### RNA-seq data mapping for JUM
 
 The sequencing data used in this study is publically-available at Gene Expression Omnibus (Accession numbers GSE77451 (neurons) and GSE79916 (heads)). RNA-seq reads were mapped to the Drosophila (dm3) genome using STAR (Dobin et al., 2013) in the 2-pass mode; the exact commands used are listed in Supplementary file 5. Only uniquely mapped reads are kept for downstream analysis. The mapping statistics for each sample are listed in Supplementary file 4. For pooled data analysis, fastq files from each time points were pooled before subjecting the pooled data to mapping as described above. The mapping parameters for splice junction profiling are set as default in STAR: the minimum overhang length for splice junctions on both sides are set to be the 30 bp for non-canonical motif junctions, and 12 bp for the canonical GT/AG (CT/AC), GC/AG (CT/GC), AT/AC (GT/AT) motif junctions, respectively. The minimum uniquely mapped read count per junction is set to be three for non-canonical motif junctions and one for the canonical motif junctions. The minimum allowed distance to other splice junctions’ donor/acceptor is set to be 10 for non-canonical motif junctions and 0,5,10 for the canonical GT/AG (CT/AC), GC/AG (CT/GC), AT/AC (GT/AT) motif junctions, respectively. The maximum gap allowed for junctions are set to be as follows: junctions supported by one read can have gaps ≤ 50000 b; if supported by two reads then gaps ≤ 100000 b; if supported by three reads then gaps ≤ 200000; if supported by more than four reads then gaps ≤ alignIntronMax (see the STAR manual for details).
 
-## Profiling of AS junctions
+### Profiling of AS junctions
 
 Splice junctions with alternative 5’ or 3’ splice sites in the sample were profiled from the pool of total STAR-identified splice junctions for each neuronal sample, and defined as AS junctions. The novelty of each AS junction was compared against the library of annotated junctions in the UCSC genome browser RefSeq transcriptome annotation (genome version: FB2017_05).
 
-## Gene Ontology analysis
+### Gene Ontology analysis
 
 Gene Ontology analyses were performed using David Bioinformatics Resources 6.8 (https://david.ncifcrf.gov/home.jsp) (Huang et al., 2009a). For neuron-subgroup-specific analyses, a list of transcripts expressed at greater than five reads was used as a background data set. A p-value of less than 0.05 was required for a gene to be considered enriched in the dataset.
 
-## Visualization
+### Visualization
 
 All RNA-seq data are visualized using IGV (Thorvaldsdóttir et al., 2013; Robinson et al., 2011) and the Sashimi plots tool (Katz et al., 2015). Visualized tracks are further organized using ImageJ (Schneider et al., 2012). All boxplots in this paper were plotted using BoxPlotR (Spitzer et al., 2014).
 
-## Differential AS analysis between circadian and non-circadian neurons using JUM
+### Differential AS analysis between circadian and non-circadian neurons using JUM
 
 For each comparison of a circadian neuron subtype (DN1, LNv and LNd) and the non-circadian, TH neuron subtype, total splice junctions that receive more than 10 unique mapped reads in both collapsed datasets in the circadian or non-circadian neuron subtype samples were pooled together, and AS structures were constructed based on the pooled splice junction set. The usage of each sub-AS-junction in every AS structure was calculated and AS structures with significantly differentially ‘used’ sub-AS-junctions between each of the circadian neuron subtypes and the non-circadian neuron subtype were profiled as specified (Wang and Rio, 2017a). All AS structures were then assembled into the five conventionally recognized AS patterns – cassette exon (SE), alternative 5’/3’ splice sites (A5SS/A3SS), mutually exclusive exons (MXE), and intron retention (IR), as well as a Composite category, which represents inseparable combinations of the conventional AS patterns. Here we are only focusing on AS events in the conventional AS pattern categories. Only AS events that showed more than 10% of change in alternative splicing and had a differential splicing test statistical pvalue ≤ 0.05 were considered significantly differentially spliced AS events. For more details see (Wang and Rio, 2017a) and the GitHub page of JUM (Wang and Rio, 2017b): https://github.com/qqwang-berkeley/JUM (copy archived at https://github.com/elifesciences-publications/JUM). The same procedure was performed to analyze differential AS patterns among circadian neuron subgroups as well.
 
-## Differential gene expression analysis between circadian and non-circadian neurons
+### Differential gene expression analysis between circadian and non-circadian neurons
 
 Differential gene expression analysis between each circadian neuron subgroup and the non-circadian TH neurons were performed using DESeq2 (Love et al., 2014). Adjusted-p value 0.05 was chosen as the statistical cutoff.
 
-## Cross-species conservation analysis in cassette exons
+### Cross-species conservation analysis in cassette exons
 
 Conservation scores (PhastCon) (Siepel et al., 2005) for each single base in the cassette exons for alignments of 26 insects with D.melanogaster was downloaded from the UCSC Genome browser and an average PhastCon score for each cassette exon was calculated and compared.
 
-## Cycling AS analysis
+### Cycling AS analysis
 
 For each neuron subtype, total splice junctions that receive more than 10 unique mapped reads in at least one time point from both replicas were pooled. AS structures were constructed based on the pooled splice junction set. The relative usage of each sub-AS-junction in every AS structure is calculated, and subject to analysis using fourier analysis (F24; [Wijnen et al., 2005]) and JTK-cycle (Hughes et al., 2010). To be considered cycling using fourier transformation the following cutoffs were used: F24 score greater than 0.5, >1.5 fold change in splice junction usage, and the average transcript reads greater than 10 for at least one timepoint in each independent dataset. JTK cycle identified transcripts as cycling that had >1.5 fold change in splice junction usage, the average transcript reads greater than 10 for at least one timepoint in each independent dataset, and a p-value cutoff of less than 0.05. Phase determination was done using fourier transformation.

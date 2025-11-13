@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.34362.001 Wnt5a has been implicated in melanoma progression and metastasis, although the exact downstream signaling events that contribute to melanoma metastasis are poorly understood. Wnt5a signaling results in acyl protein thioesterase 1 (APT1) mediated depalmitoylation of pro-metastatic cell adhesion molecules CD44 and MCAM, resulting in increased melanoma invasion. The mechanistic details that underlie Wnt5a-mediated regulation of APT1 activity and cellular function remain unknown. Here, we show Wnt5a signaling regulates APT1 activity through induction of APT1 phosphorylation and we further investigate the functional role of APT1 phosphorylation on its depalmitoylating activity. We found phosphorylation increased APT1 depalmitoylating activity and reduced APT1 dimerization. We further determined APT1 phosphorylation increases melanoma invasion in vitro, and also correlated with increased tumor grade and metastasis. Our results further establish APT1 as an important regulator of melanoma invasion and metastatic behavior. Inhibition of APT1 may represent a novel way to treat Wnt5a driven cancers.
+Wnt5a has been implicated in melanoma progression and metastasis, although the exact downstream signaling events that contribute to melanoma metastasis are poorly understood. Wnt5a signaling results in acyl protein thioesterase 1 (APT1) mediated depalmitoylation of pro-metastatic cell adhesion molecules CD44 and MCAM, resulting in increased melanoma invasion. The mechanistic details that underlie Wnt5a-mediated regulation of APT1 activity and cellular function remain unknown. Here, we show Wnt5a signaling regulates APT1 activity through induction of APT1 phosphorylation and we further investigate the functional role of APT1 phosphorylation on its depalmitoylating activity. We found phosphorylation increased APT1 depalmitoylating activity and reduced APT1 dimerization. We further determined APT1 phosphorylation increases melanoma invasion in vitro, and also correlated with increased tumor grade and metastasis. Our results further establish APT1 as an important regulator of melanoma invasion and metastatic behavior. Inhibition of APT1 may represent a novel way to treat Wnt5a driven cancers.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Here, we uncover a mechanism by which the non-canonical Wnt signaling pathway in
 
 ## Results
 
-## Wnt5a signaling induces APT1 phosphorylation
+### Wnt5a signaling induces APT1 phosphorylation
 
 Wnt5a induced metastatic cell behavior was previously shown to be dependent on increased protein depalmitoylation driven by APT1 (Wang et al., 2015). We hypothesized a mechanism for increased depalmitoylation could be a result of regulatory post-translational modifications of APT1 that increases APT1 activity. To investigate if APT1 is post-translationally modified in response to Wnt5a stimulation, we used mass spectrometry to identify Wnt5a dependent post-translational modifications (PTMs) of APT1. Low Wnt5a producing WM239A melanoma cells expressing CFP-FLAG tagged wild type APT1 (APT1WT-CFP-FLAG) were treated with purified Wnt5a and APT1 was immunoprecipitated using anti-FLAG magnetic particles. APT1 was eluted with FLAG peptide. The immunopurified APT1 was alkylated and trypsinized and analyzed by mass spectrometry. The only phosphorylation sites identified on APT1 were on serine residues 209 and 210. Whereas single phosphorylation of either serine 209 or 210 was detected, we can’t rule out the possibility of dual phosphorylation (Figure 1A and B). These findings are consistent with a previous high throughput mass spectrometry screen by another group that identified APT1 phosphorylation on serine residues 209 and 210 in laryngeal cancer cells (Phosphosite.org, site group ID: 25299324 and 25299327).
 
@@ -48,9 +48,57 @@ We generated separate phospho-specific antibodies to phospho-site Ser209 and Ser
 
 The crystal structure of APT1 has been previously determined (Devedjiev et al., 2000; Won et al., 2016) allowing us to model where the phosphorylated serine residues are positioned on the three-dimensional structure (PDB:5sym). We found that the phosphorylated serine residues 209 and 210 are solvent exposed on the lip of the hydrophobic putative acyl-binding channel and adjacent to the catalytic triad (Ser119, His208, Asp174), suggesting phosphorylation of these sites could influence APT1 activity (Figure 1G). Together, these results indicate Wnt5a signaling in melanoma cells induces APT1 phosphorylation at serine residues 209 and 210 and our phospho-specific antibodies are selective for these sites.
 
-## APT1 phosphorylation increases depalmitoylating activity
+### APT1 phosphorylation increases depalmitoylating activity
 
 To investigate how Wnt5a induced phosphorylation of APT1 affects its function, phosphorylated serine 209 was mutated to a negatively charged aspartic acid (APT1S209D) to mimic the negative charge of phosphate on serine 209. To measure APT1 activity, we utilized a recently developed fluorescent depalmitoylation probe, DPP-3, that contains a thiol conjugated seven carbon fatty acid that when hydrolyzed, generates a fluorescent product that can be measured at λex490/9 nm; λem545/20 nm (Kathayat et al., 2017). This probe served as a reporter to measure the depalmitoylating activity of APT1 and APT1 mutants both in vitro and in live cells. 6x His-tagged APT1 expressed and purified from E. coli was incubated with DPP-3 and the relative fluorescence was measured over time. APT1S209D was found to have increased depalmitoylating activity compared to APT1WT (Figure 2A). A catalytically inactive mutant where catalytic serine 119 is mutated to alanine (referred to as APT1S119A) was used as a negative control and generated minimal fluorescence throughout the duration of the assay (Figure 2A). We next evaluated the depalmitoylating activity of APT1WT and APT1S209D using DPP-3 in the presence of increasing concentrations of DPP-3 substrate to determine the initial velocities at multiple substrate concentrations (Figure 2B and C). We measured higher initial velocities for APT1S209D at each substrate concentration compared to APT1WT (Table 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/34362/elife-34362-fig2-v2.jpg)
+
+**Figure 2.:** (A) In vitro fluorescence assays using 5 μM of depalmitoylation probe DPP-3 in HEPES (20 mM, pH 7.4, 150 mM NaCl, 0.1% Triton X-100) with either 50 nM purified APT1WT, APT1S209D or catalytically inactive APT1S119A and fluorescence emission was measured over time (λex490/9 nm; λem545/20 nm). Error bars indicate s.e.m., n = 3 replicates per condition. Results shown are from a representative trial from three independent experiments. (B) Linear regression of APT1WT (WT) enzymatic activity measured by fluorescence emission of increasing DPP-3 substrate concentrations over time. Results are averaged from six independent experiments. (C) Linear regression of APT1S209D (SD) enzymatic activity measured by fluorescence emission of increasing DPP-3 substrate concentrations over time. Results are averaged from six independent runs. (D) Quantification of relative fluorescence of WM239A cells treated with control buffer or 150 ng/ml of Wnt5a, loaded with 10 μM DPP-3, and then analyzed by live-cell fluorescence microscopy over time. Error bars indicate s.d., n = 25 cells per condition, ****p<0.0001 by unpaired t-test analysis. Results shown are from three experiments. (E) Quantification of relative fluorescence of WM239A cells expressing APT1WT treated with control buffer, 150 ng/ml of Wnt5a, or 150 ng/ml of Wnt3a, loaded with 5 μM DPP-3, and then analyzed by live-cell fluorescence microscopy after 30 min. Error bars indicate s.d., n = 25 cells per condition, ****p<0.0001 by unpaired t-test analysis. Results shown are from three experiments. (F) Quantification of relative fluorescence generated by WM239A cells expressing either APT1WT (WT), APT1SA (SA), or APT1S209D (SD) treated with control buffer or 150 ng/ml Wnt5a, loaded with 10 μM DPP-3, and then analyzed by live-cell fluorescence microscopy after 30 min. Error bars indicate s.d., n = 17–32 cells per condition, ****p<0.0001 by unpaired t-test analysis. Results shown are from three experiments. (G) Quantification of relative fluorescence of WM239A APT1WT cells treated with kinases inhibitors 10 μM BI-D1870, or 0.2 μM staurosporine or DMSO control for 1 hr, loaded with 10 μM DPP-3, treated with Wnt5a and analyzed by live-cell fluorescence microscopy after 30 min. Error bars indicate s.d., n = 25 cells per condition, ****p<0.0001 by unpaired t-test analysis. Results shown are from three experiments.Quantification for all live-cell microscopy was determined by measuring the mean intensity of relative fluorescence for region of interests (background fluorescence was subtracted from mean intensity).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34362/elife-34362-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative images of WM239A cells loaded with 10 μM DPP-3, treated with control buffer or 150 ng/ml Wnt5a, and then analyzed by live-cell fluorescence microscopy at 15 min, 30 min, and 45 min, quantified in Figure 2D. (B) APT1WT was immunoprecipitated from WM239A whole cell lysate pre-treated with control buffer or 150 ng/ml Wnt5a and analyzed by in vitro fluorescence assay. *p<0.05 by unpaired t-test analysis of – Wnt5a and +Wnt5 a groups. (C) WM239A APT1WT cells were treated with control buffer, 75 nl/ml, or 150 ng/ml of recombinant Wnt3a for 1 hr, lysate was harvested and analyzed by SDS-PAGE to determine β-catenin stabilization. (D) Top panel: Representative images of APT1WT, APT1SA and APT1S209D WM239A cells treated with 10 μM of DPP-3 for 15 min, and then analyzed by live-cell microscopy. Bottom panel: Quantification of relative fluorescence of WM239A APT1WT (WT), APT1SA (SA), and APT1S209D (SD) cells treated with control buffer or 150 ng/ml Wnt5a, loaded with 10 μM DPP-3, and then analyzed by live-cell fluorescence microscopy after 30 min. Error bars indicate s.d., n = 17–32 cells per condition, ****p<0.0001 by unpaired t-test analysis.
+
+**Table 1.**
+ Enzyme kinetics of APT1WT and APT1S209D.Table of initial velocities (V0) of APT1WT and APT1S209D. Values were determined by incubating purified APT1WT and APT1S209D with increasing concentrations of DPP-3 substrates and measuring fluorescence for 240 s. The initial velocity of the reactions for APT1WT and APT1S209D activity was calculated by fitting the linear regression of the fluorescence vs. time. Results are averaged from six independent experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Fluoresence/Time (V0)</th>
+    </tr>
+    <tr>
+      <th>Substrate</th>
+      <th>APT1WT</th>
+      <th>APT1SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.25μM</td>
+      <td>0.2012 ± 0.008627</td>
+      <td>0.4704 ± 0.01765</td>
+    </tr>
+    <tr>
+      <td>0.5 µM</td>
+      <td>0.2316 ± 0.02656</td>
+      <td>0.8083 ± 0.03173</td>
+    </tr>
+    <tr>
+      <td>1.0 µM</td>
+      <td>0.5496 ± 0.01478</td>
+      <td>1.612 ± 0.04416</td>
+    </tr>
+    <tr>
+      <td>5.0 µM</td>
+      <td>0.6573 ± 0.03547</td>
+      <td>4.627 ± 0.2237</td>
+    </tr>
+  </tbody>
+</table>
 
 To determine the effect of Wnt5a stimulation on APT1 depalmitoylating activity, WM239A cells were incubated with DPP-3 and fluorescence emission was measured at 15, 30, and 45 min post Wnt5a treatment by live-cell microscopy (Figure 2—figure supplement 1A). We quantified fluorescence emission in individual cells and determined that Wnt5a stimulation significantly increased the fluorescence emission compared to control buffer treated cells, indicating an increase in endogenous APT1 activity (Figure 2D). To confirm the increase in fluorescence emission in response to Wnt5a was through APT1, we immunoprecipitated APT1 from WM239A APT1WT cells stimulated with purified Wnt5a or untreated control cells, and measured depalmitoylating activity in vitro using DPP-3. APT1 isolated from Wnt5a stimulated cells showed an increase in depalmitoylating activity compared to untreated control (Figure 2—figure supplement 1B). While the non-canonical Wnt ligand Wnt5a is sufficient to increase APT1 activity we found stimulation with the canonical Wnt ligand, Wnt3a, was unable to increase APT1 activity compared to Wnt5a and was similar to cells treated with control buffer (Figure 2E). We confirmed these cells are competent to respond to the Wnt3a concentration used because we observe stabilization of β-catenin beginning at 75 ng/ml of Wnt3a (Figure 2—figure supplement 1C). Therefore, the ability to increase APT1 activity appears to be specific to the non-canonical Wnt pathway.
 
@@ -58,7 +106,7 @@ To directly assess how the phosphorylation state of APT1 affects depalmitoylatio
 
 We next asked if inhibiting protein phosphorylation pharmacologically was sufficient to block the Wnt5a mediated increase in APT1 activity. Because the identity of the kinase that phosphorylates APT1 is still unknown, we pre-treated WM239A cells expressing APT1WT with either the serine/threonine kinase ATP-competitive inhibitor BI-D1870 or the broad-spectrum kinase inhibitor staurosporine for 1 hr, incubated the cells with the DPP-3 probe, and measured fluorescence over time by live-cell microscopy during treatment with Wnt5a or control buffer. Treatment with either protein kinase inhibitors inhibited the Wnt5a mediated increase in APT1 activity to levels comparable to unstimulated cells (Figure 2G). These results suggest that phosphorylation of APT1 is a main driver of increased APT1 activity in response to Wnt5a.
 
-## Expression of APT1S209Ddecreases levels of a palmitoylated protein substrate
+### Expression of APT1S209Ddecreases levels of a palmitoylated protein substrate
 
 We next asked if we could observe a similar phosphorylation dependent increase in depalmitoylating activity by measuring palmitoylation of a protein substrate in cells. The extent of protein palmitoylation is the result of an equilibrium between palmitoylation and depalmitoylation of substrates. To determine the immediate effect of expressing the phospho-mutant forms of APT1 on protein palmitoylation before the cell adapts and reaches a new steady state, we generated an inducible expression system to measure the effects of acute expression of APT1WT and the APT1 phosphorylation mutants on a specific depalmitoylation substrate. We chose MCAM (melanoma cell adhesion molecule), a known substrate of APT1 that is depalmitoylated in response to Wnt5a stimulation, to investigate the contribution of APT1 phosphorylation on protein depalmitoylation (Wang et al., 2015). HEK 293T cells were co-transfected with a MCAM-GFP plasmid and a doxycycline inducible plasmid containing FLAG-tagged APT1WT, APT1SA, or APT1S209D. Cells expressing APT1WT or mutants were induced with doxycycline for 15 hr. We found cells produced similar amounts of wild type and mutant APT1 protein (Figure 3A). The abundance of palmitoylated MCAM in each condition was then measured using the acyl biotin exchange assay (ABE). As a negative control, samples are processed without hydroxylamine (-HAM) leaving the palmitoylated cysteines intact and preventing biotin labeling. We found MCAM palmitoylation to be highest in APT1SA samples, indicating a decreased ability to depalmitoylate MCAM (Figure 3B). In contrast, the APT1S209D sample had the lowest level of palmitoylated MCAM, indicating the highest level of depalmitoylating activity. These results confirm the elevated depalmitoylating activity of APT1S209D we observe with the DPP-3 probe using a known palmitoylated protein in the cell. These data serve as evidence that the phosphorylation state of APT1 regulates depalmitoylation of endogenous substrates.
 
@@ -66,11 +114,11 @@ We next asked if we could observe a similar phosphorylation dependent increase i
 
 **Figure 3.:** (A) HEK 293T cells transfected with constitutively transcribed MCAM-GFP and doxycycline inducible APT1WT-FLAG (WT), APT1SA-FLAG (SA), or APT1S209D-FLAG (SD). After 15 hr of induction with 1 μg/ml doxycycline, APT1 protein expression was determined by immunoblotting with anti-GFP (MCAM-GFP) and anti-FLAG (APT1-FLAG) antibodies. (B) An acyl biotin exchange (ABE) assay was used to measure MCAM palmitoylation in cell lysates from cell lines described in (A). In the ABE assay addition of hydroxylamine (+HAM) removes palmitate from cysteine residues that are then conjugated to biotin-HPDP. Biotinylated proteins are then isolated on streptavidin beads and palmitoylated proteins are analyzed by SDS-PAGE followed by immunoblotting. Hydroxylamine is withheld as a negative control (-HAM) MCAM-GFP is detected with anti-GFP antibodies and APT1-FLAG is detected with anti-FLAG antibodies. Results shown are a representative trial from three independent experiments. (C) WM239A melanoma cells expressing APT1WT (WT), APT1SA (SA), or APT1S209D (SD) were grown on agarose to form spheroids that were embedded in collagen and images were taken on day seven and the distance invaded was measured. Representative images from day seven are shown. (D) Quantification of WM239A spheroid invasion assay in (C). Error bars indicate s.e.m., n = 14–34 spheroids counted per condition, ****p<0.0001 by unpaired t-test analysis. Results shown are from four experiments. (E) Quantification of WM239A spheroid invasion assay of APT1S209D (SD) treated with DSMO control or 10 μM ML348, every other day for 7 days and distance invaded measured at day 7. Error bars indicate s.e.m., n = 6 spheroids counted per condition, **p=0.0017 by unpaired t-test analysis. Results shown are a representative trial from three independent experiments.
 
-## APT1 phosphorylation increases metastatic behavior in melanoma cells
+### APT1 phosphorylation increases metastatic behavior in melanoma cells
 
 Previous studies demonstrated increased APT1 expression results in increased invasion of melanoma cells embedded in collagen (Wang et al., 2015). To determine if this increased metastatic behavior was due to APT1 phosphorylation, we asked if APT1’s phosphorylation state affects melanoma invasion using the APT1 phospho-mutants. Spheroids were formed from WM239A melanoma cells ectopically expressing CFP-FLAG-tagged APT1WT, APT1SA, or APT1S209D, embedded in collagen, and the distance invaded was measured. We found that expression of APT1SA resulted in decreased invasion, similar to the negative control CFP, while APT1S209D significantly increased melanoma invasion (Figure 3C and D). Since these melanoma cells are not Wnt5a treated, this dramatic increase in APT1S209D melanoma invasion is due to the single point mutation that mimics phosphorylation alone. When the activity of APT1 is inhibited with the selective inhibitor ML348, invasion is blocked, demonstrating the increased invasion observed in cells expressing APT1S209D is mediated by APT1 activity (Figure 3E). Together these results indicate phosphorylation of Ser209 increases depalmitoylating activity in cells, in turn increasing metastatic cell behavior.
 
-## Phosphorylation reduces APT1 dimerization
+### Phosphorylation reduces APT1 dimerization
 
 We next sought to determine how phosphorylation increases APT1 activity. We first asked if mutating the phospho-sites changed the thermostability of the protein using differential scanning fluorimetry of purified APT1WT, APT1SA, or APT1S209D mutants (Figure 4A). We found that each mutant possessed similar thermostability to that of APT1WT, indicating that the point mutations are not destabilizing the folding of the protein (Figure 4B). We next asked if the existing crystal structure might provide insight into the mechanism of APT1 activity.
 
@@ -80,9 +128,17 @@ We next sought to determine how phosphorylation increases APT1 activity. We firs
 
 Previous crystal structures of APT1 revealed a weak asymmetric dimer in which the active site was occluded by the dimer interface, suggestive of an inactive dimer (Devedjiev et al., 2000; Won et al., 2016). Our interrogation of the crystal structure revealed that the phosphorylation sites 209 and 210 reside in the interface of the dimer and could potentially destabilize the dimeric form and decrease the inhibitory dimeric interaction. We measured the distance between the serine residues to the methionine (Met 65) residue on the opposite dimer and found a short distance of less than 4 Å (Figure 4C). We therefore hypothesized that phosphorylation of one of these sites would be less favorable for dimer formation. Studies confirming the dimeric state of APT1 in solution are lacking. We therefore sought to distinguish the APT1 monomer from the dimer by size-exclusion chromatography. When APT1 was loaded on the column at a concentration of 0.1 mg/ml both APT1WT and APT1S209D eluted at the same time as a 29kD standard. When the protein concentration is increased to 0.25 mg/ml a second peak of APT1WT begins to resolve closer to the 44kD standard (Figure 4D). When the APT1WT protein concentration was increased to 0.375 mg/ml a second peak was resolved near the 44kD standard that was not observed with APT1S209D. Additionally, the peak at 29kD for APT1WT is abolished at this concentration (Figure 4D). The identity of the protein in the shifted peak was was confirmed as APT1 by visualizing the 25kD APT1 band by SDS-PAGE followed by Coomassie staining (Figure 4D). These results support the findings that APT1 dimerizes and phosphorylation of APT1 reduces dimerization.
 
-## Serine 210 is mutated in cancer and increases APT1 activity
+### Serine 210 is mutated in cancer and increases APT1 activity
 
 The APT1 gene is mutated in multiple tumor types, with the highest frequency of serine 210 mutated specifically to a leucine (Figure 5A) (Gao et al., 2013 and Cerami et al., 2012). To investigate if this mutation also increases APT1 activity, we mutated serine 210 to leucine of APT1 (APT1S210L) and measured its depalmitoylating activity by incubating purified protein with the DPP-3 probe. After measuring fluorescence over time, we observed an increase in depalmitoylating activity of APT1S210L compared to APT1WT. When we compare the depalmitoylating activity of APT1S210L to APT1S209D, we find that S210L exhibits an almost identical increase in activity to the phospho-mimetic APT1S209D (Figure 5B). We also observe similar inhibition of APT1 depalmitoylation by ML348 using the DPP-3 probe as a substrate for APT1S209D and APT1S210L (Figure 5—figure supplement 1A). These results demonstrate that the high activity of the APT1 phospho-mutants are still inhibited with ML348. To visualize how a S210L mutation would affect dimerization, we modeled the substitution on the three-dimensional crystal structure and determined a leucine at position 210 is located 5.5 Å from the methionine of the adjacent APT1 monomer (Figure 5C). With a neutral charge leucine positioned a small distance from the dimer interface, we propose steric hindrance disrupts the dimerization of APT1.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/34362/elife-34362-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of APT1 mutations from human tumor samples. Adapted from results generated using cBioPortal (Gao et al., 2013 and Cerami et al., 2012). (B) In vitro fluorescence assays of 5 μM of DPP-3 with either 50 nM purified APT1WT, APT1S210L APT1S209D, or catalytically inactive APT1S119A and fluorescence emission was measured (λex490/9 nm; λem545/20 nm). Error bars indicate s.e.m., n = 3 replicates per condition. Results shown are a representative trial from three independent experiments. (C) Three-dimensional model of crystal structure of APT1 dimer interface with Ser210 to Leu mutation. Ser210Leu (pink) is located 5.5 Å away from Met65 (blue) of the adjacent APT1 monomer. Catalytic triad Ser119, Asp174 and His208 are shown in cyan. (D) Quantification of WM239A CFP-FLAG (CFP), APT1WT-CFP-FLAG (WT), and APT1S210L-CFP-FLAG (S210L) spheroids embedded in collagen and distance invaded measured at day 8. Error bars indicate s.e.m., n = 8 spheroids per condition, *p=0.0150 by unpaired t-test analysis. Results shown are from three independent experiments. (E) Immunohistochemistry staining of melanoma tumors in a human melanoma tumor array using pS209-APT1 and APT1 antibodies. (F) Immunohistochemistry staining of metastatic tumor samples in a human melanoma tumor array using anti-pS209-APT1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/34362/elife-34362-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Quantification of fluorescence response of 5 μM DPP-3 treated with either 50 nM purified APT1 (APT1WT, APT1S209D, APT1S210L, or catalytically inactive APT1S119A) for 30 min each in the presence or absence of 50 µM ML348 (λex490/9 nm; λem545/20 nm). Error bars indicate s.d., n = 3 replicates per condition. Results shown are a representative trial from three experiments. (B) Representative images of APT1WT and APT1S210L collagen invasion assay in Figure 5D. Images are of spheroids on day 8 (D8). Scale bar = 500 µm. (C) Quantification of WM239A spheroid invasion assay of APT1S210L (SL) treated with DSMO control or 10 μM ML348 every other day for 7 days and distance invaded measured on day 7. Error bars indicate s.e.m., n = 5–6 spheroids per condition, ****p<0.0001 by unpaired t-test analysis. Results are from three independent experiments. (D) Immunohistochemistry staining of metastatic tumors in a human melanoma tumor array using anti-APT1 antibodies.
 
 We next asked if this mutation would also enhance the ability of APT1 to promote cell invasion, similar to what we observe in APT1S209D. To test the APT1S210L mutant’s effect on cell behavior, we generated spheroids from WM239A melanoma cell expressing CFP-FLAG-tagged APT1WT and APT1S210L, embedded them in collagen, and measured cell invasion each day over the course of 9 days. Expression of APT1S210L increased melanoma invasion when compared to APT1WT and negative control CFP (Figure 5D, Figure 5—figure supplement 1B). Similar to the phospho-mimetic APT1S209D, treating spheroids expressing APT1S210L with ML348 significantly reduces cell invasion (Figure 5—figure supplement 1C). These results demonstrate that APT1S210L increases metastatic behavior compared to wild type and this is dependent on the catalytic activity of APT1.
 
@@ -106,19 +162,19 @@ Here we show regulation of protein depalmitoylation by activation of the Wnt5a s
 
 ## Materials and methods
 
-## Plasmids
+### Plasmids
 
 The coding sequence of APT1 was amplified from pcDNA3.1-APT1-FLAG and inserted into the AgeI/SalI sites of the pRRLSIN.cPPT.PGK-GFP.WPRE backbone. The APT1 S119A, S209D S209,210A and S210L mutations in were made by using the QuikChange site-directed mutagenesis kit (Agilent Technologies, Stratagene, Santa Clara, California) according to the manufacturer's protocol. APT1 wild type, S209D, S209,210A mutants were cloned into the AgeI/MluI sites of the inducible TRIPZ vector (Dharmacon). For bacterial expression APT1 wild type and mutants were cloned into the BamHI/XhoI sites of the pET-28a (+) plasmid.
 
-## Purification of recombinant Wnt5a and treatments with Wnt5a and Wnt3a
+### Purification of recombinant Wnt5a and treatments with Wnt5a and Wnt3a
 
 Wnt5a was purified from mouse L-cells overexpressing human Wnt5a as described previously (Willert et al., 2003). Control cells were treated with control buffer with identical detergent conditions as the Wnt5a purification buffer. For experiments utilizing Wnt3a treatment, cells were treated with recombinant Wnt3a (R and D Systems, Minneapolis, MN) for 1 hr at 37°C before lysate was harvested as described.
 
-## Cell lines and culture conditions
+### Cell lines and culture conditions
 
 Metastatic melanoma cell line WM239A (BRAF V600D) (Wistar Institute) were cultured in RPMI 1640 medium (Gibco-BRL, Grand Island, NY) supplemented with 10% fetal bovine serum (FBS) (GE Life Sciences). Cell lines were authenticated routinely by short tandem repeat profiling by the Wistar Institute prior to use.
 
-## Mass spectrometry analysis of APT1 phosphorylation sites
+### Mass spectrometry analysis of APT1 phosphorylation sites
 
 All chemicals used for preparation of mass spectrometry samples were of at least sequencing grade and purchased from Sigma-Aldrich (St Louis, MO), unless otherwise stated. The 1% TritonX-100 detergent was removed from samples prior MS analysis by precipitation using chloroform (CHCl3)-methanol (MeOH) precipitation [Wessel et al.]. The protein pellet from CHCl3-MeOH precipitation was resuspended in 6 M urea/2 M thiourea in 50 mM ammonium bicarbonate, pH 8.3 supplemented with Phosphatase and Protease Inhibitors Mix (Thermo Fisher Scientific, Waltham, MA). Samples were reduced with 10 mM DTT for 1 hr at room temperature and the carbamidomethylated with 20 mM iodoacetamide (IAA) for 30 min at room temperature in the dark. After alkylation proteins were digested first with endopeptidase Lys-C (Wako, Cambridge, MA; MS grade) for 3 hr, after which the solution was diluted 10 times with 20 mM ammonium bicarbonate, pH 8.3. Subsequently, samples were digested with trypsin (Promega, Madison, WI) at an enzyme to substrate ratio of approximately 1:50 for 12 hr at room temperature. After digestion, the samples were concentrated to the volume of ∼100 μl by lyophilization. Phosphopeptide enrichment using titanium dioxide (TiO2) chromatographic resin was performed as previously described [Thingholm et al., Enghold et al.]. The lyophilized phosphorylated peptide samples were reconstituted in 0.1% trifluoroacetic acid (TFA) and desalted using Poros Oligo R3 RP (PerSeptive Biosystems, Framingham, MA) P200 columns. The peptide samples were subsequently lyophilized and stored at −80°C for further analysis.
 
@@ -126,56 +182,56 @@ Dried samples were resuspended in buffer-A (0.1% formic acid) and loaded onto an
 
 Raw MS-files were analyzed using Proteome Discoverer (v2.1, Thermo Scientific, Bremen, Germany). MS/MS spectra were converted to mgf files and searched against the UniProt-Human LYPLA1 (APT1) database (version June 2017) using SequestHT. Database searching was performed with the following parameters: precursor mass tolerance 10 ppm; MS/MS mass tolerance 0.6 Da; enzyme trypsin (Promega), with two missed cleavages allowed; fixed modification was cysteine carbamidomethylation; variable modifications were methionine oxidation, serine/threonine/tyrosine phosphorylation, asparagine and glutamine deamidation. Peptides were filtered for <1% false discovery rate, Sequest ion score >0.9. All MS-APT1 raw files have been deposited in the CHORUS database (maintained by the CHORUS project; https://chorusproject.org/) under project number 1456 (https://chorusproject.org/pages/dashboard.html#/projects/all?q=1456). Access to the data requires creating a free-account.
 
-## Structural modeling
+### Structural modeling
 
 Modeling of catalytic triad (serine 119, aspartate 174, and histidine 208) and serine residues 209 and 210 identified to be phosphorylated by MS analysis was performed in MacPyMOL with the three-dimensional co-crystal structure of human APT1 in complex with an isoform selective inhibitor, ML348 at 1.55 A° (PDB 5SYM). Modeling of the distance between the distance between the oxygen side chain of the serine residues 209 and 210 in monomer A and the thiol group of methionine 65 in monomer B was performed in MacPyMOL with the three-dimensional co-crystal structure of human APT1 in complex with an isoform selective inhibitor, ML348 at 1.55 A° (PDB 5SYM). Modeling of serine 210 to leucine mutation identified in several cancers and the distance between the leucine backbone in monomer A and the thiol group of methionine 65 in monomer B was performed in MacPyMOL with the three-dimensional co-crystal structure of human APT1 in complex with an isoform selective inhibitor, ML348 at 1.55 A° (PDB 5SYM).
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 WM239A cells ectopically expressing APT1-CFP-FLAG mutants were treated with control buffer or 150 ng/ml Wnt5a for specified time period and then lysed in lysis buffer containing 1% Triton-X 100, 50 mM Tris pH 7.5, 150 mM NaCl supplemented with protease and phosphatase inhibitors (1 μg/ml leupeptin, 1 μg/ml aprotinin, 2 μg/ml pepstatin A, 1 mM PPi, 2 nM NaVO4, 150 mM NaF). Insoluble cell debris was removed by centrifugation (13,000 RPM for 10 min at 4°C. Lysate was incubated with FLAG M2 magnetic beads (Sigma-Aldrich, St. Louis, MO) for 1.5 hr. Beads were washed with lysis buffer and protein was eluted using FLAG peptide for 1 hr at room temperature. Samples were separated by SDS-PAGE and transferred to either nitrocellulose membrane (Life Technologies, Thermo Fisher Scientific, Waltham, MA) for phospho-APT1 antibody (YenZym Antibodies, San Francisco, CA) or PVDF membrane (Millipore, Burlington, MA) for all other antibodies used.
 
-## Western blot analysis and antibodies
+### Western blot analysis and antibodies
 
 Cells were harvested and lysed in 1% Triton X-100, 50 mM Tris pH 7.5, 150 mM NaCl supplemented with protease and phosphatase inhibitors (1 μg/ml leupeptin, 1 μg/ml aprotinin, 2 μg/ml pepstatin A, 1 mM PPi, 2 nM NaVO4, 150 mM NaF). Insoluble cell debris was removed by centrifugation (13,000 RPM for 10 min at 4°C. The protein concentration was determined by DC Protein method (BioRad, Hercules, CA). Equal amounts of total protein were separated by SDS-PAGE and transferred to either nitrocellulose membrane (Life Technologies, Thermo Fisher Scientific, Waltham, MA) for phosphor-APT1 antibody or PVDF membrane (Millipore, Burlington, MA) for all other antibodies used. The nitrocellulose membranes were blocked with 5% bovine serum albumin (BSA) in TBST (TBS, 0.1% Tween). The PVDF membranes were blocked with 5% dry milk in TBST. All membranes were immunoblotted with different antibodies diluted in 5% BSA in TBST.
 
 The rabbit anti-human APT1 antibody (Abcam, Cambridge, MA) was used at 1:1000. The rabbit anti-human beta-actin (Cell Signaling Technologies, Danvers, MA) was used at 1:5000. The mouse anti-humam MCAM antibody (Santa Cruz Biotechnology, Dallas, TX) was used at 1:1000. The secondary antibodies were HRP-conjugated 1:10000 diluted in 5% BSA in TBST. Membranes were washed three times with TBST between the different steps.
 
-## Spheroid assay
+### Spheroid assay
 
 96-well plates were coated with 50 μl per well of sterile 1.5% noble agar and solidified at room temperature for 10 min. 200 μl of 2.5 × 104 cells/ml cell suspension was added to each well. Spheroids formed at 37°C and at 4% CO2 for 48 hr. Collagen matrices were prepared on ice using Pur Col purified bovine collagen (Advanced Biomatrix, Carlsbad, CA), Hyclone RPMI 1640 (5X) with sodium biocarbonate diluted to 1X in total volume and 10% FBS. Sterile NaOH was added to correct the collagen pH. 75 μl of collagen matrix was added to new wells and allowed to solidify at 37°C for 1 hr. Spheroids were resuspended in 125 μl of collagen matrix and transferred to wells containing 75 μl of collagen. After collagen solidified at 37°C, 100 μl of fresh medium was added on top of the collagen. Medium was changed every other day. Images were taken every 24 hr for 1–10 days. For the invasion assays including ML348 and LGK-974: 10 μM of ML348 (Sigma-Aldrich, St. Louis, MO) was added to fresh media on the spheroids and changed every other day.
 
-## Acyl biotin exchange assay
+### Acyl biotin exchange assay
 
 The ABE assay was performed as described (Wan et al., 2007).
 
-## Purification of APT1
+### Purification of APT1
 
 Wild type and APT1 mutants (FLAG tagged) were cloned into the pET-28 plasmid backbone. Bacteria were grown overnight at 37°C in the presence of 100 μg/ml ampicillin and 50 μg/ml chloramphenicol. Next, fresh LB or TB was inoculated with the overnight bacteria and grown for 4 hr at 37°C until OD600 = 0.6–1.0. Expression of APT1 was induced with final concentration of 1 mM IPTG for 2 hr at 37°C or overnight at 18°C. Cells were pelleted at 8000 RPM for 15 min at 4°C. Pellet was resuspended in 50 mM HEPES pH 8.0, 300 mM NaCl, 1% Triton X-100, 20 mM Imidazole (Sigma), 1 mM Phenylmethylsulfonyl fluoride (PMSF), 1 mM dithiothreitol or 25 mM HEPES pH 7.5, 500 mM NaCl, 10% glycerol, 1 mM PMSF, 10 mM 2-Mercaptoethanol, complete EDTA free protease inhibitor cocktail (Pierce). Lysate was sonicated at 50% duty cycle for 30 s pulses two times on ice or 50% duty cycle for 30 pulses on and 30 pulses off for 30 min at 4°C. Lysate was centrifuged at 12,000 RPM for 15 min at 4°C. Supernatant was incubated with Ni Sepharose 6 Fast Flow beads (GE Healthcare) at 4°C rocking for 3 hr or overnight. Beads were washed three times with wash buffer (50 mM HEPES pH 8.0, 300 mM NaCl, 40 mM Imidazole) or 500 mL of wash buffer (25 mM HEPES pH 7.5, 500 mM NaCl, 10% glycerol, 40 mM Imidazole, 10 mM 2-Mercaptoethanol). Protein was eluted using 50 mM HEPES pH 8.0, 300 mM NaCl, 250 mM Imidazole by rocking for 45 min at 4°C or 50 mL of 25 mM HEPES pH 7.5, 500 mM NaCl, 300 mM Imidazole, 10 mM 2-Mercaptoethanol at 4°C. For SEC experiments, 50 mL of eluted APT1 was dialyzed against 25 mM HEPES pH7.5, 150 mM NaCl, 10 mM 2-Mercaptoethanol overnight at 4°C. Dialyzed APT1 was concentrated using a Amicon Ultra-15 centrifugal filter unit to 500 μL and injected onto NGC Liquid Chromotography System (Bio-Rad) equipped with a Superdex 200 Increase 10/300 GL (GE) size-exclusion chromotography (SEC) equilibrated in 25 mM HEPES pH7.5, 150 mM NaCl, 10 mM 2-Mercaptoethanol. Fractions containing homogeneous APT1 were utilized for analytical SEC at various protein concentrations.
 
-## Fluorogenic palmitoyl thioesterase assays
+### Fluorogenic palmitoyl thioesterase assays
 
 APT1 was assayed for depalmitoylating activity as described previously (Kathayat et al., 2017).
 
-## Fluorogenic palmitoyl thioesterase assay from immunopurified APT1-CFP-FLAG
+### Fluorogenic palmitoyl thioesterase assay from immunopurified APT1-CFP-FLAG
 
 WM239A cells ectopically expressing APT1-CFP-FLAG mutants were treated with control buffer or 150 ng/ml of purified Wnt5a and lysed in lysis buffer containing 1% Triton-X 100, 50 mM Tris pH 7.5, 150 mM NaCl supplemented with protease and phosphatase inhibitors (1 μg/ml leupeptin, 1 μg/ml aprotinin, 2 μg/ml pepstatin A, 1 mM PPi, 2 nM NaVO4, 150 mM NaF). Insoluble cell debris was removed by centrifugation (13,000 RPM for 10 min at 4°C. Lysate was incubated with FLAG M2 magnetic beads (Sigma-Aldrich, St. Louis, MO) for 1.5 hr. Beads were washed with lysis buffer and fluorogenic palmitoyl thioesterase assay was performed as described previously (Kathayat et al., 2017).
 
-## Differential scanning fluorimetry
+### Differential scanning fluorimetry
 
 Differential scanning fluorimetry data were collected on a QuantStudio3TM Real-Time PCR Detection System (Applied Biosystems) at a APT1 protein concentration of 1.42 μM in either 50 mM HEPES pH 8.0 using SYPRO orange as described previously (Niesen et al., 2007). The melting temperature was calculated by fitting the normalized data curve to the Boltzmann sigmoid equation in Prism 6 (GraphPad) as described previously (Niesen et al., 2007).
 
-## Size-exclusion chromatography
+### Size-exclusion chromatography
 
 Homogenous APT1WT or APT1S209D at 0.1 mg/mL, 0.25 mg/mL, or 0.375 mg/mL were injected onto NGC Liquid Chromotography System (Bio-Rad) equipped with a Superdex 200 Increase 10/300 GL (GE) size-exclusion chromotography (SEC) equilibrated in 25 mM HEPES pH 7.5, 150 mM NaCl, 10 mM 2-Mercaptoethanol. Fractions corresponding to molecular weight standards between 44kD (Ovalbumin) and 29kD (Carbonic anhydrase) were evaluated by Coomassie Brilliant Blue (CBB).
 
-## Enzyme kinetics
+### Enzyme kinetics
 
 Purified APT1 protein (purification mentioned above) was incubated with increasing concentrations of DPP-3 substrate and fluorescence was measured over time to measure depalmitoylation (Kathayat et al., 2017). Initial velocities were calculated by fitting the linear regression of the fluorescence vs. time for APT1WT or APT1S209D at each DPP-3 substrate concentration.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Melanoma tumor arrays (US Biomax, Inc, ME1004b and ME1004e) were immunostained with primary antibody 1:50 anti-pS209APT1 and 1:200 anti-APT1. Staining procedure was performed as described in Walter et al. (2017). Images were obtained using 20X objective.
 
-## Statistics
+### Statistics
 
 * denotes a P-value between 0.0150–0.0205, ** denotes a P-value of 0.0017 and **** denotes a P-value of less than 0.0001 in an unpaired, two-tailed Students t-test, assuming normal distribution and equal variance. Each experiment was performed at least three times.

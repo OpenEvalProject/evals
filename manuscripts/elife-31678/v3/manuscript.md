@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.31678.001 Hedgehog ligands activate an evolutionarily conserved signaling pathway that provides instructional cues during tissue morphogenesis, and when corrupted, contributes to developmental disorders and cancer. The transmembrane protein Dispatched is an essential component of the machinery that deploys Hedgehog family ligands from producing cells, and is absolutely required for signaling to long-range targets. Despite this crucial role, regulatory mechanisms controlling Dispatched activity remain largely undefined. Herein, we reveal vertebrate Dispatched is activated by proprotein convertase-mediated cleavage at a conserved processing site in its first extracellular loop. Dispatched processing occurs at the cell surface to instruct its membrane re-localization in polarized epithelial cells. Cleavage site mutation alters Dispatched membrane trafficking and reduces ligand release, leading to compromised pathway activity in vivo. As such, convertase-mediated cleavage is required for Dispatched maturation and functional competency in Hedgehog ligand-producing cells.
+Hedgehog ligands activate an evolutionarily conserved signaling pathway that provides instructional cues during tissue morphogenesis, and when corrupted, contributes to developmental disorders and cancer. The transmembrane protein Dispatched is an essential component of the machinery that deploys Hedgehog family ligands from producing cells, and is absolutely required for signaling to long-range targets. Despite this crucial role, regulatory mechanisms controlling Dispatched activity remain largely undefined. Herein, we reveal vertebrate Dispatched is activated by proprotein convertase-mediated cleavage at a conserved processing site in its first extracellular loop. Dispatched processing occurs at the cell surface to instruct its membrane re-localization in polarized epithelial cells. Cleavage site mutation alters Dispatched membrane trafficking and reduces ligand release, leading to compromised pathway activity in vivo. As such, convertase-mediated cleavage is required for Dispatched maturation and functional competency in Hedgehog ligand-producing cells.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ To begin biochemical and cell biological analysis of Disp regulation, we generat
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/31678/elife-31678-fig1-v3.jpg)
 
-**Figure 1.:** (A) Lysates prepared from vector control and DispHA-expressing NIH3T3 cells were analyzed by SDS-PAGE and western blot against the HA tag. (B) Lysates from DispHA-expressing NIH3T3 cells were treated with Endo H or PNGase F enzymes. The arrowhead marks deglycosylated Disp175 and the arrow marks deglycosylated Disp145. (C) V5DispHA was expressed in NIH3T3 cells and cell lysates analyzed by western blot. (D) Lysates were prepared from DispHA-expressing NIH3T3 cells treated with biotin-containing culture medium for 30 min at 4°C prior to lysis. Lysates were incubated with streptavidin beads and bound (surface) and unbound (intracellular) DispHA proteins were analyzed by western blot. Combined densitometry analysis of four independent labeling experiments is shown. Densitometry is presented as percentage of the sum total of Disp175 or Disp30 signals across the two fractions. Significance was determined using a paired Student’s t-test. For all statistical analyses *p≤0.05 and ***p≤0.005. Error bars indicate standard deviation (s.d.). For all western blots Kinesin or Tubulin serve as loading controls.10.7554/eLife.31678.004Figure 1—source data 1.Figure 1D.
+**Figure 1.:** (A) Lysates prepared from vector control and DispHA-expressing NIH3T3 cells were analyzed by SDS-PAGE and western blot against the HA tag. (B) Lysates from DispHA-expressing NIH3T3 cells were treated with Endo H or PNGase F enzymes. The arrowhead marks deglycosylated Disp175 and the arrow marks deglycosylated Disp145. (C) V5DispHA was expressed in NIH3T3 cells and cell lysates analyzed by western blot. (D) Lysates were prepared from DispHA-expressing NIH3T3 cells treated with biotin-containing culture medium for 30 min at 4°C prior to lysis. Lysates were incubated with streptavidin beads and bound (surface) and unbound (intracellular) DispHA proteins were analyzed by western blot. Combined densitometry analysis of four independent labeling experiments is shown. Densitometry is presented as percentage of the sum total of Disp175 or Disp30 signals across the two fractions. Significance was determined using a paired Student’s t-test. For all statistical analyses *p≤0.05 and ***p≤0.005. Error bars indicate standard deviation (s.d.). For all western blots Kinesin or Tubulin serve as loading controls.
 
 The observation that the Disp145 fraction was highly enriched for EndoH-resistant glycosylation, suggested Disp175 might be cleaved to generate a truncated protein after ER exit. To test this, a V5 epitope tag was inserted in the amino-terminal region of the predicted EC1, as determined using TMPred and HMMTOP 2.0 secondary structure prediction tools (Figures 1C and 2B). The V5 insertion site was chosen based upon the apparent molecular weight difference of the two DispHA protein species. Double tagged V5DispHA was expressed in NIH3T3 cells, and cell lysates were assessed by western blot. Disp175 was detected by both HA and V5 antisera (Figure 1C). Conversely, Disp145 was detected only by HA, suggesting loss of the V5 epitope from the Disp145 species. Accordingly, a ~ 30 kDa fragment was detected by V5 antisera, confirming that Disp protein is clipped to produce Disp145.
 
@@ -51,6 +51,14 @@ We next sought to identify the exact cleavage site in EC1. To do so Disp-Flag wa
 
 To confirm a proprotein convertase was responsible for Disp processing, DispHA-expressing NIH3T3 cells were treated with cell-permeable Furin Inhibitor I, which blocks activity of convertase family members Furin, PCSK1, PCSK2, PACE4, PCSK5 and PCSK7. Treatment with increasing concentrations of drug dose-dependently reduced Disp145 levels (Figure 3A, and green in bottom panel). Despite this, steady state levels of the Disp175 precursor species did not increase (magenta). Instead, as was observed following mutation of the cleavage site (Figure 2C), chemical inhibition of Furin family proteases triggered accumulation of the ~250 kDa fraction (Figure 3A, bracket, and bottom panel, black). Conversion of Disp175 to this larger species likely accounts for the lack of Disp175 accumulation following cleavage inhibition.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/31678/elife-31678-fig3-v3.jpg)
+
+**Figure 3.:** (A) NIH3T3 cells expressing DispHA were treated with increasing concentrations of Furin Inhibitor I (10, 25, 50, 75 and 100 μM). The bracket indicates the 250 kDa fraction. Graph shows Disp densitometry analysis normalized to Kinesin for two independent experiments. Normalized signal intensity for each DispHA species in treated conditions is shown relative to vehicle control intensity, which was set to 1. (B) CRISPR/Cas9 generated knockout lines for Furin, PACE4, PCSK5 and PCSK7 were transfected with V5DispHA-expression vector, and formation of the ~30 kDa V5 cleavage fragment was monitored by western blot of cell lysates from Clonal line 1. Furin and PCSK7 protein levels were examined by western blot. PACE4 and PCSK5 mutations were confirmed by deep sequencing as in Figure 3—figure supplement 1. (C) Lysates from cells co-expressing wild type or CS mutant V5DispHA and Furin-Myc proteins were examined for Disp cleavage by western blot for the V5 fragment. Co-expression of Furin-Myc reduced total Disp signal (top panel). Gain equalization of the V5 signal in Furin-Myc expressing cell lysates is shown for comparison. (D) Furin-Myc and V5DispHA were co-expressed in HEK293T cells and Furin-Myc was immunoprecipitated from lysates using anti-Myc. Input (left) and immunoprecipitates (right) are shown. (E) Wild type and CS mutant V5DispHA proteins were expressed in LoVo (lacking Furin) or HCT-15 (control) colon carcinoma cells and lysates were analyzed by western blot. Re-expression of Furin in LoVo cells rescued cleavage (lane 4 compared to 2). Kinesin and Tubulin are the loading controls for western blots.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31678/elife-31678-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Genotype of PC family knockout clones. Red arrows indicate the Cas9 cleavage site. sgRNA sequence (5’ to 3’) is shown for each targeted gene along with corresponding deletions (black dashes) and insertions (red letters) identified by deep sequencing of knockout clonal lines. Insertion/deletion sizes are indicated in parenthesis and resulting premature truncation amino acid is shown in red. (B) CRISPR/Cas9 generated knockout lines for Furin, PACE4, PCSK5 and PCSK7 were transfected with V5DispHA-expression vector, and formation of the ~30 kDa V5 cleavage fragment was monitored by western blot of cell lysates from Clonal line 2. Furin and PCSK7 protein levels were examined by western blot. Kinesin is loading control. PACE4 and PCSK5 were assessed by deep sequencing as in A.
+
 Furin inhibitor I sensitivity, combined with results suggesting cleavage occurs after Disp reaches the cell surface (Figure 1), indicated a dibasic amino acid-specific convertase such as Furin, PCSK5, PACE4 or PCSK7 (Seidah et al., 2013; Seidah and Prat, 2012). To identify the specific PC facilitating Disp cleavage, CRISPR/Cas9 technology was used to generate knockout MEF lines for each of these genes. V5DispHA was expressed in two independent clonal lines knocked out for each of these genes, and examined for cleavage by western blot for the 30 kDa V5 fragment (Figure 3B and Figure 3—figure supplement 1). Knockout of Furin, which targets substrates in the trans-Golgi, at the cell surface and in recycling endosomes (Seidah et al., 2013), blocked formation of V5Disp30. Knockout of PCSK5, PACE4 and PCSK7 did not, identifying Furin as the candidate convertase responsible for Disp cleavage. Accordingly, over-expression of epitope-tagged Furin-Myc with V5DispHA enhanced cleavage of the wild-type protein, and induced low-level cleavage of the CS mutant, suggesting that by increasing Furin protein levels compensatory and/or off-site cleavage can occur (Figure 3C–D). To test for Furin-Disp association, V5DispHA was co-expressed with Furin-Myc in HEK293T cells and anti-Myc immunoprecipitation experiments were performed (Figure 3D). Both wild-type and CS mutant V5DispHA proteins were detected in anti-Myc immunoprecipitates, consistent with an interaction occurring between Furin and Disp (right panel, lanes 5 and 7). V5DispHA was not collected by anti-Myc in the absence of Furin-Myc expression, confirming specificity of the immunoprecipitation (right panel, lanes 1–4).
 
 To further test for a specific requirement for Furin in facilitating Disp cleavage, V5DispHA was expressed in Furin-deficient colorectal adenocarcinoma-derived LoVo cells, and generation of the V5Disp30 cleavage fragment was assessed (Takahashi et al., 1993). When expressed in control HCT-15 colorectal cells, both 175 kDa and 30 kDa protein species were evident (Figure 3E, lane 1). Conversely, murine V5DispHA protein expressed in LoVo cells failed to produce V5Disp30, and instead migrated in a manner similar to the CS mutant (lanes 2–3). Cleavage disruption was specific to Furin loss because its re-expression in LoVo cells rescued V5Disp30 production (lane 4). Combined with the above, these results support that Disp is cleaved by Furin.
@@ -59,11 +67,19 @@ Proprotein convertases such as Furin typically act on inactive proproteins to re
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/31678/elife-31678-fig4-v3.jpg)
 
-**Figure 4.:** (A) Disp-/- cells stably transfected with Shh or empty vector control were transiently transfected with GFP or the indicated DispHA expression vectors, and then co-cultured with LightII reporter cells. Reporter activity normalized to tk-renilla and relative to GFP control (set to 1) is shown. Assays were performed four times in duplicate or triplicate and all data points pooled. Error bars represent s.d. Significance was determined by one-way ANOVA. p***≤0.005. (B) Disp-/- mouse embryonic fibroblasts were stably transfected with empty vector control (V) or vector encoding Shh. Wild type or CS mutant Disp proteins were transiently expressed in Disp-/- cells alone or with Scube2, and lysates and media were examined by SDS-PAGE and western blot. Equal protein amounts (25 µg) from TCA precipitates of conditioned media were analyzed. Kinesin serves as loading control for lysate. Coomassie stain of membrane is shown as loading control for conditioned media (bottom). The graph (right) represents densitometry analysis of Shh media signal intensity normalized to media coomassie stain. The experiment was repeated three times. A representative experiment is shown. (C) Furin-/- cells were transiently transfected with Shh alone or with V5DispHA expression vector, and tested for Shh release as in (B). The experiment was repeated twice for Furin-/- Clone 2 and once for Clone 1, and a representative blot for Furin-/- Clone 2 is shown. The graph (right) represents densitometry analysis of Shh media signal normalized to media coomassie stain, and plotted relative to lysate Shh signal normalized to Actin. Analysis of the representative Clone 2 western is black. Densitometry analysis of the corresponding Clone 1 release assay is shown in gray.10.7554/eLife.31678.010Figure 4—source data 1.Figure 4A.10.7554/eLife.31678.011Figure 4—source data 2.Figure 4B.10.7554/eLife.31678.012Figure 4—source data 3.Figure 4C.
+**Figure 4.:** (A) Disp-/- cells stably transfected with Shh or empty vector control were transiently transfected with GFP or the indicated DispHA expression vectors, and then co-cultured with LightII reporter cells. Reporter activity normalized to tk-renilla and relative to GFP control (set to 1) is shown. Assays were performed four times in duplicate or triplicate and all data points pooled. Error bars represent s.d. Significance was determined by one-way ANOVA. p***≤0.005. (B) Disp-/- mouse embryonic fibroblasts were stably transfected with empty vector control (V) or vector encoding Shh. Wild type or CS mutant Disp proteins were transiently expressed in Disp-/- cells alone or with Scube2, and lysates and media were examined by SDS-PAGE and western blot. Equal protein amounts (25 µg) from TCA precipitates of conditioned media were analyzed. Kinesin serves as loading control for lysate. Coomassie stain of membrane is shown as loading control for conditioned media (bottom). The graph (right) represents densitometry analysis of Shh media signal intensity normalized to media coomassie stain. The experiment was repeated three times. A representative experiment is shown. (C) Furin-/- cells were transiently transfected with Shh alone or with V5DispHA expression vector, and tested for Shh release as in (B). The experiment was repeated twice for Furin-/- Clone 2 and once for Clone 1, and a representative blot for Furin-/- Clone 2 is shown. The graph (right) represents densitometry analysis of Shh media signal normalized to media coomassie stain, and plotted relative to lysate Shh signal normalized to Actin. Analysis of the representative Clone 2 western is black. Densitometry analysis of the corresponding Clone 1 release assay is shown in gray.
 
 To directly test the ability of DispCS to deploy Shh, ligand release into culture media of Shh-expressing Disp-/- MEFs was examined. In vertebrates, Disp functions with the secreted glycoprotein Scube2 to promote ligand release (Creanga et al., 2012; Tukachinsky et al., 2012). Therefore, wild type or DispCSHA proteins were co-expressed with increasing Scube2-Flag in Shh-stable Disp-/- cells, and ligand accumulation in culture media was monitored by western blot and densitometry analysis of protein-normalized media samples (Figure 4B). In the absence of Scube2, Shh was not detected in culture media of GFP and Shh-expressing Disp-/- cells (Figure 4B, lane 2, media and light gray in densitometry analysis). Co-expression of Scube2-Flag was unable to bolster Shh release from GFP-transfected cells, despite efficient Scube2-Flag secretion from the Shh-stable Disp-/- cells (lanes 3–5, media and light gray). Low-level re-expression of wild-type DispHA in MEFs modestly increased Shh release into culture media over that of the GFP control (lane 7 compared to 2, media and dark gray in densitometry analysis). Consistent with Scube2 partnering with Disp to facilitate ligand extraction from the membrane, co-expression of increasing levels of Scube2-Flag with DispHA prompted a dose-dependent increase in Shh protein detectable in conditioned culture media (lanes 8–10 and dark gray). Conversely, cleavage-deficient DispCS failed to effectively promote Shh release into conditioned media when expressed alone or in combination with Scube2-Flag (Figure 4B, lanes 12–15 and black). Shh release was similarly affected by genetic elimination of Furin (Figure 4C). Whereas control MEFs released Shh into culture media, CRISPR/Cas9 generated Furin-/- MEF clones, which failed to effectively cleave V5DispHA, were compromised in their ability to release ligand (lanes 1–2 vs 3–4). Combined, these results support that Disp cleavage is necessary for Shh deployment.
 
 To assess whether cleavage site disruption would compromise Disp activity in vivo, we turned to the Drosophila system, which is a robust and genetically tractable model for Hh signal transduction (Jiang and Hui, 2008; Lee et al., 2016). We first confirmed processing of endogenous Drosophila Disp (dDisp) in cultured fly cells using a polyclonal antibody raised against predicted EC4 of dDisp (Figure 5A–A’). Wing imaginal disc-derived Clone 8 (Cl8) cells were treated with control or 5’dispUTR dsRNA to assess endogenous dDisp, or transfected with a dDispHA expression vector to assess over-expressed protein. The dDisp antibody detected two distinct bands, one migrating at the predicted molecular weight of ~150 kDa (dDisp150) and a second species with an approximate molecular weight of ~110 kDa (dDisp110). The intensity of both bands decreased following disp dsRNA treatment and increased with over-expression of epitope-tagged dDispHA (Figure 5A). However, the ratio of the fractions shifted from being approximately equal for the endogenous protein to the upper band being predominant when over-expressed (Figure 5A, lane 1 vs. 3). Similar to what was observed for mouse Disp, a ~ 30 kDa V5 fragment was released from double-tagged V5dDispHA expressed in Cl8 cells (Figure 5B). To test for processing of endogenous dDisp protein in vivo, dDisp was immunoprecipitated from wing imaginal disc lysate prepared from third instar larvae using the dDisp antisera (Figure 5A’). Both bands were evident at equal levels in anti-Disp immunoprecipitates, but not in IgG control immunoprecipitates, confirming that endogenous dDisp protein is processed in cultured fly cells and in vivo in wing imaginal discs.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31678/elife-31678-fig5-v3.jpg)
+
+**Figure 5.:** (A) Lysates from Drosophila Cl8 cells treated with control or disp dsRNA or transfected with pAc-dispHA were analyzed by western blot using anti-dDisp. Actin is the loading control. (A’) Endogenous dDisp150 and dDisp110 were specifically immunoprecipitated with anti-dDisp from wing imaginal disc lysate. (B) V5dDispHA was expressed in Cl8 cells and lysates were analyzed by western blot to confirm generation of the V5 fragment. Kinesin is the loading control. (C) Lysates were prepared from Cl8 cells expressing Δ206–238 (ΔCS) dDispHA protein and analyzed by western blot. Lysates were treated with Endo H or PNGase F. Kinesin is the loading control. (D–F) Wild type or ΔCS dDispHA proteins were expressed dorsally in wing imaginal discs using apterous-GAL4. Representative male wings are shown. (G–I) WT or ΔCS V5dDispHA proteins (magenta) were expressed with HhGFP (green) in salivary glands using SGS-GAL4. Maximum intensity projections of basolateral and basal optical sections of salivary glands are shown. Square in the GFP images indicates zoom area.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31678/elife-31678-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The top graphic shows the location of salivary glands in a third instar larvae. The lower graphic shows organization of epithelial cells within the salivary gland. (B) Sagittal sections of the salivary glands expressing wild type (top) or CS mutant (bottom) V5DispHA proteins (magenta) and Hh-GFP (green) are shown. (C) Optical slices from z-stack images are shown. Z-slices were imaged from the basal surface (top) into the salivary gland. The dashed square in A shows the approximate location where images were acquired.
 
 In addition to the dibasic convertase cleavage motif at 237/238 of the fly protein that aligns with the mouse cleavage site (Figure 2B), we identified additional consensus motifs at amino acids 209 and 218. Mutation of each of the three sites on their own did not block cleavage (not shown). We therefore engineered an in frame deletion to remove sequence encompassing all three putative cleavage sites (Δ206–238), and tested for processing of the ΔCS mutant in Cl8 cells. Deletion of the three putative cleavage sites ablated generation of dDisp110 (Figure 5C lane 4 compared to 1). Endo H and PNGase F sensitivity analysis revealed that like the mouse protein, dDisp110 of the wild type protein harbored complex N-linked glycans, indicative of post-ER localization (Figure 5C, lane 3). The dDispΔCS mutant showed both ER and post-ER fractions, indicating loss of cleavage did not result from ER retention (Figure 5C lanes 4–6).
 
@@ -75,7 +91,7 @@ Having established an evolutionarily conserved requirement for Disp processing f
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/31678/elife-31678-fig6-v3.jpg)
 
-**Figure 6.:** (A) Lysates from NIH3T3 cells expressing wild type or CS mutant Disp proteins were analyzed by native (upper) and denaturing (lower) gel electrophoresis and western blot. The predicted molecular weight of the Disp trimer is ~480 kDa. Tubulin is the loading control. (B) DispHA proteins were immunoprecipitated with anti-HA antibody from lysates of Disp-/- cells expressing Shh alone or with wild type or CS DispHA. Wild type and CS mutant DispHA proteins co-immunoprecipitate Shh (bottom). (C–D) Wild type and ΔCS V5dDispHA proteins were expressed in ovarian follicle cells using the C204-GAL4. F-actin marks apical membrane in follicle cells (blue). The dDisp amino-terminal region is indicated by V5 (magenta) and carboxyl domain by HA (green). (E) V5dDispHA or increasing amounts of the amino-terminal V5 fragment were expressed with Hh in ligand producing cells, and then co-cultured with Cl8 cells transfected with Hh-responsive ptcΔ136-luciferase reporter and actin-renilla control. Luciferase reporter activity in ligand receiving cells was measured, and is shown normalized to renilla and relative to the Hh response in reporter cells co-cultured with empty vector control transfected cells. The experiment was repeated three times in duplicate and all data pooled. Error bars indicate s. d. Significance was determined by a one-way ANOVA. (F–G) S2 cells expressing wild type or ΔCS V5dDispHA proteins were analyzed for colocalization (white) between HA (green) and endogenous Rab5 signals (magenta) by confocal microscopy. Serial z-sections are shown. Scale bar is 5 µm. Percent colocalization between HA and Rab5 signals was determine by Imaris image analysis software (H). Error bars indicate s. e. For all panels, **p≤0.01; ns, not significant.10.7554/eLife.31678.016Figure 6—source data 1.Figure 6E.
+**Figure 6.:** (A) Lysates from NIH3T3 cells expressing wild type or CS mutant Disp proteins were analyzed by native (upper) and denaturing (lower) gel electrophoresis and western blot. The predicted molecular weight of the Disp trimer is ~480 kDa. Tubulin is the loading control. (B) DispHA proteins were immunoprecipitated with anti-HA antibody from lysates of Disp-/- cells expressing Shh alone or with wild type or CS DispHA. Wild type and CS mutant DispHA proteins co-immunoprecipitate Shh (bottom). (C–D) Wild type and ΔCS V5dDispHA proteins were expressed in ovarian follicle cells using the C204-GAL4. F-actin marks apical membrane in follicle cells (blue). The dDisp amino-terminal region is indicated by V5 (magenta) and carboxyl domain by HA (green). (E) V5dDispHA or increasing amounts of the amino-terminal V5 fragment were expressed with Hh in ligand producing cells, and then co-cultured with Cl8 cells transfected with Hh-responsive ptcΔ136-luciferase reporter and actin-renilla control. Luciferase reporter activity in ligand receiving cells was measured, and is shown normalized to renilla and relative to the Hh response in reporter cells co-cultured with empty vector control transfected cells. The experiment was repeated three times in duplicate and all data pooled. Error bars indicate s. d. Significance was determined by a one-way ANOVA. (F–G) S2 cells expressing wild type or ΔCS V5dDispHA proteins were analyzed for colocalization (white) between HA (green) and endogenous Rab5 signals (magenta) by confocal microscopy. Serial z-sections are shown. Scale bar is 5 µm. Percent colocalization between HA and Rab5 signals was determine by Imaris image analysis software (H). Error bars indicate s. e. For all panels, **p≤0.01; ns, not significant.
 
 Having confirmed DispCS was not deficient in trimer formation, we next assessed its ability to bind Shh. Disp is thought to bind Shh through a sterol sensing domain (SSD)-mediated association with the carboxyl-terminal Shh cholesterol modification, which is subsequently transferred to Scube2 (Tukachinsky et al., 2012). Disp EC1, which contains the processing site, is situated directly adjacent to the SSD (Figure 2B). As such, Disp cleavage could potentially influence Shh association by governing SSD access. To test this, wild type and CS mutant V5DispHA proteins were co-expressed with Shh in Disp-/- cells, and the ability of Shh to co-immunoprecipitate with DispHA from cellular lysates was examined. Similar amounts of Shh co-immunoprecipitated on anti-HA beads with both WT and CS mutant DispHA proteins (Figure 6B, lanes 3 and 4). Shh-DispHA binding was specific because Shh failed to bind HA beads in the absence of DispHA (lane 2). These results suggest that Disp cleavage does not regulate ligand binding.
 
@@ -99,9 +115,502 @@ In vertebrates, genetic loss-of-function of proprotein convertases such as Furin
 
 ## Materials and methods
 
-## Experimental procedures
+### Experimental procedures
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Oregon-R</td>
+      <td>Bloomington Stock Center, Bloomington, IN</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>apterous-Gal4</td>
+      <td>Bloomington Stock Center</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>SGS-Gal4</td>
+      <td>Bloomington Stock Center</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-HhGFP</td>
+      <td>Hartman et al. (2013), 201(5) 741–57.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-dispWT</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-dispΔCS</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH3T3</td>
+      <td>ATCC, Manassas, VA</td>
+      <td>CRL-1658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-11268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Dispatched KO MEFs</td>
+      <td>Ma et al. (2002) 111(1): 63–75</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>LoVo</td>
+      <td>ATCC</td>
+      <td>CCL-229</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HCT-15</td>
+      <td>ATCC</td>
+      <td>CCL-225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Light II</td>
+      <td>ATCC</td>
+      <td>JHU-68</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>Cl8</td>
+      <td>DGRC, Bloomington, IN</td>
+      <td>stock # 151</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2</td>
+      <td>Thermo Fisher, Waltham, MA</td>
+      <td>R69007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Furin-/-</td>
+      <td>This paper</td>
+      <td>CRISPR/Cas9</td>
+      <td>C57BL/6 MEF cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Pcsk5-/-</td>
+      <td>This paper</td>
+      <td>CRISPR/Cas9</td>
+      <td>C57BL/6 MEF cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Pace4-/-</td>
+      <td>This paper</td>
+      <td>CRISPR/Cas9</td>
+      <td>C57BL/6 MEF cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Pcsk7-/-</td>
+      <td>This paper</td>
+      <td>CRISPR/Cas9</td>
+      <td>C57BL/6 MEF cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Kif5b</td>
+      <td>Abcam, Cambridge, MA</td>
+      <td>ab167429</td>
+      <td>1:5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-tubulin</td>
+      <td>Cell Signaling, Danvers, MA</td>
+      <td>3873</td>
+      <td>1:10000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myc Affinity gel</td>
+      <td>Sigma, St Louis, MO</td>
+      <td>E6654</td>
+      <td>25 ul slurry for IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA affinity gel</td>
+      <td>Sigma</td>
+      <td>E6779</td>
+      <td>25 ul slurry for IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Shh</td>
+      <td>Santa Cruz Biotechnolgy, Dallas, TX</td>
+      <td>sc-9024</td>
+      <td>1:2000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myc</td>
+      <td>Roche, Basal, Switzerland</td>
+      <td>11667149001</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Disp</td>
+      <td>This Study</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse HRP</td>
+      <td>Jackson Immuno, West Grove, PA</td>
+      <td>715-035-151</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit HRP</td>
+      <td>Jackson Immuno</td>
+      <td>711-035-152</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rat HRP</td>
+      <td>Jackson Immuno</td>
+      <td>112-035-175</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 488</td>
+      <td>Life technologies, Carlsbad, CA</td>
+      <td>A11029 (Mouse) A11034 (Rabbit) A11006(Rat)</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 555</td>
+      <td>Life technologies</td>
+      <td>A21424 (Mouse) A21429 (Rabbit) A21434(Rat)</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 633</td>
+      <td>Life technologies</td>
+      <td>A21236 (Mouse) A21245 (Rabbit) A21247(Rat)</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mouse IR800</td>
+      <td>LiCor, Lincoln, NE</td>
+      <td>92632212</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit IR800</td>
+      <td>LiCor</td>
+      <td>92632213</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rat IR800</td>
+      <td>LiCor</td>
+      <td>92632219</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Dispatched</td>
+      <td>This paper</td>
+      <td>RIKEN</td>
+      <td>http://dna.brc.riken.jp/</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCDNA3 Dispatched WT HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pCDNA3 from Invitrogen</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCDNA3 V5 Dispatched WT HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>V5 introduced following A106</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCDNA3 V5 Dispatched CS HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutate R279, E280 to alanine</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>MSCV Hygro Shh-FL</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MSCV Hygro from Clontech</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCDNA3-V5 DispTM4/TM10HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct(M. musculus)</td>
+      <td>pFLC-I-Scube2</td>
+      <td>SourceBioscience, Nottingham, UK</td>
+      <td>Clone E030016G24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct(M. musculus)</td>
+      <td>pCDNA3-Scube2 Flag</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pCMV6 - huFurin Myc DDK</td>
+      <td>This paper</td>
+      <td>Origene, RC204279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCDNA3 - Shh-FL</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gift from P. Beachy Lab</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Aequorea victoria)</td>
+      <td>pCDNA3 - GFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (D. melanogaster)</td>
+      <td>pFLC-I-disp cDNA</td>
+      <td>This paper</td>
+      <td>DGRC</td>
+      <td>Supported by NIH grant 2P40OD010949</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (D. melanogaster)</td>
+      <td>pAc-dispHA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cloned into pAc5.1 Vector with HA tag</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (D. melanogaster)</td>
+      <td>pAc-V5dispHA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>V5 introduced following V108</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (D. melanogaster)</td>
+      <td>pAc-disp Δ206–238 HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (D. melanogaster)</td>
+      <td>pUAS-aatB-V5dispWTHA</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (D. melanogaster)</td>
+      <td>pUAS-aatB-V5dispΔ206–238 HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (D. melanogaster)</td>
+      <td>pUAS-HhGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Photinus pyralis)</td>
+      <td>ptcΔ 136-luciferase</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Renilla reniformis)</td>
+      <td>pAc-renilla</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (D. melanogaster)</td>
+      <td>pAC-hh</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop CS4</td>
+      <td>Adobe, San Jose, CA</td>
+      <td></td>
+      <td>for making figures</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LAS X</td>
+      <td>Leica, Wetzlar, Germany</td>
+      <td></td>
+      <td>image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad, La Jolla, CA</td>
+      <td></td>
+      <td>for statistical analysys and graphs</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Huygens Professional software</td>
+      <td></td>
+      <td></td>
+      <td>for decovolution images</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quickchange II XL Kit</td>
+      <td>Agilent, Santa Clara, CA</td>
+      <td>200522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 2000</td>
+      <td>ThermoFisher Scientific</td>
+      <td>11668027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 3000</td>
+      <td>ThermoFisher Scientific</td>
+      <td>L3000008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FuGene HD</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PRE2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ECL Prime Western Blotting Detection Reagent</td>
+      <td>Fisher Scientific, Hampton, NH</td>
+      <td>RPN2232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual Luciferase Reporter Assay Kit</td>
+      <td>Promega, Madison, WI</td>
+      <td>PRE1960</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Furin I Inhibitor</td>
+      <td>Enzo Life Sciences, Farmingdale, NY</td>
+      <td>ALX-260–022 M005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG-132</td>
+      <td>EMD Chemicals Inc., St. Louis, MO</td>
+      <td>474790</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 NIH3T3 (CRL-1658), HEK293T (CRL-11268), LoVo (CCL-229), HCT-15 (CCL-225) and LightII (JHU-68) cells were obtained from ATCC, S2 cells from ThermoFisher (R690-07), and Cl8 cells (CME W1 Cl.8+) were obtained from DGRC. Disp-/- knockout MEFs were obtained from P. Beachy and A. Salic (Ma et al., 2002; Tukachinsky et al., 2012).
 
@@ -117,19 +626,19 @@ Drosophila disp was amplified from pFLC-I-disp cDNA (DGRC), and inserted in fram
 
 To generate antisera against Drosophila Disp, the coding region of the predicted fourth extracellular loop (amino acids: 694–959) was introduced into pET-28b in frame with a carboxyl terminal 6X His tag. Protein was expressed in BL-21 cells and affinity purified on nickel resin by standard methods. Antisera were produced in rabbits using the Covance custom antibody service.
 
-## Cell transfection
+### Cell transfection
 
 For insect cell transfections, approximately 3 × 106 Clone 8 (Cl8) cells were plated in M3 insect media (Sigma) plus 10% fetal bovine serum (FBS) and 2% fly extract in 60 mm dishes the day before transfection. The following morning, cells were transfected with 2 μg of pAc5.1 expression vectors for Disp or Hh proteins using Lipofectamine 2000 (Invitrogen). DNA content was normalized with empty pAc5.1 vector.
 
 For mammalian cell transfection, HEK293T, NIH3T3, LoVo, HCT-15, Furin-/- or Disp-/- cells were seeded at a density of 1 × 106 cells/60 mm dish in DMEM plus 10% bovine calf serum or DMEM plus 10% FBS form MEFs. Empty pCDNA3 (2 μg), pCDNA3-DispHA (2 µg), pCMV6-huFurin (1 μg, Origene), pCDNA3-Shh (1 μg) and/or pCDNA3-GFP (1 μg) constructs were transfected into NIH3T3, LoVo, HCT-15, Furin-/- or Disp-/- cells using Lipofectamine 2000 or 3000 (Invitrogen).
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 For immunofluorescence analysis of Drosophila ovaries, tissue was dissected from 2 to 3 day old C204 >V5 dispHA (WT or ΔCS) females using standard methods. Samples were imaged on a Leica TCS SP8 confocal microscope with a 1.4NA 63X objective and 0.7 AU pinhole using spatial sampling matching nyquest criteria. Images were deconvolved using Huygens Professional software (theoretical PSF, Classic Maximum Likelihood Estimation (CMLE) algorithm, with five iterations, max) and processed using LAS X and Adobe Photoshop CS4. V5 and HA epitope tags were detected using Anti-V5 (1:500; Life Technologies) along with AlexaFluor 488 (1:1000; Life Technologies) and anti-HA (1:250; Roche) along with AlexaFluor 555 (1:1000; Life Technologies) respectively. Rab5 was detected using anti-Rab5 (1:100, Abcam) and AlexaFluor secondary antibody (1:1000, Life Technologies). Phalloidin conjugated with AlexaFluor 633 (1:100; Life Technologies) was used to mark F-actin.
 
 For Rab5 colocalization analysis, confocal images were acquired in z-stacks (3–5 slices with a slice interval of 0.25 µm) using a Zeiss LSM780 microscope. Colocalization analysis was done using Imaris image analysis software. The ‘Spots’ function was used to define HA and Rab5 puncta on all slices of each cell. The ‘Colocalize Spots’ function was used to identify the number of HA spots colocalized with Rab5 spots, using preset Imaris parameters. Fifty V5dDispHA-expressing cells per condition were selected at random, and analyzed over three independent experiments to determine percent signal colocalization. Significance was determined using Student’s t-test.
 
-## Functional assays, cell lysis and western blots
+### Functional assays, cell lysis and western blots
 
 For dDisp expression analyses in insect cells, membrane fractions were isolated from Cl8 cells in modified HK Buffer (HK Buffer (20 mM Hepes, 10 mM KCl; pH 7.9)+5% Glycerol+150 mM NaCl) as described (Ogden et al., 2003).
 
@@ -143,30 +652,30 @@ For murine co-culture reporter assays, Disp-/- cells stabling expressing MSCV-Hy
 
 For insect cell reporter assays, Cl8 cells were plated in 60 mm culture dishes the day before transfection and grown to ~70% confluency and transfected using Lipofectamine 2000. Twenty-four hours post-transfection, reporter cells transfected with ptcΔ136-luciferase (600 ng) reporter construct and pAc-renilla (60 ng) normalization control were combined in a 1:3 ratio with ligand-producing cells transfected with pAc-hh (1 μg) and wild type or V5 fragment pAc-disp (1X = 500 ng) in 12-well culture dishes. Cells were co-cultured for ~48 hr and processed using the Dual Luciferase kit (Promega).
 
-## Shh and Furin immunoprecipitation
+### Shh and Furin immunoprecipitation
 
 Proteins of interest were expressed in NIH3T3 or HEK293T cells. Cell lysates were prepared ~48 hr post-transfection using RIPA lysis buffer (Millipore, Burlington, MA). Co-immunoprecipitation assays were performed as described (Marada et al., 2015) with the following modifications. EZview Red Anti-HA Affinity Gel (Sigma) and EZview Red Anti-c-Myc Affinity Gel (Sigma) were used to immunoprecipitate HA and Myc epitope-tagged proteins respectively. Immunoprecipitates were analyzed by western blot using the following antibodies: Anti-HA (1:2000, Roche), anti-Shh (1:2000, SCBT), anti-Kin/mKif5B (1:10,000, Cell Signaling), anti-Myc (1:1000, Roche), anti-Flag (1:2000, Sigma), anti-Furin (1:1000, SCBT) and anti-Tub (1:10,000, Cell Signaling).
 
-## Drosophila Disp immunoprecipitation from wing discs
+### Drosophila Disp immunoprecipitation from wing discs
 
 Wing imaginal discs from six to eight wild type (Oregon R) third instar larva were homogenized in RIPA lysis buffer (0.05M Tris-HCl, pH 7.4, 0.15M NaCl, 0.25% deoxycholic acid, 1% NP-40, 1 mM EDTA and 0.1% SDS). Lysates were centrifuged for 10 min at 2000 x g and supernatant was precleared with 30 μL of a 50% A/G plus agarose slurry for 30 min. Supernatants were incubated with 10 μg anti-Disp antibody or rabbit IgG for 2 hr with gentle rocking at 4°C. Immune complexes were collected on 30 μL of A/G bead slurry for 60 min at 4°C. Beads were washed twice in lysis buffer and associated proteins were eluted by boiling for 5 min in 2x sample buffer (2% w/v SDS, 2 mM DTT, 4% v/v glycerol, 0.04 M Tris-HCL, pH 6.8% and 0.01% w/v Bromphenol blue) and analyzed by SDS-PAGE and western blot.
 
-## Deglycosylation analysis and cell surface biotinylation
+### Deglycosylation analysis and cell surface biotinylation
 
 Deglycosylation, biotinylation and densitometry analysis were preformed exactly as previously described (Marada et al., 2013, 2015).
 
-## Drug treatment
+### Drug treatment
 
 Transfected cells were treated with MG132 (50 μM), or Furin Inhibitor I (10, 25, 50, 75 and 100 mM) in serum-free DMEM for ~6 (MG132) or ~8 (Furin Inhibitor I) hours prior to cell lysis.
 
-## Native gel electrophoresis
+### Native gel electrophoresis
 
 NIH3T3 cells were transfected with pCDNA-DispHA, pCDNA-DispCSHA or empty vector control. Lysates were processed as previously described (Etheridge et al., 2010) with slight modifications. Approximately 48 hr post transfection cells were lysed for 30 min on ice in 1x NativePAGE sample buffer containing protease inhibitor cocktail (Roche) and 1% n-dodecyl-B-d-maltoside (DDM). Lysates were treated with Benzonase nuclease (Sigma) for 30 min at room temperature followed by centrifugation at 12,000xg for 30 min at 4°C. Supernatants were collected and run on a 4–20% NativePAGE Bis-Tris gel and transferred to PVDF membrane. A fraction of the lysates was run on a 7.5% Tris-HCl gel (BioRad) using denaturing settings and transferred to nitrocellulose membrane. Blots were probed using anti-HA antibody (Roche) and protein sizes were determined using NativeMark on native gels and Precision plus protein standard (Biorad) on denaturing gels. NativePAGE sample buffer, DDM, NativePAGE gels and NativeMark molecular weight standard were purchased from Life Technologies.
 
-## Edman sequencing sample preparation
+### Edman sequencing sample preparation
 
 HEK293T cells were seeded in thirty 100 mm plates at a density of 8 × 106 cells/plate in DMEM plus 10% Fetal Bovine Serum and transfected the following morning with 10 μg of pcDNA3-Disp-Flag per plate according to FuGene HD (Promega) instructions. Cells were incubated for an additional 48 hr prior to lysis in 1% Triton X-100 Buffer (50 mM Tris-HCl, pH 8.0, 150 mM NaCl, 1% Triton X-100, and 1X Protease Inhibitor Cocktail). Lysates were pooled and centrifuged at 14,000 x g at 4°C for 45 min. Supernatant was pre-cleared with 400 µl of 50% EZ View Red Protein A Affinity Gel (Sigma) for 1 hr at 4° C. Pre-cleared supernatant was transferred to a new tube and incubated with 400 µl of EZview Red ANTI-FLAG M2 Affinity Gel (Sigma) for 3 hr at 4° C. Beads were washed with 1% Triton X-100 Lysis Buffer with increasing amounts of NaCl (0.25M, 0.5M, 0.75M, and 0.150M) before eluting with 3x Flag Peptide (Sigma) according to instructions. Protein was TCA precipitated for 6 hr at 4°C before pelleting and resuspending in TCA Resuspension Buffer (2% w/v SDS, 0.42M Tris-HCl, pH 7.4, 4% v/v glycerol, 0.01% w/v Bromphenol Blue and 0.05M DTT). Samples were electrophoresed on a NuPage gel using NuPage MOPS running buffer (Invitrogen) then transferred to Immobilon-PSQ PVDF (Millipore) with NuPage Transfer Buffer without Methanol (Invitrogen). The PVDF membrane was stained with coomassie blue and allowed to air dry. The band of interest was excised and sent to Tufts University Core Facility (http://tucf.org/protein-f.html) for protein sequence identification.
 
-## Drosophila phenotypic analysis
+### Drosophila phenotypic analysis
 
 Wings from male apterous-GAL4;UAS-disp flies were mounted and imaged using a Zeiss ICc3 camera and processed using Adobe Photoshop. Multiple male and female progeny from at least two independent crosses were analyzed. Representative wings were imaged. For salivary gland analysis, salivary glands were dissected from SGS-GAL4; UAS-HhGFP, UAS-V5dispHA third instar larvae using standard methods and immunostained as described (Carroll et al., 2012). Disp was detected using anti-HA (1:2000) and AlexaFluor anti-mouse secondary (1:10,000, Thermofisher). Multiple salivary glands from male and female larva were examined. A representative image is shown.

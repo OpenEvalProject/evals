@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.47929.001 Cardiac neural crest cells contribute to important portions of the cardiovascular system including the aorticopulmonary septum and cardiac ganglion. Using replication incompetent avian retroviruses for precise high-resolution lineage analysis, we uncover a previously undescribed neural crest contribution to cardiomyocytes of the ventricles in Gallus gallus , supported by Wnt1-Cre lineage analysis in Mus musculus . To test the intriguing possibility that neural crest cells contribute to heart repair, we examined Danio rerio adult heart regeneration in the neural crest transgenic line, Tg(−4.9sox10:eGFP) . Whereas the adult heart has few sox10+ cells in the apex, sox10 and other neural crest regulatory network genes are upregulated in the regenerating myocardium after resection. The results suggest that neural crest cells contribute to many cardiovascular structures including cardiomyocytes across vertebrates and to the regenerating heart of teleost fish. Thus, understanding molecular mechanisms that control the normal development of the neural crest into cardiomyocytes and reactivation of the neural crest program upon regeneration may open potential therapeutic approaches to repair heart damage in amniotes.
+Cardiac neural crest cells contribute to important portions of the cardiovascular system including the aorticopulmonary septum and cardiac ganglion. Using replication incompetent avian retroviruses for precise high-resolution lineage analysis, we uncover a previously undescribed neural crest contribution to cardiomyocytes of the ventricles in Gallus gallus, supported by Wnt1-Cre lineage analysis in Mus musculus. To test the intriguing possibility that neural crest cells contribute to heart repair, we examined Danio rerio adult heart regeneration in the neural crest transgenic line, Tg(−4.9sox10:eGFP). Whereas the adult heart has few sox10+ cells in the apex, sox10 and other neural crest regulatory network genes are upregulated in the regenerating myocardium after resection. The results suggest that neural crest cells contribute to many cardiovascular structures including cardiomyocytes across vertebrates and to the regenerating heart of teleost fish. Thus, understanding molecular mechanisms that control the normal development of the neural crest into cardiomyocytes and reactivation of the neural crest program upon regeneration may open potential therapeutic approaches to repair heart damage in amniotes.
 
 ## Introduction
 
@@ -29,29 +29,65 @@ The homologous cardiac neural crest contribution to cardiomyocytes across divers
 
 ## Results
 
-## Labeling the chick cardiac neural crest using Replication Incompetent Avian retrovirus
+### Labeling the chick cardiac neural crest using Replication Incompetent Avian retrovirus
 
 To specifically label cardiac neural crest cells prior to their emigration from the neural tube and identify novel progeny of chick cardiac crest, we use a replication-incompetent avian retrovirus (RIA) that indelibly and precisely marks neural crest progenitors for long term lineage analysis at single cell resolution and without the need for tissue grafting. To this end, the post-otic neural tube of the hindbrain adjacent to somites 1–3 was injected at Hamburger and Hamilton (HH) stage 9–10 with high-titer (1 × 107 ifu/mL) RIA (Figure 1A), which drives expression of nuclear localized H2B-YFP under control of a constitutive RSV promoter (Li et al., 2017; Tang et al., 2019; Fields-Berry et al., 1992; Chen et al., 1999; Hamburger and Hamilton, 1951). At this stage in the development, premigratory cardiac neural crest cells are positioned within the dorsal neural tube and about to emigrate. Accordingly, this labeling approach solely marks hindbrain neural tube cells including premigratory cardiac neural crest cells that subsequently delaminate from the dorsal neural tube during a two-hour time window when the virus remains active.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/47929/elife-47929-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram of the approach: Replication Incompetent Avian (RIA) retrovirus encoding nuclear H2B-YFP was injected into the lumen of the hindbrain from which cardiac neural crest arises. (B) One day post-infection (HH14), whole mount image (lateral view) showing virally labeled progeny (green) in the cardiac migration stream en route to pharyngeal arch 3. (B’) Brightfield image to show anatomical information. A, anterior; P, posterior; D, dorsal; V, ventral. (C) Two days post-infection (HH18), virally labeled cardiac crest has populated pharyngeal arches 3, 4 and 6, highlighted with dashed line. (D) Transverse section showing that labeled cardiac crest expresses neural crest marker HNK-1 (red). D, dorsal; V, ventral; L, left; R, right. (E) Low magnification transverse section of an E6 embryo (DAPI, blue). Dashed boxes show relative positions of cardiac crest-derived populations. (F–H) High magnification image of selected regions in E: pharyngeal arch arteries (F); aorticopulmonary septum (G); Neural crest derivatives located in the outflow tract express Troponin T (magenta), a myocardium marker (H, H’). (I) Temporal map of the establishment of distinct cardiac neural crest derivatives. Labeled cells initially are in the migration stream, cranial nerve IX (CN-IX) and mesenchyme around pharyngeal arch arteries (PAA). Subsequently, they populate the aorticopulmonary septum (APS), myocardium (MYO) and interventricular septum (IVS). Separate channels are displayed in Figure 1—figure supplement 1. Light blue indicates known neural crest derivatives. Dark blue reflects newly discovered neural crest derivatives. Scale bars: B, C, E 400 μm; D, F, G, H 100 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47929/elife-47929-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Separate channels of Figure 1D. All H2B-YFP labeled cells that migrate out of the neural tube are HNK1-positive cardiac neural crest cells (H2B-YFP, green; HNK1, red; DAPI, blue). (B) Separate channels of Figure 1H. H2B-YFP labeled cardiac neural crest is present in myocardium of the outflow tract (H2B-YFP, green; Troponin T, magenta; DAPI, blue).
+
 Virally infected embryos were then allowed to develop for 1–9 days post injection, cryo-sectioned, and analyzed using confocal microscopy. One day after injection, whole mount imaging revealed RIA-labeled cells migrating in a stream along pharyngeal arch 3 (Figure 1B,B’), that subsequently accumulated in pharyngeal arches 3, 4 and 6 two days after infection (Figure 1C). Next, we confirmed that all labeled cells in the periphery co-localized with the migratory neural crest marker, HNK-1, demonstrating that the neural crest is the only population labeled with H2B-YFP outside the neural tube, thus verifying specificity of infection (Figure 1D, Figure 1—figure supplement 1A). With time, labeled cardiac crest cells were observed in numerous and diverse derivatives, populating the cardiovascular system in a proximal to distal progression (Figure 1E–I, Supplementary file 1a). Consistent with quail-chick chimera, we observed RIA-labeled cells adjacent to and within the walls of pharyngeal arch arteries, in the aorticopulmonary septum, outflow tract, and cardiac cushion. Moreover, we definitively observed YFP-labeled cells in the superior interventricular septum, a site for which the neural crest contribution has been controversial, although ventricular septal defects are common after cardiac neural crest ablation (Kirby et al., 1985). The cells of the outflow tract septum and pharyngeal arch arteries differentiated into smooth muscle actin (SMA) positive cells on embryonic day (E) 5 (Figure 2A,B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/47929/elife-47929-fig2-v2.jpg)
+
+**Figure 2.:** (A, B) Retrovirally labeled cardiac crest cells (H2B-YFP, green) that migrate into the outflow tract (A, OFT) and pharyngeal arch arteries (B) express smooth muscle actin (SMA, magenta) marker. (C, D) Labeled cardiac crest cells that enter the ventricle express myocardial marker Troponin T (magenta) (C), and myocardial terminal differentiation marker Myosin Heavy Chain (MHC, magenta) (D) enclosed in dashed line. (E, F) Neural crest-derived cardiomyocytes are not actively dividing or undergoing apoptosis, as demonstrated by phosphohistone H3 staining (PH3, magenta) (E) and Caspase 3 staining (magenta) (F). Transverse view of E6 embryos. Separate channels are displayed in supplement 1. Scale bars: 100 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47929/elife-47929-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Separate channels of Figure 2C. H2B-YFP virus labeled cardiac neural crest is present in myocardium of the ventricle and expresses cardiomyocyte marker Troponin T (H2B-YFP, green; Troponin T, magenta; DAPI, blue; enclosed in dashed line). (B) Separate channels of Figure 2D. H2B-YFP virus labeled cardiac neural crest is present in myocardium of the ventricle and expresses cardiomyocyte terminal differentiation marker myosin heavy chain (MHC) (H2B-YFP, green; MHC, magenta; DAPI, blue; enclosed in dashed line).
 
 Importantly, by E3 and onward, virally labeled neural crest cells were observed in the myocardium of both the outflow tract and the ventricles, where they expressed the myocardial markers, Troponin T and Myosin Heavy Chain (Figure 1H, Figure 1—figure supplement 1B, outflow tract; Figure 2C,D, Figure 2—figure supplement 1A,B, ventricles). These neural crest-derived cardiomyocytes were not actively undergoing cell division or programmed cell death (Figure 2E,F), consistent with the stable presence of cells observed over time (Figure 1I, Supplementary file 1a,1b). Supplementary file 1a and 1b present quantification of contributions of virally labeled cells in the chick ventricular myocardium. While previous lineage tracing experiments in zebrafish showed that a stream of neural crest cells integrate into the myocardium of the primitive heart tube to give rise to cardiomyocytes, our results present the first evidence of a homologous neural crest contribution to cardiomyocytes in chick embryos (Sato and Yost, 2003; Li et al., 2003; Cavanaugh et al., 2015).
 
-## Lineage analysis in the mouse embryo
+### Lineage analysis in the mouse embryo
 
 To test whether the contribution of cardiac neural crest cells to the myocardium was conserved in mammals, we examined Wnt1-Cre;ZsGreenfl/fl transgenic mice in which neural crest cells were labeled with cytoplasmic GFP (Chai et al., 2000). Embryos were fixed at E15.5 (similar to E7 in chick). Analogous to the results in chick embryos, we observed a large number of ZsGreen-positive myocardial cells in the outflow tract and ventricles, as confirmed by Troponin T expression (Figure 3A–C). To avoid ectopic expression that has been associated with the Wnt1-Cre;ZsGreenfl/fl transgenic line due to endogenous Wnt1 activation caused by in-frame ATG located upstream of Wnt1 start codon, we tested an improved Wnt1 line (Wnt1-Cre2+; R26mTmG mouse line) without ectopic activation of canonical Wnt/β-catenin pathway (Lewis et al., 2013). The results were similar to those observed with the Wnt1-Cre;ZsGreenfl/fl transgenic mice (Figure 3D,E). As in the chick embryos, murine neural crest derived cells were present in the outflow tract, interventricular septum, and myocardium of both ventricles.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/47929/elife-47929-fig3-v2.jpg)
+
+**Figure 3.:** (A) Low magnification image to show the relative anatomical positions of a mouse heart at E15.5 (sagittal view, DAPI-blue). (B, C) In Wnt1-Cre; ZsGreenfl/fl mice, neural crest-derived cells (green, Wnt1-Cre driven ZsGreen expression is abbreviated as Wnt1-ZsGreen, enclosed in dashed line) were observed in myocardium (Troponin T, gray) of the outflow tract (B), and ventricle (VENT) (C, C’’: separate channels of inset C’). (D, E) Similar results were obtained from Wnt1-Cre2+; R26mTmG mice (Wnt1-Cre2+ driven replacement of membrane localized tdTomato (mT) by EGFP (mG) (abbreviated as Wnt1-mtmg), where cardiac crest-derived cells (green, enclosed in dashed line) were present in myocardium of the outflow tract (D) and ventricle (Troponin T, gray) (E, E’’: separate channels of inset E’). Transverse view. Spatial-temporal information and antibody staining are displayed in supplement 1. Scale bars: A 400 μm; B-E 100 μm; C’, E’ 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47929/elife-47929-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) In E15.5 Wnt1-Cre; Zsgreenfl/fl mouse heart, cardiac neural crest progenies were distributed in the outflow tract, valves and myocardium of both ventricles. Density of Zsgreen+ cells decreased along the proximal-to-distal axis, thus no cell contributed to the apex (Wnt1-Zsgreen, green; Troponin T, red; DAPI, blue). (B) Proliferation marker PH3 did not selectively colocalize with Zsgreen+ cells (PH3, magenta; B’, separate channels for colocalization). (C) Apoptosis marker Caspase3 was not selectively expressed in Zsgreen+ cells (Caspase 3, magenta; C’, separate channels for colocalization). (D) Cardiac neural crest did not contribute to apical myocardium in Wnt1-Cre; Zsgreenfl/fl mouse (Wnt1-Zsgreen, green; Troponin T, red; DAPI, blue), or (E) Wnt1-Cre; R26mtmg mouse (Wnt1-membrane GFP, green; membrane Tomato, red; DAPI, blue). (F–H) On postnatal day 2, cardiac neural crest progenies in Wnt1-ZsGreen mouse persisted in the myocardium of the ventricle (F). (separate channels in F’), outflow tract (G), but not the apex (H) (Wnt1-Zsgreen, green; Troponin T, red; DAPI, blue), similar to what was observed in E15.5 hearts. Scale bars: A 400 μm; B, C, F, G 100 μm; D, E, H 160 μm.
 
 The numbers of neural crest-derived cells appear to decrease with distance along the proximal-to-distal axis (Figure 3—figure supplement 1A), such that no neural crest-derived cardiomyocytes were observed in the apex of the heart (Figure 3—figure supplement 1D,E). As in the chick, the numbers of Wnt1+ cells remain stable with time, and the cells do not appear to undergo active cell division or apoptosis (Figure 3—figure supplement 1B,B’,C,C’). This contribution persists postnatally, as Wnt1+ cells are present at postnatal day 2 (Figure 3—figure supplement 1F–H). These results are consistent with previous studies using less specific P0-cre lines and demonstrate that comparable cardiac crest contributions occur in birds and mammals (Tomita et al., 2005; Tamura et al., 2011). Quantification of numbers of neural crest lineage labeled cells in the trabeculated myocardium of mice reveals that they represent approximately 17% of the population in the proximal half of the ventricle (Supplementary file 1a).
 
 The lineage contributions of neural crest-derived cells in chick and mouse are remarkably similar to those previously shown in zebrafish (Sato and Yost, 2003; Li et al., 2003; Cavanaugh et al., 2015). In all three species, neural crest cells contribute to cardiomyocytes of the trabecular myocardium. This homologous lineage contribution in both amniotes and anamniotes raised the intriguing possibility that neural crest cells may represent a cell population that could contribute to heart repair in adults.
 
-## Reactivation of neural crest gene regulatory genes during adult zebrafish heart regeneration
+### Reactivation of neural crest gene regulatory genes during adult zebrafish heart regeneration
 
 In adult birds and mammals, cardiac injury leads to scarring with little regeneration, whereas heart regeneration is common in amphibians and fish (González-Rosa et al., 2017). For example, adult zebrafish have the capacity to regenerate their hearts after removal of up to 20% of the ventricle. This has been shown to occur by dedifferentiation and proliferation of pre-existing cardiomyocytes (Poss et al., 2002; Jopling et al., 2010). Given that cardiac neural crest cells give rise to a portion of zebrafish cardiomyocytes during development (Sato and Yost, 2003; Li et al., 2003; Cavanaugh et al., 2015) similar to those we report here in chick and mouse, we next asked whether the progeny of these cells might have the ability to contribute to heart regeneration in adult zebrafish.
 
 To address this possibility, we first turned to a transgenic line expressing GFP under the control of a sox10 promoter, Tg(−4.9sox10:eGFP), that labels all embryonic migratory neural crest lineages to address whether neural crest-derived cardiomyocytes reactivated their developmental program upon injury (Carney et al., 2006).
 
 While sox10 is expressed in migrating zebrafish cardiac neural crest cells, it is down-regulated in the embryo shortly after these cells reach the heart (Cavanaugh et al., 2015). We confirmed this in adult hearts, finding that very few cells within the apex of the adult myocardium of control adult fish expressed sox10 one month post-sham injury, in which the body cavity was opened but no resection was made (Figure 4A, Supplementary file 1c, n = 3). However, after surgical removal of ~20% of the ventricular apex, cells in the heart reactivated the sox10 promotor sequence and began to re-express GFP in cardiomyocytes of the trabeculated myocardium near the injured site by 7 days post resection (dpa) (Figure 4A; n = 6). GFP expression was not limited to the regenerating tissue but was also observed in the uninjured part of the ventricle. By 21dpa, the hearts had undergone vast regeneration and morphologically were nearly indistinguishable from controls (Figure 4A; n = 6). Interestingly, consistent with our prediction, the regenerating apex was comprised of more sox10+ positive cells (Figure 4A,B, Supplementary file 1c), suggesting that these cells had proliferated and redeployed a neural crest gene regulatory program during the heart regeneration process.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/47929/elife-47929-fig4-v2.jpg)
+
+**Figure 4.:** (A) In sham-operated adult zebrafish hearts from a transgenic line expressing GFP under the control of a sox10 promoter, very few cells expressed Tg(−4.9sox10:eGFP) (green) (n = 3). 7 days-post amputation (dpa), the sox10 promoter was reactivated as shown by GFP+ cells in the trabeculated myocardium near the site of injury (Tg(−4.9sox10:eGFP), green) (n = 6). 21dpa, when the resected apex regenerated, more GFP+ cells were observed in sagittal sections within and surrounding the site of injury (n = 6). Sections in A are counterstained with DAPI in blue and Myosin Heavy Chain in red. (B) Endogenous sox10 mRNA expression was observed by paraffin section in situ hybridization in uninjured, 7dpa, and 21dpa hearts. Arrows denote cells with sox10 expression. From these results, we conclude that sox10 is reactivated after injury. (C) Along with sox10, expression of neural crest marker, tfap2a, was also enriched after injury. Arrows label areas of expression in the myocardium. (D) Differential gene expression analysis of FACS-sorted Tg(sox10:mRFP)+ and FACS-sorted Tg(sox10:mRFP)- transcriptomes show n = 1093 genes are enriched at 21dpa in the sox10+ cells compared to the rest of the ventricular tissue (n = 12 ventricles per replicate). Zebrafish neural crest genes as determined by GO analysis are highlighted on the volcano plot. (E) Upregulation of neural crest gene regulatory network genes was also observed from our differential expression analysis (**p<0.05, ***p<0.001). Co-localization of sox10 mRNA expression with Tg(sox10:GAL4-UAS-Cre;ubi:Switch)+ neural crest-derived cardiomyocytes is presented in supplement 1; schematic diagram of experimental design for obtaining the regenerating neural crest transcriptome and further analysis of gene enrichments is presented in supplement 2. Scale bars: 100 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47929/elife-47929-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** sox10 transcript in adult zebrafish regenerating hearts (7dpa are reactivated in cells labeled by neural crest lineage transgenic line, Tg(sox10:GAL4-UAS-Cre;ubi:Switch) that permanently marks all neural crest-derived cells with mCherry (red). mCherry+ neural crest-derived cardiomyocytes were located in both the compacted and trabeculated layers of the ventricle. While not all neural crest-derived cells expressed sox10 (1), sox10 transcripts were only present in mCherry positive cells (2). Scale bar: 100 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47929/elife-47929-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Experimental design for the transcriptome analysis of regenerating neural crest cells. 1.Hearts were resected and ventricles were collected and dissociated at 21dpa, 2. mRFP+ and mRFP- cells were collected by FAC-sorting (FACS plot shows gating of populations). (B) Panther classification of proteins encoded by upregulated genes in the sox10+ cells. (C) Bar plot showing enriched mitotic cell cycle genes. (D) Bar plot showing enriched transcription factors. (E) Heatmap of normalized counts for known genes implicated in heart regeneration.
 
 To test if sox10 and other bona fide neural crest markers such as tfap2a, were upregulated endogenously, we performed in situ hybridization on paraffin sections of regenerating and uninjured ventricles. The results reveal upregulation of expression of sox10 and tfap2a transcripts after injury, whereas they were mostly absent from uninjured ventricles (Figure 4B,C). Furthermore, we observed co-localization of sox10 transcripts with a Tg(sox10:GAL4-UAS-Cre;ubi-Switch), which permanently labels all sox10-derived lineages with mCherry (Figure 4—figure supplement 1, n = 2). The Tg(sox10:GAL4-UAS-Cre;ubi-Switch) is a double transgenic line for the sox10:GAL4-UAS-Cre transgene and the ubi:Switch reporter in which the sox10 promoter drives expression of Cre recombinase. Upon activation of sox10 expression in neural crest cells, eGFP is excised and so cells of the sox10 lineage are permanently labeled with mCherry (Cavanaugh et al., 2015). All cells expressing sox10+ transcripts also had mCherry, though not all mCherry positive cells were sox10+ at the 7 day time point (Figure 4—figure supplement 1, insets 1 and 2). Our results are consistent with recent findings from Abdul-Wajid and colleagues, who observed that ablation of the embryonic neural crest yields few or no sox10+ cells in the adult heart and results in severe heart defects (Abdul-Wajid et al., 2018). This suggests there are no subsequent post-embryonic neural crest additions to the heart and that the population we observe re-expressing neural crest genes are embryonic-derived neural crest progeny.
 
@@ -73,34 +109,226 @@ In summary, the present results show, for the first time, the common ability of 
 
 ## Materials and methods
 
-## Cell culture and retrovirus preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Wnt1-Cre; ZsGreenfl/fl</td>
+      <td>PMID:10725243</td>
+      <td>Jackson Laboratories, Stock# 003829</td>
+      <td>Drs. Xia Han and Yang Chai at University of Southern California, Center for Craniofacial Molecular Biology</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Wnt1-Cre2+((129S4-Tg(Wnt1-cre)1Sor/J));R26mTmG</td>
+      <td>PMID: 23648512</td>
+      <td>Jackson Laboratory, Stock# 22137</td>
+      <td>Dr. Jeffrey Bush at University of California, San Francisco</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(−4.9sox10:eGFP)</td>
+      <td>PMID: 17065232</td>
+      <td>ZFIN ID: ZDB-TGCONSTRCT-070117–69</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(sox10:GAL4-UAS-Cre;ubi-Switch)</td>
+      <td>PMID: 26086691</td>
+      <td></td>
+      <td>Drs. Ann M. Cavanaugh and Jau-Nian Chen at Department of Molecular, Cell and Developmental biology, University of California, Los Angeles</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(sox10:mRFP)</td>
+      <td>PMID: 18176560</td>
+      <td>ZFIN ID: ZDB-TGCONSTRCT-080321–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Galllus gallus DF1)</td>
+      <td>UMNSAH/DF-1 fibroblast spontaneously transformed</td>
+      <td>ATCC</td>
+      <td>#CRL-12203, Lot number 62712171; RRID:CVCL_0570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RES-H2B-YFP-DD</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_96893</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-bovine Troponin T, IgG2a (CT3)</td>
+      <td>DSHB</td>
+      <td>RRID:AB_528495</td>
+      <td>Dilution (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-chicken Myosin Heavy Chain, IgG1 kappa light chain (ALD58)</td>
+      <td>DSHB</td>
+      <td>RRID:AB_528361</td>
+      <td>Dilution (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti- chicken Myosin Heavy Chain, IgG1 kappa light chain (F59)</td>
+      <td>DSHB</td>
+      <td>RRID:AB_528373</td>
+      <td>Dilution (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-NH2 terminal synthetic decapeptide of alphasmooth muscle actin, IgG2a</td>
+      <td>Sigma</td>
+      <td># A5228</td>
+      <td>Dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human phospho-histone H3, IgG1</td>
+      <td>Abcam</td>
+      <td>#ab14955</td>
+      <td>Dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-human Caspase 3, IgG</td>
+      <td>R and D systems</td>
+      <td>#AF835</td>
+      <td>Dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti -GFP, IgG</td>
+      <td>Abcam</td>
+      <td>#ab6673</td>
+      <td>Dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse IgG2a Alexa-568</td>
+      <td>Molecular Probes</td>
+      <td>RRID:AB_2535773</td>
+      <td>Dilution (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse IgG1 Alexa-568</td>
+      <td>Molecular Probes</td>
+      <td>RRID:AB_2535766</td>
+      <td>Dilution (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit IgG Alexa-568</td>
+      <td>Molecular Probes</td>
+      <td>RRID:AB_2534121</td>
+      <td>Dilution (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-goat IgG Alexa-488</td>
+      <td>Molecular Probes</td>
+      <td>RRID:AB_2534102</td>
+      <td>Dilution (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image processing software FIJI</td>
+      <td>https://imagej.net/Fiji</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R v3.6.1</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>PMID: 25516281</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>PMID: 22388286</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>featureCounts (Subread)</td>
+      <td>PMID: 24227677</td>
+      <td>RRID:SCR_009803</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Accumax</td>
+      <td>Innovative Cell Technologies, Inc</td>
+      <td>#AM105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMART-seq Ultra Low Input RNA Kit V4</td>
+      <td>Takara Clontech</td>
+      <td>#634891</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and retrovirus preparation
 
 Using a standard transfection protocol, chick DF1 cells (ATCC, Manassas, VA; #CRL-12203, Lot number 62712171, RRID:CVCL_0570, Certificate of Analysis with negative mycoplasma testing at the ATCC website) were transfected with RIA-H2B-YFP plasmid (RRID:Addgene_96893) and ENV-A plasmid in 15 cm culture dishes. Cell culture medium was collected 24 hr post-transfection, and twice per day for four days, then centrifuged at 26,000 rpm for 1.5 hr. The supernatant was dried with aspiration, and the pellet was dissolved in 20–30 μl of DMEM to a final titer of 1 × 107 ifu/mL. Viral aliquots were stored in −80°C until the time of injection.
 
-## Chick embryo processing and viral injection
+### Chick embryo processing and viral injection
 
 Viral stock was diluted 1:2 with Ringer’s solution (0.9% NaCl, 0.042%KCl, 0.016%CaCl2 • 2H2O wt/vol, pH7.0) to generate the working solution, which was mixed with 0.3 μl of 2% food dye (Spectral Colors, Food Blue 002, C.A.S# 3844-45-9) as indicator. The lumen of the neural tube adjacent to the middle of the otic vesicle to the level of somite three was injected with 0.2 μl of working in HH8-10 chicken embryos. Embryos were sealed with surgical tap and incubated at 37°C for 1–9 days, harvested at HH14 (n = 5), HH18 (n = 5), HH21 (n = 4), HH25 (n = 4), HH28 (n = 12), HH32 (n = 4) and E10 (n = 4). At the time of harvesting, chick embryos were dissected, fixed in 4%PFA in PBS for 30 mins at 4°C, then embedded in gelatin and sectioned (Microm HM550 cryostat).
 
-## Wnt1-Cre mouse and tissue preparation
+### Wnt1-Cre mouse and tissue preparation
 
 The Wnt1-Cre; ZsGreenfl/fl mice described in Chai et al. (2000) (gift from Drs. Xia Han and Yang Chai at University of Southern California, Center for Craniofacial Molecular Biology) were harvested and fixed at E15.5 (n = 8) and P2 (n = 2). The hearts were dissected, fixed in 4%PFA in PBS for 30mins at 4°C. E15.5 Wnt1-Cre2+; R26mTmG mice (Lewis et al., 2013) (129S4-Tg(Wnt1-cre)1Sor/J, gift from Dr. Jeffrey Bush at University of California, San Francisco, n = 3) were fixed with 4% PFA overnight before dissection. The hearts were embedded in gelatin, and sectioned.
 
-## Quantification of neural crest contributions to the ventricular myocardium and regeneration
+### Quantification of neural crest contributions to the ventricular myocardium and regeneration
 
 To quantify RIA-labeled cells in chick embryos, three consecutive sections of the same axial level were imaged per embryo. The number of YFP-positive cells was averaged to account for variability due to sampling. n = 4–6 embryos were analyzed at each stage as biological replicates. The results are presented as presence or absence of virally labeled cardiac neural crest derivatives at different anatomical locations in Figure 1I and as numerical values in Supplementary file 1a, 1b. To quantify Wnt1-Zsgreen+ cells in E15.5 mouse heart, three consecutive sections of the same axial level were imaged per embryo (n = 4). Automated particle analysis was conducted with FIJI program to estimate the total number of Zsgreen+ cells in the image. For the percentage of neural crest-derived cells in the ventricle, the same procedure was performed with the DAPI channel which represents total cell population. % Zsgreen/DAPI was calculated, and averaged to the result presented in the text of Supplementary file 1a. Same analysis was conducted to estimate the number of sox10:eGFP+ cells in 7dpa (n = 3), 21dpa (n = 3) and sham operated (n = 3) hearts in an area of 2 × 105 μm2 at the apex. One section per heart at the middle of the apex was quantified and presented in Supplementary file 1c.
 
-## Zebrafish cardiac injury and tissue collection
+### Zebrafish cardiac injury and tissue collection
 
 Adult zebrafish heart resection was conducted with the Tg(−4.9sox10:eGFP) or Tg(sox10:mRFP) line, according to published protocols (Poss et al., 2002). Resected and sham operated fish hearts (n = 24) were collected at 7 days post injury (dpi) (n = 18), and 21 dpi (n = 53) at which time the fish were euthanized and the hearts were removed for further analysis. The hearts were fixed in 4%PFA in PBS for overnight at 4°C prior to processing for staining. Adult zebrafish were maintained in the Beckman Institute Zebrafish Facility at Caltech, and all animal and embryo work were completed in compliance with California Institute of Technology Institutional Animal Care and Use Committee (IACUC) protocol 1764.
 
-## Immunohistochemistry and image analysis
+### Immunohistochemistry and image analysis
 
 After cryosectioning, slides were incubated in 1xPBS at 42°C to remove gelatin. 0.3% vol/vol Triton-X100in 1xPBS was used to permeabilize the tissue. Sections were incubated with primary antibody underneath a parafilm layer at 4°C overnight (primary antibody dilutions: 1:10 Troponin T CT3, DSHB (RRID:AB_528495); 1:10 Myosin Heavy Chain ALD58, DSHB (RRID:AB_528361); 1:10 Myosin Heavy Chain F59, DSHB (RRID:AB_528373); 1:500 Mouse anti-smooth muscle actin, Sigma-Cat# A5228-200uG; 1:500 Mouse anti phospho-histone H3, Abcam-ab14955; 1:500 rabbit anti caspase-3,R and D Systems # AF835; 1:500 goat anti GFP, Abcam Cat#ab6673, all in blocking reagent 1xPBS with: 5% vol/vol normal donkey serum, 0.3% vol/vol Triton-X100). Subsequently, sections were washed for 3 times with 1xPBS, incubated with secondary antibody for 40 mins at room temperature and counterstained with DAPI. Secondary antibodies include: Goat anti-mouse IgG2a Alexa-568 (RRID:AB_2535773), Goat anti-mouse IgG1 Alexa-568(RRID:AB_2535766), Goat anti-rabbit IgG Alexa-568(RRID:AB_2534121), Donkey anti-goat IgG Alexa-488(RRID:AB_2534102); 1:1000, Molecular Probes. Zeiss AxioImager.M2 with Apotome.2 and Zeiss LSM 800 confocal microscope were utilized for imaging. Images were cropped, rotated, and intensity was linearly adjusted for visualization.
 
-## In situ hybridization of adult zebrafish hearts
+### In situ hybridization of adult zebrafish hearts
 
 After fixation, hearts were embedded in paraffin and sections were prepared at 10 µm thickness on a Zeiss microtome. After paraffin removal with histosol, sections were washed and then hybridized with 1 ng/µl anti-sense digoxygenin-labeled probes overnight at 70°C in a humidifying chamber. After hybridization, sections were washed with 50% formamide/50% 1X SSCT buffer followed by washes with MABT and a blocking step in 1% Roche blocking reagent. Sections were then incubated overnight at room temperature with a 1:2000 dilution of anti-DIG-Alkaline Phosphatase antibody (Roche). After several washes with MABT, chromogenic color was developed using NBT/BCIP precipitation (Roche).
 
-## Transcriptome analysis of regenerating neural crest cells
+### Transcriptome analysis of regenerating neural crest cells
 
 For each replicate (n = 2), regenerating ventricles (n = 12) were isolated at 21 days post injury and dissociated into a single cell suspension using a pestle-A tissue homogenizer followed by incubation in Accumax (Innovative Cell Technologies, Inc) at 30°C. sox10-mRFP-positive and sox10-mRFP-negative cells were collected by FAC-sorting on a BD Biosciences FACSAriaFusion Cell Sorter. cDNA from mRFP-positive and negative cells was prepared using SMART-seq Ultra Low Input RNA Kit V4 (Takara) according to the manufacturer’s protocol. Sequencing libraries were built according to Illumina Standard Protocols and sequenced using an Illumina HiSeq2500 sequencer at the Millard and Muriel Jacobs Genetics and Genomics Laboratory (California Institute of Technology, Pasadena, CA). 50 million, 50 bp, single-ended reads from two biological replicates were mapped to the zebrafish genome (GRCz10) using Bowtie2 (Langmead and Salzberg, 2012). Transcript counts were calculated using featureCounts (Subread) and differential gene expression analysis was performed using DESeq2 (Liao et al., 2014; Love et al., 2014). Protein classification analysis was performed using PANTHER (Mi et al., 2019). Heatmaps of normalized counts were generated using Heatmap2. Databases have been deposited to NCBI (BioProject # PRJNA526570).

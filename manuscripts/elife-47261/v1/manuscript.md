@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.47261.001 N 6 -methyladenosine (m 6 A) is the most abundant internal RNA modification of cellular mRNAs. m 6 A is recognised by YTH domain-containing proteins, which selectively bind to m 6 A-decorated RNAs regulating their turnover and translation. Using an m 6 A-modified hairpin present in the Kaposi’s sarcoma associated herpesvirus (KSHV) ORF50 RNA, we identified seven members from the ‘Royal family’ as putative m 6 A readers, including SND1. RIP-seq and eCLIP analysis characterised the SND1 binding profile transcriptome-wide, revealing SND1 as an m 6 A reader. We further demonstrate that the m 6 A modification of the ORF50 RNA is critical for SND1 binding, which in turn stabilises the ORF50 transcript. Importantly, SND1 depletion leads to inhibition of KSHV early gene expression showing that SND1 is essential for KSHV lytic replication. This work demonstrates that members of the ‘Royal family’ have m 6 A-reading ability, greatly increasing their epigenetic functions beyond protein methylation.
+N6-methyladenosine (m6A) is the most abundant internal RNA modification of cellular mRNAs. m6A is recognised by YTH domain-containing proteins, which selectively bind to m6A-decorated RNAs regulating their turnover and translation. Using an m6A-modified hairpin present in the Kaposi’s sarcoma associated herpesvirus (KSHV) ORF50 RNA, we identified seven members from the ‘Royal family’ as putative m6A readers, including SND1. RIP-seq and eCLIP analysis characterised the SND1 binding profile transcriptome-wide, revealing SND1 as an m6A reader. We further demonstrate that the m6A modification of the ORF50 RNA is critical for SND1 binding, which in turn stabilises the ORF50 transcript. Importantly, SND1 depletion leads to inhibition of KSHV early gene expression showing that SND1 is essential for KSHV lytic replication. This work demonstrates that members of the ‘Royal family’ have m6A-reading ability, greatly increasing their epigenetic functions beyond protein methylation.
 
 ## Introduction
 
@@ -36,25 +36,93 @@ Here we accurately decipher the KSHV m6A epitranscriptome using a novel m6A peak
 
 ## Results
 
-## The KSHV transcriptome is extensively m6A-methylated in a cell type-specific manner
+### The KSHV transcriptome is extensively m6A-methylated in a cell type-specific manner
 
 We have previously developed dedicated software (m6aViewer) which implements a novel m6A peak-calling algorithm that identifies high-confidence methylated residues with more precision than previously described approaches (Antanaviciute et al., 2017). Utilising this software we mapped m6A modifications in the KSHV transcriptome by performing m6A-seq in TREx BCBL1-Rta cells, a BCBL1-based, primary effusion lymphoma B-cell line containing latent KSHV episomes capable of doxycycline-inducible reactivation of lytic replication. We carried out m6A-seq in latent cells and cells undergoing lytic replication for 8 hr and 20 hr post-induction in two biological replicates. In latent cells, we consistently observed m6A peaks in six viral RNAs, including ORF72 and ORF73. At 8 hr post-reactivation, 33 m6A peaks were identified in 21 KSHV ORFs in both biological replicates (Figure 1—figure supplement 1a). At 20 hr post-reactivation, 75 m6A peaks were mapped in 42 KSHV ORFs (Figure 1a). The positions of these m6A peaks were highly reproducible across the different time points and replicates (Figure 1—figure supplement 1b). 12 viral m6A peaks were further validated by two-step quantitative reverse transcription PCR (qRT-PCR) (Figure 1—figure supplement 2). m6A peaks in cellular RNAs were also consistently called, with 18,946 m6A peaks common to both replicates in latent cells and 18,935 and 13,926 m6A peaks in cells reactivated for 8 hr and 20 hr, respectively (Figure 1b, Supplementary file 4). Cellular m6A peaks remained mostly unchanged between latent and 8 hr of lytic replication. Lower detection of m6A peaks at 20 hr post-reactivation was observed in part due to KSHV-mediated host cell shut-off (Conrad, 2009) (Figure 1c). However, the majority of uniquely identified m6A peaks at this time point were found in RNAs whose expression was increased during lytic replication (Figure 1c). Cellular m6A peaks were enriched in the coding region (CDS) and 3’ untranslated region (UTR) throughout KSHV infection (Figure 1d). In viral mRNAs, the majority of m6A peaks were located in the CDS (Figure 1e). We also confirmed the DRm6ACH motif both in cellular and viral mRNAs (Figure 1f and g, respectively). Approximately 60% of viral m6A peaks contained the GGm6AC[G/U] motif, a significant over-representation of the motif when compared to the expected DRm6ACH frequency.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig1-v1.jpg)
+
+**Figure 1.:** (a) KSHV epitranscriptome map in TREx BCBL1-Rta cells at 20 hr post-lytic reactivation. m6A-IP reads and input reads are shown. m6A peaks identified by m6AViewer software with associated p-values are indicated. (b) Number of cellular m6A peaks consistently called by m6AViewer software in two biological replicates throughout KSHV infection. (a,b) To define significantly enriched m6A peaks in both viral and cellular RNAs, a minimum fold change of m6A-IP reads over input reads of ≥ 1.5 and a FDR < 5% was required in both biological replicates. Peaks positions were considered overlapping between replicates if the calls were within 100 nucleotides between corresponding positions. (c) Kernel density estimate (KDE) on the RNAs coding for the 10,190 m6A peaks present in latent but not 20 hr reactivated cells (left graph) and on the RNAs coding for the 5,170 m6A peaks present at 20 hr reactivation but not in latent cells (right graph). (d) Distribution of m6A peaks in five topological regions of cellular RNAs during latent and lytic KSHV replication. UTR, untranslated region. CDS, coding region. (e) Distribution of m6A peaks in four topological regions of viral RNAs during latent and lytic KSHV replication. UTR, untranslated region. CDS, coding region. (f) Most significantly enriched DRm6ACH consensus identified in m6A peaks present in four topological regions of cellular transcripts. MEME software was used for motif analysis. (g) Most significantly enriched DRm6ACH motif found in viral transcripts. MEME software was used for motif analysis. (h) RNA affinity baits were centred on the closest GGACU motif to the second m6A peak of open reading frame (ORF37) and the first and fourth m6A peaks of the second exon of ORF50 transcript (blue triangles). m6A-IP reads and input reads for ORF37 and ORF50 transcript from two biological replicates at 20 hr post-viral reactivation are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a, b) m6A-IP reads and input reads are shown. m6A peaks identified by m6aViewer software with associated p-values are indicated. (a) KSHV epitranscriptome map of lytic TREx BCBL1-Rta cells after 8 hr post-reactivation for one of the m6A-seq biological replicates. (b) Common viral m6A peaks in two biological replicates are shown in the human TREx BCBL1-Rta cell line after 20 hr post-lytic reactivation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Total RNA isolated from TREx BCBL1-Rta cells was chemically fragmented and subjected to m6A-IP-qRT-PCR. Primers specific for regions spanning m6A peaks were designed as positive control primers. ORF50-1, ORF50-2, ORF50-3 and ORF50-4 indicate primers that generate an amplicon spanning the first, second, third and fourth m6A peaks of the second exon of ORF50 transcript respectively. ORF50-intron primers generate an amplicon spanning the m6A peak in the ORF50 intron. ORF50 negative primers were designed at the start of the second exon of ORF50 mRNA. ORF57 positive primers span the tallest m6A peak in the second exon of ORF57 mRNA while negative primers span the first m6A peak in the ORF57 second exon. ORF32 and ORF37 negative primers were positioned at the start of the coding region of ORF32 and ORF37 respectively. % of recovered input was calculated for each region of interest and the fold change over the % of input of control negative primers was calculated. For all figures, values are averages, error bars present s.d. n ≥ 3 independent m6A-IPs, each from an independent viral reactivation.
+
 A further comparison using our dedicated software was performed between our m6A-seq datasets and previously published m6A-seq studies carried out in TREx BCBL1-Rta cells (Tan et al., 2018) and in a renal carcinoma cell line infected by recombinant KSHV BAC16 (iSLK cells) (Hesser et al., 2018; Tan et al., 2018). All raw sequencing data were subjected to quality control and processing as described in methods and m6A peaks were identified with m6aViewer. Peaks were filtered to keep only those with a minimum of 20 mean reads, 1% FDR (benjamini-hochberg) and an enrichment of 4-fold m6A-IP/input. After applying these cut-offs, our TREx BCBL1-Rta cells datasets contained twice as many m6A peaks as compared to the Tan dataset in the same cell line. ~17,000 and~10,000 cellular m6A peaks were identified in our dataset during latency and lytic replication, respectively, while the Tan dataset yielded ~9,000 m6A peaks during latency and ~4,500 m6A peaks during lytic replication (Figure 2a). The most cellular m6A peaks were identified in the Hesser datasets in iSLK cells with ~25,000 m6A peaks. A direct one-to-one reciprocal overlap comparison between each of our m6A peaks and those found in the other datasets was not possible, mostly due to vastly different peak widths (with the other datasets having narrower peaks and containing short read length coupled to single end data). In such situations, many peaks cannot be mapped one-to-one, with multiple peaks often overlapping a single one when comparing datasets, which leads to overlap quantifications that are not easily interpretable. Therefore, we compared the overlap of m6A-modified transcripts identified between all three studies. In TREx BCBL1-Rta cells, 72% of our 5,830 m6A-modified transcripts in latent cells were also present in the same cell line during latency in the Tan dataset, while 52% of our 4,059 m6A-modified transcripts in lytic cells were common to the lytic Tan dataset (Figure 2b).~80% of m6A-modified transcripts in our TREx BCBL1-Rta dataset were also identified in the Hesser dataset which mapped m6A in iSLK cells (Figure 2b). This analysis shows a high reproducibility identifying m6A-modified transcripts in KSHV-infected cell lines by three different groups.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig2-v1.jpg)
+
+**Figure 2.:** Raw sequencing data were subjected to quality control and processing as described in methods. Reads were aligned to a combined human hg38 and KSHV genome reference. m6A peaks were identified with m6aViewer version 1.6.1. Peaks were filtered to keep only those with a minimum of 20 mean reads, 1% FDR (benjamini-hochberg) and an enrichment of 4-fold m6A-IP/input. Overlapping m6A peaks between replicates were collapsed using GenomicRanges R package and only peaks detected across all replicates were kept for further comparisons. (b) Total number of overlapping m6A-modified transcripts identified between replicates are displayed for each dataset and time point in the grey boxes. The percentage of the total m6A-modified transcripts identified in our dataset that overlap with previously published studies in TREx BCBL1-Rta and iSLK cells (Hesser et al., 2018; Tan et al., 2018) is shown, with 1 being 100%. (c) Comparison of the lytic epitranscriptomic map from our study and the one performed by Tan et al., both carried out in TREx BCBL1-Rta. Circos plot of m6A-IP read coverage across the viral episome is shown for both studies. Coverage tracks were scaled to account for differences in library sizes. KSHV gene positions are indicated by the central track. Some differences in the identified m6A peaks between the two datasets are highlighted. (d) As described in c, but comparing Baquero et al. lytic TREx BCBL1-Rta cells with lytic iSLK cells from Tan et al.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Top two deep-sequencing coverage tracks of ORF50 RNA are shown for our two lytic biological replicates at 20 hr reactivation in TREx BCBL1-Rta cells. The four m6A peak positions which we further focussed on this study are highlighted. Below is the coverage for ORF50 RNA at 48 hr reactivation in TREx BCBL1-Rta cells from Tan et al. (2018). Bottom panel shows the coverage of ORF50 RNA in iSLK cells (24 hr post-reactivation) from the Tan et al. study (Hesser et al., 2018).
 
 Regarding viral m6A peaks, again, after applying the same data processing and cut-offs, we identified almost twice as many m6A peaks during lytic replication than the Tan dataset (Figure 2a). We then compared the m6A-IP coverage maps of the KSHV transcriptome in lytic TREx BCBL1-Rta cell lines, overall, viral m6A peaks were strikingly similar in both studies (Figure 2c). Of note, m6A peaks in ORF50 RNA were consistently mapped in similar regions in both iSLK and TREx BCBL1-Rta cell lines (Figure 2—figure supplement 1), with the highest similarity found between TREx BCBL1-Rta cell lines. Although, in particular instances, m6A peaks differed between studies, for example ORF56 and ORF64 had a distinct m6A peak in this study but not in Tan et al. (Figure 2c and d, purple boxes), while K12 was m6A-modified in Tan et al. but not in our study (Figure 2c and d, green box). Intriguingly, when we compared the m6A-IP coverage maps between our lytic TREx BCBL1-Rta cells and lytic iSLK cells from Tan et al., although clear common peaks were present, these maps differed more than the TREx BCBL1-Rta cells (Figure 2c and d, blue lines) suggesting that the KSHV transcriptome may be differentially modified depending on the cell type, suggesting potential epitranscriptomic remodelling of silencing and activating m6A motifs may take place differently between cell types (Hesser et al., 2018; Tan et al., 2018).
 
-## RNA affinity identifies putative m6A readers which belong to the Tudor domain ‘Royal family’
+### RNA affinity identifies putative m6A readers which belong to the Tudor domain ‘Royal family’
 
 We were intrigued to determine whether any m6A readers uniquely interact with methylated viral mRNAs. Of particular interest were the m6A peaks found in the second exon of ORF50 RNA, as this RNA encodes the latent to lytic switch RTA protein. To this end, RNA affinity coupled to mass spectrometry analysis was performed. Viral RNA baits were centred on the closest GGACU motif to the m6A peak positions of the largest peak of ORF37 and the first and fourth m6A peaks of the second exon of ORF50 (Figure 1h) (hereafter referred to as ORF37, ORF50-1 and ORF50-4 baits respectively). See Figure 3—figure supplement 1 for m6A peak positions from all m6A-seq time points. Mass spectrometry analysis revealed that all three m6A baits enriched for YTH readers (Figure 3a). An intriguing observation was that of the three viral baits, exclusively the methylated ORF50-1 (m6A-ORF50-1) distinctly enriched SND1, a Tudor domain-containing protein. SND1 was in the top thirteen enriched protein hits, together with YTHDF1, YTHDF2 and YTHDF3. Further binding validation of YTHDF1 and SND1 in RNA affinity experiments demonstrated that YTHDF1 was greatly enriched in all three methylated baits while SND1 showed a modest but clear enrichment exclusively in m6A-ORF50-1 bait (Figure 3—figure supplement 2). SND1 binds symmetrically dimethylated arginines (sDMA) via its Tudor domain (Liu et al., 2010), thus it harbours the ability to selectively recognise methyl groups. In addition to SND1, m6A-ORF50-1 bait also prominently pulled down three spliceosomal proteins known to interact with the Tudor domain of SND1, snRNP200, snRNP116 and PRPF8 (Yang et al., 2007). These proteins were within the top fifteen enriched protein hits. Multiple proteins related to RNA processing were also enriched in this bait (Supplementary file 1). SND1 belongs to the Tudor domain ‘Royal family’, comprising five subfamilies: Tudor, plant agenet, chromo, PWWP and MBT (Maurer-Stroh et al., 2003). Members from each subfamily share a structurally related β-barrel that harbours an aromatic cage implicated in binding methylated arginines and lysines (Chen et al., 2011). Intriguingly, the aromatic cage used for m6A recognition by YTH readers is structurally similar to the one present in the ‘Royal family’ (Luo and Tong, 2014; Li et al., 2014; Xu et al., 2015; Xu et al., 2014). Thus, further scrutiny for Royal members was carried out in the mass spectrometry data. Strikingly, several Royal members were also enriched in methylated viral baits. All three plant agenet members, which were recently identified as RNA sequence-dependent m6A readers (Edupuganti et al., 2017; Arguello et al., 2017), were exclusively bound to m6A-ORF50-1 bait (Figure 3a). Three PWWP domain-containing proteins were also enriched in m6A-ORF50-1 bait while m6A-ORF37 bait retrieved the chromo protein CBX3 (Figure 3a). These results suggest that Royal domains may be capable of reading methyl-decorations not only in proteins but also in RNA. None of the indirect m6A readers, hnRNPA2B1, hnRNPC or hnRNPG, or IGF2BP proteins were enriched in any of the baits (Supplementary file 2). Eight proteins with methyl-transferase activity were also recruited to methylated baits (Supplementary file 2), of these, METTL16 is the second m6A methyltransferase identified to date (Pendleton et al., 2017), which methylates structured RNAs where the adenosine is present in a bulge in the nonamer sequence UACAGAGAA, where A is modified (Mendel et al., 2018). The remaining identified proteins may play a previously uncharacterised role in the m6A RNA metabolism. Taken together, these results identify several members from the ‘Royal family’ as putative m6A readers.
 
-## Royal domains display selectivity for specific m6A-modified RNA hairpins
+![Figure 3.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig3-v1.jpg)
+
+**Figure 3.:** (a) Mass spectrometry results of RNA affinity pull-downs using m6A-modified and unmodified (control) biotinylated viral RNA baits. A single RNA affinity biological replicate for each RNA bait was carried out. Statistical significance of enrichment was not determined, instead, all proteins identified for a given methylated and control bait were sorted by total number of peptide spectrum matches (PSM’s) for the m6A bait. Proteins were then considered as enriched in methylated baits if the number of PSM’s assigned to the protein was at least double in the methylated bait compared with the control bait. In this table, the number of unique peptides assigned to each protein is shown for each bait for clarity. (b–f) EMSAs were carried out using recombinant SND1-C-terminus protein (residues 548–910) and biotinylated viral RNA baits. A cropped version of ORF50-1 bait (cORF50-1) and a stable version of ORF50-1 bait (named sORF50-1) in which the beginning of the stem is made to have strong base pairing was also tested. Representative EMSAs from six and two independent protein purifications for b and c-f, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** m6A peak positions are highlighted in yellow for all biological replicates and time-points studied (0 hr, 8 hr and 20 hr post-reactivation). m6A-methylation motifs are highlighted in red and sequences selected for RNA affinity are shaded in grey. Note that the GGACT motif is centred in the middle of each RNA affinity bait.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Validation of YTHDF1 and SND1 binding to the three viral baits was performed by RNA affinity using protein lysates from TREx BCBL1-Rta cells that had been reactivated for 24 hr (left panel). Detection of bound proteins was performed by western blotting, for SND1 a mouse monoclonal antibody was used. Note that YTHDF1 protein was cleaved during lytic KSHV reactivation, as this band was absent in latent cells (data not shown). The SND1 mouse antibody detects three different SND1 bands which we further confirmed to be specific by SND1 siRNA knockdown (siRNA name Hs_SND1_5 from Qiagen) in TREx BCBL1-Rta cells (right panel). Unr., unreactivated. Scr., scramble. KD., knockdown.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Free energy RNA structures for viral RNA baits as predicted by UNAfold web server. Note that the beginning of the stem of ORF50-1 bait (black box) presents weak base-pairing with four unpaired nucleotides (AUCC). The stable ORF50-1 bait (sORF50-1) has seven nucleotides replaced compared with ORF50-1 (mutated bases are indicated in lower case) to stabilise this region (blue box). Triangles point to the adenosine that is m6A-modified at the GGACU motif within the apical loop. Curly braces highlight large unpaired bulges. Free energy (dG) is shown for each bait.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Representative native EMSA using ORF50-1 baits on their own without any protein addition using a one second film exposure to detect the baits. Two free bands in m6A-ORF50-1 bait are observed more clearly in the burn out nylon membrane after ECL exposure. Corresponding electrospray ionisation (ESI) of the baits are shown. Representative native EMSAs for the rest of the baits from EMSAs that did not result in a positive shift and applying one second film exposure. All ESI traces were provided by Integrated DNA Technologies, the manufacturer of the biotinylated RNA baits.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** TLU, total lysate from E. coli uninduced cells. TLI, total lysate from E.coli induced cells.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** (a) EMSAs were carried out using recombinant GST-FXR1-agenet domain (residues 2–132) and biotinylated viral RNA baits. (b) EMSAs were carried out using recombinant GST-PSIP1-PWWP domain (residues 3–100) and biotinylated viral RNA baits. (a, b) Representative EMSAs from two different protein preparations are shown. cORF50-1, cropped ORF50-1.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** (a) EMSAs were carried out using recombinant GST-CBX3-Chromo domain (residues 29–86) and biotinylated viral RNA baits. cORF50-1, cropped ORF50-1. Representative EMSAs from two different protein preparations are shown. (b) EMSAs were carried out side by side using recombinant SND1-C-terminus protein (residues 548–910) and control GST protein. Up to 15 µM GST protein was also tested without showing any shift (data not shown). (c) EMSAs were carried out using recombinant SND1-C-terminus protein (residues 548–910) in the absence (-) or presence (+) of herring sperm DNA (5 µg per binding reaction). Representative EMSAs from two different protein preparations are shown.
+
+### Royal domains display selectivity for specific m6A-modified RNA hairpins
 
 We next determined whether the Royal domains from the Royal members enriched in methylated viral RNAs display affinity for m6A-modified RNA in the absence of any other protein interaction. The complete Royal Tudor domain of SND1 (residues 650–910) is required for sDMA-binding (Liu et al., 2010), consequently, a GST-recombinant protein containing these residues (548-910), referred here as SND1-C-terminus, was used in native electromobility shift assays (EMSAs). Notably, SND1-C-terminus shifted m6A-ORF50-1 bait in contrast to the control bait (Figure 3b). Neither ORF50-4 nor ORF37 methylated baits were selectively bound by SND1-C-terminus (Figure 3c and d, respectively). Note that the membranes had to be overexposed to obtain a good shift signal due to the small amount of shifted RNA in comparison with the free bait, consistent with the modest enrichment of SND1 in m6A-ORF50-1 bait (Figure 3—figure supplement 2). Similarly, a weak shift has also been previously observed in EMSAs for FMRP protein (Edens et al., 2019) and IGF2BP proteins (Huang et al., 2018). RNA secondary structure prediction of all baits indicates that they form strongly base-paired hairpins with an apical loop in which m6A is exposed and an additional large unpaired bulge; however, ORF50-4 and ORF37 feature this unpaired bulge in the middle of their stem (Figure 3—figure supplement 3). This may imply that SND1 cannot bind when the unpaired bulge is present at this position irrespective of m6A. In contrast, the beginning of the stem of ORF50-1 shows weak base-pairing with four unpaired bases (Figure 3—figure supplement 3, black box) that may allow opening of the hairpin and selective SND1-binding when m6A is present. Curiously, when running m6A-ORF50-1 bait on its own (without any protein), two distinct bands were visualised, one lower band which migrated at the same speed of A-ORF50-1 bait and another higher band migrating slower (Figure 3—figure supplement 4). Electrospray ionisation (ESI) of the ORF50-1 baits showed that there were no truncated forms and that the correct molecular weight of a methyl group had been added (15 daltons), demonstrating the purity of the baits (Figure 3—figure supplement 4). As m6A can destabilise local RNA structure in hairpins (Liu et al., 2015), it seems plausible that m6A addition to ORF50-1 destabilises the hairpin which then migrates slower compared with the non-methylated bait. To test this hypothesis, a cropped version of ORF50-1 bait (cORF50-1) with strong base-pairing throughout the stem (Figure 3—figure supplement 3) was tested in EMSAs. Remarkably, SND1-C-terminus did not shift this bait (Figure 3e), highlighting that structural features of the RNA ligand are critical for SND1-binding and that the beginning of the m6A-ORF50-1 hairpin (Figure 3—figure supplement 3, boxed region) may be required for an interaction with SND1. We further mutated seven nucleotides to make this region very structured and stable, as demonstrated by the increase in free energy of this stable hairpin (sORF50-1). No specific selectivity for m6A-sORF50-1 by SND1-C-terminus was seen (Figure 3f), indicating that destabilisation of this region is required for SND1 binding. Shorter exposure of the free m6A-sORF50-1 bait did not reveal two distinct bands as the ones present in m6A-ORF50-1 hairpin (Figure 3—figure supplement 4). To further support the hypothesis that Royal domains harbour selectivity for m6A-modified RNA, GST-recombinant proteins containing the Royal domains of FXR1, PSIP1 and CBX3 were tested in EMSAs. Coomassie staining for all recombinant proteins can be seen in Figure 3—figure supplement 5. The Royal domains of FXR1 and PSIP1 selectively shifted m6A-ORF50-1 bait, in contrast, none of the other baits were bound (Figure 3—figure supplement 6a and b, respectively). The CBX3 chromodomain displayed a very faint shift for m6A-ORF50-1 bait, however this shift was not consistent between protein preparations (Figure 3—figure supplement 7a) indicating that this domain either may not be able to read m6A, or other protein partners could be required for its interaction with m6A in vivo. Control glutathione S-transferase (GST), a protein with no RNA-binding properties, was also tested in EMSA showing no selectivity for m6A-ORF50-1 bait (Figure 3—figure supplement 7b). EMSAs were also performed in the presence of excess herring sperm DNA as a source of non-specific DNA. In the presence of sperm DNA no shift was detected and the free bait remained uncomplexed (Figure 3—figure supplement 7c), suggesting that non-specific DNA prevents the interaction between SND1 and m6A-ORF50-1 bait. This is not surprising as excess of DNA may sequester SND1 which is a known DNA-binding transcription factor. Together, these results confirm that Royal domains in the absence of any other protein interaction display selectivity for m6A-modified RNA, our data also suggests that this selectivity may occur in a RNA secondary structure-dependent manner.
 
-## SND1 is an m6A reader in KSHV-infected cells
+### SND1 is an m6A reader in KSHV-infected cells
 
 Next, we aimed to characterise the RNA-binding sites of endogenous SND1 transcriptome-wide during KSHV infection by performing RIP-seq in two biological replicates. Latent and lytic TREx BCBL1-Rta cells that had been reactivated for either 8 or 20 hr were used. We aimed to obtain the best protein binding site resolution by sonicating the majority of the total RNA to <200 bp (Figure 4—figure supplement 1a and b). Unexpectedly, after construction of the cDNA library from the SND1-RNA immunoprecipitated (RIP) samples, the majority of the fragments ranged from 150 to 1000 bp (Figure 4—figure supplement 1c). Thus, this technique has a binding site resolution of ~1 kB. A transcript-wide analysis enabled us to identify SND1 RNA targets, using a false discovery rate (FDR) < 1% and a fold change of RIP reads over input reads >2, this analysis uncovered SND1 as a bona fide RNA-binding protein, yielding 5061 target transcripts (Supplementary file 5). Of these, 3319 transcripts were mRNAs and 748 were long non-coding RNAs (lncRNAs). These target RNAs were consistently bound by SND1 during latency and lytic KSHV replication (both at 8 and 20 hr). Gene ontology (GO) analysis revealed that these transcripts code for proteins that are involved in regulating GTPase activity, nervous system development and cell morphogenesis (Figure 4a). Next, all highly expressed transcripts identified by RIP-seq (FDR < 1%) were divided into high-confidence targets (those which had at least twice the normalised coverage in RIPs than input) and high-confidence non-targets (those which had at least twice as much coverage in inputs than RIPs) and the proportion of m6A-bearing RNAs in each group was determined. Strikingly, we observed that ~50% of high-confidence targets and ~24% of high-confidence non-targets were m6A-modified RNAs (Figure 4b), representing a marked enrichment of m6A-bearing RNAs in the target group. It is worth noting that this transcript-wide analysis will not identify all SND1 targets, as when looking at the SND1-binding profile at the transcript level, it was evident that some RNAs are bound by SND1 at a specific region only (Figure 4c).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig4-v1.jpg)
+
+**Figure 4.:** (a) Most significantly enriched GO terms amongst the 5061 target RNAs (Ensembl transcripts) identified by RIP-seq which are consistently bound by SND1 at all time points (0 hr, 8 hr and 20 hr post-reactivation) in TREx BCBL1-Rta cells. FDR, false discovery rate. (b) Consistently bound SND1 RNA targets throughout the course of KSHV infection are enriched in m6A-modified RNAs, while non-targets are depleted. Target transcripts are defined by a fold change RIP/input > 2 while non-targets have a fold change input/RIP > 2. A false discovery rate (FDR) < 1% is applied to RIP-seq data. (c) Hierarchical clustering of fold change RIP/input for SND1 targets. (d) No significant correlation between the number of m6A peaks in a given RNA and the binding of SND1 as determined by log2 fold change RIP/input. Target transcripts with >300 mean reads of coverage per RNA were used for the analysis. Analysis using a lower expression cut-off showed similar results. (e, f) High-confidence SND1-bound genes (summarised at HGNC gene symbol annotation level) were defined using a cut-off of FDR < 1% and a fold change RIP/input > 2, while m6A peaks were detected using a FDR < 5% and > 1.5 fold m6A-IP reads over input reads. RNA targets and m6A peaks for YTH readers were mined from publically available PAR-CLIP and m6A-seq datasets from HeLa cells. (e) Overlap of target genes with m6A modifications between SND1 and heterologously expressed YTH reader proteins. (f) Overlap of target genes lacking m6A modifications between SND1 and heterologously expressed YTH reader proteins. (g) For SND1 localised enrichment analysis, introns are collapsed and exons spliced together into a single continuous RNA molecule. Spliced transcripts and introns are then segmented into transcriptomic regions based on changes in their fold change RIP/input. (h) Venn diagram showing the overlap between SND1 enrichment in coding region (CDS) and untranslated regions (UTRs) of SND1 target transcripts identified by localised enrichment analysis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Following sonication of formaldehyde-fixed TREx BCBL1-Rta cells, proteins were removed by proteinase K treatment and cross-links were reversed. Sonicated RNA was then isolated with Trizol LS and 1 µg was separated on a 1.2% (w/v) agarose gel containing 0.1 µg/ml of ethidium bromide. 1 µg of intact total RNA was used as a size marker. Lane one contained intact total RNA. Lane two contained sonicated total RNA. rRNA, ribosomal RNA. (b) 2200 TapeStation trace of sonicated total RNA (input) before RIP. The majority of the fragments are between 50 and 200 base pairs (bp) in length with a small tail of fragments of larger sizes (>500 bp). (c) 2200 TapeStation trace of cDNA library built from the immunoprecipitated RNA fragments after RIP. Note that the heat fragmentation step before cDNA synthesis was omitted to evaluate the true size of the immunoprecipitated RNA. Fragments smaller than 100 bp were totally depleted, in contrast a large tail of fragments that reached 1 kB in length was evident. Due to the large size of RNA fragments observed after SND1 immunoprecipitation, for all deep-sequencing of RIP samples used in this study, isolated RNA from RIP samples was fragmented for 7 min at 94°C before first strand synthesis.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Overlaps between the total RNA targets identified by PAR-CLIP for each individual heterologously expressed YTH reader in HeLa cells with the subset of m6A-modified transcripts identified by m6A-seq in the same cell line. Publically available processed PAR-CLIP and m6A-seq datasets (Wang et al., 2014; Wang et al., 2015; Shi et al., 2017) were used for this analysis.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Genome sequencing tracks from latent (0 hr) and lytic (8 hr and 20 hr post-reactivation) TREx BCBL1-Rta cells depicting input (green) and RIP (blue) coverage. m6A-IP reads (red) are also shown. (b) The most enriched motif found in SND1-bound intronic enriched regions. (c) Significantly enriched motifs in SND1-bound intronic enriched regions. (d) A U-tract coupled to a DRm6ACH motif is significantly enriched in SND1-bound intronic regions that overlap m6A peaks. (e) Deep-sequencing coverage for input and RIP samples for ORF50 transcript (left panel) and ORF57 transcript (right panel) in latent (0 hr) and lytic TREx BCBL1-Rta cells reactivated for 8 hr and 20 hr. Note the significantly lower coverage for the lytic ORF50 and ORF57 transcripts during latency compared with lytic replication as expected. The fold change RIP/input for each time point is indicated.
 
 A positive correlation between the number of m6A peaks in a given transcript and the SND1-fold enrichment was not found (Figure 4d). These results are not unexpected as they are in agreement with the finding that SND1 does not bind m6A indiscriminately. We then mined previously processed PAR-CLIP and m6A-seq data sets (Wang et al., 2014; Wang et al., 2015; Shi et al., 2017) from HeLa cells and calculated the percentage of total RNA targets of YTH readers that contain m6A-modified transcripts. ~ 65% of all RNA targets contained m6A-modified transcripts (Figure 4—figure supplement 2). In addition, we compared the overlap of target genes containing or lacking m6A modification between SND1 and each heterologously expressed YTH reader. To our surprise, despite comparing TREx BCBL1-Rta and HeLa cells, we found that ~50%,~32% and~37% of SND1 m6A-modified targets are common to YTHDF1, YTHDF2 and YTHDF3, respectively (Figure 4e). When we compared the SND1 targets that lack m6A, only ~4%, ~1% and ~3% were shared with YTHDF1, YTHDF2 and YTHDF3, respectively (Figure 4f). These results show that SND1 does not merely co-precipitate with YTH readers and that it has a distinct RNA-binding profile.
 
@@ -62,7 +130,7 @@ To identify SND1 RNA targets that could be missed by transcript-wide analysis, a
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig5-v1.jpg)
 
-**Figure 5.:** 6A peaks (a, b) Genome sequencing tracks from latent (0 hr) and lytic (8 hr and 20 hr post-reactivation) TREx BCBL1-Rta cells depicting input (green) and RIP (blue) coverage.m6A-IP reads (red) are also shown. Blue boxes indicate exons while blue lines represent introns. SND1 overlaps with m6A peaks are evident in introns (ARL17A) and 5’UTRs (ABCD1). Note that in ABCD1, SND1 binding and m6A peaks are both reduced at 8 hr post-reactivation while at 20 hr post-reactivation methylation and SND1 binding signal are both lost with decreasing expression in inputs. (c, d) Dynamic SND1 binding to m6A-modified regions in SND1 target transcripts during KSHV infection. Genome tracks depicting sequencing read coverage from input (green) and RIP (blue) samples. m6A-IP reads (pink) are also shown. Note that in contrast to ABCD1, RHOU/DUSP5P1 remain highly expressed even at 20 hr post-reactivation, suggesting the coupled loss of methylation/SND1-binding is independent of the ability to detect these events due to loss of expression. (e) SND1 regions consistently enriched across the three time points studied (0 hr, 8 hr and 20 hr) were defined by applying a fold change RIP/input >2 and>50 mean reads per region (FDR < 1%). Consistently SND1-unbound regions throughout KSHV infection were defined using a fold change RIP/input <0.5 and>50 mean reads per region (FDR < 1%). For all m6A overlap analysis, the cut-off for an m6A peak was defined as having 50 read paired at the tallest point in the m6A peak and a 2-fold enrichment of m6A-IP reads over input reads using a FDR < 1%.
+**Figure 5.:** m6A-IP reads (red) are also shown. Blue boxes indicate exons while blue lines represent introns. SND1 overlaps with m6A peaks are evident in introns (ARL17A) and 5’UTRs (ABCD1). Note that in ABCD1, SND1 binding and m6A peaks are both reduced at 8 hr post-reactivation while at 20 hr post-reactivation methylation and SND1 binding signal are both lost with decreasing expression in inputs. (c, d) Dynamic SND1 binding to m6A-modified regions in SND1 target transcripts during KSHV infection. Genome tracks depicting sequencing read coverage from input (green) and RIP (blue) samples. m6A-IP reads (pink) are also shown. Note that in contrast to ABCD1, RHOU/DUSP5P1 remain highly expressed even at 20 hr post-reactivation, suggesting the coupled loss of methylation/SND1-binding is independent of the ability to detect these events due to loss of expression. (e) SND1 regions consistently enriched across the three time points studied (0 hr, 8 hr and 20 hr) were defined by applying a fold change RIP/input >2 and>50 mean reads per region (FDR < 1%). Consistently SND1-unbound regions throughout KSHV infection were defined using a fold change RIP/input <0.5 and>50 mean reads per region (FDR < 1%). For all m6A overlap analysis, the cut-off for an m6A peak was defined as having 50 read paired at the tallest point in the m6A peak and a 2-fold enrichment of m6A-IP reads over input reads using a FDR < 1%.
 
 Next, we set out to investigate the SND1-enriched intronic regions for enriched motifs. Interestingly, a U-tract was the most significant motif identified (Figure 4—figure supplement 3b). In addition, several GAC-containing motifs appeared as significantly enriched (Figure 4—figure supplement 3c). When searching for motifs that were 30 nucleotides long in SND1-bound intronic regions containing m6A peaks, a U-tract immediately followed by an m6A motif was identified (Figure 4—figure supplement 3d). In SND1-bound intronic regions that do not have m6A peaks, a U-tract was also the most enriched motif. Notably, U-rich motifs found adjacent to m6A residues are also targeted by RBM15/15B and hnRNPC (Patil et al., 2016; Liu et al., 2015).
 
@@ -72,11 +140,31 @@ To further address the binding profile for SND1 we re-analysed multiple eCLIP da
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig6-v1.jpg)
 
-**Figure 6.:** 6A motif.(a) Overlap of m6A-modified transcripts in the indicated cell lines. (b) Overlap between the indicated eCLIP, RIP-seq and m6A-seq enriched transcripts. (c) Direct overlap of m6A-seq peaks and eCLIP binding sites for m6A reader proteins (FXR2, IGF2BP1, IGF2BP3), SND1 and the control, TIAL1. (d) Distribution of binding sites for the indicated proteins across RNA biotypes. (e) Distribution of binding sites across different transcript regions for the indicated proteins. (f) Motif analysis using HOMER and HepG2 eCLIP datasets as indicated. Top panel m6A-seq derived motif in HepG2 cells (note that this is the highest scoring motif derived), central panels are consensus motifs found using all target transcripts, bottom panel is the two most highly enriched SND1 motifs in the set of m6A-modified exons bound by SND1.
+**Figure 6.:** (a) Overlap of m6A-modified transcripts in the indicated cell lines. (b) Overlap between the indicated eCLIP, RIP-seq and m6A-seq enriched transcripts. (c) Direct overlap of m6A-seq peaks and eCLIP binding sites for m6A reader proteins (FXR2, IGF2BP1, IGF2BP3), SND1 and the control, TIAL1. (d) Distribution of binding sites for the indicated proteins across RNA biotypes. (e) Distribution of binding sites across different transcript regions for the indicated proteins. (f) Motif analysis using HOMER and HepG2 eCLIP datasets as indicated. Top panel m6A-seq derived motif in HepG2 cells (note that this is the highest scoring motif derived), central panels are consensus motifs found using all target transcripts, bottom panel is the two most highly enriched SND1 motifs in the set of m6A-modified exons bound by SND1.
 
 Regarding KSHV viral mRNAs, we were able to confirm ORF50 RNA as a high-confidence SND1 target. As a comparison, a highly expressed viral lytic RNA, ORF57, did not reach the cut-off to be considered a high-confidence target (Figure 4—figure supplement 3e). We additionally identified 33, 23 and 14 KSHV transcripts as high-confidence SND1 targets at 0 hr, 8 hr and 20 hr post-reactivation, respectively (Figure 7a). Deep-sequencing coverage for high-confidence SND1 targets can be seen in Figure 7—figure supplements 1 and 2. Validation of SND1-binding to the different regions containing m6A peaks in the second exon and the intron of ORF50 RNA was performed by RIP followed by RT-qPCR. A ~ 40 fold SND1 enrichment was detected in the second exon of ORF50 and a ~ 10 fold enrichment in the intron compared with the SND1 enrichment detected on the non-target 18S rRNA (Figure 7b). We further tested by RIP the binding of endogenous FXR1, FXR2, PSIP1, YTHDF1 and YTHDF3 to ORF50 RNA, while non-specific rabbit immunoglobulin (IgG) was used as negative control antibody. The YTHDF1 RNA target SON (Wang et al., 2014) was used as a binding control RNA for YTH readers. Both YTH readers and FXR2 bound ORF50 RNA, showing a ~ 8 fold enrichment (Figure 7b) and ~15 fold enrichment was observed for FXR1. PSIP1 showed a limited but consistent enrichment (~3 fold) above the negative control IgG. These results highlight that all these Royal members can target ORF50 RNA, SND1 displaying the highest affinity.
 
-## SND1 stabilises ORF50 RNA and is essential for KSHV replication
+![Figure 7.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig7-v1.jpg)
+
+**Figure 7.:** (a) RIP-seq identifies KSHV mRNAs as high-confidence SND1 targets at 0 hr (left panel), 8 hr (middle panel) and 20 hr (right panel) post-reactivation. Red dashed line indicates a cut-off of >2 fold change RIP/input. Red arrow points ORF50. Note that lytic genes are also detected in latent cells (0 hr) due to spontaneous KSHV reactivation and the high sensitivity of deep-sequencing. As expected, significantly lower coverage for these lytic genes was detected during latency compared with lytic replication. (b) RIP for endogenous SND1, FXR1, FXR2, PSIP1, normal rabbit IgG, YTHDF1 and YTHDF3 followed by qRT-PCR detection. ORF50-1, ORF50-2, ORF50-3 and ORF50-4 indicate primers that generate an amplicon spanning the first, second, third and fourth m6A peaks of the second exon of ORF50 RNA, respectively. ORF50-intron generates an amplicon spanning the m6A peak in the ORF50 intron. ORF50 negative primers were designed at the start of the second exon of ORF50 RNA. Fold enrichment is relative to the enrichment of the non-target 18S rRNA. Values are averages, error bars present s.d. For SND1 RIPs, n = 4 independent RIPs, for FXR1, FXR2 and normal rabbit IgG n = 3 independent RIPs. For PSIP1 and YTH proteins, n = 2 independent RIPs. (c–h) Stable cell lines expressing scramble shRNA (scr. KD) or two independent shRNAs targeting SND1 were generated using TREx BCBL1-Rta cells (c–e) or BCBL1 cells (f–h). (c) Cellular and viral RNA levels were measured by qRT-PCR 24 hr post-reactivation. n = 3 independent viral reactivations. Values are averages, error bars present s.d. ***p<0.001 using an unpaired t-test. ns = not significant. (d) Immunoblot analysis of protein lysates from latent or 24 hr reactivated cells. ORF57 antibody detects both full length ORF57 protein (black arrow) and the caspase-7-cleaved form (white arrow). For SND1 detection a rabbit polyclonal antibody was used. Western blots are representative of two independent viral reactivations. (e) Volcano plot displaying viral expression of scramble KD and SND1 KD2 cells 24 hr post-reactivation analysed by RNA-seq. The green arrow highlights the quadrant containing upregulated viral ORFs in depleted cells. The red arrow highlights the quadrant containing downregulated ORFs in depleted cells. The red dashed line denotes the FDR < 1% cut-off. (f) Cellular and viral RNA levels were measured by qRT-PCR 24 hr post-reactivation. n = 3 independent viral reactivations. Values are averages, error bars present s.d. **p<0.01, ***p<0.001 using an unpaired t-test. (g) Immunoblot analysis of protein lysates from latent or 24 hr reactivated cells. Western blots are representative of two independent viral reactivations. (h) Volcano plot displaying viral expression of scramble KD and SND1 KD2 cells 24 hr post-reactivation analysed by RNA-seq. The red and purple dashed lines denote the FDR < 1% and FDR < 5% cut-offs, respectively.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig7-figsupp1-v1.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig7-figsupp2-v1.jpg)
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** ChIP experiments were carried out with latent and lytic (24 hr post-reactivation) BCBL1 cells. 2 µg of either RNAPII (positive control antibody), SND1 antibody or normal rabbit IgG (negative control antibody) were used per immunoprecipitation. The promoter of GAPDH was used as a positive control region to evaluate RNAPII binding. n = 3 independent viral reactivations followed by three independent chromatin immunoprecipitations. Values are averages, error bars present s.d.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** (a, b) BCBL1 cells were transduced with either scramble or METTL3-specific shRNAs. Two days post-transduction media was replaced with puromycin-containing media (3 μg/mL). Following 5 days post-transduction cells were reactivated for 24 hr and viral RNA and protein levels analysed. (c, d) Stable cell lines expressing scramble shRNA (scr. KD) or two independent shRNAs targeting the eraser FTO were generated using BCBL1 cells that had been under puromycin selection for at least 8 days. a, c) Cellular and viral RNA levels were measured by qRT-PCR 24 hr post-reactivation. n = 3 independent viral reactivations. Values are averages, error bars present s.d. *p<0.05, **p<0.01, ***p<0.001 using an unpaired t-test. ns = not significant. (b, d) Immunoblot analysis of protein lysates from latent or 24 hr reactivated cells. ORF57 antibody detects both full length ORF57 protein (black arrow) and the caspase-7-cleaved form (white arrow). Western blots are representative of two independent viral reactivations.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig7-figsupp5-v1.jpg)
+
+**Figure 7—figure supplement 5.:** (a, b) Stable cell lines expressing scramble shRNA (scr.KD) or two independent shRNAs targeting the reader YTHDF1 were generated using BCBL1 cells. (c, d) BCBL1 cells were transduced with either scramble or YTHDF2-specific shRNAs. Following 5 days post-transduction cells were reactivated for 24 hr and viral RNA and protein levels analysed. Note that YTHDF2 protein was noticeably reduced following viral reactivation in scramble KD cells compared with latent scramble KD cells. (e, f) Stable cell lines expressing scramble shRNA (scr. KD) or two independent shRNAs targeting the reader YTHDF3 were generated using BCBL1 cells. a, c, e Cellular and viral RNA levels were measured by qRT-PCR 24 hr post-reactivation. For YTHDF1 and YTHDF2 knockdowns n = 3 independent viral reactivations. For YTHDF3 knockdown n = 4 independent viral reactivations. Values are averages, error bars present s.d. *p<0.05, **p<0.01, ***p<0.001 using an unpaired t-test. ns = not significant. b, d, f Immunoblot analysis of protein lysates from latent or 24 hr reactivated cells. ORF57 antibody detects both full length ORF57 protein (black arrow) and the caspase-7-cleaved form (white arrow). Western blots are representative of two independent viral reactivations.
+
+### SND1 stabilises ORF50 RNA and is essential for KSHV replication
 
 Having established the SND1 RNA-binding topology, we further investigated the role of SND1 in KSHV infection and its relationship with ORF50 RNA. Here, two TREx BCBL1-Rta cell lines with stable shRNA knockdown of SND1 (SND1 KD1 and SND1 KD2) and a shRNA scramble cell line were generated. Surprisingly, following 24 hr of lytic replication there were no significant differences between the scramble and the knockdown cell lines in the amount of KSHV lytic transcripts produced (Figure 7c). In accordance with mRNA levels, RTA and ORF57 proteins were not reduced (Figure 7d). Similarly, the early lytic protein ORF54 was not decreased (Figure 7d). These data were also confirmed by RNA-seq performed in scramble and SND1 KD2 cells from two biological replicates. Following 24 hr of lytic reactivation, expression of the KSHV transcriptome in SND1-depleted cells was not significantly altered from scramble cells, with the exception of upregulation of ORF71 and ORF72 mRNAs (Figure 7e). qRT-PCR analysis confirmed a ~ 4 fold-induction of these transcripts in SND1-depleted cells during the lytic cycle (data not shown). These results possibly suggest that SND1 plays a role in maintaining low expression of these latent RNAs during lytic replication. Importantly, in the presence of overexpressed RTA protein, KSHV lytic replication is essentially unchanged in SND1-depleted TREx BCBL1-Rta cells, thus these cells still fulfil all viral functions necessary for triggering the lytic cascade.
 
@@ -88,7 +176,7 @@ As SND1 has previously been described as a transcriptional activator (Jariwala e
 
 The strikingly different knockdown phenotype between TREX BCBL1-Rta and BCBL1 cells directly points to a potential regulatory role of SND1 on the essential lytic ORF50 RNA, and suggests that SND1 may stabilise the ORF50 RNA. To test this hypothesis without the possible interference of NaB on ORF50 RNA decay, the decay of native (unspliced) ORF50 RNA was monitored in scramble and SND1-depleted TREx BCBL1-Rta cells that had been reactivated into the lytic cycle for 24 hr before addition of actinomycin D. Strikingly, native ORF50 RNA was significantly more unstable in SND1-depleted cells (Figure 8b) with ~80% of ORF50 RNA remaining at 6 hr post-transcription inhibition in scramble cells and ~50% in depleted cells. To further determine whether SND1 may also play a role in regulating the stability of ORF71 and ORF72 RNAs during the KSHV lytic cycle, the turnover of these transcripts together with other high confidence SND1 KSHV RNA targets was also investigated. In contrast to ORF50 RNA, these transcripts decayed in a similar manner in scramble and depleted cells (Figure 8b).
 
-## Removal of m6A in ORF50 RNA impairs SND1 binding to ORF50 RNA
+### Removal of m6A in ORF50 RNA impairs SND1 binding to ORF50 RNA
 
 Due to the broad and overlapping m6A-seq peaks across the ORF50 RNA and the high frequency of DRm6ACH motifs throughout ORF50 RNA, we attempted to deplete global m6A levels in ORF50 RNA by stably depleting METTL3 in BCBL1 cells and assess its effect on lytic replication, however limited depletion was achieved and no significant effect on KSHV lytic replication was observed (data not shown). The same METTL3 knockdowns were repeated in BCBL1 cells but transiently. After five days post-lentiviral transduction, cells were reactivated for 24 hr and viral and protein levels analysed. Here, one METTL3 knockdown cell line (METTL3 KD2) achieved a higher level of depletion of METTL3 protein and viral transcript and protein levels were both significantly reduced compared with the scramble cell line (Figure 7—figure supplement 4a and b). In contrast, a second cell line (METTL3 KD1) showed no depletion of METTL3 protein and no significant differences in viral replication between these cells and the scramble were observed (Figure 7—figure supplement 4a and b).
 
@@ -97,6 +185,14 @@ In addition, we generated stable BCBL1 cell lines harbouring shRNA knockdown of 
 Next, we set out to determine whether the m6A status of ORF50 RNA regulates SND1 binding. Firstly, single-point mutations were performed in the GGACU motifs present in ORF50 baits to elucidate whether the chosen motifs were m6A-modified in the context of the full length ORF50 RNA. Wild type (WT) FLAG-ORF50 -containing both ORF50 exons and the intron- and mutant plasmids were transfected into HEK-293 cells and m6A enrichment quantified by m6A-IP-qPCR (Figure 8c). In transfected cells, ORF50 RNA was particularly m6A-modified in ORF50-1 and ORF50-4 regions, suggesting cell type differences between TREx BCBL1-Rta and HEK-293 cells. Point mutation in the motif contained in ORF50-1 bait, but not in ORF50-4 bait, significantly reduced m6A enrichment, confirming that this site is m6A-modified. Next, the binding of SND1 to WT FLAG-ORF50 and to a FLAG-ORF50 plasmid with a point mutation in the motif contained in ORF50-1 bait was evaluated by RIP. No significant decrease in SND1 binding was observed (Figure 8d), indicating that other SND1 binding sites are necessary for ORF50 RNA-SND1 interaction.
 
 We finally assessed the binding of SND1 to ORF50 RNA in the absence or presence of m6A modification. For this purpose, we made use of the drug 3-deazaadenosine (DAA), which inhibits m6A deposition by reducing levels of the methyl donor S-adenosylmethionine (SAM). HEK-293 cells were transfected with WT FLAG-ORF50 plasmid and 4 hr after transfection, control 0.25% (v/v) DMSO or 200 µM DAA was incubated for an additional 24 hr. Note that DAA did not result in cytotoxicity at this concentration after 26 hr post-treatment (Figure 8—figure supplement 1). DAA effectively reduced m6A enrichment in all m6A-modified regions of ORF50 RNA (Figure 8c) and led to a significant decrease of SND1 binding across ORF50 RNA (Figure 8d). Interestingly, DAA completely abolished SND1 binding to the native ORF50 transcript, indicating that m6A inhibition on ORF50 RNA regulates SND1 binding to it, however the exact points of interaction between SND1 and ORF50 RNA remain to be elucidated at single nucleotide resolution.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig8-v1.jpg)
+
+**Figure 8.:** (a) RNA-seq analysis reveals significant alterations in splicing events between scramble latent and scramble lytic TREx BCBL1-Rta cells (left panel), whilst no significant changes in splicing are observed between scramble and SND1-depleted cells during latency (middle panel) or 24 hr lytic replication (right panel). (b) TREx BCBL1-Rta cells were reactivated for 24 hr into the lytic cycle and transcription was inhibited with the addition of actinomycin D (2.5 μg/ml). Transcripts of interest were measured by qRT-PCR at 0 hr, 3 hr and 6 hr post-transcription inhibition (TI). Each viral gene was normalised against 18S rRNA. Values are averages, error bars present s.d. n = 4 independent viral reactivations. (c) m6A-enrichment was determined by m6A-IP-qPCR. HEK 293 cells were transfected for 24 hr with either wild type (WT) FLAG-ORF50 or a double mutant plasmid in which the GGACT motifs present in the ORF50-1 and ORF50-4 baits were mutated to GGATT. When using DAA, 4 hr after transfection DAA was added at a concentration of 200 µM, and 24 hr post-treatment cells were harvested. % of input was calculated similarly as to ChIP-qPCR analysis. Values are averages, error bars present s.d. *p<0.05, **p<0.01, ***p<0.001 using an unpaired t-test. ns = not significant. For WT ORF50 n = 9 independent m6A-IPs [3 including 0.25% (v/v) DMSO-treatment), for double mutant ORF50 n = 3, for DAA-treated cells n = 3. (d) HEK 293 cells were transfected for 24 hr with either wild type (WT) FLAG-ORF50 or a single mutant plasmid in which the GGACT motif present in the ORF50-1 bait was mutated to GGATT. For DAA-treated cells, 4 hr after transfection DAA was added at a concentration of 200 µM, and 24 hr post-treatment cells were harvested. SND1 enrichment was determined by SND1-RIP-qPCR and is relative to the enrichment found in the non-target 18S rRNA. GAPDH RNA served as an additional non-target RNA. Values are averages, error bars present s.d. For WT and mutant ORF50 n = 4 independent RIPs. For DAA-treated cells n = 3 independent RIPs. *p<0.05, **p<0.01 using an unpaired t-test.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/47261/elife-47261-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (a) MTS assay was performed on HEK-293 cells 26 hr post-3-deazaadenosine (DAA) treatment. Values are averages, error bars present s.d. Data shown is representative of two MTS assays performed on different days. (b) Western blotting of protein lysates from HEK-293 cells 26 hr post-DMSO (0.25% v/v) or 200 µM DAA treatment. PARP antibody detects full length PARP1 (116 kDa) (black arrow) and the cleaved form (89 kDa) (white arrow).
 
 In summary, these experiments propose a model where in the absence of SND1, unspliced ORF50 RNA is more unstable resulting in reduced RTA protein levels which will further reduce activation of the RTA promoter in a negative feedback loop that culminates in lytic replication impairment.
 
@@ -120,69 +216,320 @@ In conclusion, our data supports the hypothesis that highly specialised domains 
 
 ## Materials and methods
 
-## Cell lines and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Thermo Scientific</td>
+      <td>Cat No. C600003</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK-293T</td>
+      <td>ATCC</td>
+      <td>Cat No. CRL-3216</td>
+      <td>The cell line is commercially available at ATCC</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK-293</td>
+      <td>ATCC</td>
+      <td>Cat No. CRL-1573</td>
+      <td>The cell line is commercially available at ATCC</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>TREx BCBL1-Rta</td>
+      <td>A gift of JU Jung (University of Southern California, USA).</td>
+      <td>Nakamura et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>BCBL1</td>
+      <td>A gift from Dr Andrew Hislop (University of Birmingham, UK).</td>
+      <td>Renne et al., 1996</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-m6A (rabbit polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>ABE572</td>
+      <td>m6A-seq and m6A-IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SND1 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>10760–1-AP</td>
+      <td>WB (1:1,000). 2 µg for RIP-seq and RIP 2 µg per ChIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SND1 (mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>60265–1-Ig</td>
+      <td>WB (1:1,000).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FXR1 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>13194–1-AP</td>
+      <td>2 µg per RIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FXR2 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>12552–1-AP</td>
+      <td>2 µg per RIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PSIP1 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>25504–1-AP</td>
+      <td>2 µg per RIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-METTL3 (rabbit polyclonal)</td>
+      <td>Bethyl laboratories</td>
+      <td>A301-567A</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FTO (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab126605</td>
+      <td>WB (1:5,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-YTHDF1 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>17479–1-AP</td>
+      <td>WB (1:1,000) 1 µg per RIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-YTHDF2 (rabbit polyclonal)</td>
+      <td>Abclonal</td>
+      <td>A9639</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-YTHDF3 (rabbit polyclonal)</td>
+      <td>Abclonal</td>
+      <td>A8395</td>
+      <td>WB (1:500) 5.8 µg per RIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ORF57 (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-135746</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RTA (rabbit polyclonal)</td>
+      <td>A gift from Professor David Lukac (Rutgers, New Jersey, USA)</td>
+      <td>Lukac et al., 1998</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ORF54 (mouse monoclonal)</td>
+      <td>A gift from Friedrich Grässer (University of Homburg, Germany)</td>
+      <td>Kremmer et al., 1999</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLAG-ORF50 plasmid (pCDH-CMV-MCS-EF1-Puro) for mammalian expression</td>
+      <td>NovoPro Bioscience</td>
+      <td>Custom made.</td>
+      <td>Purchased from NovoPro, available upon request from the Whitehouse laboratory.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-SND1-C-terminus (residues 548–910) for bacteria expression</td>
+      <td>NovoPro Bioscience</td>
+      <td>Custom made.</td>
+      <td>Purchased from NovoPro, available upon request from the Whitehouse laboratory.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-FXR1-plant agenet (residues 2–132) for bacteria expression</td>
+      <td>NovoPro Bioscience</td>
+      <td>Custom made.</td>
+      <td>Purchased from NovoPro, available upon request from the Whitehouse laboratory.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-PSIP1-PWWP (residues 3–100) for bacteria expression</td>
+      <td>NovoPro Bioscience</td>
+      <td>Custom made.</td>
+      <td>Purchased from NovoPro, available upon request from the Whitehouse laboratory.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-CBX3-Chromo (residues 29–86) for bacteria expression</td>
+      <td>NovoPro Bioscience</td>
+      <td>Custom made.</td>
+      <td>Purchased from NovoPro, available upon request from the Whitehouse laboratory.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mission TRC shRNA SND1 KD1</td>
+      <td>Sigma</td>
+      <td>TRCN0000245143</td>
+      <td>Mission TRC shRNA bacterial glycerol stock commercially available from Sigma</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mission TRC shRNA SND1 KD2</td>
+      <td>Sigma</td>
+      <td>TRCN0000049656</td>
+      <td>Mission TRC shRNA bacterial glycerol stock commercially available from Sigma</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA fragmentation reagent</td>
+      <td>Thermo Scientific</td>
+      <td>AM8740</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce chromatin prep module</td>
+      <td>Thermo Scientific</td>
+      <td>26158</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LightShift chemiluminescent RNA EMSA Kit</td>
+      <td>Thermo Scientific</td>
+      <td>20158</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ-ChIP</td>
+      <td>Merck Millipore</td>
+      <td>17–371</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA-free DNA Removal Kit</td>
+      <td>Thermo Scientific</td>
+      <td>AM1906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-deazaadenosine (DAA)</td>
+      <td>Cambridge Bioscience</td>
+      <td>9000785–5 mg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>m6aViewer 1.6 software</td>
+      <td>dna2.leeds.ac.uk/m6a/</td>
+      <td>Antanaviciute et al., 2017</td>
+      <td>Published in the RNA journal. 2017 Oct; 23(10): 1493–1501.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Magna ChIP Protein A+G magnetic beads</td>
+      <td>Merck Millipore</td>
+      <td>16–663</td>
+      <td>Used for m6A-seq and RIP-seq</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and reagents
 
 HEK-293T and HEK-293 cells were purchased from ATCC (American Type Culture Collection) and cultured in Dulbecco’s modified Eagle’s medium with glutamine (DMEM, Lonza) supplemented with 10% (v/v) fetal calf serum (FCS) (Gibco) and 1% (v/v) penicillin-streptomycin (P/S) (Gibco). TREx BCBL1-Rta cells, a BCBL1-based, primary effusion lymphoma (PEL) B cell line that has been engineered to inducibly express exogenous Myc-tagged RTA by the addition of doxycycline, were a gift of JU Jung (University of Southern California, USA). BCBL1 cells were a gift from Dr Andrew Hislop (University of Birmingham, UK). BCBL1 cells were grown in RPMI1640 growth medium with glutamine (Gibco) supplemented with 10% (v/v) FCS (Gibco) and 1% (v/v) P/S (Gibco). TREx BCBL1-Rta cells were grown in RPMI1640 growth medium with glutamine (Gibco) supplemented with 10% (v/v) FCS, (Gibco), 1% P/S (v/v) (Gibco) and 100 μg/mL hygromycin B (Thermo Scientific). All cell lines were tested negative for mycoplasma. For virus reactivation, TREx BCBL1-Rta cells were induced using 2 μg/mL doxycycline hyclate (Sigma-Aldrich) and BCBL1 cells were induced using 2 mM sodium butyrate (Sigma-Aldrich). Antibodies used in Western blotting are listed below: anti-SND1 (Proteintech, 10760–1-AP, 1:1,000); anti-SND1 (Proteintech, 60265–1-Ig, 1:1,000); anti-METTL3 (Bethyl, A301-567A, 1:500); anti-FTO (Abcam, ab126605, 1:5,000); anti-YTHDF1 (Proteintech, 17479–1-AP, 1:1,000); anti-YTHDF2 (Abclonal A9639, 1:500); anti-YTHDF3 (Abclonal, A8395, 1:500); anti-ORF57 (Santa Cruz, sc-135746 1:1,000); anti-GAPDH (Abcam, ab8245 1:5,000); anti-PARP (CST, 9542 1:2,500), the rabbit polyclonal anti-RTA was a gift from Professor David Blackbourn (University of Surrey, UK) and used at 1:1000. The mouse monoclonal anti-ORF54 was a gift from Friedrich Grässer (University of Homburg, Germany) and used at 1:1000. Rabbit anti-m6A antibody (ABE572) (Merck Millipore) was used in m6A-immunoprecipitations. Antibodies used in RIP are as follows: anti-SND1 (Proteintech, 10760–1-AP); anti-FXR1 (Proteintech, 13194–1-AP); anti-FXR2 (Proteintech, 12552–1-AP); anti-PSIP1 (Proteintech, 25504–1-AP); anti-YTHDF1 (Proteintech, 17479–1-AP); anti-YTHDF3 (Abclonal, A8395) and normal rabbit IgG (Merck Millipore, 12–370). 3-deazaadenosine (DAA) was purchased from Cambridge Bioscience. For RIPs, either 2 µg of anti-SND1, FXR1, FXR2, PSIP1 or normal rabbit IgG were used per RNA immunoprecipitation. For YTHDF1 and YTHDF3, 1 and 5.8 µg were used per immunoprecipitation respectively. For ChIP experiments, 2 µg of α-RNAPII (clone CTD4H8) antibody (Merck Millipore), anti-SND1 (Proteintech, 10760–1-AP) or normal rabbit IgG (Merck Millipore, 12–370) were used per chromatin immunoprecipitation. The same lot number (00020506) of SND1 antibody (Proteintech, 10760–1-AP) was used for western blot, RIP-seq, RIP-qPCR and ChIP experiments.
 
-## m6A-seq
+### m6A-seq
 
 Total RNA from TREx BCBL1-Rta cells was extracted using TRIzol (Thermo Scientific) according to the supplier’s protocol. DNA-free DNA Removal Kit (Ambion) was used to remove any contaminating DNA from RNA samples. Isolated RNA was purified by standard ethanol precipitation and 100 μg of total RNA was fragmented with RNA fragmentation reagent (Ambion) according to the manufacturer’s protocol. Fragmented RNA was ethanol-precipitated and re-suspended in 10 μl of RNase-free water and stored at −80°C. 2 μg of total fragmented RNA was saved as input RNA for later use in cDNA library construction. For each m6A-immunoprecipitation (m6A-IP), 25 μl of slurry of Magna ChIP Protein A+G magnetic beads (Merck Millipore) were washed twice with IP/wash buffer [20 mM Tris HCl pH 7.4, 150 mM NaCl, and 0.1% NP-40 (v/v)]. Beads were re-suspended in 100 μl of IP/wash buffer and coated with 5 μg of rabbit anti-m6A antibody (ABE572) (Merck Millipore) for 45 min at room temperature with rotation. Beads were then washed three times with IP/wash buffer and IPs were prepared by mixing the antibody-coated beads with 900 μl of IP/wash buffer, 35 μl of 0.5 M EDTA pH 8.0, 4 μl of RNasin Plus (Promega) and 100 μg of fragmented RNA. IPs were incubated overnight at 4°C with rotation. Beads were then washed six times with IP/wash buffer. IP samples were further incubated with 126 μl of IP/wash buffer, 15 μl of 10% SDS (v/v) and 9 μl of PCR-grade proteinase K (20 mg/mL) (Thermo Scientific) for 30 min at 55°C. After incubation, the supernatant containing the RNA was transferred to a new microcentrifuge tube and 250 μl of IP/wash buffer was added to each sample. RNA was purified with the use of phenol:chloroform:isoamyl alcohol (Sigma-Aldrich) and finally sodium acetate/ethanol-precipitated together with 1 µl of RNA-grade glycogen (Thermo Scientific) to allow visualisation of the RNA pellet. Several m6A-IPs (four to six) were pooled to provide enough sample for cDNA library construction and next-generation sequencing (NGS) as described below. 1.5 to 3 ng of RNA from input and m6A-IPs were used for NGS library production using NEBNext Ultra kit (NEB) according to the manufacturer’s protocol. Libraries for the first biological replicate were sequenced on a HiSeq 2500 platform (Illumina) with 101 bp paired-end lane. Libraries from the second biological replicate were sequenced on a HiSeq 3000 platform (Illumina) with 151 bp paired-end lane. For m6A-seq two independent biological replicates were prepared for each time point analysed (0 hr, 8 hr and 20 hr post-reactivation).
 
-## RIP-seq
+### RIP-seq
 
 TREx BCBL1-Rta cells remained unreactivated or were reactivated for 8 or 20 hr. At the desired time point a fraction of the cells was removed to serve as input RNA to control for RNA expression and stored in TRIzol (Thermo Scientific) at −80°C. For each RNA immunoprecipitation (RIP), 7 × 106 cells were used. Cells were fixed with 1% (v/v) formaldehyde (Calbiochem) for 10 min at room temperature. Crosslinking was stopped by addition of glycine at a final concentration of 125 mM for 5 min. Cells were washed with PBS (Lonza) and re-suspended in 200 μl of ice-cold shearing buffer [50 mM Tris HCl pH 7.4, 100 mM NaCl and 0.1% (v/v) NP-40] supplemented with Complete, EDTA-free protease inhibitors (Roche) and 1 µl of murine RNase inhibitor (NEB). Samples were then sonicated with an EpiShear multi-sample sonicator (Active Motif) with pulses of 30 s of sonication followed by a 30 s rest for a total of 12 min at 30% amplitude. Polystyrene sonication tubes (Active Motif) were used to achieve efficient sonication. After sonication, samples were centrifuged at 12,000 x g for 10 min at 4°C and the supernatant was used immediately in RIPs. For each RIP, 25 μl of slurry of Magna ChIP Protein A+G magnetic beads (Merck Millipore) were coated with the antibody of interest as previously described for m6A-seq. RIPs were prepared by mixing the antibody-coated beads with 800 μl of IP/wash buffer [20 mM Tris HCl pH 7.4, 150 mM NaCl, and 0.1% NP-40 (v/v)], 35 μl of 0.5 M EDTA pH 8.0, 4 μl of murine RNase inhibitor (NEB) and 200 μl of lysate containing fragmented RNA. RIPs were incubated for 3 hr at 4°C with rotation. Beads were then washed six times as previously described (Gilbert and Sj, 2006). RIP samples were then further incubated with 200 μl of IP/wash buffer, 2 μl of PCR-grade proteinase K (20 mg/mL) (Thermo Scientific), 4 μl of 5M NaCl and 0.5 μl of murine RNase inhibitor (NEB) for 1 hr at 60°C. After incubation, the supernatant containing the RNA was transferred to a new microcentrifuge tube and 50 μl of IP/wash buffer was added to each sample. RNA was purified as described for m6A-seq but instead of using phenol:chloroform:isoamyl alcohol for purification, TRIzol LS (Thermo Scientific) was used according to the manufacturer’s instructions. DNA-free DNA Removal Kit (Ambion) was used to remove any contaminating DNA from RIP RNA samples. Total RNA from input samples was isolated with the use of TRIzol (Thermo Scientific) according to the supplier’s protocol and treated with DNase I using the DNA-free DNA Removal Kit (Ambion). Input RNA was saved without applying sonication because we observed lower quality sequencing libraries when using sonicated input RNA than when using input RNA that was heat-fragmented. Saved input RNA was therefore heat-fragmented for 8 min at 94°C before proceeding with library construction. Due to the large size of RNA fragments observed after SND1 immunoprecipitation, isolated RNA from RIP samples was further fragmented for 7 min at 94°C before first strand synthesis. 100 to 200 ng of each input and RIP sample was used for NGS libraries which were made using the TruSeq Stranded Total RNA library production kit (Illumina) according to the manufacturer’s protocol. All samples were multiplexed and sequenced on two 151 bp paired-end lanes on a HiSeq 3000 instrument (Illumina). For RIP-seq, two independent biological replicates were prepared for each time point analysed (0 hr, 8 hr and 20 hr post-reactivation). Additionally, for one biological replicate, two technical replicates were deep-sequenced for all RIP samples. A third biological replicate RIP sample at 0 hr was also deep-sequenced.
 
-## RNA-seq
+### RNA-seq
 
 NGS libraries were generated from two independent biological replicates using scramble and SND1 KD2 TREx BCBL1-Rta cells both during latency and after 24 hr of lytic reactivation. Two independent biological replicates from scramble and SND1 KD2 BCBL1 cells both during latency and after 24 hr of lytic reactivation were also deep-sequenced. Libraries were made using TruSeq Stranded Total RNA library preparation kit (Illumina) according to the manufacturer’s protocol. Libraries were sequenced on 151 bp paired-end lanes on a HiSeq 3000 instrument (Illumina).
 
-## m6A-IP-qPCR and RIP-qPCR
+### m6A-IP-qPCR and RIP-qPCR
 
 m6A-IPs and RIPs were carried out as described above respectively, with the following modification. 1% input samples (10 μl from the 1 mL IP reaction) were removed before immunoprecipitation and stored at −80°C. Input samples were processed together with immunoprecipitated samples from the proteinase K treatment onwards. Purified input and immunoprecipitated RNA was resuspended in 10 μl of RNase-free water and reverse transcribed as described in the RT-qPCR analysis section. qPCR normalisation was performed similarly to chromatin immunoprecipitation (ChIP) coupled to detection by qPCR analysis using ΔΔCt method (relative quantification). An example for m6A-IPs follows. Each m6A-IP sample Ct value for each primer used was normalised to the corresponding input Ct value: ΔCt normalised m6A-IP = Ct m6A-IP – [Ct Input –log2 (Input dilution factor)]. Input dilution factor = (fraction of the input reaction saved)−1. As 1% input was saved, the dilution factor is 100 or 6.644 cycles (i.e. log2 of 100). Percentage of recovery from the initial reaction (% input) was then calculated for each primer as 100 x Amplification efficiency (AE) (-ΔCt normalised m6A-IP). m6A enrichment was finally calculated as the fold change between the % input for a region containing m6A peaks over the % input for a negative control region. SND1 enrichment was calculated as the fold change between the % input for a region of interest over the % input for a region of a non-target control RNA such as 18S rRNA. For HEK-293 cells, RIP-qPCR was performed the same way as described for TREx BCBL1-Rta cells with the exception that the sonication time was reduced to eight min and 50 μg of fragmented RNA were used per IP.
 
-## Processing of raw deep-sequencing data and quality control
+### Processing of raw deep-sequencing data and quality control
 
 All m6A-seq, RIP-seq and RNA-seq data were generated at the next-generation sequencing facility of the University of Leeds, United Kingdom. Data were extracted and de-multiplexed using bcl2fastq Conversion software (Ilumina), which exports a matched pair (read 1 and read 2) of compressed fastq files per sample. Quality control of all sequence data, including publicly available datasets, was carried out using FastQC software (Andrews, 2010), which allowed the identification of sequence adapter contamination, overrepresented sequences, estimation of the PCR and optical duplicate rate and overall sequencing quality. All raw sequence data were then processed using Cutadapt software (Martin, 2011) in order to remove poor quality bases (quality score less than 20) as well as Illumina universal sequencing adapter sequence (AGATCGGAAGAG) from the 3’ end of reads. Orphan read pairs were discarded. Reads shorter than 25 bp after trimming were discarded to limit ambiguous alignments in downstream processing.
 
-## Next-generation sequencing data alignment and quality control (QC)
+### Next-generation sequencing data alignment and quality control (QC)
 
 The KSHV reference genome sequence was downloaded in FASTA format from the NCBI website, while a gene transfer format (GTF) file containing genomic feature coordinates (ORFs, genes, exons, UTRs) was assembled manually using data from the KSHV 2.0 annotation dataset (Arias et al., 2014). The human hg38 reference genome sequence was downloaded from the FTP-UCSC genome browser (Kent et al., 2002) in FASTA format. The human hg38 genome annotation was downloaded using the UCSC Table Browser Tool (Karolchik, 2004). KSHV data were manually added to the human reference FASTA and GTF files as an additional contig. The genome sequences in the merged FASTA file were indexed for alignment using STAR software (Dobin et al., 2013). Paired-end sequence data was subsequently aligned to this index using the splice-aware read aligner STAR, in paired-end, two-pass mode. Aligned reads in binary alignment map (BAM) format were sorted by coordinate and indexed using Samtools (Li et al., 2009) and PCR and optical duplicates flagged for additional QC checks (but not removed) using Picard Tools software. Additional QC metrics were assembled and assessed using multiQC software (Ewels et al., 2016).
 
-## m6A-seq data analysis
+### m6A-seq data analysis
 
 m6A peaks were called using m6aViewer software version 1.6 (Antanaviciute et al., 2017) with default settings and exported to tab-delimited format for additional analyses in R. To define significantly enriched m6A peaks in both viral and cellular RNAs, a minimum fold change of m6A-IP reads over input reads of ≥1.5 in addition to a false discovery rate of 5% (FDR < 5%) was required in both biological replicates. Peaks positions were considered overlapping between replicates if the calls were within 100 nucleotides between corresponding positions. To determine the number of SND1 RNA targets identified by transcript-wide analysis that are m6A-modified, a more stringent m6A peak calling cut-off was used to compliment a more stringent SND1 RIP cut-off, with a minimum of 100 read paired at the tallest point in the m6A peak and a 2-fold enrichment of m6A-IP reads over input reads using a FDR < 1%. For target overlap between heterologously expressed YTH readers and SND1, high-confidence SND1-bound genes (summarised at HGNC gene symbol annotation level, where multiple Ensembl genes mapped to a symbol, the longest was used) were defined at a cut-off of FDR < 1% and a minimum of 2-fold RIP enrichment over input, while m6A peaks were used as before (FDR < 5%, 1.5 fold minimum enrichment in both replicates).
 
 Peak motif discovery was performed by exporting the flanking 100 base of RNA sequence surrounding peaks in KSHV methylome to a FASTA file using m6aViewer software. Sequences containing repetitive viral sequence were removed. The remaining data was then used for enriched sequence motif detection using the MEME software (Bailey et al., 2009), with scrambled sequences used as a control. KSHV methylome maps were produced using custom Java code.
 
-## RIP-seq data analysis
+### RIP-seq data analysis
 
 SND1 binding sites were initially identified at transcript-level resolution by counting reads in the SND1 immunoprecipitated (RIP) and input (control) sample data that mapped to each RefSeq and KSHV transcripts. R package Rsubread (Liao et al., 2014) was used to obtain raw read counts as follows. Each uniquely mapping read pair was counted towards the total transcript count for each sample, while multi-mapping reads were counted as partial reads, based on the number of mapped positions. Since the library preparation protocol preserved the strand of the original RNA molecule, only ‘correctly’ stranded read pairs were counted for each transcript. DESeq2 R package (Love et al., 2014) was used to normalise the data and identify transcripts that showed a significant increase in the coverage of the normalised RIP samples when compared to the input controls. In order to increase the resolution of the SND1-bound regions, custom Java code was used that identified transcriptome regions that were enriched in the RIP data when compared to the control data. Initially, the application segmented regions into intronic or exonic sequences: a region was classified as exonic if the sequence was present in at least one mature transcript. The per-base raw read coverage was determined for both intronic and exonic sequences and normalised using the size factors determined from the earlier normalisation step (DESeq2) to account for library compositions and sizes. Using a sliding window approach, first each mature transcript or intron was divided into contiguous segments that loosely showed putative enrichment in the RIP data (>1 fold enrichment) compared to the input data and those that putatively were depleted in (or equal to) RIP (≤1 fold enrichment). Low coverage segments (<20 reads in RIP) were filtered out as quality control. All data from the different samples in the analysis were then merged to generate a single dataset that contained read depth data for all consensus segments identified this way, both intronic and exonic. Each segmented region was subsequently treated as an individual ‘gene’ for re-analysis using DESeq2, specifically testing for RIP signal enrichment over input (alternative hypothesis: normalised segment read coverage in RIP greater than in input) in order to identify regions with a significant increase in RIP over input signal.
 
-## Differential expression and functional enrichment analyses
+### Differential expression and functional enrichment analyses
 
 Differential expression analyses were performed in R using DESeq2 package. Functional enrichment analyses were performed using the clusterProfiler R package (Yu et al., 2012), using the significance cut-off of <0.05 (Benjamini-Hochberg corrected p-values), with all expressed/detected genes (at least one mapped read pair) used as a background control.
 
-## Splicing analysis
+### Splicing analysis
 
 Alternative splicing events were detected using Comprehensive AS Hunting (CASH) (Wu, 2017). In addition, the lack of statistically significant splicing events between scramble and SND1-depleted TREx BCBL1-Rta cells highlighted by CASH was also confirmed using Spladder software (Kahles et al., 2016) and DEXSeq R package (Anders et al., 2012) for detecting differential exon usage (data not shown). Read coverage and splicing graphs were visualised using Integrative Genomics Viewer (IGV) (Robinson et al., 2011).
 
-## Publicly available deep-sequencing data
+### Publicly available deep-sequencing data
 
 Data downloaded from public repositories were aligned as above, except without the addition of KSHV sequence to the reference genome. The following data were obtained from NCBI’s GEO database as raw FASTQ files: HeLa cell line YTHDF1 PAR-CLIP data, two replicates (accessions: GSM1553242, GSM1553243); HeLa cell line YTHDF2 PAR-CLIP data, three replicates (accessions: GSM1197605, GSM1197606, GSM1197607); HeLa cell line YTHDF3 PAR-CLIP data, three replicates (accessions: GSM2424844, GSM2424845, GSM2424846). HepG2 cell line m6A-seq data, four replicates (accessions: GSM2409802, GSM2409803, GSM2715523, GSM2715524). Two replicates of each eCLIP experiment were obtained from the ENCODE database as narrowPeak bed files: HepG2 FXR2 (accessions: ENCFF702QGF, ENCFF638WRZ); HepG2 SND1 (ENCFF471JAQ, ENCFF761CYV); IGF2BP1 (accessions: ENCFF705SDK, ENCFF145YYK); IGF2BP3 (accessions: ENCFF076GHL, ENCFF998WZW); TIAL1 (accessions: ENCFF302ROS, ENCFF467UOO).
 
-## eCLIP analysis
+### eCLIP analysis
 
 Binding sites from eCLIP experiments were downloaded from ENCODE as narrowPeak bed files. Clusters from replicate one which directly overlapped clusters in replicate two were extracted and kept for downstream analyses. To look at overlaps between eCLIP sites and m6A peaks, HepG2 RIP-seq data was processed with m6aViewer 1.6 software, using default settings, and overlapping peaks, containing a ≥ 1.5 fold increase of m6A-IP reads over input with a FDR < 5% across both replicates were kept. De novo motif analysis of HepG2 m6A-seq and eCLIP sites was performed by feeding peaks into the findMotifsGenome.pl function within the HOMER suite (version 4.9.1) using parameters ‘-rna -len 5’. For SND1 motif discovery over m6A exonic regions, exons containing m6A-seq peaks were identified and these whole exon sequences were screened for SND1 peaks. The SND1 peaks within this set of m6A-modified exons were used for motif discovery.
 
-## Supplementary m6A-seq and RIP-seq data
+### Supplementary m6A-seq and RIP-seq data
 
 Excel data sheet for all m6A peaks called in both biological replicates is supplied as Supplementary file 4. Excel data sheet for all SND1 targets identified by transcript-wide analysis is supplied as Supplementary file 5.
 
-## Data availability
+### Data availability
 
 All deep-sequencing data discussed in this publication have been deposited in NCBI’s GEO Database, GEO accession number GSE119026. All identified peptides/PSMs for each RNA bait can be found in Supplementary file 7–15.
 
-## RNA affinity chromatography and RNA baits sequences
+### RNA affinity chromatography and RNA baits sequences
 
 The following biotin-labelled RNA oligonucleotides were centred on the closest GGACU motif to the m6A peaks detected in ORF37 and ORF50 transcripts. For each oligo, one oligo was m6A-modified at the GGACU motif while the control bait remained unmodified. For the ORF37 bait the sequences used were: 5´-biotin-CGGAAAGCUGGCACUGAAGG-m6A-CUUCUUCUAUAGCAUUUCCA-3´ and 5´-biotin-CGGAAAGCUGGCACUGAAGGACUUCUUCUAUAGCAUUUCCA-3´. Baits spanning an m6A consensus in the first m6A peak identified in ORF50 (ORF50-1) were: 5´-biotin-UUUGCCAAUCCUGGAGCCAGG-m6A-CUGUUGCCGGCUUCCAUGGUA-3´ and 5´-biotin-UUUGCCAAUCCUGGAGCCAGGACUGUUGCCGGCUUCCAUGGUA-3´. The sequences for baits spanning an m6A consensus in the fourth m6A peak identified in ORF50 (ORF50-4) were: 5´-biotin-GUUGUCCAGUAUUCUGCAAGG-m6A-CUGUACCAGCUGGACACGCCA-3´ and 5´-biotin-GUUGUCCAGUAUUCUGCAAGGACUGUACCAGCUGGACACGCCA-3´. Cropped versions of ORF50-1 (cORF50-1) were: 5´-biotin-GGAGCCAGG-m6A-CUGUUGCCGGCUUC-3´ and 5´-biotin-GGAGCCAGGACUGUUGCCGGCUUC-3´. Stable versions of ORF50-1 (sORF50-1) were: 5´-biotin-UUGGCCCAUCCCGGAGCCAGG-m6A-CUGUUGCCGGCUUCCGGGGCC-3´ and 5´-biotin-UUGGCCCAUCCCGGAGCCAGGACUGUUGCCGGCUUCCGGGGCC-3´.
 
@@ -190,7 +537,7 @@ All baits were purchased from Integrated DNA Technologies (IDT).
 
 TREx BCBL1-Rta cells were reactivated with doxycycline for 24 hr followed by lysis of the cells for 25 min in lysis buffer [10 mM NaCl, 2 mM EDTA, 0.5% (v/v) triton X-100, 0.5 mM DTT and 10 mM Tris HCl, pH 7.4] containing complete protease inhibitor cocktail (Roche) and phosphatase inhibitor cocktail 2 (Sigma-Aldrich). Lysates were centrifuged at 4°C for 10 min at 12,000 x g to pellet cell debris and the supernatant was kept. 1000 µg of protein per pull-down in an approximate volume of 200 µl were supplemented with 40 units of RNasin Plus (Promega) and 50 µg of yeast tRNA (Sigma-Aldrich) and pre-cleared with 30 µl (resin volume) of streptavidin-conjugated agarose beads (Merck Millipore) for 3 hr at 4°C with rotation. The final volume of the binding reaction was topped to 1 mL with binding buffer (150 mM KCl, 1.5 mM MgCl2, 0.05% (v/v) NP-40, 0.5 mM DTT, 10 mM Tris HCl, pH 7.4). While pre-clearing, 30 µl (resin volume) of streptavidin-conjugated agarose beads per pull-down were blocked with 1% (w/v) BSA (Sigma-Aldrich) in PBS (Lonza) and 50 µg of yeast tRNA (Sigma-Aldrich). Pre-cleared lysates were then mixed with the blocked beads and 4 µg of each biotinylated RNA oligo were added per pull-down. Input samples were immediately collected and stored at −80°C until further use. RNA baits were incubated for 2 hr at 4°C with rotation followed by five washes with binding buffer. Proteins were released from the beads by heating at 95°C for 5 min in 30 µl of 2 X Laemmli sample buffer. Input and pull-down samples were used for either Western blotting or LC-MS/MS analysis.
 
-## Mass spectrometry analysis
+### Mass spectrometry analysis
 
 LC-MS/MS was performed at the proteomics facility of the University of Bristol, United Kingdom. Samples were separated using SDS-PAGE until the dye front had migrated approximately one centimetre into the separating gel. Each gel lane was then excised and subjected to in-gel tryptic digestion using a DigestPro automated digestion unit (Intavis Ltd.). The resulting peptides were fractionated using an Ultimate 3000 nano-LC system in line with an LTQ-Orbitrap Velos mass spectrometer (Thermo Scientific). In brief, peptides in 1% (v/v) formic acid were injected onto an Acclaim PepMap C18 nano-trap column (Thermo Scientific). After washing with 0.5% (v/v) acetonitrile 0.1% (v/v) formic acid, peptides were resolved on a 250 mm ×75 μm Acclaim PepMap C18 reverse phase analytical column (Thermo Scientific) over a 150 min organic gradient, using seven gradient segments (1–6% solvent B over 1 min., 6–15% B over 58 min., 15–32%B over 58 min., 32–40%B over 5 min., 40–90%B over 1 min., held at 90%B for 6 min and then reduced to 1%B over 1 min.) with a flow rate of 300 nl min−1. Solvent A was 0.1% formic acid and Solvent B was aqueous 80% acetonitrile in 0.1% formic acid. Peptides were ionised by nano-electrospray ionisation at 2.1 kV using a stainless-steel emitter with an internal diameter of 30 μm (Thermo Scientific) and a capillary temperature of 250°C. Tandem mass spectra were acquired using an LTQ- Orbitrap Velos mass spectrometer controlled by Xcalibur 2.1 software (Thermo Scientific) and operated in data-dependent acquisition mode. The Orbitrap was set to analyse the survey scans at 60,000 resolution (at m/z 400) in the mass range m/z 300 to 2000 and the top twenty multiply charged ions in each duty cycle selected for MS/MS in the LTQ linear ion trap. Charge state filtering, where unassigned precursor ions were not selected for fragmentation, and dynamic exclusion (repeat count, 1; repeat duration, 30 s; exclusion list size, 500) were used. Fragmentation conditions in the LTQ were as follows: normalised collision energy, 40%; activation q, 0.25; activation time 10 ms; and minimum ion selection intensity, 500 counts. The raw data files were processed and quantified using Proteome Discoverer software v1.4 (Thermo Scientific) and searched against the UniProt Human database (downloaded October 2015; 131351 sequences) plus KSHV protein sequences using the SEQUEST algorithm. Peptide precursor mass tolerance was set at 10ppm, and MS/MS tolerance was set at 0.8 Da. Search criteria included carbamidomethylation of cysteine (+57.0214) as a fixed modification and oxidation of methionine (+15.9949) as a variable modification. Searches were performed with full tryptic digestion and a maximum of 1 missed cleavage was allowed. The reverse database search option was enabled and all peptide data was filtered to satisfy false discovery rate (FDR) of 5%.
 
@@ -198,44 +545,44 @@ Comparative reports were produced between methylated and control RNA baits, the 
 
 Gene-annotation enrichment analysis were performed with The Database for Annotation, Visualisation and Integrated Discovery (DAVID) v6.8.
 
-## RNA secondary structure prediction
+### RNA secondary structure prediction
 
 RNA secondary structure prediction of baits was carried out using UNAfold web server (Zuker, 2003).
 
-## Recombinant protein expression
+### Recombinant protein expression
 
 All recombinant proteins were gene synthesised (NovoPro Bioscience), cloned into pGEX-4T-1 vector (NovoPro Bioscience) and expressed in E. coli strain BL21-DE3 (Thermo Scientific). GST-recombinant proteins contained the FXR1 plant agenet domain (residues 2–132) which includes Agenet1 and Agenet2 in tandem, the PSIP1 PWWP domain (residues 3–100) or the CBX3 chromodomain (residues 29–86). SND1-C-terminus comprises of residues 548–910. Recombinant GST plasmid was commercially available (GE healthcare). Recombinant proteins were produced by lowering the temperature to 18°C and inducing the culture with 0.2 mM IPTG for 20 hr. Bacteria pellet from 1 L culture was re-suspended with 30 mL of lysis buffer [50 mM Tris HCl, pH 7.5, 150 mM NaCl, 0.05% (v/v) NP-40 and freshly added 0.25 mg/mL lysozyme (Sigma-Aldrich)] and incubated on ice for 45 min. The lysate was then sonicated using a MSE Soniprep 150 sonicator (12 cycles of 20 s pulse-on and 20 s pulse-off). The lysate was centrifuged at 12,000 x g for 15 min at 4°C. The supernatant was incubated with glutathione agarose beads (GE healthcare) for 2 hr at 4°C. The resin was washed twice with lysis buffer and once with 50 mM Tris HCl, pH 7.4. Protein was eluted from the beads using 50 mM Tris HCl with 20 mM reduced glutathione (Sigma-Aldrich) that had been adjusted to a final pH of 7.4.
 
-## Electrophoretic mobility shift assays (EMSAs)
+### Electrophoretic mobility shift assays (EMSAs)
 
 EMSAs were carried out using LightShift chemiluminescent RNA EMSA Kit (Thermo Scientific) according to the manufacturer’s instructions. Binding reactions consisted of kit supplied 1 X binding buffer (10 mM HEPES, pH 7.3, 20 mM KCl, 1 mM MgCl2 and 1 mM DTT) supplemented with 5% (v/v) glycerol. For EMSAs in the presence of herring sperm DNA (Promega), DNA was mixed and incubated in the binding reaction. Note that this sperm DNA is provided after phenol-chloroform extraction, ethanol precipitation and sonication, which produces single-stranded fragments. Binding reactions were incubated with increasing amounts of recombinant protein which was freshly isolated (e.g. no more than two days after purification from bacteria and stored at 4°C). The same biotinylated baits used in the RNA affinity experiments were used for EMSAs. All baits were used at 3.75 nM oligo final concentration, except for cORF50-1 which was used at 16 nM. Binding reactions were incubated for 30 min at room temperature. 10 µl reactions were mixed with 2 µl of 5 X loading dye and 10 µl were loaded onto a 6% (w/v) non-denaturing polyacrylamide gel in 1 X TAE buffer (40 mM Tris, 20 mM acetate and 1 mM EDTA/NaOH pH 8.0). Gels were ran for 45 min at 100V and transferred to a nylon membrane (GE healthcare) via wet transfer with 1 X TAE as transfer buffer for 45 min at 400 mA. RNA was crosslinked to the membrane at 120mJ/cm2 using a CL-1000 ultraviolet crosslinker (UVP). The rest of the protocol was performed as described in the kit manual. Biotinylated baits were visualised after exposure to an ultra-sensitive ECL (SuperSignal west femto maximum sensitivity substrate) (Thermo Scientific) and exposed to Amersham hyperfilm ECL (GE Healthcare).
 
-## Site-directed mutagenesis
+### Site-directed mutagenesis
 
 A FLAG tag ORF50 gene which included both ORF50 exons and the ORF50 intron cloned into a pCDH-CMV-MCS-EF1-Puro vector was purchased from NovoPro Bioscience. Single point mutations in this plasmid were generated using QuickChange II site-directed mutagenesis kit (Stratagene) according to the manufacturer’s instructions. All plasmids containing the desired mutation were confirmed by DNA sequencing (Eurofins Genomics). To mutate the GGACT motif present in ORF50-1 bait the following primers were used: TCCTGGAGCCAGGATTGTTGCCGG (forward), CCGGCAACAATCCTGGCTCCAGGA (reverse). To mutate the GGACT motif present in ORF50-4 bait these primers were used: TCCAGTATTCTGCAAGGATTGTACCAGCTGGACAC (forward), GTGTCCAGCTGGTACAATCCTTGCAGAATACTGGA (reverse).
 
-## shRNA stable cell lines
+### shRNA stable cell lines
 
 Lentiviruses were generated by transfection of HEK-293T cells seeded in 12-well plates using a three-plasmid system. Per 12-well, 4 µl of lipofectamine 2000 (Thermo Scientific) were used together with 1 µg of pLKO.1 plasmid expressing shRNA against the protein of interest, 0.65 µg of pVSV.G, and 0.65 µg psPAX2. pVSV.G and psPAX2 were a gift from Dr. Edwin Chen at the University of Leeds. 8 hr post-transfection, medium was changed into 1.5 mL of DMEM supplemented with 10% (v/v) FCS. Two days post-transfection viral supernatants were harvested, filtered through a 0.45 µm filter (Merck Millipore) and immediately used for transductions of TREx BCBL1-Rta or BCBL1 cells. One mL of each 12-well plate was used to infect 500,000 cells by spin inoculation for 60 min at 800 x g at room temperature, in the presence of 8 μg/mL of polybrene (Merck Millipore). Virus supernatant was removed after 7 hr post-spin inoculation and cells were maintained in fresh growth medium for 48 hr before undergoing 3 µg/mL puromycin (Sigma-Aldrich) selection. Stable cell lines were generated after 8 days post-selection when cell stocks were frozen. The following shRNAs were used in the experiments: SND1 KD1 (TRCN0000245143), SND1 KD2 (TRCN0000049656), METTL3 KD1 (TRCN0000289742), METTL3 KD2 (TRCN0000289812), FTO KD1 (TRCN0000246247), FTO KD2 (TRCN0000246250), YTHDF1 KD1 (TRCN0000062771), YTHDF1 KD2 (TRCN0000286871), YTHDF2 KD1 (TRCN0000254411), YTHDF2 KD2 (TRCN0000265510), YTHDF3 KD1 (TRCN0000365164) and YTHDF3 KD2 (TRCN0000167772).
 
 All shRNA plasmids were purchased from either Sigma-Aldrich or Dharmacon. Scramble shRNA was a gift from Professor David Sabatini (Addgene plasmid # 1864).
 
-## Western blot analysis
+### Western blot analysis
 
 Western blots were performed as previously described (Schumann et al., 2017). In brief, protein samples were run on SDS-PAGE gels and transferred onto nitrocellulose membrane (GE healthcare) via wet transfer. Membranes were blocked with TBS + 0.1% (v/v) Tween 20 (TBST) and 5% (w/v) dried skimmed milk powder for 30 min, and then incubated for 1 hr with relevant primary and secondary antibodies diluted in 5% (w/v) milk TBST. Membranes were treated with either ECL Western blotting substrate (Promega) or SuperSignal West Femto Maximum Sensitivity Luminol/Enhancer solution (Thermo scientific) and exposed to Amersham hyperfilm ECL (GE Healthcare). Secondary antibodies were horseradish peroxidase (HRP)-conjugated polyclonal goat anti-mouse (Dako) and polyclonal goat anti-rabbit (Dako), both used at 1:5000 dilution.
 
-## Two-step quantitative reverse transcription PCR (qRT-PCR)
+### Two-step quantitative reverse transcription PCR (qRT-PCR)
 
 qRT-PCR was performed as previously described (Baquero-Pérez and Whitehouse, 2015). In brief, total RNA from cells was extracted using TRIzol (Thermo Scientific) according to the supplier’s protocol. DNA-free DNA Removal Kit (Ambion) was used to remove any contaminating DNA from RNA samples. Reverse transcription was performed with ProtoScript II (NEB), murine RNase inhibitor (NEB), random hexamers (Bioline) and 1 μg of total RNA. Quantitative PCR (qPCR) reactions (20 μl) included 1 X SensiMix SYBR green master mix (Bioline), 0.5 μM of each primer and 5 μl template cDNA. Cycling was performed in a RotorGene Q 2plex machine (Qiagen). The cycling programme was a 10 min initial preincubation at 95°C, followed by 40 cycles of 95°C for 15 s, 60°C for 30 s and 72°C for 20 s. After qPCR, a melting curve analysis was performed between 65°C and 95°C (with 0.2°C increments) to confirm amplification of a single product. To assess primer amplification efficiency (AE), for each gene of interest a standard curve was constructed using a pool of cDNA derived from unreactivated and reactivated cells. At least four different dilutions of pool cDNA were quantified to generate a standard curve. The slope of the standard curve was used to calculate the AE of the primers using the formula: AE = (10−1/slope). For gene expression analysis all genes of interest were normalised against the housekeeping gene GAPDH (ΔCT). A summary of all the primers used in this study is provided in Supplementary file 3. Primers specific to METTL3 have previously been described (Liu et al., 2014).
 
-## RNA stability assays
+### RNA stability assays
 
 TREx BCBL1-Rta cells were treated with 2.5 μg/ml of actinomycin D (Thermo Scientific) and samples were collected at the desired time points. Total RNA was extracted using TRIzol (Thermo Scientific) according to the supplier’s protocol. DNA-free DNA Removal Kit (Ambion) was used to remove any contaminating DNA from RNA samples and qRT-PCR was carried out as described above. The gene of interest was normalised against 18S rRNA, as this RNA, but not GAPDH, was stable after 6 hr of actinomycin D treatment.
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 ChIP experiments were carried out as previously described (Baquero-Pérez and Whitehouse, 2015). Formaldehyde-crosslinked chromatin was prepared using the Pierce Chromatin Prep Module (Thermo Scientific) following the manufacturer’s protocol with the following modified steps. 2 × 106 BCBL1 cells were used per immunoprecipitation and digested with 15 units of micrococcal nuclease (MNase) per 100 μl of MNase Digestion buffer in a 37°C water bath for 15 min. Nuclei were lysed for 30 min with lysis buffer two in addition to vortexing for 30 s every 5 min. Immunoprecipitations were carried out using EZ-ChIP kit (Millipore) according to the supplier’s instructions. Immunoprecipitations were done overnight at 4°C and contained 50 μl of digested chromatin (2 × 106 cells), 450 μl of ChIP dilution buffer and 2 µg of the antibody of interest. Primers for the KSHV promoter regions of ORF50, Ori-Lyt, PAN RNA, ORF59 and K12 have been previously reported (Chen et al., 2009b; Chen et al., 2012; Hughes et al., 2015). Primers for the cellular GAPDH promoter were supplied with the EZ-ChIP kit. qPCR normalisation was performed similarly to RIP-qPCR experiments as described above.
 
-## Proliferation (MTS) assay
+### Proliferation (MTS) assay
 
 Determination of the cellular metabolic activity was performed using a non-radioactive CellTiter 96 AQueous One Solution Cell Proliferation Assay (MTS) (Promega), according to the manufacturer's manual. 10,000 HEK-293 cells were seeded in quadruplicate in a flat 96-well culture plate (Corning). After 26 hr inhibitor exposure, 20 µl of CellTiter 96 AQueous One Solution Reagent was added and cells were incubated for 1 hr in a humidified incubator in 5% CO2 at 37°C. Absorbance was measured at 490 nm using a PowerWave XS2 (BioTek) plate reader.

@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01eezs655 Zoologie/Evolutionsbiologie, Universität Regensburg Regensburg Germany
+1. Zoologie/Evolutionsbiologie, Universität Regensburg Regensburg Germany ([ROR:01eezs655](https://ror.org/01eezs655))
 
 † Corresponding author
 
@@ -28,13 +28,61 @@ To study aging patterns and senescence of social insect queens, it is helpful to
 
 ## Results
 
-## Reproductive strategy
+### Reproductive strategy
 
 The treatment (varying worker number) did not affect total production of eggs (package ‘generalized linear mixed models using template finder’ v. 1.1.2.3 in R) (Figure 1A, 10 vs. 20 workers: glmmTMB z-value = –0.38, p=0.70 and 10 vs. 30: z-value = –0.96, p=0.34) or worker pupae (Figure 1B, 10 vs. 20 workers: glmmTMB z-value = 0.09, p=0.93 and 10 vs. 30: z-value = –0.39, p=0.70). The treatment also did not affect the lifespan of queens (Figure 1—figure supplement 6A, Cox proportional hazard regression model, likelihood ratio test, X2 = 1.57, p=0.46), which was highly variable across treatments (variation coefficient: 32.2%, Figure 1—figure supplement 6B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig1-v1.jpg)
+
+**Figure 1.:** (A) Total number of eggs, (B) worker pupae, and (C) queen pupae (N = 31, 34, and 34 for 10, 20, and 30 worker colonies, respectively). Significant differences are given with **p<0.01 and ***p<0.001. Boxplots depict upper and lower quartile plus 1.5 interquartile range (IQR).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Adult ant workers present in the colonies over the lifetime of the queens (weekly count data), prior to standardization. (B) C. obscurior ant queens, workers, and colonies were monitored and standardized weekly.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** 1–60 queens were produced per colony. The Brazilian populations ‘BR13’ (median = 28) and ‘BR18’ (median = 50), and the Japanese population ‘JP11’ (median = 28.5). Colony size differed between populations (Kruskal–Wallis test, X2 = 8.34, p<0.05), specifically among JP11 and BR18 (post-hoc Kruskal–Nemenyi test, p<0.05). Significant differences are given with *p<0.05. Boxplots depict upper and lower quartile plus 1.5 interquartile range (IQR).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Egg and worker pupae production; (B) queen and male pupae production.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Total eggs produced by the sacrificed queens after 18 weeks. The shade of gray of the closed circles represents the level of egg productivity of each queen. (B) Batch of 135 independent colonies from which the queens were selected based on their egg production, showing the broad range of productivity. Sacrificed queens are denoted with closed circles. Three colonies of the 10-worker treatment are not shown as they were accidentally killed.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** The arrow indicates where ‘head-thorax’ was separated from the ‘gaster,’ between the petiole and post-petiole for RNAseq. The ‘metasoma’ in the Hymenoptera comprises gaster, post-petiole, petiole, and the first abdominal segment, which is fused with the thorax.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Survival curve based on Cox proportional hazard regression model and (B) queen lifespan in weeks. Boxplots depict upper and lower quartile plus 1.5 interquartile range (IQR).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** A coefficient or correction factor c is used as the dry average weight measurements of queen over workers to the power conversion factor of c = 0.7 (Boomsma, 1989). Results are robust to different power conversion values of 0.6–1 (Supplementary file 1A). Significant differences are given with ***p<0.001. Boxplots depict upper and lower quartile plus 1.5 interquartile range (IQR).
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** Violin density plots with horizontal lines that depict the estimated 25, 50, and 75% quantiles (n = 31, 34, and 34 for 10, 20, and 30 worker colonies, respectively).
 
 We hypothesized that colonies that experienced a worker shortage would compensate by investing less into the production of new queens as these are larger and therefore more costly to produce. Indeed, queens with 10 workers (n = 31) produced significantly fewer queen pupae than queens with 20 (n = 34) (glmmTMB z-value = 2.81, effect size=1.97, p=0.005) and 30 workers (n = 34) (glmmTMB z-value = 2.58, effect size=1.78, p=0.009, Figure 1C) with no significant differences between 20 and 30 workers (glmmTMB z-value = –0.49, p=0.877). Similar results were obtained when accounting for the differences in biomass between workers and queens (Figure 1—figure supplement 7, Supplementary file 1A). Probably due to difficulties assessing precise egg numbers which are reared in piles, and extremely worker-biased caste ratios (average pupae developed into workers = 0.86), egg counts do not reflect these subtle but significant differences. The median sex ratio (queen/queen + male pupae) across treatments was 0.85 (25 and 75% quantiles = 0.79 and 0.90), and total production of male pupae (two types of males occur in C. obscurior: winged and wingless) was unaffected by the treatment (10 vs. 20: glmmTMB z-value = 1.94, p=0.05 and 10 vs. 30: glmmTMB z-value = 1.52, p=0.13, Figure 1—figure supplement 8). Queens produced very low numbers of winged males during their lifetime (mean = 0.36, median = 0, N = 99).
 
 A first peak in the investment in queen pupae occurred around 15 weeks after the colonies were established (Figure 2A), followed by an increasing queen bias with age (Figure 2B). In general, new queens, which start a new colony, invest first in growing numbers of workers (ergonomic phase) and subsequently in the production of new sexuals, when the colony has reached the threshold required to enter the reproductive phase (Macevicz and Oster, 1976; Oster and Wilson, 1978; Beekman et al., 1998). This shift in caste ratio does not result from a drop in the production of pupae at the end of life. In contrast, pupa production is at its highest just before death (Figure 2—figure supplement 1). Importantly, in C. obscurior this caste ratio shift appeared to be a fixed trait, independent of colony size and queen lifespan. Both queens with short and long lifespans (below and above the mean lifespan of 25 weeks, Figure 2C and D, respectively), equivalent to queens with low and high productivity, exhibited late-life investment into queens.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig2-v1.jpg)
+
+**Figure 2.:** (A) Numbers of worker and queen pupae produced over time, (B) queen/(queen + worker) pupae caste ratio produced by queens (n = 31, 34, and 34 for 10, 20, and 30 worker colonies, respectively), (C) pupae caste ratio for queens with lifespan below (n = 44), and (D) above the mean lifespan of 25 weeks, indicated by the dashed line (n = 55). After the queen’s death, eggs and larvae were allowed to develop into pupae for a final count. Therefore, smooth splines extend ca. 4 weeks after queen death.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The graph uses a gam method and a confidence interval of 95%.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Correlation between counted eggs and (A) queen pupae, (B) worker pupae, and (C) the sum of queen and worker pupae per queen. All correlations are statistically significant at p<0.001 (Kendall’s rank correlation test).
 
 In addition to the effect on caste ratio, the treatment had an effect at the colony level. We explored whether the quality of workers was affected by measuring the head width of workers produced over months 3–6 of the queen’s lifetime (approximately five workers per month). Head width of workers was 2% and 3% significantly smaller in colonies with 10 workers than in colonies with 20 (glmmTMB z-value = 2.22, p=0.026) and 30 workers, respectively (glmmTMB z-value = 2.68, p=0.007, Figure 3), but not different between colonies with 20 and 30 workers (glmmTMB z-value = 0.22, p=0.97). This suggests that small colonies lack sufficient numbers of nurse or forager workers, and indeed colonies collected in the field have worker numbers closer to 20 or 30 (Schrader et al., 2014; Figure 1—figure supplement 2).
 
@@ -44,11 +92,55 @@ In addition to the effect on caste ratio, the treatment had an effect at the col
 
 After mean-standardizing queen age-specific mortality and fecundity (following Jones et al., 2014), we found that relative fecundity reached its maximum after ~16 weeks, before completion of the median lifespan (~25 weeks), and then decreased (Figure 4). Production of workers tightly followed the curve of egg production. Importantly, relative investment in queen and male pupae reached its maximum late in life (~28 weeks). This pattern is not due to the delay in development from egg to pupa because queen and male development only lasts ~5 and ~ 3 weeks, respectively (Schrempf and Heinze, 2006). Furthermore, C. obscurior ant queens exhibited a below-average level of adult mortality until week 30, after which mortality increased above the average level (Figure 4, Figure 4—figure supplement 1). This indicates maintenance of selection until after the peak of relative investment in sexual offspring. Therefore, queens continue to experience strong selection even at high ages, that is, weeks after they reached the mean lifespan. Monitored workers in colonies with 10 or 20 nestmates did not differ in survival (Cox proportional hazard regression model, likelihood ratio test, X2 = 0.06, p=0.8). Therefore, the mean-standardized age-specific mortality was calculated for the 40 workers. Note that regardless of the differences in timescale, the shape of mean-standardized mortality of workers was similar to that of queens (Figure 4—figure supplement 2). This suggests that aging is a genetically fixed trait expressed by queens and workers alike.
 
-## RNAseq of prope mortem queens
+![Figure 4.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig4-v1.jpg)
+
+**Figure 4.:** Mean standardization of age by dividing age-specific mortality and fecundity of queens (n = 99) by their means after maturation (Jones et al., 2014). Survivorship (black dashed line) is depicted on a log scale. The graph uses a Loess smoothing method (span = 0.75) and a confidence interval of 95%. The dashed gray line at y = 1 indicates when relative mortality and fertility are equivalent to mean mortality and fertility.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** A Gompertz model was selected as best-fitted model based on the deviance information criterion (DIC) values, over the logistic and Weibull models (Supplementary file 1H) using the R package BaSTA (Survival Bayesian Trajectory Analysis, v. 1.9.5). The estimated parameters are given in Supplementary file 1I.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Mean standardization of age by dividing age-specific mortality by their mean after eclosion (Jones et al., 2014). Survivorship (black dashed line) is depicted on a log scale. The graph uses a Loess smoothing method (span = 0.75) and a confidence interval of 95%. The dashed gray line at y = 1 indicates when relative mortality is equivalent to mean mortality.
+
+### RNAseq of prope mortem queens
 
 To determine if queens show signs of reproductive senescence and loss of physiological function, we analyzed gene expression data of prope mortem queens exhibiting decreasing egg-laying rates and middle-aged queens that were at their peak reproductive performance. To account for possible effects of fertility, we sampled queens with low, medium, and high egg productivity at 18 weeks of age (Figure 1—figure supplement 4A and B). We subjected the head plus thorax and the gaster (see methods for terminology, Figure 1—figure supplement 5) to RNAseq separately to assess if reproductive tissue shows a different physiological wear and tear than head-thorax tissue. The analyses revealed that head-thorax and gaster tissues showed similar mapping rates to the genome (Figure 5—figure supplement 1A and B), but that gaster samples had a lower GC content on average and more duplicated reads (Figure 5—figure supplement 1C–F) in prope mortem queens compared to middle-aged queens.
 
 Of the 20,006 expressed genes in head-thorax tissue, 3565 (17.8%) genes were differentially expressed between middle-aged and prope mortem queens (after false discovery rate [FDR] adjustment p<0.001, DESeq2, Source data 9). Of these, 1725 genes (48%) were upregulated and 1840 genes (52%) were downregulated in prope mortem queens compared to middle-aged ones. Gene Ontology (GO) term enrichment revealed signs of rapid physiological decay of prope mortem queens, such as reduced translation, proteasomal, ribosomal, and mitochondrial function (Fisher test using the weight01 algorithm, p<0.05, Supplementary file 1B, Figure 5), increased splicing, and transcript processing (Supplementary file 1C, Figure 5—figure supplement 2). Such processes have previously been related to aging in several model organisms (López-Otín et al., 2013); for example, the loss of protein homeostasis (Hipp et al., 2019), the decrease in ribosomal proteins (Walther et al., 2015), alterations in the mitochondrial function (Green et al., 2011), disruption of splicing (Bhadra et al., 2020), and others (Harries et al., 2011). Another characteristic of aging, changes in gene connectivity among gene expression networks found in mice (Southworth et al., 2009), was not affected by age in C. obscurior (calculated using the softConnectivity and the biweight midcorrelation functions on gene networks for middle and prope mortem queens using WGCNA, and modeled using glmmTMB, z-value = −1.7, p=0.09). Principal component analysis (PCA) ordination of the head-thorax tissue separated middle-aged and prope mortem queens by age (PERMANOVA test, F-value = 7.59, p<0.001), but not by fertility (F-value = 1.09, p=0.26) or duplication percentage (Figure 5—figure supplement 3A and B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig5-v1.jpg)
+
+**Figure 5.:** Functional annotation and enrichment analysis using topGO (version 2.46.0) and the weight01 algorithm to calculate significance for (A) biological processes, (B) cellular components, and (C) molecular functions.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Mapping percentage per tissue, (B) number of total reads mapped per tissue, (C) percentage of GC content per tissue, (D) percentage of GC content and percentage of duplicated sequences per tissue, (E) percentage of GC content and percentage of duplicated sequences per age group (blue: middle-aged; orange: prope mortem), (F) and tissue. After trimming and sorting the reads, we obtained on average 27 Mio reads (gaster: 14 Mio; head-thorax: 40 Mio) per sample. The mapping rate from all samples ranged between 1.4 and 89.7% (total average 56.0%; gaster: 23.7%, head-thorax 79.2%).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Functional annotation and enrichment analysis using topGO (version 2.46.0) and the weight01 algorithm to calculate significance for (A) biological processes, (B) cellular components, and (C) molecular functions.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** The crosses depict middle-aged and the circles prope mortem queens. Middle-aged queens were sacrificed after 19–21 weeks, and old queens from age 28–49 weeks. PC1 explains 39.8% of the variability and PC2 13.1%. The two age groups exhibit no differences in terms of dispersion (distance from samples to their estimated centroid, permutest, F-value = 0.30, p=0.58), but exhibit different centroids depending on age group but not on fertility level (PERMANOVA test, F-value = 7.59, p<0.001 and F-value = 1.09, p=0.26, respectively). The colors indicate (A) the fertility of the queens and (B) the percentage of duplications found in the samples before mapping.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Functional annotation and enrichment analysis using topGO (version 2.46.0) and the weight01 algorithm to calculate significance for (A) biological processes, (B) cellular components, and (C) molecular functions. 3074 genes were differentially expressed by age: 1554 upregulated (51%) and 1520 downregulated (49%).
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** Functional annotation and enrichment analysis using topGO (version 2.46.0) and the weight01 algorithm to calculate significance for (A) biological processes, (B) cellular components, and (C) molecular functions. 3074 genes were differentially expressed by age: 1554 upregulated (51%) and 1520 downregulated (49%).
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** The crosses depict middle-aged and the circles prope mortem queens. Middle-aged queens were sacrificed after 19–21 weeks and prope mortem queens from age 28–49 weeks. The colors indicate (A) the fertility of the queens and (B) the percentage of duplications found on the samples before mapping.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/74695/elife-74695-fig5-figsupp7-v1.jpg)
+
+**Figure 5—figure supplement 7.:** Observed vs. expected log2 ratio of the ERCC expression levels for each sample dependent on (A) age group, (B) tissue, and (c) lane. The positive relationship indicates that the library construction was successful and did not vary across age group and lane, but differed between tissues.
 
 In the gaster tissue, 4832 (24.3%) of 19,925 expressed genes were differentially expressed between age groups (after FDR adjustment p<0.001, DESeq2, Source data 10). Of these, 2306 genes were upregulated (48%) and 2526 downregulated (52%) in prope mortem queens compared to middle-aged queens. GO term enrichment likewise showed that many fundamental processes were affected in prope mortem queens, such as DNA damage, telomere maintenance, and enrichment of transcription processes (Supplementary file 1D, Figure 5—figure supplement 4), and among others processes related to protein processing, glycolytic processes, and the Notch signaling pathway were downregulated (Supplementary file 1E, Figure 5—figure supplement 5). In contrast to head-thorax tissue, gene connectivity among gene co-expression networks in the gaster was significantly different (prope mortem queens: median = 69.45; middle-aged queens: median = 52.56) (glmmTMB, z-value = −19.5, p<2e-16), but contrary to what was found for aged mice (Southworth et al., 2009).
 
@@ -64,7 +156,7 @@ Here, we show for the first time the shape of aging in a social insect. While fe
 
 Strikingly, relative mortality did not increase directly after maturity or after total egg production started decreasing, but after the production of sexual pupae had reached its maximum. IAccordingly, transcriptome profiles of prope mortem queens shortly after this investment peak, which produced decreasing numbers of eggs, revealed signs of a broad range of physiological pathologies. The changes seemed stronger in the gaster (e.g., percentage of duplicated reads), which contains the reproductive organs and most of the digestive system, but to a similar extent occurred in head and thorax, containing most neuronal and muscle tissue. Such a systemic breakdown is expected assuming that the entire physiology is optimized towards a fitness peak. Strikingly, a comparative transcriptomic study of 8-week young queens with fully mature C. obscurior queens at or close to their peak fecundity (18 weeks old) did not find signs indicative of aging, but in comparison to aged Drosophila flies an opposite regulation of processes (e.g., cellular ketone, carbohydrate, and organic acid metabolic processes) and genes (e.g., ref(2)P, emp, P5cr-2, CCHa2, NLaz, Sirt6) involved in aging (von Wyschetzki et al., 2015). Furthermore, a gene co-expression network study using the same data showed higher connectivity in middle-aged queens, indicating increased transcriptional regulation with age (Harrison et al., 2021). Together, this suggests that the physiology of queens is maintained until the fitness peak is reached, at which time they undergo physiological deterioration, while still being reproductively active. This pattern is reminiscent of semelparous species with reproductive death rather than that typical of iteroparous species in which selection against age-specific mortality decreases after a first reproduction event and actuarial senescence unfolds under the selection shadow.
 
-## Conclusion
+### Conclusion
 
 Superorganismality is a major evolutionary transition, and this transition is accompanied by a change in the mode of reproduction. We propose that the evolution of ‘continuusparity’ (Lat.: ‘continuus’ meaning incessant/successive; and ‘parere’ meaning giving birth), that is, the combination of lifelong continuous reproduction and increasing fitness returns late in life, underlies the delay of the selection shadow, the maintenance of selection strength against age-specific mortality, a brief phase of senescence late in life, and finally reproductive death. This is not to be confused with the meaning of the term negligible senescence as actuarial and reproductive senescence clearly occur at the end of life.
 
@@ -74,39 +166,39 @@ We propose that continuusparity and its effect on the shape of queen aging is a 
 
 ## Materials and methods
 
-## The species
+### The species
 
 C. obscurior is probably the best studied ant species with respect to aging due to the relatively short lifespan of queens (~6 months). Colonies comprise a few queens (body length ~3 mm), a few dozen workers (~2 mm), and nest in small cavities in dead twigs, aborted fruits, rolled leaves, under bark, etc., in trees and shrubs (Schrader et al., 2014). Virgin queens usually mate once with related wingless males inside the natal colony (Heinze and Hölldobler, 1993; Schmidt et al., 2016; Heinze and Hölldobler, 2019), generally stay in the nest, and new colonies are formed by budding of colony fragments. This mode of reproduction from small propagules allows for successful colonization of disturbed habitat in warm climates around the world (Heinze and Delabie, 2005; Heinze, 2017). Various social, environmental, and biotic factors affect the lifespan of queens (Oettler and Schrempf, 2016). Queens that lay more eggs (total output and weekly rate) live longer than less fecund queens, irrespective of body size (Kramer et al., 2015), and thus seem to evade the common trade-off between reproduction and maintenance.
 
-## Reproductive strategy
+### Reproductive strategy
 
 We set up 138 freshly eclosed queens from stock colonies of a Japanese population (OypB, from the Oonoyama Park in Naha, Okinawa) established in the laboratory since 2011. The experiment took place between January 2019 and January 2020. Queens were allowed to mate with a single wingless male and were placed in nest boxes with either 10, 20, or 30 workers from the maternal colony to establish monogynous colonies, for lifetime production and RNAseq (n = 46 each). These numbers of workers represent the naturally occurring number in the field and correspond to the first, median, and third quantile of number of workers in this population (n = 62, median = 28.5, Figure 1—figure supplement 2). The colony was set up with half of the workers selected from inside of the nest near the brood (younger nurses) of the stock colonies, and the other half from outside the nest (older foragers) in order to minimize a putative effect of worker age on the queen (Giehr et al., 2017). Colonies were kept under a 12 hr dark 22°C/12 hr light 26°C cycle and fed ad libitum three times per week with diluted honey (0.6:1 honey: distilled water), cockroaches, and flies. Once per week workers, eggs, and all pupae (worker, queen, winged, and wingless male) were counted and queen survival was monitored. Additionally, the number of workers was standardized to the assigned treatment, and newly produced sexual pupae produced were removed. C. obscurior workers are sterile, and all produced offspring originated from the focal queen. The number of counted eggs correlates with the production of workers, queens, and the workers and queens together (Figure 2—figure supplement 2A–C, Kendall’s rank correlation test, p<0.001: eggs-worker pupae, τ = 0.70; eggs-queen pupae, τ = 0.59; eggs-worker and queen pupae, τ = 0.73). Pupae might have been counted more precisely than eggs, especially when larger numbers of eggs were produced. Pupae are hardly missed compared to eggs that tend to cluster together. Eggs and worker pupae might have been counted more than once as development lasts a median of 8 and 18 days for eggs and worker pupae, respectively. Colonies were counted ca. 4 weeks after the queen’s death, until the last eggs had developed into pupae. Finally, three colonies (10 worker treatment) were not considered in the analysis as they were accidentally killed, leaving a total of 99 colonies for lifelong tracking and 36 colonies for RNAseq analysis.
 
-## Worker aging
+### Worker aging
 
 To examine worker aging, 40 focal unmarked worker pupae were set up in individual colonies with 10 or 20 marked workers (n = 20 each). These two treatments were selected because colonies with 20 and 30 workers did not differ in queen productivity. Marking of nonfocal workers was done by clipping the tarsus of the middle right leg. Colonies were set up with brood (5 larvae in the 10 workers colonies, and 10 in the 20 workers colonies), and two wingless adult queens to avoid a queenless period in case one died. The survival of the focal worker was monitored, and the number of marked workers, queens, and larvae was standardized weekly to the assigned treatment. Newly produced pupae were removed. Dead marked workers were replaced with fresh worker pupae, which were marked 1 or 2 days after eclosion to avoid confusion with the non-clipped focal worker. Dead queens were replaced with adult ones.
 
-## Offspring investment
+### Offspring investment
 
 360 freshly eclosed adult workers were sampled monthly for head width measurements (from the third to sixth month of the queen’s life, and up to five workers depending on availability). Workers were dried, pinned, and blindly measured using a Keyence Microscope at 200×. A single worker was chosen randomly and measured 10 times to obtain a proxy for measurement error (mean = 383.61 μm, standard deviation = 5.05 μm).
 
-## Statistical tests
+### Statistical tests
 
 To test for significant differences between treatments, we used generalized linear mixed effects models within the R package glmmTMB (R version 3.5.2, Pinheiro et al., 2011) and a negative binomial distribution for count data. If the count data and caste investment ratios were log transformed, a Gaussian family distribution was used. The dependent variable was analyzed as a function of the fixed effects: treatment (number of workers as a factor); and random effects: stock nest and box of origin, box of set up, setup date. All models were also graphically checked for consistency and model diagnostics were performed using the DHARMA package (R version 0.3.3.0, Hartig, 2020). Caste ratio was calculated as queen over the total caste investment (as Queen*c / [Queen*c + Worker]). The coefficient or correction factor c is used as the dry average weight measurements of queen over workers to the power conversion factor of 0.7 assuming differences in metabolic rates between queens and workers adopting the logic for sex ratio investment (Boomsma, 1989). As this is an assumption, we used different values of c. The results are robust to power conversion values of 0.6–1 (Supplementary file 1A). To test for differences in head width, we used the average of the head width measurements of the workers per time point (each month). Predictions of the data were visualized using the loess method with the geom_smooth function and default span (ggplot2 v.3.3.2). Relative mortality and fecundity as a function of age were mean-standardized by dividing age-specific mortality and fecundity by their means after maturation, following Jones et al., 2014. In contrast to Jones et al., 2014, the whole life range was considered until death, since removing the last 5% of survivorship showed similar results. Age-specific mortality without the mean standardization was also estimated for the 135 queens (99 and 36 ant queens for RNAseq) using a survival Bayesian trajectory analysis (Figure 4—figure supplement 1). Data is available as Source data 1–Source data 7, and the R-script used as Source code 1.
 
-## Prope mortem queens selection
+### Prope mortem queens selection
 
 To obtain samples of low, medium, and highly productive queens, 18 queens at age 19–21 weeks were sacrificed for RNAseq based on egg productivity until week 18. Values of weekly egg productivity below the first quantile for the treatment group (colony size) were considered as low, values between the first and the third quantile as medium, and values greater than the third quantile as high. An additional 18 queens were monitored until they showed decreasing fertility (Figure 1—figure supplement 3) and one or more of the following signs of senescence: lethargy, loss of mobility, presence outside the nest, and/or harassment by workers. These senescent queens were also selected based on low, medium, and high fertility, and then sacrificed (28–49 weeks old). Queens were snap-frozen in liquid nitrogen after the head and thorax was separated from the gaster with a blade between the petiolus and post-petiolus in a drop of PBT 0.3% (phosphate buffered saline and Tween 20). During this procedure, queens were manipulated for less than 1 min.
 
-## Terminology
+### Terminology
 
 What we refer to as ‘thorax’ actually refers to the thorax plus the fused first abdominal segment, together making up the ‘mesosoma’ in the Hymenoptera. The ‘metasoma’ in Hymenoptera comprises the segments making up the constriction plus the hind end. In the ant subfamily Myrmicinae, this constriction is made of two segments: the petiole corresponds to the second, constricted, abdominal segment, while the post-petiole refers to the third, constricted, abdominal segment. The ‘gaster’ refers to the bulbous posterior part (Figure 1—figure supplement 5).
 
-## RNAseq
+### RNAseq
 
 Total RNA was extracted using the ReliaPrep kit (Promega) from the 72 samples (36 queens, two samples per queen: head-thorax and gaster). Spike-In RNA Variant Controls (SIRV-Set 3 Lexogen #05101‚ Lot 5746/001492) were spiked to a 2% fraction of the total RNA (measured using Bioanalyzer – Agilent Technologies). 8 of the 72 samples showed RIN values below 7 (gaster samples from older queens that seemed more degraded). For those samples, the concentration of RNA was estimated based on the mean value of the nondegraded gaster samples. Total RNA was amplified using single primer isothermal amplification (SPIA , Ovation RNA-seq System V2, Tecan) prior to cDNA generation. The library preparation and sequencing (100 bp PE) was performed at the Cologne Center for Genomics using Nextera XT sequencing on a NovaSeq 6000 platform. Reads were trimmed with fastp v.0.20.1 to a minimum length 70 and from Nextera adapters. Then, SortMeRNA version 4.2.0 was used to discard undesired rRNA reads using the default database (smr_v4.3_default_db. fasta). Remaining reads were aligned using hisat2 (version 2.1.0) to the newest version of the genome (Cobs.2.1., Errbii et al., 2021). Putative splice sites were obtained using gffread (version 0.12.1), and the extensive transposable elements annotation v.2.1 (Errbii et al., 2021) was considered for the mapping procedure. Samtools (version 1.9) was used to sort and convert.sam into .bam files.
 
-## Gene expression analysis
+### Gene expression analysis
 
 After filtering genes with 0 values, we used a gene set of 20,006 genes for the head-thorax analysis and 19,925 genes for the gaster. PCA plots were produced to visualize the samples after variance stabilizing transformation. An analysis of the homogeneity of group dispersions (variances) was performed (multivariate analog of Levene’s test for homogeneity of variances), with the function permutest and 999 permutations (vegan package v. 2.5–7) to test for differences in variance among the age groups (middle-aged and prope mortem queens) (betadisper, vegan package).
 

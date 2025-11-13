@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Glutamatergic neurons in the retrotrapezoid nucleus (RTN) function as respiratory chemoreceptors by regulating breathing in response to tissue CO 2 /H + . The RTN and greater parafacial region may also function as a chemosensing network composed of CO 2 /H + -sensitive excitatory and inhibitory synaptic interactions. In the context of disease, we showed that loss of inhibitory neural activity in a mouse model of Dravet syndrome disinhibited RTN chemoreceptors and destabilized breathing (Kuo et al., 2019). Despite this, contributions of parafacial inhibitory neurons to control of breathing are unknown, and synaptic properties of RTN neurons have not been characterized. Here, we show the parafacial region contains a limited diversity of inhibitory neurons including somatostatin ( Sst )-, parvalbumin ( Pvalb )-, and cholecystokinin ( Cck )-expressing neurons. Of these, Sst-expressing interneurons appear uniquely inhibited by CO 2 /H + . We also show RTN chemoreceptors receive inhibitory input that is withdrawn in a CO 2 /H + -dependent manner, and chemogenetic suppression of Sst+ parafacial neurons, but not Pvalb+ or Cck + neurons, increases baseline breathing. These results suggest Sst -expressing parafacial neurons contribute to RTN chemoreception and respiratory activity.
+Glutamatergic neurons in the retrotrapezoid nucleus (RTN) function as respiratory chemoreceptors by regulating breathing in response to tissue CO2/H+. The RTN and greater parafacial region may also function as a chemosensing network composed of CO2/H+-sensitive excitatory and inhibitory synaptic interactions. In the context of disease, we showed that loss of inhibitory neural activity in a mouse model of Dravet syndrome disinhibited RTN chemoreceptors and destabilized breathing (Kuo et al., 2019). Despite this, contributions of parafacial inhibitory neurons to control of breathing are unknown, and synaptic properties of RTN neurons have not been characterized. Here, we show the parafacial region contains a limited diversity of inhibitory neurons including somatostatin (Sst)-, parvalbumin (Pvalb)-, and cholecystokinin (Cck)-expressing neurons. Of these, Sst-expressing interneurons appear uniquely inhibited by CO2/H+. We also show RTN chemoreceptors receive inhibitory input that is withdrawn in a CO2/H+-dependent manner, and chemogenetic suppression of Sst+ parafacial neurons, but not Pvalb+ or Cck+ neurons, increases baseline breathing. These results suggest Sst-expressing parafacial neurons contribute to RTN chemoreception and respiratory activity.
 
 ## Introduction
 
@@ -30,11 +30,27 @@ Based on in vivo multi-electrode array recordings in cats that showed the RTN co
 
 ## Results
 
-## Molecular profiles of glutamatergic and GABA/glycinergic parafacial neurons
+### Molecular profiles of glutamatergic and GABA/glycinergic parafacial neurons
 
 Single cells from the ventral parafacial region were isolated from 10-day-old wild type C57BL/6J (N = 16; 8 of each sex). Note that four male and four female mice included in this cohort received 4OH-tamoxifen (0.2 mg/daily for 3 days). However, since tamoxifen treatment did not affect the proportion of cells obtained or relative transcript profiles across all major cell types (Figure 1—figure supplement 1), these data sets were pooled. Single-cell RNA-seq was performed using the 10X Genomics Chromium Controller (Zheng et al., 2017) and 10X v2 chemistry targeting 16,000 barcoded cells. After quality control filtering and doublet removal (see Materials and methods), we analyzed 11,810 cells with a median of 2892 unique transcripts (UMIs) and 1472 genes per cell. We used the 2000 most highly variable genes, measured by dispersion, as input for dimensionality reduction using PCA, BBKNN, and UMAP, and found 20 distinct clusters using Leiden community detection (Figure 1—figure supplement 1).
 
 Non-neuronal cells comprised roughly 90% of the dataset, so we employed a two-state mixture model parameterized on four general neuronal markers (Snap25, Tubb3, Elavl2, Syp) (Mickelsen et al., 2019) to segregate putative neurons from non-neuronal cells. A second mixture model was then used to classify the neurons into three groups: vesicular glutamate-transport type 2 (Vglut2+; Slc17a6) glutamatergic excitatory neurons (N = 197), vesicular GABA transporter (Vgat+; Slc32a1) inhibitory neurons (N = 445), and cholinergic (Chat) neurons (Figure 1A, Figure 1—figure supplement 1). The resulting neuronal populations had markedly higher molecular content, with a median of 4587 UMIs and 2317 genes per Slc17a6+ neuron and 4439 UMIs and 2299 genes per Slc32a1+ neuron.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60317/elife-60317-fig1-v2.jpg)
+
+**Figure 1.:** (A) Through a normalized dispersion analysis for dimension reduction, a t-distributed stochastic neighbor embedding (t-SNE) was created of ventral parafacial single-cell transcriptome, with cells color coded by cluster. Neurons were differentiated from non-neurons (gray) based on expression of Snap25, Syp, Tubb3, and Elavl2. Cells expressing either Slc17a6 or Slc32a1 were used for sub-cluster analysis of glutamatergic and inhibitory neurons. A fairly large population of Chat expressing neurons was also detected but since neither glutamatergic (B) nor Vgat+ neurons express Chat, this population was not analyzed further. (B) UMAP plot depicting four sub-clusters of glutamatergic neurons and corresponding violin plots showing cluster-specific differential gene expression. Cluster number is noted on the x axis and gene expression (from 0 to 4 counts/cell) on the y axis. Slc17a6 clusters 1–2 are presumed to be subsets of RTN chemoreceptors based on expression of Phox2b, Nmb, Gpr4, and Kcnk5 that differ in expression of galanin. Slc17a6 cluster 3 differentially expressed Tac1 (gene encoding substance P), suggesting that these cells may be parapyramidal raphe neurons, whereas cluster four differentially expressed tyrosine hydroxylase (Th) indicative of adrenergic C1 pre-sympathetic neurons. (C) UMAP plot showing seven sub-clusters of inhibitory (Slc32a1) neurons and corresponding violin plots showing cluster-specific differential gene expression. Cluster number is noted on the x axis and gene expression (from 0 to 4 counts/cell) on the y axis. Discrete subtypes of inhibitory neurons were identified based on non-overlapping expression of cholecystokinin (Cck; Slc32a1 cluster 1), neuron-derived neurotrophic factor (Ndnf, Slc32a1 cluster 2) and parvalbumin (Pvalb; Slc32a1 cluster 5). Three somatostatin (Sst+) clusters could be differentiated based on expression of calretinin (Calb2; Slc32a1 cluster 3), reelin (Reln, Slc32a1 cluster 6) and neuronal nitric oxide synthase 1 (Nos1, Slc32a1 clusters 3, 7).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60317/elife-60317-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Global analysis showing the distribution of cells between the two libraries, C57BL/6J pups (left) and 4OH-tamoxifen-treated C57BL/6J pups (center), and global clustering (right). (B–C) marker gene expression (B), each box representing the mean expression of each gene in each cluster; total number of cells and distribution of transcripts per cell (C), across the 20 global clusters. (D) A distribution of Slc17a6 and Slc32a1 expression of cells in each class of the three-state Gaussian mixture model used to classify neuronal cells; blue, green, and red colors of distribution correspond with Slc32a1, Slc17a6, and Chat, respectively in Figure 1A. (E) Expression of Slc17a6 (left), Slc32a1 (center), Chat (right) in cells classified as neurons for sub-clustering analysis.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60317/elife-60317-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Photomicrographs of coronal sections from a Slc32a1Cre::TdT mouse show TdT-labeled inhibitory neurons (red; Slc32a1Cre) and Phox2b-immunoreactive chemosensitive RTN neurons (green) across the rostrocaudal extent of the RTN region and in the caudal portion of the RTN where most chemosensitive neurons are located. Approximate millimeters behind bregma (Ascoli et al., 2008) indicated by numbers in lower left of each section. (B) Top, schematic showing brainstem regions used as landmarks to align sections for cell counts. Bottom, quantification of the total number of Slc32a1Cre::TdT labeled neurons in each section (four mice). (Ci) Images of RNA in situ hybridization results show Vgat cells (green) Gad1 (red), GlyT2 (white), and DAPI (blue). (Cii) Quantification of Gad1 and GlyT2 co-localization (three animals/5 brain slices). (D) Representative images (Di) and summary data from three Phox2bCre::TdTomato mice (Dii) show that most Phox2b-immunoreacive (IR) neurons (green) near the ventral surface express TdTomato fluorescence (red). Specifically, 97% of all ventral parafacial TdT+ cells are Phox2b-IR, and 94% of all Phox2b-IR cells are TdT+. NA, nucleus ambiguous; 7N, facial motor nucleus, b-bregma.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60317/elife-60317-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Same t-SNE plot of parafacial cell clusters described in Figure 1 shows that Scn1a transcript is preferentially expressed by Slc17a6+ (Vglut2), Slc32a1+ (Vgat), and Chat+ (cholinergic) neurons compared to non-neural cell types. (B–C) UMAP plots (as described in Figure 1B–C) show sub-clusters of glutamatergic (B) and inhibitory (C) neurons and corresponding violin plots depict relative levels of Scn1a transcript in each group. Cluster number is noted on the x axis and gene expression (from 0 to 4 counts/cell) on the y axis. These results are consistent with the possibility that Scn1a is expressed by both excitatory and inhibitory cell types in this brainstem region (Kuo et al., 2019), albeit at relatively higher levels in inhibitory neurons compared to glutamatergic neurons at this developmental time point (10 days postnatal).
 
 Two-dimensional embeddings and cluster assignments were generated for both the Slc17a6+ excitatory and Slc32a1+ inhibitory populations (Figure 1B–C) using a similar process described above (see Materials and methods). The population of Slc17a6+ cells does not overlap with Chat+ cells and includes two clusters (Slc17a6 clusters 1–2) of Phox2b-positive and Nmb expressing neurons with similar levels of Gpr4 (G-protein-coupled receptor 4) and Kcnk5 (TASK-2; K2P5) but differ in galanin (Gal) expression (Figure 1B). The molecular profiles of these clusters are largely consistent with that of RTN chemoreceptors (Shi et al., 2017). Sympathetic C1 catecholamine neurons (Slc17a6 cluster 4) are identified by expression of tyrosine hydroxylase (Th) and Phox2b and the absence of Nmb (Li et al., 2008). The remaining glutamatergic cluster (Slc17a6 cluster 3) was distinguished by expression of tachykinin 1 (Tac1, precursor for substance P), suggesting these cells are parapyramidal raphe neurons. All four glutamatergic clusters had detectable levels of stathmin 4 (Stmn4, encodes a microtubual binding protein [Holmfeldt et al., 2003]), suggesting these populations are not yet fully differentiated.
 
@@ -42,19 +58,31 @@ The population of parafacial inhibitory Slc32a1+ neurons was composed of 7 discr
 
 We confirmed that TdT labeled Slc32a1 cells are distributed throughout the ventral parafacial region including juxtaposed to Phox2b-immunoreactive RTN chemoreceptors (Figure 1—figure supplement 2). In-line with our scRNA-seq results, we found by fluorescent in situ hybridization that ~85% of Slc32a1+ cells (n = 57 cells) co-express glutamic acid decarboxylase (GAD67; Gad1) and GlyT2 (Slc6a5) (Figure 1—figure supplement 2). Also, consistent with our previous work showing that expression of a Dravet syndrome-associated Scn1a mutation disrupted RTN chemoreception and respiratory activity (Kuo et al., 2016), we found that Scn1a is expressed by all parafacial neurons, particularly inhibitory neurons that showed relatively higher levels of expression compared to glutamatergic neurons (Figure 1—figure supplement 3). Together, these results provide insight into the diversity of parafacial inhibitory neurons and identify unique molecular markers that may facilitate future assessment of cell type specific functions.
 
-## Sst+ parafacial neurons are CO2/H+ sensitive
+### Sst+ parafacial neurons are CO2/H+ sensitive
 
 The function of inhibitory neurons in this region of the brainstem has not been characterized. However, they are located within a region that is specialized to sense changes in CO2/H+, therefore, we wondered whether parafacial inhibitory neurons also contribute to RTN chemoreception. These experiments were performed in slices isolated from a Cre recombinase-dependent reporter line (Slc32a1Cre::TdT) which allows for selective targeting of inhibitory neurons in the region of interest (Figure 2—figure supplement 1). CO2/H+-sensitivity was characterized in cell-attached voltage-clamp mode; neurons that responded reversibly to 10% CO2 (pH 7.0) with ≥20% change in activity were considered CO2/H+-sensitive. By this criterion, we found that exposure to 10% CO2 decreased activity in 48 of 130 (37%) fluorescent parafacial neurons by an average of 2.0 ± 0.2 Hz (Figure 2Ai,D). The majority of parafacial inhibitory neurons (56%) did not respond to stimulus and so were considered CO2/H+-insensitive (Figure 2Bi,D), while a small subset of fluorescent parafacial neurons (7%) showed an excitatory response to CO2 (F2,130 = 91.23, p<0.001) (Figure 2C–D). We also found the inhibitory effect of CO2/H+ on chemosensitive RTN neurons was retained when purinergic signaling was blocked by bath application of pyridoxalphosphate-6-azophenyl-2',4'-disulfonic acid (PPADS; 100 µM) and 8-phenyltheophylline (8-PT; 10 µM) (T7 = 0.1515, p>0.05), or in the presence of ionotropic receptor blockers including CNQX (10 μM) to block AMPA/kainite receptors, gabazine (10 μM) to block GABAA receptors, and strychnine (2 μM) to block glycine receptors (T7 = 3.100, p=0.02) (Figure 2—figure supplement 2). These results suggest parafacial inhibitory neurons are intrinsically CO2/H+-sensitive.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60317/elife-60317-fig2-v2.jpg)
+
+**Figure 2.:** (A-C) Traces of firing rate and segments of holding current from ventral parafacial inhibitory neurons in slices from Slc32a1Cre::TdT mice show that exposure to 10% CO2 suppressed activity by 2.0 ± 0.2 Hz in 43% of neurons tested (Ai), whereas the majority of Slc32a1+ neurons in this region did not respond (Δ firing 0.11 ± 0.04 Hz) to this same level of CO2/H+ (Bi), and a small minority are activated by CO2/H+ (C). (Aii) Example of a CO2/H+-inhibited Lucifer Yellow filled parafacial neuron that was Sst-immunoreactive (IR). (Bii) Example of a CO2/H+-insensitive Lucifer Yellow filled parafacial neuron that was not Sst-IR. In sum, 5 of 5 CO2/H+-inhibited parafacial neurons were Sst-IR, whereas 0 of 5 CO2/H+-insensitive neurons in this region were Sst-IR. (D) Summary data (N = 130 neurons from 45 mice) plotted as number of cells vs mean firing response to 10% CO2. Note that all neurons included in this analysis showed a similar baseline level of activity in 5% CO2 (data not shown).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60317/elife-60317-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A-B) Summary data and representative images of brainstem slices (75 µm) from Slc32a1Cre::TdT pups at 7 (A) and 20 days (B) postnatal show that TdTomato fluoresce (red) and Gad67-immunoreactity (IR; green) co-label 81% and 83% of parafacial neurons, respectively. At both developmental time points 8% of TdTomato fluoresce cells were not Gad67-IR, suggesting cells other than inhibitory neurons may express Cre recombinase. This is not entirely unexpected since astrocytes are also known to express can express Slc32a1 (Wang et al., 2013b). In any case, this is a minor issue for this study since we focused our in vitro experiments exclusively on neurons and we confirmed in vivo chemogenetic experiments using more specific mouse lines.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60317/elife-60317-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A-B) Traces of firing rate and segments of holding current from ventral parafacial inhibitory neurons in slices from Slc32a1Cre::TdT mice show that exposure to 10% CO2 suppressed activity under control conditions and when fast neurotransmission was blocked CNQX (10 μM), gabazine (10 μM) and strychnine (2 μM) (A) or when purinergic signaling was blocked with PPADS (100 μM) and 8-PT (10 µM). Right, summary data plotted as CO2/H+-induced change in activity under control conditions and in each blocker cocktail. Not the combination of CNQX, gabazine, and strychnine actually augmented the inhibitory effects of CO2/H+. Paired t-test, *p<0.05.
+
 The next goal was to identify the molecular identity of CO2/H+-inhibited parafacial neurons. In other brain regions, subtypes of inhibitory neurons exhibit characteristic electrical properties and firing behavior (Ascoli et al., 2008). Although it is not clear whether such properties are discriminating for brainstem inhibitory neurons; nevertheless, in whole-cell current-clamp mode, we found CO2/H+-inhibited (662 MΩ) and -insensitive (703 MΩ) cells showed similar input resistances (p=0.91), baseline activity (p=0.59) and firing responses to depolarizing current injections (data not shown). These results suggest CO2/H+ sensitivity does not correlate with these electrical properties. Therefore, after gaining whole-cell access, we labeled cell types of interest with Lucifer Yellow (included in the pipette internal solution) for post hoc immunohistochemical identification using markers based on results our single cell RNAseq analysis (Figure 1C). We found that 5 of 5 CO2/H+-inhibited cells were Sst-immunoreactive (Figure 2Aii) and were not immunoreactive for Pvalb or Cck (data not shown), whereas 0 of 5 CO2/H+-insensitive cells expressed Sst (Figure 2Bii). These results suggest CO2/H+-inhibited parafacial neurons are one or more types (clusters 3, 6–7; Figure 1C) of Sst-expressing inhibitory neurons.
 
-## CO2/H+-synaptic properties of RTN chemoreceptors
+### CO2/H+-synaptic properties of RTN chemoreceptors
 
 Chemosensitive RTN neurons were identified in slices from Slc32a1Cre::TdT mice based on their lack of fluorescence and characteristic firing response to CO2/H+. As previously defined (Kuo et al., 2016), RTN neurons were considered chemosensitive if they show some level of spontaneous activity under control conditions and a robust firing rate response to 10% CO2 (Δ1.6 ± 0.36 Hz; N = 7 cells). Neurons that showed <1.0 Hz firing response to 10% CO2 were considered non-chemosensitive and excluded from this study. Once the cell type of interest has been identified, we obtained whole-cell access and in voltage-clamp, recorded spontaneous synaptic currents. sIPSCs were recorded in relative isolation by holding cells at the reversal potential for AMPA-mediated EPSCs (sEPSCs; Ihold = 0 mV). Under control conditions (5% CO2), chemosensitive RTN neurons showed sIPSCs with an average frequency of 0.22 Hz and amplitude of 13.7 pA (Figure 3A–C). The kinetics of sIPSCs recorded in RTN neurons are similar to what has been described in other brain regions (Ali et al., 2007; Banks and Pearce, 2000); average rise (10%–90%) and decay (90%–10%) times of 3.1 ms and 25.5 ms, respectively. Exposure to 10% CO2 decreases sIPSC frequency to 0.1 ± 0.06 Hz (F2,6=21.04; p<0.001; N = 7 cells total) (Figure 3A–B) which corresponded with an increase in the inter-event interval (Figure 3D) and decreased sIPSC amplitude (F2,6=6.58; p<0.05) (Figure 3C) but with no change in sIPSC rise (3.7 msl p=0.516) or decay (27.7 ms; p=0.268) times. The amplitude and frequency of sIPSCs returned to near control levels after washing back to 5% CO2 (Figure 3B–C). Subsequent bath application of bicuculline (10 µM) to block GABAA receptors and strychnine (2 µM) to block glycine receptors eliminated all sIPSCs, thus confirming they are mediated by GABA or glycinergic input (Figure 3A). Although we cannot exclude the possibility that CO2/H+ disrupts transmitter release from synaptic terminals in the RTN from distal inhibitory neurons, nevertheless, these results are consistent with the possibility that a subset of parafacial Slc32a1 neurons are inhibited by CO2/H+ and contribute to RTN chemoreception by a mechanism involving disinhibition.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/60317/elife-60317-fig3-v2.jpg)
 
-**Figure 3.:** 2/H+-dependent suppression of inhibitory synaptic input to RTN chemoreceptors.(A) Traces of holding current (Ihold = 0 mV) from an RTN chemoreceptor in a slice from a Slc32a1Cre::TdT mouse shows sIPSC events under control conditions and during exposure to 10% CO2 or bicuculline (10 µM) and strychnine (2 µM). (B–C) Summary data (N = 7) show the average effect of CO2/H+ on sIPSC freq (B) and amplitude (C). (D–E) Effect of CO2/H+ on sIPSC frequency and amplitude are also reflected in cumulative distribution plots of sIPSC inter-event interval (D; bin size 250 ms) and amplitude (E; bin size 5 pA). Data was analyzed by one-way RM ANOVA followed by Tukey multiple comparison test. *p<0.05, **p<0.01 ***p<0.001.
+**Figure 3.:** (A) Traces of holding current (Ihold = 0 mV) from an RTN chemoreceptor in a slice from a Slc32a1Cre::TdT mouse shows sIPSC events under control conditions and during exposure to 10% CO2 or bicuculline (10 µM) and strychnine (2 µM). (B–C) Summary data (N = 7) show the average effect of CO2/H+ on sIPSC freq (B) and amplitude (C). (D–E) Effect of CO2/H+ on sIPSC frequency and amplitude are also reflected in cumulative distribution plots of sIPSC inter-event interval (D; bin size 250 ms) and amplitude (E; bin size 5 pA). Data was analyzed by one-way RM ANOVA followed by Tukey multiple comparison test. *p<0.05, **p<0.01 ***p<0.001.
 
 To further test this possibility, we characterized baseline activity and CO2/H+-sensitivity of RTN chemoreceptors under control conditions and when GABA and glycine transmission was blocked with bicuculine and strychnine. In cell-attached voltage-clamp mode, bath application of bicuculine (10 µM) and strychnine (2 µM) increased baseline activity of RTN chemoreceptors by 0.7 ± 0.2 Hz (T12 = 2.201, p=0.022) (data not shown). This finding suggests inhibitory input partly limits activity of RTN chemoreceptors under baseline conditions. We also found the firing response to 10% CO2 was similar under control conditions and in the presence of bicuculine and strychnine (Δ −0.3 ± 0.2 Hz; T12 = 1.246, p>0.05) (data not shown). These results suggest CO2/H+-dependent inhibitory transmission regulates activity of RTN chemoreceptors under baseline conditions but not during exposure to high CO2.
 
@@ -62,11 +90,23 @@ Since application of glutamate receptor blockers into the RTN blunted the ventil
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/60317/elife-60317-fig4-v2.jpg)
 
-**Figure 4.:** 2/H+-dependent facilitation of excitatory glutamatergic input to RTN chemoreceptors.(A) Traces of holding current (Ihold = −60 mV) from a chemosensitive RTN neuron in a slice from a Slc32a1Cre::TdT mouse shows sEPSC events under control conditions and during exposure to 10% CO2 or CNQX (10 µM). (B-C) summary data (N = 8) show the average effect of CO2/H+ on sEPSC freq (B) and amplitude (C). Note that two outlier data points were excluded from analysis. (D–E) Effect (or lack thereof) of CO2/H+ on sEPSC frequency and amplitude are also shown in cumulative distribution plots of sIPSC inter-event interval (D; bin size 100 ms) and amplitude (E; bin size 5 pA). (F) CO2/H+-induced suppression of sIPSC frequency in conjunction with increased sEPSC frequency resulted in enhancement of the sEPSC/sIPSC ratio. *p<0.05, **p<0.01 ***p<0.001.
+**Figure 4.:** (A) Traces of holding current (Ihold = −60 mV) from a chemosensitive RTN neuron in a slice from a Slc32a1Cre::TdT mouse shows sEPSC events under control conditions and during exposure to 10% CO2 or CNQX (10 µM). (B-C) summary data (N = 8) show the average effect of CO2/H+ on sEPSC freq (B) and amplitude (C). Note that two outlier data points were excluded from analysis. (D–E) Effect (or lack thereof) of CO2/H+ on sEPSC frequency and amplitude are also shown in cumulative distribution plots of sIPSC inter-event interval (D; bin size 100 ms) and amplitude (E; bin size 5 pA). (F) CO2/H+-induced suppression of sIPSC frequency in conjunction with increased sEPSC frequency resulted in enhancement of the sEPSC/sIPSC ratio. *p<0.05, **p<0.01 ***p<0.001.
 
-## Sst+ parafacial neurons regulate baseline breathing
+### Sst+ parafacial neurons regulate baseline breathing
 
 Evidence suggests Sst-expressing parafacial neurons are inhibited by CO2/H+ (Figure 2) and contribute to basal activity of RTN chemoreceptors. To test this possibility in vivo, we used an AAV delivery system to express an inhibitory (Gi-coupled) DREADD receptor in a Cre-recombinase-dependent manner in Sst+ neurons. Specifically, we injected AAV2-hSyn-DIO-hM4D(Gi)-mCherry (10 nL/side, Addgene) bilaterally into the medial parafacial region of SstCre mice (JAX #: 013044) (Figure 5). The virus spread laterally to also include a lateral portion of the parafacial region associated with active expiration (Figure 5—figure supplement 1). After 2 weeks recovery, we characterized baseline breathing and the CO2 ventilatory response following sequential injections (I.P.) of saline followed ~2.5 hr later by clozapine (1 mg/kg; I.P.). These experiments began under room air conditions followed by exposure to 0, 3, 5, and 7% CO2 (balance O2 to limit peripheral chemoreceptor input). Animals were exposed to each condition for 10 min and each trial was limited to a total duration of 50 min to minimize the impact of clozapine clearance on receptor activation (Jendryka et al., 2019). Consistent with our cellular (Figure 2) and synaptic data (Figures 3–4), we found that chemogenetic suppression of Sst+ parafacial neurons increased respiratory frequency (F1,5=148.1, p<0.0001) (Figure 5A–B), tidal volume (F1,5 = 7.360, p=0.0421) (Figure 5C) and minute ventilation (F1,5 = 81.06, p=0.0003) under baseline conditions (Figure 5D). However, clozapine and saline treated mice showed similar ventilatory responses to CO2 (F1,5 = 0.9089, p>0.05) (Figure 5D). This is not surprising since CO2/H+-dependent suppression of inhibitory neural activity may preclude the effects of further chemogenetic inhibition on respiratory activity. Interestingly, parallel experiments performed in PvalbCre (JAX #: 008069) (F1,5 = 0.0139, p>0.05) and CckCre (JAX #: 012706) (F1,5 = 0.0660, p>0.05) minimally affected baseline breathing or the ventilatory response to CO2 (Figure 5E–F). It should be noted that cell type-specific expression of Cre recombinase in SstCre (Soumier and Sibille, 2014), PvalbCre (Liu et al., 2019) and CckCre (Matsuda et al., 2020) lines have been confirmed previously. Together with our cellular evidence, these results suggest Sst+ parafacial neurons are specialized to sense changes in CO2/H+ and contribute to respiratory activity.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60317/elife-60317-fig5-v2.jpg)
+
+**Figure 5.:** (Ai) Computer-assisted plots show centers of bilateral AAV2-hSyn-DIO-hM4D-mCherry injections in SstCre animals. The number above each section indicates the relative position of each slice behind bregma (Paxinos and Franklin, 2013). (Aii) Traces of respiratory activity from SstCre mice that received bilateral parafacial injections of AAV2-hSyn-DIO-hM4D-mCherry following systemic (I.P.) injection of clozapine (1 mg/kg) or saline (control). Aiii, summary data (n = 6) shows effects of chemogenetic suppression Sst+ parafacial neurons with clozapine on minute ventilation under room air conditions and in 0–7% CO2 (balance O2). (B–C) Left side shows computer-assisted plots of AAV2-hSyn-DIO-hM4D-mCherry injection centers in PvalbCre (B) and CckCre (C) mice, and summary data to the right shows effects of chemogenetic suppression of parafacial Pvalb+ (B) and Cck+ (C) neurons on minute ventilation under room air conditions and in 0–7% CO2 (balance O2). N = 6 for each genotype (mixed sex). Slopes between 0% and 7% CO2 were compared by analysis of covariance (ANCOVA). #, different between genotypes (two-way ANOVA with Tukey’s multiple comparison test; one symbol p<0.05, two symbols p<0.01).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60317/elife-60317-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (Ai) Confocal images of coronal sections and corresponding brainstem schematic show the placement a typical parafacial injection and its diffusion of ~100 µm along the rostral-caudal axis. (Aii) Computer-assisted plots show the center of all bilateral AAV2-hSyn-DIO-hM4D-mCherry injections (n = 11 animals). Approximate millimeters behind bregma is indicated by numbers next to each section. (Aiii) Left, examples of mCherry and Gad67-immunoreactivity (IR) and summary data to the right confirm both specificity and efficiency of this viral targeting approach. (B) Traces of respiratory activity from Slc32a1Cre mice that received bilateral parafacial injections of AAV2-hSyn-DIO-hM4D-mCherry following systemic (I.P.) injection of clozapine (1 mg/kg) or saline (control). (C–E) Summary data shows effects of chemogenetic suppression of parafacial inhibitory neurons with clozapine on respiratory frequency (C), tidal volume (D) and minute ventilation (E) under room air conditions and in 0–7% CO2 (balance O2). *, different from 0% CO2 as assessed by Tukey’s post-hoc multiple comparison test. ####, different between genotypes (two-way ANOVA with Tukey’s multiple comparison test, p<0.0001).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60317/elife-60317-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A-C) Summary data shows that injection of clozapine (1 mg/kg; I.P) into Slc32a1Cre mice that did not receive AAV injections had negligible effects on respiratory frequency (A), tidal volume (B), and minute ventilation (C) under room air conditions or in 0–7% CO2 (balance O2). These results confirm that the concentration of clozapine used here minimally effects breathing in naïve mice. ****, different from 0% CO2 as assessed by Tukey’s post-hoc multiple comparison test, p<0.0001.
 
 We performed similar experiments in Slc32a1Cre mice (JAX #: 016962) to suppress activity of all parafacial inhibitory neurons including clusters 2 and 4 from our scRNAseq dataset (Figure 1C), which were not targeted in experiments described above. We found that chemogenetic suppression of all parafacial inhibitory neurons mirrored the effects of targeted inhibition of just Sst+ neurons. For example, Slc32a1Cre mice responded to clozapine (1 mg/kg) with an increase in baseline respiratory frequency (F1,9=5.560, p=0.043) and tidal volume (F1,9 = 19.13, p=0.002), which culminated in an increase minute ventilation (F1,9=6.017, p=0.037) (Figure 5—figure supplement 1). Also, as observed in SstCre mice, we found that inhibition of all parafacial inhibitory neurons by clozapine administration (I.P.) in Slc32a1Cre mice minimally effected the CO2 chemoreflex (F1,9=0.0724, p>0.05) (Figure 5—figure supplement 1). We confirmed Cre recombinase is specific to inhibitory parafacial neurons in Slc32a1Cre mice (95% of TdT fluorescence co-localized with Gad67-immunoreactivity), which confirms previously reported data (Lowery-Gionta et al., 2018; Figure 5—figure supplement 1). It should also be noted that clozapine had minimal effect on respiratory activity in Slc32a1Cre mice that did not receive intracranial viral injections (F1,5=0.2399, p>0.05) (Figure 5—figure supplement 2). Together, these results identify Sst-expressing parafacial neurons as important determinants of baseline breathing.
 
@@ -74,17 +114,17 @@ We performed similar experiments in Slc32a1Cre mice (JAX #: 016962) to suppress 
 
 This study provides the first characterization of synaptic properties of RTN neurons and in doing so identifies a role of ventral parafacial inhibitory neurons in CO2/H+ dependent control of breathing. Specifically, we show that (1) the ventral parafacial region contains Sst, Ndnf, Pvalb, and Cck classes of interneurons of which only Sst-expressing neurons are inhibited by CO2/H+; (2) chemosensitive RTN neurons receive inhibitory input under control conditions that is withdrawn during exposure to high CO2; (3) chemogenetic inhibition of Sst+ but not Pvalb+ or Cck+ parafacial neurons increases baseline respiratory activity. These results suggest Sst-expressing parafacial neurons are important determinants of respiratory activity under baseline conditions. This is important because disruption of baseline breathing is the root cause of disordered breathing in various disease states.
 
-## Molecular profile of glutamatergic and GABA/glycinergic ventral parafacial neurons
+### Molecular profile of glutamatergic and GABA/glycinergic ventral parafacial neurons
 
 Consistent with previous work (Dubreuil et al., 2009; Shi et al., 2017; Stornetta et al., 2006), we show that several types of ventral parafacial neurons express Phox2b including presumptive cholinergic neurons (Chat+), C1 pre-sympathetic neurons (Th+) and two subsets that express Nmb and similar levels of H+ sensing machinery (Gpr4 and Kcnk5) but differ in galanin expression. It is not clear whether both Nmb+ populations have similar or divergent roles in control of breathing. Based on Gpr4 and Kcnk5 expression both Nmb+ subtypes likely function as chemoreceptors, however, CO2/H+-activated Phox2b+ parafacial neurons also contribute to pre-inspiratory rhythmogenesis early in development (Onimaru et al., 2008) so perhaps differential expression of galanin denotes these functional differences. It is also not clear whether expiratory parafacial neurons express Phox2b and respond to CO2/H+ similar to RTN chemoreceptors or comprise a functionally discrete respiratory center. For example, selective activation (Souza et al., 2020) or inhibition (Marina et al., 2010) of ventral parafacial Phox2b-expressing neurons increased and decreased expiratory activity, respectively, suggesting expiratory parafacial neurons may be an extension of Phox2b-positive RTN chemoreceptors that differentially regulate inspiratory or expiratory activity depending on projection targets. However, others have shown that expiratory parafacial neurons are not Phox2b-immunoreactive (de Britto and Moraes, 2017), suggesting these neurons are distinct from RTN chemoreceptors. In any case, since expiratory parafacial neurons are putatively glutamatergic (Silva et al., 2016), this population is most likely included in clusters 1–3. Of these, cluster 3 is of particular interest because it lacks Gpr4 and Kcnk5 and so is not likely to function as an RTN chemoreceptor. It is also worth noting that Slc17a6 clusters 3–4 express high levels of Stmn4, an important regulator of neural differentiation (Lin and Lee, 2016), so perhaps these populations diverge at later developmental time points. In any case, we are unable to disentangle putative rhythmogenic or expiratory parafacial neurons from other Phox2b+ cell types at this time. Nonetheless, it is also important to recognize that Phox2b is expressed by multiple cell types in the parafacial region, thus confounding interpretation of previous work that relied primarily on Phox2b expression to target RTN chemoreceptors (Gourine et al., 2010).
 
 We also determined that the ventral parafacial region contains a limited diversity of inhibitory neurons including one Cck+ cluster, one Pvalb+ cluster, one Ndnf+ cluster and three Sst+ clusters that differ in terms of calretinin, reelin and Nos1 expression. Although our cellular experiments suggest Sst+ cells are CO2/H+-sensitive (Figure 2), we were not able to identify which Sst+ cluster(s) function as chemoreceptors based on gene expression. We also found the ventral parafacial region did not include Htra3-, Vip-, or Npy-expressing inhibitory neurons. This is in marked contrast to the cortex where Htra3+ inhibitory neurons represent ~30% of the total interneuron population (Tremblay et al., 2016). By defining the diversity if inhibitory neurons in this brainstem region, these results provide a basis for understanding how disruption of inhibitory neural function in diseases like Dravet syndrome cause brainstem disfunction and mortality.
 
-## Sst-expressing parafacial neurons are intrinsically inhibited by CO2
+### Sst-expressing parafacial neurons are intrinsically inhibited by CO2
 
 The RTN is an important respiratory chemoreceptor region (Guyenet et al., 2019); therefore, it is reasonable to speculate that any neurons in this region that respond to CO2/H+ might do so in a manner tailored to support this reflex. Consistent with this, we found that a subset of inhibitory parafacial neurons (37%) are inhibited by 10% CO2. This response was retained when purinergic signaling or fast neurotransmission was blocked, suggesting these cells are intrinsically CO2/H+ sensitive. We also showed that CO2/H+-inhibited parafacial neurons express Sst while CO2/H+-insensitive cells did not, thus honing the list of inhibitory chemoreceptor candidates to clusters 3, 6, and 7 (Figure 1C). Since the majority of inhibitory neurons in this region did not respond to this level of CO2, it is tempting to speculate that Sst+ parafacial neurons are specialized to contribute to RTN chemoreceptors and respiratory drive.
 
-## The network basis of RTN chemoreception
+### The network basis of RTN chemoreception
 
 Previous evidence based on multi-electrode extracellular recordings from cats suggests that RTN neurons including CO2/H+-activated (presumably chemoreceptors) and -inhibited (most likely Slc32a1+ based on evidence presented in this study) interact through paucisynaptic connections (Ott et al., 2011). Consistent with this, we show that exposure to high CO2/H+ increased the frequency of spontaneous glutamatergic input to RTN neurons while simultaneously decreasing frequency and amplitude of spontaneous inhibitory synaptic inputs.
 
@@ -92,29 +132,284 @@ Mechanisms contributing to CO2/H+-induced activation of the RTN network likely i
 
 At the postsynaptic level, our finding that CO2/H+ minimally affected sEPSC amplitude is consistent with evidence that AMPA receptors are largely unaffected by acidification. Conversely, CO2/H+-dependent suppression of sIPSC amplitude may involve H+-dependent inhibition of GABA or glycine receptors on RTN neurons. For example, depending on the subunit composition, certain recombinant GABAA receptors (Huang et al., 2004; Huang and Dillon, 1999; Wang et al., 2005) and glycine α1 and α1β receptors (Chen et al., 2004) are reversibly inhibited by acidification near the physiological range. It should also be noted that CO2/H+ may elicit release of non-glutamatergic neuromodulators that alter postsynaptic conductance and potentially contribute to diminished IPSC amplitude; however, we consider this unlikely since this non-specific mechanism is expected to affect both excitatory and inhibitory synaptic currents. Together these results suggest the RTN functions as a CO2/H+-sensing network composed of both faciliatory and disinhibitory interactions.
 
-## Parafacial inhibitory neurons contribute to baseline breathing
+### Parafacial inhibitory neurons contribute to baseline breathing
 
 The possibility that disinhibition contributes to chemoreception is not novel or unique to the RTN. For example, CO2/H+-inhibited cells have been found in several putative chemosensitive regions (Conrad et al., 2009; Nichols et al., 2009; Wang and Richerson, 1999) including GABAergic neurons in the medullary raphe (Iceman et al., 2014) and parafacial region (Kuribayashi et al., 2008). These results suggest disinhibition contributes to respiratory chemoreception. However, in the absence of evidence that inhibitory neurons in these regions actually influence chemoreceptor function or contribute to respiratory behavior, this possibility has remained largely speculative. We addressed these knowledge gaps by first showing that chemosensitive RTN neurons receive inhibitory synaptic input under control conditions that is withdrawn in a CO2/H+-dependent manner (Figure 4). We also show that chemogenetic suppression of Sst+ parafacial neurons increased minute ventilation (frequency and tidal volume) (Figure 5A). Therefore, we propose that Sst+ parafacial neurons contribute to the drive to breathe by regulating baseline activity of RTN chemoreceptors. When the activity of Sst+ parafacial neurons is diminished under high CO2 conditions, it is perhaps not surprising that further inhibition of this population by chemogenetic means had negligible effect on respiratory output. These results are consistent with pharmacological evidence from anesthetized rats showing that application of bicuculline (GABAA receptor blocker) to the ventrolateral medulla increased inspiratory activity under control conditions but not during exposure to high CO2 (Gourine and Spyer, 2001). Furthermore, disinhibition of neurons located more laterally in the ventral parafacial region contributed to emergence of active expiration during exposure to high CO2 (Huckstepp et al., 2015; Pagliardini et al., 2011). Recent work suggests GABAergic neurons in medullary raphe regions regulate expiratory output of the lateral parafacial region during high CO2 (60); however, the source of CO2/H+-dependent disinhibition of expiratory parafacial neurons remains unclear. Our evidence that Sst+ parafacial neurons show a CO2/H+ response consistent with disinhibition and their close proximity to the lateral parafacial region makes them ideal candidates for such a function. However, potential roles of these neurons in regulation of expiratory activity requires further investigation.
 
-## Potential physiological significance
+### Potential physiological significance
 
 The ability of respiratory chemoreceptors to sense and respond to tissue CO2/H+ is what maintains breathing during sleep. As CO2/H+ levels decrease so too does respiratory activity until the apneic threshold is reached and breathing ceases. Therefore, baseline CO2 levels and the apneic threshold are critical determinants of stable breathing during sleep (Nakayama et al., 2002). The ability of ventral parafacial Sst+ neurons to respond to CO2 in the low physiological range (minimally active under high CO2 conditions) and preferentially regulate baseline breathing suggests these cells are important determinants of baseline CO2 levels and the apneic threshold. Although we did not observe an apnea phenotype during chemogenetic suppression of parafacial inhibitory neurons, these experiments were performed in awake mice in which arousal-dependent mechanism may help stabilize breathing. Interestingly, a yet unidentified population of Slc32a1+ neurons in nearby and potentially overlapping medullary regions are known to regulate rapid eye movement (REM) sleep, where activation of these cells promotes a REM-like state and inhibition of these cells does the opposite (Weber et al., 2015). Considering that CO2/H+ also stimulates arousal (Guyenet and Bayliss, 2015), it is possible CO2/H+ inhibition of parafacial Slc32a1+ neurons suppresses REM and promotes arousal, thus directly coordinating chemoreceptor activity with sleep-wake state. However, these possibilities require further investigation. An additional caveat to note is that in addition to RTN chemoreceptors, Sst+ parafacial neurons likely regulate respiratory activity at other levels of the respiratory circuit. Therefore, an important future direction of this work will be to identify projection targets of Sst+ parafacial neurons.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus, Vgat-iris-Cre, mixed 129/SvJ and C57BL6/J background)</td>
+      <td>Slc32a1tm2(cre)Lowl/J</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:016962</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (TdTomato reporter Ai14, C57BL6/J background)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Phox2b Cre, C57Bl6/J background)</td>
+      <td>B6(Cg)-Tg(Phox2b-cre)3Jke/J</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:016223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sst Cre, C57Bl6/J background)</td>
+      <td>Ssttm2.1(cre)Zjh/J</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:013044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pvalb Cre, C57Bl6/J background)</td>
+      <td>Pvalbtm1(cre)Arbr/J</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:017320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Cck-IRES Cre, C57Bl6/J background)</td>
+      <td>Ccktm1.1(cre)Zjh/J</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:012706</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AAV2-hSyn-DIO-hM4D(Gi)-mCherry</td>
+      <td>PMID:21364278</td>
+      <td>RRID:Addgene_44362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(goat polyclonal) anti-mouse Phox2b antibody</td>
+      <td>R and D Systems</td>
+      <td>RRID:AB_10889846</td>
+      <td>(1:100 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rat monoclonal) anti-mouse GAD67 antibody,close 1G10.2</td>
+      <td>Millipore Sigma</td>
+      <td>RRID:AB_2278725</td>
+      <td>(1:250 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal) anti-mouse Parvalbumin antibody</td>
+      <td>Millipore Sigma</td>
+      <td>RRID:AB_2174013</td>
+      <td>(1:250 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rabbit polyclonal) anti-mouse CCK-AR antibody</td>
+      <td>R and D Systems</td>
+      <td>RRID:AB_2275486</td>
+      <td>(1:250 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal) anti-Somatostatin antibody</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_831726</td>
+      <td>(1:200 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rabbit polyclonal) anti-lucifer yellow antibody</td>
+      <td>ThermoFisher</td>
+      <td>RRID:AB_2536190</td>
+      <td>(1:500 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(donkey polyclonal) anti-rabbit AlexaFluor 488</td>
+      <td>Jackson Immunoresearch</td>
+      <td>711-545-152</td>
+      <td>(1:500 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(donkey polyclonal) anti-mouse AlexaFluor 647</td>
+      <td>Jackson Immunoresearch</td>
+      <td>715-605-150</td>
+      <td>(1:500 dilution)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAScope Probe-Gad1</td>
+      <td>ACDBio</td>
+      <td>400951-C3</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAScope Probe-Slc6a5</td>
+      <td>ACDBio</td>
+      <td>425351-C2</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAScope Probe-Slc32a1</td>
+      <td>ACDBio</td>
+      <td>319191</td>
+      <td>50:1</td>
+    </tr>
+    <tr>
+      <td>Commerical assay or kit</td>
+      <td>RNAscope Fresh Frozen Multiplex Fluorescent Kit</td>
+      <td>ACDBio</td>
+      <td>320851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commerical assay or kit</td>
+      <td>Chromium Single Cell 3’ Reagent Kit</td>
+      <td>10X Genomics</td>
+      <td>PN 120237</td>
+      <td>Version 2</td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Lucifer Yellow</td>
+      <td>Sigma</td>
+      <td>L0259</td>
+      <td>0.2%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine</td>
+      <td>Sigma</td>
+      <td>1142107</td>
+      <td>1 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strychnine</td>
+      <td>Sigma</td>
+      <td>S0532</td>
+      <td>2 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gabazine</td>
+      <td>Tocris</td>
+      <td>1262</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNQX</td>
+      <td>Tocris</td>
+      <td>0190</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PPADS</td>
+      <td>Tocris</td>
+      <td>0625</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,3-dimethyl-8-phenyl-xantine (8-PT)</td>
+      <td>Sigma</td>
+      <td>P2278</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Loupe Browser</td>
+      <td>10X Genomics</td>
+      <td>RRID:SCR_018555</td>
+      <td>Version 5.0.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ponemah</td>
+      <td>DSI</td>
+      <td>RRID:SCR_01701</td>
+      <td>Version 5.32</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spike</td>
+      <td>Cambridge Electronic Design</td>
+      <td>RRID:SCR_00903</td>
+      <td>Version 5.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 7.03</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pCLAMP 10</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td>Version 10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td>Version 2.0.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Synaptosoft</td>
+      <td>Mini Analysis Program</td>
+      <td>RRID:SCR_002184</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All procedures were performed in accordance with National Institutes of Health and University of Connecticut Animal Care and Use Guidelines. All animals were housed in a 12:12 light dark cycle with normal chow ad libitum if of weaning age. The single-cell RNA-seq experiments used mixed sex wild-type C57BL6/J animals. The Slc32a1Cre (JAX # 016962) and TdTomato (Ai14) reporter mice (JAX # 007914) were maintained on 129S1/SvlmJ and C57BL6/J backgrounds, respectively, and only F1 pups were used for electrophysiological experiments. Mouse lines used for chemogenetic experiments including SstCre (JAX # 013044), PvalbCre (JAX # 017320), and CckCre (JAX # 012706) lines were ordered from a congenic C57BL6/J background, directly from Jackson Laboratories. Phox2bCre (JAX # 016223) mice were maintained on a C57BL6/J background and used solely for antibody specificity confirmation.
 
-## Single-cell isolation
+### Single-cell isolation
 
 Animals were euthanized under ketamine/xylazine anesthesia and brainstem slices were prepared using a vibratome in ice cold, high-sucrose slicing solution containing (in mM): 87 NaCl, 75 sucrose, 25 glucose, 25 NaHCO3, 1.25 NaH2PO4, 2.5 KCl, 7.5 MgCl2, 0.5 mM CaCl2, and 5 L-ascorbic acid (equilibrated with 5% CO2-95% O2). Coronal brainstem slices (300 μm thick) were prepared and then immediately enzymatically treated at 34°C with protease XVIII (6 mg/mL, Sigma) for 6 min. After enzyme incubation, slices were washed three times in cold dissociation solution and then transferred to an enzyme inhibitor mix containing trypsin inhibitor (10 mg/mL, Sigma) and bovine serum albumin (BSA, 10 mg/mL, Sigma) in cold sucrose dissociation solution. Next, we isolated the parafacial region which included cells within ~100 µm from the ventral surface and extended ~600 µm medially from the border of the trigeminal nucleus and ~500 µm rostrally from the caudal end of the facial nucleus. Motor neurons, adrenergic C1 cells and raphe neurons were identified based on expression of cell type specific markers and excluded from analysis. These tissue chunks were then warmed to 34°C for 10 min before trituration. A single cell suspension was achieved by trituration using a 25 and 30 gauge needles sequentially, attached to a 2 mL syringe. Samples were triturated for an average of 5 min. Immediately after, the samples were placed back on ice and filtered through a 30-micron filter (Miltenyi Biotech) into sterile microcentrifuge tubes for cell viability assessment.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
 Cell viability for each sample was assessed on a Countess II automated cell counter (ThermoFisher), and 12,000 cells were loaded for capture onto an individual lane of a Chromium Controller (10X Genomics). Single cell capture, barcoding and library preparation were performed using the 10X Chromium platform according to the manufacturer’s protocol (#CG00052) using version 2 (V2) chemistry. cDNA and libraries were checked for quality on Agilent 4200 Tapestation, quantified by KAPA qPCR. All libraries were sequenced on individual lanes of an Illumina HiSeq4000 targeting 6000 barcoded cells with an average sequencing depth of 50,000 reads per cell.
 
-## scRNA-seq data processing, quality control, and analysis
+### scRNA-seq data processing, quality control, and analysis
 
 Illumina base call files for both libraries were converted to FASTQs using bcl2fastq v2.18.0.12 (Illumina) and FASTQ files were aligned to the mm10 (GRCh38.84, 10X Genomics mm10 reference 2.1.0) using the version 2.2.0 Cell Ranger count pipeline (10X Genomics), resulting in two gene-by-cell digital count matrices. Source code for FASTQ files is available on GitHub at: https://github.com/TheJacksonLaboratory/ventral-parafacial-neuron-scrnaseq or through GEO accession GSE153172. Downstream analysis was performed using Scanpy (v1.4.6) (Wolf et al., 2018). Individual libraries were subjected to quality control and filtering independently. Putative doublets were first removed using Scrublet on the raw matrixes (Wolock et al., 2019). Then, for each matrix, cells containing fewer than 800 genes, more than 50 hemoglobin transcripts, or more than 20% mtRNA content were excluded from downstream analyses. Genes present in five or fewer cells, with fewer than 10 total counts were also excluded. For the dataset depicted in this work, we used two lanes of 10X Chromium chip with the following conditions: P10 C57BL6/J pups and 4-OH Tamoxifen treated P10 C57BL6/J pups. We used both of these conditions to create a comprehensive control database to compare Cre dependent and inducible lines with a C57BL6/J background strain. The individual filtered matrices (containing 3345 and 9054 cells, respectively) were concatenated together resulting in an initial aggregated counts matrix of 12,399 cells by 15,923 genes. This aggregated counts matrix was normalized by the total number of counts per cell then multiplied by the median number of counts across all cells, log2 transformed, and lastly scaled to zero mean and unit variance column-wise.
 
@@ -124,32 +419,32 @@ To further analyze the neuronal populations, all cells were first classified as 
 
 The raw expression matrices of the 210 excitatory and 464 inhibitory neurons were re-normalized, batch corrected, and embedded with UMAP independently as described above, using only 1000 highly variable genes. Clustering with Leiden community detection led to four excitatory and seven inhibitory neuron clusters. In both analyses, a small population of Slc17a6 high/Slc32a1 high cells emerged (n = 28); it is unclear whether these cells are doublets, but due to the limited number of such cells, this unique population was discarded from both analyses, resulting in 197 excitatory and 445 inhibitory neurons analyzed. Markers genes for each cluster in each analysis were computed using the Wilcoxon-ranked sum test in a one-versus-rest fashion using the `scanpy.tl.rank_genes_groups` function.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice (Phox2bCre::TdT, Slc32a1Cre::TdT, Slc32a1Cre infected with virus) were transcardially perfused with 20 mL of room temperature phosphate buffered saline (PBS, pH 7.4) followed by 20 mL of chilled 4% paraformaldehyde (pH 7.4) in 0.1 M phosphate buffered saline. The brainstem was then removed from the animal and post-hoc fixed for 24 hr. After, 150 µm slices were made using a Zeiss VT100S vibratome. In the case of live slices from electrophysiology recordings, individual slices were placed in chilled 4% paraformaldehyde for at least 24 hr before processing. Free floating slices were then incubated in a 0.5% Triton-X/PBS solution for 45 min to permeabilize the tissue. The slices remained in a 0.1% Triton-X/10% Fetal Bovine Serum (FBS, ThermoFisher)/PBS solution for a 12 hr primary antibody incubation of selected primary antibody (see Key Resource Table). The tissue was then washed three times in 0.1% Triton-X/10% FBS/PBS solution; the secondary antibody was incubated with the tissue after the third wash for 2 hr (see Key Resource Table). The tissue was then washed three times in PBS before mounting on precleaned glass slides with Prolong Diamond with DAPI (ThermoFisher). Imaging of brain slices was achieved with a Leica SP8 confocal microscope.
 
-## Fluorescent in situ hybridization
+### Fluorescent in situ hybridization
 
 To prepare fresh frozen slice, two week old Slc32a1Cre::TdT mice were anesthetized with isoflurane, decapitated, and brainstem tissues were rapidly frozen with dry ice and embedded with OCT compound. Brainstem slices (14 µm thick) containing the RTN were cryosectioned and collected onto SuperFrost Plus microscope slides. Slices were fixed with 4% paraformaldehyde and dehydrated with ethanol. This tissue was processed with the instruction of RNAscope Multiplex Fluorescent Assay (ACD, 320850); the probes used in our study were designed and validated by ACD. Confocal images were obtained using a Leica Sp8 and confocal image files containing image stacks were loaded into ImageJ (version 2.0.0, NIH, RRID:SCR_003070).
 
-## Acute brainstem slice preparation and in vitro electrophysiology
+### Acute brainstem slice preparation and in vitro electrophysiology
 
 Slices containing the RTN were prepared as previously described (Kuo et al., 2016). In short, mice were anesthetized by administration of ketamine (375 mg/kg, I.P.) and xylazine (25 mg/kg; I.P.) and rapidly decapitated; brainstems were removed and transverse brainstem slices (250–300 µm) were cut using a microslicer (DSK 1500E; Dosaka) in ice-cold substituted Ringer solution containing the following (in mM): 260 sucrose, 3 KCl, 5 MgCl2, 1 CaCl2, 1.25 NaH2PO4, 26 NaHCO3, 10 glucose, and 1 kynurenic acid. Slices were incubated for 30 min at 37°C and subsequently at room temperature in a normal Ringer’s solution containing (in mM): 130 NaCl, 3 KCl, 2 MgCl2, 2 CaCl2, 1.25 NaH2PO4, 26 NaHCO3, and 10 glucose. Both substituted and normal Ringer’s solutions were bubbled with 95% O2 and 5% CO2 (pH = 7.30).
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Individual slices containing the ventral parafacial region were transferred to a recording chamber mounted on a fixed-stage microscope (Olympus BX5.1WI) and perfused continuously (~2 ml/min) with a bath solution containing (in mM): 130 NaCl, 3 KCl, 2 MgCl2, 2 CaCl2, 1.25 NaH2PO4, 26 NaHCO3, and 10 glucose (equilibrated with 5% CO2; pH = 7.3). All recordings were made with an Axopatch 200B patch-clamp amplifier, digitized with a Digidata 1322A A/D converter and recorded using pCLAMP 10.0 software (RRID:SCR_011323). The firing response of chemosensitive RTN neurons to 10% CO2 (duration of ~5 min) was assessed at room temperature (~22°C) in the cell-attached voltage-clamp configuration (seal resistance >1 GΩ) with holding potential matched to resting membrane potential (Vhold = −60 mV) and with no current generated by the amplifier (Iamp = 0 pA). Patch electrodes had a resistance of 5–6 MΩ when coated with Sylgard 184 and filled with a pipette solution containing the following (in mM): 120 KCH3SO3, 4 NaCl, 1 MgCl2, 0.5 CaCl2, 10 HEPES, 10 EGTA, 3 Mg‐ATP and 0.3 GTP‐Tris, 0.2% Lucifer yellow (pH 7.30). Firing rate histograms were generated by integrating action potential discharge in 10 to 20 s bins using Spike 5.0 software (RRID:SCR_000903). In a subset of experiments, we obtained whole-cell access to characterize input resistance over voltages ranging from −20 to −80 mV by injecting current steps (1 s) of varying amplitudes (−100 pA to −20 pA). Also, in the whole cell configuration, we filled cell types of interest with Lucifer Yellow for post hoc immunohistochemical identification using cell type specific markers.
 
 Spontaneous synaptic currents were characterized in the absence of TTX using a Cs-based pipette solution containing the following (in mM): 135 CsCH3SO3, 10 HEPES, 1 EGTA, 1 MgCl2, 3.2 TEA-Cl, 5 Na-phosphocreatine, 4 Mg-ATP, and 0.3 Na-GTP (pH 7.3 using CsOH). To record spontaneous IPSCs (sIPSCs), cells were held at the reversal potential for AMPA-mediated excitatory synaptic currents (sEPSCs; Ihold 0 mV) and confirmed with bath application of GABA and glycine blockers. To record EPSCs, cells were held at −60 mV. Although this voltage is positive to the Cl- reversal potential under our experimental conditions, potential contaminating IPSCs could easily be excluded from analysis based on the direction of synaptic currents; inward for EPSCs and outward for IPSCs. We also pharmacologically confirmed EPSCs as glutamatergic at the end of each experiment by bath application of 6-cyano-7- nitroquinoxaline-2,3-dione (CNQX). Spontaneous EPSCs and IPSCs were analyzed using the Mini Analysis Program (Synaptosoft) and detected events based on amplitude (minimum 5 pA) and characteristic kinetics (fast rising phase followed by a slow decay). Each automatically detected event was also visually inspected to exclude obvious false responses. All whole-cell recordings had an access resistance (Ra) <20 MOhm, recordings were discarded if Ra varied 10% during an experiment, and capacitance and Ra compensation (70%) were used to minimize voltage errors. A liquid junction potential of −10 mV (KCH3SO3) or +11 mV (CsCH3SO3) was corrected off-line.
 
-## RTN viral injections
+### RTN viral injections
 
 Adult Slc32a1Cre, SstCre, PvalbCre, and CckCre mice (>20 g) were anesthetized with 3% isoflurane. The right cheek of the animal was shaved and an incision was made to expose the right marginal mandibular branch of the facial nerve. The animals were then placed in a stereotaxic frame and a bipolar stimulating electrode was placed directly adjacent to the nerve. Animals were maintained on 1.5% isoflurane for the remainder of the surgery. An incision was made to expose the skull and two 1.5 mm holes were drilled left and right of the posterior fontanelle, caudal of the lambdoidal suture. The facial nerve was stimulated using a bipolar stimulating electrode to evoke antidromic field potentials within the facial motor nucleus. In this way, the facial nucleus on the right side of the animal was mapped in the X, Y, and Z direction using a quartz recording electrode. The viral vector, AAV2-hSyn-DIO-hM4D(Gi)-mCherry (Addgene #44361, titer 5.3 × 1012 GC∕mL), was loaded into a 1.2 mm internal diameter borosilicate glass pipette on a Nanoject III system (Drummond Scientific). One 10 µL injection of virus per side was delivered at least −0.02 mm ventral to the Z coordinates of the facial nucleus, to ensure injection into the RTN. These same coordinates were used for the left side of the animal. In all mice, incisions were closed with nylon sutures and surgical cyanoacrylate adhesive. Mice were placed on a heated pad until consciousness was regained. Meloxicam (1.5 mg/kg) was administered 24 and 48 hr postoperatively. Plethysmography was performed 2 weeks after viral injection. The location of all injection sites were later confirmed by post hoc histological analysis (Figure 5—figure supplement 1).
 
-## Unrestrained whole-body plethysmography
+### Unrestrained whole-body plethysmography
 
 Respiratory activity was measured using a whole-body plethysmograph system (Data Scientific International; DSI), utilizing a small animal chamber maintained at room temperature and ventilated with room air or carbogen mixtures at a constant flow rate of 1.16 L/min. Following recovery from surgery, Slc32a1Cre, SstCre, PvalbCre, and CckCre mice injected with AAV were individually placed into a chamber and allowed 1 hr to acclimate prior to the start of an experiment. Respiratory activity was recorded using Ponemah 5.32 software (DSI) for a period of 20 min in room air immediately after I.P. injection of saline or clozapine followed by exposures to 0, 3, 5, and 7% CO2 (balance O2) (10 min/condition). For the chemogenetic experiments, we sequentially tested saline followed by clozapine on the ventilatory response to CO2 in the same animals on the same day (~2.5 hr between trials). Plethysmography experiments began immediately after injection of either saline or clozapine. Parameters of interests including respiratory frequency (FR, breaths per minute), tidal volume (VT, measured in mL; normalized to body weight and corrected to account for chamber and animal temperature, humidity, and atmospheric pressure), and minute ventilation (VE, mL/min/g) were measured during a 20 s period of relative quiescence, confirmed with synchronous video monitoring, after 5 min of exposure to each condition. All experiments were performed between 9 a.m. and 6 p.m. to minimize potential circadian effects.
 
-## Statistics
+### Statistics
 
 Data are reported as mean ± SE. Power analysis was used to determine sample size, all data sets were tested for normality using Shapiro-Wilk test, and outlier data points were identified by the Grubbs test and excluded from analysis. Statistical comparisons were made using t-test, Wilcoxon-ranked sum test, or one-way or two-way simple or repeated measures ANOVA or ANCOVA followed by Tukey’s multiple comparison tests as appropriate. The specific test used for each comparison is reported in the figure legend and all relevant values used for statistical analysis are included in the results section.

@@ -17,13 +17,21 @@
 
 ## Abstract
 
-10.7554/eLife.48115.001 Suppressor of Hairless [Su(H)], the transcription factor at the end of the Notch pathway in Drosophila , utilizes the Hairless protein to recruit two co-repressors, Groucho (Gro) and C-terminal Binding Protein (CtBP), indirectly. Hairless is present only in the Pancrustacea, raising the question of how Su(H) in other protostomes gains repressive function. We show that Su(H) from a wide array of arthropods, molluscs, and annelids includes motifs that directly bind Gro and CtBP; thus, direct co-repressor recruitment is ancestral in the protostomes. How did Hairless come to replace this ancestral paradigm? Our discovery of a protein (S-CAP) in Myriapods and Chelicerates that contains a motif similar to the Su(H)-binding domain in Hairless has revealed a likely evolutionary connection between Hairless and Metastasis-associated (MTA) protein, a component of the NuRD complex. Sequence comparison and widely conserved microsynteny suggest that S-CAP and Hairless arose from a tandem duplication of an ancestral MTA gene.
+Suppressor of Hairless [Su(H)], the transcription factor at the end of the Notch pathway in Drosophila, utilizes the Hairless protein to recruit two co-repressors, Groucho (Gro) and C-terminal Binding Protein (CtBP), indirectly. Hairless is present only in the Pancrustacea, raising the question of how Su(H) in other protostomes gains repressive function. We show that Su(H) from a wide array of arthropods, molluscs, and annelids includes motifs that directly bind Gro and CtBP; thus, direct co-repressor recruitment is ancestral in the protostomes. How did Hairless come to replace this ancestral paradigm? Our discovery of a protein (S-CAP) in Myriapods and Chelicerates that contains a motif similar to the Su(H)-binding domain in Hairless has revealed a likely evolutionary connection between Hairless and Metastasis-associated (MTA) protein, a component of the NuRD complex. Sequence comparison and widely conserved microsynteny suggest that S-CAP and Hairless arose from a tandem duplication of an ancestral MTA gene.
 
 ## Introduction
 
 A very common paradigm in the regulation of animal development is that DNA-binding transcriptional repressors bear defined amino acid sequence motifs that permit them to recruit, by direct interaction, one or more common co-repressor proteins that are responsible for conferring repressive activity. Two such universal co-repressors are Groucho (Gro) and C-terminal Binding Protein (CtBP).
 
 The ancient and highly conserved transcription factor Suppressor of Hairless [Su(H)] functions at the terminus of the widely utilized Notch cell-cell signaling pathway. Su(H) is converted into an activator by signaling through the Notch receptor, but in the absence of signaling it functions as a repressor. Earlier studies have revealed that in many settings in Drosophila, Su(H)’s repressive activity depends on binding to the Hairless protein (Figure 1). Hairless includes separate Gro- and CtBP-binding motifs, which permit it to function as an adaptor to bring these two corepressors to Su(H) (Figure 1B) (Barolo et al., 2002a). Thus, the Su(H)/H partnership in the fly represents a notable exception to the rule of direct co-repressor recruitment.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/48115/elife-48115-fig1-v3.jpg)
+
+**Figure 1.:** (A) Diagram denoting locations of conserved domains and motifs within Hairless, and illustrating extreme size differences of the protein in different species. Shown is Hairless from the carpenter bee Ceratina calcarata and the blowfly Protophormia terraenovae (Hase et al., 2017), with scale and protein sizes indicated. (B) Summary of Hairless’s known mode of action (Lai, 2002; Maier, 2006) as an adaptor protein that recruits the global co-repressors C-terminal Binding Protein (CtBP) and Groucho (Gro) to Suppressor of Hairless [Su(H)], the transducing transcription factor for the Notch (N) cell-cell signaling pathway; adapted from Figure 6 of Barolo et al. (2002a). In the absence of signaling through the Notch receptor (left), Su(H) acts as a repressor of Notch target genes, despite the presence of transcriptional activator proteins (orange oval). Upon activation of the Notch receptor (middle), Su(H), in a complex with the receptor’s intracellular domain (NICD) and the co-activator Mastermind (Mam), functions to activate transcription of pathway target genes in cooperation with other transcriptional activators. In the absence of Hairless and hence in the absence of Su(H)’s repressive activity (right), the partner transcription factors are often sufficient to activate expression of target genes in a signal-independent manner (Barolo and Posakony, 2002b).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48115/elife-48115-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Locations of the Gro-binding motif (purple arrow) and CtBP-binding motif (red arrow) are indicated. Note that most of the region between these two motifs is strongly predicted to be disordered.
 
 As genome and transcriptome sequences have become available for more and more insects and other arthropods, we have searched for possible Hairless orthologs in a wide variety of species, in an attempt to determine the protein’s phylogenetic distribution. We have found that Hairless is confined to the Pancrustacea (or Tetraconata), a clade of arthropods that includes the Crustacea and Hexapoda (Misof et al., 2014; Kjer et al., 2016). While this indicates that Hairless was gained at least 500 Mya, it also raises the question of how Su(H) in other protostomes acquires repressive activity.
 
@@ -37,7 +45,7 @@ An intriguing question in evolutionary biology concerns the path by which a part
 
 ## Results
 
-## Hairless is present only in the Pancrustacea
+### Hairless is present only in the Pancrustacea
 
 We have conducted extensive BLAST searches of genome and transcriptome sequence data for a wide variety of metazoa in an attempt to define the phylogenetic distribution of Hairless. We find that Hairless as originally described (Bang and Posakony, 1992; Maier et al., 1992; Maier et al., 2008) is confined to the Pancrustacea (or Tetraconata), and occurs widely within this clade, including the Hexapoda, Vericrustacea, and Oligostraca (Figure 2A). By contrast, no evidence for a true Hairless gene has been detected in either Myriapods or Chelicerates, even in cases where substantially complete genome sequence assemblies are available.
 
@@ -47,9 +55,238 @@ We have conducted extensive BLAST searches of genome and transcriptome sequence 
 
 The enormous variation in the size of the Hairless protein in various Pancrustacean clades is worthy of note (Figure 1A). The known extremes are represented by the Diplostracan (shrimp) Eulimnadia texana (343 aa) (Baldwin-Brown et al., 2018) and the Dipteran (fly) Protophormia terraenovae (1614 aa) (Hase et al., 2017), a 4.7-fold difference. There is a broad tendency for the size of the protein to be relatively stable within an order (Supplementary file 1). Thus, as noted previously (Maier et al., 2008), the Hymenoptera generally have a small Hairless (of the order of 400 aa; see Figure 1A), while the Diptera typically have a much larger version (of the order of 1000 aa or more). Notable exceptions to this pattern of uniformity are aphids, where Hairless is typically ~900 aa compared to ~400 aa in other Hemiptera, and chalcid wasps, where the protein is over 500 aa instead of the Hymenoptera-typical ~400 aa noted above (Supplementary file 1). Smaller Hairless proteins typically retain all five conserved motifs/domains characteristic of this factor (Maier et al., 2008), while the regions that flank and lie between these sequences are reduced in size (Figure 1A; Supplementary file 2).
 
-## A known CtBP-binding motif is present in the non-conserved N-terminal region of Su(H) in a wide variety of protostomes
+### A known CtBP-binding motif is present in the non-conserved N-terminal region of Su(H) in a wide variety of protostomes
 
 The apparent confinement of the Hairless co-repressor adaptor protein to the Pancrustacea raises the question of the mechanism(s) by which Su(H) in other protostomes might recruit co-repressor proteins to mediate its repressor function. Of course, other protostomes need not utilize the Gro and CtBP co-repressors for this purpose; different co-repressors might substitute. Nevertheless, we first sought to identify known binding motifs for Gro and CtBP in Su(H) from arthropods lacking Hairless. As shown in Table 1, we found a canonical CtBP recruitment motif of the form PϕDϕS (where ϕ = I, L, M, or V) in predicted Su(H) proteins from a variety of Myriapods and Chelicerates, including the centipede Strigamia maritima, the tick Ixodes scapularis, the spider Parasteatoda tepidariorum, the horseshoe crab Limulus polyphemus, and the scorpion Centruroides sculpturatus. These motifs are all located in the non-conserved N-terminal region of Su(H) (Supplementary file 3).
+
+**Table 1.**
+ Co-repressor recruitment motifs in protostome Su(H) proteins.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>CtBP motif</th>
+      <th>Gro motif</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ecdyonurus insignis</td>
+      <td>YPDNHPVDLSSPRPH</td>
+      <td>APMIPGSLTPPDKMNGEHPHHG</td>
+      <td>GCCL01029953.1 (Simon et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>Calopteryx splendens</td>
+      <td>YTDNHPVDLSSPRPP</td>
+      <td>HHMIPGSLTPPDKMNGEHPAMH</td>
+      <td>LYUA01002621.1 (Ioannidis et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>Atelura formicaria</td>
+      <td>YPDNHPVDLSSPRPQ</td>
+      <td>PHMIPGSLTPPDKMNGEHPHHS</td>
+      <td>GAYJ02050375.1 (Misof et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Machilis hrabei</td>
+      <td>YPDNHPVDLSSPRPH</td>
+      <td>PHMLPGSLTPPDKMNGEHPHHG</td>
+      <td>Scaffold 1 (i5K Consortium, 2013)</td>
+    </tr>
+    <tr>
+      <td>Catajapyx aquilonaris</td>
+      <td>STANNPVDLSSPRGS</td>
+      <td>APMIPGSLTPPDKVNGEHHSHH</td>
+      <td>JYFJ02000853.1 (i5K Consortium, 2013)</td>
+    </tr>
+    <tr>
+      <td>Holacanthella duospinosa</td>
+      <td>VPNSNPVDLSNPSPS</td>
+      <td>SNFVPGSLSPPERMNGNDPSLL</td>
+      <td>NIPM01000059.1 (Wu et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>Pollicipes pollicipes</td>
+      <td>YPDNHPVDLSSPRPE</td>
+      <td>GPLIAGSLTPPDKLGAELGLHA</td>
+      <td>GGJN01104381.1 (unpublished)</td>
+    </tr>
+    <tr>
+      <td>Hyalella azteca</td>
+      <td>SLGHRPVDLSQAPSP</td>
+      <td>AAMLAGSLTPPDKLNSDPQQQQ</td>
+      <td>NW_017238139.1 (i5K Consortium, 2013)</td>
+    </tr>
+    <tr>
+      <td>Eurytemora affinis</td>
+      <td>SETSAPVDLSAPRPN</td>
+      <td>YGMLPGSLTPPDKLNGDHCSPG</td>
+      <td>NW_019396104.1 (i5K Consortium, 2013)</td>
+    </tr>
+    <tr>
+      <td>Triops cancriformis</td>
+      <td>HPEARPVDLSSSRLL</td>
+      <td>YHSSSLTLTPPDKVNVDGSNSQ</td>
+      <td>BAYF01001879.1 (Ikeda et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Argulus siamensis</td>
+      <td>YPENNPVDLSNSRTG</td>
+      <td>SPMIPGSLTPPDKMNGEHHPGH</td>
+      <td>JW959185.1 (Sahoo et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Strigamia maritima</td>
+      <td>FADNHPVDLSNSHRG</td>
+      <td>SHMIAGSLTPPDKVNGEHGHQL</td>
+      <td>JH430541.1 (Chipman et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Sigmoria latior munda</td>
+      <td>TNENHPVDLSSSHRS</td>
+      <td>SHMIPGSLTPPDKGNAEHSHSH</td>
+      <td>(Rodriguez et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>Metaseiulus occidentalis</td>
+      <td>GADRKPLDMSAAHRS</td>
+      <td></td>
+      <td>NW_003805473.1 (Hoy et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Ixodes scapularis</td>
+      <td>QAAGAPVDMSSHPAR</td>
+      <td></td>
+      <td>NW_002722632.1 (Gulia-Nuss et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Parasteatoda tepidariorum 1</td>
+      <td>VIDSHPVDLSSPKPS</td>
+      <td></td>
+      <td>NW_018383625.1 (Schwager et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>Parasteatoda tepidariorum 2</td>
+      <td>RYEGRPVDLSSPRPN</td>
+      <td></td>
+      <td>NW_018370942.1 (Schwager et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>Limulus polyphemus 1</td>
+      <td>PYDGHPVDLSNQRPD</td>
+      <td></td>
+      <td>NW_013671976.1 (Battelle et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Limulus polyphemus 2</td>
+      <td>TYESHPVDLSNQRPD</td>
+      <td></td>
+      <td>NW_013676581.1 (Battelle et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Centruroides sculpturatus</td>
+      <td>GYESSPVDLSSHRSV</td>
+      <td>MQLISGSMTSHDKVNGDQHSLG</td>
+      <td>NW_019384406.1 (Schwager et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>Euperipatoides kanangrensis</td>
+      <td>NSYDNPVDLSSHRSS</td>
+      <td>QQILPGSLGPSDKVNGDLVSLA</td>
+      <td>LN881712.1 (unpublished)</td>
+    </tr>
+    <tr>
+      <td>Naineris dendritica</td>
+      <td>DPNGHPVDLSHSRHI</td>
+      <td>PHMIHGSLTPPDRVNGEPGSGL</td>
+      <td>(Andrade et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Platynereis dumerilii</td>
+      <td>MASENPVDLSSRHVG</td>
+      <td>GNHFPGTLTPPDKLNGDHNAHH</td>
+      <td>KP293861.1 (Gazave et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>Nephasoma pellucidum</td>
+      <td>AGYETPVDLSSPRPC</td>
+      <td>SHLIPGSLTPPDKINGEGITTS</td>
+      <td>(Lemer et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Owenia sp.</td>
+      <td>QPYENPVDLSRRHIK</td>
+      <td>AHLIPGSLTPPDKINGDMVTMA</td>
+      <td>(Andrade et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Octopus bimaculoides</td>
+      <td>NGFDNPMDLSNGKVV</td>
+      <td>HLMPAGSLTPPDKISGDSISMA</td>
+      <td>NW_014678436.1 (Albertin et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Crassostrea gigas</td>
+      <td>GGYENPMDLSSNKPG</td>
+      <td>SHIVAGSLTPPEKINGDPGAMA</td>
+      <td>NW_011936122.1 (Zhang et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Lottia gigantea</td>
+      <td>AGVENPVDLSNGRIS</td>
+      <td>SHLFTGSLTPPEKPNGDLVPMS</td>
+      <td>NW_008708401.1 (Simakov et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Notospermus geniculatus</td>
+      <td>VQYDNPIDLSNRLEG</td>
+      <td>NHMIPGSLTPPDKVNGDMVPLP</td>
+      <td>GFRY01035878.1 (Luo et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>Malacobdella grossa</td>
+      <td>LHYDNPLDLTNRLDE</td>
+      <td>GSGIAGSMTPPDGGKGNDLDLQ</td>
+      <td>(Whelan et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Lingula anatina</td>
+      <td>GGYENPMDLSRRTEM</td>
+      <td>AHMIPGNLTPPDKVNGEMVPMA</td>
+      <td>GDJY01029776.1 (Luo et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Phoronis australis</td>
+      <td>QHDNRPMDLSSRGQH</td>
+      <td>SHLIAGSLTPPDKVNGDVVSMA</td>
+      <td>GFSC01078935.1 (Luo et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>Procotyla fluviatilis</td>
+      <td>ETLFEPLDLRSPIGV</td>
+      <td></td>
+      <td>GAKZ01044347.1 (unpublished)</td>
+    </tr>
+    <tr>
+      <td>Brachionus koreanus</td>
+      <td>AKDETPIDLSSKKSK</td>
+      <td></td>
+      <td>GBXV02009219.1 (Lee et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Xenoturbella bocki</td>
+      <td>KRYSAPLNLTVHDKC</td>
+      <td>DVRVLGRLTPPDKQHVNNDVGA</td>
+      <td>(Brauchle et al., 2018)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Shown are alignments of short linear amino acid motifs (bold) in the N-terminal region of Su(H) proteins that mediate direct recruitment of the co-repressors CtBP and Gro. Column at right shows the source of the corresponding sequence data, with accession numbers and publication citations indicated._
 
 Extending this sequence analysis to other protostome phyla led to the finding that a similar PϕDϕS motif occurs in the N-terminal region of Su(H) from a large number of molluscs and annelids, as well as from multiple Nemertea, Brachiopoda, Phoronida, and monogonont rotifers, and also from some flatworms (Table 1). It is notable, by contrast, that we do not find CtBP-binding motifs present in Su(H) from nematodes. Nevertheless, given the broad phylogenetic distribution of the PϕDϕS motif in Su(H) from both Ecdysozoa and Lophotrochozoa, our observations strongly suggest that direct recruitment of CtBP by Su(H) is ancestral in the protostomes.
 
@@ -57,19 +294,19 @@ To verify that the shared PϕDϕS motif in protostome Su(H) proteins can indeed 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/48115/elife-48115-fig3-v3.jpg)
 
-**Figure 3.:** Strigamia maritima.(A) The PVDLS motif in the N-terminal region of Su(H) from the centipede Strigamia maritima directly binds Drosophila CtBP. A His-tagged 116-aa segment of the Strigamia Su(H) protein, bearing a PVDLS recruitment motif for CtBP, binds strongly to GST-dCtBP (WT, lane 2). Mutation of the motif to alanines (AAAAA) abolishes this interaction (PVDLSmut, lane 1). The results shown in this panel have been replicated in eight additional experiments, utilizing three independent isolations of GST-CtBP protein from bacterial cultures. (B) The conserved GSLTPPDKV motif in the N-terminal region of Strigamia Su(H) directly binds Drosophila Gro. His-tagged E(spl)mβ-HLH protein, which bears a C-terminal WRPW motif that recruits Gro, is used as a binding control. Wild-type (WT) HLHmβ binds GST-Gro (lane 2), while a truncated version of the protein lacking the WRPW motif (lane 1) fails to bind. A synthetic version of HLHmβ in which the WRPW motif has been replaced by the wild-type GSLTPPDKV motif also binds GST-Gro efficiently (lane 4), while a mutant version in which GSLTPPDKV is replaced by alanines (AAAAAAAAA) shows extremely weak binding (lane 3). No binding of any of the His-tagged proteins to GST alone is observed, even with substantially greater amounts of GST compared to GST-Gro. The results shown in this panel have been replicated in seven additional experiments, utilizing five independent isolations of GST-Gro protein from bacterial cultures.
+**Figure 3.:** (A) The PVDLS motif in the N-terminal region of Su(H) from the centipede Strigamia maritima directly binds Drosophila CtBP. A His-tagged 116-aa segment of the Strigamia Su(H) protein, bearing a PVDLS recruitment motif for CtBP, binds strongly to GST-dCtBP (WT, lane 2). Mutation of the motif to alanines (AAAAA) abolishes this interaction (PVDLSmut, lane 1). The results shown in this panel have been replicated in eight additional experiments, utilizing three independent isolations of GST-CtBP protein from bacterial cultures. (B) The conserved GSLTPPDKV motif in the N-terminal region of Strigamia Su(H) directly binds Drosophila Gro. His-tagged E(spl)mβ-HLH protein, which bears a C-terminal WRPW motif that recruits Gro, is used as a binding control. Wild-type (WT) HLHmβ binds GST-Gro (lane 2), while a truncated version of the protein lacking the WRPW motif (lane 1) fails to bind. A synthetic version of HLHmβ in which the WRPW motif has been replaced by the wild-type GSLTPPDKV motif also binds GST-Gro efficiently (lane 4), while a mutant version in which GSLTPPDKV is replaced by alanines (AAAAAAAAA) shows extremely weak binding (lane 3). No binding of any of the His-tagged proteins to GST alone is observed, even with substantially greater amounts of GST compared to GST-Gro. The results shown in this panel have been replicated in seven additional experiments, utilizing five independent isolations of GST-Gro protein from bacterial cultures.
 
-## A novel conserved motif in protostome Su(H) binds the Gro co-repressor
+### A novel conserved motif in protostome Su(H) binds the Gro co-repressor
 
 In addition to a PϕDϕS CtBP-binding motif, we have found that Su(H) from a wide variety of protostomes includes a novel motif similar to GSLTPPDKV (Table 1). Where present, this sequence typically lies a short (but variable) distance C-terminal to the PϕDϕS motif, also within the non-conserved N-terminal region of the protein (Supplementary file 3). The GSLTPPDKV motif is particularly prevalent in Su(H) from the Trochozoa, which includes annelids, sipunculans, molluscs, nemerteans, brachiopods, and phoronids (Kocot et al., 2017). Among the Ecdysozoa, it appears consistently in Su(H) from Crustacea and Myriapoda, and in small subsets of both Hexapoda (Ephemeroptera, Odonata, Zygentoma, Archaeognatha, Diplura, and Collembola) and Chelicerata [harvestmen (Opiliones) and Scorpiones]. The motif is absent from Su(H) in all other insect orders, and we have not found it so far in Su(H) from nematodes, flatworms, rotifers, or tardigrades; it is, however, found in the onychophoran Euperipatoides kanangrensis (Table 1). Perhaps surprisingly, the motif is present in Su(H) from the acorn worms Saccoglossus kowalevskii and Ptychodera flava (Simakov et al., 2015), which are hemichordates (deuterostomes).
 
 Using an in vitro pulldown assay, we tested the possibility that the GSLTPPDKV motif mediates binding of the Gro co-repressor (Figure 3B). Indeed, we find that GST-tagged Gro protein interacts strongly with a His-tagged protein bearing this motif at its C-terminus, and that this binding is abolished when the motif is replaced by alanine residues. We conclude that Su(H) from a broad range of protostomes is capable of directly recruiting both CtBP and Gro (Table 1), and that this capacity is hence very likely to be ancestral in this clade.
 
-## Retention of the hybrid state: Species that have both Hairless and the co-repressor-binding motifs in Su(H)
+### Retention of the hybrid state: Species that have both Hairless and the co-repressor-binding motifs in Su(H)
 
 The evolutionary emergence of Hairless as an adaptor protein capable of mediating the indirect recruitment of both Gro and CtBP to Su(H) might be expected to relieve a selective pressure to retain the ancestral Gro- and CtBP-binding motifs in Su(H) itself. And indeed, we find that Su(H) from multiple insect orders comprising the Neoptera lacks both of these sequences (Figure 2B). Strikingly, however, we have observed that Crustacea and a small group of Hexapoda retain both traits (Figure 2B). Thus, multiple representatives of the Branchiopoda, Malacostraca, and Copepoda, along with Ephemeroptera, Odonata, Zygentoma, Archaeognatha, Diplura, and Collembola, have both a canonical Hairless protein (including its Gro- and CtBP-binding motifs) and Gro- and CtBP-binding motifs within Su(H). These clades, then, appear to have retained a ‘hybrid intermediate’ state (Baker et al., 2012) characterized by the presence of both co-repressor recruitment mechanisms.
 
-## Myriapods and Chelicerates encode a protein with similarity to Hairless
+### Myriapods and Chelicerates encode a protein with similarity to Hairless
 
 While canonical Hairless proteins are confined to the Pancrustacea, we have discovered that the genomes of Myriapods and Chelicerates nevertheless encode a protein with intriguing similarities to Hairless. Most notable is the presence of a motif that strongly resembles the ‘Su(H)-binding domain’ (SBD) of Hairless, which mediates its high-affinity direct interaction with Su(H) (Figure 1; Figure 4A). We will refer to these proteins as ‘S-CAPs’; the basis for this designation will be made clear in forthcoming figures. We note that the occurrence of this protein in the centipede Strigamia maritima has also recently been reported by Maier (2019). In the Pancrustacea, the N-terminal and C-terminal halves of the Hairless SBD are encoded by separate exons (Figure 4B). Strikingly, the related motif in Myriapod and Chelicerate S-CAPs is likewise encoded by separate exons, with exactly the same splice junction as in Hairless (Figure 4B). We believe that this is highly unlikely to be coincidental, and is instead strongly suggestive of an evolutionary relationship between Hairless and S-CAPs.
 
@@ -81,15 +318,23 @@ A recent structural analysis of the Su(H)-Hairless protein complex identified se
 
 A third structural similarity between Hairless and S-CAPs is the presence in the latter of one or more short linear motifs capable of binding the CtBP co-repressor (Figure 5A). These motifs typically reside in the C-terminal half of the S-CAPs, superficially resembling the C-terminal location of Hairless's CtBP recruitment motif.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/48115/elife-48115-fig5-v3.jpg)
+
+**Figure 5.:** (A) Diagrams of representative examples of Myriapod and Chelicerate S-CAP proteins, denoting locations of SBD motifs and CtBP recruitment motifs. Scale and protein sizes are indicated. (B) Chelicerate, but not Myriapod, S-CAP proteins share N-terminal ELM2 and SANT domains with an MTA zinc-finger protein from the same species. Scale and protein sizes are indicated. (C) Shared ELM2 and SANT domains in Chelicerate MTA and S-CAP proteins are encoded in two exons with the same splice junction (indicated by /; red arrows). Pairwise amino acid sequence identities within the motifs are indicated by vertical lines; conservative substitutions are indicated by + signs. Species names as in Figure 4A.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48115/elife-48115-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Amino acids at the ends of the aligned sequences are numbered. Pairwise amino acid sequence identities are indicated by vertical lines; conservative substitutions are indicated by + signs. ELM2 and SANT domains found in Chelicerate S-CAPs (A) are highlighted in colors corresponding to those in Figure 5B. Species names are as follows: (A) Hruf (Hypochthonius rufulus), Lpol (Limulus polyphemus), Otur (Ornithodoros turicata) (Egekwu et al., 2016), Tser (Tityus serrulatus) (Fuzita et al., 2015), Lhes (Latrodectus hesperus) (Clarke et al., 2015); (B) Smar (Strigamia maritima), Agir (Anopsobius giribeti), Onosp (Onomeris sp.), Slm (Sigmoria latior munda).
+
 A table listing representative examples of Myriapod and Chelicerate S-CAPs is provided as Supplementary file 4, and an annotated FASTA file of their amino acid sequences is included as Supplementary file 5. It is important to note that we have not found non-Hairless S-CAPs in the Pancrustacea.
 
-## Spider S-CAP binds to Drosophila Su(H)
+### Spider S-CAP binds to Drosophila Su(H)
 
 Given the clear sequence similarity between the Hairless SBD and the SBD-like motif in Myriapod and Chelicerate S-CAPs, we investigated whether the latter motif is likewise capable of mediating direct binding to Su(H). As noted above, the Hairless SBD interacts specifically with the CTD of Su(H). Since this domain in Su(H) is very highly conserved throughout the Bilateria and Cnidaria, we thought it reasonable to utilize Drosophila Su(H) for this binding assay. As shown in Figure 4C, we find that a 200-amino-acid segment of S-CAP from the spider Parasteatoda tepidariorum binds directly to Drosophila Su(H) in vitro. This interaction depends strictly on the integrity of the five residues that in Hairless have been shown to contact the Su(H) CTD (highlighted in red in Figure 4A).
 
 Given the presence of one or more CtBP recruitment motifs in the Myriapod and Chelicerate S-CAP proteins (Figure 5A), along with the ability of their SBD-like domains to bind Su(H) (Figure 4C), we have designated these as ‘Su(H)-Co-repressor Adaptor Proteins’ (S-CAPs).
 
-## Chelicerate S-CAP proteins are related to Metastasis-associated (MTA) proteins
+### Chelicerate S-CAP proteins are related to Metastasis-associated (MTA) proteins
 
 In addition to their similarities to Hairless, the S-CAP proteins of Chelicerates include two regions with strong sequence homology to the Metastasis-associated (MTA) protein family, which is highly conserved among Metazoa. The MTA proteins play an important role in transcriptional regulation via their function as core components of the nucleosome remodeling and deacetylase (NuRD) complex (Allen et al., 2013; Burgold et al., 2019). The N-terminal half of MTAs includes four well-defined functional domains: BAH (Bromo-Adjacent Homology), ELM2 (Egl-27 and MTA1 homology), SANT (Swi3, Ada2, N-CoR, and TFIIIB), and GATA-like zinc finger (Millard et al., 2014) (Figure 5B). Of these, the ELM2 and SANT domains are retained at the N-terminal end of Chelicerate S-CAPs (Figure 5B; Figure 5—figure supplement 1A). This is highly likely to have functional significance, as the ELM2 and SANT domains of MTA proteins work together to recruit and activate the histone deacetylases HDAC1 and HDAC2 (Millard et al., 2013). Further suggesting homology between Chelicerate S-CAPs and MTAs is the observation that their shared ELM2 and SANT domains are each encoded by two exons with exactly the same splice junction (Figure 5C).
 
@@ -97,13 +342,13 @@ It is noteworthy that, despite sharing the SBD-like and CtBP recruitment motifs 
 
 In addition to their SBD and ELM2/SANT domains, Chelicerate S-CAPs share a third region of homology that lies between the ELM2 and SANT sequences (Figure 5—figure supplement 1A). This region is absent from both Hairless and the Myriapod S-CAPs. Conversely, Myriapod S-CAPs include a segment of sequence similarity that is not found in either Hairless or Chelicerate S-CAPs (Figure 5—figure supplement 1B).
 
-## Conserved microsynteny between MTA and S-CAP/Hairless genes
+### Conserved microsynteny between MTA and S-CAP/Hairless genes
 
 Our analysis of the genomic locations of genes encoding MTA proteins in Arthropoda, Hairless in Pancrustacea, and S-CAPs in Myriapods and Chelicerates has yielded the surprising finding that proximate or near-proximate linkage between MTA and Hairless genes or between MTA and S-CAP genes is broadly conserved among arthropods (Figure 6; Supplementary file 1; Supplementary file 4). Thus, in the centipede Strigamia maritima, the gene encoding S-CAP lies immediately upstream of that encoding MTA, in the same orientation (Figure 6; Supplementary file 4). A similar linkage relationship between S-CAP and MTA genes is seen in many arachnids, including the spiders Nephila clavipes (Supplementary file 4) and Parasteatoda tepidariorum (Figure 6; Supplementary file 4) and the mites Achipteria coleoptrata and Sarcoptes scabiei (Supplementary file 4). Likely due at least in part to its history of whole-genome duplication (Nossa et al., 2014; Kenny et al., 2016), the horseshoe crab Limulus polyphemus (representing the Merostomata/Xiphosura) has three paralogous copies of this same S-CAP-MTA linkage pairing (Supplementary file 4). Some exceptions to this pattern do exist. In the genomes of the mites Metaseiulus occidentalis (Supplementary file 4) and Varroa destructor (Techer et al., 2019), for example, the genes encoding S-CAP and MTA are far separated from each other.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/48115/elife-48115-fig6-v3.jpg)
 
-**Figure 6.:** MTA gene.Separate scale for each diagram is shown at the left. Three examples are shown for Hairless: the carpenter bee Ceratina calcarata (Ccal), the wheat aphid Schizaphis graminum (Sgra) (QEWZ01001380.1), and the lady beetle Harmonia axyridis (Haxy). Note that microsynteny is often preserved even when gene locations and relative orientations are changed. One example each is shown for S-CAP in Myriapods [the centipede Strigamia maritima (Smar)] and Chelicerates [the house spider Parasteatoda tepidariorum (Ptep)]. See also Supplementary file 1 and Supplementary file 4.
+**Figure 6.:** Separate scale for each diagram is shown at the left. Three examples are shown for Hairless: the carpenter bee Ceratina calcarata (Ccal), the wheat aphid Schizaphis graminum (Sgra) (QEWZ01001380.1), and the lady beetle Harmonia axyridis (Haxy). Note that microsynteny is often preserved even when gene locations and relative orientations are changed. One example each is shown for S-CAP in Myriapods [the centipede Strigamia maritima (Smar)] and Chelicerates [the house spider Parasteatoda tepidariorum (Ptep)]. See also Supplementary file 1 and Supplementary file 4.
 
 Close, typically adjacent, linkage between Hairless and MTA genes is likewise widely observed in the genomes of Pancrustacea. Among the Hexapoda, this pattern can be found in many different orders (Supplementary file 1), including Diptera, Lepidoptera, Coleoptera (Figure 6), Hymenoptera (Figure 6), Psocodea, Hemiptera (Figure 6), Thysanoptera, Blattodea, Orthoptera, Odonata, and Collembola. Among the Vericrustacea, adjacent linkage of Hairless and MTA is seen in the shrimp Triops cancriformis (Notostraca) (Supplementary file 1). Nevertheless, exceptions are readily found, even within the same orders as above (Supplementary file 1). Examples include Drosophila melanogaster, Ceratitis capitata, and Lucilia cuprina (Diptera; Supplementary file 1), Bicyclus anynana (Lepidoptera), Anoplophora glabripennis, Dendroctonus ponderosae, and Nicrophorus vespilloides (Coleoptera), and Cimex lectularius (Hemiptera; Supplementary file 1).
 
@@ -113,7 +358,7 @@ Despite the multiple instances in which it has been lost, we believe that the mo
 
 ## Discussion
 
-## The evolution of Hairless represents a shift from the ancestral and dominant paradigm of direct co-repressor recruitment by Su(H)
+### The evolution of Hairless represents a shift from the ancestral and dominant paradigm of direct co-repressor recruitment by Su(H)
 
 Our analysis of sequences from a broad range of protostomes strongly suggests that direct recruitment of the CtBP and Gro co-repressors by Su(H) is ancestral in this clade. This is consonant with the fact that direct co-repressor recruitment by DNA-binding repressor proteins in general is a dominant paradigm among Metazoa. This evokes the intriguing question of what might have led to the loss of direct recruitment by Su(H) in the Neoptera (see Figure 1B) and its replacement by Hairless-mediated indirect recruitment? Does Hairless provide some advantageous functional capacity? Note that this is not intended to suggest that Hairless must be an evolutionary adaptation per se (Lynch, 2007); rather, we are asking: What capability might it have conferred that would lead to its retention and the subsequent loss of the recruitment motifs in Su(H)?
 
@@ -121,7 +366,7 @@ One appealing (but of course speculative) possibility is that Hairless may have 
 
 Whatever may have been the selective forces that led to the loss of direct co-repressor recruitment by Su(H) in the Neoptera and its replacement by Hairless-mediated indirect recruitment, Hairless is a notable evolutionary novelty for having permitted the unusual abandonment of an ancestral and highly conserved paradigm. We suggest that this represents a striking example of ‘developmental system drift’ (True and Haag, 2001), in which a common output (widespread ‘default repression’ of Notch pathway target genes) is achieved via distinct molecular mechanisms in different species.
 
-## A possible evolutionary pathway for the appearance of Hairless
+### A possible evolutionary pathway for the appearance of Hairless
 
 We have described here several findings that we believe have important implications for an attempt to reconstruct the history of Hairless as an evolutionary novelty. First, we observe that Hairless is apparently confined to the Pancrustacea, wherein it is widely distributed among diverse taxa (Figure 2A; Supplementary file 1). Second, we have discovered in the sister groups Myriapoda and Chelicerata a protein (S-CAP) with clear sequence homology to the Su(H)-binding domain (SBD) of Hairless (Figure 4A). Significantly, in both Hairless and the S-CAPs these motifs are encoded by contributions from two exons, with the associated splice junction in precisely the same location (Figure 4B; Supplementary file 4). Third, we find that S-CAPs in the Chelicerata include in their N-terminal region strong homology to the ELM2 and SANT domains of MTAs, which themselves are highly conserved among Metazoa, and therefore would have been present in the arthropod common ancestor (Figure 5B,C). Finally, our analysis indicates that close, usually adjacent, linkage of Hairless and MTA genes (in the Pancrustacea) and between S-CAP and MTA genes (in the Myriapoda and Chelicerata) is widespread (Figure 6; Supplementary file 1; Supplementary file 4), and hence very likely to be ancestral, in these taxa.
 
@@ -135,48 +380,226 @@ In this context, it is of interest that the Drosophila Mi-2/Nurd complex — whi
 
 ## Materials and methods
 
-## Sequence searches, analysis, and annotation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HIS G antibody, mouse monoclonal</td>
+      <td>Invitrogen</td>
+      <td>CAT#46–1008 (now ThermoFisher CAT#R940-25), RRID:AB_2556557</td>
+      <td>1:5000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GOAT anti-mouse HRP, polyclonal</td>
+      <td>Jackson Immuno-research</td>
+      <td>CAT#115-035-003, RRID:AB_10015289</td>
+      <td>1:10000 dilution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-dCtBP pGEX-5X-3 clone</td>
+      <td>Nibu et al., 1998</td>
+      <td></td>
+      <td>Construct encoding GST-tagged Drosophila CtBP for expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-Gro pGEX-KG clone</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Construct encoding GST-tagged Drosophila Groucho for expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-Su(H) pGEX-KG clone</td>
+      <td>Bailey and Posakony, 1995</td>
+      <td></td>
+      <td>Construct encoding GST-tagged Drosophila Su(H) for expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HIS-H192-389 WT pRSET-C clone</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HIS-tagged expression construct encoding amino acids 192–389 of Drosophila Hairless, synthesized by GeneWiz, Inc, and codon-optimized for expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HIS-H192-389 5AMUT pRSET-C clone</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HIS-tagged expression construct encoding amino acids 192–389 of Drosophila Hairless with five alanine substitutions, synthesized by GeneWiz, Inc, and codon-optimized for expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HIS-HLHmBetaSmar WT pRSET-C clone</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HIS-tagged expression construct encoding Drosophila HLHmBeta with the last four amino acids (WRPW) replaced with the sequence GSLTPPDKV</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HIS-HLHmBetaSmar MUT pRSET-C clone</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HIS-tagged expression construct encoding Drosophila HLHmBeta with the last four amino acids (WRPW) replaced with the sequence AAAAAAAAA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HIS-HLHmBetaWT pRSET-C clone</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HIS-tagged expression construct encoding full-length Drosophila HLHmBeta</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HIS-HLHmBetatrunc pRSET-C clone</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HIS-tagged expression construct encoding Drosophila HLHmBeta with the last four amino acids (WRPW) deleted</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HIS-PtepSCAP233-432 WT pRSET-C clone</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HIS-tagged expression construct encoding amino acids 233–432 of Parasteatoda tepidariorum S-CAP, synthesized by GeneWiz, Inc, and codon-optimized for expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HIS-PtepSCAP233-432 5AMUT pRSET-C clone</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HIS-tagged expression construct encoding amino acids 233–432 of Parasteatoda tepidariorum S-CAP with five alanine substitutions, synthesized by GeneWiz, Inc, and codon-optimized for expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HIS-SmarSu(H)ex2-3 WT pRSET-C clone</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HIS-tagged expression construct containing exons 2–3 of Strigamia maritima Su(H), synthesized by GeneWiz, Inc, and codon-optimized for expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HIS-SmarSu(H)ex2-3 mut pRSET-C clone</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HIS-tagged expression construct containing exons 2–3 of Strigamia maritima Su(H) with a PVDLS &gt; AAAAA coding mutation, synthesized by GeneWiz, Inc, and codon-optimized for expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-5X-3</td>
+      <td>Sigma (formerly Amersham; discontinued)</td>
+      <td>CAT#28-9545-53</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRSET-C</td>
+      <td>Invitrogen</td>
+      <td>CAT#V35120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chem Illumination Reagents</td>
+      <td>Pierce ECL Western Blotting Substrate</td>
+      <td>CAT#32209</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resource, sequence database</td>
+      <td>NCBI</td>
+      <td>NCBI</td>
+      <td>RRID:SCR_006472</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NCBI BLAST</td>
+      <td>NCBI</td>
+      <td>RRID:SCR_004870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GenePalette</td>
+      <td>Smith et al., 2017;Rebeiz and Posakony, 2004;http://www.genepalette.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DNA Strider</td>
+      <td>Marck, 1988; Douglas, 1995</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BlastStation-Local64</td>
+      <td>TM Software, Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Sequence searches, analysis, and annotation
 
 Genome and transcriptome sequences encoding Hairless, Suppressor of Hairless, S-CAP, and MTA proteins from a wide variety of species were recovered via BLAST searches, using either the online version at the NCBI website (Boratyn et al., 2013) or the version implemented by the BlastStation-Local64 desktop application (TM Software, Inc). Sequences were analyzed and annotated using the GenePalette (Rebeiz and Posakony, 2004; Smith et al., 2017) and DNA Strider (Marck, 1988; Douglas, 1995) desktop software tools. Analysis of predicted disordered regions in Hairless was conducted using DISOPRED3 on the PSIPRED server (Buchan et al., 2013; Jones and Cozzetto, 2015).
 
-## Generation of constructs for GST pulldown experiments
+### Generation of constructs for GST pulldown experiments
 
-## Strigamia maritima Su(H) protein constructs to test CtBP binding
+#### Strigamia maritima Su(H) protein constructs to test CtBP binding
 
 A codon-optimized fragment corresponding to exons 2 and 3 from S. maritima Su(H) mRNA was synthesized by Genewiz, Inc, and cloned into pRSET-C using Acc65I and BamHI restriction sites. The CtBP-motif mutant was subsequently generated by overlap extension PCR using the primers HISsmarSUH-f (CGCTGGATCCGCGGCCAGTATGAC), HISsmarSUH-r (CCATGGTACCAGTTATGCGTGGTG), HISsmarSUHctbpm-f (AACCACgCCGcaGcTGcGgCTAACAGCCATCGCGGTGAAGGCGGCCAC), HISsmarSUHctbpm-r (GCTGTTAGcCgCAgCtgCGGcGTGGTTGTCGGCGAAGTGAGGGGTCAG). After sequence confirmation, this fragment was also cloned into pRSET-C using the same enzymes. Binding of these constructs to Drosophila melanogaster CtBP was assayed using GST alone and a GST-CtBP fusion protein (Nibu et al., 1998).
 
-## Constructs to test potential Gro-binding motif in Strigamia maritima Su(H)
+#### Constructs to test potential Gro-binding motif in Strigamia maritima Su(H)
 
 A truncated version of HLHmβ (HLHmβ-WRPWtrunc) was amplified from a pRSET-HLHmβ-WT construct using the primers HISmbeta-f (cgatggatccgaATGGTTCTGGAAATGGAGATGTCCAAG) and HISmbetatrunc-r (ccatggtaccagTCACATGGGGCCagaggtggagctggcctcgctgggcgc); a version of HLHmβ with the WRPW motif replaced with the amino acids GSLTPPDKV (HLHmβ+Smar-motifWT) was amplified from the WT construct with HISmbeta-f and mbetaSmarSuH-r (ccatggtaccagTCACACTTTATCAGGTGGAGTGAGAGAACCCATGGGGCCagaggtggagctggcc); and a version of HLHmβ with the WRPW motif replaced with a stretch of 9 alanine residues (HLHmβ+Smar-motifMUT) was amplified using HISmbeta-f and mbetaSmarSuHmut-r (ccatggtaccagTCAggctgccgctgcggctgccgctgctgcCATGGGGCCagaggtggagctggcc). Each construct was then subsequently cloned into pRSET-C using the restriction enzymes BamHI and Acc65I and sequence verified. Binding of these constructs to Drosophila melanogaster Gro was assayed using GST alone and a GST-Gro fusion protein. The latter construct was made by cloning the full-length Gro coding sequence into the pGEX-KG expression vector at the EcoRI and SalI restriction sites: gtggcgaccatcctccaaaatcggatctggttccgcgtggatccccgggaatttccggtggtggtggtggaattctaATG...TAAATCCACAAAACCATGCAGTTTTTTCATTTTGTAATAAGCTCGTATAGTTTTTATTACAACATGTTCGAAATCATGCAcccgggctgcaggaattcgatatcaagcttatcgataccgtcgactcgagctcaagcttaattcatcgtgactgactgacgatctg (underlined = pGEX KG vector; uppercase = gro cDNA; bold = gro start and stop codons; italic = linker)
 
-## S-CAP/Hairless constructs for Su(H) interaction analysis
+#### S-CAP/Hairless constructs for Su(H) interaction analysis
 
 Codon-optimized fragments from Drosophila melanogaster Hairless (residues 192–389), and Parasteatoda tepidariorum cS-CAP (residues 233–432) as well as 5-alanine mutant substitutions (Dmel: GGRLQFFKDGKFILELARSKDGDKSGW - > GGRAQAFKDGKFIAEAARSKDGDKSGA; Ptep: VGSLKFFLGGRLVLKLNAQQDGGSGNKCQW - > VGSAKAFLGGRLVAKANAQQDGGSGNKCQA) were synthesized by Genewiz, Inc. Inserts were subsequently cloned into pRSET-C using the restriction enzymes BamHI and Acc65I. Binding of these constructs to Drosophila melanogaster Su(H) was assayed using GST alone and a GST-Su(H) fusion protein (Bailey and Posakony, 1995).
 
 GST pulldowns using each of the above constructs were performed as previously described (Fontana and Posakony, 2009).
 
-## Synthesized, codon-optimized sequences
+### Synthesized, codon-optimized sequences
 
-## >Smar Su(H)ex2-3 WT (116 aa)
+#### >Smar Su(H)ex2-3 WT (116 aa)
 
 CGCTGGATCCGCGGCCAGTATGACTACCCGCCGCCGTTAGCCAGCACATACAGCCGCGAGGCCGACCTGTGGAACGTGAACCTGGCCACCTACAGCAGCGCACCGACCACATGCACCGGTGCAACCCCGGCACCTAGCGTTACCGGTTTCTACGCCCAGGCCACCGGCAGCAACAGCGTTAGCCCGAGTAGCGTGAGCCTGACCACCCTGACCCCTCACTTCGCCGACAACCACCCGGTGGACCTGAGCAACAGCCATCGCGGTGAAGGCGGCCACCTGGATCTGGTGCGCTTCCAGAGCGACCGCGTGGATGCCTACAAGCACGCCAACGGCCTGAGCGTGCATATCCCGGACCACCACGCATAACTGGTACCATGG
 
-## >Smar Su(H)ex2-3 mut
+#### >Smar Su(H)ex2-3 mut
 
 CGCTGGATCCGCGGCCAGTATGACTACCCGCCGCCGTTAGCCAGCACATACAGCCGCGAGGCCGACCTGTGGAACGTGAACCTGGCCACCTACAGCAGCGCACCGACCACATGCACCGGTGCAACCCCGGCACCTAGCGTTACCGGTTTCTACGCCCAGGCCACCGGCAGCAACAGCGTTAGCCCGAGTAGCGTGAGCCTGACCACCCTGACCCCTCACTTCGCCGACAACCACgCCGcaGcTGcGgCTAACAGCCATCGCGGTGAAGGCGGCCACCTGGATCTGGTGCGCTTCCAGAGCGACCGCGTGGATGCCTACAAGCACGCCAACGGCCTGAGCGTGCATATCCCGGACCACCACGCATAACTGGTACCATGG
 
-## >Dmel Hairless192-389 WT
+#### >Dmel Hairless192-389 WT
 
 CGATGGATCCGAGCAGTGGTTGCAGCAGCAGCTGGCACTGCCAAAATTGGTAAAGGCAGCAACAGCGGTGGCAGTTTTGATATGGGCCGCACACCGATCAGCACCCACGGCAACAATAGTTGGGGTGGCTATGGCGGCCGTTTACAGTTCTTTAAAGATGGCAAGTTTATTTTAGAACTGGCCCGCAGCAAAGATGGCGATAAAAGCGGCTGGGTGAGTGTGACCCGCAAAACCTTTCGCCCGCCGAGTGCAGCAACCAGCGCAACCGTGACCCCTACCAGTGCCGTGACCACCGCCTACCCGAAGAATGAAAACAGCACCTCTTTAAGCTTCAGCGACGACAATAGCAGCATTCAGAGCAGCCCGTGGCAGCGTGATCAGCCGTGGAAACAGAGTCGTCCGCGCCGTGGCATCAGCAAAGAACTGTCTTTATTTTTCCACCGCCCGCGCAATAGTACACTGGGTCGTGCAGCCTTACGTACCGCAGCCCGCAAACGTCGTCGTCCGCATGAACCGCTGACCACCAGCGAAGATCAGCAGCCGATCTTTGCCACCGCAATCAAAGCCGAGAACGGTGATGATACTTTAAAAGCCGAAGCAGCCGAATAACTGGTACCATGG
 
-## >Dmel Hairless192-389 5Amut
+#### >Dmel Hairless192-389 5Amut
 
 CGATGGATCCGAGCCGTTGTGGCAGCAGCAGCTGGCACTGCCAAAATCGGCAAAGGCAGCAATAGCGGTGGTAGCTTTGACATGGGCCGCACCCCGATTAGCACCCATGGCAACAACAGCTGGGGTGGTTATGGTGGTCGTGCCCAAGCTTTTAAAGACGGCAAGTTCATCGCCGAAGCCGCACGCAGCAAAGATGGCGACAAAAGCGGTGCCGTGAGCGTGACCCGCAAAACCTTTCGTCCGCCGAGTGCAGCAACCAGCGCAACCGTTACCCCGACCAGCGCAGTTACCACCGCCTACCCGAAAAACGAAAACAGCACCTCTTTAAGCTTTAGCGACGACAACAGCAGCATTCAGAGCAGCCCGTGGCAGCGCGATCAGCCGTGGAAACAGAGCCGTCCTCGTCGCGGCATCAGCAAAGAGCTGTCTTTATTCTTTCATCGCCCGCGCAATAGCACTTTAGGTCGTGCAGCACTGCGCACAGCAGCACGTAAACGTCGTCGCCCGCATGAACCGCTGACCACCAGCGAAGACCAGCAGCCGATTTTTGCCACCGCAATCAAAGCCGAGAACGGCGATGATACTTTAAAAGCAGAAGCAGCCGAATAACTGGTACCATGG
 
-## >Ptep s-CAP233-432 WT
+#### >Ptep s-CAP233-432 WT
 
 CGATGGATCCGAACCGTGAATACCGAAGATCCGCCGAAGGATAGCATCAACTTTCTGGACCACAGCCGCGTGACCGATCCGTGTAGTGCCGCAAGCGAAACCAGCCTGCCGCAGGATGTGCCGGCAACAAGCACCGTGGGCAGCCTGAAATTTTTTCTGGGCGGTCGCCTGGTGCTGAAATTAAACGCCCAGCAGGATGGCGGCAGCGGCAATAAATGCCAGTGGGTGCAGAGCAACGATCTGCCGAAACATAGCAACCATAACAAAAAAGATAAACATAAGAAAAAATTTGCACCGTATAGCTATAGCAGCAGCGGCACTCAGAAACCGCTGAAGAAAGGCGACGATACCAGTGCCGTGCCGGACTGTGATCCGAGCGGCATCAAAAAGCCGCGCCTGAAAGAGTACGAGACCAGCGAGAATAGCGCCCTGGGTCTGCTGCTGTGCAGCAGCAGTTGGACCCCGCCGGTTGCAGATGGTCAGGAGAGCATTGACGTGGACGATACCAGCAGCAAAACCAGCGAGGGCTATATTAGCCCGATCCTGAGCAACAATAGCCGCACCAGCAAAATCGACACCATCAAGCACGATTTTGCCAGCAACCCGAACACCTAACTGGTACCATGG
 
-## >Ptep s-CAP233-432 5Amut
+#### >Ptep s-CAP233-432 5Amut
 
 CGATGGATCCGAACCGTGAACACCGAAGACCCGCCGAAAGATAGCATCAACTTTTTAGACCATAGCCGCGTGACAGACCCGTGCAGTGCCGCAAGTGAAACCTCTTTACCGCAAGATGTGCCGGCAACCAGCACCGTGGGTAGCGCCAAAGCCTTTCTGGGCGGTCGTCTGGTGGCCAAAGCCAATGCCCAGCAAGATGGTGGTAGTGGTAACAAATGCCAAGCTGTGCAGAGCAACGATCTGCCGAAACACAGCAATCACAATAAGAAAGACAAACACAAGAAAAAATTTGCCCCGTATAGCTATAGCAGCAGCGGCACCCAGAAACCGCTGAAAAAAGGCGATGACACCAGCGCAGTGCCGGATTGCGATCCGAGCGGCATTAAGAAACCGCGTTTAAAGGAGTACGAGACCAGCGAAAACAGTGCTTTAGGTTTACTGCTGTGCAGCAGCAGTTGGACACCGCCGGTGGCCGATGGTCAAGAAAGTATCGATGTGGACGACACCAGCAGCAAAACCAGCGAAGGCTACATCAGCCCGATTCTGAGCAACAATAGCCGCACCAGCAAAATTGATACCATTAAACATGATTTTGCAAGCAATCCGAATACCTAACTGGTACCATGG

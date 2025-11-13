@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.30038.001 It is well documented that transposable elements (TEs) can regulate the expression of neighbouring genes. However, their ability to act in trans and influence ectopic loci has been reported rarely. We searched in rice transcriptomes for tissue-specific expression of TEs and found them to be regulated developmentally. They often shared sequence homology with co-expressed genes and contained potential microRNA-binding sites, which suggested possible contributions to gene regulation. In fact, we have identified a retrotransposon that is highly transcribed in roots and whose spliced transcript constitutes a target mimic for miR171. miR171 destabilizes mRNAs encoding the root-specific family of SCARECROW-Like transcription factors. We demonstrate that retrotransposon-derived transcripts act as decoys for miR171, triggering its degradation and thus results in the root-specific accumulation of SCARECROW-Like mRNAs. Such transposon-mediated post-transcriptional control of miR171 levels is conserved in diverse rice species.
+It is well documented that transposable elements (TEs) can regulate the expression of neighbouring genes. However, their ability to act in trans and influence ectopic loci has been reported rarely. We searched in rice transcriptomes for tissue-specific expression of TEs and found them to be regulated developmentally. They often shared sequence homology with co-expressed genes and contained potential microRNA-binding sites, which suggested possible contributions to gene regulation. In fact, we have identified a retrotransposon that is highly transcribed in roots and whose spliced transcript constitutes a target mimic for miR171. miR171 destabilizes mRNAs encoding the root-specific family of SCARECROW-Like transcription factors. We demonstrate that retrotransposon-derived transcripts act as decoys for miR171, triggering its degradation and thus results in the root-specific accumulation of SCARECROW-Like mRNAs. Such transposon-mediated post-transcriptional control of miR171 levels is conserved in diverse rice species.
 
 ## Introduction
 
@@ -31,9 +31,17 @@ Here we have specifically investigated TE-derived transcripts as potential regul
 
 ## Results
 
-## Predicted interaction of transposon-derived RNAs with host miRNAs
+### Predicted interaction of transposon-derived RNAs with host miRNAs
 
 To examine tissue-specific abundance of TE-derived transcripts in rice, we accessed publicly available RNA sequencing (RNA-seq) datasets for various tissues of rice (Figure 1A). We considered only the datasets of Japonica rice, cultivar Nipponbare and applied the same data-processing pipeline to raw sequencing results generated in different laboratories (details in the Materials and methods). This way we achieved consistent results and samples representing particular tissues were clustered together (Figure 1A). Such combined dataset yielded 2961 transcribed TEs (filtered for maximal RPKM (Reads Per Kilobase per Million reads)>1). Remarkably, the TEs were transcribed in most rice tissues and their transcriptomes exhibit clear tissue specificity (Figure 1A and Figure 1—figure supplement 1A). The rice expression patterns differ from those of Arabidopsis, where TEs are activated in a non-selective way and only in seed endosperm and the vegetative cells of pollen grains (Figure 1—figure supplement 1B) (Slotkin et al., 2009). Thus, in rice, the two-dimensional correlation matrix of TE transcriptomes showed distinct TE groups reflecting their RNA abundance in various tissues and at different developmental stages (Figure 1—figure supplement 1A). In contrast, Arabidopsis TEs exhibit more uniform expression patterns (Figure 1—figure supplement 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig1-v2.jpg)
+
+**Figure 1.:** (A) TE expression patterns in various rice tissues. The numbers indicate biological replicates (for endosperm and meristem) or the independent datasets of the same tissues. (B) The number of predicted miRNA-binding sites corrected for the lengths of transcripts. miRNA target sites were predicted by psRNATarget with default settings (http://plantgrn.noble.org/psRNATarget/). The asterisks indicate statistical differences determined by the Wilcoxon rank sum test. ***p<e-10. (C) The violin plot for the Pearson’s correlation coefficient between TEs and matching gene expression patterns. TE-gene pairs sharing miRNA-binding sites are separated into sense and antisense matching. **p<e-05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) Comparison of the tissue-specific expression patterns of rice and Arabidopsis TEs. In (A), Pearson’s correlation coefficients between all probe sets were calculated based on the expression patterns of each TE displayed in Figure 1A. The symmetric all-against-all correlation matrix was clustered using complete-linkage method. In (B), the tissues selected for Arabidopsis correspond to the rice samples and listed in Supplementary file 3 along with the sources of datasets. (C) Fractions of expressed and silenced TEs with sequence alignment to mature transcripts of genes including protein-coding exons and both UTRs. Local BLAST analysis was performed with default cut-off value of e-10. The enrichment of TEs with matching sequences was analysed by hypergeometric test and the P-value is shown. (D) Alignment lengths of TEs matching exonic and genic sequences of genes (left and right, respectively) and divided according to TE transcript orientation. Numbers in parentheses represent the number of TE-gene pairs. The asterisks indicate significant statistical differences determined by the Wilcoxon rank sum test. ***p<e-10; n.s., not significant. (E) -log10 P-values of the correlation coefficients of sense and antisense TE-gene pairs in the selected tissues.
 
 We detected TE-derived transcripts in rice tissues that do not contribute to the germ line (e.g. endosperm, leaves and roots). These transposon activities, even when resulting in insertions, would not be transmitted to the next generation. In the case of such apparently unproductive TE activity, reactivated TEs may possibly be regulatory or, as in Arabidopsis, may be the RNA substrates of small RNAs involved in TEs silencing (Creasey et al., 2014), or may simply reflect insignificant transcriptional noise.
 
@@ -41,9 +49,21 @@ For regulatory activity that influences gene expression, we assumed that TE tran
 
 Next, we sought sequence features differentially enriched in the co-expressed TEs and found enrichment for miRNA-binding sites (Figure 1B). This raised the possibility that some TE transcripts interfere with miRNA-mediated gene regulation, possibly by competing for miRNA binding. As two different RNAs interacting with the same miRNA would need to be co-expressed in the same tissue, we compared tissue-specific expression of TEs and matching genes. We found 763 and 400 TE-gene pairs in sense and antisense orientation, respectively, including 282 sense and 111 antisense pairs with correlation coefficient above 0.5 (Figure 1C). Such correlated expression patterns between mRNAs of genes and TE-derived transcripts in sense orientation was most evident in roots (Figure 1—figure supplement 1E). Collectively, the results of our examination of tissue-specific transcriptomes are consistent with the hypothesis that TEs regulate gene expression by miRNA sequestration.
 
-## MIKKI is a root-specific domesticated retrotransposon
+### MIKKI is a root-specific domesticated retrotransposon
 
 To test this hypothesis, we rigorously re-analysed 61 root-specific rice transcriptomes and selected a particular TE, which we named MIKKI (‘decoy’ in Korean), for further investigation (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig2-v2.jpg)
+
+**Figure 2.:** (A) Top, the root-specific expression pattern of MIKKI shown as a snapshot of the RNA-seq genome browser. Bottom, structure of a MIKKI transcript; blue boxes and lines represent exons and introns, respectively. The arrow indicates the transcription start site and the primers used in (B) are indicated as arrowheads. The primer spanning splice junction is shown as a dashed line. (B) MIKKI expression pattern revealed by RT-qPCR. Relative levels of spliced and unspliced MIKKI mRNA in the left and right panels, respectively. Data are presented as mean ± standard deviation (sd) of three biological replicates performed in technical triplicate. The asterisks indicate statistical differences determined by Student’s t-test. **p<0.005; *p<0.05. (C) Schematic diagram of evolution of MIKKI locus. The open and closed arrowheads are the long terminal repeat (LTR) regions and target site duplications, respectively. Different families of retrotransposons are presented by the different colours marked on the right, together with their estimated ages. AP, aspartyl protease; RT-RH, reverse transcriptase-RNaseH; INT, integrase. Intron 4 is shown as a dashed line. (D) Levels of osa-miR171b ~ f and OsSCLs in different tissues as determined by RT-qPCR. Error bars represent mean ± sd of three biological replicates performed in technical triplicate. The asterisks indicate statistical differences determined by Student’s t-test. **p<0.005; *p<0.05. (E) Transcriptome and degradome data from rice panicles showing the OsSCL21 (left) and MIKKI (right) loci. The base pairing of osa-miR171 to OsSCL21 and MIKKI is shown below. The red arrowhead indicates the peak of cleaved end sequences of OsSCL21 mRNA. Watson-Crick and Wobble base-pairing between osa-miR171b ~ f and OsSCL21 or MIKKI are indicated as lines and circles, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Alignment between two LTRs of Osr29 in MIKKI. (B) Sequence alignment of BAJIE solo LTR and the consensus sequence deduced from all other BAJIE elements. (C) Protein domain prediction of MIKKI using SMART tool (http://smart.embl-heidelberg.de/). The black box is the predicted reverse-transcriptase (RTase) domain and the e-value is shown. Numbers are the start and the end of amino acid residues of RTase domain. (D) Protein sequence alignment of RTases of MIKKI and HIV-1. The amino acid residues constituting the active catalytic site are indicated as red circles (Rodgers et al., 1995). (E) Confirmation of miR171-binding sequence in the exon-exon junction of MIKKI transcript by Sanger sequencing. The shaded box is miRNA-binding region.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Sequences of miR171 species in rice and Arabidopsis obtained from miRBase (http://www.mirbase.org/). (B) Rice miR171 and miR166 levels in public small RNA sequencing data (GSE16350). Read counts are normalized to library size and presented as counts per million. n.d., not detected. (C and D) The abundance of ath-miR171 in public datasets for total (C) and AGO1-associated (D) small RNA (GSE28591). (E) The levels of ath-miR171a determined by RT-qPCR. Normalization was to ath-miR166 levels and data are presented as mean ± sd of three biological replicates performed in technical triplicate. The asterisks indicate statistical differences determined by Student’s t-test. **p<0.005. (F) The region around miR171 binding site in SCL transcripts of Arabidopsis and rice. The conservation plot above the alignment was constructed with the twine package (Pearson and Crews, 2013).
 
 First, we validated RNA-seq results of root-specific transcription of MIKKI by RT-qPCR (Figure 2B). To distinguish the spliced transcript from precursor mRNA (pre-mRNA), we designed primers across exon junction or within the intron, respectively (Figure 2B, left and right panel). The RT-qPCR results confirmed that the mature MIKKI transcript is highly abundant in roots, present at low levels in leaves, and almost absent in panicles (Figure 2B, left panel). A similar expression pattern was observed for unspliced RNA but at much lower levels (Figure 2B, right panel). These results are consistent with tissue-specific regulation of MIKKI at the transcriptional level.
 
@@ -51,9 +71,25 @@ MIKKI is a TE-derived locus which includes Osr29 Long Terminal Repeat (LTR) retr
 
 It is well documented that ath-miR171 targets mRNAs encoding SCARECROW-Like (SCL) transcription factors for cleavage and, thus, SCL transcript levels display patterns opposite to miR171 (Llave et al., 2002). The same SCL transcript distribution was observed in rice (Figure 2D, right panel), implying the regulation of SCL transcript stability also by osa-miR171. Moreover, the sequence identity of rice and Arabidopsis SCL mRNAs across the miR171-binding region is also consistent with the evolutionary conservation of miR171-mediated cleavage of SCL transcripts (Figure 2—figure supplement 2F). Indeed, analyses of the RNA degradome in rice panicles (Wu et al., 2009) revealed specific cleavage of OsSCL21 mRNAs at the osa-miR171 binding region (Figure 2E, left panel). We also examined whether the MIKKI transcript is also targeted by osa-miR171 but found no signals indicative of site-directed cleavage of MIKKI transcripts at the putative miR171-binding site (Figure 2E, right panel). Importantly, there are two mismatches in the miR171-binding region of MIKKI at positions 11th and 14th. Conservation of nucleotides at these sites is known to be essential for target RNA cleavage (Jeong et al., 2013; Liu et al., 2014; Llave et al., 2002). It is, therefore, possible that the mismatches around the cleavage sites in MIKKI transcripts attenuate the cleavage activity of osa-miR171. Altogether, these data are consistent with the possibility that MIKKI is a target mimic of osa-miR171 in rice roots.
 
-## MIKKI acts as a target mimic of osa-miR171
+### MIKKI acts as a target mimic of osa-miR171
 
 To examine the target mimicry of the MIKKI transcript towards miR171, we overexpressed MIKKI in both rice and Arabidopsis (Figure 3—figure supplement 1A and B, top panel), and applied RT-qPCR analyses. miR171 levels were downregulated in independent transgenic lines generated from both plant species (Figure 3A, top panel and Figure 3—figure supplement 1B, middle panel) and the transcript levels of target genes were markedly upregulated (Figure 3A, bottom panel and Figure 3—figure supplement 1B, bottom panel). Previous studies revealed abnormalities in floral organs of Arabidopsis plants in which ath-miR171 levels were decreased by overexpression of artificial target mimics (Ivashuta et al., 2011; Todesco et al., 2010). Consistent with these observations, plants ectopically overproducing MIKKI transcripts also displayed severe defects in reproductive organs and low fertility (Figure 3B,C and Figure 3—figure supplement 1C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig3-v2.jpg)
+
+**Figure 3.:** (A) Repression of osa-miR171b ~ f (top) and derepression of its target gene (bottom) in MIKKI overexpression lines. RNA was extracted from panicles, leaves and roots. Error bars represent mean ± sd of three biological replicates performed in technical triplicate. The asterisks indicate statistical differences in comparison to the same tissues of wildtype (wt) determined by Student’s t-test. **p<e-10; *p<e-05; n.s., not significant. Wt Nipponbare was segregated from hemizygous overexpressor lines. (B) Abnormal spikelet development in MIKKI-overexpressing lines. Bar = 1 cm. (C) Percentage of unfertilized spikelets in overexpression lines. Data are mean of 10 panicles for each genotype. The asterisks indicate statistical differences determined by Student’s t-test. **p<e-10. (D) Derepression of osa-miR171b ~ f (top) and repression of the target gene (bottom) in mikki mutant plants. RNA was extracted from panicles, leaves and roots. Error bars represent mean ± sd of three biological replicates performed in technical triplicate. Wt Nipponbare was segregated from heterozygous mutant plants. The asterisks indicate statistical differences in comparison to the same tissues of wt determined by Student’s t-test. **p<e-10; *p<e-05; n.s., not significant. (E) Shoot and root length of wt and the mutants. Data are presented as mean ± sd; n = 15. The asterisks indicate statistical differences in comparison to the same tissues of wt determined by Student’s t-test. **p<e-10; n.s., not significant. (F) Confocal microscopy images of meristematic regions of wt and the mutants. fifth cortical layer was chosen for comparison. 10 consecutive cells below transition point of meristematic to elongation zone are indicated as red dots. Bar indicates 10 µm. (G) Comparison of cell length (left) and width (right) between wt and the mutants. Data are presented as mean ± sd; n = 15. The asterisks indicate significant statistical differences as determined by Student’s t-test. **p<e-10; n.s., not significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The levels of MIKKI mRNA in overexpressing lines of rice determined by RT-qPCR. Error bars are mean ± sd of three biological replicates performed in technical triplicate and the values are log2 converted. The asterisks indicate statistical differences determined by Student’s t-test. *p<e-05. (B) Overexpression of MIKKI in Arabidopsis. From the top panel down: levels of MIKKI, ath-miR171a and AtSCL6 RNA. The levels of MIKKI and AtSCL6 RNA were normalized to UBQ10 and ath-miR171a was related to ath-miR166. Data are presented as mean ± sd of three biological replicates performed in technical triplicate. The asterisks indicate statistical differences to Col-0 wt determined by Student’s t-test. **p<0.005; *p<0.05. (C) Typical phenotype of Arabidopsis flowers from plants overexpressing MIKKI. Bar indicates 1 cm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The sequence alignment of the wt and two independent mikki mutant alleles around the targeted region. The regions corresponding to different families of retrotransposons are coloured indicated as in Figure 2C. The lines above show the CRISPR-Cas9 targeted region and the miR171-binding region. One premature stop codon generated in the mikki-1 mutant is highlighted as red letters. (B) Sanger sequencing trace images of the regions around targeted site. Sequences were read in reverse orientation. Shaded box indicates the deleted nucleotides in mikki-1 mutant. (C) MIKKI transcript levels in wt and the two mutant lines. Primers used for the analysis were MIKKI_genotype-F and MIKKI_RT-R. Error bars are mean ± sd of three biological replicates performed in technical triplicate and the values are log2 converted. The asterisks indicate statistical differences determined by Student’s t-test. **p<0.005; n.s., not significant. (D) Short root phenotype of mikki and osscl21 mutant plants grown side-by-side. The image was taken at day two after germination. Bar indicates 1 cm. (E) small RNA blot analyses of wt and the mikki mutants. RNA was extracted from roots. Wt Nipponbare was segregated from heterozygous mutant plants.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Schematic diagram of OsSCL21 gene and T-DNA insertion sites. Box represents exon and line is intergenic region. Arrow indicates transcriptional start site and T-DNA insertion sites are shown as triangles. Primers used in Figure 3—figure supplement 3B are indicated as arrowheads. (B) Genotyping of osscl21-1 and osscl21-2 mutants. (C–E) RT-qPCR analyses on wt and osscl21 mutants. Validation of OsSCL21 (C), osa-miR171b ~ f (D) and MIKKI (E) RNA levels. The levels were normalized to eEF1α (C and E) and osa-miR166 (D), respectively. Error bars are mean ± sd of three biological replicates performed in technical triplicate. The asterisks indicate statistical differences determined by Student’s t-test. **p<0.005; n.s., not significant.
 
 To address directly the developmental role of the MIKKI retrotransposon, we generated the MIKKI mutants mikki-1 and mikki-2 using CRISPR-Cas9 (Miao et al., 2013). To ensure the targeting specificity of guide RNAs (gRNA), we designed them to target the unique junction region between Osr29 and BAJIE (Figure 3—figure supplement 2A). Transgenic plants were examined by sequencing for mutations in this region and two independent alleles were found (Figure 3—figure supplement 2A and B). The mikki-1 allele had a 2 bp deletion at the splice donor site that resulted in retention of the intron. Intron retention disrupted the miR171-binding site and generated multiple premature stop codons (Figure 3—figure supplement 2A). This transcript is likely recognized by a nonsense-mediated mRNA decay pathway and rapidly turned over (Shoemaker and Green, 2012). Indeed, the RT-qPCR analyses revealed thousand-fold reduction of MIKKI transcripts in the mikki-1 mutant (Figure 3—figure supplement 2C). The mikki-2 allele has an 8 bp deletion in the region containing the miR171-binding site (Figure 3—figure supplement 2A). This deletion did not alter RNA levels but was predicted to lose target recognition by osa-miR171 (Figure 3—figure supplement 2A and C).
 
@@ -61,7 +97,23 @@ Next, we performed RT-qPCR on the wildtype (wt) and the mutants. The levels of o
 
 Next, we asked whether post-transcriptional regulation by a ceRNA with target mimicry is the major regulatory mechanism governing tissue-specific levels of osa-miR171. For this, we determined the levels of the primary transcript of osa-miR171 (pri-osa-miR171) in MIKKI overexpression and mutant plants (Figure 4A,B and Figure 4—figure supplement 1A). The abundance of pri-osa-miR171 was similar in different rice tissues and was not affected by the alteration of MIKKI transcript levels or mutation, implying that mature osa-miR171 is regulated post-transcriptionally by the activity of MIKKI.
 
-## Species-specific regulation of miR171 level
+![Figure 4.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig4-v2.jpg)
+
+**Figure 4.:** (A and B) RT-qPCR of the primary precursor of miR171 in wt, overexpressor (A) and mutant (B) of MIKKI. The transcripts levels were normalized to eEF1α. Error bars represent mean ± sd of three biological replicates performed in technical triplicate. The asterisks indicate statistical differences in comparison to the same tissues of wt determined by Student’s t-test. n.s., not significant. (C) RT-qPCR of the primary precursor of miR171a in Col-0 arabidopsis plants. The levels were normalized to UBQ10 and error bars represent mean ± sd of three biological replicates performed in technical triplicate. The asterisks indicate statistical differences determined by Student’s t-test. **p<0.005.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The asterisks indicate statistical differences determined by Student’s t-test. n.s., not significant. (B and C) Relative RNA levels of mature (B) and primary (C) miR171b ~ e levels in brachypodium as revealed by RT-qPCR. Data were normalized to miR166 (B) and eEF1α (C) and are presented as mean ± sd of three biological replicates performed in technical triplicate. The asterisks indicate statistical differences determined by Student’s t-test. **p<0.005; *p<0.05; n.s., not significant.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Left panel, phylogenetic tree of the selected AA-genome Oryza species. The scale bar shows the nucleotide substitution rate per site. The coordinates of MIKKI homologs are shown in parentheses. Right panel, schematic diagram of MIKKI structures. Vertical bars represent deletions. The yellow box within MIKKI of Oryza sativa ssp. indica is a RIRE2-related retrotransposon that became truncated. The colour code is as in Figure 2C. (B) Multiple sequence alignment of MIKKI homologs around intron 4 in different rice species. The regions corresponding to different retrotransposons are underlined in colour. The miR171-binding region and the splice donor/acceptor sites are shown in red and blue, respectively.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Analyses of RNA-seq data generated from roots of different Oryza species showing conserved splicing of intron 4. (B) Tissue-specific distribution of MIKKI mRNA in Indica rice (Oryza sativa ssp. indica cv. IR64). Data are presented as mean ± sd of three biological replicates performed in technical triplicate. The asterisks indicate statistical differences determined by Student’s t-test. **p<0.005; *p<0.05.
+
+### Species-specific regulation of miR171 level
 
 In contrast to rice, the tissue-specific distribution of primary transcripts of miR171 in Arabidopsis was the same as the mature miRNA, which is consistent with transcriptional regulation and thus an entirely different regulatory mechanism (Figure 4C).
 
@@ -69,15 +121,23 @@ MIKKI is present and has a conserved structure in AA-genome Oryza species (Figur
 
 We also examined tissue-specific levels of primary transcripts and mature miR171 in monocotyledonous Brachypodium (Figure 4—figure supplement 1B and C). As in rice, the primary transcripts of miR171 were high in all tissues examined, suggesting analogous post-transcriptional control of miR171 levels. However, so far we have not identified an MIKKI-related element in the genome of Brachypodium.
 
-## Epigenetic regulation of MIKKI
+### Epigenetic regulation of MIKKI
 
 Since the transcription of TEs is usually controlled by epigenetic mechanisms, we examined DNA methylation and selected histone modifications associated with MIKKI in different rice tissues (Figure 5). In roots, where MIKKI is actively transcribed, its upstream region was enriched in lysine 4 tri-methylation of histone H3 (H3K4me3) and depleted of suppressive H3K9me2 (Figure 5B). DNA methylation levels were also lower than in panicles (Figure 5C). Analysis on the public RNA-seq data generated from rice OsDCL3a RNAi knock-down lines also showed derepression of MIKKI (Figure 5—figure supplement 1). These epigenetic signatures were well correlated with tissue-specific transcription of MIKKI.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig5-v2.jpg)
+
+**Figure 5.:** (A) MIKKI structure showing primer positions. BS, bisulfite sequencing; ChIP, chromatin immunoprecipitation. (B) H3K4me3 and H3K9me2 levels determined by ChIP-qPCR assay. The amount of immunoprecipitated DNA was normalized to the input levels with eEF1α as the internal control region. Error bars represent mean ± sd of three biological replicates performed in technical triplicate. The asterisks indicate significant statistical differences determined by Student’s t-test. **p<0.005; *p<0.05. (C) DNA methylation levels shown as percent methylation in three different sequence contexts.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** RNA-seq data was obtained from GSE50778 and the transcript levels are presented as RPKM (reads per kilobase per million reads).
 
 In summary, we propose a model by which MIKKI influences rice root development via the regulation of osa-miR171 levels by tissue-specific expression of a ceRNA encoding target mimicry of miR171 (Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/30038/elife-30038-fig6-v2.jpg)
 
-**Figure 6.:** MIKKI in osa-miR171 control.In rice panicles, MIKKI is epigenetically silenced by DNA methylation and repressive histone modifications (shown as closed circles and red sphere, respectively). In roots, MIKKI transcripts interact with osa-miR171b ~ f leading to its turnover and stabilization of OsSCL mRNAs.
+**Figure 6.:** In rice panicles, MIKKI is epigenetically silenced by DNA methylation and repressive histone modifications (shown as closed circles and red sphere, respectively). In roots, MIKKI transcripts interact with osa-miR171b ~ f leading to its turnover and stabilization of OsSCL mRNAs.
 
 ## Discussion
 
@@ -93,52 +153,52 @@ It has been stated frequently that transposition bursts make a large contributio
 
 ## Materials and methods
 
-## Plant material and growth conditions
+### Plant material and growth conditions
 
 Husks of rice seeds were removed and the seeds were surface sterilized in 20% bleach and germinated in ½-strength Murashige and Skoog media. The 2-week-old seedlings were transferred to soil and grown to maturity in a greenhouse. Root and leaf samples were harvested from 2-week-old seedlings and panicles collected immediately after heading. The rice strains used in this study were Oryza sativa ssp. japonica cv. Nipponbare, O. sativa ssp. japonica cv. Hwayoung and O. sativa ssp. indica cv. IR64. The mutant lines of osscl21 were identified from a T-DNA tagged population established at Kyunghee University, Korea and genotyped for the selection of homozygotes. (http://cbi.khu.ac.kr/RISD_DB.html/).
 
-## Next generation sequencing analysis
+### Next generation sequencing analysis
 
 For rice transcriptome analysis, raw FASTQ files of the following RNA sequencing datasets were downloaded: GSE16631, DRA000385, SRP008821, DRA002310, SRP028376 and GSE50778. The adapter-trimmed clean reads were mapped to the reference genome of MSU7 using TOPHAT 2.0, with most of the options set to the default but with some optimization (-g 300). Cufflinks was used to call the RPKM. All the downstream analyses and plotting, for example, heat-maps of transcript levels and correlation matrix, box/violin plots, and statistical analysis were performed in R studio. The transcriptome data of different Oryza species were obtained from PRJNA264484, PRJNA264480, PRJNA264485, SRP070627, GSE41797 and analysed as described above. Arabidopsis transcriptome data were obtained from PRJNA314076 and analysed as for the rice transcriptome using the TAIR10 reference genome.
 
 For the degradome and small RNA analysis, raw FASTQ files from GSE18251 and GSE16350 were downloaded and mapped uniquely to the MSU7 reference genome using BOWTIE2. The resulting BAM file was visualized by IGV. Arabidopsis small RNA-seq data were obtained from GSE28591 and analysed as for the degradome. HTSeq was used to calculate the read counts for each miRNA.
 
-## RT-qPCR
+### RT-qPCR
 
 Total RNA was extracted using the RNeasy Plant mini kit (Qiagen, Hilden, Germany) following the manufacturer’s recommendations. Reverse transcription reactions were performed using the VILO RT kit (Invitrogen, California, USA) with a random hexamer for priming. Real-time quantitative PCR was carried out using the Roche Light-Cycler (Roche, Basel, Switzerland) in a volume of 10 µl and analysed by the ΔΔCt method. All data in this study are the average of three biological replicates performed in technical triplicate ± standard deviation and normalized against eEF1α. An Ncode miRNA first-strand cDNA synthesis kit (Invitrogen, California, USA) was used for miRNA quantification; normalization was against miR166, which is expressed constitutively in rice (Figure 2—figure supplement 2B). Sequences of primers used are listed in Supplementary file 2.
 
-## Small RNA northern blot analysis
+### Small RNA northern blot analysis
 
 A total of 15 µg of RNA was separated on 15% urea-TBE gels (Thermo Fisher Scientific, Massachusetts, USA), transferred to Hybond N + nylon membranes (Amersham Biosciences, Buckinghamshire, UK) and fixed chemically using EDC (Sigma-Aldrich, Missouri, USA). The membranes were prehybridized for 1 hr and hybridized for at least 16 hr in DIG Easy Hyb buffer (Roche, Basel, Switzerland) at 37°C. Membranes were washed twice with 2X SSC (saline sodium citrate), 0.1% SDS. Immunological detection of DIG-labeled probe was performed using DIG wash and block buffer set (Roche, Basel, Switzerland) and DIG luminescent detection kit (Roche, Basel, Switzerland). Luminescent signal was detected with Amersham Imager 600 (Amersham Biosciences, Buckinghamshire, UK).
 
-## Histological analyses of rice roots
+### Histological analyses of rice roots
 
 Roots from 4-day-old rice plants were fixed in FAA (formaldehyde, acetic acid, ethanol) solution overnight in cold room, wax embedded using Leica ASP300 tissue processor (Leica Biosystems, Wetzlar, Germany) and sectioned by 4 µm using microtome (Leica Biosystems, Wetzlar, Germany). After dewaxing and ethanol washing, samples were stained with Calcofluor White (Sigma-Aldrich, Missouri, USA) to visualize cell wall. Images were taken with a Zeiss LSM 700 confocal microscope (Leica Biosystems, Wetzlar, Germany).
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 Leaf and root samples were collected from Oryza sativa ssp. japonica cv. Nipponbare plants grown for 2 weeks under short-day conditions (10 hr light/14 hr dark). Panicles were harvested immediately after heading from plants grown in the greenhouse. Samples were crosslinked with 1% formaldehyde, flash-frozen, and ground in liquid nitrogen. Chromatin was fragmented by sonication and immunoprecipitated using the following antibodies: H3K4me3 (ab8580; abcam, Cambridge, UK) and H3K9me2 (ab1220; abcam, Cambridge, UK). The immunoprecipitated DNA was quantified by qPCR and normalized against levels of input and the reference genes indicated. All the results are presented as means ± standard deviation (sd) of three biological replicates performed in technical triplicate. Sequences of primers used are listed in Supplementary file 2.
 
-## Bisulfite sequencing
+### Bisulfite sequencing
 
 Genomic DNA was extracted from rice tissues using the DNeasy plant mini kit (Qiagen, Hilden, Germany). The Epitect bisulfite kit (Qiagen, Hilden, Germany) was used for bisulfite conversion of unmethylated cytosines. The primer design and data analysis used kismet (Gruntman et al., 2008). At least 15 clones from each sample were analysed. Sequences of primers used are listed in Supplementary file 2.
 
-## Generation of overexpression lines
+### Generation of overexpression lines
 
 A cDNA fragment of MIKKI from the start to the stop codon was amplified, cloned into the pUN1901 and pGPTVII binary vectors, and transformed into rice and Arabidopsis, respectively (Walter et al., 2004; Wang et al., 2004). For rice transformation, embryo-derived 2-week-old calli were immersed in agrobacterium-containing media. Transgenic rice plants were obtained after antibiotic selection and differentiation of plantlets. The detailed procedure was as described previously (Nishimura et al., 2006). Arabidopsis transformation was by the floral dip method as described previously (Clough and Bent, 1998).
 
-## Targeted mutagenesis
+### Targeted mutagenesis
 
 The oligonucleotide of the designed guide RNA was inserted into the pOs-sgRNA entry vector and shuttled to the pH-Ubi-cas9-7 destination vector by the LR recombination reaction. The resulting binary vector was transformed into rice as described above (Miao et al., 2013). To detect mutation by CRISPR-Cas9, the region containing the targeted region from genomic DNA was amplified, cloned into the pGEM T-easy vector (Promega, Wisconsin, USA) and sequenced. Selected mutant lines were cultured to the next generation to segregate away the T-DNA and individuals homozygous for mutant allele were selected. Sequences of primers used are listed in Supplementary file 2.
 
-## Phylogenetic analysis of MIKKI
+### Phylogenetic analysis of MIKKI
 
 Genome sequences of the selected Oryza species were obtained from Ensembl Plants (http://plants.ensembl.org/). Local BLAST analysis was performed manually using the MIKKI genomic sequence, followed by multiple sequence alignment in ClustalW2 and visualization by FigTree v.1.4.2 and boxshade v.3.21.
 
-## Age estimation of LTRs
+### Age estimation of LTRs
 
 LTR retrotransposon age was estimated as described previously (Ma and Bennetzen, 2004). Briefly, for Osr29, the divergence was calculated from sequence degeneracy of two LTRs. Age of insertion was computed using the equation: T = D/2 t, where T is the time since insertion, D is the divergence and t is the substitution rate of 1.3 × 10−8 per site per year as proposed previously (Ma and Bennetzen, 2004). For BAJIE solo LTR, the sequence was compared to the consensus of BAJIE LTR sequences. We assumed that the consensus BAJIE LTR sequence represents the youngest copy and used the equation of T = D/t.
 
-## Gene accessions
+### Gene accessions
 
 MIKKI, LOC_Os06g02304; OsSCL8, LOC_Os02g44360; OsSCL21, LOC_Os04g46860; OsSCL29, LOC_Os06g01620.

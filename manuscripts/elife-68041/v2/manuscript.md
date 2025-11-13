@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Dopamine (DA) is a critical modulator of brain circuits that control voluntary movements, but our understanding of its influence on the activity of target neurons in vivo remains limited. Here, we use two-photon Ca 2+ imaging to monitor the activity of direct and indirect-pathway spiny projection neurons (SPNs) simultaneously in the striatum of behaving mice during acute and prolonged manipulations of DA signaling. We find that increasing and decreasing DA biases striatal activity toward the direct and indirect pathways, respectively, by changing the overall number of SPNs recruited during behavior in a manner not predicted by existing models of DA function. This modulation is drastically altered in a model of Parkinson’s disease. Our results reveal a previously unappreciated population-level influence of DA on striatal output and provide novel insights into the pathophysiology of Parkinson’s disease.
+Dopamine (DA) is a critical modulator of brain circuits that control voluntary movements, but our understanding of its influence on the activity of target neurons in vivo remains limited. Here, we use two-photon Ca2+ imaging to monitor the activity of direct and indirect-pathway spiny projection neurons (SPNs) simultaneously in the striatum of behaving mice during acute and prolonged manipulations of DA signaling. We find that increasing and decreasing DA biases striatal activity toward the direct and indirect pathways, respectively, by changing the overall number of SPNs recruited during behavior in a manner not predicted by existing models of DA function. This modulation is drastically altered in a model of Parkinson’s disease. Our results reveal a previously unappreciated population-level influence of DA on striatal output and provide novel insights into the pathophysiology of Parkinson’s disease.
 
 ## Introduction
 
@@ -30,15 +30,31 @@ Recent imaging studies show that distinct motor actions are represented in stria
 
 ## Results
 
-## Simultaneous imaging of dSPN and iSPN activity
+### Simultaneous imaging of dSPN and iSPN activity
 
 To resolve the activity of individual striatal neurons in vivo, we expressed the Ca2+ indicator GCaMP6f (Chen et al., 2013) virally in the dorsolateral striatum under control of the synapsin promoter to label all neurons (Figure 1A). Most experiments were conducted using Drd1atdTomato transgenic mice (N = 18), in which dSPNs are selectively labeled red (Ade et al., 2011). We subsequently performed two-photon microscopy through an imaging window chronically implanted in cortex over dorsal striatum (Howe and Dombeck, 2016; Bloem et al., 2017) in head-fixed mice locomoting on a freely rotating circular treadmill (Figure 1B; Figure 1—figure supplement 1A,B; Video 1). This approach allows Ca2+ signals arising in dSPNs to be clearly distinguished from those occurring in tdTomato-negative neurons (Figure 1C,D), which are overwhelmingly iSPNs, and which together with dSPNs account for approximately 95% of all striatal neurons in mice (Gerfen and Surmeier, 2011).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig1-v2.jpg)
+
+**Figure 1.:** (A,B) Experimental setup. GCaMP6f was virally expressed in dorsolateral striatum neurons (A) in mice expressing tdTomato in dSPNs (Drd1atdTomato) or iSPNs (Adora2atdTomato), and imaged by two-photon microscopy through an implanted imaging window while mice locomote on a circular treadmill (B). (C) Top: representative two-photon maximum projection image of dorsolateral striatum in a Drd1atdTomato mouse. Red: dSPNs, green: striatal neurons virally transduced to express GCaMP6f (scale bar: 50 μm). Inset shown at bottom in green (left) and red (middle) channels only, and composite (right; scale bar: 30 μm). (D) Top: example Ca2+ fluorescence traces from dSPNs (green) and putative iSPNs (red) in a Drd1atdTomato mouse. Middle: Mean ΔF/F across all active dSPNs and iSPNs. Bottom: treadmill velocity highlighting two self-initiated locomotor bouts. (E) Mean Ca2+ transient waveform (± s.e.m) imaged from active dSPNs and putative iSPNs in Drd1atdTomato mice. (F) Comparison of Ca2+ transient amplitude in dSPNs versus putative iSPNs in Drd1atdTomato mice (n = 30 FOVs from 18 mice). Mean ± s.e.m is depicted in blue, and unity as dashed gray line. r: Spearman correlation coefficient. (G) Same as (F for Ca2+ transient width at half-max in dSPNs versus iSPNs). (H) Fraction of all imaged neurons assigned to dSPNs, iSPNs and interneurons in Drd1atdTomato (n = 30 FOVs from 18 mice) and Adora2atdTomato (n = 8 FOVs in four mice) mice.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Left: diagram of two-photon imaging window placement relative to bregma on horizontal brain section, with location of viral injections indicated in red. Middle: picture of representative imaging window two weeks post-implantation. Right: example two-photon image of tdTomato-positive dSPNs in a 500 × 500 m FOV. (B) Schematic of two-photon imaging preparation in sagittal plane. To gain optical access to dorsal striatum, the overlaying cortex is removed and replaced with a stainless steel canula fitted with a glass coverslip. (C) Fiber photometry experimental setup. (D) Fiber-photometry recording (top) and treadmill velocity (bottom) recorded from a Drd1aCre mouse virally expressing Cre-dependent GCaMP6f in dorsolateral striatum. Population Ca2+ fluorescence is elevated throughout bouts of forward locomotion. (E) Same as (B for an Adora2aCre mouse expressing GCaMP6f in iSPNs).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) In vivo two-photon maximum projection image of dorsolateral striatum in a Drd1atd-Tomato mouse expressing tdTomato in dSPNs and Cre-independent GCaMP6f (AAV1-Syn-GCaMP6f) in all neurons. Scale bar: 50 μm. (B) Example Ca2+ fluorescence traces from four active dSPNs (green), four putative dSPNs (red) and two putative interneurons in FOV shown in (A) Bottom: treadmill velocity during motorized trials (black). (C) Same as (A) for an Adora2aCre mouse virally expressing a red Cre-dependent reporter in iSPNs (AAV1-FLEX-tdTomato) and Cre-independent GCaMP6f (AAV1-Syn-GCaMP6f) in all neurons. Scale bar: 60 μm. Inset: Detail of boxed area in green (left), red (middle), and merged (right) channels. Scale bar: 20 μm. (D) Example Ca2+ fluorescence traces from four active iSPNs (red), four putative dSPNs (green) and two putative interneurons in FOV shown in (C) Bottom: treadmill velocity during motorized trials (black). (E) Two-photon maximum projection image of dorsolateral striatum in a ChatCre mouse virally expressing Cre-dependent GCAMP6f (AAV1-FLEX-Syn-GCaMP6f) in cholinergic interneurons. Scale bar: 80 μm. (F) Ca2+ fluorescence traces from three active cholinergic interneurons (blue) as mice self-initiate locomotor bouts on a free-spinning treadmill (black). (G) Mean (± s.e.m in shaded area) Ca2+ signal across active dSPNs (green), iSPNs (red) and cholinergic interneurons (blue) aligned to locomotion onset.
+
+![Video 1.](https://cdn.elifesciences.org/articles/68041/elife-68041-video1.mp4.jpg)
+
+**Video 1.:** Replay speed: 1x.
 
 Self-paced forward locomotion was associated with prominent increases in fluorescence in groups of neurons both positive and negative for tdTomato (Figure 1D). Population Ca2+ signals in tdTomato-positive dSPNs were similar to data obtained using photometry in mice expressing GCaMP6f selectively in dSPNs (Figure 1—figure supplement 1C,D). Amongst tdTomato-negative neurons, the vast majority resembled dSPNs in morphology, showed Ca2+ transients comparable to those observed in dSPNs (Figure 1E–G) and displayed population activity consistent with photometric signals obtained specifically from iSPNs (Figure 1—figure supplement 1E), suggesting they represent iSPNs. The remaining tdTomato-negative neurons exhibited Ca2+ signals distinct from those observed in dSPNs, including elevated baseline fluorescence (Figure 1—figure supplement 2A–B). These cells likely represent interneurons that sparsely populate the striatum, many of which are tonically active.
 
 To validate our classification of tdTomato-negative cells into putative iSPNs and interneurons, we expressed GCaMP6f in neurons in a cohort of four mice in which iSPNs are selectively labeled with tdTomato either genetically (Adora2aCre transgenic mice bred to the tdTomato reporter Ai14, N = 2) or virally (Adora2aCre mice injected in dorsolateral striatum with an adeno-associated virus encoding Cre-dependent tdTomato, N = 2). We refer to this cohort as Adora2atdTomato mice henceforth. Ca2+ signals obtained from identified iSPNs were comparable to those imaged in putative iSPNs in Drd1atdTomato mice (Figure 1—figure supplement 2C,D). Moreover, the small fraction of cells with elevated baseline fluorescence and distinctive activity patterns were also tdTomato-negative in Adora2atdTomato mice, indicating they are not iSPNs but likely represent interneurons. To confirm this assertion, we virally expressed Cre-dependent GCaMP6f in the striatum of ChATCre mice (N = 2) to directly image Ca2+ signals in cholinergic interneurons (Figure 1—figure supplement 2E–G). Consistent with prior reports (Howe et al., 2019), cholinergic interneurons exhibited elevated baseline fluorescence and movement-related Ca2+ signals distinct from SPNs and similar to those observed in some of the tdTomato-negative cells labeled as putative interneurons in Drd1atdTomato and Adora2atdTomato mice. Importantly, the proportions of imaged neurons assigned to dSPNs, iSPNs and interneurons in Drd1atdTomato and Adora2atdTomato mice were comparable and in agreement with anatomical estimates (Figure 1H), further validating our classification criteria. Our imaging approach therefore offers the ability to simultaneously monitor and compare the activity of hundreds of striatal neurons (mean ± SEM: 327 ± 13 per field of view (FOV), range: 131–442) belonging to both direct and indirect pathways with high spatial resolution during a simple behavior.
 
-## Activity in dSPNs and iSPNs is balanced and concurrent during forward locomotion
+### Activity in dSPNs and iSPNs is balanced and concurrent during forward locomotion
 
 We simultaneously imaged dSPNs and iSPNs that displayed Ca2+ transients clearly distinguished from baseline and neuropil fluorescence during spontaneously-initiated bouts of forward locomotion (treadmill speed > 0.4 cm/s; see methods) in Drd1atdTomato and Adora2atdTomato mice. Under these conditions, intracellular Ca2+ transients are unlikely to reflect individual spikes, but rather bursts of action potentials (Kerr and Plenz, 2002; Owen et al., 2018; Parker et al., 2018), which are prevalent during movement execution (Berke et al., 2004; Yin et al., 2009; Fobbs et al., 2020). Consistent with this, the frequency of Ca2+ transients in dSPNs and iSPNs was exceedingly low during periods of immobility (treadmill speed < 0.2 cm/s) and rose sharply at movement onset without notable temporal offset between pathways (Figure 2A–C). The frequency of Ca2+ transients increased similarly in dSPNs and iSPNs in proportion to treadmill velocity, remained elevated throughout locomotor bouts and returned to baseline shortly after movement offset.
 
@@ -48,33 +64,77 @@ We simultaneously imaged dSPNs and iSPNs that displayed Ca2+ transients clearly 
 
 SPNs showing Ca2+ elevations during movement formed, over the course of several locomotor bouts, discrete groups, which we termed active SPN ensembles (Figure 2D). We quantified the size of active SPN ensembles as the fraction of all imaged dSPNs or iSPNs within a FOV that showed Ca2+ transients during forward locomotion over the course of an imaging session. Active dSPN and iSPN ensembles were comparable in size, accounting for (mean ± s.e.m.) 16.9 ± 1.8% and 18.6 ± 1.8% of all imaged dSPNs and iSPNs, respectively (Figure 2E). For each 2 s of locomotion, approximately 10% of the overall active ensemble displayed Ca2+ transients. Individual dSPNs and iSPNs were not systematically active across different locomotor bouts, at particular phases within movement bouts or at specific treadmill velocities (Figure 1D and Figure 1—figure supplement 2B,D), consistent with a sparse sensorimotor code in dorsolateral striatum (Barbera et al., 2016; Klaus et al., 2017; Markowitz et al., 2018). Importantly, the overall size of movement-related ensembles was not limited by distance travelled or the duration of imaging sessions, as their extent was largely captured within the first few locomotor bouts and similar values were obtained using motorized treadmills that imposed a fixed number of running bouts (Figure 2F,G). Ensembles were also comparable in size over time, whether imaged a few days or a month apart (Figure 2H). Thus, the overall activity of direct and indirect pathway SPNs – as measured by the frequency of Ca2+ transients exhibited by individual neurons and the total number of active cells detected over an imaging session (i.e. active SPN ensembles) – is balanced, with few notable differences distinguishing dSPNs from iSPNs during self-paced forward locomotion.
 
-## Reducing DA receptor signaling modulates the size of active SPN ensembles
+### Reducing DA receptor signaling modulates the size of active SPN ensembles
 
 DA receptor signaling modulates the firing rate of SPNs. Whether it also modulates the size of SPN ensembles representing motor actions is not known. We can conceive of two scenarios: if SPN ensembles are primarily defined anatomically by excitatory afferent connectivity, DA may alter SPN firing rates with minimal changes in ensemble size (Figure 3A). If, on the other hand, the extent of SPN ensembles is determined functionally by the potency of excitatory afferents and/or the excitability of SPNs, DA may exert a strong influence on ensemble size in addition to firing rates (Figure 3B). To distinguish between these possibilities, we first compared Ca2+ signals in dSPNs and iSPNs before and after systemic administrations of a cocktail of D1 and D2-type dopamine receptor (D1/2R) antagonists (0.2 mg/kg SCH23390 and 1 mg/kg raclopride). Although this manipulation did not impact the velocity or duration of locomotor bouts on the treadmill, it curtailed the total number of bouts that mice spontaneously initiate compared to vehicle-treated animals (Figure 3—figure supplement 1A–C). We therefore limited our analyses to imaging sessions on motorized treadmills to encourage locomotion and to maintain locomotor speed and distance traveled constant.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig3-v2.jpg)
+
+**Figure 3.:** (A,B) DA may affect SPN firing rates without (A) or with (B) accompanying changes in active ensemble size. Active SPNs are depicted as filled circles. Movement-related excitatory inputs of varying strength (arrows) evoke action potentials (vertical bars) when postsynaptic membrane depolarizations exceed spike threshold (dashed line). In this example, changes in extracellular DA increase the strength of excitatory afferents and/or the intrinsic excitability of SPNs. (C) Example maximum projection image of GCaMP6f signal in dorsolateral striatum immediately before (left) and 20 min after (right) systemic administration of a cocktail of D1/2R antagonists (SCH23390, 0.2 mg/kg + raclopride, 1 mg/kg). dSPNs and iSPNs displaying Ca2 + transients during forward locomotion during each imaging session are highlighted in green and red, respectively. (D) Percentage of all imaged dSPNs (left) and iSPNs (right) showing Ca2+ transients during locomotion before and after systemic administration of D1/2R antagonists (n = 11 FOVs in five mice; dSPNs: p=0.003; iSPNs: p=0.001 vs. baseline, Wilcoxon signed-rank). Mean ± s.e.m are overlaid. (E) Bias in the size of active dSPN and iSPN ensembles before and after D1/2R antagonist treatment (p=0.001 vs. baseline, Wilcoxon signed-rank). (F) Cumulative distribution of active dSPNs (left) and iSPNs (right) recruited as a function of distance travelled in vehicle- (dashed) and D1/2R antagonist-treated mice (solid), indicating that imaging sessions are sufficiently long to adequately estimate the size of active SPN ensembles.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mean (± s.e.m) self-initiated treadmill velocity before and after systemic administration of D1/2R antagonists (N = 5 mice, p=0.62 vs. baseline, Wilcoxon signed-rank). (B) Same as (A) for locomotor bout duration (p=0.06, Wilcoxon signed-rank). (C) Same as (A) for bout frequency (p=0.001, Wilcoxon signed-rank). (D) Mean (± s.e.m) Ca2+ transient frequency per dSPN active during forward locomotion before and after systemic administration of D1/2R antagonists (p=0.19, Wilcoxon signed-rank). (E) Same as (D) for iSPNs (p=0.003, Wilcoxon signed-rank). (F) Same as (D) for bias in frequency between pathways (p=0.49, Wilcoxon signed-rank). (G) Mean (± s.e.m) Ca2+ transient amplitude per dSPN active during forward locomotion before and after systemic administration of D1/2R antagonists (p=0.85, Wilcoxon signed-rank). (H) Same as (G) for iSPNs (p=0.21, Wilcoxon signed-rank). (I) Same as (G) for bias in amplitude between pathways (p=0.21, Wilcoxon signed-rank).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Percentage of all imaged dSPNs showing Ca2+ transients during forward locomotion before and after systemic administration of vehicle (n = 10 FOVs in five mice, p=0.58 vs. baseline, Wilcoxon signed-rank). Mean ± s.e.m are overlaid. (B) Same as (A) for iSPNs (p=0.97, Wilcoxon signed-rank). (C) Bias in the size of active dSPN and iSPN ensembles before and after vehicle treatment (p=0.56, Wilcoxon signed-rank). (D) Mean (± s.e.m) Ca2+ transient frequency per dSPN active during forward locomotion before and after systemic administration of vehicle (p=0.37, Wilcoxon signed-rank). (E) Same as (D) for iSPNs (p=0.19, Wilcoxon signed-rank). (F) Same as (D) for bias in frequency between pathways (p=0.56, Wilcoxon signed-rank). (G) Mean (± s.e.m) Ca2+ transient amplitude per dSPN active during forward locomotion before and after systemic administration of vehicle (p=0.06, Wilcoxon signed-rank). (H) Same as (G) for iSPNs (p=0.37, Wilcoxon signed-rank). (I) Same as (G) for bias in amplitude between pathways (p=0.10, Wilcoxon signed-rank).
+
 The total number of SPNs recruited by forward locomotion was significantly altered in mice treated with D1/2R antagonists compared to vehicle-treated controls (Figure 3C,D and Figure 3—figure supplement 2A–I). Blocking DA receptors shrunk active dSPN ensembles by half (p=0.006, Mann-Whitney; vehicle: n = 10 FOVs in five mice; DA antagonist: n = 11 FOVs in five mice), and expanded iSPN ensembles more than three-fold (p=5.7×10−6, Mann-Whitney), resulting in a strong imbalance in favor of the indirect pathway (p=5.7×10−6, Mann-Whitney; Figure 3E). This apparent dichotomous modulation is not secondary to changes in the likelihood that Ca2+ transients are detected in dSPNs and iSPNs. Indeed, the mean amplitude of Ca2+ transients in dSPNs and iSPNs remained unchanged (Figure 3—figure supplement 1G–I), and the frequency of Ca2+ events recorded increased in both pathways, although it only reached statistical significance in iSPNs (p=0.007; Mann-Whitney vs. vehicle; Figure 3—figure supplement 1D–F). Moreover, the extent of active ensembles was fully captured well before the end of imaging sessions (Figure 3F). These data therefore indicate that reducing DA signaling evokes substantial reconfiguration of the overall number of dSPNs and iSPNs associated with forward locomotion within minutes, and suggests that, under baseline conditions, DA continuously promotes the activation of dSPNs and represses iSPNs to maintain balance between pathways.
 
-## Elevating DA reconfigures active SPN ensembles in a concentration-dependent manner
+### Elevating DA reconfigures active SPN ensembles in a concentration-dependent manner
 
 Given the marked effects of D1/2R antagonists on SPN ensemble size, we next investigated whether increasing DA signaling would exert the opposite effect. We hypothesized that dSPN ensembles would grow in size with rising DA, whereas iSPNs would be insensitive (Iino et al., 2020; Lee et al., 2021). To test this, we imaged striatal activity upon concomitant pharmacological stimulation of D1 and D2 receptors (n = 20 FOVs in 14 mice) while mice locomoted on motorized treadmills to mitigate effects on spontaneous behavior (Figure 4—figure supplement 1A–C). We examined the response of dSPNs and iSPNs to increasing concentrations of D1/2R agonists (SKF81297 and quinpirole, both at 0.3, 1, 3, or 6 mg/kg) in comparison to vehicle treatment.
 
 Stimulating DA receptors markedly altered the size of SPN ensembles associated with forward locomotion, yielding a dose-dependent imbalance in favor of the direct pathway (p=2.1×10−5, Kruskal-Wallis test; Figure 4B). However, the effects on dSPN and iSPN ensembles underlying this bias varied with DA receptor agonist dose. At low concentrations (0.3–1 mg/kg), iSPN ensembles remained unchanged, whereas dSPN ensembles were either unchanged or larger, in agreement with our working hypothesis. At higher concentrations (3–6 mg/kg), D1/2R agonists promoted a striking decline in the prevalence of both active dSPNs and iSPNs, with iSPNs showing the strongest decrease. The drop in the number of active iSPNs suggest that iSPNs are not maximally repressed by baseline DA tone in vivo (Marcott et al., 2014). The reduction in the size of active dSPN ensembles was not expected. It did not stem from insufficient sampling of SPN activity during our imaging session (Figure 4C), or from differences in our ability to detect Ca2+ events, as DA does not affect somatodendritic Ca2+ transients in dSPNs (Day et al., 2008), and the amplitude and frequency of Ca2+ transients were not reduced (Figure 4—figure supplement 1D,E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig4-v2.jpg)
+
+**Figure 4.:** (A) Fraction of imaged dSPNs active during locomotion in mice treated with different doses of D1/2R agonists (SKF81297 + quinpirole) normalized to pre-drug baseline (vehicle: n = 15 FOVs; 0.3 mg/kg: p=0.92, n = 6 FOVs; 1 mg/kg: p=0.04, n = 9 FOVs; 3 mg/kg: p=1.7×10−4, n = 20 FOVs; 6 mg/kg: p=2.9×10−4, n = 6 FOVs; all vs. vehicle, Mann-Whitney). (B) Same as (A) for iSPNs (0.3 mg/kg: p=0.27, n = 6 FOVs; 1 mg/kg: p=0.92, n = 9 FOVs; 3 mg/kg: p=3.1×10−9, n = 20 FOVs; 6 mg/kg: p=3.7×10−5, n = 6 FOVs; all vs. vehicle, Mann-Whitney). (C) Bias in ensemble size between dSPNs and iSPNs (0.3 mg/kg: p=0.02; 1 mg/kg: p=4.3×10−5; 3 mg/kg: p=7.8×10−6; 6 mg/kg: p=7.4×10−5; all vs. vehicle, Mann-Whitney). (D) Cumulative distribution of active dSPNs (green) and iSPNs (red) recruited with travelled distance after systemic administration of vehicle (dashed) and D1/2R agonists (solid). (E) Left, experimental paradigm: mice executed blocks of three 10 s-long locomotor bouts on a motorized treadmill. The first 20 blocks were unrewarded (baseline) but the following 20 were preceded by delivery of a water reward. Right, example GRABDA2h fluorescence (Sun et al., 2020) imaged from dorsolateral striatum using fiber photometry upon water reward delivery. Inset, mean ± s.e.m GRABDA transient amplitude (n = 5 mice). (F) Active dSPN (left) and iSPNs (middle) ensemble size imaged during baseline and rewarded blocks (n = 6 FOVs in four mice; dSPN p=0.03, iSPN p>0.9, all vs. baseline, Wilcoxon signed-rank). Right, pathway bias index (p=0.03 vs. baseline, Wilcoxon signed-rank). Mean ± s.e.m overlaid for each group. (G) Same as (F) upon treatment with the DA transporter inhibitor nomifensine (10 mg/kg; n = 14 FOVs in six mice; dSPN p=0.005, iSPN p=2.4×10−4, pathway bias index p=0.68, all vs. baseline, Wilcoxon signed-rank).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Mean self-initiated treadmill velocity before and after systemic administration of D1/2R agonists (N = 14 mice, p=0.38 vs. baseline, Wilcoxon signed-rank). (B) Same as (A) for locomotor bout duration (p=0.002, Wilcoxon signed-rank). (C) Same as (A) for bout frequency (p=0.40, Wilcoxon signed-rank). (D) Mean (± s.e.m) Ca2+ transient frequency per dSPN (left) and iSPN (middle) active during forward locomotion after systemic administration of vehicle (n = 15 FOVs in 10 mice) and D1/2R agonists at different concentrations (low: 0.3–1 mg/kg; high: 3–6 mg/kg) normalized to pre-drug baseline (dSPNs, low: p=0.58, high: p=0.27; iSPNs, low: p>0.99, high: p=0.006, all vs. vehicle, Mann-Whitney). Right: Bias in Ca2+ transient frequency between pathways (low: p=0.81; high: p=0.01, all vs. vehicle, Mann-Whitney). (E) Same as (D) for Ca2+ transient amplitude (dSPNs, low: p=0.83, high: p=0.18; iSPNs, low: p=0.89, high: p=0.58; bias, low: p=0.38, high: p=0.66; all vs. vehicle, Mann-Whitney).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Mean (± s.e.m) Ca2+ transient frequency per dSPNs (left, green) and iSPNs (right, red) active during locomotion in a baseline (non-rewarded) imaging session vs. a session in which water rewards were delivered every three locomotor bouts (dSPNs: p=0.16; iSPNs: p=0.22; all vs. baseline, Wilcoxon signed-rank). (B) Same as (A) for Ca2+ transient amplitude (dSPN: p=0.16; iSPN: p=0.22; all vs. baseline, Wilcoxon signed-rank). (C) Same as (A) before (baseline) and after pharmacological elevation of DA in striatum with the DA transporter inhibitor nomifensine (dSPNs: p=0.41; iSPNs: p=0.58; all vs. baseline, Wilcoxon signed-rank). (D) Same as (C) for Ca2+ transient amplitude (dSPNs: p=0.64; iSPNs: p=0.08; all vs. baseline, Wilcoxon signed-rank).
+
 Although DA receptors are strongly expressed in striatum, we cannot exclude the possibility that systemic administration of DA receptor agonists impact striatal activity indirectly, especially at high doses. We therefore investigated how movement-related SPN ensembles are affected by manipulations that preferentially elevate endogenous DA levels in striatum. We first considered the effects of natural rewards, which are well established to elevate extracellular DA throughout striatum (Figure 4D), and which were recently shown to elevate protein kinase A activity in dSPNs for 10 s of seconds (Lee et al., 2021). To do so, we imaged striatal activity in a cohort of water-restricted mice locomoting on a motorized treadmill before and after delivering water rewards. Water delivery selectively increased in the number of active dSPNs (Figure 4E) without altering Ca2+ transient properties (Figure 4—figure supplement 2A,B), similar to results obtained with low concentrations of D1/2R agonists (Figure 4A).
 
 We also considered the effects of membrane DA transporter (DAT) inhibition. Presynaptic reuptake of DA into axonal terminals is the primary mechanism through which DA neurons limit the amplitude and duration of DA transients in the striatum, and inhibiting DAT leads to strong and prolonged elevations in extracellular DA in striatum (Sulzer et al., 2016). We therefore compared the number of active SPNs before and after systemic administration of the DAT antagonist nomifensine (10 mg/kg). We observed effects similar to those reported with higher D1/2R agonist concentrations (Figure 4A), as nomifensine significantly decreased the size of active ensembles in both dSPNs and iSPNs (Figure 4F; Figure 4—figure supplement 2C,D). These data therefore indicate that the size of SPN ensembles recruited during forward locomotion is susceptible to modulation by rising DA, but that elevated extracellular DA levels are not invariably associated with proportional increases in the number of active dSPNs. Instead, dSPNs follow an inverted U-shaped function, where too little or too much DA negatively impacts the size of their action-related ensemble.
 
-## Chronic DA depletion selectively limits the size of active dSPN ensembles
+### Chronic DA depletion selectively limits the size of active dSPN ensembles
 
 The degeneration of substantia nigra pars compacta (SNc) DA neurons in animal models of Parkinson’s disease evokes imbalances in activity rates in dSPNs and iSPNs (Parker et al., 2018; Ryan et al., 2018). To examine whether chronic loss of DA also evokes changes in the size of active SPN ensembles, we injected the neurotoxin 6-hydroxydopamine (6-OHDA) into the SNc ipsilateral to the striatal hemisphere under investigation in a subset of mice (N = 12). This manipulation causes DA neurons to degenerate (Figure 5B,C; Figure 5—figure supplement 1A–D) and produces mild motor impairments as early as 24 hr – and for up to a month – after lesion (Figure 5—figure supplement 1E–H). Importantly, unlike the profound akinesia that results from bilateral DA denervation, hemi-lesioned mice continue to spontaneously engage in locomotor behavior, permitting the study of movement-related SPN activity within dorsolateral in the absence of DA. A separate cohort of mice (N = 6) was treated identically, except that 6-OHDA was omitted from the injection solution (sham group). These mice did not exhibit differences in the density of DA neuron cell bodies in SNc or of axons in striatum (Figure 5C; Figure 5—figure supplement 1C,D), or in striatal Ca2+ activity (Figure 5D–F; Figure 5—figure supplement 2C–F).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig5-v2.jpg)
+
+**Figure 5.:** (A) Experimental timeline relative to unilateral lesion of DA neurons in SNc. (B) Example coronal forebrain (top) and ventral midbrain (bottom) sections from a mouse injected with 6-OHDA into the right SNc and stained for DAT (top) and TH (bottom). VTA, ventral tegmental area. Scale bars: 1 mm (top), 0.5 mm (bottom). (C) Immunofluorescence signal for TH in SNc and VTA (left) and DAT in dorsal and ventral striatum (right) on the treated side normalized to the intact side in sham- (gray; n = 6) and 6-OHDA-lesioned mice (blue; n = 12). Mean ± s.e.m is overlaid. Asterisks depict significant difference from sham (SNc p=1.1×10−4; VTA p=1.1×10−4; dorsal striatum p=3.2×10−4; ventral striatum p=0.001; Mann-Whitney). (D) Size of dSPN ensembles before (day −1), the day following (day +1) or a month after (day +30) sham (n = 9 FOVs in six mice; day 1: p=0.42; day 30: p>0.9) or 6-OHDA-mediated SNc lesions (n = 21 FOVs from 12 mice; day 1: p=1.8×10−4; day 30: p=0.001, all vs. pre-lesion, post-hoc pairwise t-tests with Bonferroni correction). (E) Same as (D) for iSPNs (sham day 1: p=0.78; day 30: p>0.9; 6-OHDA day 1: p=8.0 × 10−7, day 30: p>0.9, all vs. pre-lesion, post-hoc pairwise t-tests with Bonferroni correction). (F) Bias in ensemble size between dSPNs and iSPNs (sham day 1: p>0.9; day: 30 p>0.9; 6-OHDA day 1: p=3.1×10−14, day 30: p=4.2×10−5, all vs. pre-lesion, post-hoc pairwise t-tests with Bonferroni correction). (G) Movement-related dSPN (left, green) and iSPN (right, red) ensemble size imaged on different days after SNc lesions with 6-OHDA normalized to pre-lesion ensemble size (n = 16, 9, 2, 8, and 14 FOVs on days 1, 2, 7, 14, and 30, respectively). Note that iSPNs return to baseline values within the first 2 weeks post-lesion. (H) Percentage of imaged dSPNs (left) and iSPNs (right) displaying Ca2+ transients in 200 ms-time bins vs. treadmill velocity during self-initiated forward locomotion before 6-OHDA lesion (black) or on day 1 (acute DA loss) and day 30 (chronic DA loss) after 6-OHDA lesion.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Confocal image of a coronal midbrain section immunostained for tyrosine hydroxylase (TH) 24 hr after unilateral injection of 6-OHDA in SNc (dashed outline). Scale bar: 300 μm. (B) Number of TH-positive neurons identified in SNc and VTA on injection side relative to contralateral side 24 hr after intracranial injection of 6-OHDA in SNc (n = 9 sections from three mice; VTA: p=0.008; SNc: p=0.004; Wilcoxon signed rank). (C) Schematic coronal sections of ventral midbrain (left; −3.1 mm from bregma) and forebrain (right;+1 mm from bregma) illustrating 6-OHDA-mediated loss of DA neuron cell bodies in SNc/VTA and DA axons in striatum, respectively. The extent of the lesion is indicated in light red for each mouse and the results of 12 mice used for two-photon imaging are overlaid. SNr: substantia nigra pars reticulata. (D) Comparison of TH (left) and DAT (right) fluorescence (reported as % from control, uninjected hemisphere) in dorsal striatum vs. SNc in sham (gray; N = 6) and 6-OHDA lesioned (blue; N = 12) mice used for two-photon imaging. Dashed black line: unity. r: Spearman correlation coefficient. (E) Mean self-initiated treadmill velocity before (day −1), 1 day after and 30 days after unilateral injection of vehicle (N = 6, gray) or 6-OHDA (N = 12, blue) in SNc (Two-way ANOVA lesion x time: F2,30 = 5.56, p=0.009; sham, day 1: p>0.99, day 30: p=0.14; 6-OHDA, day 1: p=0.035, day 30: p=0.033; all vs. day −1, post-hoc within-group t-tests with Bonferroni correction). (F) Same as (E) for locomotor bout duration (Two-way ANOVA lesion x time: F2,30 = 0.99, p=0.38). (G) Same as (E) for bout frequency (Two-way ANOVA lesion x time: F2,30 = 0.15, p=0.86). (H) Turning bias measured in a closed-arm plus maze in a subset of vehicle (N = 5, gray) and 6-OHDA injected mice (N = 6, blue) 1 day before, 1 day after, and 30 days after intracranial surgery. Values approaching 1 and −1 reflect strong turning bias toward (ipsiversive) or away from (contraversive) the lesioned hemisphere, respectively (Two-way ANOVA lesion x time: F2,27 = 6.0, p=0.007; sham, day 1: p=0.98, day 30: p=0.28; 6-OHDA, day 1: p=0.003, day 30: p=0.015; all vs. day −1, post-hoc within-group t-tests with Bonferroni correction).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Size of dSPN (left) and iSPN (middle) ensembles recruited during fixed-velocity locomotion on a motorized treadmill and their relative bias (right) immediately before (day −1), 1 day after or 30 days after unilateral 6-OHDA injection in SNc (dSPNs, day 1: p=0.003, day 30: p=3.7×10−4; iSPNs, day 1: p=1.2×10−4, day 30: p=0.88; pathway bias, day 1: p=1.2×10−4, day 30: p=1.2×10−4; all vs. day −1, Wilcoxon signed-rank). (B) Cumulative distribution of active dSPNs (left) and iSPNs (right) recruited as a function of distance travelled 1 day before (pre-lesion), 1 day after (acute) or 30 days after (chronic) unilateral 6-OHDA injection in SNc. (C) Percentage of imaged dSPNs (green) and iSPNs (red) displaying Ca2+ transients per 200 ms-time bins vs. mean treadmill velocity during self-initiated forward locomotion on day one after vehicle injection in SNc (sham). Shaded area is s.e.m. (D) Same as (C) for day 30. (E) Mean Ca2+ transient frequency per dSPN (left) and iSPNs (middle) active during self-initiated forward locomotion 1 day before, 1 day after, or 30 days after sham (n = 9 FOVs in six mice) or 6-OHDA treatment (n = 21 FOVs from 12 mice; Two-way ANOVA lesion x time: dSPN, F2,45 = 1.05, p=0.36; iSPN, F2,45 = 1.64, p=0.21). Right: Ca2+ transient frequency bias between pathways (two-way ANOVA lesion x time: F2,45 = 7.98, p=0.001; sham, day 1: p>0.9, day 30: p=0.23; 6-OHDA, day 1: p=0.008, day 30: 5.0 × 10−4; all vs. day −1; post-hoc within-group t-tests with Bonferroni correction). (F) Same as (E) for Ca2+ transient amplitude (two-way ANOVA lesion x time: dSPN, F2,45 = 1.31, p=0.3; iSPN, F2,45 = 1.50, p=0.2).
 
 Lesioning DA neurons had a strong, time-dependent effect on the size of dSPN (two-way ANOVA lesion x time: F2,53 = 3.66, p=0.03; Figure 5D) and iSPN ensembles associated with forward locomotion (F2,53 = 11.92, p=5.3×10−5; Figure 5E), resulting in a pronounced imbalance between pathways (F2,53 = 19.0, p=6.1×10−7; Figure 5F). Within the first 24 hr, the number of dSPNs displaying Ca2+ transients was halved, whereas active iSPNs within the same FOV more than doubled in number. These effects, which were similar to those observed with DA receptor antagonists (Figure 3C–E), were present at all recorded velocities (Figure 5G), as well as on a motorized treadmill (Figure 5—figure supplement 2A). In addition, they were not associated with significant changes in either amplitude or frequency of Ca2+ transients in active SPNs (Figure 5—figure supplement 2E,F), excluding differences in behavior and signal detection as likely confounds. DA denervation therefore rapidly alters the size of dSPN and iSPN ensembles, generating a strong imbalance in favor of the indirect pathway.
 
 To determine if homeostatic adaptations that accompany chronic DA denervation impact SPN ensembles, we also imaged striatal activity in the same cohort of mice 30 days later. Although the number of dSPNs recruited during forward locomotion remained depressed, the expansion of iSPN ensembles observed immediately after 6-OHDA treatment was no longer evident (Figure 5D–F). Instead, active iSPN ensembles returned to pre-lesion levels within a few days (Figure 5G). As with imaging sessions on day 1, we confirmed that the selective defect in dSPNs on day 30 was present across treadmill velocities (Figure 5H), that it was maintained on a motorized treadmill (Figure 5—figure supplement 2A), and that it was not associated with differences our ability to detect Ca2+ transients or adequately capture the extent of active SPN ensembles (Figure 5—figure supplement 2B,E,F). Despite compensatory changes in iSPNs, the overall size of SPN ensembles recruited over the course of imaging sessions remained significantly biased toward the indirect pathway in chronically lesioned mice (Figure 5F). These results therefore indicate that DA depletion strongly biases striatal activity toward the indirect pathway both acutely and chronically, and point to plasticity mechanisms that normalize the number of active iSPNs, but not dSPNs, upon persistent absence of DA signaling.
 
-## Chronic DA depletion alters how SPN ensembles respond to DA
+### Chronic DA depletion alters how SPN ensembles respond to DA
 
 Motor impairments in Parkinson’s disease are typically managed by elevating striatal DA with L-DOPA, the metabolic precursor for DA. However, as the disease progresses and SNc degeneration becomes more severe, L-DOPA evokes abnormal involuntary movements, or dyskinesias, that severely diminish quality of life (Cenci, 2014; Picconi et al., 2018). We therefore investigated whether DA’s influence on SPN ensembles changes in the striatum of mice in which DA axons are chronically lost. To do this, we first treated mice that had received unilateral 6-OHDA infusions in SNc at least one month earlier with a single dose of L-DOPA. As expected, this treatment reversed the turning bias of lesioned mice within minutes (Figure 6—figure supplement 1A). L-DOPA also affected SPN ensembles, albeit to a much greater extent than that observed with D1/2R agonists in DA-intact animals. The number of dSPNs exhibiting Ca2+ transients during forward locomotion on motorized treadmills in DA-lesioned mice expanded by 10-fold with L-DOPA, outnumbering pre-lesion dSPN ensembles by a factor of two on average and reaching upwards of 70% of all imaged dSPNs in some fields of view (Figure 6A,B). In addition, the overall number of active iSPNs decreased below pre-lesion levels (Figure 6C), further contributing to biasing ensembles in DA-depleted mice toward the direct pathway (Figure 6D). These population-level effects are unlikely to stem from changes in the likelihood of detecting Ca2+ transients in active SPNs (Figure 6—figure supplement 1B,C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig6-v2.jpg)
+
+**Figure 6.:** (A) Maximum projection image of a chronically DA-depleted dorsolateral striatum (left) and spatial distribution of active dSPNs (green) and iSPNs (red) ensembles imaged immediately before (middle) and following (right) systemic administration of L-DOPA. Scale bar: 50 μm. (B) Size of movement-related dSPN ensembles in chronically lesioned mice before and after elevating striatal DA with L-DOPA (n = 21 FOVs in 12 mice; p=1.9×10−6, Wilcoxon signed rank). Dashed line indicates the mean size of dSPN ensembles prior to 6-OHDA lesion. (C) Same as (B) for iSPNs (n = 21 FOVs in 12 mice; p=7.0×10−4, Wilcoxon signed rank). (D) Bias in the size of active dSPN and iSPN ensembles before and after L-DOPA treatment (n = 21 FOVs in 12 mice; p=9.5×10−7, Wilcoxon signed rank). (E) Size of movement-related dSPN ensembles in chronically-lesioned mice (n = 10 FOVs in seven mice) imaged before (baseline) and after systemic administration of different doses of D1/2R agonists on separate sessions (1 mg/kg: p=2.2×10−5; 3 mg/kg: p=1.1×10−5, all vs. baseline, Mann-Whitney) and L-DOPA (p=1.1×10−5 vs. baseline, Mann-Whitney) normalized to the size of active dSPN ensembles prior to 6-OHDA lesion. Dashed line indicates unity. (F) Same as (E) for iSPNs (n = 10 FOVs in seven mice; 1 mg/kg: p=0.01; 3 mg/kg: p=1.3×10−4; L-DOPA: p=8.4×10−3; all vs. baseline, Mann-Whitney). (G) Bias in the size of active dSPN and iSPN ensembles before and after treatment with D1/2R agonists or L-DOPA (n = 10 FOVs in seven mice; 1 mg/kg: p=2.2×10−5; 3 mg/kg: p=1.1×10−5; L-DOPA, p=1.1×10−5; all vs. baseline, Mann-Whitney). (H) Diagrams summarizing observed changes in the overall balance between dSPN and iSPN ensembles (left) and the specific changes in the size of movement-related dSPN (green) and iSPN (red) ensembles at varying DA levels in the striatum of intact (middle) and DA-depleted mice (right).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68041/elife-68041-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Left, diagrams of a closed-arm plus maze and mouse brain in which DA is unilaterally depleted. Right, Turning bias measured before and after L-DOPA treatment in DA-intact (N = 5, gray) and chronically DA-depleted mice (N = 12, blue; two-way ANOVA lesion x levodopa: F1,30 = 141.3, p=7.1×10−13; DA-intact: p=0.1; DA-depleted: p<1×10−15; all vs. baseline, post-hoc within-group t-tests with Bonferroni correction). (B) Mean Ca2+ transient frequency per dSPN (left) and iSPN (middle) active in chronically lesioned mice before and after elevating striatal DA with L-DOPA (dSPN: p=0.10; iSPN: p=4.9×10−4; all vs. baseline, Wilcoxon signed rank). Right: frequency bias index (p=0.02 vs. baseline, Wilcoxon signed rank). Mean ± s.e.m are overlaid for each group. (C) Mean Ca2+ transient frequency per dSPN (left) and iSPN (middle) active in chronically lesioned mice after systemic administration of D1/2R agonists (dSPNs, 1 mg/kg: p=0.43, 3 mg/kg: p=0.44; iSPNs, 3 mg/kg: p=0.22; all vs. vehicle; Mann-Whitney) and L-DOPA (dSPNs: p=0.80; iSPNs: p=0.34; all vs. vehicle; Mann-Whitney) normalized to pre-drug baseline. Right: Bias in Ca2+ transient frequency between pathways (3 mg/kg: p=0.13; L-DOPA: p=0.08; all vs. vehicle, Mann-Whitney).
 
 These results indicate that L-DOPA exerts a stronger positive modulatory influence on dSPNs in DA-depleted mice than D1/2R agonists do in DA-intact mice, leading to excessive recruitment of dSPNs not normally associated with forward locomotion. This discrepancy may stem from changes in how striatal circuits respond to DA following SNc neuron loss, or from differences in the pharmacological potency of these treatments. Indeed, L-DOPA’s ability to elevate extracellular DA varies strongly with DA axonal density, producing disproportionately high and prolonged increases in DA in the striatum of DA-lesioned animals (Abercrombie et al., 1990). To distinguish between these possibilities, we directly compared the effects of L-DOPA and D1/2R agonists on SPN ensembles in a subset of DA-depleted mice locomoting on motorized treadmills. D1/2R agonists no longer provoked a decline in the number of active dSPNs in chronically lesioned mice as they did in DA-intact mice, even at high concentrations. Instead, forward locomotion recruited twice as many dSPNs as it did pre-lesion (Figure 6E). This expansion was comparable in magnitude to L-DOPA’s, indicating that dSPNs ensembles in DA-depleted mice respond differently to DA than in intact-mice. D1/2R agonists also mimicked the effects of L-DOPA on iSPNs, cutting the number of active cells in half (Figure 6F). At all doses tested, D1/2R stimulation evoked a strong imbalance in favor of the direct pathway (Figure 6G). These data therefore indicate that DA signaling favors the recruitment of dSPNs relative to iSPNs in both DA-intact and DA-depleted mice, but that the underlying population dynamics differ profoundly (Figure 6H). Although dSPN ensembles are kept small with increasing DA under basal conditions, they are unrestrained in chronically lesioned mice and susceptible to dramatic expansion. At the same time, DA signaling depresses the size of iSPN ensembles, even at low levels.
 
@@ -100,42 +160,283 @@ Taken together, our results expand classic rate-based models of DA modulation by
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-Tg(Drd1a-tdTomato)6Calak/J; Drd1atdTomato</td>
+      <td>Jackson Laboratory (Ade et al., 2011)</td>
+      <td>RRID:IMSR_JAX:016204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tg(Adora2a-cre)KG139Gsat; Adora2aCre</td>
+      <td>GENSAT (Gong et al., 2007)</td>
+      <td>RRID:MMRRC_036158-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tg(Drd1a-cre)EY217Gsat; Drd1aCre</td>
+      <td>GENSAT (Gong et al., 2007)</td>
+      <td>RRID:MMRRC_030778-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6;129S6-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J; Ai14</td>
+      <td>Jackson Laboratory (Madisen et al., 2010)</td>
+      <td>RRID:IMSR_JAX:007908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.129S-Chattm1(cre)Lowl/MwarJ; ChATCre</td>
+      <td>Jackson Laboratory (Rossi et al., 2011)</td>
+      <td>RRID:IMSR_JAX:031661</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Tyrosine Hydroxylase</td>
+      <td>Immunostar</td>
+      <td>Cat#: 22941 RRID:AB_572268</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-Dopamine Transporter</td>
+      <td>Millipore</td>
+      <td>Cat#: MAB369 RRID:AB_2190413</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG Alexa Fluor 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A21236 RRID:AB_2535805</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rat IgG Alexa Fluor 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A21247 RRID:AB_141778</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-FLEX-tdTomato</td>
+      <td>Addgene</td>
+      <td>Cat#: 28306-AAV1 RRID:Addgene_28306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-Syn-GCaMP6f-WPRE-SV40</td>
+      <td>Addgene (Chen et al., 2013)</td>
+      <td>Cat#: 100837-AAV1 RRID:Addgene_100837</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn-DA2m</td>
+      <td>Sun et al., 2020</td>
+      <td>Kindly provided by Yulong Li</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Henry Schein</td>
+      <td>Cat #: 1396050</td>
+      <td>4 mg/kg, I.P.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ketoprofen</td>
+      <td>Henry Schein</td>
+      <td>Cat #: 1310364</td>
+      <td>10 mg/kg, S.C.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Desipramine</td>
+      <td>Tocris</td>
+      <td>Cat #: 3067</td>
+      <td>25 mg/kg, I.P.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pargyline</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: P8013</td>
+      <td>5 mg/kg, I.P.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-OHDA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: H4381</td>
+      <td>3 μg, I.C.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SCH23390</td>
+      <td>Fisher Scientific</td>
+      <td>Cat #: 09-251-0</td>
+      <td>0.2 mg/kg, I.P.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nomifensine</td>
+      <td>Tocris</td>
+      <td>Cat #: 1992</td>
+      <td>10 mg/kg, I.P.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S(-)Raclopride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: R121</td>
+      <td>1 mg/kg, I.P.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(-)Quinpirole</td>
+      <td>Tocris</td>
+      <td>Cat #: 1061</td>
+      <td>0.3–6 mg/kg, I.P.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SKF81297</td>
+      <td>Tocris</td>
+      <td>Cat #: 1447</td>
+      <td>0.3–6 mg/kg, I.P.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-DOPA</td>
+      <td>Tocris</td>
+      <td>Cat #: 3788</td>
+      <td>10 mg/kg, I.P.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benserazide hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: B7283</td>
+      <td>12 mg/kg, I.P.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ScanImage 5</td>
+      <td>Vidrio Technologies (Pologruto et al., 2003)</td>
+      <td>RRID:SCR_014307</td>
+      <td>Used for two-photon image acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom MATLAB code</td>
+      <td>https://github.com/HarveyLab/Acquisition2P_class.git (Driscoll et al., 2017; Chettih, 2019)</td>
+      <td></td>
+      <td>Used for two-photon image processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom MATLAB code</td>
+      <td>https://github.com/TritschLab/TLab-2P-analysis</td>
+      <td></td>
+      <td>Used for two-photon image analyses</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Wavesurfer</td>
+      <td>HHMI Janelia Research Campus</td>
+      <td>https://wavesurfer.janelia.org/</td>
+      <td>Used to register behavior and imaging data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td>Used for image processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8.0</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Used for plotting and statistical analyses</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mounting medium with DAPI</td>
+      <td>Fisher Scientific</td>
+      <td>Cat #: P36931</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All procedures were performed in accordance with protocols approved by the NYU Langone Health Institutional Animal Care and Use Committee (protocol # 170123). Mice were housed in group before surgery and singly after surgery under a reverse 12 hr light-dark cycle (dark from 10 a.m. to 10 p.m.) with ad libitum access to food and water. Drd1atdTomato transgenic mice (stock #: 016204) and ChATCre knock-in mice (stock #: 031661) were purchased from The Jackson Laboratory and bred with C57BL/6J wild type mice (stock #: 000664). Transgenic mice expressing Cre selectively in iSPNs (Adora2aCre; KG139) or dSPNs (Drd1aCre; EY217) (Gong et al., 2007) were generously provided by Chip Gerfen (NIH) maintained on a C57BL/6J background. Control experiments in Figure 1—figure supplement 2 were performed using either offspring of Adora2aCre mice bred to a tdTomato reporter (Ai14; The Jackson Laboratory, Stock #: 007908; Madisen et al., 2010) or Adora2aCre mice injected in dorsolateral striatum with an adeno-associated virus (AAV) encoding Cre-dependent tdTomato (Addgene; #28306-AAV1). Experiments were carried out using both male and female mice heterozygous for all transgenes at 8–24 weeks of age.
 
-## Surgery
+### Surgery
 
 Mice were administered dexamethasone (4 mg/kg, intraperitoneal) 1–2 hr prior to surgery. They were then anaesthetized with isoflurane, placed in a stereotaxic apparatus (Kopf Instruments) on a heating blanket (Harvard Apparatus) and administered Ketoprofen (10 mg/kg, subcutaneous). The scalp was shaved and cleaned with ethanol and iodine solutions before exposing the skull. A custom titanium headpost was implanted over lambda using C and B metabond (Parkell) to allow head fixation. To achieve widespread viral expression of GCaMP6f in striatum, 100 nl of AAV1-Syn-GCaMP6f-WPRE-SV40 was injected alone or along with AAV1-FLEX-tdTomato 1.7 mm below dura at a rate of 100 nl/min (KD Scientific) into the right dorsolateral striatum at four locations (anterior/lateral from bregma, in mm): 0.7/1.7; 0.7/2.3; 1.3/1.7, and 1.3/2.3. Injection pipettes were left in place for 5 min before removal. A 3 mm craniotomy was then drilled (centered at 1.0 mm anterior and 2.0 mm lateral from bregma) and cortical tissue was aspirated until the corpus callosum lying above the striatum was exposed, as described previously (Howe and Dombeck, 2016; Bloem et al., 2017). A custom nine gauge thin-walled stainless-steel cannula (Microgroup; 2.3 mm in height) sealed at one end with a 3 mm glass coverslip (Warner Instruments) using optical glue (Norland #71) was placed above the striatum and cemented to the skull using C and B metabond (see Figure 1—figure supplement 1A,B). For fiber photometry imaging, 200 nl of AAV1-Syn-FLEX-GCaMP6f-WPRE-SV40 or AAV9-hSyn-DA2m (kindly provided by Dr. Yulong Li) was injected 2.2 mm below dura into the right dorsolateral striatum (anterior/lateral from bregma: 1.0/2.0) and a 400 μm optic fiber (Thorlabs, FP400URT) housed in a ceramic ferrule (Thorlabs, CFLC440-10) was implanted 0.2 mm above the injection site using C and B metabond. Mice were allowed to recover in their cage for 2 weeks before head-fixation habituation, treadmill training and imaging.
 
-## 6-OHDA lesions
+### 6-OHDA lesions
 
 For experiments characterizing the effects of SNc neuron loss on striatal activity, a second stereotaxic surgery was performed under isoflurane anesthesia after baseline imaging sessions. Desipramine (25 mg/kg) and pargyline (5 mg/kg) were administered intraperitoneally prior to surgery to increase the selectivity and efficacy of 6-OHDA lesions (Thiele et al., 2012). A small craniotomy was performed above the SNc ipsilateral to the imaged striatum (−3.1 mm posterior from bregma, 1.3 mm lateral) and 3 μg of 6-OHDA (total volume: 200 nl) was injected in SNc (4.2 mm below dura) at a rate ~ 100 nl/min. Sham-lesioned mice were treated identically except that 6-OHDA was omitted from the injected solution (0.2% ascorbic acid in 0.9% sterile NaCl solution). Mice were randomly assigned to each group. To evaluate motor impairments, mice were placed in a plus maze consisting of four identical closed arms (length x width x wall height: 45 cm × 7 cm × 15 cm) at 90° to each other and monitored from above with a near infrared camera (Basler; acA2000-165um) for 10 min. All arms of the maze were closed (i.e. featured 15 cm-tall walls) to avoid anxiety-related behaviors. The number of ipsiversive, contraversive and straight choices upon reaching the center of the maze were automatically quantified in MATLAB (Mathworks) and verified visually. Data were expressed as a turning bias index, defined as the difference between ipsiversive and contraversive turns, divided by the total number of turns.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were deeply anesthetized with isoflurane and perfused transcardially with 4% paraformaldehyde in 0.1 M sodium phosphate buffer. Brains were post-fixed for 1–3 days, sectioned coronally (50–100 μm in thickness) using a vibratome (Leica; VT1000S) and processed for immunofluorescence staining for tyrosine hydroxylase (Immunostar; 22941, 1:1000) and dopamine transporter (Millipore; MAB369, 1:1000) using standard methods. Brain sections were mounted on superfrost slides and coverslipped with ProLong antifade reagent with DAPI (Molecular Probes). Endogenous tdTomato and GCaMP6 fluorescence were not immuno-enhanced. Whole sections were imaged with an Olympus VS120 slide scanning microscope and high-resolution images of regions of interest were subsequently acquired with a Zeiss LSM 800 confocal microscope. TH and DAT immunofluorescence were quantified in ImageJ (NIH) by measuring mean pixel intensity in similarly sized regions of interest in VTA, SNc, dorsal striatum and ventral striatum in both intact and lesioned hemispheres. After subtracting background signal from adjacent unstained brain regions, fluorescence intensity values in the lesioned hemisphere were expressed as a percentage of values measured on the intact side. Three measurements were obtained from each region of interest along the anterior-posterior axis and averaged together for each mouse.
 
-## Reagents
+### Reagents
 
 Drugs (all from Tocris, unless specified otherwise) were reconstituted and stored according to the manufacturers’ recommendations. 6-Hydroxydopamine (6-OHDA; Sigma-Aldrich) was dissolved freshly into sterile 0.9% NaCl and 0.2% ascorbic acid immediately prior to administration to minimize oxidation. Working concentration aliquots of desipramine (25 mg/kg), pargyline (Sigma-Aldrich; 5 mg/kg), S(-)raclopride (Sigma-Aldrich; 1 mg/kg), SCH23390 (Fisher Scientific; 0.2 mg/kg), nomifensine (10 mg/kg), (-)quinpirole (0.3–6 mg/kg), SKF81297 (0.3–6 mg/kg), and L-DOPA (10 mg/kg) were prepared daily in sterile physiological saline and administered intraperitoneally at minimum 10 min prior to experimentation. L-DOPA was co-administered along with the peripheral DOPA decarboxylase inhibitor benserazide hydrochloride (Sigma-Aldrich, 12 mg/kg).
 
-## Two-photon imaging
+### Two-photon imaging
 
 Imaging was performed through a 20X long working-distance air objective (Edmund Optics; #58373) on a galvo-resonant scanning microscope (Thorlabs; Bergamo-II) equipped with GaAsP photomultiplier tubes and under the control of ScanImage five software (Vidrio Technologies). GCaMP6f and tdTomato were excited a using a pulsed dispersion-compensated Ti:Sapphire laser (Coherent; Chameleon Vision II) tuned to 940 nm (40–80 mW at the sample). Mice were head-fixed above a freely rotating circular treadmill consisting of a 6’ plastic saucer (Ware Manufacturing) mounted on a rotary encoder (US Digital, Serial #: MA3-A10-125-B). Motorized, fixed-distance and velocity trials were conducted by connecting a integrated servo motor (Teknic Clearpath: CPM-MCVC-2310S-RQN) to the treadmill to impose 10 s-long fixed-speed (10 cm/s) running bouts every 20 s. Water-rewards (~0.1 ml) were delivered through a spout controlled by an inaudible solenoid (The Lee Company, LHQA0531220H) at 60 s intervals between motorized running bouts. Mouse posture was simultaneously monitored using a near infrared camera (Basler; acA2000-165um), with each video frame triggered by the two-photon imaging frame clock. The latter was recorded in Wavesurfer (https://www.janelia.org/open-science/wavesurfer) to synchronize imaging and behavioral data. Striatal fields of view (500 × 500 μm; 1–3 per mouse) near the center of the imaging window were selected based on the expression of GCaMP6f and tdTomato, and were continuously imaged with a resolution of 512 × 512 pixels at 30 Hz frame rate for a minimum of 20 min each. Bleaching of GCaMP6f was negligible. The same fields of view were imaged multiple times on non-consecutive days using alignment based on blood vessels and a reference image.
 
-## Fiber photometry
+### Fiber photometry
 
 Excitation light (Thorlabs; M470F3) was passed through a fluorescence mini-cube (Doric, FMC5-E1-460/490) and 400 μm fiber optic patch cord connected to the mouse via a zirconia sleeve. Emission was collected through the same patch cord and mini-cube to a femtowatt photoreceiver (Newport, 2151). Photometry signals were digitized at 2 kHz using a National Instruments acquisition board (USB-6343), recorded with Wavesurfer, and low-pass filtered and down-sampled to 30 Hz in MATLAB (Mathworks).
 
-## Image processing
+### Image processing
 
 Time series of two-photon images were concatenated and motion corrected, and Ca2+ fluorescence traces were extracted from individual neurons with minimal neuropil contamination using a custom MATLAB (Mathworks) pipeline described in detail in Driscoll et al., 2017 and kindly made available by Chris Harvey (Harvard Medical School; https://github.com/HarveyLab/Acquisition2P_class.git; Chettih, 2019). Briefly, putative cell bodies were selected manually in the mean intensity image. Highly correlated and spatially-contiguous fluorescence sources within 30 μm of the selected pixel were then identified automatically based on the correlation structure of the pixel time series to delineate the spatial footprint of active neuronal processes. Fluorescence time series were computed by averaging across all pixels within that footprint and were manually classified into cell bodies, processes (not analyzed), and background (neuropil). This approach is advantageous over manually defined regions of interest as it segregates dendritic processes that overlap with somata if they exhibit distinct fluorescence time series. Each putative cell was paired with a neighboring background source, which was subtracted from the cell body’s fluorescence time series. Segmentation and neuropil subtraction were manually verified for each cell and adjusted when necessary using a graphical user interface to obtain clean neuropil-subtracted fluorescence traces without apparent negative-going transients. GCamp6f-labelled cell bodies were manually labeled as dSPNs or iSPNs based on tdTomato fluorescence in the mean intensity image in Drd1atdTomato and Adora2atdTomato mice, respectively, and tdTomato-negative cells were either labeled as putative iSPNs (in in Drd1atdTomato mice), putative dSPNs (Adora2atdTomato mice), or putative interneurons based on cell morphology, baseline Ca2+ fluorescence intensity and Ca2+ transient kinetics (Figure 1 and Figure 1—figure supplement 2) by an experimenter blind to experimental conditions.
 
-## Image and behavior analyses
+### Image and behavior analyses
 
 Quantification of imaging and behavioral data was carried out in MATLAB using custom-code available online (https://github.com/TritschLab/TLab-2P-analysis; TritschLab, 2021; copy archived at swh:1:rev:a32d12e2dd10eb0ff7510fbbdc83aea7cf3c7356). Ca2+ transients were detected using the built-in MATLAB findpeaks() function on each cell’s neuropil-subtracted fluorescence trace smoothed with a 150 ms window if they exhibited a minimum peak height and minimum peak prominence of five standard deviations greater than baseline, and a minimum width of 140 ms at half peak prominence. These criteria are intentionally stringent so as to exclude events not clearly resolved from baseline fluorescence at the cost of underestimating Ca2+ transient frequency per SPN. All imaged neurons displaying at minimum one Ca2+ transient were deemed active. Individual fields of view were only selected for longitudinal imaging and quantification if at least five active dSPNs and five active iSPNs were observed at baseline in self-initiated and motorized locomotor trials, and if mice traveled at minimum five meters in self-initiated trials to ensure adequate estimation of SPN ensemble size and mean SPN Ca2+ transient frequency. For each imaging session and field of view (FOV), we report the percentage of dSPNs and iSPNs that display Ca2+ transients (i.e. active ensemble size), the frequency of Ca2+ transients recorded per active dSPNs or iSPNs while moving or immobile averaged across each FOV, and the mean amplitude of Ca2+ transients recorded in all active dSPNs or iSPNs averaged for each FOV. Active ensemble size is calculated as the percentage of all imaged dSPNs or iSPNs in a given FOV that display Ca2+ transients over the course of an imaging session. Activity in dSPNs and iSPNs was compared for each imaging session and FOV by computing a bias index, consisting of the difference in ensemble size, mean Ca2+ transient frequency or amplitude between dSPNs and iSPNs, divided by their sum. Treadmill velocity was extracted from positional information provided by the rotary encoder, down-sampled to 30 Hz and aligned to the two-photon imaging frame rate. Immobility is defined as any period of time beginning at least 0.5 s after treadmill velocity decreases below 0.2 cm/s, lasting at minimum 4 s, and ending 0.5 s before treadmill velocity exceeds 0.2 cm/s again and for which no postural movement is detected using the infrared camera. Movement bouts are defined as any period of time when absolute treadmill velocity exceeds 0.4 cm/s for a minimum of 4 s, and is preceded and followed by 4 s of immobility. Movement onsets and offsets are the first and last time points, respectively, at least two standard deviations away from treadmill velocity measured while immobile. To relate Ca2+ transient frequency to treadmill velocity, we recorded the instantaneous treadmill velocity at each Ca2+ transient onset and divided the total number of Ca2+ transients per velocity (binned at 0.4 cm/s) per SPN by the amount of time spent by a mouse at that velocity over the course of an imaging session. To relate the percentage of active SPNs to velocity, we averaged treadmill velocity in 200 ms bins, determined the fraction of all imaged dSPNs or iSPNs active within each bin and calculated the mean percentage of active dSPNs and iSPNs at different treadmill speeds (binned to 0.4 cm/s). To align Ca2+ transient frequency to movement onset/offset, we calculated the mean number of Ca2+ transients imaged per FOV per 200 ms-long bin around all locomotor bout onsets/offsets divided by the total number of active SPNs and bin duration.
 
-## Statistical analyses
+### Statistical analyses
 
 For each experiment, data (reported in text and figures as mean ± s.e.m) were collected at minimum from two separate cohorts of mice (biological replicates) and were compared in Prism 8 (Graphpad) using non-parametric Mann-Whitney U test for independent groups and Wilcoxon signed-rank test for matched samples, and Two-way ANOVAs (mixed-effect model) for multiple comparisons, as indicated in text and figure legends. Significant interactions were followed-up with within-group t-tests corrected for multiple comparisons (Bonferroni) between baseline and test data. p Values smaller than 0.05 were considered statistically significant and assigned the following nomenclature in Figures: *p<0.05, **p<0.01, ***p<0.005 and ****p<0.001. Reported n values represent the number of fields of view imaged from N mice.

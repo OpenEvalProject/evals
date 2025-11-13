@@ -27,7 +27,7 @@ As such, the present study examined how altering the properties of visual inform
 
 ## Results
 
-## Stretch reflex modulation by visual rotation in visually-guided reaching
+### Stretch reflex modulation by visual rotation in visually-guided reaching
 
 In the first experiment, we examined whether distortion of visual feedback alters the stretch reflex gain by applying visual rotations. Participants performed visually-guided wrist flexion, where they moved a cursor representing their hand position toward a visual target (Figure 1A). In each experimental block, a particular angle rotation (0°, 45°, 90°, 135°, or 180°) was introduced to the movement of the visual cursor (Figure 1B). Importantly, locations of the start and the target were also rotated, so that the required hand movements (wrist flexion) were identical across the blocks.
 
@@ -37,11 +37,35 @@ In the first experiment, we examined whether distortion of visual feedback alter
 
 To characterize the effect of visual rotation on the stretch reflex in the flexor (agonist) muscle, a mechanical perturbation (MP) was applied at the wrist joint in the extension direction during wrist flexion movement (Figure 2A) for participants in the Agonist group (n = 18). Importantly, variabilities of the endpoint locations of unperturbed trials significantly increased in the large angle rotations (135° and 180°, p<0.05 by the post-hoc comparison after one-way ANOVA with p=3.65 × 10−5, F(4, 17)=7.67, partial η2 = 0.31) as shown in Figure 2B, although averaged movement profiles (movement durations, endpoint biases, and peak velocities) of unperturbed trials did not differ significantly from baseline (0°) by adding visual rotations (Figure 2—figure supplement 1A - C). We also confirmed that participants were correctly attending to the cursor movements, by checking correctly shifted movement endpoints in the catch trials (see Figure 2—figure supplement 1D) and short reaction times (198 ± 16.1 ms) to the cursor shift in the catch trials of all rotation conditions. Figure 2C shows temporal patterns of the wrist flexor muscle activities (rEMG) in three visual rotation conditions of 0°, 90°, and 180°. The rEMGs clearly increased around 30–100 ms after the perturbation onset in all three conditions, but peak amplitudes look different. To characterize the stretch reflex modulation, we quantified EMG of short- and long-latency components separately (middle and right panels of Figure 2D). Interestingly, the amplitudes of the long-latency stretch reflex were significantly changed by visual rotation angle (one-way ANOVA, p=5.45 × 10−9, F(4, 17)=24.77, partial η2 = 0.59). Post-hoc analyses indicated that long-latency stretch reflexes in the greater visual rotation (≥90°) conditions were smaller than that in the baseline (0°) condition (p<0.05). This means that the gain of the stretch reflex was reduced by introducing a large directional discrepancy between actual hand and visual cursor motions. This reduction is not explained by any changes in the background level of EMG activity (BGA in left panel of Figure 2D) which did not differ across conditions (p=0.087, F(4, 17)=2.13, partial η2 = 0.11). This modulation pattern for the long-latency stretch reflex was not observed for the short-latency stretch reflex (middle panel of Figure 2D), although we did find that the short latency components of 90° and 135° were significantly smaller than the baseline condition (p<0.05 by post-hoc comparison after ANOVA with p=6.07 × 10−4, F(4, 17)=5.58, partial η2 = 0.25). These results suggest that the reduction of the stretch reflex amplitude more robustly occurred in the long-latency component than the short-latency one.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig2-v1.jpg)
+
+**Figure 2.:** (A) Temporal profiles of wrist movements with different visual feedback (representative participant). All data were aligned at the position where the mechanical perturbations were applied. Dotted curves show unperturbed trials and solid curves show perturbed trials. Blue, magenta, and yellow curves denote trials with the visual rotation of 0°, 90°, and 180°, respectively. (B) Variability of endpoints (standard deviation) of unperturbed trials in each visual rotation condition. (C) Rectified and smoothed EMG patterns of wrist flexor of a representative participant. Each solid curve denotes average of perturbed trials and dotted curve denotes average of unperturbed trials (notation of color is same with A). BGA denotes background EMG activity. (D) The wrist flexor EMG amplitude in each time window (BGA, Short latency, and Long latency) for each VF rotation (see Materials and methods). Thin gray lines represent data of individual participants. Bar graphs and error bars indicate group mean and standard error across participants. Asterisks indicate significant differences (p<0.05). Additional movement profiles of Agonist group in Experiment 1 are available in figure supplement.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Movement durations in all visual rotation conditions. Main effect of visual feedback was not significant (p=0.31, F(4, 17)=1.23, partial η2 = 0.067). (B) Movement endpoint of unperturbed trials in all visual rotation conditions. Main effect of visual feedback was significant (p=0.048, F(4, 17)=2.54, partial η2 = 0.13). Post-hoc test found significant difference between 45° and 90° (p<0.05, shown with asterisk). (C) Peak velocity in all visual rotation conditions. Main effect of visual feedback was not significant (p=0.53, F(4, 17)=0.80, partial η2 = 0.045). (D) Movement endpoint shifts in response to forward (FW) and to backward (BW) cursor shifts in catch trials. In A, B, and C, error bar denotes standard error across participants. In D, error bar of Trial SD denotes the mean of standard deviations of the endpoints in each condition (FW, BW, or Standard for each rotation angle) of all participants.
+
 To examine the effect in the extensor (antagonist) muscle, MP was applied in the flexion direction during the movement (Figure 3A) for participants in the Antagonist group (n = 10). As observed in the Agonist group, endpoint variations significantly increased for the large angle rotations (135° and 180°, p<0.05 by post-hoc comparison after ANOVA with p=1.27 × 10−4, F(4, 9)=7.78, partial η2 = 0.46) from the baseline (Figure 3B) while averaged movement profiles of unperturbed trials were not significantly different among visual rotation conditions (Figure 3—figure supplement 1A - C). Figure 3C shows an example of the temporal patterns of wrist extensor muscle activities (rEMG) in three visual rotation conditions of 0°, 90°, and 180°. As in the Agonist group, significant modulation of the long-latency stretch reflex dependent on the visual rotation angles (one-way ANOVA, p=0.011, F(4, 9)=3.83, partial η2 = 0.30) was observed (Figure 3D). Post-hoc analysis showed significant reduction of the long-latency stretch reflex amplitude from baseline for the greater rotation angles (≥90°). We did not find a significant difference in the level of background muscle activity (p=0.68, F(4, 9)=0.572, partial η2 = 0.060), or short-latency stretch reflex amplitude (p=0.30, F(4, 9)=1.26, partial η2 = 0.12) across the visual rotation angles. In summary, amplitudes of the long-latency stretch reflexes decreased in both the agonist and antagonist muscles, implying that distortions of visual feedback cause reductions in the gain of proprioceptive feedback, regardless of muscle acting direction.
 
-## Effect of visual feedback on online modulation of stretch reflex
+![Figure 3.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig3-v1.jpg)
+
+**Figure 3.:** (A) Temporal profiles of wrist movements with different visual feedback (representative participant). Dotted curves show unperturbed trials and solid curves show perturbed trials. Blue, magenta, and yellow curves denote visual rotations of 0°, 90°, and 180°, respectively. (B) Variability of endpoints (standard deviation) of unperturbed trials in each visual rotation condition. (C) Rectified and smoothed EMG patterns of wrist extensor activity for a representative participant. Each solid curve denotes average of perturbed trials and dotted curve denotes average of unperturbed trials (curve color is the same as in A). BGA denotes background EMG activity. (D) Amplitude of long-latency stretch reflex of the wrist extensor (means ±SE) for each VF rotation. Lines represent individual data. Asterisk indicates significant differences between the pairs of conditions (p<0.05). Additional movement profiles of Antagonist group in Experiment 1 are available in figure supplement.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Movement durations in all visual rotation conditions. Main effect of visual feedback was not significant (p=0.15, F(4, 9)=1.78, partial η2 = 0.16). (B) Movement endpoint of unperturbed trials in all visual rotation conditions. Main effect of visual feedback was not significant (p=0.52, F(4, 9)=0.82, partial η2 = 0.083). (C) Peak velocity in all visual rotation conditions. Main effect of visual feedback was not significant (p=0.47, F(4, 9)=0.90, partial η2 = 0.091). (D) Movement endpoint shifts in response to forward (FW) and to backward (BW) cursor shifts in catch trials. In A, B, and C, error bar denotes standard error across participants. In D, error bar of Trial SD denotes the mean of standard deviations of the endpoints in each condition (FW, BW, or Standard for each rotation angle) of all participants.
+
+### Effect of visual feedback on online modulation of stretch reflex
 
 In the second experiment, we additionally tested the contribution of online visual feedback to the modulation of the stretch reflex. Participants (n = 10) performed the wrist flexion task under normal and mirror-reversed visual feedback (Figure 4A) in separate experimental blocks. In half of the trials randomly selected in each block, the visual cursor was eliminated just after the hand movements started as shown in the bottom panels in Figure 4A. The averaged kinematic (wrist angle) profiles of mechanically unperturbed trials (dashed curves in Figure 4B) did not differ largely by changing the motion direction of visual feedback, or by eliminating the visual cursor. Indeed, a two-way ANOVA comparing peak velocities did not find significant effect of factor for either visual feedback type (p=0.57, F(1, 9)=0.35, partial η2 = 0.037) or cursor visibility (p=0.68, F(1, 9)=0.18, partial η2 = 0.020). As done in the analysis of Experiment 1, we examined the effects of our visual manipulation on the endpoint variability of movements (Figure 4C). A two-way ANOVA with factors of visual feedback type and cursor visibility, showed that both mirror-reversed visual feedback (p=2.8 × 10−3, F(1, 9)=16.51, partial η2 = 0.64) and the elimination of the visual cursor (p=8.5 × 10−6, F(1, 9)=81.13, partial η2 = 0.90) increased the endpoint variability of movements. But the interaction of the two effects was not significant (p=0.10, F(1, 9)=3.26, partial η2 = 0.27).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experimental conditions and visual feedbacks. Normal and Mirror conditions were inflicted in different blocks while Show and Hide conditions appeared randomly within each block. (B) Temporal profiles of wrist movements (representative participant). Data in both perturbed (solid curve) and unperturbed (dotted curve) trials are plotted. (C) Standard deviation of movement endpoints (group mean ±SE). Dark blue: data from show-cursor trials; Light blue: data from hide-cursor trials. Grey lines represent individual data. Two-way ANOVA showed significant effects of both visual feedback types. Interaction between the visual feedback type and the cursor appearance was not significant (p=0.10). (D) Rectified and smoothed EMG patterns of flexor muscle activity evoked by the mechanical perturbation. Solid curves show perturbed trials and dotted curves show unperturbed trials. Data from a representative participant. BGA denotes background EMG activity. (E) Amplitude of long-latency stretch reflexes (group mean ±SE) in Experiment 2. Two-way ANOVA showed significant effects of both visual feedback type (Normal vs Mirror, p=6.0 × 10−4) and cursor appearance (Show vs Hide, p=1.6 × 10−3). Interaction between visual feedback type and cursor appearance was not significant (p=0.41). Additional movement profiles in Experiment 2 are available in figure supplement.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Movement durations in four conditions. Two-way ANOVA found significant effect of factor for visual feedback type (p=0.043, F(1, 9)=5.56, partial η2 = 0.38), cursor visibility (p=0.026, F(1, 9)=7.03, partial η2 = 0.44), and interaction (p=0.0035, F(1, 9)=15.43, partial η2 = 0.63). Asterisks indicate significant simple main effects (p<0.05). (B) Movement endpoints of unperturbed trials in four conditions. Two-way ANOVA found significant effect of factor for visual feedback type (p=2.7 × 10-4, F(1, 9)=33.26, partial η2 = 0.79), cursor visibility (p=9.6 × 10-4, F(1, 9)=23.13, partial η2 = 0.72), and interaction (p=0.0040, F(1, 9)=14.76, partial η2 = 0.62). Asterisks indicate significant simple main effects (p<0.05). (C) Peak velocity in four conditions. (D) Hand velocities just before application of mechanical perturbation in MP trials. (E) The wrist flexor EMG amplitude in the duration of BGA of MP trials. Since the movement states (position and velocity) and background EMG activities just before the MP applications were not significantly different among four conditions, we compared the stretch reflex responses among those conditions in the main analysis.
 
 Figure 4D shows temporal patterns of EMG responses evoked by the MPs in the four conditions of a representative participant. As shown in these patterns, long-latency components were clearly modulated in different conditions, whose average and inter-subject variabilities are shown in Figure 4E. A two-way ANOVA showed a significant main effect of the factor of visual feedback type on the amplitude of the long-latency stretch reflex (Normal vs Mirror, p=6.0 × 10−4, F(1, 9)=26.53, partial η2 = 0.74), indicating that the long-latency stretch reflex was smaller with the mirror-reversed visual feedback than with the normal visual feedback.
 
@@ -51,7 +75,15 @@ In the above analyses of Experiments 1 and 2, we consistently observed that the 
 
 Theoretically, uncertainty of online state estimation gradually increases during movement for a certain duration after elimination of visual feedback (Wolpert et al., 1995). Therefore, to further examine our hypothesis, we varied the duration of cursor elimination in Experiment 3 (n = 10). As depicted in Figure 5A, in the baseline visual feedback condition (Show), the visual cursor was shown throughout the wrist flexion movement. In the other three cursor-elimination conditions (Short-hide, Middle-hide, and Long-hide. See Materials and methods for details), the visual cursor disappeared when the hand passed a certain location. Although movement durations and speeds were not identical among participants (Figure 5—figure supplement 1A and C), actual durations of cursor elimination until the perturbations were appropriately varied among the three hide conditions as shown in Figure 5B. As a result, we found a significant increase in endpoint variability of the movements as the duration of cursor elimination became longer (Figure 5C, p=1.3 × 10−7, F(3, 9)=23.00, partial η2 = 0.72), which could be due to an increase in the variability of state estimation. Note that we did not find a significant effect on movement duration, endpoints, peak velocity, nor BGA (Figure 5—figure supplement 1A - D). Meanwhile, stretch reflex amplitude significantly decreased with longer eliminations of the visual cursor (Figure 5D, p=2.6 × 10−3, F(3, 9)=6.11, partial η2 = 0.40). Importantly, correlation between reflex amplitude and endpoint variability was statistically significant (mean r = −0.62, 1000 bootstrap 95% CI [−0.830.33]). This negative relationship is consistent with the aforementioned interpretation, namely that stretch reflex gains are tuned in a manner, which depends on the certainty of the hand state estimation, which in turn utilizes online visual feedback.
 
-## Anti-reaction attenuates quick visuomotor response but not stretch reflex
+![Figure 5.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic diagram of the experimental task. The visual cursor disappeared (shown as dotted curves in the right panels) after passing one of three different locations in the test conditions, while the cursor was displayed throughout the trial in the baseline condition (Show). Mechanical perturbations were applied at a constant position in all conditions, indicated by a short bar on the movement paths. (B) The duration of the elimination of visual cursor before the perturbation onset in each type of trial. (C) Standard deviation of movement endpoints in unperturbed trials. (D) Amplitude of long-latency stretch reflexes. In panel B, C, and D, lines represent individual data, bar graphs and error bars indicate group mean and standard error, and solid horizontal bars indicate significant differences between corresponding pairs (p<0.05). Additional movement profiles in Experiment 3 are available in figure supplement.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Movement durations in four conditions. Main effect of cursor elimination was not significant (p=0.052, F(4, 9)=2.93, partial η2 = 0.25). (B) Movement endpoints of unperturbed trials in four conditions. Main effect of cursor elimination was not significant (p=0.097, F(4, 9)=2.32, partial η2 = 0.21). (C) Peak velocity in four conditions. Main effect of cursor elimination was not significant (p=0.16, F(4, 9)=1.84, partial η2 = 0.17). (D) The wrist flexor EMG amplitude in the duration of BGA. Main effect of cursor elimination was not significant (p=0.055, F(4, 9)=2.86, partial η2 = 0.24).
+
+### Anti-reaction attenuates quick visuomotor response but not stretch reflex
 
 In the above experiment, we examined the effects of distortion and elimination of visual feedback on the stretch reflex gain. While we hypothesized that uncertainty of multimodal state estimates causes changes in the reflex gain, another possible explanation is that the visual manipulation induces a ‘general inhibition’ of quick sensorimotor control (Beritov, 1968). If this is the case, decreases in response amplitude should not be specific to the visuomotor reflex, but may instead widely affect sensorimotor gains, including the proprioceptive reflex. Therefore, in the fourth experiment we examined whether gain reductions of quick visuomotor responses are always accompanied by gain reductions of the stretch reflex. To separately create similar complexities of hand-state dependent and hand-state independent visuomotor tasks, we used mirror-reversal and anti-reaction conditions. Participants (n = 8) performed wrist flexion toward the target as in the previous experiments (Baseline in Figure 6). They were additionally required to correct their hand movements in response to sudden target jumps (Forward/Backward in Figure 6) in order to evaluate reflexive visuomotor responses evoked by target jumps as well as stretch reflex responses. The Pro/Anti-reaction session (Figure 6A) tested the effect of the anti-reaction task on these responses, and the Normal/Mirror vision session (Figure 6B) tested the effects of mirror-reversal of visual feedback on these responses.
 
@@ -61,11 +93,31 @@ In the above experiment, we examined the effects of distortion and elimination o
 
 Figure 7A shows the temporal patterns of hand accelerations (top panels) and EMG (Flexor: middle panels; Extensor: bottom panels) of a particular participant in the Pro and Anti tasks. The hand acceleration patterns diverged around 200 ms after the target jump (top left panel). As reported in previous studies (Day and Lyon, 2000; Franklin and Wolpert, 2008), acceleration defined response onset (shown as triangles) was clearly later in the Anti task (top right panel) than in the Pro task (top left panel). Similarly, the EMG response was seen around 120 ms after the target jump in the Pro task, while retardation of flexor and extensor response onset was observed in the Anti task.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig7-v1.jpg)
+
+**Figure 7.:** (A) Pro/Anti-reaction session (representative participant). All data were aligned to the onset timing of the target jump. Gray solid line: baseline; Dashed line: Forward target jump; Dash-dot line: Backward target jump. Open triangle denotes response latency estimated from each type of data (see Materials and methods). Grey shaded areas show the time window for quantifying quick visuomotor response defined from the reaction latencies of all participants (115–175 ms, see Results). Response latencies for target jump in Pro/Anti-reaction sessions are available in figure supplement. (B) Normal/Mirror session (representative participant). Regardless of visual feedback type (Normal/Mirror), forward target jumps required more flexing correction then backward jumps required extending correction. All notations are same as in A. Group data of the response latency are available in figure supplement.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Each line is an individual participant’s data. Bars are the group mean. The response latency of acceleration was 165.0 ± 4.2 ms (group mean ±SE) for Pro and 255.8 ± 9.1 ms for Anti. Similarly, the response latency of flexor EMG was 137.5 ± 7.3 ms for Pro and 234.2 ± 17.2 ms for Anti, and those obtained from extensor EMG were 146.4 ± 15.0 ms for Pro and 221.3 ± 14.9 ms for Anti.
+
 We calculated group mean and individual trends of the response latency trigged by target jump for the Pro and Anti tasks (Figure 7—figure supplement 1). Since the shortest response latency of EMG among all participants was 120.0 ms for Pro and 180.0 ms for Anti, we calculated the mean EMG activities observed in a time window of 115–175 ms as a measure of the reflexive visuomotor muscle responses (v-EMG) in the analyses below.
 
 Figure 7B shows an example of hand accelerations (top panels) and EMG (Flexor: middle panels; Extensor: bottom panels) for target jumps and for no target-jump (baseline) in the Normal and Mirror blocks. In the Normal blocks, flexor muscle activity to forward target jump clearly increased in the time window for characterizing a visuomotor reflex (shaded time range). Similarly, increases in the activity of the extensor muscle for the backward target jump in the Normal blocks were found in this time window. Those flexor and extensor activities produced positive and negative changes in acceleration respectively, which resulted in quick correction of hand motion. In contrast, in the Mirror blocks, both flexor and extensor muscle activities started to change after that time window, according to the direction of the target jump.
 
 To examine the condition dependency of the reflexive visuomotor muscle responses (v-EMG) quantitatively, we calculated the differences between v-EMG amplitudes of forward and backward target jump trials (Δv-EMG). Figure 8A shows the group mean of Δv-EMG in Normal/Mirror and in Pro/Anti-reaction sessions. Note that movement profiles are shown in Figure 8—figure supplement 1. Paired t-test showed a significant reduction of flexor Δv-EMG (p=0.013, t(7) = 3.31, d = 1.6) in the Mirror blocks compared to that in the Normal blocks. Similarly, flexor Δv-EMG was significantly smaller in the Anti-reaction block than in the Pro-reaction block (p=0.0088, t(7) = 3.60, d = 2.3). Compatible results were also obtained for the extensor muscle (Figure 8—figure supplement 2). These results indicate that quick visuomotor reaction (reflexive visuomotor response) could not be generated (i.e., was almost completely eliminated) in Mirror and Anti-reaction blocks.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig8-v1.jpg)
+
+**Figure 8.:** (A) Mean flexor Δv-EMG amplitudes, obtained by (v-EMG for forward correction) − v-EMG for backward correction). Δv-EMG in Pro-reaction condition was greater than that in Anti-reaction condition. Δv-EMG in Normal visual feedback condition was greater than that in Mirror condition. (B) Mean flexor long-latency stretch reflex amplitudes induced by mechanical perturbation. While a difference in stretch reflex was not found between Pro- and Anti-reaction conditions, the stretch reflex in the Normal condition was greater than that in the Mirror condition. In all graphs, error bars indicate standard error, and thin gray lines represent individual data. Asterisks indicate significant differences. Additional movement profiles in Experiment 4 are available in Figure 8—figure supplement 1, and reflexive muscle reactions (Extensor) to target jump in Pro/Anti-reaction and in Normal/Mirror sessions are available in Figure 8—figure supplement 2.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Movement durations in Pro/Anti-reaction and Normal/Mirror sessions. Values were not significantly different between Pro and Anti block (p=0.80, t(7) = 0.27, d = 0.022) nor between Normal and Mirror blocks (p=0.34, t(7) = 1.03, d = 0.23). (B) Movement endpoints of baseline trials (no target jump and no MP) in these sessions. A significant difference was not found between Pro and Anti blocks (p=0.46, t(7) = 0.78, d = 0.28), but was found between Normal and Mirror blocks (p=0.010, t(7) = 3.48, d = 1.8). (C) Standard deviation (SD) of movement endpoints in baseline trials in these sessions. The SD of movement endpoints was not different between Pro and Anti blocks (p=0.83, t(7) = 0.23, d = 0.13), but it was significantly larger in Mirror block than Normal block (p=0.037, t(7) = 2.56, d = 1.1). (D) Peak velocities in these sessions. Peak velocities were not significantly different between Pro and Anti block (p=0.28, t(7) = 1.18, d = 0.079) nor between Normal and Mirror blocks (p=0.93, t(7) = 0.086, d = 0.020). (E) Hand velocities just before application of MP in the MP trials. The values were not significantly different between Pro and Anti blocks (p=0.82, t(7) = 0.24, d = 0.065) nor between Normal and Mirror blocks (p=0.099, t(7) = 1.90, d = 0.37). (F) The wrist flexor EMG amplitude in the duration of BGA of MP trials. The values were not significantly different between Pro and Anti blocks (p=0.62, t(7) = 0.51, d = 0.053) nor between Normal and Mirror blocks (p=0.16, t(7) = 1.58, d = 0.20). Since the movement states (position and velocity) and background EMG activities just before application of MP were not significantly different between the two conditions in each session, we compared the stretch reflex responses in the main analysis.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/52380/elife-52380-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Mean extensor Δv-EMG amplitudes, obtained by (v-EMG for backward correction) - (v-EMG for forward correction). Extensor Δv-EMG in Pro-reaction condition was greater than that in Anti-reaction condition (p=0.0053, t(7) = 3.98, d = 2.6). Extensor Δv-EMG in Normal visual feedback condition was greater than that in Mirror condition (p=0.0050, t(7) = 4.03, d = 1.8).
 
 In contrast, we did not find any significant difference in long-latency stretch reflexes between Pro- and Anti-reaction blocks (Left panel of Figure 8B, p=0.78, t(7) = −0.29, d = 0.020) while the stretch reflex was smaller in the Mirror blocks than in the Normal blocks (Right panel in Figure 8B, p=0.0062, t(7) = 3.86, d = 0.66). These results therefore indicate that reductions of visuomotor reflexes are not always accompanied by gain reductions of the stretch reflex.
 
@@ -75,7 +127,7 @@ The above contrast between modulations of reflexive visuomotor and proprioceptiv
 
 The present study assessed the contribution of visual feedback to the gain modulation of the stretch reflexes. The first and second experiments showed that distorted visual hand cursor feedback and elimination of the cursor during movement, in both case significantly reduced the amplitude of long-latency stretch reflexes. The third experiment examined the temporal development of the reflex gain reduction after the cursor elimination, and the forth experiment demonstrated a dissociation between the gain modulations of the quick proprioceptive-motor and visuomotor responses by using different visual feedback conditions. Here we discuss a new aspect of the regulation mechanisms of the stretch reflex.
 
-## Visual stimulus effects on motor correction
+### Visual stimulus effects on motor correction
 
 By using distorted visual feedback (e.g., visual rotation and mirror reversal), several studies have investigated the contribution of the visuomotor transformations to the process of generating a visually evoked corrective response. However, it was unclear whether visual information affects only the visuomotor reflex. The present study demonstrates that the distortion of visual feedback can indeed reduce the gain of the stretch reflex, indicating a contribution of visual information to the tuning of the proprioceptive reflex as well.
 
@@ -83,13 +135,13 @@ Under conditions of mirror-reversed visual feedback, an early response to sudden
 
 Crucially, we also found that altering visual-feedback increased the endpoint variability of movements in the current study. Many visual rotation studies (e.g., Cressman and Henriques, 2009; Mazzoni and Krakauer, 2006; Saijo and Gomi, 2012; Saijo and Gomi, 2010) have focused on the bias effects (endpoint shift) during two dimensional movements, while cursor elimination is well known to increase the variability of endpoints (Elliott, 1988; Proteau, 1992) and the uncertainty of state estimation (Wolpert et al., 1995). In contrast, we did not observe any biasing of movement endpoints in our rotated conditions, relative to the baseline condition. This may be because our one dimensional movement was much simpler than the two dimensional movements used in previous studies. In general, large angles of visual rotation, as well as mirror-reversals, increase reaction times (e.g., Fernandez-Ruiz et al., 2011; Saijo and Gomi, 2010; Telgen et al., 2014). This suggests that these visuomotor transformations are too complex for the nervous system to easily reconcile the mismatch between visual and proprioceptive information. As a result, movement trajectories are expected to become variant by visual feedback distortion, even after some amount of learning. This has been shown in a previous study (Buch et al., 2003). These observations therefore imply that distorted visual feedback could deteriorate the integration of visual and proprioceptive signals, in turn limiting the ability of the system to represent hand states, resulting in large variances of movement endpoints for large visual rotation conditions.
 
-## Stretch reflex modulation
+### Stretch reflex modulation
 
 Previous studies demonstrated context-dependent modulations of the long-latency stretch reflex according to task instruction, action intention, postural state, and external force field, as mentioned in the Introduction. Meanwhile, few studies (Crevecoeur et al., 2016; Mutha et al., 2008; Yang et al., 2011) have investigated how visual information contributes to the modulation of stretch reflexes. Mutha et al. (2008) measured stretch reflexes when goal location changed at the onset of reaching movements, and found increases in the long-latency stretch reflexes toward a new goal location followed by a late (voluntary) increase in muscle activity. This suggests a goal-directed modulation of stretch reflexes by visual information. However, that study did not examine whether visual feedback is utilized in representing limb state for the tuning of stretch reflexes.
 
 To examine this point, we manipulated the properties of visual feedback (visual rotation and removing online cursor) without altering motor-task goals. As shown in the results of Experiments 1 and 2, changes in visual feedback reduced the amplitude of long-latency stretch reflexes without any changes in baseline movements or muscle activity (Figures 2, 3 and 4). These results suggest a new role of visual information, distinct from that used for goal-directed modulation of stretch reflexes. In contrast to our results, Crevecoeur et al. (2016) reported less contribution of visual feedback to stretch reflexes because they did not find any modulation in the corrective response to mechanical perturbations by the elimination of a visual cursor. This dissociation in reflex modulation in the current and previous studies could be due to task differences. In particular, the previous study employed a relatively static regulation task, where participants were required to recover a hand position to the position just before the mechanical perturbation. Since participants could detect the static postures before and after the perturbation using their proprioceptive information, they potentially completed the task by relying less on visual feedback. Meanwhile, in our experimental paradigm, participants should rely on visual information because they had to reach visual targets shown in the external workspace rather than recovering a posture. This relatively high importance of visual feedback present in our experimental task has brought to light the significant impact of vision on the stretch reflex.
 
-## Uncertainty in state estimates affects feedback gain
+### Uncertainty in state estimates affects feedback gain
 
 The stretch reflex modulation shown by our visual manipulation clearly supports the contribution of visual information of hand states to stretch reflex gain tuning. However, the observed reduction of stretch reflex amplitude cannot alone be explained by a simple sensory re-weighting between vision and proprioception. Since the theory of optimal sensory integration predicts a heavier weight on proprioception with uncertainty in visual information (Ernst and Banks, 2002; van Beers et al., 2002), an increase in the stretch reflex gain should be expected. However, we observed a decrease in stretch reflex gain.
 
@@ -99,7 +151,7 @@ Interestingly, Franklin et al. (2012) showed increases rather than decreases in 
 
 Next, we will consider how the reduction of stretch reflex gain can be explained by integrating sensory signals from different modalities. Even if we assume the different processing delays of proprioceptive and visual signals (Crevecoeur et al., 2016), decreases in the stretch reflex would not be predicted. Instead, we need to consider the possibility that feedback gain is regulated according to the reliability of limb states estimated via multimodal integration. For instance, according to the optimal control model, one possibility explaining reflex gain reduction is that the optimal policy calculating optimal feedback gain is modified to evaluate the uncertainty of the state representation. In such a case, the short latency stretch reflex, which might not be involved in high level state estimation, could be altered by top-down regulation, as well as the long latency stretch reflex. The simultaneous reductions in short-latency and long-latency components in Experiment 1 (Agonist group, 90° and 135° conditions) may be partly explained by this hypothesis. Another possibility is that the uncertainty increase in estimated states induces a reduction of the filter gain in the state estimation process, which could lead to a tracking delay in state estimation, resulting in a reduction of the corrective command to a transient perturbation. This possibility was examined by a model for visuomotor response (Izawa and Shadmehr, 2008). By considering the current findings regarding the influence of state uncertainty on the regulation of the proprioceptive-motor response shown in the current study, it seems possible that future studies will be able to extend the computational model to include multimodal integration for reaching movement. In both possibilities, to realize the predefined speed of movement we may need to assume that at least a part of the motor command is generated in a feedforward fashion, as has been examined previously (Bastian, 2006; Kawato, 1999; Sabes, 2000; Saijo and Gomi, 2010; Wolpert et al., 1998).
 
-## Visual effect on stretch reflexes in multiple stages of the motor control hierarchy
+### Visual effect on stretch reflexes in multiple stages of the motor control hierarchy
 
 Additive modulations of the stretch reflex by visual discrepancy and elimination observed in Experiment 2 (Figure 4E) suggest that the stretch reflex is regulated by multiple factors in the motor-control hierarchy. One possible account is that the gain of the stretch reflex is regulated at two different stages of sensorimotor processing: motor planning and online-control. Many previous studies demonstrated that feedback gain is set before starting movement, depending on various contexts (Ahmadi-Pajouh et al., 2012; Evarts and Tanji, 1976). This planned reflex control would occur not only in a preset manner (Bonnard et al., 2004) but also in a time-varying manner (Kimura and Gomi, 2009). In addition to such planned reflex control, the reflex gain could also be updated during movement according to online sensory information (Mutha et al., 2008). Therefore, independent and additive gain control mechanisms could be assumed to exist in the neural processing of both movement planning and online-control.
 
@@ -109,15 +161,15 @@ In both of possible accounts above, the uncertainty of state estimation is an es
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 In total, 48 healthy volunteers (16 males, 32 females; age range 20–49, average 32 ± 9.1) participated in a series of experiments. Out of all the participants, four were tested in three of the experiments, seven were tested in two of the experiments, and the rests were tested in one experiment. Since seven participants out of 35 in Experiment1 could not satisfy a prerequisite of the task performance (See Data collection and analysis for details of the prerequisite), we excluded them from the analysis. All of the volunteers were right-handed. All gave written informed consent to participate in the experiments. All of the experimental protocols were approved (H28-011 and H31-007) by NTT Communication Science Laboratories Ethics Committee.
 
-## Apparatus
+### Apparatus
 
 Participants sat in front of a horizontally set screen with their right hand tightly fixed to a custom-made manipulandum (maximum torque of 7.0 Nm) for wrist joints as shown in Figure 1. The right forearms of the participants were held on an armrest and tightly fastened by a belt. Hand movement was restricted to one degree-of-freedom movement (flexion and extension of wrist joint in a horizontal plane). The manipulandum was controlled by a digital signal processor (iBIS DSP7101A, MTT Co., Tokyo, Japan) at a 2000 Hz control frequency. Vision of the participant’s actual hand was occluded by a screen placed over the hand. Feedback of hand movement was provided by a visual cursor that was displayed on the screen via a projector (K335, Aser Inc, New Taipei City, Taiwan). Visual cursor position was updated as wrist angle changed. The instructed movement duration was 750 ms in all experiments, which was communicated to participants via beeping sounds presented at start of the trial and at the point of expected movement completion. To control movement speed, if the hand reached the middle point of the flexion earlier than 375 ms after trial onset, the trial was discarded and immediately restarted. In addition, if the hand movement stopped later than 750 ms after the start, an alert message was displayed on the screen. Visual and auditory stimuli were controlled via custom made programs using MATLAB (Mathworks Inc, Natick, MA, USA) and Cogent graphics toolbox (developed by John Romaya at the LON at the Wellcome Department of Imaging Neuroscience). A photodiode was placed on the corner of the screen to detect the timings of stimulus changes, and its signal was recorded simultaneously with the other signals.
 
-## Experiment 1
+### Experiment 1
 
 The purpose of the experiment was to examine the effect of distortion of visual feedback on the amplitude of the stretch reflex. In the baseline condition, the visual cursor moved along the x-axis (left-right direction) according to the change in wrist angle, where displacement of the cursor x was calculated as x = -αθ. Here, θ was a wrist flexion angle from straight hand posture, and α (0.44 cm/deg) was the visual feedback gain. The origin of the coordinates was 25 cm away from the position on the screen above the rotation center of the manipulandum.
 
@@ -127,21 +179,199 @@ In order to evoke stretch reflexes, a mechanical perturbation (half sine-wave to
 
 The experimental block consisted of 20 trials (five for no visual perturbation and no mechanical perturbation (N), five for mechanical perturbation (MP), five for forward cursor shift, and five for backward cursor shift. All trials were ordered randomly). All of the five experimental blocks with different visual rotation angles were ordered pseudo-randomly and repeated five times.
 
-## Experiment 2
+### Experiment 2
 
 In this experiment, we examined the contribution of online visual feedback to the tuning of stretch reflexes. For this purpose, we hid the visual cursor in half the trials, in addition to a directional change of visual feedback.
 
 As in Experiment 1, participants (n = 10) were asked to make wrist flexion movements. We prepared two types of experimental blocks where the direction of cursor movement differed (Figure 4A). In one type of block, visual feedback moved in the same direction as actual hand motion, like with the 0° condition in Experiment 1 (Normal block). In another type of block, the direction of cursor movement was mirror-reversed relative to the actual hand movement (Mirror condition), which was nearly equal to the 180° condition in Experiment 1.
 
-In both conditions, hand posture at the start was identical (θ = −22.5°), and three target postures (Standard: Std, θ = 22.5°; Near, θ = 16.5°; and Far, θ = 28.5°) were randomly applied, to prevent participants from performing the movement without visual information. In the Mirror condition, start and target locations were also mirror-reversed so that required hand movements were identical to those in the Normal condition. For half of the trials for each target, the hand cursor was shown throughout the trial (Show trials). In the other half, the hand cursor was hidden just after the detection of movement onset (θ˙ > 30 deg/s) (Hide trials), and reappeared after the stop (θ˙ < 30 deg/s). In the Show and Hide trials for the Std target, the mechanical perturbation (MP) extended the wrist when hand passed a trigger position (θ = 0°) to evoke the stretch reflexes in 40% of trials. In the other 60% of trials for the Std target, MP was not applied (N). Each experimental block consisted of 40 trials (12 Std w/o MP, 8 Std with MP, 10 Near, and 10 Far), half of which were Hide trials. We repeated a pair of Normal and Mirror blocks (order was randomized) six times. The order of all trials in each block was randomly shuffled. Conditions are summarized in Table 1.
+In both conditions, hand posture at the start was identical (θ = −22.5°), and three target postures (Standard: Std, θ = 22.5°; Near, θ = 16.5°; and Far, θ = 28.5°) were randomly applied, to prevent participants from performing the movement without visual information. In the Mirror condition, start and target locations were also mirror-reversed so that required hand movements were identical to those in the Normal condition. For half of the trials for each target, the hand cursor was shown throughout the trial (Show trials). In the other half, the hand cursor was hidden just after the detection of movement onset ($\theta˙$ > 30 deg/s) (Hide trials), and reappeared after the stop ($\theta˙$ < 30 deg/s). In the Show and Hide trials for the Std target, the mechanical perturbation (MP) extended the wrist when hand passed a trigger position (θ = 0°) to evoke the stretch reflexes in 40% of trials. In the other 60% of trials for the Std target, MP was not applied (N). Each experimental block consisted of 40 trials (12 Std w/o MP, 8 Std with MP, 10 Near, and 10 Far), half of which were Hide trials. We repeated a pair of Normal and Mirror blocks (order was randomized) six times. The order of all trials in each block was randomly shuffled. Conditions are summarized in Table 1.
 
-## Experiment 3
+**Table 1.**
+ Trial conditions in Experiment 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Block (Direction)</th>
+      <th>Target</th>
+      <th>Cursor</th>
+      <th>Perturbation</th>
+      <th># of trials</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">Normal</td>
+      <td rowspan="4">Std</td>
+      <td rowspan="2">Show</td>
+      <td>MP</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Hide</td>
+      <td>MP</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Near</td>
+      <td>Show</td>
+      <td>N</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Hide</td>
+      <td>N</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Far</td>
+      <td>Show</td>
+      <td>N</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Hide</td>
+      <td>N</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Mirror</td>
+      <td rowspan="4">Std</td>
+      <td rowspan="2">Show</td>
+      <td>MP</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Hide</td>
+      <td>MP</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Near</td>
+      <td>Show</td>
+      <td>N</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Hide</td>
+      <td>N</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Far</td>
+      <td>Show</td>
+      <td>N</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Hide</td>
+      <td>N</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experiment 3
 
 This experiment was designed to extend the earlier examination of the contribution of online visual feedback to stretch reflex amplitude, by manipulating the duration of cursor elimination. As in the other experiments, participants (n = 10) performed wrist flexion task from a starting point (θ = −22.5°) to a visual target (standard target: Std, θ = 45°), as shown in Figure 5A. In a baseline visual feedback condition (Show), the visual cursor was displayed at a fingertip position throughout the flexion movement. In the other three cursor-elimination conditions (Short-hide, Middle-hide, and Long-hide), the visual cursor disappeared when hand passed a certain location for each condition (+33.8° flexion for Short-hide, +16.9° flexion for Middle-hide, and +1.0° flexion from the starting point for Long-hide) as depicted in Figure 5A and reappeared after the movement stopped to show endpoint position. In randomly selected trials (40% of each condition), the mechanical perturbation (MP) suddenly extended the wrist when the hand reached a constant trigger position (+50.6° flexion from the starting point) to evoke the stretch reflex. In the remaining trials (60%) with a Std target, the mechanical perturbation was not applied (N).
 
 To prevent participants from memorizing target location, we also required them to reach two additional targets (Near target, θ = 39° and Far target, θ = 51°) with Show and Long-hide conditions, in which the mechanical perturbation was not applied (N). One experimental block consisted of 80 trials (10 trials each for Show and the three hide conditions with Std target, 10 trials each for Show and Long-hide with Near target, and 10 trials each for Show and Long-hide with Far target) and was repeated six times. Trial conditions in each block are summarized in Table 2.
 
-## Experiment 4
+**Table 2.**
+ Trial conditions in Experiment 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Target</th>
+      <th>Cursor</th>
+      <th>Perturbation</th>
+      <th># of trials</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">Std</td>
+      <td rowspan="2">Show</td>
+      <td>MP</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Short-hide</td>
+      <td>MP</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Middle-hide</td>
+      <td>MP</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Long-hide</td>
+      <td>MP</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Near</td>
+      <td>Show</td>
+      <td>N</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Long-hide</td>
+      <td>N</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Far</td>
+      <td>Show</td>
+      <td>N</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Long-hide</td>
+      <td>N</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experiment 4
 
 The purpose of this experiment is to examine whether gain modulations of visual and proprioceptive reflexes occur jointly or independently. The experiment consisted of two types of sessions: Pro/Anti-reaction session and Normal/Mirror vision session. The latter session was included again in this experiment so as to compare the reflex modulations of those conditions within the same participants. Each participant (n = 8) performed both of the sessions, and session order was counter-balanced across participants. In each session, we measured both the stretch reflex evoked by mechanical perturbations and the visuomotor responses elicited by target jumps.
 
@@ -151,7 +381,67 @@ The session involving Normal/Mirror blocks was designed to compare visuomotor an
 
 One experimental block consisted of 60 trials (12 baselines, 12 mechanical perturbations, 18 forward jumps, and 18 backward jumps, in random order). In each session, participants performed two types of blocks, two times each, and the whole order of these blocks was randomized. The order of sessions was counter-balanced across participants. All conditions are summarized in Tables 3 and 4.
 
-## Data collection and analysis
+**Table 3.**
+ Session and bock conditions in Experiment 4.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Session</th>
+      <th>Block (randomized in each session)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Pro/Anti</td>
+      <td>Pro-reaction x 2</td>
+    </tr>
+    <tr>
+      <td>Anti-reaction x 2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Normal/Mirror</td>
+      <td>Normal x 2</td>
+    </tr>
+    <tr>
+      <td>Mirror x 2</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Trial conditions in each block in Experiment 4.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>MP/Target jump</th>
+      <th># of trials (randomized in each block)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No (baseline)</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>MP</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Forward jump</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Backward jump</td>
+      <td>18</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data collection and analysis
 
 Hand angle was measured with a rotary encoder (resolution of 0.0055°) attached to the manipulandum and sampled at 500 Hz. Its velocity and acceleration were obtained by calculating the differences between the flexion angles at each sampling frame and applying a low-pass filter (fourth order Butterworth filter, 40 Hz cutoff frequency). To evaluate movement accuracy and duration, start and end of hand movements were estimated for each trial. The start was determined as the point where hand velocity exceeded 5% of its peak, and the end was estimated as the point where the hand velocity became less than 5% of its peak and remained below this value for 300 ms. As an index of movement precision, standard deviation of movement endpoints was calculated.
 
@@ -167,6 +457,6 @@ In Experiment 1, a subset of participants showed a tendency to change their musc
 
 To remove outliers, we discarded trials from the analysis if the time average of the background muscle activity, the long-latency stretch reflex, or the reflexive visuomotor responses deviated by more than two standard deviations from the median of each condition. In addition, unperturbed trials were also discarded if movement duration or endpoint position was more than three times the median absolute deviation away from the median of each condition. In total, 2.2% trials were excluded, and the most trials removed from an individual across all experiments was 4.9%.
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
 All of the experiments and analyses were conducted using a within-subject design. We conducted repeated measures ANOVA to test statistical differences of behavioral data among conditions. Results of Experiment 1 were analyzed by one-way ANOVA with a factor of rotation angle of visual feedback followed by Tukey-HSD test as post-hoc analysis. Results of Experiment 2 were analyzed by two-way repeated measures ANOVA with factors of cursor direction (Normal or Mirror) and cursor visibility (Show or Hide). Results of Experiment 3 were analyzed by one-way ANOVA with a factor of locations of eliminating the visual feedback followed by Tukey-HSD test as post-hoc analysis. Results of Experiment 4 were analyzed by paired t -test to see significant differences between trial types for each session. The number of participants (sample size) was determined by referring to previous studies of stretch reflex modulation (Kimura et al., 2006; Kurtzer et al., 2008). To examine the short latency reflex, a larger number of participants were recruited by referring to a previous study (Weiler et al., 2019).

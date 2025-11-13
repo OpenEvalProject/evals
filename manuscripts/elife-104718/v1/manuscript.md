@@ -20,24 +20,24 @@
 
 ### Affiliations
 
-1. https://ror.org/05ee10k25 Institut de Génétique Humaine, Univ. de Montpellier, CNRS Montpellier France
+1. Institut de Génétique Humaine, Univ. de Montpellier, CNRS Montpellier France ([ROR:05ee10k25](https://ror.org/05ee10k25))
 2. ‘Maintenance of Genome Integrity during DNA replication’ laboratory, équipe labélisée Ligue contre le Cancer Montpellier France
-3. https://ror.org/04zkdcw61 Agricultural Biotechnology Research Center, Academia Sinica Taipei Taiwan
-4. https://ror.org/05031qk94 Ph.D. Program in Medical Biotechnology, College of Medical Science and Technology, Taipei Medical University Taipei Taiwan
-5. https://ror.org/00nnyvd56 National Research Institute of Chinese Medicine, Ministry of Health and Welfare Taipei Taiwan
-6. https://ror.org/05ee10k25 ‘Genome Surveillance and Stability’ Laboratory, IGH, Univ. de Montpellier, CNRS Montpellier France
-7. https://ror.org/05ee10k25 ‘Normal and Malignant B cells’ laboratory', IGH, Univ. de Montpellier, CNRS Montpellier France
-8. https://ror.org/02693j602 IRCM, Institut de Recherche en Cancérologie de Montpellier, INSERM U1194, Université de Montpellier, Institut régional du Cancer de Montpellier Montpellier France
-9. https://ror.org/055khg266 Institut Universitaire de France Paris France
-10. https://ror.org/00mthsf17 Department of Biological Hematology, CHU Montpellier Montpellier France
-11. https://ror.org/00v408z34 Graduate Institute of Integrated Medicine, China Medical University Taichung Taiwan
-12. https://ror.org/05vn3ca78 Department of Life Sciences, National Chung-Hsing University Taichung Taiwan
+3. Agricultural Biotechnology Research Center, Academia Sinica Taipei Taiwan ([ROR:04zkdcw61](https://ror.org/04zkdcw61))
+4. Ph.D. Program in Medical Biotechnology, College of Medical Science and Technology, Taipei Medical University Taipei Taiwan ([ROR:05031qk94](https://ror.org/05031qk94))
+5. National Research Institute of Chinese Medicine, Ministry of Health and Welfare Taipei Taiwan ([ROR:00nnyvd56](https://ror.org/00nnyvd56))
+6. ‘Genome Surveillance and Stability’ Laboratory, IGH, Univ. de Montpellier, CNRS Montpellier France ([ROR:05ee10k25](https://ror.org/05ee10k25))
+7. ‘Normal and Malignant B cells’ laboratory', IGH, Univ. de Montpellier, CNRS Montpellier France ([ROR:05ee10k25](https://ror.org/05ee10k25))
+8. IRCM, Institut de Recherche en Cancérologie de Montpellier, INSERM U1194, Université de Montpellier, Institut régional du Cancer de Montpellier Montpellier France ([ROR:02693j602](https://ror.org/02693j602))
+9. Institut Universitaire de France Paris France ([ROR:055khg266](https://ror.org/055khg266))
+10. Department of Biological Hematology, CHU Montpellier Montpellier France ([ROR:00mthsf17](https://ror.org/00mthsf17))
+11. Graduate Institute of Integrated Medicine, China Medical University Taichung Taiwan ([ROR:00v408z34](https://ror.org/00v408z34))
+12. Department of Life Sciences, National Chung-Hsing University Taichung Taiwan ([ROR:05vn3ca78](https://ror.org/05vn3ca78))
 
 † Corresponding author
 
 ## Abstract
 
-Cancer cells display high levels of oncogene-induced replication stress (RS) and rely on DNA damage checkpoint for viability. This feature is exploited by cancer therapies to either increase RS to unbearable levels or inhibit checkpoint kinases involved in the DNA damage response. Thus far, treatments that combine these two strategies have shown promise but also have severe adverse effects. To identify novel, better-tolerated anticancer combinations, we screened a collection of plant extracts and found two natural compounds from the plant, Psoralea corylifolia , that synergistically inhibit cancer cell proliferation. Bakuchiol inhibited DNA replication and activated the checkpoint kinase CHK1 by targeting DNA polymerases. Isobavachalcone interfered with DNA double-strand break repair by inhibiting the checkpoint kinase CHK2 and DNA end resection. The combination of bakuchiol and isobavachalcone synergistically inhibited cancer cell proliferation in vitro. Importantly, it also prevented tumor development in xenografted NOD/SCID mice. The synergistic effect of inhibiting DNA replication and CHK2 signaling identifies a vulnerability of cancer cells that might be exploited by using clinically approved inhibitors in novel combination therapies.
+Cancer cells display high levels of oncogene-induced replication stress (RS) and rely on DNA damage checkpoint for viability. This feature is exploited by cancer therapies to either increase RS to unbearable levels or inhibit checkpoint kinases involved in the DNA damage response. Thus far, treatments that combine these two strategies have shown promise but also have severe adverse effects. To identify novel, better-tolerated anticancer combinations, we screened a collection of plant extracts and found two natural compounds from the plant, Psoralea corylifolia, that synergistically inhibit cancer cell proliferation. Bakuchiol inhibited DNA replication and activated the checkpoint kinase CHK1 by targeting DNA polymerases. Isobavachalcone interfered with DNA double-strand break repair by inhibiting the checkpoint kinase CHK2 and DNA end resection. The combination of bakuchiol and isobavachalcone synergistically inhibited cancer cell proliferation in vitro. Importantly, it also prevented tumor development in xenografted NOD/SCID mice. The synergistic effect of inhibiting DNA replication and CHK2 signaling identifies a vulnerability of cancer cells that might be exploited by using clinically approved inhibitors in novel combination therapies.
 
 ## Introduction
 
@@ -55,39 +55,79 @@ To identify novel small molecules that target the RS response in cancer cells, w
 
 ## Results
 
-## IBC and BKC synergistically inhibit proliferation of cancer cell lines
+### IBC and BKC synergistically inhibit proliferation of cancer cell lines
 
 To identify novel combinations of small-molecule inhibitors that target DNA replication in cancer cells, we screened a selection of crude extracts of Chinese herbal medicines for their ability to differentially impede cell growth and induce γ-H2AX foci in MCF-7 human breast cancer cells relative to non-cancerous BJ hTERT-immortalized human fibroblasts. In an extract prepared from P. corylifolia, we identified two compounds, IBC (MW: 324.4; Kuete and Sandjo, 2012) and BKC (MW: 256.4; Nizam et al., 2023; Figure 1A), which inhibited the proliferation of MCF-7 cells and A549 human lung cancer cells more than they did the proliferation of BJ fibroblasts and non-transformed epithelial cells MCF10A and RPE-1 cells (Figure 1B, Figure 1—figure supplement 1A and B). BKC is a bioactive meroterpene that possesses a variety of pharmacological activities (Xin et al., 2019). It was shown to inhibit the proliferation of many cancer cell lines (Li et al., 2016) presumably through the inhibition of DNA replication (Sun et al., 1998). IBC is a natural chalcone that also exhibits potential anticancer activities (Kuete et al., 2015; Ren et al., 2024; Wu et al., 2022). However, the combined anticancer effect of BKC and IBC has never be addressed and their mechanisms of action and molecular targets have remained unknown.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig1-v1.jpg)
+
+**Figure 1.:** (A) Chemical structures of IBC and BKC. (B) BJ, MCF-7, and A549 cells were treated with DMSO, 25 μg/ml crude extract (PR7), 15 μM IBC, 40 μM BKC, or the combination 15 μM IBC and 40 μM BKC for 72 hr. These concentrations were used throughout the study. Cell number was quantified by using the WST-1 assay. Data are means ± SD of three independent experiments. The p-values were calculated using two-tailed unpaired t-test. (C) Concentration matrix analyses of a panel of eight cancer cell lines treated with IBC and BKC at the indicated doses for 72 hr. Cell viability was measured by using the sulforhodamine B colorimetric assay. Antagonist combinations (green), synergistic combinations (red), and additive effects (black) were calculated. A representative analysis of three independent experiments is shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) MCF10A and MCF-7 cells were treated with DMSO, or indicated concentrations of IBC and BKC for 72 hr. Cell number was quantified by using the WST-1 assay. Mean ± SD of three independent experiments are shown. The p-values were calculated using two-tailed unpaired t-test. (B) Human telomerase-immortalized RPE-1 cells and MCF-7 and A549 cells were treated with DMSO, indicated concentrations of IBC or BKC or the combination 7.5 μM IBC and 20 μM BKC for 72 hr. Cell number was quantified by using the WST-1 assay. Mean ± SD of three independent experiments are shown. The p-values were calculated using two-tailed unpaired t-test. (C) A panel of cancer cell lines were treated with different concentrations of IBC or BKC for 72 hr. Cell viability was measured and IC50 for each cell line was calculated from three independent experiments. Mean ± SD is shown. (D) Viability matrix for the concentrations of IBC and BKC combinations tested in a panel of cancer cell lines. Percentage of cell viability is indicated by the blue gradient. A representative analysis of three independent experiments is shown.
+
 Here, we have used a panel of eight tumor cell lines including two breast (MCF-7 and SUM159), one lung (HCC827), two prostate (PC3 and DU145), one lymphoma (U937), one colon (HCT116), and one ovarian (Ovcar8) cancer cell lines to investigate the antitumoral effect of IBC and BKC. We first determined the IC50 of each compound in each cell line (Figure 1—figure supplement 1C) and found that IBC was more potent than BKC in inhibiting the proliferation of all cell lines. We then evaluated the effect of combined use of IBC and BKC on the viability of the eight cell lines by using a concentration matrix approach and a quantitative colorimetric cytotoxicity assay (Figure 1—figure supplement 1D) from which we calculated the synergistic and antagonistic effects of the two compounds (Figure 1C), as previously described (Tosi et al., 2018). In all cell lines tested, we observed a synergistic effect of IBC and BKC over a narrow range of concentrations (3–10 µM IBC and 10–30 µM BKC) and an additive effect of the two drugs over a wider concentration range. This ratio of 3:10 µM IBC:BKC that has a synergistic effect in vitro corresponds to the ratio of concentrations of the two compounds in the fruits of P. corylifolia. We conclude from this data that IBC and BKC inhibit cell growth in a synergistic manner and that this effect is more pronounced on cancer cells than on non-cancer cells.
 
-## IBC and BKC induce replication stress
+### IBC and BKC induce replication stress
 
 To study the potential of IBC and BKC to induce RS, we assayed formation of γ-H2AX foci in MCF-7 and BJ cells treated for 24 hr with DMSO or with the two compounds, either alone or in combination. Cells were labeled with the thymidine analogue 5-ethynyl-2′-deoxyuridine (EdU) to identify cells in S phase and γ-H2AX foci were detected by immunofluorescence microscopy; γ-H2AX levels in S phase cells was quantified as mean fluorescence intensity. IBC increased γ-H2AX signal in MCF-7 but not in BJ cells, whereas BKC increased it in both cell types (Figure 2A and B). Moreover, the combination of IBC and BKC further increased γ-H2AX fluorescence in MCF-7 but not in BJ cells (Figure 2A and B), which is consistent with their effect on cancer cell growth. BKC alone or in combination with IBC also induced phosphorylation of CHK1 on S345 in MCF-7 cells, whereas IBC alone did not (Figure 2C, Figure 2—figure supplement 1A). These data suggest that BKC, but not IBC, can directly induce RS.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig2-v1.jpg)
+
+**Figure 2.:** (A) MCF-7 and BJ cells were treated with either 15 μM IBC, 40 μM BKC, or both (IBC + BKC) for 24 hr, then 10 μM EdU was added for 10 min and γ-H2AX foci in EdU-positive cells were detected by using Click chemistry and immunofluorescence microscopy. Representative immunofluorescence images of MCF-7 cells are shown. Bar: 5 μm. (B) Mean fluorescence intensity (MFI) of γ-H2AX foci was quantified using CellProfiler. One of three independent experiments is shown (n = 3). ****p<0.0001; ns, not significant, Mann–Whitney rank sum test. (C) MCF-7 cells were treated with IBC/BKC for 24 hr, as in (A), and CHK1 phosphorylated on S345 (pCHK1) was detected by western blotting. The ratio of pCHK1 to total CHK1, relative to the DMSO control, is indicated. A representative example of two independent experiments is shown. (D) BJ and MCF-7 cells were treated with IBC/BKC for 24 hr, as in (A), then IdU and CldU were added sequentially each for 15 min. Replication fork progression was determined by measuring CldU track lengths in DNA fiber spreads. The median length of CldU tracks is indicated in red. At least 150 fibers were measured for each condition. Median of two independent experiments is indicated in red. (E) MCF-7 cells were treated with indicated concentrations of BKC or 1 µM aphidicolin (Aph) for 2 hr then IdU and CldU were added sequentially each for 20 min. Replication fork progression was determined as in (D). The length of IdU and CldU was measured. Median of three independent experiments is indicated in red. The p-values were determined using two-tailed unpaired t-test (n = 3). (F) MCF-7 cells were treated with DMSO or 20 μM BKC for 2 hr then IdU and CldU were added sequentially each for 20 min. Replication fork progression was determined as indicated in (D). The ratio of the CldU signal of two sister forks was calculated. At least 80 sister forks were measured in each biological replicate. The ratio of two sister forks between 0.8 and 1.2 was considered as symmetric forks. Mean ± SEM of three independent experiments are shown. The p-values were determined using two-tailed unpaired t-test. (G) MCF-7 cells were treated with 40 µM BKC, Aph (10 μM) or both (BKC + Aph) for 2 hr, prior to DNA fiber spreading assay. The p-values were determined using two-tailed unpaired t-test (n = 3). (H) Xenopus egg extracts were incubated with demembranated sperm nuclei and treated immediately (0 min) or after 40 min (40 min) with DMSO, BKC (100 μM), or Aph (60 μM). Samples were collected at the indicated time points after addition of the sperm nuclei. The percentage of replicated DNA was calculated as described in the ‘Materials and methods’.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) BJ and MCF-7 cells were treated for 24 hr with isobavachalcone (IBC), BKC, or the combination IBC + BKC for 24 hr, then labeled with 10 μM EdU for 30 min. Cell cycle distribution was analyzed by flow cytometry. Data are presented as mean ± SD from three independent experiments. (B) Densitometric quantification of the pCHK1-S345 signal for Figure 2C. (C) Xenopus high speed (HSS) egg extracts were treated with DMSO, BKC (100 μM, 25 μg/ml) or aphidicolin (Aph, 60 μM) before the addition of ssDNA. Samples were collected at 30, 60, or 90 min after the addition of sperm DNA. The percentage of replicated DNA was calculated as described in the ‘Materials and methods’. Representative figure from two independent experiments is shown.
 
 To address this possibility, we measured the effect of IBC and BKC on replication fork progression in MCF-7 and BJ cells by using a DNA fiber spreading assay. Briefly, the cells were exposed to one or both drugs for 24 hr and then labeled sequentially with the thymidine analogues 5-iodo-2′-deoxyuridine (IdU) and 5-chloro-2′-deoxyuridine (CldU) each for 15 min and the length of replicated tracks was measured along individual DNA fibers (Figure 2D). Analysis of CldU track length showed that BKC reduced fork speed by a factor of two relative to untreated cells in both cell lines, suggesting that it directly inhibits DNA synthesis. In contrast, IBC inhibited fork speed more in MCF-7 cells than in BJ cells, indicating that it may affect DNA synthesis through a mechanism different from that of BKC. When used in combination, the inhibitory effect of BKC and IBC on fork speed was further increased, consistent with our finding that these drugs have a synergistic effect on cell growth.
 
 To evaluate the impact of IBC and BKC on the cell cycle, we exposed MCF-7 and BJ cells to these drugs for 24 hr, labeled the cells in S phase with EdU for 30 min and analyzed the distribution of cells in the various phases of the cell cycle by flow cytometry (Figure 2—figure supplement 1B). Treatment with BKC, but not IBC, resulted in a greater proportion of both cell types in S phase, which is consistent with our observation that BKC, but not IBC, induced CHK1 activation (Figure 2C, Figure 2—figure supplement 1B). Together, these data suggest that IBC and BKC induce RS through different mechanisms to prevent cancer cell proliferation.
 
-## BKC inhibits DNA replication
+### BKC inhibits DNA replication
 
 Our data suggest that BKC might be a potent inhibitor of replication fork progression in vivo (Figure 2D) that acts directly on replicative DNA polymerases. Using DNA fiber assay, we found that BKC inhibited fork progression in a dose-dependent manner (Figure 2E). Furthermore, BKC treatment significantly increased sister fork asymmetry compared to DMSO-treated control cells (Figure 2F). We then compared its effect to that of aphidicolin, a well-characterized inhibitor of DNA polymerases a, d, and ε (Cheng and Kuchta, 1993). MCF-7 cells were treated with 40 μM BKC, 10 µM aphidicolin, or both for 2 hr and replication fork progression was measured by DNA fiber spreading. Remarkably, BKC inhibited fork progression more effectively than aphidicolin at these concentrations and the combined effect of both compounds was similar to the effect of BKC alone (Figure 2G). BKC is a phenolic compound structurally related to resveratrol. Since resveratrol was shown to induce RS by inhibiting dNTP synthesis (Benslimane et al., 2020; Fontecave et al., 1998), we tested the possibility that BKC might also impede DNA replication by inhibiting dNTP synthesis. To this end, we tested its effect on a replication assay in Xenopus egg extracts, which contain high concentrations of dNTPs and do not depend on dNTP synthesis to sustain effective DNA replication. In this assay, demembranated sperm nuclei incubated in egg extracts decondense, assemble pre-replication complexes within 20 min and initiate synchronous DNA synthesis (Méchali and Harland, 1982). When added at the start of the assay (0 min), BKC (100 µM) exhibited a strong inhibitory effect on DNA replication, although not as profound as the effect of aphidicolin (60 µM). Moreover, when added after 40 min, long after the initiation of replication, BKC was as effective as aphidicolin (Figure 2H), suggesting that it inhibits elongation. Consistent with this possibility, BKC effectively inhibited replication of ssDNA, a process that relies entirely on priming and elongation of DNA chains by replicative DNA polymerases (Figure 2—figure supplement 1C).
 
 We also performed in silico molecular docking to study the potential interaction of BKC with the catalytic subunits of DNA polymerases δ and ε. This analysis showed that BKC can occupy the deoxycytidine sites of both enzymes (Figure 3A and B). Using the cellular thermal sensitivity shift assay (CETSA) (Martinez Molina et al., 2013), we found that BKC interacts with the catalytic subunits of Polδ and Polε in MCF-7 cells to stabilize the thermal sensitivity of both proteins (Figure 3C and D). Importantly, BKC specifically stabilize the catalytic subunit POLD1 of Polδ, but not that of the accessory subunit POLD3 in Xenopus egg extracts (Figure 3—figure supplement 1A and B). Similarly, BKC did not alter the thermal sensitivity of Xenopus PCNA (Figure 3—figure supplement 1C). Together, these findings indicate that BKC strongly inhibits DNA replication in vivo and in vitro, most likely by directly inhibiting DNA polymerases.
 
-## IBC inhibits CHK2
+![Figure 3.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) In silico molecular docking of bakuchiol in the predicted active site structures of human DNA Pol δ and ε, respectively. (C, D) MCF-7 cells were treated with DMSO, 40 µM BKC, or 10 µM aphidicolin for 2 hr prior to the cellular thermal sensitivity shift assay (CETSA) at indicated temperature, as described in the Materials and Methods. Levels of POLD1 (Pol δ; panel C)and POLE (Pol ε; D) catalytic subunits were detected by western blotting. Mean and SEM of three independent experiments are shown. The p-values were determined using two-tailed paired t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Xenopus egg extracts were incubated with DMSO or 40 μM BKC for 2 hr prior to the cellular thermal sensitivity shift assay (CETSA) at indicated temperature, as described in the ‘Materials and methods’. The residual amount of the DNA Polδ catalytic subunit POLD1 (p125, A) and the accessory subunit POLD3 (p66, B) or PCNA (C) in the supernatant was detected by western blotting. Mean of two independent experiments is shown.
+
+### IBC inhibits CHK2
 
 Previous studies found that IBC impedes cell proliferation by inhibiting AKT, a protein kinase involved in cell survival and in the transcriptional regulation of DNA replication-associated genes (Jing et al., 2010; Spangle et al., 2016). To determine whether AKT inhibition accounts for the effect of IBC on DNA replication in MCF-7 cells, we assayed the effect of IBC on the autophosphorylation of endogenous AKT at S473 and compared it to the effect of an allosteric AKT inhibitor, MK-2206. Whereas MK-2206 strongly inhibited AKT phosphorylation, IBC had no effect when used at the concentration that inhibited cell proliferation (30 μM), nor did BKC or a combination of both compounds (Figure 4—figure supplement 1A). Moreover, unlike MK-2206, IBC had little or no effect on expression of the cell cycle genes encoding E2F1, E2F2, and PCNA (Figure 4—figure supplement 1B). Also, unlike IBC, MK-2206 had no effect on replication fork speed (Figure 4—figure supplement 1C). We conclude that, at the concentrations used in this study, IBC inhibition of DNA replication cannot be explained by inhibition of AKT.
 
 To identify candidate target(s) of IBC that are responsible for its inhibitory effect on cancer cell proliferation, we assayed the effects of a broad range of IBC concentrations on the activities of 43 cell cycle-related kinases in vitro and determined the IC50 for each of them (Figure 4A, Figure 4—figure supplement 1D and E). The most sensitive kinase, CHK2, had an IC50 for IBC of 3.5 µM (Figure 4A). Aurora-A/B and JNK3 were also sensitive to IBC, but at approximately fivefold higher concentrations, IC50 of 11.2 µM for Aurora-A/B and 16.4 µM for JNK3. By contrast, CHK1 was not inhibited by IBC (Figure 4A). Consistent with our findings above, the IC50 for AKT1/PKBα was 56.7 µM (Figure 4A, Figure 4—figure supplement 1E and F).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig4-v1.jpg)
+
+**Figure 4.:** (A) Selected protein kinases were incubated with the indicated range of IBC concentrations, and kinase activity in vitro was determined by using a radiometric assay. The IC50 of IBC for each kinase is indicated in the panel on the right. (B) MCF-7 cells were pretreated with DMSO, 15 µM IBC, or 20 µM BML-277 for 2 hr, then camptothecin (CPT, 1 μM) was added for 2 hr. Phosphorylation of CHK2 on S516 (pCHK2) was detected by western blotting. The ratio of pCHK2-S516 induction, relative to the DMSO + CPT control, is indicated (n = 3). (C) MCF-7 cells were treated as indicated in (B). Phosphorylation of chromatin-bound BRCA1 at residue S988 was detected by western blotting. The relative ratio of pBRCA1-S988 signal, after normalization to Ponceau signal, is indicated. TBP was used as a marker of chromatin fraction. (D) MCF-7 cells were treated with 15 μM IBC for 2 hr, then 4 mM HU was added for 2 hr. CHK1 autophosphorylation on S296 (pCHK1) was detected by western blotting. (E, F) In silico molecular docking of IBC in the active sites of CHK2 and CHK1, respectively. (G, H) Cellular thermal shift assay (CETSA) of IBC on the thermal stability of CHK2 and CHK1. MCF-7 cells were treated with 15 µM IBC or 20 μΜBML-277 for 2 hr. Cells were proceeded to CETSA as described in the ‘Materials and methods’. The amount of CHK2 and CHK1 present in the supernatant was detected by western blotting. The relative CHK2 and CHK1 signal was quantified. The p-values were determined using two-tailed paired t-test (n = 3).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) MCF-7 cells treated with DMSO, 15 μM IBC, 20 μM bakuchiol (BKC), the combination IBC + BKC or AKT inhibitor, MK-2206, (AKTi, 10 μM) for 24 hr. Autophosphorylation of AKT was detected by immunoblotting analysis. Densitometric quantification of phosphor-AKT signal is shown. (n = 2). (B) MCF-7 cells treated overnight with DMSO, IBC, or AKT inhibitor (AKTi). Total RNA was isolated. Reverse transcription and quantitative PCR was performed with specific primers targeting the gene bodies of PCNA, E2F1, and E2F2 (n = 2). (C) MCF-7 cells were treated with IBC or AKT inhibitor (AKTi) for 24 hr. They were then sequentially labeled with IdU and CldU for 20 min. Replication fork progression was measured using DNA fiber spreading. The median length of CldU tracks of two biological replicates is indicated in red. (D) In vitro kinase assay of 43 cell cycle-related kinases following treatment with 30 µM IBC. The CHK2(I157T) mutation is linked to an increased risk of breast and colorectal cancers. CHK2(R145W) is associated with Li–Fraumeni syndrome. Both mutations do not affect the basal kinase activity of CHK2. (E) Percentage inhibition of kinase activity by IBC treatment is shown. (F) AKT kinase peptides were incubated with a half-log range dilution series of Isobavachalcone and in vitro kinase activity was measured using a radiometric assay. Data are presented as mean ± SD with a technical triplicate. (G) Densitometric quantification of the pCHK2-S516 induction by CPT for Figure 4B. The relative induction of pCHK2-S516 by CPT after IBC or BML-277 treatment compared to DMSO control is indicated. Mean ± SD of three independent experiments for DMSO + CPT and IBC + CPT are shown. The p-value was determined using two-tailed unpaired t-test. (H) Densitometric quantification of the pCHK2-S516 induction by CPT for Figure 4C. The relative induction of pBRCA1-S988 by CPT after IBC or BML-277 treatment compared to DMSO control is indicated. Mean ± SD of three independent experiments for DMSO + CPT and IBC + CPT are shown. The p-value was determined using two-tailed unpaired t-test. (I) Densitometric quantification of the pCHK1-S296 induction by HU for Figure 3D. The relative induction of pCHK1-S296 by HU after IBC or BML-277 treatment compared to DMSO control is indicated (n = 2).
+
 To validate the inhibitory effect of IBC on CHK2 in vivo, we analyzed the autophosphorylation of CHK2 on S516 induced by camptothecin (CPT), a DNA topoisomerase I inhibitor that induces RS and DSBs (Pommier, 2006). In MCF-7 cells, IBC inhibited the autophosphorylation of CHK2 induced by CPT by approximately 50% (Figure 4B, Figure 4—figure supplement 1G). Consistently, IBC also inhibited the activation of the downstream target of CHK2, BRCA1. We showed that treatment with IBC reduced the phosphorylation of chromatin-bound BRCA1 at residue S988 induced by CPT, as efficiently as the commercial CHK2 inhibitor BML-277 (Figure 4C, Figure 4—figure supplement 1H). By contrast, IBC did not affect the autophosphorylation of CHK1 on S296 induced by hydroxyurea (HU; Figure 4D, Figure 4—figure supplement 1I). Using in silico molecular docking, we found that IBC binds to the active site of CHK2 by means of a hydrogen bond and 11 hydrophobic interactions (Figure 4E), whereas its binding to the active site of CHK1 is prevented by a steric clash with a tyrosine residue (Tyr86) (Figure 4F). To confirm the direct interaction between CHK2 and IBC, we performed the CETSA in MCF-7 cells. We showed that IBC altered the thermal stability of CHK2 as efficiently as the commercial CHK2 inhibitor, BML-277, without affecting the thermal stability of CHK1 (Figure 4G and H). Interestingly, BML-277 seemed to have a slight effect in reducing the thermal stability of CHK1, although it was not statistically significant (Figure 4G and H). Together, these data indicate that IBC inhibits CHK2 without affecting CHK1 activity.
 
-## IBC delays repair of DSBs induced by camptothecin
+### IBC delays repair of DSBs induced by camptothecin
 
 CHK2 promotes HR-mediated DSB repair (Parameswaran et al., 2015; Zhang et al., 2004). To investigate the effect of IBC on DSB repair, we induced chromosome breaks in MCF-7 cells by using CPT and monitored the persistence of unrepaired DSBs in the following G1 phase by immunofluorescence microscopy of 53BP1 foci and co-staining with an antibody against p27, a marker of G1 cells. In cells treated with IBC, the CPT-induced 53BP1 foci persisted, whereas in cells not treated with IBC, the intensity of the CPT-induced 53BP1 immunofluorescence signal increased and returned to basal levels 24 hr later (Figure 5A and B), indicating that IBC delays DSB repair. We also observed this persistence of DSBs in the presence of IBC by using pulsed-field gel electrophoresis (PFGE) (Figure 5—figure supplement 1A), confirming that IBC impairs DSB repair, likely by inhibiting CHK2.
 
-## IBC prevents DNA end resection at DSBs
+![Figure 5.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig5-v1.jpg)
+
+**Figure 5.:** (A) MCF-7 cells were treated with DMSO or 15 μM IBC for 1 hr, then camptothecin (CPT, 1 μM) was added for 2 hr. The cells were fixed immediately or washed and allowed to recover in medium containing DMSO or IBC for 24 hr before fixation. 53BP1 foci in p27-positive nuclei were detected by immunofluorescence microscopy. Representative images are shown. Bar: 5 μm. (B) 53BP1 foci number was quantified using CellProfiler. Representative data from three independent experiments are shown. ****p<0.0001; ns, not significant, Mann–Whitney rank sum test. (C) MCF-7 cells were treated with DMSO or 15 μM IBC for 2 hr, then CPT (1 μM) was added for 2 hr, as indicated. Cells were fractionated into cytosol and nuclei (chromatin) and RPA in both fractions was detected by western blotting. Actin and TBP were used as markers of cytosol and chromatin fractions, respectively. The fold change of the chromatin-bound RPA signal relative to the DMSO control was quantified. The p-value was determined using unpaired t-test (n = 3). (D) MCF-7 cells were incubated with 10 µM BrdU for 24 hr to label genomic DNA, then DMSO, 15 µM IBC or the CHK2 inhibitor BML-277 (20 μM) were added for 2 hr followed by addition of 5 μg/ml bleomycin for 1 hr. DNA fibers were spread on glass slides and BrdU was detected by immunofluorescence microscopy without DNA denaturation. The length of BrdU the tracks was measured and the median for each condition is indicated in red. At least 250 fibers were measured for each condition. Median of two independent experiments is indicated in red (n = 2). (E) MCF-7 cells were incubated with 10 µM BrdU for 24 hr to label genomic DNA in the presence of DMSO or IBC then exposed to ionizing radiations (8 Gy). Cells were collected 60 or 120 min after irradiation and BrdU tracks measured as in (B). ****p<0.0001, Mann–Whitney rank sum test. (F) DIvA cells were treated with either DMSO or IBC for 2 hr then DNA breaks were induced by treatment with 300 nM 4-hydroxytamoxifen (4-OHT) for 4 hr. Resection at two break sites, DSB-II and DSB-V, was determined as the percentage of ssDNA at these sites, calculated as indicated in the ‘Materials and methods’. Data are means ± SD (n = 3). The p-values are indicated (two-tailed paired t-test). (G) MCF-7 cells were treated with DMSO, IBC, or BML-277 for 2 hr, then irradiated as described above. After 1 hr, RAD51 foci were detected by CSK-immunofluorescence microscopy and foci number was quantified using CellProfiler. Representative data (left) and immunofluorescence images (right) from two independent experiments are shown. Bar: 10 μm. ****p<0.0001, Mann–Whitney rank sum test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) MCF-7 cells were pretreated with DMSO or IBC for 1 hr, followed by incubation with or without camptothecin (CPT, 1 μM) for another 2 hr. Cells were recovered immediately or washed and let recover in the presence of DMSO or IBC for 24 or 48 hr. The amount of broken DNA was detected by PFGE. Fold increase of broken DNA was normalized by the control sample at t0. The p-values are indicated (two-tailed paired t-test). Representative gel image from four independent experiments is shown. (B) MCF-7 cells were pretreated with DMSO or IBC for 1 hr, followed by incubation with or without CPT for another 2 hr. Cells were fixed and the formation of RPA foci was detected by CSK-immunofluorescence microscopy. Mean fluorescence intensity (MFI) of RPA signal was quantified using CellProfiler. ****p<0.0001, Mann–Whitney rank sum test. Representative data from three independent experiments are shown. Bar: 5 μm. (C) DIvA cells were treated with either DMSO, IBC, or CHK2 inhibitor (BML-277) for 2 hr before induction of DNA breaks by 4-hydroxytamoxifen (4-OHT) for 4 hr. Resection at two break sites is evaluated. Percentage of ssDNA was calculated as indicated in the ‘Materials and methods’. (D) MCF-7 cells were pretreated with DMSO, IBC for 2 hr, followed by bleomycin treatment for 1 hr. Cells were allowed to recover for 1 hr, and the formation of RAD51 foci was detected by CSK-immunofluorescence microscopy. RAD51 foci number was quantified using CellProfiler. ****p<0.0001, Mann–Whitney rank sum test. A representative example of three independent experiments is shown (n = 3). (E) MCF-7 cells were pretreated with DMSO, IBC for 2 hr, followed by bleomycin treatment for 1 hr. The amount of broken DNA was detected by PFGE. Fold increase of broken DNA was normalized by the control sample.
+
+### IBC prevents DNA end resection at DSBs
 
 CHK2 phosphorylates BRCA1 on S988 to stimulate HR-mediated DSB repair (Parameswaran et al., 2015; Zhang et al., 2004). Since BRCA1 promotes DNA end resection at DSBs to initiate HR, we investigated whether IBC might impede the formation of single-strand DNA (ssDNA) at DNA ends. To do so, we induced DSBs by treating MCF-7 cells with CPT and assayed the formation of ssDNA by monitoring binding of the ssDNA-binding factor RPA to chromatin by western blotting and immunofluorescence microscopy. These analyses revealed that IBC inhibited the formation of RPA-coated ssDNA upon CPT treatment (Figure 5C, Figure 5—figure supplement 1B).
 
@@ -95,17 +135,33 @@ To determine whether this effect was due to inhibition of DNA end resection, we 
 
 To analyze the consequences of CHK2 inhibition by IBC on HR, we assayed formation of RAD51 foci following induction of DSBs by ionizing radiation (8 Gy) or by bleomycin treatment. CHK2 inhibition by either IBC or BML-277 completely prevented formation of RAD51 foci in response to ionizing radiation (Figure 5G) and IBC completely prevented formation of RAD51 foci in response to bleomycin (Figure 5—figure supplement 1D). Of note, the number of breaks induced by bleomycin was similar in cells treated with IBC or DMSO (Figure 5—figure supplement 1E).
 
-## IBC and BKC synergistically inhibit tumor growth and extend survival in mice
+### IBC and BKC synergistically inhibit tumor growth and extend survival in mice
 
 To determine whether IBC and BKC might prevent cancer cell growth in vivo, we used a mouse xenograft model in which MCF-7 cells harboring an integrated firefly luciferase gene (MCF-7/Luc cells) were injected subcutaneously into the fat pads of non-obese diabetic/severe combined immunodeficiency (NOD/SCID) mice. Two days later, randomized mice were injected subsequently three times per week with two different concentrations of IBC, BKC, or IBC + BKC, or with Taxol as a positive control, or with PBS (phosphate-buffered saline) as a negative control. Tumor size was measured at intervals of 1 week up to 3 weeks by measuring bioluminescence intensity and survival rate was monitored daily up to 70 days (Figure 6A). After 3 weeks, IBC and BKC significantly inhibited tumor growth in a dose-dependent manner (Figure 6B, Figure 6—figure supplement 1A). IBC had a stronger effect on the growth of MCF-7/Luc cells than BKC had, but the combined use of both compounds had the greatest inhibitory effect on tumor growth (Figure 6B). Moreover, the mice injected with the higher dose of IBC or of the IBC + BKC combination survived longer than those treated with Taxol (Figure 6C).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic description of the protocol. MCF-7/Luc cells (1 × 104) were injected into the fat pads of female non-obese diabetic/severe combined immunodeficiency mice at day 0. Two days later, randomized mice were injected intraperitoneally with (phosphate-buffered saline) PBS, Taxol, IBC, BKC, or IBC + BKC at the indicated doses. Tumor sizes were measured weekly thereafter. Tumor tissues were collected 28 days after grafting and analyzed by immunohistochemistry. Mice survival was also evaluated. (B) Tumor size in the fat pads was measured once per week by using the IVIS bioluminescence system. The number of xenografted mice receiving each treatment is indicated. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, Mann–Whitney rank sum test. (C) Survival (left) and median survival time (days, right) is shown for xenografted mice receiving each treatment. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, Mann–Whitney rank sum test. (D) Tumor tissues collected from xenograft mice were analyzed immunohistochemically for the cell proliferation maker Ki67. (E) Broken DNA and apoptosis marker, TUNEL staining. (F) pCHK1 (S345) and (G) pCHK2 (Thr68). ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05; ns, not significant, Mann–Whitney rank sum test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Luminometry images of MCF-7/Luc xenograft mice treated with (phosphate-buffered saline) PBS, Taxol, IBC, BKC, or the combination IBC + BKC during treatments. (B) Immunohistochemistry images of Ki67, TUNEL staining, pCHK1 (S345), and pCHK2 (Thr68) in xenografted tumor tissues.
+
 To determine whether the tumor tissues had increased levels of RS or DNA damage when the mice were treated with IBC and BKC, we used immunohistochemistry to monitor cell proliferation (staining for Ki67) and checkpoint activation (staining for CHK1/CHK2 phosphorylation) and the TUNEL fluorescence assay for DNA fragmentation. Overall, IBC and BKC inhibited tumor cell proliferation (Figure 6D, Figure 6—figure supplement 1B) and induced DNA fragmentation, indicative of tumor cell death by apoptosis (Figure 6E, Figure 6—figure supplement 1B). Interestingly, IBC5x alone inhibited cell proliferation as efficiently as the IBC + BKC5x combination and better than Taxol (Figure 6B). However, the percentage of TUNEL-positive cells was much higher in mice treated with IBC + BKC5x than either drug alone (Figure 6E), indicating that IBC and BKC have a strong synergistic effect on the induction of apoptosis and DNA breaks. We also observed a dose-dependent increase in CHK1 phosphorylation in tumor tissues from mice treated with BKC (Figure 6F), which is consistent with our observation above that BKC induced CHK1 activation in vitro. Moreover, BKC induced phosphorylation of CHK2 on T68, a marker of DNA damage (Figure 6G). However, this activation of CHK1 and CHK2 mediated by BKC was suppressed by the addition of IBC (Figure 6F and G). Since these checkpoint kinases are important to coordinate DNA repair, this would explain why unrepairable DNA breaks accumulate in tumors exposed to the IBC + BKC5x combination. Interestingly, treatment with the higher concentration of IBC alone diminished the level of endogenous phosphorylation of both CHK1 and CHK2, which supports the view that IBC prevents the signaling of endogenous RS and DNA damage in tumors (Figure 6F and G). Altogether, our results show that IBC and BKC act synergistically to inhibit tumor growth in vivo, induce DNA fragmentation in the tumor, and extend mice survival.
 
-## IBC potentiates the effect of chemotherapeutic agents on lymphoma cells
+### IBC potentiates the effect of chemotherapeutic agents on lymphoma cells
 
 One current strategy for new cancer treatments is to inhibit cell cycle checkpoints at the same time as inducing DNA damage with conventional chemotherapeutic agents, thus driving cells to proliferate in the presence of DNA damage, ultimately resulting in their death. We showed above that IBC inhibits the DNA damage checkpoint kinase CHK2; therefore, we investigated whether IBC might enhance the potency of chemotherapeutic drugs. To this end, we used cell lines from patients with DLBCL; this is the most common lymphoid malignancy in adults, accounting for up to 35% of non-Hodgkin lymphomas. Although DLBCL can be cured in over 60% of patients by using rituximab-based chemotherapy regimens, the remainder develop recurrent or progressive disease that is often fatal (Sarkozy and Coiffier, 2013). New therapeutic approaches are still needed to achieve an effective treatment for these patients with high-risk/refractory DLBCL. Since deregulation of DNA repair pathways in DLBCL cells is associated with a poor outcome (Bret et al., 2015; Bret et al., 2013), we reasoned that IBC could potentiate the effect of agents inducing DNA damage in DLBCL cells.
 
 To address this possibility, we first determined the IC50 of IBC for growth inhibition of a panel of DLBCL cell lines. IC50 ranged from 8 to 28 μM (Figure 7A), similar to the concentrations we found were effective on the solid cancer cell lines we tested (Figure 1B and C). To evaluate whether IBC potentiates the growth inhibitory effect of chemotherapeutic agents, we treated the drug-resistant DLBCL cell line U2932 with various concentrations of including etoposide and doxorubicin (topoisomerase II inhibitors) or 4-hydroxy-cyclophosphamide (DNA alkylating agent) in the presence of the IC20 of IBC (4.5 μM) for 72 hr. We found that IBC substantially enhanced cell growth inhibition by all three of these DNA-damaging agents (Figure 7B). Moreover, by testing a full-range concentration matrix of drug pairs on cell viability after 72 hr treatment, we found that IBC synergistically increased the inhibitory effect of doxorubicin and or 4-hydroxy-cyclophosphamide on U2932 cell proliferation (Figure 7C, Figure 7—figure supplement 1). These matrices were more complex than those shown in Figure 1C for BKC, presumably because Top2 inhibition or DNA alkylation induce pleiotropic effects differentially modulating the effect of IBC. Nonetheless, these data suggest that IBC is a promising candidate to potentiate the effect of these and potentially other conventional chemotherapeutic agents.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig7-v1.jpg)
+
+**Figure 7.:** (A) A panel of eight diffuse large B-cell lymphoma (DLBCL) cell lines were incubated with the indicated concentrations of IBC for 72 hr (left) and growth inhibition was measured to calculate the IC50 in each cell line (right). Data are presented as means ± SD (n = 3). (B) U2932 cells were treated with the indicated concentrations of etoposide (Eto), doxorubicin (Doxo), or 4-OH-cyclophosphamide (4-OH-Cyclo) without (black points) or with 1.5 μg/ml (the IC20 concentration for this cell line) IBC (red points) for 72 hr. Cell viability was measured. Data are presented as means ± SD (n = 3). (C) Full-concentration matrix analyses of U2932 cells treated with IBC and Eto (left), Doxo (middle), or 4-OH-Cyclo at the indicated concentrations for 72 hr. Synergy and antagonism were calculated as described in Figure 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/104718/elife-104718-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** U2932 cells were treated with indicated concentrations of etoposide, doxorubicin, or 4-OH-cyclophosphamide in combination with indicated concentrations of IBC for 72 hr. Cell viability was measured. Percentage of cell viability is indicated by the blue gradient in the matrix.
 
 ## Discussion
 
@@ -127,68 +183,288 @@ In conclusion, our screening of traditional herbal medicine for novel combinatio
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Immortalized BJ fibroblasts</td>
+      <td>Dr. D. Peeper</td>
+      <td>The Netherlands Cancer Institute, Amsterdam</td>
+      <td>Foreskin (normal neonatal mal)</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MCF-7</td>
+      <td>HTB-22</td>
+      <td>ATCC</td>
+      <td>Mammary gland adenocarcinoma</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>A549</td>
+      <td>CRM-CCL-185</td>
+      <td>ATCC</td>
+      <td>Lung carcinoma</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HCC827</td>
+      <td>CRL-2868</td>
+      <td>ATCC</td>
+      <td>Lung adenocarcinoma</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>PC3</td>
+      <td>CRL-1435</td>
+      <td>ATCC</td>
+      <td>Prostate adenocarcinoma</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>DU145</td>
+      <td>HTB-81</td>
+      <td>ATCC</td>
+      <td>Prostate carcinoma</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>U937</td>
+      <td>CRL-1593.2</td>
+      <td>ATCC</td>
+      <td>Histiocytic lymphoma</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HCT116</td>
+      <td>CCL-247</td>
+      <td>ATCC</td>
+      <td>Colorectal carcinoma</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>OVCAR8</td>
+      <td>NIH:OVCAR8</td>
+      <td></td>
+      <td>Ovarian carcinoma</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>DLBCL cell lines</td>
+      <td>Dr. J. Moreaux</td>
+      <td>Institute of Human Genetics, Montpellier</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>SUM159</td>
+      <td>SUM159PT</td>
+      <td>Asterand Bioscience</td>
+      <td>Triple-negative breast cancer cell line</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-BrdU clone B44</td>
+      <td>347580</td>
+      <td>BD Biosciences</td>
+      <td>1/100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-BrdU clone BU1/75</td>
+      <td>ABC117-7513</td>
+      <td>Eurobio Abcys</td>
+      <td>1/100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-ssDNA</td>
+      <td>MAB3868</td>
+      <td>Millipore</td>
+      <td>1/250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-pCHK1 (S345)</td>
+      <td>2348</td>
+      <td>Cell Signaling</td>
+      <td>1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-pCHK2 (T68)</td>
+      <td>2661</td>
+      <td>Cell Signaling</td>
+      <td>1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-γ-H2AX (S139)</td>
+      <td>05-636</td>
+      <td>Millipore</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-actin</td>
+      <td>A4700</td>
+      <td>Sigma</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-RPA1</td>
+      <td>Ab79398</td>
+      <td>Abcam</td>
+      <td>1/300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-TBP</td>
+      <td>8515</td>
+      <td>Cell Signaling</td>
+      <td>1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-CHK1</td>
+      <td>2360</td>
+      <td>Cell Signaling</td>
+      <td>1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-pRPA32 (S4/S8)</td>
+      <td>A300-245A</td>
+      <td>Bethyl</td>
+      <td>1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-CHK2</td>
+      <td>ab109413</td>
+      <td>Abcam</td>
+      <td>1/5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonalAnti-RPA2</td>
+      <td>A303-874</td>
+      <td>Bethyl</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-pCHK2 (S516)</td>
+      <td>2669</td>
+      <td>Cell Signaling</td>
+      <td>1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-pChk1 (S296)</td>
+      <td>2349</td>
+      <td>Cell Signaling</td>
+      <td>1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-pBRCA1 (S988)</td>
+      <td>sc-166793</td>
+      <td>Santa Cruz</td>
+      <td>1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-RAD51</td>
+      <td>PC130</td>
+      <td>Millipore</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-pAKT (S473)</td>
+      <td>9271</td>
+      <td>Cell Signaling</td>
+      <td>1/1000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Immortalized human BJ fibroblasts and MCF-7/Luc were cultured in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10% fetal calf serum and 100 U/ml penicillin/streptomycin. SUM159 cells were obtained from Asterand Bioscience, UK, and grown in Ham’s F-12 medium supplemented with 5% fetal calf serum, 10 μg/ml insulin, 1 μg/ml hydrocortisone, 100 μg/ml streptomycin, and 100 U/ml penicillin. MCF-7, A549, HCC827, PC3, DU145, U937, HCT116, and OVCAR8 cancer cells were cultured in DMEM (MCF-7, A549, DU145, and OVCAR8) or RPMI-1640 (HCC827, PC3, U937, HCT116) supplemented with 10% fetal calf serum and 100 U/ml penicillin/streptomycin at 37°C in 5% CO2. DLBCL cell lines (DB, SUDHL-10, OCI-LY3, WSU DLCL2, HT, SUDHL-5, SOHH2, and U292) were cultures in RMPI-1640 supplemented with 10% fetal calf serum and 100 U/ml penicillin/streptomycin at 37°C in 5% CO2.
 
-## Reagents
+### Reagents
 
 Isobavachalcone was purchased from Sigma-Aldrich (SML1450) or Abcam (ab141168). Bakuchiol was from Abcam (ab141036). Cell proliferation reagent WST-1 was from Sigma-Aldrich (5015944001).
 
-## Pulse-field gel electrophoresis (PFGE)
+### Pulse-field gel electrophoresis (PFGE)
 
 Subconfluent cultures (10 cm plates) were treated as specified. Cells were harvested by trypsinization, and plugs of 2% (w/v) agarose containing 0.5 × 106 cells in PBS were prepared using a CHEF disposable plug mold (Bio-Rad). The plugs were incubated in lysis buffer (100 mM EDTA, 1% [w/v] sodium lauryl sarcosinate, 0.2% [w/v] sodium deoxycholate, 1 mg/ml proteinase K) at 37°C for 24 hr and were then washed with washing buffer (20 mM Tris pH8, 50 mM EDTA pH8). PFGE was carried out at 13°C for 23 hr in 0.9% (w/v) agarose containing 0.25% TBE buffer using a Biometra Rotaphor (Biometra). The parameters were as follows: voltage 180–120 V log; angle from 120° to 110° linear; interval 30–5 s log. The gel was stained with ethidium bromide (EtBr) and analyzed using ImageJ.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Cells were pulse labeled with 10 µM EdU for 30 min. After fixation with 1% formaldehyde for 30 min at room temperature and permeabilized in 0.25% Triton X-100 for 15 min, EdU incorporation was detected by using Click chemistry according to the manufacturer’s instructions (Click-iT EdU Flow Cytometry Cell Proliferation Assay, Invitrogen). The cells were resuspended in PBS containing 1% (w/v) BSA, 2 µg/ml DAPI, and 0.5 mg/ml RNase A for 30 min at room temperature and were analyzed in a MACSQuant flow cytometer (Miltenyi Biotec). The percentages of cells in G1, S and G2/M phases were quantified using FlowJo single-cell analysis software (FlowJo, LLC).
 
-## DNA fiber spreading
+### DNA fiber spreading
 
 DNA fiber spreading was performed as described previously (Coquel et al., 2018; Jackson and Pombo, 1998). Briefly, subconfluent cells were sequentially labeled first with 10 µM IdU and then with 100 µM CldU for the indicated times. 1000 cells were loaded onto a glass slide (StarFrost) and lysed with spreading buffer (200 mM Tris-HCl pH 7.5, 50 mM EDTA, 0.5% SDS) by gently stirring with a pipette tip. The slides were tilted slightly and the surface tension of the drops was disrupted with a pipette tip. The drops were allowed to run down the slides slowly, then air dried, fixed in methanol/acetic acid 3:1 for 10 min, and allowed to dry. Glass slides were processed for immunostaining with mouse anti-BrdU to detect IdU, rat anti-BrdU to detect CldU, mouse anti-ssDNA antibodies (see Supplemental Information for details) and corresponding secondary antibodies conjugated to various Alexa Fluor dyes. Nascent DNA fibers were visualized by using immunofluorescence microscopy (Leica DM6000 or Zeiss ApoTome). The acquired DNA fiber images were analyzed by using MetaMorph Microscopy Automation and Image Analysis Software (Molecular Devices), and statistical analysis was performed with GraphPad Prism (GraphPad Software). The lengths of at least 150 IdU and/or CldU tracks were measured per sample.
 
-## Single-molecule analysis of resection tracks (SMART)
+### Single-molecule analysis of resection tracks (SMART)
 
 Cells were labeled with 10 µM BrdU for 24 hr. They were then treated with 5 µM bleomycin (Calbiochem) for 1 hr and harvested at the indicated time points. They were processed for DNA fiber spreading as described (Altieri et al., 2020; Cruz-García et al., 2014). BrdU tracks were stained with anti-BrdU antibody without DNA denaturation and visualized by fluorescence microscopy (Zeiss ApoTome). The acquired DNA fiber images were analyzed by using MetaMorph Microscopy Automation and Image Analysis Software (Molecular Devices), and statistical analysis was performed with GraphPad Prism (GraphPad Software). The lengths of at least 200 BrdU tracks were measured per sample.
 
-## Cellular thermal shift assay (CETSA)
+### Cellular thermal shift assay (CETSA)
 
 CETSA was performed according to the protocol described by Delport and Hewer, 2022 with the following modifications. MCF-7 cells were treated with DMSO, IBC, or BML-277 for 2 hr, then trypsinized and pelleted. Cells were resuspended in PBS and evenly distributed into different Eppendorf tubes at 106 cells per tube. Tubes were incubated at specified temperatures as indicated for 3 min, cooled down at 25°C for 3 min and then incubated on ice for another 3 min. Cells were pelleted down by centrifugation. The pellets were then lysed with RIPA buffer in the presence of benzonase for 20 min at 4°C before further centrifugation. The supernatant was collected and subjected to SDS-PAGE before western blotting for the detection of CHK1 and CHK2.
 
-## RPA foci detection
+### RPA foci detection
 
 For the detection of chromatin-bound RPA foci, cells seeded on the coverslips were fixed with 4% PFA (Paraformaldehyde) in PBS for 15 min and then incubated for 3 min at 4°C with CSK buffer (10 mM PIPES pH 6.8, 100 mM NaCl, 1 mM MgCl2, 1 mM EGTA, 300 mM sucrose, 0.5 mM DTT) containing 0.25% Triton X-100 and phosphatase inhibitor cocktail (Sigma-Aldrich, P0044). The coverslips were incubated with an anti-RPA antibody (overnight at 4°C) and then with a secondary antibody conjugated to an Alexa Fluor dye for 1 hr at 37°C, followed by DAPI staining. Images were acquired by using a Zeiss ApoTome microscope. The mean fluorescence intensity in EdU-positive cells was quantified by using CellProfiler (http://www.cellprofiler.org).
 
-## γ-H2AX foci detection
+### γ-H2AX foci detection
 
 Cells seeded on coverslips were treated and labeled with 10 μM EdU for 10 min as described. They were washed twice with PBS. They were fixed in fixation buffer (2% PFA) for 10 min at room temperature and permeabilized in permeabilization buffer (0.1% Na citrate, 0.1% Triton X-100). The coverslips were incubated with an anti-γ-H2AX antibody overnight at 4°C after blocking in PBS containing 1% BSA in PBS for 1 hr at room temperature. Coverslips were incubated with a secondary antibody conjugated to Alexa Fluor dye, followed by Click chemistry reaction and DAPI staining. Images were acquired using a Zeiss ApoTome microscope. The mean fluorescence intensity (MFI) in EdU-positive cells was quantified using CellProfiler (http://www.cellprofiler.org).
 
-## DNA end resection assay
+### DNA end resection assay
 
 Measure of resection was performed as described previously with the following modifications (Zhou et al., 2014). Genomic DNA was extracted from fresh cells using the QIAamp mini kit (QIAGEN). 500 ng DNA was then treated with five units of RNase H. 200 ng RNase H-treated DNA were digested or not with the Ban I restriction enzyme (16 U per sample) overnight at 37°C, which cuts at ~200 bp from the DSB-KDELR3 and at 740 bp for DSB-ASXL1. Ban1 was heat inactivated 20 min at 65°C. Digested and undigested DNA were analyzed by qPCR using the following primers:
 
-## In vitro kinase assay
+### In vitro kinase assay
 
 Kinase selectivity was evaluated using KinaseProfiler service provided by Eurofins (https://www.eurofinsdiscovery.com/).
 
-## DNA replication assay using Xenopus egg extracts
+### DNA replication assay using Xenopus egg extracts
 
 Cytoplasmic extracts (low speed and high speed) and demembranated sperm nuclei were prepared as previously described (Méchali and Harland, 1982; Murray, 1991), snap frozen in liquid nitrogen and stored at –80°C. Upon thawing, extracts were supplemented with cycloheximide (250 μg/ ml) and an energy regeneration system (1 mM ATP, 2 mM MgCl2, 10 μg/ml creatine kinase, 10 mM creatine phosphate).
 
 Egg extracts were supplemented with α-[32P] dATP (3000 Ci/mmol, PerkinElmer) and either demembranated sperm nuclei (1000/l of extract) or M13 ssDNA (200 ng/µl; NEB). At the indicated time points, samples were neutralized in 10 mM EDTA, 0.5% SDS, 200 μg/ml Proteinase K (Sigma) and incubated at 37°C overnight. Incorporation of radioactive label was determined by TCA precipitation on GF/C glass fiber filters (Whatman) following by scintillation counting.
 
-## Full-range dose matrix approach
+### Full-range dose matrix approach
 
 To investigate the interactions between two-drug combinations, we used a synergy matrix assay that was previously described in details (Tosi et al., 2018). The effects of drug combinations on cell growth was evaluated by standard sulforhodamine B (SRB) assay as described (Orellana and Kasinski, 2016). Briefly, exponentially growing cells were treated with all the combinations of five concentrations of BKC and eight concentrations of IBC in 96-well plates for 72 hr. Cells were then fixed with trichloroacetic acid solution (10%) and stained with a 0.4% sulforhodamine B solution in 1% acetic acid, washed with 1% acetic acid and incubated with 10 mM Tris-HCl solution for 10 min with gentle shaking. Absorbance at 560 nm was then measured using a PHERAstar FS plate reader (BMG Labtech, Ortenberg, Germany), and cell survival (blue matrix) was calculated in comparison with untreated cells. Experiments have been performed three times independently for each cell line, and a representative matrix is shown as an example for each cell line. A synergy matrix was then calculated as described previously (Tosi et al., 2018) to quantify the interaction effect: a red color in the matrix indicates a synergism, a black color additivity, and a green color an antagonism.
 
-## In silico molecular docking
+### In silico molecular docking
 
 To explore human DNA polymerase and BKC interaction, BKC was docked into the polymerase active site using GOLD docking tool with BIOVIA Discovery Studio (Dassault Systèmes, BIOVIA Corp., San Diego, CA). In order to construct human polymerase delta and epsilon protein models, we carried out homology modeling using yeast polymerase delta (PDB code 3IAY) and epsilon from Saccharomyces cerevisiae (PDB code 4M8O) as templates, respectively. Similarly, to investigate the interaction between checkpoint kinase and IBC, IBC was docked into the active site of CHK1 (PDB code 5F4N) and CHK2 (PDB code 4BDK). The crystal structures of DNA polymerase and checkpoint kinase were downloaded from RCSB Protein Data Bank. The proteins and compound atoms were applied with CHARMm force field.
 
-## Animal study
+### Animal study
 
 Female NOD/SCID mice were National Laboratory Animal Center, Taiwan. All mice had free access to chow and water, and were housed at 21–23°C with 12 hr light–12 hr dark cycles. All mice were handled in accordance with the guidelines laid out by the Academia Sinica Institutional Animal Care and Utilization Committee (protocol no. 10-12-097). To generate MCF tumor-bearing mice, MCF-7/Luc cells (1 × 104) were subcutaneously inoculated into the fat pad of the mice as published (Kuo et al., 2017). Eight groups of the mice received an intraperitoneal injection of PBS (Ctl), Taxol (5 mg/kg), IBC (0.3 and 1.5 mg/kg), BKC (1 and 5 mg/kg), and a combination of IBC and BKC (0.3 mg/kg IBC + 1 mg/kg BKC and 1.5 mg/kg IBC + 5 mg/kg BKC), thrice a week, from days 2 to 30 after tumor graft. The mice were daily measured for survival rate. Their tumor growth was weekly monitored using the IVIS system (Xenogen, USA). The signal of the bioluminescence from mice was quantified using Living Image 2.5 (Xenogen) as photons/s/region of interest.
 
-## Immunohistochemical analysis
+### Immunohistochemical analysis
 
 Tumors were removed from mice 28 days post tumor inoculation. The tumors were fixed, dehydrated, and embedded into paraffin. The tumor sections were stained with the antibody against Ki67, p-CHK1, and p-CHK2 and TUNEL kits. The signal of the sections was visualized and quantified using AxioVision software (Carl Zeiss MicroImaging).

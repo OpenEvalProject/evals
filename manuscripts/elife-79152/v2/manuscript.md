@@ -14,11 +14,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 Eunice Kennedy Shriver National Institute of Child Health and Human Development (NICHD), National Institutes of Health (NIH) Bethesda United States
-2. https://ror.org/01cwqze88 Brown University - National Institutes of Health Graduate Partnership Program Providence United States
-3. https://ror.org/0168r3w48 Department of Medicine, University of California, San Diego San Diego United States
-4. https://ror.org/008xxew50 Department of Clinical Neurophysiology and MEG Center, Amsterdam Neuroscience, Vrije Universiteit Amsterdam Amsterdam Netherlands
-5. https://ror.org/0168r3w48 Biocircuits Institute, University of California, San Diego La Jolla United States
+1. Eunice Kennedy Shriver National Institute of Child Health and Human Development (NICHD), National Institutes of Health (NIH) Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+2. Brown University - National Institutes of Health Graduate Partnership Program Providence United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+3. Department of Medicine, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+4. Department of Clinical Neurophysiology and MEG Center, Amsterdam Neuroscience, Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))
+5. Biocircuits Institute, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
 
 † Corresponding author
 
@@ -36,27 +36,270 @@ To better characterize ORN response dynamics, we made extracellular recordings f
 
 ## Results
 
-## ORNs can respond to odors with four distinct firing patterns
+### ORNs can respond to odors with four distinct firing patterns
 
 To characterize the response properties of ORNs, we made extracellular recordings from antennae of intact locusts by placing electrodes against the base of sensilla while delivering pulses of odors well-separated from each other in time (40 animals, 62 sensilla, 198 odor-ORN pairs) (Figure 1A). Because sensilla contain multiple ORNs (Ochieng et al., 1998), we then analyzed the recorded waveforms with a spike sorting algorithm to assign odor-elicited spikes to individual ORNs (Figure 1—figure supplement 1). We recorded mainly from trichoid sensilla because they contain small numbers of ORNs (3–5, Ochieng et al., 1998) making spike sorting tractable, but we found unsorted, population activity recorded from other types of sensilla yielded results consistent with the responses of sorted ORNs, including prominent onset and offset activity (Figure 1—figure supplement 2). All results other than those shown in Figure 1—figure supplement 2 are based on recordings from trichoid sensilla.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig1-v2.jpg)
+
+**Figure 1.:** (A) Extracellular recordings were made with a blunt quartz electrode placed on the base of the sensillum. (B) Raster plot shows ORN spikes elicited by 1 s odor pulse (black bar at top). Horizontal lines separate ORN-odor pairs (five trials each). A hierarchical clustering algorithm (see ‘Materials and methods’) grouped these responses into four distinct motifs. (C) Histograms show the four motifs (excitatory, delayed, offset, and inhibitory) reliably elicited by 1 s and 4 s odor pulses. Five trials each; bold lines: means; shading: SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Raw voltage recording shows extracellular sensillum responses to pulses of cyclohexanol and octanol. Insets show two waveforms, each originating from spikes in different ORNs. (B) Recordings were then processed through a spike sorting algorithm (see ‘Materials and methods’) to create a raster plot of the two responsive ORNs in this sensillum. (C) Peristimulus time histogram of the two sorted ORN responses. ORN 1 has an excitatory response to both odorants, whereas ORN 2 has an excitatory response to cyclohexanol and an inhibitory response to octanol. bold lines: means; shading: SEM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Extracellular sensillum recording showing responses to cyclohexanol and pentyl acetate. (B) Inset: dense spiking activity from many ORNs makes accurate spike sorting impossible. Gray dotted line: threshold used to detect unsorted spikes within the population response. (C) Peristimulus time histogram showing timing of these spikes. The same ORN population shows different response patterns depending on the odor: cyclohexanol appears to elicit excitatory as well as offset motifs, but pentyl acetate appears to elicit mainly the excitatory motif. bold lines: means; shading: SEM.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Distance between all olfactory receptor neuron (ORN) responses. (B) Comparison of intra-cluster distances with average distances randomly sampled for the delayed cluster (left) and with all intra-cluster distance means, all cluster means are well below the 5th percentile (right). (C) Clusters are distinct from each other: (top-left) p-values for each comparison between different clusters, note, the comparison metric is non-symmetric (see ‘Materials and methods’); example of comparison between the excitatory and delayed clusters (top right); and the two comparisons between the offset and inhibitory clusters. See the ‘Materials and methods’ for an interpretation of these statistics.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** A total of 198 odor-ORN responses are plotted in thin gray lines with the average response shown in a thicker color line. Black bar: 1 s odor pulse.
+
 We used an unsupervised hierarchical clustering method to group odor-elicited responses, pooled across odor-ORN combinations, into categories (Figure 1B). Notably, we found the responses, particularly to longer stimuli, did not fall into a continuum of patterns, but rather clustered into distinct motifs; a boot-strap analysis indicated that four motifs provided the best clustering of responses (see ‘Materials and methods,’ Figure 1—figure supplement 3). We termed these four response motifs excitatory, delayed, offset, and inhibitory (Figure 1C, Figure 1—figure supplement 4; see ‘Materials and methods’). Excitatory responses featured a sharp increase in firing rate at the immediate onset of the odor and decayed rapidly back to baseline even as the stimulus persisted. Delayed responses featured a slower increase in firing rate and a gradual decay back to baseline throughout an odor pulse. Inhibitory responses featured a sharp decrease in firing rate during an odor presentation that returned to the baseline level after the odor was removed. Offset responses were also inhibited during odor presentation but, upon the removal of odor, immediately showed an increase in firing rate exceeding the baseline level. Also, 1 s and 4 s odor pulses elicited similar results (Figure 1C).
 
-## A given ORN can generate more than one response motif
+### A given ORN can generate more than one response motif
 
 Notably, a given ORN could respond with different patterns of spiking when presented with different odors. For example, from the same ORN, a brief pulse of pentyl acetate reliably elicited a delayed response motif, but an identical pulse of cyclohexanol reliably elicited an excitatory response motif (Figure 2A). This phenomenon, termed response motif switching, was not rare, occurring with probabilities ranging from 0.31 to 0.66 (mean = 0.38) for different pairs of odors (see Figure 2B–D). By contrast, we found very little switching across repeated trials of the same odor (0.096), and an intermediate amount of switching across concentrations of the same odor (0.25, see Figure 2—figure supplement 1). Thus, motif switching appears to convey information about odorant identity and concentration in a way that is robust to trial-to-trial variation.
 
-## Different ORN response motifs have different adaptation profiles
+![Figure 2.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig2-v2.jpg)
+
+**Figure 2.:** (A) A single example ORN responds to two different odorants with different motifs. Five trials; bold lines: mean firing rate; shading: SEM. (B) Raster plots show spiking responses of 41 ORNs to 1 s (black bar) pulses of hexanol and cyclohexanol. Responses to both odors are sorted by motifs elicited by hexanol. (C) Conditional probability of an ORN producing a specific motif in response to hexanol given its response motif to octanol. (D) Switching probabilities varied with odor pairs (numbers at bottoms of bars: numbers of tested ORNs).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Two example neurons stimulated with varying concentrations of hexanol (0.1–100%). Bold lines: mean firing rate, five trials; shading: SEM.
+
+### Different ORN response motifs have different adaptation profiles
 
 ORN responses adapt when odor pulses are lengthy or repeated rapidly (Barrozo and Kaissling, 2002; Bau et al., 2002; Lemon and Getz, 1997; Marion-Poll and Tobin, 1992). To characterize response adaptation properties of each ORN response motif, we delivered repeated 200 ms odor pulses at a range of inter-pulse intervals (IPIs) (see ‘Materials and methods’; Figure 3A, Figure 3—figure supplement 1, Table 1). Notably, each response motif showed a distinct adaptation profile (Figure 3B; see ‘Materials and methods’ for details of analysis). The peak of excitatory motif responses decreased significantly over a train of odor pulses presented at brief, 0.5 s IPI. However, under the same stimulus conditions, the peaks of offset motif responses increased significantly, even with IPIs as long as 1.0 s; the average final response to an IPI of 0.5 s was threefold larger than the first. The delayed motif tended to increase after the first odor pulse, but this trend fell just short of statistical significance (Table 1). The inhibitory motif appeared to show no adaptation.
 
-## Computational modeling of ORN response motifs
+![Figure 3.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig3-v2.jpg)
 
-The response motifs we observed in vivo seemed likely to contribute to the processing of olfactory information. To test this idea, we designed a computational model based on observations made in vivo. Using the responses of ORNs to 4 s pulses of odor as templates, we constructed models of individual neurons to represent each response motif (see ‘Materials and methods’; Bazhenov et al., 2008; Rulkov, 2002; Rulkov et al., 2004); this approach allowed us to model a biologically realistic population of 10,000 ORNs. The models included realistic levels of input noise and variations in baseline activity. Individual trials were generated by creating different random instantiations for the input noise (see ‘Materials and methods’). The magnitude of each odor-specific ORN response was determined by the angle between two high-dimensional vectors: an ORN-specific chemical selectivity vector, VORN , and an odor-specific characteristic vector, Vodor (see ‘Materials and methods’), so similar odors elicited similar responses. As desired, model ORN responses to a single odor pulse (Figure 4A and B) and trains of pulses (Figure 4C) matched those found in vivo (see Figures 1 and 3). The model’s responses to pulse trains were set to adapt in motif-specific fashions as found in vivo, with the excitatory motif responses decreasing and the offset motif responses increasing with each pulse (Figure 4C). As desired, our model provided an accurate simulation of ORN responses observed in vivo (Figure 4—figure supplement 1 provides a quantitative comparison of response peaks and latencies in vivo and in the model).
+**Figure 3.:** (A) Responses of ORNs, grouped by motif, to odors pulsed at different inter-pulse intervals (IPIs). Peaks for different motifs and pulses were measured as maximum absolute change from baseline within detection windows (shaded areas). (B) Adaptation characteristics of excitatory, delayed, offset, and inhibitory response motif to 10 pulses for each IPI. Left: response motifs; Right: normalized response change from baseline. *Statistically significant changes elicited by odor pulses delivered at 0.50 s IPI. Excitatory motif responses significantly decreased; offset motif responses significantly increased; delayed motif responses modestly increased; and inhibitory motif responses did not change. See Table 1 for statistical tests.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Firing rate histograms show responses of olfactory receptor neurons (ORNs), grouped by motif, to odors pulsed at different inter-pulse intervals (IPIs). Peak spiking for different motifs and IPIs were measured within the shaded area. (B) Adaptation characteristics of excitatory, delayed, offset, and inhibitory response motif to 10 pulses for each IPI. A one-way repeated-measures ANOVA was performed to determine if there was a significant (p<0.05) effect on the response with increasing pulse number. According to this metric, the excitatory motif showed a statistically distinct change from baseline at 0.5 s and 1 s IPI. The offset motif showed a statistically distinct change from baseline at 0.5 s, 1 s, and 5 s IPI. The inhibitory motif showed a statistically distinct change from baseline at 0.75 s and 5 s IPI. Error bars: SEM.
+
+**Table 1.**
+ Results of ANOVA tests for sensory adaptation experiments shown in Figure 3B and Figure 3—figure supplement 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Excitatory motif</th>
+      <th></th>
+      <th colspan="4">Delayed motif</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IPIs (s)</td>
+      <td>Df</td>
+      <td>F-value</td>
+      <td>p-value</td>
+      <td></td>
+      <td>IPIs (s)</td>
+      <td>Df</td>
+      <td>F-value</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>0.50</td>
+      <td>1, 9</td>
+      <td>3.11</td>
+      <td>0.002</td>
+      <td></td>
+      <td>0.50</td>
+      <td>1, 9</td>
+      <td>1.98</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>0.75</td>
+      <td>1, 9</td>
+      <td>0.51</td>
+      <td>0.865</td>
+      <td></td>
+      <td>0.75</td>
+      <td>1, 9</td>
+      <td>0.88</td>
+      <td>0.549</td>
+    </tr>
+    <tr>
+      <td>1.00</td>
+      <td>1, 9</td>
+      <td>0.80</td>
+      <td>0.614</td>
+      <td></td>
+      <td>1.00</td>
+      <td>1, 9</td>
+      <td>0.38</td>
+      <td>0.938</td>
+    </tr>
+    <tr>
+      <td>1.25</td>
+      <td>1, 9</td>
+      <td>0.84</td>
+      <td>0.576</td>
+      <td></td>
+      <td>1.25</td>
+      <td>1, 9</td>
+      <td>0.73</td>
+      <td>0.675</td>
+    </tr>
+    <tr>
+      <td>1.75</td>
+      <td>1, 9</td>
+      <td>0.38</td>
+      <td>0.941</td>
+      <td></td>
+      <td>1.75</td>
+      <td>1, 9</td>
+      <td>0.32</td>
+      <td>0.966</td>
+    </tr>
+    <tr>
+      <td>5.00</td>
+      <td>1, 9</td>
+      <td>0.67</td>
+      <td>0.734</td>
+      <td></td>
+      <td>5.00</td>
+      <td>1, 9</td>
+      <td>1.41</td>
+      <td>0.210</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Offset motif</td>
+      <td></td>
+      <td colspan="4">Inhibitory motif</td>
+    </tr>
+    <tr>
+      <td>IPIs (s)</td>
+      <td>Df</td>
+      <td>F-value</td>
+      <td>p-value</td>
+      <td></td>
+      <td>IPIs (s)</td>
+      <td>Df</td>
+      <td>F-value</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>0.50</td>
+      <td>1, 9</td>
+      <td>33.06</td>
+      <td>1.484E-37</td>
+      <td></td>
+      <td>0.50</td>
+      <td>1, 9</td>
+      <td>0.78</td>
+      <td>0.634</td>
+    </tr>
+    <tr>
+      <td>0.75</td>
+      <td>1, 9</td>
+      <td>6.59</td>
+      <td>4.663E-08</td>
+      <td></td>
+      <td>0.75</td>
+      <td>1, 9</td>
+      <td>1.05</td>
+      <td>0.406</td>
+    </tr>
+    <tr>
+      <td>1.00</td>
+      <td>1, 9</td>
+      <td>4.29</td>
+      <td>4.650E-05</td>
+      <td></td>
+      <td>1.00</td>
+      <td>1, 9</td>
+      <td>1.46</td>
+      <td>0.162</td>
+    </tr>
+    <tr>
+      <td>1.25</td>
+      <td>1, 9</td>
+      <td>2.94</td>
+      <td>0.003</td>
+      <td></td>
+      <td>1.25</td>
+      <td>1, 9</td>
+      <td>1.21</td>
+      <td>0.293</td>
+    </tr>
+    <tr>
+      <td>1.75</td>
+      <td>1, 9</td>
+      <td>1.32</td>
+      <td>0.229</td>
+      <td></td>
+      <td>1.75</td>
+      <td>1, 9</td>
+      <td>0.66</td>
+      <td>0.747</td>
+    </tr>
+    <tr>
+      <td>5.00</td>
+      <td>1, 9</td>
+      <td>1.76</td>
+      <td>0.077</td>
+      <td></td>
+      <td>5.00</td>
+      <td>1, 9</td>
+      <td>1.57</td>
+      <td>0.127</td>
+    </tr>
+  </tbody>
+</table>
+
+_IPI: inter-pulse interval._
+
+### Computational modeling of ORN response motifs
+
+The response motifs we observed in vivo seemed likely to contribute to the processing of olfactory information. To test this idea, we designed a computational model based on observations made in vivo. Using the responses of ORNs to 4 s pulses of odor as templates, we constructed models of individual neurons to represent each response motif (see ‘Materials and methods’; Bazhenov et al., 2008; Rulkov, 2002; Rulkov et al., 2004); this approach allowed us to model a biologically realistic population of 10,000 ORNs. The models included realistic levels of input noise and variations in baseline activity. Individual trials were generated by creating different random instantiations for the input noise (see ‘Materials and methods’). The magnitude of each odor-specific ORN response was determined by the angle between two high-dimensional vectors: an ORN-specific chemical selectivity vector, $V_{ORN}$ , and an odor-specific characteristic vector, $V_{odor}$ (see ‘Materials and methods’), so similar odors elicited similar responses. As desired, model ORN responses to a single odor pulse (Figure 4A and B) and trains of pulses (Figure 4C) matched those found in vivo (see Figures 1 and 3). The model’s responses to pulse trains were set to adapt in motif-specific fashions as found in vivo, with the excitatory motif responses decreasing and the offset motif responses increasing with each pulse (Figure 4C). As desired, our model provided an accurate simulation of ORN responses observed in vivo (Figure 4—figure supplement 1 provides a quantitative comparison of response peaks and latencies in vivo and in the model).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig4-v2.jpg)
+
+**Figure 4.:** (A) Raster plots of simulated olfactory receptor neuron (ORN) responses illustrate each motif. Rows: different trials; horizontal lines separate responses of different ORNs. Black bar: odor pulse. (B) Firing rates averaged across trials and ORNs by motif. Bold line: mean; shading: SEM; compare to Figure 1C. (C) Model driven at 0.50 s inter-pulse interval (IPI) simulates adaptation profiles of each motif; firing rate averaged across ORNs within a motif; compare to Figure 3A. (D) Principal component analysis of excitatory only ORN responses (blue) or all response motifs (red) shows the inclusion of multiple motifs adds to the complexity of the responses. (E) The model can vary response magnitude and motif independently; responses of a single model ORN to three different odors are shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Left: the peak responses were calculated as the maximum firing rate for the excitatory, delayed, and offset motifs, and as the minimum firing rate for the Inhibitory motif. Right: the response latencies were calculated as the time required to reach the peak response.
 
 We used this model to determine how the diversity of ORN motifs contributes to the complexity of the odor response. In principle, more complex odor responses allow for higher coding dimensionality. We quantified response complexity by performing principal component analysis (PCA) and evaluating the number of components needed to explain the variance across the entire population; a more complex odor response would require more principal components to explain the same amount of variance. We compared responses encoded only by excitatory motifs to responses including all motifs using numbers of ORNs matched between these two cases (N = 1374 each). When only excitatory motifs were included in the analysis, the first component alone explained nearly 30% of the variance and the second component added only ~1%. In contrast, when all motifs were included, the first component only explained ~15% of variance and 27 principal components were required to explain 30% of the variance (Figure 4D). Thus, the existence of four response motifs dramatically expanded the dimensionality of the odor representation.
 
-## Response motif switching contributes substantially to odor classification
+### Response motif switching contributes substantially to odor classification
 
 With our model, we could independently vary odor-elicited response motifs and response magnitudes (Figure 4E), allowing us to evaluate the extent to which motif switching benefited odor classification in a way that cannot be tested in vivo. Thus, we simulated a realistically large number of ORNs (10,000) and compared the relative success of classifying two different odors (odor 1 and odor 2) with three different versions of our model in which we systematically varied the probability of motif switching. Model version 1: the probability of switching response motif when switching from odor 1 to odor 2 was 0%; version 2: 10%; version 3: 50%. We found that the model versions that simulated higher motif switching probability made it easier to distinguish these two similar odors. Figure 5A shows the responses of 41 example ORNs. Trajectories of the responses of the 10,000 ORN population over time plotted in PCA-reduced space (see ‘Materials and methods’) increasingly separated as the probability of motif switching increased (Figure 5B), demonstrating that motif switching made the ORN population responses to the two odors more different from each other. When we independently varied the similarity of the odors and the probability of motif switching (see Figure 4E), support vector machine (SVM)-based classification of the ORN responses showed classification accuracy improved as motif switching probability increased for all degrees of odor similarity (Figure 5C). With 4 s odor pulses, even the lowest tested probability of motif switching (10%) substantially improved odor classification to the point that it made a difficult classification task (when test odors were very similar) as successful as an easy classification task (when odors were very different). Together, these results demonstrate that motif switching, even if infrequent, can contribute substantially to successful odor classification.
 
@@ -64,15 +307,23 @@ With our model, we could independently vary odor-elicited response motifs and re
 
 **Figure 5.:** (A) Simulated olfactory receptor neuron (ORN) spiking illustrates different motif switching probabilities. Odors 1 and 2 are similar (see ‘Materials and methods’). Each ORN response is sorted by motifs elicited by odor 1. Raster plots show the responses to odor 2 become increasingly different from responses to odor 1 as motif switching probability increases. (B) ORN odor-elicited response trajectories in reduced principal component analysis (PCA) space show motif switching increases the separation between responses to similar Odors 1 and 2; response to odor 1 (blue) is the same in each panel; response to odor 2 (red) changes with switching probability. (C) Odor classification success as a function of odor similarity and motif switching probability for 1 s (top) and 4 s (bottom) stimulus pulses; even low switching probabilities improve classification performance; darker shading indicates lower classification accuracy. Odor similarity is quantified by angles (degrees) between odor vectors (see ‘Materials and methods’).
 
-## Response motifs represent complex odor plume features
+### Response motifs represent complex odor plume features
 
 The four response motifs of ORNs differed in their timing and adaptation properties, suggesting that they could contribute to encoding temporal features of olfactory stimuli. In natural environments, odorant molecules are usually arranged by a turbulent medium, air or water, into temporally complex plumes. We used the statistics of open-field measurements of real plumes (Murlis et al., 2000) to generate realistic, repeatable artificial plumes that included a distribution of ‘burst’ lengths (see ‘Materials and methods’), and delivered them to the antennae of intact locusts while recording responses from ORNs in vivo (Figure 6A, top and middle). We also simulated the same plumes in our model (Figure 6A, bottom). The motif-dependent adaptation we had observed in vivo (Figure 3A) and reproduced in silico (Figure 4C) introduced motif-specific sensitivities to stimulus history. Notably, long bursts within a plume led to decreased excitatory motif responses but increased delayed motif responses (e.g., Figure 6A, ~9–12 s). On the other hand, short bursts led to increased excitatory motif responses but did not change the delayed motif responses (e.g., Figure 6A, ~5 s). This motif-specific history dependence appeared likely to contribute to encoding temporally complex stimuli.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig6-v2.jpg)
+
+**Figure 6.:** (A) Top: odor plume generated by opening and closing an olfactometer valve, measured by a photoionization detector (PID), and delivered to locust antennae in vivo. Plume represents sampling 2.5 m from odor source. Middle: responses of olfactory receptor neurons (ORNs) recorded in vivo; bottom: responses of model ORNs. (B) Linear–nonlinear prediction of excitatory-type ORN activity in vivo. The first 16 s of 40 s odor plumes were used for training and the next 16 s were used for testing. To assess the agreement, the test stimulus (left) was convolved with the learned filter and the result was passed to the learned threshold function (middle) to generate the predicted firing rate (right). Shading denotes a 95% confidence interval of prediction (see ‘Materials and methods’). Stimulus correlations in naturalistic stimuli were accounted for (see ‘Materials and methods’). (C) Averages of learned filters across all ORNs within a response motif in vivo (top) and in the model (bottom). Delay indicates time since the stimulus arrived at the antenna. (D) Principal component analysis of filters in the delay dimension. Filters of the same response motif cluster together. Top: filters colored by motif type. Bottom: two principal components in the analysis.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79152/elife-79152-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Color plot of log10(p-values). Vertical and horizontal lines separate the same sets of motif groups as in Figure 6C. One-way ANOVA was performed, F(14,374) = 1830.2, p=0. p-Values from Bonferroni post-hoc tests are plotted. Red/white colors denote significant differences, and blue/black colors denote insignificant differences.
 
 To quantify how each motif contributes to processing time-varying odor plumes, we applied a commonly used linear–nonlinear analysis scheme (Butts et al., 2007; Geffen et al., 2009). In this approach, the true firing rate of the neuron, r(t), is predicted by convolving a linear filter, f(t), with the time-varying stimulus, s(t), and then the convolved product is thresholded with a nonlinear function, g(x). This filter is useful because the waveform of the linear filter, f(t), derived from this method precisely describes the sensitivity of the neuron to the history of the stimulus. To compute these filters, briefly, we deconvolved the stimulus, s(t), from the firing rate data, r(t), collected from ORNs. This approach allowed us to calculate filters for each ORN response in vivo and in the model (Figure 6B illustrates this approach; see ‘Materials and methods’). As desired, these reconstructions accurately reproduced the firing rates of the ORNs from their trained filters on data not used for training.
 
 As desired, filters generated from the model and from responses recorded in vivo matched closely (Figure 6C, Figure 6—figure supplement 1). We observed that different response motifs generated distinct filter waveforms, describing the different sensitivities of each motif to the temporal features of the odor plume. For example, filters for excitatory motifs showed that the ORNs generating them were most responsive ~0.4 s after odor filaments arrived (Figure 6C). To examine the stimulus-history dependence of the ORNs as a population, we embedded the filter waveforms of all the individual ORNs into an N-dimensional space (where N was the number of sample points for each filter) and used PCA to reduce each filter waveform into a single point in a two-dimensional space. We found that ORN filters clustered by motif in this space. Inhibition motifs (offset and inhibitory) and excitation motifs formed two ends of the principal filter axis, with the second dimension separating the delay motif from the other three (Figure 6C and D). This analysis revealed that each ORN response motif contributes uniquely to the olfactory system’s representation of the odor plume’s complex temporal structure.
 
-## Response motif diversity increases sensitivity to the distance to odor source
+### Response motif diversity increases sensitivity to the distance to odor source
 
 Our finding that different response motifs are sensitive to the different temporal features of a complex natural stimulus raised the possibility that this information could be used for ecologically relevant tasks that rely on assessing the timing of a stimulus. Published reports indicate a reliable relationship between the frequency of filaments within an odor plume and the distance to its source (Murlis et al., 2000). Further, evidence from walking fruit flies suggests that they navigate toward an odor source in response to both the overall frequency and inter-pulse intervals of their encounters with the odor plume (Demir et al., 2020; Álvarez-Salvado et al., 2018; Jayaram et al., 2022). To test whether, in principle, the diversity of ORN response motifs could help an animal determine the distance to an odor source (a key aspect of navigation), we simulated odor plumes characteristic of an odorant located 2.5 m, 5 m, 10 m, or 20 m away (Murlis et al., 2000). We used our model to generate responses of ORNs to these distance-specific plumes (Figure 7A; see ‘Materials and methods’).
 
@@ -110,17 +361,17 @@ In summary, we found that the responses of ORNs in the locust are organized into
 
 ## Materials and methods
 
-## Electrophysiology
+### Electrophysiology
 
 Recordings were made from 132 young adult locusts (Schistocerca americana) raised in a crowded colony. For experiments, locusts were secured with tape and wax into a Petri dish with one antenna exposed. An AgCl reference electrode was placed into the eye contralateral from the recording antenna. A saline-filled glass electrode (~10 µm, ~10 MΩ) was placed into the exposed antenna as a differential electrode. An identical electrode attached to a head stage (Axon instruments, X0.1LU) was placed at the base of a sensillum to acquire signals through an amplifier (Axon Instruments, Axoclamp 2b). The acquired signal was amplified ×3000 (Brownlee Precision, Model 440) and digitally sampled (National Instruments, USB-6212 and USB-6215 DAQ; Labview Software) at 10 kHz. Extracellular recordings from ORNs were made from different types of sensilla (sensilla chaetica and sensilla trichodea). Spike sorting was done offline with a whole wave algorithm (Pouzat et al., 2002) implemented in MATLAB (MathWorks). Sorted recordings were only included in the study if they were estimated to have <5% false positives and <5% false negatives during stimulation (Hill et al., 2011).
 
-## Odor stimulation
+### Odor stimulation
 
 The odor delivery system has been described previously (Brown et al., 2005). Briefly, a constant stream of dried and activated carbon-filtered air (0.9 l min–1) was directed to the antenna through a plastic tube (6.5 mm inner diameter). A vacuum funnel (7 cm) was placed behind the animal to clear the odor space. Odorized air (0.5 L min–1) was delivered by injecting air with a pneumatic pump (Reliable Pneumatic PicoPump, World Precision Instruments) into the head space of a 100 ml glass bottle containing odorant solutions diluted in mineral oil (JT Baker) to various concentrations, and then into the constant stream. The odorant chemicals (Sigma) used in this study are components of the locust diet, wheat grass: 1-octanol (OCT), 1-hexanol (HEX0.1, HEX1, HEX, HEX100; 0.1, 1, 10, and 100% by volume, respectively), and cyclohexanol (CYC). Pentyl acetate (PET), a naturally occurring chemical with an apple-like scent, was used as well.
 
 Odorants other than 1-hexanol solutions were diluted to 10% by volume. The artificial plume stimulus was based on the burst length and burst return parameters derived from real odor plumes measured outdoors; see the ‘Distance-based artificial plume generation’ section (Aldworth and Stopfer, 2015; Murlis et al., 2000).
 
-## Response motif clustering
+### Response motif clustering
 
 We binned the spike-sorted responses of individual ORNs to 1 s odor pulses into 50 ms windows. Only responsive cells, those whose stimulus-evoked activity exceeded 2 standard deviations from the pre-stimulus mean, were included in the clustering analysis. A hierarchical cluster tree was created through unsupervised agglomerative hierarchical clustering (‘linkage’ function in MATLAB) using the Euclidean distance metric and the Ward agglomeration method. Responses were centered and normalized by the standard deviation before clustering.
 
@@ -128,68 +379,188 @@ We employed two tests to determine whether our clustering method separated respo
 
 This analysis showed that response motifs formed significantly distinct clusters (passed Test 1) when we directed the algorithm to produce two, three, or four clusters. When five or more clusters were produced, the results failed Test 1 and/or Test 2. The choice of four clusters matched the impressions of experimenters viewing the data. Test 2, however, showed that inhibitory and offset clusters based on responses to 1 s stimuli were not always statistically distinct from one another, likely because floor effects limited the extent to which the inhibitory portions of these responses could vary, and because the 1 s odor stimulus elicited brief responses in which some onset and offset features overlapped. However, the same analysis applied to response motifs elicited by lengthier 4 s pulses of odorants always yielded statistically distinct inhibitory and offset clusters. Further, inhibitory and offset responses showed different adaptation profiles (see below), suggesting that they are driven, at least in part, by different mechanisms. Also, inhibitory and offset motifs would trigger different consequences downstream, with only the offset motif eliciting post-stimulus spiking in follower neurons. Thus, going forward, we included four distinct response motifs in our analysis.
 
-## Quantification of motif switching
+### Quantification of motif switching
 
 Motif switching rates were calculated by dividing the number of observed motif switches by the number of motif switching opportunities. The number of switching opportunities varied across subjects because some odor presentations did not elicit detectable responses from some ORNs.
 
-## Adaptation analysis
+### Adaptation analysis
 
 Sensory adaptation was tracked by measuring the maximum absolute change in firing rate from baseline to a detection window (highlighted in gray, Figure 3A, Figure 3—figure supplement 1) that followed each odor pulse in the trial. The baseline was defined as the spike rate during the 2 s prior to the delivery of the first odor pulse in each trial. The maximum absolute change value following each odor pulse was then normalized within each trial by that trial’s maximum firing rate. This was done to measure the proportion of change within each trial as an index of adaptation. Results were tested for significance by one-way repeated-measures ANOVAs.
 
-## Model of ORN response
+### Model of ORN response
 
-We designed ORN models based on a computationally efficient approach we previously proposed to simulate the neuronal dynamics of different types of neurons (Bazhenov et al., 2008; Rulkov, 2002; Rulkov et al., 2004). This phenomenological neuron model is described by a set of difference (map) equations and offers several numerical advantages: it avoids the common problem of selecting the proper integration scheme since the model is already written in the form needed for computer simulations; simulations with large time steps are stable and precise and tens to thousands of times faster than models based on differential equations (e.g., Hodgkin–Huxley models); model parameters can be adjusted to match experimental data (Bazhenov et al., 2008; Rulkov and Bazhenov, 2008; Rulkov et al., 2004). We previously used this approach to describe populations of locust Kenyon cells in Assisi et al., 2020; Assisi et al., 2007; Kee et al., 2015; Sanda et al., 2016. Here, briefly, difference equations, rather than ordinary differential equations, were used to generate a sequence of membrane potential samples at discrete time points with time step  h = 0.5 ms,(1)  xn+1=fαxn,yn+βn,                    yn+1=yn-μ1+xn-σ-σn,
+We designed ORN models based on a computationally efficient approach we previously proposed to simulate the neuronal dynamics of different types of neurons (Bazhenov et al., 2008; Rulkov, 2002; Rulkov et al., 2004). This phenomenological neuron model is described by a set of difference (map) equations and offers several numerical advantages: it avoids the common problem of selecting the proper integration scheme since the model is already written in the form needed for computer simulations; simulations with large time steps are stable and precise and tens to thousands of times faster than models based on differential equations (e.g., Hodgkin–Huxley models); model parameters can be adjusted to match experimental data (Bazhenov et al., 2008; Rulkov and Bazhenov, 2008; Rulkov et al., 2004). We previously used this approach to describe populations of locust Kenyon cells in Assisi et al., 2020; Assisi et al., 2007; Kee et al., 2015; Sanda et al., 2016. Here, briefly, difference equations, rather than ordinary differential equations, were used to generate a sequence of membrane potential samples at discrete time points with time step  $h$ = 0.5 ms,
 
-where the variable xn given by the first equation modeled the fast dynamics of a neuron where each spike is formed by a single iteration with xn=1 due to the use of the discontinuous nonlinear function(2)fα(xn,u)={α(1−xn)+u,if xn<−0.5,1,if−0.5≤ xn<1,−1,if xn≥1.
+$$
+  x_{n+1}=f_{\alpha}x_{n},y_{n}+\beta_{n},                    y_{n+1}=y_{n}-\mu1+x_{n}-\sigma-\sigma_{n}, 
+$$
 
-The second equation for variable yn controlled the slower (0<μ≪1) transient dynamics of the spiking activity and subthreshold oscillations. Intrinsic parameters α and σ define the baseline state and the regime of spiking in each neuron, determining whether the neuron produces tonic spiking or a burst of spikes. βn and  σn are input variables setting fast (βn) and slow (σn) responsivity on the map model to external influences. βr and σr are used to tune the shape of receptor response. For inhibitory cells, βr controls the level of rebound activity. It is the parameter driving the post-stimulus effect. For excitatory cells, it controls the fast response to the stimulus and the deceleration of spiking responses as follows: , (3)    σn= σξ ξn+σr In,
+where the variable $x_{n}$ given by the first equation modeled the fast dynamics of a neuron where each spike is formed by a single iteration with $x_{n}=1$ due to the use of the discontinuous nonlinear function
 
-where coefficients βr and σr in front of the stimulus In were used to tune the shape of the receptor response for features such as speed of reaction in excitatory cells and the level of rebound activity in inhibitory cells. The noise ξn in the ORN neurons was modeled as Ornstein–Uhlnebeck (OU) process:(4)ξn+1=qξn-p wn,
+$$
+f_{\alpha}(x_{n},u)={\frac{\alpha}{(1−x_{n})}+u,if x_{n}<−0.5,1,if−0.5\leq x_{n}<1,−1,if x_{n}\geq1.
+$$
 
-p = d 1-q2, h = 0.5 ms, the iteration time step, τc is the correlation time in ms, and d is the standard deviation of white Gaussian noise  wn . Parameters of the noise model were set to  τc = 3 ms, d  = 0.01, βξ = 0.1, σξ = 1.0. Distinct trials were generated using different random initialization for these noise processes.
+The second equation for variable $y_{n}$ controlled the slower ($0<\mu≪1$) transient dynamics of the spiking activity and subthreshold oscillations. Intrinsic parameters α and σ define the baseline state and the regime of spiking in each neuron, determining whether the neuron produces tonic spiking or a burst of spikes. $\beta_{n}$ and $ \sigma_{n}$ are input variables setting fast ($\beta_{n}$) and slow ($\sigma_{n}$) responsivity on the map model to external influences. $\beta^{r}$ and $\sigma^{r}$ are used to tune the shape of receptor response. For inhibitory cells, $\beta^{r}$ controls the level of rebound activity. It is the parameter driving the post-stimulus effect. For excitatory cells, it controls the fast response to the stimulus and the deceleration of spiking responses as follows:
 
-The input current, In , was shaped using a first-order low-pass filter:(5)In+1=γsIn+(1-γs)assn,
+$$
+    \sigma_{n}= \sigma^{ξ} ξ_{n}+\sigma^{r} I_{n},
+$$
 
-where sn is the stimulus (odor concentration), the parameter γs is the controlled relaxation time, and as is the controlled responsivity strength and type (excitation or inhibition).
+where coefficients $\beta^{r}$ and $\sigma^{r}$ in front of the stimulus $I_{n}$ were used to tune the shape of the receptor response for features such as speed of reaction in excitatory cells and the level of rebound activity in inhibitory cells. The noise $ξ_{n}$ in the ORN neurons was modeled as Ornstein–Uhlnebeck (OU) process:
 
-To model the different types of responses to an odor we observed in ORNs in vivo, we altered the parameters βr and γs , and as defining response onset speed, and other equations to shape transient characteristics of input current In with discrete-time filters based on the neuron motif. For a given motif, each of these parameters is fixed for all time and for all neurons of that motif.
+$$
+ξ_{n+1}=qξ_{n}-p w_{n},
+$$
 
-For example, the inhibited and offset motif are driven below baseline firing rate by stimulus due to the negative sign of the as parameter. The delayed response motif features inhibition first, and, then excitation with a slow relaxation rate. To model the initial inhibition, we used a fast high-pass-filtered current and mixed it with the low-pass output to form a short negative pulse at the beginning.(6)In+1d=γdInd+ad(sn-sn-1),hn+1p=γhhnp+(sn-sn-1),In+1p=γpInp+(1-γp)apsnhn+1p,
+$p$ = $d \sqrt{1-q^{2}}$, $h$ = 0.5 ms, the iteration time step, $\tau_{c}$ is the correlation time in ms, and $d$ is the standard deviation of white Gaussian noise $ w_{n}$ . Parameters of the noise model were set to  $\tau_{c}$ = 3 ms, $d $ = 0.01, $\beta^{ξ}$ = 0.1, $\sigma^{ξ}$ = 1.0. Distinct trials were generated using different random initialization for these noise processes.
 
-which are limited using the Heaviside function H for Ind and mixed with Inp(7)InM=Inp-HIndInd
+The input current, $I_{n}$ , was shaped using a first-order low-pass filter:
 
-making input current for such receptors as(8)In=H(InM+L)InM,
+$$
+I_{n+1}=\gamma^{s}I_{n}+(1-\gamma^{s})a^{s}s_{n},
+$$
+
+where $s_{n}$ is the stimulus (odor concentration), the parameter $\gamma^{s}$ is the controlled relaxation time, and $a^{s}$ is the controlled responsivity strength and type (excitation or inhibition).
+
+To model the different types of responses to an odor we observed in ORNs in vivo, we altered the parameters $\beta^{r}$ and $\gamma^{s}$ , and $a^{s}$ defining response onset speed, and other equations to shape transient characteristics of input current $I_{n}$ with discrete-time filters based on the neuron motif. For a given motif, each of these parameters is fixed for all time and for all neurons of that motif.
+
+<table>
+  <thead>
+    <tr>
+      <th>Response motif</th>
+      <th>as</th>
+      <th>γs</th>
+      <th>βr</th>
+      <th>σr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Excitatory</td>
+      <td>0.039</td>
+      <td>0.995</td>
+      <td>0.1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Inhibited</td>
+      <td>–0.02</td>
+      <td>0.998</td>
+      <td>0.1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Offset</td>
+      <td>–0.04</td>
+      <td>0.998</td>
+      <td>0.2</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+For example, the inhibited and offset motif are driven below baseline firing rate by stimulus due to the negative sign of the $a^{s}$ parameter. The delayed response motif features inhibition first, and, then excitation with a slow relaxation rate. To model the initial inhibition, we used a fast high-pass-filtered current and mixed it with the low-pass output to form a short negative pulse at the beginning.
+
+$$
+I_{n+1}^{d}=\gamma^{d}I_{n}^{d}+a^{d}(s_{n}-s_{n-1}),
+$$
+
+
+
+$$
+h_{n+1}^{p}=\gamma^{h}h_{n}^{p}+(s_{n}-s_{n-1}),
+$$
+
+
+
+$$
+I_{n+1}^{p}=\gamma^{p}I_{n}^{p}+(1-\gamma^{p})a^{p}s_{n}h_{n+1}^{p},
+$$
+
+which are limited using the Heaviside function H for $I_{n}^{d}$ and mixed with $I_{n}^{p}$
+
+$$
+I_{n}^{M}=I_{n}^{p}-HI_{n}^{d}I_{n}^{d}
+$$
+
+making input current for such receptors as
+
+$$
+I_{n}=H(I_{n}^{M}+L)I_{n}^{M},
+$$
 
 where parameter L in Heaviside limits the depth of inhibition at the beginning of response.
 
-## Model of odor selectivity
+<table>
+  <thead>
+    <tr>
+      <th>Response motif</th>
+      <th>ap</th>
+      <th>γp</th>
+      <th>ad</th>
+      <th>γd</th>
+      <th>γh</th>
+      <th>L</th>
+      <th>βr</th>
+      <th>σr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Delayed</td>
+      <td>0.08</td>
+      <td>0.999</td>
+      <td>0.8</td>
+      <td>0.99</td>
+      <td>0.99985</td>
+      <td>–0.04</td>
+      <td>0.01</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
 
-We used an angle-based method to model the interactions between ORNs and odors. Each model ORN was assigned a selectivity vector, VORN , and similarly each odor was assigned a characteristic vector, Vodor . These vectors are defined in an arbitrary n-dimensional space. The efficacy or the odor–receptor interaction is given by Raman et al., 2010(9)RiA=σ( |Vodor|⋅cosp(θ))
+### Model of odor selectivity
 
-where θ is the angle between VORN and Vodor in the n-dimensional space, p is a parameter that defines the receptive field width of the receptor, and σ(x) is the sigmoid response function defined as(10)σ(x)=[1+exp(-a1(x-a2))]-1
+We used an angle-based method to model the interactions between ORNs and odors. Each model ORN was assigned a selectivity vector, $V_{ORN}$ , and similarly each odor was assigned a characteristic vector, $V_{odor}$ . These vectors are defined in an arbitrary n-dimensional space. The efficacy or the odor–receptor interaction is given by Raman et al., 2010
 
-with a1=15, a2=0.3. Consequently, odors whose characteristic vectors are close to a given ORN’s selectivity vector will elicit a strong response in that ORN. Two odors that are close in this n-dimensional space are similar to each other and thus elicit similar responses across the population of ORNs.
+$$
+R_{i}^{A}=\sigma( |V_{odor}|⋅cos^{p}(\theta))
+$$
 
-Here, we defined the odor and receptor vectors in a 3D space, n = 3, with each coordinate xi∈[0,1] (Raman et al., 2010). ORN response vectors were chosen randomly in the positive octant. For classification experiments, we defined a fixed initial odor vector (odor 1), we then created additional odor vectors at increasing angles of separation from the first odor. Odors were numbered by decreasing similarity to odor 1, for example, odor 2 is more similar to odor 1 than odor 9 to odor 1. All odor vectors were normalized.
+where $\theta$ is the angle between $V_{ORN}$ and $V_{odor}$ in the n-dimensional space, $p$ is a parameter that defines the receptive field width of the receptor, and $\sigma(x)$ is the sigmoid response function defined as
 
-## Principal component analysis
+$$
+\sigma(x)=[1+exp(-a_{1}(x-a_{2}))]^{-1}
+$$
+
+with $a_{1}=15$, $a_{2}=0.3$. Consequently, odors whose characteristic vectors are close to a given ORN’s selectivity vector will elicit a strong response in that ORN. Two odors that are close in this n-dimensional space are similar to each other and thus elicit similar responses across the population of ORNs.
+
+Here, we defined the odor and receptor vectors in a 3D space, n = 3, with each coordinate $x_{i}\in[0,1]$ (Raman et al., 2010). ORN response vectors were chosen randomly in the positive octant. For classification experiments, we defined a fixed initial odor vector (odor 1), we then created additional odor vectors at increasing angles of separation from the first odor. Odors were numbered by decreasing similarity to odor 1, for example, odor 2 is more similar to odor 1 than odor 9 to odor 1. All odor vectors were normalized.
+
+### Principal component analysis
 
 We created binned spike counts of model ORN responses using 50 ms bins. PCA was performed over these binned responses to reduce the 10,000-dimensional ORN space into two dimensions corresponding to the maximum explained variance for visualizing the odor trajectories. The trajectories were averaged over 10 trials for each odor. We used the pca function in MATLAB for this analysis.
 
-## Classification of model odors
+### Classification of model odors
 
 To classify odors, we first counted the spikes of model ORN responses into 50 ms bins. Binned response vectors were then used to train a SVM classifier to distinguish responses to different odors at each bin. We performed out-of-sample testing: the trial used for testing was chosen from 1 to 10, and the remaining 9 trials of each odor were used for training the SVM. Odor responses were classified at each 50 ms time bin and classification accuracy was averaged over the whole response. We constructed these SVMs using the fitcecoc function in MATLAB.
 
-## Temporal filters using linear nonlinear models
+### Temporal filters using linear nonlinear models
 
-Neural responses to temporally complex inputs have been modeled by combining a linear filter, f(t), and a nonlinear threshold function, gx (Butts et al., 2007; Geffen et al., 2009). Using this approach, the linear filter is convolved with the stimulus and then passed through a nonlinear thresholding function to generate the approximate firing rate, rt=g[st*ft]. To derive the linear filter, we applied a standard deconvolution process: we deconvolved the signal, s(t), from the true firing rates of ORNs following published techniques (Butts et al., 2007; Geffen et al., 2009). Briefly, trial-averaged cell responses were convolved with a Gaussian filter with width σ= 50 ms; deconvolution occurred by inverting the linear convolution matrix. To account for correlations occurring in naturalistic stimuli, we multiplied each filter by the inverse of the stimulus covariance matrix (Sharpee, 2013). Before inverting the stimulus covariance matrix performed regularization using singular value decomposition and keeping components that account for 70% of the variance (Sharpee et al., 2008). The resulting filters were normalized by their L2 norm and low-pass filtered with a stopband of 10 Hz. The nonlinear thresholding function, which connected the convolution product to the final estimate, was created by constructing a histogram of all potential outputs of the linear filtering. For each bin, i, in this histogram we averaged all linear products, forming xi , and all true firing rates, forming yi . This procedure created a series of inputs (averaged linear product values) and outputs (firing rate values) that defined the thresholding function, y=g(x). For this analysis, we used 100 bins. The first 16 s of 40 s odor plumes were used for training and the next 16 s were used for testing. We then altered which 50% stretch of the data was used to train the model to derive a 95% confidence estimate of our L-NL prediction.
+Neural responses to temporally complex inputs have been modeled by combining a linear filter, $f(t)$, and a nonlinear threshold function, $gx$ (Butts et al., 2007; Geffen et al., 2009). Using this approach, the linear filter is convolved with the stimulus and then passed through a nonlinear thresholding function to generate the approximate firing rate, $rt=g[st*ft]$. To derive the linear filter, we applied a standard deconvolution process: we deconvolved the signal, $s(t)$, from the true firing rates of ORNs following published techniques (Butts et al., 2007; Geffen et al., 2009). Briefly, trial-averaged cell responses were convolved with a Gaussian filter with width $\sigma=$ 50 ms; deconvolution occurred by inverting the linear convolution matrix. To account for correlations occurring in naturalistic stimuli, we multiplied each filter by the inverse of the stimulus covariance matrix (Sharpee, 2013). Before inverting the stimulus covariance matrix performed regularization using singular value decomposition and keeping components that account for 70% of the variance (Sharpee et al., 2008). The resulting filters were normalized by their $L_{2}$ norm and low-pass filtered with a stopband of 10 Hz. The nonlinear thresholding function, which connected the convolution product to the final estimate, was created by constructing a histogram of all potential outputs of the linear filtering. For each bin, $i$, in this histogram we averaged all linear products, forming $x_{i}$ , and all true firing rates, forming $y_{i}$ . This procedure created a series of inputs (averaged linear product values) and outputs (firing rate values) that defined the thresholding function, $y=g(x)$. For this analysis, we used 100 bins. The first 16 s of 40 s odor plumes were used for training and the next 16 s were used for testing. We then altered which 50% stretch of the data was used to train the model to derive a 95% confidence estimate of our L-NL prediction.
 
-## Distance-based artificial plume generation
+### Distance-based artificial plume generation
 
-We generated artificial odor plumes based on experiments in which plumes of ionic tracers in outdoor settings were measured at various distances from the source (Murlis et al., 2000). The statistics of the plume burst lengths and inter-burst intervals in these published experiments closely matched gamma distributions with the appropriate length and shape parameters. We used the arithmetic and geometric mean statistics of the real plumes to generate gamma distributions for burst length and inter-burst intervals representing plumes measured 2.5 m, 5 m, 10 m, and 20 m from the source. This optimization was achieved by the following relationship for gamma distributions:(11)log⁡k-ψk=log⁡μ-log⁡γ
+We generated artificial odor plumes based on experiments in which plumes of ionic tracers in outdoor settings were measured at various distances from the source (Murlis et al., 2000). The statistics of the plume burst lengths and inter-burst intervals in these published experiments closely matched gamma distributions with the appropriate length and shape parameters. We used the arithmetic and geometric mean statistics of the real plumes to generate gamma distributions for burst length and inter-burst intervals representing plumes measured 2.5 m, 5 m, 10 m, and 20 m from the source. This optimization was achieved by the following relationship for gamma distributions:
 
-where k is the shape parameter, ψ is the polygamma function, µ is the arithmetic mean, and γ is the geometric mean. This relationship was solved numerically using the MATLAB function fsolve. The length parameter was then given from the relationship θ=μ/k.
+$$
+log⁡k-ψk=log⁡\mu-log⁡\gamma
+$$
 
-## Distance-based stimulus classification
+where $k$ is the shape parameter, $ψ$ is the polygamma function, µ is the arithmetic mean, and $\gamma$ is the geometric mean. This relationship was solved numerically using the MATLAB function fsolve. The length parameter was then given from the relationship $\theta=\mu/k$.
+
+### Distance-based stimulus classification
 
 We delivered 15 s trials of artificial plumes constructed to reflect different distances from the source (2.5 m, 5 m, 10 m, and 20 m) to simulated ORNs. The ORN responses were then used to classify the stimulus by distance to source. Spiking responses of each ORN were counted into 50 ms bins and were then concatenated across cells, resulting in NCells * NBins length feature vectors. SVM classifiers were then trained using these vectors. Equal numbers of trials were used for training or testing. Each SVM was trained only using cells generating a given set of response motifs. To compare results across different SVMs, we used the same number of cells (n = 192, the smallest number of responsive cells across all response motifs) regardless of the motifs used in the classifier. To ensure the specific selection of cells did not influence the results, we created 25 different SVMs based on different selected cells and randomly chosen trials for training or testing. As before, SVMs were trained using MATLABs fitcecoc function.

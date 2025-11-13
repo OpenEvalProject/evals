@@ -17,11 +17,19 @@
 
 ## Abstract
 
-10.7554/eLife.47746.001 Temperature-sensitive transient receptor potential vanilloid (thermoTRPV) channels are activated by ligands and heat, and are involved in various physiological processes. ThermoTRPV channels possess a large cytoplasmic ring consisting of N-terminal ankyrin repeat domains (ARD) and C-terminal domains (CTD). The cytoplasmic inter-protomer interface is unique and consists of a CTD coiled around a β-sheet which makes contacts with the neighboring ARD. Despite much existing evidence that the cytoplasmic ring is important for thermoTRPV function, the mechanism by which this unique structure is involved in thermoTRPV gating has not been clear. Here, we present cryo-EM and electrophysiological studies which demonstrate that TRPV3 gating involves large rearrangements at the cytoplasmic inter-protomer interface and that this motion triggers coupling between cytoplasmic and transmembrane domains, priming the channel for opening. Furthermore, our studies unveil the role of this interface in the distinct biophysical and physiological properties of individual thermoTRPV subtypes.
+Temperature-sensitive transient receptor potential vanilloid (thermoTRPV) channels are activated by ligands and heat, and are involved in various physiological processes. ThermoTRPV channels possess a large cytoplasmic ring consisting of N-terminal ankyrin repeat domains (ARD) and C-terminal domains (CTD). The cytoplasmic inter-protomer interface is unique and consists of a CTD coiled around a β-sheet which makes contacts with the neighboring ARD. Despite much existing evidence that the cytoplasmic ring is important for thermoTRPV function, the mechanism by which this unique structure is involved in thermoTRPV gating has not been clear. Here, we present cryo-EM and electrophysiological studies which demonstrate that TRPV3 gating involves large rearrangements at the cytoplasmic inter-protomer interface and that this motion triggers coupling between cytoplasmic and transmembrane domains, priming the channel for opening. Furthermore, our studies unveil the role of this interface in the distinct biophysical and physiological properties of individual thermoTRPV subtypes.
 
 ## Introduction
 
 The Transient Receptor Potential Vanilloid (TRPV) channel subfamily is a subset of the large TRP channel superfamily, and consist of subtypes TRPV1-TRPV6 (Gunthorpe et al., 2002). TRPV1-4 are intrinsically temperature sensitive (thermoTRPV) (Caterina et al., 1997; Caterina et al., 1999; Güler et al., 2002; Smith et al., 2002) and have been found to play important roles in numerous physiological processes including thermosensation (Moqrich et al., 2005; Marics et al., 2014; Patapoutian, 2005; Gavva et al., 2008), nociception (Caterina et al., 2000; Gopinath et al., 2005; Bang et al., 2010; Reilly and Kym, 2011; Huang and Chung, 2013), and osmosensation (Zanou et al., 2015). Recent studies have made great strides in elucidating the molecular mechanisms of ligand-dependent gating and activation of thermoTRPV channels (Hu et al., 2009; Cao et al., 2013; Zhang et al., 2016; Zubcevic et al., 2018a; Zubcevic et al., 2018b; Singh et al., 2018; Zhang et al., 2019). However, despite this wealth of structural information, the role of their cytoplasmic domains, which make up the majority of the structure, remains unclear. The importance of these domains in channel gating has long been acknowledged with a number of studies finding that mutations in the cytoplasmic regions can profoundly affect the function of thermoTRPV channels (Lishko et al., 2007; Phelps et al., 2010; Shi et al., 2013; Landouré et al., 2010; Salazar et al., 2008; Yao et al., 2011; Brauchi et al., 2006). Cryo-electron microscopy (cryo-EM) and X-ray crystallography studies (Cao et al., 2013; Zubcevic et al., 2018a; Zubcevic et al., 2018b; Singh et al., 2018; Liao et al., 2013; Zubcevic et al., 2016; Huynh et al., 2016; Deng et al., 2018) have revealed that the cytoplasmic domains of thermoTRPVs are composed of the ankyrin repeat domain (ARD), containing six ankyrin repeats, a coupling domain (CD) that is made up of a β-sheet (βCD), a helix-loop-helix motif (HLHCD) and the pre-S1(pre-S1CD) helix, and a C-terminal domain (CTD) which extends from the conserved amphipathic helix, termed the TRP domain, into the cytosol where it forms a hair-pin structure and doubles back to the βCD to which it contributes a beta strand (Figure 1A). Interestingly, a recent study of the human TRPV3 (hTRPV3) channel (Zubcevic et al., 2018b) resolved the structure of the CTD beyond the βCD and showed that this distal region of the CTD (distal CTD) coils around βCD and emerges at the front side of the channel. This coil forms extensive interactions with the ARD of the neighboring protomer and therefore contributes substantially to the cytoplasmic inter-protomer interface. All thermoTRPV channels possess cytoplasmic inter-protomer contacts which are formed by the ARD of one and the CD of the neighboring protomer and the distal CTD region is conserved in these channels. However, a distal CTD coil similar to the one observed in TRPV3 was only seen in TRPV2 (Zubcevic et al., 2018a) since this region was poorly resolved in the structures of TRPV1 and TRPV4 (Cao et al., 2013; Liao et al., 2013; Deng et al., 2018).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig1-v2.jpg)
+
+**Figure 1.:** (A) Architecture of the hTRPV3 protomer. Ankyrin repeat domain (ARD) is colored in cyan, the coupling domain (CD) and its individual elements (HLHCD, βCD, Pre-S1CD) are colored in blue, transmembrane helices S1-S6 are colored in violet, the TRP domain is shown in magenta and the C-terminal domain (CTD) is colored in red. (B) A close-up view of the inter-protomer interface in hTRPV3. Residue K169 from the ARD and residues E751 and D752 from the CTD are shown in stick representation. Representative whole-cell current traces recorded at +60 mV from WT (C–D), K169A (E–F), and E751A (G–H) evoked by repeating applications 30 μM 2-APB for 15 s followed by 15 s of washout and corresponding time-course of use-dependent changes in the relative current amplitude. (I) Average current density from the first five 2-APB stimulations (WT: n = 13 biologically independent experiments; K169A: n = 10 biologically independent experiments; E751A: n = 6 biologically independent experiments). (J) Initial sensitization was characterized by the ratio of the response to 2-APB during the first (I0) and maximum current (Imax) response (Imax/I0) calculated as the mean from each biologically independent experiment. (WT: n = 13 biologically independent experiments; K169A: n = 10 biologically independent experiments; E751A: n = 7 biologically independent experiments).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Simple state model of TRPV3 gating proposed by Liu et al. (2011). The transition rate from C1 → C0 (scheme 1) and O→C0 (scheme 2) is slow enough that this transition is irreversible. Both k0 and k1 transition rates are stimulant [s] dependent (heat or chemical agonist). Following removal of the stimulus, channels return to a closed intermediate state (C1) in scheme 1 or a new resting state (C1) in scheme 2. During consecutive stimulations, the occupancy of C1 increases, leading to greater sensitivity to the stimulus in a use-dependent manner.
 
 In order to dissect the role of this unique cytoplasmic interface in thermoTRPV channel gating, we have conducted structural and functional studies using human TRPV3 as a model system. TRPV3 exhibits use-dependent increase in current amplitudes (termed sensitization) upon repeated applications of either ligand or heat. This phenomenon arises from hysteresis (irreversible change) of TRPV3 gating and can be adequately described by a simple gating scheme with one open and two closed states (Liu et al., 2011) (Figure 1—figure supplement 1). Following stimulation, the return rate to the initial unliganded closed state (C0) of the channel is slow enough to be irreversible. Instead, the channels transition to either an intermediate (sensitized) closed state (C1 in Scheme 1, Figure 1—figure supplement 1) or a new sensitized resting state after opening (C1 in Scheme 2, Figure 1—figure supplement 1). Repeated stimulation leads to an increase in C1 occupancy reflected in progressive increase in current in response to stimuli. Therefore, the C1 state represents a closed state with a lower energy requirement for opening. Sensitization properties of thermoTRPVs are strongly subtype dependent: while TRPV3 (Liu et al., 2011) and TRPV2 (Liu and Qin, 2016) both sensitize upon repeated stimulation with heat or agonists, analogous sensitization upon stimulation with capsaicin or heat has not been observed in TRPV1, suggesting that TRPV1 channels do not undergo an irreversible conformational change following activation by a stimuli, and might populate a closed ‘sensitized’ C1 state from the outset (Liu and Qin, 2016).
 
@@ -29,23 +37,260 @@ Our structural and functional studies show that the cytoplasmic assembly plays a
 
 ## Results
 
-## Disrupting the interactions between CTD and ARD results in sensitized channels
+### Disrupting the interactions between CTD and ARD results in sensitized channels
 
 Our previously determined structures of the hTRPV3 channel revealed that the distal CTD coils around βCD and establishes a number of interactions with the ARD of the neighboring protomer (Zubcevic et al., 2018b). Notably, the acidic residues E751 and D752 in the distal CTD form a salt-bridge with the K169 residue on the neighboring ARD (Figure 1B). A previous study reported that mutation of K169A altered sensitivity to ligands and proposed allosteric modulators of TRPV3 channel function; however, the underlying mechanism was elusive as the study was conducted prior to structural elucidation of the full-length TRPV channels (Phelps et al., 2010). With the knowledge that K169 forms a part of the CTD-ARD interface, we set out to investigate its role in channel gating. Wild-type hTRPV3 channels show a steady use-dependent increase in the current response upon successive applications of 30 μM 2-Aminoethoxydiphenyl borate (2-APB) for ~30–40 cycles of stimulation before reaching saturation (Figure 1C–D, Figure 1—source data 1). By contrast, the K169A mutant appears to be fully sensitized, as the first few applications of ligand typically elicit the maximal current response which does not increase upon further stimulation, suggesting the channel is sensitized (Figure 1E–F, Figure 1—source data 1). In order to determine if this sensitized phenotype is the result of disruption of the salt-bridge interaction between ARD and CTD, we introduced a E751A mutation in the CTD of the hTRPV3 channel. Indeed, similar to K169A, neutralizing the acidic E751 residue produced a sensitized phenotype, characterized by large saturating currents upon first application of ligand (Figure 1G–H, Figure 1—source data 1). Together these data suggest that the salt-bridge formed by K169 and E751 at the CTD-ARD interface plays a critical role in hysteresis and that breaking these interactions changes the occupancy of the C0 and C1 states before stimulation, resulting in sensitized hTRPV3 channels (Figure 1I–J, Figure 1—source data 1).
 
-## Structure of the K169A mutant reveals large conformational changes in the distal CTD
+### Structure of the K169A mutant reveals large conformational changes in the distal CTD
 
 In order to elucidate the conformational changes that underlie the transition to the sensitized C1 state, we introduced the K169A mutation into the hTRPV3 carrying the previously reported functionally silent T96A mutation (Zubcevic et al., 2018b) (TRPV3K169A in future references). We expressed and purified the TRPV3K169A channel and solved its structure by single particle 3D cryo-electron microscopy (cryo-EM) (Table 1, Figure 2—figure supplements 1 and 2). Remarkably, the cytoplasmic assembly of TRPV3K169A undergoes large structural rearrangements while the overall conformation of the transmembrane domains (TM) of the TRPV3K169A channel closely resembles that of the previously reported hTRPV3 in its closed, apo form (PDB ID 6MHO, TRPV3WT) (Zubcevic et al., 2018b) (Figure 2A). The most drastic change occurs at the CTD. In the TRPV3WT, the distal CTD coils around βCD and establishes a large interface between the CD and the ARD of neighboring subunits. By contrast, the K169A mutation induces a substantial change in the secondary structure and the position of the distal CTD as well as the ARD-CTD interface. Specifically, the distal CTD undergoes a dramatic coil-to-helix transition and this newly formed helical distal CTD is positioned behind the βCD in the cytoplasmic vestibule of the channel (Figure 2B, Figure 2—figure supplement 2). Furthermore, the cryo-EM map of the TRPV3K169A contains a protein density that abuts the proximal CTD and the CD and occupies a similar space to that vacated by the distal CTD upon coil-to-helix transition. It is unlikely that this density forms a part of the CTD as the cryo-EM map shows no connectivity to the CTD helix. Instead, the density appears to be connected to the N-terminal of the neighboring protomer to which connectivity is visible at low contours of the map (Figure 2B, Figure 2—figure supplement 2). Since this density is not sufficiently resolved to allow for unambiguous model building, we built this putative N-terminal region as a polyalanine chain.
 
-## Conformational changes of the distal CTD lead to rearrangements in the cytoplasmic inter-subunit interface
+![Figure 2.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig2-v2.jpg)
+
+**Figure 2.:** (A) The cytoplasmic inter-protomer interface in TRPV3WT (left panel) and TRPV3K169A (right panel). The CTD and the putative N-terminal region are highlighted in red and purple, respectively. (B) Close-up view of the rearrangements in the cytoplasmic domains. In the TRPV3WT, the distal CTD (highlighted in red) coils around the βCD (highlighted in grey) (left panel). In the TRPV3K169A structure, the distal CTD undergoes a coil-to-helix transition (highlighted in red). An additional polypeptide density (highlighted in purple) is observed near the front of the βCD (highlighted in grey) and the proximal CTD, in the vicinity of the space occupied by the distal CTD coil in TRPV3WT and was assigned as a putative N-terminal domain from the neighboring protomer (NTD−1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A representative micrograph from the TRPV3K169A data collection. (B) 3D reconstruction workflow. (C) Euler distribution plot. Red regions show the best represented views. (D) Local resolution estimate, calculated in Relion. (E) FSC curves calculated between the half maps (blue), atomic model and the full map (red) and between the model and each half-map (orange and green).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative electron densities in the TRPV3K169A cryo-EM map. Densities are contoured at level 0.015 and radius 2. (B–C) Connectivity between the ARD and the putative N-terminal region. The unsharpened TRPV3K169A map is contoured at level 0.006.
+
+**Table 1.**
+ Cryo-EM data collection, refinement and validation statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TRPV3K169A (EMD-20192) (PDB 6OT2)</th>
+      <th>TRPV3K169A 2-APB (EMD-20194) (PDB 6OT5)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>130,000x</td>
+      <td>75,000x</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>40</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>1–2.5</td>
+      <td>1.25–3</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.06</td>
+      <td>1.08</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C4</td>
+      <td>C4</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>452,388</td>
+      <td>1,174,521</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>95,184</td>
+      <td>79,006</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>4.1</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>6MHO</td>
+      <td>6MHO</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>4.1</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>−120</td>
+      <td>−100</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>17,332</td>
+      <td>17,800</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>2500</td>
+      <td>2492</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>0</td>
+      <td>4 (2-APB)</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>87.43</td>
+      <td>40.51</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>n/a</td>
+      <td>35.66</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.008</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.868</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.64</td>
+      <td>1.24</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>92.70</td>
+      <td>97.01</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>7.30</td>
+      <td>2.99</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Conformational changes of the distal CTD lead to rearrangements in the cytoplasmic inter-subunit interface
 
 The coil-to-helix transition in the distal CTD and the rearrangement of the putative N-terminal region in the TRPV3K169A are accompanied by an apparent anti-clockwise rotation of the ARD when viewed from the extracellular space (Figure 3—figure supplement 1). This rotation does not reflect a strict rigid body movement of the ARD as the tetrameric assembly of TRPV3K169A cytoplasmic domains cannot be superposed well with that of TRPV3WT through mere rotation (Cα R.M.S.D. 2.3 Å) (Figure 3—figure supplement 1). Nevertheless, individual ARDs from the two structures superpose well (Cα R.M.S.D. 0.9 Å) (Figure 3—figure supplement 1), revealing that the ARDs of each TRPV3K169A protomer swivel in a manner which lifts the N-terminal part of the ARD towards the membrane while the C-terminal part of the ARD along with the CTD is lowered further into the cytosol (Figure 3—figure supplement 1). Furthermore, the coil-to-helix transition also results in extensive changes in the interface between ARD and CTD (Figure 3—figure supplement 1), causing a conformational change of the loop of ankyrin repeat 5 (AR5) (Figure 3A and Figure 3—figure supplement 1). The combined effect of these rearrangements increases the coupling between the CTD and the ARD, as well as between the ARD, the CD and the TRP domain (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) Top view of the cytoplasmic inter-protomer interactions in TRPV3WT (A) and TRPV3K169A (B). In TRPV3WT the CTD (red) coils around the βCD (grey). The distal CTD interacts with the ARD at the front of the interface and with the loop of ankyrin repeat 5 (AR5, magenta) at the back. In TRPV3K169A, the interface is changed due to the coil-to-helix transition in the distal CTD, which no longer participates in the interactions at the front of the interface and forms tighter interactions with AR5. The front of the interface is now occupied by the putative NTD (yellow). (C) A close-up view from the cytoplasmic cavity of the interactions between the distal CTD (red surface representation) and AR5 (magenta surface representation) in TRPV3WT. Residue W739 forms a cation-π interaction with the amino group of Q313 (dashed line). (D) The coil-to-helix transition changes the conformation of the AR5 loop. In TRPV3K169A, the W739-Q313 interaction is broken. Residues K742 and W743, which in TRPV3WT are not within interaction distances with the rest of the protein, form interactions with the backbone of E308 in AR5 and P384 in βCD, respectively (dashed lines). Representative whole-cell current traces recorded at +60 mV from W739A (E), W742A (F), and K743A (G) evoked by repeating applications 30 μM 2-APB for 15 s followed by 15 s of washout. (H) Average current density for the first five 2-APB stimulations (W739A: n = 6 biologically independent experiments; W742A: n = 6 biologically independent experiments; K743A: n = 5 biologically independent experiments). (I) Ratio of first (I0) and maximum current (Imax) 2-APB stimulation (Imax/I0) as in (G), calculated as the mean from each biologically independent experiment (W739A: n = 6 biologically independent experiments). (J) Mean 2-APB EC50 from three consecutive dose-response rounds fit with the Hill equation (WT: n = 5 biologically independent experiments; W742A: n = 5 biologically independent experiments; K743A: n = 4 biologically independent experiments). See Figure 3—figure supplement 2 for representative current traces and dose–response relationship fit with the Hill equation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Overlay of the tetrameric cytoplasmic assemblies from TRPV3WT (orange) and TRPV3K169A (blue). Close-up view single ARD shows that the tetrameric assemblies cannot be superposed through a rigid body rotation. (B) Individual ARDs, not attached to the tetrameric assembly, from TRPV3WT (orange) and TRPV3K169A (blue) can be superposed. (C) In the TRPV3WT (orange, bottom) structure there is no coupling between the AR5 (magenta) and the HLHCD (orange). However, in TRPV3K169A (blue, top) upon coil-to-helix transition in the distal CTD (red), the CTD-AR5 (magenta) interaction forces a change in conformation in the loop of AR5, bringing it within interaction distance of HLHCD (orange). (D) Surface representation of the overlay between single protomers of TRPV3WT (orange cartoon, gray surface) and TRPV3K169A (blue cartoon, blue surface). The overlay shows that the TM domains overlay well, while the cytoplasmic domains exhibit substantial differences. The cytoplasmic assembly of TRPV3K169A (right panel) swivels, so that the N-terminal part is lifted up toward the membrane while the C-terminal part is lowered into the cytosol. The line drawn between the tip of the βCD and residue A110 in AR1 indicates the relative movement within the cytoplasmic assembly.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Three consecutive rounds of 2-APB dose-responses (0 (black) 3(purple), 10 (blue), 30 (green), 50 (yellow), 100 (orange), 300 (red) μM) was applied for 15 s followed 15 s of wash for WT (A) W742A (B) and K743A (C) at +60 mV. (D) Averaged dose-response of WT, W742A, and K743A from the first (square), second (circle), and third (triangle) consecutive dose-response round. Inset is EC50 and hill coefficient (nH) fitted to the average normalized current at each 2-APB concentration per round (WT: n = 5 biologically independent experiments; W742A: n = 5 biologically independent experiments; K743AA: n = 4 biologically independent experiments).
+
 In the TRPV3WT structure, the distal CTD makes contacts with ankyrin repeat 2 (AR2) and the loop connecting AR3 and AR4, termed finger 3, at the front side of the interface (Figure 1B) and the loop of AR5 in the intracellular vestibule (the back side of the interface) (Figure 3A and C). By contrast, in the TRPV3K169A the front side of the interface appears to be formed by the N-terminal region, which extends from the neighboring ARD and abuts the CD and the proximal CTD (Figures 2B and 3B). Notably, while the distal CTD of TRPV3K169A does not contribute to the front side of the interface with minimal interaction with the CD of its own protomer, it forms extensive interactions with the loop of AR5 of the neighboring subunit at the back side of the interface (Figure 3B and D). In order to probe the role of the dynamic interactions between the ARD and CTD observed in TRPV3K169A, we introduced mutations in the distal CTD and examined their effects on channel function. We chose three sites W739, W742, and K743 for mutational studies. In TRPV3WT, W739 forms a cation-π interaction with the amino group of Q313 in the loop of AR5 (Figure 3C), and this interaction is broken in the TRPV3K169A (Figure 3D). Similarly, both W742 and K743 undergo state-dependent changes in their interactions: when the distal CTD adopts a coil conformation W742 and K743 do not form substantial interactions with the rest of the channel (Figure 3C), but when the distal CTD is helical W742 forms a CH-π interaction with P384 in the CD and K743 is within interaction distance of E308 and D315 in the loop of AR5 (Figure 3D). The W739A mutation resulted in a phenotype similar to the sensitized K169A and E751A mutants (Figure 3E). By contrast, W742A (Figure 3F) and K743A (Figure 3G) both resulted in channels with markedly lower activity and decreased ability to sensitize upon repeated stimulation with 30 μM 2-APB (Figure 3H, Figure 3—source data 1). This reduced activity was not the result of decreased surface expression or non-functional channels, as application of 2-APB at high concentrations (300 μM) resulted in robust current responses (Figure 3—figure supplement 2). To further probe this low activity phenotype of W742A and K743A, we examined the effects of these mutations on hysteresis. As the wild-type TRPV3 undergoes hysteresis, its sensitivity to ligand increases, which can be monitored by the reduction of the EC50 value (Figure 3—figure supplement 2). The initial 2-APB EC50 values for both W742A and K743A were higher than that for the wild-type TRPV3 channel (Figure 3J; Figure 3—figure supplement 2, Figure 3—source data 1, Figure 3—figure supplement 2—source data 1), but they decreased following each consecutive dose-response round. However, because the 2-APB dose-response curves for W742A and K743A mutants do not reach saturation, the efficacy of 2-APB is likely to be overestimated by these EC50 calculations. These results indicate that W742A and K743A are initially less active due to impaired sensitization and might have an increased energy barrier for transitioning to the sensitized conformation. Combined with the results from E751A and K169A, these data show that mutations to different parts of the distal CTD have distinct effects on sensitization and activation: mutations that destabilize the coil conformation of the distal CTD result in a sensitized phenotype, while mutations that destabilize the helical CTD result in a decrease of hysteresis and sensitization. Taken together, our data suggest that the coil-to-helix transition in the distal CTD and the resulting state-dependent inter-protomer interaction networks are critical for channel gating and that the secondary structure transition in the distal CTD may serve as a switch that controls the entry into the sensitized C1 state.
 
-## Application of 2-APB induces changes in both transmembrane and cytoplasmic assemblies
+### Application of 2-APB induces changes in both transmembrane and cytoplasmic assemblies
 
 In order to further investigate the role of the cytoplasmic assembly in activation of the TRPV3 channel, we determined the cryo-EM structure of the TRPV3K169A channel in the presence of 2-APB (TRPV3K169A 2-APB) to 3.6 Å resolution (Figure 4—figure supplements 1 and 2). Inspection of this structure revealed that TRPV3 undergoes conformational changes in both the transmembrane (TM) and cytoplasmic domains in the presence of ligand. The cryo-EM map of TRPV3K169A 2-APB contains non-protein densities between the TRP domain and the Pre-S1CD in all four protomers. Because a previous high-throughput mutagenesis study (Hu et al., 2009) identified this site as critical for 2-APB binding, we assigned the non-protein densities as 2-APB (Figure 4A, Figure 4—figure supplement 2). The 2-APB molecule is nestled amongst residues W692, R693 and R696 in the TRP domain and H417, H426, H430 and W433 in the Pre-S1CD.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig4-v2.jpg)
+
+**Figure 4.:** (A) One 2-APB molecule is bound to each protomer of the TRPV3K169A 2-APB channel (magenta). 2-APB is found between the HLHCD, Pre-S1CD and TRP domains in a binding site defined by residues H417 in the HLHCD, H426, H430, W433 in the Pre-S1CD and W692, R693 and R696 in the TRP domain. All residues are shown in stick and red sphere representation. 2-APB is shown in stick and cyan sphere representation. (B) The S6 helix of TRPV3K169A (blue) undergoes an α-to-π transition in the presence of 2-APB (magenta). (C) The α-to-π transition tightens the connection between S6 and the TRP domain. In the TRPV3WT structure (orange), the TRP domain and the S6 are connected via a loop, but in the TRPV3K169A 2-APB channel (magenta) the TRP domain and S6 form a continuous helical structure. In addition, the TRP domain exhibits a swivel in the TRPV3K169A 2-APB structure. (D–E) The coil-to-helix transition in TRPV3K169A 2-APB increases coupling between the cytoplasmic domains and the TRP domain. In the TRPV3WT structure (orange) (D), the loop of AR5 (magenta surface) does not interact with the HLHCD (orange surface). However, in TRPV3K169A 2-APB (magenta) (E) the coil-to-helix transition in the distal CTD induces a conformational change in the loop of AR5 (magenta surface), coupling it to the HLHCD (orange surface) and the TRP domain (light blue surface). 2-APB (cyan stick and surface representation) contributes to increased interactions between the TRP domain and Pre-S1CD.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) A representative micrograph from TRPV3K169A 2-APB data collection. (B) 3D reconstruction workflow. (C) Euler distribution plot. Red regions show the most represented views. (D) Local resolution estimate, calculated in Relion. (E) FSC curves calculated between the half maps (blue), atomic model and the full map (red) and between the model and each half-map (orange and green).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Representative electron densities in the TRPV3K169A 2-APB cryo-EM map. Densities are contoured at level 0.03 and radius 2. The inset in the S6 panel shows a close-up of the density around the π-helical turn contoured at level 0.02 and radius 2. The black solid lines represent the H-bonds in the α-helix, which are broken in the π-helical turn.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Bottom-up view of the hTRPV3WT (PDB ID 6MHO, orange), hTRPV3K169A 2-APB (magenta) and mTRPV3Open (PDB ID 6DVZ, green) pores. The conformation of hTRPV3K169A 2-APB resembles that of the mTRPV3Open (Overlay).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Top view of the coupling between the TRP domain (light blue), the CD (orange, Pre-S1CD and HLHCD) and the AR5 (magenta) in TRPV3WT. (B) In the TRPV3K169A 2-APB structure, the coil-to-helix transition in the CTD forces the loop AR5 to change conformation (magenta) and interact with HLHCD (orange). This induces a swivel in the CD (orange) and the TRP domain (light blue). 2-APB (cyan spheres) further increases the coupling between the CD and the TRP domain. (C–E) Electron density around the CTD, AR5, CD and TRP domain in TRPV3WT (C), TRPV3K169A (D) and TRPV3K169A 2APB (E) viewed from inside of the cytoplasmic vestibule. The density is contoured at level 0.02 in TRPV3WT, 0.01 in TRPV3K169A and 0.02 in TRPV3K169A 2-APB.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) The cryo-EM map (EMD-8921) and atomic structure of the open mTRPV3 (PDB 6DVZ). Close-up view shows the fit of the CTD region into the electron density. (B) hTRPV3K169A 2-APB fit into the cryo-EM map of the open mTRPV3 (EMD-8921). Close-up view shows that the electron density can more feasibly be built as a helix. (C) The cryo-EM map (EMD-9115) and atomic structure of the hTRPV3 apo, closed state (PDB ID 6MHO). (D) The X-ray crystallographic electron density and atomic structure of the apo closed rabbit TRPV2 (PDB ID 6BWM). (E) The cryo-EM map (EMD-5778) and atomic structure of the apo, closed rTRPV1 (PDB ID 3J5P). (F) hTRPV3K169A 2-APB fit into the cryo-EM map of the open apo, closed rTRPV1 (EMD-5778).
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** (A) Non-assigned densities (red) in the VSLD cavity of TRPV3K169A (green, left) and TRPV3K169A 2-APB (purple, right). Electron densities are contoured at levels 0.015 and 0.03, respectively. (B) No electron density is present at the proposed third 2-APB binding site at the extracellular side of the VSLD (arrow). Electron density is contoured at level 0.03. (C) Binding of 2-APB (red stick representation) between the TRP domain (yellow) and Pre-S1CD (green) in TRPV3K169A 2-APB half-map 1 (magenta, contoured at 0.0175), half-map 2 (yellow, contoured at 0.0175) and full map (blue, contoured at 0.03).
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** (A) Graphical representation of the current response ratio of sub- (30 μM) and saturating 2-APB (300 μM) to camphor (10 mM) calculated as the mean from each biologically independent experiment. (WT: n = 5 biologically independent experiments; R487A: n = 4 biologically independent experiments; R487W: n = 4 biologically independent experiments; Y540W: n = 4 biologically independent experiments; E501G: n = 4 biologically independent experiments; Y540A: n = 4 biologically independent experiments; Y565A: n = 4 biologically independent experiments; H426A: n = 5 biologically independent experiments;). (B) Representative voltage ramp (−60 to +60 mV, 400 ms) traces to wash (gray), 30 (green) and 300 (red) μM 2-APB, and 10 mM camphor (blue). Only H426A possessed a lower 2-APB to camphor ratio compared to WT channels. (C) Protomer of mouse TRPV3 Y654A mutant bound to 2-APB (PDB ID 6DVZ) with three proposed binding sites highlighted (dotted boxes) (Singh et al., 2018). Mutated residues are shown in stick and sphere representation.
 
 The pore of TRPV3K169A 2-APB adopts a putative open conformation similar to that of the recently reported mouse TRPV3 (mTRPV3, PDB ID 6DVZ)) open structure (Figure 4—figure supplement 3) and possesses a π-helical turn in the pore-lining S6 helix, which is not present in any structures of the TRPV3 channel that had not been exposed to ligand (Zubcevic et al., 2018b; Singh et al., 2018), including TRPV3K169A (Figure 4B and Figure 4—figure supplement 2). Notably, a comparison of S6 helices from the closed TRPV3WT and TRPV3K169A 2-APB shows that the linker region between the S6 helix and the TRP domain also changes: while the two helices are connected via a loose loop in the TRPV3WT structure, they form a single helical structure in TRPV3K169A 2-APB, suggestive of increased coupling between the TRP domain and S6 upon 2-APB binding (Figure 4C). In addition, the TRP domain of TRPV3K169A 2-APB undergoes a swivel relative to the S6 helix (Figure 4C). A closer inspection revealed that the observed swivel in the TRP domain is the result of state-dependent changes in coupling between the transmembrane and the cytoplasmic domains. Namely, the swivel in the TRP domain can be traced back to changes in coupling between the loop of AR5, the HLHCD and the TRP domain which are induced by the coil-to-helix transition in the distal CTD (Figure 4D–E). In TRPV3WT the loop of AR5 does not interact with HLHCD (Figure 4D and Figure 4—figure supplement 4). However, in TRPV3K169A 2-APB, where the coil-to-helix transition in the distal CTD has enforced a conformational change in the loop of AR5, AR5 interacts with the HLHCD. The loop of AR5 pushes on the HLHCD, causing a swivel in both the HLHCD and Pre-S1CD, leading in turn to a swivel in the TRP domain (Figure 4E and Figure 4—figure supplement 4). Notably, 2-APB binding between the Pre-S1CD and the TRP domain appears to further increase the coupling between the CD and the TRP domain, suggesting a mechanism for 2-APB-dependent activation of TRPV3 (Figure 4—figure supplement 4). In line with our observations, a previous study has shown that manipulation of the length of the loop of HLHCD affects sensitization properties of TRPV3 likely by increasing the coupling between the cytoplasmic and transmembrane domains (Liu and Qin, 2017).
 
@@ -53,9 +298,17 @@ Our studies suggest that the distal CTD in TRPV3 plays a critical role in hyster
 
 Furthermore, the mTRPV3 study suggested three binding sites for 2-APB: (1) between the TRP domain and Pre-S1CD, (2) in the VSLD cavity and (3) at the extracellular interface between helices S1 and S3 of the VSLD (Singh et al., 2018). Even though we observe a non-protein density in the VSLD cavity of TRPV3K169A 2-APB, we did not assign this to 2-APB because our reconstruction of TRPV3K169A also contains a similarly shaped density in this position (Figure 4—figure supplement 6). Furthermore, we do not observe a discernible density in the third site proposed by the mTRPV3 study (Figure 4—figure supplement 6). Finally, electrophysiological measurements indicate that mutations in hTRPV3 at the proposed second and third sites do not affect the relative responses of 2-APB compared to camphor. By contrast, mutating residues in the first site (H426A) reduces the channels’ response to high concentrations of 2-APB without affecting the response to camphor (Figure 4—figure supplement 7, Figure 4—figure supplement 7—source data 1). This suggests that sites 2 and 3 are not involved in 2-APB-dependent activation of hTRPV3. These discrepancies in 2-APB binding between the human and mouse TRPV3 orthologs might be due to differential ligand affinities in different species. However, the role of site 2 and site 3 in 2-APB-dependent gating of mTRPV3 still remains to be electrophysiologically confirmed (Singh et al., 2018).
 
-## The role of the distal CTD in activation of thermoTRPV
+### The role of the distal CTD in activation of thermoTRPV
 
 Following removal of 2-APB, the sensitized K169A, E751A, and W739A mutants retained residual activity after a prolonged washout of ligand (Figure 5A). This residual current, which might result from either an extremely slow 2-APB off-rate or constitutive activity at +60 mV, was sensitive to the pore blocker ruthenium red (RuR) (Figure 5B, Figure 5—source data 1). A voltage step from 0 to +60 mV prior to application of ligand elicited RuR sensitive currents (Figure 5C,D, Figure 5—source data 1) not seen in wild-type TRPV3 channels, suggesting that these mutants are inherently voltage gated in the absence of ligand. Notably, the G-V curve of the K169A and E751A mutants shows that voltage can directly activate the mutant channels (Figure 5E, Figure 5—source data 1), which is in stark contrast to the wild-type TRPV3 in which voltage is not sufficient for channel activation (Hu et al., 2009; Xu et al., 2002). Interestingly, the sensitized phenotype and voltage-dependent activation of the K169A and E751A TRPV3 bear resemblance to the behavior of the wild-type TRPV1 (Gunthorpe et al., 2000; Voets et al., 2004; Sánchez-Moreno et al., 2018), implying a mechanistic link in the activation of these two channels. A sequence comparison of thermoTRPV channels shows that the cytoplasmic inter-protomer interface is conserved and, remarkably, the distal CTD region in these channels exhibits high helical propensity (Figure 5—figure supplement 1). In order to examine the role of the distal CTD in the gating of thermoTRPVs, we inspected the cryo-EM map and model of the apo TRPV1 channel (Liao et al., 2013). Interestingly, we found striking similarities between the apo TRPV1 channel (PDB ID 3J5P) and the TRPV3K169A-2APB structure. Firstly, the conformation of the loop of AR5 in apo TRPV1 is similar to that observed in TRPV3K169A-2APB (Figure 5F). In addition, the cryo-EM density for the distal CTD, despite being poorly resolved, is compatible with a helical conformation of this region (Figure 4—figure supplement 5). Consequently, apo TRPV1 apparently exhibits tight coupling between the loop of AR5, the HLHCD and the TRP domain (Figure 5G). Furthermore, the pore lining S6 helix of apo TRPV1 adopts a π-helical turn (Liao et al., 2013). Therefore, it appears that the cytoplasmic and transmembrane domains in the TRPV1 channel are tightly connected even in the absence of stimuli, possibly explaining the absence of a sensitizing phenotype in this channel as well as its ability to be activated by voltage. Intriguingly, the K155A mutation in TRPV1, analogous to K169A in TRPV3, reduces ligand-induced desensitization of TRPV1 (Lishko et al., 2007; Joseph et al., 2013) and replacement of the distal CTD in TRPV1 with that of TRPV3 produces channels that do not desensitize upon repeated application of heat (Joseph et al., 2013). By contrast, deletion of the TRPV1 CTD helix produces non-functional channels, indicating that the distal CTD and the cytoplasmic inter-protomer interface is critical for gating and activation of TRPV channels (Joseph et al., 2013). The non-sensitized closed structures (Zubcevic et al., 2018a; Zubcevic et al., 2018b) of the sensitizing TRPV2 and TRPV3 (Liu et al., 2011; Liu and Qin, 2016) channels, possess CTDs in a coil conformation and a lower degree of coupling between the cytoplasmic and transmembrane domains (Figure 4—figure supplement 5). Therefore, our structural and functional analyses support this novel hypothesis that the distal CTD acts as a conformational switch in thermoTRPVs, which is imperative for coupling between the cytoplasmic and transmembrane domains and consequently also for channel activation.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative whole-cell recording at +60 mV of WT (black), K169A (red), E751A (blue), W739A (orange) immediately following 2-APB sensitization protocol, with perfusion protocol of 5 s wash, followed by 15 s 30 μM 2-APB, prolonged 30 s wash and the residual current was blocked by 5 s application of 50 μM ruthenium red (RuR). The scale bars units are in current density (pA/pF). (B) Graphical representation of RuR sensitive residual current at the end of the recording in (A) (WT: n = 10 biologically independent experiments; K169A: n = 5 biologically independent experiments; E751A: n = 6 biologically independent experiments, W739A: n = 5 biologically independent experiments). (C) Basal current activity before application of ligand was determined by the blocking the current following a voltage step from 0 to +60 mV with 50 μM RuR. (D) Graphical representation of the mean blocked current density from the protocol in (C) (GFP control: n = 5 biologically independent experiments; WT: n = 6 biologically independent experiments; K169A: n = 5 biologically independent experiments; E751A: n = 5 biologically independent experiments, W739A: n = 6 biologically independent experiments). (E) Conductance voltage relation of WT, K169A, and E751A in the absence of ligand determined from peak tail current elicited from a −160 mV post step pulse following a voltage step between −120 to +200 mV (Δ 20 mV). The conductance of both mutants fail to saturate at +200 mV while WT channels are nonconductive at the tested voltages (WT: n = 3 biologically independent experiments; K169A: n = 3 biologically independent experiments; E751A: n = 3 biologically independent experiments). (F) Alignment of AR5 from TRPV3WT (orange), TRPV3K169A 2APB (magenta) and TRPV1 (light cyan). The AR5 loop of TRPV1 assumes a conformation similar to that of TRPV3K169A 2APB. (G) The AR5 loop and the HLHCD are within interaction distance in TRPV1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47746/elife-47746-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The alignment is colored by conservation and regions of interest are marked with purple lines. residues of interest are indicated with *. The distal CTD has a high helical propensity as calculated by PsiPred. Indicated by a helix cartoon. Abbreviations: ARD, ankyrin repeat domain; AR2, ankyrin repeat 2; AR5, ankyrin repeat 5; βCD, β-sheet of the coupling domain (CD); HLH CD, helix-loop-helix of the CD; Pre-S1 CD, Pre-S1 of the CD; PH, pore helix; SF, selectivity filter; PL, pore loop.
 
 ## Discussion
 
@@ -69,37 +322,411 @@ Our structural and functional analyses suggest that the unique cytoplasmic inter
 
 ## Materials and methods
 
-## Expression and purification of human TRPV3
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>DH10Bac</td>
+      <td>ThermoFisher Scientific</td>
+      <td>10361012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>ATCC</td>
+      <td>CRL-1711</td>
+      <td>RRID:CVCL_0549</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-11268; Lot Number 62312975</td>
+      <td>RRID:CVCL_0063</td>
+    </tr>
+    <tr>
+      <td>Cell media component</td>
+      <td>Dulbecco’s Modified Eagle’s Medium (DMEM) - low glucose</td>
+      <td>Gibco</td>
+      <td>11885–084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell media component</td>
+      <td>Heat Inactivated Fetal Bovine Serum</td>
+      <td>Gibco</td>
+      <td>10082–139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell media component</td>
+      <td>Anti-Anti (Antibiotic-Antiycotic)</td>
+      <td>Gibco</td>
+      <td>15240–062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>human TRPV3</td>
+      <td>Genscript</td>
+      <td>Pubmed Gene ID: 162514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Bac-to-Bac Baculovirus Expression System</td>
+      <td>ThermoFisher Scientific</td>
+      <td>10359016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FuGene6</td>
+      <td>Promega</td>
+      <td>E2691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-dodecyl-β-d- maltopyranoside(DDM)</td>
+      <td>Anatrace</td>
+      <td>D310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesteryl Hemisuccinate</td>
+      <td>Anatrace</td>
+      <td>CH210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PMAL-C8</td>
+      <td>Anatrace</td>
+      <td>P5008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIS</td>
+      <td>Fisher Scientific</td>
+      <td>BP152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Fisher Scientific</td>
+      <td>S271</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>Fisher Scientific</td>
+      <td>C70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Sigma Aldrich</td>
+      <td>P9333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgCl2</td>
+      <td>Sigma Aldrich</td>
+      <td>M8266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-(2-hydroxyethyl)−1- piperazineethanesulfonic acid (HEPES)</td>
+      <td>Sigma Aldrich</td>
+      <td>H3375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaOH</td>
+      <td>Sigma Aldrich</td>
+      <td>S5881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CsCl</td>
+      <td>Sigma Aldrich</td>
+      <td>C3139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethylene glycol-bis (2-aminoethylether)- N,N,N′,N′-tetraacetic acid (EGTA)</td>
+      <td>Sigma Aldrich</td>
+      <td>E4378</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CsOH solution</td>
+      <td>Sigma Aldrich</td>
+      <td>232041</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Aminoethyl diphenylborinate (2-APB)</td>
+      <td>Sigma Aldrich</td>
+      <td>D9754</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Camphor</td>
+      <td>Sigma Aldrich</td>
+      <td>W223018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Sigma Aldrich</td>
+      <td>D2650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>leupeptin</td>
+      <td>GoldBio</td>
+      <td>L-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>pepstatin</td>
+      <td>GoldBio</td>
+      <td>P-020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>aprotinin</td>
+      <td>GoldBio</td>
+      <td>A-655</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNase I</td>
+      <td>GoldBio</td>
+      <td>D-301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-mercapto ethanol</td>
+      <td>Sigma Aldrich</td>
+      <td>M3148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PMSF</td>
+      <td>Sigma Aldrich</td>
+      <td>P7626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>anti-FLAG resin</td>
+      <td>Sigma Aldrich</td>
+      <td>A4596</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bio-Beads SM-2</td>
+      <td>BioRad</td>
+      <td>152–8920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl -sn-glycero-3-phosphocholine (POPC)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850457C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl -sn-glycero-3- phosphoethanolamine (POPE)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850757C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl -sn-glycero-3-phospho- (1'-rac-glycerol) (POPG)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>840457C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>
+      <td>RRID:SCR_016499</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GCTF</td>
+      <td>Zhang, 2016</td>
+      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/</td>
+      <td>RRID:SCR_016500</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 3.0</td>
+      <td>Zivanov et al., 2018</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/relion/</td>
+      <td>RRID:SCR_016274</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Emsley and Cowtan, 2004</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+      <td>RRID:SCR_014222</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>Adams et al., 2010</td>
+      <td>http://phenix-online.org/</td>
+      <td>RRID:SCR_014224</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Molprobity</td>
+      <td>Chen et al., 2010</td>
+      <td>http://molprobity.biochem.duke.edu/index.php</td>
+      <td>RRID:SCR_014226</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+      <td>RRID:SCR_004097</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>Shrödinger LLC</td>
+      <td>https://pymol.org/2/</td>
+      <td>RRID:SCR_000305</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp10</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td>RRID:SCR_011323</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginPro 2016</td>
+      <td>OriginLab Corp.</td>
+      <td></td>
+      <td>RRID:SCR_014212</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microsoft Excel 2010</td>
+      <td>Microsoft</td>
+      <td></td>
+      <td>RRID:SCR_016137</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>Whatman No. one filter paper</td>
+      <td>Sigma Aldrich</td>
+      <td>WHA1001325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UltrAuFoil R1.2/1.3 300-mesh grid</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Q350AR13A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cryo-electron microscopy structure of the human TRPV3 channel</td>
+      <td>Zubcevic et al., 2018a</td>
+      <td>PDB ID 6MHO</td>
+      <td>Zubcevic et al., 2018b</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cryo-electron microscopy structure of the human TRPV3 channel</td>
+      <td>Zubcevic et al., 2018a</td>
+      <td>EMDB ID EMD-9115</td>
+      <td>Zubcevic et al., 2018b</td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression and purification of human TRPV3
 
 A full-length human TRPV3 construct, containing mutations T96A (Zubcevic et al., 2018b) and K169A was cloned into a pFastBac vector in frame with a FLAG affinity tag, and baculovirus was produced according to manufacturers’ protocol (Invitrogen, Bac-to-Bac). Sf9 insect cells (ATCC), infected with baculovirus at a density of 1.3 × 106 cells ml−1, were grown for 72 hr at 27° C in an orbital shaker. Cell pellets were collected and resuspended in buffer A (50 mM TRIS pH 8, 150 mM NaCl, 1 μg ml−1 leupeptin, 1.5 μg ml−1 pepstatin, 0.84 μg ml−1 aprotinin, 0.3 mM PMSF, 14.3 mM β-mercaptoethanol, and DNAseI) before lysis by sonication (3 × 30 pulses). Lysed cells were solubilized in 40 mM dodecyl β-maltoside (DDM, Anatrace) and 4 mM Cholesteryl Hemisuccinate Tris salt (CHS, Anatrace) at 4° C for 1 hr. Insoluble material was removed by centrifugation (8,000 g, 30 min), and anti-FLAG resin was added to the supernatant for 1 hr at 4° C. Following binding, the anti-FLAG resin was transferred to a Biorad column at 4° C and washed with 10 column volumes buffer B (50 mM TRIS pH8, 150 mM NaCl, 1 mM DDM, 0.1 mM CHS, 10 mM DTT) and the protein eluted in buffer C (50 mM TRIS pH 8, 150 mM NaCl, 1 mM DDM, 0.1 mM CHS, 0.1 mg ml−1 3:1:1 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC), 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE), 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (POPG), 10 mM DTT, 10 mg ml−1 FLAG peptide). Size exclusion chromatography was performed and the protein peak collected and mixed with Poly (Maleic Anhydride-alt-1-Decene) substituted with 3-(Dimethylamino) Propylamine (PMAL-C8, Anatrace) (1:10 w/w ratio) and incubated overnight at 4° C with gentle agitation. Detergent was removed with Bio-Beads SM-2 (15 mg ml−1) for 1 hr at 4° C. The reconstituted protein was purified on a Superose 6 column at 4° C in buffer D (50 mM Tris pH8, 150 mM NaCl). Following size exclusion, the protein peak was collected and concentrated to 2–2.5 mg ml−1. For the TRPV3K169A 2-APB sample, the protein was incubated with 1 mM 2-APB for ~3.5 min before blotting.
 
-## Cryo-EM sample preparation
+### Cryo-EM sample preparation
 
 Cryo-EM grid preparation was performed similarly for each TRPV3 K169A specimen. 3 μl sample was dispensed on a freshly glow discharged (30 s) UltrAuFoil R1.2/1.3 300-mesh grid (Electron Microscopy Services), blotted for 3 s with Whatman No. one filter paper using the Leica EM GP2 Automatic Plunge Freezer at 23° C and >85% humidity and plunge-frozen in liquid ethane cooled by liquid nitrogen.
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 Data for TRPV3K169A and TRPV3K169A 2-APB was collected using the Titan Krios transmission electron microscope (TEM) operating at 300 keV using Gatan K2 Direct Electron Detector and a Falcon III Direct Electron Detector operating in counting mode, respectively. The nominal magnification used for the TRPV2K169A sample was 130,000x corresponding to a physical pixel size of 1.06 Å/pixel. For the TRPV2K169A 2-APB, the nominal magnification was 75,000x corresponding to a physical pixel size of 1.08 Å/pixel. For the TRPV3K169A, 2385 movies (40 frames/movie) were collected using a 10 s exposure with an exposure rate of ~4.5 e-/pixel/s, resulting in a total exposure of 40 e-/Å (Caterina et al., 1997) and a nominal defocus range from −1.0 µm to −2.5 µm. For TRPV3K169A 2-APB, 1984 movies were collected (30 frames/movie) with 60 s exposure and exposure rate of ~0.8 e-/pixel/s. The total exposure was of 42 e-/Å (Caterina et al., 1997) and a nominal defocus range from −1.25 µm to −3.0 µm.
 
-## Reconstruction and refinement
+### Reconstruction and refinement
 
 TRPV3K169A MotionCor2 (Zheng et al., 2017) was used to perform motion correction and dose-weighting on 2385 movies. Summed unweighted images were used for CTF determination using GCTF (Zhang, 2016). After motion correction and CTF determination, the dataset was pruned by removing micrographs which contained Figure of Merit (FoM) values of <0.05 and Astigmatism values > 1700. A set of 1596 particles was picked manually and subjected to reference-free 2D classification (k = 12, T = 2) which subsequently served as a template for automatic particle picking from the entire dataset. A stack of 452,388 particles were picked (binned 4 × 4 (4.24 Å/pixel, 64 pixel box size)) and subjected to reference-free 2-D classification (k = 45, T = 2) in RELION 3.0 (Zivanov et al., 2018). Classes displaying the most well-defined secondary structure features were selected (441,547 particles) and used in 3D refinement with no symmetry imposed (C1) and with the previously determined map for apo human TRPV3 (EMD-9115) filtered to 30 Å as a reference model. This resulted in an 8.7 Å 3D reconstruction, which was then used for re-extraction and re-centering of 1 × 1 binned particles (1.06 Å/pixel, 256 pixel box size). 3D classification (k = 6, T = 8) without imposed symmetry (C1) was performed on these particles, using a soft mask calculated from the full molecule. Class 4 (95,184 particles) possessed the most well-defined secondary structure elements and was chosen for further analysis. 3D auto-refinement of class four without symmetry imposed (C1) yielded a 4.6 Å 3D reconstructions. The particles were then subjected to Bayesian polishing as implemented in RELION 3.0. The shiny particles were input into 3D auto-refinement with a soft mask no imposed symmetry (C1), resulting in a 4.3 Å reconstruction. These particles were subjected to CTF refinement, followed by another round of 3D auto-refinement in C1 symmetry resulting in a 4.37 Å map. Visual inspection of the volume revealed the presence of four-fold symmetry, and therefore 3D auto-refinement was repeated with C4 symmetry imposed, resulting in the final 4.1 Å map.
 
 TRPV3K169A 2-APB 1984 movies were subjected to motion correction and dose-weighing using MotionCor2. The unweighted and summed images were used for CTF determination using GCTF. Micrographs with a Figure of Merit (FoM) values of <0.15 and Astigmatism values of >200 were removed. A set of 2099 particles was picked manually and subjected to reference-free 2D classification (k = 12, T = 2) which were used as a template for automatic particle picking from the entire dataset. This resulted in a stack of 1,174,521 particles (binned 4 × 4 (4.32 Å/pixel, 64 pixel box size)) and subjected to reference-free 2-D classification (k = 75, T = 2) in RELION 3.0 (Zivanov et al., 2018). Classes with the most well-defined structural features were picked (636,742 particles) and extracted (binned 1 × 1 (1.08 Å/pixel, 256 pixel box size)) before being subjected to 3D auto-refinement using the map of human apo TRPV3 (EMD-9115) filtered to 30 Å as a reference and with no symmetry imposed (C1), resulting in a 5.3 Å reconstruction. This was then subjected to 3D classification (k = 6, T = 8) which included particle alignment and with no symmetry imposed. Class 4 (136,814 particles) was selected and subjected to 3D auto-refinement (C1), yielding a 3.9 Å reconstruction. Further 3D classification (k = 2, T = 8) using a soft mask and without alignment or imposed symmetry separated a fraction of bad particles (57,808 particles) leaving a stack of 79,006 particles which were subjected to another round of 3D auto-refinement (C1). The resulting volume revealed four-fold symmetry and the 3D auto-refinement was therefore repeated with C4 symmetry imposed, yielding a 3.6 Å reconstruction. These particles were then subjected to Bayesian polishing and CTF refinement, resulting in a final reconstruction resolved to 3.59 Å. All resolution estimates were based on the gold-standard FSC 0.143 criterion (Scheres and Chen, 2012; Chen et al., 2013).
 
-## Model building
+### Model building
 
 The TRPV3K169A and TRPV3K169A 2-APB models were built directly into the cryo-EM electron density using the previously determined structure of the human TRPV3 in the apo form (PDB 6MHO) as a template. The models were first refined in real space in Coot (Emsley and Cowtan, 2004) and subsequently subjected to automated real space refinement using phenix.real_space_refine as implemented in the Phenix suite (Adams et al., 2010). The refinement was performed using global minimization and rigid body, with tight ideal geometry and secondary structure restraints. The refinement process was guided by the Molprobity server (http://molprobity.biochem.duke.edu/) (Chen et al., 2010). Analysis and structure illustrations were performed using Pymol (The PyMOL Molecular Graphics System, Version 2.0) and UCSF Chimera (Pettersen et al., 2004).
 
-## Model comparisons and analysis
+### Model comparisons and analysis
 
 All structural alignments and measurements were performed using Pymol and UCSF Chimera. The correlation of the fit of the coil vs. the helix distal CTD into the mTRPV3 cryo-EM map (EMD-8921) was calculated as follows: the EMD-8921 map was segmented using the Segment map tool, as implemented in UCSF Chimera, and the density corresponding to the distal CTD was isolated and saved as a map file (MapCTD). The coil CTD (PDB 6DVZ) and the helical CTD (TRPV3K169A 2-APB) were isolated and saved as individual pdb files (CTDcoil and CTDhelix) and placed in the MapCTD. Using the molmap function in UCSF Chimera, simulated maps were generated for CTDcoil and CTDhelix at the same resolution as MapCTD. Correlation was calculated between the CTDcoil/MapCTD, and CTDhelix/MapCTD using the measure correlation function in UCSF Chimera.
 
-## Cell lines
+### Cell lines
 
 HEK293T cells were purchased from ATCC with authentication records. Additional authentication was not performed prior to this study. Cells tested negative for mycoplasma contamination.
 
-## Electrophysiology
+### Electrophysiology
 
 HEK293T cells (62312975 – ATCC) were grown in DMEM supplemented with 10% FBS (Gibco), 1% penicillin/streptomycin (Gibco) and were sustained at 37°C in 5% CO2. Cells between passage 10–30 grown in 40 mm wells were transiently transfected at ~50% confluency with plasmids encoding for either WT, K169A, E751A, W739A, W742A, K743A, R487A, R487W, E501G, Y540W, Y565A, H426A TRPV3 and green fluorescent protein (GFP) using FuGene6 (Promega). ~24 hr after transfection, cells were reseeded onto 12 mm round glass coverslips (Fisher) in 20 mm wells and used after 12–24 hr for electrophysiological measurements.
 

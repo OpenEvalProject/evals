@@ -35,7 +35,7 @@
 
 ## Abstract
 
-Human ascariasis is a major neglected tropical disease caused by the nematode Ascaris lumbricoides . We report a 296 megabase (Mb) reference-quality genome comprised of 17,902 protein-coding genes derived from a single, representative Ascaris worm. An additional 68 worms were collected from 60 human hosts in Kenyan villages where pig husbandry is rare. Notably, the majority of these worms (63/68) possessed mitochondrial genomes that clustered closer to the pig parasite Ascaris suum than to A. lumbricoides . Comparative phylogenomic analyses identified over 11 million nuclear-encoded SNPs but just two distinct genetic types that had recombined across the genomes analyzed. The nuclear genomes had extensive heterozygosity, and all samples existed as genetic mosaics with either A. suum -like or A. lumbricoides -like inheritance patterns supporting a highly interbred Ascaris species genetic complex. As no barriers appear to exist for anthroponotic transmission of these ‘hybrid’ worms, a one-health approach to control the spread of human ascariasis will be necessary.
+Human ascariasis is a major neglected tropical disease caused by the nematode Ascaris lumbricoides. We report a 296 megabase (Mb) reference-quality genome comprised of 17,902 protein-coding genes derived from a single, representative Ascaris worm. An additional 68 worms were collected from 60 human hosts in Kenyan villages where pig husbandry is rare. Notably, the majority of these worms (63/68) possessed mitochondrial genomes that clustered closer to the pig parasite Ascaris suum than to A. lumbricoides. Comparative phylogenomic analyses identified over 11 million nuclear-encoded SNPs but just two distinct genetic types that had recombined across the genomes analyzed. The nuclear genomes had extensive heterozygosity, and all samples existed as genetic mosaics with either A. suum-like or A. lumbricoides-like inheritance patterns supporting a highly interbred Ascaris species genetic complex. As no barriers appear to exist for anthroponotic transmission of these ‘hybrid’ worms, a one-health approach to control the spread of human ascariasis will be necessary.
 
 ## Introduction
 
@@ -49,9 +49,94 @@ In the current study, we constructed a reference-quality Ascaris genome (ALV5) b
 
 ## Results
 
-## Human Ascaris reference genome to promote comparative genomic analyses
+### Human Ascaris reference genome to promote comparative genomic analyses
 
 To generate a human Ascaris spp. germline genome assembly (prior to programmed DNA elimination Wang et al., 2017), ovarian DNA was sequenced from a single female worm collected from a Kenyan study participant who was presumed to be infected with A. lumbricoides using Illumina paired-end and mate-pair libraries of various insert sizes with a total sequence coverage of ~27 fold (Supplementary file 1). Using these data, three different assembly strategies were used. The de novo assembly and semi-de novo strategies produced poor A. lumbricoides germline draft genomes (Table 1). In the semi-de novo assembly, the majority of the >4000 short contigs (making up 15.4 Mb of sequence) that could not be incorporated into the semi-de novo assembly are sequences that aligned to the genome at multiple positions. Comparison of the A. suum gene annotations to this assembly revealed a low A. lumbricoides gene number and high numbers of partial and split genes (Table 1, see footnote 3). These characteristics are typical of highly fragmented genomes or genomes with high levels of mis-assemblies (Wang et al., 2017).
+
+**Table 1.**
+ Ascaris germline genome assemblies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Features</th>
+      <th>A. lumbricoides de novo</th>
+      <th>A. lumbricoides semi-de novo*</th>
+      <th>A. lumbricoides reference-based</th>
+      <th>A. suum† (Wang et al., 2017)</th>
+      <th>A. suum† (Jex et al., 2011)§</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Assembled bases (Mb)</td>
+      <td>269.2</td>
+      <td>307.9</td>
+      <td>296.0</td>
+      <td>298.0</td>
+      <td>272.8</td>
+    </tr>
+    <tr>
+      <td>N50 (Mb)</td>
+      <td>0.29</td>
+      <td>4.77</td>
+      <td>4.63</td>
+      <td>4.65</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>N50 number</td>
+      <td>269</td>
+      <td>21</td>
+      <td>21</td>
+      <td>21</td>
+      <td>179</td>
+    </tr>
+    <tr>
+      <td>N90 (Mb)</td>
+      <td>0.04</td>
+      <td>0.95</td>
+      <td>0.91</td>
+      <td>0.92</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>N90 number</td>
+      <td>1112</td>
+      <td>74</td>
+      <td>75</td>
+      <td>75</td>
+      <td>748</td>
+    </tr>
+    <tr>
+      <td>Total scaffold number</td>
+      <td>8111</td>
+      <td>412</td>
+      <td>415</td>
+      <td>415</td>
+      <td>29,831</td>
+    </tr>
+    <tr>
+      <td>Largest scaffold length (Mb)</td>
+      <td>1.9</td>
+      <td>13.9</td>
+      <td>13.2</td>
+      <td>13.4</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>Protein-coding genes</td>
+      <td>17,011‡</td>
+      <td>17,105‡</td>
+      <td>17902</td>
+      <td>18,025</td>
+      <td>18,542‡</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Exhibits ~23 Mb of sequence gaps and 15.4 Mb of unplaced sequence in 4072 short contigs.† The three A. lumbricoides assemblies constructed here are compared to the A. suum assemblies from Australia (Jex et al., 2011) and the United States (Wang et al., 2017).‡21–23% are only partial genes based on the annotation from A. suum (Wang et al., 2017).§ The sample for sequencing is derived from a mixture of the germline and somatic genomes (after DNA elimination)._
 
 Mapping of the human Ascaris reads to the A. suum reference genome (Wang et al., 2017) revealed an exceptionally high-sequence similarity (>99% identity) between the two species with few human Ascaris reads that could not be mapped to A. suum. Based on this high-sequence similarity, a third reference-based-only assembly strategy was used to generate the human Ascaris germline genome assembly using the A. suum germline genome as a reference (see Materials and methods). This approach led to a reference-quality human Ascaris genome assembly with many fewer gaps (only 0.98 Mb of sequence) and no unplaced contigs. The Ascaris genome assembled into 415 scaffolds with a combined size of 296 Mb. An additional 15.4 Mb of sequence was present in 4072 unscaffolded short contigs. The assembly N50 value was 4.63 Mb, with the largest scaffold measuring 13.2 Mb. The largest 50 scaffolds combined to represent 78% of the genome. The assembly was further polished using additional Illumina reads from the same worm to more accurately reflect single base differences, indels, and any potential local mis-assembled regions.
 
@@ -59,41 +144,153 @@ To evaluate the quality of the assembled genome, we mapped the Ascaris Illumina 
 
 Like A. suum embryos, A. lumbricoides embryos undergo programmed DNA elimination during the differentiation of the somatic cells from the germline in early development (Streit et al., 2016; Wang and Davis, 2014). In A. suum, ~30 Mb of 120 bp tandem repeats and ~1000 germline-expressed genes are lost from the germline to form the somatic genome (Wang et al., 2012; Wang et al., 2017). We also sequenced the somatic genome from the intestine of the same female A. lumbricoides worm. Comparison of the germline and somatic genomes revealed that DNA elimination in the human Ascaris sample (including the breaks, sequences, and genes eliminated) was identical to that described for the pig A. suum sample (Wang et al., 2017).
 
-## Gene content and Ascaris proteome
+### Gene content and Ascaris proteome
 
 Earlier annotations of protein coding genes for A. suum draft genomes were produced by Jex et al., 2011 and Wang et al., 2012 and improved with a recent updated genome (Wang et al., 2017)—although the focus of the recent study was not on protein annotations. Here, we updated, identified, and fully annotated the 17,902 protein-coding genes in the reference-based genome assembly (Supplementary file 2 and Figure 1—figure supplement 1). Our aims were to highlight the phylogenetic relationship with other helminths and between Ascaris spp., to provide potential targets for future diagnostics to differentiate between nematodes and even between pig and human Ascaris, and to detail the potential functions of hypothetical or unknown proteins in the Ascaris genome. Using a custom pipeline (see Materials and methods and Cotton et al., 2017), we classified 48% of the predicted proteome into functional groups (Figure 1A). Although the remaining 52% (9300) of the genes were classified as unknown/uncharacterized, 2515 (27%) of these appear to encode proteins that have signatures indicative of either being secreted or being membrane-bound (some with GPI anchors). To provide a more comprehensive annotation of the transcriptomes of A. suum and A. lumbricoides, we re-mapped the RNA-seq data from A. suum to the current gene models of A. lumbricoides (ALV5) (Supplementary file 2). We performed multivariate analyses of this revised RNA-seq data compilation to generate a comprehensive RNA-seq data set for differential gene expression in diverse stages/tissues (Supplementary file 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig1-v1.jpg)
+
+**Figure 1.:** (A) Functional classification of the predicted proteome of A. lumbricoides (an improved proteome of Ascaris spp.), excluding proteins with unknown or uncharacterized function. (B) PCA plot based on multivariate analyses of RNA-seq data from various stages/tissues. Samples from tissues related to sperm (blue ellipse) and oocyte production (orange ellipse, see also Figure 1—figure supplement 2) cluster together. (C) Estimated tree based on orthology analyses between the predicted proteomes of publicly available nematodes. The Ascaris clade has been shaded in purple within Clade III (teal). Samples are labeled by BioProject Accession number, as well as by the first letter of the genus and the first two letters of the species name (ASU = Ascaris suum, ALU = Ascaris lumbricoides, WBA = Wuchereria bancrofti, BMA = Brugia malayi, LLO = Loa loa, DIM = Dirofilaria immitis, OVO = Onchocerca volvulus, TCAN = Toxocara canis, ACAN = Ancylostoma caninum, ADU = Ancylostoma duodenale, ACE = Ancylostoma ceylanicum, NAM = Necator americanus, CEL = Caenorhabditis elegans, SST = Strongyloides stercoralis, SRA = Strongyloides ratti, TSP = Trichinella spiralis, TTR = Trichuris trichiura). Multiple genomes for the same organism are suffixed with numerals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Functional classification of the predicted proteome of A. lumbricoides (an improved proteome of Ascaris spp.) with the majority of proteins being unknown/uncharacterized. (B) Two-dimensional principal component analysis plot illustrating the similarities in transcription profiles between the major stages (Figure 1B) and the developmental stages.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Correlation heatmap comparing parasite transcriptomes at different life stages. (B) 1870 genes differentially expressed across the stages.
+
 Phylogenetic trees derived from orthologue analyses of the predicted proteomes of ALV5 with the predicted proteomes of other nematodes across all clades indicated the similarity among the published genomes of A. suum PRJNA62057 and PRJNA80881 in Jex et al., 2011; Wang et al., 2012; Wang et al., 2017 and A. lumbricoides (International Helminth Genomes Consortium, 2019) with ALV5 within the Ascaris branch (Figure 1C). The variation observed within the Ascaris spp. (with relatively weak bootstrap values of 0.3–0.59) is likely due to the differences in protein coding gene annotations and split genes seen in previous assemblies.
 
-## Mitochondrial genome assembly
+### Mitochondrial genome assembly
 
 We next took advantage of the abundant reads from the mitochondrial genome in our sequencing data (on average 7690X coverage, see Supplementary file 1) to perform de novo assembly of 68 complete human Ascaris spp. mitochondrial genomes from individual worms (Supplementary file 3). These mitochondrial genomes were then annotated using sequence similarity to well-characterized and annotated mitochondrial genes.
 
-## Population structure inferred from mitochondrial cox-1 gene
+### Population structure inferred from mitochondrial cox-1 gene
 
 The mitochondrial cox-1 gene has been frequently used to infer evolutionary distances between species as well as between populations (Cavallero et al., 2013; Amor et al., 2016; Springer et al., 2001; Wiens et al., 2010; Zardoya and Meyer, 1996; Zou et al., 2017) due to its rapid mutation rate, lack of recombination and relatively constant rate of change over time (Brown et al., 1979; Giles et al., 1980; Harrison, 1989). Existing data suggest that mitochondria are inherited maternally in C. elegans (Lim et al., 2019; Zhou et al., 2011; Sato and Sato, 2011; Wang et al., 2017) and Ascaris (Anderson et al., 1995). Previous cox-1 phylogeny studies resolve Ascaris spp. worms into three distinct clades: clade A is predominantly comprised of worms isolated from pigs, clade B is predominantly comprised of worms isolated from humans, and clade C is from worms only isolated from pigs in Europe and Asia (Cavallero et al., 2013). Interestingly, haplotype network analyses revealed that the majority of worms isolated from humans in the Kenyan villages possessed cox-1 haplotypes that were consistent with infection of parasites from clade A (63/68), whereas only six specimens had cox-1 haplotypes consistent with infection by worms from clade B (Figure 2—figure supplement 1 and Figure 2a).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig2-v1.jpg)
+
+**Figure 2.:** (A) Haplotype network based on the COl mitochondrial gene. Notches on the lines separating samples represent the number of nucleotide changes between the worms represented, details on the origins of haplotypes can be found in Supplementary file 4; (B) Maximum likelihood phylogenetic (ML) reconstruction of Ascaris complete mitochondrial genomes, constructed under the conditions of the GTR model and 1000 bootstrap replicates were used to provide nodal supports. The tree was constructed using all mitochondrial genomes assembled from the Kenyan worm specimens and all other published reference Ascaris mitochondrial genomes and Baylisascaris procyonis was used as the outgroup. The three major clades A, B, and C were identified by color hue, and the majority of the Kenyan worms clustered in clade A. Each village was represented by a distinct shape and unfilled shapes represented worms sequenced from specific villages post-anthelminthic treatment.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Maximum likelihood phylogenetic analyses of the (A) cox-1 and (B) nad-4 genes using RaxML under the conditions of the GTR model with nodal support values generated through 1000 bootstrap replicates. The trees were generated using complete sequences of the genes extracted from the 68 Kenyan Ascaris mitochondrial genomes generated in this study and other published reference genomes. The most diverse region was the non-coding control region, both between worms from different villages in this study and between Kenyan and other worms. The nad-4 gene had a nucleotide diversity of π = 0.008827; that of the cox-1 barcoding gene was 0.006243.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Comparison between Kenyan samples and reference mitochondrial genomes of Ascaris lumbricoides and Ascaris suum, (B) Comparison between villages, (C) cox-1 comparison between villages. Despite differences in their molecular diversity, phylogenetic analyses based on the nad-4 and cox-1 genes revealed the same overall topology: distinct A. lumbricoides- and A. suum-type clades.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The pairwise nucleotide differences between worm samples (solid line) are compared to the binomial function that would most closely represent a theoretical stable population (dotted line). Additional information is available in Supplementary file 8.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** An assembled 6.5 Mb Ascaris lumbricoides chromosome fragment (ALgV5R006), with the frequency of identified SNPs and indels plotted for one representative A. lumbricoides-like worm from this study (#7664) and one A. suum-like worm (#7680). Genes are shown on the top of the plot, with red and blue indicating genes transcribed from forward and reverse strands, respectively. The y-axis shows the frequency of SNPs and indels for a 20 kb window size (with a 4 kb sliding window in x-axis). Note the profiles and the frequency between SNPs and indels are highly consistent within individual worms.
+
 When cox-1 sequences from the present study were compared against those within the Ascaris species complex deposited at NCBI (see Supplementary file 4 and Figure 2B; Cotton et al., 2017; Criscione et al., 2007; Godel et al., 2012; Goldberg et al., 2013) within clade A (which appeared to contain the majority of sequences not only from Kenya but also from other localities), seven unique haplotypes of cox-1 from Kenya were identified. These appeared to be shared not only with other haplotypes from Africa, but also with those from Brazil. In contrast, clade B haplotypes appeared to be even more cosmopolitan, with the three haplotypes from Kenya not only being shared with Zanzibar, but also with haplotypes from Brazil, Denmark, China and Japan. Despite the distinct clustering of haplotypes into the three typical Ascaris clades, there was very little genetic diversity among haplotypes within each of the clades, with the majority of haplotypes being separated by 1–4 nucleotide differences. There were greater levels of genetic divergence between clades; A and B were closer to each other while C was more distinct. Similar findings were seen with nad-4, the most variable gene in the mitochondrial genome (Figure 2—figure supplement 1, Figure 2—figure supplement 2).
 
-## Phylogenetic analyses and population structure inferred from complete mitochondrial genomes
+### Phylogenetic analyses and population structure inferred from complete mitochondrial genomes
 
 Forty-seven SNPs were identified in the human Ascaris mitochondrial genomes. Approximately a quarter of these variants were in non-coding portions of the mitochondrial genome and half were synonymous (Supplementary file 1). As with the cox-1 haplotype analyses, whole mitochondrial genome analysis distinguished two clades (clade A and clade B), but there were no distinct geographically specific sub-clades seen within either clade A or clade B (Figure 2B, Table 2). Clade C was also produced by a single published sequence which was used for comparison. In order to assess the validity of the clades A and B representing two distinct molecular taxonomic units, and thus potentially different species, Birky, 2013 4X ratio was applied to provide a lineage-specific perspective of potential species delimitation. The ratio failed to differentiate clades A and B as distinct species with K/Θ <4 at 2.285 indicating Ascaris is one large population—further supporting the lack of differentiation into separate species (Supplementary file 5). Furthermore, there were no significant associations between mitochondrial sequence variations and other factors (e.g. village, household, time of worm collection, host) based on PERMANOVA (see methods and Table 2) after translating the phylogenetic tree into a distance matrix, suggesting not only a lack of differentiation into distinct species but also a potentially large interbreeding population of worms being transmitted between individuals and across villages.
 
+**Table 2.**
+ Effects of host, household, village, and time point on the genetic variation of Ascaris.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Nuclear genome phylogeny*</th>
+      <th colspan="2">Mitochondrial genome phylogeny</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>R†</th>
+      <th>p-value</th>
+      <th>p-adjusted (Bonferroni)</th>
+      <th>R†</th>
+      <th>p-value</th>
+      <th>Samples†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Individual</td>
+      <td>0.933</td>
+      <td>0.001</td>
+      <td>0.004</td>
+      <td>0.996</td>
+      <td>0.095</td>
+      <td>68 worms from 60 people</td>
+    </tr>
+    <tr>
+      <td>Household</td>
+      <td>0.020</td>
+      <td>0.110</td>
+      <td>0.440</td>
+      <td>0.011</td>
+      <td>0.340</td>
+      <td>68 worms from 43 houses</td>
+    </tr>
+    <tr>
+      <td>Village</td>
+      <td>0.052</td>
+      <td>0.001</td>
+      <td>0.004</td>
+      <td>0.013</td>
+      <td>0.335</td>
+      <td>Five villages with 43, 17, 4, 3, and one individual each</td>
+    </tr>
+    <tr>
+      <td>Time point</td>
+      <td>0.018</td>
+      <td>0.162</td>
+      <td>0.648</td>
+      <td>0.024</td>
+      <td>0.100</td>
+      <td>55 at baseline and 13 post-deworming</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Results based on PERMANOVA using phylogenetic distances among worms. Results were largely similar using a distance matrix generated from the PCA plot (Figure 6) and using the Multi-Response Permutation Procedure (MRPP) method (Supplementary file 9).† Since some worms did not have metadata associated with each variable examined, and some variables were over-represented in the sample (for example, 43 of 68 worms came from a single village) the samples are specified in this column._
+
 To account for a potentially large population of interbreeding worms, analyses to detect signatures of population expansion were performed. When the global mitochondrial genome data were compared, the Tajima’s D was negative and significant (Tajima’s D −1.5691; p-value 0.028), indicating an excess of low frequency polymorphisms within the global data set suggesting population size expansion. Despite the Fu’s F not being significant it was positive (Fu’s Fs 8.5673; P-0.975) potentially indicating a deficiency in diversity as would be expected in populations that have recently undergone a bottleneck event. The same pattern was also seen in the Kenyan sequences but neither the Tajima’s D nor the Fu’s were significant (Figure 2—figure supplement 3 and Supplementary file 6). Although there does appear to be a signature of a recent population expansion event in both the global and Kenyan data, the lack of information on the mutation rates of Ascaris and other nematodes prevents the accurate estimate of such an event.
 
-## Nuclear genome variation in the Ascaris population
+### Nuclear genome variation in the Ascaris population
 
 To quantify genetic variation in the Ascaris worms isolated from infected Kenyans, the nuclear genomes of the 68 individual worms were analyzed to assess intraspecific population genetic diversity, heterozygosity, and ploidy. Single-nucleotide polymorphisms (SNPs) and insertion/deletions (indels) across the nuclear genomes were assessed for the first 50 largest scaffolds, which comprised 78% of the genome (see methods). Each Ascaris worm was sequenced to a mean coverage depth of ~27 fold. A total of 11.15 million SNP positions were identified in the first 50 scaffolds among the Ascaris nuclear genomes. Approximately 25% of these variants were intergenic (Supplementary file 1). As an example, SNPs and indels in a single Ascaris chromosome were plotted for two worms collected from humans in Kenya and one worm from a pig in the United States (Figure 2—figure supplement 4). The profiles and the frequency between SNPs and indels are highly consistent within individual worms, with the ratio of indel:SNPs frequency at ~1:7. A comparison of the variations identified between individuals infected with worms that had either A. lumbricoides-like or A. suum-like mitochondrial genomes illustrates that most of the differences appear to be random variations, and there do not appear to be major differences between A. lumbricoides-like and A. suum-like worms. A total of 1.79 million SNPs were unique to individual specimens, presumably representing genetic drift. Of the remaining 9.3 million SNPs, ~32% of these variant positions were present in less than five specimens indicating that the Ascaris genomes sequenced are ~1% polymorphic among the major alleles circulating within the species complex.
 
-## Population structure inferred from nuclear genomes
+### Population structure inferred from nuclear genomes
 
 To investigate the evolutionary pressures that account for the high SNP diversity found among the 68 sympatric worms, the ploidy, degree of heterozygosity (He) and allelic diversity were determined. Worms were disomic, with little to no evidence of aneuploidy (Figure 3—figure supplement 1). The vast majority (>98%) of SNP positions were biallelic, and each worm had, on average, 2.3 million variant positions, of which approximately 60% were heterozygous SNPs (Supplementary file 7). SNP density was determined in 10 kb windows for each worm against the reference ALV5 and a patchy, mosaic pattern was resolved. SNP density was structured within the genome, with scaffolds being either SNP poor or SNP dense. For example, Algv5r020 was SNP dense whereas Algv5r019x was SNP poor. In other scaffolds, alternating SNP poor and SNP dense regions were defined within the contig, with distinct transition points, see for example the first half of Algv5b02, the last quarter of Algv5b05, or the middle of Algv5r021x (Figure 3A). In those regions where SNP density was low, the Tajima D statistic was net negative, indicating that allele frequencies within these regions were structured and more limited.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig3-v1.jpg)
+
+**Figure 3.:** (A) Circos plot depicting the genetic diversity of the Ascaris specimens. Outside track (red histograms) shows the total SNP diversity across the genome (first 50 largest scaffolds) in 10 kb sliding windows. Blue bar plot indicates the measured degree of polymorphism (π) (Nei and Li, 1979) within the Ascaris population in 10 kb sliding windows. The innermost track with black-green histogram plots the Tajima, 1989 values which reflect the difference between the mean number of pairwise differences (π) and the number of segregating sites using a sliding window of 10 kb. (B) The Circos-plot of the genome-wide distribution of heterozygous and homozygous SNPs in 10 kb blocks identified long stretches of homozygosity among the different Ascaris specimens, except 119_3, which is predominantly heterozygous throughout and was isolated from village 3. Red color = >90% of heterozygous SNPs, blue = >90% of homozygous SNPs, yellow = 50% heterozygous, 50% homozygous SNPs. Each track represents a single specimen.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The ploidy of the Ascaris specimens are represented in a heatmap. Ploidy was calculated by averaging the count of aligned reads in 10 kb sliding windows across the genome after reference mapping against ALV5. The ploidy data suggest that Ascaris is completely diploid (close to 2 n), except at two scaffolds ALgB5B14 and ALgv5RO23, where the majority of specimens show elevated ploidy. X-axis shows the first 50 largest scaffolds involved in this study and the y-axis shows the specimens (ordered by code number 1–68).
+
 Genome-wide, homozygous SNP regions were found to be unevenly distributed, with some scaffolds possessing long runs of homozygosity, see for example Algv5b02, Algv5r009x, Algv5r013x, Algv5r014x, Algv5r018x, Algv5r019x, Algv5r027x (depicted by solid blue in Figure 3B), and these regions were net negative by the Tajima D test. Conversely, heterozygous SNPs were less structured and appeared randomly distributed throughout the genome (Figure 3B). Overall, three genetic types were resolved by this analysis: in each genome, there existed SNP-poor homozygous regions (colored blue) or SNP dense regions, which either possessed homozygous alternate SNPs (also colored blue) or heterozygous SNPs (colored in ‘red’ or ‘yellow’ blocks depending on the density of heterozygous SNPs resolved in each 10 kb block: one haplotype was similar to ALV5 and the other was different). Only one worm specimen (119_3) was heterozygous genome-wide, and this track is depicted as ‘red’ across all scaffolds in the Circos plot (Figure 3B).
 
-## Population genetic structure of Kenyan Ascaris worm specimens
+### Population genetic structure of Kenyan Ascaris worm specimens
 
 A phylogenetic tree constructed using genome wide SNPs with at least 10x coverage (11.15 million phased SNPs total) from 69 Ascaris worm specimens, including the A. suum reference genome, established that the Kenyan specimens were more similar to each other than they were to the A. suum reference genome, which had many more unique SNPs (Figure 4A). Notably, the nuclear genomes from the worms that possessed A. lumbricoides-like mitochondrial genomes did not clade separately, indicating that the nuclear genomes were incongruent with the mitochondrial genomes, and likely recombinant. A co-ancestry heatmap was generated among the sympatric Ascaris, and this analysis divided the genome into discrete segments and clustered samples along the diagonal based on the greatest number of shared ancestral blocks using the nearest neighbor algorithm from fineSTRUCTURE. The Ascaris genomes resolved as 13 clusters that possessed high frequency nearest-neighbor, or shared ancestry, relationships. In contrast, the A. suum reference genome and specimen 119_3 were anomalous, likely the result of their excess heterozygosity due in part to elevated numbers of unique SNPs. Notably, nine worm specimens did not coalesce into a cluster with shared ancestry. Closer examination of these specimens indicated that their phased genomes possessed limited allelic diversity and were highly recombinant (Figure 4B). This genetic mosaicism was readily resolved by fluctuating intra-scaffold genealogies established using a sliding-window neighbor-joining topology that identified regions with incongruent tree topologies. See for example the trees generated at the scaffolds ALgV5b01, ALgV5b02, and ALgV5r001. Indeed, the pairwise SNP and FST estimates for these specimens identified segments where SNP density was low, but FST was elevated with respect to neighboring segments (see block in ALgV5b02) and the most parsimonious explanation for these results is that recombination of a limited number of distinct alleles had occurred in the regions of increased FST (Figure 4B and C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig4-v1.jpg)
+
+**Figure 4.:** (A) Hierarchy phylogenetic tree of Ascaris specimens. Phylogenetic tree was constructed with genome wide SNPs (at 10x coverage) from 68 Ascaris specimens, including the A. suum reference (outgroup). Height = number of SNPs per site. Red symbol = A. lumbricoides mitochondrion genome. Black symbol = A. suum mitochondrion genome. Samples were collected from five different villages: Circle = village 1, square = village 2, upside triangle = village 3, downside triangle = village 4, diamond = village 5. (B) Heatmap clustering the co-inheritance of ancestral blocks by Bayesian method using genome wide shared haplotype segments among the Ascaris genomes. scale = posterior coincidence probability. Hierarchical clustering and phylogenetic relationships are based on percent shared haplotype segments in scaffolds ALgV5B01, ALgV5B02, and ALgV5R001. Red arrows show examples of genetic recombination demonstrated by phylogenetic incongruence in the tree topology based on shared ancestry among blue highlighted specimens (n = 13). (C) Pairwise SNPs and FST estimates in scaffolds ALgV5B01, ALgV5B02, and ALgV5R001 indicate a switching of haplotypes (black arrows), and genetic hybridization among the blue highlighted specimens (n = 13) in the phylogenetic tree depicted in Figure 2B. X-axis = total SNPs/10 kb in SNPs plot or FST/10 kb in FST plot. (D) Estimation of the number of ancestral populations (K) based on Dunn Index (Dunn, 1973). (E) Population genetic structure and admixture clustering analysis of the Ascaris genomes obtained by POPSICLE using K = 6 different color hues in the innermost concentric circle of the Circos plot. The middle concentric circle shows the relative percentage of each genetic ancestry within each genome (represented by the color hues for K = 6). The outermost concentric circle shows the genome wide local admixture profile of each worm in 10 kb sliding windows. The following geometric shapes represent villages, and the color for each shape identifies the mitochondrion genome each sample possesses: Black = A. suum; red = A. lumbricoides; Circle = village 1; square = village 2; upside triangle = village 3; downside triangle = village 4; diamond = village 5.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Data analyzed with POPSICLE with an ancestral population size = 4 (A) and 8 (B) in 10 kb sliding windows as described in Figure 4E.
 
 To estimate the number of supported ancestries (K) that could be resolved in the Ascaris genomes sequenced, we calculated the Dunn index, which supported 3–6 ancestral populations (Figure 4D). A gradual increase in the Dunn Index after K = 6 was observed for an ancestral population size between 2 and 15 (Figure 4D and Figure 4—figure supplement 1). We next used POPSICLE to calculate the number of clades present within each 10 kb sliding window. Local clades were represented with a different color and painted across the genome to resolve ancestry. The SNP diversity plots across the 68 specimens identified three major ‘parentage blocks’ that were resolved as belonging to ALV5 or were genetically distinct with either both haplotypes sharing the alternate parent (homozygous alternate), or were heterozygous between the two parental haplotypes for the majority of the specimens (Figure 4E, middle Circos plot. Color hues cyan, orange, aqua).
 
@@ -101,11 +298,23 @@ To visualize such shared ancestry across the different Ascaris specimens at chro
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig5-v1.jpg)
 
-**Figure 5.:** Ascaris obtained by POPSICLE (Shaik et al., 2018).Based on ancestral population K = 6. X-axis = specimens. Red highlighted box indicates the introgression of large haplotype blocks of defined parentage among the different specimens of Ascaris in scaffolds ALgV5R019X (A) and ALgV5R027X (B). Many examples exist whereby specimens that are in linkage disequilibrium at ALgV5R019X possess different haplotypes in ALgV5R027X (for example 1107E_1 vs. 2110F_2) indicating both segregation as well as recombination in the evolution of the samples. The local admixture patterns reveal extensive genetic hybridization among different strains of Ascaris. Color assignment is depicted based on Figure 4E.
+**Figure 5.:** Based on ancestral population K = 6. X-axis = specimens. Red highlighted box indicates the introgression of large haplotype blocks of defined parentage among the different specimens of Ascaris in scaffolds ALgV5R019X (A) and ALgV5R027X (B). Many examples exist whereby specimens that are in linkage disequilibrium at ALgV5R019X possess different haplotypes in ALgV5R027X (for example 1107E_1 vs. 2110F_2) indicating both segregation as well as recombination in the evolution of the samples. The local admixture patterns reveal extensive genetic hybridization among different strains of Ascaris. Color assignment is depicted based on Figure 4E.
 
-## Geographic and demographic correlates of genetic similarity
+### Geographic and demographic correlates of genetic similarity
 
 To examine genetic clustering of worms in individual human hosts, host households and villages, and study time-points, we statistically compared genetic variation within groups (such as within a village) versus between groups (such as between villages). We found significant genetic separation between worms in different villages (Table 2, Figure 6), although worms from Kenya clustered with worms from around the world based on cox-1, rather than predominantly with each other (Figure 2A). This suggests genetic diversity is present in the population of Ascaris in these Kenyan villages, which is similar to the diversity of populations of Ascaris around the world. It also suggests that a high proportion of Ascaris transmission may occur within villages in this Kenyan setting. There was no evidence from this analysis that the 13 worms collected three months after albendazole treatment were any different than the worms collected prior to albendazole treatment (Table 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig6-v1.jpg)
+
+**Figure 6.:** Each point is color-coded by village-of-origin and plotted according to the first and second principal components, based on genome sequences. Worms from village #1 are found in each of three clusters, and two clusters contain only worms from village #1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) For village #1 and village #5. (B) Plot of diversity versus geographical distance (Hs on left, Fst on right). Genetic distances based on cox-1 genes are plotted against the geographic distances between the places from which these worms were collected.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/61562/elife-61562-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Bungoma town is shown by a red marker in a map of Kenya (Google Maps). (B) This map highlights the area covered by the four study villages and the pilot study village (Ranje). The locations of five primary schools where data collection occurred are marked. These primary schools were chosen because of the number of students attending these schools from the study villages. However, some of these schools are not located within the study villages.
 
 To expand on our observations that genetically similar worms are found around the world, but that similar worms cluster within a village, based on our nuclear SNPs data, we plotted genetic distances against geographic distances. Surprisingly, we found no significant correlations between genetic and geographic distance, neither across all five studied villages nor within the two most heavily parasitized villages (Figure 6—figure supplement 1).
 
@@ -127,13 +336,13 @@ The similarity between Ascaris from different countries and from different verte
 
 ## Materials and methods
 
-## Worm collection
+### Worm collection
 
 Worms were expelled as part of a larger study in rural western Kenya described previously (Easton et al., 2016, Easton et al., 2017). Worms collected from study participants in five villages (Figure 6—figure supplement 2) following treatment with 400 mg albendazole were isolated, washed, labeled and stored frozen (−15ºC). The villages were near the town of Bungoma, located at N 0.57, E 34.56. Temperatures ranged from 15°C to 30°C and rainfall is 1500 mm on average. Chicken, sheep and cattle farming are common, as is subsistence agriculture and growth of sugar cane as a cash crop. The primary spoken language is Bukusu, a dialect of Luhya.
 
 All samples were stored in Kisumu, from which they were subsequently transported to the KEMRI-CDC offices until they were shipped to the NIH (Bethesda, MD, USA) on dry ice.
 
-## DNA extraction and sequencing
+### DNA extraction and sequencing
 
 A modified DNA extraction method was developed based on Phenol/Chloroform and Qiagen methods (available on request) and used on 75 samples (Supplementary file 3). For the five germline samples, DNA was extracted from the uterus, oviduct or ovary of the worms. For the remaining samples, DNA was extracted from somatic tissue: the body wall or the intestine. Our previous work did not reveal any differences between a variety of somatic samples including the intestine and muscle (Wang et al., 2012), thus we do not expect any significant variations in the muscle and intestine genomic DNA used in this study.
 
@@ -141,47 +350,47 @@ Paired-End Genome Libraries – Sixty-eight A. lumbricoides DNA samples were seq
 
 Mate-Pair Genome Libraries – Two samples were selected for mate-pair sequencing, based on the quality of the DNA preparation. Three independent DNA isolations (corresponding to what region of the worm or what is the sample for DNA isolation) from specimen ‘119_2.3’ were combined to obtain one μg DNA input. The mate-pair libraries were generated using the Nextera Mate Pair Library Prep Kit, following the gel-free method with the only modification that M-270 Streptavidin binding beads were used instead of M-280 beads. The libraries were amplified for 15 cycles given the low DNA input going into the circularization phase. The mate-pair fragment size averaged 6 kb with a range of 2–10 kb fragments.
 
-## Assembly and annotation of A. lumbricoides reference genome
+### Assembly and annotation of A. lumbricoides reference genome
 
 The A. lumbricoides germline genome assembly was constructed using the A. suum genome as a reference. Briefly, sequencing reads from a single A. lumbricoides worm (libraries #8457, #8458, and #8778) were mapped to the A. suum germline genome assembly (Wang et al., 2017) using BWA (Li and Durbin, 2009) to generate BAM and MPILEUP alignment files. The MPILEUP files were processed with a PERL script that replaced all variation sites in the reference genome with the highest allele frequencies in the A. lumbricoides sample. A. suum genomic regions that represent <5X of A. lumbricoides reads coverage were excluded from the assembly. We further polished the genome with additional Illumina sequencing reads using Pilon and its default parameters (Walker et al., 2014). The A. lumbricoides genome was annotated using the gene models built for A. suum, using the annotation transfer tool RATT (Otto et al., 2011). The protein coding regions were defined using TransDecoder (https://github.com/TransDecoder/TransDecoder/wiki; Haas and Papanicolaou, 2016). To evaluate the gene expression across all stages, we utilized previous RNAseq data from the developmental stages (Wang et al., 2012; Wang et al., 2017), re-mapped the SRA from adult males, females, L3 and L4 stages (Jex et al., 2011) to the current gene models, and quantified the expression using tophat and cufflinks. The re-mapped reads, analyzed by JMP Genomics (SAS) across all the stages and based on the principal component analyses (Figure 1B), were grouped as adult male, adult female, L1, L2, L3 (egg L3, liver L3 and lung L3), L4, carcass, muscle, intestine, embryonic (zygote1, zygote2, zygote3, zygote4, 24 hr, 46 hr, 64 hr, 96 hr, 5d, 7d), ovaries (female mitotic region, female early pachytene, female late pachytene, female diplotene and oocyte) and testis (male mitotic region, spermatogenesis, post meiotic region, seminal vesicles and spermatids). Proteome and comparative genomics analyses were done using an in-house pipeline (Karim et al., 2011). Automated annotation of proteins was done as described earlier (Cotton et al., 2017) and based on a vocabulary of nearly 290 words found in matches to various databases, including Swissprot, Gene Ontology, KOG, Pfam, and SMART, Refseq-invertebrates and a subset of the GenBank sequences containing nematode protein sequences, as well as the presence or absence of signal peptides and transmembrane domains. Signal peptide, SecretomeP, transmembrane domains, furin cleavage sites, and mucin-type glycosylation were determined with software from the Center for Biological Sequence Analysis (Technical University of Denmark, Lyngby, Denmark) (Duckert et al., 2004; Julenius et al., 2005; Sonnhammer et al., 1998). Classification of kinases was done by Kinannote (Goldberg et al., 2013). Interproscan (Jones et al., 2014) analyses were done using the standalone version 5.34. Allergenicity of proteins were predicted by Allerdictor (Dang and Lawrence, 2014), FuzzyApp (Saravanan and Lakshmi, 2014) and AllerTOP (Dimitrov et al., 2014). Genes that had blast scores < 30% of max possible score (self-blast) in other non-Ascaris nematodes with an e-value greater than 1E-05 were considered as ‘unique’. The orthologues of predicted proteome of ALV5 across the publicly available nematode genomes (Ancylostoma caninum [International Helminth Genomes Consortium, 2019], Ancylostoma ceylanicum [International Helminth Genomes Consortium, 2019; Schwarz et al., 2015], Ancylostoma duodenale [International Helminth Genomes Consortium, 2019], Ascaris lumbricoides[International Helminth Genomes Consortium, 2019], Ascaris suum [Jex et al., 2011; Wang et al., 2012; Wang et al., 2017], Brugia malayi [Ghedin et al., 2007], Caenorhabditis elegans C. elegans Sequencing [C. elegans Sequencing Consortium, 1998], Dirofilaria immitis [Godel et al., 2012], Loa loa [Desjardins et al., 2013; Tallon et al., 2014], Necator americanus [Tang et al., 2014], Onchocerca volvulus [Cotton et al., 2017], Strongyloides ratti [Nemetschke et al., 2010], Strongyloides stercoralis [Hunt et al., 2016], Toxocara canis [International Helminth Genomes Consortium, 2019; X.-Q. Zhu et al., 2015], Trichinella spiralis [Korhonen et al., 2016; Mitreva et al., 2011], Trichuris trichiura [Foth et al., 2014], Wuchereria bancrofti International Helminth Genomes Consortium, 2019; Small et al., 2016) were analyzed using OrthoFinder (Emms and Kelly, 2015). The estimated phylogenetic tree generated was graphed using FigTree v1.4.
 
 Further manual annotation was done as required. The data were mapped into a hyperlinked Excel spreadsheet as previously described (Bennuru et al., 2011), available in Supplementary file 2.
 
-## Read mapping and SNP analysis for whole genome sequences
+### Read mapping and SNP analysis for whole genome sequences
 
 The Illumina paired-end sequence reads of the 68 Ascaris whole genomes were trimmed by removing any adapter sequences with CutAdapt v1.12 (Martin, 2011), then low-quality sequences were filtered and trimmed using the FASTX Toolkit (http://hannonlab.cshl.edu/fastx_toolkit/). Remaining reads were then ref-mapped to the A. lumbricoides genome ALV5 reference genome (described in this paper) using either Bowtie2 v2.2.9 (Langmead and Salzberg, 2012), with very sensitive, no-discordant, and no-mixed settings or using the Burrows-Wheeler Aligner (BWA, v0.7.9) (Li and Durbin, 2009) mem in default parameters and then converted into a bam file for sorted with SAMtools (Li, 2011). Sorted reads were soft-clipped and marked-duplicated using Picard-1.8.4 (http://broadinstitute.github.io/picard; Broad Institute, 2020). Single-nucleotide polymorphisms (SNPs) were obtained using SAMtools (Li, 2011) and BCFtools (Narasimhan et al., 2016) using the mpileup function and –ploidyfile features and taking chromosomal ploidies into account. SNPs were also determined using Genome Analysis Toolkit (GATK) (McKenna et al., 2010). SNPs were called by GATK Haplotype Caller with a read coverage ≥10 x, a Phredscaled SNP quality of ≥30. Mapping statistics were generated in Perl and Awk.
 
-## Ploidy determination
+### Ploidy determination
 
 The ploidy of each specimen was calculated using AGELESS software (http://ageless.sourceforge.net/) by dividing the chromosomes into 10 kb sliding windows and averaging the coverage within each window. The windows with zero coverage were not included in any further analyses due to sequencing noise or repeat regions (Inbar et al., 2019).
 
-## Genetic diversity
+### Genetic diversity
 
 SNPs, pi (Nei and Li, 1979), (Tajima, 1989), and FST (Dunn, 1973) values were calculated using VCFtools (Danecek et al., 2011) in 10 kb sliding windows and plotted using either Circos (Krzywinski et al., 2009) or ggbio (http://bioconductor.org/packages/release/bioc/html/ggbio.html) and VariantAnnotation (http://bioconductor.org/packages/release/bioc/html/VariantAnnotation.html) R packages (v. 3.1.0, URL http://www.R-project.org). The proportions of heterozygous and homozygous SNPs were estimated in 10 kb sliding windows using custom Java scripts to generate histogram plots in Circos (Krzywinski et al., 2009). Red and blue colors indicate the presence of 90% or more heterozygous and homozygous SNPs respectively whereas yellow color was assigned otherwise.
 
-## Co-ancestry heatmap
+### Co-ancestry heatmap
 
 The SNP data (VCF file) was first phased accurately to estimate the haplotypes using SHAPEIT (Delaneau et al., 2013) after keeping only biallelic SNPs and loci with less than 80% missing data. Co-ancestry heatmaps were generated using the linkage model of ChromoPainter (Lawson et al., 2012) and fineSTRUCTURE (http://www.paintmychromosomes.com) based on the genome-wide phased haplotype data. For fineSTRUCTURE (version 0.02) (Lawson et al., 2012), both the burn-in and Markov Chain Monte Carlo (MCMC) after the burn-in were run for 1000 iterations with default settings. Inference was performed twice at the same parameter values.
 
-## Population genetic structure
+### Population genetic structure
 
 Population genetic structure was constructed using POPSICLE (Shaik et al., 2018) by comparing specimens against the reference sequence ALV5 in 10 kb sliding windows with the number of cluster K = 1 to 15 and then use the Dunn index (Dunn, 1973) to calculate the optimal number of clusters. After calculating the optimal number of clusters, POPSICLE assigned each block to the existing or new clades depending on population structure of specimens and the ancestral state of each block followed by painting in Circos plot (Krzywinski et al., 2009) with color assignment based on number of clusters.
 
-## Construction of phylogenetic trees
+### Construction of phylogenetic trees
 
 In order to determine the phylogenetic relationship between samples, we selected 19005 base positions where variants were detected in a representative sample vs the reference (ALV5), and where each sample had at least 20x coverage for each locus. Using this list, the base calls for each sample were pooled together to generate a single multi-sequence fasta file.
 
 Next, both maximum likelihood (ML) trees and bootstrap (BS) trees were generated with a final ‘best’ tree generated from the best scoring ML and BS trees using RAxML v8.2.10 (Stamatakis, 2014). The tree was visualized in FigTree v1.4.3 (http://tree.bio.ed.ac.uk/software/figtree/).
 
-## Permutational multivariate analysis of nuclear phylogeny
+### Permutational multivariate analysis of nuclear phylogeny
 
 Similarity within and between worms from different villages, households, people and time-points was analyzed based on the distance matrix of the patristic distances from the phylogenetic tree described above, using permutational multivariate analysis of variance (Adonis Vegan in R). The distance matrix underlying the phylogenetic tree was analyzed in order to measure the significance and contribution of different factors to variance between samples. Each factor (village, household, host and time-point) was analyzed both separately and sequentially. The sequence chosen was ordered based on significance of each factor when tested individually. Since multiple groupings were considered using the same dataset, multiple comparison corrections were applied. Sample sizes and descriptions of each group are shown in Table 2. Similar methods were used to analyze the mitochondrial phylogeny along the same groupings.
 
-## Mitochondrial genome assembly
+### Mitochondrial genome assembly
 
 We assembled mitochondrial genomes using a de novo approach from 68 individual Ascaris genomes. For each individual, the Ascaris mitochondrial reads in the total DNA sequencing were identified by mapping the Ascaris reads to the A. suum reference mitochondrial genome (GenBank accession: NC_001327). Adaptor sequences were trimmed prior to de novo assembly. To reduce the complexity of the de novo assembly, we randomly sampled 1000x reads from each individual (the use of higher read coverage often resulted in fragmented scaffolds) and assembled these reads using the SPAdes assembler (Bankevich et al., 2012) with continuous k-mer extension from K = 21 to the maximum k-mer allowed (average extended k-mer size = 91). The assembled scaffolds were corrected with the built-in tool in SPAdes to reduce potential assembly artifacts. Next, the assembled scaffolds were aligned to the A. suum mitochondrial reference genome using BLAST, the order of the scaffolds was adjusted, and they were joined into a single scaffold. Finally, the gaps in the scaffold were filled using GapFiller (Boetzer and Pirovano, 2012) using mitochondrial reads from the same individual to generate a complete mitochondrial genome. Using the same method, we also de novo assembled another five A. suum or A. lumbricoides mitochondrion genomes from previous studies (see Supplementary file 8).
 
-## Analysis of mitochondrial genomes
+### Analysis of mitochondrial genomes
 
 In order to assess overall evolutionary relationships across the complete mitochondrial genomes, we aligned the genomes using Clustal W and phylogenetic trees constructed using RaxML under the conditions of the general time reversible model (GTR) as described above for the whole genome SNP alignment. Subsequent tree files were formatted in FigTree and MEGA v7. The variation in nucleotide diversity across the mitochondrial genome was measured using sliding window analyses, with a window of 300 bp and a step of 50 bp, using DNAsp v6 (Rozas et al., 2017). In order to assess the validity of potential species groupings in the ML phylogenetic tree the Birky, 2013 X4 ratio was applied to the alignment of the complete mitochondrial genomes including both samples from Kenya and published mitochondrial reference genomes from Tanzania, Uganda, China, USA, Denmark, and the UK. The X4 ratio method of species delimitation compares the ratio of mean pairwise differences between two distinct clades (K) and the mean pairwise differences within each of the clades being compared (Θ). It is considered that if K/Θ >4 this is indicative of the two clades representing two distinct species. Owing to the fact that two clades are being compared there will be two separate values of Θ, as per recommendations of Birky, 2013, the larger Θ value is used to perform the final ratio calculation as this will provide a more conservative result which ultimately will be less likely to provide a false positive result.
 

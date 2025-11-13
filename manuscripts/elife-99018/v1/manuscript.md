@@ -7,10 +7,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj8s172 Department of Biomedical Engineering, Columbia University New York United States
-2. https://ror.org/00f54p054 Department of Psychiatry and Behavioral Sciences, Stanford University School of Medicine Stanford United States
-3. https://ror.org/00f54p054 Department of Neurology and Neurological Sciences, Stanford University School of Medicine Stanford United States
-4. https://ror.org/00f54p054 Wu Tsai Neurosciences Institute, Stanford University School of Medicine Stanford United States
+1. Department of Biomedical Engineering, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+2. Department of Psychiatry and Behavioral Sciences, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+3. Department of Neurology and Neurological Sciences, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+4. Wu Tsai Neurosciences Institute, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
@@ -50,7 +50,7 @@ In summary, our study aims to elucidate the neurophysiological basis of the inte
 
 ## Results
 
-## AI response compared to PCC/precuneus during encoding and recall in the VFR task
+### AI response compared to PCC/precuneus during encoding and recall in the VFR task
 
 We first examined neuronal activity in the AI and the PCC/precuneus and tested whether activity in the PCC/precuneus is suppressed compared to activity in the AI. Previous studies have suggested that power in the high-gamma band (80–160 Hz) is correlated with fMRI BOLD signals (Hermes et al., 2017; Hutchison et al., 2015; Lakatos et al., 2019; Leopold et al., 2003; Mantini et al., 2007; Schölvinck et al., 2010), and is thought to reflect local neuronal activity (Canolty and Knight, 2010). Therefore, we compared high-gamma band power (see ‘Methods’ for details) in the AI and PCC/precuneus electrodes during both encoding and recall and across the four episodic memory tasks. Briefly, in the VFR task, participants were presented with a sequence of words and asked to remember them for subsequent recall (‘Methods’, Appendix 1—tables 1, 2 and 6, Figures 1a and 2).
 
@@ -60,57 +60,57 @@ We first examined neuronal activity in the AI and the PCC/precuneus and tested w
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/99018/elife-99018-fig2-v1.jpg)
 
-**Figure 2.:** Faillenot et al., 2017.Anterior insula (AI) is shown in blue, and posterior insula (PI) mask is shown in green (see ‘Methods’ for details). This atlas is based on probabilistic analysis of the anatomy of the insula with demarcations of the AI based on three short dorsal gyri and the PI, which encompasses two long and ventral gyri.
+**Figure 2.:** Anterior insula (AI) is shown in blue, and posterior insula (PI) mask is shown in green (see ‘Methods’ for details). This atlas is based on probabilistic analysis of the anatomy of the insula with demarcations of the AI based on three short dorsal gyri and the PI, which encompasses two long and ventral gyri.
 
-## Encoding
+#### Encoding
 
 Compared to the AI, high-gamma power in PCC/precuneus was suppressed during almost the entire window 110–1600 ms during memory encoding (ps<0.05, Figure 3a).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/99018/elife-99018-fig3-v1.jpg)
 
-**Figure 3.:** a) verbal free recall (VFR), (b) categorized verbal free recall (CATVFR), (c) paired associates learning verbal cued recall (PALVCR), and (d) water maze spatial memory (WMSM) experiments.Green horizontal lines denote greater HG power for AI compared to PCC/precuneus (ps<0.05). Red horizontal lines denote increase of AI response compared to the resting baseline during the encoding and recall periods (ps<0.05). Blue horizontal lines denote decrease of PCC/precuneus response compared to the baseline during the encoding periods and increase of PCC/precuneus response compared to the baseline during the recall periods (ps<0.05).
+**Figure 3.:** Green horizontal lines denote greater HG power for AI compared to PCC/precuneus (ps<0.05). Red horizontal lines denote increase of AI response compared to the resting baseline during the encoding and recall periods (ps<0.05). Blue horizontal lines denote decrease of PCC/precuneus response compared to the baseline during the encoding periods and increase of PCC/precuneus response compared to the baseline during the recall periods (ps<0.05).
 
-## Recall
+#### Recall
 
 In contrast, suppression of high-gamma power in the PCC/precuneus was absent during the recall periods. Rather, high-gamma power in the PCC/precuneus was enhanced compared to the AI mostly during the 1390–1530 ms window prior to recall (ps<0.05, Figure 3a).
 
-## AI response compared to PCC/precuneus during encoding and recall in the CATVFR task
+### AI response compared to PCC/precuneus during encoding and recall in the CATVFR task
 
 We next examined high-gamma power in the CATVFR task. In this task, participants were presented with a list of words with consecutive pairs of words from a specific category (e.g., JEANS-COAT, GRAPE-PEACH, etc.) and subsequently asked to recall as many as possible from the original list (‘Methods’, Appendix 1—tables 1, 3 and 7, Figure 1b; Qasim et al., 2023).
 
-## Encoding
+#### Encoding
 
 High-gamma power in PCC/precuneus was suppressed compared to the AI during the 570–790 ms interval (ps<0.05, Figure 3b).
 
-## Recall
+#### Recall
 
 High-gamma power mostly did not differ between AI and PCC/precuneus prior to recall (ps>0.05, Figure 3b).
 
-## AI response compared to PCC/precuneus during encoding and recall in the PALVCR task
+### AI response compared to PCC/precuneus during encoding and recall in the PALVCR task
 
 The PALVCR task also consisted of three periods: encoding, delay, and recall (‘Methods’, Appendix 1—tables 1, 4 and 8, Figure 1c). During encoding, a list of word-pairs was visually presented, and then participants were asked to verbally recall the cued word from memory during the recall periods.
 
-## Encoding
+#### Encoding
 
 High-gamma power in PCC/precuneus was suppressed compared to the AI during the memory encoding period, during the 470–950 ms and 2010–2790 ms windows (ps<0.05, Figure 3c).
 
-## Recall
+#### Recall
 
 High-gamma power mostly did not differ between AI and PCC/precuneus prior to recall (ps>0.05, Figure 3c).
 
-## AI response compared to PCC/precuneus during encoding and recall in the WMSM task
+### AI response compared to PCC/precuneus during encoding and recall in the WMSM task
 
 We next examined high-gamma power in the WMSM task. Participants performed multiple trials of a spatial memory task in a virtual navigation paradigm (Goyal et al., 2018; Jacobs et al., 2016; Lee et al., 2018) similar to the Morris water maze (Morris, 1984; ‘Methods’, Appendix 1—tables 1, 5 and 9, Figure 1d). Participants were shown objects in various locations during the encoding periods and asked to retrieve the location of the objects during the recall period.
 
-## Encoding
+#### Encoding
 
 High-gamma power in PCC/precuneus was suppressed compared to the AI, mostly during the 1390–2030 ms and 3150–4690 ms window (ps<0.05, Figure 3d).
 
-## Recall
+#### Recall
 
 High-gamma power mostly did not differ between AI and PCC/precuneus (ps>0.05, Figure 3d).
 
-## Replication of increased high-gamma power in AI compared to PCC/precuneus across four memory tasks
+### Replication of increased high-gamma power in AI compared to PCC/precuneus across four memory tasks
 
 We next used replication BF analysis to estimate the degree of replicability of high-gamma power suppression of the PCC/precuneus compared to the AI during the memory encoding periods of the four tasks. We used the posterior distribution obtained from the VFR (primary) dataset as a prior distribution for the test of data from the CATVFR, PALVCR, and WMSM (replication) datasets (Ly et al., 2019; see ‘Methods’ for details). We used the encoding time windows for which we most consistently observed decrease of PCC/precuneus high-gamma power compared to the AI. These correspond to 110–1600 ms during the VFR task, 570–790 ms in the CATVFR task, 2010–2790 ms in the PALVCR task, and 3150–4690 ms in the WMSM task. We first averaged the high-gamma power across these strongest time windows for each task and then used replication BF analysis to estimate the degree of replicability of high-gamma power suppression of the PCC/precuneus compared to the AI.
 
@@ -118,7 +118,7 @@ Findings corresponding to the high-gamma power suppression of the PCC/precuneus 
 
 In contrast to memory encoding, a similar analysis of high-gamma power did not reveal a consistent pattern of increased high-gamma power in AI and suppression of the PCC/precuneus across the four tasks during memory recall (Figure 3).
 
-## AI and PCC/precuneus response during encoding and recall compared to resting baseline
+### AI and PCC/precuneus response during encoding and recall compared to resting baseline
 
 We examined whether AI and PCC/precuneus high-gamma power response during the encoding and recall periods are enhanced or suppressed compared to the baseline periods. High-gamma power in the AI was increased compared to the resting baseline during both the encoding and recall periods, and across all four tasks (ps<0.05, Figure 3). This suggests an enhanced role for the AI during both memory encoding and recall compared to resting baseline.
 
@@ -126,7 +126,7 @@ In contrast, high-gamma power in the PCC/precuneus was reduced compared to the r
 
 High-gamma power for other brain areas compared to resting baseline were not consistent across tasks (Appendix 1—figures 1–3).
 
-## Directed information flow from the AI to the DMN during encoding
+### Directed information flow from the AI to the DMN during encoding
 
 We next examined directed information flow from the AI to the PCC/precuneus and mPFC nodes of the DMN during the memory encoding periods of the VFR task. We used PTE (Lobier et al., 2014) to evaluate directed influences from the AI to the PCC/precuneus and mPFC and vice versa. Informed by recent electrophysiology studies in nonhuman primates, which suggest that broadband field potentials activity, rather than narrowband, governs information flow in the brain (Davis et al., 2020; Davis et al., 2022), we examined PTE in a 0.5–80 Hz frequency spectrum to assess dynamic-directed influences of the AI on the DMN.
 
@@ -136,23 +136,106 @@ Directed information flow from the AI to the PCC/precuneus (F(1, 264) = 59.36, p
 
 **Figure 4.:** (a) Experiment 1: verbal free recall (VFR). The AI showed higher directed information flow to the PCC/precuneus (AI → PCC/Pr) compared to the reverse direction (PCC/Pr → AI) (n = 142) during both encoding and recall. The AI also showed higher directed information flow to the mPFC (AI → mPFC) compared to the reverse direction (mPFC → AI) (n = 112) during both memory encoding and recall. (b) Experiment 2: categorized verbal free recall (CATVFR). The AI showed higher directed information flow to the PCC/precuneus (AI → PCC/Pr) compared to the reverse direction (PCC/Pr → AI) (n = 46) during both encoding and recall. (c) Experiment 3: paired associates learning verbal cued recall (PALVCR). The AI showed higher directed information flow to the PCC/precuneus (AI → PCC/Pr) compared to the reverse direction (PCC/Pr → AI) (n = 10) during both encoding and recall. (d) Experiment 4: water maze spatial memory (WMSM). The AI showed higher directed information flow to PCC/precuneus (AI → PCC/Pr) than the reverse (PCC/Pr → AI) (n = 91) during both spatial memory encoding and recall. The AI also showed higher directed information flow to mPFC (AI → mPFC) than the reverse (mPFC → AI) (n = 23) during both spatial memory encoding and recall. In each panel, the direction for which PTE is higher is underlined. White dot in each violin plot represents median PTE across electrode pairs. ***p<0.001, * p<0.05.
 
-## Replication across three experiments with BF
+#### Replication across three experiments with BF
 
 We used replication BF analysis to estimate the degree of replicability of direction of information flow across the four experiments (Table 1a, Figure 4b–d, also see Appendix Results for detailed stats related to the CATVFR, PALVCR, and WMSM experiments). Findings corresponding to the direction of information flow between the AI and the PCC/precuneus during memory encoding were replicated all three tasks (BFs 9.31e+5, 1.44e+4, and 1.68e+18 for CATVFR, PALVCR, and WMSM respectively). Findings corresponding to the direction of information flow between the AI and mPFC during memory encoding were also replicated across all three tasks (BFs 4.10e+1, 8.78e+0, and 5.34e+5 for CATVFR, PALVCR, and WMSM respectively). This highly consistent pattern of results was not observed in any other frequency band (delta-theta [0.5–8 Hz], alpha [8–12 Hz], beta [12–30 Hz], gamma [30–80 Hz], and high-gamma [80–160 Hz]; results not shown). These results demonstrate very high replicability of directed information flow from the AI to the DMN nodes during memory encoding.
 
+**Table 1.**
+ Replicability of findings of directed interactions of the AI with the DMN and FPN nodes for different memory experiments during (a) memory encoding and (b) memory recall.The verbal free recall (VFR) task was considered the original dataset and the categorized verbal free recall (CATVFR), paired associates learning verbal cued recall (PALVCR), and water maze spatial memory (WMSM) tasks were considered replication datasets, and Bayes factor (BF) for replication was calculated for pairwise tasks (VFR vs. T, where T can be CATVFR, PALVCR, or WMSM task). Significant BF results (BF > 3) are indicated in bold. AI: anterior insula, DMN: default mode network; FPN: frontoparietal network, PCC: posterior cingulate cortex, Pr: precuneus, mPFC: medial prefrontal cortex, dPPC: dorsal posterior parietal cortex, MFG: middle frontal gyrus.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>(a) Memory encoding</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Finding</td>
+      <td>BF for VFR-CATVFR replication</td>
+      <td>BF for VFR-PALVCR replication</td>
+      <td>BF for VFR-WMSN replication</td>
+    </tr>
+    <tr>
+      <td>AI→PCC/Pr &gt;PCC/Pr→AI</td>
+      <td>9.31E+05</td>
+      <td>1.44E+04</td>
+      <td>1.68E+18</td>
+    </tr>
+    <tr>
+      <td>AI→mPFC&gt;mPFC→AI</td>
+      <td>4.10E+01</td>
+      <td>8.78E+00</td>
+      <td>5.34E+05</td>
+    </tr>
+    <tr>
+      <td>AI→dPPC&gt;dPPC→AI</td>
+      <td>3.95E+43</td>
+      <td>2.33E+26</td>
+      <td>3.25E+40</td>
+    </tr>
+    <tr>
+      <td>AI→MFG&gt;MFG→AI</td>
+      <td>1.49E+51</td>
+      <td>1.61E+33</td>
+      <td>2.35E+27</td>
+    </tr>
+    <tr>
+      <td>(b) Memory recall</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Finding</td>
+      <td>BF for VFR-CATVFR replication</td>
+      <td>BF for VFR-PALVCR replication</td>
+      <td>BF for VFR-WMSN replication</td>
+    </tr>
+    <tr>
+      <td>AI→PCC/Pr&gt;PCC/Pr→AI</td>
+      <td>1.30E+05</td>
+      <td>6.74E+00</td>
+      <td>2.54E+10</td>
+    </tr>
+    <tr>
+      <td>AI→mPFC&gt;mPFC→AI</td>
+      <td>2.02E+01</td>
+      <td>3.52E-05</td>
+      <td>1.32E+04</td>
+    </tr>
+    <tr>
+      <td>AI→dPPC&gt;dPPC→AI</td>
+      <td>7.04E+38</td>
+      <td>2.98E+45</td>
+      <td>4.51E+27</td>
+    </tr>
+    <tr>
+      <td>AI→MFG&gt;MFG→AI</td>
+      <td>1.74E+54</td>
+      <td>5.72E+52</td>
+      <td>6.90E+27</td>
+    </tr>
+  </tbody>
+</table>
+
 These results demonstrate robust directed information flow from the AI to the PCC/precuneus and mPFC nodes of the DMN during memory encoding.
 
-## Directed information flow from the AI to the DMN during recall
+### Directed information flow from the AI to the DMN during recall
 
 Next, we examined directed influences of the AI on PCC/precuneus and mPFC during the recall phase of the verbal episodic memory task. During memory recall, directed information flow from the AI to the PCC/precuneus (F(1, 264) = 43.09, p<0.001, Cohen’s d = 0.81) and mPFC (F(1, 211) = 21.94, p<0.001, Cohen’s d = 0.65) was higher than the reverse (Figure 4a).
 
-## Replication across three experiments with BF
+#### Replication across three experiments with BF
 
 We next repeated the replication BF analysis for the recall periods of the memory tasks (Table 1b, Figure 4b–d, also see Appendix Results for detailed stats related to the CATVFR, PALVCR, and WMSM experiments). Findings corresponding to the direction of information flow between the AI and the PCC/precuneus during memory recall were replicated across all three tasks (BFs 1.30e+5, 6.74e+0, and 2.54e+10 for CATVFR, PALVCR, and WMSM respectively). Findings corresponding to the direction of information flow between the AI and the mPFC during memory recall were also replicated across the CATVFR and WMSM tasks (BFs 2.02e+1 and 1.32e+4 respectively).
 
 These results demonstrate very high replicability of directed information flow from the AI to the DMN nodes across verbal and spatial memory tasks during both memory encoding and recall.
 
-## Directed information flow from AI to FPN nodes during memory encoding
+### Directed information flow from AI to FPN nodes during memory encoding
 
 We next probed directed information flow between the AI and FPN nodes during the encoding periods of the VFR task. Directed information flow from the AI to the dPPC (F(1, 1143) = 11.69, p<0.001, Cohen’s d = 0.20) and MFG (F(1, 1245) = 21.69, p<0.001, Cohen’s d = 0.26) was higher than the reverse during memory encoding of the VFR task (Figure 5a).
 
@@ -160,23 +243,23 @@ We next probed directed information flow between the AI and FPN nodes during the
 
 **Figure 5.:** (a) Experiment 1: verbal free recall (VFR). The AI showed higher directed information flow to the dPPC (AI → dPPC) compared to the reverse direction (dPPC → AI) (n = 586) during both encoding and recall. The AI also showed higher directed information flow to the MFG (AI → MFG) compared to the reverse direction (MFG → AI) (n = 642) during both memory encoding and recall. (b) Experiment 2: categorized verbal free recall (CATVFR). The AI showed higher directed information flow to the dPPC (AI → dPPC) compared to the reverse direction (dPPC → AI) (n = 327) during both encoding and recall. (c) Experiment 3: paired associates learning verbal cued recall (PALVCR). The AI showed higher directed information flow to the dPPC (AI → dPPC) compared to the reverse direction (dPPC → AI) (n = 242) during both encoding and recall. The AI also showed higher directed information flow to the MFG (AI → MFG) compared to the reverse direction (MFG → AI) (n = 362) during memory recall. (d) Experiment 4: water maze spatial memory (WMSM). The AI showed higher directed information flow to MFG (AI → MFG) than the reverse (MFG → AI) (n = 177) during both spatial memory encoding and recall. In each panel, the direction for which PTE is higher is underlined. ***p<0.001, **p<0.01.
 
-## Replication across three experiments with BF
+#### Replication across three experiments with BF
 
 We used replication BF analysis for the replication of AI-directed influences on FPN nodes during the encoding phase of the memory tasks (Table 1a, Figure 5b–d, Appendix Results). Similarly, we also obtained very high BFs for findings corresponding to the direction of information flow between the AI and dPPC (BFs > 2.33e+26) and also between the AI and MFG (BFs > 2.35e+27), across all three tasks.
 
 These results demonstrate that the AI has robust directed information flow to the dPPC and MFG nodes of the FPN during memory encoding.
 
-## Directed information flow from AI to FPN nodes during memory recall
+### Directed information flow from AI to FPN nodes during memory recall
 
 Directed influences from the AI to the dPPC (F(1, 1143) = 17.47, p<0.001, Cohen’s d = 0.25) and MFG (F(1, 1246) = 42.75, p<0.001, Cohen’s d = 0.37) were higher than the reverse during memory recall of the VFR task (Figure 5a).
 
-## Replication across three experiments with BF
+#### Replication across three experiments with BF
 
 We also found very high BFs for findings corresponding to the direction of information flow between the AI and the dPPC (BFs > 4.51e+27) and MFG (BFs > 6.90e+27) nodes of the FPN across the CATVFR, PALVCR, and WMSM tasks during the memory recall period (Table 1b, Figure 5b–d, Appendix Results).
 
 These results demonstrate very high replicability of directed information flow from the AI to the FPN nodes across multiple memory experiments during both memory encoding and recall.
 
-## Comparison of directed information flow: AI vs. IFG
+### Comparison of directed information flow: AI vs. IFG
 
 To examine the specificity of the AI-directed information flow to the DMN and FPN, we conducted a control analysis using electrodes implanted in the IFG (BA 44). The IFG serves as an ideal control region due to its anatomical adjacency to the AI, its involvement in a wide range of cognitive control functions including response inhibition (Cai et al., 2014), and its frequent co-activation with the AI in fMRI studies. Furthermore, the IFG has been associated with controlled retrieval of memory (Badre et al., 2005; Badre and Wagner, 2007; Wagner et al., 2001), making it a compelling region for comparison.
 
@@ -186,21 +269,21 @@ To quantify this difference more precisely, we calculated the net outflow for bo
 
 These results not only highlight the unique role of the AI in orchestrating large-scale network dynamics during memory processes but also demonstrate the specificity of this function compared to an anatomically adjacent and functionally relevant region. The consistent pattern across diverse memory tasks and experimental phases underscores the robustness of the AI’s role as an outflow hub during memory formation and retrieval.
 
-## Enhanced information flow from the AI to the DMN and FPN during episodic memory processing compared to resting-state baseline
+### Enhanced information flow from the AI to the DMN and FPN during episodic memory processing compared to resting-state baseline
 
 We next examined whether directed information flow from the AI to the DMN and FPN nodes during the memory tasks differed from the resting-state baseline. Resting-state baselines were extracted immediately before the start of the task sessions and the duration of task and rest epochs were matched to ensure that differences in network dynamics could not be explained by differences in duration of the epochs. Directed information flow from the AI to both the DMN and FPN was higher during both the memory encoding and recall phases and across the four experiments compared to baseline in all but two cases (Appendix 1—figures 7 and 8).
 
 To further elucidate the task-specific role of the AI, we compared its net outward directed influence during memory tasks to that observed during resting state. We quantified this influence as the difference between outgoing and incoming information flow (PTE(out) – PTE(in)). This analysis revealed that the AI’s net outflow was significantly enhanced during both encoding and recall phases of memory tasks compared to resting state in all but one case (ps<0.05) (Appendix 1—figure 9). This pattern was consistently observed across all four experiments. These findings provide strong evidence for enhanced role of AI-directed information flow to the DMN and FPN during memory processing compared to the resting state.
 
-## Differential information flow from the AI to the DMN and FPN for successfully recalled and forgotten memory trials
+### Differential information flow from the AI to the DMN and FPN for successfully recalled and forgotten memory trials
 
 We examined memory effects by comparing PTE between successfully recalled and forgotten memory trials. However, this analysis did not reveal differences in directed influence from the AI on the DMN and FPN or the reverse between successfully recalled and forgotten memory trials during the encoding as well as recall periods in any of the memory experiments (all ps>0.05) (Appendix 1—figures 10 and 11).
 
-## Outflow hub during encoding and recall
+### Outflow hub during encoding and recall
 
 fMRI studies have suggested that the AI acts as an outflow hub with respect to interactions with the DMN and FPN (Sridharan et al., 2008). To test the potential neural basis of this finding, we calculated net outflow (PTE(out) – PTE(in)) as the difference between the total outgoing information and total incoming information.
 
-## Encoding
+#### Encoding
 
 This analysis revealed that the net outflow from the AI is positive and higher than the PCC/precuneus (F(1, 3319) = 154.8, p<0.001, Cohen’s d = 0.43) node of the DMN in the VFR task (Figure 6a).
 
@@ -212,7 +295,7 @@ This analysis also revealed that the net outflow from the AI is higher than both
 
 Findings in the VFR task were also replicated across the CATVFR, PALVCR, and WMSM tasks, where we found that the net outflow from the AI is higher than the PCC/precuneus and mPFC nodes of the DMN and the dPPC and MFG nodes of the FPN (Figure 6b–d, also see Appendix Results for detailed stats related to the CATVFR, PALVCR, and WMSM experiments).
 
-## Recall
+#### Recall
 
 Net outflow from the AI is positive and higher than both PCC/precuneus (F(1, 3287) = 151.21, p<0.001, Cohen’s d = 0.43) and mPFC (F(1, 4694) = 7.81, p<0.01, Cohen’s d = 0.08) during the recall phase of the VFR task (Figure 6a).
 
@@ -220,7 +303,7 @@ Net outflow from the AI is also higher than both the dPPC (F(1, 5388) = 90.71, p
 
 Crucially, these findings were also replicated across the CATVFR, PALVCR, and WMSM tasks and during both encoding and recall periods (Figure 6b–d, also see Appendix Results for detailed stats related to the CATVFR, PALVCR, and WMSM experiments). Together, these results demonstrate that the AI is an outflow hub in its interactions with the PCC/precuneus and mPFC nodes of the DMN and also the dPPC and MFG nodes of the FPN, during both verbal and spatial memory encoding and recall.
 
-## Narrowband phase synchronization between the AI and the DMN and FPN during encoding and recall compared to resting baseline
+### Narrowband phase synchronization between the AI and the DMN and FPN during encoding and recall compared to resting baseline
 
 We next directly compared the phase locking values (PLVs) (see ‘Methods’ for details) between the AI and the PCC/precuneus and mPFC nodes of the DMN and also the dPPC and MFG nodes of the FPN for the encoding and the recall periods compared to resting baseline. However, narrowband PLV values did not significantly differ between the encoding/recall vs. rest periods in any of the delta-theta (0.5–8 Hz), alpha (8–12 Hz), beta (12–30 Hz), gamma (30–80 Hz), and high-gamma (80–160 Hz) frequency bands. These results indicate that PTE, rather than phase synchronization, more robustly captures the AI dynamic interactions with the DMN and the FPN.
 
@@ -234,21 +317,21 @@ We discovered that the AI, a crucial node of the SN, exerts strong directed infl
 
 **Figure 7.:** (a) High-gamma response. Our analysis of local neuronal activity revealed consistent suppression of high-gamma power in the posterior cingulate cortex (PCC)/precuneus compared to the anterior insula (AI) during encoding periods across all four episodic memory experiments. We did not consistently observe any significant differences in high-gamma band power between AI and the medial prefrontal cortex (mPFC) node of the default mode network (DMN) or the dorsal PPC (dPPC) and middle frontal gyrus (MFG) nodes of the frontoparietal network (FPN) during the encoding periods across the four episodic memory experiments. In contrast, we detected similar high-gamma band power in the PCC/precuneus relative to the AI during the recall periods. (b) Directed information flow. Despite variable patterns of local activation and suppression across DMN and FPN nodes during memory encoding and recall, we found stronger directed influence (denoted by green arrows, thickness of arrows denotes degree of replicability across experiments, see Table 1) by the AI on both the DMN as well as the FPN nodes than the reverse across all four memory experiments, and during both encoding and recall periods.
 
-## Investigating directed inter-network interactions using iEEG and PTE
+### Investigating directed inter-network interactions using iEEG and PTE
 
 Dynamic interactions between the AI and the DMN and FPN are hypothesized to shape human cognition (Cai et al., 2016; Cai et al., 2014; Dosenbach et al., 2008; Dosenbach et al., 2006; Menon, 2015b; Menon and Uddin, 2010). Although fMRI research has suggested that the AI plays a pivotal role in the task-dependent engagement and disengagement of the DMN and FPN across diverse cognitive tasks (Menon and Uddin, 2010; Sridharan et al., 2008), the neuronal basis of these results or the possibility of their being artifacts arising from slow dynamics and regional variation in the hemodynamic response inherent to fMRI signals remained unclear. To address these ambiguities, our analysis focused on casual interactions involving the AI and leveraged the high temporal resolution of iEEG signals. By investigating the directionality of information flow, we aimed to overcome the temporal resolution limitations of fMRI signals, providing a more mechanistic understanding of the AI’s role in modulating the DMN and FPN during memory formation. To assess reproducibility, we scrutinized network interactions across four different episodic memory tasks involving VFR, CATVFR, PALVCR, and WMSM tasks (Solomon et al., 2019).
 
 We employed PTE, a robust metric of nonlinear and nonstationary dynamics, to investigate dynamic interactions between the AI and four key cortical nodes of the DMN and FPN. PTE assesses the ability of one time series to predict future values of another, estimating time-delayed directed influences, and is superior to methods like phase locking or coherence as it captures nonlinear and nonstationary interactions (Bassett and Sporns, 2017; Hillebrand et al., 2016; Lobier et al., 2014). PTE offers a robust and powerful tool for characterizing information flow between brain regions based on phase coupling (Hillebrand et al., 2016; Lobier et al., 2014; Wang et al., 2017) and has been successfully utilized in our previous studies (Das et al., 2022c; Das and Menon, 2020; Das and Menon, 2021; Das and Menon, 2022b; Das and Menon, 2023).
 
-## Broadband-directed influences of the AI on DMN and FPN
+### Broadband-directed influences of the AI on DMN and FPN
 
 Informed by recent electrophysiology studies in nonhuman primates, which suggest that broadband field potentials activity, rather than narrowband, governs information flow in the brain (Davis et al., 2020; Davis et al., 2022), we first examined PTE in a 0.5–80 Hz frequency spectrum to assess dynamic-directed influences of the AI on the DMN and FPN. Our analysis revealed that AI exerts stronger influences on the PCC/precuneus and mPFC nodes of the DMN than the reverse. A similar pattern also emerged for FPN nodes, with the AI displaying stronger directed influences on the dPPC and MFG than the reverse. Crucially, this asymmetric pattern of directed information flow was replicated across all four memory tasks. Moreover, this pattern also held during the encoding and recall of memory phases of all four tasks.
 
-## Replicability across memory tasks
+### Replicability across memory tasks
 
 Replication, a critical issue in all of systems neuroscience, is particularly challenging in the field of intracranial EEG studies, where data acquisition from patients is inherently difficult. Compounding this issue is the virtual absence of data sharing and the substantial complexities involved in collecting electrophysiological data across distributed brain regions (Das and Menon, 2022b). Consequently, one of our study’s major objectives was to reproduce our findings across multiple experiments, bridging verbal and spatial memory domains and task phases. To quantify the degree of replicability of our findings across these domains, we employed replication BF analysis (Ly et al., 2019; Verhagen and Wagenmakers, 2014). Our analysis revealed very high replication BFs related to replication of information flow from the AI to the DMN and FPN (Table 1). Specifically, the BFs associated with the replication of direction of information flow between the AI and the DMN and FPN were decisive (BFs > 100), demonstrating consistent results across various memory tasks and contexts.
 
-## Task-specific enhancement of AI’s directed influence: Contrasts with IFG and resting state
+### Task-specific enhancement of AI’s directed influence: Contrasts with IFG and resting state
 
 Our analysis revealed a striking contrast between the AI and IFG in their patterns of directed information flow. While the AI exhibited strong directed influences on both the DMN and FPN, the IFG demonstrated an inverse relationship. Specifically, both the DMN and FPN exerted higher influence on the IFG than vice versa, a pattern that held consistent across both encoding and recall periods, and throughout all four memory experiments (Appendix 1—figures 4 and 5). Our analysis also revealed that the AI’s net outflow was significantly higher than that of the IFG during both encoding and recall phases, a finding replicated across all four experiments.
 
@@ -256,7 +339,7 @@ Furthermore, we compared the AI’s net outward directed influence during memory
 
 These results not only highlight the unique role of the AI in orchestrating large-scale network dynamics during memory processes but also demonstrate the specificity of this function compared to an anatomically adjacent and functionally relevant region implicated in cognitive control (Badre et al., 2005; Badre and Wagner, 2007; Cai et al., 2014; Wagner et al., 2001). The consistent pattern across diverse memory tasks and experimental phases underscores the robustness of the AI’s role in memory-related network interactions.
 
-## High-gamma power suppression in the PCC/precuneus during encoding, but not recall
+### High-gamma power suppression in the PCC/precuneus during encoding, but not recall
 
 Our analysis of local neuronal activity revealed a consistent and specific pattern of high-gamma power suppression in the PCC/precuneus compared to the AI during memory encoding across all four episodic memory tasks. This finding aligns with the typical deactivation of DMN nodes during attention-demanding tasks (Wen et al., 2013), while also extending our understanding of the DMN’s role in episodic memory formation (Buckner et al., 2008; Menon, 2023).
 
@@ -268,15 +351,15 @@ In contrast, during memory recall, we observed different patterns of activity. I
 
 The observed high-gamma suppression in the PCC/precuneus during encoding, but not recall, likely reflects the distinct cognitive demands of these memory phases. Encoding primarily involves externally driven processes, requiring attention to and processing of incoming stimuli. In contrast, recall is predominantly internally driven, relying on the retrieval and reconstruction of stored information. This dissociation in PCC/precuneus activity aligns with its known role in the DMN, which typically shows deactivation during externally oriented tasks and activation during internally directed cognition. This pattern of activity underscores the flexible and context-dependent functioning of brain regions within large-scale networks, adapting their engagement to support different aspects of memory processing.
 
-## Broadband- vs. high-gamma-directed influences
+### Broadband- vs. high-gamma-directed influences
 
 Notably, our findings reveal a robust and consistent directed influence exerted by the AI on all nodes of both the DMN and the FPN, extending across all four memory tasks and both memory encoding and recall phases. These directed influences were prominently manifested in broadband signals. Interestingly, such directed influences were not observed in the high-gamma frequency range (80–160 Hz). This absence aligns with current models positing that high-gamma activity is more likely to reflect localized processing, while lower-frequency bands are implicated in longer-range network communication and coordination (Bastos et al., 2015; Das et al., 2022c; Das and Menon, 2020; Das and Menon, 2021; Das and Menon, 2023; Miller et al., 2007). More generally, our findings emphasize that it is crucial to differentiate between high-gamma activity (f > 80 Hz) and sub-high-gamma (f < 80 Hz) fluctuations as these signal types are indicative of different underlying physiological processes, each with distinct implications for understanding neural network dynamics.
 
-## Successful and unsuccessful memory effects engage similar AI-directed circuits
+### Successful and unsuccessful memory effects engage similar AI-directed circuits
 
 Our analysis revealed no significant differences in directed connectivity between successfully recalled and forgotten memory trials, suggesting that the reported effects may not be specific to successful memory formation and may be related to attentional or other general cognitive processing rather than memory processing per se. While our study provides valuable insights into the interactions between the AI and the DMN and FPN during cognitive tasks involving verbal and spatial information processing during memory tasks, it is crucial to acknowledge that these interactions may not be unique to memory processes. The AI’s directed influence on the DMN and FPN could reflect a more general role in coordinating attentional resources, which are essential for various cognitive functions, including memory formation (Menon and Uddin, 2010; Uddin, 2015). To disentangle the specific contributions of memory recall and attention, future studies should incorporate carefully designed control tasks that do not involve memory components. It is also important to note that successful memory recall likely involves the coordinated activity of multiple brain systems beyond the triple network model investigated here. For instance, the medial temporal lobe, including the hippocampus and adjacent cortical regions, plays a crucial role in episodic memory formation and retrieval (Burgess et al., 2002; Moscovitch et al., 2016). Future studies will need to investigate a broader set of brain areas during successful and unsuccessful memory trials to gain a more comprehensive understanding of the neural circuits supporting distinctions between successfully recalled and forgotten memory trials.
 
-## Externally triggered vs. internally driven memory processes
+### Externally triggered vs. internally driven memory processes
 
 Our results reveal a consistent pattern of directed information flow from the AI to both the DMN and FPN, persisting across externally triggered encoding and internally driven free recall. This pattern underscores the AI’s robust and versatile role in modulating large-scale brain networks across diverse task contexts, aligning with the triple network model’s conceptualization of the AI as a critical hub for attentional and cognitive control (Menon, 2011; Menon, 2023). However, the persistence of AI-driven information flow during internally triggered free recall was unexpected, given the view of the DMN’s dominance in internal cognition. This reproducible pattern, observed across both externally and internally driven tasks in all four experiments, reinforces the AI’s crucial role in orchestrating network dynamics over extended time periods.
 
@@ -288,13 +371,13 @@ Intriguingly, as noted above, while we observed PCC/precuneus suppression during
 
 To further elucidate these dynamics, future studies should consider employing techniques that can capture rapid changes in directed network interactions, investigating the temporal evolution of network interactions leading up to and following recall events, exploring the relationship between different frequency bands in connectivity and local activity measures, and developing methods to better estimate the onset of internal retrieval processes in verbal tasks. These approaches could provide valuable insights into the transition between externally driven and internally driven processes and offer a more precise understanding of the AI and PCC/precuneus’s differential roles in coordinating network dynamics across different memory phases.
 
-## AI as an outflow hub and a novel perspective on theoretical models of memory
+### AI as an outflow hub and a novel perspective on theoretical models of memory
 
 Beyond information flow along individual pathways linking the AI with the DMN and FPN, our PTE analysis further revealed that the AI is an outflow hub in its interactions with the DMN and the FPN regardless of stimulus materials. As a central node of the SN (Menon and Uddin, 2010; Seeley et al., 2007; Sridharan et al., 2008), the AI is known to play a crucial role in influencing other networks (Menon and Uddin, 2010; Uddin, 2015). Our results align with findings based on control theory analysis of brain networks during a working memory task. Specifically, Cai et al., 2021 found higher causal outflow and controllability associated with the AI compared to DMN and FPN nodes during an n-back working memory task. Controllability refers to the ability to perturb a system from a given initial state to other configuration states in finite time by means of external control inputs. Intuitively, nodes with higher controllability require lower energy for perturbing a system from a given state, making controllability measures useful for identifying driver nodes with the potential to influence overall state dynamics. By virtue of its higher controllability relative to other brain areas, the AI is well-positioned to dynamically engage and disengage with other brain areas. These findings expand our understanding of the AI’s role, extending beyond attention and working memory tasks to incorporate two distinct stages of episodic memory formation. Our study, leveraging the temporal precision of iEEG data, substantially enhances previous fMRI findings by unveiling the neurophysiological mechanisms underlying the AI’s dynamic regulation of network activity during memory formation and cognition more generally.
 
 Our findings bring a novel perspective to the seminal model of human memory proposed by Atkinson and Shiffrin, 1968. This model conceptualizes memory as a multistage process, with control mechanisms regulating the transition of information across these stages. The observed suppression of high-gamma power in the PCC/precuneus and enhancement in the AI during the encoding phase may be seen as one neurophysiological manifestation of these control processes. The AI’s role as a dynamic switch, modulating activity between the DMN and FPN, aligns with active processing and control needed to encode sensory information into short-term memory. On the other hand, the transformations observed during the recall phase, particularly the discernible lack of DMN suppression patterns, may correspond to the retrieval processes where internally generated cues steer the reactivation of memory representations during recall. These results provide a novel neurophysiological model for understanding the complex control processes underpinning human memory functioning.
 
-## Limitations and future work
+### Limitations and future work
 
 Our study, while revealing important insights into network dynamics during memory processes, has several limitations that provide avenues for further investigation. Although our computational methods suggest directed influences, direct causal manipulations, such as targeted brain stimulation during memory tasks, are needed to establish definitive causal relationships between network nodes. The PTE method, while powerful, cannot reliably capture rapid shifts in network dynamics. Subsequent research should employ techniques with higher temporal precision to map these changes.
 
@@ -304,7 +387,7 @@ In the free recall verbal tasks, precisely timing the onset of internal retrieva
 
 Despite these limitations, our findings provide a robust foundation for investigations into the electrophysiological basis of large-scale brain network interactions during memory formation and recall. By addressing these limitations, subsequent studies can further refine our understanding of how these networks dynamically coordinate to support episodic memory and other cognitive functions. Such investigations may reveal a more dynamic interplay between the SN, DMN, and FPN, where their relative influences shift rapidly depending on the specific cognitive demands of the task.
 
-## Conclusions
+### Conclusions
 
 Our study provides novel insights into the neural dynamics underpinning episodic memory processes across four diverse memory experiments. We discovered that the AI, a key node of the SN, exerts a strong and consistent directed influence on both the DMN and FPN during memory encoding and recall. This finding extends the applicability of the triple network model to episodic memory processes in both verbal and spatial domains, highlighting the AI’s crucial role as an outflow hub that modulates information flow within and between these cognitive networks.
 
@@ -316,7 +399,7 @@ By elucidating the electrophysiological basis of directed information flow withi
 
 ## Methods
 
-## UPENN-RAM iEEG recordings
+### UPENN-RAM iEEG recordings
 
 iEEG recordings from 249 patients shared by Kahana and colleagues at the University of Pennsylvania (UPENN) (obtained from the UPENN-RAM public data release) were used for analysis (Jacobs et al., 2016). Patients with pharmaco-resistant epilepsy underwent surgery for removal of their seizure onset zones. iEEG recordings of these patients were downloaded from a UPENN-RAM consortium-hosted data-sharing archive (http://memory.psych.upenn.edu/RAM). These data were recorded at eight hospitals: Thomas Jefferson University Hospital; University of Texas Southwestern Medical Center; Emory University Hospital; Dartmouth College Hospital; University of Pennsylvania Hospital; Mayo Clinic; National Institutes of Health; and Columbia University Hospital. Prior to data collection, research protocols and ethical guidelines were approved by the Institutional Review Board at the participating hospitals and informed consent was obtained from the participants and guardians (Jacobs et al., 2016).
 
@@ -328,21 +411,21 @@ We used the insula atlas by Faillenot and colleagues to demarcate the AI (Faille
 
 Original sampling rates of iEEG signals were 500 Hz, 1000 Hz, 1024 Hz, and 1600 Hz. Hence, iEEG signals were downsampled to 500 Hz, if the original sampling rate was higher, for all subsequent analysis. The two major concerns when analyzing interactions between closely spaced intracranial electrodes are volume conduction and confounding interactions with the reference electrode (Burke et al., 2013; Frauscher et al., 2018). Hence, bipolar referencing was used to eliminate confounding artifacts and improve the signal-to-noise ratio of the neural signals, consistent with previous studies using UPENN-RAM iEEG data (Burke et al., 2013; Ezzyat et al., 2018). Signals recorded at individual electrodes were converted to a bipolar montage by computing the difference in signal between adjacent electrode pairs on each strip, grid, and depth electrode and the resulting bipolar signals were treated as new ‘virtual’ electrodes originating from the midpoint between each contact pair, identical to procedures in previous studies using UPENN-RAM data (Solomon et al., 2019). Line noise (60 Hz) and its harmonics were removed from the bipolar signals using band-stop filters at 57–63 Hz, 117–123 Hz, and 177–183 Hz. Finally, each bipolar signal was Z-normalized by removing mean and scaling by the standard deviation. For filtering, we used a fourth-order two-way zero phase lag Butterworth filter throughout the analysis. iEEG signals were filtered in the broad frequency spectrum (0.5–80 Hz) as well as narrowband frequency spectra delta-theta (0.5–8 Hz), alpha (8–12 Hz), beta (12–30 Hz), gamma (30–80 Hz), and high-gamma (80–160 Hz).
 
-## Episodic memory experiments
+### Episodic memory experiments
 
-## VFR task
+#### VFR task
 
 Patients performed multiple trials of a VFR experiment, where they were presented with a list of words and subsequently asked to recall as many as possible from the original list (Figure 1a; Solomon et al., 2017; Solomon et al., 2019). The task consisted of three periods: encoding, delay, and recall. During encoding, a list of 12 words was visually presented for ~30 s. Words were selected at random, without replacement, from a pool of high-frequency English nouns (http://memory.psych.upenn.edu/Word_Pools). Each word was presented for a duration of 1600 ms, followed by an inter-stimulus interval of 800–1200 ms. After the encoding period, participants engaged in a math distractor task (the delay period in Figure 1a), where they were instructed to solve a series of arithmetic problems in the form of a + b + c = ??, where a, b, and c were randomly selected integers ranging from 1 to 9. Mean accuracy across patients in the math task was 90.87% ± 7.22%, indicating that participants performed the math task with a high level of accuracy, similar to our previous studies (Das and Menon, 2022a). After a 20 s post-encoding delay, participants were instructed to recall as many words as possible during the 30 s recall period. Average recall accuracy across patients was 25.0% ± 10.6%, similar to prior studies of verbal episodic memory retrieval in neurosurgical patients (Burke et al., 2014). We analyzed iEEG epochs from the encoding and recall periods of the VFR task. For the recall periods, iEEG recordings 1600 ms prior to the vocal onset of each word were analyzed (Solomon et al., 2019). Data from each trial was analyzed separately and specific measures were averaged across trials.
 
-## CATVFR task
+#### CATVFR task
 
 This task was very similar to the VFR task. Here, patients performed multiple trials of a categorized free recall experiment, where they were presented with a list of words with consecutive pairs of words from a specific category (e.g., JEANS-COAT, GRAPE-PEACH, etc.) and subsequently asked to recall as many as possible from the original list (Figure 1b; Qasim et al., 2023). Similar to the uncategorized VFR task, this task also consisted of three periods: encoding, delay, and recall. During encoding, a list of 12 words was visually presented for ~30 s. Semantic categories were chosen using Amazon Mechanical Turk. Pairs of words from the same semantic category were never presented consecutively. Each word was presented for a duration of 1600 ms, followed by an inter-stimulus interval of 750–1000 ms. After a 20 s post-encoding delay (math) similar to the uncategorized VFR task, participants were instructed to recall as many words as possible during the 30 s recall period. Average accuracy across patients in the math task was 89.46% ± 9.90%. Average recall accuracy across patients was 29.6% ± 13.4%. Analysis of iEEG epochs from the encoding and recall periods of the categorized free recall task was same as the uncategorized VFR task.
 
-## PALVCR task
+#### PALVCR task
 
 Patients performed multiple trials of a PALVCR experiment, where they were presented with a list of word-pairs and subsequently asked to recall based on the given word-cue (Figure 1c). Similar to the uncategorized VFR task, this task also consisted of three periods: encoding, delay, and recall. During encoding, a list of six word-pairs was visually presented for ~36 s. Similar to the uncategorized VFR task, words were selected at random, without replacement, from a pool of high-frequency English nouns (http://memory.psych.upenn.edu/Word_Pools). Each word was presented for a duration of 4000 ms, followed by an inter-stimulus interval of 1750–2000 ms. After a 20 s post-encoding delay (math) similar to the uncategorized VFR task, participants were shown a specific word-cue for a duration of 4000 ms and asked to verbally recall the cued word from memory. Each word presentation during recall was followed by an inter-stimulus interval of 1750–2000 ms and the recall period lasted for ~36 s. Average accuracy across patients in the math task was 93.91% ± 4.66%. Average recall accuracy across patients was 33.8% ± 25.9%. For encoding, iEEG recordings corresponding to the 4000 ms encoding period of the task were analyzed. For recall, iEEG recordings 1600 ms prior to the vocal onset of each word were analyzed (Solomon et al., 2019). Data from each trial was analyzed separately and specific measures were averaged across trials.
 
-## WMSM task
+#### WMSM task
 
 Patients performed multiple trials of a spatial memory experiment in a virtual navigation paradigm (Goyal et al., 2018; Jacobs et al., 2016; Lee et al., 2018) similar to the Morris water maze (Morris, 1984). The environment was rectangular (1.8:1 aspect ratio) and was surrounded by a continuous boundary (Figure 1d). There were four distal visual cues (landmarks), one centered on each side of the rectangle, to aid with orienting. Each trial (96 trials per session, 1–3 sessions per subject) started with two 5 s encoding periods, during which subjects were driven to an object from a random starting location. At the beginning of an encoding period, the object appeared and, over the course of 5 s, the subject was automatically driven directly toward it. The 5 s period consisted of three intervals: first, the subject was rotated toward the object (1 s); second, the subject was driven toward the object (3 s); and, finally, the subject paused while at the object location (1 s). After a 5 s delay with a blank screen, the same process was repeated from a different starting location. After both encoding periods for each item, there was a 5 s pause followed by the recall period. The subject was placed in the environment at a random starting location with the object hidden and then asked to freely navigate using a joystick to the location where they thought the object was located. When they reached their chosen location, they pressed a button to record their response. They then received feedback on their performance via an overhead view of the environment showing the actual and reported object locations. Average recall accuracy across patients was 48.1% ± 5.6%.
 
@@ -350,38 +433,58 @@ We analyzed the 5 s iEEG epochs corresponding to the entire encoding and recall 
 
 Out of total 177 participants, 51% (91 out of 177) of participants participated in at least two experiments, 17% (30 out of 177) of participants participated in at least three experiments, and 6% (10 out of 177) of participants participated in all four experiments.
 
-## iEEG analysis of high-gamma power
+### iEEG analysis of high-gamma power
 
 We first filtered the signals in the high-gamma (80–160 Hz) frequency band (Canolty et al., 2006; Helfrich and Knight, 2016; Miller et al., 2009) using sequential band-pass filters in increments of 10 Hz (i.e., 80–90 Hz, 90–100 Hz, etc.), using a fourth-order two-way zero phase lag Butterworth filter. We used these narrowband filtering processing steps to correct for the 1/f decay of power. We then calculated the amplitude (envelope) of each narrow band signal by taking the absolute value of the analytic signal obtained from the Hilbert transform (Foster et al., 2015). Each narrow band amplitude time series was then normalized to its own mean amplitude, expressed as a percentage of the mean. Finally, we calculated the mean of the normalized narrow band amplitude time series, producing a single-amplitude time series. Signals were then smoothed using 0.2 s windows with 90% overlap (Kwon et al., 2021) and normalized with respect to 0.2 s pre-stimulus periods by subtracting the pre-stimulus baseline from the post-stimulus signal.
 
-## iEEG analysis of PTE
+### iEEG analysis of PTE
 
 PTE is a nonlinear measure of the directionality of information flow between time series and can be applied to nonstationary time series (Das and Menon, 2021; Lobier et al., 2014). Note that the information flow described here relates to signaling between brain areas and does not necessarily reflect the representation or coding of behaviorally relevant variables per se. The PTE measure is in contrast to the Granger causality measure, which can be applied only to stationary time series (Barnett and Seth, 2014). We first carried out a stationarity test of the iEEG recordings (unit root test for stationarity [Barnett and Seth, 2014]) and found that the spectral radius of the autoregressive model is very close to one, indicating that the iEEG time series is nonstationary. This precluded the applicability of the Granger causality analysis in our study.
 
-Given two time series {xi} and {yi}, where i=1,2,...,M, instantaneous phases were first extracted using the Hilbert transform. Let {xip} and {yip} , where i=1,2,...,M, denote the corresponding phase time series. If the uncertainty of the target signal {yip} at delay τ is quantified using Shannon entropy, then the PTE from driver signal {xip} to target signal {yip} can be given by, (1)PTEx→y=∑ip(yi+τp,yip,xip)log(p(yi+τp|yip,xip)p(yi+τp|yip))
+Given two time series ${x_{i}}$ and ${y_{i}}$, where $i=1,2,...,M$, instantaneous phases were first extracted using the Hilbert transform. Let ${x_{i}^{p}}$ and ${y_{i}^{p}}$ , where $i=1,2,...,M$, denote the corresponding phase time series. If the uncertainty of the target signal ${y_{i}^{p}}$ at delay $\tau$ is quantified using Shannon entropy, then the PTE from driver signal ${x_{i}^{p}}$ to target signal ${y_{i}^{p}}$ can be given by
 
-where the probabilities can be calculated by building histograms of occurrences of singles, pairs, or triplets of instantaneous phase estimates from the phase time series (Hillebrand et al., 2016). For our analysis, the number of bins in the histograms was set as 3.49×STD×M−1/3 and delay τ was set as 2M/M±, where STD is average standard deviation of the phase time series {xip} and {yip} and M± is the number of times the phase changes sign across time and channels (Hillebrand et al., 2016). PTE has been shown to be robust against the choice of the delay τ and the number of bins for forming the histograms (Hillebrand et al., 2016). In our analysis, PTE was calculated for the entire encoding and recall periods for each trial and then averaged across trials.
+$$
+PTE_{x→y}=\sumip(y_{i+\tau}^{p},y_{i}^{p},x_{i}^{p})log(\frac{p(y_{i+\tau}^{p}|y_{i}^{p},x_{i}^{p})}{p(y_{i+\tau}^{p}|y_{i}^{p})})
+$$
+
+where the probabilities can be calculated by building histograms of occurrences of singles, pairs, or triplets of instantaneous phase estimates from the phase time series (Hillebrand et al., 2016). For our analysis, the number of bins in the histograms was set as $3.49\timesSTD\timesM^{−1/3}$ and delay $\tau$ was set as $2M/M_{\pm}$, where $STD$ is average standard deviation of the phase time series ${x_{i}^{p}}$ and ${y_{i}^{p}}$ and $M_{\pm}$ is the number of times the phase changes sign across time and channels (Hillebrand et al., 2016). PTE has been shown to be robust against the choice of the delay $\tau$ and the number of bins for forming the histograms (Hillebrand et al., 2016). In our analysis, PTE was calculated for the entire encoding and recall periods for each trial and then averaged across trials.
 
 Net outflow was calculated as the difference between the total outgoing information and total incoming information, that is, net outflow  = PTE(out) − PTE(in). For example, for calculation of PTE(out) and PTE(in) for the AI electrodes, electrodes in the PCC/precuneus, mPFC, dPPC, and MFG were considered, that is, PTE(out) was calculated as the net PTE from AI electrodes to the PCC/precuneus, mPFC, dPPC, and MFG electrodes, and PTE(in) was calculated as the net PTE from the PCC/precuneus, mPFC, dPPC, and MFG electrodes to AI electrodes. Net outflow for the PCC/precuneus, mPFC, dPPC, and MFG electrodes was calculated similarly.
 
-## iEEG analysis of PLV and phase synchronization
+### iEEG analysis of PLV and phase synchronization
 
-We used PLV to compute phase synchronization between two time series (Lachaux et al., 1999). We first calculated the instantaneous phases of the two signals by using the analytical signal approach based on the Hilbert transform (Bruns, 2004). Given time series x(t),t=1,2,...,M, its complex-valued analytical signal z(t) can be computed as(2)z(t)=x(t)+ix~(t)=Ax(t)eΦx(t),
+We used PLV to compute phase synchronization between two time series (Lachaux et al., 1999). We first calculated the instantaneous phases of the two signals by using the analytical signal approach based on the Hilbert transform (Bruns, 2004). Given time series $x(t),t=1,2,...,M$, its complex-valued analytical signal $z(t)$ can be computed as
 
-where i denotes the square root of minus one, x~(t) is the Hilbert transform of x(t), and Ax(t) and are the instantaneous amplitude and instantaneous phase respectively and can be given by(3)Ax(t)=[x(t)]2+[x~(t)]2andϕx(t)=arctanx~(t)x(t).
+$$
+z(t)=x(t)+ix~(t)=A_{x}(t)e^{Φ_{x}(t)},
+$$
 
-The Hilbert transform of x(t) was computed as(4)x~(t)=1πPV∫−x∞x(τ)t−τdτ,
+where i denotes the square root of minus one, $x~(t)$ is the Hilbert transform of $x(t)$, and $A_{x}(t)$ and are the instantaneous amplitude and instantaneous phase respectively and can be given by
 
-where PV denotes the Cauchy principal value. MATLAB function ‘hilbert’ was used to calculate the Hilbert transform in our analysis. Given two time series x(t) and y(t), where t=1,2,...,M, the PLV (zero-lag) can be computed as(5)PLV≜|E[ei(ϕx(t)−ϕy(t))]|,
+$$
+A_{x}(t)=\sqrt{[x(t)]^{2}+[x~(t)]^{2}}andϕ_{x}(t)=arctan\frac{x~(t)}{x(t)}.
+$$
 
-where ϕy(t) is the instantaneous phase for time series y(t), | ⋅ | denotes the absolute value operator, E[⋅] denotes the expectation operator with respect to time t, and i denotes the square root of minus one. PLVs were then averaged across trials to estimate the final PLV for each pair of electrodes.
+The Hilbert transform of $x(t)$ was computed as
 
-## Statistical analysis
+$$
+x~(t)=\frac{1}{\pi}PV\int_{−x}^{∞}\frac{x(\tau)}{t−\tau}d\tau,
+$$
+
+where $PV$ denotes the Cauchy principal value. MATLAB function ‘hilbert’ was used to calculate the Hilbert transform in our analysis. Given two time series $x(t)$ and $y(t)$, where $t=1,2,...,M$, the PLV (zero-lag) can be computed as
+
+$$
+PLV≜|E[e^{i(ϕ_{x}(t)−ϕ_{y}(t))}]|,
+$$
+
+where $ϕ_{y}(t)$ is the instantaneous phase for time series $y(t)$, $|⋅|$ denotes the absolute value operator, $E[⋅]$ denotes the expectation operator with respect to time $t$, and i denotes the square root of minus one. PLVs were then averaged across trials to estimate the final PLV for each pair of electrodes.
+
+### Statistical analysis
 
 Statistical analysis was conducted using mixed-effects analysis with the lmerTest package (Kuznetsova et al., 2017) implemented in R software (version 4.0.2, R Foundation for Statistical Computing). Because PTE data were not normally distributed, we used BestNormalize (Peterson and Cavanaugh, 2020), which contains a suite of transformation-estimating functions that can be used to optimally normalize data. The resulting normally distributed data were subjected to mixed-effects analysis with the following model: PTE ~ Condition + (1|Subject), where Condition models the fixed effects (condition differences) and (1|Subject) models the random repeated measurements within the same participant, similar to prior iEEG studies (Das and Menon, 2021; Hoy et al., 2021; Salamone et al., 2021). Before running the mixed-effects model, PTE was first averaged across trials for each channel pair. ANOVA was used to test the significance of findings with FDR-corrections for multiple comparisons (p<0.05). Linear mixed-effects models were run for encoding and recall periods separately. Similar mixed-effects statistical analysis procedures were used for comparison of high-gamma power across task conditions, where the mixed-effects analysis was run on each of the 0.2 s windows.
 
 For effect size estimation, we used Cohen’s d statistics for pairwise comparisons. We used the lme.dscore() function in the EMAtools package in R for estimating Cohen’s d.
 
-## Bayesian replication analysis
+### Bayesian replication analysis
 
 We used replication BF (Ly et al., 2019; Verhagen and Wagenmakers, 2014) analysis to estimate the degree of replicability for the direction of information flow for each frequency and task condition and across task domains. Analysis was implemented in R software using the BayesFactor package (Rouder et al., 2009). Because PTE data were not normally distributed, as previously, we used BestNormalize (Peterson and Cavanaugh, 2020) to optimally normalize data. We calculated the replication BF for pairwise experiments. We compared the BF of the joint model PTE(task1 + task2) ~ Condition + (1|Subject) with the BF of individual model as PTE(task1) ~ Condition + (1|Subject), where task1 denotes the VFR (original) task and task2 denotes the CATVFR, PALVCR, or WMSM (replication) conditions. We calculated the ratio BF(task1 + task2)/BF(task1), which was used to quantify the degree of replicability. We determined whether the degree of replicability was higher than 3 as BF of at least three indicates evidence for replicability (Jeffreys, 1998). A BF of at least 100 is considered ‘decisive’ for the degree of replication (Jeffreys, 1998). Same analysis procedures were used to estimate the degree of replicability for high-gamma power comparison of DMN and FPN electrodes with the AI electrodes across experiments.

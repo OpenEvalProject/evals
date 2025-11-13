@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.30387.001 Human faces contain multiple sources of information. During speech perception, visual information from the talker’s mouth is integrated with auditory information from the talker's voice. By directly recording neural responses from small populations of neurons in patients implanted with subdural electrodes, we found enhanced visual cortex responses to speech when auditory speech was absent (rendering visual speech especially relevant). Receptive field mapping demonstrated that this enhancement was specific to regions of the visual cortex with retinotopic representations of the mouth of the talker. Connectivity between frontal cortex and other brain regions was measured with trial-by-trial power correlations. Strong connectivity was observed between frontal cortex and mouth regions of visual cortex; connectivity was weaker between frontal cortex and non-mouth regions of visual cortex or auditory cortex. These results suggest that top-down selection of visual information from the talker’s mouth by frontal cortex plays an important role in audiovisual speech perception.
+Human faces contain multiple sources of information. During speech perception, visual information from the talker’s mouth is integrated with auditory information from the talker's voice. By directly recording neural responses from small populations of neurons in patients implanted with subdural electrodes, we found enhanced visual cortex responses to speech when auditory speech was absent (rendering visual speech especially relevant). Receptive field mapping demonstrated that this enhancement was specific to regions of the visual cortex with retinotopic representations of the mouth of the talker. Connectivity between frontal cortex and other brain regions was measured with trial-by-trial power correlations. Strong connectivity was observed between frontal cortex and mouth regions of visual cortex; connectivity was weaker between frontal cortex and non-mouth regions of visual cortex or auditory cortex. These results suggest that top-down selection of visual information from the talker’s mouth by frontal cortex plays an important role in audiovisual speech perception.
 
 ## Introduction
 
@@ -37,11 +37,129 @@ Enhanced visual cortex responses to Vis speech may reflect the increased importa
 
 **Figure 2.:** (A) Medial view of a cortical surface model of the left hemisphere brain of a single subject (anonymized subject ID YAI). Posterior electrode e81 (red circle) was located superior to the calcarine sulcus on the occipital pole (red circle) while anterior electrode e65 (blue circle) was located inferior to the calcarine on the medial wall of the hemisphere. The receptive field mapping stimulus consisted of a small checkerboard presented at random screen locations while subjects performed a letter detection task at fixation (not shown). (B) The responses evoked by the mapping stimulus in electrodes e81 (left panel) and e65 (right panel). Color scales corresponds to the amplitude of the visual evoked response at each location in the visual field, with the crosshairs showing the center of the visual field and the red and blue circles showing the center of a two-dimensional Gaussian fitted to the response. Electrode e81 had a central receptive field (eccentricity at RF center of 2.5°) while electrode e65 had a peripheral receptive field (eccentricity 10.9°). (C) The receptive field location for the two sample electrodes, e81 (red circle) and e65 (blue circle) are shown on the speech stimulus. Subjects were instructed to fixate the talker’s mouth and electrodes were classified as representing the mouth region of the talker’s face (red circles; less than 5° from the center of the mouth, white dashed line) or as non-mouth (blue circles;>5°). Electrode locations of mouth (red) and non-mouth (blue) electrodes shown on posterior and medial brain views. Response enhancement (Vis-AV) for each individual electrode; inset bar graph shows mean values (±standard error). (D) In a control speech experiment, a white fixation crosshair was presented on the talker’s shoulder, moving the mouth of the talker’s face to the visual periphery. Electrodes were classified as representing the mouth of the talker (red circles; less than 5° from the the center of the mouth, white dashed line) or non-mouth (blue circles;>5°). Mouth electrodes were in the periphery of the visual field (mean eccentricity of 9.5°). Response enhancement (Vis-AV) for each individual electrode; inset bar graph shows mean values (±standard error).
 
+**Table 1.**
+ LME for Amplitude in Visual Cortex
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fixed effects:</th>
+      <th>Estimate</th>
+      <th>Std. error</th>
+      <th>DF</th>
+      <th>t-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baseline</td>
+      <td>98</td>
+      <td>8.7</td>
+      <td>90.5</td>
+      <td>11.2</td>
+      <td>10−16</td>
+    </tr>
+    <tr>
+      <td>A Speech</td>
+      <td>−83</td>
+      <td>5.9</td>
+      <td>134.5</td>
+      <td>−14.2</td>
+      <td>10−16</td>
+    </tr>
+    <tr>
+      <td>A Speech x Peripheral RF</td>
+      <td>47</td>
+      <td>9.7</td>
+      <td>133.5</td>
+      <td>4.9</td>
+      <td>10−6</td>
+    </tr>
+    <tr>
+      <td>V Speech</td>
+      <td>26</td>
+      <td>5.4</td>
+      <td>132.9</td>
+      <td>4.8</td>
+      <td>10−6</td>
+    </tr>
+    <tr>
+      <td>Peripheral RF</td>
+      <td>−65</td>
+      <td>15.2</td>
+      <td>90.5</td>
+      <td>−4.3</td>
+      <td>10−5</td>
+    </tr>
+    <tr>
+      <td>V Speech x Peripheral RF</td>
+      <td>−24</td>
+      <td>9.4</td>
+      <td>132.9</td>
+      <td>−2.6</td>
+      <td>0.01</td>
+    </tr>
+  </tbody>
+</table>
+
 The model found a significant main effect of stimulus condition, driven by greater responses to Vis (95% vs. 77%, Vis vs. AV; p=10−6) and weaker responses to Aud (12% vs. 77%, Aud vs. AV; p=10−16). Critically, there was also a significant interaction between stimulus condition and electrode type. Mouth electrodes showed a large difference between the responses to Vis and AV speech while non-mouth electrodes showed almost no difference (26% vs. 2%, mouth vs. non-mouth Vis – AV; p=0.01; Figure 2C).
 
 An alternative interpretation of this results is raised by the task design, in which subjects were instructed to fixate the mouth of the talker. Therefore, the enhancement could be specific to electrodes with receptive fields near the center of gaze (central vs. peripheral) rather than to the mouth of the talker’s face (mouth vs. non-mouth).
 
 To distinguish these two possibilities, we performed a control experiment in which the task instructions were to fixate the shoulder of the talker, rather than the mouth, aided by a fixation crosshair superimposed on the talker’s shoulder (Figure 2D). With this manipulation, the center of the mouth was located at 10 degrees eccentricity. Electrodes with receptive field centers near the mouth were classified as mouth electrodes (N = 19); otherwise, they were classified as non-mouth electrodes (N = 13). This dissociated visual field location from mouth location: mouth electrodes had receptive fields located peripherally (mean eccentricity = 9.5 degrees). If the enhancement during Vis speech was restricted to the center of gaze, we would predict no enhancement for mouth electrodes in this control experiment due to their peripheral receptive fields. Contrary to this prediction, the LME showed a significant interaction between electrode type and stimulus condition (Table 2). Mouth electrodes (all with peripheral receptive fields) showed a large difference between the responses to Vis and AV speech while non-mouth electrodes showed little difference (50% vs. 9%, mouth vs. non-mouth Vis – AV; p=10−3).
+
+**Table 2.**
+ LME for Amplitude in Visual Cortex (Control Experiment)
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fixed effects:</th>
+      <th>Estimate</th>
+      <th>Std. error</th>
+      <th>DF</th>
+      <th>t-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baseline</td>
+      <td>357</td>
+      <td>35</td>
+      <td>32.7</td>
+      <td>10.1</td>
+      <td>10−11</td>
+    </tr>
+    <tr>
+      <td>V Speech</td>
+      <td>50</td>
+      <td>7</td>
+      <td>32</td>
+      <td>6.7</td>
+      <td>10−7</td>
+    </tr>
+    <tr>
+      <td>Non-mouth RF</td>
+      <td>−287</td>
+      <td>55</td>
+      <td>32.7</td>
+      <td>-5</td>
+      <td>10−5</td>
+    </tr>
+    <tr>
+      <td>V Speech x Non-mouth RF</td>
+      <td>−41</td>
+      <td>12</td>
+      <td>32</td>
+      <td>−3.5</td>
+      <td>10−3</td>
+    </tr>
+  </tbody>
+</table>
 
 Both experiments demonstrated a large enhancement for Vis compared with AV speech in visual cortex electrodes representing the mouth of the talker. However, the visual stimulus in the Vis and AV conditions was identical. Therefore, a control signal sensitive to the absence of auditory speech must trigger the enhanced visual responses. We investigated responses in frontal cortex as a possible source of top-down control signals (Corbetta and Shulman, 2002; Gunduz et al., 2011; Kastner and Ungerleider, 2000; Miller and Buschman, 2013).
 
@@ -54,6 +172,73 @@ Figure 3A shows the responses during Vis speech for a frontal electrode located 
 We predicted that connectivity should be greater for mouth electrodes than non-mouth electrodes. In each subject, we selected the single frontal electrode with the strongest response to AV speech (Figure 3B; average Talairach co-ordinates of the frontal electrode: x = 49, y = −2, z = 42) and measured the connectivity between the frontal electrode and all visual electrodes in that subject (Figure 3B).
 
 An LME model (Table 3) was fit with the Spearman rank correlation (ρ) between each frontal-visual electrode pair as the dependent measure; the visual electrode type (mouth vs. non-mouth) and stimulus condition (AV, Vis or Aud) as fixed factors; electrode as a random factor; and connectivity of mouth electrodes during AV speech as the baseline. The largest effect in the model was a main effect of electrode type, driven by strong frontal-visual connectivity in mouth electrodes and weak connectivity in non-mouth electrodes (0.2 vs. −0.02; p=10−5). There was significantly weaker frontal-visual connectivity during the Aud condition in which no visual speech was presented (p=0.01).
+
+**Table 3.**
+ LME for Frontal-Visual Cortex Connectivity
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fixed effects:</th>
+      <th>Estimate</th>
+      <th>Std. error</th>
+      <th>DF</th>
+      <th>t-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baseline</td>
+      <td>0.23</td>
+      <td>0.03</td>
+      <td>179.1</td>
+      <td>7.4</td>
+      <td>10−12</td>
+    </tr>
+    <tr>
+      <td>Peripheral RF</td>
+      <td>−0.24</td>
+      <td>0.05</td>
+      <td>179.1</td>
+      <td>−4.5</td>
+      <td>10−5</td>
+    </tr>
+    <tr>
+      <td>A Speech</td>
+      <td>−0.1</td>
+      <td>0.04</td>
+      <td>141.1</td>
+      <td>−2.5</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>A Speech x Peripheral RF</td>
+      <td>0.16</td>
+      <td>0.07</td>
+      <td>136.5</td>
+      <td>2.4</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>V Speech x Peripheral RF</td>
+      <td>−0.1</td>
+      <td>0.06</td>
+      <td>134</td>
+      <td>−1.6</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>V Speech</td>
+      <td>0.0003</td>
+      <td>0.04</td>
+      <td>134</td>
+      <td>−0.007</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 Our results suggest a model in which frontal cortex modulates mouth regions of visual cortex in a task-specific fashion. Since top-down modulation is an active process that occurs when visual speech is most relevant, this model predicts that frontal cortex should be more active during the perception of Vis speech. To test this prediction, we compared the response to the different speech conditions in frontal cortex (Figure 4A). Frontal electrodes responded strongly to all three speech conditions, with a peak amplitude of 109% at 470 ms after stimulus onset. Following the onset of auditory speech (283 ms after stimulus onset), the responses diverged, with a larger response to Vis than AV or Aud speech (53% vs. 33%, Vis vs. AV; p=0.001; Table 6). Greater responses to Vis speech were consistent across frontal electrodes (Figure 4B).
 
@@ -68,6 +253,135 @@ While our primary focus was on frontal modulation of visual cortex, auditory cor
 ![Figure 5.](https://cdn.elifesciences.org/articles/30387/elife-30387-fig5-v1.jpg)
 
 **Figure 5.:** (A) Broadband responses to AV (solid line), Vis (dashed line) and Aud (dotted line) speech across auditory electrodes located on the STG (purple circles on inset brain). (B) The broadband response enhancement (Aud – AV) with one symbol per electrode (symbols jittered along x-axis for improved visibility). Electrodes were divided into two groups, those showing a large (>=10%) enhancement (orange circles) and those showing little or no enhancement (yellow circles). (C) Anatomical distribution of STG electrodes by Aud – AV amplitude. (D) Frontal connectivity of STG electrodes by Aud – AV amplitude.
+
+**Table 4.**
+ LME for Amplitude in Auditory Cortex
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fixed effects:</th>
+      <th>Estimate</th>
+      <th>Std. error</th>
+      <th>DF</th>
+      <th>t-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baseline</td>
+      <td>41</td>
+      <td>4.9</td>
+      <td>88.3</td>
+      <td>8.4</td>
+      <td>10−12</td>
+    </tr>
+    <tr>
+      <td>V Speech</td>
+      <td>−32</td>
+      <td>5</td>
+      <td>83.2</td>
+      <td>−6.4</td>
+      <td>10−8</td>
+    </tr>
+    <tr>
+      <td>A Speech</td>
+      <td>1</td>
+      <td>5.1</td>
+      <td>84.1</td>
+      <td>0.2</td>
+      <td>0.8</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ LME for Frontal-Auditory Cortex Connectivity
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fixed effects:</th>
+      <th>Estimate</th>
+      <th>Std. error</th>
+      <th>DF</th>
+      <th>t-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baseline</td>
+      <td>0.04</td>
+      <td>0.04</td>
+      <td>83.6</td>
+      <td>1.1</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>V Speech</td>
+      <td>−0.1</td>
+      <td>0.04</td>
+      <td>83.6</td>
+      <td>−2.3</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>A Speech</td>
+      <td>0.02</td>
+      <td>0.04</td>
+      <td>84.4</td>
+      <td>0.4</td>
+      <td>0.7</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 6.**
+ LME for Amplitude in Frontal Cortex
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fixed effects:</th>
+      <th>Estimate</th>
+      <th>Std. error</th>
+      <th>DF</th>
+      <th>t-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baseline</td>
+      <td>33</td>
+      <td>6.7</td>
+      <td>12.1</td>
+      <td>5</td>
+      <td>10−4</td>
+    </tr>
+    <tr>
+      <td>V Speech</td>
+      <td>20</td>
+      <td>5.2</td>
+      <td>14.1</td>
+      <td>3.9</td>
+      <td>10−3</td>
+    </tr>
+    <tr>
+      <td>A Speech</td>
+      <td>-7</td>
+      <td>5.8</td>
+      <td>14.4</td>
+      <td>−1.1</td>
+      <td>0.3</td>
+    </tr>
+  </tbody>
+</table>
 
 In visual cortex, a subset of electrodes (those representing the mouth) showed a greater response in the Vis-AV contrast and greater connectivity with frontal cortex. To determine if the same was true in auditory cortex, we selected the STG electrodes with the strongest response in the Aud-AV contrast (Figure 5B). Unlike in visual cortex, in which there was anatomical localization of mouth-representing electrodes on the occipital pole, auditory electrodes with the strongest response in the Aud-AV contrast did not show clear anatomical clustering (Figure 5C). Electrodes with the electrodes with the strongest response in the Aud-AV contrast had equivalent connectivity with frontal cortex as other STG electrodes (ρ = −0.04 vs. roh = 0.06, unpaired t-test = 0.9, p=0.3). This was the opposite of the pattern observed in visual cortex. In order to ensure that signal amplitude was not the main determinant of connectivity, we selected the STG electrodes with the highest signal-to-noise ratio in the AV condition. These electrodes had equivalent connectivity with frontal cortex as other STG electrodes (ρ = −0.002 vs. ρ = 0.05, unpaired t-test = 0.4, p=0.7).
 
@@ -85,66 +399,66 @@ The analysis of auditory cortex responses provides an illuminating contrast with
 
 ## Materials and methods
 
-## Subject information
+### Subject information
 
 All experimental procedures were approved by the Institutional Review Board of Baylor College of Medicine. Eight human subjects provided written informed consent prior to participating in the research protocol. The subjects (5F, mean age 36, 6L hemisphere) suffered from refractory epilepsy and were implanted with subdural electrodes guided by clinical requirements. Following surgery, subjects were tested while resting comfortably in their hospital bed in the epilepsy monitoring unit.
 
-## Experiment setup
+### Experiment setup
 
 Visual stimuli were presented on an LCD monitor (Viewsonic VP150, 1024 × 768 pixels) positioned at 57 cm distance from the subject, resulting in a display size of 30.5° x 22.9°.
 
-## Receptive field mapping procedures
+### Receptive field mapping procedures
 
 Mapping stimulus consisted of a square checkerboard pattern (3° x 3° size) briefly flashed (rate of 2 Hz and a duty cycle of 25%) in different positions on the display monitor to fill a grid over the region of interest in the visual field (63 positions, 7 × 9 grid). 12–30 trials for each position were recorded.
 
 Subjects fixated at the center of the screen and performed a letter detection task to ensure that they were not fixating on the mapping stimulus. Different letters were randomly presented at the center of the screen (2° in size presented at a rate of 1–4 Hz) and subjects were required to press a mouse button whenever the letter ‘X’ appeared. The mean accuracy was 88 ± 14% with a false alarm rate of 8 ± 14% (mean across subjects ± SD; responses were not recorded for one subject).
 
-## Speech experiment procedures
+### Speech experiment procedures
 
 Four video clips of a female talker pronouncing the single syllable words ‘drive’, ‘known’, ‘last’ and ‘meant’ were presented under audiovisual (AV), visual (Vis) and auditory (Aud) conditions. Visual stimuli were presented using the same monitor used for receptive field mapping, with the face of the talker subtending approximately 13 degrees horizontally and 21 degrees vertically. Speech sounds were played through loudspeakers positioned next to the subject’s bed. The average duration of the video clips was ~1500 ms (drive: 1670 ms, known: 1300 ms, last: 1500 ms, meant: 1400 ms). In AV and Vis trials, mouth movements started at ~200 ms after the video onset on average (drive: 200 ms, known: 233 ms, last: 200 ms, meant: 200 ms). In AV trials, auditory vocalizations started at ~283 ms (drive: 267 ms, known: 233 ms, last: 300 ms, meant: 333 ms). Vocalization duration was ~480 ms on average (drive: 500 ms, known: 400 ms, last: 530 ms, meant: 500 ms).
 
 The three different conditions were randomly intermixed, separated by interstimulus intervals of 2.5 s. 32–64 repetitions for each condition was presented. Subjects were instructed to fixate either the mouth of the talker (during Vis and AV trials) or a white fixation dot presented at the same location as the mouth of the talker on a gray background (during Aud trials and the interstimulus intervals). To ensure attention to the stimuli, subjects were instructed to press a mouse button 20% of trials in which a catch stimulus was presented, consisting of the AV word ‘PRESS’. The mean accuracy was 88 ± 18%, with a false alarm rate of 3 ± 6% (mean across subjects ± SD; for one subject, button presses were not recorded).
 
-## Control speech experiment procedures
+### Control speech experiment procedures
 
 In a control experiment (one subject, 32 electrodes) identical procedures were used except that the subject fixated crosshairs placed on the shoulder of the talker (Figure 2D).
 
-## Electrode localization and recording
+### Electrode localization and recording
 
 Before surgery, T1-weighted structural magnetic resonance imaging scans were used to create cortical surface models with FreeSurfer, RRID:SCR_001847 (Dale et al., 1999; Fischl et al., 1999) and visualized using SUMA (Argall et al., 2006) within the Analysis of Functional Neuroimages package, RRID:SCR_005927 (Cox, 1996). Subjects underwent a whole-head CT after the electrode implantation surgery. The post-surgical CT scan and pre-surgical MR scan were aligned using and all electrode positions were marked manually on the structural MR images. Electrode positions were then projected to the nearest node on the cortical surface model using the AFNI program SurfaceMetrics. Resulting electrode positions on the cortical surface model were confirmed by comparing them with the photographs taken during the implantation surgery.
 
 A 128-channel Cerebus amplifier (Blackrock Microsystems, Salt Lake City, UT) was used to record from subdural electrodes (Ad-Tech Corporation, Racine, WI) that consisted of platinum alloy discs embedded in a flexible silicon sheet. Two types of electrodes were implanted, containing an exposed surface of either 2.3 mm or 0.5 mm; an initial analysis did not suggest any difference in the responses recorded from the two types of electrodes, so they were grouped together for further analysis. An inactive intracranial electrode implanted facing the skull was used as a reference for recording. Signals were amplified, filtered (low-pass: 500 Hz, fourth-order Butterworth filter; high-pass: 0.3 Hz, first-order Butterworth) and digitized at 2 kHz. Data files were converted from Blackrock format to MATLAB 8.5.0 (MathWorks Inc. Natick, MA) and the continuous data stream was epoched into trials. All analyses were conducted separately for each electrode.
 
-## Receptive field mapping analysis: Evoked potentials
+### Receptive field mapping analysis: Evoked potentials
 
 The voltage signal in each trial (consisting of the presentation of a single checkerboard at a single spatial location) was filtered using a Savitzky-Golay polynomial filter (‘‘sgolayfilt’’ function in Matlab) with polynomial order set to five and frame size set to 11. If the raw voltage exceeded a threshold of 3 standard deviations from the mean voltage, suggesting noise or amplifier saturation, the trial was discarded; <1 trial per electrode discarded on average. The filtered voltage response at each spatial location was averaged, first across trials and then across time-points (from 100 to 300 ms post-stimulus) resulting in a single value for response amplitude; these values were then plotted on a grid corresponding to the visual field (Figure 1A). A two-dimensional Gaussian function was fit to the responses to approximate the average receptive field of the neurons underlying the electrode. The center of the fitted Gaussian was used as the estimate of the RF center of the neurons underlying the electrode. A high correlation between the fitted Gaussian and the raw evoked potentials indicated an electrode with a high-amplitude, focal receptive field. A threshold of r > 0.7 was used to select only these electrodes for further consideration (Yoshor et al., 2007).
 
-## Speech stimuli analysis: Broadband power
+### Speech stimuli analysis: Broadband power
 
 While for the RF mapping analysis, we used raw voltage as our measure of neural response, speech stimuli evoke a long-lasting response not measurable with evoked potentials. Therefore, our primary measure of neural activity was the broadband (non-synchronous) response in the high-gamma frequency band, ranging from 70 to 150 Hz. This response is thought to reflect action potentials in nearby neurons (Jacques et al., 2016; Mukamel et al., 2005; Nir et al., 2007; Ray and Maunsell, 2011). To calculate broadband power, the average signal across all electrodes was subtracted from each individual electrode’s signal (common average referencing), line noise at 60, 120, 180 Hz was filtered and the data was transformed to time–frequency space using the multitaper method available in the FieldTrip toolbox (Oostenveld et al., 2011) with 3 Slepian tapers; frequency window from 10 to 200 Hz; frequency steps of 2 Hz; time steps of 10 ms; temporal smoothing of 200 ms; frequency smoothing of ±10 Hz.
 
 The broadband response at each time point following stimulus onset was measured as the percent change from baseline, with the baseline calculated over all trials and all experimental conditions in a time window from −500 to −100 ms before stimulus onset. To reject outliers, if at any point following stimulus onset the response was greater than ten standard deviations from the mean calculated across the rest of the trials, the entire trial was discarded (average of 10 trials were discarded per electrode, range from 1 to 16).
 
-## Visual cortex electrode selection
+### Visual cortex electrode selection
 
 Across eight subjects, we recorded from 154 occipital lobe electrodes. These were winnowed using two criteria. First, a well-demarcated spatial receptive field (see Receptive Field Mapping Analysis section, above). Second, a significant (q < 0.01, false-discovery rate corrected) broadband response to AV speech; because only the response to AV trials was used to select electrodes, we could measure the response to the Aud and Vis conditions without bias. Out of 154 total occipital lobe electrodes, 73 electrodes met both criteria.
 
-## Auditory cortex electrode selection
+### Auditory cortex electrode selection
 
 We recorded from 102 electrodes located on the superior temporal gyrus. 44 out of 102 electrodes showed a significant (q < 0.01, false-discovery rate corrected) broadband response to AV speech.
 
-## Frontal cortex electrode selection
+### Frontal cortex electrode selection
 
 We recorded from 179 electrodes located in lateral frontal cortex, defined as the lateral convexity of the hemisphere anterior to the central sulcus. 44 out of 179 electrodes showed a significant (q < 0.01, false-discovery rate corrected) broadband response to AV speech. In each of the eight subjects, we selected the single frontal electrode that showed the largest broadband response to AV speech, measured as the signal-to-noise ratio (μ/σ).
 
-## Linear mixed effects modeling
+### Linear mixed effects modeling
 
 We used the lme4 package, RRID:SCR_015654 (Bates et al., 2014) for the R Project for Statistical Computing, RRID:SCR_001905 to perform linear mixed effect (LME) analyses. Complete details of each analysis shown in Tables. Similar to an ANOVA (but allowing for missing data), the LME estimated the effect of each factor in units of the dependent variable (equivalent to beta weights in a linear regression) relative to an arbitrary baseline condition (defined in our analysis as the response to AV speech) and a standard error.
 
-## Functional connectivity analysis
+### Functional connectivity analysis
 
 The average high-gamma power in the 200–1500 milliseconds was calculated for each trial, corresponding to this time in which mouth movements occur in the speech stimuli. After calculating the average broadband (70–150 Hz) power for each trial, functional connectivity between the 73 frontal-visual cortex as well as 44 frontal-auditory electrode pairs was measured by calculating the trial-by-trial Spearman rank correlation across trials of the same speech condition (AV, Vis or Aud) (Foster et al., 2015; Hipp et al., 2012).
 
-## Time point of enhancement onset analysis
+### Time point of enhancement onset analysis
 
 The average response showed a long-lasting enhancement for visual speech (Figure 1C). In order to measure the time at which this occurred in individual electrodes, we compared the time course of the response to Vis and AV condition. The onset of enhancement was defined as the first time point in which there was a long-lasting (>=200 ms) significantly greater response (p<0.05 using a running t-test) to Vis compared with AV speech. Using these criteria, we were able to measure the enhancement onset time in 7 frontal and 29 visual electrodes (Figure 4D).

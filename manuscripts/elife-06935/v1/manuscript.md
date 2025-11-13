@@ -36,7 +36,7 @@
 
 ## Abstract
 
-10.7554/eLife.06935.001 Synaptic vesicles (SVs) fuse at active zones (AZs) covered by a protein scaffold, at Drosophila synapses comprised of ELKS family member Bruchpilot (BRP) and RIM-binding protein (RBP). We here demonstrate axonal co-transport of BRP and RBP using intravital live imaging, with both proteins co-accumulating in axonal aggregates of several transport mutants. RBP, via its C-terminal Src-homology 3 (SH3) domains, binds Aplip1/JIP1, a transport adaptor involved in kinesin-dependent SV transport. We show in atomic detail that RBP C-terminal SH3 domains bind a proline-rich (PxxP) motif of Aplip1/JIP1 with submicromolar affinity. Pointmutating this PxxP motif provoked formation of ectopic AZ-like structures at axonal membranes. Direct interactions between AZ proteins and transport adaptors seem to provide complex avidity and shield synaptic interaction surfaces of pre-assembled scaffold protein transport complexes, thus, favouring physiological synaptic AZ assembly over premature assembly at axonal membranes. DOI: http://dx.doi.org/10.7554/eLife.06935.001
+Synaptic vesicles (SVs) fuse at active zones (AZs) covered by a protein scaffold, at Drosophila synapses comprised of ELKS family member Bruchpilot (BRP) and RIM-binding protein (RBP). We here demonstrate axonal co-transport of BRP and RBP using intravital live imaging, with both proteins co-accumulating in axonal aggregates of several transport mutants. RBP, via its C-terminal Src-homology 3 (SH3) domains, binds Aplip1/JIP1, a transport adaptor involved in kinesin-dependent SV transport. We show in atomic detail that RBP C-terminal SH3 domains bind a proline-rich (PxxP) motif of Aplip1/JIP1 with submicromolar affinity. Pointmutating this PxxP motif provoked formation of ectopic AZ-like structures at axonal membranes. Direct interactions between AZ proteins and transport adaptors seem to provide complex avidity and shield synaptic interaction surfaces of pre-assembled scaffold protein transport complexes, thus, favouring physiological synaptic AZ assembly over premature assembly at axonal membranes.
 
 ## Introduction
 
@@ -50,99 +50,518 @@ In summary, we characterize a mechanism of axonal AZ protein transport through a
 
 The molecular basis of how axonal protein transport is coupled to AZ assembly remains largely unexplored. We hypothesized that BRP might be co-transported with further AZ scaffold proteins, as transport of preformed complexes of AZ material has been suggested previously (Zhai et al., 2001; Shapira et al., 2003; Maas et al., 2012).
 
-## RBP co-clusters with BRP in axonal aggregates of SR kinase mutants
+### RBP co-clusters with BRP in axonal aggregates of SR kinase mutants
 
 Firstly, we chose a previously characterized mutant of a serine–arginine (SR) protein kinase at location 79D (srpk79D). The SRPK79D protein is a member of the serine–arginine protein kinase family previously shown to be involved in mRNA splicing and processing (Wang et al., 1998). Mutants of srpk79D form dramatic BRP aggregates in the axoplasm, while its endogenous substrates remain elusive (Johnson et al., 2009; Nieratschker et al., 2009). The axonal aggregations here served as a sensitive background to screen for proteins that co-accumulate together with BRP in the axon, and therefore indicate a joint transport mechanism.
 
-In order to visualise the aggregates forming within axons of
+In order to visualise the aggregates forming within axons of srpk79D mutant larvae, we stained with antibodies (Abs) directed against the BRP C- and N-terminus (Figure 1A, as control), and further probed for the presence of additional AZ proteins, such as Liprin-α (Figure 1B) and Syd-1 (Figure 1C), which interact with BRP at the AZ (Owald et al., 2010, 2012) and the small GTPase Rab3 that was previously shown to regulate the distribution of presynaptic components at AZs (Figure 1D; Graf et al., 2009). However, none of these AZ proteins showed co-accumulation with BRP in the aggregates (B as also described in Johnson et al., 2009). Staining with anti-RBP Abs (Liu et al., 2011a), by contrast, revealed strong co-localization of BRP and RBP in the axonal aggregates (Figure 1E). Quantification of BRP and RBP co-localization in two different srpk79D mutant null alleles (atc from Johnson et al., 2009; vn from Nieratschker et al., 2009) confirmed the impression that the axonal RBP/BRP signals were of identical size (Figure 1F; mean area of axonal spots, BRPC-term 0.3797 ± 0.03694 µm2 in srpk79DATC, 0.3259 ± 0.02212 µm2 in srpk79Dvn; RBPC-term 0.3892 ± 0.02097 µm2 in srpk79DATC, 0.3696 ± 0.01645 µm2 in srpk79Dvn; n = 8 nerves; mean ± SEM), and that BRP and RBP nearly always co-localized in these aggregates (Figure 1G; BRPC-term co-localizing with RBPC-term 93.26% ± 2.172 in srpk79DATC, 95.85% ± 1.302 in srpk79Dvn; RBPC-term co-localizing with BRPC-term 95.7% ± 0.9713 in srpk79DATC, 94.24% ± 1.162 in srpk79Dvn; n = 8 nerves; mean ± SEM).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig1-v1.jpg)
 
-**Figure 1.:** srpk79D axonal aggregates.(A–E, I) Nerve bundles of segments A1–A3 from third instar larvae of the genotypes indicated labeled with the antibodies (Abs) indicated. (A–E, H) BRP accumulated in axonal aggregates of srpk79D mutants. (B–D) Liprin-α (B), Syd-1 (C), and Rab3 (D), did not co-localize with axonal BRP spots. (E) By contrast, RBP invariably co-localized with BRP in these axonal aggregates. (F) Quantification of mean area of axonal BRP and RBP spots in wild type (WT) and srpk79D mutants. BRPC-term spots: 0.3797 ± 0.03694 µm2 in srpk79D, 0.3259 ± 0.02212 µmATC2 in srpk79Dvn, 0.06895 ± 0.01 µm2 in WT; RBPC-term spots: 0.3892 ± 0.02097 µm2 in srpk79D, 0.3696 ± 0.01645 µmATC2 in srpk79D, 0.09184 ± 0.0133 in WT; n = 8 nerves each; all panels show mean values and errors bars representing SEM; ns, not significant, p > 0.05, Mann–Whitney U test. (vnG) Quantification for BRP co-localization with RBP and vice versa in srpk79D mutants. BRPC-term co-localizing with RBPC-term: 93.26% ± 2.172 in srpk79D, 95.85% ± 1.302 in ATCsrpk79D; RBPvnC-term co-localizing with BRPC-term: 95.7% ± 0.9713 in srpk79D, 94.24% ± 1.162 in ATCsrpk79D; n = 8 nerves each; all panels show mean values and errors bars representing SEM; ns, not significant, p > 0.05, Mann–Whitney U test. (vnH) Two-colour stimulated emission depletion (STED) images of axonal aggregates in srpk79D mutants revealed that RBPC-Term label localized to the inside of the axonal aggregates and was surrounded by BRPC-Term label. (I) BRP and RBP also co-localized in axonal spots of WT animals (arrow heads show co-localization of BRP and RBP in the axon). Scale bars: (A–E, I) 10 µm; (H) 200 nm.DOI: http://dx.doi.org/10.7554/eLife.06935.003
+**Figure 1.:** (A–E, I) Nerve bundles of segments A1–A3 from third instar larvae of the genotypes indicated labeled with the antibodies (Abs) indicated. (A–E, H) BRP accumulated in axonal aggregates of srpk79D mutants. (B–D) Liprin-α (B), Syd-1 (C), and Rab3 (D), did not co-localize with axonal BRP spots. (E) By contrast, RBP invariably co-localized with BRP in these axonal aggregates. (F) Quantification of mean area of axonal BRP and RBP spots in wild type (WT) and srpk79D mutants. BRPC-term spots: 0.3797 ± 0.03694 µm2 in srpk79DATC, 0.3259 ± 0.02212 µm2 in srpk79Dvn, 0.06895 ± 0.01 µm2 in WT; RBPC-term spots: 0.3892 ± 0.02097 µm2 in srpk79DATC, 0.3696 ± 0.01645 µm2 in srpk79Dvn, 0.09184 ± 0.0133 in WT; n = 8 nerves each; all panels show mean values and errors bars representing SEM; ns, not significant, p > 0.05, Mann–Whitney U test. (G) Quantification for BRP co-localization with RBP and vice versa in srpk79D mutants. BRPC-term co-localizing with RBPC-term: 93.26% ± 2.172 in srpk79DATC, 95.85% ± 1.302 in srpk79Dvn; RBPC-term co-localizing with BRPC-term: 95.7% ± 0.9713 in srpk79DATC, 94.24% ± 1.162 in srpk79Dvn; n = 8 nerves each; all panels show mean values and errors bars representing SEM; ns, not significant, p > 0.05, Mann–Whitney U test. (H) Two-colour stimulated emission depletion (STED) images of axonal aggregates in srpk79D mutants revealed that RBPC-Term label localized to the inside of the axonal aggregates and was surrounded by BRPC-Term label. (I) BRP and RBP also co-localized in axonal spots of WT animals (arrow heads show co-localization of BRP and RBP in the axon). Scale bars: (A–E, I) 10 µm; (H) 200 nm.
 
 Thus, RBP was the only AZ protein that robustly co-accumulates with BRP in srpk79D mutant axonal aggregates. To further explore the distribution of BRP and RBP in these aggregates we used stimulated emission depletion (STED) light microscopy at a resolution of about 50 nm (Hell, 2007). Two-colour STED microscopy revealed a tight and stoichiometric association of BRP and RBP in the floating axonal aggregates of srpk79D mutants (Figure 1H), reminiscent of EM images showing T-bar super assemblies in these axons (Figure 1H; Johnson et al., 2009; Nieratschker et al., 2009). In fact, the relative distribution of RBP vs BRPC-term was very reminiscent of the organisation at mature, synaptic AZs (Liu et al., 2011a). The tight association of BRP and RBP in these ectopic aggregates further suggested a co-transport of both AZ components. Indeed, we could identify axonal BRP spots co-positive for RBP (Figure 1I, arrows) in wild type (WT) larvae as well. Compared to srpk79D mutant axons, WT BRP/RBP co-positive aggregates were present at a lower frequency and displayed a ∼ four times smaller average diameter in control axons (Figure 1F; mean area of axonal spots, BRPC-term 0.06895 ± 0.01 µm2 in WT; RBPC-term spots: 0.09184 ± 0.0133 in WT; n = 8 nerves; mean ± SEM).
 
-## BRP and RBP are co-transported in axons together with Aplip1
+### BRP and RBP are co-transported in axons together with Aplip1
 
-We observed active anterograde and retrograde transport of the BRP (GFP-labelled)/RBP (cherry-labelled) co-positive spots when using intravital imaging of axons of intact larvae (
+We observed active anterograde and retrograde transport of the BRP (GFP-labelled)/RBP (cherry-labelled) co-positive spots when using intravital imaging of axons of intact larvae (Rasse et al., 2005) (Figure 2A; Video 1). Thus, as our data strongly suggested that BRP and RBP are co-transported, we searched for adaptor proteins coupling them to axonal motors.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig2-v1.jpg)
 
-**Figure 2.:** (A) Live imaging in intact third instar larvae showed anterograde co-transport of BRPGFP and RBPcherry. See also, Video 1. (B) Schematic representation of Aplip1 domain structure containing two PxxP motifs, one Src-homology 3 (SH3) domain and one C-terminal phosphotyrosine interaction domain (PID) (FL = full-length). Lines represent Aplip1 prey fragments recovered in RBP SH3-II+III bait yeast-two-hybrid (Y2H) screen. Arrow indicates one single clone that contained only the first of the two Aplip1-PxxP motifs. (C, D) Live imaging in intact third instar larvae showed anterograde co-transport of Aplip1GFP and RBPcherry (C), as well as Aplip1GFP and BRP-shortstraw (D). Scale bars: (A, C, D) 10 µm. See also, Videos 2, 3. (E) Quantification of live imaging of BRP-shortstraw flux (spots passing through an axonal cross-section per minute) within the genetic backgrounds indicated. Anterograde and retrograde BRP-shortstraw flux was severely impaired in aplip1 and ek4aplip1 mutant background, which was rescued when a genomic rescue construct for Aplip1 was introduced into the nullaplip1 mutant background. BRP-shortnullstraw flux per min, control (n = 14 nerves): anterograde: 5.267 ± 0.975, retrograde: 2.423 ± 0.604, stationary: 0.241 ± 0.071; aplip1 (n = 28 nerves): anterograde: 0.687 ± 0.098, retrograde: 0.284 ± 0.125, stationary: 1.023 ± 0.145; ek4aplip1 (n = 11 nerves): anterograde: 0.808 ± 0.051, retrograde: 0.085 ± 0.064, stationary: 0.354 ± 0.148; nullaplip1null, gen rescue (n = 26 nerves): anterograde: 3.783 ± 0.861, retrograde: 2.123 ± 0.239, stationary: 0.505 ± 0.084. All panels show mean values and errors bars representing SEM. *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001; ns, not significant, p > 0.05, Mann–Whitney U test.DOI: http://dx.doi.org/10.7554/eLife.06935.004
+**Figure 2.:** (A) Live imaging in intact third instar larvae showed anterograde co-transport of BRPGFP and RBPcherry. See also, Video 1. (B) Schematic representation of Aplip1 domain structure containing two PxxP motifs, one Src-homology 3 (SH3) domain and one C-terminal phosphotyrosine interaction domain (PID) (FL = full-length). Lines represent Aplip1 prey fragments recovered in RBP SH3-II+III bait yeast-two-hybrid (Y2H) screen. Arrow indicates one single clone that contained only the first of the two Aplip1-PxxP motifs. (C, D) Live imaging in intact third instar larvae showed anterograde co-transport of Aplip1GFP and RBPcherry (C), as well as Aplip1GFP and BRP-shortstraw (D). Scale bars: (A, C, D) 10 µm. See also, Videos 2, 3. (E) Quantification of live imaging of BRP-shortstraw flux (spots passing through an axonal cross-section per minute) within the genetic backgrounds indicated. Anterograde and retrograde BRP-shortstraw flux was severely impaired in aplip1ek4 and aplip1null mutant background, which was rescued when a genomic rescue construct for Aplip1 was introduced into the aplip1null mutant background. BRP-shortstraw flux per min, control (n = 14 nerves): anterograde: 5.267 ± 0.975, retrograde: 2.423 ± 0.604, stationary: 0.241 ± 0.071; aplip1ek4 (n = 28 nerves): anterograde: 0.687 ± 0.098, retrograde: 0.284 ± 0.125, stationary: 1.023 ± 0.145; aplip1null (n = 11 nerves): anterograde: 0.808 ± 0.051, retrograde: 0.085 ± 0.064, stationary: 0.354 ± 0.148; aplip1null, gen rescue (n = 26 nerves): anterograde: 3.783 ± 0.861, retrograde: 2.123 ± 0.239, stationary: 0.505 ± 0.084. All panels show mean values and errors bars representing SEM. *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001; ns, not significant, p > 0.05, Mann–Whitney U test.
 
-RBP, via its second and third SH3 domain, is known to bind synaptic ligands such as Ca2+ channels and RIM (Liu et al., 2011a). Both the SH3 domains and the cognate PxxP motifs of the synaptic ligands are highly conserved between mammals and Drosophila (Liu et al., 2011a; Südhof, 2012; Davydova et al., 2014). However, in order to identify novel RBP interaction partners which might be relevant in the context of axonal transport, we performed a large-scale yeast two-hybrid (Y2H) screen using a construct consisting of the second and third SH3 domains of Drosophila RBP as bait (also shown in Figure 3A). As expected, several clones representing RIM and the Ca2+ channel α1-subunit Cacophony (Cac) were isolated (not shown). In addition, the screen recovered 14 independent fragments of Aplip1, including a full length cDNA clone (Figure 2B). Aplip1 is the Drosophila homolog of c-Jun N-terminal kinase (JNK)-interacting protein 1 (JIP1), a scaffolding protein that has been shown to bind kinesin light chain (KLC; Verhey et al., 2001), Alzheimer's amyloid precursor protein (APP; Taru et al., 2002), JNK pathway kinases (Horiuchi et al., 2005, 2007) and the autophagosome adaptor LC3 (Fu et al., 2014). If Aplip1 was mediating the axonal transport of RBP, moving spots co-positive for both RBP and Aplip1 should be expected. In fact, we robustly observed co-transport of RBPcherry and Aplip1GFP spots in both anterograde (Figure 2C, arrowhead; Video 2) and retrograde (not shown) direction at a frequency consistent with the low frequency of single Aplip1GFP moving particles (not shown). Furthermore, we observed BRP-shortstraw co-transport with Aplip1GFP (Figure 2D; Video 3), as expected with similarly low frequencies as observed for RBP/Aplip1 co-transport (not shown), further pointing towards a co-transport of RBP and BRP in conjunction with Aplip1. We used the live imaging assay to investigate BRP transport in different aplip1 mutants to directly address whether removal of Aplip1 affects AZ scaffold protein transport. The aplip1null allele completely and specifically removes the aplip1 gene and was generated by P-element excision (Klinedinst et al., 2013). By comparison, the aplip1ek4 allele contains a point mutation in the C-terminal kinesin binding domain of Aplip1 that was shown to almost completely abolish the ability of Aplip1 to bind to KLC (Horiuchi et al., 2005). Anterograde and retrograde transport of BRP was drastically reduced compared to controls in both aplip1 mutant alleles (Figure 2E). Through the introduction of a genomic (gen.) construct of Aplip1 into the aplip1null mutant background (aplip1null, gen. rescue), however, BRP flux (spots passing through an axonal cross-section in a given time) could be restored to WT level (Figure 2E). Quantification showed that retrograde transport in the aplip1null mutant situation was somewhat more affected (27× less compared to control) than anterograde transport (7× less). Both directions appeared equally affected (about 8× less compared to controls) in the kinesin-binding defective aplip1ek4 mutant. It is noteworthy that the transport of SV cargo in the same mutant was reduced equally in both directions, whereas transport of mitochondria is only impaired in the retrograde direction (Horiuchi et al., 2005).10.7554/eLife.06935.012Video 2.Anterograde co-transport of Aplip1GFP and RBPcherry.Live imaging in intact third instar larvae showed anterograde co-transport of Aplip1GFP and RBPcherry. Video was captured at 0.6 s per frame and played back at 7× real time.DOI: http://dx.doi.org/10.7554/eLife.06935.01210.7554/eLife.06935.013Video 3.Anterograde co-transport of Aplip1GFP and BRP-shortstraw.Live imaging in intact third instar larvae showed anterograde co-transport of Aplip1GFP and BRP-shortstraw. Video was captured at 0.414 s per frame and played back at 5× real time.DOI: http://dx.doi.org/10.7554/eLife.06935.013
+![Video 1.](https://cdn.elifesciences.org/articles/06935/elife-06935-media1.avi.jpg)
 
-## RBP binds the transport adaptor Aplip1 via a high affinity PxxP-SH3 interaction
+**Video 1.:** Live imaging in intact third instar larvae showed anterograde co-transport of BRPGFP and RBPcherry. Video was captured at 0.6 s per frame and played back at 7× real time.
 
-As our Y2H screen used the SH3-II and -III domains of RBP as bait (
+RBP, via its second and third SH3 domain, is known to bind synaptic ligands such as Ca2+ channels and RIM (Liu et al., 2011a). Both the SH3 domains and the cognate PxxP motifs of the synaptic ligands are highly conserved between mammals and Drosophila (Liu et al., 2011a; Südhof, 2012; Davydova et al., 2014). However, in order to identify novel RBP interaction partners which might be relevant in the context of axonal transport, we performed a large-scale yeast two-hybrid (Y2H) screen using a construct consisting of the second and third SH3 domains of Drosophila RBP as bait (also shown in Figure 3A). As expected, several clones representing RIM and the Ca2+ channel α1-subunit Cacophony (Cac) were isolated (not shown). In addition, the screen recovered 14 independent fragments of Aplip1, including a full length cDNA clone (Figure 2B). Aplip1 is the Drosophila homolog of c-Jun N-terminal kinase (JNK)-interacting protein 1 (JIP1), a scaffolding protein that has been shown to bind kinesin light chain (KLC; Verhey et al., 2001), Alzheimer's amyloid precursor protein (APP; Taru et al., 2002), JNK pathway kinases (Horiuchi et al., 2005, 2007) and the autophagosome adaptor LC3 (Fu et al., 2014). If Aplip1 was mediating the axonal transport of RBP, moving spots co-positive for both RBP and Aplip1 should be expected. In fact, we robustly observed co-transport of RBPcherry and Aplip1GFP spots in both anterograde (Figure 2C, arrowhead; Video 2) and retrograde (not shown) direction at a frequency consistent with the low frequency of single Aplip1GFP moving particles (not shown). Furthermore, we observed BRP-shortstraw co-transport with Aplip1GFP (Figure 2D; Video 3), as expected with similarly low frequencies as observed for RBP/Aplip1 co-transport (not shown), further pointing towards a co-transport of RBP and BRP in conjunction with Aplip1. We used the live imaging assay to investigate BRP transport in different aplip1 mutants to directly address whether removal of Aplip1 affects AZ scaffold protein transport. The aplip1null allele completely and specifically removes the aplip1 gene and was generated by P-element excision (Klinedinst et al., 2013). By comparison, the aplip1ek4 allele contains a point mutation in the C-terminal kinesin binding domain of Aplip1 that was shown to almost completely abolish the ability of Aplip1 to bind to KLC (Horiuchi et al., 2005). Anterograde and retrograde transport of BRP was drastically reduced compared to controls in both aplip1 mutant alleles (Figure 2E). Through the introduction of a genomic (gen.) construct of Aplip1 into the aplip1null mutant background (aplip1null, gen. rescue), however, BRP flux (spots passing through an axonal cross-section in a given time) could be restored to WT level (Figure 2E). Quantification showed that retrograde transport in the aplip1null mutant situation was somewhat more affected (27× less compared to control) than anterograde transport (7× less). Both directions appeared equally affected (about 8× less compared to controls) in the kinesin-binding defective aplip1ek4 mutant. It is noteworthy that the transport of SV cargo in the same mutant was reduced equally in both directions, whereas transport of mitochondria is only impaired in the retrograde direction (Horiuchi et al., 2005).
+
+![Video 2.](https://cdn.elifesciences.org/articles/06935/elife-06935-media2.avi.jpg)
+
+**Video 2.:** Live imaging in intact third instar larvae showed anterograde co-transport of Aplip1GFP and RBPcherry. Video was captured at 0.6 s per frame and played back at 7× real time.
+
+![Video 3.](https://cdn.elifesciences.org/articles/06935/elife-06935-media3.avi.jpg)
+
+**Video 3.:** Live imaging in intact third instar larvae showed anterograde co-transport of Aplip1GFP and BRP-shortstraw. Video was captured at 0.414 s per frame and played back at 5× real time.
+
+### RBP binds the transport adaptor Aplip1 via a high affinity PxxP-SH3 interaction
+
+As our Y2H screen used the SH3-II and -III domains of RBP as bait (Figure 3A), PxxP motifs are expected to mediate the interaction with Aplip1. In fact, Aplip1 contains two PxxP motifs which were both present in most of the prey clones recovered in the Y2H screen, except for one single clone that contained only the first more N-terminal motif (Figure 2B, arrow). Using a semi-quantitative liquid Y2H assay and a set of Aplip1 constructs containing only either the first or the second PxxP motif (Figure 3B), we mapped the interaction between RBP and Aplip1 to the first of the two candidate PxxP motifs present in all clones isolated (Figure 2B). The second and third SH3 domain of RBP bound to this motif with comparable strength when measured with a semi-quantitative liquid Y2H assay (Figure 3C; mean ß-Gal4 units for: Aplip1-PxxP1/RBP SH3-II: 24.3 ± 6.6; Aplip1-PxxP1/RBPSH3-III: 29.1 ± 7.4; n = 3 independent experiments; mean ± SEM). No binding was observed between the second and third SH3 domains of RBP and Aplip1-PxxP2 (Figure 3C; mean ß-Gal4 units for: Aplip1-PxxP2/RBP SH3-II: 0.2 ± 0.0; Aplip1-PxxP2/RBPSH3-III: 0.2 ± 0.1; n = 3 independent experiments; mean ± SEM). When mutating either the PxxP1 motif of Aplip1 (P156 → A; P159 → A, giving rise to AxxA1) or introducing mutations known to interfere with PxxP ligand binding into the individual SH3 domains of RBP (SH3-II*/SH3-III*), the interaction was completely abolished (Figure 3C; mean ß-Gal4 units for: Aplip1-AxxA1/RBP SH3-II: 0.1 ± 0.1; Aplip1-AxxA1/RBP SH3-III: 0.2 ± 0.0; Aplip1-PxxP1/RBPSH3-II*: 0.1 ± 0.0; Aplip1-PxxP1/RBP SH3-III*: 0.1 ± 0.0; n = 3 independent experiments; mean ± SEM). We performed isothermal titration calorimetry (ITC) to measure the thermodynamics of the binding directly and compare Aplip1/RBP binding quantitatively to the established synaptic ligands of RBP. We used four different constructs, comprising either single RBP SH3 domains (I, II, and III) or a construct of two RBP SH3 domains (II+III) (see also Figure 3A). Whereas we could not detect any binding of the Aplip1 peptides to RBP SH3-I, we could determine KD constants for the single SH3-II, SH3-III and the tandem SH3-II+III (Figure 3D; Figure 3—figure supplement 1) domains of RBP. Both SH3-II and SH3-III single domains showed a binding affinity to Aplip1 peptides several fold stronger compared to either Cac, RIM1 or RIM2 (Figure 3D; Figure 3—figure supplements 2–4). However, the affinity of the Aplip1 peptides to the SH3-II+III domain was the highest observed which is indicative of co-operativity between both domains in peptide binding that could increase the local concentrations of Aplip1 at RBP binding pockets (BPs).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig3-v1.jpg)
 
-**Figure 3.:** (A) Schematic representation of RBP domain structure containing three SH3 domains (I–III from the N-terminus) and three Fibronectin 3 (FN3) domains. The corresponding fragments used in the large scale Y2H screen (SH3-II+III) and used as bait (SH3-II and SH3-III) in the Y2H assay (C) against different Aplip1 prey constructs (B) are indicated. Different isothermal titration calorimetry (ITC) peptides (SH3-I, SH3-II, SH3-III and SH3-II+III) used for ITC measurements (D) are also shown. (B) Schematic representation of Aplip1 domain structure entailing two PxxP motifs, one SH3 and one C-terminal PID. Different preys (Aplip1-PxxP1, -AxxA1 and -PxxP2) used in Y2H assay (C) are indicated. (C) Liquid Y2H assay of individual Aplip1 prey fragments against different RBP baits. Aplip1-PxxP1 interacted with both the single SH3-II and -III domains of RBP. Mutating this first PxxP motif (Aplip1-AxxA1) construct abolished the binding. Aplip1-PxxP2 showed no interaction to RBP SH3 domains. Constructs with point-mutated RBP SH3 domains (SH3-II*, SH3-III*) abolished the binding to Aplip1-PxxP1. (D) Peptide sequences used for ITC measurements. Aplip1 showed the strongest interaction with RBP compared with Cacophony (Cac), RIM1 and RIM2, with the strongest affinity (lowest KD) between Aplip1 and the RBP SH3-II+III domain. (E, F) Crystal structure of Aplip1-peptide (E; see also, 3D for peptide sequence) and of Cac-peptide (F; see also, Figure 3D for peptide sequence) bound to RBP SH3-II. The SH3 domain is shown in gray surface representation with (left) and without (right) the respective protein in cartoon representation. The bound peptides are drawn in stick representation. Hydrogen bonds ≤3.3 Å are indicated by red dashes. In the right panel, several peptide SH3-II complexes as observed in the asymmetric unit are superimposed and shown in different colors. See also, Tables 1–4.DOI: http://dx.doi.org/10.7554/eLife.06935.006
+**Figure 3.:** (A) Schematic representation of RBP domain structure containing three SH3 domains (I–III from the N-terminus) and three Fibronectin 3 (FN3) domains. The corresponding fragments used in the large scale Y2H screen (SH3-II+III) and used as bait (SH3-II and SH3-III) in the Y2H assay (C) against different Aplip1 prey constructs (B) are indicated. Different isothermal titration calorimetry (ITC) peptides (SH3-I, SH3-II, SH3-III and SH3-II+III) used for ITC measurements (D) are also shown. (B) Schematic representation of Aplip1 domain structure entailing two PxxP motifs, one SH3 and one C-terminal PID. Different preys (Aplip1-PxxP1, -AxxA1 and -PxxP2) used in Y2H assay (C) are indicated. (C) Liquid Y2H assay of individual Aplip1 prey fragments against different RBP baits. Aplip1-PxxP1 interacted with both the single SH3-II and -III domains of RBP. Mutating this first PxxP motif (Aplip1-AxxA1) construct abolished the binding. Aplip1-PxxP2 showed no interaction to RBP SH3 domains. Constructs with point-mutated RBP SH3 domains (SH3-II*, SH3-III*) abolished the binding to Aplip1-PxxP1. (D) Peptide sequences used for ITC measurements. Aplip1 showed the strongest interaction with RBP compared with Cacophony (Cac), RIM1 and RIM2, with the strongest affinity (lowest KD) between Aplip1 and the RBP SH3-II+III domain. (E, F) Crystal structure of Aplip1-peptide (E; see also, 3D for peptide sequence) and of Cac-peptide (F; see also, Figure 3D for peptide sequence) bound to RBP SH3-II. The SH3 domain is shown in gray surface representation with (left) and without (right) the respective protein in cartoon representation. The bound peptides are drawn in stick representation. Hydrogen bonds ≤3.3 Å are indicated by red dashes. In the right panel, several peptide SH3-II complexes as observed in the asymmetric unit are superimposed and shown in different colors. See also, Tables 1–4.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** Quantification of protein-peptide interactions by ITC. Both the raw data and the data integrated are shown. Data were fitted based on the ‘One Set of Sites’ model. (A) Titration of RBP-BP SH3-II and the Aplip1 peptide. (B) Titration of RBP-BP SH3-III and the Aplip1 peptide. (C) Titration of RBP-BP SH3-II+SH3-III and the Aplip1 peptide.DOI: http://dx.doi.org/10.7554/eLife.06935.007
+**Figure 3—figure supplement 1.:** Quantification of protein-peptide interactions by ITC. Both the raw data and the data integrated are shown. Data were fitted based on the ‘One Set of Sites’ model. (A) Titration of RBP-BP SH3-II and the Aplip1 peptide. (B) Titration of RBP-BP SH3-III and the Aplip1 peptide. (C) Titration of RBP-BP SH3-II+SH3-III and the Aplip1 peptide.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** Quantification of protein-peptide interactions by ITC. Both the raw data and the data integrated are shown. Data were fitted based on the ‘One Set of Sites’ model. (A) Titration of RBP-BP SH3-II and the Cac peptide. (B) Titration of RBP-BP SH3-III and the Cac peptide. (C) Titration of RBP-BP SH3-II+SH3-III and the Cac peptide.DOI: http://dx.doi.org/10.7554/eLife.06935.008
+**Figure 3—figure supplement 2.:** Quantification of protein-peptide interactions by ITC. Both the raw data and the data integrated are shown. Data were fitted based on the ‘One Set of Sites’ model. (A) Titration of RBP-BP SH3-II and the Cac peptide. (B) Titration of RBP-BP SH3-III and the Cac peptide. (C) Titration of RBP-BP SH3-II+SH3-III and the Cac peptide.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig3-figsupp3-v1.jpg)
 
-**Figure 3—figure supplement 3.:** Quantification of protein-peptide interactions by ITC. Both the raw data and the data integrated are shown. Data were fitted based on the ‘One Set of Sites’ model. (A) Titration of RBP-BP SH3-II and the RIM1 peptide. (B) Titration of RBP-BP SH3-III and the RIM1 peptide. (C) Titration of RBP-BP SH3-II+SH3-III and the RIM1.DOI: http://dx.doi.org/10.7554/eLife.06935.009
+**Figure 3—figure supplement 3.:** Quantification of protein-peptide interactions by ITC. Both the raw data and the data integrated are shown. Data were fitted based on the ‘One Set of Sites’ model. (A) Titration of RBP-BP SH3-II and the RIM1 peptide. (B) Titration of RBP-BP SH3-III and the RIM1 peptide. (C) Titration of RBP-BP SH3-II+SH3-III and the RIM1.
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig3-figsupp4-v1.jpg)
 
-**Figure 3—figure supplement 4.:** Quantification of protein-peptide interactions by ITC. Both the raw data and the data integrated are shown. Data were fitted based on the ‘One Set of Sites’ model. (A) Titration of RBP-BP SH3-II and the RIM2 peptide. (B) Titration of RBP-BP SH3-III and the RIM2 peptide. (C) Titration of RBP-BP SH3-II+SH3-III and the RIM2.DOI: http://dx.doi.org/10.7554/eLife.06935.010
+**Figure 3—figure supplement 4.:** Quantification of protein-peptide interactions by ITC. Both the raw data and the data integrated are shown. Data were fitted based on the ‘One Set of Sites’ model. (A) Titration of RBP-BP SH3-II and the RIM2 peptide. (B) Titration of RBP-BP SH3-III and the RIM2 peptide. (C) Titration of RBP-BP SH3-II+SH3-III and the RIM2.
 
 ![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig3-figsupp5-v1.jpg)
 
-**Figure 3—figure supplement 5.:** The SH3 domain is shown in gray surface representation, with (left) and without (right) the respective protein in cartoon representation. The bound peptides are drawn in stick representation. Hydrogen bonds ≤3.3 Å are indicated by red dashes.DOI: http://dx.doi.org/10.7554/eLife.06935.011
+**Figure 3—figure supplement 5.:** The SH3 domain is shown in gray surface representation, with (left) and without (right) the respective protein in cartoon representation. The bound peptides are drawn in stick representation. Hydrogen bonds ≤3.3 Å are indicated by red dashes.
 
-Finally, in order to get a deeper atomic insight into the structural basis of the binding of RBP towards Aplip1 in comparison to its synaptic ligands, we crystallized the Drosophila RBP SH3-II domain together with both an Aplip1 (Figure 3E; Tables 1, 2, 3) and a Cac peptide (Figure 3F; Tables 1, 3, 4), and RBP SH3-III with a Cac peptide (Figure 3—figure supplement 5; Tables 1, 3). Drosophila RBP SH3-II and -III share 49.2% sequence identity and adopt the canonical fold of SH3 domains (Figure 3E,F; Figure 3—figure supplement 5). Both domains superimpose with a root mean deviation of 0.8 Å for 64 pairs of Cα-atoms. Both peptides sequences harbor the canonical class I interaction motif +xΨPxxP (+, positively charged; x, any amino acid; Ψ hydrophobic amino acid, see Figure 3D for sequence) and are bound into the respective SH3 domain in ‘plus’ direction. We observed the classical poly-proline helix that allows for mainly hydrophobic protein-peptide interaction in all three structures. We detected the same hydrogen pattern between the protein side chains and peptide backbone in the structure of SH3-II with Aplip1 and Cac. The major difference is the side chain orientation of R1687 of Cac that π-stacks with its guanidinium function with Y1372, except for one copy, where it forms a salt-bridge to E1341. The equivalent residue to R1687 of Cac is R153 of the Aplip1 peptide, which forms, by contrast, a bidentate salt-bridge to D1336 (Table 3). A second major difference is induced by the two consecutive proline residues in the Cac peptide. Consequently, the peptide has a more polyproline type II conformation that brings T1692 closer to the protein surface and allows P1693 to deeper point in a hydrophobic pocket of the SH3-II domain. Whereas the C-terminal portion of the Aplip1 peptide is folded in a short 310 helix, the N-terminus of the Aplip1 peptide adopts a random coil conformation with hydrophobic interactions to the surface of SH3-II. The Cac-derived peptide bound to SH3-III is fully defined in the electron density. However, the peptide main chain interaction with the SH3 domains is conserved. The side chain orientation of Cac R1687 is again different if bound to SH3-II or SH3-III. In complex with SH3-III, R1687 forms a bidentate hydrogen bond to SH3-III D1463 and E1648. A π-stacking interaction is not possible since Y1372 of SH3-II is replaced by SH3-III L1499. The central PxxP motifs of Aplip1 superimpose well in both structures if bound to SH3-II and SH3-III. Towards its C-terminus, the Aplip1-PxxP1 peptide adopts a slightly different random coil conformation compared to the structure when bound to SH3-II caused by two additional hydrogen bonds from T1692 and K1695 to the SH3-II domain (Table 3).10.7554/eLife.06935.014Table 1.Data collection and refinement statisticsDOI: http://dx.doi.org/10.7554/eLife.06935.014Data collection StructureRBP SH3-IIRBP SH3-IIRBP SH3-IIIAplip1CacCac PDB entry4Z884Z894Z8A Space groupC2P21I222 Wavelength (Å)0.918410.918410.91841 Unit cell  a; b; c (Å)108.3; 62.4; 163.658.3; 122.2; 68.552.1; 54.3; 73.6  α; β; γ (°)90.0; 90.3; 90.090.0; 113.2; 90.090.0; 90.0; 90.0 Resolution (Å)*50.00–2.0950.00–2.6450.00–1.75(2.19–2.09)(2.74–2.64)(1.86–1.75) Unique reflections64,269 (7760)25,229 (2591)10,690 (1579) Completeness*98.9 (92.4)96.9 (95.0)98.7 (92.6) <I/σ(I)>*7.7 (2.6)8.0 (2.1)14.2 (2.2) Rmeas*, †0.127 (0.533)0.157 (0.726)0.127 (0.663) CC1/2*99.1 (68.0)98.9 (81.2)99.7 (76.5) Redundancy*3.7 (3.7)3.5 (3.2)5.6 (3.1)Refinement Non-hydrogen atoms75646239850 Rwork*, ‡0.210 (0.314)0.255 (0.367)0.159 (0.233) Rfree*, §0.236 (0.396)0.312 (0.490)0.208 (0.332) Average B-factor (Å2)40.852.1018.8 No. of complexes24101 Protein residues6484/41.0663/51.174/17.6 Peptide residues861/42.792/63.615/15.9 Buffer molecules11/40.21/46.3– Water molecules57/29.6134/30.3110/28.6 r.m.s.d.#  bond length (Å)0.0070.0050.010  bond angles (°)1.2241.1401.210 Ramachandran outliers (%)0.10.560 Ramachandran favoured (%)98.498.0100*values in parentheses refer to the highest resolution shell.†Rmeas = Σh [n/(n − 1)]1/2 Σi|Ih − Ih,i|/ΣhΣiIh,i where Ih is the mean intensity of symmetry-equivalent reflections and n is the redundancy.‡Rwork = Σh|Fo − Fc|/ΣFo (working set, no σ cut-off applied).§Rfree is the same as Rwork, but calculated on 5% of the data excluded from refinement.#Root-mean-square deviation (r.m.s.d.) from target geometries.CC, coiled coil.10.7554/eLife.06935.015Table 2.Completeness of the model for RBP SH3-II and bound Aplip1 peptideDOI: http://dx.doi.org/10.7554/eLife.06935.015RBP SH3-IIRangeAplip1Rangechain A1318–1382chain M153–163chain Bx1318–1382chain N155–159chain Cx1318–1381chain O154–163chain Dx1318–1382chain P153–159chain E1319–1381chain Q151–163chain Fx1318–1380chain R153–159chain Gx1318–1381chain S151–163chain Hx1318–1382chain T152–156chain Ix1318–1382chain U152–163chain Jx1318–1381chain V152–158chain Kx1318–1381chain W152–163chain Lx1318–1381chain X152–158Completeness of the model given for the 12 complexes of RBP SH3-II bound to the Aplip1 peptide 149TRRRRKLPEIPKNKK163. Superscript ‘x’ indicates additional N-terminal residues of RBP SH3-II originating from the linker region between the protease cleavage site and the N-terminus.10.7554/eLife.06935.016Table 3.Hydrogen bonding interactionDOI: http://dx.doi.org/10.7554/eLife.06935.016Aplip1SH3-IIDistanceArg153NAsp1359OD22.4Arg153NH2Asp1336OD13.0Arg153NH2Asp1336OD22.6Lys154NAsn1334OD12.9Lys154OAsn1334ND23.0Pro156OAsn1376ND22.8CacSH3-IIDistanceGly1686NAsp1359OD22.7Arg1687NAsp1359OD22.8Arg1688NAsn1334OD13.0Arg1688OAsn1334ND22.9Pro1690OAsn1376ND22.8CacSH3-IIIDistanceArg1687NH1Asp1463OD12.9Arg1687NH1Glu1488OE23.0Arg1687NH2Glu1488OE23.1Arg1688NAsn1461OD12.8Arg1688OAsn1461ND23.0Pro1690OAsn1376ND22.9Thr1692OGAsn1376ND22.9Lys1695OTyr1451OH2.8Ser1697OGLeu1450O2.7Hydrogen bonding interaction of RBP SH3-II with Aplip1 and Cac, as well as RBP SH3-III in complex with Cac. Distance ≤3.2 Å are given in Å.10.7554/eLife.06935.017Table 4.Completeness of the model for RBP SH3-II and bound Cac peptideDOI: http://dx.doi.org/10.7554/eLife.06935.017RBP SH3-IIRangeCacRangechain A1318–1381chain a1686–1697chain Bx1318–1381chain b1686–1695chain Cx1318–1382chain c1686–1697chain Dx1318–1381chain d1686–1697chain E1318–1382chain e1685–1694chain Fx1318–1382chain f1685–1693chain Gx1318–1382chain g1686–1693chain H1318–1381chain h1686–1693chain Ix1318–1381chain i1686–1693chain Jx1318–1382chain j1686–1697Completeness of the model given for the six complexes of RBP SH3-II and the bound Cac peptide 1685IGRRLPPTPSKPSTL1699. Superscript ‘x’ indicates additional N-terminal residues of RBP SH3-II originating from the linker region between the protease cleavage site and the N-terminus.
+Finally, in order to get a deeper atomic insight into the structural basis of the binding of RBP towards Aplip1 in comparison to its synaptic ligands, we crystallized the Drosophila RBP SH3-II domain together with both an Aplip1 (Figure 3E; Tables 1, 2, 3) and a Cac peptide (Figure 3F; Tables 1, 3, 4), and RBP SH3-III with a Cac peptide (Figure 3—figure supplement 5; Tables 1, 3). Drosophila RBP SH3-II and -III share 49.2% sequence identity and adopt the canonical fold of SH3 domains (Figure 3E,F; Figure 3—figure supplement 5). Both domains superimpose with a root mean deviation of 0.8 Å for 64 pairs of Cα-atoms. Both peptides sequences harbor the canonical class I interaction motif +xΨPxxP (+, positively charged; x, any amino acid; Ψ hydrophobic amino acid, see Figure 3D for sequence) and are bound into the respective SH3 domain in ‘plus’ direction. We observed the classical poly-proline helix that allows for mainly hydrophobic protein-peptide interaction in all three structures. We detected the same hydrogen pattern between the protein side chains and peptide backbone in the structure of SH3-II with Aplip1 and Cac. The major difference is the side chain orientation of R1687 of Cac that π-stacks with its guanidinium function with Y1372, except for one copy, where it forms a salt-bridge to E1341. The equivalent residue to R1687 of Cac is R153 of the Aplip1 peptide, which forms, by contrast, a bidentate salt-bridge to D1336 (Table 3). A second major difference is induced by the two consecutive proline residues in the Cac peptide. Consequently, the peptide has a more polyproline type II conformation that brings T1692 closer to the protein surface and allows P1693 to deeper point in a hydrophobic pocket of the SH3-II domain. Whereas the C-terminal portion of the Aplip1 peptide is folded in a short 310 helix, the N-terminus of the Aplip1 peptide adopts a random coil conformation with hydrophobic interactions to the surface of SH3-II. The Cac-derived peptide bound to SH3-III is fully defined in the electron density. However, the peptide main chain interaction with the SH3 domains is conserved. The side chain orientation of Cac R1687 is again different if bound to SH3-II or SH3-III. In complex with SH3-III, R1687 forms a bidentate hydrogen bond to SH3-III D1463 and E1648. A π-stacking interaction is not possible since Y1372 of SH3-II is replaced by SH3-III L1499. The central PxxP motifs of Aplip1 superimpose well in both structures if bound to SH3-II and SH3-III. Towards its C-terminus, the Aplip1-PxxP1 peptide adopts a slightly different random coil conformation compared to the structure when bound to SH3-II caused by two additional hydrogen bonds from T1692 and K1695 to the SH3-II domain (Table 3).
 
-## The Aplip1-PxxP1 motif is needed for effective axonal RBP/BRP transport
+**Table 1.**
+ Data collection and refinement statistics
 
-Consistent with the idea that Aplip1 is mediating RBP transport, we found axonal aggregates consisting of both RBP and BRP in the
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="4">Data collection</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Structure</td>
+      <td>RBP SH3-II</td>
+      <td>RBP SH3-II</td>
+      <td>RBP SH3-III</td>
+    </tr>
+    <tr>
+      <td>Aplip1</td>
+      <td>Cac</td>
+      <td>Cac</td>
+    </tr>
+    <tr>
+      <td>PDB entry</td>
+      <td>4Z88</td>
+      <td>4Z89</td>
+      <td>4Z8A</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C2</td>
+      <td>P21</td>
+      <td>I222</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.91841</td>
+      <td>0.91841</td>
+      <td>0.91841</td>
+    </tr>
+    <tr>
+      <td colspan="4">Unit cell</td>
+    </tr>
+    <tr>
+      <td>a; b; c (Å)</td>
+      <td>108.3; 62.4; 163.6</td>
+      <td>58.3; 122.2; 68.5</td>
+      <td>52.1; 54.3; 73.6</td>
+    </tr>
+    <tr>
+      <td>α; β; γ (°)</td>
+      <td>90.0; 90.3; 90.0</td>
+      <td>90.0; 113.2; 90.0</td>
+      <td>90.0; 90.0; 90.0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Resolution (Å)*</td>
+      <td>50.00–2.09</td>
+      <td>50.00–2.64</td>
+      <td>50.00–1.75</td>
+    </tr>
+    <tr>
+      <td>(2.19–2.09)</td>
+      <td>(2.74–2.64)</td>
+      <td>(1.86–1.75)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>64,269 (7760)</td>
+      <td>25,229 (2591)</td>
+      <td>10,690 (1579)</td>
+    </tr>
+    <tr>
+      <td>Completeness*</td>
+      <td>98.9 (92.4)</td>
+      <td>96.9 (95.0)</td>
+      <td>98.7 (92.6)</td>
+    </tr>
+    <tr>
+      <td>&lt;I/σ(I)&gt;*</td>
+      <td>7.7 (2.6)</td>
+      <td>8.0 (2.1)</td>
+      <td>14.2 (2.2)</td>
+    </tr>
+    <tr>
+      <td>Rmeas*, †</td>
+      <td>0.127 (0.533)</td>
+      <td>0.157 (0.726)</td>
+      <td>0.127 (0.663)</td>
+    </tr>
+    <tr>
+      <td>CC1/2*</td>
+      <td>99.1 (68.0)</td>
+      <td>98.9 (81.2)</td>
+      <td>99.7 (76.5)</td>
+    </tr>
+    <tr>
+      <td>Redundancy*</td>
+      <td>3.7 (3.7)</td>
+      <td>3.5 (3.2)</td>
+      <td>5.6 (3.1)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Refinement</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>7564</td>
+      <td>6239</td>
+      <td>850</td>
+    </tr>
+    <tr>
+      <td>Rwork*, ‡</td>
+      <td>0.210 (0.314)</td>
+      <td>0.255 (0.367)</td>
+      <td>0.159 (0.233)</td>
+    </tr>
+    <tr>
+      <td>Rfree*, §</td>
+      <td>0.236 (0.396)</td>
+      <td>0.312 (0.490)</td>
+      <td>0.208 (0.332)</td>
+    </tr>
+    <tr>
+      <td>Average B-factor (Å2)</td>
+      <td>40.8</td>
+      <td>52.10</td>
+      <td>18.8</td>
+    </tr>
+    <tr>
+      <td>No. of complexes</td>
+      <td>24</td>
+      <td>10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>6484/41.0</td>
+      <td>663/51.1</td>
+      <td>74/17.6</td>
+    </tr>
+    <tr>
+      <td>Peptide residues</td>
+      <td>861/42.7</td>
+      <td>92/63.6</td>
+      <td>15/15.9</td>
+    </tr>
+    <tr>
+      <td>Buffer molecules</td>
+      <td>11/40.2</td>
+      <td>1/46.3</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Water molecules</td>
+      <td>57/29.6</td>
+      <td>134/30.3</td>
+      <td>110/28.6</td>
+    </tr>
+    <tr>
+      <td colspan="4">r.m.s.d.#</td>
+    </tr>
+    <tr>
+      <td>bond length (Å)</td>
+      <td>0.007</td>
+      <td>0.005</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>bond angles (°)</td>
+      <td>1.224</td>
+      <td>1.140</td>
+      <td>1.210</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>0.1</td>
+      <td>0.56</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favoured (%)</td>
+      <td>98.4</td>
+      <td>98.0</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+_*values in parentheses refer to the highest resolution shell.†Rmeas = Σh [n/(n − 1)]1/2 Σi|Ih − Ih,i|/ΣhΣiIh,i where Ih is the mean intensity of symmetry-equivalent reflections and n is the redundancy.‡Rwork = Σh|Fo − Fc|/ΣFo (working set, no σ cut-off applied).§Rfree is the same as Rwork, but calculated on 5% of the data excluded from refinement.#Root-mean-square deviation (r.m.s.d.) from target geometries.CC, coiled coil._
+
+**Table 2.**
+ Completeness of the model for RBP SH3-II and bound Aplip1 peptide
+
+
+<table>
+  <thead>
+    <tr>
+      <th>RBP SH3-II</th>
+      <th>Range</th>
+      <th>Aplip1</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>chain A</td>
+      <td>1318–1382</td>
+      <td>chain M</td>
+      <td>153–163</td>
+    </tr>
+    <tr>
+      <td>chain B</td>
+      <td>x1318–1382</td>
+      <td>chain N</td>
+      <td>155–159</td>
+    </tr>
+    <tr>
+      <td>chain C</td>
+      <td>x1318–1381</td>
+      <td>chain O</td>
+      <td>154–163</td>
+    </tr>
+    <tr>
+      <td>chain D</td>
+      <td>x1318–1382</td>
+      <td>chain P</td>
+      <td>153–159</td>
+    </tr>
+    <tr>
+      <td>chain E</td>
+      <td>1319–1381</td>
+      <td>chain Q</td>
+      <td>151–163</td>
+    </tr>
+    <tr>
+      <td>chain F</td>
+      <td>x1318–1380</td>
+      <td>chain R</td>
+      <td>153–159</td>
+    </tr>
+    <tr>
+      <td>chain G</td>
+      <td>x1318–1381</td>
+      <td>chain S</td>
+      <td>151–163</td>
+    </tr>
+    <tr>
+      <td>chain H</td>
+      <td>x1318–1382</td>
+      <td>chain T</td>
+      <td>152–156</td>
+    </tr>
+    <tr>
+      <td>chain I</td>
+      <td>x1318–1382</td>
+      <td>chain U</td>
+      <td>152–163</td>
+    </tr>
+    <tr>
+      <td>chain J</td>
+      <td>x1318–1381</td>
+      <td>chain V</td>
+      <td>152–158</td>
+    </tr>
+    <tr>
+      <td>chain K</td>
+      <td>x1318–1381</td>
+      <td>chain W</td>
+      <td>152–163</td>
+    </tr>
+    <tr>
+      <td>chain L</td>
+      <td>x1318–1381</td>
+      <td>chain X</td>
+      <td>152–158</td>
+    </tr>
+  </tbody>
+</table>
+
+_Completeness of the model given for the 12 complexes of RBP SH3-II bound to the Aplip1 peptide 149TRRRRKLPEIPKNKK163. Superscript ‘x’ indicates additional N-terminal residues of RBP SH3-II originating from the linker region between the protease cleavage site and the N-terminus._
+
+**Table 3.**
+ Hydrogen bonding interaction
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Aplip1</th>
+      <th>SH3-II</th>
+      <th>Distance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arg153N</td>
+      <td>Asp1359OD2</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>Arg153NH2</td>
+      <td>Asp1336OD1</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Arg153NH2</td>
+      <td>Asp1336OD2</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <td>Lys154N</td>
+      <td>Asn1334OD1</td>
+      <td>2.9</td>
+    </tr>
+    <tr>
+      <td>Lys154O</td>
+      <td>Asn1334ND2</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Pro156O</td>
+      <td>Asn1376ND2</td>
+      <td>2.8</td>
+    </tr>
+  </tbody>
+</table>
+
+_Hydrogen bonding interaction of RBP SH3-II with Aplip1 and Cac, as well as RBP SH3-III in complex with Cac. Distance ≤3.2 Å are given in Å._
+
+**Table 4.**
+ Completeness of the model for RBP SH3-II and bound Cac peptide
+
+
+<table>
+  <thead>
+    <tr>
+      <th>RBP SH3-II</th>
+      <th>Range</th>
+      <th>Cac</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>chain A</td>
+      <td>1318–1381</td>
+      <td>chain a</td>
+      <td>1686–1697</td>
+    </tr>
+    <tr>
+      <td>chain B</td>
+      <td>x1318–1381</td>
+      <td>chain b</td>
+      <td>1686–1695</td>
+    </tr>
+    <tr>
+      <td>chain C</td>
+      <td>x1318–1382</td>
+      <td>chain c</td>
+      <td>1686–1697</td>
+    </tr>
+    <tr>
+      <td>chain D</td>
+      <td>x1318–1381</td>
+      <td>chain d</td>
+      <td>1686–1697</td>
+    </tr>
+    <tr>
+      <td>chain E</td>
+      <td>1318–1382</td>
+      <td>chain e</td>
+      <td>1685–1694</td>
+    </tr>
+    <tr>
+      <td>chain F</td>
+      <td>x1318–1382</td>
+      <td>chain f</td>
+      <td>1685–1693</td>
+    </tr>
+    <tr>
+      <td>chain G</td>
+      <td>x1318–1382</td>
+      <td>chain g</td>
+      <td>1686–1693</td>
+    </tr>
+    <tr>
+      <td>chain H</td>
+      <td>1318–1381</td>
+      <td>chain h</td>
+      <td>1686–1693</td>
+    </tr>
+    <tr>
+      <td>chain I</td>
+      <td>x1318–1381</td>
+      <td>chain i</td>
+      <td>1686–1693</td>
+    </tr>
+    <tr>
+      <td>chain J</td>
+      <td>x1318–1382</td>
+      <td>chain j</td>
+      <td>1686–1697</td>
+    </tr>
+  </tbody>
+</table>
+
+_Completeness of the model given for the six complexes of RBP SH3-II and the bound Cac peptide 1685IGRRLPPTPSKPSTL1699. Superscript ‘x’ indicates additional N-terminal residues of RBP SH3-II originating from the linker region between the protease cleavage site and the N-terminus._
+
+### The Aplip1-PxxP1 motif is needed for effective axonal RBP/BRP transport
+
+Consistent with the idea that Aplip1 is mediating RBP transport, we found axonal aggregates consisting of both RBP and BRP in the aplip1ek4, as well as the aplip1null allele (Figure 4B,C). This ectopic RBP/BRP accumulation was rescued after introducing a genomic construct of Aplip1 into the aplip1null mutant background (aplip1null, gen. rescue; Figure 4D). Pan-neuronal expression of an Aplip1 cDNA equally rescued the axonal RBP/BRP accumulations (Figure 4I, quantification in K, L). Importantly, however, the expression of an Aplip-AxxA1 cDNA construct (integrated at the same chromosomal integration site as the control construct; expression and axonal presence confirmed with a newly generated Aplip1 Ab; not shown) could no longer rescue the RBP/BRP accumulation phenotype (Figure 4J, quantification in Figure 4K,L). Thus, we conclude that Aplip1 is involved in the transport of RBP/BRP to the AZ, whereby its functionality in this context largely depends on the integrity of its N-terminal PxxP1 motif.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig4-v1.jpg)
 
-**Figure 4.:** (A–D) Nerve bundles of segments A1–A3 from third instar larvae of the genotypes indicated labeled with the Abs indicated. (E, F) Quantification of BRP/RBP spot numbers. BRP spots per µm2: WT (n = 8 nerves): 0.084 ± 0.010; aplip1 (n = 9 nerves): 0.205 ± 0.025; ek4aplip1 (n = 8 nerves): 0.183 ± 0.025; nullaplip1null, gen. rescue (n = 8 nerves): 0.034 ± 0.007; RBP spots per µm2, WT (n = 8 nerves): 0.074 ± 0.007; aplip1 (n = 9 nerves): 0.180 ± 0.019; ek4aplip1 (n = 8 nerves): 0.153 ± 0.037; nullaplip1null, gen. rescue (n = 8 nerves): 0.025 ± 0.006. All panels show mean values and errors bars representing SEM. *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001; ns, not significant, p > 0.05, Mann–Whitney U test. (G–J) Nerve bundles of segment A1–A3 from third instar larvae of the genotypes indicated labeled with the Abs indicated. BRP and RBP co-localized in control animals and accumulated in a co-localizing fashion in axons of aplip1 mutant animals. Re-expression of an Aplip1-WT cDNA construct in the nullaplip1 background rescued the phenotype, while re-expression of an AxxA1 construct did not. (nullK, L) Quantification of the number of BRP/RBP spots per µm2 axon. BRP spots per µm2, control (n = 12 nerves): 0.084 ± 0.010; aplip1 (n = 16 nerves): 0.198 ± 0.022; nullWT rescue (n = 14 nerves): 0.078 ± 0.009; AxxA1 rescue (n = 14 nerves): 0.177 ± 0.012; RBP spots per µm2, control (n = 12 nerves): 0.071 ± 0.013; aplip1 (n = 16 nerves): 0.188 ± 0.026; nullWT rescue (n = 14 nerves): 0.039 ± 0.004; AxxA1 rescue (n = 14 nerves): 0.158 ± 0.015. All panels show mean values and errors bars representing SEM. *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001; ns, not significant, p > 0.05, Mann–Whitney U test. Scale bar: (A–D, G–J) 10 µm.DOI: http://dx.doi.org/10.7554/eLife.06935.018
+**Figure 4.:** (A–D) Nerve bundles of segments A1–A3 from third instar larvae of the genotypes indicated labeled with the Abs indicated. (E, F) Quantification of BRP/RBP spot numbers. BRP spots per µm2: WT (n = 8 nerves): 0.084 ± 0.010; aplip1ek4 (n = 9 nerves): 0.205 ± 0.025; aplip1null (n = 8 nerves): 0.183 ± 0.025; aplip1null, gen. rescue (n = 8 nerves): 0.034 ± 0.007; RBP spots per µm2, WT (n = 8 nerves): 0.074 ± 0.007; aplip1ek4 (n = 9 nerves): 0.180 ± 0.019; aplip1null (n = 8 nerves): 0.153 ± 0.037; aplip1null, gen. rescue (n = 8 nerves): 0.025 ± 0.006. All panels show mean values and errors bars representing SEM. *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001; ns, not significant, p > 0.05, Mann–Whitney U test. (G–J) Nerve bundles of segment A1–A3 from third instar larvae of the genotypes indicated labeled with the Abs indicated. BRP and RBP co-localized in control animals and accumulated in a co-localizing fashion in axons of aplip1null mutant animals. Re-expression of an Aplip1-WT cDNA construct in the aplip1null background rescued the phenotype, while re-expression of an AxxA1 construct did not. (K, L) Quantification of the number of BRP/RBP spots per µm2 axon. BRP spots per µm2, control (n = 12 nerves): 0.084 ± 0.010; aplip1null (n = 16 nerves): 0.198 ± 0.022; WT rescue (n = 14 nerves): 0.078 ± 0.009; AxxA1 rescue (n = 14 nerves): 0.177 ± 0.012; RBP spots per µm2, control (n = 12 nerves): 0.071 ± 0.013; aplip1null (n = 16 nerves): 0.188 ± 0.026; WT rescue (n = 14 nerves): 0.039 ± 0.004; AxxA1 rescue (n = 14 nerves): 0.158 ± 0.015. All panels show mean values and errors bars representing SEM. *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001; ns, not significant, p > 0.05, Mann–Whitney U test. Scale bar: (A–D, G–J) 10 µm.
 
-## Aplip1 promotes BRP transport in absence of RBP
+### Aplip1 promotes BRP transport in absence of RBP
 
-As indicated above, BRP accumulated in the axons of
+As indicated above, BRP accumulated in the axons of aplip1 mutants as well. Thus, BRP could be transported through Aplip1 via binding to RBP, other yet undetected co-transported AZ proteins, or BRP could bind Aplip1 independently of RBP. We therefore created aplip1/rbp and aplip1/brp double mutants to investigate the functional relation of RBP and BRP with regard to Aplip1-dependent transport. While removing BRP in srpk79D mutants also abolished the axonal RBP spots (Figure 5—figure supplement 1D), removing BRP in aplip1 mutants had no apparent effect on axonal RBP accumulations (Figure 5B; control in Figure 5A). On the other hand, genetic elimination of RBP did not interfere with the accumulation of BRP in aplip1 mutant axons (Figure 5E; controls in Figure 5C,D). Thus, BRP transport also ‘suffers’ from the absence of the Aplip1 adaptor when RBP is removed in parallel. Hence, Aplip1 promotes BRP transport even in the absence of RBP. To address a putative molecular basis of this relationship, we performed a Y2H assay to test for direct interaction between five different BRP constructs and a full length Aplip1 construct (see Figure 3B for domain structure). Despite these efforts, robust interactions between Aplip1 and BRP fragments could not be detected (data not shown). Nonetheless, both RBP but also BRP were easily detected in anti-GFP immunoprecipitations (IPs) from a synaptic membrane preparation (Figure 5F; Figure 5—figure supplement 2) derived from Drosophila head extracts of pan-neuronal driven Aplip1-GFP cDNA construct (Depner et al., 2014). Of note, within axons of rbpnull mutant larvae, ectopic BRP accumulations could not be observed (not shown). Thus, we provide evidence for an RBP-independent but Aplip1-dependent transport component for BRP, whose mechanistic details have still to be deciphered. Taken together, our results imply that though BRP and RBP are co-transported in the WT situation, their Aplip1-dependent transport can be genetically uncoupled.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig5-v1.jpg)
 
-**Figure 5.:** (A–E) Nerve bundles of segments A1–A3 from third instar larvae of the genotypes indicated labeled with the Abs indicated. (A) Removing one copy of BRP in aplip1 mutants had no apparent effect on axonal RBP accumulation. (ek4B) RBP still accumulates in brp;anullplip1 double mutants. (ek4C, D) Driver control and removing one copy of RBP in motoneuronal driven Aplip1-RNAi had no apparent effect on axonal BRP accumulation. (E) BRP still accumulates in rbpnull,aplip1 double mutants Scale bar: (A–E) 10 µm. (F) Immunoprecipitation (IP) of Aplip1GFP with anti-GFP Ab from Drosophila active zone (AZ) protein-enriched fraction was followed by Western blot (WB) analysis using anti-BRPLast200 and anti-RBPSH3-II+III. Both BRP and RBP could be detected in Aplip1GFP IPs, but are absent in controls (plain beads; GFP trapped beads). (For whole WBs, see Figure 5—figure supplement 2).DOI: http://dx.doi.org/10.7554/eLife.06935.019
+**Figure 5.:** (A–E) Nerve bundles of segments A1–A3 from third instar larvae of the genotypes indicated labeled with the Abs indicated. (A) Removing one copy of BRP in aplip1ek4 mutants had no apparent effect on axonal RBP accumulation. (B) RBP still accumulates in brpnull;aplip1ek4 double mutants. (C, D) Driver control and removing one copy of RBP in motoneuronal driven Aplip1-RNAi had no apparent effect on axonal BRP accumulation. (E) BRP still accumulates in rbpnull,aplip1 double mutants Scale bar: (A–E) 10 µm. (F) Immunoprecipitation (IP) of Aplip1GFP with anti-GFP Ab from Drosophila active zone (AZ) protein-enriched fraction was followed by Western blot (WB) analysis using anti-BRPLast200 and anti-RBPSH3-II+III. Both BRP and RBP could be detected in Aplip1GFP IPs, but are absent in controls (plain beads; GFP trapped beads). (For whole WBs, see Figure 5—figure supplement 2).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** srpk79D mutant axons is unaffected by removing RBP.(A–F) Nerves of segments A1–A3 from third instar larvae of the genotypes indicated labeled with the Abs indicated. Removing BRP in srpk79D mutants (D) also abolished axonal RBP spots, while removing RBP in srpk79D mutants did not affect BRP accumulations (F).DOI: http://dx.doi.org/10.7554/eLife.06935.020
+**Figure 5—figure supplement 1.:** (A–F) Nerves of segments A1–A3 from third instar larvae of the genotypes indicated labeled with the Abs indicated. Removing BRP in srpk79D mutants (D) also abolished axonal RBP spots, while removing RBP in srpk79D mutants did not affect BRP accumulations (F).
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** GFP with anti-GFP (Full blot).Full blot IP of Aplip1GFP with anti-GFP from Drosophila AZ protein-enriched fraction was followed by WB analysis using anti-BRPLast200 and anti-RBPSH3-II+III Abs.DOI: http://dx.doi.org/10.7554/eLife.06935.021
+**Figure 5—figure supplement 2.:** Full blot IP of Aplip1GFP with anti-GFP from Drosophila AZ protein-enriched fraction was followed by WB analysis using anti-BRPLast200 and anti-RBPSH3-II+III Abs.
 
-## RBP and BRP form ectopic AZs at the axonal plasma membrane of aplip1 mutants
+### RBP and BRP form ectopic AZs at the axonal plasma membrane of aplip1 mutants
 
-The BRP flux in axons of
+The BRP flux in axons of aplip1 mutants was severely diminished, but not completely abolished (Figure 2E). At the same time, AZ localization of both BRP and RBP at synaptic terminals of aplip1 mutants was still observed in both aplip1 alleles (not shown), although slightly reduced (not shown). This indicates that alternative transport mechanisms and adaptors exist which operate in parallel to Aplip1, as the synaptic phenotype is relatively weak. In fact, axonal accumulations of BRP have already been described for Acyl-CoA long-chain Synthetase (Acsl, Liu et al., 2011b) as well as for Unc-51 (Atg1) mutants (Wairkar et al., 2009). In our experiments, we found RBP to invariably co-cluster with BRP in the mutants mentioned (Figure 6B,C; control in Figure 6A), and equally in mutants of the Drosophila ß-amyloid protein precursor-like (Appl; Torroja et al., 1999a, 1999b; Figure 6D) and Unc-76 (Gindhart et al., 2003; Figure 6E). The fact that RBP and BRP tightly co-accumulated in axonal aggregates of all these transport mutants strengthens the probability that BRP is always co-transported with RBP.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig6-v1.jpg)
 
-**Figure 6.:** (A–E) Nerve bundles of segment A1–A3 from third instar larvae of the genotypes indicated labeled with the Abs indicated. BRP and RBP accumulated in a co-localizing manner in axons of WT (A), acsl (B), unc-51 (atg-1; C), appl (D) and unc-76 (E). Scale bar: 10 µm.DOI: http://dx.doi.org/10.7554/eLife.06935.022
+**Figure 6.:** (A–E) Nerve bundles of segment A1–A3 from third instar larvae of the genotypes indicated labeled with the Abs indicated. BRP and RBP accumulated in a co-localizing manner in axons of WT (A), acsl (B), unc-51 (atg-1; C), appl (D) and unc-76 (E). Scale bar: 10 µm.
 
-To gain a deeper insight into the substructure of the BRP/RBP accumulations in
+To gain a deeper insight into the substructure of the BRP/RBP accumulations in aplip1 mutant axons, we again used two-colour STED microscopy. In contrast to the srpk79D aggregates, however, STED images of axonal BRB/RBP accumulations were reminiscent of mature synaptic AZs (Liu et al. 2011a), with BRPC-term signal surrounding the RBP signal, which, in turn, is oriented closer towards the axonal plasma membrane (Figure 7A, arrow head; plasma membrane indicated by dashed line). Interestingly, in contrast to the floating T-bar super-aggregates in srpk79D mutants (Johnson et al., 2009; Nieratschker et al., 2009), these axonal BRP spots in aplip1 mutants were positive for Syd-1 (compare Figures 1C, 7B). Intriguingly, floating T-bars have been observed in synaptic boutons in syd-1 mutants (Owald et al., 2010). Together, this is suggestive of a role of Syd-1 in the membrane-anchoring of AZ proteins.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig7-v1.jpg)
 
-**Figure 7.:** aplip1 mutant axons.(A) Two-colour STED images of axonal aggregates in aplip1 mutants revealed that the structures observed (arrow heads) have identical BRP and RBP arrangement, as recently observed at presynaptic AZs (ek4Liu et al., 2011a). Right panels display magnifications of single axonal AZ. Dashed lines indicate axonal plasma membrane. (B) Two-colour STED images of axonal aggregates in aplip1 mutants revealed that the structures observed (arrow head) have identical BRP and Syd-1 arrangement as observed at immature presynaptic AZs (ek4Owald et al). Right panels display magnifications of single axonal AZ. Dashed lines indicate axonal plasma membrane. (., 2010C) Terminal T-bar (arrow heads) surrounded by SVs (arrows) taken from electron micrographs of WT third instar larvae after conventional embedding. (D) Ectopic axonal T-bar (arrow heads) taken from electron micrographs from aplip1 mutant third instar larvae after conventional embedding. SVs accumulate around the ectopic T-bar (arrows). (ek4E) Magnification of (C). (F) Magnification of (D). (G–J) Nerve bundles of segment A1–A3 from third instar larvae of the genotypes indicated labeled with the Abs indicated. Syt-1 accumulates at a subset of axonal BRP aggregations in aplip1 and nullAxxA1 rescue (H, J) larvae, but not in control and WT rescue larvae (G, I). (K) Quantification of the number of Syt-1 spots per µm2 axon. control (n = 12 nerves): 0.004 ± 0.002; aplip1 (n = 16 nerves): 0.040 ± 0.011; nullWT rescue (n = 13 nerves): 0.014 ± 0.007; AxxA1 rescue (n = 13 nerves): 0.052 ± 0.017. All panels show mean values and errors bars representing SEM. *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001; ns, not significant, p > 0.05, Mann–Whitney U test. Scale bars: (A, B) 500 nm; (C, D) 100 nm; (G, J) 10 µm.DOI: http://dx.doi.org/10.7554/eLife.06935.023
+**Figure 7.:** (A) Two-colour STED images of axonal aggregates in aplip1ek4 mutants revealed that the structures observed (arrow heads) have identical BRP and RBP arrangement, as recently observed at presynaptic AZs (Liu et al., 2011a). Right panels display magnifications of single axonal AZ. Dashed lines indicate axonal plasma membrane. (B) Two-colour STED images of axonal aggregates in aplip1ek4 mutants revealed that the structures observed (arrow head) have identical BRP and Syd-1 arrangement as observed at immature presynaptic AZs (Owald et al., 2010). Right panels display magnifications of single axonal AZ. Dashed lines indicate axonal plasma membrane. (C) Terminal T-bar (arrow heads) surrounded by SVs (arrows) taken from electron micrographs of WT third instar larvae after conventional embedding. (D) Ectopic axonal T-bar (arrow heads) taken from electron micrographs from aplip1ek4 mutant third instar larvae after conventional embedding. SVs accumulate around the ectopic T-bar (arrows). (E) Magnification of (C). (F) Magnification of (D). (G–J) Nerve bundles of segment A1–A3 from third instar larvae of the genotypes indicated labeled with the Abs indicated. Syt-1 accumulates at a subset of axonal BRP aggregations in aplip1null and AxxA1 rescue (H, J) larvae, but not in control and WT rescue larvae (G, I). (K) Quantification of the number of Syt-1 spots per µm2 axon. control (n = 12 nerves): 0.004 ± 0.002; aplip1null (n = 16 nerves): 0.040 ± 0.011; WT rescue (n = 13 nerves): 0.014 ± 0.007; AxxA1 rescue (n = 13 nerves): 0.052 ± 0.017. All panels show mean values and errors bars representing SEM. *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001; ns, not significant, p > 0.05, Mann–Whitney U test. Scale bars: (A, B) 500 nm; (C, D) 100 nm; (G, J) 10 µm.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/06935/elife-06935-fig7-figsupp1-v1.jpg)
 
-**Figure 7—figure supplement 1.:** (A, B) Two-colour STED images of axonal aggregates in ctrl and Ok6::UAS-Imac-RNAi revealed that BRP and RBP co-accumulate in both genotypes but, in contrast to aplip1 mutants, show no preference concerning orientation towards the axonal plasma membrane (arrow heads). (C) Two-colour STED images of axonal aggregates in Ok6::UAS-KHC-RNAi revealed that the BRP-RBP accumulations observed in this genotype mostly show irregular shapes (arrow heads) with diverse orientations in the axon. (D) The only ectopic axonal electron dense formation (arrow head) found in electron micrographs in Ok6::UAS-KHC-RNAi third instar larvae after conventional embedding. (E, F) Magnification of (D). SVs (arrows) accumulate around the ectopic electron-dense structure (arrow head) but are also accumulating all along the axon. Scale bars: (A–C) 1.5 µm; (D) 200 nm; (E) 100 nm; (F) 50 nm.DOI: http://dx.doi.org/10.7554/eLife.06935.024
+**Figure 7—figure supplement 1.:** (A, B) Two-colour STED images of axonal aggregates in ctrl and Ok6::UAS-Imac-RNAi revealed that BRP and RBP co-accumulate in both genotypes but, in contrast to aplip1 mutants, show no preference concerning orientation towards the axonal plasma membrane (arrow heads). (C) Two-colour STED images of axonal aggregates in Ok6::UAS-KHC-RNAi revealed that the BRP-RBP accumulations observed in this genotype mostly show irregular shapes (arrow heads) with diverse orientations in the axon. (D) The only ectopic axonal electron dense formation (arrow head) found in electron micrographs in Ok6::UAS-KHC-RNAi third instar larvae after conventional embedding. (E, F) Magnification of (D). SVs (arrows) accumulate around the ectopic electron-dense structure (arrow head) but are also accumulating all along the axon. Scale bars: (A–C) 1.5 µm; (D) 200 nm; (E) 100 nm; (F) 50 nm.
 
 Furthermore, we asked whether BRP/RBP aggregates identified in aplip1 mutants represent ectopic AZs forming at the axonal plasma membrane. In fact, EM analysis easily revealed T-bar structures, typical for synaptic terminals (Figure 7C, arrow heads, magnification in E), at axonal plasma membranes of aplip1 mutants (Figure 7D, arrow heads, magnification in F), but never in controls (not shown). We found these ectopic axonal T-bars surrounded by SV profiles (Figure 7D, arrows), very similar to ‘normally positioned’ T-bars at the presynaptic terminal (Figure 7C, arrows). Consistently, the SV marker Synaptotagmin-1 (Syt-1) was found to be associated with BRP/RBP accumulations in aplip1null mutants (Figure 7H, quantification in Figure 7K). This phenotype could be rescued by the expression of an Aplip1 WT cDNA construct (Figure 7I, quantification in Figure 7K) but not by the expression of the Aplip1-AxxA1 construct (Figure 7J; quantification in Figure 7K). Thus, a point-like interaction surface of Aplip1 which binds RBP with high affinity is important to block a whole sequence of assembly events at the axonal plasma membrane, including AZ scaffold (‘T-bar’) formation and the accumulation of SVs.
 
@@ -170,17 +589,17 @@ Several mechanisms for motor/cargo separation such as (i) conformational changes
 
 ## Materials and methods
 
-## Genetics
+### Genetics
 
 Fly strains were reared under standard laboratory conditions (Sigrist et al., 2003) on semi-defined medium (Bloomington recipe). For all experiments both male and female larvae were used for analysis. The following genotypes were used: WT: +/+ (w1118). srpk79D: srpk79Datc/srpk79Datc (unless otherwise noted). srpk79Dvn: srpk79Dvn/srpk79Dvn. srpk79Datc: srpk79Datc/srpk79Datc. brpDf/+;srpk79D: Df(2R)BSC29/+; srpk79Datc/srpk79Datc. brpnull/brpDf; srpk79D: brp69/Df(2R)BSC29; srpk79Datc/srpk79Datc. rbpDf/+;srpk79D: Df(3R)S2.01/+; srpk79Datc/srpk79Datc. rbpnull/rbpDf; srpk79D: rbpSTOP1/Df(3R)S201; srpk79Datc/srpk79Datc. aplip1ek4: aplip1ek4/aplip1ek4. aplip1null: aplip1ex213/aplip1ex213. aplip1, gen.rescue: aplip1gen.rescue(ex213)/aplip1gen.rescue(ex213). Aplip1 cDNA rescue: control: elav/+;;aplip1ex213/+. aplip1null: elav/+;;aplip1ex213/aplip1ex213. WT rescue: elav/+;UAS-Aplip1-WT/+;aplip1ex213/aplip1ex213. AxxA1 rescue: elav/+;UAS-Aplip1-AxxA1/+;aplip1ex213/aplip1ex213. brpDf/+;aplip1ek4: Df(2R)BSC29/+; aplip1ek4/aplip1ek4. brpnull/brpDf;aplip1ek4: brp69/Df(2R)BSC29; aplip1ek4/aplip1ek4. Ok6>+: OK6-Gal4/+. OK6>Aplip1-RNAi;rbpDf/+: OK6-Gal4/UAS-aplip1-RNAi;Df(3R)S2.01/+. OK6>Aplip1-RNAi;rbpnull/Df: OK6-Gal4/UAS-aplip1-RNAi; rbpSTOP1/Df(3R)S201. acsl: acsl05847/acsl1. unc51 (atg-1): atg1ey07351/Df(3L)BSC10. appl: applBG0264/appl Df(1)yT7-518. unc-76: unc-76G0158/y. Aplip1GFP,BRP-shortstraw: OK6-Gal4/UAS-BRP-shortstraw;UAS-Aplip1GFP/+. Aplip1GFP,RBPcherry: OK6-Gal4/OK6-Gal4;UAS-Aplip1GFP/UAS-Aplip1GFP were crossed to upstream activator sequence (UAS)-RBPcherry/UAS-RBPcherry. BRPGFP,RBPcherry: OK6-Gal4/OK6-Gal4;genomicBRPGFP/genomicBRPGFP were crossed to UAS-RBPcherry/UAS-RBPcherry. Live imaging BRP-shortstraw in aplip1 mutant backgrounds (Figure 2E): ctrl: OK6-Gal4/UAS-BRP-shortstraw.aplip1ek4: OK6-Gal4/UAS-BRP-shortstraw;aplip1ek4/aplip1ek4. aplip1null: OK6-Gal4/UAS-BRP-shortstraw;aplip1ex213/aplip1ex213. aplip1gen.rescue: OK6-Gal4/UAS-BRP-shortstraw;aplip1gen.rescue(ex213)/aplip1gen.rescue(ex213). Ok6/+;UAS-KHC-RNAi. Ok6/+;UAS-Imac-RNAi.
 
 Stocks were obtained from: brp69 (Kittel et al., 2006), Df(3R)S2.01 and rbpSTOP1 (Liu et al., 2011a), aplip1ex213 and aplip1gen.rescue(ex213) gift from Catherine Collins (Klinedinst et al., 2013), srpk79Datc (Johnson et al., 2009), srpk79Dvn (Nieratschker et al., 2009), UAS-Aplip1GFP (Horiuchi et al., 2005), UAS-BRP-shortstraw (Schmid et al., 2008) and genomic BRPGFP (Matkovic et al., 2013). The aplip1ek4, Df(2R)BSC29, acsl05847, acsl1, atg1ey07351, applBG0264, appl Df(1)yT7-518, Df(3L)BSC10, unc-76G0158 lines were provided by the Bloomington Drosophila Stock Center. UAS-Aplip1-RNAi, UAS-Imac-RNAi and UAS-KHC-RNAi from VDRC.
 
-## Generation of RBPcherry cDNA construct
+### Generation of RBPcherry cDNA construct
 
 RBP cDNA was assembled based on exon annotation sequence of RBP-PF isoform from flybase. cDNA clones, AT04807; RH38268 and a gene synthesis fragment from MWG eurofins GMBH, Germany, containing 1–1131 bp of RBP-PF isoform were used to assemble the cDNA. All the fragments were cloned into a modified pENTR4 cloning vector described in Fouquet et al. (2009). The final pENTR4 construct contains 5499 bp RBP cDNA was recombined with pTW-Cherry gateway Drosophila transgenic vector. Transgenic flies were generated at Bestgene Inc., CA, USA and insertion was confirmed by genotyping.
 
-## Generation of Aplip-WT1 and Aplip1-AxxA1 construct
+### Generation of Aplip-WT1 and Aplip1-AxxA1 construct
 
 To generate the cDNA of Aplip1 (with WT or mutated first PXXP motif), the full length cDNA clone of Aplip1 was kindly obtained from HYBRIGENICS Services, France and used as a template for cloning full length Aplip1 into pENTR/D-Topo (Invitrogen, Germany) using the following primers:
 
@@ -194,7 +613,7 @@ Forward 5′ CGTCGTCGCAAGTTGGCGGAAATAGCGAAAAACAAGAAATCT 3′
 
 Reverse 5′ AGATTTCTTGTTTTTCGCTATTTCCGCCAACTTGCGACGACG 3′
 
-## Generation of peptides for crystallography
+### Generation of peptides for crystallography
 
 For crystallography constructs comprising either the RBP SH3-II (residue 1318–1382) or SH3-III (residue 1441–1507) domain of RBP were amplified by PCR and cloned into the pGEX-6P1 vector using EcoRI and XhoI restriction sites.
 
@@ -210,7 +629,7 @@ SH3III_rev 5′-TACTCGAGTCAGTCCGCCAGGAAGTTAGA-3′
 
 The resulting constructs comprise an N-terminal GST-tag that is followed by a PreScission cleavage site and the respective SH3 domain. Correctness of the DNA sequences was confirmed by DNA sequencing.
 
-## Yeast two-Hybrid
+### Yeast two-Hybrid
 
 The Yeast two-Hybrid screen for RBP interaction partners was carried out in collaboration with HYBRIGENICS Services, France using the LexA system (pB27 with bait; pP6 vector with prey) against the HYBRIGENICS Drosophila melanogaster head (adult) library. The vector maps of the bait and prey vectors are confidential (protected under material transfer agreement).
 
@@ -222,45 +641,45 @@ The RBP constructs for Y2H were cloned into pB27 bait vector. The RBP cDNA clone
 
 5′-TAACTAGTTCAGTCGGGCGCGTCCGCCAGGA-3′
 
-## Protein sequence of the bait fragment
+#### Protein sequence of the bait fragment
 
-## RBP SH3-II+III (length: 209 AA; Orientation C-term free [N-LexA-bait-C])
+##### RBP SH3-II+III (length: 209 AA; Orientation C-term free [N-LexA-bait-C])
 
 GQPGQPGQMPGAQKKPRYFVAMFDYDPSTMSPNPDGCDEELPFQEGDTIKVFGDKDADGFYWGELRGRRGYVPHNMVSEVEDTTASMTAGGQMPGQMPGQMGQGQGVGVGGTAQVMPGQGAPQQSMRNVSRDRWGDIYANMPVKRMIALYDYDPQELSPNVDAEQVELCFKTGEIILVYGDMDEDGFYMGELDGVRGLVPSNFLADAPD
 
-## Liquid Y2H ß-Galactosidase assay
+### Liquid Y2H ß-Galactosidase assay
 
 The assay was carried out as described in JH Miller ‘Experiments in Molecular Genetics’ 1972 Cold Spring Harbor Laboratories pages 352–355.
 
 The RBP constructs for Y2H were cloned into pB27 bait vector. The RBP cDNA clone AT04807 (Drosophila Genomics Resource Centre) was used as a template for PCR reaction. For amplification the following primers were used:
 
-## RBP SH3-II
+#### RBP SH3-II
 
 5′-CAGAATTCGGTCAACCGGGACAACCGGGG-3′
 
 5′-TAACTAGTTCAGTCCTCCACCTCGGAGACC-3′
 
-## Giving rise to the following sequence
+##### Giving rise to the following sequence
 
 PGQPGQPGQMPGAQKKPRYFVAMFDYDPSTMSPNPDGCDEELPFQEGDTIKVFGDKDADGFYWGELRGRRGYVPHNMVSEVED
 
-## RBP SH3-III
+#### RBP SH3-III
 
 5′-CAGAATTCATGCCCGTGAAGCGAATG-3′
 
 5′-TAACTAGTTCAGTCGGGCGCGTCCGCCAGGA-3′
 
-## Giving rise to the following sequence
+##### Giving rise to the following sequence
 
 MPVKRMIALYDYDPQELSPNVDAEQVELCFKTGEIILVYGDMDEDGFYMGELDGVRGLVPSNFLADAPD
 
-## RBP SH3-II+III
+#### RBP SH3-II+III
 
 5′-CAGAATTCGGTCAACCGGGACAACCGGGG-3′
 
 5′-TAACTAGTTCAGTCGGGCGCGTCCGCCAGGA-3′
 
-## Giving rise to the following sequence
+##### Giving rise to the following sequence
 
 GQPGQPGQMPGAQKKPRYFVAMFDYDPSTMSPNPDGCDEELPFQEGDTIKVFGDKDADGFYWGELRGRRGYVPHNMVSEVEDTTASMTAGGQMPGQMPGQMGQGQGVGVGGTAQVMPGQGAPQQSMRNVSRDRWGDIYANMPVKRMIALYDYDPQELSPNVDAEQVELCFKTGEIILVYGDMDEDGFYMGELDGVRGLVPSNFLADAPD
 
@@ -268,25 +687,25 @@ By applying the site-directed mutagenesis strategy, different constructs were de
 
 RBP SH3-II*: Prolin1373 → Leucin
 
-## Giving rise to the following sequence
+##### Giving rise to the following sequence
 
 PGQPGQPGQMPGAQKKPRYFVAMFDYDPSTMSPNPDGCDEELPFQEGDTIKVFGDKDADGFYWGELRGRRGYVLHNMVSEVED
 
 RBP SH3-III*: Prolin1500 → Leucin
 
-## Giving rise to the following sequence
+##### Giving rise to the following sequence
 
 MPVKRMIALYDYDPQELSPNVDAEQVELCFKTGEIILVYGDMDEDGFYMGELDGVRGLVLSNFLADAPD
 
-## The Aplip1 prey fragment only containing the first PXXP was generated from the full length fragment via PCR using the primers
+#### The Aplip1 prey fragment only containing the first PXXP was generated from the full length fragment via PCR using the primers
 
 Aplip first PXXP FW 5′-CGTACTCCATGGCTGAGGACGATGAGCTGGGCGA-3′
 
 Aplip first PXXP REV 5′-CTGACTACTAGTTGGAGTCCTCGTCCATCAAGTA-3′
 
-## Giving rise to the following sequence
+##### Giving rise to the following sequence
 
-## Aplip1-PXXP1 (length: 139 AA)
+###### Aplip1-PXXP1 (length: 139 AA)
 
 EDDELGDGLKVTLSSDGSLDTNDSFNSHRHHPLNHQDAIGGFLGMDTSGLGGNSAPVTIGASTDLLAPNTAATRRRRKLPEIPKNKKSSILHLLGGSNFGSLADEFRNGGGGGIPPAVRSGQQRSFLSLKCGYLMDEDS
 
@@ -296,9 +715,9 @@ Aplip second PXXP FW 5′-CGTACTCCATGGCTCTTCTAGGTGGCTCCAACTT-3′
 
 Aplip second PXXP REV 5′-CTGACTACTAGTTCTGGCCAAAGGGCACGC-3′
 
-## Giving rise to the following sequence
+##### Giving rise to the following sequence
 
-## Aplip1-PXXP2 (length: 100 AA)
+###### Aplip1-PXXP2 (length: 100 AA)
 
 LLGGSNFGSLADEFRNGGGGGIPPAVRSGQQRSFLSLKCGYLMDEDSSPDSERMQSLGDVDSGHSTAHSPNDFKSMSPQITSPVSQSPFPPPFGGVPFGQ
 
@@ -308,9 +727,9 @@ Forward 5′ CGTCGTCGCAAGTTGGCGGAAATAGCGAAAAACAAGAAATCT 3′
 
 Reverse 5′ AGATTTCTTGTTTTTCGCTATTTCCGCCAACTTGCGACGACG 3′
 
-## Giving rise to the following peptide sequence
+##### Giving rise to the following peptide sequence
 
-## Aplip1-AXXA1 (length: 139 AA)
+###### Aplip1-AXXA1 (length: 139 AA)
 
 EDDELGDGLKVTLSSDGSLDTNDSFNSHRHHPLNHQDAIGGFLGMDTSGLGGNSAPVTIGASTDLLAPNTAATRRRRKLAEIAKNKKSSILHLLGGSNFGSLADEFRNGGGGGIPPAVRSGQQRSFLSLKCGYLMDEDS
 
@@ -322,9 +741,9 @@ Forward 5′ CAGCGGCCGCTCCAGTAACTAGCTCTGG 3′
 
 Reverse 5′ TAACTAGTTTATATGTGCCGCTGGTAGTC 3′
 
-## Giving rise to the following peptide sequence
+##### Giving rise to the following peptide sequence
 
-## BRP-D1 (length: 359 AA)
+###### BRP-D1 (length: 359 AA)
 
 PVTSSGVRSPGRVRRLQELPTVDRSPSRDYGAPRGSPLAMGSPYYRDMDEPTSPAGAGHHRSRSASRPPMAHAMDYPRTRYQSLDRGGLVDPHDREFIPIREPRDRSRDRSLERGLYLEDELYGRSARQSPSAMGGYNTGMGPTSDRAYLGDLQHQNTDLQRELGNLKRELELTNQKLGSSMHSIKTFWSPELKKERAPRKEESAKYSLINDQLKLLSTENQKQAMLVRQLEEELRLRMRQPNLEMRQQMEAIYAENDHLQREISILRETVKDLECRVETQKQTLIARDESIKKLLEMLQAKGMGKEEERQMFQQMQAMAQKQLDEFRLEIQRRDQEILAMAAKMKTLEEQHQDYQRHI
 
@@ -332,9 +751,9 @@ Forward 5′ CAGCGGCCGCGATGTTCCAGCAGATGC 3′
 
 Reverse 5′ TAACTAGTTTACTGTGTGACTCTCAGCTCGGC 3′
 
-## Giving rise to the following peptide sequence
+##### Giving rise to the following peptide sequence
 
-## BRP-D2 (length: 339 AA)
+###### BRP-D2 (length: 339 AA)
 
 MFQQMQAMAQKQLDEFRLEIQRRDQEILAMAAKMKTLEEQHQDYQRHIAVLKESLCAKEEHYNMLQTDVEEMRARLEEKNRLIEKKTQGTLQTVQERNRLTSELTELKDHMDIKDRKISVLQRKIENLEDLLKEKDNQVDMARARLSAMQAHHSSSEGALTSLEEAIGDKEKQMAQLRDQRDRAEHEKQEERDLHEREVADYKIKLRAAESEVEKLQTRPERAVTERERLEIKLEASQSELGKSKAELEKATCEMGRSSADWESTKQRTARLELENERLKHDLERSQNVQKLMFETGKISTTFGRTTMTTSQELDRAQERADKASAELRRTQAELRVTQ
 
@@ -342,9 +761,9 @@ Forward 5′ CAGAATTCGAGCGGGCCGACAAGGC 3′
 
 Reverse 5′ TAACTAGTTCACATTTGCGCCTTCTC 3′
 
-## Giving rise to the following peptide sequence
+##### Giving rise to the following peptide sequence
 
-## BRP-D3 (length: 636 AA)
+###### BRP-D3 (length: 636 AA)
 
 ERADKASAELRRTQAELRVTQSDAERAREEAAALQEKLEKSQGEVYRLKAKLENAQGEQESLRQELEKAQSGVSRIHADRDRAFSEVEKIKEEMERTQATLGKSQLQHEKLQNSLDKAQNEVDHLQDKLDKACTENRRLVLEKEKLTYDYDNLQSQLDKALGQAARMQKERETLSLDTDRIREKLEKTQVQLGRIQKERDQFSDELETLKERSESAQTLLMKAARDREAMQTDLEVLKERYEKSHAIQQKLQMERDDAVTEVEILKEKLDKALYASQKLIDEKDTSNKEFEKMLEKYDRAQNEIYRLQSRCDTAEADRARLEVEAERSGLAASKAREDLRKLQDESTRLQEACDRAALQLSRAKECEDNARSELEHSRDRFDKLQTDIRRAQGEKEHFQSELERVTYELERAHAAQTKASASVEAAKEEAAHYAVELEKMRDRYEKSQVELRKLQDTDTFGRETRRLKEENERLREKLDKTLMELETIRGKSQYESESFEKYKDKYEKIEMEVQNMESKLHETSLQLELSKGEVAKMLANQEKQRSELERAHIEREKARDKHEKLLKEVDRLRLQQSSVSPGDPVRASTSSSSALSAGERQEIDRLRDRLEKALQSRDATELEAGRLAKELEKAQM
 
@@ -352,9 +771,9 @@ Forward 5′ CAGCGGCCGCCCTGCAACAGTCCTCGG 3′
 
 Reverse 5′ TAACTAGTTTACAACTCTGTGACCAG 3′
 
-## Giving rise to the following peptide sequence
+##### Giving rise to the following peptide sequence
 
-## BRP-D4 N-term (length: 348 AA)
+###### BRP-D4 N-term (length: 348 AA)
 
 LQQSSVSPGDPVRASTSSSSALSAGERQEIDRLRDRLEKALQSRDATELEAGRLAKELEKAQMHLAKQQENTESTRIEFERMGAELGRLHDRLEKAEAEREALRQANRSGGAGAAPHPQLEKHVQKLESDVKQLAMEREQLVLQLEKSQEILMNFQKELQNAEAELQKTREENRKLRNGHQVPPVAAPPAGPSPAEFQAMQKEIQTLQQKLQESERALQAAGPQQAQAAAAAGASREEIEQWRKVIEQEKSRADMADKAAQEMHKRIQLMDQHIKDQHAQMQKMQQQMQQQQQAAQQAVQQAAQQQQSAAGAGGADPKELEKVRGELQAACTERDRFQQQLELLVTEL
 
@@ -362,29 +781,29 @@ Forward 5′ CAGAATTCAAGAGCAAGATGTCCAAC 3′
 
 Reverse 5′ TAACTAGTTTAGAAAAAGCTCTTCAA 3′
 
-## Giving rise to the following peptide sequence
+##### Giving rise to the following peptide sequence
 
-## BRP-D4 C-term (length: 227 AA)
+###### BRP-D4 C-term (length: 227 AA)
 
 SKMSNQEQAKQLQTAQQQVQQLQQQVQQLQQQMQQLQQAASAGAGATDVQRQQLEQQQKQLEEVRKQIDNQAKATEGERKIIDEQRKQIDAKRKDIEEKEKKMAEFDVQLRKRKEQMDQLEKSLQTQGGGAAAAGELNKKLMDTQRQLEACVKELQNTKEEHKKAATETERLLQLVQMSQEEQNAKEKTIMDLQQALKIAQAKVKQAQTQQQQQQDAGPAGFLKSFF
 
-## IP
+### IP
 
 IP of elav-Gal4/+;UAS-Aplip1GFP/+ was performed as described in Depner et al. (2014). In brief, the experiment was performed as following, 500 µl adult fly heads were mechanically homogenized in 500 µl lysis buffer (50 mM Tris pH 8.0, 150 mM KCl, 1 mM MgCl2, 1 mM EGTA, 10% glycerol containing protease inhibitor cocktail [Roche, Germany]). 0.4% Sodium deoxycholate was added, and the lysate was incubated on ice for 30 min. The lysate was diluted 1:1 with sodiumdeocycholat-free lysis buffer, then 1% Triton X-100 was added and lysate was kept on the wheel at 4°C for 30 min. After centrifugation for 15 min at 16,000×g, the supernatant was used in IPs with GFP-Trap-A beads and blocked agarose beads as binding control (Chromotek, Germany). After incubation overnight at 4°C, beads were washed in buffer without detergent and glycerol. Proteins were eluted from the beads with SDS sample buffer. Afterward, the SDS-PAGE samples were subjected to Western blot (WB).
 
-## SDS-PAGE and Tris-Acetate gel electrophoresis
+### SDS-PAGE and Tris-Acetate gel electrophoresis
 
 The gel electrophoresis for both SDS-PAGE and Tris-acetate gels was conducted according to the standard protocols (Laemmli, 1970; Schägger, 2006). Colloidal Coomassie blue stain was used to detect proteins based on manufacture protocol (Carl‐Roth, Germany and Invitrogen). For BRP, RBP and Aplip1, standard SDS-PAGE gels (6–12%) were used to separate the target protein.
 
-## WB analysis
+### WB analysis
 
 Following the separation by gel electrophoresis, the proteins were transferred into a nitrocellulose membrane by wet transfer procedure using cold transfer buffer (25 mM Tris, pH 8.0, 150 mM glycine, 20% methanol). For visualization of proteins, the membrane was stained using Ponceau-S staining solution (Sigma–Aldrich, MO, USA). 5% milk powder in phosphate buffered saline (PBS) was used for blocking of the membrane. Following the blocking, the membrane was incubated with the primary Abs guinea pig BRPLast200 (1:5000, Ullrich et al., in submission) and rabbit RBPSH3-II+III (1:1000, Depner et al., 2014) at 4°C for overnight. After several washing steps, the membrane was incubated with horseradish peroxidase (HRP) conjugated secondary Abs (Dianova, Germany). For detection, an enhanced chemoluminescence substrate (GE Healthcare, United Kingdom) was used and the X-ray film (GE Healthcare) development was carried manually.
 
-## Immunostaining
+### Immunostaining
 
 Larval filets were dissected and stained as described previously (Owald et al., 2010). The following primary Abs were used: rabbit BRPN-term (1:500; Qin et al., 2005); rabbit Liprin-α (1:500; Fouquet et al., 2009); rabbit Syd-1 (1:500; Owald et al., 2010); rabbit Rab3 (1:500; Graf et al., 2009); rabbit RBPC-term, rabbit RBPSH3-II+III (1:500; Depner et al., 2014); rabbit Syt1-CL1 (1:1000; gift from N Reist [Mackler et al., 2002], Colorado State University, CO, USA); mouse GFP (3E6) (1:500, Life Technologies, Germany), mouse Nc82 = anti-BRPC-term (1:100, Developmental Studies Hybridoma Bank, University of Iowa, Iowa City, IA, USA). Except for staining against CacGFP, where larvae were fixed for 5 min with ice-cold methanol, all fixations were performed for 10 min with 4% paraformaldehyde in 0.1 mM PBS. Secondary Abs for standard immunostainings were used in the following concentrations: goat anti-HRP-Cy5 (1:250, Jackson ImmunoResearch, PA, USA); goat anti-rabbit Cy3 (1:500, Life Technologies); goat anti-mouse Alexa-Fluor-488 (1:500, Life Technologies). Larvae were mounted in vectashield (Vector labs, United Kingdom). Secondary Abs for STED were used in the following concentrations: For Figures 1H, 7A: goat anti-mouse Atto594 (1:250); goat anti-rabbit Atto594 (1:250); goat anti-mouse Atto647N (1:100), goat anti-rabbit Atto647N (1:100) (ATTO-TEC, Germany). For Figure 7B: goat anti-mouse Atto590 (1:100); goat anti-rabbit star635 1:100 (Atto590 [ATTO-TEC] and star635 [Abberior, Germany]) coupled to respective IgGs (Dianova, Germany). For Figure 7—figure supplement 1A–C: goat anti-mouse Alexa-Fluor-488 (1:500, Life Technologies) and goat anti-rabbit Alexa-Fluor-532 (1:500, Life Technologies) was used. For STED imaging larvae were mounted in Mowiol (Max-Planck Institut for Biophysical Chemistry, Group of Stefan Hell) or Prolong Gold antifade reagent (Life Technologies; Figure 7—figure supplement 1A–C).
 
-## Image acquisition, processing and analysis
+### Image acquisition, processing and analysis
 
 Confocal microscopy was performed with a Leica TCS SP5 (all except for Figure 4G–J and Figure 7G–J) or a Leica SP8 (Figure 4G–J and Figure 7G–J) confocal microscope (Leica Microsystems, Germany). STED microscopy was performed with a custom-built STED-microscope (see below). Images of fixed and live samples were acquired at room temperature. Confocal imaging of axons was done using a z step of 0.25 μm. The following objective was used: 63× 1.4 NA oil immersion for NMJ confocal imaging. All confocal images were acquired using the LCS AF software (Leica, Germany). Images from fixed samples were taken from third instar larval nerve bundles (segments A1–A3). Images for figures were processed with ImageJ software to enhance brightness using the brightness/contrast function. If necessary images were smoothened (0.5–1 pixel Sigma radius) using the Gaussian blur function.
 
@@ -392,33 +811,33 @@ Quantifications of axonal spot number and size were performed following an adjus
 
 Data were analyzed using the Mann–Whitney U test for linear independent data groups. Means are annotated ±SEM. Asterisks are used to denote significance: *p < 0.05; **p < 0.01; ***p < 0.001; n.s. (not significant), p > 0.05.
 
-## STED microscopy
+### STED microscopy
 
 For Figures 1H, 7A two-colour STED images were recorded with a custom-built STED microscope which combines two pairs of excitation and STED laser beams all derived from a single supercontinuum laser source (Bückers et al., 2011). For Figure 7B STED microscopy was performed as previously described in Li et al. (2014). Here, two-colour STED images were recorded on a custom-built STED-microscope (Göttfert et al., 2013), which combines two pairs of excitation laser beams of 595 nm and 640 nm wavelength with one STED fiber laser beam at 775 nm. All STED images were acquired using Imspector Software (Max Planck Innovation GmbH). STED images were processed using a linear deconvolution function integrated into Imspector Software (Max Planck Innovation GmbH, Germany). Regularization parameters ranged from 1e−09 to 1e−10. The point spread function (PSF) for deconvolution was generated by using a 2D Lorentz function with its half-width and half-length fitted to the half-width and half-length of each individual image. For Figure 7—figure supplement 1, STED microscopy was performed with a Leica TCS SP5 time gated STED microscope equipped with a 100× 1.4 NA objective using the LCS AF software (Leica) for image acquisition. Alexa-Fluor-488 and Alexa-Fluor-532 were excited using a pulsed white light laser at 488 and 545 nm, respectively. STED was achieved with a continous STED laser at 592 nm. In gSTED mode time gated detection started at 1.2 ns–6 ns for Alexa488 while for Alexa532 gating time was set to 2.3 ns–6 ns. Raw gSTED images were deconvolved using the built-in algorithm of the LAS AF software (Signal intensity; regularisation parameter 0.05). The PSF was generated using a 2D Lorentz function with the full-width half maximum set to 60 nm. Images for figures were processed with ImageJ software to remove obvious background, enhance brightness/contrast and smoothened (1 pixel Sigma radius) using the Gaussian blur function.
 
-## Live imaging and analysis
+### Live imaging and analysis
 
 Live imaging was performed as previously described (Füger et al., 2007). Briefly, third instar larvae were put into a live imaging chamber and anaesthetized with 10–20 short pulses of a desflurane-air mixture until the heartbeat completely stopped. For assessing axonal transport, axons immediately after exiting the ventral nerve cord were imaged for 10 min using timelapse confocal microscopy. The flux was determined by manually counting the number of moving spots (unidirectional for >3 frames) passing a virtual line in the middle of the nerve bundle. Mean flux was calculated by pooling results from at least three independent larvae and at least six nerves. If little or no flux was observed, additional nerves were imaged to avoid any bias from selecting specific nerves.
 
-## ITC
+### ITC
 
 ITC experiments were performed at 25°C on an iTC200 microcalorimeter (Malvern Instruments Ltd., United Kingdom). The same peptides were employed as used for the co-crystallization experiments (see below). Lyophilized peptides were resuspended in the final buffer of the proteins (10 mM Tris-HCl pH 7.4, 100 mM NaCl). RBP SH3-II and SH3-III were both provided at a concentration of 150 µM, RBP SH3-II+III was provided at 78 µM. The proteins were titrated with 16 injections of 2.5 µl of either Aplip1, Cac, RIM1 or RIM2 peptide at a concentration of 2 mM with 2-min intervals. The released heat was obtained by integrating the calorimetric output curves. Binding parameters were calculated using the Origin5 software using the ‘One Set of Sites’ curve fitting model provided by the software.
 
-## The following peptides were used
+#### The following peptides were used
 
-## RBP SH3-I
+##### RBP SH3-I
 
 RFPYDPPEEAEGELSLCAGDYLLVWTSGEPQGGYLDAELLDGRRGLVPASFVQRLVG
 
-## RBP SH3-II
+##### RBP SH3-II
 
 RYFVAMFDYDPSTMSPNPDGCDEELPFQEGDTIKVFGDKDADGFYWGELRGRRGYVPHNMVSEVE
 
-## RBP SH3-III
+##### RBP SH3-III
 
 KRMIALYDYDPQELSPNVDAEQVELCFKTGEIILVYGDMDEDGFYMGELDGVRGLVPSNFLAD
 
-## RBP SH3-II+III
+##### RBP SH3-II+III
 
 RYFVAMFDYDPSTMSPNPDGCDEELPFQEGDTIKVFGDKDADGFYWGELRGRRGYVPHNMVSEVEDTTASMTAGGQMPGQMPGQMGQGQGVGVGGTAQVMPGQGAPQHSMRNVSRDRWGDIYANMPVKRMIALYDYDPQELSPNVDAEQVELCFKTGEIILVYGDMDEDGFYMGELDGVRGLVPSNFLAD
 
@@ -430,26 +849,26 @@ RIM1: GRQLPQVPVRSG
 
 RIM2: GRQLPQLPPKGT
 
-## Protein expression and purification for crystallization
+### Protein expression and purification for crystallization
 
 Protein expression was conducted using chemically competent Escherichia coli BL21-CodonPlus-RIL cells. The cells were grown in autoinduction ZY-medium (Studier, 2005) with ampicillin and chloramphenicol for 4 hr at 37°C. Afterwards, the temperature was decreased to 18°C, and the cells were grown overnight. The cells were harvested by centrifugation at 8,000×g for 6 min. The cell pellet was resuspended in resuspension buffer (40 mM Tris/HCl pH 7.5 at RT, 250 mM NaCl, 1 mM DTT, 10 mg/l lysozyme and 5 mg/l DNase I) and subsequently lysed by sonification for 20 min. The lysate was centrifuged at 56,000×g for 45 min to pellet the cell debris. The supernatant was applied for affinity chromatography using 10 ml glutathione sepharose 4B (GE Healthcare). Hereafter, two washing steps were performed using 80 ml washing buffer (20 mM Tris/HCl pH 7.5 at RT, 250 mM NaCl, 1 mM DTT) for each step. The GST-tag of the respective SH3 domain was cleaved off on the beads using PreScission protease (1 mg/ml). Therefore 40 ml washing buffer with PreScission protease in a molar ratio of 1:30 to the maximum loading capacity of the glutathione sepharose were incubated with the beads at 4°C while gently rotating overnight. The PreScission-cleaved constructs were purified using a Superdex 75 26/60 column (GE Healthcare). The protein containing fractions were pooled and concentrated using a 3 kDa molecular weight cut-off concentrator (Millipore, Germany). Protein concentrations were determined by UV-absorption.
 
-## Crystallization and crystal cooling
+### Crystallization and crystal cooling
 
 For crystallization experiment the RBP SH3-II was concentrated to 56 mg/ml and the RBP SH3-III to 62 mg/ml. The same peptides as for ITC measurements were used and synthesized at the Leibniz Institute for Molecular Pharmacology with N-terminal acetylation and C-terminal amidation. The unsolubilized peptides were mixed in a fivefold molar excess with the protein solution and incubated for 2 hr on ice. Insoluble peptide was removed by centrifugation (16,000×g for 1 min) prior to crystallization experiments. All crystallization experiments were carried out at 291 K in a sitting drop setup. Crystals of RBP SH3-II bound to the Aplip1 peptide were obtained over a reservoir solution composed of 2.2–2.6 M ammonium sulfate, 0.1 M bicine with final pH 9. For cryoprotection, the crystals were transferred to a reservoir solution supplemented with 25% (vol/vol) glycerol. Crystals of RBP SH3-II bound to Cac were obtained over a reservoir solution of 0.2 M Ca(Ac)2, 0.1 M MES pH 6.0, and 20% (wt/vol) polyethylenglycol (PEG) 8000. For cryoprotection, the crystals were transferred to a reservoir solution supplemented with 15% (vol/vol) PEG 400. Crystals of RBP SH3-III bound to the Cac peptide appeared over a reservoir solution of 0.2 M Li2SO4, 0.1 M MES pH 6.5, and 30% (vol/vol) PEG 400. After cryoprotection the crystals were flash-cooled in liquid nitrogen.
 
-## Diffraction data collection and analysis as well as structure determination
+### Diffraction data collection and analysis as well as structure determination
 
 Synchrotron diffraction data were collected at the beamline 14.2 of the MX Joint Berlin laboratory at BESSY (Berlin, Germany). X-ray data collection was performed at 100 K. Diffraction data were processed with the XDS package (Kabsch, 2010). The diffraction data of RBP SH3-II/Aplip1-PxxP1 were initially indexed in P622. Cumulative intensity distribution analysis as well as calculation of the moment of the observed intensity/amplitude distribution performed with PHENIX.XTRIAGE and POINTLESS (Evans, 2011) indicated an unusual intensity distribution, likely caused by twinning. For determination of the correct space group, the diffraction data were processed in P1. Subsequently, the structure was solved by molecular replacement with the program PHASER (McCoy et al., 2007). We used the NMR structure of the SH3-II domain of human RBP (PDB entry 2CSQ) as search model and could locate 24 copies of the SH3 domain. Next the diffraction data and the coordinates of our molecular replacement were analysed by the program ZANUDA (Lebedev and Isupov, 2014) revealing that sixfold is in fact broken and C2 is the true symmetry, with sixfold twinning with the six twin operators: h, h, l; h, −k, −l; 1/2h − 3/2k, −1/2h − 1/2k, −k; −1/2h + 3/2k, 1/2h + 1/2k, −l; −1/2h − 3/2k, −1/2h + 1/2k, −l and 1/2h + 3/2k, 1/2h − 1/2k, −l. In total we could locate in the asymmetric unit 12 copies of RBP SH3-II bound to Aplip1-PxxP1. The crystals of RBP SH3-II and SH3-III bound to the Cac peptide have P21 and I222 symmetry, respectively. Analyses of the diffraction data of the complex of RBP SH3-II and Cac revealed one pseudo-merohedral twin operator (h, −k, −h − l), that was later included in the refinement protocol. The structures of RBP SH3-II and SH3-III each bound to the Cac derived peptide were solved by molecular replacement with our previously determined structure of RBP SH3-II. The asymmetric unit of RBP SH3-II bound to Cac contains 10 complexes and of RBP SH3-III bound to Cac one complex, respectively.
 
-## Refinement and validation
+### Refinement and validation
 
 The refined molecular replacement solution clearly revealed the presence of the bound Aplip1-PxxP1 peptide in 2mFo − DFc and mFo − DFc electron density maps. For refinement, a set of 4.7% of Rfree reflections was generated in P622 and then expanded to C2 to insure equal distribution of the Rfree reflections in all six twin domains. For calculation of the free R-factor of the other two data sets, a randomly generated set of 5% of the reflections from the diffraction data set was used and excluded from the refinement. The structure was manually built in COOT (Emsley et al., 2010) and refined in REFMAC 5.8.0073 (Murshudov et al., 2011) with intensity based twin refinement. In final stages TLS refinement was applied with every protein and peptide chain as single TLS group. The structures with bound Cac peptide were refined with PHENIX.REFINE (Adams et al., 2010; Afonine et al., 2012). Water molecules were picked with COOT and manually inspected. All structures were evaluated with MOLPROBITY (Chen et al., 2010) and PROCHECK (Laskowski et al., 1993). Figures were drawn with PYMOL (DeLano, 2002).
 
-## EM
+### EM
 
 Conventional embedding was performed as described previously (Fouquet et al., 2009).
 
-## Statistics
+### Statistics
 
 Data were analyzed using the Mann–Whitney rank sum test for linear independent data groups (Prism; GraphPad Software, Inc.). Means are annotated ± SEM. Asterisks are used to denote significance (*p < 0.05; **p < 0.01; ***p < 0.005; not significant, p > 0.05).

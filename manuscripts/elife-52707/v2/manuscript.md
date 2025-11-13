@@ -47,11 +47,23 @@ The paper is organized as follows: First, we describe why we chose the monothera
 
 ## Results
 
-## Finding reproducible synergistic and additive combinations
+### Finding reproducible synergistic and additive combinations
 
 To identify drug-pairs for the detailed time course RNA-seq analysis, we leveraged a pre-existing LINCS drug combination dataset collected at Columbia University (Califano’s lab) in the MCF7 cell line, a breast cancer line that is ERα positive (Lee et al., 2015), and the LNCaP cell line, a prostate cancer cell line that is ERβ positive (Takahashi et al., 2007). This dataset had information on all combinations of 99 drugs against 10 different drugs, each combination assessed in a matrix of 4 by 4 doses at 48 hr after drug application. Among these 990 drug combinations, we found 39 synergistic combinations with a maximum Excess Over Bliss (EOB) independence over the 4 × 4 matrix of more than 30%. From these 39, to select synergistic combinations in which both monotherapies played an important role in eliciting synergy, we chose 13 combinations whose constituent monotherapies showed a variety of combinatorial behaviors across the combinations (antagonism, additivity, and synergy in different combinations) for further testing. We re-assessed the synergy of these 13 pairs using a 6 × 6 dose response matrix and found that 9 of the 13 combinations remained synergistic, while four exhibited additive or antagonistic responses, which we removed from further study. Tamoxifen appeared in the greatest number (four) of these nine combinations. Given this data and the known clinical utility of Tamoxifen in ER+ breast cancer (Davies et al., 2011; Early Breast Cancer Trialists' Collaborative Group (EBCTCG), 2015), we focused on these four combinations. Of those 4, we sub-selected the two drug pairs with the highest EOB values, Tamoxifen (T) + Mefloquine (M) and T + Withaferin A (W) (EOB = 49 and 43, respectively). We then further measured viability (using the high-throughput Cell Titer Glo) and EOB in triplicate experiments using a 10 × 10 dose matrix at 12 hr, 24 hr and 48 hr (Supplementary files 1–2) after drug treatment, obtaining results that were consistent with the previously found synergy. Note that these two combinations were tested in at least three independent sets of experiments at this point (99 × 10 screen, 13 combinations, and 2 combinations).
 
 We noted differences in viability, consistent with recent concerns regarding the lack of reproducibility in cell line viability experiments in response to drugs (Haibe-Kains et al., 2013; Ben-David et al., 2018), and yet TM remained consistently synergistic despite changes in the viability of its constituent monotherapies. In addition, we noted hormetic dose curves in response to the monotherapies, especially for W (Mattson and Calabrese, 2010). These hormetic responses are evidenced by a non-monotonic dose response, with more than 100% viability with respect to control for small doses (about 3 uM for W; Supplementary file 2) or at short times after drug application (T and M at 3 hr, Figure 1C–E). Many factors could contribute to hormesis. For example, it has been observed that efficient use of energetic processes in complex stress responses require biological resources to be deployed by the cell in a timely fashion (temporal hormesis) and at relatively low-doses (dose hormesis) to elicit a protective response (Li et al., 2019a; Mattson, 2008). The elucidation of these hormetic responses in the context of synergistic interactions could be a fruitful line of research, but goes beyond the scope of this paper.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig1-v2.jpg)
+
+**Figure 1.:** (A) Monotherapies and drug combinations used in the study. (B) Workflow of molecular analysis of synergy. Starburst highlights the novel component of RNAseq analysis. Question mark denotes the focus of the study. (C–H) Fold change over control of cell count for MCF7 cells (C–E) and LNCaP cells (F–H) treated with Tamoxifen and Mefloquine (C,F), Mefloquine and Withaferin (D,G), and Tamoxifen and Withaferin (E,H). Dashed line indicates predicted viability of the combination based on the Bliss model. Excess Over Bliss (EOB) ± ErrorEOB is given for the 12, 24, and 48 hr time points (see Materials and methods). (I) Average gene expression for each treatment and time point in the MCF7 combination experiments (covering 108 treatment and 18 DMSO samples). (J) Principal component analysis of log fold change in gene expression vs DMSO for the average over replicates at each treatment and time point in the MCF7 combination and dose experiments. (See also Supplementary files 3–9, and Source data 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Combination Index for the combinations at the selected doses. Combination Index < 1 indicates synergy. (B) Viability of MCF7 cells treated with increasing doses of T and M performed alongside RNA collection at 24 hr, compared to TM (Figure 1). (See also Supplementary files 1–2).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Similarity between the gene expression data of two replicates treated with TM at 12 hr. (B) The gene expression of one replicate treated with TM at 12 hr and another replicate treated with TM at 3 hr shows differential expression beyond the replicates of (A). (C) Average gene expression for each treatment and time point in the MCF7 dose experiments. (D) Average gene expression for each treatment and time point in the LNCaP combination experiments (covering 108 treatment and 18 DMSO samples). (E) Principal component analysis of log fold change in gene expression vs DMSO for the average over replicates at each treatment and time point in the LNCaP combination experiments. (See also Source data 2, 3).
 
 Finally, we selected doses of these three drugs that synergized in these two combinations at both time points (20 μM T, 10 μM M, 5 μM W) for subsequent study (Supplementary files 3–4). T and M are also synergistic at 12 and 24 hr as measured by combination index, which quantifies synergy factoring out the dose effects, but T and W are synergistic only at 24 hr (Figure 1—figure supplement 1A). For completeness, we included the combination MW in subsequent studies.
 
@@ -59,23 +71,150 @@ We focused the rest of the study on these three drugs and their combinations (Fi
 
 Finally, we studied the effect of drug dose on viability, as a combination treatment exposes the cells to more drug than a monotherapy, and this could mimic the effect of increasing drug dose. Additionally, M has been shown to inhibit the function of MDR1, a multi-drug efflux pump (Riffkin et al., 1996) and its effect could therefore be simply to increase the intracellular tamoxifen concentration. We analyzed dose curves of T and M as monotherapies (Figure 1—figure supplement 1B). We measured the effect of T alone at 5, 10, 20, 25, and 30 μM, and M alone at 2.5, 5, 10, and 15 μM at 24 hr in MCF7 cells. Viability in 25 and 30 μM T (37.1% and 13.7%) was similar to TM (23%), while viability of cells treated with M at 15 μM was 63.3%. We continued to observe some inter-experiment variability in the efficacy of monotherapies (e.g. T at 20 μM at 24 hr in Figure 1C and Figure 1—figure supplement 1B, the latter measured about 2 years after the former one). Interpreting 25 μM T as a ‘sham’ combination of 5 and 20 μM T (Figure 1—figure supplement 1B), 30 μM T as a ‘sham’ combination of 10 and 20 μM T, and 15 μM M as a ‘sham’ combination of 5 and 10 μM M, we observed EOBs of 31.5, 53.1, and 17.5, respectively (Supplementary file 6), far lower than the EOB of about 103.9 in TM (Figure 1C). Consistent with the synergistic Combination Index in TM (Figure 1—figure supplement 1A), this suggests that the synergy we observed is a phenomenon distinct from dose response. To study the transcriptional mechanisms of drug combinations, we collected RNA from the same cultures from which we measured viability at each treatment for RNAseq (except 30 μM T, which caused too much cell death for RNA collection).
 
-## Gene expression of drug combinations in relation to monotherapies
+### Gene expression of drug combinations in relation to monotherapies
 
 For each treatment (in doses and combinations listed above) and time point up to 24 hr, we collected samples in triplicate and performed RNAseq studies (Supplementary files 7–8). The RNAseq data was reliable, with replicates showing a very high concordance and technical noise considerably smaller than the changes in expression observed under different conditions (Figure 1—figure supplement 2A–B). We first examined the gene expression over all treatments and time points in combination experiments (Figure 1I) and variable doses used for the ‘sham’ combinations (Figure 1—figure supplement 2C) in MCF7, and combination experiments in LNCaP (Figure 1—figure supplement 2D). The transcriptional profiles for the monotherapies T and M were more similar to DMSO than TM. The transcriptional profiles for W, TW, and MW on the other hand, were similar to each other but different from T, M, TM, and DMSO over time. However, gene expression profiles from different doses of the same monotherapy were quite similar, with changes evolving gradually with increasing dose (Figure 1—figure supplement 2C). This pattern mirrors the phenotypic viability profiles (Figure 1C–H, Figure 1—figure supplement 1B). Figure 1J shows a two-dimensional principal component analysis (PCA) of the transcriptional data from the combination and dose experiments in MCF7. The data for T and M monotherapies, from both the combination experiments and the dose experiments, localize slightly but distinctly above DMSO. However, their TM combination is farther from DMSO than T or M but in the same vertical direction. The PCA representation of W progresses in an almost horizontal direction, with TW and MW co-localizing with W, which dominates the combination. Therefore, the two-dimensional PCA representation of the transcriptomes after treatment suggests orthogonal synergistic and additive directions. The PCA representation of the gene expression from treated LNCaP cells indicates very similar dynamics in this distinct cell line (Figure 1—figure supplement 2E).
 
 We next examined differential expression relative to DMSO. The high concordance of replicates allowed for clear detection of differentially expressed genes (DEGs) in different conditions (Figure 2—figure supplement 1A). To determine DEGs in MCF7, we selected a false discovery rate (FDR) cutoff at which the only DEGs at time 0 (~30 min post-treatment; see Materials and methods) over all treatments are well-known immediate early genes (Sas-Chen et al., 2012; Tullai et al., 2007; Table 1). We then used this cutoff across all time points and treatments of the fixed dose experiments. To achieve consistency in our treatment of the variable dose experiments which were done separately and with fewer replicates, we chose an FDR cutoff resulting in approximately the same number of DEGs in M 10 μM and T 20 μM (Figure 2—figure supplement 1B; see Materials and methods). In LNCaP, we selected anFDR cutoff at which there were no DEGs at time 0, as we noticed no differentially expressed immediate early genes in this case (see Materials and methods). We then quantified and examined the properties of DEGs in monotherapies and their combinations. The number of DEGs in MCF7 cells treated with TM, W, MW, and TW were 1 to 2 orders of magnitude greater than that of treatments with T and M (Figure 2A–C). We evaluated the presence of synergistically expressed genes (SEGs), which we define as genes that are differentially expressed in the combination therapy but not in either of the constituent monotherapies. Approximately 90% of DEGs in MCF7 cells treated with TM are synergistic, and not differentially expressed in either T or M alone (Figure 2A) at any time point. To test for artifacts related to the chosen FDR cutoff, we calculated the percentage of SEGs over different FDR thresholds and observed that the general trend is independent of the specific cutoff (Figure 2—figure supplement 1C–D). In contrast, most DEGs in treatments TW and MW were also differentially expressed in W (Figure 2B–C). These molecular signatures parallel the effect of these drugs on viability (Figure 1C–E), reflecting the overall synergistic character of TM, and a mostly additive dominant effect of W. In LNCaP cells, we observed a similar effect of TM: more than 75% of DEGs are SEGs at any time point (Figure 2—figure supplement 2A). However, we observed that when LNCaP cells were treated with TW or MW, more than a quarter of DEGs were SEGs at any time point, and more than half at 12 and 24 hr (Figure 2—figure supplement 2B–C); in comparison, in MCF7 cells treated with MW or TW, less than a quarter of DEGs were SEGs at nearly every time point (Figure 2B–C). This highlights the ability of different cells to respond differently to drugs, and we explore it further in the next section. Interestingly, across both cell lines and including the pairs in our dose experiments, the number of SEGs correlates well with EOB for all treatments and time points, (Pearson r = 0.63, p=0.000044; Spearman rs = 0.59, p=0.00013; Figure 2D). The number of SEGs and the EOB of T 25 μM and M 15 μM are similar to TW and MW and considerably smaller than TM, consistent with the interpretations that behavior of TW and MW represent additivity, and that the molecular and phenotypic synergy of TM transcends the expected behavior of a simple increase in dose.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig2-v2.jpg)
+
+**Figure 2.:** (A-C) Number of DEGs over time in MCF7. The Venn diagrams correspond to DEGs at 3 hr in (A) T, M, and TM; (B) T, W, and TW; and (C) M, W, and MW. The area represented in each color is in proportion to the number of genes in the corresponding color of the Venn diagram; blue areas represent SEGs. (D–E) Relationship of Excess Over Bliss score with (D) the number of SEGs, and (E) correlation in gene expression values between each pair of monotherapies. Note that some of the ‘pairs’ from the dose experiments represent the same dataset correlation with itself (i.e. T 10 μM with T 10 μM for the T 20 μM ‘combination’) and so have correlation = 1.0 as expected, and are shown for clarity. (See also Source data 4, 5, 6).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Comparison between gene expression in treatment (y-axis) and control (x-axis), for all genes over all treatments from the combination experiments in MCF7. Upregulated and downregulated genes as determined by Limma with Voom are in red and blue respectively corresponding to a FDR < 1E-18, and green lines represent fold change over control of 2. (B) Choice of FDR cutoff for the dose experiments. The FDR cutoff is represented as 1E-n, with n denoted next to each point. (C–D). Percentage of differentially expressed genes that are synergistic in each combination according to FDR corrected p-value at (C) 3 hr and (D) 12 hr in MCF7 cells. (See also Source data 4, 5).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The Venn diagrams correspond to DEGs at 3 hr in (A) T, M, and TM; (B) T, W, and TW; and (C) M, W, and MW. The area represented in each color is in proportion to the number of genes in the corresponding color of the Venn diagram; blue areas represent SEGs. (See also Source data 6).
+
+**Table 1.**
+ Selection of adjusted p-value cutoff for differentially expressed genes.The six most differentially expressed genes with respect to DMSO in each treatment at time 0 are shown in ascending order of their Voom score (log10(FDR)). Immediate Early Genes are marked in red. Differentially expressed genes according to the $1.0\times10^{−18}$ cutoff for FDR corrected p-value are marked in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">T_0</th>
+      <th colspan="2">TM_0</th>
+      <th colspan="2">M_0</th>
+      <th colspan="2">TW_0</th>
+      <th colspan="2">MW_0</th>
+      <th colspan="2">W_0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FOS</td>
+      <td>-6</td>
+      <td>BCAN</td>
+      <td>−17</td>
+      <td>ATXN2</td>
+      <td>-3</td>
+      <td>EGR1</td>
+      <td>−54</td>
+      <td>EGR1</td>
+      <td>−53</td>
+      <td>EGR1</td>
+      <td>−53</td>
+    </tr>
+    <tr>
+      <td>MYC</td>
+      <td>-3</td>
+      <td>FOS</td>
+      <td>−17</td>
+      <td>JUN</td>
+      <td>-2</td>
+      <td>JUN</td>
+      <td>−26</td>
+      <td>JUN</td>
+      <td>−28</td>
+      <td>IER2</td>
+      <td>−20</td>
+    </tr>
+    <tr>
+      <td>TOB1</td>
+      <td>-3</td>
+      <td>VIM</td>
+      <td>−17</td>
+      <td>ZNF592</td>
+      <td>-1</td>
+      <td>IER2</td>
+      <td>−23</td>
+      <td>IER2</td>
+      <td>−17</td>
+      <td>JUN</td>
+      <td>−19</td>
+    </tr>
+    <tr>
+      <td>KLF4</td>
+      <td>-2</td>
+      <td>ETS1</td>
+      <td>−15</td>
+      <td>ZHX2</td>
+      <td>-1</td>
+      <td>JUNB</td>
+      <td>−17</td>
+      <td>PDCD7</td>
+      <td>−17</td>
+      <td>C17O</td>
+      <td>−16</td>
+    </tr>
+    <tr>
+      <td>SGK1</td>
+      <td>-2</td>
+      <td>MSN</td>
+      <td>−13</td>
+      <td>SCAF4</td>
+      <td>-1</td>
+      <td>PDCD7</td>
+      <td>−16</td>
+      <td>ZFP36</td>
+      <td>−15</td>
+      <td>ZFP36</td>
+      <td>−16</td>
+    </tr>
+    <tr>
+      <td>PRDM1</td>
+      <td>-2</td>
+      <td>NCAN</td>
+      <td>−10</td>
+      <td>NAT8L</td>
+      <td>-1</td>
+      <td>C17ORF91</td>
+      <td>−16</td>
+      <td>JUNB</td>
+      <td>−14</td>
+      <td>PDCD7</td>
+      <td>−15</td>
+    </tr>
+  </tbody>
+</table>
+
 Finally, we also observed a significant relationship between the EOB of a combination and the correlation of the transcriptional profiles of the constituent monotherapies (Figure 2E; see Materials and methods). Conversely, the monotherapy pairs from our dose experiments (i.e. T 5 and 20 μM, M 5 and 10 μM) had high correlation as expected, but low EOB. For this reason, when including the dose experiments, the direct correlation between EOB and the correlation of transcriptional profiles (see Materials and methods) is not significant (Pearson r = 0.31, p=0.068; Spearman rs = 0.28, p=0.097). When we removed these sham combination pairs from the dose experiments, we observed a significant relationship between EOB and correlation of transcriptional profiles (Pearson r = 0.59, p=0.00064; Spearman rs = 0.54, p=0.019). This result suggests that correlated transcriptional profiles of two distinct drugs may be important in defining synergy. Further study in other contexts would be necessary to generalize this hypothesis. The possible nature of correlation as a necessary but not sufficient condition for synergy will be discussed further in a later section.
 
-## Critical cancer pathways are synergistically enriched
+### Critical cancer pathways are synergistically enriched
 
 We checked for enrichment of gene sets associated with specific biological processes. Candidate gene sets were selected from gene-set libraries retrieved from the Enrichr tool (Chen et al., 2013; Kuleshov et al., 2016), pathways implicated in the hallmarks of cancer (Hanahan and Weinberg, 2011), and likely drug targets of T and M (see Materials and methods). Figure 3 shows the biological processes that are enriched in at least one of the subgroups of DEGs in MCF7 cells under treatment with T, M, TM, as well as in the set TUM, the union of DEGs under T or M, which represents the expected DEGs if T and M acted additively. If T and M act synergistically, we expect that the set of DEGs in TM should be enriched in more functional classes than TUM. Implicated biological processes fell into three classes: (1) endoplasmic reticulum stress, estrogen signaling, and kinase activity were enriched in both TM and monotherapies; (2) apoptosis, toll-like receptor and cytokine signaling, immunity, transcription, metabolic processes, and autophagy were markedly more enriched in the combination TM than in either monotherapy or TUM, an effect not recapitulated by increasing monotherapy dose at 24 hr; and (3) downregulation of the cell cycle was present in both the combination and monotherapies at 12 and 24 hr, but began to occur much earlier in the combination (Figure 3). Classes 2 and 3 appear to be synergistically affected in TM but were not synergistic in either TW or MW (Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig3-v2.jpg)
+
+**Figure 3.:** Enrichment of DEGs in T, M, and TM with cancer-relevant gene sets. Only gene sets enriched in at least one condition (time point or treatment) are shown. ‘TUM’ indicates the union of DEGs either in T or M. Color intensity reflects degree of enrichment by Fisher’s Exact test. Color markers indicate treatment and color marker intensity indicates dose. *=hallmark of cancer, †=drug target (see Materials and methods).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Enrichment scores of differentially up and down regulated genes at different time points in W, M, T, TW, and MW, in MCF7 cells with the same cancer-relevant gene sets shown in Figure 3. (B) Hierarchical clustering of enrichment scores of differentially up- and down-regulated genes at different time points in the combination experiments in LNCaP cells with significant biological process gene sets (see Materials and methods). ‘U’ indicates the union of two genes sets, and represents the expected differentially expressed genes if the interaction between drugs was additive. Color intensity reflects the degree of enrichment by Fisher’s Exact test and is shown as –log10(FDR corrected p-value). Red: M, Blue: T, Yellow: W, Orange: MW, Green: TW, Magenta: TM.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Enrichment of DEGs with cellular component gene sets (see Materials and methods) in (A) MCF7 cells for T, M, and TM, (B) MCF7 cells for W, M, T, TW, and MW, and (C) all treatments in LNCaP cells, shown with hierarchical clustering (see Materials and methods). Only gene sets enriched in at least one condition (time point or treatment) are shown. For gene sets that also appeared in the top 40 gene sets associated with phospholipidosis (Supplementary Table 6 of Sirci et al.), the rank of the gene set in that list is shown in parentheses. ‘U’ indicates the union of two genes sets, and represents the expected differentially expressed genes if the interaction between drugs was additive. Color intensity reflects the degree of enrichment by Fisher’s Exact test and is shown as –log10(FDR corrected p-value). In A and C, the two PLD genes sets are also shown on a larger color scale (see inset colorbar) to illustrate subtle differences in enrichment. Red: M, Blue: T, Yellow: W, Orange: MW, Green: TW, Magenta: TM.
 
 We also interrogated the dysregulated genes in the treated LNCaP cells by the same procedure. As more SEGs had appeared in LNCaP cells treated with MW and TW than in MCF7, especially at 12 and 24 hr (Figure 2D), we compared the synergistically enriched gene sets in LNCaP cells for TM, TW, and MW (Figure 3—figure supplement 1B). A few biological processes, such as autophagy, were synergistically enriched in all three combinations. Gene sets for which we observed differences between the combinations fell into two broad groups: synergistically enriched more in W combinations (W-enriched) or synergistically enriched more in TM (TM-enriched). The W-enriched gene sets included two main classes: (1) cholesterol biosynthesis and metabolism was only synergistically upregulated in MW and (2) rRNA and ncRNA processing was synergistically upregulated only in TW at 24 hr, while tRNA and mitochondrial RNA processing was synergistically downregulated at some time points in both TW and MW. TM-enriched gene sets fell into three classes: (1) temporal differences: endoplasmic reticulum stress was upregulated at earlier time points in TM than in the monotherapies, whereas it was similarly enriched in W, TW, and MW at all time points except 24 hr, and intrinsic apoptosis in response to ER stress was upregulated initially in W, TW, and MW followed by normalization over time, whereas in TM it was synergistically upregulated in an increasing manner over time; (2) certain metabolic processes (generation of precursor metabolites and energy, cofactors, amino acids, and sulfur) were synergistically downregulated only in TM; and (3) genes that are repressed by estrogen receptor were synergistically upregulated only in TM. We hypothesize that the W-enriched classes represent mechanisms by which LNCaP cells counter the effects of the drug combinations and evade cell death, whereas TM-enriched gene sets, particularly class 2, may represent gene sets that function as harbingers of phenotypic synergy, distinguishing synergistic drug combinations from combinations whose effects can be resisted by cells.
 
 Finally, we assessed for enrichment in phospholipidosis (PLD) in both cell lines. Research has shown that drugs that induce lysosomal stress and lipid accumulation (phospholipidosis), including T and M, tend to exhibit similar transcriptional profiles (Sirci et al., 2017; Nioi et al., 2007; Nadanaciva et al., 2011). We quantified enrichment in several types of gene sets with a focus on PLD (Sirci et al., 2017; see Materials and methods): cellular components, including in the top 20 gene ontology gene sets associated with PLD; a PLD gene signature (provided by authors of Sirci et al., 2017); and a set of the gene targets of two transcription factors (TFE3 and TFEB) shown to be involved in lysosomal stress. We found that some PLD-associated cellular components are synergistically affected in TM, including the lysosome, Golgi, mitochondrion, nucleus, and nucleolus. PLD was highly enriched in all treatments in both cell lines (Figure 3—figure supplement 2), indicating generalized toxicity-associated effects of treatment. We studied the role that PLD might play in the high correlation between monotherapies in our experiments. We found that the relationship between correlation and EOB (excluding dose experiments) holds even when PLD genes were removed (r = 0.59, p=0.00068; Spearman rs = 0.55, p=0.0017). Furthermore, we found that genes in the PLD signature accounted for a small proportion of DEGs in all treatments (data not shown), and as a result the correlation between monotherapies is nearly identical whether we include or exclude the PLD signature genes. (A plot of the correlation between monotherapies including the PLD signature genes vs the correlation between monotherapies excluding the PLD signature genes yielded an almost perfect identity line with: r = 0.9999, p=1e-65; Spearman rs = 0.9995, p=2e-52.) Finally, enrichment of the PLD signature gene set in TM was only slightly greater than in TUM (Figure 3—figure supplement 2A for MCF7, Figure 3—figure supplement 2C for LNCaP), indicating at best mild synergy in PLD signature genes. These results show that PLD plays a role in the treatments considered here and that some transcriptional similarity between the monotherapies may be associated with PLD. However, PLD is one of many cellular processes triggered by the drug treatments, and it accounts only in a small part for the transcriptional correlation and synergistic gene expression we observed.
 
-## Co-expressed genes show a synergistic temporal pattern
+### Co-expressed genes show a synergistic temporal pattern
 
 We studied temporal patterns of drug response in MCF7. We used k-means clustering (see Materials and methods) to identify co-expressed genes with similar time evolution in T, M, and TM (Source data 7). This unsupervised clustering method identified four distinct temporal patterns (Figure 4A): (1) upregulated in TM (2253 genes), (2) strongly upregulated in TM (421 genes), (3) downregulated in TM (1709 genes), (4) strongly downregulated in TM (718 genes). In each cluster, the average differential expression observed in the combination TM was significantly stronger than that in T + M, in which the (log) expression in T and M are added. The trajectory over time for most genes is monotonic and saturates at 9 hr. However, we also tested for genes whose trajectories were significantly different in TM than T and M (data not shown). A minority of genes in each cluster exhibited unique temporal profiles in TM, including mixed transient and monotonic behavior, suggesting the existence of temporal synergy (Figure 4B).
 
@@ -85,7 +224,7 @@ We studied temporal patterns of drug response in MCF7. We used k-means cluster
 
 We then assessed these gene classes for enrichment in biological processes (Figure 4C). Consistent with enrichment of these processes at each time point (Figure 3), upregulated genes were enriched in endoplasmic reticulum stress (clusters 1–2), and downregulated genes were enriched in cell cycle and metabolic processes (clusters 3–4). In addition, apoptosis and downregulated targets of estrogen were enriched in genes strongly upregulated in TM (cluster 2), highlighting synergistic properties. Metabolic processes and the cell cycle were distinguished by clusters 3 and 4, highlighting the biological significance of the degree of downregulation. Finally, the genes with significantly different trajectories in TM account for a small but distinct subset of these synergistic biological processes (data not shown). Together, these data indicate that monotonic dysregulation dominates gene behavior and triggers important biological processes, which implies that the early transcriptional responses might be sufficient to predict synergy.
 
-## Synergistically spliced and expressed genes are different
+### Synergistically spliced and expressed genes are different
 
 We studied splicing by examining the relative exon usage for each gene focusing on MCF7 cells. Combination treatment TM induced unique patterns of relative exon usage, compared to DMSO, T, and M. For example, many exons were less used in TM, consistent with an exon skipping modality of alternative splicing (Figure 5). As with differential gene expression, most differentially spliced genes in TM were synergistic, that is, not differentially spliced in either monotherapy (Figure 6—figure supplement 1A). This was not the case with the combinations involving W (Figure 6—figure supplement 1B–C) where the differentially spliced genes in MW and TW had substantial overlap with the differentially spliced genes in W. However, these synergistically spliced genes were generally distinct from the SEGs (Figure 6A and Figure 6—figure supplement 1D–F). Despite this distinction, the number of synergistically spliced genes correlated with the EOB score (Pearson r = 0.73, p=0.002; Spearman rs = 0.75, p=0.0017) over all treatments and time points (Figure 6B), as with the SEGs (Figure 2D). These data suggest that expression and splicing represent two separate mechanisms driving phenotypic synergy.
 
@@ -93,23 +232,59 @@ We studied splicing by examining the relative exon usage for each gene focusing 
 
 **Figure 5.:** Top 100 synergistically spliced exons in combination TM at 12 hr in MCF7 cells.
 
-## Synergistic activation of transcription factors
+![Figure 6.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig6-v2.jpg)
+
+**Figure 6.:** (A) Number of synergistically expressed and synergistically spliced genes in TM in MCF7 cells over time; shaded areas correspond to the Venn diagram for 3 hr. (B) Relationship of Excess Over Bliss score with the number of synergistically spliced genes in MCF7. (See also Supplementary file 9).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A-C) Number of differentially spliced genes over time with Venn diagrams of differentially spliced genes at 3 hr in (A) T, M, and TM; (B) T, W, and TW; and (C) M, W, and MW. The area represented in each color is in proportion to the number of genes in the corresponding color of the Venn diagram; blue areas represent synergistic genes. (D–F) Number of synergistically expressed and synergistically spliced genes in (D) TM, (E) TW, and (F) MW over time; shaded areas correspond to the Venn diagrams for 3 hr. (See also Source data 8).
+
+### Synergistic activation of transcription factors
 
 We next examined how regulation of the transcriptome can be affected synergistically. We focused on the MCF7 data for this analysis as we were able to leverage a robust pre-existing MCF7-specific transcriptional network (Woo et al., 2015). Research has shown that the activity of a transcription factor (TF) can be inferred from expression of its targets (Lefebvre et al., 2010; Alvarez et al., 2016). Because activity of a TF may be affected in many ways, including post-translational modification, co-factor binding, and cellular localization, this approach is a more robust measure of activity beyond simply measuring expression of the TF itself. We utilized a conservative method for this analysis that distinguishes positive effector and negative effector (repressor) functions of a TF (Figure 7—figure supplement 1; see Materials and methods). Of the 1101 TFs studied, most of the differentially active (DA) ones were uniquely active as a positive effector, suggesting that much of the response to these drugs is the result of upregulation of genes, and positive TF-gene interactions (Figure 7—figure supplement 2A–B).
 
 Similarly to the differential expression and differential splicing results, most differentially active transcription factors (DATFs) in TM were not DA in the monotherapies T and M (Figure 7A). Conversely, most DATFs in TW and MW were also DA in W (Figure 7B–C). The majority of DATFs over all treatments and times were produced from genes that were differentially expressed or differentially spliced (Figure 8A). However, some instances of DATFs did not correspond to differential expression or splicing and may represent TFs that become DA by mechanisms not captured by RNA-seq, including some that have a known connection to cancer treatment or to biological processes identified in Figure 3. For example, ATF4, one of the top DATFs in TM, is not differentially expressed nor spliced, and is a key regulator of the response to endoplasmic reticulum stress (Pakos‐Zebrucka et al., 2016).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig7-v2.jpg)
+
+**Figure 7.:** Number of DATFs over time with Venn diagrams at 3 hr in (A) T, M, and TM; (B) T, W, and TW; and (C) M, W, and MW in MCF7 cells. Area represented in each color matches the number of genes in the corresponding color of the Venn diagram; blue areas represent synergistic TFs. (See also Source data 9).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Four cases of transcription factor activity that were assessed to determine whether a transcription factor was activated or inactivated.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Differentially active transcription factors for each combination according to the status of the positive and negative effector of each transcription factor. Unique: either positive or negative effector, but not both, is differentially active; concordant: both effectors are activated or both are inactivated; discordant: one effector is activated and the other is inactivated. (B) Differentially active transcription factors for each combination according to each of the four cases supplement 1.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig8-v2.jpg)
+
+**Figure 8.:** (A) All instances of DATFs in MCF7 cells according to the differential expression or splicing status of each TF in the corresponding treatment and time point. The top 20 most significant DATFs not differentially expressed nor spliced are listed. All 20 are positive effectors. Arrows: up = activated, down = inactivated. (B) Heatmap of DATFs over time in T, M, and TM at 3–24 hr in MCF7 cells. Color intensity reflects the degree and direction of enrichment by Fisher’s Exact test with red for activation and blue for inactivation. Only significant instances are shown. (C) Enrichment of gene clusters from Figure 2F with sets of TF targets. Color intensity reflects the degree of enrichment by Fisher’s Exact test. (See also Source data 9).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Heatmap of differentially active transcription factors over time in W, MW, and TW at 3–24 hr. Color intensity reflects the degree and direction of enrichment by Fisher’s Exact test and is shown as –log10(FDR corrected p-value), with positive values for activation and negative values for inactivation.
+
 Examining TF activity over time, we found that most DATFs, once DA, tend to remain so at later time points. This time course in TM was distinct from T and M (Figure 8B), whereas those of W, TW, and MW were very similar (Figure 8—figure supplement 1). In addition, the patterns of differential TF activity were remarkably similar in T and M, and in fact these two monotherapies had a higher correlation in differential activity values of significant TFs than either of the W pairings (Spearman r at 12 hr: 0.8 in T and M, 0.1 in T and W, 0.4 in M and W), echoing the differential expression data (Figure 2E). Using the set of DATFs in at least one time point in T, M, and TM (Figure 8B), we examined the enrichment of their target sets in the temporal gene clusters identified by k-means clustering (Figure 4). The genes in each cluster are significantly enriched in distinct TF target sets, suggesting that the temporal patterns are regulated by different TFs (Figure 8C).
 
-## TF activation in monotherapies can account for synergistic gene expression in combinations via a TF activation cascade
+### TF activation in monotherapies can account for synergistic gene expression in combinations via a TF activation cascade
 
 We next asked how the combination of T and M gives rise to the synergistic activity of TFs in TM in MCF7. We hypothesized that DATFs in T and/or M could alter the activity of other TFs when both drugs are administered together. We examined two possible mechanisms by which this could happen in combination TM. First, distinct DATFs in each monotherapy may converge as regulators of other TFs when the two monotherapies are combined. This is an ‘AND’ model for the activation of a TF, in that both TFs need to be active in the combination for the activation of their targets. Alternatively, the same DATF in T and M may be more strongly DA in TM due to the combined activating effects of the two monotherapies. This dose enhancement mechanism in the combination will be called the ‘double-down’ model. We also assessed TFs that are linked through the MCF7 transcriptional network to those explained by these AND and double-down models in the same time point, as multiple rounds of transcriptional effects could occur within 3 hr (Figure 9—figure supplement 1; López-Maury et al., 2008).
 
 We examined the potential effect of these two mechanisms on synergistic TFs and SEGs (Figure 9 and Figure 9—figure supplement 1). At each time point, we identified the synergistic TFs that could have resulted from the AND mechanism (converging red and blue arrows in Figure 9), and the double-down mechanism (magenta arrows). At time 3 hr, for example, there are two TFs that are active in T, M, and TM: MYC and KLF10. These TFs are connected through the network to 9 TFs (Figure 9) active in TM (but not in T or M). These TFs are in turn connected to 16 additional TFs (Figure 9—figure supplement 1) active in TM (but not in T or M), giving a total of 25 TFs accounting for 42% of all synergistic TFs. Because there was no active TF in T alone, there was no AND mechanism at work. At 9 hr, two new TFs become active in T alone, 18 in M alone and three in both T and M, accounting for 12 new synergistic TFs: six via the AND mechanism (purple), four via the double-down mechanism, and two additional TFs due to a combination of AND and double-down models (Figure 9—figure supplement 1). At each time point after 3 hr, we identified TFs connected to TFs identified at the immediately previous time point (vertical arrows). Over all time points, the double-down model alone can explain 83 synergistic TFs, the AND model only explains 12 TFs, and mixed AND and double-down explain 4. In total, this cascade of TF activation accounted for the majority of synergistic TFs at all time points, with 88% of the synergistic TFs at 24 hr explained by the cascade of activation initiated by the 2 TFs activated at 3 hr in both T and M. The number of TFs arising from TFs synergistically activated at previous time points was substantial and accounted for the majority of identified TFs after 3 hr.
 
+![Figure 9.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig9-v2.jpg)
+
+**Figure 9.:** The number of DATFs or SEGs at 3–24 hr are shown as bubbles. Blue, red, and white bubbles represent DATFs in T, M, and TM, respectively. TFs (gray bubbles) and SEGs (green bubbles) shown are ‘explained’ by the following mechanisms: double-down mechanism at the same (magenta arrow and number) or previous (angled magenta arrow) time point, the AND mechanism at the same (converging blue and red arrows and purple number) or previous (angled converging blue and red arrows) time point, or by connection to another TF ‘explained’ by one of these mechanisms at the same (see supplement 1), or previous (vertical arrows) time point. The total number and percentage of TFs or SEGs in TM meeting any of these criteria is shown. (See also Source data 10).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/52707/elife-52707-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Connections between differentially active transcription factors in TM based on the MCF7 network. Each bubble represents a set of transcription factors that are differentially active in TM at a given timepoint. The codes on each bubble represent their differential activity status in Tamoxifen (first digit), Mefloquine, (second digit), and TM (third digit), where one is differentially active and 0 is not. Synergistic transcription factors in TM (001), are categorized into ‘explained’ bubbles (gray) or not explained (white). At each timepoint, synergistic transcription factors can be ‘explained’ by a network connection to a transcription factor that is differentially active in Tamoxifen and Mefloquine (111, magenta), or to at least one transcription factor in each of Tamoxifen alone (101, blue) and Mefloquine alone (011, red), or both, resulting in the left-hand, right-hand, and middle gray bubbles, respectively, in the middle layer. The fourth gray bubble in the lowest layer represents transcription factors which have connections to transcription factors in the middle ‘explained’ layer, but not to transcription factors in the top layer. Numbers in italics represent synergistic transcription factors that can be explained by connections to transcription factors that were active in monotherapies at the previous time point (blue, magenta, and red bubbled with dashed outlines at top of each timepoint). At the right in each time point, the dashed-outline bubble represents ‘explained’ transcription factors in the gray bubbles at the previous time point. Synergistic transcription factors not explained by other means which have a connection to any ‘explained’ transcription factors at the previous time point are shown in the gray bubble below the dashed-outline bubble. Finally, synergistic transcription factors that cannot be explained by any network connections are shown in the white bubble resulting from the ‘null’ set at each timepoint. The colors in this figure correspond to Figure 9, and the sum of all gray bubbles at each timepoint in this figure correspond to the single gray bubble shown at each timepoint in Figure 9. (See also Source data 10).
+
 We next asked how the AND and double-down mechanisms, along with the activation of synergistic TFs resulting from them, affected the larger group of SEGs. Here, we identified genes potentially affected by the AND and double-down mechanisms, as well as those connected to the newly identified TFs at the current and previous time point. At 3 hr, 29 SEGs can be ascribed to the double-down mechanism, and 146 are direct targets of the newly explained TFs (Figure 9). In all, this accounts for 175 (46%) of all SEGs. By 12 and 24 hr, the vast majority (78% and 79% respectively) of SEGs were explained by this cascade. Together, these data suggest that T and M act in concert, mostly through the double-down mechanism, to trigger a transcriptional cascade that results in substantial differential activation of synergistic TFs and genes not seen in either monotherapy.
 
-## Predicting drug synergy in an independent dataset
+### Predicting drug synergy in an independent dataset
 
 We have observed that correlation of gene expression of monotherapies is associated with phenotypic synergy in MCF7 cells treated with our three combinations (Figure 2E). We next wished to test the generalizability of this association by leveraging the independent DREAM Challenge dataset (Bansal et al., 2014), which utilized microarray data from LY3 DLBCL cells treated. Of the 91 drug pairs, 81% of the synergistic combinations have correlation >0.3 (Figure 10A). Indeed the average correlation for the pairs with EOB >2.5 (at which the average EOB in three replicates is larger than zero by more than the standard error) is 0.48, which is statistically significantly (t-test p=1.0E-8) larger than the average correlation of 0.3 for pairs with EOB <−2.5. As in our dataset, monotherapy correlation is associated with EOB (Pearson r = 0.27, p=0.009; Spearman rs = 0.27, p=0.01).
 
@@ -145,45 +320,115 @@ We have shown that gene expression correlation can be used to predict synergy wi
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF7</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat No. HTB-22</td>
+      <td>RRID:CVCL_0031</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>LNCaP</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat No. CRL-1740</td>
+      <td>RRID:CVCL_1379</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Withaferin A</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat No. BML-CT104-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mefloquine hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat No. M2319-100MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen citrate</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat No. 0999</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 MCF7 (ATCC HTB-22) cells were obtained from ATCC. Cells were cultured according to manufacturer’s recommendations in ATCC-formulated Eagle's Minimum Essential Medium (Catalog No. 30–2003) with 10% heat-inactivated fetal bovine serum, and 0.01 mg/ml human recombinant insulin. LNCaP cells were purchased from ATCC (Cat No. CRL-1740) and stored in liquid nitrogen until use. Frozen vial was quickly thawed in 37C bath, and then cells were washed from DMSO by spinning in 15 ml vial filled with 10mls of PBS. Cells were re-suspended in RPMI media (ATCC, Cat No. 30–2001) supplemented with 10% Fetal Bovine Serum (ATCC, Cat No. 30–2021) and plated into 75 cm cell culture flask (Corning, Cat No. 430641). Growth media was changed every 3–4 days. After reaching confluence, cells were split at a ratio 1:6. Cultures were tested for mycoplasma periodically using MycoAlert (Lonza, Cat No. LT07-701) per manufacturer’s instructions.
 
 To split, media was removed, cells were washed with PBS, and trypsin-EDTA mix was added for 5 min. After detachment, cells were washed with growth media, collected into 50 ml vial, spin down at 1000 RPM, suspended in fresh media and plated into 75 cm flasks. Cells were treated with Withaferin A (Enzo Life Sciences BML-CT104-0010), Mefloquine hydrochloride (Sigma-Aldrich M2319-100MG) or Tamoxifen citrate (Tocris 0999) in 0.3% DMSO for the viability time courses (Figure 1C–H, Supplementary files 4–5) or 0.4% DMSO for dose-response curves (Figure 1—figure supplement 1B, Supplementary file 6).
 
-## Viability
+### Viability
 
 The cells were plated at 10,000 cells per well in a clear bottom black 96-well plate (Greiner Cat. No. 655090) and a white 96-well plate (Greiner Cat. No. 655083) then they were placed in an incubator. After 24 hr, the plates were removed from the incubator and treated with drugs using the HP D300 Digital Dispenser. After the targeted drug treatment times, 100 µL of Cell-Titer-Glo (Promega Corp.) was added to the wells in the white 96-well plate and shaken at 500 rpm for 5 min. The plate was then read by the Perkin Elmer Envision 2104 using an enhanced luminescence protocol to count the number of raw luminescent units per well. For the black clear bottom 96-well plates, the plate was spun at 300 g for 5 min and all the cell media was removed. Methanol was then added at 200 µL per well and let sit at room temperature for 15 min. The methanol was removed from the wells and 200 µL of PBS with Hoechst 33342 nucleic acid stain at a final concentration of 1 µG/mL was then added to the wells. The plates were then imaged with the GE Healthcare IN Cell Analyzer 2000 that is equipped with a CCD camera. The IN Cell Analyzer software was used to count the number of cells detected in each well to calculate the viability. Three replicates were used for the combination experiments and two replicates for the dose experiments.
 
-## Calculation of phenotypic synergy
+### Calculation of phenotypic synergy
 
-## Excess Over Bliss
+#### Excess Over Bliss
 
-Suppose a given drug combination XY inhibits IXY percent of the cells, and the X and Y monotherapies inhibit IX and IY percent of the cells respectively. Note that VXY=(1-IXY)  is the viability of the cells, i.e. the percentage of cells that survive after administration of drugs X and Y. Then according to the Bliss model of no interaction between drugs X and Y, the percentage of viable cells in the cell culture treated with combination XY  is expected to be VXVY=1-IX1-IY. In this calculation, any negative values of  I that is growth promotion rather than inhibition are converted to 0. This value is used for the 'Bliss Additivity' viability in Figure 1C-H. As a result, the EOB independence (Bliss, 1939) is given asEOB=100*(VXVY-VXY)=100*(IXY-(IX+IY-IXIY)),which is the difference between the observed and expected inhibitions. EOB can take any value in the interval [−100,100] and a positive EOB implies synergy, a negative EOB implies antagonism and a value close to zero EOB implies additivity. By propagation of errors, the error of EOB is given as:ErrorEOB = SEMX2(1 + IY2 – 2IY) + SEMY2 (1 + IX2 – 2IX) + SEMXY2where SEM  represents the standard error of the mean of the inhibition by a given drug.
+Suppose a given drug combination XY inhibits $I_{XY}$ percent of the cells, and the X and Y monotherapies inhibit $I_{X}$ and $I_{Y}$ percent of the cells respectively. Note that $V_{XY}=(1-I_{XY})$ is the viability of the cells, i.e. the percentage of cells that survive after administration of drugs X and Y. Then according to the Bliss model of no interaction between drugs $X$ and $Y$, the percentage of viable cells in the cell culture treated with combination $XY$ is expected to be $V_{X}V_{Y}=1-I_{X}1-I_{Y}.$ In this calculation, any negative values of $I$ that is growth promotion rather than inhibition are converted to 0. This value is used for the 'Bliss Additivity' viability in Figure 1C-H. As a result, the EOB independence (Bliss, 1939) is given as
 
-## Combination index
+$$
+EOB=100*(V_{X}V_{Y}-V_{XY})=100*(I_{XY}-(I_{X}+I_{Y}-I_{X}I_{Y})),
+$$
+
+which is the difference between the observed and expected inhibitions. EOB can take any value in the interval [−100,100] and a positive EOB implies synergy, a negative EOB implies antagonism and a value close to zero EOB implies additivity. By propagation of errors, the error of EOB is given as:
+
+$$
+Error_{EOB}=\sqrt{SEM_{X}^{2}(1+I_{Y}^{2}–2I_{Y})+SEM_{Y}^{2}(1+I_{X}^{2}–2I_{X})+SEM_{XY}^{2}}
+$$
+
+where $SEM$ represents the standard error of the mean of the inhibition by a given drug.
+
+#### Combination index
 
 Although it is simple to calculate, the EOB described above has some limitations as a measure of synergy. For example, it may classify the combination of a drug with itself as synergistic. An alternative method to quantify synergy uses as a null hypothesis the Loewe additivity model and the associated quantity combination index (CI) (Chou and Talalay, 1984). The calculation of CI requires fitting a dose response curve to monotherapies. Therefore, one needs the inhibition values for different doses of monotherapies. As a result, we could only calculate CI for 12, 24, and 48 hr for the TM combination and 12 and 24 hr for the TW combination (Figure 1—figure supplement 1A) and only for viability measured using CellTiter Glo (Supplementary files 1–2).
 
-Mathematically, the combination index CI is computed asCI=Dx1/D1+Dx2/D2,where D1 and D2 are the required dosage of Drug one and Drug two to reach certain effect (percentage cell death in this case) when both drugs administered independently. On the other hand, Dx1 and Dx2 are the dosage required to attain the same percentage of cell death when both drug are given in combination. Accordingly, a CI < 1 suggests synergism, CI = 1 suggests additive and CI > 1 suggests antagonism between the drugs. We used the ComboSyn software (Chou and Martin, 2005) to compute CI.
+Mathematically, the combination index CI is computed as
 
-## Processing of the RNA-seq data
+$$
+CI=D_{x1}/D_{1}+D_{x2}/D_{2},
+$$
+
+where D1 and D2 are the required dosage of Drug one and Drug two to reach certain effect (percentage cell death in this case) when both drugs administered independently. On the other hand, Dx1 and Dx2 are the dosage required to attain the same percentage of cell death when both drug are given in combination. Accordingly, a CI < 1 suggests synergism, CI = 1 suggests additive and CI > 1 suggests antagonism between the drugs. We used the ComboSyn software (Chou and Martin, 2005) to compute CI.
+
+### Processing of the RNA-seq data
 
 The cells were plated at a density of 8000 cells per well in a 96-well plate (Greiner Cat. No. 655083) and placed in an incubator. After 24 hr, the plates were removed from the incubator and treated with drugs using the HP D300 Digital Dispenser. The cells were then collected at the targeted time point by removing the media and pipetting 150 µL of Qiagen Buffer RLT into each well. The plates were then frozen and stored at −80°C. For RNA extraction, the Qiagen RNeasy 96 kit (Cat. No. 74181) was used with the Hamilton ML STAR liquid handling machine equipped with a Vacuubrand 96-well plate vacuum manifold. A Sorvall HT six floor centrifuge was used to follow the vacuum/spin version of the RNeasy 96 kit protocol. The samples were treated with DNAse (Rnase-Free Dnase Set Qiagen Cat. No. 79254) during RNA isolation. The RNA samples were then tested for yield and quality with the Bioanalyzer and the Agilent RNA 6000 Pico Kit. The TruSeq Stranded mRNA Library Prep Kit (RS-122–2101/RS-122–2102) was then used to prepare the samples for 30 million reads of single end sequencing (100 bp) with the Illumina HiSeq2500. Three replicates were used for the combination experiments and two replicates for the dose experiments (Supplementary file 6).
 
-## Generation of gene level count matrix
+### Generation of gene level count matrix
 
 We aligned raw reads to hg19 reference genome (UCSC) using the STAR aligner (version 2.4.2a) (Dobin et al., 2013). We used the featureCounts (Liao et al., 2014) module from subread package (version 1.4.4) to map the aligned reads to genes in the hg19 reference genome, which provided us a gene count matrix with 38 samples and 23228 genes (Supplementary file 8). To reduce the noise due to low count genes, we kept genes with at least one count in at least three control (DMSO) samples at any time point. We normalized the resulting count matrix using Trimmed Mean of M-values (TMM) method (Robinson and Oshlack, 2010). We produced log base 2 of count per million (cpm) after adjusting plates as covariates (Source data 1, 2, 3). We used the voom package (Law et al., 2014) to model the mean variance trend in our data (Figure 1—figure supplement 2A–B).
 
-## Differential expression analysis
+### Differential expression analysis
 
-We used the limma (Ritchie et al., 2015) pipeline for differential expression analysis to compare treatment with DMSO at respective time points. We corrected the p-values into a false discovery rate (FDR) using BH procedure (Benjamini and Hochberg, 1995) for multiple testing (Source data 5, 6, 7). To determine an appropriate FDR cutoff for differential expression, we examined the data for each treatment at time 0. Time '0' represents a treatment of less than 30 min, during which drug is added and the cells are then immediately prepared for RNA collection. This time delay between treatment and RNA collection is likely long enough to allow transcription of immediate early genes. Immediate early gene expression has been shown to be induced within minutes following an external stimulus (Tullai et al., 2007). In the MCF7 combination experiments, the majority of the genes with low p-values at time 0 in our data are known immediate early genes (Tullai et al., 2007; Sas-Chen et al., 2012). We selected an FDR cutoff of 1.0 x10-18 for differential expression (Figure 2 —figure supplement 1A), at which the only DEGs at time 0 over all treatments are well-known immediate early genes (Table 1). For the dose experiments, in which there were two replicates instead of three and thus lower p values, we selected 1.0 x10-5 as the lowest FDR cutoff which produced at least as many DEGs as the combination experiments at 24 hr in both T and M (Figure 2 —figure supplement 1B). For the LNCaP combination experiments, we selected 1.0x10-15 as the lowest FDR cutoff for which there were no DEGs at time 0 for any treatments. We did not observe any immediate early genes with low p values at this time point in any treatments in LNCaP.
+We used the limma (Ritchie et al., 2015) pipeline for differential expression analysis to compare treatment with DMSO at respective time points. We corrected the p-values into a false discovery rate (FDR) using BH procedure (Benjamini and Hochberg, 1995) for multiple testing (Source data 5, 6, 7). To determine an appropriate FDR cutoff for differential expression, we examined the data for each treatment at time 0. Time '0' represents a treatment of less than 30 min, during which drug is added and the cells are then immediately prepared for RNA collection. This time delay between treatment and RNA collection is likely long enough to allow transcription of immediate early genes. Immediate early gene expression has been shown to be induced within minutes following an external stimulus (Tullai et al., 2007). In the MCF7 combination experiments, the majority of the genes with low p-values at time 0 in our data are known immediate early genes (Tullai et al., 2007; Sas-Chen et al., 2012). We selected an FDR cutoff of $1.0x10^{-18}$ for differential expression (Figure 2 —figure supplement 1A), at which the only DEGs at time 0 over all treatments are well-known immediate early genes (Table 1). For the dose experiments, in which there were two replicates instead of three and thus lower p values, we selected $1.0x10^{-5}$ as the lowest FDR cutoff which produced at least as many DEGs as the combination experiments at 24 hr in both T and M (Figure 2 —figure supplement 1B). For the LNCaP combination experiments, we selected $1.0x10^{-15}$ as the lowest FDR cutoff for which there were no DEGs at time 0 for any treatments. We did not observe any immediate early genes with low p values at this time point in any treatments in LNCaP.
 
 For the principle components analysis, we used the Python package scikit-learn (Pedregosa et al., 2011) to calculate the principle components on the the log fold change of gene expression over the corresponding time point in DMSO, as produced by limma, for each treatment and timepoint.
 
 To calculate monotherapy correlation, for each monotherapy pair, we calculated the Pearson correlation between expression of genes that are differentially expressed in either monotherapy (FDR < 0.1).
 
-## Time course gene expression clustering
+### Time course gene expression clustering
 
 To identify the sets of genes that exhibit similar responses to T, M, and TM, we clustered their RNA-seq expression profiles. We considered 5101 genes that are differentially expressed for at least one time point (0, 3, 6, 9, 12, or 24 hr) in at least one of the conditions (T, M, and TM). First, we computed the mean expression profile of each gene from the expression values of its three replicates A, B, and C (log2(cpm)). We then normalized the mean expression profiles of the 5101 genes by their respective response to DMSO.
 
@@ -191,7 +436,7 @@ Because we wanted to cluster genes that have similar response in T, M and TM, we
 
 We applied a k-means clustering algorithms to group the expression vectors into k groups. In order to identify a suitable value for k, we computed the total within-cluster sum of squares for values of k running from 1 to 20. We then selected k equal to four clusters as we observed that the gain in information obtained with larger values of k was becoming considerably small. We ran 10,000 times the Hartigan-Wong implementation of the k-means algorithm (Hartigan and Wong, 1979) provided by Matlab with a maximum number of iterations set to 1000 before selecting the partitioning of the vectors that achieved the smallest total within-cluster sum of squares (Source data 7).
 
-## Gene set enrichment analyses
+### Gene set enrichment analyses
 
 In each treatment and time point, we separately analyzed the sets of upregulated and downregulated genes for pathways and processes using the built-in Fisher’s exact test of the Python package Scipy (Jones et al., 2001). We assessed enrichment in all gene sets of the GO_Biological_Process database downloaded from the Enrichr (Chen et al., 2013) library repository (http://amp.pharm.mssm.edu/Enrichr/#stats) and, to assess the known effects of tamoxifen, we used the gene set of estrogen receptor related genes downloaded from the Broad Molecular Signatures Database (Liberzon et al., 2011; Subramanian et al., 2005; Bhat-Nakshatri et al., 2009). We only performed the test where both gene sets contained at least three genes and the overlap contained at least two genes; if either criterion was not met, no p-value was returned, and a p-value of 1 was used for display in the figures. We then calculated the false discovery rate (FDR)-adjusted p-values using the Benjamini-Hochberg method available in the Python package Statsmodels (Seabold and Perktold, 2010). To select the gene sets that may explain the synergistic gene expression seen in Figure 2 and suggest biological processes involved in the synergistic drug response (Figure 1), we applied four criteria:
 
@@ -201,21 +446,25 @@ We employed a similar approach to assess enrichment in cellular components, with
 
 Together, the results of these three approaches comprise the gene sets shown in Figure 3—figure supplement 2.
 
-## Generation of exon level count matrix
+### Generation of exon level count matrix
 
 We mapped the aligned reads to an in-house flattened exon feature file in hg19 reference genome build using featureCounts from subread package (1.4.4). The flattened exon feature file was generated based on gtf (hg19) downloaded from UCSC with overlapping exons from the same gene removed (Supplementary file 9).
 
-## Synergistic splicing and exon expression
+### Synergistic splicing and exon expression
 
-We used the short read splicing caller diffSplice (Hu et al., 2013) in the limma package (version 3.24.3) (Ritchie et al., 2015) as framework to detect synergistic spliced genes at each drug combination. We kept exons that have at least one read in at least one sample, and normalized the expressed exon counts using the TMM method (Robinson and Oshlack, 2010). For each combination treatment i at a given time point j, we tested synergistic exon expression (SEE) in the generalized linear model of:Seeij=comboij+DMSOj−singlet1ij−singlet2ij
+We used the short read splicing caller diffSplice (Hu et al., 2013) in the limma package (version 3.24.3) (Ritchie et al., 2015) as framework to detect synergistic spliced genes at each drug combination. We kept exons that have at least one read in at least one sample, and normalized the expressed exon counts using the TMM method (Robinson and Oshlack, 2010). For each combination treatment i at a given time point j, we tested synergistic exon expression (SEE) in the generalized linear model of:
+
+$$
+See_{ij}=combo_{ij}+DMSO_{j}−singlet1_{ij}−singlet2_{ij}
+$$
 
 We performed two statistical tests to detect synergistic exons expression and synergistic spliced genes. For the former, we performed exon level t-statistic test to detect differences between each exon and other exons from the gene, and defined exons with FDR < 0.05 as synergistically expressed (Figure 5). For synergistic splicing, we performed Simes test (Simes, 1986) for each gene to test the hypothesis of whether usage of exons from the same gene differed, genes with Simes-adjusted p-values<0.05 are defined as synergistically spliced genes.
 
-## Generation of the MCF7 gene regulatory network
+### Generation of the MCF7 gene regulatory network
 
 The original MCF7 network has been generated by Woo et al., 2015 using the network inference method ARACNE2 (Margolin et al., 2006) and 448 expression profiles for MCF7 cell line from the connectivity map database (CMAP2; RRID:SCR_015674; Lamb, 2007). The original network includes 20,583 probes, 1,109 of which are transcription factors, and 148,125 regulatory interactions. The interactions predicted by ARACNE2 are directed, unless an interaction is found between two TFs, in which case two edges are included in the list (TF1 to TF2 and TF2 to TF1). To obtain a network at the gene level, we applied a one-to-one HG-U133A probe to gene mapping (Lamb, 2007; Li et al., 2011). The mapping file used has last been updated on July 2015 (v3.1.3). We filtered out edges that don’t have both nodes present in the mapping list. Finally, in order to determine positive (activation) and negative (repression) interactions, we calculated the Spearman correlation and the corresponding p-value between each TF-target pair in the network. We then corrected the p-values for multiple hypothesis testing and removed edges with low confidence level (FDR < 0.05), which gave us the final network with 9,760 genes, 1101 TFs, and 48,059 regulatory interactions. For each TF in the network, we defined its positively/negatively regulated targets as the genes to which there exist an outgoing edge in the final network with a positive/negative Spearman correlation coefficient.
 
-## Quantifying transcription factor activity
+### Quantifying transcription factor activity
 
 To calculate differential activity for each TF in our network, we examined its putative targets as determined by our network. We utilized a conservative method for this analysis that distinguishes positive effector and negative effector (repressor) functions of a TF (Figure 7—figure supplement 1; Source data 9). These functions have been found to be distinct (Foulkes and Sassone-Corsi, 1992; Wray, 2003; Partridge et al., 2016). With this analysis in mind, we performed four comparisons in each treatment and time point:
 
@@ -229,10 +478,10 @@ For each of 1101 transcription factors (Woo et al., 2015), we identified positiv
 
 To account for some transcription factors having very similar sets of targets, we performed Fisher’s exact test as above for all possible pairs of transcription factor target sets among those that were significant at each treatment and time point. We then applied the Benjamini/Hochberg FDR adjustment to all the resulting p-values. For each case where the FDR was significant, we then performed Fisher’s exact test to assess enrichment of the relevant dysregulated genes in each of three sets: the intersection of the two transcription factor target sets, and each of the target sets individually with the intersection excluded. We then applied the Benjamini/Hochberg FDR adjustment to all the resulting p-values over all cases. Finally, where one effector target set was significantly enriched but the other was not, with their intersection excluded, the significant target set was retained as differentially active, using the original FDR values. All the rest were removed from further analysis.
 
-## Graphical representation of the transcriptional cascade
+### Graphical representation of the transcriptional cascade
 
 Figure 9 shows the evolution of the active transcriptional network after introducing the two drugs T and M. Figure 9—figure supplement 1 provides a more detailed representation of the mechanisms responsible for the activation of the synergistic TFs. In Figure 9—figure supplement 1, each oval represents the set of TFs that are activated under T, M, and/or TM (Source data 10): (101) indicates the set of TFs active in T and TM but not in M, (011) indicates the set of TFs active in M and TM but not in T, (111) indicates the set of TF active in T, M, and TM. Finally, (001) are TF active in TM but not in T or M. The number next to each oval indicates the number of TFs in that set. In this way we can keep track of the activation of synergistic TFs (001) in TM in terms of the activation of a pair of parent TFs, one in T (101) and one in M (011), or of one parent TF active also in T and M (111), and doing so at each time point. For example, for the time point at 3 hr (Figure 9—figure supplement 1), there 2 TFs active in T, M, and TM that belong to set (111), 2 TFs active only in M and TM that belong to set (011), and no TF active in T and TM but not in M (101). The middle layer of this representation contains three sets of synergistic TFs that are only active in TM, but not in T or M (001) (grey ovals). Each of these three sets include TFs whose regulators (i.e, their own TFs) are at least one TF in (111) (TF activated through the double-down mechanism: left grey oval in the middle layer), or has two or more parents with one in (101) and the other in (011) (TF activated through the AND mechanism: right grey oval in the middle layer), or has three or more parents from sets (101), (111) and (011) (TFs activated through both double down and AND mechanisms: middle grey oval in the middle layer). At 3 hr only the double-down mechanism can explain nine synergistic TFS, which in turn are parents and can explain the activation of 16 additional synergistic TFs, as indicated in the third layer of (Figure 9—figure supplement 1). To the right of the construct we just discussed, there are two more pairs of ovals. The first pair of contains an oval with dashed border, indicating the synergistic TFs that were active at the previous time point (t = 0 for 3 hr) and the arrow points to the grey oval that indicates how many synergistic TF ative at 3 hr can be ascribed to the activation of its regulators in the earlier time point. At 3 hr, both sets are empty. In the rightmost pair of ovals, the bottom one represents the set of TFs whose activation cannot be explained using any of the above mechanisms. Finally, the diagrams for 12 and 24 hr show additional sets of ovals representing TFs that belong to set (101), (011) and (111) at the previous time point, and that are needed to explain some of the synergistic TFs at the current time point, and whose numbers are indicated in italics in the middle layer of the diagram.
 
-## Drug synergy prediction in the DREAM dataset
+### Drug synergy prediction in the DREAM dataset
 
 The DREAM expression matrix was downloaded from Synapse (https://www.synapse.org/#!Synapse:syn2785787). To assess PLD in the DREAM data, we used the aforementioned limma (Ritchie et al., 2015) pipeline to calculate differential expression in each treatment compared to DMSO. Then we calculated enrichment of the 500 PLD genes (Sirci et al., 2017; see above) in the genes with FDR <0.05 in either monotherapy for each drug pair, using Fisher’s exact test as described above. For the correlation-based classifier, for each monotherapy pair, we calculated the Pearson correlation between expression of genes that are differentially expressed in either monotherapy (FDR < 0.1) in the NCI-DREAM data. We ranked the resulting correlations in descending order to calculate a ranking of drug synergy. To test performance by the same measures as the NCI-DREAM challenge, we used the AUROC and AUPR for synergistic drug combination. For the AUC analysis, we used the same criteria as in the dream challenge for the definition of phenotypic synergy resulting in 16 synergistic drug pairs out of the total 91 pairs. To compare our method to DIGRE, we computed the Bayes factor (Berger and Pericchi, 2014), a bootstrapped performance distribution between two classifiers. A Bayes factor of 2, for example, means that the first classifier outperformed the second at a 2-to-1 ratio. Two methods that have a Bayes factor <3 may be considered statistically indistinguishable (Kass and Raftery, 1995).

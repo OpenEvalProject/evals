@@ -15,8 +15,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00afp2z80 Zebrafish Development and Disease Models Laboratory, GIGA-Stem Cells, University of Liège Liège Belgium
-2. https://ror.org/00afp2z80 GIGA-Genomics Core Facility, GIGA, University of Lièg Liège Belgium
+1. Zebrafish Development and Disease Models Laboratory, GIGA-Stem Cells, University of Liège Liège Belgium ([ROR:00afp2z80](https://ror.org/00afp2z80))
+2. GIGA-Genomics Core Facility, GIGA, University of Lièg Liège Belgium ([ROR:00afp2z80](https://ror.org/00afp2z80))
 
 † Corresponding author
 
@@ -36,47 +36,87 @@ To identify early events regulating ductal-derived beta cell regeneration, we de
 
 ## Results
 
-## Transcriptomic profiling of ductal cells after beta cell destruction highlights regulation of CaN pathway
+### Transcriptomic profiling of ductal cells after beta cell destruction highlights regulation of CaN pathway
 
 To gain a better understanding of the molecular mechanisms underlying the regeneration of beta cells from the ducts, we determined the transcriptional landscape of ductal cells by RNA-sequencing after beta cell ablation in the adult zebrafish. To selectively ablate the beta cells, we used the Tg(ins:NTR-mCherry) transgenic fish. The ductal cells were labeled thanks to the Tg(nkx6.1:GFP) reporter line (Ghaye et al., 2015) in which Green Fluorescent Protein (GFP) marks the ductal tree and associated multipotent pancreatic progenitors (Ghaye et al., 2015). More precisely, three to four fishes were treated with the prodrug MTZ at 10 mM overnight, to induce ablation of beta cells or with DMSO(Dimethyl sulfoxide) for the non-ablated controls. Ablation was confirmed by blood glucose measurement before collection of the pancreas. To capture the early events triggered by the destruction of beta cells, we generated the transcriptome of the ducts 3 days post ablation treatment (dpt), that is before beta cell neogenesis (Figure 1—figure supplement 1). Differential gene expression analysis revealed that 1866 genes are upregulated and 1515 genes downregulated in the ductal cell of fish treated with MTZ compared to control (padj < 0.05). According to Gene Ontology (GO) analysis, the most enriched pathways among the upregulated genes were DNA replication and cell cycle (Figure 1A). This further corroborates our previous findings and those of others, regarding the activation of duct-associated progenitors’ proliferation in response to beta cell ablation (Delaspre et al., 2015; Ghaye et al., 2015). As expected, the Notch pathway was enriched in the downregulated genes (Ninov et al., 2013; Ninov et al., 2012; Figure 1B). On a contrasting note, in a context marked by a robust proliferative response, we found it intriguing to observe an enrichment in the cellular senescence signature (Figure 1A). Subsequently, we investigated deeper into the genes associated with this specific signature. We found among them several components of the CaN signaling pathway such as nfatc3b, ppp3ccb (the catalytic subunit of CaN), itpr2, and calm3b (Figure 1C). In addition to these genes related to the cellular senescence signature, our transcriptomic studies revealed the modulation of other genes from the CaN canonical pathway (Figure 1D), underlying its potential role in beta cell regeneration. CaN is a highly conserved calcium/calmodulin-dependent Ser/Thr phosphatase, involved in numerous biological process including fin regeneration and beta cell function (Tornini, 2016; McMillan et al., 2018; Cao et al., 2021; Kujawski et al., 2014). This prompted us to investigate the role of CaN in beta cell regeneration.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88813/elife-88813-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Enrichment ratio of selected non-redundant signatures of Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways overrepresented in ductal cells after beta cells ablation (UP – A and DOWN – B) compared to ductal cells without beta cells ablation. Gene Ontology (GO) terms were identified using over-representation analysis (ORA) analysis by WebGestalt using the list of differentially expressed (DE) genes provided by DESeq. The light color for Notch pathway means p-value = 0.11. (C) List of genes associated with the signature of cellular senescence from A and B. Genes related to calcineurin (CaN) pathway are in bold. (D) CaN canonical pathway with upregulated genes in green and downregulated genes in red in transcriptomic data from A and B. (E) Experimental design for regeneration test in larvae. Briefly, after nifurpirinol (NFP) treatment from 3 to 4 dpf, larvae were fixed and analyzed at 4–7–10 and 14 days post treatment (dpt). (F) Graph representing the mean number of mCherry+ beta cells in the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) at 0–4–7–10 and 14 dpt. The gray spheres represent non-ablated conditions and the pink triangles the ablated condition. Data are presented as mean values ± SEM. One-way ANOVA test with Tukey’s multiple comparison test, ****p-value <0.0005. The experiment was performed at least two times and the data were combined in this graph. (G) Whole mount fluorescent immunohistochemistry (GFP and mCherry) of the pancreas of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 14 dpt. 3D projection (stack) of one non-ablated and one ablated representative samples. The principal islet (PI) and the pancreatic tail are shown. Arrows point out mCherry+ beta cells in the pancreatic tail. Scale 100 µM. (H) Experimental design for 5‐ethynyl‐2′‐deoxyuridine (EdU) assay in larvae. After NFP treatment for 3 to 4 dpf, larvae were exposed to EdU at 2 dpt before fixation for analysis. (I) Whole mount fluorescent immunohistochemistry (GFP and EdU) of the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 2 dpt. 3D projection (stack) of one non-ablated and one ablated representative samples. Arrows point out GFP+ duct cells EdU+ in the pancreatic tail. Scale 50 µM. (J) Barplot representing the percentage of GFP+ ductal cells which incorporated EdU+ in non-ablated (n=10) and ablated conditions (n=11). Data are presented as mean values ± standard deviation (SD). T-test. **p-value <0.005. The experiment was performed at least two times.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88813/elife-88813-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (1) Design of the experimental pipeline for transcriptomic experiment. (2) Expression of ppp3cca; ppp3ccb; nfatc3a; nfatc3b in acinar, alpha, beta, delta, or ductal cells population from the zebrafish pancreas (Tarifeño-Saldivia et al., 2017). (3) Calcineurin (ppp3ccb and ppp3cca) and NFATc3 (nfatc3a and nfatc3b) expression in ductal cells from zebrafish in non-ablated and ablated conditions. Data are presented as mean values ± standard deviation (SD). T-test, *p-value <0.05.
+
 Previous RNAseq data performed in our laboratory indicate that CaN (ppp3cca/b) and NFATc3 (nfatc3a/b) are mainly express in endocrine cells (Tarifeño-Saldivia et al., 2017; Figure 1—figure supplement 1(2)), which is in accordance with the role of CaN/NFAT signaling in beta cells (Heit et al., 2006). CaN genes (ppp3cca/b) as well as nfatc3b are express at lower levels in the ducts at basal state but their expression is induced in response to beta cell destruction (Figure 1—figure supplement 1(3)).
 
-## CaN activity regulates the ductal regenerative response
+### CaN activity regulates the ductal regenerative response
 
 To evaluate the role of CaN in beta cell regeneration, more specifically derived from ductal progenitors, we have chosen to use young larvae, where regenerated beta cells in the pancreatic tail arise exclusively from the ducts (Ninov et al., 2013). In response to beta cells ablation, the intrapancreatic ducts undergo a ductal regenerative response whereby differentiation toward the endocrine fate is increased (Ninov et al., 2013). We first determined the rate of beta cell neogenesis from the ducts in response to a single acute ablation of beta cells as we performed in adults. We treated Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae with nifurpirinol (NFP) from 3 to 4 dpf and mCherry+ beta cells were quantified in the GFP+ ducts in the pancreatic tail at several time points: 4, 7, 10, and 14 dpt (Figure 1E). Duct-associated beta cells started to be detected in non-ablated larvae between 7 and 10 dpt (Figure 1F) and the number of beta cells slowly increased until 14 dpt (Figure 1F, G). In ablated larvae, the increase became more pronounced from 10 dpt onwards (Figure 1F, G), indicating faster endocrine differentiation. This experiment establishes that the ductal regenerative response is detectable between 10 and 14 days after the beta cell ablation, performed at 3 dpf. We next wanted to determine if ductal cell proliferation is activated in response to beta cell destruction in larvae as in adult fish. We exposed Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae to 5‐ethynyl‐2′‐deoxyuridine (EdU) the second day following ablation (Figure 1H). In the ablated larvae, the proportion of GFP+ ductal cells EdU+ (in S-phase) was higher compared to non-ablated larvae (Figure 1I, J). This result shows that acute beta cell ablation in larvae rapidly activates ductal cell proliferation, as previously reported in adult zebrafish.
 
 As our transcriptomic data from adult zebrafish revealed modulation of the CaN pathway at 3 dpt (Figure 1D), we treated Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae from 1 to 3 dpt after beta cell ablation, with a CaN inhibitor, the Cyclosporin A (CsA) (Kujawski et al., 2014; Figure 2A). The number of newly formed beta cells in the tail was monitored from 4 to 14 dpt. CsA-enhanced beta cell formation at 10 dpt (Figure 2B–D). However, this effect appears to be transient since no discernible difference was observed between the control and CsA-treated larvae in regeneration at the latest time point (14 dpt), suggesting an acceleration of the regenerative response (Figure 2B; Figure 2—figure supplement 1). Interestingly, CsA did not affect beta cell differentiation in non-ablated larvae, indicating that CsA only acts in a regenerative context (Figure 2B–D). Of note, CsA increased as well the number of regenerated beta cells in the principal islet (Figure 2—figure supplement 1(2) and (3)). We and others, previously showed that the othercegeneration, besides the ducts, are the bi-hormonal sst1.1+/ins+ cells (Pardo, 2022; Singh et al., 2022; Mi et al., 2023). However, CsA did not affect bi-hormonal cell formation (Figure 2—figure supplement 1(4)), suggesting that the additional cells in the principal islet could also originate from the ducts.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/88813/elife-88813-fig2-v1.jpg)
+
+**Figure 2.:** (A) Experimental design for regeneration test in larvae with CsA treatment. Briefly, after nifurpirinol treatment from 3 to 4 dpf, larvae were treated with CsA from 1 to 3 dpt and fixed and analyzed at 4–7–10 and 14 days post treatment (dpt). The experiment was performed at least two times and the data are combined in these graphs. (B) Graph representing the mean number of mCherry+ beta cells in the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) at 0–4–7–10 and 14 dpt. The gray spheres represent non-ablated condition; the pink triangles represent the ablated condition; the black squares CsA condition and inverted green triangles ablated + CsA condition. Data are presented as mean values ± SEM. Two-way ANOVA test with Sidak’s multiple comparisons test, *p-value <0.05. (C) Whole mount fluorescent immunohistochemistry (GFP and mCherry) of the pancreas of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 10 dpt. 3D projection (stack) of non-ablated and ablated larvae treated with DMSO or CsA representative samples. The principal islet (PI) and the pancreatic tail are shown. Arrows point out mCherry+ beta cells in the pancreatic tail. Scale 100 µM. (D) Barplot representing the number of number of mCherry+ beta cells in the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 10 dpt. The gray spheres represent non-ablated condition (n=17) ; the pink triangles represent the ablated condition (n=20); the black squares CsA condition (n=20) and inverted green triangles ablated + CsA condition (n=17). Data are presented as mean values ± standard deviation (SD). Two-way ANOVA with Tukey’s multiple comparison test, *p-value <0.05. (E) Graph representing the mean number of GFP+ neurod1+ cells in the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(neurod1:GFP) at 0–4–7 and 10 dpt. The gray spheres represent non-ablated condition; the pink triangles represent the ablated condition; the black squares CsA condition and inverted green triangles ablated + CsA condition. Data are presented as mean values ± SEM. Two-way ANOVA test with Sidak’s multiple comparisons test, **p-value <0.005; ***p-value <0.0005; ****p-value <0.00005. The experiment was performed at least two times and the data are combined in the graph. (F) Graph representing the mean number of GFP+ neurod1 EdU+ cells in the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(neurod1:GFP) at 0–4–7 and 10 dpt. The gray spheres represent non-ablated condition; the pink triangles represent the ablated condition; the black squares CsA condition and inverted green triangles ablated + CsA condition. Data are presented as mean values ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88813/elife-88813-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (1) Whole mount fluorescent immunohistochemistry (mCherry) of the pancreas of Tg(ins:NTR-P2A-mCherry) larvae at 4–7 and 14 dpt. 3D projection (stack) of ablated larvae treated with DMSO or CsA representative samples. The principal islet (PI) and the pancreatic tail are shown. Scale 50 or 100 µM. Barplot representing the number of mCherry+ beta cells in the PI (n=16) (2) and the number of secondary islets of mCherry+ beta cells in the pancreatic tail (n=12 for non ablated and n=16 for ablated conditions) (3) of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 10 dpt. Data are presented as mean values ± standard deviation (SD). T-test or two-way ANOVA with Tukey’s multiple comparison test. **p-value <0.005. The experiment was performed at least two times. (4) Barplot representing the number of sst1.1+ mCherry+ bi-hormonal cells in the PI of Tg(ins:NTR-P2A-mCherry);Tg(sst1.1:GFP) larvae at 6 dpt (n=13). Data are presented as mean values ± SD. T-test. The experiment was performed at least two times. (5) Experimental design for 5‐ethynyl‐2′‐deoxyuridine (EdU) assay in larvae. After nifurpirinol (NFP) treatment for 3 to 4 dpf, larvae were exposed to EdU before fixation for analysis. (6) Whole mount fluorescent immunohistochemistry (GFP and EdU) of the pancreas of Tg(ins:NTR-P2A-mCherry); Tg(neurod1:GFP) larvae at 2–4–7 and 10 dpt. 3D projection (stack) of non-ablated and ablated larvae treated with DMSO or CsA representative samples. The PI and the pancreatic tail are shown. Scale 50 µM. Barplot representing the number of gcg+ alpha cells (7); the number of GFP+ sst1.1 delta cells (8); of Tg(ins:NTR-P2A-mCherry); Tg(sst1.1:GFP) larvae at 10 dpt. Gcg was detected by immunohistochemistry (IHC). The gray spheres represent non-ablated condition (n=8;12); the pink triangles represent the ablated condition (n=12;16); the black squares CsA condition (n=8,12) and inverted green triangles ablated + CsA condition. Data are presented as mean values ± SD. Two-way ANOVA with Tukey’s multiple comparison test. **p-value <0.005. The experiment was performed at least two times.
+
 We next tested the effect of CsA on endocrine progenitors in a regenerative context. We induced regeneration in Tg(neurod1:GFP) larvae where the GFP is expressed in both endocrine progenitors and mature endocrine cells. We first assessed generation of GFP cells at different time points (Figure 2—figure supplement 1(5)) and showed that CsA induced an increase of neurod1+ cells from 4 dpt. The increase was still detectable at least until 10 dpt (Figure 2E, Figure 1—figure supplement 1(6)). To determine if these additional cells result from their own proliferation, we performed a pulse of EdU just before analysis (Figure 2—figure supplement 1(5)). We observed that CsA did not affect the neurod1+ cell proliferation rate, which is very low at these stages (Figure 2F). As a consequence, the effect of CsA cannot be explained by endocrine cell proliferation but rather by neogenesis from progenitors. As CsA affects pro-endocrine cells formation, we next wondered if the increased cell formation induced by CsA is specific to beta cells. Treatment with CsA was performed as previously and delta1.1 and alpha cells were detected by immunofluorescence. Interestingly, CsA did not affect alpha nor delta1.1 cells neogenesis in response to beta cell ablation (Figure 2—figure supplement 1(7), (8)). Overall, these experiments showed that CsA affects specifically the beta cells and their endocrine progenitors.
 
-## CaN over-activation abolishes the regenerative response
+### CaN over-activation abolishes the regenerative response
 
 We then wondered if an opposite regulation of CaN that is its activation impacts as well the regenerative response. To that end, we generated a transgenic line Tg(hsp70:GFP-P2A-ppp3ccCA) that allows ubiquitous expression of a constitutively active form of CaNCA (ppp3ccCA) upon heat-shocks. Beta cell ablation was triggered in Tg(hsp70:GFP-P2A-ppp3ccCA); Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae from 3 to 4 dpf and CaNCA expression was induced by four successive heat-shocks from 1 to 3 dpt (Figure 3A). The overexpression of CaNCA after ablation impaired the regenerative response at 14 dpt (Figure 3B, C). Similar results were obtained with Tg(UAS:GFP-P2A-ppp3ccCA); Tg(cftr:gal4) (Liu et al., 2018); Tg(ins:NTR-P2A-mCherry) larvae in which CaNCA is continuously and specifically overexpressed in the ducts within the pancreas (Figure 3D, E). Importantly, the structure of the ducts was similar in CaNCA overexpressing larvae compared to Tg(nkx6.1:GFP) controls (Figure 3D), suggesting that the suppression of the regenerative response in CaNCA-overexpressing larvae was not due to morphogenetic defects during ductal growth. This result shows that CaN acts directly in the ducts to decrease beta cell regeneration while it is not necessary for normal beta cell differentiation.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88813/elife-88813-fig3-v1.jpg)
 
-**Figure 3.:** (A) Experimental design for regeneration test in larvae with heat-shocks. Briefly, after nifurpirinol treatment from 3 to 4 dpf, four heat-shock were performed from 1 to 3 dpt and larvae were fixed and analyzed at 14 dpt. (B) Whole mount fluorescent immunohistochemistry (GFP and mCherry) of the pancreas of Tg(hsp70:CaN larvae at 14 dpt. 3D projection (stack) of one non-ablated and one ablated with or without heat-shock representative samples. The principal islet (PI) and the pancreatic tail are showed. Arrows point out mCherry+ beta cells in the pancreatic tail. Scale 100 µM. (CA); Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP)C) Barplot representing the mean number of mCherry+ beta cells in the pancreatic tail of Tg(hsp70:CaN larvae at 14 dpt. The gray spheres represent non-ablated condition (n=12); the pink triangles represent the ablated condition (n=18); the black squares heat-shock condition (n=11) and inverted green triangles ablated + heat-shock condition (n=19). Data are presented as mean values ± standard deviation (SD). Two-way ANOVA with Tukey’s multiple comparisons test, *p-value <0.05, ***p-value <0.0005, ns = non-significant. The experiment was performed at least two times and the data are combined in the graph. (CA); Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP)D) Whole mount fluorescent immunohistochemistry (GFP and mCherry) of the pancreas of larvae at 14 dpt. 3D projection (stack) of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) one non-ablated and one ablated representative control samples and Tg(UAS:CaN one non-ablated and one ablated representative samples. The principal islet (PI) and the pancreatic tail are showed. Arrows point out mCherry+ beta cells in the pancreatic tail. Scale 100 µM. (CA); Tg(ins:NTR-P2A-mCherry); Tg(cftr:gal4)E) Barplot representing the mean number of mCherry+ beta cells in the pancreatic tail of larvae at 14 dpt. The gray spheres represent non-ablated Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) condition (n=31); the pink triangles represent the ablated Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) condition (n=21); the black squares non-ablated Tg(UAS:CaN condition (n=29) and inverted green triangles ablated CA); Tg(ins:NTR-P2A-mCherry); Tg(cftr:gal4)Tg(UAS:CaN condition. Data are presented as mean values ± SD. Two-way ANOVA with Tukey’s multiple comparison test, ***p-value <0.0005, ****p-value <0.00005, ns = non-significant. The experiment was performed at least two times and the data are combined in the graph.CA); Tg(ins:NTR-P2A-mCherry); Tg(cftr:gal4)
+**Figure 3.:** (A) Experimental design for regeneration test in larvae with heat-shocks. Briefly, after nifurpirinol treatment from 3 to 4 dpf, four heat-shock were performed from 1 to 3 dpt and larvae were fixed and analyzed at 14 dpt. (B) Whole mount fluorescent immunohistochemistry (GFP and mCherry) of the pancreas of Tg(hsp70:CaNCA); Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 14 dpt. 3D projection (stack) of one non-ablated and one ablated with or without heat-shock representative samples. The principal islet (PI) and the pancreatic tail are showed. Arrows point out mCherry+ beta cells in the pancreatic tail. Scale 100 µM. (C) Barplot representing the mean number of mCherry+ beta cells in the pancreatic tail of Tg(hsp70:CaNCA); Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 14 dpt. The gray spheres represent non-ablated condition (n=12); the pink triangles represent the ablated condition (n=18); the black squares heat-shock condition (n=11) and inverted green triangles ablated + heat-shock condition (n=19). Data are presented as mean values ± standard deviation (SD). Two-way ANOVA with Tukey’s multiple comparisons test, *p-value <0.05, ***p-value <0.0005, ns = non-significant. The experiment was performed at least two times and the data are combined in the graph. (D) Whole mount fluorescent immunohistochemistry (GFP and mCherry) of the pancreas of larvae at 14 dpt. 3D projection (stack) of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) one non-ablated and one ablated representative control samples and Tg(UAS:CaNCA); Tg(ins:NTR-P2A-mCherry); Tg(cftr:gal4) one non-ablated and one ablated representative samples. The principal islet (PI) and the pancreatic tail are showed. Arrows point out mCherry+ beta cells in the pancreatic tail. Scale 100 µM. (E) Barplot representing the mean number of mCherry+ beta cells in the pancreatic tail of larvae at 14 dpt. The gray spheres represent non-ablated Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) condition (n=31); the pink triangles represent the ablated Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) condition (n=21); the black squares non-ablated Tg(UAS:CaNCA); Tg(ins:NTR-P2A-mCherry); Tg(cftr:gal4) condition (n=29) and inverted green triangles ablated Tg(UAS:CaNCA); Tg(ins:NTR-P2A-mCherry); Tg(cftr:gal4) condition. Data are presented as mean values ± SD. Two-way ANOVA with Tukey’s multiple comparison test, ***p-value <0.0005, ****p-value <0.00005, ns = non-significant. The experiment was performed at least two times and the data are combined in the graph.
 
-## CaN regulates beta cell differentiation induced by Notch inhibition in absence of regeneration
+### CaN regulates beta cell differentiation induced by Notch inhibition in absence of regeneration
 
 Our transcriptomic data showed that the Notch pathway is downregulated in ductal cells during beta cell regeneration (Figure 1). As the level of Notch activity determines the behavior of ductal cells (Ninov et al., 2013) from quiescence to proliferation and subsequently to beta cell differentiation, we tested whether CaN acts together with the Notch pathway on a common pool of ductal progenitors. To inhibit the Notch pathway, we treated larvae with several concentrations of the gamma-secretase inhibitor LY411575 from 3 to 4 dpf in absence of regeneration. The activity of CaN was inhibited by CsA during the same timeframe (Figure 4A). As previously, we used reporter lines for beta and ductal cells Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) and the number of secondary beta cells was analyzed at 6 dpf (Figure 4A). As expected, the number of beta cells progressively rose as the concentration of the Notch inhibitor increased (Figure 4B). Combined treatment with CsA fostered the differentiation of beta cells between 1 and 10 µM LY411575 but did not result in further increase at 15 µM LY411575 (Figure 4B), suggesting that CaN is important within a permissive window of Notch activity. Since we overserved the highest synergistic effect at 5 µM of LY411575, we used this concentration for the following experiments (Figure 4C, D). It is worth noting that combined treatment of LY411575 (5 µM) and another CaN inhibitor, FK506, resulted in the same synergistic increase of beta cell differentiation (Figure 4—figure supplement 1(1), (2)), confirming that the effect is well due to CaN inhibition. The combined effect of Notch and CaN inhibition is transient as it is not observed at 7 dpf anymore (Figure 4E). Therefore, as observed in regenerative conditions (Figure 2B), CaN inhibition accelerates beta cell neogenesis induced by Notch repression.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88813/elife-88813-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experimental design for Notch inhibition test in non-ablated condition. Larvae were treated concomitantly with LY411575 (Notch inhibitor) and Cyclosporin A (CsA) from 3 to 4 dpf and were fixed and analyzed at 6 dpf. (B) Graph representing the mean number of mCherry+ beta cells in the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 6 dpf depending the concentration of LY411575. The blue dots represent LY411575; and purple combination of LY411575 and CsA. Data are presented as mean values ± SEM. Two-way ANOVA test with Sidak’s multiple comparison test, *p-value <0.05, **p-value <0.05, ns = non-significant. The experiment was performed at least two times and the data are combined in the graph. (C) Whole mount fluorescent immunohistochemistry (GFP and mCherry) of the pancreas of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 6 dpf. 3D projection (stack) of one control (without any treatment); one CsA-treated; one LY411757-treated and one with both CsA- and LY411575-treated larvae. The principal islet (PI) and the pancreatic tail are showed. Arrows point out mCherry+ beta cells in the pancreatic tail. Scale 50 µM. (D) Barplot representing the mean number of mCherry+ beta cells in the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 6 dpf. The black dots represent the control (n=12); gray CsA treatment (n=12);blue LY411575 (n=12); and purple combination of LY411575 and CsA (n=12). Data are presented as mean values ± standard deviation (SD). Two-way ANOVA with Tukey multiple comparison test, ***p-value <0.0005, ****p-value <0.00005. The experiment was performed at least two times and the data are combined in the graph. (E) Graph representing the mean number of mCherry+ beta cells in the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 5–6–7 dpf. The black dots represent the control; gray CsA treatment;blue LY411575; and purple combination of LY411575 and CsA. Data are presented as mean values ± SEM. Two-way ANOVA test with Sidak’s multiple comparison test, *p-value <0.05. The experiment was performed at least two times and the data are combined in the graph.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88813/elife-88813-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (1) Experimental design for Notch inhibition test in non-ablated condition. Larvae were treated concomitantly with LY411575 (Notch inhibitor) and FK506 from 3 to 4 dpf and were fixed and analyzed at 5 dpf. (2) Barplot representing the mean number of mCherry+ beta cells in the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 5 dpf. The black dots represent the control; gray FK506 treatment; blue LY411575; and purple combination of LY411575 and FK506. Data are presented as mean values ± standard deviation (SD). Two-way ANOVA with Tukey multiple comparison test, *p-value <0.05,**p-value <0.005, ****p-value <0.00005. (3) Experimental design for Notch inhibition test in non-ablated condition. Larvae were heat-shocked and then directly treated with LY411575 (Notch inhibitor) from 3 to 4 dpf and were fixed and analyzed at 6 dpf. (4) Barplot representing the mean number of mCherry+ beta cells in the pancreatic tail of Tg(hsp70:CaNCA); Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 5 dpf. The black dots represent the control; gray heat-shock; blue LY411575; and purple combination of LY411575 and heat-shock. Data are presented as mean values ± SD. Two-way ANOVA with Tukey multiple comparison test, ****p-value <0.00005. (5) Barplot representing the mean number of mCherry+ beta cells in the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 6 dpf after Notch inhibition (LY411575), CaN inhibition (Cyclosporin A, CsA), and NFATc inhibition (CHIR99021). Data are presented as mean values ± SD. Two-way ANOVA with Tukey multiple comparison test, *p-value <0.05, **p-value <0.005, ****p-value <0.00005.
+
 To determine to which extent CaN pathway can modulate Notch-induced beta cell neogenesis, we activated CaNCA overexpression in Tg(hsp70:GFP-P2A-ppp3ccCA); Tg(ins:NTR-P2A-mCherry) larvae by an heat-shock at 3 dpf and treated them with LY411575 (Figure 4—figure supplement 1(3)). CaNCA overexpression resulted in a lowered beta cell formation induced by Notch inhibition Figure 4—figure supplement 1(4), revealing that CaN activation counterbalanced the effects of Notch inhibition. Using our previous settings of Notch and CaN inhibition, we next wondered if the canonical pathway downstream of CaN was involved in the enhancement of beta cell differentiation. To activate NFAT, a well-known target of CaN, we used CHIR99021 allowing a stabilization of the active form of NFAT (Figure 1D). We found that CHIR99021 rescued the effect of CsA (Figure 4—figure supplement 1(5)), suggesting that CaN inhibition increases beta cell neogenesis at least partially by the regulation of NFAT. Overall, these results reveal that CaN impacts beta cell formation in pro-endocrinogenic context, such as induced by a low level of Notch activity. Moreover, it suggests that both CaN and Notch pathways act on a common pool of ductal progenitors to govern beta cell neogenesis.
 
-## CaN controls the proliferation of duct-associated progenitors induced by Notch inhibition
+### CaN controls the proliferation of duct-associated progenitors induced by Notch inhibition
 
 Given that we observed the most significant increase in beta cell formation with CsA when Notch activity was mildly repressed (Figure 4B–D), and since mild Notch activity has been shown to promote progenitor amplification (Ninov et al., 2012), it suggests that CaN acts at this level. To explore this possibility, we exposed briefly Tg(nkx6.1:GFP) larvae to EdU after mild Notch (LY411575 5 µM) and CaN inhibition (Figure 5A) and analyzed at 4 and 6 dpf. As expected, Notch inhibition increased the proportion of proliferating EdU+ GFP+ ductal cells at 4 dpf (Figure 5B, C) while the number of GFP+ ductal cells remained constant (Figure 5—figure supplement 1). Furthermore, the amount of ductal progenitors decreased 2 days later (at 6 dpf) (Figure 5D), which is concomitant with the increase of beta cell differentiation (Figure 4C, D). Interestingly, the combined inhibition with CsA further increased these proportions, while CaN inhibition alone had no effect (Figure 5B–D). Of note, we detected beta cells EdU+ at 6 dpf (Figure 5—figure supplement 1(2)), underlying that these cells originate from the proliferation of ductal progenitors.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/88813/elife-88813-fig5-v1.jpg)
+
+**Figure 5.:** (A) Experimental design for 5‐ethynyl‐2′‐deoxyuridine (EdU) assay in Notch test. Larvae were treated concomitantly with LY411575 (Notch inhibitor) and Cyclosporin A (CsA) from 3 to 4 dpf and then briefly treated with EdU before fixation and analysis at 4 or 6 dpf. (B) Whole mount fluorescent immunohistochemistry (GFP and EdU) of the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 4 dpf. 3D projection (stack) of one control (without any treatment), one with CsA only, one with LY411575 only and one with both CsA and LY411757 representative samples. Scale 50 µM. (C) Barplot representing the percentage of GFP+ ductal cells which incorporated EdU+ in pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae for the Notch test. The black dots represent the control (n=9); gray CsA treatment (n=10); blue LY411575 (n=16); and purple combination of LY411575 and CsA (n=16). Data are presented as mean values ± standard deviation (SD). T-test. Two-way ANOVA test with Tukey’s multiple comparisons test, *p-value <0.05; ****p-value <0.00005; ns = non-significant. The experiment was performed at least two times. (D) Barplot representing the number of GFP+ ductal cells which in pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 6 dpf for the Notch test. The black dots represent the control (n=22); gray CsA treatment (n=20); blue LY411575 (n=21); and purple combination of LY411575 and CsA (n=21). Data are presented as mean values ± SD. T-test. Two-way ANOVA test with Tukey’s multiple comparisons test, *p-value <0.05; ****p-value <0.00005; ns = non-significant. The experiment was performed at least two times and the data are combined in the graph. (E) Experimental design for EdU assay in regeneration. Larvae were treated with nifurpirinol for beta cell ablation from 3 to 4 dpf then with CsA from 4 to 5 dpf and then briefly treated with EdU before fixation and analysis. (F) Whole mount fluorescent immunohistochemistry (GFP and EdU) of the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 5 dpf. 3D projection (stack) of one representative sample of non-ablated or ablated with or without CsA are shown. Scale 50 µM. (G) Barplot representing the percentage of GFP+ ductal cells which incorporated EdU+ in pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 5 dpf. The gray spheres represent non-ablated condition (n=18); the pink triangles the ablated condition (n=32); the black squares CsA condition (n=22) and inverted green triangles ablated + CsA condition (n=30). Data are presented as mean values ± SD. Two-way ANOVA test with Tukey’s multiple comparisons test, *p-value <0.05; ****p-value <0.00005; ns = non-significant. The experiment was performed at least two times and the data are combined in the graph. (H) Whole mount fluorescent immunohistochemistry (VenusPest and EdU) of the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(tp1:VenusPest) larvae at 5 dpf. 3D projection (stack) of one representative sample of non-ablated or ablated with or without CsA are shown. Scale 50 µM. (I) Barplot representing the percentage of GFP+ ductal cells which incorporated EdU+ in pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(tp1:VenusPest) larvae at 5 dpf. The gray spheres represent non-ablated condition (n=17); the pink triangles the ablated condition (n=22); the black squares CsA condition (n=18) and inverted green triangles ablated + CsA condition (n=20). Data are presented as mean values ± SD. Two-way ANOVA test with Tukey multiple comparisons test, *p-value <0.05; ****p-value <0.00005; ns means non-significant. The experiment was performed at least two times and the data are combined in the graph. (J) Barplot representing the number of VenusPest+ ductal cells which incorporated EdU+ in pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(tp1:VenusPest) larvae at 5 dpf. The gray spheres represent non-ablated condition (n=17); the pink triangles the ablated condition (n=21); the black squares CsA condition (n=17) and inverted green triangles ablated + CsA condition (n=21). Data are presented as mean values ± SD. Two-way ANOVA test with Tukey’s multiple comparisons test, **p-value <0.005. The experiment was performed at least two times and the data are combined in the graph.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88813/elife-88813-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (1–3) Barplot representing the number of GFP+ ductal cells which in pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae at 4 dpf for the Notch test. (1) Mild Notch inhibition with LY411575 5 µM and (3) stronger Notch inhibition with LY411575 15 µM. The black dots represent the control; gray Cyclosporin A (CsA) treatment; blue LY411575; and purple combination of LY411575 and CsA. Data are presented as mean values ± standard deviation (SD). Two-way ANOVA test with Tukey’s multiple comparisons test, *p-value <0.05; **p-value <0.005; ns = non-significant. (2) Z-plan pictures of Tg (nkx6.1:GFP); Tg (ins:NTR*-mCherry) larvae that were treated at 3 dpf with both CsA 1 µM and LY411575 5 µM. At 4 dpf, the larvae were exposed to 5‐ethynyl‐2′‐deoxyuridine (EdU) 4 mM during 8 hr, before analysis at 6 dpf.
+
 Incidentally, at 4 dpf, while the proliferation is increased (Figure 5C), the number of ductal cells remained the same in all conditions (Figure 5—figure supplement 1(1)), suggesting that ductal cells have not yet left the cell cycle to differentiate. In comparison, after stronger Notch inhibition (15 µM), the ductal cells are already depleted at 4 dpf (Figure 5—figure supplement 1(3)), as they directly differentiate without entering the cell cycle (Ninov et al., 2012). In these conditions, CsA could therefore not enhance ductal progenitor proliferation and thus beta cell formation (Figure 4B). These results show that CaN and Notch pathways act together on the proliferation of the ductal progenitors to prevent their exhaustion.
 
-## CaN prevents exhaustion of Notch responsive progenitors during beta cell regeneration
+### CaN prevents exhaustion of Notch responsive progenitors during beta cell regeneration
 
 Taken together, our results indicate that CaN plays a role in the proliferation of ductal progenitors in contexts that are permissive for beta cell differentiation. To demonstrate that CaN acts on ductal progenitor proliferation in a similar manner to Notch inhibition but during regeneration, we exposed Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae after ablation and CsA treatment (Figure 5E). CaN inhibition enhanced the proliferation of ductal cells in ablated larvae (Figure 5F, G). To next determine if CaN acts on the Notch-responsive progenitors in beta cell regeneration, we then used Tg(tp1:VenusPest) Notch reporter line. At larval stages the vast majority of ductal cells are Notch responsive and the reporter line marks all the progenitors within the ductal tree (Parsons et al., 2009). We treated Tg(ins:NTR-P2A-mCherry); Tg(tp1:VenusPest) as described above (Figure 5E). In ablated-larvae, CsA increased tp1+ ductal cell proliferation (Figure 5H, I). Moreover, CsA induced a reduction of tp1+ ductal cells in ablated larvae (Figure 5H–J), suggesting an exhaustion of the Notch responsive progenitors, in accordance with premature beta cell differentiation we observed (Figures 2B–4D—4). Lastly, CsA does not affect tp1+ cells in non-ablated larvae showing that CaN inhibition did not directly affect Notch signaling (Figure 5J). Those results suggest that CaN fine tunes the balance between proliferation of the progenitors and their differentiation to prevent their exhaustion during beta cell regeneration.
 
-## CaN regulation is functionally relevant in adult zebrafish
+### CaN regulation is functionally relevant in adult zebrafish
 
 To further expand upon our findings and investigate their relevance in a non-developmental context, we next ought to determine whether CaN function is maintained in older zebrafish. We used 2-month-old Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) juveniles fish to perform beta cell ablation followed by CsA treatments. We analyzed the number of small islets (up to five cells) at 7 and 10 dpt. At 7 dpt, CsA increased the number of small islets in ablated juveniles (Figure 6A, B) showing that CaN inhibition enhances beta cell regeneration in juvenile zebrafish, as in larvae. It is noteworthy that, as in larvae, we highlighted an acceleration of beta cell regeneration. The increase number of small islets is indeed transient as it not observe anymore at 10 dpt (Figure 6C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/88813/elife-88813-fig6-v1.jpg)
+
+**Figure 6.:** (A) Whole mount fluorescent immunohistochemistry (GFP and mCherry) of the pancreas of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) 2-month-old zebrafish at 7 dpt. 3D projection (stack) of non-ablated and ablated larvae treated with DMSO or Cyclosporin A (CsA) representative samples. The principal islet (PI) and the pancreatic tail are shown. Zoom from section of the pancreatic tail are shown, arrows point out mCherry+ beta cells in these zoom. Scale 200 µM. (B–C) Barplot representing the number of number of mCherry+ small secondary islets (≤5 cells) in the pancreatic tail of Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) 2-month-old zebrafish at 7 (B) and 10 dpt (C). The gray spheres represent non-ablated condition (n=8; 18); the pink triangles represent the ablated condition (n=27; 15); the black squares CsA condition (n=5; 17), and inverted green triangles ablated + CsA condition (n=30; 15). Data are presented as mean values ± standard deviation (SD). Two-way ANOVA with Tukey’s multiple comparison test, *p-value <0.05, ****p-value <0.00005. The experiment was performed at least two times and the data are combined in the graph. (D–E) Barplot representing the glycemia (mg/dl) of Tg(ins:NTR-P2A-mCherry); adult zebrafish at 7 (D) and 10 dpt (E). The pink triangles represent the ablated condition (n=13; 14); the inverted green triangles ablated + CsA condition (n=9; 17); the blue squares Tg(hsp70:CaNCA) after heat-shocks (n=17; 18); the orange lozenges Tg(UAS:CaNCA); Tg(cftr:gal4) (n=9; 6). The gray line represents the mean glycemia of controls (non-ablated) fish. Data are presented as mean values ± SD. One-way ANOVA with Tukey’s multiple comparison test, *p-value <0.05; **p-value <0.005. Experiment performed in one technical replicate with several biological replicates (n visible on the graph).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/88813/elife-88813-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (1) Barplot representing the glycemia (mg/dl) of Tg(ins:NTR-P2A-mCherry); adult zebrafish at 14 dpt. The pink triangles represent the ablated condition; the inverted green triangles ablated + Cyclosporin A (CsA) condition; the blue squares Tg(hsp70:CaNCA) after heat-shocks. The gray line represents the mean glycemia of controls (non-ablated) fish. Data are presented as mean values ± standard deviation (SD). (2) Barplot representing the glycemia (mg/dl) of Tg(ins:NTR-P2A-mCherry); and Tg(UAS:CaNCA); Tg(cftr:gal4) in non-ablated adult zebrafish. Data are presented as mean values ± SD.
 
 Next, we determined the functional impact of CaN overexpression or inhibition by assessing the glycemia at 7, 10, and 14 after beta cell ablation. Overexpression of CaNCA using either Tg(hsp70:GFP-P2A-ppp3ccCA) or Tg(cftr:gal4); Tg(UAS:GFP-P2A-ppp3ccCA), led to an increased glycemia at both 7 and 10 dpt (Figure 6D, E), before recovery at 14 dpt (Figure 6—figure supplement 1). This indicates that the overexpression of CaN delayed glycemia recovery induced by beta cell regeneration. However, CaN inhibition did not seem to further improve the glycemia (Figure 6D, E) probably because the glycemia was already low at 7 dpt (77 mg/dl on average) compared to non-ablated control (50 mg/dl on average) (Figure 6D, E). Altogether, these results show that in adult zebrafish also, CaN regulation is necessary to enable beta cell regeneration and for proper recovery of the glycemia after beta cell loss.
 
@@ -104,48 +144,338 @@ Overall, this study brings new insights on beta cell regeneration and highlights
 
 ## Materials and methods
 
-## Zebrafish husbandry and generation of the Tg(hsp70:eGFP-P2A-ppp3ccaCA)ulg068 and Tg(UAS:eGFP-P2A-ppp2ccaCA)ulg069 zebrafish lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>TgBAC(nkx6.1:eGFP)ulg004</td>
+      <td>PMID:26329351</td>
+      <td>ZFIN: ZDB-ALT-160205-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(ins:NTR-P2A-mCherry)ulg034</td>
+      <td>PMID:29663654</td>
+      <td>ZFIN: ZDB-ALT-171122-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(cftr:gal4)</td>
+      <td>PMID:25592226</td>
+      <td>ZFIN:ZDB-FISH-150901-25442</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(tp1:VenusPest)</td>
+      <td>PMID:22492351</td>
+      <td>ZFIN:ZDB-FISH-150901-8023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(hsp70:eGFP-P2A-ppp3ccaCA) ulg068</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Zebrafish husbandry and generation of the Tg(hsp70:eGFP-P2A-ppp3ccaCA) zebrafish line</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:eGFP-P2A-ppp3ccaCA) ulg069</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Zebrafish husbandry and generation of the Tg(UAS:eGFP-P2A-ppp3ccaCA) zebrafish line</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>GFP-1020</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry/dsRed (rabbit polyclonal)</td>
+      <td>Clontech</td>
+      <td>632496</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-glucagon (mouse polyclonal)</td>
+      <td>Sigma</td>
+      <td>G2654</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Chicken IgY (H+L), Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>A-11039</td>
+      <td>1:750</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-dsred 568</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>1:750</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Mouse IgG (H+L)Cross-Adsorbed SecondaryAntibody, Alexa Fluor 633</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>1:750</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Nifurpirinol (NFP)</td>
+      <td>Sigma-Aldrich</td>
+      <td>32439</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Metronidazole (MTZ)</td>
+      <td>Sigma-Aldrich</td>
+      <td>M1547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Cyclosporine A (CsA)</td>
+      <td>Selleckchem</td>
+      <td>S2286</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>LY411575</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML0506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>CHIR990211</td>
+      <td>Sellekchem</td>
+      <td>CT99021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway LR Clonase II Enzyme mix</td>
+      <td>Invitrogen</td>
+      <td>11791020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway BP Clonase II Enzyme mix</td>
+      <td>Invitrogen</td>
+      <td>11789020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IM369</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>gaagaaaaccccggtcctatgtcgacgaaagagccgaaag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IM380</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>ccttacacattcccgtcagtgc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IM371</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CGGCTCTTTCGTCGACATAGGACCGGGGTTTTCTTCCACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>O226</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GCCACCATGGTGAGCAAGGGCGAGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IM370</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>ttattagatcttatttctgatcacctcctt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IM459</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>cacacgaattcgccgccaccATGGTGAGCAAGGGCGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IM460</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>ggatcggtcgagatccttacGATCTTATTTCTGATCACCTCCTTACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IM457</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GTAAGGATCTCGACCGATCCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IM458</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GGTGGCGGCGAATTCGTG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT DNA Library kit</td>
+      <td>Illumina</td>
+      <td>FC-131–1024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Cell Proliferation Kit for Imaging, Alexa Fluor 647 dye</td>
+      <td>Invitrogen</td>
+      <td>C10340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane(http://www.bitplane.com/imaris/imaris)</td>
+      <td>RRID:SCR_007370</td>
+      <td>Version 9.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>DESeq2(https://bioconductor.org/packages/release/bioc/html/DESeq2.html)</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WebGestalt</td>
+      <td>WebGestalt(http://www.webgestalt.org/)</td>
+      <td>RRID:SCR_006786</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish husbandry and generation of the Tg(hsp70:eGFP-P2A-ppp3ccaCA)ulg068 and Tg(UAS:eGFP-P2A-ppp2ccaCA)ulg069 zebrafish lines
 
 Tg BAC(nkx6.1:eGFP)ulg004 Ghaye et al., 2015; Tg(ins:NTR-P2A-mCherry)ulg034 (Bergemann et al., 2018); Tg(cftr:gal4) and Tg(tp1:VenusPest) were used. Zebrafish were raised in standard conditions at 28°C. All experiments were carried out in compliance with the European Union and Belgian law and with the approval of the ULiège Ethical Committee for experiments with laboratory animals (approval number: 2075).
 
 The hsp70:GFP-P2A-ppp3ccaCA transgene has been generated by cloning a PCR fragment containing the Gateway vector pCR8/GW/TOPO. Firstly, we amplified the full length of ppp3ccaCA with primers IM369/IM380 and amplified GFP-P2A with overlapping regions with IM371/O226. The overlapping PCR used the primers O226/IM380. Then to obtain a truncated ppp3ccaCA lacking the calmodulin biding and the autoinhibitory domain, resulting in a constantly active form of CaN, we amplified the last fragments with IM370/O226 and cloned into PCR8 vector. The promoter was assembled by LR recombination with pE5-hsp70 into pDestTol2p2A from the Tol2kit (Kwan et al., 2007). Tg (hsp70:GFP-P2A-ppp3ccaCA) fish have been generated using the Tol2-mediated transgenesis (Kawakami, 2007). The Tg(UAS:GFP-P2A-ppp3ccacA) has been generated by ligation (KLD kit, NEB) of PCR fragments GFP-P2A-ppp3ccacA (IM459/IM460) with the UAS sequences (IM457/IM458) in plasmid from (Distel et al., 2009) and then inserted into pDestTol2p2A from the Tol2kit. Final constructions has been injected with transposase into wild type (WT) AB embryos.
 
-## Beta cell ablation
+### Beta cell ablation
 
 Adults fish for RNA-sequencing experiment were treated with freshly prepared metronidazole (MTZ) (Sigma M1547) at 10 mM with 0.2% DMSO in fish water. Control treatments consisted of fish water containing 0.2% DMSO. Fish were treated for 18 hr in the dark. NFP (32439, Sigma-Aldrich) stock solution was dissolved at 2.5 mM in DMSO. Beta cell ablation in Tg(nkx6.1:eGFP); Tg(ins:NTR-P2A-mCherry) larvae was induced by treatment with 2.5 µM NFP in E3. Control treatments consisted of E3 containing 0.2% DMSO. Larvae were treated for 18 hr in the dark.
 
-## Drug treatments
+### Drug treatments
 
 Cyclosporine A (Selleckchem, S2286), CHIR99021, and LY411575 (Sigma-Aldrich, SML0506) stock solution were dissolved at 10 mM in DMSO. Larvae treatment were, respectively, performed at 0.1 and 5 µM in E3. Control treatments consisted of E3 containing the same amount of DMSO than drug treatment. Larvae were treated for 18 hr in the dark.
 
-## EdU incorporation assay
+### EdU incorporation assay
 
 Zebrafish larvae were incubated in 4 mM EdU dissolved in E3 water for 8 hr, they were then directly euthanized in tricaine and fixed in 4% PFA. EdU was detected according to the protocol of Click-iT EdU Cell Proliferation Kit for Imaging, Alexa Fluor 647 (Thermo Fisher C10340) after whole mount immunodetection.
 
-## Heat-shock
+### Heat-shock
 
 Successive heat-shocks of 30 min and 12 hr apart were performed at 39°C for larvae and 37°C for juveniles and adults zebrafish.
 
-## Whole mount immunodetection
+### Whole mount immunodetection
 
 Larvae were euthanized in tricaine and fixed in 4% paraformaldehyde (PFA) at 4°C for immunohistochemistry (IHC). The digestive tract of juveniles was dissected prior immunodetection and kept in methanol for at least 18 hr. After depigmentation with 3% H2O2/1% KOH, larvae were permeabilized 30 min in phosphate-buffered saline (PBS)/Triton X-100 and incubated for 2 hr in blocking buffer (4% goat serum/1% bovine serum albumin [BSA]/PBS/0.1% Triton X-100). Primary and secondary antibodies were incubated at 4°C overnight.
 
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Fixation duration (hr)</th>
+      <th>Depigmentation duration (min)</th>
+      <th>Permeabilization solution</th>
+      <th>Permeabilization duration (min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5–10 dpf</td>
+      <td>18</td>
+      <td>15</td>
+      <td>PBTr 0.05%</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>13–17 dpf</td>
+      <td>36</td>
+      <td>20</td>
+      <td>PBTr 2%</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>2 months (digestive tract)</td>
+      <td>18</td>
+      <td>15</td>
+      <td>/</td>
+      <td>/</td>
+    </tr>
+  </tbody>
+</table>
+
 Primary antibodies: Living Colors Polyclonal anti-mCherry/dsRed (rabbit, 1:500, Clontech 632496), anti-GFP (chicken, 1:1000), Secondary antibodies: Alexa Fluor-488, -568, -633 (goat, 1:750, Molecular Probes).
 
-## Flow cytometry and Fluorescence-activated Cell Sorting (FACS)
+### Flow cytometry and Fluorescence-activated Cell Sorting (FACS)
 
 The whole pancreas from three to four fish of Tg(nkx6.1:eGFP); Tg(ins:NTR-P2A-mCherry) adult fish (6–10 months old, males and females) were dissected, collected, and washed in Hank's Balanced Salt Solution (HBSS) without Ca2+/Mg2+. Live cell dissociation was performed in Tryple Select 1× solution (Gibco) supplemented with 100 U/ml collagenase IV (Life Technologies 17104-019) and 40 µg/ml proteinase K (Invitrogen, 25530031) for 10 min at 28°C.
 
 The GFP+ cells were selected on FACS Aria III and sorted under purity mode and after exclusion of the doublets. The purity of the sorted cells was confirmed by epifluorescence microscopy (~95 %). Cells (about 1000–5000/fish depending on the cell type) were immediately lysed with 0.5% Triton X-100 containing 2 U/µl RNAse inhibitor and stored at −80°C.
 
-## mRNA sequencing of FACSed cells and bioinformatic analyses
+### mRNA sequencing of FACSed cells and bioinformatic analyses
 
 cDNAs were prepared from lysed cells according to SMART-Seq2.0 (Picelli et al., 2014) for low input RNA sequencing and libraries were prepared with Nextera DNA Library kit (Illumina). Independent biological replicates of each cell type sequenced using Illumina NextSeq500 and obtained ~20 million 100 bp paired-end reads. Reads were mapped and aligned to the zebrafish genome GRCz11 from Ensembl gene annotation version using STAR version 2.6.1 (Dobin et al., 2013). Gene expression levels were calculated with featureCounts (http://bioinf.wehi.edu.au/featureCounts/) and differential expression determined with DESeq2 (Love et al., 2014). Expression values are given as normalized read counts. Poorly expressed genes with mean normalized expression counts <10 were excluded from the subsequent analyses. DESeq2 uses Wald test for significance with posterior adjustment of p values (padj) using Benjamini and Hochberg multiple testing. The differentially expressed (DE) genes identified with a padj cutoff of 0.05 were submitted for GO analysis using WebGestalt tool (Liao et al., 2019).
 
-## Confocal microscopy and image analysis
+### Confocal microscopy and image analysis
 
 Images were acquired using Leica SP5 confocal microscope. We used ImageJ to count the cells and Imaris to do the pictures.
 
-## Glycemia measurement
+### Glycemia measurement
 
 Glycemia measurement were performed as described in Bergemann et al., 2018.

@@ -55,7 +55,7 @@ Here, we distinguish different scenarios of cortical evolution for a set of temp
 
 We set out to investigate different types of cortical reorganization affecting the temporal lobe across macaque, chimpanzee, and human brains. First, we investigated cortical relocation of brain areas by registering myelin maps of the cortical surface to one another and derived the local distortions required. Second, we used the resulting mesh deformations to transform maps of cortical projections of major white matter tracts that terminate in temporal and inferior parietal lobe. This allowed us to assess how well the myelin registration predicts actual projection maps across species or whether it cannot capture them, providing an index of tract extensions in the human brain.
 
-## Myelin registration
+### Myelin registration
 
 We developed a surface registration between species based on myelin maps using multimodal surface matching (MSM, Robinson et al., 2018). Figure 2 shows the final results of chimpanzee-to-human, macaque-to-chimpanzee, and macaque-to-human brain registrations. The cross-species registration aligns the myelin maps well, with the predicted human maps showing most of the distinctive features of the actual human myelin map (Figure 2, top row). Posterior areas such as V1 are well aligned, with the highest myelin evident on the medial part of the occipital cortex, having relocated quite substantially from a more lateral orientation in the macaque. The prominent myelin hot spot in the location of the MT+ complex is also noticeable. Areas where the myelin maps showed fewer distinctive features to guide the registration, such as in the prefrontal cortex, showed some differentiation between the predicted and actual human maps. Spatial correlation maps of the human myelin maps and the predicted myelin maps as well as the deformation fields underlying the registrations are provided in Appendix 2—figure 1.
 
@@ -63,7 +63,7 @@ We developed a surface registration between species based on myelin maps using m
 
 **Figure 2.:** Species average myelin maps (left panel) and myelin maps resampled across species after applying the MSM-derived registration.
 
-## Tract maps
+### Tract maps
 
 We constructed the cortical projection maps of the following tracts in all three species: Middle longitudinal fasciculus (MDLF), inferior longitudinal fasciculus (ILF), the third branch of the superior longitudinal fasciculus (SLF3), the inferior fronto-occipital fasciculus (IFO), and the arcuate fasciculus (AF) (Figure 3A,C,E). The human and macaque tract maps resemble those obtained in previous studies (Mars et al., 2018c; Schmahmann and Pandya, 2009) and the chimpanzee SLF3 and AF are similar to previous reports (Hecht et al., 2015; Rilling et al., 2008). The other chimpanzee tracts are reported here for the first time, apart from a previous exploratory study (Mars et al., 2019).
 
@@ -83,7 +83,7 @@ In general, it can be observed that the myelin-based registration can predict th
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/53232/elife-53232-fig5-v2.jpg)
 
-**Figure 5.:** Dice coefficients of overlap (A) and tract extension ratios (B) computed from actual thresholded human tract maps and tract maps predicted by the other species. Shown are mean and standard deviation derived from all pairs of human (n = 20) and macaque or chimpanzee (n = 5) subjects in left (LH) and right (RH) hemisphere. (C) Connectivity fingerprints at two vertices in inferior parietal and in temporal lobe derived from the intensity values of an extended set of tract maps. Shown are mean and standard deviation (human: n = 20, chimpanzee and macaque: n = 5).Figure 5—source data 1.Figure 5C.The values are organized as data array that stores the individual tract map intensities. The dimensions of the array are 3 × 1 × 7 × 2 × 20 for n_species, n_hemispheres (only left hemisphere), n_tracts, n_vertices, n_subjects.
+**Figure 5.:** Dice coefficients of overlap (A) and tract extension ratios (B) computed from actual thresholded human tract maps and tract maps predicted by the other species. Shown are mean and standard deviation derived from all pairs of human (n = 20) and macaque or chimpanzee (n = 5) subjects in left (LH) and right (RH) hemisphere. (C) Connectivity fingerprints at two vertices in inferior parietal and in temporal lobe derived from the intensity values of an extended set of tract maps. Shown are mean and standard deviation (human: n = 20, chimpanzee and macaque: n = 5).
 
 A two-way statistical analysis was performed in both hemispheres to assess the effect of species and tract on the extension ratios. In the left hemisphere, there was no significant main effect of species (F(1, 179)=1.38, p=0.47), but a highly significant main effect of tract (F(4, 792)=565.00, p<0.001) and a highly significant interaction effect of species and tract (F(4, 792)=207.73, p<0.001). In the right hemisphere, we found a significant main effect of species (F(1, 179)=16.76, p<0.001) as well as a highly significant effect of tract (F(4, 792)=261.94, p<0.001) and a highly significant interaction effect (F(4, 792)=225.70, p<0.001). We will discuss the various tracts in more detail below.
 
@@ -95,7 +95,7 @@ Predicted ILF terminations show that the expected occipito-temporal connection c
 
 The clearest case of a tract extension in the human brain was presented by AF. Human AF reaches anteriorly to inferior and dorsal frontal areas. The posterior projections of human AF reach into middle and inferior temporal cortex. The chimpanzee posterior terminations are in inferior parietal lobe and superior temporal cortex and in the macaque, the temporal projections reach superior temporal areas. For AF, the myelin-based registration does not provide a good prediction of the tract map across species, especially for the macaque. The correlation map for the chimpanzee shows low correlation along the temporal lobe and for the macaque, correlation values in temporal lobe are extremely low. AF has the lowest Dice coefficient and the extension ratio is high, especially in the macaque, which is in line with overlay and correlation maps. The ‘failure’ of the myelin registration in the temporal lobe indicates that extension and relocation of cortical areas is not sufficient to explain the posterior tract projections of AF, but that the tract extended into new cortical territory in the temporal lobe.
 
-## Connectivity fingerprints
+### Connectivity fingerprints
 
 To further characterize the effects in the predicted tract maps, we obtained connectivity fingerprints at two representative vertices on the left brain surface: One in inferior parietal lobe, where most tracts are predicted well and one in the middle temporal gyrus, where we observed strong species differences, in particular for AF. The connectivity fingerprints were derived based on the intensity values in the actual and predicted tract maps using an extended set of seven tracts to give a more detailed picture (see Appendix 3—figure 1). Figure 5C demonstrates that in the inferior parietal lobe, the connectivity fingerprint of actual human and predicted chimpanzee and macaque tract maps are highly similar, except for a small increase in the intensity of ILF indicating tract extension as discussed above. This indicates that the myelin-derived registration can predict this area’s connectivity profile well, despite the local expansion of the cortical sheet. For the temporal vertex, however, there is a strong mismatch regarding the connectivity profile, in particular regarding the intensities for AF. This indicates that the connectional fingerprint of this temporal area is different in the human than would be predicted purely based on cortical relocation. Thus, the connectivity fingerprints of the two representative areas match the pattern of species differences that emerged from the results above.
 
@@ -123,7 +123,52 @@ In sum, here we present a framework for analyzing structural reorganization of t
 
 ## Materials and methods
 
-## Human data and pre-processing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FSL</td>
+      <td>http://fsl.fmrib.ox.ac.uk/fsl/</td>
+      <td>RRID:SCR_002823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FreeSurfer</td>
+      <td>http://surfer.nmr. mgh.harvard.edu/</td>
+      <td>RRID:SCR_001847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MSM</td>
+      <td>https://fsl.fmrib.ox.ac. uk/fsl/fslwiki/MSM</td>
+      <td>RRID:SCR_002823</td>
+      <td>MSM is available as part of FSL. Code for MSM using higher-order smoothness constrains is available online at https://www.doc.ic.ac.uk/~ ecr05/MSM_HOCR_v2/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Connectome Workbench</td>
+      <td>http://www.nitrc.org/projects/workbench</td>
+      <td>RRID:SCR_008750</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human data and pre-processing
 
 Human data were acquired in 20 subjects (12 females, 18–40 years) on a 3T Siemens Prisma scanner with a 32-channel head coil. The study was approved by the Central University (of Oxford) Research Ethics Committee (CUREC, R55787/RE001) in accordance with the regulatory standards of the Code of Ethics of the World Medical Association (Declaration of Helsinki). All participants gave informed consent to their participation and were monetarily compensated for their participation.
 
@@ -131,7 +176,7 @@ High-resolution structural images were acquired using a (MPRAGE) T1w sequence (�
 
 T1w and T2w scans were pre-processed using the HCP-pipeline (Glasser et al., 2013) cloned from the ‘OxfordStructural’ - fork (https://github.com/lennartverhagen/Pipelines). The processing pipeline includes automatic anatomical surface reconstruction using FreeSurfer and provides measures of sulcal depth and surface maps of cortical myelin content (Fischl, 2012; Jenkinson et al., 2012). The mean image of the T1w scans was divided by the mean image of the T2w scans to create a T1w/T2w image. The bias corrected T1w/T2w-ratio was mapped onto the mid-thickness surface using Connectome Workbench ﻿command-line tools. We refer to this surface map as T1w/T2w ‘myelin map’ (Glasser et al., 2014; Glasser and Van Essen, 2011). In order to create a human average myelin map, the subject’s individual myelin maps were aligned using MSM. The myelin alignment was initialized using alignment based on maps of sulcal depth (a table with parameters is provided in Supplementary file 1). To create the species average maps, we used an implementation of MSM that optimizes based on a first-order (pairwise) cost function to penalize against distortions, given that no excessive distortions were expected. Human volume data were registered to the Montreal Neurological Institute standard space (MNI152) and surface data was transformed to a surface template space (fs_LR).
 
-## Chimpanzee data and pre-processing
+### Chimpanzee data and pre-processing
 
 In vivo chimpanzee structural MRI and DW-MRI data were obtained from the National Chimpanzee Brain Resource (www.chimpanzeebrain.org). Data were acquired at the Yerkes National Primate Research Center (YNPRC) at Emory University through separate studies covered by animal research protocols approved by YNPRC and the Emory University Institutional Animal Care and Use Committee (approval no. YER-2001206). Both structural MRI and DWI-MRI data were collected on a Siemens 3T Trio Scanner (Siemens Medical System, Malvern, PA, USA). These chimpanzee MRI scans were obtained from a data archive of scans obtained prior to the 2015 implementation of U.S. Fish and Wildlife Service and National Institutes of Health regulations governing research with chimpanzees. All the scans reported in this publication were completed by the end of 2012.
 
@@ -139,7 +184,7 @@ T1w/T2w myelin maps were obtained from a group of 29 adult chimpanzees (all fema
 
 Chimpanzee volume and surface data were registered to a standard space template based on 29 chimpanzee scans acquired at the YNPRC (Donahue et al., 2018). A species average myelin map from the 29 chimpanzees was derived using MSM as described for the human.
 
-## Macaque data and pre-processing
+### Macaque data and pre-processing
 
 Ex vivo DW-MRI data were obtained from four rhesus macaques (one female, ﻿age at death: range 4–14 years) using a 7T magnet with Agilent Directive (Agilent Technologies, Santa Clara, CA, USA). Data acquisition and DW-MRI pre-processing have been previously described in detail (Eichert et al., 2019; Folloni et al., 2019). Data were acquired using a 2D diffusion-weighted spin echo multi slice protocol with single line readout (DW-SEMS; TE = 25 ms; TR = 10 s; matrix size: 128 × 128; resolution 0.6 mm; number of slices: 128; slice thickness: 0.6 mm). Nine non-diffusion-weighted (b = 0 s/mm2) and 131 diffusion-weighted (b = 4000 s/mm2) volumes were acquired with diffusion encoding directions evenly distributed over the whole sphere, except in one monkey were seven non-diffusion-weighted images and 128 diffusion directions were collected. This protocol and similar ones have previously shown to be sufficient for comparison with in vivo human data (see for example: D’Arceuil et al., 2007; Dyrby et al., 2011; Eichert et al., 2019; Mars et al., 2016).
 
@@ -149,7 +194,7 @@ To obtain macaque T1w/T2w myelin maps, in vivo T1w and T2w scans data were obtai
 
 Macaque surface reconstruction and average myelin maps were derived as described for the human. Macaque volume and surface data were registered to a standard space, which is based on data from 19 macaques acquired at YNPRC (Donahue et al., 2018; Donahue et al., 2016).
 
-## Myelin-based surface registration
+### Myelin-based surface registration
 
 Our aim was to derive a cross-species registration to model expansion and relocation of cortical brain areas. Therefore, we performed registration based on average surface myelin maps in the three species using MSM with higher-order smoothness constraints (Ishikawa, 2014; Robinson et al., 2018). We derived a transformation of the cortical surface so that homologous myelin landmarks across species matched. The general processing steps were as follows, but a more detailed description of the methodology and an explanatory figure are provided in Appendix 1.
 
@@ -159,7 +204,7 @@ In general, the registration was derived using two stages. The first stage was b
 
 The quality of the registration performance was assessed by computing a local spatial correlation between the human myelin map and the result of the chimpanzee and macaque registration. Furthermore, we visualized the deformations underlying the registration in form of a surface distortion map. The methods and results for these two analyses are provided in Appendix 2. .
 
-## Tractography
+### Tractography
 
 ﻿Human and chimpanzee DW-MRI data were pre-processed using tools from FDT (FMRIB's Diffusion Toolbox, part of FSL 5.0 [Smith et al., 2004]). We applied the TOPUP distortion correction tool followed by eddy-current distortion and motion correction (Andersson et al., 2003; Andersson and Sotiropoulos, 2016) as implemented in FSL. Macaque ex vivo DW-MRI data were processed using tools from FSL as implemented in an in-house MR Comparative Anatomy Toolbox (Mr Cat, www.neuroecologylab.org).
 
@@ -167,7 +212,7 @@ Pre-processed DW-MRI images were processed by fitting diffusion tensors (FSL's D
 
 We performed tractography of the following tracts: Middle longitudinal fasciculus (MDLF), inferior longitudinal fasciculus (ILF), the third branch of the superior longitudinal fasciculus (SLF3), the inferior fronto-occipital fasciculus (IFO), and the arcuate fasciculus (AF). Placement of seed, waypoint, and exclusion masks was based on previous studies, in order to reconstruct known pathways for these tracts in all three species (human and macaque: de Groot et al., 2013; Mars et al., 2018c, protocols for AF: Eichert et al. (2019); chimpanzee: Bryant et al. (2018). Masks were drawn in standard space and warped to native subject diffusion MRI space for probabilistic tractography. The resulting tractograms were normalized by dividing each voxel’s value by the total number of streamlines that successfully traced the required route (‘waytotal’). To decrease computational load for further processing all tractograms were down-sampled (human: 2 mm, chimpanzee: 1.5 mm, macaque: 1 mm). ﻿In addition, tractography and surface-based analysis was performed for cortico-spinal tract (CST) and vertical occipital fasciculus (VOF). Results for all tracts are reported in Appendix 3—figure 1.
 
-## Surface tract maps
+### Surface tract maps
 
 To assess which part of the cortical grey matter might be reached by the tracts, we derived the surface representation of each individual tractogram using a matrix multiplication method described in Mars et al. (2018b); Appendix 1—figure 1B(2). We calculated whole-hemisphere vertex-wise connectivity matrices, tracking from the 20k-vertices mid-thickness surface to all voxels in the brain. These matrices were computed for both hemispheres and each subject individually in the three species. In the macaque we used the five subject’s average mid-thickness in standard space as input for the computation instead of individual surfaces.
 
@@ -175,7 +220,7 @@ To rebalance the weights in the tracts to be more homogenous, connectivity value
 
 To visualize a tract's surface representation, we multiplied the averaged connectivity matrix with a tract’s tractogram (‘fdt_paths’). We refer to the tract surface representation here as ‘tract map’. The approach described above decreases gyral bias in the resulting tract map notably when compared to surface-based tractography or surface projections of the tractogram. However, the method introduced spurious effects on the medial wall and insular cortex, which are generally not well captured in the tract map. Given that both areas are not of interest in this study, they were masked out for further analysis. Tract maps were derived for each subject and both hemisphere separately. Individual surface maps were smoothed on the mid-thickness surface (human: 4 mm kernel (sigma for the gaussian kernel function), smoothing on individual surface; chimpanzee: 3 mm kernel, smoothing on average surface; macaque: 2 mm kernel, smoothing on average surface), logNorm-transformed and averaged across subjects.
 
-## Predicted tract maps
+### Predicted tract maps
 
 Next, we tested if our myelin-based registration can be used to predict the tract maps across species. We resampled individual chimpanzee and macaque tract maps to human space using the macaque-to-human and the chimpanzee-to-human registration (Appendix 1—figure 1B(3)). Intensity values in actual and predicted tract maps ranged from 0 to 1. We averaged all predicted tract maps and displayed the average map onto a human average surface (Q1-Q6_R440). For visual inspection we also assessed and showed thresholded tract maps. Thresholds were chosen different for each tract, ranging from 0.6 to 0.85, so that the most characteristic termination is visible.
 
@@ -189,14 +234,49 @@ The differences in tract extension ratios at a surface coverage of 40% were asse
 
 We performed additional control analyses to assess if the observed effects of tract expansion correlate with potential sources of confounds arising from our connectivity measures and the myelin-driven registration. The methodology and results of these control analyses are reported in Appendix 4.
 
-## Connectivity fingerprints
+### Connectivity fingerprints
 
 We characterized the effect of cortical expansion on brain connectivity using the concept of connectivity fingerprints (Passingham et al., 2002). In brain areas where cortical expansion can explain the human connectivity pattern, actual and predicted tract maps will have similar intensity values. In brain areas where the connectivity profile was further modified due to tract extensions, the intensity values of actual and predicted tract maps will show a discrepancy. By computing the intensity values of multiple tract maps in a brain area, we can derive a characteristic profile of values that can be understood as connectivity fingerprint of this area. In brain areas, where tract extension happened in addition to cortical expansion, we expect to observe a difference between actual human connectivity profile and the predicted connectivity profile. We manually selected two representative vertices and derived their actual and predicted connectivity profile: One vertex in the inferior parietal lobe, where we expect the intensity values of actual and predicted tract maps to be similar and one in the middle temporal gyrus, where we expect to find differences in actual and predicted tract maps. The whole set of tracts investigated (CST, MDLF, VOF, IFO, ILF, SLF3 and AF) was included to give a more detailed estimate of the connectivity fingerprint.
 
-## Code availability statement
+### Code availability statement
 
 Availability of software used in the present study is provided in the Key Resources Table. Processing code is openly available from the Wellcome Centre for Integrative Neuroimaging’s GitLab ﻿at https://git.fmrib.ox.ac.uk/neichert/project_MSM (Eichert, 2020; copy archived at https://github.com/elifesciences-publications/project_msm).
 
-## Data availability overview
+### Data availability overview
 
-Data setReference for original data paperAvailabilityHuman in-vivo diffusion MRI data and myelin mapspresent studyAnonymised raw data is openly available for download via OpenNeuro. Accession code: ds002634 (version 1.0.1), project_larynx(https://openneuro.org/datasets/ds002634)Chimpanzee in-vivo diffusion MRI data(Chen et al., 2013)Available from the National Chimpanzee Brain Resource (http://www.chimpanzeebrain.org/). Data from the following subjects were used: Bo, Cheetah, Lulu, Wenka, Foxy.Chimpanzee in-vivo myelin maps(Glasser et al., 2014)Raw data available from the National Chimpanzee Brain Resource (http://www.chimpanzeebrain.org/). Data from all 29 subjects were used.Macaque ex-vivo diffusion MRI data (4 macaques)(Folloni et al., 2019)Source data available from the PRIMatE Data Exchange (PRIME-DE) resource (http://fcon_1000.projects.nitrc.org/indi/indiPRIME.html4).Dataset: University of Oxford WIN Macaque PMMacaque in-vivo myelin maps(Bridge et al., 2019; Large et al., 2016)Data of four monkeys freely available at: https://gin.g-node.org/hbridge_oxford/brainwithoutv1. Data of the fifth monkey available upon request.
+<table>
+  <thead>
+    <tr>
+      <th>Data set</th>
+      <th>Reference for original data paper</th>
+      <th>Availability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human in-vivo diffusion MRI data and myelin maps</td>
+      <td>present study</td>
+      <td>Anonymised raw data is openly available for download via OpenNeuro. Accession code: ds002634 (version 1.0.1), project_larynx(https://openneuro.org/datasets/ds002634)</td>
+    </tr>
+    <tr>
+      <td>Chimpanzee in-vivo diffusion MRI data</td>
+      <td>(Chen et al., 2013)</td>
+      <td>Available from the National Chimpanzee Brain Resource (http://www.chimpanzeebrain.org/). Data from the following subjects were used: Bo, Cheetah, Lulu, Wenka, Foxy.</td>
+    </tr>
+    <tr>
+      <td>Chimpanzee in-vivo myelin maps</td>
+      <td>(Glasser et al., 2014)</td>
+      <td>Raw data available from the National Chimpanzee Brain Resource (http://www.chimpanzeebrain.org/). Data from all 29 subjects were used.</td>
+    </tr>
+    <tr>
+      <td>Macaque ex-vivo diffusion MRI data (4 macaques)</td>
+      <td>(Folloni et al., 2019)</td>
+      <td>Source data available from the PRIMatE Data Exchange (PRIME-DE) resource (http://fcon_1000.projects.nitrc.org/indi/indiPRIME.html4).Dataset: University of Oxford WIN Macaque PM</td>
+    </tr>
+    <tr>
+      <td>Macaque in-vivo myelin maps</td>
+      <td>(Bridge et al., 2019; Large et al., 2016)</td>
+      <td>Data of four monkeys freely available at: https://gin.g-node.org/hbridge_oxford/brainwithoutv1. Data of the fifth monkey available upon request.</td>
+    </tr>
+  </tbody>
+</table>
